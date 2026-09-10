@@ -1,0 +1,1397 @@
+{
+  "videoId": "1s5DZ10kKUc",
+  "title": "Every Network Device Explained in 13 Minutes!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 231,
+  "fullText": "modem. When you get service from an ISP like AT and T or Xfinity, the data traveling through their street cables arrives as an analog signal, continuous rolling waves. The issue is that your MacBook, iPhone, or smart TV is completely clueless about this language. The electronic devices in your house operate in a digital world, communicating strictly through dry, rigid zeros and ones. If you somehow plug that outside cable directly into your laptop, the two sides wouldn't understand a single word each other was saying. That is exactly where the modem steps in. The name itself is actually a mashup of two words, modulator and de modulator. It acts as a lightning fast realtime translator. When those analog waves rush in from the street, the modem grabs them, breaks them down, and instantly translates them into binary zeros and ones. So your screen can actually load a Tik Tok video or a news article. The exact same process happens in reverse. When you hit send on a work email or upload a photo, the modem gathers the digital data from your device, translates it back into analog waves, and shoots it out across the telecom lines to the rest of the world. Without this little box standing in the middle doing the translation work, the internet stops right at your front door. No matter how expensive or advanced your tech gadgets are, they would be completely isolated from the global network router. So, your modem has successfully translated the internet into a digital format. But there is a catch. A standard modem usually only has one output. In a house filled with smartphones, a smart TV, and laptops, that is an obvious bottleneck. Everyone needs a piece of that internet connection at the exact same time. That is where the router takes over. If the modem is the front door, the router is the hyperorganized traffic director standing in your hallway. Its primary job is to grab that single internet feed from the modem and broadcast it out. The moment you hook it up, the router creates a local area network, L, forming a private bubble of connectivity across your home. To keep data from turning into a chaotic traffic jam, the router hands out a unique local IP address to every single gadget that connects. These act like internal extension numbers in an office building. Your iPhone gets one number, the PlayStation gets another. When you tap a YouTube video on your phone, the router uses a clever system calledNAT. It acts as the middleman, grabbing the video data from the outside internet and ensuring it gets delivered strictly to your phone's specific internal address. It guarantees your private emails don't accidentally pop up on the living room TV, juggling thousands of specific data requests every single second. Network switch. Most home routers come with maybe four plug-in ports on the back. But what happens if you are setting up a dedicated home office or a heavyduty gaming room? You might have a desktop PC, a PlayStation, a smart TV, and a network storage drive, all demanding a fast, reliable wired connection. Suddenly, four ports aren't nearly enough. Enter the network switch. In physical terms, it looks like a power strip for your internet. You run one cable from your router into the switch, and instantly you unlock 5, 8, or even 24 new wired ports. However, a switch doesn't just blindly split the connection. It is incredibly sharp. Every piece of hardware has a unique factory stamped fingerprint called a MAC address. The switch actively memorizes these addresses, building a hidden directory of exactly which device is plugged into which specific port. When your computer asks to download a massive file, the switch checks its directory and fires that data down the single exact cable leading to your PC. It never broadcasts the file to the printer or the TV by accident. By acting as a highly precise mail room sorter, a switch prevents data collisions, keeping your wired network blazing fast and completely free of traffic jams. Hub. A hub looks almost exactly like a switch, a little box with several ports for your internet cables. However, inside its plastic shell, it's a lot less smart. While a switch is like a private messenger delivering letters to specific doors, a hub is more like a person standing in the middle of a playground with a giant megaphone. When one computer sends a piece of information, the hub doesn't bother checking who it's meant for. Instead, it simply screams that information out to every single device plugged into it. Because of this shouting method, hubs can be pretty messy. If you have four friends all trying to send different files at the exact same time, the hub gets overwhelmed. It's like four people trying to talk through that same megaphone at once. Everything gets garbled and slow. This is what tech people call a collision. Everyone has to wait their turn. And the more devices you add, the more everyone has to sit around waiting for the noise to clear. You won't see these very often in modern homes or offices anymore. They were popular years ago because they were cheap and simple to make. But as our internet speeds got faster and we started using more gadgets, the hub's habit of oversharing became a huge problem. Nowadays, they've mostly been retired in favor of the smarter switch. They are a bit like the old loud walkie-talkies of the networking world. Fun to learn about, but not something you'd want to rely on for a lag-free gaming session. Access point or WAP. Have you ever walked through a massive hospital or a big hotel and your phone somehow stays connected to the Wi-Fi the entire time? One single router sitting in a back office definitely can't push a signal through all those thick concrete walls. That flawless unbroken coverage actually comes from devices called access points. To understand how they work, think of your internet connection like a building's water supply. Your router is the main pump pushing data through the thick cables hidden inside the walls. An access point is exactly like a sprinkler head. You attach it to the end of that physical cable and it sprays a fresh, strong Wi-Fi signal all over that specific room. If you live in a big house with a stubborn dead zone in the backyard where videos always freeze, an access point is the ultimate fix. You just run a wire out there, plug the access point in, and you instantly get a brand new full strength bubble of internet. It doesn't do the complex traffic directing work of a router. It simply sits there, takes the super fast internet straight from the wire and broadcast it into the air so your tablet can catch it. It turns a wired connection into a wireless one. Simple as that. Range extenders/re repeaters. A range extender or repeater is a quick way to fix weak Wi-Fi in certain spots of your home. It doesn't create a new network from scratch. Instead, it grabs your existing Wi-Fi signal and pushes it further, like giving it a second life. You usually plug it into a wall somewhere between your router and the area where the signal is weak. The extender listens to your router's Wi-Fi, then rebroadcast it so devices farther away can still connect. The idea is simple, but there's a catch. Since it has to receive and resend the same signal, it can slow things down a bit. You're basically stretching the same connection over a longer distance, not making it stronger in terms of speed. A simple way to think about it, router equals original Wi-Fi source. Extender equals someone repeating what the router said, but louder and from farther away. If the extender is placed too far from the router, it won't help much because it's repeating a weak signal. If it's too close, you don't gain much extra coverage. Finding the right spot is the key. Range extenders are popular because they're cheap and easy to set up. No cables needed, no complicated setup. Just plug it in, connect it to your Wi-Fi, and you're good to go. They're great for small fixes like a dead zone in a bedroom. But for larger spaces, people often switch to better solutions like access points or mesh systems. Firewall. A firewall is like a security guard that quietly stands between your network and the outside internet, checking what goes in and what comes out. Every time data tries to enter your system, whether it's a website loading, an app connecting, or something more suspicious, the firewall looks at it and decides if it should be allowed through or blocked. It follows a set of rules, kind of like a checklist, to filter traffic based on things like source, destination, or type of request. Most people don't notice it because it works in the background, but it's always there, making small decisions that add up to a safer connection. In a typical home setup, your router already has a built-in firewall, so you're protected without doing anything extra. On computers, there's often a software firewall as well, adding another layer. The idea isn't to stop everything that would break the internet, but to allow normal, expected activity while quietly shutting the door on unusual or risky behavior. For example, if a random external system tries to directly access your device without permission, the firewall will likely block it before you even know it happened. It's not perfect, and it won't stop every threat, but it significantly reduces unwanted access and keeps your network from being wide open. NIC NIC stands for network interface card. It's the part that actually lets your device talk to the network. Without it, your laptop, phone, or PC would have no way to send or receive data. No internet, no Wi-Fi, nothing. Anic can be built into the device or added separately. On a laptop, it's usually hidden inside, handling both Wi-Fi and sometimes wired connections. On a desktop PC, you might see it as the Ethernet port where you plug in a cable. There are also small USB adapters that act as external NIC's if your device doesn't have one or if you want to upgrade. Each NIC has its own unique identifier called a MAC address, which helps the network recognize that specific device. When you connect to Wi-Fi or plug in a cable, the NIC is the part doing the actual communication behind the scenes, sending signals out and receiving data back. You can think of it like this. Your device is the brain, but the NIC is the mouth and ears. It doesn't decide what to say, but it's responsible for delivering and receiving the message. Most of the time, you never think about it because it just works. But if your device suddenly can't connect to Wi-Fi or doesn't detect a cable, there's a good chance the issue is related to the NIC, either a setting, a driver, or the hardware itself. Network bridge. A network bridge is used when you want to connect two separate network segments so they behave like one single network. It doesn't create internet access and it doesn't manage traffic like a router. It simply links things together in a clean, quiet way. You'll often see this in situations where two different types of connections need to work as one. For example, a computer connected to Wi-Fi can bridge that connection to a wired device through an Ethernet cable. Now that second device gets internet as if it were directly connected. No extra router needed. What makes a bridge different from something like a hub is that it's selective. It doesn't just pass everything blindly. It pays attention to where data is supposed to go and only forwards it when necessary, reducing unnecessary traffic. In simple terms, a bridge acts like a connector between two small networks, letting them talk to each other without changing how they work internally. devices on both sides can communicate as if they're on the same network. Most people don't buy a dedicated bridge device anymore. Instead, this function is often built into other hardware or even software settings on a computer. So, if a switch expands a network, a bridge links networks together, quietly making them feel like one continuous space. Gateways. While the bridges we just talked about connect networks that already speak the exact same language, gateways are built to link completely different worlds together. Maybe a modern high-speed corporate office needs to pull information from a massive decades old mainframe system. These two networks use entirely different rules, formats, and protocols to package their data. If they tried to talk directly, it would just be pure gibberish. Imagine you're traveling abroad. The money in your wallet is unavailable, so you have to go to a currency exchange counter. A gateway does something similar. It receives data from one network, translates it accordingly, and then sends it to another network. It catches the incoming data, strips away the old formatting, translates the core message into a brand new language, and safely sends it on its way. The router sitting in your living room doubles as a gateway. It takes the private local network you've built inside your house and translates your data so it can successfully merge onto the massive public infrastructure of the global internet. It acts as the ultimate digital diplomat, ensuring that no matter how drastically different two systems are, the conversation never has to stop. N Huhon.",
+  "fullTextVi": "modem. Khi bạn nhận dịch vụ từ ISP như AT và T hoặc Xfinity, dữ liệu truyền qua cáp đường phố của họ đến dưới dạng tín hiệu tương tự, sóng cuộn liên tục. Vấn đề là MacBook, iPhone hoặc TV thông minh của bạn hoàn toàn không biết gì về ngôn ngữ này. Các thiết bị điện tử trong nhà bạn hoạt động trong thế giới số, giao tiếp chặt chẽ thông qua những số không và số một khô khan, cứng nhắc. Nếu bằng cách nào đó bạn cắm trực tiếp sợi cáp bên ngoài đó vào laptop của mình thì cả hai bên sẽ không hiểu dù chỉ một lời nhau nói. Đó chính xác là nơi mà modem bước vào. Bản thân cái tên này thực sự là sự kết hợp của hai từ, modulator và de modulator. Nó hoạt động như một dịch giả thời gian thực nhanh như chớp. Khi những sóng analog đó từ ngoài đường ùa vào, modem sẽ tóm lấy chúng, ngắt chúng xuống và ngay lập tức chuyển chúng thành các số 0 và số 1 nhị phân. Vì vậy, màn hình của bạn thực sự có thể tải video Tik Tok hoặc một bài báo. Quá trình tương tự xảy ra ngược lại. Khi bạn nhấn gửi trong email công việc hoặc tải ảnh lên, modem thu thập dữ liệu kỹ thuật số từ thiết bị của bạn, chuyển nó trở lại thành sóng tương tự và bắn nó qua các đường dây viễn thông tới phần còn lại của thế giới. Nếu không có chiếc hộp nhỏ này đứng ở giữa để thực hiện công việc dịch thuật thì internet dừng ngay trước cửa nhà bạn. Cho dù các thiết bị công nghệ của bạn đắt tiền hay tiên tiến đến đâu thì chúng cũng sẽ hoàn toàn bị cô lập khỏi bộ định tuyến mạng toàn cầu. Như vậy, modem của bạn đã dịch thành công internet sang định dạng kỹ thuật số. Nhưng có một nhược điểm. Một modem tiêu chuẩn thường chỉ có một đầu ra. Trong một ngôi nhà chứa đầy điện thoại thông minh, TV thông minh và máy tính xách tay, đó là nút thắt rõ ràng. Mọi người đều cần một phần kết nối internet đó vào cùng một thời điểm. Đó là nơi bộ định tuyến tiếp quản. Nếu modem là cửa trước thì bộ định tuyến là giám đốc lưu lượng siêu tổ chức đang đứng ở hành lang của bạn. Công việc chính của nó là lấy nguồn cấp dữ liệu internet duy nhất từ ​​modem và phát sóng nó ra. Thời điểm bạn kết nối nó, bộ định tuyến sẽ tạo ra một mạng cục bộ, L, tạo thành một bong bóng kết nối riêng trong nhà bạn. Để giữ cho dữ liệu không bị tắc nghẽn giao thông hỗn loạn, bộ định tuyến sẽ phát một địa chỉ IP cục bộ duy nhất cho mọi tiện ích kết nối. Chúng hoạt động giống như số máy nhánh nội bộ trong một tòa nhà văn phòng. IPhone của bạn có một số, PlayStation có một số khác. Khi bạn nhấn vào một video YouTube trên điện thoại, bộ định tuyến sẽ sử dụng thông minh hệ thống được gọi là NAT. Nó đóng vai trò là người trung gian, lấy dữ liệu video từ internet bên ngoài và đảm bảo nó được gửi đúng đến địa chỉ nội bộ cụ thể của điện thoại của bạn. Nó đảm bảo các email riêng tư của bạn không vô tình xuất hiện trên TV phòng khách, xử lý hàng nghìn yêu cầu dữ liệu cụ thể mỗi giây. Chuyển đổi mạng. Hầu hết các bộ định tuyến gia đình đều có khoảng bốn cổng cắm ở mặt sau. Nhưng điều gì sẽ xảy ra nếu bạn đang thiết lập một văn phòng chuyên dụng tại nhà hoặc một phòng chơi game hạng nặng? Bạn có thể có máy tính để bàn, PlayStation, TV thông minh và mạng ổ lưu trữ, tất cả đều yêu cầu kết nối có dây nhanh và đáng tin cậy. Đột nhiên, bốn cổng gần như không đủ. Nhập chuyển đổi mạng. Về mặt vật lý, nó trông giống như một dải nguồn cho internet của bạn. Bạn chạy một dây cáp từ bộ định tuyến vào bộ chuyển mạch và ngay lập tức bạn mở khóa 5, 8 hoặc thậm chí 24 cổng có dây mới. Tuy nhiên, switch không chỉ phân chia kết nối một cách mù quáng. Nó cực kỳ sắc nét. Mỗi phần cứng đều có một dấu vân tay được đóng dấu duy nhất của nhà máy được gọi là địa chỉ MAC. Switch tích cực ghi nhớ các địa chỉ này, xây dựng một thư mục ẩn của chính xác thiết bị nào được cắm vào cổng cụ thể nào. Khi máy tính của bạn yêu cầu tải xuống một tệp lớn, switch sẽ kiểm tra thư mục của nó và truyền dữ liệu đó xuống cáp chính xác duy nhất dẫn đến PC của bạn. Nó không bao giờ vô tình phát tập tin tới máy in hoặc TV. Bằng cách hoạt động như một bộ phân loại phòng thư có độ chính xác cao, một switch sẽ ngăn ngừa xung đột dữ liệu, giữ cho mạng có dây của bạn luôn hoạt động nhanh và hoàn toàn không bị kẹt xe. Hub. Hub trông gần giống hệt một công tắc, một hộp nhỏ có nhiều cổng cho cáp internet của bạn. Tuy nhiên, bên trong lớp vỏ nhựa của nó, nó kém thông minh hơn rất nhiều. Trong khi switch giống như một người đưa tin riêng gửi thư đến những cánh cửa cụ thể, hub giống một người đứng giữa sân chơi với một cái loa khổng lồ. Khi một máy tính gửi một phần thông tin, trung tâm sẽ không bận tâm kiểm tra xem ai nó có nghĩa là dành cho. Thay vào đó, nó chỉ truyền thông tin đó tới mọi thiết bị được cắm vào nó. Vì phương pháp la hét này nên các trung tâm có thể khá lộn xộn. Nếu bạn có bốn người bạn đều cố gắng gửi các tệp khác nhau cùng một lúc đồng thời, trung tâm bị choáng ngợp. Giống như bốn người đang cố gắng nói chuyện qua cùng một cái loa cùng một lúc. Mọi thứ trở nên lộn xộn và chậm chạp. Đây là điều mà dân công nghệ gọi là va chạm. Mọi người đều phải đợi đến lượt mình. Và càng thêm nhiều thiết bị thì mọi người càng phải ngồi chờ để tiếng ồn được giải tỏa. Bạn sẽ không còn thấy những thứ này thường xuyên trong những ngôi nhà hoặc văn phòng hiện đại nữa. Chúng đã phổ biến cách đây nhiều năm vì chúng rẻ và dễ làm. Nhưng khi tốc độ Internet của chúng tôi nhanh hơn và chúng tôi bắt đầu sử dụng nhiều tiện ích hơn, thói quen chia sẻ quá mức của Hub đã trở thành một vấn đề lớn. Ngày nay, chúng hầu như đã ngừng hoạt động để chuyển sang sử dụng công tắc thông minh hơn. Chúng hơi giống những chiếc máy bộ đàm ồn ào ngày xưa của thế giới mạng. Tìm hiểu thú vị nhưng không phải là thứ bạn muốn dựa vào để phiên chơi game không bị lag. Điểm truy cập hoặc WAP. Bạn đã bao giờ đi qua một bệnh viện lớn hay một khách sạn lớn và điện thoại bằng cách nào đó vẫn kết nối với Wi-Fi mọi lúc? Một bộ định tuyến duy nhất đặt ở văn phòng hỗ trợ chắc chắn không thể truyền tín hiệu qua tất cả những bức tường bê tông dày đó. Phạm vi phủ sóng hoàn hảo không bị gián đoạn đó thực sự đến từ các thiết bị được gọi là điểm truy cập. Để hiểu cách chúng hoạt động, hãy coi kết nối Internet của bạn giống như nước của một tòa nhà cung cấp. Bộ định tuyến của bạn là máy bơm chính đẩy dữ liệu qua các sợi cáp dày ẩn bên trong những bức tường. Điểm truy cập giống hệt như đầu phun nước. Bạn gắn nó vào đầu cáp vật lý đó và nó sẽ phun ra tín hiệu Wi-Fi mới, mạnh khắp căn phòng cụ thể đó. Nếu bạn sống trong một ngôi nhà lớn với vùng chết cứng đầu trong sân sau nơi video luôn bị treo, điểm truy cập là giải pháp tối ưu. Bạn chỉ cần chạy dây ra đó, cắm điểm truy cập vào và bạn ngay lập tức có được một bong bóng internet đầy sức mạnh hoàn toàn mới. Nó không thực hiện công việc điều hướng lưu lượng phức tạp của bộ định tuyến. Nó chỉ đơn giản nằm ở đó, truy cập Internet siêu nhanh ngay từ dây và phát nó lên không trung để máy tính bảng của bạn có thể bắt được nó. Nó biến kết nối có dây thành kết nối không dây. Đơn giản như vậy. Bộ mở rộng phạm vi/bộ lặp lại. Bộ mở rộng phạm vi hoặc bộ lặp sóng là cách nhanh chóng để khắc phục Wi-Fi yếu trong một số điểm nhất định trong nhà của bạn. Nó không tạo ra một mạng mới từ đầu. Thay vào đó, nó lấy tín hiệu Wi-Fi hiện có của bạn và đẩy tín hiệu đó đi xa hơn, giống như đưa tín hiệu đó vào mạng. cuộc sống thứ hai. Bạn thường cắm nó vào tường ở đâu đó giữa bộ định tuyến và khu vực nơi tín hiệu yếu. Bộ mở rộng sẽ lắng nghe Wi-Fi của bộ định tuyến của bạn, sau đó phát sóng lại để các thiết bị ở xa hơn vẫn có thể kết nối. Ý tưởng rất đơn giản, nhưng có một nhược điểm. Vì nó phải nhận và gửi lại cùng một tín hiệu nên nó có thể làm mọi thứ chậm lại xuống một chút. Về cơ bản, bạn đang kéo dài cùng một kết nối trên một khoảng cách dài hơn chứ không phải làm cho kết nối đó mạnh hơn về mặt tốc độ. Một cách đơn giản để nghĩ về nó, bộ định tuyến tương đương với nguồn Wi-Fi gốc. Bộ mở rộng tương đương với việc ai đó lặp lại những gì bộ định tuyến đã nói, nhưng to hơn và từ xa hơn. Nếu bộ mở rộng được đặt quá xa bộ định tuyến, nó sẽ không giúp ích nhiều bởi vì nó đang lặp lại một tín hiệu yếu. Nếu nó quá gần, bạn sẽ không có được phạm vi bảo hiểm bổ sung. Tìm đúng vị trí là chìa khóa. Bộ mở rộng phạm vi rất phổ biến vì chúng rẻ và dễ cài đặt. Không cần dây cáp, không cần thiết lập phức tạp. Chỉ cần cắm nó vào, kết nối nó với Wi-Fi của bạn và bạn đã sẵn sàng. Chúng rất phù hợp cho những sửa chữa nhỏ như vùng chết trong phòng ngủ. Nhưng đối với những không gian rộng hơn, mọi người thường chuyển sang các giải pháp tốt hơn như điểm truy cập hoặc các hệ thống lưới. Tường lửa. Tường lửa giống như một nhân viên bảo vệ lặng lẽ đứng giữa mạng của bạn và internet bên ngoài, kiểm tra những gì đi vào và những gì đi ra. Mỗi khi dữ liệu cố gắng xâm nhập vào hệ thống của bạn, cho dù đó là tải trang web, ứng dụng đang kết nối hoặc điều gì đó đáng ngờ hơn, tường lửa sẽ xem xét nó và quyết định xem nó phải được phép đi qua hoặc bị chặn. Nó tuân theo một bộ quy tắc, giống như một danh sách kiểm tra, để lọc lưu lượng truy cập dựa trên những thứ như nguồn, đích hoặc loại yêu cầu. Hầu hết mọi người không để ý đến nó vì nó hoạt động ở chế độ nền, nhưng nó luôn là ở đó, đưa ra những quyết định nhỏ giúp kết nối an toàn hơn. Trong thiết lập tại nhà thông thường, bộ định tuyến của bạn đã có sẵn tường lửa, vì vậy bạn được bảo vệ mà không cần làm gì thêm. Trên máy tính, thường có tường lửa phần mềm, thêm một lớp khác. Ý tưởng không phải là ngăn chặn mọi thứ có thể phá vỡ Internet mà là cho phép hoạt động bình thường, được mong đợi trong khi lặng lẽ đóng cửa đối với hành vi bất thường hoặc nguy hiểm. Ví dụ: nếu một hệ thống bên ngoài ngẫu nhiên cố gắng truy cập trực tiếp vào thiết bị của bạn mà không có quyền, tường lửa có thể sẽ chặn nó trước khi bạn biết điều đó đã xảy ra. Nó không hoàn hảo và sẽ không ngăn chặn mọi mối đe dọa nhưng nó làm giảm đáng kể các mối đe dọa không mong muốn. truy cập và giữ cho mạng của bạn không bị mở rộng. NIC NIC là viết tắt của thẻ giao diện mạng. Đây là phần thực sự cho phép thiết bị của bạn giao tiếp với mạng. Nếu không có nó, máy tính xách tay, điện thoại hoặc PC của bạn sẽ không có cách nào để gửi hoặc nhận dữ liệu. Không có internet, không có Wi-Fi, không có gì. Anic có thể được tích hợp sẵn trong thiết bị hoặc thêm riêng biệt. Trên máy tính xách tay, nó thường được ẩn bên trong, xử lý cả kết nối Wi-Fi và đôi khi có dây. Trên máy tính để bàn, bạn có thể xem nó là cổng Ethernet nơi bạn cắm cáp. Ngoài ra còn có các bộ điều hợp USB nhỏ hoạt động như NIC bên ngoài nếu thiết bị của bạn không có hoặc nếu bạn muốn nâng cấp. Mỗi NIC có mã định danh duy nhất riêng được gọi là địa chỉ MAC, giúp ích cho mạng nhận ra thiết bị cụ thể đó. Khi bạn kết nối với Wi-Fi hoặc cắm cáp, NIC chính là phần thực hiện giao tiếp thực tế ở hậu trường, gửi tín hiệu ra và nhận dữ liệu back. Bạn có thể nghĩ về nó như thế này. Thiết bị của bạn là bộ não, nhưng NIC là miệng và tai. Nó không quyết định phải nói gì nhưng nó có trách nhiệm truyền và nhận tin nhắn. Hầu hết thời gian, bạn không bao giờ nghĩ về nó bởi vì nó chỉ hoạt động. Nhưng nếu thiết bị của bạn đột nhiên không thể kết nối với Wi-Fi hoặc không tìm thấy cáp, rất có thể sự cố này liên quan đến NIC, hoặc là do cài đặt, trình điều khiển hoặc chính phần cứng đó. Cầu mạng. Cầu nối mạng được sử dụng khi bạn muốn kết nối hai đoạn mạng riêng biệt vì vậy chúng hoạt động giống như một mạng duy nhất. Nó không tạo ra quyền truy cập internet và nó không quản lý lưu lượng truy cập như bộ định tuyến. Nó chỉ đơn giản là liên kết mọi thứ lại với nhau một cách sạch sẽ và yên tĩnh. Bạn sẽ thường thấy điều này trong các tình huống cần có hai loại kết nối khác nhau làm việc như một. Ví dụ: một máy tính được kết nối với Wi-Fi có thể kết nối kết nối đó với có dây thiết bị thông qua cáp Ethernet. Bây giờ thiết bị thứ hai có được Internet như thể nó được kết nối trực tiếp. Không cần thêm bộ định tuyến. Điều khiến một cây cầu khác biệt với một thứ gì đó giống như một trung tâm là tính chọn lọc của nó. Nó không chỉ vượt qua mọi thứ một cách mù quáng. Nó chú ý đến nơi dữ liệu sẽ đi và chỉ chuyển tiếp nó khi cần thiết, giảm lưu lượng không cần thiết. Nói một cách đơn giản, bridge đóng vai trò như một đầu nối giữa hai mạng nhỏ, cho phép họ nói chuyện với nhau mà không thay đổi cách họ làm việc nội bộ. thiết bị ở cả hai bên có thể liên lạc như thể chúng ở trên cùng một mạng. Hầu hết mọi người không mua thiết bị cầu nối chuyên dụng nữa. Thay vào đó, chức năng này thường được tích hợp vào các cài đặt phần cứng hoặc thậm chí phần mềm khác trên một chiếc máy tính. Vì vậy, nếu một bộ chuyển mạch mở rộng mạng, thì một cây cầu sẽ liên kết các mạng với nhau, âm thầm tạo ra chúng có cảm giác như một không gian liên tục. Cổng. Trong khi những cây cầu mà chúng ta vừa nói về kết nối các mạng đã nói chính xác cùng một ngôn ngữ, các cổng được xây dựng để liên kết các thế giới hoàn toàn khác nhau với nhau. Có lẽ một văn phòng công ty tốc độ cao hiện đại cần lấy thông tin từ hàng thập kỷ khổng lồ hệ thống máy tính lớn cũ. Hai mạng này sử dụng các quy tắc, định dạng và giao thức hoàn toàn khác nhau để đóng gói dữ liệu của chúng. Nếu họ cố gắng nói chuyện trực tiếp thì đó sẽ chỉ là sự vô nghĩa mà thôi. Hãy tưởng tượng bạn đang đi du lịch nước ngoài. Tiền trong ví của bạn không có nên bạn phải vào quầy đổi tiền. Một cổng thực hiện điều gì đó tương tự. Nó nhận dữ liệu từ một mạng, dịch dữ liệu tương ứng và sau đó gửi đến một mạng khác. Nó nắm bắt dữ liệu đến, loại bỏ định dạng cũ, dịch thông điệp cốt lõi sang một ngôn ngữ hoàn toàn mới và gửi nó đi một cách an toàn. Bộ định tuyến đặt trong phòng khách của bạn đóng vai trò như một cổng vào. Nó sử dụng mạng cục bộ riêng mà bạn đã xây dựng trong nhà và dịch của bạn dữ liệu để nó có thể hợp nhất thành công vào cơ sở hạ tầng công cộng khổng lồ của toàn cầu internet. Nó hoạt động như một nhà ngoại giao kỹ thuật số tối ưu, đảm bảo rằng dù có khác biệt đáng kể hai hệ thống là, cuộc trò chuyện không bao giờ phải dừng lại. N Huhon.",
+  "segments": [
+    {
+      "text": "modem.",
+      "viText": "modem.",
+      "start": 0,
+      "duration": 2
+    },
+    {
+      "text": "When you get service from an ISP like AT and T or Xfinity, the",
+      "viText": "Khi bạn nhận dịch vụ từ ISP như AT và T hoặc Xfinity,",
+      "start": 2,
+      "duration": 3.78
+    },
+    {
+      "text": "data traveling through their street cables arrives as an analog signal, continuous rolling waves.",
+      "viText": "dữ liệu truyền qua cáp đường phố của họ đến dưới dạng tín hiệu tương tự, sóng cuộn liên tục.",
+      "start": 5.78,
+      "duration": 5.92
+    },
+    {
+      "text": "The issue is that your MacBook, iPhone, or smart TV is completely clueless about",
+      "viText": "Vấn đề là MacBook, iPhone hoặc TV thông minh của bạn hoàn toàn không biết gì về",
+      "start": 11.7,
+      "duration": 4.88
+    },
+    {
+      "text": "this language.",
+      "viText": "ngôn ngữ này.",
+      "start": 16.58,
+      "duration": 2
+    },
+    {
+      "text": "The electronic devices in your house operate in a digital world, communicating strictly through",
+      "viText": "Các thiết bị điện tử trong nhà bạn hoạt động trong thế giới số, giao tiếp chặt chẽ thông qua",
+      "start": 18.58,
+      "duration": 5.8
+    },
+    {
+      "text": "dry, rigid zeros and ones.",
+      "viText": "những số không và số một khô khan, cứng nhắc.",
+      "start": 24.38,
+      "duration": 2
+    },
+    {
+      "text": "If you somehow plug that outside cable directly into your laptop, the two sides",
+      "viText": "Nếu bằng cách nào đó bạn cắm trực tiếp sợi cáp bên ngoài đó vào laptop của mình thì cả hai bên",
+      "start": 26.38,
+      "duration": 4.82
+    },
+    {
+      "text": "wouldn't understand a single word each other was saying.",
+      "viText": "sẽ không hiểu dù chỉ một lời nhau nói.",
+      "start": 31.2,
+      "duration": 3.42
+    },
+    {
+      "text": "That is exactly where the modem steps in.",
+      "viText": "Đó chính xác là nơi mà modem bước vào.",
+      "start": 34.62,
+      "duration": 2.5
+    },
+    {
+      "text": "The name itself is actually a mashup of two words, modulator and de modulator.",
+      "viText": "Bản thân cái tên này thực sự là sự kết hợp của hai từ, modulator và de modulator.",
+      "start": 37.12,
+      "duration": 4.76
+    },
+    {
+      "text": "It acts as a lightning fast realtime translator.",
+      "viText": "Nó hoạt động như một dịch giả thời gian thực nhanh như chớp.",
+      "start": 41.88,
+      "duration": 2.93
+    },
+    {
+      "text": "When those analog waves rush in from the street, the modem grabs them, breaks",
+      "viText": "Khi những sóng analog đó từ ngoài đường ùa vào, modem sẽ tóm lấy chúng, ngắt",
+      "start": 44.81,
+      "duration": 4.7
+    },
+    {
+      "text": "them down, and instantly translates them into binary zeros and ones.",
+      "viText": "chúng xuống và ngay lập tức chuyển chúng thành các số 0 và số 1 nhị phân.",
+      "start": 49.51,
+      "duration": 4.15
+    },
+    {
+      "text": "So your screen can actually load a Tik Tok video or a news article.",
+      "viText": "Vì vậy, màn hình của bạn thực sự có thể tải video Tik Tok hoặc một bài báo.",
+      "start": 53.66,
+      "duration": 4.09
+    },
+    {
+      "text": "The exact same process happens in reverse.",
+      "viText": "Quá trình tương tự xảy ra ngược lại.",
+      "start": 57.75,
+      "duration": 2.56
+    },
+    {
+      "text": "When you hit send on a work email or upload a photo, the modem",
+      "viText": "Khi bạn nhấn gửi trong email công việc hoặc tải ảnh lên, modem",
+      "start": 60.31,
+      "duration": 3.78
+    },
+    {
+      "text": "gathers the digital data from your device, translates it back into analog waves, and",
+      "viText": "thu thập dữ liệu kỹ thuật số từ thiết bị của bạn, chuyển nó trở lại thành sóng tương tự và",
+      "start": 64.09,
+      "duration": 5.12
+    },
+    {
+      "text": "shoots it out across the telecom lines to the rest of the world.",
+      "viText": "bắn nó qua các đường dây viễn thông tới phần còn lại của thế giới.",
+      "start": 69.21,
+      "duration": 3.9
+    },
+    {
+      "text": "Without this little box standing in the middle doing the translation work, the internet",
+      "viText": "Nếu không có chiếc hộp nhỏ này đứng ở giữa để thực hiện công việc dịch thuật thì internet",
+      "start": 73.11,
+      "duration": 5.31
+    },
+    {
+      "text": "stops right at your front door.",
+      "viText": "dừng ngay trước cửa nhà bạn.",
+      "start": 78.42,
+      "duration": 2
+    },
+    {
+      "text": "No matter how expensive or advanced your tech gadgets are, they would be completely",
+      "viText": "Cho dù các thiết bị công nghệ của bạn đắt tiền hay tiên tiến đến đâu thì chúng cũng sẽ hoàn toàn",
+      "start": 80.42,
+      "duration": 5.06
+    },
+    {
+      "text": "isolated from the global network router.",
+      "viText": "bị cô lập khỏi bộ định tuyến mạng toàn cầu.",
+      "start": 85.48,
+      "duration": 2.44
+    },
+    {
+      "text": "So, your modem has successfully translated the internet into a digital format.",
+      "viText": "Như vậy, modem của bạn đã dịch thành công internet sang định dạng kỹ thuật số.",
+      "start": 87.92,
+      "duration": 4.76
+    },
+    {
+      "text": "But there is a catch.",
+      "viText": "Nhưng có một nhược điểm.",
+      "start": 92.68,
+      "duration": 2
+    },
+    {
+      "text": "A standard modem usually only has one output.",
+      "viText": "Một modem tiêu chuẩn thường chỉ có một đầu ra.",
+      "start": 94.68,
+      "duration": 2.75
+    },
+    {
+      "text": "In a house filled with smartphones, a smart TV, and laptops, that is an",
+      "viText": "Trong một ngôi nhà chứa đầy điện thoại thông minh, TV thông minh và máy tính xách tay, đó là",
+      "start": 97.43,
+      "duration": 4.33
+    },
+    {
+      "text": "obvious bottleneck.",
+      "viText": "nút thắt rõ ràng.",
+      "start": 101.76,
+      "duration": 2
+    },
+    {
+      "text": "Everyone needs a piece of that internet connection at the exact same time.",
+      "viText": "Mọi người đều cần một phần kết nối internet đó vào cùng một thời điểm.",
+      "start": 103.76,
+      "duration": 4.51
+    },
+    {
+      "text": "That is where the router takes over.",
+      "viText": "Đó là nơi bộ định tuyến tiếp quản.",
+      "start": 108.27,
+      "duration": 2.2
+    },
+    {
+      "text": "If the modem is the front door, the router is the hyperorganized traffic director",
+      "viText": "Nếu modem là cửa trước thì bộ định tuyến là giám đốc lưu lượng siêu tổ chức",
+      "start": 110.47,
+      "duration": 4.94
+    },
+    {
+      "text": "standing in your hallway.",
+      "viText": "đang đứng ở hành lang của bạn.",
+      "start": 115.41,
+      "duration": 2
+    },
+    {
+      "text": "Its primary job is to grab that single internet feed from the modem and",
+      "viText": "Công việc chính của nó là lấy nguồn cấp dữ liệu internet duy nhất từ ​​modem và",
+      "start": 117.41,
+      "duration": 4.33
+    },
+    {
+      "text": "broadcast it out.",
+      "viText": "phát sóng nó ra.",
+      "start": 121.74,
+      "duration": 2
+    },
+    {
+      "text": "The moment you hook it up, the router creates a local area network, L,",
+      "viText": "Thời điểm bạn kết nối nó, bộ định tuyến sẽ tạo ra một mạng cục bộ, L,",
+      "start": 123.74,
+      "duration": 4.27
+    },
+    {
+      "text": "forming a private bubble of connectivity across your home.",
+      "viText": "tạo thành một bong bóng kết nối riêng trong nhà bạn.",
+      "start": 128.01,
+      "duration": 3.54
+    },
+    {
+      "text": "To keep data from turning into a chaotic traffic jam, the router hands out",
+      "viText": "Để giữ cho dữ liệu không bị tắc nghẽn giao thông hỗn loạn, bộ định tuyến sẽ phát",
+      "start": 131.55,
+      "duration": 4.51
+    },
+    {
+      "text": "a unique local IP address to every single gadget that connects.",
+      "viText": "một địa chỉ IP cục bộ duy nhất cho mọi tiện ích kết nối.",
+      "start": 136.06,
+      "duration": 3.84
+    },
+    {
+      "text": "These act like internal extension numbers in an office building.",
+      "viText": "Chúng hoạt động giống như số máy nhánh nội bộ trong một tòa nhà văn phòng.",
+      "start": 139.9,
+      "duration": 3.9
+    },
+    {
+      "text": "Your iPhone gets one number, the PlayStation gets another.",
+      "viText": "IPhone của bạn có một số, PlayStation có một số khác.",
+      "start": 143.8,
+      "duration": 3.54
+    },
+    {
+      "text": "When you tap a YouTube video on your phone, the router uses a clever",
+      "viText": "Khi bạn nhấn vào một video YouTube trên điện thoại, bộ định tuyến sẽ sử dụng",
+      "start": 147.34,
+      "duration": 4.15
+    },
+    {
+      "text": "system calledNAT.",
+      "viText": "thông minh hệ thống được gọi là NAT.",
+      "start": 151.49,
+      "duration": 2
+    },
+    {
+      "text": "It acts as the middleman, grabbing the video data from the outside internet and",
+      "viText": "Nó đóng vai trò là người trung gian, lấy dữ liệu video từ internet bên ngoài và",
+      "start": 153.49,
+      "duration": 4.82
+    },
+    {
+      "text": "ensuring it gets delivered strictly to your phone's specific internal address.",
+      "viText": "đảm bảo nó được gửi đúng đến địa chỉ nội bộ cụ thể của điện thoại của bạn.",
+      "start": 158.31,
+      "duration": 4.76
+    },
+    {
+      "text": "It guarantees your private emails don't accidentally pop up on the living room TV,",
+      "viText": "Nó đảm bảo các email riêng tư của bạn không vô tình xuất hiện trên TV phòng khách,",
+      "start": 163.07,
+      "duration": 5
+    },
+    {
+      "text": "juggling thousands of specific data requests every single second.",
+      "viText": "xử lý hàng nghìn yêu cầu dữ liệu cụ thể mỗi giây.",
+      "start": 168.07,
+      "duration": 3.97
+    },
+    {
+      "text": "Network switch.",
+      "viText": "Chuyển đổi mạng.",
+      "start": 172.04,
+      "duration": 2
+    },
+    {
+      "text": "Most home routers come with maybe four plug-in ports on the back.",
+      "viText": "Hầu hết các bộ định tuyến gia đình đều có khoảng bốn cổng cắm ở mặt sau.",
+      "start": 174.04,
+      "duration": 3.97
+    },
+    {
+      "text": "But what happens if you are setting up a dedicated home office or a",
+      "viText": "Nhưng điều gì sẽ xảy ra nếu bạn đang thiết lập một văn phòng chuyên dụng tại nhà hoặc một",
+      "start": 178.01,
+      "duration": 4.09
+    },
+    {
+      "text": "heavyduty gaming room?",
+      "viText": "phòng chơi game hạng nặng?",
+      "start": 182.1,
+      "duration": 2
+    },
+    {
+      "text": "You might have a desktop PC, a PlayStation, a smart TV, and a network",
+      "viText": "Bạn có thể có máy tính để bàn, PlayStation, TV thông minh và mạng",
+      "start": 184.1,
+      "duration": 4.21
+    },
+    {
+      "text": "storage drive, all demanding a fast, reliable wired connection.",
+      "viText": "ổ lưu trữ, tất cả đều yêu cầu kết nối có dây nhanh và đáng tin cậy.",
+      "start": 188.31,
+      "duration": 3.84
+    },
+    {
+      "text": "Suddenly, four ports aren't nearly enough.",
+      "viText": "Đột nhiên, bốn cổng gần như không đủ.",
+      "start": 192.15,
+      "duration": 2.56
+    },
+    {
+      "text": "Enter the network switch.",
+      "viText": "Nhập chuyển đổi mạng.",
+      "start": 194.71,
+      "duration": 2
+    },
+    {
+      "text": "In physical terms, it looks like a power strip for your internet.",
+      "viText": "Về mặt vật lý, nó trông giống như một dải nguồn cho internet của bạn.",
+      "start": 196.71,
+      "duration": 3.97
+    },
+    {
+      "text": "You run one cable from your router into the switch, and instantly you unlock",
+      "viText": "Bạn chạy một dây cáp từ bộ định tuyến vào bộ chuyển mạch và ngay lập tức bạn mở khóa",
+      "start": 200.68,
+      "duration": 4.64
+    },
+    {
+      "text": "5, 8, or even 24 new wired ports.",
+      "viText": "5, 8 hoặc thậm chí 24 cổng có dây mới.",
+      "start": 205.32,
+      "duration": 2.01
+    },
+    {
+      "text": "However, a switch doesn't just blindly split the connection.",
+      "viText": "Tuy nhiên, switch không chỉ phân chia kết nối một cách mù quáng.",
+      "start": 207.33,
+      "duration": 3.66
+    },
+    {
+      "text": "It is incredibly sharp.",
+      "viText": "Nó cực kỳ sắc nét.",
+      "start": 210.99,
+      "duration": 2
+    },
+    {
+      "text": "Every piece of hardware has a unique factory stamped fingerprint called a MAC address.",
+      "viText": "Mỗi phần cứng đều có một dấu vân tay được đóng dấu duy nhất của nhà máy được gọi là địa chỉ MAC.",
+      "start": 212.99,
+      "duration": 5.25
+    },
+    {
+      "text": "The switch actively memorizes these addresses, building a hidden directory of exactly which device",
+      "viText": "Switch tích cực ghi nhớ các địa chỉ này, xây dựng một thư mục ẩn của chính xác thiết bị nào",
+      "start": 218.24,
+      "duration": 5.98
+    },
+    {
+      "text": "is plugged into which specific port.",
+      "viText": "được cắm vào cổng cụ thể nào.",
+      "start": 224.22,
+      "duration": 2.2
+    },
+    {
+      "text": "When your computer asks to download a massive file, the switch checks its directory",
+      "viText": "Khi máy tính của bạn yêu cầu tải xuống một tệp lớn, switch sẽ kiểm tra thư mục của nó",
+      "start": 226.42,
+      "duration": 5.06
+    },
+    {
+      "text": "and fires that data down the single exact cable leading to your PC.",
+      "viText": "và truyền dữ liệu đó xuống cáp chính xác duy nhất dẫn đến PC của bạn.",
+      "start": 231.48,
+      "duration": 4.09
+    },
+    {
+      "text": "It never broadcasts the file to the printer or the TV by accident.",
+      "viText": "Nó không bao giờ vô tình phát tập tin tới máy in hoặc TV.",
+      "start": 235.57,
+      "duration": 4.03
+    },
+    {
+      "text": "By acting as a highly precise mail room sorter, a switch prevents data collisions,",
+      "viText": "Bằng cách hoạt động như một bộ phân loại phòng thư có độ chính xác cao, một switch sẽ ngăn ngừa xung đột dữ liệu,",
+      "start": 239.6,
+      "duration": 5
+    },
+    {
+      "text": "keeping your wired network blazing fast and completely free of traffic jams.",
+      "viText": "giữ cho mạng có dây của bạn luôn hoạt động nhanh và hoàn toàn không bị kẹt xe.",
+      "start": 244.6,
+      "duration": 4.64
+    },
+    {
+      "text": "Hub.",
+      "viText": "Hub.",
+      "start": 249.24,
+      "duration": 2
+    },
+    {
+      "text": "A hub looks almost exactly like a switch, a little box with several ports",
+      "viText": "Hub trông gần giống hệt một công tắc, một hộp nhỏ có nhiều cổng",
+      "start": 251.24,
+      "duration": 4.45
+    },
+    {
+      "text": "for your internet cables.",
+      "viText": "cho cáp internet của bạn.",
+      "start": 255.69,
+      "duration": 2
+    },
+    {
+      "text": "However, inside its plastic shell, it's a lot less smart.",
+      "viText": "Tuy nhiên, bên trong lớp vỏ nhựa của nó, nó kém thông minh hơn rất nhiều.",
+      "start": 257.69,
+      "duration": 3.48
+    },
+    {
+      "text": "While a switch is like a private messenger delivering letters to specific doors, a",
+      "viText": "Trong khi switch giống như một người đưa tin riêng gửi thư đến những cánh cửa cụ thể,",
+      "start": 261.17,
+      "duration": 5
+    },
+    {
+      "text": "hub is more like a person standing in the middle of a playground with",
+      "viText": "hub giống một người đứng giữa sân chơi với",
+      "start": 266.17,
+      "duration": 4.21
+    },
+    {
+      "text": "a giant megaphone.",
+      "viText": "một cái loa khổng lồ.",
+      "start": 270.38,
+      "duration": 2
+    },
+    {
+      "text": "When one computer sends a piece of information, the hub doesn't bother checking who",
+      "viText": "Khi một máy tính gửi một phần thông tin, trung tâm sẽ không bận tâm kiểm tra xem ai",
+      "start": 272.38,
+      "duration": 5.06
+    },
+    {
+      "text": "it's meant for.",
+      "viText": "nó có nghĩa là dành cho.",
+      "start": 277.44,
+      "duration": 2
+    },
+    {
+      "text": "Instead, it simply screams that information out to every single device plugged into it.",
+      "viText": "Thay vào đó, nó chỉ truyền thông tin đó tới mọi thiết bị được cắm vào nó.",
+      "start": 279.44,
+      "duration": 5.31
+    },
+    {
+      "text": "Because of this shouting method, hubs can be pretty messy.",
+      "viText": "Vì phương pháp la hét này nên các trung tâm có thể khá lộn xộn.",
+      "start": 284.75,
+      "duration": 3.54
+    },
+    {
+      "text": "If you have four friends all trying to send different files at the exact",
+      "viText": "Nếu bạn có bốn người bạn đều cố gắng gửi các tệp khác nhau cùng một lúc",
+      "start": 288.29,
+      "duration": 4.39
+    },
+    {
+      "text": "same time, the hub gets overwhelmed.",
+      "viText": "đồng thời, trung tâm bị choáng ngợp.",
+      "start": 292.68,
+      "duration": 2.2
+    },
+    {
+      "text": "It's like four people trying to talk through that same megaphone at once.",
+      "viText": "Giống như bốn người đang cố gắng nói chuyện qua cùng một cái loa cùng một lúc.",
+      "start": 294.88,
+      "duration": 4.45
+    },
+    {
+      "text": "Everything gets garbled and slow.",
+      "viText": "Mọi thứ trở nên lộn xộn và chậm chạp.",
+      "start": 299.33,
+      "duration": 2.01
+    },
+    {
+      "text": "This is what tech people call a collision.",
+      "viText": "Đây là điều mà dân công nghệ gọi là va chạm.",
+      "start": 301.34,
+      "duration": 2.56
+    },
+    {
+      "text": "Everyone has to wait their turn.",
+      "viText": "Mọi người đều phải đợi đến lượt mình.",
+      "start": 303.9,
+      "duration": 2
+    },
+    {
+      "text": "And the more devices you add, the more everyone has to sit around waiting",
+      "viText": "Và càng thêm nhiều thiết bị thì mọi người càng phải ngồi chờ",
+      "start": 305.9,
+      "duration": 4.45
+    },
+    {
+      "text": "for the noise to clear.",
+      "viText": "để tiếng ồn được giải tỏa.",
+      "start": 310.35,
+      "duration": 2
+    },
+    {
+      "text": "You won't see these very often in modern homes or offices anymore.",
+      "viText": "Bạn sẽ không còn thấy những thứ này thường xuyên trong những ngôi nhà hoặc văn phòng hiện đại nữa.",
+      "start": 312.35,
+      "duration": 4.03
+    },
+    {
+      "text": "They were popular years ago because they were cheap and simple to make.",
+      "viText": "Chúng đã phổ biến cách đây nhiều năm vì chúng rẻ và dễ làm.",
+      "start": 316.38,
+      "duration": 4.33
+    },
+    {
+      "text": "But as our internet speeds got faster and we started using more gadgets, the",
+      "viText": "Nhưng khi tốc độ Internet của chúng tôi nhanh hơn và chúng tôi bắt đầu sử dụng nhiều tiện ích hơn,",
+      "start": 320.71,
+      "duration": 4.64
+    },
+    {
+      "text": "hub's habit of oversharing became a huge problem.",
+      "viText": "thói quen chia sẻ quá mức của Hub đã trở thành một vấn đề lớn.",
+      "start": 325.35,
+      "duration": 2.99
+    },
+    {
+      "text": "Nowadays, they've mostly been retired in favor of the smarter switch.",
+      "viText": "Ngày nay, chúng hầu như đã ngừng hoạt động để chuyển sang sử dụng công tắc thông minh hơn.",
+      "start": 328.34,
+      "duration": 4.21
+    },
+    {
+      "text": "They are a bit like the old loud walkie-talkies of the networking world.",
+      "viText": "Chúng hơi giống những chiếc máy bộ đàm ồn ào ngày xưa của thế giới mạng.",
+      "start": 332.55,
+      "duration": 4.39
+    },
+    {
+      "text": "Fun to learn about, but not something you'd want to rely on for a",
+      "viText": "Tìm hiểu thú vị nhưng không phải là thứ bạn muốn dựa vào để",
+      "start": 336.94,
+      "duration": 3.97
+    },
+    {
+      "text": "lag-free gaming session.",
+      "viText": "phiên chơi game không bị lag.",
+      "start": 340.91,
+      "duration": 2
+    },
+    {
+      "text": "Access point or WAP.",
+      "viText": "Điểm truy cập hoặc WAP.",
+      "start": 342.91,
+      "duration": 2
+    },
+    {
+      "text": "Have you ever walked through a massive hospital or a big hotel and your",
+      "viText": "Bạn đã bao giờ đi qua một bệnh viện lớn hay một khách sạn lớn và",
+      "start": 344.91,
+      "duration": 4.33
+    },
+    {
+      "text": "phone somehow stays connected to the Wi-Fi the entire time?",
+      "viText": "điện thoại bằng cách nào đó vẫn kết nối với Wi-Fi mọi lúc?",
+      "start": 349.24,
+      "duration": 3.6
+    },
+    {
+      "text": "One single router sitting in a back office definitely can't push a signal through",
+      "viText": "Một bộ định tuyến duy nhất đặt ở văn phòng hỗ trợ chắc chắn không thể truyền tín hiệu qua",
+      "start": 352.84,
+      "duration": 4.94
+    },
+    {
+      "text": "all those thick concrete walls.",
+      "viText": "tất cả những bức tường bê tông dày đó.",
+      "start": 357.78,
+      "duration": 2
+    },
+    {
+      "text": "That flawless unbroken coverage actually comes from devices called access points.",
+      "viText": "Phạm vi phủ sóng hoàn hảo không bị gián đoạn đó thực sự đến từ các thiết bị được gọi là điểm truy cập.",
+      "start": 359.78,
+      "duration": 4.94
+    },
+    {
+      "text": "To understand how they work, think of your internet connection like a building's water",
+      "viText": "Để hiểu cách chúng hoạt động, hãy coi kết nối Internet của bạn giống như nước của một tòa nhà",
+      "start": 364.72,
+      "duration": 5.25
+    },
+    {
+      "text": "supply.",
+      "viText": "cung cấp.",
+      "start": 369.97,
+      "duration": 2
+    },
+    {
+      "text": "Your router is the main pump pushing data through the thick cables hidden inside",
+      "viText": "Bộ định tuyến của bạn là máy bơm chính đẩy dữ liệu qua các sợi cáp dày ẩn bên trong",
+      "start": 371.97,
+      "duration": 4.88
+    },
+    {
+      "text": "the walls.",
+      "viText": "những bức tường.",
+      "start": 376.85,
+      "duration": 2
+    },
+    {
+      "text": "An access point is exactly like a sprinkler head.",
+      "viText": "Điểm truy cập giống hệt như đầu phun nước.",
+      "start": 378.85,
+      "duration": 2.99
+    },
+    {
+      "text": "You attach it to the end of that physical cable and it sprays a",
+      "viText": "Bạn gắn nó vào đầu cáp vật lý đó và nó sẽ phun ra",
+      "start": 381.84,
+      "duration": 3.84
+    },
+    {
+      "text": "fresh, strong Wi-Fi signal all over that specific room.",
+      "viText": "tín hiệu Wi-Fi mới, mạnh khắp căn phòng cụ thể đó.",
+      "start": 385.68,
+      "duration": 3.36
+    },
+    {
+      "text": "If you live in a big house with a stubborn dead zone in the",
+      "viText": "Nếu bạn sống trong một ngôi nhà lớn với vùng chết cứng đầu trong",
+      "start": 389.04,
+      "duration": 3.6
+    },
+    {
+      "text": "backyard where videos always freeze, an access point is the ultimate fix.",
+      "viText": "sân sau nơi video luôn bị treo, điểm truy cập là giải pháp tối ưu.",
+      "start": 392.64,
+      "duration": 4.45
+    },
+    {
+      "text": "You just run a wire out there, plug the access point in, and you",
+      "viText": "Bạn chỉ cần chạy dây ra đó, cắm điểm truy cập vào và bạn",
+      "start": 397.09,
+      "duration": 3.9
+    },
+    {
+      "text": "instantly get a brand new full strength bubble of internet.",
+      "viText": "ngay lập tức có được một bong bóng internet đầy sức mạnh hoàn toàn mới.",
+      "start": 400.99,
+      "duration": 3.6
+    },
+    {
+      "text": "It doesn't do the complex traffic directing work of a router.",
+      "viText": "Nó không thực hiện công việc điều hướng lưu lượng phức tạp của bộ định tuyến.",
+      "start": 404.59,
+      "duration": 3.72
+    },
+    {
+      "text": "It simply sits there, takes the super fast internet straight from the wire and",
+      "viText": "Nó chỉ đơn giản nằm ở đó, truy cập Internet siêu nhanh ngay từ dây và",
+      "start": 408.31,
+      "duration": 4.76
+    },
+    {
+      "text": "broadcast it into the air so your tablet can catch it.",
+      "viText": "phát nó lên không trung để máy tính bảng của bạn có thể bắt được nó.",
+      "start": 413.07,
+      "duration": 3.29
+    },
+    {
+      "text": "It turns a wired connection into a wireless one.",
+      "viText": "Nó biến kết nối có dây thành kết nối không dây.",
+      "start": 416.36,
+      "duration": 2.93
+    },
+    {
+      "text": "Simple as that.",
+      "viText": "Đơn giản như vậy.",
+      "start": 419.29,
+      "duration": 2
+    },
+    {
+      "text": "Range extenders/re repeaters.",
+      "viText": "Bộ mở rộng phạm vi/bộ lặp lại.",
+      "start": 421.29,
+      "duration": 2
+    },
+    {
+      "text": "A range extender or repeater is a quick way to fix weak Wi-Fi in",
+      "viText": "Bộ mở rộng phạm vi hoặc bộ lặp sóng là cách nhanh chóng để khắc phục Wi-Fi yếu trong",
+      "start": 423.29,
+      "duration": 3.9
+    },
+    {
+      "text": "certain spots of your home.",
+      "viText": "một số điểm nhất định trong nhà của bạn.",
+      "start": 427.19,
+      "duration": 2
+    },
+    {
+      "text": "It doesn't create a new network from scratch.",
+      "viText": "Nó không tạo ra một mạng mới từ đầu.",
+      "start": 429.19,
+      "duration": 2.75
+    },
+    {
+      "text": "Instead, it grabs your existing Wi-Fi signal and pushes it further, like giving it",
+      "viText": "Thay vào đó, nó lấy tín hiệu Wi-Fi hiện có của bạn và đẩy tín hiệu đó đi xa hơn, giống như đưa tín hiệu đó vào mạng.",
+      "start": 431.94,
+      "duration": 5
+    },
+    {
+      "text": "a second life.",
+      "viText": "cuộc sống thứ hai.",
+      "start": 436.94,
+      "duration": 2
+    },
+    {
+      "text": "You usually plug it into a wall somewhere between your router and the area",
+      "viText": "Bạn thường cắm nó vào tường ở đâu đó giữa bộ định tuyến và khu vực",
+      "start": 438.94,
+      "duration": 4.51
+    },
+    {
+      "text": "where the signal is weak.",
+      "viText": "nơi tín hiệu yếu.",
+      "start": 443.45,
+      "duration": 2
+    },
+    {
+      "text": "The extender listens to your router's Wi-Fi, then rebroadcast it so devices farther away",
+      "viText": "Bộ mở rộng sẽ lắng nghe Wi-Fi của bộ định tuyến của bạn, sau đó phát sóng lại để các thiết bị ở xa hơn",
+      "start": 445.45,
+      "duration": 5.37
+    },
+    {
+      "text": "can still connect.",
+      "viText": "vẫn có thể kết nối.",
+      "start": 450.82,
+      "duration": 2
+    },
+    {
+      "text": "The idea is simple, but there's a catch.",
+      "viText": "Ý tưởng rất đơn giản, nhưng có một nhược điểm.",
+      "start": 452.82,
+      "duration": 2.44
+    },
+    {
+      "text": "Since it has to receive and resend the same signal, it can slow things",
+      "viText": "Vì nó phải nhận và gửi lại cùng một tín hiệu nên nó có thể làm mọi thứ chậm lại",
+      "start": 455.26,
+      "duration": 4.27
+    },
+    {
+      "text": "down a bit.",
+      "viText": "xuống một chút.",
+      "start": 459.53,
+      "duration": 2
+    },
+    {
+      "text": "You're basically stretching the same connection over a longer distance, not making it stronger",
+      "viText": "Về cơ bản, bạn đang kéo dài cùng một kết nối trên một khoảng cách dài hơn chứ không phải làm cho kết nối đó mạnh hơn",
+      "start": 461.53,
+      "duration": 5.73
+    },
+    {
+      "text": "in terms of speed.",
+      "viText": "về mặt tốc độ.",
+      "start": 467.26,
+      "duration": 2
+    },
+    {
+      "text": "A simple way to think about it, router equals original Wi-Fi source.",
+      "viText": "Một cách đơn giản để nghĩ về nó, bộ định tuyến tương đương với nguồn Wi-Fi gốc.",
+      "start": 469.26,
+      "duration": 4.15
+    },
+    {
+      "text": "Extender equals someone repeating what the router said, but louder and from farther away.",
+      "viText": "Bộ mở rộng tương đương với việc ai đó lặp lại những gì bộ định tuyến đã nói, nhưng to hơn và từ xa hơn.",
+      "start": 473.41,
+      "duration": 5.43
+    },
+    {
+      "text": "If the extender is placed too far from the router, it won't help much",
+      "viText": "Nếu bộ mở rộng được đặt quá xa bộ định tuyến, nó sẽ không giúp ích nhiều",
+      "start": 478.84,
+      "duration": 4.21
+    },
+    {
+      "text": "because it's repeating a weak signal.",
+      "viText": "bởi vì nó đang lặp lại một tín hiệu yếu.",
+      "start": 483.05,
+      "duration": 2.26
+    },
+    {
+      "text": "If it's too close, you don't gain much extra coverage.",
+      "viText": "Nếu nó quá gần, bạn sẽ không có được phạm vi bảo hiểm bổ sung.",
+      "start": 485.31,
+      "duration": 3.29
+    },
+    {
+      "text": "Finding the right spot is the key.",
+      "viText": "Tìm đúng vị trí là chìa khóa.",
+      "start": 488.6,
+      "duration": 2.07
+    },
+    {
+      "text": "Range extenders are popular because they're cheap and easy to set up.",
+      "viText": "Bộ mở rộng phạm vi rất phổ biến vì chúng rẻ và dễ cài đặt.",
+      "start": 490.67,
+      "duration": 4.21
+    },
+    {
+      "text": "No cables needed, no complicated setup.",
+      "viText": "Không cần dây cáp, không cần thiết lập phức tạp.",
+      "start": 494.88,
+      "duration": 2.38
+    },
+    {
+      "text": "Just plug it in, connect it to your Wi-Fi, and you're good to go.",
+      "viText": "Chỉ cần cắm nó vào, kết nối nó với Wi-Fi của bạn và bạn đã sẵn sàng.",
+      "start": 497.26,
+      "duration": 3.97
+    },
+    {
+      "text": "They're great for small fixes like a dead zone in a bedroom.",
+      "viText": "Chúng rất phù hợp cho những sửa chữa nhỏ như vùng chết trong phòng ngủ.",
+      "start": 501.23,
+      "duration": 3.66
+    },
+    {
+      "text": "But for larger spaces, people often switch to better solutions like access points or",
+      "viText": "Nhưng đối với những không gian rộng hơn, mọi người thường chuyển sang các giải pháp tốt hơn như điểm truy cập hoặc",
+      "start": 504.89,
+      "duration": 5.12
+    },
+    {
+      "text": "mesh systems.",
+      "viText": "các hệ thống lưới.",
+      "start": 510.01,
+      "duration": 2
+    },
+    {
+      "text": "Firewall.",
+      "viText": "Tường lửa.",
+      "start": 512.01,
+      "duration": 2
+    },
+    {
+      "text": "A firewall is like a security guard that quietly stands between your network and",
+      "viText": "Tường lửa giống như một nhân viên bảo vệ lặng lẽ đứng giữa mạng của bạn và",
+      "start": 514.01,
+      "duration": 4.88
+    },
+    {
+      "text": "the outside internet, checking what goes in and what comes out.",
+      "viText": "internet bên ngoài, kiểm tra những gì đi vào và những gì đi ra.",
+      "start": 518.89,
+      "duration": 3.84
+    },
+    {
+      "text": "Every time data tries to enter your system, whether it's a website loading, an",
+      "viText": "Mỗi khi dữ liệu cố gắng xâm nhập vào hệ thống của bạn, cho dù đó là tải trang web,",
+      "start": 522.73,
+      "duration": 4.76
+    },
+    {
+      "text": "app connecting, or something more suspicious, the firewall looks at it and decides if",
+      "viText": "ứng dụng đang kết nối hoặc điều gì đó đáng ngờ hơn, tường lửa sẽ xem xét nó và quyết định xem",
+      "start": 527.49,
+      "duration": 5.19
+    },
+    {
+      "text": "it should be allowed through or blocked.",
+      "viText": "nó phải được phép đi qua hoặc bị chặn.",
+      "start": 532.68,
+      "duration": 2.44
+    },
+    {
+      "text": "It follows a set of rules, kind of like a checklist, to filter traffic",
+      "viText": "Nó tuân theo một bộ quy tắc, giống như một danh sách kiểm tra, để lọc lưu lượng truy cập",
+      "start": 535.12,
+      "duration": 4.27
+    },
+    {
+      "text": "based on things like source, destination, or type of request.",
+      "viText": "dựa trên những thứ như nguồn, đích hoặc loại yêu cầu.",
+      "start": 539.39,
+      "duration": 3.72
+    },
+    {
+      "text": "Most people don't notice it because it works in the background, but it's always",
+      "viText": "Hầu hết mọi người không để ý đến nó vì nó hoạt động ở chế độ nền, nhưng nó luôn là",
+      "start": 543.11,
+      "duration": 4.82
+    },
+    {
+      "text": "there, making small decisions that add up to a safer connection.",
+      "viText": "ở đó, đưa ra những quyết định nhỏ giúp kết nối an toàn hơn.",
+      "start": 547.93,
+      "duration": 3.9
+    },
+    {
+      "text": "In a typical home setup, your router already has a built-in firewall, so you're",
+      "viText": "Trong thiết lập tại nhà thông thường, bộ định tuyến của bạn đã có sẵn tường lửa, vì vậy bạn",
+      "start": 551.83,
+      "duration": 4.82
+    },
+    {
+      "text": "protected without doing anything extra.",
+      "viText": "được bảo vệ mà không cần làm gì thêm.",
+      "start": 556.65,
+      "duration": 2.38
+    },
+    {
+      "text": "On computers, there's often a software firewall as well, adding another layer.",
+      "viText": "Trên máy tính, thường có tường lửa phần mềm, thêm một lớp khác.",
+      "start": 559.03,
+      "duration": 4.76
+    },
+    {
+      "text": "The idea isn't to stop everything that would break the internet, but to allow",
+      "viText": "Ý tưởng không phải là ngăn chặn mọi thứ có thể phá vỡ Internet mà là cho phép",
+      "start": 563.79,
+      "duration": 4.7
+    },
+    {
+      "text": "normal, expected activity while quietly shutting the door on unusual or risky behavior.",
+      "viText": "hoạt động bình thường, được mong đợi trong khi lặng lẽ đóng cửa đối với hành vi bất thường hoặc nguy hiểm.",
+      "start": 568.49,
+      "duration": 5.31
+    },
+    {
+      "text": "For example, if a random external system tries to directly access your device without",
+      "viText": "Ví dụ: nếu một hệ thống bên ngoài ngẫu nhiên cố gắng truy cập trực tiếp vào thiết bị của bạn mà không có",
+      "start": 573.8,
+      "duration": 5.19
+    },
+    {
+      "text": "permission, the firewall will likely block it before you even know it happened.",
+      "viText": "quyền, tường lửa có thể sẽ chặn nó trước khi bạn biết điều đó đã xảy ra.",
+      "start": 578.99,
+      "duration": 4.82
+    },
+    {
+      "text": "It's not perfect, and it won't stop every threat, but it significantly reduces unwanted",
+      "viText": "Nó không hoàn hảo và sẽ không ngăn chặn mọi mối đe dọa nhưng nó làm giảm đáng kể các mối đe dọa không mong muốn.",
+      "start": 583.81,
+      "duration": 5.31
+    },
+    {
+      "text": "access and keeps your network from being wide open.",
+      "viText": "truy cập và giữ cho mạng của bạn không bị mở rộng.",
+      "start": 589.12,
+      "duration": 3.11
+    },
+    {
+      "text": "NIC NIC stands for network interface card.",
+      "viText": "NIC NIC là viết tắt của thẻ giao diện mạng.",
+      "start": 592.23,
+      "duration": 2.56
+    },
+    {
+      "text": "It's the part that actually lets your device talk to the network.",
+      "viText": "Đây là phần thực sự cho phép thiết bị của bạn giao tiếp với mạng.",
+      "start": 594.79,
+      "duration": 3.97
+    },
+    {
+      "text": "Without it, your laptop, phone, or PC would have no way to send or",
+      "viText": "Nếu không có nó, máy tính xách tay, điện thoại hoặc PC của bạn sẽ không có cách nào để gửi hoặc",
+      "start": 598.76,
+      "duration": 4.03
+    },
+    {
+      "text": "receive data.",
+      "viText": "nhận dữ liệu.",
+      "start": 602.79,
+      "duration": 2
+    },
+    {
+      "text": "No internet, no Wi-Fi, nothing.",
+      "viText": "Không có internet, không có Wi-Fi, không có gì.",
+      "start": 604.79,
+      "duration": 2
+    },
+    {
+      "text": "Anic can be built into the device or added separately.",
+      "viText": "Anic có thể được tích hợp sẵn trong thiết bị hoặc thêm riêng biệt.",
+      "start": 606.79,
+      "duration": 3.29
+    },
+    {
+      "text": "On a laptop, it's usually hidden inside, handling both Wi-Fi and sometimes wired connections.",
+      "viText": "Trên máy tính xách tay, nó thường được ẩn bên trong, xử lý cả kết nối Wi-Fi và đôi khi có dây.",
+      "start": 610.08,
+      "duration": 5.67
+    },
+    {
+      "text": "On a desktop PC, you might see it as the Ethernet port where you",
+      "viText": "Trên máy tính để bàn, bạn có thể xem nó là cổng Ethernet nơi bạn",
+      "start": 615.75,
+      "duration": 3.9
+    },
+    {
+      "text": "plug in a cable.",
+      "viText": "cắm cáp.",
+      "start": 619.65,
+      "duration": 2
+    },
+    {
+      "text": "There are also small USB adapters that act as external NIC's if your device",
+      "viText": "Ngoài ra còn có các bộ điều hợp USB nhỏ hoạt động như NIC bên ngoài nếu thiết bị của bạn",
+      "start": 621.65,
+      "duration": 4.58
+    },
+    {
+      "text": "doesn't have one or if you want to upgrade.",
+      "viText": "không có hoặc nếu bạn muốn nâng cấp.",
+      "start": 626.23,
+      "duration": 2.62
+    },
+    {
+      "text": "Each NIC has its own unique identifier called a MAC address, which helps the",
+      "viText": "Mỗi NIC có mã định danh duy nhất riêng được gọi là địa chỉ MAC, giúp ích cho",
+      "start": 628.85,
+      "duration": 4.64
+    },
+    {
+      "text": "network recognize that specific device.",
+      "viText": "mạng nhận ra thiết bị cụ thể đó.",
+      "start": 633.49,
+      "duration": 2.38
+    },
+    {
+      "text": "When you connect to Wi-Fi or plug in a cable, the NIC is the",
+      "viText": "Khi bạn kết nối với Wi-Fi hoặc cắm cáp, NIC chính là",
+      "start": 635.87,
+      "duration": 3.66
+    },
+    {
+      "text": "part doing the actual communication behind the scenes, sending signals out and receiving data",
+      "viText": "phần thực hiện giao tiếp thực tế ở hậu trường, gửi tín hiệu ra và nhận dữ liệu",
+      "start": 639.53,
+      "duration": 5.67
+    },
+    {
+      "text": "back.",
+      "viText": "back.",
+      "start": 645.2,
+      "duration": 2
+    },
+    {
+      "text": "You can think of it like this.",
+      "viText": "Bạn có thể nghĩ về nó như thế này.",
+      "start": 647.2,
+      "duration": 2
+    },
+    {
+      "text": "Your device is the brain, but the NIC is the mouth and ears.",
+      "viText": "Thiết bị của bạn là bộ não, nhưng NIC là miệng và tai.",
+      "start": 649.2,
+      "duration": 3.66
+    },
+    {
+      "text": "It doesn't decide what to say, but it's responsible for delivering and receiving the",
+      "viText": "Nó không quyết định phải nói gì nhưng nó có trách nhiệm truyền và nhận",
+      "start": 652.86,
+      "duration": 5.12
+    },
+    {
+      "text": "message.",
+      "viText": "tin nhắn.",
+      "start": 657.98,
+      "duration": 2
+    },
+    {
+      "text": "Most of the time, you never think about it because it just works.",
+      "viText": "Hầu hết thời gian, bạn không bao giờ nghĩ về nó bởi vì nó chỉ hoạt động.",
+      "start": 659.98,
+      "duration": 3.97
+    },
+    {
+      "text": "But if your device suddenly can't connect to Wi-Fi or doesn't detect a cable,",
+      "viText": "Nhưng nếu thiết bị của bạn đột nhiên không thể kết nối với Wi-Fi hoặc không tìm thấy cáp,",
+      "start": 663.95,
+      "duration": 4.7
+    },
+    {
+      "text": "there's a good chance the issue is related to the NIC, either a setting,",
+      "viText": "rất có thể sự cố này liên quan đến NIC, hoặc là do cài đặt,",
+      "start": 668.65,
+      "duration": 4.39
+    },
+    {
+      "text": "a driver, or the hardware itself.",
+      "viText": "trình điều khiển hoặc chính phần cứng đó.",
+      "start": 673.04,
+      "duration": 2.01
+    },
+    {
+      "text": "Network bridge.",
+      "viText": "Cầu mạng.",
+      "start": 675.05,
+      "duration": 2
+    },
+    {
+      "text": "A network bridge is used when you want to connect two separate network segments",
+      "viText": "Cầu nối mạng được sử dụng khi bạn muốn kết nối hai đoạn mạng riêng biệt",
+      "start": 677.05,
+      "duration": 4.82
+    },
+    {
+      "text": "so they behave like one single network.",
+      "viText": "vì vậy chúng hoạt động giống như một mạng duy nhất.",
+      "start": 681.87,
+      "duration": 2.38
+    },
+    {
+      "text": "It doesn't create internet access and it doesn't manage traffic like a router.",
+      "viText": "Nó không tạo ra quyền truy cập internet và nó không quản lý lưu lượng truy cập như bộ định tuyến.",
+      "start": 684.25,
+      "duration": 4.76
+    },
+    {
+      "text": "It simply links things together in a clean, quiet way.",
+      "viText": "Nó chỉ đơn giản là liên kết mọi thứ lại với nhau một cách sạch sẽ và yên tĩnh.",
+      "start": 689.01,
+      "duration": 3.29
+    },
+    {
+      "text": "You'll often see this in situations where two different types of connections need to",
+      "viText": "Bạn sẽ thường thấy điều này trong các tình huống cần có hai loại kết nối khác nhau",
+      "start": 692.3,
+      "duration": 5.12
+    },
+    {
+      "text": "work as one.",
+      "viText": "làm việc như một.",
+      "start": 697.42,
+      "duration": 2
+    },
+    {
+      "text": "For example, a computer connected to Wi-Fi can bridge that connection to a wired",
+      "viText": "Ví dụ: một máy tính được kết nối với Wi-Fi có thể kết nối kết nối đó với",
+      "start": 699.42,
+      "duration": 4.88
+    },
+    {
+      "text": "device through an Ethernet cable.",
+      "viText": "có dây thiết bị thông qua cáp Ethernet.",
+      "start": 704.3,
+      "duration": 2.01
+    },
+    {
+      "text": "Now that second device gets internet as if it were directly connected.",
+      "viText": "Bây giờ thiết bị thứ hai có được Internet như thể nó được kết nối trực tiếp.",
+      "start": 706.31,
+      "duration": 4.27
+    },
+    {
+      "text": "No extra router needed.",
+      "viText": "Không cần thêm bộ định tuyến.",
+      "start": 710.58,
+      "duration": 2
+    },
+    {
+      "text": "What makes a bridge different from something like a hub is that it's selective.",
+      "viText": "Điều khiến một cây cầu khác biệt với một thứ gì đó giống như một trung tâm là tính chọn lọc của nó.",
+      "start": 712.58,
+      "duration": 4.82
+    },
+    {
+      "text": "It doesn't just pass everything blindly.",
+      "viText": "Nó không chỉ vượt qua mọi thứ một cách mù quáng.",
+      "start": 717.4,
+      "duration": 2.44
+    },
+    {
+      "text": "It pays attention to where data is supposed to go and only forwards it",
+      "viText": "Nó chú ý đến nơi dữ liệu sẽ đi và chỉ chuyển tiếp nó",
+      "start": 719.84,
+      "duration": 4.27
+    },
+    {
+      "text": "when necessary, reducing unnecessary traffic.",
+      "viText": "khi cần thiết, giảm lưu lượng không cần thiết.",
+      "start": 724.11,
+      "duration": 2.75
+    },
+    {
+      "text": "In simple terms, a bridge acts like a connector between two small networks, letting",
+      "viText": "Nói một cách đơn giản, bridge đóng vai trò như một đầu nối giữa hai mạng nhỏ, cho phép",
+      "start": 726.86,
+      "duration": 5.06
+    },
+    {
+      "text": "them talk to each other without changing how they work internally.",
+      "viText": "họ nói chuyện với nhau mà không thay đổi cách họ làm việc nội bộ.",
+      "start": 731.92,
+      "duration": 4.03
+    },
+    {
+      "text": "devices on both sides can communicate as if they're on the same network.",
+      "viText": "thiết bị ở cả hai bên có thể liên lạc như thể chúng ở trên cùng một mạng.",
+      "start": 735.95,
+      "duration": 4.39
+    },
+    {
+      "text": "Most people don't buy a dedicated bridge device anymore.",
+      "viText": "Hầu hết mọi người không mua thiết bị cầu nối chuyên dụng nữa.",
+      "start": 740.34,
+      "duration": 3.42
+    },
+    {
+      "text": "Instead, this function is often built into other hardware or even software settings on",
+      "viText": "Thay vào đó, chức năng này thường được tích hợp vào các cài đặt phần cứng hoặc thậm chí phần mềm khác trên",
+      "start": 743.76,
+      "duration": 5.25
+    },
+    {
+      "text": "a computer.",
+      "viText": "một chiếc máy tính.",
+      "start": 749.01,
+      "duration": 2
+    },
+    {
+      "text": "So, if a switch expands a network, a bridge links networks together, quietly making",
+      "viText": "Vì vậy, nếu một bộ chuyển mạch mở rộng mạng, thì một cây cầu sẽ liên kết các mạng với nhau, âm thầm tạo ra",
+      "start": 751.01,
+      "duration": 5.06
+    },
+    {
+      "text": "them feel like one continuous space.",
+      "viText": "chúng có cảm giác như một không gian liên tục.",
+      "start": 756.07,
+      "duration": 2.2
+    },
+    {
+      "text": "Gateways.",
+      "viText": "Cổng.",
+      "start": 758.27,
+      "duration": 2
+    },
+    {
+      "text": "While the bridges we just talked about connect networks that already speak the exact",
+      "viText": "Trong khi những cây cầu mà chúng ta vừa nói về kết nối các mạng đã nói chính xác",
+      "start": 760.27,
+      "duration": 5.12
+    },
+    {
+      "text": "same language, gateways are built to link completely different worlds together.",
+      "viText": "cùng một ngôn ngữ, các cổng được xây dựng để liên kết các thế giới hoàn toàn khác nhau với nhau.",
+      "start": 765.39,
+      "duration": 4.82
+    },
+    {
+      "text": "Maybe a modern high-speed corporate office needs to pull information from a massive decades",
+      "viText": "Có lẽ một văn phòng công ty tốc độ cao hiện đại cần lấy thông tin từ hàng thập kỷ khổng lồ",
+      "start": 770.21,
+      "duration": 5.55
+    },
+    {
+      "text": "old mainframe system.",
+      "viText": "hệ thống máy tính lớn cũ.",
+      "start": 775.76,
+      "duration": 2
+    },
+    {
+      "text": "These two networks use entirely different rules, formats, and protocols to package their data.",
+      "viText": "Hai mạng này sử dụng các quy tắc, định dạng và giao thức hoàn toàn khác nhau để đóng gói dữ liệu của chúng.",
+      "start": 777.76,
+      "duration": 5.73
+    },
+    {
+      "text": "If they tried to talk directly, it would just be pure gibberish.",
+      "viText": "Nếu họ cố gắng nói chuyện trực tiếp thì đó sẽ chỉ là sự vô nghĩa mà thôi.",
+      "start": 783.49,
+      "duration": 3.9
+    },
+    {
+      "text": "Imagine you're traveling abroad.",
+      "viText": "Hãy tưởng tượng bạn đang đi du lịch nước ngoài.",
+      "start": 787.39,
+      "duration": 2
+    },
+    {
+      "text": "The money in your wallet is unavailable, so you have to go to a",
+      "viText": "Tiền trong ví của bạn không có nên bạn phải vào",
+      "start": 789.39,
+      "duration": 3.84
+    },
+    {
+      "text": "currency exchange counter.",
+      "viText": "quầy đổi tiền.",
+      "start": 793.23,
+      "duration": 2
+    },
+    {
+      "text": "A gateway does something similar.",
+      "viText": "Một cổng thực hiện điều gì đó tương tự.",
+      "start": 795.23,
+      "duration": 2.01
+    },
+    {
+      "text": "It receives data from one network, translates it accordingly, and then sends it to",
+      "viText": "Nó nhận dữ liệu từ một mạng, dịch dữ liệu tương ứng và sau đó gửi đến",
+      "start": 797.24,
+      "duration": 5
+    },
+    {
+      "text": "another network.",
+      "viText": "một mạng khác.",
+      "start": 802.24,
+      "duration": 2
+    },
+    {
+      "text": "It catches the incoming data, strips away the old formatting, translates the core message",
+      "viText": "Nó nắm bắt dữ liệu đến, loại bỏ định dạng cũ, dịch thông điệp cốt lõi",
+      "start": 804.24,
+      "duration": 5.43
+    },
+    {
+      "text": "into a brand new language, and safely sends it on its way.",
+      "viText": "sang một ngôn ngữ hoàn toàn mới và gửi nó đi một cách an toàn.",
+      "start": 809.67,
+      "duration": 3.54
+    },
+    {
+      "text": "The router sitting in your living room doubles as a gateway.",
+      "viText": "Bộ định tuyến đặt trong phòng khách của bạn đóng vai trò như một cổng vào.",
+      "start": 813.21,
+      "duration": 3.66
+    },
+    {
+      "text": "It takes the private local network you've built inside your house and translates your",
+      "viText": "Nó sử dụng mạng cục bộ riêng mà bạn đã xây dựng trong nhà và dịch",
+      "start": 816.87,
+      "duration": 5.19
+    },
+    {
+      "text": "data so it can successfully merge onto the massive public infrastructure of the global",
+      "viText": "của bạn dữ liệu để nó có thể hợp nhất thành công vào cơ sở hạ tầng công cộng khổng lồ của toàn cầu",
+      "start": 822.06,
+      "duration": 5.25
+    },
+    {
+      "text": "internet.",
+      "viText": "internet.",
+      "start": 827.31,
+      "duration": 2
+    },
+    {
+      "text": "It acts as the ultimate digital diplomat, ensuring that no matter how drastically different",
+      "viText": "Nó hoạt động như một nhà ngoại giao kỹ thuật số tối ưu, đảm bảo rằng dù có khác biệt đáng kể",
+      "start": 829.31,
+      "duration": 5.55
+    },
+    {
+      "text": "two systems are, the conversation never has to stop.",
+      "viText": "hai hệ thống là, cuộc trò chuyện không bao giờ phải dừng lại.",
+      "start": 834.86,
+      "duration": 3.17
+    },
+    {
+      "text": "N Huhon.",
+      "viText": "N Huhon.",
+      "start": 838.03,
+      "duration": 2
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+﻿Prompt Train Về Ngách WORLD WAR II HISTORY (H2Dev)
+Full Quy Trình Và Tài Liệu Hướng Dẫn Làm YOUTUBE Bán Content + Reup -> h2dev.vn        
+CHỦ ĐỀ
+You are an expert in crafting high-retention YouTube content for a World War II history channel.
+Your mission is to produce captivating topics, cinematic scripts, realistic image prompts, and documentary-style thumbnails — all historically accurate and emotionally immersive.
+Generate [X] YouTube video topics and titles based on the style of these proven examples:
+* German POWs Couldn't Believe Ice Cream And Coca-Cola in American Prison Camps
+
+* Japanese Pilots Laughed At The F6F Hellcat Until It Swept Their Zeros From The Sky
+
+* German POWs Were Shocked By America’s Industrial Might After Arriving In The United States
+
+* German Colonel Captured 50,000 Gallons of US Fuel and Realized Germany Was Doomed
+
+* How One Civilian's "Impossible" Trick Made Liberty Ships Appear Every 4 Days Instead Of 230
+
+* USS Yorktown Repaired In 72 Hours – Japanese Commanders Surprised To See It At Midway
+
+Archetype Rules
+Each title must follow one of these four proven storytelling archetypes:
+   1. Shock / Disbelief → “couldn’t believe”, “were shocked”, “were stunned by”
+
+   2. Mockery → Reversal → “laughed at”, “mocked”, “dismissed”… → “until / then…”
+
+   3. Dramatic Event / Realization → “captured / warned / discovered / realized they were doomed”
+
+   4. Impossible Engineering / Achievement → “how one engineer / civilian / shipyard did the impossible”
+
+________________
+
+
+Style Notes
+      * Avoid hyphens unless mirroring the original examples.
+
+      * Prefer natural phrasing like “…until… / then…” or ellipses for suspense.
+
+      * Each title should feel cinematic, emotional, and fact-based.
+
+________________
+
+
+For Each Title — Include a Detail Section
+Label it “DETAIL SECTION” and provide:
+         * 2–3 sentences explaining the real event, battle, weapon, or innovation the title is based on.
+
+         * Include dates, units, or names when known.
+
+         * Keep tone historical yet dramatic.
+
+
+
+
+
+
+
+
+KỊCH BẢN
+
+
+You are a professional World War II documentary scriptwriter.
+Write an immersive, historically accurate, long-form narration based on the chosen topic.
+
+
+[TITLE] → [Insert selected video title]  
+[EVENT DETAIL] → [Insert brief historical context] 
+ Script Structure Rules
+ Section Breakdown
+Divide the story into multiple sections (700–800 words each).
+
+
+Label each with:
+Section 1: [Heading / Focus of this section]
+Section 2: [Heading / Focus of this section]
+…continue until completion.
+
+
+ Headings
+Each heading should reflect the chronological flow of the story (e.g., “The Capture”, “The Realization”, “The Turning Point”).
+
+
+No summaries — the story should unfold in real time.
+
+
+ Opening Hook
+Start every script like a scene from a war film:
+
+
+Example:
+“April 8th, 1943. 27,000 feet above Kong, France.
+Frost clings to the canopy as Lieutenant Robert ‘Buzz’ Miller scans the horizon — and spots something that makes his stomach drop.”
+
+
+Rules:
+
+
+Begin with a specific date and location.
+
+
+Immerse the viewer with sound, motion, and tension.
+
+
+Introduce a human perspective (soldier, pilot, commander).
+
+
+ Narrative Style
+Third-person immersive narration (with occasional “you” for viewer engagement).
+
+
+Include names, ranks, locations, and authentic equipment references.
+
+
+Use historical dialogue tone and descriptive realism.
+
+
+Avoid pure exposition — show, don’t tell.
+
+
+ Section Continuation Rule
+End each section with:
+Type “Continue” to generate the next section.
+
+
+When continuing, include this placeholder:
+[PREVIOUS_SECTION_TEXT] → continue seamlessly from where this left off.
+
+
+Never restart or summarize — maintain continuous narrative flow.
+
+
+ Completion
+After the final section, write:
+END
+
+
+
+
+
+
+
+
+
+
+
+
+HÌNH ẢNH
+Generate [X] highly detailed image prompts that visually represent key moments, characters, or events from the following script. The style should match the historical, black-and-white documentary aesthetic seen in WWII-era photography, similar to archival war footage or historical photojournalism. Images should feel realistic, grounded, and immersive, as if captured by a professional photographer on location. Include atmospheric details such as lighting, period-accurate uniforms, vehicles, machinery, weapons, and architecture relevant to the time period.
+For each image prompt:
+            1. Describe the main subjects clearly (people, vehicles, machines, buildings, landscapes).
+            2. Include any relevant actions, movements, or interactions.
+            3. Specify environmental and contextual details (weather, time of day, terrain, background elements).
+            4. Keep the focus historically accurate and visually cohesive with the archival black-and-white style.
+
+Output the prompts as a numbered list, each as a single descriptive paragraph ready for AI image generation. Do not summarize the scene—provide enough detail for a realistic visual interpretation.
+Script for reference:
+[SCRIPT]
+
+
+
+
+
+
+THUMBNAIL
+ Purpose
+Create a cinematic black-and-white WWII thumbnail prompt — authentic, bright, and grounded.
+________________
+
+
+ Thumbnail Style Guide
+               * 16:9 aspect ratio.
+
+               * No text or color.
+
+               * Balanced lighting with visible detail and depth.
+
+               * Candid realism: looks like a real 1940s photo, not a re-creation.
+
+               * Inspired by LIFE Magazine & Signal Corps imagery.
+
+               * Capture moment, tension, emotion, and motion — soldiers, officers, or battlefield machinery.
+
+________________
+
+
+ Output Format
+Provide one detailed paragraph prompt, e.g.:
+“A crisp black-and-white wartime photograph showing a group of German and American officers standing beside a captured Tiger tank in 1945, sunlight breaking through dust clouds, uniforms dirt-stained, expressions tense yet weary — composed like a LIFE Magazine front-line image, clear and high-contrast with visible midtones and period accuracy.”
+________________
+
+
+ Template Variables
+                  * Topic: [TOPIC]
+
+                  * Topic Details: [TOPIC DETAILS]

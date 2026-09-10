@@ -1,0 +1,1061 @@
+{
+  "videoId": "1JB0gfsXhrk",
+  "title": "Surviving the EU AI Act",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 175,
+  "fullText": "All right, welcome to this explainer. Today, we are decoding literally the most consequential AI regulation ever passed anywhere in the world, the EU AI Act. I promise you a fast-paced, highly structured look at exactly what you need to know to survive and honestly thrive under this new framework. And we're going to do it entirely without the dense legal jargon. We're breaking down the compliance guidance, the risk tiers, and the specific rules designed specifically for small and medium-sized businesses. To really understand the stakes here, I want to drop you right into a relatable horror story. So, imagine a thriving 40 person software company. They've got happy clients, growing revenue, and they want to scale, right? So, they make a perfectly logical operational decision. They deploy an AI hiring tool to sort through RS faster. It works great at first, but then boom, they get slapped with a devastating €850,000 fine. Just let that number sit with you for a second. For a startup, that is an absolute gut punch. And this brilliantly illustrates what we call the ultimate vendor trap. Literally, just one routine complaint from a rejected candidate triggered a grueling four-month regulatory inquiry. See, the startup bought this tool from a massive reputable enterprise software vendor, totally assuming the tech giant's army of lawyers had handled all the legal compliance. But they missed a critical gap in the law. Under this legislation, the business deploying the tool is the one on the hook. They have their own massive legal obligations. You simply cannot outsource your legal responsibility to a SAS vendor. Section one, the chaos. Three incidents that terrified regulators. Okay, let's dive into this. To truly grasp why these strict rules exist, we have to look at the real world chaos that made them necessary. Laws don't just pop up out of nowhere. There were highly specific deployments that went disastrously wrong and literally terrified regulators. The legislative history points to three main catalysts. First, the bias machine. Back in 2018, a major tech company used an experimental AI recruitment tool that mathematically learned to downgrade any resume mentioning the phrase women's chess club or a women's college, all based on skewed historical data. And the humans running it had zero idea. Second, false arrests. A Detroit man was arrested in his driveway right in front of his family and spent 30 hours in jail because facial recognition AI hallucinated a match on some greeny security footage. And third, the financial blackbox. This is where complex AI credit scoring denied people mortgages, but the bank literally couldn't explain why. The overarching problem here, AI was making massive lifealtering decisions about freedom, livelihood, and money with zero oversight and absolutely zero accountability. Section two, the four tier risk pyramid. So, this brings us to the EU's structured solution to all that chaos. A brilliant mental model to gauge your exact level of legal danger. Notice exactly where normal businesses fall here. Tier one entirely banned. This is the dystopian stuff like social scoring. No way. But tier two, tier two is the absolute danger zone for small and medium businesses. If you use AI for human resources, automated CV screening, educational assessments, or credit, you face heavy obligations. Now, tier three is limited risk, like your standard customer service chat bots. You really just need to be transparent that it's an AI. And finally, tier four is minimal risk. This covers things like your basic email spam filters, which basically have zero specific legal obligations. Now, I know exactly what a lot of you are thinking. I hear this defense all the time. Hey, we don't use AI. We just use normal software. So, we're totally fine. Well, I want to burst that misconception right now by asking you directly, what actually counts as AI under this law? Because the regulatory definition is extremely broad. This metaphor hits the nail on the head when it comes to the legal difference. normal software rule-based logic is like a train on explicit tracks. If you program an accounting tool to escalate an invoice over €10,000, that's just a simple if then statement laid down by a human. But an AI system under the law, that's an off-road vehicle. If a system learns from data, adapts its outputs based on patterns, and makes its own probabilistic judgments, basically mapping its own path without step-by-step human programming, it's an AI system. Period. Section three, the surprise AI list. Because of that incredibly broad definition, we end up with what our sources call the surprise AI list. These are the everyday SAS tools just sitting quietly in your tech stack that secretly pull you right into the scope of this massive legislation. Seriously, look closely at your vendors. Tools like Workday, Greenhouse, HubSpot AI, Salesforce Einstein, or Zenesk AI. If you've got those AI features turned on, you are in scope. So, here's the crucial takeaway. If an AI system is drafting a performance review for one of your employees, it is actively affecting their livelihood, and that immediately yanks your standard run-of-the-mill business operation straight up into high-risisk tier 2. Section four, massive fines andme discounts. All right, let's shift gears and talk about the staggering financial stakes here. We need to look at the terrifying stick regulators are holding, but also the really surprising protective carrot they've offered up for smaller businesses. The penalty structure is just mind-blowing. For prohibited AI, the fine is an unthinkable €35 million or 7% of your global revenue, whichever is higher. For messing up high-risisk tier 2 AI, it's €15 million or 3%. And check out the bottom row. Minor non-compliance, which actually includes giving incorrect or misleading info to authorities, carries a €7.5 million euro fine. Meaning even just accidentally lying to an auditor ruins you. But hey, let me pull you back from the ledge for a second. What's super fascinating is how explicitly this acts actually protects smaller companies. The termme is mentioned 38 times in the regulation. There are massive automatic fine reductions explicitly written right into the law. If you are anme, meaning under 250 employees, you get an automatic 50% reduction in those fines. And if you're a microenterprise with under 10 employees, you get a massive 75% reduction. However, I kind of have to inject a bit of gallows humor here because let's be real, even with a 75% discount, an 8 million euro fine is still going to utterly bankrupt a microenterprise. But you know what? The fines aren't even the scariest part. Regulators have the power to order the forced withdrawal of your non-compliant AI system from the market immediately. You could literally be legally banned overnight from 27 EU member states. That won't just hurt a SAS company, it will kill it. This is exactly why utilizing the free officially supervised regulatory sandboxes in your member state to test compliance safely is absolutely essential. Section five, your global compliance action plan. So, let's pivot to a reality check for our global viewers. We need an action plan, folks, because geography is absolutely not the shield you might think it is. I want to break the fourth wall for a second and directly address all of you listening from the US, the UK, Australia, Canada, or India. You might be sitting in Austin or Mumbai right now thinking, \"Well, this is the EU AI Act. Surely this European law doesn't apply to my startup, right?\" Yeah, we need to definitively burst that bubble. It's called the one customer rule. If you have even one single customer or user in an EU member state, this law applies to you. It uses the exact same aggressive placing on the market precedent that GDPR established. You do not need a Paris office or European bank account. If a London agency sells an AI tool to a client in Germany, they have to comply. There are absolutely zero carveouts for geography. None. And guys, the clock is ticking loudly. The act is actually already entered into force, but August 2026 is the date you need to circle in red. That is the absolute wall for full enforcement of high-risisk AI systems. Real compliance work takes weeks, sometimes months to build out. If you wait until 2026, it's going to be a ridiculously expensive rush job. or worse, you'll be facing direct enforcement actions. So, I want to leave you with a climactic, provocative thought here. We already know the cost of mistakenly treating an AI system as non-AI is catastrophic. But what if we flip that? What if treating all your digital systems with the rigorous transparency demanded by the EU AI act isn't just some heavy compliance burden? Think about it. Consumers and enterprise clients are terrified of blackbox technology right now. If you can definitively prove your off-road vehicles are fully transparent and auditable, early compliance becomes a huge way to build immense trust over your competitors. At the end of the day, trust really is the most valuable commodity in the AI era. Don't wait for the regulators to come knocking. Find out if you're driving a train on tracks or an off-road vehicle today. To protect your business and dive much deeper into the exact steps you need to take, visit the lem-confidential.susteee.io. Grab your free survival guide module, which includes an ebook and a deeper audio dive, and unlock the full five paid modules to ensure you're entirely bulletproof. Thank you so much for joining me on this explainer, and I will catch you next time.",
+  "fullTextVi": "Được rồi, chào mừng bạn đến với người giải thích này. Ngày nay, chúng tôi đang giải mã quy định AI có hậu quả nghiêm trọng nhất từng được thông qua ở bất kỳ đâu trong thế giới, Đạo luật AI của EU. Tôi hứa với bạn một cái nhìn có nhịp độ nhanh, có cấu trúc cao về chính xác những gì bạn cần biết tồn tại và phát triển một cách trung thực trong khuôn khổ mới này. Và chúng ta sẽ làm điều đó hoàn toàn không có thuật ngữ pháp lý dày đặc. Chúng tôi đang chia nhỏ hướng dẫn tuân thủ, các cấp độ rủi ro và các quy tắc cụ thể được thiết kế đặc biệt dành cho các doanh nghiệp vừa và nhỏ. Để thực sự hiểu được vấn đề ở đây, tôi muốn đưa bạn ngay vào câu chuyện kinh dị có liên quan. Vì vậy, hãy tưởng tượng một công ty phần mềm 40 người đang phát triển mạnh mẽ. Họ có những khách hàng hài lòng, doanh thu ngày càng tăng và họ muốn mở rộng quy mô, phải không? Vì vậy, họ đưa ra quyết định hoạt động hoàn toàn hợp lý. Họ triển khai công cụ tuyển dụng AI để sắp xếp RS nhanh hơn. Lúc đầu nó hoạt động rất tốt, nhưng sau đó bùng nổ, họ bị tát một đòn tàn khốc 850.000 € tiền phạt. Chỉ cần để con số đó ở bên bạn trong một giây. Đối với một công ty khởi nghiệp, đó thực sự là một cú đấm mạnh mẽ. Và điều này minh họa rõ ràng cái mà chúng tôi gọi là bẫy nhà cung cấp cuối cùng. Theo nghĩa đen, chỉ một lời phàn nàn thông thường từ một ứng viên bị từ chối đã dẫn đến một quy định pháp lý mệt mỏi kéo dài bốn tháng cuộc điều tra. Hãy xem, công ty khởi nghiệp đã mua công cụ này từ một nhà cung cấp phần mềm doanh nghiệp có uy tín lớn, hoàn toàn giả sử đội quân luật sư của gã khổng lồ công nghệ đã xử lý tất cả việc tuân thủ pháp luật. Nhưng họ đã bỏ lỡ một lỗ hổng quan trọng trong luật pháp. Theo luật này, doanh nghiệp triển khai công cụ này là doanh nghiệp gặp khó khăn. Họ có những nghĩa vụ pháp lý to lớn của riêng mình. Đơn giản là bạn không thể giao trách nhiệm pháp lý của mình cho nhà cung cấp SAS. Phần một, sự hỗn loạn. Ba sự cố khiến cơ quan quản lý khiếp sợ Được rồi, chúng ta hãy đi sâu vào vấn đề này. Để thực sự hiểu tại sao những quy tắc nghiêm ngặt này tồn tại, chúng ta phải nhìn vào sự hỗn loạn của thế giới thực khiến chúng trở nên cần thiết. Luật pháp không tự nhiên xuất hiện. Có những hoạt động triển khai rất cụ thể đã xảy ra sai lầm nghiêm trọng và khiến các cơ quan quản lý khiếp sợ theo đúng nghĩa đen. Lịch sử lập pháp chỉ ra ba chất xúc tác chính. Đầu tiên là máy thiên vị. Trở lại năm 2018, một công ty công nghệ lớn đã sử dụng công cụ tuyển dụng AI thử nghiệm học về mặt toán học để hạ cấp bất kỳ sơ yếu lý lịch nào đề cập đến cụm từ câu lạc bộ cờ vua nữ hoặc trường đại học nữ, tất cả đều dựa trên dữ liệu lịch sử sai lệch. Và những người điều hành nó không có ý tưởng gì. Thứ hai, bắt giữ sai trái. Một người đàn ông Detroit bị bắt trên đường lái xe ngay trước mặt gia đình anh ta và ngồi tù 30 giờ vì AI nhận dạng khuôn mặt gây ảo giác về trận đấu trên một số cảnh quay an ninh xanh. Và thứ ba, hộp đen tài chính. Đây là nơi việc chấm điểm tín dụng AI phức tạp từ chối mọi người thế chấp, nhưng ngân hàng theo đúng nghĩa đen không thể giải thích tại sao. Vấn đề bao trùm ở đây, AI đang đưa ra những quyết định lớn mang tính thay đổi cuộc sống về tự do, sinh kế và tiền mà không có sự giám sát và hoàn toàn không có trách nhiệm giải trình. Phần hai, kim tự tháp rủi ro bốn cấp. Vì vậy, điều này đưa chúng ta đến giải pháp có cấu trúc của EU cho tất cả sự hỗn loạn đó. Một mô hình tinh thần tuyệt vời để đánh giá mức độ nguy hiểm pháp lý chính xác của bạn. Hãy chú ý chính xác vị trí của các doanh nghiệp bình thường ở đây. Cấp một bị cấm hoàn toàn. Đây là thứ lạc hậu như tính điểm xã hội. Không đời nào. Nhưng cấp hai, cấp hai là vùng nguy hiểm tuyệt đối cho các doanh nghiệp vừa và nhỏ doanh nghiệp. Nếu bạn sử dụng AI cho hoạt động nhân sự, sàng lọc CV tự động, đánh giá trình độ học vấn hoặc tín dụng, bạn phải đối mặt với những nghĩa vụ nặng nề. Bây giờ, cấp ba là rủi ro hạn chế, giống như các bot trò chuyện dịch vụ khách hàng tiêu chuẩn của bạn. Bạn thực sự chỉ cần minh bạch rằng đó là AI. Và cuối cùng, cấp bốn là rủi ro tối thiểu. Điều này bao gồm những thứ như bộ lọc thư rác email cơ bản của bạn, về cơ bản không có cụ thể nào nghĩa vụ pháp lý. Bây giờ, tôi biết chính xác rất nhiều bạn đang nghĩ gì. Tôi nghe thấy lời bào chữa này mọi lúc. Này, chúng tôi không sử dụng AI. Chúng tôi chỉ sử dụng phần mềm bình thường. Vì vậy, chúng tôi hoàn toàn ổn. Chà, tôi muốn phá bỏ quan niệm sai lầm đó ngay bây giờ bằng cách hỏi trực tiếp bạn rằng là gì? thực sự được tính là AI theo luật này? Bởi vì định nghĩa quy định là vô cùng rộng. Phép ẩn dụ này đánh đúng vào đầu khi nói đến pháp lý sự khác biệt. logic dựa trên quy tắc phần mềm thông thường giống như một đoàn tàu chạy trên những đường ray rõ ràng. Nếu bạn lập trình một công cụ kế toán để chuyển hóa đơn lên trên €10.000 thì đó chỉ là một câu lệnh if then đơn giản do con người đặt ra. Nhưng hệ thống AI theo luật thì đó là xe địa hình. Nếu một hệ thống học từ dữ liệu, điều chỉnh đầu ra của nó dựa trên các mẫu và thực hiện phán đoán xác suất của riêng nó, về cơ bản vạch ra con đường của chính nó mà không cần lập trình từng bước của con người, đó là một hệ thống AI. Giai đoạn. Phần ba, danh sách AI bất ngờ. Vì định nghĩa vô cùng rộng rãi đó, chúng tôi kết thúc với cái mà nguồn của chúng tôi gọi là danh sách AI bất ngờ. Đây là những công cụ SAS hàng ngày nằm yên trong kho công nghệ của bạn bí mật kéo bạn ngay vào phạm vi của đạo luật khổng lồ này. Nghiêm túc mà nói, hãy xem xét kỹ các nhà cung cấp của bạn. Các công cụ như Workday, Greenhouse, HubSpot AI, Salesforce Einstein hoặc Zenesk AI. Nếu bạn đã bật các tính năng AI đó thì bạn đã lọt vào tầm ngắm. Vì vậy, đây là bài học quan trọng. Nếu hệ thống AI đang soạn thảo bản đánh giá hiệu suất cho một trong các nhân viên của bạn, nó đang ảnh hưởng tích cực đến sinh kế của họ và điều đó ngay lập tức ảnh hưởng đến hoạt động kinh doanh thông thường tiêu chuẩn của bạn hoạt động thẳng lên cấp 2 có rủi ro cao. Phần bốn, tiền phạt lớn và giảm giá cho tôi. Được rồi, hãy chuyển số và nói về những khoản đầu tư tài chính đáng kinh ngạc ở đây. Chúng ta cần xem xét các bộ điều chỉnh thanh đáng sợ đang nắm giữ, cũng như củ cà rốt bảo vệ thực sự đáng ngạc nhiên mà họ đã cung cấp cho các doanh nghiệp nhỏ hơn. Cấu trúc hình phạt thật đáng kinh ngạc. Đối với AI bị cấm, khoản tiền phạt là 35 triệu euro hoặc 7% số tiền của bạn. doanh thu toàn cầu, tùy theo mức nào cao hơn. Để giải quyết vấn đề AI cấp 2 có rủi ro cao, số tiền đó là 15 triệu euro hoặc 3%. Và kiểm tra hàng dưới cùng. Hành vi không tuân thủ nhỏ, thực tế bao gồm việc cung cấp thông tin không chính xác hoặc gây hiểu lầm cho cơ quan chức năng, sẽ mang dấu €7. phạt 5 triệu euro Có nghĩa là thậm chí chỉ cần vô tình nói dối kiểm toán viên cũng sẽ hủy hoại bạn. Nhưng này, hãy để tôi kéo bạn ra khỏi mỏm đá một lát. Điều cực kỳ hấp dẫn là hành động này thực sự bảo vệ các công ty nhỏ hơn một cách rõ ràng như thế nào. Thuật ngữ này được nhắc đến 38 lần trong quy định. Có những mức giảm tiền phạt tự động lớn được ghi rõ ràng vào luật. Nếu bạn là anme, nghĩa là có dưới 250 nhân viên, bạn sẽ tự động được giảm 50% trong những khoản tiền phạt đó. Và nếu bạn là một doanh nghiệp siêu nhỏ có dưới 10 nhân viên, bạn sẽ nhận được 75% sự giảm bớt. Tuy nhiên, tôi phải thêm vào đây một chút hài hước giá treo cổ vì hãy thành thật đi, ngay cả khi giảm giá 75%, khoản tiền phạt 8 triệu euro là vẫn sẽ phá sản hoàn toàn một doanh nghiệp siêu nhỏ. Nhưng bạn biết gì không? Tiền phạt thậm chí không phải là phần đáng sợ nhất. Cơ quan quản lý có quyền ra lệnh buộc hệ thống AI không tuân thủ của bạn phải ngừng hoạt động khỏi thị trường ngay lập tức. Theo nghĩa đen, bạn có thể bị cấm hợp pháp qua đêm từ 27 quốc gia thành viên EU. Điều đó sẽ không chỉ gây tổn hại cho công ty SAS mà còn giết chết công ty đó. Đây chính xác là lý do tại sao việc sử dụng hộp cát quản lý được giám sát chính thức miễn phí trong thành viên của bạn trạng thái để kiểm tra sự tuân thủ một cách an toàn là hoàn toàn cần thiết. Phần năm, kế hoạch hành động tuân thủ toàn cầu của bạn. Vì vậy, hãy chuyển sang kiểm tra thực tế dành cho người xem trên toàn cầu. Chúng ta cần một kế hoạch hành động nhé các bạn, vì địa lý hoàn toàn không phải là lá chắn đâu bạn có thể nghĩ là như vậy. Tôi muốn phá vỡ bức tường thứ tư trong một giây và trực tiếp giải quyết tất cả trong số các bạn đang nghe từ Hoa Kỳ, Vương quốc Anh, Úc, Canada hoặc Ấn Độ. Bạn có thể đang ngồi ở Austin hoặc Mumbai và suy nghĩ, \"Chà, đây là Đạo luật AI của EU. Chắc chắn luật Châu Âu này không áp dụng cho công ty khởi nghiệp của tôi, phải không? \" Đúng vậy, chúng ta cần phải làm vỡ bong bóng đó một cách dứt khoát. Nó được gọi là quy tắc một khách hàng. Nếu bạn có dù chỉ một khách hàng hoặc người dùng ở một quốc gia thành viên EU, luật này áp dụng cho bạn. Nó sử dụng chính sách tích cực tương tự trên thị trường mà GDPR đã thiết lập. Bạn không cần có văn phòng ở Paris hoặc tài khoản ngân hàng Châu Âu. Nếu một đại lý ở London bán công cụ AI cho khách hàng ở Đức, họ phải tuân thủ. Hoàn toàn không có vết khắc nào cho địa lý. None. Và các bạn, đồng hồ đang kêu tích tắc. Đạo luật này thực tế đã có hiệu lực, nhưng tháng 8 năm 2026 là ngày bạn cần phải khoanh tròn màu đỏ. Đó là bức tường tuyệt đối để thực thi đầy đủ các hệ thống AI có rủi ro cao. Công việc tuân thủ thực sự phải mất hàng tuần, đôi khi hàng tháng để hoàn thiện. Nếu bạn đợi đến năm 2026, đó sẽ là một công việc gấp rút tốn kém đến mức nực cười. hoặc tệ hơn, bạn sẽ phải đối mặt với các biện pháp cưỡng chế trực tiếp. Vì vậy, tôi muốn để lại cho bạn một suy nghĩ cao trào, đầy khiêu khích ở đây. Chúng ta đã biết cái giá của việc coi nhầm một hệ thống AI là không phải AI là thảm họa. Nhưng nếu chúng ta lật nó thì sao? Điều gì sẽ xảy ra nếu xử lý tất cả các hệ thống kỹ thuật số của bạn bằng tính minh bạch nghiêm ngặt mà yêu cầu? Đạo luật AI của EU không chỉ là gánh nặng tuân thủ nặng nề? Hãy nghĩ về nó. Người tiêu dùng và khách hàng doanh nghiệp hiện đang rất sợ công nghệ hộp đen. Nếu bạn có thể chứng minh dứt khoát phương tiện địa hình của mình hoàn toàn minh bạch và có thể kiểm tra được thì sớm việc tuân thủ trở thành một cách tuyệt vời để xây dựng niềm tin to lớn đối với đối thủ cạnh tranh của bạn. Suy cho cùng, niềm tin thực sự là thứ quý giá nhất trong thời đại AI. Đừng đợi cơ quan quản lý đến gõ cửa. Tìm hiểu xem hôm nay bạn đang lái tàu trên đường ray hay phương tiện địa hình. Để bảo vệ doanh nghiệp của bạn và tìm hiểu sâu hơn về các bước chính xác mà bạn cần để lấy, thăm lem-bí mật. người bảo trì. io. Tải mô-đun hướng dẫn sinh tồn miễn phí của bạn, bao gồm sách điện tử và âm thanh sâu hơn lặn và mở khóa đầy đủ năm mô-đun trả phí để đảm bảo bạn hoàn toàn chống đạn. Cảm ơn bạn rất nhiều vì đã tham gia cùng tôi trong phần giải thích này và tôi sẽ nắm bắt được bạn lần sau.",
+  "segments": [
+    {
+      "text": "All right, welcome to this explainer.",
+      "viText": "Được rồi, chào mừng bạn đến với người giải thích này.",
+      "start": 0,
+      "duration": 2.1
+    },
+    {
+      "text": "Today, we are decoding literally the most consequential AI regulation ever passed anywhere in",
+      "viText": "Ngày nay, chúng tôi đang giải mã quy định AI có hậu quả nghiêm trọng nhất từng được thông qua ở bất kỳ đâu trong",
+      "start": 2.1,
+      "duration": 5.27
+    },
+    {
+      "text": "the world, the EU AI Act.",
+      "viText": "thế giới, Đạo luật AI của EU.",
+      "start": 7.37,
+      "duration": 2
+    },
+    {
+      "text": "I promise you a fast-paced, highly structured look at exactly what you need to",
+      "viText": "Tôi hứa với bạn một cái nhìn có nhịp độ nhanh, có cấu trúc cao về chính xác những gì bạn cần",
+      "start": 9.37,
+      "duration": 4.42
+    },
+    {
+      "text": "know to survive and honestly thrive under this new framework.",
+      "viText": "biết tồn tại và phát triển một cách trung thực trong khuôn khổ mới này.",
+      "start": 13.79,
+      "duration": 3.46
+    },
+    {
+      "text": "And we're going to do it entirely without the dense legal jargon.",
+      "viText": "Và chúng ta sẽ làm điều đó hoàn toàn không có thuật ngữ pháp lý dày đặc.",
+      "start": 17.25,
+      "duration": 3.68
+    },
+    {
+      "text": "We're breaking down the compliance guidance, the risk tiers, and the specific rules designed",
+      "viText": "Chúng tôi đang chia nhỏ hướng dẫn tuân thủ, các cấp độ rủi ro và các quy tắc cụ thể được thiết kế",
+      "start": 20.93,
+      "duration": 5.21
+    },
+    {
+      "text": "specifically for small and medium-sized businesses.",
+      "viText": "đặc biệt dành cho các doanh nghiệp vừa và nhỏ.",
+      "start": 26.14,
+      "duration": 2.89
+    },
+    {
+      "text": "To really understand the stakes here, I want to drop you right into a",
+      "viText": "Để thực sự hiểu được vấn đề ở đây, tôi muốn đưa bạn ngay vào",
+      "start": 29.03,
+      "duration": 3.91
+    },
+    {
+      "text": "relatable horror story.",
+      "viText": "câu chuyện kinh dị có liên quan.",
+      "start": 32.94,
+      "duration": 2
+    },
+    {
+      "text": "So, imagine a thriving 40 person software company.",
+      "viText": "Vì vậy, hãy tưởng tượng một công ty phần mềm 40 người đang phát triển mạnh mẽ.",
+      "start": 34.94,
+      "duration": 2.83
+    },
+    {
+      "text": "They've got happy clients, growing revenue, and they want to scale, right?",
+      "viText": "Họ có những khách hàng hài lòng, doanh thu ngày càng tăng và họ muốn mở rộng quy mô, phải không?",
+      "start": 37.77,
+      "duration": 4.19
+    },
+    {
+      "text": "So, they make a perfectly logical operational decision.",
+      "viText": "Vì vậy, họ đưa ra quyết định hoạt động hoàn toàn hợp lý.",
+      "start": 41.96,
+      "duration": 3.12
+    },
+    {
+      "text": "They deploy an AI hiring tool to sort through RS faster.",
+      "viText": "Họ triển khai công cụ tuyển dụng AI để sắp xếp RS nhanh hơn.",
+      "start": 45.08,
+      "duration": 3.17
+    },
+    {
+      "text": "It works great at first, but then boom, they get slapped with a devastating",
+      "viText": "Lúc đầu nó hoạt động rất tốt, nhưng sau đó bùng nổ, họ bị tát một đòn tàn khốc",
+      "start": 48.25,
+      "duration": 4.25
+    },
+    {
+      "text": "€850,000 fine.",
+      "viText": "850.000 € tiền phạt.",
+      "start": 52.5,
+      "duration": 2
+    },
+    {
+      "text": "Just let that number sit with you for a second.",
+      "viText": "Chỉ cần để con số đó ở bên bạn trong một giây.",
+      "start": 54.5,
+      "duration": 2.66
+    },
+    {
+      "text": "For a startup, that is an absolute gut punch.",
+      "viText": "Đối với một công ty khởi nghiệp, đó thực sự là một cú đấm mạnh mẽ.",
+      "start": 57.16,
+      "duration": 2.55
+    },
+    {
+      "text": "And this brilliantly illustrates what we call the ultimate vendor trap.",
+      "viText": "Và điều này minh họa rõ ràng cái mà chúng tôi gọi là bẫy nhà cung cấp cuối cùng.",
+      "start": 59.71,
+      "duration": 4.02
+    },
+    {
+      "text": "Literally, just one routine complaint from a rejected candidate triggered a grueling four-month regulatory",
+      "viText": "Theo nghĩa đen, chỉ một lời phàn nàn thông thường từ một ứng viên bị từ chối đã dẫn đến một quy định pháp lý mệt mỏi kéo dài bốn tháng",
+      "start": 63.73,
+      "duration": 6.01
+    },
+    {
+      "text": "inquiry.",
+      "viText": "cuộc điều tra.",
+      "start": 69.74,
+      "duration": 2
+    },
+    {
+      "text": "See, the startup bought this tool from a massive reputable enterprise software vendor, totally",
+      "viText": "Hãy xem, công ty khởi nghiệp đã mua công cụ này từ một nhà cung cấp phần mềm doanh nghiệp có uy tín lớn, hoàn toàn",
+      "start": 71.74,
+      "duration": 5.33
+    },
+    {
+      "text": "assuming the tech giant's army of lawyers had handled all the legal compliance.",
+      "viText": "giả sử đội quân luật sư của gã khổng lồ công nghệ đã xử lý tất cả việc tuân thủ pháp luật.",
+      "start": 77.07,
+      "duration": 4.48
+    },
+    {
+      "text": "But they missed a critical gap in the law.",
+      "viText": "Nhưng họ đã bỏ lỡ một lỗ hổng quan trọng trong luật pháp.",
+      "start": 81.55,
+      "duration": 2.38
+    },
+    {
+      "text": "Under this legislation, the business deploying the tool is the one on the hook.",
+      "viText": "Theo luật này, doanh nghiệp triển khai công cụ này là doanh nghiệp gặp khó khăn.",
+      "start": 83.93,
+      "duration": 4.48
+    },
+    {
+      "text": "They have their own massive legal obligations.",
+      "viText": "Họ có những nghĩa vụ pháp lý to lớn của riêng mình.",
+      "start": 88.41,
+      "duration": 2.61
+    },
+    {
+      "text": "You simply cannot outsource your legal responsibility to a SAS vendor.",
+      "viText": "Đơn giản là bạn không thể giao trách nhiệm pháp lý của mình cho nhà cung cấp SAS.",
+      "start": 91.02,
+      "duration": 3.97
+    },
+    {
+      "text": "Section one, the chaos.",
+      "viText": "Phần một, sự hỗn loạn.",
+      "start": 94.99,
+      "duration": 2
+    },
+    {
+      "text": "Three incidents that terrified regulators.",
+      "viText": "Ba sự cố khiến cơ quan quản lý khiếp sợ",
+      "start": 96.99,
+      "duration": 2.38
+    },
+    {
+      "text": "Okay, let's dive into this.",
+      "viText": "Được rồi, chúng ta hãy đi sâu vào vấn đề này.",
+      "start": 99.37,
+      "duration": 2
+    },
+    {
+      "text": "To truly grasp why these strict rules exist, we have to look at the",
+      "viText": "Để thực sự hiểu tại sao những quy tắc nghiêm ngặt này tồn tại, chúng ta phải nhìn vào",
+      "start": 101.37,
+      "duration": 3.8
+    },
+    {
+      "text": "real world chaos that made them necessary.",
+      "viText": "sự hỗn loạn của thế giới thực khiến chúng trở nên cần thiết.",
+      "start": 105.17,
+      "duration": 2.38
+    },
+    {
+      "text": "Laws don't just pop up out of nowhere.",
+      "viText": "Luật pháp không tự nhiên xuất hiện.",
+      "start": 107.55,
+      "duration": 2.15
+    },
+    {
+      "text": "There were highly specific deployments that went disastrously wrong and literally terrified regulators.",
+      "viText": "Có những hoạt động triển khai rất cụ thể đã xảy ra sai lầm nghiêm trọng và khiến các cơ quan quản lý khiếp sợ theo đúng nghĩa đen.",
+      "start": 109.7,
+      "duration": 5.84
+    },
+    {
+      "text": "The legislative history points to three main catalysts.",
+      "viText": "Lịch sử lập pháp chỉ ra ba chất xúc tác chính.",
+      "start": 115.54,
+      "duration": 3.12
+    },
+    {
+      "text": "First, the bias machine.",
+      "viText": "Đầu tiên là máy thiên vị.",
+      "start": 118.66,
+      "duration": 2
+    },
+    {
+      "text": "Back in 2018, a major tech company used an experimental AI recruitment tool that",
+      "viText": "Trở lại năm 2018, một công ty công nghệ lớn đã sử dụng công cụ tuyển dụng AI thử nghiệm",
+      "start": 120.66,
+      "duration": 4.53
+    },
+    {
+      "text": "mathematically learned to downgrade any resume mentioning the phrase women's chess club or a",
+      "viText": "học về mặt toán học để hạ cấp bất kỳ sơ yếu lý lịch nào đề cập đến cụm từ câu lạc bộ cờ vua nữ hoặc",
+      "start": 125.19,
+      "duration": 5.21
+    },
+    {
+      "text": "women's college, all based on skewed historical data.",
+      "viText": "trường đại học nữ, tất cả đều dựa trên dữ liệu lịch sử sai lệch.",
+      "start": 130.4,
+      "duration": 3
+    },
+    {
+      "text": "And the humans running it had zero idea.",
+      "viText": "Và những người điều hành nó không có ý tưởng gì.",
+      "start": 133.4,
+      "duration": 2.27
+    },
+    {
+      "text": "Second, false arrests.",
+      "viText": "Thứ hai, bắt giữ sai trái.",
+      "start": 135.67,
+      "duration": 2
+    },
+    {
+      "text": "A Detroit man was arrested in his driveway right in front of his family",
+      "viText": "Một người đàn ông Detroit bị bắt trên đường lái xe ngay trước mặt gia đình anh ta",
+      "start": 137.67,
+      "duration": 4.02
+    },
+    {
+      "text": "and spent 30 hours in jail because facial recognition AI hallucinated a match on",
+      "viText": "và ngồi tù 30 giờ vì AI nhận dạng khuôn mặt gây ảo giác về trận đấu trên",
+      "start": 141.69,
+      "duration": 4.53
+    },
+    {
+      "text": "some greeny security footage.",
+      "viText": "một số cảnh quay an ninh xanh.",
+      "start": 146.22,
+      "duration": 2
+    },
+    {
+      "text": "And third, the financial blackbox.",
+      "viText": "Và thứ ba, hộp đen tài chính.",
+      "start": 148.22,
+      "duration": 2
+    },
+    {
+      "text": "This is where complex AI credit scoring denied people mortgages, but the bank literally",
+      "viText": "Đây là nơi việc chấm điểm tín dụng AI phức tạp từ chối mọi người thế chấp, nhưng ngân hàng theo đúng nghĩa đen",
+      "start": 150.22,
+      "duration": 4.93
+    },
+    {
+      "text": "couldn't explain why.",
+      "viText": "không thể giải thích tại sao.",
+      "start": 155.15,
+      "duration": 2
+    },
+    {
+      "text": "The overarching problem here, AI was making massive lifealtering decisions about freedom, livelihood, and",
+      "viText": "Vấn đề bao trùm ở đây, AI đang đưa ra những quyết định lớn mang tính thay đổi cuộc sống về tự do, sinh kế và",
+      "start": 157.15,
+      "duration": 5.95
+    },
+    {
+      "text": "money with zero oversight and absolutely zero accountability.",
+      "viText": "tiền mà không có sự giám sát và hoàn toàn không có trách nhiệm giải trình.",
+      "start": 163.1,
+      "duration": 3.46
+    },
+    {
+      "text": "Section two, the four tier risk pyramid.",
+      "viText": "Phần hai, kim tự tháp rủi ro bốn cấp.",
+      "start": 166.56,
+      "duration": 2.27
+    },
+    {
+      "text": "So, this brings us to the EU's structured solution to all that chaos.",
+      "viText": "Vì vậy, điều này đưa chúng ta đến giải pháp có cấu trúc của EU cho tất cả sự hỗn loạn đó.",
+      "start": 168.83,
+      "duration": 3.91
+    },
+    {
+      "text": "A brilliant mental model to gauge your exact level of legal danger.",
+      "viText": "Một mô hình tinh thần tuyệt vời để đánh giá mức độ nguy hiểm pháp lý chính xác của bạn.",
+      "start": 172.74,
+      "duration": 3.8
+    },
+    {
+      "text": "Notice exactly where normal businesses fall here.",
+      "viText": "Hãy chú ý chính xác vị trí của các doanh nghiệp bình thường ở đây.",
+      "start": 176.54,
+      "duration": 2.78
+    },
+    {
+      "text": "Tier one entirely banned.",
+      "viText": "Cấp một bị cấm hoàn toàn.",
+      "start": 179.32,
+      "duration": 2
+    },
+    {
+      "text": "This is the dystopian stuff like social scoring.",
+      "viText": "Đây là thứ lạc hậu như tính điểm xã hội.",
+      "start": 181.32,
+      "duration": 2.72
+    },
+    {
+      "text": "No way.",
+      "viText": "Không đời nào.",
+      "start": 184.04,
+      "duration": 2
+    },
+    {
+      "text": "But tier two, tier two is the absolute danger zone for small and medium",
+      "viText": "Nhưng cấp hai, cấp hai là vùng nguy hiểm tuyệt đối cho các doanh nghiệp vừa và nhỏ",
+      "start": 186.04,
+      "duration": 4.02
+    },
+    {
+      "text": "businesses.",
+      "viText": "doanh nghiệp.",
+      "start": 190.06,
+      "duration": 2
+    },
+    {
+      "text": "If you use AI for human resources, automated CV screening, educational assessments, or credit,",
+      "viText": "Nếu bạn sử dụng AI cho hoạt động nhân sự, sàng lọc CV tự động, đánh giá trình độ học vấn hoặc tín dụng,",
+      "start": 192.06,
+      "duration": 5.33
+    },
+    {
+      "text": "you face heavy obligations.",
+      "viText": "bạn phải đối mặt với những nghĩa vụ nặng nề.",
+      "start": 197.39,
+      "duration": 2
+    },
+    {
+      "text": "Now, tier three is limited risk, like your standard customer service chat bots.",
+      "viText": "Bây giờ, cấp ba là rủi ro hạn chế, giống như các bot trò chuyện dịch vụ khách hàng tiêu chuẩn của bạn.",
+      "start": 199.39,
+      "duration": 4.48
+    },
+    {
+      "text": "You really just need to be transparent that it's an AI.",
+      "viText": "Bạn thực sự chỉ cần minh bạch rằng đó là AI.",
+      "start": 203.87,
+      "duration": 3.12
+    },
+    {
+      "text": "And finally, tier four is minimal risk.",
+      "viText": "Và cuối cùng, cấp bốn là rủi ro tối thiểu.",
+      "start": 206.99,
+      "duration": 2.21
+    },
+    {
+      "text": "This covers things like your basic email spam filters, which basically have zero specific",
+      "viText": "Điều này bao gồm những thứ như bộ lọc thư rác email cơ bản của bạn, về cơ bản không có",
+      "start": 209.2,
+      "duration": 5.04
+    },
+    {
+      "text": "legal obligations.",
+      "viText": "cụ thể nào nghĩa vụ pháp lý.",
+      "start": 214.24,
+      "duration": 2
+    },
+    {
+      "text": "Now, I know exactly what a lot of you are thinking.",
+      "viText": "Bây giờ, tôi biết chính xác rất nhiều bạn đang nghĩ gì.",
+      "start": 216.24,
+      "duration": 2.89
+    },
+    {
+      "text": "I hear this defense all the time.",
+      "viText": "Tôi nghe thấy lời bào chữa này mọi lúc.",
+      "start": 219.13,
+      "duration": 2
+    },
+    {
+      "text": "Hey, we don't use AI.",
+      "viText": "Này, chúng tôi không sử dụng AI.",
+      "start": 221.13,
+      "duration": 2
+    },
+    {
+      "text": "We just use normal software.",
+      "viText": "Chúng tôi chỉ sử dụng phần mềm bình thường.",
+      "start": 223.13,
+      "duration": 2
+    },
+    {
+      "text": "So, we're totally fine.",
+      "viText": "Vì vậy, chúng tôi hoàn toàn ổn.",
+      "start": 225.13,
+      "duration": 2
+    },
+    {
+      "text": "Well, I want to burst that misconception right now by asking you directly, what",
+      "viText": "Chà, tôi muốn phá bỏ quan niệm sai lầm đó ngay bây giờ bằng cách hỏi trực tiếp bạn rằng",
+      "start": 227.13,
+      "duration": 4.48
+    },
+    {
+      "text": "actually counts as AI under this law?",
+      "viText": "là gì? thực sự được tính là AI theo luật này?",
+      "start": 231.61,
+      "duration": 2.1
+    },
+    {
+      "text": "Because the regulatory definition is extremely broad.",
+      "viText": "Bởi vì định nghĩa quy định là vô cùng rộng.",
+      "start": 233.71,
+      "duration": 3
+    },
+    {
+      "text": "This metaphor hits the nail on the head when it comes to the legal",
+      "viText": "Phép ẩn dụ này đánh đúng vào đầu khi nói đến pháp lý",
+      "start": 236.71,
+      "duration": 3.74
+    },
+    {
+      "text": "difference.",
+      "viText": "sự khác biệt.",
+      "start": 240.45,
+      "duration": 2
+    },
+    {
+      "text": "normal software rule-based logic is like a train on explicit tracks.",
+      "viText": "logic dựa trên quy tắc phần mềm thông thường giống như một đoàn tàu chạy trên những đường ray rõ ràng.",
+      "start": 242.45,
+      "duration": 3.85
+    },
+    {
+      "text": "If you program an accounting tool to escalate an invoice over €10,000, that's just",
+      "viText": "Nếu bạn lập trình một công cụ kế toán để chuyển hóa đơn lên trên €10.000 thì đó chỉ là",
+      "start": 246.3,
+      "duration": 4.65
+    },
+    {
+      "text": "a simple if then statement laid down by a human.",
+      "viText": "một câu lệnh if then đơn giản do con người đặt ra.",
+      "start": 250.95,
+      "duration": 2.72
+    },
+    {
+      "text": "But an AI system under the law, that's an off-road vehicle.",
+      "viText": "Nhưng hệ thống AI theo luật thì đó là xe địa hình.",
+      "start": 253.67,
+      "duration": 3.34
+    },
+    {
+      "text": "If a system learns from data, adapts its outputs based on patterns, and makes",
+      "viText": "Nếu một hệ thống học từ dữ liệu, điều chỉnh đầu ra của nó dựa trên các mẫu và thực hiện",
+      "start": 257.01,
+      "duration": 4.36
+    },
+    {
+      "text": "its own probabilistic judgments, basically mapping its own path without step-by-step human programming, it's",
+      "viText": "phán đoán xác suất của riêng nó, về cơ bản vạch ra con đường của chính nó mà không cần lập trình từng bước của con người, đó là",
+      "start": 261.37,
+      "duration": 6.12
+    },
+    {
+      "text": "an AI system.",
+      "viText": "một hệ thống AI.",
+      "start": 267.49,
+      "duration": 2
+    },
+    {
+      "text": "Period.",
+      "viText": "Giai đoạn.",
+      "start": 269.49,
+      "duration": 2
+    },
+    {
+      "text": "Section three, the surprise AI list.",
+      "viText": "Phần ba, danh sách AI bất ngờ.",
+      "start": 271.49,
+      "duration": 2.04
+    },
+    {
+      "text": "Because of that incredibly broad definition, we end up with what our sources call",
+      "viText": "Vì định nghĩa vô cùng rộng rãi đó, chúng tôi kết thúc với cái mà nguồn của chúng tôi gọi là",
+      "start": 273.53,
+      "duration": 4.59
+    },
+    {
+      "text": "the surprise AI list.",
+      "viText": "danh sách AI bất ngờ.",
+      "start": 278.12,
+      "duration": 2
+    },
+    {
+      "text": "These are the everyday SAS tools just sitting quietly in your tech stack that",
+      "viText": "Đây là những công cụ SAS hàng ngày nằm yên trong kho công nghệ của bạn",
+      "start": 280.12,
+      "duration": 4.36
+    },
+    {
+      "text": "secretly pull you right into the scope of this massive legislation.",
+      "viText": "bí mật kéo bạn ngay vào phạm vi của đạo luật khổng lồ này.",
+      "start": 284.48,
+      "duration": 3.8
+    },
+    {
+      "text": "Seriously, look closely at your vendors.",
+      "viText": "Nghiêm túc mà nói, hãy xem xét kỹ các nhà cung cấp của bạn.",
+      "start": 288.28,
+      "duration": 2.27
+    },
+    {
+      "text": "Tools like Workday, Greenhouse, HubSpot AI, Salesforce Einstein, or Zenesk AI.",
+      "viText": "Các công cụ như Workday, Greenhouse, HubSpot AI, Salesforce Einstein hoặc Zenesk AI.",
+      "start": 290.55,
+      "duration": 4.42
+    },
+    {
+      "text": "If you've got those AI features turned on, you are in scope.",
+      "viText": "Nếu bạn đã bật các tính năng AI đó thì bạn đã lọt vào tầm ngắm.",
+      "start": 294.97,
+      "duration": 3.4
+    },
+    {
+      "text": "So, here's the crucial takeaway.",
+      "viText": "Vì vậy, đây là bài học quan trọng.",
+      "start": 298.37,
+      "duration": 2
+    },
+    {
+      "text": "If an AI system is drafting a performance review for one of your employees,",
+      "viText": "Nếu hệ thống AI đang soạn thảo bản đánh giá hiệu suất cho một trong các nhân viên của bạn,",
+      "start": 300.37,
+      "duration": 4.25
+    },
+    {
+      "text": "it is actively affecting their livelihood, and that immediately yanks your standard run-of-the-mill business",
+      "viText": "nó đang ảnh hưởng tích cực đến sinh kế của họ và điều đó ngay lập tức ảnh hưởng đến hoạt động kinh doanh thông thường tiêu chuẩn của bạn",
+      "start": 304.62,
+      "duration": 6.12
+    },
+    {
+      "text": "operation straight up into high-risisk tier 2.",
+      "viText": "hoạt động thẳng lên cấp 2 có rủi ro cao.",
+      "start": 310.74,
+      "duration": 2.61
+    },
+    {
+      "text": "Section four, massive fines andme discounts.",
+      "viText": "Phần bốn, tiền phạt lớn và giảm giá cho tôi.",
+      "start": 313.35,
+      "duration": 2.49
+    },
+    {
+      "text": "All right, let's shift gears and talk about the staggering financial stakes here.",
+      "viText": "Được rồi, hãy chuyển số và nói về những khoản đầu tư tài chính đáng kinh ngạc ở đây.",
+      "start": 315.84,
+      "duration": 4.59
+    },
+    {
+      "text": "We need to look at the terrifying stick regulators are holding, but also the",
+      "viText": "Chúng ta cần xem xét các bộ điều chỉnh thanh đáng sợ đang nắm giữ, cũng như",
+      "start": 320.43,
+      "duration": 4.31
+    },
+    {
+      "text": "really surprising protective carrot they've offered up for smaller businesses.",
+      "viText": "củ cà rốt bảo vệ thực sự đáng ngạc nhiên mà họ đã cung cấp cho các doanh nghiệp nhỏ hơn.",
+      "start": 324.74,
+      "duration": 4.42
+    },
+    {
+      "text": "The penalty structure is just mind-blowing.",
+      "viText": "Cấu trúc hình phạt thật đáng kinh ngạc.",
+      "start": 329.16,
+      "duration": 2.44
+    },
+    {
+      "text": "For prohibited AI, the fine is an unthinkable €35 million or 7% of your",
+      "viText": "Đối với AI bị cấm, khoản tiền phạt là 35 triệu euro hoặc 7% số tiền",
+      "start": 331.6,
+      "duration": 4.02
+    },
+    {
+      "text": "global revenue, whichever is higher.",
+      "viText": "của bạn. doanh thu toàn cầu, tùy theo mức nào cao hơn.",
+      "start": 335.62,
+      "duration": 2.04
+    },
+    {
+      "text": "For messing up high-risisk tier 2 AI, it's €15 million or 3%.",
+      "viText": "Để giải quyết vấn đề AI cấp 2 có rủi ro cao, số tiền đó là 15 triệu euro hoặc 3%.",
+      "start": 337.66,
+      "duration": 3.46
+    },
+    {
+      "text": "And check out the bottom row.",
+      "viText": "Và kiểm tra hàng dưới cùng.",
+      "start": 341.12,
+      "duration": 2
+    },
+    {
+      "text": "Minor non-compliance, which actually includes giving incorrect or misleading info to authorities, carries a",
+      "viText": "Hành vi không tuân thủ nhỏ, thực tế bao gồm việc cung cấp thông tin không chính xác hoặc gây hiểu lầm cho cơ quan chức năng, sẽ mang dấu",
+      "start": 343.12,
+      "duration": 6.06
+    },
+    {
+      "text": "€7.",
+      "viText": "€7.",
+      "start": 349.18,
+      "duration": 2
+    },
+    {
+      "text": "5 million euro fine.",
+      "viText": "phạt 5 triệu euro",
+      "start": 351.18,
+      "duration": 2
+    },
+    {
+      "text": "Meaning even just accidentally lying to an auditor ruins you.",
+      "viText": "Có nghĩa là thậm chí chỉ cần vô tình nói dối kiểm toán viên cũng sẽ hủy hoại bạn.",
+      "start": 353.18,
+      "duration": 3.46
+    },
+    {
+      "text": "But hey, let me pull you back from the ledge for a second.",
+      "viText": "Nhưng này, hãy để tôi kéo bạn ra khỏi mỏm đá một lát.",
+      "start": 356.64,
+      "duration": 3.29
+    },
+    {
+      "text": "What's super fascinating is how explicitly this acts actually protects smaller companies.",
+      "viText": "Điều cực kỳ hấp dẫn là hành động này thực sự bảo vệ các công ty nhỏ hơn một cách rõ ràng như thế nào.",
+      "start": 359.93,
+      "duration": 5.04
+    },
+    {
+      "text": "The termme is mentioned 38 times in the regulation.",
+      "viText": "Thuật ngữ này được nhắc đến 38 lần trong quy định.",
+      "start": 364.97,
+      "duration": 2.89
+    },
+    {
+      "text": "There are massive automatic fine reductions explicitly written right into the law.",
+      "viText": "Có những mức giảm tiền phạt tự động lớn được ghi rõ ràng vào luật.",
+      "start": 367.86,
+      "duration": 4.65
+    },
+    {
+      "text": "If you are anme, meaning under 250 employees, you get an automatic 50% reduction",
+      "viText": "Nếu bạn là anme, nghĩa là có dưới 250 nhân viên, bạn sẽ tự động được giảm 50%",
+      "start": 372.51,
+      "duration": 4.53
+    },
+    {
+      "text": "in those fines.",
+      "viText": "trong những khoản tiền phạt đó.",
+      "start": 377.04,
+      "duration": 2
+    },
+    {
+      "text": "And if you're a microenterprise with under 10 employees, you get a massive 75%",
+      "viText": "Và nếu bạn là một doanh nghiệp siêu nhỏ có dưới 10 nhân viên, bạn sẽ nhận được 75%",
+      "start": 379.04,
+      "duration": 4.42
+    },
+    {
+      "text": "reduction.",
+      "viText": "sự giảm bớt.",
+      "start": 383.46,
+      "duration": 2
+    },
+    {
+      "text": "However, I kind of have to inject a bit of gallows humor here because",
+      "viText": "Tuy nhiên, tôi phải thêm vào đây một chút hài hước giá treo cổ vì",
+      "start": 385.46,
+      "duration": 3.91
+    },
+    {
+      "text": "let's be real, even with a 75% discount, an 8 million euro fine is",
+      "viText": "hãy thành thật đi, ngay cả khi giảm giá 75%, khoản tiền phạt 8 triệu euro là",
+      "start": 389.37,
+      "duration": 3.74
+    },
+    {
+      "text": "still going to utterly bankrupt a microenterprise.",
+      "viText": "vẫn sẽ phá sản hoàn toàn một doanh nghiệp siêu nhỏ.",
+      "start": 393.11,
+      "duration": 2.83
+    },
+    {
+      "text": "But you know what?",
+      "viText": "Nhưng bạn biết gì không?",
+      "start": 395.94,
+      "duration": 2
+    },
+    {
+      "text": "The fines aren't even the scariest part.",
+      "viText": "Tiền phạt thậm chí không phải là phần đáng sợ nhất.",
+      "start": 397.94,
+      "duration": 2.27
+    },
+    {
+      "text": "Regulators have the power to order the forced withdrawal of your non-compliant AI system",
+      "viText": "Cơ quan quản lý có quyền ra lệnh buộc hệ thống AI không tuân thủ của bạn phải ngừng hoạt động",
+      "start": 400.21,
+      "duration": 4.99
+    },
+    {
+      "text": "from the market immediately.",
+      "viText": "khỏi thị trường ngay lập tức.",
+      "start": 405.2,
+      "duration": 2
+    },
+    {
+      "text": "You could literally be legally banned overnight from 27 EU member states.",
+      "viText": "Theo nghĩa đen, bạn có thể bị cấm hợp pháp qua đêm từ 27 quốc gia thành viên EU.",
+      "start": 407.2,
+      "duration": 4.14
+    },
+    {
+      "text": "That won't just hurt a SAS company, it will kill it.",
+      "viText": "Điều đó sẽ không chỉ gây tổn hại cho công ty SAS mà còn giết chết công ty đó.",
+      "start": 411.34,
+      "duration": 2.95
+    },
+    {
+      "text": "This is exactly why utilizing the free officially supervised regulatory sandboxes in your member",
+      "viText": "Đây chính xác là lý do tại sao việc sử dụng hộp cát quản lý được giám sát chính thức miễn phí trong thành viên của bạn",
+      "start": 414.29,
+      "duration": 5.44
+    },
+    {
+      "text": "state to test compliance safely is absolutely essential.",
+      "viText": "trạng thái để kiểm tra sự tuân thủ một cách an toàn là hoàn toàn cần thiết.",
+      "start": 419.73,
+      "duration": 3.17
+    },
+    {
+      "text": "Section five, your global compliance action plan.",
+      "viText": "Phần năm, kế hoạch hành động tuân thủ toàn cầu của bạn.",
+      "start": 422.9,
+      "duration": 2.78
+    },
+    {
+      "text": "So, let's pivot to a reality check for our global viewers.",
+      "viText": "Vì vậy, hãy chuyển sang kiểm tra thực tế dành cho người xem trên toàn cầu.",
+      "start": 425.68,
+      "duration": 3.29
+    },
+    {
+      "text": "We need an action plan, folks, because geography is absolutely not the shield you",
+      "viText": "Chúng ta cần một kế hoạch hành động nhé các bạn, vì địa lý hoàn toàn không phải là lá chắn đâu bạn",
+      "start": 428.97,
+      "duration": 4.59
+    },
+    {
+      "text": "might think it is.",
+      "viText": "có thể nghĩ là như vậy.",
+      "start": 433.56,
+      "duration": 2
+    },
+    {
+      "text": "I want to break the fourth wall for a second and directly address all",
+      "viText": "Tôi muốn phá vỡ bức tường thứ tư trong một giây và trực tiếp giải quyết tất cả",
+      "start": 435.56,
+      "duration": 3.91
+    },
+    {
+      "text": "of you listening from the US, the UK, Australia, Canada, or India.",
+      "viText": "trong số các bạn đang nghe từ Hoa Kỳ, Vương quốc Anh, Úc, Canada hoặc Ấn Độ.",
+      "start": 439.47,
+      "duration": 3.74
+    },
+    {
+      "text": "You might be sitting in Austin or Mumbai right now thinking, \"Well, this is",
+      "viText": "Bạn có thể đang ngồi ở Austin hoặc Mumbai và suy nghĩ, \"Chà, đây là",
+      "start": 443.21,
+      "duration": 4.25
+    },
+    {
+      "text": "the EU AI Act.",
+      "viText": "Đạo luật AI của EU.",
+      "start": 447.46,
+      "duration": 2
+    },
+    {
+      "text": "Surely this European law doesn't apply to my startup, right?",
+      "viText": "Chắc chắn luật Châu Âu này không áp dụng cho công ty khởi nghiệp của tôi, phải không?",
+      "start": 449.46,
+      "duration": 3.4
+    },
+    {
+      "text": "\" Yeah, we need to definitively burst that bubble.",
+      "viText": "\" Đúng vậy, chúng ta cần phải làm vỡ bong bóng đó một cách dứt khoát.",
+      "start": 452.86,
+      "duration": 2.83
+    },
+    {
+      "text": "It's called the one customer rule.",
+      "viText": "Nó được gọi là quy tắc một khách hàng.",
+      "start": 455.69,
+      "duration": 2
+    },
+    {
+      "text": "If you have even one single customer or user in an EU member state,",
+      "viText": "Nếu bạn có dù chỉ một khách hàng hoặc người dùng ở một quốc gia thành viên EU,",
+      "start": 457.69,
+      "duration": 3.8
+    },
+    {
+      "text": "this law applies to you.",
+      "viText": "luật này áp dụng cho bạn.",
+      "start": 461.49,
+      "duration": 2
+    },
+    {
+      "text": "It uses the exact same aggressive placing on the market precedent that GDPR established.",
+      "viText": "Nó sử dụng chính sách tích cực tương tự trên thị trường mà GDPR đã thiết lập.",
+      "start": 463.49,
+      "duration": 4.99
+    },
+    {
+      "text": "You do not need a Paris office or European bank account.",
+      "viText": "Bạn không cần có văn phòng ở Paris hoặc tài khoản ngân hàng Châu Âu.",
+      "start": 468.48,
+      "duration": 3.17
+    },
+    {
+      "text": "If a London agency sells an AI tool to a client in Germany, they",
+      "viText": "Nếu một đại lý ở London bán công cụ AI cho khách hàng ở Đức, họ",
+      "start": 471.65,
+      "duration": 3.63
+    },
+    {
+      "text": "have to comply.",
+      "viText": "phải tuân thủ.",
+      "start": 475.28,
+      "duration": 2
+    },
+    {
+      "text": "There are absolutely zero carveouts for geography.",
+      "viText": "Hoàn toàn không có vết khắc nào cho địa lý.",
+      "start": 477.28,
+      "duration": 2.83
+    },
+    {
+      "text": "None.",
+      "viText": "None.",
+      "start": 480.11,
+      "duration": 2
+    },
+    {
+      "text": "And guys, the clock is ticking loudly.",
+      "viText": "Và các bạn, đồng hồ đang kêu tích tắc.",
+      "start": 482.11,
+      "duration": 2.15
+    },
+    {
+      "text": "The act is actually already entered into force, but August 2026 is the date",
+      "viText": "Đạo luật này thực tế đã có hiệu lực, nhưng tháng 8 năm 2026 là ngày",
+      "start": 484.26,
+      "duration": 4.25
+    },
+    {
+      "text": "you need to circle in red.",
+      "viText": "bạn cần phải khoanh tròn màu đỏ.",
+      "start": 488.51,
+      "duration": 2
+    },
+    {
+      "text": "That is the absolute wall for full enforcement of high-risisk AI systems.",
+      "viText": "Đó là bức tường tuyệt đối để thực thi đầy đủ các hệ thống AI có rủi ro cao.",
+      "start": 490.51,
+      "duration": 4.14
+    },
+    {
+      "text": "Real compliance work takes weeks, sometimes months to build out.",
+      "viText": "Công việc tuân thủ thực sự phải mất hàng tuần, đôi khi hàng tháng để hoàn thiện.",
+      "start": 494.65,
+      "duration": 3.63
+    },
+    {
+      "text": "If you wait until 2026, it's going to be a ridiculously expensive rush job.",
+      "viText": "Nếu bạn đợi đến năm 2026, đó sẽ là một công việc gấp rút tốn kém đến mức nực cười.",
+      "start": 498.28,
+      "duration": 4.25
+    },
+    {
+      "text": "or worse, you'll be facing direct enforcement actions.",
+      "viText": "hoặc tệ hơn, bạn sẽ phải đối mặt với các biện pháp cưỡng chế trực tiếp.",
+      "start": 502.53,
+      "duration": 3.06
+    },
+    {
+      "text": "So, I want to leave you with a climactic, provocative thought here.",
+      "viText": "Vì vậy, tôi muốn để lại cho bạn một suy nghĩ cao trào, đầy khiêu khích ở đây.",
+      "start": 505.59,
+      "duration": 3.8
+    },
+    {
+      "text": "We already know the cost of mistakenly treating an AI system as non-AI is",
+      "viText": "Chúng ta đã biết cái giá của việc coi nhầm một hệ thống AI là không phải AI là",
+      "start": 509.39,
+      "duration": 4.14
+    },
+    {
+      "text": "catastrophic.",
+      "viText": "thảm họa.",
+      "start": 513.53,
+      "duration": 2
+    },
+    {
+      "text": "But what if we flip that?",
+      "viText": "Nhưng nếu chúng ta lật nó thì sao?",
+      "start": 515.53,
+      "duration": 2
+    },
+    {
+      "text": "What if treating all your digital systems with the rigorous transparency demanded by the",
+      "viText": "Điều gì sẽ xảy ra nếu xử lý tất cả các hệ thống kỹ thuật số của bạn bằng tính minh bạch nghiêm ngặt mà",
+      "start": 517.53,
+      "duration": 4.99
+    },
+    {
+      "text": "EU AI act isn't just some heavy compliance burden?",
+      "viText": "yêu cầu? Đạo luật AI của EU không chỉ là gánh nặng tuân thủ nặng nề?",
+      "start": 522.52,
+      "duration": 2.83
+    },
+    {
+      "text": "Think about it.",
+      "viText": "Hãy nghĩ về nó.",
+      "start": 525.35,
+      "duration": 2
+    },
+    {
+      "text": "Consumers and enterprise clients are terrified of blackbox technology right now.",
+      "viText": "Người tiêu dùng và khách hàng doanh nghiệp hiện đang rất sợ công nghệ hộp đen.",
+      "start": 527.35,
+      "duration": 4.53
+    },
+    {
+      "text": "If you can definitively prove your off-road vehicles are fully transparent and auditable, early",
+      "viText": "Nếu bạn có thể chứng minh dứt khoát phương tiện địa hình của mình hoàn toàn minh bạch và có thể kiểm tra được thì sớm",
+      "start": 531.88,
+      "duration": 5.38
+    },
+    {
+      "text": "compliance becomes a huge way to build immense trust over your competitors.",
+      "viText": "việc tuân thủ trở thành một cách tuyệt vời để xây dựng niềm tin to lớn đối với đối thủ cạnh tranh của bạn.",
+      "start": 537.26,
+      "duration": 4.25
+    },
+    {
+      "text": "At the end of the day, trust really is the most valuable commodity in",
+      "viText": "Suy cho cùng, niềm tin thực sự là thứ quý giá nhất trong",
+      "start": 541.51,
+      "duration": 3.91
+    },
+    {
+      "text": "the AI era.",
+      "viText": "thời đại AI.",
+      "start": 545.42,
+      "duration": 2
+    },
+    {
+      "text": "Don't wait for the regulators to come knocking.",
+      "viText": "Đừng đợi cơ quan quản lý đến gõ cửa.",
+      "start": 547.42,
+      "duration": 2.66
+    },
+    {
+      "text": "Find out if you're driving a train on tracks or an off-road vehicle today.",
+      "viText": "Tìm hiểu xem hôm nay bạn đang lái tàu trên đường ray hay phương tiện địa hình.",
+      "start": 550.08,
+      "duration": 4.19
+    },
+    {
+      "text": "To protect your business and dive much deeper into the exact steps you need",
+      "viText": "Để bảo vệ doanh nghiệp của bạn và tìm hiểu sâu hơn về các bước chính xác mà bạn cần",
+      "start": 554.27,
+      "duration": 4.25
+    },
+    {
+      "text": "to take, visit the lem-confidential.",
+      "viText": "để lấy, thăm lem-bí mật.",
+      "start": 558.52,
+      "duration": 2.04
+    },
+    {
+      "text": "susteee.",
+      "viText": "người bảo trì.",
+      "start": 560.56,
+      "duration": 2
+    },
+    {
+      "text": "io.",
+      "viText": "io.",
+      "start": 562.56,
+      "duration": 2
+    },
+    {
+      "text": "Grab your free survival guide module, which includes an ebook and a deeper audio",
+      "viText": "Tải mô-đun hướng dẫn sinh tồn miễn phí của bạn, bao gồm sách điện tử và âm thanh sâu hơn",
+      "start": 564.56,
+      "duration": 4.53
+    },
+    {
+      "text": "dive, and unlock the full five paid modules to ensure you're entirely bulletproof.",
+      "viText": "lặn và mở khóa đầy đủ năm mô-đun trả phí để đảm bảo bạn hoàn toàn chống đạn.",
+      "start": 569.09,
+      "duration": 4.65
+    },
+    {
+      "text": "Thank you so much for joining me on this explainer, and I will catch",
+      "viText": "Cảm ơn bạn rất nhiều vì đã tham gia cùng tôi trong phần giải thích này và tôi sẽ nắm bắt được",
+      "start": 573.74,
+      "duration": 3.85
+    },
+    {
+      "text": "you next time.",
+      "viText": "bạn lần sau.",
+      "start": 577.59,
+      "duration": 2
+    }
+  ]
+}

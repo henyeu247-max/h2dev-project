@@ -1,0 +1,1475 @@
+{
+  "videoId": "Igplq1jrrsc",
+  "title": "Every Major AI’s Hidden Advantage Explained in 13 Minutes!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 244,
+  "fullText": "There are more powerful AI assistants than ever before. Chat, GPT, Claude, Gemini, Grock, Deepseek, Perplexity, Copilot, and the list keeps growing. And if you compare them by benchmarks alone, you'll probably end up more confused than when you started. Because the most important difference between these AIs isn't which one scores a few points higher on a test. It's what each one can do better than almost everyone else. One has an enormous ecosystem behind it. Another can stay on track through massive multi-step projects. One can tap into what's happening online right now, while another can give developers powerful AI for a fraction of the usual cost. So instead of asking which AI is the smartest, let's uncover the hidden advantage that makes each major AI worth using and which one actually makes sense for you. Chat GPT. If you could only pick one AI for everything, chat GPT is usually the answer. Not because it wins every category, but because it covers more categories than anything else. You can write, code, analyze data, generate images, search the web, upload files, do deep research, and connect external apps. All in the same conversation, Claude is often better at long coding tasks. Perplexity is built for search. Gemini has deeper Google integration, but none of them pack this many tools into a single workflow. It also has strong reasoning models for complex multi-step problems. A project's feature that keeps context across sessions and multimodal support for text, images, voice, and files together. That breath comes with a cost, though. Being good at everything sometimes means not being the absolute best at any one thing. If your work is 90% coding or 90% research, a specialized tool might serve you better. But for most people who just need one AI that handles almost anything, Chat GPT is the Swiss Army knife. And that is exactly why it is the default for so many users. Claude. Claude is made by Anthropic. Most people know it for writing well, but that undersells what it actually does. Start with the writing because it is genuinely different. Claude does not just produce text. It produces text that reads like a person wrote it. Tone stays consistent across long documents. Structure holds together even in 3,000word reports. When a prompt has 15 small constraints, this tone, that format, avoid these words, include these points, Claude tends to track all of them without quietly dropping half. That level of instruction following is rare. It also has a feature called skills. You can build a set of custom instructions for a specific type of work, a writing style, a review checklist, a script format, and Claude will follow that skill every time you use it. Instead of pasting the same long prompt over and over, you teach Claude once and reuse it. For anyone who does the same kind of work repeatedly, this saves a lot of time and keeps the output consistent. What really sets Claude apart is how it handles long, complex work. Not a single prompt, a project. Read 200 files, make a plan, edit 25 of them, run tests, find bugs, fix them, and still remember the original goal. Claude Code has become one of Anthropic's standout products for exactly this kind of repository level coding. Where it falls short is breadth. Claude's ecosystem is narrower than chat GBTs, but the things it does, writing that sounds human, skills that keep your workflow locked in, and coding that spans entire repositories, it does them at a level that is hard to match. Gemini Gemini is Google's AI. And to understand its advantage, stop thinking about the model. Think about what sits behind it. Gmail, Drive, Docs, Sheets, Slides, Calendar, Search, YouTube, Android. Gemini is integrated deeper and deeper into all of them. It does not just answer questions about your work. It sits inside the tools where your work already lives. Another AI can connect to Gmail through an API. Gemini lives inside Gmail. Another AI can search the web. Google owns the search engine. Another AI can read YouTube. Google owns YouTube. Gemini's deep research can pull context from your personal documents, email, and the open web at the same time. On mobile, Gemini has a massive advantage through Android. It could become the default AI layer on billions of phones. But that advantage has a clear boundary. If your company runs on Microsoft 365 or you use Apple everything, the ecosystem benefit shrinks fast. Outside Google apps, Gemini is solid but less differentiated. So, the real question is simple. How deep are you in Google? The deeper you are, the more Gemini makes sense. Grock Grock is made by XAI, and it has access to something no other major AI does. The full fire hose of X, formerly known as Twitter. Most AIs rely on training data that is weeks or months old. Some can search the web, but search engines take time to index new content. Grock searches X directly. It finds posts that went viral 5 minutes ago, tracks reactions to breaking events, and spots trends before they show up on Google. Imagine a CEO posts something controversial 90 seconds ago. A regular AI has no idea. Grock can find that post and show you the reactions in real time. That makes it powerful for breaking news, crypto and stock sentiment, politics, tech launches, and internet culture. Grock has also been improving in coding and agentic tasks. Some versions support context windows up to 2 million tokens, so they can process a huge amount of information at once. Of course, X is not the entire internet. For deep research from academic papers or technical documentation, that advantage does not help much. Grock is strongest when the information you need is fresh, fast, and social. Deepseek. Here is a question most AI comparisons skip. How much should intelligence cost? A model that is 5% better but costs 10 times more is not always the better model especially when you need to process millions of prompts per day. That is where Deepseek changed the conversation. It proved that strong reasoning and coding do not have to come with a premium price tag. Deepseek performs well in math logic and competitive programming. Deepseek v3.2 brought reasoning directly into tool use and was trained for agent environments. And because many DeepSeek models are openweight, developers can download them, run them on their own hardware, and deploy them without depending on someone else's API. Now, the consumer experience is less polished than chat GPT or Claude. The chat interface and ecosystem are thinner. It is also a Chinese company, which raises data handling questions for some users. But for developers and businesses running high volume AI workloads, DeepSeek forced every other lab to answer an uncomfortable question. Why does your model cost this much? Perplexity. Every other AI on this list started as a chatbot and added search later. Perplexity did the opposite. It started from search and built everything around it. That one difference changes the entire experience. Every answer comes with sources by default. You can immediately check where the information came from. That makes perplexity especially strong for factual questions, product comparisons, market research, and anything where you need to verify what the AI is telling you. The old research workflow was search Google, open 10 tabs, read through them, compare, and summarize. Perplexity compresses that into one step. Ask a question with a researched answer with citations, and keep exploring with follow-ups. Its deep research mode can find many sources, cross- reference them, analyze files, and run calculations in a code sandbox. It is not built for long creative writing, complex coding, or multi-step agent work. Perplexity does one thing, but for that one thing, finding reliable sourced answers fast, it is very hard to beat. Microsoft Copilot, ask any regular AI this question. Summarize the Johnson project and tell me what I need to do this week. It has no idea what the Johnson project is. But if the emails, meetings, spreadsheets, and teams discussions for that project live in Microsoft 365, Copilot can pull context from those sources directly. That is its advantage. Not just AI inside Office apps. AI that understands the context of how your company actually works. Microsoft owns Outlook, Teams, Word, Excel, PowerPoint, SharePoint, One Drive, GitHub, and Windows. Copilot sits inside all of them. Microsoft calls this intelligence layer work IQ. It uses context from your email, calendar, meetings, chats, files, and collaboration patterns to understand your work environment. Copilot Co-work can handle longer multi-step tasks instead of just answering single prompts. And the Excel integration alone is a big deal because so much business work still runs on spreadsheets. The catch? C-Pilot's advantage mostly exists inside the Microsoft ecosystem. If your company uses Google Workspace, that enterprise context shrinks significantly. It also requires organizational buyin, not just a personal subscription. Meta AI. Most AI labs are trying to get people to download a new app. Meta skipped that step entirely. WhatsApp, Instagram, Facebook, Messenger, that is billions of daily active users. Meta AI is already inside those apps. No new habit, no new download. The AI just shows up where people already spend their time. That distribution advantage is something no other AI company can easily copy. Meta is also pushing into AI glasses through its Ray-B band partnership. That opens a different kind of interface where AI sees the world alongside you instead of living on a phone screen. On the developer side, Meta's Llama models are openweight and used in thousands of products outside Meta. For serious professional work, deep coding, long- form research, complex analysis, other tools are stronger. Meta AI is designed more for casual everyday interactions. But here is the thing most people overlook. The hardest part of building a new AI product is often not the model. It is getting a billion people to use it. Meta already has the billion people. Quen Quen is built by Alibaba and it is one of the most underrated AI ecosystems in the world right now. It is not just one model. It is an entire family. Quen coder for programming, Quenv for vision, Quen Omni for multimodal models of different sizes. So developers can pick a small one for edge devices or a large one for heavy reasoning. And Quen 3 supports 119 languages and dialects, making it one of the strongest multilingual AI systems available. Quen 3 also supports hybrid reasoning. It can switch between a thinking mode for complex problems and a fast mode for simple ones. This lets developers balance speed and intelligence based on what they need. Most Western users have probably never tried Quen directly. Its consumer product is less known outside Asia, but in the developer world, especially for teams building multilingual products or serving Asian markets, Quen is one of the most flexible open model toolkits available. The models are openweight, so you can run them on your own infrastructure and customize them however you want. Mistral vibe. For a regular user, the most important question about AI is which one is smarter? But walk into a bank, a government office or a defense contractor and the questions change completely. Where does our data go? Who owns the infrastructure? Can we run this on our own servers? That is Mistl's territory. Mistl is a French AI company. Mistral Vibe, which evolved from Lashot, offers self-hosting, private cloud deployment, full data residency, fine-tuning for business use cases, and enterprise search across internal documents. It supports over 100 tool connections and has coding agents that work with VS Code and Jet Brains. Mistl is especially relevant to European organizations that want to reduce dependency on American AI providers and to any business in a regulated industry where data control is not optional. On pure benchmarks, Mistl's models are generally not at the top compared to the largest from OpenAI or Google. But for organizations where privacy and control matter more than ranking on a leaderboard, that is a trade-off they are happy to make. Sometimes the best AI is not the smartest one. It is the one you are actually allowed to use. So that is every major AI and its hidden advantage. Chat GPT is the all-rounder. Claude is the long horizon specialist. Gemini has Google behind it. Gro sees the internet in real time. Deepseek makes strong AI cheaper. Perplexity was born for search. Copilot knows your company. Meta AI goes where people already are. Quen gives developers an open multilingual toolkit and Mistl gives enterprises control. The best AI is not the one that wins the most benchmarks. It is the one whose advantage matches what you actually need. Anyway, I also made some other cool videos too. Don't forget to watch them later. Okay.",
+  "fullTextVi": "Có nhiều trợ lý AI mạnh mẽ hơn bao giờ hết. Chat, GPT, Claude, Gemini, Grock, Deepseek, Perplexity, Copilot và danh sách này không ngừng tăng lên. Và nếu bạn so sánh chúng chỉ bằng điểm chuẩn, bạn có thể sẽ bối rối hơn hơn khi bạn bắt đầu. Bởi vì sự khác biệt quan trọng nhất giữa các AI này không phải là cái nào đạt được vài điểm điểm cao hơn trong bài kiểm tra. Đó là điều mà mỗi người có thể làm tốt hơn hầu hết những người khác. Một người có một hệ sinh thái khổng lồ đằng sau nó. Một người khác có thể đi đúng hướng thông qua các dự án lớn gồm nhiều bước. Một người có thể khai thác những gì đang diễn ra trực tuyến ngay bây giờ, trong khi người khác có thể cung cấp cho các nhà phát triển AI mạnh mẽ với một phần chi phí thông thường. Vậy thay vì hỏi AI nào thông minh nhất hãy cùng khám phá lợi thế tiềm ẩn điều đó làm cho mỗi AI chính trở nên đáng sử dụng và cái nào thực sự có ý nghĩa đối với you. Trò chuyện GPT. Nếu bạn chỉ có thể chọn một AI cho mọi thứ thì GPT trò chuyện thường là trả lời. Không phải vì nó thắng mọi hạng mục mà vì nó bao gồm nhiều hạng mục hơn bất kỳ hạng mục nào else. Bạn có thể viết, mã hóa, phân tích dữ liệu, tạo hình ảnh, tìm kiếm trên web, tải tệp lên, thực hiện nghiên cứu sâu và kết nối các ứng dụng bên ngoài. Nói chung, Claude thường giỏi hơn trong các nhiệm vụ mã hóa dài. Sự bối rối được xây dựng để tìm kiếm. Gemini tích hợp Google sâu hơn, nhưng không ai trong số họ tích hợp nhiều công cụ này vào một quy trình làm việc duy nhất. Nó cũng có các mô hình lý luận mạnh mẽ cho các vấn đề phức tạp gồm nhiều bước. Tính năng của dự án giúp lưu giữ bối cảnh trong các phiên và hỗ trợ đa phương thức cho văn bản, hình ảnh, giọng nói và các tập tin với nhau. Tuy nhiên, hơi thở đó đi kèm với một cái giá phải trả. Giỏi mọi thứ đôi khi có nghĩa là không phải là người giỏi nhất ở bất kỳ lĩnh vực nào điều. Nếu công việc của bạn 90% là viết mã hoặc 90% là nghiên cứu, một công cụ chuyên dụng có thể phục vụ bạn tốt hơn. Nhưng đối với hầu hết những người chỉ cần một AI có thể xử lý hầu hết mọi thứ, Trò chuyện GPT là con dao của quân đội Thụy Sĩ. Và đó chính xác là lý do tại sao nó được mặc định cho rất nhiều người dùng. Claude. Claude được thực hiện bởi Anthropic. Hầu hết mọi người đều biết nó viết hay, nhưng điều đó chưa đánh giá đúng những gì nó thực sự làm được. Bắt đầu bằng cách viết bởi vì nó thực sự khác biệt. Claude không chỉ tạo ra văn bản. Nó tạo ra văn bản đọc giống như một người đã viết nó. Giọng điệu vẫn nhất quán trên các tài liệu dài. Cấu trúc được giữ chặt ngay cả trong các báo cáo 3.000 từ. Khi một lời nhắc có 15 ràng buộc nhỏ, giọng điệu này, định dạng kia, hãy tránh những từ này, bao gồm những điểm này, Claude có xu hướng theo dõi tất cả chúng mà không lặng lẽ bỏ đi một nửa. Mức độ hướng dẫn sau đây là rất hiếm. Nó cũng có một tính năng gọi là kỹ năng. Bạn có thể xây dựng một bộ hướng dẫn tùy chỉnh cho một loại công việc cụ thể, phong cách viết, danh sách kiểm tra đánh giá, định dạng kịch bản và Claude sẽ tuân theo kỹ năng mỗi khi bạn sử dụng nó. Thay vì dán đi dán lại cùng một lời nhắc dài dòng, bạn dạy Claude một lần và tái sử dụng nó. Đối với những người làm cùng một loại công việc nhiều lần, điều này tiết kiệm rất nhiều về thời gian và giữ cho đầu ra nhất quán. Điều thực sự khiến Claude trở nên khác biệt là cách họ xử lý công việc dài và phức tạp. Không một lời nhắc nhở nào, một dự án. Đọc 200 tệp, lập kế hoạch, chỉnh sửa 25 tệp trong số đó, chạy thử nghiệm, tìm lỗi, khắc phục chúng và vẫn nhớ mục tiêu ban đầu. Claude Code đã trở thành một trong những sản phẩm nổi bật của Anthropic dành cho loại này mã hóa cấp độ kho lưu trữ. Nơi nó thiếu là chiều rộng. Hệ sinh thái của Claude hẹp hơn so với GBT trò chuyện, nhưng những gì nó làm được, viết rằng nghe có vẻ giống con người, các kỹ năng giúp giữ chặt quy trình làm việc của bạn và mã hóa trải rộng toàn bộ kho lưu trữ, nó thực hiện chúng ở mức độ khó có thể so sánh được. Gemini Gemini là AI của Google. Và để hiểu được lợi thế của nó, hãy ngừng suy nghĩ về mô hình. Hãy suy nghĩ về những gì đằng sau nó. Gmail, Drive, Tài liệu, Trang tính, Trang trình bày, Lịch, Tìm kiếm, YouTube, Android. Song Tử ngày càng được hòa nhập sâu hơn vào tất cả chúng. Nó không chỉ trả lời các câu hỏi về công việc của bạn. Nó nằm bên trong các công cụ nơi công việc của bạn đã tồn tại. Một AI khác có thể kết nối với Gmail thông qua API. Song Tử sống bên trong Gmail. Một AI khác có thể tìm kiếm trên web. Google sở hữu công cụ tìm kiếm. Một AI khác có thể đọc YouTube. Google sở hữu YouTube. Nghiên cứu sâu của Gemini có thể lấy bối cảnh từ tài liệu cá nhân, email của bạn và mở web cùng một lúc. Trên thiết bị di động, Gemini có lợi thế lớn nhờ Android. Nó có thể trở thành lớp AI mặc định trên hàng tỷ điện thoại. Nhưng lợi thế đó có ranh giới rõ ràng. Nếu công ty của bạn chạy trên Microsoft 365 hoặc bạn sử dụng mọi thứ của Apple thì hệ sinh thái lợi ích giảm đi nhanh chóng. Ngoài các ứng dụng của Google, Gemini rất vững chắc nhưng ít khác biệt hơn. Vì vậy, câu hỏi thực sự rất đơn giản. Bạn hiểu sâu về Google đến mức nào? Bạn càng sâu sắc thì Song Tử càng có ý nghĩa. Grock Grock được tạo ra bởi XAI và nó có quyền truy cập vào thứ gì đó không có gì khác AI chính làm được. Vòi cứu hỏa đầy đủ của X, trước đây gọi là Twitter. Hầu hết các AI đều dựa vào dữ liệu đào tạo được lưu trữ hàng tuần hoặc hàng tháng. Một số có thể tìm kiếm trên web, nhưng các công cụ tìm kiếm cần có thời gian để lập chỉ mục nội dung mới. Grock tìm kiếm X trực tiếp. Nó tìm thấy các bài đăng đã lan truyền 5 phút trước, theo dõi phản ứng với các sự kiện nổi bật, và phát hiện xu hướng trước khi chúng xuất hiện trên Google. Hãy tưởng tượng một CEO đăng nội dung nào đó gây tranh cãi cách đây 90 giây. Một AI thông thường không có ý tưởng gì. Grock có thể tìm thấy bài đăng đó và cho bạn thấy phản ứng trong thời gian thực. Điều đó làm cho nó trở nên mạnh mẽ đối với tin tức nóng hổi, ​​​​tình cảm về tiền điện tử và chứng khoán, chính trị, ra mắt công nghệ, và văn hóa internet. Grock cũng đã được cải thiện về các tác vụ mã hóa và tác nhân. Một số phiên bản hỗ trợ cửa sổ ngữ cảnh lên tới 2 triệu token nên có thể xử lý một lượng lớn thông tin cùng một lúc. Tất nhiên, X không phải là toàn bộ internet. Đối với nghiên cứu sâu từ các bài báo học thuật hoặc tài liệu kỹ thuật, lợi thế đó không giúp ích gì much. Grock mạnh mẽ nhất khi thông tin bạn cần mới, nhanh và mang tính xã hội. Tìm kiếm sâu. Đây là một câu hỏi mà hầu hết các so sánh AI đều bỏ qua. Trí thông minh nên có giá bao nhiêu? Một mô hình tốt hơn 5% nhưng đắt hơn 10 lần không phải lúc nào cũng mô hình tốt hơn, đặc biệt khi bạn cần xử lý hàng triệu lời nhắc mỗi ngày. Đó là nơi Deepseek đã thay đổi cuộc trò chuyện. Nó chứng minh rằng lý luận và mã hóa mạnh mẽ không nhất thiết phải đi kèm với thẻ giá cao cấp. Deepseek hoạt động tốt về logic toán học và lập trình cạnh tranh. Tìm kiếm sâu v3. 2 đưa lý luận trực tiếp vào sử dụng công cụ và được đào tạo cho môi trường tác tử. Và vì nhiều mô hình DeepSeek có dung lượng mở nên các nhà phát triển có thể tải xuống, chạy chúng trên phần cứng của riêng họ và triển khai chúng mà không phụ thuộc vào API của người khác. Giờ đây, trải nghiệm của người tiêu dùng kém bóng bẩy hơn so với trò chuyện GPT hoặc Claude. Giao diện trò chuyện và hệ sinh thái mỏng hơn. Đây cũng là một công ty Trung Quốc, điều này đặt ra câu hỏi về việc xử lý dữ liệu cho một số người dùng. Nhưng đối với các nhà phát triển và doanh nghiệp chạy khối lượng công việc AI khối lượng lớn, DeepSeek buộc phải làm như vậy phòng thí nghiệm để trả lời một câu hỏi khó chịu. Tại sao mô hình của bạn lại có giá cao như vậy? Sự bối rối. Mọi AI khác trong danh sách này đều bắt đầu dưới dạng chatbot và thêm tính năng tìm kiếm sau đó. Sự bối rối đã làm điều ngược lại. Nó bắt đầu từ việc tìm kiếm và xây dựng mọi thứ xung quanh nó. Sự khác biệt đó thay đổi toàn bộ trải nghiệm. Mọi câu trả lời đều có nguồn theo mặc định. Bạn có thể ngay lập tức kiểm tra thông tin đến từ đâu. Điều đó làm cho sự bối rối trở nên đặc biệt nghiêm trọng đối với các câu hỏi thực tế, so sánh sản phẩm, nghiên cứu thị trường và bất kỳ điều gì nơi bạn cần xác minh những gì AI đang nói với bạn. Quy trình nghiên cứu cũ là tìm kiếm trên Google, mở 10 tab, đọc qua chúng, so sánh, và tóm tắt. Sự bối rối nén điều đó thành một bước. Đặt câu hỏi với câu trả lời đã được nghiên cứu kèm theo trích dẫn và tiếp tục khám phá bằng các nội dung tiếp theo. Chế độ nghiên cứu sâu của nó có thể tìm thấy nhiều nguồn, tham khảo chéo, phân tích tệp và chạy các phép tính trong hộp cát mã. Nó không được xây dựng để viết sáng tạo dài dòng, mã hóa phức tạp hoặc công việc tác nhân nhiều bước. Sự bối rối làm được một việc, nhưng vì một điều đó, việc tìm kiếm câu trả lời có nguồn gốc đáng tin cậy một cách nhanh chóng, nó rất khó để đánh bại. Microsoft Copilot, hãy hỏi bất kỳ AI thông thường nào câu hỏi này. Tóm tắt dự án Johnson và cho tôi biết tôi cần làm gì trong tuần này. Nó không biết dự án Johnson là gì. Nhưng nếu email, cuộc họp, bảng tính và thảo luận nhóm cho dự án đó tồn tại trong Microsoft 365, Copilot có thể lấy ngữ cảnh trực tiếp từ những nguồn đó. Đó là lợi thế của nó. Không chỉ AI bên trong các ứng dụng Office. AI hiểu được bối cảnh hoạt động thực sự của công ty bạn. Microsoft sở hữu Outlook, Teams, Word, Excel, PowerPoint, SharePoint, One Drive, GitHub và Windows. Phi công phụ ngồi bên trong tất cả chúng. Microsoft gọi lớp thông minh này là IQ. Nó sử dụng ngữ cảnh từ email, lịch, cuộc họp, cuộc trò chuyện, tệp và mẫu cộng tác của bạn để hiểu môi trường làm việc của bạn. Copilot Co-work có thể xử lý các tác vụ gồm nhiều bước dài hơn thay vì chỉ trả lời các lời nhắc đơn lẻ. Và chỉ riêng việc tích hợp Excel đã là một vấn đề lớn vì có rất nhiều công việc kinh doanh vẫn chạy trên bảng tính. Việc bắt? Lợi thế của C-Pilot chủ yếu tồn tại bên trong hệ sinh thái Microsoft. Nếu công ty của bạn sử dụng Google Workspace, bối cảnh doanh nghiệp đó sẽ bị thu hẹp đáng kể. Nó cũng yêu cầu sự tham gia của tổ chức chứ không chỉ là đăng ký cá nhân. Meta AI. Hầu hết các phòng thí nghiệm AI đang cố gắng thu hút mọi người tải xuống một ứng dụng mới. Meta đã bỏ qua bước đó hoàn toàn. WhatsApp, Instagram, Facebook, Messenger, tức là có hàng tỷ người dùng hoạt động hàng ngày. Meta AI đã có sẵn trong các ứng dụng đó. Không có thói quen mới, không có tải mới. AI chỉ xuất hiện ở nơi mọi người đã dành thời gian. Lợi thế phân phối đó là điều mà không công ty AI nào khác có thể dễ dàng sao chép. Meta cũng đang đẩy mạnh lĩnh vực kính AI thông qua quan hệ đối tác với dải Ray-B. Điều đó mở ra một loại giao diện khác, nơi AI nhìn thế giới cùng với bạn thay vì sống trên màn hình điện thoại. Về phía nhà phát triển, các mô hình Llama của Meta là dạng mở và được sử dụng trong hàng nghìn sản phẩm bên ngoài Meta. Đối với công việc chuyên môn nghiêm túc, mã hóa sâu, nghiên cứu dạng dài, phân tích phức tạp, các công cụ khác là mạnh mẽ hơn. Meta AI được thiết kế nhiều hơn cho các tương tác thông thường hàng ngày. Nhưng đây là điều mà hầu hết mọi người đều bỏ qua. Phần khó nhất trong việc xây dựng một sản phẩm AI mới thường không phải là mô hình. Nó đang thu hút được một tỷ người sử dụng nó. Meta đã có hàng tỷ người rồi. Quen Quen được xây dựng bởi Alibaba và nó là một trong những thứ bị đánh giá thấp nhất Hệ sinh thái AI trên thế giới hiện nay. Nó không chỉ là một mô hình. Đó là cả một gia đình. Quen coding dành cho lập trình, Quenv dành cho tầm nhìn, Quen Omni dành cho các mô hình đa phương thức khác nhau kích thước. Vì vậy, các nhà phát triển có thể chọn một cái nhỏ cho các thiết bị biên hoặc một cái lớn vì lý luận nặng nề. Và Quen 3 hỗ trợ 119 ngôn ngữ và phương ngữ, khiến nó trở thành một trong những ngôn ngữ mạnh nhất hệ thống AI đa ngôn ngữ có sẵn. Quen 3 cũng hỗ trợ lý luận lai. Nó có thể chuyển đổi giữa chế độ tư duy cho các vấn đề phức tạp và chế độ nhanh đối với những cái đơn giản. Điều này cho phép các nhà phát triển cân bằng tốc độ và trí thông minh dựa trên những gì họ cần. Hầu hết người dùng phương Tây có lẽ chưa bao giờ trực tiếp dùng thử Quen. Sản phẩm tiêu dùng của nó ít được biết đến bên ngoài châu Á, nhưng trong thế giới nhà phát triển, đặc biệt là đối với các nhóm xây dựng sản phẩm đa ngôn ngữ hoặc phục vụ thị trường châu Á, Quen là một trong những bộ công cụ mô hình mở linh hoạt nhất hiện có. Các mô hình này đều có dung lượng mở nên bạn có thể chạy chúng trên cơ sở hạ tầng của riêng mình và tùy chỉnh chúng theo cách bạn muốn. Sự rung cảm của Mistral. Đối với người dùng thông thường, câu hỏi quan trọng nhất về AI là cái nào thông minh hơn? Nhưng khi bước vào một ngân hàng, một văn phòng chính phủ hay một nhà thầu quốc phòng và câu hỏi thay đổi hoàn toàn Dữ liệu của chúng tôi đi đâu? Ai sở hữu cơ sở hạ tầng? Chúng tôi có thể chạy cái này trên máy chủ của chúng tôi không? Đó là lãnh thổ của Mistl. Mistl là một công ty AI của Pháp. Mistral Vibe, được phát triển từ Lashot, cung cấp dịch vụ tự lưu trữ, triển khai đám mây riêng, lưu trữ dữ liệu đầy đủ, tinh chỉnh cho các trường hợp sử dụng kinh doanh và tìm kiếm doanh nghiệp trên các tài liệu nội bộ. Nó hỗ trợ hơn 100 kết nối công cụ và có các tác nhân mã hóa hoạt động với VS Mã và bộ não phản lực. Mistl đặc biệt phù hợp với các tổ chức châu Âu muốn giảm sự phụ thuộc vào của Mỹ Các nhà cung cấp AI và bất kỳ doanh nghiệp nào trong ngành được quản lý nơi kiểm soát dữ liệu không tùy chọn. Xét trên các benchmark thuần túy, các mẫu của Mistl nhìn chung không đứng đầu so với lớn nhất từ ​​OpenAI hoặc Google. Nhưng đối với các tổ chức nơi quyền riêng tư và quyền kiểm soát quan trọng hơn thứ hạng trên bảng xếp hạng, đó là một sự đánh đổi mà họ rất vui khi thực hiện. Đôi khi AI tốt nhất không phải là AI thông minh nhất. Đó là cái bạn thực sự được phép sử dụng. Vì vậy, đó là mọi AI chính và lợi thế tiềm ẩn của nó. Trò chuyện GPT là công cụ toàn diện. Claude là chuyên gia về tầm nhìn dài hạn. Gemini có Google đằng sau nó. Gro nhìn thấy internet trong thời gian thực. Deepseek làm cho AI mạnh trở nên rẻ hơn. Sự bối rối được sinh ra để tìm kiếm. Phi công phụ biết công ty của bạn. Meta AI đi đến nơi mọi người đã ở. Quen cung cấp cho các nhà phát triển một bộ công cụ đa ngôn ngữ mở và Mistl cung cấp cho doanh nghiệp quyền kiểm soát. AI tốt nhất không phải là AI giành được nhiều điểm chuẩn nhất. Đó là người có lợi thế phù hợp với những gì bạn thực sự cần. Dù sao thì tôi cũng đã làm một số video thú vị khác. Đừng quên xem chúng sau. Okay.",
+  "segments": [
+    {
+      "text": "There are more powerful AI assistants than ever before.",
+      "viText": "Có nhiều trợ lý AI mạnh mẽ hơn bao giờ hết.",
+      "start": 0,
+      "duration": 3.45
+    },
+    {
+      "text": "Chat, GPT, Claude, Gemini, Grock, Deepseek, Perplexity, Copilot, and the list keeps growing.",
+      "viText": "Chat, GPT, Claude, Gemini, Grock, Deepseek, Perplexity, Copilot và danh sách này không ngừng tăng lên.",
+      "start": 3.45,
+      "duration": 5.77
+    },
+    {
+      "text": "And if you compare them by benchmarks alone, you'll probably end up more confused",
+      "viText": "Và nếu bạn so sánh chúng chỉ bằng điểm chuẩn, bạn có thể sẽ bối rối hơn",
+      "start": 9.22,
+      "duration": 5.08
+    },
+    {
+      "text": "than when you started.",
+      "viText": "hơn khi bạn bắt đầu.",
+      "start": 14.3,
+      "duration": 2
+    },
+    {
+      "text": "Because the most important difference between these AIs isn't which one scores a few",
+      "viText": "Bởi vì sự khác biệt quan trọng nhất giữa các AI này không phải là cái nào đạt được vài điểm",
+      "start": 16.3,
+      "duration": 5.27
+    },
+    {
+      "text": "points higher on a test.",
+      "viText": "điểm cao hơn trong bài kiểm tra.",
+      "start": 21.57,
+      "duration": 2
+    },
+    {
+      "text": "It's what each one can do better than almost everyone else.",
+      "viText": "Đó là điều mà mỗi người có thể làm tốt hơn hầu hết những người khác.",
+      "start": 23.57,
+      "duration": 3.7
+    },
+    {
+      "text": "One has an enormous ecosystem behind it.",
+      "viText": "Một người có một hệ sinh thái khổng lồ đằng sau nó.",
+      "start": 27.27,
+      "duration": 2.51
+    },
+    {
+      "text": "Another can stay on track through massive multi-step projects.",
+      "viText": "Một người khác có thể đi đúng hướng thông qua các dự án lớn gồm nhiều bước.",
+      "start": 29.78,
+      "duration": 3.89
+    },
+    {
+      "text": "One can tap into what's happening online right now, while another can give developers",
+      "viText": "Một người có thể khai thác những gì đang diễn ra trực tuyến ngay bây giờ, trong khi người khác có thể cung cấp cho các nhà phát triển",
+      "start": 33.67,
+      "duration": 5.33
+    },
+    {
+      "text": "powerful AI for a fraction of the usual cost.",
+      "viText": "AI mạnh mẽ với một phần chi phí thông thường.",
+      "start": 39,
+      "duration": 2.82
+    },
+    {
+      "text": "So instead of asking which AI is the smartest, let's uncover the hidden advantage",
+      "viText": "Vậy thay vì hỏi AI nào thông minh nhất hãy cùng khám phá lợi thế tiềm ẩn",
+      "start": 41.82,
+      "duration": 5.08
+    },
+    {
+      "text": "that makes each major AI worth using and which one actually makes sense for",
+      "viText": "điều đó làm cho mỗi AI chính trở nên đáng sử dụng và cái nào thực sự có ý nghĩa đối với",
+      "start": 46.9,
+      "duration": 4.71
+    },
+    {
+      "text": "you.",
+      "viText": "you.",
+      "start": 51.61,
+      "duration": 2
+    },
+    {
+      "text": "Chat GPT.",
+      "viText": "Trò chuyện GPT.",
+      "start": 53.61,
+      "duration": 2
+    },
+    {
+      "text": "If you could only pick one AI for everything, chat GPT is usually the",
+      "viText": "Nếu bạn chỉ có thể chọn một AI cho mọi thứ thì GPT trò chuyện thường là",
+      "start": 55.61,
+      "duration": 4.33
+    },
+    {
+      "text": "answer.",
+      "viText": "trả lời.",
+      "start": 59.94,
+      "duration": 2
+    },
+    {
+      "text": "Not because it wins every category, but because it covers more categories than anything",
+      "viText": "Không phải vì nó thắng mọi hạng mục mà vì nó bao gồm nhiều hạng mục hơn bất kỳ hạng mục nào",
+      "start": 61.94,
+      "duration": 5.46
+    },
+    {
+      "text": "else.",
+      "viText": "else.",
+      "start": 67.4,
+      "duration": 2
+    },
+    {
+      "text": "You can write, code, analyze data, generate images, search the web, upload files, do",
+      "viText": "Bạn có thể viết, mã hóa, phân tích dữ liệu, tạo hình ảnh, tìm kiếm trên web, tải tệp lên, thực hiện",
+      "start": 69.4,
+      "duration": 5.27
+    },
+    {
+      "text": "deep research, and connect external apps.",
+      "viText": "nghiên cứu sâu và kết nối các ứng dụng bên ngoài.",
+      "start": 74.67,
+      "duration": 2.57
+    },
+    {
+      "text": "All in the same conversation, Claude is often better at long coding tasks.",
+      "viText": "Nói chung, Claude thường giỏi hơn trong các nhiệm vụ mã hóa dài.",
+      "start": 77.24,
+      "duration": 4.64
+    },
+    {
+      "text": "Perplexity is built for search.",
+      "viText": "Sự bối rối được xây dựng để tìm kiếm.",
+      "start": 81.88,
+      "duration": 2
+    },
+    {
+      "text": "Gemini has deeper Google integration, but none of them pack this many tools into",
+      "viText": "Gemini tích hợp Google sâu hơn, nhưng không ai trong số họ tích hợp nhiều công cụ này vào",
+      "start": 83.88,
+      "duration": 5.02
+    },
+    {
+      "text": "a single workflow.",
+      "viText": "một quy trình làm việc duy nhất.",
+      "start": 88.9,
+      "duration": 2
+    },
+    {
+      "text": "It also has strong reasoning models for complex multi-step problems.",
+      "viText": "Nó cũng có các mô hình lý luận mạnh mẽ cho các vấn đề phức tạp gồm nhiều bước.",
+      "start": 90.9,
+      "duration": 4.27
+    },
+    {
+      "text": "A project's feature that keeps context across sessions and multimodal support for text, images,",
+      "viText": "Tính năng của dự án giúp lưu giữ bối cảnh trong các phiên và hỗ trợ đa phương thức cho văn bản, hình ảnh,",
+      "start": 95.17,
+      "duration": 5.96
+    },
+    {
+      "text": "voice, and files together.",
+      "viText": "giọng nói và các tập tin với nhau.",
+      "start": 101.13,
+      "duration": 2
+    },
+    {
+      "text": "That breath comes with a cost, though.",
+      "viText": "Tuy nhiên, hơi thở đó đi kèm với một cái giá phải trả.",
+      "start": 103.13,
+      "duration": 2.38
+    },
+    {
+      "text": "Being good at everything sometimes means not being the absolute best at any one",
+      "viText": "Giỏi mọi thứ đôi khi có nghĩa là không phải là người giỏi nhất ở bất kỳ lĩnh vực nào",
+      "start": 105.51,
+      "duration": 4.96
+    },
+    {
+      "text": "thing.",
+      "viText": "điều.",
+      "start": 110.47,
+      "duration": 2
+    },
+    {
+      "text": "If your work is 90% coding or 90% research, a specialized tool might serve",
+      "viText": "Nếu công việc của bạn 90% là viết mã hoặc 90% là nghiên cứu, một công cụ chuyên dụng có thể phục vụ",
+      "start": 112.47,
+      "duration": 4.64
+    },
+    {
+      "text": "you better.",
+      "viText": "bạn tốt hơn.",
+      "start": 117.11,
+      "duration": 2
+    },
+    {
+      "text": "But for most people who just need one AI that handles almost anything, Chat",
+      "viText": "Nhưng đối với hầu hết những người chỉ cần một AI có thể xử lý hầu hết mọi thứ, Trò chuyện",
+      "start": 119.11,
+      "duration": 4.71
+    },
+    {
+      "text": "GPT is the Swiss Army knife.",
+      "viText": "GPT là con dao của quân đội Thụy Sĩ.",
+      "start": 123.82,
+      "duration": 2
+    },
+    {
+      "text": "And that is exactly why it is the default for so many users.",
+      "viText": "Và đó chính xác là lý do tại sao nó được mặc định cho rất nhiều người dùng.",
+      "start": 125.82,
+      "duration": 3.76
+    },
+    {
+      "text": "Claude.",
+      "viText": "Claude.",
+      "start": 129.58,
+      "duration": 2
+    },
+    {
+      "text": "Claude is made by Anthropic.",
+      "viText": "Claude được thực hiện bởi Anthropic.",
+      "start": 131.58,
+      "duration": 2
+    },
+    {
+      "text": "Most people know it for writing well, but that undersells what it actually does.",
+      "viText": "Hầu hết mọi người đều biết nó viết hay, nhưng điều đó chưa đánh giá đúng những gì nó thực sự làm được.",
+      "start": 133.58,
+      "duration": 5.02
+    },
+    {
+      "text": "Start with the writing because it is genuinely different.",
+      "viText": "Bắt đầu bằng cách viết bởi vì nó thực sự khác biệt.",
+      "start": 138.6,
+      "duration": 3.58
+    },
+    {
+      "text": "Claude does not just produce text.",
+      "viText": "Claude không chỉ tạo ra văn bản.",
+      "start": 142.18,
+      "duration": 2.13
+    },
+    {
+      "text": "It produces text that reads like a person wrote it.",
+      "viText": "Nó tạo ra văn bản đọc giống như một người đã viết nó.",
+      "start": 144.31,
+      "duration": 3.2
+    },
+    {
+      "text": "Tone stays consistent across long documents.",
+      "viText": "Giọng điệu vẫn nhất quán trên các tài liệu dài.",
+      "start": 147.51,
+      "duration": 2.76
+    },
+    {
+      "text": "Structure holds together even in 3,000word reports.",
+      "viText": "Cấu trúc được giữ chặt ngay cả trong các báo cáo 3.000 từ.",
+      "start": 150.27,
+      "duration": 3.2
+    },
+    {
+      "text": "When a prompt has 15 small constraints, this tone, that format, avoid these words,",
+      "viText": "Khi một lời nhắc có 15 ràng buộc nhỏ, giọng điệu này, định dạng kia, hãy tránh những từ này,",
+      "start": 153.47,
+      "duration": 5.15
+    },
+    {
+      "text": "include these points, Claude tends to track all of them without quietly dropping half.",
+      "viText": "bao gồm những điểm này, Claude có xu hướng theo dõi tất cả chúng mà không lặng lẽ bỏ đi một nửa.",
+      "start": 158.62,
+      "duration": 5.4
+    },
+    {
+      "text": "That level of instruction following is rare.",
+      "viText": "Mức độ hướng dẫn sau đây là rất hiếm.",
+      "start": 164.02,
+      "duration": 2.76
+    },
+    {
+      "text": "It also has a feature called skills.",
+      "viText": "Nó cũng có một tính năng gọi là kỹ năng.",
+      "start": 166.78,
+      "duration": 2.26
+    },
+    {
+      "text": "You can build a set of custom instructions for a specific type of work,",
+      "viText": "Bạn có thể xây dựng một bộ hướng dẫn tùy chỉnh cho một loại công việc cụ thể,",
+      "start": 169.04,
+      "duration": 4.46
+    },
+    {
+      "text": "a writing style, a review checklist, a script format, and Claude will follow that",
+      "viText": "phong cách viết, danh sách kiểm tra đánh giá, định dạng kịch bản và Claude sẽ tuân theo",
+      "start": 173.5,
+      "duration": 5.08
+    },
+    {
+      "text": "skill every time you use it.",
+      "viText": "kỹ năng mỗi khi bạn sử dụng nó.",
+      "start": 178.58,
+      "duration": 2
+    },
+    {
+      "text": "Instead of pasting the same long prompt over and over, you teach Claude once",
+      "viText": "Thay vì dán đi dán lại cùng một lời nhắc dài dòng, bạn dạy Claude một lần",
+      "start": 180.58,
+      "duration": 4.77
+    },
+    {
+      "text": "and reuse it.",
+      "viText": "và tái sử dụng nó.",
+      "start": 185.35,
+      "duration": 2
+    },
+    {
+      "text": "For anyone who does the same kind of work repeatedly, this saves a lot",
+      "viText": "Đối với những người làm cùng một loại công việc nhiều lần, điều này tiết kiệm rất nhiều",
+      "start": 187.35,
+      "duration": 4.39
+    },
+    {
+      "text": "of time and keeps the output consistent.",
+      "viText": "về thời gian và giữ cho đầu ra nhất quán.",
+      "start": 191.74,
+      "duration": 2.51
+    },
+    {
+      "text": "What really sets Claude apart is how it handles long, complex work.",
+      "viText": "Điều thực sự khiến Claude trở nên khác biệt là cách họ xử lý công việc dài và phức tạp.",
+      "start": 194.25,
+      "duration": 4.2
+    },
+    {
+      "text": "Not a single prompt, a project.",
+      "viText": "Không một lời nhắc nhở nào, một dự án.",
+      "start": 198.45,
+      "duration": 2
+    },
+    {
+      "text": "Read 200 files, make a plan, edit 25 of them, run tests, find bugs,",
+      "viText": "Đọc 200 tệp, lập kế hoạch, chỉnh sửa 25 tệp trong số đó, chạy thử nghiệm, tìm lỗi,",
+      "start": 200.45,
+      "duration": 4.2
+    },
+    {
+      "text": "fix them, and still remember the original goal.",
+      "viText": "khắc phục chúng và vẫn nhớ mục tiêu ban đầu.",
+      "start": 204.65,
+      "duration": 2.95
+    },
+    {
+      "text": "Claude Code has become one of Anthropic's standout products for exactly this kind of",
+      "viText": "Claude Code đã trở thành một trong những sản phẩm nổi bật của Anthropic dành cho loại",
+      "start": 207.6,
+      "duration": 5.27
+    },
+    {
+      "text": "repository level coding.",
+      "viText": "này mã hóa cấp độ kho lưu trữ.",
+      "start": 212.87,
+      "duration": 2
+    },
+    {
+      "text": "Where it falls short is breadth.",
+      "viText": "Nơi nó thiếu là chiều rộng.",
+      "start": 214.87,
+      "duration": 2.01
+    },
+    {
+      "text": "Claude's ecosystem is narrower than chat GBTs, but the things it does, writing that",
+      "viText": "Hệ sinh thái của Claude hẹp hơn so với GBT trò chuyện, nhưng những gì nó làm được, viết rằng",
+      "start": 216.88,
+      "duration": 5.21
+    },
+    {
+      "text": "sounds human, skills that keep your workflow locked in, and coding that spans entire",
+      "viText": "nghe có vẻ giống con người, các kỹ năng giúp giữ chặt quy trình làm việc của bạn và mã hóa trải rộng toàn bộ",
+      "start": 222.09,
+      "duration": 5.27
+    },
+    {
+      "text": "repositories, it does them at a level that is hard to match.",
+      "viText": "kho lưu trữ, nó thực hiện chúng ở mức độ khó có thể so sánh được.",
+      "start": 227.36,
+      "duration": 3.76
+    },
+    {
+      "text": "Gemini Gemini is Google's AI.",
+      "viText": "Gemini Gemini là AI của Google.",
+      "start": 231.12,
+      "duration": 2
+    },
+    {
+      "text": "And to understand its advantage, stop thinking about the model.",
+      "viText": "Và để hiểu được lợi thế của nó, hãy ngừng suy nghĩ về mô hình.",
+      "start": 233.12,
+      "duration": 3.95
+    },
+    {
+      "text": "Think about what sits behind it.",
+      "viText": "Hãy suy nghĩ về những gì đằng sau nó.",
+      "start": 237.07,
+      "duration": 2.01
+    },
+    {
+      "text": "Gmail, Drive, Docs, Sheets, Slides, Calendar, Search, YouTube, Android.",
+      "viText": "Gmail, Drive, Tài liệu, Trang tính, Trang trình bày, Lịch, Tìm kiếm, YouTube, Android.",
+      "start": 239.08,
+      "duration": 4.46
+    },
+    {
+      "text": "Gemini is integrated deeper and deeper into all of them.",
+      "viText": "Song Tử ngày càng được hòa nhập sâu hơn vào tất cả chúng.",
+      "start": 243.54,
+      "duration": 3.51
+    },
+    {
+      "text": "It does not just answer questions about your work.",
+      "viText": "Nó không chỉ trả lời các câu hỏi về công việc của bạn.",
+      "start": 247.05,
+      "duration": 3.14
+    },
+    {
+      "text": "It sits inside the tools where your work already lives.",
+      "viText": "Nó nằm bên trong các công cụ nơi công việc của bạn đã tồn tại.",
+      "start": 250.19,
+      "duration": 3.45
+    },
+    {
+      "text": "Another AI can connect to Gmail through an API.",
+      "viText": "Một AI khác có thể kết nối với Gmail thông qua API.",
+      "start": 253.64,
+      "duration": 2.95
+    },
+    {
+      "text": "Gemini lives inside Gmail.",
+      "viText": "Song Tử sống bên trong Gmail.",
+      "start": 256.59,
+      "duration": 2
+    },
+    {
+      "text": "Another AI can search the web.",
+      "viText": "Một AI khác có thể tìm kiếm trên web.",
+      "start": 258.59,
+      "duration": 2
+    },
+    {
+      "text": "Google owns the search engine.",
+      "viText": "Google sở hữu công cụ tìm kiếm.",
+      "start": 260.59,
+      "duration": 2
+    },
+    {
+      "text": "Another AI can read YouTube.",
+      "viText": "Một AI khác có thể đọc YouTube.",
+      "start": 262.59,
+      "duration": 2
+    },
+    {
+      "text": "Google owns YouTube.",
+      "viText": "Google sở hữu YouTube.",
+      "start": 264.59,
+      "duration": 2
+    },
+    {
+      "text": "Gemini's deep research can pull context from your personal documents, email, and the open",
+      "viText": "Nghiên cứu sâu của Gemini có thể lấy bối cảnh từ tài liệu cá nhân, email của bạn và",
+      "start": 266.59,
+      "duration": 5.58
+    },
+    {
+      "text": "web at the same time.",
+      "viText": "mở web cùng một lúc.",
+      "start": 272.17,
+      "duration": 2
+    },
+    {
+      "text": "On mobile, Gemini has a massive advantage through Android.",
+      "viText": "Trên thiết bị di động, Gemini có lợi thế lớn nhờ Android.",
+      "start": 274.17,
+      "duration": 3.64
+    },
+    {
+      "text": "It could become the default AI layer on billions of phones.",
+      "viText": "Nó có thể trở thành lớp AI mặc định trên hàng tỷ điện thoại.",
+      "start": 277.81,
+      "duration": 3.7
+    },
+    {
+      "text": "But that advantage has a clear boundary.",
+      "viText": "Nhưng lợi thế đó có ranh giới rõ ràng.",
+      "start": 281.51,
+      "duration": 2.51
+    },
+    {
+      "text": "If your company runs on Microsoft 365 or you use Apple everything, the ecosystem",
+      "viText": "Nếu công ty của bạn chạy trên Microsoft 365 hoặc bạn sử dụng mọi thứ của Apple thì hệ sinh thái",
+      "start": 284.02,
+      "duration": 5.02
+    },
+    {
+      "text": "benefit shrinks fast.",
+      "viText": "lợi ích giảm đi nhanh chóng.",
+      "start": 289.04,
+      "duration": 2
+    },
+    {
+      "text": "Outside Google apps, Gemini is solid but less differentiated.",
+      "viText": "Ngoài các ứng dụng của Google, Gemini rất vững chắc nhưng ít khác biệt hơn.",
+      "start": 291.04,
+      "duration": 3.83
+    },
+    {
+      "text": "So, the real question is simple.",
+      "viText": "Vì vậy, câu hỏi thực sự rất đơn giản.",
+      "start": 294.87,
+      "duration": 2.01
+    },
+    {
+      "text": "How deep are you in Google?",
+      "viText": "Bạn hiểu sâu về Google đến mức nào?",
+      "start": 296.88,
+      "duration": 2
+    },
+    {
+      "text": "The deeper you are, the more Gemini makes sense.",
+      "viText": "Bạn càng sâu sắc thì Song Tử càng có ý nghĩa.",
+      "start": 298.88,
+      "duration": 3.01
+    },
+    {
+      "text": "Grock Grock is made by XAI, and it has access to something no other",
+      "viText": "Grock Grock được tạo ra bởi XAI và nó có quyền truy cập vào thứ gì đó không có gì khác",
+      "start": 301.89,
+      "duration": 4.2
+    },
+    {
+      "text": "major AI does.",
+      "viText": "AI chính làm được.",
+      "start": 306.09,
+      "duration": 2
+    },
+    {
+      "text": "The full fire hose of X, formerly known as Twitter.",
+      "viText": "Vòi cứu hỏa đầy đủ của X, trước đây gọi là Twitter.",
+      "start": 308.09,
+      "duration": 3.2
+    },
+    {
+      "text": "Most AIs rely on training data that is weeks or months old.",
+      "viText": "Hầu hết các AI đều dựa vào dữ liệu đào tạo được lưu trữ hàng tuần hoặc hàng tháng.",
+      "start": 311.29,
+      "duration": 3.7
+    },
+    {
+      "text": "Some can search the web, but search engines take time to index new content.",
+      "viText": "Một số có thể tìm kiếm trên web, nhưng các công cụ tìm kiếm cần có thời gian để lập chỉ mục nội dung mới.",
+      "start": 314.99,
+      "duration": 4.71
+    },
+    {
+      "text": "Grock searches X directly.",
+      "viText": "Grock tìm kiếm X trực tiếp.",
+      "start": 319.7,
+      "duration": 2
+    },
+    {
+      "text": "It finds posts that went viral 5 minutes ago, tracks reactions to breaking events,",
+      "viText": "Nó tìm thấy các bài đăng đã lan truyền 5 phút trước, theo dõi phản ứng với các sự kiện nổi bật,",
+      "start": 321.7,
+      "duration": 5.15
+    },
+    {
+      "text": "and spots trends before they show up on Google.",
+      "viText": "và phát hiện xu hướng trước khi chúng xuất hiện trên Google.",
+      "start": 326.85,
+      "duration": 2.95
+    },
+    {
+      "text": "Imagine a CEO posts something controversial 90 seconds ago.",
+      "viText": "Hãy tưởng tượng một CEO đăng nội dung nào đó gây tranh cãi cách đây 90 giây.",
+      "start": 329.8,
+      "duration": 3.7
+    },
+    {
+      "text": "A regular AI has no idea.",
+      "viText": "Một AI thông thường không có ý tưởng gì.",
+      "start": 333.5,
+      "duration": 2
+    },
+    {
+      "text": "Grock can find that post and show you the reactions in real time.",
+      "viText": "Grock có thể tìm thấy bài đăng đó và cho bạn thấy phản ứng trong thời gian thực.",
+      "start": 335.5,
+      "duration": 4.08
+    },
+    {
+      "text": "That makes it powerful for breaking news, crypto and stock sentiment, politics, tech launches,",
+      "viText": "Điều đó làm cho nó trở nên mạnh mẽ đối với tin tức nóng hổi, ​​​​tình cảm về tiền điện tử và chứng khoán, chính trị, ra mắt công nghệ,",
+      "start": 339.58,
+      "duration": 5.9
+    },
+    {
+      "text": "and internet culture.",
+      "viText": "và văn hóa internet.",
+      "start": 345.48,
+      "duration": 2
+    },
+    {
+      "text": "Grock has also been improving in coding and agentic tasks.",
+      "viText": "Grock cũng đã được cải thiện về các tác vụ mã hóa và tác nhân.",
+      "start": 347.48,
+      "duration": 3.64
+    },
+    {
+      "text": "Some versions support context windows up to 2 million tokens, so they can process",
+      "viText": "Một số phiên bản hỗ trợ cửa sổ ngữ cảnh lên tới 2 triệu token nên có thể xử lý",
+      "start": 351.12,
+      "duration": 5.08
+    },
+    {
+      "text": "a huge amount of information at once.",
+      "viText": "một lượng lớn thông tin cùng một lúc.",
+      "start": 356.2,
+      "duration": 2.32
+    },
+    {
+      "text": "Of course, X is not the entire internet.",
+      "viText": "Tất nhiên, X không phải là toàn bộ internet.",
+      "start": 358.52,
+      "duration": 2.51
+    },
+    {
+      "text": "For deep research from academic papers or technical documentation, that advantage does not help",
+      "viText": "Đối với nghiên cứu sâu từ các bài báo học thuật hoặc tài liệu kỹ thuật, lợi thế đó không giúp ích gì",
+      "start": 361.03,
+      "duration": 5.96
+    },
+    {
+      "text": "much.",
+      "viText": "much.",
+      "start": 366.99,
+      "duration": 2
+    },
+    {
+      "text": "Grock is strongest when the information you need is fresh, fast, and social.",
+      "viText": "Grock mạnh mẽ nhất khi thông tin bạn cần mới, nhanh và mang tính xã hội.",
+      "start": 368.99,
+      "duration": 4.77
+    },
+    {
+      "text": "Deepseek.",
+      "viText": "Tìm kiếm sâu.",
+      "start": 373.76,
+      "duration": 2
+    },
+    {
+      "text": "Here is a question most AI comparisons skip.",
+      "viText": "Đây là một câu hỏi mà hầu hết các so sánh AI đều bỏ qua.",
+      "start": 375.76,
+      "duration": 2.76
+    },
+    {
+      "text": "How much should intelligence cost?",
+      "viText": "Trí thông minh nên có giá bao nhiêu?",
+      "start": 378.52,
+      "duration": 2.13
+    },
+    {
+      "text": "A model that is 5% better but costs 10 times more is not always",
+      "viText": "Một mô hình tốt hơn 5% nhưng đắt hơn 10 lần không phải lúc nào cũng",
+      "start": 380.65,
+      "duration": 3.95
+    },
+    {
+      "text": "the better model especially when you need to process millions of prompts per day.",
+      "viText": "mô hình tốt hơn, đặc biệt khi bạn cần xử lý hàng triệu lời nhắc mỗi ngày.",
+      "start": 384.6,
+      "duration": 5.08
+    },
+    {
+      "text": "That is where Deepseek changed the conversation.",
+      "viText": "Đó là nơi Deepseek đã thay đổi cuộc trò chuyện.",
+      "start": 389.68,
+      "duration": 3.01
+    },
+    {
+      "text": "It proved that strong reasoning and coding do not have to come with a",
+      "viText": "Nó chứng minh rằng lý luận và mã hóa mạnh mẽ không nhất thiết phải đi kèm với",
+      "start": 392.69,
+      "duration": 4.33
+    },
+    {
+      "text": "premium price tag.",
+      "viText": "thẻ giá cao cấp.",
+      "start": 397.02,
+      "duration": 2
+    },
+    {
+      "text": "Deepseek performs well in math logic and competitive programming.",
+      "viText": "Deepseek hoạt động tốt về logic toán học và lập trình cạnh tranh.",
+      "start": 399.02,
+      "duration": 4.08
+    },
+    {
+      "text": "Deepseek v3.",
+      "viText": "Tìm kiếm sâu v3.",
+      "start": 403.1,
+      "duration": 2
+    },
+    {
+      "text": "2 brought reasoning directly into tool use and was trained for agent environments.",
+      "viText": "2 đưa lý luận trực tiếp vào sử dụng công cụ và được đào tạo cho môi trường tác tử.",
+      "start": 405.1,
+      "duration": 5.15
+    },
+    {
+      "text": "And because many DeepSeek models are openweight, developers can download them, run them on",
+      "viText": "Và vì nhiều mô hình DeepSeek có dung lượng mở nên các nhà phát triển có thể tải xuống, chạy chúng trên",
+      "start": 410.25,
+      "duration": 5.65
+    },
+    {
+      "text": "their own hardware, and deploy them without depending on someone else's API.",
+      "viText": "phần cứng của riêng họ và triển khai chúng mà không phụ thuộc vào API của người khác.",
+      "start": 415.9,
+      "duration": 4.77
+    },
+    {
+      "text": "Now, the consumer experience is less polished than chat GPT or Claude.",
+      "viText": "Giờ đây, trải nghiệm của người tiêu dùng kém bóng bẩy hơn so với trò chuyện GPT hoặc Claude.",
+      "start": 420.67,
+      "duration": 4.39
+    },
+    {
+      "text": "The chat interface and ecosystem are thinner.",
+      "viText": "Giao diện trò chuyện và hệ sinh thái mỏng hơn.",
+      "start": 425.06,
+      "duration": 2.82
+    },
+    {
+      "text": "It is also a Chinese company, which raises data handling questions for some users.",
+      "viText": "Đây cũng là một công ty Trung Quốc, điều này đặt ra câu hỏi về việc xử lý dữ liệu cho một số người dùng.",
+      "start": 427.88,
+      "duration": 5.15
+    },
+    {
+      "text": "But for developers and businesses running high volume AI workloads, DeepSeek forced every other",
+      "viText": "Nhưng đối với các nhà phát triển và doanh nghiệp chạy khối lượng công việc AI khối lượng lớn, DeepSeek buộc phải làm như vậy",
+      "start": 433.03,
+      "duration": 5.96
+    },
+    {
+      "text": "lab to answer an uncomfortable question.",
+      "viText": "phòng thí nghiệm để trả lời một câu hỏi khó chịu.",
+      "start": 438.99,
+      "duration": 2.51
+    },
+    {
+      "text": "Why does your model cost this much?",
+      "viText": "Tại sao mô hình của bạn lại có giá cao như vậy?",
+      "start": 441.5,
+      "duration": 2.2
+    },
+    {
+      "text": "Perplexity.",
+      "viText": "Sự bối rối.",
+      "start": 443.7,
+      "duration": 2
+    },
+    {
+      "text": "Every other AI on this list started as a chatbot and added search later.",
+      "viText": "Mọi AI khác trong danh sách này đều bắt đầu dưới dạng chatbot và thêm tính năng tìm kiếm sau đó.",
+      "start": 445.7,
+      "duration": 4.52
+    },
+    {
+      "text": "Perplexity did the opposite.",
+      "viText": "Sự bối rối đã làm điều ngược lại.",
+      "start": 450.22,
+      "duration": 2
+    },
+    {
+      "text": "It started from search and built everything around it.",
+      "viText": "Nó bắt đầu từ việc tìm kiếm và xây dựng mọi thứ xung quanh nó.",
+      "start": 452.22,
+      "duration": 3.39
+    },
+    {
+      "text": "That one difference changes the entire experience.",
+      "viText": "Sự khác biệt đó thay đổi toàn bộ trải nghiệm.",
+      "start": 455.61,
+      "duration": 3.14
+    },
+    {
+      "text": "Every answer comes with sources by default.",
+      "viText": "Mọi câu trả lời đều có nguồn theo mặc định.",
+      "start": 458.75,
+      "duration": 2.7
+    },
+    {
+      "text": "You can immediately check where the information came from.",
+      "viText": "Bạn có thể ngay lập tức kiểm tra thông tin đến từ đâu.",
+      "start": 461.45,
+      "duration": 3.64
+    },
+    {
+      "text": "That makes perplexity especially strong for factual questions, product comparisons, market research, and anything",
+      "viText": "Điều đó làm cho sự bối rối trở nên đặc biệt nghiêm trọng đối với các câu hỏi thực tế, so sánh sản phẩm, nghiên cứu thị trường và bất kỳ điều gì",
+      "start": 465.09,
+      "duration": 7.09
+    },
+    {
+      "text": "where you need to verify what the AI is telling you.",
+      "viText": "nơi bạn cần xác minh những gì AI đang nói với bạn.",
+      "start": 472.18,
+      "duration": 3.26
+    },
+    {
+      "text": "The old research workflow was search Google, open 10 tabs, read through them, compare,",
+      "viText": "Quy trình nghiên cứu cũ là tìm kiếm trên Google, mở 10 tab, đọc qua chúng, so sánh,",
+      "start": 475.44,
+      "duration": 5.4
+    },
+    {
+      "text": "and summarize.",
+      "viText": "và tóm tắt.",
+      "start": 480.84,
+      "duration": 2
+    },
+    {
+      "text": "Perplexity compresses that into one step.",
+      "viText": "Sự bối rối nén điều đó thành một bước.",
+      "start": 482.84,
+      "duration": 2.57
+    },
+    {
+      "text": "Ask a question with a researched answer with citations, and keep exploring with follow-ups.",
+      "viText": "Đặt câu hỏi với câu trả lời đã được nghiên cứu kèm theo trích dẫn và tiếp tục khám phá bằng các nội dung tiếp theo.",
+      "start": 485.41,
+      "duration": 5.71
+    },
+    {
+      "text": "Its deep research mode can find many sources, cross- reference them, analyze files, and",
+      "viText": "Chế độ nghiên cứu sâu của nó có thể tìm thấy nhiều nguồn, tham khảo chéo, phân tích tệp và",
+      "start": 491.12,
+      "duration": 5.46
+    },
+    {
+      "text": "run calculations in a code sandbox.",
+      "viText": "chạy các phép tính trong hộp cát mã.",
+      "start": 496.58,
+      "duration": 2.2
+    },
+    {
+      "text": "It is not built for long creative writing, complex coding, or multi-step agent work.",
+      "viText": "Nó không được xây dựng để viết sáng tạo dài dòng, mã hóa phức tạp hoặc công việc tác nhân nhiều bước.",
+      "start": 498.78,
+      "duration": 5.27
+    },
+    {
+      "text": "Perplexity does one thing, but for that one thing, finding reliable sourced answers fast,",
+      "viText": "Sự bối rối làm được một việc, nhưng vì một điều đó, việc tìm kiếm câu trả lời có nguồn gốc đáng tin cậy một cách nhanh chóng,",
+      "start": 504.05,
+      "duration": 5.58
+    },
+    {
+      "text": "it is very hard to beat.",
+      "viText": "nó rất khó để đánh bại.",
+      "start": 509.63,
+      "duration": 2
+    },
+    {
+      "text": "Microsoft Copilot, ask any regular AI this question.",
+      "viText": "Microsoft Copilot, hãy hỏi bất kỳ AI thông thường nào câu hỏi này.",
+      "start": 511.63,
+      "duration": 3.26
+    },
+    {
+      "text": "Summarize the Johnson project and tell me what I need to do this week.",
+      "viText": "Tóm tắt dự án Johnson và cho tôi biết tôi cần làm gì trong tuần này.",
+      "start": 514.89,
+      "duration": 4.39
+    },
+    {
+      "text": "It has no idea what the Johnson project is.",
+      "viText": "Nó không biết dự án Johnson là gì.",
+      "start": 519.28,
+      "duration": 2.7
+    },
+    {
+      "text": "But if the emails, meetings, spreadsheets, and teams discussions for that project live in",
+      "viText": "Nhưng nếu email, cuộc họp, bảng tính và thảo luận nhóm cho dự án đó tồn tại trong",
+      "start": 521.98,
+      "duration": 5.58
+    },
+    {
+      "text": "Microsoft 365, Copilot can pull context from those sources directly.",
+      "viText": "Microsoft 365, Copilot có thể lấy ngữ cảnh trực tiếp từ những nguồn đó.",
+      "start": 527.56,
+      "duration": 4.27
+    },
+    {
+      "text": "That is its advantage.",
+      "viText": "Đó là lợi thế của nó.",
+      "start": 531.83,
+      "duration": 2
+    },
+    {
+      "text": "Not just AI inside Office apps.",
+      "viText": "Không chỉ AI bên trong các ứng dụng Office.",
+      "start": 533.83,
+      "duration": 2
+    },
+    {
+      "text": "AI that understands the context of how your company actually works.",
+      "viText": "AI hiểu được bối cảnh hoạt động thực sự của công ty bạn.",
+      "start": 535.83,
+      "duration": 4.2
+    },
+    {
+      "text": "Microsoft owns Outlook, Teams, Word, Excel, PowerPoint, SharePoint, One Drive, GitHub, and Windows.",
+      "viText": "Microsoft sở hữu Outlook, Teams, Word, Excel, PowerPoint, SharePoint, One Drive, GitHub và Windows.",
+      "start": 540.03,
+      "duration": 6.21
+    },
+    {
+      "text": "Copilot sits inside all of them.",
+      "viText": "Phi công phụ ngồi bên trong tất cả chúng.",
+      "start": 546.24,
+      "duration": 2.01
+    },
+    {
+      "text": "Microsoft calls this intelligence layer work IQ.",
+      "viText": "Microsoft gọi lớp thông minh này là IQ.",
+      "start": 548.25,
+      "duration": 3.01
+    },
+    {
+      "text": "It uses context from your email, calendar, meetings, chats, files, and collaboration patterns to",
+      "viText": "Nó sử dụng ngữ cảnh từ email, lịch, cuộc họp, cuộc trò chuyện, tệp và mẫu cộng tác của bạn để",
+      "start": 551.26,
+      "duration": 6.02
+    },
+    {
+      "text": "understand your work environment.",
+      "viText": "hiểu môi trường làm việc của bạn.",
+      "start": 557.28,
+      "duration": 2.07
+    },
+    {
+      "text": "Copilot Co-work can handle longer multi-step tasks instead of just answering single prompts.",
+      "viText": "Copilot Co-work có thể xử lý các tác vụ gồm nhiều bước dài hơn thay vì chỉ trả lời các lời nhắc đơn lẻ.",
+      "start": 559.35,
+      "duration": 5.77
+    },
+    {
+      "text": "And the Excel integration alone is a big deal because so much business work",
+      "viText": "Và chỉ riêng việc tích hợp Excel đã là một vấn đề lớn vì có rất nhiều công việc kinh doanh",
+      "start": 565.12,
+      "duration": 4.71
+    },
+    {
+      "text": "still runs on spreadsheets.",
+      "viText": "vẫn chạy trên bảng tính.",
+      "start": 569.83,
+      "duration": 2
+    },
+    {
+      "text": "The catch?",
+      "viText": "Việc bắt?",
+      "start": 571.83,
+      "duration": 2
+    },
+    {
+      "text": "C-Pilot's advantage mostly exists inside the Microsoft ecosystem.",
+      "viText": "Lợi thế của C-Pilot chủ yếu tồn tại bên trong hệ sinh thái Microsoft.",
+      "start": 573.83,
+      "duration": 4.08
+    },
+    {
+      "text": "If your company uses Google Workspace, that enterprise context shrinks significantly.",
+      "viText": "Nếu công ty của bạn sử dụng Google Workspace, bối cảnh doanh nghiệp đó sẽ bị thu hẹp đáng kể.",
+      "start": 577.91,
+      "duration": 5.33
+    },
+    {
+      "text": "It also requires organizational buyin, not just a personal subscription.",
+      "viText": "Nó cũng yêu cầu sự tham gia của tổ chức chứ không chỉ là đăng ký cá nhân.",
+      "start": 583.24,
+      "duration": 4.52
+    },
+    {
+      "text": "Meta AI.",
+      "viText": "Meta AI.",
+      "start": 587.76,
+      "duration": 2
+    },
+    {
+      "text": "Most AI labs are trying to get people to download a new app.",
+      "viText": "Hầu hết các phòng thí nghiệm AI đang cố gắng thu hút mọi người tải xuống một ứng dụng mới.",
+      "start": 589.76,
+      "duration": 3.76
+    },
+    {
+      "text": "Meta skipped that step entirely.",
+      "viText": "Meta đã bỏ qua bước đó hoàn toàn.",
+      "start": 593.52,
+      "duration": 2.01
+    },
+    {
+      "text": "WhatsApp, Instagram, Facebook, Messenger, that is billions of daily active users.",
+      "viText": "WhatsApp, Instagram, Facebook, Messenger, tức là có hàng tỷ người dùng hoạt động hàng ngày.",
+      "start": 595.53,
+      "duration": 5.08
+    },
+    {
+      "text": "Meta AI is already inside those apps.",
+      "viText": "Meta AI đã có sẵn trong các ứng dụng đó.",
+      "start": 600.61,
+      "duration": 2.32
+    },
+    {
+      "text": "No new habit, no new download.",
+      "viText": "Không có thói quen mới, không có tải mới.",
+      "start": 602.93,
+      "duration": 2
+    },
+    {
+      "text": "The AI just shows up where people already spend their time.",
+      "viText": "AI chỉ xuất hiện ở nơi mọi người đã dành thời gian.",
+      "start": 604.93,
+      "duration": 3.7
+    },
+    {
+      "text": "That distribution advantage is something no other AI company can easily copy.",
+      "viText": "Lợi thế phân phối đó là điều mà không công ty AI nào khác có thể dễ dàng sao chép.",
+      "start": 608.63,
+      "duration": 4.83
+    },
+    {
+      "text": "Meta is also pushing into AI glasses through its Ray-B band partnership.",
+      "viText": "Meta cũng đang đẩy mạnh lĩnh vực kính AI thông qua quan hệ đối tác với dải Ray-B.",
+      "start": 613.46,
+      "duration": 4.52
+    },
+    {
+      "text": "That opens a different kind of interface where AI sees the world alongside you",
+      "viText": "Điều đó mở ra một loại giao diện khác, nơi AI nhìn thế giới cùng với bạn",
+      "start": 617.98,
+      "duration": 4.89
+    },
+    {
+      "text": "instead of living on a phone screen.",
+      "viText": "thay vì sống trên màn hình điện thoại.",
+      "start": 622.87,
+      "duration": 2.26
+    },
+    {
+      "text": "On the developer side, Meta's Llama models are openweight and used in thousands of",
+      "viText": "Về phía nhà phát triển, các mô hình Llama của Meta là dạng mở và được sử dụng trong hàng nghìn",
+      "start": 625.13,
+      "duration": 5.15
+    },
+    {
+      "text": "products outside Meta.",
+      "viText": "sản phẩm bên ngoài Meta.",
+      "start": 630.28,
+      "duration": 2
+    },
+    {
+      "text": "For serious professional work, deep coding, long- form research, complex analysis, other tools are",
+      "viText": "Đối với công việc chuyên môn nghiêm túc, mã hóa sâu, nghiên cứu dạng dài, phân tích phức tạp, các công cụ khác là",
+      "start": 632.28,
+      "duration": 6.15
+    },
+    {
+      "text": "stronger.",
+      "viText": "mạnh mẽ hơn.",
+      "start": 638.43,
+      "duration": 2
+    },
+    {
+      "text": "Meta AI is designed more for casual everyday interactions.",
+      "viText": "Meta AI được thiết kế nhiều hơn cho các tương tác thông thường hàng ngày.",
+      "start": 640.43,
+      "duration": 3.64
+    },
+    {
+      "text": "But here is the thing most people overlook.",
+      "viText": "Nhưng đây là điều mà hầu hết mọi người đều bỏ qua.",
+      "start": 644.07,
+      "duration": 2.7
+    },
+    {
+      "text": "The hardest part of building a new AI product is often not the model.",
+      "viText": "Phần khó nhất trong việc xây dựng một sản phẩm AI mới thường không phải là mô hình.",
+      "start": 646.77,
+      "duration": 4.33
+    },
+    {
+      "text": "It is getting a billion people to use it.",
+      "viText": "Nó đang thu hút được một tỷ người sử dụng nó.",
+      "start": 651.1,
+      "duration": 2.57
+    },
+    {
+      "text": "Meta already has the billion people.",
+      "viText": "Meta đã có hàng tỷ người rồi.",
+      "start": 653.67,
+      "duration": 2.26
+    },
+    {
+      "text": "Quen Quen is built by Alibaba and it is one of the most underrated",
+      "viText": "Quen Quen được xây dựng bởi Alibaba và nó là một trong những thứ bị đánh giá thấp nhất",
+      "start": 655.93,
+      "duration": 4.14
+    },
+    {
+      "text": "AI ecosystems in the world right now.",
+      "viText": "Hệ sinh thái AI trên thế giới hiện nay.",
+      "start": 660.07,
+      "duration": 2.32
+    },
+    {
+      "text": "It is not just one model.",
+      "viText": "Nó không chỉ là một mô hình.",
+      "start": 662.39,
+      "duration": 2
+    },
+    {
+      "text": "It is an entire family.",
+      "viText": "Đó là cả một gia đình.",
+      "start": 664.39,
+      "duration": 2
+    },
+    {
+      "text": "Quen coder for programming, Quenv for vision, Quen Omni for multimodal models of different",
+      "viText": "Quen coding dành cho lập trình, Quenv dành cho tầm nhìn, Quen Omni dành cho các mô hình đa phương thức khác nhau",
+      "start": 666.39,
+      "duration": 5.65
+    },
+    {
+      "text": "sizes.",
+      "viText": "kích thước.",
+      "start": 672.04,
+      "duration": 2
+    },
+    {
+      "text": "So developers can pick a small one for edge devices or a large one",
+      "viText": "Vì vậy, các nhà phát triển có thể chọn một cái nhỏ cho các thiết bị biên hoặc một cái lớn",
+      "start": 674.04,
+      "duration": 4.14
+    },
+    {
+      "text": "for heavy reasoning.",
+      "viText": "vì lý luận nặng nề.",
+      "start": 678.18,
+      "duration": 2
+    },
+    {
+      "text": "And Quen 3 supports 119 languages and dialects, making it one of the strongest",
+      "viText": "Và Quen 3 hỗ trợ 119 ngôn ngữ và phương ngữ, khiến nó trở thành một trong những ngôn ngữ",
+      "start": 680.18,
+      "duration": 4.89
+    },
+    {
+      "text": "multilingual AI systems available.",
+      "viText": "mạnh nhất hệ thống AI đa ngôn ngữ có sẵn.",
+      "start": 685.07,
+      "duration": 2.13
+    },
+    {
+      "text": "Quen 3 also supports hybrid reasoning.",
+      "viText": "Quen 3 cũng hỗ trợ lý luận lai.",
+      "start": 687.2,
+      "duration": 2.38
+    },
+    {
+      "text": "It can switch between a thinking mode for complex problems and a fast mode",
+      "viText": "Nó có thể chuyển đổi giữa chế độ tư duy cho các vấn đề phức tạp và chế độ nhanh",
+      "start": 689.58,
+      "duration": 4.64
+    },
+    {
+      "text": "for simple ones.",
+      "viText": "đối với những cái đơn giản.",
+      "start": 694.22,
+      "duration": 2
+    },
+    {
+      "text": "This lets developers balance speed and intelligence based on what they need.",
+      "viText": "Điều này cho phép các nhà phát triển cân bằng tốc độ và trí thông minh dựa trên những gì họ cần.",
+      "start": 696.22,
+      "duration": 4.77
+    },
+    {
+      "text": "Most Western users have probably never tried Quen directly.",
+      "viText": "Hầu hết người dùng phương Tây có lẽ chưa bao giờ trực tiếp dùng thử Quen.",
+      "start": 700.99,
+      "duration": 3.7
+    },
+    {
+      "text": "Its consumer product is less known outside Asia, but in the developer world, especially",
+      "viText": "Sản phẩm tiêu dùng của nó ít được biết đến bên ngoài châu Á, nhưng trong thế giới nhà phát triển, đặc biệt là",
+      "start": 704.69,
+      "duration": 5.46
+    },
+    {
+      "text": "for teams building multilingual products or serving Asian markets, Quen is one of the",
+      "viText": "đối với các nhóm xây dựng sản phẩm đa ngôn ngữ hoặc phục vụ thị trường châu Á, Quen là một trong những",
+      "start": 710.15,
+      "duration": 5.33
+    },
+    {
+      "text": "most flexible open model toolkits available.",
+      "viText": "bộ công cụ mô hình mở linh hoạt nhất hiện có.",
+      "start": 715.48,
+      "duration": 2.76
+    },
+    {
+      "text": "The models are openweight, so you can run them on your own infrastructure and",
+      "viText": "Các mô hình này đều có dung lượng mở nên bạn có thể chạy chúng trên cơ sở hạ tầng của riêng mình và",
+      "start": 718.24,
+      "duration": 4.83
+    },
+    {
+      "text": "customize them however you want.",
+      "viText": "tùy chỉnh chúng theo cách bạn muốn.",
+      "start": 723.07,
+      "duration": 2.01
+    },
+    {
+      "text": "Mistral vibe.",
+      "viText": "Sự rung cảm của Mistral.",
+      "start": 725.08,
+      "duration": 2
+    },
+    {
+      "text": "For a regular user, the most important question about AI is which one is",
+      "viText": "Đối với người dùng thông thường, câu hỏi quan trọng nhất về AI là cái nào",
+      "start": 727.08,
+      "duration": 4.52
+    },
+    {
+      "text": "smarter?",
+      "viText": "thông minh hơn?",
+      "start": 731.6,
+      "duration": 2
+    },
+    {
+      "text": "But walk into a bank, a government office or a defense contractor and the",
+      "viText": "Nhưng khi bước vào một ngân hàng, một văn phòng chính phủ hay một nhà thầu quốc phòng và",
+      "start": 733.6,
+      "duration": 4.58
+    },
+    {
+      "text": "questions change completely.",
+      "viText": "câu hỏi thay đổi hoàn toàn",
+      "start": 738.18,
+      "duration": 2
+    },
+    {
+      "text": "Where does our data go?",
+      "viText": "Dữ liệu của chúng tôi đi đâu?",
+      "start": 740.18,
+      "duration": 2
+    },
+    {
+      "text": "Who owns the infrastructure?",
+      "viText": "Ai sở hữu cơ sở hạ tầng?",
+      "start": 742.18,
+      "duration": 2
+    },
+    {
+      "text": "Can we run this on our own servers?",
+      "viText": "Chúng tôi có thể chạy cái này trên máy chủ của chúng tôi không?",
+      "start": 744.18,
+      "duration": 2.2
+    },
+    {
+      "text": "That is Mistl's territory.",
+      "viText": "Đó là lãnh thổ của Mistl.",
+      "start": 746.38,
+      "duration": 2
+    },
+    {
+      "text": "Mistl is a French AI company.",
+      "viText": "Mistl là một công ty AI của Pháp.",
+      "start": 748.38,
+      "duration": 2
+    },
+    {
+      "text": "Mistral Vibe, which evolved from Lashot, offers self-hosting, private cloud deployment, full data residency,",
+      "viText": "Mistral Vibe, được phát triển từ Lashot, cung cấp dịch vụ tự lưu trữ, triển khai đám mây riêng, lưu trữ dữ liệu đầy đủ,",
+      "start": 750.38,
+      "duration": 6.78
+    },
+    {
+      "text": "fine-tuning for business use cases, and enterprise search across internal documents.",
+      "viText": "tinh chỉnh cho các trường hợp sử dụng kinh doanh và tìm kiếm doanh nghiệp trên các tài liệu nội bộ.",
+      "start": 757.16,
+      "duration": 5.27
+    },
+    {
+      "text": "It supports over 100 tool connections and has coding agents that work with VS",
+      "viText": "Nó hỗ trợ hơn 100 kết nối công cụ và có các tác nhân mã hóa hoạt động với VS",
+      "start": 762.43,
+      "duration": 4.83
+    },
+    {
+      "text": "Code and Jet Brains.",
+      "viText": "Mã và bộ não phản lực.",
+      "start": 767.26,
+      "duration": 2
+    },
+    {
+      "text": "Mistl is especially relevant to European organizations that want to reduce dependency on American",
+      "viText": "Mistl đặc biệt phù hợp với các tổ chức châu Âu muốn giảm sự phụ thuộc vào",
+      "start": 769.26,
+      "duration": 6.09
+    },
+    {
+      "text": "AI providers and to any business in a regulated industry where data control is",
+      "viText": "của Mỹ Các nhà cung cấp AI và bất kỳ doanh nghiệp nào trong ngành được quản lý nơi kiểm soát dữ liệu",
+      "start": 775.35,
+      "duration": 4.89
+    },
+    {
+      "text": "not optional.",
+      "viText": "không tùy chọn.",
+      "start": 780.24,
+      "duration": 2
+    },
+    {
+      "text": "On pure benchmarks, Mistl's models are generally not at the top compared to the",
+      "viText": "Xét trên các benchmark thuần túy, các mẫu của Mistl nhìn chung không đứng đầu so với",
+      "start": 782.24,
+      "duration": 4.96
+    },
+    {
+      "text": "largest from OpenAI or Google.",
+      "viText": "lớn nhất từ ​​OpenAI hoặc Google.",
+      "start": 787.2,
+      "duration": 2
+    },
+    {
+      "text": "But for organizations where privacy and control matter more than ranking on a leaderboard,",
+      "viText": "Nhưng đối với các tổ chức nơi quyền riêng tư và quyền kiểm soát quan trọng hơn thứ hạng trên bảng xếp hạng,",
+      "start": 789.2,
+      "duration": 5.65
+    },
+    {
+      "text": "that is a trade-off they are happy to make.",
+      "viText": "đó là một sự đánh đổi mà họ rất vui khi thực hiện.",
+      "start": 794.85,
+      "duration": 2.7
+    },
+    {
+      "text": "Sometimes the best AI is not the smartest one.",
+      "viText": "Đôi khi AI tốt nhất không phải là AI thông minh nhất.",
+      "start": 797.55,
+      "duration": 2.89
+    },
+    {
+      "text": "It is the one you are actually allowed to use.",
+      "viText": "Đó là cái bạn thực sự được phép sử dụng.",
+      "start": 800.44,
+      "duration": 2.89
+    },
+    {
+      "text": "So that is every major AI and its hidden advantage.",
+      "viText": "Vì vậy, đó là mọi AI chính và lợi thế tiềm ẩn của nó.",
+      "start": 803.33,
+      "duration": 3.2
+    },
+    {
+      "text": "Chat GPT is the all-rounder.",
+      "viText": "Trò chuyện GPT là công cụ toàn diện.",
+      "start": 806.53,
+      "duration": 2
+    },
+    {
+      "text": "Claude is the long horizon specialist.",
+      "viText": "Claude là chuyên gia về tầm nhìn dài hạn.",
+      "start": 808.53,
+      "duration": 2.38
+    },
+    {
+      "text": "Gemini has Google behind it.",
+      "viText": "Gemini có Google đằng sau nó.",
+      "start": 810.91,
+      "duration": 2
+    },
+    {
+      "text": "Gro sees the internet in real time.",
+      "viText": "Gro nhìn thấy internet trong thời gian thực.",
+      "start": 812.91,
+      "duration": 2.2
+    },
+    {
+      "text": "Deepseek makes strong AI cheaper.",
+      "viText": "Deepseek làm cho AI mạnh trở nên rẻ hơn.",
+      "start": 815.11,
+      "duration": 2.07
+    },
+    {
+      "text": "Perplexity was born for search.",
+      "viText": "Sự bối rối được sinh ra để tìm kiếm.",
+      "start": 817.18,
+      "duration": 2
+    },
+    {
+      "text": "Copilot knows your company.",
+      "viText": "Phi công phụ biết công ty của bạn.",
+      "start": 819.18,
+      "duration": 2
+    },
+    {
+      "text": "Meta AI goes where people already are.",
+      "viText": "Meta AI đi đến nơi mọi người đã ở.",
+      "start": 821.18,
+      "duration": 2.38
+    },
+    {
+      "text": "Quen gives developers an open multilingual toolkit and Mistl gives enterprises control.",
+      "viText": "Quen cung cấp cho các nhà phát triển một bộ công cụ đa ngôn ngữ mở và Mistl cung cấp cho doanh nghiệp quyền kiểm soát.",
+      "start": 823.56,
+      "duration": 5.46
+    },
+    {
+      "text": "The best AI is not the one that wins the most benchmarks.",
+      "viText": "AI tốt nhất không phải là AI giành được nhiều điểm chuẩn nhất.",
+      "start": 829.02,
+      "duration": 3.58
+    },
+    {
+      "text": "It is the one whose advantage matches what you actually need.",
+      "viText": "Đó là người có lợi thế phù hợp với những gì bạn thực sự cần.",
+      "start": 832.6,
+      "duration": 3.83
+    },
+    {
+      "text": "Anyway, I also made some other cool videos too.",
+      "viText": "Dù sao thì tôi cũng đã làm một số video thú vị khác.",
+      "start": 836.43,
+      "duration": 2.95
+    },
+    {
+      "text": "Don't forget to watch them later.",
+      "viText": "Đừng quên xem chúng sau.",
+      "start": 839.38,
+      "duration": 2.07
+    },
+    {
+      "text": "Okay.",
+      "viText": "Okay.",
+      "start": 841.45,
+      "duration": 2
+    }
+  ]
+}

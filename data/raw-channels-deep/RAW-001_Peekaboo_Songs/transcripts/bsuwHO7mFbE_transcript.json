@@ -1,0 +1,108 @@
+{
+  "videoId": "bsuwHO7mFbE",
+  "title": "Five Little Monkeys Jumping at Old MacDonald’s Farm | Catch the Thief!",
+  "titleVi": "Năm Chú Khỉ Nhảy Nhót Tại Nông Trại Bác MacDonald | Bắt Kẻ Trộm!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 16,
+  "fullText": "Time for another glorious day at Old MacDonald's farm! Time to check on the animals. I can't wait to see them. Oh no! Where are my animals? What happened to them? The thief took all the animals into a big truck! Five little monkeys jumped on the bed and saw the thief! Stay quiet guys, we can track them with these tire tracks! Good morning Officer Dog, I need your help! Those tracks will help us track the location of the thief! The police dog sniffs the scent and leads the way! There they are, arrest the bad guys immediately! Don't worry Mr. McDonald, the police will protect your farm! All animals are back safe, yay!",
+  "fullTextVi": "Đã đến lúc cho một ngày vinh quang khác tại trang trại của Old MacDonald! Đã đến lúc kiểm tra các loài động vật. Tôi nóng lòng muốn được nhìn thấy chúng. Ồ không! Động vật của tôi đâu? Chuyện gì đã xảy ra với họ? Tên trộm đã chở tất cả các loài động vật vào một chiếc xe tải lớn! Năm chú khỉ con nhảy lên giường và nhìn thấy tên trộm! Im lặng đi các bạn, chúng ta có thể theo dõi chúng bằng những vết bánh xe này! Chào buổi sáng sĩ quan Dog, tôi cần sự giúp đỡ của bạn! Những dấu vết đó sẽ giúp chúng ta lần ra vị trí của tên trộm! Chó cảnh sát ngửi mùi và dẫn đường! Họ đây rồi, hãy bắt kẻ xấu ngay lập tức! Đừng lo lắng ông McDonald, cảnh sát sẽ bảo vệ trang trại của bạn! Tất cả các loài động vật đã trở lại an toàn, yay!",
+  "segments": [
+    {
+      "text": "Time for another glorious day at Old MacDonald's farm!",
+      "viText": "Đã đến lúc cho một ngày vinh quang khác tại trang trại của Old MacDonald!",
+      "start": 0,
+      "duration": 61.19
+    },
+    {
+      "text": "Time to check on the animals.",
+      "viText": "Đã đến lúc kiểm tra các loài động vật.",
+      "start": 61.19,
+      "duration": 32.86
+    },
+    {
+      "text": "I can't wait to see them.",
+      "viText": "Tôi nóng lòng muốn được nhìn thấy chúng.",
+      "start": 94.05,
+      "duration": 28.33
+    },
+    {
+      "text": "Oh no!",
+      "viText": "Ồ không!",
+      "start": 122.38,
+      "duration": 6.8
+    },
+    {
+      "text": "Where are my animals?",
+      "viText": "Động vật của tôi đâu?",
+      "start": 129.18,
+      "duration": 23.8
+    },
+    {
+      "text": "What happened to them?",
+      "viText": "Chuyện gì đã xảy ra với họ?",
+      "start": 152.98,
+      "duration": 24.93
+    },
+    {
+      "text": "The thief took all the animals into a big truck!",
+      "viText": "Tên trộm đã chở tất cả các loài động vật vào một chiếc xe tải lớn!",
+      "start": 177.91,
+      "duration": 54.39
+    },
+    {
+      "text": "Five little monkeys jumped on the bed and saw the thief!",
+      "viText": "Năm chú khỉ con nhảy lên giường và nhìn thấy tên trộm!",
+      "start": 232.3,
+      "duration": 63.46
+    },
+    {
+      "text": "Stay quiet guys, we can track them with these tire tracks!",
+      "viText": "Im lặng đi các bạn, chúng ta có thể theo dõi chúng bằng những vết bánh xe này!",
+      "start": 295.76,
+      "duration": 65.73
+    },
+    {
+      "text": "Good morning Officer Dog, I need your help!",
+      "viText": "Chào buổi sáng sĩ quan Dog, tôi cần sự giúp đỡ của bạn!",
+      "start": 361.49,
+      "duration": 48.73
+    },
+    {
+      "text": "Those tracks will help us track the location of the thief!",
+      "viText": "Những dấu vết đó sẽ giúp chúng ta lần ra vị trí của tên trộm!",
+      "start": 410.22,
+      "duration": 65.73
+    },
+    {
+      "text": "The police dog sniffs the scent and leads the way!",
+      "viText": "Chó cảnh sát ngửi mùi và dẫn đường!",
+      "start": 475.95,
+      "duration": 56.66
+    },
+    {
+      "text": "There they are, arrest the bad guys immediately!",
+      "viText": "Họ đây rồi, hãy bắt kẻ xấu ngay lập tức!",
+      "start": 532.61,
+      "duration": 54.39
+    },
+    {
+      "text": "Don't worry Mr.",
+      "viText": "Đừng lo lắng ông",
+      "start": 587,
+      "duration": 17
+    },
+    {
+      "text": "McDonald, the police will protect your farm!",
+      "viText": "McDonald, cảnh sát sẽ bảo vệ trang trại của bạn!",
+      "start": 604,
+      "duration": 49.86
+    },
+    {
+      "text": "All animals are back safe, yay!",
+      "viText": "Tất cả các loài động vật đã trở lại an toàn, yay!",
+      "start": 653.86,
+      "duration": 35.13
+    }
+  ]
+}

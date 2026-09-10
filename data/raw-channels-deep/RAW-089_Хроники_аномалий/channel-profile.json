@@ -1,0 +1,51 @@
+{
+  "id": "RAW-089",
+  "channelId": "UCsq59qsJPbIgMbkcCjIKWkQ",
+  "title": "Хроники аномалий",
+  "handle": "@xronikianomaly",
+  "url": "https://www.youtube.com/channel/UCsq59qsJPbIgMbkcCjIKWkQ",
+  "subscribers": 9460,
+  "views": 4932242,
+  "videoCount": 59,
+  "country": null,
+  "avatar": "https://yt3.ggpht.com/XyhR1VGoaVrvcxLqyhETz4iOe0nLhoRbQLqGI7lmw8KahAnrcsvur6dMPRkk3bkVqt2IMbgBOZU=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Knowledge"
+  ],
+  "editorialNiche": "Địa lý / du lịch / đời sống nơi khác",
+  "publishedAt": "2017-08-03T12:28:38Z",
+  "longevityAudit": {
+    "channelAgeDays": 3323,
+    "activeSpanDays": 120,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 8946,
+      "viewsGained": 4826345,
+      "videosPublished": 27
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:31:23Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 56766,
+    "maxOutlierScore": 62.31,
+    "maxVPH": 11.23,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-26",
+    "daysSinceLatest": 14,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (14 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 14 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 4,826,345 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$6,081 – $11,294 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

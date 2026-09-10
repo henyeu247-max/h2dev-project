@@ -1,0 +1,102 @@
+{
+  "videoId": "88xcvKytRLQ",
+  "title": "Wheels on the Bus 🚌 + Baby Shark 🦈 + Old MacDonald 🌸 | Ultimate Kids Medley",
+  "titleVi": "Bánh Xe Buýt Quay Tròn + Cá Mập Con + Bác MacDonald | Liên Khúc Thiếu Nhi Đỉnh Cao",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 15,
+  "fullText": "The wheels on the bus go round and round, round and round, round and round. The wheels on the bus go round and round, all through the town! The wipers on the bus go swish, swish, swish! The horn on the bus goes beep, beep, beep! The babies on the bus go wah, wah, wah! The mommies on the bus go shh, shh, shh! Now the bus arrives at the ocean! Baby shark doo doo doo doo doo! Mommy shark doo doo doo doo doo! Daddy shark doo doo doo doo doo! And now the bus travels to Old MacDonald's farm! Old MacDonald had a farm, E-I-E-I-O! With a cow and a pig and a happy sheep! Sing and dance with all your favorite friends!",
+  "fullTextVi": "Các bánh xe trên xe buýt quay tròn, quay tròn, tròn và tròn. Những bánh xe buýt quay vòng vòng khắp thị trấn! Cần gạt nước trên xe buýt kêu xèo xèo, xèo xèo, xèo xèo! Còi xe buýt kêu bíp, bíp, bíp! Những em bé trên xe buýt kêu wah, wah, wah! Các bà mẹ trên xe buýt suỵt, suỵt, suỵt! Bây giờ xe buýt đến đại dương! Cá mập con doo doo doo doo doo! Mẹ cá mập doo doo doo doo doo! Bố cá mập doo doo doo doo doo! Và bây giờ xe buýt sẽ đi đến trang trại của Old MacDonald! Old MacDonald có một trang trại, E-I-E-I-O! Với một con bò, một con lợn và một con cừu hạnh phúc! Hát và nhảy với tất cả bạn bè yêu thích của bạn!",
+  "segments": [
+    {
+      "text": "The wheels on the bus go round and round, round and round, round and",
+      "viText": "Các bánh xe trên xe buýt quay tròn, quay tròn, tròn và",
+      "start": 0,
+      "duration": 55.31
+    },
+    {
+      "text": "round.",
+      "viText": "tròn.",
+      "start": 55.31,
+      "duration": 4.88
+    },
+    {
+      "text": "The wheels on the bus go round and round, all through the town!",
+      "viText": "Những bánh xe buýt quay vòng vòng khắp thị trấn!",
+      "start": 60.19,
+      "duration": 51.24
+    },
+    {
+      "text": "The wipers on the bus go swish, swish, swish!",
+      "viText": "Cần gạt nước trên xe buýt kêu xèo xèo, xèo xèo, xèo xèo!",
+      "start": 111.43,
+      "duration": 36.6
+    },
+    {
+      "text": "The horn on the bus goes beep, beep, beep!",
+      "viText": "Còi xe buýt kêu bíp, bíp, bíp!",
+      "start": 148.03,
+      "duration": 34.16
+    },
+    {
+      "text": "The babies on the bus go wah, wah, wah!",
+      "viText": "Những em bé trên xe buýt kêu wah, wah, wah!",
+      "start": 182.19,
+      "duration": 31.72
+    },
+    {
+      "text": "The mommies on the bus go shh, shh, shh!",
+      "viText": "Các bà mẹ trên xe buýt suỵt, suỵt, suỵt!",
+      "start": 213.91,
+      "duration": 32.53
+    },
+    {
+      "text": "Now the bus arrives at the ocean!",
+      "viText": "Bây giờ xe buýt đến đại dương!",
+      "start": 246.44,
+      "duration": 26.84
+    },
+    {
+      "text": "Baby shark doo doo doo doo doo!",
+      "viText": "Cá mập con doo doo doo doo doo!",
+      "start": 273.28,
+      "duration": 25.21
+    },
+    {
+      "text": "Mommy shark doo doo doo doo doo!",
+      "viText": "Mẹ cá mập doo doo doo doo doo!",
+      "start": 298.49,
+      "duration": 26.03
+    },
+    {
+      "text": "Daddy shark doo doo doo doo doo!",
+      "viText": "Bố cá mập doo doo doo doo doo!",
+      "start": 324.52,
+      "duration": 26.03
+    },
+    {
+      "text": "And now the bus travels to Old MacDonald's farm!",
+      "viText": "Và bây giờ xe buýt sẽ đi đến trang trại của Old MacDonald!",
+      "start": 350.55,
+      "duration": 39.04
+    },
+    {
+      "text": "Old MacDonald had a farm, E-I-E-I-O!",
+      "viText": "Old MacDonald có một trang trại, E-I-E-I-O!",
+      "start": 389.59,
+      "duration": 29.28
+    },
+    {
+      "text": "With a cow and a pig and a happy sheep!",
+      "viText": "Với một con bò, một con lợn và một con cừu hạnh phúc!",
+      "start": 418.87,
+      "duration": 31.72
+    },
+    {
+      "text": "Sing and dance with all your favorite friends!",
+      "viText": "Hát và nhảy với tất cả bạn bè yêu thích của bạn!",
+      "start": 450.59,
+      "duration": 37.41
+    }
+  ]
+}

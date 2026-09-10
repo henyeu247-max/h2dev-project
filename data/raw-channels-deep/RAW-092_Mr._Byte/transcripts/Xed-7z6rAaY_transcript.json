@@ -1,0 +1,1457 @@
+{
+  "videoId": "Xed-7z6rAaY",
+  "title": "Every Dev Board Explained in 14 Minutes — Which One Is Best for You?",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 241,
+  "fullText": "Arduino Uno. The Arduino Uno is the board that introduced millions of people to hardware. It runs an 80 mega 38P microcontroller clocked at just 16 MHz with 32 kilobs of flash memory and 2 kilobs of SRAMM. Those numbers are tiny by modern standards. But that is actually the point. Arduino is a microcontroller, not a computer. There is no operating system, no multitasking, no file system. Your code runs bare metal. That means it executes directly on the hardware, one instruction at a time without anything else getting in the way. You write a loop and it runs that loop every single time without interruption. That kind of predictability is actually a strength when you are controlling physical hardware. Where Arduino falls short is complexity. You cannot run machine learning, serve a web page or process video on it. But for reading sensors, driving motors, controlling LEDs, or building simple home automation, nothing is faster to set up. The Arduino IDE is free, the documentation is massive, and the community has answered almost every question you could have. It is the first board most people learn on, and for good reason. Simple, predictable, and backed by the largest hobbyist community in electronics. Raspberry Pico. The Pico is the Raspberry Pi Foundation's take on a microcontroller, but do not confuse it with the Raspberry Pi 4, which is a full computer. The Pico is a small, lowcost chip designed purely for hardware control. It runs the RP2040, a dual core ARM Cortex Emma Plus clocked at 133 MHz with 264 kilob of RAM and 2 megaby of onboard flash. The price is around $4. Compared to the Arduino Uno, the Pico is significantly faster, has more memory, and runs on a modern ARM architecture instead of the older AVR platform. It also supports MicroPython out of the box, which makes it much easier for beginners who already know Python. One standout feature is PIO, which stands for programmable IO. These are small state machines built into the chip that can generate precise hardware signals independently from the main CPU. that makes the Pico surprisingly capable for tasks like driving addressable LED strips or implementing custom communication protocols. The main trade-off compared to the SP32 is that the standard Pico has no built-in wireless. There is a PC variant that adds Wi-Fi, but it still lacks Bluetooth. For anyone choosing between an Arduino and something a bit more modern, the Pico is a strong option at a very similar price point. ESP32. The ESP32 by Espressive is where things get really interesting. It has a dualcore Extensa LX6 processor running at up to 240 MHz, 520 KB of SRAMM, built-in Wi-Fi, Bluetooth 4.2, and BLE, all on a chip that costs around $2. That price alone makes it one of the best deals in the devboard market. Compare that to the Arduino Uno. The Uno has no wireless capability at all and runs about 15 times slower. The ESP32 can run Arduino code, MicroPython, or Espressive's own ESP IDF framework, so you have flexibility in how you build your project. It also has a built-in hall sensor, capacitive touch pins, two DAXs, and multiple SPI, I2C, and UART interfaces. For the price, the feature list is almost hard to believe. The one trade-off is voltage. The ESP32 is a 3.3V device, so if you are connecting it to 5V sensors or modules, you need level shifters to avoid damaging the board. But for any project that needs wireless connectivity, like smart home devices, IoT sensors, weather stations, or remote data loggers, the ESP32 is the default choice. It is easily the most cost-effective connected microcontroller on the market right now, and the reason most IoT hobby projects start here. Teen asks why. The Tiny is an ARMbased microcontroller board built for speed and precision. The Tiny 4.1, which is its most popular version, runs an ARM Cortex M7 at 600 MHz with 1 MGB of RAM and 8 MGB of flash. That makes it one of the fastest microcontrollers you can buy on a development board today. Where the Tezy really stands out is audio and USB. It has a dedicated audio library that lets you build synthesizers, effects processors, audio analyzers, and multi-channel mixers with very low latency. It can also act as a native USB device. That means it can pretend to be a keyboard, a mouse, a MIDI controller, or a game controller without any extra hardware or drivers. You just plug it in and it works. Compared to an STM32, the TNC is easier to get started with because it uses an Arduino compatible tool chain. Compared to an ESP32, it is much faster but has no built-in wireless. The trade-off is price. A TNC4 one costs significantly more than an ESP32 or Arduino. But for projects involving fast signal processing, real-time audio, or custom USB input devices, the Teenzy has a loyal following and is genuinely hard to beat in its niche. STM32. The STM32 family by ST Micro Electronics is what separates hobbyists from professional embedded engineers. These chips are based on ARM Cortex Mores. The range is wide. At the low end, you have the M0 Plus for ultra- low power applications. At the high end, the M7 core in the SDM32H7 series runs at 480 MHz with a double precision floatingpoint unit, hardware JPEG encoding, and up to 1 MAB of RAM. Unlike the Arduino or ESP32, STM32 does not hold your hand. You configure clocks, DMA channels, interrupt priorities, and peripheral registers yourself, usually through STM32 cube ID and the HAL or LL libraries. That complexity gives you something valuable in return. Deterministic real-time performance and industrial-grade reliability. Where the ESP32 might drop a Wi-Fi packet or have timer jitter, an STM32 will execute with microcond precision every time. That is why you find STM32 chips inside drones, industrial controllers, medical devices, and consumer electronics. Not sitting on a desk as a hobby project, but inside actual shipping products used by real customers. The learning curve is steep and the documentation is dense. But if your goal is to build something production ready, STM32 is the path most professional embedded engineers take Raspberry Berry Pi. The Raspberry Pi is not a microcontroller. It is a full single board computer, and that distinction changes everything. The Pi4 runs a quad core ARM Cortex A72 at 1.8 GHz, supports up to 8 GB of LPDDR4 RAM, has USB 3.0 0 GB Ethernet, dual micro HDMI outputs capable of driving 4K displays and runs a full Linux operating system from a micro SD card. Comrade that to the ESP32 with 520 KBs of RAM. The Pi4 has over 15,000 times more memory. That gap explains the difference in capability. A Pi can run a web server, a database, Python scripts with full NumPy and OpenCV libraries, a web browser, and even a full desktop environment with a graphical interface. What it cannot do well is real-time hardware control. Linux is not a real-time operating system. So, GPIO timing on a Pi is inconsistent and unreliable for precision tasks. You would not use a Pi to generate a precise PWM signal for a motor controller. But you would absolutely use one to process a camera feed, host a local API, or run a TensorFlow light model for image classification. Think of it less as a dev board and more as a tiny hackable Linux computer that happens to have GPIO pins on the side. Beaglebone Black. The Beagle Bone Black is probably the most underrated board on this list. It runs a 1 GHz ARM Cortex A8 with 512 MGB of RAM and 4 GB of built-in eMMC storage. Like the Raspberry Pi, it runs full Linux. But the Beagle Bone has something the Pi simply does not have. two onboard programmable real-time units or PRUS. These are 200 MHz 32-bit processors that run independently from the main CPU. They execute bare metal code with deterministic nanocondle level timing. That means you get the best of both worlds on a single board. A full Linux environment for your application logic and networking and microcontroller grade precision for your hardware control layer. No second board needed. It also has 65 GPIO pins compared to the Pi's 40, more analog inputs, and multiple PWM outputs natively available. Beagle Bone is widely used in CNC machines, robotics, industrial automation, and any application where Linux flexibility and real-time hardware precision must coexist on the same device. The community is smaller than the pies and the documentation is denser. But for engineers who know exactly what they need, the Beagle Bone is genuinely hard to replace. Nvidia Jetson Nano. The Raspberry Pi is a tiny Linux computer. The Jetson Nano is a tiny AI computer. It packs a quad-core ARM Cortex A57 CPU alongside a 128 core Maxwell GPU with 4 GB of LPDDR4 RAM and 16 GB of eMMC storage. The GPU is the entire point of this board. The Raspberry Pi 4 has no meaningful GPU compute capability for machine learning workloads. Its theoretical AI performance sits at roughly 0.1 tops. The Jetson Nano delivers 472 GF flops of FP16 compute. That is enough to run real-time object detection with YOLO 3 pose estimation, facial recognition, and semantic segmentation. All processed locally on the device with no cloud dependency whatsoever. It runs Jetack, which is Nvidia's Linux-based SDK. With full support for CUDA, Tensor RT, and Deepstream. The trade-off versus a Raspberry Pi is cost and power consumption. The Jetson Nano is significantly more expensive and draws considerably more electricity. But if your project involves a camera and a neural network running in real time, there is no real comparison at this price point. The Jetson Nano sits in its own category for accessible edge AI development. Google Coral Dev Board. The Google Coral is another option for running AI at the edge, but it takes a completely different approach from the Jetson Nano. Instead of using a GPU for neural network inference, the Coral uses Google's edge TPU, which stands for Tensor Processing Unit. This is a purpose-built chip designed specifically to run TensorFlow light models with maximum efficiency and minimum power draw. The Coral Devboard runs a quad-core ARM Cortex A53 at 1.5 GHz with 1 GB of RAM, plus the Edge TPU co-processor, which delivers four tops of inference performance. That is actually higher raw throughput than the Jetson Nano on supported model types while drawing significantly less power, usually around 2 watts under full load compared to the Jetson's 5 to 10 watts. The trade-off is flexibility. The Jetson Nano supports CUDA and can run a wide range of AI frameworks and model architectures. The Coral only runs TensorFlow light models and those models must be compiled specifically for the edge TPU before deployment. So if your project fits within that ecosystem, the Coral is faster and far more power efficient per inference. If you need broader framework support, custom model architectures or ondevice training, the Jetson is still the better pick. Tessel 2. The Tessel 2 takes a completely different approach from every other board on this list. It is built for JavaScript developers, not embedded engineers. It runs as a MediaTek MT7620n processor at 580 MHz with 64 MGB of RAM. Running a lightweight Linux environment with Node.js builtin from the start. That means you write your firmware in JavaScript. You use npm packages directly. You interact with sensors and motors. a jobs pi. No C, no Python, no new development tools to learn. It also has built-in Wi-Fi, USB host support, and two dedicated module ports that accept plug-and-play hardware modules for things like GPS, Bluetooth, ambient light sensors, and servo motor control. Compared to the ESP32, the Tessle is far less power efficient and more expensive for what you get in raw hardware. Compared to a Raspberry Pi, it is more constrained but faster to prototype on if JavaScript is your primary language. The Tessle never captured widespread mainstream adoption, but it represents a real and valid philosophy. The best dev board for any developer is the one that speaks their language. For full stack web developers who want to build hardware without learning an entirely new tool chain, the Tessle lowers that barrier dramatically. Particle Photon. The Particle Photon is less about raw specs and more about what surrounds the hardware. It runs an STM32F 205 ARM Cortex M3 at 120 MHz with 1 MGAB of flash and 128 kilob of RAM. Those are solid microcontroller specs in the same ballpark as a mid-range STM32. It has built-in Wi-Fi through a Broadcom module and is programmed through Particles cloud-based IDE. But what makes it genuinely different from everything else on this list is the Particle device OS and cloud platform. Every Photon is automatically registered to your Particle account. It can receive over-the-air firmware updates, publish sensor data to the cloud, subscribe to remote commands, and be monitored across an entire fleet of devices, all out of the box with zero additional infrastructure setup. Compare that to an ESP32 where you would need to build all of that yourself. OTAA update servers, fleet management dashboards, cloud messaging pipelines, device monitoring systems. For a hobbyist working on a single device, that overhead might not matter. But for a startup shipping 500 connected products to paying customers, Particle eliminates months of backend engineering work. It bridges the gap between prototype and finished product better than any other board on this list. Anyway, I also made some other cool videos, too. Don't forget to watch them later. Okay.",
+  "fullTextVi": "Arduino Uno. Arduino Uno là bo mạch giới thiệu phần cứng cho hàng triệu người. Nó chạy một bộ vi điều khiển 80 mega 38P tốc độ chỉ 16 MHz với 32 kilobs bộ nhớ flash và 2 kilobs SRAMM. Những con số đó rất nhỏ so với tiêu chuẩn hiện đại. Nhưng đó thực sự là vấn đề. Arduino là một vi điều khiển, không phải máy tính. Không có hệ điều hành, không có đa nhiệm, không có hệ thống tập tin. Mã của bạn chạy kim loại trần. Điều đó có nghĩa là nó thực thi trực tiếp trên phần cứng, mỗi lần một lệnh mà không cần bất cứ điều gì khác cản trở. Bạn viết một vòng lặp và nó chạy vòng lặp đó mỗi lần mà không bị gián đoạn. Khả năng dự đoán đó thực sự là một thế mạnh khi bạn điều khiển phần cứng vật lý. Điểm yếu của Arduino chính là sự phức tạp. Bạn không thể chạy máy học, phục vụ một trang web hoặc xử lý video trên đó. Nhưng để đọc cảm biến, điều khiển động cơ, điều khiển đèn LED hoặc xây dựng hệ thống tự động hóa gia đình đơn giản thì không có gì được thiết lập nhanh hơn. Arduino IDE miễn phí, tài liệu rất lớn và cộng đồng đã trả lời hầu hết mọi câu hỏi bạn có thể có. Đây là bảng đầu tiên mà hầu hết mọi người học theo và vì lý do chính đáng. Đơn giản, có thể dự đoán được và được hỗ trợ bởi cộng đồng người yêu thích điện tử lớn nhất. Quả mâm xôi Pico. Pico là sản phẩm của Raspberry Pi Foundation sử dụng bộ vi điều khiển, nhưng không nhầm lẫn nó với Raspberry Pi 4, một máy tính hoàn chỉnh. Pico là một con chip nhỏ, giá thành thấp được thiết kế hoàn toàn để điều khiển phần cứng. Nó chạy RP2040, ARM Cortex Emma Plus lõi kép tốc độ 133 MHz với 264 kilob RAM và 2 megaby đèn flash tích hợp. Giá khoảng $4. So với Arduino Uno, Pico nhanh hơn đáng kể, có nhiều bộ nhớ hơn và chạy trên kiến ​​trúc ARM hiện đại thay vì nền tảng AVR cũ hơn. Nó cũng hỗ trợ MicroPython ngay từ đầu, giúp dễ dàng hơn nhiều người mới bắt đầu đã biết Python. Một tính năng nổi bật là PIO, viết tắt của IO có thể lập trình. Đây là những máy trạng thái nhỏ được tích hợp trong chip có thể tạo ra phần cứng chính xác tín hiệu độc lập với CPU chính. điều đó làm cho Pico có khả năng thực hiện các nhiệm vụ như điều khiển các dải đèn LED có thể định địa chỉ hoặc thực hiện các giao thức truyền thông tùy chỉnh. Sự đánh đổi chính so với SP32 là Pico tiêu chuẩn không có không dây tích hợp. Có một biến thể PC có thêm Wi-Fi nhưng vẫn thiếu Bluetooth. Đối với bất kỳ ai lựa chọn giữa Arduino và thứ gì đó hiện đại hơn một chút, Pico là một lựa chọn mạnh mẽ ở mức giá rất giống nhau. ESP32. ESP32 của Espressive là nơi mọi thứ trở nên thực sự thú vị. Nó có bộ xử lý lõi kép Extensa LX6 chạy ở tốc độ lên tới 240 MHz, 520 KB của SRAMM, Wi-Fi tích hợp, Bluetooth 4. 2 và BLE, tất cả đều nằm trên một con chip có giá khoảng 2 USD. Chỉ riêng mức giá đó đã khiến nó trở thành một trong những giao dịch tốt nhất trên thị trường devboard. So sánh nó với Arduino Uno. Uno hoàn toàn không có khả năng kết nối không dây và chạy chậm hơn khoảng 15 lần. ESP32 có thể chạy mã Arduino, MicroPython hoặc khung ESP IDF của Espressive, vì vậy bạn có sự linh hoạt trong cách xây dựng dự án của mình. Nó cũng có cảm biến hội trường tích hợp, chân cảm ứng điện dung, hai DAX và nhiều Giao diện SPI, I2C và UART. Về giá cả, danh sách tính năng gần như khó tin. Sự đánh đổi duy nhất là điện áp. ESP32 là số 3. Thiết bị 3V, vì vậy nếu bạn đang kết nối nó với các cảm biến hoặc mô-đun 5V, bạn cần bộ chuyển đổi cấp độ để tránh làm hỏng bảng. Nhưng đối với bất kỳ dự án nào cần kết nối không dây, như thiết bị nhà thông minh, cảm biến IoT, trạm thời tiết hoặc bộ ghi dữ liệu từ xa, ESP32 là lựa chọn mặc định. Đây dễ dàng là bộ vi điều khiển được kết nối tiết kiệm chi phí nhất trên thị trường hiện nay và lý do hầu hết các dự án sở thích IoT đều bắt đầu ở đây. Thiếu niên hỏi tại sao. Tiny là một bo mạch vi điều khiển dựa trên ARM được thiết kế để đảm bảo tốc độ và độ chính xác. The Tiny 4. 1, phiên bản phổ biến nhất của nó, chạy ARM Cortex M7 với tốc độ 600 MHz với 1 MGB RAM và 8 MGB flash. Điều đó khiến nó trở thành một trong những bộ vi điều khiển nhanh nhất mà bạn có thể mua trong quá trình phát triển lên tàu ngày hôm nay. Điểm nổi bật của Tezy thực sự là âm thanh và USB. Nó có một thư viện âm thanh chuyên dụng cho phép bạn xây dựng bộ tổng hợp, bộ xử lý hiệu ứng, âm thanh máy phân tích và bộ trộn đa kênh có độ trễ rất thấp. Nó cũng có thể hoạt động như một thiết bị USB gốc. Điều đó có nghĩa là nó có thể giả vờ là bàn phím, chuột, bộ điều khiển MIDI, hoặc bộ điều khiển trò chơi mà không cần thêm bất kỳ phần cứng hoặc trình điều khiển nào. Bạn chỉ cần cắm nó vào và nó hoạt động. So với STM32, TNC dễ bắt đầu hơn vì nó sử dụng chuỗi công cụ tương thích với Arduino. So với ESP32, nó nhanh hơn nhiều nhưng không có mạng không dây tích hợp. Sự đánh đổi là giá cả. Một chiếc TNC4 có giá cao hơn đáng kể so với một chiếc ESP32 hoặc Arduino. Nhưng đối với các dự án liên quan đến xử lý tín hiệu nhanh, âm thanh thời gian thực hoặc thiết bị đầu vào USB tùy chỉnh, Teenzy có lượng người theo dõi trung thành và thực sự khó bị đánh bại trong thích hợp. STM32. Dòng STM32 của ST Micro Electronics là điểm khác biệt giữa những người có sở thích với các thiết bị nhúng chuyên nghiệp kỹ sư. Những con chip này dựa trên ARM Cortex Mores. Phạm vi rộng. Ở cấp độ thấp, bạn có M0 Plus cho các ứng dụng tiêu thụ điện năng cực thấp. Ở bản cao cấp, lõi M7 trong dòng SDM32H7 chạy ở tốc độ 480 MHz với đơn vị dấu phẩy động có độ chính xác gấp đôi, mã hóa JPEG phần cứng và tối đa 1 MAB của RAM. Không giống như Arduino hay ESP32, STM32 không nắm được tay bạn. Bạn tự định cấu hình đồng hồ, kênh DMA, mức độ ưu tiên ngắt và các thanh ghi ngoại vi, thường thông qua STM32 ID khối và thư viện HAL hoặc LL. Sự phức tạp đó mang lại cho bạn điều gì đó có giá trị. Hiệu suất thời gian thực xác định và độ tin cậy cấp công nghiệp. Trường hợp ESP32 có thể làm rơi gói Wi-Fi hoặc có hiện tượng giật hình hẹn giờ, STM32 sẽ thực thi với độ chính xác vi mô mọi lúc. Đó là lý do tại sao bạn tìm thấy chip STM32 bên trong máy bay không người lái, bộ điều khiển công nghiệp, thiết bị y tế và điện tử tiêu dùng. Không phải ngồi trên bàn như một dự án sở thích mà bên trong các sản phẩm vận chuyển thực tế được khách hàng thực tế sử dụng. Đường cong học tập dốc và tài liệu dày đặc. Nhưng nếu mục tiêu của bạn là xây dựng một thứ gì đó sẵn sàng sản xuất thì STM32 chính là con đường hầu hết các kỹ sư nhúng chuyên nghiệp đều sử dụng Raspberry Berry Pi. Raspberry Pi không phải là một bộ vi điều khiển. Nó là một chiếc máy tính bo mạch đơn hoàn chỉnh và sự khác biệt đó đã thay đổi mọi thứ. Pi4 chạy ARM Cortex A72 lõi tứ ở tốc độ 1. 8 GHz, hỗ trợ RAM LPDDR4 lên tới 8 GB, có USB 3. 0 0 GB Ethernet, đầu ra micro HDMI kép có khả năng điều khiển màn hình 4K và chạy hệ điều hành Linux đầy đủ từ thẻ micro SD. Đồng chí đó với ESP32 với RAM 520 KB. Pi4 có bộ nhớ lớn hơn 15.000 lần. Khoảng cách đó giải thích sự khác biệt về năng lực. Một Pi có thể chạy máy chủ web, cơ sở dữ liệu, tập lệnh Python với đầy đủ NumPy và thư viện OpenCV, trình duyệt web và thậm chí cả môi trường máy tính để bàn đầy đủ với giao diện đồ họa. Điều nó không thể làm tốt là kiểm soát phần cứng theo thời gian thực. Linux không phải là hệ điều hành thời gian thực. Vì vậy, thời gian GPIO trên Pi không nhất quán và không đáng tin cậy đối với các tác vụ chính xác. Bạn sẽ không sử dụng Pi để tạo tín hiệuPWM chính xác cho bộ điều khiển động cơ. Nhưng bạn chắc chắn sẽ sử dụng một cái để xử lý nguồn cấp dữ liệu máy ảnh, lưu trữ cục bộ API hoặc chạy mô hình ánh sáng TensorFlow để phân loại hình ảnh. Hãy nghĩ về nó ít hơn như một bảng phát triển mà giống như một bảng nhỏ có thể hack được Máy tính Linux tình cờ có các chân GPIO ở bên cạnh. Xương rồng đen. Beagle Bone Black có lẽ là loại ván bị đánh giá thấp nhất trong danh sách này. Nó chạy ARM Cortex A8 1 GHz với RAM 512 MGB và 4 GB dung lượng lưu trữ eMMC tích hợp. Giống như Raspberry Pi, nó chạy Linux đầy đủ. Nhưng Beagle Bone có thứ mà Pi không có. hai đơn vị thời gian thực có thể lập trình được hoặc PRUS. Đây là những bộ xử lý 32 bit 200 MHz chạy độc lập với CPU chính. Họ thực thi mã kim loại trần với thời gian ở cấp độ nanocondle xác định. Điều đó có nghĩa là bạn tận dụng tối đa cả hai thế giới trên một bảng duy nhất. Một môi trường Linux đầy đủ cho logic ứng dụng, mạng và độ chính xác cấp vi điều khiển của bạn cho lớp điều khiển phần cứng của bạn. Không cần bảng thứ hai. Nó cũng có 65 chân GPIO so với 40 chân của Pi, nhiều đầu vào analog hơn, và nhiều đầu raPWM vốn có sẵn. Beagle Bone được sử dụng rộng rãi trong máy CNC, robot, tự động hóa công nghiệp và bất kỳ ứng dụng nào trong đó tính linh hoạt của Linux và độ chính xác của phần cứng theo thời gian thực phải cùng tồn tại trên cùng một thiết bị. Cộng đồng nhỏ hơn những chiếc bánh và tài liệu dày đặc hơn. Nhưng đối với những kỹ sư biết chính xác những gì họ cần, Beagle Bone thực sự khó thay thế. Nvidia Jetson Nano. Raspberry Pi là một máy tính Linux nhỏ. Jetson Nano là một máy tính AI nhỏ. Nó tích hợp CPU ARM Cortex A57 lõi ​​tứ cùng với GPU Maxwell 128 lõi với 4 GB RAM LPDDR4 và 16 GB dung lượng lưu trữ eMMC. GPU là toàn bộ điểm của bo mạch này. Raspberry Pi 4 không có khả năng tính toán GPU đáng kể cho khối lượng công việc học máy. Hiệu suất AI về mặt lý thuyết của nó nằm ở mức khoảng 0. 1 ngọn. Jetson Nano cung cấp 472 GF thất bại trong tính toán FP16. Thế là đủ để chạy phát hiện đối tượng theo thời gian thực với ước tính tư thế YOLO 3, khuôn mặt nhận dạng và phân đoạn theo ngữ nghĩa. Tất cả được xử lý cục bộ trên thiết bị mà không phụ thuộc vào đám mây. Nó chạy Jetack, SDK dựa trên Linux của Nvidia. Với sự hỗ trợ đầy đủ cho CUDA, Tensor RT và Deepstream. Sự đánh đổi so với Raspberry Pi là chi phí và mức tiêu thụ điện năng. Jetson Nano đắt hơn đáng kể và tiêu thụ nhiều điện hơn. Nhưng nếu dự án của bạn liên quan đến một camera và mạng lưới thần kinh chạy trong thực thời gian, không có sự so sánh thực sự ở mức giá này. Jetson Nano nằm trong danh mục riêng dành cho việc phát triển AI biên dễ tiếp cận. Ban phát triển Google Coral. Google Coral là một lựa chọn khác để chạy AI ở biên, nhưng nó có cách tiếp cận hoàn toàn khác với Jetson Nano. Thay vì sử dụng GPU để suy luận mạng thần kinh, Coral sử dụng công nghệ biên của Google TPU là viết tắt của Đơn vị xử lý Tensor. Đây là con chip chuyên dụng được thiết kế đặc biệt để chạy các mẫu đèn TensorFlow với tối đa hiệu quả và tiêu thụ điện năng tối thiểu. Coral Devboard chạy ARM Cortex A53 lõi tứ ở tốc độ 1. 5 GHz với RAM 1 GB, cộng với bộ đồng xử lý Edge TPU, mang lại bốn đỉnh của hiệu suất suy luận. Đó thực sự là thông lượng thô cao hơn Jetson Nano trên các loại mô hình được hỗ trợ trong khi tiêu thụ ít điện năng hơn đáng kể, thường khoảng 2 watt khi đầy tải so với Jetson từ 5 đến 10 watt. Sự đánh đổi là tính linh hoạt. Jetson Nano hỗ trợ CUDA và có thể chạy nhiều khung AI và các kiến ​​trúc mô hình. Coral chỉ chạy các model ánh sáng TensorFlow và các model đó phải được biên dịch cụ thể cho cạnh TPU trước khi triển khai. Vì vậy, nếu dự án của bạn phù hợp với hệ sinh thái đó, Coral sẽ nhanh hơn và xa hơn hiệu quả năng lượng hơn cho mỗi suy luận. Nếu bạn cần hỗ trợ khung rộng hơn, kiến ​​trúc mô hình tùy chỉnh hoặc đào tạo trên thiết bị, Jetson vẫn là lựa chọn tốt hơn. Tàu 2. Tessel 2 có cách tiếp cận hoàn toàn khác với mọi bảng khác trên list. Nó được xây dựng cho các nhà phát triển JavaScript, không phải cho các kỹ sư nhúng. Nó chạy dưới dạng bộ xử lý MediaTek MT7620n ở tốc độ 580 MHz với 64 MGB RAM. Chạy môi trường Linux nhẹ với Node. js được tích hợp ngay từ đầu. Điều đó có nghĩa là bạn viết chương trình cơ sở của mình bằng JavaScript. Bạn sử dụng gói npm trực tiếp. Bạn tương tác với các cảm biến và động cơ. một công việc pi. Không C, không Python, không có công cụ phát triển mới để học. Nó cũng có Wi-Fi tích hợp, hỗ trợ máy chủ USB và hai cổng mô-đun chuyên dụng chấp nhận các mô-đun phần cứng cắm và chạy cho những thứ như GPS, Bluetooth, cảm biến ánh sáng xung quanh và servo điều khiển động cơ. So với ESP32, Tessle tiết kiệm điện hơn nhiều và đắt hơn cho những gì bạn nhận được từ phần cứng thô. So với Raspberry Pi, nó bị hạn chế hơn nhưng nhanh hơn khi tạo nguyên mẫu trên nếu JavaScript là ngôn ngữ chính của bạn. Tessle chưa bao giờ được áp dụng phổ biến rộng rãi, nhưng nó đại diện cho một thực sự và hợp lệ. triết lý. Hội đồng phát triển tốt nhất cho bất kỳ nhà phát triển nào là hội đồng nói được ngôn ngữ của họ. Dành cho các nhà phát triển web full stack muốn xây dựng phần cứng mà không cần học toàn bộ chuỗi công cụ mới, Tessle hạ thấp rào cản đó một cách đáng kể. Hạt Photon. Hạt Photon ít nói về thông số kỹ thuật thô mà nói nhiều hơn về những gì xung quanh phần cứng. Nó chạy STM32F 205 ARM Cortex M3 ở tốc độ 120 MHz với 1 MGAB flash và 128 kilob RAM. Đó là những thông số kỹ thuật vi điều khiển vững chắc trong cùng sân chơi với STM32 tầm trung. Nó có Wi-Fi tích hợp thông qua mô-đun Broadcom và được lập trình thông qua Particles dựa trên đám mây IDE. Nhưng điều khiến nó thực sự khác biệt so với mọi thứ khác trong danh sách này là Hệ điều hành thiết bị hạt và nền tảng đám mây. Mọi Photon đều được tự động đăng ký vào tài khoản Hạt của bạn. Nó có thể nhận các bản cập nhật chương trình cơ sở không dây, xuất bản dữ liệu cảm biến lên đám mây, đăng ký lệnh từ xa và được giám sát trên toàn bộ nhóm thiết bị, tất cả đều từ hộp không có thiết lập cơ sở hạ tầng bổ sung. So sánh điều đó với một chiếc ESP32 nơi bạn sẽ cần xây dựng tất cả những thứ đó bản thân bạn. Máy chủ cập nhật OTAA, bảng điều khiển quản lý nhóm, đường dẫn nhắn tin trên đám mây, hệ thống giám sát thiết bị. Đối với người có sở thích làm việc trên một thiết bị duy nhất, chi phí đó có thể không thành vấn đề. Nhưng đối với một công ty khởi nghiệp vận chuyển 500 sản phẩm được kết nối cho khách hàng trả tiền, Particle sẽ loại bỏ hàng tháng của công việc kỹ thuật phụ trợ. Nó thu hẹp khoảng cách giữa nguyên mẫu và thành phẩm tốt hơn bất kỳ bảng nào khác trong danh sách này. Dù sao thì tôi cũng đã làm một số video thú vị khác. Đừng quên xem chúng sau. Okay.",
+  "segments": [
+    {
+      "text": "Arduino Uno.",
+      "viText": "Arduino Uno.",
+      "start": 0,
+      "duration": 2
+    },
+    {
+      "text": "The Arduino Uno is the board that introduced millions of people to hardware.",
+      "viText": "Arduino Uno là bo mạch giới thiệu phần cứng cho hàng triệu người.",
+      "start": 2,
+      "duration": 5.12
+    },
+    {
+      "text": "It runs an 80 mega 38P microcontroller clocked at just 16 MHz with 32",
+      "viText": "Nó chạy một bộ vi điều khiển 80 mega 38P tốc độ chỉ 16 MHz với 32",
+      "start": 7.12,
+      "duration": 4.65
+    },
+    {
+      "text": "kilobs of flash memory and 2 kilobs of SRAMM.",
+      "viText": "kilobs bộ nhớ flash và 2 kilobs SRAMM.",
+      "start": 11.77,
+      "duration": 3.03
+    },
+    {
+      "text": "Those numbers are tiny by modern standards.",
+      "viText": "Những con số đó rất nhỏ so với tiêu chuẩn hiện đại.",
+      "start": 14.8,
+      "duration": 2.9
+    },
+    {
+      "text": "But that is actually the point.",
+      "viText": "Nhưng đó thực sự là vấn đề.",
+      "start": 17.7,
+      "duration": 2.09
+    },
+    {
+      "text": "Arduino is a microcontroller, not a computer.",
+      "viText": "Arduino là một vi điều khiển, không phải máy tính.",
+      "start": 19.79,
+      "duration": 3.03
+    },
+    {
+      "text": "There is no operating system, no multitasking, no file system.",
+      "viText": "Không có hệ điều hành, không có đa nhiệm, không có hệ thống tập tin.",
+      "start": 22.82,
+      "duration": 4.17
+    },
+    {
+      "text": "Your code runs bare metal.",
+      "viText": "Mã của bạn chạy kim loại trần.",
+      "start": 26.99,
+      "duration": 2
+    },
+    {
+      "text": "That means it executes directly on the hardware, one instruction at a time without",
+      "viText": "Điều đó có nghĩa là nó thực thi trực tiếp trên phần cứng, mỗi lần một lệnh mà không cần",
+      "start": 28.99,
+      "duration": 5.52
+    },
+    {
+      "text": "anything else getting in the way.",
+      "viText": "bất cứ điều gì khác cản trở.",
+      "start": 34.51,
+      "duration": 2.22
+    },
+    {
+      "text": "You write a loop and it runs that loop every single time without interruption.",
+      "viText": "Bạn viết một vòng lặp và nó chạy vòng lặp đó mỗi lần mà không bị gián đoạn.",
+      "start": 36.73,
+      "duration": 5.25
+    },
+    {
+      "text": "That kind of predictability is actually a strength when you are controlling physical hardware.",
+      "viText": "Khả năng dự đoán đó thực sự là một thế mạnh khi bạn điều khiển phần cứng vật lý.",
+      "start": 41.98,
+      "duration": 6.33
+    },
+    {
+      "text": "Where Arduino falls short is complexity.",
+      "viText": "Điểm yếu của Arduino chính là sự phức tạp.",
+      "start": 48.31,
+      "duration": 2.69
+    },
+    {
+      "text": "You cannot run machine learning, serve a web page or process video on it.",
+      "viText": "Bạn không thể chạy máy học, phục vụ một trang web hoặc xử lý video trên đó.",
+      "start": 51,
+      "duration": 4.91
+    },
+    {
+      "text": "But for reading sensors, driving motors, controlling LEDs, or building simple home automation, nothing",
+      "viText": "Nhưng để đọc cảm biến, điều khiển động cơ, điều khiển đèn LED hoặc xây dựng hệ thống tự động hóa gia đình đơn giản thì không có gì",
+      "start": 55.91,
+      "duration": 6.87
+    },
+    {
+      "text": "is faster to set up.",
+      "viText": "được thiết lập nhanh hơn.",
+      "start": 62.78,
+      "duration": 2
+    },
+    {
+      "text": "The Arduino IDE is free, the documentation is massive, and the community has answered",
+      "viText": "Arduino IDE miễn phí, tài liệu rất lớn và cộng đồng đã trả lời",
+      "start": 64.78,
+      "duration": 5.72
+    },
+    {
+      "text": "almost every question you could have.",
+      "viText": "hầu hết mọi câu hỏi bạn có thể có.",
+      "start": 70.5,
+      "duration": 2.49
+    },
+    {
+      "text": "It is the first board most people learn on, and for good reason.",
+      "viText": "Đây là bảng đầu tiên mà hầu hết mọi người học theo và vì lý do chính đáng.",
+      "start": 72.99,
+      "duration": 4.31
+    },
+    {
+      "text": "Simple, predictable, and backed by the largest hobbyist community in electronics.",
+      "viText": "Đơn giản, có thể dự đoán được và được hỗ trợ bởi cộng đồng người yêu thích điện tử lớn nhất.",
+      "start": 77.3,
+      "duration": 5.45
+    },
+    {
+      "text": "Raspberry Pico.",
+      "viText": "Quả mâm xôi Pico.",
+      "start": 82.75,
+      "duration": 2
+    },
+    {
+      "text": "The Pico is the Raspberry Pi Foundation's take on a microcontroller, but do not",
+      "viText": "Pico là sản phẩm của Raspberry Pi Foundation sử dụng bộ vi điều khiển, nhưng không",
+      "start": 84.75,
+      "duration": 5.32
+    },
+    {
+      "text": "confuse it with the Raspberry Pi 4, which is a full computer.",
+      "viText": "nhầm lẫn nó với Raspberry Pi 4, một máy tính hoàn chỉnh.",
+      "start": 90.07,
+      "duration": 4.11
+    },
+    {
+      "text": "The Pico is a small, lowcost chip designed purely for hardware control.",
+      "viText": "Pico là một con chip nhỏ, giá thành thấp được thiết kế hoàn toàn để điều khiển phần cứng.",
+      "start": 94.18,
+      "duration": 4.78
+    },
+    {
+      "text": "It runs the RP2040, a dual core ARM Cortex Emma Plus clocked at 133",
+      "viText": "Nó chạy RP2040, ARM Cortex Emma Plus lõi kép tốc độ 133",
+      "start": 98.96,
+      "duration": 4.51
+    },
+    {
+      "text": "MHz with 264 kilob of RAM and 2 megaby of onboard flash.",
+      "viText": "MHz với 264 kilob RAM và 2 megaby đèn flash tích hợp.",
+      "start": 103.47,
+      "duration": 3.77
+    },
+    {
+      "text": "The price is around $4.",
+      "viText": "Giá khoảng $4.",
+      "start": 107.24,
+      "duration": 2
+    },
+    {
+      "text": "Compared to the Arduino Uno, the Pico is significantly faster, has more memory, and",
+      "viText": "So với Arduino Uno, Pico nhanh hơn đáng kể, có nhiều bộ nhớ hơn và",
+      "start": 109.24,
+      "duration": 5.59
+    },
+    {
+      "text": "runs on a modern ARM architecture instead of the older AVR platform.",
+      "viText": "chạy trên kiến ​​trúc ARM hiện đại thay vì nền tảng AVR cũ hơn.",
+      "start": 114.83,
+      "duration": 4.58
+    },
+    {
+      "text": "It also supports MicroPython out of the box, which makes it much easier for",
+      "viText": "Nó cũng hỗ trợ MicroPython ngay từ đầu, giúp",
+      "start": 119.41,
+      "duration": 5.05
+    },
+    {
+      "text": "beginners who already know Python.",
+      "viText": "dễ dàng hơn nhiều người mới bắt đầu đã biết Python.",
+      "start": 124.46,
+      "duration": 2.29
+    },
+    {
+      "text": "One standout feature is PIO, which stands for programmable IO.",
+      "viText": "Một tính năng nổi bật là PIO, viết tắt của IO có thể lập trình.",
+      "start": 126.75,
+      "duration": 4.17
+    },
+    {
+      "text": "These are small state machines built into the chip that can generate precise hardware",
+      "viText": "Đây là những máy trạng thái nhỏ được tích hợp trong chip có thể tạo ra phần cứng chính xác",
+      "start": 130.92,
+      "duration": 5.72
+    },
+    {
+      "text": "signals independently from the main CPU.",
+      "viText": "tín hiệu độc lập với CPU chính.",
+      "start": 136.64,
+      "duration": 2.69
+    },
+    {
+      "text": "that makes the Pico surprisingly capable for tasks like driving addressable LED strips or",
+      "viText": "điều đó làm cho Pico có khả năng thực hiện các nhiệm vụ như điều khiển các dải đèn LED có thể định địa chỉ hoặc",
+      "start": 139.33,
+      "duration": 5.99
+    },
+    {
+      "text": "implementing custom communication protocols.",
+      "viText": "thực hiện các giao thức truyền thông tùy chỉnh.",
+      "start": 145.32,
+      "duration": 2.96
+    },
+    {
+      "text": "The main trade-off compared to the SP32 is that the standard Pico has no",
+      "viText": "Sự đánh đổi chính so với SP32 là Pico tiêu chuẩn không có",
+      "start": 148.28,
+      "duration": 4.85
+    },
+    {
+      "text": "built-in wireless.",
+      "viText": "không dây tích hợp.",
+      "start": 153.13,
+      "duration": 2
+    },
+    {
+      "text": "There is a PC variant that adds Wi-Fi, but it still lacks Bluetooth.",
+      "viText": "Có một biến thể PC có thêm Wi-Fi nhưng vẫn thiếu Bluetooth.",
+      "start": 155.13,
+      "duration": 4.58
+    },
+    {
+      "text": "For anyone choosing between an Arduino and something a bit more modern, the Pico",
+      "viText": "Đối với bất kỳ ai lựa chọn giữa Arduino và thứ gì đó hiện đại hơn một chút, Pico",
+      "start": 159.71,
+      "duration": 5.39
+    },
+    {
+      "text": "is a strong option at a very similar price point.",
+      "viText": "là một lựa chọn mạnh mẽ ở mức giá rất giống nhau.",
+      "start": 165.1,
+      "duration": 3.3
+    },
+    {
+      "text": "ESP32.",
+      "viText": "ESP32.",
+      "start": 168.4,
+      "duration": 2
+    },
+    {
+      "text": "The ESP32 by Espressive is where things get really interesting.",
+      "viText": "ESP32 của Espressive là nơi mọi thứ trở nên thực sự thú vị.",
+      "start": 170.4,
+      "duration": 4.24
+    },
+    {
+      "text": "It has a dualcore Extensa LX6 processor running at up to 240 MHz, 520",
+      "viText": "Nó có bộ xử lý lõi kép Extensa LX6 chạy ở tốc độ lên tới 240 MHz, 520",
+      "start": 174.64,
+      "duration": 4.65
+    },
+    {
+      "text": "KB of SRAMM, built-in Wi-Fi, Bluetooth 4.",
+      "viText": "KB của SRAMM, Wi-Fi tích hợp, Bluetooth 4.",
+      "start": 179.29,
+      "duration": 2.76
+    },
+    {
+      "text": "2, and BLE, all on a chip that costs around $2.",
+      "viText": "2 và BLE, tất cả đều nằm trên một con chip có giá khoảng 2 USD.",
+      "start": 182.05,
+      "duration": 3.16
+    },
+    {
+      "text": "That price alone makes it one of the best deals in the devboard market.",
+      "viText": "Chỉ riêng mức giá đó đã khiến nó trở thành một trong những giao dịch tốt nhất trên thị trường devboard.",
+      "start": 185.21,
+      "duration": 4.78
+    },
+    {
+      "text": "Compare that to the Arduino Uno.",
+      "viText": "So sánh nó với Arduino Uno.",
+      "start": 189.99,
+      "duration": 2.15
+    },
+    {
+      "text": "The Uno has no wireless capability at all and runs about 15 times slower.",
+      "viText": "Uno hoàn toàn không có khả năng kết nối không dây và chạy chậm hơn khoảng 15 lần.",
+      "start": 192.14,
+      "duration": 4.91
+    },
+    {
+      "text": "The ESP32 can run Arduino code, MicroPython, or Espressive's own ESP IDF framework, so",
+      "viText": "ESP32 có thể chạy mã Arduino, MicroPython hoặc khung ESP IDF của Espressive, vì vậy",
+      "start": 197.05,
+      "duration": 5.79
+    },
+    {
+      "text": "you have flexibility in how you build your project.",
+      "viText": "bạn có sự linh hoạt trong cách xây dựng dự án của mình.",
+      "start": 202.84,
+      "duration": 3.43
+    },
+    {
+      "text": "It also has a built-in hall sensor, capacitive touch pins, two DAXs, and multiple",
+      "viText": "Nó cũng có cảm biến hội trường tích hợp, chân cảm ứng điện dung, hai DAX và nhiều",
+      "start": 206.27,
+      "duration": 5.45
+    },
+    {
+      "text": "SPI, I2C, and UART interfaces.",
+      "viText": "Giao diện SPI, I2C và UART.",
+      "start": 211.72,
+      "duration": 2.02
+    },
+    {
+      "text": "For the price, the feature list is almost hard to believe.",
+      "viText": "Về giá cả, danh sách tính năng gần như khó tin.",
+      "start": 213.74,
+      "duration": 3.9
+    },
+    {
+      "text": "The one trade-off is voltage.",
+      "viText": "Sự đánh đổi duy nhất là điện áp.",
+      "start": 217.64,
+      "duration": 2
+    },
+    {
+      "text": "The ESP32 is a 3.",
+      "viText": "ESP32 là số 3.",
+      "start": 219.64,
+      "duration": 2
+    },
+    {
+      "text": "3V device, so if you are connecting it to 5V sensors or modules, you",
+      "viText": "Thiết bị 3V, vì vậy nếu bạn đang kết nối nó với các cảm biến hoặc mô-đun 5V, bạn",
+      "start": 221.64,
+      "duration": 4.58
+    },
+    {
+      "text": "need level shifters to avoid damaging the board.",
+      "viText": "cần bộ chuyển đổi cấp độ để tránh làm hỏng bảng.",
+      "start": 226.22,
+      "duration": 3.23
+    },
+    {
+      "text": "But for any project that needs wireless connectivity, like smart home devices, IoT sensors,",
+      "viText": "Nhưng đối với bất kỳ dự án nào cần kết nối không dây, như thiết bị nhà thông minh, cảm biến IoT,",
+      "start": 229.45,
+      "duration": 6.13
+    },
+    {
+      "text": "weather stations, or remote data loggers, the ESP32 is the default choice.",
+      "viText": "trạm thời tiết hoặc bộ ghi dữ liệu từ xa, ESP32 là lựa chọn mặc định.",
+      "start": 235.58,
+      "duration": 4.98
+    },
+    {
+      "text": "It is easily the most cost-effective connected microcontroller on the market right now, and",
+      "viText": "Đây dễ dàng là bộ vi điều khiển được kết nối tiết kiệm chi phí nhất trên thị trường hiện nay và",
+      "start": 240.56,
+      "duration": 6.13
+    },
+    {
+      "text": "the reason most IoT hobby projects start here.",
+      "viText": "lý do hầu hết các dự án sở thích IoT đều bắt đầu ở đây.",
+      "start": 246.69,
+      "duration": 3.1
+    },
+    {
+      "text": "Teen asks why.",
+      "viText": "Thiếu niên hỏi tại sao.",
+      "start": 249.79,
+      "duration": 2
+    },
+    {
+      "text": "The Tiny is an ARMbased microcontroller board built for speed and precision.",
+      "viText": "Tiny là một bo mạch vi điều khiển dựa trên ARM được thiết kế để đảm bảo tốc độ và độ chính xác.",
+      "start": 251.79,
+      "duration": 5.12
+    },
+    {
+      "text": "The Tiny 4.",
+      "viText": "The Tiny 4.",
+      "start": 256.91,
+      "duration": 2
+    },
+    {
+      "text": "1, which is its most popular version, runs an ARM Cortex M7 at 600",
+      "viText": "1, phiên bản phổ biến nhất của nó, chạy ARM Cortex M7 với tốc độ 600",
+      "start": 258.91,
+      "duration": 4.44
+    },
+    {
+      "text": "MHz with 1 MGB of RAM and 8 MGB of flash.",
+      "viText": "MHz với 1 MGB RAM và 8 MGB flash.",
+      "start": 263.35,
+      "duration": 2.76
+    },
+    {
+      "text": "That makes it one of the fastest microcontrollers you can buy on a development",
+      "viText": "Điều đó khiến nó trở thành một trong những bộ vi điều khiển nhanh nhất mà bạn có thể mua trong quá trình phát triển",
+      "start": 266.11,
+      "duration": 5.25
+    },
+    {
+      "text": "board today.",
+      "viText": "lên tàu ngày hôm nay.",
+      "start": 271.36,
+      "duration": 2
+    },
+    {
+      "text": "Where the Tezy really stands out is audio and USB.",
+      "viText": "Điểm nổi bật của Tezy thực sự là âm thanh và USB.",
+      "start": 273.36,
+      "duration": 3.37
+    },
+    {
+      "text": "It has a dedicated audio library that lets you build synthesizers, effects processors, audio",
+      "viText": "Nó có một thư viện âm thanh chuyên dụng cho phép bạn xây dựng bộ tổng hợp, bộ xử lý hiệu ứng, âm thanh",
+      "start": 276.73,
+      "duration": 6.19
+    },
+    {
+      "text": "analyzers, and multi-channel mixers with very low latency.",
+      "viText": "máy phân tích và bộ trộn đa kênh có độ trễ rất thấp.",
+      "start": 282.92,
+      "duration": 3.9
+    },
+    {
+      "text": "It can also act as a native USB device.",
+      "viText": "Nó cũng có thể hoạt động như một thiết bị USB gốc.",
+      "start": 286.82,
+      "duration": 2.63
+    },
+    {
+      "text": "That means it can pretend to be a keyboard, a mouse, a MIDI controller,",
+      "viText": "Điều đó có nghĩa là nó có thể giả vờ là bàn phím, chuột, bộ điều khiển MIDI,",
+      "start": 289.45,
+      "duration": 4.78
+    },
+    {
+      "text": "or a game controller without any extra hardware or drivers.",
+      "viText": "hoặc bộ điều khiển trò chơi mà không cần thêm bất kỳ phần cứng hoặc trình điều khiển nào.",
+      "start": 294.23,
+      "duration": 3.97
+    },
+    {
+      "text": "You just plug it in and it works.",
+      "viText": "Bạn chỉ cần cắm nó vào và nó hoạt động.",
+      "start": 298.2,
+      "duration": 2.22
+    },
+    {
+      "text": "Compared to an STM32, the TNC is easier to get started with because it",
+      "viText": "So với STM32, TNC dễ bắt đầu hơn vì nó",
+      "start": 300.42,
+      "duration": 4.71
+    },
+    {
+      "text": "uses an Arduino compatible tool chain.",
+      "viText": "sử dụng chuỗi công cụ tương thích với Arduino.",
+      "start": 305.13,
+      "duration": 2.56
+    },
+    {
+      "text": "Compared to an ESP32, it is much faster but has no built-in wireless.",
+      "viText": "So với ESP32, nó nhanh hơn nhiều nhưng không có mạng không dây tích hợp.",
+      "start": 307.69,
+      "duration": 4.65
+    },
+    {
+      "text": "The trade-off is price.",
+      "viText": "Sự đánh đổi là giá cả.",
+      "start": 312.34,
+      "duration": 2
+    },
+    {
+      "text": "A TNC4 one costs significantly more than an ESP32 or Arduino.",
+      "viText": "Một chiếc TNC4 có giá cao hơn đáng kể so với một chiếc ESP32 hoặc Arduino.",
+      "start": 314.34,
+      "duration": 4.11
+    },
+    {
+      "text": "But for projects involving fast signal processing, real-time audio, or custom USB input devices,",
+      "viText": "Nhưng đối với các dự án liên quan đến xử lý tín hiệu nhanh, âm thanh thời gian thực hoặc thiết bị đầu vào USB tùy chỉnh,",
+      "start": 318.45,
+      "duration": 6.46
+    },
+    {
+      "text": "the Teenzy has a loyal following and is genuinely hard to beat in its",
+      "viText": "Teenzy có lượng người theo dõi trung thành và thực sự khó bị đánh bại trong",
+      "start": 324.91,
+      "duration": 4.65
+    },
+    {
+      "text": "niche.",
+      "viText": "thích hợp.",
+      "start": 329.56,
+      "duration": 2
+    },
+    {
+      "text": "STM32.",
+      "viText": "STM32.",
+      "start": 331.56,
+      "duration": 2
+    },
+    {
+      "text": "The STM32 family by ST Micro Electronics is what separates hobbyists from professional embedded",
+      "viText": "Dòng STM32 của ST Micro Electronics là điểm khác biệt giữa những người có sở thích với các thiết bị nhúng chuyên nghiệp",
+      "start": 333.56,
+      "duration": 6.4
+    },
+    {
+      "text": "engineers.",
+      "viText": "kỹ sư.",
+      "start": 339.96,
+      "duration": 2
+    },
+    {
+      "text": "These chips are based on ARM Cortex Mores.",
+      "viText": "Những con chip này dựa trên ARM Cortex Mores.",
+      "start": 341.96,
+      "duration": 2.83
+    },
+    {
+      "text": "The range is wide.",
+      "viText": "Phạm vi rộng.",
+      "start": 344.79,
+      "duration": 2
+    },
+    {
+      "text": "At the low end, you have the M0 Plus for ultra- low power applications.",
+      "viText": "Ở cấp độ thấp, bạn có M0 Plus cho các ứng dụng tiêu thụ điện năng cực thấp.",
+      "start": 346.79,
+      "duration": 4.78
+    },
+    {
+      "text": "At the high end, the M7 core in the SDM32H7 series runs at 480",
+      "viText": "Ở bản cao cấp, lõi M7 trong dòng SDM32H7 chạy ở tốc độ 480",
+      "start": 351.57,
+      "duration": 4.17
+    },
+    {
+      "text": "MHz with a double precision floatingpoint unit, hardware JPEG encoding, and up to 1",
+      "viText": "MHz với đơn vị dấu phẩy động có độ chính xác gấp đôi, mã hóa JPEG phần cứng và tối đa 1",
+      "start": 355.74,
+      "duration": 5.59
+    },
+    {
+      "text": "MAB of RAM.",
+      "viText": "MAB của RAM.",
+      "start": 361.33,
+      "duration": 2
+    },
+    {
+      "text": "Unlike the Arduino or ESP32, STM32 does not hold your hand.",
+      "viText": "Không giống như Arduino hay ESP32, STM32 không nắm được tay bạn.",
+      "start": 363.33,
+      "duration": 3.97
+    },
+    {
+      "text": "You configure clocks, DMA channels, interrupt priorities, and peripheral registers yourself, usually through STM32",
+      "viText": "Bạn tự định cấu hình đồng hồ, kênh DMA, mức độ ưu tiên ngắt và các thanh ghi ngoại vi, thường thông qua STM32",
+      "start": 367.3,
+      "duration": 7.68
+    },
+    {
+      "text": "cube ID and the HAL or LL libraries.",
+      "viText": "ID khối và thư viện HAL hoặc LL.",
+      "start": 374.98,
+      "duration": 2.42
+    },
+    {
+      "text": "That complexity gives you something valuable in return.",
+      "viText": "Sự phức tạp đó mang lại cho bạn điều gì đó có giá trị.",
+      "start": 377.4,
+      "duration": 3.7
+    },
+    {
+      "text": "Deterministic real-time performance and industrial-grade reliability.",
+      "viText": "Hiệu suất thời gian thực xác định và độ tin cậy cấp công nghiệp.",
+      "start": 381.1,
+      "duration": 4.65
+    },
+    {
+      "text": "Where the ESP32 might drop a Wi-Fi packet or have timer jitter, an STM32",
+      "viText": "Trường hợp ESP32 có thể làm rơi gói Wi-Fi hoặc có hiện tượng giật hình hẹn giờ, STM32",
+      "start": 385.75,
+      "duration": 4.85
+    },
+    {
+      "text": "will execute with microcond precision every time.",
+      "viText": "sẽ thực thi với độ chính xác vi mô mọi lúc.",
+      "start": 390.6,
+      "duration": 3.3
+    },
+    {
+      "text": "That is why you find STM32 chips inside drones, industrial controllers, medical devices, and",
+      "viText": "Đó là lý do tại sao bạn tìm thấy chip STM32 bên trong máy bay không người lái, bộ điều khiển công nghiệp, thiết bị y tế và",
+      "start": 393.9,
+      "duration": 6.19
+    },
+    {
+      "text": "consumer electronics.",
+      "viText": "điện tử tiêu dùng.",
+      "start": 400.09,
+      "duration": 2
+    },
+    {
+      "text": "Not sitting on a desk as a hobby project, but inside actual shipping products",
+      "viText": "Không phải ngồi trên bàn như một dự án sở thích mà bên trong các sản phẩm vận chuyển thực tế",
+      "start": 402.09,
+      "duration": 5.18
+    },
+    {
+      "text": "used by real customers.",
+      "viText": "được khách hàng thực tế sử dụng.",
+      "start": 407.27,
+      "duration": 2
+    },
+    {
+      "text": "The learning curve is steep and the documentation is dense.",
+      "viText": "Đường cong học tập dốc và tài liệu dày đặc.",
+      "start": 409.27,
+      "duration": 3.97
+    },
+    {
+      "text": "But if your goal is to build something production ready, STM32 is the path",
+      "viText": "Nhưng nếu mục tiêu của bạn là xây dựng một thứ gì đó sẵn sàng sản xuất thì STM32 chính là con đường",
+      "start": 413.24,
+      "duration": 4.98
+    },
+    {
+      "text": "most professional embedded engineers take Raspberry Berry Pi.",
+      "viText": "hầu hết các kỹ sư nhúng chuyên nghiệp đều sử dụng Raspberry Berry Pi.",
+      "start": 418.22,
+      "duration": 4.11
+    },
+    {
+      "text": "The Raspberry Pi is not a microcontroller.",
+      "viText": "Raspberry Pi không phải là một bộ vi điều khiển.",
+      "start": 422.33,
+      "duration": 2.83
+    },
+    {
+      "text": "It is a full single board computer, and that distinction changes everything.",
+      "viText": "Nó là một chiếc máy tính bo mạch đơn hoàn chỉnh và sự khác biệt đó đã thay đổi mọi thứ.",
+      "start": 425.16,
+      "duration": 5.12
+    },
+    {
+      "text": "The Pi4 runs a quad core ARM Cortex A72 at 1.",
+      "viText": "Pi4 chạy ARM Cortex A72 lõi tứ ở tốc độ 1.",
+      "start": 430.28,
+      "duration": 3.03
+    },
+    {
+      "text": "8 GHz, supports up to 8 GB of LPDDR4 RAM, has USB 3.",
+      "viText": "8 GHz, hỗ trợ RAM LPDDR4 lên tới 8 GB, có USB 3.",
+      "start": 433.31,
+      "duration": 3.5
+    },
+    {
+      "text": "0 0 GB Ethernet, dual micro HDMI outputs capable of driving 4K displays and",
+      "viText": "0 0 GB Ethernet, đầu ra micro HDMI kép có khả năng điều khiển màn hình 4K và",
+      "start": 436.81,
+      "duration": 5.05
+    },
+    {
+      "text": "runs a full Linux operating system from a micro SD card.",
+      "viText": "chạy hệ điều hành Linux đầy đủ từ thẻ micro SD.",
+      "start": 441.86,
+      "duration": 3.77
+    },
+    {
+      "text": "Comrade that to the ESP32 with 520 KBs of RAM.",
+      "viText": "Đồng chí đó với ESP32 với RAM 520 KB.",
+      "start": 445.63,
+      "duration": 3.1
+    },
+    {
+      "text": "The Pi4 has over 15,000 times more memory.",
+      "viText": "Pi4 có bộ nhớ lớn hơn 15.000 lần.",
+      "start": 448.73,
+      "duration": 2.83
+    },
+    {
+      "text": "That gap explains the difference in capability.",
+      "viText": "Khoảng cách đó giải thích sự khác biệt về năng lực.",
+      "start": 451.56,
+      "duration": 3.16
+    },
+    {
+      "text": "A Pi can run a web server, a database, Python scripts with full NumPy",
+      "viText": "Một Pi có thể chạy máy chủ web, cơ sở dữ liệu, tập lệnh Python với đầy đủ NumPy",
+      "start": 454.72,
+      "duration": 4.65
+    },
+    {
+      "text": "and OpenCV libraries, a web browser, and even a full desktop environment with a",
+      "viText": "và thư viện OpenCV, trình duyệt web và thậm chí cả môi trường máy tính để bàn đầy đủ với",
+      "start": 459.37,
+      "duration": 5.32
+    },
+    {
+      "text": "graphical interface.",
+      "viText": "giao diện đồ họa.",
+      "start": 464.69,
+      "duration": 2
+    },
+    {
+      "text": "What it cannot do well is real-time hardware control.",
+      "viText": "Điều nó không thể làm tốt là kiểm soát phần cứng theo thời gian thực.",
+      "start": 466.69,
+      "duration": 3.57
+    },
+    {
+      "text": "Linux is not a real-time operating system.",
+      "viText": "Linux không phải là hệ điều hành thời gian thực.",
+      "start": 470.26,
+      "duration": 2.83
+    },
+    {
+      "text": "So, GPIO timing on a Pi is inconsistent and unreliable for precision tasks.",
+      "viText": "Vì vậy, thời gian GPIO trên Pi không nhất quán và không đáng tin cậy đối với các tác vụ chính xác.",
+      "start": 473.09,
+      "duration": 5.05
+    },
+    {
+      "text": "You would not use a Pi to generate a precise PWM signal for a",
+      "viText": "Bạn sẽ không sử dụng Pi để tạo tín hiệuPWM chính xác cho",
+      "start": 478.14,
+      "duration": 4.11
+    },
+    {
+      "text": "motor controller.",
+      "viText": "bộ điều khiển động cơ.",
+      "start": 482.25,
+      "duration": 2
+    },
+    {
+      "text": "But you would absolutely use one to process a camera feed, host a local",
+      "viText": "Nhưng bạn chắc chắn sẽ sử dụng một cái để xử lý nguồn cấp dữ liệu máy ảnh, lưu trữ",
+      "start": 484.25,
+      "duration": 4.78
+    },
+    {
+      "text": "API, or run a TensorFlow light model for image classification.",
+      "viText": "cục bộ API hoặc chạy mô hình ánh sáng TensorFlow để phân loại hình ảnh.",
+      "start": 489.03,
+      "duration": 4.17
+    },
+    {
+      "text": "Think of it less as a dev board and more as a tiny hackable",
+      "viText": "Hãy nghĩ về nó ít hơn như một bảng phát triển mà giống như một bảng nhỏ có thể hack được",
+      "start": 493.2,
+      "duration": 3.97
+    },
+    {
+      "text": "Linux computer that happens to have GPIO pins on the side.",
+      "viText": "Máy tính Linux tình cờ có các chân GPIO ở bên cạnh.",
+      "start": 497.17,
+      "duration": 3.9
+    },
+    {
+      "text": "Beaglebone Black.",
+      "viText": "Xương rồng đen.",
+      "start": 501.07,
+      "duration": 2
+    },
+    {
+      "text": "The Beagle Bone Black is probably the most underrated board on this list.",
+      "viText": "Beagle Bone Black có lẽ là loại ván bị đánh giá thấp nhất trong danh sách này.",
+      "start": 503.07,
+      "duration": 4.91
+    },
+    {
+      "text": "It runs a 1 GHz ARM Cortex A8 with 512 MGB of RAM and",
+      "viText": "Nó chạy ARM Cortex A8 1 GHz với RAM 512 MGB và",
+      "start": 507.98,
+      "duration": 3.57
+    },
+    {
+      "text": "4 GB of built-in eMMC storage.",
+      "viText": "4 GB dung lượng lưu trữ eMMC tích hợp.",
+      "start": 511.55,
+      "duration": 2.02
+    },
+    {
+      "text": "Like the Raspberry Pi, it runs full Linux.",
+      "viText": "Giống như Raspberry Pi, nó chạy Linux đầy đủ.",
+      "start": 513.57,
+      "duration": 2.83
+    },
+    {
+      "text": "But the Beagle Bone has something the Pi simply does not have.",
+      "viText": "Nhưng Beagle Bone có thứ mà Pi không có.",
+      "start": 516.4,
+      "duration": 4.17
+    },
+    {
+      "text": "two onboard programmable real-time units or PRUS.",
+      "viText": "hai đơn vị thời gian thực có thể lập trình được hoặc PRUS.",
+      "start": 520.57,
+      "duration": 3.3
+    },
+    {
+      "text": "These are 200 MHz 32-bit processors that run independently from the main CPU.",
+      "viText": "Đây là những bộ xử lý 32 bit 200 MHz chạy độc lập với CPU chính.",
+      "start": 523.87,
+      "duration": 5.18
+    },
+    {
+      "text": "They execute bare metal code with deterministic nanocondle level timing.",
+      "viText": "Họ thực thi mã kim loại trần với thời gian ở cấp độ nanocondle xác định.",
+      "start": 529.05,
+      "duration": 4.85
+    },
+    {
+      "text": "That means you get the best of both worlds on a single board.",
+      "viText": "Điều đó có nghĩa là bạn tận dụng tối đa cả hai thế giới trên một bảng duy nhất.",
+      "start": 533.9,
+      "duration": 4.11
+    },
+    {
+      "text": "A full Linux environment for your application logic and networking and microcontroller grade precision",
+      "viText": "Một môi trường Linux đầy đủ cho logic ứng dụng, mạng và độ chính xác cấp vi điều khiển của bạn",
+      "start": 538.01,
+      "duration": 6.87
+    },
+    {
+      "text": "for your hardware control layer.",
+      "viText": "cho lớp điều khiển phần cứng của bạn.",
+      "start": 544.88,
+      "duration": 2.15
+    },
+    {
+      "text": "No second board needed.",
+      "viText": "Không cần bảng thứ hai.",
+      "start": 547.03,
+      "duration": 2
+    },
+    {
+      "text": "It also has 65 GPIO pins compared to the Pi's 40, more analog inputs,",
+      "viText": "Nó cũng có 65 chân GPIO so với 40 chân của Pi, nhiều đầu vào analog hơn,",
+      "start": 549.03,
+      "duration": 4.65
+    },
+    {
+      "text": "and multiple PWM outputs natively available.",
+      "viText": "và nhiều đầu raPWM vốn có sẵn.",
+      "start": 553.68,
+      "duration": 2.96
+    },
+    {
+      "text": "Beagle Bone is widely used in CNC machines, robotics, industrial automation, and any application",
+      "viText": "Beagle Bone được sử dụng rộng rãi trong máy CNC, robot, tự động hóa công nghiệp và bất kỳ ứng dụng nào",
+      "start": 556.64,
+      "duration": 6.46
+    },
+    {
+      "text": "where Linux flexibility and real-time hardware precision must coexist on the same device.",
+      "viText": "trong đó tính linh hoạt của Linux và độ chính xác của phần cứng theo thời gian thực phải cùng tồn tại trên cùng một thiết bị.",
+      "start": 563.1,
+      "duration": 5.99
+    },
+    {
+      "text": "The community is smaller than the pies and the documentation is denser.",
+      "viText": "Cộng đồng nhỏ hơn những chiếc bánh và tài liệu dày đặc hơn.",
+      "start": 569.09,
+      "duration": 4.78
+    },
+    {
+      "text": "But for engineers who know exactly what they need, the Beagle Bone is genuinely",
+      "viText": "Nhưng đối với những kỹ sư biết chính xác những gì họ cần, Beagle Bone thực sự",
+      "start": 573.87,
+      "duration": 5.32
+    },
+    {
+      "text": "hard to replace.",
+      "viText": "khó thay thế.",
+      "start": 579.19,
+      "duration": 2
+    },
+    {
+      "text": "Nvidia Jetson Nano.",
+      "viText": "Nvidia Jetson Nano.",
+      "start": 581.19,
+      "duration": 2
+    },
+    {
+      "text": "The Raspberry Pi is a tiny Linux computer.",
+      "viText": "Raspberry Pi là một máy tính Linux nhỏ.",
+      "start": 583.19,
+      "duration": 2.83
+    },
+    {
+      "text": "The Jetson Nano is a tiny AI computer.",
+      "viText": "Jetson Nano là một máy tính AI nhỏ.",
+      "start": 586.02,
+      "duration": 2.56
+    },
+    {
+      "text": "It packs a quad-core ARM Cortex A57 CPU alongside a 128 core Maxwell GPU",
+      "viText": "Nó tích hợp CPU ARM Cortex A57 lõi ​​tứ cùng với GPU Maxwell 128 lõi",
+      "start": 588.58,
+      "duration": 4.85
+    },
+    {
+      "text": "with 4 GB of LPDDR4 RAM and 16 GB of eMMC storage.",
+      "viText": "với 4 GB RAM LPDDR4 và 16 GB dung lượng lưu trữ eMMC.",
+      "start": 593.43,
+      "duration": 3.37
+    },
+    {
+      "text": "The GPU is the entire point of this board.",
+      "viText": "GPU là toàn bộ điểm của bo mạch này.",
+      "start": 596.8,
+      "duration": 2.83
+    },
+    {
+      "text": "The Raspberry Pi 4 has no meaningful GPU compute capability for machine learning workloads.",
+      "viText": "Raspberry Pi 4 không có khả năng tính toán GPU đáng kể cho khối lượng công việc học máy.",
+      "start": 599.63,
+      "duration": 6.13
+    },
+    {
+      "text": "Its theoretical AI performance sits at roughly 0.",
+      "viText": "Hiệu suất AI về mặt lý thuyết của nó nằm ở mức khoảng 0.",
+      "start": 605.76,
+      "duration": 3.3
+    },
+    {
+      "text": "1 tops.",
+      "viText": "1 ngọn.",
+      "start": 609.06,
+      "duration": 2
+    },
+    {
+      "text": "The Jetson Nano delivers 472 GF flops of FP16 compute.",
+      "viText": "Jetson Nano cung cấp 472 GF thất bại trong tính toán FP16.",
+      "start": 611.06,
+      "duration": 3.64
+    },
+    {
+      "text": "That is enough to run real-time object detection with YOLO 3 pose estimation, facial",
+      "viText": "Thế là đủ để chạy phát hiện đối tượng theo thời gian thực với ước tính tư thế YOLO 3, khuôn mặt",
+      "start": 614.7,
+      "duration": 5.66
+    },
+    {
+      "text": "recognition, and semantic segmentation.",
+      "viText": "nhận dạng và phân đoạn theo ngữ nghĩa.",
+      "start": 620.36,
+      "duration": 2.63
+    },
+    {
+      "text": "All processed locally on the device with no cloud dependency whatsoever.",
+      "viText": "Tất cả được xử lý cục bộ trên thiết bị mà không phụ thuộc vào đám mây.",
+      "start": 622.99,
+      "duration": 4.85
+    },
+    {
+      "text": "It runs Jetack, which is Nvidia's Linux-based SDK.",
+      "viText": "Nó chạy Jetack, SDK dựa trên Linux của Nvidia.",
+      "start": 627.84,
+      "duration": 3.37
+    },
+    {
+      "text": "With full support for CUDA, Tensor RT, and Deepstream.",
+      "viText": "Với sự hỗ trợ đầy đủ cho CUDA, Tensor RT và Deepstream.",
+      "start": 631.21,
+      "duration": 3.64
+    },
+    {
+      "text": "The trade-off versus a Raspberry Pi is cost and power consumption.",
+      "viText": "Sự đánh đổi so với Raspberry Pi là chi phí và mức tiêu thụ điện năng.",
+      "start": 634.85,
+      "duration": 4.44
+    },
+    {
+      "text": "The Jetson Nano is significantly more expensive and draws considerably more electricity.",
+      "viText": "Jetson Nano đắt hơn đáng kể và tiêu thụ nhiều điện hơn.",
+      "start": 639.29,
+      "duration": 5.92
+    },
+    {
+      "text": "But if your project involves a camera and a neural network running in real",
+      "viText": "Nhưng nếu dự án của bạn liên quan đến một camera và mạng lưới thần kinh chạy trong",
+      "start": 645.21,
+      "duration": 4.98
+    },
+    {
+      "text": "time, there is no real comparison at this price point.",
+      "viText": "thực thời gian, không có sự so sánh thực sự ở mức giá này.",
+      "start": 650.19,
+      "duration": 3.64
+    },
+    {
+      "text": "The Jetson Nano sits in its own category for accessible edge AI development.",
+      "viText": "Jetson Nano nằm trong danh mục riêng dành cho việc phát triển AI biên dễ tiếp cận.",
+      "start": 653.83,
+      "duration": 5.12
+    },
+    {
+      "text": "Google Coral Dev Board.",
+      "viText": "Ban phát triển Google Coral.",
+      "start": 658.95,
+      "duration": 2
+    },
+    {
+      "text": "The Google Coral is another option for running AI at the edge, but it",
+      "viText": "Google Coral là một lựa chọn khác để chạy AI ở biên, nhưng nó",
+      "start": 660.95,
+      "duration": 4.65
+    },
+    {
+      "text": "takes a completely different approach from the Jetson Nano.",
+      "viText": "có cách tiếp cận hoàn toàn khác với Jetson Nano.",
+      "start": 665.6,
+      "duration": 3.97
+    },
+    {
+      "text": "Instead of using a GPU for neural network inference, the Coral uses Google's edge",
+      "viText": "Thay vì sử dụng GPU để suy luận mạng thần kinh, Coral sử dụng công nghệ biên của Google",
+      "start": 669.57,
+      "duration": 5.45
+    },
+    {
+      "text": "TPU, which stands for Tensor Processing Unit.",
+      "viText": "TPU là viết tắt của Đơn vị xử lý Tensor.",
+      "start": 675.02,
+      "duration": 3.03
+    },
+    {
+      "text": "This is a purpose-built chip designed specifically to run TensorFlow light models with maximum",
+      "viText": "Đây là con chip chuyên dụng được thiết kế đặc biệt để chạy các mẫu đèn TensorFlow với",
+      "start": 678.05,
+      "duration": 6.33
+    },
+    {
+      "text": "efficiency and minimum power draw.",
+      "viText": "tối đa hiệu quả và tiêu thụ điện năng tối thiểu.",
+      "start": 684.38,
+      "duration": 2.29
+    },
+    {
+      "text": "The Coral Devboard runs a quad-core ARM Cortex A53 at 1.",
+      "viText": "Coral Devboard chạy ARM Cortex A53 lõi tứ ở tốc độ 1.",
+      "start": 686.67,
+      "duration": 3.77
+    },
+    {
+      "text": "5 GHz with 1 GB of RAM, plus the Edge TPU co-processor, which delivers",
+      "viText": "5 GHz với RAM 1 GB, cộng với bộ đồng xử lý Edge TPU, mang lại",
+      "start": 690.44,
+      "duration": 4.71
+    },
+    {
+      "text": "four tops of inference performance.",
+      "viText": "bốn đỉnh của hiệu suất suy luận.",
+      "start": 695.15,
+      "duration": 2.36
+    },
+    {
+      "text": "That is actually higher raw throughput than the Jetson Nano on supported model types",
+      "viText": "Đó thực sự là thông lượng thô cao hơn Jetson Nano trên các loại mô hình được hỗ trợ",
+      "start": 697.51,
+      "duration": 5.66
+    },
+    {
+      "text": "while drawing significantly less power, usually around 2 watts under full load compared to",
+      "viText": "trong khi tiêu thụ ít điện năng hơn đáng kể, thường khoảng 2 watt khi đầy tải so với",
+      "start": 703.17,
+      "duration": 6.06
+    },
+    {
+      "text": "the Jetson's 5 to 10 watts.",
+      "viText": "Jetson từ 5 đến 10 watt.",
+      "start": 709.23,
+      "duration": 2
+    },
+    {
+      "text": "The trade-off is flexibility.",
+      "viText": "Sự đánh đổi là tính linh hoạt.",
+      "start": 711.23,
+      "duration": 2
+    },
+    {
+      "text": "The Jetson Nano supports CUDA and can run a wide range of AI frameworks",
+      "viText": "Jetson Nano hỗ trợ CUDA và có thể chạy nhiều khung AI",
+      "start": 713.23,
+      "duration": 4.78
+    },
+    {
+      "text": "and model architectures.",
+      "viText": "và các kiến ​​trúc mô hình.",
+      "start": 718.01,
+      "duration": 2
+    },
+    {
+      "text": "The Coral only runs TensorFlow light models and those models must be compiled specifically",
+      "viText": "Coral chỉ chạy các model ánh sáng TensorFlow và các model đó phải được biên dịch cụ thể",
+      "start": 720.01,
+      "duration": 6.06
+    },
+    {
+      "text": "for the edge TPU before deployment.",
+      "viText": "cho cạnh TPU trước khi triển khai.",
+      "start": 726.07,
+      "duration": 2.36
+    },
+    {
+      "text": "So if your project fits within that ecosystem, the Coral is faster and far",
+      "viText": "Vì vậy, nếu dự án của bạn phù hợp với hệ sinh thái đó, Coral sẽ nhanh hơn và xa hơn",
+      "start": 728.43,
+      "duration": 4.98
+    },
+    {
+      "text": "more power efficient per inference.",
+      "viText": "hiệu quả năng lượng hơn cho mỗi suy luận.",
+      "start": 733.41,
+      "duration": 2.36
+    },
+    {
+      "text": "If you need broader framework support, custom model architectures or ondevice training, the Jetson",
+      "viText": "Nếu bạn cần hỗ trợ khung rộng hơn, kiến ​​trúc mô hình tùy chỉnh hoặc đào tạo trên thiết bị, Jetson",
+      "start": 735.77,
+      "duration": 6.6
+    },
+    {
+      "text": "is still the better pick.",
+      "viText": "vẫn là lựa chọn tốt hơn.",
+      "start": 742.37,
+      "duration": 2
+    },
+    {
+      "text": "Tessel 2.",
+      "viText": "Tàu 2.",
+      "start": 744.37,
+      "duration": 2
+    },
+    {
+      "text": "The Tessel 2 takes a completely different approach from every other board on this",
+      "viText": "Tessel 2 có cách tiếp cận hoàn toàn khác với mọi bảng khác trên",
+      "start": 746.37,
+      "duration": 5.45
+    },
+    {
+      "text": "list.",
+      "viText": "list.",
+      "start": 751.82,
+      "duration": 2
+    },
+    {
+      "text": "It is built for JavaScript developers, not embedded engineers.",
+      "viText": "Nó được xây dựng cho các nhà phát triển JavaScript, không phải cho các kỹ sư nhúng.",
+      "start": 753.82,
+      "duration": 4.17
+    },
+    {
+      "text": "It runs as a MediaTek MT7620n processor at 580 MHz with 64 MGB of",
+      "viText": "Nó chạy dưới dạng bộ xử lý MediaTek MT7620n ở tốc độ 580 MHz với 64 MGB",
+      "start": 757.99,
+      "duration": 4.38
+    },
+    {
+      "text": "RAM.",
+      "viText": "RAM.",
+      "start": 762.37,
+      "duration": 2
+    },
+    {
+      "text": "Running a lightweight Linux environment with Node.",
+      "viText": "Chạy môi trường Linux nhẹ với Node.",
+      "start": 764.37,
+      "duration": 3.37
+    },
+    {
+      "text": "js builtin from the start.",
+      "viText": "js được tích hợp ngay từ đầu.",
+      "start": 767.74,
+      "duration": 2
+    },
+    {
+      "text": "That means you write your firmware in JavaScript.",
+      "viText": "Điều đó có nghĩa là bạn viết chương trình cơ sở của mình bằng JavaScript.",
+      "start": 769.74,
+      "duration": 3.3
+    },
+    {
+      "text": "You use npm packages directly.",
+      "viText": "Bạn sử dụng gói npm trực tiếp.",
+      "start": 773.04,
+      "duration": 2.02
+    },
+    {
+      "text": "You interact with sensors and motors.",
+      "viText": "Bạn tương tác với các cảm biến và động cơ.",
+      "start": 775.06,
+      "duration": 2.49
+    },
+    {
+      "text": "a jobs pi.",
+      "viText": "một công việc pi.",
+      "start": 777.55,
+      "duration": 2
+    },
+    {
+      "text": "No C, no Python, no new development tools to learn.",
+      "viText": "Không C, không Python, không có công cụ phát triển mới để học.",
+      "start": 779.55,
+      "duration": 3.43
+    },
+    {
+      "text": "It also has built-in Wi-Fi, USB host support, and two dedicated module ports that",
+      "viText": "Nó cũng có Wi-Fi tích hợp, hỗ trợ máy chủ USB và hai cổng mô-đun chuyên dụng",
+      "start": 782.98,
+      "duration": 5.45
+    },
+    {
+      "text": "accept plug-and-play hardware modules for things like GPS, Bluetooth, ambient light sensors, and servo",
+      "viText": "chấp nhận các mô-đun phần cứng cắm và chạy cho những thứ như GPS, Bluetooth, cảm biến ánh sáng xung quanh và servo",
+      "start": 788.43,
+      "duration": 6.87
+    },
+    {
+      "text": "motor control.",
+      "viText": "điều khiển động cơ.",
+      "start": 795.3,
+      "duration": 2
+    },
+    {
+      "text": "Compared to the ESP32, the Tessle is far less power efficient and more expensive",
+      "viText": "So với ESP32, Tessle tiết kiệm điện hơn nhiều và đắt hơn",
+      "start": 797.3,
+      "duration": 5.39
+    },
+    {
+      "text": "for what you get in raw hardware.",
+      "viText": "cho những gì bạn nhận được từ phần cứng thô.",
+      "start": 802.69,
+      "duration": 2.22
+    },
+    {
+      "text": "Compared to a Raspberry Pi, it is more constrained but faster to prototype on",
+      "viText": "So với Raspberry Pi, nó bị hạn chế hơn nhưng nhanh hơn khi tạo nguyên mẫu trên",
+      "start": 804.91,
+      "duration": 5.18
+    },
+    {
+      "text": "if JavaScript is your primary language.",
+      "viText": "nếu JavaScript là ngôn ngữ chính của bạn.",
+      "start": 810.09,
+      "duration": 2.63
+    },
+    {
+      "text": "The Tessle never captured widespread mainstream adoption, but it represents a real and valid",
+      "viText": "Tessle chưa bao giờ được áp dụng phổ biến rộng rãi, nhưng nó đại diện cho một",
+      "start": 812.72,
+      "duration": 6.19
+    },
+    {
+      "text": "philosophy.",
+      "viText": "thực sự và hợp lệ. triết lý.",
+      "start": 818.91,
+      "duration": 2
+    },
+    {
+      "text": "The best dev board for any developer is the one that speaks their language.",
+      "viText": "Hội đồng phát triển tốt nhất cho bất kỳ nhà phát triển nào là hội đồng nói được ngôn ngữ của họ.",
+      "start": 820.91,
+      "duration": 5.05
+    },
+    {
+      "text": "For full stack web developers who want to build hardware without learning an entirely",
+      "viText": "Dành cho các nhà phát triển web full stack muốn xây dựng phần cứng mà không cần học toàn bộ",
+      "start": 825.96,
+      "duration": 5.72
+    },
+    {
+      "text": "new tool chain, the Tessle lowers that barrier dramatically.",
+      "viText": "chuỗi công cụ mới, Tessle hạ thấp rào cản đó một cách đáng kể.",
+      "start": 831.68,
+      "duration": 4.04
+    },
+    {
+      "text": "Particle Photon.",
+      "viText": "Hạt Photon.",
+      "start": 835.72,
+      "duration": 2
+    },
+    {
+      "text": "The Particle Photon is less about raw specs and more about what surrounds the",
+      "viText": "Hạt Photon ít nói về thông số kỹ thuật thô mà nói nhiều hơn về những gì xung quanh",
+      "start": 837.72,
+      "duration": 5.18
+    },
+    {
+      "text": "hardware.",
+      "viText": "phần cứng.",
+      "start": 842.9,
+      "duration": 2
+    },
+    {
+      "text": "It runs an STM32F 205 ARM Cortex M3 at 120 MHz with 1 MGAB",
+      "viText": "Nó chạy STM32F 205 ARM Cortex M3 ở tốc độ 120 MHz với 1 MGAB",
+      "start": 844.9,
+      "duration": 3.9
+    },
+    {
+      "text": "of flash and 128 kilob of RAM.",
+      "viText": "flash và 128 kilob RAM.",
+      "start": 848.8,
+      "duration": 2.02
+    },
+    {
+      "text": "Those are solid microcontroller specs in the same ballpark as a mid-range STM32.",
+      "viText": "Đó là những thông số kỹ thuật vi điều khiển vững chắc trong cùng sân chơi với STM32 tầm trung.",
+      "start": 850.82,
+      "duration": 5.39
+    },
+    {
+      "text": "It has built-in Wi-Fi through a Broadcom module and is programmed through Particles cloud-based",
+      "viText": "Nó có Wi-Fi tích hợp thông qua mô-đun Broadcom và được lập trình thông qua Particles dựa trên đám mây",
+      "start": 856.21,
+      "duration": 6.4
+    },
+    {
+      "text": "IDE.",
+      "viText": "IDE.",
+      "start": 862.61,
+      "duration": 2
+    },
+    {
+      "text": "But what makes it genuinely different from everything else on this list is the",
+      "viText": "Nhưng điều khiến nó thực sự khác biệt so với mọi thứ khác trong danh sách này là",
+      "start": 864.61,
+      "duration": 5.25
+    },
+    {
+      "text": "Particle device OS and cloud platform.",
+      "viText": "Hệ điều hành thiết bị hạt và nền tảng đám mây.",
+      "start": 869.86,
+      "duration": 2.56
+    },
+    {
+      "text": "Every Photon is automatically registered to your Particle account.",
+      "viText": "Mọi Photon đều được tự động đăng ký vào tài khoản Hạt của bạn.",
+      "start": 872.42,
+      "duration": 4.44
+    },
+    {
+      "text": "It can receive over-the-air firmware updates, publish sensor data to the cloud, subscribe to",
+      "viText": "Nó có thể nhận các bản cập nhật chương trình cơ sở không dây, xuất bản dữ liệu cảm biến lên đám mây, đăng ký",
+      "start": 876.86,
+      "duration": 6.19
+    },
+    {
+      "text": "remote commands, and be monitored across an entire fleet of devices, all out of",
+      "viText": "lệnh từ xa và được giám sát trên toàn bộ nhóm thiết bị, tất cả đều từ",
+      "start": 883.05,
+      "duration": 5.32
+    },
+    {
+      "text": "the box with zero additional infrastructure setup.",
+      "viText": "hộp không có thiết lập cơ sở hạ tầng bổ sung.",
+      "start": 888.37,
+      "duration": 3.37
+    },
+    {
+      "text": "Compare that to an ESP32 where you would need to build all of that",
+      "viText": "So sánh điều đó với một chiếc ESP32 nơi bạn sẽ cần xây dựng tất cả những thứ đó",
+      "start": 891.74,
+      "duration": 4.44
+    },
+    {
+      "text": "yourself.",
+      "viText": "bản thân bạn.",
+      "start": 896.18,
+      "duration": 2
+    },
+    {
+      "text": "OTAA update servers, fleet management dashboards, cloud messaging pipelines, device monitoring systems.",
+      "viText": "Máy chủ cập nhật OTAA, bảng điều khiển quản lý nhóm, đường dẫn nhắn tin trên đám mây, hệ thống giám sát thiết bị.",
+      "start": 898.18,
+      "duration": 6.93
+    },
+    {
+      "text": "For a hobbyist working on a single device, that overhead might not matter.",
+      "viText": "Đối với người có sở thích làm việc trên một thiết bị duy nhất, chi phí đó có thể không thành vấn đề.",
+      "start": 905.11,
+      "duration": 4.98
+    },
+    {
+      "text": "But for a startup shipping 500 connected products to paying customers, Particle eliminates months",
+      "viText": "Nhưng đối với một công ty khởi nghiệp vận chuyển 500 sản phẩm được kết nối cho khách hàng trả tiền, Particle sẽ loại bỏ hàng tháng",
+      "start": 910.09,
+      "duration": 6.53
+    },
+    {
+      "text": "of backend engineering work.",
+      "viText": "của công việc kỹ thuật phụ trợ.",
+      "start": 916.62,
+      "duration": 2
+    },
+    {
+      "text": "It bridges the gap between prototype and finished product better than any other board",
+      "viText": "Nó thu hẹp khoảng cách giữa nguyên mẫu và thành phẩm tốt hơn bất kỳ bảng nào khác",
+      "start": 918.62,
+      "duration": 5.72
+    },
+    {
+      "text": "on this list.",
+      "viText": "trong danh sách này.",
+      "start": 924.34,
+      "duration": 2
+    },
+    {
+      "text": "Anyway, I also made some other cool videos, too.",
+      "viText": "Dù sao thì tôi cũng đã làm một số video thú vị khác.",
+      "start": 926.34,
+      "duration": 3.23
+    },
+    {
+      "text": "Don't forget to watch them later.",
+      "viText": "Đừng quên xem chúng sau.",
+      "start": 929.57,
+      "duration": 2.22
+    },
+    {
+      "text": "Okay.",
+      "viText": "Okay.",
+      "start": 931.79,
+      "duration": 2
+    }
+  ]
+}

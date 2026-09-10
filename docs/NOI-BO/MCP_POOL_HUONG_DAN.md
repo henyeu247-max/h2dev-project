@@ -12,7 +12,7 @@ MCP Pool là một **MCP server tập trung** chạy trên VPS, gộp **17 nhóm
 | Thông số | Giá trị |
 |----------|---------|
 | **Endpoint** | `https://mcp-pool.tonymmo.com/mcp` |
-| **Auth** | `Authorization: [REDACTED-MCP-POOL-2026-08-31]` HOẶC `X-API-Key: mcp-pool-2026-secure-key` |
+| **Auth** | `Authorization: [REDACTED-MCP-POOL-2026-08-31]` HOẶC `X-API-Key: mcp-pool-[REDACTED]` |
 | **Transport** | MCP Streamable HTTP (JSON-RPC) |
 | **Tools** | 194 tools / 17 nhóm |
 | **Server (VPS)** | `103.249.201.164` (aaPanel, Nginx, PM2) |
@@ -92,7 +92,7 @@ Ví dụ: vidiq__vidiq_youtube_search, firecrawl__firecrawl_scrape, ui-skills__l
       "url": "https://mcp-pool.tonymmo.com/mcp",
       "headers": {
         "Authorization": "[REDACTED-MCP-POOL-2026-08-31]",
-        "X-API-Key": "mcp-pool-2026-secure-key"
+        "X-API-Key": "mcp-pool-[REDACTED]"
       }
     }
   }
@@ -197,7 +197,7 @@ curl https://mcp-pool.tonymmo.com/health   # → {"tools":194,"status":"ok"}
 
 ## 8. CÁC ĐIỂM QUAN TRỌNG
 
-- **Key mặc định hiện tại**: `mcp-pool-2026-secure-key` → **KHÔNG nên giữ lâu**, đổi thành key mạnh hơn nếu cần.
+- **Key mặc định hiện tại**: `mcp-pool-[REDACTED]` → **KHÔNG nên giữ lâu**, đổi thành key mạnh hơn nếu cần.
 - **Camoufox** cần proxy cho site khó (đặt `CAMOUFOX_PROXY` trong `.env`).
 - **Trends** free 100 req/tháng.
 - **Local test** (Windows): 181 tools (thiếu camoufox vì không có venv Linux) — là bình thường.

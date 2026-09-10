@@ -1,0 +1,1505 @@
+{
+  "videoId": "sE2e3x4q85Q",
+  "title": "Electrical Engineering Simply Explained",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 249,
+  "fullText": "Struggling with math? Check out the Math Bundle. Five complete guides covering calculus, algebra, trigonometry, geometry, and statistics. No fluff, just clear explanations that actually make sense. Everything's laid out for you. Grab all five books in one place. Um, and if you're on your phone right now, just scan the QR code on screen to go straight to the site. Links are also in the description and comment section. Join hundreds of viewers who've already grabbed it. And now, let's get into it. You sat through a class where you memorized Ohm's law, drew circuit diagrams on paper, and calculated voltage drops well enough to pass a test. Then you closed the notebook and never actually understood what electricity is or what it does. That gap has probably followed you every time you've stared at a breaker panel or wondered why one charger fried your phone and another one didn't. This video closes that gap, not with more formulas to memorize, but with the actual understanding of what is happening inside the wires around you every day. Electrical engineering exists because electricity is a form of usable energy that you cannot see, and it is dangerous if left uncontrolled. Long before anyone built a power grid, people needed a systematic way to move energy from where it is generated to where it is needed and to do it safely and predictably. That is the real problem. This field solves a power plant makes electricity. A lamp, a motor or a laptop uses it. Everything in between exists to get that energy from the source to the task without anyone getting hurt and without the energy being wasted. Every single concept you are about to learn serves one of three purposes. Generating electricity, moving it somewhere, or converting it into useful work. Let's start with voltage. Voltage is the push behind electric charge. It is the difference in electrical potential between two points that makes charge want to move from one point to the other. Voltage exists because nothing in a circuit moves on its own. There has to be a difference, a kind of imbalance for current to flow at all. This matters because it explains why some electrical sources feel harmless and others do not. A car battery is rated at 12 Vts. You can touch both terminals with bare hands and feel nothing dangerous. A household outlet in the United States is rated at 120 volts and in many other countries at 240 volts. Touch the exposed contacts of that outlet and the result can be lethal. Every voltage source, whether it's a battery, a wall outlet, or a power line running down your street, is doing the exact same job at different scales. It is maintaining a difference in potential that will push charge through anything connected between its two points, including a human body. If that connection happens to form, the key point is that voltage is the pressure driving electricity and higher voltage means a stronger push behind the charge trying to move through you. Current is the next piece. Current is the actual rate at which charge flows through a conductor measured in amps. This matters because current, not voltage, is what does the work and what causes damage. A high voltage source with almost no current available can be far less dangerous than a lower voltage source that can deliver a lot of current. Here's what's actually happening when you plug the wrong charger into your phone. Every charger is rated for a certain amperage. If you use a charger built to deliver more current than your phone's battery and circuitry are designed to handle, the excess current shows up as heat inside the device. Over time or all at once, that heat degrades the battery or damages the internal circuitry. This is also why thick cables are used for high current applications like welding equipment or an electric vehicle charger. While a thin wire works fine for something like a phone charger that only needs to move a small current. The thickness of a conductor directly affects how much current it can carry without overheating. The key point is that current is the actual flow doing the work. And matching the rated amperage of a device matters just as much as matching its voltage. Resistance is what a material does when it opposes the flow of current. No material conducts electricity perfectly. Copper wire is an excellent conductor, but it still has some resistance, and that resistance turns a small amount of electrical energy into heat as current passes through it. This matters because resistance is not just a nuisance number in an equation. It is the reason wires can overheat. Think about a frayed or damaged extension cord. One where the copper strands inside have been cut or crushed in one section. That damaged section has less material to carry the same current. So its resistance increases at that exact point. All the heat that would normally spread evenly across the whole length of wire now concentrates in that one weak spot. And that is how extension cords catch fire. This same principle explains why some materials are chosen specifically for their high resistance. The heating element inside a toaster or a space heater is made from a material with deliberately high resistance because in that case the goal is to generate heat on purpose rather than avoid it. The key point is that resistance turns electrical energy into heat and damaged wiring concentrates that heat in one dangerous location instead of spreading it safely. Now those three ideas connect through Ohm's law. Ohm's law states that voltage equals current multiplied by resistance. This matters because it lets engineers predict exactly how a circuit will behave before they ever build it. If you know two of the three values, you can calculate the third. This is the important part because this single relationship is what allows an electrician to size a circuit breaker correctly for a home. If they know the voltage supplied and the expected resistance of the wiring and devices on that circuit, they can calculate how much current will flow and they choose a breaker rated to shut off power before that current gets high enough to overheat the wires. The key point is that Ohm's law is not an abstract formula. It is the calculation that keeps your home's wiring from becoming a fire hazard. Circuits are the actual paths that current travels along and how components are connected changes how the whole system behaves. In a series circuit, everything is connected along a single path one after another. In a parallel circuit, components are connected along separate branches that all draw from the same source. Here is why this matters in practice. Old style holiday lights were wired in series. So if one bulb burned out, it broke the entire path and the whole string went dark. Modern LED holiday lights are wired in parallel. So each bulb has its own independent path back to the source. And one burned out bulb has no effect on the rest of the string. The key point is that the way components are wired together, not just what the components are, determines how a failure in one part affects the whole system. Power is the rate at which energy is used or delivered and it is calculated as voltage multiplied by current. This matters because power measured in watts is exactly what your electric bill charges you for. It is also what determines how much heat and demand a device places on a circuit. Compare a 1500 W space heater to a 60W light bulb plugged into the same outlet. The space heater draws far more current at the same voltage, which is why running it alongside other hydraw appliances on one circuit can trip a breaker, while the light bulb could run for hours without ever coming close to that limit. This is also why appliance labels list wattage instead of just current. Wattage gives you the full picture of demand in a single number, combining both the voltage supplied and the current the device draws. A homeowner adding up the wattage of everything plugged into one circuit, a microwave, a coffee maker, and a toaster running at the same time, can predict whether that circuit is about to trip before it actually happens. The key point is that wattage tells you the real demand a device places on your electrical system. And that demand is what circuits and breakers are built to handle safely. Electricity also comes in two forms, alternating current and direct current. Alternating current or AC is electricity that reverses direction periodically. Direct current or DC flows in one direction only. Both exist because each is better suited to a different job. AC is what your power company sends to your home because it can be transmitted over long distances with far less energy loss than DC. Most electronics, on the other hand, actually run on DC internally. Now, here's why this matters to you. That bulky brick built into your laptop charger is not just a plug. It contains a converter that takes the AC power from your wall outlet and transforms it into the steady DC power your laptop's battery and circuits actually need. Without that conversion step, plugging your laptop directly into a wall outlet would destroy it instantly. This same conversion is happening inside a car as well, just in the opposite direction. A car's alternator actually generates alternating current while the engine runs, but the car's battery and most of its electrical systems run on direct current. So, the alternator includes a built-in converter that changes that AC into DC before it ever reaches the battery. The key point is that the electricity in your walls and the electricity your devices run on are not the same thing and that brick is doing real work every time you charge something. The last core concept is grounding. Grounding provides a safe path for excess or stray current to travel into the earth instead of through a person's body. It exists specifically as a protection mechanism against electrical faults. This matters because without it, a malfunctioning appliance or a damaged wire inside a wall could send current through anyone who happens to touch it. This is why a three-prongong outlet is safer than an older two-prong outlet. The third prong connects to a dedicated ground path. So if a fault occurs inside a device, the excess current has a safe route to follow instead of passing through whoever is holding it. This is also why appliances with a metal casing, like a washing machine or a power drill, are required to have a grounded plug. If a wire inside ever comes loose and touches that metal casing, the ground path carries the current away safely instead of leaving the entire casing electrically charged and waiting for someone to touch it. The key point is that grounding is not decoration on a plug. It is an active safety system working every time you use a properly wired outlet. Let me show you exactly how this works when all of these ideas come together in a real situation. Picture a homeowner adding a window air conditioning unit to an older bedroom that only has one outlet on a shared circuit. The circuit is rated at 120 volts. The new AC unit has a specific amperage rating printed on its label, and that current draw adds to whatever else is already running on that same circuit. The wire running to that outlet has a fixed gauge, which determines its resistance and how much current it can safely carry before overheating. Using power equals voltage multiplied by current, an electrician can calculate the total wattage demand of everything on that circuit at once. If the combined current draw exceeds what the wire gauge and the breaker are rated to handle safely, the breaker will trip or worse, the wire could overheat before the breaker reacts. This is exactly why an electrician calculates total amperage on a circuit before approving a new appliance installation. Skipping that step is how homeowners end up with breakers that trip constantly or in worst cases wiring that overheats inside the wall where nobody can see it happening. A few mistakes come up constantly and they are easy to make because the language around electricity gets used loosely in everyday conversation. People often treat voltage and current as if they are the same thing, assuming that anything labeled high voltage is automatically more dangerous. The fix is remembering that current is what actually causes harm and voltage is simply the force driving that current. So the real danger depends on both together. Another common mistake is assuming that any device is safe to plug in as long as it physically fits the outlet without considering its wattage relative to what else is running on that circuit. The fix is checking the total load, not just whether the plug matches the socket. People also tend to think of AC and DC as just two arbitrary types of electricity rather than understanding why each one is used where it is. The fix is connecting the choice directly to the job. AC for long-d distanceance transmission and DC for most electronic components. Finally, many people treat grounding as a building code technicality rather than an active safety feature, which is easy to do since you never see it working under normal conditions. The fix is understanding that grounding only becomes visible in its job the moment something goes wrong and that is exactly when you need it working correctly. This understanding pays off in specific situations. Choosing the correct gauge extension cord for a power tool matters because the wrong gauge risks overheating and fire, especially on long runs or highdraw tools. Understanding your home's breaker panel well enough to know why a specific circuit keeps tripping can save you an unnecessary electrician visit. Or it can stop you from ignoring a real hazard by simply resetting the breaker over and over. Reading the voltage and amperage label on a charger or adapter before buying one prevents damaging expensive electronics with a mismatched power source. Recognizing where GFCI outlets are required in kitchens, bathrooms, and outdoor spaces prevents a dangerous shock in exactly the locations where water and electricity are most likely to meet. You can now look at any electrical spec label and understand exactly what it is telling you. You can explain why a breaker trips instead of just resetting it and hoping it does not happen again. You can evaluate whether an outlet or a circuit can safely handle a new device before you ever plug it in. You are no longer working from memorized formulas. You now have the actual working model that electrical engineers use to think through these problems. And that is the understanding you should have walked away with the first time you sat through this material. Before you go, do like hundreds of others and make sure to grab the math bundle. Simply scan the QR code or click on the link in the description box. You don't want to miss out on this one.",
+  "fullTextVi": "Đấu tranh với toán học? Kiểm tra Gói Toán học. Năm hướng dẫn đầy đủ bao gồm phép tính, đại số, lượng giác, hình học và thống kê. Không nói suông, chỉ cần giải thích rõ ràng và thực sự có ý nghĩa. Mọi thứ đã được bày sẵn cho bạn. Lấy tất cả năm cuốn sách ở một nơi. Ừm, và nếu bạn đang sử dụng điện thoại, chỉ cần quét mã QR trên màn hình để đi thẳng đến trang web. Các liên kết cũng có trong phần mô tả và bình luận. Tham gia cùng hàng trăm người xem đã nắm bắt nó. Và bây giờ, chúng ta hãy đi sâu vào nó. Bạn đã tham gia một lớp học mà bạn ghi nhớ định luật Ohm, vẽ sơ đồ mạch điện trên giấy và điện áp được tính toán giảm đủ tốt để vượt qua bài kiểm tra. Sau đó, bạn đóng cuốn sổ lại và không bao giờ thực sự hiểu điện là gì hay nó có. Khoảng trống đó chắc hẳn đã theo bạn mỗi khi bạn nhìn chằm chằm vào bảng cầu dao hoặc thắc mắc tại sao một bộ sạc lại làm hỏng điện thoại của bạn còn bộ sạc khác thì không. Video này sẽ thu hẹp khoảng cách đó, không phải bằng nhiều công thức hơn để ghi nhớ mà bằng sự hiểu biết thực sự về những gì đang diễn ra hàng ngày bên trong những sợi dây xung quanh bạn. Kỹ thuật điện tồn tại vì điện là một dạng năng lượng có thể sử dụng được mà bạn không thể thấy, và sẽ rất nguy hiểm nếu không được kiểm soát. Rất lâu trước khi có người xây dựng lưới điện, con người cần một phương pháp di chuyển có hệ thống năng lượng từ nơi nó được tạo ra đến nơi cần thiết và để làm nó một cách an toàn và có thể dự đoán được. Đó là vấn đề thực sự. Lĩnh vực này giải quyết một nhà máy điện tạo ra điện năng. Một chiếc đèn, một động cơ hoặc một chiếc laptop sử dụng nó. Mọi thứ ở giữa tồn tại để lấy năng lượng đó từ nguồn đến nhiệm vụ mà không ai bị thương và không lãng phí năng lượng. Mỗi khái niệm bạn sắp học đều phục vụ một trong ba mục đích. Tạo ra điện, di chuyển nó đi đâu đó hoặc biến nó thành công việc hữu ích. Hãy bắt đầu với điện áp. Điện áp là lực đẩy đằng sau điện tích. Chính sự chênh lệch điện thế giữa hai điểm khiến cho điện tích muốn có để di chuyển từ điểm này sang điểm khác. Điện áp tồn tại vì không có gì trong mạch tự chuyển động. Phải có một sự khác biệt, một sự mất cân bằng nào đó để dòng điện chạy qua không hề. Điều này quan trọng vì nó giải thích tại sao một số nguồn điện lại vô hại còn những nguồn khác thì có không. Một ắc quy ô tô được đánh giá ở mức 12 Vts. Bạn có thể chạm vào cả hai thiết bị đầu cuối bằng tay trần và không cảm thấy gì nguy hiểm. Một ổ cắm gia dụng ở Hoa Kỳ có điện áp định mức là 120 volt và ở mức nhiều quốc gia khác ở mức 240 volt. Chạm vào các điểm tiếp xúc hở của ổ cắm đó và kết quả có thể gây chết người. Mọi nguồn điện áp, dù là pin, ổ cắm trên tường hay đường dây điện chạy xuống phố của bạn, đang thực hiện cùng một công việc ở các quy mô khác nhau. Nó đang duy trì một sự khác biệt về điện thế sẽ đẩy điện tích qua bất cứ thứ gì được kết nối giữa hai điểm của nó, bao gồm cả cơ thể con người. Nếu kết nối đó hình thành, điểm mấu chốt là điện áp là áp suất truyền động điện và điện áp cao hơn có nghĩa là lực đẩy mạnh hơn phía sau điện tích đang cố gắng để di chuyển qua bạn. Hiện tại là phần tiếp theo. Dòng điện là tốc độ thực tế mà điện tích chạy qua một dây dẫn được đo bằng amp. Điều này quan trọng bởi vì dòng điện chứ không phải điện áp mới là tác nhân và nguyên nhân gây ra hư hại. Một nguồn điện áp cao hầu như không có dòng điện có thể ít nguy hiểm hơn nhiều hơn một nguồn điện áp thấp hơn có thể cung cấp nhiều dòng điện. Đây là điều thực sự xảy ra khi bạn cắm nhầm bộ sạc vào điện thoại. Mỗi bộ sạc được đánh giá cho một cường độ dòng điện nhất định. Nếu bạn sử dụng bộ sạc được thiết kế để cung cấp dòng điện lớn hơn pin điện thoại của bạn và mạch điện được thiết kế để xử lý, dòng điện dư thừa sẽ biểu hiện dưới dạng nhiệt bên trong thiết bị. Theo thời gian hoặc cùng một lúc, lượng nhiệt đó sẽ làm suy giảm pin hoặc làm hỏng mạch bên trong. Đây cũng là lý do tại sao cáp dày được sử dụng cho các ứng dụng có dòng điện cao như hàn thiết bị hoặc bộ sạc xe điện. Trong khi một sợi dây mỏng lại hoạt động tốt đối với những thứ như bộ sạc điện thoại chỉ có cần phải di chuyển một dòng điện nhỏ. Độ dày của dây dẫn ảnh hưởng trực tiếp đến lượng dòng điện mà nó có thể mang theo khi không có quá nóng. Điểm mấu chốt là dòng điện là dòng thực tế đang thực hiện công. Và việc khớp cường độ dòng điện định mức của một thiết bị cũng quan trọng như việc khớp điện áp của nó. Điện trở là tác dụng của vật liệu khi nó chống lại dòng điện. Không có vật liệu nào dẫn điện hoàn hảo. Dây đồng là một chất dẫn điện tuyệt vời, nhưng nó vẫn có một số điện trở, đó là điện trở biến một lượng nhỏ năng lượng điện thành nhiệt khi dòng điện chạy qua Nó. Điều này quan trọng vì điện trở không chỉ là một con số phiền toái trong một phương trình. Đó là lý do dây có thể bị quá nóng. Hãy nghĩ đến một sợi dây nối dài bị sờn hoặc hư hỏng. Nơi mà các sợi đồng bên trong đã bị cắt hoặc nghiền nát thành một phần. Phần bị hư hỏng đó có ít vật liệu hơn để mang cùng dòng điện. Vì vậy, sức đề kháng của nó tăng lên tại thời điểm chính xác đó. Toàn bộ lượng nhiệt thường tỏa đều trên toàn bộ chiều dài của dây bây giờ tập trung vào điểm yếu đó. Và đó là lý do dây nối dài bắt lửa. Nguyên tắc tương tự này giải thích tại sao một số vật liệu được chọn đặc biệt vì khả năng chống chịu cao của chúng. Bộ phận làm nóng bên trong máy nướng bánh mì hoặc máy sưởi không gian được làm từ vật liệu có điện trở cao có chủ ý vì trong trường hợp đó mục tiêu là tạo ra cố tình làm nóng hơn là tránh nó. Điểm mấu chốt là điện trở biến năng lượng điện thành nhiệt và làm hỏng hệ thống dây điện tập trung nhiệt lượng đó vào một vị trí nguy hiểm thay vì lan tỏa nó một cách an toàn. Bây giờ ba ý tưởng đó kết nối thông qua định luật Ohm. Định luật Ohm quy định rằng điện áp bằng dòng điện nhân với điện trở. Điều này quan trọng vì nó cho phép các kỹ sư dự đoán chính xác cách thức hoạt động của mạch trước họ từng xây dựng nó. Nếu bạn biết hai trong ba giá trị, bạn có thể tính giá trị thứ ba. Đây là phần quan trọng vì mối quan hệ duy nhất này là thứ cho phép một thợ điện để xác định kích thước chính xác của cầu dao cho một ngôi nhà. Nếu họ biết điện áp được cung cấp và điện trở dự kiến ​​của hệ thống dây điện và các thiết bị trên mạch đó, chúng có thể tính toán cường độ dòng điện sẽ chạy qua và chúng chọn cầu dao có khả năng ngắt điện trước khi dòng điện đó đủ cao làm dây dẫn quá nóng. Điểm mấu chốt là định luật Ohm không phải là một công thức trừu tượng. Chính sự tính toán này đã giúp hệ thống dây điện trong nhà của bạn không trở thành mối nguy hiểm hỏa hoạn. Mạch điện là đường dẫn thực tế mà dòng điện di chuyển và cách các thành phần được kết nối thay đổi cách toàn bộ hệ thống hoạt động. Trong mạch nối tiếp, mọi thứ được kết nối lần lượt dọc theo một đường dẫn duy nhất. Trong mạch song song, các thành phần được kết nối dọc theo các nhánh riêng biệt, tất cả đều lấy từ cùng một nguồn. Đây là lý do tại sao điều này lại quan trọng trong thực tế. Đèn ngày lễ kiểu cũ được mắc nối tiếp. Vì vậy, nếu một bóng đèn bị cháy, nó sẽ phá vỡ toàn bộ lối đi và toàn bộ chuỗi trở nên tối tăm. Đèn nghỉ lễ LED hiện đại được nối dây song song. Vì vậy, mỗi bóng đèn có đường dẫn độc lập riêng về nguồn. Và một bóng đèn bị cháy không ảnh hưởng gì đến phần còn lại của sợi dây. Điểm mấu chốt là cách các thành phần được kết nối với nhau chứ không chỉ là các thành phần xác định lỗi ở một bộ phận sẽ ảnh hưởng như thế nào đến toàn bộ hệ thống. Công suất là tốc độ sử dụng hoặc phân phối năng lượng và đó là được tính bằng điện áp nhân với dòng điện. Điều này quan trọng vì công suất đo bằng watt chính xác là giá trị hóa đơn tiền điện của bạn bạn cho. Nó cũng là yếu tố quyết định lượng nhiệt và nhu cầu mà thiết bị đặt vào một mạch điện. So sánh máy sưởi không gian 1500 W với bóng đèn 60W cắm vào cùng một ổ cắm. Máy sưởi không gian tiêu thụ nhiều dòng điện hơn ở cùng một điện áp, đó là lý do tại sao chạy nó cùng với các thiết bị hydraw khác trên một mạch có thể làm ngắt cầu dao, trong khi bóng đèn có thể chạy hàng giờ mà không bao giờ đạt đến giới hạn đó. Đây cũng là lý do tại sao nhãn thiết bị liệt kê công suất thay vì chỉ dòng điện. Công suất cung cấp cho bạn bức tranh đầy đủ về nhu cầu trong một con số duy nhất, kết hợp cả hai điện áp được cung cấp và dòng điện mà thiết bị tiêu thụ. Một chủ nhà cộng công suất của mọi thứ cắm vào một mạch điện, lò vi sóng, một máy pha cà phê và một máy nướng bánh mì chạy cùng lúc có thể dự đoán liệu mạch đó sắp ngắt trước khi nó thực sự xảy ra. Điểm mấu chốt là công suất cho bạn biết nhu cầu thực sự của một thiết bị trên hệ thống điện của bạn. Và nhu cầu đó chính là thứ mà các mạch và cầu dao được chế tạo để xử lý một cách an toàn. Dòng điện cũng có hai dạng là dòng điện xoay chiều và dòng điện một chiều. Dòng điện xoay chiều hoặc AC là dòng điện đảo chiều định kỳ. Dòng điện một chiều hoặc DC chỉ chạy theo một hướng. Cả hai đều tồn tại vì mỗi cái phù hợp hơn với một công việc khác nhau. AC là thứ mà công ty điện lực gửi đến nhà bạn vì nó có thể là truyền qua khoảng cách xa với tổn thất năng lượng ít hơn nhiều so với DC. Mặt khác, hầu hết các thiết bị điện tử thực sự chạy bằng DC bên trong. Bây giờ, đây là lý do tại sao điều này quan trọng với bạn. Cục gạch cồng kềnh được tích hợp trong bộ sạc máy tính xách tay của bạn không chỉ là một phích cắm. Nó chứa một bộ chuyển đổi lấy nguồn điện AC từ ổ cắm trên tường của bạn và biến nó thành nguồn DC ổn định mà pin và mạch điện của máy tính xách tay của bạn thực sự cần. Nếu không có bước chuyển đổi đó, việc cắm trực tiếp máy tính xách tay của bạn vào ổ cắm trên tường sẽ làm hỏng nó ngay lập tức. Sự chuyển đổi tương tự này cũng đang diễn ra bên trong ô tô, ngược lại phương hướng. Máy phát điện của ô tô thực sự tạo ra dòng điện xoay chiều trong khi động cơ chạy, nhưng pin và hầu hết các hệ thống điện của nó đều chạy bằng dòng điện một chiều. Vì vậy, máy phát điện bao gồm một bộ chuyển đổi tích hợp để thay đổi AC thành DC trước nó bao giờ đạt tới pin. Điểm mấu chốt là điện trong tường của bạn và điện của bạn các thiết bị chạy trên đó không giống nhau và cục gạch đó đang hoạt động thật làm việc mỗi khi bạn sạc một cái gì đó. Khái niệm cốt lõi cuối cùng là nối đất. Việc nối đất cung cấp một đường đi an toàn cho dòng điện dư thừa hoặc rò rỉ đi vào trái đất thay vì thông qua cơ thể con người. Nó tồn tại đặc biệt như một cơ chế bảo vệ chống lại các sự cố về điện. Điều này quan trọng vì nếu không có nó, thiết bị sẽ bị trục trặc hoặc dây điện bị hỏng bên trong bức tường có thể truyền dòng điện qua bất kỳ ai tình cờ chạm vào nó. Đây là lý do tại sao ổ cắm ba ngạnh an toàn hơn ổ cắm hai ngạnh cũ. Ngạnh thứ ba kết nối với một con đường đất chuyên dụng. Vì vậy, nếu xảy ra lỗi bên trong thiết bị, dòng điện dư thừa có an toàn đường để đi theo thay vì đi qua người đang giữ nó. Đây cũng là lý do tại sao các thiết bị có vỏ kim loại, như máy giặt hoặc máy khoan điện phải có phích cắm nối đất. Nếu dây bên trong bị lỏng và chạm vào vỏ kim loại đó thì nối đất đường dẫn mang dòng điện đi một cách an toàn thay vì để toàn bộ vỏ được tích điện và chờ đợi ai đó chạm vào nó. Điểm mấu chốt là nối đất không phải là trang trí trên phích cắm. Đây là một hệ thống an toàn chủ động hoạt động mỗi khi bạn sử dụng dây chỗ thoát. Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó khi tất cả những ý tưởng này xuất hiện cùng nhau trong một tình huống thực tế. Hãy hình dung một chủ nhà lắp thêm một chiếc máy điều hòa không khí có cửa sổ vào một phòng ngủ cũ chỉ có một ổ cắm trên một mạch chia sẻ. Mạch được đánh giá ở mức 120 volt. Bộ AC mới có định mức cường độ dòng điện cụ thể được in trên nhãn và mức rút hiện tại sẽ bổ sung vào bất cứ thứ gì khác đang chạy trên cùng một mạch đó. Dây chạy vào ổ cắm đó có thước đo cố định, xác định điện trở của nó và nó có thể mang theo bao nhiêu dòng điện một cách an toàn trước khi quá nóng. Dùng công suất bằng điện áp nhân với dòng điện, người thợ điện có thể tính được tổng công suất nhu cầu của tất cả mọi thứ trên mạch đó cùng một lúc. Nếu mức rút dòng điện tổng hợp vượt quá thước đo dây và cầu dao được đánh giá là có thể xử lý an toàn, cầu dao sẽ bị ngắt hoặc tệ hơn là dây có thể bị quá nóng trước khi máy cắt phản ứng. Đây chính xác là lý do tại sao thợ điện tính toán tổng cường độ dòng điện trên mạch điện trước khi phê duyệt lắp đặt thiết bị mới. Bỏ qua bước đó là việc chủ nhà sẽ gặp phải cầu dao ngắt liên tục hoặc trong trường hợp xấu nhất, hệ thống dây điện quá nóng bên trong bức tường mà không ai có thể nhìn thấy đang xảy ra. Một số lỗi liên tục xuất hiện và chúng rất dễ mắc phải vì ngôn ngữ xung quanh điện được sử dụng một cách lỏng lẻo trong cuộc trò chuyện hàng ngày. Mọi người thường coi điện áp và dòng điện như thể chúng là một, giả sử rằng bất cứ thứ gì được dán nhãn điện áp cao đều tự động nguy hiểm hơn. Cách khắc phục là hãy nhớ rằng dòng điện thực sự gây ra tác hại và điện áp là chỉ đơn giản là lực điều khiển dòng điện đó. Vì vậy, mối nguy hiểm thực sự phụ thuộc vào cả hai. Một lỗi phổ biến khác là cho rằng mọi thiết bị đều an toàn khi cắm dưới dạng miễn là nó phù hợp về mặt vật lý với ổ cắm mà không cần xem xét công suất của nó so với công suất khác đang chạy trên mạch đó. Cách khắc phục là kiểm tra tổng tải chứ không chỉ kiểm tra xem phích cắm có khớp với hay không ổ cắm. Mọi người cũng có xu hướng nghĩ AC và DC chỉ là hai loại tùy ý về điện hơn là tìm hiểu lý do tại sao mỗi thiết bị được sử dụng ở vị trí đó. Cách khắc phục là kết nối lựa chọn trực tiếp với công việc. AC để truyền khoảng cách xa và DC cho hầu hết các linh kiện điện tử. Cuối cùng, nhiều người coi việc nối đất như một kỹ thuật của mã xây dựng hơn là hoạt động tính năng an toàn, điều này rất dễ thực hiện vì bạn chưa bao giờ thấy nó hoạt động trong điều kiện bình thường. Cách khắc phục là hiểu rằng việc nối đất chỉ hiển thị trong công việc của nó vào thời điểm đã xảy ra sự cố và đó chính xác là lúc bạn cần nó hoạt động chính xác. Sự hiểu biết này sẽ được đền đáp trong những tình huống cụ thể. Việc chọn đúng dây nối dài cho dụng cụ điện rất quan trọng vì sai máy đo có nguy cơ quá nóng và cháy, đặc biệt là khi chạy lâu hoặc dụng cụ rút cao. Hiểu rõ về bảng điều khiển cầu dao của nhà bạn đủ để biết tại sao một mạch điện cụ thể lại giữ vấp ngã có thể giúp bạn tránh được việc phải đến gặp thợ điện không cần thiết. Hoặc nó có thể ngăn bạn bỏ qua mối nguy hiểm thực sự bằng cách đặt lại ngắt đi lặp lại. Đọc nhãn điện áp và cường độ dòng điện trên bộ sạc hoặc bộ chuyển đổi trước khi mua ngăn ngừa hư hỏng các thiết bị điện tử đắt tiền với nguồn điện không phù hợp. Nhận biết những nơi cần có ổ cắm GFCI trong nhà bếp, phòng tắm và không gian ngoài trời sẽ ngăn chặn sốc nguy hiểm ngay tại những vị trí dễ bị mất nước, mất điện nhất gặp. Bây giờ bạn có thể nhìn vào bất kỳ nhãn thông số kỹ thuật điện nào và hiểu chính xác nó là gì đang nói với bạn. Bạn có thể giải thích tại sao cầu dao ngắt điện thay vì chỉ đặt lại nó và hy vọng nó không xảy ra lần nữa. Bạn có thể đánh giá liệu một ổ cắm hoặc một mạch điện có thể xử lý một cách an toàn mới hay không thiết bị trước khi bạn cắm nó vào. Bạn không còn làm việc từ những công thức đã ghi nhớ nữa. Bây giờ bạn đã có mô hình làm việc thực tế mà các kỹ sư điện sử dụng để suy nghĩ những vấn đề này. Và đó là sự hiểu biết mà lẽ ra bạn nên bỏ qua ngay lần đầu tiên bạn đã ngồi xem hết tài liệu này. Trước khi đi, hãy làm như hàng trăm người khác và nhớ lấy bó toán học. Chỉ cần quét mã QR hoặc nhấp vào liên kết trong hộp mô tả. Bạn không muốn bỏ lỡ điều này.",
+  "segments": [
+    {
+      "text": "Struggling with math?",
+      "viText": "Đấu tranh với toán học?",
+      "start": 0,
+      "duration": 2
+    },
+    {
+      "text": "Check out the Math Bundle.",
+      "viText": "Kiểm tra Gói Toán học.",
+      "start": 2,
+      "duration": 2
+    },
+    {
+      "text": "Five complete guides covering calculus, algebra, trigonometry, geometry, and statistics.",
+      "viText": "Năm hướng dẫn đầy đủ bao gồm phép tính, đại số, lượng giác, hình học và thống kê.",
+      "start": 4,
+      "duration": 5.35
+    },
+    {
+      "text": "No fluff, just clear explanations that actually make sense.",
+      "viText": "Không nói suông, chỉ cần giải thích rõ ràng và thực sự có ý nghĩa.",
+      "start": 9.35,
+      "duration": 3.59
+    },
+    {
+      "text": "Everything's laid out for you.",
+      "viText": "Mọi thứ đã được bày sẵn cho bạn.",
+      "start": 12.94,
+      "duration": 2
+    },
+    {
+      "text": "Grab all five books in one place.",
+      "viText": "Lấy tất cả năm cuốn sách ở một nơi.",
+      "start": 14.94,
+      "duration": 2.01
+    },
+    {
+      "text": "Um, and if you're on your phone right now, just scan the QR code",
+      "viText": "Ừm, và nếu bạn đang sử dụng điện thoại, chỉ cần quét mã QR",
+      "start": 16.95,
+      "duration": 3.89
+    },
+    {
+      "text": "on screen to go straight to the site.",
+      "viText": "trên màn hình để đi thẳng đến trang web.",
+      "start": 20.84,
+      "duration": 2.25
+    },
+    {
+      "text": "Links are also in the description and comment section.",
+      "viText": "Các liên kết cũng có trong phần mô tả và bình luận.",
+      "start": 23.09,
+      "duration": 3.28
+    },
+    {
+      "text": "Join hundreds of viewers who've already grabbed it.",
+      "viText": "Tham gia cùng hàng trăm người xem đã nắm bắt nó.",
+      "start": 26.37,
+      "duration": 3.1
+    },
+    {
+      "text": "And now, let's get into it.",
+      "viText": "Và bây giờ, chúng ta hãy đi sâu vào nó.",
+      "start": 29.47,
+      "duration": 2
+    },
+    {
+      "text": "You sat through a class where you memorized Ohm's law, drew circuit diagrams on",
+      "viText": "Bạn đã tham gia một lớp học mà bạn ghi nhớ định luật Ohm, vẽ sơ đồ mạch điện trên",
+      "start": 31.47,
+      "duration": 4.8
+    },
+    {
+      "text": "paper, and calculated voltage drops well enough to pass a test.",
+      "viText": "giấy và điện áp được tính toán giảm đủ tốt để vượt qua bài kiểm tra.",
+      "start": 36.27,
+      "duration": 3.83
+    },
+    {
+      "text": "Then you closed the notebook and never actually understood what electricity is or what",
+      "viText": "Sau đó, bạn đóng cuốn sổ lại và không bao giờ thực sự hiểu điện là gì hay",
+      "start": 40.1,
+      "duration": 5.23
+    },
+    {
+      "text": "it does.",
+      "viText": "nó có.",
+      "start": 45.33,
+      "duration": 2
+    },
+    {
+      "text": "That gap has probably followed you every time you've stared at a breaker panel",
+      "viText": "Khoảng trống đó chắc hẳn đã theo bạn mỗi khi bạn nhìn chằm chằm vào bảng cầu dao",
+      "start": 47.33,
+      "duration": 4.74
+    },
+    {
+      "text": "or wondered why one charger fried your phone and another one didn't.",
+      "viText": "hoặc thắc mắc tại sao một bộ sạc lại làm hỏng điện thoại của bạn còn bộ sạc khác thì không.",
+      "start": 52.07,
+      "duration": 4.14
+    },
+    {
+      "text": "This video closes that gap, not with more formulas to memorize, but with the",
+      "viText": "Video này sẽ thu hẹp khoảng cách đó, không phải bằng nhiều công thức hơn để ghi nhớ mà bằng",
+      "start": 56.21,
+      "duration": 4.62
+    },
+    {
+      "text": "actual understanding of what is happening inside the wires around you every day.",
+      "viText": "sự hiểu biết thực sự về những gì đang diễn ra hàng ngày bên trong những sợi dây xung quanh bạn.",
+      "start": 60.83,
+      "duration": 4.87
+    },
+    {
+      "text": "Electrical engineering exists because electricity is a form of usable energy that you cannot",
+      "viText": "Kỹ thuật điện tồn tại vì điện là một dạng năng lượng có thể sử dụng được mà bạn không thể",
+      "start": 65.7,
+      "duration": 5.59
+    },
+    {
+      "text": "see, and it is dangerous if left uncontrolled.",
+      "viText": "thấy, và sẽ rất nguy hiểm nếu không được kiểm soát.",
+      "start": 71.29,
+      "duration": 2.8
+    },
+    {
+      "text": "Long before anyone built a power grid, people needed a systematic way to move",
+      "viText": "Rất lâu trước khi có người xây dựng lưới điện, con người cần một phương pháp di chuyển có hệ thống",
+      "start": 74.09,
+      "duration": 4.68
+    },
+    {
+      "text": "energy from where it is generated to where it is needed and to do",
+      "viText": "năng lượng từ nơi nó được tạo ra đến nơi cần thiết và để làm",
+      "start": 78.77,
+      "duration": 3.95
+    },
+    {
+      "text": "it safely and predictably.",
+      "viText": "nó một cách an toàn và có thể dự đoán được.",
+      "start": 82.72,
+      "duration": 2
+    },
+    {
+      "text": "That is the real problem.",
+      "viText": "Đó là vấn đề thực sự.",
+      "start": 84.72,
+      "duration": 2
+    },
+    {
+      "text": "This field solves a power plant makes electricity.",
+      "viText": "Lĩnh vực này giải quyết một nhà máy điện tạo ra điện năng.",
+      "start": 86.72,
+      "duration": 3.04
+    },
+    {
+      "text": "A lamp, a motor or a laptop uses it.",
+      "viText": "Một chiếc đèn, một động cơ hoặc một chiếc laptop sử dụng nó.",
+      "start": 89.76,
+      "duration": 2.19
+    },
+    {
+      "text": "Everything in between exists to get that energy from the source to the task",
+      "viText": "Mọi thứ ở giữa tồn tại để lấy năng lượng đó từ nguồn đến nhiệm vụ",
+      "start": 91.95,
+      "duration": 4.56
+    },
+    {
+      "text": "without anyone getting hurt and without the energy being wasted.",
+      "viText": "mà không ai bị thương và không lãng phí năng lượng.",
+      "start": 96.51,
+      "duration": 3.89
+    },
+    {
+      "text": "Every single concept you are about to learn serves one of three purposes.",
+      "viText": "Mỗi khái niệm bạn sắp học đều phục vụ một trong ba mục đích.",
+      "start": 100.4,
+      "duration": 4.44
+    },
+    {
+      "text": "Generating electricity, moving it somewhere, or converting it into useful work.",
+      "viText": "Tạo ra điện, di chuyển nó đi đâu đó hoặc biến nó thành công việc hữu ích.",
+      "start": 104.84,
+      "duration": 4.8
+    },
+    {
+      "text": "Let's start with voltage.",
+      "viText": "Hãy bắt đầu với điện áp.",
+      "start": 109.64,
+      "duration": 2
+    },
+    {
+      "text": "Voltage is the push behind electric charge.",
+      "viText": "Điện áp là lực đẩy đằng sau điện tích.",
+      "start": 111.64,
+      "duration": 2.62
+    },
+    {
+      "text": "It is the difference in electrical potential between two points that makes charge want",
+      "viText": "Chính sự chênh lệch điện thế giữa hai điểm khiến cho điện tích muốn có",
+      "start": 114.26,
+      "duration": 5.23
+    },
+    {
+      "text": "to move from one point to the other.",
+      "viText": "để di chuyển từ điểm này sang điểm khác.",
+      "start": 119.49,
+      "duration": 2.19
+    },
+    {
+      "text": "Voltage exists because nothing in a circuit moves on its own.",
+      "viText": "Điện áp tồn tại vì không có gì trong mạch tự chuyển động.",
+      "start": 121.68,
+      "duration": 3.71
+    },
+    {
+      "text": "There has to be a difference, a kind of imbalance for current to flow",
+      "viText": "Phải có một sự khác biệt, một sự mất cân bằng nào đó để dòng điện chạy qua",
+      "start": 125.39,
+      "duration": 4.2
+    },
+    {
+      "text": "at all.",
+      "viText": "không hề.",
+      "start": 129.59,
+      "duration": 2
+    },
+    {
+      "text": "This matters because it explains why some electrical sources feel harmless and others do",
+      "viText": "Điều này quan trọng vì nó giải thích tại sao một số nguồn điện lại vô hại còn những nguồn khác thì có",
+      "start": 131.59,
+      "duration": 5.35
+    },
+    {
+      "text": "not.",
+      "viText": "không.",
+      "start": 136.94,
+      "duration": 2
+    },
+    {
+      "text": "A car battery is rated at 12 Vts.",
+      "viText": "Một ắc quy ô tô được đánh giá ở mức 12 Vts.",
+      "start": 138.94,
+      "duration": 2.01
+    },
+    {
+      "text": "You can touch both terminals with bare hands and feel nothing dangerous.",
+      "viText": "Bạn có thể chạm vào cả hai thiết bị đầu cuối bằng tay trần và không cảm thấy gì nguy hiểm.",
+      "start": 140.95,
+      "duration": 4.38
+    },
+    {
+      "text": "A household outlet in the United States is rated at 120 volts and in",
+      "viText": "Một ổ cắm gia dụng ở Hoa Kỳ có điện áp định mức là 120 volt và ở mức",
+      "start": 145.33,
+      "duration": 4.14
+    },
+    {
+      "text": "many other countries at 240 volts.",
+      "viText": "nhiều quốc gia khác ở mức 240 volt.",
+      "start": 149.47,
+      "duration": 2.07
+    },
+    {
+      "text": "Touch the exposed contacts of that outlet and the result can be lethal.",
+      "viText": "Chạm vào các điểm tiếp xúc hở của ổ cắm đó và kết quả có thể gây chết người.",
+      "start": 151.54,
+      "duration": 4.32
+    },
+    {
+      "text": "Every voltage source, whether it's a battery, a wall outlet, or a power line",
+      "viText": "Mọi nguồn điện áp, dù là pin, ổ cắm trên tường hay đường dây điện",
+      "start": 155.86,
+      "duration": 4.62
+    },
+    {
+      "text": "running down your street, is doing the exact same job at different scales.",
+      "viText": "chạy xuống phố của bạn, đang thực hiện cùng một công việc ở các quy mô khác nhau.",
+      "start": 160.48,
+      "duration": 4.5
+    },
+    {
+      "text": "It is maintaining a difference in potential that will push charge through anything connected",
+      "viText": "Nó đang duy trì một sự khác biệt về điện thế sẽ đẩy điện tích qua bất cứ thứ gì được kết nối",
+      "start": 164.98,
+      "duration": 5.59
+    },
+    {
+      "text": "between its two points, including a human body.",
+      "viText": "giữa hai điểm của nó, bao gồm cả cơ thể con người.",
+      "start": 170.57,
+      "duration": 2.86
+    },
+    {
+      "text": "If that connection happens to form, the key point is that voltage is the",
+      "viText": "Nếu kết nối đó hình thành, điểm mấu chốt là điện áp là",
+      "start": 173.43,
+      "duration": 4.38
+    },
+    {
+      "text": "pressure driving electricity and higher voltage means a stronger push behind the charge trying",
+      "viText": "áp suất truyền động điện và điện áp cao hơn có nghĩa là lực đẩy mạnh hơn phía sau điện tích đang cố gắng",
+      "start": 177.81,
+      "duration": 5.72
+    },
+    {
+      "text": "to move through you.",
+      "viText": "để di chuyển qua bạn.",
+      "start": 183.53,
+      "duration": 2
+    },
+    {
+      "text": "Current is the next piece.",
+      "viText": "Hiện tại là phần tiếp theo.",
+      "start": 185.53,
+      "duration": 2
+    },
+    {
+      "text": "Current is the actual rate at which charge flows through a conductor measured in",
+      "viText": "Dòng điện là tốc độ thực tế mà điện tích chạy qua một dây dẫn được đo bằng",
+      "start": 187.53,
+      "duration": 4.87
+    },
+    {
+      "text": "amps.",
+      "viText": "amp.",
+      "start": 192.4,
+      "duration": 2
+    },
+    {
+      "text": "This matters because current, not voltage, is what does the work and what causes",
+      "viText": "Điều này quan trọng bởi vì dòng điện chứ không phải điện áp mới là tác nhân và nguyên nhân gây ra",
+      "start": 194.4,
+      "duration": 4.87
+    },
+    {
+      "text": "damage.",
+      "viText": "hư hại.",
+      "start": 199.27,
+      "duration": 2
+    },
+    {
+      "text": "A high voltage source with almost no current available can be far less dangerous",
+      "viText": "Một nguồn điện áp cao hầu như không có dòng điện có thể ít nguy hiểm hơn nhiều",
+      "start": 201.27,
+      "duration": 4.87
+    },
+    {
+      "text": "than a lower voltage source that can deliver a lot of current.",
+      "viText": "hơn một nguồn điện áp thấp hơn có thể cung cấp nhiều dòng điện.",
+      "start": 206.14,
+      "duration": 3.77
+    },
+    {
+      "text": "Here's what's actually happening when you plug the wrong charger into your phone.",
+      "viText": "Đây là điều thực sự xảy ra khi bạn cắm nhầm bộ sạc vào điện thoại.",
+      "start": 209.91,
+      "duration": 4.93
+    },
+    {
+      "text": "Every charger is rated for a certain amperage.",
+      "viText": "Mỗi bộ sạc được đánh giá cho một cường độ dòng điện nhất định.",
+      "start": 214.84,
+      "duration": 2.8
+    },
+    {
+      "text": "If you use a charger built to deliver more current than your phone's battery",
+      "viText": "Nếu bạn sử dụng bộ sạc được thiết kế để cung cấp dòng điện lớn hơn pin điện thoại của bạn",
+      "start": 217.64,
+      "duration": 4.62
+    },
+    {
+      "text": "and circuitry are designed to handle, the excess current shows up as heat inside",
+      "viText": "và mạch điện được thiết kế để xử lý, dòng điện dư thừa sẽ biểu hiện dưới dạng nhiệt bên trong",
+      "start": 222.26,
+      "duration": 4.87
+    },
+    {
+      "text": "the device.",
+      "viText": "thiết bị.",
+      "start": 227.13,
+      "duration": 2
+    },
+    {
+      "text": "Over time or all at once, that heat degrades the battery or damages the",
+      "viText": "Theo thời gian hoặc cùng một lúc, lượng nhiệt đó sẽ làm suy giảm pin hoặc làm hỏng",
+      "start": 229.13,
+      "duration": 4.32
+    },
+    {
+      "text": "internal circuitry.",
+      "viText": "mạch bên trong.",
+      "start": 233.45,
+      "duration": 2
+    },
+    {
+      "text": "This is also why thick cables are used for high current applications like welding",
+      "viText": "Đây cũng là lý do tại sao cáp dày được sử dụng cho các ứng dụng có dòng điện cao như hàn",
+      "start": 235.45,
+      "duration": 4.93
+    },
+    {
+      "text": "equipment or an electric vehicle charger.",
+      "viText": "thiết bị hoặc bộ sạc xe điện.",
+      "start": 240.38,
+      "duration": 2.49
+    },
+    {
+      "text": "While a thin wire works fine for something like a phone charger that only",
+      "viText": "Trong khi một sợi dây mỏng lại hoạt động tốt đối với những thứ như bộ sạc điện thoại chỉ có",
+      "start": 242.87,
+      "duration": 4.44
+    },
+    {
+      "text": "needs to move a small current.",
+      "viText": "cần phải di chuyển một dòng điện nhỏ.",
+      "start": 247.31,
+      "duration": 2
+    },
+    {
+      "text": "The thickness of a conductor directly affects how much current it can carry without",
+      "viText": "Độ dày của dây dẫn ảnh hưởng trực tiếp đến lượng dòng điện mà nó có thể mang theo khi không có",
+      "start": 249.31,
+      "duration": 5.05
+    },
+    {
+      "text": "overheating.",
+      "viText": "quá nóng.",
+      "start": 254.36,
+      "duration": 2
+    },
+    {
+      "text": "The key point is that current is the actual flow doing the work.",
+      "viText": "Điểm mấu chốt là dòng điện là dòng thực tế đang thực hiện công.",
+      "start": 256.36,
+      "duration": 3.89
+    },
+    {
+      "text": "And matching the rated amperage of a device matters just as much as matching",
+      "viText": "Và việc khớp cường độ dòng điện định mức của một thiết bị cũng quan trọng như việc khớp",
+      "start": 260.25,
+      "duration": 4.62
+    },
+    {
+      "text": "its voltage.",
+      "viText": "điện áp của nó.",
+      "start": 264.87,
+      "duration": 2
+    },
+    {
+      "text": "Resistance is what a material does when it opposes the flow of current.",
+      "viText": "Điện trở là tác dụng của vật liệu khi nó chống lại dòng điện.",
+      "start": 266.87,
+      "duration": 4.32
+    },
+    {
+      "text": "No material conducts electricity perfectly.",
+      "viText": "Không có vật liệu nào dẫn điện hoàn hảo.",
+      "start": 271.19,
+      "duration": 2.62
+    },
+    {
+      "text": "Copper wire is an excellent conductor, but it still has some resistance, and that",
+      "viText": "Dây đồng là một chất dẫn điện tuyệt vời, nhưng nó vẫn có một số điện trở, đó là",
+      "start": 273.81,
+      "duration": 4.93
+    },
+    {
+      "text": "resistance turns a small amount of electrical energy into heat as current passes through",
+      "viText": "điện trở biến một lượng nhỏ năng lượng điện thành nhiệt khi dòng điện chạy qua",
+      "start": 278.74,
+      "duration": 5.35
+    },
+    {
+      "text": "it.",
+      "viText": "Nó.",
+      "start": 284.09,
+      "duration": 2
+    },
+    {
+      "text": "This matters because resistance is not just a nuisance number in an equation.",
+      "viText": "Điều này quan trọng vì điện trở không chỉ là một con số phiền toái trong một phương trình.",
+      "start": 286.09,
+      "duration": 4.68
+    },
+    {
+      "text": "It is the reason wires can overheat.",
+      "viText": "Đó là lý do dây có thể bị quá nóng.",
+      "start": 290.77,
+      "duration": 2.19
+    },
+    {
+      "text": "Think about a frayed or damaged extension cord.",
+      "viText": "Hãy nghĩ đến một sợi dây nối dài bị sờn hoặc hư hỏng.",
+      "start": 292.96,
+      "duration": 2.86
+    },
+    {
+      "text": "One where the copper strands inside have been cut or crushed in one section.",
+      "viText": "Nơi mà các sợi đồng bên trong đã bị cắt hoặc nghiền nát thành một phần.",
+      "start": 295.82,
+      "duration": 4.62
+    },
+    {
+      "text": "That damaged section has less material to carry the same current.",
+      "viText": "Phần bị hư hỏng đó có ít vật liệu hơn để mang cùng dòng điện.",
+      "start": 300.44,
+      "duration": 3.95
+    },
+    {
+      "text": "So its resistance increases at that exact point.",
+      "viText": "Vì vậy, sức đề kháng của nó tăng lên tại thời điểm chính xác đó.",
+      "start": 304.39,
+      "duration": 2.92
+    },
+    {
+      "text": "All the heat that would normally spread evenly across the whole length of wire",
+      "viText": "Toàn bộ lượng nhiệt thường tỏa đều trên toàn bộ chiều dài của dây",
+      "start": 307.31,
+      "duration": 4.74
+    },
+    {
+      "text": "now concentrates in that one weak spot.",
+      "viText": "bây giờ tập trung vào điểm yếu đó.",
+      "start": 312.05,
+      "duration": 2.37
+    },
+    {
+      "text": "And that is how extension cords catch fire.",
+      "viText": "Và đó là lý do dây nối dài bắt lửa.",
+      "start": 314.42,
+      "duration": 2.62
+    },
+    {
+      "text": "This same principle explains why some materials are chosen specifically for their high resistance.",
+      "viText": "Nguyên tắc tương tự này giải thích tại sao một số vật liệu được chọn đặc biệt vì khả năng chống chịu cao của chúng.",
+      "start": 317.04,
+      "duration": 5.96
+    },
+    {
+      "text": "The heating element inside a toaster or a space heater is made from a",
+      "viText": "Bộ phận làm nóng bên trong máy nướng bánh mì hoặc máy sưởi không gian được làm từ",
+      "start": 323,
+      "duration": 4.2
+    },
+    {
+      "text": "material with deliberately high resistance because in that case the goal is to generate",
+      "viText": "vật liệu có điện trở cao có chủ ý vì trong trường hợp đó mục tiêu là tạo ra",
+      "start": 327.2,
+      "duration": 5.29
+    },
+    {
+      "text": "heat on purpose rather than avoid it.",
+      "viText": "cố tình làm nóng hơn là tránh nó.",
+      "start": 332.49,
+      "duration": 2.25
+    },
+    {
+      "text": "The key point is that resistance turns electrical energy into heat and damaged wiring",
+      "viText": "Điểm mấu chốt là điện trở biến năng lượng điện thành nhiệt và làm hỏng hệ thống dây điện",
+      "start": 334.74,
+      "duration": 5.17
+    },
+    {
+      "text": "concentrates that heat in one dangerous location instead of spreading it safely.",
+      "viText": "tập trung nhiệt lượng đó vào một vị trí nguy hiểm thay vì lan tỏa nó một cách an toàn.",
+      "start": 339.91,
+      "duration": 4.87
+    },
+    {
+      "text": "Now those three ideas connect through Ohm's law.",
+      "viText": "Bây giờ ba ý tưởng đó kết nối thông qua định luật Ohm.",
+      "start": 344.78,
+      "duration": 2.92
+    },
+    {
+      "text": "Ohm's law states that voltage equals current multiplied by resistance.",
+      "viText": "Định luật Ohm quy định rằng điện áp bằng dòng điện nhân với điện trở.",
+      "start": 347.7,
+      "duration": 4.26
+    },
+    {
+      "text": "This matters because it lets engineers predict exactly how a circuit will behave before",
+      "viText": "Điều này quan trọng vì nó cho phép các kỹ sư dự đoán chính xác cách thức hoạt động của mạch trước",
+      "start": 351.96,
+      "duration": 5.29
+    },
+    {
+      "text": "they ever build it.",
+      "viText": "họ từng xây dựng nó.",
+      "start": 357.25,
+      "duration": 2
+    },
+    {
+      "text": "If you know two of the three values, you can calculate the third.",
+      "viText": "Nếu bạn biết hai trong ba giá trị, bạn có thể tính giá trị thứ ba.",
+      "start": 359.25,
+      "duration": 3.95
+    },
+    {
+      "text": "This is the important part because this single relationship is what allows an electrician",
+      "viText": "Đây là phần quan trọng vì mối quan hệ duy nhất này là thứ cho phép một thợ điện",
+      "start": 363.2,
+      "duration": 5.41
+    },
+    {
+      "text": "to size a circuit breaker correctly for a home.",
+      "viText": "để xác định kích thước chính xác của cầu dao cho một ngôi nhà.",
+      "start": 368.61,
+      "duration": 2.86
+    },
+    {
+      "text": "If they know the voltage supplied and the expected resistance of the wiring and",
+      "viText": "Nếu họ biết điện áp được cung cấp và điện trở dự kiến ​​của hệ thống dây điện và",
+      "start": 371.47,
+      "duration": 4.8
+    },
+    {
+      "text": "devices on that circuit, they can calculate how much current will flow and they",
+      "viText": "các thiết bị trên mạch đó, chúng có thể tính toán cường độ dòng điện sẽ chạy qua và chúng",
+      "start": 376.27,
+      "duration": 4.8
+    },
+    {
+      "text": "choose a breaker rated to shut off power before that current gets high enough",
+      "viText": "chọn cầu dao có khả năng ngắt điện trước khi dòng điện đó đủ cao",
+      "start": 381.07,
+      "duration": 4.68
+    },
+    {
+      "text": "to overheat the wires.",
+      "viText": "làm dây dẫn quá nóng.",
+      "start": 385.75,
+      "duration": 2
+    },
+    {
+      "text": "The key point is that Ohm's law is not an abstract formula.",
+      "viText": "Điểm mấu chốt là định luật Ohm không phải là một công thức trừu tượng.",
+      "start": 387.75,
+      "duration": 3.59
+    },
+    {
+      "text": "It is the calculation that keeps your home's wiring from becoming a fire hazard.",
+      "viText": "Chính sự tính toán này đã giúp hệ thống dây điện trong nhà của bạn không trở thành mối nguy hiểm hỏa hoạn.",
+      "start": 391.34,
+      "duration": 4.87
+    },
+    {
+      "text": "Circuits are the actual paths that current travels along and how components are connected",
+      "viText": "Mạch điện là đường dẫn thực tế mà dòng điện di chuyển và cách các thành phần được kết nối",
+      "start": 396.21,
+      "duration": 5.41
+    },
+    {
+      "text": "changes how the whole system behaves.",
+      "viText": "thay đổi cách toàn bộ hệ thống hoạt động.",
+      "start": 401.62,
+      "duration": 2.25
+    },
+    {
+      "text": "In a series circuit, everything is connected along a single path one after another.",
+      "viText": "Trong mạch nối tiếp, mọi thứ được kết nối lần lượt dọc theo một đường dẫn duy nhất.",
+      "start": 403.87,
+      "duration": 5.05
+    },
+    {
+      "text": "In a parallel circuit, components are connected along separate branches that all draw from",
+      "viText": "Trong mạch song song, các thành phần được kết nối dọc theo các nhánh riêng biệt, tất cả đều lấy từ",
+      "start": 408.92,
+      "duration": 5.47
+    },
+    {
+      "text": "the same source.",
+      "viText": "cùng một nguồn.",
+      "start": 414.39,
+      "duration": 2
+    },
+    {
+      "text": "Here is why this matters in practice.",
+      "viText": "Đây là lý do tại sao điều này lại quan trọng trong thực tế.",
+      "start": 416.39,
+      "duration": 2.25
+    },
+    {
+      "text": "Old style holiday lights were wired in series.",
+      "viText": "Đèn ngày lễ kiểu cũ được mắc nối tiếp.",
+      "start": 418.64,
+      "duration": 2.8
+    },
+    {
+      "text": "So if one bulb burned out, it broke the entire path and the whole",
+      "viText": "Vì vậy, nếu một bóng đèn bị cháy, nó sẽ phá vỡ toàn bộ lối đi và toàn bộ",
+      "start": 421.44,
+      "duration": 3.95
+    },
+    {
+      "text": "string went dark.",
+      "viText": "chuỗi trở nên tối tăm.",
+      "start": 425.39,
+      "duration": 2
+    },
+    {
+      "text": "Modern LED holiday lights are wired in parallel.",
+      "viText": "Đèn nghỉ lễ LED hiện đại được nối dây song song.",
+      "start": 427.39,
+      "duration": 2.92
+    },
+    {
+      "text": "So each bulb has its own independent path back to the source.",
+      "viText": "Vì vậy, mỗi bóng đèn có đường dẫn độc lập riêng về nguồn.",
+      "start": 430.31,
+      "duration": 3.71
+    },
+    {
+      "text": "And one burned out bulb has no effect on the rest of the string.",
+      "viText": "Và một bóng đèn bị cháy không ảnh hưởng gì đến phần còn lại của sợi dây.",
+      "start": 434.02,
+      "duration": 3.89
+    },
+    {
+      "text": "The key point is that the way components are wired together, not just what",
+      "viText": "Điểm mấu chốt là cách các thành phần được kết nối với nhau chứ không chỉ là",
+      "start": 437.91,
+      "duration": 4.5
+    },
+    {
+      "text": "the components are, determines how a failure in one part affects the whole system.",
+      "viText": "các thành phần xác định lỗi ở một bộ phận sẽ ảnh hưởng như thế nào đến toàn bộ hệ thống.",
+      "start": 442.41,
+      "duration": 4.99
+    },
+    {
+      "text": "Power is the rate at which energy is used or delivered and it is",
+      "viText": "Công suất là tốc độ sử dụng hoặc phân phối năng lượng và đó là",
+      "start": 447.4,
+      "duration": 3.89
+    },
+    {
+      "text": "calculated as voltage multiplied by current.",
+      "viText": "được tính bằng điện áp nhân với dòng điện.",
+      "start": 451.29,
+      "duration": 2.68
+    },
+    {
+      "text": "This matters because power measured in watts is exactly what your electric bill charges",
+      "viText": "Điều này quan trọng vì công suất đo bằng watt chính xác là giá trị hóa đơn tiền điện của bạn",
+      "start": 453.97,
+      "duration": 5.29
+    },
+    {
+      "text": "you for.",
+      "viText": "bạn cho.",
+      "start": 459.26,
+      "duration": 2
+    },
+    {
+      "text": "It is also what determines how much heat and demand a device places on",
+      "viText": "Nó cũng là yếu tố quyết định lượng nhiệt và nhu cầu mà thiết bị đặt vào",
+      "start": 461.26,
+      "duration": 4.26
+    },
+    {
+      "text": "a circuit.",
+      "viText": "một mạch điện.",
+      "start": 465.52,
+      "duration": 2
+    },
+    {
+      "text": "Compare a 1500 W space heater to a 60W light bulb plugged into the",
+      "viText": "So sánh máy sưởi không gian 1500 W với bóng đèn 60W cắm vào",
+      "start": 467.52,
+      "duration": 4.01
+    },
+    {
+      "text": "same outlet.",
+      "viText": "cùng một ổ cắm.",
+      "start": 471.53,
+      "duration": 2
+    },
+    {
+      "text": "The space heater draws far more current at the same voltage, which is why",
+      "viText": "Máy sưởi không gian tiêu thụ nhiều dòng điện hơn ở cùng một điện áp, đó là lý do tại sao",
+      "start": 473.53,
+      "duration": 4.44
+    },
+    {
+      "text": "running it alongside other hydraw appliances on one circuit can trip a breaker, while",
+      "viText": "chạy nó cùng với các thiết bị hydraw khác trên một mạch có thể làm ngắt cầu dao, trong khi",
+      "start": 477.97,
+      "duration": 5.17
+    },
+    {
+      "text": "the light bulb could run for hours without ever coming close to that limit.",
+      "viText": "bóng đèn có thể chạy hàng giờ mà không bao giờ đạt đến giới hạn đó.",
+      "start": 483.14,
+      "duration": 4.56
+    },
+    {
+      "text": "This is also why appliance labels list wattage instead of just current.",
+      "viText": "Đây cũng là lý do tại sao nhãn thiết bị liệt kê công suất thay vì chỉ dòng điện.",
+      "start": 487.7,
+      "duration": 4.32
+    },
+    {
+      "text": "Wattage gives you the full picture of demand in a single number, combining both",
+      "viText": "Công suất cung cấp cho bạn bức tranh đầy đủ về nhu cầu trong một con số duy nhất, kết hợp cả hai",
+      "start": 492.02,
+      "duration": 4.8
+    },
+    {
+      "text": "the voltage supplied and the current the device draws.",
+      "viText": "điện áp được cung cấp và dòng điện mà thiết bị tiêu thụ.",
+      "start": 496.82,
+      "duration": 3.28
+    },
+    {
+      "text": "A homeowner adding up the wattage of everything plugged into one circuit, a microwave,",
+      "viText": "Một chủ nhà cộng công suất của mọi thứ cắm vào một mạch điện, lò vi sóng,",
+      "start": 500.1,
+      "duration": 5.23
+    },
+    {
+      "text": "a coffee maker, and a toaster running at the same time, can predict whether",
+      "viText": "một máy pha cà phê và một máy nướng bánh mì chạy cùng lúc có thể dự đoán liệu",
+      "start": 505.33,
+      "duration": 4.56
+    },
+    {
+      "text": "that circuit is about to trip before it actually happens.",
+      "viText": "mạch đó sắp ngắt trước khi nó thực sự xảy ra.",
+      "start": 509.89,
+      "duration": 3.47
+    },
+    {
+      "text": "The key point is that wattage tells you the real demand a device places",
+      "viText": "Điểm mấu chốt là công suất cho bạn biết nhu cầu thực sự của một thiết bị",
+      "start": 513.36,
+      "duration": 4.32
+    },
+    {
+      "text": "on your electrical system.",
+      "viText": "trên hệ thống điện của bạn.",
+      "start": 517.68,
+      "duration": 2
+    },
+    {
+      "text": "And that demand is what circuits and breakers are built to handle safely.",
+      "viText": "Và nhu cầu đó chính là thứ mà các mạch và cầu dao được chế tạo để xử lý một cách an toàn.",
+      "start": 519.68,
+      "duration": 4.44
+    },
+    {
+      "text": "Electricity also comes in two forms, alternating current and direct current.",
+      "viText": "Dòng điện cũng có hai dạng là dòng điện xoay chiều và dòng điện một chiều.",
+      "start": 524.12,
+      "duration": 4.62
+    },
+    {
+      "text": "Alternating current or AC is electricity that reverses direction periodically.",
+      "viText": "Dòng điện xoay chiều hoặc AC là dòng điện đảo chiều định kỳ.",
+      "start": 528.74,
+      "duration": 4.74
+    },
+    {
+      "text": "Direct current or DC flows in one direction only.",
+      "viText": "Dòng điện một chiều hoặc DC chỉ chạy theo một hướng.",
+      "start": 533.48,
+      "duration": 2.98
+    },
+    {
+      "text": "Both exist because each is better suited to a different job.",
+      "viText": "Cả hai đều tồn tại vì mỗi cái phù hợp hơn với một công việc khác nhau.",
+      "start": 536.46,
+      "duration": 3.65
+    },
+    {
+      "text": "AC is what your power company sends to your home because it can be",
+      "viText": "AC là thứ mà công ty điện lực gửi đến nhà bạn vì nó có thể là",
+      "start": 540.11,
+      "duration": 4.01
+    },
+    {
+      "text": "transmitted over long distances with far less energy loss than DC.",
+      "viText": "truyền qua khoảng cách xa với tổn thất năng lượng ít hơn nhiều so với DC.",
+      "start": 544.12,
+      "duration": 4.01
+    },
+    {
+      "text": "Most electronics, on the other hand, actually run on DC internally.",
+      "viText": "Mặt khác, hầu hết các thiết bị điện tử thực sự chạy bằng DC bên trong.",
+      "start": 548.13,
+      "duration": 4.07
+    },
+    {
+      "text": "Now, here's why this matters to you.",
+      "viText": "Bây giờ, đây là lý do tại sao điều này quan trọng với bạn.",
+      "start": 552.2,
+      "duration": 2.19
+    },
+    {
+      "text": "That bulky brick built into your laptop charger is not just a plug.",
+      "viText": "Cục gạch cồng kềnh được tích hợp trong bộ sạc máy tính xách tay của bạn không chỉ là một phích cắm.",
+      "start": 554.39,
+      "duration": 4.07
+    },
+    {
+      "text": "It contains a converter that takes the AC power from your wall outlet and",
+      "viText": "Nó chứa một bộ chuyển đổi lấy nguồn điện AC từ ổ cắm trên tường của bạn và",
+      "start": 558.46,
+      "duration": 4.44
+    },
+    {
+      "text": "transforms it into the steady DC power your laptop's battery and circuits actually need.",
+      "viText": "biến nó thành nguồn DC ổn định mà pin và mạch điện của máy tính xách tay của bạn thực sự cần.",
+      "start": 562.9,
+      "duration": 5.35
+    },
+    {
+      "text": "Without that conversion step, plugging your laptop directly into a wall outlet would destroy",
+      "viText": "Nếu không có bước chuyển đổi đó, việc cắm trực tiếp máy tính xách tay của bạn vào ổ cắm trên tường sẽ làm hỏng",
+      "start": 568.25,
+      "duration": 5.59
+    },
+    {
+      "text": "it instantly.",
+      "viText": "nó ngay lập tức.",
+      "start": 573.84,
+      "duration": 2
+    },
+    {
+      "text": "This same conversion is happening inside a car as well, just in the opposite",
+      "viText": "Sự chuyển đổi tương tự này cũng đang diễn ra bên trong ô tô, ngược lại",
+      "start": 575.84,
+      "duration": 4.62
+    },
+    {
+      "text": "direction.",
+      "viText": "phương hướng.",
+      "start": 580.46,
+      "duration": 2
+    },
+    {
+      "text": "A car's alternator actually generates alternating current while the engine runs, but the car's",
+      "viText": "Máy phát điện của ô tô thực sự tạo ra dòng điện xoay chiều trong khi động cơ chạy, nhưng",
+      "start": 582.46,
+      "duration": 5.72
+    },
+    {
+      "text": "battery and most of its electrical systems run on direct current.",
+      "viText": "pin và hầu hết các hệ thống điện của nó đều chạy bằng dòng điện một chiều.",
+      "start": 588.18,
+      "duration": 3.95
+    },
+    {
+      "text": "So, the alternator includes a built-in converter that changes that AC into DC before",
+      "viText": "Vì vậy, máy phát điện bao gồm một bộ chuyển đổi tích hợp để thay đổi AC thành DC trước",
+      "start": 592.13,
+      "duration": 5.11
+    },
+    {
+      "text": "it ever reaches the battery.",
+      "viText": "nó bao giờ đạt tới pin.",
+      "start": 597.24,
+      "duration": 2
+    },
+    {
+      "text": "The key point is that the electricity in your walls and the electricity your",
+      "viText": "Điểm mấu chốt là điện trong tường của bạn và điện của bạn",
+      "start": 599.24,
+      "duration": 4.62
+    },
+    {
+      "text": "devices run on are not the same thing and that brick is doing real",
+      "viText": "các thiết bị chạy trên đó không giống nhau và cục gạch đó đang hoạt động thật",
+      "start": 603.86,
+      "duration": 4.01
+    },
+    {
+      "text": "work every time you charge something.",
+      "viText": "làm việc mỗi khi bạn sạc một cái gì đó.",
+      "start": 607.87,
+      "duration": 2.25
+    },
+    {
+      "text": "The last core concept is grounding.",
+      "viText": "Khái niệm cốt lõi cuối cùng là nối đất.",
+      "start": 610.12,
+      "duration": 2.13
+    },
+    {
+      "text": "Grounding provides a safe path for excess or stray current to travel into the",
+      "viText": "Việc nối đất cung cấp một đường đi an toàn cho dòng điện dư thừa hoặc rò rỉ đi vào",
+      "start": 612.25,
+      "duration": 4.68
+    },
+    {
+      "text": "earth instead of through a person's body.",
+      "viText": "trái đất thay vì thông qua cơ thể con người.",
+      "start": 616.93,
+      "duration": 2.49
+    },
+    {
+      "text": "It exists specifically as a protection mechanism against electrical faults.",
+      "viText": "Nó tồn tại đặc biệt như một cơ chế bảo vệ chống lại các sự cố về điện.",
+      "start": 619.42,
+      "duration": 4.56
+    },
+    {
+      "text": "This matters because without it, a malfunctioning appliance or a damaged wire inside a",
+      "viText": "Điều này quan trọng vì nếu không có nó, thiết bị sẽ bị trục trặc hoặc dây điện bị hỏng bên trong",
+      "start": 623.98,
+      "duration": 5.23
+    },
+    {
+      "text": "wall could send current through anyone who happens to touch it.",
+      "viText": "bức tường có thể truyền dòng điện qua bất kỳ ai tình cờ chạm vào nó.",
+      "start": 629.21,
+      "duration": 3.83
+    },
+    {
+      "text": "This is why a three-prongong outlet is safer than an older two-prong outlet.",
+      "viText": "Đây là lý do tại sao ổ cắm ba ngạnh an toàn hơn ổ cắm hai ngạnh cũ.",
+      "start": 633.04,
+      "duration": 4.62
+    },
+    {
+      "text": "The third prong connects to a dedicated ground path.",
+      "viText": "Ngạnh thứ ba kết nối với một con đường đất chuyên dụng.",
+      "start": 637.66,
+      "duration": 3.16
+    },
+    {
+      "text": "So if a fault occurs inside a device, the excess current has a safe",
+      "viText": "Vì vậy, nếu xảy ra lỗi bên trong thiết bị, dòng điện dư thừa có",
+      "start": 640.82,
+      "duration": 4.07
+    },
+    {
+      "text": "route to follow instead of passing through whoever is holding it.",
+      "viText": "an toàn đường để đi theo thay vì đi qua người đang giữ nó.",
+      "start": 644.89,
+      "duration": 3.95
+    },
+    {
+      "text": "This is also why appliances with a metal casing, like a washing machine or",
+      "viText": "Đây cũng là lý do tại sao các thiết bị có vỏ kim loại, như máy giặt hoặc",
+      "start": 648.84,
+      "duration": 4.5
+    },
+    {
+      "text": "a power drill, are required to have a grounded plug.",
+      "viText": "máy khoan điện phải có phích cắm nối đất.",
+      "start": 653.34,
+      "duration": 3.16
+    },
+    {
+      "text": "If a wire inside ever comes loose and touches that metal casing, the ground",
+      "viText": "Nếu dây bên trong bị lỏng và chạm vào vỏ kim loại đó thì nối đất",
+      "start": 656.5,
+      "duration": 4.56
+    },
+    {
+      "text": "path carries the current away safely instead of leaving the entire casing electrically charged",
+      "viText": "đường dẫn mang dòng điện đi một cách an toàn thay vì để toàn bộ vỏ được tích điện",
+      "start": 661.06,
+      "duration": 5.72
+    },
+    {
+      "text": "and waiting for someone to touch it.",
+      "viText": "và chờ đợi ai đó chạm vào nó.",
+      "start": 666.78,
+      "duration": 2.19
+    },
+    {
+      "text": "The key point is that grounding is not decoration on a plug.",
+      "viText": "Điểm mấu chốt là nối đất không phải là trang trí trên phích cắm.",
+      "start": 668.97,
+      "duration": 3.65
+    },
+    {
+      "text": "It is an active safety system working every time you use a properly wired",
+      "viText": "Đây là một hệ thống an toàn chủ động hoạt động mỗi khi bạn sử dụng dây",
+      "start": 672.62,
+      "duration": 4.44
+    },
+    {
+      "text": "outlet.",
+      "viText": "chỗ thoát.",
+      "start": 677.06,
+      "duration": 2
+    },
+    {
+      "text": "Let me show you exactly how this works when all of these ideas come",
+      "viText": "Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó khi tất cả những ý tưởng này xuất hiện",
+      "start": 679.06,
+      "duration": 4.07
+    },
+    {
+      "text": "together in a real situation.",
+      "viText": "cùng nhau trong một tình huống thực tế.",
+      "start": 683.13,
+      "duration": 2
+    },
+    {
+      "text": "Picture a homeowner adding a window air conditioning unit to an older bedroom that",
+      "viText": "Hãy hình dung một chủ nhà lắp thêm một chiếc máy điều hòa không khí có cửa sổ vào một phòng ngủ cũ",
+      "start": 685.13,
+      "duration": 4.99
+    },
+    {
+      "text": "only has one outlet on a shared circuit.",
+      "viText": "chỉ có một ổ cắm trên một mạch chia sẻ.",
+      "start": 690.12,
+      "duration": 2.43
+    },
+    {
+      "text": "The circuit is rated at 120 volts.",
+      "viText": "Mạch được đánh giá ở mức 120 volt.",
+      "start": 692.55,
+      "duration": 2.07
+    },
+    {
+      "text": "The new AC unit has a specific amperage rating printed on its label, and",
+      "viText": "Bộ AC mới có định mức cường độ dòng điện cụ thể được in trên nhãn và",
+      "start": 694.62,
+      "duration": 4.38
+    },
+    {
+      "text": "that current draw adds to whatever else is already running on that same circuit.",
+      "viText": "mức rút hiện tại sẽ bổ sung vào bất cứ thứ gì khác đang chạy trên cùng một mạch đó.",
+      "start": 699,
+      "duration": 4.87
+    },
+    {
+      "text": "The wire running to that outlet has a fixed gauge, which determines its resistance",
+      "viText": "Dây chạy vào ổ cắm đó có thước đo cố định, xác định điện trở của nó",
+      "start": 703.87,
+      "duration": 4.99
+    },
+    {
+      "text": "and how much current it can safely carry before overheating.",
+      "viText": "và nó có thể mang theo bao nhiêu dòng điện một cách an toàn trước khi quá nóng.",
+      "start": 708.86,
+      "duration": 3.65
+    },
+    {
+      "text": "Using power equals voltage multiplied by current, an electrician can calculate the total wattage",
+      "viText": "Dùng công suất bằng điện áp nhân với dòng điện, người thợ điện có thể tính được tổng công suất",
+      "start": 712.51,
+      "duration": 5.84
+    },
+    {
+      "text": "demand of everything on that circuit at once.",
+      "viText": "nhu cầu của tất cả mọi thứ trên mạch đó cùng một lúc.",
+      "start": 718.35,
+      "duration": 2.74
+    },
+    {
+      "text": "If the combined current draw exceeds what the wire gauge and the breaker are",
+      "viText": "Nếu mức rút dòng điện tổng hợp vượt quá thước đo dây và cầu dao",
+      "start": 721.09,
+      "duration": 4.62
+    },
+    {
+      "text": "rated to handle safely, the breaker will trip or worse, the wire could overheat",
+      "viText": "được đánh giá là có thể xử lý an toàn, cầu dao sẽ bị ngắt hoặc tệ hơn là dây có thể bị quá nóng",
+      "start": 725.71,
+      "duration": 4.8
+    },
+    {
+      "text": "before the breaker reacts.",
+      "viText": "trước khi máy cắt phản ứng.",
+      "start": 730.51,
+      "duration": 2
+    },
+    {
+      "text": "This is exactly why an electrician calculates total amperage on a circuit before approving",
+      "viText": "Đây chính xác là lý do tại sao thợ điện tính toán tổng cường độ dòng điện trên mạch điện trước khi phê duyệt",
+      "start": 732.51,
+      "duration": 5.47
+    },
+    {
+      "text": "a new appliance installation.",
+      "viText": "lắp đặt thiết bị mới.",
+      "start": 737.98,
+      "duration": 2
+    },
+    {
+      "text": "Skipping that step is how homeowners end up with breakers that trip constantly or",
+      "viText": "Bỏ qua bước đó là việc chủ nhà sẽ gặp phải cầu dao ngắt liên tục hoặc",
+      "start": 739.98,
+      "duration": 4.93
+    },
+    {
+      "text": "in worst cases wiring that overheats inside the wall where nobody can see it",
+      "viText": "trong trường hợp xấu nhất, hệ thống dây điện quá nóng bên trong bức tường mà không ai có thể nhìn thấy",
+      "start": 744.91,
+      "duration": 4.62
+    },
+    {
+      "text": "happening.",
+      "viText": "đang xảy ra.",
+      "start": 749.53,
+      "duration": 2
+    },
+    {
+      "text": "A few mistakes come up constantly and they are easy to make because the",
+      "viText": "Một số lỗi liên tục xuất hiện và chúng rất dễ mắc phải vì",
+      "start": 751.53,
+      "duration": 4.32
+    },
+    {
+      "text": "language around electricity gets used loosely in everyday conversation.",
+      "viText": "ngôn ngữ xung quanh điện được sử dụng một cách lỏng lẻo trong cuộc trò chuyện hàng ngày.",
+      "start": 755.85,
+      "duration": 4.32
+    },
+    {
+      "text": "People often treat voltage and current as if they are the same thing, assuming",
+      "viText": "Mọi người thường coi điện áp và dòng điện như thể chúng là một, giả sử",
+      "start": 760.17,
+      "duration": 4.74
+    },
+    {
+      "text": "that anything labeled high voltage is automatically more dangerous.",
+      "viText": "rằng bất cứ thứ gì được dán nhãn điện áp cao đều tự động nguy hiểm hơn.",
+      "start": 764.91,
+      "duration": 4.07
+    },
+    {
+      "text": "The fix is remembering that current is what actually causes harm and voltage is",
+      "viText": "Cách khắc phục là hãy nhớ rằng dòng điện thực sự gây ra tác hại và điện áp là",
+      "start": 768.98,
+      "duration": 4.8
+    },
+    {
+      "text": "simply the force driving that current.",
+      "viText": "chỉ đơn giản là lực điều khiển dòng điện đó.",
+      "start": 773.78,
+      "duration": 2.31
+    },
+    {
+      "text": "So the real danger depends on both together.",
+      "viText": "Vì vậy, mối nguy hiểm thực sự phụ thuộc vào cả hai.",
+      "start": 776.09,
+      "duration": 2.68
+    },
+    {
+      "text": "Another common mistake is assuming that any device is safe to plug in as",
+      "viText": "Một lỗi phổ biến khác là cho rằng mọi thiết bị đều an toàn khi cắm dưới dạng",
+      "start": 778.77,
+      "duration": 4.38
+    },
+    {
+      "text": "long as it physically fits the outlet without considering its wattage relative to what",
+      "viText": "miễn là nó phù hợp về mặt vật lý với ổ cắm mà không cần xem xét công suất của nó so với công suất",
+      "start": 783.15,
+      "duration": 5.23
+    },
+    {
+      "text": "else is running on that circuit.",
+      "viText": "khác đang chạy trên mạch đó.",
+      "start": 788.38,
+      "duration": 2
+    },
+    {
+      "text": "The fix is checking the total load, not just whether the plug matches the",
+      "viText": "Cách khắc phục là kiểm tra tổng tải chứ không chỉ kiểm tra xem phích cắm có khớp với",
+      "start": 790.38,
+      "duration": 4.44
+    },
+    {
+      "text": "socket.",
+      "viText": "hay không ổ cắm.",
+      "start": 794.82,
+      "duration": 2
+    },
+    {
+      "text": "People also tend to think of AC and DC as just two arbitrary types",
+      "viText": "Mọi người cũng có xu hướng nghĩ AC và DC chỉ là hai loại tùy ý",
+      "start": 796.82,
+      "duration": 4.01
+    },
+    {
+      "text": "of electricity rather than understanding why each one is used where it is.",
+      "viText": "về điện hơn là tìm hiểu lý do tại sao mỗi thiết bị được sử dụng ở vị trí đó.",
+      "start": 800.83,
+      "duration": 4.5
+    },
+    {
+      "text": "The fix is connecting the choice directly to the job.",
+      "viText": "Cách khắc phục là kết nối lựa chọn trực tiếp với công việc.",
+      "start": 805.33,
+      "duration": 3.22
+    },
+    {
+      "text": "AC for long-d distanceance transmission and DC for most electronic components.",
+      "viText": "AC để truyền khoảng cách xa và DC cho hầu hết các linh kiện điện tử.",
+      "start": 808.55,
+      "duration": 4.74
+    },
+    {
+      "text": "Finally, many people treat grounding as a building code technicality rather than an active",
+      "viText": "Cuối cùng, nhiều người coi việc nối đất như một kỹ thuật của mã xây dựng hơn là hoạt động",
+      "start": 813.29,
+      "duration": 5.47
+    },
+    {
+      "text": "safety feature, which is easy to do since you never see it working under",
+      "viText": "tính năng an toàn, điều này rất dễ thực hiện vì bạn chưa bao giờ thấy nó hoạt động trong",
+      "start": 818.76,
+      "duration": 4.38
+    },
+    {
+      "text": "normal conditions.",
+      "viText": "điều kiện bình thường.",
+      "start": 823.14,
+      "duration": 2
+    },
+    {
+      "text": "The fix is understanding that grounding only becomes visible in its job the moment",
+      "viText": "Cách khắc phục là hiểu rằng việc nối đất chỉ hiển thị trong công việc của nó vào thời điểm",
+      "start": 825.14,
+      "duration": 4.99
+    },
+    {
+      "text": "something goes wrong and that is exactly when you need it working correctly.",
+      "viText": "đã xảy ra sự cố và đó chính xác là lúc bạn cần nó hoạt động chính xác.",
+      "start": 830.13,
+      "duration": 4.62
+    },
+    {
+      "text": "This understanding pays off in specific situations.",
+      "viText": "Sự hiểu biết này sẽ được đền đáp trong những tình huống cụ thể.",
+      "start": 834.75,
+      "duration": 3.1
+    },
+    {
+      "text": "Choosing the correct gauge extension cord for a power tool matters because the wrong",
+      "viText": "Việc chọn đúng dây nối dài cho dụng cụ điện rất quan trọng vì sai",
+      "start": 837.85,
+      "duration": 5.11
+    },
+    {
+      "text": "gauge risks overheating and fire, especially on long runs or highdraw tools.",
+      "viText": "máy đo có nguy cơ quá nóng và cháy, đặc biệt là khi chạy lâu hoặc dụng cụ rút cao.",
+      "start": 842.96,
+      "duration": 4.62
+    },
+    {
+      "text": "Understanding your home's breaker panel well enough to know why a specific circuit keeps",
+      "viText": "Hiểu rõ về bảng điều khiển cầu dao của nhà bạn đủ để biết tại sao một mạch điện cụ thể lại giữ",
+      "start": 847.58,
+      "duration": 5.35
+    },
+    {
+      "text": "tripping can save you an unnecessary electrician visit.",
+      "viText": "vấp ngã có thể giúp bạn tránh được việc phải đến gặp thợ điện không cần thiết.",
+      "start": 852.93,
+      "duration": 3.34
+    },
+    {
+      "text": "Or it can stop you from ignoring a real hazard by simply resetting the",
+      "viText": "Hoặc nó có thể ngăn bạn bỏ qua mối nguy hiểm thực sự bằng cách đặt lại",
+      "start": 856.27,
+      "duration": 4.26
+    },
+    {
+      "text": "breaker over and over.",
+      "viText": "ngắt đi lặp lại.",
+      "start": 860.53,
+      "duration": 2
+    },
+    {
+      "text": "Reading the voltage and amperage label on a charger or adapter before buying one",
+      "viText": "Đọc nhãn điện áp và cường độ dòng điện trên bộ sạc hoặc bộ chuyển đổi trước khi mua",
+      "start": 862.53,
+      "duration": 4.87
+    },
+    {
+      "text": "prevents damaging expensive electronics with a mismatched power source.",
+      "viText": "ngăn ngừa hư hỏng các thiết bị điện tử đắt tiền với nguồn điện không phù hợp.",
+      "start": 867.4,
+      "duration": 4.32
+    },
+    {
+      "text": "Recognizing where GFCI outlets are required in kitchens, bathrooms, and outdoor spaces prevents a",
+      "viText": "Nhận biết những nơi cần có ổ cắm GFCI trong nhà bếp, phòng tắm và không gian ngoài trời sẽ ngăn chặn",
+      "start": 871.72,
+      "duration": 5.9
+    },
+    {
+      "text": "dangerous shock in exactly the locations where water and electricity are most likely to",
+      "viText": "sốc nguy hiểm ngay tại những vị trí dễ bị mất nước, mất điện nhất",
+      "start": 877.62,
+      "duration": 5.29
+    },
+    {
+      "text": "meet.",
+      "viText": "gặp.",
+      "start": 882.91,
+      "duration": 2
+    },
+    {
+      "text": "You can now look at any electrical spec label and understand exactly what it",
+      "viText": "Bây giờ bạn có thể nhìn vào bất kỳ nhãn thông số kỹ thuật điện nào và hiểu chính xác nó là gì",
+      "start": 884.91,
+      "duration": 4.62
+    },
+    {
+      "text": "is telling you.",
+      "viText": "đang nói với bạn.",
+      "start": 889.53,
+      "duration": 2
+    },
+    {
+      "text": "You can explain why a breaker trips instead of just resetting it and hoping",
+      "viText": "Bạn có thể giải thích tại sao cầu dao ngắt điện thay vì chỉ đặt lại nó và hy vọng",
+      "start": 891.53,
+      "duration": 4.56
+    },
+    {
+      "text": "it does not happen again.",
+      "viText": "nó không xảy ra lần nữa.",
+      "start": 896.09,
+      "duration": 2
+    },
+    {
+      "text": "You can evaluate whether an outlet or a circuit can safely handle a new",
+      "viText": "Bạn có thể đánh giá liệu một ổ cắm hoặc một mạch điện có thể xử lý một cách an toàn",
+      "start": 898.09,
+      "duration": 4.32
+    },
+    {
+      "text": "device before you ever plug it in.",
+      "viText": "mới hay không thiết bị trước khi bạn cắm nó vào.",
+      "start": 902.41,
+      "duration": 2.07
+    },
+    {
+      "text": "You are no longer working from memorized formulas.",
+      "viText": "Bạn không còn làm việc từ những công thức đã ghi nhớ nữa.",
+      "start": 904.48,
+      "duration": 3.04
+    },
+    {
+      "text": "You now have the actual working model that electrical engineers use to think through",
+      "viText": "Bây giờ bạn đã có mô hình làm việc thực tế mà các kỹ sư điện sử dụng để suy nghĩ",
+      "start": 907.52,
+      "duration": 5.11
+    },
+    {
+      "text": "these problems.",
+      "viText": "những vấn đề này.",
+      "start": 912.63,
+      "duration": 2
+    },
+    {
+      "text": "And that is the understanding you should have walked away with the first time",
+      "viText": "Và đó là sự hiểu biết mà lẽ ra bạn nên bỏ qua ngay lần đầu tiên",
+      "start": 914.63,
+      "duration": 4.68
+    },
+    {
+      "text": "you sat through this material.",
+      "viText": "bạn đã ngồi xem hết tài liệu này.",
+      "start": 919.31,
+      "duration": 2
+    },
+    {
+      "text": "Before you go, do like hundreds of others and make sure to grab the",
+      "viText": "Trước khi đi, hãy làm như hàng trăm người khác và nhớ lấy",
+      "start": 921.31,
+      "duration": 4.07
+    },
+    {
+      "text": "math bundle.",
+      "viText": "bó toán học.",
+      "start": 925.38,
+      "duration": 2
+    },
+    {
+      "text": "Simply scan the QR code or click on the link in the description box.",
+      "viText": "Chỉ cần quét mã QR hoặc nhấp vào liên kết trong hộp mô tả.",
+      "start": 927.38,
+      "duration": 4.14
+    },
+    {
+      "text": "You don't want to miss out on this one.",
+      "viText": "Bạn không muốn bỏ lỡ điều này.",
+      "start": 931.52,
+      "duration": 2.37
+    }
+  ]
+}

@@ -1,0 +1,1544 @@
+{
+  "updated": "2026-08-20",
+  "doNgay": "2026-08-21",
+  "quyTacQuyetDinh2026": {
+    "mucTieu": "Ngách đáng làm + điều kiện làm an toàn; không phải cam kết kiếm tiền.",
+    "xepLoai": {
+      "UU_TIEN": "Đủ thị trường, keyword, ít nhất 2 mẫu còn hoạt động và đã có format khác biệt đi qua checklist an toàn.",
+      "WATCHLIST": "Ngách làm được nhưng cần test một format cụ thể: thiếu một lớp evidence, cạnh tranh cao hoặc cần kiểm soát accuracy/policy chặt hơn. Không mở dây chuyền trước khi format pass test.",
+      "CANH_BAO_FORMAT": "Không loại tên ngách. Chỉ đánh dấu các format/hành vi không dùng: reused không có biến đổi thực chất, content farming lặp, footage không có quyền, giả chuyên gia, claim sai sự thật, dàn dựng đau khổ hoặc vi phạm Community Guidelines.",
+      "nguyenTac": "Ngách không tự xanh/đỏ. Cách làm + nguồn + biến thể + thị trường + format quyết định khả năng kiếm tiền bền vững. Nếu thay format để đáp ứng checklist, cùng ngách vẫn làm được."
+    },
+    "benchmarkRPM": "AIR Media-Tech 01/07/2026: Education & Science median RPM $10.22, P25-P75 $2.31-$19.50, dựa trên 300 kênh/3.595 channel-month (05/2025-05/2026). Đây là benchmark danh mục long-form, không phải dự báo hay cam kết RPM cho kênh mới.",
+    "checklistFormatXanh": [
+      "Có một câu hỏi/góc nhìn cụ thể mà người xem tự muốn tìm hoặc tò mò",
+      "Kịch bản có research/original analysis và phân biệt fact, tranh luận, suy đoán",
+      "Mỗi video có thesis/case/source khác nhau; không chỉ đổi tên/ảnh trên cùng template",
+      "Hình, nhạc, footage có quyền sử dụng hoặc tự tạo; nếu AI realistic có thể gây hiểu nhầm thì disclosure",
+      "Không giả bác sĩ/chuyên gia, không chẩn đoán, không tư vấn tài chính/pháp lý cá nhân, không hứa kết quả",
+      "Không dàn dựng đau khổ, không kích động thù ghét/tình dục/gây sốc; title-thumbnail khớp nội dung",
+      "Test 5-10 video như một format: retention, phản hồi, advertiser suitability và originality đều pass rồi mới scale"
+    ],
+    "nguon": [
+      "https://air.io/en/air-data-findings/which-youtube-niche-makes-the-most-money-in-2026-ranked-by-real-rpm-and-cpm",
+      "https://support.google.com/youtube/answer/1311392",
+      "https://support.google.com/youtube/answer/14328491"
+    ]
+  },
+  "auditTong2026": {
+    "ngayChot": "2026-08-21",
+    "phamVi": "34/34 record. Nguồn đo: vidIQ keyword_research đúng market, vidIQ channel_stats 30 ngày cho đủ 70 handle evidence, YouTube direct resolve 70 handle (69 còn resolve, 1 không tồn tại), TrendsMCP chỉ dùng làm phản biện khi chuỗi không nhiễu, YouTube Help chính thức về YPP/reused/inauthentic.",
+    "nguyenTac": "Đây là thứ tự thực thi format cho kênh mới, không phải cam kết doanh thu. Demand, view hoặc một kênh lớn không đủ để ưu tiên. Không cộng đôi handle dùng chéo record; không dùng handle không resolve, sai topic, reset hoặc cadence content-farm làm điểm xanh.",
+    "nguon": [
+      "https://support.google.com/youtube/answer/1311392",
+      "https://support.google.com/youtube/answer/2490020",
+      "https://support.google.com/youtube/answer/2801973",
+      "https://support.google.com/youtube/answer/14328491",
+      "https://air.io/en/air-data-findings/which-youtube-niche-makes-the-most-money-in-2026-ranked-by-real-rpm-and-cpm"
+    ],
+    "nhom": {
+      "UU_TIEN_SAN_XUAT": "Có demand đo lại, tối thiểu hai mẫu cùng lane còn hoạt động hoặc có evidence breakout đa nguồn, có wedge/format dài hạn và đi qua checklist an toàn.",
+      "WATCHLIST": "Làm được nếu đúng format, nhưng thiếu một lớp evidence, market cạnh tranh cao, hoặc cần kiểm accuracy/policy sâu trước khi scale.",
+      "TEST_FORMAT": "Có demand hay kỹ thuật, nhưng chưa đủ evidence hoặc đang cần xác minh chỗ chen. Làm 5–10 video pilot, không mở dây chuyền.",
+      "KHONG_DU_EVIDENCE": "Prompt/học liệu hoặc keyword có sẵn nhưng chưa có đủ evidence thị trường phù hợp để xếp ưu tiên.",
+      "TACH_KHOI_DE_XUAT": "Không đưa vào bảng đề xuất vì thuộc phạm vi không đánh giá hoặc không phù hợp mục tiêu format an toàn."
+    },
+    "xepHang": [
+      {
+        "thuTu": 1,
+        "record": 29,
+        "ngach": "Everyday History EN (lịch sử đồ vật thường ngày)",
+        "nhom": "UU_TIEN_SAN_XUAT",
+        "lienKetVideo": "Chưa có học liệu trực tiếp; tạo pipeline mới, không gán video meta thành evidence thị trường.",
+        "lyDo": "Wedge competition 31; có nhiều kênh US còn tăng, gồm cả kênh nhỏ. Không bắt chước cadence 264 video/30 ngày của mẫu lớn."
+      },
+      {
+        "thuTu": 2,
+        "record": 28,
+        "ngach": "Wildlife documentary / animal behavior / conservation",
+        "nhom": "UU_TIEN_SAN_XUAT",
+        "lienKetVideo": "Prompt/skill liên quan, không phải evidence thị trường.",
+        "lyDo": "Dinosaur-documentary wedge competition 35.3; 4 mẫu US gồm cả nhỏ và lớn tăng thực. Cấm rescue dàn dựng, shock/gore và footage không quyền."
+      },
+      {
+        "thuTu": 3,
+        "record": 0,
+        "ngach": "Kinh Thánh EN (giáo dục)",
+        "nhom": "UU_TIEN_SAN_XUAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu, không phải video dạy Bible.",
+        "lyDo": "4/4 mẫu còn đăng/tăng 30 ngày; keyword Bible explained có demand cao và competition trung bình. Chỉ explainer giáo dục có thesis/source riêng."
+      },
+      {
+        "thuTu": 4,
+        "record": 1,
+        "ngach": "Phật pháp Nhật",
+        "nhom": "UU_TIEN_SAN_XUAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "2/2 mẫu JP còn đăng/tăng; keyword competition 13.3. Chỉ giáo dục/kể chuyện gốc, không quote-farm hoặc giả nhà sư."
+      },
+      {
+        "thuTu": 5,
+        "record": 7,
+        "ngach": "Danh ngôn / trí tuệ cổ Nhật",
+        "nhom": "UU_TIEN_SAN_XUAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu; nhiều video là share-key/meta.",
+        "lyDo": "Ít nhất 5 mẫu JP còn đăng/tăng và competition 35.1. Mỗi video cần case, source và thesis mới; không chỉ thay tên danh nhân."
+      },
+      {
+        "thuTu": 6,
+        "record": 5,
+        "ngach": "Chúa / Phúc âm Hàn",
+        "nhom": "UU_TIEN_SAN_XUAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "2/2 mẫu KR còn đăng/tăng; competition 33.1. Làm giải nghĩa có nguồn, không giả mục sư/chuyên gia hay hứa chữa lành."
+      },
+      {
+        "thuTu": 7,
+        "record": 8,
+        "ngach": "Chuyện đời / kể chuyện senior Nhật",
+        "nhom": "UU_TIEN_SAN_XUAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu; SKU drama chỉ là liên quan.",
+        "lyDo": "2 mẫu JP còn hoạt động, một mẫu tăng mạnh; chỉ sáng tác/kể chuyện có cấu trúc riêng, không đổi tên nhân vật theo template."
+      },
+      {
+        "thuTu": 8,
+        "record": 4,
+        "ngach": "Phong thủy VN",
+        "nhom": "UU_TIEN_SAN_XUAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "2 mẫu VN còn đăng/tăng, competition 22.6. Chỉ giải thích không gian/cây/nhà ở; không hứa giàu chắc hay kết quả siêu nhiên."
+      },
+      {
+        "thuTu": 9,
+        "record": 3,
+        "ngach": "Sức khỏe VN",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "Có 6 mẫu còn đăng và competition 31.2, nhưng health là vùng policy cao. Chỉ lifestyle/sinh hoạt có nguồn, không chẩn đoán, không persona bác sĩ."
+      },
+      {
+        "thuTu": 10,
+        "record": 2,
+        "ngach": "Sức khỏe Nhật",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "2 mẫu chính còn đăng/tăng nhưng competition 62 và có biến động catalog. Chỉ lifestyle/food routine có nguồn, tuyệt đối không claim điều trị."
+      },
+      {
+        "thuTu": 11,
+        "record": 33,
+        "ngach": "Senior Wisdom KR (không-bác-sĩ, tâm lý/tài chính/đời sống)",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Chưa có học liệu trực tiếp.",
+        "lyDo": "Nhiều mẫu KR tăng nhưng một số cadence quá dày. Chỉ life-planning/quan hệ/thích nghi; không advice y tế, đầu tư hoặc số liệu không nguồn."
+      },
+      {
+        "thuTu": 12,
+        "record": 30,
+        "ngach": "True Origin / Economic History EN (giải mã gốc tích)",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Chưa có học liệu trực tiếp.",
+        "lyDo": "Có mẫu mới tăng mạnh, nhưng phần lớn rất mới và economic-history cạnh tranh trung bình. Chỉ lịch sử có nguồn, tách fact/tranh luận/suy đoán."
+      },
+      {
+        "thuTu": 13,
+        "record": 31,
+        "ngach": "Food History EN (lịch sử thực phẩm)",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Chưa có học liệu trực tiếp.",
+        "lyDo": "Demand mạnh nhưng competition 68; Trends không đồng thuận. Test micro-wedge một món/một mâu thuẫn lịch sử, không listicle."
+      },
+      {
+        "thuTu": 14,
+        "record": 10,
+        "ngach": "Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Liên kết kênh cũ đã chết; không dùng làm evidence.",
+        "lyDo": "Keyword tốt nhưng handle kho cũ đã 404; discovery đúng lane cho demand nhưng không thay được evidence canonical. Cần bổ sung 2 mẫu clean trước scale."
+      },
+      {
+        "thuTu": 15,
+        "record": 32,
+        "ngach": "UFO / Alien / Roswell EN (đóng khung điều tra)",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Chưa có học liệu trực tiếp.",
+        "lyDo": "Có demand/kênh tăng nhưng competition 68 và rủi ro advertiser suitability. Chỉ case-file có nguồn, nêu rõ điều chưa xác minh."
+      },
+      {
+        "thuTu": 16,
+        "record": 6,
+        "ngach": "Tâm linh / luật hấp dẫn",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "Có 2 mẫu JP tăng nhưng format dễ thành claim/manipulation. Chỉ reflective storytelling/tâm lý, không hứa tiền, sức khỏe hay kết quả."
+      },
+      {
+        "thuTu": 17,
+        "record": 9,
+        "ngach": "Tâm linh / phúc lộc Hàn",
+        "nhom": "WATCHLIST",
+        "lienKetVideo": "Liên quan qua kênh mẫu; các SKU là meta, không phải evidence nội dung.",
+        "lyDo": "4 mẫu KR còn đăng/tăng nhưng lane tarot/saju có rủi ro template và limited ads. Chỉ folklore/reflective storytelling có disclaimer, không hứa vận may hay kết quả."
+      },
+      {
+        "thuTu": 18,
+        "record": 11,
+        "ngach": "Phật pháp Hàn",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "Prompt + liên quan kênh mẫu.",
+        "lyDo": "Keyword competition thấp nhưng chỉ 1 mẫu canonical; thêm evidence cùng lane trước scale."
+      },
+      {
+        "thuTu": 18,
+        "record": 12,
+        "ngach": "Kinh tế Hàn (giáo dục)",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "Demand cao nhưng competition 51.2 và chỉ 1 mẫu clean; chỉ khái niệm/lịch sử kinh tế, không khuyến nghị đầu tư."
+      },
+      {
+        "thuTu": 19,
+        "record": 13,
+        "ngach": "Kinh tế Nhật",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "Chỉ 1 mẫu canonical và query kéo về đầu tư; chỉ economic history/explainer, không advice."
+      },
+      {
+        "thuTu": 20,
+        "record": 14,
+        "ngach": "Drama / kaidan Nhật",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "Có demand và 1 mẫu tăng; dùng folklore/câu chuyện gốc có nguồn, không horror factory hay trình bày fiction là fact."
+      },
+      {
+        "thuTu": 21,
+        "record": 15,
+        "ngach": "Sức khỏe / sinh hoạt senior Hàn",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "Liên quan qua kênh mẫu.",
+        "lyDo": "Một mẫu bứt phá nhưng nhiều mẫu reset/bác sĩ. Chỉ mẹo sinh hoạt không chuyên gia và test nhỏ."
+      },
+      {
+        "thuTu": 22,
+        "record": 19,
+        "ngach": "Triết lý / khắc kỷ",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "Prompt/meta edit, không phải evidence nội dung.",
+        "lyDo": "Keyword competition thấp nhưng chưa có mẫu canonical và quote-farm rủi ro inauthentic. Làm case-study/primary source, không quote carousel."
+      },
+      {
+        "thuTu": 23,
+        "record": 26,
+        "ngach": "Tiền sử / Canada / cam cảnh sát",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "Prompt/meta; tách cam cảnh sát khỏi tiền sử.",
+        "lyDo": "Chỉ biến thể tiền sử documentary có thể test; police-cam không thuộc lộ trình do privacy/reused. Cần evidence kênh riêng trước scale."
+      },
+      {
+        "thuTu": 24,
+        "record": 21,
+        "ngach": "Reup hoạt hình (đã transform)",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "21 video học liệu trực tiếp.",
+        "lyDo": "Chỉ làm khi có quyền thương mại và commentary/biến đổi thực chất. Các kênh mẫu hiện 0 video mới nên không chứng minh cadence an toàn."
+      },
+      {
+        "thuTu": 25,
+        "record": 22,
+        "ngach": "Drama / 야담 Hàn",
+        "nhom": "TEST_FORMAT",
+        "lienKetVideo": "Prompt/meta liên quan.",
+        "lyDo": "Demand cao nhưng evidence lane canonical không đủ và format farm rõ. Chỉ fiction/folklore gốc với thesis khác nhau; không scale theo template."
+      },
+      {
+        "thuTu": 26,
+        "record": 23,
+        "ngach": "Sinh tồn VN",
+        "nhom": "KHONG_DU_EVIDENCE",
+        "lienKetVideo": "Một video học liệu.",
+        "lyDo": "Keyword có demand nhưng chưa có evidence faceless cùng lane; chỉ test nếu tự quay hoặc có quyền footage."
+      },
+      {
+        "thuTu": 27,
+        "record": 24,
+        "ngach": "Người que / Chill Dude / Nonagon",
+        "nhom": "KHONG_DU_EVIDENCE",
+        "lienKetVideo": "3 video edit/thumb, không phải evidence nội dung.",
+        "lyDo": "Keyword tốt nhưng lane explainer original chưa có evidence canonical; không clone creator lớn."
+      },
+      {
+        "thuTu": 28,
+        "record": 25,
+        "ngach": "Đứa trẻ Hàn",
+        "nhom": "KHONG_DU_EVIDENCE",
+        "lienKetVideo": "Prompt, không evidence market.",
+        "lyDo": "Evidence hiện không khớp faceless; không dùng trẻ em trong tình huống gây đau khổ hoặc câu tương tác."
+      },
+      {
+        "thuTu": 29,
+        "record": 16,
+        "ngach": "Nhà máy sản xuất",
+        "nhom": "KHONG_DU_EVIDENCE",
+        "lienKetVideo": "Prompt/meta, không evidence market.",
+        "lyDo": "Keyword cạnh tranh cao và chưa có mẫu canonical; documentary quy trình có thể test sau khi thêm evidence/source footage."
+      },
+      {
+        "thuTu": 30,
+        "record": 18,
+        "ngach": "Lịch sử / quân sự",
+        "nhom": "KHONG_DU_EVIDENCE",
+        "lienKetVideo": "Một video học liệu.",
+        "lyDo": "Hai sample lưu kho không hoạt động; nếu test chỉ lịch sử đã xa với nguồn/public-domain, không compilation footage."
+      },
+      {
+        "thuTu": 31,
+        "record": 20,
+        "ngach": "Quy luật kinh tế / Economy Rewind",
+        "nhom": "KHONG_DU_EVIDENCE",
+        "lienKetVideo": "Prompt/meta, không evidence market.",
+        "lyDo": "Handle kho sai mapping; chỉ khung lịch sử kinh tế có nguồn, không finance advice."
+      },
+      {
+        "thuTu": 32,
+        "record": 27,
+        "ngach": "Kiểm soát sinh học / chiến thuật",
+        "nhom": "KHONG_DU_EVIDENCE",
+        "lienKetVideo": "Prompt/meta, không evidence market.",
+        "lyDo": "Không có keyword/lane đủ ổn định; không tạo nội dung có thể dẫn tới gây hại."
+      },
+      {
+        "thuTu": 33,
+        "record": 17,
+        "ngach": "Địa chính trị EN (North Effect)",
+        "nhom": "TACH_KHOI_DE_XUAT",
+        "lienKetVideo": "Prompt duy nhất.",
+        "lyDo": "Ngoài phạm vi bảng đề xuất và không có evidence lane canonical."
+      }
+    ]
+  },
+  "phamViKho": {
+    "video": 131,
+    "taiLieu": 96,
+    "kenhMau": 161,
+    "kenhDeadTrongFile": 13,
+    "kenhLiveTrongFile": 148,
+    "kenhDaDoSong": 148,
+    "kenhLiveChuaDo": 0,
+    "ghiChu": "21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08."
+  },
+  "thongTinChinhSach2026": [
+    "16/07/2026 Halprin (VP Trust & Safety) trên Creator Insider: chính sách KHÔNG đổi — chỉ ngôn ngữ. 3 nhóm inauthentic: (1) generic/repetitive — 'đã có 1 đống như vậy ngoài kia, làm cái tiếp theo = chung chung, lặp lại → kênh không ở lại YPP'; (2) off-putting/unsatisfying — con vật gặp nạn rồi được cứu + TRẺ EM trong tình huống đau khổ — kênh dedicate nội dung này bị remove khỏi YPP; (3) AI persona nói health/finance/legal — 'không muốn tạo động lực cho điều đó'.",
+    "Faceless không bị cấm. Reused và inauthentic là 2 cửa độc lập (YouTube Help 15/07/2025: đổi tên 'repetitious content' → 'inauthentic content' — minor update, không đổi chính sách reused).",
+    "Tool-agnostic — 'trung lập với công cụ tạo nội dung, chính sách độc lập với cách nội dung được làm ra'. AI nâng cao sáng tạo OK; content farming không. Tutorial chạy theo trend (kiểu banana/strawberry) = nhóm 1 — Halprin: 'đừng lãng phí thời gian'.",
+    "Gắn cờ đối thủ VÔ ÍCH — Halprin khẳng định 100%: 1 cờ hay 1.000 cờ được xử lý như nhau, số cờ KHÔNG ảnh hưởng đánh giá YPP. Ngừng mất thời gian flag kênh khác.",
+    "Bị đình chỉ YPP: có 21 ngày kháng cáo → thất bại → nộp lại sau 90 ngày với nội dung mới — 'người ta nộp lại liên tục và rất nhiều được nhận lại'. Video vi phạm monetization vẫn có thể ở trên YouTube — chỉ mất kiếm tiền.",
+    "YPP: chỉ lưu các ngưỡng/cập nhật có nguồn YouTube Help chính thức tại thời điểm kiểm tra. Claim thay đổi ngưỡng 2027 trước đây chưa có nguồn official đã xác minh nên không dùng để quyết định sản xuất hoặc kiếm tiền.",
+    "Hate Speech + Sex/Nudity = 2 CỬA Community Guidelines RIÊNG (KHÔNG thuộc 3 nhóm inauthentic — đừng nhầm khi chấm). Kỳ thị chủng tộc/tôn giáo/giới tính, kêu gọi thù hận, xúc phạm nhóm bảo vệ; khỏa thân/khiêu dâm/gợi dục → mất kiếm tiền hoặc xóa video (account-level, không chỉ YPP). Nguồn: support.google.com/youtube/answer/2801939 (hate) + /answer/2802002 (sex/nudity). Kiểm chứng 20/08/2026."
+  ],
+  "thiTruongPhu": {
+    "🇨🇦 Canada": 3,
+    "🇹🇭 Thái": 1,
+    "🇷🇺 Nga": 1,
+    "🇵🇭 Philippines": 1,
+    "🇬🇧 Anh": 1,
+    "🇭🇰 HongKong": 1
+  },
+  "nguonDo": "vidIQ channel_stats + keyword_research + similar_channels · Jina read_url · Firecrawl scrape. Đo 18/08. Không lấy báo cáo 27/07. Không đoán RPM.",
+  "nguongXanh": "XANH chỉ khi ĐỦ CÙNG LÚC: (1) ≥2 kênh mẫu trong kho đã đo, (2) cùng ngách + cùng thị trường, (3) topics khớp ngách, (4) còn đăng video 30 ngày, (5) còn tăng sub HOẶC view, (6) không reset/gỡ hàng loạt, (7) không dính cửa 3 (AI giả bác sĩ / tư vấn tài chính). 1 kênh nổ = CÓ MẪU TĂNG. Chưa đo = CHƯA ĐỦ.",
+  "phanBien": [
+    "Hỏi: @시니어살림노트 +50.6K đủ gọi sức khỏe Hàn XANH? Trả lời: KHÔNG. Mẫu Health sạch không-bác-sĩ còn đăng chỉ 1. @노후의삶 topics = Religion/Music — không cộng. @desidilse mô tả 'bác sĩ nghỉ hưu' = cửa 3. 4 kênh cùng ngách bị reset.",
+    "Hỏi: Sức khỏe VN có kênh wipe (@BàiHọcTuổiGià, @TuổiGiàRadio) sao vẫn XANH? Trả lời: Vì còn ≥5 mẫu Health sạch còn đăng + tăng: @songkhoekhivegia, @KhỏeVềGià, @songlausongkhoe360, @suckhoedongy99, @Songkhoetungngay365. Wipe không phủ nhận mẫu sạch.",
+    "Hỏi: @ほのぼのラジオ từng tụt 124→111 video ngày 26/07? Trả lời: Có. Sau đó hồi và +35 video / 30 ngày. Vẫn tính sạch vì không wipe về 0 và còn đăng mạnh. Ghi chú rủi ro quét.",
+    "Hỏi: @DoctorDr.Lee còn tăng, sao không XANH sức khỏe Hàn? Trả lời: Danh bác sĩ = cửa 3. @EricBennettMD wipe 21/07 (3.2 triệu view → 0) là bằng chứng sống.",
+    "Hỏi: Phong thủy đủ XANH? Trả lời: CÓ. @thuatphongthuy26 + @meophongthuy còn đăng + tăng. @PHONGTHUYTIEMTANG tăng sub nhưng 0 video mới — mẫu phụ, không tính ngưỡng còn đăng.",
+    "Hỏi: @時代を生きた声 là drama hay tâm linh? Trả lời: Topics Religion/Society, kể chuyện đời — tách 'Chuyện đời senior Nhật', không gộp kaidan/야담.",
+    "Hỏi: 21 handle còn lại đo xong chưa? Trả lời: CÓ — 21/21 ngày 18/08. Tâm linh Nhật + danh ngôn Nhật đủ ≥2 mẫu sạch → nâng XANH. 4 kênh gắn sai Reup đã sửa (Health Insight US reset; 斎藤一人 catalogue Religion; 幻界と神域 Religion còn đăng; 다시이팔청춘 Health KR).",
+    "Hỏi: @다시이팔청춘 đủ kéo sức khỏe Hàn lên XANH? Trả lời: KHÔNG. +2 video / 30 ngày và video count 18→14 (gỡ). Mẫu 살림 sạch không-bác-sĩ còn đăng mạnh vẫn chỉ @시니어살림노트.",
+    "Hỏi: Science Sun (UCqZpuhh…) là drama/share key? Trả lời: Knowledge EN 82.6K còn đăng — tách 'Khoa học EN', 1 mẫu = CÓ MẪU TĂNG.",
+    "Hỏi: 야담 KR volume 6.9M + similar +108–283% sao không XANH / không trụ? Trả lời: Đúng công thức farm đổi tên nhân vật — đã nằm list ĐỎ. Mẫu kho @조선야담소 đứng. Nhu cầu ≠ xanh.",
+    "Hỏi: Nhà máy similar +222–262% (Factory Behind / Nano Process / FactoryVision) sao không XANH? Trả lời: 0 mẫu kho. Nhiều kênh generic factory tour — cửa 1. Độ mới cao nhưng chưa đủ ngưỡng.",
+    "Hỏi: Science Sun 82.6K + similar SCIVERSE +74% / teon.s avg 498K sao không XANH? Trả lời: Chỉ 1 mẫu kho sạch. Ngưỡng XANH = ≥2 cùng thị trường. Gắn CÓ MẪU TĂNG — đáng làm phụ.",
+    "Hỏi: Đứa trẻ Hàn 육아 181K sao bỏ? Trả lời: Similar 18/08 toàn face vlog (아기보고가 / 조이맘). Không khớp faceless H2DEV.",
+    "Hỏi: Wildlife similar Amazing Animal Facts +244% sao ĐỎ? Trả lời: Topics = Animal Rescue. Đúng cửa 2 (16/07/2026) nêu đích danh distress-rescue.",
+    "Hỏi: Stoicism similar Be Stoic +341% sao không trụ? Trả lời: 0 mẫu kho. Wisdom/quote-farm EN từng chết cửa 1. Competition 28.9 thấp nhưng template rủi ro.",
+    "Hỏi: Reup vietsub còn tăng (KPD +37%, Tùng 150K) sao không trụ? Trả lời: Cửa reused. Chỉ transform/recap gốc. Clip gốc = ĐỎ.",
+    "Hỏi: Top 1–3 xong là xong dự án? Trả lời: KHÔNG. 18/08 đã đo keyword+similar cho cả 29 ngách nội dung. Hạng 10–29 vẫn có 4 cổng sống — không bỏ xó."
+  ],
+  "ngachXanh": [
+    {
+      "ngach": "Kinh Thánh EN (giáo dục)",
+      "xanh": true,
+      "rpm": "chưa đo RPM trên kênh mẫu trong kho",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [
+        "VIDEO-469cb5"
+      ],
+      "mauSach": [
+        "@biblemadeclear26",
+        "@scripturemadesimpleyt",
+        "@theopenscriptures"
+      ],
+      "mauPhu": [
+        "@ScriptureMadeSimpleTV"
+      ],
+      "mauBan": [
+        "@BibleLegacyAssets98"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH. @biblemadeclear26 6.250 / +790 còn đăng. @scripturemadesimpleyt 24.300 / +1.700 còn đăng. @theopenscriptures GB 24.000 / +2.700 / +18 video. @ScriptureMadeSimpleTV 30.700 / +300 còn đăng. @BibleLegacyAssets98 đứng. Keyword US bible stories 180.3K.",
+      "hang": 1,
+      "nenLam": true,
+      "lamDuoc": "CÓ — giải nghĩa Kinh Thánh theo giáo trình/wedge giáo dục (như @biblemadeclear26), 1 video = 1 đoạn + bài học. KHÔNG giảng đạo chữa bệnh.",
+      "kiemDuoc": "CÓ — US. Kênh faceless mới Bible Made Simple +128% sub/30 ngày, avg view kênh mới 8–32K",
+      "viPham": "KHÔNG nếu wedge giáo dục (giải nghĩa, giáo trình). CÓ RỦI RO nếu kể chuyện Kinh Thánh generic / AI slop",
+      "canhTranh": "bible explained 18/08: overall 75.6 · volume 89.8 · competition 45.6; đo lại 19/08: 69.3 · 80.5 · 47.5 (dao động ngày của overall, vẫn bậc trung bình — xem DO-2026-08-19.json). bible stories US 180.3K (khớp đo lại 19/08)",
+      "doMoi": "Cao. Similar 18/08: Bible Made Simple +128% / Biblical Truth Explained +69% / Bible Depth +31% — nhiều kênh faceless mới còn nổ",
+      "skuNote": "LIÊN QUAN qua kênh: VIDEO-469cb5 title = nhân bản US, channels = 5 kênh Bible mẫu. Không có video dạy Bible riêng."
+    },
+    {
+      "ngach": "Phật pháp Nhật",
+      "xanh": true,
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇯🇵 Nhật"
+      ],
+      "skus": [
+        "VIDEO-70f1f1",
+        "VIDEO-2ba0d1",
+        "VIDEO-5fd052"
+      ],
+      "mauSach": [
+        "@こころの道しるべブッダの教え",
+        "@空海の真理"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH cho JP. @こころの道しるべ country=JP 13.200 / +300 / +31 video. @空海の真理 28.600 / +1.000 / +6 video. Không cộng vào Phật pháp Hàn.",
+      "hang": 2,
+      "nenLam": true,
+      "lamDuoc": "CÓ — giảng dạy Phật pháp sáng tác gốc, 1 video = 1 bài giảng/ký sự. KHÔNG giả nhà sư, không farm quote, không khẳng định sự kiện lịch sử chưa kiểm chứng.",
+      "kiemDuoc": "CÓ — JP RPM thấp hơn US nhưng kênh cùng ngách còn ra view (幻想と神話 avg 25K, 空海の教え avg 33K)",
+      "viPham": "KHÔNG nếu sáng tác gốc, không giả nhà sư, không farm quote. Không dính cửa 3",
+      "canhTranh": "仏教の教え overall 76.8 · volume 70.2 · competition 13.3 — THẤP NHẤT trong các ngách XANH đã đo",
+      "doMoi": "Còn làm. Similar JP: SUMITA +12% / 幻想と神話の扉 +4.3% / ブッダのことば +3.8% — kênh 6–80K vẫn tăng",
+      "skuNote": "LIÊN QUAN qua kênh: 70f1f1 title ghi Hàn nhưng có @こころの道しるべ. 2ba0d1 có @空海の真理. 5fd052 có @buddhamind60s (triết/Phật JP)."
+    },
+    {
+      "ngach": "Sức khỏe Nhật",
+      "xanh": true,
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇯🇵 Nhật"
+      ],
+      "skus": [
+        "VIDEO-35014d",
+        "VIDEO-21956b"
+      ],
+      "mauSach": [
+        "@長生きの秘訣22",
+        "@ほのぼのラジオ1"
+      ],
+      "mauPhu": [
+        "@みんなの若返りアカデミア",
+        "@黄金の老年期-x9g"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH. @長生きの秘訣22 98.700 sub / +2.500 / +14 video, topics Health/Food. @ほのぼのラジオ1 87.400 / +2.000 / +35 video / +4,8 triệu view. Mẫu phụ catalogue (0 video mới nhưng còn tăng view): @みんなの若返りアカデミア 47.100 / +2.700; @黄金の老年期 63.700 / +600. @100歳まで元気1 mất 5 video. @老後の誤算 +0 sub, topics Religion. Ghi chú: @ほのぼのラジオ tụt 124→111 video ngày 26/07 rồi hồi — rủi ro quét, không đủ để hạ nhãn vì còn đăng mạnh.",
+      "hang": 3,
+      "nenLam": true,
+      "lamDuoc": "CÓ ĐK — chỉ sinh hoạt / case-study / ăn uống đời thường. KHÔNG giả bác sĩ",
+      "kiemDuoc": "CÓ — JP volume 健康 266.2K. Kênh mới 定年後の知恵 +88% sub / 人生の知恵袋 +70% / avg view 14–144K",
+      "viPham": "CÓ RỦI RO cửa 3 nếu AI persona y tế / Doctors Warn. An toàn nếu không chẩn đoán, không \"bác sĩ nói\"",
+      "canhTranh": "健康 overall 65.1 · volume 83.2 · competition 62 — CAO. Vào bằng góc sinh hoạt, không vào bằng chữa bệnh",
+      "doMoi": "Rất cao. 4 kênh similar +32% đến +88% sub/30 ngày. Nhiều chỗ trống cho kênh <20K",
+      "skuNote": "HƯỚNG DẪN + kênh: 35014d title = key sức khỏe Nhật, kênh @ほのぼのラジオ1. 21956b nhân bản có @長生きの秘訣22."
+    },
+    {
+      "ngach": "Sức khỏe VN",
+      "xanh": true,
+      "rpm": "chưa đo RPM — không đoán",
+      "thiTruong": [
+        "🇻🇳 Việt"
+      ],
+      "skus": [
+        "VIDEO-21956b",
+        "VIDEO-5fe83a",
+        "VIDEO-3ae732"
+      ],
+      "mauSach": [
+        "@songkhoekhivegia",
+        "@KhỏeVềGià",
+        "@songlausongkhoe360",
+        "@suckhoedongy99",
+        "@Songkhoetungngay365",
+        "@SuGia_SucKhoe"
+      ],
+      "mauBan": [
+        "@BàiHọcTuổiGià-VN",
+        "@TuổiGiàRadio_VN",
+        "@ThựcPhẩmSứcKhoẻ-u8y"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH. Đo 18/08 ≥6 mẫu Health VN còn đăng + tăng, không reset: @songkhoekhivegia 87.000 sub / +1.300 / +15 video; @KhỏeVềGià 64.400 / +900 / +7 video; @songlausongkhoe360 71.400 / +200 / +18 video; @suckhoedongy99 30.300 / +500 / +10 video; @Songkhoetungngay365 8.850 / +310 / +4 video; @SuGia_SucKhoe 9.910 / +120 / +2 video. BẨN: @BàiHọcTuổiGià và @TuổiGiàRadio wipe 0 view 0 video; @ThựcPhẩmSứcKhoẻ reset 04–05/08 (775K→57 view, 42→1 video). @kienthucthanhoc9 còn tăng nhưng là 'thận học' — cửa 3, không cộng. @healthlonglife 641K country=HK, 0 video mới — không tính VN.",
+      "hang": 4,
+      "nenLam": true,
+      "lamDuoc": "CÓ ĐK — sinh hoạt tuổi già, không thầy thuốc",
+      "kiemDuoc": "THẤP HƠN JP/US (RPM VN) nhưng volume lớn: tâm sự tuổi già 227K · sức khỏe 215K. Kênh mới Dưỡng Sinh Cổ Nhân +25%",
+      "viPham": "CÓ RỦI RO cửa 3. Similar có Thầy Thuốc Tuổi Già — đúng công thức cấm. Làm được nếu không mang danh thầy thuốc",
+      "canhTranh": "tuổi xế chiều overall 75.2 · volume 79.4 · competition 31.2 (trung bình-thấp)",
+      "doMoi": "Còn chỗ. Similar: Dưỡng Sinh Cổ Nhân +25% / Nghe Để Sống Khỏe +10% / kênh 5–21K vẫn tăng",
+      "skuNote": "LIÊN QUAN qua kênh sức khỏe VN trong video nhân bản/share key. Không có video dạy SK VN riêng."
+    },
+    {
+      "ngach": "Phong thủy VN",
+      "xanh": true,
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇻🇳 Việt"
+      ],
+      "skus": [
+        "VIDEO-33d701",
+        "VIDEO-817ae6"
+      ],
+      "mauSach": [
+        "@thuatphongthuy26",
+        "@meophongthuy-m7d"
+      ],
+      "mauPhu": [
+        "@PHONGTHUYTIEMTANG"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH. @thuatphongthuy26 35.100 sub / +2.500 / +59 video, topics Religion/Society. @meophongthuy-m7d 2.490 / +150 / +30 video — nhỏ nhưng còn đăng đều. @PHONGTHUYTIEMTANG 13.400 / +2.800 nhưng 0 video mới — catalogue, không tính ngưỡng còn đăng.",
+      "hang": 5,
+      "nenLam": true,
+      "lamDuoc": "CÓ — phong thủy giáo dục (giải nghĩa nguyên lý, cách làm cụ thể cho nhà ở). KHÔNG hứa làm giàu chắc, không lừa đảo tâm linh, không cửa 3.",
+      "kiemDuoc": "THẤP (RPM VN). Volume phong thủy 105.7K. Góc Phong Thủy Nhỏ +35% sub, avg 15K",
+      "viPham": "KHÔNG (không cửa 3). Tránh hứa làm giàu chắc / lừa đảo tâm linh",
+      "canhTranh": "cây phong thủy overall 72.7 · volume 69.6 · competition 22.6 — THẤP",
+      "doMoi": "Còn chỗ kênh nhỏ. Góc Phong Thủy Nhỏ 10K +35%. Nhiều kênh lớn 0% tăng (bão hòa kênh già)",
+      "skuNote": "LIÊN QUAN qua kênh: 33d701 có @thuatphongthuy26. 817ae6 có @meophongthuy-m7d. Title không ghi phong thủy."
+    },
+    {
+      "ngach": "Chúa / Phúc âm Hàn",
+      "xanh": true,
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇰🇷 Hàn"
+      ],
+      "skus": [
+        "VIDEO-70f1f1"
+      ],
+      "mauSach": [
+        "@은빛복음",
+        "@주님의손길-handofgod"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH. @은빛복음 7.140 / +1.030 / 76→89 video. @주님의손길 44.800 / +800 / +4 video. Cùng KR Religion. VIDEO-70f1f1 nửa Chúa.",
+      "hang": 6,
+      "nenLam": true,
+      "lamDuoc": "CÓ — giáo dục/Phúc âm Hàn: 1 video = 1 phân đoạn Kinh Thánh + giảng giải. KHÔNG giả mục sư chữa bệnh, không tiên tri dàn dựng.",
+      "kiemDuoc": "CÓ — KR. 성경 overall 73.3 · 찬양 328.7K. 2 mẫu kho còn đăng",
+      "viPham": "KHÔNG nếu giáo dục/phúc âm, không giả mục sư chữa bệnh",
+      "canhTranh": "성경 volume 77.6 · competition 33.1 (trung bình-thấp)",
+      "doMoi": "Trung bình. 2 mẫu kho còn tăng chậm-vừa. Ít kênh mới nổ bằng Bible EN",
+      "skuNote": "HƯỚNG DẪN: title = Đức Phật VÀ Chúa Hàn. Kênh Chúa: @은빛복음, @주님의손길."
+    },
+    {
+      "ngach": "Tâm linh / luật hấp dẫn",
+      "xanh": true,
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇯🇵 Nhật"
+      ],
+      "skus": [
+        "VIDEO-33f474",
+        "VIDEO-817ae6",
+        "VIDEO-d2cd90"
+      ],
+      "mauSach": [
+        "@プレアデス最終通知556",
+        "@アマテラス巫女あまね"
+      ],
+      "mauPhu": [
+        "@quietstrength88"
+      ],
+      "mauBan": [
+        "@スピリチュアルの泉-l4z"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH. VIDEO-33f474 title rõ tâm linh / luật hấp dẫn Nhật. @プレアデス最終通知556 6.290 / +970 / +43 video. @アマテラス巫女あまね (đo nốt 18/08) 19.900 / +12.510 / +20 video, country=JP, Lifestyle. 2 mẫu sạch còn đăng + tăng mạnh. @スピリチュアルの泉 không resolve.",
+      "hang": 7,
+      "nenLam": true,
+      "lamDuoc": "CÓ — tâm linh/luật hấp dẫn: truyền cảm hứng + nguyên lý tâm lý. KHÔNG hứa chữa bệnh/giàu chắc, không hướng dẫn nghi thức nguy hiểm.",
+      "kiemDuoc": "CÓ — JP. @アマテラス +12.5K sub/30 ngày. Similar 内なる声 +76% / えめゆか +20%",
+      "viPham": "KHÔNG nếu không hứa chữa bệnh / giàu chắc. Không cửa 3",
+      "canhTranh": "引き寄せ → 心理学 overall 80.6 · volume 89.3 · competition 32.4 (thấp-TB). JP 心理学 729.4K",
+      "doMoi": "Cao. Similar JP 18/08: 内なる声 +75.8% / 引き寄せの女神ミカミカ +21% / えめゆか +20% — kênh 2–7K còn nổ",
+      "skuNote": "HƯỚNG DẪN: 33f474 title = tâm linh / luật hấp dẫn Nhật. 817ae6 có @プレアデス. d2cd90 có @アマテラス巫女あまね."
+    },
+    {
+      "ngach": "Danh ngôn / trí tuệ cổ Nhật",
+      "xanh": true,
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇯🇵 Nhật"
+      ],
+      "skus": [
+        "VIDEO-9aff6d",
+        "VIDEO-2ba0d1",
+        "VIDEO-21956b",
+        "VIDEO-134a25"
+      ],
+      "mauSach": [
+        "@昔の人の知恵",
+        "@izinnokatari",
+        "@kotobano-housekibako",
+        "@IjinNoNouri",
+        "@Jinseioiyasukotoba"
+      ],
+      "mauPhu": [
+        "@quietstrength88",
+        "@asuhetsudukumichi"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH sau khi đo nốt 21 handle. ≥5 mẫu JP Knowledge/Religion còn đăng + tăng: @昔の人の知恵 13.400 / +5.320 / +19 video; @izinnokatari (偉人の語りch) 23.400 / +900 / +29 video; @kotobano-housekibako 31.600 / +1.200 / +28 video; @IjinNoNouri (偉人の脳裏) 6.530 / +530 / +29 video; @Jinseioiyasukotoba (人生を癒す言葉) 6.500 / +1.270 / +30 video. @asuhetsudukumichi còn đăng (+30 video) nhưng sub chỉ +210. @金運と言葉の力 sub lùi. @人生を読む reset view 04/08.",
+      "hang": 8,
+      "nenLam": true,
+      "lamDuoc": "CÓ ĐK — phải có giọng riêng, không farm quote",
+      "kiemDuoc": "CÓ — JP. 5 mẫu kho còn đăng. Similar 昔の人の知恵 +64% / 人生設計図 +71%",
+      "viPham": "CÓ RỦI RO cửa 1 nếu chỉ đổi tên vĩ nhân / quote-farm (wisdom EN từng chết)",
+      "canhTranh": "名言 → 開運 overall 73.7 · volume 79.5 · competition 35.1. シニア JP 468.8K",
+      "doMoi": "Còn. Similar JP: 人生設計図 +71% / 昔の人の知恵 +64% (trùng mẫu kho) / Everyday Life Hacks +24% (lệch variety — không cộng)",
+      "skuNote": "LIÊN QUAN qua kênh 偉人/知恵: 9aff6d @昔の人の知恵. 2ba0d1 @izinnokatari @IjinNoNouri. 21956b @Jinseioiyasukotoba. 134a25 @偉人のコンパス1. GỠ 33d701 — không phải danh ngôn."
+    },
+    {
+      "ngach": "Chuyện đời / kể chuyện senior Nhật",
+      "xanh": true,
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇯🇵 Nhật"
+      ],
+      "skus": [
+        "VIDEO-33d701",
+        "VIDEO-34f417",
+        {
+          "sku": "VIDEO-de2564",
+          "note": "LIÊN QUAN: share ngách stories Nhật"
+        }
+      ],
+      "mauSach": [
+        "@時代を生きた声",
+        "@シルバー世代の語り部"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH — tách khỏi kaidan/야담. @時代を生きた声 52.800 / +4.900 / +9 video / 31 triệu view, topics Religion/Society. @シルバー世代の語り部 15.700 / +100 / +8 video. Không gộp @江戸怪異 (kaidan) và không gộp @조선야담소 (đứng).",
+      "hang": 9,
+      "nenLam": true,
+      "lamDuoc": "CÓ ĐK — sáng tác gốc, không template đổi tên",
+      "kiemDuoc": "CÓ — @時代を生きた声 52.8K / 31 triệu view. Similar 心晴ればれ人情劇場 +35%",
+      "viPham": "CÓ RỦI RO cửa 1 (template). Tách khỏi kaidan/야담",
+      "canhTranh": "老後 牧歌 không trả related. Suy từ シニア JP 468.8K. Similar bị nhiễu enka/nhạc — lọc tay",
+      "doMoi": "Còn chỗ hẹp. Similar sạch: 心晴ればれ人情劇場 36.3K +35% / 人生の歳月 +3.5%. Nhiều kết quả là nhạc sĩ — không cộng",
+      "skuNote": "LIÊN QUAN qua kênh senior: 33d701 @時代を生きた声. 34f417 @シルバー世代の語り部. GỠ 502960/de2564 — đó là drama/stories gia đình, không phải kể chuyện senior."
+    },
+    {
+      "ngach": "Tâm linh / phúc lộc Hàn",
+      "xanh": true,
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇰🇷 Hàn"
+      ],
+      "skus": [
+        "VIDEO-e24c31",
+        "VIDEO-a7bfd0",
+        "VIDEO-21956b",
+        {
+          "sku": "VIDEO-d71802",
+          "note": "LIÊN QUAN: show kênh triết lý Hàn của thành viên pro"
+        }
+      ],
+      "mauSach": [
+        "@복이오는길",
+        "@mokamoka-e9f",
+        "@은밀한응답",
+        "@늦기전에알아야할것"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH. 4 mẫu Religion KR còn đăng + tăng, không reset. @복이오는길 28.900 (từ 126 ngày 31/07) / 12 video. @mokamoka-e9f 12.900 (từ 148 ngày 26/07) / 47 video. @은밀한응답 3.700 / +3.112 / +34 video. @늦기전에알아야할것 6.600 / +790 / +59 video. VIDEO-e24c31 / VIDEO-a7bfd0 desc nêu đúng handle. KHÔNG phải Phật pháp, KHÔNG phải Bible.",
+      "hang": 10,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — tâm linh/phúc lộc Hàn: nội dung đa dạng (복 부적, nhắc nhẹ tâm linh) KIỂM SOÁT. TRÁNH farm template 사주/타로 hàng loạt = limited ads.",
+      "kiemDuoc": "CÓ NGẮN HẠN — kênh mới +80–120% nhưng nhiều là saju/tarot (대박운세TV +120%)",
+      "viPham": "CÓ RỦI RO limited ads + farm template (사주/타로 hàng loạt). Không cửa 3 nhưng dễ inauthentic cửa 1",
+      "canhTranh": "타로 354.7K · 사주 251.6K — nhu cầu lớn, farm cũng lớn",
+      "doMoi": "Rất cao nhưng là SÓNG. Không xếp trụ",
+      "skuNote": "LIÊN QUAN qua kênh: e24c31 @복이오는길 @mokamoka. a7bfd0 @은밀한응답. 21956b @늦기전에알아야할것. Niche video = Nhân bản."
+    },
+    {
+      "ngach": "Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [
+        "VIDEO-a2b317"
+      ],
+      "mauSach": [
+        "@UCqZpuhhJC5G4kfvBG7MTAXg"
+      ],
+      "evidence": "Handle kho @UCqZpuhhJC5G4kfvBG7MTAXg = Science Sun. Đo 18/08: 82.600 sub / 19,8 triệu view / 55 video; +6.100 sub +11 video / 30 ngày, topics Knowledge. 1 mẫu sạch còn đăng — CÓ MẪU TĂNG, không đủ XANH. Không phải drama. Biến thể user 20/08 (documentary thiên nhiên–vũ trụ): Underwater Earth +203%/30d · Lyrix 3D +183% (space) — CÓ MẪU TĂNG, chưa đủ XANH.",
+      "hang": 11,
+      "nenLam": false,
+      "quyetDinh": "WATCHLIST ƯU TIÊN CAO — keyword Science Explained/Space Documentary demand cao, competition thấp-trung bình, nhưng kho chỉ có 1 mẫu kênh clean đã xác minh nên chưa đủ green-core.",
+      "formatBrand": "Một câu hỏi cơ chế về Trái Đất/vũ trụ → mô hình khoa học được đồng thuận → chuỗi nguyên nhân-hệ quả → giới hạn điều khoa học chưa biết. Cảnh AI realistic về địa điểm/sự kiện thật phải disclosure; không dựng thành tư liệu thật.",
+      "lamDuoc": "CÓ — documentary thiên nhiên/Trái Đất/vũ trụ (đại dương, núi lửa, tiền sử, thiên thạch, tiến hóa). AI dựng cảnh không quay được (lõi Trái Đất, tuyệt chủng) = hợp AI. KHÔNG chẩn đoán y tế / không cửa 3.",
+      "kiemDuoc": "CÓ — US. Science Sun 82.6K / +6.1K / +11 video. teon.s avg view 498K",
+      "viPham": "KHÔNG nếu không chẩn đoán y tế / không cửa 3. Không medical advice",
+      "canhTranh": "science explained overall 74.8 · volume 80.6 · competition 33.9 (thấp-TB)",
+      "doMoi": "Cao. Similar US: SCIVERSE +73.6% / Second Order Science +62.5% / teon.s +53% / Secrets of Everyday Things +46%. 1 mẫu kho — chưa đủ XANH Biến thể Trái Đất/vũ trụ có mẫu tăng mạnh (Underwater Earth +203%, Lyrix 3D +183%).",
+      "skuNote": "LIÊN QUAN qua kênh: a2b317 có @UCqZpuhhJC5G4kfvBG7MTAXg (Science Sun). Title = share 3 ngách US, không dạy science."
+    },
+    {
+      "ngach": "Phật pháp Hàn",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "chưa đo — keyword KR 불교음악 135.1K chỉ là nhu cầu search",
+      "thiTruong": [
+        "🇰🇷 Hàn"
+      ],
+      "skus": [
+        "VIDEO-1a7f58",
+        "VIDEO-d84a78"
+      ],
+      "mauSach": [
+        "@붓다의등불"
+      ],
+      "docs": [
+        "docs/NOI-BO/prompt/phat-phap-han.md"
+      ],
+      "evidence": "Ngách PHẬT PHÁP. Mẫu Hàn sạch chỉ 1: @붓다의등불 7.800 / 1,29 triệu / +590. Không cộng phúc lộc Hàn và không cộng mẫu JP.",
+      "hang": 12,
+      "nenLam": false,
+      "lamDuoc": "CÓ — Phật pháp Hàn: 1 video = 1 bài giảng/ký sự gốc (như @붓다의등불, giọng tĩnh lặng, không AI giảng đạo). KHÔNG farm quote, không kiêm cảnh bói/사주. Chỉ 1 mẫu sạch → chưa đủ XANH.",
+      "kiemDuoc": "CHƯA ĐỦ MẪU. 부처님말씀 overall 74.4 · competition 25.7 — nhu cầu có",
+      "viPham": "KHÔNG nếu gốc. Keyword 불교음악 135K",
+      "canhTranh": "competition 25.7 thấp-trung bình",
+      "doMoi": "1 mẫu kho còn view. Không đủ XANH",
+      "skuNote": "1a7f58 kênh @붓다의등불. d84a78 docs = Prompt ngách nhỏ phật pháp Hàn. GỠ 70f1f1 (Chúa Hàn + Phật Nhật) và d71802 (triết lý/kinh tế Hàn, không phải Phật)."
+    },
+    {
+      "ngach": "Kinh tế Hàn (giáo dục)",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "chưa đo",
+      "thiTruong": [
+        "🇰🇷 Hàn"
+      ],
+      "skus": [
+        "VIDEO-9a6957",
+        "VIDEO-35014d",
+        "VIDEO-5c0b20"
+      ],
+      "mauSach": [
+        "@똑똑해지는경제학-m2y"
+      ],
+      "mauBan": [
+        "@방구석워런버핏",
+        "@성실한경제학",
+        "@경제빠월",
+        "@오싹한경제"
+      ],
+      "evidence": "KHÔNG ĐỦ XANH. 1 mẫu sạch: @똑똑해지는경제학-m2y 60.600 / +7.700 / 40→59 video. 3 handle cùng ngách đứng/wipe/không resolve. @KapitalKompass-US đo ra kênh Jazz — sai data kho.",
+      "hang": 13,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — giáo dục kinh tế, KHÔNG tư vấn cổ phiếu",
+      "kiemDuoc": "CÓ NGẮN — 1 mẫu kho + similar 경제학비서 +16.8%. RPM KR thấp hơn US",
+      "viPham": "CÓ RỦI RO cửa 3 nếu AI persona tư vấn tài chính / cổ phiếu. An toàn nếu giảng lý thuyết / lịch sử",
+      "canhTranh": "경제학 overall 75.9 · volume 94 · competition 51.2 (TB-cao). KR 경제학 1.9M",
+      "doMoi": "Trung bình. Similar KR: 경제학비서 19.5K +16.8% / 퐁퐁퐁경제학 +5.2% / 경제학짱박사 53K đứng (luyện thi). 1 mẫu kho — CÓ MẪU TĂNG",
+      "skuNote": "HƯỚNG DẪN: 9a6957 title = kinh tế Hàn. 35014d title có kênh kinh tế Hàn @오싹한경제. 5c0b20 kênh @똑똑해지는경제학-m2y."
+    },
+    {
+      "ngach": "Kinh tế Nhật",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "chưa đo",
+      "thiTruong": [
+        "🇯🇵 Nhật"
+      ],
+      "skus": [
+        "VIDEO-2ba0d1"
+      ],
+      "mauSach": [
+        "@お金の心理"
+      ],
+      "evidence": "1 mẫu sạch: @お金の心理 9.330 / +570 / +4 video, topics Knowledge/Religion/Society. Không đủ ≥2. Tách khỏi kinh tế Hàn.",
+      "hang": 14,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — tin / lịch sử kinh tế, KHÔNG tư vấn đầu tư",
+      "kiemDuoc": "CÓ NGẮN — 1 mẫu kho. Similar 経済ニュース深掘り +34.6%",
+      "viPham": "CÓ RỦI RO cửa 3 nếu AI tư vấn đầu tư / bất động sản. Keyword kéo sang 不動産投資",
+      "canhTranh": "経済 → 不動産投資 overall 72.6 · volume 79.9 · competition 38.4. ニュース JP 608.4K",
+      "doMoi": "Trung bình. Similar JP: 経済ニュース深掘り +34.6% / 明治時代の経済 +7.2% / おかしこい đứng. 1 mẫu kho",
+      "skuNote": "LIÊN QUAN qua kênh @お金の心理 trong 2ba0d1. Title không dạy kinh tế Nhật."
+    },
+    {
+      "ngach": "Drama / kaidan Nhật",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "chưa đo",
+      "thiTruong": [
+        "🇯🇵 Nhật"
+      ],
+      "skus": [
+        "VIDEO-8b69c9",
+        {
+          "sku": "VIDEO-502960",
+          "note": "LIÊN QUAN: show kênh drama Nhật (3 video/1 ngày) — làm mẫu tăng"
+        }
+      ],
+      "mauSach": [
+        "@江戸怪異ものがたり"
+      ],
+      "mauBan": [
+        "@静かな家族の秘密",
+        "@偉大さJAPAN721"
+      ],
+      "evidence": "1 mẫu sạch kaidan: @江戸怪異ものがたり 18.900 / +3.000 / +5 video. @静かな家族の秘密 wipe. @偉大さJAPAN721 (title thực = 静かな物語) video/view dao động mạnh — không tính sạch. Tách khỏi 'chuyện đời senior' đã XANH ở trên.",
+      "hang": 15,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — kể gốc, không farm đô thị truyền thuyết template",
+      "kiemDuoc": "CÓ — JP. Similar ダニエル都市伝説 avg 364K view / +30%",
+      "viPham": "CÓ RỦI RO cửa 1 (template analog horror / đô thị truyền thuyết hàng loạt)",
+      "canhTranh": "怪談 → ホラー overall 70.2 · volume 77.6 · competition 40.8. 都市伝説 JP 547.9K",
+      "doMoi": "Cao. Similar JP: 臨死体験で見た未来 +136% / ダニエル +30% / 瓜田純士 +17% / 怪談まとめ工場 +3.5%. 1 mẫu kho @江戸怪異",
+      "skuNote": "LIÊN QUAN qua kênh @江戸怪異ものがたり trong 8b69c9. Title = cách edit tránh lỗi, không dạy kaidan."
+    },
+    {
+      "ngach": "Sức khỏe / sinh hoạt senior Hàn",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "chưa đo RPM",
+      "thiTruong": [
+        "🇰🇷 Hàn"
+      ],
+      "skus": [
+        "VIDEO-4b3c09",
+        "VIDEO-d2cd90",
+        "VIDEO-86c1ec",
+        "VIDEO-bdfab7",
+        "VIDEO-f74bb1"
+      ],
+      "mauSach": [
+        "@시니어살림노트"
+      ],
+      "mauBan": [
+        "@장수채소습관",
+        "@노후건강한끼",
+        "@식탁보약·백세비결",
+        "@실버라디오-z4u",
+        "@의사가숨긴건강법-z9n",
+        "@남현진전문의",
+        "@DoctorDr.Lee-h9t",
+        "@desidilse"
+      ],
+      "khongCong": [
+        "@노후의삶-s1s"
+      ],
+      "evidence": "KHÔNG ĐỦ XANH. Mẫu Health sạch không-bác-sĩ còn đăng chỉ 1: @시니어살림노트 63.500 / +50.600 / 24 video. @노후의삶 +590 / +30 video nhưng topics Religion/Music — không cộng Health. @desidilse (실버 라이프) 20.400 / +3.100 / +15 video nhưng mô tả 'bác sĩ nghỉ hưu' = cửa 3. @DoctorDr.Lee 42.000 còn tăng nhưng danh bác sĩ. Reset: @장수채소습관 21/07; @노후건강한끼 26/07; @식탁보약 26–28/07. @EricBennettMD US wipe 21/07 (3,2 triệu → 0) minh họa cửa 3.",
+      "hang": 16,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — sinh hoạt/sống khỏe tuổi già kiểu '살림노트' (mẹo sinh hoạt, tâm lý, dọn nhà): giọng wisdom thực tế, KHÔNG tư vấn bệnh/bác sĩ (cửa 3). KHÔNG tự bịa % thống kê. Nhiều kênh kho bị reset → chọn mẫu còn đăng sạch.",
+      "kiemDuoc": "1 mẫu nổ (@시니어살림노트 +50.6K) nhưng nhiều kênh cùng ngách reset",
+      "viPham": "CÓ RỦI RO cửa 3 cao (nhiều kênh kho bị reset/gỡ)",
+      "canhTranh": "시니어건강 search lớn, kênh bẩn nhiều",
+      "doMoi": "1 mẫu sạch. Không trụ",
+      "skuNote": "HƯỚNG DẪN + kênh: 86c1ec / bdfab7 title = sức khỏe Hàn. 4b3c09+d2cd90 kênh @시니어살림노트. THÊM f74bb1 kênh @노후건강한끼 @건강백단 @장수채소습관."
+    },
+    {
+      "ngach": "Nhà máy sản xuất",
+      "xanh": "CHƯA ĐỦ BẰNG CHỨNG",
+      "thiTruong": [],
+      "skus": [
+        "VIDEO-2aa1f7"
+      ],
+      "docs": [
+        "docs/NOI-BO/prompt/nha-may-san-xuat.md"
+      ],
+      "evidence": "Prompt trong 90 tài liệu. 0 kênh mẫu đo.",
+      "hang": 17,
+      "nenLam": false,
+      "lamDuoc": "CÓ — faceless how-it-made còn nhiều kênh mới",
+      "kiemDuoc": "CÓ TIỀM NĂNG US — Factory Behind avg 369K view / +262% sub. 0 mẫu kho nên chưa chốt kiếm được trên kênh mình",
+      "viPham": "CÓ RỦI RO cửa 1 nếu generic factory tour / stock lặp. Không cửa 3",
+      "canhTranh": "how its made factory → discovery overall 70.3 · volume 85.5 · competition 52.5 (cao)",
+      "doMoi": "RẤT CAO ngoài kho. Similar US/GB: Factory Behind +262% / Nano Process +234% / FactoryVision UK +225% / Factory Core +222%. 0 mẫu kho = CHƯA ĐỦ XANH",
+      "skuNote": "LIÊN QUAN qua docs: VIDEO-2aa1f7 có file “PROMPT KEY QUY TRÌNH/ NHÀ MÁY SẢN XUẤT”. Title video = triết lý US, không dạy nhà máy."
+    },
+    {
+      "ngach": "Địa chính trị EN (North Effect)",
+      "xanh": "CHƯA ĐỦ BẰNG CHỨNG",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [],
+      "docs": [
+        "docs/NOI-BO/prompt/north-effect.md"
+      ],
+      "evidence": "Prompt trong tài liệu. 0 kênh mẫu đo.",
+      "hang": 18,
+      "nenLam": false,
+      "lamDuoc": "CÓ — faceless map/explainer còn chỗ",
+      "kiemDuoc": "CÓ TIỀM NĂNG US — GeoFiles avg 137K / +82%. 0 mẫu kho",
+      "viPham": "KHÔNG nếu phân tích / bản đồ. CÓ RỦI RO nếu AI persona tư vấn chính trị-tài chính (cửa 3)",
+      "canhTranh": "geopolitics explained overall 71.3 · volume 74.2 · competition 32.9 (thấp-TB). world history US 32.1K",
+      "doMoi": "Cao. Similar US: Geopolitical Cousins +114% / GeoFiles +82% / MapX +35% / Atlas Explained +23%. 0 mẫu kho",
+      "skuNote": "Kho không có video / docs / kênh địa chính trị. Để trống là đúng."
+    },
+    {
+      "ngach": "Lịch sử / quân sự",
+      "xanh": "THẬN TRỌNG",
+      "rpm": "chưa đo",
+      "thiTruong": [
+        "🇺🇸 US",
+        "🇻🇳 Việt"
+      ],
+      "skus": [
+        "VIDEO-458892"
+      ],
+      "mauBan": [
+        "@thecoldwartales",
+        "@militarytactics113"
+      ],
+      "evidence": "@thecoldwartales +0 sub / 0 video. @militarytactics113 kênh 2007 / 0 video mới. 0 mẫu sạch còn đăng.",
+      "hang": 19,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — lời kể gốc + footage công cộng / tự vẽ map. KHÔNG compilation clip chiến tranh",
+      "kiemDuoc": "CÓ TIỀM NĂNG US — history 596.6K. PastCraft +359% / Documentary History Hub +298%",
+      "viPham": "CÓ RỦI RO reused (clip chiến tranh) + cửa 1 compilation. True crime / chiến tranh hiện đại nằm list ĐỎ",
+      "canhTranh": "history documentary overall 76.6 · volume 91.4 · competition 45.6. history US 596.6K",
+      "doMoi": "Rất cao. Similar: PastCraft +359% / The Origin +331% / Documentary History Hub +298% / WW2 Stories Archive +37%. 0 mẫu kho sạch",
+      "skuNote": "HƯỚNG DẪN: title + docs = KEY WORLD WAR II HISTORY, full quy trình A-Z."
+    },
+    {
+      "ngach": "Triết lý / khắc kỷ",
+      "xanh": "THẬN TRỌNG",
+      "rpm": "chưa đo",
+      "thiTruong": [
+        "🇯🇵 Nhật",
+        "🇺🇸 US",
+        "🇻🇳 Việt"
+      ],
+      "skus": [
+        "VIDEO-2aa1f7",
+        "VIDEO-a348a5",
+        "VIDEO-b96929",
+        "VIDEO-33d701"
+      ],
+      "docs": [
+        "docs/NOI-BO/prompt/triet-ly.md"
+      ],
+      "evidence": "Video kho = share key / show kênh / dạy edit. Kênh VN cùng họ đứng/catalogue: @trihueconhan-vn 0 video mới; @tritueconhanradio +0 sub; @gockhuatnhansinh 0 video mới. Không đủ ≥2 mẫu còn đăng + tăng.",
+      "hang": 20,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — bình luận gốc, KHÔNG farm quote Marcus Aurelius",
+      "kiemDuoc": "CÓ TIỀM NĂNG US — stoicism 108.9K. Be Stoic +341% / Wisdom of the Stoics +102%",
+      "viPham": "CÓ RỦI RO cửa 1 (quote-farm). Wisdom EN từng chết. Không cửa 3",
+      "canhTranh": "stoic wisdom overall 75.8 · volume 78.9 · competition 28.9 (THẤP). stoicism US 108.9K",
+      "doMoi": "Cao ngoài kho. Similar: Be Stoic +341% / Wisdom of the Stoics +102% / Clarity & Zen +45% / The Thinkers Atrium +44%. 0 mẫu kho",
+      "skuNote": "HƯỚNG DẪN: a348a5 / b96929 title = thumb/edit khắc kỷ. 2aa1f7 title = triết lý US + prompt triết lý. 33d701 có @VaultBoy001 (stoicism)."
+    },
+    {
+      "ngach": "Quy luật kinh tế / Economy Rewind",
+      "xanh": "CHƯA ĐỦ BẰNG CHỨNG",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [
+        "VIDEO-2aa1f7"
+      ],
+      "docs": [
+        "docs/NOI-BO/prompt/quy-luat-kinh-te.md"
+      ],
+      "evidence": "Prompt trong tài liệu. @KapitalKompass-US sai data (kênh Jazz). 0 mẫu US kinh tế sạch.",
+      "hang": 21,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — lịch sử kinh tế / documentary. KHÔNG tư vấn đầu tư",
+      "kiemDuoc": "CÓ TIỀM NĂNG US — finance 596.7K. Purple Capital +384%. @KapitalKompass-US trong kho = Jazz (sai data)",
+      "viPham": "CÓ RỦI RO cửa 3 CAO — AI persona finance. An toàn nếu kể lịch sử khủng hoảng, không kêu gọi mua",
+      "canhTranh": "economic history → finance explained overall 79.2 · volume 84.7 · competition 29.1 (thấp)",
+      "doMoi": "Cao ngoài kho. Similar: Purple Capital +384% / Economics Endgame +15% / Bille Finance +11%. 0 mẫu kho sạch",
+      "skuNote": "LIÊN QUAN qua docs: VIDEO-2aa1f7 có “PROMPT NGÁCH QUY LUẬT KINH TẾ”. Không có video Economy Rewind riêng. @KapitalKompass-US = Jazz."
+    },
+    {
+      "ngach": "Reup hoạt hình (đã transform)",
+      "xanh": "CÓ ĐIỀU KIỆN",
+      "rpm": "chưa đo",
+      "thiTruong": [
+        "🇨🇳 Trung",
+        "🇻🇳 Việt"
+      ],
+      "skus": [
+        "VIDEO-28e1cc",
+        "VIDEO-c5837a",
+        "VIDEO-1aaf46",
+        "VIDEO-7312df",
+        "VIDEO-2235fb",
+        "VIDEO-e9e879",
+        "VIDEO-b1208e",
+        "VIDEO-1acb10",
+        "VIDEO-28bb9b",
+        "VIDEO-3fd0d9",
+        "VIDEO-10ceec",
+        "VIDEO-acd33f",
+        "VIDEO-5785a5",
+        "VIDEO-bf7b32",
+        "VIDEO-4a5aac",
+        "VIDEO-2469ee",
+        "VIDEO-dbd487",
+        "VIDEO-c1bd51",
+        "VIDEO-026112",
+        "VIDEO-cb907b",
+        "VIDEO-9a4ddc"
+      ],
+      "mauPhu": [
+        "@Kori_Sub",
+        "@Kyn_Sub",
+        "@NắngNhỏToonReview",
+        "@ChuXinDiaoYu01",
+        "@Tieulongreview2026",
+        "@Socnaureview2026"
+      ],
+      "mauBan": [
+        "@Camnhonvietsub"
+      ],
+      "evidence": "21 video H2DEV. Mọi kênh reup ĐÃ ĐO đều 0 video mới (catalogue) hoặc reset. @Kyn_Sub 12.500 / +400 / 0 video. @NắngNhỏToonReview 6.560 / +1.080 / 0 video. @ChuXinDiaoYu01 (楚新钓鱼 HK) 28.100 / +1.300 / 0 video. @Tieulongreview2026 18.600 / +500 / 0 video. @Socnaureview2026 19.900 / +1.300 / 0 video (country=VN, kho gắn Hàn — đã sửa). @Camnhonvietsub reset 08–09/08. 4 handle gắn sai Reup đã chuyển ngách: @fansdrWilliamLI=Health Insight US reset; @斎藤一人の福の言霊=Religion JP catalogue; @幻界と神域の扉=Religion JP còn đăng; @다시이팔청춘=Health KR. Phải qua reused + bản quyền. Không XANH.",
+      "hang": 22,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — chỉ recap / review / transform. KHÔNG up clip gốc",
+      "kiemDuoc": "CÓ — VN volume xuyên không 702.4K. Tùng vietsub 150K / Bách Huệ 122K còn tăng. RPM VN thấp",
+      "viPham": "CÓ — cửa reused + copyright nếu clip gốc. Anime recap clip gốc nằm list ĐỎ",
+      "canhTranh": "vietsub hoạt hình → xuyên không overall 73 · volume 87.5 · competition 48.9. xuyên không VN 702.4K",
+      "doMoi": "Còn. Similar VN: KPD VIETSUB +37% / Bí Thuật Review +11% / ImDuy +10% / Tùng vietsub +6.4%. Không trụ",
+      "skuNote": "HƯỚNG DẪN: toàn bộ video niche Reup / Hoạt hình — title có reup / vietsub / hoạt hình / bilibili / douyin."
+    },
+    {
+      "ngach": "Drama / 야담 Hàn",
+      "xanh": "THẬN TRỌNG",
+      "rpm": "chưa đo",
+      "thiTruong": [
+        "🇰🇷 Hàn"
+      ],
+      "skus": [
+        "VIDEO-8b69c9"
+      ],
+      "mauBan": [
+        "@조선야담소"
+      ],
+      "docs": [
+        "docs/NOI-BO/prompt/dua-tre-han.md"
+      ],
+      "evidence": "@조선야담소 30.600 / 0 video mới / 30 ngày — đứng. Policy cửa 1. Không XANH.",
+      "hang": 23,
+      "nenLam": false,
+      "lamDuoc": "CÓ ĐK — chuyện gốc. KHÔNG farm đổi tên nhân vật",
+      "kiemDuoc": "CÓ NGẮN HẠN — volume 야담 KR 6.9M. Similar +109–283% nhưng là sóng farm",
+      "viPham": "CÓ — đúng công thức ĐỎ (야담 farm / đổi tên). Cửa 1 inauthentic",
+      "canhTranh": "야담 overall 83.8 · volume 100 · competition 40.4. KR 야담 6.9M — nhu cầu lớn nhất trong các ngách còn lại",
+      "doMoi": "RẤT CAO và ĐÚNG SÓNG FARM. Similar: 설민담화 +283% / 별희 야담 +196% / 백야야담 +141% / 안뜰야담 +140% / 달빛 야담 +109%. Mẫu kho @조선야담소 đứng. KHÔNG trụ",
+      "skuNote": "LIÊN QUAN qua kênh @조선야담소 trong 8b69c9. Title = edit tránh lỗi, không dạy 야담."
+    },
+    {
+      "ngach": "Sinh tồn VN",
+      "xanh": "CHƯA ĐỦ BẰNG CHỨNG",
+      "thiTruong": [
+        "🇻🇳 Việt"
+      ],
+      "skus": [
+        "VIDEO-bdfa54"
+      ],
+      "evidence": "1 video. 0 kênh mẫu đo.",
+      "hang": 24,
+      "nenLam": false,
+      "lamDuoc": "KHÓ faceless — similar toàn face bushcraft / vlog rừng",
+      "kiemDuoc": "THẤP cho faceless. Volume sinh tồn VN 312.9K nhưng format = mặt người",
+      "viPham": "KHÔNG nếu tự quay. CÓ RỦI RO reused nếu lấy clip sinh tồn người khác",
+      "canhTranh": "sinh tồn hoang dã overall 74.4 · volume 76.1 · competition 28.1 (thấp). VN sinh tồn 312.9K",
+      "doMoi": "Có kênh mới face: Hơi Thở Sinh Tồn +58% / Trí Vlog +14% / Nhật Ký Sinh Tồn TV +6.4%. 0 mẫu faceless kho",
+      "skuNote": "HƯỚNG DẪN: title = Key Sinh Tồn view Việt bán content."
+    },
+    {
+      "ngach": "Người que / Chill Dude / Nonagon",
+      "xanh": "CHƯA ĐỦ BẰNG CHỨNG",
+      "thiTruong": [],
+      "skus": [
+        "VIDEO-ed1be9",
+        "VIDEO-8e0275",
+        "VIDEO-b559c8"
+      ],
+      "evidence": "3 video dạy EDIT/THUMB. 0 kênh mẫu nội dung đo.",
+      "hang": 25,
+      "nenLam": false,
+      "lamDuoc": "CÓ KỸ THUẬT (3 video kho dạy edit/thumb) — CHƯA có mẫu nội dung explainer",
+      "kiemDuoc": "CHƯA CHỐT. Keyword mạnh (alan becker 215.6K) nhưng similar trả về gameplay stickman, không explainer",
+      "viPham": "KHÔNG nếu animation gốc. Cửa 1 nếu clone Alan Becker / Chill Dude template",
+      "canhTranh": "stickman animation overall 80.2 · volume 92.3 · competition 38. alan becker US 215.6K — incumbent lớn",
+      "doMoi": "Thấp cho explainer. Similar: Granny Pretty 3D +163% (parody 3D, lệch). Còn lại Stick Kombat / TrollStick đứng — gameplay. 0 mẫu nội dung kho",
+      "skuNote": "HƯỚNG DẪN edit/thumb: Chill Dude, Nonagon, người que. Không phải video nội dung explainer."
+    },
+    {
+      "ngach": "Đứa trẻ Hàn",
+      "xanh": "CHƯA ĐỦ BẰNG CHỨNG",
+      "rpm": "chưa đo",
+      "thiTruong": [
+        "🇰🇷 Hàn"
+      ],
+      "skus": [
+        "VIDEO-2aa1f7"
+      ],
+      "docs": [
+        "docs/NOI-BO/prompt/dua-tre-han.md"
+      ],
+      "evidence": "Có prompt trong 90 tài liệu. Chưa đo kênh mẫu riêng. Không lấy @조선야담소 (đứng) làm đại diện.",
+      "hang": 26,
+      "nenLam": false,
+      "lamDuoc": "KHÔNG khớp faceless — similar toàn face family vlog",
+      "kiemDuoc": "KHÔNG trên mô hình H2DEV. 육아 KR 181K là nhu cầu mặt người",
+      "viPham": "CÓ RỦI RO trẻ em (COPPA) nếu dùng mặt trẻ. Không cửa 3. 16/07/2026 (Halprin): trẻ em trong tình huống đau khổ = nhóm 2 off-putting — kênh dedicate = remove YPP.",
+      "canhTranh": "육아템 overall 67.4 · volume 65.3 · competition 29.5. KR 육아 181K",
+      "doMoi": "Face còn tăng (아기보고가 +10% / 지안이하준이 +7%). Faceless long-form 육아 gần như không có. 0 mẫu kho",
+      "skuNote": "LIÊN QUAN qua docs: VIDEO-2aa1f7 có “PROMPT NGÁCH ĐỨA TRẺ (UPDATE 24/01/2026)”. Không có video dạy 육아."
+    },
+    {
+      "ngach": "Tiền sử / Canada / cam cảnh sát",
+      "xanh": "CHƯA ĐỦ BẰNG CHỨNG",
+      "thiTruong": [
+        "🇨🇦 Canada",
+        "🇻🇳 Việt"
+      ],
+      "skus": [
+        "VIDEO-3f85a1",
+        "VIDEO-91bb96",
+        "VIDEO-5c3116"
+      ],
+      "docs": [
+        "docs/NOI-BO/prompt/tien-su-veo3.md"
+      ],
+      "evidence": "1 video + prompt. 0 kênh mẫu đo.",
+      "hang": 27,
+      "nenLam": false,
+      "lamDuoc": "TÁCH: tiền sử = subset lịch sử (làm được). Cam cảnh sát Canada = KHÔNG làm",
+      "kiemDuoc": "Tiền sử: tiềm năng US (documentary 278.1K). Cam: không tính — reused",
+      "viPham": "Cam cảnh sát = reused + privacy. Tiền sử = cùng rủi ro footage lịch sử",
+      "canhTranh": "prehistoric documentary → documentary for sleep overall 72.5 · volume 76.2 · competition 33. documentary US 278.1K",
+      "doMoi": "Đi theo lịch sử documentary (PastCraft +359%). 1 video + prompt kho. Không tách thành trụ riêng",
+      "skuNote": "HƯỚNG DẪN + docs: 5c3116 title Canada + docs “PROMPT TRAIN NGÁCH TIỀN SỬ” và “LIST … CAM CẢNH SÁT”. 3f85a1 / 91bb96 = share key Canada."
+    },
+    {
+      "ngach": "Kiểm soát sinh học / chiến thuật",
+      "xanh": "CHƯA ĐỦ BẰNG CHỨNG",
+      "thiTruong": [],
+      "skus": [
+        "VIDEO-2aa1f7"
+      ],
+      "docs": [
+        "docs/NOI-BO/prompt/sinh-hoc-combat.md"
+      ],
+      "evidence": "Có trong 90 tài liệu. 0 kênh mẫu đo.",
+      "hang": 28,
+      "nenLam": false,
+      "lamDuoc": "CHƯA ĐỦ — chỉ có trong 90 tài liệu, 0 kênh mẫu, không scan ra cụm kênh riêng",
+      "kiemDuoc": "CHƯA ĐỦ DATA kênh. Có thể chồng khoa học / lịch sử",
+      "viPham": "CÓ RỦI RO nếu đi sang y tế / chiến tranh hiện đại",
+      "canhTranh": "Không có cụm keyword riêng ổn định. Không gán điểm đoán",
+      "doMoi": "Không thấy cụm kênh faceless riêng. 0 mẫu kho. Không trụ",
+      "skuNote": "LIÊN QUAN qua docs: VIDEO-2aa1f7 có “PROMPT: NGÁCH Kiểm soát sinh học - chiến thuật - tâm lý”. Không có video dạy riêng."
+    },
+    {
+      "ngach": "Wildlife documentary / animal behavior / conservation",
+      "xanh": "CÓ ĐK",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [
+        "VIDEO-e91589"
+      ],
+      "docs": [
+        "pipelines/wildlife/wildlife-survival-H2dev/script-wildlife-survival/SKILL.md"
+      ],
+      "evidence": "Đo lại 21/08: dinosaur documentary overall 71.0, volume 75.1, competition 35.3. vidIQ discovery có cả cá lớn và cá mới: @discoverwildlifeen (US, 96.5K sub, view +26.32%/30d), @livingzoo (US, 232K sub, view +14.94%/30d), @faunapse (US, 1K sub, view +131.65%/30d), @wildanimalsb52 (US, 39.6K sub, view +38.41%/30d). Đây là evidence documentary/behavior/conservation, không phải rescue dàn dựng.",
+      "hang": 29,
+      "nenLam": true,
+      "mauSach": [
+        "@discoverwildlifeen",
+        "@livingzoo",
+        "@faunapse",
+        "@wildanimalsb52"
+      ],
+      "quyetDinh": "ƯU TIÊN SẢN XUẤT CÓ ĐIỀU KIỆN — có demand, wedge competition thấp hơn documentary tổng và đã có cả kênh lớn lẫn kênh mới faceless tăng. Scale theo format documentary research, không scale theo rescue hoặc shock footage.",
+      "formatBrand": "Một hành vi/loài/hệ sinh thái → câu hỏi sinh tồn hoặc tiến hóa có nguồn → cơ chế khoa học → áp lực môi trường/bảo tồn → điều người xem quan sát hôm nay.",
+      "lamDuoc": "CÓ ĐK — research, footage có quyền hoặc tự tạo; cảnh AI realistic cần disclosure khi có thể gây hiểu nhầm. Không làm rescue câu nước mắt.",
+      "kiemDuoc": "Dùng benchmark AIR Education & Science chỉ như tham chiếu danh mục; chưa có RPM wildlife riêng đã xác minh.",
+      "viPham": "Rủi ro nằm ở rescue dàn dựng, footage không có quyền hoặc mô tả sai sự thật; documentary/behavior/conservation làm đúng không bị loại theo tên ngách.",
+      "canhTranh": "Documentary tổng competition 56.2-69.5; dinosaur documentary là wedge đo được competition 35.3. Không vào bằng keyword animal rescue dù demand cao.",
+      "doMoi": "Ưu tiên hành vi ít thấy, thích nghi cực hạn, tiến hóa, bảo tồn và đại dương; mỗi video phải có cơ chế/source khác nhau.",
+      "skuNote": "VIDEO-e91589 liên quan qua skill pipeline; không phải evidence thị trường hoặc kênh mẫu."
+    },
+    {
+      "ngach": "Everyday History EN (lịch sử đồ vật thường ngày)",
+      "xanh": true,
+      "rpm": "Benchmark AIR Education & Science long-form: median $10.22; range P25-P75 $2.31-$19.50. Không phải RPM cam kết cho kênh này; phụ thuộc thị trường, retention, ad-load và audience.",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [],
+      "mauSach": [
+        "@thepassiveexplainer",
+        "@historyofsimplethings",
+        "@lilliput_history"
+      ],
+      "mauPhu": [
+        "@toastertalesusa",
+        "@everydaythingsexplain"
+      ],
+      "mauBan": [
+        "@weirdhistory"
+      ],
+      "evidence": "ĐỦ NGƯỠNG XANH (đo 20/08/2026). Keyword 'history of everyday objects' overall 70.3 · volume 71.2 · competition 31 (THẤP). Mẫu faceless US còn đăng + tăng: The Passive Explainer 42.300/+34,3% · Toaster Tales 18.300/+33,6% (avg 166K view) · LILLIPUT HISTORY +33,2% · Everyday Things Explained +29,9% · EvoTrace +29,1% ($2,3K) · History of Simple Things 1.010.000 (+117%/1y). Hook 'Nếu thứ này chưa từng tồn tại thì sao?' = cơ chế retention chuẩn kênh thắng.",
+      "hang": 30,
+      "nenLam": true,
+      "quyetDinh": "ƯU TIÊN SẢN XUẤT — demand tìm kiếm có thật, competition keyword thấp hơn history tổng và có nhiều mẫu faceless US còn đăng/tăng. Không dùng series hàng loạt chỉ đổi tên đồ vật.",
+      "formatBrand": "Mỗi video chỉ 1 vật dụng/thói quen → đời sống trước khi có nó → mâu thuẫn hoặc giải pháp lịch sử có nguồn → hệ quả còn thấy hôm nay. Hook: ‘Trước khi có X, con người đã làm gì?’; kết thúc nối lại vật dụng hiện đại.",
+      "lamDuoc": "CÓ — chỉ cần 1 vật dụng/thói quen → nguồn gốc → vì sao ra đời → ảnh hưởng. Đề tài vô tận (ăn uống/vệ sinh/quần áo/tiền/nhà/y tế/tình yêu/hôn nhân/giao thông/giấc ngủ).",
+      "kiemDuoc": "CÓ — US. Education RPM ~$1-4. Mẫu The Passive Explainer $3,3K/tháng, History of Simple Things 1M subs. Hook câu hỏi giữ retention video dài.",
+      "viPham": "KHÔNG nếu 1 video = 1 vật riêng + có narrative + AI phong cảnh (không dàn cảnh). CÓ RỦI RO cửa 1 nếu template 'top 10' / đổi tên vật giữ cấu trúc.",
+      "canhTranh": "history of everyday objects 20/08: overall 70.3 · volume 71.2 · competition 31.0 — THẤP nhất nhóm History/Edutainment.",
+      "doMoi": "Cao — 6+ kênh faceless mới +17-50%/30d, nhiều kênh <20K mới nổ (The Origin +285%, LFY PureBusiness +48%). Chưa bão hòa.",
+      "skuNote": "TRỤ MỚI 20/08/2026 từ nhận định user — thêm sau audit 7 ngách. Chưa có video dạy trong kho (skus rỗng) — cần tạo prompt pipeline."
+    },
+    {
+      "ngach": "True Origin / Economic History EN (giải mã gốc tích)",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "Benchmark AIR Education & Science: median $10.22, P25-P75 $2.31-$19.50. Đây là tham chiếu danh mục, không phải RPM cam kết hoặc doanh thu dự báo cho kênh mới.",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [],
+      "mauSach": [
+        "@theorigin619",
+        "@forgottenwaystomakemoney"
+      ],
+      "mauPhu": [
+        "@purebusinesshorts"
+      ],
+      "mauBan": [],
+      "evidence": "ĐO 20/08/2026 — The Origin @theorigin619 5.860/+285,5%/30d (+401% views, faceless documentary 'origins of the world around us') · Forgotten Ways to Make Money 19.300/+29,5% ('người xưa kiếm tiền bằng gì' = đúng câu hỏi user) · PureBusiness 38.200/+48%. Đủ 2 mẫu sạch nhưng rất mới (<6 tháng) → CÓ MẪU TĂNG.",
+      "hang": 31,
+      "nenLam": false,
+      "quyetDinh": "WATCHLIST — economic history có demand và giá trị long-form, nhưng keyword tổng cạnh tranh trung bình-cao; chỉ mở sau khi chọn được wedge hẹp, không dùng khung suy đoán hoặc quy kết bí mật vô căn cứ.",
+      "formatBrand": "Một vật/ngành/hệ thống → nguồn sử học đáng tin → điều cách kể phổ biến bỏ sót → chuỗi nguyên nhân kinh tế-xã hội → hệ quả hiện tại. Tách fact, tranh luận sử học và suy đoán; không tư vấn đầu tư.",
+      "lamDuoc": "CÓ — 1 vật/ngành/đế chế → nguồn gốc thật → vì sao hiểu lầm → kinh tế/quyền lực đằng sau → bài học.",
+      "kiemDuoc": "Dùng benchmark AIR Education & Science median $10.22 (P25-P75 $2.31-$19.50) làm tham chiếu danh mục, không phải RPM cam kết hay kết quả của kênh đối thủ.",
+      "viPham": "KHÔNG nếu hướng 'nguồn gốc giáo dục' (như Forgotten Ways). CÓ RỦI RO limited-ads nếu nhánh 'ngân hàng quốc tế kiểm soát lịch sử' = conspiracy.",
+      "canhTranh": "history documentary 20/08: overall 76.6 · volume 91.4 · competition 45.6. Vào bằng wedge economic-origin không đấu trực diện HISTORY 15M.",
+      "doMoi": "Rất cao — The Origin +285%, nhiều kênh <10K mới nổ. Cửa sổ 2026.",
+      "skuNote": "Thêm 20/08/2026. Biến thể của 'Quy luật kinh tế / Economy Rewind' (hạng 21) — nhánh lịch sử, không tư vấn tài chính (né cửa 3)."
+    },
+    {
+      "ngach": "Food History EN (lịch sử thực phẩm)",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "Benchmark AIR Education & Science: median $10.22, P25-P75 $2.31-$19.50. Không suy ra RPM hoặc doanh thu từ kênh lớn/face channel.",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [],
+      "mauSach": [
+        "@thedishdecoded",
+        "@wherefoodbegan"
+      ],
+      "mauPhu": [
+        "@theorigin619"
+      ],
+      "mauBan": [
+        "@tastinghistory",
+        "@weirdhistoryfood"
+      ],
+      "evidence": "ĐO 20/08 — Dish Decoded 13.900/+5,3%/30d (food detective, untold food histories) · Where Food Began 10.800 (mới, đúng công thức user) · The Origin +285% (food/beverage history = cùng lane). Kênh lớn: Weird History Food 777K ($13,5K), Tasting History 4.4M (face). Mẫu sạch mỏng (1-2 tăng) → CÓ MẪU TĂNG.",
+      "hang": 32,
+      "nenLam": false,
+      "quyetDinh": "WATCHLIST — demand cao nhưng competition keyword cao và đã có kênh lớn giữ lane. Chỉ test bằng micro-wedge, không vào với series lịch sử món ăn tổng quát.",
+      "formatBrand": "Một món → một câu hỏi trái trực giác có thể kiểm chứng → nguồn gốc/chặng thương mại hoặc xung đột → bằng chứng lịch sử → dư âm trong bếp hiện đại. Không dùng listicle, không bịa truyền thuyết và không lấy footage có bản quyền.",
+      "lamDuoc": "CÓ — 1 món → nguồn gốc → truyền thuyết → chiến tranh → thương mại → văn hóa → ảnh hưởng thế giới (đúng công thức user + Weird History Food).",
+      "kiemDuoc": "Dùng benchmark AIR Education & Science median $10.22 (P25-P75 $2.31-$19.50) làm tham chiếu danh mục, không suy ra doanh thu từ kênh lớn hoặc face channel.",
+      "viPham": "KHÔNG nếu thông tin thật có nguồn. RỦI RO cửa 1 nếu lặp template 'top 5 món'. Không bịa truyền thuyết = deceptive.",
+      "canhTranh": "food history 20/08: overall 72.8 · volume 100 · competition 68 (CAO) — kênh lớn ngồi chỗ, vào bằng wedge '1 món/câu chuyện riêng'.",
+      "doMoi": "Trung bình — mẫu nhỏ tăng chậm (Dish Decoded +5%) nhưng gap faceless còn.",
+      "skuNote": "Thêm 20/08/2026. Nhánh con Everyday History — dùng chung pipeline script '1 thứ → câu chuyện'."
+    },
+    {
+      "ngach": "UFO / Alien / Roswell EN (đóng khung điều tra)",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "Entertainment/paranormal — limited-ads rủi ro, nhưng THE BAD ONES 407K $5.428/th chứng minh ra tiền (20/08)",
+      "thiTruong": [
+        "🇺🇸 US"
+      ],
+      "skus": [],
+      "mauSach": [
+        "@skywatcherstories",
+        "@thebadones_series"
+      ],
+      "mauPhu": [
+        "@unexplainediaries",
+        "@thegalaxyhfy"
+      ],
+      "mauBan": [
+        "@thirdphaseofmoon",
+        "@secureteam10"
+      ],
+      "evidence": "ĐO 20/08 — Skywatcher Stories 7.100/+25,4%/30d (+271,7%/1y, lời chứng kiến UFO 'first-hand accounts') · THE BAD ONES 407K/+34,3% (UAP investigation series, $5,4K/th) · UNEXPLAINED DIARIES 12.300/+7% (audiobook 3,5h). Đủ 2 mẫu sạch → CÓ MẪU TĂNG. ĐIỀU KIỆN: đóng khung 'lời kể / theo tài liệu chưa xác minh' — không khẳng định alien có thật.",
+      "hang": 33,
+      "nenLam": false,
+      "quyetDinh": "LÀM ĐƯỢC CÓ ĐIỀU KIỆN — demand có thật. Không dùng công thức khẳng định alien/conspiracy như fact; dùng documentary hồ sơ vụ việc, nguồn kiểm chứng và giới hạn kết luận. Test format nhỏ trước, sau đó chỉ scale nếu retention, advertiser suitability và originality pass.",
+      "formatBrand": "Hồ sơ vụ việc có nguồn → ai nói gì và bằng chứng nào tồn tại → điều chưa xác minh → các cách giải thích cạnh tranh → kết luận giới hạn. Không tái hiện lời kể như fact, không dùng confession bịa hoặc hình AI gây hiểu nhầm.",
+      "lamDuoc": "CÓ ĐK — Roswell + nhân chứng cụ thể + hồ sơ mật + deathbed confessions + twist, nhưng LUÔN ghi 'đây là lời kể, tự phán đoán' (cách Ancient Aliens làm).",
+      "kiemDuoc": "Không dùng số doanh thu kênh paranormal làm dự báo. Hướng này có rủi ro limited ads nên không thuộc mục tiêu kiếm tiền dài hạn an toàn.",
+      "viPham": "CÓ RỦI RO cửa 2 nếu 'kể chuyện bịa trình bày như thật' /'deathbed confession = sự thật'. An toàn nếu đóng khung tường thuật (witness said...). Báo cáo 27/07 từng loại 'chuyện bịa như thật'.",
+      "canhTranh": "ufo documentary 20/08: overall 72.8 · competition 68. Roswell/alien witness = micro-niche hẹp hơn, ít đối thủ trực tiếp.",
+      "doMoi": "Cao — Skywatcher +25%/30d, mẫu faceless mới nổ; kênh cũ đứng.",
+      "skuNote": "Thêm 20/08/2026 — nhận định user + mẫu Skywatcher/THE BAD ONES xác nhận công thức witness+twist."
+    },
+    {
+      "ngach": "Senior Wisdom KR (không-bác-sĩ, tâm lý/tài chính/đời sống)",
+      "xanh": "CÓ MẪU TĂNG",
+      "rpm": "Không có RPM riêng cho KR Senior đã xác minh trong audit. Không dùng finance/health-adjacent để hứa CPM; chỉ coi đây là watchlist long-form có điều kiện policy.",
+      "thiTruong": [
+        "🇰🇷 Hàn"
+      ],
+      "skus": [],
+      "mauSach": [
+        "@지혜로운위로와명상",
+        "@마음쉼터relax"
+      ],
+      "mauPhu": [
+        "@오늘의건강신호",
+        "@인생버팀목"
+      ],
+      "mauBan": [],
+      "evidence": "ĐO 20/08 — 지혜로운 위로와 명상 23.200/+16.000%/1y (Buddhist wisdom+senior, không AI-bác sĩ) · 마음쉼터 66.200/+9,06% · 인생 버팀목 23.200/+7,91% (금융+건강+복지, disclaimer) · 오늘의 건강신호 15.100/+18,9%. Kênh wisdom KHÔNG-bác-sĩ tăng MẠNH HƠN kênh bác sĩ (박박사 +21%) → hướng an toàn.",
+      "hang": 34,
+      "nenLam": false,
+      "quyetDinh": "WATCHLIST ƯU TIÊN CAO — demand Senior KR và nhiều mẫu wisdom tăng, competition thấp-trung bình; chỉ làm life-planning, quan hệ, thích nghi và câu chuyện đời, không y tế/tài chính chuyên môn.",
+      "formatBrand": "Một tình huống tuổi già đời thường → hai hoặc ba lựa chọn có hệ quả → góc nhìn từ nguồn công khai/kinh nghiệm được nêu rõ → checklist hành động không cá nhân hóa. Không giả bác sĩ, không hứa kết quả, không đưa khuyến nghị đầu tư/điều trị.",
+      "lamDuoc": "CÓ ĐK — 'Sau 70 tuổi 3 thói quen bớt lo âu' (giọng wisdom) / 'Tiền tiết kiệm khi về già chia mấy phần' (bài học đời, KHÔNG tư vấn). CẤM title 'bác sĩ 40 năm tiết lộ' = cửa 3.",
+      "kiemDuoc": "Không có RPM đã xác minh riêng cho KR senior. Có thể dùng benchmark RPM danh mục chỉ như tham chiếu, không dùng finance/health-adjacent để hứa CPM cao.",
+      "viPham": "CÓ RỦI RO cửa 3 nếu AI persona bác sĩ/tư vấn tài chính (đã verify policy 2026). An toàn nếu giọng wisdom khách quan + không tự bịa % ('80% người già hối hận' = deceptive nếu không có nguồn).",
+      "canhTranh": "시니어 KR 20/08: overall 74.6 · volume 82 · competition 36.5 (thấp-TB). 재테크 63.4/57.4 — cầu thật.",
+      "doMoi": "Cao — wisdom KR +16000%/1y; nhiều kênh <30K mới nổ.",
+      "skuNote": "Thêm 20/08/2026 — biến thể của 'Sức khỏe/sinh hoạt senior Hàn' (hạng 16): chuyển giọng sang wisdom không chuyên gia (đúng hướng kho: không giả bác sĩ)."
+    }
+  ],
+  "ngachMetaKho": [
+    {
+      "ngach": "Nhân bản / Kênh",
+      "xanh": "META",
+      "vaiTro": "Quy trình clone / setup — không phải ngách đăng.",
+      "evidence": "33/130 video.",
+      "skus": [
+        "VIDEO-e24c31",
+        "VIDEO-a7bfd0",
+        "VIDEO-21956b",
+        "VIDEO-e91589",
+        "VIDEO-34c92b",
+        "VIDEO-21824a",
+        "VIDEO-84a039",
+        "VIDEO-817ae6",
+        "VIDEO-2277b3",
+        "VIDEO-f77c31",
+        "VIDEO-ca0b1a",
+        "VIDEO-469cb5",
+        "VIDEO-9f9fbc",
+        "VIDEO-10f129",
+        "VIDEO-2553da",
+        "VIDEO-9873fb",
+        "VIDEO-e83319",
+        "VIDEO-1a7f58",
+        "VIDEO-5c0b20",
+        "VIDEO-7f0bb4",
+        "VIDEO-7db740",
+        "VIDEO-d84a78",
+        "VIDEO-e25d3b",
+        "VIDEO-e95a8f",
+        "VIDEO-91bb96",
+        "VIDEO-3e5a21",
+        "VIDEO-3ae732",
+        "VIDEO-199f44",
+        "VIDEO-027064",
+        "VIDEO-943781",
+        "VIDEO-f59aa7",
+        "VIDEO-3df94e",
+        "VIDEO-5c438a"
+      ]
+    },
+    {
+      "ngach": "Share key / Ngách nhỏ",
+      "xanh": "META",
+      "vaiTro": "Loại video share key. Từng key đã tách ra các mục phía trên.",
+      "evidence": "35/130 video.",
+      "skus": [
+        "VIDEO-4b3c09",
+        "VIDEO-d2cd90",
+        "VIDEO-348217",
+        "VIDEO-f74bb1",
+        "VIDEO-2de9e4",
+        "VIDEO-2ba0d1",
+        "VIDEO-3f85a1",
+        "VIDEO-a2b317",
+        "VIDEO-7e00ee",
+        "VIDEO-546afa",
+        "VIDEO-34f417",
+        "VIDEO-134a25",
+        "VIDEO-5fd052",
+        "VIDEO-2ed37a",
+        "VIDEO-af606d",
+        "VIDEO-9ef6fe",
+        "VIDEO-7ae3d6",
+        "VIDEO-ffccd2",
+        "VIDEO-5fe83a",
+        "VIDEO-806c0c",
+        "VIDEO-83a28e",
+        "VIDEO-948336",
+        "VIDEO-ca266f",
+        "VIDEO-8603a9",
+        "VIDEO-aacc70",
+        "VIDEO-82f8a8",
+        "VIDEO-25fddf",
+        "VIDEO-b380a1",
+        "VIDEO-39ae49",
+        "VIDEO-5c3116",
+        "VIDEO-5cb825",
+        "VIDEO-891f32",
+        "VIDEO-61e354",
+        "VIDEO-bdfa54",
+        "VIDEO-44cf22"
+      ]
+    },
+    {
+      "ngach": "Kiếm tiền / Chính sách",
+      "xanh": "META",
+      "vaiTro": "Kháng lỗi / AdSense / gãy view.",
+      "evidence": "9/130 video.",
+      "skus": [
+        "VIDEO-4425fc",
+        "VIDEO-46c57e",
+        "VIDEO-ff9be6",
+        "VIDEO-6ad3fe",
+        "VIDEO-8b69c9",
+        "VIDEO-1b4be3",
+        "VIDEO-ec9c50",
+        "VIDEO-00136f",
+        "VIDEO-9ea5e3"
+      ]
+    },
+    {
+      "ngach": "Edit / Thumb",
+      "xanh": "META",
+      "vaiTro": "Packaging.",
+      "evidence": "9/130 video.",
+      "skus": [
+        "VIDEO-DD983D",
+        "VIDEO-484f9e",
+        "VIDEO-9aff6d",
+        "VIDEO-a1c98f",
+        "VIDEO-ed1be9",
+        "VIDEO-a348a5",
+        "VIDEO-8e0275",
+        "VIDEO-b559c8",
+        "VIDEO-b96929"
+      ]
+    },
+    {
+      "ngach": "Nền tảng / Tool",
+      "xanh": "META",
+      "vaiTro": "Claude/ChatGPT train prompt, SRT, voice, VIP. Hạ tầng sản xuất — không phải ngách đăng YouTube. Nằm cuối tab.",
+      "evidence": "10/130 video.",
+      "skus": [
+        "VIDEO-e90874",
+        "VIDEO-5d54d0",
+        "VIDEO-54c8f7",
+        "VIDEO-3e943c",
+        "VIDEO-6283a6",
+        "VIDEO-ba3904",
+        "VIDEO-64130d",
+        "VIDEO-d20744",
+        "VIDEO-54422c",
+        "VIDEO-04c2e3"
+      ]
+    }
+  ],
+  "ngachDoCanTranh": [
+    {
+      "ngach": "AI giả bác sĩ / Doctors Warn",
+      "lydo": "Policy cửa 3. Đo sống 18/08: @EricBennettMD wipe 21/07 (3,2 triệu view / 133 video → 0). @장수채소습관 / @노후건강한끼 / @식탁보약 reset. @ThựcPhẩmSứcKhoẻ VN reset 04–05/08. @의사가숨긴건강법 + @DoctorDr.Lee + @desidilse mang công thức bác sĩ."
+    },
+    {
+      "ngach": "AI tư vấn tài chính / cổ phiếu",
+      "lydo": "Cửa 3. Khác 1 kênh giáo dục còn tăng (@똑똑해지는경제학)."
+    },
+    {
+      "ngach": "Wildlife distress-rescue",
+      "lydo": "Policy cửa 2 nêu đích danh."
+    },
+    {
+      "ngach": "야담 farm / đổi tên nhân vật",
+      "lydo": "Policy cửa 1. @조선야담소 0 video mới."
+    },
+    {
+      "ngach": "True crime / chiến tranh hiện đại / compilation / anime recap clip gốc",
+      "lydo": "Limited ads / reused / bản quyền."
+    }
+  ],
+  "thiTruongXanh": {
+    "🇻🇳 Việt": "18/08 đủ XANH: Sức khỏe VN (≥6 mẫu) + Phong thủy VN (≥2). Reup chỉ catalogue/reset.",
+    "🇯🇵 Nhật": "Đủ XANH: Sức khỏe Nhật (≥2) + Phật pháp Nhật (≥2) + Chuyện đời senior (≥2) + Danh ngôn/vĩ nhân (≥5) + Tâm linh/luật hấp dẫn (≥2). Kaidan = CÓ MẪU TĂNG.",
+    "🇰🇷 Hàn": "Đủ XANH: Tâm linh/phúc lộc (≥4) + Chúa/Phúc âm (≥2). Senior / kinh tế / Phật pháp mỗi thứ 1 mẫu sạch.",
+    "🇺🇸 US": "Đủ XANH: Bible EN explainer + Everyday History EN (mới 20/08, comp 31 thấp). True Origin / Food History / UFO = CÓ MẪU TĂNG. Lịch sử đứng. Bác sĩ US wipe.",
+    "🇨🇳 Trung": "Nguồn reup."
+  },
+  "loiDataKho": [
+    "@KapitalKompass-US gắn Kinh tế US — vidIQ trả kênh Jazz KR.",
+    "@경제빠월 / @오싹한경제 / @keodeovietsub / @DoctorJohnMeyers / @偉人のコンパス1 / @スピリチュアルの泉 handle không resolve hoặc 404.",
+    "@desidilse handle map sang kênh '실버 라이프' (Firecrawl lấy ID UCvpA8l6JN7z_Y3pDlLoyJIg).",
+    "@偉大さJAPAN721 title thực = 静かな物語 — video count dao động.",
+    "@こころの道しるべ gắn markets Hàn trong kho — vidIQ country=JP.",
+    "VIDEO-d84a78 title = hợp tác kênh; docs mới là prompt Phật pháp.",
+    "@fansdrWilliamLI gắn Reup — thực tế Health Insight US, reset 27–30/07 (8,2 triệu view → 16K).",
+    "@斎藤一人の福の言霊 gắn Reup — thực tế Religion JP, catalogue từ 29/07.",
+    "@幻界と神域の扉 gắn Reup — thực tế Religion JP còn đăng.",
+    "@다시이팔청춘-k5d gắn Reup — thực tế Health/Food KR.",
+    "@Socnaureview2026 gắn markets Hàn — vidIQ country=VN.",
+    "@LamNgo-qz3bw title = 한의사가 전하는 건강 조언 (bác sĩ YHCT), 0 video mới.",
+    "@HinognaKaalamanYT PH Vehicle — gỡ hàng loạt 03–10/08 (181→117 video, 23 triệu → 13,4 triệu view).",
+    "@kurumanozokitai = クルマ覗き隊 (xe hơi JP), không phải ngách nội dung trụ.",
+    "VIDEO-2aa1f7 không phải Bible / nhà máy / địa chính trị / đứa trẻ / sinh học / Economy Rewind — title = triết lý US.",
+    "VIDEO-e24c31 / VIDEO-a7bfd0 là Nhân bản / Kênh, không phải phúc lộc Hàn.",
+    "VIDEO-e91589 là Nhân bản / Kênh, không phải wildlife.",
+    "VIDEO-5fd052 là share key Nhật, không phải 야담 Hàn.",
+    "VIDEO-502960 / VIDEO-de2564 là drama/stories JP, không phải kaidan.",
+    "@こころの道しるべブッダの教え là Phật Nhật, từng gắn market Hàn.",
+    "@UCqZpuhhJC5G4kfvBG7MTAXg = Science Sun, từng gắn niche Share key.",
+    "@KapitalKompass-US = Jazz, không phải Economy Rewind.",
+    "H9 gỡ VIDEO-502960 / VIDEO-de2564 — drama/stories gia đình, không phải chuyện đời senior.",
+    "H8 gỡ VIDEO-33d701 — không phải danh ngôn / 偉人.",
+    "H12 gỡ VIDEO-70f1f1 (Chúa Hàn + Phật Nhật) và VIDEO-d71802 (triết/kinh tế Hàn). Thêm VIDEO-d84a78 (docs Phật Hàn).",
+    "H16 thêm VIDEO-f74bb1 — kênh @노후건강한끼 @건강백단 @장수채소습관.",
+    "H17/21/26/28 lấy VIDEO-2aa1f7 vì docs/prompt đúng tên ngách, không vì title.",
+    "H29 lấy VIDEO-e91589 vì docs “Skill ngách động vật”, không vì title."
+  ],
+  "chuaDoConLai": [],
+  "rpmNote": "Không dùng RPM để gắn XANH. XANH = tăng trưởng sống trên kênh mẫu trong kho.",
+  "bangXepHang": [
+    "Top = nên làm trước. Điểm 4 cổng đo MCP: 18/08 cho 29 ngách cũ + 20/08 thêm 5 ngách mới (30–34) = TỔNG 34 ngách. Cập nhật 20/08 theo biến thể an toàn user.",
+    "Top 1 Kinh Thánh EN: kiếm được nhất (US) + kênh faceless mới +128%. Phải giáo dục, không kể chuyện generic.",
+    "Top 2 Phật pháp Nhật: cạnh tranh THẤP NHẤT (13.3) + còn kênh tăng. Kiếm ít hơn US nhưng dễ vào hơn.",
+    "Top 3 Sức khỏe Nhật: độ mới cao nhất trong trụ (+70–88%) nhưng cạnh tranh 62 + cửa 3 — chỉ sinh hoạt.",
+    "Top 4–6 trụ: Sức khỏe VN (không thầy thuốc) · Phong thủy VN · Chúa Hàn.",
+    "Top 7–9 trụ phụ (XANH, làm được): luật hấp dẫn JP (comp 32.4, similar +21–76%) · danh ngôn JP (không farm quote) · chuyện đời senior JP (gốc).",
+    "Hạng 10 XANH không trụ: phúc lộc Hàn — sóng saju/tarot.",
+    "Hạng 11–16 CÓ MẪU TĂNG: Khoa học EN (gần XANH nhất) · Phật Hàn · kinh tế Hàn/Nhật (cửa 3) · kaidan JP · senior Hàn (nhiều reset).",
+    "Hạng 17–22 đo ngoài kho / có ĐK: nhà máy (+222–262% nhưng 0 mẫu kho) · địa chính trị · lịch sử WWII (reused) · khắc kỷ (quote-farm) · Economy Rewind (cửa 3) · reup vietsub (reused).",
+    "Hạng 23–29 không trụ: 야담 (6.9M + farm ĐỎ) · sinh tồn VN (face) · người que (incumbent) · đứa trẻ Hàn (face/COPPA) · tiền sử/cam · sinh học (0 kênh) · wildlife (cửa 2 ĐỎ).",
+    "Hạng 30 XANH TRỤ MỚI 20/08: Everyday History EN — competition 31 THẤP, đề tài vô tận, 6+ mẫu tăng (The Passive Explainer +34%, Toaster Tales +34% avg 166K view, History of Simple Things 1M). CHƯA có video trong kho (skus=[]) — ưu tiên tạo prompt pipeline.",
+    "Hạng 31–34 CÓ MẪU TĂNG mới 20/08: True Origin/Economic History (The Origin +285%) · Food History (nhánh Everyday) · UFO/Roswell wedge điều tra (Skywatcher +25%, THE BAD ONES +110K) · Senior Wisdom KR không-bác-sĩ (마음쉼터 +11%, +66 video).",
+    "Tự vấn: đã đo hết 34 ngách keyword+similar chưa? CÓ — 18/08 cho 29 + 20/08 cho 5 mới. Còn hang=99? KHÔNG. Everyday History mới xanh:true nhưng chưa video — cần pipeline."
+  ],
+  "note": "SKU gắn theo title + kênh trong video + docs/prompt. Hướng dẫn = title nói đúng ngách. Liên quan = kênh mẫu hoặc file/prompt trong video. Không gắn vì trùng 1 chữ."
+}

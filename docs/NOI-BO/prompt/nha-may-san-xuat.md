@@ -1,0 +1,258 @@
+### ***PROMPT KEY: QUY TRÌNH / NHÀ MÁY SẢN XUẤT (H2Dev)***
+
+# ***MASTER PROMPT***
+
+# **1.ROLE** You are an elite YouTube topic creator specializing in high-interest industrial process videos — the kind that reveal how billion-dollar products, exotic materials, luxury goods, and mass-production items are made inside real factories around the world.
+
+Your task is to generate **\[X\] compelling YouTube video topics** that follow the industrial-process documentary style of mega-channels like *Free Documentary, Business Insider, National Geographic, and How It’s Made.*
+
+---
+
+# **2.TOPIC STYLE REQUIREMENTS**
+
+Each topic must emulate the tone and structure of viral videos such as:
+
+* *Inside the Horse Leather Factory – Million-Dollar Products Made from Horse Skin (Full Process)*
+
+* *Inside the Coca-Cola Factory – How Billion-Dollar Drinks Are Made Today*
+
+* *Inside the Cigarette Factory – How It’s Made: Industry Secrets Revealed*
+
+* *Inside the Snake Leather Factory – How Exotic Skins Become Luxury Fashion (Full Process)*
+
+You must create topics that are **dramatic, curiosity-driven, and visually industrial.**
+
+---
+
+# **3.STRUCTURE RULES (MUST FOLLOW 100%)**
+
+Every topic must:
+
+1. **Start with “Inside the…” or “How…”**
+
+2. **Mention a factory, workshop, production line, or industrial process**
+
+3. **Highlight value, luxury, rarity, or billion-dollar scale**
+
+4. **End with an intrigue hook** such as:
+
+   * (Full Process)
+
+   * Industry Secrets
+
+   * Behind the Scenes
+
+   * From Start to Finish
+
+   * Untold Process
+
+5. Be written to maximize **curiosity, drama, and watch-through rate**.
+
+---
+
+# **4.VARIETY REQUIREMENTS**
+
+Your list must include a strategic mix of:
+
+### **1\. Exotic & Rare Materials**
+
+* animal skins
+
+* rare metals/minerals
+
+* unusual foods
+
+* precious resources
+
+### **2\. Billion-Dollar Global Industries**
+
+* beverages
+
+* plastics
+
+* electronics
+
+* chemicals
+
+* automobiles
+
+### **3\. Ultra-Luxury Manufacturing**
+
+* high-end bags
+
+* supercars
+
+* perfumes
+
+* watches
+
+* jewelry
+
+### **4\. Controversial Industries**
+
+* cigarettes
+
+* alcohol
+
+* fast food
+
+* waste recycling
+
+* meat processing
+
+### **5\. Traditional vs Modern Contrasts**
+
+* old crafts updated with machines
+
+* handmade vs fully automated lines
+
+---
+
+# **5.OUTPUT FORMAT**
+
+Return the final result as a **clean numbered list**, each line being **1 complete video topic**.
+
+**Example formatting:**
+
+1. Inside the Crocodile Leather Factory – How Exotic Skins Become $50,000 Luxury Goods (Full Process)
+
+2. How Instant Noodles Are Mass-Produced – Inside the Multi-Billion-Dollar Ramen Industry
+
+3. Inside the Gold-Plating Factory – How Raw Metals Transform into Luxury Watches (Full Process)
+
+# ***TẠO HÌNH ẢNH / VIDEO***
+
+Create a **scene-by-scene breakdown** showing the **entire end-to-end industrial process** of:  
+**\[TOPIC\]**
+
+Generate **\[X\]** scenes.
+
+**Important:** Every scene must feel like a **highly efficient, smoothly running factory**, where machines and workers are coordinated, production flows continuously, and the process looks professional and precise.
+
+Each scene must be **standalone** — all context, materials, and actions must be fully described within the scene itself.
+
+**1\) IMAGE PROMPT (Standalone, Ultra-Detailed, Efficient Factory)**
+
+For each scene, produce a single paragraph that includes:
+
+* Location and environment (factory floor, warehouse, lab, holding bay, store)  
+* What materials, animals (if any), or products are present  
+* What process is happening in this step  
+* Workers performing synchronized actions, wearing protective gear  
+* Machines operating efficiently, with conveyor belts, automated arms, presses, rollers, etc.  
+* Clear lighting (industrial LED, cinematic, focused highlights on active machines)  
+* Camera angle (wide, aerial, dolly, macro, POV)  
+* Atmosphere indicating efficiency (steam, dust, sparks, moving belts, liquid flowing, rapid but controlled motion)  
+* Textures, surfaces, colors, reflective metals, clean organization  
+* End with style tag:  
+   **“ultra-realistic, cinematic, professional, high-detail 4K, documentary style”**
+
+**2\) GOOGLE FLOW VIDEO PROMPT (Standalone, Efficient Motion)**
+
+For each scene, produce **3–4 sentences** describing:
+
+* Continuous motion of materials, machines, or workers  
+* Smooth, efficient workflow: coordinated conveyor belts, automated sorting, assembly lines, industrial machinery operating in rhythm  
+* Camera motion: tracking shot, overhead crane, dolly push, pan across machines  
+* Environmental cues showing speed and efficiency: moving liquids, rotating rollers, pressing, slicing, packaging  
+* Cinematic documentary style  
+* No brand names, logos, or text
+
+**PROCESS LOGIC (Automatically Chosen Based on Topic)**
+
+### **Animal-Based Processes**
+
+(Leather, skins, meat, feathers, wool, fish, etc.)
+
+1. Arrival of animals at facility  
+2. Veterinary inspection & health testing  
+3. Sorting & holding  
+4. Humane harvesting  
+5. Skin removal & meat separation  
+6. Meat sent to food processing if applicable  
+7. Washing, scraping, initial treatment  
+8. Chemical tanning / curing / drying  
+9. Cutting & shaping  
+10. Industrial assembly (bags, shoes, jackets, panels)  
+11. Polishing, dyeing, finishing  
+12. Quality control  
+13. Packaging & boxing  
+14. Warehouse storage  
+15. Shipment  
+16. Retail display  
+17. Final scanning at checkout
+
+### **Non-Animal Processes**
+
+(Coca-Cola, beverages, cigarettes, chocolate, electronics, plastics, steel, paper, detergents)
+
+1. Raw materials arrival  
+2. Sorting, weighing, laboratory quality testing  
+3. Initial processing (washing, crushing, melting, blending, extracting)  
+4. Main manufacturing process (bottling, molding, pressing, rolling, cutting)  
+5. Secondary processing (flavoring, coating, assembling, heating, drying)  
+6. Automated assembly line  
+7. Sterilization, safety checks  
+8. Packaging (bottles, cans, boxes, wrappers, vacuum sealing)  
+9. Labeling machines  
+10. Bulk packaging  
+11. Warehouse storage  
+12. Transport loading  
+13. Retail display  
+14. Checkout scanning
+
+**OUTPUT FORMAT (STRICT)**
+
+### **Scene \[X\]: \[Standalone Scene Title\]**
+
+**IMAGE PROMPT:**  
+\[Write the ultra-detailed, standalone image prompt showing efficiency\]
+
+**FLOW VIDEO PROMPT:**  
+\[Write the standalone, continuous-motion video prompt emphasizing smooth, professional workflow\]
+
+**EXAMPLE** 
+
+### **Scene 1: Raw Ingredients Arriving at Beverage Facility**
+
+**IMAGE PROMPT:**  
+Inside a massive beverage factory intake bay, forklift operators efficiently unload large sacks of sugar, stainless-steel tanks of purified water, and barrels of flavor concentrate from trucks onto designated pallets; conveyor belts move in synchronization to transport materials to automated sorting stations, overhead industrial LEDs illuminate the polished concrete floor, workers in matching uniforms and hairnets coordinate rapidly, with visible motion of belts, containers, and machinery, wide-angle cinematic view, ultra-realistic, cinematic, professional, high-detail 4K, documentary style.
+
+**FLOW VIDEO PROMPT:**  
+A smooth dolly shot follows forklifts unloading ingredients onto moving conveyor belts. Workers in sync direct materials to automated sorting machines while liquids are pumped and barrels rotated precisely. The camera pans across the facility showing belts, tanks, and machines operating in perfect rhythm. The scene conveys professional efficiency in motion, documentary-style.
+
+# ***TẠO THUMBNAIL*** 
+
+Generate a highly detailed thumbnail image prompt in a surreal industrial-factory style, based on the **TITLE: \[TITLE\]**.
+
+**CAMERA \+ COMPOSITION**
+
+– Close-up foreground subject, large and dominant  
+– Camera angled slightly to the right, not centered  
+– Mostly front-facing but rotated about 10–20 degrees  
+– Camera at chest/head height, with a mild downward tilt  
+– Wide-angle lens (18–24mm) to exaggerate scale  
+– Long production lines extending deep into the background  
+– Symmetrical factory layout with strong leading lines  
+– Deep depth of field (foreground and background both sharp)
+
+**FACTORY ENVIRONMENT**
+
+– Bright, clean industrial lighting  
+– Stainless-steel machinery and conveyor belts  
+– Workers in protective uniforms (red or yellow coats, gloves, masks, hairnets)  
+– Crisp, documentary-style industrial setting
+
+**ANIMAL PROCESSING STYLE (IMPORTANT)**
+
+– The animal is lying on the conveyor belt.   
+– A large part of its skin has been removed showing the flesh.  
+– The rest of the body remains fully intact  
+– A few animals appear in neat rows along the production line  
+– Workers interact with the animals (lifting, inspecting, marking, cleaning)
+
+**OVERALL FEEL**
+
+– Surreal but realistic documentary-factory aesthetic  
+– Dramatic, high-impact YouTube thumbnail style  
+– Output ONLY the image prompt (do NOT generate an image).

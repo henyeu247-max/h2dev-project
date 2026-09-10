@@ -1,0 +1,25 @@
+{
+  "name": "h2dev-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "validate": "node scripts/validate-project.js",
+    "build:css": "tailwindcss -i ./css/input.css -o ./assets/tailwind.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1",
+    "puppeteer": "^25.8.0"
+  }
+}

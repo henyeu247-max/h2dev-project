@@ -1,0 +1,635 @@
+{
+  "videoId": "OUodbJEco-o",
+  "title": "Why Train Engines Idle For Days Instead of Shutting Off",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 104,
+  "fullText": "Imagine buying a truck that burns fuel 24 hours a day. Not while driving, while parked, every night, every weekend, sometimes for days at a time. Most people would think you're insane. Yet, railroads all over the world do exactly that. In freight yards across North America, Europe, and Asia, locomotives worth millions of dollars sit motionless with their engines still running. No freight cars are moving. No passengers are boarding. Nothing appears to be happening at all. And yet, the engines keep rumbling, burning fuel, making noise, going nowhere. So, why don't they just switch them off? Welcome to Simple Concepts Explained. Today, we're pulling back the curtain on why train engines idle for days at a time and why shutting one down can sometimes become the most expensive mistake a railroad can make. Let's start with a nightmare scenario. Imagine a locomotive sitting in a railard during the middle of winter. The temperature drops through the night, then drops further. Hours later, a crew arrives expecting to take a freight train across the country. They climb aboard, turn the controls, and nothing happens. The batteries are weak. The oil has thickened. The fuel has started to gel. The locomotive refuses to start. A broken down car is annoying. A broken down locomotive can bring an entire section of railroad to a halt because trains operate on schedules measured in minutes, not days. If one train cannot move, another may be forced to wait behind it. Crews remain on the clock. Cargo sits idle. Connections are missed. One dead locomotive can quickly become a chain reaction spreading across hundreds of miles of track. Railroad workers have a phrase for this, every dead engine becomes a domino. And that is where the logic behind idling begins. But the cold is only part of the story. Because even in perfect weather, a locomotive doesn't really stop working when it stops moving. Here's something most people never realize. Every train carries a countdown timer. And that timer starts ticking the moment the engine shuts down. The countdown isn't measured in seconds. It's measured in air pressure. Modern freight trains use air brakes. The entire system depends on compressed air flowing through the length of the train. As long as that pressure exists, everything works normally, but air is constantly leaking. Tiny amounts escape through valves, hoses, and connections. It's unavoidable. The locomotive's compressor continuously replaces that lost air. If the engine shuts down, the compressor shuts down, too. And from that moment onward, pressure begins slowly falling. Eventually, the brakes apply automatically. That's exactly what they're designed to do. It's an incredibly safe system, but getting the train moving again means recharging the entire brake network. On a long freight train, that can take several minutes, sometimes much longer. To railroad dispatchers, those delays are expensive, which means keeping the engine running is often the easier option. And then we arrive at the biggest misconception of all. Most people think a locomotive is just an engine pulling cars. It isn't. A locomotive is a power station on wheels. The giant diesel engine isn't connected directly to the wheels like a truck. Instead, it drives a generator. That generator produces electricity for almost everything on board. The traction motors, the air compressor, the control computers, the radios, the lighting, the battery charging systems, even the cab heaters and air conditioning. Switch off the engine and you don't just lose propulsion. You lose the electrical heartbeat of the entire machine. Suddenly, the locomotive is cold, dark, silent, and slowly running out of stored energy, which leads railroads to a simple question. What costs more? Burning fuel or risking delays? For decades, the answer was obvious. Fuel was cheap. Delays were not. A veteran yard master once summed it up perfectly. I'd rather burn $50 in diesel than lose $5,000 waiting for a train. And from a railroad's perspective, he's absolutely right. The public sees waste. The railroad sees insurance. Insurance that the locomotive will start. Insurance that the brakes remain charged. Insurance that freight worth millions of dollars keeps moving on time. But there was a problem. The people living next to railards weren't interested in railroad economics. They were interested in sleep. Night after night, residents complained about the endless rumble of idling engines. The noise traveled through walls, across neighborhoods, into bedrooms. Then came concerns about emissions. Thousands of locomotives sitting still while burning fuel year after year. Suddenly, railroads faced a different kind of pressure. Not from physics, from the public. And that's where modern technology enters the story. For most of railroad history, the solution was simple. Leave the engine running. Today, computers are starting to make smarter decisions. Many locomotives now use automatic engine start stop systems. These systems constantly monitor battery charge, coolant temperature, air pressure, and weather conditions. If everything is safe, the locomotive shuts itself down. If conditions change, it starts itself back up automatically before problems develop. Others use auxiliary power units, tiny engines that keep batteries charged and coolant warm while using only a fraction of the fuel consumed by the main engine. And increasingly railroads are experimenting with battery electric locomotives capable of handling many of these support functions without burning diesel at all. The technology is improving. The noise is falling. The fuel savings are growing. But the old logic hasn't disappeared completely because railroads still face the same trade-off they've faced for decades. Reliability versus efficiency. And reliability usually wins. So, if you ever find yourself standing near a railard late at night and hear a locomotive rumbling away long after every train has stopped moving, you're not listening to an engine doing nothing. You're listening to a machine keeping itself alive, waiting for the moment the railroad needs it again. If you enjoyed this video, let me know in the comments what forgotten technology you'd like us to explain next. And don't forget to subscribe to Simple Concepts Explained for more deep dives into the fascinating system shaping our world. See you in the next one.",
+  "fullTextVi": "Hãy tưởng tượng mua một chiếc xe tải đốt nhiên liệu 24 giờ một ngày. Không phải khi đang lái xe, khi đang đỗ xe, hàng đêm, hàng tuần, đôi khi trong nhiều ngày liền. Hầu hết mọi người sẽ nghĩ bạn bị điên. Tuy nhiên, các tuyến đường sắt trên toàn thế giới đều thực hiện chính xác điều đó. Tại các bãi vận chuyển hàng hóa trên khắp Bắc Mỹ, Châu Âu và Châu Á, những đầu máy xe lửa trị giá hàng triệu đô la nằm bất động với động cơ vẫn chạy. Không có xe chở hàng nào đang di chuyển. Không có hành khách nào lên máy bay. Dường như không có gì đang xảy ra cả. Chưa hết, động cơ cứ ầm ầm, đốt xăng, gây ồn ào, chẳng đi đến đâu. Vậy tại sao họ không tắt chúng đi? Chào mừng bạn đến với Giải thích các khái niệm đơn giản. Hôm nay, chúng ta sẽ vén bức màn về lý do tại sao động cơ tàu chạy không tải nhiều ngày liền và tại sao việc tắt một động cơ đôi khi có thể trở thành sai lầm đắt giá nhất mà ngành đường sắt có thể mắc phải. Hãy bắt đầu với một kịch bản ác mộng. Hãy tưởng tượng một đầu máy xe lửa nằm trên đường ray vào giữa mùa đông. Nhiệt độ giảm dần trong đêm, sau đó giảm sâu hơn. Vài giờ sau, một phi hành đoàn đến dự kiến ​​​​sẽ bắt chuyến tàu chở hàng xuyên đất nước. Họ leo lên tàu, vặn nút điều khiển và không có gì xảy ra. Pin yếu. Dầu đã đặc lại. Nhiên liệu đã bắt đầu đông lại. Đầu máy từ chối khởi động. Xe hỏng thì khó chịu. Một đầu máy bị hỏng có thể khiến toàn bộ đoạn đường sắt phải dừng hoạt động vì tàu hoạt động theo lịch trình tính bằng phút chứ không phải ngày. Nếu một đoàn tàu không thể di chuyển thì đoàn tàu khác có thể buộc phải đợi phía sau. Phi hành đoàn vẫn còn trên đồng hồ. Hàng hóa nằm im. Các kết nối bị bỏ lỡ. Một đầu máy chết máy có thể nhanh chóng trở thành một phản ứng dây chuyền lan rộng khắp hàng trăm dặm đường ray. Công nhân đường sắt có câu nói này, mỗi động cơ chết máy sẽ trở thành một quân domino. Và đó là nơi logic đằng sau việc chạy không tải bắt đầu. Nhưng cái lạnh chỉ là một phần của câu chuyện. Bởi vì ngay cả trong thời tiết hoàn hảo, đầu máy xe lửa vẫn không thực sự ngừng hoạt động khi nó ngừng chuyển động. Đây là điều mà hầu hết mọi người không bao giờ nhận ra. Mỗi chuyến tàu đều mang theo một chiếc đồng hồ đếm ngược. Và bộ đếm thời gian đó bắt đầu tích tắc vào thời điểm động cơ tắt. Việc đếm ngược không được tính bằng giây. Nó được đo bằng áp suất không khí. Tàu chở hàng hiện đại sử dụng phanh hơi. Toàn bộ hệ thống phụ thuộc vào khí nén chạy dọc theo chiều dài đoàn tàu. Chừng nào áp suất đó còn tồn tại thì mọi thứ vẫn hoạt động bình thường nhưng không khí liên tục bị rò rỉ. Một lượng nhỏ thoát ra ngoài qua van, ống mềm và các kết nối. Đó là điều không thể tránh khỏi. Máy nén của đầu máy liên tục thay thế lượng không khí bị mất đó. Nếu động cơ tắt thì máy nén cũng tắt. Và từ thời điểm đó trở đi, áp lực bắt đầu giảm dần. Cuối cùng, hệ thống phanh sẽ tự động được áp dụng. Đó chính xác là những gì họ được thiết kế để làm. Đó là một hệ thống cực kỳ an toàn, nhưng để tàu di chuyển trở lại đồng nghĩa với việc sạc lại toàn bộ mạng lưới phanh. Trên một chuyến tàu chở hàng dài, việc đó có thể mất vài phút, đôi khi lâu hơn nhiều. Đối với những người điều độ đường sắt, những sự chậm trễ đó gây tốn kém, có nghĩa là giữ cho động cơ hoạt động thường là lựa chọn dễ dàng hơn. Và sau đó chúng ta đi đến quan niệm sai lầm lớn nhất. Hầu hết mọi người nghĩ đầu máy xe lửa chỉ là động cơ kéo ô tô. Không phải vậy. Đầu máy xe lửa là một nhà máy điện trên bánh xe. Động cơ diesel khổng lồ không được kết nối trực tiếp với bánh xe như xe tải. Thay vào đó, nó điều khiển một máy phát điện. Máy phát điện đó tạo ra điện cho hầu hết mọi thứ trên tàu. Động cơ kéo, máy nén khí, máy tính điều khiển, radio, hệ thống chiếu sáng, hệ thống sạc pin, thậm chí cả máy sưởi cabin và điều hòa không khí. Tắt động cơ và bạn không chỉ mất lực đẩy. Bạn mất nhịp tim điện của toàn bộ máy. Đột nhiên, đầu máy lạnh, tối, im lặng và dần cạn kiệt năng lượng dự trữ, điều này khiến ngành đường sắt đặt ra một câu hỏi đơn giản. Cái gì đắt hơn? Đốt nhiên liệu hay có nguy cơ chậm trễ? Trong nhiều thập kỷ, câu trả lời đã rõ ràng. Nhiên liệu rẻ. Không có sự chậm trễ. Một bậc thầy sân kỳ cựu đã từng tóm tắt nó một cách hoàn hảo. Tôi thà đốt 50 USD tiền xăng còn hơn mất 5.000 USD chờ tàu. Và từ góc độ của ngành đường sắt, anh ấy hoàn toàn đúng. Công chúng nhìn thấy sự lãng phí. Đường sắt thấy bảo hiểm. Bảo hiểm rằng đầu máy sẽ khởi động. Bảo hiểm rằng phanh vẫn được sạc. Bảo hiểm cho số hàng hóa trị giá hàng triệu đô la luôn được vận chuyển đúng giờ. Nhưng có một vấn đề. Những người sống cạnh đường ray không quan tâm đến kinh tế đường sắt. Họ quan tâm đến giấc ngủ. Đêm này qua đêm khác, người dân phàn nàn về tiếng động cơ chạy không tải liên tục. Tiếng ồn xuyên qua các bức tường, xuyên qua các khu phố, vào các phòng ngủ. Sau đó là mối lo ngại về khí thải. Hàng nghìn đầu máy ngồi yên đốt nhiên liệu năm này qua năm khác. Đột nhiên, ngành đường sắt phải đối mặt với một loại áp lực khác. Không phải từ vật lý, từ công chúng. Và đó là lúc công nghệ hiện đại bước vào câu chuyện. Trong hầu hết lịch sử đường sắt, giải pháp rất đơn giản. Để động cơ chạy. Ngày nay, máy tính đang bắt đầu đưa ra những quyết định thông minh hơn. Nhiều đầu máy hiện nay sử dụng hệ thống dừng khởi động động cơ tự động. Các hệ thống này liên tục theo dõi mức sạc pin, nhiệt độ nước làm mát, áp suất không khí và điều kiện thời tiết. Nếu mọi thứ đều an toàn, đầu máy sẽ tự tắt. Nếu điều kiện thay đổi, nó sẽ tự động sao lưu trước khi có vấn đề phát sinh. Những người khác sử dụng các bộ nguồn phụ, những động cơ nhỏ giúp sạc pin và làm ấm chất làm mát trong khi chỉ sử dụng một phần nhiên liệu mà động cơ chính tiêu thụ. Và ngày càng nhiều ngành đường sắt đang thử nghiệm các đầu máy điện chạy bằng pin có khả năng xử lý nhiều chức năng hỗ trợ này mà không cần đốt cháy động cơ diesel. Công nghệ đang được cải thiện. Tiếng ồn đang rơi xuống. Việc tiết kiệm nhiên liệu đang tăng lên. Nhưng logic cũ vẫn chưa biến mất hoàn toàn vì ngành đường sắt vẫn phải đối mặt với sự đánh đổi mà họ đã phải đối mặt trong nhiều thập kỷ. Độ tin cậy so với hiệu quả. Và độ tin cậy thường chiến thắng. Vì vậy, nếu bạn thấy mình đang đứng gần đường ray vào đêm khuya và nghe thấy tiếng đầu máy ầm ầm chạy rất lâu sau khi mọi đoàn tàu đã ngừng chuyển động, thì bạn đang không nghe thấy tiếng động cơ không làm gì cả. Bạn đang lắng nghe một cỗ máy đang tự duy trì hoạt động, chờ đợi thời điểm đường sắt cần đến nó lần nữa. Nếu bạn thích video này, hãy cho tôi biết trong phần nhận xét về công nghệ bị lãng quên mà bạn muốn chúng tôi giải thích tiếp theo. Và đừng quên đăng ký Giải thích các khái niệm đơn giản để tìm hiểu sâu hơn về hệ thống hấp dẫn đang định hình thế giới của chúng ta. Hẹn gặp lại bạn ở lần tiếp theo.",
+  "segments": [
+    {
+      "text": "Imagine buying a truck that burns fuel 24 hours a day.",
+      "viText": "Hãy tưởng tượng mua một chiếc xe tải đốt nhiên liệu 24 giờ một ngày.",
+      "start": 0,
+      "duration": 3.33
+    },
+    {
+      "text": "Not while driving, while parked, every night, every weekend, sometimes for days at a time.",
+      "viText": "Không phải khi đang lái xe, khi đang đỗ xe, hàng đêm, hàng tuần, đôi khi trong nhiều ngày liền.",
+      "start": 3.33,
+      "duration": 5.54
+    },
+    {
+      "text": "Most people would think you're insane.",
+      "viText": "Hầu hết mọi người sẽ nghĩ bạn bị điên.",
+      "start": 8.87,
+      "duration": 2.34
+    },
+    {
+      "text": "Yet, railroads all over the world do exactly that.",
+      "viText": "Tuy nhiên, các tuyến đường sắt trên toàn thế giới đều thực hiện chính xác điều đó.",
+      "start": 11.21,
+      "duration": 3.08
+    },
+    {
+      "text": "In freight yards across North America, Europe, and Asia, locomotives worth millions of dollars sit motionless with their engines still running.",
+      "viText": "Tại các bãi vận chuyển hàng hóa trên khắp Bắc Mỹ, Châu Âu và Châu Á, những đầu máy xe lửa trị giá hàng triệu đô la nằm bất động với động cơ vẫn chạy.",
+      "start": 14.29,
+      "duration": 8.81
+    },
+    {
+      "text": "No freight cars are moving.",
+      "viText": "Không có xe chở hàng nào đang di chuyển.",
+      "start": 23.1,
+      "duration": 2
+    },
+    {
+      "text": "No passengers are boarding.",
+      "viText": "Không có hành khách nào lên máy bay.",
+      "start": 25.1,
+      "duration": 2
+    },
+    {
+      "text": "Nothing appears to be happening at all.",
+      "viText": "Dường như không có gì đang xảy ra cả.",
+      "start": 27.1,
+      "duration": 2.4
+    },
+    {
+      "text": "And yet, the engines keep rumbling, burning fuel, making noise, going nowhere.",
+      "viText": "Chưa hết, động cơ cứ ầm ầm, đốt xăng, gây ồn ào, chẳng đi đến đâu.",
+      "start": 29.5,
+      "duration": 4.8
+    },
+    {
+      "text": "So, why don't they just switch them off?",
+      "viText": "Vậy tại sao họ không tắt chúng đi?",
+      "start": 34.3,
+      "duration": 2.46
+    },
+    {
+      "text": "Welcome to Simple Concepts Explained.",
+      "viText": "Chào mừng bạn đến với Giải thích các khái niệm đơn giản.",
+      "start": 36.76,
+      "duration": 2.28
+    },
+    {
+      "text": "Today, we're pulling back the curtain on why train engines idle for days at a time and why shutting one down can sometimes become the most expensive mistake a railroad can make.",
+      "viText": "Hôm nay, chúng ta sẽ vén bức màn về lý do tại sao động cơ tàu chạy không tải nhiều ngày liền và tại sao việc tắt một động cơ đôi khi có thể trở thành sai lầm đắt giá nhất mà ngành đường sắt có thể mắc phải.",
+      "start": 39.04,
+      "duration": 10.9
+    },
+    {
+      "text": "Let's start with a nightmare scenario.",
+      "viText": "Hãy bắt đầu với một kịch bản ác mộng.",
+      "start": 49.94,
+      "duration": 2.34
+    },
+    {
+      "text": "Imagine a locomotive sitting in a railard during the middle of winter.",
+      "viText": "Hãy tưởng tượng một đầu máy xe lửa nằm trên đường ray vào giữa mùa đông.",
+      "start": 52.28,
+      "duration": 4.31
+    },
+    {
+      "text": "The temperature drops through the night, then drops further.",
+      "viText": "Nhiệt độ giảm dần trong đêm, sau đó giảm sâu hơn.",
+      "start": 56.59,
+      "duration": 3.69
+    },
+    {
+      "text": "Hours later, a crew arrives expecting to take a freight train across the country.",
+      "viText": "Vài giờ sau, một phi hành đoàn đến dự kiến ​​​​sẽ bắt chuyến tàu chở hàng xuyên đất nước.",
+      "start": 60.28,
+      "duration": 4.99
+    },
+    {
+      "text": "They climb aboard, turn the controls, and nothing happens.",
+      "viText": "Họ leo lên tàu, vặn nút điều khiển và không có gì xảy ra.",
+      "start": 65.27,
+      "duration": 3.57
+    },
+    {
+      "text": "The batteries are weak.",
+      "viText": "Pin yếu.",
+      "start": 68.84,
+      "duration": 2
+    },
+    {
+      "text": "The oil has thickened.",
+      "viText": "Dầu đã đặc lại.",
+      "start": 70.84,
+      "duration": 2
+    },
+    {
+      "text": "The fuel has started to gel.",
+      "viText": "Nhiên liệu đã bắt đầu đông lại.",
+      "start": 72.84,
+      "duration": 2
+    },
+    {
+      "text": "The locomotive refuses to start.",
+      "viText": "Đầu máy từ chối khởi động.",
+      "start": 74.84,
+      "duration": 2
+    },
+    {
+      "text": "A broken down car is annoying.",
+      "viText": "Xe hỏng thì khó chịu.",
+      "start": 76.84,
+      "duration": 2
+    },
+    {
+      "text": "A broken down locomotive can bring an entire section of railroad to a halt because trains operate on schedules measured in minutes, not days.",
+      "viText": "Một đầu máy bị hỏng có thể khiến toàn bộ đoạn đường sắt phải dừng hoạt động vì tàu hoạt động theo lịch trình tính bằng phút chứ không phải ngày.",
+      "start": 78.84,
+      "duration": 8.68
+    },
+    {
+      "text": "If one train cannot move, another may be forced to wait behind it.",
+      "viText": "Nếu một đoàn tàu không thể di chuyển thì đoàn tàu khác có thể buộc phải đợi phía sau.",
+      "start": 87.52,
+      "duration": 4.06
+    },
+    {
+      "text": "Crews remain on the clock.",
+      "viText": "Phi hành đoàn vẫn còn trên đồng hồ.",
+      "start": 91.58,
+      "duration": 2
+    },
+    {
+      "text": "Cargo sits idle.",
+      "viText": "Hàng hóa nằm im.",
+      "start": 93.58,
+      "duration": 2
+    },
+    {
+      "text": "Connections are missed.",
+      "viText": "Các kết nối bị bỏ lỡ.",
+      "start": 95.58,
+      "duration": 2
+    },
+    {
+      "text": "One dead locomotive can quickly become a chain reaction spreading across hundreds of miles of track.",
+      "viText": "Một đầu máy chết máy có thể nhanh chóng trở thành một phản ứng dây chuyền lan rộng khắp hàng trăm dặm đường ray.",
+      "start": 97.58,
+      "duration": 6.16
+    },
+    {
+      "text": "Railroad workers have a phrase for this, every dead engine becomes a domino.",
+      "viText": "Công nhân đường sắt có câu nói này, mỗi động cơ chết máy sẽ trở thành một quân domino.",
+      "start": 103.74,
+      "duration": 4.68
+    },
+    {
+      "text": "And that is where the logic behind idling begins.",
+      "viText": "Và đó là nơi logic đằng sau việc chạy không tải bắt đầu.",
+      "start": 108.42,
+      "duration": 3.02
+    },
+    {
+      "text": "But the cold is only part of the story.",
+      "viText": "Nhưng cái lạnh chỉ là một phần của câu chuyện.",
+      "start": 111.44,
+      "duration": 2.4
+    },
+    {
+      "text": "Because even in perfect weather, a locomotive doesn't really stop working when it stops moving.",
+      "viText": "Bởi vì ngay cả trong thời tiết hoàn hảo, đầu máy xe lửa vẫn không thực sự ngừng hoạt động khi nó ngừng chuyển động.",
+      "start": 113.84,
+      "duration": 5.85
+    },
+    {
+      "text": "Here's something most people never realize.",
+      "viText": "Đây là điều mà hầu hết mọi người không bao giờ nhận ra.",
+      "start": 119.69,
+      "duration": 2.65
+    },
+    {
+      "text": "Every train carries a countdown timer.",
+      "viText": "Mỗi chuyến tàu đều mang theo một chiếc đồng hồ đếm ngược.",
+      "start": 122.34,
+      "duration": 2.34
+    },
+    {
+      "text": "And that timer starts ticking the moment the engine shuts down.",
+      "viText": "Và bộ đếm thời gian đó bắt đầu tích tắc vào thời điểm động cơ tắt.",
+      "start": 124.68,
+      "duration": 3.88
+    },
+    {
+      "text": "The countdown isn't measured in seconds.",
+      "viText": "Việc đếm ngược không được tính bằng giây.",
+      "start": 128.56,
+      "duration": 2.46
+    },
+    {
+      "text": "It's measured in air pressure.",
+      "viText": "Nó được đo bằng áp suất không khí.",
+      "start": 131.02,
+      "duration": 2
+    },
+    {
+      "text": "Modern freight trains use air brakes.",
+      "viText": "Tàu chở hàng hiện đại sử dụng phanh hơi.",
+      "start": 133.02,
+      "duration": 2.28
+    },
+    {
+      "text": "The entire system depends on compressed air flowing through the length of the train.",
+      "viText": "Toàn bộ hệ thống phụ thuộc vào khí nén chạy dọc theo chiều dài đoàn tàu.",
+      "start": 135.3,
+      "duration": 5.17
+    },
+    {
+      "text": "As long as that pressure exists, everything works normally, but air is constantly leaking.",
+      "viText": "Chừng nào áp suất đó còn tồn tại thì mọi thứ vẫn hoạt động bình thường nhưng không khí liên tục bị rò rỉ.",
+      "start": 140.47,
+      "duration": 5.54
+    },
+    {
+      "text": "Tiny amounts escape through valves, hoses, and connections.",
+      "viText": "Một lượng nhỏ thoát ra ngoài qua van, ống mềm và các kết nối.",
+      "start": 146.01,
+      "duration": 3.63
+    },
+    {
+      "text": "It's unavoidable.",
+      "viText": "Đó là điều không thể tránh khỏi.",
+      "start": 149.64,
+      "duration": 2
+    },
+    {
+      "text": "The locomotive's compressor continuously replaces that lost air.",
+      "viText": "Máy nén của đầu máy liên tục thay thế lượng không khí bị mất đó.",
+      "start": 151.64,
+      "duration": 3.94
+    },
+    {
+      "text": "If the engine shuts down, the compressor shuts down, too.",
+      "viText": "Nếu động cơ tắt thì máy nén cũng tắt.",
+      "start": 155.58,
+      "duration": 3.51
+    },
+    {
+      "text": "And from that moment onward, pressure begins slowly falling.",
+      "viText": "Và từ thời điểm đó trở đi, áp lực bắt đầu giảm dần.",
+      "start": 159.09,
+      "duration": 3.69
+    },
+    {
+      "text": "Eventually, the brakes apply automatically.",
+      "viText": "Cuối cùng, hệ thống phanh sẽ tự động được áp dụng.",
+      "start": 162.78,
+      "duration": 2.65
+    },
+    {
+      "text": "That's exactly what they're designed to do.",
+      "viText": "Đó chính xác là những gì họ được thiết kế để làm.",
+      "start": 165.43,
+      "duration": 2.65
+    },
+    {
+      "text": "It's an incredibly safe system, but getting the train moving again means recharging the entire brake network.",
+      "viText": "Đó là một hệ thống cực kỳ an toàn, nhưng để tàu di chuyển trở lại đồng nghĩa với việc sạc lại toàn bộ mạng lưới phanh.",
+      "start": 168.08,
+      "duration": 6.71
+    },
+    {
+      "text": "On a long freight train, that can take several minutes, sometimes much longer.",
+      "viText": "Trên một chuyến tàu chở hàng dài, việc đó có thể mất vài phút, đôi khi lâu hơn nhiều.",
+      "start": 174.79,
+      "duration": 4.8
+    },
+    {
+      "text": "To railroad dispatchers, those delays are expensive, which means keeping the engine running is often the easier option.",
+      "viText": "Đối với những người điều độ đường sắt, những sự chậm trễ đó gây tốn kém, có nghĩa là giữ cho động cơ hoạt động thường là lựa chọn dễ dàng hơn.",
+      "start": 179.59,
+      "duration": 7.33
+    },
+    {
+      "text": "And then we arrive at the biggest misconception of all.",
+      "viText": "Và sau đó chúng ta đi đến quan niệm sai lầm lớn nhất.",
+      "start": 186.92,
+      "duration": 3.39
+    },
+    {
+      "text": "Most people think a locomotive is just an engine pulling cars.",
+      "viText": "Hầu hết mọi người nghĩ đầu máy xe lửa chỉ là động cơ kéo ô tô.",
+      "start": 190.31,
+      "duration": 3.82
+    },
+    {
+      "text": "It isn't.",
+      "viText": "Không phải vậy.",
+      "start": 194.13,
+      "duration": 2
+    },
+    {
+      "text": "A locomotive is a power station on wheels.",
+      "viText": "Đầu máy xe lửa là một nhà máy điện trên bánh xe.",
+      "start": 196.13,
+      "duration": 2.59
+    },
+    {
+      "text": "The giant diesel engine isn't connected directly to the wheels like a truck.",
+      "viText": "Động cơ diesel khổng lồ không được kết nối trực tiếp với bánh xe như xe tải.",
+      "start": 198.72,
+      "duration": 4.68
+    },
+    {
+      "text": "Instead, it drives a generator.",
+      "viText": "Thay vào đó, nó điều khiển một máy phát điện.",
+      "start": 203.4,
+      "duration": 2
+    },
+    {
+      "text": "That generator produces electricity for almost everything on board.",
+      "viText": "Máy phát điện đó tạo ra điện cho hầu hết mọi thứ trên tàu.",
+      "start": 205.4,
+      "duration": 4.13
+    },
+    {
+      "text": "The traction motors, the air compressor, the control computers, the radios, the lighting, the battery charging systems, even the cab heaters and air conditioning.",
+      "viText": "Động cơ kéo, máy nén khí, máy tính điều khiển, radio, hệ thống chiếu sáng, hệ thống sạc pin, thậm chí cả máy sưởi cabin và điều hòa không khí.",
+      "start": 209.53,
+      "duration": 9.98
+    },
+    {
+      "text": "Switch off the engine and you don't just lose propulsion.",
+      "viText": "Tắt động cơ và bạn không chỉ mất lực đẩy.",
+      "start": 219.51,
+      "duration": 3.51
+    },
+    {
+      "text": "You lose the electrical heartbeat of the entire machine.",
+      "viText": "Bạn mất nhịp tim điện của toàn bộ máy.",
+      "start": 223.02,
+      "duration": 3.45
+    },
+    {
+      "text": "Suddenly, the locomotive is cold, dark, silent, and slowly running out of stored energy, which leads railroads to a simple question.",
+      "viText": "Đột nhiên, đầu máy lạnh, tối, im lặng và dần cạn kiệt năng lượng dự trữ, điều này khiến ngành đường sắt đặt ra một câu hỏi đơn giản.",
+      "start": 226.47,
+      "duration": 8.13
+    },
+    {
+      "text": "What costs more?",
+      "viText": "Cái gì đắt hơn?",
+      "start": 234.6,
+      "duration": 2
+    },
+    {
+      "text": "Burning fuel or risking delays?",
+      "viText": "Đốt nhiên liệu hay có nguy cơ chậm trễ?",
+      "start": 236.6,
+      "duration": 2
+    },
+    {
+      "text": "For decades, the answer was obvious.",
+      "viText": "Trong nhiều thập kỷ, câu trả lời đã rõ ràng.",
+      "start": 238.6,
+      "duration": 2.22
+    },
+    {
+      "text": "Fuel was cheap.",
+      "viText": "Nhiên liệu rẻ.",
+      "start": 240.82,
+      "duration": 2
+    },
+    {
+      "text": "Delays were not.",
+      "viText": "Không có sự chậm trễ.",
+      "start": 242.82,
+      "duration": 2
+    },
+    {
+      "text": "A veteran yard master once summed it up perfectly.",
+      "viText": "Một bậc thầy sân kỳ cựu đã từng tóm tắt nó một cách hoàn hảo.",
+      "start": 244.82,
+      "duration": 3.08
+    },
+    {
+      "text": "I'd rather burn $50 in diesel than lose $5,000 waiting for a train.",
+      "viText": "Tôi thà đốt 50 USD tiền xăng còn hơn mất 5.000 USD chờ tàu.",
+      "start": 247.9,
+      "duration": 4.13
+    },
+    {
+      "text": "And from a railroad's perspective, he's absolutely right.",
+      "viText": "Và từ góc độ của ngành đường sắt, anh ấy hoàn toàn đúng.",
+      "start": 252.03,
+      "duration": 3.51
+    },
+    {
+      "text": "The public sees waste.",
+      "viText": "Công chúng nhìn thấy sự lãng phí.",
+      "start": 255.54,
+      "duration": 2
+    },
+    {
+      "text": "The railroad sees insurance.",
+      "viText": "Đường sắt thấy bảo hiểm.",
+      "start": 257.54,
+      "duration": 2
+    },
+    {
+      "text": "Insurance that the locomotive will start.",
+      "viText": "Bảo hiểm rằng đầu máy sẽ khởi động.",
+      "start": 259.54,
+      "duration": 2.52
+    },
+    {
+      "text": "Insurance that the brakes remain charged.",
+      "viText": "Bảo hiểm rằng phanh vẫn được sạc.",
+      "start": 262.06,
+      "duration": 2.52
+    },
+    {
+      "text": "Insurance that freight worth millions of dollars keeps moving on time.",
+      "viText": "Bảo hiểm cho số hàng hóa trị giá hàng triệu đô la luôn được vận chuyển đúng giờ.",
+      "start": 264.58,
+      "duration": 4.31
+    },
+    {
+      "text": "But there was a problem.",
+      "viText": "Nhưng có một vấn đề.",
+      "start": 268.89,
+      "duration": 2
+    },
+    {
+      "text": "The people living next to railards weren't interested in railroad economics.",
+      "viText": "Những người sống cạnh đường ray không quan tâm đến kinh tế đường sắt.",
+      "start": 270.89,
+      "duration": 4.68
+    },
+    {
+      "text": "They were interested in sleep.",
+      "viText": "Họ quan tâm đến giấc ngủ.",
+      "start": 275.57,
+      "duration": 2
+    },
+    {
+      "text": "Night after night, residents complained about the endless rumble of idling engines.",
+      "viText": "Đêm này qua đêm khác, người dân phàn nàn về tiếng động cơ chạy không tải liên tục.",
+      "start": 277.57,
+      "duration": 5.11
+    },
+    {
+      "text": "The noise traveled through walls, across neighborhoods, into bedrooms.",
+      "viText": "Tiếng ồn xuyên qua các bức tường, xuyên qua các khu phố, vào các phòng ngủ.",
+      "start": 282.68,
+      "duration": 4.31
+    },
+    {
+      "text": "Then came concerns about emissions.",
+      "viText": "Sau đó là mối lo ngại về khí thải.",
+      "start": 286.99,
+      "duration": 2.16
+    },
+    {
+      "text": "Thousands of locomotives sitting still while burning fuel year after year.",
+      "viText": "Hàng nghìn đầu máy ngồi yên đốt nhiên liệu năm này qua năm khác.",
+      "start": 289.15,
+      "duration": 4.56
+    },
+    {
+      "text": "Suddenly, railroads faced a different kind of pressure.",
+      "viText": "Đột nhiên, ngành đường sắt phải đối mặt với một loại áp lực khác.",
+      "start": 293.71,
+      "duration": 3.39
+    },
+    {
+      "text": "Not from physics, from the public.",
+      "viText": "Không phải từ vật lý, từ công chúng.",
+      "start": 297.1,
+      "duration": 2.09
+    },
+    {
+      "text": "And that's where modern technology enters the story.",
+      "viText": "Và đó là lúc công nghệ hiện đại bước vào câu chuyện.",
+      "start": 299.19,
+      "duration": 3.2
+    },
+    {
+      "text": "For most of railroad history, the solution was simple.",
+      "viText": "Trong hầu hết lịch sử đường sắt, giải pháp rất đơn giản.",
+      "start": 302.39,
+      "duration": 3.33
+    },
+    {
+      "text": "Leave the engine running.",
+      "viText": "Để động cơ chạy.",
+      "start": 305.72,
+      "duration": 2
+    },
+    {
+      "text": "Today, computers are starting to make smarter decisions.",
+      "viText": "Ngày nay, máy tính đang bắt đầu đưa ra những quyết định thông minh hơn.",
+      "start": 307.72,
+      "duration": 3.45
+    },
+    {
+      "text": "Many locomotives now use automatic engine start stop systems.",
+      "viText": "Nhiều đầu máy hiện nay sử dụng hệ thống dừng khởi động động cơ tự động.",
+      "start": 311.17,
+      "duration": 3.76
+    },
+    {
+      "text": "These systems constantly monitor battery charge, coolant temperature, air pressure, and weather conditions.",
+      "viText": "Các hệ thống này liên tục theo dõi mức sạc pin, nhiệt độ nước làm mát, áp suất không khí và điều kiện thời tiết.",
+      "start": 314.93,
+      "duration": 6.59
+    },
+    {
+      "text": "If everything is safe, the locomotive shuts itself down.",
+      "viText": "Nếu mọi thứ đều an toàn, đầu máy sẽ tự tắt.",
+      "start": 321.52,
+      "duration": 3.45
+    },
+    {
+      "text": "If conditions change, it starts itself back up automatically before problems develop.",
+      "viText": "Nếu điều kiện thay đổi, nó sẽ tự động sao lưu trước khi có vấn đề phát sinh.",
+      "start": 324.97,
+      "duration": 5.23
+    },
+    {
+      "text": "Others use auxiliary power units, tiny engines that keep batteries charged and coolant warm while using only a fraction of the fuel consumed by the main engine.",
+      "viText": "Những người khác sử dụng các bộ nguồn phụ, những động cơ nhỏ giúp sạc pin và làm ấm chất làm mát trong khi chỉ sử dụng một phần nhiên liệu mà động cơ chính tiêu thụ.",
+      "start": 330.2,
+      "duration": 9.85
+    },
+    {
+      "text": "And increasingly railroads are experimenting with battery electric locomotives capable of handling many of these support functions without burning diesel at all.",
+      "viText": "Và ngày càng nhiều ngành đường sắt đang thử nghiệm các đầu máy điện chạy bằng pin có khả năng xử lý nhiều chức năng hỗ trợ này mà không cần đốt cháy động cơ diesel.",
+      "start": 340.05,
+      "duration": 9.91
+    },
+    {
+      "text": "The technology is improving.",
+      "viText": "Công nghệ đang được cải thiện.",
+      "start": 349.96,
+      "duration": 2
+    },
+    {
+      "text": "The noise is falling.",
+      "viText": "Tiếng ồn đang rơi xuống.",
+      "start": 351.96,
+      "duration": 2
+    },
+    {
+      "text": "The fuel savings are growing.",
+      "viText": "Việc tiết kiệm nhiên liệu đang tăng lên.",
+      "start": 353.96,
+      "duration": 2
+    },
+    {
+      "text": "But the old logic hasn't disappeared completely because railroads still face the same trade-off they've faced for decades.",
+      "viText": "Nhưng logic cũ vẫn chưa biến mất hoàn toàn vì ngành đường sắt vẫn phải đối mặt với sự đánh đổi mà họ đã phải đối mặt trong nhiều thập kỷ.",
+      "start": 355.96,
+      "duration": 7.51
+    },
+    {
+      "text": "Reliability versus efficiency.",
+      "viText": "Độ tin cậy so với hiệu quả.",
+      "start": 363.47,
+      "duration": 2
+    },
+    {
+      "text": "And reliability usually wins.",
+      "viText": "Và độ tin cậy thường chiến thắng.",
+      "start": 365.47,
+      "duration": 2
+    },
+    {
+      "text": "So, if you ever find yourself standing near a railard late at night and hear a locomotive rumbling away long after every train has stopped moving, you're not listening to an engine doing nothing.",
+      "viText": "Vì vậy, nếu bạn thấy mình đang đứng gần đường ray vào đêm khuya và nghe thấy tiếng đầu máy ầm ầm chạy rất lâu sau khi mọi đoàn tàu đã ngừng chuyển động, thì bạn đang không nghe thấy tiếng động cơ không làm gì cả.",
+      "start": 367.47,
+      "duration": 12.01
+    },
+    {
+      "text": "You're listening to a machine keeping itself alive, waiting for the moment the railroad needs it again.",
+      "viText": "Bạn đang lắng nghe một cỗ máy đang tự duy trì hoạt động, chờ đợi thời điểm đường sắt cần đến nó lần nữa.",
+      "start": 379.48,
+      "duration": 6.34
+    },
+    {
+      "text": "If you enjoyed this video, let me know in the comments what forgotten technology you'd like us to explain next.",
+      "viText": "Nếu bạn thích video này, hãy cho tôi biết trong phần nhận xét về công nghệ bị lãng quên mà bạn muốn chúng tôi giải thích tiếp theo.",
+      "start": 385.82,
+      "duration": 6.84
+    },
+    {
+      "text": "And don't forget to subscribe to Simple Concepts Explained for more deep dives into the fascinating system shaping our world.",
+      "viText": "Và đừng quên đăng ký Giải thích các khái niệm đơn giản để tìm hiểu sâu hơn về hệ thống hấp dẫn đang định hình thế giới của chúng ta.",
+      "start": 392.66,
+      "duration": 7.7
+    },
+    {
+      "text": "See you in the next one.",
+      "viText": "Hẹn gặp lại bạn ở lần tiếp theo.",
+      "start": 400.36,
+      "duration": 2
+    }
+  ]
+}

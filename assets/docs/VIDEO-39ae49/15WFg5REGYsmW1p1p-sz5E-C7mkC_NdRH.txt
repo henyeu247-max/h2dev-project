@@ -1,0 +1,39 @@
+﻿được rồi bạn phân tích tốt lắm, bây giờ từ phân tích ở kênh trên bạn hãy tạo cho tôi một prompt để lấy kịch bản 1 video trong kênh đối thủ (ví dụ kênh đối thủ là kênh tôi vừa gửi cho phân tích xong). Yêu cầu: lấy 70% kịch bản từ video gốc đối thủ còn lại 30% bạn hãy xào nấu trong kịch bản thêm hoặc tự sáng tạo thêm từ các kiến thức cũng như thông tin dữ liệu có sẵn trên internet để mang lại video vẫn giữ đúng chủ đề và hay giúp giữ chân được người xem, yêu cầu tiếp theo: về thông số kỹ thuật chung: tổng độ dài là tùy thuộc vào mỗi kịch bản video (tôi sẽ cấp cho bạn) và bạn hãy tạo prompt chia ra từng phần sao đó để tạo đúng chuẩn và đầy đủ nhất, vì tôi biết được hầu hết các công cụ AI đều không thể viết kịch bản 1 lần được dài.  Đây là ví dụ (lưu ý chỉ là ví dụ để bạn hiểu được chứ không phải yêu cầu bạn lấy từ ví dụ này: DỪNG LẠI. Đợi tôi "TIẾP TỤC".
+
+
+Bước 2 – Trình bày phần
+Với mỗi lệnh "TIẾP TỤC":
+
+
+Xem lại dấu đầu dòng dàn ý tương ứng.
+Mở rộng chính xác nội dung đó—không chuyển sang các dấu đầu dòng sau.
+Chia ra 10-15 phần
+Mỗi phần viết 1000–1100 từ tường thuật liền mạch.
+Bắt đầu bằng tiêu đề “Phần n”, KHÔNG có phụ đề.
+Kết thúc ở mỗi phần bằng:  lời nhắc "Dừng"
+và lời nhắc khi kết thúc xong tất cả các phần, hoàn tất kịch bản:  lời nhắc "Đã Hoàn Tất Kịch Bản"
+
+
+
+
+
+
+
+
+tốt rồi cảm ơn bạn nhiều, giờ bạn hãy tổng kết lại 1 prompt cho dạng chủ đề này đi, kiểu khi tôi dán kịch bản 1 video cụ thể nào đó vào và + với prompt thì bạn sẽ viết ra 1 dàn ý là kịch bản hoàn chỉnh đạt đủ và đúng hết các yêu cầu của tôi như tất cả những gì chúng ta đã làm phía trên
+
+
+
+
+
+
+
+
+
+
+rất tốt giờ tôi muốn có prompt theo kịch bản đấy để tạo ảnh thì sao, bạn hãy phân tích vào cho tôi prompt đi
+
+
+
+
+(MỌI NGƯỜI CÓ THỂ TỰ TÙY CHỈNH THEO Ý KHÁC NHA)

@@ -1,0 +1,52 @@
+{
+  "id": "RAW-046",
+  "channelId": "UCuJxFxVuj4s_MmupOMmDqCQ",
+  "title": "Weirdward Bound",
+  "handle": "@WeirdwardBound",
+  "url": "https://www.youtube.com/channel/UCuJxFxVuj4s_MmupOMmDqCQ",
+  "subscribers": 45900,
+  "views": 3789607,
+  "videoCount": 120,
+  "country": null,
+  "avatar": "https://yt3.ggpht.com/12RRCuKj14M98f3yYaEAA2dnxuqMineuy6bt3XP_0Nr_v65u3aS9fL3UBw789D-BOHABLjx0Fw=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Knowledge",
+    "Society"
+  ],
+  "editorialNiche": "Lịch sử thực phẩm / đồ vật",
+  "publishedAt": "2026-04-09T14:46:11.869Z",
+  "longevityAudit": {
+    "channelAgeDays": 152,
+    "activeSpanDays": 109,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 8600,
+      "viewsGained": 825166,
+      "videosPublished": 27
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:29:45Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 961114,
+    "maxOutlierScore": 24.15,
+    "maxVPH": 299.03,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-19",
+    "daysSinceLatest": 21,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (21 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 21 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 825,166 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$1,040 – $1,931 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

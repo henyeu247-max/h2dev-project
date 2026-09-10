@@ -1,0 +1,1409 @@
+{
+  "videoId": "W-5kcUVuHMA",
+  "title": "Every Computer Port Explained!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 233,
+  "fullText": "USB, short for universal serial bus, is hands down the greatest of all time when it comes to ports. It's literally everywhere on laptops and PCs because it handles so much. Connecting keyboards, mice, external drives, printers, chargers, you name it. Way back in the '90s, every device had its own weird unique connector, turning your desk into a spaghetti mess of cables. USB showed up like a hero saying, \"Nah, we're standardizing this.\" Boom. One universal interface to simplify life. Shapes-wise, there's type A, the classic flat rectangle you plug into your computer for most stuff. Type B is bulkier and squarish, usually for printers or scanners. Old school mini USB popped up on things like PS3 controllers and micro USB dominated phone charging for years. Remember the rage of plugging it in wrong multiple times? Then USBC dropped and changed the game. Reversible oval design means it slides in first try every time. No flips needed. It transfers data way faster, delivers more power for quick charging, and even carries video signals to external monitors or portable screens. Seriously, one USBC cable can do charging, data, and display. Total win. versions add the speed sauce. USB 1 was prehistoric white ports painfully slow at 12 megabits per second extinct. Now quick tip megabits versus megabytes 8 bits megabyte so real world speeds are slower than advertised. USB 2 black ports hits 480 megabits per second solid for everyday. USB 3 X goes blue 5 to 20 Gbits per second with more pins. USB 4 on type-C 40 Gbits plus insane power but mostly high-end yellow or red ports. Sleep and charge magic for juicing devices when your PC is off. VGA standing for video graphics array is straight up the grandfather of video connectors. You'll spot it as that chunky blue plug with 15 pins arranged in three rows. Classic old school look. Back in the day, this was the go-to for hooking computers to monitors, projectors, or even TVs in classrooms and offices. It carries analog signals, meaning it could push resolutions up to around 1080p at best. But the image quality kind of meh by today's standards. Since it's analog, think wavy old TV signals, pictures often come out blurry, fuzzy, or with weird color shifts compared to modern digital ports. No sharpness, no vibrancy, just that retro softness. Huge L. VGA doesn't carry audio at all. Video only. So, if you wanted sound from your computer to speakers or the display, you'd need a separate 3.5 millimeter audio cable plugged in elsewhere. Total hassle. In 2025, VGA is pretty much retired and gathering dust. Digital alternatives blew it out of the water with crystal clear images, better colors, and built-in audio. You'll still find VGA on ancient desktops, legacy projectors in schools, or super old laptops, but new devices. Nah, it's gone. If your setup forces you to use VGA, maybe with an adapter, expect that grainy vibe. It's functional for basic presentations, but not for gaming, movies, or anything where quality matters. Time to level up to something fresher if you can. HDMI highdefinition multimedia interface is the everyday king for connecting displays. It's that slim trapezoid-shaped port that sends both highquality video and audio through just one cable. No more juggling multiple wires. Plug it into your TV monitor, projector, gaming console, or even a laptop dock, and you're set for movies, games, or work presentations with sound included. Standard HDMI is the full-size one on most TVs and computers, but there are smaller siblings. Mini HDMI for DSLRs or portable monitors, and micro HDMI for compact devices like GoPro action cameras or old tablets. Handy for onthe-go setups. Versions determine how beast it performs. HDMI 1.4 was early 4K support, but only at 30 Hz feels choppy for anything moving fast. HDMI 2 upgraded to buttery smooth 4K at 60 Hz, plus HDR for those deep blacks and popping colors that make content look alive. The latest HDMI 2.1 goes nuclear. Full 8K at 60 Hz or 4K at a silky 120 Hz. Perfect for nextG gaming with no tearing. One limitation though, HDMI is designed for one port to one screen. No built-in chaining for multiples. If you're building a dual or triple monitor battle station and run out of HDMI slots, you'll need adapters or a different port. Still, HDMI's universality makes it the default choice for home entertainment. Pretty much every TV and console uses it, so cables are cheap and everywhere. Easy win for casual users. Display Port, often just called DP, is HDMI's prolevel cousin, built mainly for computer to monitor connections. The connector looks a lot like HDMI, but with one corner clipped at an angle. Quick way to tell them apart. It's digital all the way, delivering sharp, highquality video without any analog fuzz. The killer feature, daisy chaining. You run one cable from your PC's display port out to the first monitor, then another cable from that monitor's DP out to the next, and keep chaining. Suddenly, a whole row of screens with minimal cable mess from just one port on your computer. Absolute godsend for multimonitor setups. Think programmers with code on one screen and docs on others. Video editors timeline juggling. Traders watching charts or sim racers with immersive views. Performance is top tier. DP 1.2 handles reliable 4K at 60 Hz. DP 1.4 4 amps it to 8K at 60 Hz with HDR or 4K at 120 Hz for smooth gaming. The newest DP2 pushes ridiculous resolutions like 16K, though that's overkill for 99% of people. It's aimed at specialists in medical imaging, astronomy, or ultra high-res workflows. Why not everyone uses it? HDMI is more common on TVs and consoles, so it's the household standard. But for PC enthusiasts and productivity beasts, display port is clutch. Cables support higher bandwidths over longer distances, too. If you're expanding your desk real estate, hunt for DP. It'll save your sanity. Thunderbolt, a premium high octane tech cooked up by Intel with Apple Vibes. It looks identical to USBC, same oval shape, but rocks a tiny lightning bolt icon to show its special. Think USBC leveled up with display port superpowers baked in insane speeds, power delivery, and monitor chaining. Early Thunderbolt 1 and Thunderbolt 2 used a mini display port style connector, topping out at 10 to 20 Gbits per second with basic 4K support. The Revolution hit with Thunderbolt 3, switched to USBC shape, blasted to 40 Gbits per second. That means driving two 4K monitors at 60 Hz smoothly, one 8K display, or even 4K at higher refresh rates. Bonus flex. Connect external GPUs, eGPUs, via one cable to give thin laptops desktop grade graphics for gaming or 3D rendering. Thunderbolt 4 looks the same. Keeps 40 Gbits, but guarantees consistent full speed performance across certified cables and devices. No more random slowdowns. The newest beast, Thunderbolt 5, rolling out more in late 2025, triples bandwidth to 120 Gbits, pumps up to 240 watts for charging power hungry laptops, and handles wild display combos like 34K at 144 hertz or dual 8K at 60 Hz. Downside, it's mostly on higherend laptops, MacBooks, premium Windows machines, and desktops. Not every USBC port is Thunderbolt, so check the logo. For creators, gamers, or pros needing max throughput, it's worth the investment. One port doing everything at lightning, pun intended, speeds. Ethernet. It is the OG wired internet port. That wider rectangular slot looking like a beefed up phone jack. Technically RJ45. You plug in a network cable straight to your router or switch for a direct connection. In a world dominated by Wi-Fi, why even bother with a wire? Simple stability and speed without the drama. Wi-Fi is convenient for roaming around the house, but it converts your data to radio waves, beams them wirelessly, then converts back. That extra step adds latency, tiny delays. Even with fast internet, you might notice input lag in games, stuttering video calls, or delayed responses. Ethernet skips the wireless hop entirely. Zero conversion delay means rockolid connection, lower ping, and max speeds consistently. Competitive gamers and shooters like CS2 or Valerant live by it. Shaving milliseconds can win rounds. Streamers prefer it to avoid dropouts mid broadcast. Download huge files. Wired hits peak speeds every time. Of course, Wi-Fi wins for mobility, couch gaming, or phone browsing, but if your desk setup allows, plug in Ethernet for clutch moments. Most modern laptops have it, or via adapter, and routers love it. In 2025, with gigabit and multi- gig internet common, wired is still king for no compromised performance. Lag-free life, yes, please. Audio jack. That classic 3.5 millimeter round port, often color-coded green, is your straightforward hub for all things sound. Plug in wired headphones, earbuds, external speakers, or even a microphone, and you're good for music, calls, gaming, or podcasts without relying on Bluetooth. Back in the day, computers had separate jacks, one for audio out, headphones, or speakers, and another for mic in. That split made sense because older TRS plugs, three rings, could only handle one direction at a time, either playback or recording. Modern setups evolved to TRRS, four rings, letting one single jack do both output and input seamlessly. Your headset with a built-in mic, plugs right in. No adapters needed most times. Laptops and desktops keep this port alive because wired audio is reliable. No battery drain, no pairing issues, no compression artifacts like some wireless options. Phones famously ditched the jack for courage, aka thinner designs and wireless push forcing dongles or AirPods life. But on computers, it's still standard, especially for pros needing low latency monitoring or high quality cans. Gamers love it for positional audio without delays. If your port combo supports it, even phone style headsets work. Simple, universal, and glitch-free. The audio jack might feel old school in 2025, but it's a quiet hero for pure, uninterrupted sound vibes. Kensington lock. The Kensington lock slot is this tiny rectangular or sometimes T-shaped opening you might spot on the side of older or business laptops. It's not for plugging data. It's purely physical security. You attach a compatible cable lock. One end clicks into the slot. The metal cable loops around a fixed object like a table leg and locks with a key or combo. The idea is to deter quick grabandun thefts in public spots. Think coffee shops, libraries, airports, or shared offices. Someone can't just snatch your laptop and bolt. They'd need tools or time to cut the cable. It was big in the 2000s and 2010s when laptop theft was more opportunistic, but real talk in 2025, it's fading fast. Many ultra thin modern laptops skip it entirely for sleeker designs. Plus, threats evolved. Malware, ransomware, or remote wiping are way scarier than physical theft. A thief grabbing your device? Find my or similar tracks it anyway. And honestly, even with a lock, I'd never leave my laptop unattended. One distracted moment and bye. Some schools or corporate IT still mandate them for inventory security. Cables are cheap if your device has the slot. It's a low tech, no battery anti- theft vibe, but more nostalgic than essential now. Keep your stuff close. Use strong passwords and enable tracking. That's the real protection play these days. There you have it. Every computer port explained. No headache. All vibes. Now you're ready to plug in like a pro. Drop your most hated port, micro USB flips, anyone, or your fave in the comments. Hit that like if this helped and subscribe for more tech breakdowns. Stay plugged in, fam. Peace.",
+  "fullTextVi": "USB, viết tắt của Universal Serial Bus, là thiết bị tuyệt vời nhất mọi thời đại khi nói đến các cảng. Nó thực sự có mặt ở khắp mọi nơi trên máy tính xách tay và PC vì nó xử lý rất nhiều thứ. Kết nối bàn phím, chuột, ổ đĩa ngoài, máy in, bộ sạc, bạn đặt tên cho nó. Quay trở lại những năm 90, mọi thiết bị đều có đầu nối độc đáo kỳ lạ của riêng mình, xoay bàn làm việc của bạn thành một mớ dây cáp lộn xộn. USB xuất hiện như một người hùng nói: \"Không, chúng tôi đang tiêu chuẩn hóa cái này. \" Bùm. Một giao diện phổ quát để đơn giản hóa cuộc sống. Về hình dạng, có loại A, hình chữ nhật phẳng cổ điển mà bạn cắm vào máy tính để tạo hầu hết mọi thứ. Loại B cồng kềnh và vuông vắn hơn, thường dành cho máy in hoặc máy quét. USB mini kiểu cũ xuất hiện trên những thứ như bộ điều khiển PS3 và micro USB thống trị sạc điện thoại trong nhiều năm. Bạn có nhớ cơn thịnh nộ của việc cắm sai nhiều lần không? Sau đó USBC bị loại bỏ và thay đổi trò chơi. Thiết kế hình bầu dục có thể đảo ngược có nghĩa là nó sẽ trượt trong lần thử đầu tiên. Không cần lật. Nó truyền dữ liệu nhanh hơn, cung cấp nhiều năng lượng hơn để sạc nhanh và thậm chí mang theo tín hiệu video tới màn hình ngoài hoặc màn hình di động. Nghiêm túc mà nói, một cáp USBC có thể sạc, truyền dữ liệu và hiển thị. Tổng số chiến thắng. phiên bản thêm nước sốt tốc độ. USB 1 là cổng màu trắng thời tiền sử chậm đến mức 12 megabit/giây đã tuyệt chủng. Bây giờ, mẹo nhanh megabit so với megabyte 8 bit megabyte nên tốc độ trong thế giới thực là chậm hơn so với quảng cáo. Cổng USB 2 màu đen đạt tốc độ ổn định 480 megabit/giây hàng ngày. USB 3 X chuyển sang màu xanh lam với tốc độ 5 đến 20 Gbit/giây với nhiều chân hơn. USB 4 trên type-C 40 Gbits cộng với sức mạnh khủng khiếp nhưng chủ yếu là màu vàng cao cấp hoặc các cổng màu đỏ. Ngủ và sạc phép thuật cho các thiết bị ép trái cây khi PC của bạn tắt. VGA là viết tắt của mảng đồ họa video được coi là ông tổ của các đầu nối video. Bạn sẽ nhận ra nó là phích cắm màu xanh đậm có 15 chân được sắp xếp thành ba rows. Cái nhìn trường học cổ điển. Ngày trước, đây là cách thích hợp để kết nối máy tính với màn hình, máy chiếu, hay thậm chí là TV trong lớp học và văn phòng. Nó mang tín hiệu tương tự, nghĩa là nó có thể đẩy độ phân giải lên khoảng 1080p tại best. Nhưng chất lượng hình ảnh thì khá tệ so với tiêu chuẩn ngày nay. Vì là tín hiệu analog, hãy nghĩ đến tín hiệu TV cũ gợn sóng, hình ảnh thường bị mờ, mờ, hoặc có sự chuyển màu kỳ lạ so với các cổng kỹ thuật số hiện đại. Không sắc nét, không sống động, chỉ có sự mềm mại cổ điển đó. L. khổng lồ VGA hoàn toàn không mang âm thanh. Chỉ video. Vì vậy, nếu bạn muốn âm thanh từ máy tính tới loa hoặc màn hình, bạn sẽ cần 3 cái riêng. Cáp âm thanh 5 mm được cắm ở nơi khác. Tổng số rắc rối. Vào năm 2025, VGA gần như đã nghỉ hưu và bám bụi. Các lựa chọn thay thế kỹ thuật số đã làm nổi bật nó bằng hình ảnh rõ nét, màu sắc đẹp hơn, và âm thanh tích hợp. Bạn vẫn sẽ tìm thấy VGA trên máy tính để bàn cổ xưa, máy chiếu cũ trong trường học hoặc siêu cũ máy tính xách tay, nhưng các thiết bị mới. Không, nó biến mất rồi. Nếu thiết lập của bạn buộc bạn phải sử dụng VGA, có thể bằng bộ chuyển đổi, hãy mong đợi điều đó cảm giác sần sùi. Nó có chức năng cho các bài thuyết trình cơ bản, nhưng không dùng để chơi game, xem phim hoặc bất cứ thứ gì có chất lượng vấn đề. Đã đến lúc nâng cấp lên thứ gì đó mới hơn nếu bạn có thể. Giao diện đa phương tiện độ phân giải cao HDMI là vua hàng ngày để kết nối màn hình. Đó là cổng hình thang mỏng gửi cả video và âm thanh chất lượng cao chỉ qua một cáp. Không còn tung hứng nhiều dây. Cắm nó vào màn hình TV, máy chiếu, bảng điều khiển trò chơi hoặc thậm chí là đế cắm máy tính xách tay, và bạn đã sẵn sàng cho các bộ phim, trò chơi hoặc bài thuyết trình công việc có kèm theo âm thanh. HDMI tiêu chuẩn là HDMI có kích thước đầy đủ trên hầu hết TV và máy tính, nhưng vẫn có anh chị em nhỏ hơn. Mini HDMI dành cho máy ảnh DSLR hoặc màn hình di động và micro HDMI dành cho các thiết bị nhỏ gọn như Máy ảnh hành động GoPro hoặc máy tính bảng cũ. Tiện dụng cho việc thiết lập khi đang di chuyển. Các phiên bản xác định con thú nó hoạt động như thế nào. HDMI 1. 4 đã sớm hỗ trợ 4K, nhưng chỉ ở tần số 30 Hz mới gây cảm giác giật cục cho mọi thứ di chuyển nhanh chóng. HDMI 2 được nâng cấp lên 4K mượt mà ở tần số 60 Hz, cộng thêm HDR cho những nội dung đó màu đen sâu và màu sắc nổi bật giúp nội dung trông sống động. HDMI 2 mới nhất. 1 là hạt nhân. Full 8K ở 60 Hz hoặc 4K ở 120 Hz mượt mà. Hoàn hảo để chơi game nextG mà không bị rách hình. Tuy nhiên, có một hạn chế là HDMI được thiết kế cho một cổng tới một màn hình. Không có chuỗi tích hợp cho bội số. Nếu bạn đang xây dựng một trạm chiến đấu màn hình kép hoặc ba màn hình và hết Khe cắm HDMI, bạn sẽ cần bộ điều hợp hoặc cổng khác. Tuy nhiên, tính phổ biến của HDMI khiến nó trở thành lựa chọn mặc định cho giải trí gia đình. Khá nhiều TV và bảng điều khiển đều sử dụng nó, vì vậy cáp rẻ và có ở khắp mọi nơi. Chiến thắng dễ dàng cho người dùng thông thường. Display Port, thường được gọi là DP, là anh em họ đẳng cấp của HDMI, được thiết kế chủ yếu cho máy tính để giám sát các kết nối. Đầu nối trông rất giống HDMI nhưng có một góc được cắt bớt ở góc. Cách nhanh chóng để phân biệt chúng. Nó hoàn toàn là kỹ thuật số, cung cấp video sắc nét, chất lượng cao mà không có bất kỳ nhiễu tương tự nào. Tính năng sát thủ, xích hoa cúc. Bạn chạy một dây cáp từ cổng hiển thị của PC ra màn hình đầu tiên, sau đó nối một cáp khác từ DP của màn hình đó sang màn hình tiếp theo và tiếp tục nối. Đột nhiên, cả một hàng màn hình với ít cáp lộn xộn chỉ từ một cổng trên máy tính của bạn. Tuyệt đối ơn trời cho các thiết lập đa màn hình. Hãy suy nghĩ về các lập trình viên với mã trên một màn hình và tài liệu trên các màn hình khác. Trình chỉnh sửa video tung hứng dòng thời gian. Nhà giao dịch xem biểu đồ hoặc các cuộc đua sim với chế độ xem phong phú. Hiệu suất là hàng đầu. DP 1. 2 xử lý 4K đáng tin cậy ở tần số 60 Hz. DP 1. 4 4 tăng nó lên 8K ở tần số 60 Hz với HDR hoặc 4K ở 120 Hz để chơi game mượt mà. DP2 mới nhất có độ phân giải lố bịch như 16K, mặc dù điều đó là quá mức cần thiết đối với 99% mọi người. Nó nhắm đến các chuyên gia về hình ảnh y tế, thiên văn học hoặc quy trình làm việc có độ phân giải cực cao. Tại sao không phải ai cũng sử dụng nó? HDMI phổ biến hơn trên TV và bảng điều khiển, vì vậy đây là tiêu chuẩn gia đình. Nhưng đối với những người đam mê PC và những người yêu thích năng suất, cổng màn hình là bộ ly hợp. Cáp cũng hỗ trợ băng thông cao hơn trên khoảng cách xa hơn. Nếu bạn đang mở rộng không gian bàn làm việc của mình, hãy tìm kiếm DP. Nó sẽ cứu lấy sự tỉnh táo của bạn. Thunderbolt, một công nghệ cao cấp có chỉ số octan cao được Intel phát triển cùng với Apple Vibes. Nó trông giống hệt USBC, có hình bầu dục giống nhau, nhưng có một tia sét nhỏ biểu tượng để hiển thị sự đặc biệt của nó. Hãy nghĩ rằng USBC đã được nâng cấp với siêu năng lực cổng hiển thị được nướng với tốc độ điên cuồng, khả năng cung cấp năng lượng, và giám sát chuỗi. Thunderbolt 1 và Thunderbolt 2 đời đầu sử dụng đầu nối kiểu cổng hiển thị mini, đứng đầu ở tốc độ 10 đến 20 Gbit/giây với hỗ trợ 4K cơ bản. Cuộc cách mạng tấn công với Thunderbolt 3, chuyển sang dạng USBC, tăng tốc lên 40 Gbits mỗi giây. Điều đó có nghĩa là điều khiển mượt mà hai màn hình 4K ở tần số 60 Hz, một màn hình 8K hoặc thậm chí 4K ở tốc độ làm mới cao hơn. Tiền thưởng linh hoạt. Kết nối GPU bên ngoài, eGPU thông qua một dây cáp để mang đến đồ họa chuẩn máy tính để bàn cho máy tính xách tay mỏng để chơi game hoặc kết xuất 3D. Thunderbolt 4 trông giống nhau. Giữ 40 ​​Gbits nhưng đảm bảo hiệu suất tốc độ tối đa nhất quán trên các loại cáp và thiết bị được chứng nhận. Không còn tình trạng chậm ngẫu nhiên nữa. Quái thú mới nhất, Thunderbolt 5, ra mắt nhiều hơn vào cuối năm 2025, tăng gấp ba băng thông lên 120 Gbits, bơm lên tới 240 watt để sạc máy tính xách tay ngốn điện và tay cầm các tổ hợp màn hình hoang dã như 34K ở 144 hertz hoặc 8K kép ở 60 Hz. Nhược điểm là nó chủ yếu xuất hiện trên máy tính xách tay, MacBook, máy Windows cao cấp và máy tính để bàn cao cấp hơn. Không phải mọi cổng USBC đều là Thunderbolt, vì vậy hãy kiểm tra logo. Đối với người sáng tạo, người chơi game hoặc chuyên gia cần thông lượng tối đa thì đây là khoản đầu tư đáng giá. Một cổng thực hiện mọi thứ với tốc độ cực nhanh, có ý định chơi chữ, tốc độ. Ethernet. Đó là cổng internet có dây OG. Khe hình chữ nhật rộng hơn đó trông giống như một giắc cắm điện thoại được tăng cường. Về mặt kỹ thuật RJ45. Bạn cắm thẳng cáp mạng vào bộ định tuyến hoặc chuyển sang kết nối trực tiếp. Trong một thế giới bị thống trị bởi Wi-Fi, tại sao lại phải bận tâm đến dây dẫn? Sự ổn định và tốc độ đơn giản mà không có kịch tính. Wi-Fi thuận tiện cho việc chuyển vùng quanh nhà nhưng nó chuyển đổi dữ liệu của bạn thành sóng vô tuyến, truyền chúng không dây, sau đó chuyển đổi trở lại. Bước bổ sung đó sẽ tăng thêm độ trễ, độ trễ rất nhỏ. Ngay cả khi có Internet nhanh, bạn có thể nhận thấy độ trễ đầu vào trong trò chơi, cuộc gọi điện video bị giật, hoặc phản hồi chậm trễ. Ethernet bỏ qua hoàn toàn bước nhảy không dây. Độ trễ chuyển đổi bằng 0 có nghĩa là kết nối ổn định, ping thấp hơn và tốc độ tối đa ổn định. Những game thủ và game bắn súng cạnh tranh như CS2 hay Valerant sống nhờ đó. Cạo râu một phần nghìn giây có thể thắng vòng. Những người truyền phát thích điều này hơn để tránh tình trạng bỏ giữa chương trình phát sóng. Tải về các tập tin lớn. Có dây luôn đạt tốc độ cao nhất. Tất nhiên, Wi-Fi chiếm ưu thế trong khả năng di động, chơi game trên ghế sofa hoặc duyệt web trên điện thoại, nhưng nếu bạn thiết lập bàn cho phép, cắm Ethernet cho những khoảnh khắc ly hợp. Hầu hết các máy tính xách tay hiện đại đều có nó hoặc thông qua bộ chuyển đổi và các bộ định tuyến đều thích nó. Vào năm 2025, với sự phổ biến của internet gigabit và multi- gig, mạng có dây vẫn là vua của không có hiệu suất bị tổn hại. Cuộc sống không có độ trễ, vâng, làm ơn. Giắc âm thanh. Kinh điển đó 3. Cổng tròn 5 milimet, thường có mã màu xanh lục, là trung tâm đơn giản cho mọi thứ âm thanh. Cắm tai nghe có dây, tai nghe nhét tai, loa ngoài hoặc thậm chí cả micrô và bạn sẽ ổn để nghe nhạc, gọi điện, chơi trò chơi hoặc podcast mà không cần dựa vào Bluetooth. Trước đây, máy tính có các giắc cắm riêng, một cho đầu ra âm thanh, tai nghe hoặc loa và một cái khác dành cho mic. Sự phân chia đó có ý nghĩa vì phích cắm TRS cũ hơn, ba vòng, chỉ có thể xử lý một hướng tại một thời điểm, hoặc phát lại hoặc ghi âm. Các thiết lập hiện đại đã phát triển thành TRRS, bốn vòng, cho phép một giắc cắm duy nhất thực hiện cả hai đầu ra và nhập liệu liền mạch. Tai nghe của bạn có mic tích hợp, cắm ngay. Không cần bộ điều hợp trong hầu hết các trường hợp. Máy tính xách tay và máy tính để bàn vẫn duy trì cổng này vì âm thanh có dây rất đáng tin cậy. Không hao pin, không có vấn đề ghép nối, không có hiện tượng nén như một số tùy chọn không dây. Điện thoại nổi tiếng với việc loại bỏ giắc cắm vì sự can đảm, hay còn gọi là thiết kế mỏng hơn và lực đẩy không dây dongle hoặc cuộc sống AirPods. Nhưng trên máy tính, nó vẫn là tiêu chuẩn, đặc biệt dành cho những chuyên gia cần giám sát độ trễ thấp hoặc lon chất lượng cao. Các game thủ yêu thích nó vì âm thanh định vị không bị trễ. Nếu tổ hợp cổng của bạn hỗ trợ nó thì ngay cả tai nghe kiểu điện thoại cũng hoạt động. Đơn giản, phổ quát và không có trục trặc. Giắc âm thanh có thể lỗi thời vào năm 2025 nhưng nó là một người hùng thầm lặng cho âm thanh trong trẻo, không bị gián đoạn. Khóa Kensington. Khe khóa Kensington là một lỗ nhỏ hình chữ nhật hoặc đôi khi là hình chữ T mà bạn có thể đặt bên cạnh máy tính xách tay cũ hoặc dành cho doanh nhân. Nó không phải để cắm dữ liệu. Đó hoàn toàn là bảo mật vật lý. Bạn gắn một khóa cáp tương thích. Một đầu bấm vào khe. Dây cáp kim loại vòng quanh một vật cố định như chân bàn và khóa bằng một phím hoặc tổ hợp. Ý tưởng là để ngăn chặn các vụ trộm cắp nhanh chóng ở các điểm công cộng. Hãy nghĩ đến các quán cà phê, thư viện, sân bay hoặc văn phòng chung. Ai đó không thể giật lấy máy tính xách tay của bạn và bỏ trốn. Họ sẽ cần công cụ hoặc thời gian để cắt cáp. Nó xảy ra lớn vào những năm 2000 và 2010 khi hành vi trộm cắp máy tính xách tay mang tính cơ hội hơn, nhưng lời nói thực sự là vào năm 2025, nó đang mờ dần nhanh chóng. Nhiều máy tính xách tay hiện đại siêu mỏng bỏ qua hoàn toàn để có thiết kế đẹp hơn. Thêm vào đó, các mối đe dọa đã phát triển. Phần mềm độc hại, ransomware hoặc xóa từ xa còn đáng sợ hơn nhiều so với hành vi trộm cắp vật lý. Một tên trộm lấy thiết bị của bạn? Tìm bài hát của tôi hoặc tương tự nó. Và thành thật mà nói, ngay cả khi có khóa, tôi cũng sẽ không bao giờ để máy tính xách tay của mình không được giám sát. Một khoảnh khắc mất tập trung và tạm biệt. Một số trường học hoặc bộ phận CNTT của công ty vẫn yêu cầu họ đảm bảo an ninh hàng tồn kho. Cáp sẽ rẻ nếu thiết bị của bạn có khe cắm. Đó là một công nghệ thấp, không có cảm giác chống trộm pin, nhưng hoài cổ hơn mức cần thiết now. Giữ đồ đạc của bạn gần gũi. Sử dụng mật khẩu mạnh và cho phép theo dõi. Đó là lối chơi bảo vệ thực sự ngày nay. Ở đó bạn có nó. Mỗi cổng máy tính giải thích. Không đau đầu. Tất cả sự rung cảm. Bây giờ bạn đã sẵn sàng cắm điện như một người chuyên nghiệp. Bỏ cổng mà bạn ghét nhất, cổng micro USB, bất kỳ ai hoặc cổng yêu thích của bạn vào ý kiến. Hãy nhấn thích nếu điều này hữu ích và đăng ký để biết thêm thông tin chi tiết về công nghệ. Hãy cắm điện nhé, gia đình. Hòa bình.",
+  "segments": [
+    {
+      "text": "USB, short for universal serial bus, is hands down the greatest of all time",
+      "viText": "USB, viết tắt của Universal Serial Bus, là thiết bị tuyệt vời nhất mọi thời đại",
+      "start": 0,
+      "duration": 5.57
+    },
+    {
+      "text": "when it comes to ports.",
+      "viText": "khi nói đến các cảng.",
+      "start": 5.57,
+      "duration": 2
+    },
+    {
+      "text": "It's literally everywhere on laptops and PCs because it handles so much.",
+      "viText": "Nó thực sự có mặt ở khắp mọi nơi trên máy tính xách tay và PC vì nó xử lý rất nhiều thứ.",
+      "start": 7.57,
+      "duration": 5.35
+    },
+    {
+      "text": "Connecting keyboards, mice, external drives, printers, chargers, you name it.",
+      "viText": "Kết nối bàn phím, chuột, ổ đĩa ngoài, máy in, bộ sạc, bạn đặt tên cho nó.",
+      "start": 12.92,
+      "duration": 5.72
+    },
+    {
+      "text": "Way back in the '90s, every device had its own weird unique connector, turning",
+      "viText": "Quay trở lại những năm 90, mọi thiết bị đều có đầu nối độc đáo kỳ lạ của riêng mình, xoay",
+      "start": 18.64,
+      "duration": 5.8
+    },
+    {
+      "text": "your desk into a spaghetti mess of cables.",
+      "viText": "bàn làm việc của bạn thành một mớ dây cáp lộn xộn.",
+      "start": 24.44,
+      "duration": 3.12
+    },
+    {
+      "text": "USB showed up like a hero saying, \"Nah, we're standardizing this.",
+      "viText": "USB xuất hiện như một người hùng nói: \"Không, chúng tôi đang tiêu chuẩn hóa cái này.",
+      "start": 27.56,
+      "duration": 4.83
+    },
+    {
+      "text": "\" Boom.",
+      "viText": "\" Bùm.",
+      "start": 32.39,
+      "duration": 2
+    },
+    {
+      "text": "One universal interface to simplify life.",
+      "viText": "Một giao diện phổ quát để đơn giản hóa cuộc sống.",
+      "start": 34.39,
+      "duration": 3.05
+    },
+    {
+      "text": "Shapes-wise, there's type A, the classic flat rectangle you plug into your computer for",
+      "viText": "Về hình dạng, có loại A, hình chữ nhật phẳng cổ điển mà bạn cắm vào máy tính để tạo",
+      "start": 37.44,
+      "duration": 6.46
+    },
+    {
+      "text": "most stuff.",
+      "viText": "hầu hết mọi thứ.",
+      "start": 43.9,
+      "duration": 2
+    },
+    {
+      "text": "Type B is bulkier and squarish, usually for printers or scanners.",
+      "viText": "Loại B cồng kềnh và vuông vắn hơn, thường dành cho máy in hoặc máy quét.",
+      "start": 45.9,
+      "duration": 4.83
+    },
+    {
+      "text": "Old school mini USB popped up on things like PS3 controllers and micro USB",
+      "viText": "USB mini kiểu cũ xuất hiện trên những thứ như bộ điều khiển PS3 và micro USB",
+      "start": 50.73,
+      "duration": 5.5
+    },
+    {
+      "text": "dominated phone charging for years.",
+      "viText": "thống trị sạc điện thoại trong nhiều năm.",
+      "start": 56.23,
+      "duration": 2.6
+    },
+    {
+      "text": "Remember the rage of plugging it in wrong multiple times?",
+      "viText": "Bạn có nhớ cơn thịnh nộ của việc cắm sai nhiều lần không?",
+      "start": 58.83,
+      "duration": 4.24
+    },
+    {
+      "text": "Then USBC dropped and changed the game.",
+      "viText": "Sau đó USBC bị loại bỏ và thay đổi trò chơi.",
+      "start": 63.07,
+      "duration": 2.9
+    },
+    {
+      "text": "Reversible oval design means it slides in first try every time.",
+      "viText": "Thiết kế hình bầu dục có thể đảo ngược có nghĩa là nó sẽ trượt trong lần thử đầu tiên.",
+      "start": 65.97,
+      "duration": 4.68
+    },
+    {
+      "text": "No flips needed.",
+      "viText": "Không cần lật.",
+      "start": 70.65,
+      "duration": 2
+    },
+    {
+      "text": "It transfers data way faster, delivers more power for quick charging, and even carries",
+      "viText": "Nó truyền dữ liệu nhanh hơn, cung cấp nhiều năng lượng hơn để sạc nhanh và thậm chí mang theo",
+      "start": 72.65,
+      "duration": 6.39
+    },
+    {
+      "text": "video signals to external monitors or portable screens.",
+      "viText": "tín hiệu video tới màn hình ngoài hoặc màn hình di động.",
+      "start": 79.04,
+      "duration": 4.09
+    },
+    {
+      "text": "Seriously, one USBC cable can do charging, data, and display.",
+      "viText": "Nghiêm túc mà nói, một cáp USBC có thể sạc, truyền dữ liệu và hiển thị.",
+      "start": 83.13,
+      "duration": 4.53
+    },
+    {
+      "text": "Total win.",
+      "viText": "Tổng số chiến thắng.",
+      "start": 87.66,
+      "duration": 2
+    },
+    {
+      "text": "versions add the speed sauce.",
+      "viText": "phiên bản thêm nước sốt tốc độ.",
+      "start": 89.66,
+      "duration": 2.15
+    },
+    {
+      "text": "USB 1 was prehistoric white ports painfully slow at 12 megabits per second extinct.",
+      "viText": "USB 1 là cổng màu trắng thời tiền sử chậm đến mức 12 megabit/giây đã tuyệt chủng.",
+      "start": 91.81,
+      "duration": 6.17
+    },
+    {
+      "text": "Now quick tip megabits versus megabytes 8 bits megabyte so real world speeds are",
+      "viText": "Bây giờ, mẹo nhanh megabit so với megabyte 8 bit megabyte nên tốc độ trong thế giới thực là",
+      "start": 97.98,
+      "duration": 5.94
+    },
+    {
+      "text": "slower than advertised.",
+      "viText": "chậm hơn so với quảng cáo.",
+      "start": 103.92,
+      "duration": 2
+    },
+    {
+      "text": "USB 2 black ports hits 480 megabits per second solid for everyday.",
+      "viText": "Cổng USB 2 màu đen đạt tốc độ ổn định 480 megabit/giây hàng ngày.",
+      "start": 105.92,
+      "duration": 4.9
+    },
+    {
+      "text": "USB 3 X goes blue 5 to 20 Gbits per second with more pins.",
+      "viText": "USB 3 X chuyển sang màu xanh lam với tốc độ 5 đến 20 Gbit/giây với nhiều chân hơn.",
+      "start": 110.82,
+      "duration": 4.31
+    },
+    {
+      "text": "USB 4 on type-C 40 Gbits plus insane power but mostly high-end yellow or",
+      "viText": "USB 4 trên type-C 40 Gbits cộng với sức mạnh khủng khiếp nhưng chủ yếu là màu vàng cao cấp hoặc",
+      "start": 115.13,
+      "duration": 5.35
+    },
+    {
+      "text": "red ports.",
+      "viText": "các cổng màu đỏ.",
+      "start": 120.48,
+      "duration": 2
+    },
+    {
+      "text": "Sleep and charge magic for juicing devices when your PC is off.",
+      "viText": "Ngủ và sạc phép thuật cho các thiết bị ép trái cây khi PC của bạn tắt.",
+      "start": 122.48,
+      "duration": 4.68
+    },
+    {
+      "text": "VGA standing for video graphics array is straight up the grandfather of video connectors.",
+      "viText": "VGA là viết tắt của mảng đồ họa video được coi là ông tổ của các đầu nối video.",
+      "start": 127.16,
+      "duration": 6.61
+    },
+    {
+      "text": "You'll spot it as that chunky blue plug with 15 pins arranged in three",
+      "viText": "Bạn sẽ nhận ra nó là phích cắm màu xanh đậm có 15 chân được sắp xếp thành ba",
+      "start": 133.77,
+      "duration": 5.2
+    },
+    {
+      "text": "rows.",
+      "viText": "rows.",
+      "start": 138.97,
+      "duration": 2
+    },
+    {
+      "text": "Classic old school look.",
+      "viText": "Cái nhìn trường học cổ điển.",
+      "start": 140.97,
+      "duration": 2
+    },
+    {
+      "text": "Back in the day, this was the go-to for hooking computers to monitors, projectors,",
+      "viText": "Ngày trước, đây là cách thích hợp để kết nối máy tính với màn hình, máy chiếu,",
+      "start": 142.97,
+      "duration": 6.09
+    },
+    {
+      "text": "or even TVs in classrooms and offices.",
+      "viText": "hay thậm chí là TV trong lớp học và văn phòng.",
+      "start": 149.06,
+      "duration": 2.82
+    },
+    {
+      "text": "It carries analog signals, meaning it could push resolutions up to around 1080p at",
+      "viText": "Nó mang tín hiệu tương tự, nghĩa là nó có thể đẩy độ phân giải lên khoảng 1080p tại",
+      "start": 151.88,
+      "duration": 6.09
+    },
+    {
+      "text": "best.",
+      "viText": "best.",
+      "start": 157.97,
+      "duration": 2
+    },
+    {
+      "text": "But the image quality kind of meh by today's standards.",
+      "viText": "Nhưng chất lượng hình ảnh thì khá tệ so với tiêu chuẩn ngày nay.",
+      "start": 159.97,
+      "duration": 4.09
+    },
+    {
+      "text": "Since it's analog, think wavy old TV signals, pictures often come out blurry, fuzzy,",
+      "viText": "Vì là tín hiệu analog, hãy nghĩ đến tín hiệu TV cũ gợn sóng, hình ảnh thường bị mờ, mờ,",
+      "start": 164.06,
+      "duration": 6.24
+    },
+    {
+      "text": "or with weird color shifts compared to modern digital ports.",
+      "viText": "hoặc có sự chuyển màu kỳ lạ so với các cổng kỹ thuật số hiện đại.",
+      "start": 170.3,
+      "duration": 4.46
+    },
+    {
+      "text": "No sharpness, no vibrancy, just that retro softness.",
+      "viText": "Không sắc nét, không sống động, chỉ có sự mềm mại cổ điển đó.",
+      "start": 174.76,
+      "duration": 3.86
+    },
+    {
+      "text": "Huge L.",
+      "viText": "L. khổng lồ",
+      "start": 178.62,
+      "duration": 2
+    },
+    {
+      "text": "VGA doesn't carry audio at all.",
+      "viText": "VGA hoàn toàn không mang âm thanh.",
+      "start": 180.62,
+      "duration": 2.3
+    },
+    {
+      "text": "Video only.",
+      "viText": "Chỉ video.",
+      "start": 182.92,
+      "duration": 2
+    },
+    {
+      "text": "So, if you wanted sound from your computer to speakers or the display, you'd",
+      "viText": "Vì vậy, nếu bạn muốn âm thanh từ máy tính tới loa hoặc màn hình, bạn sẽ",
+      "start": 184.92,
+      "duration": 5.65
+    },
+    {
+      "text": "need a separate 3.",
+      "viText": "cần 3 cái riêng.",
+      "start": 190.57,
+      "duration": 2
+    },
+    {
+      "text": "5 millimeter audio cable plugged in elsewhere.",
+      "viText": "Cáp âm thanh 5 mm được cắm ở nơi khác.",
+      "start": 192.57,
+      "duration": 3.42
+    },
+    {
+      "text": "Total hassle.",
+      "viText": "Tổng số rắc rối.",
+      "start": 195.99,
+      "duration": 2
+    },
+    {
+      "text": "In 2025, VGA is pretty much retired and gathering dust.",
+      "viText": "Vào năm 2025, VGA gần như đã nghỉ hưu và bám bụi.",
+      "start": 197.99,
+      "duration": 4.09
+    },
+    {
+      "text": "Digital alternatives blew it out of the water with crystal clear images, better colors,",
+      "viText": "Các lựa chọn thay thế kỹ thuật số đã làm nổi bật nó bằng hình ảnh rõ nét, màu sắc đẹp hơn,",
+      "start": 202.08,
+      "duration": 6.46
+    },
+    {
+      "text": "and built-in audio.",
+      "viText": "và âm thanh tích hợp.",
+      "start": 208.54,
+      "duration": 2
+    },
+    {
+      "text": "You'll still find VGA on ancient desktops, legacy projectors in schools, or super old",
+      "viText": "Bạn vẫn sẽ tìm thấy VGA trên máy tính để bàn cổ xưa, máy chiếu cũ trong trường học hoặc",
+      "start": 210.54,
+      "duration": 6.32
+    },
+    {
+      "text": "laptops, but new devices.",
+      "viText": "siêu cũ máy tính xách tay, nhưng các thiết bị mới.",
+      "start": 216.86,
+      "duration": 2
+    },
+    {
+      "text": "Nah, it's gone.",
+      "viText": "Không, nó biến mất rồi.",
+      "start": 218.86,
+      "duration": 2
+    },
+    {
+      "text": "If your setup forces you to use VGA, maybe with an adapter, expect that",
+      "viText": "Nếu thiết lập của bạn buộc bạn phải sử dụng VGA, có thể bằng bộ chuyển đổi, hãy mong đợi điều đó",
+      "start": 220.86,
+      "duration": 5.28
+    },
+    {
+      "text": "grainy vibe.",
+      "viText": "cảm giác sần sùi.",
+      "start": 226.14,
+      "duration": 2
+    },
+    {
+      "text": "It's functional for basic presentations, but not for gaming, movies, or anything where quality",
+      "viText": "Nó có chức năng cho các bài thuyết trình cơ bản, nhưng không dùng để chơi game, xem phim hoặc bất cứ thứ gì có chất lượng",
+      "start": 228.14,
+      "duration": 6.98
+    },
+    {
+      "text": "matters.",
+      "viText": "vấn đề.",
+      "start": 235.12,
+      "duration": 2
+    },
+    {
+      "text": "Time to level up to something fresher if you can.",
+      "viText": "Đã đến lúc nâng cấp lên thứ gì đó mới hơn nếu bạn có thể.",
+      "start": 237.12,
+      "duration": 3.64
+    },
+    {
+      "text": "HDMI highdefinition multimedia interface is the everyday king for connecting displays.",
+      "viText": "Giao diện đa phương tiện độ phân giải cao HDMI là vua hàng ngày để kết nối màn hình.",
+      "start": 240.76,
+      "duration": 6.39
+    },
+    {
+      "text": "It's that slim trapezoid-shaped port that sends both highquality video and audio through just",
+      "viText": "Đó là cổng hình thang mỏng gửi cả video và âm thanh chất lượng cao chỉ qua",
+      "start": 247.15,
+      "duration": 6.91
+    },
+    {
+      "text": "one cable.",
+      "viText": "một cáp.",
+      "start": 254.06,
+      "duration": 2
+    },
+    {
+      "text": "No more juggling multiple wires.",
+      "viText": "Không còn tung hứng nhiều dây.",
+      "start": 256.06,
+      "duration": 2.38
+    },
+    {
+      "text": "Plug it into your TV monitor, projector, gaming console, or even a laptop dock,",
+      "viText": "Cắm nó vào màn hình TV, máy chiếu, bảng điều khiển trò chơi hoặc thậm chí là đế cắm máy tính xách tay,",
+      "start": 258.44,
+      "duration": 5.87
+    },
+    {
+      "text": "and you're set for movies, games, or work presentations with sound included.",
+      "viText": "và bạn đã sẵn sàng cho các bộ phim, trò chơi hoặc bài thuyết trình công việc có kèm theo âm thanh.",
+      "start": 264.31,
+      "duration": 5.65
+    },
+    {
+      "text": "Standard HDMI is the full-size one on most TVs and computers, but there are",
+      "viText": "HDMI tiêu chuẩn là HDMI có kích thước đầy đủ trên hầu hết TV và máy tính, nhưng vẫn có",
+      "start": 269.96,
+      "duration": 5.57
+    },
+    {
+      "text": "smaller siblings.",
+      "viText": "anh chị em nhỏ hơn.",
+      "start": 275.53,
+      "duration": 2
+    },
+    {
+      "text": "Mini HDMI for DSLRs or portable monitors, and micro HDMI for compact devices like",
+      "viText": "Mini HDMI dành cho máy ảnh DSLR hoặc màn hình di động và micro HDMI dành cho các thiết bị nhỏ gọn như",
+      "start": 277.53,
+      "duration": 6.02
+    },
+    {
+      "text": "GoPro action cameras or old tablets.",
+      "viText": "Máy ảnh hành động GoPro hoặc máy tính bảng cũ.",
+      "start": 283.55,
+      "duration": 2.67
+    },
+    {
+      "text": "Handy for onthe-go setups.",
+      "viText": "Tiện dụng cho việc thiết lập khi đang di chuyển.",
+      "start": 286.22,
+      "duration": 2
+    },
+    {
+      "text": "Versions determine how beast it performs.",
+      "viText": "Các phiên bản xác định con thú nó hoạt động như thế nào.",
+      "start": 288.22,
+      "duration": 3.05
+    },
+    {
+      "text": "HDMI 1.",
+      "viText": "HDMI 1.",
+      "start": 291.27,
+      "duration": 2
+    },
+    {
+      "text": "4 was early 4K support, but only at 30 Hz feels choppy for anything",
+      "viText": "4 đã sớm hỗ trợ 4K, nhưng chỉ ở tần số 30 Hz mới gây cảm giác giật cục cho mọi thứ",
+      "start": 293.27,
+      "duration": 4.98
+    },
+    {
+      "text": "moving fast.",
+      "viText": "di chuyển nhanh chóng.",
+      "start": 298.25,
+      "duration": 2
+    },
+    {
+      "text": "HDMI 2 upgraded to buttery smooth 4K at 60 Hz, plus HDR for those",
+      "viText": "HDMI 2 được nâng cấp lên 4K mượt mà ở tần số 60 Hz, cộng thêm HDR cho những nội dung đó",
+      "start": 300.25,
+      "duration": 4.83
+    },
+    {
+      "text": "deep blacks and popping colors that make content look alive.",
+      "viText": "màu đen sâu và màu sắc nổi bật giúp nội dung trông sống động.",
+      "start": 305.08,
+      "duration": 4.46
+    },
+    {
+      "text": "The latest HDMI 2.",
+      "viText": "HDMI 2 mới nhất.",
+      "start": 309.54,
+      "duration": 2
+    },
+    {
+      "text": "1 goes nuclear.",
+      "viText": "1 là hạt nhân.",
+      "start": 311.54,
+      "duration": 2
+    },
+    {
+      "text": "Full 8K at 60 Hz or 4K at a silky 120 Hz.",
+      "viText": "Full 8K ở 60 Hz hoặc 4K ở 120 Hz mượt mà.",
+      "start": 313.54,
+      "duration": 3.05
+    },
+    {
+      "text": "Perfect for nextG gaming with no tearing.",
+      "viText": "Hoàn hảo để chơi game nextG mà không bị rách hình.",
+      "start": 316.59,
+      "duration": 3.05
+    },
+    {
+      "text": "One limitation though, HDMI is designed for one port to one screen.",
+      "viText": "Tuy nhiên, có một hạn chế là HDMI được thiết kế cho một cổng tới một màn hình.",
+      "start": 319.64,
+      "duration": 4.98
+    },
+    {
+      "text": "No built-in chaining for multiples.",
+      "viText": "Không có chuỗi tích hợp cho bội số.",
+      "start": 324.62,
+      "duration": 2.6
+    },
+    {
+      "text": "If you're building a dual or triple monitor battle station and run out of",
+      "viText": "Nếu bạn đang xây dựng một trạm chiến đấu màn hình kép hoặc ba màn hình và hết",
+      "start": 327.22,
+      "duration": 5.42
+    },
+    {
+      "text": "HDMI slots, you'll need adapters or a different port.",
+      "viText": "Khe cắm HDMI, bạn sẽ cần bộ điều hợp hoặc cổng khác.",
+      "start": 332.64,
+      "duration": 3.94
+    },
+    {
+      "text": "Still, HDMI's universality makes it the default choice for home entertainment.",
+      "viText": "Tuy nhiên, tính phổ biến của HDMI khiến nó trở thành lựa chọn mặc định cho giải trí gia đình.",
+      "start": 336.58,
+      "duration": 5.8
+    },
+    {
+      "text": "Pretty much every TV and console uses it, so cables are cheap and everywhere.",
+      "viText": "Khá nhiều TV và bảng điều khiển đều sử dụng nó, vì vậy cáp rẻ và có ở khắp mọi nơi.",
+      "start": 342.38,
+      "duration": 5.72
+    },
+    {
+      "text": "Easy win for casual users.",
+      "viText": "Chiến thắng dễ dàng cho người dùng thông thường.",
+      "start": 348.1,
+      "duration": 2
+    },
+    {
+      "text": "Display Port, often just called DP, is HDMI's prolevel cousin, built mainly for computer",
+      "viText": "Display Port, thường được gọi là DP, là anh em họ đẳng cấp của HDMI, được thiết kế chủ yếu cho máy tính",
+      "start": 350.1,
+      "duration": 6.54
+    },
+    {
+      "text": "to monitor connections.",
+      "viText": "để giám sát các kết nối.",
+      "start": 356.64,
+      "duration": 2
+    },
+    {
+      "text": "The connector looks a lot like HDMI, but with one corner clipped at an",
+      "viText": "Đầu nối trông rất giống HDMI nhưng có một góc được cắt bớt ở",
+      "start": 358.64,
+      "duration": 5.2
+    },
+    {
+      "text": "angle.",
+      "viText": "góc.",
+      "start": 363.84,
+      "duration": 2
+    },
+    {
+      "text": "Quick way to tell them apart.",
+      "viText": "Cách nhanh chóng để phân biệt chúng.",
+      "start": 365.84,
+      "duration": 2.15
+    },
+    {
+      "text": "It's digital all the way, delivering sharp, highquality video without any analog fuzz.",
+      "viText": "Nó hoàn toàn là kỹ thuật số, cung cấp video sắc nét, chất lượng cao mà không có bất kỳ nhiễu tương tự nào.",
+      "start": 367.99,
+      "duration": 6.39
+    },
+    {
+      "text": "The killer feature, daisy chaining.",
+      "viText": "Tính năng sát thủ, xích hoa cúc.",
+      "start": 374.38,
+      "duration": 2.6
+    },
+    {
+      "text": "You run one cable from your PC's display port out to the first monitor,",
+      "viText": "Bạn chạy một dây cáp từ cổng hiển thị của PC ra màn hình đầu tiên,",
+      "start": 376.98,
+      "duration": 5.28
+    },
+    {
+      "text": "then another cable from that monitor's DP out to the next, and keep chaining.",
+      "viText": "sau đó nối một cáp khác từ DP của màn hình đó sang màn hình tiếp theo và tiếp tục nối.",
+      "start": 382.26,
+      "duration": 5.72
+    },
+    {
+      "text": "Suddenly, a whole row of screens with minimal cable mess from just one port",
+      "viText": "Đột nhiên, cả một hàng màn hình với ít cáp lộn xộn chỉ từ một cổng",
+      "start": 387.98,
+      "duration": 5.57
+    },
+    {
+      "text": "on your computer.",
+      "viText": "trên máy tính của bạn.",
+      "start": 393.55,
+      "duration": 2
+    },
+    {
+      "text": "Absolute godsend for multimonitor setups.",
+      "viText": "Tuyệt đối ơn trời cho các thiết lập đa màn hình.",
+      "start": 395.55,
+      "duration": 3.05
+    },
+    {
+      "text": "Think programmers with code on one screen and docs on others.",
+      "viText": "Hãy suy nghĩ về các lập trình viên với mã trên một màn hình và tài liệu trên các màn hình khác.",
+      "start": 398.6,
+      "duration": 4.53
+    },
+    {
+      "text": "Video editors timeline juggling.",
+      "viText": "Trình chỉnh sửa video tung hứng dòng thời gian.",
+      "start": 403.13,
+      "duration": 2.38
+    },
+    {
+      "text": "Traders watching charts or sim racers with immersive views.",
+      "viText": "Nhà giao dịch xem biểu đồ hoặc các cuộc đua sim với chế độ xem phong phú.",
+      "start": 405.51,
+      "duration": 4.38
+    },
+    {
+      "text": "Performance is top tier.",
+      "viText": "Hiệu suất là hàng đầu.",
+      "start": 409.89,
+      "duration": 2
+    },
+    {
+      "text": "DP 1.",
+      "viText": "DP 1.",
+      "start": 411.89,
+      "duration": 2
+    },
+    {
+      "text": "2 handles reliable 4K at 60 Hz.",
+      "viText": "2 xử lý 4K đáng tin cậy ở tần số 60 Hz.",
+      "start": 413.89,
+      "duration": 2.3
+    },
+    {
+      "text": "DP 1.",
+      "viText": "DP 1.",
+      "start": 416.19,
+      "duration": 2
+    },
+    {
+      "text": "4 4 amps it to 8K at 60 Hz with HDR or 4K at",
+      "viText": "4 4 tăng nó lên 8K ở tần số 60 Hz với HDR hoặc 4K ở",
+      "start": 418.19,
+      "duration": 3.27
+    },
+    {
+      "text": "120 Hz for smooth gaming.",
+      "viText": "120 Hz để chơi game mượt mà.",
+      "start": 421.46,
+      "duration": 2
+    },
+    {
+      "text": "The newest DP2 pushes ridiculous resolutions like 16K, though that's overkill for 99% of",
+      "viText": "DP2 mới nhất có độ phân giải lố bịch như 16K, mặc dù điều đó là quá mức cần thiết đối với 99%",
+      "start": 423.46,
+      "duration": 6.54
+    },
+    {
+      "text": "people.",
+      "viText": "mọi người.",
+      "start": 430,
+      "duration": 2
+    },
+    {
+      "text": "It's aimed at specialists in medical imaging, astronomy, or ultra high-res workflows.",
+      "viText": "Nó nhắm đến các chuyên gia về hình ảnh y tế, thiên văn học hoặc quy trình làm việc có độ phân giải cực cao.",
+      "start": 432,
+      "duration": 6.32
+    },
+    {
+      "text": "Why not everyone uses it?",
+      "viText": "Tại sao không phải ai cũng sử dụng nó?",
+      "start": 438.32,
+      "duration": 2
+    },
+    {
+      "text": "HDMI is more common on TVs and consoles, so it's the household standard.",
+      "viText": "HDMI phổ biến hơn trên TV và bảng điều khiển, vì vậy đây là tiêu chuẩn gia đình.",
+      "start": 440.32,
+      "duration": 5.35
+    },
+    {
+      "text": "But for PC enthusiasts and productivity beasts, display port is clutch.",
+      "viText": "Nhưng đối với những người đam mê PC và những người yêu thích năng suất, cổng màn hình là bộ ly hợp.",
+      "start": 445.67,
+      "duration": 5.28
+    },
+    {
+      "text": "Cables support higher bandwidths over longer distances, too.",
+      "viText": "Cáp cũng hỗ trợ băng thông cao hơn trên khoảng cách xa hơn.",
+      "start": 450.95,
+      "duration": 4.46
+    },
+    {
+      "text": "If you're expanding your desk real estate, hunt for DP.",
+      "viText": "Nếu bạn đang mở rộng không gian bàn làm việc của mình, hãy tìm kiếm DP.",
+      "start": 455.41,
+      "duration": 4.09
+    },
+    {
+      "text": "It'll save your sanity.",
+      "viText": "Nó sẽ cứu lấy sự tỉnh táo của bạn.",
+      "start": 459.5,
+      "duration": 2
+    },
+    {
+      "text": "Thunderbolt, a premium high octane tech cooked up by Intel with Apple Vibes.",
+      "viText": "Thunderbolt, một công nghệ cao cấp có chỉ số octan cao được Intel phát triển cùng với Apple Vibes.",
+      "start": 461.5,
+      "duration": 5.65
+    },
+    {
+      "text": "It looks identical to USBC, same oval shape, but rocks a tiny lightning bolt",
+      "viText": "Nó trông giống hệt USBC, có hình bầu dục giống nhau, nhưng có một tia sét nhỏ",
+      "start": 467.15,
+      "duration": 5.65
+    },
+    {
+      "text": "icon to show its special.",
+      "viText": "biểu tượng để hiển thị sự đặc biệt của nó.",
+      "start": 472.8,
+      "duration": 2
+    },
+    {
+      "text": "Think USBC leveled up with display port superpowers baked in insane speeds, power delivery,",
+      "viText": "Hãy nghĩ rằng USBC đã được nâng cấp với siêu năng lực cổng hiển thị được nướng với tốc độ điên cuồng, khả năng cung cấp năng lượng,",
+      "start": 474.8,
+      "duration": 6.76
+    },
+    {
+      "text": "and monitor chaining.",
+      "viText": "và giám sát chuỗi.",
+      "start": 481.56,
+      "duration": 2
+    },
+    {
+      "text": "Early Thunderbolt 1 and Thunderbolt 2 used a mini display port style connector, topping",
+      "viText": "Thunderbolt 1 và Thunderbolt 2 đời đầu sử dụng đầu nối kiểu cổng hiển thị mini, đứng đầu",
+      "start": 483.56,
+      "duration": 6.46
+    },
+    {
+      "text": "out at 10 to 20 Gbits per second with basic 4K support.",
+      "viText": "ở tốc độ 10 đến 20 Gbit/giây với hỗ trợ 4K cơ bản.",
+      "start": 490.02,
+      "duration": 4.09
+    },
+    {
+      "text": "The Revolution hit with Thunderbolt 3, switched to USBC shape, blasted to 40 Gbits",
+      "viText": "Cuộc cách mạng tấn công với Thunderbolt 3, chuyển sang dạng USBC, tăng tốc lên 40 Gbits",
+      "start": 494.11,
+      "duration": 6.09
+    },
+    {
+      "text": "per second.",
+      "viText": "mỗi giây.",
+      "start": 500.2,
+      "duration": 2
+    },
+    {
+      "text": "That means driving two 4K monitors at 60 Hz smoothly, one 8K display, or",
+      "viText": "Điều đó có nghĩa là điều khiển mượt mà hai màn hình 4K ở tần số 60 Hz, một màn hình 8K hoặc",
+      "start": 502.2,
+      "duration": 5.35
+    },
+    {
+      "text": "even 4K at higher refresh rates.",
+      "viText": "thậm chí 4K ở tốc độ làm mới cao hơn.",
+      "start": 507.55,
+      "duration": 2.38
+    },
+    {
+      "text": "Bonus flex.",
+      "viText": "Tiền thưởng linh hoạt.",
+      "start": 509.93,
+      "duration": 2
+    },
+    {
+      "text": "Connect external GPUs, eGPUs, via one cable to give thin laptops desktop grade graphics",
+      "viText": "Kết nối GPU bên ngoài, eGPU thông qua một dây cáp để mang đến đồ họa chuẩn máy tính để bàn cho máy tính xách tay mỏng",
+      "start": 511.93,
+      "duration": 6.46
+    },
+    {
+      "text": "for gaming or 3D rendering.",
+      "viText": "để chơi game hoặc kết xuất 3D.",
+      "start": 518.39,
+      "duration": 2.01
+    },
+    {
+      "text": "Thunderbolt 4 looks the same.",
+      "viText": "Thunderbolt 4 trông giống nhau.",
+      "start": 520.4,
+      "duration": 2.15
+    },
+    {
+      "text": "Keeps 40 Gbits, but guarantees consistent full speed performance across certified cables and devices.",
+      "viText": "Giữ 40 ​​Gbits nhưng đảm bảo hiệu suất tốc độ tối đa nhất quán trên các loại cáp và thiết bị được chứng nhận.",
+      "start": 522.55,
+      "duration": 7.5
+    },
+    {
+      "text": "No more random slowdowns.",
+      "viText": "Không còn tình trạng chậm ngẫu nhiên nữa.",
+      "start": 530.05,
+      "duration": 2
+    },
+    {
+      "text": "The newest beast, Thunderbolt 5, rolling out more in late 2025, triples bandwidth to",
+      "viText": "Quái thú mới nhất, Thunderbolt 5, ra mắt nhiều hơn vào cuối năm 2025, tăng gấp ba băng thông lên",
+      "start": 532.05,
+      "duration": 6.24
+    },
+    {
+      "text": "120 Gbits, pumps up to 240 watts for charging power hungry laptops, and handles",
+      "viText": "120 Gbits, bơm lên tới 240 watt để sạc máy tính xách tay ngốn điện và tay cầm",
+      "start": 538.29,
+      "duration": 5.87
+    },
+    {
+      "text": "wild display combos like 34K at 144 hertz or dual 8K at 60 Hz.",
+      "viText": "các tổ hợp màn hình hoang dã như 34K ở 144 hertz hoặc 8K kép ở 60 Hz.",
+      "start": 544.16,
+      "duration": 4.61
+    },
+    {
+      "text": "Downside, it's mostly on higherend laptops, MacBooks, premium Windows machines, and desktops.",
+      "viText": "Nhược điểm là nó chủ yếu xuất hiện trên máy tính xách tay, MacBook, máy Windows cao cấp và máy tính để bàn cao cấp hơn.",
+      "start": 548.77,
+      "duration": 6.91
+    },
+    {
+      "text": "Not every USBC port is Thunderbolt, so check the logo.",
+      "viText": "Không phải mọi cổng USBC đều là Thunderbolt, vì vậy hãy kiểm tra logo.",
+      "start": 555.68,
+      "duration": 4.01
+    },
+    {
+      "text": "For creators, gamers, or pros needing max throughput, it's worth the investment.",
+      "viText": "Đối với người sáng tạo, người chơi game hoặc chuyên gia cần thông lượng tối đa thì đây là khoản đầu tư đáng giá.",
+      "start": 559.69,
+      "duration": 5.94
+    },
+    {
+      "text": "One port doing everything at lightning, pun intended, speeds.",
+      "viText": "Một cổng thực hiện mọi thứ với tốc độ cực nhanh, có ý định chơi chữ, tốc độ.",
+      "start": 565.63,
+      "duration": 4.53
+    },
+    {
+      "text": "Ethernet.",
+      "viText": "Ethernet.",
+      "start": 570.16,
+      "duration": 2
+    },
+    {
+      "text": "It is the OG wired internet port.",
+      "viText": "Đó là cổng internet có dây OG.",
+      "start": 572.16,
+      "duration": 2.45
+    },
+    {
+      "text": "That wider rectangular slot looking like a beefed up phone jack.",
+      "viText": "Khe hình chữ nhật rộng hơn đó trông giống như một giắc cắm điện thoại được tăng cường.",
+      "start": 574.61,
+      "duration": 4.76
+    },
+    {
+      "text": "Technically RJ45.",
+      "viText": "Về mặt kỹ thuật RJ45.",
+      "start": 579.37,
+      "duration": 2
+    },
+    {
+      "text": "You plug in a network cable straight to your router or switch for a",
+      "viText": "Bạn cắm thẳng cáp mạng vào bộ định tuyến hoặc chuyển sang",
+      "start": 581.37,
+      "duration": 4.98
+    },
+    {
+      "text": "direct connection.",
+      "viText": "kết nối trực tiếp.",
+      "start": 586.35,
+      "duration": 2
+    },
+    {
+      "text": "In a world dominated by Wi-Fi, why even bother with a wire?",
+      "viText": "Trong một thế giới bị thống trị bởi Wi-Fi, tại sao lại phải bận tâm đến dây dẫn?",
+      "start": 588.35,
+      "duration": 4.38
+    },
+    {
+      "text": "Simple stability and speed without the drama.",
+      "viText": "Sự ổn định và tốc độ đơn giản mà không có kịch tính.",
+      "start": 592.73,
+      "duration": 3.34
+    },
+    {
+      "text": "Wi-Fi is convenient for roaming around the house, but it converts your data to",
+      "viText": "Wi-Fi thuận tiện cho việc chuyển vùng quanh nhà nhưng nó chuyển đổi dữ liệu của bạn thành",
+      "start": 596.07,
+      "duration": 5.8
+    },
+    {
+      "text": "radio waves, beams them wirelessly, then converts back.",
+      "viText": "sóng vô tuyến, truyền chúng không dây, sau đó chuyển đổi trở lại.",
+      "start": 601.87,
+      "duration": 4.09
+    },
+    {
+      "text": "That extra step adds latency, tiny delays.",
+      "viText": "Bước bổ sung đó sẽ tăng thêm độ trễ, độ trễ rất nhỏ.",
+      "start": 605.96,
+      "duration": 3.12
+    },
+    {
+      "text": "Even with fast internet, you might notice input lag in games, stuttering video calls,",
+      "viText": "Ngay cả khi có Internet nhanh, bạn có thể nhận thấy độ trễ đầu vào trong trò chơi, cuộc gọi điện video bị giật,",
+      "start": 609.08,
+      "duration": 6.32
+    },
+    {
+      "text": "or delayed responses.",
+      "viText": "hoặc phản hồi chậm trễ.",
+      "start": 615.4,
+      "duration": 2
+    },
+    {
+      "text": "Ethernet skips the wireless hop entirely.",
+      "viText": "Ethernet bỏ qua hoàn toàn bước nhảy không dây.",
+      "start": 617.4,
+      "duration": 3.05
+    },
+    {
+      "text": "Zero conversion delay means rockolid connection, lower ping, and max speeds consistently.",
+      "viText": "Độ trễ chuyển đổi bằng 0 có nghĩa là kết nối ổn định, ping thấp hơn và tốc độ tối đa ổn định.",
+      "start": 620.45,
+      "duration": 6.61
+    },
+    {
+      "text": "Competitive gamers and shooters like CS2 or Valerant live by it.",
+      "viText": "Những game thủ và game bắn súng cạnh tranh như CS2 hay Valerant sống nhờ đó.",
+      "start": 627.06,
+      "duration": 4.76
+    },
+    {
+      "text": "Shaving milliseconds can win rounds.",
+      "viText": "Cạo râu một phần nghìn giây có thể thắng vòng.",
+      "start": 631.82,
+      "duration": 2.67
+    },
+    {
+      "text": "Streamers prefer it to avoid dropouts mid broadcast.",
+      "viText": "Những người truyền phát thích điều này hơn để tránh tình trạng bỏ giữa chương trình phát sóng.",
+      "start": 634.49,
+      "duration": 3.86
+    },
+    {
+      "text": "Download huge files.",
+      "viText": "Tải về các tập tin lớn.",
+      "start": 638.35,
+      "duration": 2
+    },
+    {
+      "text": "Wired hits peak speeds every time.",
+      "viText": "Có dây luôn đạt tốc độ cao nhất.",
+      "start": 640.35,
+      "duration": 2.53
+    },
+    {
+      "text": "Of course, Wi-Fi wins for mobility, couch gaming, or phone browsing, but if your",
+      "viText": "Tất nhiên, Wi-Fi chiếm ưu thế trong khả năng di động, chơi game trên ghế sofa hoặc duyệt web trên điện thoại, nhưng nếu bạn",
+      "start": 642.88,
+      "duration": 5.94
+    },
+    {
+      "text": "desk setup allows, plug in Ethernet for clutch moments.",
+      "viText": "thiết lập bàn cho phép, cắm Ethernet cho những khoảnh khắc ly hợp.",
+      "start": 648.82,
+      "duration": 4.09
+    },
+    {
+      "text": "Most modern laptops have it, or via adapter, and routers love it.",
+      "viText": "Hầu hết các máy tính xách tay hiện đại đều có nó hoặc thông qua bộ chuyển đổi và các bộ định tuyến đều thích nó.",
+      "start": 652.91,
+      "duration": 4.83
+    },
+    {
+      "text": "In 2025, with gigabit and multi- gig internet common, wired is still king for",
+      "viText": "Vào năm 2025, với sự phổ biến của internet gigabit và multi- gig, mạng có dây vẫn là vua của",
+      "start": 657.74,
+      "duration": 5.72
+    },
+    {
+      "text": "no compromised performance.",
+      "viText": "không có hiệu suất bị tổn hại.",
+      "start": 663.46,
+      "duration": 2.01
+    },
+    {
+      "text": "Lag-free life, yes, please.",
+      "viText": "Cuộc sống không có độ trễ, vâng, làm ơn.",
+      "start": 665.47,
+      "duration": 2.01
+    },
+    {
+      "text": "Audio jack.",
+      "viText": "Giắc âm thanh.",
+      "start": 667.48,
+      "duration": 2
+    },
+    {
+      "text": "That classic 3.",
+      "viText": "Kinh điển đó 3.",
+      "start": 669.48,
+      "duration": 2
+    },
+    {
+      "text": "5 millimeter round port, often color-coded green, is your straightforward hub for all things",
+      "viText": "Cổng tròn 5 milimet, thường có mã màu xanh lục, là trung tâm đơn giản cho mọi thứ",
+      "start": 671.48,
+      "duration": 6.84
+    },
+    {
+      "text": "sound.",
+      "viText": "âm thanh.",
+      "start": 678.32,
+      "duration": 2
+    },
+    {
+      "text": "Plug in wired headphones, earbuds, external speakers, or even a microphone, and you're good",
+      "viText": "Cắm tai nghe có dây, tai nghe nhét tai, loa ngoài hoặc thậm chí cả micrô và bạn sẽ ổn",
+      "start": 680.32,
+      "duration": 6.76
+    },
+    {
+      "text": "for music, calls, gaming, or podcasts without relying on Bluetooth.",
+      "viText": "để nghe nhạc, gọi điện, chơi trò chơi hoặc podcast mà không cần dựa vào Bluetooth.",
+      "start": 687.08,
+      "duration": 4.98
+    },
+    {
+      "text": "Back in the day, computers had separate jacks, one for audio out, headphones, or",
+      "viText": "Trước đây, máy tính có các giắc cắm riêng, một cho đầu ra âm thanh, tai nghe hoặc",
+      "start": 692.06,
+      "duration": 5.94
+    },
+    {
+      "text": "speakers, and another for mic in.",
+      "viText": "loa và một cái khác dành cho mic.",
+      "start": 698,
+      "duration": 2.45
+    },
+    {
+      "text": "That split made sense because older TRS plugs, three rings, could only handle one",
+      "viText": "Sự phân chia đó có ý nghĩa vì phích cắm TRS cũ hơn, ba vòng, chỉ có thể xử lý một",
+      "start": 700.45,
+      "duration": 6.02
+    },
+    {
+      "text": "direction at a time, either playback or recording.",
+      "viText": "hướng tại một thời điểm, hoặc phát lại hoặc ghi âm.",
+      "start": 706.47,
+      "duration": 3.72
+    },
+    {
+      "text": "Modern setups evolved to TRRS, four rings, letting one single jack do both output",
+      "viText": "Các thiết lập hiện đại đã phát triển thành TRRS, bốn vòng, cho phép một giắc cắm duy nhất thực hiện cả hai đầu ra",
+      "start": 710.19,
+      "duration": 6.02
+    },
+    {
+      "text": "and input seamlessly.",
+      "viText": "và nhập liệu liền mạch.",
+      "start": 716.21,
+      "duration": 2
+    },
+    {
+      "text": "Your headset with a built-in mic, plugs right in.",
+      "viText": "Tai nghe của bạn có mic tích hợp, cắm ngay.",
+      "start": 718.21,
+      "duration": 3.64
+    },
+    {
+      "text": "No adapters needed most times.",
+      "viText": "Không cần bộ điều hợp trong hầu hết các trường hợp.",
+      "start": 721.85,
+      "duration": 2.23
+    },
+    {
+      "text": "Laptops and desktops keep this port alive because wired audio is reliable.",
+      "viText": "Máy tính xách tay và máy tính để bàn vẫn duy trì cổng này vì âm thanh có dây rất đáng tin cậy.",
+      "start": 724.08,
+      "duration": 5.5
+    },
+    {
+      "text": "No battery drain, no pairing issues, no compression artifacts like some wireless options.",
+      "viText": "Không hao pin, không có vấn đề ghép nối, không có hiện tượng nén như một số tùy chọn không dây.",
+      "start": 729.58,
+      "duration": 6.61
+    },
+    {
+      "text": "Phones famously ditched the jack for courage, aka thinner designs and wireless push forcing",
+      "viText": "Điện thoại nổi tiếng với việc loại bỏ giắc cắm vì sự can đảm, hay còn gọi là thiết kế mỏng hơn và lực đẩy không dây",
+      "start": 736.19,
+      "duration": 6.76
+    },
+    {
+      "text": "dongles or AirPods life.",
+      "viText": "dongle hoặc cuộc sống AirPods.",
+      "start": 742.95,
+      "duration": 2
+    },
+    {
+      "text": "But on computers, it's still standard, especially for pros needing low latency monitoring or",
+      "viText": "Nhưng trên máy tính, nó vẫn là tiêu chuẩn, đặc biệt dành cho những chuyên gia cần giám sát độ trễ thấp hoặc",
+      "start": 744.95,
+      "duration": 6.84
+    },
+    {
+      "text": "high quality cans.",
+      "viText": "lon chất lượng cao.",
+      "start": 751.79,
+      "duration": 2
+    },
+    {
+      "text": "Gamers love it for positional audio without delays.",
+      "viText": "Các game thủ yêu thích nó vì âm thanh định vị không bị trễ.",
+      "start": 753.79,
+      "duration": 3.79
+    },
+    {
+      "text": "If your port combo supports it, even phone style headsets work.",
+      "viText": "Nếu tổ hợp cổng của bạn hỗ trợ nó thì ngay cả tai nghe kiểu điện thoại cũng hoạt động.",
+      "start": 757.58,
+      "duration": 4.68
+    },
+    {
+      "text": "Simple, universal, and glitch-free.",
+      "viText": "Đơn giản, phổ quát và không có trục trặc.",
+      "start": 762.26,
+      "duration": 2.6
+    },
+    {
+      "text": "The audio jack might feel old school in 2025, but it's a quiet hero",
+      "viText": "Giắc âm thanh có thể lỗi thời vào năm 2025 nhưng nó là một người hùng thầm lặng",
+      "start": 764.86,
+      "duration": 4.98
+    },
+    {
+      "text": "for pure, uninterrupted sound vibes.",
+      "viText": "cho âm thanh trong trẻo, không bị gián đoạn.",
+      "start": 769.84,
+      "duration": 2.67
+    },
+    {
+      "text": "Kensington lock.",
+      "viText": "Khóa Kensington.",
+      "start": 772.51,
+      "duration": 2
+    },
+    {
+      "text": "The Kensington lock slot is this tiny rectangular or sometimes T-shaped opening you might",
+      "viText": "Khe khóa Kensington là một lỗ nhỏ hình chữ nhật hoặc đôi khi là hình chữ T mà bạn có thể",
+      "start": 774.51,
+      "duration": 6.61
+    },
+    {
+      "text": "spot on the side of older or business laptops.",
+      "viText": "đặt bên cạnh máy tính xách tay cũ hoặc dành cho doanh nhân.",
+      "start": 781.12,
+      "duration": 3.42
+    },
+    {
+      "text": "It's not for plugging data.",
+      "viText": "Nó không phải để cắm dữ liệu.",
+      "start": 784.54,
+      "duration": 2.01
+    },
+    {
+      "text": "It's purely physical security.",
+      "viText": "Đó hoàn toàn là bảo mật vật lý.",
+      "start": 786.55,
+      "duration": 2.23
+    },
+    {
+      "text": "You attach a compatible cable lock.",
+      "viText": "Bạn gắn một khóa cáp tương thích.",
+      "start": 788.78,
+      "duration": 2.6
+    },
+    {
+      "text": "One end clicks into the slot.",
+      "viText": "Một đầu bấm vào khe.",
+      "start": 791.38,
+      "duration": 2.15
+    },
+    {
+      "text": "The metal cable loops around a fixed object like a table leg and locks",
+      "viText": "Dây cáp kim loại vòng quanh một vật cố định như chân bàn và khóa",
+      "start": 793.53,
+      "duration": 5.2
+    },
+    {
+      "text": "with a key or combo.",
+      "viText": "bằng một phím hoặc tổ hợp.",
+      "start": 798.73,
+      "duration": 2
+    },
+    {
+      "text": "The idea is to deter quick grabandun thefts in public spots.",
+      "viText": "Ý tưởng là để ngăn chặn các vụ trộm cắp nhanh chóng ở các điểm công cộng.",
+      "start": 800.73,
+      "duration": 4.46
+    },
+    {
+      "text": "Think coffee shops, libraries, airports, or shared offices.",
+      "viText": "Hãy nghĩ đến các quán cà phê, thư viện, sân bay hoặc văn phòng chung.",
+      "start": 805.19,
+      "duration": 4.38
+    },
+    {
+      "text": "Someone can't just snatch your laptop and bolt.",
+      "viText": "Ai đó không thể giật lấy máy tính xách tay của bạn và bỏ trốn.",
+      "start": 809.57,
+      "duration": 3.49
+    },
+    {
+      "text": "They'd need tools or time to cut the cable.",
+      "viText": "Họ sẽ cần công cụ hoặc thời gian để cắt cáp.",
+      "start": 813.06,
+      "duration": 3.2
+    },
+    {
+      "text": "It was big in the 2000s and 2010s when laptop theft was more opportunistic,",
+      "viText": "Nó xảy ra lớn vào những năm 2000 và 2010 khi hành vi trộm cắp máy tính xách tay mang tính cơ hội hơn,",
+      "start": 816.26,
+      "duration": 5.57
+    },
+    {
+      "text": "but real talk in 2025, it's fading fast.",
+      "viText": "nhưng lời nói thực sự là vào năm 2025, nó đang mờ dần nhanh chóng.",
+      "start": 821.83,
+      "duration": 2.97
+    },
+    {
+      "text": "Many ultra thin modern laptops skip it entirely for sleeker designs.",
+      "viText": "Nhiều máy tính xách tay hiện đại siêu mỏng bỏ qua hoàn toàn để có thiết kế đẹp hơn.",
+      "start": 824.8,
+      "duration": 5.05
+    },
+    {
+      "text": "Plus, threats evolved.",
+      "viText": "Thêm vào đó, các mối đe dọa đã phát triển.",
+      "start": 829.85,
+      "duration": 2
+    },
+    {
+      "text": "Malware, ransomware, or remote wiping are way scarier than physical theft.",
+      "viText": "Phần mềm độc hại, ransomware hoặc xóa từ xa còn đáng sợ hơn nhiều so với hành vi trộm cắp vật lý.",
+      "start": 831.85,
+      "duration": 5.5
+    },
+    {
+      "text": "A thief grabbing your device?",
+      "viText": "Một tên trộm lấy thiết bị của bạn?",
+      "start": 837.35,
+      "duration": 2.15
+    },
+    {
+      "text": "Find my or similar tracks it anyway.",
+      "viText": "Tìm bài hát của tôi hoặc tương tự nó.",
+      "start": 839.5,
+      "duration": 2.67
+    },
+    {
+      "text": "And honestly, even with a lock, I'd never leave my laptop unattended.",
+      "viText": "Và thành thật mà nói, ngay cả khi có khóa, tôi cũng sẽ không bao giờ để máy tính xách tay của mình không được giám sát.",
+      "start": 842.17,
+      "duration": 5.13
+    },
+    {
+      "text": "One distracted moment and bye.",
+      "viText": "Một khoảnh khắc mất tập trung và tạm biệt.",
+      "start": 847.3,
+      "duration": 2.23
+    },
+    {
+      "text": "Some schools or corporate IT still mandate them for inventory security.",
+      "viText": "Một số trường học hoặc bộ phận CNTT của công ty vẫn yêu cầu họ đảm bảo an ninh hàng tồn kho.",
+      "start": 849.53,
+      "duration": 5.28
+    },
+    {
+      "text": "Cables are cheap if your device has the slot.",
+      "viText": "Cáp sẽ rẻ nếu thiết bị của bạn có khe cắm.",
+      "start": 854.81,
+      "duration": 3.34
+    },
+    {
+      "text": "It's a low tech, no battery anti- theft vibe, but more nostalgic than essential",
+      "viText": "Đó là một công nghệ thấp, không có cảm giác chống trộm pin, nhưng hoài cổ hơn mức cần thiết",
+      "start": 858.15,
+      "duration": 5.87
+    },
+    {
+      "text": "now.",
+      "viText": "now.",
+      "start": 864.02,
+      "duration": 2
+    },
+    {
+      "text": "Keep your stuff close.",
+      "viText": "Giữ đồ đạc của bạn gần gũi.",
+      "start": 866.02,
+      "duration": 2
+    },
+    {
+      "text": "Use strong passwords and enable tracking.",
+      "viText": "Sử dụng mật khẩu mạnh và cho phép theo dõi.",
+      "start": 868.02,
+      "duration": 3.05
+    },
+    {
+      "text": "That's the real protection play these days.",
+      "viText": "Đó là lối chơi bảo vệ thực sự ngày nay.",
+      "start": 871.07,
+      "duration": 3.2
+    },
+    {
+      "text": "There you have it.",
+      "viText": "Ở đó bạn có nó.",
+      "start": 874.27,
+      "duration": 2
+    },
+    {
+      "text": "Every computer port explained.",
+      "viText": "Mỗi cổng máy tính giải thích.",
+      "start": 876.27,
+      "duration": 2.23
+    },
+    {
+      "text": "No headache.",
+      "viText": "Không đau đầu.",
+      "start": 878.5,
+      "duration": 2
+    },
+    {
+      "text": "All vibes.",
+      "viText": "Tất cả sự rung cảm.",
+      "start": 880.5,
+      "duration": 2
+    },
+    {
+      "text": "Now you're ready to plug in like a pro.",
+      "viText": "Bây giờ bạn đã sẵn sàng cắm điện như một người chuyên nghiệp.",
+      "start": 882.5,
+      "duration": 2.9
+    },
+    {
+      "text": "Drop your most hated port, micro USB flips, anyone, or your fave in the",
+      "viText": "Bỏ cổng mà bạn ghét nhất, cổng micro USB, bất kỳ ai hoặc cổng yêu thích của bạn vào",
+      "start": 885.4,
+      "duration": 5.28
+    },
+    {
+      "text": "comments.",
+      "viText": "ý kiến.",
+      "start": 890.68,
+      "duration": 2
+    },
+    {
+      "text": "Hit that like if this helped and subscribe for more tech breakdowns.",
+      "viText": "Hãy nhấn thích nếu điều này hữu ích và đăng ký để biết thêm thông tin chi tiết về công nghệ.",
+      "start": 892.68,
+      "duration": 5.05
+    },
+    {
+      "text": "Stay plugged in, fam.",
+      "viText": "Hãy cắm điện nhé, gia đình.",
+      "start": 897.73,
+      "duration": 2
+    },
+    {
+      "text": "Peace.",
+      "viText": "Hòa bình.",
+      "start": 899.73,
+      "duration": 2
+    }
+  ]
+}

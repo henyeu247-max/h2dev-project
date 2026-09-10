@@ -1,0 +1,53 @@
+{
+  "id": "RAW-017",
+  "channelId": "UCQRqxRRdA8ZFsOSCpt3N22g",
+  "title": "History in Pictures",
+  "handle": "@HistoryinPicturesENG",
+  "url": "https://www.youtube.com/channel/UCQRqxRRdA8ZFsOSCpt3N22g",
+  "subscribers": 55100,
+  "views": 17934180,
+  "videoCount": 191,
+  "country": "US",
+  "avatar": "https://yt3.ggpht.com/85EsA_2lFtcXKUTqn8YoTLEtGGOmiq46WWx3Lfk4Bn5Ei6HMPbZFXWl-QPTnzGus7fwR8q1ypw=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Film",
+    "Entertainment",
+    "Knowledge"
+  ],
+  "editorialNiche": "Lịch sử tổng hợp / tái dựng",
+  "publishedAt": "2025-08-08T14:43:55.985Z",
+  "longevityAudit": {
+    "channelAgeDays": 396,
+    "activeSpanDays": 354,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 2700,
+      "viewsGained": 1459220,
+      "videosPublished": 7
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:28:25Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 3324143,
+    "maxOutlierScore": 54.442880873530626,
+    "maxVPH": 39.24465558194775,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-03",
+    "daysSinceLatest": 37,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 Ra video chậm",
+    "healthDetail": "Khoảng cách đăng video gần nhất là 37 ngày. Nhịp ra video không đều.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 1,459,220 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$3,575 – $6,639 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

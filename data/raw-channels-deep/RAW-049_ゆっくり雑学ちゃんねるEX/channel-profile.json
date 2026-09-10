@@ -1,0 +1,53 @@
+{
+  "id": "RAW-049",
+  "channelId": "UCkCHJOXCXDpHsn3KkUQmUeg",
+  "title": "ゆっくり雑学ちゃんねるEX",
+  "handle": "@ゆっくり雑学ちゃんねるEX",
+  "url": "https://www.youtube.com/channel/UCkCHJOXCXDpHsn3KkUQmUeg",
+  "subscribers": 14200,
+  "views": 963671,
+  "videoCount": 24,
+  "country": "JP",
+  "avatar": "https://yt3.ggpht.com/ipcQbZHU59JLJmwsfy5HbjL9i5XIaMiSNUmLH2qravcr91ereq59Wco8hklhuRGtLV6JFuhA=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Health",
+    "Knowledge",
+    "Lifestyle (sociology)"
+  ],
+  "editorialNiche": "Giáo dục kiến thức nền",
+  "publishedAt": "2026-06-18T14:43:40.388Z",
+  "longevityAudit": {
+    "channelAgeDays": 82,
+    "activeSpanDays": 70,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Đang tăng trưởng 1–3 tháng (Active Growth Phase)",
+    "growth30d": {
+      "subscribersGained": 8230,
+      "viewsGained": 758282,
+      "videosPublished": 4
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:29:51Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 418384,
+    "maxOutlierScore": 11.66,
+    "maxVPH": 128,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-29",
+    "daysSinceLatest": 11,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (11 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 11 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 758,282 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$955 – $1,774 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

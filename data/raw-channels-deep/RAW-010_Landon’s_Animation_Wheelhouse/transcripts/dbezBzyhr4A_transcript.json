@@ -1,0 +1,114 @@
+{
+  "videoId": "dbezBzyhr4A",
+  "title": "Thomas - UNHINGED VERSION 3",
+  "titleVi": "Đầu Tàu Thomas Bản Hài Bựa Phần 3 | Cuộc Vây Bắt Ngang Trái",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 17,
+  "fullText": "Have you located Thomas? Yes we did. Where exactly? In America! But let me tell you something, we have every police force out to capture him. Inconceivable! Hello, my name is inspector Montoya. You killed my car, prepare to die! Hey, where are you going? Pull it over right now! Clear for Vector 34, you have clearance. Roger that. Hello Thomas, get some lights on that engine. We got him, here he is! Just put him with the others. Oh yes, this is looking good.",
+  "fullTextVi": "Bạn đã xác định được Thomas chưa? Vâng, chúng tôi đã làm. Chính xác thì ở đâu? Ở Mỹ! Nhưng để tôi nói cho bạn biết điều này, chúng tôi huy động mọi lực lượng cảnh sát ra để truy bắt anh ta. Không thể tưởng tượng được! Xin chào, tên tôi là thanh tra Montoya. Anh đã giết xe của tôi, chuẩn bị chết đi! Này, cậu đi đâu vậy? Kéo nó qua ngay bây giờ! Xóa Vector 34, bạn có quyền truy cập. Roger đó. Xin chào Thomas, lấy đèn cho động cơ đó. Chúng ta đã bắt được anh ấy, anh ấy đây rồi! Chỉ cần đặt anh ta với những người khác. Ồ vâng, điều này có vẻ tốt.",
+  "segments": [
+    {
+      "text": "Have you located Thomas?",
+      "viText": "Bạn đã xác định được Thomas chưa?",
+      "start": 0,
+      "duration": 15.53
+    },
+    {
+      "text": "Yes we did.",
+      "viText": "Vâng, chúng tôi đã làm.",
+      "start": 15.53,
+      "duration": 7.12
+    },
+    {
+      "text": "Where exactly?",
+      "viText": "Chính xác thì ở đâu?",
+      "start": 22.65,
+      "duration": 9.06
+    },
+    {
+      "text": "In America!",
+      "viText": "Ở Mỹ!",
+      "start": 31.71,
+      "duration": 7.12
+    },
+    {
+      "text": "But let me tell you something, we have every police force out to capture",
+      "viText": "Nhưng để tôi nói cho bạn biết điều này, chúng tôi huy động mọi lực lượng cảnh sát ra để truy bắt",
+      "start": 38.83,
+      "duration": 46.6
+    },
+    {
+      "text": "him.",
+      "viText": "anh ta.",
+      "start": 85.43,
+      "duration": 2.59
+    },
+    {
+      "text": "Inconceivable!",
+      "viText": "Không thể tưởng tượng được!",
+      "start": 88.02,
+      "duration": 9.06
+    },
+    {
+      "text": "Hello, my name is inspector Montoya.",
+      "viText": "Xin chào, tên tôi là thanh tra Montoya.",
+      "start": 97.08,
+      "duration": 23.3
+    },
+    {
+      "text": "You killed my car, prepare to die!",
+      "viText": "Anh đã giết xe của tôi, chuẩn bị chết đi!",
+      "start": 120.38,
+      "duration": 22
+    },
+    {
+      "text": "Hey, where are you going?",
+      "viText": "Này, cậu đi đâu vậy?",
+      "start": 142.38,
+      "duration": 16.18
+    },
+    {
+      "text": "Pull it over right now!",
+      "viText": "Kéo nó qua ngay bây giờ!",
+      "start": 158.56,
+      "duration": 14.89
+    },
+    {
+      "text": "Clear for Vector 34, you have clearance.",
+      "viText": "Xóa Vector 34, bạn có quyền truy cập.",
+      "start": 173.45,
+      "duration": 25.89
+    },
+    {
+      "text": "Roger that.",
+      "viText": "Roger đó.",
+      "start": 199.34,
+      "duration": 7.12
+    },
+    {
+      "text": "Hello Thomas, get some lights on that engine.",
+      "viText": "Xin chào Thomas, lấy đèn cho động cơ đó.",
+      "start": 206.46,
+      "duration": 29.12
+    },
+    {
+      "text": "We got him, here he is!",
+      "viText": "Chúng ta đã bắt được anh ấy, anh ấy đây rồi!",
+      "start": 235.58,
+      "duration": 14.89
+    },
+    {
+      "text": "Just put him with the others.",
+      "viText": "Chỉ cần đặt anh ta với những người khác.",
+      "start": 250.47,
+      "duration": 18.77
+    },
+    {
+      "text": "Oh yes, this is looking good.",
+      "viText": "Ồ vâng, điều này có vẻ tốt.",
+      "start": 269.24,
+      "duration": 18.77
+    }
+  ]
+}

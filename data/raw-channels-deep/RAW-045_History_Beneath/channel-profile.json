@@ -1,0 +1,60 @@
+{
+  "id": "RAW-045",
+  "channelId": "UCxD13Ho0URDlPQGIgbGd-WA",
+  "title": "History Beneath",
+  "handle": "@Historybeneathofficial",
+  "url": "https://www.youtube.com/channel/UCxD13Ho0URDlPQGIgbGd-WA",
+  "subscribers": 1850,
+  "views": 213016,
+  "videoCount": 35,
+  "country": null,
+  "avatar": "https://yt3.ggpht.com/Wdkvu7cAT_1pXQUKRS0XpnqGEHUIc6U65zMvWkMOVlF5a8aOFFMkXm3BGQrA-BjERffkDKvHNQ=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Knowledge",
+    "Food",
+    "Lifestyle (sociology)"
+  ],
+  "editorialNiche": "Lịch sử thực phẩm / đồ vật",
+  "publishedAt": "2015-10-15T23:15:26Z",
+  "longevityAudit": {
+    "channelAgeDays": 3981,
+    "activeSpanDays": 39,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 820,
+      "viewsGained": 137376,
+      "videosPublished": 21
+    }
+  },
+  "channelTags": [
+    "history of food",
+    "Fat That Fed Civilization",
+    "The History of Figs",
+    "History of Butter",
+    "History of Figs",
+    "Figs"
+  ],
+  "extractedAt": "2026-09-09T03:29:43Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 88130,
+    "maxOutlierScore": 2.92,
+    "maxVPH": 9.09,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-20",
+    "daysSinceLatest": 20,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (20 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 20 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 137,376 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$173 – $321 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

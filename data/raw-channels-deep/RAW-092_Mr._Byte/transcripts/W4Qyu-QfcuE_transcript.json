@@ -1,0 +1,1595 @@
+{
+  "videoId": "W4Qyu-QfcuE",
+  "title": "Every GPU Feature Explained in 16 Minutes!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 264,
+  "fullText": "Anti-aliasing. Look closely at any power line or building edge in a game, and you'll likely see them. Those ugly, jagged staircases that scream, \"I'm a digital object.\" That is aliasing. It's the natural enemy of immersion. Born because our monitors use square pixels to try to draw smooth diagonal lines. It's like trying to build a perfect sphere out of Lego bricks. From 2 or 3t away, the illusion falls apart. Anti-aliasing is the clever fix that blurs those rough edges by blending the object's colors with the background. In the old days, we had super sampling, a brute force method that crushed your hardware by rendering at massive resolutions just to shrink it back down. Today, we have smarter tools like TAA. Instead of raw power, it uses data from previous frames to paint over those jaggies in real time. It's the reason a standard 1080p ice screen can finally look almost as crisp and clean as a high-end 4K display without making your GPU catch fire. Anotropic filtering. Ever notice the road ahead in a racing game turning into a blurry, muddy mess just a few yards in front of your car? That is not a creative choice. It is a technical limitation. Standard texture mapping completely breaks down when surfaces are viewed at sharp glancing angles. Anosotropic filtering is the unsung hero that steps in to keep those textures crystal clear all the way to the horizon. It ensures the pavement 100 ft away looks just as gritty and detailed as the ground directly beneath your character's feet. Back in the '90s, the distance always looked like gray soup, but modern GPS can now handle 16 times filtering with almost zero impact on your performance. It is one of those set it and forget it features that adds an incredible sense of scale to open worlds. By calculating texture samples based on your specific viewing angle, it stops the world from looking like a painting that is melting away as you move through it. Texture quality. Think of textures as the digital skin wrapped over every 3D bone in your game. It is the weave in a shirt or the moss growing on a damp brick wall. Don't confuse this with resolution. While resolution dictates the total pixel count on your screen, texture quality determines how much raw detail is packed into each individual surface. Cranking this setting from low to high can make a flat, blurry wall suddenly pop with cracks and grit you feel like you could touch. But there is a massive catch. These high-res skins live exclusively in your GPU's video random access memory. If you push for ultra and exceed your VR AM limit, your game will stutter and hitch because the system has to swap data with much slower system memory. For 90% of gamers, high is the definitive sweet spot. It delivers those crisp 4K ready details without the brutal hardware attacks that Ultra demands for visual gains you will likely never even notice during actual gameplay. NVNC. Sharing your gameplay with the world used to be a total pain because encoding highquality video is a massive chore for your central processing unit. If your CPU is busy running the game and encoding video at the same time, your performance will tank. NVIDIA fixed this by building a separate physical chip inside the GPU called NVENC. Think of it as a dedicated little worker whose only job is to handle video compression so the rest of your system can focus on the fun stuff. Because it is a specialized piece of hardware, you can stream at 1080p or record at 60 frames per second with almost no impact on your actual game performance. It is the reason you do not need a fancy dual PC setup just to broadcast your favorite games. Whether you are using OBS to stream or just capturing a quick clip, this tiny chip ensures the video looks professional and your game stays perfectly smooth without any annoying frame drops. Display sync. Have you ever seen your screen look like it was sliced in half horizontally during an intense moment? That is screen tearing, and it happens when your GPU is pumping out 100 frames per second, but your monitor is stuck at a fixed 60 Hz refresh rate. The original fix was VSYNC, which forced the GPU to wait for the monitor, but that often made your mouse feel heavy and sluggish. Modern heroes like G-Sync and Freync flipped the script by letting the monitor talk directly to your graphics card by allowing the monitor to dynamically change its refresh rate on the fly to match the GPU's output. These technologies create a perfectly synchronized dance that eliminates tearing without the annoying input lag. This means if your performance dips slightly, the display adapts instantly, keeping everything fluid and your reaction times razor sharp. It is a total gamecher that makes even lower frame rates feel much smoother than they ever were on old school displays. By bridging the gap between hardware rendering and physical display cycles, these technologies ensure that every single frame is delivered at the exact microcond it is ready, providing a seamless visual experience that feels connected to your every move. HDR. HDR is a display technology that significantly expands the range of brightness and color that your screen can show. Most standard monitors are limited to a narrow window of light, which often makes shadows look flat, and bright areas appear like washed out white blobs. By increasing the contrast ratio and color depth, HDR allows for deeper blacks and blindingly bright highlights simultaneously. This is not just about making the image look more colorful. It is about mimicking the way the human eye perceives light in the physical world. To experience true HDR, you need a monitor capable of reaching a high peak brightness, typically measured at 600 nits or 1,000 nits. This power allows the GPU to render details that would otherwise be lost in a standard display. In tactical games, this contrast is a massive advantage because it allows you to distinguish an enemy hiding in a dark corner or see through thick fog that would appear as a solid gray mess on a normal screen. With support for over 1 billion colors, HDR transforms flat digital environments into rich three-dimensional spaces. HDR adds a visceral sense of reality to your gaming experience. It balances extreme highlights with pitch black shadows so perfectly that it feels like you are looking at a real life scene rather than a digital render. When properly calibrated, it creates a visual resonance that makes every sunset and every dark corridor feel tangible and authentic. Dynamic resolution. Maintaining a consistent 60 frames per second is the goal for a smooth gaming experience. But heavy effects like massive explosions can cause sudden performance drops. Dynamic resolution scaling is a software solution that acts as an invisible safety net to prevent these dips from ruining your gameplay. Instead of letting the frame rate drop, the game engine automatically lowers the internal resolution for a few split seconds to reduce the workload on the GPU. Once the heavy effects clear, the resolution snaps back to its native target instantly without any manual adjustment. This process happens in real time, monitoring the GPU's frame time in microsconds to ensure the action stays fluid. The brilliance of this system is that it prioritizes responsive movement over a perfect pixel count, keeping the gameplay consistent during the most chaotic moments of a fight. In most cases, the transition is so fast that your eyes will not catch the temporary drop in sharpness while you are focused on the action. This technology is a pragmatic engineering feat that balances visual fidelity with stable performance. It ensures that your highresolution experience remains buttery smooth even when your hardware is pushed to its absolute limits. You get the elite performance needed to stay competitive without ever having to pause and manually lower your settings. It is a vital tool for modern titles that want to push visual boundaries while maintaining a seamless experience. FSR. FSR is AMD's answer to the modern hardware crunch. Functioning as a powerful upscaling tool that breathes new life into almost any graphics card. Unlike competing technologies that are locked behind specific hardware barriers, FSR is a cross-platform open-source standard that works on both AMD and Nvidia GPS. It works by rendering your game at a lower internal resolution and then applying highquality spatial and temporal algorithms to reconstruct the image to match a higher target resolution. This results in a massive performance boost that can turn a stuttering 20 frames per second mess into a perfectly playable 60 frames pers experience because it does not require dedicated AI hardware. It is incredibly flexible, allowing gamers with older laptops or mid-range desktop cards to enjoy the latest AAA titles without a massive compromise in visual quality. This technology effectively democratizes high-end gaming by providing a free performance upgrade to millions of users, proving that clever software engineering can be just as impactful as raw silicon power. Whether you are playing on a handheld device or a high-end rig, FSR offers a versatile alternative that keeps your visuals sharp and your frame rates high. As the versions have evolved, the image stability has improved dramatically, making it an essential tool for anyone looking to maximize their hardware's potential. It serves as a vital bridge for gamers who want to experience modern, demanding titles at high resolutions like 4K without needing to invest in the most expensive flagship hardware on the market. By intelligently stretching every pixel, FSR ensures that smooth gameplay is an accessible reality for the entire gaming community. DLSS DLSS represents the pinnacle of AI integration in modern computing, utilizing dedicated hardware called tensor cores to fundamentally change how graphics are rendered. Instead of relying on traditional mathematical upscaling, DLSS uses a massive neural network trained on millions of highresolution images to hallucinate missing details with incredible accuracy. Your GPU only needs to render the game at a fraction of the native resolution, such as 1080p, and the AI fills in the rest to output a stunning 4K image that often looks cleaner than the original native render. This reduces the primary workload on your GPU significantly, allowing it to focus its energy on complex effects like ray tracing or ultra level textures. By leveraging the power of deep learning, NVIDIA has created a system that can fix visual artifacts like flickering on thin wires or shimmering in distant foliage that have plagued gamers for years. The true brilliance of DLSS is that it makes your current graphics card feel like it was launched 3 years into the future. Providing a level of efficiency that raw hardware power simply cannot match. It is a revolutionary leap in architecture that has shifted the industry focus from brute force rendering to intelligent reconstruction. For the modern gamer, this means you no longer have to choose between beautiful 4K resolution and high-speed frames per second. With DLSS, you can finally have both simultaneously. This technology has turned the once impossible dream of high-end performance on consumer-grade hardware into a daily reality. Furthermore, it continues to improve through driver updates, meaning the AI gets smarter over time, constantly refining its ability to distinguish between noise and actual game detail to provide a flawless visual output. Frame generation. If upscaling is about making pixels better, frame generation is about creating entire moments out of thin air. This tech uses an optical flow accelerator to analyze the movement of every pixel between two real frames and predict what a frame in the middle would look like. By inserting this AI generated frame, the total frames per second on your screen can literally double, making motion look incredibly fluid. It is like adding extra pages to a flip book to make the animation smoother without drawing more pictures. However, there is a catch. Because the system has to wait for two real frames to generate the middle one, it can introduce input lag. In a high-speed competitive shooter, you might feel a slight delay between moving your mouse and seeing the action on screen. This makes frame generation perfect for cinematic singleplayer AAA games where visual smoothness is the priority over millisecond perfect reaction times. The real breakthrough here is that AI is no longer just helping us draw. It is predicting the very next moment of our digital reality to bypass the physical limits of our hardware. While early AI generated frames could show minor visual glitches like distortion or ghosting around moving objects, the technology is improving at a rapid pace. It provides a massive performance ceiling for heavy titles that would otherwise struggle to hit high frame rates on modern displays. For the average gamer, this means achieving that liquid visual experience in the most demanding titles is finally possible. It is the ultimate tool for those who value the feeling of infinite smoothness in their epic adventures. Ray tracing. For decades, game lighting was basically cheating by prepainting lights and shadows onto textures, a process called rasterization. Ray tracing changes the game by simulating the physical behavior of light as it bounces off every surface in a scene. Imagine millions of invisible lasers shooting out from every light source, hitting a glass bottle, reflecting onto a wet floor, and casting an accurate shadow. This creates reflections that aren't just fake images, but actual mirrors of what is happening around the corner. The impact is most noticeable on reflective surfaces like puddles, windows, and polished metal. Without ray tracing, reflections often look blurry, inaccurate, or disappear entirely when you look away from the object. But with it enabled, you can see the neon signs of a city reflected perfectly in a rainy street, including things that aren't even on your screen. This technology transforms the environment from a static painting into a living, breathing world where light interacts with materials exactly as it does in the real world. However, this realism comes at a heavy price as the process is incredibly demanding on your graphics card's RT cores and consumes massive amounts of video random access memory. While it can cut your frame rate in half, the visual payoff is undeniable. Once you experience the realistic shadows and light bounces, standard lighting starts to look like a flat cartoon. It is the single biggest leap toward cinematic photo realism in the history of GPU technology, bridging the gap between digital renders and physical reality. Path tracing. If ray tracing is a surgical laser, path tracing is a nuclear explosion of light simulation. While standard ray tracing only handles specific effects like reflections or shadows in certain areas, path tracing calculates the lighting for the entire scene simultaneously. It traces thousands of paths for every single pixel, accounting for how light bounces infinitely between objects until it loses energy. This creates an image so close to reality that it becomes difficult to distinguish between a game render and a photograph captured in the real world. The complexity of path tracing is why it was previously reserved only for Hollywood movie renders that took hours for a single frame. Today, thanks to massive GPU advancements, we can run this in real time, though it is the heaviest workload you can possibly give a graphics card. It eliminates the need for any baked lighting, allowing for fully dynamic environments where moving a single lamp changes the entire scene's mood instantly. It is the ultimate expression of what modern computing hardware is capable of achieving when pushed to its absolute limits. The real magic of path tracing comes from its soft details. The way light gently bleeds around a corner or how the subtle color of a carpet reflects onto a white ceiling. These tiny microscopic interactions are what make our brains believe a digital world is real. While it can sometimes make images look too reflective or demanding for current GPUs, it represents the final destination for graphics technology. Path tracing is the holy grail that finally turns our digital screens into a perfect mirror of the physical",
+  "fullTextVi": "Khử răng cưa. Hãy quan sát kỹ bất kỳ đường dây điện hoặc cạnh tòa nhà nào trong trò chơi và bạn sẽ có thể nhìn thấy chúng. Những cầu thang lởm chởm, xấu xí đó hét lên: \"Tôi là một vật thể kỹ thuật số. \" Đó là bí danh. Đó là kẻ thù tự nhiên của việc ngâm mình. Ra đời vì màn hình của chúng ta sử dụng các pixel vuông để cố gắng vẽ các đường chéo mượt mà. Nó giống như việc cố gắng xây dựng một quả cầu hoàn hảo từ những viên gạch Lego. Từ cách đó 2 hoặc 3 phút, ảo ảnh tan vỡ. Khử răng cưa là cách khắc phục thông minh giúp làm mờ các cạnh thô đó bằng cách trộn của đối tượng màu sắc với nền. Ngày xưa chúng ta có siêu mẫu, một phương pháp bạo lực đã nghiền nát phần cứng của bạn bằng cách hiển thị ở độ phân giải lớn chỉ để thu nhỏ nó lại. Ngày nay, chúng ta có những công cụ thông minh hơn như TAA. Thay vì sử dụng năng lượng thô, nó sử dụng dữ liệu từ các khung hình trước đó để vẽ lên các đó răng cưa trong thời gian thực. Đó là lý do khiến màn hình băng 1080p tiêu chuẩn cuối cùng cũng có thể trông gần như sắc nét và sạch sẽ như màn hình 4K cao cấp mà không khiến GPU của bạn bị cháy. Lọc dị hướng. Bạn có bao giờ để ý rằng con đường phía trước trong một game đua xe trở nên mờ mịt, lầy lội lộn xộn chỉ cách xe của bạn vài thước? Đó không phải là một sự lựa chọn sáng tạo. Đó là một hạn chế về mặt kỹ thuật. Ánh xạ kết cấu tiêu chuẩn hoàn toàn bị phá vỡ khi các bề mặt được nhìn ở các góc nhìn sắc nét. Lọc bất đẳng hướng là người hùng thầm lặng bước vào để giữ cho những kết cấu đó trở nên tinh thể rõ ràng đến tận chân trời. Nó đảm bảo mặt đường cách đó 100 ft trông chắc chắn và chi tiết như mặt đất ngay dưới chân nhân vật của bạn. Trở lại những năm 90, khoảng cách luôn giống như súp xám, nhưng GPS hiện đại giờ đây có thể xử lý việc lọc 16 lần mà gần như không ảnh hưởng đến hiệu suất của bạn. Đây là một trong những tính năng được thiết lập và quên đi có thêm cảm giác đáng kinh ngạc về quy mô của thế giới mở. Bằng cách tính toán các mẫu kết cấu dựa trên góc nhìn cụ thể của bạn, nó sẽ dừng cả thế giới trông giống như một bức tranh đang tan biến khi bạn di chuyển qua nó. Chất lượng kết cấu. Hãy coi kết cấu như lớp da kỹ thuật số được bao bọc trên mọi xương 3D trong game. của bạn Đó là vết dệt trên áo hay rêu mọc trên nền ẩm ướt bức tường gạch. Đừng nhầm lẫn điều này với độ phân giải. Trong khi độ phân giải quyết định tổng số pixel trên màn hình của bạn thì chất lượng kết cấu lại xác định cách nhiều chi tiết thô được đóng gói vào từng bề mặt riêng lẻ. Xoay cài đặt này từ thấp lên cao có thể khiến bức tường phẳng, mờ đột ngột nổi lên những vết nứt và sạn mà bạn cảm thấy như có thể chạm vào. Nhưng có một mẻ cá lớn. Những giao diện có độ phân giải cao này chỉ tồn tại trong bộ nhớ truy cập ngẫu nhiên video của GPU của bạn. Nếu bạn cố gắng đạt mức cực cao và vượt quá giới hạn VR AM của mình, trò chơi của bạn sẽ giật và giật vì hệ thống phải trao đổi dữ liệu với hệ thống chậm hơn nhiều ký ức. Đối với 90% game thủ, mức cao là điểm tuyệt vời nhất. Nó mang lại những chi tiết sắc nét sẵn sàng cho 4K mà không bị tấn công phần cứng tàn bạo như Ultra nhu cầu về lợi ích trực quan mà bạn có thể sẽ không bao giờ nhận thấy trong quá trình chơi trò chơi thực tế. NVNC. Việc chia sẻ cách chơi của bạn với mọi người từng là một điều khó khăn vì việc mã hóa video chất lượng cao là một công việc nặng nhọc đối với bộ xử lý trung tâm của bạn. Nếu CPU của bạn đang bận chạy trò chơi và mã hóa video cùng lúc theo thời gian, hiệu suất của bạn sẽ giảm. NVIDIA đã khắc phục điều này bằng cách xây dựng một chip vật lý riêng biệt bên trong GPU có tên NVENC. Hãy nghĩ về nó như một người công nhân nhỏ bé tận tâm với công việc duy nhất là xử lý nén video để phần còn lại trong hệ thống của bạn có thể tập trung vào nội dung thú vị. Vì là phần cứng chuyên dụng nên bạn có thể phát trực tuyến ở 1080p hoặc ghi ở tốc độ 60 khung hình/giây mà hầu như không ảnh hưởng đến trò chơi thực tế của bạn hiệu suất. Đó là lý do bạn không cần một thiết lập PC kép ưa thích chỉ để phát sóng các trò chơi yêu thích của bạn. Cho dù bạn đang sử dụng OBS để phát trực tuyến hay chỉ quay một clip nhanh, con chip nhỏ đảm bảo video trông chuyên nghiệp và trò chơi của bạn luôn mượt mà hoàn hảo mà không cần bất kỳ khung hình khó chịu nào bị rớt. Hiển thị đồng bộ. Bạn đã bao giờ thấy màn hình của mình như bị cắt làm đôi theo chiều ngang chưa trong một thời điểm căng thẳng? Đó là hiện tượng rách màn hình và nó xảy ra khi GPU của bạn hoạt động hết 100 khung hình mỗi giây, nhưng màn hình của bạn bị kẹt ở tốc độ làm mới cố định 60 Hz rate. Bản sửa lỗi ban đầu là VSYNC, buộc GPU phải chờ màn hình, nhưng điều đó thường khiến chuột của bạn có cảm giác nặng nề và ì ạch. Những anh hùng hiện đại như G-Sync và Freync đã lật ngược kịch bản bằng cách để màn hình nói chuyện trực tiếp vào card đồ họa của bạn bằng cách cho phép màn hình tự động thay đổi tốc độ làm mới tốc độ nhanh chóng để phù hợp với đầu ra của GPU. Những công nghệ này tạo ra một điệu nhảy được đồng bộ hóa hoàn hảo giúp loại bỏ hiện tượng xé hình mà không có đầu vào khó chịu lag. Điều này có nghĩa là nếu hiệu suất của bạn giảm nhẹ, màn hình sẽ điều chỉnh ngay lập tức, giữ cho mọi thứ trôi chảy và thời gian phản ứng của bạn sắc như dao cạo. Đây là một game thủ tổng thể khiến tốc độ khung hình thấp hơn cũng cảm thấy mượt mà hơn nhiều hơn bao giờ hết trên các màn hình trường học cũ. Bằng cách thu hẹp khoảng cách giữa chu kỳ hiển thị phần cứng và hiển thị vật lý, các công nghệ này đảm bảo rằng mọi khung hình đều được phân phối ở vi điều khiển chính xác mà nó đã sẵn sàng, cung cấp trải nghiệm hình ảnh liền mạch tạo cảm giác được kết nối với mọi chuyển động của bạn. HDR. HDR là công nghệ hiển thị giúp mở rộng đáng kể phạm vi độ sáng và màu sắc mà màn hình của bạn có thể hiển thị. Hầu hết các màn hình tiêu chuẩn đều bị giới hạn ở một cửa sổ ánh sáng hẹp, điều này thường tạo ra bóng trông phẳng và các vùng sáng trông giống như các đốm màu trắng bị xóa. Bằng cách tăng tỷ lệ tương phản và độ sâu màu, HDR cho phép màu đen sâu hơn và điểm sáng chói lóa cùng một lúc. Đây không chỉ là làm cho hình ảnh trông nhiều màu sắc hơn. Nó bắt chước cách mắt người cảm nhận ánh sáng trong thế giới vật lý thế giới. Để trải nghiệm HDR chân thực, bạn cần một màn hình có khả năng đạt đỉnh cao độ sáng, thường được đo ở mức 600 nits hoặc 1.000 nits. Sức mạnh này cho phép GPU hiển thị các chi tiết có thể bị mất trong một màn hình tiêu chuẩn. Trong các trò chơi chiến thuật, sự tương phản này là một lợi thế lớn vì nó cho phép bạn phân biệt được kẻ thù đang ẩn nấp trong góc tối hoặc nhìn xuyên qua sương mù dày đặc sẽ xuất hiện dưới dạng một mớ hỗn độn màu xám trên màn hình bình thường. Với sự hỗ trợ hơn 1 tỷ màu, HDR biến môi trường kỹ thuật số phẳng thành phong phú không gian ba chiều. HDR mang lại cảm giác thực tế hơn cho trải nghiệm chơi game của bạn. Nó cân bằng các điểm nổi bật cực độ với các bóng tối đen hoàn hảo đến mức có cảm giác như bạn đang nhìn vào một khung cảnh đời thực chứ không phải là một bản kết xuất kỹ thuật số. Khi được hiệu chỉnh đúng cách, nó sẽ tạo ra sự cộng hưởng thị giác khiến mọi cảnh hoàng hôn và mọi hành lang tối cho cảm giác hữu hình và chân thực. Độ phân giải động. Duy trì tốc độ 60 khung hình/giây ổn định là mục tiêu để chơi game mượt mà kinh nghiệm. Nhưng những tác động nặng nề như vụ nổ lớn có thể khiến hiệu suất giảm đột ngột. Chia tỷ lệ độ phân giải động là một giải pháp phần mềm hoạt động như một mạng lưới an toàn vô hình để ngăn chặn những sự sụt giảm này làm hỏng lối chơi của bạn. Thay vì để tốc độ khung hình giảm, công cụ trò chơi sẽ tự động giảm nội bộ độ phân giải trong vài giây để giảm khối lượng công việc trên GPU. Khi các hiệu ứng nặng được loại bỏ, độ phân giải sẽ quay trở lại mục tiêu ban đầu ngay lập tức mà không cần bất kỳ điều chỉnh thủ công nào. Quá trình này diễn ra trong thời gian thực, theo dõi thời gian kết xuất khung hình của GPU tính bằng micro giây đến đảm bảo hành động vẫn trôi chảy. Điểm nổi bật của hệ thống này là nó ưu tiên chuyển động phản ứng nhanh hơn là hoàn hảo. số pixel, giữ cho lối chơi nhất quán trong những khoảnh khắc hỗn loạn nhất của cuộc chiến. Trong hầu hết các trường hợp, quá trình chuyển đổi diễn ra nhanh đến mức mắt bạn không thể bắt kịp độ sắc nét giảm tạm thời trong khi bạn đang tập trung vào hành động. Công nghệ này là một kỳ công kỹ thuật thực dụng giúp cân bằng độ trung thực hình ảnh với hiệu suất ổn định. Nó đảm bảo rằng trải nghiệm độ phân giải cao của bạn vẫn mượt mà ngay cả khi phần cứng của bạn bị đẩy đến giới hạn tuyệt đối của nó. Bạn có được hiệu suất vượt trội cần thiết để duy trì tính cạnh tranh mà không cần phải tạm dừng và hạ thấp cài đặt của bạn theo cách thủ công. Nó là một công cụ quan trọng dành cho những tựa game hiện đại muốn vượt qua ranh giới về mặt hình ảnh trong khi vẫn duy trì trải nghiệm liền mạch. FSR. FSR là câu trả lời của AMD cho cuộc khủng hoảng phần cứng hiện đại. Hoạt động như một công cụ nâng cấp mạnh mẽ mang hơi thở mới vào hầu hết mọi đồ họa card. Không giống như các công nghệ cạnh tranh bị ràng buộc bởi các rào cản phần cứng cụ thể, FSR là một nền tảng đa nền tảng chuẩn nguồn mở hoạt động trên cả AMD và Nvidia GPS. Nó hoạt động bằng cách hiển thị trò chơi của bạn ở độ phân giải bên trong thấp hơn rồi áp dụng các thuật toán không gian và thời gian chất lượng cao để tái tạo lại hình ảnh cho phù hợp với mục tiêu cao hơn nghị quyết. Điều này mang lại hiệu suất tăng đáng kể, có thể quay được 20 khung hình giật hình mỗi giây sẽ biến thành 60 khung hình hoàn toàn có thể chơi được cho mỗi trải nghiệm vì nó không yêu cầu phần cứng AI chuyên dụng. Nó cực kỳ linh hoạt, cho phép các game thủ có máy tính xách tay cũ hoặc card máy tính để bàn tầm trung thưởng thức các tựa game AAA mới nhất mà không ảnh hưởng nhiều đến chất lượng hình ảnh. Công nghệ này dân chủ hóa trò chơi cao cấp một cách hiệu quả bằng cách cung cấp bản nâng cấp hiệu suất miễn phí cho hàng triệu của người dùng, chứng minh rằng công nghệ phần mềm thông minh cũng có thể có tác động mạnh mẽ như năng lượng silicon. Cho dù bạn đang chơi trên thiết bị cầm tay hay dàn máy cao cấp, FSR đều cung cấp một giải pháp thay thế linh hoạt giúp hình ảnh của bạn sắc nét và tốc độ khung hình cao. Khi các phiên bản phát triển, độ ổn định của hình ảnh đã được cải thiện đáng kể, khiến nó trở thành công cụ cần thiết cho bất kỳ ai muốn phát huy tối đa tiềm năng phần cứng của mình. Nó đóng vai trò là cầu nối quan trọng cho những game thủ muốn trải nghiệm hiện đại, khắt khe những tựa game ở độ phân giải cao như 4K mà không cần đầu tư vào đắt tiền nhất phần cứng hàng đầu trên thị trường. Bằng cách kéo dài từng pixel một cách thông minh, FSR đảm bảo rằng lối chơi mượt mà là điều thực tế dễ tiếp cận cho toàn thể cộng đồng game thủ. DLSS DLSS đại diện cho đỉnh cao của việc tích hợp AI trong điện toán hiện đại, sử dụng phần cứng chuyên dụng được gọi là lõi tensor để thay đổi căn bản cách hiển thị đồ họa. Thay vì dựa vào khả năng nâng cấp toán học truyền thống, DLSS sử dụng mạng lưới thần kinh khổng lồ được đào tạo trên hàng triệu hình ảnh có độ phân giải cao để tạo ảo giác về những chi tiết còn thiếu với độ chính xác đáng kinh ngạc. GPU của bạn chỉ cần hiển thị trò chơi ở mức một phần nhỏ so với gốc độ phân giải, chẳng hạn như 1080p và AI sẽ điền vào phần còn lại để tạo ra hình ảnh 4K tuyệt đẹp thường trông rõ ràng hơn so với kết xuất gốc ban đầu. Điều này làm giảm đáng kể khối lượng công việc chính trên GPU của bạn, cho phép GPU tập trung năng lượng trên các hiệu ứng phức tạp như dò tia hoặc kết cấu siêu cấp. Bằng cách tận dụng sức mạnh của deep learning, NVIDIA đã tạo ra một hệ thống có thể khắc phục hiện tượng giả tạo thị giác như nhấp nháy trên những sợi dây mỏng hay lung linh trong những tán lá xa xa đã làm phiền các game thủ trong nhiều năm. Điểm tuyệt vời thực sự của DLSS là nó mang lại cảm giác cho card đồ họa hiện tại của bạn giống như nó đã được ra mắt trong tương lai 3 năm. Cung cấp mức độ hiệu quả mà sức mạnh phần cứng thô đơn giản không thể sánh được. Đó là một bước nhảy vọt mang tính cách mạng trong kiến ​​trúc đã chuyển trọng tâm của ngành từ kết xuất vũ lực để tái thiết thông minh. Đối với game thủ hiện đại, điều này có nghĩa là bạn không còn phải lựa chọn giữa đẹp Độ phân giải 4K và tốc độ khung hình cao mỗi giây. Với DLSS, cuối cùng bạn có thể có cả hai cùng một lúc. Công nghệ này đã biến giấc mơ không thể thành hiện thực về hiệu năng cao cấp trên phần cứng dành cho người tiêu dùng thành hiện thực hàng ngày. Hơn nữa, nó tiếp tục được cải thiện thông qua các bản cập nhật trình điều khiển, nghĩa là AI trở nên thông minh hơn thời gian, liên tục cải tiến khả năng phân biệt giữa tiếng ồn và chi tiết trò chơi thực tế để cung cấp một đầu ra hình ảnh hoàn hảo. Tạo khung. Nếu nâng cấp là làm cho pixel trở nên tốt hơn thì việc tạo khung hình là tạo ra toàn bộ khoảnh khắc ra khỏi không khí mỏng. Công nghệ này sử dụng bộ tăng tốc dòng quang để phân tích chuyển động của từng pixel giữa hai khung hình thực và dự đoán khung hình ở giữa sẽ trông như thế nào like. Bằng cách chèn khung hình do AI tạo này, tổng số khung hình trên giây trên màn hình của bạn theo nghĩa đen có thể tăng gấp đôi, làm cho chuyển động trông cực kỳ trôi chảy. Nó giống như việc thêm các trang bổ sung vào một cuốn sách lật để tạo hoạt ảnh mượt mà hơn mà không cần vẽ thêm hình ảnh. Tuy nhiên, có một nhược điểm. Bởi vì hệ thống phải đợi hai khung hình thực để tạo ra phần giữa một, nó có thể gây ra độ trễ đầu vào. Trong game bắn súng cạnh tranh tốc độ cao, bạn có thể cảm thấy hơi chậm trễ giữa việc di chuyển của mình. chuột và xem hành động trên màn hình. Điều này giúp cho việc tạo khung hình trở nên hoàn hảo cho các trò chơi AAA một người chơi mang tính điện ảnh, nơi có hình ảnh mượt mà mức độ ưu tiên hơn thời gian phản ứng hoàn hảo tính bằng mili giây. Bước đột phá thực sự ở đây là AI không còn chỉ giúp chúng ta vẽ nữa. Nó đang dự đoán khoảnh khắc tiếp theo của thực tế kỹ thuật số của chúng ta sẽ vượt qua giới hạn vật lý của phần cứng của chúng tôi. Mặc dù các khung hình do AI tạo ra ban đầu có thể hiển thị các trục trặc nhỏ về hình ảnh như biến dạng hoặc bóng mờ xung quanh các vật thể chuyển động, công nghệ đang được cải thiện với tốc độ nhanh chóng. Nó cung cấp mức trần hiệu suất lớn cho các tựa game nặng mà nếu không sẽ phải vật lộn để đạt tốc độ khung hình cao trên màn hình hiện đại. Đối với người chơi bình thường, điều này có nghĩa là đạt được trải nghiệm hình ảnh mượt mà nhất những danh hiệu đòi hỏi cuối cùng cũng có thể thực hiện được. Nó là công cụ tối ưu dành cho những ai coi trọng cảm giác mượt mà vô tận trong cuộc phiêu lưu sử thi của họ. Truy tìm tia. Trong nhiều thập kỷ, ánh sáng trong trò chơi về cơ bản là gian lận bằng cách vẽ trước ánh sáng và bóng tối lên họa tiết, một quá trình gọi là rasterization. Phương pháp dò tia thay đổi trò chơi bằng cách mô phỏng hành vi vật lý của ánh sáng nảy ra khỏi mọi bề mặt trong một cảnh. Hãy tưởng tượng hàng triệu tia laser vô hình bắn ra từ mọi nguồn sáng, chạm vào kính chai, phản chiếu lên sàn ướt và tạo bóng chính xác. Điều này tạo ra những phản ánh không chỉ là hình ảnh giả mà còn là phản chiếu thực tế của xảy ra xung quanh góc. Tác động dễ nhận thấy nhất trên các bề mặt phản chiếu như vũng nước, cửa sổ và kim loại được đánh bóng. Nếu không có tính năng dò tia, hình ảnh phản chiếu thường trông mờ, không chính xác hoặc biến mất hoàn toàn khi bạn nhìn cách xa vật thể. Nhưng khi nó được kích hoạt, bạn có thể thấy các biển hiệu đèn neon của một thành phố được phản chiếu hoàn hảo trên đường phố mưa, kể cả những thứ thậm chí không có trên màn hình của bạn. Công nghệ này biến môi trường từ một bức tranh tĩnh thành một thế giới sống động nơi ánh sáng tương tác với vật liệu giống hệt như trong thế giới thực. Tuy nhiên, chủ nghĩa hiện thực này phải trả giá đắt vì quá trình này cực kỳ khắt khe trên lõi RT của cạc đồ họa của bạn và sử dụng lượng lớn truy cập ngẫu nhiên video ký ức. Mặc dù nó có thể giảm tốc độ khung hình của bạn xuống một nửa nhưng hiệu quả về mặt hình ảnh là không thể phủ nhận. Sau khi bạn trải nghiệm bóng và ánh sáng phản chiếu chân thực, ánh sáng tiêu chuẩn sẽ bắt đầu có vẻ giống như một phim hoạt hình phẳng. Đây là bước nhảy vọt lớn nhất hướng tới chủ nghĩa hiện thực ảnh điện ảnh trong lịch sử của Công nghệ GPU, thu hẹp khoảng cách giữa kết xuất kỹ thuật số và thực tế vật lý. Truy tìm đường đi. Nếu dò tia là tia laser phẫu thuật thì dò đường là một vụ nổ hạt nhân của mô phỏng ánh sáng. Trong khi dò tia tiêu chuẩn chỉ xử lý các hiệu ứng cụ thể như phản chiếu hoặc bóng trong một số nhất định các khu vực, tính năng dò đường sẽ tính toán ánh sáng cho toàn bộ khung cảnh cùng một lúc. Nó theo dõi hàng nghìn đường dẫn cho mỗi pixel, tính toán cách ánh sáng phản xạ vô hạn giữa các vật thể cho đến khi nó mất năng lượng. Điều này tạo ra hình ảnh gần với thực tế đến mức khó phân biệt giữa kết xuất trò chơi và một bức ảnh được chụp trong thế giới thực. Sự phức tạp của việc dò tìm đường dẫn là lý do tại sao trước đây nó chỉ dành riêng cho Hollywood kết xuất phim mất hàng giờ cho một khung hình. Ngày nay, nhờ những tiến bộ vượt bậc về GPU, chúng ta có thể chạy nó trong thời gian thực đó là khối lượng công việc nặng nhất mà bạn có thể cung cấp cho một card đồ họa. Nó loại bỏ sự cần thiết của bất kỳ hệ thống chiếu sáng cố định nào, cho phép tạo ra những môi trường hoàn toàn năng động trong đó di chuyển một chiếc đèn sẽ thay đổi tâm trạng của toàn bộ khung cảnh ngay lập tức. Nó là sự thể hiện tối thượng những gì phần cứng máy tính hiện đại có thể đạt được khi bị đẩy đến giới hạn tuyệt đối của nó. Phép thuật thực sự của việc dò đường đến từ những chi tiết mềm mại của nó. Cách ánh sáng nhẹ nhàng lan tỏa quanh một góc hay cách màu sắc tinh tế của một tấm thảm phản chiếu lên trần nhà màu trắng. Những tương tác cực nhỏ này là thứ khiến bộ não của chúng ta tin rằng có một thế giới kỹ thuật số real. Mặc dù đôi khi nó có thể khiến hình ảnh trông quá phản chiếu hoặc đòi hỏi khắt khe đối với GPU hiện tại, nó đại diện cho đích đến cuối cùng của công nghệ đồ họa. Truy tìm đường dẫn là chén thánh cuối cùng biến màn hình kỹ thuật số của chúng ta thành tấm gương hoàn hảo của vật chất",
+  "segments": [
+    {
+      "text": "Anti-aliasing.",
+      "viText": "Khử răng cưa.",
+      "start": 0,
+      "duration": 2
+    },
+    {
+      "text": "Look closely at any power line or building edge in a game, and you'll",
+      "viText": "Hãy quan sát kỹ bất kỳ đường dây điện hoặc cạnh tòa nhà nào trong trò chơi và bạn sẽ",
+      "start": 2,
+      "duration": 4.22
+    },
+    {
+      "text": "likely see them.",
+      "viText": "có thể nhìn thấy chúng.",
+      "start": 6.22,
+      "duration": 2
+    },
+    {
+      "text": "Those ugly, jagged staircases that scream, \"I'm a digital object.",
+      "viText": "Những cầu thang lởm chởm, xấu xí đó hét lên: \"Tôi là một vật thể kỹ thuật số.",
+      "start": 8.22,
+      "duration": 3.98
+    },
+    {
+      "text": "\" That is aliasing.",
+      "viText": "\" Đó là bí danh.",
+      "start": 12.2,
+      "duration": 2
+    },
+    {
+      "text": "It's the natural enemy of immersion.",
+      "viText": "Đó là kẻ thù tự nhiên của việc ngâm mình.",
+      "start": 14.2,
+      "duration": 2.2
+    },
+    {
+      "text": "Born because our monitors use square pixels to try to draw smooth diagonal lines.",
+      "viText": "Ra đời vì màn hình của chúng ta sử dụng các pixel vuông để cố gắng vẽ các đường chéo mượt mà.",
+      "start": 16.4,
+      "duration": 4.95
+    },
+    {
+      "text": "It's like trying to build a perfect sphere out of Lego bricks.",
+      "viText": "Nó giống như việc cố gắng xây dựng một quả cầu hoàn hảo từ những viên gạch Lego.",
+      "start": 21.35,
+      "duration": 3.79
+    },
+    {
+      "text": "From 2 or 3t away, the illusion falls apart.",
+      "viText": "Từ cách đó 2 hoặc 3 phút, ảo ảnh tan vỡ.",
+      "start": 25.14,
+      "duration": 2.69
+    },
+    {
+      "text": "Anti-aliasing is the clever fix that blurs those rough edges by blending the object's",
+      "viText": "Khử răng cưa là cách khắc phục thông minh giúp làm mờ các cạnh thô đó bằng cách trộn",
+      "start": 27.83,
+      "duration": 5.2
+    },
+    {
+      "text": "colors with the background.",
+      "viText": "của đối tượng màu sắc với nền.",
+      "start": 33.03,
+      "duration": 2
+    },
+    {
+      "text": "In the old days, we had super sampling, a brute force method that crushed",
+      "viText": "Ngày xưa chúng ta có siêu mẫu, một phương pháp bạo lực đã nghiền nát",
+      "start": 35.03,
+      "duration": 4.46
+    },
+    {
+      "text": "your hardware by rendering at massive resolutions just to shrink it back down.",
+      "viText": "phần cứng của bạn bằng cách hiển thị ở độ phân giải lớn chỉ để thu nhỏ nó lại.",
+      "start": 39.49,
+      "duration": 4.77
+    },
+    {
+      "text": "Today, we have smarter tools like TAA.",
+      "viText": "Ngày nay, chúng ta có những công cụ thông minh hơn như TAA.",
+      "start": 44.26,
+      "duration": 2.32
+    },
+    {
+      "text": "Instead of raw power, it uses data from previous frames to paint over those",
+      "viText": "Thay vì sử dụng năng lượng thô, nó sử dụng dữ liệu từ các khung hình trước đó để vẽ lên các",
+      "start": 46.58,
+      "duration": 4.59
+    },
+    {
+      "text": "jaggies in real time.",
+      "viText": "đó răng cưa trong thời gian thực.",
+      "start": 51.17,
+      "duration": 2
+    },
+    {
+      "text": "It's the reason a standard 1080p ice screen can finally look almost as crisp",
+      "viText": "Đó là lý do khiến màn hình băng 1080p tiêu chuẩn cuối cùng cũng có thể trông gần như sắc nét",
+      "start": 53.17,
+      "duration": 4.65
+    },
+    {
+      "text": "and clean as a high-end 4K display without making your GPU catch fire.",
+      "viText": "và sạch sẽ như màn hình 4K cao cấp mà không khiến GPU của bạn bị cháy.",
+      "start": 57.82,
+      "duration": 4.28
+    },
+    {
+      "text": "Anotropic filtering.",
+      "viText": "Lọc dị hướng.",
+      "start": 62.1,
+      "duration": 2
+    },
+    {
+      "text": "Ever notice the road ahead in a racing game turning into a blurry, muddy",
+      "viText": "Bạn có bao giờ để ý rằng con đường phía trước trong một game đua xe trở nên mờ mịt, lầy lội",
+      "start": 64.1,
+      "duration": 4.4
+    },
+    {
+      "text": "mess just a few yards in front of your car?",
+      "viText": "lộn xộn chỉ cách xe của bạn vài thước?",
+      "start": 68.5,
+      "duration": 2.63
+    },
+    {
+      "text": "That is not a creative choice.",
+      "viText": "Đó không phải là một sự lựa chọn sáng tạo.",
+      "start": 71.13,
+      "duration": 2
+    },
+    {
+      "text": "It is a technical limitation.",
+      "viText": "Đó là một hạn chế về mặt kỹ thuật.",
+      "start": 73.13,
+      "duration": 2
+    },
+    {
+      "text": "Standard texture mapping completely breaks down when surfaces are viewed at sharp glancing angles.",
+      "viText": "Ánh xạ kết cấu tiêu chuẩn hoàn toàn bị phá vỡ khi các bề mặt được nhìn ở các góc nhìn sắc nét.",
+      "start": 75.13,
+      "duration": 5.99
+    },
+    {
+      "text": "Anosotropic filtering is the unsung hero that steps in to keep those textures crystal",
+      "viText": "Lọc bất đẳng hướng là người hùng thầm lặng bước vào để giữ cho những kết cấu đó trở nên tinh thể",
+      "start": 81.12,
+      "duration": 5.2
+    },
+    {
+      "text": "clear all the way to the horizon.",
+      "viText": "rõ ràng đến tận chân trời.",
+      "start": 86.32,
+      "duration": 2.02
+    },
+    {
+      "text": "It ensures the pavement 100 ft away looks just as gritty and detailed as",
+      "viText": "Nó đảm bảo mặt đường cách đó 100 ft trông chắc chắn và chi tiết như",
+      "start": 88.34,
+      "duration": 4.4
+    },
+    {
+      "text": "the ground directly beneath your character's feet.",
+      "viText": "mặt đất ngay dưới chân nhân vật của bạn.",
+      "start": 92.74,
+      "duration": 3.06
+    },
+    {
+      "text": "Back in the '90s, the distance always looked like gray soup, but modern GPS",
+      "viText": "Trở lại những năm 90, khoảng cách luôn giống như súp xám, nhưng GPS hiện đại",
+      "start": 95.8,
+      "duration": 4.59
+    },
+    {
+      "text": "can now handle 16 times filtering with almost zero impact on your performance.",
+      "viText": "giờ đây có thể xử lý việc lọc 16 lần mà gần như không ảnh hưởng đến hiệu suất của bạn.",
+      "start": 100.39,
+      "duration": 4.77
+    },
+    {
+      "text": "It is one of those set it and forget it features that adds an",
+      "viText": "Đây là một trong những tính năng được thiết lập và quên đi có thêm",
+      "start": 105.16,
+      "duration": 3.73
+    },
+    {
+      "text": "incredible sense of scale to open worlds.",
+      "viText": "cảm giác đáng kinh ngạc về quy mô của thế giới mở.",
+      "start": 108.89,
+      "duration": 2.51
+    },
+    {
+      "text": "By calculating texture samples based on your specific viewing angle, it stops the world",
+      "viText": "Bằng cách tính toán các mẫu kết cấu dựa trên góc nhìn cụ thể của bạn, nó sẽ dừng cả thế giới",
+      "start": 111.4,
+      "duration": 5.32
+    },
+    {
+      "text": "from looking like a painting that is melting away as you move through it.",
+      "viText": "trông giống như một bức tranh đang tan biến khi bạn di chuyển qua nó.",
+      "start": 116.72,
+      "duration": 4.46
+    },
+    {
+      "text": "Texture quality.",
+      "viText": "Chất lượng kết cấu.",
+      "start": 121.18,
+      "duration": 2
+    },
+    {
+      "text": "Think of textures as the digital skin wrapped over every 3D bone in your",
+      "viText": "Hãy coi kết cấu như lớp da kỹ thuật số được bao bọc trên mọi xương 3D trong",
+      "start": 123.18,
+      "duration": 4.4
+    },
+    {
+      "text": "game.",
+      "viText": "game.",
+      "start": 127.58,
+      "duration": 2
+    },
+    {
+      "text": "It is the weave in a shirt or the moss growing on a damp",
+      "viText": "của bạn Đó là vết dệt trên áo hay rêu mọc trên nền ẩm ướt",
+      "start": 129.58,
+      "duration": 3.43
+    },
+    {
+      "text": "brick wall.",
+      "viText": "bức tường gạch.",
+      "start": 133.01,
+      "duration": 2
+    },
+    {
+      "text": "Don't confuse this with resolution.",
+      "viText": "Đừng nhầm lẫn điều này với độ phân giải.",
+      "start": 135.01,
+      "duration": 2.14
+    },
+    {
+      "text": "While resolution dictates the total pixel count on your screen, texture quality determines how",
+      "viText": "Trong khi độ phân giải quyết định tổng số pixel trên màn hình của bạn thì chất lượng kết cấu lại xác định cách",
+      "start": 137.15,
+      "duration": 5.75
+    },
+    {
+      "text": "much raw detail is packed into each individual surface.",
+      "viText": "nhiều chi tiết thô được đóng gói vào từng bề mặt riêng lẻ.",
+      "start": 142.9,
+      "duration": 3.36
+    },
+    {
+      "text": "Cranking this setting from low to high can make a flat, blurry wall suddenly",
+      "viText": "Xoay cài đặt này từ thấp lên cao có thể khiến bức tường phẳng, mờ đột ngột",
+      "start": 146.26,
+      "duration": 4.65
+    },
+    {
+      "text": "pop with cracks and grit you feel like you could touch.",
+      "viText": "nổi lên những vết nứt và sạn mà bạn cảm thấy như có thể chạm vào.",
+      "start": 150.91,
+      "duration": 3.36
+    },
+    {
+      "text": "But there is a massive catch.",
+      "viText": "Nhưng có một mẻ cá lớn.",
+      "start": 154.27,
+      "duration": 2
+    },
+    {
+      "text": "These high-res skins live exclusively in your GPU's video random access memory.",
+      "viText": "Những giao diện có độ phân giải cao này chỉ tồn tại trong bộ nhớ truy cập ngẫu nhiên video của GPU của bạn.",
+      "start": 156.27,
+      "duration": 4.83
+    },
+    {
+      "text": "If you push for ultra and exceed your VR AM limit, your game will",
+      "viText": "Nếu bạn cố gắng đạt mức cực cao và vượt quá giới hạn VR AM của mình, trò chơi của bạn sẽ",
+      "start": 161.1,
+      "duration": 3.98
+    },
+    {
+      "text": "stutter and hitch because the system has to swap data with much slower system",
+      "viText": "giật và giật vì hệ thống phải trao đổi dữ liệu với hệ thống chậm hơn nhiều",
+      "start": 165.08,
+      "duration": 4.71
+    },
+    {
+      "text": "memory.",
+      "viText": "ký ức.",
+      "start": 169.79,
+      "duration": 2
+    },
+    {
+      "text": "For 90% of gamers, high is the definitive sweet spot.",
+      "viText": "Đối với 90% game thủ, mức cao là điểm tuyệt vời nhất.",
+      "start": 171.79,
+      "duration": 3.24
+    },
+    {
+      "text": "It delivers those crisp 4K ready details without the brutal hardware attacks that Ultra",
+      "viText": "Nó mang lại những chi tiết sắc nét sẵn sàng cho 4K mà không bị tấn công phần cứng tàn bạo như Ultra",
+      "start": 175.03,
+      "duration": 5.32
+    },
+    {
+      "text": "demands for visual gains you will likely never even notice during actual gameplay.",
+      "viText": "nhu cầu về lợi ích trực quan mà bạn có thể sẽ không bao giờ nhận thấy trong quá trình chơi trò chơi thực tế.",
+      "start": 180.35,
+      "duration": 5.02
+    },
+    {
+      "text": "NVNC.",
+      "viText": "NVNC.",
+      "start": 185.37,
+      "duration": 2
+    },
+    {
+      "text": "Sharing your gameplay with the world used to be a total pain because encoding",
+      "viText": "Việc chia sẻ cách chơi của bạn với mọi người từng là một điều khó khăn vì việc mã hóa",
+      "start": 187.37,
+      "duration": 4.71
+    },
+    {
+      "text": "highquality video is a massive chore for your central processing unit.",
+      "viText": "video chất lượng cao là một công việc nặng nhọc đối với bộ xử lý trung tâm của bạn.",
+      "start": 192.08,
+      "duration": 4.28
+    },
+    {
+      "text": "If your CPU is busy running the game and encoding video at the same",
+      "viText": "Nếu CPU của bạn đang bận chạy trò chơi và mã hóa video cùng lúc",
+      "start": 196.36,
+      "duration": 4.1
+    },
+    {
+      "text": "time, your performance will tank.",
+      "viText": "theo thời gian, hiệu suất của bạn sẽ giảm.",
+      "start": 200.46,
+      "duration": 2.02
+    },
+    {
+      "text": "NVIDIA fixed this by building a separate physical chip inside the GPU called NVENC.",
+      "viText": "NVIDIA đã khắc phục điều này bằng cách xây dựng một chip vật lý riêng biệt bên trong GPU có tên NVENC.",
+      "start": 202.48,
+      "duration": 5.08
+    },
+    {
+      "text": "Think of it as a dedicated little worker whose only job is to handle",
+      "viText": "Hãy nghĩ về nó như một người công nhân nhỏ bé tận tâm với công việc duy nhất là xử lý",
+      "start": 207.56,
+      "duration": 4.16
+    },
+    {
+      "text": "video compression so the rest of your system can focus on the fun stuff.",
+      "viText": "nén video để phần còn lại trong hệ thống của bạn có thể tập trung vào nội dung thú vị.",
+      "start": 211.72,
+      "duration": 4.4
+    },
+    {
+      "text": "Because it is a specialized piece of hardware, you can stream at 1080p or",
+      "viText": "Vì là phần cứng chuyên dụng nên bạn có thể phát trực tuyến ở 1080p hoặc",
+      "start": 216.12,
+      "duration": 4.46
+    },
+    {
+      "text": "record at 60 frames per second with almost no impact on your actual game",
+      "viText": "ghi ở tốc độ 60 khung hình/giây mà hầu như không ảnh hưởng đến trò chơi thực tế của bạn",
+      "start": 220.58,
+      "duration": 4.4
+    },
+    {
+      "text": "performance.",
+      "viText": "hiệu suất.",
+      "start": 224.98,
+      "duration": 2
+    },
+    {
+      "text": "It is the reason you do not need a fancy dual PC setup just",
+      "viText": "Đó là lý do bạn không cần một thiết lập PC kép ưa thích chỉ",
+      "start": 226.98,
+      "duration": 3.61
+    },
+    {
+      "text": "to broadcast your favorite games.",
+      "viText": "để phát sóng các trò chơi yêu thích của bạn.",
+      "start": 230.59,
+      "duration": 2.02
+    },
+    {
+      "text": "Whether you are using OBS to stream or just capturing a quick clip, this",
+      "viText": "Cho dù bạn đang sử dụng OBS để phát trực tuyến hay chỉ quay một clip nhanh,",
+      "start": 232.61,
+      "duration": 4.4
+    },
+    {
+      "text": "tiny chip ensures the video looks professional and your game stays perfectly smooth without",
+      "viText": "con chip nhỏ đảm bảo video trông chuyên nghiệp và trò chơi của bạn luôn mượt mà hoàn hảo mà không cần",
+      "start": 237.01,
+      "duration": 5.57
+    },
+    {
+      "text": "any annoying frame drops.",
+      "viText": "bất kỳ khung hình khó chịu nào bị rớt.",
+      "start": 242.58,
+      "duration": 2
+    },
+    {
+      "text": "Display sync.",
+      "viText": "Hiển thị đồng bộ.",
+      "start": 244.58,
+      "duration": 2
+    },
+    {
+      "text": "Have you ever seen your screen look like it was sliced in half horizontally",
+      "viText": "Bạn đã bao giờ thấy màn hình của mình như bị cắt làm đôi theo chiều ngang chưa",
+      "start": 246.58,
+      "duration": 4.59
+    },
+    {
+      "text": "during an intense moment?",
+      "viText": "trong một thời điểm căng thẳng?",
+      "start": 251.17,
+      "duration": 2
+    },
+    {
+      "text": "That is screen tearing, and it happens when your GPU is pumping out 100",
+      "viText": "Đó là hiện tượng rách màn hình và nó xảy ra khi GPU của bạn hoạt động hết 100",
+      "start": 253.17,
+      "duration": 4.34
+    },
+    {
+      "text": "frames per second, but your monitor is stuck at a fixed 60 Hz refresh",
+      "viText": "khung hình mỗi giây, nhưng màn hình của bạn bị kẹt ở tốc độ làm mới cố định 60 Hz",
+      "start": 257.51,
+      "duration": 4.22
+    },
+    {
+      "text": "rate.",
+      "viText": "rate.",
+      "start": 261.73,
+      "duration": 2
+    },
+    {
+      "text": "The original fix was VSYNC, which forced the GPU to wait for the monitor,",
+      "viText": "Bản sửa lỗi ban đầu là VSYNC, buộc GPU phải chờ màn hình,",
+      "start": 263.73,
+      "duration": 4.46
+    },
+    {
+      "text": "but that often made your mouse feel heavy and sluggish.",
+      "viText": "nhưng điều đó thường khiến chuột của bạn có cảm giác nặng nề và ì ạch.",
+      "start": 268.19,
+      "duration": 3.36
+    },
+    {
+      "text": "Modern heroes like G-Sync and Freync flipped the script by letting the monitor talk",
+      "viText": "Những anh hùng hiện đại như G-Sync và Freync đã lật ngược kịch bản bằng cách để màn hình nói chuyện",
+      "start": 271.55,
+      "duration": 5.08
+    },
+    {
+      "text": "directly to your graphics card by allowing the monitor to dynamically change its refresh",
+      "viText": "trực tiếp vào card đồ họa của bạn bằng cách cho phép màn hình tự động thay đổi tốc độ làm mới",
+      "start": 276.63,
+      "duration": 5.38
+    },
+    {
+      "text": "rate on the fly to match the GPU's output.",
+      "viText": "tốc độ nhanh chóng để phù hợp với đầu ra của GPU.",
+      "start": 282.01,
+      "duration": 2.57
+    },
+    {
+      "text": "These technologies create a perfectly synchronized dance that eliminates tearing without the annoying input",
+      "viText": "Những công nghệ này tạo ra một điệu nhảy được đồng bộ hóa hoàn hảo giúp loại bỏ hiện tượng xé hình mà không có đầu vào khó chịu",
+      "start": 284.58,
+      "duration": 6.54
+    },
+    {
+      "text": "lag.",
+      "viText": "lag.",
+      "start": 291.12,
+      "duration": 2
+    },
+    {
+      "text": "This means if your performance dips slightly, the display adapts instantly, keeping everything fluid",
+      "viText": "Điều này có nghĩa là nếu hiệu suất của bạn giảm nhẹ, màn hình sẽ điều chỉnh ngay lập tức, giữ cho mọi thứ trôi chảy",
+      "start": 293.12,
+      "duration": 6.12
+    },
+    {
+      "text": "and your reaction times razor sharp.",
+      "viText": "và thời gian phản ứng của bạn sắc như dao cạo.",
+      "start": 299.24,
+      "duration": 2.2
+    },
+    {
+      "text": "It is a total gamecher that makes even lower frame rates feel much smoother",
+      "viText": "Đây là một game thủ tổng thể khiến tốc độ khung hình thấp hơn cũng cảm thấy mượt mà hơn nhiều",
+      "start": 301.44,
+      "duration": 4.59
+    },
+    {
+      "text": "than they ever were on old school displays.",
+      "viText": "hơn bao giờ hết trên các màn hình trường học cũ.",
+      "start": 306.03,
+      "duration": 2.63
+    },
+    {
+      "text": "By bridging the gap between hardware rendering and physical display cycles, these technologies ensure",
+      "viText": "Bằng cách thu hẹp khoảng cách giữa chu kỳ hiển thị phần cứng và hiển thị vật lý, các công nghệ này đảm bảo",
+      "start": 308.66,
+      "duration": 6.18
+    },
+    {
+      "text": "that every single frame is delivered at the exact microcond it is ready, providing",
+      "viText": "rằng mọi khung hình đều được phân phối ở vi điều khiển chính xác mà nó đã sẵn sàng, cung cấp",
+      "start": 314.84,
+      "duration": 5.02
+    },
+    {
+      "text": "a seamless visual experience that feels connected to your every move.",
+      "viText": "trải nghiệm hình ảnh liền mạch tạo cảm giác được kết nối với mọi chuyển động của bạn.",
+      "start": 319.86,
+      "duration": 4.22
+    },
+    {
+      "text": "HDR.",
+      "viText": "HDR.",
+      "start": 324.08,
+      "duration": 2
+    },
+    {
+      "text": "HDR is a display technology that significantly expands the range of brightness and color",
+      "viText": "HDR là công nghệ hiển thị giúp mở rộng đáng kể phạm vi độ sáng và màu sắc",
+      "start": 326.08,
+      "duration": 5.38
+    },
+    {
+      "text": "that your screen can show.",
+      "viText": "mà màn hình của bạn có thể hiển thị.",
+      "start": 331.46,
+      "duration": 2
+    },
+    {
+      "text": "Most standard monitors are limited to a narrow window of light, which often makes",
+      "viText": "Hầu hết các màn hình tiêu chuẩn đều bị giới hạn ở một cửa sổ ánh sáng hẹp, điều này thường tạo ra",
+      "start": 333.46,
+      "duration": 4.95
+    },
+    {
+      "text": "shadows look flat, and bright areas appear like washed out white blobs.",
+      "viText": "bóng trông phẳng và các vùng sáng trông giống như các đốm màu trắng bị xóa.",
+      "start": 338.41,
+      "duration": 4.34
+    },
+    {
+      "text": "By increasing the contrast ratio and color depth, HDR allows for deeper blacks and",
+      "viText": "Bằng cách tăng tỷ lệ tương phản và độ sâu màu, HDR cho phép màu đen sâu hơn và",
+      "start": 342.75,
+      "duration": 5.02
+    },
+    {
+      "text": "blindingly bright highlights simultaneously.",
+      "viText": "điểm sáng chói lóa cùng một lúc.",
+      "start": 347.77,
+      "duration": 2.69
+    },
+    {
+      "text": "This is not just about making the image look more colorful.",
+      "viText": "Đây không chỉ là làm cho hình ảnh trông nhiều màu sắc hơn.",
+      "start": 350.46,
+      "duration": 3.61
+    },
+    {
+      "text": "It is about mimicking the way the human eye perceives light in the physical",
+      "viText": "Nó bắt chước cách mắt người cảm nhận ánh sáng trong thế giới vật lý",
+      "start": 354.07,
+      "duration": 4.59
+    },
+    {
+      "text": "world.",
+      "viText": "thế giới.",
+      "start": 358.66,
+      "duration": 2
+    },
+    {
+      "text": "To experience true HDR, you need a monitor capable of reaching a high peak",
+      "viText": "Để trải nghiệm HDR chân thực, bạn cần một màn hình có khả năng đạt đỉnh cao",
+      "start": 360.66,
+      "duration": 4.53
+    },
+    {
+      "text": "brightness, typically measured at 600 nits or 1,000 nits.",
+      "viText": "độ sáng, thường được đo ở mức 600 nits hoặc 1.000 nits.",
+      "start": 365.19,
+      "duration": 3.49
+    },
+    {
+      "text": "This power allows the GPU to render details that would otherwise be lost in",
+      "viText": "Sức mạnh này cho phép GPU hiển thị các chi tiết có thể bị mất trong",
+      "start": 368.68,
+      "duration": 4.59
+    },
+    {
+      "text": "a standard display.",
+      "viText": "một màn hình tiêu chuẩn.",
+      "start": 373.27,
+      "duration": 2
+    },
+    {
+      "text": "In tactical games, this contrast is a massive advantage because it allows you to",
+      "viText": "Trong các trò chơi chiến thuật, sự tương phản này là một lợi thế lớn vì nó cho phép bạn",
+      "start": 375.27,
+      "duration": 4.89
+    },
+    {
+      "text": "distinguish an enemy hiding in a dark corner or see through thick fog that",
+      "viText": "phân biệt được kẻ thù đang ẩn nấp trong góc tối hoặc nhìn xuyên qua sương mù dày đặc",
+      "start": 380.16,
+      "duration": 4.53
+    },
+    {
+      "text": "would appear as a solid gray mess on a normal screen.",
+      "viText": "sẽ xuất hiện dưới dạng một mớ hỗn độn màu xám trên màn hình bình thường.",
+      "start": 384.69,
+      "duration": 3.24
+    },
+    {
+      "text": "With support for over 1 billion colors, HDR transforms flat digital environments into rich",
+      "viText": "Với sự hỗ trợ hơn 1 tỷ màu, HDR biến môi trường kỹ thuật số phẳng thành phong phú",
+      "start": 387.93,
+      "duration": 5.5
+    },
+    {
+      "text": "three-dimensional spaces.",
+      "viText": "không gian ba chiều.",
+      "start": 393.43,
+      "duration": 2
+    },
+    {
+      "text": "HDR adds a visceral sense of reality to your gaming experience.",
+      "viText": "HDR mang lại cảm giác thực tế hơn cho trải nghiệm chơi game của bạn.",
+      "start": 395.43,
+      "duration": 3.85
+    },
+    {
+      "text": "It balances extreme highlights with pitch black shadows so perfectly that it feels like",
+      "viText": "Nó cân bằng các điểm nổi bật cực độ với các bóng tối đen hoàn hảo đến mức có cảm giác như",
+      "start": 399.28,
+      "duration": 5.32
+    },
+    {
+      "text": "you are looking at a real life scene rather than a digital render.",
+      "viText": "bạn đang nhìn vào một khung cảnh đời thực chứ không phải là một bản kết xuất kỹ thuật số.",
+      "start": 404.6,
+      "duration": 4.04
+    },
+    {
+      "text": "When properly calibrated, it creates a visual resonance that makes every sunset and every",
+      "viText": "Khi được hiệu chỉnh đúng cách, nó sẽ tạo ra sự cộng hưởng thị giác khiến mọi cảnh hoàng hôn và mọi",
+      "start": 408.64,
+      "duration": 5.44
+    },
+    {
+      "text": "dark corridor feel tangible and authentic.",
+      "viText": "hành lang tối cho cảm giác hữu hình và chân thực.",
+      "start": 414.08,
+      "duration": 2.57
+    },
+    {
+      "text": "Dynamic resolution.",
+      "viText": "Độ phân giải động.",
+      "start": 416.65,
+      "duration": 2
+    },
+    {
+      "text": "Maintaining a consistent 60 frames per second is the goal for a smooth gaming",
+      "viText": "Duy trì tốc độ 60 khung hình/giây ổn định là mục tiêu để chơi game mượt mà",
+      "start": 418.65,
+      "duration": 4.71
+    },
+    {
+      "text": "experience.",
+      "viText": "kinh nghiệm.",
+      "start": 423.36,
+      "duration": 2
+    },
+    {
+      "text": "But heavy effects like massive explosions can cause sudden performance drops.",
+      "viText": "Nhưng những tác động nặng nề như vụ nổ lớn có thể khiến hiệu suất giảm đột ngột.",
+      "start": 425.36,
+      "duration": 4.71
+    },
+    {
+      "text": "Dynamic resolution scaling is a software solution that acts as an invisible safety net",
+      "viText": "Chia tỷ lệ độ phân giải động là một giải pháp phần mềm hoạt động như một mạng lưới an toàn vô hình",
+      "start": 430.07,
+      "duration": 5.26
+    },
+    {
+      "text": "to prevent these dips from ruining your gameplay.",
+      "viText": "để ngăn chặn những sự sụt giảm này làm hỏng lối chơi của bạn.",
+      "start": 435.33,
+      "duration": 3
+    },
+    {
+      "text": "Instead of letting the frame rate drop, the game engine automatically lowers the internal",
+      "viText": "Thay vì để tốc độ khung hình giảm, công cụ trò chơi sẽ tự động giảm",
+      "start": 438.33,
+      "duration": 5.44
+    },
+    {
+      "text": "resolution for a few split seconds to reduce the workload on the GPU.",
+      "viText": "nội bộ độ phân giải trong vài giây để giảm khối lượng công việc trên GPU.",
+      "start": 443.77,
+      "duration": 4.22
+    },
+    {
+      "text": "Once the heavy effects clear, the resolution snaps back to its native target instantly",
+      "viText": "Khi các hiệu ứng nặng được loại bỏ, độ phân giải sẽ quay trở lại mục tiêu ban đầu ngay lập tức",
+      "start": 447.99,
+      "duration": 5.26
+    },
+    {
+      "text": "without any manual adjustment.",
+      "viText": "mà không cần bất kỳ điều chỉnh thủ công nào.",
+      "start": 453.25,
+      "duration": 2
+    },
+    {
+      "text": "This process happens in real time, monitoring the GPU's frame time in microsconds to",
+      "viText": "Quá trình này diễn ra trong thời gian thực, theo dõi thời gian kết xuất khung hình của GPU tính bằng micro giây đến",
+      "start": 455.25,
+      "duration": 5.14
+    },
+    {
+      "text": "ensure the action stays fluid.",
+      "viText": "đảm bảo hành động vẫn trôi chảy.",
+      "start": 460.39,
+      "duration": 2
+    },
+    {
+      "text": "The brilliance of this system is that it prioritizes responsive movement over a perfect",
+      "viText": "Điểm nổi bật của hệ thống này là nó ưu tiên chuyển động phản ứng nhanh hơn là hoàn hảo.",
+      "start": 462.39,
+      "duration": 5.32
+    },
+    {
+      "text": "pixel count, keeping the gameplay consistent during the most chaotic moments of a fight.",
+      "viText": "số pixel, giữ cho lối chơi nhất quán trong những khoảnh khắc hỗn loạn nhất của cuộc chiến.",
+      "start": 467.71,
+      "duration": 5.38
+    },
+    {
+      "text": "In most cases, the transition is so fast that your eyes will not catch",
+      "viText": "Trong hầu hết các trường hợp, quá trình chuyển đổi diễn ra nhanh đến mức mắt bạn không thể bắt kịp",
+      "start": 473.09,
+      "duration": 4.28
+    },
+    {
+      "text": "the temporary drop in sharpness while you are focused on the action.",
+      "viText": "độ sắc nét giảm tạm thời trong khi bạn đang tập trung vào hành động.",
+      "start": 477.37,
+      "duration": 4.16
+    },
+    {
+      "text": "This technology is a pragmatic engineering feat that balances visual fidelity with stable performance.",
+      "viText": "Công nghệ này là một kỳ công kỹ thuật thực dụng giúp cân bằng độ trung thực hình ảnh với hiệu suất ổn định.",
+      "start": 481.53,
+      "duration": 6.24
+    },
+    {
+      "text": "It ensures that your highresolution experience remains buttery smooth even when your hardware is",
+      "viText": "Nó đảm bảo rằng trải nghiệm độ phân giải cao của bạn vẫn mượt mà ngay cả khi phần cứng của bạn",
+      "start": 487.77,
+      "duration": 5.87
+    },
+    {
+      "text": "pushed to its absolute limits.",
+      "viText": "bị đẩy đến giới hạn tuyệt đối của nó.",
+      "start": 493.64,
+      "duration": 2
+    },
+    {
+      "text": "You get the elite performance needed to stay competitive without ever having to pause",
+      "viText": "Bạn có được hiệu suất vượt trội cần thiết để duy trì tính cạnh tranh mà không cần phải tạm dừng",
+      "start": 495.64,
+      "duration": 5.2
+    },
+    {
+      "text": "and manually lower your settings.",
+      "viText": "và hạ thấp cài đặt của bạn theo cách thủ công.",
+      "start": 500.84,
+      "duration": 2.02
+    },
+    {
+      "text": "It is a vital tool for modern titles that want to push visual boundaries",
+      "viText": "Nó là một công cụ quan trọng dành cho những tựa game hiện đại muốn vượt qua ranh giới về mặt hình ảnh",
+      "start": 502.86,
+      "duration": 4.4
+    },
+    {
+      "text": "while maintaining a seamless experience.",
+      "viText": "trong khi vẫn duy trì trải nghiệm liền mạch.",
+      "start": 507.26,
+      "duration": 2.45
+    },
+    {
+      "text": "FSR.",
+      "viText": "FSR.",
+      "start": 509.71,
+      "duration": 2
+    },
+    {
+      "text": "FSR is AMD's answer to the modern hardware crunch.",
+      "viText": "FSR là câu trả lời của AMD cho cuộc khủng hoảng phần cứng hiện đại.",
+      "start": 511.71,
+      "duration": 3.06
+    },
+    {
+      "text": "Functioning as a powerful upscaling tool that breathes new life into almost any graphics",
+      "viText": "Hoạt động như một công cụ nâng cấp mạnh mẽ mang hơi thở mới vào hầu hết mọi đồ họa",
+      "start": 514.77,
+      "duration": 5.38
+    },
+    {
+      "text": "card.",
+      "viText": "card.",
+      "start": 520.15,
+      "duration": 2
+    },
+    {
+      "text": "Unlike competing technologies that are locked behind specific hardware barriers, FSR is a cross-platform",
+      "viText": "Không giống như các công nghệ cạnh tranh bị ràng buộc bởi các rào cản phần cứng cụ thể, FSR là một nền tảng đa nền tảng",
+      "start": 522.15,
+      "duration": 6.36
+    },
+    {
+      "text": "open-source standard that works on both AMD and Nvidia GPS.",
+      "viText": "chuẩn nguồn mở hoạt động trên cả AMD và Nvidia GPS.",
+      "start": 528.51,
+      "duration": 3.61
+    },
+    {
+      "text": "It works by rendering your game at a lower internal resolution and then applying",
+      "viText": "Nó hoạt động bằng cách hiển thị trò chơi của bạn ở độ phân giải bên trong thấp hơn rồi áp dụng",
+      "start": 532.12,
+      "duration": 4.89
+    },
+    {
+      "text": "highquality spatial and temporal algorithms to reconstruct the image to match a higher target",
+      "viText": "các thuật toán không gian và thời gian chất lượng cao để tái tạo lại hình ảnh cho phù hợp với mục tiêu cao hơn",
+      "start": 537.01,
+      "duration": 5.69
+    },
+    {
+      "text": "resolution.",
+      "viText": "nghị quyết.",
+      "start": 542.7,
+      "duration": 2
+    },
+    {
+      "text": "This results in a massive performance boost that can turn a stuttering 20 frames",
+      "viText": "Điều này mang lại hiệu suất tăng đáng kể, có thể quay được 20 khung hình giật hình",
+      "start": 544.7,
+      "duration": 4.89
+    },
+    {
+      "text": "per second mess into a perfectly playable 60 frames pers experience because it does",
+      "viText": "mỗi giây sẽ biến thành 60 khung hình hoàn toàn có thể chơi được cho mỗi trải nghiệm vì nó",
+      "start": 549.59,
+      "duration": 5.08
+    },
+    {
+      "text": "not require dedicated AI hardware.",
+      "viText": "không yêu cầu phần cứng AI chuyên dụng.",
+      "start": 554.67,
+      "duration": 2.08
+    },
+    {
+      "text": "It is incredibly flexible, allowing gamers with older laptops or mid-range desktop cards to",
+      "viText": "Nó cực kỳ linh hoạt, cho phép các game thủ có máy tính xách tay cũ hoặc card máy tính để bàn tầm trung",
+      "start": 556.75,
+      "duration": 5.57
+    },
+    {
+      "text": "enjoy the latest AAA titles without a massive compromise in visual quality.",
+      "viText": "thưởng thức các tựa game AAA mới nhất mà không ảnh hưởng nhiều đến chất lượng hình ảnh.",
+      "start": 562.32,
+      "duration": 4.59
+    },
+    {
+      "text": "This technology effectively democratizes high-end gaming by providing a free performance upgrade to millions",
+      "viText": "Công nghệ này dân chủ hóa trò chơi cao cấp một cách hiệu quả bằng cách cung cấp bản nâng cấp hiệu suất miễn phí cho hàng triệu",
+      "start": 566.91,
+      "duration": 6.61
+    },
+    {
+      "text": "of users, proving that clever software engineering can be just as impactful as raw",
+      "viText": "của người dùng, chứng minh rằng công nghệ phần mềm thông minh cũng có thể có tác động mạnh mẽ như",
+      "start": 573.52,
+      "duration": 5.02
+    },
+    {
+      "text": "silicon power.",
+      "viText": "năng lượng silicon.",
+      "start": 578.54,
+      "duration": 2
+    },
+    {
+      "text": "Whether you are playing on a handheld device or a high-end rig, FSR offers",
+      "viText": "Cho dù bạn đang chơi trên thiết bị cầm tay hay dàn máy cao cấp, FSR đều cung cấp",
+      "start": 580.54,
+      "duration": 4.53
+    },
+    {
+      "text": "a versatile alternative that keeps your visuals sharp and your frame rates high.",
+      "viText": "một giải pháp thay thế linh hoạt giúp hình ảnh của bạn sắc nét và tốc độ khung hình cao.",
+      "start": 585.07,
+      "duration": 4.89
+    },
+    {
+      "text": "As the versions have evolved, the image stability has improved dramatically, making it an",
+      "viText": "Khi các phiên bản phát triển, độ ổn định của hình ảnh đã được cải thiện đáng kể, khiến nó trở thành",
+      "start": 589.96,
+      "duration": 5.44
+    },
+    {
+      "text": "essential tool for anyone looking to maximize their hardware's potential.",
+      "viText": "công cụ cần thiết cho bất kỳ ai muốn phát huy tối đa tiềm năng phần cứng của mình.",
+      "start": 595.4,
+      "duration": 4.46
+    },
+    {
+      "text": "It serves as a vital bridge for gamers who want to experience modern, demanding",
+      "viText": "Nó đóng vai trò là cầu nối quan trọng cho những game thủ muốn trải nghiệm",
+      "start": 599.86,
+      "duration": 4.83
+    },
+    {
+      "text": "titles at high resolutions like 4K without needing to invest in the most expensive",
+      "viText": "hiện đại, khắt khe những tựa game ở độ phân giải cao như 4K mà không cần đầu tư vào",
+      "start": 604.69,
+      "duration": 5.02
+    },
+    {
+      "text": "flagship hardware on the market.",
+      "viText": "đắt tiền nhất phần cứng hàng đầu trên thị trường.",
+      "start": 609.71,
+      "duration": 2
+    },
+    {
+      "text": "By intelligently stretching every pixel, FSR ensures that smooth gameplay is an accessible reality",
+      "viText": "Bằng cách kéo dài từng pixel một cách thông minh, FSR đảm bảo rằng lối chơi mượt mà là điều thực tế dễ tiếp cận",
+      "start": 611.71,
+      "duration": 5.99
+    },
+    {
+      "text": "for the entire gaming community.",
+      "viText": "cho toàn thể cộng đồng game thủ.",
+      "start": 617.7,
+      "duration": 2
+    },
+    {
+      "text": "DLSS DLSS represents the pinnacle of AI integration in modern computing, utilizing dedicated hardware",
+      "viText": "DLSS DLSS đại diện cho đỉnh cao của việc tích hợp AI trong điện toán hiện đại, sử dụng phần cứng chuyên dụng",
+      "start": 619.7,
+      "duration": 6.18
+    },
+    {
+      "text": "called tensor cores to fundamentally change how graphics are rendered.",
+      "viText": "được gọi là lõi tensor để thay đổi căn bản cách hiển thị đồ họa.",
+      "start": 625.88,
+      "duration": 4.28
+    },
+    {
+      "text": "Instead of relying on traditional mathematical upscaling, DLSS uses a massive neural network trained",
+      "viText": "Thay vì dựa vào khả năng nâng cấp toán học truyền thống, DLSS sử dụng mạng lưới thần kinh khổng lồ được đào tạo",
+      "start": 630.16,
+      "duration": 6.12
+    },
+    {
+      "text": "on millions of highresolution images to hallucinate missing details with incredible accuracy.",
+      "viText": "trên hàng triệu hình ảnh có độ phân giải cao để tạo ảo giác về những chi tiết còn thiếu với độ chính xác đáng kinh ngạc.",
+      "start": 636.28,
+      "duration": 5.69
+    },
+    {
+      "text": "Your GPU only needs to render the game at a fraction of the native",
+      "viText": "GPU của bạn chỉ cần hiển thị trò chơi ở mức một phần nhỏ so với",
+      "start": 641.97,
+      "duration": 4.04
+    },
+    {
+      "text": "resolution, such as 1080p, and the AI fills in the rest to output a",
+      "viText": "gốc độ phân giải, chẳng hạn như 1080p và AI sẽ điền vào phần còn lại để tạo ra",
+      "start": 646.01,
+      "duration": 4.1
+    },
+    {
+      "text": "stunning 4K image that often looks cleaner than the original native render.",
+      "viText": "hình ảnh 4K tuyệt đẹp thường trông rõ ràng hơn so với kết xuất gốc ban đầu.",
+      "start": 650.11,
+      "duration": 4.59
+    },
+    {
+      "text": "This reduces the primary workload on your GPU significantly, allowing it to focus its",
+      "viText": "Điều này làm giảm đáng kể khối lượng công việc chính trên GPU của bạn, cho phép GPU tập trung",
+      "start": 654.7,
+      "duration": 5.2
+    },
+    {
+      "text": "energy on complex effects like ray tracing or ultra level textures.",
+      "viText": "năng lượng trên các hiệu ứng phức tạp như dò tia hoặc kết cấu siêu cấp.",
+      "start": 659.9,
+      "duration": 4.1
+    },
+    {
+      "text": "By leveraging the power of deep learning, NVIDIA has created a system that can",
+      "viText": "Bằng cách tận dụng sức mạnh của deep learning, NVIDIA đã tạo ra một hệ thống có thể",
+      "start": 664,
+      "duration": 4.77
+    },
+    {
+      "text": "fix visual artifacts like flickering on thin wires or shimmering in distant foliage that",
+      "viText": "khắc phục hiện tượng giả tạo thị giác như nhấp nháy trên những sợi dây mỏng hay lung linh trong những tán lá xa xa",
+      "start": 668.77,
+      "duration": 5.38
+    },
+    {
+      "text": "have plagued gamers for years.",
+      "viText": "đã làm phiền các game thủ trong nhiều năm.",
+      "start": 674.15,
+      "duration": 2
+    },
+    {
+      "text": "The true brilliance of DLSS is that it makes your current graphics card feel",
+      "viText": "Điểm tuyệt vời thực sự của DLSS là nó mang lại cảm giác cho card đồ họa hiện tại của bạn",
+      "start": 676.15,
+      "duration": 4.65
+    },
+    {
+      "text": "like it was launched 3 years into the future.",
+      "viText": "giống như nó đã được ra mắt trong tương lai 3 năm.",
+      "start": 680.8,
+      "duration": 2.75
+    },
+    {
+      "text": "Providing a level of efficiency that raw hardware power simply cannot match.",
+      "viText": "Cung cấp mức độ hiệu quả mà sức mạnh phần cứng thô đơn giản không thể sánh được.",
+      "start": 683.55,
+      "duration": 4.65
+    },
+    {
+      "text": "It is a revolutionary leap in architecture that has shifted the industry focus from",
+      "viText": "Đó là một bước nhảy vọt mang tính cách mạng trong kiến ​​trúc đã chuyển trọng tâm của ngành từ",
+      "start": 688.2,
+      "duration": 5.08
+    },
+    {
+      "text": "brute force rendering to intelligent reconstruction.",
+      "viText": "kết xuất vũ lực để tái thiết thông minh.",
+      "start": 693.28,
+      "duration": 3.18
+    },
+    {
+      "text": "For the modern gamer, this means you no longer have to choose between beautiful",
+      "viText": "Đối với game thủ hiện đại, điều này có nghĩa là bạn không còn phải lựa chọn giữa",
+      "start": 696.46,
+      "duration": 4.83
+    },
+    {
+      "text": "4K resolution and high-speed frames per second.",
+      "viText": "đẹp Độ phân giải 4K và tốc độ khung hình cao mỗi giây.",
+      "start": 701.29,
+      "duration": 2.87
+    },
+    {
+      "text": "With DLSS, you can finally have both simultaneously.",
+      "viText": "Với DLSS, cuối cùng bạn có thể có cả hai cùng một lúc.",
+      "start": 704.16,
+      "duration": 3.18
+    },
+    {
+      "text": "This technology has turned the once impossible dream of high-end performance on consumer-grade hardware",
+      "viText": "Công nghệ này đã biến giấc mơ không thể thành hiện thực về hiệu năng cao cấp trên phần cứng dành cho người tiêu dùng",
+      "start": 707.34,
+      "duration": 6.3
+    },
+    {
+      "text": "into a daily reality.",
+      "viText": "thành hiện thực hàng ngày.",
+      "start": 713.64,
+      "duration": 2
+    },
+    {
+      "text": "Furthermore, it continues to improve through driver updates, meaning the AI gets smarter over",
+      "viText": "Hơn nữa, nó tiếp tục được cải thiện thông qua các bản cập nhật trình điều khiển, nghĩa là AI trở nên thông minh hơn",
+      "start": 715.64,
+      "duration": 5.69
+    },
+    {
+      "text": "time, constantly refining its ability to distinguish between noise and actual game detail to",
+      "viText": "thời gian, liên tục cải tiến khả năng phân biệt giữa tiếng ồn và chi tiết trò chơi thực tế để",
+      "start": 721.33,
+      "duration": 5.63
+    },
+    {
+      "text": "provide a flawless visual output.",
+      "viText": "cung cấp một đầu ra hình ảnh hoàn hảo.",
+      "start": 726.96,
+      "duration": 2.02
+    },
+    {
+      "text": "Frame generation.",
+      "viText": "Tạo khung.",
+      "start": 728.98,
+      "duration": 2
+    },
+    {
+      "text": "If upscaling is about making pixels better, frame generation is about creating entire moments",
+      "viText": "Nếu nâng cấp là làm cho pixel trở nên tốt hơn thì việc tạo khung hình là tạo ra toàn bộ khoảnh khắc",
+      "start": 730.98,
+      "duration": 5.69
+    },
+    {
+      "text": "out of thin air.",
+      "viText": "ra khỏi không khí mỏng.",
+      "start": 736.67,
+      "duration": 2
+    },
+    {
+      "text": "This tech uses an optical flow accelerator to analyze the movement of every pixel",
+      "viText": "Công nghệ này sử dụng bộ tăng tốc dòng quang để phân tích chuyển động của từng pixel",
+      "start": 738.67,
+      "duration": 4.95
+    },
+    {
+      "text": "between two real frames and predict what a frame in the middle would look",
+      "viText": "giữa hai khung hình thực và dự đoán khung hình ở giữa sẽ trông như thế nào",
+      "start": 743.62,
+      "duration": 4.46
+    },
+    {
+      "text": "like.",
+      "viText": "like.",
+      "start": 748.08,
+      "duration": 2
+    },
+    {
+      "text": "By inserting this AI generated frame, the total frames per second on your screen",
+      "viText": "Bằng cách chèn khung hình do AI tạo này, tổng số khung hình trên giây trên màn hình của bạn",
+      "start": 750.08,
+      "duration": 4.89
+    },
+    {
+      "text": "can literally double, making motion look incredibly fluid.",
+      "viText": "theo nghĩa đen có thể tăng gấp đôi, làm cho chuyển động trông cực kỳ trôi chảy.",
+      "start": 754.97,
+      "duration": 3.55
+    },
+    {
+      "text": "It is like adding extra pages to a flip book to make the animation",
+      "viText": "Nó giống như việc thêm các trang bổ sung vào một cuốn sách lật để tạo hoạt ảnh",
+      "start": 758.52,
+      "duration": 4.04
+    },
+    {
+      "text": "smoother without drawing more pictures.",
+      "viText": "mượt mà hơn mà không cần vẽ thêm hình ảnh.",
+      "start": 762.56,
+      "duration": 2.39
+    },
+    {
+      "text": "However, there is a catch.",
+      "viText": "Tuy nhiên, có một nhược điểm.",
+      "start": 764.95,
+      "duration": 2
+    },
+    {
+      "text": "Because the system has to wait for two real frames to generate the middle",
+      "viText": "Bởi vì hệ thống phải đợi hai khung hình thực để tạo ra phần giữa",
+      "start": 766.95,
+      "duration": 4.46
+    },
+    {
+      "text": "one, it can introduce input lag.",
+      "viText": "một, nó có thể gây ra độ trễ đầu vào.",
+      "start": 771.41,
+      "duration": 2
+    },
+    {
+      "text": "In a high-speed competitive shooter, you might feel a slight delay between moving your",
+      "viText": "Trong game bắn súng cạnh tranh tốc độ cao, bạn có thể cảm thấy hơi chậm trễ giữa việc di chuyển",
+      "start": 773.41,
+      "duration": 5.26
+    },
+    {
+      "text": "mouse and seeing the action on screen.",
+      "viText": "của mình. chuột và xem hành động trên màn hình.",
+      "start": 778.67,
+      "duration": 2.32
+    },
+    {
+      "text": "This makes frame generation perfect for cinematic singleplayer AAA games where visual smoothness is",
+      "viText": "Điều này giúp cho việc tạo khung hình trở nên hoàn hảo cho các trò chơi AAA một người chơi mang tính điện ảnh, nơi có hình ảnh mượt mà",
+      "start": 780.99,
+      "duration": 6.06
+    },
+    {
+      "text": "the priority over millisecond perfect reaction times.",
+      "viText": "mức độ ưu tiên hơn thời gian phản ứng hoàn hảo tính bằng mili giây.",
+      "start": 787.05,
+      "duration": 3.24
+    },
+    {
+      "text": "The real breakthrough here is that AI is no longer just helping us draw.",
+      "viText": "Bước đột phá thực sự ở đây là AI không còn chỉ giúp chúng ta vẽ nữa.",
+      "start": 790.29,
+      "duration": 4.4
+    },
+    {
+      "text": "It is predicting the very next moment of our digital reality to bypass the",
+      "viText": "Nó đang dự đoán khoảnh khắc tiếp theo của thực tế kỹ thuật số của chúng ta sẽ vượt qua",
+      "start": 794.69,
+      "duration": 4.53
+    },
+    {
+      "text": "physical limits of our hardware.",
+      "viText": "giới hạn vật lý của phần cứng của chúng tôi.",
+      "start": 799.22,
+      "duration": 2
+    },
+    {
+      "text": "While early AI generated frames could show minor visual glitches like distortion or ghosting",
+      "viText": "Mặc dù các khung hình do AI tạo ra ban đầu có thể hiển thị các trục trặc nhỏ về hình ảnh như biến dạng hoặc bóng mờ",
+      "start": 801.22,
+      "duration": 5.63
+    },
+    {
+      "text": "around moving objects, the technology is improving at a rapid pace.",
+      "viText": "xung quanh các vật thể chuyển động, công nghệ đang được cải thiện với tốc độ nhanh chóng.",
+      "start": 806.85,
+      "duration": 4.1
+    },
+    {
+      "text": "It provides a massive performance ceiling for heavy titles that would otherwise struggle to",
+      "viText": "Nó cung cấp mức trần hiệu suất lớn cho các tựa game nặng mà nếu không sẽ phải vật lộn để",
+      "start": 810.95,
+      "duration": 5.57
+    },
+    {
+      "text": "hit high frame rates on modern displays.",
+      "viText": "đạt tốc độ khung hình cao trên màn hình hiện đại.",
+      "start": 816.52,
+      "duration": 2.45
+    },
+    {
+      "text": "For the average gamer, this means achieving that liquid visual experience in the most",
+      "viText": "Đối với người chơi bình thường, điều này có nghĩa là đạt được trải nghiệm hình ảnh mượt mà nhất",
+      "start": 818.97,
+      "duration": 5.2
+    },
+    {
+      "text": "demanding titles is finally possible.",
+      "viText": "những danh hiệu đòi hỏi cuối cùng cũng có thể thực hiện được.",
+      "start": 824.17,
+      "duration": 2.26
+    },
+    {
+      "text": "It is the ultimate tool for those who value the feeling of infinite smoothness",
+      "viText": "Nó là công cụ tối ưu dành cho những ai coi trọng cảm giác mượt mà vô tận",
+      "start": 826.43,
+      "duration": 4.77
+    },
+    {
+      "text": "in their epic adventures.",
+      "viText": "trong cuộc phiêu lưu sử thi của họ.",
+      "start": 831.2,
+      "duration": 2
+    },
+    {
+      "text": "Ray tracing.",
+      "viText": "Truy tìm tia.",
+      "start": 833.2,
+      "duration": 2
+    },
+    {
+      "text": "For decades, game lighting was basically cheating by prepainting lights and shadows onto textures,",
+      "viText": "Trong nhiều thập kỷ, ánh sáng trong trò chơi về cơ bản là gian lận bằng cách vẽ trước ánh sáng và bóng tối lên họa tiết,",
+      "start": 835.2,
+      "duration": 5.99
+    },
+    {
+      "text": "a process called rasterization.",
+      "viText": "một quá trình gọi là rasterization.",
+      "start": 841.19,
+      "duration": 2
+    },
+    {
+      "text": "Ray tracing changes the game by simulating the physical behavior of light as it",
+      "viText": "Phương pháp dò tia thay đổi trò chơi bằng cách mô phỏng hành vi vật lý của ánh sáng",
+      "start": 843.19,
+      "duration": 4.83
+    },
+    {
+      "text": "bounces off every surface in a scene.",
+      "viText": "nảy ra khỏi mọi bề mặt trong một cảnh.",
+      "start": 848.02,
+      "duration": 2.26
+    },
+    {
+      "text": "Imagine millions of invisible lasers shooting out from every light source, hitting a glass",
+      "viText": "Hãy tưởng tượng hàng triệu tia laser vô hình bắn ra từ mọi nguồn sáng, chạm vào kính",
+      "start": 850.28,
+      "duration": 5.5
+    },
+    {
+      "text": "bottle, reflecting onto a wet floor, and casting an accurate shadow.",
+      "viText": "chai, phản chiếu lên sàn ướt và tạo bóng chính xác.",
+      "start": 855.78,
+      "duration": 4.16
+    },
+    {
+      "text": "This creates reflections that aren't just fake images, but actual mirrors of what is",
+      "viText": "Điều này tạo ra những phản ánh không chỉ là hình ảnh giả mà còn là phản chiếu thực tế của",
+      "start": 859.94,
+      "duration": 5.14
+    },
+    {
+      "text": "happening around the corner.",
+      "viText": "xảy ra xung quanh góc.",
+      "start": 865.08,
+      "duration": 2
+    },
+    {
+      "text": "The impact is most noticeable on reflective surfaces like puddles, windows, and polished metal.",
+      "viText": "Tác động dễ nhận thấy nhất trên các bề mặt phản chiếu như vũng nước, cửa sổ và kim loại được đánh bóng.",
+      "start": 867.08,
+      "duration": 5.81
+    },
+    {
+      "text": "Without ray tracing, reflections often look blurry, inaccurate, or disappear entirely when you look",
+      "viText": "Nếu không có tính năng dò tia, hình ảnh phản chiếu thường trông mờ, không chính xác hoặc biến mất hoàn toàn khi bạn nhìn",
+      "start": 872.89,
+      "duration": 6.06
+    },
+    {
+      "text": "away from the object.",
+      "viText": "cách xa vật thể.",
+      "start": 878.95,
+      "duration": 2
+    },
+    {
+      "text": "But with it enabled, you can see the neon signs of a city reflected",
+      "viText": "Nhưng khi nó được kích hoạt, bạn có thể thấy các biển hiệu đèn neon của một thành phố được phản chiếu",
+      "start": 880.95,
+      "duration": 4.1
+    },
+    {
+      "text": "perfectly in a rainy street, including things that aren't even on your screen.",
+      "viText": "hoàn hảo trên đường phố mưa, kể cả những thứ thậm chí không có trên màn hình của bạn.",
+      "start": 885.05,
+      "duration": 4.77
+    },
+    {
+      "text": "This technology transforms the environment from a static painting into a living, breathing world",
+      "viText": "Công nghệ này biến môi trường từ một bức tranh tĩnh thành một thế giới sống động",
+      "start": 889.82,
+      "duration": 5.87
+    },
+    {
+      "text": "where light interacts with materials exactly as it does in the real world.",
+      "viText": "nơi ánh sáng tương tác với vật liệu giống hệt như trong thế giới thực.",
+      "start": 895.69,
+      "duration": 4.53
+    },
+    {
+      "text": "However, this realism comes at a heavy price as the process is incredibly demanding",
+      "viText": "Tuy nhiên, chủ nghĩa hiện thực này phải trả giá đắt vì quá trình này cực kỳ khắt khe",
+      "start": 900.22,
+      "duration": 5.08
+    },
+    {
+      "text": "on your graphics card's RT cores and consumes massive amounts of video random access",
+      "viText": "trên lõi RT của cạc đồ họa của bạn và sử dụng lượng lớn truy cập ngẫu nhiên video",
+      "start": 905.3,
+      "duration": 5.14
+    },
+    {
+      "text": "memory.",
+      "viText": "ký ức.",
+      "start": 910.44,
+      "duration": 2
+    },
+    {
+      "text": "While it can cut your frame rate in half, the visual payoff is undeniable.",
+      "viText": "Mặc dù nó có thể giảm tốc độ khung hình của bạn xuống một nửa nhưng hiệu quả về mặt hình ảnh là không thể phủ nhận.",
+      "start": 912.44,
+      "duration": 4.53
+    },
+    {
+      "text": "Once you experience the realistic shadows and light bounces, standard lighting starts to look",
+      "viText": "Sau khi bạn trải nghiệm bóng và ánh sáng phản chiếu chân thực, ánh sáng tiêu chuẩn sẽ bắt đầu có vẻ",
+      "start": 916.97,
+      "duration": 5.69
+    },
+    {
+      "text": "like a flat cartoon.",
+      "viText": "giống như một phim hoạt hình phẳng.",
+      "start": 922.66,
+      "duration": 2
+    },
+    {
+      "text": "It is the single biggest leap toward cinematic photo realism in the history of",
+      "viText": "Đây là bước nhảy vọt lớn nhất hướng tới chủ nghĩa hiện thực ảnh điện ảnh trong lịch sử của",
+      "start": 924.66,
+      "duration": 4.77
+    },
+    {
+      "text": "GPU technology, bridging the gap between digital renders and physical reality.",
+      "viText": "Công nghệ GPU, thu hẹp khoảng cách giữa kết xuất kỹ thuật số và thực tế vật lý.",
+      "start": 929.43,
+      "duration": 4.77
+    },
+    {
+      "text": "Path tracing.",
+      "viText": "Truy tìm đường đi.",
+      "start": 934.2,
+      "duration": 2
+    },
+    {
+      "text": "If ray tracing is a surgical laser, path tracing is a nuclear explosion of",
+      "viText": "Nếu dò tia là tia laser phẫu thuật thì dò đường là một vụ nổ hạt nhân của",
+      "start": 936.2,
+      "duration": 4.53
+    },
+    {
+      "text": "light simulation.",
+      "viText": "mô phỏng ánh sáng.",
+      "start": 940.73,
+      "duration": 2
+    },
+    {
+      "text": "While standard ray tracing only handles specific effects like reflections or shadows in certain",
+      "viText": "Trong khi dò tia tiêu chuẩn chỉ xử lý các hiệu ứng cụ thể như phản chiếu hoặc bóng trong một số",
+      "start": 942.73,
+      "duration": 5.81
+    },
+    {
+      "text": "areas, path tracing calculates the lighting for the entire scene simultaneously.",
+      "viText": "nhất định các khu vực, tính năng dò đường sẽ tính toán ánh sáng cho toàn bộ khung cảnh cùng một lúc.",
+      "start": 948.54,
+      "duration": 4.89
+    },
+    {
+      "text": "It traces thousands of paths for every single pixel, accounting for how light bounces",
+      "viText": "Nó theo dõi hàng nghìn đường dẫn cho mỗi pixel, tính toán cách ánh sáng phản xạ",
+      "start": 953.43,
+      "duration": 5.2
+    },
+    {
+      "text": "infinitely between objects until it loses energy.",
+      "viText": "vô hạn giữa các vật thể cho đến khi nó mất năng lượng.",
+      "start": 958.63,
+      "duration": 3
+    },
+    {
+      "text": "This creates an image so close to reality that it becomes difficult to distinguish",
+      "viText": "Điều này tạo ra hình ảnh gần với thực tế đến mức khó phân biệt",
+      "start": 961.63,
+      "duration": 5.02
+    },
+    {
+      "text": "between a game render and a photograph captured in the real world.",
+      "viText": "giữa kết xuất trò chơi và một bức ảnh được chụp trong thế giới thực.",
+      "start": 966.65,
+      "duration": 4.04
+    },
+    {
+      "text": "The complexity of path tracing is why it was previously reserved only for Hollywood",
+      "viText": "Sự phức tạp của việc dò tìm đường dẫn là lý do tại sao trước đây nó chỉ dành riêng cho Hollywood",
+      "start": 970.69,
+      "duration": 5.08
+    },
+    {
+      "text": "movie renders that took hours for a single frame.",
+      "viText": "kết xuất phim mất hàng giờ cho một khung hình.",
+      "start": 975.77,
+      "duration": 3
+    },
+    {
+      "text": "Today, thanks to massive GPU advancements, we can run this in real time, though",
+      "viText": "Ngày nay, nhờ những tiến bộ vượt bậc về GPU, chúng ta có thể chạy nó trong thời gian thực",
+      "start": 978.77,
+      "duration": 4.83
+    },
+    {
+      "text": "it is the heaviest workload you can possibly give a graphics card.",
+      "viText": "đó là khối lượng công việc nặng nhất mà bạn có thể cung cấp cho một card đồ họa.",
+      "start": 983.6,
+      "duration": 4.04
+    },
+    {
+      "text": "It eliminates the need for any baked lighting, allowing for fully dynamic environments where",
+      "viText": "Nó loại bỏ sự cần thiết của bất kỳ hệ thống chiếu sáng cố định nào, cho phép tạo ra những môi trường hoàn toàn năng động trong đó",
+      "start": 987.64,
+      "duration": 5.63
+    },
+    {
+      "text": "moving a single lamp changes the entire scene's mood instantly.",
+      "viText": "di chuyển một chiếc đèn sẽ thay đổi tâm trạng của toàn bộ khung cảnh ngay lập tức.",
+      "start": 993.27,
+      "duration": 3.85
+    },
+    {
+      "text": "It is the ultimate expression of what modern computing hardware is capable of achieving",
+      "viText": "Nó là sự thể hiện tối thượng những gì phần cứng máy tính hiện đại có thể đạt được",
+      "start": 997.12,
+      "duration": 5.32
+    },
+    {
+      "text": "when pushed to its absolute limits.",
+      "viText": "khi bị đẩy đến giới hạn tuyệt đối của nó.",
+      "start": 1002.44,
+      "duration": 2.14
+    },
+    {
+      "text": "The real magic of path tracing comes from its soft details.",
+      "viText": "Phép thuật thực sự của việc dò đường đến từ những chi tiết mềm mại của nó.",
+      "start": 1004.58,
+      "duration": 3.61
+    },
+    {
+      "text": "The way light gently bleeds around a corner or how the subtle color of",
+      "viText": "Cách ánh sáng nhẹ nhàng lan tỏa quanh một góc hay cách màu sắc tinh tế của",
+      "start": 1008.19,
+      "duration": 4.28
+    },
+    {
+      "text": "a carpet reflects onto a white ceiling.",
+      "viText": "một tấm thảm phản chiếu lên trần nhà màu trắng.",
+      "start": 1012.47,
+      "duration": 2.39
+    },
+    {
+      "text": "These tiny microscopic interactions are what make our brains believe a digital world is",
+      "viText": "Những tương tác cực nhỏ này là thứ khiến bộ não của chúng ta tin rằng có một thế giới kỹ thuật số",
+      "start": 1014.86,
+      "duration": 5.32
+    },
+    {
+      "text": "real.",
+      "viText": "real.",
+      "start": 1020.18,
+      "duration": 2
+    },
+    {
+      "text": "While it can sometimes make images look too reflective or demanding for current GPUs,",
+      "viText": "Mặc dù đôi khi nó có thể khiến hình ảnh trông quá phản chiếu hoặc đòi hỏi khắt khe đối với GPU hiện tại,",
+      "start": 1022.18,
+      "duration": 5.2
+    },
+    {
+      "text": "it represents the final destination for graphics technology.",
+      "viText": "nó đại diện cho đích đến cuối cùng của công nghệ đồ họa.",
+      "start": 1027.38,
+      "duration": 3.67
+    },
+    {
+      "text": "Path tracing is the holy grail that finally turns our digital screens into a",
+      "viText": "Truy tìm đường dẫn là chén thánh cuối cùng biến màn hình kỹ thuật số của chúng ta thành",
+      "start": 1031.05,
+      "duration": 4.65
+    },
+    {
+      "text": "perfect mirror of the physical",
+      "viText": "tấm gương hoàn hảo của vật chất",
+      "start": 1035.7,
+      "duration": 2
+    }
+  ]
+}

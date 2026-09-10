@@ -1,0 +1,54 @@
+{
+  "id": "RAW-062",
+  "channelId": "UCSVKj0YL9sSQWm8BCYEjVaQ",
+  "title": "Theleme-confidential",
+  "handle": "@Theleme-confidential",
+  "url": "https://www.youtube.com/channel/UCSVKj0YL9sSQWm8BCYEjVaQ",
+  "subscribers": 112000,
+  "views": 1867977,
+  "videoCount": 29,
+  "country": "FR",
+  "avatar": "https://yt3.ggpht.com/2mQhtYD-4n4bDXZwI7v9H4H9vsVdLHC6I-qjQifr8g4-4tZO8mx8enbbV9fhXoE9-VRGIHUONB4=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Knowledge",
+    "Technology",
+    "Society",
+    "Lifestyle (sociology)"
+  ],
+  "editorialNiche": "Công nghệ / quy định thời sự",
+  "publishedAt": "2026-05-15T10:13:01.098Z",
+  "longevityAudit": {
+    "channelAgeDays": 116,
+    "activeSpanDays": 94,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 2000,
+      "viewsGained": 105485,
+      "videosPublished": 6
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:30:15Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 834809,
+    "maxOutlierScore": 1.05,
+    "maxVPH": 54.07,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-17",
+    "daysSinceLatest": 23,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (23 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 23 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 105,485 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$133 – $247 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

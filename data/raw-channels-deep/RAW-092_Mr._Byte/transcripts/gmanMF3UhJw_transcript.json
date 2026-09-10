@@ -1,0 +1,893 @@
+{
+  "videoId": "gmanMF3UhJw",
+  "title": "ALL GDDR GPU Explained in 13 Minutes - From Oldest to Newest!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 147,
+  "fullText": "GDDR. GDDR, sometimes called GDDR1, is where it all started. It was introduced around 2003, and it was basically a modified version of regular DDR memory tuned for graphics workloads. The main idea was simple. Graphics cards need to move huge blocks of texture and pixel data very quickly. Regular DDR memory at the time was not fast enough for that. GDDR1 ran at higher clock speeds than standard DDR and was optimized for high bandwidth in one direction rather than low latency in both directions. You could find it in GPUs like the Radeon 9800 Pro and some GeForce FX cards. At the time, it was a noticeable improvement. Games were getting more complex and the GPU needed faster memory to keep up, but GDDR1 did not last long. It was more of a starting point than a standard people stuck with. Within a couple of years, the next generation was already replacing it. Think of GDDR1 as the proof of concept. It showed the industry that dedicated graphics memory was the right direction, but it was never meant to stay sucked. GDDR2 GDDR2 came right after the original GDDR and offered higher clock speeds with lower power consumption. It was introduced around 2004 and you could find it in cards like the ATI Radeon X800 series. On paper, GDDR2 sounded like a decent upgrade. It used lower voltage than GDDR1, which meant less heat and it could clock a bit higher, but in practice, it had a problem. The memory chips had higher latency compared to GDDR1, which hurt actual performance in some cases. So even though the clock speed was higher, the real world bandwidth gains were not always impressive. Because of that, GDDR2 had a very short life. Nvidia mostly skipped it entirely and jumped straight to GDDR3. ATI used it in a few cards, but even they moved on quickly. GDDR2 is one of those generations that most people never even noticed. It existed, it worked, but it was replaced almost immediately by something better. If GDDR1 was the proof of concept, GDDR2 was the awkward first draft. GDDR3, GDDR3 is where things actually got serious. Introduced around 2004 to 2005, GDDR3 fixed the latency problems of GDDR2 while keeping the lower voltage and higher clock speeds. This made it the first GDDR standard that the entire industry adopted without hesitation. You could find GDDR3 in some of the most popular GPUs ever made. The GeForce 6600GT, the GeForce 7900 GTX, the Radeon X1800, and later even butt jut cards and gaming consoles like the Xbox 360. It had the right combination of speed, efficiency, and cost. GDDR3 could reach clock speeds up to around 1,000 MHz at the time, which was impressive. It also produced less heat than GDDR2, so GPU coolers did not have to work as hard. For the mid200s, that mattered a lot. Cards were already getting hot enough. The reason GDDR3 lasted so long is that it hit a sweet spot. It was fast enough for the games of that era, cheap enough for manufacturers to use in mid-range and budget cards, and efficient enough to not cause thermal problems. GDDR3 was the first truly mainstream graphics memory standard. It proved that graphics memory did not need to be cutting edge or expensive to be. It just needed to be fast enough, cool enough, and cheap enough. That balance is exactly what every future GDDR generation would try to replicate. Go faster, stay cool, and keep costs down. GDDR4 GDDR4 was supposed to be the next step after GDDR3. It arrived around 2006 with higher clock speeds and promised better bandwidth, but it ended up being one of the most forgettable generations in GDDR history. The problem was timing and cost. GDDR4 chips were more expensive to produce, and the performance gains over GDDR3 were not big enough to justify the price. At the same time, GDDR3 was still improving and getting cheaper. So, most GPU makers just stuck with GDDR3 for their mainstream cards and waited for something better. Only a handful of GPUs ever used GDDR4. The Radeon HD 2900 XT was one of the most notable examples, and even that card had mixed reviews. Nvidia basically ignored GDDR4 completely and jumped from GDDR3 straight to GDDR5. GDDR4 is a lot like GDDR2. It existed as a transitional technology that the market did not really need. The jump from GDDR3 to GDDR5 was coming fast and GDDR4 got caught in the middle. If you have never heard of GDDR4, that is completely normal. Most people in the industry would rather forget it too. GDDR5. If there is one GDDR generation that defined modern gaming, it is GDD 5. Introduced around 2008, GDDR5 doubled the data rate compared to GDDR3 by transferring data four times per clock cycle instead of two. That was a massive jump in bandwidth. GDDR5 powered nearly a full decade of GPUs. The Radeon HD 4870 was one of the first to use it. Then came the GeForce GTX 600 series, the GTX 700 series, the GTX 900 series, the GTX 1060, the Radeon R9 series, and the RX 400 and 500 series. Basically, every major GPU from 2008 to around 2018 used GDDR5. Even the PlayStation 4 used it as system memory. At its peak, GDDR5 could reach effective speeds of around 8 to 9 GBs per second per pin. that was enough to handle 1080p and even for 4p gaming for years. The memory was also reasonably priced and widely manufactured, which made it perfect for budget and mid-range GPUs. The only real downside of GDDR5 was that it eventually hit a wall. As games moved to higher resolutions and textures got larger, even 8 GBs per sec was not enough for high-end cards. But for the vast majority of gamers during that era, GDDR5's more wasn't insufficient. It was reliable, affordable, and it just worked. When people talk about the golden age of PC gaming going mainstream, GDDR5 was quietly making that possible in the background. It is the longest serving GDDR generation in history, and it earned that title. GDDR5X. GDDR5X was a special upgrade to GDDR5 designed by Micron to squeeze more bandwidth out of the existing GDDR5 architecture. It launched around 2016 and was used almost exclusively by Nvidia. The main improvement was speed. GDDR5X could hit effective speeds of 10 to 14 GB per second per pin compared to the 8 to 9 GBs per sec of regular GDDR5 of. It achieved this by using a wider prefetch buffer, which means it could grab more data in each cycle. The result was noticeably more bandwidth without a complete redesign of the memory controller. You could find GDDR5X in the GTX 1080, the GTX 1080 Ti, and the Titan X Pascal. These were the top tier cards of their generation, and they needed more bandwidth than standard GDDR5 could offer. GDDR5X gave them that edge. But GDDDR5X was always a bridge technology. It was Micron's way of keeping GDDR5 relevant. While the industry prepared for GDDR6, AMD never adopted it, and once GDDR6 arrived, GDDR5X disappeared almost overnight. It served its purpose well for those few high-end Nvidia cards, but it was never meant to become a standard on its own. GDDR6 GDDR6 is the current mainstream standard for GPU memory. It was introduced around 2018 and brought a significant jump over GDDR5. The key improvement is that GDDR6 uses two independent 16-bit channels instead of one 32-bit channel. This allows it to handle data more efficiently and reach higher speeds. Typical GDDR6 speeds range from 12 to 18 gig per second per pin. That is a big step up from GDDR5's 8 gig per second. You can find GDDR6 in a huge range of GPUs from budget cards like the RTX 3050 and RX6600 all the way up to mid-range favorites like the RTX 4060Ti and RX700 XT. GDDR6 also improved power efficiency compared to GDDR5. It runs at 1.35 down from 1.5. That means less heat and more room for the GPU itself to use power. For laptop GPUs, this matters even more. The reason GDDR6 became so dominant is the same reason GDDR5 was dominant before it. It offers the right balance of speed, cost, and efficiency. It is fast enough for 1080p and 1440p gaming, affordable enough for mid-range cards, and efficient enough for laptops and compact builds. GDDR6 is the workhorse of this generation, and it is likely to remain in budget and mid-range cards for years to come, even as newer versions roll out. GDDR6X GDDR6X is the higherformance variant of GDDR6 developed by Micron in partnership with Nvidia. It was introduced in 2020 with the RTX3080 and has been used in every high-end Nvidia GPU since then, including the RTX3090, RTX 4S80, and RTX 4S90. The big technical change is PAM 4 signaling. Regular GDDR6 uses NRZ signaling, which means each signal carries one bit of data, either a zero or a one. PAM 4 uses four signal levels, so each signal carries two bits of data at once. That effectively doubles the data rate without doubling the clock speed. The result is impressive. GDDR 6X can reach speeds of 21 to 23 Gbits per second per pin. The RTX 4090, for example, uses 24 gigabers GDDR 6X, giving it over one TBR per second of memory bandwidth. That is a lot of data moving very fast. But there is a trade-off. GDDR 6X runs hotter than standard GDDR6. Every time you open 90, the memory chips on an RTX 4D90 can easily reach 90 to 100° C under load. That is why many high-end cards now come with thermal pads specifically for the memory chips. PAM 4 signaling is also more sensitive to noise, which makes manufacturing more complex and expensive. GDDR6X is clearly the best GPU memory available right now for raw performance, but it is limited to high-end Nvidia cards, and it costs significantly more to manufacture. AMD has never used it. For most people building a gaming PC today, regular GDDR6 is still the better value. You only need GDDR 6X if you are gaming at 4K or doing heavy AI and creative workloads where bandwidth is the bottleneck. GDDR7 GDDR7 is the newest generation of graphics memory. It was officially announced in 2024 by JDK, the organization that sets memory standards. The first GPUs with GDDR7 are expected to arrive in late 2025 and 2026. The biggest change is that GDDR7 switches from PAM 4 to PAM 3 signaling. PAM 3 uses three signal levels instead of four. That might sound like a step backward, but PAM 3 is actually more power efficient and less sensitive to signal noise than PAM 4. It gives a better balance between speed and reliability. GDDR7 is expected to reach speeds of 32 to 36 Gbits per sik per pin in its first generation with a theoretical ceiling much higher than that. It also uses dual channel operation per chip similar to what GDDR6 introduced but optimized further for higher throughput. Another improvement is power efficiency. GDDR7 is designed to deliver significantly more bandwidth per watt than GDDR6X. that matters for both desktop and laptop GPUs. As games and AI workloads demand more and more memory bandwidth, efficiency becomes just as important as raw speed. GDDR7 is expected to be adopted across all tiers eventually from high-end to mid-range. But like every new memory generation, it will start expensive and come to flagship GPUs first. For most people, GDDR6 will remain the standard for at least another year or two. But when GDDR7 does become affordable and widespread, the bandwidth jump will be massive. We are talking about nearly four times the bandwidth of GDDR5, which was the standard not that long ago. That kind of progress is what makes each new generation exciting, even if you do not upgrade right away. Anyway, that is every GDDR generation ever made from the original GDDR all the way to the upcoming GDDR7. Each generation pushed bandwidth higher, kept power in check, and helped GPUs get faster. I also made some other cool videos, too. Don't forget to watch them later. Okay.",
+  "fullTextVi": "GDDR. GDDR, đôi khi được gọi là GDDR1, là nơi mọi thứ bắt đầu. Nó được giới thiệu vào khoảng năm 2003 và về cơ bản nó là phiên bản sửa đổi của bộ nhớ DDR thông thường được điều chỉnh cho khối lượng công việc đồ họa. Ý tưởng chính rất đơn giản. Card đồ họa cần di chuyển các khối dữ liệu kết cấu và pixel khổng lồ rất nhanh chóng. Bộ nhớ DDR thông thường vào thời điểm đó không đủ nhanh cho việc đó. GDDR1 chạy ở tốc độ xung nhịp cao hơn DDR tiêu chuẩn và được tối ưu hóa cho băng thông cao theo một hướng thay vì độ trễ thấp ở cả hai hướng. Bạn có thể tìm thấy nó trong các GPU như Radeon 9800 Pro và một số card GeForce FX. Vào thời điểm đó, đó là một sự cải thiện đáng chú ý. Trò chơi ngày càng phức tạp hơn và GPU cần bộ nhớ nhanh hơn để theo kịp, nhưng GDDR1 không tồn tại được lâu. Đó là một điểm khởi đầu hơn là một tiêu chuẩn mà mọi người mắc kẹt. Trong vòng vài năm, thế hệ tiếp theo đã thay thế nó. Hãy coi GDDR1 như bằng chứng về khái niệm. Nó cho thấy ngành công nghiệp rằng bộ nhớ đồ họa chuyên dụng là hướng đi đúng đắn, nhưng nó không bao giờ có nghĩa là bị hút vào. GDDR2 GDDR2 xuất hiện ngay sau GDDR ban đầu và cung cấp tốc độ xung nhịp cao hơn với mức tiêu thụ điện năng thấp hơn. Nó được giới thiệu vào khoảng năm 2004 và bạn có thể tìm thấy nó trong các card như dòng ATI Radeon X800. Trên lý thuyết, GDDR2 có vẻ như là một bản nâng cấp khá tốt. Nó sử dụng điện áp thấp hơn GDDR1, nghĩa là ít tỏa nhiệt hơn và có thể đạt xung nhịp cao hơn một chút, nhưng trên thực tế, nó đã gặp vấn đề. Các chip bộ nhớ có độ trễ cao hơn so với GDDR1, điều này ảnh hưởng đến hiệu suất thực tế trong một số trường hợp. Vì vậy, mặc dù tốc độ xung nhịp cao hơn nhưng mức tăng băng thông trong thế giới thực không phải lúc nào cũng ấn tượng. Vì lẽ đó, GDDR2 có tuổi thọ rất ngắn. Nvidia gần như bỏ qua nó hoàn toàn và nhảy thẳng lên GDDR3. ATI đã sử dụng nó trong một số thẻ, nhưng thậm chí họ còn tiếp tục phát triển nhanh chóng. GDDR2 là một trong những thế hệ mà hầu hết mọi người thậm chí không bao giờ để ý đến. Nó tồn tại, nó hoạt động, nhưng gần như ngay lập tức nó bị thay thế bởi thứ gì đó tốt hơn. Nếu GDDR1 là bằng chứng về khái niệm thì GDDR2 là bản thảo đầu tiên vụng về. GDDR3, GDDR3 là nơi mọi thứ thực sự trở nên nghiêm trọng. Được giới thiệu vào khoảng năm 2004 đến 2005, GDDR3 đã khắc phục các vấn đề về độ trễ của GDDR2 trong khi vẫn giữ điện áp thấp hơn và tốc độ xung nhịp cao hơn. Điều này khiến nó trở thành tiêu chuẩn GDDR đầu tiên được toàn bộ ngành áp dụng mà không do dự. Bạn có thể tìm thấy GDDR3 trong một số GPU phổ biến nhất từng được tạo ra. GeForce 6600GT, GeForce 7900 GTX, Radeon X1800, và sau này là cả những card rời và máy chơi game như Xbox 360. Nó có sự kết hợp đúng đắn giữa tốc độ, hiệu quả và chi phí. GDDR3 có thể đạt tốc độ xung nhịp lên tới khoảng 1.000 MHz vào thời điểm đó, một con số rất ấn tượng. Nó cũng tạo ra ít nhiệt hơn GDDR2 nên bộ làm mát GPU không phải làm việc vất vả. Vào giữa những năm 200, điều đó rất quan trọng. Thẻ đã đủ nóng rồi. Lý do GDDR3 tồn tại lâu như vậy là vì nó đã đạt đến đỉnh cao. Nó đủ nhanh cho các trò chơi thời đó, đủ rẻ để các nhà sản xuất sử dụng trong các thẻ tầm trung và bình dân, đồng thời đủ hiệu quả để không gây ra các vấn đề về nhiệt. GDDR3 là tiêu chuẩn bộ nhớ đồ họa thực sự chính thống đầu tiên. Nó chứng minh rằng bộ nhớ đồ họa không cần phải hiện đại hay đắt tiền. Nó chỉ cần đủ nhanh, đủ mát và đủ rẻ. Sự cân bằng đó chính xác là điều mà mọi thế hệ GDDR trong tương lai sẽ cố gắng tái tạo. Đi nhanh hơn, mát mẻ hơn và giảm chi phí. GDDR4 GDDR4 được cho là bước tiếp theo sau GDDR3. Nó xuất hiện vào khoảng năm 2006 với tốc độ xung nhịp cao hơn và hứa hẹn băng thông tốt hơn, nhưng cuối cùng nó lại trở thành một trong những thế hệ đáng quên nhất trong lịch sử GDDR. Vấn đề là thời gian và chi phí. Chip GDDR4 đắt hơn để sản xuất và hiệu suất tăng so với GDDR3 không đủ lớn để phù hợp với mức giá. Đồng thời, GDDR3 vẫn đang được cải thiện và ngày càng rẻ hơn. Vì vậy, hầu hết các nhà sản xuất GPU chỉ gắn bó với GDDR3 cho dòng card phổ thông của họ và chờ đợi điều gì đó tốt hơn. Chỉ một số ít GPU từng sử dụng GDDR4. Radeon HD 2900 XT là một trong những ví dụ đáng chú ý nhất và thậm chí chiếc thẻ đó còn có nhiều đánh giá trái chiều. Về cơ bản, Nvidia đã bỏ qua hoàn toàn GDDR4 và nhảy thẳng từ GDDR3 lên GDDR5. GDDR4 rất giống GDDR2. Nó tồn tại như một công nghệ chuyển tiếp mà thị trường không thực sự cần. Bước nhảy từ GDDR3 sang GDDR5 đang diễn ra nhanh chóng và GDDR4 bị kẹt ở giữa. Nếu bạn chưa từng nghe đến GDDR4 thì điều đó hoàn toàn bình thường. Hầu hết mọi người trong ngành cũng muốn quên nó đi. GDDR5. Nếu có một thế hệ GDDR định nghĩa trò chơi hiện đại thì đó là GDD 5. Được giới thiệu vào khoảng năm 2008, GDDR5 đã tăng gấp đôi tốc độ dữ liệu so với GDDR3 bằng cách truyền dữ liệu bốn lần trong mỗi chu kỳ đồng hồ thay vì hai. Đó là một bước nhảy vọt về băng thông. GDDR5 đã hỗ trợ GPU gần một thập kỷ. Radeon HD 4870 là một trong những thiết bị đầu tiên sử dụng nó. Sau đó là dòng GeForce GTX 600, dòng GTX 700, dòng GTX 900, GTX 1060, dòng Radeon R9 và dòng RX 400 và 500. Về cơ bản, mọi GPU chính từ năm 2008 đến khoảng năm 2018 đều sử dụng GDDR5. Ngay cả PlayStation 4 cũng sử dụng nó làm bộ nhớ hệ thống. Ở mức cao nhất, GDDR5 có thể đạt tốc độ hiệu quả khoảng 8 đến 9 GB mỗi giây trên mỗi pin. điều đó là đủ để xử lý 1080p và thậm chí để chơi game 4p trong nhiều năm. Bộ nhớ cũng có giá hợp lý và được sản xuất rộng rãi, khiến nó trở nên hoàn hảo cho các GPU tầm trung và giá rẻ. Nhược điểm thực sự duy nhất của GDDR5 là cuối cùng nó đã gặp phải trở ngại. Khi trò chơi chuyển sang độ phân giải cao hơn và kết cấu ngày càng lớn hơn, thậm chí 8 GB mỗi giây cũng không đủ đối với thẻ cao cấp. Nhưng đối với đại đa số game thủ trong thời kỳ đó, GDDR5 nhiều hơn vẫn chưa đủ. Nó đáng tin cậy, giá cả phải chăng và nó hoạt động hiệu quả. Khi mọi người nói về thời kỳ hoàng kim của việc chơi game trên PC đang trở nên phổ biến, GDDR5 đã âm thầm biến điều đó thành hiện thực. Đây là thế hệ GDDR phục vụ lâu nhất trong lịch sử và đã giành được danh hiệu đó. GDDR5X. GDDR5X là bản nâng cấp đặc biệt cho GDDR5 do Micron thiết kế để tăng thêm băng thông từ kiến ​​trúc GDDR5 hiện có. Nó ra mắt vào khoảng năm 2016 và hầu như chỉ được Nvidia sử dụng. Cải tiến chính là tốc độ. GDDR5X có thể đạt tốc độ hiệu quả từ 10 đến 14 GB mỗi giây trên mỗi pin so với 8 đến 9 GB mỗi giây của GDDR5 thông thường. Nó đạt được điều này bằng cách sử dụng bộ đệm tìm nạp trước rộng hơn, có nghĩa là nó có thể lấy được nhiều dữ liệu hơn trong mỗi chu kỳ. Kết quả là băng thông được tăng lên đáng kể mà không cần thiết kế lại hoàn toàn bộ điều khiển bộ nhớ. Bạn có thể tìm thấy GDDR5X trong GTX 1080, GTX 1080 Ti và Titan X Pascal. Đây là những thẻ hàng đầu trong thế hệ của chúng và chúng cần nhiều băng thông hơn GDDR5 tiêu chuẩn có thể cung cấp. GDDR5X đã mang lại cho họ lợi thế đó. Nhưng GDDDR5X luôn là công nghệ cầu nối. Đó là cách Micron giữ GDDR5 phù hợp. Trong khi ngành chuẩn bị cho GDDR6, AMD chưa bao giờ áp dụng nó và khi GDDR6 xuất hiện, GDDR5X gần như biến mất chỉ sau một đêm. Nó phục vụ tốt mục đích của nó đối với một số thẻ Nvidia cao cấp đó, nhưng nó chưa bao giờ có ý định trở thành một tiêu chuẩn. GDDR6 GDDR6 là tiêu chuẩn phổ biến hiện nay cho bộ nhớ GPU. Nó được giới thiệu vào khoảng năm 2018 và mang lại bước nhảy vọt đáng kể so với GDDR5. Cải tiến quan trọng là GDDR6 sử dụng hai kênh 16 bit độc lập thay vì một kênh 32 bit. Điều này cho phép nó xử lý dữ liệu hiệu quả hơn và đạt tốc độ cao hơn. Tốc độ GDDR6 điển hình dao động từ 12 đến 18 gig mỗi giây trên mỗi pin. Đó là một bước tiến lớn so với 8 gig mỗi giây của GDDR5. Bạn có thể tìm thấy GDDR6 trong rất nhiều GPU từ thẻ giá rẻ như RTX 3050 và RX6600 cho đến các loại GPU tầm trung được yêu thích như RTX 4060Ti và RX700 XT. GDDR6 cũng cải thiện hiệu suất sử dụng năng lượng so với GDDR5. Nó chạy ở mức 1,35 giảm từ 1,5. Điều đó có nghĩa là ít nhiệt hơn và có nhiều chỗ hơn cho GPU sử dụng năng lượng. Đối với GPU máy tính xách tay, điều này càng quan trọng hơn. Lý do khiến GDDR6 trở nên thống trị cũng chính là lý do khiến GDDR5 chiếm ưu thế trước nó. Nó cung cấp sự cân bằng giữa tốc độ, chi phí và hiệu quả. Nó đủ nhanh để chơi game 1080p và 1440p, đủ giá cả phải chăng cho các thẻ tầm trung và đủ hiệu quả cho máy tính xách tay và thiết kế nhỏ gọn. GDDR6 là đặc trưng của thế hệ này và có khả năng nó sẽ vẫn nằm trong các thẻ giá rẻ và tầm trung trong nhiều năm tới, ngay cả khi các phiên bản mới hơn ra mắt. GDDR6X GDDR6X là biến thể hiệu suất cao hơn của GDDR6 do Micron hợp tác với Nvidia phát triển. Nó được giới thiệu vào năm 2020 cùng với RTX3080 và đã được sử dụng trong mọi GPU Nvidia cao cấp kể từ đó, bao gồm RTX3090, RTX 4S80 và RTX 4S90. Sự thay đổi lớn về mặt kỹ thuật là tín hiệu PAM 4. GDDR6 thông thường sử dụng tín hiệu NRZ, nghĩa là mỗi tín hiệu mang một bit dữ liệu, số 0 hoặc số 1. PAM 4 sử dụng bốn mức tín hiệu, do đó mỗi tín hiệu mang hai bit dữ liệu cùng một lúc. Điều đó giúp tăng gấp đôi tốc độ dữ liệu một cách hiệu quả mà không cần tăng gấp đôi tốc độ xung nhịp. Kết quả thật ấn tượng. GDDR 6X có thể đạt tốc độ từ 21 đến 23 Gbit/giây trên mỗi pin. Ví dụ: RTX 4090 sử dụng 24 gigabers GDDR 6X, mang lại băng thông bộ nhớ hơn một TBR mỗi giây. Đó là rất nhiều dữ liệu di chuyển rất nhanh. Nhưng có một sự đánh đổi. GDDR 6X chạy nóng hơn GDDR6 tiêu chuẩn. Mỗi khi bạn mở 90, chip nhớ trên RTX 4D90 có thể dễ dàng đạt tới 90 đến 100° C khi tải. Đó là lý do tại sao nhiều loại thẻ cao cấp hiện nay có miếng tản nhiệt dành riêng cho chip nhớ. Tín hiệu PAM 4 cũng nhạy hơn với nhiễu, khiến việc sản xuất trở nên phức tạp và tốn kém hơn. GDDR6X rõ ràng là bộ nhớ GPU tốt nhất hiện nay về hiệu năng thô, nhưng nó chỉ giới hạn ở các thẻ Nvidia cao cấp và chi phí sản xuất cao hơn đáng kể. AMD chưa bao giờ sử dụng nó. Đối với hầu hết mọi người xây dựng một PC chơi game ngày nay, GDDR6 thông thường vẫn có giá trị tốt hơn. Bạn chỉ cần GDDR 6X nếu bạn đang chơi game ở độ phân giải 4K hoặc thực hiện các khối lượng công việc sáng tạo và AI nặng trong đó băng thông là điểm nghẽn. GDDR7 GDDR7 là thế hệ bộ nhớ đồ họa mới nhất. Nó được công bố chính thức vào năm 2024 bởi JDK, tổ chức đặt ra các tiêu chuẩn về bộ nhớ. Những GPU đầu tiên có GDDR7 dự kiến ​​sẽ xuất hiện vào cuối năm 2025 và 2026. Thay đổi lớn nhất là GDDR7 chuyển từ tín hiệu PAM 4 sang PAM 3. PAM 3 sử dụng ba mức tín hiệu thay vì bốn. Điều đó nghe có vẻ như là một bước lùi, nhưng PAM 3 thực sự tiết kiệm điện hơn và ít nhạy cảm hơn với nhiễu tín hiệu so với PAM 4. Nó mang lại sự cân bằng tốt hơn giữa tốc độ và độ tin cậy. GDDR7 dự kiến ​​​​sẽ đạt tốc độ từ 32 đến 36 Gbit/sik/pin ở thế hệ đầu tiên với mức trần lý thuyết cao hơn nhiều so với mức đó. Nó cũng sử dụng hoạt động kênh đôi trên mỗi chip tương tự như những gì GDDR6 đã giới thiệu nhưng được tối ưu hóa hơn nữa để có thông lượng cao hơn. Một cải tiến khác là hiệu quả năng lượng. GDDR7 được thiết kế để cung cấp băng thông trên mỗi watt nhiều hơn đáng kể so với GDDR6X. điều đó quan trọng đối với cả GPU máy tính để bàn và máy tính xách tay. Khi khối lượng công việc trò chơi và AI ngày càng đòi hỏi nhiều băng thông bộ nhớ hơn, hiệu quả cũng trở nên quan trọng như tốc độ thô. GDDR7 dự kiến ​​sẽ được áp dụng trên tất cả các phân khúc từ cao cấp đến tầm trung. Nhưng giống như mọi thế hệ bộ nhớ mới, nó sẽ có giá khởi điểm đắt đỏ và ưu tiên dành cho các GPU hàng đầu. Đối với hầu hết mọi người, GDDR6 sẽ vẫn là tiêu chuẩn trong ít nhất một hoặc hai năm nữa. Nhưng khi GDDR7 trở nên có giá cả phải chăng và phổ biến, bước nhảy vọt về băng thông sẽ rất lớn. Chúng ta đang nói về băng thông gần gấp bốn lần GDDR5, đây là tiêu chuẩn cách đây không lâu. Sự tiến bộ đó là điều khiến mỗi thế hệ mới trở nên thú vị, ngay cả khi bạn không nâng cấp ngay. Dù sao, đó là mọi thế hệ GDDR từng được tạo ra từ GDDR ban đầu cho đến GDDR7 sắp tới. Mỗi thế hệ đều đẩy băng thông lên cao hơn, kiểm soát nguồn điện và giúp GPU hoạt động nhanh hơn. Tôi cũng đã làm một số video thú vị khác. Đừng quên xem chúng sau. Okay.",
+  "segments": [
+    {
+      "text": "GDDR.",
+      "viText": "GDDR.",
+      "start": 0,
+      "duration": 2
+    },
+    {
+      "text": "GDDR, sometimes called GDDR1, is where it all started.",
+      "viText": "GDDR, đôi khi được gọi là GDDR1, là nơi mọi thứ bắt đầu.",
+      "start": 2,
+      "duration": 3.89
+    },
+    {
+      "text": "It was introduced around 2003, and it was basically a modified version of regular DDR memory tuned for graphics workloads.",
+      "viText": "Nó được giới thiệu vào khoảng năm 2003 và về cơ bản nó là phiên bản sửa đổi của bộ nhớ DDR thông thường được điều chỉnh cho khối lượng công việc đồ họa.",
+      "start": 5.89,
+      "duration": 8.8
+    },
+    {
+      "text": "The main idea was simple.",
+      "viText": "Ý tưởng chính rất đơn giản.",
+      "start": 14.69,
+      "duration": 2
+    },
+    {
+      "text": "Graphics cards need to move huge blocks of texture and pixel data very quickly.",
+      "viText": "Card đồ họa cần di chuyển các khối dữ liệu kết cấu và pixel khổng lồ rất nhanh chóng.",
+      "start": 16.69,
+      "duration": 5.7
+    },
+    {
+      "text": "Regular DDR memory at the time was not fast enough for that.",
+      "viText": "Bộ nhớ DDR thông thường vào thời điểm đó không đủ nhanh cho việc đó.",
+      "start": 22.39,
+      "duration": 4.33
+    },
+    {
+      "text": "GDDR1 ran at higher clock speeds than standard DDR and was optimized for high bandwidth in one direction rather than low latency in both directions.",
+      "viText": "GDDR1 chạy ở tốc độ xung nhịp cao hơn DDR tiêu chuẩn và được tối ưu hóa cho băng thông cao theo một hướng thay vì độ trễ thấp ở cả hai hướng.",
+      "start": 26.72,
+      "duration": 10.67
+    },
+    {
+      "text": "You could find it in GPUs like the Radeon 9800 Pro and some GeForce FX cards.",
+      "viText": "Bạn có thể tìm thấy nó trong các GPU như Radeon 9800 Pro và một số card GeForce FX.",
+      "start": 37.39,
+      "duration": 5.55
+    },
+    {
+      "text": "At the time, it was a noticeable improvement.",
+      "viText": "Vào thời điểm đó, đó là một sự cải thiện đáng chú ý.",
+      "start": 42.94,
+      "duration": 3.25
+    },
+    {
+      "text": "Games were getting more complex and the GPU needed faster memory to keep up, but GDDR1 did not last long.",
+      "viText": "Trò chơi ngày càng phức tạp hơn và GPU cần bộ nhớ nhanh hơn để theo kịp, nhưng GDDR1 không tồn tại được lâu.",
+      "start": 46.19,
+      "duration": 7.57
+    },
+    {
+      "text": "It was more of a starting point than a standard people stuck with.",
+      "viText": "Đó là một điểm khởi đầu hơn là một tiêu chuẩn mà mọi người mắc kẹt.",
+      "start": 53.76,
+      "duration": 4.76
+    },
+    {
+      "text": "Within a couple of years, the next generation was already replacing it.",
+      "viText": "Trong vòng vài năm, thế hệ tiếp theo đã thay thế nó.",
+      "start": 58.52,
+      "duration": 5.12
+    },
+    {
+      "text": "Think of GDDR1 as the proof of concept.",
+      "viText": "Hãy coi GDDR1 như bằng chứng về khái niệm.",
+      "start": 63.64,
+      "duration": 2.81
+    },
+    {
+      "text": "It showed the industry that dedicated graphics memory was the right direction, but it was never meant to stay sucked.",
+      "viText": "Nó cho thấy ngành công nghiệp rằng bộ nhớ đồ họa chuyên dụng là hướng đi đúng đắn, nhưng nó không bao giờ có nghĩa là bị hút vào.",
+      "start": 66.45,
+      "duration": 8.44
+    },
+    {
+      "text": "GDDR2 GDDR2 came right after the original GDDR and offered higher clock speeds with lower power consumption.",
+      "viText": "GDDR2 GDDR2 xuất hiện ngay sau GDDR ban đầu và cung cấp tốc độ xung nhịp cao hơn với mức tiêu thụ điện năng thấp hơn.",
+      "start": 74.89,
+      "duration": 7.79
+    },
+    {
+      "text": "It was introduced around 2004 and you could find it in cards like the ATI Radeon X800 series.",
+      "viText": "Nó được giới thiệu vào khoảng năm 2004 và bạn có thể tìm thấy nó trong các card như dòng ATI Radeon X800.",
+      "start": 82.68,
+      "duration": 6.71
+    },
+    {
+      "text": "On paper, GDDR2 sounded like a decent upgrade.",
+      "viText": "Trên lý thuyết, GDDR2 có vẻ như là một bản nâng cấp khá tốt.",
+      "start": 89.39,
+      "duration": 3.32
+    },
+    {
+      "text": "It used lower voltage than GDDR1, which meant less heat and it could clock a bit higher, but in practice, it had a problem.",
+      "viText": "Nó sử dụng điện áp thấp hơn GDDR1, nghĩa là ít tỏa nhiệt hơn và có thể đạt xung nhịp cao hơn một chút, nhưng trên thực tế, nó đã gặp vấn đề.",
+      "start": 92.71,
+      "duration": 8.87
+    },
+    {
+      "text": "The memory chips had higher latency compared to GDDR1, which hurt actual performance in some cases.",
+      "viText": "Các chip bộ nhớ có độ trễ cao hơn so với GDDR1, điều này ảnh hưởng đến hiệu suất thực tế trong một số trường hợp.",
+      "start": 101.58,
+      "duration": 7.14
+    },
+    {
+      "text": "So even though the clock speed was higher, the real world bandwidth gains were not always impressive.",
+      "viText": "Vì vậy, mặc dù tốc độ xung nhịp cao hơn nhưng mức tăng băng thông trong thế giới thực không phải lúc nào cũng ấn tượng.",
+      "start": 108.72,
+      "duration": 7.28
+    },
+    {
+      "text": "Because of that, GDDR2 had a very short life.",
+      "viText": "Vì lẽ đó, GDDR2 có tuổi thọ rất ngắn.",
+      "start": 116,
+      "duration": 3.25
+    },
+    {
+      "text": "Nvidia mostly skipped it entirely and jumped straight to GDDR3.",
+      "viText": "Nvidia gần như bỏ qua nó hoàn toàn và nhảy thẳng lên GDDR3.",
+      "start": 119.25,
+      "duration": 4.54
+    },
+    {
+      "text": "ATI used it in a few cards, but even they moved on quickly.",
+      "viText": "ATI đã sử dụng nó trong một số thẻ, nhưng thậm chí họ còn tiếp tục phát triển nhanh chóng.",
+      "start": 123.79,
+      "duration": 4.25
+    },
+    {
+      "text": "GDDR2 is one of those generations that most people never even noticed.",
+      "viText": "GDDR2 là một trong những thế hệ mà hầu hết mọi người thậm chí không bao giờ để ý đến.",
+      "start": 128.04,
+      "duration": 5.05
+    },
+    {
+      "text": "It existed, it worked, but it was replaced almost immediately by something better.",
+      "viText": "Nó tồn tại, nó hoạt động, nhưng gần như ngay lập tức nó bị thay thế bởi thứ gì đó tốt hơn.",
+      "start": 133.09,
+      "duration": 5.91
+    },
+    {
+      "text": "If GDDR1 was the proof of concept, GDDR2 was the awkward first draft.",
+      "viText": "Nếu GDDR1 là bằng chứng về khái niệm thì GDDR2 là bản thảo đầu tiên vụng về.",
+      "start": 139,
+      "duration": 4.98
+    },
+    {
+      "text": "GDDR3, GDDR3 is where things actually got serious.",
+      "viText": "GDDR3, GDDR3 là nơi mọi thứ thực sự trở nên nghiêm trọng.",
+      "start": 143.98,
+      "duration": 3.61
+    },
+    {
+      "text": "Introduced around 2004 to 2005, GDDR3 fixed the latency problems of GDDR2 while keeping the lower voltage and higher clock speeds.",
+      "viText": "Được giới thiệu vào khoảng năm 2004 đến 2005, GDDR3 đã khắc phục các vấn đề về độ trễ của GDDR2 trong khi vẫn giữ điện áp thấp hơn và tốc độ xung nhịp cao hơn.",
+      "start": 147.59,
+      "duration": 9.37
+    },
+    {
+      "text": "This made it the first GDDR standard that the entire industry adopted without hesitation.",
+      "viText": "Điều này khiến nó trở thành tiêu chuẩn GDDR đầu tiên được toàn bộ ngành áp dụng mà không do dự.",
+      "start": 156.96,
+      "duration": 6.42
+    },
+    {
+      "text": "You could find GDDR3 in some of the most popular GPUs ever made.",
+      "viText": "Bạn có thể tìm thấy GDDR3 trong một số GPU phổ biến nhất từng được tạo ra.",
+      "start": 163.38,
+      "duration": 4.62
+    },
+    {
+      "text": "The GeForce 6600GT, the GeForce 7900 GTX, the Radeon X1800, and later even butt jut cards and gaming consoles like the Xbox 360.",
+      "viText": "GeForce 6600GT, GeForce 7900 GTX, Radeon X1800, và sau này là cả những card rời và máy chơi game như Xbox 360.",
+      "start": 168,
+      "duration": 9.23
+    },
+    {
+      "text": "It had the right combination of speed, efficiency, and cost.",
+      "viText": "Nó có sự kết hợp đúng đắn giữa tốc độ, hiệu quả và chi phí.",
+      "start": 177.23,
+      "duration": 4.33
+    },
+    {
+      "text": "GDDR3 could reach clock speeds up to around 1,000 MHz at the time, which was impressive.",
+      "viText": "GDDR3 có thể đạt tốc độ xung nhịp lên tới khoảng 1.000 MHz vào thời điểm đó, một con số rất ấn tượng.",
+      "start": 181.56,
+      "duration": 6.35
+    },
+    {
+      "text": "It also produced less heat than GDDR2, so GPU coolers did not have to work as hard.",
+      "viText": "Nó cũng tạo ra ít nhiệt hơn GDDR2 nên bộ làm mát GPU không phải làm việc vất vả.",
+      "start": 187.91,
+      "duration": 5.99
+    },
+    {
+      "text": "For the mid200s, that mattered a lot.",
+      "viText": "Vào giữa những năm 200, điều đó rất quan trọng.",
+      "start": 193.9,
+      "duration": 2.67
+    },
+    {
+      "text": "Cards were already getting hot enough.",
+      "viText": "Thẻ đã đủ nóng rồi.",
+      "start": 196.57,
+      "duration": 2.74
+    },
+    {
+      "text": "The reason GDDR3 lasted so long is that it hit a sweet spot.",
+      "viText": "Lý do GDDR3 tồn tại lâu như vậy là vì nó đã đạt đến đỉnh cao.",
+      "start": 199.31,
+      "duration": 4.33
+    },
+    {
+      "text": "It was fast enough for the games of that era, cheap enough for manufacturers to use in mid-range and budget cards, and efficient enough to not cause thermal problems.",
+      "viText": "Nó đủ nhanh cho các trò chơi thời đó, đủ rẻ để các nhà sản xuất sử dụng trong các thẻ tầm trung và bình dân, đồng thời đủ hiệu quả để không gây ra các vấn đề về nhiệt.",
+      "start": 203.64,
+      "duration": 11.97
+    },
+    {
+      "text": "GDDR3 was the first truly mainstream graphics memory standard.",
+      "viText": "GDDR3 là tiêu chuẩn bộ nhớ đồ họa thực sự chính thống đầu tiên.",
+      "start": 215.61,
+      "duration": 4.47
+    },
+    {
+      "text": "It proved that graphics memory did not need to be cutting edge or expensive to be.",
+      "viText": "Nó chứng minh rằng bộ nhớ đồ họa không cần phải hiện đại hay đắt tiền.",
+      "start": 220.08,
+      "duration": 5.91
+    },
+    {
+      "text": "It just needed to be fast enough, cool enough, and cheap enough.",
+      "viText": "Nó chỉ cần đủ nhanh, đủ mát và đủ rẻ.",
+      "start": 225.99,
+      "duration": 4.62
+    },
+    {
+      "text": "That balance is exactly what every future GDDR generation would try to replicate.",
+      "viText": "Sự cân bằng đó chính xác là điều mà mọi thế hệ GDDR trong tương lai sẽ cố gắng tái tạo.",
+      "start": 230.61,
+      "duration": 5.84
+    },
+    {
+      "text": "Go faster, stay cool, and keep costs down.",
+      "viText": "Đi nhanh hơn, mát mẻ hơn và giảm chi phí.",
+      "start": 236.45,
+      "duration": 3.03
+    },
+    {
+      "text": "GDDR4 GDDR4 was supposed to be the next step after GDDR3.",
+      "viText": "GDDR4 GDDR4 được cho là bước tiếp theo sau GDDR3.",
+      "start": 239.48,
+      "duration": 4.11
+    },
+    {
+      "text": "It arrived around 2006 with higher clock speeds and promised better bandwidth, but it ended up being one of the most forgettable generations in GDDR history.",
+      "viText": "Nó xuất hiện vào khoảng năm 2006 với tốc độ xung nhịp cao hơn và hứa hẹn băng thông tốt hơn, nhưng cuối cùng nó lại trở thành một trong những thế hệ đáng quên nhất trong lịch sử GDDR.",
+      "start": 243.59,
+      "duration": 11.32
+    },
+    {
+      "text": "The problem was timing and cost.",
+      "viText": "Vấn đề là thời gian và chi phí.",
+      "start": 254.91,
+      "duration": 2.31
+    },
+    {
+      "text": "GDDR4 chips were more expensive to produce, and the performance gains over GDDR3 were not big enough to justify the price.",
+      "viText": "Chip GDDR4 đắt hơn để sản xuất và hiệu suất tăng so với GDDR3 không đủ lớn để phù hợp với mức giá.",
+      "start": 257.22,
+      "duration": 8.8
+    },
+    {
+      "text": "At the same time, GDDR3 was still improving and getting cheaper.",
+      "viText": "Đồng thời, GDDR3 vẫn đang được cải thiện và ngày càng rẻ hơn.",
+      "start": 266.02,
+      "duration": 4.62
+    },
+    {
+      "text": "So, most GPU makers just stuck with GDDR3 for their mainstream cards and waited for something better.",
+      "viText": "Vì vậy, hầu hết các nhà sản xuất GPU chỉ gắn bó với GDDR3 cho dòng card phổ thông của họ và chờ đợi điều gì đó tốt hơn.",
+      "start": 270.64,
+      "duration": 7.28
+    },
+    {
+      "text": "Only a handful of GPUs ever used GDDR4.",
+      "viText": "Chỉ một số ít GPU từng sử dụng GDDR4.",
+      "start": 277.92,
+      "duration": 2.81
+    },
+    {
+      "text": "The Radeon HD 2900 XT was one of the most notable examples, and even that card had mixed reviews.",
+      "viText": "Radeon HD 2900 XT là một trong những ví dụ đáng chú ý nhất và thậm chí chiếc thẻ đó còn có nhiều đánh giá trái chiều.",
+      "start": 280.73,
+      "duration": 7
+    },
+    {
+      "text": "Nvidia basically ignored GDDR4 completely and jumped from GDDR3 straight to GDDR5.",
+      "viText": "Về cơ bản, Nvidia đã bỏ qua hoàn toàn GDDR4 và nhảy thẳng từ GDDR3 lên GDDR5.",
+      "start": 287.73,
+      "duration": 5.91
+    },
+    {
+      "text": "GDDR4 is a lot like GDDR2.",
+      "viText": "GDDR4 rất giống GDDR2.",
+      "start": 293.64,
+      "duration": 2
+    },
+    {
+      "text": "It existed as a transitional technology that the market did not really need.",
+      "viText": "Nó tồn tại như một công nghệ chuyển tiếp mà thị trường không thực sự cần.",
+      "start": 295.64,
+      "duration": 5.48
+    },
+    {
+      "text": "The jump from GDDR3 to GDDR5 was coming fast and GDDR4 got caught in the middle.",
+      "viText": "Bước nhảy từ GDDR3 sang GDDR5 đang diễn ra nhanh chóng và GDDR4 bị kẹt ở giữa.",
+      "start": 301.12,
+      "duration": 5.77
+    },
+    {
+      "text": "If you have never heard of GDDR4, that is completely normal.",
+      "viText": "Nếu bạn chưa từng nghe đến GDDR4 thì điều đó hoàn toàn bình thường.",
+      "start": 306.89,
+      "duration": 4.33
+    },
+    {
+      "text": "Most people in the industry would rather forget it too.",
+      "viText": "Hầu hết mọi người trong ngành cũng muốn quên nó đi.",
+      "start": 311.22,
+      "duration": 3.97
+    },
+    {
+      "text": "GDDR5.",
+      "viText": "GDDR5.",
+      "start": 315.19,
+      "duration": 2
+    },
+    {
+      "text": "If there is one GDDR generation that defined modern gaming, it is GDD 5.",
+      "viText": "Nếu có một thế hệ GDDR định nghĩa trò chơi hiện đại thì đó là GDD 5.",
+      "start": 317.19,
+      "duration": 5.19
+    },
+    {
+      "text": "Introduced around 2008, GDDR5 doubled the data rate compared to GDDR3 by transferring data four times per clock cycle instead of two.",
+      "viText": "Được giới thiệu vào khoảng năm 2008, GDDR5 đã tăng gấp đôi tốc độ dữ liệu so với GDDR3 bằng cách truyền dữ liệu bốn lần trong mỗi chu kỳ đồng hồ thay vì hai.",
+      "start": 322.38,
+      "duration": 9.59
+    },
+    {
+      "text": "That was a massive jump in bandwidth.",
+      "viText": "Đó là một bước nhảy vọt về băng thông.",
+      "start": 331.97,
+      "duration": 2.67
+    },
+    {
+      "text": "GDDR5 powered nearly a full decade of GPUs.",
+      "viText": "GDDR5 đã hỗ trợ GPU gần một thập kỷ.",
+      "start": 334.64,
+      "duration": 3.1
+    },
+    {
+      "text": "The Radeon HD 4870 was one of the first to use it.",
+      "viText": "Radeon HD 4870 là một trong những thiết bị đầu tiên sử dụng nó.",
+      "start": 337.74,
+      "duration": 3.61
+    },
+    {
+      "text": "Then came the GeForce GTX 600 series, the GTX 700 series, the GTX 900 series, the GTX 1060, the Radeon R9 series, and the RX 400 and 500 series.",
+      "viText": "Sau đó là dòng GeForce GTX 600, dòng GTX 700, dòng GTX 900, GTX 1060, dòng Radeon R9 và dòng RX 400 và 500.",
+      "start": 341.35,
+      "duration": 10.38
+    },
+    {
+      "text": "Basically, every major GPU from 2008 to around 2018 used GDDR5.",
+      "viText": "Về cơ bản, mọi GPU chính từ năm 2008 đến khoảng năm 2018 đều sử dụng GDDR5.",
+      "start": 351.73,
+      "duration": 4.54
+    },
+    {
+      "text": "Even the PlayStation 4 used it as system memory.",
+      "viText": "Ngay cả PlayStation 4 cũng sử dụng nó làm bộ nhớ hệ thống.",
+      "start": 356.27,
+      "duration": 3.46
+    },
+    {
+      "text": "At its peak, GDDR5 could reach effective speeds of around 8 to 9 GBs per second per pin.",
+      "viText": "Ở mức cao nhất, GDDR5 có thể đạt tốc độ hiệu quả khoảng 8 đến 9 GB mỗi giây trên mỗi pin.",
+      "start": 359.73,
+      "duration": 6.35
+    },
+    {
+      "text": "that was enough to handle 1080p and even for 4p gaming for years.",
+      "viText": "điều đó là đủ để xử lý 1080p và thậm chí để chơi game 4p trong nhiều năm.",
+      "start": 366.08,
+      "duration": 4.69
+    },
+    {
+      "text": "The memory was also reasonably priced and widely manufactured, which made it perfect for budget and mid-range GPUs.",
+      "viText": "Bộ nhớ cũng có giá hợp lý và được sản xuất rộng rãi, khiến nó trở nên hoàn hảo cho các GPU tầm trung và giá rẻ.",
+      "start": 370.77,
+      "duration": 8.29
+    },
+    {
+      "text": "The only real downside of GDDR5 was that it eventually hit a wall.",
+      "viText": "Nhược điểm thực sự duy nhất của GDDR5 là cuối cùng nó đã gặp phải trở ngại.",
+      "start": 379.06,
+      "duration": 4.76
+    },
+    {
+      "text": "As games moved to higher resolutions and textures got larger, even 8 GBs per sec was not enough for high-end cards.",
+      "viText": "Khi trò chơi chuyển sang độ phân giải cao hơn và kết cấu ngày càng lớn hơn, thậm chí 8 GB mỗi giây cũng không đủ đối với thẻ cao cấp.",
+      "start": 383.82,
+      "duration": 8.29
+    },
+    {
+      "text": "But for the vast majority of gamers during that era, GDDR5's more wasn't insufficient.",
+      "viText": "Nhưng đối với đại đa số game thủ trong thời kỳ đó, GDDR5 nhiều hơn vẫn chưa đủ.",
+      "start": 392.11,
+      "duration": 6.2
+    },
+    {
+      "text": "It was reliable, affordable, and it just worked.",
+      "viText": "Nó đáng tin cậy, giá cả phải chăng và nó hoạt động hiệu quả.",
+      "start": 398.31,
+      "duration": 3.46
+    },
+    {
+      "text": "When people talk about the golden age of PC gaming going mainstream, GDDR5 was quietly making that possible in the background.",
+      "viText": "Khi mọi người nói về thời kỳ hoàng kim của việc chơi game trên PC đang trở nên phổ biến, GDDR5 đã âm thầm biến điều đó thành hiện thực.",
+      "start": 401.77,
+      "duration": 9.09
+    },
+    {
+      "text": "It is the longest serving GDDR generation in history, and it earned that title.",
+      "viText": "Đây là thế hệ GDDR phục vụ lâu nhất trong lịch sử và đã giành được danh hiệu đó.",
+      "start": 410.86,
+      "duration": 5.7
+    },
+    {
+      "text": "GDDR5X.",
+      "viText": "GDDR5X.",
+      "start": 416.56,
+      "duration": 2
+    },
+    {
+      "text": "GDDR5X was a special upgrade to GDDR5 designed by Micron to squeeze more bandwidth out of the existing GDDR5 architecture.",
+      "viText": "GDDR5X là bản nâng cấp đặc biệt cho GDDR5 do Micron thiết kế để tăng thêm băng thông từ kiến ​​trúc GDDR5 hiện có.",
+      "start": 418.56,
+      "duration": 8.8
+    },
+    {
+      "text": "It launched around 2016 and was used almost exclusively by Nvidia.",
+      "viText": "Nó ra mắt vào khoảng năm 2016 và hầu như chỉ được Nvidia sử dụng.",
+      "start": 427.36,
+      "duration": 4.76
+    },
+    {
+      "text": "The main improvement was speed.",
+      "viText": "Cải tiến chính là tốc độ.",
+      "start": 432.12,
+      "duration": 2.24
+    },
+    {
+      "text": "GDDR5X could hit effective speeds of 10 to 14 GB per second per pin compared to the 8 to 9 GBs per sec of regular GDDR5 of.",
+      "viText": "GDDR5X có thể đạt tốc độ hiệu quả từ 10 đến 14 GB mỗi giây trên mỗi pin so với 8 đến 9 GB mỗi giây của GDDR5 thông thường.",
+      "start": 434.36,
+      "duration": 8.87
+    },
+    {
+      "text": "It achieved this by using a wider prefetch buffer, which means it could grab more data in each cycle.",
+      "viText": "Nó đạt được điều này bằng cách sử dụng bộ đệm tìm nạp trước rộng hơn, có nghĩa là nó có thể lấy được nhiều dữ liệu hơn trong mỗi chu kỳ.",
+      "start": 443.23,
+      "duration": 7.28
+    },
+    {
+      "text": "The result was noticeably more bandwidth without a complete redesign of the memory controller.",
+      "viText": "Kết quả là băng thông được tăng lên đáng kể mà không cần thiết kế lại hoàn toàn bộ điều khiển bộ nhớ.",
+      "start": 450.51,
+      "duration": 6.78
+    },
+    {
+      "text": "You could find GDDR5X in the GTX 1080, the GTX 1080 Ti, and the Titan X Pascal.",
+      "viText": "Bạn có thể tìm thấy GDDR5X trong GTX 1080, GTX 1080 Ti và Titan X Pascal.",
+      "start": 457.29,
+      "duration": 5.7
+    },
+    {
+      "text": "These were the top tier cards of their generation, and they needed more bandwidth than standard GDDR5 could offer.",
+      "viText": "Đây là những thẻ hàng đầu trong thế hệ của chúng và chúng cần nhiều băng thông hơn GDDR5 tiêu chuẩn có thể cung cấp.",
+      "start": 462.99,
+      "duration": 8.22
+    },
+    {
+      "text": "GDDR5X gave them that edge.",
+      "viText": "GDDR5X đã mang lại cho họ lợi thế đó.",
+      "start": 471.21,
+      "duration": 2
+    },
+    {
+      "text": "But GDDDR5X was always a bridge technology.",
+      "viText": "Nhưng GDDDR5X luôn là công nghệ cầu nối.",
+      "start": 473.21,
+      "duration": 3.1
+    },
+    {
+      "text": "It was Micron's way of keeping GDDR5 relevant.",
+      "viText": "Đó là cách Micron giữ GDDR5 phù hợp.",
+      "start": 476.31,
+      "duration": 3.32
+    },
+    {
+      "text": "While the industry prepared for GDDR6, AMD never adopted it, and once GDDR6 arrived, GDDR5X disappeared almost overnight.",
+      "viText": "Trong khi ngành chuẩn bị cho GDDR6, AMD chưa bao giờ áp dụng nó và khi GDDR6 xuất hiện, GDDR5X gần như biến mất chỉ sau một đêm.",
+      "start": 479.63,
+      "duration": 8.73
+    },
+    {
+      "text": "It served its purpose well for those few high-end Nvidia cards, but it was never meant to become a standard on its own.",
+      "viText": "Nó phục vụ tốt mục đích của nó đối với một số thẻ Nvidia cao cấp đó, nhưng nó chưa bao giờ có ý định trở thành một tiêu chuẩn.",
+      "start": 488.36,
+      "duration": 8.58
+    },
+    {
+      "text": "GDDR6 GDDR6 is the current mainstream standard for GPU memory.",
+      "viText": "GDDR6 GDDR6 là tiêu chuẩn phổ biến hiện nay cho bộ nhớ GPU.",
+      "start": 496.94,
+      "duration": 4.47
+    },
+    {
+      "text": "It was introduced around 2018 and brought a significant jump over GDDR5.",
+      "viText": "Nó được giới thiệu vào khoảng năm 2018 và mang lại bước nhảy vọt đáng kể so với GDDR5.",
+      "start": 501.41,
+      "duration": 5.19
+    },
+    {
+      "text": "The key improvement is that GDDR6 uses two independent 16-bit channels instead of one 32-bit channel.",
+      "viText": "Cải tiến quan trọng là GDDR6 sử dụng hai kênh 16 bit độc lập thay vì một kênh 32 bit.",
+      "start": 506.6,
+      "duration": 7.28
+    },
+    {
+      "text": "This allows it to handle data more efficiently and reach higher speeds.",
+      "viText": "Điều này cho phép nó xử lý dữ liệu hiệu quả hơn và đạt tốc độ cao hơn.",
+      "start": 513.88,
+      "duration": 5.12
+    },
+    {
+      "text": "Typical GDDR6 speeds range from 12 to 18 gig per second per pin.",
+      "viText": "Tốc độ GDDR6 điển hình dao động từ 12 đến 18 gig mỗi giây trên mỗi pin.",
+      "start": 519,
+      "duration": 4.62
+    },
+    {
+      "text": "That is a big step up from GDDR5's 8 gig per second.",
+      "viText": "Đó là một bước tiến lớn so với 8 gig mỗi giây của GDDR5.",
+      "start": 523.62,
+      "duration": 3.75
+    },
+    {
+      "text": "You can find GDDR6 in a huge range of GPUs from budget cards like the RTX 3050 and RX6600 all the way up to mid-range favorites like the RTX 4060Ti and RX700 XT.",
+      "viText": "Bạn có thể tìm thấy GDDR6 trong rất nhiều GPU từ thẻ giá rẻ như RTX 3050 và RX6600 cho đến các loại GPU tầm trung được yêu thích như RTX 4060Ti và RX700 XT.",
+      "start": 527.37,
+      "duration": 11.61
+    },
+    {
+      "text": "GDDR6 also improved power efficiency compared to GDDR5.",
+      "viText": "GDDR6 cũng cải thiện hiệu suất sử dụng năng lượng so với GDDR5.",
+      "start": 538.98,
+      "duration": 3.97
+    },
+    {
+      "text": "It runs at 1.35 down from 1.5.",
+      "viText": "Nó chạy ở mức 1,35 giảm từ 1,5.",
+      "start": 542.95,
+      "duration": 2.16
+    },
+    {
+      "text": "That means less heat and more room for the GPU itself to use power.",
+      "viText": "Điều đó có nghĩa là ít nhiệt hơn và có nhiều chỗ hơn cho GPU sử dụng năng lượng.",
+      "start": 545.11,
+      "duration": 4.83
+    },
+    {
+      "text": "For laptop GPUs, this matters even more.",
+      "viText": "Đối với GPU máy tính xách tay, điều này càng quan trọng hơn.",
+      "start": 549.94,
+      "duration": 2.88
+    },
+    {
+      "text": "The reason GDDR6 became so dominant is the same reason GDDR5 was dominant before it.",
+      "viText": "Lý do khiến GDDR6 trở nên thống trị cũng chính là lý do khiến GDDR5 chiếm ưu thế trước nó.",
+      "start": 552.82,
+      "duration": 6.06
+    },
+    {
+      "text": "It offers the right balance of speed, cost, and efficiency.",
+      "viText": "Nó cung cấp sự cân bằng giữa tốc độ, chi phí và hiệu quả.",
+      "start": 558.88,
+      "duration": 4.25
+    },
+    {
+      "text": "It is fast enough for 1080p and 1440p gaming, affordable enough for mid-range cards, and efficient enough for laptops and compact builds.",
+      "viText": "Nó đủ nhanh để chơi game 1080p và 1440p, đủ giá cả phải chăng cho các thẻ tầm trung và đủ hiệu quả cho máy tính xách tay và thiết kế nhỏ gọn.",
+      "start": 563.13,
+      "duration": 9.88
+    },
+    {
+      "text": "GDDR6 is the workhorse of this generation, and it is likely to remain in budget and mid-range cards for years to come, even as newer versions roll out.",
+      "viText": "GDDR6 là đặc trưng của thế hệ này và có khả năng nó sẽ vẫn nằm trong các thẻ giá rẻ và tầm trung trong nhiều năm tới, ngay cả khi các phiên bản mới hơn ra mắt.",
+      "start": 573.01,
+      "duration": 10.89
+    },
+    {
+      "text": "GDDR6X GDDR6X is the higherformance variant of GDDR6 developed by Micron in partnership with Nvidia.",
+      "viText": "GDDR6X GDDR6X là biến thể hiệu suất cao hơn của GDDR6 do Micron hợp tác với Nvidia phát triển.",
+      "start": 583.9,
+      "duration": 7.21
+    },
+    {
+      "text": "It was introduced in 2020 with the RTX3080 and has been used in every high-end Nvidia GPU since then, including the RTX3090, RTX 4S80, and RTX 4S90.",
+      "viText": "Nó được giới thiệu vào năm 2020 cùng với RTX3080 và đã được sử dụng trong mọi GPU Nvidia cao cấp kể từ đó, bao gồm RTX3090, RTX 4S80 và RTX 4S90.",
+      "start": 591.11,
+      "duration": 10.67
+    },
+    {
+      "text": "The big technical change is PAM 4 signaling.",
+      "viText": "Sự thay đổi lớn về mặt kỹ thuật là tín hiệu PAM 4.",
+      "start": 601.78,
+      "duration": 3.17
+    },
+    {
+      "text": "Regular GDDR6 uses NRZ signaling, which means each signal carries one bit of data, either a zero or a one.",
+      "viText": "GDDR6 thông thường sử dụng tín hiệu NRZ, nghĩa là mỗi tín hiệu mang một bit dữ liệu, số 0 hoặc số 1.",
+      "start": 604.95,
+      "duration": 7.64
+    },
+    {
+      "text": "PAM 4 uses four signal levels, so each signal carries two bits of data at once.",
+      "viText": "PAM 4 sử dụng bốn mức tín hiệu, do đó mỗi tín hiệu mang hai bit dữ liệu cùng một lúc.",
+      "start": 612.59,
+      "duration": 5.7
+    },
+    {
+      "text": "That effectively doubles the data rate without doubling the clock speed.",
+      "viText": "Điều đó giúp tăng gấp đôi tốc độ dữ liệu một cách hiệu quả mà không cần tăng gấp đôi tốc độ xung nhịp.",
+      "start": 618.29,
+      "duration": 5.19
+    },
+    {
+      "text": "The result is impressive.",
+      "viText": "Kết quả thật ấn tượng.",
+      "start": 623.48,
+      "duration": 2
+    },
+    {
+      "text": "GDDR 6X can reach speeds of 21 to 23 Gbits per second per pin.",
+      "viText": "GDDR 6X có thể đạt tốc độ từ 21 đến 23 Gbit/giây trên mỗi pin.",
+      "start": 625.48,
+      "duration": 4.47
+    },
+    {
+      "text": "The RTX 4090, for example, uses 24 gigabers GDDR 6X, giving it over one TBR per second of memory bandwidth.",
+      "viText": "Ví dụ: RTX 4090 sử dụng 24 gigabers GDDR 6X, mang lại băng thông bộ nhớ hơn một TBR mỗi giây.",
+      "start": 629.95,
+      "duration": 7.72
+    },
+    {
+      "text": "That is a lot of data moving very fast.",
+      "viText": "Đó là rất nhiều dữ liệu di chuyển rất nhanh.",
+      "start": 637.67,
+      "duration": 2.81
+    },
+    {
+      "text": "But there is a trade-off.",
+      "viText": "Nhưng có một sự đánh đổi.",
+      "start": 640.48,
+      "duration": 2
+    },
+    {
+      "text": "GDDR 6X runs hotter than standard GDDR6.",
+      "viText": "GDDR 6X chạy nóng hơn GDDR6 tiêu chuẩn.",
+      "start": 642.48,
+      "duration": 2.88
+    },
+    {
+      "text": "Every time you open 90, the memory chips on an RTX 4D90 can easily reach 90 to 100° C under load.",
+      "viText": "Mỗi khi bạn mở 90, chip nhớ trên RTX 4D90 có thể dễ dàng đạt tới 90 đến 100° C khi tải.",
+      "start": 645.36,
+      "duration": 7
+    },
+    {
+      "text": "That is why many high-end cards now come with thermal pads specifically for the memory chips.",
+      "viText": "Đó là lý do tại sao nhiều loại thẻ cao cấp hiện nay có miếng tản nhiệt dành riêng cho chip nhớ.",
+      "start": 652.36,
+      "duration": 6.71
+    },
+    {
+      "text": "PAM 4 signaling is also more sensitive to noise, which makes manufacturing more complex and expensive.",
+      "viText": "Tín hiệu PAM 4 cũng nhạy hơn với nhiễu, khiến việc sản xuất trở nên phức tạp và tốn kém hơn.",
+      "start": 659.07,
+      "duration": 7.36
+    },
+    {
+      "text": "GDDR6X is clearly the best GPU memory available right now for raw performance, but it is limited to high-end Nvidia cards, and it costs significantly more to manufacture.",
+      "viText": "GDDR6X rõ ràng là bộ nhớ GPU tốt nhất hiện nay về hiệu năng thô, nhưng nó chỉ giới hạn ở các thẻ Nvidia cao cấp và chi phí sản xuất cao hơn đáng kể.",
+      "start": 666.43,
+      "duration": 12.26
+    },
+    {
+      "text": "AMD has never used it.",
+      "viText": "AMD chưa bao giờ sử dụng nó.",
+      "start": 678.69,
+      "duration": 2
+    },
+    {
+      "text": "For most people building a gaming PC today, regular GDDR6 is still the better value.",
+      "viText": "Đối với hầu hết mọi người xây dựng một PC chơi game ngày nay, GDDR6 thông thường vẫn có giá trị tốt hơn.",
+      "start": 680.69,
+      "duration": 6.06
+    },
+    {
+      "text": "You only need GDDR 6X if you are gaming at 4K or doing heavy AI and creative workloads where bandwidth is the bottleneck.",
+      "viText": "Bạn chỉ cần GDDR 6X nếu bạn đang chơi game ở độ phân giải 4K hoặc thực hiện các khối lượng công việc sáng tạo và AI nặng trong đó băng thông là điểm nghẽn.",
+      "start": 686.75,
+      "duration": 8.73
+    },
+    {
+      "text": "GDDR7 GDDR7 is the newest generation of graphics memory.",
+      "viText": "GDDR7 GDDR7 là thế hệ bộ nhớ đồ họa mới nhất.",
+      "start": 695.48,
+      "duration": 4.04
+    },
+    {
+      "text": "It was officially announced in 2024 by JDK, the organization that sets memory standards.",
+      "viText": "Nó được công bố chính thức vào năm 2024 bởi JDK, tổ chức đặt ra các tiêu chuẩn về bộ nhớ.",
+      "start": 699.52,
+      "duration": 6.35
+    },
+    {
+      "text": "The first GPUs with GDDR7 are expected to arrive in late 2025 and 2026.",
+      "viText": "Những GPU đầu tiên có GDDR7 dự kiến ​​sẽ xuất hiện vào cuối năm 2025 và 2026.",
+      "start": 705.87,
+      "duration": 5.12
+    },
+    {
+      "text": "The biggest change is that GDDR7 switches from PAM 4 to PAM 3 signaling.",
+      "viText": "Thay đổi lớn nhất là GDDR7 chuyển từ tín hiệu PAM 4 sang PAM 3.",
+      "start": 710.99,
+      "duration": 5.19
+    },
+    {
+      "text": "PAM 3 uses three signal levels instead of four.",
+      "viText": "PAM 3 sử dụng ba mức tín hiệu thay vì bốn.",
+      "start": 716.18,
+      "duration": 3.39
+    },
+    {
+      "text": "That might sound like a step backward, but PAM 3 is actually more power efficient and less sensitive to signal noise than PAM 4.",
+      "viText": "Điều đó nghe có vẻ như là một bước lùi, nhưng PAM 3 thực sự tiết kiệm điện hơn và ít nhạy cảm hơn với nhiễu tín hiệu so với PAM 4.",
+      "start": 719.57,
+      "duration": 9.23
+    },
+    {
+      "text": "It gives a better balance between speed and reliability.",
+      "viText": "Nó mang lại sự cân bằng tốt hơn giữa tốc độ và độ tin cậy.",
+      "start": 728.8,
+      "duration": 4.04
+    },
+    {
+      "text": "GDDR7 is expected to reach speeds of 32 to 36 Gbits per sik per pin in its first generation with a theoretical ceiling much higher than that.",
+      "viText": "GDDR7 dự kiến ​​​​sẽ đạt tốc độ từ 32 đến 36 Gbit/sik/pin ở thế hệ đầu tiên với mức trần lý thuyết cao hơn nhiều so với mức đó.",
+      "start": 732.84,
+      "duration": 10.17
+    },
+    {
+      "text": "It also uses dual channel operation per chip similar to what GDDR6 introduced but optimized further for higher throughput.",
+      "viText": "Nó cũng sử dụng hoạt động kênh đôi trên mỗi chip tương tự như những gì GDDR6 đã giới thiệu nhưng được tối ưu hóa hơn nữa để có thông lượng cao hơn.",
+      "start": 743.01,
+      "duration": 8.8
+    },
+    {
+      "text": "Another improvement is power efficiency.",
+      "viText": "Một cải tiến khác là hiệu quả năng lượng.",
+      "start": 751.81,
+      "duration": 2.88
+    },
+    {
+      "text": "GDDR7 is designed to deliver significantly more bandwidth per watt than GDDR6X.",
+      "viText": "GDDR7 được thiết kế để cung cấp băng thông trên mỗi watt nhiều hơn đáng kể so với GDDR6X.",
+      "start": 754.69,
+      "duration": 5.7
+    },
+    {
+      "text": "that matters for both desktop and laptop GPUs.",
+      "viText": "điều đó quan trọng đối với cả GPU máy tính để bàn và máy tính xách tay.",
+      "start": 760.39,
+      "duration": 3.32
+    },
+    {
+      "text": "As games and AI workloads demand more and more memory bandwidth, efficiency becomes just as important as raw speed.",
+      "viText": "Khi khối lượng công việc trò chơi và AI ngày càng đòi hỏi nhiều băng thông bộ nhớ hơn, hiệu quả cũng trở nên quan trọng như tốc độ thô.",
+      "start": 763.71,
+      "duration": 8.29
+    },
+    {
+      "text": "GDDR7 is expected to be adopted across all tiers eventually from high-end to mid-range.",
+      "viText": "GDDR7 dự kiến ​​sẽ được áp dụng trên tất cả các phân khúc từ cao cấp đến tầm trung.",
+      "start": 772,
+      "duration": 6.27
+    },
+    {
+      "text": "But like every new memory generation, it will start expensive and come to flagship GPUs first.",
+      "viText": "Nhưng giống như mọi thế hệ bộ nhớ mới, nó sẽ có giá khởi điểm đắt đỏ và ưu tiên dành cho các GPU hàng đầu.",
+      "start": 778.27,
+      "duration": 6.78
+    },
+    {
+      "text": "For most people, GDDR6 will remain the standard for at least another year or two.",
+      "viText": "Đối với hầu hết mọi người, GDDR6 sẽ vẫn là tiêu chuẩn trong ít nhất một hoặc hai năm nữa.",
+      "start": 785.05,
+      "duration": 5.84
+    },
+    {
+      "text": "But when GDDR7 does become affordable and widespread, the bandwidth jump will be massive.",
+      "viText": "Nhưng khi GDDR7 trở nên có giá cả phải chăng và phổ biến, bước nhảy vọt về băng thông sẽ rất lớn.",
+      "start": 790.89,
+      "duration": 6.42
+    },
+    {
+      "text": "We are talking about nearly four times the bandwidth of GDDR5, which was the standard not that long ago.",
+      "viText": "Chúng ta đang nói về băng thông gần gấp bốn lần GDDR5, đây là tiêu chuẩn cách đây không lâu.",
+      "start": 797.31,
+      "duration": 7.5
+    },
+    {
+      "text": "That kind of progress is what makes each new generation exciting, even if you do not upgrade right away.",
+      "viText": "Sự tiến bộ đó là điều khiến mỗi thế hệ mới trở nên thú vị, ngay cả khi bạn không nâng cấp ngay.",
+      "start": 804.81,
+      "duration": 7.5
+    },
+    {
+      "text": "Anyway, that is every GDDR generation ever made from the original GDDR all the way to the upcoming GDDR7.",
+      "viText": "Dù sao, đó là mọi thế hệ GDDR từng được tạo ra từ GDDR ban đầu cho đến GDDR7 sắp tới.",
+      "start": 812.31,
+      "duration": 7.57
+    },
+    {
+      "text": "Each generation pushed bandwidth higher, kept power in check, and helped GPUs get faster.",
+      "viText": "Mỗi thế hệ đều đẩy băng thông lên cao hơn, kiểm soát nguồn điện và giúp GPU hoạt động nhanh hơn.",
+      "start": 819.88,
+      "duration": 6.42
+    },
+    {
+      "text": "I also made some other cool videos, too.",
+      "viText": "Tôi cũng đã làm một số video thú vị khác.",
+      "start": 826.3,
+      "duration": 2.88
+    },
+    {
+      "text": "Don't forget to watch them later.",
+      "viText": "Đừng quên xem chúng sau.",
+      "start": 829.18,
+      "duration": 2.38
+    },
+    {
+      "text": "Okay.",
+      "viText": "Okay.",
+      "start": 831.56,
+      "duration": 2
+    }
+  ]
+}

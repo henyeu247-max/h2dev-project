@@ -1,0 +1,52 @@
+{
+  "id": "RAW-013",
+  "channelId": "UCW6sbhIAXUVY0p-AkYIJ95Q",
+  "title": "Backyard Story",
+  "handle": "@BackyardStoryUS",
+  "url": "https://www.youtube.com/channel/UCW6sbhIAXUVY0p-AkYIJ95Q",
+  "subscribers": 5030,
+  "views": 1307164,
+  "videoCount": 26,
+  "country": null,
+  "avatar": "https://yt3.ggpht.com/6ypOIzFEywj7EtDFVrp7EzjSoSKCrPSbpCKniUugxioePu7QZvydC2d28eW47y22uW1xNSzGdoo=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Lifestyle (sociology)",
+    "Knowledge"
+  ],
+  "editorialNiche": "Thiên nhiên quanh nhà / thú cưng",
+  "publishedAt": "2017-04-17T13:49:35Z",
+  "longevityAudit": {
+    "channelAgeDays": 3431,
+    "activeSpanDays": 47,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 70,
+      "viewsGained": 3720,
+      "videosPublished": 0
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:28:17Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 334961,
+    "maxOutlierScore": 40.95,
+    "maxVPH": 153.72,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-07-27",
+    "daysSinceLatest": 44,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 Ra video chậm",
+    "healthDetail": "Khoảng cách đăng video gần nhất là 44 ngày. Nhịp ra video không đều.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 3,720 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$5 – $9 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "videoId": "2m--dFkATDE",
+  "title": "Epic Rabbit vs Turtle Race in the Jungle | Fun 3D Cartoon Adventure with a Big Twist | Mama Toons",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 21,
+  "fullText": "[cheering and applause] Go, go, go. [cheering] [applause] What a start. [cheering] Yay! Break me. [screaming] [screaming] Go, go, go. Let's go, Tortoise. Yay! Wow! [laughter] Look at these muscles. Oh my goodness. [laughter] [music] What was that for? A key. Hello. Okay. Yeah. [applause] [panting] [panting] Wow. [cheering] [cheering] Yeah. Yeah. [screaming] [music] Heat. [music] Heat. [music]",
+  "fullTextVi": "[cổ vũ và vỗ tay] Đi, đi, đi. [cổ vũ] [vỗ tay] Thật là một sự khởi đầu. [cổ vũ] Đúng vậy! Phá vỡ tôi. [la hét] [la hét] Đi, đi, đi. Đi thôi Rùa. Yay! Wow! [cười] Hãy nhìn những cơ bắp này. Ôi chúa ơi. [cười] [âm nhạc] Cái đó để làm gì vậy? Một chiếc chìa khóa. Xin chào. Okay. Yeah. [vỗ tay] [thở hổn hển] [thở hổn hển] Wow. [cổ vũ] [cổ vũ] Vâng. Yeah. [la hét] [âm nhạc] Nhiệt. [âm nhạc] Nhiệt. [âm nhạc]",
+  "segments": [
+    {
+      "text": "[cheering and applause] Go, go, go.",
+      "viText": "[cổ vũ và vỗ tay] Đi, đi, đi.",
+      "start": 0,
+      "duration": 25.39
+    },
+    {
+      "text": "[cheering] [applause] What a start.",
+      "viText": "[cổ vũ] [vỗ tay] Thật là một sự khởi đầu.",
+      "start": 25.39,
+      "duration": 25.39
+    },
+    {
+      "text": "[cheering] Yay!",
+      "viText": "[cổ vũ] Đúng vậy!",
+      "start": 50.78,
+      "duration": 10.88
+    },
+    {
+      "text": "Break me.",
+      "viText": "Phá vỡ tôi.",
+      "start": 61.66,
+      "duration": 6.53
+    },
+    {
+      "text": "[screaming] [screaming] Go, go, go.",
+      "viText": "[la hét] [la hét] Đi, đi, đi.",
+      "start": 68.19,
+      "duration": 25.39
+    },
+    {
+      "text": "Let's go, Tortoise.",
+      "viText": "Đi thôi Rùa.",
+      "start": 93.58,
+      "duration": 13.78
+    },
+    {
+      "text": "Yay!",
+      "viText": "Yay!",
+      "start": 107.36,
+      "duration": 2.9
+    },
+    {
+      "text": "Wow!",
+      "viText": "Wow!",
+      "start": 110.26,
+      "duration": 2.9
+    },
+    {
+      "text": "[laughter] Look at these muscles.",
+      "viText": "[cười] Hãy nhìn những cơ bắp này.",
+      "start": 113.16,
+      "duration": 23.94
+    },
+    {
+      "text": "Oh my goodness.",
+      "viText": "Ôi chúa ơi.",
+      "start": 137.1,
+      "duration": 10.88
+    },
+    {
+      "text": "[laughter] [music] What was that for?",
+      "viText": "[cười] [âm nhạc] Cái đó để làm gì vậy?",
+      "start": 147.98,
+      "duration": 26.84
+    },
+    {
+      "text": "A key.",
+      "viText": "Một chiếc chìa khóa.",
+      "start": 174.82,
+      "duration": 4.35
+    },
+    {
+      "text": "Hello.",
+      "viText": "Xin chào.",
+      "start": 179.17,
+      "duration": 4.35
+    },
+    {
+      "text": "Okay.",
+      "viText": "Okay.",
+      "start": 183.52,
+      "duration": 3.63
+    },
+    {
+      "text": "Yeah.",
+      "viText": "Yeah.",
+      "start": 187.15,
+      "duration": 3.63
+    },
+    {
+      "text": "[applause] [panting] [panting] Wow.",
+      "viText": "[vỗ tay] [thở hổn hển] [thở hổn hển] Wow.",
+      "start": 190.78,
+      "duration": 25.39
+    },
+    {
+      "text": "[cheering] [cheering] Yeah.",
+      "viText": "[cổ vũ] [cổ vũ] Vâng.",
+      "start": 216.17,
+      "duration": 19.58
+    },
+    {
+      "text": "Yeah.",
+      "viText": "Yeah.",
+      "start": 235.75,
+      "duration": 3.63
+    },
+    {
+      "text": "[screaming] [music] Heat.",
+      "viText": "[la hét] [âm nhạc] Nhiệt.",
+      "start": 239.38,
+      "duration": 18.13
+    },
+    {
+      "text": "[music] Heat.",
+      "viText": "[âm nhạc] Nhiệt.",
+      "start": 257.51,
+      "duration": 9.43
+    },
+    {
+      "text": "[music]",
+      "viText": "[âm nhạc]",
+      "start": 266.94,
+      "duration": 5.08
+    }
+  ]
+}

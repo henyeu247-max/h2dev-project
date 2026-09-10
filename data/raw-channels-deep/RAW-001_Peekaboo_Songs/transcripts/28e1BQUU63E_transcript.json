@@ -1,0 +1,66 @@
+{
+  "videoId": "28e1BQUU63E",
+  "title": "Old MacDonald Farm, Animals are Happy + Five Monkeys + Sing Along Fun",
+  "titleVi": "Nông Trại Bác MacDonald Hạnh Phúc + Năm Chú Khỉ Nhảy Nhót + Ca Khúc Vui Nhộn",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 9,
+  "fullText": "Welcome back to Old MacDonald's farm where all animals are happy and singing! The sun is shining high in the sky and the flowers are blooming bright! Five little monkeys are helping harvest the red sweet apples! One monkey picks an apple, two monkeys wash the fruit! Three monkeys bake a pie, four monkeys set the table! Five monkeys invite all the farm animals to share the delicious feast! Cow loves the grass, pig enjoys the corn, sheep dances with joy! Old MacDonald smiles and plays his guitar for everyone! Let's sing and clap our hands together in harmony!",
+  "fullTextVi": "Chào mừng bạn trở lại trang trại của Old MacDonald, nơi tất cả các loài động vật đều vui vẻ và ca hát! Mặt trời đang chiếu sáng trên bầu trời và những bông hoa đang nở rộ! Năm chú khỉ nhỏ đang giúp thu hoạch những quả táo đỏ ngọt ngào! Một con khỉ hái một quả táo, hai con khỉ rửa trái cây! Ba con khỉ nướng một chiếc bánh, bốn con khỉ dọn bàn ăn! Năm chú khỉ mời tất cả các loài động vật trong trang trại đến chia sẻ bữa tiệc ngon miệng! Bò yêu cỏ, lợn thích ngô, cừu nhảy múa vui vẻ! Ông già MacDonald mỉm cười và chơi ghi-ta cho mọi người nghe! Hãy cùng nhau hát và vỗ tay đồng điệu nhé!",
+  "segments": [
+    {
+      "text": "Welcome back to Old MacDonald's farm where all animals are happy and singing!",
+      "viText": "Chào mừng bạn trở lại trang trại của Old MacDonald, nơi tất cả các loài động vật đều vui vẻ và ca hát!",
+      "start": 0,
+      "duration": 75.06
+    },
+    {
+      "text": "The sun is shining high in the sky and the flowers are blooming bright!",
+      "viText": "Mặt trời đang chiếu sáng trên bầu trời và những bông hoa đang nở rộ!",
+      "start": 75.06,
+      "duration": 69.21
+    },
+    {
+      "text": "Five little monkeys are helping harvest the red sweet apples!",
+      "viText": "Năm chú khỉ nhỏ đang giúp thu hoạch những quả táo đỏ ngọt ngào!",
+      "start": 144.27,
+      "duration": 59.46
+    },
+    {
+      "text": "One monkey picks an apple, two monkeys wash the fruit!",
+      "viText": "Một con khỉ hái một quả táo, hai con khỉ rửa trái cây!",
+      "start": 203.73,
+      "duration": 52.64
+    },
+    {
+      "text": "Three monkeys bake a pie, four monkeys set the table!",
+      "viText": "Ba con khỉ nướng một chiếc bánh, bốn con khỉ dọn bàn ăn!",
+      "start": 256.37,
+      "duration": 51.66
+    },
+    {
+      "text": "Five monkeys invite all the farm animals to share the delicious feast!",
+      "viText": "Năm chú khỉ mời tất cả các loài động vật trong trang trại đến chia sẻ bữa tiệc ngon miệng!",
+      "start": 308.03,
+      "duration": 68.23
+    },
+    {
+      "text": "Cow loves the grass, pig enjoys the corn, sheep dances with joy!",
+      "viText": "Bò yêu cỏ, lợn thích ngô, cừu nhảy múa vui vẻ!",
+      "start": 376.26,
+      "duration": 62.39
+    },
+    {
+      "text": "Old MacDonald smiles and plays his guitar for everyone!",
+      "viText": "Ông già MacDonald mỉm cười và chơi ghi-ta cho mọi người nghe!",
+      "start": 438.65,
+      "duration": 53.61
+    },
+    {
+      "text": "Let's sing and clap our hands together in harmony!",
+      "viText": "Hãy cùng nhau hát và vỗ tay đồng điệu nhé!",
+      "start": 492.26,
+      "duration": 48.74
+    }
+  ]
+}

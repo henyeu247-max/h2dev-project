@@ -1,0 +1,25 @@
+{
+  "name": "smoke-google-dev",
+  "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+  "channel_name": "Google for Developers",
+  "created_at": "2026-08-05T09:52:42.309494+00:00",
+  "offset": 0,
+  "limit": 3,
+  "count": 3,
+  "notebooklm_hint": {
+    "title": "YTB | Google for Developers | smoke-google-dev",
+    "add": "Paste urls.txt into NotebookLM sources (or upload transcripts_merged.md if too many links)",
+    "pro_source_cap": 300,
+    "recommended_batch": "80-150 for quality"
+  },
+  "urls": [
+    "https://www.youtube.com/watch?v=-rYFDefcq3k",
+    "https://www.youtube.com/watch?v=z6l5nyE_6-I",
+    "https://www.youtube.com/watch?v=BXzFk5kK5_Q"
+  ],
+  "video_ids": [
+    "-rYFDefcq3k",
+    "z6l5nyE_6-I",
+    "BXzFk5kK5_Q"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "videoId": "CS-cpJDZtU8",
+  "title": "Phone Texting & Driving Accidents #02 [BeamNG.Drive]",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 16,
+  "fullText": "Bob: On my way, Boss! Boss:Run  Boss: You're late again!!! Boss: 2 more mins and you're fired Girlfriend:Hey Girlfriend:You're a cool dummy, but... Our relationship is over! Joe: What?? Oh no, not again! This crane always lifts by itself! Look at that old car! HAHAHA I gotta film this junk, it’s falling apart! That’s karma, buddy! hahahaha! Film that skid! HAHAHA Bye, HAHAHAHA Wow, This car is crazy fast, bro! I gotta record this! Bro: Watch the road! There's construction ahead!",
+  "fullTextVi": "Bob: Tôi đang trên đường tới đây, Sếp! Sếp: Chạy đi Sếp: Cậu lại đến muộn rồi! Sếp: Còn 2 phút nữa là cậu bị sa thải Bạn gái: Này Bạn gái: Cậu là một gã ngu ngốc, nhưng. Mối quan hệ của chúng ta đã kết thúc! Joe: Cái gì? Ồ không, không phải nữa! Cần cẩu này luôn tự nâng lên! Hãy nhìn chiếc xe cũ đó! HAHAHA Tôi phải quay cái thứ rác rưởi này, nó sắp hỏng rồi! Đó là nghiệp chướng đấy bạn ạ! hahahaha! Phim mà trượt! HAHAHA Bye, HAHAHAHA Wow, Xe này nhanh điên đảo anh em ạ! Tôi phải ghi lại điều này! Anh: Cẩn thận đường đi! Có công trình phía trước!",
+  "segments": [
+    {
+      "text": "Bob: On my way, Boss!",
+      "viText": "Bob: Tôi đang trên đường tới đây, Sếp!",
+      "start": 0,
+      "duration": 29.12
+    },
+    {
+      "text": "Boss:Run  Boss: You're late again!",
+      "viText": "Sếp: Chạy đi Sếp: Cậu lại đến muộn rồi!",
+      "start": 29.12,
+      "duration": 47.14
+    },
+    {
+      "text": "Boss: 2 more mins and you're fired Girlfriend:Hey Girlfriend:You're a cool dummy, but.",
+      "viText": "Sếp: Còn 2 phút nữa là cậu bị sa thải Bạn gái: Này Bạn gái: Cậu là một gã ngu ngốc, nhưng.",
+      "start": 76.26,
+      "duration": 119.25
+    },
+    {
+      "text": "Our relationship is over!",
+      "viText": "Mối quan hệ của chúng ta đã kết thúc!",
+      "start": 195.51,
+      "duration": 34.67
+    },
+    {
+      "text": "Joe: What?",
+      "viText": "Joe: Cái gì?",
+      "start": 230.18,
+      "duration": 13.87
+    },
+    {
+      "text": "Oh no, not again!",
+      "viText": "Ồ không, không phải nữa!",
+      "start": 244.05,
+      "duration": 23.57
+    },
+    {
+      "text": "This crane always lifts by itself!",
+      "viText": "Cần cẩu này luôn tự nâng lên!",
+      "start": 267.62,
+      "duration": 47.14
+    },
+    {
+      "text": "Look at that old car!",
+      "viText": "Hãy nhìn chiếc xe cũ đó!",
+      "start": 314.76,
+      "duration": 29.12
+    },
+    {
+      "text": "HAHAHA I gotta film this junk, it’s falling apart!",
+      "viText": "HAHAHA Tôi phải quay cái thứ rác rưởi này, nó sắp hỏng rồi!",
+      "start": 343.88,
+      "duration": 69.33
+    },
+    {
+      "text": "That’s karma, buddy!",
+      "viText": "Đó là nghiệp chướng đấy bạn ạ!",
+      "start": 413.21,
+      "duration": 27.73
+    },
+    {
+      "text": "hahahaha!",
+      "viText": "hahahaha!",
+      "start": 440.94,
+      "duration": 12.48
+    },
+    {
+      "text": "Film that skid!",
+      "viText": "Phim mà trượt!",
+      "start": 453.42,
+      "duration": 20.8
+    },
+    {
+      "text": "HAHAHA Bye, HAHAHAHA Wow, This car is crazy fast, bro!",
+      "viText": "HAHAHA Bye, HAHAHAHA Wow, Xe này nhanh điên đảo anh em ạ!",
+      "start": 474.22,
+      "duration": 74.88
+    },
+    {
+      "text": "I gotta record this!",
+      "viText": "Tôi phải ghi lại điều này!",
+      "start": 549.1,
+      "duration": 27.73
+    },
+    {
+      "text": "Bro: Watch the road!",
+      "viText": "Anh: Cẩn thận đường đi!",
+      "start": 576.83,
+      "duration": 27.73
+    },
+    {
+      "text": "There's construction ahead!",
+      "viText": "Có công trình phía trước!",
+      "start": 604.56,
+      "duration": 37.44
+    }
+  ]
+}

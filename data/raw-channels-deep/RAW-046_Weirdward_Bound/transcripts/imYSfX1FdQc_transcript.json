@@ -1,0 +1,2477 @@
+{
+  "videoId": "imYSfX1FdQc",
+  "title": "Before Circuit Breakers, Early Electricity Turned Homes Into Fire Traps",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 411,
+  "fullText": "In 1882, Thomas Edison flipped a switch at his Pearl Street station in lower Manhattan, and electricity flowed into homes for the first time in American history. 59 customers on that first grid got something nobody had ever experienced before, electric light inside their own living rooms. Newspapers called it a miracle. Investors called it the future. That was September of 1882. By the following year, wires were already catching fire inside the walls of those same buildings, and Edison had no reliable way to stop it. The problem was simple, and it was terrifying. Electricity had arrived in the American home, but the technology to make it safe had not. There were no circuit breakers. There were no grounding wires. There were no voltage regulators, so lights would dim and brighten depending on how many other people on the grid were using power at the same time. There were barely any standards at all for how electrical wiring should be installed in a wooden building full of people. If one of the hot wires became damaged, if a connection came loose behind a wall, if some mishap caused the electrical current to escape its intended path, the result was fire or severe electrical shock or both. And for the next four decades, homes across the country would burn because of it. It was the late 1870s, and Edison was working out of his laboratory in Menllo Park, New Jersey, the place he called his invention factory. He had already demonstrated the practical incandescent light bulb. And now he was racing to build the infrastructure that would deliver electricity to paying customers. The challenge was enormous. Nobody had ever tried to wire an entire neighborhood before. There were no blueprints, no engineering manuals, no safety codes. Edison and his team were writing the rules as they went. And to his credit, Edison did think about safety. In his 1879 patent application, he actually described two different approaches to protecting electrical circuits. The first was a fuse, a thin strip of metal designed to melt and break the circuit if too much current flowed through it. The second was a mechanical device, something closer to what we would recognize today as a circuit breaker, a spring-loaded mechanism that would physically open the circuit when the current got too high. Edison sketched both ideas in his notebooks. He patented both concepts and then he made a choice that would cost lives for the next half century. He went with the fuse. The reasoning made sense at the time. Fuses were cheap. They were simple. They were easy to manufacture and install. The mechanical circuit breaker concept was expensive, unreliable, and difficult to scale across an entire power distribution network. Edison needed something that worked right now. because he was in a race not just against time but against other inventors, other companies, and the enormous skepticism of a public that still thought electricity was dangerous witchcraft. And honestly, fuses were better than nothing. Before fuses, there was literally no safety mechanism between the power source and the wiring in your walls. If a wire overheated, if a connection came loose, if a short circuit sent a surge of current through the system, the only thing stopping a fire was luck. Fuses at least gave the system a weak point, a place where the circuit would break before the wiring itself caught fire. The early wiring in American homes was a system called knob and tube. If you have never seen it, picture this. individual copper wires insulated with rubberized cloth strung through the open air between ceramic knobs nailed to the wooden joists in your walls and ceiling. When the wires needed to pass through a wooden beam, they were threaded through hollow porcelain tubes to keep the hot wire from touching the wood directly. There was no ground wire. There was no protective sheathing around the cables. The hot wire and the neutral wire ran separately, sometimes inches apart, sometimes feet apart, through the open cavities of your house. I mean, think about that for a second. The electrical system in your home was literally bare copper wire hanging in open air, separated from the wood framing of your house by a few ceramic insulators. If a mouse chewed through the insulation, if moisture got into the wall cavity, if the rubberized cloth degraded over time, which it absolutely did, you had a live electrical wire sitting against dry wooden framing, and the only thing protecting you was a tiny strip of metal in a fuse box that may or may [music] not have been the correct rating for that circuit. This was the state of residential electricity from the 1880s through the 1940s. 60 years of homes wired with a system that had no grounding, [music] no circuit breakers, degrading insulation, and a singleuse safety device that most homeowners found incredibly annoying to replace. And that annoyance factor is what made things truly dangerous because fuses blow. That is their entire job. When a circuit draws too much current, the fuse melts, the circuit breaks, and the lights go out. The homeowner then has to go to the fuse box, unscrew the blown fuse, and screw in a replacement. If they did not have a replacement on hand, and hardware stores were not open 24 hours a day in 1920, they had a choice. Sit in the dark or get creative. And this is where the penny enters the story. A copper penny. [music] And in those days, pennies were solid copper, not the copper plated zinc they use today. fit almost perfectly into the socket of a standard screw-in fuse. So, when a fuse blew and there was no replacement available, homeowners across America discovered that they could unscrew the blown fuse, drop a penny behind it, screw the dead fuse back in, and the lights would come right back on. Problem solved. Except the problem was not solved at all. The problem was now catastrophically worse. A fuse is designed to be the weakest link in the circuit. It melts at a specific current so the wiring behind it does not overheat. That is the entire point. The fuse sacrifices itself so your house does not catch fire. A copper penny does not sacrifice itself. A copper penny does not melt. A copper penny will conduct any amount of current you push through it happily and indefinitely until the wiring behind it overheats, the insulation melts, and the dry wooden framing inside your walls catches fire. By putting a penny behind the fuse, homeowners were removing the only safety device between the power grid and the wiring in their walls. It was the electrical equivalent of disabling the brakes on your car because you did not like stopping at red lights. And human nature being what it is, most people who put a penny behind a fuse left it there permanently. The fuse looked normal from the outside. The lights worked. Nobody thought about it again until the wiring behind the wall started glowing. And if that were the only problem, early electricity might have been [music] manageable. But something much larger was happening in the background. Something that would make the safety crisis exponentially worse. While homeowners were figuring out how to wire their living rooms, two of the most brilliant minds in the history of technology were fighting a war over which type of electricity would power the entire country. On one side was Thomas Edison, championing direct current, the system he had built his empire on. On the other side was George Westinghouse, backed by the genius of Nicola Tesla, pushing alternating current as the future of electrical power. The technical details matter here because they explain why the safety crisis got so much worse so quickly. Edison's direct current system worked fine over short distances, but it could not efficiently transmit electricity beyond about a mile from the power station. That meant you needed a power plant in every neighborhood. His Pearl Street station in Manhattan served just a few blocks. To electrify an entire city, you would need dozens of stations, each one burning coal and taking up valuable real estate. The economics were brutal. Westinghouse and Tesla's alternating current solved the distance problem entirely. AC could be stepped up to high voltages using transformers for long-d distanceance transmission, then stepped back down to safe levels for home use. One power plant could serve an entire city. The cost savings were enormous and the potential reach was virtually unlimited. Edison knew he was losing the technical argument. His direct current empire, the power stations, the wiring infrastructure, the patents, all of it was at risk. So, he did something that would define the public's relationship with electricity for a generation. He launched a fear campaign. Edison hired an engineer named Harold P. Brown and gave him access to his laboratory. Brown then staged public demonstrations where stray animals were electrocuted using Westinghouse's alternating current equipment. The goal was to convince the American public that AC was a killer current too dangerous to bring into their homes. Edison even tried to turn the name of his competitor into a verb. He wanted Westingous to become a common term meaning death by electrocution. If you are wondering how that is even legal, so is everyone else. The propaganda went further. With Edison's backing, the New York State Legislature approved the use of electrocution for capital punishment. The first electric chair was deliberately designed to run on Westinghouse's alternating current. On August 6th, 1890, a convicted murderer named William Kemler became the first person executed by electric chair. The execution was botched. It took two jolts and 8 minutes to kill him. Witnesses described it as far worse than hanging, and that was exactly the point. Edison wanted the public to associate Westinghouse's electrical system with death. Meanwhile, the actual deaths from electricity were happening not in execution chambers, but in the streets of American cities. In 1889, a New York City lineman named John Fees was electrocuted when he accidentally touched crossing wires while working on a utility pole. He died in front of a crowd of onlookers in broad daylight. The incident helped create the word electrocute, a combination of electric and execute, and it forced the city to start burying its power lines underground. This decision seemed small at the time. It was not. The war of currents was creating a climate of genuine public terror around electricity. And that fear was not entirely misplaced. People were dying, homes were burning, and the safety technology was not keeping pace with the speed at which electricity was being rolled out across the country. The turning point in the war of currents came in 1893 at the Chicago World's Fair. Westinghouse won the contract to illuminate the fairgrounds by massively underbidding Edison. The result was spectacular. Hundreds of thousands of light bulbs powered by alternating current lit up the exposition grounds in a display that proved AC was both reliable and safe when properly installed. 3 years later in 1896, Westinghouse built the generators at Niagara Falls that sent alternating current 26 mi to the city of Buffalo, New York. The war was over. AC had won. But here was the problem. The type of current had been decided. The safety infrastructure [music] to protect people using that current had not. Alternating current was more efficient, but it was also more dangerous in some ways. AC could deliver higher voltages, which meant the consequences of a fault or a short circuit were more severe, and the protective technology in most homes was still the same single-use fuse Edison had chosen back in 1879. For a while, things actually seemed fine. Electricity was spreading across America at an incredible rate. By the early 1900s, major cities were largely electrified, and the technology was pushing into smaller towns and rural areas. People were adding more electrical devices to their homes. Things like electric irons, toasters, [music] and fans. Each new appliance drew more current through wiring that had been designed to handle nothing more than a few light bulbs, and maybe a single ceiling fan. And no, I am not making that up. The original knob and tube circuits in most homes were rated for about 15 amps. A single modern haird dryer pulls 12. An electric iron in 1910 pulled roughly the same. So, a homeowner running an iron in the kitchen while someone else had a few lights on in the bedroom could push a circuit right to its limit. Add a second appliance, a toaster, or a fan, and the fuse would blow. Reset it enough times and eventually somebody reached for a penny. The factories were dealing with the same problem at an industrial scale. Every blown fuse meant a production line stopped. Workers had to track down the fuse, replace it, and restart the equipment. In a large factory with dozens or hundreds of fused circuits, maintenance crews spent entire shifts doing nothing but swapping out blown fuses. The frustration drove the same dangerous behavior you saw in homes. Workers and factory managers started bypassing fuses with copper wire, thick nails, or whatever conductive material they could find. The protection disappeared. The wiring overheated, and massive structural fires resulted from these shortcuts. That did not last. The first real attempt to fix the safety problem came in 1898 when the Boston Electric Light Company installed what is generally considered the first commercial circuit breaker. It was a far cry from the neat little devices in your electrical panel today. It used an oil tank to absorb the heat generated when the circuit was broken. And it had to be manually operated, but it was a start. It could interrupt a circuit and then be reset instead of requiring a new fuse every time. It was progress, but it was slow progress. And it was industrial progress, not residential. The Boston Breaker protected a power station, not a family's living room. The oil tank alone made it impractical for home use. You were not going to install a device the size of a small barrel in somebody's kitchen. 2 years later, around 1900, an inventor named Granville Woods took the concept further. Woods was a self-taught African-Amean engineer who had already patented dozens of inventions, many of them for the railroad industry. He is the person who gave us the word trolley from his design for the grooved wheel that connected street cars to overhead power lines. Woods looked at the existing circuit breaker designs and saw the fundamental flaw. They were manual. Someone had to physically operate them. If a fault happened in the middle of the night or when nobody was near the breaker, it did nothing. So Woods invented the automatic circuit breaker, a device that could detect an overload and break the circuit on its own without any human intervention. It was a concept that should have changed everything. But it did not. Not yet. Woods had solved the conceptual problem. The automatic circuit breaker could detect a dangerous condition and respond without waiting for a human being to notice and act. But the engineering was not ready for mass production. The devices were bulky, expensive, and inconsistent in how they performed. They worked well enough for railroad applications and large industrial settings where the cost of a single breaker was justified by the value of the equipment it protected. But for a private home where the entire electrical system might have cost $50 to install, nobody was going to pay $20 for a single protective device. So, the gap persisted. The concept of the automatic circuit breaker existed. The engineering to make it practical for residential use did not. Homes continued to rely on fuse boxes. Homeowners continued to put pennies behind blown fuses and houses continued to catch fire. What made this period so frustrating looking back is that everyone involved knew the fuse system was inadequate. Electricians knew it. Fire departments knew it. Insurance companies knew it because they were paying out claims for electrical fires at an increasing rate. But the market had no affordable alternative, and the regulatory framework to force one did not exist yet. Electrical codes were local, inconsistent, and often uninforced. A homeowner in New York might have different safety requirements than a homeowner in Chicago, and a homeowner in rural Kansas might have no requirements at all. If you're finding this interesting, hit subscribe. We cover stories like this every week. By the early 1920s, the electrification of private homes in Europe and America was accelerating faster than the safety standards could keep up. More buildings were getting wired every month. More electrical appliances were hitting the market. And the fuse, that simple strip of metal Edison had chosen over the mechanical circuit breaker 40 years earlier, was proving woefully inadequate for the job. Enter Hugo St. was a German engineer who had founded an electrical engineering company in Mannheim, Germany back in 1891. He spent decades working on electrical safety. And by the early 1920s, he and his chief engineer, Hinrich Shakner, had developed something that nobody else had been able to build, a miniature circuit breaker, small enough and cheap enough to install in a private home. Their design combined two different trip mechanisms in a single device. a thermal element, a biometallic strip that bent when it got too hot from sustained overcurren, and a magnetic element, an electromagnet that would trip instantly in the event of a sudden short circuit. The thermal trip handled slow overloads, like when you plugged in too many appliances. The magnetic trip handled fast faults, like a short circuit that could start a fire in seconds. In 1924, the patent was filed through Brown, Bavari, and CA, the Swiss engineering company that had acquired Stoz's firm back in 1918. Shakner described the invention in the patent application as an automatic electric circuit breaker in which two contact pieces normally pressed together by springs are separated by the interposition of an insulating slide. And then he added the line that changed residential electricity forever. He wrote that when the overload ceases, switching on can be affected by the mere pressure of the finger without the necessity of unscrewing the apparatus from its socket. That is not a typo, by the way. That was the entire selling point. You did not have to replace anything. You did not have to keep spare fuses in a drawer. You did not have to go to the hardware store. You just pressed a switch. The circuit breaker tripped when there was a problem and you reset it with your finger when the problem was resolved. No pennies required. The irony was almost poetic. Edison had rejected the mechanical circuit breaker concept in 1879 because it was too expensive and too complicated. 45 years later, Stoz and Shakner proved that the device could be made small, cheap, and reliable enough for every home on the planet. You would think someone would have said something sooner. Nobody did. The Stosbreaker did not conquer the world overnight, though. During the 1920s, electrification was booming. More buildings were being wired every month across Europe and North America. Electric refrigerators, washing machines, and radios were entering the market. Each one adding demand to circuits that were already straining. Electrical grids were hitting amperage levels [music] they were never designed for. Complete short circuits and dangerous fires were common. Electrifying your home in the 1920s was not for the faint of heart. In 1928, Stz's team developed a version of their breaker with what they called K characteristics, meaning it would trip when the current reached 10 to 14 times the circuit's rated amperage. This was designed to handle loads with higher starting currents like electric motors which pull a brief surge of power when they first switch on. The K-rated breaker opened the door to industrial applications. But for homes, the original 1924 design was already doing the job. The problem was not the technology. The problem was adoption. Fuse boxes were already installed in millions of homes, and replacing them was expensive. Electrical codes were local, inconsistent, and slow to mandate the switch, and many homeowners, frankly, did not see the need. Their fuses worked fine as long as they did not mind replacing them every time the iron tripped the circuit. The cutter manufacturing company in the United States was among the first to produce circuit breakers at scale. Manufacturing what they called the IT breaker, standing for inverse time element. These breakers could handle short circuits of up to 10,000 amps, protecting most buildings from damage or fire. But they were still installed individually on specific circuits, not in a centralized panel. The real transition happened in the 1960s. That is when the modern circuit breaker panel finally arrived, bringing all of a home's circuit protection into one box with modular miniature breakers that could be easily swapped and serviced. The timing was not accidental. The 1960s saw a massive wave of home renovation across North America, and electricians used the opportunity to rip out old fuse boxes and install breaker panels in their place. By the 1970s, circuit breakers had become the standard in new construction across most of the developed world. Brown, Bavari, and CA stayed in business under that name for over 60 years. In 1988, the company merged with the Swedish engineering firm Asia to form ABB, which still manufactures STO circuit breakers today. In 2014, ABB celebrated the 90th anniversary of the original STO's patent. By that point, the company had produced more than a billion circuit breakers worldwide. A billion from a single patent filed by two engineers in Germany nearly a century earlier. And yet, the problem is not entirely solved. Even today, the National Fire Protection Association reports that electrical fires cause more than 24,000 residential fires in the United States every year. Nearly 300 people die annually from those fires. More than $1.2 billion in property damage results from electrical failures in homes. Many of those fires happen in older buildings, the ones still running on wiring that predates modern safety standards. Homes built before 1950 may still have knob and tube wiring hidden in their walls. The same system that was state-of-the-art in 1885. The rubberized cloth insulation on those wires has been degrading for over a century. There is no ground wire, and in some cases, some homeowner decades ago put a penny behind a fuse and never took it out. The circuit breaker did not solve every problem, but it solved the most important one. It gave ordinary people a safety device that worked automatically, that could be reset without replacement, and that was cheap enough to install in every home on Earth. From Edison's 1879 patent sketch to Stz's 1924 thermal magnetic design to the breaker panel in your basement right now. The story of the circuit breaker is the story of how long it takes for a good idea to actually save lives. Edison had the concept. He chose the cheaper option instead. 45 years, countless housefires, and an untold number of deaths later, two engineers in Germany finally built the thing Edison had drawn in his notebook and thrown away. Every circuit breaker in every home on the planet is the descendant of that 1924 patent. And every time one of them trips and the lights go out and you walk to your electrical panel and flip a switch and the power comes back on, you are using a device that exists. Because for four decades, the only thing standing between your house and a fire was a strip of metal that melted and sometimes a copper penny that did Not.",
+  "fullTextVi": "Năm 1882, Thomas Edison bật công tắc ở ga Pearl Street ở phía dưới Manhattan và điện được đưa vào nhà lần đầu tiên trong lịch sử nước Mỹ. 59 khách hàng trên lưới điện đầu tiên đó đã nhận được thứ mà chưa ai từng trải qua trước đây, điện ánh sáng bên trong phòng khách của họ. Báo chí gọi đó là một phép lạ. Các nhà đầu tư gọi nó là tương lai. Đó là tháng 9 năm 1882. Đến năm sau, dây điện đã bốc cháy bên trong các bức tường của những tòa nhà giống nhau và Edison không có cách nào đáng tin cậy để ngăn chặn điều đó. Vấn đề rất đơn giản và thật đáng sợ. Điện đã đến từng gia đình người Mỹ nhưng công nghệ làm cho nó an toàn đã không. Không có bộ ngắt mạch. Không có dây nối đất. Không có bộ điều chỉnh điện áp nên đèn sẽ mờ và sáng tùy theo nhiều người khác trên lưới điện đang sử dụng điện cùng lúc. Hầu như không có bất kỳ tiêu chuẩn nào về cách lắp đặt hệ thống dây điện trong một tòa nhà gỗ đầy người. Nếu một trong các dây nóng bị hỏng, nếu kết nối phía sau bị lỏng một bức tường, nếu có sự cố nào đó khiến dòng điện thoát ra khỏi đường đi dự định của nó, kết quả là cháy hoặc điện giật nghiêm trọng hoặc cả hai. Và trong bốn thập kỷ tiếp theo, nhiều ngôi nhà trên khắp đất nước sẽ bị cháy vì it. Đó là vào cuối những năm 1870, Edison đang làm việc trong phòng thí nghiệm của mình ở Menllo Park, New Jersey, nơi ông gọi là nhà máy phát minh của mình. Anh ấy đã trình diễn bóng đèn sợi đốt thực tế. Và bây giờ anh ấy đang chạy đua xây dựng cơ sở hạ tầng để cung cấp điện cho khách hàng trả tiền. Thử thách là rất lớn. Trước đây chưa có ai thử nối dây cho cả một khu phố. Không có bản thiết kế, không có sách hướng dẫn kỹ thuật, không có mã an toàn. Edison và nhóm của ông đã viết ra các quy tắc trong quá trình thực hiện. Và đáng khen ngợi là Edison đã nghĩ đến sự an toàn. Trong đơn xin cấp bằng sáng chế năm 1879, ông thực sự đã mô tả hai cách tiếp cận khác nhau để bảo vệ điện mạch. Đầu tiên là cầu chì, một dải kim loại mỏng được thiết kế để làm tan chảy và ngắt mạch nếu có quá nhiều dòng điện chạy qua nó. Thứ hai là một thiết bị cơ khí, một thứ gần giống với những gì chúng ta nhận ra ngày nay như một bộ ngắt mạch, một cơ cấu lò xo có thể mở mạch về mặt vật lý khi dòng điện tăng quá cao. Edison đã phác thảo cả hai ý tưởng này vào sổ tay của mình. Anh ấy đã được cấp bằng sáng chế cho cả hai ý tưởng và sau đó anh ấy đã đưa ra một lựa chọn có thể phải trả giá bằng mạng sống trong nửa thế kỷ tiếp theo. Anh ấy đã đi với cầu chì. Lý do có lý vào thời điểm đó. Cầu chì rẻ. Họ rất đơn giản. Chúng rất dễ sản xuất và lắp đặt. Khái niệm cầu dao cơ học đắt tiền, không đáng tin cậy và khó mở rộng quy mô toàn bộ mạng lưới phân phối điện. Edison cần thứ gì đó có thể hoạt động được ngay lúc này. bởi vì anh ấy đang chạy đua không chỉ với thời gian mà còn với những nhà phát minh khác, các công ty khác, và sự hoài nghi to lớn của công chúng vẫn nghĩ rằng điện là phép thuật nguy hiểm. Và thành thật mà nói, cầu chì còn tốt hơn là không có gì. Trước khi có cầu chì, thực sự không có cơ chế an toàn nào giữa nguồn điện và hệ thống dây điện trong các bức tường của bạn. Nếu dây quá nóng, nếu kết nối bị lỏng, nếu bị đoản mạch dòng điện chạy qua hệ thống tăng vọt, thứ duy nhất ngăn được đám cháy là luck. Cầu chì ít nhất cũng tạo ra điểm yếu cho hệ thống, nơi mạch điện sẽ bị đứt trước khi hệ thống dây điện tự bốc cháy. Hệ thống dây điện đầu tiên trong các ngôi nhà ở Mỹ là một hệ thống được gọi là núm và ống. Nếu bạn chưa bao giờ nhìn thấy nó, hãy hình dung điều này. từng sợi dây đồng cách điện bằng vải cao su xâu qua không khí giữa gốm các nút bấm được đóng đinh vào các thanh gỗ trên tường và trần nhà của bạn. Khi dây cần đi qua thanh gỗ, chúng được luồn qua ống sứ rỗng để giữ cho dây nóng không chạm trực tiếp vào gỗ. Không có dây nối đất. Không có lớp vỏ bảo vệ xung quanh dây cáp. Dây nóng và dây trung tính chạy riêng, có khi cách nhau vài inch, có khi bằng feet ngoài, thông qua các hốc hở của ngôi nhà bạn. Ý tôi là, hãy nghĩ về điều đó trong một giây. Hệ thống điện trong nhà bạn đúng là dây đồng trần treo hở không khí, được ngăn cách với khung gỗ của ngôi nhà bạn bằng một vài vật liệu cách nhiệt bằng gốm. Nếu chuột nhai lớp cách nhiệt, nếu hơi ẩm lọt vào hốc tường, nếu vải cao su bị xuống cấp theo thời gian, điều đó hoàn toàn đúng, thì bạn đã có dây điện mang điện tựa vào khung gỗ khô và là thứ duy nhất bảo vệ bạn là một dải kim loại nhỏ trong hộp cầu chì có thể có hoặc có thể [âm nhạc] chưa được đánh giá chính xác cho mạch đó. Đây là tình trạng điện dân dụng từ những năm 1880 đến những năm 1940. 60 năm những ngôi nhà được nối dây với hệ thống không nối đất, [âm nhạc] không cầu dao, lớp cách điện xuống cấp và một thiết bị an toàn dùng một lần mà hầu hết các chủ nhà đều thấy khó tin khó chịu khi phải thay thế. Và yếu tố khó chịu đó chính là nguyên nhân khiến mọi thứ trở nên thực sự nguy hiểm vì cầu chì bị đứt. Đó là toàn bộ công việc của họ. Khi mạch tiêu thụ quá nhiều dòng điện, cầu chì sẽ chảy, mạch bị đứt và đèn tắt. Gia chủ sau đó phải đi đến hộp cầu chì, tháo cầu chì bị nổ, và vít vào một sự thay thế. Nếu họ không có sẵn đồ thay thế và các cửa hàng phần cứng cũng không có mở cửa 24 giờ một ngày vào năm 1920, họ có quyền lựa chọn. Ngồi trong bóng tối hoặc sáng tạo. Và đây là lúc đồng xu bước vào câu chuyện. Một xu đồng. [âm nhạc] Và thời đó, đồng xu là đồng nguyên khối chứ không phải đồng mạ kẽm họ sử dụng ngày nay. gần như vừa vặn hoàn hảo với ổ cắm của cầu chì vít tiêu chuẩn. Vì vậy, khi cầu chì bị đứt và không có cầu chì thay thế, các chủ nhà trên khắp nước Mỹ phát hiện ra rằng họ có thể tháo cầu chì bị nổ, đánh rơi một xu phía sau nó, vặn vít cầu chì chết hoạt động trở lại và đèn sẽ sáng trở lại. Vấn đề đã được giải quyết. Ngoại trừ vấn đề không được giải quyết chút nào. Vấn đề giờ đây đã trở nên tồi tệ hơn một cách thảm khốc. Cầu chì được thiết kế để trở thành mắt xích yếu nhất trong mạch điện. Nó tan chảy ở một dòng điện cụ thể để hệ thống dây điện phía sau nó không bị quá nóng. Đó là toàn bộ vấn đề. Cầu chì hy sinh chính nó để ngôi nhà của bạn không bị cháy. Một đồng xu không hy sinh chính mình. Một xu đồng không tan chảy. Một đồng xu sẽ dẫn bất kỳ lượng dòng điện nào bạn đẩy qua nó một cách vui vẻ và vô thời hạn cho đến khi hệ thống dây điện phía sau nó quá nóng, lớp cách điện tan chảy và khô khung gỗ bên trong bức tường của bạn bắt lửa. Bằng cách đặt một đồng xu phía sau cầu chì, chủ nhà đã loại bỏ thiết bị an toàn duy nhất giữa lưới điện và hệ thống dây điện trong tường của họ. Nó tương đương với việc vô hiệu hóa hệ thống phanh trên ô tô của bạn vì bạn không thích dừng đèn đỏ. Và bản chất con người là như vậy, hầu hết những người bỏ một xu ra sau một cầu chì đã để nó ở đó vĩnh viễn. Cầu chì nhìn từ bên ngoài thì bình thường. Đèn đã hoạt động. Không ai nghĩ về điều đó nữa cho đến khi hệ thống dây điện phía sau bức tường bắt đầu phát sáng. Và nếu đó là vấn đề duy nhất, thì điện thời kỳ đầu có thể được [âm nhạc] quản lý được. Nhưng có điều gì đó lớn hơn nhiều đang diễn ra ở phía sau. Điều gì đó có thể khiến cuộc khủng hoảng an toàn trở nên tồi tệ hơn theo cấp số nhân. Trong khi các chủ nhà đang tìm cách đi dây điện cho phòng khách của mình thì hai trong số những bộ óc thông minh nhất trong lịch sử công nghệ đang chiến đấu trong một cuộc chiến loại điện sẽ cung cấp năng lượng cho cả nước. Một bên là Thomas Edison, người ủng hộ dòng điện một chiều, hệ thống mà ông đã xây dựng đế chế của mình trên. Phía bên kia là George Westinghouse, được hỗ trợ bởi thiên tài Nicola Tesla, đẩy dòng điện xoay chiều là tương lai của năng lượng điện. Các chi tiết kỹ thuật rất quan trọng ở đây vì chúng giải thích tại sao cuộc khủng hoảng an toàn lại xảy ra tệ hơn nhiều một cách nhanh chóng. Hệ thống điện một chiều của Edison hoạt động tốt trong khoảng cách ngắn, nhưng không hiệu quả truyền tải điện xa hơn khoảng một dặm từ nhà máy điện. Điều đó có nghĩa là bạn cần một nhà máy điện ở mọi khu vực lân cận. Nhà ga Pearl Street của ông ở Manhattan chỉ cách đó vài dãy nhà. Để điện khí hóa toàn bộ thành phố, bạn sẽ cần hàng chục trạm, mỗi trạm đều cháy than và chiếm giữ bất động sản có giá trị. Nền kinh tế thật tàn bạo. Dòng điện xoay chiều của Westinghouse và Tesla đã giải quyết hoàn toàn vấn đề khoảng cách. AC có thể được tăng cường lên điện áp cao bằng cách sử dụng máy biến áp để truyền tải khoảng cách xa, sau đó giảm xuống mức an toàn để sử dụng tại nhà. Một nhà máy điện có thể phục vụ cả một thành phố. Tiết kiệm chi phí là rất lớn và phạm vi tiếp cận tiềm năng hầu như không giới hạn. Edison biết mình đang thua trong cuộc tranh luận về mặt kỹ thuật. Đế chế dòng điện trực tiếp của ông, các nhà máy điện, cơ sở hạ tầng hệ thống dây điện, các bằng sáng chế, tất cả nó đang gặp nguy hiểm. Vì vậy, anh ấy đã làm điều gì đó để xác định mối quan hệ của công chúng với điện cho một thế hệ. Anh ta đã phát động một chiến dịch gây sợ hãi. Edison đã thuê một kỹ sư tên là Harold P. Brown và cho phép anh ta vào phòng thí nghiệm của mình. Brown sau đó đã tổ chức các cuộc biểu tình công khai trong đó những con vật đi lạc bị điện giật bằng dòng điện xoay chiều của Westinghouse thiết bị. Mục đích là để thuyết phục công chúng Mỹ rằng AC là một kẻ giết người hiện tại quá nguy hiểm để mang vào nhà của họ. Edison thậm chí còn cố gắng biến tên đối thủ của mình thành một động từ. Ông muốn Westingous trở thành một thuật ngữ phổ biến có nghĩa là chết do điện giật. Nếu bạn đang thắc mắc làm thế nào điều đó lại hợp pháp, thì những người khác cũng vậy. Việc tuyên truyền đã đi xa hơn. Với sự ủng hộ của Edison, Cơ quan lập pháp bang New York đã chấp thuận việc sử dụng phương pháp điện giật đối với hình phạt tử hình. Chiếc ghế điện đầu tiên được thiết kế có chủ ý để chạy bằng dòng điện xoay chiều của Westinghouse. Vào ngày 6 tháng 8 năm 1890, một kẻ sát nhân bị kết án tên là William Kemler đã trở thành người đầu tiên thực hiện bằng ghế điện. Cuộc hành quyết đã thất bại. Phải mất hai cú sốc và 8 phút để giết anh ta. Các nhân chứng mô tả nó còn tệ hơn nhiều so với việc treo cổ, và đó chính xác là vấn đề. Edison muốn công chúng liên tưởng hệ thống điện của Westinghouse với cái chết. Trong khi đó, những cái chết thực sự do điện không xảy ra ở phòng hành quyết mà ở đường phố của các thành phố Mỹ. Năm 1889, một người lính đường dây của Thành phố New York tên là John Fees đã bị điện giật khi vô tình chạm vào dây điện khi đang làm việc trên cột điện. Anh ta chết trước sự chứng kiến ​​​​của đông đảo người xem giữa thanh thiên bạch nhật. Vụ việc đã góp phần tạo ra từ điện giật, sự kết hợp giữa điện và thực thi, và nó buộc thành phố phải bắt đầu chôn các đường dây điện dưới lòng đất. Quyết định này vào thời điểm đó có vẻ nhỏ nhặt. Không phải vậy. Cuộc chiến giữa các dòng điện đang tạo ra một bầu không khí khủng bố thực sự trong cộng đồng xung quanh vấn đề điện. Và nỗi sợ hãi đó không hoàn toàn đặt sai chỗ. Người chết, nhà cháy, công nghệ an toàn không theo kịp với tốc độ cung cấp điện trên toàn quốc. Bước ngoặt của cuộc chiến dòng chảy xảy ra vào năm 1893 tại Chicago Hội chợ thế giới. Westinghouse đã giành được hợp đồng chiếu sáng các khu hội chợ bằng cách trả giá thấp hơn cho Edison một cách ồ ạt. Kết quả thật ngoạn mục. Hàng trăm nghìn bóng đèn chạy bằng dòng điện xoay chiều thắp sáng triển lãm căn cứ trong một màn hình chứng minh AC vừa đáng tin cậy vừa an toàn khi sử dụng đúng cách đã cài đặt. 3 năm sau vào năm 1896, Westinghouse chế tạo máy phát điện ở Thác Niagara để gửi dòng điện xoay chiều 26 dặm tới thành phố Buffalo, New York. Chiến tranh đã kết thúc. AC đã thắng. Nhưng đây chính là vấn đề. Loại dòng điện đã được quyết định. Cơ sở hạ tầng an toàn [âm nhạc] để bảo vệ người sử dụng dòng điện đó đã không có. Dòng điện xoay chiều hiệu quả hơn nhưng cũng nguy hiểm hơn ở một khía cạnh nào đó. AC có thể cung cấp điện áp cao hơn, điều đó có nghĩa là hậu quả của sự cố hoặc đoản mạch ngày càng nghiêm trọng hơn và công nghệ bảo vệ ở hầu hết các gia đình vẫn còn cầu chì dùng một lần tương tự mà Edison đã chọn vào năm 1879. Trong một thời gian, mọi thứ thực sự có vẻ ổn. Điện đã lan rộng khắp nước Mỹ với tốc độ đáng kinh ngạc. Vào đầu những năm 1900, các thành phố lớn phần lớn đã được điện khí hóa và công nghệ ngày càng phát triển tới các thị trấn nhỏ hơn và các khu vực nông thôn. Mọi người đang bổ sung thêm nhiều thiết bị điện vào nhà của họ. Những thứ như bàn là điện, lò nướng bánh, [âm nhạc] và quạt. Mỗi thiết bị mới tiêu thụ nhiều dòng điện hơn thông qua hệ thống dây điện được thiết kế để xử lý không gì khác hơn là một vài bóng đèn và có thể là một chiếc quạt trần. Và không, tôi không bịa ra điều đó. Các mạch núm và ống ban đầu ở hầu hết các gia đình được đánh giá khoảng 15 amps. Một chiếc máy sấy tóc hiện đại duy nhất kéo được 12. Một chiếc bàn ủi điện vào năm 1910 cũng có sức hút tương tự. Vì vậy, một chủ nhà đang cầm bàn ủi trong bếp trong khi người khác có vài ngọn đèn bật sáng trong phòng ngủ có thể đẩy mạch điện đến giới hạn của nó. Thêm thiết bị thứ hai, máy nướng bánh mì hoặc quạt, cầu chì sẽ nổ. Đặt lại nó đủ lần và cuối cùng cũng có người kiếm được một xu. Các nhà máy đang phải đối mặt với vấn đề tương tự ở quy mô công nghiệp. Mỗi cầu chì bị nổ đồng nghĩa với việc dây chuyền sản xuất phải dừng lại. Các công nhân đã phải tìm cầu chì, thay thế và khởi động lại thiết bị. Trong một nhà máy lớn với hàng chục, hàng trăm mạch cầu chì, các đội bảo trì đã phải tốn nhiều công sức toàn bộ ca làm việc không làm gì khác ngoài việc thay cầu chì bị nổ. Sự thất vọng đã dẫn đến hành vi nguy hiểm tương tự như bạn đã thấy ở nhà. Công nhân và quản lý nhà máy bắt đầu bắc cầu chì bằng dây đồng, đinh dày hoặc bất cứ thứ gì vật liệu dẫn điện mà họ có thể tìm thấy. Sự bảo vệ biến mất. Hệ thống dây điện quá nóng và các vụ cháy công trình lớn xảy ra do những lối tắt này. Điều đó không kéo dài. Nỗ lực thực sự đầu tiên nhằm khắc phục vấn đề an toàn diễn ra vào năm 1898 khi Công ty Đèn điện Boston đã lắp đặt thiết bị thường được coi là cầu dao thương mại đầu tiên. Nó khác xa với những thiết bị nhỏ gọn trong bảng điện của bạn Hôm nay. Nó dùng bình dầu để hấp thụ nhiệt sinh ra khi mạch vỡ. Và nó phải được vận hành bằng tay, nhưng đó chỉ là sự khởi đầu. Nó có thể làm gián đoạn một mạch điện và sau đó được thiết lập lại thay vì yêu cầu một mới cầu chì mọi lúc. Đó là sự tiến bộ, nhưng đó là sự tiến bộ chậm. Và đó là sự tiến bộ công nghiệp, không phải khu dân cư. Boston Breaker bảo vệ một trạm điện chứ không phải phòng khách của một gia đình. Chỉ riêng thùng dầu đã khiến nó không thể sử dụng được trong gia đình. Bạn sẽ không lắp đặt một thiết bị có kích thước bằng một cái thùng nhỏ trong nhà bếp của ai đó. 2 năm sau, khoảng năm 1900, một nhà phát minh tên là Granville Woods đã đưa khái niệm này đi xa hơn. Woods là một kỹ sư người Mỹ gốc Phi tự học, người đã được cấp bằng sáng chế cho hàng chục phát minh, trong đó có nhiều trong số đó dành cho ngành đường sắt. Anh ấy là người đã cho chúng tôi từ xe đẩy trong thiết kế của anh ấy cho bánh xe có rãnh nối xe ô tô đường phố với đường dây điện trên cao. Woods đã xem xét các thiết kế cầu dao hiện có và nhận ra sai sót cơ bản. Họ đã làm thủ công. Ai đó đã phải vận hành chúng. Nếu xảy ra lỗi vào lúc nửa đêm hoặc khi không có người gần cầu dao, nó không làm gì cả. Vì vậy Woods đã phát minh ra cầu dao tự động, một thiết bị có thể phát hiện tình trạng quá tải và tự ngắt mạch mà không cần sự can thiệp của con người. Đó là một khái niệm đáng lẽ phải thay đổi mọi thứ. Nhưng điều đó đã không xảy ra. Chưa. Woods đã giải quyết được vấn đề về khái niệm. Bộ ngắt mạch tự động có thể phát hiện tình trạng nguy hiểm và phản hồi mà không cần chờ con người chú ý và hành động. Nhưng kỹ thuật vẫn chưa sẵn sàng để sản xuất hàng loạt. Các thiết bị này cồng kềnh, đắt tiền và không nhất quán về cách thức hoạt động. Chúng hoạt động đủ tốt cho các ứng dụng đường sắt và các cơ sở công nghiệp lớn nơi chi phí của một cầu dao duy nhất được chứng minh bằng giá trị của thiết bị mà nó bảo vệ. Nhưng đối với một ngôi nhà riêng, nơi toàn bộ hệ thống điện có thể có giá $50 để lắp đặt, không ai chịu trả 20 USD cho một thiết bị bảo vệ. Vì vậy, khoảng cách vẫn tồn tại. Khái niệm về cầu dao tự động đã tồn tại. Kỹ thuật làm cho nó trở nên thiết thực cho mục đích sử dụng dân dụng thì không. Các ngôi nhà tiếp tục dựa vào hộp cầu chì. Các chủ nhà tiếp tục bỏ những đồng xu vào sau những chiếc cầu chì bị nổ và những ngôi nhà tiếp tục bốc cháy. Điều khiến khoảng thời gian này trở nên khó chịu khi nhìn lại là tất cả những người tham gia đều biết hệ thống cầu chì không đủ. Thợ điện biết điều đó. Sở cứu hỏa biết điều đó. Các công ty bảo hiểm biết điều đó vì họ đang chi trả các yêu cầu bồi thường cho các vụ cháy điện tại một tỷ lệ ngày càng tăng. Nhưng thị trường không có giải pháp thay thế hợp lý và khung pháp lý buộc phải có vẫn chưa tồn tại. Mã điện mang tính cục bộ, không nhất quán và thường không được thực thi. Chủ nhà ở New York có thể có các yêu cầu an toàn khác với chủ nhà ở Chicago và một chủ nhà ở vùng nông thôn Kansas có thể không có yêu cầu nào cả. Nếu bạn thấy điều này thú vị, hãy nhấn đăng ký. Chúng tôi đưa tin về những câu chuyện như thế này hàng tuần. Vào đầu những năm 1920, việc điện khí hóa các ngôi nhà riêng ở Châu Âu và Châu Mỹ là tăng tốc nhanh hơn mức tiêu chuẩn an toàn có thể theo kịp. Nhiều tòa nhà được nối dây mỗi tháng. Nhiều thiết bị điện hơn đã được tung ra thị trường. Và cầu chì, dải kim loại đơn giản mà Edison đã chọn thay vì cầu chì cơ khí cầu dao 40 năm trước đã tỏ ra không phù hợp một cách đáng tiếc cho công việc. Vào đường Hugo là một kỹ sư người Đức, người đã thành lập một công ty kỹ thuật điện ở Mannheim, Đức trở lại năm 1891. Ông đã dành nhiều thập kỷ làm việc về an toàn điện. Và đến đầu những năm 1920, ông và kỹ sư trưởng của mình, Hinrich Shakner, đã phát triển thứ mà không ai khác có thể chế tạo được, một cầu dao thu nhỏ, nhỏ đủ và đủ rẻ để lắp đặt tại nhà riêng. Thiết kế của họ kết hợp hai cơ chế ngắt khác nhau trong một thiết bị duy nhất. một bộ phận nhiệt, một dải sinh kim bị uốn cong khi quá nóng từ dòng điện quá dòng duy trì và một phần tử từ tính, một nam châm điện sẽ tác động ngay lập tức trong trường hợp ngắn mạch đột ngột. Quá trình tản nhiệt xử lý tình trạng quá tải chậm, chẳng hạn như khi bạn cắm quá nhiều thiết bị. Chuyến đi từ tính xử lý các lỗi nhanh, chẳng hạn như đoản mạch có thể khởi động cháy trong vài giây. Năm 1924, bằng sáng chế được nộp thông qua Brown, Bavari và CA, cơ quan kỹ thuật Thụy Sĩ công ty đã mua lại công ty của Stoz vào năm 1918. Shakner mô tả phát minh này trong đơn xin cấp bằng sáng chế là một thiết bị ngắt mạch điện tự động trong đó hai phần tiếp xúc thường được ép vào nhau bằng lò xo được ngăn cách bởi sự xen kẽ của một slide cách điện. Và sau đó ông đã bổ sung thêm dòng sản phẩm đã thay đổi nguồn điện dân dụng mãi mãi. Ông viết rằng khi tình trạng quá tải chấm dứt, việc bật nguồn có thể bị ảnh hưởng bởi chỉ cần ấn ngón tay mà không cần phải tháo thiết bị ra khỏi ổ cắm. Nhân tiện, đó không phải là lỗi đánh máy. Đó là toàn bộ điểm bán hàng. Bạn không phải thay thế bất cứ điều gì. Bạn không cần phải cất cầu chì dự phòng trong ngăn kéo. Bạn không cần phải đến cửa hàng phần cứng. Bạn vừa nhấn một công tắc. Cầu dao bị ngắt khi có sự cố và bạn cài đặt lại bằng ngón tay của bạn khi vấn đề đã được giải quyết. Không cần xu. Sự trớ trêu gần như nên thơ. Edison đã bác bỏ khái niệm cầu dao cơ khí vào năm 1879 vì nó quá đắt tiền và quá phức tạp. 45 năm sau, Stoz và Shakner chứng minh rằng thiết bị có thể được chế tạo nhỏ gọn, rẻ và đủ tin cậy cho mọi ngôi nhà trên hành tinh. Bạn sẽ nghĩ ai đó sẽ nói điều gì đó sớm hơn. Không ai làm vậy. Tuy nhiên, Stosbreaker không chinh phục thế giới chỉ sau một đêm. Trong những năm 1920, điện khí hóa đang bùng nổ. Nhiều tòa nhà được nối dây mỗi tháng trên khắp Châu Âu và Bắc Mỹ. Tủ lạnh điện, máy giặt và radio đang gia nhập thị trường. Mỗi người thêm nhu cầu vào các mạch vốn đã căng thẳng. Lưới điện đã đạt đến mức cường độ dòng điện [âm nhạc] mà chúng chưa bao giờ được thiết kế để đáp ứng. Tình trạng chập điện hoàn toàn và hỏa hoạn nguy hiểm thường xuyên xảy ra. Điện khí hóa ngôi nhà của bạn vào những năm 1920 không dành cho người yếu tim. Năm 1928, nhóm của Stz đã phát triển một phiên bản máy cắt của họ với tên gọi đặc tính K, nghĩa là sẽ ngắt khi dòng điện đạt 10 đến 14 lần cường độ dòng điện định mức của mạch. Điều này được thiết kế để xử lý các tải có dòng điện khởi động cao hơn như động cơ điện kéo theo một luồng điện ngắn khi chúng bật lần đầu tiên. Cầu dao loại K đã mở ra cánh cửa cho các ứng dụng công nghiệp. Nhưng đối với những ngôi nhà, thiết kế ban đầu năm 1924 đã phát huy tác dụng. Vấn đề không phải là công nghệ. Vấn đề là việc nhận con nuôi. Hộp cầu chì đã được lắp đặt ở hàng triệu ngôi nhà và việc thay thế chúng rất tốn kém. Các mã điện mang tính cục bộ, không nhất quán và bắt buộc chuyển đổi chậm, và nhiều chủ nhà, nói thật là thấy không cần thiết. Cầu chì của họ hoạt động tốt miễn là họ không ngại thay thế chúng mỗi thời điểm bàn ủi ngắt mạch điện. Công ty sản xuất máy cắt ở Hoa Kỳ là một trong những công ty đầu tiên sản xuất bộ ngắt mạch ở quy mô. Sản xuất cái mà họ gọi là bộ ngắt CNTT, viết tắt của yếu tố thời gian nghịch đảo. Những cầu dao này có thể xử lý các mạch ngắn lên tới 10.000 ampe, bảo vệ hầu hết các tòa nhà khỏi hư hỏng hoặc hỏa hoạn. Nhưng chúng vẫn được cài đặt riêng lẻ trên các mạch cụ thể chứ không phải trong bảng điều khiển tập trung. Sự chuyển đổi thực sự xảy ra vào những năm 1960. Đó là lúc bảng cầu dao hiện đại cuối cùng cũng xuất hiện, mang theo tất cả bảo vệ mạch điện trong nhà vào một hộp với các bộ ngắt mô-đun thu nhỏ có thể dễ dàng sử dụng được trao đổi và phục vụ. Thời điểm không phải là ngẫu nhiên. Những năm 1960 chứng kiến ​​​​một làn sóng cải tạo nhà cửa ồ ạt trên khắp Bắc Mỹ và thợ điện tận dụng cơ hội để tháo hộp cầu chì cũ và lắp cầu dao vào chỗ của họ. Đến những năm 1970, cầu dao đã trở thành tiêu chuẩn trong xây dựng mới ở hầu hết của thế giới phát triển. Brown, Bavari và CA đã kinh doanh dưới cái tên đó trong hơn 60 năm. Năm 1988, công ty sáp nhập với công ty kỹ thuật Châu Á của Thụy Điển để thành lập ABB, ngày nay vẫn sản xuất bộ ngắt mạch STO. Năm 2014, ABB đã kỷ niệm 90 năm bằng sáng chế ban đầu của STO. Vào thời điểm đó, công ty đã sản xuất hơn một tỷ bộ ngắt mạch trên toàn thế giới. Một tỷ đồng từ một bằng sáng chế duy nhất của hai kỹ sư ở Đức gần một thế kỷ trước đó. Tuy nhiên, vấn đề vẫn chưa được giải quyết hoàn toàn. Thậm chí ngày nay, Hiệp hội phòng cháy chữa cháy quốc gia vẫn báo cáo rằng hỏa hoạn do điện gây ra nhiều hơn 24.000 vụ cháy nhà ở Mỹ mỗi năm Gần 300 người chết mỗi năm vì những vụ cháy đó. Hơn 1 đô la. Thiệt hại tài sản lên tới 2 tỷ USD do sự cố điện trong nhà. Nhiều đám cháy trong số đó xảy ra ở các tòa nhà cũ, những đám cháy vẫn đang chạy bằng hệ thống dây điện có trước các tiêu chuẩn an toàn hiện đại. Những ngôi nhà được xây trước năm 1950 có thể vẫn có núm và dây điện ẩn trong những bức tường. Cùng một hệ thống hiện đại nhất vào năm 1885. Lớp cách điện bằng vải cao su trên những sợi dây đó đã xuống cấp trong hơn một thế kỷ. Không có dây nối đất, và trong một số trường hợp, một số chủ nhà cách đây hàng chục năm đã đặt một xu đằng sau cầu chì và không bao giờ lấy nó ra. Bộ ngắt mạch không giải quyết được mọi vấn đề nhưng nó giải quyết được điều quan trọng nhất one. Nó mang đến cho người dân bình thường một thiết bị an toàn hoạt động tự động, có thể thiết lập lại không cần thay thế và đủ rẻ để lắp đặt ở mọi nhà trên Trái đất. Từ bản phác thảo bằng sáng chế năm 1879 của Edison đến thiết kế nam châm nhiệt năm 1924 của Stz cho đến cầu dao bảng điều khiển ở tầng hầm của bạn ngay bây giờ. Chuyện chiếc cầu dao là chuyện mất bao lâu cho một ý tưởng hay để thực sự cứu mạng sống. Edison đã có khái niệm này. Thay vào đó anh ấy đã chọn phương án rẻ hơn. 45 năm, vô số vụ cháy nhà và vô số người chết sau đó, hai kỹ sư ở Đức cuối cùng đã chế tạo được thứ mà Edison đã vẽ vào sổ tay và vứt đi. Mọi thiết bị ngắt mạch trong mọi ngôi nhà trên hành tinh đều là hậu duệ của nó Bằng sáng chế năm 1924 Và mỗi khi một trong số họ di chuyển và đèn tắt và bạn đi đến bảng điện của bạn và bật công tắc và có điện trở lại bật, bạn đang sử dụng một thiết bị hiện có. Bởi suốt bốn thập kỷ qua, thứ duy nhất đứng giữa ngôi nhà của bạn và ngọn lửa là một dải kim loại nóng chảy và đôi khi là một đồng xu Not.",
+  "segments": [
+    {
+      "text": "In 1882, Thomas Edison flipped a switch at his Pearl Street station in lower",
+      "viText": "Năm 1882, Thomas Edison bật công tắc ở ga Pearl Street ở phía dưới",
+      "start": 0,
+      "duration": 5.02
+    },
+    {
+      "text": "Manhattan, and electricity flowed into homes for the first time in American history.",
+      "viText": "Manhattan và điện được đưa vào nhà lần đầu tiên trong lịch sử nước Mỹ.",
+      "start": 5.02,
+      "duration": 5.55
+    },
+    {
+      "text": "59 customers on that first grid got something nobody had ever experienced before, electric",
+      "viText": "59 khách hàng trên lưới điện đầu tiên đó đã nhận được thứ mà chưa ai từng trải qua trước đây, điện",
+      "start": 10.57,
+      "duration": 5.95
+    },
+    {
+      "text": "light inside their own living rooms.",
+      "viText": "ánh sáng bên trong phòng khách của họ.",
+      "start": 16.52,
+      "duration": 2.38
+    },
+    {
+      "text": "Newspapers called it a miracle.",
+      "viText": "Báo chí gọi đó là một phép lạ.",
+      "start": 18.9,
+      "duration": 2.05
+    },
+    {
+      "text": "Investors called it the future.",
+      "viText": "Các nhà đầu tư gọi nó là tương lai.",
+      "start": 20.95,
+      "duration": 2.05
+    },
+    {
+      "text": "That was September of 1882.",
+      "viText": "Đó là tháng 9 năm 1882.",
+      "start": 23,
+      "duration": 2
+    },
+    {
+      "text": "By the following year, wires were already catching fire inside the walls of those",
+      "viText": "Đến năm sau, dây điện đã bốc cháy bên trong các bức tường của",
+      "start": 25,
+      "duration": 5.35
+    },
+    {
+      "text": "same buildings, and Edison had no reliable way to stop it.",
+      "viText": "những tòa nhà giống nhau và Edison không có cách nào đáng tin cậy để ngăn chặn điều đó.",
+      "start": 30.35,
+      "duration": 3.83
+    },
+    {
+      "text": "The problem was simple, and it was terrifying.",
+      "viText": "Vấn đề rất đơn giản và thật đáng sợ.",
+      "start": 34.18,
+      "duration": 3.04
+    },
+    {
+      "text": "Electricity had arrived in the American home, but the technology to make it safe",
+      "viText": "Điện đã đến từng gia đình người Mỹ nhưng công nghệ làm cho nó an toàn",
+      "start": 37.22,
+      "duration": 5.29
+    },
+    {
+      "text": "had not.",
+      "viText": "đã không.",
+      "start": 42.51,
+      "duration": 2
+    },
+    {
+      "text": "There were no circuit breakers.",
+      "viText": "Không có bộ ngắt mạch.",
+      "start": 44.51,
+      "duration": 2.05
+    },
+    {
+      "text": "There were no grounding wires.",
+      "viText": "Không có dây nối đất.",
+      "start": 46.56,
+      "duration": 2
+    },
+    {
+      "text": "There were no voltage regulators, so lights would dim and brighten depending on how",
+      "viText": "Không có bộ điều chỉnh điện áp nên đèn sẽ mờ và sáng tùy theo",
+      "start": 48.56,
+      "duration": 5.49
+    },
+    {
+      "text": "many other people on the grid were using power at the same time.",
+      "viText": "nhiều người khác trên lưới điện đang sử dụng điện cùng lúc.",
+      "start": 54.05,
+      "duration": 4.23
+    },
+    {
+      "text": "There were barely any standards at all for how electrical wiring should be installed",
+      "viText": "Hầu như không có bất kỳ tiêu chuẩn nào về cách lắp đặt hệ thống dây điện",
+      "start": 58.28,
+      "duration": 5.55
+    },
+    {
+      "text": "in a wooden building full of people.",
+      "viText": "trong một tòa nhà gỗ đầy người.",
+      "start": 63.83,
+      "duration": 2.38
+    },
+    {
+      "text": "If one of the hot wires became damaged, if a connection came loose behind",
+      "viText": "Nếu một trong các dây nóng bị hỏng, nếu kết nối phía sau bị lỏng",
+      "start": 66.21,
+      "duration": 4.82
+    },
+    {
+      "text": "a wall, if some mishap caused the electrical current to escape its intended path,",
+      "viText": "một bức tường, nếu có sự cố nào đó khiến dòng điện thoát ra khỏi đường đi dự định của nó,",
+      "start": 71.03,
+      "duration": 5.35
+    },
+    {
+      "text": "the result was fire or severe electrical shock or both.",
+      "viText": "kết quả là cháy hoặc điện giật nghiêm trọng hoặc cả hai.",
+      "start": 76.38,
+      "duration": 3.64
+    },
+    {
+      "text": "And for the next four decades, homes across the country would burn because of",
+      "viText": "Và trong bốn thập kỷ tiếp theo, nhiều ngôi nhà trên khắp đất nước sẽ bị cháy vì",
+      "start": 80.02,
+      "duration": 5.09
+    },
+    {
+      "text": "it.",
+      "viText": "it.",
+      "start": 85.11,
+      "duration": 2
+    },
+    {
+      "text": "It was the late 1870s, and Edison was working out of his laboratory in",
+      "viText": "Đó là vào cuối những năm 1870, Edison đang làm việc trong phòng thí nghiệm của mình ở",
+      "start": 87.11,
+      "duration": 4.63
+    },
+    {
+      "text": "Menllo Park, New Jersey, the place he called his invention factory.",
+      "viText": "Menllo Park, New Jersey, nơi ông gọi là nhà máy phát minh của mình.",
+      "start": 91.74,
+      "duration": 4.43
+    },
+    {
+      "text": "He had already demonstrated the practical incandescent light bulb.",
+      "viText": "Anh ấy đã trình diễn bóng đèn sợi đốt thực tế.",
+      "start": 96.17,
+      "duration": 4.36
+    },
+    {
+      "text": "And now he was racing to build the infrastructure that would deliver electricity to",
+      "viText": "Và bây giờ anh ấy đang chạy đua xây dựng cơ sở hạ tầng để cung cấp điện cho",
+      "start": 100.53,
+      "duration": 5.49
+    },
+    {
+      "text": "paying customers.",
+      "viText": "khách hàng trả tiền.",
+      "start": 106.02,
+      "duration": 2
+    },
+    {
+      "text": "The challenge was enormous.",
+      "viText": "Thử thách là rất lớn.",
+      "start": 108.02,
+      "duration": 2
+    },
+    {
+      "text": "Nobody had ever tried to wire an entire neighborhood before.",
+      "viText": "Trước đây chưa có ai thử nối dây cho cả một khu phố.",
+      "start": 110.02,
+      "duration": 3.97
+    },
+    {
+      "text": "There were no blueprints, no engineering manuals, no safety codes.",
+      "viText": "Không có bản thiết kế, không có sách hướng dẫn kỹ thuật, không có mã an toàn.",
+      "start": 113.99,
+      "duration": 4.36
+    },
+    {
+      "text": "Edison and his team were writing the rules as they went.",
+      "viText": "Edison và nhóm của ông đã viết ra các quy tắc trong quá trình thực hiện.",
+      "start": 118.35,
+      "duration": 3.7
+    },
+    {
+      "text": "And to his credit, Edison did think about safety.",
+      "viText": "Và đáng khen ngợi là Edison đã nghĩ đến sự an toàn.",
+      "start": 122.05,
+      "duration": 3.24
+    },
+    {
+      "text": "In his 1879 patent application, he actually described two different approaches to protecting electrical",
+      "viText": "Trong đơn xin cấp bằng sáng chế năm 1879, ông thực sự đã mô tả hai cách tiếp cận khác nhau để bảo vệ điện",
+      "start": 125.29,
+      "duration": 6.81
+    },
+    {
+      "text": "circuits.",
+      "viText": "mạch.",
+      "start": 132.1,
+      "duration": 2
+    },
+    {
+      "text": "The first was a fuse, a thin strip of metal designed to melt and",
+      "viText": "Đầu tiên là cầu chì, một dải kim loại mỏng được thiết kế để làm tan chảy và",
+      "start": 134.1,
+      "duration": 4.23
+    },
+    {
+      "text": "break the circuit if too much current flowed through it.",
+      "viText": "ngắt mạch nếu có quá nhiều dòng điện chạy qua nó.",
+      "start": 138.33,
+      "duration": 3.7
+    },
+    {
+      "text": "The second was a mechanical device, something closer to what we would recognize today",
+      "viText": "Thứ hai là một thiết bị cơ khí, một thứ gần giống với những gì chúng ta nhận ra ngày nay",
+      "start": 142.03,
+      "duration": 5.62
+    },
+    {
+      "text": "as a circuit breaker, a spring-loaded mechanism that would physically open the circuit when",
+      "viText": "như một bộ ngắt mạch, một cơ cấu lò xo có thể mở mạch về mặt vật lý khi",
+      "start": 147.65,
+      "duration": 6.01
+    },
+    {
+      "text": "the current got too high.",
+      "viText": "dòng điện tăng quá cao.",
+      "start": 153.66,
+      "duration": 2
+    },
+    {
+      "text": "Edison sketched both ideas in his notebooks.",
+      "viText": "Edison đã phác thảo cả hai ý tưởng này vào sổ tay của mình.",
+      "start": 155.66,
+      "duration": 2.91
+    },
+    {
+      "text": "He patented both concepts and then he made a choice that would cost lives",
+      "viText": "Anh ấy đã được cấp bằng sáng chế cho cả hai ý tưởng và sau đó anh ấy đã đưa ra một lựa chọn có thể phải trả giá bằng mạng sống",
+      "start": 158.57,
+      "duration": 4.82
+    },
+    {
+      "text": "for the next half century.",
+      "viText": "trong nửa thế kỷ tiếp theo.",
+      "start": 163.39,
+      "duration": 2
+    },
+    {
+      "text": "He went with the fuse.",
+      "viText": "Anh ấy đã đi với cầu chì.",
+      "start": 165.39,
+      "duration": 2
+    },
+    {
+      "text": "The reasoning made sense at the time.",
+      "viText": "Lý do có lý vào thời điểm đó.",
+      "start": 167.39,
+      "duration": 2.45
+    },
+    {
+      "text": "Fuses were cheap.",
+      "viText": "Cầu chì rẻ.",
+      "start": 169.84,
+      "duration": 2
+    },
+    {
+      "text": "They were simple.",
+      "viText": "Họ rất đơn giản.",
+      "start": 171.84,
+      "duration": 2
+    },
+    {
+      "text": "They were easy to manufacture and install.",
+      "viText": "Chúng rất dễ sản xuất và lắp đặt.",
+      "start": 173.84,
+      "duration": 2.78
+    },
+    {
+      "text": "The mechanical circuit breaker concept was expensive, unreliable, and difficult to scale across an",
+      "viText": "Khái niệm cầu dao cơ học đắt tiền, không đáng tin cậy và khó mở rộng quy mô",
+      "start": 176.62,
+      "duration": 6.48
+    },
+    {
+      "text": "entire power distribution network.",
+      "viText": "toàn bộ mạng lưới phân phối điện.",
+      "start": 183.1,
+      "duration": 2.25
+    },
+    {
+      "text": "Edison needed something that worked right now.",
+      "viText": "Edison cần thứ gì đó có thể hoạt động được ngay lúc này.",
+      "start": 185.35,
+      "duration": 3.04
+    },
+    {
+      "text": "because he was in a race not just against time but against other inventors,",
+      "viText": "bởi vì anh ấy đang chạy đua không chỉ với thời gian mà còn với những nhà phát minh khác,",
+      "start": 188.39,
+      "duration": 4.96
+    },
+    {
+      "text": "other companies, and the enormous skepticism of a public that still thought electricity was",
+      "viText": "các công ty khác, và sự hoài nghi to lớn của công chúng vẫn nghĩ rằng điện là",
+      "start": 193.35,
+      "duration": 6.01
+    },
+    {
+      "text": "dangerous witchcraft.",
+      "viText": "phép thuật nguy hiểm.",
+      "start": 199.36,
+      "duration": 2
+    },
+    {
+      "text": "And honestly, fuses were better than nothing.",
+      "viText": "Và thành thật mà nói, cầu chì còn tốt hơn là không có gì.",
+      "start": 201.36,
+      "duration": 2.97
+    },
+    {
+      "text": "Before fuses, there was literally no safety mechanism between the power source and the",
+      "viText": "Trước khi có cầu chì, thực sự không có cơ chế an toàn nào giữa nguồn điện và",
+      "start": 204.33,
+      "duration": 5.68
+    },
+    {
+      "text": "wiring in your walls.",
+      "viText": "hệ thống dây điện trong các bức tường của bạn.",
+      "start": 210.01,
+      "duration": 2
+    },
+    {
+      "text": "If a wire overheated, if a connection came loose, if a short circuit sent",
+      "viText": "Nếu dây quá nóng, nếu kết nối bị lỏng, nếu bị đoản mạch",
+      "start": 212.01,
+      "duration": 4.82
+    },
+    {
+      "text": "a surge of current through the system, the only thing stopping a fire was",
+      "viText": "dòng điện chạy qua hệ thống tăng vọt, thứ duy nhất ngăn được đám cháy là",
+      "start": 216.83,
+      "duration": 4.82
+    },
+    {
+      "text": "luck.",
+      "viText": "luck.",
+      "start": 221.65,
+      "duration": 2
+    },
+    {
+      "text": "Fuses at least gave the system a weak point, a place where the circuit",
+      "viText": "Cầu chì ít nhất cũng tạo ra điểm yếu cho hệ thống, nơi mạch điện",
+      "start": 223.65,
+      "duration": 4.63
+    },
+    {
+      "text": "would break before the wiring itself caught fire.",
+      "viText": "sẽ bị đứt trước khi hệ thống dây điện tự bốc cháy.",
+      "start": 228.28,
+      "duration": 3.24
+    },
+    {
+      "text": "The early wiring in American homes was a system called knob and tube.",
+      "viText": "Hệ thống dây điện đầu tiên trong các ngôi nhà ở Mỹ là một hệ thống được gọi là núm và ống.",
+      "start": 231.52,
+      "duration": 4.56
+    },
+    {
+      "text": "If you have never seen it, picture this.",
+      "viText": "Nếu bạn chưa bao giờ nhìn thấy nó, hãy hình dung điều này.",
+      "start": 236.08,
+      "duration": 2.64
+    },
+    {
+      "text": "individual copper wires insulated with rubberized cloth strung through the open air between ceramic",
+      "viText": "từng sợi dây đồng cách điện bằng vải cao su xâu qua không khí giữa gốm",
+      "start": 238.72,
+      "duration": 6.54
+    },
+    {
+      "text": "knobs nailed to the wooden joists in your walls and ceiling.",
+      "viText": "các nút bấm được đóng đinh vào các thanh gỗ trên tường và trần nhà của bạn.",
+      "start": 245.26,
+      "duration": 3.97
+    },
+    {
+      "text": "When the wires needed to pass through a wooden beam, they were threaded through",
+      "viText": "Khi dây cần đi qua thanh gỗ, chúng được luồn qua",
+      "start": 249.23,
+      "duration": 5.22
+    },
+    {
+      "text": "hollow porcelain tubes to keep the hot wire from touching the wood directly.",
+      "viText": "ống sứ rỗng để giữ cho dây nóng không chạm trực tiếp vào gỗ.",
+      "start": 254.45,
+      "duration": 5.02
+    },
+    {
+      "text": "There was no ground wire.",
+      "viText": "Không có dây nối đất.",
+      "start": 259.47,
+      "duration": 2
+    },
+    {
+      "text": "There was no protective sheathing around the cables.",
+      "viText": "Không có lớp vỏ bảo vệ xung quanh dây cáp.",
+      "start": 261.47,
+      "duration": 3.44
+    },
+    {
+      "text": "The hot wire and the neutral wire ran separately, sometimes inches apart, sometimes feet",
+      "viText": "Dây nóng và dây trung tính chạy riêng, có khi cách nhau vài inch, có khi bằng feet",
+      "start": 264.91,
+      "duration": 5.82
+    },
+    {
+      "text": "apart, through the open cavities of your house.",
+      "viText": "ngoài, thông qua các hốc hở của ngôi nhà bạn.",
+      "start": 270.73,
+      "duration": 3.11
+    },
+    {
+      "text": "I mean, think about that for a second.",
+      "viText": "Ý tôi là, hãy nghĩ về điều đó trong một giây.",
+      "start": 273.84,
+      "duration": 2.51
+    },
+    {
+      "text": "The electrical system in your home was literally bare copper wire hanging in open",
+      "viText": "Hệ thống điện trong nhà bạn đúng là dây đồng trần treo hở",
+      "start": 276.35,
+      "duration": 5.35
+    },
+    {
+      "text": "air, separated from the wood framing of your house by a few ceramic insulators.",
+      "viText": "không khí, được ngăn cách với khung gỗ của ngôi nhà bạn bằng một vài vật liệu cách nhiệt bằng gốm.",
+      "start": 281.7,
+      "duration": 5.22
+    },
+    {
+      "text": "If a mouse chewed through the insulation, if moisture got into the wall cavity,",
+      "viText": "Nếu chuột nhai lớp cách nhiệt, nếu hơi ẩm lọt vào hốc tường,",
+      "start": 286.92,
+      "duration": 5.22
+    },
+    {
+      "text": "if the rubberized cloth degraded over time, which it absolutely did, you had a",
+      "viText": "nếu vải cao su bị xuống cấp theo thời gian, điều đó hoàn toàn đúng, thì bạn đã có",
+      "start": 292.14,
+      "duration": 5.16
+    },
+    {
+      "text": "live electrical wire sitting against dry wooden framing, and the only thing protecting you",
+      "viText": "dây điện mang điện tựa vào khung gỗ khô và là thứ duy nhất bảo vệ bạn",
+      "start": 297.3,
+      "duration": 5.95
+    },
+    {
+      "text": "was a tiny strip of metal in a fuse box that may or may",
+      "viText": "là một dải kim loại nhỏ trong hộp cầu chì có thể có hoặc có thể",
+      "start": 303.25,
+      "duration": 3.64
+    },
+    {
+      "text": "[music] not have been the correct rating for that circuit.",
+      "viText": "[âm nhạc] chưa được đánh giá chính xác cho mạch đó.",
+      "start": 306.89,
+      "duration": 3.83
+    },
+    {
+      "text": "This was the state of residential electricity from the 1880s through the 1940s.",
+      "viText": "Đây là tình trạng điện dân dụng từ những năm 1880 đến những năm 1940.",
+      "start": 310.72,
+      "duration": 5.22
+    },
+    {
+      "text": "60 years of homes wired with a system that had no grounding, [music] no",
+      "viText": "60 năm những ngôi nhà được nối dây với hệ thống không nối đất, [âm nhạc] không",
+      "start": 315.94,
+      "duration": 4.69
+    },
+    {
+      "text": "circuit breakers, degrading insulation, and a singleuse safety device that most homeowners found incredibly",
+      "viText": "cầu dao, lớp cách điện xuống cấp và một thiết bị an toàn dùng một lần mà hầu hết các chủ nhà đều thấy khó tin",
+      "start": 320.63,
+      "duration": 7.07
+    },
+    {
+      "text": "annoying to replace.",
+      "viText": "khó chịu khi phải thay thế.",
+      "start": 327.7,
+      "duration": 2
+    },
+    {
+      "text": "And that annoyance factor is what made things truly dangerous because fuses blow.",
+      "viText": "Và yếu tố khó chịu đó chính là nguyên nhân khiến mọi thứ trở nên thực sự nguy hiểm vì cầu chì bị đứt.",
+      "start": 329.7,
+      "duration": 5.35
+    },
+    {
+      "text": "That is their entire job.",
+      "viText": "Đó là toàn bộ công việc của họ.",
+      "start": 335.05,
+      "duration": 2
+    },
+    {
+      "text": "When a circuit draws too much current, the fuse melts, the circuit breaks, and",
+      "viText": "Khi mạch tiêu thụ quá nhiều dòng điện, cầu chì sẽ chảy, mạch bị đứt và",
+      "start": 337.05,
+      "duration": 5.16
+    },
+    {
+      "text": "the lights go out.",
+      "viText": "đèn tắt.",
+      "start": 342.21,
+      "duration": 2
+    },
+    {
+      "text": "The homeowner then has to go to the fuse box, unscrew the blown fuse,",
+      "viText": "Gia chủ sau đó phải đi đến hộp cầu chì, tháo cầu chì bị nổ,",
+      "start": 344.21,
+      "duration": 4.56
+    },
+    {
+      "text": "and screw in a replacement.",
+      "viText": "và vít vào một sự thay thế.",
+      "start": 348.77,
+      "duration": 2
+    },
+    {
+      "text": "If they did not have a replacement on hand, and hardware stores were not",
+      "viText": "Nếu họ không có sẵn đồ thay thế và các cửa hàng phần cứng cũng không có",
+      "start": 350.77,
+      "duration": 4.76
+    },
+    {
+      "text": "open 24 hours a day in 1920, they had a choice.",
+      "viText": "mở cửa 24 giờ một ngày vào năm 1920, họ có quyền lựa chọn.",
+      "start": 355.53,
+      "duration": 3.11
+    },
+    {
+      "text": "Sit in the dark or get creative.",
+      "viText": "Ngồi trong bóng tối hoặc sáng tạo.",
+      "start": 358.64,
+      "duration": 2.11
+    },
+    {
+      "text": "And this is where the penny enters the story.",
+      "viText": "Và đây là lúc đồng xu bước vào câu chuyện.",
+      "start": 360.75,
+      "duration": 2.97
+    },
+    {
+      "text": "A copper penny.",
+      "viText": "Một xu đồng.",
+      "start": 363.72,
+      "duration": 2
+    },
+    {
+      "text": "[music] And in those days, pennies were solid copper, not the copper plated zinc",
+      "viText": "[âm nhạc] Và thời đó, đồng xu là đồng nguyên khối chứ không phải đồng mạ kẽm",
+      "start": 365.72,
+      "duration": 5.29
+    },
+    {
+      "text": "they use today.",
+      "viText": "họ sử dụng ngày nay.",
+      "start": 371.01,
+      "duration": 2
+    },
+    {
+      "text": "fit almost perfectly into the socket of a standard screw-in fuse.",
+      "viText": "gần như vừa vặn hoàn hảo với ổ cắm của cầu chì vít tiêu chuẩn.",
+      "start": 373.01,
+      "duration": 4.3
+    },
+    {
+      "text": "So, when a fuse blew and there was no replacement available, homeowners across America",
+      "viText": "Vì vậy, khi cầu chì bị đứt và không có cầu chì thay thế, các chủ nhà trên khắp nước Mỹ",
+      "start": 377.31,
+      "duration": 5.68
+    },
+    {
+      "text": "discovered that they could unscrew the blown fuse, drop a penny behind it, screw",
+      "viText": "phát hiện ra rằng họ có thể tháo cầu chì bị nổ, đánh rơi một xu phía sau nó, vặn vít",
+      "start": 382.99,
+      "duration": 5.29
+    },
+    {
+      "text": "the dead fuse back in, and the lights would come right back on.",
+      "viText": "cầu chì chết hoạt động trở lại và đèn sẽ sáng trở lại.",
+      "start": 388.28,
+      "duration": 4.16
+    },
+    {
+      "text": "Problem solved.",
+      "viText": "Vấn đề đã được giải quyết.",
+      "start": 392.44,
+      "duration": 2
+    },
+    {
+      "text": "Except the problem was not solved at all.",
+      "viText": "Ngoại trừ vấn đề không được giải quyết chút nào.",
+      "start": 394.44,
+      "duration": 2.71
+    },
+    {
+      "text": "The problem was now catastrophically worse.",
+      "viText": "Vấn đề giờ đây đã trở nên tồi tệ hơn một cách thảm khốc.",
+      "start": 397.15,
+      "duration": 2.84
+    },
+    {
+      "text": "A fuse is designed to be the weakest link in the circuit.",
+      "viText": "Cầu chì được thiết kế để trở thành mắt xích yếu nhất trong mạch điện.",
+      "start": 399.99,
+      "duration": 3.77
+    },
+    {
+      "text": "It melts at a specific current so the wiring behind it does not overheat.",
+      "viText": "Nó tan chảy ở một dòng điện cụ thể để hệ thống dây điện phía sau nó không bị quá nóng.",
+      "start": 403.76,
+      "duration": 4.82
+    },
+    {
+      "text": "That is the entire point.",
+      "viText": "Đó là toàn bộ vấn đề.",
+      "start": 408.58,
+      "duration": 2
+    },
+    {
+      "text": "The fuse sacrifices itself so your house does not catch fire.",
+      "viText": "Cầu chì hy sinh chính nó để ngôi nhà của bạn không bị cháy.",
+      "start": 410.58,
+      "duration": 4.03
+    },
+    {
+      "text": "A copper penny does not sacrifice itself.",
+      "viText": "Một đồng xu không hy sinh chính mình.",
+      "start": 414.61,
+      "duration": 2.71
+    },
+    {
+      "text": "A copper penny does not melt.",
+      "viText": "Một xu đồng không tan chảy.",
+      "start": 417.32,
+      "duration": 2
+    },
+    {
+      "text": "A copper penny will conduct any amount of current you push through it happily",
+      "viText": "Một đồng xu sẽ dẫn bất kỳ lượng dòng điện nào bạn đẩy qua nó một cách vui vẻ",
+      "start": 419.32,
+      "duration": 5.09
+    },
+    {
+      "text": "and indefinitely until the wiring behind it overheats, the insulation melts, and the dry",
+      "viText": "và vô thời hạn cho đến khi hệ thống dây điện phía sau nó quá nóng, lớp cách điện tan chảy và khô",
+      "start": 424.41,
+      "duration": 5.82
+    },
+    {
+      "text": "wooden framing inside your walls catches fire.",
+      "viText": "khung gỗ bên trong bức tường của bạn bắt lửa.",
+      "start": 430.23,
+      "duration": 3.04
+    },
+    {
+      "text": "By putting a penny behind the fuse, homeowners were removing the only safety device",
+      "viText": "Bằng cách đặt một đồng xu phía sau cầu chì, chủ nhà đã loại bỏ thiết bị an toàn duy nhất",
+      "start": 433.27,
+      "duration": 5.49
+    },
+    {
+      "text": "between the power grid and the wiring in their walls.",
+      "viText": "giữa lưới điện và hệ thống dây điện trong tường của họ.",
+      "start": 438.76,
+      "duration": 3.5
+    },
+    {
+      "text": "It was the electrical equivalent of disabling the brakes on your car because you",
+      "viText": "Nó tương đương với việc vô hiệu hóa hệ thống phanh trên ô tô của bạn vì bạn",
+      "start": 442.26,
+      "duration": 5.29
+    },
+    {
+      "text": "did not like stopping at red lights.",
+      "viText": "không thích dừng đèn đỏ.",
+      "start": 447.55,
+      "duration": 2.38
+    },
+    {
+      "text": "And human nature being what it is, most people who put a penny behind",
+      "viText": "Và bản chất con người là như vậy, hầu hết những người bỏ một xu ra sau",
+      "start": 449.93,
+      "duration": 4.56
+    },
+    {
+      "text": "a fuse left it there permanently.",
+      "viText": "một cầu chì đã để nó ở đó vĩnh viễn.",
+      "start": 454.49,
+      "duration": 2.18
+    },
+    {
+      "text": "The fuse looked normal from the outside.",
+      "viText": "Cầu chì nhìn từ bên ngoài thì bình thường.",
+      "start": 456.67,
+      "duration": 2.64
+    },
+    {
+      "text": "The lights worked.",
+      "viText": "Đèn đã hoạt động.",
+      "start": 459.31,
+      "duration": 2
+    },
+    {
+      "text": "Nobody thought about it again until the wiring behind the wall started glowing.",
+      "viText": "Không ai nghĩ về điều đó nữa cho đến khi hệ thống dây điện phía sau bức tường bắt đầu phát sáng.",
+      "start": 461.31,
+      "duration": 5.22
+    },
+    {
+      "text": "And if that were the only problem, early electricity might have been [music] manageable.",
+      "viText": "Và nếu đó là vấn đề duy nhất, thì điện thời kỳ đầu có thể được [âm nhạc] quản lý được.",
+      "start": 466.53,
+      "duration": 5.82
+    },
+    {
+      "text": "But something much larger was happening in the background.",
+      "viText": "Nhưng có điều gì đó lớn hơn nhiều đang diễn ra ở phía sau.",
+      "start": 472.35,
+      "duration": 3.83
+    },
+    {
+      "text": "Something that would make the safety crisis exponentially worse.",
+      "viText": "Điều gì đó có thể khiến cuộc khủng hoảng an toàn trở nên tồi tệ hơn theo cấp số nhân.",
+      "start": 476.18,
+      "duration": 4.23
+    },
+    {
+      "text": "While homeowners were figuring out how to wire their living rooms, two of the",
+      "viText": "Trong khi các chủ nhà đang tìm cách đi dây điện cho phòng khách của mình thì hai trong số",
+      "start": 480.41,
+      "duration": 5.09
+    },
+    {
+      "text": "most brilliant minds in the history of technology were fighting a war over which",
+      "viText": "những bộ óc thông minh nhất trong lịch sử công nghệ đang chiến đấu trong một cuộc chiến",
+      "start": 485.5,
+      "duration": 5.29
+    },
+    {
+      "text": "type of electricity would power the entire country.",
+      "viText": "loại điện sẽ cung cấp năng lượng cho cả nước.",
+      "start": 490.79,
+      "duration": 3.37
+    },
+    {
+      "text": "On one side was Thomas Edison, championing direct current, the system he had built",
+      "viText": "Một bên là Thomas Edison, người ủng hộ dòng điện một chiều, hệ thống mà ông đã xây dựng",
+      "start": 494.16,
+      "duration": 5.42
+    },
+    {
+      "text": "his empire on.",
+      "viText": "đế chế của mình trên.",
+      "start": 499.58,
+      "duration": 2
+    },
+    {
+      "text": "On the other side was George Westinghouse, backed by the genius of Nicola Tesla,",
+      "viText": "Phía bên kia là George Westinghouse, được hỗ trợ bởi thiên tài Nicola Tesla,",
+      "start": 501.58,
+      "duration": 5.29
+    },
+    {
+      "text": "pushing alternating current as the future of electrical power.",
+      "viText": "đẩy dòng điện xoay chiều là tương lai của năng lượng điện.",
+      "start": 506.87,
+      "duration": 4.1
+    },
+    {
+      "text": "The technical details matter here because they explain why the safety crisis got so",
+      "viText": "Các chi tiết kỹ thuật rất quan trọng ở đây vì chúng giải thích tại sao cuộc khủng hoảng an toàn lại xảy ra",
+      "start": 510.97,
+      "duration": 5.49
+    },
+    {
+      "text": "much worse so quickly.",
+      "viText": "tệ hơn nhiều một cách nhanh chóng.",
+      "start": 516.46,
+      "duration": 2
+    },
+    {
+      "text": "Edison's direct current system worked fine over short distances, but it could not efficiently",
+      "viText": "Hệ thống điện một chiều của Edison hoạt động tốt trong khoảng cách ngắn, nhưng không hiệu quả",
+      "start": 518.46,
+      "duration": 6.15
+    },
+    {
+      "text": "transmit electricity beyond about a mile from the power station.",
+      "viText": "truyền tải điện xa hơn khoảng một dặm từ nhà máy điện.",
+      "start": 524.61,
+      "duration": 4.23
+    },
+    {
+      "text": "That meant you needed a power plant in every neighborhood.",
+      "viText": "Điều đó có nghĩa là bạn cần một nhà máy điện ở mọi khu vực lân cận.",
+      "start": 528.84,
+      "duration": 3.83
+    },
+    {
+      "text": "His Pearl Street station in Manhattan served just a few blocks.",
+      "viText": "Nhà ga Pearl Street của ông ở Manhattan chỉ cách đó vài dãy nhà.",
+      "start": 532.67,
+      "duration": 4.16
+    },
+    {
+      "text": "To electrify an entire city, you would need dozens of stations, each one burning",
+      "viText": "Để điện khí hóa toàn bộ thành phố, bạn sẽ cần hàng chục trạm, mỗi trạm đều cháy",
+      "start": 536.83,
+      "duration": 5.29
+    },
+    {
+      "text": "coal and taking up valuable real estate.",
+      "viText": "than và chiếm giữ bất động sản có giá trị.",
+      "start": 542.12,
+      "duration": 2.64
+    },
+    {
+      "text": "The economics were brutal.",
+      "viText": "Nền kinh tế thật tàn bạo.",
+      "start": 544.76,
+      "duration": 2
+    },
+    {
+      "text": "Westinghouse and Tesla's alternating current solved the distance problem entirely.",
+      "viText": "Dòng điện xoay chiều của Westinghouse và Tesla đã giải quyết hoàn toàn vấn đề khoảng cách.",
+      "start": 546.76,
+      "duration": 5.42
+    },
+    {
+      "text": "AC could be stepped up to high voltages using transformers for long-d distanceance transmission,",
+      "viText": "AC có thể được tăng cường lên điện áp cao bằng cách sử dụng máy biến áp để truyền tải khoảng cách xa,",
+      "start": 552.18,
+      "duration": 6.34
+    },
+    {
+      "text": "then stepped back down to safe levels for home use.",
+      "viText": "sau đó giảm xuống mức an toàn để sử dụng tại nhà.",
+      "start": 558.52,
+      "duration": 3.37
+    },
+    {
+      "text": "One power plant could serve an entire city.",
+      "viText": "Một nhà máy điện có thể phục vụ cả một thành phố.",
+      "start": 561.89,
+      "duration": 2.84
+    },
+    {
+      "text": "The cost savings were enormous and the potential reach was virtually unlimited.",
+      "viText": "Tiết kiệm chi phí là rất lớn và phạm vi tiếp cận tiềm năng hầu như không giới hạn.",
+      "start": 564.73,
+      "duration": 5.22
+    },
+    {
+      "text": "Edison knew he was losing the technical argument.",
+      "viText": "Edison biết mình đang thua trong cuộc tranh luận về mặt kỹ thuật.",
+      "start": 569.95,
+      "duration": 3.24
+    },
+    {
+      "text": "His direct current empire, the power stations, the wiring infrastructure, the patents, all of",
+      "viText": "Đế chế dòng điện trực tiếp của ông, các nhà máy điện, cơ sở hạ tầng hệ thống dây điện, các bằng sáng chế, tất cả",
+      "start": 573.19,
+      "duration": 6.15
+    },
+    {
+      "text": "it was at risk.",
+      "viText": "nó đang gặp nguy hiểm.",
+      "start": 579.34,
+      "duration": 2
+    },
+    {
+      "text": "So, he did something that would define the public's relationship with electricity for a",
+      "viText": "Vì vậy, anh ấy đã làm điều gì đó để xác định mối quan hệ của công chúng với điện cho một",
+      "start": 581.34,
+      "duration": 5.75
+    },
+    {
+      "text": "generation.",
+      "viText": "thế hệ.",
+      "start": 587.09,
+      "duration": 2
+    },
+    {
+      "text": "He launched a fear campaign.",
+      "viText": "Anh ta đã phát động một chiến dịch gây sợ hãi.",
+      "start": 589.09,
+      "duration": 2
+    },
+    {
+      "text": "Edison hired an engineer named Harold P.",
+      "viText": "Edison đã thuê một kỹ sư tên là Harold P.",
+      "start": 591.09,
+      "duration": 2.64
+    },
+    {
+      "text": "Brown and gave him access to his laboratory.",
+      "viText": "Brown và cho phép anh ta vào phòng thí nghiệm của mình.",
+      "start": 593.73,
+      "duration": 2.91
+    },
+    {
+      "text": "Brown then staged public demonstrations where stray animals were electrocuted using Westinghouse's alternating current",
+      "viText": "Brown sau đó đã tổ chức các cuộc biểu tình công khai trong đó những con vật đi lạc bị điện giật bằng dòng điện xoay chiều của Westinghouse",
+      "start": 596.64,
+      "duration": 7.8
+    },
+    {
+      "text": "equipment.",
+      "viText": "thiết bị.",
+      "start": 604.44,
+      "duration": 2
+    },
+    {
+      "text": "The goal was to convince the American public that AC was a killer current",
+      "viText": "Mục đích là để thuyết phục công chúng Mỹ rằng AC là một kẻ giết người hiện tại",
+      "start": 606.44,
+      "duration": 4.82
+    },
+    {
+      "text": "too dangerous to bring into their homes.",
+      "viText": "quá nguy hiểm để mang vào nhà của họ.",
+      "start": 611.26,
+      "duration": 2.64
+    },
+    {
+      "text": "Edison even tried to turn the name of his competitor into a verb.",
+      "viText": "Edison thậm chí còn cố gắng biến tên đối thủ của mình thành một động từ.",
+      "start": 613.9,
+      "duration": 4.3
+    },
+    {
+      "text": "He wanted Westingous to become a common term meaning death by electrocution.",
+      "viText": "Ông muốn Westingous trở thành một thuật ngữ phổ biến có nghĩa là chết do điện giật.",
+      "start": 618.2,
+      "duration": 5.02
+    },
+    {
+      "text": "If you are wondering how that is even legal, so is everyone else.",
+      "viText": "Nếu bạn đang thắc mắc làm thế nào điều đó lại hợp pháp, thì những người khác cũng vậy.",
+      "start": 623.22,
+      "duration": 4.3
+    },
+    {
+      "text": "The propaganda went further.",
+      "viText": "Việc tuyên truyền đã đi xa hơn.",
+      "start": 627.52,
+      "duration": 2
+    },
+    {
+      "text": "With Edison's backing, the New York State Legislature approved the use of electrocution for",
+      "viText": "Với sự ủng hộ của Edison, Cơ quan lập pháp bang New York đã chấp thuận việc sử dụng phương pháp điện giật đối với",
+      "start": 629.52,
+      "duration": 6.01
+    },
+    {
+      "text": "capital punishment.",
+      "viText": "hình phạt tử hình.",
+      "start": 635.53,
+      "duration": 2
+    },
+    {
+      "text": "The first electric chair was deliberately designed to run on Westinghouse's alternating current.",
+      "viText": "Chiếc ghế điện đầu tiên được thiết kế có chủ ý để chạy bằng dòng điện xoay chiều của Westinghouse.",
+      "start": 637.53,
+      "duration": 6.34
+    },
+    {
+      "text": "On August 6th, 1890, a convicted murderer named William Kemler became the first person",
+      "viText": "Vào ngày 6 tháng 8 năm 1890, một kẻ sát nhân bị kết án tên là William Kemler đã trở thành người đầu tiên",
+      "start": 643.87,
+      "duration": 5.68
+    },
+    {
+      "text": "executed by electric chair.",
+      "viText": "thực hiện bằng ghế điện.",
+      "start": 649.55,
+      "duration": 2
+    },
+    {
+      "text": "The execution was botched.",
+      "viText": "Cuộc hành quyết đã thất bại.",
+      "start": 651.55,
+      "duration": 2
+    },
+    {
+      "text": "It took two jolts and 8 minutes to kill him.",
+      "viText": "Phải mất hai cú sốc và 8 phút để giết anh ta.",
+      "start": 653.55,
+      "duration": 2.91
+    },
+    {
+      "text": "Witnesses described it as far worse than hanging, and that was exactly the point.",
+      "viText": "Các nhân chứng mô tả nó còn tệ hơn nhiều so với việc treo cổ, và đó chính xác là vấn đề.",
+      "start": 656.46,
+      "duration": 5.35
+    },
+    {
+      "text": "Edison wanted the public to associate Westinghouse's electrical system with death.",
+      "viText": "Edison muốn công chúng liên tưởng hệ thống điện của Westinghouse với cái chết.",
+      "start": 661.81,
+      "duration": 5.42
+    },
+    {
+      "text": "Meanwhile, the actual deaths from electricity were happening not in execution chambers, but in",
+      "viText": "Trong khi đó, những cái chết thực sự do điện không xảy ra ở phòng hành quyết mà ở",
+      "start": 667.23,
+      "duration": 6.21
+    },
+    {
+      "text": "the streets of American cities.",
+      "viText": "đường phố của các thành phố Mỹ.",
+      "start": 673.44,
+      "duration": 2.05
+    },
+    {
+      "text": "In 1889, a New York City lineman named John Fees was electrocuted when he",
+      "viText": "Năm 1889, một người lính đường dây của Thành phố New York tên là John Fees đã bị điện giật khi",
+      "start": 675.49,
+      "duration": 4.82
+    },
+    {
+      "text": "accidentally touched crossing wires while working on a utility pole.",
+      "viText": "vô tình chạm vào dây điện khi đang làm việc trên cột điện.",
+      "start": 680.31,
+      "duration": 4.49
+    },
+    {
+      "text": "He died in front of a crowd of onlookers in broad daylight.",
+      "viText": "Anh ta chết trước sự chứng kiến ​​​​của đông đảo người xem giữa thanh thiên bạch nhật.",
+      "start": 684.8,
+      "duration": 3.9
+    },
+    {
+      "text": "The incident helped create the word electrocute, a combination of electric and execute, and",
+      "viText": "Vụ việc đã góp phần tạo ra từ điện giật, sự kết hợp giữa điện và thực thi, và",
+      "start": 688.7,
+      "duration": 6.01
+    },
+    {
+      "text": "it forced the city to start burying its power lines underground.",
+      "viText": "nó buộc thành phố phải bắt đầu chôn các đường dây điện dưới lòng đất.",
+      "start": 694.71,
+      "duration": 4.23
+    },
+    {
+      "text": "This decision seemed small at the time.",
+      "viText": "Quyết định này vào thời điểm đó có vẻ nhỏ nhặt.",
+      "start": 698.94,
+      "duration": 2.58
+    },
+    {
+      "text": "It was not.",
+      "viText": "Không phải vậy.",
+      "start": 701.52,
+      "duration": 2
+    },
+    {
+      "text": "The war of currents was creating a climate of genuine public terror around electricity.",
+      "viText": "Cuộc chiến giữa các dòng điện đang tạo ra một bầu không khí khủng bố thực sự trong cộng đồng xung quanh vấn đề điện.",
+      "start": 703.52,
+      "duration": 5.75
+    },
+    {
+      "text": "And that fear was not entirely misplaced.",
+      "viText": "Và nỗi sợ hãi đó không hoàn toàn đặt sai chỗ.",
+      "start": 709.27,
+      "duration": 2.71
+    },
+    {
+      "text": "People were dying, homes were burning, and the safety technology was not keeping pace",
+      "viText": "Người chết, nhà cháy, công nghệ an toàn không theo kịp",
+      "start": 711.98,
+      "duration": 5.62
+    },
+    {
+      "text": "with the speed at which electricity was being rolled out across the country.",
+      "viText": "với tốc độ cung cấp điện trên toàn quốc.",
+      "start": 717.6,
+      "duration": 5.02
+    },
+    {
+      "text": "The turning point in the war of currents came in 1893 at the Chicago",
+      "viText": "Bước ngoặt của cuộc chiến dòng chảy xảy ra vào năm 1893 tại Chicago",
+      "start": 722.62,
+      "duration": 4.49
+    },
+    {
+      "text": "World's Fair.",
+      "viText": "Hội chợ thế giới.",
+      "start": 727.11,
+      "duration": 2
+    },
+    {
+      "text": "Westinghouse won the contract to illuminate the fairgrounds by massively underbidding Edison.",
+      "viText": "Westinghouse đã giành được hợp đồng chiếu sáng các khu hội chợ bằng cách trả giá thấp hơn cho Edison một cách ồ ạt.",
+      "start": 729.11,
+      "duration": 6.15
+    },
+    {
+      "text": "The result was spectacular.",
+      "viText": "Kết quả thật ngoạn mục.",
+      "start": 735.26,
+      "duration": 2
+    },
+    {
+      "text": "Hundreds of thousands of light bulbs powered by alternating current lit up the exposition",
+      "viText": "Hàng trăm nghìn bóng đèn chạy bằng dòng điện xoay chiều thắp sáng triển lãm",
+      "start": 737.26,
+      "duration": 5.88
+    },
+    {
+      "text": "grounds in a display that proved AC was both reliable and safe when properly",
+      "viText": "căn cứ trong một màn hình chứng minh AC vừa đáng tin cậy vừa an toàn khi sử dụng đúng cách",
+      "start": 743.14,
+      "duration": 5.02
+    },
+    {
+      "text": "installed.",
+      "viText": "đã cài đặt.",
+      "start": 748.16,
+      "duration": 2
+    },
+    {
+      "text": "3 years later in 1896, Westinghouse built the generators at Niagara Falls that sent",
+      "viText": "3 năm sau vào năm 1896, Westinghouse chế tạo máy phát điện ở Thác Niagara để gửi",
+      "start": 750.16,
+      "duration": 5.49
+    },
+    {
+      "text": "alternating current 26 mi to the city of Buffalo, New York.",
+      "viText": "dòng điện xoay chiều 26 dặm tới thành phố Buffalo, New York.",
+      "start": 755.65,
+      "duration": 3.9
+    },
+    {
+      "text": "The war was over.",
+      "viText": "Chiến tranh đã kết thúc.",
+      "start": 759.55,
+      "duration": 2
+    },
+    {
+      "text": "AC had won.",
+      "viText": "AC đã thắng.",
+      "start": 761.55,
+      "duration": 2
+    },
+    {
+      "text": "But here was the problem.",
+      "viText": "Nhưng đây chính là vấn đề.",
+      "start": 763.55,
+      "duration": 2
+    },
+    {
+      "text": "The type of current had been decided.",
+      "viText": "Loại dòng điện đã được quyết định.",
+      "start": 765.55,
+      "duration": 2.45
+    },
+    {
+      "text": "The safety infrastructure [music] to protect people using that current had not.",
+      "viText": "Cơ sở hạ tầng an toàn [âm nhạc] để bảo vệ người sử dụng dòng điện đó đã không có.",
+      "start": 768,
+      "duration": 5.22
+    },
+    {
+      "text": "Alternating current was more efficient, but it was also more dangerous in some ways.",
+      "viText": "Dòng điện xoay chiều hiệu quả hơn nhưng cũng nguy hiểm hơn ở một khía cạnh nào đó.",
+      "start": 773.22,
+      "duration": 5.55
+    },
+    {
+      "text": "AC could deliver higher voltages, which meant the consequences of a fault or a",
+      "viText": "AC có thể cung cấp điện áp cao hơn, điều đó có nghĩa là hậu quả của sự cố hoặc",
+      "start": 778.77,
+      "duration": 5.16
+    },
+    {
+      "text": "short circuit were more severe, and the protective technology in most homes was still",
+      "viText": "đoản mạch ngày càng nghiêm trọng hơn và công nghệ bảo vệ ở hầu hết các gia đình vẫn còn",
+      "start": 783.93,
+      "duration": 5.62
+    },
+    {
+      "text": "the same single-use fuse Edison had chosen back in 1879.",
+      "viText": "cầu chì dùng một lần tương tự mà Edison đã chọn vào năm 1879.",
+      "start": 789.55,
+      "duration": 3.7
+    },
+    {
+      "text": "For a while, things actually seemed fine.",
+      "viText": "Trong một thời gian, mọi thứ thực sự có vẻ ổn.",
+      "start": 793.25,
+      "duration": 2.71
+    },
+    {
+      "text": "Electricity was spreading across America at an incredible rate.",
+      "viText": "Điện đã lan rộng khắp nước Mỹ với tốc độ đáng kinh ngạc.",
+      "start": 795.96,
+      "duration": 4.16
+    },
+    {
+      "text": "By the early 1900s, major cities were largely electrified, and the technology was pushing",
+      "viText": "Vào đầu những năm 1900, các thành phố lớn phần lớn đã được điện khí hóa và công nghệ ngày càng phát triển",
+      "start": 800.12,
+      "duration": 5.88
+    },
+    {
+      "text": "into smaller towns and rural areas.",
+      "viText": "tới các thị trấn nhỏ hơn và các khu vực nông thôn.",
+      "start": 806,
+      "duration": 2.31
+    },
+    {
+      "text": "People were adding more electrical devices to their homes.",
+      "viText": "Mọi người đang bổ sung thêm nhiều thiết bị điện vào nhà của họ.",
+      "start": 808.31,
+      "duration": 3.83
+    },
+    {
+      "text": "Things like electric irons, toasters, [music] and fans.",
+      "viText": "Những thứ như bàn là điện, lò nướng bánh, [âm nhạc] và quạt.",
+      "start": 812.14,
+      "duration": 3.64
+    },
+    {
+      "text": "Each new appliance drew more current through wiring that had been designed to handle",
+      "viText": "Mỗi thiết bị mới tiêu thụ nhiều dòng điện hơn thông qua hệ thống dây điện được thiết kế để xử lý",
+      "start": 815.78,
+      "duration": 5.55
+    },
+    {
+      "text": "nothing more than a few light bulbs, and maybe a single ceiling fan.",
+      "viText": "không gì khác hơn là một vài bóng đèn và có thể là một chiếc quạt trần.",
+      "start": 821.33,
+      "duration": 4.49
+    },
+    {
+      "text": "And no, I am not making that up.",
+      "viText": "Và không, tôi không bịa ra điều đó.",
+      "start": 825.82,
+      "duration": 2.11
+    },
+    {
+      "text": "The original knob and tube circuits in most homes were rated for about 15",
+      "viText": "Các mạch núm và ống ban đầu ở hầu hết các gia đình được đánh giá khoảng 15",
+      "start": 827.93,
+      "duration": 4.82
+    },
+    {
+      "text": "amps.",
+      "viText": "amps.",
+      "start": 832.75,
+      "duration": 2
+    },
+    {
+      "text": "A single modern haird dryer pulls 12.",
+      "viText": "Một chiếc máy sấy tóc hiện đại duy nhất kéo được 12.",
+      "start": 834.75,
+      "duration": 2.45
+    },
+    {
+      "text": "An electric iron in 1910 pulled roughly the same.",
+      "viText": "Một chiếc bàn ủi điện vào năm 1910 cũng có sức hút tương tự.",
+      "start": 837.2,
+      "duration": 3.24
+    },
+    {
+      "text": "So, a homeowner running an iron in the kitchen while someone else had a",
+      "viText": "Vì vậy, một chủ nhà đang cầm bàn ủi trong bếp trong khi người khác có",
+      "start": 840.44,
+      "duration": 4.69
+    },
+    {
+      "text": "few lights on in the bedroom could push a circuit right to its limit.",
+      "viText": "vài ngọn đèn bật sáng trong phòng ngủ có thể đẩy mạch điện đến giới hạn của nó.",
+      "start": 845.13,
+      "duration": 4.56
+    },
+    {
+      "text": "Add a second appliance, a toaster, or a fan, and the fuse would blow.",
+      "viText": "Thêm thiết bị thứ hai, máy nướng bánh mì hoặc quạt, cầu chì sẽ nổ.",
+      "start": 849.69,
+      "duration": 4.56
+    },
+    {
+      "text": "Reset it enough times and eventually somebody reached for a penny.",
+      "viText": "Đặt lại nó đủ lần và cuối cùng cũng có người kiếm được một xu.",
+      "start": 854.25,
+      "duration": 4.36
+    },
+    {
+      "text": "The factories were dealing with the same problem at an industrial scale.",
+      "viText": "Các nhà máy đang phải đối mặt với vấn đề tương tự ở quy mô công nghiệp.",
+      "start": 858.61,
+      "duration": 4.76
+    },
+    {
+      "text": "Every blown fuse meant a production line stopped.",
+      "viText": "Mỗi cầu chì bị nổ đồng nghĩa với việc dây chuyền sản xuất phải dừng lại.",
+      "start": 863.37,
+      "duration": 3.24
+    },
+    {
+      "text": "Workers had to track down the fuse, replace it, and restart the equipment.",
+      "viText": "Các công nhân đã phải tìm cầu chì, thay thế và khởi động lại thiết bị.",
+      "start": 866.61,
+      "duration": 4.89
+    },
+    {
+      "text": "In a large factory with dozens or hundreds of fused circuits, maintenance crews spent",
+      "viText": "Trong một nhà máy lớn với hàng chục, hàng trăm mạch cầu chì, các đội bảo trì đã phải tốn nhiều công sức",
+      "start": 871.5,
+      "duration": 5.62
+    },
+    {
+      "text": "entire shifts doing nothing but swapping out blown fuses.",
+      "viText": "toàn bộ ca làm việc không làm gì khác ngoài việc thay cầu chì bị nổ.",
+      "start": 877.12,
+      "duration": 3.77
+    },
+    {
+      "text": "The frustration drove the same dangerous behavior you saw in homes.",
+      "viText": "Sự thất vọng đã dẫn đến hành vi nguy hiểm tương tự như bạn đã thấy ở nhà.",
+      "start": 880.89,
+      "duration": 4.43
+    },
+    {
+      "text": "Workers and factory managers started bypassing fuses with copper wire, thick nails, or whatever",
+      "viText": "Công nhân và quản lý nhà máy bắt đầu bắc cầu chì bằng dây đồng, đinh dày hoặc bất cứ thứ gì",
+      "start": 885.32,
+      "duration": 6.28
+    },
+    {
+      "text": "conductive material they could find.",
+      "viText": "vật liệu dẫn điện mà họ có thể tìm thấy.",
+      "start": 891.6,
+      "duration": 2.38
+    },
+    {
+      "text": "The protection disappeared.",
+      "viText": "Sự bảo vệ biến mất.",
+      "start": 893.98,
+      "duration": 2
+    },
+    {
+      "text": "The wiring overheated, and massive structural fires resulted from these shortcuts.",
+      "viText": "Hệ thống dây điện quá nóng và các vụ cháy công trình lớn xảy ra do những lối tắt này.",
+      "start": 895.98,
+      "duration": 5.42
+    },
+    {
+      "text": "That did not last.",
+      "viText": "Điều đó không kéo dài.",
+      "start": 901.4,
+      "duration": 2
+    },
+    {
+      "text": "The first real attempt to fix the safety problem came in 1898 when the",
+      "viText": "Nỗ lực thực sự đầu tiên nhằm khắc phục vấn đề an toàn diễn ra vào năm 1898 khi",
+      "start": 903.4,
+      "duration": 4.63
+    },
+    {
+      "text": "Boston Electric Light Company installed what is generally considered the first commercial circuit breaker.",
+      "viText": "Công ty Đèn điện Boston đã lắp đặt thiết bị thường được coi là cầu dao thương mại đầu tiên.",
+      "start": 908.03,
+      "duration": 7.01
+    },
+    {
+      "text": "It was a far cry from the neat little devices in your electrical panel",
+      "viText": "Nó khác xa với những thiết bị nhỏ gọn trong bảng điện của bạn",
+      "start": 915.04,
+      "duration": 4.63
+    },
+    {
+      "text": "today.",
+      "viText": "Hôm nay.",
+      "start": 919.67,
+      "duration": 2
+    },
+    {
+      "text": "It used an oil tank to absorb the heat generated when the circuit was",
+      "viText": "Nó dùng bình dầu để hấp thụ nhiệt sinh ra khi mạch",
+      "start": 921.67,
+      "duration": 4.56
+    },
+    {
+      "text": "broken.",
+      "viText": "vỡ.",
+      "start": 926.23,
+      "duration": 2
+    },
+    {
+      "text": "And it had to be manually operated, but it was a start.",
+      "viText": "Và nó phải được vận hành bằng tay, nhưng đó chỉ là sự khởi đầu.",
+      "start": 928.23,
+      "duration": 3.64
+    },
+    {
+      "text": "It could interrupt a circuit and then be reset instead of requiring a new",
+      "viText": "Nó có thể làm gián đoạn một mạch điện và sau đó được thiết lập lại thay vì yêu cầu một",
+      "start": 931.87,
+      "duration": 4.82
+    },
+    {
+      "text": "fuse every time.",
+      "viText": "mới cầu chì mọi lúc.",
+      "start": 936.69,
+      "duration": 2
+    },
+    {
+      "text": "It was progress, but it was slow progress.",
+      "viText": "Đó là sự tiến bộ, nhưng đó là sự tiến bộ chậm.",
+      "start": 938.69,
+      "duration": 2.78
+    },
+    {
+      "text": "And it was industrial progress, not residential.",
+      "viText": "Và đó là sự tiến bộ công nghiệp, không phải khu dân cư.",
+      "start": 941.47,
+      "duration": 3.17
+    },
+    {
+      "text": "The Boston Breaker protected a power station, not a family's living room.",
+      "viText": "Boston Breaker bảo vệ một trạm điện chứ không phải phòng khách của một gia đình.",
+      "start": 944.64,
+      "duration": 4.82
+    },
+    {
+      "text": "The oil tank alone made it impractical for home use.",
+      "viText": "Chỉ riêng thùng dầu đã khiến nó không thể sử dụng được trong gia đình.",
+      "start": 949.46,
+      "duration": 3.44
+    },
+    {
+      "text": "You were not going to install a device the size of a small barrel",
+      "viText": "Bạn sẽ không lắp đặt một thiết bị có kích thước bằng một cái thùng nhỏ",
+      "start": 952.9,
+      "duration": 4.3
+    },
+    {
+      "text": "in somebody's kitchen.",
+      "viText": "trong nhà bếp của ai đó.",
+      "start": 957.2,
+      "duration": 2
+    },
+    {
+      "text": "2 years later, around 1900, an inventor named Granville Woods took the concept further.",
+      "viText": "2 năm sau, khoảng năm 1900, một nhà phát minh tên là Granville Woods đã đưa khái niệm này đi xa hơn.",
+      "start": 959.2,
+      "duration": 5.75
+    },
+    {
+      "text": "Woods was a self-taught African-Amean engineer who had already patented dozens of inventions, many",
+      "viText": "Woods là một kỹ sư người Mỹ gốc Phi tự học, người đã được cấp bằng sáng chế cho hàng chục phát minh, trong đó có nhiều",
+      "start": 964.95,
+      "duration": 6.48
+    },
+    {
+      "text": "of them for the railroad industry.",
+      "viText": "trong số đó dành cho ngành đường sắt.",
+      "start": 971.43,
+      "duration": 2.25
+    },
+    {
+      "text": "He is the person who gave us the word trolley from his design for",
+      "viText": "Anh ấy là người đã cho chúng tôi từ xe đẩy trong thiết kế của anh ấy cho",
+      "start": 973.68,
+      "duration": 4.3
+    },
+    {
+      "text": "the grooved wheel that connected street cars to overhead power lines.",
+      "viText": "bánh xe có rãnh nối xe ô tô đường phố với đường dây điện trên cao.",
+      "start": 977.98,
+      "duration": 4.56
+    },
+    {
+      "text": "Woods looked at the existing circuit breaker designs and saw the fundamental flaw.",
+      "viText": "Woods đã xem xét các thiết kế cầu dao hiện có và nhận ra sai sót cơ bản.",
+      "start": 982.54,
+      "duration": 5.42
+    },
+    {
+      "text": "They were manual.",
+      "viText": "Họ đã làm thủ công.",
+      "start": 987.96,
+      "duration": 2
+    },
+    {
+      "text": "Someone had to physically operate them.",
+      "viText": "Ai đó đã phải vận hành chúng.",
+      "start": 989.96,
+      "duration": 2.58
+    },
+    {
+      "text": "If a fault happened in the middle of the night or when nobody was",
+      "viText": "Nếu xảy ra lỗi vào lúc nửa đêm hoặc khi không có người",
+      "start": 992.54,
+      "duration": 4.3
+    },
+    {
+      "text": "near the breaker, it did nothing.",
+      "viText": "gần cầu dao, nó không làm gì cả.",
+      "start": 996.84,
+      "duration": 2.18
+    },
+    {
+      "text": "So Woods invented the automatic circuit breaker, a device that could detect an overload",
+      "viText": "Vì vậy Woods đã phát minh ra cầu dao tự động, một thiết bị có thể phát hiện tình trạng quá tải",
+      "start": 999.02,
+      "duration": 5.75
+    },
+    {
+      "text": "and break the circuit on its own without any human intervention.",
+      "viText": "và tự ngắt mạch mà không cần sự can thiệp của con người.",
+      "start": 1004.77,
+      "duration": 4.23
+    },
+    {
+      "text": "It was a concept that should have changed everything.",
+      "viText": "Đó là một khái niệm đáng lẽ phải thay đổi mọi thứ.",
+      "start": 1009,
+      "duration": 3.5
+    },
+    {
+      "text": "But it did not.",
+      "viText": "Nhưng điều đó đã không xảy ra.",
+      "start": 1012.5,
+      "duration": 2
+    },
+    {
+      "text": "Not yet.",
+      "viText": "Chưa.",
+      "start": 1014.5,
+      "duration": 2
+    },
+    {
+      "text": "Woods had solved the conceptual problem.",
+      "viText": "Woods đã giải quyết được vấn đề về khái niệm.",
+      "start": 1016.5,
+      "duration": 2.64
+    },
+    {
+      "text": "The automatic circuit breaker could detect a dangerous condition and respond without waiting for",
+      "viText": "Bộ ngắt mạch tự động có thể phát hiện tình trạng nguy hiểm và phản hồi mà không cần chờ",
+      "start": 1019.14,
+      "duration": 6.34
+    },
+    {
+      "text": "a human being to notice and act.",
+      "viText": "con người chú ý và hành động.",
+      "start": 1025.48,
+      "duration": 2.11
+    },
+    {
+      "text": "But the engineering was not ready for mass production.",
+      "viText": "Nhưng kỹ thuật vẫn chưa sẵn sàng để sản xuất hàng loạt.",
+      "start": 1027.59,
+      "duration": 3.57
+    },
+    {
+      "text": "The devices were bulky, expensive, and inconsistent in how they performed.",
+      "viText": "Các thiết bị này cồng kềnh, đắt tiền và không nhất quán về cách thức hoạt động.",
+      "start": 1031.16,
+      "duration": 4.89
+    },
+    {
+      "text": "They worked well enough for railroad applications and large industrial settings where the cost",
+      "viText": "Chúng hoạt động đủ tốt cho các ứng dụng đường sắt và các cơ sở công nghiệp lớn nơi chi phí",
+      "start": 1036.05,
+      "duration": 6.21
+    },
+    {
+      "text": "of a single breaker was justified by the value of the equipment it protected.",
+      "viText": "của một cầu dao duy nhất được chứng minh bằng giá trị của thiết bị mà nó bảo vệ.",
+      "start": 1042.26,
+      "duration": 5.09
+    },
+    {
+      "text": "But for a private home where the entire electrical system might have cost $50",
+      "viText": "Nhưng đối với một ngôi nhà riêng, nơi toàn bộ hệ thống điện có thể có giá $50",
+      "start": 1047.35,
+      "duration": 5.09
+    },
+    {
+      "text": "to install, nobody was going to pay $20 for a single protective device.",
+      "viText": "để lắp đặt, không ai chịu trả 20 USD cho một thiết bị bảo vệ.",
+      "start": 1052.44,
+      "duration": 4.69
+    },
+    {
+      "text": "So, the gap persisted.",
+      "viText": "Vì vậy, khoảng cách vẫn tồn tại.",
+      "start": 1057.13,
+      "duration": 2
+    },
+    {
+      "text": "The concept of the automatic circuit breaker existed.",
+      "viText": "Khái niệm về cầu dao tự động đã tồn tại.",
+      "start": 1059.13,
+      "duration": 3.5
+    },
+    {
+      "text": "The engineering to make it practical for residential use did not.",
+      "viText": "Kỹ thuật làm cho nó trở nên thiết thực cho mục đích sử dụng dân dụng thì không.",
+      "start": 1062.63,
+      "duration": 4.3
+    },
+    {
+      "text": "Homes continued to rely on fuse boxes.",
+      "viText": "Các ngôi nhà tiếp tục dựa vào hộp cầu chì.",
+      "start": 1066.93,
+      "duration": 2.51
+    },
+    {
+      "text": "Homeowners continued to put pennies behind blown fuses and houses continued to catch fire.",
+      "viText": "Các chủ nhà tiếp tục bỏ những đồng xu vào sau những chiếc cầu chì bị nổ và những ngôi nhà tiếp tục bốc cháy.",
+      "start": 1069.44,
+      "duration": 5.95
+    },
+    {
+      "text": "What made this period so frustrating looking back is that everyone involved knew the",
+      "viText": "Điều khiến khoảng thời gian này trở nên khó chịu khi nhìn lại là tất cả những người tham gia đều biết",
+      "start": 1075.39,
+      "duration": 5.55
+    },
+    {
+      "text": "fuse system was inadequate.",
+      "viText": "hệ thống cầu chì không đủ.",
+      "start": 1080.94,
+      "duration": 2
+    },
+    {
+      "text": "Electricians knew it.",
+      "viText": "Thợ điện biết điều đó.",
+      "start": 1082.94,
+      "duration": 2
+    },
+    {
+      "text": "Fire departments knew it.",
+      "viText": "Sở cứu hỏa biết điều đó.",
+      "start": 1084.94,
+      "duration": 2
+    },
+    {
+      "text": "Insurance companies knew it because they were paying out claims for electrical fires at",
+      "viText": "Các công ty bảo hiểm biết điều đó vì họ đang chi trả các yêu cầu bồi thường cho các vụ cháy điện tại",
+      "start": 1086.94,
+      "duration": 5.75
+    },
+    {
+      "text": "an increasing rate.",
+      "viText": "một tỷ lệ ngày càng tăng.",
+      "start": 1092.69,
+      "duration": 2
+    },
+    {
+      "text": "But the market had no affordable alternative, and the regulatory framework to force one",
+      "viText": "Nhưng thị trường không có giải pháp thay thế hợp lý và khung pháp lý buộc phải có",
+      "start": 1094.69,
+      "duration": 5.75
+    },
+    {
+      "text": "did not exist yet.",
+      "viText": "vẫn chưa tồn tại.",
+      "start": 1100.44,
+      "duration": 2
+    },
+    {
+      "text": "Electrical codes were local, inconsistent, and often uninforced.",
+      "viText": "Mã điện mang tính cục bộ, không nhất quán và thường không được thực thi.",
+      "start": 1102.44,
+      "duration": 4.23
+    },
+    {
+      "text": "A homeowner in New York might have different safety requirements than a homeowner in",
+      "viText": "Chủ nhà ở New York có thể có các yêu cầu an toàn khác với chủ nhà ở",
+      "start": 1106.67,
+      "duration": 5.55
+    },
+    {
+      "text": "Chicago, and a homeowner in rural Kansas might have no requirements at all.",
+      "viText": "Chicago và một chủ nhà ở vùng nông thôn Kansas có thể không có yêu cầu nào cả.",
+      "start": 1112.22,
+      "duration": 4.96
+    },
+    {
+      "text": "If you're finding this interesting, hit subscribe.",
+      "viText": "Nếu bạn thấy điều này thú vị, hãy nhấn đăng ký.",
+      "start": 1117.18,
+      "duration": 3.3
+    },
+    {
+      "text": "We cover stories like this every week.",
+      "viText": "Chúng tôi đưa tin về những câu chuyện như thế này hàng tuần.",
+      "start": 1120.48,
+      "duration": 2.51
+    },
+    {
+      "text": "By the early 1920s, the electrification of private homes in Europe and America was",
+      "viText": "Vào đầu những năm 1920, việc điện khí hóa các ngôi nhà riêng ở Châu Âu và Châu Mỹ là",
+      "start": 1122.99,
+      "duration": 5.42
+    },
+    {
+      "text": "accelerating faster than the safety standards could keep up.",
+      "viText": "tăng tốc nhanh hơn mức tiêu chuẩn an toàn có thể theo kịp.",
+      "start": 1128.41,
+      "duration": 3.97
+    },
+    {
+      "text": "More buildings were getting wired every month.",
+      "viText": "Nhiều tòa nhà được nối dây mỗi tháng.",
+      "start": 1132.38,
+      "duration": 3.04
+    },
+    {
+      "text": "More electrical appliances were hitting the market.",
+      "viText": "Nhiều thiết bị điện hơn đã được tung ra thị trường.",
+      "start": 1135.42,
+      "duration": 3.37
+    },
+    {
+      "text": "And the fuse, that simple strip of metal Edison had chosen over the mechanical",
+      "viText": "Và cầu chì, dải kim loại đơn giản mà Edison đã chọn thay vì cầu chì cơ khí",
+      "start": 1138.79,
+      "duration": 5.16
+    },
+    {
+      "text": "circuit breaker 40 years earlier, was proving woefully inadequate for the job.",
+      "viText": "cầu dao 40 năm trước đã tỏ ra không phù hợp một cách đáng tiếc cho công việc.",
+      "start": 1143.95,
+      "duration": 5.16
+    },
+    {
+      "text": "Enter Hugo St.",
+      "viText": "Vào đường Hugo",
+      "start": 1149.11,
+      "duration": 2
+    },
+    {
+      "text": "was a German engineer who had founded an electrical engineering company in Mannheim, Germany",
+      "viText": "là một kỹ sư người Đức, người đã thành lập một công ty kỹ thuật điện ở Mannheim, Đức",
+      "start": 1151.11,
+      "duration": 6.08
+    },
+    {
+      "text": "back in 1891.",
+      "viText": "trở lại năm 1891.",
+      "start": 1157.19,
+      "duration": 2
+    },
+    {
+      "text": "He spent decades working on electrical safety.",
+      "viText": "Ông đã dành nhiều thập kỷ làm việc về an toàn điện.",
+      "start": 1159.19,
+      "duration": 3.04
+    },
+    {
+      "text": "And by the early 1920s, he and his chief engineer, Hinrich Shakner, had developed",
+      "viText": "Và đến đầu những năm 1920, ông và kỹ sư trưởng của mình, Hinrich Shakner, đã phát triển",
+      "start": 1162.23,
+      "duration": 5.35
+    },
+    {
+      "text": "something that nobody else had been able to build, a miniature circuit breaker, small",
+      "viText": "thứ mà không ai khác có thể chế tạo được, một cầu dao thu nhỏ, nhỏ",
+      "start": 1167.58,
+      "duration": 5.62
+    },
+    {
+      "text": "enough and cheap enough to install in a private home.",
+      "viText": "đủ và đủ rẻ để lắp đặt tại nhà riêng.",
+      "start": 1173.2,
+      "duration": 3.5
+    },
+    {
+      "text": "Their design combined two different trip mechanisms in a single device.",
+      "viText": "Thiết kế của họ kết hợp hai cơ chế ngắt khác nhau trong một thiết bị duy nhất.",
+      "start": 1176.7,
+      "duration": 4.69
+    },
+    {
+      "text": "a thermal element, a biometallic strip that bent when it got too hot from",
+      "viText": "một bộ phận nhiệt, một dải sinh kim bị uốn cong khi quá nóng từ",
+      "start": 1181.39,
+      "duration": 4.82
+    },
+    {
+      "text": "sustained overcurren, and a magnetic element, an electromagnet that would trip instantly in the",
+      "viText": "dòng điện quá dòng duy trì và một phần tử từ tính, một nam châm điện sẽ tác động ngay lập tức trong",
+      "start": 1186.21,
+      "duration": 6.28
+    },
+    {
+      "text": "event of a sudden short circuit.",
+      "viText": "trường hợp ngắn mạch đột ngột.",
+      "start": 1192.49,
+      "duration": 2.11
+    },
+    {
+      "text": "The thermal trip handled slow overloads, like when you plugged in too many appliances.",
+      "viText": "Quá trình tản nhiệt xử lý tình trạng quá tải chậm, chẳng hạn như khi bạn cắm quá nhiều thiết bị.",
+      "start": 1194.6,
+      "duration": 5.68
+    },
+    {
+      "text": "The magnetic trip handled fast faults, like a short circuit that could start a",
+      "viText": "Chuyến đi từ tính xử lý các lỗi nhanh, chẳng hạn như đoản mạch có thể khởi động",
+      "start": 1200.28,
+      "duration": 5.16
+    },
+    {
+      "text": "fire in seconds.",
+      "viText": "cháy trong vài giây.",
+      "start": 1205.44,
+      "duration": 2
+    },
+    {
+      "text": "In 1924, the patent was filed through Brown, Bavari, and CA, the Swiss engineering",
+      "viText": "Năm 1924, bằng sáng chế được nộp thông qua Brown, Bavari và CA, cơ quan kỹ thuật Thụy Sĩ",
+      "start": 1207.44,
+      "duration": 5.42
+    },
+    {
+      "text": "company that had acquired Stoz's firm back in 1918.",
+      "viText": "công ty đã mua lại công ty của Stoz vào năm 1918.",
+      "start": 1212.86,
+      "duration": 3.37
+    },
+    {
+      "text": "Shakner described the invention in the patent application as an automatic electric circuit breaker",
+      "viText": "Shakner mô tả phát minh này trong đơn xin cấp bằng sáng chế là một thiết bị ngắt mạch điện tự động",
+      "start": 1216.23,
+      "duration": 6.48
+    },
+    {
+      "text": "in which two contact pieces normally pressed together by springs are separated by the",
+      "viText": "trong đó hai phần tiếp xúc thường được ép vào nhau bằng lò xo được ngăn cách bởi",
+      "start": 1222.71,
+      "duration": 5.62
+    },
+    {
+      "text": "interposition of an insulating slide.",
+      "viText": "sự xen kẽ của một slide cách điện.",
+      "start": 1228.33,
+      "duration": 2.45
+    },
+    {
+      "text": "And then he added the line that changed residential electricity forever.",
+      "viText": "Và sau đó ông đã bổ sung thêm dòng sản phẩm đã thay đổi nguồn điện dân dụng mãi mãi.",
+      "start": 1230.78,
+      "duration": 4.76
+    },
+    {
+      "text": "He wrote that when the overload ceases, switching on can be affected by the",
+      "viText": "Ông viết rằng khi tình trạng quá tải chấm dứt, việc bật nguồn có thể bị ảnh hưởng bởi",
+      "start": 1235.54,
+      "duration": 4.96
+    },
+    {
+      "text": "mere pressure of the finger without the necessity of unscrewing the apparatus from its",
+      "viText": "chỉ cần ấn ngón tay mà không cần phải tháo thiết bị ra khỏi",
+      "start": 1240.5,
+      "duration": 5.68
+    },
+    {
+      "text": "socket.",
+      "viText": "ổ cắm.",
+      "start": 1246.18,
+      "duration": 2
+    },
+    {
+      "text": "That is not a typo, by the way.",
+      "viText": "Nhân tiện, đó không phải là lỗi đánh máy.",
+      "start": 1248.18,
+      "duration": 2.05
+    },
+    {
+      "text": "That was the entire selling point.",
+      "viText": "Đó là toàn bộ điểm bán hàng.",
+      "start": 1250.23,
+      "duration": 2.25
+    },
+    {
+      "text": "You did not have to replace anything.",
+      "viText": "Bạn không phải thay thế bất cứ điều gì.",
+      "start": 1252.48,
+      "duration": 2.45
+    },
+    {
+      "text": "You did not have to keep spare fuses in a drawer.",
+      "viText": "Bạn không cần phải cất cầu chì dự phòng trong ngăn kéo.",
+      "start": 1254.93,
+      "duration": 3.24
+    },
+    {
+      "text": "You did not have to go to the hardware store.",
+      "viText": "Bạn không cần phải đến cửa hàng phần cứng.",
+      "start": 1258.17,
+      "duration": 2.97
+    },
+    {
+      "text": "You just pressed a switch.",
+      "viText": "Bạn vừa nhấn một công tắc.",
+      "start": 1261.14,
+      "duration": 2
+    },
+    {
+      "text": "The circuit breaker tripped when there was a problem and you reset it with",
+      "viText": "Cầu dao bị ngắt khi có sự cố và bạn cài đặt lại bằng",
+      "start": 1263.14,
+      "duration": 4.89
+    },
+    {
+      "text": "your finger when the problem was resolved.",
+      "viText": "ngón tay của bạn khi vấn đề đã được giải quyết.",
+      "start": 1268.03,
+      "duration": 2.78
+    },
+    {
+      "text": "No pennies required.",
+      "viText": "Không cần xu.",
+      "start": 1270.81,
+      "duration": 2
+    },
+    {
+      "text": "The irony was almost poetic.",
+      "viText": "Sự trớ trêu gần như nên thơ.",
+      "start": 1272.81,
+      "duration": 2
+    },
+    {
+      "text": "Edison had rejected the mechanical circuit breaker concept in 1879 because it was too",
+      "viText": "Edison đã bác bỏ khái niệm cầu dao cơ khí vào năm 1879 vì nó quá",
+      "start": 1274.81,
+      "duration": 5.62
+    },
+    {
+      "text": "expensive and too complicated.",
+      "viText": "đắt tiền và quá phức tạp.",
+      "start": 1280.43,
+      "duration": 2
+    },
+    {
+      "text": "45 years later, Stoz and Shakner proved that the device could be made small,",
+      "viText": "45 năm sau, Stoz và Shakner chứng minh rằng thiết bị có thể được chế tạo nhỏ gọn,",
+      "start": 1282.43,
+      "duration": 5.02
+    },
+    {
+      "text": "cheap, and reliable enough for every home on the planet.",
+      "viText": "rẻ và đủ tin cậy cho mọi ngôi nhà trên hành tinh.",
+      "start": 1287.45,
+      "duration": 3.7
+    },
+    {
+      "text": "You would think someone would have said something sooner.",
+      "viText": "Bạn sẽ nghĩ ai đó sẽ nói điều gì đó sớm hơn.",
+      "start": 1291.15,
+      "duration": 3.77
+    },
+    {
+      "text": "Nobody did.",
+      "viText": "Không ai làm vậy.",
+      "start": 1294.92,
+      "duration": 2
+    },
+    {
+      "text": "The Stosbreaker did not conquer the world overnight, though.",
+      "viText": "Tuy nhiên, Stosbreaker không chinh phục thế giới chỉ sau một đêm.",
+      "start": 1296.92,
+      "duration": 3.97
+    },
+    {
+      "text": "During the 1920s, electrification was booming.",
+      "viText": "Trong những năm 1920, điện khí hóa đang bùng nổ.",
+      "start": 1300.89,
+      "duration": 3.04
+    },
+    {
+      "text": "More buildings were being wired every month across Europe and North America.",
+      "viText": "Nhiều tòa nhà được nối dây mỗi tháng trên khắp Châu Âu và Bắc Mỹ.",
+      "start": 1303.93,
+      "duration": 5.02
+    },
+    {
+      "text": "Electric refrigerators, washing machines, and radios were entering the market.",
+      "viText": "Tủ lạnh điện, máy giặt và radio đang gia nhập thị trường.",
+      "start": 1308.95,
+      "duration": 5.16
+    },
+    {
+      "text": "Each one adding demand to circuits that were already straining.",
+      "viText": "Mỗi người thêm nhu cầu vào các mạch vốn đã căng thẳng.",
+      "start": 1314.11,
+      "duration": 4.16
+    },
+    {
+      "text": "Electrical grids were hitting amperage levels [music] they were never designed for.",
+      "viText": "Lưới điện đã đạt đến mức cường độ dòng điện [âm nhạc] mà chúng chưa bao giờ được thiết kế để đáp ứng.",
+      "start": 1318.27,
+      "duration": 5.49
+    },
+    {
+      "text": "Complete short circuits and dangerous fires were common.",
+      "viText": "Tình trạng chập điện hoàn toàn và hỏa hoạn nguy hiểm thường xuyên xảy ra.",
+      "start": 1323.76,
+      "duration": 3.7
+    },
+    {
+      "text": "Electrifying your home in the 1920s was not for the faint of heart.",
+      "viText": "Điện khí hóa ngôi nhà của bạn vào những năm 1920 không dành cho người yếu tim.",
+      "start": 1327.46,
+      "duration": 4.43
+    },
+    {
+      "text": "In 1928, Stz's team developed a version of their breaker with what they called",
+      "viText": "Năm 1928, nhóm của Stz đã phát triển một phiên bản máy cắt của họ với tên gọi",
+      "start": 1331.89,
+      "duration": 5.16
+    },
+    {
+      "text": "K characteristics, meaning it would trip when the current reached 10 to 14 times",
+      "viText": "đặc tính K, nghĩa là sẽ ngắt khi dòng điện đạt 10 đến 14 lần",
+      "start": 1337.05,
+      "duration": 5.29
+    },
+    {
+      "text": "the circuit's rated amperage.",
+      "viText": "cường độ dòng điện định mức của mạch.",
+      "start": 1342.34,
+      "duration": 2
+    },
+    {
+      "text": "This was designed to handle loads with higher starting currents like electric motors which",
+      "viText": "Điều này được thiết kế để xử lý các tải có dòng điện khởi động cao hơn như động cơ điện",
+      "start": 1344.34,
+      "duration": 5.95
+    },
+    {
+      "text": "pull a brief surge of power when they first switch on.",
+      "viText": "kéo theo một luồng điện ngắn khi chúng bật lần đầu tiên.",
+      "start": 1350.29,
+      "duration": 3.57
+    },
+    {
+      "text": "The K-rated breaker opened the door to industrial applications.",
+      "viText": "Cầu dao loại K đã mở ra cánh cửa cho các ứng dụng công nghiệp.",
+      "start": 1353.86,
+      "duration": 4.16
+    },
+    {
+      "text": "But for homes, the original 1924 design was already doing the job.",
+      "viText": "Nhưng đối với những ngôi nhà, thiết kế ban đầu năm 1924 đã phát huy tác dụng.",
+      "start": 1358.02,
+      "duration": 4.36
+    },
+    {
+      "text": "The problem was not the technology.",
+      "viText": "Vấn đề không phải là công nghệ.",
+      "start": 1362.38,
+      "duration": 2.31
+    },
+    {
+      "text": "The problem was adoption.",
+      "viText": "Vấn đề là việc nhận con nuôi.",
+      "start": 1364.69,
+      "duration": 2
+    },
+    {
+      "text": "Fuse boxes were already installed in millions of homes, and replacing them was expensive.",
+      "viText": "Hộp cầu chì đã được lắp đặt ở hàng triệu ngôi nhà và việc thay thế chúng rất tốn kém.",
+      "start": 1366.69,
+      "duration": 5.88
+    },
+    {
+      "text": "Electrical codes were local, inconsistent, and slow to mandate the switch, and many homeowners,",
+      "viText": "Các mã điện mang tính cục bộ, không nhất quán và bắt buộc chuyển đổi chậm, và nhiều chủ nhà,",
+      "start": 1372.57,
+      "duration": 6.28
+    },
+    {
+      "text": "frankly, did not see the need.",
+      "viText": "nói thật là thấy không cần thiết.",
+      "start": 1378.85,
+      "duration": 2
+    },
+    {
+      "text": "Their fuses worked fine as long as they did not mind replacing them every",
+      "viText": "Cầu chì của họ hoạt động tốt miễn là họ không ngại thay thế chúng mỗi",
+      "start": 1380.85,
+      "duration": 4.82
+    },
+    {
+      "text": "time the iron tripped the circuit.",
+      "viText": "thời điểm bàn ủi ngắt mạch điện.",
+      "start": 1385.67,
+      "duration": 2.25
+    },
+    {
+      "text": "The cutter manufacturing company in the United States was among the first to produce",
+      "viText": "Công ty sản xuất máy cắt ở Hoa Kỳ là một trong những công ty đầu tiên sản xuất",
+      "start": 1387.92,
+      "duration": 5.55
+    },
+    {
+      "text": "circuit breakers at scale.",
+      "viText": "bộ ngắt mạch ở quy mô.",
+      "start": 1393.47,
+      "duration": 2
+    },
+    {
+      "text": "Manufacturing what they called the IT breaker, standing for inverse time element.",
+      "viText": "Sản xuất cái mà họ gọi là bộ ngắt CNTT, viết tắt của yếu tố thời gian nghịch đảo.",
+      "start": 1395.47,
+      "duration": 5.35
+    },
+    {
+      "text": "These breakers could handle short circuits of up to 10,000 amps, protecting most buildings",
+      "viText": "Những cầu dao này có thể xử lý các mạch ngắn lên tới 10.000 ampe, bảo vệ hầu hết các tòa nhà",
+      "start": 1400.82,
+      "duration": 5.95
+    },
+    {
+      "text": "from damage or fire.",
+      "viText": "khỏi hư hỏng hoặc hỏa hoạn.",
+      "start": 1406.77,
+      "duration": 2
+    },
+    {
+      "text": "But they were still installed individually on specific circuits, not in a centralized panel.",
+      "viText": "Nhưng chúng vẫn được cài đặt riêng lẻ trên các mạch cụ thể chứ không phải trong bảng điều khiển tập trung.",
+      "start": 1408.77,
+      "duration": 6.08
+    },
+    {
+      "text": "The real transition happened in the 1960s.",
+      "viText": "Sự chuyển đổi thực sự xảy ra vào những năm 1960.",
+      "start": 1414.85,
+      "duration": 2.78
+    },
+    {
+      "text": "That is when the modern circuit breaker panel finally arrived, bringing all of a",
+      "viText": "Đó là lúc bảng cầu dao hiện đại cuối cùng cũng xuất hiện, mang theo tất cả",
+      "start": 1417.63,
+      "duration": 5.29
+    },
+    {
+      "text": "home's circuit protection into one box with modular miniature breakers that could be easily",
+      "viText": "bảo vệ mạch điện trong nhà vào một hộp với các bộ ngắt mô-đun thu nhỏ có thể dễ dàng sử dụng",
+      "start": 1422.92,
+      "duration": 6.01
+    },
+    {
+      "text": "swapped and serviced.",
+      "viText": "được trao đổi và phục vụ.",
+      "start": 1428.93,
+      "duration": 2
+    },
+    {
+      "text": "The timing was not accidental.",
+      "viText": "Thời điểm không phải là ngẫu nhiên.",
+      "start": 1430.93,
+      "duration": 2
+    },
+    {
+      "text": "The 1960s saw a massive wave of home renovation across North America, and electricians",
+      "viText": "Những năm 1960 chứng kiến ​​​​một làn sóng cải tạo nhà cửa ồ ạt trên khắp Bắc Mỹ và thợ điện",
+      "start": 1432.93,
+      "duration": 5.68
+    },
+    {
+      "text": "used the opportunity to rip out old fuse boxes and install breaker panels in",
+      "viText": "tận dụng cơ hội để tháo hộp cầu chì cũ và lắp cầu dao vào",
+      "start": 1438.61,
+      "duration": 5.02
+    },
+    {
+      "text": "their place.",
+      "viText": "chỗ của họ.",
+      "start": 1443.63,
+      "duration": 2
+    },
+    {
+      "text": "By the 1970s, circuit breakers had become the standard in new construction across most",
+      "viText": "Đến những năm 1970, cầu dao đã trở thành tiêu chuẩn trong xây dựng mới ở hầu hết",
+      "start": 1445.63,
+      "duration": 5.68
+    },
+    {
+      "text": "of the developed world.",
+      "viText": "của thế giới phát triển.",
+      "start": 1451.31,
+      "duration": 2
+    },
+    {
+      "text": "Brown, Bavari, and CA stayed in business under that name for over 60 years.",
+      "viText": "Brown, Bavari và CA đã kinh doanh dưới cái tên đó trong hơn 60 năm.",
+      "start": 1453.31,
+      "duration": 4.96
+    },
+    {
+      "text": "In 1988, the company merged with the Swedish engineering firm Asia to form ABB,",
+      "viText": "Năm 1988, công ty sáp nhập với công ty kỹ thuật Châu Á của Thụy Điển để thành lập ABB,",
+      "start": 1458.27,
+      "duration": 5.22
+    },
+    {
+      "text": "which still manufactures STO circuit breakers today.",
+      "viText": "ngày nay vẫn sản xuất bộ ngắt mạch STO.",
+      "start": 1463.49,
+      "duration": 3.44
+    },
+    {
+      "text": "In 2014, ABB celebrated the 90th anniversary of the original STO's patent.",
+      "viText": "Năm 2014, ABB đã kỷ niệm 90 năm bằng sáng chế ban đầu của STO.",
+      "start": 1466.93,
+      "duration": 4.89
+    },
+    {
+      "text": "By that point, the company had produced more than a billion circuit breakers worldwide.",
+      "viText": "Vào thời điểm đó, công ty đã sản xuất hơn một tỷ bộ ngắt mạch trên toàn thế giới.",
+      "start": 1471.82,
+      "duration": 5.75
+    },
+    {
+      "text": "A billion from a single patent filed by two engineers in Germany nearly a",
+      "viText": "Một tỷ đồng từ một bằng sáng chế duy nhất của hai kỹ sư ở Đức gần một",
+      "start": 1477.57,
+      "duration": 4.82
+    },
+    {
+      "text": "century earlier.",
+      "viText": "thế kỷ trước đó.",
+      "start": 1482.39,
+      "duration": 2
+    },
+    {
+      "text": "And yet, the problem is not entirely solved.",
+      "viText": "Tuy nhiên, vấn đề vẫn chưa được giải quyết hoàn toàn.",
+      "start": 1484.39,
+      "duration": 2.91
+    },
+    {
+      "text": "Even today, the National Fire Protection Association reports that electrical fires cause more than",
+      "viText": "Thậm chí ngày nay, Hiệp hội phòng cháy chữa cháy quốc gia vẫn báo cáo rằng hỏa hoạn do điện gây ra nhiều hơn",
+      "start": 1487.3,
+      "duration": 6.48
+    },
+    {
+      "text": "24,000 residential fires in the United States every year.",
+      "viText": "24.000 vụ cháy nhà ở Mỹ mỗi năm",
+      "start": 1493.78,
+      "duration": 3.77
+    },
+    {
+      "text": "Nearly 300 people die annually from those fires.",
+      "viText": "Gần 300 người chết mỗi năm vì những vụ cháy đó.",
+      "start": 1497.55,
+      "duration": 3.17
+    },
+    {
+      "text": "More than $1.",
+      "viText": "Hơn 1 đô la.",
+      "start": 1500.72,
+      "duration": 2
+    },
+    {
+      "text": "2 billion in property damage results from electrical failures in homes.",
+      "viText": "Thiệt hại tài sản lên tới 2 tỷ USD do sự cố điện trong nhà.",
+      "start": 1502.72,
+      "duration": 4.69
+    },
+    {
+      "text": "Many of those fires happen in older buildings, the ones still running on wiring",
+      "viText": "Nhiều đám cháy trong số đó xảy ra ở các tòa nhà cũ, những đám cháy vẫn đang chạy bằng hệ thống dây điện",
+      "start": 1507.41,
+      "duration": 5.22
+    },
+    {
+      "text": "that predates modern safety standards.",
+      "viText": "có trước các tiêu chuẩn an toàn hiện đại.",
+      "start": 1512.63,
+      "duration": 2.51
+    },
+    {
+      "text": "Homes built before 1950 may still have knob and tube wiring hidden in their",
+      "viText": "Những ngôi nhà được xây trước năm 1950 có thể vẫn có núm và dây điện ẩn trong",
+      "start": 1515.14,
+      "duration": 4.96
+    },
+    {
+      "text": "walls.",
+      "viText": "những bức tường.",
+      "start": 1520.1,
+      "duration": 2
+    },
+    {
+      "text": "The same system that was state-of-the-art in 1885.",
+      "viText": "Cùng một hệ thống hiện đại nhất vào năm 1885.",
+      "start": 1522.1,
+      "duration": 3.3
+    },
+    {
+      "text": "The rubberized cloth insulation on those wires has been degrading for over a century.",
+      "viText": "Lớp cách điện bằng vải cao su trên những sợi dây đó đã xuống cấp trong hơn một thế kỷ.",
+      "start": 1525.4,
+      "duration": 5.62
+    },
+    {
+      "text": "There is no ground wire, and in some cases, some homeowner decades ago put",
+      "viText": "Không có dây nối đất, và trong một số trường hợp, một số chủ nhà cách đây hàng chục năm đã đặt",
+      "start": 1531.02,
+      "duration": 4.89
+    },
+    {
+      "text": "a penny behind a fuse and never took it out.",
+      "viText": "một xu đằng sau cầu chì và không bao giờ lấy nó ra.",
+      "start": 1535.91,
+      "duration": 2.91
+    },
+    {
+      "text": "The circuit breaker did not solve every problem, but it solved the most important",
+      "viText": "Bộ ngắt mạch không giải quyết được mọi vấn đề nhưng nó giải quyết được điều quan trọng nhất",
+      "start": 1538.82,
+      "duration": 5.35
+    },
+    {
+      "text": "one.",
+      "viText": "one.",
+      "start": 1544.17,
+      "duration": 2
+    },
+    {
+      "text": "It gave ordinary people a safety device that worked automatically, that could be reset",
+      "viText": "Nó mang đến cho người dân bình thường một thiết bị an toàn hoạt động tự động, có thể thiết lập lại",
+      "start": 1546.17,
+      "duration": 5.68
+    },
+    {
+      "text": "without replacement, and that was cheap enough to install in every home on Earth.",
+      "viText": "không cần thay thế và đủ rẻ để lắp đặt ở mọi nhà trên Trái đất.",
+      "start": 1551.85,
+      "duration": 5.35
+    },
+    {
+      "text": "From Edison's 1879 patent sketch to Stz's 1924 thermal magnetic design to the breaker",
+      "viText": "Từ bản phác thảo bằng sáng chế năm 1879 của Edison đến thiết kế nam châm nhiệt năm 1924 của Stz cho đến cầu dao",
+      "start": 1557.2,
+      "duration": 5.62
+    },
+    {
+      "text": "panel in your basement right now.",
+      "viText": "bảng điều khiển ở tầng hầm của bạn ngay bây giờ.",
+      "start": 1562.82,
+      "duration": 2.18
+    },
+    {
+      "text": "The story of the circuit breaker is the story of how long it takes",
+      "viText": "Chuyện chiếc cầu dao là chuyện mất bao lâu",
+      "start": 1565,
+      "duration": 4.36
+    },
+    {
+      "text": "for a good idea to actually save lives.",
+      "viText": "cho một ý tưởng hay để thực sự cứu mạng sống.",
+      "start": 1569.36,
+      "duration": 2.58
+    },
+    {
+      "text": "Edison had the concept.",
+      "viText": "Edison đã có khái niệm này.",
+      "start": 1571.94,
+      "duration": 2
+    },
+    {
+      "text": "He chose the cheaper option instead.",
+      "viText": "Thay vào đó anh ấy đã chọn phương án rẻ hơn.",
+      "start": 1573.94,
+      "duration": 2.38
+    },
+    {
+      "text": "45 years, countless housefires, and an untold number of deaths later, two engineers in",
+      "viText": "45 năm, vô số vụ cháy nhà và vô số người chết sau đó, hai kỹ sư ở",
+      "start": 1576.32,
+      "duration": 5.68
+    },
+    {
+      "text": "Germany finally built the thing Edison had drawn in his notebook and thrown away.",
+      "viText": "Đức cuối cùng đã chế tạo được thứ mà Edison đã vẽ vào sổ tay và vứt đi.",
+      "start": 1582,
+      "duration": 5.35
+    },
+    {
+      "text": "Every circuit breaker in every home on the planet is the descendant of that",
+      "viText": "Mọi thiết bị ngắt mạch trong mọi ngôi nhà trên hành tinh đều là hậu duệ của nó",
+      "start": 1587.35,
+      "duration": 4.96
+    },
+    {
+      "text": "1924 patent.",
+      "viText": "Bằng sáng chế năm 1924",
+      "start": 1592.31,
+      "duration": 2
+    },
+    {
+      "text": "And every time one of them trips and the lights go out and you",
+      "viText": "Và mỗi khi một trong số họ di chuyển và đèn tắt và bạn",
+      "start": 1594.31,
+      "duration": 4.1
+    },
+    {
+      "text": "walk to your electrical panel and flip a switch and the power comes back",
+      "viText": "đi đến bảng điện của bạn và bật công tắc và có điện trở lại",
+      "start": 1598.41,
+      "duration": 4.76
+    },
+    {
+      "text": "on, you are using a device that exists.",
+      "viText": "bật, bạn đang sử dụng một thiết bị hiện có.",
+      "start": 1603.17,
+      "duration": 2.58
+    },
+    {
+      "text": "Because for four decades, the only thing standing between your house and a fire",
+      "viText": "Bởi suốt bốn thập kỷ qua, thứ duy nhất đứng giữa ngôi nhà của bạn và ngọn lửa",
+      "start": 1605.75,
+      "duration": 5.22
+    },
+    {
+      "text": "was a strip of metal that melted and sometimes a copper penny that did",
+      "viText": "là một dải kim loại nóng chảy và đôi khi là một đồng xu",
+      "start": 1610.97,
+      "duration": 4.63
+    },
+    {
+      "text": "Not.",
+      "viText": "Not.",
+      "start": 1615.6,
+      "duration": 2
+    }
+  ]
+}

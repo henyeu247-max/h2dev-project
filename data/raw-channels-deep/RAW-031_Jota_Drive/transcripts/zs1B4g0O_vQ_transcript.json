@@ -1,0 +1,83 @@
+{
+  "videoId": "zs1B4g0O_vQ",
+  "title": "Truck and Car Crashes #13 [BeamNG.Drive]",
+  "language": "en-US",
+  "targetLanguage": "vi",
+  "segmentCount": 12,
+  "fullText": "Stop the truck!... stop now! Hmm, I had an idea. Goodbye. Hahahahaha!!! Oh no! No, My car! Excuse me, I need the truck. What? No, I stole the wrong truck! Hm? Urgh...",
+  "fullTextVi": "Dừng xe tải lại! dừng lại ngay bây giờ! Ừm, tôi có một ý tưởng. Tạm biệt. Hahahahaha! Ồ không! Không, xe của tôi! Xin lỗi, tôi cần chiếc xe tải. What? Không, tôi đã trộm nhầm xe tải! Hm? Urgh.",
+  "segments": [
+    {
+      "text": "Stop the truck!",
+      "viText": "Dừng xe tải lại!",
+      "start": 0,
+      "duration": 68.82
+    },
+    {
+      "text": "stop now!",
+      "viText": "dừng lại ngay bây giờ!",
+      "start": 68.82,
+      "duration": 41.29
+    },
+    {
+      "text": "Hmm, I had an idea.",
+      "viText": "Ừm, tôi có một ý tưởng.",
+      "start": 110.11,
+      "duration": 87.17
+    },
+    {
+      "text": "Goodbye.",
+      "viText": "Tạm biệt.",
+      "start": 197.28,
+      "duration": 36.7
+    },
+    {
+      "text": "Hahahahaha!",
+      "viText": "Hahahahaha!",
+      "start": 233.98,
+      "duration": 50.47
+    },
+    {
+      "text": "Oh no!",
+      "viText": "Ồ không!",
+      "start": 284.45,
+      "duration": 27.53
+    },
+    {
+      "text": "No, My car!",
+      "viText": "Không, xe của tôi!",
+      "start": 311.98,
+      "duration": 50.47
+    },
+    {
+      "text": "Excuse me, I need the truck.",
+      "viText": "Xin lỗi, tôi cần chiếc xe tải.",
+      "start": 362.45,
+      "duration": 128.46
+    },
+    {
+      "text": "What?",
+      "viText": "What?",
+      "start": 490.91,
+      "duration": 22.94
+    },
+    {
+      "text": "No, I stole the wrong truck!",
+      "viText": "Không, tôi đã trộm nhầm xe tải!",
+      "start": 513.85,
+      "duration": 128.46
+    },
+    {
+      "text": "Hm?",
+      "viText": "Hm?",
+      "start": 642.31,
+      "duration": 13.76
+    },
+    {
+      "text": "Urgh.",
+      "viText": "Urgh.",
+      "start": 656.07,
+      "duration": 22.94
+    }
+  ]
+}

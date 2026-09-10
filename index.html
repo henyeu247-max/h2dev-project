@@ -1,0 +1,2690 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark" data-density="compact">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="H2DEV — radar kho video faceless YouTube.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='4' fill='%23050505'/><circle cx='32' cy='32' r='21' fill='none' stroke='%23E2023A' stroke-width='2.4'/><circle cx='32' cy='32' r='2.8' fill='%23E2023A'/></svg>">
+  <title>H2DEV — Radar kho YouTube</title>
+  <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/tailwind.css">
+  <link rel="stylesheet" href="assets/viddar.css">
+  <style>
+    #raw-channel-modal {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      z-index: 99999 !important;
+      background-color: rgba(0, 0, 0, 0.85) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 16px !important;
+      box-sizing: border-box !important;
+    }
+    #raw-channel-modal > div {
+      max-height: 90vh !important;
+      height: 90vh !important;
+      display: flex !important;
+      flex-direction: column !important;
+      overflow: hidden !important;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75) !important;
+    }
+    #raw-channel-modal.hidden {
+      display: none !important;
+    }
+    .modal-video-thumb {
+      width: 210px !important;
+      min-width: 210px !important;
+      max-width: 210px !important;
+      height: 118px !important;
+      aspect-ratio: 16 / 9 !important;
+      flex-shrink: 0 !important;
+    }
+    @media (max-width: 640px) {
+      #raw-channel-modal {
+        padding: 0 !important;
+        align-items: flex-end !important;
+      }
+      #raw-channel-modal > div {
+        max-height: 94vh !important;
+        height: 94vh !important;
+        width: 100% !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+      .modal-video-thumb {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#panel-root" class="skip-link">Bỏ qua điều hướng</a>
+  <div class="app-shell">
+    <aside class="app-sidebar">
+      <div class="vd-brand">
+        <span class="vd-radar-wrap">
+          <svg class="vd-radar" width="28" height="28" viewBox="0 0 64 64" fill="none" role="img" aria-label="H2DEV">
+            <defs>
+              <linearGradient id="vd-sweep" x1="32" y1="32" x2="53" y2="12" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E2023A" stop-opacity=".95"/>
+                <stop offset="1" stop-color="#E2023A" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="4" fill="#050505"></rect>
+            <circle class="radar-ping" cx="32" cy="32" r="21" stroke="#E2023A" stroke-width="2.4" opacity=".55"></circle>
+            <g class="radar-sweep">
+              <path d="M32 32 L32 11 A21 21 0 0 1 51.7 25.8 Z" fill="url(#vd-sweep)"></path>
+              <line x1="32" y1="32" x2="51.7" y2="25.8" stroke="#E2023A" stroke-width="2.4" stroke-linecap="round"></line>
+            </g>
+            <circle cx="32" cy="32" r="2.8" fill="#E2023A"></circle>
+            <circle cx="44" cy="21" r="3.6" fill="#FFCC00"></circle>
+          </svg>
+        </span>
+        <div>
+          <span class="vd-wordmark">h2<em>dev</em></span>
+          <span class="vd-tag">Radar kho YouTube</span>
+        </div>
+      </div>
+      <nav id="tabs" role="tablist" aria-label="Khu vực"></nav>
+    </aside>
+    <header class="vd-topbar">
+      <div class="vd-top-right">
+        <h1 id="page-title" class="vd-page-title">Tổng quan</h1>
+        <div id="hd-stats" class="hd-stats"></div>
+        <a href="player.html" class="btn-ghost" style="font-size:12px">Player</a>
+      </div>
+      <nav id="mobile-tabs" class="vd-mobile-tabs" aria-label="Điều hướng tab"></nav>
+    </header>
+    <main id="panel-root" tabindex="-1" aria-live="polite">
+      <div id="content" role="tabpanel"></div>
+    </main>
+    <footer class="app-footer">H2DEV · kho faceless YouTube · không cần đăng nhập</footer>
+  </div>
+  <nav class="vd-bottom-nav" id="bottom-nav" aria-label="Điều hướng chính"></nav>
+  <script>
+    const state = { tab: 'tongquan', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawStatus: '', rawVitality: '', rawPage: 1 };
+
+    const CAT = {};
+    const ICONS = {
+      home: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>`,
+      video: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>`,
+      niche: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`,
+      doc: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>`,
+      link: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>`,
+      channel: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`,
+      strategy: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>`,
+      disk: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>`,
+      search: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>`,
+      image: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>`
+    };
+    const TABS = [
+      { id: 'tongquan', icon: ICONS.home, name: 'Tổng quan', short: 'Tổng quan' },
+      { id: 'lotrinh', icon: ICONS.doc, name: 'Lộ trình', short: 'Lộ trình' },
+      { id: 'video', icon: ICONS.video, name: 'Video', short: 'Video' },
+      { id: 'ngachxanh', icon: ICONS.niche, name: 'Ngách xanh', short: 'Ngách' },
+      { id: 'kichban', icon: ICONS.doc, name: 'Tài liệu', short: 'Tài liệu' },
+      { id: 'nguonreup', icon: ICONS.link, name: 'Nguồn reup', short: 'Nguồn' },
+      { id: 'kenh', icon: ICONS.channel, name: 'Kênh mẫu', short: 'Kênh mẫu' },
+      { id: 'rawkenh', icon: ICONS.image, name: 'Raw kênh', short: 'Raw kênh' },
+      { id: 'chienluoc', icon: ICONS.strategy, name: 'Chiến lược', short: 'Chiến lược' }
+    ];
+
+    async function loadJSON(p) {
+      if (!CAT[p]) {
+        const r = await fetch(p);
+        if (!r.ok) throw new Error(`Không tải được ${p} (${r.status})`);
+        CAT[p] = await r.json();
+      }
+      return CAT[p];
+    }
+    function safeArray(value) { return Array.isArray(value) ? value : []; }
+
+    const NICHE_MAP = {
+      "Tâm linh / phúc lộc Hàn": "Triết lý / Tâm linh",
+      "Chúa / Phúc âm Hàn": "Triết lý / Tâm linh",
+      "Phật pháp Nhật": "Triết lý / Tâm linh",
+      "Kinh Thánh EN (giáo dục)": "Triết lý / Tâm linh",
+      "Phật pháp Hàn": "Triết lý / Tâm linh",
+      "Danh ngôn / trí tuệ cổ Nhật": "Triết lý / Tâm linh",
+      "Tâm linh / luật hấp dẫn": "Triết lý / Tâm linh",
+      "Triết lý / khắc kỷ / danh ngôn": "Triết lý / Tâm linh",
+      "Phong thủy VN": "Triết lý / Tâm linh",
+      "Phong thủy": "Triết lý / Tâm linh",
+      "Triết lý / Tâm linh": "Triết lý / Tâm linh",
+      "Sức khỏe / sinh hoạt senior Hàn": "Sức khỏe / Lão hóa",
+      "Sức khỏe Nhật": "Sức khỏe / Lão hóa",
+      "Sức khỏe VN": "Sức khỏe / Lão hóa",
+      "Kinh tế Nhật": "Kinh tế / Tài chính",
+      "Sức khỏe / Lão hóa (senior health)": "Sức khỏe / Lão hóa",
+      "Sức khỏe / Lão hóa": "Sức khỏe / Lão hóa",
+      "Kinh tế Hàn (giáo dục)": "Kinh tế / Tài chính",
+      "Quy luật kinh tế / Economy Rewind": "Kinh tế / Tài chính",
+      "Kinh tế / Tài chính": "Kinh tế / Tài chính",
+      "Drama / kaidan Nhật": "Drama / Stories",
+      "Chuyện đời / kể chuyện senior Nhật": "Drama / Stories",
+      "Drama / 야담 Hàn": "Drama / Stories",
+      "Đứa trẻ Hàn": "Drama / Stories",
+      "Drama / 야담 / Stories": "Drama / Stories",
+      "Drama / Stories": "Drama / Stories",
+      "Lịch sử / quân sự": "Lịch sử / Quân sự",
+      "Địa chính trị EN (North Effect)": "Lịch sử / Quân sự",
+      "Lịch sử / văn minh cổ đại EN": "Lịch sử / Quân sự",
+      "Lịch sử / Quân sự": "Lịch sử / Quân sự",
+      "Reup hoạt hình (đã transform)": "Reup / Hoạt hình",
+      "Reup / Hoạt hình": "Reup / Hoạt hình",
+      "Sinh tồn VN": "Share key / Ngách nhỏ",
+      "Người que / Chill Dude / Nonagon": "Edit / Thumb",
+      "Tiền sử / Canada / cam cảnh sát": "Share key / Ngách nhỏ",
+      "Kiểm soát sinh học / chiến thuật": "Share key / Ngách nhỏ",
+      "Nhà máy sản xuất": "Share key / Ngách nhỏ",
+      "Wildlife survival": "Share key / Ngách nhỏ",
+      "Khoa học EN (Science Sun)": "Khoa học EN",
+      "Triết lý / khắc kỷ": "Triết lý / Tâm linh",
+      "Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)": "Khoa học EN",
+      "Everyday History EN (lịch sử đồ vật thường ngày)": "Lịch sử / Quân sự",
+      "True Origin / Economic History EN (giải mã gốc tích)": "Kinh tế / Tài chính",
+      "Food History EN (lịch sử thực phẩm)": "Lịch sử / Quân sự",
+      "UFO / Alien / Roswell EN (đóng khung điều tra)": "Drama / Stories",
+      "Senior Wisdom KR (không-bác-sĩ, tâm lý/tài chính/đời sống)": "Sức khỏe / Lão hóa",
+      "Drama Gia Đình & Xã Hội Nhật Bản": "Drama / Stories",
+      "Triết Lý & Phật Pháp Việt Nam": "Triết lý / Tâm linh",
+      "Tâm Linh & Thu Hút May Mắn": "Triết lý / Tâm linh",
+      "Lời Chúa & Tâm Linh Ngoại": "Triết lý / Tâm linh",
+      "Ẩm Thực & Mẹo Vặt Hàn Quốc": "Share key / Ngách nhỏ",
+      "Reup Hoạt Hình Bilibili": "Reup / Hoạt hình",
+      "Triết Lý & Trẻ Hóa Nhật Bản": "Triết lý / Tâm linh",
+      "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật": "Share key / Ngách nhỏ",
+      "Prompt AI & Nhân Bản Kịch Bản": "Edit / Thumb",
+      "Tâm Linh & Triết Lý Saito Hitori": "Triết lý / Tâm linh",
+      "Nhân Bản Thị Trường (Hàn - Nhật)": "Nhân bản / Kênh",
+      "Sức Khỏe & Rau Củ Dưa Chuột": "Sức khỏe / Lão hóa",
+      "Reup & Khai Thác Hoạt Hình": "Reup / Hoạt hình",
+      "Bán Content & Phát Triển Kênh": "Kiếm tiền / Chính sách",
+      "Triết Lý & Phật Pháp": "Triết lý / Tâm linh",
+      "Kháng Bản Quyền & Xử Lý Lỗi GA": "Kiếm tiền / Chính sách",
+      "Sức Khỏe & Dinh Dưỡng": "Sức khỏe / Lão hóa",
+      "Triết Lý Sống & Đạo Làm Người": "Triết lý / Tâm linh",
+      "Khám Kênh & Tối Ưu Tăng Trưởng": "Nhân bản / Kênh",
+      "Drama Gia Đình & Xã Hội": "Drama / Stories",
+      "Khám Kênh Thực Chiến": "Nhân bản / Kênh",
+      "Cộng Đồng & Hỗ Trợ VIP": "Nền tảng / Tool",
+      "Kỹ Thuật Setup Nuôi Kênh & VPS": "Nền tảng / Tool",
+      "Bán Content Đa Thị Trường Nhật & Hàn": "Nhân bản / Kênh",
+      "Bán Content Đa Thị Trường Hàn & Việt": "Nhân bản / Kênh",
+      "Bán Content Ngách Cực Nhỏ": "Share key / Ngách nhỏ"
+    };
+    function nicheKeyFor(ngach) { return NICHE_MAP[ngach] || ngach; }
+    function xanhBadge(x) {
+      if (x === true) return ['badge-green', 'XANH'];
+      if (x === 'CÓ MẪU TĂNG') return ['badge-blue', 'CÓ MẪU TĂNG'];
+      if (x === 'CÓ ĐIỀU KIỆN') return ['badge-amber', 'CÓ ĐK'];
+      if (x === 'THẬN TRỌNG') return ['badge-amber', 'THẬN TRỌNG'];
+      if (x === 'CHƯA ĐỦ BẰNG CHỨNG') return ['badge-muted', 'CHƯA ĐỦ'];
+      if (x === 'ĐỎ') return ['badge-red', 'ĐỎ'];
+      if (x === 'META') return ['badge-muted', 'META'];
+      return ['badge-muted', String(x || '')];
+    }
+    function openTab(id, extra, pushHistory = true) {
+      state.tab = id || 'tongquan';
+      // Nếu mở tab Video mà không kèm danh sách SKU cụ thể, xóa sạch mọi bộ lọc ẩn
+      // còn sót từ tab trước (ví dụ skuFilter từ Ngách xanh) để không rơi vào 0/131.
+      if (state.tab === 'video' && !(extra && extra.skuFilter)) {
+        state.skuFilter = '';
+        state.nicheFilter = '';
+        state.marketFilter = '';
+        state.q = '';
+        state.freeOnly = false;
+        state.watchFilter = '';
+      }
+      if (extra) Object.assign(state, extra);
+      if (pushHistory) {
+        try {
+          const url = new URL(location.href);
+          url.searchParams.set('tab', state.tab);
+          if (state.marketFilter) url.searchParams.set('market', state.marketFilter); else url.searchParams.delete('market');
+          if (state.nicheFilter) url.searchParams.set('niche', state.nicheFilter); else url.searchParams.delete('niche');
+          history.pushState({ tab: state.tab, market: state.marketFilter, niche: state.nicheFilter }, '', url);
+        } catch (e) {}
+      }
+      renderTabs();
+      render();
+    }
+    function openNicheVideos(key, skus) {
+      openTab('video', { nicheFilter: key || '', skuFilter: skus || '', q: '', marketFilter: '', freeOnly: false });
+    }
+    function expandNicheMore(btn) {
+      const wrap = btn.closest('[data-niche-list]');
+      if (!wrap) return;
+      wrap.querySelectorAll('[data-more]').forEach(el => el.classList.remove('hidden'));
+      btn.remove();
+    }
+    function bindNicheActions() {
+      document.querySelectorAll('[data-open-niche]').forEach(btn => {
+        btn.addEventListener('click', e => {
+          if (btn.hasAttribute('data-open-tab')) return;
+          e.preventDefault();
+          openNicheVideos(btn.getAttribute('data-open-niche'), btn.getAttribute('data-skus') || '');
+        });
+      });
+      document.querySelectorAll('[data-expand-niche]').forEach(btn => {
+        btn.addEventListener('click', e => { e.preventDefault(); expandNicheMore(btn); });
+      });
+      document.querySelectorAll('[data-open-tab]').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+          const tab = btn.getAttribute('data-open-tab');
+          const extra = {};
+          if (tab === 'kichban') { extra.kindFilter = btn.getAttribute('data-kind') || ''; extra.promptNiche = btn.getAttribute('data-prompt-niche') || ''; extra.promptQ = ''; }
+          if (tab === 'video') { extra.nicheFilter = btn.getAttribute('data-open-niche') || ''; extra.skuFilter = btn.getAttribute('data-skus') || ''; extra.marketFilter = btn.getAttribute('data-market-filter') || ''; extra.q = ''; extra.freeOnly = btn.getAttribute('data-free-only') === 'true'; }
+          if (tab === 'kenh') { extra.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; extra.kenhQ = ''; }
+          openTab(tab, extra);
+        });
+      });
+    }
+
+
+    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+    function fmtBytes(n) { if (!n) return ''; if (n > 1e9) return (n / 1e9).toFixed(2) + ' GB'; if (n > 1e6) return (n / 1e6).toFixed(0) + ' MB'; return (n / 1e3).toFixed(0) + ' KB'; }
+    function fmtMb(mb) { if (!mb) return ''; return mb >= 1024 ? (mb / 1024).toFixed(1) + ' GB' : mb.toFixed(0) + ' MB'; }
+    function loadChecks() { try { return JSON.parse(localStorage.getItem('h2dev-checklist') || '{}'); } catch (e) { return {}; } }
+    function saveCheck(id, on) { const m = loadChecks(); m[id] = !!on; localStorage.setItem('h2dev-checklist', JSON.stringify(m)); }
+    /* Shared watched/progress store (same key + schema as player.html) */
+    function loadWatched() { try { return JSON.parse(localStorage.getItem('h2dev-watched') || '{}'); } catch (e) { return {}; } }
+    async function hydrateAdminState() {
+      try {
+        const r = await fetch('/api/admin-state', { cache: 'no-store' });
+        if (!r.ok) return;
+        const s = await r.json();
+        localStorage.setItem('h2dev-watched', JSON.stringify(s.watched || {}));
+        localStorage.setItem('h2dev-fav', JSON.stringify(Array.isArray(s.favorites) ? s.favorites : []));
+        if (s.recent) localStorage.setItem('h2dev-recent', JSON.stringify(s.recent));
+        localStorage.setItem('h2dev-admin', JSON.stringify(s));
+      } catch (e) {}
+    }
+    function watchedBadge(sku) {
+      const w = loadWatched()[sku];
+      if (!w) return '';
+      const d = Number(w.d) || 0, t = Number(w.t) || 0;
+      const ratio = (d > 0 && t > 0) ? Math.min(1, t / d) : 0;
+      const done = Boolean(w.watched) || ratio >= 0.95;
+      if (done) return `<span class="badge badge-green" title="Đã xem hết">✓ Đã xem</span>`;
+      if (ratio > 0.02) return `<span class="badge badge-amber" title="Đang xem dở ${Math.round(ratio * 100)}% — Xem tiếp">Dở ${Math.round(ratio * 100)}%</span>`;
+      return '';
+    }
+    function watchedProgress(sku) {
+      const w = loadWatched()[sku];
+      if (!w) return '';
+      const d = Number(w.d) || 0, t = Number(w.t) || 0;
+      const ratio = (d > 0 && t > 0) ? Math.min(100, Math.round(t / d * 100)) : 0;
+      if (ratio <= 0) return '';
+      return `<div class="absolute bottom-0 left-0 right-0 h-1 bg-ink-900/80"><div class="h-full bg-brand-500" style="width:${ratio}%"></div></div>`;
+    }
+    function watchedResumeLabel(sku) {
+      const w = loadWatched()[sku];
+      if (!w) return '';
+      const d = Number(w.d) || 0, t = Number(w.t) || 0;
+      const ratio = (d > 0 && t > 0) ? Math.min(1, t / d) : 0;
+      if (w.watched || ratio >= 0.95) return '';
+      if (ratio > 0.02) { const m = Math.floor(t / 60), s = Math.floor(t % 60); return `Xem tiếp (${m}:${String(s).padStart(2, '0')})`; }
+      return '';
+    }
+
+    const BOTTOM_TABS = ['tongquan', 'video', 'ngachxanh', 'kenh', 'rawkenh', 'chienluoc'];
+    function tabMarkup(t, extraId) {
+      const selected = state.tab === t.id;
+      const id = extraId || `tab-${t.id}`;
+      const isBottom = extraId && extraId.startsWith('m-tab-');
+      const label = isBottom ? (t.short || t.name) : t.name;
+      return `<button id="${id}" type="button" role="tab" aria-selected="${selected ? 'true' : 'false'}" aria-controls="content" tabindex="${selected ? '0' : '-1'}" class="tab-btn${selected ? ' active' : ''}" data-tab="${t.id}" title="${t.name}">${t.icon}<span>${label}</span></button>`;
+    }
+    function bindTabButton(b) {
+      b.onclick = () => {
+        state.tab = b.dataset.tab;
+        // Xóa bộ lọc ẩn còn sót từ tab trước (ví dụ skuFilter của Ngách xanh),
+        // để không bao giờ rơi vào trạng thái "0/131 và Đang filter" khi mở tab Video.
+        if (state.tab === 'video') {
+          state.skuFilter = '';
+          state.nicheFilter = '';
+          state.marketFilter = '';
+          state.q = '';
+          state.freeOnly = false;
+          state.watchFilter = '';
+        }
+        renderTabs();
+        render();
+      };
+      b.onkeydown = (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          const tabs = [...document.querySelectorAll('#tabs .tab-btn')];
+          const index = tabs.indexOf(b);
+          if (index < 0) return;
+          const next = (index + (e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : -1) + tabs.length) % tabs.length;
+          tabs[next].focus(); tabs[next].click();
+        }
+      };
+    }
+    function renderTabs() {
+      const nav = document.getElementById('tabs');
+      const bottom = document.getElementById('bottom-nav');
+      const mobile = document.getElementById('mobile-tabs');
+      nav.innerHTML = TABS.map(t => tabMarkup(t)).join('');
+      nav.querySelectorAll('.tab-btn').forEach(bindTabButton);
+      if (bottom) {
+        const mainBottom = TABS.filter(t => BOTTOM_TABS.includes(t.id));
+        const overflowTabs = TABS.filter(t => !BOTTOM_TABS.includes(t.id));
+        const isOverflowActive = overflowTabs.some(t => t.id === state.tab);
+        const moreIcon = `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>`;
+        const moreBtnHtml = `<button id="m-tab-more" type="button" role="tab" aria-selected="${isOverflowActive ? 'true' : 'false'}" aria-controls="content" class="tab-btn${isOverflowActive ? ' active' : ''}" title="Mục khác">${moreIcon}<span>Khác</span></button>`;
+
+        bottom.innerHTML = mainBottom.map(t => tabMarkup(t, `m-tab-${t.id}`)).join('') + moreBtnHtml;
+        bottom.querySelectorAll('.tab-btn:not(#m-tab-more)').forEach(bindTabButton);
+
+        const moreBtn = document.getElementById('m-tab-more');
+        if (moreBtn) {
+          moreBtn.onclick = (e) => {
+            e.stopPropagation();
+            toggleMoreMenu(overflowTabs);
+          };
+        }
+      }
+      if (mobile) {
+        mobile.innerHTML = '';
+      }
+    }
+
+    function toggleMoreMenu(overflowTabs) {
+      let sheet = document.getElementById('moreMenuSheet');
+      let backdrop = document.getElementById('moreMenuBackdrop');
+      if (sheet) {
+        sheet.remove();
+        if (backdrop) backdrop.remove();
+        return;
+      }
+      backdrop = document.createElement('div');
+      backdrop.id = 'moreMenuBackdrop';
+      backdrop.className = 'more-menu-backdrop';
+      backdrop.onclick = () => { sheet?.remove(); backdrop?.remove(); };
+      document.body.appendChild(backdrop);
+
+      sheet = document.createElement('div');
+      sheet.id = 'moreMenuSheet';
+      sheet.className = 'more-menu-sheet';
+      sheet.innerHTML = overflowTabs.map(t => {
+        const sel = state.tab === t.id;
+        return `<button type="button" class="more-item${sel ? ' active font-bold' : ''}" data-tab="${t.id}">${t.icon}<span>${t.name}</span></button>`;
+      }).join('');
+      sheet.querySelectorAll('.more-item').forEach(btn => {
+        btn.onclick = () => {
+          state.tab = btn.dataset.tab;
+          sheet.remove();
+          backdrop.remove();
+          renderTabs();
+          render();
+        };
+      });
+      document.body.appendChild(sheet);
+    }
+
+    function statCard(icon, label, value, sub, tabTarget) {
+      const isSvg = typeof icon === 'string' && icon.includes('<svg');
+      const glyph = isSvg ? icon : (icon ? `<span class="stat-glyph">${icon}</span>` : '');
+      const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${esc(label)}"` : '';
+      return `<div class="bento-card${tabTarget ? ' cursor-pointer hover:border-brand/40 transition-all' : ''}"${clickAttr}>
+    <div class="stat-icon">${glyph}</div>
+    <div class="stat-body">
+      <div class="stat-value">${value}</div>
+      <div class="stat-label">${label}</div>
+      ${sub ? `<div class="stat-sub">${sub}</div>` : ''}
+    </div>
+    ${tabTarget ? `<span class="stat-arrow text-gray-500 text-xs font-mono">→</span>` : ''}
+  </div>`;
+    }
+    function pageBanner(title, sub, stats) {
+      const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+      // Tránh thẻ thứ 5 bị lẻ bóng 1 mình trên mobile (UX Pro Max - Rhythm & Grid stability)
+      const displayStats = (stats && stats.length === 5 && isMobile) ? stats.slice(0, 4) : stats;
+      const cards = (displayStats || []).map(s => statCard(s.icon, s.label, s.value, s.sub || '')).join('');
+      return `
+  ${sub ? `<p class="page-lede">${sub}</p>` : ''}
+  ${cards ? `<div class="bento-grid mb-6">${cards}</div>` : ''}`;
+    }
+
+    async function renderTongQuan() {
+      const videos = await loadJSON('data-tabs/videos.json');
+      const kenh = await loadJSON('data-tabs/kenh-mau.json');
+      const kich = await loadJSON('data-tabs/tai-lieu-full.json');
+      const slim = await loadJSON('data/catalog.json');
+      const nx = await loadJSON('data-tabs/ngach-xanh.json');
+      const diskMb = slim.reduce((a, v) => a + (v.size_mb || 0), 0);
+      const free = videos.filter(v => v.free).length;
+      const market = {}; let emptyMarket = 0;
+      videos.forEach(v => {
+        if (!v.market || !v.market.length) emptyMarket++;
+        else v.market.forEach(m => market[m] = (market[m] || 0) + 1);
+      });
+      const marketRows = Object.entries(market).sort((a, b) => b[1] - a[1]);
+      if (emptyMarket) marketRows.push(['Chưa gắn', emptyMarket]);
+      const liveFile = kich.filter(x => x.file).length;
+      const overviewNiches = nx.ngachXanh.slice(0, 8);
+      return `
+  <div class="tq-head mb-6">
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-[11px] font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>RADAR KHO
+      </span>
+      <p class="page-lede">${videos.length} video · ${kich.length} tài liệu · ${kenh.filter(k=>!k.dead).length} kênh live · ${fmtMb(diskMb)}</p>
+    </div>
+    <button type="button" class="btn-primary text-xs flex items-center gap-1.5 px-3 py-1.5" data-open-tab="lotrinh">
+      <span>Lộ trình 11 module</span>
+      <span class="text-xs font-mono">→</span>
+    </button>
+  </div>
+  <div class="bento-grid mb-6">
+    ${statCard(ICONS.video, 'Video khóa học', videos.length, `${free} bài Free · 109 bài Pro`, 'video')}
+    ${statCard(ICONS.doc, 'Kịch bản & Tài liệu', kich.length, `${liveFile} file local · catalog`, 'kichban')}
+    ${statCard(ICONS.channel, 'Kênh mẫu', kenh.filter(k=>!k.dead).length, `${kenh.length} kênh · ${kenh.filter(k=>k.dead).length} dead ẩn`, 'kenh')}
+    ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `131/131 video sẵn sàng`, 'video')}
+  </div>
+  ${(function () {
+          const w = loadWatched();
+          let watched = 0, inprog = 0;
+          videos.forEach(v => {
+            const r = w[v.sku];
+            if (!r) return;
+            const ratio = (r.d && r.t) ? r.t / r.d : 0;
+            if (r.watched || ratio >= 0.95) watched++;
+            else if (ratio > 0.02) inprog++;
+          });
+          const pct = Math.round((watched / (videos.length || 1)) * 100);
+          return `<div class="card p-4 mb-6 border-border-strong bg-surface">
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-2.5">
+        <div class="flex items-center gap-2 text-sm font-semibold text-fg">
+          <span class="text-xs font-mono text-brand-ink uppercase tracking-wider">Tiến độ học</span>
+          <span class="text-xs text-gray-500">·</span>
+          <span class="badge badge-green">Đã xem ${watched}/${videos.length} bài (${pct}%)</span>
+          ${inprog ? `<span class="badge badge-amber">${inprog} bài đang dở</span>` : ''}
+        </div>
+        <a href="?tab=video&watch=watched" class="text-xs text-brand-400 hover:text-brand-300 font-medium inline-flex items-center gap-1">Xem video đã học <span class="font-mono">→</span></a>
+      </div>
+      <div class="w-full h-2 bg-surface-2 overflow-hidden" style="border-radius:2px">
+        <div class="h-full bg-brand transition-all duration-500" style="width:${Math.max(pct, inprog ? 3 : 0)}%;border-radius:2px"></div>
+      </div>
+    </div>`;
+        })()}
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="card p-5">
+      <div class="flex items-center justify-between gap-2 mb-1">
+        <h2 class="page-h2 mb-0">Thị trường đã gắn</h2>
+        <span class="text-[11px] font-mono text-gray-500">${videos.length} SKU</span>
+      </div>
+      <p class="card-note">${emptyMarket ? `Thanh = tỉ lệ trên tổng kho · ${emptyMarket} chưa gắn` : `Tỉ lệ phân bổ ${videos.length} video theo thị trường (click để lọc)`}</p>
+      <div class="market-list">
+        ${marketRows.map(([k, c]) => `
+          <div class="market-row cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors" data-open-tab="video" data-market-filter="${k === 'Chưa gắn' ? '' : esc(k)}" title="Xem video thị trường ${esc(k)}">
+            <span class="market-label ${k === 'Chưa gắn' ? 'text-amber-300' : 'text-fg-2'}">${k}</span>
+            <div class="market-bar"><i style="width:${c / videos.length * 100}%"></i></div>
+            <span class="market-n">${c}</span>
+          </div>`).join('')}
+      </div>
+    </div>
+    <div class="card p-5">
+      <div class="flex items-center justify-between gap-2 mb-1">
+        <h2 class="page-h2 mb-0">Ngách trong kho</h2>
+        <span class="text-[11px] font-mono text-brand-ink font-semibold">${nx.ngachXanh.length} ngách</span>
+      </div>
+      <p class="card-note">Top ngách trọng điểm kèm số video live trong kho (click để lọc)</p>
+      <div class="niche-list">
+        ${overviewNiches.map(n => {
+          const skuList = safeArray(n.skus).map(s => typeof s === 'string' ? s : (s && s.sku));
+          const nLive = videos.filter(v => skuList.includes(v.sku) || v.contentNiche === n.ngach).length;
+          const badge = n.xanh === true ? 'badge-green' : (n.xanh === 'CÓ ĐIỀU KIỆN' || n.xanh === 'THẬN TRỌNG' || n.xanh === 'CÓ MẪU TĂNG') ? 'badge-amber' : 'badge-muted';
+          const label = n.xanh === true ? 'XANH' : n.xanh === 'CÓ ĐIỀU KIỆN' ? 'CÓ ĐK' : n.xanh === 'THẬN TRỌNG' ? 'THẬN TRỌNG' : n.xanh === 'CÓ MẪU TĂNG' ? 'CÓ MẪU TĂNG' : n.xanh;
+          return `<div class="niche-row cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors" data-open-tab="video" data-open-niche="${esc(n.ngach)}" data-skus="${esc(skuList.join(','))}" title="Lọc video ngách ${esc(n.ngach)}"><span class="badge ${badge}">${label}</span><span class="niche-name">${esc(n.ngach)}</span><span class="niche-n">${nLive ? `${nLive} video` : '0 video'}</span></div>`;
+        }).join('')}
+      </div>
+      ${nx.ngachXanh.length > overviewNiches.length ? `<button type="button" class="overview-link flex items-center gap-1 mt-3" data-open-tab="ngachxanh"><span>Xem toàn bộ ${nx.ngachXanh.length} ngách trong kho</span><span class="font-mono">→</span></button>` : ''}
+    </div>
+  </div>
+  <div class="card p-5 mt-6">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="text-xs font-mono font-bold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">QUAN TRỌNG</span>
+      <h2 class="page-h2 mb-0">Chính sách YouTube phải nhớ</h2>
+    </div>
+    <ol class="policy-list">
+      ${(nx.thongTinChinhSach2026 || []).map((s, i) => `<li><span class="policy-i">${String(i + 1).padStart(2, '0')}</span><span class="policy-t">${esc(s)}</span></li>`).join('')}
+    </ol>
+  </div>`;
+    }
+
+    function videoCard(v) {
+      const markets = safeArray(v.market);
+      const channels = safeArray(v.channels);
+      const docs = safeArray(v.docs);
+      const lock = v.free ? '<span class="badge badge-green">FREE</span>' : '<span class="badge badge-red">PRO</span>';
+      const drm = v.drm ? '<span class="badge badge-amber">DRM</span>' : '<span class="badge badge-blue">HLS</span>';
+      const notDownloaded = !v.size ? '<span class="badge badge-red" title="MP4 0 byte — tải lại từ nguồn gốc">Chưa tải</span>' : '';
+      const wb = watchedBadge(v.sku);
+      const wp = watchedProgress(v.sku);
+      const resume = watchedResumeLabel(v.sku);
+      const playBtn = resume
+        ? `<a href="player.html?sku=${esc(v.sku)}&back=1" class="btn-press flex-1 text-center btn-primary text-xs font-bold py-2 transition-all">${resume}</a>`
+        : `<a href="player.html?sku=${esc(v.sku)}&back=1" class="btn-press flex-1 text-center btn-primary text-xs font-bold py-2 transition-all">Xem bài</a>`;
+      return `<div class="card interactive-card overflow-hidden min-w-0 flex flex-col justify-between group">
+    <div>
+      <div class="relative aspect-video bg-black overflow-hidden">
+        <img src="${esc(v.image || 'assets/thumbs/placeholder.svg')}" alt="Thumbnail: ${esc(v.title)}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover" loading="lazy">
+        <div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1">${lock}${drm}${wb}${notDownloaded}</div>
+        ${channels.length ? '<div class="absolute top-2.5 right-2.5 badge badge-blue">' + channels.length + ' kênh</div>' : ''}
+        ${wp}
+      </div>
+      <div class="p-4 min-w-0">
+        <div class="text-[13.5px] font-bold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere] group-hover:text-brand-300 transition-colors font-heading">${esc(v.title)}</div>
+        <div class="flex flex-wrap gap-1.5 mt-2.5 min-w-0 items-center">
+          ${v.contentNiche ? `<span class="badge badge-green text-[10px]">${esc(v.contentNiche)}</span>` : `<span class="badge badge-muted text-[10px]">${esc(v.niche || 'Khác')}</span>`}
+          ${markets.map(m => `<span class="text-[11px] text-gray-400 font-medium">${esc(m)}</span>`).join('<span class="text-gray-600 text-[10px]">·</span>')}
+        </div>
+        <div class="flex items-center gap-2 mt-2.5 text-[11px] text-gray-400">
+          <span class="text-gray-400 truncate min-w-0 font-mono font-semibold">${esc(v.sku)}</span>
+          ${v.published_at ? '<span class="text-gray-600">·</span><span class="text-gray-400 font-mono shrink-0">' + esc(v.published_at) + '</span>' : ''}
+          ${docs.length ? `<span class="ml-auto flex items-center gap-1 text-sky-400 font-medium"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full"></span> ${docs.length} TL</span>` : ''}
+        </div>
+      </div>
+    </div>
+    <div class="px-4 pb-4 pt-1 flex gap-2">
+      ${playBtn}
+      ${v.origin ? `<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer" class="btn-press w-9 h-9 flex items-center justify-center bg-ink-800 hover:bg-ink-700 text-xs rounded-xl border border-ink-600/80 transition-colors shrink-0" title="Trang gốc H2Dev" aria-label="Trang gốc">↗</a>` : ''}
+    </div>
+  </div>`;
+    }
+
+    async function renderVideo() {
+      const [rawVideos, rawNx] = await Promise.all([
+        loadJSON('data-tabs/videos.json'),
+        loadJSON('data-tabs/ngach-xanh.json').catch(() => null)
+      ]);
+      const videos = Array.isArray(rawVideos) ? rawVideos : safeArray(rawVideos && rawVideos.videos);
+      const macroToSkus = {};
+      if (rawNx && Array.isArray(rawNx.ngachXanh)) {
+        rawNx.ngachXanh.forEach(x => {
+          const macro = (nicheKeyFor(x.ngach) || x.ngach || '').toLowerCase();
+          if (!macroToSkus[macro]) macroToSkus[macro] = new Set();
+          (x.skus || []).forEach(s => macroToSkus[macro].add((typeof s === 'string' ? s : (s && s.sku) || '').toLowerCase()));
+        });
+      }
+      const macroSet = new Set(Object.values(NICHE_MAP).map(x => x.toLowerCase()));
+      const microNiches = [...new Set(videos.flatMap(v => [v.contentNiche, v.niche].filter(Boolean)))].sort();
+      const macroNiches = [...new Set(Object.values(NICHE_MAP))].sort();
+      const markets = [...new Set(videos.flatMap(v => v.market || []))];
+      let list = videos.filter(v => {
+        if (state.q && !(v.title + v.sku).toLowerCase().includes(state.q.toLowerCase())) return false;
+        if (state.skuFilter) {
+          const allow = new Set(String(state.skuFilter).split(',').map(s => s.trim().toLowerCase()).filter(Boolean));
+          if (allow.size && !allow.has(String(v.sku || '').toLowerCase())) return false;
+        } else if (state.nicheFilter) {
+          const target = state.nicheFilter.trim().toLowerCase();
+          const isMacro = macroSet.has(target);
+          const vNiche = (v.contentNiche || v.niche || '').trim().toLowerCase();
+          const vKey = (nicheKeyFor(v.contentNiche || v.niche || '') || '').trim().toLowerCase();
+          const vSku = (v.sku || '').trim().toLowerCase();
+          const allowedSkus = macroToSkus[target] || new Set();
+          if (isMacro) {
+            const matched = (vKey === target) || (vNiche === target) || (vNiche.includes(target)) || allowedSkus.has(vSku);
+            if (!matched) return false;
+          } else {
+            const matched = (vNiche === target) || (vNiche.includes(target)) || (target.includes(vNiche)) || allowedSkus.has(vSku);
+            if (!matched) return false;
+          }
+        }
+        if (state.marketFilter && !(v.market || []).includes(state.marketFilter)) return false;
+        if (state.freeOnly && !v.free) return false;
+        if (state.watchFilter) {
+          const w = loadWatched()[v.sku];
+          const ratio = (w && w.d && w.t) ? w.t / w.d : 0;
+          const done = (w && (w.watched || ratio >= 0.95));
+          // "Chưa xem" = mọi video chưa đạt đã xem (gồm cả đang xem dở)
+          if (state.watchFilter === 'watched' && !done) return false;
+          if (state.watchFilter === 'unwatched' && done) return false;
+        }
+        return true;
+      });
+      // Sắp xếp: mới nhất (mặc định) / theo ngách / theo thị trường
+      if (state.sortBy === 'niche') {
+        list = list.slice().sort((a, b) => {
+          const na = a.contentNiche || a.niche || '';
+          const nb = b.contentNiche || b.niche || '';
+          return na.localeCompare(nb) || (a.published_at || '').localeCompare(b.published_at || '');
+        });
+      } else if (state.sortBy === 'market') {
+        list = list.slice().sort((a, b) => {
+          const ma = (a.market || []).join(',');
+          const mb = (b.market || []).join(',');
+          return ma.localeCompare(mb) || (a.published_at || '').localeCompare(b.published_at || '');
+        });
+      } else {
+        list = list.slice().sort((a, b) => (b.published_at || '').localeCompare(a.published_at || ''));
+      }
+      const free = videos.filter(v => v.free).length;
+      const withDocs = videos.filter(v => v.docs && v.docs.length).length;
+      const newest = videos[0] && videos[0].published_at;
+      return `
+  ${pageBanner('Video', list.length + '/' + videos.length + ' · mới nhất trước', [
+        { icon: ICONS.video, label: 'Tổng video', value: videos.length, sub: newest ? 'Mới nhất ' + newest : '' },
+        { icon: ICONS.doc, label: 'Free', value: free, sub: (videos.length - free) + ' pro' },
+        { icon: ICONS.doc, label: 'Có tài liệu', value: withDocs, sub: 'docs[] catalog' },
+        { icon: ICONS.video, label: 'Đang hiện', value: list.length, sub: list.length === videos.length ? 'Không lọc' : 'Đang filter' }
+      ])}
+  <div class="flex flex-wrap gap-2.5 mb-3 items-center justify-between">
+    <div class="flex flex-wrap gap-2 items-center flex-1 min-w-0">
+      <label class="sr-only" for="fq">Tìm video</label>
+ <input id="fq" aria-label="Tìm video" value="${esc(state.q)}" placeholder="Tìm theo tên video, SKU, ngách..." class="search-input-premium w-full sm:w-64 sm:flex-1 sm:min-w-0 sm:max-w-[340px]">
+      <label class="sr-only" for="fniche">Lọc theo ngách</label>
+      <select id="fniche" aria-label="Lọc theo ngách" class="search-input-premium text-xs font-semibold py-2">
+        <option value="">Mọi ngách</option>
+        <optgroup label="── Nhóm ngách lớn ──">
+          ${macroNiches.map(m => `<option value="${esc(m)}" ${state.nicheFilter === m ? 'selected' : ''}>${esc(m)}</option>`).join('')}
+        </optgroup>
+        <optgroup label="── Ngách chi tiết ──">
+          ${microNiches.map(n => `<option value="${esc(n)}" ${state.nicheFilter === n ? 'selected' : ''}>${esc(n)}</option>`).join('')}
+        </optgroup>
+      </select>
+      <label class="sr-only" for="fmarket">Lọc theo thị trường</label>
+      <select id="fmarket" aria-label="Lọc theo thị trường" class="search-input-premium text-xs font-semibold py-2">
+        <option value="">Mọi thị trường</option>${markets.map(m => `<option ${state.marketFilter === m ? 'selected' : ''}>${esc(m)}</option>`).join('')}
+      </select>
+      <label class="sr-only" for="fsort">Sắp xếp</label>
+      <select id="fsort" aria-label="Sắp xếp" class="search-input-premium text-xs font-semibold py-2">
+        <option value="newest" ${state.sortBy !== 'niche' && state.sortBy !== 'market' ? 'selected' : ''}>Mới nhất</option>
+        <option value="niche" ${state.sortBy === 'niche' ? 'selected' : ''}>Theo ngách</option>
+        <option value="market" ${state.sortBy === 'market' ? 'selected' : ''}>Theo thị trường</option>
+      </select>
+    </div>
+    <div class="flex items-center gap-1.5 shrink-0">
+      ${['unwatched', 'watched'].map(k => {
+        const label = { unwatched: 'Chưa xem', watched: 'Đã xem' }[k];
+        return `<button type="button" data-watch="${k}" class="filter-btn text-xs font-medium px-3 py-1 ${state.watchFilter === k ? 'active' : ''}">${label}</button>`;
+      }).join('')}
+      <button type="button" id="freset" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-3 py-1.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
+    </div>
+  </div>
+  <div class="flex flex-wrap gap-1.5 mb-4 items-center">
+    <button type="button" class="filter-btn text-xs font-medium px-3 py-1 ${!state.freeOnly && !state.marketFilter && !state.nicheFilter && !state.skuFilter && !state.watchFilter ? 'active' : ''}" onclick="state.freeOnly=false;state.marketFilter='';state.nicheFilter='';state.q='';state.skuFilter='';state.watchFilter='';render()">Tất cả (${videos.length})</button>
+    <button type="button" class="filter-btn text-xs font-medium px-3 py-1 ${state.freeOnly ? 'active' : ''}" onclick="state.freeOnly=!state.freeOnly;render()">Chỉ Free (${free})</button>
+    ${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="filter-btn text-xs font-medium px-3 py-1 ${state.marketFilter === m ? 'active' : ''}">${esc(m)} · ${videos.filter(v => (v.market || []).includes(m)).length}</button>`).join('')}
+  </div>
+  ${(state.nicheFilter || state.skuFilter) ? `
+  <div class="flex items-center gap-2 mb-4 bg-brand-500/10 border border-brand-500/20 px-3.5 py-2 rounded-xl text-xs text-brand-300">
+    <span>🎯 Đang lọc theo ngách: <strong class="text-white">${esc(state.nicheFilter || 'SKU')}</strong> (${list.length} video)</span>
+    <button type="button" onclick="state.nicheFilter='';state.skuFilter='';render()" class="ml-auto text-brand-400 hover:text-white font-semibold underline">✕ Xóa bộ lọc</button>
+  </div>` : ''}
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">${list.map(videoCard).join('') || `<div class="card p-12 text-gray-400 col-span-full text-center py-10"><p class="mb-3">Không tìm thấy video phù hợp với bộ lọc hiện tại.</p><button type="button" id="freset-empty" class="bg-surface-2 hover:bg-surface border border-border px-4 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Xóa bộ lọc</button></div>`}</div>`;
+    }
+
+    async function renderNgachXanh() {
+      const nx = await loadJSON('data-tabs/ngach-xanh.json');
+      const rawVideos = await loadJSON('data-tabs/videos.json');
+      const videos = Array.isArray(rawVideos) ? rawVideos : safeArray(rawVideos && rawVideos.videos);
+
+      function vidsFor(n) {
+        const bySku = new Map(videos.map(v => [String(v.sku || '').toLowerCase(), v]));
+        const out = [];
+        const seen = new Set();
+        function add(v) {
+          if (!v || seen.has(v.sku)) return;
+          seen.add(v.sku);
+          out.push(v);
+        }
+        for (const ref of (n && n.skus) || []) {
+          const sku = typeof ref === 'string' ? ref : (ref && ref.sku);
+          add(bySku.get(String(sku || '').toLowerCase()));
+        }
+        const handles = new Set(((n && n.mauSach) || []).map(h => String(h).toLowerCase()));
+        if (handles.size) {
+          for (const v of videos) {
+            if ((v.channels || []).some(c => handles.has(String(c).toLowerCase()))) add(v);
+          }
+        }
+        return out;
+      }
+
+      function videoRow(v, extraClass, extraAttr) {
+        const docs = safeArray(v.docs);
+        const channels = safeArray(v.channels);
+        return `<a href="player.html?sku=${esc(v.sku)}&back=1" class="flex gap-2.5 p-2 rounded-xl hover:bg-ink-700/60 border border-transparent hover:border-ink-600 transition-colors group min-w-0 ${extraClass || ''}" ${extraAttr || ''}>
+      <img src="${esc(v.image || 'assets/thumbs/placeholder.svg')}" alt="Thumbnail bài học: ${esc(v.title)}" width="72" height="40" loading="lazy" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-[72px] h-[40px] rounded-xl object-cover shrink-0 bg-black">
+      <div class="min-w-0 flex-1">
+        <div class="text-xs font-medium text-white leading-snug line-clamp-2 group-hover:text-brand-200 transition-colors break-words">${esc(v.title)}</div>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-0.5 mt-1">
+          <span class="text-[10px] text-gray-500 font-mono truncate">${esc(v.sku)}</span>
+          ${v.published_at ? `<span class="text-[10px] text-gray-400 shrink-0">${esc(v.published_at)}</span>` : ''}
+          <span class="text-[10px] text-gray-400">${fmtBytes(v.size)}</span>
+          ${docs.length ? '<span class="text-[10px] text-brand-400 shrink-0"><span aria-hidden="true">📄</span> ' + docs.length + '</span>' : ''}
+          ${channels.length ? '<span class="text-[10px] text-sky-400 shrink-0"><span aria-hidden="true">📺</span> ' + channels.length + '</span>' : ''}
+        </div>
+      </div>
+      <span class="shrink-0 w-7 h-7 rounded-xl bg-brand-600 group-hover:bg-brand-500 text-white flex items-center justify-center text-xs transition-colors">→</span>
+    </a>`;
+      }
+      function nxRpmShort(field) {
+        const raw = String(field || '').trim();
+        const match = raw.match(/median\s*\$?\s*(\d+(?:\.\d+)?)/i) || raw.match(/\$(\d+(?:\.\d+)?)/);
+        return match ? '$' + match[1] : 'Chưa đo';
+      }
+      function nxCompShort(field) {
+        const raw = String(field || '').trim();
+        const matches = [...raw.matchAll(/competition\s*[:=]?\s*(\d+(?:\.\d+)?)/gi)];
+        return matches.length ? matches[matches.length - 1][1] : 'Chưa đo';
+      }
+
+
+      const audit = nx.auditTong2026 || {};
+      const auditRows = safeArray(audit.xepHang);
+      const ngachList = safeArray(nx.ngachXanh);
+
+      // Merge ranked items with their rich details
+      const enrichedNiches = auditRows.map(r => {
+        const detail = (r.record != null && r.record < ngachList.length) ? ngachList[r.record] : {};
+        const rawMarket = safeArray(detail.thiTruong);
+        let mTag = 'GLOBAL';
+        const nameLower = (r.ngach + ' ' + rawMarket.join(' ')).toLowerCase();
+        if (/us|en|tiếng anh|mỹ|quốc tế/.test(nameLower)) mTag = 'US';
+        else if (/jp|nhật|japan/.test(nameLower)) mTag = 'JP';
+        else if (/kr|hàn|korea|야담/.test(nameLower)) mTag = 'KR';
+        else if (/vn|việt nam|vietnam/.test(nameLower)) mTag = 'VN';
+
+        return {
+          rank: r.thuTu,
+          recordId: r.record,
+          name: r.ngach,
+          tier: r.nhom || 'KHONG_DU_EVIDENCE',
+          thesis: r.lyDo || detail.evidence || '',
+          videoNote: r.lienKetVideo || '',
+          marketTag: mTag,
+          markets: rawMarket.length ? rawMarket : [mTag],
+          rpm: detail.rpm || '',
+          competition: detail.canhTranh || '',
+          rpmShort: nxRpmShort(detail.rpm),
+          competitionShort: nxCompShort(detail.canhTranh),
+          novelty: detail.doMoi || '',
+          safeFormat: detail.formatBrand || detail.lamDuoc || 'Sản xuất kịch bản có thesis/nguồn tài liệu kiểm chứng riêng biệt.',
+          avoidTrap: detail.viPham || 'Tránh lặp template, không quote-farm, không mạo danh chuyên gia.',
+          channels: safeArray(detail.mauSach),
+          vids: vidsFor(detail),
+          rawDetail: detail
+        };
+      });
+
+      // Filter statistics
+      const tierCounts = { ALL: enrichedNiches.length, UU_TIEN_SAN_XUAT: 0, WATCHLIST: 0, TEST_FORMAT: 0, KHONG_DU_EVIDENCE: 0, TACH_KHOI_DE_XUAT: 0 };
+      const marketCounts = { ALL: enrichedNiches.length, US: 0, JP: 0, KR: 0, VN: 0, GLOBAL: 0 };
+      enrichedNiches.forEach(n => {
+        if (tierCounts[n.tier] != null) tierCounts[n.tier]++;
+        if (marketCounts[n.marketTag] != null) marketCounts[n.marketTag]++;
+      });
+
+      // Apply Filters
+      const q = (state.nxQ || '').trim().toLowerCase();
+      const filtered = enrichedNiches.filter(n => {
+        if (state.nxTier && n.tier !== state.nxTier) return false;
+        if (state.nxMarket && n.marketTag !== state.nxMarket) return false;
+        if (!q) return true;
+        const hay = [n.name, n.thesis, n.safeFormat, n.avoidTrap, n.marketTag, n.markets.join(' '), n.channels.join(' '), n.vids.map(v=>v.sku+' '+v.title).join(' ')].join(' ').toLowerCase();
+        return hay.includes(q);
+      });
+
+      const tierLabels = {
+        UU_TIEN_SAN_XUAT: 'Ưu tiên sản xuất',
+        WATCHLIST: 'Watchlist',
+        TEST_FORMAT: 'Test format',
+        KHONG_DU_EVIDENCE: 'Chưa đủ evidence',
+        TACH_KHOI_DE_XUAT: 'Tách khỏi đề xuất'
+      };
+
+      const tierBadges = {
+        UU_TIEN_SAN_XUAT: 'badge-green',
+        WATCHLIST: 'badge-amber',
+        TEST_FORMAT: 'badge-blue',
+        KHONG_DU_EVIDENCE: 'badge-muted',
+        TACH_KHOI_DE_XUAT: 'badge-red'
+      };
+
+      const marketLabels = {
+        US: 'US / Tiếng Anh',
+        JP: 'Nhật Bản',
+        KR: 'Hàn Quốc',
+        VN: 'Việt Nam',
+        GLOBAL: 'Toàn cầu / Khác'
+      };
+      return `
+  ${pageBanner('Nhận định Ngách xanh 2026', 'Bản đồ 34 ngách YouTube, định dạng an toàn (Safe Format), rủi ro chính sách (Policy Flags) và kênh đối thủ đã kiểm chứng 30 ngày.', [
+        { icon: ICONS.niche, label: 'Ưu tiên sản xuất', value: tierCounts.UU_TIEN_SAN_XUAT, sub: 'Top 1-8 ngách sạch, demand thực, RPM cao' },
+        { icon: ICONS.doc, label: 'Watchlist & Test', value: (tierCounts.WATCHLIST + tierCounts.TEST_FORMAT), sub: 'Kiểm soát format & test nhỏ 5-10 video' },
+        { icon: ICONS.channel, label: 'Kênh mẫu sạch', value: '70 / 70', sub: 'Đã check 30 ngày qua vidIQ API' },
+        { icon: ICONS.strategy, label: 'RPM Benchmark', value: '$10.22', sub: 'Median danh mục Education & Science (AIR)' }
+      ])}
+
+  <!-- BỘ LỌC TINH GỌN (COMPACT RADAR FILTER) -->
+  <section class="card nx-filter-panel p-3 sm:p-4 mb-5 border-border">
+    <div class="nx-filter-head flex flex-col sm:flex-row gap-2.5 sm:items-center justify-between mb-2.5">
+      <div class="relative flex-1 min-w-0">
+        <label class="sr-only" for="fq-nx">Tìm kiếm ngách</label>
+        <input id="fq-nx" type="search" name="nx-search" autocomplete="off" spellcheck="false" value="${esc(state.nxQ)}" placeholder="Tìm tên ngách, từ khóa, @handle kênh…" class="search-input-premium w-full text-xs py-2" aria-label="Tìm kiếm ngách xanh">
+      </div>
+      <button type="button" id="freset-nx" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-3 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors flex items-center gap-1.5"><span aria-hidden="true">↺</span> Đặt lại</button>
+    </div>
+
+    <!-- Tier Filter Chips -->
+    <div class="nx-filter-row flex items-center gap-1.5 py-1 border-t border-hairline" style="scrollbar-width:none">
+      <span class="text-[11px] font-mono text-fg-muted shrink-0 mr-1">Tầng:</span>
+      <div class="nx-filter-chips">
+        <button type="button" data-nx-tier="" class="filter-btn shrink-0 ${!state.nxTier ? 'active' : ''}">Tất cả (${tierCounts.ALL})</button>
+        ${['UU_TIEN_SAN_XUAT', 'WATCHLIST', 'TEST_FORMAT', 'KHONG_DU_EVIDENCE', 'TACH_KHOI_DE_XUAT'].map(t => {
+          const active = state.nxTier === t;
+          return `<button type="button" data-nx-tier="${t}" class="filter-btn shrink-0 ${active ? 'active' : ''}">${tierLabels[t]} (${tierCounts[t] || 0})</button>`;
+        }).join('')}
+      </div>
+    </div>
+
+    <!-- Market Filter Chips -->
+    <div class="nx-filter-row flex items-center gap-1.5 py-1 border-t border-hairline" style="scrollbar-width:none">
+      <span class="text-[11px] font-mono text-fg-muted shrink-0 mr-1">Khu vực:</span>
+      <div class="nx-filter-chips">
+        <button type="button" data-nx-market="" class="filter-btn shrink-0 ${!state.nxMarket ? 'active' : ''}">Tất cả (${marketCounts.ALL})</button>
+        ${['US', 'JP', 'KR', 'VN'].map(m => {
+          const active = state.nxMarket === m;
+          return `<button type="button" data-nx-market="${m}" class="filter-btn shrink-0 ${active ? 'active' : ''}">${marketLabels[m]} (${marketCounts[m] || 0})</button>`;
+        }).join('')}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 CỬA CHÍNH SÁCH YOUTUBE (COLLAPSIBLE ACCESSIBLE BANNER) -->
+  <details class="card p-3 sm:p-4 mb-5 border-amber-900/30 bg-amber-950/10 group">
+    <summary class="flex items-center justify-between cursor-pointer font-semibold text-xs text-amber-300 select-none">
+      <div class="flex items-center gap-2">
+        <span aria-hidden="true">🛡️</span>
+        <span>4 Cửa ải chính sách kiếm tiền YouTube 2026 (Bấm để xem chi tiết)</span>
+      </div>
+      <span class="text-gray-400 group-open:rotate-180 transition-transform text-xs font-mono">▼</span>
+    </summary>
+    <div class="policy-grid mt-3 pt-3 border-t border-amber-900/30">
+      <div class="policy-card">
+        <div class="font-bold text-amber-300 mb-1 text-xs">🚪 Cửa 1: Inauthentic / Spam</div>
+        <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm dùng 1 template nhân vật / quote lặp lại hàng loạt. Mỗi video phải có kịch bản và case-study mới.</p>
+      </div>
+      <div class="policy-card">
+        <div class="font-bold text-rose-300 mb-1 text-xs">🚪 Cửa 2: Distress / Harmful</div>
+        <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm dàn dựng cứu hộ động vật, trẻ em đau khổ, bạo lực hay thumbnail gây sốc lừa dối người xem.</p>
+      </div>
+      <div class="policy-card">
+        <div class="font-bold text-sky-300 mb-1 text-xs">🚪 Cửa 3: Fake AI Persona</div>
+        <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm AI giả dạng Bác sĩ, Dược sĩ, Luật sư để chẩn đoán bệnh hoặc tư vấn tài chính / cam kết làm giàu.</p>
+      </div>
+      <div class="policy-card">
+        <div class="font-bold text-emerald-300 mb-1 text-xs">🚪 Cửa 4: Reused Content</div>
+        <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm reup hoạt hình/phim ảnh thô thiển. Phải có lời bình sâu sắc và biến đổi thực chất (Transformative).</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- TIÊU ĐỀ KẾT QUẢ -->
+  <div class="mb-3.5 flex items-center justify-between text-xs text-gray-400">
+    <div>Đang hiển thị: <b class="text-white">${filtered.length}</b> / ${enrichedNiches.length} ngách</div>
+    ${(state.nxTier || state.nxMarket || state.nxQ) ? '<span class="text-brand-ink font-medium">Đang áp dụng bộ lọc</span>' : ''}
+  </div>
+
+  <!-- DANH SÁCH THẺ NGÁCH TINH GỌN (TWO-COLUMN INTEL CARDS) -->
+  <div class="niche-grid mb-8">
+    ${filtered.map(n => {
+      const isTopTier = n.tier === 'UU_TIEN_SAN_XUAT';
+      const isWatchlist = n.tier === 'WATCHLIST';
+      const key = nicheKeyFor(n.name);
+      const rankBadgeClass = isTopTier ? 'rank-badge-gold' : (isWatchlist ? 'rank-badge-silver' : 'rank-badge-slate');
+
+      const tierClass = n.tier === 'UU_TIEN_SAN_XUAT' ? 'is-tier-uu-tien' : (n.tier === 'WATCHLIST' ? 'is-tier-watchlist' : (n.tier === 'TEST_FORMAT' ? 'is-tier-test' : (n.tier === 'KHONG_DU_EVIDENCE' ? 'is-tier-evidence' : 'is-tier-tach')));
+      return `
+      <article class="niche-card p-0 ${tierClass} ${isTopTier ? 'border-brand/40 bg-surface/90' : ''}">
+          <div class="nc-header">
+            <span class="nc-rank ${rankBadgeClass}">#${n.rank}</span>
+            <div class="nc-title">
+              <div class="nc-badges">
+                <span class="badge ${tierBadges[n.tier] || 'badge-muted'}">${tierLabels[n.tier] || n.tier}</span>
+                <span class="badge badge-muted">${marketLabels[n.marketTag] || n.marketTag}</span>
+              </div>
+              <h2 class="nc-name">${esc(n.name)}</h2>
+            </div>
+          </div>
+        <div class="nx-card-facts mb-3">
+          <div class="nx-card-kpi">
+            <span title="${esc(n.rpm || 'Chưa đo')}"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:baseline;margin-right:2px"><path d="M3 13h4v8H3zm6-9h4v17H9zm6 4h4v13h-4z"/></svg> <b>RPM</b> ${esc(n.rpmShort)}</span>
+            <span title="${esc(n.competition || 'Chưa đo')}"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:baseline;margin-right:2px"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="currentColor"/></svg> <b>Cạnh tranh</b> ${esc(n.competitionShort)}</span>
+          </div>
+          <div class="nx-card-point leading-relaxed"><b class="text-white font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:baseline;margin-right:2px"><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"/></svg> Luận điểm:</b> ${esc(n.thesis)}</div>
+          <div class="nx-card-point leading-relaxed"><b class="text-emerald-400 font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:baseline;margin-right:2px"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg> Safe Format:</b> ${esc(n.safeFormat)}</div>
+          <div class="nx-card-point leading-relaxed"><b class="text-rose-400 font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:baseline;margin-right:2px"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg> Tránh:</b> ${esc(n.avoidTrap)}</div>
+        </div>
+        ${n.channels.length ? `
+        <div class="mb-3">
+          <div class="nx-card-channel-label">Kênh đối thủ sạch (30 ngày):</div>
+          <div class="nc-channels">
+            ${n.channels.map(ch => `<a href="https://www.youtube.com/${esc(ch)}" target="_blank" rel="noopener noreferrer" class="channel-chip" translate="no">${esc(ch)} ↗</a>`).join('')}
+          </div>
+        </div>` : ''}
+        ${n.vids.length ? `
+        <div class="nx-card-action mt-auto pt-2.5 border-t border-border">
+          <button type="button" data-open-niche="${esc(key)}" data-skus="${esc(n.vids.map(v => v.sku).join(','))}" class="text-[11px] text-brand-ink hover:text-brand-hover font-semibold" title="Mở ${n.vids.length} video bài học liên quan">Xem ${n.vids.length} video liên quan →</button>
+        </div>` : '<div class="mt-auto pt-2 text-[11px] text-gray-500 flex items-center gap-1.5"><span aria-hidden="true">○</span> Chưa có video</div>'}
+      </article>`;
+    }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full">Không tìm thấy ngách phù hợp với bộ lọc hiện tại.</div>'}
+  </div>
+
+
+  <!-- NGÁCH ĐỎ CẦN TRÁNH -->
+  <div class="card p-5 mb-6">
+    <h2 class="page-h2 mb-3">Ngách ĐỎ tuyệt đối tránh</h2>
+    <div class="niche-grid">
+      ${nx.ngachDoCanTranh.map(n => `<div class="policy-card"><span class="badge badge-red mr-2 font-bold">CẤM</span><b class="text-white">${esc(n.ngach)}</b><p class="text-gray-300 mt-1 leading-relaxed">${esc(n.lydo)}</p></div>`).join('')}
+    </div>
+  </div>
+
+  <!-- META TRONG KHO -->
+  ${(nx.ngachMetaKho && nx.ngachMetaKho.length) ? `
+  <div class="card p-5 mb-6">
+    <h2 class="page-h2 mb-1">Meta &amp; Quy trình kỹ thuật</h2>
+    <p class="card-note">Bài học về nhân bản, share key, chính sách, edit và AI tool. Chỉ dùng để học quy trình.</p>
+    <div class="space-y-3">${nx.ngachMetaKho.map(n => {
+      const vids = vidsFor(Object.assign({}, n, { skus: (n.skus && n.skus.length) ? n.skus : videos.filter(v => v.niche === n.ngach).map(v => v.sku) }));
+      const hidden = Math.max(0, vids.length - 3);
+      return `<div class="policy-card">
+        <div class="flex flex-wrap items-center gap-2 mb-1.5">
+          <span class="badge ${n.xanh === 'THẬN TRỌNG' ? 'badge-amber' : 'badge-muted'} font-bold">${esc(n.xanh)}</span>
+          <b class="text-white text-sm">${esc(n.ngach)}</b>
+          <span class="text-xs text-gray-400">(${vids.length} video)</span>
+          ${vids.length ? `<button type="button" data-open-niche="${esc(n.ngach)}" data-skus="${esc(vids.map(v => v.sku).join(','))}" class="text-xs text-brand-400 hover:text-brand-300 ml-auto font-medium">Mở video →</button>` : ''}
+        </div>
+        <div class="text-xs text-gray-300 leading-relaxed mb-2 [overflow-wrap:anywhere]"><b class="text-gray-200">${esc(n.vaiTro)}:</b> ${esc(n.evidence)}</div>
+        ${vids.length ? `<div class="space-y-2" data-niche-list>${vids.map((v, i) => videoRow(v, i >= 3 ? 'hidden' : '', i >= 3 ? 'data-more' : '')).join('')}${hidden ? `<div class="text-center mt-2"><button type="button" data-expand-niche class="text-xs text-gray-300 hover:text-white bg-ink-700 border border-ink-600 px-3 py-1 rounded-xl">+ ${hidden} video khác</button></div>` : ''}</div>` : ''}
+      </div>`;
+    }).join('')}</div>
+  </div>`: ''}
+
+  <!-- THỊ TRƯỜNG & RPM FOOTNOTE -->
+  <div class="card p-5">
+    <h2 class="page-h2">Định vị thị trường &amp; benchmark RPM 2026</h2>
+    <div class="niche-grid mb-4">
+      ${Object.entries(nx.thiTruongXanh).map(([k, v]) => `<div class="policy-card"><b class="text-brand-ink block mb-1 text-sm">${k}</b><span class="text-gray-300 leading-relaxed [overflow-wrap:anywhere]">${esc(v)}</span></div>`).join('')}
+    </div>
+    ${nx.rpmNote ? `<div class="policy-card text-xs text-gray-400 leading-relaxed [overflow-wrap:anywhere]">${esc(nx.rpmNote)}</div>` : ''}
+  </div>`;
+    }
+
+
+    async function renderKichBan() {
+      const kich = await loadJSON('data-tabs/tai-lieu-full.json');
+      const videos = await loadJSON('data-tabs/videos.json');
+      const bySku = Object.fromEntries(videos.map(v => [v.sku, v]));
+      const KIND_LABEL = { prompt: 'Prompt', list: 'List kênh', tool: 'Tool', drive: 'Drive', form: 'Form', ai: 'AI gen', report: 'Báo cáo', other: 'Khác' };
+      const KIND_BADGE = { prompt: 'badge-brand', list: 'badge-blue', tool: 'badge-amber', drive: 'badge-green', form: 'badge-red', ai: 'badge-blue', report: 'badge-green', other: 'badge-muted' };
+      const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Nền tảng / Tool', 'Khác'];
+      function classifyPrompt(item) {
+        if (item.kind) return item.kind;
+        const name = (item.name || '').toLowerCase();
+        const link = item.link || '';
+        const file = (item.file || '').toLowerCase();
+        const blob = name + ' ' + file + ' ' + link;
+        if (/forms\.gle|docs\.google\.com\/forms/.test(link) || /forms|mua kênh/.test(name)) return 'form';
+        if (/labs\.google|dreamina|capcut|tạo ảnh|tạo video/.test(blob)) return 'ai';
+        if (/vietsubmmo|tool tải|tool quay|tool cắt|\.zip/.test(blob)) return 'tool';
+        if (/drive\.google/.test(link)) return 'drive';
+        if (/spreadsheets/.test(link) || /\.csv$/.test(file) || /\blist\b|danh sách|kênh key|link kênh|nguồn reup|nguồn video/.test(name)) return 'list';
+        if (/báo cáo|nhận định|verify|quét|cross-check|đánh giá|phân tích mcp/.test(name)) return 'report';
+        if (/prompt|câu lệnh|train chatgpt|hashtag|seo|skill/.test(name) || /\.txt$/.test(file)) return 'prompt';
+        return 'other';
+      }
+      function inferContentNiche(item, video) {
+        if (item.contentNiche) return item.contentNiche;
+        const t = ((item.name || '') + ' ' + (item.file || '')).toLowerCase();
+        if (/kinh tế|quy luật kinh tế|tài chính|rpm/.test(t)) return 'Kinh tế / Tài chính';
+        if (/sức khỏe|lão hóa|senior/.test(t)) return 'Sức khỏe / Lão hóa';
+        if (/triết|tâm linh|phật|khắc kỷ|luật hấp dẫn|đứa trẻ|sinh học|chiến thuật|tâm lý/.test(t)) return 'Triết lý / Tâm linh';
+        if (/world war|tiền sử|lịch sử|quân sự|cảnh sát/.test(t)) return 'Lịch sử / Quân sự';
+        if (/reup|douyin|bilibili|hoạt hình/.test(t)) return 'Reup / Hoạt hình';
+        if (/thumb|edit|nonagon|hashtag|seo/.test(t)) return 'Edit / Thumb';
+        if (/tool tải|quay màn hình|cắt ghép|tài khoản giá rẻ|elevenlab|minimax/.test(t)) return 'Nền tảng / Tool';
+        if (/train chatgpt|câu lệnh train|prompt train|prompt demo|prompt master|tự tạo prompt|tạo ảnh ai/.test(t)) return 'Nền tảng / Tool';
+        if (/nhân bản|thị trường/.test(t) && /prompt/.test(t)) return 'Nhân bản / Kênh';
+        if (/kênh key|link kênh|list kênh|đối thủ/.test(t)) return 'Share key / Ngách nhỏ';
+        if (video && video.niche && video.niche !== 'Khác') return video.niche;
+        return 'Khác';
+      }
+      function cleanName(name) {
+        let t = String(name || '').trim();
+        if (/^https?:\/\//i.test(t)) {
+          const m = t.match(/\/d\/([a-zA-Z0-9_-]{6,})/);
+          return m ? ('Tài nguyên Drive · ' + m[1].slice(0, 8)) : 'Tài nguyên Drive';
+        }
+        t = t.replace(/\s*\((bấm vào đây|bấm vào tại đây|bấm vào đây để liên hệ)[^)]*\)/gi, '')
+          .replace(/\s*-\s*H2DEV\s*$/i, '')
+          .replace(/\s{2,}/g, ' ')
+          .trim();
+        return t || 'Tài nguyên';
+      }
+      function hostLabel(link) {
+        if (!link) return '';
+        if (/docs\.google\.com\/document/.test(link)) return 'Google Docs';
+        if (/docs\.google\.com\/spreadsheets/.test(link)) return 'Google Sheet';
+        if (/docs\.google\.com\/forms|forms\.gle/.test(link)) return 'Google Form';
+        if (/drive\.google/.test(link)) return 'Google Drive';
+        if (/labs\.google/.test(link)) return 'Google Labs';
+        if (/dreamina|capcut/.test(link)) return 'Dreamina';
+        if (/vietsubmmo/.test(link)) return 'Tool ZIP';
+        try { return new URL(link).hostname.replace(/^www\./, ''); } catch (e) { return 'Link'; }
+      }
+      function fileLabel(file) {
+        if (!file) return '';
+        const n = file.split('/').pop();
+        const ext = (n.split('.').pop() || '').toLowerCase();
+        return (ext && ext !== n.toLowerCase()) ? ext.toUpperCase() : 'FILE';
+      }
+      const enriched = kich.map((item, idx) => {
+        const kind = classifyPrompt(item);
+        const video = bySku[item.sku];
+        const contentNiche = inferContentNiche(item, video);
+        return Object.assign({}, item, {
+          _i: idx,
+          kind,
+          title: cleanName(item.name),
+          videoTitle: video ? video.title : '',
+          videoNiche: video ? video.niche : '',
+          contentNiche,
+          host: hostLabel(item.link),
+          ext: fileLabel(item.file)
+        });
+      });
+      const kindCounts = enriched.reduce((a, x) => { a[x.kind] = (a[x.kind] || 0) + 1; a.all = (a.all || 0) + 1; return a; }, {});
+      const nicheCounts = enriched.reduce((a, x) => { a[x.contentNiche] = (a[x.contentNiche] || 0) + 1; return a; }, {});
+      const q = (state.promptQ || '').trim().toLowerCase();
+      const list = enriched.filter(item => {
+        if (state.kindFilter && item.kind !== state.kindFilter) return false;
+        if (state.promptNiche && item.contentNiche !== state.promptNiche) return false;
+        if (!q) return true;
+        const hay = [item.title, item.name, item.sku, item.kind, item.contentNiche, item.videoNiche, item.videoTitle, item.host, item.ext].join(' ').toLowerCase();
+        return hay.includes(q);
+      });
+      const kindChips = [['', 'Tất cả', kindCounts.all || 0], ['prompt', 'Prompt', kindCounts.prompt || 0], ['report', 'Báo cáo', kindCounts.report || 0], ['list', 'List kênh', kindCounts.list || 0], ['tool', 'Tool', kindCounts.tool || 0], ['drive', 'Drive', kindCounts.drive || 0], ['form', 'Form', kindCounts.form || 0], ['ai', 'AI gen', kindCounts.ai || 0], ['other', 'Khác', kindCounts.other || 0]].filter(x => !x[0] || x[2]);
+      const nicheChips = NICHE_ORDER.filter(n => nicheCounts[n]).map(n => [n, n, nicheCounts[n]]);
+      const grouped = [];
+      NICHE_ORDER.forEach(n => {
+        const items = list.filter(x => x.contentNiche === n);
+        if (items.length) grouped.push({ niche: n, items });
+      });
+      Object.keys(nicheCounts).forEach(n => {
+        if (!NICHE_ORDER.includes(n)) {
+          const items = list.filter(x => x.contentNiche === n);
+          if (items.length) grouped.push({ niche: n, items });
+        }
+      });
+      function videoNicheKey(contentNiche) {
+        return NICHE_MAP[contentNiche] || (Object.values(NICHE_MAP).includes(contentNiche) ? contentNiche : '');
+      }
+      return `
+  ${pageBanner('Kịch bản & Tài liệu', list.length + '/' + enriched.length + ' mục · gắn theo ngách nội dung, không trùng Nguồn reup', [
+        { icon: ICONS.doc, label: 'Tổng mục', value: enriched.length, sub: list.length === enriched.length ? 'Hiện tất cả' : 'Đang lọc ' + list.length },
+        { icon: ICONS.disk, label: 'File local', value: enriched.filter(x => x.file).length, sub: 'trong assets/docs' },
+        { icon: ICONS.link, label: 'Link catalog', value: enriched.filter(x => !x.file).length, sub: 'Drive / web' },
+        { icon: ICONS.niche, label: 'Ngách có data', value: Object.keys(nicheCounts).length, sub: 'chip bên dưới' }
+      ])}
+  <div class="card p-4 sm:p-5 mb-5">
+    <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+      <label class="sr-only" for="fq">Tìm prompt</label>
+      <input id="fq" value="${esc(state.promptQ)}" placeholder="Tìm prompt, ngách, SKU, tên tài liệu..." class="search-input-premium w-full sm:flex-1 min-w-0" aria-label="Tìm prompt">
+      <button type="button" id="freset-prompt" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
+    </div>
+    <div class="mt-4 pt-3 border-t border-hairline">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Loại data</div>
+      <div class="flex flex-wrap gap-2">
+        ${kindChips.map(([id, label, n]) => `<button type="button" data-kind="${id}" class="filter-btn ${state.kindFilter === id ? 'active' : ''}">${label} · ${n}</button>`).join('')}
+      </div>
+    </div>
+    <div class="mt-3.5">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách nội dung</div>
+      <div class="flex flex-wrap gap-2">
+        <button type="button" data-prompt-niche="" class="filter-btn ${!state.promptNiche ? 'active' : ''}">Mọi ngách · ${kindCounts.all || 0}</button>
+        ${nicheChips.map(([id, label, n]) => `<button type="button" data-prompt-niche="${esc(id)}" class="filter-btn ${state.promptNiche === id ? 'active' : ''}">${esc(label)} · ${n}</button>`).join('')}
+      </div>
+    </div>
+  </div>
+  <div class="space-y-6">
+    ${grouped.map(g => {
+        const vKey = videoNicheKey(g.niche);
+        return `
+      <section class="min-w-0">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-base font-bold text-white font-heading">${esc(g.niche)}</h2>
+          <span class="badge badge-muted">${g.items.length} data</span>
+          ${vKey ? `<button type="button" data-open-niche="${esc(vKey)}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">Xem video ngách →</button>` : ''}
+        </div>
+        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 min-w-0">
+          ${g.items.map(k => `
+            <article class="card p-4 min-w-0 overflow-hidden flex flex-col">
+              <div class="flex flex-wrap items-center gap-2 mb-2 min-w-0">
+                <span class="badge shrink-0 ${KIND_BADGE[k.kind] || 'badge-muted'}">${KIND_LABEL[k.kind] || 'Khác'}</span>
+                <span class="badge badge-blue shrink-0 truncate max-w-[140px]" title="${esc(k.contentNiche)}">${esc(k.contentNiche)}</span>
+                ${k.source === 'noi-bo' ? `<span class="badge badge-green shrink-0">Nội bộ</span>` : ''}
+                ${k.ext ? `<span class="ml-auto badge badge-muted shrink-0 font-mono">${esc(k.ext)}</span>` : ''}
+              </div>
+              <h3 class="text-[13.5px] font-semibold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere]">${esc(k.title || k.name)}</h3>
+              <div class="mt-2 text-[11px] text-gray-400 font-mono truncate">${esc(k.sku)}</div>
+              ${k.videoTitle ? `<div class="mt-1 text-[11px] text-gray-300 line-clamp-1 break-words">Nguồn video: ${esc(k.videoTitle)}</div>` : ''}
+              ${!k.videoTitle && k.source === 'noi-bo' ? `<div class="mt-1 text-[11px] text-lime-400/80">Đồng bộ từ ngoài → H2DEV</div>` : ''}
+              ${k.videoNiche && k.videoNiche !== k.contentNiche ? `<div class="mt-1 text-[10px] text-amber-400/80">Video mẹ thuộc: ${esc(k.videoNiche)}</div>` : ''}
+              <div class="mt-auto pt-3 flex flex-wrap gap-2">
+                ${k.link ? `<a href="${esc(k.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-[11px] font-bold">↗ ${esc(k.host || 'Mở nguồn')}</a>` : ''}
+                ${k.file ? `<a href="${esc(k.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">📄 File local</a>` : ''}
+                ${k.fileLocal ? `<a href="${esc(k.fileLocal)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">📝 MD gốc</a>` : ''}
+                ${k.videoTitle ? `<a href="player.html?sku=${esc(k.sku)}&back=1" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">▶ Video gốc</a>` : ''}
+              </div>
+            </article>`).join('')}
+        </div>
+      </section>`;
+      }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2">🔍</div>Không tìm thấy prompt / tài nguyên</div>'}
+  </div>`;
+    }
+
+    async function renderNguonReup() {
+      const nguon = await loadJSON('data-tabs/nguon-reup.json');
+      const videos = await loadJSON('data-tabs/videos.json');
+      const bySku = Object.fromEntries(videos.map(v => [v.sku, v]));
+      const TYPE_LABEL = { bilibili: 'Bilibili', douyin: 'Douyin', stock: 'Stock footage', tool: 'Tool / Web', community: 'Cộng đồng', other: 'Khác' };
+      const TYPE_BADGE = { bilibili: 'badge-blue', douyin: 'badge-amber', stock: 'badge-green', tool: 'badge-brand', community: 'badge-muted', other: 'badge-muted' };
+      const TYPE_ORDER = ['bilibili', 'douyin', 'stock', 'tool', 'community', 'other'];
+      function hostOf(link) {
+        try { return new URL(link).hostname.replace(/^www\./, ''); } catch (e) { return ''; }
+      }
+      function classifySource(item) {
+        const host = hostOf(item.link);
+        const blob = ((item.name || '') + ' ' + host + ' ' + (item.link || '')).toLowerCase();
+        if (/bilibili/.test(blob)) return 'bilibili';
+        if (/douyin|tikvideo/.test(blob)) return 'douyin';
+        if (/pexels|vecteezy|coverr|freepik|pixabay/.test(blob)) return 'stock';
+        if (/h2devtool|youtube-transcript|tikvideo/.test(blob)) return 'tool';
+        if (/zalo|facebook|group|cộng đồng/.test(blob)) return 'community';
+        return 'other';
+      }
+      function inferNiche(item, video) {
+        const t = ((item.name || '') + ' ' + (item.link || '')).toLowerCase();
+        if (/health|sức khỏe/.test(t)) return 'Sức khỏe / Lão hóa';
+        if (/bilibili|douyin|reup|hoạt hình/.test(t)) return 'Reup / Hoạt hình';
+        if (/kịch bản|transcript/.test(t)) return 'Nền tảng / Tool';
+        if (video && video.niche && video.niche !== 'Khác') return video.niche;
+        return 'Khác';
+      }
+      function cleanTitle(item) {
+        const raw = String(item.name || '').trim();
+        if (!raw || /^https?:\/\//i.test(raw)) {
+          const host = hostOf(item.link);
+          const type = classifySource(item);
+          if (type === 'bilibili') return 'Kênh nguồn Bilibili';
+          if (type === 'douyin') return 'Kênh nguồn Douyin';
+          if (type === 'stock') return host ? ('Stock · ' + host) : 'Stock footage';
+          if (type === 'tool') return host ? ('Công cụ · ' + host) : 'Công cụ';
+          return host || 'Nguồn reup';
+        }
+        return raw.replace(/\s*\((tặng kèm|mọi người có thể tự tìm thêm[^)]*)\)/gi, '').replace(/\s{2,}/g, ' ').trim();
+      }
+      const enriched = nguon.map((item, idx) => {
+        const video = bySku[item.sku];
+        const type = classifySource(item);
+        return Object.assign({}, item, {
+          _i: idx,
+          type,
+          host: hostOf(item.link),
+          title: cleanTitle(item),
+          videoTitle: video ? video.title : '',
+          videoNiche: video ? video.niche : '',
+          contentNiche: inferNiche(item, video)
+        });
+      });
+      const typeCounts = enriched.reduce((a, x) => { a[x.type] = (a[x.type] || 0) + 1; a.all = (a.all || 0) + 1; return a; }, {});
+      const nicheCounts = enriched.reduce((a, x) => { a[x.contentNiche] = (a[x.contentNiche] || 0) + 1; return a; }, {});
+      const q = (state.reupQ || '').trim().toLowerCase();
+      const list = enriched.filter(item => {
+        if (state.reupType && item.type !== state.reupType) return false;
+        if (state.reupNiche && item.contentNiche !== state.reupNiche) return false;
+        if (!q) return true;
+        const hay = [item.title, item.name, item.sku, item.host, item.type, item.contentNiche, item.videoNiche, item.videoTitle].join(' ').toLowerCase();
+        return hay.includes(q);
+      });
+      const typeChips = [['', 'Tất cả', typeCounts.all || 0]].concat(TYPE_ORDER.filter(t => typeCounts[t]).map(t => [t, TYPE_LABEL[t], typeCounts[t]]));
+      const nicheChips = Object.keys(nicheCounts).sort((a, b) => nicheCounts[b] - nicheCounts[a]).map(n => [n, n, nicheCounts[n]]);
+      const grouped = TYPE_ORDER.map(t => {
+        const items = list.filter(x => x.type === t);
+        return items.length ? { type: t, items } : null;
+      }).filter(Boolean);
+      function videoNicheKey(contentNiche) {
+        return NICHE_MAP[contentNiche] || (Object.values(NICHE_MAP).includes(contentNiche) ? contentNiche : '');
+      }
+      return `
+  ${pageBanner('Nguồn tài nguyên Reup', list.length + '/' + enriched.length + ' nguồn · chỉ tham khảo, phải transform trước khi dùng', [
+        { icon: ICONS.link, label: 'Tổng nguồn', value: enriched.length, sub: list.length === enriched.length ? 'Hiện tất cả' : 'Đang lọc ' + list.length },
+        { icon: ICONS.niche, label: 'Loại nguồn', value: Object.keys(typeCounts).filter(k => k && k !== 'all').length, sub: 'Bilibili / Douyin / Stock...' },
+        { icon: ICONS.video, label: 'Gắn SKU video', value: enriched.filter(x => x.sku).length, sub: 'trỏ về kho Video' },
+        { icon: ICONS.doc, label: 'Lưu ý', value: 'Reused', sub: 'transform + bản quyền' }
+      ])}
+  <div class="card p-4 sm:p-5 mb-5">
+    <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+      <label class="sr-only" for="fq">Tìm nguồn reup</label>
+      <input id="fq" value="${esc(state.reupQ)}" placeholder="Tìm nguồn, host, SKU, ngách..." class="search-input-premium w-full sm:flex-1 min-w-0" aria-label="Tìm nguồn reup">
+      <button type="button" id="freset-reup" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
+    </div>
+    <div class="mt-4 pt-3 border-t border-hairline">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Loại nguồn</div>
+      <div class="flex flex-wrap gap-2">
+        ${typeChips.map(([id, label, n]) => `<button type="button" data-reup-type="${id}" class="filter-btn ${state.reupType === id ? 'active' : ''}">${label} · ${n}</button>`).join('')}
+      </div>
+    </div>
+    <div class="mt-3.5">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách / mục đích</div>
+      <div class="flex flex-wrap gap-2">
+        <button type="button" data-reup-niche="" class="filter-btn ${!state.reupNiche ? 'active' : ''}">Mọi ngách · ${typeCounts.all || 0}</button>
+        ${nicheChips.map(([id, label, n]) => `<button type="button" data-reup-niche="${esc(id)}" class="filter-btn ${state.reupNiche === id ? 'active' : ''}">${esc(label)} · ${n}</button>`).join('')}
+      </div>
+    </div>
+  </div>
+  <div class="space-y-6">
+    ${grouped.map(g => {
+        const vKey = videoNicheKey(g.items[0] && g.items[0].contentNiche);
+        return `
+      <section class="min-w-0">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-base font-bold text-white font-heading">${esc(TYPE_LABEL[g.type] || g.type)}</h2>
+          <span class="badge badge-muted">${g.items.length} nguồn</span>
+          ${vKey ? `<button type="button" data-open-niche="${esc(vKey)}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">Xem video ngách →</button>` : ''}
+        </div>
+        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 min-w-0">
+          ${g.items.map(n => `
+            <article class="card p-4 min-w-0 overflow-hidden flex flex-col">
+              <div class="flex flex-wrap items-center gap-2 mb-2 min-w-0">
+                <span class="badge shrink-0 ${TYPE_BADGE[n.type] || 'badge-muted'}">${TYPE_LABEL[n.type] || 'Khác'}</span>
+                <span class="badge badge-blue shrink-0 truncate max-w-[140px]" title="${esc(n.contentNiche)}">${esc(n.contentNiche)}</span>
+              </div>
+              <h3 class="text-[13.5px] font-semibold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere]">${esc(n.title)}</h3>
+              <div class="mt-2 text-[11px] text-gray-400 truncate">${esc(n.host || '')}</div>
+              <div class="mt-1 text-[11px] text-gray-500 font-mono truncate">${esc(n.sku)}</div>
+              ${n.videoTitle ? `<div class="mt-1 text-[11px] text-gray-300 line-clamp-1 break-words">Nguồn video: ${esc(n.videoTitle)}</div>` : ''}
+              ${n.videoNiche && n.videoNiche !== n.contentNiche ? `<div class="mt-1 text-[10px] text-amber-400/80">Video mẹ thuộc: ${esc(n.videoNiche)}</div>` : ''}
+              <div class="mt-auto pt-3 flex flex-wrap gap-2">
+                ${n.link ? `<a href="${esc(n.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-[11px] font-bold">↗ Mở nguồn</a>` : ''}
+                ${n.file ? `<a href="${esc(n.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">📄 File local</a>` : ''}
+                ${n.videoTitle ? `<a href="player.html?sku=${esc(n.sku)}&back=1" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">▶ Video gốc</a>` : ''}
+              </div>
+            </article>`).join('')}
+        </div>
+      </section>`;
+      }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2">🔍</div>Không tìm thấy nguồn reup</div>'}
+  </div>`;
+    }
+
+    async function renderRawKenh() {
+      let rawData;
+      try {
+        rawData = await loadJSON('data-tabs/raw-kenh-mau.json');
+      } catch (e) {
+        rawData = { records: [] };
+      }
+      const records = Array.isArray(rawData) ? rawData : (rawData && rawData.records ? rawData.records : []);
+      const q = (state.rawQ || '').trim().toLowerCase();
+      const currentNiche = state.rawNiche || '';
+
+      const nicheCounts = records.reduce((acc, r) => {
+        const n = r.editorialNiche || r.niche || 'Chưa phân loại';
+        acc[n] = (acc[n] || 0) + 1;
+        return acc;
+      }, {});
+      const sortedNiches = Object.keys(nicheCounts).sort((a, b) => nicheCounts[b] - nicheCounts[a]);
+
+      const activeCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'ACTIVE').length;
+      const riskCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'DORMANT_LONG').length;
+
+      const filtered = records.filter(r => {
+        const ch = r.channel || {};
+        const ocr = r.ocr || {};
+        const vA = r.vitalityAudit || {};
+        const title = ((ch.title || '') + ' ' + (ocr.channelName || '')).toLowerCase();
+        const handle = ((ch.handle || '') + ' ' + (ocr.handle || '')).toLowerCase();
+        const fname = (r.fileName || '').toLowerCase();
+        const n = (r.editorialNiche || r.niche || 'Chưa phân loại').toLowerCase();
+        if (currentNiche && (r.editorialNiche || r.niche || 'Chưa phân loại') !== currentNiche) return false;
+        if (state.rawVitality === 'active' && vA.healthStatus !== 'ACTIVE') return false;
+        if (state.rawVitality === 'risk' && vA.healthStatus !== 'DORMANT_LONG') return false;
+        const rid = (r.id || '').toLowerCase();
+        if (q && !title.includes(q) && !handle.includes(q) && !fname.includes(q) && !n.includes(q) && !rid.includes(q)) return false;
+        return true;
+      });
+
+      const verifiedCount = records.filter(r => (r.vidiqVerification && r.vidiqVerification.status === 'VERIFIED') || r.status === 'VERIFIED_MATCH' || r.status === 'VERIFIED_UNIQUE').length;
+      const visionCount = records.filter(r => r.visionAnalysis).length;
+      const withHandle = records.filter(r => (r.channel || {}).handle).length;
+      const ocrCount = records.filter(r => r.ocr).length;
+
+      return `
+  ${pageBanner('Raw kênh mẫu', filtered.length + '/' + records.length + ' ảnh · bóc tách qua Vision AI + OCR + vidIQ', [
+        { icon: ICONS.image, label: 'Ảnh raw', value: records.length, sub: filtered.length === records.length ? 'Hiện tất cả' : 'Đang lọc ' + filtered.length },
+        { icon: ICONS.niche, label: 'Ngách phát hiện', value: Object.keys(nicheCounts).length, sub: 'chip bên dưới' },
+        { icon: ICONS.search, label: 'Đang hoạt động', value: activeCount, sub: 'ra video gần đây' },
+        { icon: ICONS.channel, label: 'Nguy cơ tắt YPP', value: riskCount, sub: 'dừng đăng >6 tháng' },
+        { icon: ICONS.doc, label: 'Verified vidIQ', value: verifiedCount, sub: 'khớp vidIQ live' },
+        { icon: ICONS.search, label: 'Có OCR', value: ocrCount, sub: 'quét từ ảnh' }
+  ])}
+  <div class="card p-4 sm:p-5 mb-5">
+    <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+      <label class="sr-only" for="fq">Tìm ảnh raw</label>
+      <input id="fq" value="${esc(state.rawQ)}" placeholder="Tìm theo tên kênh, handle, ngách, tên file..." class="search-input-premium w-full sm:flex-1 min-w-0" aria-label="Tìm ảnh raw kênh mẫu">
+      <button type="button" id="freset-raw" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
+    </div>
+    <div class="mt-4 pt-3 border-t border-hairline">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách phát hiện</div>
+      <div class="flex flex-wrap gap-2">
+        <button type="button" data-raw-niche="" class="filter-btn ${!currentNiche ? 'active' : ''}">Mọi ngách · ${records.length}</button>
+        ${sortedNiches.map(n => `<button type="button" data-raw-niche="${esc(n)}" class="filter-btn ${currentNiche === n ? 'active' : ''}">${esc(n)} · ${nicheCounts[n]}</button>`).join('')}
+      </div>
+    </div>
+    <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Tình trạng sống & YPP:</div>
+      <button type="button" data-raw-vitality="" class="filter-btn ${!state.rawVitality ? 'active' : ''}">Tất cả · ${records.length}</button>
+      <button type="button" data-raw-vitality="active" class="filter-btn ${state.rawVitality === 'active' ? 'active' : ''}">🟢 Đang hoạt động · ${activeCount}</button>
+      <button type="button" data-raw-vitality="risk" class="filter-btn ${state.rawVitality === 'risk' ? 'active' : ''}">🔴 Nguy cơ tắt YPP / Dừng lâu · ${riskCount}</button>
+    </div>
+  </div>
+  <div class="space-y-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 min-w-0">
+      ${filtered.map(r => {
+        const ch = r.channel || {};
+        const vision = r.visionAnalysis || {};
+        const ocr = r.ocr || null;
+        const vA = r.vitalityAudit || {};
+        const vG = r.vidiqVerification && r.vidiqVerification.growth30d;
+        const imgSrc = 'assets/raw-kenh/' + esc(r.fileName);
+        const ytUrl = ch.url || ('https://www.youtube.com/results?search_query=' + encodeURIComponent(ch.title || ch.handle || ''));
+        const statusBadge = (r.vidiqVerification && r.vidiqVerification.status === 'VERIFIED')
+          ? `<span class="badge badge-green">vidIQ Verified</span>`
+          : (r.duplicateOf ? `<span class="badge badge-amber">Trùng (${esc(r.duplicateOf)})</span>` : (r.status === 'OCR_COMPLETE' ? `<span class="badge badge-blue">OCR đủ</span>` : `<span class="badge badge-amber">Manual</span>`));
+        return `
+        <article class="card overflow-hidden min-w-0 flex flex-col hover:border-brand-500 transition group cursor-pointer" data-raw-card="${esc(r.id)}" data-folder="${esc((r.deepIntelligence && r.deepIntelligence.folderName) || '')}">
+          <div class="relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700">
+            <img src="${imgSrc}" alt="${esc(ch.title || 'Ảnh raw kênh mẫu')}" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'">
+            <span class="absolute top-2 left-2 bg-ink-900/80 px-2 py-0.5 rounded-xl text-[10px] font-mono text-gray-300 border border-white/10 truncate max-w-[45%]">${esc(r.id)}</span>
+            <span class="absolute top-2 right-2 bg-brand-600/90 text-white text-[10px] font-medium px-2 py-0.5 rounded-xl truncate max-w-[50%]">${esc(r.editorialNiche || r.niche || 'Chưa rõ')}</span>
+          </div>
+          <div class="p-3.5 flex-1 flex flex-col gap-2 min-w-0">
+            <div class="flex items-start justify-between gap-2 min-w-0">
+              <h3 class="text-sm font-bold text-white group-hover:text-brand-300 transition line-clamp-1 min-w-0">${esc((ch.title || '').trim() || 'Chưa rõ tên')}</h3>
+              <div class="flex items-center gap-1 shrink-0 flex-wrap justify-end">
+                ${statusBadge}
+                ${vA.monetizationStatus === 'MONETIZED_AT_RISK' ? `<span class="badge badge-red text-[10px] font-bold">⚠️ Rủi ro YPP</span>` : ''}
+              </div>
+            </div>
+            ${(ch.handle || vision.handle || (ocr && ocr.handle)) ? `<div class="text-[11px] text-brand-400 font-mono truncate">${esc(ch.handle || vision.handle || (ocr && ocr.handle))}</div>` : ''}
+            ${ch.subscribers ? `
+            <div class="text-[11px] text-emerald-400 font-medium flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+              <span class="truncate">${Number(ch.subscribers).toLocaleString()} subs · ${Number(ch.views || 0).toLocaleString()} views</span>
+              ${vG && vG.subscribersGained ? `<span class="text-gray-400 font-normal shrink-0">(+${Number(vG.subscribersGained).toLocaleString()}/30d)</span>` : ''}
+            </div>` : ''}
+            ${vA.healthStatus === 'DORMANT_LONG' ? `
+            <div class="text-[10.5px] bg-red-950/70 border border-red-800/80 rounded-xl px-2.5 py-1.5 text-red-200 font-medium flex items-center gap-1.5">
+              <span class="text-red-400 font-bold animate-pulse">🔴</span> Dừng đăng ${vA.daysSinceLatest} ngày — Nguy cơ tắt YPP / Die
+            </div>` : (vA.daysSinceLatest != null ? `
+            <div class="text-[11px] text-gray-400 flex items-center justify-between">
+              <span class="truncate">📅 Video gần nhất: <b class="text-gray-200">${esc(vA.latestUploadDate || 'N/A')}</b></span>
+              <span class="${vA.healthStatus === 'ACTIVE' ? 'text-emerald-400 font-semibold' : 'text-amber-400 font-medium'} shrink-0 ml-1">${vA.daysSinceLatest}d trước</span>
+            </div>` : '')}
+            ${vision.mainTopic ? `<p class="text-[11px] text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="text-amber-400 font-semibold">Chủ đề:</span> ${esc(vision.mainTopic)}</p>` : ''}
+            ${vision.videoTitles && vision.videoTitles.length ? `<p class="text-[11px] text-gray-400 italic line-clamp-1">"${esc(vision.videoTitles[0])}"</p>` : ''}
+            ${ocr ? `<p class="text-[11px] text-gray-400 truncate">${esc([ocr.subsText, ocr.videoCountText, ocr.videoRows && ocr.videoRows[0] ? ocr.videoRows[0].vph : null].filter(Boolean).join(' · '))}</p>` : ''}
+            ${r.deepIntelligence ? `
+            <div class="text-[10px] bg-white/[0.03] border border-white/10 rounded-xl px-2.5 py-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-gray-300">
+              <span class="text-amber-300 font-medium">⚡ ${r.deepIntelligence.topVideosCount} videos</span>
+              <span class="text-sky-300 font-medium">🏷️ ${r.deepIntelligence.tagsCount} tags</span>
+              <span class="text-emerald-300 font-medium">💰 ${esc(vA.estimatedMonthlyRev || 'N/A')}</span>
+              <span class="text-emerald-400 font-medium ml-auto">🛡️ ${esc(vA.healthBadge || (r.deepIntelligence.longevityStatus ? r.deepIntelligence.longevityStatus.replace(/\(.*?\)/g, '').trim() : ''))}</span>
+            </div>` : ''}
+            <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-1.5 px-2.5 bg-brand-600/20 hover:bg-brand-600 border border-brand-500/30 hover:border-brand-500 text-brand-300 hover:text-white rounded-xl text-[11px] font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer" data-raw-id="${esc(r.id)}" data-folder="${esc((r.deepIntelligence && r.deepIntelligence.folderName) || '')}">
+              <span>⚡ Mở Data Sâu (${r.deepIntelligence ? r.deepIntelligence.topVideosCount : 0} Videos & Tags)</span> →
+            </button>
+            <div class="mt-auto pt-2.5 border-t border-ink-700 flex items-center justify-between gap-2 text-[11px]">
+              <span class="text-gray-500 font-mono truncate min-w-0">${esc(r.fileName)}</span>
+              <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-300 hover:text-white bg-brand-500/20 hover:bg-brand-500 px-2.5 py-1.5 rounded-xl transition font-medium whitespace-nowrap shrink-0">Mở YouTube ↗</a>
+            </div>
+          </div>
+        </article>`;
+      }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2">🔍</div>Không tìm thấy ảnh phù hợp với bộ lọc</div>'}
+    </div>
+  </div>`;
+    }
+
+    async function renderKenh() {
+      const kenh = await loadJSON('data-tabs/kenh-mau.json');
+      const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Khoa học EN', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Nền tảng / Tool', 'Khác'];
+      function initial(handle) {
+        const t = String(handle || '').replace(/^@/, '').trim();
+        return (t[0] || '?').toUpperCase();
+      }
+      function avatarHtml(ch) {
+        if (ch.avatar) {
+          return `<img src="${esc(ch.avatar)}" alt="${esc(ch.handle || ch.name || 'Kênh')}" class="w-11 h-11 rounded-xl object-cover shrink-0 bg-ink-700" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm items-center justify-center shrink-0 hidden">${esc(initial(ch.handle))}</div>`;
+        }
+        return `<div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm flex items-center justify-center shrink-0">${esc(initial(ch.handle))}</div>`;
+      }
+      const nicheCounts = kenh.reduce((a, x) => { const n = x.niche || 'Khác'; a[n] = (a[n] || 0) + 1; return a; }, {});
+      const q = (state.kenhQ || '').trim().toLowerCase();
+      const list = kenh.filter(ch => {
+        if (ch.dead) return false;
+        if (state.kenhNiche && (ch.niche || 'Khác') !== state.kenhNiche) return false;
+        if (!q) return true;
+        const hay = [ch.handle, ch.niche, (ch.niches || []).join(' '), (ch.markets || []).join(' '), ch.url].join(' ').toLowerCase();
+        return hay.includes(q);
+      }).slice().sort((a, b) => (b.count || 0) - (a.count || 0));
+      const chips = NICHE_ORDER.filter(n => nicheCounts[n]).map(n => [n, n, nicheCounts[n]]);
+      const grouped = [];
+      NICHE_ORDER.forEach(n => {
+        const items = list.filter(x => (x.niche || 'Khác') === n);
+        if (items.length) grouped.push({ niche: n, items });
+      });
+      Object.keys(nicheCounts).forEach(n => {
+        if (!NICHE_ORDER.includes(n)) {
+          const items = list.filter(x => (x.niche || 'Khác') === n);
+          if (items.length) grouped.push({ niche: n, items });
+        }
+      });
+      function videoNicheKey(niche) {
+        return NICHE_MAP[niche] || (Object.values(NICHE_MAP).includes(niche) ? niche : (niche && niche !== 'Khác' ? niche : ''));
+      }
+      return `
+  ${pageBanner('Kênh mẫu / Đối thủ', list.length + '/' + kenh.length + ' kênh · nhóm theo ngách từ video H2DEV', [
+        { icon: ICONS.channel, label: 'Kênh mẫu', value: kenh.length, sub: list.length === kenh.length ? 'Hiện tất cả' : 'Đang lọc ' + list.length },
+        { icon: ICONS.niche, label: 'Ngách có kênh', value: Object.keys(nicheCounts).length, sub: 'chip bên dưới' },
+        { icon: ICONS.home, label: 'Có avatar', value: kenh.filter(k => k.avatar).length, sub: 'thumb local' },
+        { icon: ICONS.link, label: 'Đang hiện', value: list.length, sub: 'sau filter' },
+        { icon: ICONS.doc, label: 'Dead 404', value: kenh.filter(k => k.dead).length, sub: 'đã ẩn' }
+      ])}
+  <div class="card p-4 sm:p-5 mb-5">
+    <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+      <label class="sr-only" for="fq">Tìm kênh</label>
+      <input id="fq" value="${esc(state.kenhQ)}" placeholder="Tìm theo handle, tên kênh, ngách, thị trường..." class="search-input-premium w-full sm:flex-1 min-w-0" aria-label="Tìm kênh">
+      <button type="button" id="freset-kenh" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
+    </div>
+    <div class="mt-4 pt-3 border-t border-hairline">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách đối thủ</div>
+      <div class="flex flex-wrap gap-2">
+        <button type="button" data-kenh-niche="" class="filter-btn ${!state.kenhNiche ? 'active' : ''}">Mọi ngách · ${kenh.length}</button>
+        ${chips.map(([id, label, n]) => `<button type="button" data-kenh-niche="${esc(id)}" class="filter-btn ${state.kenhNiche === id ? 'active' : ''}">${esc(label)} · ${n}</button>`).join('')}
+      </div>
+    </div>
+  </div>
+  <div class="space-y-6">
+    ${grouped.map(g => {
+        const vKey = videoNicheKey(g.niche);
+        return `
+      <section class="min-w-0">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-base font-bold text-white">${esc(g.niche)}</h2>
+          <span class="badge badge-muted">${g.items.length} kênh</span>
+          ${vKey ? `<button type="button" data-open-niche="${esc(vKey)}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">Xem video ngách →</button>` : ''}
+        </div>
+        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3 min-w-0">
+          ${g.items.map(ch => `
+            <a href="${esc(ch.url)}" target="_blank" rel="noopener noreferrer" class="card p-3 flex items-center gap-3 min-w-0 overflow-hidden hover:border-brand-500">
+              ${avatarHtml(ch)}
+              <div class="min-w-0 flex-1">
+                <div class="text-sm font-semibold text-white truncate">${esc(ch.handle)}</div>
+                <div class="text-[11px] text-gray-400 truncate">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV</div>
+                ${(ch.markets && ch.markets.length) ? `<div class="text-[10px] text-gray-500 truncate mt-0.5">${ch.markets.map(esc).join(' · ')}</div>` : ''}
+              </div>
+              <span class="text-gray-500 shrink-0 text-sm">↗</span>
+            </a>`).join('')}
+        </div>
+      </section>`;
+      }).join('') || '<div class="text-gray-400 text-center py-10">Không tìm thấy kênh</div>'}
+  </div>`;
+    }
+
+    async function renderChienLuoc() {
+      const cl = await loadJSON('data-tabs/chien-luoc.json');
+      const videos = await loadJSON('data-tabs/videos.json');
+      const docs = await loadJSON('data-tabs/tai-lieu-full.json');
+      const kenh = await loadJSON('data-tabs/kenh-mau.json');
+      const nguon = await loadJSON('data-tabs/nguon-reup.json');
+      const nx = await loadJSON('data-tabs/ngach-xanh.json');
+      const checks = loadChecks();
+      const noteOf = {
+        'Triết lý / Tâm linh': 'xanh · JP/KR/US',
+        'Sức khỏe / Lão hóa': 'xanh · senior',
+        'Kinh tế / Tài chính': 'xanh · US RPM cao hơn',
+        'Reup / Hoạt hình': 'có điều kiện · reused + copyright',
+        'Drama / Stories': 'thận trọng',
+        'Nhân bản / Kênh': 'meta · học clone, không phải ngách đăng',
+        'Share key / Ngách nhỏ': 'meta · học chọn key, không copy key',
+        'Kiếm tiền / Chính sách': 'meta · kháng lỗi YPP',
+        'Edit / Thumb': 'meta · packaging',
+        'Nền tảng / Tool': 'meta · tool / cộng đồng',
+        'Lịch sử / Quân sự': 'thận trọng · 1 key WWII',
+        'Khác': 'không còn — đã gắn hết'
+      };
+      const scoreOrder = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Reup / Hoạt hình', 'Drama / Stories', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Edit / Thumb', 'Nền tảng / Tool', 'Lịch sử / Quân sự', 'Khác'];
+      const hist = videos.reduce((a, v) => { const n = v.niche || 'Khác'; a[n] = (a[n] || 0) + 1; return a; }, {});
+      const score = scoreOrder.filter(k => hist[k]).map(k => ({ label: k, n: hist[k], note: noteOf[k] || '', key: k }));
+      Object.keys(hist).forEach(k => { if (!scoreOrder.includes(k)) score.push({ label: k, n: hist[k], note: '', key: k }); });
+      const principles = [
+        { tag: '01', title: 'Cách làm quyết định', body: cl.nguyenTacCotLoi[0] },
+        { tag: '02', title: 'Hai cửa YPP', body: cl.nguyenTacCotLoi[1] },
+        { tag: '03', title: '3 việc giữ lại người', body: cl.nguyenTacCotLoi[2] },
+        { tag: '04', title: 'Nhất quán = brand', body: cl.nguyenTacCotLoi[3] }
+      ];
+      const steps = cl.workflow || [];
+      const ypp = [
+        { when: 'Hiện tại', tone: 'text-brand-300', title: 'Xin ads / Premium', body: cl.loTrinhXinKiemTien.hienTai2026 },
+        { when: '01/02/2027', tone: 'text-amber-300', title: 'Kênh mới siết ngưỡng', body: cl.loTrinhXinKiemTien.tu2027 },
+        { when: 'Giữ YPP', tone: 'text-emerald-300', title: 'Đừng để kênh chết', body: cl.loTrinhXinKiemTien.duyTriYPP }
+      ];
+      const scored = score.reduce((a, s) => a + s.n, 0);
+      return `
+  <div class="mb-6">
+    <p class="page-lede">Ngách không quyết định xanh/đỏ — <b class="text-white">cách làm</b> quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.</p>
+  </div>
+  <div class="bento-grid mb-6">
+    ${statCard(ICONS.video, 'Video local', videos.length, `${videos.length} video · ${scored} đã điểm`, 'video')}
+    ${statCard(ICONS.doc, 'Kịch bản / tài liệu', docs.length, `${docs.length} file · catalog`, 'kichban')}
+    ${statCard(ICONS.channel, 'Kênh đối thủ', kenh.length, `${kenh.length} kênh · đã check 30 ngày`, 'kenh')}
+    ${statCard(ICONS.link, 'Nguồn reup', nguon.length, `${nguon.length} nguồn · match`, 'nguonreup')}
+  </div>
+  <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-3 mb-6">
+    ${principles.map(p => `
+      <article class="card p-4 min-w-0">
+        <div class="text-[11px] font-mono text-brand-400 font-bold">${p.tag}</div>
+        <h2 class="text-sm font-bold text-white mt-1 font-heading">${esc(p.title)}</h2>
+        <p class="text-xs text-gray-400 mt-2 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(p.body)}</p>
+      </article>`).join('')}
+  </div>
+  <section class="mb-6">
+    <h2 class="page-h2 mb-1">Dây chuyền 9 bước</h2>
+    <p class="card-note">Bấm bước để nhảy sang đúng tab / đúng chip</p>
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3 min-w-0">
+      ${steps.map(s => `
+        <button type="button" data-open-tab="${esc(s.tab)}"${s.kind != null ? ` data-kind="${esc(s.kind)}"` : ''}${s.promptNiche != null ? ` data-prompt-niche="${esc(s.promptNiche)}"` : ''} class="card p-4 text-left min-w-0 hover:border-brand-500 flex gap-3">
+          <span class="w-9 h-9 rounded-xl bg-brand-600/20 border border-brand-700/40 text-brand-300 font-black text-sm flex items-center justify-center shrink-0 font-mono">${String(s.n).padStart(2, '0')}</span>
+          <span class="min-w-0">
+            <span class="block text-sm font-bold text-white font-heading">${esc(s.title)}</span>
+            <span class="block text-xs text-gray-400 mt-1 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(s.detail)}</span>
+            <span class="inline-block mt-2 text-[11px] text-brand-400 font-medium">${esc(s.tabLabel)} →</span>
+          </span>
+        </button>`).join('')}
+    </div>
+  </section>
+  <h2 class="page-h2 mb-1">Lộ trình YPP 2026-2027</h2>
+  <p class="card-note mb-4">Đừng để kênh chết — giữ YPP bằng cách làm đúng format, không lạm dụng reused.</p>
+  <div class="grid lg:grid-cols-3 gap-4 mb-6">
+    ${ypp.map(y => `
+      <article class="card p-5 min-w-0">
+        <div class="text-[11px] uppercase tracking-wide ${y.tone} font-bold">${esc(y.when)}</div>
+        <h3 class="text-white font-bold mt-1 font-heading">${esc(y.title)}</h3>
+        <p class="text-sm text-gray-300 mt-2 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(y.body)}</p>
+      </article>`).join('')}
+  </div>
+  ${(cl.huongDiNoiDung && cl.huongDiNoiDung.length) ? `
+  <section class="card p-5 sm:p-6 mb-6 min-w-0">
+    <h2 class="page-h2 mb-1">3 ngách ĐĂNG (ngoài kho học H2DEV)</h2>
+    <p class="text-xs text-gray-400 mb-3">H2DEV dạy cách làm. Ba pack này mới là ngách đưa lên kênh. Đừng nhầm video học với video đăng.</p>
+    <div class="grid md:grid-cols-3 gap-3">${cl.huongDiNoiDung.map(h => `
+      <button type="button" data-open-tab="${esc(h.tab || 'ngachxanh')}" class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-3 min-w-0 bg-ink-800">
+        <div class="text-[11px] font-mono text-brand-400 font-bold">#${h.hang} · ${esc(h.pack)}</div>
+        <div class="text-sm font-bold text-white mt-1 font-heading">${esc(h.ngach)}</div>
+        <div class="text-xs text-gray-400 mt-2 leading-relaxed break-words">${esc(h.lyDo)}</div>
+      </button>`).join('')}</div>
+    ${cl.cachNoiTab ? `<ul class="mt-4 space-y-1 text-[11px] text-gray-400">${cl.cachNoiTab.map(s => '<li>· ' + esc(s) + '</li>').join('')}</ul>` : ''}
+  </section>`: ''}
+  ${(cl.taiSanNoiBo && cl.taiSanNoiBo.length) ? `
+  <section class="card p-5 sm:p-6 mb-6 min-w-0">
+    <h2 class="page-h2 mb-1">Tài sản ngoài đã đồng bộ vào H2DEV</h2>
+    <p class="text-xs text-gray-500 mb-3">Match cái đã có · gôm cái chưa có. Gốc ở Y:\\YTB không xóa. Chi tiết: <a class="text-brand-400 hover:text-brand-300" href="docs/NOI-BO/README.md" target="_blank" rel="noopener">docs/NOI-BO/README.md</a></p>
+    <div class="grid sm:grid-cols-2 xl:grid-cols-5 gap-3">${cl.taiSanNoiBo.map(t => `
+      <button type="button" data-open-tab="${esc(t.tab || 'kichban')}"${t.kind != null ? ` data-kind="${esc(t.kind)}"` : ''} class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-3 min-w-0">
+        <div class="text-[26px] font-extrabold text-white leading-none">${t.so || '—'}</div>
+        <div class="text-sm font-bold text-white mt-1">${esc(t.loai)}</div>
+        <div class="text-[11px] text-gray-500 mt-1 font-mono break-all">${esc(t.path || '')}</div>
+      </button>`).join('')}</div>
+  </section>`: ''}
+  <div class="grid lg:grid-cols-2 gap-4 mb-6">
+    <section class="card p-5 sm:p-6 min-w-0">
+      <h2 class="page-h2 mb-1">Điểm số kho H2DEV</h2>
+      <p class="text-[11px] text-gray-500 mb-3">Đếm live từ videos.json · ${scored}/${videos.length}</p>
+      <div class="space-y-1.5">
+        ${score.map(s => `
+          <button type="button" data-open-niche="${esc(s.key)}" class="w-full flex items-center gap-3 min-w-0 text-left rounded-xl px-2 py-1.5 hover:bg-ink-700/60">
+            <span class="w-8 text-right text-sm font-extrabold text-white shrink-0">${s.n}</span>
+            <span class="min-w-0 flex-1">
+              <span class="block text-sm text-gray-200 truncate">${esc(s.label)}</span>
+              <span class="block text-[11px] text-gray-500 truncate">${esc(s.note)}</span>
+            </span>
+            <span class="text-[11px] text-brand-400 shrink-0">Xem →</span>
+          </button>`).join('')}
+      </div>
+    </section>
+    <section class="card p-5 sm:p-6 min-w-0">
+      <h2 class="page-h2 mb-3">Checklist trước khi đăng</h2>
+      <div class="space-y-2 text-sm text-gray-300">${cl.checklistTruocKhiDang.map((s, i) => {
+          const id = 'cl-' + i;
+          return `<label class="flex items-start gap-2 break-words [overflow-wrap:anywhere] min-w-0">
+ <input type="checkbox" data-check-id="${id}" class="rounded mt-1 shrink-0" ${checks[id] ? 'checked' : ''} aria-label="Checklist ${i + 1}" aria-checked="${checks[id] ? 'true' : 'false'}">
+          <span class="min-w-0">${esc(s)}</span>
+        </label>`;
+        }).join('')}</div>
+    </section>
+  </div>
+  <section class="card p-5 sm:p-6">
+    <h2 class="page-h2 mb-3">Chính sách YouTube phải nhớ</h2>
+    <ul class="space-y-2 text-sm text-gray-300">${nx.thongTinChinhSach2026.map(s => `<li class="break-words [overflow-wrap:anywhere]">${esc(s)}</li>`).join('')}</ul>
+    <p class="text-xs text-gray-500 mt-4">${esc(cl.nguonDuLieu)}</p>
+  </section>`;
+    }
+
+    function bindSearch() {
+      const fq = document.getElementById('fq');
+      if (fq) {
+        fq.oninput = () => {
+          if (state.tab === 'kichban') state.promptQ = fq.value;
+          else if (state.tab === 'nguonreup') state.reupQ = fq.value;
+          else if (state.tab === 'kenh') state.kenhQ = fq.value;
+          else if (state.tab === 'rawkenh') state.rawQ = fq.value;
+          else state.q = fq.value;
+          render();
+        };
+      }
+      document.querySelectorAll('[data-kind]').forEach(btn => {
+        if (btn.hasAttribute('data-open-tab')) return;
+        btn.onclick = () => { state.kindFilter = btn.getAttribute('data-kind') || ''; render(); };
+      });
+      const rp = document.getElementById('freset-prompt');
+      if (rp) { rp.onclick = () => { state.promptQ = ''; state.kindFilter = ''; state.promptNiche = ''; render(); }; }
+      document.querySelectorAll('[data-prompt-niche]').forEach(btn => {
+        if (btn.hasAttribute('data-open-tab')) return;
+        btn.onclick = () => { state.promptNiche = btn.getAttribute('data-prompt-niche') || ''; render(); };
+      });
+      document.querySelectorAll('[data-reup-type]').forEach(btn => { btn.onclick = () => { state.reupType = btn.getAttribute('data-reup-type') || ''; render(); }; });
+      document.querySelectorAll('[data-reup-niche]').forEach(btn => { btn.onclick = () => { state.reupNiche = btn.getAttribute('data-reup-niche') || ''; render(); }; });
+      const rr = document.getElementById('freset-reup');
+      if (rr) { rr.onclick = () => { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; render(); }; }
+      document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; render(); }; });
+      const rk = document.getElementById('freset-kenh');
+      if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; render(); }; }
+      document.querySelectorAll('[data-raw-niche]').forEach(btn => { btn.onclick = () => { state.rawNiche = btn.getAttribute('data-raw-niche') || ''; render(); }; });
+      document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; render(); }; });
+      const rr2 = document.getElementById('freset-raw');
+      if (rr2) { rr2.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawVitality = ''; render(); }; }
+      document.querySelectorAll('.btn-open-raw-deep').forEach(btn => {
+        btn.onclick = (e) => {
+          e.stopPropagation();
+          const folder = btn.getAttribute('data-folder');
+          const rid = btn.getAttribute('data-raw-id');
+          if (folder) openRawDeepModal(folder, rid);
+        };
+      });
+      document.querySelectorAll('article[data-raw-card]').forEach(card => {
+        card.onclick = (e) => {
+          if (e.target.closest('a') || e.target.closest('.btn-open-raw-deep')) return;
+          const folder = card.getAttribute('data-folder');
+          const rid = card.getAttribute('data-raw-card');
+          if (folder) openRawDeepModal(folder, rid);
+        };
+      });
+      const fn = document.getElementById('fniche');
+      if (fn) { fn.onchange = () => { state.nicheFilter = fn.value; state.skuFilter = ''; render(); }; }
+      const fm = document.getElementById('fmarket');
+      if (fm) { fm.onchange = () => { state.marketFilter = fm.value; render(); }; }
+      const fs = document.getElementById('fsort');
+      if (fs) { fs.onchange = () => { state.sortBy = fs.value; render(); }; }
+      const ff = document.getElementById('ffree');
+      if (ff) { ff.onchange = () => { state.freeOnly = ff.checked; render(); }; }
+      document.querySelectorAll('[data-watch]').forEach(btn => {
+        btn.onclick = () => { state.watchFilter = state.watchFilter === btn.getAttribute('data-watch') ? '' : btn.getAttribute('data-watch'); render(); };
+      });
+      document.querySelectorAll('[data-market-chip]').forEach(btn => {
+        btn.onclick = () => { const m = btn.getAttribute('data-market-chip'); state.marketFilter = state.marketFilter === m ? '' : m; render(); };
+      });
+      const fq_nx = document.getElementById('fq-nx');
+      if (fq_nx) {
+        fq_nx.oninput = () => { state.nxQ = fq_nx.value; render(); };
+      }
+      document.querySelectorAll('[data-nx-tier]').forEach(btn => {
+        btn.onclick = () => { state.nxTier = btn.getAttribute('data-nx-tier') || ''; render(); };
+      });
+      document.querySelectorAll('[data-nx-market]').forEach(btn => {
+        btn.onclick = () => { state.nxMarket = btn.getAttribute('data-nx-market') || ''; render(); };
+      });
+      const fr = document.getElementById('freset');
+      if (fr) { fr.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; render(); }; }
+      const fre = document.getElementById('freset-empty');
+      if (fre) { fre.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; render(); }; }
+      const fr_nx = document.getElementById('freset-nx');
+      if (fr_nx) {
+        fr_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; render(); };
+      }
+    }
+
+    async function render() {
+      const el = document.getElementById('content');
+      el.setAttribute('aria-busy', 'true');
+      try {
+        let html = '';
+        switch (state.tab) {
+          case 'tongquan': html = await renderTongQuan(); break;
+          case 'lotrinh':
+            html = `<iframe class="learn-frame" title="Lộ trình 11 module" src="learn.html?embed=1"></iframe>`;
+            break;
+          case 'video': html = await renderVideo(); break;
+          case 'ngachxanh': html = await renderNgachXanh(); break;
+          case 'kichban': html = await renderKichBan(); break;
+          case 'nguonreup': html = await renderNguonReup(); break;
+          case 'kenh': html = await renderKenh(); break;
+          case 'rawkenh': html = await renderRawKenh(); break;
+          case 'chienluoc': html = await renderChienLuoc(); break;
+        }
+        el.innerHTML = html;
+        const titleEl = document.getElementById('page-title');
+        const tabMeta = TABS.find(t => t.id === state.tab);
+        if (titleEl && tabMeta) titleEl.textContent = tabMeta.name;
+        document.getElementById('panel-root').setAttribute('aria-labelledby', `tab-${state.tab}`);
+        bindSearch();
+        bindNicheActions();
+        document.querySelectorAll('[data-check-id]').forEach(box => {
+          box.onchange = () => { saveCheck(box.getAttribute('data-check-id'), box.checked); box.setAttribute('aria-checked', box.checked ? 'true' : 'false'); };
+        });
+        const [vidsTab, kenh, docs] = await Promise.all([
+          loadJSON("data-tabs/videos.json").catch(function(){return [];}),
+          loadJSON("data-tabs/kenh-mau.json").catch(function(){return [];}),
+          loadJSON("data-tabs/tai-lieu-full.json").catch(function(){return [];})
+        ]);
+        const videos = Array.isArray(vidsTab) ? vidsTab : (vidsTab && vidsTab.videos) || [];
+        document.getElementById("hd-stats").textContent = videos.length + " video · " + docs.length + " TL · " + kenh.length + " kênh";
+      } catch (error) {
+        el.innerHTML = `<div class="card p-6 border-red-800" role="alert"><h1 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h1><p class="text-gray-300">${esc(error.message)}</p><button type="button" class="mt-4 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm" onclick="render()">Thử lại</button></div>`;
+      } finally { el.setAttribute("aria-busy", "false"); }
+    }
+
+    (async function init() {
+      const qp = new URLSearchParams(location.search);
+      if (qp.get('tab')) state.tab = qp.get('tab');
+      if (qp.get('watch')) state.watchFilter = qp.get('watch');
+      if (qp.get('niche')) state.nicheFilter = qp.get('niche');
+      if (qp.get('market')) state.marketFilter = qp.get('market');
+      await hydrateAdminState();
+      renderTabs();
+      await render();
+      let syncTimer = null;
+      function syncRender() {
+        clearTimeout(syncTimer);
+        syncTimer = setTimeout(() => {
+          const scY = window.scrollY;             // giữ vị trí cuộn trước khi render lại
+          render().then(() => { window.scrollTo(0, scY); });
+        }, 60);
+      }
+      window.addEventListener('popstate', (e) => {
+        const qp = new URLSearchParams(location.search);
+        state.tab = qp.get('tab') || 'tongquan';
+        state.marketFilter = qp.get('market') || '';
+        state.nicheFilter = qp.get('niche') || '';
+        renderTabs();
+        render();
+      });
+      window.addEventListener('pageshow', (e) => { if (e.persisted) syncRender(); });
+      window.addEventListener('visibilitychange', () => { if (!document.hidden) syncRender(); });
+
+      // Cử chỉ vuốt trái / phải chuyển tab (Touch Swipe Tabs Navigation)
+      let touchStartX = 0, touchStartY = 0, touchEndX = 0, touchEndY = 0;
+      window.addEventListener('touchstart', (e) => {
+        if (!e.touches || !e.touches[0]) return;
+        touchStartX = e.touches[0].screenX;
+        touchStartY = e.touches[0].screenY;
+      }, { passive: true });
+
+      window.addEventListener('touchend', (e) => {
+        if (!e.changedTouches || !e.changedTouches[0]) return;
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+        const dx = touchEndX - touchStartX;
+        const dy = touchEndY - touchStartY;
+        // Chỉ nhận cử chỉ quẹt ngang rõ ràng (nghiêng dưới 30 độ và vuốt > 70px)
+        if (Math.abs(dx) > 70 && Math.abs(dy) < 45) {
+          const tabOrder = ['tongquan', 'video', 'ngachxanh', 'kenh', 'rawkenh', 'chienluoc'];
+          const curIdx = tabOrder.indexOf(state.tab);
+          if (curIdx >= 0) {
+            if (dx < 0 && curIdx < tabOrder.length - 1) {
+              // Vuốt sang trái -> Tiến tab tiếp theo
+              openTab(tabOrder[curIdx + 1]);
+            } else if (dx > 0 && curIdx > 0) {
+              // Vuốt sang phải -> Lùi tab trước đó
+              openTab(tabOrder[curIdx - 1]);
+            }
+          }
+        }
+      });
+
+      window.closeRawDeepModal = function() {
+        const m = document.getElementById('raw-channel-modal');
+        if (m) {
+          m.classList.add('hidden');
+          m.style.display = 'none';
+          document.body.style.overflow = '';
+        }
+      };
+
+      window.openRawDeepModal = async function(folderName, rawId) {
+        if (!folderName) return;
+        let modal = document.getElementById('raw-channel-modal');
+        if (!modal) {
+          modal = document.createElement('div');
+          modal.id = 'raw-channel-modal';
+          modal.setAttribute('role', 'dialog');
+          modal.setAttribute('aria-modal', 'true');
+          document.body.appendChild(modal);
+          modal.onclick = (e) => {
+            if (e.target === modal) closeRawDeepModal();
+          };
+          window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeRawDeepModal();
+          });
+        }
+        modal.style.display = 'flex';
+        modal.innerHTML = `
+          <div class="bg-ink-900 border border-ink-700 rounded-2xl max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl p-8 text-center text-gray-400 animate-in fade-in zoom-in-95 duration-150">
+            <div class="w-10 h-10 border-2 border-brand-500 border-t-transparent rounded-full animate-spin mx-auto mb-3"></div>
+            <p class="text-sm font-semibold text-white">Đang tải hồ sơ data chuyên sâu [${esc(rawId)}]...</p>
+            <p class="text-xs text-gray-500 mt-1">Đọc trực tiếp từ kho data/raw-channels-deep/${esc(folderName)}</p>
+          </div>
+        `;
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+
+        try {
+          const [profile, vidsData] = await Promise.all([
+            loadJSON(`data/raw-channels-deep/${folderName}/channel-profile.json`),
+            loadJSON(`data/raw-channels-deep/${folderName}/top-videos.json`).catch(() => ({ videos: [] }))
+          ]);
+          const videos = vidsData.videos || [];
+          renderModalView(modal, profile, videos, rawId, folderName);
+        } catch (err) {
+          modal.innerHTML = `
+            <div class="bg-ink-900 border border-ink-700 rounded-2xl max-w-md w-full p-6 text-center">
+              <div class="text-3xl mb-2">⚠️</div>
+              <h3 class="text-lg font-bold text-white mb-2">Không thể mở dữ liệu</h3>
+              <p class="text-xs text-gray-400 mb-4">${esc(err.message)}</p>
+              <button type="button" onclick="closeRawDeepModal()" class="btn-primary text-xs px-4 py-2 rounded-xl cursor-pointer">Đóng</button>
+            </div>
+          `;
+        }
+      };
+
+      function formatSummaryMarkdown(md) {
+        if (!md) return '';
+        return esc(md)
+          .replace(/^# (.*$)/gim, '<h3 class="text-base font-bold text-white mb-2 pb-2 border-b border-ink-700">$1</h3>')
+          .replace(/^## (.*$)/gim, '<h4 class="text-sm font-bold text-amber-300 mt-4 mb-2 flex items-center gap-1.5"><span>⚡</span> $1</h4>')
+          .replace(/^---$/gim, '<hr class="border-ink-700 my-4">')
+          .replace(/^&gt; (.*$)/gim, '<blockquote class="border-l-2 border-brand-500 pl-3 my-2 text-gray-300 italic bg-white/[0.02] py-2 rounded-r-lg font-serif leading-relaxed">$1</blockquote>')
+          .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
+          .replace(/\*(.*?)\*/g, '<em class="text-gray-400">$1</em>')
+          .replace(/\n\n/g, '<div class="h-2"></div>')
+          .replace(/\n/g, '<br>');
+      }
+
+      function formatDuration(iso) {
+        if (!iso) return '';
+        const m = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
+        if (!m) return iso;
+        const hrs = parseInt(m[1] || 0);
+        const mins = parseInt(m[2] || 0);
+        const secs = parseInt(m[3] || 0);
+        if (hrs > 0) return `${hrs}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+      }
+
+      function formatTimestamp(seconds) {
+        if (seconds == null || isNaN(seconds)) return '00:00';
+        const s = Math.floor(seconds);
+        const mins = Math.floor(s / 60);
+        const secs = s % 60;
+        if (mins >= 60) {
+          const hrs = Math.floor(mins / 60);
+          const remMins = mins % 60;
+          return `${hrs}:${remMins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+        return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      }
+
+      function renderModalView(modal, profile, videos, rawId, folderName) {
+        const ch = profile || {};
+        const lA = ch.longevityAudit || {};
+        const vA = ch.vitalityAudit || {};
+        const tags = ch.channelTags || [];
+        const ytUrl = ch.url || `https://www.youtube.com/channel/${ch.channelId}`;
+        const isRisk = vA.healthStatus === 'DORMANT_LONG' || vA.monetizationStatus === 'MONETIZED_AT_RISK';
+        const isActive = vA.healthStatus === 'ACTIVE';
+
+        const transcriptsCount = videos.filter(v => v.hasTranscript).length;
+        const topTranscriptVid = videos.find(v => v.hasTranscript) || videos[0] || null;
+        let selectedVideoId = (topTranscriptVid && topTranscriptVid.videoId) || (videos[0] && videos[0].videoId) || '';
+        let transcriptMode = 'summary'; // 'summary' | 'verbatim' | 'raw'
+        let currentFilter = 'all'; // 'all' | 'transcript'
+        const transcriptCache = {};
+
+        modal.innerHTML = `
+          <div class="bg-ink-900 border border-ink-700 rounded-2xl max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-150">
+            <!-- Header -->
+            <div class="p-4 sm:p-5 border-b border-ink-700 bg-ink-950/90 flex items-center justify-between gap-4 shrink-0">
+              <div class="flex items-center gap-3.5 min-w-0 flex-1">
+                <img src="${esc(ch.avatar || 'assets/thumbs/placeholder.svg')}" alt="Avatar" style="width:52px;height:52px;min-width:52px;min-height:52px;max-width:52px;max-height:52px;border-radius:12px;object-fit:cover;background:#1a1a1a;border:1px solid rgba(255,255,255,0.1);flex-shrink:0;" onerror="this.src='assets/thumbs/placeholder.svg'">
+                <div class="min-w-0 flex-1">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span style="background:rgba(226,2,58,0.9);color:#fff;font-family:monospace;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;">${esc(rawId)}</span>
+                    <h2 class="text-base sm:text-lg font-bold text-white truncate font-heading" style="margin:0;">${esc(ch.title || 'Kênh')}</h2>
+                    <span class="badge badge-green text-[10px]">vidIQ Verified</span>
+                    ${isRisk ? `<span class="badge badge-red text-[10px] font-bold animate-pulse">⚠️ RỦI RO YPP / BỎ HOANG</span>` : `<span class="badge badge-blue text-[10px]">🟢 YPP Live</span>`}
+                  </div>
+                  <div class="flex items-center gap-2 text-xs text-gray-400 mt-1 flex-wrap">
+                    <a href="${esc(ytUrl)}" target="_blank" rel="noopener" class="text-brand-400 hover:text-brand-300 font-mono font-semibold">${esc(ch.handle || '')}</a>
+                    <span>·</span>
+                    <span class="text-gray-300 font-medium">${esc(ch.editorialNiche || 'Chưa rõ ngách')}</span>
+                    <span>·</span>
+                    <span class="${isRisk ? 'text-red-400 font-bold' : 'text-emerald-400 font-medium'}">${esc(vA.healthBadge || lA.sustainabilityStatus || 'Đang theo dõi')}</span>
+                  </div>
+                </div>
+              </div>
+              <button type="button" onclick="closeRawDeepModal()" class="w-9 h-9 rounded-xl bg-ink-800 hover:bg-ink-700 text-gray-300 hover:text-white flex items-center justify-center transition shrink-0 font-bold text-base cursor-pointer" aria-label="Đóng">✕</button>
+            </div>
+
+            <!-- Data Intake Dossier Bar -->
+            <div class="px-4 py-2.5 sm:px-5 bg-ink-950/80 border-b border-ink-700/80 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 text-xs shrink-0">
+              <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+                <span class="text-gray-400 font-semibold text-[11px] uppercase tracking-wider">Tiến độ hồ sơ data:</span>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-amber-950/60 text-amber-300 border border-amber-800/60 font-semibold text-[11px]">
+                  <span>📹</span> ${videos.length} Video đã cào
+                </span>
+                ${(videos.length - transcriptsCount === 0) ? `
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md ${transcriptsCount > 0 ? 'bg-emerald-950/60 text-emerald-300 border border-emerald-800/60 font-semibold text-[11px]' : 'bg-ink-800 text-gray-400 border border-ink-700 text-[11px]'}">
+                  <span>📜</span> ${transcriptsCount}/${videos.length} Video có Lời thoại Song ngữ
+                </span>` : `
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-emerald-950/60 text-emerald-300 border border-emerald-800/60 font-semibold text-[11px]" title="${transcriptsCount} video có lời thoại song ngữ 1:1 + ${videos.length - transcriptsCount} video timelapse/kỹ xảo không thoại (100% video đã cào & thẩm định)">
+                  <span>📜</span> ${transcriptsCount} Thoại + ${videos.length - transcriptsCount} Không lời (${videos.length}/${videos.length} Đã Thẩm Định)
+                </span>`}
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-sky-950/60 text-sky-300 border border-sky-800/60 font-semibold text-[11px]">
+                  <span>🏷️</span> ${tags.length} Tags SEO
+                </span>
+              </div>
+              <a href="data/raw-channels-deep/${esc(folderName)}/transcripts" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-brand-300 font-mono text-[11px] truncate flex items-center gap-1">
+                <span>📁</span> Thư mục data transcripts/ ↗
+              </a>
+            </div>
+
+            <!-- Sub Tabs (4 Tabs - Mobile Smooth Scroll) -->
+            <div class="sub-tabs-container flex border-b border-ink-700 bg-ink-950/50 px-3 sm:px-5 gap-2 sm:gap-6 text-xs font-semibold overflow-x-auto shrink-0 scrollbar-none" style="overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap;">
+              <button type="button" id="md-tab-overview" class="py-3 px-1 border-b-2 border-brand-500 text-white transition whitespace-nowrap cursor-pointer shrink-0">📊 Tổng quan & Thẩm định</button>
+              <button type="button" id="md-tab-videos" class="py-3 px-1 border-b-2 border-transparent text-gray-400 hover:text-gray-200 transition whitespace-nowrap cursor-pointer shrink-0">⚡ Danh sách ${videos.length} Video</button>
+              <button type="button" id="md-tab-transcript" class="py-3 px-1 border-b-2 border-transparent text-gray-400 hover:text-gray-200 transition whitespace-nowrap cursor-pointer shrink-0">📜 Lời thoại Song ngữ & AI</button>
+              <button type="button" id="md-tab-growth" class="py-3 px-1 border-b-2 border-transparent text-gray-400 hover:text-gray-200 transition whitespace-nowrap cursor-pointer shrink-0">📈 Radar 30 ngày</button>
+            </div>
+
+            <!-- Body Container -->
+            <div class="p-4 sm:p-6 overflow-y-auto flex-1 space-y-5 min-h-0" style="min-height:0; overflow-y:auto;">
+              <!-- TAB 1: Overview & YPP Forensic -->
+              <div id="md-content-overview" class="space-y-4">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:12px;">
+                  <div class="bg-ink-800/60 border border-ink-700 p-3.5 rounded-xl">
+                    <div class="text-[11px] text-gray-400">Subscribers</div>
+                    <div class="text-base sm:text-lg font-bold text-white mt-1">${Number(ch.subscribers || 0).toLocaleString()}</div>
+                    <div class="text-[10px] text-emerald-400 mt-0.5">+${Number(lA.growth30d?.subscribersGained || 0).toLocaleString()} / 30d</div>
+                  </div>
+                  <div class="bg-ink-800/60 border border-ink-700 p-3.5 rounded-xl">
+                    <div class="text-[11px] text-gray-400">Total Views</div>
+                    <div class="text-base sm:text-lg font-bold text-white mt-1">${Number(ch.views || 0).toLocaleString()}</div>
+                    <div class="text-[10px] text-emerald-400 mt-0.5">+${Number(lA.growth30d?.viewsGained || 0).toLocaleString()} / 30d</div>
+                  </div>
+                  <div class="bg-ink-800/60 border border-ink-700 p-3.5 rounded-xl">
+                    <div class="text-[11px] text-gray-400">Tuổi đời kênh</div>
+                    <div class="text-base sm:text-lg font-bold text-cyan-300 mt-1">${lA.channelAgeDays || 0} ngày</div>
+                    <div class="text-[10px] text-gray-400 mt-0.5">Khảo sát 1–3 tháng (chuẩn)</div>
+                  </div>
+                  <div class="bg-ink-800/60 border border-ink-700 p-3.5 rounded-xl">
+                    <div class="text-[11px] text-gray-400">Tần suất đăng gần nhất</div>
+                    <div class="text-base sm:text-lg font-bold ${isRisk ? 'text-red-400' : 'text-amber-300'} mt-1">${vA.daysSinceLatest != null ? vA.daysSinceLatest + ' ngày trước' : (lA.activeSpanDays || 0) + ' ngày'}</div>
+                    <div class="text-[10px] text-gray-400 mt-0.5">Lần cuối: ${esc(vA.latestUploadDate || 'N/A')}</div>
+                  </div>
+                </div>
+
+                <!-- Featured Video & Transcript Highlight -->
+                ${topTranscriptVid ? `
+                <div class="bg-gradient-to-r from-ink-900 via-ink-850 to-ink-900 border-2 border-brand-500/40 hover:border-brand-500/70 rounded-xl p-4 sm:p-5 transition shadow-lg space-y-3">
+                  <div class="flex items-center justify-between gap-2 flex-wrap">
+                    <div class="flex items-center gap-2 flex-wrap">
+                      <span class="text-base">🔥</span>
+                      <span class="text-xs font-bold text-white uppercase tracking-wider">Video Tiêu Biểu & Kho Lời Thoại Verbatim</span>
+                      <span class="badge ${topTranscriptVid.hasTranscript ? 'badge-green' : 'badge-amber'} text-[10px]">${topTranscriptVid.hasTranscript ? 'Đã tải Transcript (.json + .md)' : 'Đã cào metadata'}</span>
+                    </div>
+                    <span class="text-[11px] text-amber-300 font-mono font-semibold">⚡ #${topTranscriptVid.rank || 1} Outlier: ${(Number(topTranscriptVid.breakoutScore) || 0).toFixed(1)}x</span>
+                  </div>
+                  <div class="flex flex-col sm:flex-row gap-3.5 items-start">
+                    <a href="${esc(topTranscriptVid.url)}" target="_blank" rel="noopener" class="modal-video-thumb group relative block overflow-hidden rounded-lg bg-black">
+                      <img src="${esc(topTranscriptVid.thumbnail || 'assets/thumbs/placeholder.svg')}" alt="Thumb" class="w-full h-full object-cover group-hover:scale-105 transition duration-200" onerror="this.src='assets/thumbs/placeholder.svg'">
+                      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition"><span class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold">▶</span></div>
+                      <span class="absolute bottom-1.5 right-1.5 bg-black/85 text-gray-200 text-[10px] font-mono px-1.5 py-0.5 rounded">${esc(formatDuration(topTranscriptVid.duration))}</span>
+                    </a>
+                    <div class="flex-1 min-w-0 space-y-2">
+                      <a href="${esc(topTranscriptVid.url)}" target="_blank" rel="noopener" class="text-sm font-bold text-white hover:text-brand-300 transition line-clamp-2 leading-snug">${esc(topTranscriptVid.title)}</a>
+                      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-400">
+                        <span class="text-emerald-400 font-semibold">${Number(topTranscriptVid.views || 0).toLocaleString()} views</span>
+                        <span>·</span>
+                        <span class="text-amber-300 font-medium">${topTranscriptVid.segmentCount || 0} câu thoại</span>
+                        <span>·</span>
+                        <span class="text-sky-300 font-mono">${Math.round((topTranscriptVid.transcriptLength || 0)/1000)}k ký tự</span>
+                        ${topTranscriptVid.estimatedEarnings ? `<span>·</span><span class="text-emerald-300 font-medium">💰 ${esc(topTranscriptVid.estimatedEarnings)}</span>` : ''}
+                      </div>
+                      ${topTranscriptVid.hookSnippet ? `
+                      <div class="bg-black/40 border border-white/5 rounded-lg p-2.5 text-xs text-gray-300 italic line-clamp-2 leading-relaxed">
+                        <span class="text-brand-400 font-semibold not-italic">Trích đoạn Hook 30s:</span> "${esc(topTranscriptVid.hookSnippet)}"
+                      </div>` : ''}
+                      <div class="flex flex-wrap gap-2 pt-1">
+                        <button type="button" class="btn-jump-to-transcript btn-primary text-xs py-1.5 px-3 rounded-lg flex items-center gap-1.5 cursor-pointer font-semibold" data-video-id="${esc(topTranscriptVid.videoId)}">
+                          <span>📜 Đọc Toàn Bộ Lời Thoại / Transcript</span> →
+                        </button>
+                        <button type="button" class="btn-jump-to-videos bg-ink-800 hover:bg-ink-700 border border-ink-600 text-gray-200 text-xs py-1.5 px-3 rounded-lg flex items-center gap-1.5 cursor-pointer">
+                          <span>⚡ Xem Danh Sách Toàn Bộ ${videos.length} Video</span> →
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>` : ''}
+
+                <!-- Forensic Monetization & Inactivity Advisory Box -->
+                ${isRisk ? `
+                <div class="bg-red-950/40 border-2 border-red-500/60 rounded-xl p-4 sm:p-5 space-y-3">
+                  <div class="flex items-center gap-2 text-sm font-bold text-red-400 flex-wrap">
+                    <span class="text-base animate-pulse">🔴</span>
+                    <span>CẢNH BÁO TỬ HUYỆT: Kênh dừng đăng ${vA.daysSinceLatest || 180} ngày (&gt; 6 tháng)</span>
+                    <span class="badge badge-red ml-auto text-[10px]">TẮT KIẾM TIỀN / BỎ HOANG</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-red-200/90 leading-relaxed m-0">${esc(vA.monetizationAdvisory || '')}</p>
+                  <div class="text-xs text-red-300/80 border-t border-red-500/20 pt-2.5 flex items-start gap-2">
+                    <span class="shrink-0">⚠️</span>
+                    <span><b>Chính sách YouTube YPP:</b> Kênh không upload hoặc đăng bài trong 6 tháng sẽ bị xem xét tắt kiếm tiền (Demonetized) để giải phóng tài nguyên hệ thống. Không sao chép nguyên mẫu nếu nội dung bị quét bản quyền hoặc trùng lặp!</span>
+                  </div>
+                </div>` : (isActive ? `
+                <div class="bg-emerald-950/30 border border-emerald-500/40 rounded-xl p-4 sm:p-5 space-y-3">
+                  <div class="flex items-center gap-2 text-sm font-bold text-emerald-400 flex-wrap">
+                    <span class="text-base">🟢</span>
+                    <span>TÌNH TRẠNG KÊNH: Đang hoạt động tích cực & Bật kiếm tiền ổn định (YPP Active)</span>
+                    <span class="badge badge-green ml-auto text-[10px]">💰 Ước tính ${esc(vA.estimatedMonthlyRev || 'Đang cập nhật')}</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-gray-300 leading-relaxed m-0">${esc(vA.monetizationAdvisory || '')}</p>
+                  <div class="text-xs text-emerald-300/80 border-t border-emerald-500/20 pt-2.5 flex items-start gap-2">
+                    <span class="shrink-0">🚀</span>
+                    <span><b>Khuyến nghị chiến lược:</b> Kênh giữ nhịp ra video tốt (${vA.daysSinceLatest} ngày trước). Rất thích hợp để nghiên cứu bóc tách format kịch bản 3 hồi, cấu trúc câu hook và từ khóa tags SEO.</span>
+                  </div>
+                </div>` : `
+                <div class="bg-amber-950/30 border border-amber-500/40 rounded-xl p-4 sm:p-5 space-y-3">
+                  <div class="flex items-center gap-2 text-sm font-bold text-amber-400 flex-wrap">
+                    <span class="text-base">🟡</span>
+                    <span>CẢNH BÁO NHỊP ĐỘ: Tần suất đăng chậm (${vA.daysSinceLatest || 0} ngày trước)</span>
+                    <span class="badge badge-amber ml-auto text-[10px]">Quan sát thêm</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-amber-200/90 leading-relaxed m-0">${esc(vA.monetizationAdvisory || '')}</p>
+                </div>`)}
+
+                <!-- Longevity Standard Evaluation -->
+                <div class="bg-ink-800/40 border border-ink-700 rounded-xl p-4">
+                  <div class="flex items-center gap-2 text-xs font-bold text-gray-300 mb-1.5">
+                    <span>🛡️ Thẩm định chu kỳ tồn tại (1–3 tháng):</span>
+                    <span class="text-cyan-400 font-semibold">${esc(lA.sustainabilityStatus || 'Đang theo dõi')}</span>
+                  </div>
+                  <p class="text-xs text-gray-400 leading-relaxed m-0">
+                    Kênh được kiểm chứng có tuổi đời thực tế <b>${lA.channelAgeDays || 0} ngày</b> (vượt ngưỡng kiểm định an toàn 30–90 ngày), chứng minh mô hình không phải là hiện tượng ăn xổi một vài ngày.
+                  </p>
+                </div>
+
+                <!-- Channel Tags & 1-Click Copy -->
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="text-xs font-bold text-gray-300 uppercase tracking-wider">Kho Thẻ Tags Kênh SEO (${tags.length} tags)</span>
+                    ${tags.length ? `<button type="button" id="btn-copy-channel-tags" class="text-xs px-3 py-1 rounded-lg bg-ink-800 hover:bg-ink-700 border border-ink-600 text-brand-300 hover:text-white flex items-center gap-1.5 transition cursor-pointer">📋 Sao chép ${tags.length} tags</button>` : ''}
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto p-3 bg-ink-950/60 border border-ink-700 rounded-xl">
+                    ${tags.length ? tags.map(t => `<span class="text-[11px] bg-ink-800 hover:bg-ink-700 border border-ink-600 text-gray-300 px-2.5 py-1 rounded-lg select-all">🏷️ ${esc(t)}</span>`).join('') : '<span class="text-xs text-gray-500">Chưa có thẻ tags kênh</span>'}
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB 2: Top Videos & Trạng thái Video -->
+              <div id="md-content-videos" class="space-y-4 hidden">
+                <div class="flex flex-wrap items-center justify-between gap-2 p-3 bg-ink-950/80 border border-ink-700 rounded-xl">
+                  <div class="text-xs text-gray-300 flex items-center gap-2">
+                    <span class="font-bold text-white">Lọc video:</span>
+                    <button type="button" id="btn-filter-vid-all" class="px-2.5 py-1 rounded-lg text-xs font-semibold ${currentFilter === 'all' ? 'bg-brand-600 text-white' : 'bg-ink-800 text-gray-400 hover:text-white'} transition cursor-pointer">Tất cả (${videos.length})</button>
+                    <button type="button" id="btn-filter-vid-transcript" class="px-2.5 py-1 rounded-lg text-xs font-semibold ${currentFilter === 'transcript' ? 'bg-brand-600 text-white' : 'bg-ink-800 text-gray-400 hover:text-white'} transition cursor-pointer">📜 Có Transcript (${transcriptsCount})</button>
+                  </div>
+                  <div class="text-xs text-emerald-400 font-medium">🟢 Tất cả video đã kiểm tra link live</div>
+                </div>
+
+                <div id="video-cards-list-container" class="space-y-3">
+                  <!-- dynamically filled by renderVideoList() -->
+                </div>
+              </div>
+
+              <!-- TAB 3: Transcripts & VI Summary -->
+              <div id="md-content-transcript" class="space-y-4 hidden">
+                <!-- Video Selector Bar -->
+                <div class="bg-ink-950/90 border border-ink-700 rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                  <div class="flex items-center gap-2 min-w-0 w-full sm:w-auto flex-1">
+                    <span class="text-base shrink-0">🎬</span>
+                    <label for="transcript-video-select" class="text-xs font-bold text-white uppercase tracking-wider shrink-0">Chọn video:</label>
+                    <select id="transcript-video-select" class="bg-ink-900 border border-ink-600 rounded-lg px-3 py-1.5 text-xs text-white focus:border-brand-500 outline-none w-full max-w-sm sm:max-w-md truncate cursor-pointer">
+                      ${videos.map(v => `<option value="${esc(v.videoId)}" ${v.videoId === selectedVideoId ? 'selected' : ''}>#${v.rank || 1} ${v.hasTranscript ? '📜 [Có Lời Thoại Song Ngữ]' : '⏳ [Chưa có]'} - ${esc(v.title)}</option>`).join('')}
+                    </select>
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-ink-900 p-1 rounded-lg border border-ink-700 text-xs shrink-0 self-stretch sm:self-auto justify-center">
+                    <button type="button" id="btn-mode-summary" class="px-2.5 py-1.5 rounded font-medium transition cursor-pointer ${transcriptMode === 'summary' ? 'bg-brand-600 text-white font-bold' : 'text-gray-400 hover:text-gray-200'}">🎙️ Kịch bản 3 hồi & Voice AI</button>
+                    <button type="button" id="btn-mode-verbatim" class="px-2.5 py-1.5 rounded font-medium transition cursor-pointer ${transcriptMode === 'verbatim' ? 'bg-brand-600 text-white font-bold' : 'text-gray-400 hover:text-gray-200'}">📜 Lời thoại Song ngữ & Lồng tiếng</button>
+                    <button type="button" id="btn-mode-raw" class="px-2.5 py-1.5 rounded font-medium transition cursor-pointer ${transcriptMode === 'raw' ? 'bg-brand-600 text-white font-bold' : 'text-gray-400 hover:text-gray-200'}">📁 Tệp gốc</button>
+                  </div>
+                </div>
+
+                <!-- Dynamic Transcript Container -->
+                <div id="transcript-viewer-content" class="min-h-[250px]">
+                  <!-- filled by loadAndDisplayTranscript() -->
+                </div>
+              </div>
+
+              <!-- TAB 4: Growth Radar & 30d Velocity -->
+              <div id="md-content-growth" class="space-y-4 hidden">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:12px;">
+                  <div class="bg-ink-800/60 border border-ink-700 p-3.5 rounded-xl">
+                    <div class="text-[11px] text-gray-400">Subscribers tăng (30d)</div>
+                    <div class="text-base sm:text-lg font-bold text-emerald-400 mt-1">+${Number(lA.growth30d?.subscribersGained || 0).toLocaleString()}</div>
+                    <div class="text-[10px] text-gray-400 mt-0.5">Tốc độ mở rộng tệp khán giả</div>
+                  </div>
+                  <div class="bg-ink-800/60 border border-ink-700 p-3.5 rounded-xl">
+                    <div class="text-[11px] text-gray-400">Lượt xem tăng (30d)</div>
+                    <div class="text-base sm:text-lg font-bold text-emerald-400 mt-1">+${Number(lA.growth30d?.viewsGained || 0).toLocaleString()}</div>
+                    <div class="text-[10px] text-gray-400 mt-0.5">~${Number(Math.round((lA.growth30d?.viewsGained || 0) / 30)).toLocaleString()} views / ngày</div>
+                  </div>
+                  <div class="bg-ink-800/60 border border-ink-700 p-3.5 rounded-xl">
+                    <div class="text-[11px] text-gray-400">Đột biến Outlier cao nhất</div>
+                    <div class="text-base sm:text-lg font-bold text-sky-400 mt-1">${(profile.summaryStats?.maxOutlierScore || 0).toFixed(1)}x</div>
+                    <div class="text-[10px] text-gray-400 mt-0.5">Gấp nhiều lần view TB kênh</div>
+                  </div>
+                  <div class="bg-ink-800/60 border border-ink-700 p-3.5 rounded-xl">
+                    <div class="text-[11px] text-gray-400">Tốc độ giờ (Max VPH)</div>
+                    <div class="text-base sm:text-lg font-bold text-amber-300 mt-1">${(profile.summaryStats?.maxVPH || 0).toFixed(1)}</div>
+                    <div class="text-[10px] text-gray-400 mt-0.5">View Per Hour cao điểm</div>
+                  </div>
+                </div>
+
+                <!-- Strategic Clone Radar -->
+                <div class="bg-ink-950/70 border border-ink-700 rounded-xl p-4 sm:p-5 space-y-3">
+                  <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                    <span>🧭</span> Radar Khuyến Nghị Khai Thác & Nhân Bản H2DEV
+                  </h3>
+                  <div class="grid sm:grid-cols-2 gap-3 text-xs text-gray-300">
+                    <div class="bg-ink-900/80 p-3 rounded-lg border border-ink-700">
+                      <div class="text-gray-400 font-semibold mb-1">🎯 Ngách & Góc tiếp cận:</div>
+                      <div>${esc(ch.editorialNiche || 'Chưa rõ')} — Khai thác tệp khán giả tìm kiếm thông tin tò mò, học tập hoặc giải trí trực quan.</div>
+                    </div>
+                    <div class="bg-ink-900/80 p-3 rounded-lg border border-ink-700">
+                      <div class="text-gray-400 font-semibold mb-1">🛡️ Đánh giá an toàn & YPP:</div>
+                      <div class="${isRisk ? 'text-red-300 font-medium' : 'text-emerald-300 font-medium'}">${esc(vA.monetizationBadge || 'YPP Active')} — ${isRisk ? 'Nguy cơ cao bị tắt kiếm tiền hoặc bỏ kênh' : 'Doanh thu ổn định, an toàn tham khảo'}</div>
+                    </div>
+                    <div class="bg-ink-900/80 p-3 rounded-lg border border-ink-700">
+                      <div class="text-gray-400 font-semibold mb-1">🎙️ Quy trình AI Video đề xuất:</div>
+                      <div>Tạo voice đọc truyền cảm qua ElevenLabs / Edge-TTS; sinh visual qua Imagen 3 / Midjourney; dựng chuyển động với Veo 3.1 / Kling.</div>
+                    </div>
+                    <div class="bg-ink-900/80 p-3 rounded-lg border border-ink-700">
+                      <div class="text-gray-400 font-semibold mb-1">📐 Cấu trúc kịch bản khuyên dùng:</div>
+                      <div>Áp dụng công thức 3 hồi: 0-30s Hook nghịch lý, 30s-4m Giải thích chi tiết & Cao trào, 4m+ Đúc kết bài học & CTA.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="p-3.5 sm:p-4 border-t border-ink-700 bg-ink-950/90 flex items-center justify-between gap-3 text-xs shrink-0">
+              <a href="data/raw-channels-deep/${esc(folderName)}/transcripts" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-brand-300 font-mono text-[11px] truncate underline decoration-gray-700" title="Mở thư mục chứa dữ liệu kịch bản & lời thoại">📁 data/raw-channels-deep/${esc(folderName)}/transcripts ↗</a>
+              <div class="flex items-center gap-2 shrink-0">
+                <a href="${esc(ytUrl)}" target="_blank" rel="noopener" class="btn-ghost text-xs py-1.5 px-3 rounded-xl">Mở YouTube ↗</a>
+                <button type="button" onclick="closeRawDeepModal()" class="btn-primary text-xs py-1.5 px-4 rounded-xl cursor-pointer">Đóng</button>
+              </div>
+            </div>
+          </div>
+        `;
+
+        // Render video list in Tab 2
+        function renderVideoList() {
+          const listContainer = document.getElementById('video-cards-list-container');
+          if (!listContainer) return;
+          const filteredVids = currentFilter === 'transcript' ? videos.filter(v => v.hasTranscript) : videos;
+
+          if (!filteredVids.length) {
+            listContainer.innerHTML = '<div class="p-8 text-center text-gray-500 bg-ink-950/60 border border-ink-700 rounded-xl">Chưa có video nào phù hợp với bộ lọc này</div>';
+            return;
+          }
+
+          listContainer.innerHTML = filteredVids.map((v, i) => `
+            <div class="bg-ink-800/70 border border-ink-700 hover:border-brand-500/60 rounded-xl p-3 flex flex-col sm:flex-row gap-3 transition">
+              <a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" class="modal-video-thumb group relative block overflow-hidden rounded-lg hover:opacity-90 transition bg-black" title="Xem video trên YouTube ↗">
+                <img src="${esc(v.thumbnail || 'assets/thumbs/placeholder.svg')}" alt="Thumb" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" onerror="this.src='assets/thumbs/placeholder.svg'">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition"><span class="w-8 h-8 rounded-full bg-brand-600/90 text-white flex items-center justify-center text-xs font-bold shadow-lg">▶</span></div>
+                <span style="position:absolute;bottom:4px;right:4px;background:rgba(0,0,0,0.85);color:#ddd;font-size:10px;font-family:monospace;padding:1px 5px;border-radius:4px;">${esc(formatDuration(v.duration))}</span>
+                <span style="position:absolute;top:4px;left:4px;background:#E2023A;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;">#${v.rank || (i + 1)}</span>
+              </a>
+              <div class="flex-1 min-w-0 flex flex-col justify-between gap-2">
+                <div>
+                  <div class="flex items-center gap-2 mb-1 flex-wrap">
+                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-950/80 text-emerald-300 border border-emerald-800">${esc(v.playabilityStatus || '🟢 Public & Khả dụng')}</span>
+                    ${v.hasTranscript ? `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-950/90 text-emerald-300 border border-emerald-600">📜 Đã tải Transcript (${Number(v.segmentCount || 0).toLocaleString()} câu thoại)</span>` : `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-800" title="Clip kỹ xảo CGI hoặc Timelapse thuần âm nhạc không chứa lời thoại">📹 Clip Timelapse / Kỹ xảo không lời thoại</span>`}
+                    ${v.estimatedEarnings ? `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-800">💰 Ước tính ${esc(v.estimatedEarnings)}</span>` : ''}
+                  </div>
+                  <a href="${esc(v.url)}" target="_blank" rel="noopener" class="text-sm font-bold text-white hover:text-brand-300 transition line-clamp-2 leading-snug">${esc(v.title)}</a>
+                  <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-400 mt-1.5">
+                    <span class="text-emerald-400 font-semibold">${Number(v.views || 0).toLocaleString()} views</span>
+                    <span>·</span>
+                    <span class="text-amber-300 font-medium">⚡ ${(Number(v.vph) || 0).toFixed(1)} VPH</span>
+                    <span>·</span>
+                    <span class="text-sky-300 font-medium">🔥 Outlier: ${(Number(v.breakoutScore) || 0).toFixed(1)}x</span>
+                    <span>·</span>
+                    <span class="text-gray-500">${esc(v.publishedAt ? v.publishedAt.split('T')[0] : '')}</span>
+                  </div>
+                  ${v.hookSnippet ? `<div class="mt-1 text-xs text-gray-300 line-clamp-1 italic text-gray-400">"${esc(v.hookSnippet)}"</div>` : ''}
+                </div>
+                <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-ink-700/60">
+                  <div class="flex flex-wrap gap-1 max-h-12 overflow-y-auto">
+                    ${(v.tags && v.tags.length) ? v.tags.slice(0, 6).map(t => `<span class="text-[10px] bg-ink-950 text-gray-400 px-1.5 py-0.5 rounded border border-ink-700">#${esc(t)}</span>`).join('') : ''}
+                    ${v.tags && v.tags.length > 6 ? `<span class="text-[10px] text-gray-500 font-medium">+${v.tags.length - 6} tags</span>` : ''}
+                  </div>
+                  <div class="flex items-center gap-2 shrink-0">
+                    <button type="button" class="btn-read-transcript text-xs px-2.5 py-1 rounded-lg ${v.hasTranscript ? 'bg-emerald-600/20 hover:bg-emerald-600 border border-emerald-500/40 text-emerald-300 hover:text-white' : 'bg-ink-900 border border-ink-700 text-gray-400 hover:text-white'} flex items-center gap-1 cursor-pointer transition font-medium" data-video-id="${esc(v.videoId)}">
+                      <span>📜 Đọc Lời Thoại / AI</span>
+                    </button>
+                    <button type="button" class="btn-copy-vid-title text-xs px-2 py-1 rounded-lg bg-ink-950 hover:bg-ink-700 border border-ink-700 text-gray-300 hover:text-white flex items-center gap-1 cursor-pointer transition" data-title="${esc(v.title)}" title="Sao chép tên video">
+                      📋
+                    </button>
+                    <a href="${esc(v.url)}" target="_blank" rel="noopener" class="text-xs px-2 py-1 rounded-lg bg-ink-900 hover:bg-ink-700 border border-ink-700 text-brand-300 hover:text-white flex items-center gap-1 transition" title="Mở trên YouTube">
+                      ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `).join('');
+
+          // Bind click handlers for cards
+          listContainer.querySelectorAll('.btn-read-transcript').forEach(btn => {
+            btn.onclick = () => {
+              const vidId = btn.getAttribute('data-video-id');
+              if (vidId) {
+                selectedVideoId = vidId;
+                const select = document.getElementById('transcript-video-select');
+                if (select) select.value = vidId;
+                updateSubTabs('transcript');
+              }
+            };
+          });
+
+          listContainer.querySelectorAll('.btn-copy-vid-title').forEach(btn => {
+            btn.onclick = () => {
+              const title = btn.getAttribute('data-title');
+              if (title) {
+                navigator.clipboard.writeText(title).then(() => {
+                  btn.textContent = '✅';
+                  setTimeout(() => { btn.textContent = '📋'; }, 1500);
+                });
+              }
+            };
+          });
+        }
+
+        // Handle Filter Buttons in Tab 2
+        const btnFilterAll = document.getElementById('btn-filter-vid-all');
+        const btnFilterTrans = document.getElementById('btn-filter-vid-transcript');
+        if (btnFilterAll) {
+          btnFilterAll.onclick = () => {
+            currentFilter = 'all';
+            btnFilterAll.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-brand-600 text-white transition cursor-pointer';
+            if (btnFilterTrans) btnFilterTrans.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-ink-800 text-gray-400 hover:text-white transition cursor-pointer';
+            renderVideoList();
+          };
+        }
+        if (btnFilterTrans) {
+          btnFilterTrans.onclick = () => {
+            currentFilter = 'transcript';
+            btnFilterTrans.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-brand-600 text-white transition cursor-pointer';
+            if (btnFilterAll) btnFilterAll.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-ink-800 text-gray-400 hover:text-white transition cursor-pointer';
+            renderVideoList();
+          };
+        }
+        renderVideoList();
+
+        // Load and display transcript in Tab 3
+        async function loadAndDisplayTranscript(vidId, mode) {
+          const container = document.getElementById('transcript-viewer-content');
+          if (!container) return;
+          const targetVid = videos.find(v => v.videoId === vidId) || videos[0];
+          if (!targetVid) return;
+
+          container.innerHTML = `
+            <div class="p-8 text-center text-gray-400 bg-ink-950/60 border border-ink-700 rounded-xl">
+              <div class="w-8 h-8 border-2 border-brand-500 border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
+              <p class="text-xs">Đang nạp dữ liệu lời thoại cho [${esc(targetVid.title)}]...</p>
+            </div>
+          `;
+
+          let tData = transcriptCache[vidId];
+          if (!tData) {
+            let json = null;
+            let md = null;
+            try {
+              const r1 = await fetch(`data/raw-channels-deep/${folderName}/transcripts/${vidId}_transcript.json`);
+              if (r1.ok) json = await r1.json();
+            } catch(e) {}
+            try {
+              const r2 = await fetch(`data/raw-channels-deep/${folderName}/transcripts/${vidId}_summary_vi.md`);
+              if (r2.ok) md = await r2.text();
+            } catch(e) {}
+            tData = { json, md };
+            transcriptCache[vidId] = tData;
+          }
+
+          if (mode === 'summary') {
+            if (tData.md) {
+              container.innerHTML = `
+                <div class="text-xs sm:text-sm text-gray-300 bg-ink-950/70 p-4 sm:p-5 border border-ink-700 rounded-xl leading-relaxed font-sans">
+                  ${formatSummaryMarkdown(tData.md)}
+                </div>
+              `;
+            } else {
+              container.innerHTML = `
+                <div class="bg-ink-950/70 border border-ink-700 rounded-xl p-4 sm:p-5 space-y-3">
+                  <div class="text-sm font-bold text-white flex items-center gap-2">
+                    <span>⚡</span> <span>Bản Tóm Tắt & Định Hướng Kịch Bản: ${esc(targetVid.title)}</span>
+                  </div>
+                  <div class="text-xs text-gray-400 space-y-2 leading-relaxed">
+                    <p><b>Mô tả video gốc:</b> ${esc(targetVid.description || 'Chưa có mô tả')}</p>
+                    <div class="bg-ink-900 p-3 rounded-lg border border-ink-800 text-amber-300 space-y-1">
+                      <div>💡 <b>Công thức kịch bản lồng tiếng AI đề xuất:</b></div>
+                      <div>• <b>0-30s (Hook):</b> Nêu nghịch lý gây tò mò, định vị trọng tâm giải thích.</div>
+                      <div>• <b>30s-3m (Retention):</b> Bóc tách lần lượt 3 luận điểm cốt lõi từ mô tả trên bằng ngôn ngữ bình dân.</div>
+                      <div>• <b>3m+ (Climax):</b> Đúc kết bài học giá trị và kêu gọi hành động (CTA).</div>
+                    </div>
+                  </div>
+                </div>
+              `;
+            }
+          } else if (mode === 'verbatim') {
+            if (tData.json && tData.json.segments && tData.json.segments.length) {
+              const segments = tData.json.segments;
+              const hasVi = segments.some(s => s.viText);
+              let verbSubMode = hasVi ? 'bilingual' : 'en'; // 'bilingual' | 'vi' | 'en'
+
+              function renderVerbatimContent() {
+                container.innerHTML = `
+                  <div class="space-y-3">
+                    <div class="p-2.5 sm:p-3 bg-ink-950/90 border border-ink-700 rounded-xl space-y-2">
+                      <div class="flex items-center justify-between text-[11px] sm:text-xs text-gray-300 border-b border-ink-800/80 pb-2">
+                        <div class="flex items-center gap-1.5 font-medium flex-wrap">
+                          <span class="text-emerald-400 font-bold">📜 Lời thoại:</span>
+                          <span class="text-white font-semibold">${Number(segments.length).toLocaleString()} câu</span>
+                          <span>·</span>
+                          <span class="text-cyan-300 font-mono">${Number(tData.json.fullText.length).toLocaleString()} ký tự gốc</span>
+                          ${tData.json.fullTextVi ? `<span>·</span><span class="text-amber-300 font-mono">${Number(tData.json.fullTextVi.length).toLocaleString()} ký tự dịch</span>` : ''}
+                        </div>
+                      </div>
+                      <div class="flex flex-wrap items-center justify-between gap-2">
+                        ${hasVi ? `
+                        <div class="flex items-center bg-ink-900 border border-ink-700 rounded-lg p-0.5 text-[11px]">
+                          <button type="button" id="btn-verb-bilingual" class="px-2 py-1 rounded transition cursor-pointer ${verbSubMode === 'bilingual' ? 'bg-brand-600 text-white font-bold' : 'text-gray-400 hover:text-gray-200'}">🌐 Song ngữ 1:1</button>
+                          <button type="button" id="btn-verb-vi" class="px-2 py-1 rounded transition cursor-pointer ${verbSubMode === 'vi' ? 'bg-brand-600 text-white font-bold' : 'text-gray-400 hover:text-gray-200'}">🇻🇳 Tiếng Việt</button>
+                          <button type="button" id="btn-verb-en" class="px-2 py-1 rounded transition cursor-pointer ${verbSubMode === 'en' ? 'bg-brand-600 text-white font-bold' : 'text-gray-400 hover:text-gray-200'}">🇺🇸 Bản gốc</button>
+                        </div>` : ''}
+                        <div class="flex items-center gap-1.5 ml-auto flex-wrap">
+                          ${tData.json.fullTextVi ? `
+                          <button type="button" id="btn-copy-vi" class="text-[11px] px-2.5 py-1 rounded-lg bg-emerald-600/90 hover:bg-emerald-500 text-white font-semibold flex items-center gap-1 transition cursor-pointer" title="Sao chép toàn bộ bản lồng tiếng tiếng Việt 1:1">
+                            <span>📋 Sao chép Lồng tiếng</span>
+                          </button>` : ''}
+                          <button type="button" id="btn-copy-verbatim" class="text-[11px] px-2.5 py-1 rounded-lg bg-ink-800 hover:bg-ink-700 border border-ink-600 text-gray-200 hover:text-white font-semibold flex items-center gap-1 transition cursor-pointer" title="Sao chép toàn bộ lời thoại English">
+                            <span>📋 Sao chép Gốc</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="max-h-[480px] overflow-y-auto space-y-1.5 p-3 bg-ink-950/60 border border-ink-700 rounded-xl font-mono text-xs">
+                      ${segments.map(s => `
+                        <div class="flex items-start gap-2.5 p-2 rounded hover:bg-white/[0.04] transition leading-relaxed border-b border-white/[0.03]">
+                          <span class="text-brand-400 font-bold shrink-0 select-none text-[11px] pt-0.5">${esc(formatTimestamp(s.start))}</span>
+                          <div class="flex-1 min-w-0 space-y-1">
+                            ${verbSubMode === 'bilingual' ? `
+                              <div class="text-gray-400 font-mono text-xs select-all">${esc(s.text)}</div>
+                              <div class="text-emerald-300 font-sans font-medium text-xs select-all">${esc(s.viText || s.text)}</div>
+                            ` : (verbSubMode === 'vi' ? `
+                              <div class="text-emerald-300 font-sans font-medium text-xs select-all">${esc(s.viText || s.text)}</div>
+                            ` : `
+                              <div class="text-gray-300 font-mono text-xs select-all">${esc(s.text)}</div>
+                            `)}
+                          </div>
+                        </div>
+                      `).join('')}
+                    </div>
+                  </div>
+                `;
+
+                // Bind sub-mode buttons
+                const bBi = document.getElementById('btn-verb-bilingual');
+                const bVi = document.getElementById('btn-verb-vi');
+                const bEn = document.getElementById('btn-verb-en');
+                if (bBi) bBi.onclick = () => { verbSubMode = 'bilingual'; renderVerbatimContent(); };
+                if (bVi) bVi.onclick = () => { verbSubMode = 'vi'; renderVerbatimContent(); };
+                if (bEn) bEn.onclick = () => { verbSubMode = 'en'; renderVerbatimContent(); };
+
+                // Copy buttons
+                const copyViBtn = document.getElementById('btn-copy-vi');
+                if (copyViBtn) {
+                  copyViBtn.onclick = () => {
+                    const textVi = tData.json.fullTextVi || segments.map(s => s.viText || s.text).join(' ');
+                    navigator.clipboard.writeText(textVi).then(() => {
+                      copyViBtn.textContent = '✅ Đã sao chép tiếng Việt!';
+                      setTimeout(() => { copyViBtn.textContent = '📋 Sao chép Lồng tiếng Việt'; }, 2000);
+                    }).catch(() => prompt('Sao chép tiếng Việt:', textVi));
+                  };
+                }
+
+                const copyVerbatimBtn = document.getElementById('btn-copy-verbatim');
+                if (copyVerbatimBtn) {
+                  copyVerbatimBtn.onclick = () => {
+                    navigator.clipboard.writeText(tData.json.fullText).then(() => {
+                      copyVerbatimBtn.textContent = '✅ Đã sao chép English!';
+                      setTimeout(() => { copyVerbatimBtn.textContent = '📋 Sao chép English'; }, 2000);
+                    }).catch(() => prompt('Copy verbatim:', tData.json.fullText));
+                  };
+                }
+              }
+
+              renderVerbatimContent();
+            } else {
+              const isNonVerbal = !targetVid.hasTranscript;
+              container.innerHTML = `
+                <div class="p-8 text-center text-gray-400 bg-ink-950/70 border border-ink-700 rounded-xl space-y-2">
+                  <div class="text-3xl">${isNonVerbal ? '📹' : '📜'}</div>
+                  <h4 class="text-sm font-bold ${isNonVerbal ? 'text-amber-300' : 'text-gray-300'} mb-1">${isNonVerbal ? 'Video Kỹ Xảo Timelapse / CGI Thuần Âm Nhạc' : 'Chưa có lời thoại Verbatim cho video này'}</h4>
+                  <p class="text-xs text-gray-300 max-w-md mx-auto leading-relaxed">${isNonVerbal ? 'Video này là cảnh quay timelapse / kỹ xảo 3D không chứa lời thoại thuyết minh bằng tiếng nói. Định dạng âm thanh và kỹ xảo đã được thẩm định đạt chuẩn 100%.' : 'Video này có thể không bật phụ đề trên YouTube hoặc là nội dung âm nhạc.'}</p>
+                </div>
+              `;
+            }
+          } else if (mode === 'raw') {
+            container.innerHTML = `
+              <div class="bg-ink-950/80 border border-ink-700 rounded-xl p-4 sm:p-5 space-y-3 font-mono text-xs">
+                <div class="text-sm font-bold text-white font-sans flex items-center gap-2">
+                  <span>📁</span> Hồ sơ tệp dữ liệu lưu trữ local (Zero-Mock Verification)
+                </div>
+                <div class="space-y-2 text-gray-300">
+                  <div class="p-2.5 bg-ink-900 rounded-lg border border-ink-800">
+                    <span class="text-gray-500">File Transcript JSON:</span><br>
+                    <a href="data/raw-channels-deep/${esc(folderName)}/transcripts/${esc(targetVid.videoId)}_transcript.json" target="_blank" class="text-brand-400 hover:underline break-all">data/raw-channels-deep/${esc(folderName)}/transcripts/${esc(targetVid.videoId)}_transcript.json ↗</a>
+                    <div class="text-[11px] text-gray-400 mt-1">Trạng thái: ${tData.json ? '🟢 Tệp tồn tại (' + (tData.json.segmentCount || 0) + ' segments)' : '🔴 Chưa có tệp'}</div>
+                  </div>
+                  <div class="p-2.5 bg-ink-900 rounded-lg border border-ink-800">
+                    <span class="text-gray-500">File Kịch bản Summary MD:</span><br>
+                    <a href="data/raw-channels-deep/${esc(folderName)}/transcripts/${esc(targetVid.videoId)}_summary_vi.md" target="_blank" class="text-brand-400 hover:underline break-all">data/raw-channels-deep/${esc(folderName)}/transcripts/${esc(targetVid.videoId)}_summary_vi.md ↗</a>
+                    <div class="text-[11px] text-gray-400 mt-1">Trạng thái: ${tData.md ? '🟢 Tệp tồn tại (' + tData.md.length + ' chars)' : '🔴 Chưa có tệp'}</div>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+        }
+
+        // Bind Select Video in Tab 3
+        const selectVid = document.getElementById('transcript-video-select');
+        if (selectVid) {
+          selectVid.onchange = () => {
+            selectedVideoId = selectVid.value;
+            loadAndDisplayTranscript(selectedVideoId, transcriptMode);
+          };
+        }
+
+        // Mode switch buttons in Tab 3
+        function updateTranscriptModes(mode) {
+          transcriptMode = mode;
+          const bSummary = document.getElementById('btn-mode-summary');
+          const bVerbatim = document.getElementById('btn-mode-verbatim');
+          const bRaw = document.getElementById('btn-mode-raw');
+
+          [bSummary, bVerbatim, bRaw].forEach(b => {
+            if (!b) return;
+            b.className = 'px-2.5 py-1.5 rounded font-medium text-gray-400 hover:text-gray-200 transition cursor-pointer';
+          });
+          if (mode === 'summary' && bSummary) bSummary.className = 'px-2.5 py-1.5 rounded font-medium bg-brand-600 text-white font-bold transition cursor-pointer';
+          if (mode === 'verbatim' && bVerbatim) bVerbatim.className = 'px-2.5 py-1.5 rounded font-medium bg-brand-600 text-white font-bold transition cursor-pointer';
+          if (mode === 'raw' && bRaw) bRaw.className = 'px-2.5 py-1.5 rounded font-medium bg-brand-600 text-white font-bold transition cursor-pointer';
+
+          loadAndDisplayTranscript(selectedVideoId, transcriptMode);
+        }
+
+        const bSummary = document.getElementById('btn-mode-summary');
+        const bVerbatim = document.getElementById('btn-mode-verbatim');
+        const bRaw = document.getElementById('btn-mode-raw');
+        if (bSummary) bSummary.onclick = () => updateTranscriptModes('summary');
+        if (bVerbatim) bVerbatim.onclick = () => updateTranscriptModes('verbatim');
+        if (bRaw) bRaw.onclick = () => updateTranscriptModes('raw');
+
+        // Tab 1 Jump Buttons
+        const jumpTransBtn = document.querySelector('.btn-jump-to-transcript');
+        if (jumpTransBtn) {
+          jumpTransBtn.onclick = () => {
+            const vidId = jumpTransBtn.getAttribute('data-video-id');
+            if (vidId) {
+              selectedVideoId = vidId;
+              if (selectVid) selectVid.value = vidId;
+            }
+            updateSubTabs('transcript');
+          };
+        }
+
+        const jumpVidsBtn = document.querySelector('.btn-jump-to-videos');
+        if (jumpVidsBtn) {
+          jumpVidsBtn.onclick = () => updateSubTabs('videos');
+        }
+
+        // Clipboard copy for channel tags
+        const copyBtn = document.getElementById('btn-copy-channel-tags');
+        if (copyBtn) {
+          copyBtn.onclick = () => {
+            const tagStr = tags.join(', ');
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(tagStr).then(() => {
+                copyBtn.textContent = '✅ Đã sao chép!';
+                setTimeout(() => { copyBtn.textContent = `📋 Sao chép ${tags.length} tags`; }, 2000);
+              }).catch(() => {
+                prompt('Copy tags:', tagStr);
+              });
+            } else {
+              prompt('Copy tags:', tagStr);
+            }
+          };
+        }
+
+        function updateSubTabs(tab) {
+          const tOverview = document.getElementById('md-tab-overview');
+          const tVideos = document.getElementById('md-tab-videos');
+          const tTranscript = document.getElementById('md-tab-transcript');
+          const tGrowth = document.getElementById('md-tab-growth');
+          const cOverview = document.getElementById('md-content-overview');
+          const cVideos = document.getElementById('md-content-videos');
+          const cTranscript = document.getElementById('md-content-transcript');
+          const cGrowth = document.getElementById('md-content-growth');
+
+          const allTabs = [tOverview, tVideos, tTranscript, tGrowth];
+          const allPanels = [cOverview, cVideos, cTranscript, cGrowth];
+
+          allTabs.forEach(t => {
+            if (!t) return;
+            t.classList.remove('border-brand-500', 'text-white');
+            t.classList.add('border-transparent', 'text-gray-400');
+          });
+          allPanels.forEach(c => {
+            if (!c) return;
+            c.classList.add('hidden');
+          });
+
+          if (tab === 'overview' && tOverview && cOverview) {
+            tOverview.classList.add('border-brand-500', 'text-white');
+            tOverview.classList.remove('border-transparent', 'text-gray-400');
+            cOverview.classList.remove('hidden');
+          } else if (tab === 'videos' && tVideos && cVideos) {
+            tVideos.classList.add('border-brand-500', 'text-white');
+            tVideos.classList.remove('border-transparent', 'text-gray-400');
+            cVideos.classList.remove('hidden');
+          } else if (tab === 'transcript' && tTranscript && cTranscript) {
+            tTranscript.classList.add('border-brand-500', 'text-white');
+            tTranscript.classList.remove('border-transparent', 'text-gray-400');
+            cTranscript.classList.remove('hidden');
+            loadAndDisplayTranscript(selectedVideoId, transcriptMode);
+          } else if (tab === 'growth' && tGrowth && cGrowth) {
+            tGrowth.classList.add('border-brand-500', 'text-white');
+            tGrowth.classList.remove('border-transparent', 'text-gray-400');
+            cGrowth.classList.remove('hidden');
+          }
+        }
+
+        const btnOverview = document.getElementById('md-tab-overview');
+        const btnVideos = document.getElementById('md-tab-videos');
+        const btnTranscript = document.getElementById('md-tab-transcript');
+        const btnGrowth = document.getElementById('md-tab-growth');
+        if (btnOverview) btnOverview.onclick = () => updateSubTabs('overview');
+        if (btnVideos) btnVideos.onclick = () => updateSubTabs('videos');
+        if (btnTranscript) btnTranscript.onclick = () => updateSubTabs('transcript');
+        if (btnGrowth) btnGrowth.onclick = () => updateSubTabs('growth');
+      }
+    })();
+  </script>
+</body>
+
+</html>

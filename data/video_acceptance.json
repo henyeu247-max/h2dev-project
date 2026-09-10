@@ -1,0 +1,32 @@
+{
+  "schema_version": "h2dev.video-acceptance.v1",
+  "pilot": {
+    "id": "PILOT-01-THE-MIRROR",
+    "source_dir": "raw-niches/US_EverydayHistory/PILOT-01-THE-MIRROR",
+    "target_language": "vi",
+    "target_duration_min": 6,
+    "target_duration_max": 8,
+    "status": "not_started",
+    "reason": "Chưa có quota/tài nguyên miễn phí đã xác nhận cho voice và image; không dùng bản ghép tạm để gắn PASS.",
+    "source_readiness": "needs_rewrite_and_fact_check",
+    "outputs": {
+      "script": "pending",
+      "voice": "pending",
+      "images": "pending",
+      "subtitles": "pending",
+      "thumbnail": "pending",
+      "mp4": "pending"
+    },
+    "qa": {
+      "watched_end_to_end": false,
+      "audio_visual_alignment": "not_checked",
+      "factual_claims": "requires_source_review",
+      "cost_log": "pending"
+    },
+    "blockers": [
+      "Bản master hiện chỉ khoảng 355 từ dù ghi mục tiêu 1.400–1.600 từ; cần viết lại từ hồ sơ nguồn.",
+      "Các claim lịch sử chưa có nguồn không được giữ như sự thật.",
+      "Chưa được phép gọi video đạt hoặc xuất bản YouTube."
+    ]
+  }
+}

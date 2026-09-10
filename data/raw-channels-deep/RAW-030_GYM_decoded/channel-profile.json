@@ -1,0 +1,60 @@
+{
+  "id": "RAW-030",
+  "channelId": "UCzDR8vhKvR0rRVLjawiMCzw",
+  "title": "GYM decoded",
+  "handle": "@GYMDECODED1",
+  "url": "https://www.youtube.com/channel/UCzDR8vhKvR0rRVLjawiMCzw",
+  "subscribers": 13700,
+  "views": 1855055,
+  "videoCount": 10,
+  "country": "TR",
+  "avatar": "https://yt3.ggpht.com/OK5G5xEZcMlQcojK_A-Cr9lyw37eLG8dB23GTsl1w_L96eDrPN5E4rONbu7JVbqvSrYBj4U3=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Lifestyle (sociology)",
+    "Health",
+    "Physical fitness"
+  ],
+  "editorialNiche": "Fitness / review sức khỏe",
+  "publishedAt": "2025-04-11T16:06:36.525Z",
+  "longevityAudit": {
+    "channelAgeDays": 515,
+    "activeSpanDays": 94,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 2000,
+      "viewsGained": 391419,
+      "videosPublished": 1
+    }
+  },
+  "channelTags": [
+    "protein intake tips",
+    "weight lifting basics",
+    "training to failure",
+    "hypertrophy training",
+    "muscle growth principles",
+    "how to build muscle"
+  ],
+  "extractedAt": "2026-09-09T03:29:06Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 1871299,
+    "maxOutlierScore": 2.15,
+    "maxVPH": 552.38,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-14",
+    "daysSinceLatest": 26,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (26 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 26 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 391,419 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$493 – $916 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

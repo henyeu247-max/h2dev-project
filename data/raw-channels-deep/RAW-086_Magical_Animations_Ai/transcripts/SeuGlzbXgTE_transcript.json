@@ -1,0 +1,1145 @@
+{
+  "videoId": "SeuGlzbXgTE",
+  "title": "WWII Bomber Defense Systems | When Response Time Became the Priority",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 189,
+  "fullText": "Military systems are designed around assumptions, not through dishonesty and not through incompetence, but because the people who write specifications must define conditions in advance and assumptions by their nature. Describe the world as it is expected to be rather than the world as it actually turns out to be. In the summer of 1943, somewhere over the industrial regions of Germany, a discrepancy emerged between those two versions of the world. On one side was a carefully designed defensive system built to precise tolerances, tested thoroughly, documented in official manuals, and issued with complete confidence to the men responsible for operating it. On the other side were the operational conditions encountered at altitude. An opponent that had studied the system just as carefully and learned through methodical experience exactly where its limits were. This video is presented for historical and educational purposes only. The story of what followed does not appear prominently in official summaries of the air war over Europe. It is the kind of episode preserved in afteraction documentation, engineering correspondence filed under administrative reference numbers and technical discussions that rarely moved beyond the units involved. Yet the consequences of what occurred are still visible today in how defensive systems are designed and in a principle now treated as self-evident. Response speed is not a secondary consideration. It is fundamental. To understand the problem, it helps to examine the machine at the center of it. The Sperry ball turret was one of the more technically sophisticated components produced for the American war effort. Designed to occupy the most exposed position on the B17 Flying Fortress. Suspended beneath the fuselage in a sphere of aluminum framing and curved plexiglass, it provided a single operator with coverage of the lower hemisphere surrounding the aircraft. 250 caliber machine guns extended forward through the turret's face. The entire assembly could rotate through a full 360° of traverse and elevate through a wide vertical arc. On paper, it addressed one of the fundamental vulnerabilities of large bomber formations, approach from below. The operators sat with knees drawn upward, positioned close to a computing gun site, hands on control grips that directed the turret through an electrically driven system. Push the grip forward and the guns elevated. Pull back and they depressed. rotate left or right and the entire sphere followed. The system was smooth, consistent, and engineered to a defined standard that planners had determined represented the optimal balance between speed and control. That standard was a traverse rate of approximately 30° per second. At that speed, a trained operator could track a fighter making a conventional approach, calculate the necessary deflection, and respond in controlled bursts. Engineers had evaluated the physics carefully, turret mass, available motor torque, mechanical stresses associated with rapid movement, and deliberately incorporated a governor assembly into the control system. This device, a calibrated arrangement of spring-loaded friction plates, moderated control input to prevent abrupt motion that could introduce oscillation and reduce accuracy. The logic was sound within the environment that had been modeled. The difficulty was that the environment did not remain static. The German air defense system that American bomber crews encountered over Germany in 1943 had evolved through extended operational experience. Years of sustained air operations against multiple opponents had produced refined interception methods based on observation, timing, and coordinated positioning. Analysts had examined the bombers's defensive layout carefully, identifying where its coverage was strongest and where mechanical limits impose delays. The key insight was straightforward. If the turret's maximum traverse rate was fixed, then the limiting factor in any engagement was the time required to reposition it. A single aircraft approaching from a predictable direction could be tracked effectively. Multiple aircraft arriving from separated bearings created a sequencing problem the system was not designed to solve quickly. By the time the turret transitioned from one position to another, the geometry of the situation had already changed. Interception tactics evolved to take advantage of this interval deliberately. Coordinated approaches from multiple vectors became standard practice. Elements would arrive at carefully spaced moments, forcing operators to prioritize one direction while another fell within the response delay created by turret rotation. It was not improvisation. It was a measured application of timing against a known mechanical parameter. To the crews involved, this appeared not as an abstract tactical problem, but as a recurring operational pattern, a measurable delay between successive engagements, an observable response cycle within the mechanical system, and the recognition that this cycle could be anticipated externally. Debriefings and informal discussions returned to the same observation. The turret was functioning as designed, but the margin built into the governor assembly intended to ensure smooth tracking imposed constraints under these specific conditions. The official interpretation remained consistent. The turret met its specifications. Traverse speed fell within established tolerances. Engineering analysis supported the original design balance. What units were observing was attributed to the evolving nature of air operations rather than to an equipment deficiency. This assessment was technically accurate, but it did not address the mismatch between specification and experience. The adjustment that eventually altered this balance did not originate in a formal study. It began with maintenance personnel examining the mechanism directly and recognizing that a change in calibration might alter system behavior. The governor assembly itself was mechanically straightforward. Its purpose was singular to limit how rapidly control input translated into motion. Its components were accessible to technicians accustomed to tracing mechanical linkages in confined spaces. What followed was a decision to adjust the equipment outside the formal engineering revision process implemented during routine servicing rather than through official modification channels. The earliest documented instance within 8th Air Force units dates to late spring 1943. Accounts differ in detail, but the essential action was consistent. Maintenance crews accessed the turret's control system, located the governor assembly, and reduced, not removed, the spring tension acting on its friction plates. The intention was not to eliminate dampening, which would have introduced instability, but to recalibrate the balance point, accepting slightly less smooth motion, in exchange for faster response. Subsequent missions demonstrated a traverse rate roughly 30 to 35% faster than the original specification. The turret retained sufficient stability for accurate operation, but the time required to shift between bearings. The response interval those tactics had been structured to take advantage of was significantly reduced. What followed illustrates how practical knowledge can circulate when formal pathways are slower than operational demand. The adjustment moved through maintenance channels in an informal but technically specific way. A crew chief observing altered performance discussed with another unit. Operators compared response characteristics. The technical details circulated alongside observed performance differences. what had been adjusted, how it was done and how the system behaved afterward. Some crews adopted the change, others did not. There were no written directives and no centralized coordination. By midsummer 1943, several dozen aircraft across multiple groups were operating with governor settings that differed from their documented configuration. The information remained deliberately localized below the level of formal reporting. Operational effects were noted from multiple perspectives within American units. Aircraft incorporating the adjustment began generating reports that differed from earlier patterns. Engagement sequences that previously fell within the turret's response delay could now be addressed more quickly. approaches based on predictable timing encountered defensive reactions earlier than expected, requiring changes in geometry or premature disengagement from the opposing side. Pilots reported encountering defensive systems whose reaction times varied from established expectations. The aircraft appeared unchanged externally, yet their behavior differed in ways that could not be easily categorized. Because the modification left no visible signature, it was difficult to analyze systematically. This ambiguity helped preserve its effectiveness. An alteration that could not be identified externally was harder to counter through observation alone. The official discovery of the adjustment resulted not from combat events, but from routine technical inspection. Engineering teams conducting evaluations identified governor assemblies whose calibration did not match specification. The deviations were consistent and directional. All increased traverse speed. A formal review followed. The investigation highlighted a familiar institutional tension. Changes had been applied outside documented procedure. From an administrative standpoint, this created questions of compliance, liability, and precedent. Yet, engineering evaluation of the modified assemblies produced measurable findings. Increased traverse speed matched field observations. Accuracy degradation was present but acceptable. Mechanical analysis indicated no significant increase in system stress or failure risk. The evaluation concluded that the field adjustment addressed a legitimate operational mismatch. The original specification had been developed against assumptions about engagement patterns that experience had not fully supported. The rec-calibrated governor shifted the balance toward response speed in a way that better aligned with observed conditions. Administrative responses reflected this mixed picture. Procedural violations were acknowledged, but the institutional focus moved quickly from enforcement to integration. Once the technical validity was confirmed, formal adoption proceeded through wartime engineering channels. Technical orders were revised. Production drawings were updated. By early 1944, newly manufactured aircraft incorporated governor settings aligned with the empirically derived configuration. Retrofit kits followed for aircraft already in service. Official documentation attributed the change to engineering review and field evaluation. The informal pathway through which the insight first emerged was compressed into standard technical language. This was not unusual. Large organizations often absorb decentralized solutions by translating them into formal specification once they are validated. The broader significance lies less in the specific component than in the process it illustrates. The original design had been produced by capable engineers working from reasonable projections. The opposing system adapted its methods and response. Operational personnel then adjusted the equipment to restore alignment between design intent and actual conditions. Institutional mechanisms eventually captured, validated, and standardized that adjustment. This sequence, assumption, observation, [clears throat] informal correction represents a recurring pattern in wartime engineering environments. The knowledge most immediately tied to system performance is generated at the operational level. Formal processes follow afterward, translating localized insight into consistent practice across the organization. The B17 ball turret is now primarily encountered in museums. The aircraft themselves no longer fly. The technical orders governing their maintenance exist as archival material consulted mainly by historians and engineers studying earlier design approaches. Yet the principle reinforced during this episode did not remain confined to a single aircraft. Later defensive systems across air, sea, and ground incorporated response speed as a primary parameter from the outset. Designers increasingly treated reaction time not as a secondary refinement, but as a defining characteristic to be evaluated alongside accuracy, durability, and range. The episode demonstrates how complex organizations adapt under pressure. Systems are conceived centrally, but they are refined through continuous interaction with the environments in which they operate. When those environments shift, successful institutions are those able to absorb feedback, whether it originates in formal analysis or in incremental adjustment, and translate it into durable specification. What remained was not a story recorded in detail, but a revised standard. And standards once integrated tend to outlast the circumstances that first required",
+  "fullTextVi": "Các hệ thống quân sự được thiết kế dựa trên các giả định, không phải do thiếu trung thực và không phải do kém cỏi, mà là bởi vì người viết thông số kỹ thuật phải xác định trước các điều kiện và giả định bằng bản chất của họ. Mô tả thế giới như nó được mong đợi hơn là thế giới như nó thực sự hóa ra là như vậy. Vào mùa hè năm 1943, ở đâu đó trên các vùng công nghiệp của Đức, có một sự khác biệt nổi lên giữa hai phiên bản của thế giới. Một bên là hệ thống phòng thủ được thiết kế cẩn thận, được xây dựng với dung sai chính xác, đã được thử nghiệm kỹ lưỡng, được ghi chép trong các sổ tay hướng dẫn chính thức và được những người chịu trách nhiệm hoàn toàn tin cậy để vận hành nó. Mặt khác là các điều kiện hoạt động gặp phải ở độ cao. Một đối thủ đã nghiên cứu hệ thống một cách cẩn thận và học hỏi một cách bài bản trải nghiệm chính xác giới hạn của nó ở đâu. Video này được trình bày chỉ nhằm mục đích lịch sử và giáo dục. Câu chuyện tiếp theo không xuất hiện nổi bật trong bản tóm tắt chính thức của chiến tranh trên không ở châu Âu. Đây là loại tình tiết được lưu giữ trong tài liệu xử lý sau đó, thư từ kỹ thuật được nộp theo số tham chiếu hành chính và các cuộc thảo luận kỹ thuật hiếm khi vượt ra ngoài các đơn vị liên quan. Tuy nhiên, hậu quả của những gì đã xảy ra ngày nay vẫn còn hiện rõ qua cách các hệ thống phòng thủ được thiết kế và theo nguyên tắc hiện được coi là hiển nhiên. Tốc độ phản hồi không phải là yếu tố cần xem xét thứ yếu. Nó là cơ bản. Để hiểu được vấn đề, việc kiểm tra máy ở trung tâm của it. sẽ giúp ích rất nhiều. Tháp pháo hình cầu Sperry là một trong những bộ phận có kỹ thuật phức tạp hơn được sản xuất cho nỗ lực chiến tranh của Mỹ. Được thiết kế để chiếm vị trí lộ thiên nhất trên Pháo đài bay B17. Được treo bên dưới thân máy bay trong một quả cầu có khung nhôm và tấm mica cong, nó cung cấp cho một người điều khiển duy nhất phạm vi bao phủ bán cầu dưới xung quanh máy bay. 250 khẩu súng máy cỡ nòng kéo dài về phía trước xuyên qua mặt tháp pháo. Toàn bộ tổ hợp có thể xoay toàn bộ 360° và nâng lên qua một vòng cung thẳng đứng rộng. Trên giấy tờ, nó giải quyết một trong những điểm yếu cơ bản của đội hình máy bay ném bom lớn, cách tiếp cận từ bên dưới. Những người vận hành ngồi với đầu gối hướng lên trên, đặt gần vị trí súng điện toán, đặt tay lên các chốt điều khiển để điều khiển tháp pháo thông qua một hệ thống điều khiển bằng điện. Đẩy tay cầm về phía trước và nâng súng lên. Kéo lại và họ chán nản. xoay sang trái hoặc phải và toàn bộ quả cầu theo sau. Hệ thống hoạt động trơn tru, nhất quán và được thiết kế theo tiêu chuẩn xác định mà các nhà quy hoạch đã có được xác định thể hiện sự cân bằng tối ưu giữa tốc độ và khả năng kiểm soát. Tiêu chuẩn đó là tốc độ di chuyển ngang khoảng 30° mỗi giây. Với tốc độ đó, người điều khiển được đào tạo có thể theo dõi một máy bay chiến đấu đang thực hiện cách tiếp cận thông thường, tính toán độ lệch cần thiết và phản hồi theo từng đợt được kiểm soát. Các kỹ sư đã đánh giá cẩn thận các yếu tố vật lý, khối lượng tháp pháo, mô-men xoắn động cơ sẵn có, các ứng suất cơ học liên quan với chuyển động nhanh chóng và cố tình kết hợp một bộ điều tốc vào hệ thống điều khiển. Thiết bị này là sự sắp xếp đã được hiệu chỉnh của các tấm ma sát lò xo, đầu vào điều khiển được điều tiết để ngăn chặn chuyển động đột ngột có thể tạo ra dao động và làm giảm độ chính xác. Logic là hợp lý trong môi trường đã được mô hình hóa. Khó khăn là môi trường không ở trạng thái tĩnh. Hệ thống phòng không của Đức mà phi hành đoàn máy bay ném bom Mỹ gặp phải trên bầu trời Đức năm 1943 đã phát triển thông qua kinh nghiệm hoạt động mở rộng. Nhiều năm hoạt động không quân kéo dài chống lại nhiều đối thủ đã tạo ra các phương pháp đánh chặn tinh tế dựa trên về quan sát, thời gian và phối hợp định vị. Các nhà phân tích đã xem xét cách bố trí phòng thủ của máy bay ném bom một cách cẩn thận, xác định vị trí có phạm vi bao phủ mạnh nhất và nơi các giới hạn cơ học áp đặt sự chậm trễ. Cái nhìn sâu sắc quan trọng là đơn giản. Nếu tốc độ di chuyển ngang tối đa của tháp pháo được cố định thì hệ số giới hạn trong bất kỳ nào sự tham gia là thời gian cần thiết để định vị lại nó. Một chiếc máy bay tiếp cận từ một hướng có thể đoán trước được có thể được theo dõi một cách hiệu quả. Nhiều máy bay đến từ các vòng bi riêng biệt đã tạo ra vấn đề về trình tự mà hệ thống không có được thiết kế để giải quyết nhanh chóng. Vào thời điểm tháp pháo chuyển từ vị trí này sang vị trí khác, hình dạng của tình thế đã thay đổi rồi. Chiến thuật đánh chặn đã phát triển để tận dụng khoảng thời gian này một cách có chủ ý. Các cách tiếp cận phối hợp từ nhiều vectơ đã trở thành thông lệ tiêu chuẩn. Các phần tử sẽ đến vào những thời điểm có khoảng cách cẩn thận, buộc người vận hành phải ưu tiên một hướng trong khi một cái khác nằm trong độ trễ phản hồi do quay tháp pháo tạo ra. Đó không phải là sự ngẫu hứng. Đó là một ứng dụng đo thời gian dựa trên một thông số cơ học đã biết. Đối với các đội liên quan, đây không phải là một vấn đề chiến thuật trừu tượng mà là mô hình hoạt động định kỳ, độ trễ có thể đo lường được giữa các lần tham gia liên tiếp, chu kỳ phản hồi có thể quan sát được trong hệ thống cơ khí và nhận thức rằng chu trình này có thể được dự đoán từ bên ngoài. Các cuộc phỏng vấn và thảo luận không chính thức đều quay trở lại cùng một quan sát. Tháp pháo hoạt động như thiết kế, nhưng phần rìa được lắp vào cụm điều tốc nhằm đảm bảo việc theo dõi suôn sẻ các ràng buộc được áp đặt trong các điều kiện cụ thể này. Cách giải thích chính thức vẫn nhất quán. Tháp pháo đáp ứng các thông số kỹ thuật của nó. Tốc độ di chuyển giảm trong phạm vi dung sai đã thiết lập. Phân tích kỹ thuật hỗ trợ sự cân bằng thiết kế ban đầu. Những gì các đơn vị đang quan sát được cho là do tính chất ngày càng phát triển của các hoạt động trên không. hơn là thiếu thiết bị. Đánh giá này chính xác về mặt kỹ thuật, nhưng nó không giải quyết được sự không phù hợp giữa thông số kỹ thuật và kinh nghiệm. Sự điều chỉnh cuối cùng làm thay đổi sự cân bằng này không bắt nguồn từ một nghiên cứu chính thức nào. Nó bắt đầu bằng việc nhân viên bảo trì trực tiếp kiểm tra cơ chế và nhận ra rằng có sự thay đổi trong quá trình hiệu chuẩn có thể làm thay đổi hành vi của hệ thống. Bản thân hội đồng thống đốc đã đơn giản về mặt máy móc. Mục đích của nó là duy nhất để hạn chế tốc độ chuyển đổi đầu vào điều khiển thành chuyển động. Các thành phần của nó có thể tiếp cận được đối với các kỹ thuật viên đã quen với việc truy tìm các mối liên kết cơ học trong không gian hạn chế. Tiếp theo là quyết định điều chỉnh thiết bị ngoài bản sửa đổi kỹ thuật chính thức quá trình được thực hiện trong quá trình bảo trì định kỳ thay vì thông qua các kênh sửa đổi chính thức. Trường hợp được ghi chép sớm nhất trong các đơn vị Không quân số 8 là vào cuối mùa xuân năm 1943. Các tài khoản có chi tiết khác nhau nhưng hành động thiết yếu thì nhất quán. Đội bảo trì đã truy cập vào hệ thống điều khiển của tháp pháo, định vị bộ phận điều tốc và giảm bớt, không phải được loại bỏ, lực căng của lò xo tác dụng lên các tấm ma sát của nó. Mục đích không phải là loại bỏ sự giảm chấn, vốn có thể gây ra sự mất ổn định, mà là để hiệu chỉnh lại điểm cân bằng, chấp nhận chuyển động kém mượt mà hơn một chút, để đổi lấy phản hồi nhanh hơn. Các nhiệm vụ tiếp theo cho thấy tốc độ di chuyển nhanh hơn khoảng 30 đến 35% so với nhiệm vụ ban đầu đặc điểm kỹ thuật. Tháp pháo vẫn giữ được độ ổn định đủ để vận hành chính xác, nhưng cần có thời gian để dịch chuyển giữa các vòng bi. Khoảng thời gian phản hồi mà các chiến thuật đó đã được cấu trúc để tận dụng là giảm đi. Những gì tiếp theo minh họa cách kiến ​​thức thực tế có thể được lưu chuyển khi các lộ trình chính thức chậm hơn nhu cầu hoạt động. Việc điều chỉnh được chuyển qua các kênh bảo trì theo cách không chính thức nhưng cụ thể về mặt kỹ thuật. Một thuyền trưởng quan sát hiệu suất thay đổi đã thảo luận với một đơn vị khác. Các nhà khai thác so sánh các đặc điểm phản ứng. Các chi tiết kỹ thuật được lưu hành cùng với sự khác biệt về hiệu suất được quan sát. những gì đã được điều chỉnh, nó được thực hiện như thế nào và hệ thống hoạt động như thế nào sau đó. Một số phi hành đoàn đã áp dụng sự thay đổi, những người khác thì không. Không có chỉ thị bằng văn bản và không có sự phối hợp tập trung. Đến giữa mùa hè năm 1943, hàng chục máy bay thuộc nhiều nhóm khác nhau đang hoạt động với cài đặt bộ điều tốc khác với cấu hình tài liệu của họ. Thông tin vẫn được cố tình bản địa hóa dưới mức báo cáo chính thức. Hiệu quả hoạt động đã được ghi nhận từ nhiều góc độ trong các đơn vị Mỹ. Máy bay kết hợp điều chỉnh bắt đầu tạo ra các báo cáo khác với các mẫu trước đó. Các chuỗi giao tranh trước đây nằm trong độ trễ phản hồi của tháp pháo giờ đây có thể được giải quyết nhanh hơn. các phương pháp tiếp cận dựa trên thời gian có thể dự đoán trước đã gặp phải phản ứng phòng thủ sớm hơn dự kiến, đòi hỏi phải thay đổi hình học hoặc sự tách rời sớm khỏi phía đối diện. Các phi công báo cáo đã gặp phải các hệ thống phòng thủ có thời gian phản ứng khác với mong đợi đã được thiết lập. Những chiếc máy bay có vẻ ngoài không thay đổi, nhưng cách hoạt động của chúng lại khác nhau đến mức không thể có thể dễ dàng phân loại. Bởi vì việc sửa đổi không để lại chữ ký rõ ràng nên rất khó phân tích một cách có hệ thống. Sự mơ hồ này đã giúp duy trì tính hiệu quả của nó. Một sự thay đổi không thể xác định được từ bên ngoài sẽ khó khắc phục hơn thông qua quan sát một mình. Việc phát hiện chính thức về sự điều chỉnh không phải do các sự kiện chiến đấu mà do thói quen kiểm tra kỹ thuật. Các nhóm kỹ thuật tiến hành đánh giá đã xác định các bộ điều tốc có hiệu chuẩn không phù hợp với thông số kỹ thuật. Những sai lệch là nhất quán và có định hướng. Tất cả đều tăng tốc độ di chuyển. Sau đó là một cuộc xem xét chính thức. Cuộc điều tra nêu bật một căng thẳng thể chế quen thuộc. Những thay đổi đã được áp dụng bên ngoài thủ tục được ghi chép. Từ quan điểm hành chính, điều này tạo ra các câu hỏi về sự tuân thủ, trách nhiệm pháp lý và tiền lệ. Tuy nhiên, đánh giá kỹ thuật của các tổ hợp đã sửa đổi đã tạo ra những kết quả có thể đo lường được. Tăng tốc độ di chuyển ngang phù hợp với quan sát hiện trường. Sự suy giảm độ chính xác đã xảy ra nhưng có thể chấp nhận được. Phân tích cơ học cho thấy không có sự gia tăng đáng kể nào về ứng suất hệ thống hoặc nguy cơ hỏng hóc. Đánh giá kết luận rằng việc điều chỉnh hiện trường đã giải quyết được sự không phù hợp trong hoạt động hợp pháp. Đặc tả ban đầu đã được phát triển dựa trên các giả định về mô hình tương tác mà trải nghiệm đã có không được hỗ trợ đầy đủ. Bộ điều tốc được hiệu chỉnh lại đã chuyển sự cân bằng sang tốc độ phản hồi theo cách tốt hơn phù hợp với điều kiện quan sát được. Phản hồi hành chính phản ánh bức tranh hỗn hợp này. Các vi phạm về thủ tục đã được ghi nhận nhưng trọng tâm thể chế đã nhanh chóng chuyển từ thực thi sang hội nhập. Sau khi giá trị kỹ thuật đã được xác nhận, việc áp dụng chính thức được tiến hành thông qua các kênh kỹ thuật thời chiến. Lệnh kỹ thuật đã được sửa đổi. Bản vẽ sản xuất đã được cập nhật. Đến đầu năm 1944, những chiếc máy bay mới được sản xuất đã tích hợp các cài đặt bộ điều chỉnh phù hợp với có nguồn gốc từ thực nghiệm. cấu hình. Bộ dụng cụ trang bị thêm tiếp theo dành cho các máy bay đã được đưa vào sử dụng. Tài liệu chính thức cho rằng sự thay đổi là do đánh giá kỹ thuật và đánh giá hiện trường. Con đường không chính thức mà qua đó cái nhìn sâu sắc xuất hiện lần đầu tiên đã được nén thành các kỹ thuật tiêu chuẩn ngôn ngữ. Điều này không có gì bất thường. Các tổ chức lớn thường tiếp thu các giải pháp phi tập trung bằng cách chuyển chúng thành thông số kỹ thuật chính thức khi chúng được xác thực. Ý nghĩa rộng hơn nằm ở thành phần cụ thể ít hơn ở quá trình nó minh họa. Thiết kế ban đầu được tạo ra bởi các kỹ sư có năng lực làm việc dựa trên những dự đoán hợp lý. Hệ thống đối lập đã điều chỉnh các phương pháp và phản ứng của nó. Sau đó, nhân viên vận hành đã điều chỉnh thiết bị để khôi phục sự liên kết giữa mục đích thiết kế và thực tế. điều kiện. Các cơ chế thể chế cuối cùng đã nắm bắt, xác nhận và tiêu chuẩn hóa sự điều chỉnh đó. Trình tự, giả định, quan sát, [làm hắng giọng] sự điều chỉnh không chính thức này thể hiện một mô hình lặp đi lặp lại trong thời chiến môi trường kỹ thuật. Kiến thức gắn liền nhất với hiệu suất hệ thống được tạo ra ở cấp độ vận hành. Sau đó là các quy trình chính thức, biến cái nhìn sâu sắc đã được bản địa hóa thành thực tiễn nhất quán trong toàn tổ chức. Tháp pháo bi B17 hiện nay chủ yếu được tìm thấy trong các viện bảo tàng. Bản thân máy bay không còn bay nữa. Các yêu cầu kỹ thuật quản lý việc bảo trì chúng tồn tại dưới dạng tài liệu lưu trữ được các nhà sử học tư vấn chủ yếu và các kỹ sư nghiên cứu các phương pháp thiết kế trước đó. Tuy nhiên, nguyên tắc được củng cố trong tập phim này không chỉ giới hạn ở một phi cơ. Các hệ thống phòng thủ sau này trên không, trên biển và mặt đất kết hợp tốc độ phản ứng làm yếu tố chính tham số ngay từ đầu. Các nhà thiết kế ngày càng coi thời gian phản ứng không phải là sự sàng lọc thứ cấp mà là một yếu tố xác định đặc tính được đánh giá cùng với độ chính xác, độ bền và phạm vi. Tập phim cho thấy các tổ chức phức tạp thích ứng như thế nào dưới áp lực. Các hệ thống được hình thành tập trung nhưng chúng được cải tiến thông qua tương tác liên tục với môi trường trong đó họ hoạt động. Khi những môi trường đó thay đổi, các tổ chức thành công là những tổ chức có khả năng tiếp thu phản hồi, cho dù đó là bắt nguồn từ phân tích chính thức hoặc điều chỉnh tăng dần và chuyển nó thành đặc điểm kỹ thuật lâu dài. Những gì còn lại không phải là một câu chuyện được ghi lại chi tiết mà là một tiêu chuẩn đã được sửa đổi. Và các tiêu chuẩn một khi được tích hợp có xu hướng tồn tại lâu hơn trong những hoàn cảnh đầu tiên yêu cầu",
+  "segments": [
+    {
+      "text": "Military systems are designed around assumptions, not through dishonesty and not through incompetence, but",
+      "viText": "Các hệ thống quân sự được thiết kế dựa trên các giả định, không phải do thiếu trung thực và không phải do kém cỏi, mà là",
+      "start": 0,
+      "duration": 8.07
+    },
+    {
+      "text": "because the people who write specifications must define conditions in advance and assumptions by",
+      "viText": "bởi vì người viết thông số kỹ thuật phải xác định trước các điều kiện và giả định bằng",
+      "start": 8.07,
+      "duration": 7.31
+    },
+    {
+      "text": "their nature.",
+      "viText": "bản chất của họ.",
+      "start": 15.38,
+      "duration": 2
+    },
+    {
+      "text": "Describe the world as it is expected to be rather than the world as",
+      "viText": "Mô tả thế giới như nó được mong đợi hơn là thế giới như",
+      "start": 17.38,
+      "duration": 5.1
+    },
+    {
+      "text": "it actually turns out to be.",
+      "viText": "nó thực sự hóa ra là như vậy.",
+      "start": 22.48,
+      "duration": 2.13
+    },
+    {
+      "text": "In the summer of 1943, somewhere over the industrial regions of Germany, a discrepancy",
+      "viText": "Vào mùa hè năm 1943, ở đâu đó trên các vùng công nghiệp của Đức, có một sự khác biệt",
+      "start": 24.61,
+      "duration": 6.55
+    },
+    {
+      "text": "emerged between those two versions of the world.",
+      "viText": "nổi lên giữa hai phiên bản của thế giới.",
+      "start": 31.16,
+      "duration": 3.66
+    },
+    {
+      "text": "On one side was a carefully designed defensive system built to precise tolerances, tested",
+      "viText": "Một bên là hệ thống phòng thủ được thiết kế cẩn thận, được xây dựng với dung sai chính xác, đã được thử nghiệm",
+      "start": 34.82,
+      "duration": 6.78
+    },
+    {
+      "text": "thoroughly, documented in official manuals, and issued with complete confidence to the men responsible",
+      "viText": "kỹ lưỡng, được ghi chép trong các sổ tay hướng dẫn chính thức và được những người chịu trách nhiệm hoàn toàn tin cậy",
+      "start": 41.6,
+      "duration": 7.77
+    },
+    {
+      "text": "for operating it.",
+      "viText": "để vận hành nó.",
+      "start": 49.37,
+      "duration": 2
+    },
+    {
+      "text": "On the other side were the operational conditions encountered at altitude.",
+      "viText": "Mặt khác là các điều kiện hoạt động gặp phải ở độ cao.",
+      "start": 51.37,
+      "duration": 5.64
+    },
+    {
+      "text": "An opponent that had studied the system just as carefully and learned through methodical",
+      "viText": "Một đối thủ đã nghiên cứu hệ thống một cách cẩn thận và học hỏi một cách bài bản",
+      "start": 57.01,
+      "duration": 6.7
+    },
+    {
+      "text": "experience exactly where its limits were.",
+      "viText": "trải nghiệm chính xác giới hạn của nó ở đâu.",
+      "start": 63.71,
+      "duration": 3.12
+    },
+    {
+      "text": "This video is presented for historical and educational purposes only.",
+      "viText": "Video này được trình bày chỉ nhằm mục đích lịch sử và giáo dục.",
+      "start": 66.83,
+      "duration": 5.26
+    },
+    {
+      "text": "The story of what followed does not appear prominently in official summaries of the",
+      "viText": "Câu chuyện tiếp theo không xuất hiện nổi bật trong bản tóm tắt chính thức của",
+      "start": 72.09,
+      "duration": 6.32
+    },
+    {
+      "text": "air war over Europe.",
+      "viText": "chiến tranh trên không ở châu Âu.",
+      "start": 78.41,
+      "duration": 2
+    },
+    {
+      "text": "It is the kind of episode preserved in afteraction documentation, engineering correspondence filed under",
+      "viText": "Đây là loại tình tiết được lưu giữ trong tài liệu xử lý sau đó, thư từ kỹ thuật được nộp theo",
+      "start": 80.41,
+      "duration": 7.92
+    },
+    {
+      "text": "administrative reference numbers and technical discussions that rarely moved beyond the units involved.",
+      "viText": "số tham chiếu hành chính và các cuộc thảo luận kỹ thuật hiếm khi vượt ra ngoài các đơn vị liên quan.",
+      "start": 88.33,
+      "duration": 7.85
+    },
+    {
+      "text": "Yet the consequences of what occurred are still visible today in how defensive systems",
+      "viText": "Tuy nhiên, hậu quả của những gì đã xảy ra ngày nay vẫn còn hiện rõ qua cách các hệ thống phòng thủ",
+      "start": 96.18,
+      "duration": 6.55
+    },
+    {
+      "text": "are designed and in a principle now treated as self-evident.",
+      "viText": "được thiết kế và theo nguyên tắc hiện được coi là hiển nhiên.",
+      "start": 102.73,
+      "duration": 4.57
+    },
+    {
+      "text": "Response speed is not a secondary consideration.",
+      "viText": "Tốc độ phản hồi không phải là yếu tố cần xem xét thứ yếu.",
+      "start": 107.3,
+      "duration": 3.66
+    },
+    {
+      "text": "It is fundamental.",
+      "viText": "Nó là cơ bản.",
+      "start": 110.96,
+      "duration": 2
+    },
+    {
+      "text": "To understand the problem, it helps to examine the machine at the center of",
+      "viText": "Để hiểu được vấn đề, việc kiểm tra máy ở trung tâm của",
+      "start": 112.96,
+      "duration": 5.71
+    },
+    {
+      "text": "it.",
+      "viText": "it.",
+      "start": 118.67,
+      "duration": 2
+    },
+    {
+      "text": "The Sperry ball turret was one of the more technically sophisticated components produced for",
+      "viText": "sẽ giúp ích rất nhiều. Tháp pháo hình cầu Sperry là một trong những bộ phận có kỹ thuật phức tạp hơn được sản xuất cho",
+      "start": 120.67,
+      "duration": 7.01
+    },
+    {
+      "text": "the American war effort.",
+      "viText": "nỗ lực chiến tranh của Mỹ.",
+      "start": 127.68,
+      "duration": 2
+    },
+    {
+      "text": "Designed to occupy the most exposed position on the B17 Flying Fortress.",
+      "viText": "Được thiết kế để chiếm vị trí lộ thiên nhất trên Pháo đài bay B17.",
+      "start": 129.68,
+      "duration": 5.48
+    },
+    {
+      "text": "Suspended beneath the fuselage in a sphere of aluminum framing and curved plexiglass, it",
+      "viText": "Được treo bên dưới thân máy bay trong một quả cầu có khung nhôm và tấm mica cong, nó",
+      "start": 135.16,
+      "duration": 6.7
+    },
+    {
+      "text": "provided a single operator with coverage of the lower hemisphere surrounding the aircraft.",
+      "viText": "cung cấp cho một người điều khiển duy nhất phạm vi bao phủ bán cầu dưới xung quanh máy bay.",
+      "start": 141.86,
+      "duration": 6.86
+    },
+    {
+      "text": "250 caliber machine guns extended forward through the turret's face.",
+      "viText": "250 khẩu súng máy cỡ nòng kéo dài về phía trước xuyên qua mặt tháp pháo.",
+      "start": 148.72,
+      "duration": 5.18
+    },
+    {
+      "text": "The entire assembly could rotate through a full 360° of traverse and elevate through",
+      "viText": "Toàn bộ tổ hợp có thể xoay toàn bộ 360° và nâng lên qua",
+      "start": 153.9,
+      "duration": 6.4
+    },
+    {
+      "text": "a wide vertical arc.",
+      "viText": "một vòng cung thẳng đứng rộng.",
+      "start": 160.3,
+      "duration": 2
+    },
+    {
+      "text": "On paper, it addressed one of the fundamental vulnerabilities of large bomber formations, approach",
+      "viText": "Trên giấy tờ, nó giải quyết một trong những điểm yếu cơ bản của đội hình máy bay ném bom lớn, cách tiếp cận",
+      "start": 162.3,
+      "duration": 7.47
+    },
+    {
+      "text": "from below.",
+      "viText": "từ bên dưới.",
+      "start": 169.77,
+      "duration": 2
+    },
+    {
+      "text": "The operators sat with knees drawn upward, positioned close to a computing gun site,",
+      "viText": "Những người vận hành ngồi với đầu gối hướng lên trên, đặt gần vị trí súng điện toán,",
+      "start": 171.77,
+      "duration": 6.4
+    },
+    {
+      "text": "hands on control grips that directed the turret through an electrically driven system.",
+      "viText": "đặt tay lên các chốt điều khiển để điều khiển tháp pháo thông qua một hệ thống điều khiển bằng điện.",
+      "start": 178.17,
+      "duration": 6.55
+    },
+    {
+      "text": "Push the grip forward and the guns elevated.",
+      "viText": "Đẩy tay cầm về phía trước và nâng súng lên.",
+      "start": 184.72,
+      "duration": 3.35
+    },
+    {
+      "text": "Pull back and they depressed.",
+      "viText": "Kéo lại và họ chán nản.",
+      "start": 188.07,
+      "duration": 2.21
+    },
+    {
+      "text": "rotate left or right and the entire sphere followed.",
+      "viText": "xoay sang trái hoặc phải và toàn bộ quả cầu theo sau.",
+      "start": 190.28,
+      "duration": 3.96
+    },
+    {
+      "text": "The system was smooth, consistent, and engineered to a defined standard that planners had",
+      "viText": "Hệ thống hoạt động trơn tru, nhất quán và được thiết kế theo tiêu chuẩn xác định mà các nhà quy hoạch đã có",
+      "start": 194.24,
+      "duration": 6.78
+    },
+    {
+      "text": "determined represented the optimal balance between speed and control.",
+      "viText": "được xác định thể hiện sự cân bằng tối ưu giữa tốc độ và khả năng kiểm soát.",
+      "start": 201.02,
+      "duration": 5.26
+    },
+    {
+      "text": "That standard was a traverse rate of approximately 30° per second.",
+      "viText": "Tiêu chuẩn đó là tốc độ di chuyển ngang khoảng 30° mỗi giây.",
+      "start": 206.28,
+      "duration": 5.03
+    },
+    {
+      "text": "At that speed, a trained operator could track a fighter making a conventional approach,",
+      "viText": "Với tốc độ đó, người điều khiển được đào tạo có thể theo dõi một máy bay chiến đấu đang thực hiện cách tiếp cận thông thường,",
+      "start": 211.31,
+      "duration": 6.63
+    },
+    {
+      "text": "calculate the necessary deflection, and respond in controlled bursts.",
+      "viText": "tính toán độ lệch cần thiết và phản hồi theo từng đợt được kiểm soát.",
+      "start": 217.94,
+      "duration": 5.26
+    },
+    {
+      "text": "Engineers had evaluated the physics carefully, turret mass, available motor torque, mechanical stresses associated",
+      "viText": "Các kỹ sư đã đánh giá cẩn thận các yếu tố vật lý, khối lượng tháp pháo, mô-men xoắn động cơ sẵn có, các ứng suất cơ học liên quan",
+      "start": 223.2,
+      "duration": 8.68
+    },
+    {
+      "text": "with rapid movement, and deliberately incorporated a governor assembly into the control system.",
+      "viText": "với chuyển động nhanh chóng và cố tình kết hợp một bộ điều tốc vào hệ thống điều khiển.",
+      "start": 231.88,
+      "duration": 7.24
+    },
+    {
+      "text": "This device, a calibrated arrangement of spring-loaded friction plates, moderated control input to prevent",
+      "viText": "Thiết bị này là sự sắp xếp đã được hiệu chỉnh của các tấm ma sát lò xo, đầu vào điều khiển được điều tiết để ngăn chặn",
+      "start": 239.12,
+      "duration": 8.07
+    },
+    {
+      "text": "abrupt motion that could introduce oscillation and reduce accuracy.",
+      "viText": "chuyển động đột ngột có thể tạo ra dao động và làm giảm độ chính xác.",
+      "start": 247.19,
+      "duration": 5.1
+    },
+    {
+      "text": "The logic was sound within the environment that had been modeled.",
+      "viText": "Logic là hợp lý trong môi trường đã được mô hình hóa.",
+      "start": 252.29,
+      "duration": 4.95
+    },
+    {
+      "text": "The difficulty was that the environment did not remain static.",
+      "viText": "Khó khăn là môi trường không ở trạng thái tĩnh.",
+      "start": 257.24,
+      "duration": 4.72
+    },
+    {
+      "text": "The German air defense system that American bomber crews encountered over Germany in 1943",
+      "viText": "Hệ thống phòng không của Đức mà phi hành đoàn máy bay ném bom Mỹ gặp phải trên bầu trời Đức năm 1943",
+      "start": 261.96,
+      "duration": 6.78
+    },
+    {
+      "text": "had evolved through extended operational experience.",
+      "viText": "đã phát triển thông qua kinh nghiệm hoạt động mở rộng.",
+      "start": 268.74,
+      "duration": 3.96
+    },
+    {
+      "text": "Years of sustained air operations against multiple opponents had produced refined interception methods based",
+      "viText": "Nhiều năm hoạt động không quân kéo dài chống lại nhiều đối thủ đã tạo ra các phương pháp đánh chặn tinh tế dựa trên",
+      "start": 272.7,
+      "duration": 8.23
+    },
+    {
+      "text": "on observation, timing, and coordinated positioning.",
+      "viText": "về quan sát, thời gian và phối hợp định vị.",
+      "start": 280.93,
+      "duration": 3.96
+    },
+    {
+      "text": "Analysts had examined the bombers's defensive layout carefully, identifying where its coverage was strongest",
+      "viText": "Các nhà phân tích đã xem xét cách bố trí phòng thủ của máy bay ném bom một cách cẩn thận, xác định vị trí có phạm vi bao phủ mạnh nhất",
+      "start": 284.89,
+      "duration": 8.23
+    },
+    {
+      "text": "and where mechanical limits impose delays.",
+      "viText": "và nơi các giới hạn cơ học áp đặt sự chậm trễ.",
+      "start": 293.12,
+      "duration": 3.2
+    },
+    {
+      "text": "The key insight was straightforward.",
+      "viText": "Cái nhìn sâu sắc quan trọng là đơn giản.",
+      "start": 296.32,
+      "duration": 2.74
+    },
+    {
+      "text": "If the turret's maximum traverse rate was fixed, then the limiting factor in any",
+      "viText": "Nếu tốc độ di chuyển ngang tối đa của tháp pháo được cố định thì hệ số giới hạn trong bất kỳ",
+      "start": 299.06,
+      "duration": 6.09
+    },
+    {
+      "text": "engagement was the time required to reposition it.",
+      "viText": "nào sự tham gia là thời gian cần thiết để định vị lại nó.",
+      "start": 305.15,
+      "duration": 3.81
+    },
+    {
+      "text": "A single aircraft approaching from a predictable direction could be tracked effectively.",
+      "viText": "Một chiếc máy bay tiếp cận từ một hướng có thể đoán trước được có thể được theo dõi một cách hiệu quả.",
+      "start": 308.96,
+      "duration": 6.7
+    },
+    {
+      "text": "Multiple aircraft arriving from separated bearings created a sequencing problem the system was not",
+      "viText": "Nhiều máy bay đến từ các vòng bi riêng biệt đã tạo ra vấn đề về trình tự mà hệ thống không có",
+      "start": 315.66,
+      "duration": 7.47
+    },
+    {
+      "text": "designed to solve quickly.",
+      "viText": "được thiết kế để giải quyết nhanh chóng.",
+      "start": 323.13,
+      "duration": 2
+    },
+    {
+      "text": "By the time the turret transitioned from one position to another, the geometry of",
+      "viText": "Vào thời điểm tháp pháo chuyển từ vị trí này sang vị trí khác, hình dạng của",
+      "start": 325.13,
+      "duration": 6.17
+    },
+    {
+      "text": "the situation had already changed.",
+      "viText": "tình thế đã thay đổi rồi.",
+      "start": 331.3,
+      "duration": 2.59
+    },
+    {
+      "text": "Interception tactics evolved to take advantage of this interval deliberately.",
+      "viText": "Chiến thuật đánh chặn đã phát triển để tận dụng khoảng thời gian này một cách có chủ ý.",
+      "start": 333.89,
+      "duration": 5.87
+    },
+    {
+      "text": "Coordinated approaches from multiple vectors became standard practice.",
+      "viText": "Các cách tiếp cận phối hợp từ nhiều vectơ đã trở thành thông lệ tiêu chuẩn.",
+      "start": 339.76,
+      "duration": 5.33
+    },
+    {
+      "text": "Elements would arrive at carefully spaced moments, forcing operators to prioritize one direction while",
+      "viText": "Các phần tử sẽ đến vào những thời điểm có khoảng cách cẩn thận, buộc người vận hành phải ưu tiên một hướng trong khi",
+      "start": 345.09,
+      "duration": 7.77
+    },
+    {
+      "text": "another fell within the response delay created by turret rotation.",
+      "viText": "một cái khác nằm trong độ trễ phản hồi do quay tháp pháo tạo ra.",
+      "start": 352.86,
+      "duration": 5.03
+    },
+    {
+      "text": "It was not improvisation.",
+      "viText": "Đó không phải là sự ngẫu hứng.",
+      "start": 357.89,
+      "duration": 2
+    },
+    {
+      "text": "It was a measured application of timing against a known mechanical parameter.",
+      "viText": "Đó là một ứng dụng đo thời gian dựa trên một thông số cơ học đã biết.",
+      "start": 359.89,
+      "duration": 5.87
+    },
+    {
+      "text": "To the crews involved, this appeared not as an abstract tactical problem, but as",
+      "viText": "Đối với các đội liên quan, đây không phải là một vấn đề chiến thuật trừu tượng mà là",
+      "start": 365.76,
+      "duration": 6.09
+    },
+    {
+      "text": "a recurring operational pattern, a measurable delay between successive engagements, an observable response cycle",
+      "viText": "mô hình hoạt động định kỳ, độ trễ có thể đo lường được giữa các lần tham gia liên tiếp, chu kỳ phản hồi có thể quan sát được",
+      "start": 371.85,
+      "duration": 8.53
+    },
+    {
+      "text": "within the mechanical system, and the recognition that this cycle could be anticipated externally.",
+      "viText": "trong hệ thống cơ khí và nhận thức rằng chu trình này có thể được dự đoán từ bên ngoài.",
+      "start": 380.38,
+      "duration": 7.47
+    },
+    {
+      "text": "Debriefings and informal discussions returned to the same observation.",
+      "viText": "Các cuộc phỏng vấn và thảo luận không chính thức đều quay trở lại cùng một quan sát.",
+      "start": 387.85,
+      "duration": 5.33
+    },
+    {
+      "text": "The turret was functioning as designed, but the margin built into the governor assembly",
+      "viText": "Tháp pháo hoạt động như thiết kế, nhưng phần rìa được lắp vào cụm điều tốc",
+      "start": 393.18,
+      "duration": 6.63
+    },
+    {
+      "text": "intended to ensure smooth tracking imposed constraints under these specific conditions.",
+      "viText": "nhằm đảm bảo việc theo dõi suôn sẻ các ràng buộc được áp đặt trong các điều kiện cụ thể này.",
+      "start": 399.81,
+      "duration": 6.63
+    },
+    {
+      "text": "The official interpretation remained consistent.",
+      "viText": "Cách giải thích chính thức vẫn nhất quán.",
+      "start": 406.44,
+      "duration": 3.66
+    },
+    {
+      "text": "The turret met its specifications.",
+      "viText": "Tháp pháo đáp ứng các thông số kỹ thuật của nó.",
+      "start": 410.1,
+      "duration": 2.59
+    },
+    {
+      "text": "Traverse speed fell within established tolerances.",
+      "viText": "Tốc độ di chuyển giảm trong phạm vi dung sai đã thiết lập.",
+      "start": 412.69,
+      "duration": 3.81
+    },
+    {
+      "text": "Engineering analysis supported the original design balance.",
+      "viText": "Phân tích kỹ thuật hỗ trợ sự cân bằng thiết kế ban đầu.",
+      "start": 416.5,
+      "duration": 4.49
+    },
+    {
+      "text": "What units were observing was attributed to the evolving nature of air operations rather",
+      "viText": "Những gì các đơn vị đang quan sát được cho là do tính chất ngày càng phát triển của các hoạt động trên không.",
+      "start": 420.99,
+      "duration": 6.7
+    },
+    {
+      "text": "than to an equipment deficiency.",
+      "viText": "hơn là thiếu thiết bị.",
+      "start": 427.69,
+      "duration": 2.44
+    },
+    {
+      "text": "This assessment was technically accurate, but it did not address the mismatch between specification",
+      "viText": "Đánh giá này chính xác về mặt kỹ thuật, nhưng nó không giải quyết được sự không phù hợp giữa thông số kỹ thuật",
+      "start": 430.13,
+      "duration": 7.54
+    },
+    {
+      "text": "and experience.",
+      "viText": "và kinh nghiệm.",
+      "start": 437.67,
+      "duration": 2
+    },
+    {
+      "text": "The adjustment that eventually altered this balance did not originate in a formal study.",
+      "viText": "Sự điều chỉnh cuối cùng làm thay đổi sự cân bằng này không bắt nguồn từ một nghiên cứu chính thức nào.",
+      "start": 439.67,
+      "duration": 6.7
+    },
+    {
+      "text": "It began with maintenance personnel examining the mechanism directly and recognizing that a change",
+      "viText": "Nó bắt đầu bằng việc nhân viên bảo trì trực tiếp kiểm tra cơ chế và nhận ra rằng có sự thay đổi",
+      "start": 446.37,
+      "duration": 7.47
+    },
+    {
+      "text": "in calibration might alter system behavior.",
+      "viText": "trong quá trình hiệu chuẩn có thể làm thay đổi hành vi của hệ thống.",
+      "start": 453.84,
+      "duration": 3.28
+    },
+    {
+      "text": "The governor assembly itself was mechanically straightforward.",
+      "viText": "Bản thân hội đồng thống đốc đã đơn giản về mặt máy móc.",
+      "start": 457.12,
+      "duration": 4.72
+    },
+    {
+      "text": "Its purpose was singular to limit how rapidly control input translated into motion.",
+      "viText": "Mục đích của nó là duy nhất để hạn chế tốc độ chuyển đổi đầu vào điều khiển thành chuyển động.",
+      "start": 461.84,
+      "duration": 6.32
+    },
+    {
+      "text": "Its components were accessible to technicians accustomed to tracing mechanical linkages in confined spaces.",
+      "viText": "Các thành phần của nó có thể tiếp cận được đối với các kỹ thuật viên đã quen với việc truy tìm các mối liên kết cơ học trong không gian hạn chế.",
+      "start": 468.16,
+      "duration": 8.15
+    },
+    {
+      "text": "What followed was a decision to adjust the equipment outside the formal engineering revision",
+      "viText": "Tiếp theo là quyết định điều chỉnh thiết bị ngoài bản sửa đổi kỹ thuật chính thức",
+      "start": 476.31,
+      "duration": 7.01
+    },
+    {
+      "text": "process implemented during routine servicing rather than through official modification channels.",
+      "viText": "quá trình được thực hiện trong quá trình bảo trì định kỳ thay vì thông qua các kênh sửa đổi chính thức.",
+      "start": 483.32,
+      "duration": 7.31
+    },
+    {
+      "text": "The earliest documented instance within 8th Air Force units dates to late spring 1943.",
+      "viText": "Trường hợp được ghi chép sớm nhất trong các đơn vị Không quân số 8 là vào cuối mùa xuân năm 1943.",
+      "start": 490.63,
+      "duration": 6.55
+    },
+    {
+      "text": "Accounts differ in detail, but the essential action was consistent.",
+      "viText": "Các tài khoản có chi tiết khác nhau nhưng hành động thiết yếu thì nhất quán.",
+      "start": 497.18,
+      "duration": 5.1
+    },
+    {
+      "text": "Maintenance crews accessed the turret's control system, located the governor assembly, and reduced, not",
+      "viText": "Đội bảo trì đã truy cập vào hệ thống điều khiển của tháp pháo, định vị bộ phận điều tốc và giảm bớt, không phải",
+      "start": 502.28,
+      "duration": 7.85
+    },
+    {
+      "text": "removed, the spring tension acting on its friction plates.",
+      "viText": "được loại bỏ, lực căng của lò xo tác dụng lên các tấm ma sát của nó.",
+      "start": 510.13,
+      "duration": 4.42
+    },
+    {
+      "text": "The intention was not to eliminate dampening, which would have introduced instability, but to",
+      "viText": "Mục đích không phải là loại bỏ sự giảm chấn, vốn có thể gây ra sự mất ổn định, mà là để",
+      "start": 514.55,
+      "duration": 7.08
+    },
+    {
+      "text": "recalibrate the balance point, accepting slightly less smooth motion, in exchange for faster response.",
+      "viText": "hiệu chỉnh lại điểm cân bằng, chấp nhận chuyển động kém mượt mà hơn một chút, để đổi lấy phản hồi nhanh hơn.",
+      "start": 521.63,
+      "duration": 7.77
+    },
+    {
+      "text": "Subsequent missions demonstrated a traverse rate roughly 30 to 35% faster than the original",
+      "viText": "Các nhiệm vụ tiếp theo cho thấy tốc độ di chuyển nhanh hơn khoảng 30 đến 35% so với nhiệm vụ ban đầu",
+      "start": 529.4,
+      "duration": 6.93
+    },
+    {
+      "text": "specification.",
+      "viText": "đặc điểm kỹ thuật.",
+      "start": 536.33,
+      "duration": 2
+    },
+    {
+      "text": "The turret retained sufficient stability for accurate operation, but the time required to shift",
+      "viText": "Tháp pháo vẫn giữ được độ ổn định đủ để vận hành chính xác, nhưng cần có thời gian để dịch chuyển",
+      "start": 538.33,
+      "duration": 7.24
+    },
+    {
+      "text": "between bearings.",
+      "viText": "giữa các vòng bi.",
+      "start": 545.57,
+      "duration": 2
+    },
+    {
+      "text": "The response interval those tactics had been structured to take advantage of was significantly",
+      "viText": "Khoảng thời gian phản hồi mà các chiến thuật đó đã được cấu trúc để tận dụng là",
+      "start": 547.57,
+      "duration": 7.16
+    },
+    {
+      "text": "reduced.",
+      "viText": "giảm đi.",
+      "start": 554.73,
+      "duration": 2
+    },
+    {
+      "text": "What followed illustrates how practical knowledge can circulate when formal pathways are slower than",
+      "viText": "Những gì tiếp theo minh họa cách kiến ​​thức thực tế có thể được lưu chuyển khi các lộ trình chính thức chậm hơn",
+      "start": 556.73,
+      "duration": 7.62
+    },
+    {
+      "text": "operational demand.",
+      "viText": "nhu cầu hoạt động.",
+      "start": 564.35,
+      "duration": 2
+    },
+    {
+      "text": "The adjustment moved through maintenance channels in an informal but technically specific way.",
+      "viText": "Việc điều chỉnh được chuyển qua các kênh bảo trì theo cách không chính thức nhưng cụ thể về mặt kỹ thuật.",
+      "start": 566.35,
+      "duration": 7.16
+    },
+    {
+      "text": "A crew chief observing altered performance discussed with another unit.",
+      "viText": "Một thuyền trưởng quan sát hiệu suất thay đổi đã thảo luận với một đơn vị khác.",
+      "start": 573.51,
+      "duration": 5.41
+    },
+    {
+      "text": "Operators compared response characteristics.",
+      "viText": "Các nhà khai thác so sánh các đặc điểm phản ứng.",
+      "start": 578.92,
+      "duration": 3.35
+    },
+    {
+      "text": "The technical details circulated alongside observed performance differences.",
+      "viText": "Các chi tiết kỹ thuật được lưu hành cùng với sự khác biệt về hiệu suất được quan sát.",
+      "start": 582.27,
+      "duration": 5.79
+    },
+    {
+      "text": "what had been adjusted, how it was done and how the system behaved afterward.",
+      "viText": "những gì đã được điều chỉnh, nó được thực hiện như thế nào và hệ thống hoạt động như thế nào sau đó.",
+      "start": 588.06,
+      "duration": 5.87
+    },
+    {
+      "text": "Some crews adopted the change, others did not.",
+      "viText": "Một số phi hành đoàn đã áp dụng sự thay đổi, những người khác thì không.",
+      "start": 593.93,
+      "duration": 3.5
+    },
+    {
+      "text": "There were no written directives and no centralized coordination.",
+      "viText": "Không có chỉ thị bằng văn bản và không có sự phối hợp tập trung.",
+      "start": 597.43,
+      "duration": 4.95
+    },
+    {
+      "text": "By midsummer 1943, several dozen aircraft across multiple groups were operating with governor settings",
+      "viText": "Đến giữa mùa hè năm 1943, hàng chục máy bay thuộc nhiều nhóm khác nhau đang hoạt động với cài đặt bộ điều tốc",
+      "start": 602.38,
+      "duration": 7.77
+    },
+    {
+      "text": "that differed from their documented configuration.",
+      "viText": "khác với cấu hình tài liệu của họ.",
+      "start": 610.15,
+      "duration": 3.81
+    },
+    {
+      "text": "The information remained deliberately localized below the level of formal reporting.",
+      "viText": "Thông tin vẫn được cố tình bản địa hóa dưới mức báo cáo chính thức.",
+      "start": 613.96,
+      "duration": 6.4
+    },
+    {
+      "text": "Operational effects were noted from multiple perspectives within American units.",
+      "viText": "Hiệu quả hoạt động đã được ghi nhận từ nhiều góc độ trong các đơn vị Mỹ.",
+      "start": 620.36,
+      "duration": 6.09
+    },
+    {
+      "text": "Aircraft incorporating the adjustment began generating reports that differed from earlier patterns.",
+      "viText": "Máy bay kết hợp điều chỉnh bắt đầu tạo ra các báo cáo khác với các mẫu trước đó.",
+      "start": 626.45,
+      "duration": 7.54
+    },
+    {
+      "text": "Engagement sequences that previously fell within the turret's response delay could now be addressed",
+      "viText": "Các chuỗi giao tranh trước đây nằm trong độ trễ phản hồi của tháp pháo giờ đây có thể được giải quyết",
+      "start": 633.99,
+      "duration": 7.54
+    },
+    {
+      "text": "more quickly.",
+      "viText": "nhanh hơn.",
+      "start": 641.53,
+      "duration": 2
+    },
+    {
+      "text": "approaches based on predictable timing encountered defensive reactions earlier than expected, requiring changes in",
+      "viText": "các phương pháp tiếp cận dựa trên thời gian có thể dự đoán trước đã gặp phải phản ứng phòng thủ sớm hơn dự kiến, đòi hỏi phải thay đổi",
+      "start": 643.53,
+      "duration": 8.68
+    },
+    {
+      "text": "geometry or premature disengagement from the opposing side.",
+      "viText": "hình học hoặc sự tách rời sớm khỏi phía đối diện.",
+      "start": 652.21,
+      "duration": 4.49
+    },
+    {
+      "text": "Pilots reported encountering defensive systems whose reaction times varied from established expectations.",
+      "viText": "Các phi công báo cáo đã gặp phải các hệ thống phòng thủ có thời gian phản ứng khác với mong đợi đã được thiết lập.",
+      "start": 656.7,
+      "duration": 8
+    },
+    {
+      "text": "The aircraft appeared unchanged externally, yet their behavior differed in ways that could not",
+      "viText": "Những chiếc máy bay có vẻ ngoài không thay đổi, nhưng cách hoạt động của chúng lại khác nhau đến mức không thể",
+      "start": 664.7,
+      "duration": 7.16
+    },
+    {
+      "text": "be easily categorized.",
+      "viText": "có thể dễ dàng phân loại.",
+      "start": 671.86,
+      "duration": 2
+    },
+    {
+      "text": "Because the modification left no visible signature, it was difficult to analyze systematically.",
+      "viText": "Bởi vì việc sửa đổi không để lại chữ ký rõ ràng nên rất khó phân tích một cách có hệ thống.",
+      "start": 673.86,
+      "duration": 7.24
+    },
+    {
+      "text": "This ambiguity helped preserve its effectiveness.",
+      "viText": "Sự mơ hồ này đã giúp duy trì tính hiệu quả của nó.",
+      "start": 681.1,
+      "duration": 3.73
+    },
+    {
+      "text": "An alteration that could not be identified externally was harder to counter through observation",
+      "viText": "Một sự thay đổi không thể xác định được từ bên ngoài sẽ khó khắc phục hơn thông qua quan sát",
+      "start": 684.83,
+      "duration": 7.24
+    },
+    {
+      "text": "alone.",
+      "viText": "một mình.",
+      "start": 692.07,
+      "duration": 2
+    },
+    {
+      "text": "The official discovery of the adjustment resulted not from combat events, but from routine",
+      "viText": "Việc phát hiện chính thức về sự điều chỉnh không phải do các sự kiện chiến đấu mà do thói quen",
+      "start": 694.07,
+      "duration": 6.86
+    },
+    {
+      "text": "technical inspection.",
+      "viText": "kiểm tra kỹ thuật.",
+      "start": 700.93,
+      "duration": 2
+    },
+    {
+      "text": "Engineering teams conducting evaluations identified governor assemblies whose calibration did not match specification.",
+      "viText": "Các nhóm kỹ thuật tiến hành đánh giá đã xác định các bộ điều tốc có hiệu chuẩn không phù hợp với thông số kỹ thuật.",
+      "start": 702.93,
+      "duration": 8.99
+    },
+    {
+      "text": "The deviations were consistent and directional.",
+      "viText": "Những sai lệch là nhất quán và có định hướng.",
+      "start": 711.92,
+      "duration": 3.58
+    },
+    {
+      "text": "All increased traverse speed.",
+      "viText": "Tất cả đều tăng tốc độ di chuyển.",
+      "start": 715.5,
+      "duration": 2.21
+    },
+    {
+      "text": "A formal review followed.",
+      "viText": "Sau đó là một cuộc xem xét chính thức.",
+      "start": 717.71,
+      "duration": 2
+    },
+    {
+      "text": "The investigation highlighted a familiar institutional tension.",
+      "viText": "Cuộc điều tra nêu bật một căng thẳng thể chế quen thuộc.",
+      "start": 719.71,
+      "duration": 4.8
+    },
+    {
+      "text": "Changes had been applied outside documented procedure.",
+      "viText": "Những thay đổi đã được áp dụng bên ngoài thủ tục được ghi chép.",
+      "start": 724.51,
+      "duration": 4.11
+    },
+    {
+      "text": "From an administrative standpoint, this created questions of compliance, liability, and precedent.",
+      "viText": "Từ quan điểm hành chính, điều này tạo ra các câu hỏi về sự tuân thủ, trách nhiệm pháp lý và tiền lệ.",
+      "start": 728.62,
+      "duration": 7.47
+    },
+    {
+      "text": "Yet, engineering evaluation of the modified assemblies produced measurable findings.",
+      "viText": "Tuy nhiên, đánh giá kỹ thuật của các tổ hợp đã sửa đổi đã tạo ra những kết quả có thể đo lường được.",
+      "start": 736.09,
+      "duration": 6.4
+    },
+    {
+      "text": "Increased traverse speed matched field observations.",
+      "viText": "Tăng tốc độ di chuyển ngang phù hợp với quan sát hiện trường.",
+      "start": 742.49,
+      "duration": 3.96
+    },
+    {
+      "text": "Accuracy degradation was present but acceptable.",
+      "viText": "Sự suy giảm độ chính xác đã xảy ra nhưng có thể chấp nhận được.",
+      "start": 746.45,
+      "duration": 3.66
+    },
+    {
+      "text": "Mechanical analysis indicated no significant increase in system stress or failure risk.",
+      "viText": "Phân tích cơ học cho thấy không có sự gia tăng đáng kể nào về ứng suất hệ thống hoặc nguy cơ hỏng hóc.",
+      "start": 750.11,
+      "duration": 6.63
+    },
+    {
+      "text": "The evaluation concluded that the field adjustment addressed a legitimate operational mismatch.",
+      "viText": "Đánh giá kết luận rằng việc điều chỉnh hiện trường đã giải quyết được sự không phù hợp trong hoạt động hợp pháp.",
+      "start": 756.74,
+      "duration": 7.24
+    },
+    {
+      "text": "The original specification had been developed against assumptions about engagement patterns that experience had",
+      "viText": "Đặc tả ban đầu đã được phát triển dựa trên các giả định về mô hình tương tác mà trải nghiệm đã có",
+      "start": 763.98,
+      "duration": 8.46
+    },
+    {
+      "text": "not fully supported.",
+      "viText": "không được hỗ trợ đầy đủ.",
+      "start": 772.44,
+      "duration": 2
+    },
+    {
+      "text": "The rec-calibrated governor shifted the balance toward response speed in a way that better",
+      "viText": "Bộ điều tốc được hiệu chỉnh lại đã chuyển sự cân bằng sang tốc độ phản hồi theo cách tốt hơn",
+      "start": 774.44,
+      "duration": 6.86
+    },
+    {
+      "text": "aligned with observed conditions.",
+      "viText": "phù hợp với điều kiện quan sát được.",
+      "start": 781.3,
+      "duration": 2.51
+    },
+    {
+      "text": "Administrative responses reflected this mixed picture.",
+      "viText": "Phản hồi hành chính phản ánh bức tranh hỗn hợp này.",
+      "start": 783.81,
+      "duration": 4.11
+    },
+    {
+      "text": "Procedural violations were acknowledged, but the institutional focus moved quickly from enforcement to integration.",
+      "viText": "Các vi phạm về thủ tục đã được ghi nhận nhưng trọng tâm thể chế đã nhanh chóng chuyển từ thực thi sang hội nhập.",
+      "start": 787.92,
+      "duration": 8.76
+    },
+    {
+      "text": "Once the technical validity was confirmed, formal adoption proceeded through wartime engineering channels.",
+      "viText": "Sau khi giá trị kỹ thuật đã được xác nhận, việc áp dụng chính thức được tiến hành thông qua các kênh kỹ thuật thời chiến.",
+      "start": 796.68,
+      "duration": 8.07
+    },
+    {
+      "text": "Technical orders were revised.",
+      "viText": "Lệnh kỹ thuật đã được sửa đổi.",
+      "start": 804.75,
+      "duration": 2.29
+    },
+    {
+      "text": "Production drawings were updated.",
+      "viText": "Bản vẽ sản xuất đã được cập nhật.",
+      "start": 807.04,
+      "duration": 2.51
+    },
+    {
+      "text": "By early 1944, newly manufactured aircraft incorporated governor settings aligned with the empirically derived",
+      "viText": "Đến đầu năm 1944, những chiếc máy bay mới được sản xuất đã tích hợp các cài đặt bộ điều chỉnh phù hợp với",
+      "start": 809.55,
+      "duration": 8.38
+    },
+    {
+      "text": "configuration.",
+      "viText": "có nguồn gốc từ thực nghiệm. cấu hình.",
+      "start": 817.93,
+      "duration": 2
+    },
+    {
+      "text": "Retrofit kits followed for aircraft already in service.",
+      "viText": "Bộ dụng cụ trang bị thêm tiếp theo dành cho các máy bay đã được đưa vào sử dụng.",
+      "start": 819.93,
+      "duration": 4.19
+    },
+    {
+      "text": "Official documentation attributed the change to engineering review and field evaluation.",
+      "viText": "Tài liệu chính thức cho rằng sự thay đổi là do đánh giá kỹ thuật và đánh giá hiện trường.",
+      "start": 824.12,
+      "duration": 6.7
+    },
+    {
+      "text": "The informal pathway through which the insight first emerged was compressed into standard technical",
+      "viText": "Con đường không chính thức mà qua đó cái nhìn sâu sắc xuất hiện lần đầu tiên đã được nén thành các kỹ thuật tiêu chuẩn",
+      "start": 830.82,
+      "duration": 7.54
+    },
+    {
+      "text": "language.",
+      "viText": "ngôn ngữ.",
+      "start": 838.36,
+      "duration": 2
+    },
+    {
+      "text": "This was not unusual.",
+      "viText": "Điều này không có gì bất thường.",
+      "start": 840.36,
+      "duration": 2
+    },
+    {
+      "text": "Large organizations often absorb decentralized solutions by translating them into formal specification once they",
+      "viText": "Các tổ chức lớn thường tiếp thu các giải pháp phi tập trung bằng cách chuyển chúng thành thông số kỹ thuật chính thức khi chúng",
+      "start": 842.36,
+      "duration": 8.53
+    },
+    {
+      "text": "are validated.",
+      "viText": "được xác thực.",
+      "start": 850.89,
+      "duration": 2
+    },
+    {
+      "text": "The broader significance lies less in the specific component than in the process it",
+      "viText": "Ý nghĩa rộng hơn nằm ở thành phần cụ thể ít hơn ở quá trình nó",
+      "start": 852.89,
+      "duration": 6.32
+    },
+    {
+      "text": "illustrates.",
+      "viText": "minh họa.",
+      "start": 859.21,
+      "duration": 2
+    },
+    {
+      "text": "The original design had been produced by capable engineers working from reasonable projections.",
+      "viText": "Thiết kế ban đầu được tạo ra bởi các kỹ sư có năng lực làm việc dựa trên những dự đoán hợp lý.",
+      "start": 861.21,
+      "duration": 7.24
+    },
+    {
+      "text": "The opposing system adapted its methods and response.",
+      "viText": "Hệ thống đối lập đã điều chỉnh các phương pháp và phản ứng của nó.",
+      "start": 868.45,
+      "duration": 4.04
+    },
+    {
+      "text": "Operational personnel then adjusted the equipment to restore alignment between design intent and actual",
+      "viText": "Sau đó, nhân viên vận hành đã điều chỉnh thiết bị để khôi phục sự liên kết giữa mục đích thiết kế và",
+      "start": 872.49,
+      "duration": 7.85
+    },
+    {
+      "text": "conditions.",
+      "viText": "thực tế. điều kiện.",
+      "start": 880.34,
+      "duration": 2
+    },
+    {
+      "text": "Institutional mechanisms eventually captured, validated, and standardized that adjustment.",
+      "viText": "Các cơ chế thể chế cuối cùng đã nắm bắt, xác nhận và tiêu chuẩn hóa sự điều chỉnh đó.",
+      "start": 882.34,
+      "duration": 6.86
+    },
+    {
+      "text": "This sequence, assumption, observation, [clears throat] informal correction represents a recurring pattern in wartime",
+      "viText": "Trình tự, giả định, quan sát, [làm hắng giọng] sự điều chỉnh không chính thức này thể hiện một mô hình lặp đi lặp lại trong thời chiến",
+      "start": 889.2,
+      "duration": 8.91
+    },
+    {
+      "text": "engineering environments.",
+      "viText": "môi trường kỹ thuật.",
+      "start": 898.11,
+      "duration": 2
+    },
+    {
+      "text": "The knowledge most immediately tied to system performance is generated at the operational level.",
+      "viText": "Kiến thức gắn liền nhất với hiệu suất hệ thống được tạo ra ở cấp độ vận hành.",
+      "start": 900.11,
+      "duration": 7.31
+    },
+    {
+      "text": "Formal processes follow afterward, translating localized insight into consistent practice across the organization.",
+      "viText": "Sau đó là các quy trình chính thức, biến cái nhìn sâu sắc đã được bản địa hóa thành thực tiễn nhất quán trong toàn tổ chức.",
+      "start": 907.42,
+      "duration": 8.68
+    },
+    {
+      "text": "The B17 ball turret is now primarily encountered in museums.",
+      "viText": "Tháp pháo bi B17 hiện nay chủ yếu được tìm thấy trong các viện bảo tàng.",
+      "start": 916.1,
+      "duration": 4.57
+    },
+    {
+      "text": "The aircraft themselves no longer fly.",
+      "viText": "Bản thân máy bay không còn bay nữa.",
+      "start": 920.67,
+      "duration": 2.89
+    },
+    {
+      "text": "The technical orders governing their maintenance exist as archival material consulted mainly by historians",
+      "viText": "Các yêu cầu kỹ thuật quản lý việc bảo trì chúng tồn tại dưới dạng tài liệu lưu trữ được các nhà sử học tư vấn chủ yếu",
+      "start": 923.56,
+      "duration": 8.07
+    },
+    {
+      "text": "and engineers studying earlier design approaches.",
+      "viText": "và các kỹ sư nghiên cứu các phương pháp thiết kế trước đó.",
+      "start": 931.63,
+      "duration": 3.73
+    },
+    {
+      "text": "Yet the principle reinforced during this episode did not remain confined to a single",
+      "viText": "Tuy nhiên, nguyên tắc được củng cố trong tập phim này không chỉ giới hạn ở một",
+      "start": 935.36,
+      "duration": 6.4
+    },
+    {
+      "text": "aircraft.",
+      "viText": "phi cơ.",
+      "start": 941.76,
+      "duration": 2
+    },
+    {
+      "text": "Later defensive systems across air, sea, and ground incorporated response speed as a primary",
+      "viText": "Các hệ thống phòng thủ sau này trên không, trên biển và mặt đất kết hợp tốc độ phản ứng làm yếu tố chính",
+      "start": 943.76,
+      "duration": 7.01
+    },
+    {
+      "text": "parameter from the outset.",
+      "viText": "tham số ngay từ đầu.",
+      "start": 950.77,
+      "duration": 2
+    },
+    {
+      "text": "Designers increasingly treated reaction time not as a secondary refinement, but as a defining",
+      "viText": "Các nhà thiết kế ngày càng coi thời gian phản ứng không phải là sự sàng lọc thứ cấp mà là một yếu tố xác định",
+      "start": 952.77,
+      "duration": 7.08
+    },
+    {
+      "text": "characteristic to be evaluated alongside accuracy, durability, and range.",
+      "viText": "đặc tính được đánh giá cùng với độ chính xác, độ bền và phạm vi.",
+      "start": 959.85,
+      "duration": 5.56
+    },
+    {
+      "text": "The episode demonstrates how complex organizations adapt under pressure.",
+      "viText": "Tập phim cho thấy các tổ chức phức tạp thích ứng như thế nào dưới áp lực.",
+      "start": 965.41,
+      "duration": 5.48
+    },
+    {
+      "text": "Systems are conceived centrally, but they are refined through continuous interaction with the environments",
+      "viText": "Các hệ thống được hình thành tập trung nhưng chúng được cải tiến thông qua tương tác liên tục với môi trường",
+      "start": 970.89,
+      "duration": 8.07
+    },
+    {
+      "text": "in which they operate.",
+      "viText": "trong đó họ hoạt động.",
+      "start": 978.96,
+      "duration": 2
+    },
+    {
+      "text": "When those environments shift, successful institutions are those able to absorb feedback, whether it",
+      "viText": "Khi những môi trường đó thay đổi, các tổ chức thành công là những tổ chức có khả năng tiếp thu phản hồi, cho dù đó là",
+      "start": 980.96,
+      "duration": 7.62
+    },
+    {
+      "text": "originates in formal analysis or in incremental adjustment, and translate it into durable specification.",
+      "viText": "bắt nguồn từ phân tích chính thức hoặc điều chỉnh tăng dần và chuyển nó thành đặc điểm kỹ thuật lâu dài.",
+      "start": 988.58,
+      "duration": 7.92
+    },
+    {
+      "text": "What remained was not a story recorded in detail, but a revised standard.",
+      "viText": "Những gì còn lại không phải là một câu chuyện được ghi lại chi tiết mà là một tiêu chuẩn đã được sửa đổi.",
+      "start": 996.5,
+      "duration": 5.56
+    },
+    {
+      "text": "And standards once integrated tend to outlast the circumstances that first required",
+      "viText": "Và các tiêu chuẩn một khi được tích hợp có xu hướng tồn tại lâu hơn trong những hoàn cảnh đầu tiên yêu cầu",
+      "start": 1002.06,
+      "duration": 6.32
+    }
+  ]
+}

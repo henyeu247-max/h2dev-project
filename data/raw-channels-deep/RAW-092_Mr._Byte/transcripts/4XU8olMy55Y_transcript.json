@@ -1,0 +1,851 @@
+{
+  "videoId": "4XU8olMy55Y",
+  "title": "Every Type of Programming Language Explained",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 140,
+  "fullText": "C. The grumpy grandfather of the Silicon Valley. Imagine you're at a construction site. Most people use pre-made walls, but C is the guy who insists on making his own bricks from scratch by mixing sand and water. Born in 1972 at Bell Lab, C is the grandpa of the coding world. He's old, he's grumpy, and he doesn't have a delete button for your mistakes. If you tell him to do something stupid, he won't stop you. He'll just let the whole building fall. In C, you have to manage the computer's memory yourself. It's like being a chef who has to not only cook the meal, but also personally wash every single plate, scrub the floor, and count every grain of salt. If you forget, the kitchen explodes, or in tech terms, your computer, blue screens. But because it's so manual, it is incredibly fast. Every major thing you use, the Windows on your laptop, the Linux on NASA's servers, and even the tiny computer chip inside your microwave is built with C. Learning C is like learning to build an engine from scratch. It's hard, but once you know it, you understand how the soul of a machine actually breathes. C++. By the 1980s, C was getting overwhelmed. Projects were getting too big, like trying to build a city using only toothpicks. So, a smart guy named Bja Strastrip decided to take C and give it a utility belt of new features. He called it C++. If C is a manual car, C++ is a Formula 1 racer with a thousand extra buttons. The coolest thing about C++ is object-oriented programming. Think of it like a video game. Instead of writing code for every single tree in a massive forest, you create a tree blueprint. Then you just press a copy paste button to pop out a thousand different trees. This is why C++ is the undisputed king of the gaming world. If you've played Fortnite Cyberpunk 2077 or anything that looks breathtaking, you've seen C++ in action. It is notoriously difficult to learn because it has so many rules, but it's the ultimate power tool. It's the language of highstakes performance where every microssecond and every pixel counts. If you want to be a top tier game developer, C++ is your golden sword. Java. In the mid '90s, we had a major problem. Code written for one computer wouldn't work on another. It was like a DVD that only worked in one specific brand of player. Java arrived with a cool catchphrase, write once, run anywhere. It uses something called the JVM, which acts like a universal translator or a magical portal. Java is like that one school principal who is super obsessed with rules, but only because he wants you to stay safe. He won't let you touch the scary parts of the computer directly. Java has a garbage collector, which is basically a robotic vacuum cleaner that follows you around and cleans up your coding mess automatically so the computer doesn't crash. Because it's so safe and organized, big banks and giant companies absolutely love it. It's also the original language that built the Android app empire. It might be a bit wordy, you have to type a long sentence just to say hello, but it's the most reliable bodyguard in the business. When stability is more important than speed, Java is the boss. JavaScript, the chaotic artist of the web. First, a warning. Don't let the name fool you. JavaScript has almost nothing to do with Java. It's like the difference between a car and a carpet. JavaScript was created in just 10 days by a guy named Brendan Ike. At first, people thought it was a joke, a tiny language just for making annoying pop-ups or flashing text on websites. Today, JavaScript has had the greatest glow up in history. It is the soul of the internet. If a website does something cool, like showing a live chat, moving a map, or updating your likes without refreshing the page, JavaScript is the one doing the heavy lifting. It's the only language that runs inside every web browser on Earth. It's a bit weird. Sometimes it has funny logic that makes expert programmers pull their hair out. For example, if you ask JavaScript to add a number to a word, it might just give you a weird soup of text. But despite its quirks, it is the most popular language in the world. If you want to build the next Tik Tok, Instagram, or YouTube, JavaScript is the first door you need to open. Python. If coding were a sport, Python would be a relaxing walk in the park on a sunny day. Its creator, Guido Van Rossom, wanted to make a language that was as easy to read as a comic book. While other languages use a billion confusing curly brackets and semicolons, Python just uses simple spaces. It's clean, it's elegant, and it's very polite. Python is the favorite tool for the masters of artificial intelligence and data science. When you see a deep fake video or when you ask ChatGpt to write a poem about your cat, Python is the brain behind the curtain. It's also used by NASA to analyze space data and by Netflix to suggest movies you'll actually like. Is it the fastest? No. Python is like a giant friendly turtle. It moves slower than C++, but it carries an infinite library of magical tools on its back. If you are a student and want to write your first program in 5 minutes, Python is your best friend. It's the welcome mat to the entire world of technology. And it's currently the most in demand skill for the future of AI, SQL. Imagine a library with a billion books, but they're all thrown on the floor in a giant messy pile. How do you find one specific name on page 42 of a random book? You call SQL, pronounced SQL. SQL isn't for building games or making apps fly. It's for talking to databases. Think of SQL as a magic search bar for the world's information. You don't tell the computer how to search. You just tell it what you want. You say, \"Hey computer, give me a list of all users who bought a blue hoodie in October.\" Boom. It's done in a millisecond. Every time you log into a website, check your high score in a game, or search for a product on Amazon, a SQL query is running in the background, digging through mountains of data. In the modern world, data is the new oil, and SQL is the high-tech drill that gets it out of the ground. It's a quiet, invisible, but absolutely essential superpower. PHP. Some people say PHP is old-fashioned, but it's like that one local pizza shop that has been open for 30 years. It's still there because the pizza is great and it never lets you down. PHP was built specifically for the web. Before PHP, making a website that did things like saving accounts was like building a rocket ship. PHP made it as easy as building with Legos. It's the reason Wikipedia exists, allowing the whole world to share knowledge. It's also what Mark Zuckerberg used to build the very first version of Facebook in his Harvard dorm room. Even today, almost half of the websites you visit are powered by PHP, especially if they use WordPress. It's very approachable for beginners because you can see your changes instantly in a browser. While other languages try to be fancy and complex, PHP just wants to get the job done. It is the veteran survivor of the internet era that helped turn the web from a collection of boring pages into a giant social world. Swift. For a long time, making apps for iPhones was like trying to write a book using an old rusty typewriter. That language was called Objective C. Then in 2014, Apple released Swift, and it was like switching to a high-tech iPad with a stylus. Swift is fast, sleek, and very pretty to look at. Apple designed Swift to be safe by design, and it's like a car that automatically breaks before you hit a wall. It tries to catch your mistakes while you are typing so your apps don't crash when people are using them. If you dream of seeing your own game or app on the App Store, Swift is your VIP ticket. It's optimized perfectly for the iPhone's battery, meaning your apps won't drain your phone in 10 minutes. It's the cool kid of languages exclusive to the Apple ecosystem. Stylish and incredibly powerful for anything with a touch screen. Go or Golang was created by the genius engineers at Google because they were tired of waiting for their giant systems to finish working. They wanted a language that was as fast as C++ but as easy to read as Python. It's the modern engineers dream. Go superpower is something called concurrency. Imagine a normal language is like one person trying to serve 1,000 customers at a coffee shop. It's slow and stressful. Go is like a manager who can instantly hire 1,000 tiny, super fast robots to serve those customers all at once. This is why Go is the king of the cloud. When you upload your photos to Google Photos or use a massive app that never lags, even with millions of users, Go is likely the one managing all those connections behind the scenes. It's simple, it's fast, and it's built for the massive scale of the modern internet. It's the ultimate workerbe language, Rust. Finally, we meet Rust. For 40 years, programmers had to make a painful choice. Do you want a language that is fast like C++ or a language that is safe like Java? You couldn't have both. Then Rust appeared and said, \"Watch this.\" Rust is like a very strict but brilliant master architect. It won't let you start building until it has checked every single bolt and screw in your blueprint. It has a feature called the borrow checker that prevents 99% of the security holes that hackers usually use. Because of this, the smartest people at NASA, Microsoft, and even the Linux team are switching to Rust. It is quite difficult to learn. It's like learning to fly a fighter jet instead of a paper airplane. But once you master it, you are building software that is unhackable and lightning fast. It is the guardian of the future, ensuring that as our world gets more digital, our hospitals, banks, and power grids stay safe from crashes and attacks. Ready to grab your first superpower? Don't just watch start building. Pick one language. Write your first line of code and share your progress in the comments below. If this guide helped you find your path, hit like and subscribe. The future is waiting for your code. Let's get started.",
+  "fullTextVi": "C. Ông nội gắt gỏng của Thung lũng Silicon. Hãy tưởng tượng bạn đang ở một công trường xây dựng. Hầu hết mọi người đều sử dụng những bức tường làm sẵn, nhưng C là anh chàng nhất quyết tự làm gạch từ đầu bằng cách trộn cát và nước. Sinh năm 1972 tại Bell Lab, C là ông nội của thế giới mã hóa. Anh ấy già rồi, anh ấy gắt gỏng và anh ấy không có nút xóa lỗi của bạn. Nếu bạn bảo anh ấy làm điều gì đó ngu ngốc, anh ấy sẽ không ngăn cản bạn. Anh ta sẽ để cả tòa nhà sụp đổ. Trong C, bạn phải tự quản lý bộ nhớ của máy tính. Nó giống như việc trở thành một đầu bếp, người không chỉ phải nấu bữa ăn mà còn phải đích thân rửa từng chiếc đĩa, chà sàn và đếm từng hạt muối. Nếu bạn quên, nhà bếp sẽ nổ tung, hay nói theo thuật ngữ công nghệ, máy tính của bạn sẽ bị màn hình xanh. Nhưng vì nó quá thủ công nên nó cực kỳ nhanh. Mọi thứ quan trọng bạn sử dụng, Windows trên máy tính xách tay, Linux trên máy chủ của NASA và thậm chí cả con chip máy tính nhỏ xíu bên trong lò vi sóng của bạn đều được xây dựng bằng C. Học C giống như học cách xây dựng một công cụ từ đầu. Khó nhưng một khi đã biết, bạn sẽ hiểu linh hồn của một cỗ máy thực sự thở như thế nào. C++. Đến những năm 1980, C dần bị choáng ngợp. Các dự án ngày càng trở nên quá lớn, giống như việc cố gắng xây dựng một thành phố chỉ bằng những chiếc tăm. Vì vậy, một chàng trai thông minh tên là Bja Strastrip đã quyết định lấy C và trao cho nó một vành đai tiện ích với các tính năng mới. Ông gọi nó là C++. Nếu C là một chiếc xe số tay thì C++ là một tay đua Công thức 1 có thêm một nghìn nút bấm. Điều thú vị nhất về C++ là lập trình hướng đối tượng. Hãy nghĩ về nó giống như một trò chơi điện tử. Thay vì viết mã cho từng cái cây trong một khu rừng rộng lớn, bạn tạo một bản thiết kế cây. Sau đó bạn chỉ cần nhấn nút sao chép và dán để hiện ra hàng nghìn cây khác nhau. Đây là lý do tại sao C++ là ông vua không thể tranh cãi của thế giới game. Nếu bạn đã chơi Fortnite Cyberpunk 2077 hoặc bất cứ thứ gì có vẻ ngoạn mục thì bạn đã thấy C++ hoạt động. Nó nổi tiếng là khó học vì nó có rất nhiều quy tắc, nhưng nó là công cụ quyền lực tối thượng. Đó là ngôn ngữ của hiệu suất đặt cược cao trong đó mỗi micro giây và mỗi pixel đều có giá trị. Nếu bạn muốn trở thành nhà phát triển trò chơi hàng đầu, C++ chính là thanh kiếm vàng dành cho bạn. Java. Vào giữa những năm 90, chúng tôi gặp phải một vấn đề lớn. Mã được viết cho một máy tính sẽ không hoạt động trên máy tính khác. Nó giống như một chiếc DVD chỉ hoạt động được với một nhãn hiệu đầu phát cụ thể. Java xuất hiện với một khẩu hiệu thú vị, viết một lần, chạy mọi nơi. Nó sử dụng một thứ gọi là JVM, hoạt động giống như một trình dịch phổ quát hoặc một cổng thông tin ma thuật. Java giống như một hiệu trưởng trường học cực kỳ bị ám ảnh bởi các quy tắc, nhưng chỉ vì ông ấy muốn bạn được an toàn. Anh ấy sẽ không cho bạn chạm trực tiếp vào những bộ phận đáng sợ của máy tính. Java có một trình thu gom rác, về cơ bản là một robot hút bụi đi theo bạn và tự động dọn dẹp mớ mã hóa lộn xộn của bạn để máy tính không gặp sự cố. Bởi vì nó rất an toàn và có tổ chức nên các ngân hàng lớn và các công ty khổng lồ hoàn toàn yêu thích nó. Nó cũng là ngôn ngữ gốc đã xây dựng nên đế chế ứng dụng Android. Có thể hơi dài dòng, phải gõ một câu dài chỉ để chào hỏi nhưng đó lại là vệ sĩ đáng tin cậy nhất trong doanh nghiệp. Khi sự ổn định quan trọng hơn tốc độ thì Java chính là ông chủ. JavaScript, nghệ sĩ hỗn loạn của web. Đầu tiên, một cảnh báo. Đừng để cái tên đánh lừa bạn. JavaScript hầu như không liên quan gì đến Java. Nó giống như sự khác biệt giữa một chiếc ô tô và một tấm thảm. JavaScript được tạo ra chỉ trong 10 ngày bởi một anh chàng tên Brendan Ike. Lúc đầu, mọi người nghĩ đó là một trò đùa, một ngôn ngữ nhỏ bé chỉ để tạo ra các cửa sổ bật lên hoặc văn bản nhấp nháy khó chịu trên các trang web. Ngày nay, JavaScript đã có sự phát triển rực rỡ nhất trong lịch sử. Nó là linh hồn của Internet. Nếu một trang web thực hiện điều gì đó thú vị, chẳng hạn như hiển thị cuộc trò chuyện trực tiếp, di chuyển bản đồ hoặc cập nhật lượt thích của bạn mà không làm mới trang, thì JavaScript sẽ là công việc nặng nhọc nhất. Đó là ngôn ngữ duy nhất chạy bên trong mọi trình duyệt web trên Trái đất. Nó hơi kỳ lạ một chút. Đôi khi nó có những logic hài hước khiến các lập trình viên lão luyện phải dựng tóc gáy. Ví dụ: nếu bạn yêu cầu JavaScript thêm một số vào một từ, nó có thể chỉ cung cấp cho bạn một chuỗi văn bản kỳ lạ. Nhưng bất chấp những điều kỳ quặc, nó vẫn là ngôn ngữ phổ biến nhất trên thế giới. Nếu bạn muốn xây dựng Tik Tok, Instagram hoặc YouTube tiếp theo, JavaScript là cánh cửa đầu tiên bạn cần mở. Trăn. Nếu viết mã là một môn thể thao thì Python sẽ là một cuộc dạo bộ thư giãn trong công viên vào một ngày nắng đẹp. Người tạo ra nó, Guido Van Rossom, muốn tạo ra một ngôn ngữ dễ đọc như truyện tranh. Trong khi các ngôn ngữ khác sử dụng hàng tỷ dấu ngoặc nhọn và dấu chấm phẩy khó hiểu thì Python chỉ sử dụng các khoảng trắng đơn giản. Nó sạch sẽ, thanh lịch và rất lịch sự. Python là công cụ yêu thích của các bậc thầy về trí tuệ nhân tạo và khoa học dữ liệu. Khi bạn nhìn thấy một video giả mạo sâu sắc hoặc khi bạn yêu cầu ChatGpt viết một bài thơ về con mèo của bạn, Python chính là bộ não đằng sau bức màn. Nó cũng được NASA sử dụng để phân tích dữ liệu không gian và Netflix để đề xuất những bộ phim mà bạn thực sự thích. Nó có phải là nhanh nhất không? No. Python giống như một con rùa khổng lồ thân thiện. Nó di chuyển chậm hơn C++, nhưng nó mang theo một thư viện vô tận các công cụ ma thuật trên lưng. Nếu bạn là sinh viên và muốn viết chương trình đầu tiên trong 5 phút thì Python là người bạn tốt nhất của bạn. Đó là tấm thảm chào mừng toàn bộ thế giới công nghệ. Và đây hiện là kỹ năng được yêu cầu nhiều nhất cho tương lai của AI, SQL. Hãy tưởng tượng một thư viện với hàng tỷ cuốn sách, nhưng tất cả chúng đều bị vứt trên sàn thành một đống lộn xộn khổng lồ. Làm thế nào để bạn tìm thấy một tên cụ thể trên trang 42 của một cuốn sách ngẫu nhiên? Bạn gọi SQL, phát âm là SQL. SQL không phải để xây dựng trò chơi hoặc làm cho ứng dụng hoạt động. Đó là để nói chuyện với cơ sở dữ liệu. Hãy coi SQL như một thanh tìm kiếm kỳ diệu cho thông tin của thế giới. Bạn không nói cho máy tính biết cách tìm kiếm. Bạn chỉ cần nói với nó những gì bạn muốn. Bạn nói, \"Này máy tính, cho tôi danh sách tất cả người dùng đã mua áo hoodie màu xanh vào tháng 10.\" Bùm. Nó được thực hiện trong một phần nghìn giây. Mỗi khi bạn đăng nhập vào một trang web, kiểm tra điểm cao trong trò chơi hoặc tìm kiếm sản phẩm trên Amazon, một truy vấn SQL sẽ chạy ở chế độ nền, đào bới hàng núi dữ liệu. Trong thế giới hiện đại, dữ liệu là loại dầu mới và SQL là máy khoan công nghệ cao giúp đưa dữ liệu ra khỏi mặt đất. Đó là một siêu năng lực thầm lặng, vô hình nhưng vô cùng cần thiết. PHP. Một số người nói PHP đã lỗi thời, nhưng nó giống như một cửa hàng pizza địa phương đã mở được 30 năm. Nó vẫn ở đó vì pizza rất ngon và nó không bao giờ làm bạn thất vọng. PHP được xây dựng riêng cho web. Trước PHP, việc tạo một trang web thực hiện những việc như lưu tài khoản cũng giống như chế tạo một con tàu tên lửa. PHP khiến việc này trở nên dễ dàng như việc xây dựng bằng Lego. Đó là lý do Wikipedia tồn tại, cho phép cả thế giới chia sẻ kiến ​​thức. Đó cũng là thứ mà Mark Zuckerberg đã sử dụng để xây dựng phiên bản đầu tiên của Facebook trong phòng ký túc xá Harvard của mình. Thậm chí ngày nay, gần một nửa số trang web bạn truy cập đều được cung cấp bởi PHP, đặc biệt nếu chúng sử dụng WordPress. Nó rất dễ tiếp cận đối với người mới bắt đầu vì bạn có thể thấy những thay đổi của mình ngay lập tức trên trình duyệt. Trong khi các ngôn ngữ khác cố gắng trở nên cầu kỳ và phức tạp thì PHP chỉ muốn hoàn thành công việc. Chính người sống sót kỳ cựu trong kỷ nguyên Internet đã giúp biến trang web từ một tập hợp các trang nhàm chán thành một thế giới xã hội khổng lồ. Nhanh. Trong một thời gian dài, việc tạo ứng dụng cho iPhone giống như việc viết một cuốn sách bằng chiếc máy đánh chữ cũ rỉ sét. Ngôn ngữ đó được gọi là Objective C. Sau đó vào năm 2014, Apple phát hành Swift và nó giống như việc chuyển sang iPad công nghệ cao có bút stylus. Swift nhanh, bóng bẩy và rất đẹp mắt. Apple đã thiết kế Swift để đảm bảo an toàn về mặt thiết kế và nó giống như một chiếc ô tô tự động hỏng trước khi bạn tông vào tường. Nó cố gắng phát hiện lỗi của bạn khi bạn đang nhập để ứng dụng của bạn không gặp sự cố khi mọi người đang sử dụng chúng. Nếu bạn mơ thấy trò chơi hoặc ứng dụng của riêng mình trên App Store, Swift chính là tấm vé VIP của bạn. Nó được tối ưu hóa hoàn hảo cho pin của iPhone, nghĩa là các ứng dụng của bạn sẽ không tiêu hao điện thoại sau 10 phút. Đó là đứa trẻ tuyệt vời của các ngôn ngữ dành riêng cho hệ sinh thái Apple. Phong cách và cực kỳ mạnh mẽ cho mọi thứ có màn hình cảm ứng. Go hay Golang được tạo ra bởi các kỹ sư thiên tài tại Google vì họ mệt mỏi khi phải chờ đợi hệ thống khổng lồ của mình hoạt động xong. Họ muốn một ngôn ngữ nhanh như C++ nhưng dễ đọc như Python. Đó là giấc mơ của các kỹ sư hiện đại. Siêu năng lực cờ vây được gọi là sự đồng thời. Hãy tưởng tượng một ngôn ngữ bình thường giống như một người cố gắng phục vụ 1.000 khách hàng tại quán cà phê. Nó chậm rãi và căng thẳng. Go giống như một người quản lý có thể thuê ngay 1.000 robot nhỏ, siêu nhanh để phục vụ tất cả những khách hàng đó cùng một lúc. Đây là lý do tại sao Go là vua của đám mây. Khi bạn tải ảnh của mình lên Google Photos hoặc sử dụng một ứng dụng lớn không bao giờ bị chậm, ngay cả với hàng triệu người dùng, Go có thể là người quản lý tất cả các kết nối đó một cách bí mật. Nó đơn giản, nhanh chóng và được xây dựng cho quy mô lớn của Internet hiện đại. Đó là ngôn ngữ dành cho người lao động tối thượng, Rust. Cuối cùng, chúng tôi gặp Rust. Trong 40 năm, các lập trình viên đã phải đưa ra một lựa chọn đầy đau đớn. Bạn muốn một ngôn ngữ nhanh như C++ hay một ngôn ngữ an toàn như Java? Bạn không thể có cả hai. Sau đó Rust xuất hiện và nói, \"Hãy xem cái này.\" Rust giống như một kiến ​​trúc sư bậc thầy rất nghiêm khắc nhưng tài giỏi. Nó sẽ không cho phép bạn bắt đầu xây dựng cho đến khi nó kiểm tra từng bu lông và ốc vít trong bản thiết kế của bạn. Nó có một tính năng gọi là trình kiểm tra khoản vay giúp ngăn chặn 99% lỗ hổng bảo mật mà tin tặc thường sử dụng. Vì điều này, những người thông minh nhất tại NASA, Microsoft và thậm chí cả nhóm Linux đang chuyển sang Rust. Nó khá khó để học. Nó giống như học lái máy bay chiến đấu thay vì máy bay giấy. Nhưng một khi bạn thành thạo nó, bạn đang xây dựng phần mềm không thể hack được và nhanh như chớp. Nó là người bảo vệ tương lai, đảm bảo rằng khi thế giới của chúng ta ngày càng kỹ thuật số hơn, các bệnh viện, ngân hàng và lưới điện của chúng ta luôn an toàn trước các sự cố và tấn công. Sẵn sàng để có được siêu năng lực đầu tiên của bạn? Đừng chỉ xem bắt đầu xây dựng. Chọn một ngôn ngữ. Viết dòng mã đầu tiên của bạn và chia sẻ tiến trình của bạn trong phần bình luận bên dưới. Nếu hướng dẫn này giúp bạn tìm ra con đường của mình, hãy nhấn thích và đăng ký. Tương lai đang chờ mã của bạn. Hãy bắt đầu.",
+  "segments": [
+    {
+      "text": "C.",
+      "viText": "C.",
+      "start": 0,
+      "duration": 2
+    },
+    {
+      "text": "The grumpy grandfather of the Silicon Valley.",
+      "viText": "Ông nội gắt gỏng của Thung lũng Silicon.",
+      "start": 2,
+      "duration": 2.96
+    },
+    {
+      "text": "Imagine you're at a construction site.",
+      "viText": "Hãy tưởng tượng bạn đang ở một công trường xây dựng.",
+      "start": 4.96,
+      "duration": 2.5
+    },
+    {
+      "text": "Most people use pre-made walls, but C is the guy who insists on making his own bricks from scratch by mixing sand and water.",
+      "viText": "Hầu hết mọi người đều sử dụng những bức tường làm sẵn, nhưng C là anh chàng nhất quyết tự làm gạch từ đầu bằng cách trộn cát và nước.",
+      "start": 7.46,
+      "duration": 8.17
+    },
+    {
+      "text": "Born in 1972 at Bell Lab, C is the grandpa of the coding world.",
+      "viText": "Sinh năm 1972 tại Bell Lab, C là ông nội của thế giới mã hóa.",
+      "start": 15.63,
+      "duration": 4.15
+    },
+    {
+      "text": "He's old, he's grumpy, and he doesn't have a delete button for your mistakes.",
+      "viText": "Anh ấy già rồi, anh ấy gắt gỏng và anh ấy không có nút xóa lỗi của bạn.",
+      "start": 19.78,
+      "duration": 5.07
+    },
+    {
+      "text": "If you tell him to do something stupid, he won't stop you.",
+      "viText": "Nếu bạn bảo anh ấy làm điều gì đó ngu ngốc, anh ấy sẽ không ngăn cản bạn.",
+      "start": 24.85,
+      "duration": 3.82
+    },
+    {
+      "text": "He'll just let the whole building fall.",
+      "viText": "Anh ta sẽ để cả tòa nhà sụp đổ.",
+      "start": 28.67,
+      "duration": 2.57
+    },
+    {
+      "text": "In C, you have to manage the computer's memory yourself.",
+      "viText": "Trong C, bạn phải tự quản lý bộ nhớ của máy tính.",
+      "start": 31.24,
+      "duration": 3.69
+    },
+    {
+      "text": "It's like being a chef who has to not only cook the meal, but also personally wash every single plate, scrub the floor, and count every grain of salt.",
+      "viText": "Nó giống như việc trở thành một đầu bếp, người không chỉ phải nấu bữa ăn mà còn phải đích thân rửa từng chiếc đĩa, chà sàn và đếm từng hạt muối.",
+      "start": 34.93,
+      "duration": 9.88
+    },
+    {
+      "text": "If you forget, the kitchen explodes, or in tech terms, your computer, blue screens.",
+      "viText": "Nếu bạn quên, nhà bếp sẽ nổ tung, hay nói theo thuật ngữ công nghệ, máy tính của bạn sẽ bị màn hình xanh.",
+      "start": 44.81,
+      "duration": 5.47
+    },
+    {
+      "text": "But because it's so manual, it is incredibly fast.",
+      "viText": "Nhưng vì nó quá thủ công nên nó cực kỳ nhanh.",
+      "start": 50.28,
+      "duration": 3.29
+    },
+    {
+      "text": "Every major thing you use, the Windows on your laptop, the Linux on NASA's servers, and even the tiny computer chip inside your microwave is built with C.",
+      "viText": "Mọi thứ quan trọng bạn sử dụng, Windows trên máy tính xách tay, Linux trên máy chủ của NASA và thậm chí cả con chip máy tính nhỏ xíu bên trong lò vi sóng của bạn đều được xây dựng bằng C.",
+      "start": 53.57,
+      "duration": 10.14
+    },
+    {
+      "text": "Learning C is like learning to build an engine from scratch.",
+      "viText": "Học C giống như học cách xây dựng một công cụ từ đầu.",
+      "start": 63.71,
+      "duration": 3.95
+    },
+    {
+      "text": "It's hard, but once you know it, you understand how the soul of a machine actually breathes.",
+      "viText": "Khó nhưng một khi đã biết, bạn sẽ hiểu linh hồn của một cỗ máy thực sự thở như thế nào.",
+      "start": 67.66,
+      "duration": 6.06
+    },
+    {
+      "text": "C++.",
+      "viText": "C++.",
+      "start": 73.72,
+      "duration": 2
+    },
+    {
+      "text": "By the 1980s, C was getting overwhelmed.",
+      "viText": "Đến những năm 1980, C dần bị choáng ngợp.",
+      "start": 75.72,
+      "duration": 2.63
+    },
+    {
+      "text": "Projects were getting too big, like trying to build a city using only toothpicks.",
+      "viText": "Các dự án ngày càng trở nên quá lớn, giống như việc cố gắng xây dựng một thành phố chỉ bằng những chiếc tăm.",
+      "start": 78.35,
+      "duration": 5.33
+    },
+    {
+      "text": "So, a smart guy named Bja Strastrip decided to take C and give it a utility belt of new features.",
+      "viText": "Vì vậy, một chàng trai thông minh tên là Bja Strastrip đã quyết định lấy C và trao cho nó một vành đai tiện ích với các tính năng mới.",
+      "start": 83.68,
+      "duration": 6.39
+    },
+    {
+      "text": "He called it C++.",
+      "viText": "Ông gọi nó là C++.",
+      "start": 90.07,
+      "duration": 2
+    },
+    {
+      "text": "If C is a manual car, C++ is a Formula 1 racer with a thousand extra buttons.",
+      "viText": "Nếu C là một chiếc xe số tay thì C++ là một tay đua Công thức 1 có thêm một nghìn nút bấm.",
+      "start": 92.07,
+      "duration": 5.07
+    },
+    {
+      "text": "The coolest thing about C++ is object-oriented programming.",
+      "viText": "Điều thú vị nhất về C++ là lập trình hướng đối tượng.",
+      "start": 97.14,
+      "duration": 3.89
+    },
+    {
+      "text": "Think of it like a video game.",
+      "viText": "Hãy nghĩ về nó giống như một trò chơi điện tử.",
+      "start": 101.03,
+      "duration": 2
+    },
+    {
+      "text": "Instead of writing code for every single tree in a massive forest, you create a tree blueprint.",
+      "viText": "Thay vì viết mã cho từng cái cây trong một khu rừng rộng lớn, bạn tạo một bản thiết kế cây.",
+      "start": 103.03,
+      "duration": 6.26
+    },
+    {
+      "text": "Then you just press a copy paste button to pop out a thousand different trees.",
+      "viText": "Sau đó bạn chỉ cần nhấn nút sao chép và dán để hiện ra hàng nghìn cây khác nhau.",
+      "start": 109.29,
+      "duration": 5.14
+    },
+    {
+      "text": "This is why C++ is the undisputed king of the gaming world.",
+      "viText": "Đây là lý do tại sao C++ là ông vua không thể tranh cãi của thế giới game.",
+      "start": 114.43,
+      "duration": 3.89
+    },
+    {
+      "text": "If you've played Fortnite Cyberpunk 2077 or anything that looks breathtaking, you've seen C++ in action.",
+      "viText": "Nếu bạn đã chơi Fortnite Cyberpunk 2077 hoặc bất cứ thứ gì có vẻ ngoạn mục thì bạn đã thấy C++ hoạt động.",
+      "start": 118.32,
+      "duration": 6.85
+    },
+    {
+      "text": "It is notoriously difficult to learn because it has so many rules, but it's the ultimate power tool.",
+      "viText": "Nó nổi tiếng là khó học vì nó có rất nhiều quy tắc, nhưng nó là công cụ quyền lực tối thượng.",
+      "start": 125.17,
+      "duration": 6.59
+    },
+    {
+      "text": "It's the language of highstakes performance where every microssecond and every pixel counts.",
+      "viText": "Đó là ngôn ngữ của hiệu suất đặt cược cao trong đó mỗi micro giây và mỗi pixel đều có giá trị.",
+      "start": 131.76,
+      "duration": 6.06
+    },
+    {
+      "text": "If you want to be a top tier game developer, C++ is your golden sword.",
+      "viText": "Nếu bạn muốn trở thành nhà phát triển trò chơi hàng đầu, C++ chính là thanh kiếm vàng dành cho bạn.",
+      "start": 137.82,
+      "duration": 4.61
+    },
+    {
+      "text": "Java.",
+      "viText": "Java.",
+      "start": 142.43,
+      "duration": 2
+    },
+    {
+      "text": "In the mid '90s, we had a major problem.",
+      "viText": "Vào giữa những năm 90, chúng tôi gặp phải một vấn đề lớn.",
+      "start": 144.43,
+      "duration": 2.63
+    },
+    {
+      "text": "Code written for one computer wouldn't work on another.",
+      "viText": "Mã được viết cho một máy tính sẽ không hoạt động trên máy tính khác.",
+      "start": 147.06,
+      "duration": 3.62
+    },
+    {
+      "text": "It was like a DVD that only worked in one specific brand of player.",
+      "viText": "Nó giống như một chiếc DVD chỉ hoạt động được với một nhãn hiệu đầu phát cụ thể.",
+      "start": 150.68,
+      "duration": 4.41
+    },
+    {
+      "text": "Java arrived with a cool catchphrase, write once, run anywhere.",
+      "viText": "Java xuất hiện với một khẩu hiệu thú vị, viết một lần, chạy mọi nơi.",
+      "start": 155.09,
+      "duration": 4.15
+    },
+    {
+      "text": "It uses something called the JVM, which acts like a universal translator or a magical portal.",
+      "viText": "Nó sử dụng một thứ gọi là JVM, hoạt động giống như một trình dịch phổ quát hoặc một cổng thông tin ma thuật.",
+      "start": 159.24,
+      "duration": 6.13
+    },
+    {
+      "text": "Java is like that one school principal who is super obsessed with rules, but only because he wants you to stay safe.",
+      "viText": "Java giống như một hiệu trưởng trường học cực kỳ bị ám ảnh bởi các quy tắc, nhưng chỉ vì ông ấy muốn bạn được an toàn.",
+      "start": 165.37,
+      "duration": 7.64
+    },
+    {
+      "text": "He won't let you touch the scary parts of the computer directly.",
+      "viText": "Anh ấy sẽ không cho bạn chạm trực tiếp vào những bộ phận đáng sợ của máy tính.",
+      "start": 173.01,
+      "duration": 4.22
+    },
+    {
+      "text": "Java has a garbage collector, which is basically a robotic vacuum cleaner that follows you around and cleans up your coding mess automatically so the computer doesn't crash.",
+      "viText": "Java có một trình thu gom rác, về cơ bản là một robot hút bụi đi theo bạn và tự động dọn dẹp mớ mã hóa lộn xộn của bạn để máy tính không gặp sự cố.",
+      "start": 177.23,
+      "duration": 11.39
+    },
+    {
+      "text": "Because it's so safe and organized, big banks and giant companies absolutely love it.",
+      "viText": "Bởi vì nó rất an toàn và có tổ chức nên các ngân hàng lớn và các công ty khổng lồ hoàn toàn yêu thích nó.",
+      "start": 188.62,
+      "duration": 5.6
+    },
+    {
+      "text": "It's also the original language that built the Android app empire.",
+      "viText": "Nó cũng là ngôn ngữ gốc đã xây dựng nên đế chế ứng dụng Android.",
+      "start": 194.22,
+      "duration": 4.35
+    },
+    {
+      "text": "It might be a bit wordy, you have to type a long sentence just to say hello, but it's the most reliable bodyguard in the business.",
+      "viText": "Có thể hơi dài dòng, phải gõ một câu dài chỉ để chào hỏi nhưng đó lại là vệ sĩ đáng tin cậy nhất trong doanh nghiệp.",
+      "start": 198.57,
+      "duration": 8.56
+    },
+    {
+      "text": "When stability is more important than speed, Java is the boss.",
+      "viText": "Khi sự ổn định quan trọng hơn tốc độ thì Java chính là ông chủ.",
+      "start": 207.13,
+      "duration": 4.08
+    },
+    {
+      "text": "JavaScript, the chaotic artist of the web.",
+      "viText": "JavaScript, nghệ sĩ hỗn loạn của web.",
+      "start": 211.21,
+      "duration": 2.77
+    },
+    {
+      "text": "First, a warning.",
+      "viText": "Đầu tiên, một cảnh báo.",
+      "start": 213.98,
+      "duration": 2
+    },
+    {
+      "text": "Don't let the name fool you.",
+      "viText": "Đừng để cái tên đánh lừa bạn.",
+      "start": 215.98,
+      "duration": 2
+    },
+    {
+      "text": "JavaScript has almost nothing to do with Java.",
+      "viText": "JavaScript hầu như không liên quan gì đến Java.",
+      "start": 217.98,
+      "duration": 3.03
+    },
+    {
+      "text": "It's like the difference between a car and a carpet.",
+      "viText": "Nó giống như sự khác biệt giữa một chiếc ô tô và một tấm thảm.",
+      "start": 221.01,
+      "duration": 3.42
+    },
+    {
+      "text": "JavaScript was created in just 10 days by a guy named Brendan Ike.",
+      "viText": "JavaScript được tạo ra chỉ trong 10 ngày bởi một anh chàng tên Brendan Ike.",
+      "start": 224.43,
+      "duration": 4.35
+    },
+    {
+      "text": "At first, people thought it was a joke, a tiny language just for making annoying pop-ups or flashing text on websites.",
+      "viText": "Lúc đầu, mọi người nghĩ đó là một trò đùa, một ngôn ngữ nhỏ bé chỉ để tạo ra các cửa sổ bật lên hoặc văn bản nhấp nháy khó chịu trên các trang web.",
+      "start": 228.78,
+      "duration": 7.77
+    },
+    {
+      "text": "Today, JavaScript has had the greatest glow up in history.",
+      "viText": "Ngày nay, JavaScript đã có sự phát triển rực rỡ nhất trong lịch sử.",
+      "start": 236.55,
+      "duration": 3.82
+    },
+    {
+      "text": "It is the soul of the internet.",
+      "viText": "Nó là linh hồn của Internet.",
+      "start": 240.37,
+      "duration": 2.04
+    },
+    {
+      "text": "If a website does something cool, like showing a live chat, moving a map, or updating your likes without refreshing the page, JavaScript is the one doing the heavy lifting.",
+      "viText": "Nếu một trang web thực hiện điều gì đó thú vị, chẳng hạn như hiển thị cuộc trò chuyện trực tiếp, di chuyển bản đồ hoặc cập nhật lượt thích của bạn mà không làm mới trang, thì JavaScript sẽ là công việc nặng nhọc nhất.",
+      "start": 242.41,
+      "duration": 11.33
+    },
+    {
+      "text": "It's the only language that runs inside every web browser on Earth.",
+      "viText": "Đó là ngôn ngữ duy nhất chạy bên trong mọi trình duyệt web trên Trái đất.",
+      "start": 253.74,
+      "duration": 4.41
+    },
+    {
+      "text": "It's a bit weird.",
+      "viText": "Nó hơi kỳ lạ một chút.",
+      "start": 258.15,
+      "duration": 2
+    },
+    {
+      "text": "Sometimes it has funny logic that makes expert programmers pull their hair out.",
+      "viText": "Đôi khi nó có những logic hài hước khiến các lập trình viên lão luyện phải dựng tóc gáy.",
+      "start": 260.15,
+      "duration": 5.2
+    },
+    {
+      "text": "For example, if you ask JavaScript to add a number to a word, it might just give you a weird soup of text.",
+      "viText": "Ví dụ: nếu bạn yêu cầu JavaScript thêm một số vào một từ, nó có thể chỉ cung cấp cho bạn một chuỗi văn bản kỳ lạ.",
+      "start": 265.35,
+      "duration": 6.98
+    },
+    {
+      "text": "But despite its quirks, it is the most popular language in the world.",
+      "viText": "Nhưng bất chấp những điều kỳ quặc, nó vẫn là ngôn ngữ phổ biến nhất trên thế giới.",
+      "start": 272.33,
+      "duration": 4.54
+    },
+    {
+      "text": "If you want to build the next Tik Tok, Instagram, or YouTube, JavaScript is the first door you need to open.",
+      "viText": "Nếu bạn muốn xây dựng Tik Tok, Instagram hoặc YouTube tiếp theo, JavaScript là cánh cửa đầu tiên bạn cần mở.",
+      "start": 276.87,
+      "duration": 7.11
+    },
+    {
+      "text": "Python.",
+      "viText": "Trăn.",
+      "start": 283.98,
+      "duration": 2
+    },
+    {
+      "text": "If coding were a sport, Python would be a relaxing walk in the park on a sunny day.",
+      "viText": "Nếu viết mã là một môn thể thao thì Python sẽ là một cuộc dạo bộ thư giãn trong công viên vào một ngày nắng đẹp.",
+      "start": 285.98,
+      "duration": 5.47
+    },
+    {
+      "text": "Its creator, Guido Van Rossom, wanted to make a language that was as easy to read as a comic book.",
+      "viText": "Người tạo ra nó, Guido Van Rossom, muốn tạo ra một ngôn ngữ dễ đọc như truyện tranh.",
+      "start": 291.45,
+      "duration": 6.45
+    },
+    {
+      "text": "While other languages use a billion confusing curly brackets and semicolons, Python just uses simple spaces.",
+      "viText": "Trong khi các ngôn ngữ khác sử dụng hàng tỷ dấu ngoặc nhọn và dấu chấm phẩy khó hiểu thì Python chỉ sử dụng các khoảng trắng đơn giản.",
+      "start": 297.9,
+      "duration": 7.11
+    },
+    {
+      "text": "It's clean, it's elegant, and it's very polite.",
+      "viText": "Nó sạch sẽ, thanh lịch và rất lịch sự.",
+      "start": 305.01,
+      "duration": 3.1
+    },
+    {
+      "text": "Python is the favorite tool for the masters of artificial intelligence and data science.",
+      "viText": "Python là công cụ yêu thích của các bậc thầy về trí tuệ nhân tạo và khoa học dữ liệu.",
+      "start": 308.11,
+      "duration": 5.8
+    },
+    {
+      "text": "When you see a deep fake video or when you ask ChatGpt to write a poem about your cat, Python is the brain behind the curtain.",
+      "viText": "Khi bạn nhìn thấy một video giả mạo sâu sắc hoặc khi bạn yêu cầu ChatGpt viết một bài thơ về con mèo của bạn, Python chính là bộ não đằng sau bức màn.",
+      "start": 313.91,
+      "duration": 8.3
+    },
+    {
+      "text": "It's also used by NASA to analyze space data and by Netflix to suggest movies you'll actually like.",
+      "viText": "Nó cũng được NASA sử dụng để phân tích dữ liệu không gian và Netflix để đề xuất những bộ phim mà bạn thực sự thích.",
+      "start": 322.21,
+      "duration": 6.52
+    },
+    {
+      "text": "Is it the fastest?",
+      "viText": "Nó có phải là nhanh nhất không?",
+      "start": 328.73,
+      "duration": 2
+    },
+    {
+      "text": "No.",
+      "viText": "No.",
+      "start": 330.73,
+      "duration": 2
+    },
+    {
+      "text": "Python is like a giant friendly turtle.",
+      "viText": "Python giống như một con rùa khổng lồ thân thiện.",
+      "start": 332.73,
+      "duration": 2.57
+    },
+    {
+      "text": "It moves slower than C++, but it carries an infinite library of magical tools on its back.",
+      "viText": "Nó di chuyển chậm hơn C++, nhưng nó mang theo một thư viện vô tận các công cụ ma thuật trên lưng.",
+      "start": 335.3,
+      "duration": 5.93
+    },
+    {
+      "text": "If you are a student and want to write your first program in 5 minutes, Python is your best friend.",
+      "viText": "Nếu bạn là sinh viên và muốn viết chương trình đầu tiên trong 5 phút thì Python là người bạn tốt nhất của bạn.",
+      "start": 341.23,
+      "duration": 6.52
+    },
+    {
+      "text": "It's the welcome mat to the entire world of technology.",
+      "viText": "Đó là tấm thảm chào mừng toàn bộ thế giới công nghệ.",
+      "start": 347.75,
+      "duration": 3.62
+    },
+    {
+      "text": "And it's currently the most in demand skill for the future of AI, SQL.",
+      "viText": "Và đây hiện là kỹ năng được yêu cầu nhiều nhất cho tương lai của AI, SQL.",
+      "start": 351.37,
+      "duration": 4.61
+    },
+    {
+      "text": "Imagine a library with a billion books, but they're all thrown on the floor in a giant messy pile.",
+      "viText": "Hãy tưởng tượng một thư viện với hàng tỷ cuốn sách, nhưng tất cả chúng đều bị vứt trên sàn thành một đống lộn xộn khổng lồ.",
+      "start": 355.98,
+      "duration": 6.45
+    },
+    {
+      "text": "How do you find one specific name on page 42 of a random book?",
+      "viText": "Làm thế nào để bạn tìm thấy một tên cụ thể trên trang 42 của một cuốn sách ngẫu nhiên?",
+      "start": 362.43,
+      "duration": 4.08
+    },
+    {
+      "text": "You call SQL, pronounced SQL.",
+      "viText": "Bạn gọi SQL, phát âm là SQL.",
+      "start": 366.51,
+      "duration": 2
+    },
+    {
+      "text": "SQL isn't for building games or making apps fly.",
+      "viText": "SQL không phải để xây dựng trò chơi hoặc làm cho ứng dụng hoạt động.",
+      "start": 368.51,
+      "duration": 3.16
+    },
+    {
+      "text": "It's for talking to databases.",
+      "viText": "Đó là để nói chuyện với cơ sở dữ liệu.",
+      "start": 371.67,
+      "duration": 2
+    },
+    {
+      "text": "Think of SQL as a magic search bar for the world's information.",
+      "viText": "Hãy coi SQL như một thanh tìm kiếm kỳ diệu cho thông tin của thế giới.",
+      "start": 373.67,
+      "duration": 4.15
+    },
+    {
+      "text": "You don't tell the computer how to search.",
+      "viText": "Bạn không nói cho máy tính biết cách tìm kiếm.",
+      "start": 377.82,
+      "duration": 2.77
+    },
+    {
+      "text": "You just tell it what you want.",
+      "viText": "Bạn chỉ cần nói với nó những gì bạn muốn.",
+      "start": 380.59,
+      "duration": 2.04
+    },
+    {
+      "text": "You say, \"Hey computer, give me a list of all users who bought a blue hoodie in October.\" Boom.",
+      "viText": "Bạn nói, \"Này máy tính, cho tôi danh sách tất cả người dùng đã mua áo hoodie màu xanh vào tháng 10.\" Bùm.",
+      "start": 382.63,
+      "duration": 6.26
+    },
+    {
+      "text": "It's done in a millisecond.",
+      "viText": "Nó được thực hiện trong một phần nghìn giây.",
+      "start": 388.89,
+      "duration": 2
+    },
+    {
+      "text": "Every time you log into a website, check your high score in a game, or search for a product on Amazon, a SQL query is running in the background, digging through mountains of data.",
+      "viText": "Mỗi khi bạn đăng nhập vào một trang web, kiểm tra điểm cao trong trò chơi hoặc tìm kiếm sản phẩm trên Amazon, một truy vấn SQL sẽ chạy ở chế độ nền, đào bới hàng núi dữ liệu.",
+      "start": 390.89,
+      "duration": 11.79
+    },
+    {
+      "text": "In the modern world, data is the new oil, and SQL is the high-tech drill that gets it out of the ground.",
+      "viText": "Trong thế giới hiện đại, dữ liệu là loại dầu mới và SQL là máy khoan công nghệ cao giúp đưa dữ liệu ra khỏi mặt đất.",
+      "start": 402.68,
+      "duration": 6.85
+    },
+    {
+      "text": "It's a quiet, invisible, but absolutely essential superpower.",
+      "viText": "Đó là một siêu năng lực thầm lặng, vô hình nhưng vô cùng cần thiết.",
+      "start": 409.53,
+      "duration": 4.02
+    },
+    {
+      "text": "PHP.",
+      "viText": "PHP.",
+      "start": 413.55,
+      "duration": 2
+    },
+    {
+      "text": "Some people say PHP is old-fashioned, but it's like that one local pizza shop that has been open for 30 years.",
+      "viText": "Một số người nói PHP đã lỗi thời, nhưng nó giống như một cửa hàng pizza địa phương đã mở được 30 năm.",
+      "start": 415.55,
+      "duration": 7.24
+    },
+    {
+      "text": "It's still there because the pizza is great and it never lets you down.",
+      "viText": "Nó vẫn ở đó vì pizza rất ngon và nó không bao giờ làm bạn thất vọng.",
+      "start": 422.79,
+      "duration": 4.68
+    },
+    {
+      "text": "PHP was built specifically for the web.",
+      "viText": "PHP được xây dựng riêng cho web.",
+      "start": 427.47,
+      "duration": 2.57
+    },
+    {
+      "text": "Before PHP, making a website that did things like saving accounts was like building a rocket ship.",
+      "viText": "Trước PHP, việc tạo một trang web thực hiện những việc như lưu tài khoản cũng giống như chế tạo một con tàu tên lửa.",
+      "start": 430.04,
+      "duration": 6.45
+    },
+    {
+      "text": "PHP made it as easy as building with Legos.",
+      "viText": "PHP khiến việc này trở nên dễ dàng như việc xây dựng bằng Lego.",
+      "start": 436.49,
+      "duration": 2.83
+    },
+    {
+      "text": "It's the reason Wikipedia exists, allowing the whole world to share knowledge.",
+      "viText": "Đó là lý do Wikipedia tồn tại, cho phép cả thế giới chia sẻ kiến ​​thức.",
+      "start": 439.32,
+      "duration": 5.14
+    },
+    {
+      "text": "It's also what Mark Zuckerberg used to build the very first version of Facebook in his Harvard dorm room.",
+      "viText": "Đó cũng là thứ mà Mark Zuckerberg đã sử dụng để xây dựng phiên bản đầu tiên của Facebook trong phòng ký túc xá Harvard của mình.",
+      "start": 444.46,
+      "duration": 6.92
+    },
+    {
+      "text": "Even today, almost half of the websites you visit are powered by PHP, especially if they use WordPress.",
+      "viText": "Thậm chí ngày nay, gần một nửa số trang web bạn truy cập đều được cung cấp bởi PHP, đặc biệt nếu chúng sử dụng WordPress.",
+      "start": 451.38,
+      "duration": 6.78
+    },
+    {
+      "text": "It's very approachable for beginners because you can see your changes instantly in a browser.",
+      "viText": "Nó rất dễ tiếp cận đối với người mới bắt đầu vì bạn có thể thấy những thay đổi của mình ngay lập tức trên trình duyệt.",
+      "start": 458.16,
+      "duration": 6.13
+    },
+    {
+      "text": "While other languages try to be fancy and complex, PHP just wants to get the job done.",
+      "viText": "Trong khi các ngôn ngữ khác cố gắng trở nên cầu kỳ và phức tạp thì PHP chỉ muốn hoàn thành công việc.",
+      "start": 464.29,
+      "duration": 5.66
+    },
+    {
+      "text": "It is the veteran survivor of the internet era that helped turn the web from a collection of boring pages into a giant social world.",
+      "viText": "Chính người sống sót kỳ cựu trong kỷ nguyên Internet đã giúp biến trang web từ một tập hợp các trang nhàm chán thành một thế giới xã hội khổng lồ.",
+      "start": 469.95,
+      "duration": 8.69
+    },
+    {
+      "text": "Swift.",
+      "viText": "Nhanh.",
+      "start": 478.64,
+      "duration": 2
+    },
+    {
+      "text": "For a long time, making apps for iPhones was like trying to write a book using an old rusty typewriter.",
+      "viText": "Trong một thời gian dài, việc tạo ứng dụng cho iPhone giống như việc viết một cuốn sách bằng chiếc máy đánh chữ cũ rỉ sét.",
+      "start": 480.64,
+      "duration": 6.78
+    },
+    {
+      "text": "That language was called Objective C.",
+      "viText": "Ngôn ngữ đó được gọi là Objective C.",
+      "start": 487.42,
+      "duration": 2.44
+    },
+    {
+      "text": "Then in 2014, Apple released Swift, and it was like switching to a high-tech iPad with a stylus.",
+      "viText": "Sau đó vào năm 2014, Apple phát hành Swift và nó giống như việc chuyển sang iPad công nghệ cao có bút stylus.",
+      "start": 489.86,
+      "duration": 6.32
+    },
+    {
+      "text": "Swift is fast, sleek, and very pretty to look at.",
+      "viText": "Swift nhanh, bóng bẩy và rất đẹp mắt.",
+      "start": 496.18,
+      "duration": 3.23
+    },
+    {
+      "text": "Apple designed Swift to be safe by design, and it's like a car that automatically breaks before you hit a wall.",
+      "viText": "Apple đã thiết kế Swift để đảm bảo an toàn về mặt thiết kế và nó giống như một chiếc ô tô tự động hỏng trước khi bạn tông vào tường.",
+      "start": 499.41,
+      "duration": 7.31
+    },
+    {
+      "text": "It tries to catch your mistakes while you are typing so your apps don't crash when people are using them.",
+      "viText": "Nó cố gắng phát hiện lỗi của bạn khi bạn đang nhập để ứng dụng của bạn không gặp sự cố khi mọi người đang sử dụng chúng.",
+      "start": 506.72,
+      "duration": 6.92
+    },
+    {
+      "text": "If you dream of seeing your own game or app on the App Store, Swift is your VIP ticket.",
+      "viText": "Nếu bạn mơ thấy trò chơi hoặc ứng dụng của riêng mình trên App Store, Swift chính là tấm vé VIP của bạn.",
+      "start": 513.64,
+      "duration": 5.73
+    },
+    {
+      "text": "It's optimized perfectly for the iPhone's battery, meaning your apps won't drain your phone in 10 minutes.",
+      "viText": "Nó được tối ưu hóa hoàn hảo cho pin của iPhone, nghĩa là các ứng dụng của bạn sẽ không tiêu hao điện thoại sau 10 phút.",
+      "start": 519.37,
+      "duration": 6.98
+    },
+    {
+      "text": "It's the cool kid of languages exclusive to the Apple ecosystem.",
+      "viText": "Đó là đứa trẻ tuyệt vời của các ngôn ngữ dành riêng cho hệ sinh thái Apple.",
+      "start": 526.35,
+      "duration": 4.22
+    },
+    {
+      "text": "Stylish and incredibly powerful for anything with a touch screen.",
+      "viText": "Phong cách và cực kỳ mạnh mẽ cho mọi thứ có màn hình cảm ứng.",
+      "start": 530.57,
+      "duration": 4.28
+    },
+    {
+      "text": "Go or Golang was created by the genius engineers at Google because they were tired of waiting for their giant systems to finish working.",
+      "viText": "Go hay Golang được tạo ra bởi các kỹ sư thiên tài tại Google vì họ mệt mỏi khi phải chờ đợi hệ thống khổng lồ của mình hoạt động xong.",
+      "start": 534.85,
+      "duration": 8.96
+    },
+    {
+      "text": "They wanted a language that was as fast as C++ but as easy to read as Python.",
+      "viText": "Họ muốn một ngôn ngữ nhanh như C++ nhưng dễ đọc như Python.",
+      "start": 543.81,
+      "duration": 5.07
+    },
+    {
+      "text": "It's the modern engineers dream.",
+      "viText": "Đó là giấc mơ của các kỹ sư hiện đại.",
+      "start": 548.88,
+      "duration": 2.11
+    },
+    {
+      "text": "Go superpower is something called concurrency.",
+      "viText": "Siêu năng lực cờ vây được gọi là sự đồng thời.",
+      "start": 550.99,
+      "duration": 3.03
+    },
+    {
+      "text": "Imagine a normal language is like one person trying to serve 1,000 customers at a coffee shop.",
+      "viText": "Hãy tưởng tượng một ngôn ngữ bình thường giống như một người cố gắng phục vụ 1.000 khách hàng tại quán cà phê.",
+      "start": 554.02,
+      "duration": 6.19
+    },
+    {
+      "text": "It's slow and stressful.",
+      "viText": "Nó chậm rãi và căng thẳng.",
+      "start": 560.21,
+      "duration": 2
+    },
+    {
+      "text": "Go is like a manager who can instantly hire 1,000 tiny, super fast robots to serve those customers all at once.",
+      "viText": "Go giống như một người quản lý có thể thuê ngay 1.000 robot nhỏ, siêu nhanh để phục vụ tất cả những khách hàng đó cùng một lúc.",
+      "start": 562.21,
+      "duration": 7.31
+    },
+    {
+      "text": "This is why Go is the king of the cloud.",
+      "viText": "Đây là lý do tại sao Go là vua của đám mây.",
+      "start": 569.52,
+      "duration": 2.63
+    },
+    {
+      "text": "When you upload your photos to Google Photos or use a massive app that never lags, even with millions of users, Go is likely the one managing all those connections behind the scenes.",
+      "viText": "Khi bạn tải ảnh của mình lên Google Photos hoặc sử dụng một ứng dụng lớn không bao giờ bị chậm, ngay cả với hàng triệu người dùng, Go có thể là người quản lý tất cả các kết nối đó một cách bí mật.",
+      "start": 572.15,
+      "duration": 11.99
+    },
+    {
+      "text": "It's simple, it's fast, and it's built for the massive scale of the modern internet.",
+      "viText": "Nó đơn giản, nhanh chóng và được xây dựng cho quy mô lớn của Internet hiện đại.",
+      "start": 584.14,
+      "duration": 5.53
+    },
+    {
+      "text": "It's the ultimate workerbe language, Rust.",
+      "viText": "Đó là ngôn ngữ dành cho người lao động tối thượng, Rust.",
+      "start": 589.67,
+      "duration": 2.77
+    },
+    {
+      "text": "Finally, we meet Rust.",
+      "viText": "Cuối cùng, chúng tôi gặp Rust.",
+      "start": 592.44,
+      "duration": 2
+    },
+    {
+      "text": "For 40 years, programmers had to make a painful choice.",
+      "viText": "Trong 40 năm, các lập trình viên đã phải đưa ra một lựa chọn đầy đau đớn.",
+      "start": 594.44,
+      "duration": 3.62
+    },
+    {
+      "text": "Do you want a language that is fast like C++ or a language that is safe like Java?",
+      "viText": "Bạn muốn một ngôn ngữ nhanh như C++ hay một ngôn ngữ an toàn như Java?",
+      "start": 598.06,
+      "duration": 5.4
+    },
+    {
+      "text": "You couldn't have both.",
+      "viText": "Bạn không thể có cả hai.",
+      "start": 603.46,
+      "duration": 2
+    },
+    {
+      "text": "Then Rust appeared and said, \"Watch this.\" Rust is like a very strict but brilliant master architect.",
+      "viText": "Sau đó Rust xuất hiện và nói, \"Hãy xem cái này.\" Rust giống như một kiến ​​trúc sư bậc thầy rất nghiêm khắc nhưng tài giỏi.",
+      "start": 605.46,
+      "duration": 6.65
+    },
+    {
+      "text": "It won't let you start building until it has checked every single bolt and screw in your blueprint.",
+      "viText": "Nó sẽ không cho phép bạn bắt đầu xây dựng cho đến khi nó kiểm tra từng bu lông và ốc vít trong bản thiết kế của bạn.",
+      "start": 612.11,
+      "duration": 6.52
+    },
+    {
+      "text": "It has a feature called the borrow checker that prevents 99% of the security holes that hackers usually use.",
+      "viText": "Nó có một tính năng gọi là trình kiểm tra khoản vay giúp ngăn chặn 99% lỗ hổng bảo mật mà tin tặc thường sử dụng.",
+      "start": 618.63,
+      "duration": 7.11
+    },
+    {
+      "text": "Because of this, the smartest people at NASA, Microsoft, and even the Linux team are switching to Rust.",
+      "viText": "Vì điều này, những người thông minh nhất tại NASA, Microsoft và thậm chí cả nhóm Linux đang chuyển sang Rust.",
+      "start": 625.74,
+      "duration": 6.78
+    },
+    {
+      "text": "It is quite difficult to learn.",
+      "viText": "Nó khá khó để học.",
+      "start": 632.52,
+      "duration": 2.04
+    },
+    {
+      "text": "It's like learning to fly a fighter jet instead of a paper airplane.",
+      "viText": "Nó giống như học lái máy bay chiến đấu thay vì máy bay giấy.",
+      "start": 634.56,
+      "duration": 4.48
+    },
+    {
+      "text": "But once you master it, you are building software that is unhackable and lightning fast.",
+      "viText": "Nhưng một khi bạn thành thạo nó, bạn đang xây dựng phần mềm không thể hack được và nhanh như chớp.",
+      "start": 639.04,
+      "duration": 5.8
+    },
+    {
+      "text": "It is the guardian of the future, ensuring that as our world gets more digital, our hospitals, banks, and power grids stay safe from crashes and attacks.",
+      "viText": "Nó là người bảo vệ tương lai, đảm bảo rằng khi thế giới của chúng ta ngày càng kỹ thuật số hơn, các bệnh viện, ngân hàng và lưới điện của chúng ta luôn an toàn trước các sự cố và tấn công.",
+      "start": 644.84,
+      "duration": 10.08
+    },
+    {
+      "text": "Ready to grab your first superpower?",
+      "viText": "Sẵn sàng để có được siêu năng lực đầu tiên của bạn?",
+      "start": 654.92,
+      "duration": 2.37
+    },
+    {
+      "text": "Don't just watch start building.",
+      "viText": "Đừng chỉ xem bắt đầu xây dựng.",
+      "start": 657.29,
+      "duration": 2.11
+    },
+    {
+      "text": "Pick one language.",
+      "viText": "Chọn một ngôn ngữ.",
+      "start": 659.4,
+      "duration": 2
+    },
+    {
+      "text": "Write your first line of code and share your progress in the comments below.",
+      "viText": "Viết dòng mã đầu tiên của bạn và chia sẻ tiến trình của bạn trong phần bình luận bên dưới.",
+      "start": 661.4,
+      "duration": 5.01
+    },
+    {
+      "text": "If this guide helped you find your path, hit like and subscribe.",
+      "viText": "Nếu hướng dẫn này giúp bạn tìm ra con đường của mình, hãy nhấn thích và đăng ký.",
+      "start": 666.41,
+      "duration": 4.22
+    },
+    {
+      "text": "The future is waiting for your code.",
+      "viText": "Tương lai đang chờ mã của bạn.",
+      "start": 670.63,
+      "duration": 2.37
+    },
+    {
+      "text": "Let's get started.",
+      "viText": "Hãy bắt đầu.",
+      "start": 673,
+      "duration": 2
+    }
+  ]
+}

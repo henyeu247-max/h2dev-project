@@ -1,0 +1,1625 @@
+{
+  "videoId": "jEEn4C2pjhk",
+  "title": "Calculus With Real Examples: Derivatives and Integrals Actually Applied",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 269,
+  "fullText": "A few weeks ago, I put out a video on calculus. Over a million of you watched it, and the comment section did not disappoint. Someone wrote, \"Okay, cool. Now explain it like I'm a 2-year-old.\" Another person said, \"I need the three-year-old version, apparently.\" And then this one, which I thought was the most honest thing in the whole comment section. Someone wrote, \"This did really help, but I wish you would do an actual example just so we can see how it all is used in practice.\" That last one said exactly what a lot of you were thinking. The first video explained what calculus is, why it was invented, what problem it was built to solve, but then a lot of you came back and said the same thing. Show me an actual example. Walk me through it. Do not just tell me a derivative measured change. Show me it measuring something. That is exactly what this video does. Every example comes from a situation you have already been in. Your car, your electricity bill, a pipe in a wall. No classrooms, no exam problems. just the actual tools used on real situations explained the way it should have been the first time. Um, by the end of this video, you will have watched derivatives and integrals work on real problems. You will understand why they're connected and you will be able to look at any changing situation and know which tool applies and what it will tell you. Um, before the examples, let's do a 90 secondond reset on what part one established. Everything in this video builds directly on three ideas. A limit is what a value approaches as something gets infinitely close to a point. It is the foundation that makes the rest of calculus possible. because calculus constantly works with things that get very close to a moment or a value without ever exactly reaching it. A derivative is the exact rate of change at one specific instant. Um not the average rate over a period, the rate right now at this moment. That distinction matters in every real application. An integral is a total built by adding up an infinite number of infinitely small pieces. When something changes continuously and you need to know the cumulative amount, that is the integral. Those are the three tools. Now, here's what they look like when they are actually used. A derivative is the instantaneous rate of change of one quantity with respect to another. This exists because average rates are not always useful. Knowing that a pipe lost 40 L over 8 hours tells you the average leak rate. It does not tell you how fast it was leaking at 3 a.m. which is what you need to know when the pressure rating spikes. You are driving on a highway. Your GPS logs your position every second. After 30 minutes, you have traveled 22 miles. That gives you an average speed of 44 mph. But your speedometer is not showing 44. It is showing your speed right now at this exact second. That real time reading is a derivative. It is calculating continuously how fast your position is changing at each instant. When you break hard, the derivative drops immediately. The average does not change until the full trip is recalculated. The key point when you need the rate at a specific moment, not an average across a period, you need a derivative. The power rule is the most commonly applied calculation in calculus. It says when a quantity is expressed as a variable raised to a power, the derivative is that power multiplied by the variable with the power reduced by one. This rule exists because most real world quantities that change distance, pressure, temperature, voltage can be described with formulas that involve variables raised to powers. The power rule gives you a direct path from that formula to the rate of change at any instant. Here's what's actually happening. A water tank, it is filling. The volume at any time follows the formula. volume equals 4 * time^ squared. A technician needs to know the flow rate, how fast water is entering at exactly the 10-minute mark. Apply the power rule to 4 * time^ squar. Bring the power of two down in front. Multiply by four. Reduce the power by one. The derivative is 8 * time. Plug in 10 minutes. The flow rate at that moment is 80 L per minute. exact uh not estimated from two separate readings calculated directly from the formula. The key point, the power rule converts a formula describing a quantity into a formula describing how fast that quantity is changing at any instant you choose. An integral is the total accumulated amount of a quantity that changes continuously over time. This exists because multiplication only works for totals when the rate is constant. If you drive at exactly 60 miles hour for 2 hours, distance equals rate time time, 120 m. But um if your speed changes every minute, which it always does, that formula breaks down. You cannot multiply one speed by the total time and get an accurate result. You need to add up every tiny slice of movement across every instant. This is the important part. Your electricity provider charges you based on total consumption across the billing month. Your usage is not constant. The air conditioning runs harder during the afternoon. The water heater cycles on and off unpredictably. The rate of power draw is different every hour, every minute. To calculate your total bill, the smart meter in your home adds up every tiny slice of usage across every second of the month. That accumulated total is an integral. It is exactly what you pay for. The key point, when a rate changes continuously and you need the total accumulated amount, you need an integral. The integral rule for a power is the mirror image of the power rule for derivatives. When a quantity is expressed as a variable raised to a power, the integral raises the power by one and divides by the new power. This rule exists because calculating the total accumulated amount under a changing rate requires the inverse of the operation that gave you the rate in the first place. Now, here's why this matters to you. Go back to the water tank. The technician used the power rule and found that the flow rate is eight times time. Now, a different question. How much total water entered the tank between the 0 mark and the 10-minute mark? Apply the integral rule to 8 * 8 * the same as 8 * the first power. Raise the power by 1. Time^ squar divide by the new power of 2. The result is 4 * time^ squar. Plug in 10 minutes, 400 L. Plug in 0 minutes, 0 L. Total water that entered between 0 and 10 minutes, 400 L. Now, notice what just happened. The original volume formula was 4 * time squared. The flow rate was 8 * time. Um the integral of the flow rate brought us directly back to 4 * time^ squar the original volume formula. That is not a coincidence. That is the relationship between derivatives and integrals. And the next section shows you exactly what it means. The key point, the integral rule converts a formula describing a rate of change back into a formula describing the total accumulated quantity, which is precisely the reverse of what the power rule does. The fundamental theorem of calculus states that differentiation and integration are inverse operations. They undo each other. This matters because it means that in any real system, these two tools are always available as a pair. If you have the rate, you can get the total. If you have the total, you can get the rate. The direction depends on the question. Let me show you exactly how this works. Facilities manager has a sensor logging a building's total energy consumption over time. Uh the formula for total consumption is known. The manager needs to know the power draw right now, not the total, the current rate. That is a derivative applied to the total consumption formula. Run it through the power rule and the answer comes out directly. The same manager the following month has a sensor that logs the power draw rate but needs to bill a tenant for total consumption over 30 days. um that is an integral applied to the rate formula. Um run it through the integral rule and the total comes out directly. Same building, same data, two different questions, two inverse operations. The key point derivatives and integrals are not two separate tools. They are two directions of the same operation. And knowing this means you can always move between rate and total in either direction from whatever information you have. A plumber is called to a house with water damage inside a wall. The homeowner noticed discoloration spreading over the past week. The plumber needs to answer four specific questions before deciding how to act. A pressure sensor has been logging data on the leak. Um the leak rate is not constant. It increased as overnight pressure built up. Um at midnight the leak rate was 2 L per hour. By 6 a.m. it reached 5 L per hour. The rate changed continuously for 6 hours. Yeah. Question one. Um what is the exact leak rate at 3:00 a.m.? The sensor data gives a formula for how the rate changed over time. Apply the power rule to that formula. The derivative at the 3hour mark gives an instantaneous rate of 3.5 L per hour. Not an estimate, the exact rate at that moment. Question two, how fast is the situation getting worse? The leak rate itself is increasing over time. Apply the power rule again, this time to the rate formula, not the volume formula. The result tells the plumber that the rate is worsening by 0.5 L per hour per hour. That number determines urgency. A rate that is accelerating quickly requires immediate action. A rate that is barely moving can be scheduled. Question three. How much total water has leaked between midnight and 6:00 a.m.? The rate was changing continuously. So multiplication gives the wrong answer. Apply the integral rule to the rate formula across the 6-hour window. The result, 18 L of water entered the wall cavity overnight. Question four. Does that match the visible damage? The homeowner's water damage pattern on the wall surface suggests roughly 15 to 20 L of intrusion. The integral result of 18 L falls directly in that range. Uh the plumber now knows this is the correct pipe, the correct time frame and can price the repair accurately. one pipe like a limit established what the rate was approaching at each moment. A derivative gave the exact rate at 3:00 a.m. A second derivative gave the rate of worsening. An integral gave the total volume of damage. That is calculus applied to a real problem start to finish. The first mistake is using average rate when instantaneous rate is what the situation requires. A machine that averaged 100 parts per hour over a full shift may have been running at 60 parts per hour at the start, 140 at the end. The average tells you total output. The derivative at any specific moment tells you actual performance at that time. Using the average to diagnose a problem at a specific moment sends you to the wrong place. The second mistake is multiplying rate by time when the rate is changing. Distance equals rate times time only works when the rate is constant for the entire period. The moment the rate varies, which it does in nearly every real system, that formula produces an incorrect total. The error is not always obvious and it compounds over longer time periods. by when the rate is changing the integral is the correct tool. Um the third mistake is treating the derivative and the integral as unrelated. They are inverse operations. Um differentiating a function and then integrating the result returns you to where you started. This means that if you have the rate formula, you can always recover the total. And if you have the total formula, you can always recover the rate. Treating them as separate topics means missing the most useful thing about both of them. A structural engineer calculating the load on a beam that varies across its length uses an integral to find the total force on the beam. Using simple multiplication instead produces an incorrect load estimate and a beam that may fail under real conditions. A financial analyst tracking how fast a cost center is growing us as a derivative to find the exact rate of increase at a specific quarter. Um using a quarterly average instead hides the spikes and the derivative would have revealed them immediately. A building manager monitoring energy draw uses an integral to calculate verified consumption over a billing period. If the rate data is available but the integral is skipped, the estimate will be wrong any time usage was uneven across the period which is every time. You can now look at a change in quantity and immediately identify whether the question being asked requires the rate at a specific instant or the total accumulated amount over time and you know which operation answers each one. You can apply the power rule to a formula and extract the exact rate of change at any point you choose. You can apply the integral rule to a rate formula and recover the total accumulated quantity across any time window. You can recognize when multiplication is the wrong tool when the rate is changing and replace it with the correct one. You can see that these two operations are inverses and use that relationship to move between rate and total in either direction from whatever data you have available. You can look at a real system, a pipe, a meter, a machine, a financial model and identify which of these operations is running underneath it. Calculus is not abstract. It is not a wall that only certain people can get past. It is a pair of tools built to answer specific questions about a world where almost nothing stays constant. You now have those tools and you know exactly what they are for. That is what you should have been given the first",
+  "fullTextVi": "Cách đây vài tuần, tôi đã đăng một video về phép tính. Hơn một triệu bạn đã xem và phần bình luận đã không làm bạn thất vọng. Có người viết, \"Được rồi, tuyệt. Bây giờ hãy giải thích như thể tôi là đứa trẻ 2 tuổi. \" Một người khác nói, \"Có vẻ như tôi cần phiên bản dành cho trẻ ba tuổi. \" Và sau đó là phiên bản này, mà tôi nghĩ là điều trung thực nhất trong toàn bộ phần bình luận. Có người đã viết: \"Điều này thực sự hữu ích, nhưng tôi mong bạn làm một ví dụ thực tế để chúng tôi có thể thấy nó được sử dụng như thế nào trong thực tế. \" Ví dụ cuối cùng đó nói chính xác điều mà nhiều bạn đang nghĩ. Video đầu tiên giải thích phép tính là gì, tại sao nó được phát minh, nó có vấn đề gì được xây dựng để giải quyết nhưng sau đó rất nhiều bạn quay lại và nói điều tương tự. Hãy cho tôi một ví dụ thực tế. Hãy dẫn tôi đi qua nó. Đừng chỉ nói với tôi một sự thay đổi được đo lường bằng đạo hàm. Cho tôi xem nó đo thứ gì đó. Đó chính xác là những gì video này làm. Mọi ví dụ đều xuất phát từ tình huống mà bạn đã từng gặp phải. Xe của bạn, hóa đơn tiền điện, một đường ống trên tường. Không có lớp học, không có vấn đề thi cử. chỉ những công cụ thực tế được sử dụng trong các tình huống thực tế mới giải thích được cách nó phải có là lần đầu tiên. Ừm, đến cuối video này, bạn sẽ xem được đạo hàm và tích phân làm việc trên các vấn đề thực tế. Bạn sẽ hiểu tại sao chúng được kết nối với nhau và bạn sẽ có thể xem bất kỳ tình huống thay đổi nào và biết công cụ nào được áp dụng cũng như những gì nó sẽ cho bạn biết. Ừm, trước các ví dụ, chúng ta hãy thiết lập lại 90 giây cho phần một thành lập. Mọi thứ trong video này được xây dựng trực tiếp trên ba ý tưởng. Giới hạn là mức mà một giá trị tiến tới khi một thứ nào đó tiến gần đến một điểm. Nó là nền tảng làm cho phần còn lại của phép tính có thể thực hiện được. bởi vì phép tính liên tục làm việc với những thứ rất gần với một khoảnh khắc hoặc một giá trị mà không bao giờ đạt được chính xác nó. Đạo hàm là tỷ lệ thay đổi chính xác tại một thời điểm cụ thể. Ừm không phải tỷ giá trung bình trong một thời kỳ, tỷ giá hiện tại ở mức này chốc lát. Sự khác biệt đó rất quan trọng trong mọi ứng dụng thực tế. Tích phân là tổng được xây dựng bằng cách cộng vô số những mảnh nhỏ. Khi có thứ gì đó thay đổi liên tục và bạn cần biết số tiền tích lũy, đó là tích phân. Đó là ba công cụ. Bây giờ, đây là hình dáng của chúng khi thực sự được sử dụng. Đạo hàm là tốc độ thay đổi tức thời của một đại lượng đối với khác. Điều này tồn tại bởi vì tỷ giá trung bình không phải lúc nào cũng hữu ích. Biết rằng một đường ống bị mất 40 L trong 8 giờ sẽ cho bạn biết giá trị trung bình tỷ lệ rò rỉ. Nó không cho bạn biết tốc độ rò rỉ vào lúc 3 giờ sáng. m. đó là những gì bạn cần biết khi chỉ số áp suất tăng đột biến. Bạn đang lái xe trên đường cao tốc. GPS của bạn ghi lại vị trí của bạn mỗi giây. Sau 30 phút bạn đã đi được quãng đường 22km. Điều đó mang lại cho bạn tốc độ trung bình 44 mph. Nhưng đồng hồ tốc độ của bạn không hiển thị 44. Nó đang hiển thị tốc độ của bạn ngay tại thời điểm chính xác này. Việc đọc thời gian thực đó là một dẫn xuất. Nó đang tính toán liên tục tốc độ thay đổi vị trí của bạn tại mỗi thời điểm. Khi bạn bẻ mạnh, đạo hàm sẽ giảm ngay lập tức. Giá trị trung bình không thay đổi cho đến khi toàn bộ chuyến đi được tính toán lại. Điểm mấu chốt khi bạn cần tỷ lệ tại một thời điểm cụ thể, không phải trung bình trong một khoảng thời gian, bạn cần một đạo hàm. Quy tắc lũy thừa là phép tính được áp dụng phổ biến nhất trong giải tích. Nó cho biết khi một đại lượng được biểu thị dưới dạng một biến lũy thừa, đạo hàm là lũy thừa nhân với biến có lũy thừa giảm đi một. Quy tắc này tồn tại bởi vì hầu hết các đại lượng trong thế giới thực đều thay đổi khoảng cách, áp suất, nhiệt độ, điện áp có thể được mô tả bằng các công thức bao gồm các biến được nâng lên lũy thừa. Quy tắc lũy thừa cung cấp cho bạn đường dẫn trực tiếp từ công thức đó tới tỷ lệ thay đổi bất cứ lúc nào. Đây là những gì đang thực sự xảy ra. Một thùng nước, nó đang đầy. Khối lượng tại bất kỳ thời điểm nào tuân theo công thức. thể tích bằng 4 * thời gian^ bình phương. Kỹ thuật viên cần biết tốc độ dòng chảy, tốc độ nước vào tại đúng mốc 10 phút. Áp dụng quy tắc lũy thừa cho bình phương 4 * time^. Mang sức mạnh của hai người xuống phía trước. Nhân với bốn. Giảm sức mạnh đi một. Đạo hàm là 8 * thời gian. Cắm điện 10 phút. Tốc độ dòng chảy tại thời điểm đó là 80 L mỗi phút. chính xác à không được ước tính từ hai số liệu riêng biệt được tính trực tiếp từ công thức. Điểm mấu chốt, quy tắc lũy thừa chuyển đổi một công thức mô tả một đại lượng thành công thức mô tả số lượng đó thay đổi nhanh như thế nào tại bất kỳ thời điểm nào bạn chọn. Tích phân là tổng số tích lũy của một đại lượng thay đổi liên tục trong thời gian. Điều này tồn tại vì phép nhân chỉ có tác dụng với tổng khi tốc độ không đổi. Nếu bạn lái xe với vận tốc chính xác là 60 dặm/giờ trong 2 giờ, khoảng cách bằng tỷ lệ thời gian, 120 m. Nhưng ừm, nếu tốc độ của bạn thay đổi mỗi phút, điều này luôn xảy ra, thì công thức đó tan vỡ. Bạn không thể nhân một tốc độ với tổng thời gian và có được kết quả chính xác. Bạn cần cộng từng phần chuyển động nhỏ trong từng khoảnh khắc. Đây là phần quan trọng. Nhà cung cấp điện tính phí cho bạn dựa trên tổng mức tiêu thụ trong tháng thanh toán. Việc sử dụng của bạn không phải là liên tục. Máy điều hòa chạy mạnh hơn vào buổi chiều. Máy nước nóng có chu kỳ bật và tắt không thể đoán trước. Tốc độ tiêu thụ điện năng khác nhau theo từng giờ, từng phút. Để tính tổng hóa đơn, đồng hồ thông minh trong nhà bạn sẽ cộng mỗi một phần nhỏ mức sử dụng trong mỗi giây của tháng. Tổng tích lũy đó là một tích phân. Đó chính xác là những gì bạn phải trả cho. Điểm mấu chốt, khi tỷ giá thay đổi liên tục và bạn cần tổng tích lũy số tiền, bạn cần một tích phân. Quy tắc tích phân cho lũy thừa là ảnh phản chiếu của quy tắc lũy thừa đối với các công cụ phái sinh. Khi một đại lượng được biểu diễn dưới dạng một biến lũy thừa, tích phân tăng sức mạnh lên một và chia cho sức mạnh mới. Quy tắc này tồn tại vì việc tính tổng số tiền tích lũy theo tỷ giá thay đổi yêu cầu nghịch đảo của phép tính đã cho bạn tỷ lệ lúc đầu. Bây giờ, đây là lý do tại sao điều này quan trọng với bạn. Quay trở lại bể nước. Kỹ thuật viên sử dụng quy tắc công suất và nhận thấy tốc độ dòng chảy là 8 lần thời gian. Bây giờ, một câu hỏi khác. Tổng lượng nước vào bể từ vạch 0 đến phút thứ 10 đánh dấu? Áp dụng quy tắc tích phân cho 8 * 8 * tương tự như 8 * quyền lực đầu tiên. Tăng sức mạnh lên 1. Thời gian^ bình phương chia cho lũy thừa mới của 2. Kết quả là 4 * time^ bình phương. Cắm điện 10 phút 400 L. Cắm 0 phút 0 L. Tổng lượng nước đi vào từ 0 đến 10 phút, 400 L. Bây giờ, hãy chú ý điều gì vừa xảy ra. Công thức thể tích ban đầu là bình phương thời gian 4 *. Tốc độ dòng chảy là 8 * thời gian. Ừm, tích phân của tốc độ dòng chảy đưa chúng ta trực tiếp trở lại 4 * time^ bình phương công thức thể tích ban đầu. Đó không phải là một sự trùng hợp ngẫu nhiên. Đó là mối liên hệ giữa đạo hàm và tích phân. Và phần tiếp theo sẽ cho bạn thấy chính xác ý nghĩa của nó. Điểm mấu chốt, quy tắc tích phân chuyển đổi một công thức mô tả tốc độ thay đổi trở lại công thức mô tả tổng số lượng tích lũy, chính xác là ngược lại về những gì quy tắc quyền lực làm. Định lý cơ bản của phép tính cho rằng vi phân và tích phân là các phép toán nghịch đảo. Họ hoàn tác lẫn nhau. Điều này quan trọng vì nó có nghĩa là trong bất kỳ hệ thống thực nào, hai công cụ này là luôn có sẵn như một cặp. Nếu bạn có tỷ lệ, bạn có thể nhận được tổng số. Nếu bạn có tổng số, bạn có thể nhận được tỷ lệ. Hướng đi phụ thuộc vào câu hỏi. Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó. Người quản lý cơ sở vật chất có một cảm biến ghi lại tổng mức tiêu thụ năng lượng của tòa nhà theo thời gian. Uh công thức tính tổng mức tiêu thụ đã được biết. Người quản lý cần biết sức mạnh rút ra ngay bây giờ chứ không phải tổng số tỷ giá hiện hành. Đó là đạo hàm áp dụng cho công thức tổng tiêu dùng. Chạy nó thông qua quy tắc lũy thừa và câu trả lời sẽ xuất hiện trực tiếp. Người quản lý tương tự vào tháng sau có một cảm biến ghi lại việc rút điện giá nhưng cần lập hóa đơn cho người thuê về tổng mức tiêu thụ trong 30 ngày. ừm đó là tích phân được áp dụng cho công thức tính tỷ lệ. Ừm, hãy thực hiện nó thông qua quy tắc tích phân và tổng sẽ được tính trực tiếp. Cùng một tòa nhà, cùng một dữ liệu, hai câu hỏi khác nhau, hai phép tính nghịch đảo. Đạo hàm điểm then chốt và tích phân không phải là hai công cụ riêng biệt. Chúng là hai hướng của cùng một hoạt động. Và biết điều này có nghĩa là bạn luôn có thể di chuyển giữa tỷ lệ và tổng trong hướng từ bất kỳ thông tin nào bạn có. Một thợ sửa ống nước được gọi đến một ngôi nhà bị hư hại do nước bên trong bức tường. Chủ nhà nhận thấy sự đổi màu lan rộng trong tuần qua. Người thợ sửa ống nước cần trả lời bốn câu hỏi cụ thể trước khi quyết định hành động như thế nào. Một cảm biến áp suất đã ghi lại dữ liệu về chỗ rò rỉ. Um, tốc độ rò rỉ không phải là hằng số. Nó tăng lên khi áp lực qua đêm tăng lên. Ừm vào lúc nửa đêm tốc độ rò rỉ là 2 L mỗi giờ. Đến 6 giờ sáng. m. nó đạt tới 5 L mỗi giờ. Tỷ giá thay đổi liên tục trong 6 giờ. Vâng. Câu hỏi một. Ừm, tỷ lệ rò rỉ chính xác lúc 3 giờ sáng là bao nhiêu. m. Dữ liệu cảm biến đưa ra công thức về mức độ thay đổi theo thời gian. Áp dụng quy tắc lũy thừa cho công thức đó. Đạo hàm ở mốc 3 giờ cho tỷ lệ tức thời là 3. 5 lít mỗi giờ. Không phải là ước tính, tỷ lệ chính xác tại thời điểm đó. Câu hỏi thứ hai, tình hình trở nên tồi tệ nhanh đến mức nào? Bản thân tốc độ rò rỉ đang tăng lên theo thời gian. Áp dụng lại quy tắc lũy thừa, lần này cho công thức tỷ lệ, không phải âm lượng công thức. Kết quả cho người thợ sửa ống nước biết rằng tỷ lệ này đang xấu đi 0. 5 L mỗi giờ mỗi giờ. Con số đó quyết định mức độ khẩn cấp. Tốc độ tăng nhanh đòi hỏi phải hành động ngay lập tức. Một tỷ lệ hầu như không thay đổi có thể được lên lịch. Câu hỏi thứ ba. Tổng lượng nước đã rò rỉ từ nửa đêm đến 6 giờ sáng. m. Tỷ giá đã thay đổi liên tục. Vậy phép nhân cho đáp án sai. Áp dụng quy tắc tích phân cho công thức tỷ lệ trong cửa sổ 6 giờ. Kết quả là 18 L nước đã lọt vào hốc tường qua đêm. Câu hỏi thứ tư. Điều đó có phù hợp với thiệt hại có thể nhìn thấy? Hình ảnh thiệt hại do nước gây ra trên bề mặt tường của chủ nhà gợi ý khoảng 15 đến 20 L của sự xâm nhập. Kết quả tích phân của 18 L rơi trực tiếp vào phạm vi đó. Ờ thợ sửa ống nước giờ mới biết đây là đường ống đúng, đúng khung giờ và có thể định giá sửa chữa một cách chính xác. một đường ống giống như một giới hạn xác định tỷ giá đang tiến đến mức nào tại mỗi thời điểm. Một đạo hàm đã đưa ra tỷ giá chính xác vào lúc 3 giờ sáng. m. Đạo hàm thứ hai cho thấy tỷ lệ đang xấu đi. Một tích phân cho tổng khối lượng thiệt hại. Đó là phép tính được áp dụng cho một bài toán thực tế bắt đầu cho đến khi kết thúc. Sai lầm đầu tiên là sử dụng tỷ giá trung bình khi tỷ lệ tức thời là tình huống yêu cầu. Một chiếc máy đạt trung bình 100 bộ phận một giờ trong một ca làm việc đầy đủ có thể có lúc đầu chạy ở tốc độ 60 phần một giờ, lúc cuối là 140 phần một giờ. Giá trị trung bình cho bạn biết tổng sản lượng. Đạo hàm tại bất kỳ thời điểm cụ thể nào sẽ cho bạn biết hiệu suất thực tế tại thời điểm đó. Việc sử dụng giá trị trung bình để chẩn đoán sự cố tại một thời điểm cụ thể sẽ đưa bạn đến sai chỗ. Sai lầm thứ hai là nhân tỷ giá với thời gian khi tỷ giá thay đổi. Khoảng cách bằng tốc độ nhân với thời gian chỉ có tác dụng khi tốc độ không đổi đối với toàn bộ thời kỳ. Thời điểm tốc độ thay đổi, điều này xảy ra ở hầu hết mọi hệ thống thực, công thức tạo ra tổng sai. Lỗi không phải lúc nào cũng rõ ràng và nó sẽ phức tạp hơn trong khoảng thời gian dài hơn. khi tốc độ thay đổi thì tích phân là công cụ chính xác. Ừm, sai lầm thứ ba là coi đạo hàm và tích phân là không liên quan. Chúng là những hoạt động nghịch đảo. Ừm, việc lấy vi phân của một hàm rồi tích phân kết quả sẽ đưa bạn về vị trí bắt đầu. Điều này có nghĩa là nếu bạn có công thức tỷ lệ, bạn luôn có thể khôi phục tổng cộng. Và nếu bạn có công thức tổng, bạn luôn có thể lấy lại tỷ lệ. Coi chúng như những chủ đề riêng biệt có nghĩa là thiếu đi điều hữu ích nhất về cả hai họ. Kỹ sư kết cấu tính toán tải trọng tác dụng lên dầm thay đổi theo chiều dài sử dụng tích phân để tìm tổng lực tác dụng lên dầm. Thay vào đó, việc sử dụng phép nhân đơn giản sẽ tạo ra ước tính tải trọng không chính xác và chùm tia có thể thất bại trong điều kiện thực tế. Một nhà phân tích tài chính đang theo dõi tốc độ phát triển của trung tâm chi phí với tư cách là phái sinh để tìm ra tỷ lệ tăng chính xác tại một quý cụ thể. Ừm thay vào đó, sử dụng mức trung bình hàng quý để che giấu các mức tăng đột biến và đạo hàm sẽ có tiết lộ chúng ngay lập tức. Người quản lý tòa nhà giám sát việc tiêu thụ năng lượng sử dụng tích phân để tính toán mức tiêu thụ đã được xác minh trên một kỳ thanh toán. Nếu dữ liệu tỷ lệ có sẵn nhưng tích phân bị bỏ qua thì ước tính sẽ có thể sai bất kỳ lúc nào việc sử dụng không đồng đều trong suốt khoảng thời gian và mọi lúc. Bây giờ bạn có thể xem xét sự thay đổi về số lượng và xác định ngay liệu câu hỏi đang được hỏi yêu cầu tỷ lệ tại một thời điểm cụ thể hoặc tổng số tích lũy số lượng theo thời gian và bạn biết thao tác nào trả lời từng câu hỏi. Bạn có thể áp dụng quy tắc lũy thừa cho một công thức và trích xuất tỷ lệ chính xác thay đổi tại bất kỳ thời điểm nào bạn chọn. Bạn có thể áp dụng quy tắc tích phân cho công thức tỷ lệ và lấy lại tổng số lượng tích lũy qua bất kỳ khoảng thời gian nào. Bạn có thể nhận ra khi nào phép nhân là công cụ sai khi tốc độ thay đổi và thay thế nó bằng cái đúng. Bạn có thể thấy rằng hai thao tác này là nghịch đảo và sử dụng mối quan hệ đó với di chuyển giữa tỷ lệ và tổng theo một trong hai hướng từ bất kỳ dữ liệu nào bạn có sẵn. Bạn có thể nhìn vào một hệ thống thực, một đường ống, một đồng hồ đo, một cái máy, một mô hình tài chính và xác định hoạt động nào đang chạy bên dưới nó. Giải tích không trừu tượng. Đó không phải là bức tường mà chỉ một số người có thể vượt qua. Đó là một cặp công cụ được xây dựng để trả lời các câu hỏi cụ thể về một thế giới nơi hầu như không có gì không thay đổi. Bây giờ bạn đã có những công cụ đó và bạn biết chính xác chúng dùng để làm gì. Đó là điều lẽ ra bạn phải được trao đầu tiên",
+  "segments": [
+    {
+      "text": "A few weeks ago, I put out a video on calculus.",
+      "viText": "Cách đây vài tuần, tôi đã đăng một video về phép tính.",
+      "start": 0,
+      "duration": 3.66
+    },
+    {
+      "text": "Over a million of you watched it, and the comment section did not disappoint.",
+      "viText": "Hơn một triệu bạn đã xem và phần bình luận đã không làm bạn thất vọng.",
+      "start": 3.66,
+      "duration": 6
+    },
+    {
+      "text": "Someone wrote, \"Okay, cool.",
+      "viText": "Có người viết, \"Được rồi, tuyệt.",
+      "start": 9.66,
+      "duration": 2.1
+    },
+    {
+      "text": "Now explain it like I'm a 2-year-old.",
+      "viText": "Bây giờ hãy giải thích như thể tôi là đứa trẻ 2 tuổi.",
+      "start": 11.76,
+      "duration": 2.88
+    },
+    {
+      "text": "\" Another person said, \"I need the three-year-old version, apparently.",
+      "viText": "\" Một người khác nói, \"Có vẻ như tôi cần phiên bản dành cho trẻ ba tuổi.",
+      "start": 14.64,
+      "duration": 5.46
+    },
+    {
+      "text": "\" And then this one, which I thought was the most honest thing in",
+      "viText": "\" Và sau đó là phiên bản này, mà tôi nghĩ là điều trung thực nhất trong",
+      "start": 20.1,
+      "duration": 5.07
+    },
+    {
+      "text": "the whole comment section.",
+      "viText": "toàn bộ phần bình luận.",
+      "start": 25.17,
+      "duration": 2.03
+    },
+    {
+      "text": "Someone wrote, \"This did really help, but I wish you would do an actual",
+      "viText": "Có người đã viết: \"Điều này thực sự hữu ích, nhưng tôi mong bạn làm một ví dụ",
+      "start": 27.2,
+      "duration": 5.53
+    },
+    {
+      "text": "example just so we can see how it all is used in practice.",
+      "viText": "thực tế để chúng tôi có thể thấy nó được sử dụng như thế nào trong thực tế.",
+      "start": 32.73,
+      "duration": 4.52
+    },
+    {
+      "text": "\" That last one said exactly what a lot of you were thinking.",
+      "viText": "\" Ví dụ cuối cùng đó nói chính xác điều mà nhiều bạn đang nghĩ.",
+      "start": 37.25,
+      "duration": 4.75
+    },
+    {
+      "text": "The first video explained what calculus is, why it was invented, what problem it",
+      "viText": "Video đầu tiên giải thích phép tính là gì, tại sao nó được phát minh, nó có vấn đề gì",
+      "start": 42,
+      "duration": 6.24
+    },
+    {
+      "text": "was built to solve, but then a lot of you came back and said",
+      "viText": "được xây dựng để giải quyết nhưng sau đó rất nhiều bạn quay lại và nói",
+      "start": 48.24,
+      "duration": 4.68
+    },
+    {
+      "text": "the same thing.",
+      "viText": "điều tương tự.",
+      "start": 52.92,
+      "duration": 2
+    },
+    {
+      "text": "Show me an actual example.",
+      "viText": "Hãy cho tôi một ví dụ thực tế.",
+      "start": 54.92,
+      "duration": 2.03
+    },
+    {
+      "text": "Walk me through it.",
+      "viText": "Hãy dẫn tôi đi qua nó.",
+      "start": 56.95,
+      "duration": 2
+    },
+    {
+      "text": "Do not just tell me a derivative measured change.",
+      "viText": "Đừng chỉ nói với tôi một sự thay đổi được đo lường bằng đạo hàm.",
+      "start": 58.95,
+      "duration": 3.82
+    },
+    {
+      "text": "Show me it measuring something.",
+      "viText": "Cho tôi xem nó đo thứ gì đó.",
+      "start": 62.77,
+      "duration": 2.42
+    },
+    {
+      "text": "That is exactly what this video does.",
+      "viText": "Đó chính xác là những gì video này làm.",
+      "start": 65.19,
+      "duration": 2.88
+    },
+    {
+      "text": "Every example comes from a situation you have already been in.",
+      "viText": "Mọi ví dụ đều xuất phát từ tình huống mà bạn đã từng gặp phải.",
+      "start": 68.07,
+      "duration": 4.83
+    },
+    {
+      "text": "Your car, your electricity bill, a pipe in a wall.",
+      "viText": "Xe của bạn, hóa đơn tiền điện, một đường ống trên tường.",
+      "start": 72.9,
+      "duration": 3.9
+    },
+    {
+      "text": "No classrooms, no exam problems.",
+      "viText": "Không có lớp học, không có vấn đề thi cử.",
+      "start": 76.8,
+      "duration": 2.49
+    },
+    {
+      "text": "just the actual tools used on real situations explained the way it should have",
+      "viText": "chỉ những công cụ thực tế được sử dụng trong các tình huống thực tế mới giải thích được cách nó phải có",
+      "start": 79.29,
+      "duration": 6.08
+    },
+    {
+      "text": "been the first time.",
+      "viText": "là lần đầu tiên.",
+      "start": 85.37,
+      "duration": 2
+    },
+    {
+      "text": "Um, by the end of this video, you will have watched derivatives and integrals",
+      "viText": "Ừm, đến cuối video này, bạn sẽ xem được đạo hàm và tích phân",
+      "start": 87.37,
+      "duration": 6
+    },
+    {
+      "text": "work on real problems.",
+      "viText": "làm việc trên các vấn đề thực tế.",
+      "start": 93.37,
+      "duration": 2
+    },
+    {
+      "text": "You will understand why they're connected and you will be able to look at",
+      "viText": "Bạn sẽ hiểu tại sao chúng được kết nối với nhau và bạn sẽ có thể xem",
+      "start": 95.37,
+      "duration": 5.69
+    },
+    {
+      "text": "any changing situation and know which tool applies and what it will tell you.",
+      "viText": "bất kỳ tình huống thay đổi nào và biết công cụ nào được áp dụng cũng như những gì nó sẽ cho bạn biết.",
+      "start": 101.06,
+      "duration": 6
+    },
+    {
+      "text": "Um, before the examples, let's do a 90 secondond reset on what part one",
+      "viText": "Ừm, trước các ví dụ, chúng ta hãy thiết lập lại 90 giây cho phần một",
+      "start": 107.06,
+      "duration": 5.53
+    },
+    {
+      "text": "established.",
+      "viText": "thành lập.",
+      "start": 112.59,
+      "duration": 2
+    },
+    {
+      "text": "Everything in this video builds directly on three ideas.",
+      "viText": "Mọi thứ trong video này được xây dựng trực tiếp trên ba ý tưởng.",
+      "start": 114.59,
+      "duration": 4.36
+    },
+    {
+      "text": "A limit is what a value approaches as something gets infinitely close to a",
+      "viText": "Giới hạn là mức mà một giá trị tiến tới khi một thứ nào đó tiến gần đến một",
+      "start": 118.95,
+      "duration": 5.77
+    },
+    {
+      "text": "point.",
+      "viText": "điểm.",
+      "start": 124.72,
+      "duration": 2
+    },
+    {
+      "text": "It is the foundation that makes the rest of calculus possible.",
+      "viText": "Nó là nền tảng làm cho phần còn lại của phép tính có thể thực hiện được.",
+      "start": 126.72,
+      "duration": 4.83
+    },
+    {
+      "text": "because calculus constantly works with things that get very close to a moment or",
+      "viText": "bởi vì phép tính liên tục làm việc với những thứ rất gần với một khoảnh khắc hoặc",
+      "start": 131.55,
+      "duration": 6.24
+    },
+    {
+      "text": "a value without ever exactly reaching it.",
+      "viText": "một giá trị mà không bao giờ đạt được chính xác nó.",
+      "start": 137.79,
+      "duration": 3.2
+    },
+    {
+      "text": "A derivative is the exact rate of change at one specific instant.",
+      "viText": "Đạo hàm là tỷ lệ thay đổi chính xác tại một thời điểm cụ thể.",
+      "start": 140.99,
+      "duration": 5.07
+    },
+    {
+      "text": "Um not the average rate over a period, the rate right now at this",
+      "viText": "Ừm không phải tỷ giá trung bình trong một thời kỳ, tỷ giá hiện tại ở mức này",
+      "start": 146.06,
+      "duration": 5.07
+    },
+    {
+      "text": "moment.",
+      "viText": "chốc lát.",
+      "start": 151.13,
+      "duration": 2
+    },
+    {
+      "text": "That distinction matters in every real application.",
+      "viText": "Sự khác biệt đó rất quan trọng trong mọi ứng dụng thực tế.",
+      "start": 153.13,
+      "duration": 3.97
+    },
+    {
+      "text": "An integral is a total built by adding up an infinite number of infinitely",
+      "viText": "Tích phân là tổng được xây dựng bằng cách cộng vô số",
+      "start": 157.1,
+      "duration": 5.77
+    },
+    {
+      "text": "small pieces.",
+      "viText": "những mảnh nhỏ.",
+      "start": 162.87,
+      "duration": 2
+    },
+    {
+      "text": "When something changes continuously and you need to know the cumulative amount, that is",
+      "viText": "Khi có thứ gì đó thay đổi liên tục và bạn cần biết số tiền tích lũy, đó là",
+      "start": 164.87,
+      "duration": 6.78
+    },
+    {
+      "text": "the integral.",
+      "viText": "tích phân.",
+      "start": 171.65,
+      "duration": 2
+    },
+    {
+      "text": "Those are the three tools.",
+      "viText": "Đó là ba công cụ.",
+      "start": 173.65,
+      "duration": 2.03
+    },
+    {
+      "text": "Now, here's what they look like when they are actually used.",
+      "viText": "Bây giờ, đây là hình dáng của chúng khi thực sự được sử dụng.",
+      "start": 175.68,
+      "duration": 4.68
+    },
+    {
+      "text": "A derivative is the instantaneous rate of change of one quantity with respect to",
+      "viText": "Đạo hàm là tốc độ thay đổi tức thời của một đại lượng đối với",
+      "start": 180.36,
+      "duration": 6.24
+    },
+    {
+      "text": "another.",
+      "viText": "khác.",
+      "start": 186.6,
+      "duration": 2
+    },
+    {
+      "text": "This exists because average rates are not always useful.",
+      "viText": "Điều này tồn tại bởi vì tỷ giá trung bình không phải lúc nào cũng hữu ích.",
+      "start": 188.6,
+      "duration": 4.36
+    },
+    {
+      "text": "Knowing that a pipe lost 40 L over 8 hours tells you the average",
+      "viText": "Biết rằng một đường ống bị mất 40 L trong 8 giờ sẽ cho bạn biết giá trị trung bình",
+      "start": 192.96,
+      "duration": 4.99
+    },
+    {
+      "text": "leak rate.",
+      "viText": "tỷ lệ rò rỉ.",
+      "start": 197.95,
+      "duration": 2
+    },
+    {
+      "text": "It does not tell you how fast it was leaking at 3 a.",
+      "viText": "Nó không cho bạn biết tốc độ rò rỉ vào lúc 3 giờ sáng.",
+      "start": 199.95,
+      "duration": 4.05
+    },
+    {
+      "text": "m.",
+      "viText": "m.",
+      "start": 204,
+      "duration": 2
+    },
+    {
+      "text": "which is what you need to know when the pressure rating spikes.",
+      "viText": "đó là những gì bạn cần biết khi chỉ số áp suất tăng đột biến.",
+      "start": 206,
+      "duration": 4.91
+    },
+    {
+      "text": "You are driving on a highway.",
+      "viText": "Bạn đang lái xe trên đường cao tốc.",
+      "start": 210.91,
+      "duration": 2.26
+    },
+    {
+      "text": "Your GPS logs your position every second.",
+      "viText": "GPS của bạn ghi lại vị trí của bạn mỗi giây.",
+      "start": 213.17,
+      "duration": 3.2
+    },
+    {
+      "text": "After 30 minutes, you have traveled 22 miles.",
+      "viText": "Sau 30 phút bạn đã đi được quãng đường 22km.",
+      "start": 216.37,
+      "duration": 3.51
+    },
+    {
+      "text": "That gives you an average speed of 44 mph.",
+      "viText": "Điều đó mang lại cho bạn tốc độ trung bình 44 mph.",
+      "start": 219.88,
+      "duration": 3.27
+    },
+    {
+      "text": "But your speedometer is not showing 44.",
+      "viText": "Nhưng đồng hồ tốc độ của bạn không hiển thị 44.",
+      "start": 223.15,
+      "duration": 3.04
+    },
+    {
+      "text": "It is showing your speed right now at this exact second.",
+      "viText": "Nó đang hiển thị tốc độ của bạn ngay tại thời điểm chính xác này.",
+      "start": 226.19,
+      "duration": 4.36
+    },
+    {
+      "text": "That real time reading is a derivative.",
+      "viText": "Việc đọc thời gian thực đó là một dẫn xuất.",
+      "start": 230.55,
+      "duration": 3.04
+    },
+    {
+      "text": "It is calculating continuously how fast your position is changing at each instant.",
+      "viText": "Nó đang tính toán liên tục tốc độ thay đổi vị trí của bạn tại mỗi thời điểm.",
+      "start": 233.59,
+      "duration": 6.39
+    },
+    {
+      "text": "When you break hard, the derivative drops immediately.",
+      "viText": "Khi bạn bẻ mạnh, đạo hàm sẽ giảm ngay lập tức.",
+      "start": 239.98,
+      "duration": 4.21
+    },
+    {
+      "text": "The average does not change until the full trip is recalculated.",
+      "viText": "Giá trị trung bình không thay đổi cho đến khi toàn bộ chuyến đi được tính toán lại.",
+      "start": 244.19,
+      "duration": 4.99
+    },
+    {
+      "text": "The key point when you need the rate at a specific moment, not an",
+      "viText": "Điểm mấu chốt khi bạn cần tỷ lệ tại một thời điểm cụ thể, không phải",
+      "start": 249.18,
+      "duration": 5.07
+    },
+    {
+      "text": "average across a period, you need a derivative.",
+      "viText": "trung bình trong một khoảng thời gian, bạn cần một đạo hàm.",
+      "start": 254.25,
+      "duration": 3.66
+    },
+    {
+      "text": "The power rule is the most commonly applied calculation in calculus.",
+      "viText": "Quy tắc lũy thừa là phép tính được áp dụng phổ biến nhất trong giải tích.",
+      "start": 257.91,
+      "duration": 5.3
+    },
+    {
+      "text": "It says when a quantity is expressed as a variable raised to a power,",
+      "viText": "Nó cho biết khi một đại lượng được biểu thị dưới dạng một biến lũy thừa,",
+      "start": 263.21,
+      "duration": 5.38
+    },
+    {
+      "text": "the derivative is that power multiplied by the variable with the power reduced by",
+      "viText": "đạo hàm là lũy thừa nhân với biến có lũy thừa giảm đi",
+      "start": 268.59,
+      "duration": 6.31
+    },
+    {
+      "text": "one.",
+      "viText": "một.",
+      "start": 274.9,
+      "duration": 2
+    },
+    {
+      "text": "This rule exists because most real world quantities that change distance, pressure, temperature, voltage",
+      "viText": "Quy tắc này tồn tại bởi vì hầu hết các đại lượng trong thế giới thực đều thay đổi khoảng cách, áp suất, nhiệt độ, điện áp",
+      "start": 276.9,
+      "duration": 8.11
+    },
+    {
+      "text": "can be described with formulas that involve variables raised to powers.",
+      "viText": "có thể được mô tả bằng các công thức bao gồm các biến được nâng lên lũy thừa.",
+      "start": 285.01,
+      "duration": 5.53
+    },
+    {
+      "text": "The power rule gives you a direct path from that formula to the rate",
+      "viText": "Quy tắc lũy thừa cung cấp cho bạn đường dẫn trực tiếp từ công thức đó tới tỷ lệ",
+      "start": 290.54,
+      "duration": 5.3
+    },
+    {
+      "text": "of change at any instant.",
+      "viText": "thay đổi bất cứ lúc nào.",
+      "start": 295.84,
+      "duration": 2
+    },
+    {
+      "text": "Here's what's actually happening.",
+      "viText": "Đây là những gì đang thực sự xảy ra.",
+      "start": 297.84,
+      "duration": 2.57
+    },
+    {
+      "text": "A water tank, it is filling.",
+      "viText": "Một thùng nước, nó đang đầy.",
+      "start": 300.41,
+      "duration": 2.18
+    },
+    {
+      "text": "The volume at any time follows the formula.",
+      "viText": "Khối lượng tại bất kỳ thời điểm nào tuân theo công thức.",
+      "start": 302.59,
+      "duration": 3.35
+    },
+    {
+      "text": "volume equals 4 * time^ squared.",
+      "viText": "thể tích bằng 4 * thời gian^ bình phương.",
+      "start": 305.94,
+      "duration": 2.49
+    },
+    {
+      "text": "A technician needs to know the flow rate, how fast water is entering at",
+      "viText": "Kỹ thuật viên cần biết tốc độ dòng chảy, tốc độ nước vào tại",
+      "start": 308.43,
+      "duration": 5.53
+    },
+    {
+      "text": "exactly the 10-minute mark.",
+      "viText": "đúng mốc 10 phút.",
+      "start": 313.96,
+      "duration": 2.1
+    },
+    {
+      "text": "Apply the power rule to 4 * time^ squar.",
+      "viText": "Áp dụng quy tắc lũy thừa cho bình phương 4 * time^.",
+      "start": 316.06,
+      "duration": 3.12
+    },
+    {
+      "text": "Bring the power of two down in front.",
+      "viText": "Mang sức mạnh của hai người xuống phía trước.",
+      "start": 319.18,
+      "duration": 2.88
+    },
+    {
+      "text": "Multiply by four.",
+      "viText": "Nhân với bốn.",
+      "start": 322.06,
+      "duration": 2
+    },
+    {
+      "text": "Reduce the power by one.",
+      "viText": "Giảm sức mạnh đi một.",
+      "start": 324.06,
+      "duration": 2
+    },
+    {
+      "text": "The derivative is 8 * time.",
+      "viText": "Đạo hàm là 8 * thời gian.",
+      "start": 326.06,
+      "duration": 2.1
+    },
+    {
+      "text": "Plug in 10 minutes.",
+      "viText": "Cắm điện 10 phút.",
+      "start": 328.16,
+      "duration": 2
+    },
+    {
+      "text": "The flow rate at that moment is 80 L per minute.",
+      "viText": "Tốc độ dòng chảy tại thời điểm đó là 80 L mỗi phút.",
+      "start": 330.16,
+      "duration": 3.74
+    },
+    {
+      "text": "exact uh not estimated from two separate readings calculated directly from the formula.",
+      "viText": "chính xác à không được ước tính từ hai số liệu riêng biệt được tính trực tiếp từ công thức.",
+      "start": 333.9,
+      "duration": 6.78
+    },
+    {
+      "text": "The key point, the power rule converts a formula describing a quantity into a",
+      "viText": "Điểm mấu chốt, quy tắc lũy thừa chuyển đổi một công thức mô tả một đại lượng thành",
+      "start": 340.68,
+      "duration": 6
+    },
+    {
+      "text": "formula describing how fast that quantity is changing at any instant you choose.",
+      "viText": "công thức mô tả số lượng đó thay đổi nhanh như thế nào tại bất kỳ thời điểm nào bạn chọn.",
+      "start": 346.68,
+      "duration": 6.24
+    },
+    {
+      "text": "An integral is the total accumulated amount of a quantity that changes continuously over",
+      "viText": "Tích phân là tổng số tích lũy của một đại lượng thay đổi liên tục trong",
+      "start": 352.92,
+      "duration": 6.86
+    },
+    {
+      "text": "time.",
+      "viText": "thời gian.",
+      "start": 359.78,
+      "duration": 2
+    },
+    {
+      "text": "This exists because multiplication only works for totals when the rate is constant.",
+      "viText": "Điều này tồn tại vì phép nhân chỉ có tác dụng với tổng khi tốc độ không đổi.",
+      "start": 361.78,
+      "duration": 6.47
+    },
+    {
+      "text": "If you drive at exactly 60 miles hour for 2 hours, distance equals rate",
+      "viText": "Nếu bạn lái xe với vận tốc chính xác là 60 dặm/giờ trong 2 giờ, khoảng cách bằng tỷ lệ",
+      "start": 368.25,
+      "duration": 5.53
+    },
+    {
+      "text": "time time, 120 m.",
+      "viText": "thời gian, 120 m.",
+      "start": 373.78,
+      "duration": 2
+    },
+    {
+      "text": "But um if your speed changes every minute, which it always does, that formula",
+      "viText": "Nhưng ừm, nếu tốc độ của bạn thay đổi mỗi phút, điều này luôn xảy ra, thì công thức đó",
+      "start": 375.78,
+      "duration": 6
+    },
+    {
+      "text": "breaks down.",
+      "viText": "tan vỡ.",
+      "start": 381.78,
+      "duration": 2
+    },
+    {
+      "text": "You cannot multiply one speed by the total time and get an accurate result.",
+      "viText": "Bạn không thể nhân một tốc độ với tổng thời gian và có được kết quả chính xác.",
+      "start": 383.78,
+      "duration": 5.85
+    },
+    {
+      "text": "You need to add up every tiny slice of movement across every instant.",
+      "viText": "Bạn cần cộng từng phần chuyển động nhỏ trong từng khoảnh khắc.",
+      "start": 389.63,
+      "duration": 5.38
+    },
+    {
+      "text": "This is the important part.",
+      "viText": "Đây là phần quan trọng.",
+      "start": 395.01,
+      "duration": 2.1
+    },
+    {
+      "text": "Your electricity provider charges you based on total consumption across the billing month.",
+      "viText": "Nhà cung cấp điện tính phí cho bạn dựa trên tổng mức tiêu thụ trong tháng thanh toán.",
+      "start": 397.11,
+      "duration": 7.01
+    },
+    {
+      "text": "Your usage is not constant.",
+      "viText": "Việc sử dụng của bạn không phải là liên tục.",
+      "start": 404.12,
+      "duration": 2.1
+    },
+    {
+      "text": "The air conditioning runs harder during the afternoon.",
+      "viText": "Máy điều hòa chạy mạnh hơn vào buổi chiều.",
+      "start": 406.22,
+      "duration": 4.21
+    },
+    {
+      "text": "The water heater cycles on and off unpredictably.",
+      "viText": "Máy nước nóng có chu kỳ bật và tắt không thể đoán trước.",
+      "start": 410.43,
+      "duration": 3.82
+    },
+    {
+      "text": "The rate of power draw is different every hour, every minute.",
+      "viText": "Tốc độ tiêu thụ điện năng khác nhau theo từng giờ, từng phút.",
+      "start": 414.25,
+      "duration": 4.75
+    },
+    {
+      "text": "To calculate your total bill, the smart meter in your home adds up every",
+      "viText": "Để tính tổng hóa đơn, đồng hồ thông minh trong nhà bạn sẽ cộng mỗi",
+      "start": 419,
+      "duration": 5.61
+    },
+    {
+      "text": "tiny slice of usage across every second of the month.",
+      "viText": "một phần nhỏ mức sử dụng trong mỗi giây của tháng.",
+      "start": 424.61,
+      "duration": 4.13
+    },
+    {
+      "text": "That accumulated total is an integral.",
+      "viText": "Tổng tích lũy đó là một tích phân.",
+      "start": 428.74,
+      "duration": 2.96
+    },
+    {
+      "text": "It is exactly what you pay for.",
+      "viText": "Đó chính xác là những gì bạn phải trả cho.",
+      "start": 431.7,
+      "duration": 2.42
+    },
+    {
+      "text": "The key point, when a rate changes continuously and you need the total accumulated",
+      "viText": "Điểm mấu chốt, khi tỷ giá thay đổi liên tục và bạn cần tổng",
+      "start": 434.12,
+      "duration": 6.39
+    },
+    {
+      "text": "amount, you need an integral.",
+      "viText": "tích lũy số tiền, bạn cần một tích phân.",
+      "start": 440.51,
+      "duration": 2.26
+    },
+    {
+      "text": "The integral rule for a power is the mirror image of the power rule",
+      "viText": "Quy tắc tích phân cho lũy thừa là ảnh phản chiếu của quy tắc lũy thừa",
+      "start": 442.77,
+      "duration": 5.22
+    },
+    {
+      "text": "for derivatives.",
+      "viText": "đối với các công cụ phái sinh.",
+      "start": 447.99,
+      "duration": 2
+    },
+    {
+      "text": "When a quantity is expressed as a variable raised to a power, the integral",
+      "viText": "Khi một đại lượng được biểu diễn dưới dạng một biến lũy thừa, tích phân",
+      "start": 449.99,
+      "duration": 5.77
+    },
+    {
+      "text": "raises the power by one and divides by the new power.",
+      "viText": "tăng sức mạnh lên một và chia cho sức mạnh mới.",
+      "start": 455.76,
+      "duration": 4.13
+    },
+    {
+      "text": "This rule exists because calculating the total accumulated amount under a changing rate requires",
+      "viText": "Quy tắc này tồn tại vì việc tính tổng số tiền tích lũy theo tỷ giá thay đổi yêu cầu",
+      "start": 459.89,
+      "duration": 7.48
+    },
+    {
+      "text": "the inverse of the operation that gave you the rate in the first place.",
+      "viText": "nghịch đảo của phép tính đã cho bạn tỷ lệ lúc đầu.",
+      "start": 467.37,
+      "duration": 5.53
+    },
+    {
+      "text": "Now, here's why this matters to you.",
+      "viText": "Bây giờ, đây là lý do tại sao điều này quan trọng với bạn.",
+      "start": 472.9,
+      "duration": 2.81
+    },
+    {
+      "text": "Go back to the water tank.",
+      "viText": "Quay trở lại bể nước.",
+      "start": 475.71,
+      "duration": 2.03
+    },
+    {
+      "text": "The technician used the power rule and found that the flow rate is eight",
+      "viText": "Kỹ thuật viên sử dụng quy tắc công suất và nhận thấy tốc độ dòng chảy là 8",
+      "start": 477.74,
+      "duration": 5.61
+    },
+    {
+      "text": "times time.",
+      "viText": "lần thời gian.",
+      "start": 483.35,
+      "duration": 2
+    },
+    {
+      "text": "Now, a different question.",
+      "viText": "Bây giờ, một câu hỏi khác.",
+      "start": 485.35,
+      "duration": 2.03
+    },
+    {
+      "text": "How much total water entered the tank between the 0 mark and the 10-minute",
+      "viText": "Tổng lượng nước vào bể từ vạch 0 đến phút thứ 10",
+      "start": 487.38,
+      "duration": 5.77
+    },
+    {
+      "text": "mark?",
+      "viText": "đánh dấu?",
+      "start": 493.15,
+      "duration": 2
+    },
+    {
+      "text": "Apply the integral rule to 8 * 8 * the same as 8 *",
+      "viText": "Áp dụng quy tắc tích phân cho 8 * 8 * tương tự như 8 *",
+      "start": 495.15,
+      "duration": 3.9
+    },
+    {
+      "text": "the first power.",
+      "viText": "quyền lực đầu tiên.",
+      "start": 499.05,
+      "duration": 2
+    },
+    {
+      "text": "Raise the power by 1.",
+      "viText": "Tăng sức mạnh lên 1.",
+      "start": 501.05,
+      "duration": 2
+    },
+    {
+      "text": "Time^ squar divide by the new power of 2.",
+      "viText": "Thời gian^ bình phương chia cho lũy thừa mới của 2.",
+      "start": 503.05,
+      "duration": 3.2
+    },
+    {
+      "text": "The result is 4 * time^ squar.",
+      "viText": "Kết quả là 4 * time^ bình phương.",
+      "start": 506.25,
+      "duration": 2.34
+    },
+    {
+      "text": "Plug in 10 minutes, 400 L.",
+      "viText": "Cắm điện 10 phút 400 L.",
+      "start": 508.59,
+      "duration": 2.03
+    },
+    {
+      "text": "Plug in 0 minutes, 0 L.",
+      "viText": "Cắm 0 phút 0 L.",
+      "start": 510.62,
+      "duration": 2
+    },
+    {
+      "text": "Total water that entered between 0 and 10 minutes, 400 L.",
+      "viText": "Tổng lượng nước đi vào từ 0 đến 10 phút, 400 L.",
+      "start": 512.62,
+      "duration": 4.44
+    },
+    {
+      "text": "Now, notice what just happened.",
+      "viText": "Bây giờ, hãy chú ý điều gì vừa xảy ra.",
+      "start": 517.06,
+      "duration": 2.42
+    },
+    {
+      "text": "The original volume formula was 4 * time squared.",
+      "viText": "Công thức thể tích ban đầu là bình phương thời gian 4 *.",
+      "start": 519.48,
+      "duration": 3.82
+    },
+    {
+      "text": "The flow rate was 8 * time.",
+      "viText": "Tốc độ dòng chảy là 8 * thời gian.",
+      "start": 523.3,
+      "duration": 2.1
+    },
+    {
+      "text": "Um the integral of the flow rate brought us directly back to 4 *",
+      "viText": "Ừm, tích phân của tốc độ dòng chảy đưa chúng ta trực tiếp trở lại 4 *",
+      "start": 525.4,
+      "duration": 4.99
+    },
+    {
+      "text": "time^ squar the original volume formula.",
+      "viText": "time^ bình phương công thức thể tích ban đầu.",
+      "start": 530.39,
+      "duration": 3.12
+    },
+    {
+      "text": "That is not a coincidence.",
+      "viText": "Đó không phải là một sự trùng hợp ngẫu nhiên.",
+      "start": 533.51,
+      "duration": 2.03
+    },
+    {
+      "text": "That is the relationship between derivatives and integrals.",
+      "viText": "Đó là mối liên hệ giữa đạo hàm và tích phân.",
+      "start": 535.54,
+      "duration": 4.6
+    },
+    {
+      "text": "And the next section shows you exactly what it means.",
+      "viText": "Và phần tiếp theo sẽ cho bạn thấy chính xác ý nghĩa của nó.",
+      "start": 540.14,
+      "duration": 4.13
+    },
+    {
+      "text": "The key point, the integral rule converts a formula describing a rate of change",
+      "viText": "Điểm mấu chốt, quy tắc tích phân chuyển đổi một công thức mô tả tốc độ thay đổi",
+      "start": 544.27,
+      "duration": 6.16
+    },
+    {
+      "text": "back into a formula describing the total accumulated quantity, which is precisely the reverse",
+      "viText": "trở lại công thức mô tả tổng số lượng tích lũy, chính xác là ngược lại",
+      "start": 550.43,
+      "duration": 7.25
+    },
+    {
+      "text": "of what the power rule does.",
+      "viText": "về những gì quy tắc quyền lực làm.",
+      "start": 557.68,
+      "duration": 2.18
+    },
+    {
+      "text": "The fundamental theorem of calculus states that differentiation and integration are inverse operations.",
+      "viText": "Định lý cơ bản của phép tính cho rằng vi phân và tích phân là các phép toán nghịch đảo.",
+      "start": 559.86,
+      "duration": 8.03
+    },
+    {
+      "text": "They undo each other.",
+      "viText": "Họ hoàn tác lẫn nhau.",
+      "start": 567.89,
+      "duration": 2
+    },
+    {
+      "text": "This matters because it means that in any real system, these two tools are",
+      "viText": "Điều này quan trọng vì nó có nghĩa là trong bất kỳ hệ thống thực nào, hai công cụ này là",
+      "start": 569.89,
+      "duration": 5.77
+    },
+    {
+      "text": "always available as a pair.",
+      "viText": "luôn có sẵn như một cặp.",
+      "start": 575.66,
+      "duration": 2.1
+    },
+    {
+      "text": "If you have the rate, you can get the total.",
+      "viText": "Nếu bạn có tỷ lệ, bạn có thể nhận được tổng số.",
+      "start": 577.76,
+      "duration": 3.43
+    },
+    {
+      "text": "If you have the total, you can get the rate.",
+      "viText": "Nếu bạn có tổng số, bạn có thể nhận được tỷ lệ.",
+      "start": 581.19,
+      "duration": 3.43
+    },
+    {
+      "text": "The direction depends on the question.",
+      "viText": "Hướng đi phụ thuộc vào câu hỏi.",
+      "start": 584.62,
+      "duration": 2.96
+    },
+    {
+      "text": "Let me show you exactly how this works.",
+      "viText": "Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó.",
+      "start": 587.58,
+      "duration": 3.04
+    },
+    {
+      "text": "Facilities manager has a sensor logging a building's total energy consumption over time.",
+      "viText": "Người quản lý cơ sở vật chất có một cảm biến ghi lại tổng mức tiêu thụ năng lượng của tòa nhà theo thời gian.",
+      "start": 590.62,
+      "duration": 6.86
+    },
+    {
+      "text": "Uh the formula for total consumption is known.",
+      "viText": "Uh công thức tính tổng mức tiêu thụ đã được biết.",
+      "start": 597.48,
+      "duration": 3.59
+    },
+    {
+      "text": "The manager needs to know the power draw right now, not the total, the",
+      "viText": "Người quản lý cần biết sức mạnh rút ra ngay bây giờ chứ không phải tổng số",
+      "start": 601.07,
+      "duration": 5.46
+    },
+    {
+      "text": "current rate.",
+      "viText": "tỷ giá hiện hành.",
+      "start": 606.53,
+      "duration": 2
+    },
+    {
+      "text": "That is a derivative applied to the total consumption formula.",
+      "viText": "Đó là đạo hàm áp dụng cho công thức tổng tiêu dùng.",
+      "start": 608.53,
+      "duration": 4.83
+    },
+    {
+      "text": "Run it through the power rule and the answer comes out directly.",
+      "viText": "Chạy nó thông qua quy tắc lũy thừa và câu trả lời sẽ xuất hiện trực tiếp.",
+      "start": 613.36,
+      "duration": 4.99
+    },
+    {
+      "text": "The same manager the following month has a sensor that logs the power draw",
+      "viText": "Người quản lý tương tự vào tháng sau có một cảm biến ghi lại việc rút điện",
+      "start": 618.35,
+      "duration": 5.77
+    },
+    {
+      "text": "rate but needs to bill a tenant for total consumption over 30 days.",
+      "viText": "giá nhưng cần lập hóa đơn cho người thuê về tổng mức tiêu thụ trong 30 ngày.",
+      "start": 624.12,
+      "duration": 5.22
+    },
+    {
+      "text": "um that is an integral applied to the rate formula.",
+      "viText": "ừm đó là tích phân được áp dụng cho công thức tính tỷ lệ.",
+      "start": 629.34,
+      "duration": 3.97
+    },
+    {
+      "text": "Um run it through the integral rule and the total comes out directly.",
+      "viText": "Ừm, hãy thực hiện nó thông qua quy tắc tích phân và tổng sẽ được tính trực tiếp.",
+      "start": 633.31,
+      "duration": 5.38
+    },
+    {
+      "text": "Same building, same data, two different questions, two inverse operations.",
+      "viText": "Cùng một tòa nhà, cùng một dữ liệu, hai câu hỏi khác nhau, hai phép tính nghịch đảo.",
+      "start": 638.69,
+      "duration": 5.77
+    },
+    {
+      "text": "The key point derivatives and integrals are not two separate tools.",
+      "viText": "Đạo hàm điểm then chốt và tích phân không phải là hai công cụ riêng biệt.",
+      "start": 644.46,
+      "duration": 5.22
+    },
+    {
+      "text": "They are two directions of the same operation.",
+      "viText": "Chúng là hai hướng của cùng một hoạt động.",
+      "start": 649.68,
+      "duration": 3.59
+    },
+    {
+      "text": "And knowing this means you can always move between rate and total in either",
+      "viText": "Và biết điều này có nghĩa là bạn luôn có thể di chuyển giữa tỷ lệ và tổng trong",
+      "start": 653.27,
+      "duration": 5.85
+    },
+    {
+      "text": "direction from whatever information you have.",
+      "viText": "hướng từ bất kỳ thông tin nào bạn có.",
+      "start": 659.12,
+      "duration": 3.51
+    },
+    {
+      "text": "A plumber is called to a house with water damage inside a wall.",
+      "viText": "Một thợ sửa ống nước được gọi đến một ngôi nhà bị hư hại do nước bên trong bức tường.",
+      "start": 662.63,
+      "duration": 4.91
+    },
+    {
+      "text": "The homeowner noticed discoloration spreading over the past week.",
+      "viText": "Chủ nhà nhận thấy sự đổi màu lan rộng trong tuần qua.",
+      "start": 667.54,
+      "duration": 5.07
+    },
+    {
+      "text": "The plumber needs to answer four specific questions before deciding how to act.",
+      "viText": "Người thợ sửa ống nước cần trả lời bốn câu hỏi cụ thể trước khi quyết định hành động như thế nào.",
+      "start": 672.61,
+      "duration": 6.16
+    },
+    {
+      "text": "A pressure sensor has been logging data on the leak.",
+      "viText": "Một cảm biến áp suất đã ghi lại dữ liệu về chỗ rò rỉ.",
+      "start": 678.77,
+      "duration": 4.05
+    },
+    {
+      "text": "Um the leak rate is not constant.",
+      "viText": "Um, tốc độ rò rỉ không phải là hằng số.",
+      "start": 682.82,
+      "duration": 2.57
+    },
+    {
+      "text": "It increased as overnight pressure built up.",
+      "viText": "Nó tăng lên khi áp lực qua đêm tăng lên.",
+      "start": 685.39,
+      "duration": 3.43
+    },
+    {
+      "text": "Um at midnight the leak rate was 2 L per hour.",
+      "viText": "Ừm vào lúc nửa đêm tốc độ rò rỉ là 2 L mỗi giờ.",
+      "start": 688.82,
+      "duration": 3.59
+    },
+    {
+      "text": "By 6 a.",
+      "viText": "Đến 6 giờ sáng.",
+      "start": 692.41,
+      "duration": 2
+    },
+    {
+      "text": "m.",
+      "viText": "m.",
+      "start": 694.41,
+      "duration": 2
+    },
+    {
+      "text": "it reached 5 L per hour.",
+      "viText": "nó đạt tới 5 L mỗi giờ.",
+      "start": 696.41,
+      "duration": 2
+    },
+    {
+      "text": "The rate changed continuously for 6 hours.",
+      "viText": "Tỷ giá thay đổi liên tục trong 6 giờ.",
+      "start": 698.41,
+      "duration": 3.27
+    },
+    {
+      "text": "Yeah.",
+      "viText": "Vâng.",
+      "start": 701.68,
+      "duration": 2
+    },
+    {
+      "text": "Question one.",
+      "viText": "Câu hỏi một.",
+      "start": 703.68,
+      "duration": 2
+    },
+    {
+      "text": "Um what is the exact leak rate at 3:00 a.",
+      "viText": "Ừm, tỷ lệ rò rỉ chính xác lúc 3 giờ sáng là bao nhiêu.",
+      "start": 705.68,
+      "duration": 3.2
+    },
+    {
+      "text": "m.",
+      "viText": "m.",
+      "start": 708.88,
+      "duration": 2
+    },
+    {
+      "text": "The sensor data gives a formula for how the rate changed over time.",
+      "viText": "Dữ liệu cảm biến đưa ra công thức về mức độ thay đổi theo thời gian.",
+      "start": 710.88,
+      "duration": 5.22
+    },
+    {
+      "text": "Apply the power rule to that formula.",
+      "viText": "Áp dụng quy tắc lũy thừa cho công thức đó.",
+      "start": 716.1,
+      "duration": 2.88
+    },
+    {
+      "text": "The derivative at the 3hour mark gives an instantaneous rate of 3.",
+      "viText": "Đạo hàm ở mốc 3 giờ cho tỷ lệ tức thời là 3.",
+      "start": 718.98,
+      "duration": 5.14
+    },
+    {
+      "text": "5 L per hour.",
+      "viText": "5 lít mỗi giờ.",
+      "start": 724.12,
+      "duration": 2
+    },
+    {
+      "text": "Not an estimate, the exact rate at that moment.",
+      "viText": "Không phải là ước tính, tỷ lệ chính xác tại thời điểm đó.",
+      "start": 726.12,
+      "duration": 3.66
+    },
+    {
+      "text": "Question two, how fast is the situation getting worse?",
+      "viText": "Câu hỏi thứ hai, tình hình trở nên tồi tệ nhanh đến mức nào?",
+      "start": 729.78,
+      "duration": 4.21
+    },
+    {
+      "text": "The leak rate itself is increasing over time.",
+      "viText": "Bản thân tốc độ rò rỉ đang tăng lên theo thời gian.",
+      "start": 733.99,
+      "duration": 3.51
+    },
+    {
+      "text": "Apply the power rule again, this time to the rate formula, not the volume",
+      "viText": "Áp dụng lại quy tắc lũy thừa, lần này cho công thức tỷ lệ, không phải âm lượng",
+      "start": 737.5,
+      "duration": 5.69
+    },
+    {
+      "text": "formula.",
+      "viText": "công thức.",
+      "start": 743.19,
+      "duration": 2
+    },
+    {
+      "text": "The result tells the plumber that the rate is worsening by 0.",
+      "viText": "Kết quả cho người thợ sửa ống nước biết rằng tỷ lệ này đang xấu đi 0.",
+      "start": 745.19,
+      "duration": 4.75
+    },
+    {
+      "text": "5 L per hour per hour.",
+      "viText": "5 L mỗi giờ mỗi giờ.",
+      "start": 749.94,
+      "duration": 2
+    },
+    {
+      "text": "That number determines urgency.",
+      "viText": "Con số đó quyết định mức độ khẩn cấp.",
+      "start": 751.94,
+      "duration": 2.42
+    },
+    {
+      "text": "A rate that is accelerating quickly requires immediate action.",
+      "viText": "Tốc độ tăng nhanh đòi hỏi phải hành động ngay lập tức.",
+      "start": 754.36,
+      "duration": 4.83
+    },
+    {
+      "text": "A rate that is barely moving can be scheduled.",
+      "viText": "Một tỷ lệ hầu như không thay đổi có thể được lên lịch.",
+      "start": 759.19,
+      "duration": 3.59
+    },
+    {
+      "text": "Question three.",
+      "viText": "Câu hỏi thứ ba.",
+      "start": 762.78,
+      "duration": 2
+    },
+    {
+      "text": "How much total water has leaked between midnight and 6:00 a.",
+      "viText": "Tổng lượng nước đã rò rỉ từ nửa đêm đến 6 giờ sáng.",
+      "start": 764.78,
+      "duration": 4.68
+    },
+    {
+      "text": "m.",
+      "viText": "m.",
+      "start": 769.46,
+      "duration": 2
+    },
+    {
+      "text": "The rate was changing continuously.",
+      "viText": "Tỷ giá đã thay đổi liên tục.",
+      "start": 771.46,
+      "duration": 2.73
+    },
+    {
+      "text": "So multiplication gives the wrong answer.",
+      "viText": "Vậy phép nhân cho đáp án sai.",
+      "start": 774.19,
+      "duration": 3.2
+    },
+    {
+      "text": "Apply the integral rule to the rate formula across the 6-hour window.",
+      "viText": "Áp dụng quy tắc tích phân cho công thức tỷ lệ trong cửa sổ 6 giờ.",
+      "start": 777.39,
+      "duration": 5.38
+    },
+    {
+      "text": "The result, 18 L of water entered the wall cavity overnight.",
+      "viText": "Kết quả là 18 L nước đã lọt vào hốc tường qua đêm.",
+      "start": 782.77,
+      "duration": 4.68
+    },
+    {
+      "text": "Question four.",
+      "viText": "Câu hỏi thứ tư.",
+      "start": 787.45,
+      "duration": 2
+    },
+    {
+      "text": "Does that match the visible damage?",
+      "viText": "Điều đó có phù hợp với thiệt hại có thể nhìn thấy?",
+      "start": 789.45,
+      "duration": 2.73
+    },
+    {
+      "text": "The homeowner's water damage pattern on the wall surface suggests roughly 15 to 20",
+      "viText": "Hình ảnh thiệt hại do nước gây ra trên bề mặt tường của chủ nhà gợi ý khoảng 15 đến 20",
+      "start": 792.18,
+      "duration": 6.39
+    },
+    {
+      "text": "L of intrusion.",
+      "viText": "L của sự xâm nhập.",
+      "start": 798.57,
+      "duration": 2
+    },
+    {
+      "text": "The integral result of 18 L falls directly in that range.",
+      "viText": "Kết quả tích phân của 18 L rơi trực tiếp vào phạm vi đó.",
+      "start": 800.57,
+      "duration": 4.44
+    },
+    {
+      "text": "Uh the plumber now knows this is the correct pipe, the correct time frame",
+      "viText": "Ờ thợ sửa ống nước giờ mới biết đây là đường ống đúng, đúng khung giờ",
+      "start": 805.01,
+      "duration": 5.69
+    },
+    {
+      "text": "and can price the repair accurately.",
+      "viText": "và có thể định giá sửa chữa một cách chính xác.",
+      "start": 810.7,
+      "duration": 2.81
+    },
+    {
+      "text": "one pipe like a limit established what the rate was approaching at each moment.",
+      "viText": "một đường ống giống như một giới hạn xác định tỷ giá đang tiến đến mức nào tại mỗi thời điểm.",
+      "start": 813.51,
+      "duration": 6.16
+    },
+    {
+      "text": "A derivative gave the exact rate at 3:00 a.",
+      "viText": "Một đạo hàm đã đưa ra tỷ giá chính xác vào lúc 3 giờ sáng.",
+      "start": 819.67,
+      "duration": 3.35
+    },
+    {
+      "text": "m.",
+      "viText": "m.",
+      "start": 823.02,
+      "duration": 2
+    },
+    {
+      "text": "A second derivative gave the rate of worsening.",
+      "viText": "Đạo hàm thứ hai cho thấy tỷ lệ đang xấu đi.",
+      "start": 825.02,
+      "duration": 3.66
+    },
+    {
+      "text": "An integral gave the total volume of damage.",
+      "viText": "Một tích phân cho tổng khối lượng thiệt hại.",
+      "start": 828.68,
+      "duration": 3.43
+    },
+    {
+      "text": "That is calculus applied to a real problem start to finish.",
+      "viText": "Đó là phép tính được áp dụng cho một bài toán thực tế bắt đầu cho đến khi kết thúc.",
+      "start": 832.11,
+      "duration": 4.6
+    },
+    {
+      "text": "The first mistake is using average rate when instantaneous rate is what the situation",
+      "viText": "Sai lầm đầu tiên là sử dụng tỷ giá trung bình khi tỷ lệ tức thời là tình huống",
+      "start": 836.71,
+      "duration": 6.62
+    },
+    {
+      "text": "requires.",
+      "viText": "yêu cầu.",
+      "start": 843.33,
+      "duration": 2
+    },
+    {
+      "text": "A machine that averaged 100 parts per hour over a full shift may have",
+      "viText": "Một chiếc máy đạt trung bình 100 bộ phận một giờ trong một ca làm việc đầy đủ có thể có",
+      "start": 845.33,
+      "duration": 5.38
+    },
+    {
+      "text": "been running at 60 parts per hour at the start, 140 at the end.",
+      "viText": "lúc đầu chạy ở tốc độ 60 phần một giờ, lúc cuối là 140 phần một giờ.",
+      "start": 850.71,
+      "duration": 4.91
+    },
+    {
+      "text": "The average tells you total output.",
+      "viText": "Giá trị trung bình cho bạn biết tổng sản lượng.",
+      "start": 855.62,
+      "duration": 2.73
+    },
+    {
+      "text": "The derivative at any specific moment tells you actual performance at that time.",
+      "viText": "Đạo hàm tại bất kỳ thời điểm cụ thể nào sẽ cho bạn biết hiệu suất thực tế tại thời điểm đó.",
+      "start": 858.35,
+      "duration": 6.24
+    },
+    {
+      "text": "Using the average to diagnose a problem at a specific moment sends you to",
+      "viText": "Việc sử dụng giá trị trung bình để chẩn đoán sự cố tại một thời điểm cụ thể sẽ đưa bạn đến",
+      "start": 864.59,
+      "duration": 5.69
+    },
+    {
+      "text": "the wrong place.",
+      "viText": "sai chỗ.",
+      "start": 870.28,
+      "duration": 2
+    },
+    {
+      "text": "The second mistake is multiplying rate by time when the rate is changing.",
+      "viText": "Sai lầm thứ hai là nhân tỷ giá với thời gian khi tỷ giá thay đổi.",
+      "start": 872.28,
+      "duration": 5.69
+    },
+    {
+      "text": "Distance equals rate times time only works when the rate is constant for the",
+      "viText": "Khoảng cách bằng tốc độ nhân với thời gian chỉ có tác dụng khi tốc độ không đổi đối với",
+      "start": 877.97,
+      "duration": 5.92
+    },
+    {
+      "text": "entire period.",
+      "viText": "toàn bộ thời kỳ.",
+      "start": 883.89,
+      "duration": 2
+    },
+    {
+      "text": "The moment the rate varies, which it does in nearly every real system, that",
+      "viText": "Thời điểm tốc độ thay đổi, điều này xảy ra ở hầu hết mọi hệ thống thực,",
+      "start": 885.89,
+      "duration": 5.85
+    },
+    {
+      "text": "formula produces an incorrect total.",
+      "viText": "công thức tạo ra tổng sai.",
+      "start": 891.74,
+      "duration": 2.81
+    },
+    {
+      "text": "The error is not always obvious and it compounds over longer time periods.",
+      "viText": "Lỗi không phải lúc nào cũng rõ ràng và nó sẽ phức tạp hơn trong khoảng thời gian dài hơn.",
+      "start": 894.55,
+      "duration": 5.77
+    },
+    {
+      "text": "by when the rate is changing the integral is the correct tool.",
+      "viText": "khi tốc độ thay đổi thì tích phân là công cụ chính xác.",
+      "start": 900.32,
+      "duration": 4.83
+    },
+    {
+      "text": "Um the third mistake is treating the derivative and the integral as unrelated.",
+      "viText": "Ừm, sai lầm thứ ba là coi đạo hàm và tích phân là không liên quan.",
+      "start": 905.15,
+      "duration": 6.08
+    },
+    {
+      "text": "They are inverse operations.",
+      "viText": "Chúng là những hoạt động nghịch đảo.",
+      "start": 911.23,
+      "duration": 2.18
+    },
+    {
+      "text": "Um differentiating a function and then integrating the result returns you to where you",
+      "viText": "Ừm, việc lấy vi phân của một hàm rồi tích phân kết quả sẽ đưa bạn về vị trí",
+      "start": 913.41,
+      "duration": 6.7
+    },
+    {
+      "text": "started.",
+      "viText": "bắt đầu.",
+      "start": 920.11,
+      "duration": 2
+    },
+    {
+      "text": "This means that if you have the rate formula, you can always recover the",
+      "viText": "Điều này có nghĩa là nếu bạn có công thức tỷ lệ, bạn luôn có thể khôi phục",
+      "start": 922.11,
+      "duration": 5.61
+    },
+    {
+      "text": "total.",
+      "viText": "tổng cộng.",
+      "start": 927.72,
+      "duration": 2
+    },
+    {
+      "text": "And if you have the total formula, you can always recover the rate.",
+      "viText": "Và nếu bạn có công thức tổng, bạn luôn có thể lấy lại tỷ lệ.",
+      "start": 929.72,
+      "duration": 5.22
+    },
+    {
+      "text": "Treating them as separate topics means missing the most useful thing about both of",
+      "viText": "Coi chúng như những chủ đề riêng biệt có nghĩa là thiếu đi điều hữu ích nhất về cả hai",
+      "start": 934.94,
+      "duration": 6.39
+    },
+    {
+      "text": "them.",
+      "viText": "họ.",
+      "start": 941.33,
+      "duration": 2
+    },
+    {
+      "text": "A structural engineer calculating the load on a beam that varies across its length",
+      "viText": "Kỹ sư kết cấu tính toán tải trọng tác dụng lên dầm thay đổi theo chiều dài",
+      "start": 943.33,
+      "duration": 6.39
+    },
+    {
+      "text": "uses an integral to find the total force on the beam.",
+      "viText": "sử dụng tích phân để tìm tổng lực tác dụng lên dầm.",
+      "start": 949.72,
+      "duration": 4.13
+    },
+    {
+      "text": "Using simple multiplication instead produces an incorrect load estimate and a beam that may",
+      "viText": "Thay vào đó, việc sử dụng phép nhân đơn giản sẽ tạo ra ước tính tải trọng không chính xác và chùm tia có thể",
+      "start": 953.85,
+      "duration": 7.09
+    },
+    {
+      "text": "fail under real conditions.",
+      "viText": "thất bại trong điều kiện thực tế.",
+      "start": 960.94,
+      "duration": 2.1
+    },
+    {
+      "text": "A financial analyst tracking how fast a cost center is growing us as a",
+      "viText": "Một nhà phân tích tài chính đang theo dõi tốc độ phát triển của trung tâm chi phí với tư cách là",
+      "start": 963.04,
+      "duration": 5.46
+    },
+    {
+      "text": "derivative to find the exact rate of increase at a specific quarter.",
+      "viText": "phái sinh để tìm ra tỷ lệ tăng chính xác tại một quý cụ thể.",
+      "start": 968.5,
+      "duration": 5.3
+    },
+    {
+      "text": "Um using a quarterly average instead hides the spikes and the derivative would have",
+      "viText": "Ừm thay vào đó, sử dụng mức trung bình hàng quý để che giấu các mức tăng đột biến và đạo hàm sẽ có",
+      "start": 973.8,
+      "duration": 6.47
+    },
+    {
+      "text": "revealed them immediately.",
+      "viText": "tiết lộ chúng ngay lập tức.",
+      "start": 980.27,
+      "duration": 2.03
+    },
+    {
+      "text": "A building manager monitoring energy draw uses an integral to calculate verified consumption over",
+      "viText": "Người quản lý tòa nhà giám sát việc tiêu thụ năng lượng sử dụng tích phân để tính toán mức tiêu thụ đã được xác minh trên",
+      "start": 982.3,
+      "duration": 7.56
+    },
+    {
+      "text": "a billing period.",
+      "viText": "một kỳ thanh toán.",
+      "start": 989.86,
+      "duration": 2
+    },
+    {
+      "text": "If the rate data is available but the integral is skipped, the estimate will",
+      "viText": "Nếu dữ liệu tỷ lệ có sẵn nhưng tích phân bị bỏ qua thì ước tính sẽ",
+      "start": 991.86,
+      "duration": 5.92
+    },
+    {
+      "text": "be wrong any time usage was uneven across the period which is every time.",
+      "viText": "có thể sai bất kỳ lúc nào việc sử dụng không đồng đều trong suốt khoảng thời gian và mọi lúc.",
+      "start": 997.78,
+      "duration": 5.69
+    },
+    {
+      "text": "You can now look at a change in quantity and immediately identify whether the",
+      "viText": "Bây giờ bạn có thể xem xét sự thay đổi về số lượng và xác định ngay liệu",
+      "start": 1003.47,
+      "duration": 6
+    },
+    {
+      "text": "question being asked requires the rate at a specific instant or the total accumulated",
+      "viText": "câu hỏi đang được hỏi yêu cầu tỷ lệ tại một thời điểm cụ thể hoặc tổng số tích lũy",
+      "start": 1009.47,
+      "duration": 6.62
+    },
+    {
+      "text": "amount over time and you know which operation answers each one.",
+      "viText": "số lượng theo thời gian và bạn biết thao tác nào trả lời từng câu hỏi.",
+      "start": 1016.09,
+      "duration": 4.91
+    },
+    {
+      "text": "You can apply the power rule to a formula and extract the exact rate",
+      "viText": "Bạn có thể áp dụng quy tắc lũy thừa cho một công thức và trích xuất tỷ lệ chính xác",
+      "start": 1021,
+      "duration": 5.3
+    },
+    {
+      "text": "of change at any point you choose.",
+      "viText": "thay đổi tại bất kỳ thời điểm nào bạn chọn.",
+      "start": 1026.3,
+      "duration": 2.65
+    },
+    {
+      "text": "You can apply the integral rule to a rate formula and recover the total",
+      "viText": "Bạn có thể áp dụng quy tắc tích phân cho công thức tỷ lệ và lấy lại tổng",
+      "start": 1028.95,
+      "duration": 5.53
+    },
+    {
+      "text": "accumulated quantity across any time window.",
+      "viText": "số lượng tích lũy qua bất kỳ khoảng thời gian nào.",
+      "start": 1034.48,
+      "duration": 3.43
+    },
+    {
+      "text": "You can recognize when multiplication is the wrong tool when the rate is changing",
+      "viText": "Bạn có thể nhận ra khi nào phép nhân là công cụ sai khi tốc độ thay đổi",
+      "start": 1037.91,
+      "duration": 6.31
+    },
+    {
+      "text": "and replace it with the correct one.",
+      "viText": "và thay thế nó bằng cái đúng.",
+      "start": 1044.22,
+      "duration": 2.81
+    },
+    {
+      "text": "You can see that these two operations are inverses and use that relationship to",
+      "viText": "Bạn có thể thấy rằng hai thao tác này là nghịch đảo và sử dụng mối quan hệ đó với",
+      "start": 1047.03,
+      "duration": 6.16
+    },
+    {
+      "text": "move between rate and total in either direction from whatever data you have available.",
+      "viText": "di chuyển giữa tỷ lệ và tổng theo một trong hai hướng từ bất kỳ dữ liệu nào bạn có sẵn.",
+      "start": 1053.19,
+      "duration": 6.7
+    },
+    {
+      "text": "You can look at a real system, a pipe, a meter, a machine, a",
+      "viText": "Bạn có thể nhìn vào một hệ thống thực, một đường ống, một đồng hồ đo, một cái máy, một",
+      "start": 1059.89,
+      "duration": 4.68
+    },
+    {
+      "text": "financial model and identify which of these operations is running underneath it.",
+      "viText": "mô hình tài chính và xác định hoạt động nào đang chạy bên dưới nó.",
+      "start": 1064.57,
+      "duration": 6.24
+    },
+    {
+      "text": "Calculus is not abstract.",
+      "viText": "Giải tích không trừu tượng.",
+      "start": 1070.81,
+      "duration": 2
+    },
+    {
+      "text": "It is not a wall that only certain people can get past.",
+      "viText": "Đó không phải là bức tường mà chỉ một số người có thể vượt qua.",
+      "start": 1072.81,
+      "duration": 4.29
+    },
+    {
+      "text": "It is a pair of tools built to answer specific questions about a world",
+      "viText": "Đó là một cặp công cụ được xây dựng để trả lời các câu hỏi cụ thể về một thế giới",
+      "start": 1077.1,
+      "duration": 5.46
+    },
+    {
+      "text": "where almost nothing stays constant.",
+      "viText": "nơi hầu như không có gì không thay đổi.",
+      "start": 1082.56,
+      "duration": 2.81
+    },
+    {
+      "text": "You now have those tools and you know exactly what they are for.",
+      "viText": "Bây giờ bạn đã có những công cụ đó và bạn biết chính xác chúng dùng để làm gì.",
+      "start": 1085.37,
+      "duration": 4.99
+    },
+    {
+      "text": "That is what you should have been given the first",
+      "viText": "Đó là điều lẽ ra bạn phải được trao đầu tiên",
+      "start": 1090.36,
+      "duration": 3.82
+    }
+  ]
+}

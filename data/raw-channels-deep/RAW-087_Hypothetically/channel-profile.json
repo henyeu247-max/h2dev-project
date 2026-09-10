@@ -1,0 +1,60 @@
+{
+  "id": "RAW-087",
+  "channelId": "UC0L9hD7HMwWU7xuU5HRA6Iw",
+  "title": "Hypothetically",
+  "handle": "@HypotheticallyHQ",
+  "url": "https://www.youtube.com/channel/UC0L9hD7HMwWU7xuU5HRA6Iw",
+  "subscribers": 330000,
+  "views": 29029028,
+  "videoCount": 39,
+  "country": "US",
+  "avatar": "https://yt3.ggpht.com/5nRMRXOfhkklkRqJ_vic056PYXoyxremaO_tt-nKfnLy5EtuFsdxkccy1QOAW7ko7gwSf9uvwA=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Entertainment",
+    "Society",
+    "Film"
+  ],
+  "editorialNiche": "Tội phạm / bi kịch",
+  "publishedAt": "2023-10-27T23:44:42.863Z",
+  "longevityAudit": {
+    "channelAgeDays": 1047,
+    "activeSpanDays": 281,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 11000,
+      "viewsGained": 1814519,
+      "videosPublished": 3
+    }
+  },
+  "channelTags": [
+    "business",
+    "money",
+    "entrepreneurship",
+    "wealth",
+    "luxury",
+    "rich"
+  ],
+  "extractedAt": "2026-09-09T03:31:15Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 13823602,
+    "maxOutlierScore": 11.37,
+    "maxVPH": 295.16,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-05-23",
+    "daysSinceLatest": 109,
+    "healthStatus": "DORMANT_MID",
+    "healthBadge": "🟠 Ngủ đông 2–6 tháng",
+    "healthDetail": "Chưa ra video mới trong 109 ngày (lần cuối: 2026-05-23). Cần theo dõi nhịp sản xuất.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 1,814,519 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$4,446 – $8,256 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

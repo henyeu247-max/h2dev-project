@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "project": "PILOT-01-THE-MIRROR",
+    "niche": "Everyday History & Origin Stories",
+    "aspectRatio": "16:9",
+    "stylePrompt": "Cinematic painterly historical illustration, dramatic chiaroscuro lighting, rich textures, evocative storytelling, photoreal oil painting aesthetic, moody atmospheric haze, 8k resolution, no text, no watermark --ar 16:9"
+  },
+  "scenes": [
+    {
+      "segment": 1,
+      "name": "Ancient Obsidian Reflection",
+      "prompt": "A primitive prehistoric human staring in awe at their reflection in a polished black obsidian stone, dark moody lighting, flickering torchlight, ancient cave interior, mystical atmosphere, painterly cinematic style, 8k --ar 16:9"
+    },
+    {
+      "segment": 2,
+      "name": "Venetian Glass Workshop Secret",
+      "prompt": "16th century Murano Venice glassblower workshop at night, glowing molten glass, dark moody atmospheric lighting, shadowy hooded guards watching, intense historical drama, Renaissance aesthetic --ar 16:9"
+    },
+    {
+      "segment": 3,
+      "name": "Toxic Mercury Artisans",
+      "prompt": "Dramatic historical illustration of Renaissance artisans pouring shimmering liquid mercury over glass in a dark misty workshop, candlelit reflections, eerie green and silver glow, tragic mood --ar 16:9"
+    },
+    {
+      "segment": 4,
+      "name": "Versailles Hall of Mirrors Grandeur",
+      "prompt": "Grand Hall of Mirrors in Palace of Versailles 17th century, King Louis XIV in opulent royal attire admiring hundreds of glistening arched mirrors, golden chandeliers casting warm radiant light, magnificent baroque grandeur --ar 16:9"
+    },
+    {
+      "segment": 5,
+      "name": "Liebig Chemical Silver Discovery",
+      "prompt": "19th century Victorian laboratory, German chemist Justus von Liebig watching silver crystals rapidly coat a glass pane with a brilliant mirror reflection, glowing chemical flasks, steam, vintage discovery mood --ar 16:9"
+    },
+    {
+      "segment": 6,
+      "name": "Victorian Woman Mirror Gazing",
+      "prompt": "A Victorian lady in an elegant velvet gown gazing deeply into a lavish gilded vanity mirror in a dim candlelit bedroom, psychological tension, double reflection, haunting beautiful atmosphere --ar 16:9"
+    },
+    {
+      "segment": 7,
+      "name": "Modern Infinity Reflection",
+      "prompt": "A person standing between two infinite reflecting antique mirrors, endless corridor of reflections fading into shadowy darkness, cinematic moody lighting, philosophical closing visual --ar 16:9"
+    }
+  ]
+}

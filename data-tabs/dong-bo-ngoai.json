@@ -1,0 +1,269 @@
+{
+  "updated": "2026-08-20",
+  "note": "H2DEV-Project là nguồn sự thật. +20/08: GOM MCP về 1 nguồn .claude.json (13 server) · 4 báo cáo + prompt Everyday History → 95 card · +5 ngách mới (30-34) + hang 11 Science→Trái Đất documentary + dòng 7 chính sách (Hate/Sex=Community Guidelines) + chuẩn hóa lamDuoc 34/34 ngách · thêm 4 kênh mẫu → kenh-mau 134 (xóa DoctorJohnMeyers).",
+  "khongGom": [
+    {
+      "item": "mcp-keys-du-phong.md",
+      "lyDo": "bí mật — không đưa vào web"
+    },
+    {
+      "item": "_tmp_*",
+      "lyDo": "script/json tạm phiên 30/07"
+    },
+    {
+      "item": "*.bak-verify-20260818",
+      "lyDo": "bản backup trước verify"
+    },
+    {
+      "item": "knowledge-hub (cũ ở gốc)",
+      "lyDo": "đã chuyển vào H2DEV-Project/knowledge-hub/"
+    },
+    {
+      "item": ".env trong pipeline",
+      "lyDo": "API key — không copy"
+    }
+  ],
+  "matched": [
+    {
+      "goc": "Prompt Key Nhật.md",
+      "trongH2dev": "Prompt Key Nhật",
+      "fileLocal": "docs/NOI-BO/prompt/key-nhat.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT KEY_ QUY TRÌNH _ NHÀ MÁY SẢN XUẤT (H2Dev).md",
+      "trongH2dev": "PROMPT KEY QUY TRÌNH/ NHÀ MÁY SẢN XUẤT",
+      "fileLocal": "docs/NOI-BO/prompt/nha-may-san-xuat.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT NGÁCH NHỎ PHẬT PHÁP - H2Dev.md",
+      "trongH2dev": "Prompt + tài nguyên ngách nhỏ phật pháp (thị trường Hàn)",
+      "fileLocal": "docs/NOI-BO/prompt/phat-phap-han.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT NGÁCH NHỎ TRIẾT LÝ (H2Dev).md",
+      "trongH2dev": "PROMPT NGÁCH NHỎ TRIẾT LÝ (H2Dev)",
+      "fileLocal": "docs/NOI-BO/prompt/triet-ly.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT NGÁCH QUY LUẬT KINH TẾ (H2Dev).md",
+      "trongH2dev": "PROMPT NGÁCH QUY LUẬT KINH TẾ",
+      "fileLocal": "docs/NOI-BO/prompt/quy-luat-kinh-te.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT NGÁCH TIỀN SỬ (VIDEO AI - VEO 3).md",
+      "trongH2dev": "PROMPT TRAIN NGÁCH TIỀN SỬ",
+      "fileLocal": "docs/NOI-BO/prompt/tien-su-veo3.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT THUMB + TỪ KHÓA SEO _ HASHTAGS.md",
+      "trongH2dev": "PROMPT THUMB + TỪ KHÓA SEO / HASHTAGS KEY SENIOR",
+      "fileLocal": "docs/NOI-BO/prompt/thumb-seo-hashtag.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT_ NGÁCH KINH TẾ - THỊ TRƯỜNG HÀN (H2Dev).md",
+      "trongH2dev": "PROMPT: NGÁCH KINH TẾ - THỊ TRƯỜNG HÀN",
+      "fileLocal": "docs/NOI-BO/prompt/kinh-te-han.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT_ NGÁCH Kiểm soát sinh học - chiến thuật - tâm lý - tối ưu hiệu suất chiến đấu.md",
+      "trongH2dev": "PROMPT: NGÁCH Kiểm soát sinh học - chiến thuật - tâm lý (UPDATE 26/02/2026) - H2DEV",
+      "fileLocal": "docs/NOI-BO/prompt/sinh-hoc-combat.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "PROMPT_ NGÁCH ĐỨA TRẺ - THỊ TRƯỜNG HÀN (H2Dev).md",
+      "trongH2dev": "PROMPT NGÁCH ĐỨA TRẺ (UPDATE 24/01/2026) - H2DEV",
+      "fileLocal": "docs/NOI-BO/prompt/dua-tre-han.md",
+      "hanhDong": "MATCH — gắn fileLocal, không tạo card trùng"
+    },
+    {
+      "goc": "LIST KÊNH DOUYIN NGUỒN TÀI NGUYÊN REUP.xlsx",
+      "trongH2dev": "LIST KÊNH DOUYIN NGUỒN TÀI NGUYÊN REUP",
+      "fileLocal": "docs/NOI-BO/nguon/list-kenh-douyin.xlsx",
+      "hanhDong": "MATCH — gắn fileLocal lên card Excel đã có"
+    },
+    {
+      "goc": "NGUỒN VIDEO REUP DOUYIN + BILIBILI.xlsx",
+      "trongH2dev": "NGUỒN VIDEO REUP DOUYIN + BILIBILI",
+      "fileLocal": "docs/NOI-BO/nguon/nguon-video-reup-douyin-bilibili.xlsx",
+      "hanhDong": "MATCH — gắn fileLocal lên card Excel đã có"
+    },
+    {
+      "goc": "file Skill ngách động vật (Drive)",
+      "trongH2dev": "VIDEO-e91589",
+      "fileLocal": "pipelines/wildlife/.../SKILL.md",
+      "hanhDong": "MATCH + bổ sung file local"
+    }
+  ],
+  "merged": [
+    {
+      "name": "PROMPT KEY The North Effect (địa chính trị EN) — bản MD gốc",
+      "file": "docs/NOI-BO/prompt/north-effect.md",
+      "kind": "prompt",
+      "contentNiche": "Lịch sử / Quân sự",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Báo cáo ngách Nhật–Hàn (senior storytelling)",
+      "file": "docs/NOI-BO/bao-cao/BAO-CAO-NGACH-NHAT-HAN.md",
+      "kind": "report",
+      "contentNiche": "Drama / Stories",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Cross-check Bible Explainer vs NexLev",
+      "file": "docs/NOI-BO/bao-cao/CROSS-CHECK-BIBLE-NEXLEV-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Triết lý / Tâm linh",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Đánh giá pipeline hoạt hình AI kể chuyện",
+      "file": "docs/NOI-BO/bao-cao/DANH-GIA-HOAT-HINH-AI-KE-CHUYEN-2026-07-30.md",
+      "kind": "report",
+      "contentNiche": "Reup / Hoạt hình",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Đánh giá toàn bộ tài sản dự án YTB",
+      "file": "docs/NOI-BO/bao-cao/DANH-GIA-TAI-SAN-DU-AN-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Nền tảng / Tool",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Đối thủ đã verify (scrape + RSS)",
+      "file": "docs/NOI-BO/bao-cao/DOI-THU-VERIFIED-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Share key / Ngách nhỏ",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Lộ trình ngách xanh",
+      "file": "docs/NOI-BO/bao-cao/NGACH-XANH-LO-TRINH-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Kiếm tiền / Chính sách",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Chốt ngách ổn định US / Nhật / Hàn",
+      "file": "docs/NOI-BO/bao-cao/NHAN-DINH-CHOT-NGACH-ON-DINH-US-NHAT-HAN-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Triết lý / Tâm linh",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Nhận định ngách mãi xanh",
+      "file": "docs/NOI-BO/bao-cao/NHAN-DINH-NGACH-MAI-XANH-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Triết lý / Tâm linh",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Phân tích MCP dùng cho YTB",
+      "file": "docs/NOI-BO/bao-cao/PHAN-TICH-MCP-DAY-DU-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Nền tảng / Tool",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Quét faceless niches NexLev 30/07",
+      "file": "docs/NOI-BO/bao-cao/QUET-FACELESS-2026-07-30.md",
+      "kind": "report",
+      "contentNiche": "Share key / Ngách nhỏ",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Quét mũ toàn thị trường faceless",
+      "file": "docs/NOI-BO/bao-cao/QUET-MU-TOAN-THI-TRUONG-FACELESS-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Share key / Ngách nhỏ",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Verify ngách mãi xanh lần 2",
+      "file": "docs/NOI-BO/bao-cao/VERIFY-NGACH-MAI-XANH-LAN-2-2026-07-27.md",
+      "kind": "report",
+      "contentNiche": "Triết lý / Tâm linh",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Pipeline hoạt hình AI (5 bước · kie.ai + Grok Imagine)",
+      "file": "pipelines/hoat-hinh-ai/README.md",
+      "kind": "tool",
+      "contentNiche": "Reup / Hoạt hình",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Pipeline video tôn giáo EN (script + ElevenLabs + merge)",
+      "file": "pipelines/ton-giao/skill-tao-video-Youtube-ton-giao/SKILL.md",
+      "kind": "tool",
+      "contentNiche": "Triết lý / Tâm linh",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Skill Wildlife Survival + motion prompt Veo",
+      "file": "pipelines/wildlife/wildlife-survival-H2dev/script-wildlife-survival/SKILL.md",
+      "kind": "tool",
+      "contentNiche": "Reup / Hoạt hình",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Bible Explainer V2.1 (script + image + thumb + 24 ảnh mẫu)",
+      "file": "pipelines/bible-explainer/skill prompt - Bible Explainer",
+      "kind": "tool",
+      "contentNiche": "Triết lý / Tâm linh",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Knowledge Hub — pointer kho archive NotebookLM",
+      "file": "docs/NOI-BO/knowledge-hub-POINTER.md",
+      "kind": "other",
+      "contentNiche": "Nền tảng / Tool",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    },
+    {
+      "name": "Lịch sử chat dự án YTB (phiên 1–4 + 30/07)",
+      "file": "docs/NOI-BO/chat/README.md",
+      "kind": "report",
+      "contentNiche": "Nhân bản / Kênh",
+      "hanhDong": "GÔM — card mới tab Kịch bản & Tài liệu"
+    }
+  ],
+  "pipelines": [
+    {
+      "id": "hoat-hinh-ai",
+      "dest": "pipelines/hoat-hinh-ai",
+      "files": 16,
+      "mb": 0.1
+    },
+    {
+      "id": "ton-giao",
+      "dest": "pipelines/ton-giao",
+      "files": 10,
+      "mb": 0.05
+    },
+    {
+      "id": "wildlife",
+      "dest": "pipelines/wildlife",
+      "files": 4,
+      "mb": 0.03
+    },
+    {
+      "id": "bible-explainer",
+      "dest": "pipelines/bible-explainer",
+      "files": 31,
+      "mb": 75.04
+    }
+  ],
+  "taiLieuTruoc": 57,
+  "taiLieuSau": 76
+}

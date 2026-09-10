@@ -1,0 +1,1325 @@
+{
+  "videoId": "gStiCNZABs0",
+  "title": "Every Illegal Operating System Explained in 15 Minutes!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 219,
+  "fullText": "Most operating systems just help you check email or play games. But some have a much darker story behind them. Government surveillance built into the file system. Lawsuits worth millions over a single name. Even a system built by one man who believed God gave him the instructions. These are real cases documented by researchers and courts, not internet legends. Let's go through nine of them from the most disturbing to the most misunderstood. RedStar OS. Redstar OS is the official governmentissued operating system of North Korea. On the surface, it looks almost exactly like Mac OS with the same icons, the same dock, and the same general layout. If you saw a screenshot without context, you might think it was an Apple product. But underneath that familiar interface, it works in a completely different way. RedStar OS quietly adds an invisible digital watermark to every single file you open from a USB drive. This isn't limited to programs you run. It happens with documents, videos, music files, almost anything you plug in. The watermark happens automatically in the background, even if you never actually open the file at all. Just inserting the USB drive can be enough. The purpose of that watermark is tracking. It lets the government trace exactly who has been sharing or storing fobies, foreign music, or foreign books, all of which are illegal to access in North Korea. If a user notices the monitoring behavior and tries to disable it, the computer doesn't just block the action. It automatically restarts itself to undo the change and reenable tracking. Two German researchers, Florian Grunau and Nicklaus Shias, reverse engineered Red Star OS in detail and presented their findings publicly at the Chaos Communication Congress in 2015, confirming these surveillance features were real and intentional design choices, not bugs. The trade-off here isn't about speed or battery life or performance, the way it normally is with most tech comparisons. It's about complete loss of privacy built directly into the operating system from the ground up. This isn't software designed to serve the user sitting in front of the screen. It's software designed to serve the state watching that user from somewhere else entirely. Templeos Temple OS tells a very different kind of story. It's not illegal anywhere in the world and no government has ever banned it. Some companies simply don't allow it on internal machines, but that's only because it's technically outdated and has no real internet networking support, not because of any legal restriction. What makes Temple OS unforgettable isn't a law or a court case. It's the story of the person who built it. Temple OS was created entirely by one programmer, Terry A. Davis. Over more than 10 years of continuous obsessive work, Terry believed he had been instructed by God to build a modern version of the third temple, except in operating system form instead of physical stone and architecture. He didn't just write some code on top of an existing system either. He built the entire kernel from scratch, his own custom compiler, and even his own programming language called Holy C, all by himself without a team. Terry lived with schizophrenia for most of his adult life. And that ongoing struggle is deeply woven into the project's history, its strange visuals, and its unconventional design choices. This isn't a story about danger, crime, or surveillance like the previous entry. It's a story about obsession, isolation, raw talent, and someone fighting his own mind every single day while still managing to finish something most professional teams never would. That's exactly why so many programmers and tech historians still talk about Temple OS with genuine respect today rather than treating it as a joke. Livveness to Lin Spear, Lindows is a textbook example of a legal fight, not a security threat or a piece of dangerous software. The original goal behind Lindows was actually pretty simple and reasonable. Let regular people run Windows style applications on top of a Linux foundation, combining the openness of Linux with the familiarity of Windows software. But here's the twist. Microsoft didn't sue over the underlying technology at all. They sued specifically over the name. Linds sounded close enough to Windows that Microsoft's legal team considered it trademark infringement, something that could confuse customers in stores. The case dragged on for a while, but eventually Microsoft decided settling was smarter than continuing to fight it in court. They paid the company behind Lindo's close to $20 million to settle the dispute. And as part of that deal, Microsoft also bought the trademark rights to the name Lindo owes outright back in 2004. After the settlement, the project didn't disappear. It simply rebranded itself as Lindspire and kept developing from there. The trade-off in this entire story has nothing to do with malware, hacking, or stolen code. It's purely about trademark law. A single product name, four extra letters away from Windows, was enough to trigger a multi-million dollar legal battle, even though the actual software itself never did anything technically wrong or harmful to users. Reactose React OS is an open-source project with an ambitious goal. recreate the way Windows behaves completely from scratch without copying or using any of Microsoft's actual proprietary source code. That goal alone puts the project in a legally sensitive position from the very first line of code written. Back in 2006, the React OS development team made a serious decision. They froze all active development for several months, stopping new code contributions completely. Why take such a drastic step? The leadership became worried that some contributors, even unintentionally, may have looked at leaked Windows source code at some point while writing parts of React OS. If that turned out to be true, it could legally contaminate the entire codebase, opening the door to a massive lawsuit from Microsoft. So instead of taking that risk, the team paused everything and conducted a full internal audit, checking line by line where every piece of code actually came from. The trade-off here is pretty clear once you think about it. Building software that closely mimics a major commercial product, even with completely good intentions and zero malicious goals, means constantly having to prove you never crossed a legal line somewhere along the way. React OS ultimately survived that internal audit and continued development afterward. But the monthsl long pause shows just how fragile open- source clone projects can really be when they sit this close to someone else's intellectual property. Tails and Wix. Tales and Wix are both completely legal privacy tools, not hacking software and not anything inherently criminal. Both route your internet traffic through tour, a network designed to hide your real identity and physical location while browsing online. Because of that anonymity feature, people online often casually nickname them dark web operating systems, which sounds dramatic and a little scary. But that nickname genuinely misses the bigger, more important picture. Journalists around the world use these exact tools to protect confidential sources who could face serious danger if identified. Human rights activists living unsafe or authoritarian countries use them daily to avoid government tracking and surveillance. Edward Snowden, one of the most famous whistleblowers in modern history, has publicly confirmed using tools like these himself. The same anonym that can protect criminals trying to hide also protect whistleblowers, journalists, and ordinary people who are genuinely in danger because of what they know or what they're trying to expose. The trade-off is speed. Plain and simple. Routing every bit of your traffic through multiple layers of encryption and relay servers makes browsing noticeably slower than normal. For everyday tasks like checking email or watching videos, that slowdown usually isn't worth the hassle. But for someone whose physical safety genuinely depends on staying anonymous online, that tradeoff can matter more than almost anything else in their entire digital life. Kali Linux and Parrot OS. Kali Linux and Parrot OS are completely legal too and in fact they're actively taught inside schools and universities as part of cyber security courses. Both operating systems are specifically built for penetration testing which simply means finding security weaknesses inside a system before real malicious attackers manage to find them first. Companies around the world legally hire cyber security professionals who use exactly these tools to test their own internal networks with full permission and a signed contract beforehand. Just downloading Kali Linux onto your laptop is not a crime in any country. Nothing about possessing the software itself breaks any law. The moment it actually becomes illegal is when someone uses the tools inside it to break into a system they don't own and were never given permission to test in the first place. The operating system itself is completely neutral, almost like a toolbox sitting in a garage. It's the same kind of tool a locksmith uses and also the same kind of tool a burglar could misuse. What ultimately turns it into a crime isn't the software at all. It's entirely about how someone decides to use it and on whose systems they decide to point it. Pirated windowed be. Now, here's the one entry on this entire list that's actually illegal in a simple, direct, no gray area kind of way. Cracked or pirated Windows builds, sometimes nicknamed ghost builds in certain online communities, are unauthorized copies of Windows distributed for free, usually bypassing the official activation and licensing system entirely. This is straightforward copyright infringement. No complicated legal argument needed to explain it. But honestly, the legal risk isn't even the scariest part here. The bigger danger is what's frequently hidden inside these builds without the user ever knowing. These pirated versions are commonly packed with hidden malware, spyware, or secret back doors that the original uploader can access and control remotely, completely invisible to the average user installing it. Multiple real world organizations, including some government offices, have been seriously compromised after installing pirated Windows versions on official machines without realizing what extra software had been bundled silently inside the installer. The trade-off here is simple and honestly a little scary once you understand it fully. You save some money upfront by skipping the official license, but in exchange, you genuinely have no idea who else might have ongoing access to your system afterward. Sometimes for months or years without you ever noticing anything wrong. This is the one entry on this entire list where the warning isn't just historical or theoretical. It's something people are actively running into right now today in homes and offices around the world. Harmonyos. Harmony OS is Huawei's own independently developed operating system built largely as a direct response to US trade restrictions that cut off Huawei's access to core Android services and Google's app ecosystem. Harmony OS itself isn't illegal anywhere in the world, and there's no law banning regular people from using it on their own devices. The real issue surrounding it is geopolitical tension, not any actual criminal activity. Some governments choose to restrict its use specifically inside critical infrastructure systems or sensitive government agencies worried about the theoretical possibility of hidden back doors connected back to the manufacturer or by extension back to a foreign government. It's worth being clear though there's no public confirmed proof of an actual backdoor existing inside harmony OS. The restriction many countries apply is based purely on caution and a general lack of trust, not on any confirmed technical evidence uncovered by researchers. The trade-off here is really about supply chain trust at a national level. When an entire country depends heavily on foreign-made software running inside its most critical systems, the biggest risk involved usually isn't even technical in nature. It's fundamentally about political trust or the lack of it between competing governments. Neocyin and KY Lin OS. NeoKylin, also commonly known simply as Kylin OS, is a Chinese-developed operating system that visually looks strikingly similar to Windows XP, almost like a near identical recreation of that familiar early 2000s interface. It's used extensively inside Chinese government offices and military computer systems across the country. The core motivation behind building it is national independence, specifically reducing reliance on Americanmade software for operating the country's most critical national systems. This isn't an illegal operating system by any normal legal definition you could apply anywhere. It's fundamentally a national technology strategy, not a crime. Many other countries around the world are now actively building their own custom operating systems for this exact same underlying reason to avoid becoming permanently dependent on software entirely controlled by decision makers in another country. The trade-off involved is mainly development cost and somewhat slower software updates compared to mainstream global operating systems, but that's accepted in exchange for not being dependent on a single foreign company's business decisions or political pressure from another government down the line. So, out of all nine operating systems, most of them aren't illegal once you dig into the details. Some are legal tools that just carry a bad reputation like Tails or Kali Linux. Others are legal disputes over names or code like Lindows and React OS. Only one entry, pirated Windows builds, is actually straightforward copyright crime. And ironically, it's also the one most likely to quietly infect your own PC right now. Anyway, I've got more videos breaking down tech myths like this one. Go check them out. Okay.",
+  "fullTextVi": "Hầu hết các hệ điều hành chỉ giúp bạn kiểm tra email hoặc chơi game. Nhưng một số có một câu chuyện đen tối hơn nhiều đằng sau họ. Sự giám sát của chính phủ được tích hợp vào hệ thống tập tin. Những vụ kiện trị giá hàng triệu đô la chỉ vì một cái tên. Ngay cả một hệ thống được xây dựng bởi một người tin vào Chúa cũng đã đưa ra những chỉ dẫn cho anh ta. Đây là những trường hợp có thật được các nhà nghiên cứu và tòa án ghi lại, không phải truyền thuyết trên mạng. Chúng ta hãy điểm qua 9 điều trong số đó, từ đáng lo ngại nhất đến hiểu lầm nhất. Hệ điều hành RedStar. Redstar OS là hệ điều hành chính thức do chính phủ Triều Tiên ban hành. Nhìn bề ngoài, nó trông gần giống hệt Mac OS với các biểu tượng giống nhau, cùng một bến tàu và cùng một bố cục chung. Nếu nhìn thấy ảnh chụp màn hình không có ngữ cảnh, bạn có thể nghĩ đó là Apple sản phẩm. Nhưng bên dưới giao diện quen thuộc đó, nó hoạt động theo một cách hoàn toàn khác. RedStar OS lặng lẽ thêm hình mờ kỹ thuật số vô hình vào mỗi tệp bạn mở từ một ổ USB. Điều này không giới hạn ở các chương trình bạn chạy. Điều này xảy ra với tài liệu, video, tệp nhạc, hầu hết mọi thứ bạn cắm vào. Hình mờ tự động xuất hiện ở chế độ nền, ngay cả khi bạn chưa bao giờ thực sự mở tập tin nào cả. Chỉ cần cắm ổ USB là đủ. Mục đích của hình mờ đó là theo dõi. Nó cho phép chính phủ truy tìm chính xác ai đã chia sẻ hoặc lưu trữ tin tặc, nước ngoài âm nhạc hoặc sách nước ngoài, tất cả đều bị coi là bất hợp pháp ở Triều Tiên. Nếu người dùng nhận thấy hành vi giám sát và cố gắng vô hiệu hóa nó, máy tính không chỉ chặn hành động. Nó tự động khởi động lại để hoàn tác thay đổi và kích hoạt lại tính năng theo dõi. Hai nhà nghiên cứu người Đức, Florian Grunau và Nicklaus Shias, đã thiết kế ngược hệ điều hành Red Star trong chi tiết và trình bày công khai những phát hiện của họ tại Đại hội Truyền thông Hỗn loạn năm 2015, xác nhận những tính năng giám sát này là những lựa chọn thiết kế thực tế và có chủ ý, không phải lỗi. Sự đánh đổi ở đây không phải là về tốc độ, thời lượng pin hay hiệu suất, theo cách thông thường là với hầu hết các so sánh công nghệ. Đó là về việc mất hoàn toàn quyền riêng tư được tích hợp trực tiếp vào hệ điều hành từ đất lên. Đây không phải là phần mềm được thiết kế để phục vụ người dùng ngồi trước màn hình. Đó là phần mềm được thiết kế để phục vụ trạng thái theo dõi người dùng đó hoàn toàn từ một nơi khác. Templeos Temple OS kể một câu chuyện rất khác. Nó không bất hợp pháp ở bất cứ đâu trên thế giới và chưa có chính phủ nào cấm nó. Một số công ty đơn giản là không cho phép tính năng này trên các máy nội bộ, nhưng đó chỉ là vì nó về mặt kỹ thuật đã lỗi thời và không có hỗ trợ mạng internet thực sự, không phải vì bất kỳ lý do pháp lý nào sự hạn chế. Điều khiến Temple OS khó quên không phải là luật hay vụ kiện. Đó là câu chuyện của người đã xây dựng nó. Temple OS được tạo ra hoàn toàn bởi một lập trình viên, Terry A. Davis. Hơn 10 năm liên tục bị ám ảnh bởi công việc, Terry tin rằng mình đã được Chúa hướng dẫn xây dựng phiên bản hiện đại của ngôi đền thứ ba, ngoại trừ dạng hệ điều hành thay vì đá và kiến ​​trúc vật lý. Anh ấy cũng không chỉ viết một số mã trên hệ thống hiện có. Anh ấy đã xây dựng toàn bộ kernel từ đầu, trình biên dịch tùy chỉnh của riêng mình và thậm chí cả ngôn ngữ lập trình của riêng mình có tên là Holy C, tất cả đều do chính anh ấy thực hiện mà không cần nhóm. Terry đã sống chung với bệnh tâm thần phân liệt trong phần lớn cuộc đời trưởng thành của mình. Và cuộc đấu tranh đang diễn ra đó đã ăn sâu vào lịch sử của dự án, những hình ảnh kỳ lạ của nó, và những lựa chọn thiết kế độc đáo của nó. Đây không phải là câu chuyện về nguy hiểm, tội phạm hoặc sự giám sát như phần trước. Đó là câu chuyện về nỗi ám ảnh, sự cô lập, tài năng thô sơ và một người đang đấu tranh với chính tâm trí của mình mỗi ngày trong khi vẫn hoàn thành được việc mà hầu hết các đội chuyên nghiệp không bao giờ làm được. Đó chính xác là lý do tại sao rất nhiều lập trình viên và sử gia công nghệ vẫn nói về Temple OS với sự tôn trọng thực sự ngày hôm nay thay vì coi nó như một trò đùa. Livveness đối với Lin Spear, Lindows là một ví dụ trong sách giáo khoa về cuộc chiến pháp lý, không phải một mối đe dọa bảo mật hoặc một phần mềm nguy hiểm. Mục tiêu ban đầu của Lindows thực ra khá đơn giản và hợp lý. Hãy để những người bình thường chạy các ứng dụng kiểu Windows trên nền tảng Linux, kết hợp sự cởi mở của Linux với sự quen thuộc của phần mềm Windows. Nhưng đây là bước ngoặt. Microsoft hoàn toàn không kiện công nghệ cơ bản nào cả. Họ đã kiện cụ thể về cái tên. Linds nghe có vẻ gần gũi với Windows đến mức nhóm pháp lý của Microsoft coi đó là hành vi vi phạm nhãn hiệu, điều gì đó có thể khiến khách hàng trong cửa hàng bối rối. Vụ việc kéo dài một thời gian nhưng cuối cùng Microsoft quyết định giải quyết thông minh hơn hơn là tiếp tục đấu tranh tại tòa án. Họ đã trả cho công ty đứng sau Lindo gần 20 triệu USD để giải quyết tranh chấp. Và như một phần của thỏa thuận đó, Microsoft cũng đã mua bản quyền nhãn hiệu cái tên Lindo đã có từ năm 2004. Sau khi giải quyết, dự án không hề biến mất. Nó chỉ đơn giản đổi tên thành Lindspire và tiếp tục phát triển từ đó. Sự đánh đổi trong toàn bộ câu chuyện này không liên quan gì đến phần mềm độc hại, hack hoặc mã bị đánh cắp. Nó hoàn toàn là về luật thương hiệu. Chỉ một tên sản phẩm, cách Windows thêm bốn chữ cái, cũng đủ để kích hoạt một cuộc chiến pháp lý trị giá hàng triệu đô la, mặc dù bản thân phần mềm thực tế chưa bao giờ làm được gì sai về mặt kỹ thuật hoặc có hại cho người dùng. Reactose React OS là một dự án nguồn mở với mục tiêu đầy tham vọng. tạo lại cách Windows hoạt động hoàn toàn từ đầu mà không cần sao chép hoặc sử dụng bất kỳ nào Mã nguồn độc quyền thực tế của Microsoft. Chỉ riêng mục tiêu đó đã đặt dự án vào tình thế nhạy cảm về mặt pháp lý ngay từ đầu dòng mã đầu tiên được viết. Trở lại năm 2006, nhóm phát triển React OS đã đưa ra một quyết định nghiêm túc. Họ đã đóng băng mọi hoạt động phát triển đang diễn ra trong vài tháng, ngừng hoàn toàn việc đóng góp mã mới. Tại sao lại có bước đi quyết liệt như vậy? Ban lãnh đạo trở nên lo lắng rằng một số người đóng góp, thậm chí vô tình, có thể đã xem bị rò rỉ Mã nguồn Windows tại một số thời điểm trong khi viết các phần của React OS. Nếu điều đó trở thành sự thật, nó có thể làm ô nhiễm toàn bộ cơ sở mã về mặt pháp lý, mở ra cánh cửa cho một vụ kiện lớn từ Microsoft. Vì vậy, thay vì chấp nhận rủi ro đó, nhóm đã tạm dừng mọi thứ và tiến hành đầy đủ. kiểm toán nội bộ, kiểm tra từng dòng xem mọi đoạn mã thực sự đến từ đâu. Sự đánh đổi ở đây khá rõ ràng khi bạn nghĩ về nó. Xây dựng phần mềm mô phỏng gần giống một sản phẩm thương mại lớn, ngay cả với mục đích hoàn toàn tốt và không có mục tiêu độc hại, nghĩa là liên tục phải chứng minh rằng bạn chưa bao giờ vượt qua hợp pháp xếp hàng ở đâu đó trên đường đi. React OS cuối cùng đã sống sót sau đợt kiểm tra nội bộ đó và tiếp tục phát triển sau đó. Nhưng việc tạm dừng kéo dài hàng tháng cho thấy các dự án nhân bản nguồn mở có thể mong manh đến mức nào thực sự là như vậy khi họ ngồi gần tài sản trí tuệ của người khác. Đuôi và Wix. Tales và Wix đều là những công cụ bảo mật hoàn toàn hợp pháp, không phải phần mềm hack và không bất cứ điều gì vốn có tội phạm. Cả hai đều định tuyến lưu lượng truy cập internet của bạn thông qua tour, một mạng được thiết kế để che giấu thực của bạn danh tính và vị trí thực tế trong khi duyệt trực tuyến. Chính vì tính năng ẩn danh đó mà mọi người trên mạng thường hay đặt biệt danh cho họ là những người điều hành web đen hệ thống, nghe có vẻ kịch tính và hơi đáng sợ. Nhưng biệt danh đó thực sự bỏ lỡ bức tranh lớn hơn, quan trọng hơn. Các nhà báo trên khắp thế giới sử dụng những công cụ chính xác này để bảo vệ những nguồn tin bí mật có thể đối mặt với nguy hiểm nghiêm trọng nếu bị phát hiện. Các nhà hoạt động nhân quyền sống ở các quốc gia không an toàn hoặc độc tài sử dụng chúng hàng ngày để trốn tránh chính phủ theo dõi và giám sát. Edward Snowden, một trong những người tố giác nổi tiếng nhất lịch sử hiện đại, đã công khai xác nhận bằng cách sử dụng những công cụ như thế này. Cùng một ẩn danh có thể bảo vệ những tên tội phạm đang cố gắng lẩn trốn cũng bảo vệ những người tố cáo, nhà báo, và những người bình thường đang thực sự gặp nguy hiểm vì những gì họ biết hoặc những gì họ đang cố gắng phơi bày. Sự đánh đổi là tốc độ. Đồng bằng và đơn giản. Định tuyến từng bit lưu lượng truy cập của bạn thông qua nhiều lớp máy chủ mã hóa và chuyển tiếp làm cho việc duyệt web chậm hơn đáng kể so với bình thường. Đối với các công việc hàng ngày như kiểm tra email hoặc xem video, sự chậm lại đó thường không đáng có sự rắc rối. Nhưng đối với một người mà sự an toàn về thể chất thực sự phụ thuộc vào việc ẩn danh trực tuyến, thì sự đánh đổi đó có thể quan trọng hơn hầu hết mọi thứ khác trong toàn bộ cuộc sống số của họ. Kali Linux và hệ điều hành Parrot. Kali Linux và Parrot OS cũng hoàn toàn hợp pháp và trên thực tế họ đang tích cực được giảng dạy trong các trường phổ thông và đại học như một phần của các khóa học về an ninh mạng. Cả hai hệ điều hành đều được xây dựng đặc biệt để thử nghiệm thâm nhập, điều này đơn giản có nghĩa là tìm kiếm bảo mật điểm yếu bên trong hệ thống trước khi những kẻ tấn công độc hại thực sự có thể tìm ra chúng trước tiên. Các công ty trên khắp thế giới thuê hợp pháp các chuyên gia an ninh mạng sử dụng chính xác những công cụ này để kiểm tra mạng nội bộ của riêng họ với sự cho phép đầy đủ và hợp đồng đã ký trước đó. Chỉ cần tải Kali Linux xuống máy tính xách tay của bạn không phải là tội ác ở bất kỳ quốc gia nào. Không có gì về việc sở hữu phần mềm vi phạm bất kỳ luật nào. Thời điểm nó thực sự trở thành bất hợp pháp là khi ai đó sử dụng các công cụ bên trong nó đột nhập vào một hệ thống mà họ không sở hữu và không bao giờ được phép kiểm tra ngay từ đầu. Bản thân hệ điều hành hoàn toàn trung lập, gần giống như một hộp công cụ nằm trong ga-ra. Đó là loại công cụ mà thợ khóa sử dụng và cũng là loại công cụ mà tên trộm có thể lạm dụng. Điều cuối cùng biến nó thành tội phạm hoàn toàn không phải là phần mềm. Nó hoàn toàn phụ thuộc vào việc ai đó quyết định sử dụng nó như thế nào và họ sử dụng nó trên hệ thống của ai quyết định chỉ nó. Cửa sổ lậu được. Bây giờ, đây là một mục trong toàn bộ danh sách này thực sự bất hợp pháp trong đơn giản, trực tiếp, không có đường lối xám xịt. Các bản dựng Windows bị bẻ khóa hoặc vi phạm bản quyền, đôi khi được đặt biệt danh là các bản dựng ma trong một số cộng đồng trực tuyến, là các bản sao Windows trái phép được phân phối miễn phí, thường bỏ qua việc kích hoạt và cấp phép chính thức hệ thống hoàn toàn. Đây là hành vi vi phạm bản quyền đơn giản. Không cần tranh luận pháp lý phức tạp để giải thích nó. Nhưng thành thật mà nói, rủi ro pháp lý thậm chí không phải là phần đáng sợ nhất ở đây. Mối nguy hiểm lớn hơn là những gì thường xuyên ẩn giấu bên trong các bản dựng này mà người dùng không bao giờ biết biết. Các phiên bản lậu này thường chứa phần mềm độc hại, phần mềm gián điệp hoặc cửa sau bí mật mà người tải lên ban đầu có thể truy cập và điều khiển từ xa, hoàn toàn vô hình đối với người bình thường người dùng cài đặt nó. Nhiều tổ chức trong thế giới thực, bao gồm một số văn phòng chính phủ, đã bị xâm phạm nghiêm trọng sau khi cài đặt Phiên bản Windows lậu trên máy chính thức mà không nhận ra đã kèm theo phần mềm bổ sung nào âm thầm bên trong trình cài đặt. Sự đánh đổi ở đây rất đơn giản và thực sự có một chút đáng sợ khi bạn hiểu nó đầy đủ. Bạn tiết kiệm được một số tiền trả trước bằng cách bỏ qua giấy phép chính thức, nhưng đổi lại, bạn thực sự không biết sau đó ai khác có thể có quyền truy cập liên tục vào hệ thống của bạn. Đôi khi trong nhiều tháng hoặc nhiều năm mà bạn không bao giờ nhận thấy điều gì sai trái. Đây là mục duy nhất trong toàn bộ danh sách này mà cảnh báo không chỉ có lịch sử hoặc lý thuyết. Đó là thứ mà ngày nay mọi người đang tích cực áp dụng tại nhà và văn phòng trên khắp thế giới. Hòa âm. Harmony OS là hệ điều hành được phát triển độc lập của Huawei, được xây dựng phần lớn dưới dạng trực tiếp phản ứng trước các hạn chế thương mại của Hoa Kỳ nhằm cắt đứt quyền truy cập của Huawei vào các dịch vụ cốt lõi của Android và hệ sinh thái ứng dụng của Google. Bản thân Harmony OS không bất hợp pháp ở bất kỳ đâu trên thế giới và không có luật nào cấm những người thường xuyên sử dụng nó trên thiết bị của họ. Vấn đề thực sự xung quanh nó là căng thẳng địa chính trị chứ không phải bất kỳ hoạt động tội phạm thực tế nào. Một số chính phủ chọn hạn chế sử dụng nó cụ thể trong các hệ thống cơ sở hạ tầng quan trọng hoặc nhạy cảm các cơ quan chính phủ lo lắng về khả năng về mặt lý thuyết có các cửa sau ẩn được kết nối ngược với nhà sản xuất hoặc mở rộng trở lại chính phủ nước ngoài. Điều cần làm rõ là không có bằng chứng công khai nào được xác nhận về một cửa hậu thực sự hệ điều hành hài hòa hiện có. Hạn chế mà nhiều quốc gia áp dụng hoàn toàn dựa trên sự thận trọng và thiếu sót chung tin cậy, không dựa trên bất kỳ bằng chứng kỹ thuật nào được xác nhận bởi các nhà nghiên cứu. Sự đánh đổi ở đây thực sự là về niềm tin vào chuỗi cung ứng ở cấp quốc gia. Khi cả một quốc gia phụ thuộc rất nhiều vào phần mềm do nước ngoài sản xuất chạy bên trong quan trọng nhất của mình hệ thống, rủi ro lớn nhất liên quan thường không phải là về bản chất kỹ thuật. Về cơ bản, đó là về niềm tin chính trị hoặc sự thiếu niềm tin giữa các chính phủ cạnh tranh. Neocyin và KY Lin OS. NeoKylin, còn được gọi đơn giản là Kylin OS, là một hệ điều hành do Trung Quốc phát triển về mặt hình ảnh trông rất giống với Windows XP, gần giống như một phiên bản tái tạo gần giống của giao diện quen thuộc đầu những năm 2000. Nó được sử dụng rộng rãi trong các văn phòng chính phủ Trung Quốc và hệ thống máy tính quân sự trên khắp đất nước. Động lực cốt lõi đằng sau việc xây dựng nó là nền độc lập dân tộc, đặc biệt là giảm sự phụ thuộc vào Americanmade phần mềm để vận hành các hệ thống quốc gia quan trọng nhất của đất nước. Đây không phải là một hệ điều hành bất hợp pháp theo bất kỳ định nghĩa pháp lý thông thường nào mà bạn có thể áp dụng bất cứ nơi nào. Về cơ bản, đây là chiến lược công nghệ quốc gia, không phải tội phạm. Nhiều quốc gia khác trên thế giới hiện đang tích cực xây dựng hệ điều hành tùy chỉnh của riêng mình hệ thống vì lý do cơ bản giống hệt như vậy để tránh bị phụ thuộc vĩnh viễn vào phần mềm hoàn toàn được kiểm soát bởi những người ra quyết định ở một quốc gia khác. Sự đánh đổi liên quan chủ yếu là chi phí phát triển và cập nhật phần mềm chậm hơn một chút so với hệ điều hành toàn cầu chủ đạo, nhưng điều đó được chấp nhận để đổi lấy việc không bị phụ thuộc vào các quyết định kinh doanh của một công ty nước ngoài hoặc áp lực chính trị từ một chính phủ khác line. Vì vậy, trong số chín hệ điều hành, hầu hết chúng đều không bất hợp pháp một khi bạn đi sâu vào chi tiết. Một số là công cụ hợp pháp mang tiếng xấu như Tails hay Kali Linux. Một số khác là tranh chấp pháp lý về tên hoặc mã như Lindows và React OS. Chỉ có một mục duy nhất, các bản dựng Windows lậu, thực sự là tội phạm bản quyền đơn giản. Và trớ trêu thay, nó cũng là thứ có khả năng lây nhiễm âm thầm vào PC của bạn cao nhất ngay lập tức. Dù sao thì tôi cũng có nhiều video phá vỡ những lầm tưởng về công nghệ như thế này. Hãy đi kiểm tra chúng. Okay.",
+  "segments": [
+    {
+      "text": "Most operating systems just help you check email or play games.",
+      "viText": "Hầu hết các hệ điều hành chỉ giúp bạn kiểm tra email hoặc chơi game.",
+      "start": 0,
+      "duration": 4.08
+    },
+    {
+      "text": "But some have a much darker story behind them.",
+      "viText": "Nhưng một số có một câu chuyện đen tối hơn nhiều đằng sau họ.",
+      "start": 4.08,
+      "duration": 2.98
+    },
+    {
+      "text": "Government surveillance built into the file system.",
+      "viText": "Sự giám sát của chính phủ được tích hợp vào hệ thống tập tin.",
+      "start": 7.06,
+      "duration": 3.3
+    },
+    {
+      "text": "Lawsuits worth millions over a single name.",
+      "viText": "Những vụ kiện trị giá hàng triệu đô la chỉ vì một cái tên.",
+      "start": 10.36,
+      "duration": 2.78
+    },
+    {
+      "text": "Even a system built by one man who believed God gave him the instructions.",
+      "viText": "Ngay cả một hệ thống được xây dựng bởi một người tin vào Chúa cũng đã đưa ra những chỉ dẫn cho anh ta.",
+      "start": 13.14,
+      "duration": 4.79
+    },
+    {
+      "text": "These are real cases documented by researchers and courts, not internet legends.",
+      "viText": "Đây là những trường hợp có thật được các nhà nghiên cứu và tòa án ghi lại, không phải truyền thuyết trên mạng.",
+      "start": 17.93,
+      "duration": 5.18
+    },
+    {
+      "text": "Let's go through nine of them from the most disturbing to the most misunderstood.",
+      "viText": "Chúng ta hãy điểm qua 9 điều trong số đó, từ đáng lo ngại nhất đến hiểu lầm nhất.",
+      "start": 23.11,
+      "duration": 5.24
+    },
+    {
+      "text": "RedStar OS.",
+      "viText": "Hệ điều hành RedStar.",
+      "start": 28.35,
+      "duration": 2
+    },
+    {
+      "text": "Redstar OS is the official governmentissued operating system of North Korea.",
+      "viText": "Redstar OS là hệ điều hành chính thức do chính phủ Triều Tiên ban hành.",
+      "start": 30.35,
+      "duration": 4.92
+    },
+    {
+      "text": "On the surface, it looks almost exactly like Mac OS with the same icons,",
+      "viText": "Nhìn bề ngoài, nó trông gần giống hệt Mac OS với các biểu tượng giống nhau,",
+      "start": 35.27,
+      "duration": 4.66
+    },
+    {
+      "text": "the same dock, and the same general layout.",
+      "viText": "cùng một bến tàu và cùng một bố cục chung.",
+      "start": 39.93,
+      "duration": 2.78
+    },
+    {
+      "text": "If you saw a screenshot without context, you might think it was an Apple",
+      "viText": "Nếu nhìn thấy ảnh chụp màn hình không có ngữ cảnh, bạn có thể nghĩ đó là Apple",
+      "start": 42.71,
+      "duration": 4.66
+    },
+    {
+      "text": "product.",
+      "viText": "sản phẩm.",
+      "start": 47.37,
+      "duration": 2
+    },
+    {
+      "text": "But underneath that familiar interface, it works in a completely different way.",
+      "viText": "Nhưng bên dưới giao diện quen thuộc đó, nó hoạt động theo một cách hoàn toàn khác.",
+      "start": 49.37,
+      "duration": 5.11
+    },
+    {
+      "text": "RedStar OS quietly adds an invisible digital watermark to every single file you open",
+      "viText": "RedStar OS lặng lẽ thêm hình mờ kỹ thuật số vô hình vào mỗi tệp bạn mở",
+      "start": 54.48,
+      "duration": 5.43
+    },
+    {
+      "text": "from a USB drive.",
+      "viText": "từ một ổ USB.",
+      "start": 59.91,
+      "duration": 2
+    },
+    {
+      "text": "This isn't limited to programs you run.",
+      "viText": "Điều này không giới hạn ở các chương trình bạn chạy.",
+      "start": 61.91,
+      "duration": 2.52
+    },
+    {
+      "text": "It happens with documents, videos, music files, almost anything you plug in.",
+      "viText": "Điều này xảy ra với tài liệu, video, tệp nhạc, hầu hết mọi thứ bạn cắm vào.",
+      "start": 64.43,
+      "duration": 4.92
+    },
+    {
+      "text": "The watermark happens automatically in the background, even if you never actually open the",
+      "viText": "Hình mờ tự động xuất hiện ở chế độ nền, ngay cả khi bạn chưa bao giờ thực sự mở",
+      "start": 69.35,
+      "duration": 5.82
+    },
+    {
+      "text": "file at all.",
+      "viText": "tập tin nào cả.",
+      "start": 75.17,
+      "duration": 2
+    },
+    {
+      "text": "Just inserting the USB drive can be enough.",
+      "viText": "Chỉ cần cắm ổ USB là đủ.",
+      "start": 77.17,
+      "duration": 2.78
+    },
+    {
+      "text": "The purpose of that watermark is tracking.",
+      "viText": "Mục đích của hình mờ đó là theo dõi.",
+      "start": 79.95,
+      "duration": 2.72
+    },
+    {
+      "text": "It lets the government trace exactly who has been sharing or storing fobies, foreign",
+      "viText": "Nó cho phép chính phủ truy tìm chính xác ai đã chia sẻ hoặc lưu trữ tin tặc,",
+      "start": 82.67,
+      "duration": 5.43
+    },
+    {
+      "text": "music, or foreign books, all of which are illegal to access in North Korea.",
+      "viText": "nước ngoài âm nhạc hoặc sách nước ngoài, tất cả đều bị coi là bất hợp pháp ở Triều Tiên.",
+      "start": 88.1,
+      "duration": 4.85
+    },
+    {
+      "text": "If a user notices the monitoring behavior and tries to disable it, the computer",
+      "viText": "Nếu người dùng nhận thấy hành vi giám sát và cố gắng vô hiệu hóa nó, máy tính",
+      "start": 92.95,
+      "duration": 5.11
+    },
+    {
+      "text": "doesn't just block the action.",
+      "viText": "không chỉ chặn hành động.",
+      "start": 98.06,
+      "duration": 2
+    },
+    {
+      "text": "It automatically restarts itself to undo the change and reenable tracking.",
+      "viText": "Nó tự động khởi động lại để hoàn tác thay đổi và kích hoạt lại tính năng theo dõi.",
+      "start": 100.06,
+      "duration": 4.79
+    },
+    {
+      "text": "Two German researchers, Florian Grunau and Nicklaus Shias, reverse engineered Red Star OS in",
+      "viText": "Hai nhà nghiên cứu người Đức, Florian Grunau và Nicklaus Shias, đã thiết kế ngược hệ điều hành Red Star trong",
+      "start": 104.85,
+      "duration": 5.95
+    },
+    {
+      "text": "detail and presented their findings publicly at the Chaos Communication Congress in 2015, confirming",
+      "viText": "chi tiết và trình bày công khai những phát hiện của họ tại Đại hội Truyền thông Hỗn loạn năm 2015, xác nhận",
+      "start": 110.8,
+      "duration": 6.47
+    },
+    {
+      "text": "these surveillance features were real and intentional design choices, not bugs.",
+      "viText": "những tính năng giám sát này là những lựa chọn thiết kế thực tế và có chủ ý, không phải lỗi.",
+      "start": 117.27,
+      "duration": 5.11
+    },
+    {
+      "text": "The trade-off here isn't about speed or battery life or performance, the way it",
+      "viText": "Sự đánh đổi ở đây không phải là về tốc độ, thời lượng pin hay hiệu suất, theo cách",
+      "start": 122.38,
+      "duration": 5.11
+    },
+    {
+      "text": "normally is with most tech comparisons.",
+      "viText": "thông thường là với hầu hết các so sánh công nghệ.",
+      "start": 127.49,
+      "duration": 2.52
+    },
+    {
+      "text": "It's about complete loss of privacy built directly into the operating system from the",
+      "viText": "Đó là về việc mất hoàn toàn quyền riêng tư được tích hợp trực tiếp vào hệ điều hành từ",
+      "start": 130.01,
+      "duration": 5.5
+    },
+    {
+      "text": "ground up.",
+      "viText": "đất lên.",
+      "start": 135.51,
+      "duration": 2
+    },
+    {
+      "text": "This isn't software designed to serve the user sitting in front of the screen.",
+      "viText": "Đây không phải là phần mềm được thiết kế để phục vụ người dùng ngồi trước màn hình.",
+      "start": 137.51,
+      "duration": 5.05
+    },
+    {
+      "text": "It's software designed to serve the state watching that user from somewhere else entirely.",
+      "viText": "Đó là phần mềm được thiết kế để phục vụ trạng thái theo dõi người dùng đó hoàn toàn từ một nơi khác.",
+      "start": 142.56,
+      "duration": 5.82
+    },
+    {
+      "text": "Templeos Temple OS tells a very different kind of story.",
+      "viText": "Templeos Temple OS kể một câu chuyện rất khác.",
+      "start": 148.38,
+      "duration": 3.62
+    },
+    {
+      "text": "It's not illegal anywhere in the world and no government has ever banned it.",
+      "viText": "Nó không bất hợp pháp ở bất cứ đâu trên thế giới và chưa có chính phủ nào cấm nó.",
+      "start": 152,
+      "duration": 4.92
+    },
+    {
+      "text": "Some companies simply don't allow it on internal machines, but that's only because it's",
+      "viText": "Một số công ty đơn giản là không cho phép tính năng này trên các máy nội bộ, nhưng đó chỉ là vì nó",
+      "start": 156.92,
+      "duration": 5.63
+    },
+    {
+      "text": "technically outdated and has no real internet networking support, not because of any legal",
+      "viText": "về mặt kỹ thuật đã lỗi thời và không có hỗ trợ mạng internet thực sự, không phải vì bất kỳ lý do pháp lý nào",
+      "start": 162.55,
+      "duration": 5.82
+    },
+    {
+      "text": "restriction.",
+      "viText": "sự hạn chế.",
+      "start": 168.37,
+      "duration": 2
+    },
+    {
+      "text": "What makes Temple OS unforgettable isn't a law or a court case.",
+      "viText": "Điều khiến Temple OS khó quên không phải là luật hay vụ kiện.",
+      "start": 170.37,
+      "duration": 4.08
+    },
+    {
+      "text": "It's the story of the person who built it.",
+      "viText": "Đó là câu chuyện của người đã xây dựng nó.",
+      "start": 174.45,
+      "duration": 2.72
+    },
+    {
+      "text": "Temple OS was created entirely by one programmer, Terry A.",
+      "viText": "Temple OS được tạo ra hoàn toàn bởi một lập trình viên, Terry A.",
+      "start": 177.17,
+      "duration": 3.75
+    },
+    {
+      "text": "Davis.",
+      "viText": "Davis.",
+      "start": 180.92,
+      "duration": 2
+    },
+    {
+      "text": "Over more than 10 years of continuous obsessive work, Terry believed he had been",
+      "viText": "Hơn 10 năm liên tục bị ám ảnh bởi công việc, Terry tin rằng mình đã",
+      "start": 182.92,
+      "duration": 5.18
+    },
+    {
+      "text": "instructed by God to build a modern version of the third temple, except in",
+      "viText": "được Chúa hướng dẫn xây dựng phiên bản hiện đại của ngôi đền thứ ba, ngoại trừ",
+      "start": 188.1,
+      "duration": 4.79
+    },
+    {
+      "text": "operating system form instead of physical stone and architecture.",
+      "viText": "dạng hệ điều hành thay vì đá và kiến ​​trúc vật lý.",
+      "start": 192.89,
+      "duration": 4.21
+    },
+    {
+      "text": "He didn't just write some code on top of an existing system either.",
+      "viText": "Anh ấy cũng không chỉ viết một số mã trên hệ thống hiện có.",
+      "start": 197.1,
+      "duration": 4.33
+    },
+    {
+      "text": "He built the entire kernel from scratch, his own custom compiler, and even his",
+      "viText": "Anh ấy đã xây dựng toàn bộ kernel từ đầu, trình biên dịch tùy chỉnh của riêng mình và thậm chí cả",
+      "start": 201.43,
+      "duration": 5.05
+    },
+    {
+      "text": "own programming language called Holy C, all by himself without a team.",
+      "viText": "ngôn ngữ lập trình của riêng mình có tên là Holy C, tất cả đều do chính anh ấy thực hiện mà không cần nhóm.",
+      "start": 206.48,
+      "duration": 4.53
+    },
+    {
+      "text": "Terry lived with schizophrenia for most of his adult life.",
+      "viText": "Terry đã sống chung với bệnh tâm thần phân liệt trong phần lớn cuộc đời trưởng thành của mình.",
+      "start": 211.01,
+      "duration": 3.75
+    },
+    {
+      "text": "And that ongoing struggle is deeply woven into the project's history, its strange visuals,",
+      "viText": "Và cuộc đấu tranh đang diễn ra đó đã ăn sâu vào lịch sử của dự án, những hình ảnh kỳ lạ của nó,",
+      "start": 214.76,
+      "duration": 5.82
+    },
+    {
+      "text": "and its unconventional design choices.",
+      "viText": "và những lựa chọn thiết kế độc đáo của nó.",
+      "start": 220.58,
+      "duration": 2.46
+    },
+    {
+      "text": "This isn't a story about danger, crime, or surveillance like the previous entry.",
+      "viText": "Đây không phải là câu chuyện về nguy hiểm, tội phạm hoặc sự giám sát như phần trước.",
+      "start": 223.04,
+      "duration": 5.18
+    },
+    {
+      "text": "It's a story about obsession, isolation, raw talent, and someone fighting his own mind",
+      "viText": "Đó là câu chuyện về nỗi ám ảnh, sự cô lập, tài năng thô sơ và một người đang đấu tranh với chính tâm trí của mình",
+      "start": 228.22,
+      "duration": 5.56
+    },
+    {
+      "text": "every single day while still managing to finish something most professional teams never would.",
+      "viText": "mỗi ngày trong khi vẫn hoàn thành được việc mà hầu hết các đội chuyên nghiệp không bao giờ làm được.",
+      "start": 233.78,
+      "duration": 6.08
+    },
+    {
+      "text": "That's exactly why so many programmers and tech historians still talk about Temple OS",
+      "viText": "Đó chính xác là lý do tại sao rất nhiều lập trình viên và sử gia công nghệ vẫn nói về Temple OS",
+      "start": 239.86,
+      "duration": 5.5
+    },
+    {
+      "text": "with genuine respect today rather than treating it as a joke.",
+      "viText": "với sự tôn trọng thực sự ngày hôm nay thay vì coi nó như một trò đùa.",
+      "start": 245.36,
+      "duration": 3.95
+    },
+    {
+      "text": "Livveness to Lin Spear, Lindows is a textbook example of a legal fight, not",
+      "viText": "Livveness đối với Lin Spear, Lindows là một ví dụ trong sách giáo khoa về cuộc chiến pháp lý, không phải",
+      "start": 249.31,
+      "duration": 4.85
+    },
+    {
+      "text": "a security threat or a piece of dangerous software.",
+      "viText": "một mối đe dọa bảo mật hoặc một phần mềm nguy hiểm.",
+      "start": 254.16,
+      "duration": 3.3
+    },
+    {
+      "text": "The original goal behind Lindows was actually pretty simple and reasonable.",
+      "viText": "Mục tiêu ban đầu của Lindows thực ra khá đơn giản và hợp lý.",
+      "start": 257.46,
+      "duration": 4.85
+    },
+    {
+      "text": "Let regular people run Windows style applications on top of a Linux foundation, combining",
+      "viText": "Hãy để những người bình thường chạy các ứng dụng kiểu Windows trên nền tảng Linux, kết hợp",
+      "start": 262.31,
+      "duration": 5.76
+    },
+    {
+      "text": "the openness of Linux with the familiarity of Windows software.",
+      "viText": "sự cởi mở của Linux với sự quen thuộc của phần mềm Windows.",
+      "start": 268.07,
+      "duration": 4.08
+    },
+    {
+      "text": "But here's the twist.",
+      "viText": "Nhưng đây là bước ngoặt.",
+      "start": 272.15,
+      "duration": 2
+    },
+    {
+      "text": "Microsoft didn't sue over the underlying technology at all.",
+      "viText": "Microsoft hoàn toàn không kiện công nghệ cơ bản nào cả.",
+      "start": 274.15,
+      "duration": 3.82
+    },
+    {
+      "text": "They sued specifically over the name.",
+      "viText": "Họ đã kiện cụ thể về cái tên.",
+      "start": 277.97,
+      "duration": 2.39
+    },
+    {
+      "text": "Linds sounded close enough to Windows that Microsoft's legal team considered it trademark infringement,",
+      "viText": "Linds nghe có vẻ gần gũi với Windows đến mức nhóm pháp lý của Microsoft coi đó là hành vi vi phạm nhãn hiệu,",
+      "start": 280.36,
+      "duration": 6.66
+    },
+    {
+      "text": "something that could confuse customers in stores.",
+      "viText": "điều gì đó có thể khiến khách hàng trong cửa hàng bối rối.",
+      "start": 287.02,
+      "duration": 3.17
+    },
+    {
+      "text": "The case dragged on for a while, but eventually Microsoft decided settling was smarter",
+      "viText": "Vụ việc kéo dài một thời gian nhưng cuối cùng Microsoft quyết định giải quyết thông minh hơn",
+      "start": 290.19,
+      "duration": 5.56
+    },
+    {
+      "text": "than continuing to fight it in court.",
+      "viText": "hơn là tiếp tục đấu tranh tại tòa án.",
+      "start": 295.75,
+      "duration": 2.39
+    },
+    {
+      "text": "They paid the company behind Lindo's close to $20 million to settle the dispute.",
+      "viText": "Họ đã trả cho công ty đứng sau Lindo gần 20 triệu USD để giải quyết tranh chấp.",
+      "start": 298.14,
+      "duration": 5.18
+    },
+    {
+      "text": "And as part of that deal, Microsoft also bought the trademark rights to the",
+      "viText": "Và như một phần của thỏa thuận đó, Microsoft cũng đã mua bản quyền nhãn hiệu",
+      "start": 303.32,
+      "duration": 4.85
+    },
+    {
+      "text": "name Lindo owes outright back in 2004.",
+      "viText": "cái tên Lindo đã có từ năm 2004.",
+      "start": 308.17,
+      "duration": 2.46
+    },
+    {
+      "text": "After the settlement, the project didn't disappear.",
+      "viText": "Sau khi giải quyết, dự án không hề biến mất.",
+      "start": 310.63,
+      "duration": 3.3
+    },
+    {
+      "text": "It simply rebranded itself as Lindspire and kept developing from there.",
+      "viText": "Nó chỉ đơn giản đổi tên thành Lindspire và tiếp tục phát triển từ đó.",
+      "start": 313.93,
+      "duration": 4.59
+    },
+    {
+      "text": "The trade-off in this entire story has nothing to do with malware, hacking, or",
+      "viText": "Sự đánh đổi trong toàn bộ câu chuyện này không liên quan gì đến phần mềm độc hại, hack hoặc",
+      "start": 318.52,
+      "duration": 5.05
+    },
+    {
+      "text": "stolen code.",
+      "viText": "mã bị đánh cắp.",
+      "start": 323.57,
+      "duration": 2
+    },
+    {
+      "text": "It's purely about trademark law.",
+      "viText": "Nó hoàn toàn là về luật thương hiệu.",
+      "start": 325.57,
+      "duration": 2.07
+    },
+    {
+      "text": "A single product name, four extra letters away from Windows, was enough to trigger",
+      "viText": "Chỉ một tên sản phẩm, cách Windows thêm bốn chữ cái, cũng đủ để kích hoạt",
+      "start": 327.64,
+      "duration": 5.31
+    },
+    {
+      "text": "a multi-million dollar legal battle, even though the actual software itself never did anything",
+      "viText": "một cuộc chiến pháp lý trị giá hàng triệu đô la, mặc dù bản thân phần mềm thực tế chưa bao giờ làm được gì",
+      "start": 332.95,
+      "duration": 6.08
+    },
+    {
+      "text": "technically wrong or harmful to users.",
+      "viText": "sai về mặt kỹ thuật hoặc có hại cho người dùng.",
+      "start": 339.03,
+      "duration": 2.46
+    },
+    {
+      "text": "Reactose React OS is an open-source project with an ambitious goal.",
+      "viText": "Reactose React OS là một dự án nguồn mở với mục tiêu đầy tham vọng.",
+      "start": 341.49,
+      "duration": 4.33
+    },
+    {
+      "text": "recreate the way Windows behaves completely from scratch without copying or using any of",
+      "viText": "tạo lại cách Windows hoạt động hoàn toàn từ đầu mà không cần sao chép hoặc sử dụng bất kỳ",
+      "start": 345.82,
+      "duration": 5.69
+    },
+    {
+      "text": "Microsoft's actual proprietary source code.",
+      "viText": "nào Mã nguồn độc quyền thực tế của Microsoft.",
+      "start": 351.51,
+      "duration": 2.78
+    },
+    {
+      "text": "That goal alone puts the project in a legally sensitive position from the very",
+      "viText": "Chỉ riêng mục tiêu đó đã đặt dự án vào tình thế nhạy cảm về mặt pháp lý ngay từ đầu",
+      "start": 354.29,
+      "duration": 5.05
+    },
+    {
+      "text": "first line of code written.",
+      "viText": "dòng mã đầu tiên được viết.",
+      "start": 359.34,
+      "duration": 2
+    },
+    {
+      "text": "Back in 2006, the React OS development team made a serious decision.",
+      "viText": "Trở lại năm 2006, nhóm phát triển React OS đã đưa ra một quyết định nghiêm túc.",
+      "start": 361.34,
+      "duration": 4.4
+    },
+    {
+      "text": "They froze all active development for several months, stopping new code contributions completely.",
+      "viText": "Họ đã đóng băng mọi hoạt động phát triển đang diễn ra trong vài tháng, ngừng hoàn toàn việc đóng góp mã mới.",
+      "start": 365.74,
+      "duration": 6.28
+    },
+    {
+      "text": "Why take such a drastic step?",
+      "viText": "Tại sao lại có bước đi quyết liệt như vậy?",
+      "start": 372.02,
+      "duration": 2
+    },
+    {
+      "text": "The leadership became worried that some contributors, even unintentionally, may have looked at leaked",
+      "viText": "Ban lãnh đạo trở nên lo lắng rằng một số người đóng góp, thậm chí vô tình, có thể đã xem",
+      "start": 374.02,
+      "duration": 6.53
+    },
+    {
+      "text": "Windows source code at some point while writing parts of React OS.",
+      "viText": "bị rò rỉ Mã nguồn Windows tại một số thời điểm trong khi viết các phần của React OS.",
+      "start": 380.55,
+      "duration": 4.27
+    },
+    {
+      "text": "If that turned out to be true, it could legally contaminate the entire codebase,",
+      "viText": "Nếu điều đó trở thành sự thật, nó có thể làm ô nhiễm toàn bộ cơ sở mã về mặt pháp lý,",
+      "start": 384.82,
+      "duration": 5.18
+    },
+    {
+      "text": "opening the door to a massive lawsuit from Microsoft.",
+      "viText": "mở ra cánh cửa cho một vụ kiện lớn từ Microsoft.",
+      "start": 390,
+      "duration": 3.43
+    },
+    {
+      "text": "So instead of taking that risk, the team paused everything and conducted a full",
+      "viText": "Vì vậy, thay vì chấp nhận rủi ro đó, nhóm đã tạm dừng mọi thứ và tiến hành",
+      "start": 393.43,
+      "duration": 5.11
+    },
+    {
+      "text": "internal audit, checking line by line where every piece of code actually came from.",
+      "viText": "đầy đủ. kiểm toán nội bộ, kiểm tra từng dòng xem mọi đoạn mã thực sự đến từ đâu.",
+      "start": 398.54,
+      "duration": 5.37
+    },
+    {
+      "text": "The trade-off here is pretty clear once you think about it.",
+      "viText": "Sự đánh đổi ở đây khá rõ ràng khi bạn nghĩ về nó.",
+      "start": 403.91,
+      "duration": 3.82
+    },
+    {
+      "text": "Building software that closely mimics a major commercial product, even with completely good intentions",
+      "viText": "Xây dựng phần mềm mô phỏng gần giống một sản phẩm thương mại lớn, ngay cả với mục đích hoàn toàn tốt",
+      "start": 407.73,
+      "duration": 6.6
+    },
+    {
+      "text": "and zero malicious goals, means constantly having to prove you never crossed a legal",
+      "viText": "và không có mục tiêu độc hại, nghĩa là liên tục phải chứng minh rằng bạn chưa bao giờ vượt qua",
+      "start": 414.33,
+      "duration": 5.43
+    },
+    {
+      "text": "line somewhere along the way.",
+      "viText": "hợp pháp xếp hàng ở đâu đó trên đường đi.",
+      "start": 419.76,
+      "duration": 2
+    },
+    {
+      "text": "React OS ultimately survived that internal audit and continued development afterward.",
+      "viText": "React OS cuối cùng đã sống sót sau đợt kiểm tra nội bộ đó và tiếp tục phát triển sau đó.",
+      "start": 421.76,
+      "duration": 5.5
+    },
+    {
+      "text": "But the monthsl long pause shows just how fragile open- source clone projects can",
+      "viText": "Nhưng việc tạm dừng kéo dài hàng tháng cho thấy các dự án nhân bản nguồn mở có thể mong manh đến mức nào",
+      "start": 427.26,
+      "duration": 5.24
+    },
+    {
+      "text": "really be when they sit this close to someone else's intellectual property.",
+      "viText": "thực sự là như vậy khi họ ngồi gần tài sản trí tuệ của người khác.",
+      "start": 432.5,
+      "duration": 4.85
+    },
+    {
+      "text": "Tails and Wix.",
+      "viText": "Đuôi và Wix.",
+      "start": 437.35,
+      "duration": 2
+    },
+    {
+      "text": "Tales and Wix are both completely legal privacy tools, not hacking software and not",
+      "viText": "Tales và Wix đều là những công cụ bảo mật hoàn toàn hợp pháp, không phải phần mềm hack và không",
+      "start": 439.35,
+      "duration": 5.37
+    },
+    {
+      "text": "anything inherently criminal.",
+      "viText": "bất cứ điều gì vốn có tội phạm.",
+      "start": 444.72,
+      "duration": 2
+    },
+    {
+      "text": "Both route your internet traffic through tour, a network designed to hide your real",
+      "viText": "Cả hai đều định tuyến lưu lượng truy cập internet của bạn thông qua tour, một mạng được thiết kế để che giấu",
+      "start": 446.72,
+      "duration": 5.37
+    },
+    {
+      "text": "identity and physical location while browsing online.",
+      "viText": "thực của bạn danh tính và vị trí thực tế trong khi duyệt trực tuyến.",
+      "start": 452.09,
+      "duration": 3.43
+    },
+    {
+      "text": "Because of that anonymity feature, people online often casually nickname them dark web operating",
+      "viText": "Chính vì tính năng ẩn danh đó mà mọi người trên mạng thường hay đặt biệt danh cho họ là những người điều hành web đen",
+      "start": 455.52,
+      "duration": 6.21
+    },
+    {
+      "text": "systems, which sounds dramatic and a little scary.",
+      "viText": "hệ thống, nghe có vẻ kịch tính và hơi đáng sợ.",
+      "start": 461.73,
+      "duration": 3.23
+    },
+    {
+      "text": "But that nickname genuinely misses the bigger, more important picture.",
+      "viText": "Nhưng biệt danh đó thực sự bỏ lỡ bức tranh lớn hơn, quan trọng hơn.",
+      "start": 464.96,
+      "duration": 4.53
+    },
+    {
+      "text": "Journalists around the world use these exact tools to protect confidential sources who could",
+      "viText": "Các nhà báo trên khắp thế giới sử dụng những công cụ chính xác này để bảo vệ những nguồn tin bí mật có thể",
+      "start": 469.49,
+      "duration": 5.95
+    },
+    {
+      "text": "face serious danger if identified.",
+      "viText": "đối mặt với nguy hiểm nghiêm trọng nếu bị phát hiện.",
+      "start": 475.44,
+      "duration": 2.2
+    },
+    {
+      "text": "Human rights activists living unsafe or authoritarian countries use them daily to avoid government",
+      "viText": "Các nhà hoạt động nhân quyền sống ở các quốc gia không an toàn hoặc độc tài sử dụng chúng hàng ngày để trốn tránh chính phủ",
+      "start": 477.64,
+      "duration": 6.34
+    },
+    {
+      "text": "tracking and surveillance.",
+      "viText": "theo dõi và giám sát.",
+      "start": 483.98,
+      "duration": 2
+    },
+    {
+      "text": "Edward Snowden, one of the most famous whistleblowers in modern history, has publicly confirmed",
+      "viText": "Edward Snowden, một trong những người tố giác nổi tiếng nhất lịch sử hiện đại, đã công khai xác nhận",
+      "start": 485.98,
+      "duration": 6.15
+    },
+    {
+      "text": "using tools like these himself.",
+      "viText": "bằng cách sử dụng những công cụ như thế này.",
+      "start": 492.13,
+      "duration": 2.01
+    },
+    {
+      "text": "The same anonym that can protect criminals trying to hide also protect whistleblowers, journalists,",
+      "viText": "Cùng một ẩn danh có thể bảo vệ những tên tội phạm đang cố gắng lẩn trốn cũng bảo vệ những người tố cáo, nhà báo,",
+      "start": 494.14,
+      "duration": 6.41
+    },
+    {
+      "text": "and ordinary people who are genuinely in danger because of what they know or",
+      "viText": "và những người bình thường đang thực sự gặp nguy hiểm vì những gì họ biết hoặc",
+      "start": 500.55,
+      "duration": 4.92
+    },
+    {
+      "text": "what they're trying to expose.",
+      "viText": "những gì họ đang cố gắng phơi bày.",
+      "start": 505.47,
+      "duration": 2
+    },
+    {
+      "text": "The trade-off is speed.",
+      "viText": "Sự đánh đổi là tốc độ.",
+      "start": 507.47,
+      "duration": 2
+    },
+    {
+      "text": "Plain and simple.",
+      "viText": "Đồng bằng và đơn giản.",
+      "start": 509.47,
+      "duration": 2
+    },
+    {
+      "text": "Routing every bit of your traffic through multiple layers of encryption and relay servers",
+      "viText": "Định tuyến từng bit lưu lượng truy cập của bạn thông qua nhiều lớp máy chủ mã hóa và chuyển tiếp",
+      "start": 511.47,
+      "duration": 5.76
+    },
+    {
+      "text": "makes browsing noticeably slower than normal.",
+      "viText": "làm cho việc duyệt web chậm hơn đáng kể so với bình thường.",
+      "start": 517.23,
+      "duration": 2.91
+    },
+    {
+      "text": "For everyday tasks like checking email or watching videos, that slowdown usually isn't worth",
+      "viText": "Đối với các công việc hàng ngày như kiểm tra email hoặc xem video, sự chậm lại đó thường không đáng có",
+      "start": 520.14,
+      "duration": 5.95
+    },
+    {
+      "text": "the hassle.",
+      "viText": "sự rắc rối.",
+      "start": 526.09,
+      "duration": 2
+    },
+    {
+      "text": "But for someone whose physical safety genuinely depends on staying anonymous online, that tradeoff",
+      "viText": "Nhưng đối với một người mà sự an toàn về thể chất thực sự phụ thuộc vào việc ẩn danh trực tuyến, thì sự đánh đổi đó",
+      "start": 528.09,
+      "duration": 6.34
+    },
+    {
+      "text": "can matter more than almost anything else in their entire digital life.",
+      "viText": "có thể quan trọng hơn hầu hết mọi thứ khác trong toàn bộ cuộc sống số của họ.",
+      "start": 534.43,
+      "duration": 4.59
+    },
+    {
+      "text": "Kali Linux and Parrot OS.",
+      "viText": "Kali Linux và hệ điều hành Parrot.",
+      "start": 539.02,
+      "duration": 2
+    },
+    {
+      "text": "Kali Linux and Parrot OS are completely legal too and in fact they're actively",
+      "viText": "Kali Linux và Parrot OS cũng hoàn toàn hợp pháp và trên thực tế họ đang tích cực",
+      "start": 541.02,
+      "duration": 5.05
+    },
+    {
+      "text": "taught inside schools and universities as part of cyber security courses.",
+      "viText": "được giảng dạy trong các trường phổ thông và đại học như một phần của các khóa học về an ninh mạng.",
+      "start": 546.07,
+      "duration": 4.72
+    },
+    {
+      "text": "Both operating systems are specifically built for penetration testing which simply means finding security",
+      "viText": "Cả hai hệ điều hành đều được xây dựng đặc biệt để thử nghiệm thâm nhập, điều này đơn giản có nghĩa là tìm kiếm bảo mật",
+      "start": 550.79,
+      "duration": 6.79
+    },
+    {
+      "text": "weaknesses inside a system before real malicious attackers manage to find them first.",
+      "viText": "điểm yếu bên trong hệ thống trước khi những kẻ tấn công độc hại thực sự có thể tìm ra chúng trước tiên.",
+      "start": 557.58,
+      "duration": 5.5
+    },
+    {
+      "text": "Companies around the world legally hire cyber security professionals who use exactly these tools",
+      "viText": "Các công ty trên khắp thế giới thuê hợp pháp các chuyên gia an ninh mạng sử dụng chính xác những công cụ này",
+      "start": 563.08,
+      "duration": 6.21
+    },
+    {
+      "text": "to test their own internal networks with full permission and a signed contract beforehand.",
+      "viText": "để kiểm tra mạng nội bộ của riêng họ với sự cho phép đầy đủ và hợp đồng đã ký trước đó.",
+      "start": 569.29,
+      "duration": 5.82
+    },
+    {
+      "text": "Just downloading Kali Linux onto your laptop is not a crime in any country.",
+      "viText": "Chỉ cần tải Kali Linux xuống máy tính xách tay của bạn không phải là tội ác ở bất kỳ quốc gia nào.",
+      "start": 575.11,
+      "duration": 4.85
+    },
+    {
+      "text": "Nothing about possessing the software itself breaks any law.",
+      "viText": "Không có gì về việc sở hữu phần mềm vi phạm bất kỳ luật nào.",
+      "start": 579.96,
+      "duration": 3.88
+    },
+    {
+      "text": "The moment it actually becomes illegal is when someone uses the tools inside it",
+      "viText": "Thời điểm nó thực sự trở thành bất hợp pháp là khi ai đó sử dụng các công cụ bên trong nó",
+      "start": 583.84,
+      "duration": 5.11
+    },
+    {
+      "text": "to break into a system they don't own and were never given permission to",
+      "viText": "đột nhập vào một hệ thống mà họ không sở hữu và không bao giờ được phép",
+      "start": 588.95,
+      "duration": 4.66
+    },
+    {
+      "text": "test in the first place.",
+      "viText": "kiểm tra ngay từ đầu.",
+      "start": 593.61,
+      "duration": 2
+    },
+    {
+      "text": "The operating system itself is completely neutral, almost like a toolbox sitting in a",
+      "viText": "Bản thân hệ điều hành hoàn toàn trung lập, gần giống như một hộp công cụ nằm trong",
+      "start": 595.61,
+      "duration": 5.5
+    },
+    {
+      "text": "garage.",
+      "viText": "ga-ra.",
+      "start": 601.11,
+      "duration": 2
+    },
+    {
+      "text": "It's the same kind of tool a locksmith uses and also the same kind",
+      "viText": "Đó là loại công cụ mà thợ khóa sử dụng và cũng là loại",
+      "start": 603.11,
+      "duration": 4.27
+    },
+    {
+      "text": "of tool a burglar could misuse.",
+      "viText": "công cụ mà tên trộm có thể lạm dụng.",
+      "start": 607.38,
+      "duration": 2.01
+    },
+    {
+      "text": "What ultimately turns it into a crime isn't the software at all.",
+      "viText": "Điều cuối cùng biến nó thành tội phạm hoàn toàn không phải là phần mềm.",
+      "start": 609.39,
+      "duration": 4.14
+    },
+    {
+      "text": "It's entirely about how someone decides to use it and on whose systems they",
+      "viText": "Nó hoàn toàn phụ thuộc vào việc ai đó quyết định sử dụng nó như thế nào và họ sử dụng nó trên hệ thống của ai",
+      "start": 613.53,
+      "duration": 4.85
+    },
+    {
+      "text": "decide to point it.",
+      "viText": "quyết định chỉ nó.",
+      "start": 618.38,
+      "duration": 2
+    },
+    {
+      "text": "Pirated windowed be.",
+      "viText": "Cửa sổ lậu được.",
+      "start": 620.38,
+      "duration": 2
+    },
+    {
+      "text": "Now, here's the one entry on this entire list that's actually illegal in a",
+      "viText": "Bây giờ, đây là một mục trong toàn bộ danh sách này thực sự bất hợp pháp trong",
+      "start": 622.38,
+      "duration": 4.79
+    },
+    {
+      "text": "simple, direct, no gray area kind of way.",
+      "viText": "đơn giản, trực tiếp, không có đường lối xám xịt.",
+      "start": 627.17,
+      "duration": 2.65
+    },
+    {
+      "text": "Cracked or pirated Windows builds, sometimes nicknamed ghost builds in certain online communities, are",
+      "viText": "Các bản dựng Windows bị bẻ khóa hoặc vi phạm bản quyền, đôi khi được đặt biệt danh là các bản dựng ma trong một số cộng đồng trực tuyến, là",
+      "start": 629.82,
+      "duration": 6.6
+    },
+    {
+      "text": "unauthorized copies of Windows distributed for free, usually bypassing the official activation and licensing",
+      "viText": "các bản sao Windows trái phép được phân phối miễn phí, thường bỏ qua việc kích hoạt và cấp phép chính thức",
+      "start": 636.42,
+      "duration": 6.99
+    },
+    {
+      "text": "system entirely.",
+      "viText": "hệ thống hoàn toàn.",
+      "start": 643.41,
+      "duration": 2
+    },
+    {
+      "text": "This is straightforward copyright infringement.",
+      "viText": "Đây là hành vi vi phạm bản quyền đơn giản.",
+      "start": 645.41,
+      "duration": 3.04
+    },
+    {
+      "text": "No complicated legal argument needed to explain it.",
+      "viText": "Không cần tranh luận pháp lý phức tạp để giải thích nó.",
+      "start": 648.45,
+      "duration": 3.3
+    },
+    {
+      "text": "But honestly, the legal risk isn't even the scariest part here.",
+      "viText": "Nhưng thành thật mà nói, rủi ro pháp lý thậm chí không phải là phần đáng sợ nhất ở đây.",
+      "start": 651.75,
+      "duration": 4.08
+    },
+    {
+      "text": "The bigger danger is what's frequently hidden inside these builds without the user ever",
+      "viText": "Mối nguy hiểm lớn hơn là những gì thường xuyên ẩn giấu bên trong các bản dựng này mà người dùng không bao giờ biết",
+      "start": 655.83,
+      "duration": 5.63
+    },
+    {
+      "text": "knowing.",
+      "viText": "biết.",
+      "start": 661.46,
+      "duration": 2
+    },
+    {
+      "text": "These pirated versions are commonly packed with hidden malware, spyware, or secret back doors",
+      "viText": "Các phiên bản lậu này thường chứa phần mềm độc hại, phần mềm gián điệp hoặc cửa sau bí mật",
+      "start": 663.46,
+      "duration": 6.02
+    },
+    {
+      "text": "that the original uploader can access and control remotely, completely invisible to the average",
+      "viText": "mà người tải lên ban đầu có thể truy cập và điều khiển từ xa, hoàn toàn vô hình đối với người bình thường",
+      "start": 669.48,
+      "duration": 6.15
+    },
+    {
+      "text": "user installing it.",
+      "viText": "người dùng cài đặt nó.",
+      "start": 675.63,
+      "duration": 2
+    },
+    {
+      "text": "Multiple real world organizations, including some government offices, have been seriously compromised after installing",
+      "viText": "Nhiều tổ chức trong thế giới thực, bao gồm một số văn phòng chính phủ, đã bị xâm phạm nghiêm trọng sau khi cài đặt",
+      "start": 677.63,
+      "duration": 7.63
+    },
+    {
+      "text": "pirated Windows versions on official machines without realizing what extra software had been bundled",
+      "viText": "Phiên bản Windows lậu trên máy chính thức mà không nhận ra đã kèm theo phần mềm bổ sung nào",
+      "start": 685.26,
+      "duration": 6.47
+    },
+    {
+      "text": "silently inside the installer.",
+      "viText": "âm thầm bên trong trình cài đặt.",
+      "start": 691.73,
+      "duration": 2
+    },
+    {
+      "text": "The trade-off here is simple and honestly a little scary once you understand it",
+      "viText": "Sự đánh đổi ở đây rất đơn giản và thực sự có một chút đáng sợ khi bạn hiểu nó",
+      "start": 693.73,
+      "duration": 5.11
+    },
+    {
+      "text": "fully.",
+      "viText": "đầy đủ.",
+      "start": 698.84,
+      "duration": 2
+    },
+    {
+      "text": "You save some money upfront by skipping the official license, but in exchange, you",
+      "viText": "Bạn tiết kiệm được một số tiền trả trước bằng cách bỏ qua giấy phép chính thức, nhưng đổi lại, bạn",
+      "start": 700.84,
+      "duration": 5.31
+    },
+    {
+      "text": "genuinely have no idea who else might have ongoing access to your system afterward.",
+      "viText": "thực sự không biết sau đó ai khác có thể có quyền truy cập liên tục vào hệ thống của bạn.",
+      "start": 706.15,
+      "duration": 5.37
+    },
+    {
+      "text": "Sometimes for months or years without you ever noticing anything wrong.",
+      "viText": "Đôi khi trong nhiều tháng hoặc nhiều năm mà bạn không bao giờ nhận thấy điều gì sai trái.",
+      "start": 711.52,
+      "duration": 4.59
+    },
+    {
+      "text": "This is the one entry on this entire list where the warning isn't just",
+      "viText": "Đây là mục duy nhất trong toàn bộ danh sách này mà cảnh báo không chỉ có",
+      "start": 716.11,
+      "duration": 4.53
+    },
+    {
+      "text": "historical or theoretical.",
+      "viText": "lịch sử hoặc lý thuyết.",
+      "start": 720.64,
+      "duration": 2
+    },
+    {
+      "text": "It's something people are actively running into right now today in homes and offices",
+      "viText": "Đó là thứ mà ngày nay mọi người đang tích cực áp dụng tại nhà và văn phòng",
+      "start": 722.64,
+      "duration": 5.43
+    },
+    {
+      "text": "around the world.",
+      "viText": "trên khắp thế giới.",
+      "start": 728.07,
+      "duration": 2
+    },
+    {
+      "text": "Harmonyos.",
+      "viText": "Hòa âm.",
+      "start": 730.07,
+      "duration": 2
+    },
+    {
+      "text": "Harmony OS is Huawei's own independently developed operating system built largely as a direct",
+      "viText": "Harmony OS là hệ điều hành được phát triển độc lập của Huawei, được xây dựng phần lớn dưới dạng trực tiếp",
+      "start": 732.07,
+      "duration": 6.02
+    },
+    {
+      "text": "response to US trade restrictions that cut off Huawei's access to core Android services",
+      "viText": "phản ứng trước các hạn chế thương mại của Hoa Kỳ nhằm cắt đứt quyền truy cập của Huawei vào các dịch vụ cốt lõi của Android",
+      "start": 738.09,
+      "duration": 5.63
+    },
+    {
+      "text": "and Google's app ecosystem.",
+      "viText": "và hệ sinh thái ứng dụng của Google.",
+      "start": 743.72,
+      "duration": 2
+    },
+    {
+      "text": "Harmony OS itself isn't illegal anywhere in the world, and there's no law banning",
+      "viText": "Bản thân Harmony OS không bất hợp pháp ở bất kỳ đâu trên thế giới và không có luật nào cấm",
+      "start": 745.72,
+      "duration": 5.24
+    },
+    {
+      "text": "regular people from using it on their own devices.",
+      "viText": "những người thường xuyên sử dụng nó trên thiết bị của họ.",
+      "start": 750.96,
+      "duration": 3.23
+    },
+    {
+      "text": "The real issue surrounding it is geopolitical tension, not any actual criminal activity.",
+      "viText": "Vấn đề thực sự xung quanh nó là căng thẳng địa chính trị chứ không phải bất kỳ hoạt động tội phạm thực tế nào.",
+      "start": 754.19,
+      "duration": 5.69
+    },
+    {
+      "text": "Some governments choose to restrict its use specifically inside critical infrastructure systems or sensitive",
+      "viText": "Một số chính phủ chọn hạn chế sử dụng nó cụ thể trong các hệ thống cơ sở hạ tầng quan trọng hoặc",
+      "start": 759.88,
+      "duration": 6.99
+    },
+    {
+      "text": "government agencies worried about the theoretical possibility of hidden back doors connected back to",
+      "viText": "nhạy cảm các cơ quan chính phủ lo lắng về khả năng về mặt lý thuyết có các cửa sau ẩn được kết nối ngược với",
+      "start": 766.87,
+      "duration": 6.47
+    },
+    {
+      "text": "the manufacturer or by extension back to a foreign government.",
+      "viText": "nhà sản xuất hoặc mở rộng trở lại chính phủ nước ngoài.",
+      "start": 773.34,
+      "duration": 4.01
+    },
+    {
+      "text": "It's worth being clear though there's no public confirmed proof of an actual backdoor",
+      "viText": "Điều cần làm rõ là không có bằng chứng công khai nào được xác nhận về một cửa hậu thực sự",
+      "start": 777.35,
+      "duration": 5.5
+    },
+    {
+      "text": "existing inside harmony OS.",
+      "viText": "hệ điều hành hài hòa hiện có.",
+      "start": 782.85,
+      "duration": 2
+    },
+    {
+      "text": "The restriction many countries apply is based purely on caution and a general lack",
+      "viText": "Hạn chế mà nhiều quốc gia áp dụng hoàn toàn dựa trên sự thận trọng và thiếu sót chung",
+      "start": 784.85,
+      "duration": 5.31
+    },
+    {
+      "text": "of trust, not on any confirmed technical evidence uncovered by researchers.",
+      "viText": "tin cậy, không dựa trên bất kỳ bằng chứng kỹ thuật nào được xác nhận bởi các nhà nghiên cứu.",
+      "start": 790.16,
+      "duration": 4.85
+    },
+    {
+      "text": "The trade-off here is really about supply chain trust at a national level.",
+      "viText": "Sự đánh đổi ở đây thực sự là về niềm tin vào chuỗi cung ứng ở cấp quốc gia.",
+      "start": 795.01,
+      "duration": 4.79
+    },
+    {
+      "text": "When an entire country depends heavily on foreign-made software running inside its most critical",
+      "viText": "Khi cả một quốc gia phụ thuộc rất nhiều vào phần mềm do nước ngoài sản xuất chạy bên trong",
+      "start": 799.8,
+      "duration": 6.21
+    },
+    {
+      "text": "systems, the biggest risk involved usually isn't even technical in nature.",
+      "viText": "quan trọng nhất của mình hệ thống, rủi ro lớn nhất liên quan thường không phải là về bản chất kỹ thuật.",
+      "start": 806.01,
+      "duration": 4.79
+    },
+    {
+      "text": "It's fundamentally about political trust or the lack of it between competing governments.",
+      "viText": "Về cơ bản, đó là về niềm tin chính trị hoặc sự thiếu niềm tin giữa các chính phủ cạnh tranh.",
+      "start": 810.8,
+      "duration": 5.76
+    },
+    {
+      "text": "Neocyin and KY Lin OS.",
+      "viText": "Neocyin và KY Lin OS.",
+      "start": 816.56,
+      "duration": 2
+    },
+    {
+      "text": "NeoKylin, also commonly known simply as Kylin OS, is a Chinese-developed operating system that",
+      "viText": "NeoKylin, còn được gọi đơn giản là Kylin OS, là một hệ điều hành do Trung Quốc phát triển",
+      "start": 818.56,
+      "duration": 6.08
+    },
+    {
+      "text": "visually looks strikingly similar to Windows XP, almost like a near identical recreation of",
+      "viText": "về mặt hình ảnh trông rất giống với Windows XP, gần giống như một phiên bản tái tạo gần giống của",
+      "start": 824.64,
+      "duration": 5.89
+    },
+    {
+      "text": "that familiar early 2000s interface.",
+      "viText": "giao diện quen thuộc đầu những năm 2000.",
+      "start": 830.53,
+      "duration": 2.33
+    },
+    {
+      "text": "It's used extensively inside Chinese government offices and military computer systems across the country.",
+      "viText": "Nó được sử dụng rộng rãi trong các văn phòng chính phủ Trung Quốc và hệ thống máy tính quân sự trên khắp đất nước.",
+      "start": 832.86,
+      "duration": 6.79
+    },
+    {
+      "text": "The core motivation behind building it is national independence, specifically reducing reliance on Americanmade",
+      "viText": "Động lực cốt lõi đằng sau việc xây dựng nó là nền độc lập dân tộc, đặc biệt là giảm sự phụ thuộc vào Americanmade",
+      "start": 839.65,
+      "duration": 7.18
+    },
+    {
+      "text": "software for operating the country's most critical national systems.",
+      "viText": "phần mềm để vận hành các hệ thống quốc gia quan trọng nhất của đất nước.",
+      "start": 846.83,
+      "duration": 4.4
+    },
+    {
+      "text": "This isn't an illegal operating system by any normal legal definition you could apply",
+      "viText": "Đây không phải là một hệ điều hành bất hợp pháp theo bất kỳ định nghĩa pháp lý thông thường nào mà bạn có thể áp dụng",
+      "start": 851.23,
+      "duration": 5.5
+    },
+    {
+      "text": "anywhere.",
+      "viText": "bất cứ nơi nào.",
+      "start": 856.73,
+      "duration": 2
+    },
+    {
+      "text": "It's fundamentally a national technology strategy, not a crime.",
+      "viText": "Về cơ bản, đây là chiến lược công nghệ quốc gia, không phải tội phạm.",
+      "start": 858.73,
+      "duration": 4.08
+    },
+    {
+      "text": "Many other countries around the world are now actively building their own custom operating",
+      "viText": "Nhiều quốc gia khác trên thế giới hiện đang tích cực xây dựng hệ điều hành tùy chỉnh của riêng mình",
+      "start": 862.81,
+      "duration": 5.82
+    },
+    {
+      "text": "systems for this exact same underlying reason to avoid becoming permanently dependent on software",
+      "viText": "hệ thống vì lý do cơ bản giống hệt như vậy để tránh bị phụ thuộc vĩnh viễn vào phần mềm",
+      "start": 868.63,
+      "duration": 6.28
+    },
+    {
+      "text": "entirely controlled by decision makers in another country.",
+      "viText": "hoàn toàn được kiểm soát bởi những người ra quyết định ở một quốc gia khác.",
+      "start": 874.91,
+      "duration": 3.75
+    },
+    {
+      "text": "The trade-off involved is mainly development cost and somewhat slower software updates compared to",
+      "viText": "Sự đánh đổi liên quan chủ yếu là chi phí phát triển và cập nhật phần mềm chậm hơn một chút so với",
+      "start": 878.66,
+      "duration": 6.34
+    },
+    {
+      "text": "mainstream global operating systems, but that's accepted in exchange for not being dependent on",
+      "viText": "hệ điều hành toàn cầu chủ đạo, nhưng điều đó được chấp nhận để đổi lấy việc không bị phụ thuộc vào",
+      "start": 885,
+      "duration": 6.15
+    },
+    {
+      "text": "a single foreign company's business decisions or political pressure from another government down the",
+      "viText": "các quyết định kinh doanh của một công ty nước ngoài hoặc áp lực chính trị từ một chính phủ khác",
+      "start": 891.15,
+      "duration": 6.47
+    },
+    {
+      "text": "line.",
+      "viText": "line.",
+      "start": 897.62,
+      "duration": 2
+    },
+    {
+      "text": "So, out of all nine operating systems, most of them aren't illegal once you",
+      "viText": "Vì vậy, trong số chín hệ điều hành, hầu hết chúng đều không bất hợp pháp một khi bạn",
+      "start": 899.62,
+      "duration": 4.85
+    },
+    {
+      "text": "dig into the details.",
+      "viText": "đi sâu vào chi tiết.",
+      "start": 904.47,
+      "duration": 2
+    },
+    {
+      "text": "Some are legal tools that just carry a bad reputation like Tails or Kali",
+      "viText": "Một số là công cụ hợp pháp mang tiếng xấu như Tails hay Kali",
+      "start": 906.47,
+      "duration": 4.66
+    },
+    {
+      "text": "Linux.",
+      "viText": "Linux.",
+      "start": 911.13,
+      "duration": 2
+    },
+    {
+      "text": "Others are legal disputes over names or code like Lindows and React OS.",
+      "viText": "Một số khác là tranh chấp pháp lý về tên hoặc mã như Lindows và React OS.",
+      "start": 913.13,
+      "duration": 4.59
+    },
+    {
+      "text": "Only one entry, pirated Windows builds, is actually straightforward copyright crime.",
+      "viText": "Chỉ có một mục duy nhất, các bản dựng Windows lậu, thực sự là tội phạm bản quyền đơn giản.",
+      "start": 917.72,
+      "duration": 5.43
+    },
+    {
+      "text": "And ironically, it's also the one most likely to quietly infect your own PC",
+      "viText": "Và trớ trêu thay, nó cũng là thứ có khả năng lây nhiễm âm thầm vào PC của bạn cao nhất",
+      "start": 923.15,
+      "duration": 4.85
+    },
+    {
+      "text": "right now.",
+      "viText": "ngay lập tức.",
+      "start": 928,
+      "duration": 2
+    },
+    {
+      "text": "Anyway, I've got more videos breaking down tech myths like this one.",
+      "viText": "Dù sao thì tôi cũng có nhiều video phá vỡ những lầm tưởng về công nghệ như thế này.",
+      "start": 930,
+      "duration": 4.4
+    },
+    {
+      "text": "Go check them out.",
+      "viText": "Hãy đi kiểm tra chúng.",
+      "start": 934.4,
+      "duration": 2
+    },
+    {
+      "text": "Okay.",
+      "viText": "Okay.",
+      "start": 936.4,
+      "duration": 2
+    }
+  ]
+}

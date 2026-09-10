@@ -1,0 +1,33 @@
+{
+  "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+  "channel_name": "Google for Developers",
+  "channel_url": "https://www.youtube.com/@GoogleDevelopers/videos",
+  "fetched_at": "2026-08-05T09:52:34.327051+00:00",
+  "video_count_fetched": 3,
+  "videos": [
+    {
+      "id": "-rYFDefcq3k",
+      "title": "Introducing Gemini Robotics 2",
+      "url": "https://www.youtube.com/watch?v=-rYFDefcq3k",
+      "duration": 2354,
+      "upload_date": null,
+      "view_count": 12000
+    },
+    {
+      "id": "z6l5nyE_6-I",
+      "title": "Voice Agent observability with LangSmith",
+      "url": "https://www.youtube.com/watch?v=z6l5nyE_6-I",
+      "duration": 458,
+      "upload_date": null,
+      "view_count": 3300
+    },
+    {
+      "id": "BXzFk5kK5_Q",
+      "title": "Android Studio Quail 2, the Build with Gemini XPRIZE, and more! - Google Developer News July 2026",
+      "url": "https://www.youtube.com/watch?v=BXzFk5kK5_Q",
+      "duration": 324,
+      "upload_date": null,
+      "view_count": 2300
+    }
+  ]
+}

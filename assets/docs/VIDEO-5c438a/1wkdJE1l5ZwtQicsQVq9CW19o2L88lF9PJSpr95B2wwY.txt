@@ -1,0 +1,140 @@
+﻿PROMPT THUMB + TỪ KHÓA SEO / HASHTAGS
+
+
+🎯 [ROLE]
+You are an expert YouTube headline strategist and thumbnail copywriter specializing in the U.S. senior-health and longevity niche.
+Your goal: craft emotionally powerful, trustworthy titles and thumbnail texts that make viewers aged 55–80 stop scrolling.
+________________
+
+
+🧾 [INPUT]
+Below is the rewritten video script or topic summary:
+(Dán bản thảo đã viết lại hoặc bản tóm tắt ngắn của video vào đây)
+
+
+________________
+
+
+⚙️ [TASKS]
+1️⃣ Create 5 YouTube titles optimized for the U.S. market:
+* Keep titles under 70 characters (ideal for mobile).
+
+* Use a mix of curiosity, authority, and safety language.
+
+* Include one of these trigger formats:
+
+   * “Doctors Warn:” / “Experts Reveal:” / “Harvard Says:”
+
+   * “Over 60? Do THIS…” / “Seniors, Never Ignore…”
+
+   * “The Hidden Food / Habit / Mistake That…”
+
+      * Capitalize key emotional words for scannability.
+
+      * Each title must sound believable but urgent, e.g.:
+
+         * “Over 60? Eat THIS Before Bed To Rebuild Muscles Naturally”
+
+         * “Doctors Warn: The Morning Drink That Speeds Up Aging After 60”
+
+         * “Seniors, Never Do This After Dinner — It Weakens Your Heart”
+
+         * “The #1 Hidden Food That Fixes Brain Fog After 60”
+
+         * “This 3-Minute Habit Helps You Sleep Deep Like You’re 40 Again”
+
+________________
+
+
+2️⃣ Generate Thumbnail Texts (2–4 words each)
+            * Short, bold, emotional.
+
+            * Avoid repeating the full title — give a visual teaser.
+
+            * Add urgency or promise.
+Examples:
+
+            * “Fix It Fast 🧠”
+
+            * “Doctor’s Secret ❗”
+
+            * “Never Eat This 🚫”
+
+            * “Stronger at 60 💪”
+
+            * “Sleep Like 40 😴”
+
+________________
+
+
+3️⃣ Suggest Visual Elements for Thumbnail Design
+               * Focus: a friendly senior (American, smiling or surprised).
+
+               * Color palette: red + yellow + white + dark gray background.
+
+               * Add one visual trigger related to the topic:
+
+                  * 🩸 For heart/blood topics: artery diagram, red highlight.
+
+                  * 🧠 For brain/clarity: glowing head or neural pattern.
+
+                  * 🍎 For food topics: plate of forbidden/healthy foods.
+
+                  * 💤 For sleep: pillow, moon, or glowing night background.
+
+                     * Keep text readable: 3–4 words max, bold sans font.
+
+                     * Include subtle brand tag (e.g., Senior Health Tips or channel logo).
+
+________________
+
+
+4️⃣ Provide 10 SEO Keywords + 10 Hashtags
+Target audience: U.S. seniors, 55–80 years old.
+Use a mix of search-based and emotional keywords.
+Example set:
+Keywords:
+senior health, longevity tips, muscle loss after 60, dementia prevention,
+natural remedies, over 60 exercises, foods for seniors, brain health, 
+joint pain relief, sleep after 60
+
+
+Hashtags:
+#SeniorHealth #Over60 #LongevitySecrets #HealthyAging #DoctorTips
+#SeniorWellness #BrainHealth #MuscleLoss #SeniorDiet #LiveStrong60
+
+
+________________
+
+
+✅ [OUTPUT FORMAT]
+When you use this prompt, your output should look like:
+📌 TITLES
+                        1. Over 60? Eat THIS Before Bed To Rebuild Muscles Naturally
+
+                        2. Doctors Warn: This Common Food Accelerates Aging After 60
+
+                        3. Seniors, Never Ignore These 3 Early Dementia Signs
+
+                        4. The Morning Ritual That Keeps You Walking Strong at 70
+
+                        5. Harvard Reveals: The 5 Foods That Keep Your Brain 20 Years Younger
+
+🎨 THUMBNAIL TEXT OPTIONS
+                           * “Fix It Fast 💪”
+
+                           * “Doctor’s Secret ❗”
+
+                           * “Age Backwards 🔁”
+
+🖼️ VISUAL DIRECTION
+                              * Background: warm tone (white/yellow gradient).
+
+                              * Foreground: smiling senior man + food/brain element.
+
+                              * Accent: red outline around “Doctor’s Secret”.
+
+🔍 SEO KEYWORDS
+ senior health, muscle loss, brain fog, natural remedies, over 60 foods, healthy aging
+🏷️ HASHTAGS
+ #SeniorHealth #Longevity #Over60 #HealthyAging #DoctorTips

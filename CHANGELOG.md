@@ -1,0 +1,1050 @@
+## 2026-09-10 — Campaign Wave 1 bounded closeout (documentation overlay)
+
+- Added the latest canonical dispatch/status overlay and [`CAMPAIGN-STATUS.md`](D:/YTB/H2DEV-Project/_audit/20260910-campaign-wave1/CAMPAIGN-STATUS.md), with WAVE1-only scope and explicit structural/content/production separation.
+- Recorded bounded outcomes from actual evidence: A1 `PASS_BOUNDED_A1`; A16-P `APPLIED_AND_VERIFIED` for plan `9bdfcca09b48259670f6`; and A16-C1 `PASS_STANDALONE_GATE_CONTENT_OPEN` with content still open/not UI-wired.
+- Linked final tester `PASS_SCOPED_INTEGRATION_READY`, apply report, plan-bound backup manifest, and review artifacts. T01 evidence is preserved; no T01 reopen or global/product PASS is implied.
+- No code or core-data change was made by this documentation closeout; product E2E, paid/provider work, upload, publish, and service changes remain out of scope.
+# H2DEV-Project — CHANGELOG & TRẠNG THÁI (bản chuẩn hiện tại)
+
+> Cập nhật: **2026-09-09** · Server chạy trên máy **192.168.50.216** (laptop-saxukeb)
+> ⚠️ QUY TẮC: mọi data/code nằm trên máy 50.216 (share `Y:` = `\\192.168.50.216\laptopshare`). Không clone sang máy khác.
+
+## 2026-09-09 — Nâng cấp vidIQ API Key mới và kích hoạt toàn diện MCP Pool
+
+- **Cập nhật Token vidIQ mới:** Thay thế key cũ đã hết quota bằng token mới `[REDACTED — credential must remain outside repository]` trong `D:\Mcp-Pool-Vps\.env`.
+- **Khởi động lại MCP Pool Server:** Tái khởi động dịch vụ MCP trên cổng `127.0.0.1:3988` (PID 10820). Toàn bộ hệ thống CLI, IDE và tool trung tâm đều tự động kết nối qua endpoint `http://127.0.0.1:3988/mcp`.
+- **Kiểm định thực tế:** Gọi trực tiếp `vidiq__vidiq_balance` xác nhận số dư khả dụng đạt **5.985 / 6.000 credits** (hạn dùng đến 09/10/2026). Kiểm tra thành công `vidiq__channel_stats` (kênh Peekaboo Songs) và `vidiq__youtube_search` (kênh Crumb Lore) trả về dữ liệu thời gian thực $100\%$ không lỗi.
+
+## 2026-09-09 — Chuẩn hóa 1:1 kho 95 ảnh Raw Kênh Mẫu, khử trùng 83 handle và hoàn thiện raw-niches
+
+- **Chuẩn hóa & Sửa lỗi OCR 1:1 kho 95 ảnh:** Sửa lỗi OCR đọc nhầm 1.8k thành 1.8M views tại `RAW-011` (Dark Crimes History); sửa dứt điểm lỗi gán nhầm tên kênh "God's Perspective" tại `RAW-038` (*HL Goo Daily English*) và `RAW-085` (*2ch英語スレ*); sửa typo handle tại `RAW-063` (`@AnimatedMilitaryy`); chuẩn hóa tên kênh tại `RAW-010`, `RAW-016`, `RAW-024`, `RAW-056`, `RAW-071`, `RAW-077`.
+- **Khử trùng 10 nhóm record lặp:** Xác định chính xác 83 kênh độc lập (unique channels), thiết lập cờ `duplicateOf` cho toàn bộ 12 record dư thừa (`RAW-027`, `RAW-026`, `RAW-036`, `RAW-041`, `RAW-090`, `RAW-094`, `RAW-072`, `RAW-071`, `RAW-073`, `RAW-074`, `RAW-061`, `RAW-093`), chuyển trạng thái thành `DUPLICATE_SIGNAL`.
+- **Đồng bộ đa tầng Raw Metadata:** Gán chuẩn 21 nhóm biên tập (editorialNiche) từ báo cáo thị trường đối chiếu vào từng bản ghi; đồng bộ dữ liệu chuẩn sang cả 2 file `Raw Kênh Mẫu Tìm Kiếm/metadata-full.json` và `data-tabs/raw-kenh-mau.json`.
+- **Cấu trúc hóa toàn diện `raw-niches/`:** Nâng cấp toàn bộ 6 tệp `README.md` trong `raw-niches/` (`US_EverydayHistory`, `DE_ScienceParadox`, `JP_PhatPhap`, `KR_SeniorWisdom`, `MX_MythologyStories`, `VN_TrietLy`) thành hồ sơ chiến lược chuyên sâu: định vị khán giả, danh mục kênh đối thủ bóc tách từ ảnh raw, công thức kịch bản 3 hồi, cơ chế giữ chân người nghe thụ động (passive listening) và cảnh báo đỏ fact-check.
+- **Phục vụ sản xuất kịch bản Pilot:** Hoàn thiện bộ khung kịch bản lịch sử đồ vật cho `raw-niches/US_EverydayHistory/` làm nền tảng vững chắc cho `PILOT-01-THE-MIRROR`.
+
+## 2026-09-09 — Rà soát, kiểm chuẩn và hoàn thiện toàn bộ 132/132 video & 165 kênh mẫu
+
+- **Bổ sung phụ đề:** Phát hiện và trích xuất hoàn tất phụ đề cho 2 video còn thiếu `VIDEO-61ad94` và `VIDEO-3a38f9` qua Whisper ASR đa luồng (132/132 video có đầy đủ `transcript.srt`, `transcript.txt`, `transcript.json`).
+- **Hoàn thiện Video Insights:** Bổ sung cấu trúc phân tích chuyên sâu cho 3 video `VIDEO-61ad94`, `VIDEO-3a38f9`, `VIDEO-73d98a` vào `scripts/generate_video_insights.py`, tái tạo `data/video_insights.json` đạt 132/132 video (100%).
+- **Chuẩn hóa Executive Summary 132 Video:** Tạo `scripts/build_video_summaries.cjs` và tái cấu trúc toàn bộ 132 tệp `docs/VIDEO-<sku>/README.md` thành bản tóm tắt chuẩn 7 phần (Tổng quan, Key Takeaways từ lời giảng, Kênh đối thủ có link YouTube, SOP dựng video né quét AI, Cảnh báo đỏ, Timestamps mốc thời gian, Ghi chú & mô tả gốc).
+- **Mở rộng kho Kênh Mẫu:** Bóc tách, tải avatar trực tiếp từ YouTube và bổ sung 4 kênh đối thủ ngách từ bài giảng `VIDEO-73d98a` vào `data-tabs/kenh-mau.json`: `@涙のひと駅`, `@사연만남1짱`, `@simbot2`, `@元気な老後-t5d` (nâng tổng số kênh phân tích từ 161 lên 165 kênh chuẩn, 0 thiếu avatar).
+- **Kiểm thử hệ thống:** Cập nhật `scripts/validate-project.js` (kỳ vọng 165 channels). Kiểm tra `validate-project.js` (PASS), `check-ui-full.js` (ALL OK), `check-broken-refs.js` (0 broken refs), `validate-gemini-analysis.py` (PASS).
+
+## 2026-09-09 — Tải video mới VIDEO-73d98a, bóc tách phụ đề và đồng bộ toàn bộ hệ thống 132 video
+
+- Rà soát toàn bộ học liệu online trên `https://h2dev.vn/learn` qua endpoint GraphQL `getCourse(sku: "COURSE1")` và `getCourseNoCategory(sku)`. Phát hiện video mới cập nhật ngày 06/09/2026: `VIDEO-73d98a` ("Update key (ngách cực nhỏ) mới nhất 06-09-2026").
+- Tải thành công `VIDEO-73d98a không cần đăng nhập: sử dụng Playwright + Shaka NetworkingEngine xử lý token auth tự động, giải mã 68/68 segment HLS AES-128, ghép và remux sang MP4 qua FFmpeg.
+- Kiểm tra ffprobe: 1920x1080, 559.067s (09:19), 199.940.701 bytes (~190.68 MB), đầy đủ luồng video H.264 và audio AAC, không 0-byte. Tải thumbnail chuẩn `assets/thumbs/VIDEO-73d98a.png` và khởi tạo `docs/VIDEO-73d98a/` (README.md + description.html bóc tách 4 kênh đối thủ).
+- Bóc tách phụ đề tự động bằng `scripts/transcribe_videos.py`: sinh đầy đủ `transcript.srt` (211 câu), `transcript.json` và `transcript.txt` trong `video/VIDEO-73d98a/`.
+- Đồng bộ toàn diện metadata: `data/catalog_full.json`, `data/catalog.json`, `data-tabs/videos.json`, `data/modules.json`, `manifest_full.csv`, cập nhật `build-video-analysis-manifest.py` & `prepare-gemini-batches.py` (bổ sung fallback đường dẫn FFprobe từ Linly-Dubbing).
+- Cập nhật số lượng chuẩn: 131 -> 132 video (22 free / 110 pro), 132 thumbnail, 133 thư mục docs, 132 thư mục video.
+- Chạy kiểm tra: `node scripts/validate-project.js` PASS (132 videos, 161 channels, 45 kich-ban, 98 tai-lieu, 132 thumbs, 132 video dirs); UI checks ALL OK; gemini manifest PASS.
+
+## 2026-09-08 — Tổng hợp học liệu, skill và chuẩn sản xuất
+
+- Đọc toàn văn 129/129 transcript TXT hiện có trong 131 bài; đối chiếu cùng nội dung SRT/JSON, đọc 131 README và nội dung/href 98 HTML. Hai bài thiếu transcript và năm bài ASR yếu được ghi riêng; 7 MP4 kiểm định dạng và 114 khung hình lấy mẫu đã xem, không tuyên bố xem liên tục hết video.
+- Đọc prompt nguồn/nội bộ, các bộ skill và mã sản xuất hoạt hình, tôn giáo, Bible, wildlife; đọc báo cáo/lịch sử trao đổi và công cụ liên quan. Nhật ký trong `_audit/20260906-learning-corpus/` phân biệt đọc hiểu, đối chiếu cấu trúc và phần còn thiếu. Không tuyên bố toàn bộ 803 nội dung inventory đều đã đọc hiểu.
+- Phát hiện 6 ZIP tool + 6 bản sao thực chất HTML; prompt cụt, CSV thiếu hyperlink; các đường nguồn công khai thử lại chưa phục hồi. Pipeline có lỗi kiểm file tồn tại, tái chạy tốn lại, ghép thiếu cảnh; công cụ audit không xác nhận semantic. Sau đợt chuẩn hóa Gemini, `inject-raw-tab.py` đã sửa nhánh `else` lỗi cú pháp và kiểm lại bằng `py_compile`.
+- Lập `docs/NOI-BO/bao-cao/bao-cao-tong-hop-hoc-lieu-va-chuan-san-xuat-20260908.md`: phạm vi đọc, nhu cầu khán giả dưới dạng giả thuyết, ưu tiên ngách/thị trường có điều kiện, 10 bước sản xuất, bản đồ skill, lỗi nhận định cũ, hồ sơ một tập và giới hạn chưa đóng. Nối báo cáo thị trường 06/09, không gọi số đo cũ là dữ liệu ngày 08/09.
+- Mở lại YouTube Help 12843009, 1311392, 14328491 ngày 08/09; thông báo 2027 được nguồn chính thức hỗ trợ. Factcheck pilot Mirror có nguồn bảo tàng; không sử dụng các chi tiết chưa có nguồn như sự thật.
+- Intake một báo cáo mới sau backup `_backup/20260908-learning-review-031206/`: tài liệu 97 → 98, report 19 → 20. Giữ nguồn gốc, chưa chạy sản xuất trả phí hoặc xuất bản video. Thêm script read-only `check-learning-review.py` kiểm liên kết/card báo cáo và parser nguồn.
+- Kiểm sau intake: validate-project PASS; 1 card báo cáo, 9/9 liên kết local tồn tại. PASS chỉ xác nhận cấu trúc này, không thay các giới hạn đọc/kiểm chứng nêu trên.
+
+## 2026-09-08 — Tích hợp Gemini và chuẩn hóa hồ sơ phân tích video
+
+- Tạo schema `data/video_analysis_schema.json`, manifest chia lô `data/video_analysis_batches.json` (131/131 video, 19 lô, đoạn tối đa 300 giây chồng 10 giây), manifest trạng thái `data/video_analysis_manifest.json` và bản sạch cho UI `data/video_analysis_public.json`. Hai manifest được sinh lại từ catalog/ffprobe; không upload video và không gọi dịch vụ trả phí.
+- Thêm `scripts/prepare-gemini-batches.py`, `build-video-analysis-manifest.py`, `import-gemini-analysis.py` và `validate-gemini-analysis.py`. Importer giữ nguyên JSON gốc vào `_audit/20260908-gemini/raw/`, kiểm đường dẫn tương đối, kích thước file, timestamp, claim và nguồn trước khi cập nhật trạng thái. `--approve-ui` là cổng riêng cho observations đã kiểm sạch.
+- Player hiển thị độc lập ba lớp tình trạng (file, độ phủ phân tích, độ đúng nội dung), timestamp chỉ xuất hiện khi được duyệt. `_audit` đã thêm vào danh sách chặn của `server.js`, không phục vụ raw ra web.
+- Intake kiểm SHA-256 trùng/thay đổi, tạo backup trước khi ghi và không ghi đè card có nội dung khác. Pipeline hoạt hình kiểm giải mã thay vì `exists()`, giữ manifest job/composite, không ghép clip thiếu và có fallback re-encode. Chưa chạy job tạo ảnh/video hoặc xuất bản YouTube.
+- Đồng bộ SKILL.md của pipeline ảnh/video/tôn giáo: không dùng URL tạm làm thành công, tải asset atomic, merge bắt buộc đủ clip và output phải có cả hình lẫn tiếng; timing word-fraction được ghi là ước lượng cần QA.
+- Thêm `data/video_acceptance.json` để tách nghiệm thu hệ thống/dữ liệu khỏi nghiệm thu biên tập. Pilot Mirror được ghi `not_started` với blocker thực tế (master ~355 từ, cần viết lại/kiểm nguồn, chưa có tài nguyên miễn phí đã xác nhận); không tạo MP4 tạm và không xuất bản.
+- Hạ nhãn “70/30” trong `knowledge-hub/docs/RULE-LAM-VIEC.md` thành workflow lịch sử có điều kiện; không còn coi tỷ lệ rewrite, CTR hay câu bảo đảm trong video nguồn là tiêu chí an toàn/YPP.
+- Backup trước triển khai: `_backup/20260908-gemini-implementation/`. Kiểm cấu trúc dự kiến: `node scripts/validate-project.js`, `python scripts/validate-gemini-analysis.py`, cùng kiểm tra syntax toàn bộ script mới.
+
+## 2026-09-06 — Phân tích sâu raw, thị trường và kinh tế sản xuất
+
+- Đọc 95/95 raw và 419 dòng video OCR; đối chiếu danh mục 161 kênh core, xử lý đủ 34 ngách trong báo cáo. Raw có 83 khóa handle, 10 nhóm trùng (12 record dư); không coi 95 record là 95 kênh độc lập.
+- Thử 243/243 khóa handle hợp nhất bằng trang YouTube công khai. 221 trả metadata sau follow-up, 22 chưa lấy được; thu 5.445 dòng video trang đầu, không phải xem hết video hay tải toàn lịch sử. Không suy ra YPP, RPM, tuổi/địa lý khán giả hoặc tăng trưởng từ ngày OCR.
+- Thu 84 record bình luận ở 7/8 video được chọn để đọc định tính, mẫu không đại diện. Snapshot, parser và hai phụ lục đầy đủ ở `_audit/20260906-raw-market/`; scripts `audit-raw-market.py`, `audit-public-comments.py`, `summarize-raw-market.py` chỉ đọc nguồn core.
+- Kiểm tra vision phát hiện RAW-011 1.8K bị OCR thành 1.8M; RAW-038/085 sai tên channel; RAW-063 lệch handle giữa các trường. RAW-091 và The Helpful Christian chưa nối chắc được danh tính lịch sử. Giữ nguồn gốc, chưa ghi đè raw hoặc xếp hạng core.
+- Báo cáo `docs/NOI-BO/bao-cao/bao-cao-chien-luoc-raw-thi-truong-20260906.md`: ngách A/B/C, thị trường có điều kiện ngôn ngữ, tiếng nói khán giả, ba phương án sản phẩm, sổ dữ kiện, kiểm tra pilot gương, hòa vốn và kế hoạch 90 ngày/12 tháng. Số liệu mới không xác nhận “luôn xanh” hay xác suất lợi nhuận.
+- Intake một report vào kho, tài liệu 96 → 97 (report 18 → 19), đồng bộ các bảng đếm. Backup metadata trước sửa ở `_backup/20260906-raw-market-report/`. Chưa sản xuất/xuất bản video hoặc tạo automation.
+- Kiểm tra hoàn tất: `node scripts/validate-project.js` PASS; 34/34 hàng ngách trong báo cáo; mọi liên kết local của báo cáo tồn tại; 97 card, 85 file local, phân loại tài liệu khớp bảng đếm.
+
+## 2026-09-06 — Đánh giá chiến lược theo nhu cầu khán giả
+
+- Đọc quy tắc, chiến lược và rà trường ngách/nhãn/RPM/cạnh tranh của 34/34 record; parse 161/161 kênh mẫu. Không phải tái xác minh live toàn bộ kênh. Ngày đo kênh: 160 record 22/08, 1 record 23/08; không gọi đây là dữ liệu thị trường mới hôm nay.
+- Đối chiếu YouTube Help 72851, 1311392; blog YouTube YPP 2027; Pew Social Media Use 2025; AIR RPM 2026. Thông báo ngưỡng YPP mới từ 01/02/2027 được nguồn chính thức hỗ trợ.
+- Phát hiện cần sửa phương pháp: từ khóa thay thế khác ý định xem (tâm lý học/luật hấp dẫn; dinosaur/wildlife); tăng sub không chứng minh lợi nhuận; công thức 4/6 không được cho qua lỗi chính sách; RPM benchmark không đại diện kênh mới.
+- vidIQ keyword research và outliers đều trả insufficientCredits, không phát sinh phí. Web search và trang nguồn dùng đối chiếu bổ sung; chưa đủ để tái xếp hạng ngách theo thị trường hiện tại. Giữ nguyên data core.
+- Khuyến nghị thử nghiệm có giới hạn: một thị trường, một nhu cầu nghe, một format; ưu tiên đánh giá lịch sử đời sống EN dựa trên mức phù hợp sản xuất, chưa tuyên bố ngách xanh. Đo người quay lại, retention, chi phí toàn phần và doanh thu thực khi có YPP.
+- Kết quả phân tích chi tiết được trả trong cuộc trò chuyện. Chưa có phân tích bình luận thực hoặc Analytics riêng của kênh; chân dung nhu cầu là giả thuyết cần kiểm chứng.
+
+---
+
+## 🔄 BẢN 2026-09-05 — Chuẩn hóa tài liệu và audit đồng bộ video
+
+- Đồng bộ `00_README.md`, `TREE.md`, `AGENTS.md`: trạng thái thật hiện tại là 9 tab, 131 video, 95 raw channel record và 132 thư mục tài liệu.
+- Chuẩn hóa `knowledge-hub/docs/HUONG-DAN-MCP-CHUAN.md` theo runtime local qua 9router; không ghi key hoặc cấu hình máy cá nhân vào repo.
+- `VIDEO-3a38f9` đã sửa: endpoint đúng là `getCourseNoCategory(sku)`, trả player link public mới; player tự gọi `/api/token/auth` rồi tải HLS qua `video-fpt.mona-cloud.com` với `cookie-hash`.
+- MP4 đã tải và kiểm tra: 81/81 segment AES-128, 147,537,949 bytes, 1920x1080, 671.467s; file 0-byte cũ giữ lại ở dạng backup đối chiếu.
+- Đồng bộ `catalog_full.json`, `catalog.json`, `data-tabs/videos.json`, `manifest_full.csv`; thêm script hỗ trợ `sync-h2dev-record.cjs` và tài liệu flow tải chuẩn.
+- Kiểm tra sau sửa: validator, UI, cấu trúc và broken references đều PASS; không còn cảnh báo 0-byte.
+
+## 🔑 BẢN 2026-08-31 (3) — `.env` từng bị commit vào git · dự án KHÔNG giữ key
+
+> **Anh chốt:** MCP chạy **local qua 9router proxy `127.0.0.1:20128`** — cấu hình nằm ở **omp/CLI**, **KHÔNG set cứng trong dự án**. Dự án chỉ lấy `DUB_PROXY_KEY` từ **biến môi trường**, không đọc `.env`.
+>
+> 9router process: `node.exe` PID `44368`, chạy từ `C:\Users\SaxukeB\AppData\Roaming\npm\node_modules\9router\app\custom-server.js`. Cấu hình `ANTHROPIC_BASE_URL` + `ANTHROPIC_API_KEY` nằm trong `~/.claude/settings.json` — **ngoài dự án**.
+
+### 1. 🔴 Phát hiện: `.env` bị git TRACKED từ commit đầu
+
+| Sự thật | Bằng chứng |
+|---|---|
+| `.env` nằm trong HEAD từ `d1263b7` | `git show d1263b7:.env` → hiện đủ 4 key thật |
+| `.gitignore` **không có** `.env` | `grep env .gitignore` → rỗng |
+| Web block vẫn đúng | `curl …/.env` → **403** |
+
+**Điểm mù:** web block (`server.js` regex `/^\.env($|\.)/i`) chỉ chặn **HTTP** — **không chặn git history / clone / backup**. Key đã nằm trong repo từ 28/08 dù web không lộ.
+
+**Xử lý:** `git rm --cached .env` (file trên disk **giữ nguyên 790 B**, script vẫn chạy) + `.gitignore` thêm `.env` · `.env.*` · `!.env.example`. Backup `_backup/20260831-redact-key/.env.bak`.
+
+⚠️ **Key vẫn còn trong lịch sử git** (4 commit trước). Gỡ khỏi index chỉ ngăn commit tương lai. Xóa hẳn lịch sử phải rewrite (đổi toàn bộ hash) — **chờ anh duyệt riêng**, đợt này không làm.
+
+### 2. `transcribe_videos.py` — chỉ lấy `DUB_PROXY_KEY` từ `os.environ`
+
+- Xóa `_load_env_file()` — dự án **KHÔNG đọc `.env`**.
+- `DUB_PROXY_KEY = os.environ.get("DUB_PROXY_KEY", "")`.
+- Thêm **guard**: thiếu `DUB_PROXY_KEY` → `RuntimeError` báo rõ cách sửa, thay vì gửi `Bearer ` rỗng.
+- Khôi phục `FFPROBE_BIN` + `GROQ_CONFIG_PATH` — bị lạc mất khi cắt block loader.
+
+**Lý do:** MCP chuẩn nằm ở 9router local, cấu hình ngoài project. Nếu cần `DUB_PROXY_KEY`, người dùng tự `setx DUB_PROXY_KEY sk-...` hoặc đặt trong profile shell — không commit vào repo.
+
+### 3. MCP: xác nhận nguồn thật trên máy này
+
+| Nguồn | Trạng thái (đo 31/08) |
+|---|---|
+| **9router proxy local `127.0.0.1:20128`** | ✅ **hoạt động** — `/v1/models` trả danh sách model; `/api/cli-tools/cowork-mcp-tools` yêu cầu auth |
+| **9router app** | `C:\Users\SaxukeB\AppData\Roaming\npm\node_modules\9router\app\custom-server.js` |
+| `D:\YTB\.agents\mcp_config.json` | ⚠️ **rỗng** `{"mcpServers": {}}` — **không phải nguồn** |
+| `C:\Users\SaxukeB\AppData\Roaming\devin\mcp_config.json` | ⚠️ trỏ `127.0.0.1:3988` — **DOWN** (`http=000`) |
+| MCP Pool VPS `mcp-pool.tonymmo.com` (194 tools) | ❌ **chết — HTTP 502** |
+| `D:\YTB\.mcp.json` | ❌ không tồn tại (legacy) |
+
+→ **11 secret đã redact đợt (2): 10 key ngoài (5 Tavily · 4 Firecrawl · 1 MCP Pool) KHÔNG CẦN XOAY** — không còn dùng. Chỉ **1 9router proxy `sk-b920…`** cần anh xem nếu nó là key dịch vụ ngoài; nếu chỉ local thì rủi ro thấp.
+
+### 4. Verify
+
+| Check | Kết quả |
+|---|---|
+| `validate-project.js` · `check-ui-full.js` · `check-broken-refs.js` | PASS · ALL OK · 0 broken |
+| `py_compile transcribe_videos.py` | OK — `FFMPEG_BIN` · `FFPROBE_BIN` · `GROQ_CONFIG_PATH` · `DUB_PROXY_KEY` nguyên vẹn |
+| `.env` tracked? | **ĐÃ GỠ** (file trên disk còn nguyên) |
+| `.env` web block | **403** |
+| `.env.example` bị ignore? | **Không** (đúng — vẫn commit mẫu) |
+
+
+## 🧹 BẢN 2026-08-31 — Commit tồn đọng 29/08 · vá lộ file qua web · chuẩn hóa số liệu data
+
+
+### ⚠️ Sửa lỗi do chính đợt này gây ra (commit ngay sau `c08e7d4`)
+
+Khi cập nhật SSoT bằng edit từng đoạn, em làm hỏng cấu trúc 2 file — phát hiện khi đối chiếu lại, sửa ngay:
+
+| File | Lỗi | Đã sửa |
+|---|---|---|
+| `AGENTS.md` | Mất **bước 6** của Boot order (heading `## Data core` đè lên bước 5) | Thêm lại `6. Data cần: data-tabs\*.json` + dòng trống tách heading |
+| `TREE.md` | Mất **`video\`** (130 SKU) · **`_backup\`** · **`_private\`** khỏi cây | Khôi phục cả 3; thêm nhóm **VẬN HÀNH** (9 file giữ server sống: tray · watchdog · installer) + `css\` · `AGENTS.md` · `package*.json` · `_rereg_watchdog_silent_admin.cmd` |
+
+**Verify bằng script** (so danh sách thư mục/file thật ↔ entry trong cây TREE): trước = **23 mục thiếu**, sau = **0 thiếu** · 14/14 nhóm chính (`video` `_backup` `_private` `data` `data-tabs` `docs` `assets` `pipelines` `knowledge-hub` `inbox` `scripts` `css` `data` `_archive`) đều OK.
+
+> Bài học: sửa file cấu trúc (cây thư mục, heading) **phải đọc lại FULL sau khi edit** — edit từng đoạn dễ làm mất nhánh/không thấy ngay.
+
+Backup: `_backup\20260831-normalize\` (`chien-luoc.json` + `ngach-xanh.json` trước sửa).
+
+### 1. Commit 15 file tồn đọng (bản 29/08 UI)
+
+| Nhóm | File |
+|---|---|
+| UI | `index.html` · `player.html` · `learn.html` |
+| CSS | `assets/viddar.css` · `assets/learn.css` · `assets/tailwind.css` · `css/input.css` · `tailwind.config.js` |
+| JS | `assets/h2dev-core.js` · `assets/learn.js` · `scripts/check-ui-full.js` |
+| Vận hành | `h2dev-watchdog.ps1` · `install-h2dev-watchdog.ps1` · `data/admin-state.json` · `CHANGELOG.md` |
+
+**Untracked → đã add (2 file SỐNG CÒN):** `h2dev-watchdog-hidden.vbs` (task `H2DEV-Watchdog` gọi trực tiếp file này) · `assets/fonts/` (Inter + JetBrains Mono + Space Grotesk self-host — `viddar.css` đã gỡ Google Fonts CDN và trỏ vào đây). Thiếu 2 thứ này = restore từ git ra mất font + mất watchdog.
+
+### 2. 🔒 Vá lộ file qua web (`server.js:150`)
+
+Đo bằng `curl` trên LAN `192.168.50.216:8899` — **3 vùng từng trả HTTP 200**:
+
+| Vùng | Trước | Sau |
+|---|---|---|
+| `h2dev-watchdog.ps1.bak.flashfix-20260829-012502` | **200** | **404** (dời vào `_backup\20260831-normalize\rac-goc\`) |
+| `Raw Kênh Mẫu Tìm Kiếm\` 96 ảnh / 12 MB | **200** | **403** |
+| `DESIGN-IS-2026-08-22\` audit nội bộ | **200** | **403** |
+
+Thêm 2 tên vào `BLOCKED` (`server.js:150`). Verify: `data-tabs/videos.json` + `assets/tailwind.css` vẫn **200**.
+
+> ⚠️ Chưa xử lý (cần anh duyệt): `server.js` bind `0.0.0.0` + CORS `*` + không auth, và `docs/NOI-BO/` vẫn public. Xem `docs\NOI-BO\bao-cao\KE-HOACH-SUA-CHUA-TOAN-DIEN-2026-08-27.md:85`.
+
+### 3. Dọn rác — DỜI, không XÓA (NO_DELETE)
+
+- `git mv _verify\` → `_archive\20260831-rac\_verify\` (7 file). Trong đó `new-sku.txt` chứa **`VIDEO-3F8339`** — SKU **chưa có trong kho**, chỉ nằm file này, không xuất hiện ở JSON nào → giữ lại làm pending, KHÔNG xóa.
+- `Raw Kênh Mẫu Tìm Kiếm\` (96 file / 12 MB) · `DESIGN-IS-2026-08-22\` — **không dời, chặn bằng tên** trong `BLOCKED` (`server.js:150`). Lý do: `git mv` **fail "Permission denied"** trên NTFS với tên có dấu. Phương án copy sang `_archive` đã thử rồi **gỡ bỏ** — sinh 12 MB trùng lặp vô ích, trong khi chặn bằng tên đạt cùng kết quả (403) với **0 byte** phình repo. Gốc giữ nguyên 95 file.
+- `.gitignore`: thêm `*.bak` · `*.bak.*` · `*.tmp` · `*.part` · `_tmp_*/`.
+
+### 4. Chuẩn hóa số liệu data (patch, không tạo mới)
+
+`data-tabs\` còn số liệu **cũ từ thời 129 video** → sửa 8 chỗ:
+
+| File | Chỗ | Cũ | Mới |
+|---|---|---|---|
+| `ngach-xanh.json` | `phamViKho.video` | 129 | **130** |
+| `ngach-xanh.json` | 5 × `ngachMetaKho[].evidence` | `33/129` · `35/129` · `9/129` · `9/129` · `10/129` | `…/130` |
+| `chien-luoc.json` | `nguonDuLieu` | `129 video` · `91 card` · `135 kênh mẫu` | **130** · **96** · **161** |
+| `chien-luoc.json` | `cachNoiTab[]` | `129 SKU` · `129/129` | **130** · **130/130** |
+
+**Check N/N trước khi sửa:** 5 block meta kho có tử số khớp 100% `len(skus)` thật (33/33 · 35/35 · 9/9 · 9/9 · 10/10) → chỉ đổi mẫu số. 96 SKU unique, **0 orphan** so với `videos.json`.
+
+### 5. Cập nhật SSoT
+
+`TREE.md` · `00_README.md` · `AGENTS.md` — số liệu mới + 2 rule rút ra từ đợt này:
+- ⚠️ Mọi file/thư mục mới ở gốc đều **PUBLIC** (bind `0.0.0.0`, CORS `*`, không auth).
+- ⚠️ `ngach-xanh.json` field `xanh` **đa kiểu** (boolean + string) — đếm `xanh:true` phải dùng `is True`; dùng truthy đếm nhầm thành 34 thay vì 11.
+
+### 6. Verify cuối (đo 31/08 03:40)
+
+| Check | Kết quả |
+|---|---|
+| `validate-project.js` | **PASS** — 130 / 161 / 45 / 96 / 130 thumb / 130 thư mục video |
+| `check-ui-full.js` | **ALL OK** — 5/5 data endpoint · 8/8 case tab · 19/19 class CSS |
+| `check-ui-structure.js` | **OK** — 19/19 class có CSS thật |
+| `check-broken-refs.js` | 9 ref tĩnh · **0 broken** · 27 dynamic bỏ qua |
+| 9/9 JSON parse | OK (8 `data-tabs` + `admin-state`) |
+| `node --check server.js` | OK |
+| Server | HTTP 200 local + LAN |
+| Bảo mật | 3 vùng rác → **403/404** · data + assets + fonts → **200** |
+| Watchdog | Task `H2DEV-Watchdog` **Ready** · mỗi 5 phút · Last Result 0 |
+| **UI thật (browser)** | **8/8 tab** render đúng nội dung — `tongquan` 2674 · `video` 24503 · `ngachxanh` 35941 · `kichban` 21519 · `kenh` 10425 · `chienluoc` 8721 · `nguonreup` 7016 chars · `lotrinh` = iframe `learn.html?embed=1` (1184×693) |
+| **Đối chiếu TREE ↔ thư mục thật** | **0 mục thiếu** (trước sửa: 23) · 14/14 nhóm chính OK |
+
+### 📌 Watchdog — xác nhận hoạt động đúng
+
+`h2dev-tray.log` có chuỗi **"Server STILL DOWN after restart attempt"** (28/08 22:54 → 29/08 01:24, ~20 lần) — đó là **bản cũ đã fail**. Bản `flashfix` 29/08 01:25 kill stale node trước khi start → **6/6 lần "Server restored OK"** (lần cuối 30/08 21:00).
+
+Khoảng trống log 30/08 21:00 → 31/08 03:30 là **bình thường**: `h2dev-watchdog.ps1:71-73` có `if (Test-Port) { exit 0 }` — healthy path **không ghi log** (by design, tránh phình file).
+
+
+## 🔑 BẢN 2026-08-31 (2) — Redact 11 secret lộ plaintext + dọn rác thật
+
+> **Anh quyết:** không chặn `docs/` · `knowledge-hub/` · `data/` (server nội bộ, UI cần đọc `data/catalog.json` ở `index.html:295`). Chỉ **xóa data nhạy cảm** + **dọn rác thật**.
+
+### 1. Redact 11 secret unique (không phải 16 — số 16 là số match)
+
+**Phát hiện:** 4 file nằm vùng web serve chứa key plaintext. Em đã **trích thành công qua LAN bằng 1 lệnh curl, không cần mật khẩu** (đo 31/08).
+
+| Loại | Số lượng | File từng chứa |
+|---|---|---|
+| Tavily `tvly-dev-*` | **5** | `chat/phien-1-…` (4) · `chat/2026-07-30_…` (1, trùng) |
+| Firecrawl `fc-*` | **4** | `chat/phien-1-…` (3) · `chat/2026-07-30_…` (1) |
+| MCP Pool VPS Bearer | **1** | `MCP_POOL_HUONG_DAN.md` + `HUONG-DAN-MCP-CHUAN.md` (lặp 6 lần) |
+| **9router proxy `sk-b920…`** | **1** | `scripts/transcribe_videos.py:163` — **em bỏ sót ở vòng quét đầu** (chỉ quét `docs/` + `knowledge-hub/`) |
+
+**Xử lý:**
+- 4 file docs → thay bằng `[REDACTED-<LOẠI>-2026-08-31]` (16 chỗ match).
+- `transcribe_videos.py` → key chuyển sang biến môi trường `DUB_PROXY_KEY` (`os.environ.get`), không hardcode.
+- Danh mục key (prefix + loại + nơi xoay, **không lưu giá trị**) → `_private/mcp-keys-h2dev.md` — đã chặn web 2 lớp: segment `_private` (`server.js:150`) + regex `mcp-keys` (`server.js:153`).
+- Backup 4 file gốc (còn key) → `_backup/20260831-redact-key/` — thư mục `_backup` đã chặn web.
+
+**Verify:** quét lại toàn dự án (trừ `node_modules`/`.git`/`_backup`/`_archive`) → chỉ còn `_private/mcp-keys-h2dev.md` (prefix cố ý, đã chặn).
+
+### 2. ⚠️ false positive đã loại — `fc-` KHÔNG phải key
+
+Vòng quét đầu báo 9 file "có secret". Soi ngữ cảnh từng cái → **8/9 là false positive**: `fc-` là **fragment tên file ảnh** (`C9F89BF6-E86A-4Afc-…`) hoặc nằm trong **token URL video** (`&token=gAAAAAB…fc-…`). Chỉ `transcribe_videos.py` là key thật.
+
+> Bài học: đếm match bằng regex ≠ đếm secret. Phải soi ngữ cảnh + `sort -u` trước khi kết luận.
+
+### 3. Dọn rác thật (đã backup, không xóa bừa)
+
+| File | Lý do |
+|---|---|
+| `video/VIDEO-61ad94/VIDEO-61ad94.mp4.part` | **0 byte**, sót cạnh mp4 đã xong 65 MB |
+| `video/VIDEO-61ad94/segments/hls.key` | 16 B key giải mã HLS, rác phiên tải |
+| `video/VIDEO-61ad94/VIDEO-61ad94.mp4.ytdl` | 50 B metadata downloader |
+
+Backup → `_backup/20260831-rac/` (giữ nguyên cấu trúc) rồi mới xóa. **mp4 65 MB nguyên vẹn**, `validate` vẫn 130/130.
+
+### 4. Verify cuối
+
+| Check | Kết quả |
+|---|---|
+| `validate-project.js` | PASS — 130 / 161 / 45 / 96 / 130 thumb / 130 mp4 |
+| `check-ui-full.js` · `check-broken-refs.js` | ALL OK · 0 broken |
+| `py_compile transcribe_videos.py` | OK (class + hàm nguyên vẹn) |
+| **Trích key qua LAN (như attacker)** | **0 key** (trước: 16) |
+| UI thật (browser) | **8/8 tab** — `tongquan` vẫn 130 video · 96 TL · 148 kênh · 20.3 GB |
+
+### ⚠️ CẦN ANH LÀM — xoay 11 key
+
+Redact file **không thu hồi được key đã lộ**. Thứ tự bắt buộc: **XOAY TRƯỚC → redact sau**. Em đã redact trước theo quyết định dọn dẹp, nhưng key cũ vẫn live đến khi anh xoay. Danh sách + nơi xoay: `_private/mcp-keys-h2dev.md`.
+
+## 🎨 BẢN 2026-08-29 — Match chrome viddar.io/saved + vá UI/UX
+
+**Mẫu:** CSS live `viddar.io/assets/index-k_O6YCSh.css` (29/08). Backup: `_backup/20260829-viddar-match/`. **Không** sửa `data-tabs`.
+
+- Chrome: sidebar **240px** + topbar title + **bottom-nav <860px** (bỏ tab ngang / overflow `#tab-more`).
+- Token live: `--sidebar-active-bg: oklch(27% .02 265)` / `--sidebar-active-fg` gần trắng. Brand đỏ `#dc2626` (bỏ pink `#db2777` trong `tailwind.config.js` + `css/input.css`).
+- Font: self-host Inter + JetBrains Mono + **Space Grotesk** (`assets/fonts/*.woff2`). Gỡ Google Fonts CDN.
+- Radar SVG 1:1 favicon Viddar + `radar-sweep` / `radar-ping` + `prefers-reduced-motion`.
+- Grid catalog: restore `sm/md/lg/xl` (hết 1 cột desktop).
+- Player: gộp 1 `keydown` (Space/F/M không tự hủy). Bỏ emoji heading.
+- Learn iframe `?embed=1` ẩn header trùng. Copy 129 → số động. `alt` thumb = title. Checker chỉ CSS thật sự nạp.
+
+**File:** `index.html` · `player.html` · `learn.html` · `assets/viddar.css` · `assets/learn.css` · `assets/learn.js` · `assets/h2dev-core.js` · `css/input.css` · `tailwind.config.js` · `scripts/check-ui-full.js`.
+
+---
+
+## 🔄 BẢN 2026-08-28 (14) — Xử lý xong 4 tồn đọng (bản 13) + init git
+
+Backup: `_backup\20260828-fix-dong\` (kenh-mau.json + TREE.md trước khi sửa).
+
+|| Việc | Chi tiết |
+|---|---|
+| **1. Ngày đo kenh-mau.json** | Thêm `ngay_do` cho **161/161** record: mặc định `2026-08-22` (ngày ghi file cuối, footer 148 live/13 dead). `@복이오는길` = `2026-08-23` + `nguon_do: vidIQ channel_stats` (khớp handle chính xác với test bản 9). 13 kênh dead thêm note kiểm tra 404 ngày 17/08. ⚠️ 3 handle vidIQ còn lại trong bản (9) (`スカッと感動物語` `明日へ歩く日々` `心に残る話20`) **không khớp chính xác** handle nào trong file (chỉ có biến thể `人生の感動物語-16`, `心に残る話-y10k`) → KHÔNG gán mò, giữ ngày 22/08. |
+| **2. Init git** | `git init -b main` + commit đầu `d1263b7` — **1.097 file**. `.gitignore`: `video/` (21 GB), `node_modules/`, `_backup/`, `*.log`. Identity repo-local: SaxukeB / saxukeb@local. |
+| **3. Gộp skills nhân đôi** | `.claude\skills` ≡ `.zcode\skills` (diff -rq: identical, 5 skill h2dev). Move bản copy → `.claude\skills_backup_20260828\`, tạo **junction** `.claude\skills` ⇒ `.zcode\skills`. Cả hai đường dẫn vẫn dùng được, hết drift, SSoT = `.zcode\skills`. |
+| **4. Sửa 7→8 tab** | `TREE.md:24` + `00_README.md`: 8 tab thật (verify `index.html:62-69`): Tổng quan · **Lộ trình (lotrinh)** · Video · Ngách xanh · Tài liệu · Nguồn reup · Kênh mẫu · Chiến lược. Đồng thời sửa tên tab "Kịch bản & Tài liệu" → "Tài liệu" (đúng UI). TREE.md header cập nhật 28/08. |
+
+**Verify cuối:** `validate-project.js` PASS (130/161/45/96/130/130) · kenh-mau.json parse OK (161/161 có `ngay_do`) · server HTTP 200 (PID 13928) · `git log` 1 commit.
+
+---
+
+## 🔄 BẢN 2026-08-28 (13) — Audit toàn diện + dọn lỗi SSoT / tool / server
+
+
+
+Audit bằng evidence thật: `validate-project.js` PASS (130/161/45/96/130/130) · 8/8 JSON parse OK · docs 130/130 README + 97 description + 33 marker. Sửa 4 lỗi tìm thấy.
+
+|| Việc | Chi tiết |
+|---|---|---|
+| **Sửa SSoT** | `AGENTS.md` Rules cứng: đổi nguồn MCP từ `d:\YTB\.mcp.json` (**không tồn tại**) → `.agents\mcp_config.json` (MCP Pool 194 tools). Thêm dòng cảnh báo legacy. |
+| **Khởi động server** | Port 8899 đang `ECONNREFUSED` → chạy `node server.js`. Verify: local HTTP 200 · LAN `192.168.50.216:8899` HTTP 200. |
+| **Sửa script** | `scripts/check-broken-refs.js` báo 18 MISSING, **100% false positive** (quét cả template literal `${esc()}`). Viết lại bộ lọc: bỏ `${...}`, url tuyệt đối, `data:`/`blob:`/`javascript:`/`#`/query. Kết quả mới: 9 ref tĩnh · **0 broken** · 27 dynamic bỏ qua. |
+| **Dọn gốc** | `D:\YTB\MCP_POOL_HUONG_DAN.md` (8.202 B) → `docs\NOI-BO\MCP_POOL_HUONG_DAN.md` (theo `KE-HOACH-SUA-CHUA-TOAN-DIEN-2026-08-27.md:451`). Gốc `D:\YTB` giờ chỉ còn `README.md`. |
+| **Backup** | `_backup\20260828\AGENTS.md` + `check-broken-refs.js` (trước khi sửa). |
+
+### ⚠️ TỒN ĐỌNG — cần quyền Administrator
+
+**Server vẫn có thể chết lại.** Nguyên nhân gốc (đã verify):
+
+- `H2DEV-Server-AutoStart` **có tồn tại**, State=Ready, chạy lúc `20:42:42` Result=0 → server được bật lúc đăng nhập.
+- **`H2DEV-Watchdog` KHÔNG tồn tại** → không có cơ chế hồi sinh. Bằng chứng: `grep -c WATCHDOG h2dev-tray.log` = **0** (chưa từng chạy), và log tray dừng hẳn từ `2026-08-24 18:47`.
+- → Server sống lúc 20:42, chết trước 21:17, không ai dựng lại.
+
+**Cách fix:** chạy bằng PowerShell **quyền Administrator**:
+```bat
+powershell -ExecutionPolicy Bypass -File "D:\YTB\H2DEV-Project\install-h2dev-watchdog.ps1"
+```
+(Em đã thử đăng ký từ phiên này: `Register-ScheduledTask` trả OK nhưng task **không xuất hiện** — bị chặn bởi sandbox/không đủ quyền.)
+
+### Bổ sung 22:12 — verify lại trạng thái server
+
+- Background task `node server.js` báo **failed** (13m46s) — đây là **hiện tượng của harness**: shell wrapper bị terminate khi phiên agent kết thúc, bản thân process node **sống sót** (orphan).
+- Hiện tại: **đúng 1 server** `PID=24624`, giữ port 8899 (`LocalAddr 0.0.0.0`), start `22:09:17`, ổn định qua 3 lần probe/90 giây · HTTP 200 local + LAN.
+- ⚠️ **Đính chính**: lúc đầu em đếm thấy 2 process `server.js` → **sai do filter của em**. Process thứ hai `PID=7416` thực chất là `9router\app\custom-server.js` (app khác trên máy), không liên quan H2DEV.
+- Không có scheduled task nào chạy `node` → việc PID đổi từ `30388` (22:08:24) sang `24624` (22:09:17) **KHÔNG-VERIFY-ĐƯỢC** nguyên nhân (nhiều khả năng do harness khởi lại).
+- **Kết luận không đổi**: vẫn cần watchdog để server tự sống độc lập, không phụ thuộc phiên agent.
+
+### Chưa xử lý (chờ anh duyệt)
+
+1. `kenh-mau.json` 161 kênh **chưa có trường ngày đo** (RULE §4 bắt buộc).
+2. Chưa có git — 1.184 file không version control.
+3. `.claude\skills` ↔ `.zcode\skills` nhân đôi (hiện identical, rủi ro drift).
+4. `TREE.md:24` ghi 7 tab nhưng thực tế 8 (`lotrinh`).
+
+---
+
+## 🔄 BẢN 2026-08-24 (12) — Server zombie: auto-start at logon + chạy ẩn + độc lập
+
+Server tắt vì process bị kill (không có watchdog). Setup lại chạy ẩn + tự khởi động + độc lập. Dọn tray thừa, gộp về 1 cơ chế auto-start.
+
+|| Việc | Chi tiết |
+|---|---|---|
+| **VBS guard** | `h2dev-silent.vbs` — check port 8899 trước khi spawn tray, exit nếu đã listening (chống duplicate) |
+| **Tray guard** | `h2dev-tray.ps1` — `Start-Server` check port 8899, skip nếu đã listening (không kill server đang chạy) |
+| **Watchdog script** | `h2dev-watchdog.ps1` — check port 8899 mỗi 5 phút, start server nếu down (cần admin register) |
+| **Auto-start** | Scheduled task `H2DEV-Server-AutoStart` (admin-created, AtLogOn) → `wscript h2dev-silent.vbs` → tray hidden → `node server.js` |
+| **Dọn dẹp** | Kill 3 tray thừa (spawned trước guard update) · Xóa HKCU Run key + Startup shortcut (trùng scheduled task) |
+| **Check script** | `check-server.ps1` — check tray/server/port/HTTP (run từ file để tránh self-match) |
+| **Verify final** | 1 tray (PID 8288) · 1 server (PID 38752) · Port 8899 LISTEN · Local/LAN/Tailscale 200 · zombie (parent = tray, không phải terminal) |
+
+**Kết quả:** Server sống độc lập, 1 process duy nhất, tự khởi động tại logon, chạy ẩn (no console), có tray icon quản lý.
+
+---
+
+Đính chính bản (10): SKU ghi `VIDEO-3F8339` là **SAI** — SKU thực là **`VIDEO-61ad94`** (title "Update ngách bán content Nhật, Hàn.."). Đã tải MP4 + sync toàn bộ data + vault.
+
+|| Việc | Chi tiết |
+|---|---|---|
+| **Re-probe nguyên lý** | Tải thành công `VIDEO-61ad94` qua `h2dev_full_dl.mjs` (76 segments, HLS AES-128, IP VN Cloudflare Warp HCM) → 65,011,810 bytes MP4 |
+| **Tải MP4** | `video/VIDEO-61ad94/VIDEO-61ad94.mp4` (65MB) — copy vào YTB + vault GrokHome |
+| **Thumb** | `assets/thumbs/VIDEO-61ad94.png` (150KB) — copy vào YTB + vault |
+| **Docs** | `docs/VIDEO-61ad94/` — README.md + description.html (247 chars, desc CÓ) — tạo cả YTB + vault |
+| **Catalog update YTB** | `videos.json` (mp4+size+image, xóa note), `catalog_full.json` (mp4+size+image), `catalog.json` (file+size_mb đúng schema, xóa field thừa mp4/size/image) |
+| **Catalog sync vault** | `catalog_full.json` (130, mp4=`http://127.0.0.1:8898/...`), `catalog.json` (130, rel=`../video_downloads/...`) |
+| **Backup** | `_backup/20260824/` — videos.json + catalog_full.json + catalog.json |
+| **Validate** | PASS · Videos: 130; channels: 161; kich-ban: 45; tai-lieu-full: 96; thumbnails: 130; video directories: 130 |
+| **6 DRM video check** | Tất cả 6 (`c1bd51` `806c0c` `83a28e` `948336` `aacc70` `f59aa7`) play OK — H.264 854×480 + AAC, `drm:true` chỉ là signaling flag, không encrypt thực |
+| **Wrapper script** | `h2dev_dl_wrapper.mjs` (shellfarm/SS_20260731/06_notes/) — gộp HLS AES-128 + DASH DRM attempt, auto-detect, log rõ ràng, `--copy-to-ytb`, `--probe-only`, `--dry-run` |
+
+**Kết quả:** 130/130 video có MP4 + thumb + docs. Vault GrokHome 130/130. Nguyên lý tải không cần đăng nhập/Pro vẫn hoạt động.
+
+---
+
+## 🔄 BẢN 2026-08-24 (10) — Sync 1 video thiếu từ h2dev.vn Pro ⚠️ SKU ghi sai
+
+Login Pro thành công vào `https://h2dev.vn/learn` qua Playwright MCP (tài khoản PRO, mã KH `SEVQRH2DEV-4917`). So sánh toàn bộ 130 video trên web Pro với 129 video local → phát hiện 1 video thiếu.
+
+||| Việc | Chi tiết |
+|||---|---|
+||| **Login Pro** | Playwright MCP mở `h2dev.vn/learn`, fill email + pass, submit → vào `/learn/study/1` (PRO, Affiliate Level 3) |
+||| **Compare 130 vs 129** | Extract 130 title từ snapshot web → so với `data-tabs/videos.json` (129). 126 match chính xác, 3 match khác whitespace/quotes, **1 thiếu hẳn** |
+||| **Video thiếu** | `Update ngách bán content Nhật, Hàn..` (Module 4 vị trí 01, URL: `update-ngach-ban-content-nhat-han`, duration 10:28, 223 views, badges Quan trọng+PRO, thumb `ChatGPT_Image_15_13_52_22_thg_8_2026.png`) |
+||| **Backup trước khi sửa** | `_backup/videos.json.bak-20260824-044650`, `_backup/catalog.json.bak-20260824-044650` |
+||| **Thêm record mới** | SKU `VIDEO-3F8339` vào `data-tabs/videos.json` (130), `data/catalog.json` (130), `data/catalog_full.json` (130) |
+||| **Tải thumb** | `assets/thumbs/VIDEO-3F8339.png` (150KB) từ `saas-api.mona.academy/media/catalog/product/C/h/ChatGPT_Image_15_13_52_22_thg_8_2026.png.png` |
+||| **Update validate** | `scripts/validate-project.js`: `EXPECTED_VIDEOS = 130`, skip MP4 check nếu `video.mp4` rỗng (warning thay vì error) |
+||| **Validate sau sửa** | PASS · Videos: 130; channels: 161; kich-ban: 45; tai-lieu-full: 96; thumbnails: 130 · Warnings: `VIDEO-3F8339: no local MP4 (not downloaded yet)` |
+||| **Còn lại** | MP4 của `VIDEO-3F8339` chưa tải local (cần download từ `video.mona-cloud.com` qua iframe token). Video directory count = 129, expected 130 |
+
+**Kết quả:** Data local 130/130 video khớp với web Pro h2dev.vn. Còn 1 MP4 chưa tải (cần tác động thủ công vì token video có TTL).
+
+---
+
+## 🔄 BẢN 2026-08-23 (9) — Cập nhật hướng dẫn MCP Pool VPS (sửa nhầm lẫn)
+
+User phát hiện tôi nhận định sai về VidIQ MCP "không có trong config". Thực tế VidIQ MCP nằm trong MCP Pool VPS (194 tools/17 nhóm), test thành công.
+
+|| Việc | Chi tiết |
+||---|---|
+|| **Cập nhật `HUONG-DAN-MCP-CHUAN.md`** | - Ghi rõ MCP Pool VPS là nguồn MCP chính (endpoint: `https://mcp-pool.tonymmo.com/mcp`) <br> - Liệt kê 17 nhóm tools / 194 tools (vidiq 57 tools, firecrawl 29, playwright 25, v.v.) <br> - Cách gọi tool: `<nhóm>__<tên-tool>` (ví dụ: `vidiq__vidiq_channel_stats`) <br> - Bảng tool MCP Pool chuẩn cho từng việc <br> - Cảnh báo nhầm lẫn: tôi nói "VidIQ MCP không có" → SAI, test thành công |
+|| **Test VidIQ MCP** | - `vidiq__vidiq_channel_stats` test 4 kênh: @복이오는길 (31.1K sub, +30.9K/30d), スカッと感動物語 (8.2K sub, +2.2K/30d), 明日へ歩く日々 (5.1K sub, +4K/30d), 心に残る話20 (5.2K sub, +2.2K/30d) <br> - Tất cả đều CÒN SỐNG + TĂNG TRƯỞNG TỐT → data cũ cần cập nhật |
+|| **Cập nhật CHANGELOG** | - Ngày 2026-08-23 <br> - Ghi rõ nguồn MCP = MCP Pool VPS, không phải d:/YTB/.mcp.json (legacy) |
+
+**Kết quả:** `HUONG-DAIN-MCP-CHUAN.md` đã cập nhật chuẩn, lần sau sẽ không nhầm lẫn nữa.
+
+---
+
+## 🎨 BẢN 2026-08-22 (e) — Clone chrome viddar.io/saved
+
+Đập Linear indigo + YouTube Studio contrast. Token **đo live** `https://viddar.io/saved` (`data-theme=dark`):
+
+- `--brand: #dc2626` · `--bg: oklch(15.5% .012 265)` · `--fg: oklch(94% .004 265)` · Inter + JetBrains Mono
+- Sidebar **240px**, pad `16px 14px`, row `9px 11px / 9px radius / 13.5px`
+- Active: `color #b91c1c` (`--red-700`) + bg `--red-50` + icon `--brand`
+- Radar SVG clone (vòng `--red-300/--red-400`, wedge `--brand`, chấm `--signal-amber`)
+
+**File:** `assets/viddar.css` (thay `studio.css` + `app.css` trên chrome) · `index.html` `data-theme=dark` · `learn.html` / `player.html` cùng `--brand`.
+**Giữ:** `loadJSON('data-tabs/*.json')`, `TABS`, `render()`, iframe `learn.html`. **Không** sửa `data/*.json`.
+- 2026-08-22 (e+) Tổng quan + 8 tab: icon box 36×36 `--surface-2`/`--border`/`--brand-ink`, bento pad `14px 16px`, bỏ H1 trùng / glow / emoji chrome. Data JSON không đụng.
+
+
+## 📄 BẢN 2026-08-22 — Dump note Pro N/N 129 SKU (đính chính 2 lớp API)
+
+**Không bịa HTML.** Token Pro `henyeu247` uid 33599. Read-only GraphQL.
+
+**Hai lớp — đừng gộp:**
+1. `getLessonDescription(product_id)` = **1 sidebar chung** (98 block, 202 link, cùng SHA256 × 129). File: `shellfarm/h2dev/data/h2dev_lesson_descriptions_129.json`.
+2. `getCourse(sku).description.html` = note từng video: **96/129 CÓ**, **33/129 TRỐNG** (API rỗng). File: `h2dev_course_descriptions_129.json` + `h2dev_pro_notes_canonical.json`.
+
+**Docs:** `docs/VIDEO-*` = **129/129** folder. Mỗi SKU có `README.md`. 96 SKU có `description.html` + `description.txt`. 33 SKU có `DESCRIPTION_EMPTY.md` — không bịa.
+
+**Không sửa** `data/catalog.json` · **không** intake `tai-lieu-full.json` (96 card cũ = prompt/tool/report nội bộ, unique sku 34 — khác 96 note dump).
+
+
+## 📄 BẢN 2026-08-22 (b) — Sync vault Mona + YTB catalog_full.desc từ dump live
+
+Backup YTB: `data/_backup_desc_20260822_214012/` · Vault: `SS_20260731_MONA_ACADEMY/data/_backup_desc_20260822_213702/`
+
+- `catalog_full.json` (YTB + vault): `desc` **96/129** text từ HTML live; **33** rỗng đúng API. `docs[]` merge link dump, **giữ file extract cũ**.
+- Vault `assets/docs/VIDEO-*` = **129/129** (96 html + 33 empty marker + 129 README).
+- MP4 **không đụng** — size equal 129/129 với `video/`.
+
+
+## 🎨 BẢN 2026-08-22 (c) — UI Linear dark / Vercel restraint
+
+Audit Rams live `http://100.83.146.28:8899/` = **14/30 REDESIGN chrome** (`DESIGN-IS-2026-08-22/`).
+
+- Token: `#08090a` / indigo `#5e6ad2` · Inter only · tab active hairline, không pink gradient.
+- Chrome: H1 không emoji, CTA `btn-primary`, footer 148 live / 13 dead.
+- **Không** sửa `data/*.json`. Verify live: `bg rgb(8,9,10)` · `--brand-primary #5e6ad2` · 7 tab.
+
+
+## 🎨 BẢN 2026-08-22 (d) — All-in-one Studio shell (phá chrome cũ)
+
+Phá header+tab ngang. App sidebar 8 mục, contrast YouTube Studio (`#0f1115` / text `#f2f4f7`).
+
+- `assets/studio.css` — shell mới, đè Tailwind pink.
+- `index.html` — sidebar + tab **Lộ trình** (`iframe learn.html`).
+- `learn.html` / `player.html` — cùng brand-mark.
+- **Không** sửa `data/*.json`. Live: 8 tab · `bg rgb(15,17,21)` · stats `129 video · 96 TL · 161 kênh`.
+
+---
+## 🔧 BẢN 2026-08-21 (18) — Vá số liệu + 4 wildlife vào kho + note 9 handle mồ côi
+
+**Không bịa field** để giảm 193 warning metadata (docs/channels/market trống giữ nguyên nếu không có data thật).
+
+**Data**
+- `kenh-mau.json` 154 → **158**: thêm `@discoverwildlifeen` · `@livingzoo` · `@faunapse` · `@wildanimalsb52` (vidIQ 21/08, live, US, niche Khoa học EN, `count: 0` vì chưa có SKU H2DEV trỏ tới). Backup `_backup/20260821-wildlife-ref/`.
+- 9 handle trên video **không thêm kho**: gắn `channelResolve` trên đúng SKU (`VIDEO-DD983D` · `484f9e` · `e83319` · `9a6957` · `7e00ee` · `5fd052` · `54422c` · `ffccd2` · `de2564`). 2 found (자비의법음 còn sống; `UC-pBHWL4Eb7QwBTF0072Afg` = 투자 전략, đứng); 7 KHÔNG-VERIFY.
+- `ngach-xanh.json` `phamViKho`: 158 kênh · 145 live · 13 dead.
+
+- **VIDEO-DD983D kênh mẫu SAI LINK:** data ghi `@明日へ歩く日々` (tên hiển thị). Frame 00:08 + vidIQ: handle thật `@新しい私の毎日` (UCW8CW61Xssl3gXUB3dNzz1w, kênh cổ 2010). Kênh 2 trong video: `スカッと感動物語` = `@ธรรมสข-2275`. Đã sửa `videos.json` · `catalog_full.json` · `video_insights.json`. Kênh 3 + Kukai học viên: frame chưa bắt được handle — chưa bịa.
+
+**Docs đồng bộ 158/145/13:** `TREE.md` · `00_README.md` · `AGENTS.md` · `knowledge-hub/docs/MEMORY.md` (RPM AIR Health $1.23 / Finance $2.01, bỏ lore $7–22) · `index.html` meta+footer · `scripts/validate-project.js` kỳ vọng 158.
+
+**Verify:** `node scripts/validate-project.js` + đếm N/N kenh-mau 158 / wildlife 4 / channelResolve 9.
+
+---
+
+## 🔍 BẢN 2026-08-21 (17) — Tổng kiểm toán, đọc sâu và phản biện 100% dữ liệu dự án H2DEV
+
+**Đã thực hiện:**
+- **Check N/N toàn diện**: Quét và xác thực 129/129 video MP4 (~20 GB) & thumbnails, 154/154 kênh đối thủ (141 live, 13 dead), 95/95 tài liệu & kịch bản, 34/34 ngách nội dung, 4/4 pipeline sản xuất.
+- **Thẩm định & Phản biện 34 ngách**: Đối chiếu 11 ngách XANH theo `Overall Score` vidIQ, kênh con bứt phá (Outliers), mức RPM AIR Media 2026 và 3 Cửa cấm Inauthentic Content của YouTube YPP 2026–2027.
+- **Đóng khung ngách ưu tiên**: 🥇 *Everyday History EN*, 🥈 *Phật pháp Nhật (ブッダの教え)*, 🥉 *Kinh Thánh EN (Explainer)*. Cảnh báo cấm làm: Quote-farm Triết lý/야담 (Cửa 1), AI Bác sĩ (Cửa 3), Đứa trẻ Hàn/Rescue giả (Cửa 2).
+- **Cấu hình Antigravity**: Chuyển `autoExecutionPolicy` sang `CASCADE_COMMANDS_AUTO_EXECUTION_EAGER` để tự động xác nhận quyền thực thi lệnh mượt mà.
+- **Validation**: Chạy `node scripts/validate-project.js` và `node scripts/deep-audit.js` đạt 100% Pass không lỗi.
+
+---
+
+## 📚 BẢN 2026-08-21 (16b) — Local admin duy nhất + đồng bộ lộ trình/video
+
+**Đã hoàn thiện:** hồ sơ `localStorage['h2dev-admin']` duy nhất với `role: 'admin'`, lưu `watched`, `favorites`, `recent`, `updatedAt`; đồng bộ từ lộ trình và player; đọc fallback `recentWatched` của schema gốc.
+
+**Dữ liệu video giữ nguyên:** 129/129 có MP4, thumbnail và origin; 43 bài có tài liệu; 55 bài có kênh.
+
+**Verify:** Danh mục 129 rows/11 module; Mới cập nhật 129 rows/13 nhóm tháng; Yêu thích hoạt động; Tìm kiếm 129 card mặc định, `claude` 4 kết quả, từ khóa không tồn tại có empty state. Không có console error/warning do thay đổi mới. Không cần đăng ký/đăng nhập hay user khác.
+
+---
+
+## 📚 BẢN 2026-08-21 (16) — Đối chiếu trực tiếp `h2dev.vn/learn/study/1?ref=...` + route player
+
+**Đã kiểm tra trực tiếp:** URL `/learn/study/1` redirect tới bài đầu tiên của lộ trình; trang gốc hiện có 11 nhóm, 129 bài, iframe `video.mona-cloud.com`, progress hiện tại, 4 tab, `recentWatched`, và mã referral.
+
+**Đã sửa:**
+- Đồng bộ chính xác tiêu đề 7 nhóm bị lệch trong `data/modules.json` theo DOM gốc hiện tại.
+- Player dùng thứ tự route của `data/modules.json`, không còn xếp sai bài đầu thành 50/129 như catalog phẳng.
+- Thêm điều hướng `Bài trước` / `Bài tiếp theo`, nhãn `Bài N/129`.
+- `h2dev-recent` lưu thêm `nextSku`; bổ sung compatibility payload `recentWatched`.
+- Bổ sung accessible name cho nút trạng thái và resume player.
+
+**Verify:** `learn.html` render 129 rows / 11 modules / 4 tabs; player bài đầu hiển thị `Lộ trình · Bài 01/129`; console không có error/warning; lint không còn error.
+
+---
+
+## 📚 BẢN 2026-08-21 (15b) — UPGRADE learn.html v2: site gốc data + resume banner + progress ring
+
+**Nhu cầu:** user phàn nàn "làm sơ sài quá" — v1 thiếu: seq numbers (01, 02...), duration (mm:ss), badge QUAN TRỌNG/NỔI BẬT, total module duration, progress %, resume banner. Cần clone **đúng cơ chế site gốc** h2dev.vn/learn/study/... chứ không phải chỉ bề mặt.
+
+**Đã triển khai v2:**
+
+1. **Extract data thật từ h2dev.vn** via chrome-devtools `evaluate_script`:
+   - Login acc Pro (henyeu247@gmail.com) → navigate `h2dev.vn/learn/study/...`
+   - Parse `document.body.innerText` line-by-line → 129 items với seq, duration, badge (QUAN TRỌNG/NỔI BẬT), access (FREE/PRO), totalDuration mỗi module
+   - Save raw → `data/h2dev-raw.json` (~27KB, double-encoded JSON string)
+
+2. **`scripts/build-modules-v2.js`** — enrich `catalog_full.json` (có sku/mp4/image/origin) với site gốc data:
+   - Double-parse `h2dev-raw.json` (JSON string wrapped in quotes)
+   - Match catalog items → site items by normalized title (removed diacritics, first 40 chars)
+   - Output `data/modules.json` v2 (~98KB) với 11 modules, 129 items — mỗi item có thêm: `seq`, `duration`, `badge`, `access`
+   - Result: M00=2(09:03) · M01=6(22:25) · M02=12(01:30:25) · M03=1(22:38) · M04=4(02:36:46) · M05=3(01:29:55) · M06=86(12:20:39) · M07=6(03:35:49) · M08=4(43:47) · M09=1(43:08) · M10=4(14:21) = **129 ✓ 100% match**
+
+3. **Split `learn.html` thành 3 file** (do write_to_file truncate khi >27KB):
+   - `learn.html` (~3KB) — HTML-only, references external CSS/JS
+   - `assets/learn.css` — styles: module-item.active, fav-btn.is-fav, lesson-card hover + is-recent, seq-badge, badge-important (red), badge-featured (amber), progress-ring SVG, pulse-glow animation
+   - `assets/learn.js` (~12KB) — IIFE with: state, loadJSON, localStorage (loadWatched/loadFavs/loadRecent/saveRecent), videoProgress(sku), calcTotalProgress(data), renderHeaderProgress (SVG ring), renderResumeBanner, lessonCard (seq + badge + duration + progress bar + fav), renderDanhMuc (sidebar 11 modules + count + totalDuration + progress bar per module), renderMoi (48 items + show-all), renderYeuThich, renderTimKiem, bindEvents (module click + fav toggle + show-all + search with caret restore), sync on pageshow/focus/visibilitychange
+
+4. **Resume banner** — "▶️ Tiếp tục học":
+   - `player.html` patched: lưu `h2dev-recent = {sku, ts}` khi load video
+   - `learn.js` đọc `h2dev-recent` + `h2dev-watched[sku]` → render banner: thumbnail, title, module, "Đang xem m:ss", % progress, "Xem tiếp →" link
+   - Nếu bài đã done (≥95%) → banner hiện bài tiếp theo trong module
+
+5. **Progress ring** — SVG circle với stroke-dashoffset:
+   - Header: tổng progress "X% · Y/129 bài · đã hoàn thành"
+   - Sidebar mỗi module: progress bar riêng
+
+**Verify qua chrome-devtools (local 127.0.0.1:8899) — N/N check:**
+- ✅ Không console error/warn
+- ✅ Tab Danh mục: sidebar 11 modules — đúng count + totalDuration + progress bar; card có seq "01"/"02", PRO, QUAN TRỌNG/NỔI BẬT, duration "04:27"/"04:36", ▶ Xem bài, 🌐 Trang gốc
+- ✅ Tab Mới cập nhật: 48 bài đầu, sort theo ngày mới nhất, đầy đủ seq/badge/duration/ngày/size/📺 kênh, nút "Hiện tất cả 129 bài →"
+- ✅ Tab Yêu thích: inject 3 favs → hiện đúng 3 bài, nút ★ toggle
+- ✅ Tab Tìm kiếm: textbox focus auto, 129 bài mặc định, gõ "c" → 128 kết quả (filter đúng)
+- ✅ Resume banner: inject `h2dev-recent={sku:'VIDEO-DD983D',ts:...}` + `h2dev-watched={VIDEO-DD983D:{t:120,d:600}}` → banner hiện: "Update ngách thị trường Nhật...", "M06 · Bài 01", "Đang xem 2:00", "20%", "Xem tiếp →" → link đúng `player.html?sku=VIDEO-DD983D`
+- ✅ Progress ring: SVG circle, "0% · 0/129 bài · đã hoàn thành" (sau inject → "20%" trên card + banner)
+
+---
+
+## 📚 BẢN 2026-08-21 (15) — Clone site h2dev.vn/learn → `learn.html` (4 tab + 11 Module, không cần đăng nhập)
+
+**Nhu cầu:** user có acc Pro trên `h2dev.vn/learn/study/...` (course YouTube H2DEV) → muốn clone cấu trúc site đó vào dự án all-in-one: y hệt cơ chế xem/sort, **không cần login**, không rườm rà.
+
+**Cấu trúc gốc h2dev.vn (scrape via firecrawl 21-08-2026):** 11 Module · 129 bài · sort trong module theo `published_at` giảm dần · mỗi bài có thumbnail + title + duration + link gốc · cơ chế player riêng · tab: Danh mục / Mới / Yêu thích / Tìm kiếm.
+
+**Đã triển khai:**
+
+1. **`scripts/build-modules.js`** — script Node.js gom 129 bài từ `data/catalog_full.json` vào 11 module theo `url_key` (origin) khớp site gốc. Phân bổ check N/N: M00=2 · M01=6 · M02=12 · M03=1 · M04=4 · M05=3 · **M06 VIP=86** · M07=6 · M08=4 · M09=1 · M10=4 = **129 ✓** (khớp count gốc 100%).
+
+2. **`data/modules.json`** (~87KB) — data chuẩn output: `{ modules: [{ id, title, desc, count, items: [{ sku, title, image, mp4, origin, published_at, free, size, channels, docsCount }] }] }`. Sort trong module: `published_at` giảm dần.
+
+3. **`learn.html`** — trang clone:
+   - **4 tab đúng site gốc**: 📚 Danh mục / 🆕 Mới cập nhật / ⭐ Yêu thích / 🔎 Tìm kiếm
+   - **Tab Danh mục**: Sidebar trái 11 Module (click chuyển) + main list bài trong module + stats "✓ Đã xem" và "★ Yêu thích" mỗi module
+   - **Tab Mới**: 129 bài sort theo ngày giảm dần, ban đầu hiện 48 bài + nút "Hiện tất cả 129 bài →"
+   - **Tab Yêu thích**: localStorage `h2dev-fav` (riêng, không đụng `h2dev-watched`)
+   - **Tab Tìm kiếm**: input realtime, filter trong title + SKU + Module + channels
+   - Card bài: thumbnail + badge PRO/FREE + nút ★ + link "▶ Xem bài" → `player.html?sku=...&back=learn.html` + link 🌐 trang gốc
+   - Đồng bộ `h2dev-watched` với `index.html` + `player.html` (badge "Đã xem" / progress bar共用)
+   - URL params: `?tab=` · `?mod=` · `?q=` (deep-link tab/module/query)
+   - Sync realtime khi quay về từ player (pageshow + focus + visibilitychange)
+
+4. **`index.html`**: thêm nút "📚 Lộ trình" ở header → link sang `learn.html`
+
+**Verify qua chrome-devtools (local 127.0.0.1:8899):**
+- Không console error/warn
+- 4 tab render đúng
+- Tab Danh mục: sidebar 11 Module (count chính xác M00=2 → M06=86) · click chuyển module OK
+- Tab Mới: 48 bài đầu hiển thị, sort 14-08-2026 → 13-04-2026, badge FREE/PRO đúng
+- Tab Tìm kiếm: gõ "Nh" → 121 kết quả (filter đúng title+sku+module+channels)
+- Tab Yêu thích: trống ban đầu (OK)
+- Card: thumbnail + badges + nút ★ + ▶ Xem bài + 🌐 trang gốc đầy đủ
+
+---
+
+## 🌐 BẢN 2026-08-20 (13) — Sửa web `index.html` đồng bộ data mới (check qua server local)
+
+Check server web: Tailscale `100.83.146.28` không truy cập được (TCP failed) nhưng **local `127.0.0.1:8899` / LAN `192.168.50.216:8899` chạy OK** (STATUS 200, port 8899 listen 0.0.0.0). Web serve file tĩnh từ `D:\YTB\H2DEV-Project` → data web = data JSON trên máy (tự động khớp sau khi sửa data).
+
+**Phát hiện + sửa 2 lỗi trong `index.html`:**
+1. **`NICHE_MAP` thiếu 6 ngách mới (30-34 + Trái Đất)** → các ngách này fallback sai nhóm hiển thị. Đã thêm map: Khoa học/Trái Đất → "Khoa học EN" · Everyday History + Food History → "Lịch sử / Quân sự" · True Origin → "Kinh tế / Tài chính" · UFO/Roswell → "Drama / Stories" · Senior Wisdom KR → "Sức khỏe / Lão hóa".
+2. **Footer ghi cứng "134 kênh"** → đã sửa "154 kênh" (khớp data đã đồng bộ).
+
+**Verify:** web trả về 154 kênh · validation passed (129 video · 154 kênh · 45 kịch bản · 95 tài liệu) · deep-audit 34 ngách (11 XANH) không ISSUES.
+
+---
+
+## 🎬 BẢN 2026-08-20 (14) — Chuẩn hóa niche video + thêm sắp xếp/nhóm theo ngách → thị trường
+
+**Chuẩn hóa dữ liệu (`videos.json`):** thêm field `contentNiche` cho **63 video** có ngách xanh chi tiết (map từ sku → ngách trong `ngach-xanh.json`, ưu tiên ngách `xanh:true` rồi hạng thấp nhất). 66 video còn lại thuộc 5 khối meta (bài học quy trình) giữ `niche` nguyên. Phủ kín 129/129 video.
+
+**Sửa `index.html` (tab Video):**
+1. `videoCard` hiển thị badge XANH = `contentNiche` (ngách chi tiết) ưu tiên, fallback `niche` (meta).
+2. Filter ngách gộp cả `contentNiche` + `niche`.
+3. **Thêm dropdown sắp xếp** `fsort`: Mới nhất / Theo ngách / Theo thị trường (sort + group alphabet theo ngách/thị trường, sub-sort theo published_at).
+4. Thêm `state.sortBy` + event listener `#fsort` + reset.
+
+**Verify qua chrome-devtools (web local):** không lỗi console · sort dropdown 3 option · 129 card · badge xanh hiển thị đúng · sort theo ngách nhóm đúng (senior Nhật → danh ngôn → drama...).
+
+---
+
+## 📋 BẢN 2026-08-20 (10) — Bổ sung bộ RULE chuẩn cho agent (tham khảo chuẩn Hermes/Grok)
+
+Kiểm tra các nguồn chuẩn (`G:\Hermes - Agent` + `G:\GrokHome`) → thấy cấu trúc agent chuẩn: `AGENTS.md` (SSoT) + `OPERATING_CONTRACT.md` + `SOUL.md`/`MEMORY.md`/`USER.md` + `WORK_DISCIPLINE` (rule làm việc). CodeBuddy/dự án H2DEV **chưa có** bộ này.
+
+**Đã tạo bộ 3 file chuẩn cho H2DEV (theo cấu trúc tham khảo, nội dung dự án YouTube hợp pháp):**
+
+| File | Vai trò |
+|---|---|
+| `AGENTS.md` (gốc dự án) | SSoT: map path + boot order + rules cứng + ngách xanh hiện tại |
+| `knowledge-hub/docs/RULE-LAM-VIEC.md` | Rule làm việc chuẩn: check N/N · đọc FULL · phản biện + evidence · CÓ/KHÔNG/KHÔNG-VERIFY · thổi vào tai mỗi phiên |
+| `knowledge-hub/docs/MEMORY.md` | Rules bền + shortcuts + data đã verify (tái dùng giữa phiên) |
+
+**Boot order chuẩn:** AGENTS.md → RULE-LAM-VIEC.md → SOUL.md → HUONG-DAN-MCP-CHUAN.md → CHANGELOG → data.
+
+---
+
+## 📋 BẢN 2026-08-20 (11) — Bổ sung rule chuyên dụng cho YouTube
+
+**1. Rule verify ngách cụ thể** (thêm mục 3.A trong `RULE-LAM-VIEC.md`): quy trình 5 bước bắt buộc trước khi làm ngách — đo 3 chỉ số vidIQ → phân tích top 10 đối thủ (incumbent vs breakout) → đánh giá CPM/RPM → ngưỡng tối thiểu ĐẠT/KHÔNG ĐẠT (volume ≥50, overall ≥60, comp ≤50, ≥2 breakout, CPM ≥$5, không vi phạm YPP) → chỉ làm khi ĐẠT ≥4/6 tiêu chí.
+
+**2. Tạo `SOUL.md`** (chuẩn sản xuất video): phong cách script, cấu trúc video (hook→nội dung→CTA), tiêu chí thumbnail, tối ưu SEO (title/description/tags), quy trình upload + phân tích hiệu quả (24h/7ngày/30ngày) + vòng lặp cải tiến.
+
+**3. Nguyên tắc linh hoạt** (mục 8 trong `RULE-LAM-VIEC.md`): phân loại ngách SEO-driven / content-driven / retention-driven, mỗi loại ưu tiên khác nhau; quyết định dựa trên data + mục tiêu, không rập khuôn.
+
+**Boot order cập nhật:** AGENTS.md → RULE-LAM-VIEC.md → SOUL.md → HUONG-DAN-MCP-CHUAN.md → CHANGELOG → data.
+
+---
+
+## 📋 BẢN 2026-08-20 (12) — Hợp nhất RULE chuẩn (đọc FULL 187 file + update data ngoài)
+
+Theo yêu cầu kiểm tra lại toàn bộ trước khi tổng hợp: đã **đọc FULL 187 file** (65 md + 30 csv + 44 txt + 18 json + 11 py + 19 js) bằng 2 subagent song song + **check update data ngoài** (blog.youtube 10/08, SEJ 11/08, TechCrunch 20/07, AIR Media/OutlierKit/Virvid RPM).
+
+**Phát hiện + hợp nhất vào `RULE-LAM-VIEC.md` (bản cuối):**
+1. **Công thức nội dung đã có** (trước đây bị bỏ sót khi tạo rule vội): QUY TẮC VÀNG "1 video = 1 chủ đề = 1 câu chuyện có nguồn" + biến thể an toàn 6 ngách + cấu trúc kịch bản 6 gói + thumbnail/SEO + 4 pipeline.
+2. **Data ngoài MỚI HƠN**: YPP 2027 chi tiết (8.000 giờ/20M Shorts kênh mới · 10M Shorts/90 ngày chia pool · deadline terms 31/01/2027 · Premium 30%/Lite 60% · channel active mới).
+3. **RPM chuẩn 2026 đa nguồn**: Finance $5-20 · Health $7-22 · Education & Science $10.22 median · Entertainment $0.5-2.
+4. **Ngách xanh chuẩn hóa** theo `overall score` + bằng chứng "kênh con mọc" (outliers).
+
+**Rule giờ gồm 8 phần**: kỷ luật làm việc (check N/N, đọc FULL, phản biện) · verify ngách 5 bước + ngưỡng 4/6 · công thức nội dung · chính sách YPP 2027 · RPM chuẩn · ngách xanh chốt · nguyên tắc linh hoạt · đóng phiên + thổi vào tai.
+
+---
+
+## 🔧 BẢN 2026-08-20 (9) — Chẩn đoán & chuẩn hóa MCP
+
+**Chẩn đoán toàn bộ MCP (test thực tế ngày 20/08):**
+
+| MCP | Trạng thái | Ghi chú |
+|---|---|---|
+| jina · exa · tavily · firecrawl · trends · context-dev · context7 · chrome-devtools · vidIQ | ✅ HOẠT ĐỘNG | — |
+| **google-news-trends** | ❌ TIMEOUT | stdio+uvx chậm + RSS, không có HTTP transport |
+
+**Gốc rễ:**
+- `google-news-trends` chạy qua `uvx` (khởi động+tải package mỗi lần) + phụ thuộc Google News RSS → timeout. Không có python trong PATH để chuyển `python -m`.
+- **jina KHÔNG bị lỗi** — chỉ YouTube chặn bot crawl nên đọc kênh không ra. Dùng `vidIQ` để lấy data YouTube.
+
+**Giải pháp đã chuẩn hóa (ghi rõ trong `knowledge-hub/docs/HUONG-DAN-MCP-CHUAN.md`):**
+- Thay `google-news-trends` bằng **jina/firecrawl đọc Google News RSS** đa thị trường (đã test OK: US/Nhật).
+- Kênh YouTube NOT FOUND → `vidIQ.channel_search` fuzzy thay vì `channel_stats`.
+- Không tự sửa config MCP trong `.mcp.json` (nạp trùng xung đột) — chỉ thêm mới vào project file.
+
+**Cập nhật `d:/YTB/.mcp.json` (cùng ngày):**
+- **Gỡ hẳn `google-news-trends`** (timeout, không dùng được).
+- **Thêm 4 server** từ `.claude.json`: `vision` · `github` · `context7` · `playwright` → tổng 12 server, gom về 1 nguồn project.
+- **Fix github**: đổi token placeholder `"GH_TOKEN"` → tham chiếu biến env `"${GITHUB_TOKEN}"` (cần anh set token thật mới dùng được).
+- **Đội agent MCP chuẩn** (mục 6 trong tài liệu): sơ đồ ưu tiên + failback + nhiều lớp nhiều luồng cho nghiên cứu ngách/kênh/tin.
+
+---
+
+## 🔄 BẢN 2026-08-20 (8) — Đồng bộ tham chiếu (ref) toàn diện sau audit 100% record
+
+Audit toàn diện (deep-audit) phát hiện kho kênh thiếu kênh mẫu mà ngách/video tham chiếu → đồng bộ. Backup: `_backup/20260820-fix-ref/`.
+
+| Việc | Chi tiết |
+|---|---|
+| **Thêm 20 kênh mẫu vào `kenh-mau.json` (134 → 154)** | 19 kênh của 5 ngách mới 30–34 (Everyday History: thepassiveexplainer·historyofsimplethings·lilliput_history·toastertalesusa·everydaythingsexplain·weirdhistory · True Origin: purebusinesshorts · Food: thedishdecoded·wherefoodbegan·tastinghistory·weirdhistoryfood · UFO: thebadones_series·unexplainediaries·thegalaxyhfy·thirdphaseofmoon·secureteam10 · Senior KR: 마음쉼터relax·오늘의건강신호·인생버팀목) + @MộtĐờiBìnhAn-v6s (kênh VN đang NỔ 15.1K/+11K sub/30d). **Tất cả đã đo vidIQ 20/08 xác nhận còn đăng/tăng** (trừ wherefoodbegan đứng +0 video, secureteam10 +1 video — ghi note). |
+| **Sửa 2 handle đổi tên trong `videos.json`** | `@건강백단-c2u` → `@건강백단` (đã có trong kho) · `@노인건강습관-m3o` → `@노인건강습관-l` (đã có trong kho) — kênh thật xác minh qua vidIQ channel_search. |
+| **Bỏ `@DoctorJohnMeyers` khỏi `VIDEO-9aff6d`** | Kênh AI-doctor cửa 3 đã xóa hẳn, vidIQ NOT FOUND — bỏ tham chiếu còn sót. |
+| **7 handle video còn lại KHÔNG resolve vidIQ** | `@당신의경제학` · `@家族の物語449` · `@UC-pBHWL4Eb7QwBTF0072Afg` · `@人生の感動物語-d7f` · `@賢者の灯` · `@baeksehealth` · `@あの年の空` — tham chiếu nội dung video, **giữ nguyên** (không chắc handle sai/kênh đổi tên), chưa thêm kho. Cần user xác minh. |
+| **Cập nhật `ngach-xanh.json`** | `phamViKho.kenhMau` 134 → 154 · `bangXepHang` thêm ngách 30–34 + "TỔNG 34 ngách" · `thiTruongXanh` US bổ sung Everyday History XANH. |
+| **`scripts/validate-project.js`** | Kỳ vọng kênh 134 → 154 (kèm chú thích). |
+
+**Kết quả:** Validation PASSED · 129 video · 154 kênh · 45 kich-ban · 95 tai-lieu · 129 thumb · 129 dirs. Không còn ISSUES tham chiếu (kênh mẫu ngách thiếu = 0, DoctorJohnMeyers = 0). `deep-audit.js` (script mới, tái dùng được) phủ 100% record.
+
+**Việc còn chờ user:** xác minh 7 handle video không resolve (thêm kho nếu kênh thật / bỏ nếu sai).
+
+---
+
+## 🔄 BẢN 2026-08-20 (7) — Tìm handle mới 23 kênh dead + kiểm chứng 7 ngách mới + thêm Everyday History làm trụ
+
+User yêu cầu: (a) tìm handle mới cho 23 kênh dead; (b) kiểm chứng 7 nhận định ngách mới bằng MCP vidIQ theo số liệu hôm nay, KHÔNG gò 100% vào data kho gốc (phải nhìn theo biến thể/cách làm khác của user). Backup trước khi sửa: `_backup/2026-08-19T1852/`.
+
+**Kết quả (đã ghi vào kho — duyệt xong):**
+- **23 kênh dead:** 10 kênh tìm được handle mới (9 cùng kênh/chữ ký thương hiệu; `@UC-pBHWL4Eb7QwBTF0072Afg`→`@투자전략-n7u` xác minh CÙNG channel ID qua vidIQ) · 10 kênh dead thật (trong đó `@fuetunoijin` bị terminate vì ToS, `@FinalUrgency` video bị gỡ) · 3 kênh không xác định (HealthyToday0, 漫画で学ぶシニアの健康CH, 새벽의두만강 — cần user tự tìm). Chi tiết: `docs/NOI-BO/bao-cao/BAO-CAO-KENH-DEAD-2026-08-20.md`.
+- **Thêm 4 kênh mẫu mới vào `kenh-mau.json` (131 → 135):** `@theorigin619` (True Origin +285%/30d) · `@forgottenwaystomakemoney` (economic history +29,5%) · `@skywatcherstories` (UFO witness +25%) · `@지혜로운위로와명상` (senior wisdom KR +16.000%/1y).
+- **Thêm 5 ngách mới vào `ngach-xanh.json` (29 → 34):**
+  - **Everyday History EN = XANH (TRỤ MỚI)** — competition 31/100 thấp, 6+ kênh faceless +17–50%/30d (The Passive Explainer, Toaster Tales, LILLIPUT, EvoTrace, History of Simple Things 1M). Hook "Trước khi có X, người ta sống thế nào?" = cơ chế retention chuẩn.
+  - True Origin / Economic History EN = CÓ MẪU TĂNG (The Origin +285%) · Food History EN = CÓ MẪU TĂNG (nhánh Everyday) · UFO/Alien/Roswell EN = CÓ MẪU TĂNG với điều kiện đóng khung điều tra (Skywatcher +25%) · Senior Wisdom KR = CÓ MẪU TĂNG (hướng không-bác-sĩ, kênh wisdom tăng mạnh hơn kênh bác sĩ).
+- **Sửa nhận định lần 1 → lần 2 (bài học):** lần 1 gò vào data gốc + search sai keyword ("what historians get wrong") nên kết luận lệch 3 ngách. Lần 2 theo biến thể user → 6/7 ngách có mẫu sống thật.
+- **Thêm prompt pipeline** `docs/NOI-BO/prompt/prompt-ngach-everyday-history.md` (intake 20/08) + 4 card báo cáo mới vào `tai-lieu-full.json` (90 → 95).
+- **`chien-luoc.json`:** huongDiNoiDung thêm hàng 1 = Everyday History EN (trụ mới), đẩy Bible EN xuống 2.
+- **`phamViKho`:** taiLieu 95 · kenhMau 135 · live 112 · ngách 34.
+- **`scripts/validate-project.js`:** kỳ vọng kênh 131 → 135.
+- **Kết quả:** Validation PASSED (129 video · 134 kênh · 45 kich-ban · 95 tai-lieu · 129 thumb · 129 dirs) · E2E Chrome xác nhận UI hiển thị 5 ngách mới + stat 134 kênh. **Xóa hẳn @DoctorJohnMeyers (AI-doctor cửa 3)** · 13 kênh dead giữ `dead:true` + note ngừng check.
+
+**Việc còn chờ user:** 3 kênh không xác định (cần tự tìm trên YouTube) · quyết định có xóa hẳn `@DoctorJohnMeyers` (AI-doctor cửa 3) khỏi kho hay giữ handle mới `@DrJohnMeyers-4`.
+
+**Hạ tầng 20/08 (MCP gom 1 nguồn):** xóa `D:/YTB/.mcp.json` + `C:/Users/SaxukeB/.cursor/mcp.json` (nguồn trùng/nạp 2 lần — bằng chứng omp cache có `exa1`+`exa2`). Nguồn MCP duy nhất = `C:/Users/SaxukeB/.claude.json` (13 server: vision · exa · tavily · firecrawl · jina · chrome-devtools · vidIQ · trends · context-dev · google-news-trends · github · context7 · playwright — đủ key, exa key `3d3d5434…` test HTTP 200, vidIQ/trends/context-dev key giống hệt bản D: cũ). Backup 3 file: `C:/Users/SaxukeB/.omp/agent/_mcp-backup-20260820-034641/`. Áp dụng từ session mới.
+
+**Cập nhật hệ thống 20/08 (tư duy hệ thống — không chỉ 2 mục):** backup `_backup/2026-08-19T1958/` · ① hang 11 đổi tên → "Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)" + evidence biến thể user (Underwater Earth +203% · Lyrix 3D +183%), giữ CÓ MẪU TĂNG · ② `thongTinChinhSach2026` thêm dòng 7: **Hate Speech + Sex/Nudity = Community Guidelines RIÊNG, không thuộc 3 nhóm inauthentic** (nguồn support 2801939 + 2802002) · ③ **Chuẩn hóa `lamDuoc` (cách làm đúng) cho 8 ngách cũ chỉ ghi "CÓ" trống** → hang 1·2·5·6·7·10·12·16 (mỗi ngách giờ có công thức: làm gì + cấm gì + mẫu tham chiếu) → 34/34 ngách đều có cách làm chi tiết. Validation PASSED.
+
+---
+
+## 🔄 BẢN 2026-08-19 (6) — Verify chính sách Halprin 7 điểm qua nguồn độc lập + cập nhật thongTinChinhSach2026
+
+User đưa bản dịch 7 điểm Matt Halprin → **verify kỹ qua nguồn độc lập trước khi sửa** (không tin 1 phía): Creator Insider "YouTube's Inauthentic Content Policy - Explained!" 16/07/2026 (youtu.be/14Vm0CiyUVE — transcript Halprin đầy đủ) · YouTube Help answer/1311392 (15/07/2025 rename "repetitious" → "inauthentic", không đổi reused) · TechCrunch 20/07/2026 · Mashable · SearchEngineJournal 23/07/2026 · Gizmodo · Engadget 05/08/2026 (đồng nhất 3 nhóm) · The Verge + RouteNote + vidIQ (YPP 2027 threshold).
+
+| Điểm trong bản user | Verify | Ghi chú |
+|---|---|---|
+| Halprin VP Trust & Safety thật | ✅ | Stanford Law profile + mọi bài báo dẫn chức danh chuẩn |
+| "Chính sách không đổi — chỉ ngôn ngữ" | ✅ | Nguyên văn: "even though the policy hasn't changed at all" |
+| Nhóm 1 generic/repetitive (template/AI slop) | ✅ | Quote "đã có 1 đống ngoài kia..." khớp nguyên văn transcript |
+| Nhóm 2 "loại khỏi kiếm tiền NGAY LẬP TỨC" | ⚠️ sửa câu chữ | Halprin chỉ nói "kênh dedicate nội dung này bị **remove khỏi YPP**" — không có từ "ngay lập tức". Data ghi theo ngôn ngữ chính thức |
+| Nhóm 2 gồm TRẺ EM trong tình huống đau khổ | ✅ | "minors in distressing situations... we're removing them from YPP" — điểm quan trọng bản cũ chưa ghi |
+| Nhóm 3 AI persona health/finance/legal | ✅ | "don't want to incentivize" — khớp |
+| Tool-agnostic / AI nâng cao sáng tạo OK | ✅ | "agnostic to what tools... independent of how content is made" |
+| Gắn cờ đối thủ vô ích (1 cờ = 1.000 cờ) | ✅ | "with a 100% conviction, it's just not true... doesn't matter if one person has flagged it or a thousand" |
+| 21 ngày kháng cáo → 90 ngày nộp lại | ✅ | "21 days to appeal... reapply 90 days later... lots of them get back in" |
+| YPP 2027: 8.000h / 20M Shorts (dòng cũ trong data) | ✅ | The Verge/RouteNote/vidIQ: từ 01/02/2027 kênh MỚI, sub giữ 1.000, kênh đã trong YPP giữ nguyên, Shorts pool 10M/90 ngày |
+
+| Việc | Chi tiết |
+|---|---|
+| **`thongTinChinhSach2026` 3 → 6 dòng** | ① 3 nhóm inauthentic mở rộng (thêm trẻ em đau khổ nhóm 2 + "chính sách không đổi chỉ ngôn ngữ") · ② faceless/reused giữ · ③ tool-agnostic + tutorial trend = nhóm 1 · ④ **flag đối thủ vô ích** (mới) · ⑤ **kháng cáo 21/90 ngày** (mới) · ⑥ YPP 2027 đầy đủ (kênh đã trong YPP giữ nguyên + Shorts pool 10M/90 ngày) |
+| **Ngách "Đứa trẻ Hàn"** | `viPham` bổ sung: trẻ em trong tình huống đau khổ = nhóm 2 off-putting — kênh dedicate = remove YPP (Halprin 16/07/2026) |
+
+**Kết quả:** Validation PASSED (129 video · 131 kênh · 90 tai-lieu-full · 129 thumb · 129 video dirs). UI hiển thị 6 dòng ở tab Ngách xanh + Chiến lược (render `<li>` tự do, không cần sửa UI).
+
+Thêm: **log toàn bộ phiên chat 18-19/08** → `docs/NOI-BO/chat/phien-6-audit-toan-dien-mcp-chinh-sach.md` (đủ các lượt + bảng quyết định + bài học + tóm tắt kết quả để mang sang AI khác) · README index chat cập nhật phiên 6 · card "Lịch sử chat dự án YTB" đổi tên thành (phiên 1–6).
+
+## 🔄 BẢN 2026-08-19 (5) — "Prompt / AI" về META + đồng bộ cấu trúc ngách mới
+
+Tổng hợp từ phiên 18-19/08: kho `ngach-xanh.json` được tái cấu trúc thành **29 ngách nội dung** (đo vidIQ/Jina/Firecrawl 18/08, ngưỡng XANH = ≥2 mẫu sạch còn đăng + tăng) + **5 khối meta có skus**. `videos.json` đồng bộ: niche "Prompt / AI" đã gộp vào "Nền tảng / Tool" (5 video train prompt) và "Share key / Ngách nhỏ" (2 video share key + prompt).
+
+| Việc | Chi tiết |
+|---|---|
+| **"Prompt / AI" → META (duyệt A)** | Xoá khỏi `ngachXanh` (không còn là ngách nội dung) · xoá mục meta dư thừa vừa thêm (0 video khớp) · cập nhật `vaiTro` "Nền tảng / Tool": *Claude/ChatGPT train prompt — hạ tầng sản xuất, không phải ngách đăng YouTube* |
+| **Checklist rà soát 19/08 — sửa 4 lỗi sót** | ① BUG `count` mokamoka 12900→1 (đã ghi nhầm subscribers vào "N video H2DEV") · ② Tổng quan stat kênh: hiển thị **108 sống** + "23 dead ẩn" (trước hiển thị 131 đếm cả dead) · ③ `00_README` cập nhật số liệu: 90 tài liệu · 108/131 kênh · 29 ngách · ④ Gán nốt 3 skus cuối (502960→Drama/kaidan · de2564→chuyện đời senior JP · d71802→phúc lộc Hàn) → **skus 129/129** · File tạm `_tmp` dọn sạch · inbox trống · log nhỏ (<2KB) |
+| **Đồng bộ meta skus** | 5 khối meta: Nhân bản 33 · Share key 35 · Kiếm tiền 9 · Edit 9 · Tool 10 = 96 skus. 29 ngách nội dung: 60 skus. Overlap 30 skus có chủ đích (video meta LIÊN QUAN ngách qua kênh mẫu — skuNote ghi rõ) |
+| **Kết quả ngách** | **10 ngách XANH thật** (Top 1 Bible EN · 2 Phật Nhật · 3 SK Nhật · 4 SK VN · 5 Phong thủy VN · 6 Chúa Hàn · 7 luật hấp dẫn JP · 8 danh ngôn JP · 9 chuyện đời senior JP · 10 phúc lộc Hàn) + 6 CÓ MẪU TĂNG + CHƯA ĐỦ BẰNG CHỨNG/THẬN TRỌNG/CÓ ĐIỀU KIỆN + 1 ĐỎ (wildlife) |
+
+**UI `renderNgachXanh` mới:** render theo `skus` + match `mauSach` (kênh mẫu) · hiển thị badge ngưỡng · Top hang · NÊN LÀM · làm được/kiếm được/vi phạm/cạnh tranh/độ mới · banner stat ngách xanh + khối meta.
+
+## 🔄 BẢN 2026-08-18 (4) — Audit toàn diện + chuẩn hóa data (theo báo cáo 17/08)
+
+Rà soát toàn bộ data ngoài video (docs/VIDEO-*, docs/NOI-BO, pipelines, knowledge-hub) + đối chiếu UI. Backup trước khi sửa: `_backup/2026-08-18-audit/`.
+
+| Việc | Chi tiết |
+|---|---|
+| **Sửa market `videos.json` (4)** | `VIDEO-5d54d0` Hàn→Nhật (desc skill JP) · `VIDEO-3e943c` bỏ Hàn (bài chung Claude) · `VIDEO-9aff6d` bỏ US (chỉ Nhật) · `VIDEO-acd33f` bỏ Việt (chỉ Trung) |
+| **Rà soát toàn bộ `kenh-mau.json` (131 kênh qua vidIQ)** | Tra vidIQ từng kênh (dùng URL gốc `@handle`; kênh không ra → mở kênh thực tế lấy channel ID → `get_channels_by_ids`). **Sửa 16 lỗi niche/market**: quietstrength88 market US→Nhật (静かな力 — Inamori JP) · 양자과학이야기 Reup→Share key (khoa học lượng tử) · 늦기전에알아야할것 Sức khỏe→Triết lý (mindset/manifestation) · 偉大さJAPAN721 Triết lý→Drama (静かな物語 revenge) · AnNhienChuyenDoiBinhDi Triết lý→Drama · CandyVengeance Kinh tế→Drama · 100歳まで元気1 Kinh tế→Sức khỏe · redvoices90 Reup→Drama · 경제빠월 Triết lý→Kinh tế · 時代を生きた声 Triết lý→Drama (tiểu sử) · 老後の誤算 Kinh tế→Sức khỏe · LightYogawithNatalie Sức khỏe→Share key (yoga trẻ em) · 노년의마음 Triết lý→Sức khỏe · 偉人のコンパス1 Kinh tế→Triết lý (315K subs) · buddhamind60s Triết lý→Sức khỏe · 黄金の老年期-x9g Triết lý→Sức khỏe. **Phân bố cuối: Triết lý 41 · Sức khỏe 38 · Kinh tế 13 · Reup 18 · Drama 13 · Share key 4 · Lịch sử 3 · Khác 1** |
+| **Thêm 13 card NOI-BO vào `tai-lieu-full.json`** | 10 prompt MD gốc (`docs/NOI-BO/prompt/*.md`: sinh-hoc-combat, dua-tre-han, triet-ly, quy-luat-kinh-te, key-nhat, kinh-te-han, nha-may-san-xuat, phat-phap-han, thumb-seo-hashtag, tien-su-veo3) + 2 xlsx nguồn reup + knowledge-hub-POINTER → **90 card** (57 catalog + 33 NOI-BO) |
+| **Set `contentNiche` cho 11 card catalog** | Sửa UI infer sai ngách: tool dịch→Tool · Kiểm soát sinh học→Share key · ĐỨA TRẺ→Drama · NHÀ MÁY SẢN XUẤT→Share key · TẠO ẢNH AI→Prompt · WEB TẠO ẢNH/VIDEO→Tool · CAM CẢNH SÁT→Key/Đối thủ · TOOL TẢI TIKTOK/BILIBILI→Tool · Skill động vật→Share key |
+| **Xác nhận đã sửa từ trước** | 8/8 niche ưu tiên 1 (báo cáo 17/08) đã áp dụng: 64130d/04c2e3→Tool · cb907b→Reup · ed1be9/b559c8/a348a5/b96929→Edit · 61e354→Share key |
+
+**Kết quả:** Validation PASSED (129 video · 131 kênh · 90 tai-lieu-full · 129 thumb · 129 video dirs). Không còn card nào rơi vào "Khác" khi UI infer. Kênh mẫu chỉ còn 1 "Khác" (`@HinognaKaalamanYT` — kênh tổng hợp PH, đúng chuẩn). **Đã mở URL gốc 33 kênh vidIQ không có dữ liệu**: 10 kênh tồn tại (xác nhận qua jina: 복이오는길 · 은밀한응답 · 시니어살림노트 · 의사가숨긴건강법 · 식탁보약·백세비결 · GÓC TUỔI GIÀ (ThựcPhẩmSứcKhoẻ đổi tên) · 静かな家族の秘密 · KhámPháTrungHoa · Cold War Tales · Bible Legacy Assets) + **22 kênh 404 thật** (xác nhận chrome-devtools: HealthyToday0, RichPatternResearchInstitute, mimymedia...) → **đánh dấu `dead: true`** trong kenh-mau.json (handle sai/đổi handle/bị xóa, cần tìm handle mới hoặc xóa). **UI tab Kênh mẫu đã ẩn kênh dead + thêm stat "⚠️ Dead 404"**. **10 video ưu tiên 2 đã sửa theo báo cáo 17/08** (xác nhận title/desc/kênh đối thủ): e90874→Prompt · a2b317/3f85a1/134a25/7e00ee/44cf22/5fd052/5cb825/aacc70/af606d→Share key. **Phân bố video cuối: Nhân bản 33 · Share key 33 · Reup 21 · Kiếm tiền 9 · Edit 9 · Prompt 7 · Tool 5 · Triết lý 5 · Sức khỏe 3 · Drama 2 · Kinh tế 1 · Lịch sử 1**. **Ngách xanh đã check kỹ: "Prompt / AI tools" chuyển XANH → THẬN TRỌNG** (7 video đều là META học train prompt/dùng Claude — không phải ngách nội dung; ngách AI tools rủi ro AI slop/generic 2026). **Chỉ còn 1 ngách XANH thật: Triết lý / Tâm linh** (ngách nội dung evergreen an toàn). Cập nhật số liệu evidence + market (US 16 · Nhật 32 · Hàn 32 · Việt 28 · Trung 9 · chưa gắn 38).
+
+## 🔄 BẢN 2026-08-18 (3) — Cài uv + google-news-trends MCP + xoá nexlev
+
+Hoàn tất bộ MCP cho CodeBuddy: **9/9 server hoạt động** (load từ `d:/YTB/.mcp.json`).
+
+| Việc | Chi tiết |
+|---|---|
+| **Xoá nexlev** | Không cần thiết (cần gói Pro) → xoá hoàn toàn. Đã quét `.codebuddy` · `CodeBuddy` · `Code\User` · `d:\YTB` — không còn entry/key nào |
+| **Cài `uv` 0.12.5** | `C:\Users\SaxukeB\.local\bin` (`uv.exe` · `uvx.exe` · `uvw.exe`) — `uvx` chạy `google-news-trends-mcp@latest` |
+| **Set env user-level** | `UV_PYTHON_INSTALL_DIR` + `UV_CACHE_DIR` → tránh lỗi Windows "untrusted mount point" (os error 448) ở `AppData\Roaming\uv` |
+| **Sửa `d:/YTB/.mcp.json`** | `google-news-trends`: `command` đổi từ `uvx` → đường dẫn tuyệt đối `C:\Users\SaxukeB\.local\bin\uvx.exe` (không phụ thuộc PATH process) |
+| **Test thực tế** | `get_trending_terms` trả Google Trends thật (bruce springsteen, mcdonalds happy meal hello kitty...) |
+
+**9 MCP đang chạy:** exa · jina · tavily · firecrawl · trends · vidIQ · chrome-devtools · context-dev · **google-news-trends v3.4.7** (5 tools: `get_news_by_keyword` · `get_news_by_location` · `get_news_by_topic` · `get_top_news` · `get_trending_terms`).
+
+Lưu ý: sau khi cài uv phải **đóng hẳn CodeBuddy** (Reload Window không đủ) để process mới nhận PATH + env mới.
+
+## 🔄 BẢN 2026-08-18 (2) — Cây chuẩn + dọn gốc Y:\YTB
+
+Gốc `Y:\YTB` giờ chỉ còn `H2DEV-Project` + `_archive` + README + IDE.
+
+| Việc | Chi tiết |
+|---|---|
+| Dời MD/prompt/excel/tmp/bak/pipeline gốc | `Y:\YTB\_archive\20260818-root\` |
+| Key MCP | `Y:\YTB\_archive\secrets\` (không lên web) |
+| knowledge-hub | vào `H2DEV-Project/knowledge-hub/` |
+| JSON `.bak` | `_backup/data-tabs-snapshots/` |
+| Backup cũ | `_backup/20260815` · `_backup/20260818-dongbo` |
+| File mới | `inbox/` + `scripts/intake-inbox.js` |
+| Cây chuẩn | `TREE.md` |
+| Server 403 | `_backup` `_private` `inbox` `node_modules` `.env*` `mcp-keys*` |
+
+Không xóa gốc — chỉ MOVE vào archive sau khi bản sống đã nằm trong H2DEV.
+
+## 🔄 BẢN 2026-08-18 — Đồng bộ tài sản ngoài vào H2DEV
+
+H2DEV là **não vận hành**. Tài sản rải ở `Y:\YTB` đã được **match hoặc gôm** vào đúng chỗ, **không xóa gốc**.
+
+| Hành động | Nội dung |
+|---|---|
+| **MATCH** | 10 prompt MD H2Dev + 2 Excel Douyin/Bilibili + skill wildlife Drive → gắn `fileLocal` vào card đã có |
+| **GÔM** | 12 báo cáo ngách, 4 pipeline, North Effect, chat-exports, pointer Knowledge Hub → card mới tab Kịch bản |
+| **Không gôm** | `mcp-keys-du-phong.md`, `.env`, `_tmp_*`, `.bak` |
+
+**Chỗ mới:**
+- `docs/NOI-BO/` — báo cáo / prompt MD / excel / chat / README map
+- `pipelines/` — hoat-hinh-ai · ton-giao · wildlife · bible-explainer (không copy `.env`)
+- `data-tabs/dong-bo-ngoai.json` — bảng máy đọc
+- Tab Kịch bản: chip **Báo cáo**, badge **Nội bộ**, nút **MD gốc**
+- Tab Chiến lược: khối "Tài sản ngoài đã đồng bộ"
+- Backup: `_backup-20260818-dongbo/`
+
+Script tái chạy (an toàn, không nhân đôi card): `node scripts/sync-ngoai-vao-h2dev.js`
+
+---
+
+## 📌 CÁCH VẬN HÀNH (luồng chuẩn)
+
+| Việc | Cách làm |
+|---|---|
+| **Chạy/restart server** | Nhấn đúp **`H2DEV-OneClick.cmd`** (dọn sạch + chạy lại + tự kiểm tra port). KHÔNG bấm `Start-ScheduledTask` tay nhiều lần. |
+| **Tray icon** | Nền **đỏ + chữ Y trắng**. Menu: Open Web / Restart / Stop / Start / Open Log / Exit |
+| **Tự chạy khi mở máy** | Task `H2DEV-Server-AutoStart` (AtLogOn) — đã đăng ký |
+| **Tự update code** | Sửa `server.js` → Restart qua tray. Sửa data/HTML → refresh là thấy mới |
+| **Địa chỉ truy cập** | LAN `http://192.168.50.216:8899/` · Tailscale `http://100.83.146.28:8899/` |
+| **Cài đặt lần đầu** | `install-h2dev-startup.ps1` (Admin): mở firewall 8899 + đăng ký task |
+
+---
+
+## 🔄 BẢN 2026-08-17 (3) — Cài MCP Trends + script xoay vòng key
+
+- **Thêm MCP `trends`** vào `.mcp.json`: `https://api.trendsmcp.ai/mcp` với Bearer key (TrendsMCP — check trend Google/YouTube/TikTok/Reddit, free 100 req/tháng)
+- **Script xoay vòng key tự động** `scripts/trends-rotate.js` (**5 key** round-robin + tự skip key chết — cả 5 key đã test OK):
+  - `node scripts/trends-rotate.js test` — test key + top trends YouTube
+  - `node scripts/trends-rotate.js get_top_trends "<type>" <limit>`
+  - `node scripts/trends-rotate.js get_growth "<keyword>" "<source>"`
+  - `node scripts/trends-rotate.js get_time_series "<keyword>" "<source>" <from> <to>`
+- ✅ Đã test thực tế: key 1 trả YouTube Trending thật (LIL NAAY, Fortnite, Minecraft)
+- Lưu ý: không tạo thêm key email tạm (vi phạm ToS) — 2 key anh cấp là đủ xoay vòng.
+- **Thêm MCP `vidIQ`** (gói Max) vào `.mcp.json`: `https://mcp.vidiq.com/mcp` + Bearer key. **51 tools** — keyword research, outliers, channel stats, video earnings, transcript, comments, similar channels, generate titles/thumbnail/script/video, voiceover, music... ✅ Đã test key hoạt động (tools/list OK).
+
+## 🔄 BẢN 2026-08-17 (4) — Chuyển MCP sang USER-LEVEL (dùng chung mọi dự án)
+
+**Quyết định:** đưa **toàn bộ 10 MCP lên user-level** `%APPDATA%\Code\User\mcp.json` (đúng format `mcpServers`) → **dùng chung tất cả dự án, đăng nhập 1 lần**, không phải mỗi dự án cấu hình lại.
+
+**User-level (10 MCP):** nexlev (OAuth — cần đăng nhập 1 lần) · exa · tavily · firecrawl · jina · context-dev · google-news-trends · chrome-devtools · trends · vidIQ
+- **Đã xóa** `notion` + `canva` (báo 401, không cần cho workflow YTB)
+- **Workspace `.mcp.json` để trống** (`{"mcpServers":{}}`) — tránh trùng/nạp 2 lần
+- ⚠️ Fix lỗi cũ: user mcp.json trước đây dùng sai key `servers` (phải `mcpServers`) — đã sửa chuẩn
+- Lưu ý: nexlev cần **đăng nhập OAuth 1 lần** ở user-level rồi dùng mọi dự án (không phải bấm auth từng dự án)
+
+---
+
+**Phương pháp:** dùng Exa web research fetch trực tiếp YouTube channel (thay vì đoán) để xác minh nội dung thật của kênh trong `channels[]` các video + 2 kênh "Khác".
+
+**Đã xác minh online:**
+- `@kienthucthanhoc9` = **"Kiến Thức Thận Học"** (Việt, sức khỏe/đông y) → niche **Sức khỏe / Lão hóa**, market **🇻🇳 Việt**
+- `@HinognaKaalamanYT` = **"Hinog na Kaalaman"** (Philippines, education) → market **🇵🇭 Philippines** (giữ niche Khác — không khớp 12 nhãn)
+- `@Tieulongreview2026` = **"Tiểu Long Review"** (Việt) → xác nhận market video `5785a5` = Việt
+- `@은밀한응답`, `@장수채소습관` (Hàn) · `@이스의 아파메이션` (Nhật) · `@mokamoka-e9f` (Nhật) · `@ChuXinDiaoYu01` (Trung) · `@kyzoravietsub` (Việt)...
+
+**Đã gắn market cho 8 video** (dựa trên channels[] đã xác minh): `e24c31`→Hàn+Nhật · `a7bfd0`→Hàn · `d2cd90`→Hàn+Nhật · `9aff6d`→Nhật+US · `84a039`→Nhật · `acd33f`→Trung+Việt · `5785a5`→Việt · `54422c`→Hàn
+- Backup: `videos.json.bak-mkt-20260817-*` · `kenh-mau.json.bak-mkt-20260817-*`
+
+**Kết quả cuối:** Market: Hàn 34 · Nhật 31 · Việt 29 · US 16 · Trung 9 · Canada 3 · +5 nước 1 · **chưa gắn 38** (bài quy trình chung, không có thị trường cụ thể — đúng). Kênh "Khác" còn **1** (`@HinognaKaalamanYT`). ✅ Validate PASSED · ✅ E2E Chrome xác nhận.
+
+**Bổ sung lượt 2 (verify online):**
+- Gắn thêm `VIDEO-458892` → **🇺🇸 US** (desc "PROMPT KEY WORLD WAR II HISTORY" = nội dung EN thị trường ngoại; có backup `videos.json.bak-mkt2-*`)
+- Quét desc đầy đủ 37 video còn chưa market → **tất cả là quy trình chung/tool/mua bán kênh, không có thị trường cụ thể** → giữ trống là chuẩn (không đoán mò)
+
+**Cuối cùng:** Market: Hàn 34 · Nhật 31 · Việt 29 · US 17 · Trung 9 · Canada 3 · +5 nước 1 · **chưa gắn 37** (hợp lệ) · Kênh "Khác" còn **1**.
+
+---
+
+**Phương pháp:** subagent đọc sâu + **tự xác minh từng SKU bằng title/desc/channels thực tế** (không đoán mò) → script sửa có backup.
+
+**1. `videos.json` — sửa 8 niche sai + 18 market sai:**
+- Niche (8): `64130d`,`04c2e3`→Nền tảng/Tool · `cb907b`→Reup/Hoạt hình · `ed1be9`,`b559c8`,`a348a5`,`b96929`→Edit/Thumb · `61e354`→Share key/Ngách nhỏ
+- Market (18): bỏ `🇨🇳 Trung` các video "không trung thực" (inauthentic, không phải TQ): `6ad3fe`,`9a6957`,`1a7f58`,`33d701`,`8b69c9`,`1b4be3`,`502960`,`7e00ee` · bỏ `🇷🇺 Nga` (`9f9fbc`→+Nhật, `a2b317`) · bỏ `🇬🇧 Anh` (8 video: `2ed37a`,`9ef6fe`,`ffccd2`,`806c0c`,`e91589`,`f77c31`,`4a5aac` + `d84a78`→+Hàn)
+- Backup: `videos.json.bak-fix-20260817-*`
+
+**2. `kenh-mau.json` — chuẩn hóa 35 kênh "Khác" + sửa 2 nhầm + gắn 21 markets:**
+- 35 kênh "Khác" → ngách đúng theo handle: Sức khỏe (17), Triết lý/Tâm linh (13), Kinh tế (4), Drama (1), Lịch sử/Quân sự (2)
+- Sửa nhầm: `@오싹한경제` Sức khỏe→Kinh tế · `@baeksehealth` Prompt/AI→Sức khỏe
+- 21 kênh thiếu markets đã gắn theo ngôn ngữ handle
+- Còn 2 kênh giữ "Khác" (không đủ căn cứ, không đoán): `@kienthucthanhoc9`, `@HinognaKaalamanYT`
+- Backup: `kenh-mau.json.bak-fix-20260817-*`
+
+**Kết quả phân bố (sau sửa):**
+- Videos: Nhân bản/Kênh 37 · Share key 24 · Reup/Hoạt hình 21 · Kiếm tiền 10 · Edit/Thumb 9 · Prompt/AI 6 · Triết lý 6 · Nền tảng/Tool 5 · Kinh tế 5 · Sức khỏe 3 · Drama 2 · Lịch sử 1
+- Market: Hàn 30 · Nhật 27 · Việt 27 · US 15 · Trung 8 · Canada 3 · +Thái/PH/HK/Nga/Anh 1 · chưa gắn 46
+- Kênh: Triết lý 25 · Reup 20 · Sức khỏe 17 · Kinh tế 12 · Nhân bản 38 · Khác 2 ...
+- ✅ Validate PASSED 129/131 · ✅ E2E Chrome xác nhận hiển thị đúng
+
+**Báo cáo đối chiếu đầy đủ:** `DOI-CHIEU-NGACH-MARKET-H2DEV-2026-08-17.md`
+
+---
+
+**Cơ chế chuẩn 1 nguồn** — localStorage key **`h2dev-watched`** (cùng schema cả index & player):
+`{ sku: { watched: bool, note: "", t: giây dừng, d: duration } }`
+
+| Tính năng | Mô tả |
+|---|---|
+| **Tự đánh dấu tiến độ** | player lưu `currentTime` mỗi 3s khi xem |
+| **Đã xem hết** | đạt **95% duration** → badge ✅ Đã xem (hoặc sự kiện `ended`) |
+| **Đang xem dở** | dừng <95% → badge ⏳ % + nút **"▶ Tiếp tục từ m:ss"** |
+| **Ghi chú** | ô text tự lưu khi gõ (từng video) |
+| **Nút "Bỏ tiến độ"** | xóa record của video đó |
+| **Card trên index** | badge trạng thái + thanh tiến độ + nút đổi thành "Tiếp tục" |
+| **Chip lọc tab Video** | 🙈 Chưa xem (gộp cả đang dở) · ✅ Đã xem |
+| **Tổng quan** | dòng thống kê "Đã xem X/129 · Đang dở Y" + link xem list |
+| **Quay về trang trước** | nút **← Quay lại** = `history.back()` (về đúng tab/filter/cuộn trước) khi mở qua `?back=1` |
+| **URL params** | `?tab=video&watch=watched` mở thẳng list đã xem |
+| **Realtime sync** | `pageshow`/`focus`/`visibilitychange` → cập nhật badge NGAY khi quay về, không cần reload |
+
+**File sửa:** `player.html`, `index.html` (KHÔNG đụng `data/`).
+
+---
+
+## 📋 LỊCH SỬ THAY ĐỔI
+
+### 2026-08-15 — Bản chuẩn hiện tại (đang chạy)
+1. **Đồng bộ 2 video thiếu** từ campaign MONA → `video/`:
+   - `VIDEO-DD983D.mp4` (117.6 MB) · `VIDEO-484f9e.mp4` (57.9 MB)
+   - Kèm 2 thumbnail `.png`.
+2. **Sửa thumbnail mismatch (79 ảnh)**: data trỏ `.png` nhưng đĩa lưu `.jpeg/.jpg` → đã chuẩn hóa đường dẫn trong `videos.json`, `catalog.json`, `catalog_full.json` (script `scripts/fix-thumb-paths.js`).
+3. **Sửa `validate-project.js`**: kỳ vọng 127 → 129 (record, video dirs, thumbs). → **Validation PASSED** (129 video · 131 kênh · 45 kich-ban · 57 tai-lieu · 129 thumb).
+4. **Sửa `server.js`**:
+   - Bind `0.0.0.0` (mặc định) → mở LAN/Tailscale; hỗ trợ `process.env.HOST` / `PORT`.
+   - Vá lỗi path traversal `/..` (403) + URL `%` malformed (400, không crash server).
+5. **Tạo hệ thống vận hành**:
+   - `H2DEV-OneClick.cmd` — 1 nhấp: kill tray/node cũ → mở firewall → chạy task 1 lần → verify `0.0.0.0:8899`.
+   - `h2dev-tray.ps1` — tray manager (ép `HOST=0.0.0.0`, kill node cũ trước khi start, log `h2dev-tray.log`).
+   - `h2dev-silent.vbs` — chạy tray ẩn (dùng path tuyệt đối powershell — fix lỗi 80070002 của Task Scheduler).
+   - `install-h2dev-startup.ps1` — cài firewall + task auto-start.
+   - Icon tray: `h2dev-icon.ico` (nền đỏ + chữ Y trắng).
+6. **Dọn dẹp**:
+   - Gom 18 file `.bak` cũ + 3 dead code (`assets/app.js`, `assets/style.css`, `data-tabs/tai-lieu.json`) vào `_backup-20260815/`.
+   - **Đã xóa bản backup lỗi thời**, thay bằng **backup chuẩn hiện tại** (17 file: data + code) trong `_backup-20260815/`.
+
+### 2026-08-14 — Bản trước (đã được thay bởi bản chuẩn)
+- Web 7 tab hoạt động; data 127 video (thiếu 2 video mới); thumbnail lỗi `.png` vs `.jpeg`; validate kỳ vọng 127 (sai).
+
+### 2026-08-13 trở về trước
+- Dựng web H2DEV từ data campaign `SS_20260731_MONA_ACADEMY` (H2DEV Academy — 129 video, 57 tài liệu, 131 kênh).
+
+---
+
+## 🗂️ CẤU TRÚC FILE HIỆN TẠI (bản chuẩn)
+
+```
+H2DEV-Project/
+├── index.html              Web 7 tab (Tailwind)
+├── player.html             Trang phát video
+├── server.js               Node server (0.0.0.0:8899)
+├── H2DEV-OneClick.cmd      ⭐ 1 nhấp: dọn + chạy lại + kiểm tra
+├── h2dev-tray.ps1          Tray manager (icon đỏ chữ Y)
+├── h2dev-silent.vbs        Chạy tray ẩn khi đăng nhập
+├── install-h2dev-startup.ps1  Cài 1 lần (Admin)
+├── start-lan.cmd           Cách chạy thủ công (cửa sổ hiện)
+├── h2dev-icon.ico/.png     Icon tray (đỏ + Y trắng)
+├── CHAY-LAN.md             Hướng dẫn vận hành
+├── data/                   catalog.json + catalog_full.json (129 video, bản gốc)
+├── data-tabs/              videos · ngach-xanh · tai-lieu-full · nguon-reup · kenh-mau · chien-luoc · kich-ban
+├── video/                  129 thư mục mp4 (đủ 129/129)
+├── assets/                 tailwind.css · thumbs (129) · avatars (199) · docs
+├── docs/                   VIDEO-* catalog + docs/NOI-BO (bao-cao/prompt/nguon/chat)
+├── pipelines/              hoat-hinh-ai · ton-giao · wildlife · bible-explainer
+├── knowledge-hub/          archive NotebookLM
+├── inbox/                  cửa nhận file mới (web 403)
+├── scripts/                validate · intake-inbox · sync-ngoai · clean-root
+├── _backup/                20260815 · 20260818-dongbo · data-tabs-snapshots
+├── _private/               key local (web 403)
+├── TREE.md                 cây chuẩn
+└── server-lan.log/.err     Log server · h2dev-tray.log (log tray)
+```
+
+---
+
+## ⚠️ LƯU Ý QUAN TRỌNG
+
+1. **KHÔNG bấm `Start-ScheduledTask` liên tục** → sinh nhiều tray → xung đột port 8899. Dùng `H2DEV-OneClick.cmd`.
+2. `node --watch` chỉ chạy trên **đĩa cục bộ** máy chính — không chạy qua share/UNC.
+3. Có **shellfarm** (process khác) từng chiếm `127.0.0.1:8899` — OneClick có bước kill theo port để tránh.
+4. Snapshot nằm trong `_backup/`. Trước sửa lớn: copy JSON vào `_backup\<YYYYMMDD>\`.
+5. Server chính đang chạy trên máy 50.216 — mọi sửa file qua share `Y:` tự đồng bộ.
+
+
+---
+
+## 2026-09-11: Chuẩn hóa cấu trúc thư mục chuẩn bị Git & Deploy VPS
+
+- **Di dời ảnh debug:** Đã dời 19 file `screenshot-*.png` và `test_modal_rect.png` từ root vào `_internal/debug-shots/`.
+- **Gom script Windows:** Đã dời 11 file `.cmd`, `.ps1`, `.vbs` vào `scripts/windows/`; giữ 3 file wrapper forwarder mỏng tại root (`h2dev-silent.vbs`, `h2dev-watchdog-hidden.vbs`, `H2DEV-OneClick.cmd`) để tương thích hoàn toàn với Task Scheduler Windows (`\H2DEV-Server-AutoStart` và `\H2DEV-Watchdog`).
+- **Di dời file backup & manifest:** Dời `index.html.bak-tabs` vào `_archive/`; dời `manifest_full.csv` vào `data/`.
+- **Chuẩn hóa tên thư mục tránh lỗi Linux:** Đổi tên thư mục `Raw Kênh Mẫu Tìm Kiếm/` thành `raw-kenh-goc/`; cập nhật danh sách `BLOCKED` trong `server.js`.

@@ -1,0 +1,218 @@
+{
+  "contract_family": "h2dev-registry",
+  "contract_profile": "h2dev-contract-v1",
+  "version": "1",
+  "generated_by": "scripts/registry/schema-contracts.js",
+  "runtime_validator": "scripts/registry/schema-validate.js",
+  "supported_keywords": [
+    "type",
+    "required",
+    "properties",
+    "additionalProperties",
+    "items",
+    "enum",
+    "const",
+    "pattern",
+    "format",
+    "minLength",
+    "minItems",
+    "minimum",
+    "oneOf",
+    "uniqueItems"
+  ],
+  "semantic_rules": [
+    "A1-ID-PREFIX-ENTITY-MATCH",
+    "A1-REVISION-SUPERSEDES",
+    "A1-REFERENCE-RESOLUTION",
+    "A1-IDENTITY-COLLISION",
+    "A1-PROVENANCE-SEPARATION",
+    "A1-RIGHTS-RETENTION-SEPARATION",
+    "A1-STATUS-AXES-INDEPENDENT",
+    "A1-TRUST-PROMOTION-BLOCK"
+  ],
+  "entities": [
+    {
+      "entity_type": "source_asset",
+      "schema": "h2dev.source_asset.v1",
+      "file": "source_asset.v1.json",
+      "id_prefix": "SRC-",
+      "identity_fields": [
+        "content_hash.value"
+      ]
+    },
+    {
+      "entity_type": "source_observation",
+      "schema": "h2dev.source_observation.v1",
+      "file": "source_observation.v1.json",
+      "id_prefix": "OBS-",
+      "identity_fields": [
+        "source_ref",
+        "observed_at",
+        "observation_key"
+      ]
+    },
+    {
+      "entity_type": "learning_sku",
+      "schema": "h2dev.learning_sku.v1",
+      "file": "learning_sku.v1.json",
+      "id_prefix": "LSKU-",
+      "identity_fields": [
+        "legacy_sku"
+      ]
+    },
+    {
+      "entity_type": "competitor_channel",
+      "schema": "h2dev.competitor_channel.v1",
+      "file": "competitor_channel.v1.json",
+      "id_prefix": "CH-",
+      "identity_fields": [
+        "platform",
+        "channel_id"
+      ]
+    },
+    {
+      "entity_type": "owned_channel",
+      "schema": "h2dev.owned_channel.v1",
+      "file": "owned_channel.v1.json",
+      "id_prefix": "OWN-CH-",
+      "identity_fields": [
+        "platform",
+        "channel_id"
+      ]
+    },
+    {
+      "entity_type": "competitor_video",
+      "schema": "h2dev.competitor_video.v1",
+      "file": "competitor_video.v1.json",
+      "id_prefix": "CV-",
+      "identity_fields": [
+        "platform",
+        "video_id"
+      ]
+    },
+    {
+      "entity_type": "niche",
+      "schema": "h2dev.niche.v1",
+      "file": "niche.v1.json",
+      "id_prefix": "NICHE-",
+      "identity_fields": [
+        "market",
+        "label",
+        "format"
+      ]
+    },
+    {
+      "entity_type": "claim",
+      "schema": "h2dev.claim.v1",
+      "file": "claim.v1.json",
+      "id_prefix": "CLM-",
+      "identity_fields": [
+        "statement",
+        "scope.market",
+        "scope.as_of"
+      ]
+    },
+    {
+      "entity_type": "evidence",
+      "schema": "h2dev.evidence.v1",
+      "file": "evidence.v1.json",
+      "id_prefix": "EVD-",
+      "identity_fields": [
+        "source_ref",
+        "source_locator.value",
+        "checked_at"
+      ]
+    },
+    {
+      "entity_type": "niche_decision",
+      "schema": "h2dev.niche_decision.v1",
+      "file": "niche_decision.v1.json",
+      "id_prefix": "DEC-",
+      "identity_fields": [
+        "niche_ref",
+        "market",
+        "language",
+        "decided_at"
+      ]
+    },
+    {
+      "entity_type": "production_episode",
+      "schema": "h2dev.production_episode.v1",
+      "file": "production_episode.v1.json",
+      "id_prefix": "EP-",
+      "identity_fields": [
+        "series",
+        "brief",
+        "created_at"
+      ]
+    },
+    {
+      "entity_type": "artifact",
+      "schema": "h2dev.artifact.v1",
+      "file": "artifact.v1.json",
+      "id_prefix": "ART-",
+      "identity_fields": [
+        "parent_ref",
+        "artifact_type",
+        "content_hash.value"
+      ]
+    },
+    {
+      "entity_type": "job_run",
+      "schema": "h2dev.job_run.v1",
+      "file": "job_run.v1.json",
+      "id_prefix": "RUN-",
+      "identity_fields": [
+        "stage",
+        "created_at",
+        "provenance.activity_id"
+      ]
+    },
+    {
+      "entity_type": "metric_snapshot",
+      "schema": "h2dev.metric_snapshot.v1",
+      "file": "metric_snapshot.v1.json",
+      "id_prefix": "MET-",
+      "identity_fields": [
+        "entity_ref",
+        "measurement_system",
+        "metric",
+        "collected_at"
+      ]
+    },
+    {
+      "entity_type": "relationship",
+      "schema": "h2dev.relationship.v1",
+      "file": "relationship.v1.json",
+      "id_prefix": "REL-",
+      "identity_fields": [
+        "from",
+        "type",
+        "to",
+        "valid_from"
+      ]
+    },
+    {
+      "entity_type": "deletion_request",
+      "schema": "h2dev.deletion_request.v1",
+      "file": "deletion_request.v1.json",
+      "id_prefix": "DEL-",
+      "identity_fields": [
+        "request_scope.kind",
+        "received_at",
+        "owner"
+      ]
+    },
+    {
+      "entity_type": "policy_snapshot",
+      "schema": "h2dev.policy_snapshot.v1",
+      "file": "policy_snapshot.v1.json",
+      "id_prefix": "POL-",
+      "identity_fields": [
+        "policy_type",
+        "canonical_url",
+        "retrieved_at"
+      ]
+    }
+  ]
+}

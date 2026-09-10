@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark" data-density="compact">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="H2DEV Project — Lộ trình học YouTube faceless theo Module, không cần đăng nhập.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
+  <title>H2DEV — Lộ trình</title>
+  <link rel="stylesheet" href="assets/viddar.css">
+  <link rel="stylesheet" href="assets/learn.css">
+</head>
+<body>
+  <header class="learn-header">
+    <div class="learn-brand">
+      <div class="brand-mark">H2</div>
+      <div>
+        <h1>Lộ trình 11 module</h1>
+        <span id="learnCount">không cần đăng nhập</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="progress-pill">
+        <div id="progressRingWrap"></div>
+        <div class="progress-text" id="progressText"></div>
+      </div>
+      <a href="index.html" class="back-home">← Trang chủ</a>
+    </div>
+  </header>
+
+  <div class="resume-banner hidden" id="resumeBanner"></div>
+
+  <nav class="tabbar" id="tabbar" aria-label="Chế độ xem lộ trình">
+    <button class="tab-btn active" data-tab="danhmuc" type="button">Danh mục bài học</button>
+    <button class="tab-btn" data-tab="moi" type="button">Mới cập nhật</button>
+    <button class="tab-btn" data-tab="yeuthich" type="button">Yêu thích</button>
+    <button class="tab-btn" data-tab="timkiem" type="button">Tìm kiếm bài học</button>
+  </nav>
+
+  <main class="learn-content" id="panelRoot" aria-live="polite"></main>
+
+  <footer class="learn-footer">
+    H2DEV · Lộ trình học · Không cần đăng nhập
+  </footer>
+
+  <script>
+    if (new URLSearchParams(location.search).get('embed') === '1') document.documentElement.classList.add('is-embed');
+  </script>
+  <script src="assets/h2dev-core.js"></script>
+  <script src="assets/learn.js"></script>
+</body>
+</html>

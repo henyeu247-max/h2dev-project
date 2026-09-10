@@ -1,0 +1,55 @@
+{
+  "id": "RAW-067",
+  "channelId": "UCkXMKKYZlI209sxUxjxqxZA",
+  "title": "Green Dude",
+  "handle": "@greendudeexplains",
+  "url": "https://www.youtube.com/channel/UCkXMKKYZlI209sxUxjxqxZA",
+  "subscribers": 4790,
+  "views": 892540,
+  "videoCount": 65,
+  "country": null,
+  "avatar": "https://yt3.ggpht.com/QFZhqHvolEvOi9OucjySb_3mU2tU0SCit2RjuKqKqho2aFmFort1Ru6nbCysWa43NX7f2huUfjY=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Knowledge"
+  ],
+  "editorialNiche": "Khoa học vũ trụ / tự nhiên / tiền sử",
+  "publishedAt": "2024-08-01T16:22:21.57Z",
+  "longevityAudit": {
+    "channelAgeDays": 768,
+    "activeSpanDays": 132,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 40,
+      "viewsGained": 6374,
+      "videosPublished": 1
+    }
+  },
+  "channelTags": [
+    "prison escape",
+    "natural disaster",
+    "explainer"
+  ],
+  "extractedAt": "2026-09-09T03:30:25Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 603163,
+    "maxOutlierScore": 555.88,
+    "maxVPH": 140.49,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-07-19",
+    "daysSinceLatest": 52,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 Ra video chậm",
+    "healthDetail": "Khoảng cách đăng video gần nhất là 52 ngày. Nhịp ra video không đều.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 6,374 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$8 – $15 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "niche": "Everyday History",
+  "formula": "High Curiosity Gap + Dramatic Chiaroscuro Face Reflection",
+  "concepts": [
+    {
+      "version": "US / Global",
+      "titleHookText": "WHY IT WAS BANNED",
+      "prompt": "Close up portrait of a 17th century Venetian noble woman looking into a cracked antique mirror, the mirror reflection is glowing with an eerie golden mystery, dark baroque oil painting style, hyper-dramatic lighting, high click through rate YouTube thumbnail aesthetic --ar 16:9"
+    },
+    {
+      "version": "Japan",
+      "titleHookText": "500年間隠された猛毒",
+      "prompt": "A mysterious hooded craftsman holding a shining golden Renaissance mirror in a dark Venice workshop, atmospheric mist, intense eyes, dramatic contrast, anime-cinematic realism style --ar 16:9"
+    },
+    {
+      "version": "Korea",
+      "titleHookText": "왕들만 보았던 비밀",
+      "prompt": "A majestic golden mirror emitting radiant light in a dark royal European chamber, intricate vintage gold frame, mysterious shadows, high contrast luxury aesthetic --ar 16:9"
+    }
+  ]
+}

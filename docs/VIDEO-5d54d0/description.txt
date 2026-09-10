@@ -1,0 +1,25 @@
+https://drive.google.com/drive/folders/14bf1nCiGzvU6aCSKjrs2lRxEDiJINdeT?usp=sharing skill prompt của ngách trong video
+
+các câu lênh em train trong video:
+
+đây là 2 kênh đối thủ và tôi đang định hướng sắp tới sẽ làm chủ đề này, trước tiên bạn hãy phân tích thật kỹ 3 kênh này, phân tích làm về chủ đề ngách gì... viết kịch bản như nào... độ trends ra sao... nếu cần tôi cấp kịch bản cao view nhất để bạn phân tích thêm thì hãy nói tôi sẽ cung cấp
+
+ 
+
+Dựa trên phân tích toàn bộ 2 kênh và cấu trúc kịch bản tôi gửi và bạn đã phân tích, bây giờ tôi muốn đi theo hướng làm bán content, có nghĩa là sẽ bám theo những kịch bản viral nhất của họ đã làm lên rồi và tôi sẽ tận dùng làm tiếp, bạn hãy viết PROMPT HOÀN CHỈNH master để tôi có thể dùng lấy 70% nội dung kịch bản từ video gốc đối thủ + 30% bạn sáng tạo thêm, đồng thời tự động chia kịch bản thành nhiều phần theo đúng chuẩn yêu cầu phân tích
+
+ 
+
+tôi cần bạn tối ưu lại chỉ 1 prompt master thôi và prompt đó tôi sẽ dùng thường xuyên và nhiều lần mỗi khi viết kịch bản cho video. lưu ý quan trọng: input sẽ là dán full kịch bản đối thủ bất kỳ kèm prompt master.. sau đó prompt sẽ phân tích.. và cho ra các dàn ý cụ thể chia từng phần, sau đó tiếp tục viết lại thành kịch bản hoàn chỉnh từng phần từ dàn ý trên và cuối cùng là lọc lại 1 lần nữa và cho ra file full kịch bản tất cả các phần hoàn thiện (không được có chú thích, ký tự đặc biệt dư thừa, lời nhắc...) full kịch bản phải trơn ru và chỉ việc đem đi tạo giọng đọc. Và lưu ý nhớ loại bỏ các yếu tố viết máy móc tránh bị ytb phát hiện là AI và phải viết như con người.
+
+ 
+
+ok tốt rồi, bây giờ tôi muốn bạn lưu prompt master vừa tạo ra này thành skill luôn, mỗi khi tôi tạo new chat mới chỉ cần dán full kịch bản đối thủ vào và gọi skill ra thì là chạy luôn. hãy đặt tên skill cho tôi là: Script_Akihiro Miwa_JP. lưu ý chỉ lưu đúng prompt master đó thành skill
+
+ 
+
+tiếp theo bạn hãy làm cho tôi prompt tạo tiêu đề từ những phân tích của các kênh đối thủ trên, với yêu cầu là phải bám theo đối thủ và làm ra lại tiêu đề mới mạnh hơn, tỉ lệ CTR cao hơn... input là tôi nhập tiêu đề gốc của đối thủ vào và output là ra 3 phiên bản mới đúng như yêu cầu của tôi. Lưu ý quan trọng phải giữ lại đúng 100% từ khóa ngách ví dụ như:  https://www.youtube.com/watch?v=l06eKkZCkxQ 【美輪明宏】 luôn luôn ở đầu của tiêu đề.
+
+ 
+
+link video nền xanh sóng nhạc: https://www.vecteezy.com/video/77042599-music-audio-waveform-visualizer-equalizer-effect-green-screen-4k

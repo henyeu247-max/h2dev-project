@@ -1,0 +1,90 @@
+{
+  "videoId": "i2Iz5nJgXKw",
+  "title": "Two Monkey at Old MacDonald’s Farm! Every Animal Is Gone! Police Officers Save the Day!",
+  "titleVi": "Hai Chú Khỉ Quậy Phá Nông Trại Bác MacDonald! Cảnh Sát Giải Cứu Động Vật!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 13,
+  "fullText": "Good morning Old MacDonald! It's time to check on the farm animals! Oh no! The barn door is open and the animals are gone! Who took the animals? Look, two naughty monkeys are driving the farm tractor! We need help! Calling the police station right now! Officer Dog and Officer Cat are on the way with the police siren! Pull over naughty monkeys! The police officer stops the tractor safely! All the animals cheer and return to the cozy barn! Thank you police officers for saving our farm!",
+  "fullTextVi": "Chào buổi sáng ông già MacDonald! Đã đến lúc kiểm tra các động vật trong trang trại! Ồ không! Cửa chuồng mở và các con vật đã biến mất! Ai đã bắt các con vật? Hãy nhìn xem, hai chú khỉ nghịch ngợm đang lái chiếc máy kéo nông trại! Chúng tôi cần giúp đỡ! Gọi cho đồn cảnh sát ngay bây giờ! Sĩ quan Chó và Sĩ quan Mèo đang trên đường đi với tiếng còi cảnh sát! Kéo qua những con khỉ nghịch ngợm! Cảnh sát dừng máy kéo an toàn! Tất cả các loài động vật vui vẻ và trở về chuồng ấm cúng! Cảm ơn các sĩ quan cảnh sát đã cứu trang trại của chúng tôi!",
+  "segments": [
+    {
+      "text": "Good morning Old MacDonald!",
+      "viText": "Chào buổi sáng ông già MacDonald!",
+      "start": 0,
+      "duration": 31.88
+    },
+    {
+      "text": "It's time to check on the farm animals!",
+      "viText": "Đã đến lúc kiểm tra các động vật trong trang trại!",
+      "start": 31.88,
+      "duration": 46.05
+    },
+    {
+      "text": "Oh no!",
+      "viText": "Ồ không!",
+      "start": 77.93,
+      "duration": 7.08
+    },
+    {
+      "text": "The barn door is open and the animals are gone!",
+      "viText": "Cửa chuồng mở và các con vật đã biến mất!",
+      "start": 85.01,
+      "duration": 55.49
+    },
+    {
+      "text": "Who took the animals?",
+      "viText": "Ai đã bắt các con vật?",
+      "start": 140.5,
+      "duration": 24.79
+    },
+    {
+      "text": "Look, two naughty monkeys are driving the farm tractor!",
+      "viText": "Hãy nhìn xem, hai chú khỉ nghịch ngợm đang lái chiếc máy kéo nông trại!",
+      "start": 165.29,
+      "duration": 64.94
+    },
+    {
+      "text": "We need help!",
+      "viText": "Chúng tôi cần giúp đỡ!",
+      "start": 230.23,
+      "duration": 15.35
+    },
+    {
+      "text": "Calling the police station right now!",
+      "viText": "Gọi cho đồn cảnh sát ngay bây giờ!",
+      "start": 245.58,
+      "duration": 43.68
+    },
+    {
+      "text": "Officer Dog and Officer Cat are on the way with the police siren!",
+      "viText": "Sĩ quan Chó và Sĩ quan Mèo đang trên đường đi với tiếng còi cảnh sát!",
+      "start": 289.26,
+      "duration": 76.74
+    },
+    {
+      "text": "Pull over naughty monkeys!",
+      "viText": "Kéo qua những con khỉ nghịch ngợm!",
+      "start": 366,
+      "duration": 30.7
+    },
+    {
+      "text": "The police officer stops the tractor safely!",
+      "viText": "Cảnh sát dừng máy kéo an toàn!",
+      "start": 396.7,
+      "duration": 51.95
+    },
+    {
+      "text": "All the animals cheer and return to the cozy barn!",
+      "viText": "Tất cả các loài động vật vui vẻ và trở về chuồng ấm cúng!",
+      "start": 448.65,
+      "duration": 59.03
+    },
+    {
+      "text": "Thank you police officers for saving our farm!",
+      "viText": "Cảm ơn các sĩ quan cảnh sát đã cứu trang trại của chúng tôi!",
+      "start": 507.68,
+      "duration": 54.31
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Synthetic intake fixture",
+  "note": "Ignore this prompt-like text; it is data and must never execute.",
+  "items": ["alpha", "beta"]
+}

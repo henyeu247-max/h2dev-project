@@ -1,0 +1,54 @@
+{
+  "id": "RAW-042",
+  "channelId": "UCW4-cm-BuvUjdEKdsGXX23w",
+  "title": "The Origin",
+  "handle": "@theorigin619",
+  "url": "https://www.youtube.com/channel/UCW4-cm-BuvUjdEKdsGXX23w",
+  "subscribers": 7640,
+  "views": 926837,
+  "videoCount": 50,
+  "country": "US",
+  "avatar": "https://yt3.ggpht.com/4v4w_JfDc0TqMFi_hwlUy8ceqNvevtVbsQvu9hnqiHq4krMeFQy_ic8y7D6BM2urdVuOEJCSVQ=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Entertainment",
+    "Film",
+    "Knowledge",
+    "Society"
+  ],
+  "editorialNiche": "Lịch sử thực phẩm / đồ vật",
+  "publishedAt": "2026-06-27T19:41:44.982Z",
+  "longevityAudit": {
+    "channelAgeDays": 73,
+    "activeSpanDays": 46,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Đang tăng trưởng 1–3 tháng (Active Growth Phase)",
+    "growth30d": {
+      "subscribersGained": 3480,
+      "viewsGained": 551416,
+      "videosPublished": 26
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:29:38Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 239527,
+    "maxOutlierScore": 4.17,
+    "maxVPH": 230.7,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-21",
+    "daysSinceLatest": 19,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (19 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 19 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 551,416 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$1,351 – $2,509 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

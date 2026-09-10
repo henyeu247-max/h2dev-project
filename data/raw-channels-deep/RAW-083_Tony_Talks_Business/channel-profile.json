@@ -1,0 +1,52 @@
+{
+  "id": "RAW-083",
+  "channelId": "UCxshRXQ6E15YnJcaY3v5u0w",
+  "title": "Tony Talks Business",
+  "handle": "@tony99.studios",
+  "url": "https://www.youtube.com/channel/UCxshRXQ6E15YnJcaY3v5u0w",
+  "subscribers": 10400,
+  "views": 955010,
+  "videoCount": 102,
+  "country": "PT",
+  "avatar": "https://yt3.ggpht.com/nhaK24CGtQaDjPJapUdFDpngJKZO6yIzQKdeBwFxXIZkUtee6JpivwuJ99nmKMqp2uxamvwG=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Society",
+    "Knowledge"
+  ],
+  "editorialNiche": "Kinh doanh / thương hiệu",
+  "publishedAt": "2026-06-17T12:15:24.657Z",
+  "longevityAudit": {
+    "channelAgeDays": 83,
+    "activeSpanDays": 72,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Đang tăng trưởng 1–3 tháng (Active Growth Phase)",
+    "growth30d": {
+      "subscribersGained": 1880,
+      "viewsGained": 318843,
+      "videosPublished": 15
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:31:05Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 32401,
+    "maxOutlierScore": 15.5,
+    "maxVPH": 5.35,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-30",
+    "daysSinceLatest": 10,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (10 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 10 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 318,843 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$402 – $746 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark" data-density="compact">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xem video — H2DEV Project</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
+<link rel="stylesheet" href="assets/tailwind.css">
+<link rel="stylesheet" href="assets/viddar.css">
+<link rel="stylesheet" href="assets/player.css">
+<meta name="description" content="H2DEV — xem video khóa học.">
+<meta name="theme-color" content="#050505">
+</head>
+<body class="app-body">
+<header class="app-top">
+  <div class="flex items-center gap-3">
+    <a href="javascript:void(0)" id="btnBack" class="btn-ghost">← Catalog</a>
+    <div class="brand-mark">H2</div>
+    <span class="text-sm font-semibold">H2DEV Studio</span>
+  </div>
+  <div class="flex items-center gap-2">
+      <button id="btnTheater" type="button" class="theater-toggle-badge inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 transition-all cursor-pointer" title="Bật/Tắt chế độ rạp chiếu (Phím tắt T)">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><rect x="5" y="7" width="14" height="10" rx="1" fill="currentColor" fill-opacity="0.3"/></svg>
+        <span id="theaterLabel">Chiếu rạp</span>
+        <span class="shortcut-key hidden sm:inline">T</span>
+      </button>
+    </div>
+</header>
+<section id="theaterSection" class="theater-wrapper">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8" id="theaterContainer">
+    <div id="theaterVideoBox" class="card overflow-hidden p-0 border-ink-600 theater-video-box">
+      <div class="aspect-video bg-black relative w-full h-full flex items-center justify-center">
+        <video id="pv" controls preload="metadata" playsinline aria-label="Trình phát video H2DEV Project" class="w-full h-full"></video>
+      </div>
+    </div>
+  </div>
+</section>
+<main class="player-main max-w-5xl mx-auto px-4 sm:px-6 pb-12 pt-2">
+  <div class="mb-4">
+    <h1 id="ptitle" class="text-xl sm:text-2xl font-bold text-white leading-snug font-heading tracking-tight">Đang tải…</h1>
+    <div id="pmeta" class="flex flex-wrap items-center gap-2 mt-2.5 text-xs text-gray-400"></div>
+    <div id="psources" class="flex flex-wrap gap-2 mt-3.5"></div>
+  </div>
+
+  <!-- Mobile & Compact View Segmented Tab Control -->
+  <div class="flex items-center gap-1 p-1 mb-4 bg-surface-2 border border-border rounded-xl" id="playerTabSelector" role="tablist">
+    <button type="button" role="tab" aria-selected="true" class="flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-all text-center flex items-center justify-center gap-1" onclick="setPlayerTab('overview', this)">
+      <span>📋</span><span>Bài học &amp; Tài liệu</span>
+    </button>
+    <button type="button" role="tab" aria-selected="false" class="flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1" onclick="setPlayerTab('insights', this)">
+      <span>🧠</span><span>Phân tích AI</span>
+    </button>
+    <button type="button" role="tab" aria-selected="false" class="flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1" onclick="setPlayerTab('transcript', this)">
+      <span>💬</span><span>Phụ đề</span>
+    </button>
+  </div>
+  <div class="player-layout grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+    <!-- LEFT COLUMN: Actions, channels, docs (7 cols) -->
+    <div class="lg:col-span-7 space-y-6" id="colOverview">
+      <section class="player-controls card p-4 bg-surface-card border-ink-600">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div class="flex items-center gap-2">
+            <button id="btnPrev" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 disabled:opacity-30 disabled:cursor-not-allowed">← Bài trước</button>
+            <span id="routeSeq" class="text-xs text-gray-400 font-mono"></span>
+            <button id="btnNext" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 disabled:opacity-30 disabled:cursor-not-allowed">Bài tiếp theo →</button>
+          </div>
+          <div id="pstate" class="flex items-center gap-2">
+            <button id="btnWatched" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-colors bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-300" aria-label="Đánh dấu trạng thái bài học">⬜ Chưa xem</button>
+            <button id="btnResume" type="button" class="btn-press hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-500 text-white" aria-label="Xem tiếp bài học">▶ Xem tiếp</button>
+          </div>
+        </div>
+
+        <div id="progressWrap" class="hidden flex items-center gap-3 pt-2 border-t border-ink-700/60">
+          <div class="flex-1 h-2 bg-ink-700 overflow-hidden" style="border-radius:2px">
+            <div id="progressBar" class="h-full bg-brand transition-all duration-300" style="width:0%;border-radius:2px"></div>
+          </div>
+          <span id="progressLabel" class="text-xs text-gray-400 font-mono font-semibold"></span>
+        </div>
+
+        <div class="flex flex-wrap gap-2 pt-2 items-center">
+          <input id="noteInput" type="text" placeholder="Ghi chú bài này… (tự động lưu)" class="input-dark rounded-xl px-3.5 py-2 text-xs flex-1 min-w-[180px]" aria-label="Ghi chú video">
+          <button id="btnClearProgress" type="button" class="btn-press bg-ink-700 hover:bg-ink-600 border border-ink-600 px-3 py-2 rounded-xl text-xs text-gray-300">↺ Bỏ tiến độ</button>
+        </div>
+      </section>
+
+      <!-- Competitor Channels Section -->
+      <div id="pchannels" class="hidden card p-4 bg-surface-card border-ink-600">
+        <h3 class="font-bold text-white mb-3 flex items-center gap-2 text-sm font-heading">Kênh đối thủ trong video</h3>
+        <p class="text-[11px] text-gray-400 mb-3">Mở kênh YouTube hoặc sao chép handle để tìm kiếm.</p>
+        <div id="pchannelslist" class="flex flex-wrap gap-2 min-w-0"></div>
+      </div>
+
+      <!-- Attached Documents & Prompts -->
+      <div id="pdocs" class="hidden card p-4 bg-surface-card border-ink-600">
+        <h3 class="font-bold text-white mb-3 flex items-center gap-2 text-sm font-heading">Kịch bản &amp; tài liệu đính kèm</h3>
+        <div id="pdocslist" class="grid sm:grid-cols-2 gap-3"></div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: AI Insights & Interactive Realtime Transcript (5 cols) -->
+    <div class="lg:col-span-5 space-y-6" id="colSide">
+      <div id="pinsights" class="hidden">
+        <section class="player-insights card p-4 sm:p-5 border-brand-500/30">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-ink-700 pb-3 mb-4">
+            <h3 class="font-bold text-white flex items-center gap-2 font-heading text-sm">
+              <span class="w-2 h-4 bg-brand-500"></span> Phân tích thực chiến
+            </h3>
+            <div id="insightBadges" class="flex flex-wrap gap-1.5"></div>
+          </div>
+          <p id="legacyInsightNotice" class="hidden mb-3 text-[11px] text-gray-400 bg-ink-900/50 border border-ink-700 rounded-lg px-3 py-2">Các ghi chú bên dưới là heuristic từ transcript cũ: chưa kiểm hình/âm thanh, claim và địa lý khán giả. Chỉ dùng làm manh mối để kiểm lại.</p>
+
+          <div id="geminiAnalysisStatus" class="mb-4 rounded-xl bg-ink-900/70 p-3 border border-violet-900/40">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs font-bold text-violet-300">🔎 Kiểm chứng video bằng Gemini</span>
+              <span id="geminiAnalysisStatusBadge" class="badge badge-muted">Chưa phân tích</span>
+            </div>
+            <p id="geminiAnalysisCoverage" class="mt-1.5 text-[11px] text-gray-400">Chưa có hồ sơ phân tích video trực tiếp.</p>
+            <p id="geminiAnalysisNotice" class="mt-1 text-[11px] text-amber-300/90"></p>
+          </div>
+          <div id="geminiTimelineWrap" class="bg-ink-900/70 rounded-xl p-3.5 border border-violet-900/30 hidden">
+            <h4 class="text-xs font-bold text-violet-300 uppercase tracking-wider mb-2.5 flex items-center gap-1.5 font-heading">
+              <span>🎯</span><span>Mốc quan sát Gemini</span>
+            </h4>
+            <div id="geminiTimeline" class="flex flex-wrap gap-1.5"></div>
+          </div>
+          
+          <div class="space-y-3.5">
+            <!-- Box 1: Mốc thời gian trọng tâm (Action-first: tua video nhanh) -->
+            <div id="insightTimelineWrap" class="bg-ink-900/70 rounded-xl p-3.5 border border-sky-900/30 hidden">
+              <h4 class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5 font-heading">
+                <span>⏱️</span><span>Mốc thời gian trọng tâm (Bấm tua)</span>
+              </h4>
+              <div id="insightTimeline" class="flex flex-wrap gap-1.5"></div>
+            </div>
+
+            <!-- Box 2: Mấu chốt bài giảng (Key Takeaways) -->
+            <div class="bg-ink-900/70 rounded-xl p-3.5 border border-ink-700/60">
+              <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2 flex items-center gap-1.5 font-heading">
+                <span>💡</span><span>Mấu chốt bài giảng</span>
+              </h4>
+              <ul id="insightTakeaways" class="space-y-1.5 text-xs text-gray-300 list-disc list-inside"></ul>
+            </div>
+
+            <!-- Box 3: Kỹ thuật Edit SOP & Cảnh báo an toàn -->
+            <div class="bg-ink-900/70 rounded-xl p-3.5 border border-ink-700/60">
+              <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2 flex items-center gap-1.5 font-heading">
+                <span>🛡️</span><span>Kỹ thuật edit &amp; SOP né quét AI</span>
+              </h4>
+              <div id="insightEditSop" class="space-y-1.5 text-xs text-gray-300"></div>
+              
+              <h4 class="text-xs font-bold text-rose-400 uppercase tracking-wider mt-3 mb-1.5 flex items-center gap-1.5 font-heading">
+                <span>⚠️</span><span>Cảnh báo &amp; lỗi cần tránh</span>
+              </h4>
+              <ul id="insightAvoidFlags" class="space-y-1 text-xs text-gray-300 list-disc list-inside"></ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Realtime Interactive Transcript Feed -->
+      <section id="ptranscript" class="hidden player-transcript card p-4 bg-surface-card border-ink-600">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-white flex items-center gap-2 text-sm font-heading">
+            <span class="w-1.5 h-4 bg-emerald-500"></span> Lời thoại phụ đề
+          </h3>
+          <div class="flex items-center gap-1.5">
+            <a id="btnDownloadSrt" href="#" download class="text-[11px] bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono">⬇ .SRT</a>
+            <a id="btnDownloadTxt" href="#" download class="text-[11px] bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono">⬇ .TXT</a>
+          </div>
+        </div>
+        <div class="transcript-feed card p-2.5 max-h-[420px] overflow-y-auto space-y-1 text-xs border-ink-700 bg-ink-900/60" id="transcriptList"></div>
+      </section>
+    </div>
+  </div>
+  <!-- Toast Container -->
+  <div id="toast-box"></div>
+  <!-- Floating Back Button (Nút quay lại nổi) -->
+  <button id="floatingBackBtn" type="button" class="floating-back-btn" title="Quay lại danh mục">
+    <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+    <span>Quay lại</span>
+  </button>
+</main>
+<script>
+const params=new URLSearchParams(location.search);
+const sku=params.get('sku');
+const CAT='data/catalog_full.json';
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function fmtBytes(n){if(!n)return'';if(n>1e9)return(n/1e9).toFixed(2)+' GB';if(n>1e6)return(n/1e6).toFixed(0)+' MB';return(n/1e3).toFixed(0)+' KB';}
+function docName(p){const n=(p||'').split('/').pop().split('?')[0];try{return decodeURIComponent(n);}catch(e){return n;}}
+function badge(label, cls){ return `<span class="badge ${cls}">${label}</span>`; }
+function cleanDocName(name, file){
+  let t=String(name||'').trim();
+  if(/^https?:\/\//i.test(t)){
+    const m=t.match(/\/d\/([a-zA-Z0-9_-]{6,})/);
+    return m ? ('Tài nguyên Drive · '+m[1].slice(0,8)) : 'Tài nguyên Drive';
+  }
+  t=t.replace(/\s*\((bấm vào đây|bấm vào tại đây|bấm vào đây để liên hệ)[^)]*\)/gi,'')
+    .replace(/\s*-\s*H2DEV\s*$/i,'')
+    .replace(/\s{2,}/g,' ')
+    .trim();
+  return t || docName(file) || 'Tài nguyên';
+}
+function hostLabel(link){
+  if(!link) return '';
+  if(/docs\.google\.com\/document/.test(link)) return 'Google Docs';
+  if(/docs\.google\.com\/spreadsheets/.test(link)) return 'Google Sheet';
+  if(/docs\.google\.com\/forms|forms\.gle/.test(link)) return 'Google Form';
+  if(/drive\.google/.test(link)) return 'Google Drive';
+  if(/labs\.google|dreamina/.test(link)) return 'AI gen';
+  try{ return new URL(link).hostname.replace(/^www\./,''); }catch(e){ return 'Link'; }
+}
+/* ---------- Shared progress + watched store (same key as index.html) ---------- */
+function loadStore(){ try{ return JSON.parse(localStorage.getItem('h2dev-watched')||'{}'); }catch(e){ return {}; } }
+function saveStore(m){
+  localStorage.setItem('h2dev-watched', JSON.stringify(m));
+  try{
+    const favs=JSON.parse(localStorage.getItem('h2dev-fav')||'[]');
+    const recent=JSON.parse(localStorage.getItem('h2dev-recent')||'null');
+    localStorage.setItem('h2dev-admin', JSON.stringify({role:'admin',version:1,updatedAt:Date.now(),watched:m,favorites:Array.isArray(favs)?favs:[],recent:recent}));
+  }catch(e){}
+}
+function fmtTime(sec){ const n=Math.max(0, Math.floor(Number(sec)||0)); const m=Math.floor(n/60), s=Math.floor(n%60); return m+':'+String(s).padStart(2,'0'); }
+
+/* Quay lại: về trang trước nếu có tham số back=1 (history.back), else index */
+function goBack(){ if(params.get('back')) history.back(); else location.href='index.html'; }
+const btnBack=document.getElementById('btnBack');
+if(btnBack) btnBack.onclick = goBack;
+const floatingBackBtn=document.getElementById('floatingBackBtn');
+if(floatingBackBtn) floatingBackBtn.onclick = goBack;
+
+// Tự động hiện nút nổi khi cuộn xuống dưới, ẩn khi ở đỉnh
+window.addEventListener('scroll', () => {
+  if (!floatingBackBtn) return;
+  if (window.scrollY > 120) {
+    floatingBackBtn.classList.add('is-visible');
+  } else {
+    floatingBackBtn.classList.remove('is-visible');
+  }
+}, { passive: true });
+
+// Cử chỉ vuốt từ mép trái sang phải để quay lại (Edge Swipe Back)
+let playerTouchStartX = 0, playerTouchStartY = 0;
+window.addEventListener('touchstart', (e) => {
+  if (!e.touches || !e.touches[0]) return;
+  playerTouchStartX = e.touches[0].screenX;
+  playerTouchStartY = e.touches[0].screenY;
+}, { passive: true });
+
+window.addEventListener('touchend', (e) => {
+  if (!e.changedTouches || !e.changedTouches[0]) return;
+  const dx = e.changedTouches[0].screenX - playerTouchStartX;
+  const dy = e.changedTouches[0].screenY - playerTouchStartY;
+  // Bắt đầu từ mép trái (trong khoảng 40px từ cạnh trái) và vuốt ngang sang phải > 80px
+  if (playerTouchStartX < 50 && dx > 80 && Math.abs(dy) < 50) {
+    goBack();
+  }
+}, { passive: true });
+
+/* ---------- THEATER MODE (Chế độ Chiếu rạp chuẩn YouTube - Phím T) ---------- */
+const btnTheater=document.getElementById('btnTheater');
+const theaterLabel=document.getElementById('theaterLabel');
+const THEATER_KEY='h2dev_theater_mode';
+
+function setTheaterMode(active, save=true){
+  document.body.classList.toggle('theater-active', active);
+  if(btnTheater){
+    btnTheater.classList.toggle('active', active);
+    if(theaterLabel){
+      theaterLabel.textContent = active ? 'Mặc định' : 'Chiếu rạp';
+    }
+  }
+  if(save){
+    try{ localStorage.setItem(THEATER_KEY, active ? '1' : '0'); }catch(e){}
+  }
+}
+function setPlayerTab(tab, btn) {
+  const colOverview = document.getElementById('colOverview');
+  const pInsights = document.getElementById('pinsights');
+  const pTranscript = document.getElementById('ptranscript');
+  const colSide = document.getElementById('colSide');
+  const buttons = document.querySelectorAll('#playerTabSelector button');
+  buttons.forEach(b => {
+    b.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1';
+    b.setAttribute('aria-selected', 'false');
+  });
+  if (btn) {
+    btn.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-all text-center flex items-center justify-center gap-1';
+    btn.setAttribute('aria-selected', 'true');
+  }
+  if (window.innerWidth < 1024) {
+    if (tab === 'overview') {
+      colOverview.style.display = 'block';
+      colSide.style.display = 'none';
+    } else if (tab === 'insights') {
+      colOverview.style.display = 'none';
+      colSide.style.display = 'block';
+      pInsights.style.display = 'block';
+      pTranscript.style.display = 'none';
+    } else if (tab === 'transcript') {
+      colOverview.style.display = 'none';
+      colSide.style.display = 'block';
+      pInsights.style.display = 'none';
+      pTranscript.style.display = 'block';
+    }
+  }
+}
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1024) {
+    const colOverview = document.getElementById('colOverview');
+    const colSide = document.getElementById('colSide');
+    const pInsights = document.getElementById('pinsights');
+    const pTranscript = document.getElementById('ptranscript');
+    if (colOverview) colOverview.style.display = '';
+    if (colSide) colSide.style.display = '';
+    if (pInsights) pInsights.style.display = '';
+    if (pTranscript) pTranscript.style.display = '';
+  }
+});
+
+// Khôi phục trạng thái đã lưu
+try{
+  if(localStorage.getItem(THEATER_KEY) === '1'){
+    setTheaterMode(true, false);
+  }
+}catch(e){}
+
+if(btnTheater){
+  btnTheater.onclick=()=>{
+    const isNow = document.body.classList.contains('theater-active');
+    setTheaterMode(!isNow);
+  };
+}
+
+// Lắng nghe phím tắt toàn cục (T: Rạp chiếu, F: Toàn màn hình, Space/K: Play/Pause, J/L: Tua -10s/+10s, M: Tắt tiếng)
+window.addEventListener('keydown', (e)=>{
+  const activeTag = (document.activeElement && document.activeElement.tagName) || '';
+  if(activeTag === 'INPUT' || activeTag === 'TEXTAREA' || activeTag === 'SELECT') return;
+  
+  const key = e.key.toLowerCase();
+  const pv = document.getElementById('pv');
+
+  if(key === 't'){
+    e.preventDefault();
+    const isNow = document.body.classList.contains('theater-active');
+    setTheaterMode(!isNow);
+  } else if(key === 'f'){
+    e.preventDefault();
+    if(pv){
+      if(!document.fullscreenElement){
+        (pv.requestFullscreen || pv.webkitRequestFullscreen || pv.mozRequestFullScreen || pv.msRequestFullscreen).call(pv);
+      } else {
+        (document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen || document.msExitFullscreen).call(document);
+      }
+    }
+  } else if(key === 'k' || (e.code === 'Space' && activeTag !== 'BUTTON')){
+    e.preventDefault();
+    if(pv){
+      if(pv.paused) pv.play(); else pv.pause();
+    }
+  } else if(key === 'j'){
+    e.preventDefault();
+    if(pv && Number.isFinite(pv.currentTime)) pv.currentTime = Math.max(0, pv.currentTime - 10);
+  } else if(key === 'l'){
+    e.preventDefault();
+    if(pv && Number.isFinite(pv.currentTime)) pv.currentTime = Math.min(pv.duration || 999999, pv.currentTime + 10);
+  } else if(key === 'm'){
+    e.preventDefault();
+    if(pv) {
+      pv.muted = !pv.muted;
+      if (typeof showToast === 'function') showToast(pv.muted ? 'Đã tắt tiếng' : 'Đã bật tiếng', 1500);
+    }
+  } else if(e.code === 'ArrowLeft'){
+    e.preventDefault();
+    if(pv && Number.isFinite(pv.currentTime)) pv.currentTime = Math.max(0, pv.currentTime - 5);
+  } else if(e.code === 'ArrowRight'){
+    e.preventDefault();
+    if(pv && Number.isFinite(pv.currentTime)) pv.currentTime = Math.min(pv.duration || 999999, pv.currentTime + 5);
+  }
+});
+(async()=>{
+  let transcriptSegments = [];
+  let activeSegIndex = -1;
+  let userIsScrolling = false;
+  let scrollTimeout = null;
+  try{
+    if(!sku){ throw new Error('Thiếu mã video trong URL'); }
+    const [catalogResponse, modulesResponse]=await Promise.all([fetch(CAT), fetch('data/modules.json', {cache:'no-store'})]);
+    if(!catalogResponse.ok) throw new Error(`Không tải được catalog (${catalogResponse.status})`);
+    if(!modulesResponse.ok) throw new Error(`Không tải được lộ trình (${modulesResponse.status})`);
+    const CAT2=await catalogResponse.json();
+    const modulesData=await modulesResponse.json();
+    const catalogBySku=new Map(CAT2.map(item=>[item.sku,item]));
+    const route=modulesData.modules.flatMap(module=>module.items.map(item=>({item:catalogBySku.get(item.sku)||item,module})));
+    const routePos=route.findIndex(x=>x.item.sku===sku);
+    const v=catalogBySku.get(sku)|| (routePos>=0?route[routePos].item:null);
+    if(!v){ throw new Error('Không tìm thấy khóa học'); }
+    const prevItem = routePos > 0 ? route[routePos - 1].item : null;
+    const nextItem = routePos >= 0 && routePos < route.length - 1 ? route[routePos + 1].item : null;
+    const btnPrev=document.getElementById('btnPrev');
+    const btnNext=document.getElementById('btnNext');
+    const routeSeq=document.getElementById('routeSeq');
+    if(routeSeq){
+      routeSeq.textContent = 'Lộ trình · Bài ' + String(routePos + 1).padStart(2,'0') + '/' + route.length;
+    }
+    if(btnPrev){
+      btnPrev.disabled = !prevItem;
+      btnPrev.onclick = () => { if(prevItem) location.href='player.html?sku='+encodeURIComponent(prevItem.sku)+(params.get('back')?'&back=1':''); };
+    }
+    if(btnNext){
+      btnNext.disabled = !nextItem;
+      btnNext.onclick = () => { if(nextItem) location.href='player.html?sku='+encodeURIComponent(nextItem.sku)+(params.get('back')?'&back=1':''); };
+    }
+    document.title=v.title+' — H2DEV Project';
+    document.getElementById('ptitle').textContent=v.title;
+    const metaEl=document.getElementById('pmeta');
+    metaEl.innerHTML = [
+      badge(esc(sku), 'badge-muted font-mono'),
+      badge(fmtBytes(v.size), 'badge-muted'),
+      badge(v.drm?'DRM':'HLS', v.drm?'badge-amber':'badge-blue'),
+      badge(v.free?'FREE':'PRO', v.free?'badge-green':'badge-red'),
+    ].join('');
+    const pv=document.getElementById('pv');
+    const local='video/'+sku+'/'+sku+'.mp4';
+    let localBytes=0;
+    try{ const headRes=await fetch(local,{method:'HEAD',cache:'no-store'}); localBytes=headRes.ok?Number(headRes.headers.get('content-length')||0):0; }catch(e){}
+    const localAvailable=(Boolean(v.mp4 && /(^|\/)video\//.test(v.mp4)) || Boolean(v.local)) && localBytes>0;
+    const playbackSource=localAvailable?local:(v.video_link||'');
+    if(playbackSource){
+      pv.src=playbackSource;
+      pv.onerror=()=>{ metaEl.innerHTML += `<span class="badge badge-red">Không đọc được nguồn phát</span>`; };
+    } else {
+      metaEl.innerHTML += `<span class="badge badge-amber">Chưa tải được video (mp4 0 byte)</span>`;
+    }
+    const srcBox=document.getElementById('psources');
+    let h='';
+    if(v.origin) h+=`<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer"><span>🌐</span><span>Bài học gốc H2Dev</span></a>`;
+    if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4"><span>⬇</span><span>Tải MP4 Full HD</span></a>`;
+    srcBox.innerHTML=h;
+    if(v.channels&&v.channels.length){
+      document.getElementById('pchannels').classList.remove('hidden');
+      document.getElementById('pchannelslist').innerHTML=v.channels.map(c=>{
+        const handle=String(c).replace(/^@/,'');
+        return `<div class="inline-flex items-center gap-1.5 bg-surface-card border border-ink-600 p-1.5 rounded-xl text-xs">
+          <a href="https://www.youtube.com/@${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors">📺 @${esc(handle)} ↗</a>
+          <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-[11px] font-mono border border-ink-600" onclick="copyHandle('@${esc(handle)}')" title="Sao chép handle @${esc(handle)}">📋 Copy</button>
+        </div>`;
+      }).join('');
+    }
+    if(v.docs&&v.docs.length){
+      document.getElementById('pdocs').classList.remove('hidden');
+      document.getElementById('pdocslist').innerHTML=v.docs.map(d=>{
+        const name=cleanDocName(d.name||'', d.file||'');
+        const host=hostLabel(d.link);
+        const link=d.link?`<a href="${esc(d.link)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>↗</span><span>${esc(host||'Mở nguồn')}</span></a>`:'';
+        const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>📄</span><span>File local</span></a>`:'';
+        return `<article class="card p-3.5 min-w-0 overflow-hidden"><div class="text-[13px] font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host?`<div class="text-[11px] text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${link}${localFile}</div></article>`;
+      }).join('');
+    }
+
+    /* ---------- Phân Tích Thực Chiến & Ghi Chú AI (Insights) ---------- */
+    /* ---------- Grounded Gemini video-analysis status ---------- */
+    try {
+      const [manifestRes, publicRes] = await Promise.all([
+        fetch('data/video_analysis_manifest.json', {cache:'no-store'}),
+        fetch('data/video_analysis_public.json', {cache:'no-store'})
+      ]);
+      const manifest = manifestRes.ok ? await manifestRes.json() : null;
+      const publicData = publicRes.ok ? await publicRes.json() : null;
+      document.getElementById('pinsights').classList.remove('hidden');
+      const row = manifest && Array.isArray(manifest.videos) ? manifest.videos.find(x => x.sku === sku) : null;
+      const approved = publicData && publicData.videos && publicData.videos[sku];
+      const status = approved?.status || row?.analysis_status || 'not_started';
+      const statusLabels = {
+        not_started: ['Chưa phân tích', 'badge-muted'],
+        validated_pending_review: ['Đã nhận · chờ duyệt', 'badge-amber'],
+        approved: ['Đã duyệt quan sát', 'badge-green'],
+        blocked: ['Bị chặn', 'badge-red']
+      };
+      const label = statusLabels[status] || ['Chưa xác định', 'badge-muted'];
+      const statusEl = document.getElementById('geminiAnalysisStatusBadge');
+      statusEl.className = 'badge ' + label[1]; statusEl.textContent = label[0];
+      const coverage = Number(approved?.coverage_percent ?? row?.coverage_percent ?? 0);
+      const duration = Number(row?.duration_sec || v.duration_sec || 0);
+      const coverageEl = document.getElementById('geminiAnalysisCoverage');
+      coverageEl.textContent = `Độ phủ timeline: ${coverage.toFixed(2)}%` + (duration ? ` · thời lượng nguồn ${fmtTime(duration)}` : '') + ' · Quan sát Gemini không thay thế kiểm nguồn.';
+      const noticeEl = document.getElementById('geminiAnalysisNotice');
+      if (status === 'not_started') noticeEl.textContent = 'Chưa đưa video vào AI Studio. Đây là trạng thái trung thực, không phải PASS.';
+      else if (status === 'validated_pending_review') noticeEl.textContent = 'JSON hợp lệ nhưng chưa được người duyệt xác nhận để hiển thị.';
+      else if (status === 'approved') noticeEl.textContent = approved.claims_pending ? `Còn ${approved.claims_pending} claim cần kiểm chứng nguồn.` : 'Đã duyệt hiển thị; các claim vẫn phải có nguồn độc lập.';
+      else if (status === 'blocked') noticeEl.textContent = 'Cần xử lý lỗi file hoặc quyền truy cập trước khi phân tích.';
+      if (status === 'approved' && Array.isArray(approved.observations) && approved.observations.length) {
+        const wrap = document.getElementById('geminiTimelineWrap');
+        const tl = document.getElementById('geminiTimeline');
+        wrap.classList.remove('hidden');
+        tl.innerHTML = approved.observations.slice(0, 40).map(o => {
+          const start = Math.max(0, Number(o.start_sec) || 0);
+          const summary = o.visual || o.spoken || o.on_screen_text || 'Quan sát';
+          return `<button type="button" class="inline-flex items-center gap-1.5 bg-ink-800 hover:bg-ink-700 border border-violet-800/60 px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer" onclick="document.getElementById('pv').currentTime=${start};document.getElementById('pv').play();"><span class="font-mono text-violet-300 font-bold bg-ink-900 px-1.5 py-0.5 rounded text-[10px]">${esc(fmtTime(start))}</span><span class="text-gray-300 text-[11px] truncate max-w-[200px]">${esc(summary)}</span></button>`;
+        }).join('');
+      }
+    } catch(e) {
+      const noticeEl = document.getElementById('geminiAnalysisNotice');
+      if (noticeEl) noticeEl.textContent = 'Chưa tải được hồ sơ Gemini; không suy ra trạng thái đạt.';
+    }
+    try {
+      const insRes = await fetch('data/video_insights.json', {cache:'no-store'});
+      if (insRes.ok) {
+        const insAll = await insRes.json();
+        const ins = insAll[sku];
+        if (ins) {
+          document.getElementById('pinsights').classList.remove('hidden');
+          document.getElementById('legacyInsightNotice').classList.remove('hidden');
+          
+          // Badges
+          const badgesEl = document.getElementById('insightBadges');
+          const marketBadgeClass = ins.market_code === 'JP' ? 'badge-red' : (ins.market_code === 'KR' ? 'badge-blue' : (ins.market_code === 'VN' ? 'badge-green' : 'badge-amber'));
+          badgesEl.innerHTML = [
+            badge(esc(ins.target_market), marketBadgeClass),
+            badge(esc(ins.niche_primary), 'badge-muted'),
+            ...(ins.tools_mentioned || []).map(t => badge(esc(t), 'badge-blue font-mono text-[10px]'))
+          ].join(' ');
+
+          // Takeaways
+          const takeawaysEl = document.getElementById('insightTakeaways');
+          if (ins.key_takeaways && ins.key_takeaways.length) {
+            takeawaysEl.innerHTML = ins.key_takeaways.map(t => {
+              const colonIdx = t.indexOf(':');
+              if (colonIdx > 0 && colonIdx < 60) {
+                const head = t.slice(0, colonIdx).trim();
+                const body = t.slice(colonIdx + 1).trim();
+                return `<li class="py-1.5 list-none"><div class="font-bold text-amber-300 text-[12.5px] leading-snug tracking-tight mb-1 flex items-start gap-1"><span>📌</span><span>${esc(head)}:</span></div><div class="text-gray-300 text-xs leading-relaxed pl-5">${esc(body)}</div></li>`;
+              }
+              return `<li class="py-1 text-gray-300 leading-relaxed text-xs list-none">${esc(t)}</li>`;
+            }).join('');
+          } else {
+            takeawaysEl.innerHTML = `<li class="text-gray-400">Đang cập nhật ghi chú…</li>`;
+          }
+          // Edit SOP
+          const editEl = document.getElementById('insightEditSop');
+          let sopHtml = `<div class="p-2 rounded-xl bg-ink-800/80 border border-emerald-900/30 text-emerald-300 font-medium">✨ ${esc(ins.edit_sop?.primary || 'Quy trình chuẩn bị kịch bản & dựng video độc bản')}</div>`;
+          if (ins.edit_sop?.additional && ins.edit_sop.additional.length) {
+            sopHtml += `<ul class="list-disc list-inside space-y-1 mt-1.5 text-gray-300">${ins.edit_sop.additional.map(a => `<li>${esc(a)}</li>`).join('')}</ul>`;
+          }
+          editEl.innerHTML = sopHtml;
+
+          // Avoid Flags
+          const avoidEl = document.getElementById('insightAvoidFlags');
+          if (ins.avoid_flags && ins.avoid_flags.length) {
+            avoidEl.innerHTML = ins.avoid_flags.map(f => `<li class="text-rose-300/90 leading-relaxed">${esc(f)}</li>`).join('');
+          } else {
+            avoidEl.innerHTML = `<li class="text-gray-400">Không có cảnh báo nghiêm trọng.</li>`;
+          }
+
+          // Timeline Keynotes
+          if (ins.key_timestamps && ins.key_timestamps.length) {
+            document.getElementById('insightTimelineWrap').classList.remove('hidden');
+            const tlEl = document.getElementById('insightTimeline');
+            tlEl.innerHTML = ins.key_timestamps.map(k => {
+              return `<button type="button" class="inline-flex items-center gap-1.5 bg-ink-800 hover:bg-ink-700 border border-ink-600 px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer" onclick="document.getElementById('pv').currentTime=${k.seconds};document.getElementById('pv').play();">
+                <span class="font-mono text-sky-400 font-bold bg-ink-900 px-1.5 py-0.5 rounded text-[10px]">${esc(k.time)}</span>
+                <span class="text-gray-300 text-[11px] truncate max-w-[200px]">${esc(k.label)}</span>
+              </button>`;
+            }).join('');
+          }
+        } else {
+          document.getElementById('pinsights').classList.remove('hidden');
+          document.getElementById('insightTakeaways').innerHTML = '<li class="text-gray-400">Video này chưa có dữ liệu phân tích thực chiến AI.</li>';
+          document.getElementById('insightAvoidFlags').innerHTML = '<li class="text-gray-400">Chưa có ghi chú cảnh báo.</li>';
+        }
+      } else {
+        document.getElementById('pinsights').classList.remove('hidden');
+        document.getElementById('insightTakeaways').innerHTML = '<li class="text-gray-400">Video này chưa có dữ liệu phân tích thực chiến AI.</li>';
+        document.getElementById('insightAvoidFlags').innerHTML = '<li class="text-gray-400">Chưa có ghi chú cảnh báo.</li>';
+      }
+    } catch(e) {}
+    /* ---------- Interactive AI Transcript (SRT / JSON) ---------- */
+    try {
+      const srtPath = 'video/' + encodeURIComponent(sku) + '/transcript.srt';
+      const txtPath = 'video/' + encodeURIComponent(sku) + '/transcript.txt';
+      const jsonPath = 'video/' + encodeURIComponent(sku) + '/transcript.json';
+      document.getElementById('btnDownloadSrt').href = srtPath;
+      document.getElementById('btnDownloadTxt').href = txtPath;
+
+      const trRes = await fetch(jsonPath);
+      // reuse hoisted variables
+      if (trRes.ok) {
+        const trData = await trRes.json();
+        const tList = document.getElementById('transcriptList');
+        if (trData && trData.segments && trData.segments.length) {
+          transcriptSegments = trData.segments;
+          document.getElementById('ptranscript').classList.remove('hidden');
+          tList.innerHTML = transcriptSegments.map((s, idx) => {
+            const start = Math.floor(s.start || 0);
+            const timeStr = fmtTime(start);
+            return `<div class="transcript-line" id="tr-seg-${idx}" onclick="document.getElementById('pv').currentTime=${start};document.getElementById('pv').play();" title="Bấm để phát từ ${timeStr}">
+              <span class="transcript-time">${timeStr}</span>
+              <span class="transcript-text">${esc(s.text)}</span>
+            </div>`;
+          }).join('');
+
+          tList.addEventListener('scroll', () => {
+            userIsScrolling = true;
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => { userIsScrolling = false; }, 3000);
+          });
+        } else {
+          document.getElementById('ptranscript').classList.remove('hidden');
+          document.getElementById('transcriptList').innerHTML = '<div class="p-4 text-center text-gray-400 text-xs">Video này chưa có phụ đề lời thoại bóc tách sẵn.</div>';
+        }
+      } else {
+        document.getElementById('ptranscript').classList.remove('hidden');
+        document.getElementById('transcriptList').innerHTML = '<div class="p-4 text-center text-gray-400 text-xs">Video này chưa có phụ đề lời thoại bóc tách sẵn.</div>';
+      }
+    } catch(e) {
+      document.getElementById('ptranscript').classList.remove('hidden');
+      document.getElementById('transcriptList').innerHTML = '<div class="p-4 text-center text-gray-400 text-xs">Video này chưa có phụ đề lời thoại bóc tách sẵn.</div>';
+    }
+
+    /* ---------- Watched + progress + resume + note (shared store) ---------- */
+    try {
+      const adminResponse = await fetch('/api/admin-state', {cache:'no-store'});
+      if (adminResponse.ok) {
+        const adminState = await adminResponse.json();
+        localStorage.setItem('h2dev-watched', JSON.stringify(adminState.watched || {}));
+        localStorage.setItem('h2dev-fav', JSON.stringify(Array.isArray(adminState.favorites) ? adminState.favorites : []));
+        if (adminState.recent) localStorage.setItem('h2dev-recent', JSON.stringify(adminState.recent));
+        localStorage.setItem('h2dev-admin', JSON.stringify(adminState));
+      }
+    } catch(e) {}
+    const store=loadStore();
+    const rec=store[sku]||{watched:false,note:'',t:0,d:0};
+    const stateEl=document.getElementById('pstate');
+    const btnW=document.getElementById('btnWatched');
+    const btnR=document.getElementById('btnResume');
+    const pWrap=document.getElementById('progressWrap');
+    const pBar=document.getElementById('progressBar');
+    const pLabel=document.getElementById('progressLabel');
+    const noteInput=document.getElementById('noteInput');
+    const btnClearProgress=document.getElementById('btnClearProgress');
+    const P95=0.95;
+    function renderState(){
+      const rec2=store[sku]||{watched:false,note:'',t:0,d:0};
+      const d=Number(rec2.d)||0, t=Number(rec2.t)||0;
+      const ratio=(d>0&&t>0)?Math.min(1, t/d):0;
+      const done=Boolean(rec2.watched)||ratio>=P95;
+      const inprog=(!done && ratio>0.02);
+      if(done){ btnW.textContent='✅ Đã xem'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-green-700 text-white'; }
+      else if(inprog){ btnW.textContent='⏳ Đang dở '+Math.round(ratio*100)+'%'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-amber-700 text-white'; }
+      else { btnW.textContent='⬜ Chưa xem'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-300'; }
+      if(t>5 && !done){
+        btnR.textContent='▶ Xem tiếp từ '+fmtTime(t);
+        btnR.classList.remove('hidden');
+        btnR.classList.add('inline-flex');
+      } else {
+        btnR.classList.add('hidden');
+        btnR.classList.remove('inline-flex');
+      }
+      pWrap.classList.toggle('hidden', !done);
+      pBar.style.width=Math.min(100,Math.round(ratio*100))+'%';
+      pLabel.textContent=done?('100% · đã xem'):(ratio>0?Math.round(ratio*100)+'%':'');
+      noteInput.value=rec2.note||'';
+    }
+    stateEl.classList.remove('hidden');
+    renderState();
+    btnW.onclick=()=>{
+      const cur=store[sku]||{watched:false,note:noteInput.value,t:rec.t,d:rec.d};
+      cur.watched=!cur.watched;
+      if(cur.watched&&!cur.d&&Number.isFinite(pv.duration)&&pv.duration>0) cur.d=pv.duration;
+      store[sku]=Object.assign({},rec,cur,{watched:cur.watched,note:noteInput.value});
+      saveStore(store); renderState();
+    };
+    btnR.onclick=()=>{
+      const target=Number((store[sku]||{}).t)||0;
+      if(Number.isFinite(target)&&target>0){
+        pv.currentTime=Math.min(target, (Number.isFinite(pv.duration)&&pv.duration>0)?pv.duration:target);
+        pv.play();
+      }
+    };
+    btnClearProgress.onclick=()=>{
+      delete store[sku];
+      saveStore(store);
+      renderState();
+    };
+    noteInput.oninput=()=>{
+      const cur=store[sku]||{watched:false,note:'',t:rec.t,d:rec.d};
+      cur.note=noteInput.value;
+      store[sku]=cur;
+      saveStore(store);
+    };
+    /* Save recent watched (for learn.html resume banner) */
+    try{
+      const recentPayload={sku:sku,ts:Date.now(),nextSku:nextItem?nextItem.sku:null};
+      localStorage.setItem('h2dev-recent', JSON.stringify(recentPayload));
+      localStorage.setItem('recentWatched', JSON.stringify({item_id:sku,item_name:v.title,next_video_url:nextItem?nextItem.mp4:null}));
+    }catch(e){}
+
+    /* auto-save progress every 3s while playing + mark watched at 95% */
+    /* auto-save progress every 3s while playing + realtime transcript sync */
+    let lastSave=0;
+    pv.addEventListener('timeupdate',()=>{
+      const d=pv.duration, t=pv.currentTime;
+      if(!Number.isFinite(t)) return;
+
+      // Realtime transcript auto-highlight
+      const tList = document.getElementById('transcriptList');
+      if (tList && transcriptSegments && transcriptSegments.length) {
+        let curIndex = -1;
+        for (let i = 0; i < transcriptSegments.length; i++) {
+          const s = transcriptSegments[i];
+          const nextStart = (transcriptSegments[i + 1] ? transcriptSegments[i + 1].start : s.end) || (s.start + 10);
+          if (t >= (s.start - 0.3) && t < nextStart) {
+            curIndex = i;
+            break;
+          }
+        }
+        if (curIndex !== -1 && curIndex !== activeSegIndex) {
+          activeSegIndex = curIndex;
+          const lines = tList.querySelectorAll('.transcript-line');
+          lines.forEach((l, idx) => {
+            l.classList.toggle('is-active', idx === curIndex);
+          });
+          const activeEl = document.getElementById('tr-seg-' + curIndex);
+          if (activeEl && !userIsScrolling) {
+            const topPos = activeEl.offsetTop - tList.offsetTop - (tList.clientHeight / 2) + (activeEl.clientHeight / 2);
+            tList.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+          }
+        }
+      }
+
+      if(!Number.isFinite(d)||d<=0) return;
+      const now=Date.now();
+      if(now-lastSave<3000) return;
+      lastSave=now;
+      const cur=store[sku]||{watched:false,note:noteInput.value,t:0,d:0};
+      cur.t=Math.max(Number(cur.t)||0, t);
+      cur.d=d;
+      if(t/d>=P95) cur.watched=true;
+      store[sku]=cur;
+      saveStore(store);
+      renderState();
+    });
+    pv.addEventListener('ended',()=>{
+      const cur=store[sku]||{watched:false,note:noteInput.value,t:0,d:0};
+      cur.watched=true;
+      if(Number.isFinite(pv.duration)&&pv.duration>0){
+        cur.d=pv.duration;
+        cur.t=pv.duration;
+      }
+      store[sku]=cur; saveStore(store); renderState();
+    });
+    // Khởi tạo tab mặc định khi vào trang trên mobile
+    if (window.innerWidth < 1024) {
+      setPlayerTab('overview', document.querySelector('#playerTabSelector button'));
+    }
+  }catch(error){
+    document.getElementById('ptitle').textContent='Không thể tải video';
+    document.getElementById('pmeta').innerHTML=`<span class="badge badge-red">${esc(error.message)}</span>`;
+  }
+})();
+/* ---------- Toast & Clipboard Helpers ---------- */
+function showToast(msg, duration = 3000) {
+  const box = document.getElementById('toast-box') || document.body;
+  const el = document.createElement('div');
+  el.className = 'toast-msg';
+  el.innerHTML = `<span>${esc(msg)}</span>`;
+  box.appendChild(el);
+  setTimeout(() => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(12px) scale(0.95)';
+    el.style.transition = 'all 0.25s ease';
+    setTimeout(() => el.remove(), 250);
+  }, duration);
+}
+
+function copyHandle(handle) {
+  navigator.clipboard.writeText(handle).then(() => {
+    showToast(`Đã sao chép ${handle} — Dán vào YouTube để tìm kiếm`);
+  }).catch(() => {
+    showToast(`Handle: ${handle}`);
+  });
+}
+
+/* ---------- Global Keyboard Shortcuts ---------- */
+</script>
+</body>
+</html>

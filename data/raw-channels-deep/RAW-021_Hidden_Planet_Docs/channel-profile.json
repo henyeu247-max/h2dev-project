@@ -1,0 +1,53 @@
+{
+  "id": "RAW-021",
+  "channelId": "UCFi2OqSU0AZpTBT-zLldaIA",
+  "title": "Hidden Planet Docs",
+  "handle": "@HiddenPlanetDocs",
+  "url": "https://www.youtube.com/channel/UCFi2OqSU0AZpTBT-zLldaIA",
+  "subscribers": 89200,
+  "views": 4543379,
+  "videoCount": 18,
+  "country": "US",
+  "avatar": "https://yt3.ggpht.com/N_36T8876xVNvJaNv8aUxL-_iSoV4VyMTh1CgZm2QIejfvOs_lSctT6Cd5lDlSk9vl24vseGXA=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Knowledge",
+    "Tourism",
+    "Lifestyle (sociology)"
+  ],
+  "editorialNiche": "Địa lý / du lịch / đời sống nơi khác",
+  "publishedAt": "2026-02-22T18:52:25.918Z",
+  "longevityAudit": {
+    "channelAgeDays": 198,
+    "activeSpanDays": 41,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 7900,
+      "viewsGained": -6097849,
+      "videosPublished": -61
+    }
+  },
+  "channelTags": [],
+  "extractedAt": "2026-09-09T03:28:36Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 3226689,
+    "maxOutlierScore": 17.21,
+    "maxVPH": 3295.6,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-17",
+    "daysSinceLatest": 23,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (23 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 23 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với -6,097,849 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "N/A (kênh chững view)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

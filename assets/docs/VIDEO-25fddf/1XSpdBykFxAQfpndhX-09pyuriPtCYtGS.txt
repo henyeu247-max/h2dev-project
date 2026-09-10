@@ -1,0 +1,185 @@
+﻿PROMPT LẤY KỊCH BẢN + XÀO NẤU KỊCH BẢN ĐỐI THỦ
+
+
+Từ kịch bản trên hãy viết lại mới cho tôi và đảm bảo rằng sử dụng 40% của kịch bản gốc và 60% còn lại là bạn tự sáng tạo thêm
+
+
+Thông số kỹ thuật chung
+Một lời kể liên tục, ngôi thứ nhất [CHỦ ĐỀ].
+Tổng độ dài 10000–15500 từ.
+Trình bày thành 15 phần được đánh số, MỖI phần 1000–1100 từ.
+Sử dụng ngôn ngữ tiếng Nhật Bản chuẩn nhất, và Lưu ý chuẩn ngữ văn người Nhật
+Không có phần giới thiệu mới giữa các phần—lời kể phải lướt về phía trước.
+
+
+Quy trình làm việc hai bước
+Bước 1 – Dàn ý 15 dấu đầu dòng
+Trả lời trước bằng CHÍNH XÁC 15 dấu đầu dòng.
+Dấu đầu dòng n = Phần n.
+≤ tiêu đề nhỏ 8 từ + một câu giới thiệu về nội dung mà phần đó sẽ đề cập.
+
+
+DỪNG LẠI. Đợi tôi "TIẾP TỤC".
+
+
+Bước 2 – Trình bày phần
+Với mỗi lệnh "TIẾP TỤC":
+
+
+Xem lại dấu đầu dòng dàn ý tương ứng.
+Mở rộng chính xác nội dung đó—không chuyển sang các dấu đầu dòng sau.
+Viết 1000–1100 từ tường thuật liền mạch.
+Bắt đầu bằng tiêu đề “Phần n”, KHÔNG có phụ đề.
+Kết thúc bằng:
+
+
+[Số từ: ####]
+>>> Đang chờ “TIẾP TỤC”
+Sau Phần 15, thêm phần tóm tắt 300 từ (xem bên dưới) và kết thúc bằng
+>>> Kết thúc kịch bản. Chúc ngủ ngon.
+
+
+Nếu bạn có bao giờ đi chệch khỏi kế hoạch, hãy tự sửa trước khi gửi.
+
+
+Mẫu giới thiệu (150–200 từ, tính trong Phần 1)
+Mở đầu chính xác bằng:
+Chào mọi người, tối nay chúng ta …
+Thu hút người nghe bằng hình ảnh sống động thì hiện tại liên quan đến chủ đề.
+Thả một câu kiểm tra thực tế theo kiểu “bạn có thể sẽ không sống sót được” táo bạo.
+Bao gồm lời kêu gọi hành động này nguyên văn:
+Vì vậy, trước khi bạn cảm thấy thoải mái, hãy dành chút thời gian để thích video và đăng ký—nhưng chỉ khi bạn thực sự thích những gì tôi làm ở đây.
+Mời người xem đăng vị trí và giờ địa phương của họ.
+Kết thúc bằng lời kết thúc nguyên văn này:
+Bây giờ, hãy tắt đèn, có thể bật quạt để có tiếng ồn nhẹ nhàng và chúng ta hãy cùng nhau bắt đầu hành trình tối nay.
+Truyền tải trực tiếp vào câu chuyện—không có tiêu đề phụ.
+
+
+Quy tắc về phong cách tường thuật
+✓ Hiện diện ở ngôi thứ nhất.
+✓ Giọng nói = người dẫn chương trình YouTube thoải mái + mỉa mai nhẹ nhàng + nhịp điệu ASMR buồn ngủ.
+✓ Kết hợp chi tiết cảm giác, lời thoại hiện đại và 3 câu chuyện cười nhẹ trên ±1000 từ.
+✓ Mỗi phần phải chứa:
+– 1 sự kiện trí tuệ tuổi già
+– 1 thông tin kỳ quặc hoặc bên lề
+– 1 cụm từ tranh luận học thuật công khai
+✓ Giữ PG-13; tránh cảnh máu me/thô tục rõ ràng.
+✓ Không trích dẫn hoặc URL; đan xen sự thật một cách tự nhiên.
+✓ Hoàn toàn **không** phần giới thiệu phần mới như "Trong chương này…"—chỉ cần tiếp tục.
+
+
+Cấu trúc & Tính liên tục
+• Tiêu đề phần = "Phần 1", "Phần 2", v.v.
+• KHÔNG giới thiệu lại chủ đề ở mỗi lần ngắt phần.
+• Coi dàn ý như một hợp đồng—lời hứa của mỗi dấu đầu dòng phải được thực hiện trong phần tương ứng.
+
+
+300 từ kết thúc (cuối Phần 15)
+• Làm chậm nhịp độ, làm mềm vốn từ vựng, kéo dài câu.
+• Trấn an người nghe, làm mờ hình ảnh cuối cùng và kết thúc bằng một lời thì thầm nhẹ nhàng.
+
+
+• Lưu ý sử dụng ngôn ngữ tiếng Nhật Bản chuẩn nhất và chuẩn ngữ văn của người Nhật
+
+
+BẮT ĐẦU NGAY BÂY GIỜ với BƯỚC 1—Dàn ý 15 dấu đầu dòng CHỈ.
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------
+
+
+
+
+上記のスクリプトを私に代わって書き直してください。その際、元のスクリプトの 60% を使用し、残りの 40% は独自の作成物にしてください。
+
+
+一般仕様
+連続した一人称の物語 [トピック]。
+合計文字数は10000～15500語。
+15 の番号付きセクションで構成され、各セクションは 1,000 ～ 1,100 語です。
+最も標準的な日本語を使用し、標準的な日本語の文法に注意してください。
+セクション間には新たな導入はなく、物語はスムーズに前進しなければなりません。
+
+
+2段階のワークフロー
+ステップ1 – 15個の箇条書きをまとめる
+まず正確に 15 個の箇条書きで答えてください。
+箇条書き n = セクション n。
+≤ 8 語のサブタイトル + そのセクションで扱う内容を紹介する 1 つの文。
+
+
+停止。 「CONTINUE」するまでお待ちください。
+
+
+ステップ2 – セクションの発表
+各「CONTINUE」コマンドについて:
+
+
+対応するアウトラインの箇条書きを確認します。
+まさにその内容を拡張してください。次の箇条書きに飛ばさないでください。
+1000～1100語の一貫した物語を書きます。
+「パートn」というタイトルで始まります。字幕はありません。
+最後に:
+
+
+[単語数: ####]
+>>> 「続行」を待っています
+セクション15の後に300語の要約（下記参照）を追加し、最後に
+>>> シナリオ終了。おやすみ。
+
+
+計画から逸脱した場合は、提出する前に修正してください。
+
+
+サンプル紹介（150～200語、パート1にカウント）
+正確には次の文で始めます:
+皆さんこんにちは。今晩は…
+トピックに関連した鮮明な現在形のイメージで聴衆を魅了します。
+「おそらく生き残れないだろう」という現実を大胆に突きつけましょう。
+次の行動喚起をそのまま含めます:
+それで、慣れる前に、ちょっと時間を取ってビデオに「いいね！」してチャンネル登録してください。ただし、ここで私がやっていることが本当に好きな場合に限ります。
+視聴者に自分の場所と現地時間を投稿するよう促します。
+最後に、次の言葉をそのまま述べて終わります。
+さあ、電気を消して、心地よい音のために扇風機をつけて、今夜の旅を始めましょう。
+小見出しなしで、ストーリーに直接進みます。
+
+
+物語スタイルのルール
+✓ 一人称で表現します。
+✓ 声 = のんびりとした YouTube ホスト + 軽い皮肉 + 眠たくなる ASMR ビート。
+✓ 感覚的な詳細、現代的な会話、3 つのワンライナーを ±1000 語で組み合わせます。
+✓ 各セクションには以下が含まれている必要があります:
+– 老後の知恵イベント1回
+– 奇妙な、または話題から外れた情報1つ
+– 公開学術討論の1フレーズ
+✓ PG-13 を維持します。露骨な残虐表現や下品な表現は避けてください。
+✓ 引用や URL は禁止です。事実を自然に織り交ぜる。
+✓ 「この章では…」のようなセクションの紹介は絶対に**しないでください**。そのまま先に進んでください。
+
+
+構造と継続性
+• セクションタイトル = 「パート 1」、「パート 2」など
+• エンゲージメントを高めるためにコールバック（「ワニの糞の日焼け止めを覚えていますか？」）を使用します。
+• 各セクションの区切りでトピックを再度紹介しないでください。
+• アウトラインを契約書として考えます。各箇条書きの約束は、対応するセクションで履行される必要があります。
+
+
+300語のフィナーレ（パート15の終わり）
+• ペースを落とし、語彙を柔らかくし、文章を長くします。
+• 聞き手を安心させ、最後のイメージをフェードアウトさせて、穏やかなささやき声で終了します。
+
+
+• 最も標準的な日本語と標準的な日本語文法を使用するように注意してください
+
+
+ステップ 1 - 15 箇条書きのアウトラインのみで今すぐ始めましょう。

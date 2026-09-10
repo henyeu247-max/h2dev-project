@@ -1,0 +1,1415 @@
+{
+  "videoId": "ChDtVQpWMe8",
+  "title": "Quantum Mechanics Explained Like You're 5",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 234,
+  "fullText": "Struggling with math? Check out the Math Bundle. Five complete guides covering calculus, algebra, trigonometry, geometry, and statistics. No fluff, just clear explanations that actually make sense. Everything's laid out for you. Grab all five books in one place. Um, and if you're on your phone right now, just scan the QR code on screen to go straight to the site. Links are also in the description and comment section. Join hundreds of viewers who've already grabbed it. And now let's get into it. Electrons are particles that are also waves. Someone said that to you once in a classroom, maybe with a diagram of dots and squiggly lines, and then the class moved on before it actually made sense. You probably wrote down words like superposition and wave function for a test, memorized just enough to pass, and never found out what any of it really meant. This video is not going to do that to you. We are going to build quantum mechanics from the ground up step by step so that by the end you understand what is physically happening at the smallest scales in the universe. Not vocabulary understanding. Quantum mechanics exists because the physics that describes cars, thrown balls, and buildings completely stops working at the scale of atoms and the particles inside them. In the early 1900s, physicists ran experiments that made no sense under the old rules. Light was showing up in fixed packets instead of a smooth stream. Electrons and atoms were not spiraling into the nucleus and destroying the atom, even though the old equation said they should. Something new was needed to explain what was actually going on. That new framework became quantum mechanics. And the real problem it solves is predicting how matter and energy behave at scales far too small to see directly. This is not an abstract exercise. It is the reason your phone has a processor. the reason an MRI machine can see inside your body and the reason GPS satellites keep accurate time. Once you understand the concepts underneath these things, you will see them differently every time you use them. Let's start with the first concept. Energy at the atomic scale comes in fixed steps, not a smooth continuous range. This is called quantization. It exists because when physicists measured the light given off by heated atoms, they did not find a smooth rainbow. They found specific separated colors and nothing in between. That only makes sense if the electrons inside those atoms can only hold specific amounts of energy, like fixed levels, and they jump between those levels rather than sliding smoothly. Think about a neon sign. Neon gas glows a specific reddish orange color because the electrons in neon atoms can only drop between certain fixed energy levels, and each drop releases light of one exact color. If quantization did not exist, you could tune neon gas to any color you wanted just by adjusting voltage. You cannot. The color is fixed by the physics of the atom itself. Which is exactly why sign makers use different gases like argon or krypton to get different colors. The key point is that energy at this scale moves in fixed steps, not a smooth slide. Here's what's actually happening with the next idea, which is wave particle duality. Particles like electrons and photons of light show wave behavior in some experiments and particle behavior in others depending on how you measure them. This matters because it means the old picture of a particle as a tiny solid ball is incomplete. An electron does not behave like a marble. It behaves like a wave when it is not being directly observed spreading out and interfering with itself and it behaves like a localized particle the moment you measure it. This is the entire reason an electron microscope can see detail that a regular light microscope cannot. Light has a certain wavelength and that wavelength limits how small a detail you can resolve with it. Electrons because of their wave behavior have a much smaller effective wavelength. So a microscope using electrons instead of light can resolve details thousands of times smaller. A lab technician who does not understand this will misjudge what resolution their equipment can actually achieve and waste time trying to see detail that is physically impossible with the wrong tool. The key point is that particles at this scale genuinely behave as waves until they are measured. The next concept is the wave function. This is a mathematical description of where a particle is likely to be and what state it is likely to be in. It is not a physical wave of some substance spreading through space. It is a tool that gives probabilities. This matters because it is exactly what a quantum computer manipulates. A regular computer bit is either a zero or a one, a fixed state. A quantum bit or cubit is described by a wave function that assigns probabilities to different outcomes before it is measured. This is why quantum computers are built and programmed completely differently from regular computers. An engineer who treats a cubit like a slightly fancier regular bit will design software that never uses the actual advantage quantum hardware offers. The key point is that the wave function is a probability description, not a physical object. This leads directly into probability versus certainty. Quantum mechanics predicts the probability of different outcomes, not one guaranteed outcome until a measurement is actually made. This matters because it changes what a prediction even means at this scale. Consider a smoke detector that uses a small amount of radioactive material. You cannot predict the exact moment any single atom in that material will decay. You can only predict the probability that decay will happen within a certain window of time. That is not a limitation of our instruments. It is how the material actually behaves. Engineers designing radiation detection equipment have to build around probability, not certainty, or their equipment will give unreliable readings. The key point is that some outcomes in nature are genuinely probabilistic, not just difficult to predict. Now, here's why this matters to you as we move to superposition. A particle can exist in a combination of multiple possible states at the same time before a measurement forces it into just one. This is not the particle secretly being in one state while we simply do not know which one. It is genuinely undetermined until measured. This matters because it is the entire basis of why quantum computers can be so powerful for certain problems. A classical computer bit checks one possibility at a time. A cubit in superp position effectively represents multiple possibilities simultaneously which allows a quantum computer to test many potential solutions to certain problems at once. A company that assumes quantum computers are just faster. Regular computers will misjudge what kinds of problems they are actually useful for and will make poor decisions about where to invest research money. The key point is that superp position means genuinely holding multiple states at once, not hidden information. Then comes measurement, also called wave function collapse. The act of measuring a quantum system forces it out of superposition and into one definite single state. This matters because it explains why you never see quantum effects in daily life. Your car keys are not sitting in a blur of multiple locations. That is because they are constantly interacting with air molecules, light, and everything around them, which acts like continuous measurement, collapsing any quantum uncertainty instantly. This is the key part of understanding why the quantum world and the everyday world look so different, even though the same underlying rules apply to both. The key point is that measurement forces a single definite outcome out of multiple possibilities. Next is the uncertainty principle. Certain pairs of properties like a particle's exact position and its exact momentum cannot both be known precisely at the same time. This matters because it is not a flaw in our measuring tools. It is a fundamental limit built into nature itself. In semiconductor manufacturing, this principle sets a real physical limit on how small a transistor can be made before its electrical behavior becomes unpredictable. Chip engineers pushing towards smaller and smaller transistor sizes eventually run into this wall where electrons start behaving unpredictably no matter how good the manufacturing equipment is. An engineer who assumes this is just a matter of better tools will keep chasing a solution that does not exist, wasting years of development. The key point is that some limits in physics come from nature, not from equipment. The last core concept is quantum tunneling. Particles can pass through energy barriers that classical physics says they should not be able to cross at all. This matters because it is not a rare exotic effect. It is used in real technology every day. Flash memory, the kind used in USB drives and solidstate drives, stores data by trapping electrons behind an insulating barrier. to write or erase data, electrons are made to tunnel through that barrier, something that would be impossible under classical rules. Understanding this explains why flash storage wears out over time. Each tunneling event slightly damages the insulating barrier and after enough right cycles, the barrier degrades and the drive starts losing reliability. The key point is that tunneling allows particles to cross barriers that should be impossible to cross. And that ability is what makes flash storage work at all. Let me show you exactly how this works. When several of these ideas come together in one real situation, designing a solid state drive, data is stored by trapping electrons in a small structure and the presence or absence of trapped electrons represents a zero or a one. That is quantization in action. Discrete states representing discrete information. To write new data, engineers apply voltage to force electrons to tunnel through an insulating barrier into that storage structure. That is quantum tunneling doing the actual physical work of writing the bit. The insulating barrier cannot be made too thin because the uncertainty principle means a very thin barrier allows electrons to leak through unintentionally corrupting stored data over time. That tension between wanting a thin barrier for easy writing and a thick barrier for stable storage is a direct engineering consequence of the uncertainty principle. Finally, reading the data back is an act of measurement which forces the system into one definite readout, either a clean zero or a clean one. An engineering team that does not understand these four ideas working together will either build a drive that fails quickly from leakage or one that is so overbuilt it costs more than necessary. Understanding the physics directly affects the cost and reliability of the product. Now let's cover the mistakes people commonly make. People often think the wave function is an actual physical wave made of some substance similar to a wave in water. This is easy to assume because the word wave implies something tangible moving through space. The fix is to remember it is a mathematical description of probability, not a physical object you could ever touch or see directly. People also often treat superp position as the particle secretly being in one state while we just do not know which. Similar to a coin that has already landed but is covered by your hand. This is an easy mistake because it matches ordinary intuition about hidden information. The fix is to understand that the particle is genuinely undetermined until measurement happens, not simply hidden from view. Many people also assume quantum effects should show up in everyday objects since those objects are also made of atoms. This is easy to assume because popular explanations often blur the line between scales. The fix is to remember that everyday objects are constantly interacting with their environment and that constant interaction acts like continuous measurement collapsing quantum effects before they ever become noticeable. Finally, many people think the uncertainty principle is about the limits of our measuring instruments. This is easy to assume because the word uncertainty sounds like a tool problem. The fix is to recognize that this is a fundamental property of nature itself, not something better equipment could ever get around. Understanding tunneling explains why your solid state drive has a limited number of write cycles before it starts to fail, so you can plan storage decisions with realistic expectations about drive lifespan. Understanding quantization explains why LE and neon lighting produce specific fixed colors rather than a continuously adjustable range which matters if you are specifying lighting or signage for a project. Understanding superp position lets you tell the difference between genuine quantum computing capability and marketing hype which matters if you are making decisions about where research or investment dollars should go. Understanding the uncertainty principle explains the real physical wall that chip manufacturers are running into as transistors shrink, which matters if you are following or investing in semiconductor technology and want to understand why progress is slowing down. You can now explain why atoms give off specific colors of light instead of a smooth range based on how their electrons are allowed to hold energy. You can now separate real quantum computing capability from exaggerated claims based on what superp position actually does and does not provide. You can now explain why flash storage wears out over time and what physically causes that wear. You can now explain the uncertainty principle as a hard limit built into nature, not a shortcoming of our tools. That class you sat through years ago gave you words without meaning. What you have now is the meaning those words were always supposed to carry. Before you go, do like hundreds of others and make sure to grab the math bundle. Simply scan the QR code or click on the link in the description box. You don't want to miss out on this one. Trust me.",
+  "fullTextVi": "Đấu tranh với toán học? Kiểm tra Gói Toán học. Năm hướng dẫn đầy đủ bao gồm phép tính, đại số, lượng giác, hình học và thống kê. Không nói suông, chỉ cần giải thích rõ ràng và thực sự có ý nghĩa. Mọi thứ đã được bày sẵn cho bạn. Lấy tất cả năm cuốn sách ở một nơi. Ừm, và nếu bạn đang sử dụng điện thoại, chỉ cần quét mã QR trên màn hình để đi thẳng đến trang web. Các liên kết cũng có trong phần mô tả và bình luận. Tham gia cùng hàng trăm người xem đã nắm bắt nó. Và bây giờ chúng ta hãy đi sâu vào nó. Electron là hạt cũng là sóng. Có người đã từng nói với bạn điều đó trong lớp học, có thể bằng sơ đồ dấu chấm và đường nguệch ngoạc, sau đó cả lớp tiếp tục trước khi nó thực sự tạo ra giác quan. Bạn có thể đã viết ra những từ như chồng chất và hàm sóng để kiểm tra, ghi nhớ chỉ đủ để vượt qua, và không bao giờ tìm ra ý nghĩa thực sự của nó. Video này sẽ không làm điều đó với bạn. Chúng ta sẽ từng bước xây dựng cơ học lượng tử từ đầu để cuối cùng bạn hiểu được điều gì đang xảy ra về mặt vật lý dù là nhỏ nhất quy mô trong vũ trụ. Không hiểu từ vựng. Cơ học lượng tử tồn tại bởi vì vật lý mô tả hoàn toàn ô tô, quả bóng ném và các tòa nhà ngừng hoạt động ở quy mô nguyên tử và các hạt bên trong chúng. Vào đầu những năm 1900, các nhà vật lý đã thực hiện các thí nghiệm vô nghĩa theo cũ quy tắc. Ánh sáng hiển thị theo các gói cố định thay vì một luồng mượt mà. Các electron và nguyên tử không chuyển động xoắn ốc vào hạt nhân và phá hủy nguyên tử, thậm chí mặc dù phương trình cũ nói rằng họ nên làm như vậy. Cần phải có điều gì đó mới mẻ để giải thích điều gì đang thực sự diễn ra. Khuôn khổ mới đó đã trở thành cơ học lượng tử. Và vấn đề thực sự mà nó giải quyết được là dự đoán vật chất và năng lượng hoạt động như thế nào tại quy mô quá nhỏ để có thể nhìn thấy trực tiếp. Đây không phải là một bài tập trừu tượng. Đó là lý do điện thoại của bạn có bộ xử lý. lý do máy MRI có thể nhìn thấy bên trong cơ thể bạn và lý do GPS vệ tinh giữ thời gian chính xác. Khi bạn hiểu các khái niệm bên dưới những điều này, bạn sẽ thấy chúng khác nhau mỗi thời gian bạn sử dụng chúng. Hãy bắt đầu với khái niệm đầu tiên. Năng lượng ở quy mô nguyên tử có những bước cố định chứ không phải một phạm vi liên tục trơn tru. Điều này được gọi là lượng tử hóa. Nó tồn tại bởi vì khi các nhà vật lý đo ánh sáng phát ra từ các nguyên tử bị nung nóng, họ không tìm thấy một cầu vồng mịn màng. Họ tìm thấy những màu sắc riêng biệt cụ thể và không có gì ở giữa. Điều đó chỉ có ý nghĩa nếu các electron bên trong các nguyên tử đó chỉ có thể giữ cụ thể lượng năng lượng, như các mức cố định, và chúng nhảy giữa các mức đó thay vì trượt êm ái. Hãy nghĩ về một dấu hiệu neon. Khí neon phát sáng màu cam đỏ đặc trưng vì các electron trong nguyên tử neon chỉ có thể rơi giữa các mức năng lượng cố định nhất định và mỗi giọt sẽ giải phóng ánh sáng một màu chính xác. Nếu lượng tử hóa không tồn tại, bạn có thể điều chỉnh khí neon thành bất kỳ màu nào bạn muốn chỉ bằng cách điều chỉnh điện áp. Bạn không thể. Màu sắc được cố định bởi tính chất vật lý của chính nguyên tử. Đó chính xác là lý do tại sao những người làm bảng hiệu sử dụng các loại khí khác nhau như argon hoặc krypton để nhận được màu sắc khác nhau. Điểm mấu chốt là năng lượng ở quy mô này di chuyển theo các bước cố định chứ không phải một đường trượt trơn tru. Đây là điều đang thực sự xảy ra với ý tưởng tiếp theo, đó là lưỡng tính sóng hạt. Các hạt như electron và photon ánh sáng thể hiện hành vi sóng trong một số thí nghiệm và hành vi của các hạt khác tùy thuộc vào cách bạn đo lường chúng. Điều này quan trọng vì nó có nghĩa là hình ảnh cũ của một hạt là một hạt nhỏ quả bóng rắn không đầy đủ. Một electron không hành xử giống như một viên bi. Nó hoạt động giống như một làn sóng khi nó không được quan sát trực tiếp và lan rộng và can thiệp vào chính nó và nó hoạt động giống như một hạt cục bộ vào thời điểm bạn đo nó. Đây là toàn bộ lý do kính hiển vi điện tử có thể nhìn thấy chi tiết mà kính hiển vi thông thường kính hiển vi ánh sáng không thể. Ánh sáng có bước sóng nhất định và bước sóng đó giới hạn mức độ nhỏ của chi tiết bạn có thể giải quyết với nó. Các electron do đặc tính sóng của chúng nên có bước sóng hiệu dụng nhỏ hơn nhiều. Vậy kính hiển vi sử dụng electron thay ánh sáng có thể phân giải chi tiết hàng ngàn lần nhỏ hơn. Một kỹ thuật viên phòng thí nghiệm không hiểu điều này sẽ đánh giá sai độ phân giải của thiết bị của họ thực sự có thể đạt được và lãng phí thời gian để cố gắng xem chi tiết mà về mặt vật lý là không thể với công cụ sai. Điểm mấu chốt là các hạt ở quy mô này thực sự hành xử như sóng cho đến khi chúng được đo. Khái niệm tiếp theo là hàm sóng. Đây là mô tả toán học về vị trí của một hạt và nó có khả năng ở trạng thái nào. Nó không phải là sóng vật lý của một chất nào đó lan truyền trong không gian. Nó là một công cụ cung cấp xác suất. Điều này quan trọng vì nó chính xác là những gì máy tính lượng tử thao tác. Một bit máy tính thông thường có thể là số 0 hoặc số 1, ở trạng thái cố định. Một bit lượng tử hoặc cubit được mô tả bằng hàm sóng gán xác suất đến những kết quả khác nhau trước khi nó được đo lường. Đây là lý do tại sao máy tính lượng tử được chế tạo và lập trình hoàn toàn khác với máy tính thông thường. Một kỹ sư coi cubit giống như một bit thông thường sang trọng hơn một chút sẽ thiết kế phần mềm không bao giờ sử dụng lợi thế thực tế mà phần cứng lượng tử mang lại. Điểm mấu chốt là hàm sóng là một mô tả xác suất, không phải đối tượng vật chất. Điều này dẫn trực tiếp đến xác suất và sự chắc chắn. Cơ học lượng tử dự đoán xác suất của các kết quả khác nhau, không phải một kết quả được đảm bảo cho đến khi phép đo thực sự được thực hiện. Điều này quan trọng vì nó thậm chí còn thay đổi ý nghĩa của dự đoán ở quy mô này. Hãy xem xét một máy dò khói sử dụng một lượng nhỏ chất phóng xạ. Bạn không thể dự đoán chính xác thời điểm bất kỳ nguyên tử đơn lẻ nào trong vật liệu đó sẽ phân rã. Bạn chỉ có thể dự đoán xác suất phân rã sẽ xảy ra trong một cửa sổ nhất định của thời gian. Đó không phải là một hạn chế của các công cụ của chúng tôi. Đó là cách vật liệu thực sự hoạt động. Các kỹ sư thiết kế thiết bị phát hiện bức xạ phải xây dựng dựa trên xác suất chứ không phải sự chắc chắn hoặc của họ thiết bị sẽ cho kết quả không đáng tin cậy. Điểm mấu chốt là một số kết quả về bản chất thực sự mang tính xác suất, không chỉ khó dự đoán. Bây giờ, đây là lý do tại sao điều này lại quan trọng với bạn khi chúng ta chuyển sang trạng thái chồng chất. Một hạt có thể tồn tại trong sự kết hợp của nhiều trạng thái có thể có trong cùng một thời gian trước khi phép đo buộc nó chỉ còn một. Đây không phải là hạt bí mật ở một trạng thái trong khi chúng ta chỉ làm không biết cái nào. Nó thực sự không được xác định cho đến khi được đo. Điều này quan trọng vì nó là toàn bộ cơ sở giải thích tại sao máy tính lượng tử có thể rất mạnh mẽ cho một số vấn đề nhất định. Một bit máy tính cổ điển sẽ kiểm tra từng khả năng một. Một cubit ở vị trí cao nhất thể hiện đồng thời nhiều khả năng một cách hiệu quả, cho phép lượng tử máy tính để kiểm tra nhiều giải pháp tiềm năng cho một số vấn đề nhất định cùng một lúc. Một công ty cho rằng máy tính lượng tử chỉ nhanh hơn mà thôi. Máy tính thông thường sẽ đánh giá sai loại vấn đề mà chúng thực sự hữu ích và sẽ đưa ra những quyết định sai lầm về việc đầu tư tiền nghiên cứu vào đâu. Điểm mấu chốt là vị trí siêu hạng có nghĩa là thực sự nắm giữ nhiều trạng thái cùng một lúc, không che giấu thông tin. Sau đó là phép đo, còn được gọi là sự sụp đổ của hàm sóng. Hành động đo một hệ lượng tử buộc nó thoát ra khỏi trạng thái chồng chất và rơi vào trạng thái một trạng thái duy nhất xác định. Điều này quan trọng vì nó giải thích tại sao bạn không bao giờ nhìn thấy hiệu ứng lượng tử trong cuộc sống hàng ngày. Chìa khóa ô tô của bạn không nằm mờ ở nhiều vị trí. Đó là vì chúng liên tục tương tác với các phân tử không khí, ánh sáng và mọi thứ xung quanh chúng, hoạt động giống như phép đo liên tục, thu gọn mọi sự bất định lượng tử ngay lập tức. Đây là phần quan trọng để hiểu tại sao thế giới lượng tử và thế giới hàng ngày thế giới trông rất khác nhau, mặc dù các quy tắc cơ bản giống nhau áp dụng cho cả hai. Điểm mấu chốt là phép đo tạo ra một kết quả xác định duy nhất từ ​​nhiều khả năng. Tiếp theo là nguyên lý bất định. Một số cặp tính chất nhất định như vị trí chính xác của hạt và động lượng chính xác của nó không thể cả hai đều được biết chính xác cùng một lúc. Điều này quan trọng vì nó không phải là sai sót trong các công cụ đo lường của chúng tôi. Đó là một giới hạn cơ bản được xây dựng trong tự nhiên. Trong sản xuất chất bán dẫn, nguyên tắc này đặt ra giới hạn vật lý thực sự về mức độ nhỏ của bóng bán dẫn có thể được tạo ra trước khi hành vi điện của nó trở nên khó dự đoán. Các kỹ sư chip đang hướng tới kích thước bóng bán dẫn ngày càng nhỏ hơn cuối cùng cũng gặp phải bức tường này nơi các electron bắt đầu hành xử không thể đoán trước được cho dù thiết bị sản xuất có tốt đến đâu. Một kỹ sư cho rằng đây chỉ là vấn đề của các công cụ tốt hơn sẽ giữ theo đuổi một giải pháp không tồn tại, lãng phí nhiều năm phát triển. Điểm mấu chốt là một số giới hạn trong vật lý đến từ tự nhiên, không phải từ thiết bị. Khái niệm cốt lõi cuối cùng là đường hầm lượng tử. Các hạt có thể vượt qua các rào cản năng lượng mà vật lý cổ điển cho rằng chúng không nên có thể vượt qua chút nào. Điều này quan trọng vì nó không phải là một hiệu ứng kỳ lạ hiếm gặp. Nó được sử dụng trong công nghệ thực tế hàng ngày. Bộ nhớ flash, loại được sử dụng trong ổ USB và ổ đĩa thể rắn, lưu trữ dữ liệu bằng bẫy các electron phía sau một hàng rào cách điện. để ghi hoặc xóa dữ liệu, các electron được tạo ra để xuyên qua hàng rào đó, thứ gì đó điều đó là không thể theo các quy tắc cổ điển. Hiểu được điều này giải thích tại sao bộ lưu trữ flash bị hao mòn theo thời gian. Mỗi sự kiện đào hầm sẽ làm hư hỏng nhẹ hàng rào cách điện và sau đủ chu kỳ phù hợp, rào cản xuống cấp và biến tần bắt đầu mất đi độ tin cậy. Điểm mấu chốt là việc đào hầm cho phép các hạt vượt qua các rào cản lẽ ra là không thể vượt qua. Và khả năng đó là yếu tố giúp cho bộ lưu trữ flash hoạt động được. Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó. Khi một số ý tưởng này kết hợp với nhau trong một tình huống thực tế, hãy thiết kế một vững chắc ổ trạng thái, dữ liệu được lưu trữ bằng cách bẫy các electron trong một cấu trúc nhỏ và sự hiện diện hay vắng mặt của các electron bị bẫy đại diện cho số 0 hoặc một. Đó là lượng tử hóa trong hành động. Các trạng thái rời rạc thể hiện thông tin rời rạc. Để ghi dữ liệu mới, các kỹ sư sử dụng điện áp để buộc các electron đi xuyên qua hàng rào cách nhiệt vào cấu trúc lưu trữ đó. Đó là đường hầm lượng tử thực hiện công việc vật lý thực tế là ghi bit. Rào chắn cách điện không thể được làm quá mỏng vì nguyên lý bất định có nghĩa là rào cản rất mỏng cho phép các electron rò rỉ qua vô tình làm hỏng dữ liệu được lưu trữ theo thời gian. Sự căng thẳng giữa việc muốn có một rào cản mỏng để viết dễ dàng và một rào cản dày để lưu trữ ổn định là hệ quả kỹ thuật trực tiếp của nguyên lý bất định. Cuối cùng, đọc lại dữ liệu là một hành động đo lường buộc hệ thống thành một kết quả xác định, có thể là số 0 sạch hoặc số 0 sạch. Một nhóm kỹ thuật không hiểu bốn ý tưởng này khi làm việc cùng nhau sẽ xây dựng một ổ đĩa bị hỏng nhanh chóng do rò rỉ hoặc một ổ đĩa được xây dựng quá mức nó tốn kém hơn mức cần thiết. Hiểu biết về vật lý ảnh hưởng trực tiếp đến giá thành và độ tin cậy của sản phẩm. Bây giờ hãy cùng điểm qua những sai lầm mà mọi người thường mắc phải. Mọi người thường nghĩ hàm sóng là một sóng vật lý thực tế được tạo thành từ một số chất tương tự như sóng trong nước. Điều này dễ dàng giả định vì từ sóng ám chỉ một thứ gì đó hữu hình đang di chuyển qua không gian. Cách khắc phục là hãy nhớ rằng đó là một mô tả toán học về xác suất, không phải vật thể mà bạn có thể chạm vào hoặc nhìn thấy trực tiếp. Người ta cũng thường coi vị trí siêu hạng là hạt bí mật tồn tại trong một trạng thái trong khi chúng tôi không biết cái nào. Tương tự như một đồng xu đã rơi xuống nhưng bị tay bạn che lại. Đây là một sai lầm dễ mắc phải vì nó phù hợp với trực giác thông thường về những thông tin ẩn giấu. Cách khắc phục là hiểu rằng hạt thực sự không được xác định cho đến khi phép đo xảy ra, không chỉ đơn giản là ẩn khỏi tầm nhìn. Nhiều người cũng cho rằng các hiệu ứng lượng tử sẽ xuất hiện trong các vật thể hàng ngày vì những đó các vật thể cũng được tạo thành từ các nguyên tử. Điều này dễ dàng được giả định vì những lời giải thích phổ biến thường làm mờ đi ranh giới giữa các thang đo. Cách khắc phục là hãy nhớ rằng các đồ vật hàng ngày liên tục tương tác với môi trường của chúng và sự tương tác liên tục đó hoạt động giống như các hiệu ứng lượng tử thu gọn trong phép đo liên tục trước khi chúng trở nên đáng chú ý. Cuối cùng, nhiều người cho rằng nguyên lý bất định là về giới hạn đo lường của chúng ta nhạc cụ. Điều này dễ dàng được giả định vì từ không chắc chắn nghe giống như một vấn đề về công cụ. Cách khắc phục là nhận ra rằng đây là một đặc tính cơ bản của tự nhiên, không có thứ gì tốt hơn mà thiết bị có thể có được. Hiểu về đường hầm giải thích tại sao ổ đĩa thể rắn của bạn có số lần ghi hạn chế theo chu kỳ trước khi nó bắt đầu hỏng, vì vậy bạn có thể lập kế hoạch cho các quyết định lưu trữ một cách thực tế mong đợi về tuổi thọ của ổ đĩa. Hiểu về lượng tử hóa giải thích tại sao ánh sáng LE và neon tạo ra các màu cố định cụ thể thay vì phạm vi có thể điều chỉnh liên tục, điều này rất quan trọng nếu bạn chỉ định hệ thống chiếu sáng hoặc biển báo cho một dự án. Hiểu được vị trí siêu hạng cho phép bạn phân biệt được sự khác biệt giữa khả năng tính toán lượng tử thực sự và cường điệu tiếp thị sẽ quan trọng nếu bạn đưa ra quyết định về nơi nghiên cứu hoặc đầu tư đô la nên đi. Hiểu nguyên lý bất định giải thích bức tường vật lý thực sự mà các nhà sản xuất chip đang chạy khi bóng bán dẫn co lại, điều này quan trọng nếu bạn đang theo dõi hoặc đầu tư vào chất bán dẫn công nghệ và muốn hiểu tại sao tiến độ lại chậm lại. Bây giờ bạn có thể giải thích tại sao nguyên tử lại phát ra những màu ánh sáng cụ thể thay vì một phạm vi trơn tru dựa trên cách các electron của chúng được phép giữ năng lượng. Giờ đây, bạn có thể tách biệt khả năng tính toán lượng tử thực sự khỏi những tuyên bố phóng đại dựa trên những gì vị trí siêu cấp thực sự có và không cung cấp. Bây giờ bạn có thể giải thích tại sao bộ lưu trữ flash bị hao mòn theo thời gian và những gì về mặt vật lý gây ra sự mài mòn đó. Bây giờ bạn có thể giải thích nguyên lý bất định như một giới hạn cố định được thiết lập sẵn trong tự nhiên, không phải là một thiếu sót của các công cụ của chúng tôi. Lớp học mà bạn đã học cách đây nhiều năm đã cho bạn những từ ngữ vô nghĩa. Những gì bạn có bây giờ là ý nghĩa mà những từ đó luôn mang theo. Trước khi đi, hãy làm như hàng trăm người khác và nhớ lấy bó toán học. Chỉ cần quét mã QR hoặc nhấp vào liên kết trong hộp mô tả. Bạn không muốn bỏ lỡ điều này. Hãy tin tôi.",
+  "segments": [
+    {
+      "text": "Struggling with math?",
+      "viText": "Đấu tranh với toán học?",
+      "start": 0,
+      "duration": 2
+    },
+    {
+      "text": "Check out the Math Bundle.",
+      "viText": "Kiểm tra Gói Toán học.",
+      "start": 2,
+      "duration": 2
+    },
+    {
+      "text": "Five complete guides covering calculus, algebra, trigonometry, geometry, and statistics.",
+      "viText": "Năm hướng dẫn đầy đủ bao gồm phép tính, đại số, lượng giác, hình học và thống kê.",
+      "start": 4,
+      "duration": 5.19
+    },
+    {
+      "text": "No fluff, just clear explanations that actually make sense.",
+      "viText": "Không nói suông, chỉ cần giải thích rõ ràng và thực sự có ý nghĩa.",
+      "start": 9.19,
+      "duration": 3.48
+    },
+    {
+      "text": "Everything's laid out for you.",
+      "viText": "Mọi thứ đã được bày sẵn cho bạn.",
+      "start": 12.67,
+      "duration": 2
+    },
+    {
+      "text": "Grab all five books in one place.",
+      "viText": "Lấy tất cả năm cuốn sách ở một nơi.",
+      "start": 14.67,
+      "duration": 2
+    },
+    {
+      "text": "Um, and if you're on your phone right now, just scan the QR code",
+      "viText": "Ừm, và nếu bạn đang sử dụng điện thoại, chỉ cần quét mã QR",
+      "start": 16.67,
+      "duration": 3.77
+    },
+    {
+      "text": "on screen to go straight to the site.",
+      "viText": "trên màn hình để đi thẳng đến trang web.",
+      "start": 20.44,
+      "duration": 2.18
+    },
+    {
+      "text": "Links are also in the description and comment section.",
+      "viText": "Các liên kết cũng có trong phần mô tả và bình luận.",
+      "start": 22.62,
+      "duration": 3.18
+    },
+    {
+      "text": "Join hundreds of viewers who've already grabbed it.",
+      "viText": "Tham gia cùng hàng trăm người xem đã nắm bắt nó.",
+      "start": 25.8,
+      "duration": 3.01
+    },
+    {
+      "text": "And now let's get into it.",
+      "viText": "Và bây giờ chúng ta hãy đi sâu vào nó.",
+      "start": 28.81,
+      "duration": 2
+    },
+    {
+      "text": "Electrons are particles that are also waves.",
+      "viText": "Electron là hạt cũng là sóng.",
+      "start": 30.81,
+      "duration": 2.59
+    },
+    {
+      "text": "Someone said that to you once in a classroom, maybe with a diagram of",
+      "viText": "Có người đã từng nói với bạn điều đó trong lớp học, có thể bằng sơ đồ",
+      "start": 33.4,
+      "duration": 4.07
+    },
+    {
+      "text": "dots and squiggly lines, and then the class moved on before it actually made",
+      "viText": "dấu chấm và đường nguệch ngoạc, sau đó cả lớp tiếp tục trước khi nó thực sự tạo ra",
+      "start": 37.47,
+      "duration": 4.48
+    },
+    {
+      "text": "sense.",
+      "viText": "giác quan.",
+      "start": 41.95,
+      "duration": 2
+    },
+    {
+      "text": "You probably wrote down words like superposition and wave function for a test, memorized",
+      "viText": "Bạn có thể đã viết ra những từ như chồng chất và hàm sóng để kiểm tra, ghi nhớ",
+      "start": 43.95,
+      "duration": 5.19
+    },
+    {
+      "text": "just enough to pass, and never found out what any of it really meant.",
+      "viText": "chỉ đủ để vượt qua, và không bao giờ tìm ra ý nghĩa thực sự của nó.",
+      "start": 49.14,
+      "duration": 4.07
+    },
+    {
+      "text": "This video is not going to do that to you.",
+      "viText": "Video này sẽ không làm điều đó với bạn.",
+      "start": 53.21,
+      "duration": 2.48
+    },
+    {
+      "text": "We are going to build quantum mechanics from the ground up step by step",
+      "viText": "Chúng ta sẽ từng bước xây dựng cơ học lượng tử từ đầu",
+      "start": 55.69,
+      "duration": 4.19
+    },
+    {
+      "text": "so that by the end you understand what is physically happening at the smallest",
+      "viText": "để cuối cùng bạn hiểu được điều gì đang xảy ra về mặt vật lý dù là nhỏ nhất",
+      "start": 59.88,
+      "duration": 4.6
+    },
+    {
+      "text": "scales in the universe.",
+      "viText": "quy mô trong vũ trụ.",
+      "start": 64.48,
+      "duration": 2
+    },
+    {
+      "text": "Not vocabulary understanding.",
+      "viText": "Không hiểu từ vựng.",
+      "start": 66.48,
+      "duration": 2
+    },
+    {
+      "text": "Quantum mechanics exists because the physics that describes cars, thrown balls, and buildings completely",
+      "viText": "Cơ học lượng tử tồn tại bởi vì vật lý mô tả hoàn toàn ô tô, quả bóng ném và các tòa nhà",
+      "start": 68.48,
+      "duration": 6.13
+    },
+    {
+      "text": "stops working at the scale of atoms and the particles inside them.",
+      "viText": "ngừng hoạt động ở quy mô nguyên tử và các hạt bên trong chúng.",
+      "start": 74.61,
+      "duration": 3.89
+    },
+    {
+      "text": "In the early 1900s, physicists ran experiments that made no sense under the old",
+      "viText": "Vào đầu những năm 1900, các nhà vật lý đã thực hiện các thí nghiệm vô nghĩa theo",
+      "start": 78.5,
+      "duration": 4.66
+    },
+    {
+      "text": "rules.",
+      "viText": "cũ quy tắc.",
+      "start": 83.16,
+      "duration": 2
+    },
+    {
+      "text": "Light was showing up in fixed packets instead of a smooth stream.",
+      "viText": "Ánh sáng hiển thị theo các gói cố định thay vì một luồng mượt mà.",
+      "start": 85.16,
+      "duration": 3.83
+    },
+    {
+      "text": "Electrons and atoms were not spiraling into the nucleus and destroying the atom, even",
+      "viText": "Các electron và nguyên tử không chuyển động xoắn ốc vào hạt nhân và phá hủy nguyên tử, thậm chí",
+      "start": 88.99,
+      "duration": 5.01
+    },
+    {
+      "text": "though the old equation said they should.",
+      "viText": "mặc dù phương trình cũ nói rằng họ nên làm như vậy.",
+      "start": 94,
+      "duration": 2.42
+    },
+    {
+      "text": "Something new was needed to explain what was actually going on.",
+      "viText": "Cần phải có điều gì đó mới mẻ để giải thích điều gì đang thực sự diễn ra.",
+      "start": 96.42,
+      "duration": 3.71
+    },
+    {
+      "text": "That new framework became quantum mechanics.",
+      "viText": "Khuôn khổ mới đó đã trở thành cơ học lượng tử.",
+      "start": 100.13,
+      "duration": 2.59
+    },
+    {
+      "text": "And the real problem it solves is predicting how matter and energy behave at",
+      "viText": "Và vấn đề thực sự mà nó giải quyết được là dự đoán vật chất và năng lượng hoạt động như thế nào tại",
+      "start": 102.72,
+      "duration": 4.48
+    },
+    {
+      "text": "scales far too small to see directly.",
+      "viText": "quy mô quá nhỏ để có thể nhìn thấy trực tiếp.",
+      "start": 107.2,
+      "duration": 2.18
+    },
+    {
+      "text": "This is not an abstract exercise.",
+      "viText": "Đây không phải là một bài tập trừu tượng.",
+      "start": 109.38,
+      "duration": 2
+    },
+    {
+      "text": "It is the reason your phone has a processor.",
+      "viText": "Đó là lý do điện thoại của bạn có bộ xử lý.",
+      "start": 111.38,
+      "duration": 2.59
+    },
+    {
+      "text": "the reason an MRI machine can see inside your body and the reason GPS",
+      "viText": "lý do máy MRI có thể nhìn thấy bên trong cơ thể bạn và lý do GPS",
+      "start": 113.97,
+      "duration": 4.07
+    },
+    {
+      "text": "satellites keep accurate time.",
+      "viText": "vệ tinh giữ thời gian chính xác.",
+      "start": 118.04,
+      "duration": 2
+    },
+    {
+      "text": "Once you understand the concepts underneath these things, you will see them differently every",
+      "viText": "Khi bạn hiểu các khái niệm bên dưới những điều này, bạn sẽ thấy chúng khác nhau mỗi",
+      "start": 120.04,
+      "duration": 5.48
+    },
+    {
+      "text": "time you use them.",
+      "viText": "thời gian bạn sử dụng chúng.",
+      "start": 125.52,
+      "duration": 2
+    },
+    {
+      "text": "Let's start with the first concept.",
+      "viText": "Hãy bắt đầu với khái niệm đầu tiên.",
+      "start": 127.52,
+      "duration": 2.06
+    },
+    {
+      "text": "Energy at the atomic scale comes in fixed steps, not a smooth continuous range.",
+      "viText": "Năng lượng ở quy mô nguyên tử có những bước cố định chứ không phải một phạm vi liên tục trơn tru.",
+      "start": 129.58,
+      "duration": 4.66
+    },
+    {
+      "text": "This is called quantization.",
+      "viText": "Điều này được gọi là lượng tử hóa.",
+      "start": 134.24,
+      "duration": 2
+    },
+    {
+      "text": "It exists because when physicists measured the light given off by heated atoms, they",
+      "viText": "Nó tồn tại bởi vì khi các nhà vật lý đo ánh sáng phát ra từ các nguyên tử bị nung nóng, họ",
+      "start": 136.24,
+      "duration": 4.95
+    },
+    {
+      "text": "did not find a smooth rainbow.",
+      "viText": "không tìm thấy một cầu vồng mịn màng.",
+      "start": 141.19,
+      "duration": 2
+    },
+    {
+      "text": "They found specific separated colors and nothing in between.",
+      "viText": "Họ tìm thấy những màu sắc riêng biệt cụ thể và không có gì ở giữa.",
+      "start": 143.19,
+      "duration": 3.54
+    },
+    {
+      "text": "That only makes sense if the electrons inside those atoms can only hold specific",
+      "viText": "Điều đó chỉ có ý nghĩa nếu các electron bên trong các nguyên tử đó chỉ có thể giữ",
+      "start": 146.73,
+      "duration": 4.72
+    },
+    {
+      "text": "amounts of energy, like fixed levels, and they jump between those levels rather than",
+      "viText": "cụ thể lượng năng lượng, như các mức cố định, và chúng nhảy giữa các mức đó thay vì",
+      "start": 151.45,
+      "duration": 4.95
+    },
+    {
+      "text": "sliding smoothly.",
+      "viText": "trượt êm ái.",
+      "start": 156.4,
+      "duration": 2
+    },
+    {
+      "text": "Think about a neon sign.",
+      "viText": "Hãy nghĩ về một dấu hiệu neon.",
+      "start": 158.4,
+      "duration": 2
+    },
+    {
+      "text": "Neon gas glows a specific reddish orange color because the electrons in neon atoms",
+      "viText": "Khí neon phát sáng màu cam đỏ đặc trưng vì các electron trong nguyên tử neon",
+      "start": 160.4,
+      "duration": 4.83
+    },
+    {
+      "text": "can only drop between certain fixed energy levels, and each drop releases light of",
+      "viText": "chỉ có thể rơi giữa các mức năng lượng cố định nhất định và mỗi giọt sẽ giải phóng ánh sáng",
+      "start": 165.23,
+      "duration": 4.83
+    },
+    {
+      "text": "one exact color.",
+      "viText": "một màu chính xác.",
+      "start": 170.06,
+      "duration": 2
+    },
+    {
+      "text": "If quantization did not exist, you could tune neon gas to any color you",
+      "viText": "Nếu lượng tử hóa không tồn tại, bạn có thể điều chỉnh khí neon thành bất kỳ màu nào bạn",
+      "start": 172.06,
+      "duration": 4.19
+    },
+    {
+      "text": "wanted just by adjusting voltage.",
+      "viText": "muốn chỉ bằng cách điều chỉnh điện áp.",
+      "start": 176.25,
+      "duration": 2
+    },
+    {
+      "text": "You cannot.",
+      "viText": "Bạn không thể.",
+      "start": 178.25,
+      "duration": 2
+    },
+    {
+      "text": "The color is fixed by the physics of the atom itself.",
+      "viText": "Màu sắc được cố định bởi tính chất vật lý của chính nguyên tử.",
+      "start": 180.25,
+      "duration": 3.12
+    },
+    {
+      "text": "Which is exactly why sign makers use different gases like argon or krypton to",
+      "viText": "Đó chính xác là lý do tại sao những người làm bảng hiệu sử dụng các loại khí khác nhau như argon hoặc krypton để",
+      "start": 183.37,
+      "duration": 4.54
+    },
+    {
+      "text": "get different colors.",
+      "viText": "nhận được màu sắc khác nhau.",
+      "start": 187.91,
+      "duration": 2
+    },
+    {
+      "text": "The key point is that energy at this scale moves in fixed steps, not",
+      "viText": "Điểm mấu chốt là năng lượng ở quy mô này di chuyển theo các bước cố định chứ không phải",
+      "start": 189.91,
+      "duration": 4.01
+    },
+    {
+      "text": "a smooth slide.",
+      "viText": "một đường trượt trơn tru.",
+      "start": 193.92,
+      "duration": 2
+    },
+    {
+      "text": "Here's what's actually happening with the next idea, which is wave particle duality.",
+      "viText": "Đây là điều đang thực sự xảy ra với ý tưởng tiếp theo, đó là lưỡng tính sóng hạt.",
+      "start": 195.92,
+      "duration": 4.95
+    },
+    {
+      "text": "Particles like electrons and photons of light show wave behavior in some experiments and",
+      "viText": "Các hạt như electron và photon ánh sáng thể hiện hành vi sóng trong một số thí nghiệm và",
+      "start": 200.87,
+      "duration": 5.19
+    },
+    {
+      "text": "particle behavior in others depending on how you measure them.",
+      "viText": "hành vi của các hạt khác tùy thuộc vào cách bạn đo lường chúng.",
+      "start": 206.06,
+      "duration": 3.65
+    },
+    {
+      "text": "This matters because it means the old picture of a particle as a tiny",
+      "viText": "Điều này quan trọng vì nó có nghĩa là hình ảnh cũ của một hạt là một hạt nhỏ",
+      "start": 209.71,
+      "duration": 4.07
+    },
+    {
+      "text": "solid ball is incomplete.",
+      "viText": "quả bóng rắn không đầy đủ.",
+      "start": 213.78,
+      "duration": 2
+    },
+    {
+      "text": "An electron does not behave like a marble.",
+      "viText": "Một electron không hành xử giống như một viên bi.",
+      "start": 215.78,
+      "duration": 2.48
+    },
+    {
+      "text": "It behaves like a wave when it is not being directly observed spreading out",
+      "viText": "Nó hoạt động giống như một làn sóng khi nó không được quan sát trực tiếp và lan rộng",
+      "start": 218.26,
+      "duration": 4.42
+    },
+    {
+      "text": "and interfering with itself and it behaves like a localized particle the moment you",
+      "viText": "và can thiệp vào chính nó và nó hoạt động giống như một hạt cục bộ vào thời điểm bạn",
+      "start": 222.68,
+      "duration": 4.89
+    },
+    {
+      "text": "measure it.",
+      "viText": "đo nó.",
+      "start": 227.57,
+      "duration": 2
+    },
+    {
+      "text": "This is the entire reason an electron microscope can see detail that a regular",
+      "viText": "Đây là toàn bộ lý do kính hiển vi điện tử có thể nhìn thấy chi tiết mà kính hiển vi thông thường",
+      "start": 229.57,
+      "duration": 4.6
+    },
+    {
+      "text": "light microscope cannot.",
+      "viText": "kính hiển vi ánh sáng không thể.",
+      "start": 234.17,
+      "duration": 2
+    },
+    {
+      "text": "Light has a certain wavelength and that wavelength limits how small a detail you",
+      "viText": "Ánh sáng có bước sóng nhất định và bước sóng đó giới hạn mức độ nhỏ của chi tiết bạn",
+      "start": 236.17,
+      "duration": 4.72
+    },
+    {
+      "text": "can resolve with it.",
+      "viText": "có thể giải quyết với nó.",
+      "start": 240.89,
+      "duration": 2
+    },
+    {
+      "text": "Electrons because of their wave behavior have a much smaller effective wavelength.",
+      "viText": "Các electron do đặc tính sóng của chúng nên có bước sóng hiệu dụng nhỏ hơn nhiều.",
+      "start": 242.89,
+      "duration": 4.83
+    },
+    {
+      "text": "So a microscope using electrons instead of light can resolve details thousands of times",
+      "viText": "Vậy kính hiển vi sử dụng electron thay ánh sáng có thể phân giải chi tiết hàng ngàn lần",
+      "start": 247.72,
+      "duration": 5.13
+    },
+    {
+      "text": "smaller.",
+      "viText": "nhỏ hơn.",
+      "start": 252.85,
+      "duration": 2
+    },
+    {
+      "text": "A lab technician who does not understand this will misjudge what resolution their equipment",
+      "viText": "Một kỹ thuật viên phòng thí nghiệm không hiểu điều này sẽ đánh giá sai độ phân giải của thiết bị của họ",
+      "start": 254.85,
+      "duration": 5.36
+    },
+    {
+      "text": "can actually achieve and waste time trying to see detail that is physically impossible",
+      "viText": "thực sự có thể đạt được và lãng phí thời gian để cố gắng xem chi tiết mà về mặt vật lý là không thể",
+      "start": 260.21,
+      "duration": 5.07
+    },
+    {
+      "text": "with the wrong tool.",
+      "viText": "với công cụ sai.",
+      "start": 265.28,
+      "duration": 2
+    },
+    {
+      "text": "The key point is that particles at this scale genuinely behave as waves until",
+      "viText": "Điểm mấu chốt là các hạt ở quy mô này thực sự hành xử như sóng cho đến khi",
+      "start": 267.28,
+      "duration": 4.54
+    },
+    {
+      "text": "they are measured.",
+      "viText": "chúng được đo.",
+      "start": 271.82,
+      "duration": 2
+    },
+    {
+      "text": "The next concept is the wave function.",
+      "viText": "Khái niệm tiếp theo là hàm sóng.",
+      "start": 273.82,
+      "duration": 2.24
+    },
+    {
+      "text": "This is a mathematical description of where a particle is likely to be and",
+      "viText": "Đây là mô tả toán học về vị trí của một hạt và",
+      "start": 276.06,
+      "duration": 4.36
+    },
+    {
+      "text": "what state it is likely to be in.",
+      "viText": "nó có khả năng ở trạng thái nào.",
+      "start": 280.42,
+      "duration": 2
+    },
+    {
+      "text": "It is not a physical wave of some substance spreading through space.",
+      "viText": "Nó không phải là sóng vật lý của một chất nào đó lan truyền trong không gian.",
+      "start": 282.42,
+      "duration": 4.01
+    },
+    {
+      "text": "It is a tool that gives probabilities.",
+      "viText": "Nó là một công cụ cung cấp xác suất.",
+      "start": 286.43,
+      "duration": 2.24
+    },
+    {
+      "text": "This matters because it is exactly what a quantum computer manipulates.",
+      "viText": "Điều này quan trọng vì nó chính xác là những gì máy tính lượng tử thao tác.",
+      "start": 288.67,
+      "duration": 4.19
+    },
+    {
+      "text": "A regular computer bit is either a zero or a one, a fixed state.",
+      "viText": "Một bit máy tính thông thường có thể là số 0 hoặc số 1, ở trạng thái cố định.",
+      "start": 292.86,
+      "duration": 3.77
+    },
+    {
+      "text": "A quantum bit or cubit is described by a wave function that assigns probabilities",
+      "viText": "Một bit lượng tử hoặc cubit được mô tả bằng hàm sóng gán xác suất",
+      "start": 296.63,
+      "duration": 4.77
+    },
+    {
+      "text": "to different outcomes before it is measured.",
+      "viText": "đến những kết quả khác nhau trước khi nó được đo lường.",
+      "start": 301.4,
+      "duration": 2.59
+    },
+    {
+      "text": "This is why quantum computers are built and programmed completely differently from regular computers.",
+      "viText": "Đây là lý do tại sao máy tính lượng tử được chế tạo và lập trình hoàn toàn khác với máy tính thông thường.",
+      "start": 303.99,
+      "duration": 5.95
+    },
+    {
+      "text": "An engineer who treats a cubit like a slightly fancier regular bit will design",
+      "viText": "Một kỹ sư coi cubit giống như một bit thông thường sang trọng hơn một chút sẽ thiết kế",
+      "start": 309.94,
+      "duration": 4.6
+    },
+    {
+      "text": "software that never uses the actual advantage quantum hardware offers.",
+      "viText": "phần mềm không bao giờ sử dụng lợi thế thực tế mà phần cứng lượng tử mang lại.",
+      "start": 314.54,
+      "duration": 4.13
+    },
+    {
+      "text": "The key point is that the wave function is a probability description, not a",
+      "viText": "Điểm mấu chốt là hàm sóng là một mô tả xác suất, không phải",
+      "start": 318.67,
+      "duration": 4.42
+    },
+    {
+      "text": "physical object.",
+      "viText": "đối tượng vật chất.",
+      "start": 323.09,
+      "duration": 2
+    },
+    {
+      "text": "This leads directly into probability versus certainty.",
+      "viText": "Điều này dẫn trực tiếp đến xác suất và sự chắc chắn.",
+      "start": 325.09,
+      "duration": 3.18
+    },
+    {
+      "text": "Quantum mechanics predicts the probability of different outcomes, not one guaranteed outcome until a",
+      "viText": "Cơ học lượng tử dự đoán xác suất của các kết quả khác nhau, không phải một kết quả được đảm bảo cho đến khi",
+      "start": 328.27,
+      "duration": 5.89
+    },
+    {
+      "text": "measurement is actually made.",
+      "viText": "phép đo thực sự được thực hiện.",
+      "start": 334.16,
+      "duration": 2
+    },
+    {
+      "text": "This matters because it changes what a prediction even means at this scale.",
+      "viText": "Điều này quan trọng vì nó thậm chí còn thay đổi ý nghĩa của dự đoán ở quy mô này.",
+      "start": 336.16,
+      "duration": 4.42
+    },
+    {
+      "text": "Consider a smoke detector that uses a small amount of radioactive material.",
+      "viText": "Hãy xem xét một máy dò khói sử dụng một lượng nhỏ chất phóng xạ.",
+      "start": 340.58,
+      "duration": 4.42
+    },
+    {
+      "text": "You cannot predict the exact moment any single atom in that material will decay.",
+      "viText": "Bạn không thể dự đoán chính xác thời điểm bất kỳ nguyên tử đơn lẻ nào trong vật liệu đó sẽ phân rã.",
+      "start": 345,
+      "duration": 4.72
+    },
+    {
+      "text": "You can only predict the probability that decay will happen within a certain window",
+      "viText": "Bạn chỉ có thể dự đoán xác suất phân rã sẽ xảy ra trong một cửa sổ nhất định",
+      "start": 349.72,
+      "duration": 4.89
+    },
+    {
+      "text": "of time.",
+      "viText": "của thời gian.",
+      "start": 354.61,
+      "duration": 2
+    },
+    {
+      "text": "That is not a limitation of our instruments.",
+      "viText": "Đó không phải là một hạn chế của các công cụ của chúng tôi.",
+      "start": 356.61,
+      "duration": 2.59
+    },
+    {
+      "text": "It is how the material actually behaves.",
+      "viText": "Đó là cách vật liệu thực sự hoạt động.",
+      "start": 359.2,
+      "duration": 2.36
+    },
+    {
+      "text": "Engineers designing radiation detection equipment have to build around probability, not certainty, or their",
+      "viText": "Các kỹ sư thiết kế thiết bị phát hiện bức xạ phải xây dựng dựa trên xác suất chứ không phải sự chắc chắn hoặc",
+      "start": 361.56,
+      "duration": 6.31
+    },
+    {
+      "text": "equipment will give unreliable readings.",
+      "viText": "của họ thiết bị sẽ cho kết quả không đáng tin cậy.",
+      "start": 367.87,
+      "duration": 2.36
+    },
+    {
+      "text": "The key point is that some outcomes in nature are genuinely probabilistic, not just",
+      "viText": "Điểm mấu chốt là một số kết quả về bản chất thực sự mang tính xác suất, không chỉ",
+      "start": 370.23,
+      "duration": 4.89
+    },
+    {
+      "text": "difficult to predict.",
+      "viText": "khó dự đoán.",
+      "start": 375.12,
+      "duration": 2
+    },
+    {
+      "text": "Now, here's why this matters to you as we move to superposition.",
+      "viText": "Bây giờ, đây là lý do tại sao điều này lại quan trọng với bạn khi chúng ta chuyển sang trạng thái chồng chất.",
+      "start": 377.12,
+      "duration": 3.77
+    },
+    {
+      "text": "A particle can exist in a combination of multiple possible states at the same",
+      "viText": "Một hạt có thể tồn tại trong sự kết hợp của nhiều trạng thái có thể có trong cùng một",
+      "start": 380.89,
+      "duration": 4.54
+    },
+    {
+      "text": "time before a measurement forces it into just one.",
+      "viText": "thời gian trước khi phép đo buộc nó chỉ còn một.",
+      "start": 385.43,
+      "duration": 2.95
+    },
+    {
+      "text": "This is not the particle secretly being in one state while we simply do",
+      "viText": "Đây không phải là hạt bí mật ở một trạng thái trong khi chúng ta chỉ làm",
+      "start": 388.38,
+      "duration": 4.19
+    },
+    {
+      "text": "not know which one.",
+      "viText": "không biết cái nào.",
+      "start": 392.57,
+      "duration": 2
+    },
+    {
+      "text": "It is genuinely undetermined until measured.",
+      "viText": "Nó thực sự không được xác định cho đến khi được đo.",
+      "start": 394.57,
+      "duration": 2.59
+    },
+    {
+      "text": "This matters because it is the entire basis of why quantum computers can be",
+      "viText": "Điều này quan trọng vì nó là toàn bộ cơ sở giải thích tại sao máy tính lượng tử có thể",
+      "start": 397.16,
+      "duration": 4.42
+    },
+    {
+      "text": "so powerful for certain problems.",
+      "viText": "rất mạnh mẽ cho một số vấn đề nhất định.",
+      "start": 401.58,
+      "duration": 2
+    },
+    {
+      "text": "A classical computer bit checks one possibility at a time.",
+      "viText": "Một bit máy tính cổ điển sẽ kiểm tra từng khả năng một.",
+      "start": 403.58,
+      "duration": 3.42
+    },
+    {
+      "text": "A cubit in superp position effectively represents multiple possibilities simultaneously which allows a quantum",
+      "viText": "Một cubit ở vị trí cao nhất thể hiện đồng thời nhiều khả năng một cách hiệu quả, cho phép lượng tử",
+      "start": 407,
+      "duration": 6.48
+    },
+    {
+      "text": "computer to test many potential solutions to certain problems at once.",
+      "viText": "máy tính để kiểm tra nhiều giải pháp tiềm năng cho một số vấn đề nhất định cùng một lúc.",
+      "start": 413.48,
+      "duration": 4.13
+    },
+    {
+      "text": "A company that assumes quantum computers are just faster.",
+      "viText": "Một công ty cho rằng máy tính lượng tử chỉ nhanh hơn mà thôi.",
+      "start": 417.61,
+      "duration": 3.36
+    },
+    {
+      "text": "Regular computers will misjudge what kinds of problems they are actually useful for and",
+      "viText": "Máy tính thông thường sẽ đánh giá sai loại vấn đề mà chúng thực sự hữu ích và",
+      "start": 420.97,
+      "duration": 5.13
+    },
+    {
+      "text": "will make poor decisions about where to invest research money.",
+      "viText": "sẽ đưa ra những quyết định sai lầm về việc đầu tư tiền nghiên cứu vào đâu.",
+      "start": 426.1,
+      "duration": 3.65
+    },
+    {
+      "text": "The key point is that superp position means genuinely holding multiple states at once,",
+      "viText": "Điểm mấu chốt là vị trí siêu hạng có nghĩa là thực sự nắm giữ nhiều trạng thái cùng một lúc,",
+      "start": 429.75,
+      "duration": 5.07
+    },
+    {
+      "text": "not hidden information.",
+      "viText": "không che giấu thông tin.",
+      "start": 434.82,
+      "duration": 2
+    },
+    {
+      "text": "Then comes measurement, also called wave function collapse.",
+      "viText": "Sau đó là phép đo, còn được gọi là sự sụp đổ của hàm sóng.",
+      "start": 436.82,
+      "duration": 3.48
+    },
+    {
+      "text": "The act of measuring a quantum system forces it out of superposition and into",
+      "viText": "Hành động đo một hệ lượng tử buộc nó thoát ra khỏi trạng thái chồng chất và rơi vào trạng thái",
+      "start": 440.3,
+      "duration": 4.54
+    },
+    {
+      "text": "one definite single state.",
+      "viText": "một trạng thái duy nhất xác định.",
+      "start": 444.84,
+      "duration": 2
+    },
+    {
+      "text": "This matters because it explains why you never see quantum effects in daily life.",
+      "viText": "Điều này quan trọng vì nó giải thích tại sao bạn không bao giờ nhìn thấy hiệu ứng lượng tử trong cuộc sống hàng ngày.",
+      "start": 446.84,
+      "duration": 4.77
+    },
+    {
+      "text": "Your car keys are not sitting in a blur of multiple locations.",
+      "viText": "Chìa khóa ô tô của bạn không nằm mờ ở nhiều vị trí.",
+      "start": 451.61,
+      "duration": 3.65
+    },
+    {
+      "text": "That is because they are constantly interacting with air molecules, light, and everything around",
+      "viText": "Đó là vì chúng liên tục tương tác với các phân tử không khí, ánh sáng và mọi thứ xung quanh",
+      "start": 455.26,
+      "duration": 5.66
+    },
+    {
+      "text": "them, which acts like continuous measurement, collapsing any quantum uncertainty instantly.",
+      "viText": "chúng, hoạt động giống như phép đo liên tục, thu gọn mọi sự bất định lượng tử ngay lập tức.",
+      "start": 460.92,
+      "duration": 5.36
+    },
+    {
+      "text": "This is the key part of understanding why the quantum world and the everyday",
+      "viText": "Đây là phần quan trọng để hiểu tại sao thế giới lượng tử và thế giới hàng ngày",
+      "start": 466.28,
+      "duration": 4.48
+    },
+    {
+      "text": "world look so different, even though the same underlying rules apply to both.",
+      "viText": "thế giới trông rất khác nhau, mặc dù các quy tắc cơ bản giống nhau áp dụng cho cả hai.",
+      "start": 470.76,
+      "duration": 4.54
+    },
+    {
+      "text": "The key point is that measurement forces a single definite outcome out of multiple",
+      "viText": "Điểm mấu chốt là phép đo tạo ra một kết quả xác định duy nhất từ ​​nhiều",
+      "start": 475.3,
+      "duration": 4.83
+    },
+    {
+      "text": "possibilities.",
+      "viText": "khả năng.",
+      "start": 480.13,
+      "duration": 2
+    },
+    {
+      "text": "Next is the uncertainty principle.",
+      "viText": "Tiếp theo là nguyên lý bất định.",
+      "start": 482.13,
+      "duration": 2
+    },
+    {
+      "text": "Certain pairs of properties like a particle's exact position and its exact momentum cannot",
+      "viText": "Một số cặp tính chất nhất định như vị trí chính xác của hạt và động lượng chính xác của nó không thể",
+      "start": 484.13,
+      "duration": 5.31
+    },
+    {
+      "text": "both be known precisely at the same time.",
+      "viText": "cả hai đều được biết chính xác cùng một lúc.",
+      "start": 489.44,
+      "duration": 2.42
+    },
+    {
+      "text": "This matters because it is not a flaw in our measuring tools.",
+      "viText": "Điều này quan trọng vì nó không phải là sai sót trong các công cụ đo lường của chúng tôi.",
+      "start": 491.86,
+      "duration": 3.6
+    },
+    {
+      "text": "It is a fundamental limit built into nature itself.",
+      "viText": "Đó là một giới hạn cơ bản được xây dựng trong tự nhiên.",
+      "start": 495.46,
+      "duration": 3.01
+    },
+    {
+      "text": "In semiconductor manufacturing, this principle sets a real physical limit on how small a",
+      "viText": "Trong sản xuất chất bán dẫn, nguyên tắc này đặt ra giới hạn vật lý thực sự về mức độ nhỏ của",
+      "start": 498.47,
+      "duration": 5.19
+    },
+    {
+      "text": "transistor can be made before its electrical behavior becomes unpredictable.",
+      "viText": "bóng bán dẫn có thể được tạo ra trước khi hành vi điện của nó trở nên khó dự đoán.",
+      "start": 503.66,
+      "duration": 4.48
+    },
+    {
+      "text": "Chip engineers pushing towards smaller and smaller transistor sizes eventually run into this wall",
+      "viText": "Các kỹ sư chip đang hướng tới kích thước bóng bán dẫn ngày càng nhỏ hơn cuối cùng cũng gặp phải bức tường này",
+      "start": 508.14,
+      "duration": 5.72
+    },
+    {
+      "text": "where electrons start behaving unpredictably no matter how good the manufacturing equipment is.",
+      "viText": "nơi các electron bắt đầu hành xử không thể đoán trước được cho dù thiết bị sản xuất có tốt đến đâu.",
+      "start": 513.86,
+      "duration": 5.6
+    },
+    {
+      "text": "An engineer who assumes this is just a matter of better tools will keep",
+      "viText": "Một kỹ sư cho rằng đây chỉ là vấn đề của các công cụ tốt hơn sẽ giữ",
+      "start": 519.46,
+      "duration": 4.19
+    },
+    {
+      "text": "chasing a solution that does not exist, wasting years of development.",
+      "viText": "theo đuổi một giải pháp không tồn tại, lãng phí nhiều năm phát triển.",
+      "start": 523.65,
+      "duration": 4.07
+    },
+    {
+      "text": "The key point is that some limits in physics come from nature, not from",
+      "viText": "Điểm mấu chốt là một số giới hạn trong vật lý đến từ tự nhiên, không phải từ",
+      "start": 527.72,
+      "duration": 4.19
+    },
+    {
+      "text": "equipment.",
+      "viText": "thiết bị.",
+      "start": 531.91,
+      "duration": 2
+    },
+    {
+      "text": "The last core concept is quantum tunneling.",
+      "viText": "Khái niệm cốt lõi cuối cùng là đường hầm lượng tử.",
+      "start": 533.91,
+      "duration": 2.53
+    },
+    {
+      "text": "Particles can pass through energy barriers that classical physics says they should not be",
+      "viText": "Các hạt có thể vượt qua các rào cản năng lượng mà vật lý cổ điển cho rằng chúng không nên",
+      "start": 536.44,
+      "duration": 5.25
+    },
+    {
+      "text": "able to cross at all.",
+      "viText": "có thể vượt qua chút nào.",
+      "start": 541.69,
+      "duration": 2
+    },
+    {
+      "text": "This matters because it is not a rare exotic effect.",
+      "viText": "Điều này quan trọng vì nó không phải là một hiệu ứng kỳ lạ hiếm gặp.",
+      "start": 543.69,
+      "duration": 3.07
+    },
+    {
+      "text": "It is used in real technology every day.",
+      "viText": "Nó được sử dụng trong công nghệ thực tế hàng ngày.",
+      "start": 546.76,
+      "duration": 2.36
+    },
+    {
+      "text": "Flash memory, the kind used in USB drives and solidstate drives, stores data by",
+      "viText": "Bộ nhớ flash, loại được sử dụng trong ổ USB và ổ đĩa thể rắn, lưu trữ dữ liệu bằng",
+      "start": 549.12,
+      "duration": 4.66
+    },
+    {
+      "text": "trapping electrons behind an insulating barrier.",
+      "viText": "bẫy các electron phía sau một hàng rào cách điện.",
+      "start": 553.78,
+      "duration": 2.83
+    },
+    {
+      "text": "to write or erase data, electrons are made to tunnel through that barrier, something",
+      "viText": "để ghi hoặc xóa dữ liệu, các electron được tạo ra để xuyên qua hàng rào đó, thứ gì đó",
+      "start": 556.61,
+      "duration": 4.95
+    },
+    {
+      "text": "that would be impossible under classical rules.",
+      "viText": "điều đó là không thể theo các quy tắc cổ điển.",
+      "start": 561.56,
+      "duration": 2.77
+    },
+    {
+      "text": "Understanding this explains why flash storage wears out over time.",
+      "viText": "Hiểu được điều này giải thích tại sao bộ lưu trữ flash bị hao mòn theo thời gian.",
+      "start": 564.33,
+      "duration": 3.89
+    },
+    {
+      "text": "Each tunneling event slightly damages the insulating barrier and after enough right cycles, the",
+      "viText": "Mỗi sự kiện đào hầm sẽ làm hư hỏng nhẹ hàng rào cách điện và sau đủ chu kỳ phù hợp,",
+      "start": 568.22,
+      "duration": 5.6
+    },
+    {
+      "text": "barrier degrades and the drive starts losing reliability.",
+      "viText": "rào cản xuống cấp và biến tần bắt đầu mất đi độ tin cậy.",
+      "start": 573.82,
+      "duration": 3.36
+    },
+    {
+      "text": "The key point is that tunneling allows particles to cross barriers that should be",
+      "viText": "Điểm mấu chốt là việc đào hầm cho phép các hạt vượt qua các rào cản lẽ ra là",
+      "start": 577.18,
+      "duration": 4.77
+    },
+    {
+      "text": "impossible to cross.",
+      "viText": "không thể vượt qua.",
+      "start": 581.95,
+      "duration": 2
+    },
+    {
+      "text": "And that ability is what makes flash storage work at all.",
+      "viText": "Và khả năng đó là yếu tố giúp cho bộ lưu trữ flash hoạt động được.",
+      "start": 583.95,
+      "duration": 3.36
+    },
+    {
+      "text": "Let me show you exactly how this works.",
+      "viText": "Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó.",
+      "start": 587.31,
+      "duration": 2.3
+    },
+    {
+      "text": "When several of these ideas come together in one real situation, designing a solid",
+      "viText": "Khi một số ý tưởng này kết hợp với nhau trong một tình huống thực tế, hãy thiết kế một",
+      "start": 589.61,
+      "duration": 4.83
+    },
+    {
+      "text": "state drive, data is stored by trapping electrons in a small structure and the",
+      "viText": "vững chắc ổ trạng thái, dữ liệu được lưu trữ bằng cách bẫy các electron trong một cấu trúc nhỏ và",
+      "start": 594.44,
+      "duration": 4.6
+    },
+    {
+      "text": "presence or absence of trapped electrons represents a zero or a one.",
+      "viText": "sự hiện diện hay vắng mặt của các electron bị bẫy đại diện cho số 0 hoặc một.",
+      "start": 599.04,
+      "duration": 4.01
+    },
+    {
+      "text": "That is quantization in action.",
+      "viText": "Đó là lượng tử hóa trong hành động.",
+      "start": 603.05,
+      "duration": 2
+    },
+    {
+      "text": "Discrete states representing discrete information.",
+      "viText": "Các trạng thái rời rạc thể hiện thông tin rời rạc.",
+      "start": 605.05,
+      "duration": 2.95
+    },
+    {
+      "text": "To write new data, engineers apply voltage to force electrons to tunnel through an",
+      "viText": "Để ghi dữ liệu mới, các kỹ sư sử dụng điện áp để buộc các electron đi xuyên qua",
+      "start": 608,
+      "duration": 4.83
+    },
+    {
+      "text": "insulating barrier into that storage structure.",
+      "viText": "hàng rào cách nhiệt vào cấu trúc lưu trữ đó.",
+      "start": 612.83,
+      "duration": 2.77
+    },
+    {
+      "text": "That is quantum tunneling doing the actual physical work of writing the bit.",
+      "viText": "Đó là đường hầm lượng tử thực hiện công việc vật lý thực tế là ghi bit.",
+      "start": 615.6,
+      "duration": 4.48
+    },
+    {
+      "text": "The insulating barrier cannot be made too thin because the uncertainty principle means a",
+      "viText": "Rào chắn cách điện không thể được làm quá mỏng vì nguyên lý bất định có nghĩa là",
+      "start": 620.08,
+      "duration": 5.19
+    },
+    {
+      "text": "very thin barrier allows electrons to leak through unintentionally corrupting stored data over time.",
+      "viText": "rào cản rất mỏng cho phép các electron rò rỉ qua vô tình làm hỏng dữ liệu được lưu trữ theo thời gian.",
+      "start": 625.27,
+      "duration": 5.89
+    },
+    {
+      "text": "That tension between wanting a thin barrier for easy writing and a thick barrier",
+      "viText": "Sự căng thẳng giữa việc muốn có một rào cản mỏng để viết dễ dàng và một rào cản dày",
+      "start": 631.16,
+      "duration": 4.72
+    },
+    {
+      "text": "for stable storage is a direct engineering consequence of the uncertainty principle.",
+      "viText": "để lưu trữ ổn định là hệ quả kỹ thuật trực tiếp của nguyên lý bất định.",
+      "start": 635.88,
+      "duration": 4.95
+    },
+    {
+      "text": "Finally, reading the data back is an act of measurement which forces the system",
+      "viText": "Cuối cùng, đọc lại dữ liệu là một hành động đo lường buộc hệ thống",
+      "start": 640.83,
+      "duration": 4.66
+    },
+    {
+      "text": "into one definite readout, either a clean zero or a clean one.",
+      "viText": "thành một kết quả xác định, có thể là số 0 sạch hoặc số 0 sạch.",
+      "start": 645.49,
+      "duration": 3.65
+    },
+    {
+      "text": "An engineering team that does not understand these four ideas working together will either",
+      "viText": "Một nhóm kỹ thuật không hiểu bốn ý tưởng này khi làm việc cùng nhau sẽ",
+      "start": 649.14,
+      "duration": 5.31
+    },
+    {
+      "text": "build a drive that fails quickly from leakage or one that is so overbuilt",
+      "viText": "xây dựng một ổ đĩa bị hỏng nhanh chóng do rò rỉ hoặc một ổ đĩa được xây dựng quá mức",
+      "start": 654.45,
+      "duration": 4.3
+    },
+    {
+      "text": "it costs more than necessary.",
+      "viText": "nó tốn kém hơn mức cần thiết.",
+      "start": 658.75,
+      "duration": 2
+    },
+    {
+      "text": "Understanding the physics directly affects the cost and reliability of the product.",
+      "viText": "Hiểu biết về vật lý ảnh hưởng trực tiếp đến giá thành và độ tin cậy của sản phẩm.",
+      "start": 660.75,
+      "duration": 4.89
+    },
+    {
+      "text": "Now let's cover the mistakes people commonly make.",
+      "viText": "Bây giờ hãy cùng điểm qua những sai lầm mà mọi người thường mắc phải.",
+      "start": 665.64,
+      "duration": 2.95
+    },
+    {
+      "text": "People often think the wave function is an actual physical wave made of some",
+      "viText": "Mọi người thường nghĩ hàm sóng là một sóng vật lý thực tế được tạo thành từ một số",
+      "start": 668.59,
+      "duration": 4.48
+    },
+    {
+      "text": "substance similar to a wave in water.",
+      "viText": "chất tương tự như sóng trong nước.",
+      "start": 673.07,
+      "duration": 2.18
+    },
+    {
+      "text": "This is easy to assume because the word wave implies something tangible moving through",
+      "viText": "Điều này dễ dàng giả định vì từ sóng ám chỉ một thứ gì đó hữu hình đang di chuyển qua",
+      "start": 675.25,
+      "duration": 5.07
+    },
+    {
+      "text": "space.",
+      "viText": "không gian.",
+      "start": 680.32,
+      "duration": 2
+    },
+    {
+      "text": "The fix is to remember it is a mathematical description of probability, not a",
+      "viText": "Cách khắc phục là hãy nhớ rằng đó là một mô tả toán học về xác suất, không phải",
+      "start": 682.32,
+      "duration": 4.54
+    },
+    {
+      "text": "physical object you could ever touch or see directly.",
+      "viText": "vật thể mà bạn có thể chạm vào hoặc nhìn thấy trực tiếp.",
+      "start": 686.86,
+      "duration": 3.12
+    },
+    {
+      "text": "People also often treat superp position as the particle secretly being in one state",
+      "viText": "Người ta cũng thường coi vị trí siêu hạng là hạt bí mật tồn tại trong một trạng thái",
+      "start": 689.98,
+      "duration": 4.89
+    },
+    {
+      "text": "while we just do not know which.",
+      "viText": "trong khi chúng tôi không biết cái nào.",
+      "start": 694.87,
+      "duration": 2
+    },
+    {
+      "text": "Similar to a coin that has already landed but is covered by your hand.",
+      "viText": "Tương tự như một đồng xu đã rơi xuống nhưng bị tay bạn che lại.",
+      "start": 696.87,
+      "duration": 4.13
+    },
+    {
+      "text": "This is an easy mistake because it matches ordinary intuition about hidden information.",
+      "viText": "Đây là một sai lầm dễ mắc phải vì nó phù hợp với trực giác thông thường về những thông tin ẩn giấu.",
+      "start": 701,
+      "duration": 5.13
+    },
+    {
+      "text": "The fix is to understand that the particle is genuinely undetermined until measurement happens,",
+      "viText": "Cách khắc phục là hiểu rằng hạt thực sự không được xác định cho đến khi phép đo xảy ra,",
+      "start": 706.13,
+      "duration": 5.6
+    },
+    {
+      "text": "not simply hidden from view.",
+      "viText": "không chỉ đơn giản là ẩn khỏi tầm nhìn.",
+      "start": 711.73,
+      "duration": 2
+    },
+    {
+      "text": "Many people also assume quantum effects should show up in everyday objects since those",
+      "viText": "Nhiều người cũng cho rằng các hiệu ứng lượng tử sẽ xuất hiện trong các vật thể hàng ngày vì những",
+      "start": 713.73,
+      "duration": 5.07
+    },
+    {
+      "text": "objects are also made of atoms.",
+      "viText": "đó các vật thể cũng được tạo thành từ các nguyên tử.",
+      "start": 718.8,
+      "duration": 2
+    },
+    {
+      "text": "This is easy to assume because popular explanations often blur the line between scales.",
+      "viText": "Điều này dễ dàng được giả định vì những lời giải thích phổ biến thường làm mờ đi ranh giới giữa các thang đo.",
+      "start": 720.8,
+      "duration": 5.13
+    },
+    {
+      "text": "The fix is to remember that everyday objects are constantly interacting with their environment",
+      "viText": "Cách khắc phục là hãy nhớ rằng các đồ vật hàng ngày liên tục tương tác với môi trường của chúng",
+      "start": 725.93,
+      "duration": 5.54
+    },
+    {
+      "text": "and that constant interaction acts like continuous measurement collapsing quantum effects before they ever",
+      "viText": "và sự tương tác liên tục đó hoạt động giống như các hiệu ứng lượng tử thu gọn trong phép đo liên tục trước khi chúng",
+      "start": 731.47,
+      "duration": 6.25
+    },
+    {
+      "text": "become noticeable.",
+      "viText": "trở nên đáng chú ý.",
+      "start": 737.72,
+      "duration": 2
+    },
+    {
+      "text": "Finally, many people think the uncertainty principle is about the limits of our measuring",
+      "viText": "Cuối cùng, nhiều người cho rằng nguyên lý bất định là về giới hạn đo lường của chúng ta",
+      "start": 739.72,
+      "duration": 5.25
+    },
+    {
+      "text": "instruments.",
+      "viText": "nhạc cụ.",
+      "start": 744.97,
+      "duration": 2
+    },
+    {
+      "text": "This is easy to assume because the word uncertainty sounds like a tool problem.",
+      "viText": "Điều này dễ dàng được giả định vì từ không chắc chắn nghe giống như một vấn đề về công cụ.",
+      "start": 746.97,
+      "duration": 4.66
+    },
+    {
+      "text": "The fix is to recognize that this is a fundamental property of nature itself,",
+      "viText": "Cách khắc phục là nhận ra rằng đây là một đặc tính cơ bản của tự nhiên,",
+      "start": 751.63,
+      "duration": 4.54
+    },
+    {
+      "text": "not something better equipment could ever get around.",
+      "viText": "không có thứ gì tốt hơn mà thiết bị có thể có được.",
+      "start": 756.17,
+      "duration": 3.12
+    },
+    {
+      "text": "Understanding tunneling explains why your solid state drive has a limited number of write",
+      "viText": "Hiểu về đường hầm giải thích tại sao ổ đĩa thể rắn của bạn có số lần ghi hạn chế",
+      "start": 759.29,
+      "duration": 5.25
+    },
+    {
+      "text": "cycles before it starts to fail, so you can plan storage decisions with realistic",
+      "viText": "theo chu kỳ trước khi nó bắt đầu hỏng, vì vậy bạn có thể lập kế hoạch cho các quyết định lưu trữ một cách thực tế",
+      "start": 764.54,
+      "duration": 4.77
+    },
+    {
+      "text": "expectations about drive lifespan.",
+      "viText": "mong đợi về tuổi thọ của ổ đĩa.",
+      "start": 769.31,
+      "duration": 2
+    },
+    {
+      "text": "Understanding quantization explains why LE and neon lighting produce specific fixed colors rather than",
+      "viText": "Hiểu về lượng tử hóa giải thích tại sao ánh sáng LE và neon tạo ra các màu cố định cụ thể thay vì",
+      "start": 771.31,
+      "duration": 6.01
+    },
+    {
+      "text": "a continuously adjustable range which matters if you are specifying lighting or signage for",
+      "viText": "phạm vi có thể điều chỉnh liên tục, điều này rất quan trọng nếu bạn chỉ định hệ thống chiếu sáng hoặc biển báo cho",
+      "start": 777.32,
+      "duration": 5.36
+    },
+    {
+      "text": "a project.",
+      "viText": "một dự án.",
+      "start": 782.68,
+      "duration": 2
+    },
+    {
+      "text": "Understanding superp position lets you tell the difference between genuine quantum computing capability and",
+      "viText": "Hiểu được vị trí siêu hạng cho phép bạn phân biệt được sự khác biệt giữa khả năng tính toán lượng tử thực sự và",
+      "start": 784.68,
+      "duration": 6.31
+    },
+    {
+      "text": "marketing hype which matters if you are making decisions about where research or investment",
+      "viText": "cường điệu tiếp thị sẽ quan trọng nếu bạn đưa ra quyết định về nơi nghiên cứu hoặc đầu tư",
+      "start": 790.99,
+      "duration": 5.36
+    },
+    {
+      "text": "dollars should go.",
+      "viText": "đô la nên đi.",
+      "start": 796.35,
+      "duration": 2
+    },
+    {
+      "text": "Understanding the uncertainty principle explains the real physical wall that chip manufacturers are running",
+      "viText": "Hiểu nguyên lý bất định giải thích bức tường vật lý thực sự mà các nhà sản xuất chip đang chạy",
+      "start": 798.35,
+      "duration": 6.31
+    },
+    {
+      "text": "into as transistors shrink, which matters if you are following or investing in semiconductor",
+      "viText": "khi bóng bán dẫn co lại, điều này quan trọng nếu bạn đang theo dõi hoặc đầu tư vào chất bán dẫn",
+      "start": 804.66,
+      "duration": 5.42
+    },
+    {
+      "text": "technology and want to understand why progress is slowing down.",
+      "viText": "công nghệ và muốn hiểu tại sao tiến độ lại chậm lại.",
+      "start": 810.08,
+      "duration": 3.71
+    },
+    {
+      "text": "You can now explain why atoms give off specific colors of light instead of",
+      "viText": "Bây giờ bạn có thể giải thích tại sao nguyên tử lại phát ra những màu ánh sáng cụ thể thay vì",
+      "start": 813.79,
+      "duration": 4.36
+    },
+    {
+      "text": "a smooth range based on how their electrons are allowed to hold energy.",
+      "viText": "một phạm vi trơn tru dựa trên cách các electron của chúng được phép giữ năng lượng.",
+      "start": 818.15,
+      "duration": 4.19
+    },
+    {
+      "text": "You can now separate real quantum computing capability from exaggerated claims based on what",
+      "viText": "Giờ đây, bạn có thể tách biệt khả năng tính toán lượng tử thực sự khỏi những tuyên bố phóng đại dựa trên những gì",
+      "start": 822.34,
+      "duration": 5.42
+    },
+    {
+      "text": "superp position actually does and does not provide.",
+      "viText": "vị trí siêu cấp thực sự có và không cung cấp.",
+      "start": 827.76,
+      "duration": 3.01
+    },
+    {
+      "text": "You can now explain why flash storage wears out over time and what physically",
+      "viText": "Bây giờ bạn có thể giải thích tại sao bộ lưu trữ flash bị hao mòn theo thời gian và những gì về mặt vật lý",
+      "start": 830.77,
+      "duration": 4.54
+    },
+    {
+      "text": "causes that wear.",
+      "viText": "gây ra sự mài mòn đó.",
+      "start": 835.31,
+      "duration": 2
+    },
+    {
+      "text": "You can now explain the uncertainty principle as a hard limit built into nature,",
+      "viText": "Bây giờ bạn có thể giải thích nguyên lý bất định như một giới hạn cố định được thiết lập sẵn trong tự nhiên,",
+      "start": 837.31,
+      "duration": 4.72
+    },
+    {
+      "text": "not a shortcoming of our tools.",
+      "viText": "không phải là một thiếu sót của các công cụ của chúng tôi.",
+      "start": 842.03,
+      "duration": 2
+    },
+    {
+      "text": "That class you sat through years ago gave you words without meaning.",
+      "viText": "Lớp học mà bạn đã học cách đây nhiều năm đã cho bạn những từ ngữ vô nghĩa.",
+      "start": 844.03,
+      "duration": 4.01
+    },
+    {
+      "text": "What you have now is the meaning those words were always supposed to carry.",
+      "viText": "Những gì bạn có bây giờ là ý nghĩa mà những từ đó luôn mang theo.",
+      "start": 848.04,
+      "duration": 4.42
+    },
+    {
+      "text": "Before you go, do like hundreds of others and make sure to grab the",
+      "viText": "Trước khi đi, hãy làm như hàng trăm người khác và nhớ lấy",
+      "start": 852.46,
+      "duration": 3.95
+    },
+    {
+      "text": "math bundle.",
+      "viText": "bó toán học.",
+      "start": 856.41,
+      "duration": 2
+    },
+    {
+      "text": "Simply scan the QR code or click on the link in the description box.",
+      "viText": "Chỉ cần quét mã QR hoặc nhấp vào liên kết trong hộp mô tả.",
+      "start": 858.41,
+      "duration": 4.01
+    },
+    {
+      "text": "You don't want to miss out on this one.",
+      "viText": "Bạn không muốn bỏ lỡ điều này.",
+      "start": 862.42,
+      "duration": 2.3
+    },
+    {
+      "text": "Trust me.",
+      "viText": "Hãy tin tôi.",
+      "start": 864.72,
+      "duration": 2
+    }
+  ]
+}

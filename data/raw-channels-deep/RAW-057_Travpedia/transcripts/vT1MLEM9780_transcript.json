@@ -1,0 +1,29 @@
+{
+  "videoId": "vT1MLEM9780",
+  "title": "Desert Secrets: How Life Finds a Way",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 3,
+  "fullText": "[Music] in the grand tapestry of our planet the most arresting Hues are found in the sprawling sunbaked Realms of sand from The Majestic [Music] Sahara to the Epic tapest of water carved",
+  "fullTextVi": "[Âm nhạc] trên tấm thảm lớn của hành tinh chúng ta, những màu sắc hấp dẫn nhất được tìm thấy trong Cõi cát trải dài dưới ánh nắng từ The Majestic [Music] Sahara đến Tấm thảm nước chạm khắc hoành tráng",
+  "segments": [
+    {
+      "text": "[Music] in the grand tapestry of our planet the most arresting Hues are found",
+      "viText": "[Âm nhạc] trên tấm thảm lớn của hành tinh chúng ta, những màu sắc hấp dẫn nhất được tìm thấy",
+      "start": 0,
+      "duration": 2117.5
+    },
+    {
+      "text": "in the sprawling sunbaked Realms of sand from The Majestic [Music] Sahara to the",
+      "viText": "trong Cõi cát trải dài dưới ánh nắng từ The Majestic [Music] Sahara đến",
+      "start": 2117.5,
+      "duration": 2200
+    },
+    {
+      "text": "Epic tapest of water carved",
+      "viText": "Tấm thảm nước chạm khắc hoành tráng",
+      "start": 4317.5,
+      "duration": 742.5
+    }
+  ]
+}

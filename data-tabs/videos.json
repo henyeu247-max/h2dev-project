@@ -1,0 +1,3287 @@
+[
+  {
+    "sku": "VIDEO-DD983D",
+    "title": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
+    "index": 1,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội Nhật Bản",
+    "size": 117657149,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@ธรรมสุข-2275",
+      "@新しい私の毎日",
+      "@心に残る話-y10k"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-ngach-thi-truong-nhat-va-phan-tich-cach-edit-de-khong-bi-quet-loi-do-ai-va-mot-so-loi-lien-quan",
+    "mp4": "video/VIDEO-DD983D/VIDEO-DD983D.mp4",
+    "image": "assets/thumbs/VIDEO-DD983D.png",
+    "published_at": "2026-08-14",
+    "contentNiche": "Drama Gia Đình & Xã Hội Nhật Bản",
+    "channelResolve": [
+      {
+        "handle": "@ธรรมสุข-2275",
+        "title": "スカッと感動物語",
+        "channelId": "UCNgAGbz8Vv4P9AQgd9iNa-g",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "CÓ",
+        "note": "Kênh 1 trong site gốc h2dev.vn: スカッと感動物語 (8.06K sub / 158 video, +2.09K sub/30d)."
+      },
+      {
+        "handle": "@新しい私の毎日",
+        "title": "明日へ歩く日々",
+        "channelId": "UCW8CW61Xssl3gXUB3dNzz1w",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "CÓ",
+        "note": "Kênh 2 trong site gốc h2dev.vn: tên hiển thị 明日へ歩く日々, handle thật @新しい私の毎日 (3.93K sub / 30 video, +2.86K sub/30d, cổ 2010)."
+      },
+      {
+        "handle": "@心に残る話-y10k",
+        "title": "心に残る話20",
+        "channelId": "UCTTKUlgCUrHRfQbNiQonnXA",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "CÓ",
+        "note": "Kênh 3 trong site gốc h2dev.vn: 心に残る話20 (5.02K sub / 62 video, +2.61K sub/30d, cổ 2009)."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-484f9e",
+    "title": "Ngách nhỏ bán content thị trường Việt và Cách edit hạn chế lỗi quét do AI mới nhất hiện tại",
+    "index": 2,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Triết Lý & Phật Pháp Việt Nam",
+    "size": 57888609,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@MộtĐờiBìnhAn-v6s",
+      "@자비의법음-j5h"
+    ],
+    "origin": "https://h2dev.vn/learn/study/ngach-nho-ban-content-thi-truong-viet-va-cach-edit-han-che-loi-quet-do-ai-moi-nhat-hien-tai",
+    "mp4": "video/VIDEO-484f9e/VIDEO-484f9e.mp4",
+    "image": "assets/thumbs/VIDEO-484f9e.png",
+    "published_at": "2026-08-08",
+    "contentNiche": "Triết Lý & Phật Pháp Việt Nam",
+    "channelResolve": [
+      {
+        "handle": "@자비의법음-j5h",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "CÓ",
+        "note": "vidIQ found: 자비의 법음 UCS6Ed0dqSbrS3dCB5q-x4Dw · 879 sub / +874 / 3 video / 30d. Còn sống. Chưa thêm kenh-mau (chỉ note)."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-e24c31",
+    "title": "Update ngách mới cực trends bán content view ngoại, show kênh mới hoàn toàn 5 video",
+    "index": 3,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Tâm Linh & Thu Hút May Mắn",
+    "size": 183819452,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@복이오는길",
+      "@mokamoka-e9f"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-ngach-moi-cuc-trends-ban-content-view-ngoai-show-kenh-moi-hoan-toan-5-video",
+    "mp4": "video/VIDEO-e24c31/VIDEO-e24c31.mp4",
+    "image": "assets/thumbs/VIDEO-e24c31.png",
+    "published_at": "2026-08-03",
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+  },
+  {
+    "sku": "VIDEO-a7bfd0",
+    "title": "Update ngách mới và khám kênh + giải thích một số lỗi tránh bị 0 view, lẹt đẹt, không lên được",
+    "index": 4,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Lời Chúa & Tâm Linh Ngoại",
+    "size": 178441037,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@은밀한응답",
+      "@장수채소습관"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-ngach-moi-va-kham-kenh-giai-thich-mot-so-loi-tranh-bi-0-view-let-det-khong-len-duoc",
+    "mp4": "video/VIDEO-a7bfd0/VIDEO-a7bfd0.mp4",
+    "image": "assets/thumbs/VIDEO-a7bfd0.png",
+    "published_at": "2026-07-29",
+    "contentNiche": "Lời Chúa & Tâm Linh Ngoại"
+  },
+  {
+    "sku": "VIDEO-4b3c09",
+    "title": "Update 4 ngách nhỏ làm bán content thị trường Hàn Quốc",
+    "index": 5,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Ẩm Thực & Mẹo Vặt Hàn Quốc",
+    "size": 347816031,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@시니어살림노트",
+      "@HealthyToday0",
+      "@desidilse",
+      "@RichPatternResearchInstitute",
+      "@의사가숨긴건강법-z9n"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-4-ngach-nho-lam-ban-content-thi-truong-han-quoc",
+    "mp4": "video/VIDEO-4b3c09/VIDEO-4b3c09.mp4",
+    "image": "assets/thumbs/VIDEO-4b3c09.png",
+    "published_at": "2026-07-26",
+    "contentNiche": "Ẩm Thực & Mẹo Vặt Hàn Quốc"
+  },
+  {
+    "sku": "VIDEO-28e1cc",
+    "title": "Show kênh mới vừa bật kiếm tiền Và Hướng dẫn thực chiến full quy trình làm Reup ngách nhỏ hoạt hình từ bilibili",
+    "index": 6,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Reup Hoạt Hình Bilibili",
+    "size": 357802877,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "hướng dẫn tool dịch",
+        "link": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt?ref=H2DEV-001",
+        "file": ""
+      },
+      {
+        "name": "https://space.bilibili.com/3546626561935534/upload/video",
+        "link": "https://space.bilibili.com/3546626561935534/upload/video",
+        "file": ""
+      },
+      {
+        "name": "https://space.bilibili.com/1692631217?spm_id_from=333.788.upinfo.detail.click",
+        "link": "https://space.bilibili.com/1692631217?spm_id_from=333.788.upinfo.detail.click",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/show-kenh-moi-vua-bat-kiem-tien-va-huong-dan-thuc-chien-full-quy-trinh-lam-reup-ngach-nho-hoat-hinh-tu-bilibili",
+    "mp4": "video/VIDEO-28e1cc/VIDEO-28e1cc.mp4",
+    "image": "assets/thumbs/VIDEO-28e1cc.png",
+    "published_at": "2026-07-22",
+    "contentNiche": "Reup Hoạt Hình Bilibili"
+  },
+  {
+    "sku": "VIDEO-d2cd90",
+    "title": "Update 5 ngách nhỏ bán content ngoại mới nhất",
+    "index": 7,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Triết Lý & Trẻ Hóa Nhật Bản",
+    "size": 198973528,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@quietstrength88",
+      "@アマテラス巫女あまね",
+      "@시니어살림노트",
+      "@みんなの若返りアカデミア",
+      "@スピリチュアルの泉-l4z"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-5-ngach-nho-ban-content-ngoai-moi-nhat",
+    "mp4": "video/VIDEO-d2cd90/VIDEO-d2cd90.mp4",
+    "image": "assets/thumbs/VIDEO-d2cd90.png",
+    "published_at": "2026-07-16",
+    "contentNiche": "Triết Lý & Trẻ Hóa Nhật Bản"
+  },
+  {
+    "sku": "VIDEO-9aff6d",
+    "title": "4 video nổ hơn 300k view - Update 2 ngách mới cực kỳ trends và hướng dẫn edit tạo khung cho ngách nhỏ...",
+    "index": 8,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật",
+    "size": 205302720,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@kurumanozokitai",
+      "@昔の人の知恵",
+      "@EricBennettMD"
+    ],
+    "origin": "https://h2dev.vn/learn/study/4-video-no-hon-300k-view-update-2-ngach-moi-cuc-ky-trends-va-huong-dan-edit-tao-khung-cho-ngach-nho",
+    "mp4": "video/VIDEO-9aff6d/VIDEO-9aff6d.mp4",
+    "image": "assets/thumbs/VIDEO-9aff6d.png",
+    "published_at": "2026-07-12",
+    "contentNiche": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật"
+  },
+  {
+    "sku": "VIDEO-e90874",
+    "title": "Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến",
+    "index": 9,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 252833711,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "Prompt em chia sẻ trong video",
+        "link": "https://docs.google.com/document/d/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-e90874/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA.txt"
+      },
+      {
+        "name": "web lấy kịch bản",
+        "link": "https://www.youtube-transcript.io/",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/tang-prompt-master-tu-nhan-ban-sang-moi-thi-truong-bat-ky-mong-muon-huong-dan-thuc-chien",
+    "mp4": "video/VIDEO-e90874/VIDEO-e90874.mp4",
+    "image": "assets/thumbs/VIDEO-e90874.png",
+    "published_at": "2026-07-06",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-c5837a",
+    "title": "Update share các ngách Bán content và Reup mới nhất - tất cả thị trường Nhật - Hàn - Việt",
+    "index": 10,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Tâm Linh & Triết Lý Saito Hitori",
+    "size": 211960392,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@斎藤一人の福の言霊",
+      "@oijfwaoldsfae",
+      "@fansdrWilliamLI",
+      "@NắngNhỏToonReview",
+      "@幻界と神域の扉",
+      "@다시이팔청춘-k5d",
+      "@양자과학이야기"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-share-cac-ngach-ban-content-va-reup-moi-nhat-tat-ca-thi-truong-nhat-han-viet",
+    "mp4": "video/VIDEO-c5837a/VIDEO-c5837a.mp4",
+    "image": "assets/thumbs/VIDEO-c5837a.png",
+    "published_at": "2026-07-02",
+    "contentNiche": "Tâm Linh & Triết Lý Saito Hitori"
+  },
+  {
+    "sku": "VIDEO-348217",
+    "title": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
+    "index": 11,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Nhân Bản Thị Trường (Hàn - Nhật)",
+    "size": 125155842,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@식탁보약·백세비결",
+      "@金運と言葉の力"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-them-2-ngach-moi-nhat-cuc-trend-thi-truong-han-va-nhat",
+    "mp4": "video/VIDEO-348217/VIDEO-348217.mp4",
+    "image": "assets/thumbs/VIDEO-348217.png",
+    "published_at": "2026-06-25",
+    "contentNiche": "Nhân Bản Thị Trường (Hàn - Nhật)"
+  },
+  {
+    "sku": "VIDEO-f74bb1",
+    "title": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất",
+    "index": 12,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Sức Khỏe & Rau Củ Dưa Chuột",
+    "size": 220807526,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@노후건강한끼",
+      "@건강백단",
+      "@장수채소습관"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-ngach-cuc-nho-thi-truong-han-quoc-moi-nhat",
+    "mp4": "video/VIDEO-f74bb1/VIDEO-f74bb1.mp4",
+    "image": "assets/thumbs/VIDEO-f74bb1.png",
+    "published_at": "2026-06-20",
+    "contentNiche": "Sức Khỏe & Rau Củ Dưa Chuột"
+  },
+  {
+    "sku": "VIDEO-1aaf46",
+    "title": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends",
+    "index": 13,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 148016471,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click",
+        "link": "https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click",
+        "file": ""
+      },
+      {
+        "name": "https://space.bilibili.com/3546888691256089?spm_id_from=333.788.upinfo.head.click",
+        "link": "https://space.bilibili.com/3546888691256089?spm_id_from=333.788.upinfo.head.click",
+        "file": ""
+      },
+      {
+        "name": "https://space.bilibili.com/3546852697836055?spm_id_from=333.788.upinfo.head.click",
+        "link": "https://space.bilibili.com/3546852697836055?spm_id_from=333.788.upinfo.head.click",
+        "file": ""
+      },
+      {
+        "name": "https://space.bilibili.com/3546819541863216?spm_id_from=333.788.upinfo.head.click",
+        "link": "https://space.bilibili.com/3546819541863216?spm_id_from=333.788.upinfo.head.click",
+        "file": ""
+      },
+      {
+        "name": "https://space.bilibili.com/1641862092?spm_id_from=333.788.upinfo.head.click",
+        "link": "https://space.bilibili.com/1641862092?spm_id_from=333.788.upinfo.head.click",
+        "file": ""
+      },
+      {
+        "name": "https://space.bilibili.com/3461566735322013?spm_id_from=333.788.upinfo.head.click",
+        "link": "https://space.bilibili.com/3461566735322013?spm_id_from=333.788.upinfo.head.click",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/show-kenh-thuc-chien-reup-va-share-them-cac-ngach-reup-cuc-trends",
+    "mp4": "video/VIDEO-1aaf46/VIDEO-1aaf46.mp4",
+    "image": "assets/thumbs/VIDEO-1aaf46.png",
+    "published_at": "2026-06-17",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-21956b",
+    "title": "Update ngách nhân bản thị trường Hàn, Nhật và Việt",
+    "index": 14,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Tâm Linh & Thu Hút May Mắn",
+    "size": 279140764,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@KapitalKompass-US",
+      "@LamNgo-qz3bw",
+      "@長生きの秘訣22",
+      "@노후의삶-s1s",
+      "@songkhoekhivegia",
+      "@Jinseioiyasukotoba",
+      "@Songkhoetungngay365",
+      "@늦기전에알아야할것"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-ngach-nhan-ban-thi-truong-han-nhat-va-viet",
+    "mp4": "video/VIDEO-21956b/VIDEO-21956b.mp4",
+    "image": "assets/thumbs/VIDEO-21956b.png",
+    "published_at": "2026-06-15",
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+  },
+  {
+    "sku": "VIDEO-e91589",
+    "title": "16 triệu/ 1 ngày - Doanh thu kênh thị trường Nhật, làm nhân bản thị trường",
+    "index": 15,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 26354465,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "file Skill ngách động vật",
+        "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/16-trieu-1-ngay-doanh-thu-kenh-thi-truong-nhat-lam-nhan-ban-thi-truong",
+    "mp4": "video/VIDEO-e91589/VIDEO-e91589.mp4",
+    "image": "assets/thumbs/VIDEO-e91589.jpg",
+    "published_at": "2026-06-14",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-34c92b",
+    "title": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường",
+    "index": 16,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Triết Lý & Phật Pháp",
+    "size": 148295073,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/update-ngach-moi-va-show-thuc-te-them-kenh-nhan-ban-thi-truong",
+    "mp4": "video/VIDEO-34c92b/VIDEO-34c92b.mp4",
+    "image": "assets/thumbs/VIDEO-34c92b.png",
+    "published_at": "2026-06-10",
+    "contentNiche": "Triết Lý & Phật Pháp"
+  },
+  {
+    "sku": "VIDEO-21824a",
+    "title": "Bật kiếm tiền kênh học viên Pro",
+    "index": 17,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 21668016,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
+        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/bat-kiem-tien-kenh-hoc-vien-pro",
+    "mp4": "video/VIDEO-21824a/VIDEO-21824a.mp4",
+    "image": "assets/thumbs/VIDEO-21824a.png",
+    "published_at": "2026-06-06",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-84a039",
+    "title": "Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất",
+    "index": 18,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Tâm Linh & Thu Hút May Mắn",
+    "size": 140519290,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@asuhetsudukumichi",
+      "@イエスのアファメーション"
+    ],
+    "origin": "https://h2dev.vn/learn/study/kenh-moi-tao-6-ngay-va-dang-duoc-5-video-da-du-bat-kiem-tien-update-2-ngach-ban-content-view-ngoai-moi-nhat",
+    "mp4": "video/VIDEO-84a039/VIDEO-84a039.mp4",
+    "image": "assets/thumbs/VIDEO-84a039.png",
+    "published_at": "2026-06-05",
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+  },
+  {
+    "sku": "VIDEO-817ae6",
+    "title": "Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật",
+    "index": 19,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Tâm Linh & Thu Hút May Mắn",
+    "size": 133715621,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@meophongthuy-m7d",
+      "@プレアデス最終通知556"
+    ],
+    "origin": "https://h2dev.vn/learn/study/kenh-moi-chi-7-video-da-no-du-dieu-kien-bat-kiem-tien-update-share-them-ngach-thi-truong-viet-va-nhat",
+    "mp4": "video/VIDEO-817ae6/VIDEO-817ae6.mp4",
+    "image": "assets/thumbs/VIDEO-817ae6.png",
+    "published_at": "2026-06-03",
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+  },
+  {
+    "sku": "VIDEO-4425fc",
+    "title": "Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét",
+    "index": 20,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 21455922,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-fix-va-giai-thich-cach-tao-tai-khoan-google-adsense-ga-an-toan-trau-nhat-de-khong-bi-quet",
+    "mp4": "video/VIDEO-4425fc/VIDEO-4425fc.mp4",
+    "image": "assets/thumbs/VIDEO-4425fc.png",
+    "published_at": "2026-05-30",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-2de9e4",
+    "title": "Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách)",
+    "index": 21,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Tâm Linh & Thu Hút May Mắn",
+    "size": 117167850,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@ThựcPhẩmSứcKhoẻ-u8y",
+      "@kienthucthanhoc9",
+      "@PHONGTHUYTIEMTANG"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-3-ngach-nho-ban-content-thi-truong-viet-view-qua-kinh-khung-sau-khi-chuyen-dung-chu-dengach",
+    "mp4": "video/VIDEO-2de9e4/VIDEO-2de9e4.mp4",
+    "image": "assets/thumbs/VIDEO-2de9e4.png",
+    "published_at": "2026-05-28",
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+  },
+  {
+    "sku": "VIDEO-2ba0d1",
+    "title": "Update ngách mới thị trường Nhật Bản làm bán content",
+    "index": 22,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Triết Lý & Phật Pháp",
+    "size": 205377478,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@偉人の救い",
+      "@izinnokatari",
+      "@kotobano-housekibako",
+      "@IjinNoNouri",
+      "@空海の真理",
+      "@お金の心理"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-ngach-moi-thi-truong-nhat-ban-lam-ban-content",
+    "mp4": "video/VIDEO-2ba0d1/VIDEO-2ba0d1.mp4",
+    "image": "assets/thumbs/VIDEO-2ba0d1.png",
+    "published_at": "2026-05-28",
+    "contentNiche": "Triết Lý & Phật Pháp"
+  },
+  {
+    "sku": "VIDEO-5d54d0",
+    "title": "Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ",
+    "index": 23,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 746399312,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "skill prompt của ngách trong video",
+        "link": "https://drive.google.com/drive/folders/14bf1nCiGzvU6aCSKjrs2lRxEDiJINdeT?usp=sharing",
+        "file": ""
+      },
+      {
+        "name": "【美輪明宏】",
+        "link": "https://www.youtube.com/watch?v=l06eKkZCkxQ",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/thuc-chien-huong-dan-train-claude-lam-prompt-bam-theo-kich-ban-doi-thu-xao-nau-cho-bat-ky-chu-de-ngach-nao-muon-quy-trinh-chuan-ban-content-danh-cho-ngach-bam-theo-70-kich-ban-doi-thu",
+    "mp4": "video/VIDEO-5d54d0/VIDEO-5d54d0.mp4",
+    "image": "assets/thumbs/VIDEO-5d54d0.png",
+    "published_at": "2026-05-23",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-2277b3",
+    "title": "Share thêm ngách nhỏ thị trường Việt và phân tích hướng dẫn tư duy làm nhân bản tất cả các thị trường",
+    "index": 24,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 210630442,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-them-ngach-nho-thi-truong-viet-va-phan-tich-huong-dan-tu-duy-lam-nhan-ban-tat-ca-cac-thi-truong",
+    "mp4": "video/VIDEO-2277b3/VIDEO-2277b3.mp4",
+    "image": "assets/thumbs/VIDEO-2277b3.png",
+    "published_at": "2026-05-20",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-f77c31",
+    "title": "Doanh thu kênh làm bán content ngách view Việt sau 10 ngày bật kiếm tiền",
+    "index": 25,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 15267371,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/doanh-thu-kenh-lam-ban-content-ngach-view-viet-sau-10-ngay-bat-kiem-tien",
+    "mp4": "video/VIDEO-f77c31/VIDEO-f77c31.mp4",
+    "image": "assets/thumbs/VIDEO-f77c31.jpeg",
+    "published_at": "2026-05-19",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-ca0b1a",
+    "title": "Show kênh thực chiến không che - hướng dẫn quy trình làm bán content nhân bản thị trường US sang Việt",
+    "index": 26,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 511557261,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "tài nguyên + prompt trong video em hướng dẫn Ở ĐÂY",
+        "link": "https://docs.google.com/document/d/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-ca0b1a/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y.txt"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/show-kenh-thuc-chien-khong-che-huong-dan-quy-trinh-lam-ban-content-nhan-ban-thi-truong-us-sang-viet",
+    "mp4": "video/VIDEO-ca0b1a/VIDEO-ca0b1a.mp4",
+    "image": "assets/thumbs/VIDEO-ca0b1a.jpeg",
+    "published_at": "2026-05-19",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-54c8f7",
+    "title": "Full quy trình thực chiến hướng dẫn dùng Claude train prompt bất kỳ chủ đề ngách nào mình muốn và cách đóng gói Skill để dùng làm viết kịch bản, tạo ảnh, tạo thumb... (video dài hơn 1 giờ) - Quy Trình dạng tự tạo làm mới chủ đề, kịch bản, hình ảnh... ",
+    "index": 27,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 795942524,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "tài nguyên em train trong video TẠI ĐÂY nhe",
+        "link": "https://drive.google.com/drive/folders/1PYGR8SHPWj9GdGLT361yP-1lTAvQwIVG?usp=sharing",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/full-quy-trinh-thuc-chien-huong-dan-dung-claude-train-prompt-bat-ky-chu-de-ngach-nao-minh-muon-va-cach-dong-goi-skill-de-dung-de-lam-viet-kich-ban-tao-anh-tao-thumb-video-dai-hon-1-gio",
+    "mp4": "video/VIDEO-54c8f7/VIDEO-54c8f7.mp4",
+    "image": "assets/thumbs/VIDEO-54c8f7.png",
+    "published_at": "2026-05-18",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-3e943c",
+    "title": "Nên dùng bản web hay app? và giải thích nên dùng gói nào của Claude AI",
+    "index": 28,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 10530835,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/nen-dung-ban-web-hay-app-va-giai-thich-nen-dung-goi-nao-cua-claude-ai",
+    "mp4": "video/VIDEO-3e943c/VIDEO-3e943c.mp4",
+    "image": "assets/thumbs/VIDEO-3e943c.jpeg",
+    "published_at": "2026-05-16",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-469cb5",
+    "title": "Update thêm kênh đối thủ - ngách thị trường Hoa Kỳ (US)",
+    "index": 29,
+    "market": [
+      "🇺🇸 Mỹ"
+    ],
+    "niche": "Lời Chúa & Tâm Linh Ngoại",
+    "size": 70878187,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@biblemadeclear26",
+      "@scripturemadesimpleyt",
+      "@ScriptureMadeSimpleTV",
+      "@theopenscriptures",
+      "@BibleLegacyAssets98"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-them-kenh-doi-thu-ngach-thi-truong-hoa-ky-us",
+    "mp4": "video/VIDEO-469cb5/VIDEO-469cb5.mp4",
+    "image": "assets/thumbs/VIDEO-469cb5.jpeg",
+    "published_at": "2026-05-15",
+    "contentNiche": "Lời Chúa & Tâm Linh Ngoại"
+  },
+  {
+    "sku": "VIDEO-7312df",
+    "title": "Bật kiếm tiền cho 2 kênh làm Reup hoạt hình - Show kênh không che",
+    "index": 30,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 3950378,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/bat-kiem-tien-cho-2-kenh-lam-reup-hoat-hinh-show-kenh-khong-che",
+    "mp4": "video/VIDEO-7312df/VIDEO-7312df.mp4",
+    "image": "assets/thumbs/VIDEO-7312df.jpeg",
+    "published_at": "2026-05-13",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-2235fb",
+    "title": "Show kênh REUP nhân bản thị trường Hoa Kỳ, view cực kỳ kinh khủng + thêm kênh thị trường Thái Lan và hướng dẫn tư duy làm đúng ngách đúng thị trường auto có view",
+    "index": 31,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 102260203,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/show-kenh-reup-nhan-ban-thi-truong-hoa-ky-view-cuc-ky-kinh-khung-them-kenh-thi-truong-thai-lan-va-huong-dan-tu-duy-lam-dung-ngach-dung-thi-truong-auto-co-view",
+    "mp4": "video/VIDEO-2235fb/VIDEO-2235fb.mp4",
+    "image": "assets/thumbs/VIDEO-2235fb.jpeg",
+    "published_at": "2026-05-13",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-e9e879",
+    "title": "Thực chiến & Show kênh ngách làm reup mới bật kiếm tiền - Full quy trình thực chiến sản xuất video -> đăng video lên kênh không che ",
+    "index": 32,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 136158714,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/thuc-chien-va-show-kenh-ngach-lam-reup-moi-bat-kiem-tien-full-quy-trinh-thuc-chien-san-xuat-video-dang-video-len-kenh-khong-che",
+    "mp4": "video/VIDEO-e9e879/VIDEO-e9e879.mp4",
+    "image": "assets/thumbs/VIDEO-e9e879.jpeg",
+    "published_at": "2026-05-11",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-6283a6",
+    "title": "Update free tool tạo giọng đọc tiếng Việt (Ngọc Huyền) vào tool dịch Phụ đề SRT",
+    "index": 33,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 26812421,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "https://h2devtool.com/",
+        "link": "https://h2devtool.com/",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt",
+    "mp4": "video/VIDEO-6283a6/VIDEO-6283a6.mp4",
+    "image": "assets/thumbs/VIDEO-6283a6.jpeg",
+    "published_at": "2026-05-11",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-46c57e",
+    "title": "KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026",
+    "index": 34,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 29383580,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
+        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/khang-loi-su-dung-lai-noi-dung-trung-lap-noi-dung-moi-nhat-2026",
+    "mp4": "video/VIDEO-46c57e/VIDEO-46c57e.mp4",
+    "image": "assets/thumbs/VIDEO-46c57e.png",
+    "published_at": "2026-05-08",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-b1208e",
+    "title": "KÊNH BUILD ĐÚNG 7 NGÀY - SHARE THÊM 3 NGÁCH CỰC NHỎ REUP MỚI NHẤT CỰC TRENDS",
+    "index": 35,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 138115106,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/kenh-build-dung-7-ngay-share-them-3-ngach-cuc-nho-reup-moi-nhat-cuc-trends",
+    "mp4": "video/VIDEO-b1208e/VIDEO-b1208e.mp4",
+    "image": "assets/thumbs/VIDEO-b1208e.jpeg",
+    "published_at": "2026-05-07",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-1acb10",
+    "title": "SHARE NGÁCH REUP HOẠT HÌNH TRUNG QUỐC RẤT TRENDS FULL BỘ MỚI NHẤT",
+    "index": 36,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 140556837,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-ngach-reup-hoat-hinh-trung-quoc-rat-trends-full-bo-moi-nhat",
+    "mp4": "video/VIDEO-1acb10/VIDEO-1acb10.mp4",
+    "image": "assets/thumbs/VIDEO-1acb10.jpeg",
+    "published_at": "2026-05-04",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-a1c98f",
+    "title": "HƯỚNG DẪN QUY TRÌNH LÀM THUMB - CLONE THUMB THEO GIỐNG 100% ĐỐI THỦ TỪ FONT CHỮ PHONG CÁCH ĐỐI THỦ - MẢNH GHÉP CUỐI CÙNG CỰC KỲ QUAN TRỌNG KHI LÀM VIDEO ",
+    "index": 37,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 215886558,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-quy-trinh-lam-thumb-clone-thumb-theo-giong-100-doi-thu-tu-font-chu-phong-cach-doi-thu-manh-ghep-cuoi-cung-cuc-ky-quan-trong-khi-lam-video",
+    "mp4": "video/VIDEO-a1c98f/VIDEO-a1c98f.mp4",
+    "image": "assets/thumbs/VIDEO-a1c98f.jpeg",
+    "published_at": "2026-05-02",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-70f1f1",
+    "title": "KEY BÁN CONTENT NGÁCH NHỎ ĐỨC PHẬT VÀ CHÚA THỊ TRƯỜNG HÀN QUỐC",
+    "index": 38,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Triết Lý & Phật Pháp",
+    "size": 91848893,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@こころの道しるべブッダの教え",
+      "@은빛복음",
+      "@주님의손길-handofgod"
+    ],
+    "origin": "https://h2dev.vn/learn/study/key-ban-content-ngach-nho-duc-phat-va-chua-thi-truong-han-quoc",
+    "mp4": "video/VIDEO-70f1f1/VIDEO-70f1f1.mp4",
+    "image": "assets/thumbs/VIDEO-70f1f1.jpeg",
+    "published_at": "2026-05-01",
+    "contentNiche": "Triết Lý & Phật Pháp"
+  },
+  {
+    "sku": "VIDEO-33f474",
+    "title": "CHỈ MỚI 5 VIDEO - KÊNH MỚI LẬP 14/04/2026 NỔ VIEW QUÁ KHIẾP VỚI NGÁCH TÂM LINH, LUẬT HẤP DẪN THỊ TRƯỜNG NHẬT BẢN ",
+    "index": 39,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "size": 97757676,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/chi-moi-5-video-kenh-moi-lap-14042026-no-view-qua-khiep-voi-ngach-tam-linh-luat-hap-dan-thi-truong-nhat-ban",
+    "mp4": "video/VIDEO-33f474/VIDEO-33f474.mp4",
+    "image": "assets/thumbs/VIDEO-33f474.jpeg",
+    "published_at": "2026-04-27",
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+  },
+  {
+    "sku": "VIDEO-28bb9b",
+    "title": "SHARE NGÁCH REUP CỰC TRENDS VÀ 3 NGÁCH BÁN CONTENT VIEW VIỆT - CLONE THEO ĐỐI THỦ",
+    "index": 40,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 77386518,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-ngach-reup-cuc-trends-va-3-ngach-ban-content-view-viet-clone-theo-doi-thu",
+    "mp4": "video/VIDEO-28bb9b/VIDEO-28bb9b.mp4",
+    "image": "assets/thumbs/VIDEO-28bb9b.jpeg",
+    "published_at": "2026-04-23",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-9f9fbc",
+    "title": "*BẮT BUỘC PHẢI XEM - DÀNH CHO NGƯỜI MỚI HOÀN TOÀN CHƯA BIẾT GÌ - HƯỚNG DẪN FULL QUY TRÌNH SETUP SETTING KÊNH CHUẨN NGAY TỪ ĐẦU THEO CHÍNH SÁCH MỚI NHẤT 2026 (TẠO KÊNH, SETUP CÀI ĐẶT KÊNH, SEO KÊNH, NGÂM KÊNH, NGÁCH LÀM...)",
+    "index": 41,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 172556570,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/bat-buoc-phai-xem-danh-cho-nguoi-moi-hoan-toan-chua-biet-gi-huong-dan-full-quy-trinh-setup-setting-kenh-chuan-ngay-tu-dau-theo-chinh-sach-moi-nhat-2026-tao-kenh-setup-cai-dat-kenh-seo-kenh-ngam-kenh-ngach-lam",
+    "mp4": "video/VIDEO-9f9fbc/VIDEO-9f9fbc.mp4",
+    "image": "assets/thumbs/VIDEO-9f9fbc.jpeg",
+    "published_at": "2026-04-22",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-10f129",
+    "title": "SHARE KEY NGÁCH NHỎ VIEW VIỆT BÁN CONTENT VÀ HƯỚNG DẪN TƯ DUY ÁP DỤNG LÀM NHÂN BẢN THỊ TRƯỜNG KHÔNG BAO GIỜ LO THIẾU KỊCH BẢN CONTENT",
+    "index": 42,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 93598822,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@trihueconhan-vn",
+      "@BàiHọcTuổiGià-VN"
+    ],
+    "origin": "https://h2dev.vn/learn/study/share-key-ngach-nho-view-viet-ban-content-va-huong-dan-tu-duy-ap-dung-lam-nhan-ban-thi-truong-khong-bao-gio-lo-thieu-kich-ban-content",
+    "mp4": "video/VIDEO-10f129/VIDEO-10f129.mp4",
+    "image": "assets/thumbs/VIDEO-10f129.jpeg",
+    "published_at": "2026-04-19",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-2553da",
+    "title": "SHOW THỰC TẾ KÊNH EM BUILD LÀM TRONG 20 NGÀY KHÔNG CHE VÀ VỪA ĐỦ ĐẾN ĐIỀU KIỆN BẬT KIẾM TIỀN | UPDATE 18-04-2026",
+    "index": 43,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 41534496,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "forms thông tin muốn mua kênh",
+        "link": "https://forms.gle/8My4gaTxouE8JtAL7",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/show-thuc-te-kenh-em-build-lam-trong-20-ngay-khong-che-va-vua-du-den-dieu-kien-bat-kiem-tien-update-18-04-2026",
+    "mp4": "video/VIDEO-2553da/VIDEO-2553da.mp4",
+    "image": "assets/thumbs/VIDEO-2553da.jpeg",
+    "published_at": "2026-04-18",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-3fd0d9",
+    "title": "SHARE NGÁCH CỰC NHỎ REUP HOẠT HÌNH TRUNG VÀ SHOW 2 KÊNH MỚI BUILD",
+    "index": 44,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 46191981,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "group tool dịch",
+        "link": "https://zalo.me/g/wmd6w4pqzopkuj5huww5",
+        "file": ""
+      }
+    ],
+    "channels": [
+      "@Kori_Sub",
+      "@Kyn_Sub"
+    ],
+    "origin": "https://h2dev.vn/learn/study/share-ngach-cuc-nho-reup-hoat-hinh-trung-va-show-2-kenh-moi-build",
+    "mp4": "video/VIDEO-3fd0d9/VIDEO-3fd0d9.mp4",
+    "image": "assets/thumbs/VIDEO-3fd0d9.jpeg",
+    "published_at": "2026-04-17",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-502960",
+    "title": "QUÁ KINH KÊNH 3 VIDEO / 1 NGÀY VỚI NGÁCH DRAMA NHẬT BẢN VÀ KÊNH HOÀN TOÀN ĐANG BẬT KIẾM TIỀN - CÁCH EDIT TRÁNH LỖI KHÔNG TRUNG THỰC MỚI NHẤT VÀ CHẮC CHẮN LÀ CAO SIÊU NHẤT HIỆN NAY",
+    "index": 45,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 97864614,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@静かな家族の秘密"
+    ],
+    "origin": "https://h2dev.vn/learn/study/qua-kinh-kenh-3-video-1-ngay-voi-ngach-drama-nhat-ban-va-kenh-hoan-toan-dang-bat-kiem-tien-cach-edit-tranh-loi-khong-trung-thuc-moi-nhat-va-chac-chan-la-cao-sieu-nhat-hien-nay",
+    "mp4": "video/VIDEO-502960/VIDEO-502960.mp4",
+    "image": "assets/thumbs/VIDEO-502960.jpeg",
+    "published_at": "2026-04-16",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-9873fb",
+    "title": "Khám kênh thực tế thành viên Pro sau video đầu tiên – Phân tích dữ liệu và hướng dẫn áp dụng tư duy nhân bản thị trường để phát triển kênh",
+    "index": 46,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Khám Kênh Thực Chiến",
+    "size": 21470760,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/show-kham-kenh-ket-qua-sau-1-video-dau-tien-cua-thanh-vien-pro-giai-thich-them-ap-dung-cac-van-de-ve-thi-truong",
+    "mp4": "video/VIDEO-9873fb/VIDEO-9873fb.mp4",
+    "image": "assets/thumbs/VIDEO-9873fb.jpeg",
+    "published_at": "2026-04-15",
+    "contentNiche": "Khám Kênh Thực Chiến"
+  },
+  {
+    "sku": "VIDEO-10ceec",
+    "title": "SHOW NGÁCH REUP MỚI CỰC HOT VÀ NHIỀU NGUỒN GỐC ĐỂ LÀM TỪ BILIBILI",
+    "index": 47,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 65345854,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "NGUỒN GỐC BILIBILI",
+        "link": "https://space.bilibili.com/292057296?spm_id_from=333.788.upinfo.head.click",
+        "file": ""
+      }
+    ],
+    "channels": [
+      "@Camnhonvietsub"
+    ],
+    "origin": "https://h2dev.vn/learn/study/show-ngach-reup-moi-cuc-hot-va-nhieu-nguon-goc-de-lam-tu-bilibili",
+    "mp4": "video/VIDEO-10ceec/VIDEO-10ceec.mp4",
+    "image": "assets/thumbs/VIDEO-10ceec.jpeg",
+    "published_at": "2026-04-14",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-e83319",
+    "title": "SHARE NGÁCH NHỎ THỊ TRƯỜNG NHẬT ĐANG CỰC TREDNS VÀ HƯỚNG DẪN TƯ DUY NHÂN BẢN THỊ TRƯỜNG - SẼ KHÔNG BAO GIỜ THIẾU NGÁCH VÀ THỊ TRƯỜNG ĐỂ LÀM",
+    "index": 48,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 214323479,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@偉大さJAPAN721",
+      "@家族の物語449"
+    ],
+    "origin": "https://h2dev.vn/learn/study/share-ngach-nho-thi-truong-nhat-dang-cuc-tredns-va-huong-dan-tu-duy-nhan-ban-thi-truong-se-khong-bao-gio-thieu-ngach-va-thi-truong-de-lam",
+    "mp4": "video/VIDEO-e83319/VIDEO-e83319.mp4",
+    "image": "assets/thumbs/VIDEO-e83319.jpeg",
+    "published_at": "2026-04-13",
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "channelResolve": [
+      {
+        "handle": "@家族の物語449",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "KHÔNG-VERIFY",
+        "note": "channel_stats NOT FOUND; channel_search fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-9a6957",
+    "title": "NGÁCH CỰC NHỎ KINH TẾ THỊ TRƯỜNG HÀN (EDIT THUẦN TRÁNH LỖI KHÔNG TRUNG THỰC)   *LƯU Ý: KHÔNG PHẢI DẠNG NGƯỜI QUE",
+    "index": 49,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 68581922,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@UC-pBHWL4Eb7QwBTF0072Afg"
+    ],
+    "origin": "https://h2dev.vn/learn/study/ngach-cuc-nho-kinh-te-thi-truong-han-edit-thuan-tranh-loi-khong-trung-thuc-luu-y-khong-phai-dang-nguoi-que",
+    "mp4": "video/VIDEO-9a6957/VIDEO-9a6957.mp4",
+    "image": "assets/thumbs/VIDEO-9a6957.jpeg",
+    "published_at": "2026-04-11",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "channelResolve": [
+      {
+        "handle": "@UC-pBHWL4Eb7QwBTF0072Afg",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "CÓ",
+        "note": "Cùng channel ID, title 투자 전략 · 5.880 sub / −10 sub / 0 video / 30d · last 2026-06-10. Không 404. Chưa thêm kenh-mau."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-ba3904",
+    "title": "Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev",
+    "index": 50,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Cộng Đồng & Hỗ Trợ VIP",
+    "size": 31662577,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "THAM GIA VÀO GROUP CỘNG ĐỒNG TẠI ĐÂY!",
+        "link": "https://www.facebook.com/share/g/1Av3v37xj7/?mibextid=wwXIfr",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-tham-gia-cong-dong-vip-rieng-tu-giao-luu-trao-doi-va-ho-tro-youtube-h2dev",
+    "mp4": "video/VIDEO-ba3904/VIDEO-ba3904.mp4",
+    "image": "assets/thumbs/VIDEO-ba3904.jpg",
+    "published_at": "2026-04-10",
+    "contentNiche": "Cộng Đồng & Hỗ Trợ VIP"
+  },
+  {
+    "sku": "VIDEO-acd33f",
+    "title": "NGUỒN MỚI REUP \"CÂU CÁ VẠN CÂN\" MỚI NHẤT - VIEW QUÁ KINH KHỦNG - SHOW 2 KÊNH MỚI ĐANG LÀM THẬT SỰ KHIẾP SỢ VÌ VIEW",
+    "index": 51,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 70689110,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@ChuXinDiaoYu01",
+      "@mimymedia",
+      "@kyzoravietsub"
+    ],
+    "origin": "https://h2dev.vn/learn/study/nguon-moi-reup-cau-ca-van-can-moi-nhat-view-qua-kinh-khung-show-2-kenh-moi-dang-lam-that-su-khiep-so-vi-view",
+    "mp4": "video/VIDEO-acd33f/VIDEO-acd33f.mp4",
+    "image": "assets/thumbs/VIDEO-acd33f.jpeg",
+    "published_at": "2026-04-09",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-1a7f58",
+    "title": "NGÁCH NHỎ THỊ TRƯỜNG HÀN + NHẬT (PHÂN TÍCH HƯỚNG LÀM CHUẨN TRÁNH LỖI KHÔNH TRUNG THỰC MỚI NHẤT TỪ KÊNH ĐỐI THỦ)",
+    "index": 52,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 94848406,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@붓다의등불",
+      "@静思の道"
+    ],
+    "origin": "https://h2dev.vn/learn/study/ngach-nho-thi-truong-han-nhat-phan-tich-huong-lam-chuan-tranh-loi-khonh-trung-thuc-moi-nhat-tu-kenh-doi-thu",
+    "mp4": "video/VIDEO-1a7f58/VIDEO-1a7f58.mp4",
+    "image": "assets/thumbs/VIDEO-1a7f58.jpeg",
+    "published_at": "2026-04-08",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-5785a5",
+    "title": "THỰC CHIẾN KÊNH ĐANG BẬT KIẾM TIỀN NGÁCH REUP MỚI NHẤT HƯỚNG DẪN SEARCH NGUỒN GỐC VÀ LÀM TỪ A-Z",
+    "index": 53,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 129888109,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "https://h2devtool.com/",
+        "link": "https://h2devtool.com/",
+        "file": ""
+      }
+    ],
+    "channels": [
+      "@Tieulongreview2026"
+    ],
+    "origin": "https://h2dev.vn/learn/study/thuc-chien-kenh-dang-bat-kiem-tien-ngach-reup-moi-nhat-huong-dan-search-nguon-goc-va-lam-tu-a-z",
+    "mp4": "video/VIDEO-5785a5/VIDEO-5785a5.mp4",
+    "image": "assets/thumbs/VIDEO-5785a5.jpeg",
+    "published_at": "2026-04-06",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-64130d",
+    "title": "TOOL DỊCH PHỤ ĐỀ SRT VIP - HƯỚNG DẪN DÙNG TOOL DỊCH PHỤ ĐỀ SRT CHUYÊN VIETSUB LÀM REUP/ BÁN CONTENT",
+    "index": 54,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 83691418,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "https://h2devtool.com/",
+        "link": "https://h2devtool.com/",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/tool-dich-phu-de-srt-vip-huong-dan-dung-tool-dich-phu-de-srt-chuyen-vietsub-lam-reup-ban-content",
+    "mp4": "video/VIDEO-64130d/VIDEO-64130d.mp4",
+    "image": "assets/thumbs/VIDEO-64130d.jpeg",
+    "published_at": "2026-04-05",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-5c0b20",
+    "title": "THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG",
+    "index": 55,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 149689898,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@Dadstruerevenge",
+      "@똑똑해지는경제학-m2y",
+      "@방구석워런버핏",
+      "@AnNhienChuyenDoiBinhDi"
+    ],
+    "origin": "https://h2dev.vn/learn/study/thuc-chien-share-ngach-thi-truong-us-hoa-ky-kenh-dang-bat-kiem-tien-va-them-2-ngach-thi-truong-han-va-viet-nhan-ban-thi-truong",
+    "mp4": "video/VIDEO-5c0b20/VIDEO-5c0b20.mp4",
+    "image": "assets/thumbs/VIDEO-5c0b20.jpeg",
+    "published_at": "2026-04-05",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-3f85a1",
+    "title": "SHARE KEY NGÁCH BÁN CONTENT THỊ TRƯỜNG CANADA VÀ NHẬT - RPM CỰC CAO",
+    "index": 56,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 104172638,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@CandyVengeance",
+      "@100歳まで元気1"
+    ],
+    "origin": "https://h2dev.vn/learn/study/share-key-ngach-ban-content-thi-truong-canada-va-nhat-rpm-cuc-cao",
+    "mp4": "video/VIDEO-3f85a1/VIDEO-3f85a1.mp4",
+    "image": "assets/thumbs/VIDEO-3f85a1.jpeg",
+    "published_at": "2026-04-03",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-bf7b32",
+    "title": "THỰC CHIẾN KÊNH ĐANG BẬT KIẾM TIỀN NGÁCH REUP/ BÁN CONTENT CỰC MỚI - SHARE KEY VÀ HƯỚNG DẪN SEARCH KÊNH NGUỒN GỐC RA HÀNG LOẠT",
+    "index": 57,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 90508623,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@Socnaureview2026"
+    ],
+    "origin": "https://h2dev.vn/learn/study/thuc-chien-kenh-dang-bat-kiem-tien-ngach-reup-ban-content-cuc-moi-share-key-va-huong-dan-search-kenh-nguon-goc-ra-hang-loat",
+    "mp4": "video/VIDEO-bf7b32/VIDEO-bf7b32.mp4",
+    "image": "assets/thumbs/VIDEO-bf7b32.jpeg",
+    "published_at": "2026-04-02",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-4a5aac",
+    "title": "SHARE NGÁCH REUP VIETSUB MỚI NHẤT CỰC TRENDS, VIEW QUÁ KHIẾP - RẤT ÍT CẠNH TRANH VÀ SHARE NGUỒN GỐC ĐỂ LÀM - UPDATE 30-03-2026",
+    "index": 58,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 92450597,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "kênh nguồn gốc tặng kèm (mọi người có thể tự tìm thêm như e đã hướng dẫn)",
+        "link": "https://v.douyin.com/rHlTXqwqe7k/",
+        "file": ""
+      },
+      {
+        "name": "thêm nguồn gốc (tặng kèm)",
+        "link": "https://v.douyin.com/b3sSc-MXVUY/",
+        "file": ""
+      }
+    ],
+    "channels": [
+      "@keodeovietsub"
+    ],
+    "origin": "https://h2dev.vn/learn/study/share-ngach-reup-vietsub-moi-nhat-cuc-trends-view-qua-khiep-rat-it-canh-tranh-va-share-nguon-goc-de-lam-update-30-03-2026",
+    "mp4": "video/VIDEO-4a5aac/VIDEO-4a5aac.mp4",
+    "image": "assets/thumbs/VIDEO-4a5aac.jpeg",
+    "published_at": "2026-03-30",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-a2b317",
+    "title": "CHỈ MỚI 4 VIDEO NGÁCH US (HOA KỲ) NÀY ĐÃ NỔ HƠN GẦN 3 TRIỆU VIEW VÀ ĐANG BẬT KIẾM TIỀN + SHARE THÊM 3 NGÁCH THỊ TRƯỜNG US + NGA VÀ GIẢI THÍCH CHỌN NGÁCH/ THỊ TRƯỜNG LÀM ĐỂ DỄ LÊN NHẤT",
+    "index": 59,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 88562194,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@MindfulPawsPsychology",
+      "@UCeVwhrEnYjCNdaDr47x4dSw",
+      "@UCEGZ_eUt6HeseHScQEcqTxw",
+      "@UCqZpuhhJC5G4kfvBG7MTAXg"
+    ],
+    "origin": "https://h2dev.vn/learn/study/chi-moi-4-video-ngach-us-hoa-ky-nay-da-no-hon-gan-3-trieu-view-va-dang-bat-kiem-tien-share-them-3-ngach-thi-truong-us-nga-va-giai-thich-chon-ngach-thi-truong-lam-de-de-len-nhat",
+    "mp4": "video/VIDEO-a2b317/VIDEO-a2b317.mp4",
+    "image": "assets/thumbs/VIDEO-a2b317.jpeg",
+    "published_at": "2026-03-29",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-2469ee",
+    "title": "SHARE THÊM NGÁCH REUP CỰC MỚI NHẤT - CÁC KÊNH ĐỐI THỦ MỚI CHỈ 5 VIDEO VÀ HƯỚNG DẪN TƯ DUY TỰ SEARCH RA NGUỒN KÊNH GỐC ĐỂ LẤY VÀ LÀM",
+    "index": 60,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 62760261,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@HDVietsub-h7u",
+      "@redvoices90"
+    ],
+    "origin": "https://h2dev.vn/learn/study/share-them-ngach-reup-cuc-moi-nhat-cac-kenh-doi-thu-moi-chi-5-video-va-huong-dan-tu-duy-tu-search-ra-nguon-kenh-goc-de-lay-va-lam",
+    "mp4": "video/VIDEO-2469ee/VIDEO-2469ee.mp4",
+    "image": "assets/thumbs/VIDEO-2469ee.jpeg",
+    "published_at": "2026-03-28",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-dbd487",
+    "title": "NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN CÂN\"",
+    "index": 61,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 24213809,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "nguồn kênh gốc và update giờ",
+        "link": "https://space.bilibili.com/3706935473866913?spm_id_from=333.788.upinfo.head.click",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/nguon-bilibili-va-gio-cu-the-cua-kenh-goc-ra-video-ngach-reup-cau-ca-van-can",
+    "mp4": "video/VIDEO-dbd487/VIDEO-dbd487.mp4",
+    "image": "assets/thumbs/VIDEO-dbd487.jpeg",
+    "published_at": "2026-03-28",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-d71802",
+    "title": "SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS",
+    "index": 62,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 55335107,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@올바른마음100",
+      "@경제빠월"
+    ],
+    "origin": "https://h2dev.vn/learn/study/show-kenh-triet-ly-han-cua-thanh-vien-pro-vua-build-1-tuan-va-share-them-ngach-thi-truong-han-khong-bao-gio-het-tredns",
+    "mp4": "video/VIDEO-d71802/VIDEO-d71802.mp4",
+    "image": "assets/thumbs/VIDEO-d71802.jpeg",
+    "published_at": "2026-03-28",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "title": "NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
+    "index": 63,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 7897341,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "TOOL TẢI YOUTUBE",
+        "link": "https://vietsubmmo.com/tool/free/YoutubeDownload.zip",
+        "file": "assets/docs/VIDEO-d20744/YoutubeDownload.zip"
+      },
+      {
+        "name": "TOOL TẢI TIKTOK",
+        "link": "https://vietsubmmo.com/tool/free/Tiktokdouyin.zip",
+        "file": "assets/docs/VIDEO-d20744/Tiktokdouyin.zip"
+      },
+      {
+        "name": "TOOL TẢI BILIBILI",
+        "link": "https://vietsubmmo.com/tool/free/BilibiliDownload.zip",
+        "file": "assets/docs/VIDEO-d20744/BilibiliDownload.zip"
+      },
+      {
+        "name": "TOOL TẢI FACEBOOK",
+        "link": "https://vietsubmmo.com/tool/free/FacebookDownload.zip",
+        "file": "assets/docs/VIDEO-d20744/FacebookDownload.zip"
+      },
+      {
+        "name": "TOOL QUAY MÀN HÌNH",
+        "link": "https://vietsubmmo.com/tool/free/quaymanhinh.zip",
+        "file": "assets/docs/VIDEO-d20744/quaymanhinh.zip"
+      },
+      {
+        "name": "TOOL CẮT GHÉP VIDEO SIÊU TỐC",
+        "link": "https://vietsubmmo.com/tool/free/cutghep.zip",
+        "file": "assets/docs/VIDEO-d20744/cutghep.zip"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/nhan-va-tai-mien-phi-6-bo-tool-tai-day",
+    "mp4": "video/VIDEO-d20744/VIDEO-d20744.mp4",
+    "image": "assets/thumbs/VIDEO-d20744.jpeg",
+    "published_at": "2026-03-28",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-33d701",
+    "title": "MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT",
+    "index": 64,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 221976169,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@人生を読む",
+      "@thuatphongthuy26",
+      "@VaultBoy001",
+      "@時代を生きた声"
+    ],
+    "origin": "https://h2dev.vn/learn/study/meo-edit-lach-loi-khong-trung-thuc-moi-nhat-tu-doi-thu-va-share-ngach-triet-ly-thi-truong-nhat-kenh-moi-build-da-bkt-them-3-ngach-nho-nhat-viet",
+    "mp4": "video/VIDEO-33d701/VIDEO-33d701.mp4",
+    "image": "assets/thumbs/VIDEO-33d701.jpeg",
+    "published_at": "2026-03-26",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-7e00ee",
+    "title": "RPM 8-15 VỚI 2 NGÁCH CỰC NHỎ THỊ TRƯỜNG NHẬT NÀY ĐANG BẬT KIẾM TIỀN VÀ THỜI GIAN TRUNG BÌNH VIDEO HƠN 1 TIẾNG 40 PHÚT",
+    "index": 65,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 235639620,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@人生の感動物語-d7f",
+      "@老後の誤算"
+    ],
+    "origin": "https://h2dev.vn/learn/study/khong-the-tin-duoc-voi-2-ngach-cuc-nho-thi-truong-nhat-nay-dang-bat-kiem-tien-va-thoi-gian-trung-binh-video-hon-1-tieng-40-phut",
+    "mp4": "video/VIDEO-7e00ee/VIDEO-7e00ee.mp4",
+    "image": "assets/thumbs/VIDEO-7e00ee.jpeg",
+    "published_at": "2026-03-22",
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "channelResolve": [
+      {
+        "handle": "@人生の感動物語-d7f",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "KHÔNG-VERIFY",
+        "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-ff9be6",
+    "title": "XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+    "index": 66,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 60797189,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/xac-dinh-bao-nhieu-video-khong-len-la-bo-va-phan-tich-chi-so-de-giu-lam-tiep",
+    "mp4": "video/VIDEO-ff9be6/VIDEO-ff9be6.mp4",
+    "image": "assets/thumbs/VIDEO-ff9be6.jpeg",
+    "published_at": "2026-03-20",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-6ad3fe",
+    "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+    "index": 67,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 22218451,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/fix-loi-noi-dung-khong-trung-thuc-chinh-sach-moi-nhat-2026",
+    "mp4": "video/VIDEO-6ad3fe/VIDEO-6ad3fe.mp4",
+    "image": "assets/thumbs/VIDEO-6ad3fe.png",
+    "published_at": "2026-03-20",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-7f0bb4",
+    "title": "NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
+    "index": 68,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 28246743,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/ngam-kenh-chuan-va-xac-minh-do-trust-manh-ngay-tu-khi-build-kenh-chuan-chinh-sach-moi-2026",
+    "mp4": "video/VIDEO-7f0bb4/VIDEO-7f0bb4.mp4",
+    "image": "assets/thumbs/VIDEO-7f0bb4.jpeg",
+    "published_at": "2026-03-20",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-7db740",
+    "title": "CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
+    "index": 69,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 5472949,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/cach-seo-chuan-tu-khoa-kenh-tu-khoa-video-va-mo-ta-video-moi-nhat-chinh-sach-2026",
+    "mp4": "video/VIDEO-7db740/VIDEO-7db740.mp4",
+    "image": "assets/thumbs/VIDEO-7db740.png",
+    "published_at": "2026-03-20",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-546afa",
+    "title": "CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT",
+    "index": 70,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 92455685,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@漫画で学ぶシニアの健康CH-n8i",
+      "@tritueconhanradio"
+    ],
+    "origin": "https://h2dev.vn/learn/study/chi-moi-5-video-kiem-hon-600k-view-va-3k-sub-voi-ngach-nho-thi-truong-nhat-va-share-them-1-ngach-nho-o-thi-truong-viet",
+    "mp4": "video/VIDEO-546afa/VIDEO-546afa.mp4",
+    "image": "assets/thumbs/VIDEO-546afa.jpeg",
+    "published_at": "2026-03-19",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-d84a78",
+    "title": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
+    "index": 71,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 93872143,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "Prompt + tài nguyên ngách nhỏ phật pháp (thị trường Hàn)",
+        "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/hop-tac-lam-kenh-youtube-an-chia-doanh-thu-va-huong-dan-xem-video-dung-quy-trinh-chuan",
+    "mp4": "video/VIDEO-d84a78/VIDEO-d84a78.mp4",
+    "image": "assets/thumbs/VIDEO-d84a78.jpeg",
+    "published_at": "2026-03-15",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-c1bd51",
+    "title": "HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN TRENDS CỰC KỲ TRENDS CHƯA AI CÓ THỂ BIẾT + HƯỚNG DẪN EDIT CHUẨN LÀM A-Z | UPDATE MỚI NHẤT 12-03-2026",
+    "index": 72,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 67623296,
+    "free": false,
+    "drm": true,
+    "docs": [
+      {
+        "name": "https://www.douyin.com/user/MS4wLjABAAAAShPDui4jT63haBEolNbHB-ZRj1_3MWuzuPdvB7m66MWNQP5W31lbn1lbR08KawBd",
+        "link": "https://www.douyin.com/user/MS4wLjABAAAAShPDui4jT63haBEolNbHB-ZRj1_3MWuzuPdvB7m66MWNQP5W31lbn1lbR08KawBd",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-chi-tiet-a-z-reupban-content-them-ngach-cuc-nho-hoat-hinh-douyin-trends-cuc-ky-trends-chua-ai-co-the-biet-huong-dan-edit-chuan-lam-a-z-update-moi-nhat-12-03-202666",
+    "mp4": "video/VIDEO-c1bd51/VIDEO-c1bd51.mp4",
+    "image": "assets/thumbs/VIDEO-c1bd51.jpeg",
+    "published_at": "2026-03-11",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-026112",
+    "title": "SHOW KÊNH ĐỐI THỦ VÀ NGÁCH REUP HOẠT HÌNH + DU LỊCH CỰC TRENDS TỪ TRUNG QUỐC SANG - UPDATE MỚI 08-03-2026",
+    "index": 73,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 82498129,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@TRESube156",
+      "@KhámPháTrungHoa-HT"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-show-them-kenh-doi-thu-va-ngach-reup-hoat-hinh-du-lich-cuc-trends-tu-trung-quoc-sang-update-moi-08-03-2026",
+    "mp4": "video/VIDEO-026112/VIDEO-026112.mp4",
+    "image": "assets/thumbs/VIDEO-026112.jpeg",
+    "published_at": "2026-03-08",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-e25d3b",
+    "title": "HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT",
+    "index": 74,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 85959689,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "FORMS MUA KÊNH (CHO AE CÓ THIỆN CHÍ MUỐN MUA LÀM RIÊNG) - *(HIỆN TẠI KÊNH ĐÃ CÓ NGƯỜI MUA RỒI EM ĐÓNG FORM MỌI NGƯỜI NHÉ)",
+        "link": "https://forms.gle/ksJTZ9B7GgAaDZYu6",
+        "file": ""
+      }
+    ],
+    "channels": [
+      "@DoctorDr.Lee-h9t",
+      "@LightYogawithNatalie"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-moi-07-03-2026-hop-tac-kenh-va-share-ngach-nho-thi-truong-han-us-my-cuc-trends-moi-nhat",
+    "mp4": "video/VIDEO-e25d3b/VIDEO-e25d3b.mp4",
+    "image": "assets/thumbs/VIDEO-e25d3b.jpeg",
+    "published_at": "2026-03-07",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-bdfab7",
+    "title": "BẮT BUỘC PHẢI XEM - HƯỚNG DẪN CHI TIẾT TỰ TRAIN PROMPT VÀ PHÂN TÍCH KÊNH ĐỐI THỦ TỰ TẠO PROMPT CHO CHỦ ĐỀ (KEY) BẤT KỲ NÀO MUỐN + HƯỚNG DẪN VÀ SHARE NGÁCH NHỎ SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS - UPDATE MỚI NHẤT 01-03-2026",
+    "index": 75,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 298966676,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "PROMPT DEMO KEY TRONG VIDEO",
+        "link": "https://docs.google.com/document/d/1DPv3XBIzpkH2mF163b47y2FvxkRKseIprcPn4QU1WaE/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-bdfab7/1DPv3XBIzpkH2mF163b47y2FvxkRKseIprcPn4QU1WaE.txt"
+      }
+    ],
+    "channels": [
+      "@시니어건강정보r"
+    ],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-chi-tiet-tu-train-prompt-va-phan-tich-kenh-doi-thu-tu-tao-prompt-cho-chu-de-key-bat-ky-nao-muon-huong-dan-va-share-ngach-nho-suc-khoe-thi-truong-han-quoc-cuc-trends-update-moi-nhat-01-03-2026",
+    "mp4": "video/VIDEO-bdfab7/VIDEO-bdfab7.mp4",
+    "image": "assets/thumbs/VIDEO-bdfab7.jpeg",
+    "published_at": "2026-02-28",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-e95a8f",
+    "title": "SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ",
+    "index": 76,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 65354525,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape",
+        "link": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape",
+        "file": ""
+      },
+      {
+        "name": "https://www.vecteezy.com/",
+        "link": "https://www.vecteezy.com/",
+        "file": ""
+      },
+      {
+        "name": "https://coverr.co/",
+        "link": "https://coverr.co/",
+        "file": ""
+      },
+      {
+        "name": "https://www.freepik.com/videos",
+        "link": "https://www.freepik.com/videos",
+        "file": ""
+      },
+      {
+        "name": "https://pixabay.com/",
+        "link": "https://pixabay.com/",
+        "file": ""
+      }
+    ],
+    "channels": [
+      "@TuổiGiàRadio_VN"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-moi-27-02-2026-share-ngach-nho-ban-content-thi-truong-view-viet-clone-theo-kenh-doi-thu",
+    "mp4": "video/VIDEO-e95a8f/VIDEO-e95a8f.mp4",
+    "image": "assets/thumbs/VIDEO-e95a8f.jpeg",
+    "published_at": "2026-02-27",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-91bb96",
+    "title": "SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 VIDEO / 1 NGÀY",
+    "index": 77,
+    "market": [
+      "🇺🇸 Mỹ"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 21889997,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@FinalUrgency"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-moi-26-02-2026-key-ngach-hot-moi-nhat-thi-truong-us-canada-cuc-trends-kenh-doi-thu-6-video-1-ngay",
+    "mp4": "video/VIDEO-91bb96/VIDEO-91bb96.mp4",
+    "image": "assets/thumbs/VIDEO-91bb96.jpeg",
+    "published_at": "2026-02-26",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-8b69c9",
+    "title": "NGÁCH THỊ TRƯỜNG HÀN VÀ NHẬT - PHÂN TÍCH VÀ HƯỚNG CÁCH EDIT TRÁNH BỊ QUÉT LỖI KHÔNG TRUNG THỰC MỚI NHẤT 2026",
+    "index": 78,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 138151501,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@조선야담소",
+      "@남현진전문의",
+      "@江戸怪異ものがたり"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-moi-22-02-2026-ngach-thi-truong-han-va-nhat-phan-tich-va-huong-cach-edit-tranh-bi-quet-loi-khong-trung-thuc-moi-nhat-2026",
+    "mp4": "video/VIDEO-8b69c9/VIDEO-8b69c9.mp4",
+    "image": "assets/thumbs/VIDEO-8b69c9.jpeg",
+    "published_at": "2026-02-22",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-35014d",
+    "title": "SHARE NGÁCH NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG NHẬT BẢN VÀ KÊNH NGÁCH KINH TẾ THỊ TRƯỜNG HÀN QUỐC",
+    "index": 79,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 143008081,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@ほのぼのラジオ1",
+      "@오싹한경제"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-19-01-2026-share-ngach-nho-key-suc-khoe-thi-truong-nhat-ban-va-kenh-ngach-kinh-te-thi-truong-han-quoc",
+    "mp4": "video/VIDEO-35014d/VIDEO-35014d.mp4",
+    "image": "assets/thumbs/VIDEO-35014d.jpeg",
+    "published_at": "2026-01-19",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-cb907b",
+    "title": "SHOW KÊNH THỰC CHIẾN VÀ FULL QUY TRÌNH HƯỚNG DẪN REUP NGÁCH VIEW VIỆT RPM 2$ KHÔNG BAO GIỜ HẾT TRENDS - UPDATE 12-01-2026",
+    "index": 80,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Reup & Khai Thác Hoạt Hình",
+    "size": 384480031,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "List (danh sách) nguồn tài nguyên kênh reup",
+        "link": "https://docs.google.com/spreadsheets/d/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-cb907b/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc.csv"
+      },
+      {
+        "name": "https://tikvideo.app/vi/download-douyin-video",
+        "link": "https://tikvideo.app/vi/download-douyin-video",
+        "file": ""
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/show-kenh-thuc-chien-va-full-quy-trinh-huong-dan-reup-ngach-view-viet-rpm-2-khong-bao-gio-het-trends-update-12-01-2026",
+    "mp4": "video/VIDEO-cb907b/VIDEO-cb907b.mp4",
+    "image": "assets/thumbs/VIDEO-cb907b.png",
+    "published_at": "2026-01-11",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-34f417",
+    "title": "SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN",
+    "index": 81,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 116340475,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@gockhuatnhansinh-official",
+      "@노년의마음",
+      "@성실한경제학",
+      "@シルバー世代の語り部"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-11-01-2026-share-ngach-thi-truong-viet-va-2-ngach-thi-truong-han-quoc-1-ngach-nhat-ban",
+    "mp4": "video/VIDEO-34f417/VIDEO-34f417.mp4",
+    "image": "assets/thumbs/VIDEO-34f417.jpeg",
+    "published_at": "2026-01-11",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-1b4be3",
+    "title": "HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT",
+    "index": 82,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 180105013,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "link tài nguyên",
+        "link": "https://docs.google.com/spreadsheets/d/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-1b4be3/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/update-moi-27-12-2025-ngach-thi-truong-nhat-ban-viet-huong-dan-cach-edit-video-han-che-tranh-bi-youtube-quet-vi-noi-dung-khong-trung-thuc-cac-van-de-lien-quan-den-ai",
+    "mp4": "video/VIDEO-1b4be3/VIDEO-1b4be3.mp4",
+    "image": "assets/thumbs/VIDEO-1b4be3.jpeg",
+    "published_at": "2025-12-27",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-ec9c50",
+    "title": "KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026",
+    "index": 83,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 18271008,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/khang-su-dung-lai-noi-dung-trung-lap-noi-dung-gay-ban-quyen-99-ve-bo-moi-nhat-2026",
+    "mp4": "video/VIDEO-ec9c50/VIDEO-ec9c50.mp4",
+    "image": "assets/thumbs/VIDEO-ec9c50.jpeg",
+    "published_at": "2025-12-19",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-134a25",
+    "title": "NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8",
+    "index": 84,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 85581374,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@fuetunoijin",
+      "@偉人のコンパス1"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-19-12-2025-ngach-thi-truong-nhat-ban-trends-cuc-cao-rpm-6-8",
+    "mp4": "video/VIDEO-134a25/VIDEO-134a25.mp4",
+    "image": "assets/thumbs/VIDEO-134a25.jpeg",
+    "published_at": "2025-12-19",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-5fd052",
+    "title": "SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)",
+    "index": 85,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 82841416,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@buddhamind60s",
+      "@賢者の灯",
+      "@黄金の老年期-x9g"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-18-12-2025-share-3-ngach-thi-truong-nhat-ban-truyen-stories-triet-ly",
+    "mp4": "video/VIDEO-5fd052/VIDEO-5fd052.mp4",
+    "image": "assets/thumbs/VIDEO-5fd052.jpeg",
+    "published_at": "2025-12-18",
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "channelResolve": [
+      {
+        "handle": "@賢者の灯",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "KHÔNG-VERIFY",
+        "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-00136f",
+    "title": "HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT",
+    "index": 86,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 8660679,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-fix-add-quyen-cho-tk-google-adsense-khong-bi-die-mat-khi-lo-bi-quet",
+    "mp4": "video/VIDEO-00136f/VIDEO-00136f.mp4",
+    "image": "assets/thumbs/VIDEO-00136f.png",
+    "published_at": "2025-12-18",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-9ea5e3",
+    "title": "TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026",
+    "index": 87,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 63576633,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/tut-meo-huong-dan-cach-khac-phuc-gay-view-moi-nhat-2026",
+    "mp4": "video/VIDEO-9ea5e3/VIDEO-9ea5e3.mp4",
+    "image": "assets/thumbs/VIDEO-9ea5e3.jpeg",
+    "published_at": "2025-12-18",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-2ed37a",
+    "title": "NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP",
+    "index": 88,
+    "market": [
+      "🇺🇸 Mỹ"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 55241775,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@HinognaKaalamanYT"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-10-12-2025-ngach-thi-truong-philippines-view-hoa-ky-dang-cuc-trends-va-canh-tranh-thap",
+    "mp4": "video/VIDEO-2ed37a/VIDEO-2ed37a.mp4",
+    "image": "assets/thumbs/VIDEO-2ed37a.jpeg",
+    "published_at": "2025-12-10",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-54422c",
+    "title": "HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN",
+    "index": 89,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 870883336,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "câu lệnh train",
+        "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit",
+        "file": "assets/docs/VIDEO-b380a1/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5.txt"
+      }
+    ],
+    "channels": [
+      "@baeksehealth",
+      "@실버라디오-z4u"
+    ],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-tu-train-prompt-tu-tao-prompt-cho-bat-ky-chu-de-nao-muon",
+    "mp4": "video/VIDEO-54422c/VIDEO-54422c.mp4",
+    "image": "assets/thumbs/VIDEO-54422c.png",
+    "published_at": "2025-12-08",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "channelResolve": [
+      {
+        "handle": "@baeksehealth",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "KHÔNG-VERIFY",
+        "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-af606d",
+    "title": "SHOW KEY KÊNH MỚI CỰC NGON THỊ TRƯỜNG HÀN QUỐC",
+    "index": 90,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 81741847,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@새벽의두만강"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-08-12-2025-key-kenh-moi-cuc-ngon-thi-truong-han-quoc",
+    "mp4": "video/VIDEO-af606d/VIDEO-af606d.mp4",
+    "image": "assets/thumbs/VIDEO-af606d.jpeg",
+    "published_at": "2025-12-08",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-9ef6fe",
+    "title": "NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP",
+    "index": 91,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 53848593,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@thecoldwartales"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-01-12-2025-ngach-thi-truong-us-hoa-ky-cuc-trends-canh-tranh-thap",
+    "mp4": "video/VIDEO-9ef6fe/VIDEO-9ef6fe.mp4",
+    "image": "assets/thumbs/VIDEO-9ef6fe.jpeg",
+    "published_at": "2025-12-01",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-7ae3d6",
+    "title": "SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS",
+    "index": 92,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "size": 62238823,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@militarytactics113"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-27-11-2025-share-ngach-view-viet-khong-bao-gio-bi-0-view-hoac-khong-co-view-luon-luon-trends",
+    "mp4": "video/VIDEO-7ae3d6/VIDEO-7ae3d6.mp4",
+    "image": "assets/thumbs/VIDEO-7ae3d6.jpeg",
+    "published_at": "2025-11-27",
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+  },
+  {
+    "sku": "VIDEO-86c1ec",
+    "title": "NGÁCH CỰC NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC ĐANG RẤT TRENDS",
+    "index": 93,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 52804867,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@노인건강습관-l"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-25-11-2025-ngach-cuc-nho-key-suc-khoe-thi-truong-han-quoc-dang-rat-trends",
+    "mp4": "video/VIDEO-86c1ec/VIDEO-86c1ec.mp4",
+    "image": "assets/thumbs/VIDEO-86c1ec.jpeg",
+    "published_at": "2025-11-25",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-3e5a21",
+    "title": "HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
+    "index": 94,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 10170368,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-add-quyen-quan-ly-kenh-va-mail-khoi-phuc-tranh-bi-google-quet-loi-spam-hang-loat-die-kenh-hang-loat",
+    "mp4": "video/VIDEO-3e5a21/VIDEO-3e5a21.mp4",
+    "image": "assets/thumbs/VIDEO-3e5a21.png",
+    "published_at": "2025-11-25",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-ffccd2",
+    "title": "NGÁCH NHỎ KEY THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS VÀ CẠNH TRANH THẤP",
+    "index": 95,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 53796647,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@당신의경제학"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-moi-24-11-2025-ngach-nho-key-thi-truong-han-quoc-cuc-trends-va-canh-tranh-thap",
+    "mp4": "video/VIDEO-ffccd2/VIDEO-ffccd2.mp4",
+    "image": "assets/thumbs/VIDEO-ffccd2.jpeg",
+    "published_at": "2025-11-24",
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "channelResolve": [
+      {
+        "handle": "@당신의경제학",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "KHÔNG-VERIFY",
+        "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-de2564",
+    "title": "NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN",
+    "index": 96,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 81324705,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@あの年の空"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-22112025-ngach-nho-stories-thi-truong-nhat-ban",
+    "mp4": "video/VIDEO-de2564/VIDEO-de2564.mp4",
+    "image": "assets/thumbs/VIDEO-de2564.png",
+    "published_at": "2025-11-22",
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "channelResolve": [
+      {
+        "handle": "@あの年の空",
+        "inKenhMau": false,
+        "measuredAt": "2026-08-21",
+        "status": "KHÔNG-VERIFY",
+        "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
+      }
+    ]
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "title": "SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
+    "index": 97,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 257066533,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "PROMPT: NGÁCH Kiểm soát sinh học - chiến thuật - tâm lý (UPDATE 26/02/2026) - H2DEV",
+        "link": "https://docs.google.com/document/d/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA/edit?tab=t.0",
+        "file": "assets/docs/VIDEO-2aa1f7/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA.txt"
+      },
+      {
+        "name": "PROMPT NGÁCH ĐỨA TRẺ (UPDATE 24/01/2026) - H2DEV",
+        "link": "https://docs.google.com/document/d/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-2aa1f7/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY.txt"
+      },
+      {
+        "name": "PROMPT NGÁCH NHỎ TRIẾT LÝ (H2Dev)",
+        "link": "https://docs.google.com/document/d/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-2aa1f7/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc.txt"
+      },
+      {
+        "name": "TẠO ẢNH AI",
+        "link": "https://dreamina.capcut.com/?utm_medium=sem&utm_source=googleadwords_int&utm_campaign=brand&pid=513641&campaign_id=21589138307&adset_id=173517691420&ad_id=726980043010&keyword=dreamina&matchtype=e&channel=g&placement=&target=kwd-781492265004&gad_source=1&gad_campaignid=21589138307&gbraid=0AAAAACROvhkqV2O6v9JILWYquU6g5_F8E&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFVAHjwuaJz_2ToAg0TXw_s_07rJzEKXywgQb9lf4-86gHyI8po5mNUaAh1cEALw_wcB",
+        "file": ""
+      },
+      {
+        "name": "WEB TẢI TÀI NGUYÊN VIDEO FREE 1",
+        "link": "https://pixabay.com/",
+        "file": ""
+      },
+      {
+        "name": "WEB TẢI TÀI NGUYÊN VIDEO FREE 2",
+        "link": "https://www.vecteezy.com/",
+        "file": ""
+      },
+      {
+        "name": "PROMPT NGÁCH QUY LUẬT KINH TẾ",
+        "link": "https://docs.google.com/document/d/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-2aa1f7/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c.txt"
+      },
+      {
+        "name": "PROMPT KEY QUY TRÌNH/ NHÀ MÁY SẢN XUẤT",
+        "link": "https://docs.google.com/document/d/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-2aa1f7/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk.txt"
+      },
+      {
+        "name": "WEB TẠO ẢNH",
+        "link": "https://labs.google/fx/vi/tools/whisk",
+        "file": ""
+      },
+      {
+        "name": "WEB TẠO VIDEO",
+        "link": "https://labs.google/fx/vi/tools/flow/",
+        "file": ""
+      },
+      {
+        "name": "PROMPT: NGÁCH KINH TẾ - THỊ TRƯỜNG HÀN",
+        "link": "https://docs.google.com/document/d/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-2aa1f7/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY.txt"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-ngach-moi-triet-ly-thi-truong-us-hoa-ky-dang-cuc-trends-va-huong-dan-full-quy-trinh-lam-tu-a-z-update-04112025",
+    "mp4": "video/VIDEO-2aa1f7/VIDEO-2aa1f7.mp4",
+    "image": "assets/thumbs/VIDEO-2aa1f7.png",
+    "published_at": "2025-11-04",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-5fe83a",
+    "title": "UPDATE 05/11/2025 - Ngách Nhỏ MỚI THỊ TRƯỜNG VIỆT NAM TRENDS CỰC CAO",
+    "index": 98,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 56394037,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@SuGia_SucKhoe",
+      "@suckhoedongy99",
+      "@KhỏeVềGià"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-05112025-ngach-nho-moi-thi-truong-viet-nam-trends-cuc-cao",
+    "mp4": "video/VIDEO-5fe83a/VIDEO-5fe83a.mp4",
+    "image": "assets/thumbs/VIDEO-5fe83a.png",
+    "published_at": "2025-11-04",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-3ae732",
+    "title": "UPDATE 04/11/2025 - NHÂN BẢN THỊ TRƯỜNG TỪ KÊNH ĐỐI THỦ HOA KỲ SANG VIỆT NAM",
+    "index": 99,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 80295797,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@songlausongkhoe360",
+      "@healthlonglife"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-04112025-nhan-ban-thi-truong-tu-kenh-doi-thu-hoa-ky-sang-viet-nam",
+    "mp4": "video/VIDEO-3ae732/VIDEO-3ae732.mp4",
+    "image": "assets/thumbs/VIDEO-3ae732.png",
+    "published_at": "2025-11-04",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-458892",
+    "title": "KIẾM HƠN $100,000.000 / THÁNG VỚI KEY LỊCH SỬ QUÂN SỰ NÀY - HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z (chủ đề - kịch bản - giọng đọc - hình ảnh - thumbnail) - UPDATE 19/10/2025",
+    "index": 100,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 250509973,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "PROMPT KEY WORLD WAR II HISTORY (bấm vào đây)",
+        "link": "https://docs.google.com/document/d/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-458892/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM.txt"
+      },
+      {
+        "name": "list link kênh key ở video ytb",
+        "link": "https://docs.google.com/spreadsheets/d/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-458892/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY.csv"
+      },
+      {
+        "name": "LIST KÊNH NGUỒN REUP DOUYIN",
+        "link": "https://docs.google.com/spreadsheets/d/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-458892/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/kiem-hon-100000000-thang-voi-key-lich-su-quan-su-nay-huong-dan-full-quy-trinh-lam-tu-a-z-chu-de-kich-ban-giong-doc-hinh-anh-thumbnail",
+    "mp4": "video/VIDEO-458892/VIDEO-458892.mp4",
+    "image": "assets/thumbs/VIDEO-458892.jpeg",
+    "published_at": "2025-10-19",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-806c0c",
+    "title": "UPDATE VIDEO 19/10/2025 - SHARE KEY (Ngách Nhỏ) MỚI RẤT ÍT CẠNH TRANH VÀ TRENDS CAO",
+    "index": 101,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 22397026,
+    "free": false,
+    "drm": true,
+    "docs": [
+      {
+        "name": "LINK KÊNH KEY",
+        "link": "https://docs.google.com/spreadsheets/d/1naPiYans0-np4pylKY8_KRl471M_dN_sR0TR_OkPT64/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-806c0c/1naPiYans0-np4pylKY8_KRl471M_dN_sR0TR_OkPT64.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/update-video-19102025-share-key-ngach-nho-moi-rat-it-canh-tranh-va-trends-cao",
+    "mp4": "video/VIDEO-806c0c/VIDEO-806c0c.mp4",
+    "image": "assets/thumbs/VIDEO-806c0c.jpeg",
+    "published_at": "2025-10-19",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-83a28e",
+    "title": "UPDATE KEY 13/10/2025 - SHARE (Ngách Nhỏ) Thị Trường Hàn",
+    "index": 102,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 34105288,
+    "free": false,
+    "drm": true,
+    "docs": [
+      {
+        "name": "Link kênh key",
+        "link": "https://docs.google.com/spreadsheets/d/1Doz37LNCbNKHtYH4uaraNPSEW3OQRrv5iCfEV-9DQmc/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-83a28e/1Doz37LNCbNKHtYH4uaraNPSEW3OQRrv5iCfEV-9DQmc.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/update-key-13102025-share-ngach-nho-thi-truong-han",
+    "mp4": "video/VIDEO-83a28e/VIDEO-83a28e.mp4",
+    "image": "assets/thumbs/VIDEO-83a28e.jpeg",
+    "published_at": "2025-10-13",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-948336",
+    "title": "Share Key (Ngách Nhỏ) Thị Trường Hàn Quốc - Update 11/10/2025",
+    "index": 103,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 30864553,
+    "free": false,
+    "drm": true,
+    "docs": [
+      {
+        "name": "Link kênh key",
+        "link": "https://docs.google.com/spreadsheets/d/13ehUG_aMoGlhBu0JOChffANOQQ4UmWGS6fxS6Fbrk2Y/edit?usp=drivesdk",
+        "file": "assets/docs/VIDEO-948336/13ehUG_aMoGlhBu0JOChffANOQQ4UmWGS6fxS6Fbrk2Y.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-ngach-nho-thi-truong-han-quoc-update-11102025",
+    "mp4": "video/VIDEO-948336/VIDEO-948336.mp4",
+    "image": "assets/thumbs/VIDEO-948336.jpeg",
+    "published_at": "2025-10-11",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-04c2e3",
+    "title": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
+    "index": 104,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 20353652,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "TOOL VÀ TÀI KHOẢN GIÁ RẺ (bấm vào đây để liên hệ)",
+        "link": "https://docs.google.com/spreadsheets/d/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-04c2e3/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/tool-elevenlab-clone-minimax-dich-srt-tai-khoan-chatgpt-plus-capcut-pro-gia-re",
+    "mp4": "video/VIDEO-04c2e3/VIDEO-04c2e3.mp4",
+    "image": "assets/thumbs/VIDEO-04c2e3.png",
+    "published_at": "2025-10-11",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-ca266f",
+    "title": "Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)",
+    "index": 105,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 279631522,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "list kênh key 27/9",
+        "link": "https://docs.google.com/spreadsheets/d/1Q1rhStw_0JO6eLR5NLmTv7i5HT_Zvn-KR4KuaaLR7KI/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-ca266f/1Q1rhStw_0JO6eLR5NLmTv7i5HT_Zvn-KR4KuaaLR7KI.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/update-share-key-moi-27-09-2025-ngach-nho-thi-truong-nhat-ban-hoa-ky-anh-han-quoc",
+    "mp4": "video/VIDEO-ca266f/VIDEO-ca266f.mp4",
+    "image": "assets/thumbs/VIDEO-ca266f.jpeg",
+    "published_at": "2025-09-27",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-8603a9",
+    "title": "Share Key (Ngách Nhỏ) Các Thị Trường HongKong, Hàn, Việt - Update 7/9/2025",
+    "index": 106,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Tâm Linh & Thu Hút May Mắn",
+    "size": 189552835,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "List Kênh Key 7/9/2025",
+        "link": "https://docs.google.com/spreadsheets/d/17MyDQQ_wBW63gTJ2VS-alOqPg3SSYeRt4_lozEHgBq0/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-8603a9/17MyDQQ_wBW63gTJ2VS-alOqPg3SSYeRt4_lozEHgBq0.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-ngach-nho-cac-thi-truong-hongkong-han-viet-update-792025",
+    "mp4": "video/VIDEO-8603a9/VIDEO-8603a9.mp4",
+    "image": "assets/thumbs/VIDEO-8603a9.jpeg",
+    "published_at": "2025-09-07",
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+  },
+  {
+    "sku": "VIDEO-aacc70",
+    "title": "Chia Sẻ Tút (mẹo) Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View",
+    "index": 107,
+    "market": [
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "size": 42658657,
+    "free": false,
+    "drm": true,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/chia-se-tut-meo-bam-theo-key-lam-video-khong-bao-gio-bi-0-view",
+    "mp4": "video/VIDEO-aacc70/VIDEO-aacc70.mp4",
+    "image": "assets/thumbs/VIDEO-aacc70.jpeg",
+    "published_at": "2025-08-23",
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+  },
+  {
+    "sku": "VIDEO-82f8a8",
+    "title": "Share Key MỚI NHẤT Update 23/08/2025 - Ngách nhỏ thị trường Nhật Bản",
+    "index": 108,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 185987199,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "LIST LINK KÊNH ĐỐI THỦ",
+        "link": "https://docs.google.com/spreadsheets/d/1jSfRYhNkVpqAA34DjX0CiJjn18Ph5U093JlV0a4P1ao/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-82f8a8/1jSfRYhNkVpqAA34DjX0CiJjn18Ph5U093JlV0a4P1ao.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-moi-nhat-update-23082025-ngach-nho-thi-truong-nhat-ban",
+    "mp4": "video/VIDEO-82f8a8/VIDEO-82f8a8.mp4",
+    "image": "assets/thumbs/VIDEO-82f8a8.jpeg",
+    "published_at": "2025-08-23",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-9a4ddc",
+    "title": "TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube",
+    "index": 109,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "size": 153151032,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/tut-trick-meo-test-ban-quyen-khi-reup-ban-content-dang-nguon-tu-douyin-sang-youtube",
+    "mp4": "video/VIDEO-9a4ddc/VIDEO-9a4ddc.mp4",
+    "image": "assets/thumbs/VIDEO-9a4ddc.png",
+    "published_at": "2025-08-22",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-199f44",
+    "title": "Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh",
+    "index": 110,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 69303503,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-cach-ngam-kenh-va-cac-thu-thuat-meo-tuong-tac-kenh-doi-thu-trong-qua-trinh-ngam-ken",
+    "mp4": "video/VIDEO-199f44/VIDEO-199f44.mp4",
+    "image": "assets/thumbs/VIDEO-199f44.png",
+    "published_at": "2025-08-22",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-027064",
+    "title": "Cách tạo kênh, lập kênh chuyển đổi kênh sang thị trường ngoại chuẩn nhất",
+    "index": 111,
+    "market": [
+      "🇺🇸 Mỹ"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 283417965,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/cach-tao-kenh-lap-kenh-chuyen-doi-kenh-sang-thi-truong-ngoai-chuan-nhat",
+    "mp4": "video/VIDEO-027064/VIDEO-027064.mp4",
+    "image": "assets/thumbs/VIDEO-027064.png",
+    "published_at": "2025-08-22",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-ed1be9",
+    "title": "Hướng dẫn edit key _Chill Dude.._chi tiết từ A-Z",
+    "index": 112,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 769642956,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-edit-key-chill-dudechi-tiet-tu-a-z",
+    "mp4": "video/VIDEO-ed1be9/VIDEO-ed1be9.mp4",
+    "image": "assets/thumbs/VIDEO-ed1be9.png",
+    "published_at": "2025-08-22",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-a348a5",
+    "title": "Hướng dẫn làm thumb key triết lý _ khắc kỷ",
+    "index": 113,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 131685203,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-lam-thumb-key-triet-ly-khac-ky",
+    "mp4": "video/VIDEO-a348a5/VIDEO-a348a5.mp4",
+    "image": "assets/thumbs/VIDEO-a348a5.png",
+    "published_at": "2025-08-21",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-25fddf",
+    "title": "Share key thị trường Nhật + Hàn - UPDATE 6/6/2025",
+    "index": 114,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Drama Gia Đình & Xã Hội",
+    "size": 618777335,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "PROMPT TRAIN CHATGPT",
+        "link": "https://docs.google.com/document/d/1XSpdBykFxAQfpndhX-09pyuriPtCYtGS/edit?tab=t.0",
+        "file": "assets/docs/VIDEO-25fddf/1XSpdBykFxAQfpndhX-09pyuriPtCYtGS.txt"
+      },
+      {
+        "name": "LIST KÊNH",
+        "link": "https://docs.google.com/spreadsheets/d/1VE1XufGZey3NWpcNx7gaec1iVGHyCO3R/edit?gid=387143067#gid=387143067",
+        "file": "assets/docs/VIDEO-25fddf/1VE1XufGZey3NWpcNx7gaec1iVGHyCO3R.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-thi-truong-nhat-han-update-662025",
+    "mp4": "video/VIDEO-25fddf/VIDEO-25fddf.mp4",
+    "image": "assets/thumbs/VIDEO-25fddf.jpeg",
+    "published_at": "2025-08-21",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-943781",
+    "title": "Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)",
+    "index": 115,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Kỹ Thuật Setup Nuôi Kênh & VPS",
+    "size": 17022745,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/meo-tips-phan-chia-nuoi-cac-mail-kenh-tren-cung-1-thiet-bi-ma-khong-bao-gio-bi-dinh-spam-ma-khong-can-phai-fake-vpn-hay-nuoi-tren-proxy",
+    "mp4": "video/VIDEO-943781/VIDEO-943781.mp4",
+    "image": "assets/thumbs/VIDEO-943781.png",
+    "published_at": "2025-08-21",
+    "contentNiche": "Kỹ Thuật Setup Nuôi Kênh & VPS"
+  },
+  {
+    "sku": "VIDEO-f59aa7",
+    "title": "VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb",
+    "index": 116,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 60794706,
+    "free": false,
+    "drm": true,
+    "docs": [
+      {
+        "name": "PROMPT TRAIN CHATGPT",
+        "link": "https://docs.google.com/document/d/1QZZ16kd7eXbAkA-G5V0Ws4Wvv_iPe3Nr/edit?usp=sharing&ouid=103446946492928743175&rtpof=true&sd=true",
+        "file": "assets/docs/VIDEO-f59aa7/1QZZ16kd7eXbAkA-G5V0Ws4Wvv_iPe3Nr.txt"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/vip-tu-duy-nhan-ban-thi-truong-va-huong-dan-tu-a-z-cach-lam-edit-va-thumb",
+    "mp4": "video/VIDEO-f59aa7/VIDEO-f59aa7.mp4",
+    "image": "assets/thumbs/VIDEO-f59aa7.png",
+    "published_at": "2025-08-21",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-b380a1",
+    "title": "Share Key (ngách cực nhỏ) view Việt mới và hướng dẫn tự tạo prompt lấy kịch bản theo chủ yếu bất kỳ - UPDATE 8/8/2025",
+    "index": 117,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 543600721,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "PROMPT TRAIN",
+        "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit?tab=t.0",
+        "file": "assets/docs/VIDEO-b380a1/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5.txt"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-ngach-cuc-nho-view-viet-moi-va-huong-dan-tu-tao-prompt-lay-kich-ban-theo-chu-yeu-bat-ky-update-882025",
+    "mp4": "video/VIDEO-b380a1/VIDEO-b380a1.mp4",
+    "image": "assets/thumbs/VIDEO-b380a1.jpeg",
+    "published_at": "2025-08-21",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-39ae49",
+    "title": "Update nhiều KEY (ngách nhỏ) mới thị trường Nhật - Hàn - Việt - UPDATE 15/8/2025",
+    "index": 118,
+    "market": [
+      "🇯🇵 Nhật"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 709904638,
+    "free": false,
+    "drm": false,
+    "docs": [
+      {
+        "name": "PROMPT TRAIN CHATGPT",
+        "link": "https://docs.google.com/document/d/15WFg5REGYsmW1p1p-sz5E-C7mkC_NdRH/edit?usp=sharing&ouid=103446946492928743175&rtpof=true&sd=true",
+        "file": "assets/docs/VIDEO-39ae49/15WFg5REGYsmW1p1p-sz5E-C7mkC_NdRH.txt"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/update-nhieu-key-ngach-nho-moi-thi-truong-nhat-han-viet-update-1582025",
+    "mp4": "video/VIDEO-39ae49/VIDEO-39ae49.mp4",
+    "image": "assets/thumbs/VIDEO-39ae49.jpeg",
+    "published_at": "2025-08-21",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-5c3116",
+    "title": "Share Key thị trường Canada mới nhất và hướng dẫn làm chi tiết từ A-Z - UPDATE 21/8/2025",
+    "index": 119,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 395256693,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "Prompt Key Nhật",
+        "link": "https://docs.google.com/document/d/1-lBHSM3jBoHLvymN6JJT0wQdsIHUeoQyvGGh-_Whh_Y/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-5c3116/1-lBHSM3jBoHLvymN6JJT0wQdsIHUeoQyvGGh-_Whh_Y.txt"
+      },
+      {
+        "name": "PROMPT TRAIN NGÁCH TIỀN SỬ",
+        "link": "https://docs.google.com/document/d/1Oz9FxDW3vL_oKHQOuQ0HvkgOHXWD033BB8AZa2HJr4E/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-5c3116/1Oz9FxDW3vL_oKHQOuQ0HvkgOHXWD033BB8AZa2HJr4E.txt"
+      },
+      {
+        "name": "PROMPT TRAIN (BẤM VÀO TẠI ĐÂY)",
+        "link": "https://docs.google.com/document/d/1ssSE9vExaJlHlNUAWVG1X-duEB6xB0ru6vcUmKkoaRw/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-5c3116/1ssSE9vExaJlHlNUAWVG1X-duEB6xB0ru6vcUmKkoaRw.txt"
+      },
+      {
+        "name": "LIST NGUỒN KÊNH/ VIDEO KEY CAM CẢNH SÁT (key Việt)",
+        "link": "https://docs.google.com/spreadsheets/d/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-5c3116/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I.csv"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-thi-truong-canada-moi-nhat-va-huong-dan-lam-chi-tiet-tu-a-z-update-2182025",
+    "mp4": "video/VIDEO-5c3116/VIDEO-5c3116.mp4",
+    "image": "assets/thumbs/VIDEO-5c3116.png",
+    "published_at": "2025-08-21",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-3df94e",
+    "title": "Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube",
+    "index": 120,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 381209570,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/hon-18k-thang-kenh-nay-da-kiem-duoc-share-key-view-ngoai-va-quy-trinh-lam-ai-ban-content-youtube",
+    "mp4": "video/VIDEO-3df94e/VIDEO-3df94e.mp4",
+    "image": "assets/thumbs/VIDEO-3df94e.jpeg",
+    "published_at": "2025-08-20",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-5cb825",
+    "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Lấy + Tạo Kịch Bản Từ Kênh Đối Thủ",
+    "index": 121,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 256489327,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-va-huong-dan-lam-youtube-view-ngoai-va-prompt-lay-tao-kich-ban-tu-kenh-doi-thu",
+    "mp4": "video/VIDEO-5cb825/VIDEO-5cb825.mp4",
+    "image": "assets/thumbs/VIDEO-5cb825.jpeg",
+    "published_at": "2025-08-20",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-891f32",
+    "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Tạo Kịch Bản Dài Hơn 2 Tiếng Trên ChatGPT",
+    "index": 122,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "size": 354567363,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-va-huong-dan-lam-youtube-view-ngoai-va-prompt-tao-kich-ban-dai-hon-2-tieng-tren-chatgpt",
+    "mp4": "video/VIDEO-891f32/VIDEO-891f32.mp4",
+    "image": "assets/thumbs/VIDEO-891f32.jpeg",
+    "published_at": "2025-08-20",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-61e354",
+    "title": "Hướng Dẫn Tư Duy Tìm, Lọc Key Youtube View Ngoại, Xác Định Được Key Trends, Key Ngon",
+    "index": 123,
+    "market": [
+      "🇺🇸 Mỹ"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 493783566,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-tu-duy-tim-loc-key-youtube-view-ngoai-xac-dinh-duoc-key-trends-key-ngon",
+    "mp4": "video/VIDEO-61e354/VIDEO-61e354.mp4",
+    "image": "assets/thumbs/VIDEO-61e354.jpeg",
+    "published_at": "2025-08-20",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-bdfa54",
+    "title": "Key Sinh Tồn view Việt bán content",
+    "index": 124,
+    "market": [
+      "🇨🇳 Trung"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 748436515,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/key-sinh-ton-view-viet-ban-content",
+    "mp4": "video/VIDEO-bdfa54/VIDEO-bdfa54.mp4",
+    "image": "assets/thumbs/VIDEO-bdfa54.png",
+    "published_at": "2025-08-19",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-8e0275",
+    "title": "Hướng dẫn tạo edit + thumb key Nonagon",
+    "index": 125,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 550685521,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing",
+        "link": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing",
+        "file": "assets/docs/VIDEO-8e0275/drive_1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj"
+      },
+      {
+        "name": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing",
+        "link": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing",
+        "file": "assets/docs/VIDEO-8e0275/drive_1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc"
+      },
+      {
+        "name": "https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing",
+        "link": "https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing",
+        "file": "assets/docs/VIDEO-8e0275/drive_1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf"
+      },
+      {
+        "name": "https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing",
+        "link": "https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing",
+        "file": "assets/docs/VIDEO-8e0275/drive_1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-tao-edit-thumb-key-nonagon",
+    "mp4": "video/VIDEO-8e0275/VIDEO-8e0275.mp4",
+    "image": "assets/thumbs/VIDEO-8e0275.png",
+    "published_at": "2025-08-19",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-b559c8",
+    "title": "Hướng dẫn làm thumb ngách nhỏ trong key người que - Chill Dude - chi tiết",
+    "index": 126,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Bán Content & Phát Triển Kênh",
+    "size": 172775089,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-lam-thumb-ngach-nho-trong-key-nguoi-que-chi-tiet",
+    "mp4": "video/VIDEO-b559c8/VIDEO-b559c8.mp4",
+    "image": "assets/thumbs/VIDEO-b559c8.png",
+    "published_at": "2025-08-19",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-b96929",
+    "title": "Hướng dẫn edit key triết lý _ khắc kỷ chi tiết từ A-Z ",
+    "index": 127,
+    "market": [
+      "🌐 Ngoại"
+    ],
+    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "size": 211066105,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/huong-dan-edit-key-triet-ly-khac-ky-chi-tiet-tu-a-z",
+    "mp4": "video/VIDEO-b96929/VIDEO-b96929.mp4",
+    "image": "assets/thumbs/VIDEO-b96929.png",
+    "published_at": "2025-08-19",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-44cf22",
+    "title": "Share key và giải thích về chủ đề rpm cao ở các thị trường - UPDATE 23/5",
+    "index": 128,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "size": 283903212,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/share-key-va-giai-thich-ve-chu-de-rpm-cao-o-cac-thi-truong",
+    "mp4": "video/VIDEO-44cf22/VIDEO-44cf22.mp4",
+    "image": "assets/thumbs/VIDEO-44cf22.png",
+    "published_at": "2025-08-19",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-5c438a",
+    "title": "Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)",
+    "index": 129,
+    "market": [
+      "🇺🇸 Mỹ"
+    ],
+    "niche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "size": 85786674,
+    "free": true,
+    "drm": false,
+    "docs": [
+      {
+        "name": "NGUỒN VIDEO REUP DOUYIN + BILIBILI",
+        "link": "https://docs.google.com/spreadsheets/d/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-5c438a/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU.csv"
+      },
+      {
+        "name": "LIST KÊNH DOUYIN NGUỒN TÀI NGUYÊN REUP",
+        "link": "https://docs.google.com/spreadsheets/d/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-5c438a/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg.csv"
+      },
+      {
+        "name": "PROMPT THUMB + TỪ KHÓA SEO / HASHTAGS KEY SENIOR",
+        "link": "https://docs.google.com/document/d/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY/edit?usp=sharing",
+        "file": "assets/docs/VIDEO-5c438a/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY.txt"
+      }
+    ],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/giai-thich-va-huong-dan-dua-ra-cach-chon-mail-mail-moi-mail-co-chon-kenh-kenh-moi-kenh-co-tut-chon-de-lam-chac-chan-co-do-trust-can-view",
+    "mp4": "video/VIDEO-5c438a/VIDEO-5c438a.mp4",
+    "image": "assets/thumbs/VIDEO-5c438a.png",
+    "published_at": "2025-08-19",
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+  },
+  {
+    "sku": "VIDEO-61ad94",
+    "title": "Update ngách bán content Nhật, Hàn..",
+    "index": 130,
+    "market": [
+      "🇯🇵 Nhật",
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content Đa Thị Trường Nhật & Hàn",
+    "size": 65011810,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@시어머니와며느리",
+      "@마음을안아주는이야",
+      "@新しい私の毎日",
+      "@부를부르는말씀",
+      "@시니어살림노트",
+      "@feelrelaxedtv",
+      "@JaebeolNunmul16",
+      "@노을빛사연-l2m"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-ngach-ban-content-nhat-han",
+    "mp4": "video/VIDEO-61ad94/VIDEO-61ad94.mp4",
+    "image": "assets/thumbs/VIDEO-61ad94.png",
+    "published_at": "2026-08-22",
+    "contentNiche": "Bán Content Đa Thị Trường Nhật & Hàn",
+    "channelResolve": []
+  },
+  {
+    "sku": "VIDEO-3a38f9",
+    "title": "Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt",
+    "index": 131,
+    "market": [
+      "🇰🇷 Hàn",
+      "🇻🇳 Việt"
+    ],
+    "niche": "Bán Content Đa Thị Trường Hàn & Việt",
+    "size": 147537949,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "https://h2dev.vn/learn/study/qua-kinh-khung-voi-2-kenh-moi-hoan-toan-lam-dung-ngach-khong-bao-gio-thieu-view-share-kenh-thi-truong-han-va-viet",
+    "mp4": "video/VIDEO-3a38f9/VIDEO-3a38f9.mp4",
+    "image": "assets/thumbs/VIDEO-3a38f9.png",
+    "published_at": "2026-08-27",
+    "contentNiche": "Bán Content Đa Thị Trường Hàn & Việt",
+    "channelResolve": []
+  },
+  {
+    "sku": "VIDEO-73d98a",
+    "title": "Update key (ngách cực nhỏ) mới nhất 06-09-2026",
+    "index": 132,
+    "market": [
+      "🇯🇵 Nhật",
+      "🇰🇷 Hàn"
+    ],
+    "niche": "Bán Content Ngách Cực Nhỏ",
+    "size": 199940701,
+    "free": false,
+    "drm": false,
+    "docs": [],
+    "channels": [
+      "@涙のひと駅",
+      "@사연만남1짱",
+      "@simbot2",
+      "@元気な老後-t5d"
+    ],
+    "origin": "https://h2dev.vn/learn/study/update-key-ngach-cuc-nho-moi-nhat-06-09-2026",
+    "mp4": "video/VIDEO-73d98a/VIDEO-73d98a.mp4",
+    "image": "assets/thumbs/VIDEO-73d98a.png",
+    "published_at": "2026-09-06",
+    "contentNiche": "Bán Content Ngách Cực Nhỏ",
+    "channelResolve": []
+  }
+]

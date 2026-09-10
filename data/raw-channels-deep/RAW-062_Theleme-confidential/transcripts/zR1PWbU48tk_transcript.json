@@ -1,0 +1,965 @@
+{
+  "videoId": "zR1PWbU48tk",
+  "title": "Why Your SME is the #1 Target for Ransomware in 2026 🚨",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 159,
+  "fullText": "Okay, picture this. You wake up on a typical Monday morning. You pour your coffee. You sit down. You try to log in, but you can't. Your team can't access anything either. The servers are entirely locked down. Every single file is encrypted. And somewhere out there, a complete stranger is quietly reading through your private emails. Now, this isn't some dystopian horror movie pitch. This is the reality of 2026. Welcome to this explainer on Cyber Siege. You are already a target. I'm going to be your guide today as we unpack the very uncomfortable reality of running a small to medium business in today's ruthless ransomware economy. So, let's dive right in. Today, we're drawing our intel directly from the theme confidential strategic cyber briefing. We're going to use this information to figure out exactly how to build a strategic moat around your business. And look, I know this sounds grim, but we will make it through this together. I promise. But first, we need to have a really frank conversation about the ecosystem that is actively hunting businesses exactly like yours right now. Here's our road map for this explainer. We'll cover the uncomfortable reality, accessibility over value, ransomware as a service, the true recovery cost, the insurance illusion, and wrap up with compliance is your survival. All right, kicking things off with section one, the uncomfortable theme reality, where we shatter that illusion of safety. Listen, it is absolutely vital that we stop pretending you're just flying under the radar. The numbers simply don't lie, even when we really, really want them to. In 2024, 26% of small and medium-sized enterprises experienced a ransomware attack. Think about that for a second. That's roughly one in four. One in four. We aren't talking about something that might happen someday in the future. This has already happened. It's happened to your neighbor and it's quite possibly happened to someone in your exact industry. And it gets worse. Plus 40%. That is the projected increase in ransomware attacks onmemes by 2026. So the takeaway here is this. If you didn't get hit last year, your odds aren't improving. They are actively getting worse by the minute. Now, you might be sitting there thinking, \"Okay, well, bad things happen. If we get hit, we'll just figure it out and recover.\" Well, let's talk about what that recovery actually looks like in the real world. Because when ransomware strikes, 75% ofmemes cannot operate. And I don't mean they're just operating at a reduced capacity or things are a bit slow. I mean they literally cannot operate. Period. Your customers can't reach you. Your team has zero access to files and your whole supply chain just grinds to a complete halt. And with an average of 4 to 6 weeks of recovery time, that business damage just compounds every single day. Moving on to section two, accessibility over value or what I like to call the sweet spot of cyber crime. To actually fight this, we have to understand why you're the preferred target, right? Attackers aren't stupid. They are rational actors running a very lucrative business. Think about it. If they target a massive Fortune 500 company, sure, they might ask for millions of dollars, but that brings massive risk and immediate heavy law enforcement heat. But anme, a $50,000 ransom against the $2 million revenue company, that's negotiable. It's painful for sure, but it isn't impossible to pay. Plus, 84% ofmemes manage their cyber security completely by themselves. That means no dedicated security team, no 24/7 monitoring, just hope, willpower, and maybe a crossed finger or two.memes are basically the Goldilocks of cyber crime. Not too big to resist and not too small to be worth the effort. Then there's this whole operational timing aspect. In the industry, we call it the 60-hour gift wrapping. Attackers absolutely love Friday evenings. Why? Because they know your IT person is already checked out thinking about their weekend plans and the executive team is offline. That leaves a massive unmonitored 60-hour gap until Monday morning when senior management finally rolls in with their coffee and notices something has gone horribly, horribly wrong. For an attacker, those 60 hours are an absolute gift. You see, you aren't being targeted because your data is uniquely valuable. You're being targeted simply because you are available. Which brings us to section three, ransomware as a service, the industrial threat. So, how is this happening so consistently and on such a massive scale? Welcome to ransomware as a service or RAZ. And yes, it is every bit as organized as it sounds. We have to stop picturing a lone hacker in a dark basement wearing a hoodie. This is a highly industrialized business model. Now developers build the malicious tools and they take a 20 to 30% cut. Then these so-called affiliates deploy those tools and keep the rest of the profits. It's literally a scalable franchise model for cyber crime. And unfortunately, it works perfectly. Let's break down how this actually plays out in practice. The attack vector usually involves three distinct steps. Step one is initial access. This is where they slip in through a simple fishing email or maybe an unpatched vulnerability. Step two is lateral movement. This is where they spread quietly through your network. Honestly, they can lurk there for weeks before you even realize they exist. Then comes step three, negotiation and double extortion. And this part, this is incredibly brutal. They don't just encrypt your data anymore. They steal it. Customer records, financials, trade secrets, and then they threaten to leak it all publicly on the dark web if you don't pay up. So, even if you have absolutely perfect backups, you're still staring down massive public exposure and a regulatory nightmare. All right, section four, the true recovery cost. And spoiler alert, it is about way more than just the ransom. We really need to pivot to the devastating financial reality of putting a business back together after one of these attacks. Let's look at the numbers. $120,000. That is just the average recovery cost for anme. But here is the absolutely crucial point you need to take away from this. That $120,000, it entirely excludes the ransom payment itself. That is purely the cost of just getting operational. Again, we're talking paying for digital forensics, buying brand new hardware, absorbing the losses from downtime, and paying out massive staff overtime. If you're a company with $2 million in annual revenue, you are looking at 6% of your gross revenue wiped out in a single incident. To really put this into perspective, let's look at a few real world nightmares. First up, an $8 million manufacturing firm. They were attacked and suffered $240,000 in direct recovery expenses. And on top of that, they lost three massive contracts. Next, an 80 employee dental practice. They actually paid the $85,000 ransom. But guess what? The attackers leaked their data on the dark web. Anyway, it took them 18 long months just to rebuild patient trust. Finally, a B2B services company with $4 million in revenue. They got hit on a Friday and by Wednesday they had racked up $600,000 in contract penalties just from missing their delivery deadlines. None of these companies thought it would happen to them and every single one of them was wrong. Section five, the insurance illusion, a cracking safety net. Let's dismantle this false sense of security that so many business owners have right now. It's projected thatmemes will spend $ 109 billion on cyber security in 2026. Now that sounds fantastic, right? But paradoxically, only 38% ofmemes actually have cyber insurance. That means a massive 62% are flying completely blind without any net whatsoever. And for that 38% who do have an insurance policy, well, don't breathe that sigh of relief just yet. That safety net is cracking. Attackers have figured out the game and these policies are absolutely filled with loopholes. For example, if the attack is traced back to a sanctioned state sponsored criminal, your coverage simply disappears. poof, gone. Business interruption payouts are typically capped at just 30 to 60 days maximum. Oh, and if you didn't have multiffactor authentication turned on, they can deny your claim outright due to negligence. And those massive regulatory fines for things like HIPPA or GDPR, yeah, those are rarely covered either. You could get hit and realize your policy only covers 40% of your actual losses, all while your premiums are steadily rising 13% every single year. Finally, section six, compliance is your survival. Let's talk about building that strategic mode. So what's the solution? How do we actually fix this? The secret here is reframing what a lot of people see as boring bureaucratic red tape. Frameworks like HIPPA, PCIDSS, CMMC and SOCK 2. These are not just administrative checkboxes to keep regulators happy. They are your absolute strongest defense. This is what we call the compliance paradox. You see, the exact same security controls that are required to achieve these certifications are the very things that stop ransomware dead in its tracks. And here is the absolute best part. Having a strong compliance posture doesn't just stop hackers. It actually becomes a massive competitive advantage for your business. It helps you win enterprise contracts, sale through due diligence reviews, and beat out your competitors simply based on your superior security credentials. Let this quote sink in. The difference between a $47 guide and a $120,000 recovery is preparation. You see, you cannot entirely eliminate risk. Nobody can do that. Risk can only be managed. And this explainer, this has been your strategic framework. It's all about diligent, thoughtful preparation before that dreaded Friday night attack inevitably happens. Because remember what we said at the start, you are already a target. That fact is not changing. So, I want you to genuinely ask yourself this right now as you evaluate your own company's readiness. Are you a prepared target or are you a vulnerable one? Which one do you want to be when next Monday morning rolls around? To make sure you are answering that question the right way, I highly recommend you visit the lemconfidential.com. You can access the full cyber siege guide, a really comprehensive 72-hour incident response playbook and insurance templates designed specifically for your needs. Because as we navigate 2026 and beyond, preparation is no longer just optional. It is absolutely essential for your survival. Thanks for joining me on this explainer and stay safe out there.",
+  "fullTextVi": "Được rồi, hãy hình dung cái này. Bạn thức dậy vào một buổi sáng thứ Hai điển hình. Bạn rót cà phê của bạn. Bạn ngồi xuống. Bạn cố gắng đăng nhập nhưng không được. Nhóm của bạn cũng không thể truy cập bất cứ thứ gì. Các máy chủ hoàn toàn bị khóa. Mỗi tập tin đều được mã hóa. Và ở đâu đó ngoài kia, một người hoàn toàn xa lạ đang lặng lẽ đọc email riêng tư của bạn. Bây giờ, đây không phải là một bộ phim kinh dị đen tối nào đó. Đây là thực tế của năm 2026. Chào mừng bạn đến với phần giải thích này về Cyber ​​Siege. Bạn đã là một mục tiêu. Hôm nay tôi sẽ là người hướng dẫn bạn khi chúng ta khám phá thực tế rất khó chịu khi điều hành một doanh nghiệp vừa và nhỏ trong nền kinh tế ransomware tàn nhẫn ngày nay. Vì vậy, hãy đi sâu vào ngay. Hôm nay, chúng tôi đang thu thập thông tin trực tiếp từ chủ đề họp báo chiến lược bí mật trên mạng. Chúng tôi sẽ sử dụng thông tin này để tìm ra chính xác cách xây dựng một con hào chiến lược xung quanh doanh nghiệp của bạn. Và nhìn này, tôi biết điều này nghe có vẻ nghiệt ngã, nhưng chúng ta sẽ cùng nhau vượt qua chuyện này. Tôi hứa. Nhưng trước tiên, chúng ta cần có một cuộc trò chuyện thực sự thẳng thắn về hệ sinh thái đang tích cực săn lùng các doanh nghiệp giống hệt doanh nghiệp của bạn ngay bây giờ. Đây là lộ trình của chúng tôi cho người giải thích này. Chúng tôi sẽ đề cập đến thực tế khó chịu, khả năng tiếp cận hơn giá trị, ransomware như một dịch vụ, chi phí khôi phục thực sự, ảo tưởng về bảo hiểm và việc tuân thủ chính là sự sống còn của bạn. Được rồi, bắt đầu với phần một, chủ đề thực tế khó chịu, nơi chúng ta phá tan ảo tưởng về sự an toàn. Nghe này, điều tối quan trọng là chúng tôi phải ngừng giả vờ như bạn đang bay trong tầm radar. Những con số đơn giản là không nói dối, ngay cả khi chúng ta thực sự, thực sự muốn chúng nói dối. Vào năm 2024, 26% doanh nghiệp vừa và nhỏ đã trải qua một cuộc tấn công bằng ransomware. Hãy suy nghĩ về điều đó trong một giây. Đó là khoảng một phần tư. Một trong bốn. Chúng ta không nói về điều gì đó có thể xảy ra vào một ngày nào đó trong tương lai. Điều này đã xảy ra rồi. Điều này đã xảy ra với hàng xóm của bạn và rất có thể nó đã xảy ra với ai đó cùng ngành với bạn. Và nó trở nên tồi tệ hơn. Cộng thêm 40%. Đó là mức độ gia tăng các cuộc tấn công bằng ransomware vào năm 2026. Vì vậy, bài học rút ra ở đây là thế này. Nếu bạn không bị trúng đòn vào năm ngoái, tỷ lệ cược của bạn sẽ không được cải thiện. Họ đang tích cực trở nên tồi tệ hơn theo từng phút. Bây giờ, bạn có thể đang ngồi đó suy nghĩ, \"Được rồi, những điều tồi tệ sẽ xảy ra. Nếu chúng ta bị trúng đạn, chúng ta sẽ tìm ra cách giải quyết và phục hồi.\" Chà, hãy nói về sự phục hồi đó thực sự trông như thế nào trong thế giới thực. Bởi khi ransomware tấn công, 75% meme không thể hoạt động. Và tôi không có nghĩa là họ chỉ hoạt động với công suất giảm hoặc mọi thứ hơi chậm. Ý tôi là họ thực sự không thể hoạt động được. Giai đoạn. Khách hàng của bạn không thể tiếp cận bạn. Nhóm của bạn không có quyền truy cập vào các tệp và toàn bộ chuỗi cung ứng của bạn sẽ ngừng hoạt động hoàn toàn. Và với thời gian phục hồi trung bình từ 4 đến 6 tuần, thiệt hại kinh doanh đó chỉ tăng lên mỗi ngày. Chuyển sang phần hai, khả năng tiếp cận quan trọng hơn giá trị hay điều mà tôi muốn gọi là điểm hấp dẫn của tội phạm mạng. Để thực sự chống lại điều này, chúng ta phải hiểu tại sao bạn lại là mục tiêu ưu tiên, phải không? Những kẻ tấn công không ngu ngốc. Họ là những diễn viên lý trí đang điều hành một công việc kinh doanh rất sinh lợi. Hãy nghĩ về nó. Nếu họ nhắm mục tiêu vào một công ty lớn trong Fortune 500, chắc chắn họ có thể yêu cầu hàng triệu đô la, nhưng điều đó mang lại rủi ro lớn và áp lực thực thi pháp luật nặng nề ngay lập tức. Nhưng anme, khoản tiền chuộc 50.000 đô la cho công ty có doanh thu 2 triệu đô la, điều đó có thể thương lượng được. Chắc chắn là đau đớn nhưng không phải là không thể trả được. Ngoài ra, 84% meme tự mình quản lý hoàn toàn an ninh mạng của mình. Điều đó có nghĩa là không có đội bảo mật chuyên trách, không có giám sát 24/7, chỉ có hy vọng, ý chí và có thể là một hoặc hai ngón tay chéo. Các meme về cơ bản là Goldilocks của tội phạm mạng. Không quá lớn để cưỡng lại và không quá nhỏ để đáng nỗ lực. Sau đó là toàn bộ khía cạnh thời gian hoạt động. Trong ngành, chúng tôi gọi đó là gói quà 60 giờ. Những kẻ tấn công hoàn toàn thích những buổi tối thứ sáu. Why? Bởi vì họ biết nhân viên CNTT của bạn đã được kiểm tra và đang suy nghĩ về kế hoạch cuối tuần của họ và nhóm điều hành đang ngoại tuyến. Điều đó để lại một khoảng trống lớn kéo dài 60 giờ không được giám sát cho đến sáng thứ Hai khi ban quản lý cấp cao cuối cùng cũng mang cà phê đến và nhận thấy có điều gì đó đã diễn ra cực kỳ sai lầm, cực kỳ sai lầm. Đối với kẻ tấn công, 60 giờ đó là một món quà tuyệt đối. Bạn thấy đấy, bạn không bị nhắm mục tiêu vì dữ liệu của bạn có giá trị duy nhất. Bạn đang trở thành mục tiêu chỉ vì bạn sẵn sàng. Điều này đưa chúng ta đến phần ba, ransomware là một dịch vụ, mối đe dọa công nghiệp. Vì vậy, làm thế nào điều này lại xảy ra một cách nhất quán và trên quy mô lớn như vậy? Chào mừng bạn đến với ransomware dưới dạng dịch vụ hoặc RAZ. Và vâng, mọi thứ đều có tổ chức như tên gọi của nó. Chúng ta phải ngừng hình dung một hacker đơn độc trong tầng hầm tối tăm mặc áo hoodie. Đây là một mô hình kinh doanh có tính công nghiệp hóa cao. Bây giờ các nhà phát triển xây dựng các công cụ độc hại và họ được giảm 20 đến 30%. Sau đó, những người được gọi là chi nhánh này sẽ triển khai những công cụ đó và giữ phần lợi nhuận còn lại. Đó thực sự là một mô hình nhượng quyền có thể mở rộng cho tội phạm mạng. Và thật không may, nó hoạt động hoàn hảo. Hãy cùng tìm hiểu xem điều này thực sự diễn ra như thế nào trong thực tế. Vector tấn công thường bao gồm ba bước riêng biệt. Bước một là truy cập ban đầu. Đây là nơi họ xâm nhập thông qua một email câu cá đơn giản hoặc có thể là một lỗ hổng chưa được vá. Bước hai là chuyển động ngang. Đây là nơi chúng lây lan một cách lặng lẽ qua mạng của bạn. Thành thật mà nói, chúng có thể ẩn nấp ở đó hàng tuần trước khi bạn nhận ra sự tồn tại của chúng. Sau đó đến bước thứ ba, đàm phán và tống tiền kép. Và phần này, nó cực kỳ tàn bạo. Họ không chỉ mã hóa dữ liệu của bạn nữa. Họ ăn trộm nó. Hồ sơ khách hàng, tài chính, bí mật thương mại và sau đó họ đe dọa sẽ tiết lộ tất cả một cách công khai trên web đen nếu bạn không trả tiền. Vì vậy, ngay cả khi bạn có các bản sao lưu hoàn hảo, bạn vẫn đang phải đối mặt với sự tiếp xúc rộng rãi với công chúng và một cơn ác mộng về quy định. Được rồi, phần bốn, chi phí thu hồi thực sự. Và cảnh báo spoiler, nó không chỉ đơn thuần là tiền chuộc. Chúng ta thực sự cần phải xoay quanh thực tế tài chính tàn khốc của việc đưa doanh nghiệp hoạt động trở lại sau một trong những cuộc tấn công này. Chúng ta hãy nhìn vào những con số. $120,000. Đó chỉ là chi phí phục hồi trung bình cho anime. Nhưng đây là điểm cực kỳ quan trọng mà bạn cần phải rút ra từ vấn đề này. 120.000 đô la đó, nó hoàn toàn không bao gồm khoản thanh toán tiền chuộc. Đó hoàn toàn là chi phí để đi vào hoạt động. Một lần nữa, chúng ta đang nói đến việc trả tiền cho hoạt động điều tra kỹ thuật số, mua phần cứng hoàn toàn mới, bù đắp tổn thất do thời gian ngừng hoạt động và trả lương cho số lượng lớn nhân viên làm thêm giờ. Nếu bạn là một công ty có doanh thu hàng năm là 2 triệu đô la, bạn đang chứng kiến ​​6% tổng doanh thu của mình bị xóa sổ chỉ vì một sự cố. Để thực sự hiểu điều này, chúng ta hãy xem xét một vài cơn ác mộng trong thế giới thực. Đầu tiên là một công ty sản xuất trị giá 8 triệu USD. Họ bị tấn công và phải chịu chi phí khắc phục trực tiếp là 240.000 USD. Và trên hết, họ đã mất ba hợp đồng lớn. Tiếp theo là một phòng khám nha khoa có 80 nhân viên. Họ thực sự đã trả khoản tiền chuộc 85.000 USD. Nhưng đoán xem? Những kẻ tấn công đã rò rỉ dữ liệu của họ trên web đen. Dù sao đi nữa, họ đã phải mất 18 tháng dài chỉ để xây dựng lại niềm tin của bệnh nhân. Cuối cùng là một công ty dịch vụ B2B với doanh thu 4 triệu USD. Họ bị tấn công vào thứ Sáu và đến thứ Tư, họ đã phải gánh chịu 600.000 đô la tiền phạt hợp đồng chỉ vì trễ thời hạn giao hàng. Không ai trong số những công ty này nghĩ rằng điều đó sẽ xảy ra với họ và mỗi công ty trong số họ đều sai. Phần năm, ảo tưởng về bảo hiểm, một mạng lưới an toàn đang bị rạn nứt. Hãy cùng loại bỏ cảm giác an toàn sai lầm mà rất nhiều chủ doanh nghiệp hiện nay đang có. Dự kiến ​​các meme sẽ chi 109 tỷ USD cho an ninh mạng vào năm 2026. Bây giờ điều đó nghe có vẻ tuyệt vời phải không? Nhưng nghịch lý thay, chỉ có 38% số meme thực sự có bảo hiểm mạng. Điều đó có nghĩa là 62% đang bay hoàn toàn mù mà không có bất kỳ tấm lưới nào. Và đối với 38% những người có hợp đồng bảo hiểm, đừng vội thở phào nhẹ nhõm. Mạng lưới an toàn đó đang rạn nứt. Những kẻ tấn công đã tìm ra trò chơi và những chính sách này hoàn toàn chứa đầy sơ hở. Ví dụ: nếu cuộc tấn công được truy nguyên từ một tội phạm được nhà nước trừng phạt bảo trợ, phạm vi bảo hiểm của bạn sẽ biến mất. ôi, biến mất. Các khoản thanh toán gián đoạn kinh doanh thường được giới hạn ở mức tối đa chỉ từ 30 đến 60 ngày. Ồ, và nếu bạn chưa bật xác thực đa yếu tố, họ có thể từ chối hoàn toàn yêu cầu của bạn do sơ suất. Và những khoản tiền phạt lớn theo quy định đối với những thứ như HIPPA hoặc GDPR, vâng, những khoản tiền đó cũng hiếm khi được bao trả. Bạn có thể bị ảnh hưởng và nhận ra rằng hợp đồng bảo hiểm của bạn chỉ chi trả 40% tổn thất thực tế của bạn, trong khi phí bảo hiểm của bạn đang tăng đều đặn 13% mỗi năm. Cuối cùng, phần sáu, tuân thủ là sự sống còn của bạn. Hãy nói về việc xây dựng chế độ chiến lược đó. Vậy giải pháp là gì? Làm thế nào để chúng tôi thực sự khắc phục điều này? Bí mật ở đây là sắp xếp lại thứ mà nhiều người coi là quan liêu nhàm chán. Các khung như HIPPA, PCIDSS, CMMC và SOCK 2. Đây không chỉ là những hộp kiểm hành chính để khiến các cơ quan quản lý hài lòng. Họ là phòng thủ mạnh mẽ nhất của bạn. Đây là những gì chúng tôi gọi là nghịch lý tuân thủ. Bạn thấy đấy, các biện pháp kiểm soát bảo mật tương tự cần có để đạt được các chứng chỉ này chính là những thứ ngăn chặn ransomware chết trên đường đi của nó. Và đây là phần tuyệt vời nhất. Có một tư thế tuân thủ mạnh mẽ không chỉ ngăn chặn tin tặc. Nó thực sự trở thành một lợi thế cạnh tranh lớn cho doanh nghiệp của bạn. Nó giúp bạn giành được các hợp đồng doanh nghiệp, bán hàng thông qua các đánh giá thẩm định và đánh bại các đối thủ cạnh tranh chỉ dựa trên thông tin xác thực bảo mật vượt trội của bạn. Hãy để câu trích dẫn này thấm sâu vào. Sự khác biệt giữa hướng dẫn trị giá 47 đô la và mức thu hồi 120.000 đô la là sự chuẩn bị. Bạn thấy đấy, bạn không thể loại bỏ hoàn toàn rủi ro. Không ai có thể làm điều đó. Rủi ro chỉ có thể được quản lý. Và người giải thích này, đây là khuôn khổ chiến lược của bạn. Tất cả chỉ là sự chuẩn bị kỹ lưỡng và chu đáo trước khi cuộc tấn công đáng sợ vào đêm thứ Sáu chắc chắn xảy ra. Bởi vì hãy nhớ những gì chúng tôi đã nói lúc đầu, bạn đã là mục tiêu. Thực tế đó không thay đổi. Vì vậy, tôi muốn bạn thực sự tự hỏi bản thân điều này ngay bây giờ khi bạn đánh giá mức độ sẵn sàng của công ty bạn. Bạn là mục tiêu đã được chuẩn bị sẵn hay bạn là mục tiêu dễ bị tổn thương? Bạn muốn trở thành người nào vào sáng thứ Hai tuần sau? Để đảm bảo bạn đang trả lời câu hỏi đó đúng cách, tôi thực sự khuyên bạn nên truy cập lemconfidential.com. Bạn có thể truy cập vào hướng dẫn bao vây mạng đầy đủ, cẩm nang ứng phó sự cố thực sự toàn diện trong 72 giờ và các mẫu bảo hiểm được thiết kế riêng cho nhu cầu của bạn. Bởi vì khi chúng ta hướng tới năm 2026 trở đi, việc chuẩn bị không còn chỉ là tùy chọn nữa. Nó thực sự cần thiết cho sự sống còn của bạn. Cảm ơn bạn đã tham gia cùng tôi trong phần giải thích này và giữ an toàn khi ở ngoài đó.",
+  "segments": [
+    {
+      "text": "Okay, picture this.",
+      "viText": "Được rồi, hãy hình dung cái này.",
+      "start": 0,
+      "duration": 2
+    },
+    {
+      "text": "You wake up on a typical Monday morning.",
+      "viText": "Bạn thức dậy vào một buổi sáng thứ Hai điển hình.",
+      "start": 2,
+      "duration": 2.31
+    },
+    {
+      "text": "You pour your coffee.",
+      "viText": "Bạn rót cà phê của bạn.",
+      "start": 4.31,
+      "duration": 2
+    },
+    {
+      "text": "You sit down.",
+      "viText": "Bạn ngồi xuống.",
+      "start": 6.31,
+      "duration": 2
+    },
+    {
+      "text": "You try to log in, but you can't.",
+      "viText": "Bạn cố gắng đăng nhập nhưng không được.",
+      "start": 8.31,
+      "duration": 2
+    },
+    {
+      "text": "Your team can't access anything either.",
+      "viText": "Nhóm của bạn cũng không thể truy cập bất cứ thứ gì.",
+      "start": 10.31,
+      "duration": 2.26
+    },
+    {
+      "text": "The servers are entirely locked down.",
+      "viText": "Các máy chủ hoàn toàn bị khóa.",
+      "start": 12.57,
+      "duration": 2.14
+    },
+    {
+      "text": "Every single file is encrypted.",
+      "viText": "Mỗi tập tin đều được mã hóa.",
+      "start": 14.71,
+      "duration": 2
+    },
+    {
+      "text": "And somewhere out there, a complete stranger is quietly reading through your private emails.",
+      "viText": "Và ở đâu đó ngoài kia, một người hoàn toàn xa lạ đang lặng lẽ đọc email riêng tư của bạn.",
+      "start": 16.71,
+      "duration": 5.32
+    },
+    {
+      "text": "Now, this isn't some dystopian horror movie pitch.",
+      "viText": "Bây giờ, đây không phải là một bộ phim kinh dị đen tối nào đó.",
+      "start": 22.03,
+      "duration": 2.89
+    },
+    {
+      "text": "This is the reality of 2026.",
+      "viText": "Đây là thực tế của năm 2026.",
+      "start": 24.92,
+      "duration": 2
+    },
+    {
+      "text": "Welcome to this explainer on Cyber Siege.",
+      "viText": "Chào mừng bạn đến với phần giải thích này về Cyber ​​Siege.",
+      "start": 26.92,
+      "duration": 2.37
+    },
+    {
+      "text": "You are already a target.",
+      "viText": "Bạn đã là một mục tiêu.",
+      "start": 29.29,
+      "duration": 2
+    },
+    {
+      "text": "I'm going to be your guide today as we unpack the very uncomfortable reality of running a small to medium business in today's ruthless ransomware economy.",
+      "viText": "Hôm nay tôi sẽ là người hướng dẫn bạn khi chúng ta khám phá thực tế rất khó chịu khi điều hành một doanh nghiệp vừa và nhỏ trong nền kinh tế ransomware tàn nhẫn ngày nay.",
+      "start": 31.29,
+      "duration": 8.91
+    },
+    {
+      "text": "So, let's dive right in.",
+      "viText": "Vì vậy, hãy đi sâu vào ngay.",
+      "start": 40.2,
+      "duration": 2
+    },
+    {
+      "text": "Today, we're drawing our intel directly from the theme confidential strategic cyber briefing.",
+      "viText": "Hôm nay, chúng tôi đang thu thập thông tin trực tiếp từ chủ đề họp báo chiến lược bí mật trên mạng.",
+      "start": 42.2,
+      "duration": 5.38
+    },
+    {
+      "text": "We're going to use this information to figure out exactly how to build a strategic moat around your business.",
+      "viText": "Chúng tôi sẽ sử dụng thông tin này để tìm ra chính xác cách xây dựng một con hào chiến lược xung quanh doanh nghiệp của bạn.",
+      "start": 47.58,
+      "duration": 6.3
+    },
+    {
+      "text": "And look, I know this sounds grim, but we will make it through this together.",
+      "viText": "Và nhìn này, tôi biết điều này nghe có vẻ nghiệt ngã, nhưng chúng ta sẽ cùng nhau vượt qua chuyện này.",
+      "start": 53.88,
+      "duration": 4.45
+    },
+    {
+      "text": "I promise.",
+      "viText": "Tôi hứa.",
+      "start": 58.33,
+      "duration": 2
+    },
+    {
+      "text": "But first, we need to have a really frank conversation about the ecosystem that is actively hunting businesses exactly like yours right now.",
+      "viText": "Nhưng trước tiên, chúng ta cần có một cuộc trò chuyện thực sự thẳng thắn về hệ sinh thái đang tích cực săn lùng các doanh nghiệp giống hệt doanh nghiệp của bạn ngay bây giờ.",
+      "start": 60.33,
+      "duration": 8.1
+    },
+    {
+      "text": "Here's our road map for this explainer.",
+      "viText": "Đây là lộ trình của chúng tôi cho người giải thích này.",
+      "start": 68.43,
+      "duration": 2.26
+    },
+    {
+      "text": "We'll cover the uncomfortable reality, accessibility over value, ransomware as a service, the true recovery cost, the insurance illusion, and wrap up with compliance is your survival.",
+      "viText": "Chúng tôi sẽ đề cập đến thực tế khó chịu, khả năng tiếp cận hơn giá trị, ransomware như một dịch vụ, chi phí khôi phục thực sự, ảo tưởng về bảo hiểm và việc tuân thủ chính là sự sống còn của bạn.",
+      "start": 70.69,
+      "duration": 10.58
+    },
+    {
+      "text": "All right, kicking things off with section one, the uncomfortable theme reality, where we shatter that illusion of safety.",
+      "viText": "Được rồi, bắt đầu với phần một, chủ đề thực tế khó chịu, nơi chúng ta phá tan ảo tưởng về sự an toàn.",
+      "start": 81.27,
+      "duration": 7.05
+    },
+    {
+      "text": "Listen, it is absolutely vital that we stop pretending you're just flying under the radar.",
+      "viText": "Nghe này, điều tối quan trọng là chúng tôi phải ngừng giả vờ như bạn đang bay trong tầm radar.",
+      "start": 88.32,
+      "duration": 5.2
+    },
+    {
+      "text": "The numbers simply don't lie, even when we really, really want them to.",
+      "viText": "Những con số đơn giản là không nói dối, ngay cả khi chúng ta thực sự, thực sự muốn chúng nói dối.",
+      "start": 93.52,
+      "duration": 4.11
+    },
+    {
+      "text": "In 2024, 26% of small and medium-sized enterprises experienced a ransomware attack.",
+      "viText": "Vào năm 2024, 26% doanh nghiệp vừa và nhỏ đã trải qua một cuộc tấn công bằng ransomware.",
+      "start": 97.63,
+      "duration": 4.8
+    },
+    {
+      "text": "Think about that for a second.",
+      "viText": "Hãy suy nghĩ về điều đó trong một giây.",
+      "start": 102.43,
+      "duration": 2
+    },
+    {
+      "text": "That's roughly one in four.",
+      "viText": "Đó là khoảng một phần tư.",
+      "start": 104.43,
+      "duration": 2
+    },
+    {
+      "text": "One in four.",
+      "viText": "Một trong bốn.",
+      "start": 106.43,
+      "duration": 2
+    },
+    {
+      "text": "We aren't talking about something that might happen someday in the future.",
+      "viText": "Chúng ta không nói về điều gì đó có thể xảy ra vào một ngày nào đó trong tương lai.",
+      "start": 108.43,
+      "duration": 4.28
+    },
+    {
+      "text": "This has already happened.",
+      "viText": "Điều này đã xảy ra rồi.",
+      "start": 112.71,
+      "duration": 2
+    },
+    {
+      "text": "It's happened to your neighbor and it's quite possibly happened to someone in your exact industry.",
+      "viText": "Điều này đã xảy ra với hàng xóm của bạn và rất có thể nó đã xảy ra với ai đó cùng ngành với bạn.",
+      "start": 114.71,
+      "duration": 5.67
+    },
+    {
+      "text": "And it gets worse.",
+      "viText": "Và nó trở nên tồi tệ hơn.",
+      "start": 120.38,
+      "duration": 2
+    },
+    {
+      "text": "Plus 40%.",
+      "viText": "Cộng thêm 40%.",
+      "start": 122.38,
+      "duration": 2
+    },
+    {
+      "text": "That is the projected increase in ransomware attacks onmemes by 2026.",
+      "viText": "Đó là mức độ gia tăng các cuộc tấn công bằng ransomware vào năm 2026.",
+      "start": 124.38,
+      "duration": 3.99
+    },
+    {
+      "text": "So the takeaway here is this.",
+      "viText": "Vì vậy, bài học rút ra ở đây là thế này.",
+      "start": 128.37,
+      "duration": 2
+    },
+    {
+      "text": "If you didn't get hit last year, your odds aren't improving.",
+      "viText": "Nếu bạn không bị trúng đòn vào năm ngoái, tỷ lệ cược của bạn sẽ không được cải thiện.",
+      "start": 130.37,
+      "duration": 3.47
+    },
+    {
+      "text": "They are actively getting worse by the minute.",
+      "viText": "Họ đang tích cực trở nên tồi tệ hơn theo từng phút.",
+      "start": 133.84,
+      "duration": 2.66
+    },
+    {
+      "text": "Now, you might be sitting there thinking, \"Okay, well, bad things happen.",
+      "viText": "Bây giờ, bạn có thể đang ngồi đó suy nghĩ, \"Được rồi, những điều tồi tệ sẽ xảy ra.",
+      "start": 136.5,
+      "duration": 4.22
+    },
+    {
+      "text": "If we get hit, we'll just figure it out and recover.\" Well, let's talk about what that recovery actually looks like in the real world.",
+      "viText": "Nếu chúng ta bị trúng đạn, chúng ta sẽ tìm ra cách giải quyết và phục hồi.\" Chà, hãy nói về sự phục hồi đó thực sự trông như thế nào trong thế giới thực.",
+      "start": 140.72,
+      "duration": 7.75
+    },
+    {
+      "text": "Because when ransomware strikes, 75% ofmemes cannot operate.",
+      "viText": "Bởi khi ransomware tấn công, 75% meme không thể hoạt động.",
+      "start": 148.47,
+      "duration": 3.47
+    },
+    {
+      "text": "And I don't mean they're just operating at a reduced capacity or things are a bit slow.",
+      "viText": "Và tôi không có nghĩa là họ chỉ hoạt động với công suất giảm hoặc mọi thứ hơi chậm.",
+      "start": 151.94,
+      "duration": 5.03
+    },
+    {
+      "text": "I mean they literally cannot operate.",
+      "viText": "Ý tôi là họ thực sự không thể hoạt động được.",
+      "start": 156.97,
+      "duration": 2.14
+    },
+    {
+      "text": "Period.",
+      "viText": "Giai đoạn.",
+      "start": 159.11,
+      "duration": 2
+    },
+    {
+      "text": "Your customers can't reach you.",
+      "viText": "Khách hàng của bạn không thể tiếp cận bạn.",
+      "start": 161.11,
+      "duration": 2
+    },
+    {
+      "text": "Your team has zero access to files and your whole supply chain just grinds to a complete halt.",
+      "viText": "Nhóm của bạn không có quyền truy cập vào các tệp và toàn bộ chuỗi cung ứng của bạn sẽ ngừng hoạt động hoàn toàn.",
+      "start": 163.11,
+      "duration": 5.44
+    },
+    {
+      "text": "And with an average of 4 to 6 weeks of recovery time, that business damage just compounds every single day.",
+      "viText": "Và với thời gian phục hồi trung bình từ 4 đến 6 tuần, thiệt hại kinh doanh đó chỉ tăng lên mỗi ngày.",
+      "start": 168.55,
+      "duration": 6.19
+    },
+    {
+      "text": "Moving on to section two, accessibility over value or what I like to call the sweet spot of cyber crime.",
+      "viText": "Chuyển sang phần hai, khả năng tiếp cận quan trọng hơn giá trị hay điều mà tôi muốn gọi là điểm hấp dẫn của tội phạm mạng.",
+      "start": 174.74,
+      "duration": 6.01
+    },
+    {
+      "text": "To actually fight this, we have to understand why you're the preferred target, right?",
+      "viText": "Để thực sự chống lại điều này, chúng ta phải hiểu tại sao bạn lại là mục tiêu ưu tiên, phải không?",
+      "start": 180.75,
+      "duration": 4.92
+    },
+    {
+      "text": "Attackers aren't stupid.",
+      "viText": "Những kẻ tấn công không ngu ngốc.",
+      "start": 185.67,
+      "duration": 2
+    },
+    {
+      "text": "They are rational actors running a very lucrative business.",
+      "viText": "Họ là những diễn viên lý trí đang điều hành một công việc kinh doanh rất sinh lợi.",
+      "start": 187.67,
+      "duration": 3.41
+    },
+    {
+      "text": "Think about it.",
+      "viText": "Hãy nghĩ về nó.",
+      "start": 191.08,
+      "duration": 2
+    },
+    {
+      "text": "If they target a massive Fortune 500 company, sure, they might ask for millions of dollars, but that brings massive risk and immediate heavy law enforcement heat.",
+      "viText": "Nếu họ nhắm mục tiêu vào một công ty lớn trong Fortune 500, chắc chắn họ có thể yêu cầu hàng triệu đô la, nhưng điều đó mang lại rủi ro lớn và áp lực thực thi pháp luật nặng nề ngay lập tức.",
+      "start": 193.08,
+      "duration": 9.37
+    },
+    {
+      "text": "But anme, a $50,000 ransom against the $2 million revenue company, that's negotiable.",
+      "viText": "Nhưng anme, khoản tiền chuộc 50.000 đô la cho công ty có doanh thu 2 triệu đô la, điều đó có thể thương lượng được.",
+      "start": 202.45,
+      "duration": 4.92
+    },
+    {
+      "text": "It's painful for sure, but it isn't impossible to pay.",
+      "viText": "Chắc chắn là đau đớn nhưng không phải là không thể trả được.",
+      "start": 207.37,
+      "duration": 3.12
+    },
+    {
+      "text": "Plus, 84% ofmemes manage their cyber security completely by themselves.",
+      "viText": "Ngoài ra, 84% meme tự mình quản lý hoàn toàn an ninh mạng của mình.",
+      "start": 210.49,
+      "duration": 4.11
+    },
+    {
+      "text": "That means no dedicated security team, no 24/7 monitoring, just hope, willpower, and maybe a crossed finger or two.memes are basically the Goldilocks of cyber crime.",
+      "viText": "Điều đó có nghĩa là không có đội bảo mật chuyên trách, không có giám sát 24/7, chỉ có hy vọng, ý chí và có thể là một hoặc hai ngón tay chéo. Các meme về cơ bản là Goldilocks của tội phạm mạng.",
+      "start": 214.6,
+      "duration": 9.54
+    },
+    {
+      "text": "Not too big to resist and not too small to be worth the effort.",
+      "viText": "Không quá lớn để cưỡng lại và không quá nhỏ để đáng nỗ lực.",
+      "start": 224.14,
+      "duration": 3.64
+    },
+    {
+      "text": "Then there's this whole operational timing aspect.",
+      "viText": "Sau đó là toàn bộ khía cạnh thời gian hoạt động.",
+      "start": 227.78,
+      "duration": 2.89
+    },
+    {
+      "text": "In the industry, we call it the 60-hour gift wrapping.",
+      "viText": "Trong ngành, chúng tôi gọi đó là gói quà 60 giờ.",
+      "start": 230.67,
+      "duration": 3.12
+    },
+    {
+      "text": "Attackers absolutely love Friday evenings.",
+      "viText": "Những kẻ tấn công hoàn toàn thích những buổi tối thứ sáu.",
+      "start": 233.79,
+      "duration": 2.43
+    },
+    {
+      "text": "Why?",
+      "viText": "Why?",
+      "start": 236.22,
+      "duration": 2
+    },
+    {
+      "text": "Because they know your IT person is already checked out thinking about their weekend plans and the executive team is offline.",
+      "viText": "Bởi vì họ biết nhân viên CNTT của bạn đã được kiểm tra và đang suy nghĩ về kế hoạch cuối tuần của họ và nhóm điều hành đang ngoại tuyến.",
+      "start": 238.22,
+      "duration": 7.23
+    },
+    {
+      "text": "That leaves a massive unmonitored 60-hour gap until Monday morning when senior management finally rolls in with their coffee and notices something has gone horribly, horribly wrong.",
+      "viText": "Điều đó để lại một khoảng trống lớn kéo dài 60 giờ không được giám sát cho đến sáng thứ Hai khi ban quản lý cấp cao cuối cùng cũng mang cà phê đến và nhận thấy có điều gì đó đã diễn ra cực kỳ sai lầm, cực kỳ sai lầm.",
+      "start": 245.45,
+      "duration": 10.47
+    },
+    {
+      "text": "For an attacker, those 60 hours are an absolute gift.",
+      "viText": "Đối với kẻ tấn công, 60 giờ đó là một món quà tuyệt đối.",
+      "start": 255.92,
+      "duration": 3.06
+    },
+    {
+      "text": "You see, you aren't being targeted because your data is uniquely valuable.",
+      "viText": "Bạn thấy đấy, bạn không bị nhắm mục tiêu vì dữ liệu của bạn có giá trị duy nhất.",
+      "start": 258.98,
+      "duration": 4.28
+    },
+    {
+      "text": "You're being targeted simply because you are available.",
+      "viText": "Bạn đang trở thành mục tiêu chỉ vì bạn sẵn sàng.",
+      "start": 263.26,
+      "duration": 3.18
+    },
+    {
+      "text": "Which brings us to section three, ransomware as a service, the industrial threat.",
+      "viText": "Điều này đưa chúng ta đến phần ba, ransomware là một dịch vụ, mối đe dọa công nghiệp.",
+      "start": 266.44,
+      "duration": 4.68
+    },
+    {
+      "text": "So, how is this happening so consistently and on such a massive scale?",
+      "viText": "Vì vậy, làm thế nào điều này lại xảy ra một cách nhất quán và trên quy mô lớn như vậy?",
+      "start": 271.12,
+      "duration": 4.05
+    },
+    {
+      "text": "Welcome to ransomware as a service or RAZ.",
+      "viText": "Chào mừng bạn đến với ransomware dưới dạng dịch vụ hoặc RAZ.",
+      "start": 275.17,
+      "duration": 2.43
+    },
+    {
+      "text": "And yes, it is every bit as organized as it sounds.",
+      "viText": "Và vâng, mọi thứ đều có tổ chức như tên gọi của nó.",
+      "start": 277.6,
+      "duration": 2.95
+    },
+    {
+      "text": "We have to stop picturing a lone hacker in a dark basement wearing a hoodie.",
+      "viText": "Chúng ta phải ngừng hình dung một hacker đơn độc trong tầng hầm tối tăm mặc áo hoodie.",
+      "start": 280.55,
+      "duration": 4.39
+    },
+    {
+      "text": "This is a highly industrialized business model.",
+      "viText": "Đây là một mô hình kinh doanh có tính công nghiệp hóa cao.",
+      "start": 284.94,
+      "duration": 2.72
+    },
+    {
+      "text": "Now developers build the malicious tools and they take a 20 to 30% cut.",
+      "viText": "Bây giờ các nhà phát triển xây dựng các công cụ độc hại và họ được giảm 20 đến 30%.",
+      "start": 287.66,
+      "duration": 4.11
+    },
+    {
+      "text": "Then these so-called affiliates deploy those tools and keep the rest of the profits.",
+      "viText": "Sau đó, những người được gọi là chi nhánh này sẽ triển khai những công cụ đó và giữ phần lợi nhuận còn lại.",
+      "start": 291.77,
+      "duration": 4.86
+    },
+    {
+      "text": "It's literally a scalable franchise model for cyber crime.",
+      "viText": "Đó thực sự là một mô hình nhượng quyền có thể mở rộng cho tội phạm mạng.",
+      "start": 296.63,
+      "duration": 3.35
+    },
+    {
+      "text": "And unfortunately, it works perfectly.",
+      "viText": "Và thật không may, nó hoạt động hoàn hảo.",
+      "start": 299.98,
+      "duration": 2.2
+    },
+    {
+      "text": "Let's break down how this actually plays out in practice.",
+      "viText": "Hãy cùng tìm hiểu xem điều này thực sự diễn ra như thế nào trong thực tế.",
+      "start": 302.18,
+      "duration": 3.3
+    },
+    {
+      "text": "The attack vector usually involves three distinct steps.",
+      "viText": "Vector tấn công thường bao gồm ba bước riêng biệt.",
+      "start": 305.48,
+      "duration": 3.24
+    },
+    {
+      "text": "Step one is initial access.",
+      "viText": "Bước một là truy cập ban đầu.",
+      "start": 308.72,
+      "duration": 2
+    },
+    {
+      "text": "This is where they slip in through a simple fishing email or maybe an unpatched vulnerability.",
+      "viText": "Đây là nơi họ xâm nhập thông qua một email câu cá đơn giản hoặc có thể là một lỗ hổng chưa được vá.",
+      "start": 310.72,
+      "duration": 5.44
+    },
+    {
+      "text": "Step two is lateral movement.",
+      "viText": "Bước hai là chuyển động ngang.",
+      "start": 316.16,
+      "duration": 2
+    },
+    {
+      "text": "This is where they spread quietly through your network.",
+      "viText": "Đây là nơi chúng lây lan một cách lặng lẽ qua mạng của bạn.",
+      "start": 318.16,
+      "duration": 3.18
+    },
+    {
+      "text": "Honestly, they can lurk there for weeks before you even realize they exist.",
+      "viText": "Thành thật mà nói, chúng có thể ẩn nấp ở đó hàng tuần trước khi bạn nhận ra sự tồn tại của chúng.",
+      "start": 321.34,
+      "duration": 4.34
+    },
+    {
+      "text": "Then comes step three, negotiation and double extortion.",
+      "viText": "Sau đó đến bước thứ ba, đàm phán và tống tiền kép.",
+      "start": 325.68,
+      "duration": 3.24
+    },
+    {
+      "text": "And this part, this is incredibly brutal.",
+      "viText": "Và phần này, nó cực kỳ tàn bạo.",
+      "start": 328.92,
+      "duration": 2.37
+    },
+    {
+      "text": "They don't just encrypt your data anymore.",
+      "viText": "Họ không chỉ mã hóa dữ liệu của bạn nữa.",
+      "start": 331.29,
+      "duration": 2.43
+    },
+    {
+      "text": "They steal it.",
+      "viText": "Họ ăn trộm nó.",
+      "start": 333.72,
+      "duration": 2
+    },
+    {
+      "text": "Customer records, financials, trade secrets, and then they threaten to leak it all publicly on the dark web if you don't pay up.",
+      "viText": "Hồ sơ khách hàng, tài chính, bí mật thương mại và sau đó họ đe dọa sẽ tiết lộ tất cả một cách công khai trên web đen nếu bạn không trả tiền.",
+      "start": 335.72,
+      "duration": 7.4
+    },
+    {
+      "text": "So, even if you have absolutely perfect backups, you're still staring down massive public exposure and a regulatory nightmare.",
+      "viText": "Vì vậy, ngay cả khi bạn có các bản sao lưu hoàn hảo, bạn vẫn đang phải đối mặt với sự tiếp xúc rộng rãi với công chúng và một cơn ác mộng về quy định.",
+      "start": 343.12,
+      "duration": 7.29
+    },
+    {
+      "text": "All right, section four, the true recovery cost.",
+      "viText": "Được rồi, phần bốn, chi phí thu hồi thực sự.",
+      "start": 350.41,
+      "duration": 2.78
+    },
+    {
+      "text": "And spoiler alert, it is about way more than just the ransom.",
+      "viText": "Và cảnh báo spoiler, nó không chỉ đơn thuần là tiền chuộc.",
+      "start": 353.19,
+      "duration": 3.53
+    },
+    {
+      "text": "We really need to pivot to the devastating financial reality of putting a business back together after one of these attacks.",
+      "viText": "Chúng ta thực sự cần phải xoay quanh thực tế tài chính tàn khốc của việc đưa doanh nghiệp hoạt động trở lại sau một trong những cuộc tấn công này.",
+      "start": 356.72,
+      "duration": 7.17
+    },
+    {
+      "text": "Let's look at the numbers.",
+      "viText": "Chúng ta hãy nhìn vào những con số.",
+      "start": 363.89,
+      "duration": 2
+    },
+    {
+      "text": "$120,000.",
+      "viText": "$120,000.",
+      "start": 365.89,
+      "duration": 2
+    },
+    {
+      "text": "That is just the average recovery cost for anme.",
+      "viText": "Đó chỉ là chi phí phục hồi trung bình cho anime.",
+      "start": 367.89,
+      "duration": 2.78
+    },
+    {
+      "text": "But here is the absolutely crucial point you need to take away from this.",
+      "viText": "Nhưng đây là điểm cực kỳ quan trọng mà bạn cần phải rút ra từ vấn đề này.",
+      "start": 370.67,
+      "duration": 4.22
+    },
+    {
+      "text": "That $120,000, it entirely excludes the ransom payment itself.",
+      "viText": "120.000 đô la đó, nó hoàn toàn không bao gồm khoản thanh toán tiền chuộc.",
+      "start": 374.89,
+      "duration": 3.59
+    },
+    {
+      "text": "That is purely the cost of just getting operational.",
+      "viText": "Đó hoàn toàn là chi phí để đi vào hoạt động.",
+      "start": 378.48,
+      "duration": 3.01
+    },
+    {
+      "text": "Again, we're talking paying for digital forensics, buying brand new hardware, absorbing the losses from downtime, and paying out massive staff overtime.",
+      "viText": "Một lần nữa, chúng ta đang nói đến việc trả tiền cho hoạt động điều tra kỹ thuật số, mua phần cứng hoàn toàn mới, bù đắp tổn thất do thời gian ngừng hoạt động và trả lương cho số lượng lớn nhân viên làm thêm giờ.",
+      "start": 381.49,
+      "duration": 8.79
+    },
+    {
+      "text": "If you're a company with $2 million in annual revenue, you are looking at 6% of your gross revenue wiped out in a single incident.",
+      "viText": "Nếu bạn là một công ty có doanh thu hàng năm là 2 triệu đô la, bạn đang chứng kiến ​​6% tổng doanh thu của mình bị xóa sổ chỉ vì một sự cố.",
+      "start": 390.28,
+      "duration": 7.52
+    },
+    {
+      "text": "To really put this into perspective, let's look at a few real world nightmares.",
+      "viText": "Để thực sự hiểu điều này, chúng ta hãy xem xét một vài cơn ác mộng trong thế giới thực.",
+      "start": 397.8,
+      "duration": 4.57
+    },
+    {
+      "text": "First up, an $8 million manufacturing firm.",
+      "viText": "Đầu tiên là một công ty sản xuất trị giá 8 triệu USD.",
+      "start": 402.37,
+      "duration": 2.49
+    },
+    {
+      "text": "They were attacked and suffered $240,000 in direct recovery expenses.",
+      "viText": "Họ bị tấn công và phải chịu chi phí khắc phục trực tiếp là 240.000 USD.",
+      "start": 404.86,
+      "duration": 3.99
+    },
+    {
+      "text": "And on top of that, they lost three massive contracts.",
+      "viText": "Và trên hết, họ đã mất ba hợp đồng lớn.",
+      "start": 408.85,
+      "duration": 3.12
+    },
+    {
+      "text": "Next, an 80 employee dental practice.",
+      "viText": "Tiếp theo là một phòng khám nha khoa có 80 nhân viên.",
+      "start": 411.97,
+      "duration": 2.14
+    },
+    {
+      "text": "They actually paid the $85,000 ransom.",
+      "viText": "Họ thực sự đã trả khoản tiền chuộc 85.000 USD.",
+      "start": 414.11,
+      "duration": 2.2
+    },
+    {
+      "text": "But guess what?",
+      "viText": "Nhưng đoán xem?",
+      "start": 416.31,
+      "duration": 2
+    },
+    {
+      "text": "The attackers leaked their data on the dark web.",
+      "viText": "Những kẻ tấn công đã rò rỉ dữ liệu của họ trên web đen.",
+      "start": 418.31,
+      "duration": 2.78
+    },
+    {
+      "text": "Anyway, it took them 18 long months just to rebuild patient trust.",
+      "viText": "Dù sao đi nữa, họ đã phải mất 18 tháng dài chỉ để xây dựng lại niềm tin của bệnh nhân.",
+      "start": 421.09,
+      "duration": 3.82
+    },
+    {
+      "text": "Finally, a B2B services company with $4 million in revenue.",
+      "viText": "Cuối cùng là một công ty dịch vụ B2B với doanh thu 4 triệu USD.",
+      "start": 424.91,
+      "duration": 3.41
+    },
+    {
+      "text": "They got hit on a Friday and by Wednesday they had racked up $600,000 in contract penalties just from missing their delivery deadlines.",
+      "viText": "Họ bị tấn công vào thứ Sáu và đến thứ Tư, họ đã phải gánh chịu 600.000 đô la tiền phạt hợp đồng chỉ vì trễ thời hạn giao hàng.",
+      "start": 428.32,
+      "duration": 7.81
+    },
+    {
+      "text": "None of these companies thought it would happen to them and every single one of them was wrong.",
+      "viText": "Không ai trong số những công ty này nghĩ rằng điều đó sẽ xảy ra với họ và mỗi công ty trong số họ đều sai.",
+      "start": 436.13,
+      "duration": 5.49
+    },
+    {
+      "text": "Section five, the insurance illusion, a cracking safety net.",
+      "viText": "Phần năm, ảo tưởng về bảo hiểm, một mạng lưới an toàn đang bị rạn nứt.",
+      "start": 441.62,
+      "duration": 3.47
+    },
+    {
+      "text": "Let's dismantle this false sense of security that so many business owners have right now.",
+      "viText": "Hãy cùng loại bỏ cảm giác an toàn sai lầm mà rất nhiều chủ doanh nghiệp hiện nay đang có.",
+      "start": 445.09,
+      "duration": 5.15
+    },
+    {
+      "text": "It's projected thatmemes will spend $ 109 billion on cyber security in 2026.",
+      "viText": "Dự kiến ​​các meme sẽ chi 109 tỷ USD cho an ninh mạng vào năm 2026.",
+      "start": 450.24,
+      "duration": 4.39
+    },
+    {
+      "text": "Now that sounds fantastic, right?",
+      "viText": "Bây giờ điều đó nghe có vẻ tuyệt vời phải không?",
+      "start": 454.63,
+      "duration": 2
+    },
+    {
+      "text": "But paradoxically, only 38% ofmemes actually have cyber insurance.",
+      "viText": "Nhưng nghịch lý thay, chỉ có 38% số meme thực sự có bảo hiểm mạng.",
+      "start": 456.63,
+      "duration": 3.82
+    },
+    {
+      "text": "That means a massive 62% are flying completely blind without any net whatsoever.",
+      "viText": "Điều đó có nghĩa là 62% đang bay hoàn toàn mù mà không có bất kỳ tấm lưới nào.",
+      "start": 460.45,
+      "duration": 4.63
+    },
+    {
+      "text": "And for that 38% who do have an insurance policy, well, don't breathe that sigh of relief just yet.",
+      "viText": "Và đối với 38% những người có hợp đồng bảo hiểm, đừng vội thở phào nhẹ nhõm.",
+      "start": 465.08,
+      "duration": 5.72
+    },
+    {
+      "text": "That safety net is cracking.",
+      "viText": "Mạng lưới an toàn đó đang rạn nứt.",
+      "start": 470.8,
+      "duration": 2
+    },
+    {
+      "text": "Attackers have figured out the game and these policies are absolutely filled with loopholes.",
+      "viText": "Những kẻ tấn công đã tìm ra trò chơi và những chính sách này hoàn toàn chứa đầy sơ hở.",
+      "start": 472.8,
+      "duration": 5.32
+    },
+    {
+      "text": "For example, if the attack is traced back to a sanctioned state sponsored criminal, your coverage simply disappears.",
+      "viText": "Ví dụ: nếu cuộc tấn công được truy nguyên từ một tội phạm được nhà nước trừng phạt bảo trợ, phạm vi bảo hiểm của bạn sẽ biến mất.",
+      "start": 478.12,
+      "duration": 6.71
+    },
+    {
+      "text": "poof, gone.",
+      "viText": "ôi, biến mất.",
+      "start": 484.83,
+      "duration": 2
+    },
+    {
+      "text": "Business interruption payouts are typically capped at just 30 to 60 days maximum.",
+      "viText": "Các khoản thanh toán gián đoạn kinh doanh thường được giới hạn ở mức tối đa chỉ từ 30 đến 60 ngày.",
+      "start": 486.83,
+      "duration": 4.68
+    },
+    {
+      "text": "Oh, and if you didn't have multiffactor authentication turned on, they can deny your claim outright due to negligence.",
+      "viText": "Ồ, và nếu bạn chưa bật xác thực đa yếu tố, họ có thể từ chối hoàn toàn yêu cầu của bạn do sơ suất.",
+      "start": 491.51,
+      "duration": 6.82
+    },
+    {
+      "text": "And those massive regulatory fines for things like HIPPA or GDPR, yeah, those are rarely covered either.",
+      "viText": "Và những khoản tiền phạt lớn theo quy định đối với những thứ như HIPPA hoặc GDPR, vâng, những khoản tiền đó cũng hiếm khi được bao trả.",
+      "start": 498.33,
+      "duration": 6.01
+    },
+    {
+      "text": "You could get hit and realize your policy only covers 40% of your actual losses, all while your premiums are steadily rising 13% every single year.",
+      "viText": "Bạn có thể bị ảnh hưởng và nhận ra rằng hợp đồng bảo hiểm của bạn chỉ chi trả 40% tổn thất thực tế của bạn, trong khi phí bảo hiểm của bạn đang tăng đều đặn 13% mỗi năm.",
+      "start": 504.34,
+      "duration": 8.5
+    },
+    {
+      "text": "Finally, section six, compliance is your survival.",
+      "viText": "Cuối cùng, phần sáu, tuân thủ là sự sống còn của bạn.",
+      "start": 512.84,
+      "duration": 2.89
+    },
+    {
+      "text": "Let's talk about building that strategic mode.",
+      "viText": "Hãy nói về việc xây dựng chế độ chiến lược đó.",
+      "start": 515.73,
+      "duration": 2.66
+    },
+    {
+      "text": "So what's the solution?",
+      "viText": "Vậy giải pháp là gì?",
+      "start": 518.39,
+      "duration": 2
+    },
+    {
+      "text": "How do we actually fix this?",
+      "viText": "Làm thế nào để chúng tôi thực sự khắc phục điều này?",
+      "start": 520.39,
+      "duration": 2
+    },
+    {
+      "text": "The secret here is reframing what a lot of people see as boring bureaucratic red tape.",
+      "viText": "Bí mật ở đây là sắp xếp lại thứ mà nhiều người coi là quan liêu nhàm chán.",
+      "start": 522.39,
+      "duration": 4.97
+    },
+    {
+      "text": "Frameworks like HIPPA, PCIDSS, CMMC and SOCK 2.",
+      "viText": "Các khung như HIPPA, PCIDSS, CMMC và SOCK 2.",
+      "start": 527.36,
+      "duration": 2.72
+    },
+    {
+      "text": "These are not just administrative checkboxes to keep regulators happy.",
+      "viText": "Đây không chỉ là những hộp kiểm hành chính để khiến các cơ quan quản lý hài lòng.",
+      "start": 530.08,
+      "duration": 4.05
+    },
+    {
+      "text": "They are your absolute strongest defense.",
+      "viText": "Họ là phòng thủ mạnh mẽ nhất của bạn.",
+      "start": 534.13,
+      "duration": 2.37
+    },
+    {
+      "text": "This is what we call the compliance paradox.",
+      "viText": "Đây là những gì chúng tôi gọi là nghịch lý tuân thủ.",
+      "start": 536.5,
+      "duration": 2.54
+    },
+    {
+      "text": "You see, the exact same security controls that are required to achieve these certifications are the very things that stop ransomware dead in its tracks.",
+      "viText": "Bạn thấy đấy, các biện pháp kiểm soát bảo mật tương tự cần có để đạt được các chứng chỉ này chính là những thứ ngăn chặn ransomware chết trên đường đi của nó.",
+      "start": 539.04,
+      "duration": 8.79
+    },
+    {
+      "text": "And here is the absolute best part.",
+      "viText": "Và đây là phần tuyệt vời nhất.",
+      "start": 547.83,
+      "duration": 2.02
+    },
+    {
+      "text": "Having a strong compliance posture doesn't just stop hackers.",
+      "viText": "Có một tư thế tuân thủ mạnh mẽ không chỉ ngăn chặn tin tặc.",
+      "start": 549.85,
+      "duration": 3.53
+    },
+    {
+      "text": "It actually becomes a massive competitive advantage for your business.",
+      "viText": "Nó thực sự trở thành một lợi thế cạnh tranh lớn cho doanh nghiệp của bạn.",
+      "start": 553.38,
+      "duration": 4.05
+    },
+    {
+      "text": "It helps you win enterprise contracts, sale through due diligence reviews, and beat out your competitors simply based on your superior security credentials.",
+      "viText": "Nó giúp bạn giành được các hợp đồng doanh nghiệp, bán hàng thông qua các đánh giá thẩm định và đánh bại các đối thủ cạnh tranh chỉ dựa trên thông tin xác thực bảo mật vượt trội của bạn.",
+      "start": 557.43,
+      "duration": 9.02
+    },
+    {
+      "text": "Let this quote sink in.",
+      "viText": "Hãy để câu trích dẫn này thấm sâu vào.",
+      "start": 566.45,
+      "duration": 2
+    },
+    {
+      "text": "The difference between a $47 guide and a $120,000 recovery is preparation.",
+      "viText": "Sự khác biệt giữa hướng dẫn trị giá 47 đô la và mức thu hồi 120.000 đô la là sự chuẩn bị.",
+      "start": 568.45,
+      "duration": 4.28
+    },
+    {
+      "text": "You see, you cannot entirely eliminate risk.",
+      "viText": "Bạn thấy đấy, bạn không thể loại bỏ hoàn toàn rủi ro.",
+      "start": 572.73,
+      "duration": 2.54
+    },
+    {
+      "text": "Nobody can do that.",
+      "viText": "Không ai có thể làm điều đó.",
+      "start": 575.27,
+      "duration": 2
+    },
+    {
+      "text": "Risk can only be managed.",
+      "viText": "Rủi ro chỉ có thể được quản lý.",
+      "start": 577.27,
+      "duration": 2
+    },
+    {
+      "text": "And this explainer, this has been your strategic framework.",
+      "viText": "Và người giải thích này, đây là khuôn khổ chiến lược của bạn.",
+      "start": 579.27,
+      "duration": 3.41
+    },
+    {
+      "text": "It's all about diligent, thoughtful preparation before that dreaded Friday night attack inevitably happens.",
+      "viText": "Tất cả chỉ là sự chuẩn bị kỹ lưỡng và chu đáo trước khi cuộc tấn công đáng sợ vào đêm thứ Sáu chắc chắn xảy ra.",
+      "start": 582.68,
+      "duration": 6.19
+    },
+    {
+      "text": "Because remember what we said at the start, you are already a target.",
+      "viText": "Bởi vì hãy nhớ những gì chúng tôi đã nói lúc đầu, bạn đã là mục tiêu.",
+      "start": 588.87,
+      "duration": 3.99
+    },
+    {
+      "text": "That fact is not changing.",
+      "viText": "Thực tế đó không thay đổi.",
+      "start": 592.86,
+      "duration": 2
+    },
+    {
+      "text": "So, I want you to genuinely ask yourself this right now as you evaluate your own company's readiness.",
+      "viText": "Vì vậy, tôi muốn bạn thực sự tự hỏi bản thân điều này ngay bây giờ khi bạn đánh giá mức độ sẵn sàng của công ty bạn.",
+      "start": 594.86,
+      "duration": 5.84
+    },
+    {
+      "text": "Are you a prepared target or are you a vulnerable one?",
+      "viText": "Bạn là mục tiêu đã được chuẩn bị sẵn hay bạn là mục tiêu dễ bị tổn thương?",
+      "start": 600.7,
+      "duration": 3.12
+    },
+    {
+      "text": "Which one do you want to be when next Monday morning rolls around?",
+      "viText": "Bạn muốn trở thành người nào vào sáng thứ Hai tuần sau?",
+      "start": 603.82,
+      "duration": 3.82
+    },
+    {
+      "text": "To make sure you are answering that question the right way, I highly recommend you visit the lemconfidential.com.",
+      "viText": "Để đảm bảo bạn đang trả lời câu hỏi đó đúng cách, tôi thực sự khuyên bạn nên truy cập lemconfidential.com.",
+      "start": 607.64,
+      "duration": 6.53
+    },
+    {
+      "text": "You can access the full cyber siege guide, a really comprehensive 72-hour incident response playbook and insurance templates designed specifically for your needs.",
+      "viText": "Bạn có thể truy cập vào hướng dẫn bao vây mạng đầy đủ, cẩm nang ứng phó sự cố thực sự toàn diện trong 72 giờ và các mẫu bảo hiểm được thiết kế riêng cho nhu cầu của bạn.",
+      "start": 614.17,
+      "duration": 9.37
+    },
+    {
+      "text": "Because as we navigate 2026 and beyond, preparation is no longer just optional.",
+      "viText": "Bởi vì khi chúng ta hướng tới năm 2026 trở đi, việc chuẩn bị không còn chỉ là tùy chọn nữa.",
+      "start": 623.54,
+      "duration": 4.57
+    },
+    {
+      "text": "It is absolutely essential for your survival.",
+      "viText": "Nó thực sự cần thiết cho sự sống còn của bạn.",
+      "start": 628.11,
+      "duration": 2.6
+    },
+    {
+      "text": "Thanks for joining me on this explainer and stay safe out there.",
+      "viText": "Cảm ơn bạn đã tham gia cùng tôi trong phần giải thích này và giữ an toàn khi ở ngoài đó.",
+      "start": 630.71,
+      "duration": 3.7
+    }
+  ]
+}

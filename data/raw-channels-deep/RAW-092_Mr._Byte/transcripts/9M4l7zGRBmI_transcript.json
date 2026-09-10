@@ -1,0 +1,1367 @@
+{
+  "videoId": "9M4l7zGRBmI",
+  "title": "Every PC Motherboard Explained As Simply As Possible!",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 226,
+  "fullText": "When you build a PC, the motherboard is the one component everything else connects to. Your CPU, RAM, storage, GPU, they all plug into the motherboard. But walk into any PC store and you'll see dozens of different motherboard models. WRX, TRX, B650, Z790, H610. What does any of that actually mean? In this video, I'll explain every major motherboard series from both AMD and Intel, what they're designed for, and which one is right for you. Let's start with AMD. AMD A series. The A series is AMD's entry-level motherboard lineup. These boards are designed to be affordable and accessible. They are paired with budget AMD processors, typically older Ryzen chips or APUs, which stands for accelerated processing unit, meaning the CPU has a built-in GPU. A series boards usually use older sockets like AM4, and they support basic features, a few RAM slots, one or two PCIe slots, and standard connectivity. They do not support PCIe 5 zero. They have fewer USB ports and overclocking is either limited or not available at all. For someone building a basic office PC, a home media machine, or a very budget gaming rig, an A series board gets the job done. You save money on the motherboard and put that budget toward a better CPU or GPU. The trade-off is longevity. A series boards often do not support the latest generation of processors, so you have less room to upgrade in the future. If you plan to upgrade your CPU in a year or two, an A series board might not keep up. But if your build is final and your needs are simple, it's a perfectly reasonable choice. AMDB series. The B series is AMD's mid-range motherboard lineup, and it is the most popular category for everyday PC builders. These boards strike a balance between price and features. They support modern AMD processors on the AM5 socket. Models like the B650 are the most common. B series boards support PCIe 5.0 for NVME storage, DDR5 RAM, and USB 4.0 on higherend variants. They also allow some overclocking, though not as freely as the X series. What makes the B series so popular is that it gives you most of what you need without the premium price tag. A B650 board can be found for around $100 to $180, which is very reasonable for the feature set. The downside compared to X series is fewer PCIe lanes, less robust power delivery for extreme overclocking, and fewer connectivity options on cheaper models. But for a gaming PC, a content creation rig or a general workstation running a Ryzen 7 or Ryzen 9 processor, a B650 board is almost always the smart choice. It is the sweet spot. Most people, including myself, would recommend starting here unless you have a specific reason to go higher. AMDX670E. The X670E is AMD's flagship consumer motherboard chipset for the AM5 platform. The E stands for extreme. It sits at the top of the regular consumer lineup above B650 and standard X670 boards. X670E boards are designed for users who want maximum performance and full PCIe 5.0 support across both the CPU and chipset lanes. That means PCIe 5.0 for your GPU slot and your NVME slots simultaneously. They also support full CPU overclocking, more robust VRM systems. VRM stands for voltage regulator module, which is the hardware that delivers stable power to your CPU and more USB ports. Overall, the difference between X670 and X670E is that extreme boards guarantee PCIe 5.0 on all major slots, where standard X670 may only offer it on some. X670 eboards are typically paired with top tier Ryzen 9 processors or Ryzen 9 X3D chips for maximum gaming or workstation performance. The downside is price. X670E boards can range from $250 to over $600. That is a significant investment on top of an already expensive CPU. For most gamers, a B650 board performs nearly identically in real world use. X670E makes more sense if you are pushing a high core count CPU hard or building for future proofing AMD X series. The standard X series sits between B series and X670E boards like the X570 on AM4 and standard X670 on AM5 offer more features than B series but without the full extreme designation. These boards typically offer better power delivery than B series, more PCIe lanes, more fan headers, and richer connectivity. They are well suited for users with mid to high-end Ryzen processors who want room to overclock or expand their system without paying the full premium of an extreme board. X570 boards, which are still widely available and compatible with Ryzen 5000 series CPUs, remain a strong value for AM4 builds in particular. One historical note, X570 was the first consumer chipset to support PCI 4.0 when it launched in 2019, a significant milestone at the time. The trade-off for standard X series is that you get fewer guaranteed PCI 5.0 lanes compared to X670E. And pricing can sometimes overlap awkwardly with budget X670E models. But as a middle ground option, the X series is a solid choice for power users who want headroom without going all the way to the top of the stack. AMD WRX and TRX series. The WRX and TRX series are AMD's workstation and high-end desktop motherboards. They are designed for AMD Thread Ripper processors, some of the most powerful desktop CPUs ever made. These boards are not for gaming. They are built for professionals who do things like 3D rendering, video production, scientific simulation, or machine learning. A Thread Ripper CPU can have up to 96 cores. That means the motherboard also needs to support an enormous amount of RAM, PCIe lanes, and storage simultaneously. WRX boards typically support up to 2 TB of ECC RAM, which is a type of memory that automatically corrects errors. Critical for professional workloads. TRX boards sit slightly below WRX, designed for high-end desktop use rather than full workstation deployments. Both series use the TR5 socket, which is physically large and incompatible with regular Ryzen CPUs. The downside is obvious. These boards are extremely expensive. Entry-level WRX boards start around $500, and high-end models can exceed $1,000 before you even buy the CPU. For most people, this is total overkill. But for a professional running complex workloads all day, the performance difference is real and measurable. Now, let's move to Intel. Intel W series. Intel's W series motherboards are the workstation grade boards designed for Intel Xeon W processors. Similar to AMD's WRX and TRX lineup, these are not consumer products. They are built for demanding professional environments. Xeon W CPUs support ECC memory, large core counts, and workloads that run continuously for hours or days, rendering, simulation, server tasks, or scientific computing. W series boards are designed with reliability as the top priority. They feature reinforced PCIe slots, more robust power delivery, and support for larger memory configurations than standard desktop boards. Intel's W790 chipset, for example, supports up to 2 TB of DDR5ECC RAM and up to 112 PCIe lanes from the CPU and chipset combined. The downside, just like with AMD's workstation lineup, is cost. A W series board can easily run $600 to $1,000 before adding the CPU or RAM. These boards are almost never found in gaming or everyday home builds. They exist in professional workstations, content production studios, and research environments. Unless you specifically need Xeon W capabilities, consumer Intel boards will serve you better for less money. Intel H610 series. The H610 is Intel's entry-level chipset for consumer motherboards. These boards are paired with budget Intel Core processors and are designed to be as affordable as possible. An H610 board typically supports DDR4 or DDR5 RAM depending on the specific model and offers just enough connectivity for a simple system. You get a few USB ports, one or two storage slots, and a single PCIe by6 slot for a GPU. What you do not get is overclocking. H610 boards lock memory speeds to Intel's official GDC specifications, which means you cannot run fast DDR5 kits at their advertised speeds. You are also limited to one memory channel in some configurations, which reduces overall memory bandwidth. For a basic office PC, a small form factor build, or a home media server, H610 boards are perfectly functional. They are inexpensive, often under $80, and pair well with Core i3 or Core i5 processors for light tasks. But if you are gaming or doing anything CPU inensive, the limitations become a real bottleneck. Spending a bit more on a B series board almost always gives you a noticeably better experience for not much extra cost. Intel H770 series. The H770 is Intel's upper mid-range chipset. Sitting above H610, but below the B760 and Z790 in the Intel lineup. H770 boards offer more PCIe lanes and better connectivity than H610, but they still do not support CPU overclocking. What you do get is more flexibility and storage options, more USB ports, and better memory support compared to entry-level boards. H770 is a relatively niche chipset. It targets users who want a more capable system but either do not need overclocking or are pairing their build with a non-K Intel CPU. The K suffix is what marks Intel's unlocked overclockable processors. For a mid-range gaming build using a Core i5 or Core i7 without a Ksuffix, an H770 board offers solid performance at a reasonable price. The trade-off is that B760 boards, which are similarly priced and more widely available, often offer comparable or even better value depending on the brand and model. H770 is a sensible but quiet option in Intel's lineup. Not the flashiest choice, but a reliable one for the right use case. Intel B series Intel's B series chipsets, like the B760 on the latest platform, are the sweet spot for most Intel builds. Similar to AMD's B series position, these boards support a wide range of core processors, offer PCI 4.0 and some PCI 5.0 on select slots, and provide solid memory support, including faster DDR5 speeds. Unlike H series boards, B760 allows memory overclocking through Intel's XMP profile system. XMP stands for extreme memory profile, a standard that lets your RAM run at its advertised speed automatically. This alone makes a big difference in real world performance. B series boards also tend to come with better power delivery, more fan headers, and better build quality than H series options. They are a strong match for Core i5 and Core i7 nonK processors. For most Intel builds that are not focused on extreme overclocking, a B760 board covers everything you need. Prices typically range from $100 to $200 depending on features and form factor. The only real downside compared to Z series is that you cannot overclock the CPU itself, only the memory. For the majority of users, that is not a limiting factor at all. Intel Z series. The Z series is Intel's flagship consumer chipset, and it is the only Intel chipset that allows full CPU overclocking. Boards like the Z790 are designed for users running Core i7K or Core i9K processors, the ones with unlocked multipliers. With a Z790 board and a K processor, you can push the CPU beyond its stock speeds, which can meaningfully improve performance in both gaming and productivity tasks. Z series boards also come with the most robust power delivery systems, the most PCIe lanes, the most USB ports, and premium build quality. Overall, high-end Z790 boards often include features like multiple M2 slots with PCIe 5.0, Thunderbolt 4, and 2.5 or 10 GB Ethernet. The trade-off is price. Z790 boards range from around $200 on the budget end to over $700 for flagship models. Pairing a high-end Z790 with a Core i914,900K gives you one of the most powerful consumer desktop setups available. But if you are not planning to overclock, you are paying a premium for features you may not fully use. In that case, a B760 board gives you 90% of the experience for significantly less money. Z series is for enthusiasts who want every advantage possible. So that is every major motherboard series from AMD and Intel from budget entry-level boards all the way up to professional workstation platforms. The right board depends on your CPU, your workload, and how much you want to spend. For most people, a B series board from either AMD or Intel is the right starting point. You get modern features, solid performance, and room to upgrade your CPU later without overpaying. Anyway, I also made some other cool videos about CPUs, RAM, and GPS. Don't forget to check them out. Okay.",
+  "fullTextVi": "Khi bạn xây dựng một chiếc PC, bo mạch chủ là thành phần duy nhất mà mọi thứ khác kết nối với nhau to. CPU, RAM, bộ lưu trữ, GPU của bạn, tất cả đều cắm vào bo mạch chủ. Nhưng khi bước vào bất kỳ cửa hàng PC nào, bạn sẽ thấy hàng chục mẫu bo mạch chủ khác nhau. WRX, TRX, B650, Z790, H610. Điều đó thực sự có ý nghĩa gì? Trong video này, tôi sẽ giải thích mọi dòng bo mạch chủ chính của cả AMD và Intel, chúng được thiết kế để làm gì và cái nào phù hợp với bạn. Hãy bắt đầu với AMD. Dòng AMD A. Dòng A là dòng bo mạch chủ cấp thấp của AMD. Những bảng này được thiết kế để có giá cả phải chăng và dễ tiếp cận. Chúng được ghép nối với các bộ xử lý AMD giá rẻ, điển hình là các chip hoặc APU Ryzen cũ hơn, là viết tắt của bộ xử lý tăng tốc, nghĩa là CPU có GPU tích hợp. Các bo mạch dòng này thường sử dụng các ổ cắm cũ hơn như AM4 và chúng hỗ trợ các tính năng cơ bản, một vài khe RAM, một hoặc hai khe PCIe và kết nối tiêu chuẩn. Họ không hỗ trợ PCIe 5 zero. Chúng có ít cổng USB hơn và khả năng ép xung bị hạn chế hoặc không có tại all. Dành cho ai đó đang xây dựng một PC văn phòng cơ bản, một máy đa phương tiện gia đình hoặc rất giàn chơi game bình dân, bo mạch dòng A sẽ hoàn thành công việc. Bạn tiết kiệm tiền mua bo mạch chủ và dành ngân sách đó cho một CPU tốt hơn hoặc GPU. Sự đánh đổi là tuổi thọ. Các bo mạch dòng thường không hỗ trợ thế hệ vi xử lý mới nhất nên bạn có ít chỗ để nâng cấp trong tương lai. Nếu bạn dự định nâng cấp CPU của mình sau một hoặc hai năm nữa, A bảng loạt có thể không theo kịp. Nhưng nếu bản dựng của bạn là bản cuối cùng và nhu cầu của bạn đơn giản thì đó là một hoàn hảo sự lựa chọn hợp lý. Dòng AMDB. Dòng B là dòng bo mạch chủ tầm trung của AMD và là dòng phổ biến nhất danh mục dành cho người xây dựng PC hàng ngày. Những bảng này tạo ra sự cân bằng giữa giá cả và tính năng. Chúng hỗ trợ bộ xử lý AMD hiện đại trên ổ cắm AM5. Những mẫu như B650 là phổ biến nhất. Bo mạch dòng B hỗ trợ PCIe 5. 0 cho bộ lưu trữ NVME, RAM DDR5 và USB 4. 0 trên các biến thể cao cấp hơn. Chúng cũng cho phép ép xung, mặc dù không thoải mái như dòng X. Điều khiến dòng B trở nên phổ biến là nó mang đến cho bạn hầu hết những gì bạn cần mà không có thẻ giá cao. Một bo mạch B650 có thể được tìm thấy với giá khoảng $100 đến $180, rất hợp lý cho bộ tính năng. Nhược điểm so với dòng X là ít làn PCIe hơn, cung cấp điện kém hơn để ép xung cực cao và có ít tùy chọn kết nối hơn trên các mẫu rẻ hơn. Nhưng đối với PC chơi game, giàn tạo nội dung hoặc máy trạm thông thường chạy bộ xử lý Ryzen 7 hoặc Ryzen 9, bo mạch B650 hầu như luôn là sự lựa chọn thông minh. Đó là điểm ngọt ngào. Hầu hết mọi người, bao gồm cả tôi, khuyên bạn nên bắt đầu từ đây trừ khi bạn có lý do cụ thể để đi cao hơn. AMDX670E. X670E là chipset bo mạch chủ tiêu dùng hàng đầu của AMD dành cho nền tảng AM5. Chữ E là viết tắt của cực đoan. Nó đứng đầu dòng sản phẩm tiêu dùng thông thường trên B650 và tiêu chuẩn Bo mạch X670. Bo mạch X670E được thiết kế dành cho người dùng muốn có hiệu suất tối đa và PCIe 5 đầy đủ. 0 hỗ trợ trên cả làn CPU và chipset. Điều đó có nghĩa là PCIe 5. 0 cho khe cắm GPU và khe cắm NVME của bạn cùng một lúc. Chúng cũng hỗ trợ ép xung toàn bộ CPU, hệ thống VRM mạnh mẽ hơn. VRM là viết tắt của mô-đun điều chỉnh điện áp, là phần cứng mang lại nguồn điện ổn định tới CPU của bạn và nhiều cổng USB hơn. Nhìn chung, sự khác biệt giữa X670 và X670E là bo mạch cực cao đảm bảo PCIe 5. 0 trên tất cả các khe cắm chính, trong đó X670 tiêu chuẩn chỉ có thể cung cấp nó trên một số khe cắm. Bo mạch điện tử X670 thường được ghép nối với bộ xử lý Ryzen 9 cấp cao nhất hoặc Ryzen 9 Chip X3D cho hiệu suất chơi game hoặc máy trạm tối đa. Nhược điểm là giá cả. Bo mạch X670E có thể dao động từ $250 đến hơn $600. Đó là một khoản đầu tư đáng kể so với một CPU vốn đã đắt đỏ. Đối với hầu hết các game thủ, bo mạch B650 hoạt động gần như giống hệt khi sử dụng trong thế giới thực. X670E sẽ hợp lý hơn nếu bạn đang đẩy mạnh CPU có số lõi cao hoặc xây dựng dòng AMD X để kiểm chứng trong tương lai. Dòng X tiêu chuẩn nằm giữa các bo mạch dòng B và X670E như X570 trên AM4 và X670 tiêu chuẩn trên AM5 cung cấp nhiều tính năng hơn dòng B nhưng không có sự chỉ định cực đoan đầy đủ. Các bo mạch này thường cung cấp nguồn điện tốt hơn dòng B, nhiều làn PCIe hơn, nhiều hơn đầu quạt và khả năng kết nối phong phú hơn. Chúng rất phù hợp cho người dùng có bộ xử lý Ryzen tầm trung đến cao cấp muốn có thể ép xung hoặc mở rộng hệ thống của họ mà không phải trả toàn bộ phí bảo hiểm bảng cực đoan. Các bo mạch X570 vẫn được bán rộng rãi và tương thích với CPU dòng AMD 5000, vẫn là một giá trị mạnh mẽ cho các bản dựng AM4 nói riêng. Một ghi chú lịch sử, X570 là chipset tiêu dùng đầu tiên hỗ trợ PCI 4. 0 khi ra mắt vào năm 2019, một cột mốc quan trọng vào thời điểm đó. Sự đánh đổi của dòng X tiêu chuẩn là bạn nhận được ít PCI 5 được đảm bảo hơn. 0 làn so với X670E. Và giá cả đôi khi có thể trùng lặp một cách khó hiểu với các mẫu X670E bình dân. Nhưng là một lựa chọn tầm trung, dòng X là một lựa chọn chắc chắn cho những người dùng thành thạo muốn có khoảng trống mà không cần phải đi tới đầu trang ngăn xếp. Dòng AMD WRX và TRX. Dòng WRX và TRX là máy trạm và bo mạch chủ máy tính để bàn cao cấp của AMD. Chúng được thiết kế cho bộ xử lý AMD Thread Ripper, một trong những máy tính để bàn mạnh nhất CPU từng được tạo ra. Những bảng này không phải để chơi game. Chúng được xây dựng cho các chuyên gia làm những việc như kết xuất 3D, sản xuất video, khoa học mô phỏng hoặc học máy. Một CPU Thread Ripper có thể có tới 96 lõi. Điều đó có nghĩa là bo mạch chủ cũng cần hỗ trợ một lượng RAM cực lớn, PCIe làn đường và lưu trữ đồng thời. Bo mạch WRX thường hỗ trợ RAM ECC lên tới 2 TB, đây là loại bộ nhớ tự động sửa lỗi. Quan trọng đối với khối lượng công việc chuyên môn. Bo mạch TRX nằm hơi thấp hơn WRX, được thiết kế để sử dụng cho máy tính để bàn cao cấp thay vì đầy đủ triển khai máy trạm. Cả hai dòng đều sử dụng ổ cắm TR5, có kích thước vật lý lớn và không tương thích với thông thường CPU Ryzen. Nhược điểm là rõ ràng. Những bảng này cực kỳ đắt tiền. Bảng WRX cấp cơ bản có giá khởi điểm khoảng 500 USD và các mẫu cao cấp có thể vượt quá 1.000 USD trước bạn thậm chí mua CPU. Đối với hầu hết mọi người, điều này là quá mức cần thiết. Nhưng đối với một chuyên gia chạy khối lượng công việc phức tạp cả ngày, sự khác biệt về hiệu suất là có thật và có thể đo lường được. Bây giờ, hãy chuyển sang Intel. Dòng Intel W. Bo mạch chủ dòng W của Intel là bo mạch cấp máy trạm được thiết kế cho Intel Xeon W bộ xử lý. Tương tự như dòng WRX và TRX của AMD, đây không phải là sản phẩm tiêu dùng. Chúng được xây dựng cho môi trường chuyên nghiệp đòi hỏi khắt khe. CPU Xeon W hỗ trợ bộ nhớ ECC, số lượng lõi lớn và khối lượng công việc chạy liên tục trong nhiều giờ hoặc nhiều ngày, kết xuất, mô phỏng, tác vụ máy chủ hoặc tính toán khoa học. Bo mạch dòng W được thiết kế với độ tin cậy là ưu tiên hàng đầu. Chúng có các khe cắm PCIe được gia cố, cung cấp năng lượng mạnh mẽ hơn và hỗ trợ bộ nhớ lớn hơn cấu hình hơn so với bảng máy tính để bàn tiêu chuẩn. Ví dụ: chipset W790 của Intel hỗ trợ RAM DDR5ECC lên tới 2 TB và lên tới 112 làn PCIe từ CPU và chipset cộng lại. Nhược điểm, giống như dòng máy trạm của AMD, là giá thành. Bo mạch dòng W có thể dễ dàng chạy từ $600 đến $1.000 trước khi thêm CPU hoặc RAM. Những bảng này hầu như không bao giờ được tìm thấy trong trò chơi hoặc xây dựng nhà hàng ngày. Chúng tồn tại trong các trạm làm việc chuyên nghiệp, xưởng sản xuất nội dung và môi trường nghiên cứu. Trừ khi bạn đặc biệt cần khả năng Xeon W, bo mạch Intel dành cho người tiêu dùng sẽ phục vụ bạn tốt hơn với ít tiền hơn. Dòng Intel H610. H610 là chipset cấp thấp của Intel dành cho bo mạch chủ tiêu dùng. Các bo mạch này được ghép nối với bộ xử lý Intel Core bình dân và được thiết kế để giá cả phải chăng nhất có thể. Bo mạch H610 thường hỗ trợ RAM DDR4 hoặc DDR5 tùy theo kiểu máy cụ thể và cung cấp kết nối vừa đủ cho một hệ thống đơn giản. Bạn nhận được một vài cổng USB, một hoặc hai khe lưu trữ và một Khe cắm PCIe by6 cho GPU. Những gì bạn không nhận được là ép xung. Bo mạch H610 khóa tốc độ bộ nhớ theo thông số kỹ thuật GDC chính thức của Intel, nghĩa là bạn không thể chạy bộ DDR5 nhanh ở tốc độ được quảng cáo. Bạn cũng bị giới hạn ở một kênh bộ nhớ trong một số cấu hình, điều này làm giảm tổng thể băng thông bộ nhớ. Dành cho PC văn phòng cơ bản, thiết kế kiểu dáng nhỏ hoặc phương tiện truyền thông gia đình máy chủ, bo mạch H610 hoạt động hoàn hảo. Chúng không tốn kém, thường dưới 80 USD và kết hợp tốt với Core i3 hoặc Core Bộ xử lý i5 cho các tác vụ nhẹ. Nhưng nếu bạn đang chơi game hoặc làm bất cứ việc gì đòi hỏi CPU không cao thì các hạn chế sẽ trở thành nút thắt thực sự. Chi thêm một chút cho bo mạch dòng B hầu như luôn mang lại cho bạn trải nghiệm tốt hơn đáng kể mà không phải trả thêm nhiều chi phí. Dòng Intel H770. H770 là chipset tầm trung cao cấp của Intel. Xếp trên H610 nhưng thấp hơn B760 và Z790 trong dòng sản phẩm Intel. Bo mạch H770 cung cấp nhiều làn PCIe hơn và khả năng kết nối tốt hơn H610, nhưng chúng vẫn không hỗ trợ ép xung CPU. Những gì bạn nhận được là các tùy chọn lưu trữ và linh hoạt hơn, nhiều cổng USB hơn và hỗ trợ bộ nhớ tốt hơn so với các bo mạch cấp thấp. H770 là một chipset tương đối thích hợp. Nó nhắm đến những người dùng muốn có một hệ thống có khả năng cao hơn nhưng không cần ép xung hoặc đang ghép nối hệ thống của họ với CPU Intel không phải K. Hậu tố K là dấu hiệu đánh dấu bộ xử lý có thể ép xung đã mở khóa của Intel. Dành cho dàn máy chơi game tầm trung sử dụng Core i5 hoặc Core i7 không có Ksuffix, bo mạch H770 mang lại hiệu năng ổn định ở mức giá hợp lý. Đổi lại là bo mạch B760, có giá tương tự và được bán rộng rãi hơn, thường cung cấp giá trị tương đương hoặc thậm chí tốt hơn tùy thuộc vào thương hiệu và kiểu máy. H770 là một lựa chọn hợp lý nhưng yên tĩnh trong dòng sản phẩm của Intel. Không phải là sự lựa chọn hào nhoáng nhất nhưng là sự lựa chọn đáng tin cậy cho trường hợp sử dụng phù hợp. Intel dòng B Chipset dòng B của Intel, giống như B760 trên nền tảng mới nhất, là điểm phù hợp cho hầu hết các bản dựng của Intel. Tương tự như vị trí dòng B của AMD, các bo mạch này hỗ trợ nhiều loại lõi bộ xử lý, cung cấp PCI 4. 0 và một số PCI 5. 0 trên các khe chọn lọc và cung cấp hỗ trợ bộ nhớ vững chắc, bao gồm tốc độ DDR5 nhanh hơn. Không giống như các bo mạch dòng H, B760 cho phép ép xung bộ nhớ thông qua hệ thống profile XMP của Intel. XMP là viết tắt của Extreme Memory Profile, một tiêu chuẩn cho phép RAM của bạn chạy ở tốc độ tốc độ được quảng cáo của nó tự động. Chỉ riêng điều này đã tạo ra sự khác biệt lớn trong hiệu suất trong thế giới thực. Bo mạch dòng B cũng có xu hướng cung cấp điện năng tốt hơn, nhiều đầu cắm quạt hơn, và chất lượng xây dựng tốt hơn so với các tùy chọn dòng H. Chúng là sự kết hợp mạnh mẽ cho bộ xử lý Core i5 và Core i7 nonK. Đối với hầu hết các bản dựng Intel không tập trung vào việc ép xung cao độ, bo mạch B760 bao gồm mọi thứ bạn cần. Giá thường dao động từ $100 đến $200 tùy thuộc vào tính năng và kiểu dáng. Nhược điểm thực sự duy nhất so với dòng Z là bạn không thể ép xung Bản thân CPU, chỉ có bộ nhớ. Đối với đại đa số người dùng, đó hoàn toàn không phải là yếu tố hạn chế. Dòng Intel Z. Dòng Z là chipset tiêu dùng hàng đầu của Intel và là chipset duy nhất của Intel chipset cho phép ép xung toàn bộ CPU. Các bo mạch như Z790 được thiết kế cho người dùng chạy Core i7K hoặc Core i9K bộ xử lý, những bộ xử lý có số nhân đã được mở khóa. Với bo mạch Z790 và bộ xử lý K, bạn có thể đẩy CPU vượt xa tốc độ nguyên bản của nó, có thể cải thiện đáng kể hiệu suất trong cả các tác vụ chơi game và năng suất. Bo mạch dòng Z cũng đi kèm với hệ thống cung cấp điện mạnh mẽ nhất, nhiều nhất Làn PCIe, nhiều cổng USB nhất và chất lượng xây dựng cao cấp. Nhìn chung, bo mạch Z790 cao cấp thường có các tính năng như nhiều khe M2 với PCIe 5. 0, Thunderbolt 4 và 2. Ethernet 5 hoặc 10 GB. Sự đánh đổi là giá cả. Bảng Z790 có giá dao động từ khoảng 200 USD với mức ngân sách vừa phải cho đến hơn 700 USD cho các mẫu hàng đầu. Việc ghép nối Z790 cao cấp với Core i914.900K mang đến cho bạn một trong những có sẵn các thiết lập máy tính để bàn dành cho người tiêu dùng mạnh mẽ. Nhưng nếu bạn không có ý định ép xung, bạn sẽ phải trả phí cho các tính năng bạn có thể không sử dụng đầy đủ. Trong trường hợp đó, bảng B760 mang lại cho bạn 90% trải nghiệm đáng kể ít tiền hơn. Dòng Z dành cho những người đam mê muốn có mọi lợi thế có thể. Đó là mọi dòng bo mạch chủ lớn của AMD và Intel từ cấp độ bình dân cho đến các nền tảng máy trạm chuyên nghiệp. Bảng phù hợp phụ thuộc vào CPU, khối lượng công việc của bạn và mức độ bạn muốn để chi tiêu. Đối với hầu hết mọi người, bo mạch dòng B của AMD hoặc Intel là đúng điểm xuất phát. Bạn có được các tính năng hiện đại, hiệu năng ổn định và có thể nâng cấp CPU sau này mà không cần trả quá nhiều. Dù sao thì tôi cũng đã làm một số video thú vị khác về CPU, RAM và GPS. Đừng quên kiểm tra chúng. Okay.",
+  "segments": [
+    {
+      "text": "When you build a PC, the motherboard is the one component everything else connects",
+      "viText": "Khi bạn xây dựng một chiếc PC, bo mạch chủ là thành phần duy nhất mà mọi thứ khác kết nối với nhau",
+      "start": 0,
+      "duration": 6.04
+    },
+    {
+      "text": "to.",
+      "viText": "to.",
+      "start": 6.04,
+      "duration": 2
+    },
+    {
+      "text": "Your CPU, RAM, storage, GPU, they all plug into the motherboard.",
+      "viText": "CPU, RAM, bộ lưu trữ, GPU của bạn, tất cả đều cắm vào bo mạch chủ.",
+      "start": 8.04,
+      "duration": 4.71
+    },
+    {
+      "text": "But walk into any PC store and you'll see dozens of different motherboard models.",
+      "viText": "Nhưng khi bước vào bất kỳ cửa hàng PC nào, bạn sẽ thấy hàng chục mẫu bo mạch chủ khác nhau.",
+      "start": 12.75,
+      "duration": 5.97
+    },
+    {
+      "text": "WRX, TRX, B650, Z790, H610.",
+      "viText": "WRX, TRX, B650, Z790, H610.",
+      "start": 18.72,
+      "duration": 2
+    },
+    {
+      "text": "What does any of that actually mean?",
+      "viText": "Điều đó thực sự có ý nghĩa gì?",
+      "start": 20.72,
+      "duration": 2.65
+    },
+    {
+      "text": "In this video, I'll explain every major motherboard series from both AMD and Intel,",
+      "viText": "Trong video này, tôi sẽ giải thích mọi dòng bo mạch chủ chính của cả AMD và Intel,",
+      "start": 23.37,
+      "duration": 6.11
+    },
+    {
+      "text": "what they're designed for, and which one is right for you.",
+      "viText": "chúng được thiết kế để làm gì và cái nào phù hợp với bạn.",
+      "start": 29.48,
+      "duration": 4.27
+    },
+    {
+      "text": "Let's start with AMD.",
+      "viText": "Hãy bắt đầu với AMD.",
+      "start": 33.75,
+      "duration": 2
+    },
+    {
+      "text": "AMD A series.",
+      "viText": "Dòng AMD A.",
+      "start": 35.75,
+      "duration": 2
+    },
+    {
+      "text": "The A series is AMD's entry-level motherboard lineup.",
+      "viText": "Dòng A là dòng bo mạch chủ cấp thấp của AMD.",
+      "start": 37.75,
+      "duration": 3.9
+    },
+    {
+      "text": "These boards are designed to be affordable and accessible.",
+      "viText": "Những bảng này được thiết kế để có giá cả phải chăng và dễ tiếp cận.",
+      "start": 41.65,
+      "duration": 4.27
+    },
+    {
+      "text": "They are paired with budget AMD processors, typically older Ryzen chips or APUs, which",
+      "viText": "Chúng được ghép nối với các bộ xử lý AMD giá rẻ, điển hình là các chip hoặc APU Ryzen cũ hơn,",
+      "start": 45.92,
+      "duration": 6.33
+    },
+    {
+      "text": "stands for accelerated processing unit, meaning the CPU has a built-in GPU.",
+      "viText": "là viết tắt của bộ xử lý tăng tốc, nghĩa là CPU có GPU tích hợp.",
+      "start": 52.25,
+      "duration": 5.52
+    },
+    {
+      "text": "A series boards usually use older sockets like AM4, and they support basic features,",
+      "viText": "Các bo mạch dòng này thường sử dụng các ổ cắm cũ hơn như AM4 và chúng hỗ trợ các tính năng cơ bản,",
+      "start": 57.77,
+      "duration": 6.19
+    },
+    {
+      "text": "a few RAM slots, one or two PCIe slots, and standard connectivity.",
+      "viText": "một vài khe RAM, một hoặc hai khe PCIe và kết nối tiêu chuẩn.",
+      "start": 63.96,
+      "duration": 4.86
+    },
+    {
+      "text": "They do not support PCIe 5 zero.",
+      "viText": "Họ không hỗ trợ PCIe 5 zero.",
+      "start": 68.82,
+      "duration": 2.36
+    },
+    {
+      "text": "They have fewer USB ports and overclocking is either limited or not available at",
+      "viText": "Chúng có ít cổng USB hơn và khả năng ép xung bị hạn chế hoặc không có tại",
+      "start": 71.18,
+      "duration": 5.89
+    },
+    {
+      "text": "all.",
+      "viText": "all.",
+      "start": 77.07,
+      "duration": 2
+    },
+    {
+      "text": "For someone building a basic office PC, a home media machine, or a very",
+      "viText": "Dành cho ai đó đang xây dựng một PC văn phòng cơ bản, một máy đa phương tiện gia đình hoặc rất",
+      "start": 79.07,
+      "duration": 5.23
+    },
+    {
+      "text": "budget gaming rig, an A series board gets the job done.",
+      "viText": "giàn chơi game bình dân, bo mạch dòng A sẽ hoàn thành công việc.",
+      "start": 84.3,
+      "duration": 4.05
+    },
+    {
+      "text": "You save money on the motherboard and put that budget toward a better CPU",
+      "viText": "Bạn tiết kiệm tiền mua bo mạch chủ và dành ngân sách đó cho một CPU tốt hơn",
+      "start": 88.35,
+      "duration": 5.38
+    },
+    {
+      "text": "or GPU.",
+      "viText": "hoặc GPU.",
+      "start": 93.73,
+      "duration": 2
+    },
+    {
+      "text": "The trade-off is longevity.",
+      "viText": "Sự đánh đổi là tuổi thọ.",
+      "start": 95.73,
+      "duration": 2
+    },
+    {
+      "text": "A series boards often do not support the latest generation of processors, so you",
+      "viText": "Các bo mạch dòng thường không hỗ trợ thế hệ vi xử lý mới nhất nên bạn",
+      "start": 97.73,
+      "duration": 5.89
+    },
+    {
+      "text": "have less room to upgrade in the future.",
+      "viText": "có ít chỗ để nâng cấp trong tương lai.",
+      "start": 103.62,
+      "duration": 2.95
+    },
+    {
+      "text": "If you plan to upgrade your CPU in a year or two, an A",
+      "viText": "Nếu bạn dự định nâng cấp CPU của mình sau một hoặc hai năm nữa, A",
+      "start": 106.57,
+      "duration": 3.98
+    },
+    {
+      "text": "series board might not keep up.",
+      "viText": "bảng loạt có thể không theo kịp.",
+      "start": 110.55,
+      "duration": 2.28
+    },
+    {
+      "text": "But if your build is final and your needs are simple, it's a perfectly",
+      "viText": "Nhưng nếu bản dựng của bạn là bản cuối cùng và nhu cầu của bạn đơn giản thì đó là một",
+      "start": 112.83,
+      "duration": 5.16
+    },
+    {
+      "text": "reasonable choice.",
+      "viText": "hoàn hảo sự lựa chọn hợp lý.",
+      "start": 117.99,
+      "duration": 2
+    },
+    {
+      "text": "AMDB series.",
+      "viText": "Dòng AMDB.",
+      "start": 119.99,
+      "duration": 2
+    },
+    {
+      "text": "The B series is AMD's mid-range motherboard lineup, and it is the most popular",
+      "viText": "Dòng B là dòng bo mạch chủ tầm trung của AMD và là dòng phổ biến nhất",
+      "start": 121.99,
+      "duration": 5.74
+    },
+    {
+      "text": "category for everyday PC builders.",
+      "viText": "danh mục dành cho người xây dựng PC hàng ngày.",
+      "start": 127.73,
+      "duration": 2.5
+    },
+    {
+      "text": "These boards strike a balance between price and features.",
+      "viText": "Những bảng này tạo ra sự cân bằng giữa giá cả và tính năng.",
+      "start": 130.23,
+      "duration": 4.2
+    },
+    {
+      "text": "They support modern AMD processors on the AM5 socket.",
+      "viText": "Chúng hỗ trợ bộ xử lý AMD hiện đại trên ổ cắm AM5.",
+      "start": 134.43,
+      "duration": 3.9
+    },
+    {
+      "text": "Models like the B650 are the most common.",
+      "viText": "Những mẫu như B650 là phổ biến nhất.",
+      "start": 138.33,
+      "duration": 3.02
+    },
+    {
+      "text": "B series boards support PCIe 5.",
+      "viText": "Bo mạch dòng B hỗ trợ PCIe 5.",
+      "start": 141.35,
+      "duration": 2.28
+    },
+    {
+      "text": "0 for NVME storage, DDR5 RAM, and USB 4.",
+      "viText": "0 cho bộ lưu trữ NVME, RAM DDR5 và USB 4.",
+      "start": 143.63,
+      "duration": 2.95
+    },
+    {
+      "text": "0 on higherend variants.",
+      "viText": "0 trên các biến thể cao cấp hơn.",
+      "start": 146.58,
+      "duration": 2
+    },
+    {
+      "text": "They also allow some overclocking, though not as freely as the X series.",
+      "viText": "Chúng cũng cho phép ép xung, mặc dù không thoải mái như dòng X.",
+      "start": 148.58,
+      "duration": 5.3
+    },
+    {
+      "text": "What makes the B series so popular is that it gives you most of",
+      "viText": "Điều khiến dòng B trở nên phổ biến là nó mang đến cho bạn hầu hết",
+      "start": 153.88,
+      "duration": 4.64
+    },
+    {
+      "text": "what you need without the premium price tag.",
+      "viText": "những gì bạn cần mà không có thẻ giá cao.",
+      "start": 158.52,
+      "duration": 3.24
+    },
+    {
+      "text": "A B650 board can be found for around $100 to $180, which is very",
+      "viText": "Một bo mạch B650 có thể được tìm thấy với giá khoảng $100 đến $180, rất",
+      "start": 161.76,
+      "duration": 4.71
+    },
+    {
+      "text": "reasonable for the feature set.",
+      "viText": "hợp lý cho bộ tính năng.",
+      "start": 166.47,
+      "duration": 2.28
+    },
+    {
+      "text": "The downside compared to X series is fewer PCIe lanes, less robust power delivery",
+      "viText": "Nhược điểm so với dòng X là ít làn PCIe hơn, cung cấp điện kém hơn",
+      "start": 168.75,
+      "duration": 5.97
+    },
+    {
+      "text": "for extreme overclocking, and fewer connectivity options on cheaper models.",
+      "viText": "để ép xung cực cao và có ít tùy chọn kết nối hơn trên các mẫu rẻ hơn.",
+      "start": 174.72,
+      "duration": 5.52
+    },
+    {
+      "text": "But for a gaming PC, a content creation rig or a general workstation running",
+      "viText": "Nhưng đối với PC chơi game, giàn tạo nội dung hoặc máy trạm thông thường chạy",
+      "start": 180.24,
+      "duration": 5.6
+    },
+    {
+      "text": "a Ryzen 7 or Ryzen 9 processor, a B650 board is almost always the",
+      "viText": "bộ xử lý Ryzen 7 hoặc Ryzen 9, bo mạch B650 hầu như luôn là",
+      "start": 185.84,
+      "duration": 4.79
+    },
+    {
+      "text": "smart choice.",
+      "viText": "sự lựa chọn thông minh.",
+      "start": 190.63,
+      "duration": 2
+    },
+    {
+      "text": "It is the sweet spot.",
+      "viText": "Đó là điểm ngọt ngào.",
+      "start": 192.63,
+      "duration": 2
+    },
+    {
+      "text": "Most people, including myself, would recommend starting here unless you have a specific reason",
+      "viText": "Hầu hết mọi người, bao gồm cả tôi, khuyên bạn nên bắt đầu từ đây trừ khi bạn có lý do cụ thể",
+      "start": 194.63,
+      "duration": 6.92
+    },
+    {
+      "text": "to go higher.",
+      "viText": "để đi cao hơn.",
+      "start": 201.55,
+      "duration": 2
+    },
+    {
+      "text": "AMDX670E.",
+      "viText": "AMDX670E.",
+      "start": 203.55,
+      "duration": 2
+    },
+    {
+      "text": "The X670E is AMD's flagship consumer motherboard chipset for the AM5 platform.",
+      "viText": "X670E là chipset bo mạch chủ tiêu dùng hàng đầu của AMD dành cho nền tảng AM5.",
+      "start": 205.55,
+      "duration": 5.74
+    },
+    {
+      "text": "The E stands for extreme.",
+      "viText": "Chữ E là viết tắt của cực đoan.",
+      "start": 211.29,
+      "duration": 2
+    },
+    {
+      "text": "It sits at the top of the regular consumer lineup above B650 and standard",
+      "viText": "Nó đứng đầu dòng sản phẩm tiêu dùng thông thường trên B650 và tiêu chuẩn",
+      "start": 213.29,
+      "duration": 5.38
+    },
+    {
+      "text": "X670 boards.",
+      "viText": "Bo mạch X670.",
+      "start": 218.67,
+      "duration": 2
+    },
+    {
+      "text": "X670E boards are designed for users who want maximum performance and full PCIe 5.",
+      "viText": "Bo mạch X670E được thiết kế dành cho người dùng muốn có hiệu suất tối đa và PCIe 5 đầy đủ.",
+      "start": 220.67,
+      "duration": 5.97
+    },
+    {
+      "text": "0 support across both the CPU and chipset lanes.",
+      "viText": "0 hỗ trợ trên cả làn CPU và chipset.",
+      "start": 226.64,
+      "duration": 3.53
+    },
+    {
+      "text": "That means PCIe 5.",
+      "viText": "Điều đó có nghĩa là PCIe 5.",
+      "start": 230.17,
+      "duration": 2
+    },
+    {
+      "text": "0 for your GPU slot and your NVME slots simultaneously.",
+      "viText": "0 cho khe cắm GPU và khe cắm NVME của bạn cùng một lúc.",
+      "start": 232.17,
+      "duration": 4.05
+    },
+    {
+      "text": "They also support full CPU overclocking, more robust VRM systems.",
+      "viText": "Chúng cũng hỗ trợ ép xung toàn bộ CPU, hệ thống VRM mạnh mẽ hơn.",
+      "start": 236.22,
+      "duration": 4.79
+    },
+    {
+      "text": "VRM stands for voltage regulator module, which is the hardware that delivers stable power",
+      "viText": "VRM là viết tắt của mô-đun điều chỉnh điện áp, là phần cứng mang lại nguồn điện ổn định",
+      "start": 241.01,
+      "duration": 6.55
+    },
+    {
+      "text": "to your CPU and more USB ports.",
+      "viText": "tới CPU của bạn và nhiều cổng USB hơn.",
+      "start": 247.56,
+      "duration": 2.28
+    },
+    {
+      "text": "Overall, the difference between X670 and X670E is that extreme boards guarantee PCIe 5.",
+      "viText": "Nhìn chung, sự khác biệt giữa X670 và X670E là bo mạch cực cao đảm bảo PCIe 5.",
+      "start": 249.84,
+      "duration": 6.41
+    },
+    {
+      "text": "0 on all major slots, where standard X670 may only offer it on some.",
+      "viText": "0 trên tất cả các khe cắm chính, trong đó X670 tiêu chuẩn chỉ có thể cung cấp nó trên một số khe cắm.",
+      "start": 256.25,
+      "duration": 5.01
+    },
+    {
+      "text": "X670 eboards are typically paired with top tier Ryzen 9 processors or Ryzen 9",
+      "viText": "Bo mạch điện tử X670 thường được ghép nối với bộ xử lý Ryzen 9 cấp cao nhất hoặc Ryzen 9",
+      "start": 261.26,
+      "duration": 5.67
+    },
+    {
+      "text": "X3D chips for maximum gaming or workstation performance.",
+      "viText": "Chip X3D cho hiệu suất chơi game hoặc máy trạm tối đa.",
+      "start": 266.93,
+      "duration": 4.12
+    },
+    {
+      "text": "The downside is price.",
+      "viText": "Nhược điểm là giá cả.",
+      "start": 271.05,
+      "duration": 2
+    },
+    {
+      "text": "X670E boards can range from $250 to over $600.",
+      "viText": "Bo mạch X670E có thể dao động từ $250 đến hơn $600.",
+      "start": 273.05,
+      "duration": 3.39
+    },
+    {
+      "text": "That is a significant investment on top of an already expensive CPU.",
+      "viText": "Đó là một khoản đầu tư đáng kể so với một CPU vốn đã đắt đỏ.",
+      "start": 276.44,
+      "duration": 5.01
+    },
+    {
+      "text": "For most gamers, a B650 board performs nearly identically in real world use.",
+      "viText": "Đối với hầu hết các game thủ, bo mạch B650 hoạt động gần như giống hệt khi sử dụng trong thế giới thực.",
+      "start": 281.45,
+      "duration": 5.6
+    },
+    {
+      "text": "X670E makes more sense if you are pushing a high core count CPU hard",
+      "viText": "X670E sẽ hợp lý hơn nếu bạn đang đẩy mạnh CPU có số lõi cao",
+      "start": 287.05,
+      "duration": 5.01
+    },
+    {
+      "text": "or building for future proofing AMD X series.",
+      "viText": "hoặc xây dựng dòng AMD X để kiểm chứng trong tương lai.",
+      "start": 292.06,
+      "duration": 3.31
+    },
+    {
+      "text": "The standard X series sits between B series and X670E boards like the X570",
+      "viText": "Dòng X tiêu chuẩn nằm giữa các bo mạch dòng B và X670E như X570",
+      "start": 295.37,
+      "duration": 5.45
+    },
+    {
+      "text": "on AM4 and standard X670 on AM5 offer more features than B series but",
+      "viText": "trên AM4 và X670 tiêu chuẩn trên AM5 cung cấp nhiều tính năng hơn dòng B nhưng",
+      "start": 300.82,
+      "duration": 5.08
+    },
+    {
+      "text": "without the full extreme designation.",
+      "viText": "không có sự chỉ định cực đoan đầy đủ.",
+      "start": 305.9,
+      "duration": 2.72
+    },
+    {
+      "text": "These boards typically offer better power delivery than B series, more PCIe lanes, more",
+      "viText": "Các bo mạch này thường cung cấp nguồn điện tốt hơn dòng B, nhiều làn PCIe hơn, nhiều",
+      "start": 308.62,
+      "duration": 6.41
+    },
+    {
+      "text": "fan headers, and richer connectivity.",
+      "viText": "hơn đầu quạt và khả năng kết nối phong phú hơn.",
+      "start": 315.03,
+      "duration": 2.72
+    },
+    {
+      "text": "They are well suited for users with mid to high-end Ryzen processors who want",
+      "viText": "Chúng rất phù hợp cho người dùng có bộ xử lý Ryzen tầm trung đến cao cấp muốn",
+      "start": 317.75,
+      "duration": 5.67
+    },
+    {
+      "text": "room to overclock or expand their system without paying the full premium of an",
+      "viText": "có thể ép xung hoặc mở rộng hệ thống của họ mà không phải trả toàn bộ phí bảo hiểm",
+      "start": 323.42,
+      "duration": 5.74
+    },
+    {
+      "text": "extreme board.",
+      "viText": "bảng cực đoan.",
+      "start": 329.16,
+      "duration": 2
+    },
+    {
+      "text": "X570 boards, which are still widely available and compatible with Ryzen 5000 series CPUs,",
+      "viText": "Các bo mạch X570 vẫn được bán rộng rãi và tương thích với CPU dòng AMD 5000,",
+      "start": 331.16,
+      "duration": 6.55
+    },
+    {
+      "text": "remain a strong value for AM4 builds in particular.",
+      "viText": "vẫn là một giá trị mạnh mẽ cho các bản dựng AM4 nói riêng.",
+      "start": 337.71,
+      "duration": 3.76
+    },
+    {
+      "text": "One historical note, X570 was the first consumer chipset to support PCI 4.",
+      "viText": "Một ghi chú lịch sử, X570 là chipset tiêu dùng đầu tiên hỗ trợ PCI 4.",
+      "start": 341.47,
+      "duration": 5.45
+    },
+    {
+      "text": "0 when it launched in 2019, a significant milestone at the time.",
+      "viText": "0 khi ra mắt vào năm 2019, một cột mốc quan trọng vào thời điểm đó.",
+      "start": 346.92,
+      "duration": 4.71
+    },
+    {
+      "text": "The trade-off for standard X series is that you get fewer guaranteed PCI 5.",
+      "viText": "Sự đánh đổi của dòng X tiêu chuẩn là bạn nhận được ít PCI 5 được đảm bảo hơn.",
+      "start": 351.63,
+      "duration": 5.52
+    },
+    {
+      "text": "0 lanes compared to X670E.",
+      "viText": "0 làn so với X670E.",
+      "start": 357.15,
+      "duration": 2
+    },
+    {
+      "text": "And pricing can sometimes overlap awkwardly with budget X670E models.",
+      "viText": "Và giá cả đôi khi có thể trùng lặp một cách khó hiểu với các mẫu X670E bình dân.",
+      "start": 359.15,
+      "duration": 5.08
+    },
+    {
+      "text": "But as a middle ground option, the X series is a solid choice for",
+      "viText": "Nhưng là một lựa chọn tầm trung, dòng X là một lựa chọn chắc chắn cho",
+      "start": 364.23,
+      "duration": 4.79
+    },
+    {
+      "text": "power users who want headroom without going all the way to the top of",
+      "viText": "những người dùng thành thạo muốn có khoảng trống mà không cần phải đi tới đầu trang",
+      "start": 369.02,
+      "duration": 5.08
+    },
+    {
+      "text": "the stack.",
+      "viText": "ngăn xếp.",
+      "start": 374.1,
+      "duration": 2
+    },
+    {
+      "text": "AMD WRX and TRX series.",
+      "viText": "Dòng AMD WRX và TRX.",
+      "start": 376.1,
+      "duration": 2
+    },
+    {
+      "text": "The WRX and TRX series are AMD's workstation and high-end desktop motherboards.",
+      "viText": "Dòng WRX và TRX là máy trạm và bo mạch chủ máy tính để bàn cao cấp của AMD.",
+      "start": 378.1,
+      "duration": 5.82
+    },
+    {
+      "text": "They are designed for AMD Thread Ripper processors, some of the most powerful desktop",
+      "viText": "Chúng được thiết kế cho bộ xử lý AMD Thread Ripper, một trong những máy tính để bàn mạnh nhất",
+      "start": 383.92,
+      "duration": 6.26
+    },
+    {
+      "text": "CPUs ever made.",
+      "viText": "CPU từng được tạo ra.",
+      "start": 390.18,
+      "duration": 2
+    },
+    {
+      "text": "These boards are not for gaming.",
+      "viText": "Những bảng này không phải để chơi game.",
+      "start": 392.18,
+      "duration": 2.36
+    },
+    {
+      "text": "They are built for professionals who do things like 3D rendering, video production, scientific",
+      "viText": "Chúng được xây dựng cho các chuyên gia làm những việc như kết xuất 3D, sản xuất video, khoa học",
+      "start": 394.54,
+      "duration": 6.92
+    },
+    {
+      "text": "simulation, or machine learning.",
+      "viText": "mô phỏng hoặc học máy.",
+      "start": 401.46,
+      "duration": 2.36
+    },
+    {
+      "text": "A Thread Ripper CPU can have up to 96 cores.",
+      "viText": "Một CPU Thread Ripper có thể có tới 96 lõi.",
+      "start": 403.82,
+      "duration": 3.24
+    },
+    {
+      "text": "That means the motherboard also needs to support an enormous amount of RAM, PCIe",
+      "viText": "Điều đó có nghĩa là bo mạch chủ cũng cần hỗ trợ một lượng RAM cực lớn, PCIe",
+      "start": 407.06,
+      "duration": 5.89
+    },
+    {
+      "text": "lanes, and storage simultaneously.",
+      "viText": "làn đường và lưu trữ đồng thời.",
+      "start": 412.95,
+      "duration": 2.5
+    },
+    {
+      "text": "WRX boards typically support up to 2 TB of ECC RAM, which is a",
+      "viText": "Bo mạch WRX thường hỗ trợ RAM ECC lên tới 2 TB, đây là",
+      "start": 415.45,
+      "duration": 4.57
+    },
+    {
+      "text": "type of memory that automatically corrects errors.",
+      "viText": "loại bộ nhớ tự động sửa lỗi.",
+      "start": 420.02,
+      "duration": 3.68
+    },
+    {
+      "text": "Critical for professional workloads.",
+      "viText": "Quan trọng đối với khối lượng công việc chuyên môn.",
+      "start": 423.7,
+      "duration": 2.65
+    },
+    {
+      "text": "TRX boards sit slightly below WRX, designed for high-end desktop use rather than full",
+      "viText": "Bo mạch TRX nằm hơi thấp hơn WRX, được thiết kế để sử dụng cho máy tính để bàn cao cấp thay vì đầy đủ",
+      "start": 426.35,
+      "duration": 6.26
+    },
+    {
+      "text": "workstation deployments.",
+      "viText": "triển khai máy trạm.",
+      "start": 432.61,
+      "duration": 2
+    },
+    {
+      "text": "Both series use the TR5 socket, which is physically large and incompatible with regular",
+      "viText": "Cả hai dòng đều sử dụng ổ cắm TR5, có kích thước vật lý lớn và không tương thích với",
+      "start": 434.61,
+      "duration": 6.41
+    },
+    {
+      "text": "Ryzen CPUs.",
+      "viText": "thông thường CPU Ryzen.",
+      "start": 441.02,
+      "duration": 2
+    },
+    {
+      "text": "The downside is obvious.",
+      "viText": "Nhược điểm là rõ ràng.",
+      "start": 443.02,
+      "duration": 2
+    },
+    {
+      "text": "These boards are extremely expensive.",
+      "viText": "Những bảng này cực kỳ đắt tiền.",
+      "start": 445.02,
+      "duration": 2.72
+    },
+    {
+      "text": "Entry-level WRX boards start around $500, and high-end models can exceed $1,000 before you",
+      "viText": "Bảng WRX cấp cơ bản có giá khởi điểm khoảng 500 USD và các mẫu cao cấp có thể vượt quá 1.000 USD trước bạn",
+      "start": 447.74,
+      "duration": 6.63
+    },
+    {
+      "text": "even buy the CPU.",
+      "viText": "thậm chí mua CPU.",
+      "start": 454.37,
+      "duration": 2
+    },
+    {
+      "text": "For most people, this is total overkill.",
+      "viText": "Đối với hầu hết mọi người, điều này là quá mức cần thiết.",
+      "start": 456.37,
+      "duration": 2.95
+    },
+    {
+      "text": "But for a professional running complex workloads all day, the performance difference is real",
+      "viText": "Nhưng đối với một chuyên gia chạy khối lượng công việc phức tạp cả ngày, sự khác biệt về hiệu suất là có thật",
+      "start": 459.32,
+      "duration": 6.78
+    },
+    {
+      "text": "and measurable.",
+      "viText": "và có thể đo lường được.",
+      "start": 466.1,
+      "duration": 2
+    },
+    {
+      "text": "Now, let's move to Intel.",
+      "viText": "Bây giờ, hãy chuyển sang Intel.",
+      "start": 468.1,
+      "duration": 2
+    },
+    {
+      "text": "Intel W series.",
+      "viText": "Dòng Intel W.",
+      "start": 470.1,
+      "duration": 2
+    },
+    {
+      "text": "Intel's W series motherboards are the workstation grade boards designed for Intel Xeon W",
+      "viText": "Bo mạch chủ dòng W của Intel là bo mạch cấp máy trạm được thiết kế cho Intel Xeon W",
+      "start": 472.1,
+      "duration": 6.48
+    },
+    {
+      "text": "processors.",
+      "viText": "bộ xử lý.",
+      "start": 478.58,
+      "duration": 2
+    },
+    {
+      "text": "Similar to AMD's WRX and TRX lineup, these are not consumer products.",
+      "viText": "Tương tự như dòng WRX và TRX của AMD, đây không phải là sản phẩm tiêu dùng.",
+      "start": 480.58,
+      "duration": 5.08
+    },
+    {
+      "text": "They are built for demanding professional environments.",
+      "viText": "Chúng được xây dựng cho môi trường chuyên nghiệp đòi hỏi khắt khe.",
+      "start": 485.66,
+      "duration": 4.05
+    },
+    {
+      "text": "Xeon W CPUs support ECC memory, large core counts, and workloads that run continuously",
+      "viText": "CPU Xeon W hỗ trợ bộ nhớ ECC, số lượng lõi lớn và khối lượng công việc chạy liên tục",
+      "start": 489.71,
+      "duration": 6.33
+    },
+    {
+      "text": "for hours or days, rendering, simulation, server tasks, or scientific computing.",
+      "viText": "trong nhiều giờ hoặc nhiều ngày, kết xuất, mô phỏng, tác vụ máy chủ hoặc tính toán khoa học.",
+      "start": 496.04,
+      "duration": 5.89
+    },
+    {
+      "text": "W series boards are designed with reliability as the top priority.",
+      "viText": "Bo mạch dòng W được thiết kế với độ tin cậy là ưu tiên hàng đầu.",
+      "start": 501.93,
+      "duration": 4.86
+    },
+    {
+      "text": "They feature reinforced PCIe slots, more robust power delivery, and support for larger memory",
+      "viText": "Chúng có các khe cắm PCIe được gia cố, cung cấp năng lượng mạnh mẽ hơn và hỗ trợ bộ nhớ lớn hơn",
+      "start": 506.79,
+      "duration": 6.85
+    },
+    {
+      "text": "configurations than standard desktop boards.",
+      "viText": "cấu hình hơn so với bảng máy tính để bàn tiêu chuẩn.",
+      "start": 513.64,
+      "duration": 3.24
+    },
+    {
+      "text": "Intel's W790 chipset, for example, supports up to 2 TB of DDR5ECC RAM and",
+      "viText": "Ví dụ: chipset W790 của Intel hỗ trợ RAM DDR5ECC lên tới 2 TB và",
+      "start": 516.88,
+      "duration": 5.38
+    },
+    {
+      "text": "up to 112 PCIe lanes from the CPU and chipset combined.",
+      "viText": "lên tới 112 làn PCIe từ CPU và chipset cộng lại.",
+      "start": 522.26,
+      "duration": 4.05
+    },
+    {
+      "text": "The downside, just like with AMD's workstation lineup, is cost.",
+      "viText": "Nhược điểm, giống như dòng máy trạm của AMD, là giá thành.",
+      "start": 526.31,
+      "duration": 4.64
+    },
+    {
+      "text": "A W series board can easily run $600 to $1,000 before adding the CPU",
+      "viText": "Bo mạch dòng W có thể dễ dàng chạy từ $600 đến $1.000 trước khi thêm CPU",
+      "start": 530.95,
+      "duration": 5.01
+    },
+    {
+      "text": "or RAM.",
+      "viText": "hoặc RAM.",
+      "start": 535.96,
+      "duration": 2
+    },
+    {
+      "text": "These boards are almost never found in gaming or everyday home builds.",
+      "viText": "Những bảng này hầu như không bao giờ được tìm thấy trong trò chơi hoặc xây dựng nhà hàng ngày.",
+      "start": 537.96,
+      "duration": 5.16
+    },
+    {
+      "text": "They exist in professional workstations, content production studios, and research environments.",
+      "viText": "Chúng tồn tại trong các trạm làm việc chuyên nghiệp, xưởng sản xuất nội dung và môi trường nghiên cứu.",
+      "start": 543.12,
+      "duration": 7
+    },
+    {
+      "text": "Unless you specifically need Xeon W capabilities, consumer Intel boards will serve you better",
+      "viText": "Trừ khi bạn đặc biệt cần khả năng Xeon W, bo mạch Intel dành cho người tiêu dùng sẽ phục vụ bạn tốt hơn",
+      "start": 550.12,
+      "duration": 6.85
+    },
+    {
+      "text": "for less money.",
+      "viText": "với ít tiền hơn.",
+      "start": 556.97,
+      "duration": 2
+    },
+    {
+      "text": "Intel H610 series.",
+      "viText": "Dòng Intel H610.",
+      "start": 558.97,
+      "duration": 2
+    },
+    {
+      "text": "The H610 is Intel's entry-level chipset for consumer motherboards.",
+      "viText": "H610 là chipset cấp thấp của Intel dành cho bo mạch chủ tiêu dùng.",
+      "start": 560.97,
+      "duration": 4.86
+    },
+    {
+      "text": "These boards are paired with budget Intel Core processors and are designed to be",
+      "viText": "Các bo mạch này được ghép nối với bộ xử lý Intel Core bình dân và được thiết kế để",
+      "start": 565.83,
+      "duration": 5.89
+    },
+    {
+      "text": "as affordable as possible.",
+      "viText": "giá cả phải chăng nhất có thể.",
+      "start": 571.72,
+      "duration": 2
+    },
+    {
+      "text": "An H610 board typically supports DDR4 or DDR5 RAM depending on the specific model",
+      "viText": "Bo mạch H610 thường hỗ trợ RAM DDR4 hoặc DDR5 tùy theo kiểu máy cụ thể",
+      "start": 573.72,
+      "duration": 5.97
+    },
+    {
+      "text": "and offers just enough connectivity for a simple system.",
+      "viText": "và cung cấp kết nối vừa đủ cho một hệ thống đơn giản.",
+      "start": 579.69,
+      "duration": 4.12
+    },
+    {
+      "text": "You get a few USB ports, one or two storage slots, and a single",
+      "viText": "Bạn nhận được một vài cổng USB, một hoặc hai khe lưu trữ và một",
+      "start": 583.81,
+      "duration": 4.64
+    },
+    {
+      "text": "PCIe by6 slot for a GPU.",
+      "viText": "Khe cắm PCIe by6 cho GPU.",
+      "start": 588.45,
+      "duration": 2
+    },
+    {
+      "text": "What you do not get is overclocking.",
+      "viText": "Những gì bạn không nhận được là ép xung.",
+      "start": 590.45,
+      "duration": 2.65
+    },
+    {
+      "text": "H610 boards lock memory speeds to Intel's official GDC specifications, which means you cannot",
+      "viText": "Bo mạch H610 khóa tốc độ bộ nhớ theo thông số kỹ thuật GDC chính thức của Intel, nghĩa là bạn không thể",
+      "start": 593.1,
+      "duration": 6.85
+    },
+    {
+      "text": "run fast DDR5 kits at their advertised speeds.",
+      "viText": "chạy bộ DDR5 nhanh ở tốc độ được quảng cáo.",
+      "start": 599.95,
+      "duration": 3.39
+    },
+    {
+      "text": "You are also limited to one memory channel in some configurations, which reduces overall",
+      "viText": "Bạn cũng bị giới hạn ở một kênh bộ nhớ trong một số cấu hình, điều này làm giảm tổng thể",
+      "start": 603.34,
+      "duration": 6.48
+    },
+    {
+      "text": "memory bandwidth.",
+      "viText": "băng thông bộ nhớ.",
+      "start": 609.82,
+      "duration": 2
+    },
+    {
+      "text": "For a basic office PC, a small form factor build, or a home media",
+      "viText": "Dành cho PC văn phòng cơ bản, thiết kế kiểu dáng nhỏ hoặc phương tiện truyền thông gia đình",
+      "start": 611.82,
+      "duration": 4.79
+    },
+    {
+      "text": "server, H610 boards are perfectly functional.",
+      "viText": "máy chủ, bo mạch H610 hoạt động hoàn hảo.",
+      "start": 616.61,
+      "duration": 3.31
+    },
+    {
+      "text": "They are inexpensive, often under $80, and pair well with Core i3 or Core",
+      "viText": "Chúng không tốn kém, thường dưới 80 USD và kết hợp tốt với Core i3 hoặc Core",
+      "start": 619.92,
+      "duration": 5.38
+    },
+    {
+      "text": "i5 processors for light tasks.",
+      "viText": "Bộ xử lý i5 cho các tác vụ nhẹ.",
+      "start": 625.3,
+      "duration": 2.21
+    },
+    {
+      "text": "But if you are gaming or doing anything CPU inensive, the limitations become a",
+      "viText": "Nhưng nếu bạn đang chơi game hoặc làm bất cứ việc gì đòi hỏi CPU không cao thì các hạn chế sẽ trở thành",
+      "start": 627.51,
+      "duration": 5.74
+    },
+    {
+      "text": "real bottleneck.",
+      "viText": "nút thắt thực sự.",
+      "start": 633.25,
+      "duration": 2
+    },
+    {
+      "text": "Spending a bit more on a B series board almost always gives you a",
+      "viText": "Chi thêm một chút cho bo mạch dòng B hầu như luôn mang lại cho bạn",
+      "start": 635.25,
+      "duration": 4.79
+    },
+    {
+      "text": "noticeably better experience for not much extra cost.",
+      "viText": "trải nghiệm tốt hơn đáng kể mà không phải trả thêm nhiều chi phí.",
+      "start": 640.04,
+      "duration": 3.9
+    },
+    {
+      "text": "Intel H770 series.",
+      "viText": "Dòng Intel H770.",
+      "start": 643.94,
+      "duration": 2
+    },
+    {
+      "text": "The H770 is Intel's upper mid-range chipset.",
+      "viText": "H770 là chipset tầm trung cao cấp của Intel.",
+      "start": 645.94,
+      "duration": 3.24
+    },
+    {
+      "text": "Sitting above H610, but below the B760 and Z790 in the Intel lineup.",
+      "viText": "Xếp trên H610 nhưng thấp hơn B760 và Z790 trong dòng sản phẩm Intel.",
+      "start": 649.18,
+      "duration": 5.01
+    },
+    {
+      "text": "H770 boards offer more PCIe lanes and better connectivity than H610, but they still",
+      "viText": "Bo mạch H770 cung cấp nhiều làn PCIe hơn và khả năng kết nối tốt hơn H610, nhưng chúng vẫn",
+      "start": 654.19,
+      "duration": 6.11
+    },
+    {
+      "text": "do not support CPU overclocking.",
+      "viText": "không hỗ trợ ép xung CPU.",
+      "start": 660.3,
+      "duration": 2.36
+    },
+    {
+      "text": "What you do get is more flexibility and storage options, more USB ports, and",
+      "viText": "Những gì bạn nhận được là các tùy chọn lưu trữ và linh hoạt hơn, nhiều cổng USB hơn và",
+      "start": 662.66,
+      "duration": 5.6
+    },
+    {
+      "text": "better memory support compared to entry-level boards.",
+      "viText": "hỗ trợ bộ nhớ tốt hơn so với các bo mạch cấp thấp.",
+      "start": 668.26,
+      "duration": 3.9
+    },
+    {
+      "text": "H770 is a relatively niche chipset.",
+      "viText": "H770 là một chipset tương đối thích hợp.",
+      "start": 672.16,
+      "duration": 2.58
+    },
+    {
+      "text": "It targets users who want a more capable system but either do not need",
+      "viText": "Nó nhắm đến những người dùng muốn có một hệ thống có khả năng cao hơn nhưng không cần",
+      "start": 674.74,
+      "duration": 5.16
+    },
+    {
+      "text": "overclocking or are pairing their build with a non-K Intel CPU.",
+      "viText": "ép xung hoặc đang ghép nối hệ thống của họ với CPU Intel không phải K.",
+      "start": 679.9,
+      "duration": 4.64
+    },
+    {
+      "text": "The K suffix is what marks Intel's unlocked overclockable processors.",
+      "viText": "Hậu tố K là dấu hiệu đánh dấu bộ xử lý có thể ép xung đã mở khóa của Intel.",
+      "start": 684.54,
+      "duration": 5.08
+    },
+    {
+      "text": "For a mid-range gaming build using a Core i5 or Core i7 without a",
+      "viText": "Dành cho dàn máy chơi game tầm trung sử dụng Core i5 hoặc Core i7 không có",
+      "start": 689.62,
+      "duration": 4.79
+    },
+    {
+      "text": "Ksuffix, an H770 board offers solid performance at a reasonable price.",
+      "viText": "Ksuffix, bo mạch H770 mang lại hiệu năng ổn định ở mức giá hợp lý.",
+      "start": 694.41,
+      "duration": 5.16
+    },
+    {
+      "text": "The trade-off is that B760 boards, which are similarly priced and more widely available,",
+      "viText": "Đổi lại là bo mạch B760, có giá tương tự và được bán rộng rãi hơn,",
+      "start": 699.57,
+      "duration": 6.48
+    },
+    {
+      "text": "often offer comparable or even better value depending on the brand and model.",
+      "viText": "thường cung cấp giá trị tương đương hoặc thậm chí tốt hơn tùy thuộc vào thương hiệu và kiểu máy.",
+      "start": 706.05,
+      "duration": 5.67
+    },
+    {
+      "text": "H770 is a sensible but quiet option in Intel's lineup.",
+      "viText": "H770 là một lựa chọn hợp lý nhưng yên tĩnh trong dòng sản phẩm của Intel.",
+      "start": 711.72,
+      "duration": 3.98
+    },
+    {
+      "text": "Not the flashiest choice, but a reliable one for the right use case.",
+      "viText": "Không phải là sự lựa chọn hào nhoáng nhất nhưng là sự lựa chọn đáng tin cậy cho trường hợp sử dụng phù hợp.",
+      "start": 715.7,
+      "duration": 5.01
+    },
+    {
+      "text": "Intel B series Intel's B series chipsets, like the B760 on the latest platform,",
+      "viText": "Intel dòng B Chipset dòng B của Intel, giống như B760 trên nền tảng mới nhất,",
+      "start": 720.71,
+      "duration": 5.82
+    },
+    {
+      "text": "are the sweet spot for most Intel builds.",
+      "viText": "là điểm phù hợp cho hầu hết các bản dựng của Intel.",
+      "start": 726.53,
+      "duration": 3.02
+    },
+    {
+      "text": "Similar to AMD's B series position, these boards support a wide range of core",
+      "viText": "Tương tự như vị trí dòng B của AMD, các bo mạch này hỗ trợ nhiều loại lõi",
+      "start": 729.55,
+      "duration": 5.67
+    },
+    {
+      "text": "processors, offer PCI 4.",
+      "viText": "bộ xử lý, cung cấp PCI 4.",
+      "start": 735.22,
+      "duration": 2
+    },
+    {
+      "text": "0 and some PCI 5.",
+      "viText": "0 và một số PCI 5.",
+      "start": 737.22,
+      "duration": 2
+    },
+    {
+      "text": "0 on select slots, and provide solid memory support, including faster DDR5 speeds.",
+      "viText": "0 trên các khe chọn lọc và cung cấp hỗ trợ bộ nhớ vững chắc, bao gồm tốc độ DDR5 nhanh hơn.",
+      "start": 739.22,
+      "duration": 6.04
+    },
+    {
+      "text": "Unlike H series boards, B760 allows memory overclocking through Intel's XMP profile system.",
+      "viText": "Không giống như các bo mạch dòng H, B760 cho phép ép xung bộ nhớ thông qua hệ thống profile XMP của Intel.",
+      "start": 745.26,
+      "duration": 6.7
+    },
+    {
+      "text": "XMP stands for extreme memory profile, a standard that lets your RAM run at",
+      "viText": "XMP là viết tắt của Extreme Memory Profile, một tiêu chuẩn cho phép RAM của bạn chạy ở tốc độ",
+      "start": 751.96,
+      "duration": 5.52
+    },
+    {
+      "text": "its advertised speed automatically.",
+      "viText": "tốc độ được quảng cáo của nó tự động.",
+      "start": 757.48,
+      "duration": 2.58
+    },
+    {
+      "text": "This alone makes a big difference in real world performance.",
+      "viText": "Chỉ riêng điều này đã tạo ra sự khác biệt lớn trong hiệu suất trong thế giới thực.",
+      "start": 760.06,
+      "duration": 4.42
+    },
+    {
+      "text": "B series boards also tend to come with better power delivery, more fan headers,",
+      "viText": "Bo mạch dòng B cũng có xu hướng cung cấp điện năng tốt hơn, nhiều đầu cắm quạt hơn,",
+      "start": 764.48,
+      "duration": 5.82
+    },
+    {
+      "text": "and better build quality than H series options.",
+      "viText": "và chất lượng xây dựng tốt hơn so với các tùy chọn dòng H.",
+      "start": 770.3,
+      "duration": 3.46
+    },
+    {
+      "text": "They are a strong match for Core i5 and Core i7 nonK processors.",
+      "viText": "Chúng là sự kết hợp mạnh mẽ cho bộ xử lý Core i5 và Core i7 nonK.",
+      "start": 773.76,
+      "duration": 4.71
+    },
+    {
+      "text": "For most Intel builds that are not focused on extreme overclocking, a B760 board",
+      "viText": "Đối với hầu hết các bản dựng Intel không tập trung vào việc ép xung cao độ, bo mạch B760",
+      "start": 778.47,
+      "duration": 5.89
+    },
+    {
+      "text": "covers everything you need.",
+      "viText": "bao gồm mọi thứ bạn cần.",
+      "start": 784.36,
+      "duration": 2
+    },
+    {
+      "text": "Prices typically range from $100 to $200 depending on features and form factor.",
+      "viText": "Giá thường dao động từ $100 đến $200 tùy thuộc vào tính năng và kiểu dáng.",
+      "start": 786.36,
+      "duration": 5.82
+    },
+    {
+      "text": "The only real downside compared to Z series is that you cannot overclock the",
+      "viText": "Nhược điểm thực sự duy nhất so với dòng Z là bạn không thể ép xung",
+      "start": 792.18,
+      "duration": 5.6
+    },
+    {
+      "text": "CPU itself, only the memory.",
+      "viText": "Bản thân CPU, chỉ có bộ nhớ.",
+      "start": 797.78,
+      "duration": 2.06
+    },
+    {
+      "text": "For the majority of users, that is not a limiting factor at all.",
+      "viText": "Đối với đại đa số người dùng, đó hoàn toàn không phải là yếu tố hạn chế.",
+      "start": 799.84,
+      "duration": 4.71
+    },
+    {
+      "text": "Intel Z series.",
+      "viText": "Dòng Intel Z.",
+      "start": 804.55,
+      "duration": 2
+    },
+    {
+      "text": "The Z series is Intel's flagship consumer chipset, and it is the only Intel",
+      "viText": "Dòng Z là chipset tiêu dùng hàng đầu của Intel và là chipset duy nhất của Intel",
+      "start": 806.55,
+      "duration": 5.52
+    },
+    {
+      "text": "chipset that allows full CPU overclocking.",
+      "viText": "chipset cho phép ép xung toàn bộ CPU.",
+      "start": 812.07,
+      "duration": 3.09
+    },
+    {
+      "text": "Boards like the Z790 are designed for users running Core i7K or Core i9K",
+      "viText": "Các bo mạch như Z790 được thiết kế cho người dùng chạy Core i7K hoặc Core i9K",
+      "start": 815.16,
+      "duration": 5.3
+    },
+    {
+      "text": "processors, the ones with unlocked multipliers.",
+      "viText": "bộ xử lý, những bộ xử lý có số nhân đã được mở khóa.",
+      "start": 820.46,
+      "duration": 3.46
+    },
+    {
+      "text": "With a Z790 board and a K processor, you can push the CPU beyond",
+      "viText": "Với bo mạch Z790 và bộ xử lý K, bạn có thể đẩy CPU vượt xa",
+      "start": 823.92,
+      "duration": 4.71
+    },
+    {
+      "text": "its stock speeds, which can meaningfully improve performance in both gaming and productivity tasks.",
+      "viText": "tốc độ nguyên bản của nó, có thể cải thiện đáng kể hiệu suất trong cả các tác vụ chơi game và năng suất.",
+      "start": 828.63,
+      "duration": 7.29
+    },
+    {
+      "text": "Z series boards also come with the most robust power delivery systems, the most",
+      "viText": "Bo mạch dòng Z cũng đi kèm với hệ thống cung cấp điện mạnh mẽ nhất, nhiều nhất",
+      "start": 835.92,
+      "duration": 5.82
+    },
+    {
+      "text": "PCIe lanes, the most USB ports, and premium build quality.",
+      "viText": "Làn PCIe, nhiều cổng USB nhất và chất lượng xây dựng cao cấp.",
+      "start": 841.74,
+      "duration": 4.27
+    },
+    {
+      "text": "Overall, high-end Z790 boards often include features like multiple M2 slots with PCIe 5.",
+      "viText": "Nhìn chung, bo mạch Z790 cao cấp thường có các tính năng như nhiều khe M2 với PCIe 5.",
+      "start": 846.01,
+      "duration": 6.48
+    },
+    {
+      "text": "0, Thunderbolt 4, and 2.",
+      "viText": "0, Thunderbolt 4 và 2.",
+      "start": 852.49,
+      "duration": 2
+    },
+    {
+      "text": "5 or 10 GB Ethernet.",
+      "viText": "Ethernet 5 hoặc 10 GB.",
+      "start": 854.49,
+      "duration": 2
+    },
+    {
+      "text": "The trade-off is price.",
+      "viText": "Sự đánh đổi là giá cả.",
+      "start": 856.49,
+      "duration": 2
+    },
+    {
+      "text": "Z790 boards range from around $200 on the budget end to over $700 for",
+      "viText": "Bảng Z790 có giá dao động từ khoảng 200 USD với mức ngân sách vừa phải cho đến hơn 700 USD cho",
+      "start": 858.49,
+      "duration": 5.08
+    },
+    {
+      "text": "flagship models.",
+      "viText": "các mẫu hàng đầu.",
+      "start": 863.57,
+      "duration": 2
+    },
+    {
+      "text": "Pairing a high-end Z790 with a Core i914,900K gives you one of the most",
+      "viText": "Việc ghép nối Z790 cao cấp với Core i914.900K mang đến cho bạn một trong những",
+      "start": 865.57,
+      "duration": 5.23
+    },
+    {
+      "text": "powerful consumer desktop setups available.",
+      "viText": "có sẵn các thiết lập máy tính để bàn dành cho người tiêu dùng mạnh mẽ.",
+      "start": 870.8,
+      "duration": 3.17
+    },
+    {
+      "text": "But if you are not planning to overclock, you are paying a premium for",
+      "viText": "Nhưng nếu bạn không có ý định ép xung, bạn sẽ phải trả phí cho",
+      "start": 873.97,
+      "duration": 5.16
+    },
+    {
+      "text": "features you may not fully use.",
+      "viText": "các tính năng bạn có thể không sử dụng đầy đủ.",
+      "start": 879.13,
+      "duration": 2.28
+    },
+    {
+      "text": "In that case, a B760 board gives you 90% of the experience for significantly",
+      "viText": "Trong trường hợp đó, bảng B760 mang lại cho bạn 90% trải nghiệm đáng kể",
+      "start": 881.41,
+      "duration": 5.6
+    },
+    {
+      "text": "less money.",
+      "viText": "ít tiền hơn.",
+      "start": 887.01,
+      "duration": 2
+    },
+    {
+      "text": "Z series is for enthusiasts who want every advantage possible.",
+      "viText": "Dòng Z dành cho những người đam mê muốn có mọi lợi thế có thể.",
+      "start": 889.01,
+      "duration": 4.57
+    },
+    {
+      "text": "So that is every major motherboard series from AMD and Intel from budget entry-level",
+      "viText": "Đó là mọi dòng bo mạch chủ lớn của AMD và Intel từ cấp độ bình dân",
+      "start": 893.58,
+      "duration": 6.19
+    },
+    {
+      "text": "boards all the way up to professional workstation platforms.",
+      "viText": "cho đến các nền tảng máy trạm chuyên nghiệp.",
+      "start": 899.77,
+      "duration": 4.42
+    },
+    {
+      "text": "The right board depends on your CPU, your workload, and how much you want",
+      "viText": "Bảng phù hợp phụ thuộc vào CPU, khối lượng công việc của bạn và mức độ bạn muốn",
+      "start": 904.19,
+      "duration": 5.38
+    },
+    {
+      "text": "to spend.",
+      "viText": "để chi tiêu.",
+      "start": 909.57,
+      "duration": 2
+    },
+    {
+      "text": "For most people, a B series board from either AMD or Intel is the",
+      "viText": "Đối với hầu hết mọi người, bo mạch dòng B của AMD hoặc Intel là",
+      "start": 911.57,
+      "duration": 4.79
+    },
+    {
+      "text": "right starting point.",
+      "viText": "đúng điểm xuất phát.",
+      "start": 916.36,
+      "duration": 2
+    },
+    {
+      "text": "You get modern features, solid performance, and room to upgrade your CPU later without",
+      "viText": "Bạn có được các tính năng hiện đại, hiệu năng ổn định và có thể nâng cấp CPU sau này mà không cần",
+      "start": 918.36,
+      "duration": 6.33
+    },
+    {
+      "text": "overpaying.",
+      "viText": "trả quá nhiều.",
+      "start": 924.69,
+      "duration": 2
+    },
+    {
+      "text": "Anyway, I also made some other cool videos about CPUs, RAM, and GPS.",
+      "viText": "Dù sao thì tôi cũng đã làm một số video thú vị khác về CPU, RAM và GPS.",
+      "start": 926.69,
+      "duration": 5.01
+    },
+    {
+      "text": "Don't forget to check them out.",
+      "viText": "Đừng quên kiểm tra chúng.",
+      "start": 931.7,
+      "duration": 2.28
+    },
+    {
+      "text": "Okay.",
+      "viText": "Okay.",
+      "start": 933.98,
+      "duration": 2
+    }
+  ]
+}

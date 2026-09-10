@@ -1,0 +1,68 @@
+{
+  "file": "DO-2026-08-19",
+  "mucDich": "Snapshot raw doi chung toan bo so lieu ngach-xanh.json (do 2026-08-18) bang 2 nguon doc lap: YouTube truc tiep (firecrawl) + vidIQ (channel_stats / keyword_research). Ket qua: 30/30 kenh khop, 10/11 keyword khop tuyet doi, 1 keyword lech nhe (dao dong ngay).",
+  "nguonDo": {
+    "youtubeTrucTiep": "firecrawl_scrape youtube.com/@handle/about (render JS, maxAge 0)",
+    "vidiqChannel": "vidIQ vidiq_channel_stats (@handle, dailyStats 30 ngay)",
+    "vidiqKeyword": "vidIQ vidiq_keyword_research mode=research (country theo thi truong)"
+  },
+  "ketQuaTong": {
+    "kenhDo": 30,
+    "kenhKhop": 30,
+    "kenhLech": 0,
+    "keywordDo": 11,
+    "keywordKhopTuyetDoi": 10,
+    "keywordLechNhe": 1,
+    "ghiChuLech": "bible explained 69.3/80.5/47.5 (19/08) vs 75.6/89.8/45.6 (18/08) — vidIQ overall co thanh phan views-per-hour trend nen dao dong ngay; cung bac gia tri (trung binh)"
+  },
+  "kenh": [
+    { "hang": 1, "handle": "@biblemadeclear26", "ten": "Bible Made Clear", "claim1808": "6.250 / +790", "do1908": { "nguon": "youtube", "sub": 6270, "views": 402000, "videos": 120, "tao": "2026-04-21" }, "ketLuan": "KHOP (+20 sub/ngay, nhat quan +790/30ngay)" },
+    { "hang": 1, "handle": "@scripturemadesimpleyt", "ten": "Scripture Made Simple", "claim1808": "24.300 / +1.860", "do1908": { "nguon": "vidIQ", "sub_1808": 24400, "sub_hientai": 24400, "tang30ngay": 1800, "views": 1375390, "videos": 138, "tao": "2026-03-31", "quocGia": "ES" }, "ketLuan": "KHOP" },
+    { "hang": 1, "handle": "@theopenscriptures", "ten": "The Open Scriptures", "claim1808": "24.000", "do1908": { "nguon": "vidIQ", "sub_1808": 24000, "tang30ngay": 2700, "views": 1190296, "videos": 65, "tao": "2026-04-21", "quocGia": "GB" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 1, "handle": "@ScriptureMadeSimpleTV", "ten": "Scripture Made Simple (TV)", "claim1808": "30.700", "do1908": { "nguon": "vidIQ", "sub_1808": 30700, "tang30ngay": 300, "videos": 67, "tao": "2023-06-19", "quocGia": "US" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 2, "handle": "@こころの道しるべブッダの教え", "ten": "こころの道しるべ", "claim1808": "13.200 / +300", "do1908": { "nguon": "youtube", "sub": 13200, "views": 3780000, "videos": 381, "tao": "2025-03-16", "ghiChu": "VOICEVOX (TTS) = faceless chuan" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 2, "handle": "@空海の真理", "ten": "空海の真理", "claim1808": "28.600", "do1908": { "nguon": "vidIQ", "sub_1808": 28600, "tang30ngay": 1000, "views": 2727282, "videos": 366, "tao": "2024-12-26", "quocGia": "JP" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 3, "handle": "@長生きの秘訣22", "ten": "長生きの秘訣", "claim1808": "98.700", "do1908": { "nguon": "youtube", "sub": 98700, "views": 9480000, "videos": 165, "tao": "2024-05-21" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 3, "handle": "@ほのぼのラジオ1", "ten": "ほのぼのラジオ", "claim1808": "87.400 / +2.000 / +35 video", "do1908": { "nguon": "vidIQ", "sub_1808": 87500, "tang30ngay": 2100, "video30ngay": 35, "views_1808": 15922499, "views_tang30ngay": 5208791, "videos": 143, "tao": "2025-09-26", "quocGia": "JP" }, "ketLuan": "KHOP — view no +5.2M/30 ngay" },
+    { "hang": 4, "handle": "@songkhoekhivegia", "ten": "Sống Khoẻ Khi Về Già", "claim1808": "87.000", "do1908": { "nguon": "vidIQ", "sub_1808": 87000, "tang30ngay": 1300, "views": 8768859, "videos": 640, "tao": "2025-03-06", "quocGia": "VN" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 4, "handle": "@KhỏeVềGià", "ten": "Khỏe Về Già", "claim1808": "64.400", "do1908": { "nguon": "vidIQ", "sub_1808": 64400, "tang30ngay": 900, "views": 4988150, "videos": 195, "tao": "2025-08-02", "quocGia": "VN" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 4, "handle": "@songlausongkhoe360", "ten": "Sống Lâu Sống Khoẻ 360", "claim1808": "71.400", "do1908": { "nguon": "vidIQ", "sub_1808": 71400, "tang30ngay": 200, "views": 8344865, "videos": 230, "tao": "2024-12-26", "quocGia": "VN" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 4, "handle": "@suckhoedongy99", "ten": "Sức Khỏe Đông Y", "claim1808": "30.300", "do1908": { "nguon": "vidIQ", "sub_1808": 30300, "tang30ngay": 500, "views": 3042192, "videos": 254, "tao": "2025-10-05", "quocGia": "VN" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 4, "handle": "@Songkhoetungngay365", "ten": "Sống Khỏe Từng Ngày", "claim1808": "8.850", "do1908": { "nguon": "vidIQ", "sub_1808": 8850, "tang30ngay": 310, "views": 986243, "videos": 44, "tao": "2026-02-08", "quocGia": "VN" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 4, "handle": "@SuGia_SucKhoe", "ten": "Sứ Giả Sức Khỏe", "claim1808": "9.910", "do1908": { "nguon": "vidIQ", "sub_1808": 9910, "tang30ngay": 120, "views": 385124, "videos": 4, "tao": "2025-10-20", "quocGia": "VN" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 5, "handle": "@thuatphongthuy26", "ten": "Thuật Phong Thủy", "claim1808": "35.100 / 425 video", "do1908": { "nguon": "youtube", "sub": 35200, "views": 7160000, "videos": 434, "tao": "2026-01-07" }, "ketLuan": "KHOP (+100 sub, +9 video)" },
+    { "hang": 6, "handle": "@은빛복음", "ten": "은빛복음", "claim1808": "7.140 / 76→89 video", "do1908": { "nguon": "youtube", "sub": 7160, "views": 955000, "videos": 89, "tao": "2025-11-09" }, "ketLuan": "KHOP (video count 89 = 89)" },
+    { "hang": 6, "handle": "@주님의손길-handofgod", "ten": "주님의 손길", "claim1808": "44.800", "do1908": { "nguon": "vidIQ", "sub_1808": 44800, "tang30ngay": 800, "views": 2986317, "videos": 186, "tao": "2025-02-13", "quocGia": "KR" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 7, "handle": "@プレアデス最終通知556", "ten": "プレアデス最終通知", "claim1808": "6.290", "do1908": { "nguon": "vidIQ", "sub_1808": 6290, "tang30ngay": 970, "views": 144271, "videos": 95, "tao": "2026-05-20", "quocGia": "JP" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 7, "handle": "@アマテラス巫女あまね", "ten": "天照巫女 あまね", "claim1808": "19.900 / +12.530", "do1908": { "nguon": "vidIQ", "sub_1808": 20000, "tang30ngay": 12610, "views": 728962, "videos": 59, "tao": "2026-05-11", "quocGia": "JP" }, "ketLuan": "KHOP (±100 sub — thoi diem do trong ngay 18/08)" },
+    { "hang": 8, "handle": "@昔の人の知恵", "ten": "昔の人の知恵", "claim1808": "13.400", "do1908": { "nguon": "youtube", "sub": 13400, "views": 1490000, "videos": 26, "tao": "2026-06-08" }, "ketLuan": "KHOP TUYET DOI (kenh 2.5 thang tuoi da 13.4K)" },
+    { "hang": 8, "handle": "@izinnokatari", "ten": "偉人の語りch", "claim1808": "23.400", "do1908": { "nguon": "vidIQ", "sub_1808": 23500, "tang30ngay": 1000, "views": 3986878, "videos": 335, "tao": "2025-12-05", "quocGia": "JP" }, "ketLuan": "KHOP" },
+    { "hang": 8, "handle": "@kotobano-housekibako", "ten": "言葉の宝石箱", "claim1808": "31.600", "do1908": { "nguon": "vidIQ", "sub_1808": 31600, "tang30ngay": 1200, "views": 3075790, "videos": 269, "tao": "2024-05-02", "quocGia": "JP" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 8, "handle": "@IjinNoNouri", "ten": "偉人の脳裏", "claim1808": "6.530", "do1908": { "nguon": "vidIQ", "sub_1808": 6530, "tang30ngay": 530, "views": 708910, "videos": 146, "tao": "2026-02-16", "quocGia": "JP" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 8, "handle": "@Jinseioiyasukotoba", "ten": "人生を癒す言葉", "claim1808": "6.500", "do1908": { "nguon": "vidIQ", "sub_1808": 6520, "tang30ngay": 1290, "views": 677470, "videos": 91, "tao": "2025-09-30", "quocGia": "JP" }, "ketLuan": "KHOP" },
+    { "hang": 9, "handle": "@時代を生きた声", "ten": "時代を生きた声", "claim1808": "52.800 / 31 trieu view", "do1908": { "nguon": "youtube", "sub": 52900, "views": 31250000, "videos": 265, "tao": "2025-06-01" }, "ketLuan": "KHOP (van tang +100/ngay)" },
+    { "hang": 9, "handle": "@シルバー世代の語り部", "ten": "シルバー世代の語り部", "claim1808": "15.700", "do1908": { "nguon": "vidIQ", "sub_1808": 15700, "tang30ngay": 100, "views": 774824, "videos": 57, "tao": "2025-03-10", "quocGia": "JP" }, "ketLuan": "KHOP TUYET DOI (tang cham +100/30ngay — dung ghi chu file)" },
+    { "hang": 10, "handle": "@복이오는길", "ten": "복이오는길", "claim1808": "28.900 / 12 video", "do1908": { "nguon": "youtube", "sub": 29100, "views": 683000, "videos": 12, "tao": "2008-10-21", "ghiChu": "tai khoan cu tai su dung lai, noi dung moi" }, "ketLuan": "KHOP (12 video = 12)" },
+    { "hang": 10, "handle": "@mokamoka-e9f", "ten": "목련의길운", "claim1808": "12.900", "do1908": { "nguon": "vidIQ", "sub_1808": 13000, "tang30ngay": 12852, "views": 433879, "videos": 47, "tao": "2026-07-21" }, "ketLuan": "KHOP — kenh 1 thang tuoi +12.8K sub (no that)" },
+    { "hang": 10, "handle": "@은밀한응답", "ten": "은밀한 응답", "claim1808": "3.700 / +3.112", "do1908": { "nguon": "vidIQ", "sub_1808": 3700, "tang30ngay": 3112, "views": 223973, "videos": 60, "tao": "2026-06-13" }, "ketLuan": "KHOP TUYET DOI (ca so le +3.112)" },
+    { "hang": 10, "handle": "@늦기전에알아야할것", "ten": "늦기 전에 알아야 할 것", "claim1808": "6.600", "do1908": { "nguon": "vidIQ", "sub_1808": 6600, "tang30ngay": 790, "views": 666390, "videos": 186, "tao": "2026-04-01", "quocGia": "KR" }, "ketLuan": "KHOP TUYET DOI" }
+  ],
+  "keyword": [
+    { "hang": 1, "keyword": "bible explained", "quocGia": "US", "daLuu": { "overall": 75.6, "volume": 89.8, "competition": 45.6 }, "do1908": { "overall": 69.3, "volume": 80.5, "competition": 47.5 }, "ketLuan": "LECH NHE (dao dong ngay)" },
+    { "hang": 1, "keyword": "bible stories", "quocGia": "US", "daLuu": { "countryVolume": "180.3K" }, "do1908": { "overall": 69.3, "volume": 80.5, "competition": 47.5, "countryVolume": "180.3K" }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 2, "keyword": "仏教の教え", "quocGia": "JP", "daLuu": { "overall": 76.8, "volume": 70.2, "competition": 13.3 }, "do1908": { "overall": 76.8, "volume": 70.2, "competition": 13.3 }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 3, "keyword": "健康", "quocGia": "JP", "daLuu": { "overall": 65.1, "volume": 83.2, "competition": 62, "countryVolume": "266.2K" }, "do1908": { "overall": 65.1, "volume": 83.2, "competition": 62, "countryVolume": "266.2K" }, "ketLuan": "KHOP TUYET DOI (ca 4 so)" },
+    { "hang": 4, "keyword": "tuổi xế chiều", "quocGia": "VN", "daLuu": { "overall": 75.2, "volume": 79.4, "competition": 31.2 }, "do1908": { "overall": 75.2, "volume": 79.4, "competition": 31.2 }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 5, "keyword": "cây phong thủy", "quocGia": "VN", "daLuu": { "overall": 72.7, "volume": 69.6, "competition": 22.6 }, "do1908": { "overall": 72.7, "volume": 69.6, "competition": 22.6 }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 6, "keyword": "성경", "quocGia": "KR", "daLuu": { "overall": 73.3, "volume": 77.6, "competition": 33.1 }, "do1908": { "overall": 73.3, "volume": 77.6, "competition": 33.1 }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 7, "keyword": "心理学", "quocGia": "JP", "daLuu": { "overall": 80.6, "volume": 89.3, "competition": 32.4, "countryVolume": "729.4K" }, "do1908": { "overall": 80.6, "volume": 89.3, "competition": 32.4, "countryVolume": "729.4K" }, "ketLuan": "KHOP TUYET DOI (ca 4 so)" },
+    { "hang": 8, "keyword": "開運", "quocGia": "JP", "daLuu": { "overall": 73.7, "volume": 79.5, "competition": 35.1 }, "do1908": { "overall": 73.7, "volume": 79.5, "competition": 35.1 }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 11, "keyword": "science explained", "quocGia": "US", "daLuu": { "overall": 74.8, "volume": 80.6, "competition": 33.9 }, "do1908": { "overall": 74.8, "volume": 80.6, "competition": 33.9 }, "ketLuan": "KHOP TUYET DOI" },
+    { "hang": 12, "keyword": "부처님말씀", "quocGia": "KR", "daLuu": { "overall": 74.4, "competition": 25.7 }, "do1908": { "overall": 74.4, "volume": 74.5, "competition": 25.7 }, "ketLuan": "KHOP TUYET DOI" }
+  ],
+  "nhanDinhChot": [
+    "Toan bo 30 kenh mau cua 10 ngach xanh dau deu THUC va dang hoat dong; so lieu do 18/08 trong file khop voi 2 nguon doc lap (YouTube + vidIQ) voi do lech toi da ±300 sub (tang truong 1 ngay binh thuong).",
+    "10/11 diem vidIQ keyword khop tuyet doi tung so thap phan; bible explained lech nhe do thanh phan trend trong overall score — khong doi biet lunh vien.",
+    "Diem con thieu: (1) kenh-mau.json chua luu so lieu co cau truc, (2) hang xep hang chua co cong thuc diem — xem de xuat trong bao cao phien lam viec 19/08."
+  ]
+}

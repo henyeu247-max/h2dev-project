@@ -1,0 +1,1829 @@
+{
+  "videoId": "DvTQ7h6-m5I",
+  "title": "Calculus Explained Like You Are 5 Years Old",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 303,
+  "fullText": "You were taught that math builds on itself. First numbers, then algebra, then geometry. And for most people, that worked fine until calculus. Calculus is where students who were great at math suddenly feel lost. Not because they aren't smart enough, but because nobody explained what calculus actually is before throwing formulas at them. By the end of this video, you will understand exactly what calculus does, why it exists, and how it works. No formulas yet, no memorization. Just the real idea explained clearly from the beginning. Here's the one sentence that explains all of calculus. Calculus is the math of things that change. That's it. Everything in calculus comes from two questions. First, how fast is something changing right now? Second, how much has something changed in total? Those two questions have names. The first is handled by something called a derivative. The second is handled by something called an integral. You will understand both by the end of this video. Now, here's why this matters to you. Um almost everything in the real world changes. Prices change, speeds change, temperatures change, your phone battery changes. Regular math, the kind you learned in school, is is good at handling things that stay the same. If you drive at a steady 60 mph for 2 hours, basic math tells you the distance, 120 miles, simple. But what if your speed changed the whole time? What if you sped up on the highway, slowed down in traffic, and stopped at red lights? Uh now, basic math can't give you an exact answer. Calculus can. That's the problem calculus was built to solve, math that works when things are always changing. Before we get into the two main tools, you need to understand one idea that makes all of calculus possible. It's called a limit. Let's start there. Here's what a limit means. Um a limit is the value that something approaches as you get closer and closer to a specific point. This matters because it solves a problem that shows up constantly in calculus. Sometimes you can't calculate the exact value at a point, but you can get closer and closer to it. A limit tells you what value you're heading toward, even if you never technically land on it. Here's a concrete example. Open Google Maps and zoom in on a curved road. Keep zooming. The more you zoom in, the less the road looks like a curve. Eventually, it looks like a straight line. The road didn't change, but the closer you look, the straighter it appears. A limit works the same way. Um you're asking, what does this approach as I zoom in forever? Uh the key point here is this. A limit is not about where something is. It's about where something is heading. That difference is small, but important. Keep it in mind. You'll need it. Here's what's actually happening when mathematicians use limits. They're describing behavior near a point, not necessarily at it. This is how calculus handles situations where the exact value is impossible to pin down directly. Here's what rate of change means. It's how fast a quantity is changing at a specific moment in time. This matters because knowing how fast something is changing is often more useful than knowing what it currently is. You don't just want to know your phone battery is at 40%. You want to know if it's dropping fast or slow. That tells you how much time you have left. Um here's a concrete example. Your phone shows 40% battery, but is that 40% going to last 2 hours or 20 minutes? The battery percentage alone doesn't tell you. The rate tells you. If your battery is dropping 2% per minute, you have 20 minutes. If it's dropping 0.5% per minute, you have an hour and 20 minutes. That rate, 2% per minute or 0.5% per minute, is exactly what rate of change measures. The key point, rate of change is always about one specific moment, not the average over an hour, the exact rate right now. Here's what a derivative is. It is the mathematical tool that calculates the rate of change at any point. This matters because once you have a derivative, you can find out how fast something is changing at any exact moment, not just on average, not just approximately, but precisely. Here's the example. Uh imagine you have dashcam footage of a car trip. Uh you pause the video at exactly 3:42 p.m. The car is moving. What is its exact speed at that frozen frame? Not its average speed for the trip, not its speed a minute before or after. It's exact speed at that instant. A derivative calculates that. It takes a function, a mathematical description of how something changes over time, and gives you the exact rate of change at any point you choose. This is the important part. The derivative is not a single number. It is a new function. It tells you the rate of change at every moment, not just one. So, if you have a function that describes your car's position over time, the derivative gives you a new function that describes your car's speed at every single moment of the trip. The key point, the derivative turns how is this changing overall into how fast is this changing right now, at this exact moment. Here's what accumulation means in calculus. It is the process of adding up infinitely many small pieces to find a total. This matters because many real-world totals can't be calculated by simple multiplication. They have to be built up piece by piece, moment by moment. Here is the example. You go for a workout. For the first 10 minutes, you're walking, low intensity, burning maybe 4 calories per minute. Then you jog for 20 minutes, medium intensity, burning 8 calories per minute. Then you sprint for 5 minutes, high intensity, burning 15 calories per minute. Your burn rate changed constantly throughout the workout. To find the total calories burned, you can't just multiply one number by the total time. The rate was different every minute. You have to add up what you burned during each small chunk of time. That process, adding up all those small pieces to get a total, is accumulation. And when the rate is changing continuously, calculus gives you the exact way to do that. Now, here's why this matters to you. Almost every real quantity is built up through accumulation. The total distance you drove, the total water that filled a tank, the total money earned when your hourly rate changed. These are all accumulation problems. The key point, accumulation is the mathematical process of building a total from many tiny, constantly changing pieces. Here's what an integral is. It is the mathematical tool that calculates accumulation. Um this matters because just as the derivative gives you an exact tool for finding rate of change, the integral gives you an exact tool for finding totals, even when the rate of change is different at every moment. Here's the example. It rained all day yesterday, but not at a steady rate. In the morning, it drizzled, about 0.1 inches per hour. In the afternoon, it poured, about 0.8 inches per hour. In the evening, it lightened back up to 0.2 inches per hour. How much total rain fell? You can't multiply 0.1 inches per hour by 24 hours. The rate wasn't constant. You have to add up all the rain from every small window of time throughout the day. The integral does exactly this. It takes a function that describes a changing rate and calculates the total amount that accumulated. Visually, uh you can think of it this way. If you draw a graph of the rainfall rate over time, the integral calculates the area underneath that curve. That area represents the total rainfall. The key point, the integral answers the question how much in total when the rate of change is never the same from one moment to the next. Here's what the fundamental theorem means. Derivatives and integrals are opposites of each other. This matters because it connects the two halves of calculus into one complete system. You don't have two separate tools that happen to be useful. You have two tools that are mirror images of each other. Here's the example to make this concrete. Think about addition and subtraction. They are opposite operations. If you add five and then subtract five, you end up right where you started. Multiplication and division work the same way. Um they undo each other. Um derivatives and integrals work exactly the same way. If you take a function and apply the derivative to it, you get a new function. If you then apply the integral to that new function, you get back to where you started. They undo each other perfectly. Let me show you exactly how this works with the car example. You start with a function that describes your car's position over time. You take the derivative, and you get the function that describes your car's speed at every moment. Now, you take the integral of that speed function, and you get back the position function. Position to speed to position again. The derivative and integral cancel each other out. The key point, the fundamental theorem is the discovery that the two big questions of calculus, how fast is it changing and how much has it accumulated, are actually two sides of the same coin. Now, let's look at how these six ideas fit together as one system. It starts with limits. Without limits, derivatives are impossible. A derivative is calculated by asking, what does the rate of change approach as the time interval gets smaller and smaller? That's a limit question. Limits are the foundation that everything else is built on. Once you have limits, you can build derivatives. Derivatives answer the question, how fast is this changing right now? They work at a single point, a single moment. Then there's the parallel track. Integrals answer the question, how much has this accumulated in total? They work across a span of time or distance, and the fundamental theorem connects those two tracks. Like it shows that derivatives and integrals are not separate inventions. They are inverse operations, you know, two ways of looking at the same underlying relationship between a quantity and its rate of change. Here's the way to hold it all in your head. Limits make it precise. Derivatives measure the instantaneous. Integrals measure the cumulative. And the fundamental theorem shows they are the same process running in opposite directions. Let's talk about what most people get wrong when they first encounter calculus. These mistakes are common, and knowing them in advance will save you a lot of confusion. Mistake one, confusing a limit with the actual value at a point. A limit tells you what a function is approaching, not necessarily what it equals. These can be different things. A function can approach a value without ever reaching it. Uh when you see a limit, always ask, what is this heading toward? Not what does it equal right here? Mistake two, treating DX as just zero. In calculus notation, DX shows up constantly. Many students read it as an infinitely small number, which is basically zero, so I'll ignore it. This is wrong, and it causes major errors. DX represents an infinitely small change, not zero, but closer to zero than any number you can name. It still participates in the math. Ignoring it uh breaks the calculation. Mistake three, memorizing formulas before understanding the ideas. This is the most common mistake. Students are handed derivative rules and integral rules and told to practice them. They can pass a test by memorizing, but when a problem looks slightly different, they freeze because they never understood what they were doing. Understanding the concept first makes the formulas obvious. They stop feeling like arbitrary rules and start feeling like logical consequences of what you already know. The fix for all three mistakes is the same. Go back to the definition. What is this tool actually doing? What question is it answering? When you know the answers to those questions, the formulas are just shortcuts, not mysterious procedures you memorized. Here's where calculus shows up in the real world. Places you interact with every day, GPS and navigation. When your phone tracks how far you've traveled, it uses an integral. Your speed changes constantly. You accelerate, brake, slow for turns. The GPS integrates your changing speed over time to calculate the total distance traveled. Medical dosing. When doctors calculate how a drug moves through your body, they use derivatives. The drug concentration in your blood changes over time. The derivative tells doctors exactly how fast the concentration is rising or falling at any moment, which determines when to give the next dose. Machine learning and AI. Every AI system you interact with was trained using calculus. The training process uses derivatives. Specifically, it calculates the derivative of an error function to find out which direction to adjust the model settings. This process, called gradient descent, runs millions of times to make the model more accurate. Finance. Compound interest in the interest you earn on your savings account is an accumulation problem. Your balance grows at a rate that changes because the interest is always being added to the total. An integral describes exactly how that balance grows over time. Your phone battery. The estimated time remaining on your battery is calculated using the current drain rate, a derivative. Your phone measures how fast the battery is dropping right now, and uses that to predict how long it will last. Calculus is not a subject you study and then put away. It is running in the background of the technology you use every day. Let's bring this together. Calculus is the math of things that change. It was built to answer two questions that basic math cannot handle cleanly. The first question, how fast is something changing right now, at this exact moment? The tool for this is the derivative. It gives you the instantaneous rate of change at any point. The second question, how much has something accumulated in total when the rate was different at every moment? The tool for this is the integral. Um it gives you the total amount by adding up all the small pieces. These two tools are connected by the fundamental theorem of calculus, which says they are opposites. They undo each other, just like addition and subtraction. And underneath all of it is the concept of a limit, the idea that you can describe what something is approaching, even if you can't land exactly on it. Here are your three takeaways. One, when you see a derivative, ask, how fast is this changing right now? Two, when you see an integral, ask, how much has this built up in total? Three, when you see both in the same problem, remember they are inverse operations. One undoes the other. You now understand what calculus is, not the formulas. Those come later, but the reason the formulas exist, the questions they answer, and the logic that connects them. That understanding is what makes everything else learnable.",
+  "fullTextVi": "Bạn đã được dạy rằng toán học được xây dựng trên chính nó. Đầu tiên là số, sau đó là đại số, rồi hình học. Và đối với hầu hết mọi người, điều đó vẫn ổn cho đến khi tính toán. Giải tích là nơi những học sinh giỏi toán đột nhiên cảm thấy lạc lõng. Không phải vì họ không đủ thông minh mà vì không ai giải thích được phép tính thực sự là gì trước khi ném công thức vào chúng. Đến cuối video này, bạn sẽ hiểu chính xác phép tính làm gì, tại sao nó tồn tại và nó hoạt động như thế nào. Chưa có công thức, chưa có ghi nhớ. Chỉ cần ý tưởng thực sự được giải thích rõ ràng ngay từ đầu. Đây là một câu giải thích tất cả các phép tính. Phép tính là phép toán của những thứ thay đổi. Thế thôi. Mọi thứ trong phép tính đều xuất phát từ hai câu hỏi. Đầu tiên, hiện tại một điều gì đó đang thay đổi nhanh đến mức nào? Thứ hai, tổng cộng có bao nhiêu thứ đã thay đổi? Hai câu hỏi đó đều có tên. Việc đầu tiên được xử lý bởi một thứ gọi là phái sinh. Thứ hai được xử lý bởi một thứ gọi là tích phân. Bạn sẽ hiểu cả hai ở cuối video này. Bây giờ, đây là lý do tại sao điều này quan trọng với bạn. Ừm hầu hết mọi thứ trong thế giới thực đều thay đổi. Giá thay đổi, tốc độ thay đổi, nhiệt độ thay đổi, pin điện thoại của bạn thay đổi. Toán thông thường, loại bạn học ở trường, rất giỏi xử lý mọi việc điều đó vẫn giữ nguyên. Nếu bạn lái xe với tốc độ ổn định 60 dặm/giờ trong 2 giờ, phép toán cơ bản sẽ cho biết bạn khoảng cách, 120 dặm, đơn giản. Nhưng điều gì sẽ xảy ra nếu tốc độ của bạn thay đổi liên tục? Điều gì sẽ xảy ra nếu bạn tăng tốc trên đường cao tốc, giảm tốc độ khi tham gia giao thông và dừng lại lúc đèn đỏ? Uh bây giờ, toán cơ bản không thể cho bạn câu trả lời chính xác. Tính toán có thể. Đó là bài toán được xây dựng để giải quyết, phép toán hoạt động khi mọi thứ luôn thay đổi. Trước khi đi vào hai công cụ chính, bạn cần hiểu một ý tưởng điều đó làm cho tất cả các phép tính có thể thực hiện được. Nó được gọi là giới hạn. Hãy bắt đầu từ đó. Đây là ý nghĩa của giới hạn. Ừm, giới hạn là giá trị mà một thứ nào đó tiếp cận khi bạn đến gần hơn và gần hơn đến một điểm cụ thể. Điều này quan trọng vì nó giải quyết được một vấn đề xuất hiện liên tục trong phép tính. Đôi khi bạn không thể tính được giá trị chính xác tại một điểm, nhưng bạn có thể nhận được ngày càng gần nó hơn. Giới hạn cho bạn biết giá trị mà bạn đang hướng tới, ngay cả khi về mặt kỹ thuật bạn chưa bao giờ đậu trên đó. Đây là một ví dụ cụ thể. Mở Google Maps và phóng to con đường cong. Tiếp tục phóng to. Bạn càng phóng to, con đường càng ít trông giống một đường cong. Cuối cùng, nó trông giống như một đường thẳng. Con đường không thay đổi, nhưng càng nhìn gần lại càng thấy thẳng. Giới hạn hoạt động theo cách tương tự. Ừm bạn đang hỏi, điều này sẽ xảy ra như thế nào khi tôi phóng to mãi mãi? Ờ mấu chốt ở đây là thế này. Giới hạn không phải là về vị trí của thứ gì đó. Đó là về nơi mà một cái gì đó đang hướng tới. Sự khác biệt đó là nhỏ, nhưng quan trọng. Hãy ghi nhớ nó. Bạn sẽ cần nó. Đây là điều thực sự xảy ra khi các nhà toán học sử dụng giới hạn. Họ đang mô tả hành vi ở gần một điểm, không nhất thiết phải ở điểm đó. Đây là cách giải tích xử lý các tình huống không thể ghim giá trị chính xác trực tiếp xuống. Đây là ý nghĩa của tốc độ thay đổi. Đó là tốc độ thay đổi của một đại lượng tại một thời điểm cụ thể. Điều này quan trọng vì biết được một điều gì đó đang thay đổi nhanh như thế nào thường hữu ích hơn biết hiện tại nó là gì. Bạn không chỉ muốn biết pin điện thoại của mình ở mức 40%. Bạn muốn biết nó giảm nhanh hay chậm. Điều đó cho bạn biết bạn còn lại bao nhiêu thời gian. Ừm đây là một ví dụ cụ thể. Điện thoại của bạn hiển thị 40% pin, nhưng liệu 40% đó có trụ được 2 giờ không hay 20 phút? Chỉ riêng tỷ lệ phần trăm pin không cho bạn biết. Tỷ lệ cho bạn biết. Nếu pin của bạn giảm 2% mỗi phút, bạn có 20 phút. Nếu nó giảm 0. 5% mỗi phút, bạn có một giờ 20 phút. Tỷ lệ đó, 2% mỗi phút hoặc 0. 5% mỗi phút, chính xác là tốc độ thay đổi được đo lường. Điểm mấu chốt, tốc độ thay đổi luôn là về một thời điểm cụ thể chứ không phải trung bình hơn một giờ, tỷ lệ chính xác ngay bây giờ. Đây là một công cụ phái sinh. Nó là công cụ toán học tính toán tốc độ thay đổi tại bất kỳ thời điểm nào. Điều này quan trọng vì khi bạn có đạo hàm, bạn có thể biết nhanh như thế nào điều gì đó đang thay đổi vào bất kỳ thời điểm chính xác nào, không chỉ ở mức trung bình, không chỉ gần đúng, nhưng chính xác. Đây là ví dụ. Uh hãy tưởng tượng bạn có cảnh quay bằng camera hành trình về một chuyến đi bằng ô tô. Uh bạn tạm dừng video vào đúng 3:42 chiều. m. Chiếc xe đang di chuyển. Tốc độ chính xác của nó ở khung hình cố định đó là bao nhiêu? Không phải tốc độ trung bình của nó trong chuyến đi, không phải tốc độ của nó một phút trước đó hoặc sau đó. Đó là tốc độ chính xác tại thời điểm đó. Một đạo hàm tính toán điều đó. Nó có một hàm, một mô tả toán học về cách một thứ gì đó thay đổi theo thời gian và cung cấp cho bạn tỷ lệ thay đổi chính xác tại bất kỳ điểm nào bạn chọn. Đây là phần quan trọng. Đạo hàm không phải là một số duy nhất. Đó là một chức năng mới. Nó cho bạn biết tốc độ thay đổi ở mọi thời điểm, không chỉ một. Vì vậy, nếu bạn có một hàm mô tả vị trí ô tô của bạn theo thời gian, đạo hàm cung cấp cho bạn một chức năng mới mô tả tốc độ ô tô của bạn ở mọi thời điểm khoảnh khắc của chuyến đi. Điểm mấu chốt, đạo hàm biến điều này tổng thể thay đổi như thế nào thành tốc độ điều này có đang thay đổi ngay bây giờ, vào đúng thời điểm này không. Đây là ý nghĩa của tích lũy trong phép tính. Đó là quá trình cộng vô số mảnh nhỏ để tìm một tổng cộng. Điều này quan trọng vì nhiều tổng số trong thế giới thực không thể được tính bằng phép nhân đơn giản. Chúng phải được xây dựng từng chút một, từng giây phút một. Đây là ví dụ. Bạn đi tập thể dục. Trong 10 phút đầu tiên, bạn đi bộ, cường độ thấp, đốt cháy khoảng 4 calo mỗi phút. Sau đó bạn chạy bộ trong 20 phút, cường độ trung bình, đốt cháy 8 calo mỗi phút. Sau đó bạn chạy nước rút trong 5 phút, cường độ cao, đốt cháy 15 calo mỗi phút. Tốc độ đốt cháy của bạn thay đổi liên tục trong suốt quá trình tập luyện. Để tìm tổng lượng calo đã đốt cháy, bạn không thể chỉ nhân một số với tổng thời gian. Tỷ lệ khác nhau mỗi phút. Bạn phải cộng lại những gì bạn đã đốt trong từng khoảng thời gian nhỏ. Quá trình đó, cộng tất cả những phần nhỏ đó lại để có được tổng, là sự tích lũy. Và khi tốc độ thay đổi liên tục, phép tính sẽ cho bạn cách chính xác để làm điều đó. Bây giờ, đây là lý do tại sao điều này quan trọng với bạn. Hầu hết mọi số lượng thực tế đều được hình thành thông qua tích lũy. Tổng quãng đường bạn đã lái xe, tổng lượng nước đổ đầy bình, tổng số tiền kiếm được khi mức lương theo giờ của bạn thay đổi. Đây đều là những vấn đề tích lũy. Điểm mấu chốt, tích lũy là quá trình toán học xây dựng tổng từ nhiều những mảnh nhỏ, liên tục thay đổi. Đây là ý nghĩa của tích phân. Nó là công cụ toán học tính toán tích lũy. Ừm, điều này quan trọng bởi vì đạo hàm cung cấp cho bạn một công cụ chính xác cho tìm tốc độ thay đổi, tích phân cung cấp cho bạn một công cụ chính xác để tìm tổng, ngay cả khi tốc độ thay đổi ở mỗi thời điểm là khác nhau. Đây là ví dụ. Hôm qua trời mưa cả ngày nhưng không đều đặn. Sáng có mưa phùn, khoảng 0. 1 inch mỗi giờ. Buổi chiều trời đổ mưa khoảng 0. 8 inch một giờ. Buổi tối trời sáng trở lại 0. 2 inch một giờ. Tổng lượng mưa đã rơi là bao nhiêu? Bạn không thể nhân 0. 1 inch mỗi giờ trong 24 giờ. Tỷ lệ không cố định. Bạn phải cộng tất cả lượng mưa từ từng khoảng thời gian nhỏ suốt cả ngày. Tích phân thực hiện chính xác điều này. Nó nhận một hàm mô tả tỷ giá thay đổi và tính tổng số tiền tích lũy đó. Về mặt trực quan, bạn có thể nghĩ về nó theo cách này. Nếu vẽ đồ thị lượng mưa theo thời gian thì tích phân sẽ tính diện tích bên dưới đường cong đó. Khu vực đó đại diện cho tổng lượng mưa. Điểm mấu chốt, tích phân trả lời câu hỏi tổng cộng bao nhiêu khi tốc độ thay đổi không bao giờ giống nhau từ thời điểm này sang thời điểm khác. Đây là ý nghĩa của định lý cơ bản. Đạo hàm và tích phân là đối lập của nhau. Điều này quan trọng vì nó kết nối hai nửa của phép tính thành một hệ thống hoàn chỉnh. Bạn không có hai công cụ riêng biệt hữu ích. Bạn có hai công cụ là hình ảnh phản chiếu của nhau. Đây là ví dụ để làm cho điều này cụ thể. Hãy suy nghĩ về phép cộng và phép trừ. Chúng là những hoạt động trái ngược nhau. Nếu bạn cộng năm rồi trừ năm, bạn sẽ ở đúng vị trí bắt đầu. Phép nhân và chia hoạt động theo cùng một cách. Ừm, họ hoàn tác lẫn nhau. Um đạo hàm và tích phân hoạt động giống hệt nhau. Nếu bạn lấy một hàm và áp dụng đạo hàm cho nó, bạn sẽ nhận được chức năng mới. Sau đó, nếu bạn áp dụng tích phân cho hàm mới đó, bạn sẽ quay lại nơi bạn bắt đầu. Họ hoàn tác lẫn nhau một cách hoàn hảo. Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó với ví dụ về ô tô. Bạn bắt đầu với một hàm mô tả vị trí ô tô của bạn theo thời gian. Bạn lấy đạo hàm và bạn nhận được hàm mô tả tốc độ ô tô của bạn vào mọi thời điểm. Bây giờ, bạn lấy tích phân của hàm tốc độ đó và bạn nhận được chức năng định vị. Vị trí để tăng tốc độ đến vị trí một lần nữa. Đạo hàm và tích phân triệt tiêu lẫn nhau. Điểm mấu chốt, định lý cơ bản là việc phát hiện ra hai câu hỏi lớn của phép tính, nó thay đổi nhanh như thế nào và nó đã tích lũy được bao nhiêu, thực sự là hai mặt của cùng một đồng tiền. Bây giờ, hãy xem sáu ý tưởng này kết hợp với nhau như thế nào thành một hệ thống. Nó bắt đầu với những giới hạn. Không có giới hạn thì việc phái sinh là không thể. Đạo hàm được tính bằng cách hỏi, tốc độ thay đổi tiến tới giá trị nào khi khoảng thời gian càng ngày càng nhỏ? Đó là một câu hỏi giới hạn. Giới hạn là nền tảng mà mọi thứ khác được xây dựng trên đó. Khi bạn có giới hạn, bạn có thể xây dựng các công cụ phái sinh. Các công cụ phái sinh trả lời câu hỏi, hiện tại điều này đang thay đổi nhanh như thế nào? Họ làm việc tại một điểm duy nhất, một thời điểm duy nhất. Sau đó là đường song song. Tích phân trả lời câu hỏi, tổng số tiền này đã tích lũy là bao nhiêu? Chúng hoạt động trong một khoảng thời gian hoặc khoảng cách và định lý cơ bản kết nối hai bài hát đó. Giống như nó cho thấy rằng đạo hàm và tích phân không phải là những phát minh riêng biệt. Bạn biết đấy, chúng là những phép toán nghịch đảo, hai cách nhìn về cùng một mối quan hệ giữa một đại lượng và tốc độ thay đổi của nó. Đây là cách để giữ tất cả trong đầu của bạn. Giới hạn làm cho nó chính xác. Đạo hàm đo lường tức thời. Tích phân đo tích lũy. Và định lý cơ bản cho thấy chúng là cùng một quá trình chạy theo hướng ngược nhau. Hãy nói về điều mà hầu hết mọi người mắc sai lầm khi lần đầu tiên làm quen với phép tính. Những lỗi này rất phổ biến và nếu biết trước sẽ giúp bạn tiết kiệm rất nhiều của sự nhầm lẫn. Sai lầm thứ nhất, nhầm lẫn giới hạn với giá trị thực tế tại một điểm. Giới hạn cho bạn biết hàm đang tiến tới mức nào, không nhất thiết phải bằng giá trị nào. Đây có thể là những điều khác nhau. Một hàm có thể tiếp cận một giá trị mà không bao giờ đạt được nó. Uh khi bạn nhìn thấy giới hạn, hãy luôn hỏi, hướng tới điều gì? Không phải ở đây nó có nghĩa là gì? Sai lầm thứ hai, coi DX chỉ là con số 0. Trong ký hiệu giải tích, DX xuất hiện liên tục. Nhiều học sinh đọc nó như một số vô cùng nhỏ, về cơ bản là bằng 0, vì vậy Tôi sẽ bỏ qua nó. Điều này là sai và nó gây ra lỗi lớn. DX biểu thị một sự thay đổi vô cùng nhỏ, không phải bằng 0, mà gần bằng 0 hơn bất kỳ nào số bạn có thể đặt tên. Nó vẫn tham gia vào toán học. Bỏ qua nó uh sẽ phá vỡ tính toán. Sai lầm thứ ba, ghi nhớ công thức trước khi hiểu ý tưởng. Đây là sai lầm phổ biến nhất. Học sinh được cung cấp các quy tắc đạo hàm và quy tắc tích phân và yêu cầu thực hành chúng. Họ có thể vượt qua bài kiểm tra bằng cách ghi nhớ, nhưng khi một vấn đề có vẻ hơi khác, họ chết lặng vì họ không bao giờ hiểu mình đang làm gì. Hiểu khái niệm trước tiên sẽ làm cho các công thức trở nên rõ ràng. Họ không còn cảm thấy thích những quy tắc độc đoán nữa và bắt đầu cảm thấy thích những hậu quả hợp lý của những gì bạn đã biết rồi. Cách khắc phục cả ba lỗi đều giống nhau. Quay trở lại định nghĩa. Công cụ này thực sự đang làm gì? Nó đang trả lời câu hỏi gì? Khi bạn biết câu trả lời cho những câu hỏi đó thì các công thức chỉ là lối tắt chứ không phải những thủ tục bí ẩn mà bạn đã ghi nhớ. Đây là nơi phép tính xuất hiện trong thế giới thực. Những nơi bạn tương tác hàng ngày, GPS và điều hướng. Khi điện thoại theo dõi quãng đường bạn đã đi, điện thoại sẽ sử dụng tích phân. Tốc độ của bạn thay đổi liên tục. Bạn tăng tốc, phanh, giảm tốc độ khi rẽ. GPS tích hợp tốc độ thay đổi của bạn theo thời gian để tính tổng quãng đường đã đi. Liều lượng y tế. Khi các bác sĩ tính toán cách thuốc di chuyển trong cơ thể bạn, họ sử dụng các dẫn xuất. Nồng độ thuốc trong máu của bạn thay đổi theo thời gian. Đạo hàm cho bác sĩ biết chính xác nồng độ tăng hoặc giảm nhanh như thế nào tại bất cứ lúc nào, điều này quyết định khi nào nên cho liều tiếp theo. Học máy và AI. Mọi hệ thống AI mà bạn tương tác đều được đào tạo bằng phép tính. Quá trình đào tạo sử dụng các công cụ phái sinh. Cụ thể là tính đạo hàm của một hàm sai số để tìm ra hướng để điều chỉnh cài đặt mô hình. Quá trình này, được gọi là giảm độ dốc, chạy hàng triệu lần để làm cho mô hình trở nên hơn chính xác. Tài chính. Lãi kép của tiền lãi bạn kiếm được trên tài khoản tiết kiệm là sự tích lũy vấn đề. Số dư của bạn tăng với tốc độ thay đổi vì lãi suất luôn là được thêm vào tổng số. Tích phân mô tả chính xác số dư đó tăng lên như thế nào theo thời gian. Pin điện thoại của bạn. Thời gian ước tính còn lại của pin được tính bằng tốc độ hao pin hiện tại, một dẫn xuất. Điện thoại của bạn hiện đo lường tốc độ pin tụt xuống và sử dụng thông tin đó để dự đoán nó sẽ kéo dài bao lâu. Giải tích không phải là môn học bạn học rồi bỏ đi. Nó đang chạy trên nền tảng công nghệ mà bạn sử dụng hàng ngày. Hãy mang điều này lại với nhau. Phép tính là phép toán của những thứ thay đổi. Nó được xây dựng để trả lời hai câu hỏi mà toán học cơ bản không thể giải quyết một cách rõ ràng. Câu hỏi đầu tiên, hiện tại một điều gì đó đang thay đổi nhanh đến mức nào, tại thời điểm chính xác này? Công cụ cho việc này là đạo hàm. Nó cung cấp cho bạn tốc độ thay đổi tức thời tại bất kỳ thời điểm nào. Câu hỏi thứ hai, tổng cộng một thứ đã được tích lũy là bao nhiêu khi tỷ lệ là khác nhau ở mọi thời điểm? Công cụ cho việc này là tích phân. Ừm, nó cho bạn tổng số tiền bằng cách cộng tất cả các phần nhỏ lại. Hai công cụ này được kết nối với nhau bằng định lý cơ bản của phép tính, trong đó cho biết chúng là những sự đối lập. Chúng triệt tiêu lẫn nhau, giống như phép cộng và phép trừ. Và bên dưới tất cả những điều đó là khái niệm về giới hạn, ý tưởng rằng bạn có thể mô tả thứ gì đó đang đến gần, ngay cả khi bạn không thể tiếp cận chính xác Nó. Đây là ba điều bạn có thể rút ra. Thứ nhất, khi bạn nhìn thấy đạo hàm, hãy hỏi, hiện tại nó đang thay đổi nhanh như thế nào? Thứ hai, khi bạn thấy một tích phân, hãy hỏi xem cái này tích phân bao nhiêu trong tổng cộng? Thứ ba, khi bạn thấy cả hai trong cùng một bài toán, hãy nhớ rằng chúng là những phép toán nghịch đảo. Cái này hoàn tác cái kia. Bây giờ bạn đã hiểu phép tính là gì, không phải công thức. Những điều đó đến sau, nhưng lý do tồn tại của các công thức, câu hỏi mà chúng trả lời và logic kết nối chúng. Sự hiểu biết đó là điều khiến mọi thứ khác đều có thể học được.",
+  "segments": [
+    {
+      "text": "You were taught that math builds on itself.",
+      "viText": "Bạn đã được dạy rằng toán học được xây dựng trên chính nó.",
+      "start": 0,
+      "duration": 2.89
+    },
+    {
+      "text": "First numbers, then algebra, then geometry.",
+      "viText": "Đầu tiên là số, sau đó là đại số, rồi hình học.",
+      "start": 2.89,
+      "duration": 2.89
+    },
+    {
+      "text": "And for most people, that worked fine until calculus.",
+      "viText": "Và đối với hầu hết mọi người, điều đó vẫn ổn cho đến khi tính toán.",
+      "start": 5.78,
+      "duration": 3.56
+    },
+    {
+      "text": "Calculus is where students who were great at math suddenly feel lost.",
+      "viText": "Giải tích là nơi những học sinh giỏi toán đột nhiên cảm thấy lạc lõng.",
+      "start": 9.34,
+      "duration": 4.64
+    },
+    {
+      "text": "Not because they aren't smart enough, but because nobody explained what calculus actually is",
+      "viText": "Không phải vì họ không đủ thông minh mà vì không ai giải thích được phép tính thực sự là gì",
+      "start": 13.98,
+      "duration": 6.19
+    },
+    {
+      "text": "before throwing formulas at them.",
+      "viText": "trước khi ném công thức vào chúng.",
+      "start": 20.17,
+      "duration": 2.22
+    },
+    {
+      "text": "By the end of this video, you will understand exactly what calculus does, why",
+      "viText": "Đến cuối video này, bạn sẽ hiểu chính xác phép tính làm gì, tại sao",
+      "start": 22.39,
+      "duration": 5.18
+    },
+    {
+      "text": "it exists, and how it works.",
+      "viText": "nó tồn tại và nó hoạt động như thế nào.",
+      "start": 27.57,
+      "duration": 2
+    },
+    {
+      "text": "No formulas yet, no memorization.",
+      "viText": "Chưa có công thức, chưa có ghi nhớ.",
+      "start": 29.57,
+      "duration": 2.22
+    },
+    {
+      "text": "Just the real idea explained clearly from the beginning.",
+      "viText": "Chỉ cần ý tưởng thực sự được giải thích rõ ràng ngay từ đầu.",
+      "start": 31.79,
+      "duration": 3.77
+    },
+    {
+      "text": "Here's the one sentence that explains all of calculus.",
+      "viText": "Đây là một câu giải thích tất cả các phép tính.",
+      "start": 35.56,
+      "duration": 3.63
+    },
+    {
+      "text": "Calculus is the math of things that change.",
+      "viText": "Phép tính là phép toán của những thứ thay đổi.",
+      "start": 39.19,
+      "duration": 2.89
+    },
+    {
+      "text": "That's it.",
+      "viText": "Thế thôi.",
+      "start": 42.08,
+      "duration": 2
+    },
+    {
+      "text": "Everything in calculus comes from two questions.",
+      "viText": "Mọi thứ trong phép tính đều xuất phát từ hai câu hỏi.",
+      "start": 44.08,
+      "duration": 3.23
+    },
+    {
+      "text": "First, how fast is something changing right now?",
+      "viText": "Đầu tiên, hiện tại một điều gì đó đang thay đổi nhanh đến mức nào?",
+      "start": 47.31,
+      "duration": 3.23
+    },
+    {
+      "text": "Second, how much has something changed in total?",
+      "viText": "Thứ hai, tổng cộng có bao nhiêu thứ đã thay đổi?",
+      "start": 50.54,
+      "duration": 3.23
+    },
+    {
+      "text": "Those two questions have names.",
+      "viText": "Hai câu hỏi đó đều có tên.",
+      "start": 53.77,
+      "duration": 2.08
+    },
+    {
+      "text": "The first is handled by something called a derivative.",
+      "viText": "Việc đầu tiên được xử lý bởi một thứ gọi là phái sinh.",
+      "start": 55.85,
+      "duration": 3.63
+    },
+    {
+      "text": "The second is handled by something called an integral.",
+      "viText": "Thứ hai được xử lý bởi một thứ gọi là tích phân.",
+      "start": 59.48,
+      "duration": 3.63
+    },
+    {
+      "text": "You will understand both by the end of this video.",
+      "viText": "Bạn sẽ hiểu cả hai ở cuối video này.",
+      "start": 63.11,
+      "duration": 3.36
+    },
+    {
+      "text": "Now, here's why this matters to you.",
+      "viText": "Bây giờ, đây là lý do tại sao điều này quan trọng với bạn.",
+      "start": 66.47,
+      "duration": 2.42
+    },
+    {
+      "text": "Um almost everything in the real world changes.",
+      "viText": "Ừm hầu hết mọi thứ trong thế giới thực đều thay đổi.",
+      "start": 68.89,
+      "duration": 3.16
+    },
+    {
+      "text": "Prices change, speeds change, temperatures change, your phone battery changes.",
+      "viText": "Giá thay đổi, tốc độ thay đổi, nhiệt độ thay đổi, pin điện thoại của bạn thay đổi.",
+      "start": 72.05,
+      "duration": 5.25
+    },
+    {
+      "text": "Regular math, the kind you learned in school, is is good at handling things",
+      "viText": "Toán thông thường, loại bạn học ở trường, rất giỏi xử lý mọi việc",
+      "start": 77.3,
+      "duration": 5.04
+    },
+    {
+      "text": "that stay the same.",
+      "viText": "điều đó vẫn giữ nguyên.",
+      "start": 82.34,
+      "duration": 2
+    },
+    {
+      "text": "If you drive at a steady 60 mph for 2 hours, basic math tells",
+      "viText": "Nếu bạn lái xe với tốc độ ổn định 60 dặm/giờ trong 2 giờ, phép toán cơ bản sẽ cho biết",
+      "start": 84.34,
+      "duration": 4.1
+    },
+    {
+      "text": "you the distance, 120 miles, simple.",
+      "viText": "bạn khoảng cách, 120 dặm, đơn giản.",
+      "start": 88.44,
+      "duration": 2.42
+    },
+    {
+      "text": "But what if your speed changed the whole time?",
+      "viText": "Nhưng điều gì sẽ xảy ra nếu tốc độ của bạn thay đổi liên tục?",
+      "start": 90.86,
+      "duration": 3.09
+    },
+    {
+      "text": "What if you sped up on the highway, slowed down in traffic, and stopped",
+      "viText": "Điều gì sẽ xảy ra nếu bạn tăng tốc trên đường cao tốc, giảm tốc độ khi tham gia giao thông và dừng lại",
+      "start": 93.95,
+      "duration": 4.77
+    },
+    {
+      "text": "at red lights?",
+      "viText": "lúc đèn đỏ?",
+      "start": 98.72,
+      "duration": 2
+    },
+    {
+      "text": "Uh now, basic math can't give you an exact answer.",
+      "viText": "Uh bây giờ, toán cơ bản không thể cho bạn câu trả lời chính xác.",
+      "start": 100.72,
+      "duration": 3.36
+    },
+    {
+      "text": "Calculus can.",
+      "viText": "Tính toán có thể.",
+      "start": 104.08,
+      "duration": 2
+    },
+    {
+      "text": "That's the problem calculus was built to solve, math that works when things are",
+      "viText": "Đó là bài toán được xây dựng để giải quyết, phép toán hoạt động khi mọi thứ",
+      "start": 106.08,
+      "duration": 5.31
+    },
+    {
+      "text": "always changing.",
+      "viText": "luôn thay đổi.",
+      "start": 111.39,
+      "duration": 2
+    },
+    {
+      "text": "Before we get into the two main tools, you need to understand one idea",
+      "viText": "Trước khi đi vào hai công cụ chính, bạn cần hiểu một ý tưởng",
+      "start": 113.39,
+      "duration": 4.71
+    },
+    {
+      "text": "that makes all of calculus possible.",
+      "viText": "điều đó làm cho tất cả các phép tính có thể thực hiện được.",
+      "start": 118.1,
+      "duration": 2.42
+    },
+    {
+      "text": "It's called a limit.",
+      "viText": "Nó được gọi là giới hạn.",
+      "start": 120.52,
+      "duration": 2
+    },
+    {
+      "text": "Let's start there.",
+      "viText": "Hãy bắt đầu từ đó.",
+      "start": 122.52,
+      "duration": 2
+    },
+    {
+      "text": "Here's what a limit means.",
+      "viText": "Đây là ý nghĩa của giới hạn.",
+      "start": 124.52,
+      "duration": 2
+    },
+    {
+      "text": "Um a limit is the value that something approaches as you get closer and",
+      "viText": "Ừm, giới hạn là giá trị mà một thứ nào đó tiếp cận khi bạn đến gần hơn và",
+      "start": 126.52,
+      "duration": 4.77
+    },
+    {
+      "text": "closer to a specific point.",
+      "viText": "gần hơn đến một điểm cụ thể.",
+      "start": 131.29,
+      "duration": 2
+    },
+    {
+      "text": "This matters because it solves a problem that shows up constantly in calculus.",
+      "viText": "Điều này quan trọng vì nó giải quyết được một vấn đề xuất hiện liên tục trong phép tính.",
+      "start": 133.29,
+      "duration": 5.25
+    },
+    {
+      "text": "Sometimes you can't calculate the exact value at a point, but you can get",
+      "viText": "Đôi khi bạn không thể tính được giá trị chính xác tại một điểm, nhưng bạn có thể nhận được",
+      "start": 138.54,
+      "duration": 4.91
+    },
+    {
+      "text": "closer and closer to it.",
+      "viText": "ngày càng gần nó hơn.",
+      "start": 143.45,
+      "duration": 2
+    },
+    {
+      "text": "A limit tells you what value you're heading toward, even if you never technically",
+      "viText": "Giới hạn cho bạn biết giá trị mà bạn đang hướng tới, ngay cả khi về mặt kỹ thuật bạn chưa bao giờ",
+      "start": 145.45,
+      "duration": 5.45
+    },
+    {
+      "text": "land on it.",
+      "viText": "đậu trên đó.",
+      "start": 150.9,
+      "duration": 2
+    },
+    {
+      "text": "Here's a concrete example.",
+      "viText": "Đây là một ví dụ cụ thể.",
+      "start": 152.9,
+      "duration": 2
+    },
+    {
+      "text": "Open Google Maps and zoom in on a curved road.",
+      "viText": "Mở Google Maps và phóng to con đường cong.",
+      "start": 154.9,
+      "duration": 3.09
+    },
+    {
+      "text": "Keep zooming.",
+      "viText": "Tiếp tục phóng to.",
+      "start": 157.99,
+      "duration": 2
+    },
+    {
+      "text": "The more you zoom in, the less the road looks like a curve.",
+      "viText": "Bạn càng phóng to, con đường càng ít trông giống một đường cong.",
+      "start": 159.99,
+      "duration": 3.97
+    },
+    {
+      "text": "Eventually, it looks like a straight line.",
+      "viText": "Cuối cùng, nó trông giống như một đường thẳng.",
+      "start": 163.96,
+      "duration": 2.82
+    },
+    {
+      "text": "The road didn't change, but the closer you look, the straighter it appears.",
+      "viText": "Con đường không thay đổi, nhưng càng nhìn gần lại càng thấy thẳng.",
+      "start": 166.78,
+      "duration": 5.04
+    },
+    {
+      "text": "A limit works the same way.",
+      "viText": "Giới hạn hoạt động theo cách tương tự.",
+      "start": 171.82,
+      "duration": 2
+    },
+    {
+      "text": "Um you're asking, what does this approach as I zoom in forever?",
+      "viText": "Ừm bạn đang hỏi, điều này sẽ xảy ra như thế nào khi tôi phóng to mãi mãi?",
+      "start": 173.82,
+      "duration": 4.24
+    },
+    {
+      "text": "Uh the key point here is this.",
+      "viText": "Ờ mấu chốt ở đây là thế này.",
+      "start": 178.06,
+      "duration": 2.02
+    },
+    {
+      "text": "A limit is not about where something is.",
+      "viText": "Giới hạn không phải là về vị trí của thứ gì đó.",
+      "start": 180.08,
+      "duration": 2.69
+    },
+    {
+      "text": "It's about where something is heading.",
+      "viText": "Đó là về nơi mà một cái gì đó đang hướng tới.",
+      "start": 182.77,
+      "duration": 2.56
+    },
+    {
+      "text": "That difference is small, but important.",
+      "viText": "Sự khác biệt đó là nhỏ, nhưng quan trọng.",
+      "start": 185.33,
+      "duration": 2.69
+    },
+    {
+      "text": "Keep it in mind.",
+      "viText": "Hãy ghi nhớ nó.",
+      "start": 188.02,
+      "duration": 2
+    },
+    {
+      "text": "You'll need it.",
+      "viText": "Bạn sẽ cần nó.",
+      "start": 190.02,
+      "duration": 2
+    },
+    {
+      "text": "Here's what's actually happening when mathematicians use limits.",
+      "viText": "Đây là điều thực sự xảy ra khi các nhà toán học sử dụng giới hạn.",
+      "start": 192.02,
+      "duration": 4.3
+    },
+    {
+      "text": "They're describing behavior near a point, not necessarily at it.",
+      "viText": "Họ đang mô tả hành vi ở gần một điểm, không nhất thiết phải ở điểm đó.",
+      "start": 196.32,
+      "duration": 4.3
+    },
+    {
+      "text": "This is how calculus handles situations where the exact value is impossible to pin",
+      "viText": "Đây là cách giải tích xử lý các tình huống không thể ghim giá trị chính xác",
+      "start": 200.62,
+      "duration": 5.51
+    },
+    {
+      "text": "down directly.",
+      "viText": "trực tiếp xuống.",
+      "start": 206.13,
+      "duration": 2
+    },
+    {
+      "text": "Here's what rate of change means.",
+      "viText": "Đây là ý nghĩa của tốc độ thay đổi.",
+      "start": 208.13,
+      "duration": 2.22
+    },
+    {
+      "text": "It's how fast a quantity is changing at a specific moment in time.",
+      "viText": "Đó là tốc độ thay đổi của một đại lượng tại một thời điểm cụ thể.",
+      "start": 210.35,
+      "duration": 4.44
+    },
+    {
+      "text": "This matters because knowing how fast something is changing is often more useful than",
+      "viText": "Điều này quan trọng vì biết được một điều gì đó đang thay đổi nhanh như thế nào thường hữu ích hơn",
+      "start": 214.79,
+      "duration": 5.72
+    },
+    {
+      "text": "knowing what it currently is.",
+      "viText": "biết hiện tại nó là gì.",
+      "start": 220.51,
+      "duration": 2
+    },
+    {
+      "text": "You don't just want to know your phone battery is at 40%.",
+      "viText": "Bạn không chỉ muốn biết pin điện thoại của mình ở mức 40%.",
+      "start": 222.51,
+      "duration": 3.83
+    },
+    {
+      "text": "You want to know if it's dropping fast or slow.",
+      "viText": "Bạn muốn biết nó giảm nhanh hay chậm.",
+      "start": 226.34,
+      "duration": 3.16
+    },
+    {
+      "text": "That tells you how much time you have left.",
+      "viText": "Điều đó cho bạn biết bạn còn lại bao nhiêu thời gian.",
+      "start": 229.5,
+      "duration": 2.89
+    },
+    {
+      "text": "Um here's a concrete example.",
+      "viText": "Ừm đây là một ví dụ cụ thể.",
+      "start": 232.39,
+      "duration": 2
+    },
+    {
+      "text": "Your phone shows 40% battery, but is that 40% going to last 2 hours",
+      "viText": "Điện thoại của bạn hiển thị 40% pin, nhưng liệu 40% đó có trụ được 2 giờ không",
+      "start": 234.39,
+      "duration": 4.51
+    },
+    {
+      "text": "or 20 minutes?",
+      "viText": "hay 20 phút?",
+      "start": 238.9,
+      "duration": 2
+    },
+    {
+      "text": "The battery percentage alone doesn't tell you.",
+      "viText": "Chỉ riêng tỷ lệ phần trăm pin không cho bạn biết.",
+      "start": 240.9,
+      "duration": 3.09
+    },
+    {
+      "text": "The rate tells you.",
+      "viText": "Tỷ lệ cho bạn biết.",
+      "start": 243.99,
+      "duration": 2
+    },
+    {
+      "text": "If your battery is dropping 2% per minute, you have 20 minutes.",
+      "viText": "Nếu pin của bạn giảm 2% mỗi phút, bạn có 20 phút.",
+      "start": 245.99,
+      "duration": 4.24
+    },
+    {
+      "text": "If it's dropping 0.",
+      "viText": "Nếu nó giảm 0.",
+      "start": 250.23,
+      "duration": 2
+    },
+    {
+      "text": "5% per minute, you have an hour and 20 minutes.",
+      "viText": "5% mỗi phút, bạn có một giờ 20 phút.",
+      "start": 252.23,
+      "duration": 3.16
+    },
+    {
+      "text": "That rate, 2% per minute or 0.",
+      "viText": "Tỷ lệ đó, 2% mỗi phút hoặc 0.",
+      "start": 255.39,
+      "duration": 2.02
+    },
+    {
+      "text": "5% per minute, is exactly what rate of change measures.",
+      "viText": "5% mỗi phút, chính xác là tốc độ thay đổi được đo lường.",
+      "start": 257.41,
+      "duration": 3.7
+    },
+    {
+      "text": "The key point, rate of change is always about one specific moment, not the",
+      "viText": "Điểm mấu chốt, tốc độ thay đổi luôn là về một thời điểm cụ thể chứ không phải",
+      "start": 261.11,
+      "duration": 4.98
+    },
+    {
+      "text": "average over an hour, the exact rate right now.",
+      "viText": "trung bình hơn một giờ, tỷ lệ chính xác ngay bây giờ.",
+      "start": 266.09,
+      "duration": 3.16
+    },
+    {
+      "text": "Here's what a derivative is.",
+      "viText": "Đây là một công cụ phái sinh.",
+      "start": 269.25,
+      "duration": 2
+    },
+    {
+      "text": "It is the mathematical tool that calculates the rate of change at any point.",
+      "viText": "Nó là công cụ toán học tính toán tốc độ thay đổi tại bất kỳ thời điểm nào.",
+      "start": 271.25,
+      "duration": 5.11
+    },
+    {
+      "text": "This matters because once you have a derivative, you can find out how fast",
+      "viText": "Điều này quan trọng vì khi bạn có đạo hàm, bạn có thể biết",
+      "start": 276.36,
+      "duration": 4.98
+    },
+    {
+      "text": "something is changing at any exact moment, not just on average, not just approximately,",
+      "viText": "nhanh như thế nào điều gì đó đang thay đổi vào bất kỳ thời điểm chính xác nào, không chỉ ở mức trung bình, không chỉ gần đúng,",
+      "start": 281.34,
+      "duration": 5.85
+    },
+    {
+      "text": "but precisely.",
+      "viText": "nhưng chính xác.",
+      "start": 287.19,
+      "duration": 2
+    },
+    {
+      "text": "Here's the example.",
+      "viText": "Đây là ví dụ.",
+      "start": 289.19,
+      "duration": 2
+    },
+    {
+      "text": "Uh imagine you have dashcam footage of a car trip.",
+      "viText": "Uh hãy tưởng tượng bạn có cảnh quay bằng camera hành trình về một chuyến đi bằng ô tô.",
+      "start": 291.19,
+      "duration": 3.36
+    },
+    {
+      "text": "Uh you pause the video at exactly 3:42 p.",
+      "viText": "Uh bạn tạm dừng video vào đúng 3:42 chiều.",
+      "start": 294.55,
+      "duration": 2.76
+    },
+    {
+      "text": "m.",
+      "viText": "m.",
+      "start": 297.31,
+      "duration": 2
+    },
+    {
+      "text": "The car is moving.",
+      "viText": "Chiếc xe đang di chuyển.",
+      "start": 299.31,
+      "duration": 2
+    },
+    {
+      "text": "What is its exact speed at that frozen frame?",
+      "viText": "Tốc độ chính xác của nó ở khung hình cố định đó là bao nhiêu?",
+      "start": 301.31,
+      "duration": 3.03
+    },
+    {
+      "text": "Not its average speed for the trip, not its speed a minute before or",
+      "viText": "Không phải tốc độ trung bình của nó trong chuyến đi, không phải tốc độ của nó một phút trước đó hoặc",
+      "start": 304.34,
+      "duration": 4.57
+    },
+    {
+      "text": "after.",
+      "viText": "sau đó.",
+      "start": 308.91,
+      "duration": 2
+    },
+    {
+      "text": "It's exact speed at that instant.",
+      "viText": "Đó là tốc độ chính xác tại thời điểm đó.",
+      "start": 310.91,
+      "duration": 2.22
+    },
+    {
+      "text": "A derivative calculates that.",
+      "viText": "Một đạo hàm tính toán điều đó.",
+      "start": 313.13,
+      "duration": 2
+    },
+    {
+      "text": "It takes a function, a mathematical description of how something changes over time, and",
+      "viText": "Nó có một hàm, một mô tả toán học về cách một thứ gì đó thay đổi theo thời gian và",
+      "start": 315.13,
+      "duration": 5.85
+    },
+    {
+      "text": "gives you the exact rate of change at any point you choose.",
+      "viText": "cung cấp cho bạn tỷ lệ thay đổi chính xác tại bất kỳ điểm nào bạn chọn.",
+      "start": 320.98,
+      "duration": 3.97
+    },
+    {
+      "text": "This is the important part.",
+      "viText": "Đây là phần quan trọng.",
+      "start": 324.95,
+      "duration": 2
+    },
+    {
+      "text": "The derivative is not a single number.",
+      "viText": "Đạo hàm không phải là một số duy nhất.",
+      "start": 326.95,
+      "duration": 2.56
+    },
+    {
+      "text": "It is a new function.",
+      "viText": "Đó là một chức năng mới.",
+      "start": 329.51,
+      "duration": 2
+    },
+    {
+      "text": "It tells you the rate of change at every moment, not just one.",
+      "viText": "Nó cho bạn biết tốc độ thay đổi ở mọi thời điểm, không chỉ một.",
+      "start": 331.51,
+      "duration": 4.17
+    },
+    {
+      "text": "So, if you have a function that describes your car's position over time, the",
+      "viText": "Vì vậy, nếu bạn có một hàm mô tả vị trí ô tô của bạn theo thời gian,",
+      "start": 335.68,
+      "duration": 5.11
+    },
+    {
+      "text": "derivative gives you a new function that describes your car's speed at every single",
+      "viText": "đạo hàm cung cấp cho bạn một chức năng mới mô tả tốc độ ô tô của bạn ở mọi thời điểm",
+      "start": 340.79,
+      "duration": 5.58
+    },
+    {
+      "text": "moment of the trip.",
+      "viText": "khoảnh khắc của chuyến đi.",
+      "start": 346.37,
+      "duration": 2
+    },
+    {
+      "text": "The key point, the derivative turns how is this changing overall into how fast",
+      "viText": "Điểm mấu chốt, đạo hàm biến điều này tổng thể thay đổi như thế nào thành tốc độ",
+      "start": 348.37,
+      "duration": 5.25
+    },
+    {
+      "text": "is this changing right now, at this exact moment.",
+      "viText": "điều này có đang thay đổi ngay bây giờ, vào đúng thời điểm này không.",
+      "start": 353.62,
+      "duration": 3.3
+    },
+    {
+      "text": "Here's what accumulation means in calculus.",
+      "viText": "Đây là ý nghĩa của tích lũy trong phép tính.",
+      "start": 356.92,
+      "duration": 2.89
+    },
+    {
+      "text": "It is the process of adding up infinitely many small pieces to find a",
+      "viText": "Đó là quá trình cộng vô số mảnh nhỏ để tìm một",
+      "start": 359.81,
+      "duration": 4.64
+    },
+    {
+      "text": "total.",
+      "viText": "tổng cộng.",
+      "start": 364.45,
+      "duration": 2
+    },
+    {
+      "text": "This matters because many real-world totals can't be calculated by simple multiplication.",
+      "viText": "Điều này quan trọng vì nhiều tổng số trong thế giới thực không thể được tính bằng phép nhân đơn giản.",
+      "start": 366.45,
+      "duration": 5.99
+    },
+    {
+      "text": "They have to be built up piece by piece, moment by moment.",
+      "viText": "Chúng phải được xây dựng từng chút một, từng giây phút một.",
+      "start": 372.44,
+      "duration": 3.9
+    },
+    {
+      "text": "Here is the example.",
+      "viText": "Đây là ví dụ.",
+      "start": 376.34,
+      "duration": 2
+    },
+    {
+      "text": "You go for a workout.",
+      "viText": "Bạn đi tập thể dục.",
+      "start": 378.34,
+      "duration": 2
+    },
+    {
+      "text": "For the first 10 minutes, you're walking, low intensity, burning maybe 4 calories per",
+      "viText": "Trong 10 phút đầu tiên, bạn đi bộ, cường độ thấp, đốt cháy khoảng 4 calo mỗi",
+      "start": 380.34,
+      "duration": 5.72
+    },
+    {
+      "text": "minute.",
+      "viText": "phút.",
+      "start": 386.06,
+      "duration": 2
+    },
+    {
+      "text": "Then you jog for 20 minutes, medium intensity, burning 8 calories per minute.",
+      "viText": "Sau đó bạn chạy bộ trong 20 phút, cường độ trung bình, đốt cháy 8 calo mỗi phút.",
+      "start": 388.06,
+      "duration": 5.18
+    },
+    {
+      "text": "Then you sprint for 5 minutes, high intensity, burning 15 calories per minute.",
+      "viText": "Sau đó bạn chạy nước rút trong 5 phút, cường độ cao, đốt cháy 15 calo mỗi phút.",
+      "start": 393.24,
+      "duration": 5.25
+    },
+    {
+      "text": "Your burn rate changed constantly throughout the workout.",
+      "viText": "Tốc độ đốt cháy của bạn thay đổi liên tục trong suốt quá trình tập luyện.",
+      "start": 398.49,
+      "duration": 3.83
+    },
+    {
+      "text": "To find the total calories burned, you can't just multiply one number by the",
+      "viText": "Để tìm tổng lượng calo đã đốt cháy, bạn không thể chỉ nhân một số với",
+      "start": 402.32,
+      "duration": 5.11
+    },
+    {
+      "text": "total time.",
+      "viText": "tổng thời gian.",
+      "start": 407.43,
+      "duration": 2
+    },
+    {
+      "text": "The rate was different every minute.",
+      "viText": "Tỷ lệ khác nhau mỗi phút.",
+      "start": 409.43,
+      "duration": 2.42
+    },
+    {
+      "text": "You have to add up what you burned during each small chunk of time.",
+      "viText": "Bạn phải cộng lại những gì bạn đã đốt trong từng khoảng thời gian nhỏ.",
+      "start": 411.85,
+      "duration": 4.51
+    },
+    {
+      "text": "That process, adding up all those small pieces to get a total, is accumulation.",
+      "viText": "Quá trình đó, cộng tất cả những phần nhỏ đó lại để có được tổng, là sự tích lũy.",
+      "start": 416.36,
+      "duration": 5.31
+    },
+    {
+      "text": "And when the rate is changing continuously, calculus gives you the exact way to",
+      "viText": "Và khi tốc độ thay đổi liên tục, phép tính sẽ cho bạn cách chính xác để",
+      "start": 421.67,
+      "duration": 5.31
+    },
+    {
+      "text": "do that.",
+      "viText": "làm điều đó.",
+      "start": 426.98,
+      "duration": 2
+    },
+    {
+      "text": "Now, here's why this matters to you.",
+      "viText": "Bây giờ, đây là lý do tại sao điều này quan trọng với bạn.",
+      "start": 428.98,
+      "duration": 2.42
+    },
+    {
+      "text": "Almost every real quantity is built up through accumulation.",
+      "viText": "Hầu hết mọi số lượng thực tế đều được hình thành thông qua tích lũy.",
+      "start": 431.4,
+      "duration": 4.03
+    },
+    {
+      "text": "The total distance you drove, the total water that filled a tank, the total",
+      "viText": "Tổng quãng đường bạn đã lái xe, tổng lượng nước đổ đầy bình, tổng",
+      "start": 435.43,
+      "duration": 5.04
+    },
+    {
+      "text": "money earned when your hourly rate changed.",
+      "viText": "số tiền kiếm được khi mức lương theo giờ của bạn thay đổi.",
+      "start": 440.47,
+      "duration": 2.89
+    },
+    {
+      "text": "These are all accumulation problems.",
+      "viText": "Đây đều là những vấn đề tích lũy.",
+      "start": 443.36,
+      "duration": 2.42
+    },
+    {
+      "text": "The key point, accumulation is the mathematical process of building a total from many",
+      "viText": "Điểm mấu chốt, tích lũy là quá trình toán học xây dựng tổng từ nhiều",
+      "start": 445.78,
+      "duration": 5.72
+    },
+    {
+      "text": "tiny, constantly changing pieces.",
+      "viText": "những mảnh nhỏ, liên tục thay đổi.",
+      "start": 451.5,
+      "duration": 2.22
+    },
+    {
+      "text": "Here's what an integral is.",
+      "viText": "Đây là ý nghĩa của tích phân.",
+      "start": 453.72,
+      "duration": 2
+    },
+    {
+      "text": "It is the mathematical tool that calculates accumulation.",
+      "viText": "Nó là công cụ toán học tính toán tích lũy.",
+      "start": 455.72,
+      "duration": 3.83
+    },
+    {
+      "text": "Um this matters because just as the derivative gives you an exact tool for",
+      "viText": "Ừm, điều này quan trọng bởi vì đạo hàm cung cấp cho bạn một công cụ chính xác cho",
+      "start": 459.55,
+      "duration": 4.98
+    },
+    {
+      "text": "finding rate of change, the integral gives you an exact tool for finding totals,",
+      "viText": "tìm tốc độ thay đổi, tích phân cung cấp cho bạn một công cụ chính xác để tìm tổng,",
+      "start": 464.53,
+      "duration": 5.38
+    },
+    {
+      "text": "even when the rate of change is different at every moment.",
+      "viText": "ngay cả khi tốc độ thay đổi ở mỗi thời điểm là khác nhau.",
+      "start": 469.91,
+      "duration": 3.9
+    },
+    {
+      "text": "Here's the example.",
+      "viText": "Đây là ví dụ.",
+      "start": 473.81,
+      "duration": 2
+    },
+    {
+      "text": "It rained all day yesterday, but not at a steady rate.",
+      "viText": "Hôm qua trời mưa cả ngày nhưng không đều đặn.",
+      "start": 475.81,
+      "duration": 3.63
+    },
+    {
+      "text": "In the morning, it drizzled, about 0.",
+      "viText": "Sáng có mưa phùn, khoảng 0.",
+      "start": 479.44,
+      "duration": 2.49
+    },
+    {
+      "text": "1 inches per hour.",
+      "viText": "1 inch mỗi giờ.",
+      "start": 481.93,
+      "duration": 2
+    },
+    {
+      "text": "In the afternoon, it poured, about 0.",
+      "viText": "Buổi chiều trời đổ mưa khoảng 0.",
+      "start": 483.93,
+      "duration": 2.49
+    },
+    {
+      "text": "8 inches per hour.",
+      "viText": "8 inch một giờ.",
+      "start": 486.42,
+      "duration": 2
+    },
+    {
+      "text": "In the evening, it lightened back up to 0.",
+      "viText": "Buổi tối trời sáng trở lại 0.",
+      "start": 488.42,
+      "duration": 2.82
+    },
+    {
+      "text": "2 inches per hour.",
+      "viText": "2 inch một giờ.",
+      "start": 491.24,
+      "duration": 2
+    },
+    {
+      "text": "How much total rain fell?",
+      "viText": "Tổng lượng mưa đã rơi là bao nhiêu?",
+      "start": 493.24,
+      "duration": 2
+    },
+    {
+      "text": "You can't multiply 0.",
+      "viText": "Bạn không thể nhân 0.",
+      "start": 495.24,
+      "duration": 2
+    },
+    {
+      "text": "1 inches per hour by 24 hours.",
+      "viText": "1 inch mỗi giờ trong 24 giờ.",
+      "start": 497.24,
+      "duration": 2.02
+    },
+    {
+      "text": "The rate wasn't constant.",
+      "viText": "Tỷ lệ không cố định.",
+      "start": 499.26,
+      "duration": 2
+    },
+    {
+      "text": "You have to add up all the rain from every small window of time",
+      "viText": "Bạn phải cộng tất cả lượng mưa từ từng khoảng thời gian nhỏ",
+      "start": 501.26,
+      "duration": 4.24
+    },
+    {
+      "text": "throughout the day.",
+      "viText": "suốt cả ngày.",
+      "start": 505.5,
+      "duration": 2
+    },
+    {
+      "text": "The integral does exactly this.",
+      "viText": "Tích phân thực hiện chính xác điều này.",
+      "start": 507.5,
+      "duration": 2.08
+    },
+    {
+      "text": "It takes a function that describes a changing rate and calculates the total amount",
+      "viText": "Nó nhận một hàm mô tả tỷ giá thay đổi và tính tổng số tiền",
+      "start": 509.58,
+      "duration": 5.51
+    },
+    {
+      "text": "that accumulated.",
+      "viText": "tích lũy đó.",
+      "start": 515.09,
+      "duration": 2
+    },
+    {
+      "text": "Visually, uh you can think of it this way.",
+      "viText": "Về mặt trực quan, bạn có thể nghĩ về nó theo cách này.",
+      "start": 517.09,
+      "duration": 2.82
+    },
+    {
+      "text": "If you draw a graph of the rainfall rate over time, the integral calculates",
+      "viText": "Nếu vẽ đồ thị lượng mưa theo thời gian thì tích phân sẽ tính",
+      "start": 519.91,
+      "duration": 5.04
+    },
+    {
+      "text": "the area underneath that curve.",
+      "viText": "diện tích bên dưới đường cong đó.",
+      "start": 524.95,
+      "duration": 2.08
+    },
+    {
+      "text": "That area represents the total rainfall.",
+      "viText": "Khu vực đó đại diện cho tổng lượng mưa.",
+      "start": 527.03,
+      "duration": 2.69
+    },
+    {
+      "text": "The key point, the integral answers the question how much in total when the",
+      "viText": "Điểm mấu chốt, tích phân trả lời câu hỏi tổng cộng bao nhiêu khi",
+      "start": 529.72,
+      "duration": 5.04
+    },
+    {
+      "text": "rate of change is never the same from one moment to the next.",
+      "viText": "tốc độ thay đổi không bao giờ giống nhau từ thời điểm này sang thời điểm khác.",
+      "start": 534.76,
+      "duration": 4.1
+    },
+    {
+      "text": "Here's what the fundamental theorem means.",
+      "viText": "Đây là ý nghĩa của định lý cơ bản.",
+      "start": 538.86,
+      "duration": 2.82
+    },
+    {
+      "text": "Derivatives and integrals are opposites of each other.",
+      "viText": "Đạo hàm và tích phân là đối lập của nhau.",
+      "start": 541.68,
+      "duration": 3.63
+    },
+    {
+      "text": "This matters because it connects the two halves of calculus into one complete system.",
+      "viText": "Điều này quan trọng vì nó kết nối hai nửa của phép tính thành một hệ thống hoàn chỉnh.",
+      "start": 545.31,
+      "duration": 5.72
+    },
+    {
+      "text": "You don't have two separate tools that happen to be useful.",
+      "viText": "Bạn không có hai công cụ riêng biệt hữu ích.",
+      "start": 551.03,
+      "duration": 3.97
+    },
+    {
+      "text": "You have two tools that are mirror images of each other.",
+      "viText": "Bạn có hai công cụ là hình ảnh phản chiếu của nhau.",
+      "start": 555,
+      "duration": 3.77
+    },
+    {
+      "text": "Here's the example to make this concrete.",
+      "viText": "Đây là ví dụ để làm cho điều này cụ thể.",
+      "start": 558.77,
+      "duration": 2.76
+    },
+    {
+      "text": "Think about addition and subtraction.",
+      "viText": "Hãy suy nghĩ về phép cộng và phép trừ.",
+      "start": 561.53,
+      "duration": 2.49
+    },
+    {
+      "text": "They are opposite operations.",
+      "viText": "Chúng là những hoạt động trái ngược nhau.",
+      "start": 564.02,
+      "duration": 2
+    },
+    {
+      "text": "If you add five and then subtract five, you end up right where you",
+      "viText": "Nếu bạn cộng năm rồi trừ năm, bạn sẽ ở đúng vị trí",
+      "start": 566.02,
+      "duration": 4.44
+    },
+    {
+      "text": "started.",
+      "viText": "bắt đầu.",
+      "start": 570.46,
+      "duration": 2
+    },
+    {
+      "text": "Multiplication and division work the same way.",
+      "viText": "Phép nhân và chia hoạt động theo cùng một cách.",
+      "start": 572.46,
+      "duration": 3.09
+    },
+    {
+      "text": "Um they undo each other.",
+      "viText": "Ừm, họ hoàn tác lẫn nhau.",
+      "start": 575.55,
+      "duration": 2
+    },
+    {
+      "text": "Um derivatives and integrals work exactly the same way.",
+      "viText": "Um đạo hàm và tích phân hoạt động giống hệt nhau.",
+      "start": 577.55,
+      "duration": 3.7
+    },
+    {
+      "text": "If you take a function and apply the derivative to it, you get a",
+      "viText": "Nếu bạn lấy một hàm và áp dụng đạo hàm cho nó, bạn sẽ nhận được",
+      "start": 581.25,
+      "duration": 4.3
+    },
+    {
+      "text": "new function.",
+      "viText": "chức năng mới.",
+      "start": 585.55,
+      "duration": 2
+    },
+    {
+      "text": "If you then apply the integral to that new function, you get back to",
+      "viText": "Sau đó, nếu bạn áp dụng tích phân cho hàm mới đó, bạn sẽ quay lại",
+      "start": 587.55,
+      "duration": 4.57
+    },
+    {
+      "text": "where you started.",
+      "viText": "nơi bạn bắt đầu.",
+      "start": 592.12,
+      "duration": 2
+    },
+    {
+      "text": "They undo each other perfectly.",
+      "viText": "Họ hoàn tác lẫn nhau một cách hoàn hảo.",
+      "start": 594.12,
+      "duration": 2.08
+    },
+    {
+      "text": "Let me show you exactly how this works with the car example.",
+      "viText": "Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó với ví dụ về ô tô.",
+      "start": 596.2,
+      "duration": 4.03
+    },
+    {
+      "text": "You start with a function that describes your car's position over time.",
+      "viText": "Bạn bắt đầu với một hàm mô tả vị trí ô tô của bạn theo thời gian.",
+      "start": 600.23,
+      "duration": 4.77
+    },
+    {
+      "text": "You take the derivative, and you get the function that describes your car's speed",
+      "viText": "Bạn lấy đạo hàm và bạn nhận được hàm mô tả tốc độ ô tô của bạn",
+      "start": 605,
+      "duration": 5.45
+    },
+    {
+      "text": "at every moment.",
+      "viText": "vào mọi thời điểm.",
+      "start": 610.45,
+      "duration": 2
+    },
+    {
+      "text": "Now, you take the integral of that speed function, and you get back the",
+      "viText": "Bây giờ, bạn lấy tích phân của hàm tốc độ đó và bạn nhận được",
+      "start": 612.45,
+      "duration": 4.77
+    },
+    {
+      "text": "position function.",
+      "viText": "chức năng định vị.",
+      "start": 617.22,
+      "duration": 2
+    },
+    {
+      "text": "Position to speed to position again.",
+      "viText": "Vị trí để tăng tốc độ đến vị trí một lần nữa.",
+      "start": 619.22,
+      "duration": 2.42
+    },
+    {
+      "text": "The derivative and integral cancel each other out.",
+      "viText": "Đạo hàm và tích phân triệt tiêu lẫn nhau.",
+      "start": 621.64,
+      "duration": 3.36
+    },
+    {
+      "text": "The key point, the fundamental theorem is the discovery that the two big questions",
+      "viText": "Điểm mấu chốt, định lý cơ bản là việc phát hiện ra hai câu hỏi lớn",
+      "start": 625,
+      "duration": 5.51
+    },
+    {
+      "text": "of calculus, how fast is it changing and how much has it accumulated, are",
+      "viText": "của phép tính, nó thay đổi nhanh như thế nào và nó đã tích lũy được bao nhiêu,",
+      "start": 630.51,
+      "duration": 4.91
+    },
+    {
+      "text": "actually two sides of the same coin.",
+      "viText": "thực sự là hai mặt của cùng một đồng tiền.",
+      "start": 635.42,
+      "duration": 2.42
+    },
+    {
+      "text": "Now, let's look at how these six ideas fit together as one system.",
+      "viText": "Bây giờ, hãy xem sáu ý tưởng này kết hợp với nhau như thế nào thành một hệ thống.",
+      "start": 637.84,
+      "duration": 4.44
+    },
+    {
+      "text": "It starts with limits.",
+      "viText": "Nó bắt đầu với những giới hạn.",
+      "start": 642.28,
+      "duration": 2
+    },
+    {
+      "text": "Without limits, derivatives are impossible.",
+      "viText": "Không có giới hạn thì việc phái sinh là không thể.",
+      "start": 644.28,
+      "duration": 2.89
+    },
+    {
+      "text": "A derivative is calculated by asking, what does the rate of change approach as",
+      "viText": "Đạo hàm được tính bằng cách hỏi, tốc độ thay đổi tiến tới giá trị nào khi",
+      "start": 647.17,
+      "duration": 5.25
+    },
+    {
+      "text": "the time interval gets smaller and smaller?",
+      "viText": "khoảng thời gian càng ngày càng nhỏ?",
+      "start": 652.42,
+      "duration": 2.89
+    },
+    {
+      "text": "That's a limit question.",
+      "viText": "Đó là một câu hỏi giới hạn.",
+      "start": 655.31,
+      "duration": 2
+    },
+    {
+      "text": "Limits are the foundation that everything else is built on.",
+      "viText": "Giới hạn là nền tảng mà mọi thứ khác được xây dựng trên đó.",
+      "start": 657.31,
+      "duration": 3.97
+    },
+    {
+      "text": "Once you have limits, you can build derivatives.",
+      "viText": "Khi bạn có giới hạn, bạn có thể xây dựng các công cụ phái sinh.",
+      "start": 661.28,
+      "duration": 3.23
+    },
+    {
+      "text": "Derivatives answer the question, how fast is this changing right now?",
+      "viText": "Các công cụ phái sinh trả lời câu hỏi, hiện tại điều này đang thay đổi nhanh như thế nào?",
+      "start": 664.51,
+      "duration": 4.64
+    },
+    {
+      "text": "They work at a single point, a single moment.",
+      "viText": "Họ làm việc tại một điểm duy nhất, một thời điểm duy nhất.",
+      "start": 669.15,
+      "duration": 3.03
+    },
+    {
+      "text": "Then there's the parallel track.",
+      "viText": "Sau đó là đường song song.",
+      "start": 672.18,
+      "duration": 2.15
+    },
+    {
+      "text": "Integrals answer the question, how much has this accumulated in total?",
+      "viText": "Tích phân trả lời câu hỏi, tổng số tiền này đã tích lũy là bao nhiêu?",
+      "start": 674.33,
+      "duration": 4.71
+    },
+    {
+      "text": "They work across a span of time or distance, and the fundamental theorem connects",
+      "viText": "Chúng hoạt động trong một khoảng thời gian hoặc khoảng cách và định lý cơ bản kết nối",
+      "start": 679.04,
+      "duration": 5.45
+    },
+    {
+      "text": "those two tracks.",
+      "viText": "hai bài hát đó.",
+      "start": 684.49,
+      "duration": 2
+    },
+    {
+      "text": "Like it shows that derivatives and integrals are not separate inventions.",
+      "viText": "Giống như nó cho thấy rằng đạo hàm và tích phân không phải là những phát minh riêng biệt.",
+      "start": 686.49,
+      "duration": 4.91
+    },
+    {
+      "text": "They are inverse operations, you know, two ways of looking at the same underlying",
+      "viText": "Bạn biết đấy, chúng là những phép toán nghịch đảo, hai cách nhìn về cùng một",
+      "start": 691.4,
+      "duration": 5.45
+    },
+    {
+      "text": "relationship between a quantity and its rate of change.",
+      "viText": "mối quan hệ giữa một đại lượng và tốc độ thay đổi của nó.",
+      "start": 696.85,
+      "duration": 3.7
+    },
+    {
+      "text": "Here's the way to hold it all in your head.",
+      "viText": "Đây là cách để giữ tất cả trong đầu của bạn.",
+      "start": 700.55,
+      "duration": 2.89
+    },
+    {
+      "text": "Limits make it precise.",
+      "viText": "Giới hạn làm cho nó chính xác.",
+      "start": 703.44,
+      "duration": 2
+    },
+    {
+      "text": "Derivatives measure the instantaneous.",
+      "viText": "Đạo hàm đo lường tức thời.",
+      "start": 705.44,
+      "duration": 2.56
+    },
+    {
+      "text": "Integrals measure the cumulative.",
+      "viText": "Tích phân đo tích lũy.",
+      "start": 708,
+      "duration": 2.22
+    },
+    {
+      "text": "And the fundamental theorem shows they are the same process running in opposite directions.",
+      "viText": "Và định lý cơ bản cho thấy chúng là cùng một quá trình chạy theo hướng ngược nhau.",
+      "start": 710.22,
+      "duration": 6.12
+    },
+    {
+      "text": "Let's talk about what most people get wrong when they first encounter calculus.",
+      "viText": "Hãy nói về điều mà hầu hết mọi người mắc sai lầm khi lần đầu tiên làm quen với phép tính.",
+      "start": 716.34,
+      "duration": 5.31
+    },
+    {
+      "text": "These mistakes are common, and knowing them in advance will save you a lot",
+      "viText": "Những lỗi này rất phổ biến và nếu biết trước sẽ giúp bạn tiết kiệm rất nhiều",
+      "start": 721.65,
+      "duration": 4.98
+    },
+    {
+      "text": "of confusion.",
+      "viText": "của sự nhầm lẫn.",
+      "start": 726.63,
+      "duration": 2
+    },
+    {
+      "text": "Mistake one, confusing a limit with the actual value at a point.",
+      "viText": "Sai lầm thứ nhất, nhầm lẫn giới hạn với giá trị thực tế tại một điểm.",
+      "start": 728.63,
+      "duration": 4.3
+    },
+    {
+      "text": "A limit tells you what a function is approaching, not necessarily what it equals.",
+      "viText": "Giới hạn cho bạn biết hàm đang tiến tới mức nào, không nhất thiết phải bằng giá trị nào.",
+      "start": 732.93,
+      "duration": 5.45
+    },
+    {
+      "text": "These can be different things.",
+      "viText": "Đây có thể là những điều khác nhau.",
+      "start": 738.38,
+      "duration": 2.02
+    },
+    {
+      "text": "A function can approach a value without ever reaching it.",
+      "viText": "Một hàm có thể tiếp cận một giá trị mà không bao giờ đạt được nó.",
+      "start": 740.4,
+      "duration": 3.83
+    },
+    {
+      "text": "Uh when you see a limit, always ask, what is this heading toward?",
+      "viText": "Uh khi bạn nhìn thấy giới hạn, hãy luôn hỏi, hướng tới điều gì?",
+      "start": 744.23,
+      "duration": 4.37
+    },
+    {
+      "text": "Not what does it equal right here?",
+      "viText": "Không phải ở đây nó có nghĩa là gì?",
+      "start": 748.6,
+      "duration": 2.29
+    },
+    {
+      "text": "Mistake two, treating DX as just zero.",
+      "viText": "Sai lầm thứ hai, coi DX chỉ là con số 0.",
+      "start": 750.89,
+      "duration": 2.56
+    },
+    {
+      "text": "In calculus notation, DX shows up constantly.",
+      "viText": "Trong ký hiệu giải tích, DX xuất hiện liên tục.",
+      "start": 753.45,
+      "duration": 3.03
+    },
+    {
+      "text": "Many students read it as an infinitely small number, which is basically zero, so",
+      "viText": "Nhiều học sinh đọc nó như một số vô cùng nhỏ, về cơ bản là bằng 0, vì vậy",
+      "start": 756.48,
+      "duration": 5.38
+    },
+    {
+      "text": "I'll ignore it.",
+      "viText": "Tôi sẽ bỏ qua nó.",
+      "start": 761.86,
+      "duration": 2
+    },
+    {
+      "text": "This is wrong, and it causes major errors.",
+      "viText": "Điều này là sai và nó gây ra lỗi lớn.",
+      "start": 763.86,
+      "duration": 2.82
+    },
+    {
+      "text": "DX represents an infinitely small change, not zero, but closer to zero than any",
+      "viText": "DX biểu thị một sự thay đổi vô cùng nhỏ, không phải bằng 0, mà gần bằng 0 hơn bất kỳ",
+      "start": 766.68,
+      "duration": 5.31
+    },
+    {
+      "text": "number you can name.",
+      "viText": "nào số bạn có thể đặt tên.",
+      "start": 771.99,
+      "duration": 2
+    },
+    {
+      "text": "It still participates in the math.",
+      "viText": "Nó vẫn tham gia vào toán học.",
+      "start": 773.99,
+      "duration": 2.29
+    },
+    {
+      "text": "Ignoring it uh breaks the calculation.",
+      "viText": "Bỏ qua nó uh sẽ phá vỡ tính toán.",
+      "start": 776.28,
+      "duration": 2.56
+    },
+    {
+      "text": "Mistake three, memorizing formulas before understanding the ideas.",
+      "viText": "Sai lầm thứ ba, ghi nhớ công thức trước khi hiểu ý tưởng.",
+      "start": 778.84,
+      "duration": 4.44
+    },
+    {
+      "text": "This is the most common mistake.",
+      "viText": "Đây là sai lầm phổ biến nhất.",
+      "start": 783.28,
+      "duration": 2.15
+    },
+    {
+      "text": "Students are handed derivative rules and integral rules and told to practice them.",
+      "viText": "Học sinh được cung cấp các quy tắc đạo hàm và quy tắc tích phân và yêu cầu thực hành chúng.",
+      "start": 785.43,
+      "duration": 5.51
+    },
+    {
+      "text": "They can pass a test by memorizing, but when a problem looks slightly different,",
+      "viText": "Họ có thể vượt qua bài kiểm tra bằng cách ghi nhớ, nhưng khi một vấn đề có vẻ hơi khác,",
+      "start": 790.94,
+      "duration": 5.38
+    },
+    {
+      "text": "they freeze because they never understood what they were doing.",
+      "viText": "họ chết lặng vì họ không bao giờ hiểu mình đang làm gì.",
+      "start": 796.32,
+      "duration": 4.24
+    },
+    {
+      "text": "Understanding the concept first makes the formulas obvious.",
+      "viText": "Hiểu khái niệm trước tiên sẽ làm cho các công thức trở nên rõ ràng.",
+      "start": 800.56,
+      "duration": 3.97
+    },
+    {
+      "text": "They stop feeling like arbitrary rules and start feeling like logical consequences of what",
+      "viText": "Họ không còn cảm thấy thích những quy tắc độc đoán nữa và bắt đầu cảm thấy thích những hậu quả hợp lý của những gì",
+      "start": 804.53,
+      "duration": 6.05
+    },
+    {
+      "text": "you already know.",
+      "viText": "bạn đã biết rồi.",
+      "start": 810.58,
+      "duration": 2
+    },
+    {
+      "text": "The fix for all three mistakes is the same.",
+      "viText": "Cách khắc phục cả ba lỗi đều giống nhau.",
+      "start": 812.58,
+      "duration": 2.89
+    },
+    {
+      "text": "Go back to the definition.",
+      "viText": "Quay trở lại định nghĩa.",
+      "start": 815.47,
+      "duration": 2
+    },
+    {
+      "text": "What is this tool actually doing?",
+      "viText": "Công cụ này thực sự đang làm gì?",
+      "start": 817.47,
+      "duration": 2.22
+    },
+    {
+      "text": "What question is it answering?",
+      "viText": "Nó đang trả lời câu hỏi gì?",
+      "start": 819.69,
+      "duration": 2.02
+    },
+    {
+      "text": "When you know the answers to those questions, the formulas are just shortcuts, not",
+      "viText": "Khi bạn biết câu trả lời cho những câu hỏi đó thì các công thức chỉ là lối tắt chứ không phải",
+      "start": 821.71,
+      "duration": 5.51
+    },
+    {
+      "text": "mysterious procedures you memorized.",
+      "viText": "những thủ tục bí ẩn mà bạn đã ghi nhớ.",
+      "start": 827.22,
+      "duration": 2.42
+    },
+    {
+      "text": "Here's where calculus shows up in the real world.",
+      "viText": "Đây là nơi phép tính xuất hiện trong thế giới thực.",
+      "start": 829.64,
+      "duration": 3.3
+    },
+    {
+      "text": "Places you interact with every day, GPS and navigation.",
+      "viText": "Những nơi bạn tương tác hàng ngày, GPS và điều hướng.",
+      "start": 832.94,
+      "duration": 3.7
+    },
+    {
+      "text": "When your phone tracks how far you've traveled, it uses an integral.",
+      "viText": "Khi điện thoại theo dõi quãng đường bạn đã đi, điện thoại sẽ sử dụng tích phân.",
+      "start": 836.64,
+      "duration": 4.57
+    },
+    {
+      "text": "Your speed changes constantly.",
+      "viText": "Tốc độ của bạn thay đổi liên tục.",
+      "start": 841.21,
+      "duration": 2.02
+    },
+    {
+      "text": "You accelerate, brake, slow for turns.",
+      "viText": "Bạn tăng tốc, phanh, giảm tốc độ khi rẽ.",
+      "start": 843.23,
+      "duration": 2.56
+    },
+    {
+      "text": "The GPS integrates your changing speed over time to calculate the total distance traveled.",
+      "viText": "GPS tích hợp tốc độ thay đổi của bạn theo thời gian để tính tổng quãng đường đã đi.",
+      "start": 845.79,
+      "duration": 6.05
+    },
+    {
+      "text": "Medical dosing.",
+      "viText": "Liều lượng y tế.",
+      "start": 851.84,
+      "duration": 2
+    },
+    {
+      "text": "When doctors calculate how a drug moves through your body, they use derivatives.",
+      "viText": "Khi các bác sĩ tính toán cách thuốc di chuyển trong cơ thể bạn, họ sử dụng các dẫn xuất.",
+      "start": 853.84,
+      "duration": 5.38
+    },
+    {
+      "text": "The drug concentration in your blood changes over time.",
+      "viText": "Nồng độ thuốc trong máu của bạn thay đổi theo thời gian.",
+      "start": 859.22,
+      "duration": 3.7
+    },
+    {
+      "text": "The derivative tells doctors exactly how fast the concentration is rising or falling at",
+      "viText": "Đạo hàm cho bác sĩ biết chính xác nồng độ tăng hoặc giảm nhanh như thế nào tại",
+      "start": 862.92,
+      "duration": 5.85
+    },
+    {
+      "text": "any moment, which determines when to give the next dose.",
+      "viText": "bất cứ lúc nào, điều này quyết định khi nào nên cho liều tiếp theo.",
+      "start": 868.77,
+      "duration": 3.77
+    },
+    {
+      "text": "Machine learning and AI.",
+      "viText": "Học máy và AI.",
+      "start": 872.54,
+      "duration": 2
+    },
+    {
+      "text": "Every AI system you interact with was trained using calculus.",
+      "viText": "Mọi hệ thống AI mà bạn tương tác đều được đào tạo bằng phép tính.",
+      "start": 874.54,
+      "duration": 4.1
+    },
+    {
+      "text": "The training process uses derivatives.",
+      "viText": "Quá trình đào tạo sử dụng các công cụ phái sinh.",
+      "start": 878.64,
+      "duration": 2.56
+    },
+    {
+      "text": "Specifically, it calculates the derivative of an error function to find out which direction",
+      "viText": "Cụ thể là tính đạo hàm của một hàm sai số để tìm ra hướng",
+      "start": 881.2,
+      "duration": 6.12
+    },
+    {
+      "text": "to adjust the model settings.",
+      "viText": "để điều chỉnh cài đặt mô hình.",
+      "start": 887.32,
+      "duration": 2
+    },
+    {
+      "text": "This process, called gradient descent, runs millions of times to make the model more",
+      "viText": "Quá trình này, được gọi là giảm độ dốc, chạy hàng triệu lần để làm cho mô hình trở nên",
+      "start": 889.32,
+      "duration": 5.65
+    },
+    {
+      "text": "accurate.",
+      "viText": "hơn chính xác.",
+      "start": 894.97,
+      "duration": 2
+    },
+    {
+      "text": "Finance.",
+      "viText": "Tài chính.",
+      "start": 896.97,
+      "duration": 2
+    },
+    {
+      "text": "Compound interest in the interest you earn on your savings account is an accumulation",
+      "viText": "Lãi kép của tiền lãi bạn kiếm được trên tài khoản tiết kiệm là sự tích lũy",
+      "start": 898.97,
+      "duration": 5.72
+    },
+    {
+      "text": "problem.",
+      "viText": "vấn đề.",
+      "start": 904.69,
+      "duration": 2
+    },
+    {
+      "text": "Your balance grows at a rate that changes because the interest is always being",
+      "viText": "Số dư của bạn tăng với tốc độ thay đổi vì lãi suất luôn là",
+      "start": 906.69,
+      "duration": 5.25
+    },
+    {
+      "text": "added to the total.",
+      "viText": "được thêm vào tổng số.",
+      "start": 911.94,
+      "duration": 2
+    },
+    {
+      "text": "An integral describes exactly how that balance grows over time.",
+      "viText": "Tích phân mô tả chính xác số dư đó tăng lên như thế nào theo thời gian.",
+      "start": 913.94,
+      "duration": 4.24
+    },
+    {
+      "text": "Your phone battery.",
+      "viText": "Pin điện thoại của bạn.",
+      "start": 918.18,
+      "duration": 2
+    },
+    {
+      "text": "The estimated time remaining on your battery is calculated using the current drain rate,",
+      "viText": "Thời gian ước tính còn lại của pin được tính bằng tốc độ hao pin hiện tại,",
+      "start": 920.18,
+      "duration": 5.92
+    },
+    {
+      "text": "a derivative.",
+      "viText": "một dẫn xuất.",
+      "start": 926.1,
+      "duration": 2
+    },
+    {
+      "text": "Your phone measures how fast the battery is dropping right now, and uses that",
+      "viText": "Điện thoại của bạn hiện đo lường tốc độ pin tụt xuống và sử dụng thông tin đó",
+      "start": 928.1,
+      "duration": 5.18
+    },
+    {
+      "text": "to predict how long it will last.",
+      "viText": "để dự đoán nó sẽ kéo dài bao lâu.",
+      "start": 933.28,
+      "duration": 2.22
+    },
+    {
+      "text": "Calculus is not a subject you study and then put away.",
+      "viText": "Giải tích không phải là môn học bạn học rồi bỏ đi.",
+      "start": 935.5,
+      "duration": 3.63
+    },
+    {
+      "text": "It is running in the background of the technology you use every day.",
+      "viText": "Nó đang chạy trên nền tảng công nghệ mà bạn sử dụng hàng ngày.",
+      "start": 939.13,
+      "duration": 4.57
+    },
+    {
+      "text": "Let's bring this together.",
+      "viText": "Hãy mang điều này lại với nhau.",
+      "start": 943.7,
+      "duration": 2
+    },
+    {
+      "text": "Calculus is the math of things that change.",
+      "viText": "Phép tính là phép toán của những thứ thay đổi.",
+      "start": 945.7,
+      "duration": 2.89
+    },
+    {
+      "text": "It was built to answer two questions that basic math cannot handle cleanly.",
+      "viText": "Nó được xây dựng để trả lời hai câu hỏi mà toán học cơ bản không thể giải quyết một cách rõ ràng.",
+      "start": 948.59,
+      "duration": 5.04
+    },
+    {
+      "text": "The first question, how fast is something changing right now, at this exact moment?",
+      "viText": "Câu hỏi đầu tiên, hiện tại một điều gì đó đang thay đổi nhanh đến mức nào, tại thời điểm chính xác này?",
+      "start": 953.63,
+      "duration": 5.58
+    },
+    {
+      "text": "The tool for this is the derivative.",
+      "viText": "Công cụ cho việc này là đạo hàm.",
+      "start": 959.21,
+      "duration": 2.42
+    },
+    {
+      "text": "It gives you the instantaneous rate of change at any point.",
+      "viText": "Nó cung cấp cho bạn tốc độ thay đổi tức thời tại bất kỳ thời điểm nào.",
+      "start": 961.63,
+      "duration": 3.97
+    },
+    {
+      "text": "The second question, how much has something accumulated in total when the rate was",
+      "viText": "Câu hỏi thứ hai, tổng cộng một thứ đã được tích lũy là bao nhiêu khi tỷ lệ là",
+      "start": 965.6,
+      "duration": 5.51
+    },
+    {
+      "text": "different at every moment?",
+      "viText": "khác nhau ở mọi thời điểm?",
+      "start": 971.11,
+      "duration": 2
+    },
+    {
+      "text": "The tool for this is the integral.",
+      "viText": "Công cụ cho việc này là tích phân.",
+      "start": 973.11,
+      "duration": 2.29
+    },
+    {
+      "text": "Um it gives you the total amount by adding up all the small pieces.",
+      "viText": "Ừm, nó cho bạn tổng số tiền bằng cách cộng tất cả các phần nhỏ lại.",
+      "start": 975.4,
+      "duration": 4.51
+    },
+    {
+      "text": "These two tools are connected by the fundamental theorem of calculus, which says they",
+      "viText": "Hai công cụ này được kết nối với nhau bằng định lý cơ bản của phép tính, trong đó cho biết chúng",
+      "start": 979.91,
+      "duration": 5.72
+    },
+    {
+      "text": "are opposites.",
+      "viText": "là những sự đối lập.",
+      "start": 985.63,
+      "duration": 2
+    },
+    {
+      "text": "They undo each other, just like addition and subtraction.",
+      "viText": "Chúng triệt tiêu lẫn nhau, giống như phép cộng và phép trừ.",
+      "start": 987.63,
+      "duration": 3.83
+    },
+    {
+      "text": "And underneath all of it is the concept of a limit, the idea that",
+      "viText": "Và bên dưới tất cả những điều đó là khái niệm về giới hạn, ý tưởng rằng",
+      "start": 991.46,
+      "duration": 4.37
+    },
+    {
+      "text": "you can describe what something is approaching, even if you can't land exactly on",
+      "viText": "bạn có thể mô tả thứ gì đó đang đến gần, ngay cả khi bạn không thể tiếp cận chính xác",
+      "start": 995.83,
+      "duration": 5.45
+    },
+    {
+      "text": "it.",
+      "viText": "Nó.",
+      "start": 1001.28,
+      "duration": 2
+    },
+    {
+      "text": "Here are your three takeaways.",
+      "viText": "Đây là ba điều bạn có thể rút ra.",
+      "start": 1003.28,
+      "duration": 2.02
+    },
+    {
+      "text": "One, when you see a derivative, ask, how fast is this changing right now?",
+      "viText": "Thứ nhất, khi bạn nhìn thấy đạo hàm, hãy hỏi, hiện tại nó đang thay đổi nhanh như thế nào?",
+      "start": 1005.3,
+      "duration": 4.91
+    },
+    {
+      "text": "Two, when you see an integral, ask, how much has this built up in",
+      "viText": "Thứ hai, khi bạn thấy một tích phân, hãy hỏi xem cái này tích phân bao nhiêu trong",
+      "start": 1010.21,
+      "duration": 4.37
+    },
+    {
+      "text": "total?",
+      "viText": "tổng cộng?",
+      "start": 1014.58,
+      "duration": 2
+    },
+    {
+      "text": "Three, when you see both in the same problem, remember they are inverse operations.",
+      "viText": "Thứ ba, khi bạn thấy cả hai trong cùng một bài toán, hãy nhớ rằng chúng là những phép toán nghịch đảo.",
+      "start": 1016.58,
+      "duration": 5.58
+    },
+    {
+      "text": "One undoes the other.",
+      "viText": "Cái này hoàn tác cái kia.",
+      "start": 1022.16,
+      "duration": 2
+    },
+    {
+      "text": "You now understand what calculus is, not the formulas.",
+      "viText": "Bây giờ bạn đã hiểu phép tính là gì, không phải công thức.",
+      "start": 1024.16,
+      "duration": 3.63
+    },
+    {
+      "text": "Those come later, but the reason the formulas exist, the questions they answer, and",
+      "viText": "Những điều đó đến sau, nhưng lý do tồn tại của các công thức, câu hỏi mà chúng trả lời và",
+      "start": 1027.79,
+      "duration": 5.58
+    },
+    {
+      "text": "the logic that connects them.",
+      "viText": "logic kết nối chúng.",
+      "start": 1033.37,
+      "duration": 2
+    },
+    {
+      "text": "That understanding is what makes everything else learnable.",
+      "viText": "Sự hiểu biết đó là điều khiến mọi thứ khác đều có thể học được.",
+      "start": 1035.37,
+      "duration": 3.97
+    }
+  ]
+}

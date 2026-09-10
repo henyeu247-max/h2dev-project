@@ -1,0 +1,29 @@
+# API keys — never commit
+.env
+config.json
+
+# User projects — keep the folder, ignore all generated content + secrets inside
+projects/*
+!projects/.gitkeep
+
+# Generated output — too large for git
+characters/
+backgrounds/
+composites/
+clips/
+final_animation.mp4
+concat.txt
+
+# Claude Code local harness state (machine-specific paths, session permissions)
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.skill
+
+# OS
+.DS_Store
+Thumbs.db

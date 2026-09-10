@@ -1,0 +1,1553 @@
+{
+  "videoId": "TxyOVnMRwp0",
+  "title": "Trigonometry Explained Like You Are 5 Years Old",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 257,
+  "fullText": "You have seen the word trigonometry and felt your brain shut down. You have stared at sin, cause, and tan, and wondered what they actually mean. You memorized formulas for a test and forgot them the next week. That happens because nobody explained what these functions are actually doing. By the end of this video, you will know exactly what every trig function does, why each one exists, and how to use any of them without brute force memorization. Start with a triangle. And not just any triangle, a right triangle. A right triangle is a triangle where one of the three corners is exactly 90 degrees. That square symbol you see in the corner of diagrams means 90°. This type of triangle is the foundation of trigonometry. Everything in this video comes from this one shape. Now look at the three sides. The longest side is always the one across from the 90° corner. That side has a name. It is called the hypotenuse. The other two sides do not have fixed names. Their names change depending on which angle you are focused on. The side directly across from your chosen angle is called the opposite side. The side next to your chosen angle is called the adjacent side. Opposite means across from. Adjacent means next to. These three names matter. Hypotenuse. opposite, adjacent. Write them down if you need to. Now, here is the key idea that makes all of trigonometry work. If you draw a right triangle with a 30° angle, and then you draw a much bigger right triangle with the same 30° angle, something stays the same. The ratio between two specific sides is always identical. The triangle can be tiny or enormous. Um, as long as the angle is 30°, the ratio between those two sides is the same number every single time. That is not a coincidence. That is a rule of geometry and it is the entire reason trigonometry exists. Uh trig functions are just a way to name and use those ratios. Here is what sign means. S is a ratio. Specifically, s is the opposite side divided by the hypotenuse. That is it. When you write sign of an angle, you are asking one question. How long is the opposite side compared to the hypotenuse? This matters because it lets you calculate a side you cannot directly measure. Say a ladder is leaning against a wall. The ladder is 5 m long. The angle between the ladder and the ground is 60°. You want to know how high up the wall the ladder reaches. You cannot climb up and measure it, but you can calculate it. The ladder is the hypotenuse. The wall height is the opposite side. Sine of 60° is 0.8. 866. You multiply 5 m by 0.866 and you get 4.33 m. That is the height. Sign gave you a side you could not see. The key point is this. S takes an angle and tells you the ratio of the opposite side to the hypotenuse. Once you know that ratio, you can find any missing length. Here is what cosine means. Um cosine is also a ratio. Um, cosine is the adjacent side divided by the hypotenuse. When you write cosine of an angle, you're asking a different question. How long is the side next to the angle compared to the hypotenuse? Go back to the same ladder leaning against a wall. The ladder is 5 m. The angle at the ground is 60°. This time you want to know how far the base of the ladder is from the wall. The base distance is the adjacent side. Cosine of 60° is 0.5. You multiply 5 by 0.5 and you get 2.5 m. The base of the ladder is 2.5 m from the wall. Same ladder, same angle. Sign gave you the height. Cosine gave you the base distance. Two different questions. Two different ratios. Two different answers. The key point is this. Cosine takes an angle and tells you the ratio of the adjacent side to the hypotenuse. Here is what's actually happening. When you use s and cosine together, these two functions are doing opposite jobs. When an angle gets bigger, the opposite side grows and the adjacent side shrinks, right? So s goes up and cosine goes down. And when an angle gets smaller, sign goes down and cosine goes up. They move in opposite directions. That is not a rule you memorized. It follows directly from the shape of the triangle changing. A steeper angle means more height and less base distance. Here is what tangent means. Tangent is the third ratio. Tangent is the opposite side divided by the adjacent side. Notice what is missing. The hypotenuse is not involved at all. Tangent ignores the hypotenuse completely. When you write tan of an angle, you are asking how does the height compare to the base distance? Another way to say it, how steep is this angle? Here is a concrete example. You are standing 10 m away from a building. You look up at the top of the building. Your line of sight makes a 40° angle with the ground. You want to know how tall the building is. Your distance from the building is the adjacent side. The building height is the opposite side. Tangent of 40° is 0.839. Uh you multiply 10 m by 0.839 and you get 8.39 m. That is the height of the building. You measured it from the street without a ladder or a tape measure. The key point is this. Tangent takes an angle and gives you the ratio of the opposite side to the adjacent side. It is the go-to function whenever you know a horizontal distance and want to find a vertical height. This is the important part. You now know three functions s cosine and tangent. Each one is a ratio. Each one answers a different question about the same triangle. Here's a simple way to remember which sides go with which function. S means s equals opposite over hypotenuse. C means coine equals adjacent over hypotenuse. Ta means tangent equals opposite over adjacent. S a ha. This is not a magic formula. It is a reference card. It helps you remember which two sides each function uses, nothing more. If you understand what opposite, adjacent, and hypotenuse mean, then s cat 2way just confirms what you already know. Start with the sides you have or need. Then pick the function that connects them. Now, here is why this matters to you. These three functions cover every possible combination of two sides from a right triangle. There are only three pairs possible opposite and hypotenuse. Adjacent and hypotenuse. Opposite and adjacent. S handles the first pair. Coine handles the second. Tangent handles the third. So whenever you have a right triangle with one known angle and one known side, you can always find any other side. Pick the function that connects the side you know with the side you need. Multiply. Done. Now look at the inverse functions. Here's what inverse means in this context. The three functions you just learned go in one direction. You give them an angle. They give you a ratio. The inverse functions go the other direction. You give them a ratio. They give you the angle. Inverse sign is written as arson sin or sin to the power of -1. Inverse cosine is arc goes. Inverse tangent is arc tan. Every calculator has these buttons. Here is a concrete example. You are building a ramp. The ramp needs to rise 1.5 m over a horizontal distance of 4 m. You need to know the angle of the ramp. The rise is the opposite side. The horizontal distance is the adjacent side. So you divide 1.5 by 4 and you get 0.375. Now you ask, what angle has a tangent of 0.375? You type arc tan of 0.375 into a calculator. The answer is about 20.6°. That is the angle of your ramp. Um the key point is this. Inverse functions run the process backwards. If you know the sides, you can always find the angle. You are never missing information you cannot recover. Let me show you exactly how this works when you put it all together. Say a phone GPS needs to calculate a straight line distance. You walked 300 m east and 400 m north. You did not walk in a straight line, but your phone can calculate the straight distance from start to finish. First, it uses the two distances to find the hypotenuse of a right triangle. Then, it uses arc tan of 400 / 300 to find the angle of your path. All of that happens instantly using the same three ratios you now understand. Now, here's how the concepts connect. Start with what you have just learned. S, cosine and tangent are three ratios. They come from the same triangle. Uh they are not separate ideas. They are three different questions about one shape. Here is something worth noticing. For any angle, sin^ squ plus cosine squar always equals 1. You do not need to memorize why. Um just notice that um s and cosine are always connected. When one is large, the other is small. They are linked. Here is something else worth noticing. tangent of any angle equals s / cosine. If you already know s and cosine for an angle, you automatically know tangent. These functions are not independent. They are built from the same underlying ratios. The six functions together form a complete system. S, cosine and tangent let you move from angles to sides. Arxson, arcros, and arc tan let you move from sides to angles. With those six tools and one right triangle, no information is ever out of reach. Now, here's what most people get wrong. The first mistake is confusing opposite and adjacent. Remember, these names are not fixed positions on the triangle. They depend on which angle you are working with. The same side can be opposite for one angle and adjacent for another angle in the same triangle. Before you write anything down, identify which angle you are using. Then label the sides from that angle's perspective. The second mistake is reaching for sign when tangent is the right choice. Cini always involves the hypotenuse. If the hypotenuse is not part of the problem, scene is not the right function. If you have a height and a base distance and no hypotenuse, use tangent. The third mistake is using basic sign, cosine, and tangent on triangles that do not have a 90deree angle. These three functions only work on right triangles. Is if your triangle has no right angle, a different set of rules applies. Those rules exist and they work, but they are not what you learned today. Know the boundary. The fourth mistake is memorizing s koa without understanding the ratios. The letters only help if you know what opposite, adjacent, and hypotenuse mean in your specific triangle. If you skip that step, the letters become useless sounds. Always label the triangle first, then use so as a confirmation. The fifth mistake is forgetting that inverse functions exist. Students learn to go from angles to sides. Then they get stuck when the problem gives them sides and asks for an angle. The inverse functions exist precisely for that situation. If you know the ratio, you can always find the angle. The process runs both ways. Now, here is where you actually use this. The construction workers use trigonometry to calculate roof beam lengths. The angle of a roof is known. The width of the house is known. S or cosine gives the exact beam length without measuring the beam directly. Surveyors use tangent to measure the height of structures like stand at a known distance, measure the angle to the top, multiply. The height appears without climbing anything. Game developers use sign and cosine constantly. When a character or object moves at an angle in a game, the code uses these two functions to split that diagonal movement into a horizontal part and a vertical part. Every smooth movement you see on screen involves these ratios. Phone navigation uses all of these functions every time it calculates a route. Any path that is not perfectly horizontal or vertical involves a right triangle somewhere in the calculation. Um, here is one you can try yourself. Stand a fixed distance from a wall. Open your phone compass or a protractor app. Measure the angle from your eye to the top of the wall. Multiply that distance by the tangent of the angle. Compare your answer to the actual height. You will be close. That is trigonometry working in real life in under two minutes. Here is what you now know. S is the opposite side divided by the hypotenuse. It tells you how tall a triangle is relative to its longest side. Cosine is the adjacent side divided by the hypotenuse. It tells you how wide a triangle is relative to its longest side. Tangent is the opposite side divided by the adjacent side. It tells you how steep an angle is. Um, so Kato is a reference card. It connects each function to the two sides it uses. Label your triangle. Um, pick the function that connects what you have to what you need. Multiply. The inverse functions run the process backwards. Arson, arcros, and aran. Take a ratio and return the angle. All six functions exist because of one fact. The ratio between two sides of a right triangle stays constant for any given angle, no matter the size of the triangle. You now know what every trig function does. You know what each one measures. You know when to use each one. That understanding does not disappear after a test. It stays with you because it is based on what the functions actually are, not on memorized rules.",
+  "fullTextVi": "Bạn đã nhìn thấy từ lượng giác và cảm thấy não mình như ngừng hoạt động. Bạn đã nhìn chằm chằm vào tội lỗi, nguyên nhân và rám nắng và tự hỏi chúng thực sự có ý nghĩa gì. Bạn đã ghi nhớ các công thức làm bài kiểm tra và quên chúng vào tuần sau. Điều đó xảy ra bởi vì không ai giải thích những chức năng này thực sự đang làm gì. Đến cuối video này, bạn sẽ biết chính xác chức năng của từng hàm lượng giác, lý do tồn tại của mỗi hàm và cách sử dụng bất kỳ hàm nào trong số chúng mà không cần phải ghi nhớ quá mức. Bắt đầu với một hình tam giác. Và không chỉ bất kỳ hình tam giác nào, một hình tam giác vuông. Tam giác vuông là tam giác có một trong ba góc bằng 90 độ. Biểu tượng hình vuông mà bạn nhìn thấy ở góc sơ đồ có nghĩa là 90°. Loại tam giác này là nền tảng của lượng giác. Mọi thứ trong video này đều xuất phát từ một hình dạng này. Bây giờ hãy nhìn vào ba phía. Cạnh dài nhất luôn là cạnh đối diện với góc 90°. Bên đó có tên. Nó được gọi là cạnh huyền. Hai bên còn lại không có tên cố định. Tên của chúng thay đổi tùy theo góc độ bạn đang tập trung vào. Phía đối diện trực tiếp với góc bạn đã chọn được gọi là phía đối diện. Cạnh bên cạnh góc bạn đã chọn được gọi là cạnh kề. Đối diện có nghĩa là đối diện với. Liền kề có nghĩa là bên cạnh. Ba cái tên này đều quan trọng. Cạnh huyền. đối diện, liền kề. Hãy viết chúng ra nếu bạn cần. Bây giờ, đây là ý tưởng then chốt giúp cho tất cả các phép đo lượng giác hoạt động được. Nếu bạn vẽ một tam giác vuông có một góc 30°, sau đó bạn vẽ một tam giác vuông lớn hơn nhiều với cùng một góc 30°, thì mọi thứ vẫn giữ nguyên. Tỷ lệ giữa hai bên cụ thể luôn giống hệt nhau. Hình tam giác có thể rất nhỏ hoặc rất lớn. Ừm, miễn là góc bằng 30° thì tỉ số giữa hai cạnh đó luôn bằng nhau. Đó không phải là một sự trùng hợp ngẫu nhiên. Đó là một quy luật của hình học và đó là toàn bộ lý do lượng giác tồn tại. Uh hàm lượng giác chỉ là một cách để đặt tên và sử dụng các tỷ lệ đó. Đây là ý nghĩa của dấu hiệu. S là một tỷ lệ. Cụ thể, s là cạnh đối diện chia cho cạnh huyền. Đó là nó. Khi bạn viết dấu hiệu của một góc, bạn đang hỏi một câu hỏi. Cạnh đối diện so với cạnh huyền dài bao nhiêu? Điều này quan trọng vì nó cho phép bạn tính toán một cạnh mà bạn không thể đo trực tiếp. Giả sử một cái thang đang dựa vào một bức tường. Thang dài 5m. Góc giữa thang và mặt đất là 60°. Bạn muốn biết chiều cao của bức tường mà thang đạt được. Bạn không thể trèo lên và đo nó, nhưng bạn có thể tính toán nó. Cái thang là cạnh huyền. Chiều cao của bức tường là phía đối diện. Sin của 60° là 0,8. 866. Bạn nhân 5 m với 0,866 và được 4,33 m. Đó là chiều cao. Sign đã cho bạn một khía cạnh mà bạn không thể nhìn thấy. Điểm mấu chốt là điều này. S lấy một góc và cho bạn biết tỷ lệ của cạnh đối diện với cạnh huyền. Khi bạn biết tỷ lệ đó, bạn có thể tìm thấy bất kỳ độ dài còn thiếu nào. Đây là ý nghĩa của cosin. Um cosin cũng là một tỷ lệ. Ừm, cosin là cạnh kề được chia cho cạnh huyền. Khi bạn viết cosin của một góc, bạn đang hỏi một câu hỏi khác. Cạnh cạnh góc dài bằng bao nhiêu so với cạnh huyền? Quay trở lại cái thang dựa vào tường. Thang là 5 m. Góc ở mặt đất là 60°. Lần này bạn muốn biết chân thang cách tường bao xa. Khoảng cách cơ sở là cạnh liền kề. Cosin của 60° là 0,5. Bạn nhân 5 với 0,5 và bạn nhận được 2,5 m. Chân thang cách tường 2,5m. Cùng một cái thang, cùng một góc. Sign đã cho bạn chiều cao. Cosine đã cho bạn khoảng cách cơ sở. Hai câu hỏi khác nhau. Hai tỷ lệ khác nhau. Hai câu trả lời khác nhau. Điểm mấu chốt là điều này. Cosine tính một góc và cho bạn biết tỷ lệ của cạnh kề với cạnh huyền. Đây là những gì đang thực sự xảy ra. Khi bạn sử dụng s và cosine cùng nhau, hai hàm này thực hiện công việc trái ngược nhau. Khi một góc lớn hơn thì cạnh đối diện tăng lên và cạnh kề co lại, phải không? Vậy s tăng và cosin giảm. Và khi một góc nhỏ hơn, dấu giảm và cosin tăng. Họ di chuyển theo hướng ngược nhau. Đó không phải là quy tắc bạn đã ghi nhớ. Nó diễn ra trực tiếp từ hình dạng của tam giác thay đổi. Góc dốc hơn có nghĩa là chiều cao cao hơn và khoảng cách cơ sở ít hơn. Đây là ý nghĩa của tiếp tuyến. Tiếp tuyến là tỷ lệ thứ ba. Tiếp tuyến là cạnh đối diện được chia cho cạnh liền kề. Chú ý những gì còn thiếu. Cạnh huyền không liên quan gì cả. Tangent bỏ qua hoàn toàn cạnh huyền. Khi bạn viết tan của một góc, bạn đang hỏi chiều cao so với khoảng cách cơ sở như thế nào? Nói cách khác, góc này dốc bao nhiêu? Đây là một ví dụ cụ thể. Bạn đang đứng cách một tòa nhà 10m. Bạn nhìn lên đỉnh tòa nhà. Đường ngắm của bạn tạo một góc 40° với mặt đất. Bạn muốn biết tòa nhà cao bao nhiêu. Khoảng cách của bạn với tòa nhà là phía bên cạnh. Chiều cao tòa nhà là phía đối diện. Tiếp tuyến của 40° là 0,839. Uh bạn nhân 10 m với 0,839 và bạn được 8,39 m. Đó là chiều cao của tòa nhà. Bạn đo nó từ đường phố mà không cần thang hoặc thước dây. Điểm mấu chốt là điều này. Tiếp tuyến lấy một góc và cho bạn tỷ lệ của cạnh đối diện với cạnh liền kề. Đây là chức năng được sử dụng bất cứ khi nào bạn biết khoảng cách theo chiều ngang và muốn tìm chiều cao theo chiều dọc. Đây là phần quan trọng. Bây giờ bạn đã biết ba hàm cosin và tang. Mỗi cái là một tỷ lệ. Mỗi người trả lời một câu hỏi khác nhau về cùng một hình tam giác. Đây là một cách đơn giản để nhớ mặt nào phù hợp với chức năng nào. S có nghĩa là s bằng đối diện với cạnh huyền. C có nghĩa là đồng xu bằng cạnh huyền. Ta có nghĩa là tiếp tuyến bằng đối diện trên liền kề. À ha. Đây không phải là một công thức kỳ diệu. Đó là một thẻ tham khảo. Nó giúp bạn nhớ mỗi hàm sử dụng hai mặt nào, không hơn thế nữa. Nếu bạn hiểu đối diện, liền kề và cạnh huyền nghĩa là gì thì s cat 2way chỉ xác nhận những gì bạn đã biết. Bắt đầu với những mặt bạn có hoặc cần. Sau đó chọn chức năng kết nối chúng. Bây giờ, đây là lý do tại sao điều này quan trọng với bạn. Ba hàm này bao hàm mọi sự kết hợp có thể có của hai cạnh trong một tam giác vuông. Chỉ có ba cặp đối diện và cạnh huyền có thể có. Liền kề và cạnh huyền. Đối diện và liền kề. S xử lý cặp đầu tiên. Coine xử lý việc thứ hai. Tangent xử lý thứ ba. Vì vậy, bất cứ khi nào bạn có một tam giác vuông với một góc đã biết và một cạnh đã biết, bạn luôn có thể tìm thấy bất kỳ cạnh nào khác. Chọn chức năng kết nối bên bạn biết với bên bạn cần. Nhân lên. Xong. Bây giờ hãy xem các hàm nghịch đảo. Đây là ý nghĩa của nghịch đảo trong bối cảnh này. Ba chức năng bạn vừa học đi theo một hướng. Bạn cho họ một góc độ. Họ cung cấp cho bạn một tỷ lệ. Các hàm nghịch đảo đi theo hướng khác. Bạn cung cấp cho họ một tỷ lệ. Họ cung cấp cho bạn góc độ. Dấu hiệu nghịch đảo được viết là tội đốt phá hoặc tội lỗi lũy thừa -1. Cosin nghịch đảo là cung đi. Tiếp tuyến nghịch đảo là cung tan. Mọi máy tính đều có những nút này. Đây là một ví dụ cụ thể. Bạn đang xây dựng một đoạn đường nối. Đoạn đường nối cần cao 1,5 m trên khoảng cách nằm ngang là 4 m. Bạn cần biết góc của đoạn đường nối. Sự gia tăng là phía đối diện. Khoảng cách ngang là cạnh liền kề. Vì vậy, bạn chia 1,5 cho 4 và bạn nhận được 0,375. Bây giờ bạn hỏi, góc nào có tiếp tuyến bằng 0,375? Bạn gõ cung tan của 0,375 vào máy tính. Câu trả lời là khoảng 20,6°. Đó là góc của đoạn đường nối của bạn. Ừm mấu chốt là cái này. Các hàm nghịch đảo chạy quá trình ngược lại. Nếu bạn biết các cạnh, bạn luôn có thể tìm được góc. Bạn không bao giờ thiếu thông tin mà bạn không thể phục hồi. Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó khi bạn kết hợp tất cả lại với nhau. Giả sử GPS của điện thoại cần tính toán khoảng cách đường thẳng. Bạn đi bộ 300 m về phía đông và 400 m về phía bắc. Bạn không đi theo đường thẳng nhưng điện thoại của bạn có thể tính toán khoảng cách thẳng từ đầu đến cuối. Đầu tiên, nó sử dụng hai khoảng cách để tìm cạnh huyền của một tam giác vuông. Sau đó, nó sử dụng cung tan 400/300 để tìm góc đường đi của bạn. Tất cả điều đó xảy ra ngay lập tức bằng cách sử dụng cùng ba tỷ lệ mà bạn đã hiểu. Bây giờ, đây là cách các khái niệm kết nối. Hãy bắt đầu với những gì bạn vừa học được. S, cosin và tiếp tuyến là ba tỷ lệ. Họ đến từ cùng một tam giác. Uh chúng không phải là những ý tưởng riêng biệt. Đó là ba câu hỏi khác nhau về một hình dạng. Đây là một cái gì đó đáng chú ý. Với mọi góc, sin^squ cộng cosin bình phương luôn bằng 1. Bạn không cần phải ghi nhớ lý do tại sao. Ừm, chỉ cần lưu ý rằng um s và cosin luôn được kết nối. Khi cái này lớn thì cái kia nhỏ. Chúng được liên kết. Đây là một cái gì đó khác đáng chú ý. tiếp tuyến của một góc bất kỳ bằng s / cosine. Nếu bạn đã biết s và cosin của một góc thì bạn sẽ tự động biết tiếp tuyến. Các chức năng này không độc lập. Chúng được xây dựng từ các tỷ lệ cơ bản giống nhau. Sáu chức năng cùng nhau tạo thành một hệ thống hoàn chỉnh. S, cosin và tang cho phép bạn di chuyển từ góc sang cạnh. Arxson, arcros và arc tan cho phép bạn di chuyển từ các cạnh sang các góc. Với sáu công cụ đó và một hình tam giác vuông, không có thông tin nào nằm ngoài tầm với. Đây là điều mà hầu hết mọi người đều hiểu sai. Sai lầm đầu tiên là gây nhầm lẫn đối diện và liền kề. Hãy nhớ rằng, những cái tên này không phải là vị trí cố định trên hình tam giác. Chúng phụ thuộc vào góc độ bạn đang làm việc. Cùng một cạnh có thể đối diện với một góc và kề với một góc khác trong cùng một tam giác. Trước khi viết bất cứ điều gì, hãy xác định góc độ bạn đang sử dụng. Sau đó dán nhãn các cạnh từ góc nhìn của góc đó. Sai lầm thứ hai là tìm dấu khi tiếp tuyến là lựa chọn đúng. Cini luôn liên quan đến cạnh huyền. Nếu cạnh huyền không phải là một phần của vấn đề thì cảnh không có chức năng phù hợp. Nếu bạn có chiều cao và khoảng cách cơ sở và không có cạnh huyền, hãy sử dụng tiếp tuyến. Sai lầm thứ ba là sử dụng dấu cơ bản, cosin và tiếp tuyến trên các tam giác không có góc 90deree. Ba chức năng này chỉ hoạt động trên các tam giác vuông. Nếu tam giác của bạn không có góc vuông thì sẽ áp dụng một bộ quy tắc khác. Những quy tắc đó tồn tại và có hiệu quả, nhưng chúng không phải là những gì bạn đã học hôm nay. Biết ranh giới. Sai lầm thứ tư là ghi nhớ koa mà không hiểu tỷ lệ. Các chữ cái chỉ hữu ích nếu bạn biết cạnh đối, cạnh huyền và cạnh huyền có ý nghĩa gì trong tam giác cụ thể của bạn. Nếu bạn bỏ qua bước đó, các chữ cái sẽ trở thành những âm thanh vô dụng. Luôn dán nhãn cho hình tam giác trước, sau đó sử dụng nó để xác nhận. Sai lầm thứ năm là quên rằng hàm nghịch đảo tồn tại. Học sinh học cách đi từ góc này sang bên khác. Sau đó, họ gặp khó khăn khi vấn đề đưa ra cho họ một bên và yêu cầu một góc nhìn. Các hàm nghịch đảo tồn tại chính xác cho tình huống đó. Nếu bạn biết tỉ lệ, bạn luôn có thể tìm được góc. Quá trình này chạy cả hai cách. Bây giờ, đây là nơi bạn thực sự sử dụng điều này. Các công nhân xây dựng sử dụng lượng giác để tính chiều dài dầm mái. Góc của mái nhà đã được biết. Chiều rộng của ngôi nhà được biết đến. S hoặc cosine cho độ dài chùm tia chính xác mà không cần đo trực tiếp chùm tia. Người khảo sát sử dụng tiếp tuyến để đo chiều cao của các công trình như đứng ở một khoảng cách đã biết, đo góc tới đỉnh, nhân lên. Chiều cao xuất hiện mà không cần leo lên bất cứ thứ gì. Các nhà phát triển trò chơi sử dụng dấu và cosin liên tục. Khi một nhân vật hoặc vật thể di chuyển theo một góc trong trò chơi, mã sẽ sử dụng hai hàm này để chia chuyển động chéo đó thành phần ngang và phần dọc. Mọi chuyển động mượt mà bạn nhìn thấy trên màn hình đều liên quan đến các tỷ lệ này. Điều hướng của điện thoại sử dụng tất cả các chức năng này mỗi khi tính toán lộ trình. Bất kỳ đường dẫn nào không nằm ngang hoặc dọc hoàn toàn đều liên quan đến một tam giác vuông ở đâu đó trong phép tính. Ừm, đây là một cái bạn có thể tự mình thử. Đứng cách tường một khoảng cố định. Mở la bàn điện thoại của bạn hoặc ứng dụng thước đo góc. Đo góc từ mắt bạn đến đỉnh tường. Nhân khoảng cách đó với tiếp tuyến của góc. So sánh câu trả lời của bạn với chiều cao thực tế. Bạn sẽ ở gần. Đó là phép lượng giác hoạt động trong đời thực trong vòng chưa đầy hai phút. Đây là những gì bạn biết bây giờ. S là cạnh đối diện chia cho cạnh huyền. Nó cho bạn biết hình tam giác cao bao nhiêu so với cạnh dài nhất của nó. Cosine là cạnh kề được chia cho cạnh huyền. Nó cho bạn biết độ rộng của một hình tam giác so với cạnh dài nhất của nó. Tiếp tuyến là cạnh đối diện được chia cho cạnh liền kề. Nó cho bạn biết một góc dốc như thế nào. Ừm, vậy Kato là một thẻ tham khảo. Nó kết nối từng chức năng với hai bên mà nó sử dụng. Dán nhãn hình tam giác của bạn. Ừm, hãy chọn chức năng kết nối những gì bạn có với những gì bạn cần. Nhân lên. Các hàm nghịch đảo chạy quá trình ngược lại. Đốt phá, arcros và aran. Lấy một tỷ lệ và trả về góc. Tất cả sáu chức năng tồn tại vì một thực tế. Tỷ lệ giữa hai cạnh của một tam giác vuông không đổi đối với bất kỳ góc nào cho trước, bất kể kích thước của tam giác. Bây giờ bạn đã biết mọi chức năng lượng giác làm gì. Bạn biết mỗi người đo lường điều gì. Bạn biết khi nào nên sử dụng từng cái. Sự hiểu biết đó không biến mất sau một bài kiểm tra. Nó vẫn ở bên bạn vì nó dựa trên chức năng thực sự của nó chứ không phải dựa trên các quy tắc được ghi nhớ.",
+  "segments": [
+    {
+      "text": "You have seen the word trigonometry and felt your brain shut down.",
+      "viText": "Bạn đã nhìn thấy từ lượng giác và cảm thấy não mình như ngừng hoạt động.",
+      "start": 0,
+      "duration": 4.61
+    },
+    {
+      "text": "You have stared at sin, cause, and tan, and wondered what they actually mean.",
+      "viText": "Bạn đã nhìn chằm chằm vào tội lỗi, nguyên nhân và rám nắng và tự hỏi chúng thực sự có ý nghĩa gì.",
+      "start": 4.61,
+      "duration": 5.38
+    },
+    {
+      "text": "You memorized formulas for a test and forgot them the next week.",
+      "viText": "Bạn đã ghi nhớ các công thức làm bài kiểm tra và quên chúng vào tuần sau.",
+      "start": 9.99,
+      "duration": 4.47
+    },
+    {
+      "text": "That happens because nobody explained what these functions are actually doing.",
+      "viText": "Điều đó xảy ra bởi vì không ai giải thích những chức năng này thực sự đang làm gì.",
+      "start": 14.46,
+      "duration": 5.45
+    },
+    {
+      "text": "By the end of this video, you will know exactly what every trig function does, why each one exists, and how to use any of them without brute force memorization.",
+      "viText": "Đến cuối video này, bạn sẽ biết chính xác chức năng của từng hàm lượng giác, lý do tồn tại của mỗi hàm và cách sử dụng bất kỳ hàm nào trong số chúng mà không cần phải ghi nhớ quá mức.",
+      "start": 19.91,
+      "duration": 11.18
+    },
+    {
+      "text": "Start with a triangle.",
+      "viText": "Bắt đầu với một hình tam giác.",
+      "start": 31.09,
+      "duration": 2
+    },
+    {
+      "text": "And not just any triangle, a right triangle.",
+      "viText": "Và không chỉ bất kỳ hình tam giác nào, một hình tam giác vuông.",
+      "start": 33.09,
+      "duration": 3.07
+    },
+    {
+      "text": "A right triangle is a triangle where one of the three corners is exactly 90 degrees.",
+      "viText": "Tam giác vuông là tam giác có một trong ba góc bằng 90 độ.",
+      "start": 36.16,
+      "duration": 5.87
+    },
+    {
+      "text": "That square symbol you see in the corner of diagrams means 90°.",
+      "viText": "Biểu tượng hình vuông mà bạn nhìn thấy ở góc sơ đồ có nghĩa là 90°.",
+      "start": 42.03,
+      "duration": 4.4
+    },
+    {
+      "text": "This type of triangle is the foundation of trigonometry.",
+      "viText": "Loại tam giác này là nền tảng của lượng giác.",
+      "start": 46.43,
+      "duration": 3.91
+    },
+    {
+      "text": "Everything in this video comes from this one shape.",
+      "viText": "Mọi thứ trong video này đều xuất phát từ một hình dạng này.",
+      "start": 50.34,
+      "duration": 3.56
+    },
+    {
+      "text": "Now look at the three sides.",
+      "viText": "Bây giờ hãy nhìn vào ba phía.",
+      "start": 53.9,
+      "duration": 2
+    },
+    {
+      "text": "The longest side is always the one across from the 90° corner.",
+      "viText": "Cạnh dài nhất luôn là cạnh đối diện với góc 90°.",
+      "start": 55.9,
+      "duration": 4.33
+    },
+    {
+      "text": "That side has a name.",
+      "viText": "Bên đó có tên.",
+      "start": 60.23,
+      "duration": 2
+    },
+    {
+      "text": "It is called the hypotenuse.",
+      "viText": "Nó được gọi là cạnh huyền.",
+      "start": 62.23,
+      "duration": 2
+    },
+    {
+      "text": "The other two sides do not have fixed names.",
+      "viText": "Hai bên còn lại không có tên cố định.",
+      "start": 64.23,
+      "duration": 3.07
+    },
+    {
+      "text": "Their names change depending on which angle you are focused on.",
+      "viText": "Tên của chúng thay đổi tùy theo góc độ bạn đang tập trung vào.",
+      "start": 67.3,
+      "duration": 4.4
+    },
+    {
+      "text": "The side directly across from your chosen angle is called the opposite side.",
+      "viText": "Phía đối diện trực tiếp với góc bạn đã chọn được gọi là phía đối diện.",
+      "start": 71.7,
+      "duration": 5.31
+    },
+    {
+      "text": "The side next to your chosen angle is called the adjacent side.",
+      "viText": "Cạnh bên cạnh góc bạn đã chọn được gọi là cạnh kề.",
+      "start": 77.01,
+      "duration": 4.4
+    },
+    {
+      "text": "Opposite means across from.",
+      "viText": "Đối diện có nghĩa là đối diện với.",
+      "start": 81.41,
+      "duration": 2
+    },
+    {
+      "text": "Adjacent means next to.",
+      "viText": "Liền kề có nghĩa là bên cạnh.",
+      "start": 83.41,
+      "duration": 2
+    },
+    {
+      "text": "These three names matter.",
+      "viText": "Ba cái tên này đều quan trọng.",
+      "start": 85.41,
+      "duration": 2
+    },
+    {
+      "text": "Hypotenuse.",
+      "viText": "Cạnh huyền.",
+      "start": 87.41,
+      "duration": 2
+    },
+    {
+      "text": "opposite, adjacent.",
+      "viText": "đối diện, liền kề.",
+      "start": 89.41,
+      "duration": 2
+    },
+    {
+      "text": "Write them down if you need to.",
+      "viText": "Hãy viết chúng ra nếu bạn cần.",
+      "start": 91.41,
+      "duration": 2.17
+    },
+    {
+      "text": "Now, here is the key idea that makes all of trigonometry work.",
+      "viText": "Bây giờ, đây là ý tưởng then chốt giúp cho tất cả các phép đo lượng giác hoạt động được.",
+      "start": 93.58,
+      "duration": 4.33
+    },
+    {
+      "text": "If you draw a right triangle with a 30° angle, and then you draw a much bigger right triangle with the same 30° angle, something stays the same.",
+      "viText": "Nếu bạn vẽ một tam giác vuông có một góc 30°, sau đó bạn vẽ một tam giác vuông lớn hơn nhiều với cùng một góc 30°, thì mọi thứ vẫn giữ nguyên.",
+      "start": 97.91,
+      "duration": 10.06
+    },
+    {
+      "text": "The ratio between two specific sides is always identical.",
+      "viText": "Tỷ lệ giữa hai bên cụ thể luôn giống hệt nhau.",
+      "start": 107.97,
+      "duration": 3.98
+    },
+    {
+      "text": "The triangle can be tiny or enormous.",
+      "viText": "Hình tam giác có thể rất nhỏ hoặc rất lớn.",
+      "start": 111.95,
+      "duration": 2.59
+    },
+    {
+      "text": "Um, as long as the angle is 30°, the ratio between those two sides is the same number every single time.",
+      "viText": "Ừm, miễn là góc bằng 30° thì tỉ số giữa hai cạnh đó luôn bằng nhau.",
+      "start": 114.54,
+      "duration": 7.27
+    },
+    {
+      "text": "That is not a coincidence.",
+      "viText": "Đó không phải là một sự trùng hợp ngẫu nhiên.",
+      "start": 121.81,
+      "duration": 2
+    },
+    {
+      "text": "That is a rule of geometry and it is the entire reason trigonometry exists.",
+      "viText": "Đó là một quy luật của hình học và đó là toàn bộ lý do lượng giác tồn tại.",
+      "start": 123.81,
+      "duration": 5.24
+    },
+    {
+      "text": "Uh trig functions are just a way to name and use those ratios.",
+      "viText": "Uh hàm lượng giác chỉ là một cách để đặt tên và sử dụng các tỷ lệ đó.",
+      "start": 129.05,
+      "duration": 4.33
+    },
+    {
+      "text": "Here is what sign means.",
+      "viText": "Đây là ý nghĩa của dấu hiệu.",
+      "start": 133.38,
+      "duration": 2
+    },
+    {
+      "text": "S is a ratio.",
+      "viText": "S là một tỷ lệ.",
+      "start": 135.38,
+      "duration": 2
+    },
+    {
+      "text": "Specifically, s is the opposite side divided by the hypotenuse.",
+      "viText": "Cụ thể, s là cạnh đối diện chia cho cạnh huyền.",
+      "start": 137.38,
+      "duration": 4.4
+    },
+    {
+      "text": "That is it.",
+      "viText": "Đó là nó.",
+      "start": 141.78,
+      "duration": 2
+    },
+    {
+      "text": "When you write sign of an angle, you are asking one question.",
+      "viText": "Khi bạn viết dấu hiệu của một góc, bạn đang hỏi một câu hỏi.",
+      "start": 143.78,
+      "duration": 4.26
+    },
+    {
+      "text": "How long is the opposite side compared to the hypotenuse?",
+      "viText": "Cạnh đối diện so với cạnh huyền dài bao nhiêu?",
+      "start": 148.04,
+      "duration": 3.98
+    },
+    {
+      "text": "This matters because it lets you calculate a side you cannot directly measure.",
+      "viText": "Điều này quan trọng vì nó cho phép bạn tính toán một cạnh mà bạn không thể đo trực tiếp.",
+      "start": 152.02,
+      "duration": 5.45
+    },
+    {
+      "text": "Say a ladder is leaning against a wall.",
+      "viText": "Giả sử một cái thang đang dựa vào một bức tường.",
+      "start": 157.47,
+      "duration": 2.73
+    },
+    {
+      "text": "The ladder is 5 m long.",
+      "viText": "Thang dài 5m.",
+      "start": 160.2,
+      "duration": 2
+    },
+    {
+      "text": "The angle between the ladder and the ground is 60°.",
+      "viText": "Góc giữa thang và mặt đất là 60°.",
+      "start": 162.2,
+      "duration": 3.56
+    },
+    {
+      "text": "You want to know how high up the wall the ladder reaches.",
+      "viText": "Bạn muốn biết chiều cao của bức tường mà thang đạt được.",
+      "start": 165.76,
+      "duration": 3.98
+    },
+    {
+      "text": "You cannot climb up and measure it, but you can calculate it.",
+      "viText": "Bạn không thể trèo lên và đo nó, nhưng bạn có thể tính toán nó.",
+      "start": 169.74,
+      "duration": 4.26
+    },
+    {
+      "text": "The ladder is the hypotenuse.",
+      "viText": "Cái thang là cạnh huyền.",
+      "start": 174,
+      "duration": 2.03
+    },
+    {
+      "text": "The wall height is the opposite side.",
+      "viText": "Chiều cao của bức tường là phía đối diện.",
+      "start": 176.03,
+      "duration": 2.59
+    },
+    {
+      "text": "Sine of 60° is 0.8.",
+      "viText": "Sin của 60° là 0,8.",
+      "start": 178.62,
+      "duration": 2
+    },
+    {
+      "text": "866.",
+      "viText": "866.",
+      "start": 180.62,
+      "duration": 2
+    },
+    {
+      "text": "You multiply 5 m by 0.866 and you get 4.33 m.",
+      "viText": "Bạn nhân 5 m với 0,866 và được 4,33 m.",
+      "start": 182.62,
+      "duration": 3.14
+    },
+    {
+      "text": "That is the height.",
+      "viText": "Đó là chiều cao.",
+      "start": 185.76,
+      "duration": 2
+    },
+    {
+      "text": "Sign gave you a side you could not see.",
+      "viText": "Sign đã cho bạn một khía cạnh mà bạn không thể nhìn thấy.",
+      "start": 187.76,
+      "duration": 2.73
+    },
+    {
+      "text": "The key point is this.",
+      "viText": "Điểm mấu chốt là điều này.",
+      "start": 190.49,
+      "duration": 2
+    },
+    {
+      "text": "S takes an angle and tells you the ratio of the opposite side to the hypotenuse.",
+      "viText": "S lấy một góc và cho bạn biết tỷ lệ của cạnh đối diện với cạnh huyền.",
+      "start": 192.49,
+      "duration": 5.59
+    },
+    {
+      "text": "Once you know that ratio, you can find any missing length.",
+      "viText": "Khi bạn biết tỷ lệ đó, bạn có thể tìm thấy bất kỳ độ dài còn thiếu nào.",
+      "start": 198.08,
+      "duration": 4.05
+    },
+    {
+      "text": "Here is what cosine means.",
+      "viText": "Đây là ý nghĩa của cosin.",
+      "start": 202.13,
+      "duration": 2
+    },
+    {
+      "text": "Um cosine is also a ratio.",
+      "viText": "Um cosin cũng là một tỷ lệ.",
+      "start": 204.13,
+      "duration": 2
+    },
+    {
+      "text": "Um, cosine is the adjacent side divided by the hypotenuse.",
+      "viText": "Ừm, cosin là cạnh kề được chia cho cạnh huyền.",
+      "start": 206.13,
+      "duration": 4.05
+    },
+    {
+      "text": "When you write cosine of an angle, you're asking a different question.",
+      "viText": "Khi bạn viết cosin của một góc, bạn đang hỏi một câu hỏi khác.",
+      "start": 210.18,
+      "duration": 4.89
+    },
+    {
+      "text": "How long is the side next to the angle compared to the hypotenuse?",
+      "viText": "Cạnh cạnh góc dài bằng bao nhiêu so với cạnh huyền?",
+      "start": 215.07,
+      "duration": 4.61
+    },
+    {
+      "text": "Go back to the same ladder leaning against a wall.",
+      "viText": "Quay trở lại cái thang dựa vào tường.",
+      "start": 219.68,
+      "duration": 3.49
+    },
+    {
+      "text": "The ladder is 5 m.",
+      "viText": "Thang là 5 m.",
+      "start": 223.17,
+      "duration": 2
+    },
+    {
+      "text": "The angle at the ground is 60°.",
+      "viText": "Góc ở mặt đất là 60°.",
+      "start": 225.17,
+      "duration": 2.17
+    },
+    {
+      "text": "This time you want to know how far the base of the ladder is from the wall.",
+      "viText": "Lần này bạn muốn biết chân thang cách tường bao xa.",
+      "start": 227.34,
+      "duration": 5.24
+    },
+    {
+      "text": "The base distance is the adjacent side.",
+      "viText": "Khoảng cách cơ sở là cạnh liền kề.",
+      "start": 232.58,
+      "duration": 2.73
+    },
+    {
+      "text": "Cosine of 60° is 0.5.",
+      "viText": "Cosin của 60° là 0,5.",
+      "start": 235.31,
+      "duration": 2
+    },
+    {
+      "text": "You multiply 5 by 0.5 and you get 2.5 m.",
+      "viText": "Bạn nhân 5 với 0,5 và bạn nhận được 2,5 m.",
+      "start": 237.31,
+      "duration": 2.79
+    },
+    {
+      "text": "The base of the ladder is 2.5 m from the wall.",
+      "viText": "Chân thang cách tường 2,5m.",
+      "start": 240.1,
+      "duration": 3.21
+    },
+    {
+      "text": "Same ladder, same angle.",
+      "viText": "Cùng một cái thang, cùng một góc.",
+      "start": 243.31,
+      "duration": 2
+    },
+    {
+      "text": "Sign gave you the height.",
+      "viText": "Sign đã cho bạn chiều cao.",
+      "start": 245.31,
+      "duration": 2
+    },
+    {
+      "text": "Cosine gave you the base distance.",
+      "viText": "Cosine đã cho bạn khoảng cách cơ sở.",
+      "start": 247.31,
+      "duration": 2.38
+    },
+    {
+      "text": "Two different questions.",
+      "viText": "Hai câu hỏi khác nhau.",
+      "start": 249.69,
+      "duration": 2
+    },
+    {
+      "text": "Two different ratios.",
+      "viText": "Hai tỷ lệ khác nhau.",
+      "start": 251.69,
+      "duration": 2
+    },
+    {
+      "text": "Two different answers.",
+      "viText": "Hai câu trả lời khác nhau.",
+      "start": 253.69,
+      "duration": 2
+    },
+    {
+      "text": "The key point is this.",
+      "viText": "Điểm mấu chốt là điều này.",
+      "start": 255.69,
+      "duration": 2
+    },
+    {
+      "text": "Cosine takes an angle and tells you the ratio of the adjacent side to the hypotenuse.",
+      "viText": "Cosine tính một góc và cho bạn biết tỷ lệ của cạnh kề với cạnh huyền.",
+      "start": 257.69,
+      "duration": 5.94
+    },
+    {
+      "text": "Here is what's actually happening.",
+      "viText": "Đây là những gì đang thực sự xảy ra.",
+      "start": 263.63,
+      "duration": 2.38
+    },
+    {
+      "text": "When you use s and cosine together, these two functions are doing opposite jobs.",
+      "viText": "Khi bạn sử dụng s và cosine cùng nhau, hai hàm này thực hiện công việc trái ngược nhau.",
+      "start": 266.01,
+      "duration": 5.59
+    },
+    {
+      "text": "When an angle gets bigger, the opposite side grows and the adjacent side shrinks, right?",
+      "viText": "Khi một góc lớn hơn thì cạnh đối diện tăng lên và cạnh kề co lại, phải không?",
+      "start": 271.6,
+      "duration": 6.15
+    },
+    {
+      "text": "So s goes up and cosine goes down.",
+      "viText": "Vậy s tăng và cosin giảm.",
+      "start": 277.75,
+      "duration": 2.38
+    },
+    {
+      "text": "And when an angle gets smaller, sign goes down and cosine goes up.",
+      "viText": "Và khi một góc nhỏ hơn, dấu giảm và cosin tăng.",
+      "start": 280.13,
+      "duration": 4.61
+    },
+    {
+      "text": "They move in opposite directions.",
+      "viText": "Họ di chuyển theo hướng ngược nhau.",
+      "start": 284.74,
+      "duration": 2.31
+    },
+    {
+      "text": "That is not a rule you memorized.",
+      "viText": "Đó không phải là quy tắc bạn đã ghi nhớ.",
+      "start": 287.05,
+      "duration": 2.31
+    },
+    {
+      "text": "It follows directly from the shape of the triangle changing.",
+      "viText": "Nó diễn ra trực tiếp từ hình dạng của tam giác thay đổi.",
+      "start": 289.36,
+      "duration": 4.19
+    },
+    {
+      "text": "A steeper angle means more height and less base distance.",
+      "viText": "Góc dốc hơn có nghĩa là chiều cao cao hơn và khoảng cách cơ sở ít hơn.",
+      "start": 293.55,
+      "duration": 3.98
+    },
+    {
+      "text": "Here is what tangent means.",
+      "viText": "Đây là ý nghĩa của tiếp tuyến.",
+      "start": 297.53,
+      "duration": 2
+    },
+    {
+      "text": "Tangent is the third ratio.",
+      "viText": "Tiếp tuyến là tỷ lệ thứ ba.",
+      "start": 299.53,
+      "duration": 2
+    },
+    {
+      "text": "Tangent is the opposite side divided by the adjacent side.",
+      "viText": "Tiếp tuyến là cạnh đối diện được chia cho cạnh liền kề.",
+      "start": 301.53,
+      "duration": 4.05
+    },
+    {
+      "text": "Notice what is missing.",
+      "viText": "Chú ý những gì còn thiếu.",
+      "start": 305.58,
+      "duration": 2
+    },
+    {
+      "text": "The hypotenuse is not involved at all.",
+      "viText": "Cạnh huyền không liên quan gì cả.",
+      "start": 307.58,
+      "duration": 2.66
+    },
+    {
+      "text": "Tangent ignores the hypotenuse completely.",
+      "viText": "Tangent bỏ qua hoàn toàn cạnh huyền.",
+      "start": 310.24,
+      "duration": 2.93
+    },
+    {
+      "text": "When you write tan of an angle, you are asking how does the height compare to the base distance?",
+      "viText": "Khi bạn viết tan của một góc, bạn đang hỏi chiều cao so với khoảng cách cơ sở như thế nào?",
+      "start": 313.17,
+      "duration": 6.71
+    },
+    {
+      "text": "Another way to say it, how steep is this angle?",
+      "viText": "Nói cách khác, góc này dốc bao nhiêu?",
+      "start": 319.88,
+      "duration": 3.28
+    },
+    {
+      "text": "Here is a concrete example.",
+      "viText": "Đây là một ví dụ cụ thể.",
+      "start": 323.16,
+      "duration": 2
+    },
+    {
+      "text": "You are standing 10 m away from a building.",
+      "viText": "Bạn đang đứng cách một tòa nhà 10m.",
+      "start": 325.16,
+      "duration": 3
+    },
+    {
+      "text": "You look up at the top of the building.",
+      "viText": "Bạn nhìn lên đỉnh tòa nhà.",
+      "start": 328.16,
+      "duration": 2.73
+    },
+    {
+      "text": "Your line of sight makes a 40° angle with the ground.",
+      "viText": "Đường ngắm của bạn tạo một góc 40° với mặt đất.",
+      "start": 330.89,
+      "duration": 3.7
+    },
+    {
+      "text": "You want to know how tall the building is.",
+      "viText": "Bạn muốn biết tòa nhà cao bao nhiêu.",
+      "start": 334.59,
+      "duration": 2.93
+    },
+    {
+      "text": "Your distance from the building is the adjacent side.",
+      "viText": "Khoảng cách của bạn với tòa nhà là phía bên cạnh.",
+      "start": 337.52,
+      "duration": 3.7
+    },
+    {
+      "text": "The building height is the opposite side.",
+      "viText": "Chiều cao tòa nhà là phía đối diện.",
+      "start": 341.22,
+      "duration": 2.86
+    },
+    {
+      "text": "Tangent of 40° is 0.839.",
+      "viText": "Tiếp tuyến của 40° là 0,839.",
+      "start": 344.08,
+      "duration": 2
+    },
+    {
+      "text": "Uh you multiply 10 m by 0.839 and you get 8.39 m.",
+      "viText": "Uh bạn nhân 10 m với 0,839 và bạn được 8,39 m.",
+      "start": 346.08,
+      "duration": 3.42
+    },
+    {
+      "text": "That is the height of the building.",
+      "viText": "Đó là chiều cao của tòa nhà.",
+      "start": 349.5,
+      "duration": 2.45
+    },
+    {
+      "text": "You measured it from the street without a ladder or a tape measure.",
+      "viText": "Bạn đo nó từ đường phố mà không cần thang hoặc thước dây.",
+      "start": 351.95,
+      "duration": 4.68
+    },
+    {
+      "text": "The key point is this.",
+      "viText": "Điểm mấu chốt là điều này.",
+      "start": 356.63,
+      "duration": 2
+    },
+    {
+      "text": "Tangent takes an angle and gives you the ratio of the opposite side to the adjacent side.",
+      "viText": "Tiếp tuyến lấy một góc và cho bạn tỷ lệ của cạnh đối diện với cạnh liền kề.",
+      "start": 358.63,
+      "duration": 6.22
+    },
+    {
+      "text": "It is the go-to function whenever you know a horizontal distance and want to find a vertical height.",
+      "viText": "Đây là chức năng được sử dụng bất cứ khi nào bạn biết khoảng cách theo chiều ngang và muốn tìm chiều cao theo chiều dọc.",
+      "start": 364.85,
+      "duration": 6.99
+    },
+    {
+      "text": "This is the important part.",
+      "viText": "Đây là phần quan trọng.",
+      "start": 371.84,
+      "duration": 2
+    },
+    {
+      "text": "You now know three functions s cosine and tangent.",
+      "viText": "Bây giờ bạn đã biết ba hàm cosin và tang.",
+      "start": 373.84,
+      "duration": 3.49
+    },
+    {
+      "text": "Each one is a ratio.",
+      "viText": "Mỗi cái là một tỷ lệ.",
+      "start": 377.33,
+      "duration": 2
+    },
+    {
+      "text": "Each one answers a different question about the same triangle.",
+      "viText": "Mỗi người trả lời một câu hỏi khác nhau về cùng một hình tam giác.",
+      "start": 379.33,
+      "duration": 4.33
+    },
+    {
+      "text": "Here's a simple way to remember which sides go with which function.",
+      "viText": "Đây là một cách đơn giản để nhớ mặt nào phù hợp với chức năng nào.",
+      "start": 383.66,
+      "duration": 4.68
+    },
+    {
+      "text": "S means s equals opposite over hypotenuse.",
+      "viText": "S có nghĩa là s bằng đối diện với cạnh huyền.",
+      "start": 388.34,
+      "duration": 2.93
+    },
+    {
+      "text": "C means coine equals adjacent over hypotenuse.",
+      "viText": "C có nghĩa là đồng xu bằng cạnh huyền.",
+      "start": 391.27,
+      "duration": 3.21
+    },
+    {
+      "text": "Ta means tangent equals opposite over adjacent.",
+      "viText": "Ta có nghĩa là tiếp tuyến bằng đối diện trên liền kề.",
+      "start": 394.48,
+      "duration": 3.28
+    },
+    {
+      "text": "S a ha.",
+      "viText": "À ha.",
+      "start": 397.76,
+      "duration": 2
+    },
+    {
+      "text": "This is not a magic formula.",
+      "viText": "Đây không phải là một công thức kỳ diệu.",
+      "start": 399.76,
+      "duration": 2
+    },
+    {
+      "text": "It is a reference card.",
+      "viText": "Đó là một thẻ tham khảo.",
+      "start": 401.76,
+      "duration": 2
+    },
+    {
+      "text": "It helps you remember which two sides each function uses, nothing more.",
+      "viText": "Nó giúp bạn nhớ mỗi hàm sử dụng hai mặt nào, không hơn thế nữa.",
+      "start": 403.76,
+      "duration": 4.96
+    },
+    {
+      "text": "If you understand what opposite, adjacent, and hypotenuse mean, then s cat 2way just confirms what you already know.",
+      "viText": "Nếu bạn hiểu đối diện, liền kề và cạnh huyền nghĩa là gì thì s cat 2way chỉ xác nhận những gì bạn đã biết.",
+      "start": 408.72,
+      "duration": 8.11
+    },
+    {
+      "text": "Start with the sides you have or need.",
+      "viText": "Bắt đầu với những mặt bạn có hoặc cần.",
+      "start": 416.83,
+      "duration": 2.66
+    },
+    {
+      "text": "Then pick the function that connects them.",
+      "viText": "Sau đó chọn chức năng kết nối chúng.",
+      "start": 419.49,
+      "duration": 2.93
+    },
+    {
+      "text": "Now, here is why this matters to you.",
+      "viText": "Bây giờ, đây là lý do tại sao điều này quan trọng với bạn.",
+      "start": 422.42,
+      "duration": 2.59
+    },
+    {
+      "text": "These three functions cover every possible combination of two sides from a right triangle.",
+      "viText": "Ba hàm này bao hàm mọi sự kết hợp có thể có của hai cạnh trong một tam giác vuông.",
+      "start": 425.01,
+      "duration": 6.29
+    },
+    {
+      "text": "There are only three pairs possible opposite and hypotenuse.",
+      "viText": "Chỉ có ba cặp đối diện và cạnh huyền có thể có.",
+      "start": 431.3,
+      "duration": 4.19
+    },
+    {
+      "text": "Adjacent and hypotenuse.",
+      "viText": "Liền kề và cạnh huyền.",
+      "start": 435.49,
+      "duration": 2
+    },
+    {
+      "text": "Opposite and adjacent.",
+      "viText": "Đối diện và liền kề.",
+      "start": 437.49,
+      "duration": 2
+    },
+    {
+      "text": "S handles the first pair.",
+      "viText": "S xử lý cặp đầu tiên.",
+      "start": 439.49,
+      "duration": 2
+    },
+    {
+      "text": "Coine handles the second.",
+      "viText": "Coine xử lý việc thứ hai.",
+      "start": 441.49,
+      "duration": 2
+    },
+    {
+      "text": "Tangent handles the third.",
+      "viText": "Tangent xử lý thứ ba.",
+      "start": 443.49,
+      "duration": 2
+    },
+    {
+      "text": "So whenever you have a right triangle with one known angle and one known side, you can always find any other side.",
+      "viText": "Vì vậy, bất cứ khi nào bạn có một tam giác vuông với một góc đã biết và một cạnh đã biết, bạn luôn có thể tìm thấy bất kỳ cạnh nào khác.",
+      "start": 445.49,
+      "duration": 7.97
+    },
+    {
+      "text": "Pick the function that connects the side you know with the side you need.",
+      "viText": "Chọn chức năng kết nối bên bạn biết với bên bạn cần.",
+      "start": 453.46,
+      "duration": 5.1
+    },
+    {
+      "text": "Multiply.",
+      "viText": "Nhân lên.",
+      "start": 458.56,
+      "duration": 2
+    },
+    {
+      "text": "Done.",
+      "viText": "Xong.",
+      "start": 460.56,
+      "duration": 2
+    },
+    {
+      "text": "Now look at the inverse functions.",
+      "viText": "Bây giờ hãy xem các hàm nghịch đảo.",
+      "start": 462.56,
+      "duration": 2.38
+    },
+    {
+      "text": "Here's what inverse means in this context.",
+      "viText": "Đây là ý nghĩa của nghịch đảo trong bối cảnh này.",
+      "start": 464.94,
+      "duration": 2.93
+    },
+    {
+      "text": "The three functions you just learned go in one direction.",
+      "viText": "Ba chức năng bạn vừa học đi theo một hướng.",
+      "start": 467.87,
+      "duration": 3.98
+    },
+    {
+      "text": "You give them an angle.",
+      "viText": "Bạn cho họ một góc độ.",
+      "start": 471.85,
+      "duration": 2
+    },
+    {
+      "text": "They give you a ratio.",
+      "viText": "Họ cung cấp cho bạn một tỷ lệ.",
+      "start": 473.85,
+      "duration": 2
+    },
+    {
+      "text": "The inverse functions go the other direction.",
+      "viText": "Các hàm nghịch đảo đi theo hướng khác.",
+      "start": 475.85,
+      "duration": 3.14
+    },
+    {
+      "text": "You give them a ratio.",
+      "viText": "Bạn cung cấp cho họ một tỷ lệ.",
+      "start": 478.99,
+      "duration": 2
+    },
+    {
+      "text": "They give you the angle.",
+      "viText": "Họ cung cấp cho bạn góc độ.",
+      "start": 480.99,
+      "duration": 2
+    },
+    {
+      "text": "Inverse sign is written as arson sin or sin to the power of -1.",
+      "viText": "Dấu hiệu nghịch đảo được viết là tội đốt phá hoặc tội lỗi lũy thừa -1.",
+      "start": 482.99,
+      "duration": 4.4
+    },
+    {
+      "text": "Inverse cosine is arc goes.",
+      "viText": "Cosin nghịch đảo là cung đi.",
+      "start": 487.39,
+      "duration": 2
+    },
+    {
+      "text": "Inverse tangent is arc tan.",
+      "viText": "Tiếp tuyến nghịch đảo là cung tan.",
+      "start": 489.39,
+      "duration": 2
+    },
+    {
+      "text": "Every calculator has these buttons.",
+      "viText": "Mọi máy tính đều có những nút này.",
+      "start": 491.39,
+      "duration": 2.45
+    },
+    {
+      "text": "Here is a concrete example.",
+      "viText": "Đây là một ví dụ cụ thể.",
+      "start": 493.84,
+      "duration": 2
+    },
+    {
+      "text": "You are building a ramp.",
+      "viText": "Bạn đang xây dựng một đoạn đường nối.",
+      "start": 495.84,
+      "duration": 2
+    },
+    {
+      "text": "The ramp needs to rise 1.5 m over a horizontal distance of 4 m.",
+      "viText": "Đoạn đường nối cần cao 1,5 m trên khoảng cách nằm ngang là 4 m.",
+      "start": 497.84,
+      "duration": 4.4
+    },
+    {
+      "text": "You need to know the angle of the ramp.",
+      "viText": "Bạn cần biết góc của đoạn đường nối.",
+      "start": 502.24,
+      "duration": 2.73
+    },
+    {
+      "text": "The rise is the opposite side.",
+      "viText": "Sự gia tăng là phía đối diện.",
+      "start": 504.97,
+      "duration": 2.1
+    },
+    {
+      "text": "The horizontal distance is the adjacent side.",
+      "viText": "Khoảng cách ngang là cạnh liền kề.",
+      "start": 507.07,
+      "duration": 3.14
+    },
+    {
+      "text": "So you divide 1.5 by 4 and you get 0.375.",
+      "viText": "Vì vậy, bạn chia 1,5 cho 4 và bạn nhận được 0,375.",
+      "start": 510.21,
+      "duration": 2.86
+    },
+    {
+      "text": "Now you ask, what angle has a tangent of 0.375?",
+      "viText": "Bây giờ bạn hỏi, góc nào có tiếp tuyến bằng 0,375?",
+      "start": 513.07,
+      "duration": 3.28
+    },
+    {
+      "text": "You type arc tan of 0.375 into a calculator.",
+      "viText": "Bạn gõ cung tan của 0,375 vào máy tính.",
+      "start": 516.35,
+      "duration": 3.07
+    },
+    {
+      "text": "The answer is about 20.6°.",
+      "viText": "Câu trả lời là khoảng 20,6°.",
+      "start": 519.42,
+      "duration": 2
+    },
+    {
+      "text": "That is the angle of your ramp.",
+      "viText": "Đó là góc của đoạn đường nối của bạn.",
+      "start": 521.42,
+      "duration": 2.17
+    },
+    {
+      "text": "Um the key point is this.",
+      "viText": "Ừm mấu chốt là cái này.",
+      "start": 523.59,
+      "duration": 2
+    },
+    {
+      "text": "Inverse functions run the process backwards.",
+      "viText": "Các hàm nghịch đảo chạy quá trình ngược lại.",
+      "start": 525.59,
+      "duration": 3.07
+    },
+    {
+      "text": "If you know the sides, you can always find the angle.",
+      "viText": "Nếu bạn biết các cạnh, bạn luôn có thể tìm được góc.",
+      "start": 528.66,
+      "duration": 3.7
+    },
+    {
+      "text": "You are never missing information you cannot recover.",
+      "viText": "Bạn không bao giờ thiếu thông tin mà bạn không thể phục hồi.",
+      "start": 532.36,
+      "duration": 3.7
+    },
+    {
+      "text": "Let me show you exactly how this works when you put it all together.",
+      "viText": "Hãy để tôi chỉ cho bạn chính xác cách thức hoạt động của nó khi bạn kết hợp tất cả lại với nhau.",
+      "start": 536.06,
+      "duration": 4.75
+    },
+    {
+      "text": "Say a phone GPS needs to calculate a straight line distance.",
+      "viText": "Giả sử GPS của điện thoại cần tính toán khoảng cách đường thẳng.",
+      "start": 540.81,
+      "duration": 4.19
+    },
+    {
+      "text": "You walked 300 m east and 400 m north.",
+      "viText": "Bạn đi bộ 300 m về phía đông và 400 m về phía bắc.",
+      "start": 545,
+      "duration": 2.66
+    },
+    {
+      "text": "You did not walk in a straight line, but your phone can calculate the straight distance from start to finish.",
+      "viText": "Bạn không đi theo đường thẳng nhưng điện thoại của bạn có thể tính toán khoảng cách thẳng từ đầu đến cuối.",
+      "start": 547.66,
+      "duration": 7.62
+    },
+    {
+      "text": "First, it uses the two distances to find the hypotenuse of a right triangle.",
+      "viText": "Đầu tiên, nó sử dụng hai khoảng cách để tìm cạnh huyền của một tam giác vuông.",
+      "start": 555.28,
+      "duration": 5.31
+    },
+    {
+      "text": "Then, it uses arc tan of 400 / 300 to find the angle of your path.",
+      "viText": "Sau đó, nó sử dụng cung tan 400/300 để tìm góc đường đi của bạn.",
+      "start": 560.59,
+      "duration": 4.61
+    },
+    {
+      "text": "All of that happens instantly using the same three ratios you now understand.",
+      "viText": "Tất cả điều đó xảy ra ngay lập tức bằng cách sử dụng cùng ba tỷ lệ mà bạn đã hiểu.",
+      "start": 565.2,
+      "duration": 5.38
+    },
+    {
+      "text": "Now, here's how the concepts connect.",
+      "viText": "Bây giờ, đây là cách các khái niệm kết nối.",
+      "start": 570.58,
+      "duration": 2.59
+    },
+    {
+      "text": "Start with what you have just learned.",
+      "viText": "Hãy bắt đầu với những gì bạn vừa học được.",
+      "start": 573.17,
+      "duration": 2.66
+    },
+    {
+      "text": "S, cosine and tangent are three ratios.",
+      "viText": "S, cosin và tiếp tuyến là ba tỷ lệ.",
+      "start": 575.83,
+      "duration": 2.73
+    },
+    {
+      "text": "They come from the same triangle.",
+      "viText": "Họ đến từ cùng một tam giác.",
+      "start": 578.56,
+      "duration": 2.31
+    },
+    {
+      "text": "Uh they are not separate ideas.",
+      "viText": "Uh chúng không phải là những ý tưởng riêng biệt.",
+      "start": 580.87,
+      "duration": 2.17
+    },
+    {
+      "text": "They are three different questions about one shape.",
+      "viText": "Đó là ba câu hỏi khác nhau về một hình dạng.",
+      "start": 583.04,
+      "duration": 3.56
+    },
+    {
+      "text": "Here is something worth noticing.",
+      "viText": "Đây là một cái gì đó đáng chú ý.",
+      "start": 586.6,
+      "duration": 2.31
+    },
+    {
+      "text": "For any angle, sin^ squ plus cosine squar always equals 1.",
+      "viText": "Với mọi góc, sin^squ cộng cosin bình phương luôn bằng 1.",
+      "start": 588.91,
+      "duration": 4.05
+    },
+    {
+      "text": "You do not need to memorize why.",
+      "viText": "Bạn không cần phải ghi nhớ lý do tại sao.",
+      "start": 592.96,
+      "duration": 2.24
+    },
+    {
+      "text": "Um just notice that um s and cosine are always connected.",
+      "viText": "Ừm, chỉ cần lưu ý rằng um s và cosin luôn được kết nối.",
+      "start": 595.2,
+      "duration": 3.98
+    },
+    {
+      "text": "When one is large, the other is small.",
+      "viText": "Khi cái này lớn thì cái kia nhỏ.",
+      "start": 599.18,
+      "duration": 2.66
+    },
+    {
+      "text": "They are linked.",
+      "viText": "Chúng được liên kết.",
+      "start": 601.84,
+      "duration": 2
+    },
+    {
+      "text": "Here is something else worth noticing.",
+      "viText": "Đây là một cái gì đó khác đáng chú ý.",
+      "start": 603.84,
+      "duration": 2.66
+    },
+    {
+      "text": "tangent of any angle equals s / cosine.",
+      "viText": "tiếp tuyến của một góc bất kỳ bằng s / cosine.",
+      "start": 606.5,
+      "duration": 2.73
+    },
+    {
+      "text": "If you already know s and cosine for an angle, you automatically know tangent.",
+      "viText": "Nếu bạn đã biết s và cosin của một góc thì bạn sẽ tự động biết tiếp tuyến.",
+      "start": 609.23,
+      "duration": 5.45
+    },
+    {
+      "text": "These functions are not independent.",
+      "viText": "Các chức năng này không độc lập.",
+      "start": 614.68,
+      "duration": 2.52
+    },
+    {
+      "text": "They are built from the same underlying ratios.",
+      "viText": "Chúng được xây dựng từ các tỷ lệ cơ bản giống nhau.",
+      "start": 617.2,
+      "duration": 3.28
+    },
+    {
+      "text": "The six functions together form a complete system.",
+      "viText": "Sáu chức năng cùng nhau tạo thành một hệ thống hoàn chỉnh.",
+      "start": 620.48,
+      "duration": 3.49
+    },
+    {
+      "text": "S, cosine and tangent let you move from angles to sides.",
+      "viText": "S, cosin và tang cho phép bạn di chuyển từ góc sang cạnh.",
+      "start": 623.97,
+      "duration": 3.91
+    },
+    {
+      "text": "Arxson, arcros, and arc tan let you move from sides to angles.",
+      "viText": "Arxson, arcros và arc tan cho phép bạn di chuyển từ các cạnh sang các góc.",
+      "start": 627.88,
+      "duration": 4.33
+    },
+    {
+      "text": "With those six tools and one right triangle, no information is ever out of reach.",
+      "viText": "Với sáu công cụ đó và một hình tam giác vuông, không có thông tin nào nằm ngoài tầm với.",
+      "start": 632.21,
+      "duration": 5.66
+    },
+    {
+      "text": "Now, here's what most people get wrong.",
+      "viText": "Đây là điều mà hầu hết mọi người đều hiểu sai.",
+      "start": 637.87,
+      "duration": 2.73
+    },
+    {
+      "text": "The first mistake is confusing opposite and adjacent.",
+      "viText": "Sai lầm đầu tiên là gây nhầm lẫn đối diện và liền kề.",
+      "start": 640.6,
+      "duration": 3.7
+    },
+    {
+      "text": "Remember, these names are not fixed positions on the triangle.",
+      "viText": "Hãy nhớ rằng, những cái tên này không phải là vị trí cố định trên hình tam giác.",
+      "start": 644.3,
+      "duration": 4.33
+    },
+    {
+      "text": "They depend on which angle you are working with.",
+      "viText": "Chúng phụ thuộc vào góc độ bạn đang làm việc.",
+      "start": 648.63,
+      "duration": 3.35
+    },
+    {
+      "text": "The same side can be opposite for one angle and adjacent for another angle in the same triangle.",
+      "viText": "Cùng một cạnh có thể đối diện với một góc và kề với một góc khác trong cùng một tam giác.",
+      "start": 651.98,
+      "duration": 6.71
+    },
+    {
+      "text": "Before you write anything down, identify which angle you are using.",
+      "viText": "Trước khi viết bất cứ điều gì, hãy xác định góc độ bạn đang sử dụng.",
+      "start": 658.69,
+      "duration": 4.68
+    },
+    {
+      "text": "Then label the sides from that angle's perspective.",
+      "viText": "Sau đó dán nhãn các cạnh từ góc nhìn của góc đó.",
+      "start": 663.37,
+      "duration": 3.56
+    },
+    {
+      "text": "The second mistake is reaching for sign when tangent is the right choice.",
+      "viText": "Sai lầm thứ hai là tìm dấu khi tiếp tuyến là lựa chọn đúng.",
+      "start": 666.93,
+      "duration": 5.1
+    },
+    {
+      "text": "Cini always involves the hypotenuse.",
+      "viText": "Cini luôn liên quan đến cạnh huyền.",
+      "start": 672.03,
+      "duration": 2.52
+    },
+    {
+      "text": "If the hypotenuse is not part of the problem, scene is not the right function.",
+      "viText": "Nếu cạnh huyền không phải là một phần của vấn đề thì cảnh không có chức năng phù hợp.",
+      "start": 674.55,
+      "duration": 5.45
+    },
+    {
+      "text": "If you have a height and a base distance and no hypotenuse, use tangent.",
+      "viText": "Nếu bạn có chiều cao và khoảng cách cơ sở và không có cạnh huyền, hãy sử dụng tiếp tuyến.",
+      "start": 680,
+      "duration": 5.03
+    },
+    {
+      "text": "The third mistake is using basic sign, cosine, and tangent on triangles that do not have a 90deree angle.",
+      "viText": "Sai lầm thứ ba là sử dụng dấu cơ bản, cosin và tiếp tuyến trên các tam giác không có góc 90deree.",
+      "start": 685.03,
+      "duration": 7.34
+    },
+    {
+      "text": "These three functions only work on right triangles.",
+      "viText": "Ba chức năng này chỉ hoạt động trên các tam giác vuông.",
+      "start": 692.37,
+      "duration": 3.56
+    },
+    {
+      "text": "Is if your triangle has no right angle, a different set of rules applies.",
+      "viText": "Nếu tam giác của bạn không có góc vuông thì sẽ áp dụng một bộ quy tắc khác.",
+      "start": 695.93,
+      "duration": 5.1
+    },
+    {
+      "text": "Those rules exist and they work, but they are not what you learned today.",
+      "viText": "Những quy tắc đó tồn tại và có hiệu quả, nhưng chúng không phải là những gì bạn đã học hôm nay.",
+      "start": 701.03,
+      "duration": 5.1
+    },
+    {
+      "text": "Know the boundary.",
+      "viText": "Biết ranh giới.",
+      "start": 706.13,
+      "duration": 2
+    },
+    {
+      "text": "The fourth mistake is memorizing s koa without understanding the ratios.",
+      "viText": "Sai lầm thứ tư là ghi nhớ koa mà không hiểu tỷ lệ.",
+      "start": 708.13,
+      "duration": 5.03
+    },
+    {
+      "text": "The letters only help if you know what opposite, adjacent, and hypotenuse mean in your specific triangle.",
+      "viText": "Các chữ cái chỉ hữu ích nếu bạn biết cạnh đối, cạnh huyền và cạnh huyền có ý nghĩa gì trong tam giác cụ thể của bạn.",
+      "start": 713.16,
+      "duration": 7.34
+    },
+    {
+      "text": "If you skip that step, the letters become useless sounds.",
+      "viText": "Nếu bạn bỏ qua bước đó, các chữ cái sẽ trở thành những âm thanh vô dụng.",
+      "start": 720.5,
+      "duration": 3.98
+    },
+    {
+      "text": "Always label the triangle first, then use so as a confirmation.",
+      "viText": "Luôn dán nhãn cho hình tam giác trước, sau đó sử dụng nó để xác nhận.",
+      "start": 724.48,
+      "duration": 4.4
+    },
+    {
+      "text": "The fifth mistake is forgetting that inverse functions exist.",
+      "viText": "Sai lầm thứ năm là quên rằng hàm nghịch đảo tồn tại.",
+      "start": 728.88,
+      "duration": 4.26
+    },
+    {
+      "text": "Students learn to go from angles to sides.",
+      "viText": "Học sinh học cách đi từ góc này sang bên khác.",
+      "start": 733.14,
+      "duration": 2.93
+    },
+    {
+      "text": "Then they get stuck when the problem gives them sides and asks for an angle.",
+      "viText": "Sau đó, họ gặp khó khăn khi vấn đề đưa ra cho họ một bên và yêu cầu một góc nhìn.",
+      "start": 736.07,
+      "duration": 5.31
+    },
+    {
+      "text": "The inverse functions exist precisely for that situation.",
+      "viText": "Các hàm nghịch đảo tồn tại chính xác cho tình huống đó.",
+      "start": 741.38,
+      "duration": 3.98
+    },
+    {
+      "text": "If you know the ratio, you can always find the angle.",
+      "viText": "Nếu bạn biết tỉ lệ, bạn luôn có thể tìm được góc.",
+      "start": 745.36,
+      "duration": 3.7
+    },
+    {
+      "text": "The process runs both ways.",
+      "viText": "Quá trình này chạy cả hai cách.",
+      "start": 749.06,
+      "duration": 2
+    },
+    {
+      "text": "Now, here is where you actually use this.",
+      "viText": "Bây giờ, đây là nơi bạn thực sự sử dụng điều này.",
+      "start": 751.06,
+      "duration": 2.86
+    },
+    {
+      "text": "The construction workers use trigonometry to calculate roof beam lengths.",
+      "viText": "Các công nhân xây dựng sử dụng lượng giác để tính chiều dài dầm mái.",
+      "start": 753.92,
+      "duration": 5.1
+    },
+    {
+      "text": "The angle of a roof is known.",
+      "viText": "Góc của mái nhà đã được biết.",
+      "start": 759.02,
+      "duration": 2.03
+    },
+    {
+      "text": "The width of the house is known.",
+      "viText": "Chiều rộng của ngôi nhà được biết đến.",
+      "start": 761.05,
+      "duration": 2.24
+    },
+    {
+      "text": "S or cosine gives the exact beam length without measuring the beam directly.",
+      "viText": "S hoặc cosine cho độ dài chùm tia chính xác mà không cần đo trực tiếp chùm tia.",
+      "start": 763.29,
+      "duration": 5.31
+    },
+    {
+      "text": "Surveyors use tangent to measure the height of structures like stand at a known distance, measure the angle to the top, multiply.",
+      "viText": "Người khảo sát sử dụng tiếp tuyến để đo chiều cao của các công trình như đứng ở một khoảng cách đã biết, đo góc tới đỉnh, nhân lên.",
+      "start": 768.6,
+      "duration": 9.01
+    },
+    {
+      "text": "The height appears without climbing anything.",
+      "viText": "Chiều cao xuất hiện mà không cần leo lên bất cứ thứ gì.",
+      "start": 777.61,
+      "duration": 3.14
+    },
+    {
+      "text": "Game developers use sign and cosine constantly.",
+      "viText": "Các nhà phát triển trò chơi sử dụng dấu và cosin liên tục.",
+      "start": 780.75,
+      "duration": 3.28
+    },
+    {
+      "text": "When a character or object moves at an angle in a game, the code uses these two functions to split that diagonal movement into a horizontal part and a vertical part.",
+      "viText": "Khi một nhân vật hoặc vật thể di chuyển theo một góc trong trò chơi, mã sẽ sử dụng hai hàm này để chia chuyển động chéo đó thành phần ngang và phần dọc.",
+      "start": 784.03,
+      "duration": 11.53
+    },
+    {
+      "text": "Every smooth movement you see on screen involves these ratios.",
+      "viText": "Mọi chuyển động mượt mà bạn nhìn thấy trên màn hình đều liên quan đến các tỷ lệ này.",
+      "start": 795.56,
+      "duration": 4.33
+    },
+    {
+      "text": "Phone navigation uses all of these functions every time it calculates a route.",
+      "viText": "Điều hướng của điện thoại sử dụng tất cả các chức năng này mỗi khi tính toán lộ trình.",
+      "start": 799.89,
+      "duration": 5.45
+    },
+    {
+      "text": "Any path that is not perfectly horizontal or vertical involves a right triangle somewhere in the calculation.",
+      "viText": "Bất kỳ đường dẫn nào không nằm ngang hoặc dọc hoàn toàn đều liên quan đến một tam giác vuông ở đâu đó trong phép tính.",
+      "start": 805.34,
+      "duration": 7.62
+    },
+    {
+      "text": "Um, here is one you can try yourself.",
+      "viText": "Ừm, đây là một cái bạn có thể tự mình thử.",
+      "start": 812.96,
+      "duration": 2.59
+    },
+    {
+      "text": "Stand a fixed distance from a wall.",
+      "viText": "Đứng cách tường một khoảng cố định.",
+      "start": 815.55,
+      "duration": 2.45
+    },
+    {
+      "text": "Open your phone compass or a protractor app.",
+      "viText": "Mở la bàn điện thoại của bạn hoặc ứng dụng thước đo góc.",
+      "start": 818,
+      "duration": 3.07
+    },
+    {
+      "text": "Measure the angle from your eye to the top of the wall.",
+      "viText": "Đo góc từ mắt bạn đến đỉnh tường.",
+      "start": 821.07,
+      "duration": 3.84
+    },
+    {
+      "text": "Multiply that distance by the tangent of the angle.",
+      "viText": "Nhân khoảng cách đó với tiếp tuyến của góc.",
+      "start": 824.91,
+      "duration": 3.56
+    },
+    {
+      "text": "Compare your answer to the actual height.",
+      "viText": "So sánh câu trả lời của bạn với chiều cao thực tế.",
+      "start": 828.47,
+      "duration": 2.86
+    },
+    {
+      "text": "You will be close.",
+      "viText": "Bạn sẽ ở gần.",
+      "start": 831.33,
+      "duration": 2
+    },
+    {
+      "text": "That is trigonometry working in real life in under two minutes.",
+      "viText": "Đó là phép lượng giác hoạt động trong đời thực trong vòng chưa đầy hai phút.",
+      "start": 833.33,
+      "duration": 4.4
+    },
+    {
+      "text": "Here is what you now know.",
+      "viText": "Đây là những gì bạn biết bây giờ.",
+      "start": 837.73,
+      "duration": 2
+    },
+    {
+      "text": "S is the opposite side divided by the hypotenuse.",
+      "viText": "S là cạnh đối diện chia cho cạnh huyền.",
+      "start": 839.73,
+      "duration": 3.42
+    },
+    {
+      "text": "It tells you how tall a triangle is relative to its longest side.",
+      "viText": "Nó cho bạn biết hình tam giác cao bao nhiêu so với cạnh dài nhất của nó.",
+      "start": 843.15,
+      "duration": 4.54
+    },
+    {
+      "text": "Cosine is the adjacent side divided by the hypotenuse.",
+      "viText": "Cosine là cạnh kề được chia cho cạnh huyền.",
+      "start": 847.69,
+      "duration": 3.77
+    },
+    {
+      "text": "It tells you how wide a triangle is relative to its longest side.",
+      "viText": "Nó cho bạn biết độ rộng của một hình tam giác so với cạnh dài nhất của nó.",
+      "start": 851.46,
+      "duration": 4.54
+    },
+    {
+      "text": "Tangent is the opposite side divided by the adjacent side.",
+      "viText": "Tiếp tuyến là cạnh đối diện được chia cho cạnh liền kề.",
+      "start": 856,
+      "duration": 4.05
+    },
+    {
+      "text": "It tells you how steep an angle is.",
+      "viText": "Nó cho bạn biết một góc dốc như thế nào.",
+      "start": 860.05,
+      "duration": 2.45
+    },
+    {
+      "text": "Um, so Kato is a reference card.",
+      "viText": "Ừm, vậy Kato là một thẻ tham khảo.",
+      "start": 862.5,
+      "duration": 2.24
+    },
+    {
+      "text": "It connects each function to the two sides it uses.",
+      "viText": "Nó kết nối từng chức năng với hai bên mà nó sử dụng.",
+      "start": 864.74,
+      "duration": 3.56
+    },
+    {
+      "text": "Label your triangle.",
+      "viText": "Dán nhãn hình tam giác của bạn.",
+      "start": 868.3,
+      "duration": 2
+    },
+    {
+      "text": "Um, pick the function that connects what you have to what you need.",
+      "viText": "Ừm, hãy chọn chức năng kết nối những gì bạn có với những gì bạn cần.",
+      "start": 870.3,
+      "duration": 4.68
+    },
+    {
+      "text": "Multiply.",
+      "viText": "Nhân lên.",
+      "start": 874.98,
+      "duration": 2
+    },
+    {
+      "text": "The inverse functions run the process backwards.",
+      "viText": "Các hàm nghịch đảo chạy quá trình ngược lại.",
+      "start": 876.98,
+      "duration": 3.35
+    },
+    {
+      "text": "Arson, arcros, and aran.",
+      "viText": "Đốt phá, arcros và aran.",
+      "start": 880.33,
+      "duration": 2
+    },
+    {
+      "text": "Take a ratio and return the angle.",
+      "viText": "Lấy một tỷ lệ và trả về góc.",
+      "start": 882.33,
+      "duration": 2.38
+    },
+    {
+      "text": "All six functions exist because of one fact.",
+      "viText": "Tất cả sáu chức năng tồn tại vì một thực tế.",
+      "start": 884.71,
+      "duration": 3.07
+    },
+    {
+      "text": "The ratio between two sides of a right triangle stays constant for any given angle, no matter the size of the triangle.",
+      "viText": "Tỷ lệ giữa hai cạnh của một tam giác vuông không đổi đối với bất kỳ góc nào cho trước, bất kể kích thước của tam giác.",
+      "start": 887.78,
+      "duration": 8.32
+    },
+    {
+      "text": "You now know what every trig function does.",
+      "viText": "Bây giờ bạn đã biết mọi chức năng lượng giác làm gì.",
+      "start": 896.1,
+      "duration": 3
+    },
+    {
+      "text": "You know what each one measures.",
+      "viText": "Bạn biết mỗi người đo lường điều gì.",
+      "start": 899.1,
+      "duration": 2.24
+    },
+    {
+      "text": "You know when to use each one.",
+      "viText": "Bạn biết khi nào nên sử dụng từng cái.",
+      "start": 901.34,
+      "duration": 2.1
+    },
+    {
+      "text": "That understanding does not disappear after a test.",
+      "viText": "Sự hiểu biết đó không biến mất sau một bài kiểm tra.",
+      "start": 903.44,
+      "duration": 3.56
+    },
+    {
+      "text": "It stays with you because it is based on what the functions actually are, not on memorized rules.",
+      "viText": "Nó vẫn ở bên bạn vì nó dựa trên chức năng thực sự của nó chứ không phải dựa trên các quy tắc được ghi nhớ.",
+      "start": 907,
+      "duration": 6.78
+    }
+  ]
+}

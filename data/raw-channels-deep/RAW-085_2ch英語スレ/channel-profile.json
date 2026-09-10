@@ -1,0 +1,68 @@
+{
+  "id": "RAW-085",
+  "channelId": "UCsxsWd7iftyrKJj_4uxEsgQ",
+  "title": "2ch英語スレ",
+  "handle": "@eigo2ch",
+  "url": "https://www.youtube.com/channel/UCsxsWd7iftyrKJj_4uxEsgQ",
+  "subscribers": 8750,
+  "views": 717701,
+  "videoCount": 14,
+  "country": "JP",
+  "avatar": "https://yt3.ggpht.com/RwiLv7LNKO2JyR8dDJQJZiyd0q1lwutH8t8kws381y1wBaVYxfywXEe6M-jBd7t5qlfnbQUa=s240-c-k-c0x00ffffff-no-rj",
+  "topics": [
+    "Lifestyle (sociology)",
+    "Society"
+  ],
+  "editorialNiche": "Học tiếng Anh",
+  "publishedAt": "2025-08-11T03:48:21.56Z",
+  "longevityAudit": {
+    "channelAgeDays": 393,
+    "activeSpanDays": 372,
+    "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
+    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "growth30d": {
+      "subscribersGained": 1120,
+      "viewsGained": 185453,
+      "videosPublished": 1
+    }
+  },
+  "channelTags": [
+    "オンライン英会話",
+    "ted talks",
+    "toeic",
+    "社会人",
+    "英語学習",
+    "英検1級",
+    "AI英会話",
+    "TOEIC",
+    "英会話",
+    "英語脳",
+    "英語",
+    "ゆっくり解説",
+    "スピーキング",
+    "2ch",
+    "リスニング"
+  ],
+  "extractedAt": "2026-09-09T03:31:09Z",
+  "summaryStats": {
+    "topVideosCollected": 10,
+    "totalViewsInTopVideos": 596274,
+    "maxOutlierScore": 20.12,
+    "maxVPH": 388.33,
+    "transcriptsExtracted": 10
+  },
+  "vitalityAudit": {
+    "evaluatedAt": "2026-09-09",
+    "latestUploadDate": "2026-08-20",
+    "daysSinceLatest": 20,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (20 ngày trước)",
+    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 20 ngày trước).",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 185,453 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "estimatedMonthlyRev": "$234 – $434 / tháng",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+  }
+}

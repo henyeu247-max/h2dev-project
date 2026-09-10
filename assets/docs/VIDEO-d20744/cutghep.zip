@@ -1,0 +1,99 @@
+<!-- OnePanel Security Check | IP: 91.229.132.38 | RID: 01KZVH70E4SV1GX53PJ86MQM4A | Host: vietsubmmo.com | Path: /__oneshield_waf_challenge__ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Security verification in progress — OnePanel Web Application Firewall. You will be redirected automatically.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Just a moment… — OnePanel">
+<meta property="og:description" content="Security verification in progress — OnePanel Web Application Firewall.">
+<title>Just a moment… — OnePanel</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1d1d1f}
+/* Hidden by default — only the spinner is revealed after 5s if PoW is still running */
+.wrap{display:none;align-items:center;justify-content:center;position:fixed;inset:0}
+.wrap.visible{display:flex}
+.ring{width:48px;height:48px;border-radius:50%;border:3px solid #e5e5e5;border-top-color:#0b5577;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <div class="ring"></div>
+</div>
+<script>
+(function(){
+  var nonce = "1786556678.3051e9e2364133db9cccdde2835e6727.878e49b0a918a9ade9388986bc97e93097aa4b4f311479040d71ac002f6b056b";
+  var difficulty = 18;
+  // Redirect is not injected server-side — capture the current URL.
+  var redirect = window.location.pathname + window.location.search || "/";
+
+  // Show UI only if PoW takes longer than 5 seconds
+  var revealTimer = setTimeout(function(){
+    document.getElementById('wrap').classList.add('visible');
+    // Beacon: PoW still running after 5s — log for tracing
+    var probeUrl = '/_obs_challenge_probe'
+                 + '?nonce='   + encodeURIComponent(nonce)
+                 + '&elapsed=5000'
+                 + '&redirect=' + encodeURIComponent(redirect);
+    fetch(probeUrl, { method: 'GET', keepalive: true }).catch(function(){});
+  }, 5000);
+
+  function checkLeadingZeros(view, bits){
+    var full = Math.floor(bits / 8), rem = bits % 8;
+    for(var b = 0; b < full; b++){ if(view.getUint8(b) !== 0) return false; }
+    if(rem > 0 && full < view.byteLength){
+      var mask = (0xFF << (8 - rem)) & 0xFF;
+      if((view.getUint8(full) & mask) !== 0) return false;
+    }
+    return true;
+  }
+
+  async function solve(){
+    var enc = new TextEncoder();
+    var i = 0;
+    while(true){
+      var sol = i.toString(16).padStart(16,'0');
+      var buf = await crypto.subtle.digest('SHA-256', enc.encode(nonce + sol));
+      if(checkLeadingZeros(new DataView(buf), difficulty)) return sol;
+      i++;
+      if(i % 8000 === 0){
+        await new Promise(function(r){ setTimeout(r, 0); });
+      }
+    }
+  }
+
+  solve().then(function(solution){
+    clearTimeout(revealTimer); // solved fast — user never sees the UI
+    var body = 'nonce=' + encodeURIComponent(nonce)
+             + '&solution=' + encodeURIComponent(solution)
+             + '&redirect=' + encodeURIComponent(redirect);
+    fetch('/_osh/challenge',{
+      method:'POST',
+      headers:{'Content-Type':'application/x-www-form-urlencoded','X-Osh-Fetch':'1'},
+      body: body
+    }).then(function(r){
+      if(r.ok || r.status === 302){
+        r.json().then(function(j){
+          window.location.href = j.redirect || redirect;
+        }).catch(function(){ window.location.href = redirect; });
+      } else {
+        setTimeout(function(){ location.reload(); }, 1000);
+      }
+    }).catch(function(){
+      setTimeout(function(){ location.reload(); }, 1500);
+    });
+  });
+})();
+</script>
+<!-- Browser-signal collector. External and same-origin, so `script-src 'self'`
+     admits it with no CSP change and no nonce; a nonce would be per-request bytes, which fights the
+     cache. The submission token is server-minted for this request's zone, client address and time
+     window. Everything between the COLLECT-TAG markers — this comment included — is removed when no
+     token could be minted, because then no collect route exists to fetch. Keep the tag and its
+     placeholder INSIDE the markers; see render_collection_tag in antibot_adapter.rs. -->
+<script src="/_osh/collect.js" data-osh-ct="1.1786556978.33becdfe4f06d48845e6f2cd9f9183514149094e91173187c77372bc334771df" async></script>
+</body>
+</html>

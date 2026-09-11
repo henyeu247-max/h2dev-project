@@ -835,5 +835,45 @@
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
     "source": "noi-bo"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "Đề cương Zoom — Quy trình xây kênh A-Z (11 phần)",
+    "link": "",
+    "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+    "contentNiche": "Hệ thống / Quy trình",
+    "kind": "internal-doc"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "ZOOM 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
+    "link": "",
+    "file": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+    "contentNiche": "Hệ thống / Quy trình",
+    "kind": "internal-doc"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "ZOOM 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+    "link": "",
+    "file": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+    "contentNiche": "Hệ thống / Quy trình",
+    "kind": "internal-doc"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "ZOOM 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
+    "link": "",
+    "file": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+    "contentNiche": "Hệ thống / Quy trình",
+    "kind": "internal-doc"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "ZOOM 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+    "link": "",
+    "file": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+    "contentNiche": "Hệ thống / Quy trình",
+    "kind": "internal-doc"
   }
 ]

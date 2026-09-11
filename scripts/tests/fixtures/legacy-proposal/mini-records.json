@@ -1,0 +1,24 @@
+{
+  "schema": "h2dev.a5.legacy-proposal.fixture.v1",
+  "records": [
+    {
+      "id": "CV:FIXTURE:unknown",
+      "namespace": "CV",
+      "kind": "competitor_transcript_unknown",
+      "status": "NEEDS_REVIEW",
+      "sourceRefs": [
+        {
+          "path": "fixture/top-videos.json",
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "bytes": 10,
+          "role": "source",
+          "exclusive": true
+        }
+      ],
+      "aliases": { "rawId": "RAW-FIXTURE", "videoId": "unknown" },
+      "provenance": { "noFuzzyMatching": true },
+      "conflicts": [],
+      "transcript": { "state": "UNKNOWN", "reason": "hasTranscript:false; no no_speech inference" }
+    }
+  ]
+}

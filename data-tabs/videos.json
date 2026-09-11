@@ -3283,5 +3283,85 @@
     "published_at": "2026-09-06",
     "contentNiche": "Bán Content Ngách Cực Nhỏ",
     "channelResolve": []
+  },
+  {
+    "sku": "ZOOM-01-Nen-tang-moi-truong",
+    "title": "Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
+    "index": 133,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Hệ thống / Quy trình",
+    "size": 212700043,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "",
+    "mp4": "video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm",
+    "image": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.png",
+    "published_at": "2026-09-11",
+    "contentNiche": "Hệ thống / Quy trình",
+    "channelResolve": []
+  },
+  {
+    "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
+    "title": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+    "index": 134,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Hệ thống / Quy trình",
+    "size": 402600409,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "",
+    "mp4": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm",
+    "image": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.png",
+    "published_at": "2026-09-11",
+    "contentNiche": "Hệ thống / Quy trình",
+    "channelResolve": []
+  },
+  {
+    "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
+    "title": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
+    "index": 135,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Hệ thống / Quy trình",
+    "size": 300619595,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "",
+    "mp4": "video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm",
+    "image": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.png",
+    "published_at": "2026-09-11",
+    "contentNiche": "Hệ thống / Quy trình",
+    "channelResolve": []
+  },
+  {
+    "sku": "ZOOM-04-Adsense-khang-loi",
+    "title": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+    "index": 136,
+    "market": [
+      "🇻🇳 Việt"
+    ],
+    "niche": "Hệ thống / Quy trình",
+    "size": 119352148,
+    "free": true,
+    "drm": false,
+    "docs": [],
+    "channels": [],
+    "origin": "",
+    "mp4": "video/ZOOM-04-Adsense-khang-loi/ZOOM-04-Adsense-khang-loi.webm",
+    "image": "assets/thumbs/ZOOM-04-Adsense-khang-loi.png",
+    "published_at": "2026-09-11",
+    "contentNiche": "Hệ thống / Quy trình",
+    "channelResolve": []
   }
 ]

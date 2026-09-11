@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-08-20T16:24:20.718Z",
   "source": "data/catalog_full.json + data/h2dev-raw.json (site gốc h2dev.vn)",
-  "totalLessons": 132,
-  "totalFree": 22,
+  "totalLessons": 136,
+  "totalFree": 26,
   "totalPro": 110,
   "modules": [
     {

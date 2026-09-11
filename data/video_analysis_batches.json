@@ -9,9 +9,9 @@
     "overlap_sec": 10
   },
   "summary": {
-    "videos": 132,
-    "batches": 19,
-    "ready": 132,
+    "videos": 136,
+    "batches": 20,
+    "ready": 136,
     "blocked": 0,
     "pilot_videos": 7
   },
@@ -4337,6 +4337,95 @@
               "start_sec": 290.0,
               "end_sec": 559.067,
               "overlap_with_previous_sec": 10
+            }
+          ],
+          "status": "ready_for_manual_upload"
+        }
+      ]
+    },
+    {
+      "batch": 20,
+      "items": [
+        {
+          "sku": "ZOOM-01-Nen-tang-moi-truong",
+          "title": "Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
+          "path": "video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm",
+          "exists": true,
+          "size_bytes": 212700043,
+          "duration_sec": 3181.934,
+          "video_streams": 1,
+          "audio_streams": 1,
+          "format_name": "matroska,webm",
+          "probe_status": "ok",
+          "segments": [
+            {
+              "segment": 1,
+              "start_sec": 0.0,
+              "end_sec": 3181.934,
+              "overlap_with_previous_sec": 0
+            }
+          ],
+          "status": "ready_for_manual_upload"
+        },
+        {
+          "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
+          "title": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+          "path": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm",
+          "exists": true,
+          "size_bytes": 402600409,
+          "duration_sec": 4893.493,
+          "video_streams": 1,
+          "audio_streams": 1,
+          "format_name": "matroska,webm",
+          "probe_status": "ok",
+          "segments": [
+            {
+              "segment": 1,
+              "start_sec": 0.0,
+              "end_sec": 4893.493,
+              "overlap_with_previous_sec": 0
+            }
+          ],
+          "status": "ready_for_manual_upload"
+        },
+        {
+          "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
+          "title": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
+          "path": "video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm",
+          "exists": true,
+          "size_bytes": 300619595,
+          "duration_sec": 4461.643,
+          "video_streams": 1,
+          "audio_streams": 1,
+          "format_name": "matroska,webm",
+          "probe_status": "ok",
+          "segments": [
+            {
+              "segment": 1,
+              "start_sec": 0.0,
+              "end_sec": 4461.643,
+              "overlap_with_previous_sec": 0
+            }
+          ],
+          "status": "ready_for_manual_upload"
+        },
+        {
+          "sku": "ZOOM-04-Adsense-khang-loi",
+          "title": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+          "path": "video/ZOOM-04-Adsense-khang-loi/ZOOM-04-Adsense-khang-loi.webm",
+          "exists": true,
+          "size_bytes": 119352148,
+          "duration_sec": 2233.501,
+          "video_streams": 1,
+          "audio_streams": 1,
+          "format_name": "matroska,webm",
+          "probe_status": "ok",
+          "segments": [
+            {
+              "segment": 1,
+              "start_sec": 0.0,
+              "end_sec": 2233.501,
+              "overlap_with_previous_sec": 0
             }
           ],
           "status": "ready_for_manual_upload"

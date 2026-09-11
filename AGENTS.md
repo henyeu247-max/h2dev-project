@@ -12,6 +12,7 @@
 | Video acceptance | `data\video_acceptance.json` — trạng thái pilot/QA, không gọi nghiệm thu khi còn blocker |
 | Scripts (validate/audit) | `d:\YTB\H2DEV-Project\scripts\` |
 | Docs + Rule làm việc | `d:\YTB\H2DEV-Project\knowledge-hub\docs\` |
+| **Kiến thức Zoom (quy trình xây kênh A–Z)** | `d:\YTB\H2DEV-Project\docs\NOI-BO\zoom\` |
 | Backup | `d:\YTB\H2DEV-Project\_backup\` |
 | Changelog | `d:\YTB\H2DEV-Project\CHANGELOG.md` |
 
@@ -27,7 +28,8 @@
 3. `knowledge-hub\docs\SOUL.md` (chuẩn sản xuất video: script/cấu trúc/thumbnail/SEO/upload)
 4. `knowledge-hub\docs\HUONG-DAN-MCP-CHUAN.md` (đội agent MCP local qua 9router)
 5. `CHANGELOG.md` (bản gần nhất)
-6. Data cần: `data-tabs\*.json`
+6. `docs\NOI-BO\zoom\README.md` (kiến thức nền tảng — quy trình xây kênh A–Z từ 4 buổi Zoom)
+7. Data cần: `data-tabs\*.json`
 
 ## Data core (đếm chuẩn 05/09/2026 — check N/N bằng script)
 

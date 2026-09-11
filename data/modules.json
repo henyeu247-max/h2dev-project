@@ -2914,6 +2914,108 @@
           "desc": "T&agrave;i khoản ChatGPT v&agrave; CapCutPro em đ&atilde; hết từ cuối th&aacute;ng 12/2025,   hiện tại chỉ c&ograve;n một số tool voice elevenlab, clone minimax v&agrave; dịch..    \n    TOOL V&Agrave;"
         }
       ]
+    },
+    {
+      "id": "M11",
+      "title": "Zoom — Quy trình xây kênh từ A–Z (2026-09)",
+      "desc": "4 buổi Zoom thực chiến: nền tảng môi trường, chiến lược kênh, quy trình tool, AdSense & kháng lỗi.",
+      "count": 4,
+      "countOriginal": 4,
+      "totalDuration": "4:06",
+      "items": [
+        {
+          "sku": "ZOOM-01-Nen-tang-moi-truong",
+          "title": "Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
+          "image": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.png",
+          "mp4": "video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm",
+          "origin": "",
+          "published_at": "2026-09-11",
+          "free": true,
+          "size": 212700043,
+          "channels": [],
+          "docsCount": 1,
+          "seq": "01",
+          "duration": "53:01",
+          "badge": "ZOOM",
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+              "link": ""
+            }
+          ],
+          "desc": "Kiến thức nền tảng — quy trình xây kênh YouTube A–Z"
+        },
+        {
+          "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
+          "title": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+          "image": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.png",
+          "mp4": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm",
+          "origin": "",
+          "published_at": "2026-09-11",
+          "free": true,
+          "size": 402600409,
+          "channels": [],
+          "docsCount": 1,
+          "seq": "02",
+          "duration": "81:33",
+          "badge": "ZOOM",
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+              "link": ""
+            }
+          ],
+          "desc": "Kiến thức nền tảng — quy trình xây kênh YouTube A–Z"
+        },
+        {
+          "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
+          "title": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
+          "image": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.png",
+          "mp4": "video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm",
+          "origin": "",
+          "published_at": "2026-09-11",
+          "free": true,
+          "size": 300619595,
+          "channels": [],
+          "docsCount": 1,
+          "seq": "03",
+          "duration": "74:21",
+          "badge": "ZOOM",
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+              "link": ""
+            }
+          ],
+          "desc": "Kiến thức nền tảng — quy trình xây kênh YouTube A–Z"
+        },
+        {
+          "sku": "ZOOM-04-Adsense-khang-loi",
+          "title": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+          "image": "assets/thumbs/ZOOM-04-Adsense-khang-loi.png",
+          "mp4": "video/ZOOM-04-Adsense-khang-loi/ZOOM-04-Adsense-khang-loi.webm",
+          "origin": "",
+          "published_at": "2026-09-11",
+          "free": true,
+          "size": 119352148,
+          "channels": [],
+          "docsCount": 1,
+          "seq": "04",
+          "duration": "37:13",
+          "badge": "ZOOM",
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+              "link": ""
+            }
+          ],
+          "desc": "Kiến thức nền tảng — quy trình xây kênh YouTube A–Z"
+        }
+      ]
     }
   ]
 }

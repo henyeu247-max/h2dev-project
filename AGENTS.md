@@ -31,13 +31,13 @@
 6. `docs\NOI-BO\zoom\README.md` (kiến thức nền tảng — quy trình xây kênh A–Z từ 4 buổi Zoom)
 7. Data cần: `data-tabs\*.json`
 
-## Data core (đếm chuẩn 05/09/2026 — check N/N bằng script)
+## Data core (đếm chuẩn 11/09/2026 — check N/N bằng script)
 
 | File | Số record |
 |---|---|
-| `videos.json` | **132** (22 free / 110 pro) |
+| `videos.json` | **136** (22 free / 110 pro + 4 Zoom free) |
 | `kenh-mau.json` | **165** (152 live + 13 dead) · `ngay_do` 165/165 |
-| `tai-lieu-full.json` | **98** (prompt 33 · report 20 · tool 17 · list 16 · other 12; cập nhật tài liệu 08/09) |
+| `tai-lieu-full.json` | **103** (prompt 33 · report 20 · tool 17 · list 16 · other 12 · internal-doc 5; cập nhật Zoom 11/09) |
 | `ngach-xanh.json` | **34** ngách — `xanh:true` **11** · `CÓ MẪU TĂNG` 10 · `CHƯA ĐỦ BẰNG CHỨNG` 8 · `THẬN TRỌNG` 3 · `CÓ ĐIỀU KIỆN` 1 · `CÓ ĐK` 1 · + 5 meta kho · 5 ngách đỏ · 13 BXH |
 | `kich-ban.json` | **45** (extract cũ, UI không đọc) |
 | `nguon-reup.json` | **27** |
@@ -45,7 +45,7 @@
 | `dong-bo-ngoai.json` | 13 matched · 19 merged · 5 không gom · 4 pipeline |
 | `raw-kenh-mau.json` | **95** ảnh/record · OCR 95/95 · Vision 31 · verified 2 |
 
-**Tài sản đi kèm:** `docs/` 133 thư mục (132 `VIDEO-*` + `NOI-BO`) · `assets/thumbs/` 132/132 khớp + `placeholder.svg` · `video/` 132 thư mục mp4; kiểm ffprobe hiện tại: 132/132 có luồng hình và 132/132 có luồng audio, không có file 0 byte.
+**Tài sản đi kèm:** `docs/` 137 thư mục (132 `VIDEO-*` + 4 `ZOOM-*` + `NOI-BO`) · `assets/thumbs/` 136/136 khớp + `placeholder.svg` · `video/` 136 thư mục (132 mp4 + 4 webm Zoom); kiểm ffprobe hiện tại: 136/136 có luồng hình và 136/136 có luồng audio, không có file 0 byte.
 
 > ⚠️ `xanh` là field **đa kiểu** (boolean + string). Đếm `xanh:true` phải dùng `is True`, KHÔNG dùng truthy — chuỗi `"CHƯA ĐỦ BẰNG CHỨNG"` cũng truthy → đếm sai thành 34.
 

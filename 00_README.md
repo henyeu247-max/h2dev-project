@@ -2,7 +2,7 @@
 
 > Cập nhật: **2026-09-08**
 
-Web quản lý **toàn bộ** kho học H2DEV (131 video) + tài sản nội bộ đã chuẩn hóa (prompt, báo cáo, pipeline).
+Web quản lý **toàn bộ** kho học H2DEV (136 bài: 132 video + 4 buổi Zoom) + tài sản nội bộ đã chuẩn hóa (prompt, báo cáo, pipeline).
 
 ## Cơ chế vận hành & Đồng bộ
 
@@ -21,7 +21,7 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 
 1. Tổng quan
 2. Lộ trình (iframe `learn.html`)
-3. Video — 132 SKU
+3. Video — 136 SKU
 4. Ngách xanh
 5. Tài liệu — catalog + nội bộ
 6. Nguồn reup
@@ -40,14 +40,15 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 
 ## Data hiện tại
 
-- **132 video** · ~20.6 GB · ffprobe 132/132 có hình+audio · 22 free / 110 pro
-- **98 tài liệu**: prompt 33 · report 20 · tool 17 · list 16 · other 12 (86 có file local; cập nhật 08/09; có file không đồng nghĩa file dùng được)
+- **136 bài học** · ~21.9 GB · ffprobe 136/136 có hình+audio · 26 free / 110 pro
+- **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/`
+- **103 tài liệu**: prompt 33 · report 20 · tool 17 · list 16 · other 12 · internal-doc 5 (cập nhật Zoom 11/09)
 - **165 kênh mẫu** (152 sống · 13 dead 404 đã ẩn) · `ngay_do` 165/165
 - **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
   - Trụ: Phật Nhật · Everyday History EN · Kinh Thánh EN explainer · Wildlife documentary (không rescue)
 - 4 pipeline trong `pipelines/` · Knowledge Hub trong `knowledge-hub/`
-- `docs/` 133 thư mục (132 `VIDEO-*` + `NOI-BO`) · `assets/thumbs/` 132/132 khớp
+- `docs/` 137 thư mục (132 `VIDEO-*` + 4 `ZOOM-*` + `NOI-BO`) · `assets/thumbs/` 136/136 khớp
 - Raw kênh: 95 ảnh gốc + metadata OCR/Vision; bản hiển thị chuẩn nằm ở `assets/raw-kenh/` và `data-tabs/raw-kenh-mau.json`.
-- Phân tích Gemini: `data/video_analysis_schema.json` (schema), `data/video_analysis_batches.json` (19 lô/132 video), `data/video_analysis_manifest.json` (trạng thái 132/132) và `data/video_analysis_public.json` (chỉ bản đã làm sạch).
+- Phân tích Gemini: `data/video_analysis_schema.json` (schema), `data/video_analysis_batches.json` (20 lô/136 video), `data/video_analysis_manifest.json` (trạng thái 136/136) và `data/video_analysis_public.json` (chỉ bản đã làm sạch).
 - Quy trình AI Studio web, chia đoạn tối đa 5 phút chồng 10 giây, mẫu JSON nhập và tiêu chí kiểm chứng: `knowledge-hub/docs/GEMINI-VIDEO-ANALYSIS.md`. Không coi file tồn tại hoặc câu trả lời AI là bằng chứng nội dung đã đúng.
 - Video nghiệm thu được theo dõi riêng tại `data/video_acceptance.json`; pilot Mirror hiện **chưa nghiệm thu** vì script thiếu độ dài và chưa có tài nguyên miễn phí đã xác nhận.

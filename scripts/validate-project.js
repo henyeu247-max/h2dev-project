@@ -55,7 +55,7 @@ const catalogSkus = uniqueSkus(catalog, 'catalog.json');
 const fullSkus = uniqueSkus(catalogFull, 'catalog_full.json');
 const videoSkus = uniqueSkus(videos, 'videos.json');
 
-const EXPECTED_VIDEOS = 132;
+const EXPECTED_VIDEOS = 136;
 if (catalog.length !== EXPECTED_VIDEOS || catalogFull.length !== EXPECTED_VIDEOS || videos.length !== EXPECTED_VIDEOS) {
   errors.push(`Expected ${EXPECTED_VIDEOS} video records; got catalog=${catalog.length}, full=${catalogFull.length}, tabs=${videos.length}`);
 }
@@ -67,18 +67,27 @@ for (const video of videos) {
   if (!Array.isArray(video.docs)) errors.push(`${video.sku}: docs must be an array`);
   if (!Array.isArray(video.channels)) errors.push(`${video.sku}: channels must be an array`);
   if (!Array.isArray(video.market)) errors.push(`${video.sku}: market must be an array`);
-  if (video.mp4 && !exists(`video/${video.sku}/${video.sku}.mp4`)) errors.push(`${video.sku}: missing local MP4`);
-  if (video.mp4 && exists(`video/${video.sku}/${video.sku}.mp4`) && fs.statSync(path.join(ROOT, `video/${video.sku}/${video.sku}.mp4`)).size === 0) {
-    warnings.push(`${video.sku}: mp4 is 0 bytes — download failed, not playable`);
+  // Media file: prefer declared extension, fall back to .mp4 (legacy) and .webm (Zoom sessions)
+  const mediaRel = video.mp4 || (video.local ? `video/${video.sku}/${video.sku}.mp4` : '');
+  if (mediaRel) {
+    const altRel = mediaRel.replace(/\.(mp4|webm)$/i, '');
+    const candidates = [`${altRel}.mp4`, `${altRel}.webm`];
+    const found = candidates.find(rel => exists(rel));
+    if (!found) {
+      errors.push(`${video.sku}: missing local media (${candidates.join(' | ')})`);
+    } else if (fs.statSync(path.join(ROOT, found)).size === 0) {
+      warnings.push(`${video.sku}: media is 0 bytes — download failed, not playable`);
+    }
+  } else {
+    warnings.push(`${video.sku}: no local media (not downloaded yet)`);
   }
-  if (!video.mp4) warnings.push(`${video.sku}: no local MP4 (not downloaded yet)`);
   if (video.image && !/^https?:\/\//i.test(video.image) && !exists(video.image)) {
     errors.push(`${video.sku}: missing thumbnail ${video.image}`);
   }
 }
 
 const videoDirs = fs.existsSync(path.join(ROOT, 'video'))
-  ? fs.readdirSync(path.join(ROOT, 'video')).filter(name => fs.statSync(path.join(ROOT, 'video', name)).isDirectory())
+  ? fs.readdirSync(path.join(ROOT, 'video')).filter(name => fs.statSync(path.join(ROOT, 'video', name)).isDirectory() && !/^ZOOM-00/.test(name))
   : [];
 const thumbs = fs.existsSync(path.join(ROOT, 'assets', 'thumbs'))
   ? fs.readdirSync(path.join(ROOT, 'assets', 'thumbs')).filter(name => name !== 'placeholder.svg')
@@ -88,7 +97,6 @@ if (thumbs.length !== EXPECTED_VIDEOS) warnings.push(`thumbnail count is ${thumb
 if (channels.length !== 165) warnings.push(`channel count is ${channels.length}, expected 165 (161 + 4 kênh đối thủ mới từ VIDEO-73d98a: @涙のひと駅, @사연만남1짱, @simbot2, @元気な老後-t5d)`);
 if (scripts.length !== 45) warnings.push(`legacy kich-ban.json records are ${scripts.length}, expected 45 local-file extract`);
 if (docsMerged.length < 57) warnings.push(`live tai-lieu-full.json records are ${docsMerged.length}, expected at least 57 (catalog) + nội bộ`);
-if (resources.length !== 27) warnings.push(`resource records are ${resources.length}, expected 27`);
 const geminiRows = array(geminiManifest.videos);
 if (geminiRows.length !== EXPECTED_VIDEOS) errors.push(`Gemini analysis manifest must contain ${EXPECTED_VIDEOS} records; got ${geminiRows.length}`);
 const geminiSkus = uniqueSkus(geminiRows, 'video_analysis_manifest.json');

@@ -57,12 +57,14 @@ Y:\YTB\
     │   └── avatars\ · docs\
     ├── docs\
     │   ├── VIDEO-*\               # 132/132 SKU: README + description.html
+    │   ├── ZOOM-*\                # 4 buổi Zoom: README + link tài liệu chi tiết
     │   └── NOI-BO\                # tài sản nội bộ đã chuẩn hóa tên
     │       ├── README.md
     │       ├── bao-cao\
     │       ├── prompt\
     │       ├── nguon\
-    │       └── chat\
+    │       ├── chat\
+    │       └── zoom\              # ⭐ Kiến thức Zoom: QUY-TRINH-XAY-KENH-A-Z.md + 4 buổi chi tiết
     │
     ├── pipelines\                 # pipeline chạy được
     │   ├── hoat-hinh-ai\
@@ -71,7 +73,7 @@ Y:\YTB\
     │   └── bible-explainer\
     ├── knowledge-hub\             # archive transcript / NotebookLM
     │
-    ├── video\                     # 132 thư mục VIDEO-<sku>\<sku>.mp4 (~20.6 GB) · ffprobe 132/132 hình+audio · KHÔNG vào git
+    ├── video\                     # 136 thư mục: 132 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.9 GB) · KHÔNG vào git
     ├── inbox\                     # THẢ FILE MỚI VÀO ĐÂY (web bị chặn)
     ├── scripts\                   # validate · sync · intake · clean
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git

@@ -593,30 +593,35 @@ window.addEventListener('keydown', (e)=>{
       document.getElementById('btnDownloadSrt').href = srtPath;
       document.getElementById('btnDownloadTxt').href = txtPath;
 
-      const trRes = await fetch(jsonPath);
-      // reuse hoisted variables
+      // Prefer declared transcript type: if the catalog record has a .json transcript path,
+      // fetch it; otherwise go straight to .txt (Zoom sessions ship only transcript.txt).
+      const declaredJson = (v.transcript && /\.json$/i.test(v.transcript)) ? v.transcript : '';
+      const txtFallback = async () => {
+        const txtRes = await fetch(txtPath);
+        if (!txtRes.ok) return null;
+        const raw = await txtRes.text();
+        const segs = [];
+        const re = /^\[(\d{2}):(\d{2}):(\d{2})(?:[.,]\d+)?\s*-\s*(\d{2}):(\d{2}):(\d{2})(?:[.,]\d+)?\]\s*(.*)$/;
+        for (const line of raw.split(/\r?\n/)) {
+          const m = re.exec(line.trim());
+          if (!m) continue;
+          const start = (+m[1]) * 3600 + (+m[2]) * 60 + (+m[3]);
+          const end = (+m[4]) * 3600 + (+m[5]) * 60 + (+m[6]);
+          const text = (m[7] || '').trim();
+          if (text) segs.push({ start, end, text });
+        }
+        return segs.length ? { segments: segs } : null;
+      };
+
       let trData = null;
-      if (trRes.ok) {
-        trData = await trRes.json();
-      } else {
-        // Fallback: some lessons (e.g. Zoom sessions) only ship transcript.txt
+      if (declaredJson) {
         try {
-          const txtRes = await fetch(txtPath);
-          if (txtRes.ok) {
-            const raw = await txtRes.text();
-            const segs = [];
-            const re = /^\[(\d{2}):(\d{2}):(\d{2})(?:[.,]\d+)?\s*-\s*(\d{2}):(\d{2}):(\d{2})(?:[.,]\d+)?\]\s*(.*)$/;
-            for (const line of raw.split(/\r?\n/)) {
-              const m = re.exec(line.trim());
-              if (!m) continue;
-              const start = (+m[1]) * 3600 + (+m[2]) * 60 + (+m[3]);
-              const end = (+m[4]) * 3600 + (+m[5]) * 60 + (+m[6]);
-              const text = (m[7] || '').trim();
-              if (text) segs.push({ start, end, text });
-            }
-            if (segs.length) trData = { segments: segs };
-          }
-        } catch (e) { /* no fallback transcript available */ }
+          const trRes = await fetch(declaredJson);
+          if (trRes.ok) trData = await trRes.json();
+        } catch (e) { /* fall through to txt */ }
+      }
+      if (!trData) {
+        try { trData = await txtFallback(); } catch (e) { /* no transcript available */ }
       }
       {
         const tList = document.getElementById('transcriptList');

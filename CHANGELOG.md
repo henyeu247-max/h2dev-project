@@ -1048,3 +1048,25 @@ H2DEV-Project/
 - **Gom script Windows:** Đã dời 11 file `.cmd`, `.ps1`, `.vbs` vào `scripts/windows/`; giữ 3 file wrapper forwarder mỏng tại root (`h2dev-silent.vbs`, `h2dev-watchdog-hidden.vbs`, `H2DEV-OneClick.cmd`) để tương thích hoàn toàn với Task Scheduler Windows (`\H2DEV-Server-AutoStart` và `\H2DEV-Watchdog`).
 - **Di dời file backup & manifest:** Dời `index.html.bak-tabs` vào `_archive/`; dời `manifest_full.csv` vào `data/`.
 - **Chuẩn hóa tên thư mục tránh lỗi Linux:** Đổi tên thư mục `Raw Kênh Mẫu Tìm Kiếm/` thành `raw-kenh-goc/`; cập nhật danh sách `BLOCKED` trong `server.js`.
+
+---
+
+## 2026-09-11: Tích hợp 4 buổi Zoom + Kiến thức nền tảng, sửa player .webm
+
+### Đợt 1 — Tích hợp Zoom (`88c4d30`)
+- **Thêm 4 buổi Zoom** (2026-09) — `video/ZOOM-01…ZOOM-04`: Nền tảng/Môi trường (53:01), Chiến lược kênh (81:33), Quy trình Tool (74:21), AdSense & Kháng lỗi (37:13). Tổng 4h06m · ~987 MB `.webm`.
+- **Tài liệu kiến thức** `docs/NOI-BO/zoom/`: `QUY-TRINH-XAY-KENH-A-Z.md` (đề cương 11 phần) + 4 tài liệu chi tiết + `README.md` mục lục.
+- **README từng buổi** `docs/ZOOM-*/README.md` (4 file) + 4 thumbnail ffmpeg.
+- **Data:** `videos.json`/`catalog.json`/`catalog_full.json`/`video_analysis_manifest.json` 132→**136**; `video_analysis_batches.json` 19→**20 lô**; `tai-lieu-full.json` 98→**103**; `modules.json` thêm module Zoom.
+- **`AGENTS.md` + `TREE.md`:** thêm đường dẫn kiến thức Zoom vào boot order (mục 6) và Map path.
+
+### Đợt 2 — Sửa player `.webm` + đồng bộ số liệu (`1719efe`)
+- **`player.html`:** bỏ hardcode `.mp4`; giờ đọc đường dẫn từ catalog và probe lần lượt `.mp4` → `.webm`. Nút tải hiển thị đúng `WEBM`/`MP4`. Đây là fix cho lỗi "Không đọc được nguồn phát" với 4 video Zoom.
+- **`modules.json`:** module Zoom đặt đúng **`M11`** (trước đó bị bỏ qua vì mã `M10` đã tồn tại — "Module 8 — Công cụ & Tài nguyên hỗ trợ"). Kết quả: **12 module**, không trùng ID, tổng count = 136.
+- **`AGENTS.md` / `TREE.md` / `00_README.md`:** đồng bộ số liệu 132→136 video, 98→103 tài liệu, 19→20 lô, 132/132→136/136 thumbnails.
+
+### Đợt 3 — Hoàn thiện nghiệm thu (`XXXXXXX`)
+- **`AGENTS.md`:** sửa "Gemini video audit … đủ **131** SKU" → **136** SKU.
+- **`learn.html`:** sửa tiêu đề "Lộ trình **11** module" → **12 module**.
+- **`00_README.md`:** cập nhật ngày `2026-09-08` → `2026-09-11`.
+- **Kết quả nghiệm thu:** local + VPS `validate-project.js` PASS (136 videos / 136 thumbnails / 136 video dirs); toàn bộ endpoint HTTPS 200; video stream HTTP 206 (cả `.mp4` và `.webm`).

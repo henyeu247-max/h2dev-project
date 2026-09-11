@@ -37,14 +37,14 @@ Y:\YTB\
     │   ├── catalog.json
     │   └── catalog_full.json
     │   ├── video_analysis_schema.json       # schema nhập kết quả Gemini
-    │   ├── video_analysis_batches.json      # 19 lô · 132 video · không upload
+    │   ├── video_analysis_batches.json      # 20 lô · 136 video · không upload
     │   ├── video_analysis_manifest.json     # trạng thái file/audio/phân tích/đúng nội dung
     │   ├── video_analysis_public.json       # bản đã làm sạch cho UI
     │   └── video_acceptance.json             # trạng thái pilot, QA, blocker — không gọi PASS giả
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
-    │   ├── videos.json            # 132 SKU (22 free / 110 pro)
+    │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165
-    │   ├── tai-lieu-full.json     # 98 card (prompt 33 · report 20 · tool 17 · list 16 · other 12; 08/09)
+    │   ├── tai-lieu-full.json     # 103 card (prompt 33 · report 20 · tool 17 · list 16 · other 12 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
     │   ├── ngach-xanh.json        # 34 ngách (xanh:true 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
     │   ├── chien-luoc.json        # workflow 9 bước · 4 nguyên tắc
@@ -53,7 +53,7 @@ Y:\YTB\
     │   └── raw-kenh-mau.json      # 95 record ảnh raw · OCR 95/95 · Vision 31 · verified 2
     │
     ├── assets\                    # tailwind.css · viddar.css · learn.css · fonts\ (woff2 self-host)
-    │   ├── thumbs\                # 132/132 khớp videos.json + placeholder.svg
+    │   ├── thumbs\                # 136/136 khớp videos.json + placeholder.svg
     │   └── avatars\ · docs\
     ├── docs\
     │   ├── VIDEO-*\               # 132/132 SKU: README + description.html

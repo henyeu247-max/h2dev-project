@@ -420,21 +420,33 @@ window.addEventListener('keydown', (e)=>{
       badge(v.free?'FREE':'PRO', v.free?'badge-green':'badge-red'),
     ].join('');
     const pv=document.getElementById('pv');
-    const local='video/'+sku+'/'+sku+'.mp4';
-    let localBytes=0;
-    try{ const headRes=await fetch(local,{method:'HEAD',cache:'no-store'}); localBytes=headRes.ok?Number(headRes.headers.get('content-length')||0):0; }catch(e){}
-    const localAvailable=(Boolean(v.mp4 && /(^|\/)video\//.test(v.mp4)) || Boolean(v.local)) && localBytes>0;
+    // Media path: prefer the declared path from data (supports .mp4 and .webm),
+    // then fall back to probing video/<sku>/<sku>.mp4 and .webm in order.
+    const declared = (v.mp4 && /(^|\/)video\//.test(v.mp4)) ? v.mp4 : '';
+    const candidates = declared ? [declared] : [`video/${sku}/${sku}.mp4`, `video/${sku}/${sku}.webm`];
+    let local='', localBytes=0;
+    for(const cand of candidates){
+      try{
+        const headRes=await fetch(cand,{method:'HEAD',cache:'no-store'});
+        if(headRes.ok){
+          const len=Number(headRes.headers.get('content-length')||0);
+          if(len>0){ local=cand; localBytes=len; break; }
+        }
+      }catch(e){}
+    }
+    const localAvailable=localBytes>0;
     const playbackSource=localAvailable?local:(v.video_link||'');
+    const isWebm=/\.webm(\?|$)/i.test(local);
     if(playbackSource){
       pv.src=playbackSource;
       pv.onerror=()=>{ metaEl.innerHTML += `<span class="badge badge-red">Không đọc được nguồn phát</span>`; };
     } else {
-      metaEl.innerHTML += `<span class="badge badge-amber">Chưa tải được video (mp4 0 byte)</span>`;
+      metaEl.innerHTML += `<span class="badge badge-amber">Chưa tải được video (file 0 byte)</span>`;
     }
     const srcBox=document.getElementById('psources');
     let h='';
     if(v.origin) h+=`<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer"><span>🌐</span><span>Bài học gốc H2Dev</span></a>`;
-    if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4"><span>⬇</span><span>Tải MP4 Full HD</span></a>`;
+    if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4"><span>⬇</span><span>Tải ${isWebm?'WEBM':'MP4'} Full HD</span></a>`;
     srcBox.innerHTML=h;
     if(v.channels&&v.channels.length){
       document.getElementById('pchannels').classList.remove('hidden');

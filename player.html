@@ -595,8 +595,30 @@ window.addEventListener('keydown', (e)=>{
 
       const trRes = await fetch(jsonPath);
       // reuse hoisted variables
+      let trData = null;
       if (trRes.ok) {
-        const trData = await trRes.json();
+        trData = await trRes.json();
+      } else {
+        // Fallback: some lessons (e.g. Zoom sessions) only ship transcript.txt
+        try {
+          const txtRes = await fetch(txtPath);
+          if (txtRes.ok) {
+            const raw = await txtRes.text();
+            const segs = [];
+            const re = /^\[(\d{2}):(\d{2}):(\d{2})(?:[.,]\d+)?\s*-\s*(\d{2}):(\d{2}):(\d{2})(?:[.,]\d+)?\]\s*(.*)$/;
+            for (const line of raw.split(/\r?\n/)) {
+              const m = re.exec(line.trim());
+              if (!m) continue;
+              const start = (+m[1]) * 3600 + (+m[2]) * 60 + (+m[3]);
+              const end = (+m[4]) * 3600 + (+m[5]) * 60 + (+m[6]);
+              const text = (m[7] || '').trim();
+              if (text) segs.push({ start, end, text });
+            }
+            if (segs.length) trData = { segments: segs };
+          }
+        } catch (e) { /* no fallback transcript available */ }
+      }
+      {
         const tList = document.getElementById('transcriptList');
         if (trData && trData.segments && trData.segments.length) {
           transcriptSegments = trData.segments;
@@ -619,9 +641,6 @@ window.addEventListener('keydown', (e)=>{
           document.getElementById('ptranscript').classList.remove('hidden');
           document.getElementById('transcriptList').innerHTML = '<div class="p-4 text-center text-gray-400 text-xs">Video này chưa có phụ đề lời thoại bóc tách sẵn.</div>';
         }
-      } else {
-        document.getElementById('ptranscript').classList.remove('hidden');
-        document.getElementById('transcriptList').innerHTML = '<div class="p-4 text-center text-gray-400 text-xs">Video này chưa có phụ đề lời thoại bóc tách sẵn.</div>';
       }
     } catch(e) {
       document.getElementById('ptranscript').classList.remove('hidden');

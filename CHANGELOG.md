@@ -1065,8 +1065,11 @@ H2DEV-Project/
 - **`modules.json`:** module Zoom đặt đúng **`M11`** (trước đó bị bỏ qua vì mã `M10` đã tồn tại — "Module 8 — Công cụ & Tài nguyên hỗ trợ"). Kết quả: **12 module**, không trùng ID, tổng count = 136.
 - **`AGENTS.md` / `TREE.md` / `00_README.md`:** đồng bộ số liệu 132→136 video, 98→103 tài liệu, 19→20 lô, 132/132→136/136 thumbnails.
 
-### Đợt 3 — Hoàn thiện nghiệm thu (`XXXXXXX`)
+### Đợt 3 — Hoàn thiện nghiệm thu (`6c006b1`) + fix transcript (`8f320c2`, `2c6f53c`)
 - **`AGENTS.md`:** sửa "Gemini video audit … đủ **131** SKU" → **136** SKU.
 - **`learn.html`:** sửa tiêu đề "Lộ trình **11** module" → **12 module**.
 - **`00_README.md`:** cập nhật ngày `2026-09-08` → `2026-09-11`.
 - **Kết quả nghiệm thu:** local + VPS `validate-project.js` PASS (136 videos / 136 thumbnails / 136 video dirs); toàn bộ endpoint HTTPS 200; video stream HTTP 206 (cả `.mp4` và `.webm`).
+- **`player.html` transcript fallback (`8f320c2`, `2c6f53c`):** ưu tiên transcript theo khai báo catalog, fallback `transcript.txt` (parse `[HH:MM:SS - HH:MM:SS]`) — loại bỏ 404 `transcript.json` với 4 buổi Zoom.
+- **Nghiệm thu browser thật (Puppeteer + Chrome):** 11/11 PASS — index 16 tabs, player mp4 (1280px/600.8s) + webm Zoom (53:01 & 74:21), seek OK, learn "Lộ trình 12 module" render 12 sections, 0 console error.
+- **Script nghiệm thu:** `scripts/deep-ui-acceptance.js` + `scripts/find-404.js`.

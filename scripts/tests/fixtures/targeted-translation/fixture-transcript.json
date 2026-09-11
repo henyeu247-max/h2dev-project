@@ -1,0 +1,29 @@
+{
+  "videoId": "fixture-video",
+  "title": "Fixture title remains unchanged",
+  "language": "en",
+  "targetLanguage": "vi",
+  "segmentCount": 3,
+  "fullText": "The source says one male plant and one female plant to get any fruit. Immutable source text.",
+  "fullTextVi": "Nguồn nói điều này. Cây có cây đực và cây cái riêng biệt, nghĩa là bạn nhất định phải có một cây đực và một cây cái trồng để lấy quả. Văn bản không đổi.",
+  "segments": [
+    {
+      "text": "one male plant and one female",
+      "viText": "Cây có cây đực và cây cái riêng biệt, nghĩa là bạn nhất định phải có một cây đực và một cây cái",
+      "start": 10,
+      "duration": 2
+    },
+    {
+      "text": "plant to get any fruit.",
+      "viText": "trồng để lấy quả.",
+      "start": 12,
+      "duration": 2
+    },
+    {
+      "text": "Immutable source text.",
+      "viText": "Văn bản không đổi.",
+      "start": 14,
+      "duration": 2
+    }
+  ]
+}

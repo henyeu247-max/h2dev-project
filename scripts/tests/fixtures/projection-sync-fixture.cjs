@@ -90,7 +90,7 @@ function makeFixture(options = {}) {
   writeJson(root, 'data/raw-channels-deep/deep-channels-manifest.json', {
     generatedAt: '2026-09-10', totalChannelsProcessed: records.length, channels: manifestChannels,
   });
-  writeJson(root, 'Raw Kênh Mẫu Tìm Kiếm/metadata-full.json', {
+  writeJson(root, 'raw-kenh-goc/metadata-full.json', {
     schema: 'fixture.metadata.v1', updatedAt: '2026-09-10', totalRecords: metadataRecords.length, records: metadataRecords,
   });
   for (const [id, spec] of Object.entries(folders)) {

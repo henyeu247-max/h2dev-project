@@ -1,3 +1,25 @@
+## 2026-09-13 — Chuẩn hoá chuyên sâu 4 video PRO: Bổ sung list kênh, biên soạn 4 SOP thực chiến & đồng bộ toàn diện
+
+- **Khắc phục lỗi thiếu kênh mẫu (`VIDEO-3a38f9`):**
+  - Trích xuất khung hình video thực tế xác minh 2 kênh đối thủ cắn đề xuất thần tốc:
+    1. `@오늘의삶의지혜` (Hàn Quốc — Trí tuệ cuộc sống người già, 5.24K sub, 10 ngày 10 video).
+    2. `@Haythauhieuchuyendoi` (Việt Nam — Thấu Hiểu Chuyện Đời, 892 sub, video nổ 69.000 view sau 3 ngày).
+  - Cập nhật `channels` và `channels_mentioned` cho `VIDEO-3a38f9` trong cả 5 file dữ liệu (`catalog.json`, `catalog_full.json`, `modules.json`, `videos.json`, `video_insights.json`).
+- **Đồng bộ danh sách 8 kênh cho `VIDEO-61ad94`:**
+  - Đồng bộ `channels_mentioned` trong `video_insights.json` đủ 8 kênh đối thủ (`@시어머니와며느리`, `@마음을안아주는이야`, `@新しい私の毎日`, `@부를부르는말씀`, `@시니어살림노트`, `@feelrelaxedtv`, `@JaebeolNunmul16`, `@노을빛사연-l2m`), xoá bỏ tình trạng lệch dữ liệu (trước đó chỉ ghi 1 kênh).
+- **Xác minh kỹ thuật B-roll & kênh cổ Thái-Nhật (`VIDEO-DD983D`):**
+  - Trích xuất frame kiểm chứng kênh `@ธรรมสุข-2275`: Kênh cổ Thái Lan làm nội dung Nhật `スカッと感動物語`, tự quay B-roll thật (bể cá cảnh + bàn tay gõ phím) làm background né quét trùng lặp AI.
+- **Biên soạn 4 bộ tài liệu SOP Cẩm nang thực chiến chuyên sâu (`assets/docs/`):**
+  1. `assets/docs/VIDEO-73d98a/SOP-NGACH-CUC-NHO-DRAMA-CAM-DONG-VA-DUONG-LAO.md`: SOP Khai thác ngách cực nhỏ drama cảm động nhân văn & sức khỏe dưỡng lão (4 kênh mẫu).
+  2. `assets/docs/VIDEO-3a38f9/SOP-NHAN-BAN-NGACH-TRIET-LY-DUONG-SINH-HAN-VIET.md`: SOP Nhân bản kịch bản triết lý dưỡng sinh & tâm sự tuổi già từ Hàn Quốc về Việt Nam (kênh mới 10 ngày cắn đề xuất).
+  3. `assets/docs/VIDEO-61ad94/SOP-BAN-CONTENT-DRAMA-GIA-DINH-NHAT-HAN.md`: SOP Sản xuất video dài (> 1 tiếng) ngách drama gia đình & lời khuyên tuổi già (8 kênh mẫu).
+  4. `assets/docs/VIDEO-DD983D/SOP-KY-THUAT-EDIT-BROLL-THAT-NE-QUET-AI.md`: SOP Kỹ thuật edit B-roll thật & bí quyết né quét bản quyền / trùng lặp AI 2026 (3 kênh mẫu).
+  - Gắn link tài liệu vào trường `docs` của cả 4 video trong `catalog.json`, `catalog_full.json`, `modules.json`, `data-tabs/videos.json`.
+- **Nghiệm thu kiểm định:**
+  - `validate-project.js`: PASS.
+  - `audit_all_136_videos.py`: 136/136 video SẠCH (0 lỗi).
+  - Đồng bộ `assets/docs/` lên VPS, commit & push git, pull VPS và reload PM2 `h2dev-learn`.
+
 ## 2026-09-12 — Chuẩn hoá phụ đề TOÀN BỘ 136 video: sạch ảo giác & nén chữ, đồng bộ dữ liệu
 
 - **Kiểm định N/N toàn kho (không lấy mẫu) — `scripts/audit_all_136_videos.py`:**

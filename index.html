@@ -2,6 +2,7 @@
 <html lang="vi" data-theme="dark" data-density="compact">
 <head>
   <meta charset="UTF-8">
+  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="H2DEV — radar kho video faceless YouTube.">
   <meta name="theme-color" content="#050505">
@@ -241,7 +242,7 @@
     function openTab(id, extra, pushHistory = true) {
       state.tab = id || 'tongquan';
       // Nếu mở tab Video mà không kèm danh sách SKU cụ thể, xóa sạch mọi bộ lọc ẩn
-      // còn sót từ tab trước (ví dụ skuFilter từ Ngách xanh) để không rơi vào 0/131.
+      // còn sót từ tab trước (ví dụ skuFilter từ Ngách xanh) để không rơi vào trạng thái 0/tổng.
       if (state.tab === 'video' && !(extra && extra.skuFilter)) {
         state.skuFilter = '';
         state.nicheFilter = '';
@@ -309,10 +310,32 @@
         const r = await fetch('/api/admin-state', { cache: 'no-store' });
         if (!r.ok) return;
         const s = await r.json();
-        localStorage.setItem('h2dev-watched', JSON.stringify(s.watched || {}));
-        localStorage.setItem('h2dev-fav', JSON.stringify(Array.isArray(s.favorites) ? s.favorites : []));
-        if (s.recent) localStorage.setItem('h2dev-recent', JSON.stringify(s.recent));
-        localStorage.setItem('h2dev-admin', JSON.stringify(s));
+        const curW = loadWatched();
+        const remoteW = (s.watched && typeof s.watched === 'object') ? s.watched : {};
+        const mergedW = Object.assign({}, remoteW);
+        for (const k in curW) {
+          if (!mergedW[k]) {
+            mergedW[k] = curW[k];
+          } else {
+            mergedW[k] = {
+              watched: Boolean(curW[k].watched || mergedW[k].watched),
+              t: Math.max(curW[k].t || 0, mergedW[k].t || 0),
+              d: Math.max(curW[k].d || 0, mergedW[k].d || 0),
+              note: curW[k].note || mergedW[k].note || ''
+            };
+          }
+        }
+        localStorage.setItem('h2dev-watched', JSON.stringify(mergedW));
+
+        const curF = JSON.parse(localStorage.getItem('h2dev-fav') || '[]');
+        const remoteF = Array.isArray(s.favorites) ? s.favorites : [];
+        const favSet = new Set([...remoteF, ...(Array.isArray(curF) ? curF : [])].filter(Boolean));
+        localStorage.setItem('h2dev-fav', JSON.stringify([...favSet]));
+
+        if (s.recent && !localStorage.getItem('h2dev-recent')) {
+          localStorage.setItem('h2dev-recent', JSON.stringify(s.recent));
+        }
+        localStorage.setItem('h2dev-admin', JSON.stringify(Object.assign({}, s, { watched: mergedW, favorites: [...favSet] })));
       } catch (e) {}
     }
     function watchedBadge(sku) {
@@ -355,7 +378,7 @@
       b.onclick = () => {
         state.tab = b.dataset.tab;
         // Xóa bộ lọc ẩn còn sót từ tab trước (ví dụ skuFilter của Ngách xanh),
-        // để không bao giờ rơi vào trạng thái "0/131 và Đang filter" khi mở tab Video.
+        // để không bao giờ rơi vào trạng thái "0/tổng và Đang filter" khi mở tab Video.
         if (state.tab === 'video') {
           state.skuFilter = '';
           state.nicheFilter = '';
@@ -495,10 +518,10 @@
     </button>
   </div>
   <div class="bento-grid mb-6">
-    ${statCard(ICONS.video, 'Video khóa học', videos.length, `${free} bài Free · 109 bài Pro`, 'video')}
+    ${statCard(ICONS.video, 'Video khóa học', videos.length, `${free} bài Free · ${videos.length - free} bài Pro`, 'video')}
     ${statCard(ICONS.doc, 'Kịch bản & Tài liệu', kich.length, `${liveFile} file local · catalog`, 'kichban')}
     ${statCard(ICONS.channel, 'Kênh mẫu', kenh.filter(k=>!k.dead).length, `${kenh.length} kênh · ${kenh.filter(k=>k.dead).length} dead ẩn`, 'kenh')}
-    ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `131/131 video sẵn sàng`, 'video')}
+    ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${videos.length}/${videos.length} video trong catalog`, 'video')}
   </div>
   ${(function () {
           const w = loadWatched();
@@ -1827,7 +1850,11 @@
 
     (async function init() {
       const qp = new URLSearchParams(location.search);
-      if (qp.get('tab')) state.tab = qp.get('tab');
+      const rawPath = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+      const validTabs = ['tongquan', 'lotrinh', 'video', 'ngachxanh', 'kichban', 'nguonreup', 'kenh', 'rawkenh', 'chienluoc'];
+      const tabFromPath = validTabs.find(t => t.toLowerCase() === rawPath);
+      if (tabFromPath) state.tab = tabFromPath;
+      else if (qp.get('tab')) state.tab = qp.get('tab');
       if (qp.get('watch')) state.watchFilter = qp.get('watch');
       if (qp.get('niche')) state.nicheFilter = qp.get('niche');
       if (qp.get('market')) state.marketFilter = qp.get('market');
@@ -1844,7 +1871,9 @@
       }
       window.addEventListener('popstate', (e) => {
         const qp = new URLSearchParams(location.search);
-        state.tab = qp.get('tab') || 'tongquan';
+        const rawPath2 = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+        const tabFromPath2 = validTabs.find(t => t.toLowerCase() === rawPath2);
+        state.tab = tabFromPath2 || qp.get('tab') || 'tongquan';
         state.marketFilter = qp.get('market') || '';
         state.nicheFilter = qp.get('niche') || '';
         renderTabs();

@@ -1,4 +1,30 @@
-## 2026-09-10 — Campaign Wave 1 bounded closeout (documentation overlay)
+## 2026-09-12 — Sửa dứt điểm lỗi xoá tiến độ học tập khi F5 & Bổ sung Badge "Đã xem" trực quan trên Lộ trình (`learn.html`)
+
+- **Bổ sung Badge "Đã xem" trực quan trên thumbnail Lộ trình (`learn.html`):**
+  - Thêm `.watched-badge` (icon tick tròn màu xanh neon `#00ff88` 22px, icon `✓` in đậm trắng, đặt tại góc dưới-trái `bottom: 4px; left: 4px` của `.row-thumb`). Tránh hoàn toàn xung đột không gian với nút yêu thích `.row-fav` (góc trên-trái), số thứ tự `.row-seq` (góc trên-phải), thanh tiến độ `.row-watchbar` (đáy) và chip thời lượng `.row-time` (góc dưới-phải).
+  - Thêm class `.lesson-row.is-watched`: chuyển nền sang tone trầm dịu (`var(--surface)`), đổi màu tiêu đề để người học phân biệt tức thì các bài đã hoàn thành và bài chưa học.
+  - Tự động gắn tag `✓ Đã xem` bên cạnh thẻ chuyên đề (`PRO`, `FREE`, `★ QUAN TRỌNG`).
+  - Đã nghiệm thu Playwright trên cả Desktop 1440x1000 và Mobile 390x844: **18/18 checks ALL PASS** (0 console error, 0 lỗi 404, 0 va chạm bounding box).
+- **Phát hiện & Sửa dứt điểm bug cốt lõi Wipe Data khi hydrate:**
+  - **Nguyên nhân gốc rễ:** Hàm `hydrateAdmin()` trong `assets/h2dev-core.js:82-90`, `index.html:307-316` và `player.html:656-665` thực hiện `localStorage.setItem('h2dev-watched', JSON.stringify(s.watched || {}))` mỗi khi load trang. Trong khi đó, `server.js:202-211` đã chủ động chặn ghi `PUT /api/admin-state` (trả về 405 Method Not Allowed) vì lý do an toàn auth mạng LAN. Dẫn đến `data/admin-state.json` luôn có `"watched": {}`, và mỗi khi F5 hoặc mở trang mới, hàm hydrate lại ghi đè trắng `localStorage`, xóa sạch toàn bộ dấu vết "Đã xem" của người dùng.
+  - **Giải pháp triệt để (Local-First Merge Strategy):** Cập nhật cả 3 hàm hydrate sang cơ chế gộp dữ liệu 2 chiều. Giữ nguyên 100% dữ liệu đã lưu ở `localStorage` của trình duyệt người dùng, đồng thời kết hợp các bản ghi từ remote (nếu có), không bao giờ ghi đè `{}` lên dữ liệu thực.
+  - Đã nghiệm thu độc lập bằng `scripts/proof-watched-wipe.js`: Seed dữ liệu -> Reload -> Đọc lại `localStorage` -> Kết quả **no wipe** ($100\%$ dữ liệu được bảo toàn nguyên vẹn).
+
+## 2026-09-12 — Dời ZOOM-00 sang docs/ + đồng bộ số liệu SSoT + ghi nhật ký Wave 2/3
+
+- **Dời thư mục `video/ZOOM-00-Quy-trinh-xay-kenh/` → `docs/ZOOM-00-Quy-trinh-xay-kenh/`** (chứa `README.txt` 5.1 KB — outline quy trình xây kênh A-Z, KHÔNG có media). Lý do: đây là hồ sơ văn bản, không phải video; đặt trong `docs/` cùng 4 buổi Zoom khác cho nhất quán phân loại. Không mất dữ liệu (filesystem `mv`, giữ nguyên byte; `video/`+`docs/` đều bị `.gitignore` nên không qua git).
+  - Hệ quả: `video/` 137→**136** (khớp `videos.json` 136 record, khớp `EXPECTED_VIDEOS`); `docs/` 137→**138** (132 `VIDEO-*` + 5 `ZOOM-*` + `NOI-BO`).
+  - Backup: `_backup/20260912-move-zoom00/` (AGENTS.md · CHANGELOG.md · validate-project.js · video-ZOOM-00-original/).
+- **Bỏ workaround trong `scripts/validate-project.js:90`**: xóa filter `!/^ZOOM-00/.test(name)` — trước đây validate phải loại trừ thủ công thư mục này để đếm đúng 136; sau khi dời, phép đếm đúng tự nhiên, không cần ngoại lệ.
+- **Đồng bộ `AGENTS.md`**: dòng "Tài sản đi kèm" cập nhật `docs/` 137→138 thư mục (132 `VIDEO-*` + 5 `ZOOM-*` + `NOI-BO`). `videos.json` 136 · `tai-lieu-full.json` 103 đã đúng từ bản đếm 11/09, giữ nguyên.
+- **Ghi nhật ký Wave 2/3** (trước đó CHANGELOG chỉ có Wave 1 overlay):
+  - **Wave 2** (`_audit/20260910-campaign-wave2/`): lane A2/A3.
+  - **Wave 3** (`_audit/20260910-campaign-wave3/`): lane A4+A6. Receipt `WAVE3-VALIDATION-RECEIPT.json` (14803 bytes, SHA-256 `0501201e…b333`) ghi A2 private-boundary **27/27**, A3 registry-store **19/19**, A4 intake-v2 **13/13**, A6 contract tests **21/21**; các validator `validate-project` / `check-ui-full` / `check-broken-refs` / `validate-gemini-analysis` đều exit 0.
+  - **A6 evidence gate** = `NEEDS_REVIEW`: **96 retained / 0 verified fact** (ambiguous 23 · generated_or_unsupported 12 · needs_external_evidence 51 · source_supported 10); `external_fact_verification` + `market_fact_verification` = `NOT_PERFORMED`; release authorization **BLOCKED**.
+- **4 buổi Zoom + 4 video mới** (commit đêm 11→12/09: `88c4d30` add 4 Zoom sessions · `1719efe`/`6c006b1` player `.webm` + 12 modules · `4a9f401` finalize CHANGELOG): `video/ZOOM-01..04-*.webm` (202.8 / 383.9 / 286.7 / 113.8 MB) + `docs/ZOOM-01..04-*/README.md`.
+- **Check-Pass thực tế 12/09**: `validate-project.js` PASS (136/165/45/103/136/136) · `check-broken-refs.js` Broken 0 / All OK · `check-ui-full.js` ALL OK · **ffprobe N/N 137→136 PASS** (đủ luồng hình + tiếng, >0 byte; 1 NO_MEDIA = ZOOM-00 văn bản, nay đã dời khỏi `video/`) · secret scan **0 match** · `.env` không bị git track.
+
+
 
 - Added the latest canonical dispatch/status overlay and [`CAMPAIGN-STATUS.md`](D:/YTB/H2DEV-Project/_audit/20260910-campaign-wave1/CAMPAIGN-STATUS.md), with WAVE1-only scope and explicit structural/content/production separation.
 - Recorded bounded outcomes from actual evidence: A1 `PASS_BOUNDED_A1`; A16-P `APPLIED_AND_VERIFIED` for plan `9bdfcca09b48259670f6`; and A16-C1 `PASS_STANDALONE_GATE_CONTENT_OPEN` with content still open/not UI-wired.

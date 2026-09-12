@@ -1,7 +1,7 @@
 # MEMORY.md — H2DEV-Project (rules bền + shortcuts)
 
 > Chỉ chứa rules + shortcuts bền. Chi tiết workflow → đọc file liên quan khi cần (không nhét dài vào đây).
-> Cập nhật: 21/08/2026.
+> Cập nhật: 12/09/2026.
 
 ## Đường dẫn chuẩn
 
@@ -28,7 +28,12 @@
 - Tin tức/trend thị trường: `trends.get_top_trends` → jina/firecrawl đọc Google News RSS
 - RPM chuẩn: AIR Media (Education $10.22 median), KHÔNG Dynamoi
 
-## Data đã verify (21/08/2026)
+## Current live baseline (12/09/2026)
+
+- 136 learning records (132 video + 4 Zoom) · 103 tài liệu · 165 kênh (152 live · 13 dead) · 34 ngách · 45 kịch bản · 27 nguồn reup.
+- Raw channel: 95 source snapshots, trong đó 83 record canonical và 12 duplicate; UI dùng `data-tabs/raw-kenh-mau.json` (83 record).
+
+## Historical verified snapshot (21/08/2026)
 
 - 129 video · 161 kênh (148 live · 13 dead) · 96 tài liệu · 34 ngách (11 `xanh:true`) · 45 kịch bản · 27 nguồn reup.
 - Ngách vàng đo lại 21/08 (vidIQ): Phật pháp Nhật 仏教の教え overall 76.8 / comp 13.3 · Everyday History EN history of everyday objects 69.7 / 31 · Kinh Thánh EN bible explained 68.9 / 48 · Wildlife documentary (dinosaur wedge 71.1 / 35.3; **cấm rescue**).

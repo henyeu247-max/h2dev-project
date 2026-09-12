@@ -35,11 +35,7 @@ Y:\YTB\
     │
     ├── data\                      # catalog gốc + manifest dẫn xuất — tạo bằng script
     │   ├── catalog.json
-    │   └── catalog_full.json
-    │   ├── video_analysis_schema.json       # schema nhập kết quả Gemini
-    │   ├── video_analysis_batches.json      # 20 lô · 136 video · không upload
-    │   ├── video_analysis_manifest.json     # trạng thái file/audio/phân tích/đúng nội dung
-    │   ├── video_analysis_public.json       # bản đã làm sạch cho UI
+    │   ├── catalog_full.json
     │   └── video_acceptance.json             # trạng thái pilot, QA, blocker — không gọi PASS giả
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)

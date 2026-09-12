@@ -49,6 +49,4 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 - 4 pipeline trong `pipelines/` · Knowledge Hub trong `knowledge-hub/`
 - `docs/` 138 thư mục (132 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 136/136 khớp
 - Raw kênh: 95 source snapshot (12 duplicate) → 83 record canonical; bản hiển thị chuẩn nằm ở `assets/raw-kenh/` và `data-tabs/raw-kenh-mau.json`.
-- Phân tích Gemini: `data/video_analysis_schema.json` (schema), `data/video_analysis_batches.json` (20 lô/136 video), `data/video_analysis_manifest.json` (trạng thái 136/136) và `data/video_analysis_public.json` (chỉ bản đã làm sạch).
-- Quy trình AI Studio web, chia đoạn tối đa 5 phút chồng 10 giây, mẫu JSON nhập và tiêu chí kiểm chứng: `knowledge-hub/docs/GEMINI-VIDEO-ANALYSIS.md`. Không coi file tồn tại hoặc câu trả lời AI là bằng chứng nội dung đã đúng.
 - Khung tiêu chuẩn nghiệm thu video mẫu mở được quản lý tại `data/video_acceptance.json`, sẵn sàng áp dụng linh hoạt cho bất kỳ đề tài nào được chọn thử nghiệm.

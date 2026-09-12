@@ -41,8 +41,9 @@ const check = (name, ok, detail = '') => {
   // 4. Backward compatibility: GET /player.html?sku=VIDEO-ba3904
   const r4 = await page.goto(`${BASE}/player.html?sku=VIDEO-ba3904`, { waitUntil: 'load', timeout: 30000 });
   check('Legacy /player.html?sku=...: HTTP 200', r4.status() === 200);
+  await page.waitForTimeout(2000);
   const ptitleOld = await page.locator('#ptitle').textContent().catch(() => '');
-  check('Legacy /player.html?sku=...: loaded video title', ptitleOld && !/Đang tải/i.test(ptitleOld));
+  check('Legacy /player.html?sku=...: loaded video title', ptitleOld && !/Đang tải/i.test(ptitleOld), `title=${ptitleOld}`);
 
   // 5. Semantic tabs on index.html: /ngachxanh
   const r5 = await page.goto(`${BASE}/ngachxanh`, { waitUntil: 'load', timeout: 30000 });
@@ -83,7 +84,37 @@ const check = (name, ok, detail = '') => {
   const backUrl = page.url();
   check('Back button navigates to /lotrinh', /\/lotrinh/i.test(backUrl), `url=${backUrl}`);
 
-  // 10. Console errors check (loại trừ 405 admin-state do server chủ động disable writes)
+  // 10. Embedded iframe navigation test (the exact user bug reported):
+  // From /, click tab Lộ trình -> URL changes to /lotrinh
+  await page.goto(`${BASE}/`, { waitUntil: 'load', timeout: 30000 });
+  await page.waitForTimeout(1500);
+  const tabLotrinhBtn = page.locator('#tabs [data-tab="lotrinh"]');
+  await tabLotrinhBtn.click();
+  await page.waitForTimeout(1500);
+  const topUrlAfterTab = page.url();
+  check('Clicking Lộ trình tab updates top URL to /lotrinh', /\/lotrinh/i.test(topUrlAfterTab), `url=${topUrlAfterTab}`);
+
+  // Now click a lesson inside the iframe -> top window must navigate to /lotrinh/VIDEO-xxx
+  const iframeEl = page.frameLocator('iframe.learn-frame');
+  const frameLessonBtn = iframeEl.locator('.lesson-watch, .row-thumb, .row-title').first();
+  await frameLessonBtn.click();
+  await page.waitForTimeout(3000);
+  const topUrlAfterWatch = page.url();
+  check('Clicking lesson inside embedded iframe navigates top window to /lotrinh/VIDEO-:sku', /\/lotrinh\/VIDEO-/i.test(topUrlAfterWatch), `url=${topUrlAfterWatch}`);
+
+  // 11. Tab Video navigation test:
+  // From /video, clicking "Xem bài" must navigate to /lotrinh/VIDEO-xxx
+  await page.goto(`${BASE}/video`, { waitUntil: 'load', timeout: 30000 });
+  await page.waitForTimeout(1500);
+  const vidCardLink = page.locator('.interactive-card a[href^="/lotrinh/"]').first();
+  const vidCardHref = await vidCardLink.getAttribute('href');
+  check('Video card in tab Video links to /lotrinh/:sku', /^\/lotrinh\/VIDEO-/i.test(vidCardHref), `href=${vidCardHref}`);
+  await vidCardLink.click();
+  await page.waitForTimeout(2500);
+  const topUrlAfterVidClick = page.url();
+  check('Clicking video card navigates to /lotrinh/VIDEO-:sku', /\/lotrinh\/VIDEO-/i.test(topUrlAfterVidClick), `url=${topUrlAfterVidClick}`);
+
+  // 12. Console errors check (loại trừ 405 admin-state do server chủ động disable writes)
   const noise = errs.filter(e => !/favicon|admin-state|net::ERR|405/i.test(e));
   check('No console errors across all routes', noise.length === 0, noise.join(' | ').slice(0, 200));
 

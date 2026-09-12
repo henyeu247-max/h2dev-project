@@ -49,6 +49,9 @@
         "status": "CÓ",
         "note": "Kênh 3 trong site gốc h2dev.vn: 心に残る話20 (5.02K sub / 62 video, +2.61K sub/30d, cổ 2009)."
       }
+    ],
+    "tags": [
+      "Nhật"
     ]
   },
   {
@@ -80,6 +83,9 @@
         "status": "CÓ",
         "note": "vidIQ found: 자비의 법음 UCS6Ed0dqSbrS3dCB5q-x4Dw · 879 sub / +874 / 3 video / 30d. Còn sống. Chưa thêm kenh-mau (chỉ note)."
       }
+    ],
+    "tags": [
+      "Việt"
     ]
   },
   {
@@ -103,7 +109,11 @@
     "mp4": "video/VIDEO-e24c31/VIDEO-e24c31.mp4",
     "image": "assets/thumbs/VIDEO-e24c31.png",
     "published_at": "2026-08-03",
-    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn",
+    "tags": [
+      "Ngoại",
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-a7bfd0",
@@ -126,7 +136,11 @@
     "mp4": "video/VIDEO-a7bfd0/VIDEO-a7bfd0.mp4",
     "image": "assets/thumbs/VIDEO-a7bfd0.png",
     "published_at": "2026-07-29",
-    "contentNiche": "Lời Chúa & Tâm Linh Ngoại"
+    "contentNiche": "Lời Chúa & Tâm Linh Ngoại",
+    "tags": [
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-4b3c09",
@@ -151,7 +165,10 @@
     "mp4": "video/VIDEO-4b3c09/VIDEO-4b3c09.mp4",
     "image": "assets/thumbs/VIDEO-4b3c09.png",
     "published_at": "2026-07-26",
-    "contentNiche": "Ẩm Thực & Mẹo Vặt Hàn Quốc"
+    "contentNiche": "Ẩm Thực & Mẹo Vặt Hàn Quốc",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-28e1cc",
@@ -187,7 +204,11 @@
     "mp4": "video/VIDEO-28e1cc/VIDEO-28e1cc.mp4",
     "image": "assets/thumbs/VIDEO-28e1cc.png",
     "published_at": "2026-07-22",
-    "contentNiche": "Reup Hoạt Hình Bilibili"
+    "contentNiche": "Reup Hoạt Hình Bilibili",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-d2cd90",
@@ -212,7 +233,10 @@
     "mp4": "video/VIDEO-d2cd90/VIDEO-d2cd90.mp4",
     "image": "assets/thumbs/VIDEO-d2cd90.png",
     "published_at": "2026-07-16",
-    "contentNiche": "Triết Lý & Trẻ Hóa Nhật Bản"
+    "contentNiche": "Triết Lý & Trẻ Hóa Nhật Bản",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-9aff6d",
@@ -235,7 +259,10 @@
     "mp4": "video/VIDEO-9aff6d/VIDEO-9aff6d.mp4",
     "image": "assets/thumbs/VIDEO-9aff6d.png",
     "published_at": "2026-07-12",
-    "contentNiche": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật"
+    "contentNiche": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-e90874",
@@ -265,7 +292,10 @@
     "mp4": "video/VIDEO-e90874/VIDEO-e90874.mp4",
     "image": "assets/thumbs/VIDEO-e90874.png",
     "published_at": "2026-07-06",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-c5837a",
@@ -294,7 +324,12 @@
     "mp4": "video/VIDEO-c5837a/VIDEO-c5837a.mp4",
     "image": "assets/thumbs/VIDEO-c5837a.png",
     "published_at": "2026-07-02",
-    "contentNiche": "Tâm Linh & Triết Lý Saito Hitori"
+    "contentNiche": "Tâm Linh & Triết Lý Saito Hitori",
+    "tags": [
+      "Nhật",
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-348217",
@@ -317,7 +352,11 @@
     "mp4": "video/VIDEO-348217/VIDEO-348217.mp4",
     "image": "assets/thumbs/VIDEO-348217.png",
     "published_at": "2026-06-25",
-    "contentNiche": "Nhân Bản Thị Trường (Hàn - Nhật)"
+    "contentNiche": "Nhân Bản Thị Trường (Hàn - Nhật)",
+    "tags": [
+      "Hàn",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-f74bb1",
@@ -340,7 +379,10 @@
     "mp4": "video/VIDEO-f74bb1/VIDEO-f74bb1.mp4",
     "image": "assets/thumbs/VIDEO-f74bb1.png",
     "published_at": "2026-06-20",
-    "contentNiche": "Sức Khỏe & Rau Củ Dưa Chuột"
+    "contentNiche": "Sức Khỏe & Rau Củ Dưa Chuột",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-1aaf46",
@@ -390,7 +432,10 @@
     "mp4": "video/VIDEO-1aaf46/VIDEO-1aaf46.mp4",
     "image": "assets/thumbs/VIDEO-1aaf46.png",
     "published_at": "2026-06-17",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-21956b",
@@ -420,7 +465,12 @@
     "mp4": "video/VIDEO-21956b/VIDEO-21956b.mp4",
     "image": "assets/thumbs/VIDEO-21956b.png",
     "published_at": "2026-06-15",
-    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn",
+    "tags": [
+      "Hàn",
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-e91589",
@@ -451,7 +501,11 @@
     "mp4": "video/VIDEO-e91589/VIDEO-e91589.mp4",
     "image": "assets/thumbs/VIDEO-e91589.jpg",
     "published_at": "2026-06-14",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-34c92b",
@@ -471,7 +525,11 @@
     "mp4": "video/VIDEO-34c92b/VIDEO-34c92b.mp4",
     "image": "assets/thumbs/VIDEO-34c92b.png",
     "published_at": "2026-06-10",
-    "contentNiche": "Triết Lý & Phật Pháp"
+    "contentNiche": "Triết Lý & Phật Pháp",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-21824a",
@@ -501,7 +559,10 @@
     "mp4": "video/VIDEO-21824a/VIDEO-21824a.mp4",
     "image": "assets/thumbs/VIDEO-21824a.png",
     "published_at": "2026-06-06",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-84a039",
@@ -524,7 +585,11 @@
     "mp4": "video/VIDEO-84a039/VIDEO-84a039.mp4",
     "image": "assets/thumbs/VIDEO-84a039.png",
     "published_at": "2026-06-05",
-    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn",
+    "tags": [
+      "Ngoại",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-817ae6",
@@ -547,7 +612,11 @@
     "mp4": "video/VIDEO-817ae6/VIDEO-817ae6.mp4",
     "image": "assets/thumbs/VIDEO-817ae6.png",
     "published_at": "2026-06-03",
-    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-4425fc",
@@ -566,7 +635,10 @@
     "mp4": "video/VIDEO-4425fc/VIDEO-4425fc.mp4",
     "image": "assets/thumbs/VIDEO-4425fc.png",
     "published_at": "2026-05-30",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-2de9e4",
@@ -589,7 +661,10 @@
     "mp4": "video/VIDEO-2de9e4/VIDEO-2de9e4.mp4",
     "image": "assets/thumbs/VIDEO-2de9e4.png",
     "published_at": "2026-05-28",
-    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-2ba0d1",
@@ -615,7 +690,10 @@
     "mp4": "video/VIDEO-2ba0d1/VIDEO-2ba0d1.mp4",
     "image": "assets/thumbs/VIDEO-2ba0d1.png",
     "published_at": "2026-05-28",
-    "contentNiche": "Triết Lý & Phật Pháp"
+    "contentNiche": "Triết Lý & Phật Pháp",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-5d54d0",
@@ -645,7 +723,10 @@
     "mp4": "video/VIDEO-5d54d0/VIDEO-5d54d0.mp4",
     "image": "assets/thumbs/VIDEO-5d54d0.png",
     "published_at": "2026-05-23",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-2277b3",
@@ -664,7 +745,10 @@
     "mp4": "video/VIDEO-2277b3/VIDEO-2277b3.mp4",
     "image": "assets/thumbs/VIDEO-2277b3.png",
     "published_at": "2026-05-20",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-f77c31",
@@ -694,7 +778,10 @@
     "mp4": "video/VIDEO-f77c31/VIDEO-f77c31.mp4",
     "image": "assets/thumbs/VIDEO-f77c31.jpeg",
     "published_at": "2026-05-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-ca0b1a",
@@ -720,7 +807,11 @@
     "mp4": "video/VIDEO-ca0b1a/VIDEO-ca0b1a.mp4",
     "image": "assets/thumbs/VIDEO-ca0b1a.jpeg",
     "published_at": "2026-05-19",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Mỹ",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-54c8f7",
@@ -745,7 +836,10 @@
     "mp4": "video/VIDEO-54c8f7/VIDEO-54c8f7.mp4",
     "image": "assets/thumbs/VIDEO-54c8f7.png",
     "published_at": "2026-05-18",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-3e943c",
@@ -764,7 +858,10 @@
     "mp4": "video/VIDEO-3e943c/VIDEO-3e943c.mp4",
     "image": "assets/thumbs/VIDEO-3e943c.jpeg",
     "published_at": "2026-05-16",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-469cb5",
@@ -790,7 +887,11 @@
     "mp4": "video/VIDEO-469cb5/VIDEO-469cb5.mp4",
     "image": "assets/thumbs/VIDEO-469cb5.jpeg",
     "published_at": "2026-05-15",
-    "contentNiche": "Lời Chúa & Tâm Linh Ngoại"
+    "contentNiche": "Lời Chúa & Tâm Linh Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-7312df",
@@ -810,7 +911,11 @@
     "mp4": "video/VIDEO-7312df/VIDEO-7312df.mp4",
     "image": "assets/thumbs/VIDEO-7312df.jpeg",
     "published_at": "2026-05-13",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Ngoại",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-2235fb",
@@ -831,7 +936,12 @@
     "mp4": "video/VIDEO-2235fb/VIDEO-2235fb.mp4",
     "image": "assets/thumbs/VIDEO-2235fb.jpeg",
     "published_at": "2026-05-13",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Mỹ",
+      "Thái",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-e9e879",
@@ -850,7 +960,10 @@
     "mp4": "video/VIDEO-e9e879/VIDEO-e9e879.mp4",
     "image": "assets/thumbs/VIDEO-e9e879.jpeg",
     "published_at": "2026-05-11",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-6283a6",
@@ -880,7 +993,10 @@
     "mp4": "video/VIDEO-6283a6/VIDEO-6283a6.mp4",
     "image": "assets/thumbs/VIDEO-6283a6.jpeg",
     "published_at": "2026-05-11",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-46c57e",
@@ -915,7 +1031,10 @@
     "mp4": "video/VIDEO-46c57e/VIDEO-46c57e.mp4",
     "image": "assets/thumbs/VIDEO-46c57e.png",
     "published_at": "2026-05-08",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-b1208e",
@@ -934,7 +1053,10 @@
     "mp4": "video/VIDEO-b1208e/VIDEO-b1208e.mp4",
     "image": "assets/thumbs/VIDEO-b1208e.jpeg",
     "published_at": "2026-05-07",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-1acb10",
@@ -953,7 +1075,10 @@
     "mp4": "video/VIDEO-1acb10/VIDEO-1acb10.mp4",
     "image": "assets/thumbs/VIDEO-1acb10.jpeg",
     "published_at": "2026-05-04",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-a1c98f",
@@ -972,7 +1097,10 @@
     "mp4": "video/VIDEO-a1c98f/VIDEO-a1c98f.mp4",
     "image": "assets/thumbs/VIDEO-a1c98f.jpeg",
     "published_at": "2026-05-02",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-70f1f1",
@@ -995,7 +1123,10 @@
     "mp4": "video/VIDEO-70f1f1/VIDEO-70f1f1.mp4",
     "image": "assets/thumbs/VIDEO-70f1f1.jpeg",
     "published_at": "2026-05-01",
-    "contentNiche": "Triết Lý & Phật Pháp"
+    "contentNiche": "Triết Lý & Phật Pháp",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-33f474",
@@ -1014,7 +1145,10 @@
     "mp4": "video/VIDEO-33f474/VIDEO-33f474.mp4",
     "image": "assets/thumbs/VIDEO-33f474.jpeg",
     "published_at": "2026-04-27",
-    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-28bb9b",
@@ -1034,7 +1168,11 @@
     "mp4": "video/VIDEO-28bb9b/VIDEO-28bb9b.mp4",
     "image": "assets/thumbs/VIDEO-28bb9b.jpeg",
     "published_at": "2026-04-23",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-9f9fbc",
@@ -1053,7 +1191,10 @@
     "mp4": "video/VIDEO-9f9fbc/VIDEO-9f9fbc.mp4",
     "image": "assets/thumbs/VIDEO-9f9fbc.jpeg",
     "published_at": "2026-04-22",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-10f129",
@@ -1075,7 +1216,10 @@
     "mp4": "video/VIDEO-10f129/VIDEO-10f129.mp4",
     "image": "assets/thumbs/VIDEO-10f129.jpeg",
     "published_at": "2026-04-19",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-2553da",
@@ -1100,7 +1244,10 @@
     "mp4": "video/VIDEO-2553da/VIDEO-2553da.mp4",
     "image": "assets/thumbs/VIDEO-2553da.jpeg",
     "published_at": "2026-04-18",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-3fd0d9",
@@ -1128,7 +1275,10 @@
     "mp4": "video/VIDEO-3fd0d9/VIDEO-3fd0d9.mp4",
     "image": "assets/thumbs/VIDEO-3fd0d9.jpeg",
     "published_at": "2026-04-17",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-502960",
@@ -1149,7 +1299,10 @@
     "mp4": "video/VIDEO-502960/VIDEO-502960.mp4",
     "image": "assets/thumbs/VIDEO-502960.jpeg",
     "published_at": "2026-04-16",
-    "contentNiche": "Drama Gia Đình & Xã Hội"
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-9873fb",
@@ -1168,7 +1321,10 @@
     "mp4": "video/VIDEO-9873fb/VIDEO-9873fb.mp4",
     "image": "assets/thumbs/VIDEO-9873fb.jpeg",
     "published_at": "2026-04-15",
-    "contentNiche": "Khám Kênh Thực Chiến"
+    "contentNiche": "Khám Kênh Thực Chiến",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-10ceec",
@@ -1195,7 +1351,10 @@
     "mp4": "video/VIDEO-10ceec/VIDEO-10ceec.mp4",
     "image": "assets/thumbs/VIDEO-10ceec.jpeg",
     "published_at": "2026-04-14",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-e83319",
@@ -1226,6 +1385,9 @@
         "status": "KHÔNG-VERIFY",
         "note": "channel_stats NOT FOUND; channel_search fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
       }
+    ],
+    "tags": [
+      "Nhật"
     ]
   },
   {
@@ -1256,6 +1418,9 @@
         "status": "CÓ",
         "note": "Cùng channel ID, title 투자 전략 · 5.880 sub / −10 sub / 0 video / 30d · last 2026-06-10. Không 404. Chưa thêm kenh-mau."
       }
+    ],
+    "tags": [
+      "Hàn"
     ]
   },
   {
@@ -1281,7 +1446,10 @@
     "mp4": "video/VIDEO-ba3904/VIDEO-ba3904.mp4",
     "image": "assets/thumbs/VIDEO-ba3904.jpg",
     "published_at": "2026-04-10",
-    "contentNiche": "Cộng Đồng & Hỗ Trợ VIP"
+    "contentNiche": "Cộng Đồng & Hỗ Trợ VIP",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-acd33f",
@@ -1304,7 +1472,10 @@
     "mp4": "video/VIDEO-acd33f/VIDEO-acd33f.mp4",
     "image": "assets/thumbs/VIDEO-acd33f.jpeg",
     "published_at": "2026-04-09",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-1a7f58",
@@ -1327,7 +1498,11 @@
     "mp4": "video/VIDEO-1a7f58/VIDEO-1a7f58.mp4",
     "image": "assets/thumbs/VIDEO-1a7f58.jpeg",
     "published_at": "2026-04-08",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Hàn",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-5785a5",
@@ -1355,7 +1530,11 @@
     "mp4": "video/VIDEO-5785a5/VIDEO-5785a5.mp4",
     "image": "assets/thumbs/VIDEO-5785a5.jpeg",
     "published_at": "2026-04-06",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-64130d",
@@ -1387,7 +1566,11 @@
     "image": "assets/thumbs/VIDEO-64130d.jpeg",
     "published_at": "2026-04-05",
     "contentNiche": "Reup & Khai Thác Hoạt Hình",
-    "country": "VN"
+    "country": "VN",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-5c0b20",
@@ -1413,7 +1596,12 @@
     "mp4": "video/VIDEO-5c0b20/VIDEO-5c0b20.mp4",
     "image": "assets/thumbs/VIDEO-5c0b20.jpeg",
     "published_at": "2026-04-05",
-    "contentNiche": "Drama Gia Đình & Xã Hội"
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "tags": [
+      "Mỹ",
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-3f85a1",
@@ -1436,7 +1624,11 @@
     "mp4": "video/VIDEO-3f85a1/VIDEO-3f85a1.mp4",
     "image": "assets/thumbs/VIDEO-3f85a1.jpeg",
     "published_at": "2026-04-03",
-    "contentNiche": "Drama Gia Đình & Xã Hội"
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "tags": [
+      "Canada",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-bf7b32",
@@ -1457,7 +1649,10 @@
     "mp4": "video/VIDEO-bf7b32/VIDEO-bf7b32.mp4",
     "image": "assets/thumbs/VIDEO-bf7b32.jpeg",
     "published_at": "2026-04-02",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-4a5aac",
@@ -1489,7 +1684,10 @@
     "mp4": "video/VIDEO-4a5aac/VIDEO-4a5aac.mp4",
     "image": "assets/thumbs/VIDEO-4a5aac.jpeg",
     "published_at": "2026-03-30",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-a2b317",
@@ -1515,7 +1713,12 @@
     "mp4": "video/VIDEO-a2b317/VIDEO-a2b317.mp4",
     "image": "assets/thumbs/VIDEO-a2b317.jpeg",
     "published_at": "2026-03-29",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Mỹ",
+      "Nga",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-2469ee",
@@ -1537,7 +1740,10 @@
     "mp4": "video/VIDEO-2469ee/VIDEO-2469ee.mp4",
     "image": "assets/thumbs/VIDEO-2469ee.jpeg",
     "published_at": "2026-03-28",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-dbd487",
@@ -1562,7 +1768,10 @@
     "mp4": "video/VIDEO-dbd487/VIDEO-dbd487.mp4",
     "image": "assets/thumbs/VIDEO-dbd487.jpeg",
     "published_at": "2026-03-28",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-d71802",
@@ -1584,7 +1793,10 @@
     "mp4": "video/VIDEO-d71802/VIDEO-d71802.mp4",
     "image": "assets/thumbs/VIDEO-d71802.jpeg",
     "published_at": "2026-03-28",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-d20744",
@@ -1634,7 +1846,10 @@
     "mp4": "video/VIDEO-d20744/VIDEO-d20744.mp4",
     "image": "assets/thumbs/VIDEO-d20744.jpeg",
     "published_at": "2026-03-28",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-33d701",
@@ -1659,7 +1874,11 @@
     "mp4": "video/VIDEO-33d701/VIDEO-33d701.mp4",
     "image": "assets/thumbs/VIDEO-33d701.jpeg",
     "published_at": "2026-03-26",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-7e00ee",
@@ -1690,6 +1909,9 @@
         "status": "KHÔNG-VERIFY",
         "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
       }
+    ],
+    "tags": [
+      "Nhật"
     ]
   },
   {
@@ -1709,7 +1931,10 @@
     "mp4": "video/VIDEO-ff9be6/VIDEO-ff9be6.mp4",
     "image": "assets/thumbs/VIDEO-ff9be6.jpeg",
     "published_at": "2026-03-20",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-6ad3fe",
@@ -1728,7 +1953,10 @@
     "mp4": "video/VIDEO-6ad3fe/VIDEO-6ad3fe.mp4",
     "image": "assets/thumbs/VIDEO-6ad3fe.png",
     "published_at": "2026-03-20",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-7f0bb4",
@@ -1747,7 +1975,10 @@
     "mp4": "video/VIDEO-7f0bb4/VIDEO-7f0bb4.mp4",
     "image": "assets/thumbs/VIDEO-7f0bb4.jpeg",
     "published_at": "2026-03-20",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-7db740",
@@ -1766,7 +1997,10 @@
     "mp4": "video/VIDEO-7db740/VIDEO-7db740.mp4",
     "image": "assets/thumbs/VIDEO-7db740.png",
     "published_at": "2026-03-20",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-546afa",
@@ -1789,7 +2023,11 @@
     "mp4": "video/VIDEO-546afa/VIDEO-546afa.mp4",
     "image": "assets/thumbs/VIDEO-546afa.jpeg",
     "published_at": "2026-03-19",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-d84a78",
@@ -1825,7 +2063,11 @@
     "mp4": "video/VIDEO-d84a78/VIDEO-d84a78.mp4",
     "image": "assets/thumbs/VIDEO-d84a78.jpeg",
     "published_at": "2026-03-15",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-c1bd51",
@@ -1850,7 +2092,10 @@
     "mp4": "video/VIDEO-c1bd51/VIDEO-c1bd51.mp4",
     "image": "assets/thumbs/VIDEO-c1bd51.jpeg",
     "published_at": "2026-03-11",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-026112",
@@ -1872,7 +2117,10 @@
     "mp4": "video/VIDEO-026112/VIDEO-026112.mp4",
     "image": "assets/thumbs/VIDEO-026112.jpeg",
     "published_at": "2026-03-08",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-e25d3b",
@@ -1901,7 +2149,11 @@
     "mp4": "video/VIDEO-e25d3b/VIDEO-e25d3b.mp4",
     "image": "assets/thumbs/VIDEO-e25d3b.jpeg",
     "published_at": "2026-03-07",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Hàn",
+      "Mỹ"
+    ]
   },
   {
     "sku": "VIDEO-bdfab7",
@@ -1928,7 +2180,10 @@
     "mp4": "video/VIDEO-bdfab7/VIDEO-bdfab7.mp4",
     "image": "assets/thumbs/VIDEO-bdfab7.jpeg",
     "published_at": "2026-02-28",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-e95a8f",
@@ -1975,7 +2230,10 @@
     "mp4": "video/VIDEO-e95a8f/VIDEO-e95a8f.mp4",
     "image": "assets/thumbs/VIDEO-e95a8f.jpeg",
     "published_at": "2026-02-27",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-91bb96",
@@ -1997,7 +2255,11 @@
     "mp4": "video/VIDEO-91bb96/VIDEO-91bb96.mp4",
     "image": "assets/thumbs/VIDEO-91bb96.jpeg",
     "published_at": "2026-02-26",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Mỹ",
+      "Canada"
+    ]
   },
   {
     "sku": "VIDEO-8b69c9",
@@ -2021,7 +2283,11 @@
     "mp4": "video/VIDEO-8b69c9/VIDEO-8b69c9.mp4",
     "image": "assets/thumbs/VIDEO-8b69c9.jpeg",
     "published_at": "2026-02-22",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Hàn",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-35014d",
@@ -2044,7 +2310,11 @@
     "mp4": "video/VIDEO-35014d/VIDEO-35014d.mp4",
     "image": "assets/thumbs/VIDEO-35014d.jpeg",
     "published_at": "2026-01-19",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Nhật",
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-cb907b",
@@ -2075,7 +2345,11 @@
     "mp4": "video/VIDEO-cb907b/VIDEO-cb907b.mp4",
     "image": "assets/thumbs/VIDEO-cb907b.png",
     "published_at": "2026-01-11",
-    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+    "contentNiche": "Reup & Khai Thác Hoạt Hình",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-34f417",
@@ -2101,7 +2375,12 @@
     "mp4": "video/VIDEO-34f417/VIDEO-34f417.mp4",
     "image": "assets/thumbs/VIDEO-34f417.jpeg",
     "published_at": "2026-01-11",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Việt",
+      "Hàn",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-1b4be3",
@@ -2127,7 +2406,11 @@
     "mp4": "video/VIDEO-1b4be3/VIDEO-1b4be3.mp4",
     "image": "assets/thumbs/VIDEO-1b4be3.jpeg",
     "published_at": "2025-12-27",
-    "contentNiche": "Drama Gia Đình & Xã Hội"
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-ec9c50",
@@ -2157,7 +2440,10 @@
     "mp4": "video/VIDEO-ec9c50/VIDEO-ec9c50.mp4",
     "image": "assets/thumbs/VIDEO-ec9c50.jpeg",
     "published_at": "2025-12-19",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-134a25",
@@ -2179,7 +2465,10 @@
     "mp4": "video/VIDEO-134a25/VIDEO-134a25.mp4",
     "image": "assets/thumbs/VIDEO-134a25.jpeg",
     "published_at": "2025-12-19",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-5fd052",
@@ -2211,6 +2500,9 @@
         "status": "KHÔNG-VERIFY",
         "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
       }
+    ],
+    "tags": [
+      "Nhật"
     ]
   },
   {
@@ -2230,7 +2522,10 @@
     "mp4": "video/VIDEO-00136f/VIDEO-00136f.mp4",
     "image": "assets/thumbs/VIDEO-00136f.png",
     "published_at": "2025-12-18",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-9ea5e3",
@@ -2249,7 +2544,10 @@
     "mp4": "video/VIDEO-9ea5e3/VIDEO-9ea5e3.mp4",
     "image": "assets/thumbs/VIDEO-9ea5e3.jpeg",
     "published_at": "2025-12-18",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-2ed37a",
@@ -2271,7 +2569,11 @@
     "mp4": "video/VIDEO-2ed37a/VIDEO-2ed37a.mp4",
     "image": "assets/thumbs/VIDEO-2ed37a.jpeg",
     "published_at": "2025-12-10",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Mỹ",
+      "Philippines"
+    ]
   },
   {
     "sku": "VIDEO-54422c",
@@ -2308,6 +2610,9 @@
         "status": "KHÔNG-VERIFY",
         "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
       }
+    ],
+    "tags": [
+      "Nhật"
     ]
   },
   {
@@ -2329,7 +2634,10 @@
     "mp4": "video/VIDEO-af606d/VIDEO-af606d.mp4",
     "image": "assets/thumbs/VIDEO-af606d.jpeg",
     "published_at": "2025-12-08",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-9ef6fe",
@@ -2351,7 +2659,11 @@
     "mp4": "video/VIDEO-9ef6fe/VIDEO-9ef6fe.mp4",
     "image": "assets/thumbs/VIDEO-9ef6fe.jpeg",
     "published_at": "2025-12-01",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-7ae3d6",
@@ -2372,7 +2684,10 @@
     "mp4": "video/VIDEO-7ae3d6/VIDEO-7ae3d6.mp4",
     "image": "assets/thumbs/VIDEO-7ae3d6.jpeg",
     "published_at": "2025-11-27",
-    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-86c1ec",
@@ -2393,7 +2708,10 @@
     "mp4": "video/VIDEO-86c1ec/VIDEO-86c1ec.mp4",
     "image": "assets/thumbs/VIDEO-86c1ec.jpeg",
     "published_at": "2025-11-25",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-3e5a21",
@@ -2412,7 +2730,10 @@
     "mp4": "video/VIDEO-3e5a21/VIDEO-3e5a21.mp4",
     "image": "assets/thumbs/VIDEO-3e5a21.png",
     "published_at": "2025-11-25",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-ffccd2",
@@ -2442,6 +2763,9 @@
         "status": "KHÔNG-VERIFY",
         "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
       }
+    ],
+    "tags": [
+      "Hàn"
     ]
   },
   {
@@ -2472,6 +2796,9 @@
         "status": "KHÔNG-VERIFY",
         "note": "channel_stats NOT FOUND; fuzzy 0 kênh. Giữ handle trên video, không thêm kho."
       }
+    ],
+    "tags": [
+      "Nhật"
     ]
   },
   {
@@ -2554,7 +2881,11 @@
     "image": "assets/thumbs/VIDEO-2aa1f7.png",
     "published_at": "2025-11-04",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người",
-    "country": "US"
+    "country": "US",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-5fe83a",
@@ -2577,7 +2908,10 @@
     "mp4": "video/VIDEO-5fe83a/VIDEO-5fe83a.mp4",
     "image": "assets/thumbs/VIDEO-5fe83a.png",
     "published_at": "2025-11-04",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-3ae732",
@@ -2600,7 +2934,11 @@
     "mp4": "video/VIDEO-3ae732/VIDEO-3ae732.mp4",
     "image": "assets/thumbs/VIDEO-3ae732.png",
     "published_at": "2025-11-04",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Mỹ",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-458892",
@@ -2641,7 +2979,11 @@
     "mp4": "video/VIDEO-458892/VIDEO-458892.mp4",
     "image": "assets/thumbs/VIDEO-458892.jpeg",
     "published_at": "2025-10-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-806c0c",
@@ -2666,7 +3008,10 @@
     "mp4": "video/VIDEO-806c0c/VIDEO-806c0c.mp4",
     "image": "assets/thumbs/VIDEO-806c0c.jpeg",
     "published_at": "2025-10-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-83a28e",
@@ -2691,7 +3036,10 @@
     "mp4": "video/VIDEO-83a28e/VIDEO-83a28e.mp4",
     "image": "assets/thumbs/VIDEO-83a28e.jpeg",
     "published_at": "2025-10-13",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-948336",
@@ -2716,7 +3064,10 @@
     "mp4": "video/VIDEO-948336/VIDEO-948336.mp4",
     "image": "assets/thumbs/VIDEO-948336.jpeg",
     "published_at": "2025-10-11",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-04c2e3",
@@ -2748,7 +3099,11 @@
     "image": "assets/thumbs/VIDEO-04c2e3.png",
     "published_at": "2025-10-11",
     "contentNiche": "Bán Content & Phát Triển Kênh",
-    "country": "VN"
+    "country": "VN",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-ca266f",
@@ -2776,7 +3131,12 @@
     "mp4": "video/VIDEO-ca266f/VIDEO-ca266f.mp4",
     "image": "assets/thumbs/VIDEO-ca266f.jpeg",
     "published_at": "2025-09-27",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Nhật",
+      "Mỹ",
+      "Anh"
+    ]
   },
   {
     "sku": "VIDEO-8603a9",
@@ -2803,7 +3163,12 @@
     "mp4": "video/VIDEO-8603a9/VIDEO-8603a9.mp4",
     "image": "assets/thumbs/VIDEO-8603a9.jpeg",
     "published_at": "2025-09-07",
-    "contentNiche": "Tâm Linh & Thu Hút May Mắn"
+    "contentNiche": "Tâm Linh & Thu Hút May Mắn",
+    "tags": [
+      "Hong Kong",
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-aacc70",
@@ -2822,7 +3187,10 @@
     "mp4": "video/VIDEO-aacc70/VIDEO-aacc70.mp4",
     "image": "assets/thumbs/VIDEO-aacc70.jpeg",
     "published_at": "2025-08-23",
-    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-82f8a8",
@@ -2847,7 +3215,10 @@
     "mp4": "video/VIDEO-82f8a8/VIDEO-82f8a8.mp4",
     "image": "assets/thumbs/VIDEO-82f8a8.jpeg",
     "published_at": "2025-08-23",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-9a4ddc",
@@ -2866,7 +3237,10 @@
     "mp4": "video/VIDEO-9a4ddc/VIDEO-9a4ddc.mp4",
     "image": "assets/thumbs/VIDEO-9a4ddc.png",
     "published_at": "2025-08-22",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-199f44",
@@ -2885,7 +3259,10 @@
     "mp4": "video/VIDEO-199f44/VIDEO-199f44.mp4",
     "image": "assets/thumbs/VIDEO-199f44.png",
     "published_at": "2025-08-22",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-027064",
@@ -2905,7 +3282,11 @@
     "mp4": "video/VIDEO-027064/VIDEO-027064.mp4",
     "image": "assets/thumbs/VIDEO-027064.png",
     "published_at": "2025-08-22",
-    "contentNiche": "Drama Gia Đình & Xã Hội"
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-ed1be9",
@@ -2924,7 +3305,10 @@
     "mp4": "video/VIDEO-ed1be9/VIDEO-ed1be9.mp4",
     "image": "assets/thumbs/VIDEO-ed1be9.png",
     "published_at": "2025-08-22",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-a348a5",
@@ -2955,7 +3339,11 @@
     "mp4": "video/VIDEO-a348a5/VIDEO-a348a5.mp4",
     "image": "assets/thumbs/VIDEO-a348a5.png",
     "published_at": "2025-08-21",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-25fddf",
@@ -2986,7 +3374,11 @@
     "mp4": "video/VIDEO-25fddf/VIDEO-25fddf.mp4",
     "image": "assets/thumbs/VIDEO-25fddf.jpeg",
     "published_at": "2025-08-21",
-    "contentNiche": "Drama Gia Đình & Xã Hội"
+    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "tags": [
+      "Nhật",
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-943781",
@@ -3005,7 +3397,10 @@
     "mp4": "video/VIDEO-943781/VIDEO-943781.mp4",
     "image": "assets/thumbs/VIDEO-943781.png",
     "published_at": "2025-08-21",
-    "contentNiche": "Kỹ Thuật Setup Nuôi Kênh & VPS"
+    "contentNiche": "Kỹ Thuật Setup Nuôi Kênh & VPS",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-f59aa7",
@@ -3030,7 +3425,10 @@
     "mp4": "video/VIDEO-f59aa7/VIDEO-f59aa7.mp4",
     "image": "assets/thumbs/VIDEO-f59aa7.png",
     "published_at": "2025-08-21",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-b380a1",
@@ -3055,7 +3453,10 @@
     "mp4": "video/VIDEO-b380a1/VIDEO-b380a1.mp4",
     "image": "assets/thumbs/VIDEO-b380a1.jpeg",
     "published_at": "2025-08-21",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-39ae49",
@@ -3082,7 +3483,12 @@
     "mp4": "video/VIDEO-39ae49/VIDEO-39ae49.mp4",
     "image": "assets/thumbs/VIDEO-39ae49.jpeg",
     "published_at": "2025-08-21",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Nhật",
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-5c3116",
@@ -3128,7 +3534,11 @@
     "mp4": "video/VIDEO-5c3116/VIDEO-5c3116.mp4",
     "image": "assets/thumbs/VIDEO-5c3116.png",
     "published_at": "2025-08-21",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Canada",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-3df94e",
@@ -3160,7 +3570,11 @@
     "image": "assets/thumbs/VIDEO-3df94e.jpeg",
     "published_at": "2025-08-20",
     "contentNiche": "Bán Content & Phát Triển Kênh",
-    "country": "US"
+    "country": "US",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-5cb825",
@@ -3193,7 +3607,9 @@
     "published_at": "2025-08-20",
     "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Ngoại"
     ]
   },
   {
@@ -3225,7 +3641,11 @@
     "mp4": "video/VIDEO-891f32/VIDEO-891f32.mp4",
     "image": "assets/thumbs/VIDEO-891f32.jpeg",
     "published_at": "2025-08-20",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-61e354",
@@ -3251,7 +3671,11 @@
     "mp4": "video/VIDEO-61e354/VIDEO-61e354.mp4",
     "image": "assets/thumbs/VIDEO-61e354.jpeg",
     "published_at": "2025-08-20",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-bdfa54",
@@ -3277,7 +3701,11 @@
     "mp4": "video/VIDEO-bdfa54/VIDEO-bdfa54.mp4",
     "image": "assets/thumbs/VIDEO-bdfa54.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-8e0275",
@@ -3324,7 +3752,8 @@
     "published_at": "2025-08-19",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại"
     ]
   },
   {
@@ -3344,7 +3773,10 @@
     "mp4": "video/VIDEO-b559c8/VIDEO-b559c8.mp4",
     "image": "assets/thumbs/VIDEO-b559c8.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-b96929",
@@ -3372,7 +3804,9 @@
     "published_at": "2025-08-19",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người",
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại",
+      "Mỹ"
     ]
   },
   {
@@ -3401,7 +3835,9 @@
     "published_at": "2025-08-19",
     "contentNiche": "Sức Khỏe & Dinh Dưỡng",
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt",
+      "Ngoại"
     ]
   },
   {
@@ -3443,7 +3879,11 @@
     "mp4": "video/VIDEO-5c438a/VIDEO-5c438a.mp4",
     "image": "assets/thumbs/VIDEO-5c438a.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-61ad94",
@@ -3473,7 +3913,11 @@
     "image": "assets/thumbs/VIDEO-61ad94.png",
     "published_at": "2026-08-22",
     "contentNiche": "Bán Content Đa Thị Trường Nhật & Hàn",
-    "channelResolve": []
+    "channelResolve": [],
+    "tags": [
+      "Nhật",
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-3a38f9",
@@ -3494,7 +3938,11 @@
     "image": "assets/thumbs/VIDEO-3a38f9.png",
     "published_at": "2026-08-27",
     "contentNiche": "Bán Content Đa Thị Trường Hàn & Việt",
-    "channelResolve": []
+    "channelResolve": [],
+    "tags": [
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-73d98a",
@@ -3520,7 +3968,11 @@
     "image": "assets/thumbs/VIDEO-73d98a.png",
     "published_at": "2026-09-06",
     "contentNiche": "Bán Content Ngách Cực Nhỏ",
-    "channelResolve": []
+    "channelResolve": [],
+    "tags": [
+      "Nhật",
+      "Hàn"
+    ]
   },
   {
     "sku": "ZOOM-01-Nen-tang-moi-truong",
@@ -3557,7 +4009,10 @@
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
     "channelResolve": [],
-    "transcript": "video/ZOOM-01-Nen-tang-moi-truong/transcript.json"
+    "transcript": "video/ZOOM-01-Nen-tang-moi-truong/transcript.json",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -3594,7 +4049,10 @@
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
     "channelResolve": [],
-    "transcript": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.json"
+    "transcript": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.json",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -3631,7 +4089,10 @@
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
     "channelResolve": [],
-    "transcript": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.json"
+    "transcript": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.json",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
@@ -3668,6 +4129,9 @@
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
     "channelResolve": [],
-    "transcript": "video/ZOOM-04-Adsense-khang-loi/transcript.json"
+    "transcript": "video/ZOOM-04-Adsense-khang-loi/transcript.json",
+    "tags": [
+      "Việt"
+    ]
   }
 ]

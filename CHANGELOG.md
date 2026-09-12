@@ -16,6 +16,7 @@
   - Vá `key_takeaways`/`key_timestamps` cho 6 video sơ sài; điền `tags` cho 4 video rỗng.
   - **Sửa insight sai `VIDEO-21956b`:** ngách **Sức khỏe** (không phải "tâm linh/tâm lý học").
   - **Chuẩn hoá thuật ngữ** Whisper nghe sai: `sức khỉ / xuất khỉ / xuất khế` → **`sức khỏe`**, `cây sức khỏe` → `cái sức khỏe`, `kỳ/ký sức khỏe` → `key sức khỏe` (33 video, 78 lượt); dọn lặp `cái cái` (35 chỗ).
+  - **Bổ sung tag thị trường** vào trường `tags` (400 lượt): suy từ `market` → `Ngoại / Việt / Anh / Canada / Nhật / Hàn / Ấn / Mỹ / Trung / Thái / Nga…`, tối đa 3 tag/video; giữ nguyên tag badge (`Quan trọng`/`Nổi bật`/`Zoom`/`Quy trình`). Đồng bộ 4 file: `catalog.json`, `catalog_full.json`, `modules.json`, `data-tabs/videos.json`.
 - **Nghiệm thu:**
   - `audit_all_136_videos.py`: **136/136 video SẠCH (0 lỗi)**.
   - `validate-project.js`: PASS (136 videos, 165 channels, 45 kich-ban, 103 tai-lieu-full, 136 thumbs, 136 video dirs).

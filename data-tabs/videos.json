@@ -3191,7 +3191,10 @@
     "mp4": "video/VIDEO-5cb825/VIDEO-5cb825.mp4",
     "image": "assets/thumbs/VIDEO-5cb825.jpeg",
     "published_at": "2025-08-20",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "tags": [
+      "Quan trọng"
+    ]
   },
   {
     "sku": "VIDEO-891f32",
@@ -3319,7 +3322,10 @@
     "mp4": "video/VIDEO-8e0275/VIDEO-8e0275.mp4",
     "image": "assets/thumbs/VIDEO-8e0275.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "tags": [
+      "Nổi bật"
+    ]
   },
   {
     "sku": "VIDEO-b559c8",
@@ -3364,7 +3370,10 @@
     "mp4": "video/VIDEO-b96929/VIDEO-b96929.mp4",
     "image": "assets/thumbs/VIDEO-b96929.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "tags": [
+      "Nổi bật"
+    ]
   },
   {
     "sku": "VIDEO-44cf22",
@@ -3390,7 +3399,10 @@
     "mp4": "video/VIDEO-44cf22/VIDEO-44cf22.mp4",
     "image": "assets/thumbs/VIDEO-44cf22.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "tags": [
+      "Quan trọng"
+    ]
   },
   {
     "sku": "VIDEO-5c438a",

@@ -3973,7 +3973,10 @@
         "link": ""
       }
     ],
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Quan trọng"
+    ]
   },
   {
     "sku": "VIDEO-891f32",
@@ -4135,7 +4138,10 @@
         "file": "assets/docs/VIDEO-8e0275/drive_1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj"
       }
     ],
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Nổi bật"
+    ]
   },
   {
     "sku": "VIDEO-b559c8",
@@ -4195,6 +4201,9 @@
         "link": "assets/docs/VIDEO-b96929/QUY-TRINH-EDIT-VIDEO-TRIET-LY-KHAC-KY.md",
         "file": "assets/docs/VIDEO-b96929/QUY-TRINH-EDIT-VIDEO-TRIET-LY-KHAC-KY.md"
       }
+    ],
+    "tags": [
+      "Nổi bật"
     ]
   },
   {
@@ -4227,6 +4236,9 @@
         "link": "assets/docs/VIDEO-44cf22/PHAN-TICH-NGACH-RPM-CAO-VA-VIDEO-DAI.md",
         "file": "assets/docs/VIDEO-44cf22/PHAN-TICH-NGACH-RPM-CAO-VA-VIDEO-DAI.md"
       }
+    ],
+    "tags": [
+      "Quan trọng"
     ]
   },
   {

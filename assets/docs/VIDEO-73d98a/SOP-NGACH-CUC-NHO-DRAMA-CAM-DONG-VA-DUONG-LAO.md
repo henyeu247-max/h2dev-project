@@ -69,6 +69,7 @@
 
 ## 4. CẠM BẪY CẦN TRÁNH (AVOID FLAGS)
 
+- ⚠️ **CẢNH BÁO BẪY EDIT 100% ẢNH AI (Bài học từ kênh @simbot2 ở phút 05:15):** Kênh @simbot2 tuy đạt 4.5M view nhưng tác giả bài giảng đánh giá cách làm này tiềm ẩn rủi ro rất cao vì dùng 100% hình ảnh AI tĩnh kết hợp sóng âm, rất dễ bị thuật toán YouTube quét lỗi *Inauthentic Content* (Nội dung máy móc) hoặc tắt kiếm tiền hàng loạt trong các đợt quét lớn. Tác giả khuyên học viên nên áp dụng cách làm của kênh @사연만남1짱: **Tự lấy điện thoại quay bàn tay đang gõ phím, lật sổ hoặc quay hồ cá cảnh thật** làm nền mờ (B-roll thật 100%) để đảm bảo kênh tồn tại bền vững nhiều năm.
 - ❌ **Không đẩy kịch tính thành bạo lực/chửi bới tiêu cực:** Khán giả người già thích sự công bằng, đạo lý nhân quả và cái kết ấm lòng. Nếu kịch bản quá u ám sẽ bị người xem bỏ rơi giữa chừng (giảm AVD).
 - ❌ **Không dùng nhạc nền quá dồn dập:** Sử dụng nhạc acoustic, piano không lời nhẹ nhàng hoặc tiếng mưa, tiếng suối chảy nền (White Noise).
 - ❌ **Không lấy nguyên si tên nhân vật và địa chỉ cụ thể của đối thủ:** Cần xáo trộn chi tiết để đảm bảo tính nguyên bản và tránh rủi ro khiếu nại bản quyền kịch bản.

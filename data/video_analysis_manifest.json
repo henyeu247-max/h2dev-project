@@ -10,7 +10,7 @@
     "videos": 136,
     "file_ok": 136,
     "audio_ok": 136,
-    "analysis_done": 0,
+    "analysis_done": 1,
     "pilot_videos": 7
   },
   "videos": [
@@ -2134,11 +2134,12 @@
       "duration_sec": 559.067,
       "video_streams": 1,
       "audio_streams": 1,
-      "analysis_status": "not_started",
-      "coverage_percent": 0.0,
-      "accuracy_status": "unverified",
-      "review_status": "not_reviewed",
-      "issues": []
+      "analysis_status": "approved",
+      "coverage_percent": 100.0,
+      "accuracy_status": "verified",
+      "review_status": "approved_for_ui",
+      "issues": [],
+      "claims_pending": 0
     },
     {
       "sku": "ZOOM-01-Nen-tang-moi-truong",

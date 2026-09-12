@@ -551,7 +551,12 @@ window.addEventListener('keydown', (e)=>{
         const ins = insAll[sku];
         if (ins) {
           document.getElementById('pinsights').classList.remove('hidden');
-          document.getElementById('legacyInsightNotice').classList.remove('hidden');
+          const legacyNoticeEl = document.getElementById('legacyInsightNotice');
+          if (ins.visual_audio_checked) {
+            legacyNoticeEl.classList.add('hidden');
+          } else {
+            legacyNoticeEl.classList.remove('hidden');
+          }
           
           // Badges
           const badgesEl = document.getElementById('insightBadges');

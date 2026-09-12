@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xem video — H2DEV Project</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
-<link rel="stylesheet" href="/assets/tailwind.css?v=20260912">
-<link rel="stylesheet" href="/assets/viddar.css?v=20260912">
-<link rel="stylesheet" href="/assets/player.css?v=20260912">
+<link rel="stylesheet" href="/assets/tailwind.css?v=20260912v2">
+<link rel="stylesheet" href="/assets/viddar.css?v=20260912v2">
+<link rel="stylesheet" href="/assets/player.css?v=20260912v2">
 <meta name="description" content="H2DEV — xem video khóa học.">
 <meta name="theme-color" content="#050505">
 </head>
 <body class="app-body">
 <header class="app-top">
   <div class="flex items-center gap-3">
-    <a href="javascript:void(0)" id="btnBack" class="btn-ghost">← Catalog</a>
+    <a href="javascript:void(0)" id="btnBack" class="btn-ghost">← Quay lại</a>
     <div class="brand-mark">H2</div>
     <span class="text-sm font-semibold">H2DEV Studio</span>
   </div>
@@ -191,6 +191,11 @@ function resolveSku() {
   return params.get('sku');
 }
 const sku = resolveSku();
+try {
+  if (sku && window.self !== window.top && window.top.location.origin === window.location.origin) {
+    window.top.history.replaceState(null, '', '/lotrinh/' + encodeURIComponent(sku));
+  }
+} catch(e) {}
 const CAT = '/data/catalog_full.json';
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function fmtBytes(n){if(!n)return'';if(n>1e9)return(n/1e9).toFixed(2)+' GB';if(n>1e6)return(n/1e6).toFixed(0)+' MB';return(n/1e3).toFixed(0)+' KB';}
@@ -229,9 +234,9 @@ function saveStore(m){
 }
 function fmtTime(sec){ const n=Math.max(0, Math.floor(Number(sec)||0)); const m=Math.floor(n/60), s=Math.floor(n%60); return m+':'+String(s).padStart(2,'0'); }
 
-/* Quay lại: về trang trước nếu có tham số back=1 (history.back), nếu ở lộ trình về /lotrinh, else về / */
+/* Quay lại: về trang trước nếu có lịch sử (history.back), nếu không thì về /lotrinh, else về / */
 function goBack(){
-  if (params.get('back') === '1') {
+  if (params.get('back') === '1' || window.history.length > 1) {
     history.back();
   } else if (/^\/lotrinh\//i.test(location.pathname) || params.get('back') === 'learn.html') {
     location.href = '/lotrinh';

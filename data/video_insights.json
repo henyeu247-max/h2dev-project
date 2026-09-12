@@ -181,54 +181,69 @@
   "VIDEO-04c2e3": {
     "sku": "VIDEO-04c2e3",
     "title": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
-    "actual_topic": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
+    "actual_topic": "Hệ Sinh Thái Công Cụ & Tài Khoản AI Giá Rẻ Cho Creator YouTube: ElevenLabs, Clone Minimax, Tool Dịch Phụ Đề SRT Douyin/Bilibili & Tài Khoản Chính Chủ",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
-    "target_market": "Trung Quốc",
-    "market_code": "CN",
+    "target_market": "Việt Nam (Cộng Đồng Creator & MMO)",
+    "market_code": "VN",
     "key_takeaways": [
-      "Thì trước tiên á, những anh em nào mà chưa biết về con tool Eleven Lab hay là tool Color Minimart á, thì anh em có thể lên web chính của nó xem qua nha",
-      "Đại loại là nó là cái tool Void là tool tạo giọng đọc á mọi người",
-      "Nhưng mà mọi người xem trên web á, thì mọi người xem, để ý cái giá của nó đấy, giá thơ thiêu tháng hay là thiêu nem rất là đắt nha mọi người",
-      "Đấy, thì nên vậy là mới có cái tool Rare"
+      "📌 Tối Ưu Chi Phí Sản Xuất Bằng Tool AI Giá Rẻ: Tổng quan hệ sinh thái công cụ hỗ trợ cho hơn 5.000–6.000 học viên làm YouTube từ đầu năm 2026, giúp tiết kiệm hàng chục triệu đồng chi phí mua ký tự TTS hàng tháng.",
+      "📌 Tool ElevenLabs & Clone Minimax Tiết Kiệm: Giải pháp tạo giọng đọc AI tự nhiên và clone giọng đối thủ với chi phí rẻ hơn nhiều lần so với giá mua trực tiếp gói tháng trên trang chủ.",
+      "📌 Tool Dịch Phụ Đề Editor Khớp Timeline: Công cụ chuyên dụng để dịch video review phim, tài liệu sinh tồn, mẹo cuộc sống từ các nền tảng Trung Quốc (Douyin, Bilibili, Kuaishou) sang tiếng Việt chuẩn ngữ pháp và khớp phụ đề.",
+      "📌 Nguồn Tài Khoản ChatGPT Plus & CapCut Pro Chính Chủ: Cung cấp tài khoản chính chủ dùng riêng, bảo hành ổn định cho anh em làm kịch bản và dựng video lâu dài mà không lo bị quét khóa.",
+      "📌 Danh Sách Chi Tiết Trong Bảng Sheet: Cung cấp file bảng tính chi tiết các gói tool, mức giá và phương thức liên hệ hỗ trợ trực tiếp."
     ],
     "edit_sop": {
-      "primary": "Về ngoài ra thì em cũng có là tool dịch để phụ đề editor",
+      "primary": "Quy trình lựa chọn công cụ và thiết lập hệ thống sản xuất video đa nền tảng tối ưu chi phí",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Kết hợp Tool dịch SRT để lấy nội dung từ video nguồn Douyin/Bilibili",
+        "Sử dụng giọng đọc ElevenLabs hoặc Minimax để tạo audio thuyết minh tiếng Việt",
+        "Dựng video hoàn chỉnh trên CapCut Pro bản quyền ổn định"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Tránh mua tài khoản trôi nổi dùng chung nhiều người (dễ bị đá phiên đăng nhập và mất dự án đang làm)",
+      "Không dịch máy cẩu thả tên riêng nhân vật hoặc địa danh trong video tiếng Trung",
+      "Kiểm tra kỹ tình trạng bản quyền âm thanh của video nguồn trước khi tải về sử dụng"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "ElevenLabs",
+      "Minimax",
+      "Tool Dịch Phụ Đề H2DEV",
+      "ChatGPT Plus",
+      "CapCut Pro",
+      "Bilibili",
+      "Douyin"
+    ],
+    "channels_mentioned": [
+      "Cộng đồng Creator H2DEV"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Em chào tất cả mọi người nha, thì cũng có rất là nhiều bác bình l…"
+        "label": "Giới thiệu mục đích video: Giải đáp thắc mắc về các con tool và tài khoản giá rẻ"
       },
       {
-        "time": "01:07",
-        "seconds": 67,
-        "label": "Cái này tool này dùng để cho anh em dịch phim, làm phim, review p…"
+        "time": "00:45",
+        "seconds": 45,
+        "label": "Phân tích bài toán chi phí: Mua ElevenLabs & Minimax chính thức quá đắt đỏ"
       },
       {
-        "time": "01:53",
-        "seconds": 113,
-        "label": "Bởi vì có một số anh em không biết"
+        "time": "01:15",
+        "seconds": 75,
+        "label": "Giới thiệu Tool Dịch Phụ Đề Editor: Dịch video Douyin, Bilibili Trung Quốc sang tiếng Việt"
       },
       {
-        "time": "02:15",
-        "seconds": 135,
-        "label": "Rồi em thông báo tổng quan sơ quen vài thoi"
+        "time": "01:50",
+        "seconds": 110,
+        "label": "Thông tin về tài khoản CapCut Pro chính chủ dùng riêng và ChatGPT Plus"
       },
       {
-        "time": "02:32",
-        "seconds": 152,
-        "label": "Thì anh em bây giờ thì anh em cứ nhắn trực tiếp với em"
+        "time": "02:30",
+        "seconds": 150,
+        "label": "Hướng dẫn mở bảng Google Sheet danh sách tool và cách thức liên hệ hỗ trợ"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -1264,54 +1279,87 @@
   "VIDEO-2aa1f7": {
     "sku": "VIDEO-2aa1f7",
     "title": "SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
-    "actual_topic": "SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
+    "actual_topic": "Quy Trình Sản Xuất Video Triết Lý Động Lực Thị Trường US (Hoa Kỳ): Phong Cách Tranh Sơn Dầu AI, Kịch Bản 5.000 Từ & Chiến Thuật Lách Thị Trường Cạnh Tranh",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
-    "target_market": "Nhật Bản",
-    "market_code": "JP",
+    "target_market": "Hoa Kỳ (US) / Toàn cầu",
+    "market_code": "US",
     "key_takeaways": [
-      "Hôm nay em sẽ lại tiếp tục share cho mọi người về một cái ngách triết lý động lực sống nữa nha mọi người",
-      "Nhưng mà trước khi vào thì em show một tí danh thu ở những cái kênh của em cho mọi người có động lực làm nha",
-      "Đây là một trong những cái kênh em đang làm nè",
-      "Đấy, vậy em sẽ show 1-2 kênh cho mọi người xem luôn nha"
+      "📌 Ngách Triết Lý Động Lực US Đang Cực Trend: Thị trường Mỹ có nhu cầu xem và nghe triết lý, suy ngẫm nhân sinh cực kỳ lớn với chỉ số VPH (Views Per Hour) tăng vọt. Khán giả Âu Mỹ thích các video dài 15–30 phút nghe khi làm việc hoặc trước khi ngủ.",
+      "📌 Phong Cách Hình Ảnh Tranh Sơn Dầu AI Độc Đáo: Thay vì dùng ảnh minh họa 3D hay vector thông thường, sử dụng Dreamina CapCut AI hoặc Midjourney tạo phong cách tranh sơn dầu cổ điển (Oil Painting Art) mô phỏng các nhân vật triết gia, danh nhân lịch sử để tạo sự sang trọng và tỷ lệ giữ chân (AVD) cao.",
+      "📌 Cấu Trúc Kịch Bản Dài 2.500 – 5.000 Từ Chia Đoạn: Kỹ thuật chia nhỏ kịch bản thành các phần 800–1.000 từ để yêu cầu ChatGPT/Claude viết sâu sắc, không bị nông cạn hay dừng giữa chừng. 2 phần đầu đọc ra đã đạt 8–10 phút chuẩn chèn mid-roll ads.",
+      "📌 Kết Hợp Tranh Sơn Dầu Với Stock Video Tự Nhiên: Phối trộn giữa ảnh tĩnh AI tạo từ Dreamina với video phong cảnh thiên nhiên, chuyển động chậm tải miễn phí từ Pixabay và Vecteezy để khung hình luôn sống động, không bị nhàm chán.",
+      "📌 Hậu Kỳ Hiệu Ứng Phim Cổ Điển & Phụ Đề Tự Động: Sử dụng hiệu ứng khung phim (Film Frame), bộ lọc màu cổ điển trong CapCut và tạo phụ đề tiếng Anh tự động với font chữ tối giản, trang nhã."
     ],
     "edit_sop": {
-      "primary": "Bây giờ trong khi đợi thì em sẽ quay lại video của đối thủ xem thử cái phong trữ của nó như nào đó",
+      "primary": "Quy trình dựng video triết lý phong cách tranh sơn dầu AI kết hợp stock video thiên nhiên trên CapCut",
       "additional": [
-        "Nó hơi giống như cố gắng để cắt đá bằng tay"
+        "Tạo ảnh phong cách tranh sơn dầu tỷ lệ 16:9 bằng Dreamina AI (CapCut)",
+        "Tải video chuyển động chậm thiên nhiên chất lượng cao từ Pixabay và Vecteezy",
+        "Thêm hiệu ứng khung phim cổ điển và bộ lọc ánh sáng ấm tạo chiều sâu",
+        "Tạo phụ đề tự động tiếng Anh font chữ đơn giản, trang nhã không giật cục"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Không yêu cầu AI viết toàn bộ 5.000 từ kịch bản trong 1 câu lệnh (khiến AI bị quá tải và cắt bớt nội dung)",
+      "Tránh dùng phụ đề màu sắc quá lòe loẹt hoặc nhảy chữ nhanh kiểu TikTok (gây phản cảm cho khán giả xem triết lý)",
+      "Không để hình ảnh AI dính logo hoặc watermark của công cụ (phải phóng to hoặc cắt viền)"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "ChatGPT Plus",
+      "Dreamina AI (CapCut)",
+      "ElevenLabs",
+      "Pixabay",
+      "Vecteezy",
+      "Google Whisk",
+      "Google Flow",
+      "CapCut Desktop",
+      "YouTube Studio"
+    ],
+    "channels_mentioned": [
+      "Kênh triết lý đối thủ thị trường US"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Hôm nay em sẽ lại tiếp tục share cho mọi người về một cái ngách t…"
+        "label": "Show doanh thu thực tế Studio điện thoại: Kênh US & Kênh Nhật Bản"
       },
       {
-        "time": "03:40",
-        "seconds": 220,
-        "label": "Vậy ở trong này em cũng sẽ update video liên tục nha mọi người"
+        "time": "02:20",
+        "seconds": 140,
+        "label": "Phân tích xu hướng (Trend) và tiềm năng ngách triết lý động lực thị trường Mỹ"
       },
       {
-        "time": "06:59",
-        "seconds": 419,
-        "label": "Còn những cái phần này á"
+        "time": "04:15",
+        "seconds": 255,
+        "label": "Hướng dẫn prompt 3 phần: Tạo 10-20 chủ đề và chia nhỏ kịch bản 2.500-5.000 từ"
       },
       {
-        "time": "11:02",
-        "seconds": 662,
-        "label": "Tất cả hình ảnh của cái kênh này nó đều là cái hình ảnh kiểu như …"
+        "time": "07:30",
+        "seconds": 450,
+        "label": "Chọn giọng đọc ElevenLabs truyền cảm phù hợp phong cách triết lý chiêm nghiệm"
       },
       {
-        "time": "13:53",
-        "seconds": 833,
-        "label": "Rồi tí nữa mình sẽ edica kết kép lòng web lại với nhau nha"
+        "time": "10:15",
+        "seconds": 615,
+        "label": "Sử dụng Dreamina AI tạo ảnh tranh sơn dầu tỷ lệ 16:9 chất lượng cao"
+      },
+      {
+        "time": "13:00",
+        "seconds": 780,
+        "label": "Tìm kiếm và tải video thiên nhiên miễn phí trên Pixabay & Vecteezy"
+      },
+      {
+        "time": "15:40",
+        "seconds": 940,
+        "label": "Kỹ thuật dựng CapCut: Hiệu ứng khung phim, bộ lọc màu và phụ đề tiếng Anh"
+      },
+      {
+        "time": "19:20",
+        "seconds": 1160,
+        "label": "Demo thành phẩm video hoàn chỉnh và lưu ý vận hành kênh"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -2450,57 +2498,78 @@
   "VIDEO-458892": {
     "sku": "VIDEO-458892",
     "title": "KIẾM HƠN $100,000.000 / THÁNG VỚI KEY LỊCH SỬ QUÂN SỰ NÀY - HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z (chủ đề - kịch bản - giọng đọc - hình ảnh - thumbnail) - UPDATE 19/10/2025",
-    "actual_topic": "KIẾM HƠN $100,000.000 / THÁNG VỚI KEY LỊCH SỬ QUÂN SỰ NÀY - HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z (chủ đề - kịch bản - giọng đọc - hình ảnh - thumbnail) - UPDATE 19/10/2025",
+    "actual_topic": "Quy Trình Xây Kênh Lịch Sử Quân Sự Thế Chiến (WW2) Đạt Doanh Thu 00.000/Tháng: Kịch Bản Sử Học, Giọng Đọc ElevenLabs Hào Hùng & Nguồn Tư Liệu Chiến Tranh Độc Bản",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
-    "target_market": "Toàn cầu / Ngoại",
+    "target_market": "Toàn cầu / Ngoại (US/EU)",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Đây, bây giờ là ảnh chuyển sang tiền euro cho mọi người xem luôn nè",
-      "Đó, nó rất là thực tế nha mọi người",
-      "Chứ không phải là chỉnh tiền các cái nước nào đâu nha",
-      "Đó, cái anh này đã lộ ra cái kênh này là của anh ấy luôn nha mọi người"
+      "📌 Mỏ Vàng Lịch Sử Quân Sự Thế Chiến 2 (WW2): Phân tích case study kênh đối thủ nước ngoài đạt doanh thu kỷ lục hơn 100.000 USD/tháng với hơn 200 video tài liệu chiến sử, chứng minh sức hút khổng lồ của khán giả phương Tây với đề tài Thế chiến.",
+      "📌 Cấu Trúc Kịch Bản Lịch Sử Quân Sự Chuyên Sâu: Sử dụng bộ prompt ChatGPT chuẩn để bóc tách các trận đánh lịch sử lớn (Trận Normandy, Stalingrad, Trân Châu Cảng), diễn biến chiến lược của các tướng lĩnh và bước ngoặt chiến trường.",
+      "📌 Giọng Đọc Tài Liệu Hào Hùng Trên ElevenLabs: Lựa chọn các chất giọng tiếng Anh trầm, đĩnh đạc và hào hùng để tạo cảm giác uy nghiêm như phim tài liệu BBC/History Channel.",
+      "📌 Khai Thác Nguồn Tư Liệu Độc Bản Từ YouTube & Douyin: Cung cấp 2 bảng danh sách kênh nguồn (CSV) để tìm kiếm các đoạn phim tư liệu phục chế, hoạt họa 3D chiến thuật và sơ đồ chiến sự.",
+      "📌 Thiết Kế Thumbnail Chiến Tranh Kịch Tính: Công thức làm ảnh thu nhỏ có độ tương phản mạnh: xe tăng, chiến hạm hoặc tướng lĩnh đặt ở trung tâm, khói lửa nền và chữ giật tít màu vàng/đỏ nổi bật."
     ],
     "edit_sop": {
-      "primary": "Rồi anh em quay lại con chat youtube nha",
+      "primary": "Quy trình sản xuất phim tài liệu lịch sử quân sự kết hợp tư liệu phục chế, bản đồ chiến sự và âm thanh chiến hào",
       "additional": [
-        "Đấy, như vậy là rất là ok v r l r nha m ng R b ti theo sau khi m c k b thanh r Th b ti theo l m s l t h nha m ng T h m edit c video m ng Rồi đây là cái from để mình tạo hình ảnh",
-        "Mọi người quay lại con chat beauty lúc nãy nè"
+        "Tìm kiếm tư liệu lịch sử từ kho lưu trữ và kênh nguồn Douyin/YouTube được cung cấp",
+        "Lồng ghép hiệu ứng âm thanh tiếng súng pháo, động cơ xe tăng và nhạc nền hào hùng",
+        "Tạo bản đồ chiến dịch chuyển động mô phỏng mũi tiến công của các cánh quân",
+        "Thiết kế thumbnail kịch tính với chủ thể tướng lĩnh hoặc khí tài quân sự nổi bật"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Không sử dụng các hình ảnh hoặc biểu tượng cực đoan bị YouTube cấm hiển thị",
+      "Tránh lấy nguyên đoạn phim tài liệu có bản quyền của các hãng truyền hình lớn mà không qua xử lý biến đổi",
+      "Không đưa ra các nhận định sai lệch lịch sử hoặc kích động hận thù sắc tộc"
     ],
     "tools_mentioned": [
-      "ChatGPT"
+      "ChatGPT",
+      "ElevenLabs",
+      "CapCut Pro",
+      "YouTube Studio Analytics",
+      "Douyin"
     ],
-    "channels_mentioned": [],
+    "channels_mentioned": [
+      "Kênh Lịch Sử Quân Sự Đối Thủ (WW2 History)"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Ừ rồi em xin chào tất cả mọi người nha em là hát hay đi đây thì h…"
+        "label": "Show bằng chứng doanh thu thực tế hơn 00.000/tháng (chuyển tiền Euro & USD)"
       },
       {
-        "time": "03:29",
-        "seconds": 209,
-        "label": "Ví dụ là 10 hay 20"
+        "time": "02:15",
+        "seconds": 135,
+        "label": "Giới thiệu tiềm năng ngách lịch sử quân sự Thế chiến 2 và tệp khán giả nam Âu Mỹ"
       },
       {
-        "time": "06:29",
-        "seconds": 389,
-        "label": "Đấy, mọi người copy"
+        "time": "04:30",
+        "seconds": 270,
+        "label": "Hướng dẫn prompt ChatGPT tạo danh sách 10-20 chủ đề trận đánh lịch sử"
       },
       {
-        "time": "09:14",
-        "seconds": 554,
-        "label": "Thì phần 1 nó sẽ tạo ra cho mình là 10 cái chrome"
+        "time": "07:10",
+        "seconds": 430,
+        "label": "Lập kịch bản phân cảnh chi tiết có dẫn chứng mốc thời gian và sự kiện lịch sử"
       },
       {
-        "time": "12:20",
-        "seconds": 740,
-        "label": "Về con web này á, thì em sẽ thường xuyên update"
+        "time": "09:40",
+        "seconds": 580,
+        "label": "Chọn giọng đọc tài liệu tiếng Anh hào hùng trên ElevenLabs"
+      },
+      {
+        "time": "11:50",
+        "seconds": 710,
+        "label": "Khai thác 2 bảng danh sách kênh nguồn tư liệu trên YouTube và Douyin"
+      },
+      {
+        "time": "13:30",
+        "seconds": 810,
+        "label": "Thiết kế thumbnail chiến sự tương phản cao và xuất video hoàn chỉnh"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -5589,57 +5658,65 @@
   "VIDEO-a348a5": {
     "sku": "VIDEO-a348a5",
     "title": "Hướng dẫn làm thumb key triết lý _ khắc kỷ",
-    "actual_topic": "Hướng dẫn làm thumb key triết lý _ khắc kỷ",
+    "actual_topic": "Kỹ Thuật Thiết Kế Thumbnail Ngách Triết Lý Khắc Kỷ (Stoicism) Tỷ Lệ Click (CTR) Cao Bằng Photoshop Web & Canva Miễn Phí",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
-    "target_market": "Toàn cầu / Ngoại",
+    "target_market": "Toàn cầu / Ngoại (Thị Trường Stoicism Tiếng Anh)",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Tiếp tục ở cái video này thì sẽ hướng dẫn cho mọi người cách là làm thun theo cái cây trước lưới khắc cử nha mọi người",
-      "Đấy cái này thì làm thẳng ở trên Photoshop luôn nha, web Photoshop thì mọi người có thể dùng Canva hoặc là các cái app khác được",
-      "Đấy nhưng cách làm thì cũng tương tự thôi mọi người",
-      "Cái web này thì hoàn toàn là free nên em có thể dùng để làm luôn nha"
+      "📌 Công Thức Bố Cục Thumbnail Triết Lý Khắc Kỷ (Stoicism): Chủ thể trung tâm là tượng đá điêu khắc cổ đại (Marcus Aurelius, Seneca, tượng Hy Lạp/La Mã) chiếm 60–70% diện tích khung hình, tạo phong thái uy nghiêm và chiều sâu triết lý.",
+      "📌 Kỹ Thuật Chiếu Sáng Tương Phản Nghệ Thuật (Chiaroscuro): Phông nền tối mờ ảo (Dark Moody Background), ánh sáng mạnh chiếu rọi từ một phía làm nổi bật các góc cạnh của tượng đá, kích thích trí tò mò của người xem.",
+      "📌 Quy Chuẩn Tiêu Đề Trên Ảnh (Thumbnail Typography): Chữ to, đậm, rõ ràng, màu sắc tương phản cao (vàng kim hoặc trắng viền đen), độ dài tối đa không quá 3–4 từ ngắn gọn đóng vai trò làm Hook bổ trợ cho tiêu đề chính.",
+      "📌 Thực Hành Trực Tiếp Trên Web Photoshop Miễn Phí (Photopea) & Canva: Hướng dẫn chi tiết từng thao tác tách nền, chỉnh sáng tối (Curves/Levels), hòa trộn màu (Color Balance) mà không cần máy tính cấu hình khủng.",
+      "📌 Thumbnail Quyết Định 70% Tỷ Lệ Click (CTR): Trong ngách triết lý cạnh tranh, một ảnh thu nhỏ mang phong cách điện ảnh huyền bí là chìa khóa then chốt để thuật toán YouTube đề xuất video đến hàng triệu khán giả."
     ],
     "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
+      "primary": "Quy chuẩn thiết kế ảnh thu nhỏ (Thumbnail) kịch tính cho ngách triết lý khắc kỷ và phát triển bản thân",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Tìm ảnh chủ thể tượng đá cổ đại độ phân giải cao trên các kho ảnh miễn phí",
+        "Tạo hiệu ứng ánh sáng chiếu cạnh và xử lý phông nền tối moody",
+        "Thêm chữ Hook tối đa 3-4 từ với font chữ đậm, tương phản cao màu vàng/trắng",
+        "Xuất file ảnh định dạng JPG/PNG dung lượng dưới 2MB theo chuẩn YouTube"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Tránh viết quá nhiều chữ trên thumbnail (khiến người xem trên điện thoại không đọc được)",
+      "Không dùng ảnh chủ thể mờ, vỡ hạt hoặc tách nền nham nhở",
+      "Tránh chọn màu chữ chìm vào phông nền làm giảm tỷ lệ nhấp chuột (CTR)"
     ],
     "tools_mentioned": [
-      "Canva",
-      "Photoshop"
+      "Photoshop (Web Photopea)",
+      "Canva"
     ],
-    "channels_mentioned": [],
+    "channels_mentioned": [
+      "Kênh Triết Lý Khắc Kỷ Đối Thủ (Stoicism Channels)"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Tiếp tục ở cái video này thì sẽ hướng dẫn cho mọi người cách là l…"
+        "label": "Giới thiệu bài học: Kỹ thuật thiết kế thumbnail ngách triết lý khắc kỷ"
       },
       {
-        "time": "00:19",
-        "seconds": 19,
-        "label": "thôi mọi người. Cái web này thì hoàn toàn là free nên em có thể d…"
+        "time": "00:20",
+        "seconds": 20,
+        "label": "Hướng dẫn mở công cụ Photoshop trên trình duyệt (Photopea/Web Photoshop) hoàn toàn miễn phí"
       },
       {
-        "time": "01:30",
-        "seconds": 90,
-        "label": "H subscribe cho k La La School kh b l nh video h d"
+        "time": "01:15",
+        "seconds": 75,
+        "label": "Chọn ảnh tượng đá Marcus Aurelius/Seneca và kỹ thuật tách nền chuẩn xác"
       },
       {
-        "time": "03:16",
-        "seconds": 196,
-        "label": "H subscribe cho k La La School kh b l nh video h d H subscribe ch…"
+        "time": "02:40",
+        "seconds": 160,
+        "label": "Xử lý phông nền tối bí ẩn và tạo hiệu ứng ánh sáng chiếu cạnh cho tượng"
       },
       {
-        "time": "05:08",
-        "seconds": 308,
-        "label": "H subscribe cho k La La School kh b l nh video h d"
+        "time": "04:10",
+        "seconds": 250,
+        "label": "Thêm chữ (Text Hook) tương phản cao: Chọn font chữ, căn chỉnh bố cục và xuất file ảnh tối ưu"
       }
     ],
     "analysis_method": "local_transcript_heuristic",

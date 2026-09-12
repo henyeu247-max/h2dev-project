@@ -2086,56 +2086,71 @@
   "VIDEO-3df94e": {
     "sku": "VIDEO-3df94e",
     "title": "Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube",
-    "actual_topic": "Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube",
+    "actual_topic": "Chiến Lược Bán Content Lịch Sử Cổ Đại La Mã Thu Về Hơn 8.000/Tháng: Phân Tích Kênh Triệu View & Quy Trình AI Sản Xuất Video Chuẩn RPM ",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
-    "target_market": "Việt Nam",
-    "market_code": "VN",
+    "target_market": "Hoa Kỳ (US) / Toàn Cầu",
+    "market_code": "US",
     "key_takeaways": [
-      "Thì trước khi vào cái clip share key hôm nay á, thì em show qua một trong những cái kênh em đang làm nha mọi người",
-      "Đấy, để cho anh em có động lực mà làm nha",
-      "Về cái key mà hôm nay em share cho mọi người á, là key về cái ngách lịch sử nha mọi người",
-      "Về em cũng sẽ share cho mọi người cái forum để mọi người làm cái kịch bản hoàn thiện, và cũng như là làm ra một cái video hoàn thiện luôn nha"
+      "📌 Doanh Thu Đột Phá Hơn 8.000/Tháng Từ Lịch Sử Cổ Đại: Phân tích trực tiếp số liệu kênh đối thủ đạt hơn 18.000 USD trong tháng qua với các video trên 1 triệu view về thời kỳ La Mã cổ đại (Rome 67 AD).",
+      "📌 Chỉ Số RPM Đạt .5 - .0 USD / 1.000 View: Khán giả xem video chủ yếu đến từ Hoa Kỳ (US), thời gian xem trung bình cao giúp tối ưu hóa doanh thu quảng cáo đạt mức đỉnh trong ngách lịch sử.",
+      "📌 Khái Niệm Ngách Nhỏ Trong Ngách Lớn (Micro-Niche): Thay vì làm lịch sử thế giới chung chung, tập trung sâu vào một thời kỳ lịch sử hấp dẫn (Đế chế La Mã, Hy Lạp, bối cảnh năm 67 sau Công nguyên) giúp thuật toán nhận diện đúng tệp người xem.",
+      "📌 Kỹ Thuật Viết Kịch Bản Giữ Chân Bằng Bối Cảnh Thực: Mở đầu bằng một câu Hook điện ảnh lôi cuốn (\"Picture the scene. The year is 67 AD...\"), đưa người xem hòa mình vào không khí đấu trường và cung điện La Mã.",
+      "📌 Demo Video Thành Phẩm Hoàn Chỉnh: Video kết thúc bằng một đoạn demo thực tế kết hợp hình ảnh kiến trúc La Mã cổ điển với giọng đọc ElevenLabs truyền cảm."
     ],
     "edit_sop": {
-      "primary": "Rồi bây giờ em sẽ vào nghe lại cái video kịch bản góc này và so sánh với cái âm thanh em vừa cầu loan ra nha mọi người",
+      "primary": "Quy trình sản xuất phim tài liệu lịch sử cổ đại La Mã kết hợp kịch bản dẫn truyện điện ảnh và hình ảnh AI cổ điển",
       "additional": [
-        "Và import cái file âm thanh mà lúc nãy mình vừa clone xong nữa nha",
-        "Nên em sẽ cắt bớt hết nha mọi người"
+        "Tạo kịch bản mở đầu bằng bối cảnh kịch tính đưa người xem về quá khứ",
+        "Lồng ghép hình ảnh cột đá cẩm thạch, đấu trường La Mã và phong cảnh thành Rome",
+        "Tạo âm thanh nền tiếng chợ La Mã, tiếng bước chân và nhạc giao hưởng cổ đại"
       ]
     },
     "avoid_flags": [
-      "000 view đúng không anh em Họ được 100",
-      "000 view thì mình ít nhất mình bám theo á Thì mình cũng anh được 10"
+      "Không dịch kịch bản bằng Google Translate thô sơ làm mất phong vị cổ điển của tiếng Anh học thuật",
+      "Tránh dùng hình ảnh hiện đại hoặc có chi tiết sai lệch niên đại lịch sử La Mã",
+      "Không để chữ phụ đề quá nhỏ hoặc màu sắc khó đọc trên nền đá cẩm thạch sáng"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "Netflix Extension",
+      "ChatGPT",
+      "ElevenLabs",
+      "CapCut Desktop"
+    ],
+    "channels_mentioned": [
+      "Kênh Lịch Sử Cổ Đại Đối Thủ (Rome History)"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Em xin chào tất cả mọi người đã quay trở lại với kênh H2Dip của e…"
+        "label": "Giới thiệu ngách lịch sử thời xưa và phân tích doanh thu kênh đối thủ hơn 8.000"
       },
       {
-        "time": "03:31",
-        "seconds": 211,
-        "label": "100.000 view đúng không anh em"
+        "time": "03:40",
+        "seconds": 220,
+        "label": "Xem số liệu phân tích chuyên sâu qua tiện ích Netflix/Studio: RPM gần , view US"
       },
       {
-        "time": "07:18",
-        "seconds": 438,
-        "label": "Đấy, về cái vấn đề này á, thì cũng sẽ có nhiều anh em thắc mắc là…"
+        "time": "07:15",
+        "seconds": 435,
+        "label": "Hướng dẫn prompt ChatGPT tạo kịch bản bối cảnh La Mã cổ đại (Rome 67 AD)"
       },
       {
-        "time": "11:05",
-        "seconds": 665,
-        "label": "Nhưng mà cái đây là cách làm của em trước giờ"
+        "time": "11:30",
+        "seconds": 690,
+        "label": "Tạo giọng đọc tài liệu tiếng Anh trầm ấm trên ElevenLabs"
       },
       {
-        "time": "15:44",
-        "seconds": 944,
-        "label": "Đấy, còn những cái kia thì nó chia ra để cho anh em có thể đít, c…"
+        "time": "15:20",
+        "seconds": 920,
+        "label": "Kỹ thuật dựng hình ảnh kiến trúc cổ đại trên CapCut"
+      },
+      {
+        "time": "19:40",
+        "seconds": 1180,
+        "label": "Demo video thành phẩm tiếng Anh: Bối cảnh Rome năm 67 sau Công nguyên"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -3264,55 +3279,66 @@
   "VIDEO-5c3116": {
     "sku": "VIDEO-5c3116",
     "title": "Share Key thị trường Canada mới nhất và hướng dẫn làm chi tiết từ A-Z - UPDATE 21/8/2025",
-    "actual_topic": "Share Key thị trường Canada mới nhất và hướng dẫn làm chi tiết từ A-Z - UPDATE 21/8/2025",
+    "actual_topic": "Quy Trình Xây Kênh Bán Content Thị Trường Canada A-Z: Kết Hợp Tư Liệu Cam Cảnh Sát, Lịch Sử Tiền Sử & Tối Ưu Hóa Nguồn Doanh Thu Khủng",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
-    "target_market": "Mỹ / Ngoại",
-    "market_code": "US",
+    "target_market": "Canada / Thị Trường Ngoại (US/CA)",
+    "market_code": "GLOBAL",
     "key_takeaways": [
-      "Thì đây là cái video đầu tiên ở trên cái web này của em nha mọi người",
-      "Thì ở trên cái web này thì em sẽ thường xuyên cập nhật những cái video mới nhất về những cái ký cũng như là những cái tool hướng dẫn mới nhất cho mọi người nha",
-      "Thì trước khi vào cái video xe ký về hướng dẫn hôm nay á, thì em xin phép một vài giây để em nói sơ queo về cái web này để cho mọi người rõ nha",
-      "Đầu tiên là trước giờ có rất là nhiều anh em nhắn em cũng như là gọi điện em hỏi là em có dạy kèm hay là kèm 1 1 các kiểu gì không"
+      "📌 Khai Phá Thị Trường Canada Tiềm Năng: Canada là một trong những thị trường có chỉ số RPM cao tương đương Hoa Kỳ ( - 2 USD) nhưng mức độ cạnh tranh thấp hơn, thích hợp cho anh em làm kênh bán content quy mô lớn.",
+      "📌 3 Bộ Prompt Chuyên Sâu Đi Kèm: Bài học đính kèm đầy đủ 3 bộ prompt chuẩn (Prompt Key Nhật Bản, Prompt Train Ngách Tiền Sử và Prompt Train kịch bản chuyên sâu) giúp học viên tạo nội dung đa thị trường mượt mà.",
+      "📌 Khai Thác Nguồn Video Cam Cảnh Sát (Bodycam): Cung cấp bảng tính danh sách kênh nguồn video camera cảnh sát (Dashcam/Bodycam) với lượng xem cực kỳ cuốn hút, giữ chân khán giả phương Tây xem hết video.",
+      "📌 Quy Trình Vận Hành Web H2DEV Thực Chiến: Hướng dẫn học viên cách theo dõi cập nhật các ngách mới nhất, tải tài nguyên công cụ và xem bài học đúng lộ trình không bị bỏ sót.",
+      "📌 Chiến Lược Đa Dạng Hóa Thu Nhập: Kết hợp giữa việc kiếm tiền từ quảng cáo AdSense với việc mở rộng hợp tác làm kênh ăn chia và xây dựng thương hiệu cá nhân bền vững."
     ],
     "edit_sop": {
-      "primary": "Như đây, những video này thì mọi người lấy về các ghép ra",
+      "primary": "Quy trình sản xuất video tài liệu bán content thị trường Canada kết hợp footage camera hành trình và hình ảnh AI tiền sử",
       "additional": [
-        "Những video mà kiểu như về chính trị về ông Trump thì anh em cắt ghép ít thôi nha",
-        "Kiểu như cắt ghép vài giây thôi, 3 giây thôi, hoặc là 1, 2 giây gì đấy"
+        "Khai thác nguồn footage camera cảnh sát từ bảng danh sách Google Sheet được cung cấp",
+        "Sử dụng prompt train ngách tiền sử để tạo kịch bản dẫn chuyện ly kỳ",
+        "Ghép nối footage thực tế với hiệu ứng âm thanh đàm thoại bộ đàm chân thực"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Không sử dụng các đoạn clip camera cảnh sát có cảnh bạo lực máu me phản cảm (vi phạm chính sách YPP)",
+      "Tránh reup nguyên đoạn footage dài mà không cắt lát và lồng lời dẫn chuyện độc bản",
+      "Kiểm tra kỹ bản quyền âm thanh trong các clip gốc trước khi ghép vào video"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "ChatGPT",
+      "ElevenLabs",
+      "CapCut Pro",
+      "Google Sheets"
+    ],
+    "channels_mentioned": [
+      "Kênh Đối Thủ Thị Trường Canada"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Rồi, em chào tất cả mọi người đã quay trở lại với kênh HHDEP của …"
+        "label": "Giới thiệu bài học đầu tiên trên web H2DEV và định hướng cập nhật ngách mới"
       },
       {
-        "time": "04:08",
-        "seconds": 248,
-        "label": "ví dụ như cái này"
+        "time": "03:15",
+        "seconds": 195,
+        "label": "Phân tích tiềm năng thị trường Canada và chia sẻ 3 bộ prompt kịch bản đính kèm"
       },
       {
-        "time": "07:37",
-        "seconds": 457,
-        "label": "về anh em làm"
+        "time": "07:40",
+        "seconds": 460,
+        "label": "Khai thác bảng danh sách kênh nguồn video camera cảnh sát (Bodycam)"
       },
       {
-        "time": "10:52",
-        "seconds": 652,
-        "label": "Đấy anh em có thể nghi vay nhiều cái voice"
+        "time": "11:20",
+        "seconds": 680,
+        "label": "Quy trình lọc footage, cắt ghép trên CapCut và tạo voiceover phù hợp"
       },
       {
-        "time": "13:54",
-        "seconds": 834,
-        "label": "Tắt kiếm tiền cả nha"
+        "time": "15:10",
+        "seconds": 910,
+        "label": "Tổng kết quy trình A-Z và các lưu ý an toàn tài khoản khi làm view ngoại"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -3383,54 +3409,68 @@
   "VIDEO-5cb825": {
     "sku": "VIDEO-5cb825",
     "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Lấy + Tạo Kịch Bản Từ Kênh Đối Thủ",
-    "actual_topic": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Lấy + Tạo Kịch Bản Từ Kênh Đối Thủ",
+    "actual_topic": "Phương Pháp Đảo Ngược Kịch Bản Đối Thủ Triệu View (Reverse Engineering): Dùng Tool Bóc Tách Phụ Đề & Prompt ChatGPT Tái Tạo Kịch Bản Khắc Kỷ Độc Bản",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
-    "target_market": "Việt Nam",
-    "market_code": "VN",
+    "target_market": "Toàn Cầu / Ngoại (Thị Trường Stoicism Tiếng Anh)",
+    "market_code": "GLOBAL",
     "key_takeaways": [
-      "000 đô nè Vậy là kênh này vừa lập tháng 3 nè Cách đây cũng tầm 3 tháng thôi mọi người Rồi cái bơ bờ của cái kênh này Thì gần 6 chấm nha mọi người Đấy 5",
-      "Kênh này thì gần đây phải nói là view của nó rất là ổn luôn nha, rất là cao",
-      "Rồi, em sẽ show thêm một vài kênh đối thủ khác nhau nữa nha",
-      "Để mọi người tham khảo qua cái gì thì mọi người cứ chọn lọc ra về làm nha"
+      "📌 Show Doanh Thu Thực Tế 7 Ngày Bằng VNĐ: Mở ứng dụng điện thoại chứng minh doanh thu thực tế đều đặn hàng tuần từ các kênh triết lý view ngoại, khẳng định tính khả thi của quy trình.",
+      "📌 Bóc Tách 6-7 Kênh Đối Thủ Đang Bùng Nổ: Phân tích các kênh triết lý khắc kỷ mới lập 3 tuần đến 1 tháng nhưng đã cán mốc 1 triệu view, view tăng trưởng cực kỳ ổn định.",
+      "📌 Phương Pháp Đảo Ngược Kịch Bản (Reverse Engineering): Sử dụng tool bóc tách toàn bộ phụ đề và lời thoại của video triệu view đối thủ, sau đó dùng prompt ChatGPT phân tích cấu trúc và viết lại kịch bản mới hoàn toàn độc bản.",
+      "📌 Tạo Trọn Bộ Title, Description & Prompt Ảnh Trong 1 Lệnh: Bộ prompt thông minh tự động sinh ra kịch bản dài 20–30 phút kèm theo tiêu đề giật CTR, mô tả SEO và prompt tạo ảnh AI từng phân cảnh.",
+      "📌 Chuyển Hóa Kịch Bản Thành Video Hoàn Chỉnh: Đưa kịch bản vào ElevenLabs tạo giọng đọc nam trầm triết lý, kết hợp hình ảnh tượng đá cổ đại và stock video trên CapCut."
     ],
     "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
+      "primary": "Quy trình 4 bước bóc tách và tái cấu trúc kịch bản video triệu view của đối thủ thành sản phẩm độc bản",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Trích xuất toàn bộ transcript đối thủ bằng công cụ trực tuyến miễn phí",
+        "Chạy prompt đảo ngược kịch bản trên ChatGPT để tạo cốt truyện mới cùng chủ đề",
+        "Sinh hình ảnh tượng đá cổ đại và video thiên nhiên minh họa theo từng đoạn thoại",
+        "Dựng hoàn thiện trên CapCut với phụ đề tiếng Anh font chữ thanh lịch"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Tuyệt đối không sao chép nguyên văn lời thoại đối thủ để tránh vi phạm chính sách nội dung trùng lặp",
+      "Không yêu cầu AI viết kịch bản 30 phút trong 1 lần; phải chia nhỏ 800-1.000 từ mỗi lượt",
+      "Kiểm tra kỹ câu từ tiếng Anh sau khi ChatGPT tạo để đảm bảo tính triết lý tự nhiên"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Transcript Extractor",
+      "ChatGPT Plus",
+      "ElevenLabs",
+      "CapCut Desktop",
+      "Notepad++"
+    ],
+    "channels_mentioned": [
+      "Kênh Đối Thủ Triết Lý Khắc Kỷ Triệu View"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Xin chào tất cả mọi người nha"
+        "label": "Show doanh thu 7 ngày thực tế trên ứng dụng điện thoại"
       },
       {
-        "time": "02:14",
-        "seconds": 134,
-        "label": "Để em đo xem thử nha, kênh này thì 42 video nha mọi người"
+        "time": "01:50",
+        "seconds": 110,
+        "label": "Phân tích 6-7 kênh đối thủ ngách triết lý khắc kỷ mới lập đạt triệu view"
       },
       {
-        "time": "04:18",
-        "seconds": 258,
-        "label": "Để cho nó ok hơn"
+        "time": "04:10",
+        "seconds": 250,
+        "label": "Hướng dẫn sử dụng công cụ bóc tách phụ đề video YouTube đối thủ miễn phí"
       },
       {
-        "time": "06:19",
-        "seconds": 379,
-        "label": "Đấy bây giờ thì mọi người bấm tiếp tục nè"
+        "time": "06:30",
+        "seconds": 390,
+        "label": "Nhập prompt ChatGPT đảo ngược kịch bản và chia nhỏ phần viết sâu sắc"
       },
       {
-        "time": "08:57",
-        "seconds": 537,
-        "label": "nó kêu mọi người thì nếu muốn ghi rõ ràng ra thì mọi người bấm ch…"
+        "time": "09:10",
+        "seconds": 550,
+        "label": "Tạo giọng đọc ElevenLabs và ghép nối timeline video hoàn chỉnh trên CapCut"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -4772,57 +4812,68 @@
   "VIDEO-891f32": {
     "sku": "VIDEO-891f32",
     "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Tạo Kịch Bản Dài Hơn 2 Tiếng Trên ChatGPT",
-    "actual_topic": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Tạo Kịch Bản Dài Hơn 2 Tiếng Trên ChatGPT",
+    "actual_topic": "Chiến Thuật Video Dài Trên 2 Tiếng Đạt RPM Kỷ Lục 1: Quy Trình Prompt ChatGPT Viết Kịch Bản Trường Thiên & Phân Tích Kênh Lịch Sử 2.2 Triệu View",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
-    "target_market": "Mỹ / Ngoại",
-    "market_code": "US",
+    "target_market": "Hoa Kỳ & Châu Âu (Thị Trường Phim Tài Liệu Dài)",
+    "market_code": "GLOBAL",
     "key_takeaways": [
-      "Rồi, bây giờ thì nó sẽ ra thôi",
-      "Chỉ cần đợi về lấy kịch bản của mình làm thôi mọi người",
-      "Em sẽ tour qua cái bước này nha bởi vì cái bước này nó khá là lâu",
-      "Đấy, mọi người thấy không"
+      "📌 RPM Kỷ Lục 1 / 1.000 View Từ Video Dài Trên 2 Tiếng: Chứng minh số liệu kênh lịch sử với chỉ số RPM đạt mức khó tin 1 USD (hơn 500.000 VNĐ / 1.000 view) nhờ thời lượng xem AVD cực dài và phân bổ nhiều mid-roll ads.",
+      "📌 Sức Hút Khổng Lồ Của Kênh Lịch Sử Dài Tập: Phân tích kênh đối thủ chỉ đăng 4 video nhưng có video đạt 2.2 triệu view trong 2 tuần và 1 triệu view trong 12 ngày.",
+      "📌 Quy Trình Prompt ChatGPT Viết Kịch Bản Dài Trên 2 Tiếng: Phương pháp chia nhỏ kịch bản thành các chương hồi (mỗi chương 1.500–2.500 từ) và sử dụng lệnh tiếp tục tuần tự để tạo ra kịch bản trường thiên sâu sắc.",
+      "📌 Kỹ Thuật Đọc Và Ghép Nối Âm Thanh Hàng Loạt: Hướng dẫn copy từng chương vào Notepad++, đưa vào ElevenLabs render voiceover theo từng block và nối liền mạch trên timeline CapCut.",
+      "📌 Tạo 10 Prompt Ảnh AI Cho Mỗi Phân Cảnh: Cách yêu cầu ChatGPT sinh tự động danh sách prompt tạo ảnh minh họa chi tiết theo từng đoạn kịch bản giúp việc dựng phim diễn ra nhanh chóng."
     ],
     "edit_sop": {
-      "primary": "Thì mình sẽ đem cái kịch bản này mình tạo âm thanh nha mọi người",
+      "primary": "Quy trình sản xuất phim tài liệu lịch sử trường thiên dài 2 tiếng tối ưu hóa doanh thu RPM 1",
       "additional": [
-        "Rồi mọi người sẽ truy cập vào con web 11lab này để tạo âm thanh nha",
-        "Về cái phần mà view ngọi để cho cái âm thanh mà ổn định và hay nhất á"
+        "Lập đề cương chi tiết 6 chương lớn trước khi yêu cầu AI viết từng phần",
+        "Xuất file kịch bản từng chương 2.000 từ lưu trữ có hệ thống trên Notepad++",
+        "Tạo giọng đọc ElevenLabs theo từng đoạn và ghép nối mượt mà trên CapCut",
+        "Thiết lập 8-12 điểm chèn quảng cáo tự nhiên giữa các chương hồi"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Không yêu cầu AI viết kịch bản 2 tiếng trong một lần bấm lệnh (gây đứt đoạn và nông cạn nội dung)",
+      "Tránh chèn quảng cáo quá dày đặc ở 5 phút đầu tiên khiến khán giả thoát video",
+      "Kiểm tra kỹ các mốc thời gian và sự kiện lịch sử trong kịch bản để tránh sai sót kiến thức"
     ],
     "tools_mentioned": [
-      "Runway"
+      "ChatGPT Plus",
+      "ElevenLabs",
+      "CapCut Pro",
+      "Notepad++",
+      "YouTube Studio Analytics"
     ],
-    "channels_mentioned": [],
+    "channels_mentioned": [
+      "Kênh Lịch Sử Dài Tập Triệu View"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Ừ ok em xin chào tất cả mọi người nha trước khi vào clip hướng dẫ…"
+        "label": "Show bằng chứng doanh thu RPM kỷ lục 1 của kênh làm video trên 1-2 tiếng"
       },
       {
-        "time": "02:58",
-        "seconds": 178,
-        "label": "Đấy để anh em nói là dùng AI này kia thì không được bật kiếm tiền"
+        "time": "02:30",
+        "seconds": 150,
+        "label": "Phân tích kênh lịch sử mới đăng 4 video hút 2.2 triệu view trong 2 tuần"
       },
       {
-        "time": "05:14",
-        "seconds": 314,
-        "label": "Thì nãy em cũng có nói qua rồi nha"
+        "time": "05:10",
+        "seconds": 310,
+        "label": "Hướng dẫn bộ prompt ChatGPT lập cấu trúc kịch bản trường thiên trên 2 tiếng"
       },
       {
-        "time": "08:17",
-        "seconds": 497,
-        "label": "Rồi ngay sau khi import xong thì em sẽ cho nó chạy nha"
+        "time": "08:20",
+        "seconds": 500,
+        "label": "Kỹ thuật chạy lệnh tiếp tục từng chương và ghép nối file kịch bản trên Notepad++"
       },
       {
-        "time": "11:13",
-        "seconds": 673,
-        "label": "Thì mọi người sẽ wear con cắt quýt này để cho edit video nha"
+        "time": "11:15",
+        "seconds": 675,
+        "label": "Tạo giọng đọc ElevenLabs hàng loạt và quản lý tài nguyên dựng CapCut"
       }
     ],
     "analysis_method": "local_transcript_heuristic",

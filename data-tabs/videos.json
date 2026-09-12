@@ -3062,6 +3062,11 @@
         "name": "LIST NGUỒN KÊNH/ VIDEO KEY CAM CẢNH SÁT (key Việt)",
         "link": "https://docs.google.com/spreadsheets/d/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I/edit?usp=sharing",
         "file": "assets/docs/VIDEO-5c3116/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I.csv"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-5c3116/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -3076,19 +3081,31 @@
     "title": "Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube",
     "index": 120,
     "market": [
-      "🇻🇳 Việt"
+      "🌐 Ngoại"
     ],
     "niche": "Bán Content & Phát Triển Kênh",
     "size": 381209570,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Thực Chiến — Bán Content Ngách Lịch Sử Cổ Đại (La Mã)",
+        "file": "assets/docs/VIDEO-3df94e/SOP-BAN-CONTENT-LICH-SU-CO-DAI-ROME.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-3df94e/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "https://h2dev.vn/learn/study/hon-18k-thang-kenh-nay-da-kiem-duoc-share-key-view-ngoai-va-quy-trinh-lam-ai-ban-content-youtube",
     "mp4": "video/VIDEO-3df94e/VIDEO-3df94e.mp4",
     "image": "assets/thumbs/VIDEO-3df94e.jpeg",
     "published_at": "2025-08-20",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "country": "US"
   },
   {
     "sku": "VIDEO-5cb825",
@@ -3101,7 +3118,18 @@
     "size": 256489327,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "Bộ Prompt Chuẩn — Trích Xuất & Tái Cấu Trúc Kịch Bản Kênh Đối Thủ",
+        "file": "assets/docs/VIDEO-5cb825/PROMPT-LAY-VA-TAO-KICH-BAN-DOI-THU.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-5cb825/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "https://h2dev.vn/learn/study/share-key-va-huong-dan-lam-youtube-view-ngoai-va-prompt-lay-tao-kich-ban-tu-kenh-doi-thu",
     "mp4": "video/VIDEO-5cb825/VIDEO-5cb825.mp4",
@@ -3120,7 +3148,18 @@
     "size": 354567363,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "Bộ Prompt Chuẩn — Tạo Kịch Bản Video Dài Hơn 2 Tiếng Trên ChatGPT",
+        "file": "assets/docs/VIDEO-891f32/PROMPT-TAO-KICH-BAN-DAI-2-TIENG-CHATGPT.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-891f32/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "https://h2dev.vn/learn/study/share-key-va-huong-dan-lam-youtube-view-ngoai-va-prompt-tao-kich-ban-dai-hon-2-tieng-tren-chatgpt",
     "mp4": "video/VIDEO-891f32/VIDEO-891f32.mp4",

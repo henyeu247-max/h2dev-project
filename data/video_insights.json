@@ -1675,9 +1675,9 @@
     "target_market": "🇰🇷 Hàn / 🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "Thì như cái form hôm trước là làm về thị trường Việt nè",
+      "Thì như cái form prompt hôm trước là làm về thị trường Việt nè",
       "Thị trường Việt này thì hôm trước em kế hướng nhau mọi người nè",
-      "Là cái form này em cũng share luôn rồi á",
+      "Là cái form prompt này em cũng share luôn rồi á",
       "Là cái này là dịch từ bản là từ US sang Việt Nam nha"
     ],
     "edit_sop": {
@@ -1912,7 +1912,7 @@
     "market_code": "JP",
     "key_takeaways": [
       "Thì cái video hôm nay thì em sẽ update thêm cho mọi người một vài cái kỳ mới và cũng như là một vài cái thị trường khác nhau luôn nha mọi người",
-      "Và cũng như là em sẽ hướng dẫn thêm cho mọi người về cách tự làm cái forum để mình lấy kịch bản theo cái chủ đề, theo cái kênh mà mình muốn luôn nha",
+      "Và cũng như là em sẽ hướng dẫn thêm cho mọi người về cách tự làm cái prompt để mình lấy kịch bản theo cái chủ đề, theo cái kênh mà mình muốn luôn nha",
       "000 view nè Về 10 ngày trước Còn cái video sát bơn á thì hơn Cũng hơn 200",
       "000 lượt xem Cái video này 2 ngày trước 36"
     ],
@@ -4586,7 +4586,7 @@
     "market_code": "JP",
     "key_takeaways": [
       "Thì cái video mới này em sẽ tiếp tục share kia cho mọi người nha",
-      "Đấy, thì trước khi share kia thì các bộ số anh em hỏi về cũng như là không biết cái chỗ mà lấy forum cũng như là tài liệu chỗ nào ấy",
+      "Đấy, thì trước khi share kia thì các bộ số anh em hỏi về cũng như là không biết cái chỗ mà lấy prompt cũng như là tài liệu chỗ nào ấy",
       "Thì em hướng dẫn, sẵn chỗ này em hướng dẫn luôn nha mọi người",
       "Thì mọi người để ý cái chỗ dưới chỗ danh mục nó có cái phần mô tả về cái phần bình luận ấy"
     ],
@@ -4802,7 +4802,7 @@
       {
         "time": "05:50",
         "seconds": 350,
-        "label": "Đấy forum cách trên các kiểu thì em cũng đã hướng dẫn rồi"
+        "label": "Đấy prompt cách trên các kiểu thì em cũng đã hướng dẫn rồi"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -6106,7 +6106,7 @@
       {
         "time": "03:07",
         "seconds": 187,
-        "label": "thì em đã có hướng dẫn mọi người tự viết from rồi."
+        "label": "thì em đã có hướng dẫn mọi người tự viết prompt rồi."
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -6246,7 +6246,7 @@
     "market_code": "GLOBAL",
     "key_takeaways": [
       "Tiếp tới là cái video này sẽ hướng dẫn cho mọi người cách làm ra cái thông bờ của cái cây người huy đấy nha",
-      "Cái from này thì em cũng đã có sẽ ở trên kênh youtube của em rồi",
+      "cái prompt này thì em cũng đã có sẽ ở trên kênh youtube của em rồi",
       "Có gì em sẽ để lại ở trong cái file trong cái thư mục này cho mọi người luôn nha",
       "Đấy bây giờ thì mọi người cứ làm theo hướng dẫn là được nha"
     ],

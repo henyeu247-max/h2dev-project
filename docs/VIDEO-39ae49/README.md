@@ -14,7 +14,7 @@
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
 - Thì cái video hôm nay thì em sẽ update thêm cho mọi người một vài cái kỳ mới và cũng như là một vài cái thị trường khác nhau luôn nha mọi người
-- Và cũng như là em sẽ hướng dẫn thêm cho mọi người về cách tự làm cái forum để mình lấy kịch bản theo cái chủ đề, theo cái kênh mà mình muốn luôn nha
+- Và cũng như là em sẽ hướng dẫn thêm cho mọi người về cách tự làm cái prompt để mình lấy kịch bản theo cái chủ đề, theo cái kênh mà mình muốn luôn nha
 - 000 view nè Về 10 ngày trước Còn cái video sát bơn á thì hơn Cũng hơn 200
 - 000 lượt xem Cái video này 2 ngày trước 36
 

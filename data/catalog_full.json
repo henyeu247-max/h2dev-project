@@ -26,7 +26,10 @@
     "market_code": "JP",
     "duration": "10:00",
     "total_view": 1130,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-484f9e",
@@ -54,7 +57,10 @@
     "market_code": "VN",
     "duration": "09:39",
     "total_view": 1464,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-e24c31",
@@ -82,7 +88,11 @@
     "market_code": "KR",
     "duration": "10:09",
     "total_view": 1837,
-    "market": "🌐 Ngoại, 🇰🇷 Hàn"
+    "market": "🌐 Ngoại, 🇰🇷 Hàn",
+    "tags": [
+      "Ngoại",
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-a7bfd0",
@@ -110,7 +120,11 @@
     "market_code": "KR",
     "duration": "10:27",
     "total_view": 1700,
-    "market": "🇰🇷 Hàn, 🇻🇳 Việt"
+    "market": "🇰🇷 Hàn, 🇻🇳 Việt",
+    "tags": [
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-4b3c09",
@@ -141,7 +155,10 @@
     "market_code": "KR",
     "duration": "16:21",
     "total_view": 1676,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-28e1cc",
@@ -182,7 +199,11 @@
     "market_code": "VN",
     "duration": "20:16",
     "total_view": 1876,
-    "market": "🇻🇳 Việt, 🇨🇳 Trung"
+    "market": "🇻🇳 Việt, 🇨🇳 Trung",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-d2cd90",
@@ -239,7 +260,10 @@
     "market_code": "JP",
     "duration": "10:05",
     "total_view": 2287,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-9aff6d",
@@ -295,7 +319,10 @@
     "market_code": "JP",
     "duration": "12:11",
     "total_view": 2172,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-e90874",
@@ -331,7 +358,10 @@
     "market_code": "GLOBAL",
     "duration": "18:33",
     "total_view": 2803,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-c5837a",
@@ -400,7 +430,12 @@
     "market_code": "JP",
     "duration": "10:09",
     "total_view": 2804,
-    "market": "🇯🇵 Nhật, 🇰🇷 Hàn, 🇻🇳 Việt"
+    "market": "🇯🇵 Nhật, 🇰🇷 Hàn, 🇻🇳 Việt",
+    "tags": [
+      "Nhật",
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-348217",
@@ -439,7 +474,11 @@
     "market_code": "KR",
     "duration": "06:32",
     "total_view": 2682,
-    "market": "🇰🇷 Hàn, 🇯🇵 Nhật"
+    "market": "🇰🇷 Hàn, 🇯🇵 Nhật",
+    "tags": [
+      "Hàn",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-f74bb1",
@@ -485,7 +524,10 @@
     "market_code": "KR",
     "duration": "10:58",
     "total_view": 2162,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-1aaf46",
@@ -541,7 +583,10 @@
     "market_code": "CN",
     "duration": "10:07",
     "total_view": 2348,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-21956b",
@@ -616,7 +661,12 @@
     "market_code": "JP",
     "duration": "10:03",
     "total_view": 1884,
-    "market": "🇰🇷 Hàn, 🇯🇵 Nhật, 🇻🇳 Việt"
+    "market": "🇰🇷 Hàn, 🇯🇵 Nhật, 🇻🇳 Việt",
+    "tags": [
+      "Hàn",
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-e91589",
@@ -652,7 +702,11 @@
     "market_code": "JP",
     "duration": "03:29",
     "total_view": 15075,
-    "market": "🇯🇵 Nhật, 🇻🇳 Việt"
+    "market": "🇯🇵 Nhật, 🇻🇳 Việt",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-34c92b",
@@ -677,7 +731,11 @@
     "market_code": "JP",
     "duration": "10:11",
     "total_view": 1729,
-    "market": "🇯🇵 Nhật, 🇻🇳 Việt"
+    "market": "🇯🇵 Nhật, 🇻🇳 Việt",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-21824a",
@@ -713,7 +771,10 @@
     "market_code": "VN",
     "duration": "03:01",
     "total_view": 6591,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-84a039",
@@ -752,7 +813,11 @@
     "market_code": "JP",
     "duration": "10:09",
     "total_view": 2135,
-    "market": "🌐 Ngoại, 🇯🇵 Nhật"
+    "market": "🌐 Ngoại, 🇯🇵 Nhật",
+    "tags": [
+      "Ngoại",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-817ae6",
@@ -791,7 +856,11 @@
     "market_code": "JP",
     "duration": "05:44",
     "total_view": 1574,
-    "market": "🇯🇵 Nhật, 🇻🇳 Việt"
+    "market": "🇯🇵 Nhật, 🇻🇳 Việt",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-4425fc",
@@ -816,7 +885,10 @@
     "market_code": "GLOBAL",
     "duration": "09:11",
     "total_view": 2613,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-2de9e4",
@@ -861,7 +933,10 @@
     "market_code": "VN",
     "duration": "05:02",
     "total_view": 1843,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-2ba0d1",
@@ -924,7 +999,10 @@
     "market_code": "JP",
     "duration": "06:20",
     "total_view": 1530,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-5d54d0",
@@ -962,7 +1040,10 @@
     "market_code": "JP",
     "duration": "60:58",
     "total_view": 6090,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-2277b3",
@@ -987,7 +1068,10 @@
     "market_code": "VN",
     "duration": "10:04",
     "total_view": 1965,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-f77c31",
@@ -1023,7 +1107,10 @@
     "market_code": "VN",
     "duration": "02:08",
     "total_view": 8424,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-ca0b1a",
@@ -1054,7 +1141,11 @@
     "market_code": "VN",
     "duration": "31:29",
     "total_view": 3013,
-    "market": "🇺🇸 Mỹ, 🇻🇳 Việt"
+    "market": "🇺🇸 Mỹ, 🇻🇳 Việt",
+    "tags": [
+      "Mỹ",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-54c8f7",
@@ -1085,7 +1176,10 @@
     "market_code": "JP",
     "duration": "72:33",
     "total_view": 8287,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-3e943c",
@@ -1110,7 +1204,10 @@
     "market_code": "GLOBAL",
     "duration": "04:42",
     "total_view": 2736,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-469cb5",
@@ -1167,7 +1264,11 @@
     "market_code": "US",
     "duration": "03:08",
     "total_view": 3946,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-7312df",
@@ -1192,7 +1293,11 @@
     "market_code": "GLOBAL",
     "duration": "02:02",
     "total_view": 1396,
-    "market": "🌐 Ngoại, 🇨🇳 Trung"
+    "market": "🌐 Ngoại, 🇨🇳 Trung",
+    "tags": [
+      "Ngoại",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-2235fb",
@@ -1217,7 +1322,12 @@
     "market_code": "VN",
     "duration": "04:00",
     "total_view": 1494,
-    "market": "🇺🇸 Mỹ, 🇹🇭 Thái, 🇻🇳 Việt"
+    "market": "🇺🇸 Mỹ, 🇹🇭 Thái, 🇻🇳 Việt",
+    "tags": [
+      "Mỹ",
+      "Thái",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-e9e879",
@@ -1242,7 +1352,10 @@
     "market_code": "CN",
     "duration": "10:02",
     "total_view": 1653,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-6283a6",
@@ -1278,7 +1391,10 @@
     "market_code": "VN",
     "duration": "02:52",
     "total_view": 3081,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-46c57e",
@@ -1319,7 +1435,10 @@
     "market_code": "GLOBAL",
     "duration": "02:55",
     "total_view": 13366,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-b1208e",
@@ -1344,7 +1463,10 @@
     "market_code": "CN",
     "duration": "04:35",
     "total_view": 1417,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-1acb10",
@@ -1369,7 +1491,10 @@
     "market_code": "CN",
     "duration": "04:32",
     "total_view": 1418,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-a1c98f",
@@ -1394,7 +1519,10 @@
     "market_code": "GLOBAL",
     "duration": "15:00",
     "total_view": 2202,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-70f1f1",
@@ -1439,7 +1567,10 @@
     "market_code": "KR",
     "duration": "04:02",
     "total_view": 1561,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-33f474",
@@ -1464,7 +1595,10 @@
     "market_code": "JP",
     "duration": "05:32",
     "total_view": 2071,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-28bb9b",
@@ -1489,7 +1623,11 @@
     "market_code": "CN",
     "duration": "03:38",
     "total_view": 1773,
-    "market": "🇻🇳 Việt, 🇨🇳 Trung"
+    "market": "🇻🇳 Việt, 🇨🇳 Trung",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-9f9fbc",
@@ -1514,7 +1652,10 @@
     "market_code": "JP",
     "duration": "20:02",
     "total_view": 7319,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-10f129",
@@ -1553,7 +1694,10 @@
     "market_code": "JP",
     "duration": "05:01",
     "total_view": 1865,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-2553da",
@@ -1584,7 +1728,10 @@
     "market_code": "CN",
     "duration": "03:33",
     "total_view": 1770,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-3fd0d9",
@@ -1618,7 +1765,10 @@
     "market_code": "CN",
     "duration": "02:02",
     "total_view": 1479,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-502960",
@@ -1651,7 +1801,10 @@
     "market_code": "JP",
     "duration": "05:14",
     "total_view": 1767,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-9873fb",
@@ -1676,7 +1829,10 @@
     "market_code": "JP",
     "duration": "04:36",
     "total_view": 3518,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-10ceec",
@@ -1709,7 +1865,10 @@
     "market_code": "CN",
     "duration": "03:27",
     "total_view": 1897,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-e83319",
@@ -1748,7 +1907,10 @@
     "market_code": "JP",
     "duration": "10:00",
     "total_view": 2163,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-9a6957",
@@ -1782,7 +1944,10 @@
     "market_code": "KR",
     "duration": "03:44",
     "total_view": 1525,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-ba3904",
@@ -1813,7 +1978,10 @@
     "market_code": "VN",
     "duration": "04:27",
     "total_view": 5873,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-acd33f",
@@ -1853,7 +2021,10 @@
     "market_code": "CN",
     "duration": "03:28",
     "total_view": 1628,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-1a7f58",
@@ -1892,7 +2063,11 @@
     "market_code": "JP",
     "duration": "05:02",
     "total_view": 1813,
-    "market": "🇰🇷 Hàn, 🇯🇵 Nhật"
+    "market": "🇰🇷 Hàn, 🇯🇵 Nhật",
+    "tags": [
+      "Hàn",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-5785a5",
@@ -1925,7 +2100,11 @@
     "market_code": "CN",
     "duration": "10:15",
     "total_view": 1978,
-    "market": "🇻🇳 Việt, 🇨🇳 Trung"
+    "market": "🇻🇳 Việt, 🇨🇳 Trung",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-64130d",
@@ -1962,7 +2141,11 @@
     "duration": "07:22",
     "total_view": 4667,
     "market": "🇻🇳 Việt, 🇨🇳 Trung",
-    "country": "VN"
+    "country": "VN",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-5c0b20",
@@ -2013,7 +2196,12 @@
     "market_code": "JP",
     "duration": "05:40",
     "total_view": 1540,
-    "market": "🇺🇸 Mỹ, 🇰🇷 Hàn, 🇻🇳 Việt"
+    "market": "🇺🇸 Mỹ, 🇰🇷 Hàn, 🇻🇳 Việt",
+    "tags": [
+      "Mỹ",
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-3f85a1",
@@ -2052,7 +2240,11 @@
     "market_code": "JP",
     "duration": "05:04",
     "total_view": 1574,
-    "market": "🇨🇦 Canada, 🇯🇵 Nhật"
+    "market": "🇨🇦 Canada, 🇯🇵 Nhật",
+    "tags": [
+      "Canada",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-bf7b32",
@@ -2085,7 +2277,10 @@
     "market_code": "KR",
     "duration": "05:07",
     "total_view": 1652,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-4a5aac",
@@ -2123,7 +2318,10 @@
     "market_code": "CN",
     "duration": "04:08",
     "total_view": 1748,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-a2b317",
@@ -2172,7 +2370,12 @@
     "market_code": "VN",
     "duration": "07:08",
     "total_view": 1669,
-    "market": "🇺🇸 Mỹ, 🇷🇺 Nga, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🇷🇺 Nga, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Nga",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-2469ee",
@@ -2211,7 +2414,10 @@
     "market_code": "CN",
     "duration": "04:04",
     "total_view": 1457,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-dbd487",
@@ -2242,7 +2448,10 @@
     "market_code": "CN",
     "duration": "01:56",
     "total_view": 3372,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-d71802",
@@ -2281,7 +2490,10 @@
     "market_code": "JP",
     "duration": "02:11",
     "total_view": 1498,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-d20744",
@@ -2337,7 +2549,10 @@
     "market_code": "CN",
     "duration": "01:04",
     "total_view": 4581,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-33d701",
@@ -2383,7 +2598,11 @@
     "market_code": "JP",
     "duration": "08:47",
     "total_view": 1811,
-    "market": "🇯🇵 Nhật, 🇻🇳 Việt"
+    "market": "🇯🇵 Nhật, 🇻🇳 Việt",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-7e00ee",
@@ -2422,7 +2641,10 @@
     "market_code": "JP",
     "duration": "10:44",
     "total_view": 2373,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-ff9be6",
@@ -2447,7 +2669,10 @@
     "market_code": "GLOBAL",
     "duration": "05:31",
     "total_view": 3824,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-6ad3fe",
@@ -2472,7 +2697,10 @@
     "market_code": "CN",
     "duration": "04:28",
     "total_view": 3158,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-7f0bb4",
@@ -2497,7 +2725,10 @@
     "market_code": "CN",
     "duration": "04:13",
     "total_view": 4121,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-7db740",
@@ -2522,7 +2753,10 @@
     "market_code": "CN",
     "duration": "03:21",
     "total_view": 4642,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-546afa",
@@ -2561,7 +2795,11 @@
     "market_code": "JP",
     "duration": "05:00",
     "total_view": 1853,
-    "market": "🇯🇵 Nhật, 🇻🇳 Việt"
+    "market": "🇯🇵 Nhật, 🇻🇳 Việt",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-d84a78",
@@ -2602,7 +2840,11 @@
     "market_code": "KR",
     "duration": "07:54",
     "total_view": 17474,
-    "market": "🇰🇷 Hàn, 🇻🇳 Việt"
+    "market": "🇰🇷 Hàn, 🇻🇳 Việt",
+    "tags": [
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-c1bd51",
@@ -2633,7 +2875,10 @@
     "market_code": "CN",
     "duration": "16:21",
     "total_view": 3921,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-026112",
@@ -2672,7 +2917,10 @@
     "market_code": "CN",
     "duration": "04:23",
     "total_view": 2244,
-    "market": "🇨🇳 Trung"
+    "market": "🇨🇳 Trung",
+    "tags": [
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-e25d3b",
@@ -2706,7 +2954,11 @@
     "market_code": "KR",
     "duration": "06:24",
     "total_view": 1843,
-    "market": "🇰🇷 Hàn, 🇺🇸 Mỹ"
+    "market": "🇰🇷 Hàn, 🇺🇸 Mỹ",
+    "tags": [
+      "Hàn",
+      "Mỹ"
+    ]
   },
   {
     "sku": "VIDEO-bdfab7",
@@ -2739,7 +2991,10 @@
     "market_code": "JP",
     "duration": "25:06",
     "total_view": 10545,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-e95a8f",
@@ -2792,7 +3047,10 @@
     "market_code": "VN",
     "duration": "03:26",
     "total_view": 1842,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-91bb96",
@@ -2825,7 +3083,11 @@
     "market_code": "US",
     "duration": "01:45",
     "total_view": 1952,
-    "market": "🇺🇸 Mỹ, 🇨🇦 Canada"
+    "market": "🇺🇸 Mỹ, 🇨🇦 Canada",
+    "tags": [
+      "Mỹ",
+      "Canada"
+    ]
   },
   {
     "sku": "VIDEO-8b69c9",
@@ -2870,7 +3132,11 @@
     "market_code": "JP",
     "duration": "07:18",
     "total_view": 2093,
-    "market": "🇰🇷 Hàn, 🇯🇵 Nhật"
+    "market": "🇰🇷 Hàn, 🇯🇵 Nhật",
+    "tags": [
+      "Hàn",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-35014d",
@@ -2909,7 +3175,11 @@
     "market_code": "JP",
     "duration": "10:13",
     "total_view": 3975,
-    "market": "🇯🇵 Nhật, 🇰🇷 Hàn"
+    "market": "🇯🇵 Nhật, 🇰🇷 Hàn",
+    "tags": [
+      "Nhật",
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-cb907b",
@@ -2945,7 +3215,11 @@
     "market_code": "CN",
     "duration": "31:16",
     "total_view": 8373,
-    "market": "🇻🇳 Việt, 🇨🇳 Trung"
+    "market": "🇻🇳 Việt, 🇨🇳 Trung",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-34f417",
@@ -2996,7 +3270,12 @@
     "market_code": "JP",
     "duration": "06:19",
     "total_view": 2437,
-    "market": "🇻🇳 Việt, 🇰🇷 Hàn, 🇯🇵 Nhật"
+    "market": "🇻🇳 Việt, 🇰🇷 Hàn, 🇯🇵 Nhật",
+    "tags": [
+      "Việt",
+      "Hàn",
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-1b4be3",
@@ -3027,7 +3306,11 @@
     "market_code": "JP",
     "duration": "11:55",
     "total_view": 4026,
-    "market": "🇯🇵 Nhật, 🇻🇳 Việt"
+    "market": "🇯🇵 Nhật, 🇻🇳 Việt",
+    "tags": [
+      "Nhật",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-ec9c50",
@@ -3063,7 +3346,10 @@
     "market_code": "GLOBAL",
     "duration": "01:41",
     "total_view": 6876,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-134a25",
@@ -3102,7 +3388,10 @@
     "market_code": "JP",
     "duration": "05:37",
     "total_view": 2700,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-5fd052",
@@ -3147,7 +3436,10 @@
     "market_code": "JP",
     "duration": "05:33",
     "total_view": 2746,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-00136f",
@@ -3172,7 +3464,10 @@
     "market_code": "GLOBAL",
     "duration": "04:39",
     "total_view": 2402,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-9ea5e3",
@@ -3197,7 +3492,10 @@
     "market_code": "GLOBAL",
     "duration": "14:01",
     "total_view": 3530,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-2ed37a",
@@ -3230,7 +3528,11 @@
     "market_code": "US",
     "duration": "02:31",
     "total_view": 2454,
-    "market": "🇺🇸 Mỹ, 🇵🇭 Phil"
+    "market": "🇺🇸 Mỹ, 🇵🇭 Phil",
+    "tags": [
+      "Mỹ",
+      "Philippines"
+    ]
   },
   {
     "sku": "VIDEO-54422c",
@@ -3264,7 +3566,10 @@
     "market_code": "JP",
     "duration": "31:40",
     "total_view": 7818,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-af606d",
@@ -3297,7 +3602,10 @@
     "market_code": "KR",
     "duration": "04:00",
     "total_view": 2226,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-9ef6fe",
@@ -3330,7 +3638,11 @@
     "market_code": "JP",
     "duration": "03:08",
     "total_view": 2979,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-7ae3d6",
@@ -3363,7 +3675,10 @@
     "market_code": "VN",
     "duration": "03:03",
     "total_view": 2075,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-86c1ec",
@@ -3397,7 +3712,10 @@
     "market_code": "KR",
     "duration": "03:02",
     "total_view": 1832,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-3e5a21",
@@ -3422,7 +3740,10 @@
     "market_code": "KR",
     "duration": "02:23",
     "total_view": 2659,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-ffccd2",
@@ -3455,7 +3776,10 @@
     "market_code": "KR",
     "duration": "02:24",
     "total_view": 1452,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-de2564",
@@ -3488,7 +3812,10 @@
     "market_code": "JP",
     "duration": "03:42",
     "total_view": 1833,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-2aa1f7",
@@ -3575,7 +3902,11 @@
     "duration": "18:03",
     "total_view": 47326,
     "market": "🇺🇸 Mỹ, 🌐 Ngoại",
-    "country": "US"
+    "country": "US",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-5fe83a",
@@ -3620,7 +3951,10 @@
     "market_code": "VN",
     "duration": "03:17",
     "total_view": 2218,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-3ae732",
@@ -3659,7 +3993,11 @@
     "market_code": "VN",
     "duration": "03:40",
     "total_view": 2047,
-    "market": "🇺🇸 Mỹ, 🇻🇳 Việt"
+    "market": "🇺🇸 Mỹ, 🇻🇳 Việt",
+    "tags": [
+      "Mỹ",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-458892",
@@ -3705,7 +4043,11 @@
     "market_code": "GLOBAL",
     "duration": "17:07",
     "total_view": 24017,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-806c0c",
@@ -3736,7 +4078,10 @@
     "market_code": "KR",
     "duration": "04:18",
     "total_view": 2862,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-83a28e",
@@ -3767,7 +4112,10 @@
     "market_code": "KR",
     "duration": "06:05",
     "total_view": 1931,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-948336",
@@ -3798,7 +4146,10 @@
     "market_code": "KR",
     "duration": "04:47",
     "total_view": 1450,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-04c2e3",
@@ -3835,7 +4186,11 @@
     "duration": "03:03",
     "total_view": 11540,
     "market": "🇻🇳 Việt, 🇨🇳 Trung",
-    "country": "VN"
+    "country": "VN",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-ca266f",
@@ -3866,7 +4221,12 @@
     "market_code": "JP",
     "duration": "06:31",
     "total_view": 2147,
-    "market": "🇯🇵 Nhật, 🇺🇸 Mỹ, 🇬🇧 Anh, 🇰🇷 Hàn"
+    "market": "🇯🇵 Nhật, 🇺🇸 Mỹ, 🇬🇧 Anh, 🇰🇷 Hàn",
+    "tags": [
+      "Nhật",
+      "Mỹ",
+      "Anh"
+    ]
   },
   {
     "sku": "VIDEO-8603a9",
@@ -3897,7 +4257,12 @@
     "market_code": "KR",
     "duration": "07:25",
     "total_view": 3132,
-    "market": "🇭🇰 HK, 🇰🇷 Hàn, 🇻🇳 Việt"
+    "market": "🇭🇰 HK, 🇰🇷 Hàn, 🇻🇳 Việt",
+    "tags": [
+      "Hong Kong",
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-aacc70",
@@ -3922,7 +4287,10 @@
     "market_code": "KR",
     "duration": "07:06",
     "total_view": 4834,
-    "market": "🇰🇷 Hàn"
+    "market": "🇰🇷 Hàn",
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-82f8a8",
@@ -3953,7 +4321,10 @@
     "market_code": "JP",
     "duration": "09:09",
     "total_view": 3056,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-9a4ddc",
@@ -3978,7 +4349,10 @@
     "market_code": "JP",
     "duration": "10:45",
     "total_view": 4285,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-199f44",
@@ -4003,7 +4377,10 @@
     "market_code": "GLOBAL",
     "duration": "02:24",
     "total_view": 4738,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-027064",
@@ -4028,7 +4405,11 @@
     "market_code": "US",
     "duration": "17:32",
     "total_view": 17254,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-ed1be9",
@@ -4053,7 +4434,10 @@
     "market_code": "GLOBAL",
     "duration": "58:57",
     "total_view": 3750,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-a348a5",
@@ -4089,7 +4473,11 @@
     "market_code": "GLOBAL",
     "duration": "07:26",
     "total_view": 5557,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-25fddf",
@@ -4125,7 +4513,11 @@
     "market_code": "JP",
     "duration": "26:16",
     "total_view": 3316,
-    "market": "🇯🇵 Nhật, 🇰🇷 Hàn"
+    "market": "🇯🇵 Nhật, 🇰🇷 Hàn",
+    "tags": [
+      "Nhật",
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-943781",
@@ -4150,7 +4542,10 @@
     "market_code": "GLOBAL",
     "duration": "03:37",
     "total_view": 5693,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-f59aa7",
@@ -4181,7 +4576,10 @@
     "market_code": "JP",
     "duration": "43:08",
     "total_view": 8679,
-    "market": "🇯🇵 Nhật"
+    "market": "🇯🇵 Nhật",
+    "tags": [
+      "Nhật"
+    ]
   },
   {
     "sku": "VIDEO-b380a1",
@@ -4212,7 +4610,10 @@
     "market_code": "JP",
     "duration": "33:09",
     "total_view": 6596,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-39ae49",
@@ -4243,7 +4644,12 @@
     "market_code": "JP",
     "duration": "38:31",
     "total_view": 4285,
-    "market": "🇯🇵 Nhật, 🇰🇷 Hàn, 🇻🇳 Việt"
+    "market": "🇯🇵 Nhật, 🇰🇷 Hàn, 🇻🇳 Việt",
+    "tags": [
+      "Nhật",
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-5c3116",
@@ -4294,7 +4700,11 @@
     "market_code": "GLOBAL",
     "duration": "17:13",
     "total_view": 39660,
-    "market": "🇨🇦 Canada, 🌐 Ngoại"
+    "market": "🇨🇦 Canada, 🌐 Ngoại",
+    "tags": [
+      "Canada",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-3df94e",
@@ -4331,7 +4741,11 @@
     "duration": "20:14",
     "total_view": 9314,
     "market": "🇺🇸 Mỹ, 🌐 Ngoại",
-    "country": "US"
+    "country": "US",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-5cb825",
@@ -4369,7 +4783,9 @@
     "total_view": 11104,
     "market": "🇺🇸 Mỹ, 🌐 Ngoại",
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Ngoại"
     ]
   },
   {
@@ -4406,7 +4822,11 @@
     "market_code": "GLOBAL",
     "duration": "13:48",
     "total_view": 11130,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-61e354",
@@ -4437,7 +4857,11 @@
     "market_code": "US",
     "duration": "22:38",
     "total_view": 20433,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-bdfa54",
@@ -4468,7 +4892,11 @@
     "market_code": "CN",
     "duration": "21:09",
     "total_view": 8834,
-    "market": "🇻🇳 Việt, 🇨🇳 Trung"
+    "market": "🇻🇳 Việt, 🇨🇳 Trung",
+    "tags": [
+      "Việt",
+      "Trung"
+    ]
   },
   {
     "sku": "VIDEO-8e0275",
@@ -4521,7 +4949,8 @@
     "total_view": 6138,
     "market": "🌐 Ngoại",
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại"
     ]
   },
   {
@@ -4547,7 +4976,10 @@
     "market_code": "GLOBAL",
     "duration": "24:21",
     "total_view": 3305,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-b96929",
@@ -4580,7 +5012,9 @@
     "total_view": 8799,
     "market": "🌐 Ngoại, 🇺🇸 Mỹ",
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại",
+      "Mỹ"
     ]
   },
   {
@@ -4614,7 +5048,9 @@
     "total_view": 14034,
     "market": "🇻🇳 Việt, 🌐 Ngoại",
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt",
+      "Ngoại"
     ]
   },
   {
@@ -4661,7 +5097,11 @@
     "market_code": "US",
     "duration": "14:21",
     "total_view": 61315,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Mỹ",
+      "Ngoại"
+    ]
   },
   {
     "sku": "VIDEO-61ad94",
@@ -4695,7 +5135,11 @@
     "market_code": "JP,KR",
     "duration": "10:28",
     "total_view": 223,
-    "market": "🇯🇵 Nhật, 🇰🇷 Hàn"
+    "market": "🇯🇵 Nhật, 🇰🇷 Hàn",
+    "tags": [
+      "Nhật",
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-3a38f9",
@@ -4720,7 +5164,11 @@
     "market_code": "KR,VN",
     "duration": "11:11",
     "total_view": 876,
-    "market": "🇰🇷 Hàn, 🇻🇳 Việt"
+    "market": "🇰🇷 Hàn, 🇻🇳 Việt",
+    "tags": [
+      "Hàn",
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-73d98a",
@@ -4750,7 +5198,11 @@
     "market_code": "JP,KR",
     "duration": "09:19",
     "total_view": 0,
-    "market": "🇯🇵 Nhật, 🇰🇷 Hàn"
+    "market": "🇯🇵 Nhật, 🇰🇷 Hàn",
+    "tags": [
+      "Nhật",
+      "Hàn"
+    ]
   },
   {
     "sku": "ZOOM-01-Nen-tang-moi-truong",
@@ -4799,7 +5251,10 @@
     "duration_sec": 3181,
     "is_free": true,
     "is_pro": false,
-    "access": "free"
+    "access": "free",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -4848,7 +5303,10 @@
     "duration_sec": 4893,
     "is_free": true,
     "is_pro": false,
-    "access": "free"
+    "access": "free",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -4897,7 +5355,10 @@
     "duration_sec": 4461,
     "is_free": true,
     "is_pro": false,
-    "access": "free"
+    "access": "free",
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
@@ -4946,6 +5407,9 @@
     "duration_sec": 2233,
     "is_free": true,
     "is_pro": false,
-    "access": "free"
+    "access": "free",
+    "tags": [
+      "Việt"
+    ]
   }
 ]

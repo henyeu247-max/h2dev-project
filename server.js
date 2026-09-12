@@ -70,6 +70,9 @@ function sendFile(res, full, mime, rangeHeader, isHead = false){
       'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
       'Content-Disposition': 'inline',
     };
+    if (mime === 'application/json' || full.endsWith('.json') || full.endsWith('.html')) {
+      headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
+    }
     if(status===206) headers['Content-Range']='bytes '+start+'-'+end+'/'+total;
     res.writeHead(status, headers);
     if(isHead){

@@ -164,17 +164,17 @@
       : '<span class="ltag ltag-pro">PRO</span>';
     if (pr.done) tags += '<span class="ltag ltag-done">✓ Đã xem</span>';
     else if (pr.inProgress) tags += '<span class="ltag ltag-progress">⏳ ' + Math.round(pr.ratio * 100) + '%</span>';
-    var action = opts.showAction ? '<a class="lesson-watch" href="' + href + '" aria-label="Xem video: ' + esc(v.title) + '">Xem video</a>' : '';
+    var action = opts.showAction ? '<a class="lesson-watch" target="_top" href="' + href + '" aria-label="Xem video: ' + esc(v.title) + '">Xem video</a>' : '';
 
     return '' +
       '<div class="lesson-row' + (opts.active ? ' is-active' : '') + (pr.done ? ' is-watched' : '') + '" data-sku="' + esc(sku) + '">' +
-        '<a class="row-thumb" href="' + href + '" title="Xem: ' + esc(v.title) + '">' +
+        '<a class="row-thumb" target="_top" href="' + href + '" title="Xem: ' + esc(v.title) + '">' +
           '<img src="' + esc(v.image || '') + '" alt="' + esc(v.title || '') + '" loading="lazy">' +
           thumbOverlays +
         '</a>' +
         '<div class="row-body">' +
           (opts.updatedLine ? '<div class="row-updated">Cập nhật: ' + dateVN(v.published_at) + '</div>' : '') +
-          '<a class="row-title" href="' + href + '">' + esc(v.title) + '</a>' +
+          '<a class="row-title" target="_top" href="' + href + '">' + esc(v.title) + '</a>' +
           '<div class="row-tags">' + tags + '</div>' +
         '</div>' +
         action +

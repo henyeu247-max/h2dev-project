@@ -124,7 +124,7 @@
           '<div class="resume-meta">' + C.esc(meta) + '</div>' +
         '</div>' +
         status +
-        '<a class="resume-go" href="/lotrinh/' + encodeURIComponent(target.sku) + '">' + label + '</a>' +
+        '<a class="resume-go" target="_top" href="/lotrinh/' + encodeURIComponent(target.sku) + '">' + label + '</a>' +
       '</div>';
     els.resumeBanner.classList.remove('hidden');
   }
@@ -220,7 +220,7 @@
   function searchCard(v) {
     var href = '/lotrinh/' + encodeURIComponent(v.sku);
     return '' +
-      '<a class="s-card" href="' + href + '">' +
+      '<a class="s-card" target="_top" href="' + href + '">' +
         '<img src="' + C.esc(v.image || '') + '" alt="' + C.esc(v.title || '') + '" loading="lazy">' +
         '<span class="s-card-body">' +
           '<span class="s-card-title">' + C.esc(v.title) + '</span>' +

@@ -240,9 +240,15 @@ const server = http.createServer(async (req,res)=>{
   if(urlPath === '/') urlPath = '/index.html';
 
   // Virtual semantic SPA clean routing
-  const lotrinhMatch = urlPath.match(/^\/lotrinh(?:\/([a-zA-Z0-9_-]+))?\/?$/i);
+  const lotrinhMatch = urlPath.match(/^\/(?:lotrinh|video)(?:\/([a-zA-Z0-9_-]+))?\/?$/i);
   if (lotrinhMatch) {
-    urlPath = lotrinhMatch[1] ? '/player.html' : '/learn.html';
+    if (lotrinhMatch[1]) {
+      urlPath = '/player.html';
+    } else if (/^\/lotrinh\/?$/i.test(urlPath)) {
+      urlPath = '/learn.html';
+    } else {
+      urlPath = '/index.html';
+    }
   } else if (/^\/(?:tongquan|video|ngachxanh|kichban|nguonreup|kenh|rawkenh|chienluoc)\/?$/i.test(urlPath)) {
     urlPath = '/index.html';
   }

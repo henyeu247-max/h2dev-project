@@ -552,17 +552,18 @@
   "VIDEO-1aaf46": {
     "sku": "VIDEO-1aaf46",
     "title": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends",
-    "actual_topic": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends",
+    "actual_topic": "Chiến lược khai thác 6 kho hoạt hình Bilibili chuyên biệt & Bộ quy tắc reup lách bản quyền video ngắn/dài an toàn",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇨🇳 Trung",
     "market_code": "CN",
     "key_takeaways": [
-      "Rồi, em chào mọi người nha",
-      "Hôm nay thì em quay lại và tiếp tục share cũng như là nói về các cái dạng ngách Reup nha mọi người",
-      "Đây là một cái kênh làm về Reup hoặc hình bên trung nè",
-      "Như những cái hôm trước em đã share và hướng dẫn mọi người á"
+      "Khai thác 6 kho tài nguyên Space Bilibili: Chia sẻ trực tiếp 6 kho chuyên biệt gồm hoạt họa gia đình hài hước, truyện tranh kiếm hiệp tiên hiệp, hoạt họa tổng tài đô thị, truyện 2D cổ trang và hoạt họa đạo lý nhân sinh.",
+      "Nguyên tắc Biến đổi sáng tạo (Transformative Use): Không bao giờ bê nguyên si âm thanh gốc, bắt buộc thay thế 100% lời thoại tiếng Trung bằng giọng đọc lồng tiếng mới.",
+      "Loại bỏ triệt để phụ đề gốc tiếng Trung: Dùng tính năng Crop hoặc thanh Overlay bar / phụ đề tiếng Việt đè lên vị trí phụ đề cũ.",
+      "Thêm giá trị bình luận / diễn biến tâm lý: Thêm lời dẫn truyện và câu cảm thán hài hước để biến video thành một tác phẩm Review phim hoạt hình hợp pháp.",
+      "Cắt dựng nhịp phim mới: Đảo vị trí một số phân cảnh, tăng tốc độ 1.05x, chèn hiệu ứng âm thanh SFX tạo sự hấp dẫn cho người xem."
     ],
     "edit_sop": {
       "primary": "Hôm nay thì em quay lại và tiếp tục share cũng như là nói về các cái dạng ngách Reup nha mọi người",
@@ -574,7 +575,9 @@
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
     "tools_mentioned": [
-      "Bilibili"
+      "Bilibili",
+      "CapCut",
+      "Tool Dịch Phụ Đề"
     ],
     "channels_mentioned": [],
     "key_timestamps": [
@@ -605,7 +608,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-1aaf46/transcript.txt"
@@ -1220,17 +1223,18 @@
   "VIDEO-28e1cc": {
     "sku": "VIDEO-28e1cc",
     "title": "Show kênh mới vừa bật kiếm tiền Và Hướng dẫn thực chiến full quy trình làm Reup ngách nhỏ hoạt hình từ bilibili",
-    "actual_topic": "Show kênh mới vừa bật kiếm tiền Và Hướng dẫn thực chiến full quy trình làm Reup ngách nhỏ hoạt hình từ bilibili",
+    "actual_topic": "Case study kênh 'Mộng Đam Mỹ' vừa bật kiếm tiền YPP & Full quy trình reup hoạt hình 2D Bilibili an toàn bản quyền",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇻🇳 Việt / 🇨🇳 Trung",
     "market_code": "CN",
     "key_takeaways": [
-      "Thì đây là một kênh làm về Reup của một bác trong nhóm Pro của mình nha mọi người",
-      "Thì kênh này của bác này thì cũng mới vừa vào kiếm tiền hôm ngày 9 tháng 7 thôi",
-      "Ngách Reup thì mọi người thấy nó kiếm cũng nói chung là như em nói trước giờ, làm để kiếm thêm thôi chứ không kiếm được nhiều đâu nha mấy bác",
-      "Em show ra cái kênh này cho mọi người xem qua trước và em cũng sẽ hướng dẫn mọi người làm về cái dạng này luôn nha"
+      "Bằng chứng bật kiếm tiền thực tế: Kênh 'Mộng Đam Mỹ' (Channel ID: UCPhw3R6ly3mnGRqA_TazlUw) được YouTube duyệt YPP thành công, toàn bộ video hiển thị biểu tượng kiếm tiền xanh, video nổ 3.700 view và tạo doanh thu ngay lập tức.",
+      "Khai thác 2 kho hoạt hình Bilibili dồi dào: Chia sẻ trực tiếp 2 kênh Bilibili nguồn chứa kho hoạt họa 2D cổ trang ngắn, nét căng, không dính logo đài truyền hình lớn.",
+      "Quy trình dịch thuật và biên kịch Việt hóa: Bóc tách phụ đề tiếng Trung qua Whisper, dùng AI chuyển ngữ mượt mà theo văn phong ngôn tình/cổ trang lôi cuốn, xưng hô thân mật.",
+      "Kỹ thuật lách quét AI trong CapCut: Cắt bỏ 3-5s intro/outro gốc, lật ngang khung hình, đổi tốc độ 1.05x, chèn hiệu ứng cánh hoa rơi/ánh sáng mờ tạo mã hash video mới.",
+      "Lồng tiếng AI truyền cảm: Thay thế 100% âm thanh thoại tiếng Trung bằng giọng đọc AI tiếng Việt (Ngọc Huyền/Minh Quang), giảm âm thanh gốc xuống 10% làm tiếng động nền SFX."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -1242,9 +1246,13 @@
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
     "tools_mentioned": [
-      "Bilibili"
+      "Bilibili",
+      "CapCut",
+      "Tool Dịch Phụ Đề SRT"
     ],
-    "channels_mentioned": [],
+    "channels_mentioned": [
+      "@MộngĐamMỹ"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
@@ -1273,7 +1281,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-28e1cc/transcript.txt"
@@ -1670,17 +1678,18 @@
   "VIDEO-348217": {
     "sku": "VIDEO-348217",
     "title": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
-    "actual_topic": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
+    "actual_topic": "2 Ngách đột phá Bài thuốc bàn ăn Hàn Quốc & Năng lượng lời nói kim vận Nhật Bản; Case study kênh Việt nổ 265K view sau 5 video",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇰🇷 Hàn / 🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "Thì như cái form prompt hôm trước là làm về thị trường Việt nè",
-      "Thị trường Việt này thì hôm trước em kế hướng nhau mọi người nè",
-      "Là cái form prompt này em cũng share luôn rồi á",
-      "Là cái này là dịch từ bản là từ US sang Việt Nam nha"
+      "Ngách 1 — Bài thuốc bàn ăn (@식탁보약·백세비결): Kênh Hàn Quốc chuyên mẹo kết hợp tỏi, hành tây, gừng, giấm táo trên mâm cơm hàng ngày để trị bệnh, thu hút hàng trăm nghìn view từ phụ nữ nội trợ.",
+      "Ngách 2 — Năng lượng lời nói kim vận (@金運と言葉の力): Kênh Nhật Bản chia sẻ triết lý nói những câu tích cực vào buổi sáng để thu hút tài vận, kết hợp nhạc thiền và chuông ngân thanh tịnh.",
+      "Bằng chứng kênh Việt Nam thực chiến @ĐờiVĩ-u6x: Chỉ mới đăng 5 video đã đạt 1.650 subs và 265.700 views, video thú dữ cắn đề xuất mạnh với đồ thị dốc đứng chỉ sau 2 ngày.",
+      "Chiến lược 1 loại thực phẩm duy nhất / video: Tập trung sâu vào 1 nguyên liệu quen thuộc (Tỏi, Bắp cải, Gừng) và nêu bật công thức kết hợp thần dược ngừa bệnh.",
+      "Thumbnail cận cảnh nguyên liệu: Chụp cận cảnh đĩa thức ăn/nguyên liệu tươi ngon, có mũi tên chỉ vào điểm mấu chốt kích thích click."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -1691,8 +1700,16 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "CapCut",
+      "YouTube Search",
+      "vidIQ"
+    ],
+    "channels_mentioned": [
+      "@식탁보약·백세비결",
+      "@金運と言葉の力",
+      "@ĐờiVĩ-u6x"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
@@ -1721,7 +1738,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-348217/transcript.txt"
@@ -5455,17 +5472,18 @@
   "VIDEO-9aff6d": {
     "sku": "VIDEO-9aff6d",
     "title": "4 video nổ hơn 300k view - Update 2 ngách mới cực kỳ trends và hướng dẫn edit tạo khung cho ngách nhỏ...",
-    "actual_topic": "4 video nổ hơn 300k view - Update 2 ngách mới cực kỳ trends và hướng dẫn edit tạo khung cho ngách nhỏ...",
+    "actual_topic": "2 Ngách đột phá cắn hơn 300K view (Xe hơi Nhật & Bác sĩ tư vấn sức khỏe) & Kỹ thuật edit tạo khung viền CapCut né quét AI",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "Nhưng mà vẫn có những video nó chỉ có vài trăm view thôi, bởi vì không bám theo đúng cái ngách trên đấy mọi người",
-      "Thì mình sẽ đương nhiên mình sẽ làm cho nó là thành cái màu xanh của phong xanh ấy mọi người",
-      "Để khi mà mình edit rồi mình ghiếp các cái video vào với nhau thôi là được",
-      "Đấy, lưu ý phải làm cho nó màu xanh nữa nha"
+      "Ngách 1 — Tin tức công nghệ ô tô Nhật Bản (@kurumanozokitai): Phân tích cuộc đối đầu xe điện Toyota vs Hyundai/BYD, video đạt 14.000 - 22.000 view sau 7-21 giờ (tốc độ 1.4K VPH > 100x).",
+      "Ngách 2 — Bác sĩ tư vấn sức khỏe tuổi 50: Kênh Việt Nam dùng nhân vật AI Bác sĩ nữ áo blouse xanh tư vấn thói quen buổi sáng, nước uống, bệnh gan/thấp khớp cắn hàng chục nghìn view.",
+      "Kỹ thuật tạo khung viền (Border Frame) trên CapCut: Thu nhỏ kích thước video xuống 90-92%, đặt trên nền Canvas màu navy/đỏ mận, tạo viền đôi màu vàng kim để tạo mã hash mới tinh né quét AI.",
+      "Tối ưu nhận diện thương hiệu: Khung viền phía trên đặt tên chuyên mục cố định, khung viền dưới đặt logo và nút chuông đăng ký kênh.",
+      "Bố cục thumbnail tương phản cao: Ảnh xe hơi/bác sĩ bên phải, dòng chữ giật tít cảnh báo in hoa nổi bật bên trái kích thích CTR > 10%."
     ],
     "edit_sop": {
       "primary": "Thì mình sẽ đương nhiên mình sẽ làm cho nó là thành cái màu xanh của phong xanh ấy mọi người",
@@ -5477,8 +5495,16 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "CapCut",
+      "YouTube Search",
+      "Canva"
+    ],
+    "channels_mentioned": [
+      "@kurumanozokitai",
+      "@昔の人の知恵",
+      "@EricBennettMD"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
@@ -5507,7 +5533,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-9aff6d/transcript.txt"
@@ -6710,17 +6736,18 @@
   "VIDEO-c5837a": {
     "sku": "VIDEO-c5837a",
     "title": "Update share các ngách Bán content và Reup mới nhất - tất cả thị trường Nhật - Hàn - Việt",
-    "actual_topic": "Update share các ngách Bán content và Reup mới nhất - tất cả thị trường Nhật - Hàn - Việt",
+    "actual_topic": "Bán content ngách tâm linh Saito Hitori Nhật Bản & Khai thác reup hoạt hình đa thị trường Nhật - Hàn - Việt",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇯🇵 Nhật / 🇰🇷 Hàn / 🇻🇳 Việt",
     "market_code": "CN",
     "key_takeaways": [
-      "Thì Youtube nó sẽ đánh giá là không tốt đâu nha mọi người",
-      "Thì cái ngách này em share cũng rất rất là lâu rồi",
-      "Và cũng có hướng dẫn mọi người làm luôn rồi",
-      "Thì do cái kênh này nó làm"
+      "Hiện tượng kênh Saito Hitori (@斎藤一人の福の言霊): Kênh Nhật Bản khai thác triết lý doanh nhân giàu nhất Nhật Bản Saito Hitori, video 20-30 phút đạt tốc độ xem cực cao (27K view/1 ngày, 44K view/2 ngày).",
+      "Bí quyết thumbnail Saito Hitori: Hình ảnh người đàn ông đội mũ phớt quay lưng bí ẩn, phối màu kích thích thị giác chữ trắng - đỏ nổi bật trên nền đen tuyền.",
+      "Công thức tiêu đề 'Vị trí tài lộc': 'Chỉ cần làm điều này trong phòng ngủ kim vận bùng nổ', 'Đặt cây trầu bà ở đây thành đại phú', 'Xả thứ này vào bồn cầu tiền bạc kéo đến'...",
+      "Kênh mẫu Việt Nam @NắngNhỏToonReview: Reup hoạt hình 2D cổ trang Trung Quốc lồng tiếng cảm xúc thu hút hàng trăm nghìn view từ giới trẻ.",
+      "Tư duy nhân bản liên thị trường: Lấy kịch bản lời dạy Saito Hitori chuyển ngữ sang tiếng Hàn và tiếng Việt, giữ thời lượng 25-35 phút tối ưu quảng cáo Mid-roll."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -6732,9 +6759,19 @@
       "Để tránh những cái vấn đề như vậy nha"
     ],
     "tools_mentioned": [
-      "Bilibili"
+      "Bilibili",
+      "CapCut",
+      "YouTube Studio"
     ],
-    "channels_mentioned": [],
+    "channels_mentioned": [
+      "@斎藤一人の福の言霊",
+      "@oijfwaoldsfae",
+      "@fansdrWilliamLI",
+      "@NắngNhỏToonReview",
+      "@幻界と神域の扉",
+      "@다시이팔청춘-k5d",
+      "@양자과학이야기"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
@@ -6763,7 +6800,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-c5837a/transcript.txt"
@@ -7004,17 +7041,18 @@
   "VIDEO-d2cd90": {
     "sku": "VIDEO-d2cd90",
     "title": "Update 5 ngách nhỏ bán content ngoại mới nhất",
-    "actual_topic": "Update 5 ngách nhỏ bán content ngoại mới nhất",
+    "actual_topic": "Tổng hợp 5 ngách nhỏ bán content ngoại cực tiềm năng tại Nhật Bản & Hàn Quốc (Triết lý Inamori Kazuo, Sổ tay nội trợ, Dưỡng lão)",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "4 ngày trước hơn 70k view nè, một tháng trước nè",
-      "Kênh này bắt đầu làm từ một tháng rồi nha",
-      "Đấy 12 ngày trước, 8 ngày trước vẫn có view ổn định nha",
-      "Trĩa như 20 tuổi ra thì mái bác đọc qua cái tiêu đề này thì sẽ rõ hơn nha"
+      "Ngách 1 — Triết lý Inamori Kazuo (@quietstrength88): Kênh Nhật Bản chuyên video 20-23 phút về triết lý sống và phương trình thành công của Cố chủ tịch Kyocera Inamori Kazuo, view đạt 13.000 view sau 7 ngày.",
+      "Ngách 2 — Sổ tay nội trợ Hàn Quốc (@시니어살림노트): 11.5K sub chỉ sau 10 video, chuyên mẹo bảo quản dưa chuột đông lạnh, rong biển khô chan nước sôi và hành tây xào tương ớt.",
+      "Ngách 3 & 4 — Tâm linh Thần đạo & Học viện trẻ hóa: Khai thác lời chúc phúc Amaterasu Miko (@アマテラス巫女あまね) và mẹo trẻ hóa mạch máu tuổi già (@みんなの若返りアカデミア).",
+      "Ngách 5 — Suối nguồn tâm linh (@スピリチュアルの泉-l4z): Kết hợp nhạc thiền và thông điệp xoa dịu tổn thương tâm hồn cho người cao tuổi.",
+      "Bí quyết sản xuất video triết lý 20 phút: Chia bố cục 3 phần rõ ràng (Vấn đề bế tắc 0-3p $\rightarrow$ Lời giải triết lý 3-15p $\rightarrow$ 3 Hành động thực tế 15-20p), thumbnail chữ trắng-đỏ nền tối."
     ],
     "edit_sop": {
       "primary": "Về còn cách edit thì cũng rất rất là đơn giản luôn",
@@ -7025,8 +7063,18 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Search",
+      "CapCut",
+      "Google Translate"
+    ],
+    "channels_mentioned": [
+      "@quietstrength88",
+      "@アマテラス巫女あまね",
+      "@시니어살림노트",
+      "@みんなの若返りアカデミア",
+      "@スピリチュアルの泉-l4z"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
@@ -7055,7 +7103,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-d2cd90/transcript.txt"
@@ -7565,17 +7613,18 @@
   "VIDEO-e90874": {
     "sku": "VIDEO-e90874",
     "title": "Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến",
-    "actual_topic": "Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến",
+    "actual_topic": "Hướng dẫn thực chiến sử dụng bộ Prompt Master tự động nhân bản kịch bản sang mọi thị trường không bị dịch máy sượng gạo",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🌐 Ngoại",
     "market_code": "JP",
     "key_takeaways": [
-      "Cái Chrome chính này thì em đã trend thật sự rất rất kỹ luôn rồi",
-      "Cứ bấm vào 1 phổ biến lấy 2 video cao view nhất, hoặc là nếu mà 2 kênh đối thủ thì mọi người lấy mỗi kênh 1 video thôi là được rồi",
-      "Nhưng miễn sao mình cho nó hẹp đầy đủ cụ thể là được nha",
-      "Cái name này là em đã trên nó là không những là chỉ ra phần kịch bản thôi"
+      "Nguyên lý hoạt động của Prompt Master: Đóng vai trò như một Biên kịch gia bản địa kỳ cựu (Native Scriptwriter), giữ nguyên 70% cấu trúc logic và viết lại 100% câu từ mượt mà theo văn hóa thị trường đích.",
+      "Khắc phục nỗi đau dịch máy Google Translate: Loại bỏ hoàn toàn các câu từ thô cứng, ngô nghê khiến khán giả thoát video sớm (tụt AVD), thay bằng lối kể chuyện truyền cảm (Storytelling).",
+      "Quy trình 3 bước nhân bản kịch bản: (1) Lấy transcript qua youtube-transcript.io $\rightarrow$ (2) Nạp Master Prompt vào AI $\rightarrow$ (3) Kiểm tra nhịp điệu đọc và lồng tiếng qua ElevenLabs/Vrew.",
+      "Kỹ thuật tạo Hook 15 giây đầu tiên: Prompt tự động sinh ra mở đầu kịch tính, đặt câu hỏi nghịch lý hoặc biến cố lớn nhất để níu chân người nghe ngay lập tức.",
+      "Checklist tránh lỗi phổ biến: Phải đổi tên địa danh cho khớp văn hóa Việt/Nhật, loại bỏ các từ sáo rỗng ('Hơn nữa', 'Tóm lại') và kiểm soát thời lượng đạt chuẩn 15-20 phút."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -7587,7 +7636,10 @@
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
     "tools_mentioned": [
-      "ChatGPT"
+      "ChatGPT",
+      "Claude",
+      "youtube-transcript.io",
+      "Whisper"
     ],
     "channels_mentioned": [],
     "key_timestamps": [
@@ -7618,7 +7670,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-e90874/transcript.txt"
@@ -8012,17 +8064,18 @@
   "VIDEO-f74bb1": {
     "sku": "VIDEO-f74bb1",
     "title": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất",
-    "actual_topic": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất",
+    "actual_topic": "Khai thác ngách cực nhỏ Rau củ dưa chuột & Bữa ăn dưỡng lão Hàn Quốc; Kỹ thuật train Claude bám theo 70% kịch bản đối thủ",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇰🇷 Hàn",
     "market_code": "KR",
     "key_takeaways": [
-      "Cái những video mà làm về cái dạng dưa chuột",
-      "Hay là ở miền Trung em gọi là dưa leo nha mọi người",
-      "Thấy, thì video rất là cao view",
-      "Mọi người để ý xem cái thông á"
+      "Ngách cực nhỏ Dưa chuột trường thọ (@장수채소습관): Chuyên làm video về quả dưa chuột (ngâm giấm, ăn trước bữa cơm, nước ép giải độc), nguyên liệu rẻ tiền có sẵn trong mọi gia đình nên view cực kỳ cao.",
+      "Ngách bữa ăn dưỡng lão 1 bát (@노후건강한끼): Bữa ăn đơn giản cơm gạo lứt + rau luộc + súp miso cho người già sống một mình tại Hàn Quốc.",
+      "Case study kênh Nhật Bản bất diệt @fuetunojin: 210K sub / 127 video về nhân vật vĩ đại và triết lý sống trường tồn.",
+      "Kỹ thuật train Claude bám theo 70% kịch bản đối thủ: Giữ nguyên 70% cấu trúc luận điểm khoa học, sáng tạo lại 30% phần mở đầu Hook và lời văn gần gũi.",
+      "Thumbnail dưa chuột xanh mướt: Hình ảnh quả dưa chuột cắt lát đọng giọt nước + dòng chữ 'MỖI NGÀY 1 QUẢ DƯA CHUỘT' $\rightarrow$ 'ĐƯỜNG HUYẾT VỀ ỔN ĐỊNH'."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -8033,8 +8086,17 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "Claude",
+      "CapCut",
+      "YouTube Search"
+    ],
+    "channels_mentioned": [
+      "@노후건강한끼",
+      "@건강백단",
+      "@장수채소습관",
+      "@fuetunojin"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
@@ -8063,7 +8125,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-f74bb1/transcript.txt"

@@ -1,3 +1,24 @@
+## 2026-09-13 — Chuẩn hoá 100% toàn diện Video VIDEO-73d98a: Phê duyệt hồ sơ quan sát AI, nâng cấp Master SOP & ẩn heuristic cũ
+
+- **Kiểm chứng đa phương thức thực tế 100% cho `VIDEO-73d98a`:**
+  - Kiểm tra file media: MP4 Full HD 1080p, H.264, 30 fps, AAC, 559.07s (09:19), 199.9 MB, SHA256 `0d41b68e9f7d7f0dd9693da9e5fc67fcbce5e7b5418f5df8dfc62036807c4cbc`.
+  - Soát phụ đề từng câu: 211 segments sạch sẽ, timing chuẩn 100%.
+  - Bóc tách 5 phân đoạn quan sát chi tiết (`observations`) theo từng mốc thời gian từ 00:00 đến 09:19 (kênh `@涙のひと駅` 168k view, `@사연만남1짱` 230k view, `@simbot2` 4.5M view, `@元気な老後-t5d` 81k view).
+  - Xác minh 3 claims về số view và tình trạng bật kiếm tiền của các kênh đối thủ.
+- **Phê duyệt hồ sơ phân tích video chuẩn (`video_analysis_schema.json`):**
+  - Khởi tạo `_audit/gemini-analysis/VIDEO-73d98a.json`.
+  - Cập nhật `data/video_analysis_manifest.json`: `analysis_status: "approved"`, `coverage_percent: 100.0`, `accuracy_status: "verified"`, `review_status: "approved_for_ui"`, `summary.analysis_done: 1`.
+  - Cập nhật `data/video_analysis_public.json`: Thêm entry `VIDEO-73d98a` với đầy đủ timeline quan sát `observations`.
+- **Cập nhật `player.html`:**
+  - Ẩn thông báo heuristic cũ ("chưa kiểm hình/âm thanh") khi `visual_audio_checked === true`.
+  - Hiển thị badge xanh **ĐÃ DUYỆT QUAN SÁT (100% độ phủ)** và mở rộng danh sách timeline quan sát thực tế `geminiTimelineWrap`.
+- **Nâng cấp Master SOP `assets/docs/VIDEO-73d98a/SOP-NGACH-CUC-NHO-DRAMA-CAM-DONG-VA-DUONG-LAO.md`:**
+  - Bổ sung phân tích cảnh báo bẫy edit 100% ảnh AI của kênh Simbot2 (rủi ro quét Inauthentic Content) và bí quyết tự quay B-roll bàn tay thật của kênh Hàn Quốc.
+- **Nghiệm thu kiểm định:**
+  - `validate-project.js`: PASS.
+  - `audit_all_136_videos.py`: 136/136 video SẠCH (0 lỗi).
+  - Đồng bộ lên VPS, git commit, push và reload PM2 `h2dev-learn`.
+
 ## 2026-09-13 — Chuẩn hoá chuyên sâu 8 video PRO đợt 3 (28e1cc, d2cd90, 9aff6d, e90874, c5837a, 348217, f74bb1, 1aaf46)
 
 - **Xác minh hình ảnh thực tế (Visual Verification via Frame Extraction):**

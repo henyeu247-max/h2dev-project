@@ -6,7 +6,9 @@
 # ============================================================
 $ErrorActionPreference = "Continue"
 
-$root   = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
+# This file lives in <project>\scripts\windows; server.js is at the project
+# root, not in <project>\scripts.
+$root   = Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path))
 $port   = 8899
 $log    = Join-Path $root "h2dev-tray.log"
 $lanLog = Join-Path $root "server-lan.log"

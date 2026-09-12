@@ -18,7 +18,7 @@
     {
       "n": 2,
       "title": "Nghiên cứu chủ đề",
-      "detail": "Kênh đối thủ, breakout, autocomplete — lấy từ kho 131 kênh mẫu.",
+      "detail": "Kênh đối thủ, breakout, autocomplete — lấy từ kho 165 kênh mẫu (152 live · 13 dead ẩn).",
       "tab": "kenh",
       "tabLabel": "Kênh mẫu"
     },
@@ -89,7 +89,7 @@
     "Title có từ khóa chính ở 25% đầu?",
     "Mô tả + hashtag đủ để search, không nhồi?"
   ],
-  "nguonDuLieu": "131 video catalog (đủ mp4) + tai-lieu-full.json (96 card) + 161 kênh mẫu. Cây chuẩn TREE.md. Gốc Y:\\YTB đã dọn 18/08/2026. Verify RPM JP $3.16, KR $2.90, US $6.22 (Dynamoi). Thêm ngách mới 20/08 (Everyday History XANH + 4 CÓ MẪU TĂNG).",
+  "nguonDuLieu": "136 video catalog (đủ mp4) + tai-lieu-full.json (103 card) + 165 kênh mẫu (152 live · 13 dead ẩn). Raw canonical 83 record (95 source snapshot · 12 duplicate). Cây chuẩn TREE.md. Gốc Y:\\YTB đã dọn 18/08/2026. Verify RPM JP $3.16, KR $2.90, US $6.22 (Dynamoi). Thêm ngách mới 20/08 (Everyday History XANH + 4 CÓ MẪU TĂNG).",
   "nguonChinhSach": [
     "https://support.google.com/youtube/answer/72851",
     "https://support.google.com/youtube/answer/1311392",
@@ -154,10 +154,10 @@
     }
   ],
   "cachNoiTab": [
-    "Tab Video = nguồn sự thật 131 SKU, xếp mới → cũ theo published_at.",
+    "Tab Video = nguồn sự thật 136 SKU, xếp mới → cũ theo published_at.",
     "Tab Ngách xanh = cùng niche key với videos.json. Bấm Xem tất cả = lọc đúng ngách, không mất video.",
     "Tab Kịch bản / Nguồn reup / Kênh mẫu = gắn theo SKU video mẹ. Thiếu file ≠ thiếu video.",
-    "Tab Chiến lược = dây chuyền 9 bước nhảy sang đúng tab. Bảng điểm phải = 131/131.",
+    "Tab Chiến lược = dây chuyền 9 bước nhảy sang đúng tab. Bảng điểm phải = 136/136.",
     "H2DEV dạy CÁCH LÀM. 3 pack ngoài (wildlife / đứa trẻ / Bible) là NGÁCH ĐĂNG. Đừng nhầm video học trong kho với video đăng kênh.",
     "Từ 18/08/2026: pack ngoài + báo cáo + prompt MD nằm trong docs/NOI-BO và pipelines/. Tab Chiến lược có khối đồng bộ."
   ],

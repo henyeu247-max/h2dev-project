@@ -542,7 +542,7 @@ function testVitalityActivityDateContract() {
     // the deep projection used for canonical/profile consensus.
     const canonicalPath = 'data-tabs/raw-kenh-mau.json';
     const manifestPath = 'data/raw-channels-deep/deep-channels-manifest.json';
-    const metadataPath = 'Raw Kênh Mẫu Tìm Kiếm/metadata-full.json';
+    const metadataPath = 'raw-kenh-goc/metadata-full.json';
     const canonical = readJson(fixture.root, canonicalPath);
     const manifest = readJson(fixture.root, manifestPath);
     const metadata = readJson(fixture.root, metadataPath);
@@ -605,7 +605,7 @@ function testPostApplyNoDiffIdempotenceFixture() {
 function testReviewMonetizationOutOfScope() {
   const fixture = makeFixture();
   try {
-    const metadataPath = 'Raw Kênh Mẫu Tìm Kiếm/metadata-full.json';
+    const metadataPath = 'raw-kenh-goc/metadata-full.json';
     const metadata = readJson(fixture.root, metadataPath);
     metadata.records[0].vitalityAudit.monetizationStatus = 'OWNER_LABEL_UNCERTAIN';
     metadata.records[0].vitalityAudit.monetizationBadge = 'preserve this label';
@@ -684,7 +684,7 @@ function testLiveDryRunContract() {
   assert.strictEqual(plan.guards.noSpeechComputed, false);
   assert.strictEqual(plan.guards.summaryRefsRewritten, false);
   assert.strictEqual(plan.guards.raw091HandleTouched, false);
-  const metadata = plan.targetFiles.find((file) => file.path === 'Raw Kênh Mẫu Tìm Kiếm/metadata-full.json');
+  const metadata = plan.targetFiles.find((file) => file.path === 'raw-kenh-goc/metadata-full.json');
   assert(metadata, 'selected named records must include metadata-full projection');
   const vitalityPointers = metadata.pointers.filter((change) => /\/vitalityAudit\//.test(change.pointer));
   assert.strictEqual(vitalityPointers.length, 8, 'five activity-vitality fields for each named id; monetization is out of scope');

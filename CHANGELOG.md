@@ -1,3 +1,24 @@
+## 2026-09-12 — Khắc phục triệt để 4 điểm lưu ý kiểm toán: Projection-Sync, Avatars 100%, Linter YPP 2027 & Pilot Mirror 100/100
+
+- **Sửa dứt điểm bài test `scripts/tests/projection-sync.test.cjs` (22/22 ALL PASS):**
+  - Cập nhật `REL.metadataFull` từ thư mục cũ `'Raw Kênh Mẫu Tìm Kiếm'` sang `'raw-kenh-goc/metadata-full.json'` trong `scripts/repair/projection-sync.cjs`, `scripts/tests/projection-sync.test.cjs` và fixture test.
+  - Tạo thư mục `data/raw-channels-deep/RAW-033_Tobi_Daily_English/transcripts` và bổ sung guard `fs.existsSync` trong `collectFolderSource`.
+- **Đồng bộ 100% Avatar kênh mẫu (`data-tabs/kenh-mau.json`):**
+  - Viết `scripts/sync-missing-avatars.cjs` tự động tải 38 avatar từ YouTube và sinh 4 avatar vector SVG theo ngách cho 42 kênh live còn thiếu.
+  - Áp dụng triệt để quy ước đặt tên an toàn: CJK dùng `ch-<10-char-sha256>.jpg`, ASCII dùng `<slug>-<10-char-sha256>.jpg`, không chuyển ký tự phi ASCII thành `_`. Toàn bộ 152/152 kênh sống hiện có avatar cục bộ tại `assets/avatars/`. 13 kênh dead được đánh dấu `dead: true`, `avatar: null`.
+- **Hệ thống hóa Bộ quy chuẩn phòng thủ YPP 2027:**
+  - Khởi tạo tài liệu vận hành `docs/NOI-BO/YPP-2027-PHONG-THU-CHINH-SACH.md`: chi tiết ngưỡng 8.000h xem / 365 ngày hoặc 20M Shorts, 3 vùng cấm Inauthentic Content, checklist Pre-flight 10 bước và hồ sơ minh chứng kháng nghị (Human Provenance Bundle).
+  - Viết linter tự động `scripts/check-ypp-compliance.cjs` quét kịch bản, thời lượng giữ chân AVD, từ khóa YMYL, cứu trợ động vật giả và dẫn chứng bảo tàng.
+- **Hoàn thiện hồ sơ Pilot Mẫu `PILOT-01-THE-MIRROR` và `data/video_acceptance.json`:**
+  - Mở rộng `raw-niches/US_EverydayHistory/PILOT-01-THE-MIRROR/master-script.md` từ 438 từ lên 1.927 từ (~14.3 phút), cấu trúc 7 phân đoạn, hook nghịch lý 0-15s, mini-cliffhanger mỗi 60-90s, lồng ghép 5 dẫn chứng bảo tàng xác thực (Çatalhöyük, Murano, Saint-Gobain, Versailles, Liebig 1835).
+  - Linter YPP 2027 nghiệm thu đạt điểm số tuyệt đối **100/100 (0 errors, 0 warnings)**.
+  - Cập nhật `data/video_acceptance.json`: gắn kết trực tiếp Pilot Mirror, thiết lập `status: "in_progress"`, `execution_mode: "local_dryrun_only"`, `publish_allowed: false`, `budget_limit_usd: 0.00`.
+- **Kiểm định nghiệm thu:**
+  - `validate-project.js`: PASS (136 videos, 165 channels, 45 kich-ban, 103 tai-lieu-full, 136 thumbs, 136 video dirs).
+  - `validate-gemini-analysis.py`: PASS.
+  - Contract tests (`projection-sync`, `registry-store`, `evidence-gate`, `intake-v2`): 75/75 tests ALL PASS.
+  - Playwright UI tests (`verify-watched-badge.js`, `verify-routing.js`): 40/40 checks ALL PASS.
+
 ## 2026-09-12 — Chuẩn hoá kiến trúc MCP: Phân định rõ 9Router (Model Gateway) và MCP Pool Local (:3988)
 
 - **Sửa dứt điểm sự nhầm lẫn giữa Chat Model Gateway và Tool Server:**

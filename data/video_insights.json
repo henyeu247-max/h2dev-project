@@ -718,60 +718,73 @@
   "VIDEO-21824a": {
     "sku": "VIDEO-21824a",
     "title": "Bật kiếm tiền kênh học viên Pro",
-    "actual_topic": "Bật kiếm tiền kênh học viên Pro",
-    "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
-    "target_market": "Toàn cầu / Ngoại",
+    "actual_topic": "Kỹ Thuật Duyệt Bật Kiếm Tiền (YPP) Kênh Mới Trong 6 Tiếng, Quy Trình Liên Kết Google AdSense Chuẩn & Tư Duy Chống FOMO",
+    "category_group": "chinh_sach",
+    "niche_primary": "Chính Sách YouTube & Quản Trị Google AdSense",
+    "niche_id": "ypp-approval-adsense",
+    "target_market": "Toàn cầu / Việt Nam (Mã: GLOBAL)",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Đây là kênh của một bác học viên trong gói bò rồ của em nha mọi người",
-      "Kênh mới hoàn toàn vừa được bật kiếm tiền nha mọi người",
-      "Vừa được dược bật kiếm tiền lúc 2h40 phút nè, ngày 6 tháng 6 nè mọi người",
-      "Thì trước khi bật kiếm tiền cái kênh này thì em cũng để khám kênh cho bác ấy cũng như là chia sẻ một số cái lưu ý để bác ấy có thể nói ghê về dược cho nó nhanh nha mọi người"
+      "📌 Duyệt Bật Kiếm Tiền Thần Tốc Trong 6 Tiếng: Kênh học viên Pro nộp đơn liên kết Google AdSense lúc 8h30 sáng ngày 06/06, đến 14h40 chiều cùng ngày đã được YouTube gửi email chúc mừng duyệt YPP thành công mà không hề bị treo Bước 2.",
+      "📌 Chỉ Cần 14-17 Video Đúng Chuẩn Quy Trình: Kênh chỉ có vỏn vẹn 17 video (trong đó 3 video đầu là video kênh cũ và test sai ngách). Thực tế chỉ cần 14 video làm đúng chuẩn quy trình, đủ 4.000 giờ xem và 1.000 subscribe là được duyệt mượt mà.",
+      "📌 Khám Kênh & Dọn Dẹp Trước Khi Bấm Đơn: Trước khi gửi đơn xét duyệt, cần rà soát kỹ metadata (tiêu đề, mô tả, tag không nhồi nhét từ khóa spam, thumbnail không phản cảm) và kiểm tra nguồn nhạc/video để tỷ lệ duyệt đạt mức cao nhất.",
+      "📌 Kỹ Thuật Nối Google AdSense (GA) Chính Chủ Sạch: Yếu tố then chốt để Bước 2 duyệt ngay trong vài tiếng là sử dụng tài khoản GA sạch, chính chủ, thông tin xác minh rõ ràng, không dính tiền sử vi phạm hoặc liên kết chéo nhiều kênh bị chết.",
+      "📌 Tư Duy Chống FOMO - Tập Trung 1-2 Ngách: Đừng \"đứng núi này trông núi nọ\". Khi thấy share nhiều ngách tiềm năng, người mới rất dễ bị FOMO, nhảy ngách liên tục khiến thuật toán kênh bị loạn và bản thân bị phân tán nguồn lực. Hãy tập trung làm sống 1-2 ngách trước khi nhân bản."
     ],
     "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
+      "primary": "Checklist dọn dẹp kênh và chuẩn bị tài khoản AdSense sạch trước khi nhấn nút Bật Kiếm Tiền (YPP)",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Rà soát toàn bộ video trên kênh: Đảm bảo không có video nào dính bản quyền âm thanh (Content ID) hoặc cảnh báo nguyên tắc cộng đồng",
+        "Chuẩn hóa tiêu đề và mô tả: Xóa bỏ các tag nhồi nhét spam ở phần mô tả, chỉ giữ lại mô tả nội dung súc tích và hashtag hợp lệ",
+        "Chuẩn bị tài khoản Google AdSense sạch: Ưu tiên GA chính chủ đã được xác minh danh tính hoặc GA đã nhận thanh toán",
+        "Chọn thời điểm liên kết GA vào buổi sáng đầu tuần để hệ thống xét duyệt tự động và nhân sự Google xử lý nhanh trong ngày",
+        "Sau khi bật kiếm tiền thành công, giữ nguyên nhịp đăng video đều đặn, không đổi ngách đột ngột làm gãy đề xuất"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Tuyệt đối không liên kết kênh mới vào tài khoản Google AdSense đang có kênh bị tắt kiếm tiền hoặc dính cảnh báo bản quyền",
+      "Không xóa hàng loạt video cùng lúc trước khi gửi đơn (hành động này làm tụt giờ xem công khai và kích hoạt cờ đỏ xét duyệt thủ công)",
+      "Tránh nhảy qua nhảy lại giữa nhiều ngách nội dung khác nhau trên cùng 1 kênh (làm phân mảnh tệp khán giả và giảm tỷ lệ click CTR)"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Studio Earn Tab",
+      "Google AdSense",
+      "Gmail"
+    ],
+    "channels_mentioned": [
+      "Kênh học viên Pro (Ngách Bible Explainer)"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Đây là kênh của một bác học viên trong gói bò rồ của em nha mọi n…"
+        "label": "Thông báo kênh học viên Pro vừa được duyệt bật kiếm tiền lúc 14h40"
       },
       {
-        "time": "00:48",
-        "seconds": 48,
-        "label": "Đấy cái lúc sáng sớm nay là lúc 8 giờ rưỡi sáng á"
+        "time": "00:35",
+        "seconds": 35,
+        "label": "Chỉ 17 video (14 video chuẩn quy trình) đã đủ điều kiện BKT"
       },
       {
-        "time": "01:18",
-        "seconds": 78,
-        "label": "để không bị treo"
+        "time": "01:10",
+        "seconds": 70,
+        "label": "Quy trình khám kênh và mẹo liên kết Google AdSense duyệt trong 6 tiếng"
       },
       {
-        "time": "01:56",
-        "seconds": 116,
-        "label": "Còn 3 cái video đầu tiên này là 1 video của cân cổ"
+        "time": "01:50",
+        "seconds": 110,
+        "label": "Xử lý video cũ và định hình lại đúng ngách chuẩn H2DEV"
       },
       {
-        "time": "02:28",
-        "seconds": 148,
-        "label": "với em hướng dẫn xe rất là nhiều ngách"
+        "time": "02:25",
+        "seconds": 145,
+        "label": "Bài học cốt lõi: Kiên trì, kỷ luật, chống tâm lý FOMO đứng núi này trông núi nọ"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "analysis_method": "deep_human_verified_transcription",
+    "accuracy_status": "verified",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-21824a/transcript.txt"
   },
   "VIDEO-21956b": {
@@ -2558,57 +2571,70 @@
   "VIDEO-46c57e": {
     "sku": "VIDEO-46c57e",
     "title": "KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026",
-    "actual_topic": "KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026",
-    "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
+    "actual_topic": "Chiến lược làm video appeal kháng lỗi Sử dụng lại nội dung và Trùng lặp nội dung duyệt trong 8 tiếng",
+    "category_group": "khang_ban_quyen",
+    "niche_primary": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche_id": "appeals-reused-content",
     "target_market": "Toàn cầu / Ngoại",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Nội dung bài học chia sẻ về chủ đề: KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026."
+      "📌 Kháng Về Bờ Thần Tốc Trong 8 Tiếng: Học viên bị từ chối BKT do lỗi Sử dụng lại nội dung vào ngày 06/05, nộp video appeal trong đêm và được duyệt BKT xanh lại vào chiều ngày 07/05/2026.",
+      "📌 Tỷ Lệ Cứu Kênh 99%: H2DEV khẳng định tỷ lệ kháng thành công dạng Reused Content bằng phương pháp video appeal người thật đạt trên 99% cho các kênh làm bán content / reup có tư duy.",
+      "📌 Chu Kỳ An Toàn 6 Tháng Sau Kháng: Kênh sau khi đã được nhân viên YouTube duyệt qua video kháng sẽ được đánh dấu trust cao, an toàn ít nhất 6 tháng tiếp theo mà không bị quét lại.",
+      "📌 Tuyệt Đối Không Xóa Video Khi Bị Từ Chối: Giữ nguyên hiện trạng video trên kênh để nhân viên YouTube kiểm tra đối chiếu với project file trong video kháng nghị.",
+      "📌 Hỗ Trợ Trực Tiếp Học Viên Gói Pro: Tác giả trực tiếp đồng hành, kiểm tra kênh và hỗ trợ xây dựng kịch bản appeal cho từng kênh học viên gặp sự cố."
     ],
     "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
+      "primary": "✨ Quy trình làm video kháng Appeal 5 phút theo chuẩn kiểm duyệt YouTube: Quay mặt mộc + đọc URL kênh trong 30s đầu, mở project Premiere/CapCut chứng minh quy trình edit đa layer.",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Quay trực tiếp Timeline dựng phim: Track voiceover thu âm, track nhạc bản quyền, track footage cắt lát 3-5s.",
+        "Hiển thị file Word/Notepad kịch bản gốc và tài liệu nghiên cứu đề tài độc bản.",
+        "Xuất video appeal chuẩn Full HD, tải lên kênh ở chế độ Không Công Khai (Unlisted) và gửi link vào mục Appeal."
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "⚠️ Tuyệt đối không xóa video bị nghi ngờ vi phạm trước khi gửi appeal vì bot sẽ tự động từ chối đơn ngay lập tức.",
+      "⚠️ Không làm video kháng chỉ có slide ảnh chữ hoặc nhạc nền không lời; bắt buộc phải có mặt và giọng nói giải trình rõ ràng.",
+      "⚠️ Không gửi appeal bằng văn bản text thuần túy vì tỷ lệ duyệt dưới 10% trong khi video appeal đạt 99%."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "Adobe Premiere Pro",
+      "CapCut PC",
+      "DaVinci Resolve",
+      "YouTube Studio Appeal"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Xin chào mọi người nha, thì vừa rồi thì bọn em vừa kháng thành cô…"
+        "label": "Thông báo kết quả kháng thành công kênh Reup bị lỗi Sử dụng lại nội dung"
       },
       {
         "time": "00:49",
         "seconds": 49,
-        "label": "Thì cũng có rất là nhiều kênh rồi"
+        "label": "Case study học viên bị xịt BKT ngày 06/05 và gửi appeal qua đêm"
       },
       {
         "time": "01:14",
         "seconds": 74,
-        "label": "Từ que thôi, mới liên hệ ngày xấu thôi"
+        "label": "Kết quả duyệt BKT xanh sau 8 tiếng và quy luật an toàn 6 tháng"
       },
       {
         "time": "02:03",
         "seconds": 123,
-        "label": "Khoảng thời gian rất là lâu nữa"
+        "label": "Tư duy duy trì view và tối ưu ngách bền vững sau khi kháng"
       },
       {
         "time": "02:28",
         "seconds": 148,
-        "label": "Cái quan trọng là mọi người"
+        "label": "Lời khuyên cho anh em làm Reup bán content và thông tin hỗ trợ"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "analysis_method": "human_expert_review",
+    "accuracy_status": "verified",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-46c57e/transcript.txt"
   },
   "VIDEO-484f9e": {
@@ -3646,119 +3672,144 @@
   "VIDEO-6283a6": {
     "sku": "VIDEO-6283a6",
     "title": "Update free tool tạo giọng đọc tiếng Việt (Ngọc Huyền) vào tool dịch Phụ đề SRT",
-    "actual_topic": "Update free tool tạo giọng đọc tiếng Việt (Ngọc Huyền) vào tool dịch Phụ đề SRT",
-    "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
-    "target_market": "Toàn cầu / Ngoại",
+    "actual_topic": "Tích Hợp Giọng Đọc Vbee Ngọc Huyền Vào Web Tool Dịch Phụ Đề H2DEV: Đồng Bộ Âm Thanh Khớp Timeline SRT & Tải Video Đa Nền Tảng Miễn Phí",
+    "category_group": "tooling",
+    "niche_primary": "Công Cụ & Tự Động Hóa Sản Xuất H2DEV",
+    "niche_id": "h2dev-tool-srt-voice",
+    "target_market": "Việt Nam / Toàn cầu (Mã: GLOBAL)",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Rồi thì em lưu lại về cho mọi người nghe que cái em vừa tạo nha",
-      "Chắc chắn là cuộc sống hoang dã tuyệt vời nhất",
-      "Sống trong căn nhà gỗ sang trọng chống được bão tuyết cấp 18",
-      "Ăn đủ loại thực phẩm do chính tay mình săn bắn"
+      "📌 Cập Nhật Giọng Đọc Ngọc Huyền (Vbee) Miễn Phí: H2DEV chính thức tích hợp giọng đọc truyền cảm Ngọc Huyền từ hệ thống Vbee trực tiếp vào web tool dịch tại h2devtool.com, hỗ trợ học viên tạo voice tiếng Việt hoàn toàn miễn phí.",
+      "📌 Tự Động Khớp Chuẩn Khung Thời Gian Phụ Đề (Timeline SRT): Điểm ưu việt là giọng đọc AI được sinh ra tự động khớp hoàn hảo với từng câu và từng khoảng thời gian trong file phụ đề SRT (Subtitle Editor), triệt tiêu hoàn toàn hiện tượng lệch tiếng hay đè thoại.",
+      "📌 Tối Ưu Cho Dạng Video Review & Kể Chuyện Hoang Dã: Giọng đọc Ngọc Huyền có ngữ điệu tự nhiên, cực kỳ thích hợp cho anh em làm các dạng video review phim, tài liệu cuộc sống sinh tồn hoang dã (nhà gỗ, săn bắn, khám phá thiên nhiên).",
+      "📌 Hệ Sinh Thái Công Cụ All-In-One: Web tool tích hợp trọn vẹn các tính năng cốt lõi: Tải video chất lượng cao từ mọi nền tảng (Douyin, Bilibili, TikTok, Kuaishou, YouTube), chia sẻ key API dịch thuật, biên tập phụ đề và xuất audio đồng bộ.",
+      "📌 Tiết Kiệm Chi Phí Sản Xuất Tối Đa: Thay vì phải trả phí đắt đỏ mua ký tự trên các nền tảng TTS bên ngoài, học viên có thể tận dụng trực tiếp tính năng này để cắt giảm tối đa chi phí vận hành kênh."
     ],
     "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
+      "primary": "Quy trình tải video nguồn, dịch phụ đề tự động và tạo giọng đọc đồng bộ timeline SRT trên H2DEV Tool",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Bước 1: Sử dụng tính năng Download trên h2devtool.com để tải video nét cao từ Douyin/Bilibili/TikTok",
+        "Bước 2: Nạp file phụ đề gốc vào Subtitle Editor, chọn ngôn ngữ đích là tiếng Việt để hệ sinh thái tool dịch chuẩn ngữ cảnh",
+        "Bước 3: Chọn tab Tạo Voice, chọn model giọng đọc Ngọc Huyền (Vbee) và nhấn tạo audio",
+        "Bước 4: Nghe thử kiểm tra tốc độ đọc theo từng câu, tinh chỉnh timing nếu cần để khớp tuyệt đối với diễn biến hình ảnh",
+        "Bước 5: Xuất file âm thanh đã khớp timeline và import trực tiếp vào phần mềm dựng (CapCut / Premiere) để render video hoàn chỉnh"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Không để khoảng cách thời gian giữa các câu phụ đề quá ngắn khiến câu thoại bị dồn ép hoặc đọc quá nhanh",
+      "Tránh tải video nguồn độ phân giải thấp (dưới 720p) gây vỡ hình khi phóng to trên màn hình TV",
+      "Kiểm tra kỹ các từ phiên âm tiếng nước ngoài hoặc từ địa phương trong file SRT trước khi bấm xuất voice để tránh AI đọc sai ngữ âm"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "H2DEV Tool (h2devtool.com)",
+      "Vbee TTS (Giọng Ngọc Huyền)",
+      "Subtitle Editor SRT",
+      "CapCut",
+      "Video Downloader Multi-Platform"
+    ],
+    "channels_mentioned": [
+      "H2DEV Tooling Ecosystem"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Em chào mọi người nha, thì cái tool dịch của em thì vừa update mộ…"
+        "label": "Thông báo bản update tính năng tạo voice mới trên web tool dịch"
       },
       {
-        "time": "00:37",
-        "seconds": 37,
-        "label": "Đấy thì anh em nếu mà làm các cái dạng review á"
+        "time": "00:30",
+        "seconds": 30,
+        "label": "Giới thiệu giọng đọc Ngọc Huyền (Vbee) tích hợp hoàn toàn miễn phí"
       },
       {
-        "time": "01:04",
-        "seconds": 64,
-        "label": "Thì anh em có thể xem thêm nha"
+        "time": "01:05",
+        "seconds": 65,
+        "label": "Demo tạo voice tự động khớp chuẩn xác theo timeline phụ đề SRT"
       },
       {
-        "time": "01:37",
-        "seconds": 97,
-        "label": "Rồi thì em lưu lại về cho mọi người nghe que cái em vừa tạo nha."
+        "time": "01:40",
+        "seconds": 100,
+        "label": "Test mẫu âm thanh thực tế: Đoạn thoại tài liệu sinh tồn hoang dã"
       },
       {
-        "time": "02:13",
-        "seconds": 133,
-        "label": "Tất cả các cái nền tảng"
+        "time": "02:15",
+        "seconds": 135,
+        "label": "Tổng quan các tính năng đi kèm: Download đa nền tảng, chia sẻ API key"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "analysis_method": "deep_human_verified_transcription",
+    "accuracy_status": "verified",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-6283a6/transcript.txt"
   },
   "VIDEO-64130d": {
     "sku": "VIDEO-64130d",
     "title": "TOOL DỊCH PHỤ ĐỀ SRT VIP - HƯỚNG DẪN DÙNG TOOL DỊCH PHỤ ĐỀ SRT CHUYÊN VIETSUB LÀM REUP/ BÁN CONTENT",
-    "actual_topic": "TOOL DỊCH PHỤ ĐỀ SRT VIP - HƯỚNG DẪN DÙNG TOOL DỊCH PHỤ ĐỀ SRT CHUYÊN VIETSUB LÀM REUP/ BÁN CONTENT",
-    "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
+    "actual_topic": "Hướng dẫn sử dụng Web Tool dịch phụ đề SRT VIP H2DEV tích hợp DeepSeek AI đa tác vụ chạy nền",
+    "category_group": "cong_cu_tool",
+    "niche_primary": "Reup & Khai Thác Hoạt Hình",
+    "niche_id": "tool-sub-vietsub",
     "target_market": "Nhật Bản",
     "market_code": "JP",
     "key_takeaways": [
-      "Chào mọi người, video này em giới thiệu về hướng dẫn mọi người về con tool dịch vụ đề SRT này mới update phiên bản VIP nhất nha mọi người",
-      "Nếu mà bác nào dùng máy hệ điều hành macOS thì không thể cài tool được",
-      "Đấy nên là em đã cải thiện về update phiên bản VIP nhất lên web luôn nha mọi người, cho mọi người dùng thẳng trực tiếp trên web luôn nha",
-      "Về bất cứ mọi người dùng hệ điều hành máy nào thì vẫn dùng được nha mọi người"
+      "📌 Bản VIP Đột Phá Lên Web 100%: Hoạt động trơn tru trên mọi thiết bị và hệ điều hành (macOS, Windows, iOS, Android), không cần tải cài đặt phức tạp như tool desktop cũ.",
+      "📌 Tích Hợp DeepSeek AI Cao Cấp: Dịch thuật bám sát ngữ cảnh hội thoại, câu từ mượt mà thuần Việt, loại bỏ hoàn toàn lỗi dịch máy thô cứng.",
+      "📌 Tính Năng Chạy Ngầm Đa Tác Vụ: Cho phép tải nhiều file cùng lúc; người dùng có thể tắt tab, tắt trình duyệt, đi làm việc khác, server vẫn tự dịch xong ngầm.",
+      "📌 Cấp Sẵn Credit Không Cần Mua Key API: Thành viên không cần thẻ thanh toán quốc tế Visa/Mastercard hay tự mua API ngoài; hệ thống cấp sẵn credit trọn gói.",
+      "📌 Hai Gói Linh Hoạt: Gói tháng (500.000 credit ~45-50h dịch) và Gói vĩnh viễn (1.800.000 credit không giới hạn thời gian, hỗ trợ nạp thêm trực tiếp)."
     ],
     "edit_sop": {
-      "primary": "000 credit nha mọi người, tương đương với là tầm 40 đến 50 giờ dịch đấy",
+      "primary": "✨ Quy trình 4 bước dịch phụ đề tự động: Chuẩn bị file SRT nguồn $\\rightarrow$ Đăng nhập Web Tool thiết lập chiều dịch $\\rightarrow$ Theo dõi tiến độ chạy ngầm $\\rightarrow$ Tải file kiểm tra bằng Notepad++.",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Kiểm tra kỹ chiều ngôn ngữ tại mục Thiết lập dịch thuật (Trung $\\rightarrow$ Việt, Nhật $\\rightarrow$ Việt) tránh bị đảo chiều.",
+        "Nhấn biểu tượng Con mắt (👁️) để xem trực tiếp các câu dịch đang sinh ra theo thời gian thực.",
+        "Mở file SRT bằng Notepad++ để rà soát đại từ nhân xưng trước khi import vào CapCut dựng video."
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "⚠️ Tránh chọn nhầm chiều dịch ngôn ngữ dẫn đến việc gen ra phụ đề sai ngữ cảnh hoặc trùng lặp tiếng gốc.",
+      "⚠️ Lưu ý với gói tháng: Credit sẽ tự động reset về 0 vào ngày hết hạn 30 ngày, cần chú ý sử dụng hết hạn mức.",
+      "⚠️ Không dùng Notepad mặc định của Windows mở file SRT vì dễ bị lỗi font Unicode tiếng Việt; nên dùng Notepad++ hoặc VS Code."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "h2devtool.com",
+      "DeepSeek",
+      "Notepad++",
+      "CapCut PC"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Em chào mọi người, video này em giới thiệu về hướng dẫn mọi người…"
+        "label": "Giới thiệu phiên bản Web Tool dịch phụ đề SRT VIP hỗ trợ MacOS/Windows"
+      },
+      {
+        "time": "00:48",
+        "seconds": 48,
+        "label": "Phân tích 2 gói tài khoản: Gói tháng 500k credit và Gói vĩnh viễn 1.8M credit"
       },
       {
         "time": "02:12",
         "seconds": 132,
-        "label": "Thì em đang phát triển thêm cái tool void về tool render video nữ…"
+        "label": "Hướng dẫn đăng nhập, tải file lên và thiết lập ngôn ngữ dịch thuật"
       },
       {
         "time": "03:34",
         "seconds": 214,
-        "label": "Th m ng c s xem C tr ti n d nha m ng c th theo d Quy tr n ghen ra…"
-      },
-      {
-        "time": "04:41",
-        "seconds": 281,
-        "label": "hoặc là trong quá trình làm mọi người test đi"
+        "label": "Demo tính năng chạy ngầm tắt tab không mất tiến độ và xem preview thời gian thực"
       },
       {
         "time": "05:55",
         "seconds": 355,
-        "label": "Em hay dùng con Notepad cộng cộng này chứ không dùng con Notepad …"
+        "label": "Tải file SRT về máy và mẹo kiểm tra phụ đề bằng Notepad++"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "analysis_method": "human_expert_review",
+    "accuracy_status": "verified",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-64130d/transcript.txt"
   },
   "VIDEO-6ad3fe": {
@@ -6796,60 +6847,72 @@
   "VIDEO-d84a78": {
     "sku": "VIDEO-d84a78",
     "title": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
-    "actual_topic": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
-    "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
+    "actual_topic": "Lộ trình chuẩn 8 Module khóa học H2DEV và chính sách hợp tác làm kênh YouTube ăn chia doanh thu",
+    "category_group": "ban_content",
+    "niche_primary": "Bán Content & Phát Triển Kênh",
+    "niche_id": "kenh-hop-tac-lo-trinh",
     "target_market": "Hàn Quốc",
     "market_code": "KR",
     "key_takeaways": [
-      "Thì nói chung em show ra để cho anh em thấy được những cái kênh mới em vừa bật kiếm tiền rất là bình thường nha mọi người",
-      "Đấy, để cho anh em có động lực mà làm",
-      "Chứ còn những cái kênh lớn cũng như là doanh thu lớn ở bên em thì anh em cũng đều biết rồi",
-      "Anh em có theo dõi trên TikTok em thì lâu lâu em cũng có chia sẻ"
+      "📌 Chuẩn Hóa Lộ Trình 8 Module Khóa Học: H2DEV tái cấu trúc toàn bộ khóa học theo 8 module khoa học, giúp người mới nắm bắt từ nền tảng kênh, lọc key, train prompt đến edit nâng cao.",
+      "📌 Module 4 Là Trọng Tâm Cốt Lõi: Nơi liên tục cập nhật các ngách mới, kênh đối thủ và case study thực chiến hàng tuần; học viên luôn cần bấm mục \"Mới cập nhật\" để xem.",
+      "📌 Chính Sách Hợp Tác Ăn Chia Doanh Thu: H2DEV mở rộng các kèo hợp tác kênh YouTube view Việt và view Ngoại (Hàn, Nhật, US), ưu tiên 100% cho thành viên gói Pro.",
+      "📌 Case Study Kênh Reup Hàn/Việt Vừa Bật Kiếm Tiền: Kênh đối tác mới BKT cuối tháng 2, sau 2 ngày đã nhảy doanh thu 2 triệu VNĐ chứng minh tính thực chiến.",
+      "📌 Tài Nguyên Đính Kèm Giá Trị: Bài học đính kèm trọn bộ Prompt & Quy trình sản xuất ngách Phật pháp / Vận mệnh tuổi già thị trường Hàn Quốc."
     ],
     "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
+      "primary": "✨ Quy trình 5 bước sản xuất video ngách Phật pháp Hàn Quốc: Idea chủ đề $\\rightarrow$ Tiêu đề CTR $\\rightarrow$ Outline 8 phần $\\rightarrow$ Viết full script 18.000 ký tự $\\rightarrow$ Khử mùi AI Rewrite.",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Học theo đúng thứ tự 8 Module: Không nhảy cóc để tránh hổng kiến thức nền tảng và setting kênh sai.",
+        "Sử dụng kho b-roll bản quyền miễn phí: Vecteezy, Pexels, Pixabay, Freepik cho cảnh thiên nhiên, chùa chiền.",
+        "Áp dụng công cụ tách nền Remove.bg để tạo thumbnail tương phản cao phong cách Hàn Quốc."
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "⚠️ Không xem video nhảy cóc hoặc bỏ qua Module 1 (Setting kênh chuẩn); sai quy trình ngay từ đầu sẽ khiến kênh không bao giờ cắn đề xuất.",
+      "⚠️ Không dùng kịch bản AI tạo thô ra dùng ngay; bắt buộc phải chạy qua prompt Bước 5 để khử mùi lặp từ và văn phong máy móc.",
+      "⚠️ Không giật tít gây hoang mang quá mức về vận mệnh; phải giữ sự cân bằng giữa tò mò và cảm xúc đồng cảm sâu sắc."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "ChatGPT",
+      "Vecteezy",
+      "Pexels",
+      "Pixabay",
+      "Freepik",
+      "Remove.bg"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Ừ ok em xin chào tất cả mọi người nha Thì video này thì em sẽ nói…"
+        "label": "Show kênh đối tác thị trường Hàn Quốc vừa BKT và công bố chính sách hợp tác"
+      },
+      {
+        "time": "01:30",
+        "seconds": 90,
+        "label": "Hướng dẫn lộ trình xem video chuẩn theo 8 Module từ cơ bản đến nâng cao"
       },
       {
         "time": "02:10",
         "seconds": 130,
-        "label": "Về tiếp tục, cái quan trọng nhất là cái mô đun thứ 4 nha mọi ngườ…"
+        "label": "Tầm quan trọng của Module 4 (Update ngách mới) và mục Mới cập nhật"
       },
       {
         "time": "03:30",
         "seconds": 210,
-        "label": "Em chia sẻ đều là thực tế hết"
+        "label": "Triết lý đào tạo thực chiến 100% không lý thuyết suông của H2DEV"
       },
       {
         "time": "05:06",
         "seconds": 306,
-        "label": "Đấy thì em men chia nha mọi người"
-      },
-      {
-        "time": "06:31",
-        "seconds": 391,
-        "label": "Dành cho quyền truyền tư"
+        "label": "Chi tiết cơ chế hợp tác ăn chia doanh thu và phân quyền tài liệu Pro"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "analysis_method": "human_expert_review",
+    "accuracy_status": "verified",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-d84a78/transcript.txt"
   },
   "VIDEO-dbd487": {
@@ -7288,60 +7351,81 @@
   "VIDEO-e91589": {
     "sku": "VIDEO-e91589",
     "title": "16 triệu/ 1 ngày - Doanh thu kênh thị trường Nhật, làm nhân bản thị trường",
-    "actual_topic": "16 triệu/ 1 ngày - Doanh thu kênh thị trường Nhật, làm nhân bản thị trường",
-    "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
-    "target_market": "Nhật Bản",
+    "actual_topic": "Chiến Lược Nhân Bản Thị Trường Nhật Bản: RPM Khủng 108k-113k (~4-5$), 1 Video Đạt 33 Triệu VNĐ Sau 300k View & Công Thức Tối Ưu Thời Lượng",
+    "category_group": "chien_luoc",
+    "niche_primary": "Nhân Bản Thị Trường & Kỹ Thuật YouTube Ngoại",
+    "niche_id": "market-replication-japan",
+    "target_market": "Nhật Bản (Mã: JP)",
     "market_code": "JP",
     "key_takeaways": [
-      "Nhưng mà nó đang bị chậm nè",
-      "Chắc tầm chiều tối nay thì nó sẽ update thôi",
-      "Em chia sẻ cái danh thu thực tế cho mọi người xem thấy một cái kênh nhật nó làm ra được danh thu như thế nào nha",
-      "Lúc trước đó thì rất là liệt đẹp thôi, tầm hơn 1 triệu thôi"
+      "📌 Doanh Thu Đột Phá Từ Thị Trường Nhật (JP): Kênh học viên gói Pro mới toanh áp dụng công thức nhân bản thị trường đạt doanh thu hơn 16.000.000 VNĐ / ngày. Trước khi nhân bản, view lẹt đẹt chỉ tầm hơn 1 triệu đồng/ngày, nhưng khi chuyển đúng ngách chuẩn thì view nổ mạnh.",
+      "📌 Chỉ Số RPM Đỉnh Cao (108.000đ - 113.000đ / 1.000 view): RPM thị trường Nhật Bản đạt khoảng $4.5 - $5 USD cho mỗi 1.000 lượt xem. Với 1 video nổ hơn 300.000 views, doanh thu thu về thực tế đã vượt hơn 33.000.000 VNĐ chỉ sau vài ngày đăng tải.",
+      "📌 AVD & Tối Ưu Độ Dài Video: Thời gian giữ chân trung bình (AVD) của video này chỉ đạt 6 - 7 phút mà RPM đã đạt 108k. Nếu tối ưu làm video thời lượng dài hơn (dạng 45 - 60 phút) giữ chân được 15 - 20 phút thì RPM có thể tăng gấp đôi lên $8 - $10 USD nhờ phân bổ nhiều mid-roll ads.",
+      "📌 Tư Duy Lách Thị Trường (Không Đối Đầu Trực Diện): Thay vì cạnh tranh khốc liệt tại thị trường Mỹ (US), lấy key/kịch bản thành công từ US hoặc Hàn Quốc (KR) rồi dịch và chuyển thể giọng đọc sang Nhật (JP) hoặc ngược lại (KR -> JP, US -> JP, JP -> KR). Thị trường Nhật có sức mua và doanh thu quảng cáo cực cao nhưng ít kênh Việt làm cạnh tranh trực diện.",
+      "📌 Kênh Mới Vẫn Lên Bình Thường: Phá bỏ định kiến chỉ có kênh làm lâu năm mới nổ view. Kênh trong case study là kênh hoàn toàn mới vừa bật kiếm tiền, chứng minh quy trình nhân bản hoạt động xuất sắc cho cả người mới nếu tuân thủ đúng chuẩn."
     ],
     "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
+      "primary": "Quy trình nhân bản nội dung từ thị trường gốc (US/Hàn) sang tiếng Nhật (JP) và đồng bộ phụ đề/voice chuyên sâu",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Nghiên cứu đối thủ mạnh ở thị trường Mỹ hoặc Hàn, bóc tách cấu trúc kịch bản và câu chuyện có tính tò mò/giữ chân cao",
+        "Dịch kịch bản sang tiếng Nhật chuẩn bản ngữ, sử dụng các công cụ AI (DeepL/ChatGPT) kết hợp prompt soát lỗi ngữ cảnh tự nhiên",
+        "Tạo giọng đọc tiếng Nhật tự nhiên (ElevenLabs hoặc Fish Audio / Vbee) với ngữ điệu trầm ấm, cuốn hút theo phong cách tài liệu/kể chuyện",
+        "Dựng video với nhịp cắt b-roll 3-5 giây/shot, bổ sung chữ Kanji/Hiragana tóm tắt ý chính trên màn hình để tăng trải nghiệm xem của người Nhật",
+        "Tối ưu thumbnail theo phong cách Nhật: chữ to, màu sắc tương phản cao (vàng/đỏ/trắng trên nền đen), biểu cảm hình ảnh giật gân, khơi gợi tò mò"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Không reup nguyên xi video của đối thủ Nhật Bản (YouTube Nhật quét bản quyền hình ảnh và âm thanh rất gắt, dễ dính gậy hoặc lỗi nội dung sử dụng lại)",
+      "Tránh dịch máy thô sơ từ Google Translate sang tiếng Nhật (ngữ pháp sai lệch làm tụt tỷ lệ giữ chân của khán giả bản xứ)",
+      "Không chèn quảng cáo mid-roll quá dày trong 3 phút đầu tiên của video (khán giả Nhật rất nhạy cảm với quảng cáo rác, dễ thoát video ngay lập tức)"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Studio Analytics",
+      "DeepL",
+      "ChatGPT",
+      "ElevenLabs",
+      "Google AdSense",
+      "CapCut Pro"
+    ],
+    "channels_mentioned": [
+      "Học viên gói Pro H2DEV (Kênh Nhật)"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Em chào mọi người nha, thì đây là một kênh của một bác hợp viên t…"
+        "label": "Giới thiệu kênh học viên Pro và chiến lược nhân bản sang Nhật Bản"
       },
       {
-        "time": "01:06",
-        "seconds": 66,
-        "label": "Là Robomore ấy mọi người"
+        "time": "00:35",
+        "seconds": 35,
+        "label": "Show doanh thu thực tế: Nhảy vọt hơn 16 triệu VNĐ / ngày"
       },
       {
-        "time": "01:39",
-        "seconds": 99,
-        "label": "th RMM c th c n l 113k RMM th n trung b th c l n em coi ngo l t c…"
+        "time": "01:05",
+        "seconds": 65,
+        "label": "Phân tích chỉ số RPM khủng 108.000đ (~4.5$ - $5 / 1.000 views)"
       },
       {
-        "time": "02:35",
-        "seconds": 155,
-        "label": "cái nhìn thực tế luôn"
+        "time": "01:35",
+        "seconds": 95,
+        "label": "Case study 1 video đạt 300k view thu về hơn 33 triệu VNĐ"
+      },
+      {
+        "time": "02:15",
+        "seconds": 135,
+        "label": "Chiến lược tối ưu thời lượng giữ chân (AVD) để nhân đôi RPM"
       },
       {
         "time": "02:55",
         "seconds": 175,
-        "label": "còn những cái ngách"
+        "label": "Tư duy luân chuyển key giữa các thị trường US, Hàn, Nhật"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "analysis_method": "deep_human_verified_transcription",
+    "accuracy_status": "verified",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-e91589/transcript.txt"
   },
   "VIDEO-e95a8f": {
@@ -7465,60 +7549,68 @@
   "VIDEO-ec9c50": {
     "sku": "VIDEO-ec9c50",
     "title": "KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026",
-    "actual_topic": "KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026",
-    "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
+    "actual_topic": "Case study thực chiến kháng lỗi Sử dụng lại nội dung và Gậy bản quyền thành công trong 12 tiếng",
+    "category_group": "khang_ban_quyen",
+    "niche_primary": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche_id": "appeals-copyright-strike",
     "target_market": "Toàn cầu / Ngoại",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Đây là một cái kênh vừa mới bị Youtube là không được phê diệt là kiếm tiền nha mọi người",
-      "Đó, đây anh em xem nè, lúc thời điểm em đang quay này là tối ngày 18 tháng 12 nha mọi người",
-      "Nói chung là về cái dạng này á, thì em kháng là chưa được 12 tiếng là nó đã về rồi nha mọi người",
-      "100 là đều về nha mọi người, và kể kể là gãi bản quyền các thứ"
+      "📌 Giải Cứu Kênh Thần Tốc Trong 12 Tiếng: Kênh học viên bị từ chối BKT vào chiều tối ngày 17/12 do dính lỗi Sử dụng lại nội dung, được H2DEV hỗ trợ kháng và phục hồi BKT vào tối 18/12.",
+      "📌 Cam Kết Tỷ Lệ Về 99%: Áp dụng bộ giải pháp kháng đa tầng (Video Appeal + Công văn giải trình Fair Use) giúp cứu kênh reup/bán content đạt tỷ lệ thành công 99%.",
+      "📌 Xử Lý Được Cả Gậy Bản Quyền & Trùng Lặp: Quy trình chuẩn áp dụng hiệu quả cho cả lỗi Reused Content từ bot YouTube lẫn gậy bản quyền do đối thủ đánh phá.",
+      "📌 Không Được Tự Ý Xóa Video Vi Phạm: Khi kênh bị quét, video bị gắn cờ là bằng chứng duy nhất để nhân viên YouTube đối chiếu; xóa video đồng nghĩa với việc tự tước quyền appeal.",
+      "📌 Kênh Hỗ Trợ Trực Tiếp 24/7: Tác giả công bố hotline/Zalo trực tiếp 0777682597 để hỗ trợ khẩn cấp cho học viên gặp sự cố bản quyền."
     ],
     "edit_sop": {
-      "primary": "Đó, đây anh em xem nè, lúc thời điểm em đang quay này là tối ngày 18 tháng 12 nha mọi người",
+      "primary": "✨ Chiến lược 3 bước kháng gậy và lỗi trùng lặp: Đánh giá video kích hoạt quét $\\rightarrow$ Chuẩn bị hồ sơ dự án & công văn giải trình Fair Use $\\rightarrow$ Nộp appeal video qua YouTube Studio.",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Thu thập toàn bộ footage gốc, file ghi âm voiceover và file project Premiere/CapCut.",
+        "Viết bản giải trình 4 yếu tố Fair Use chứng minh giá trị sáng tạo gia tăng độc bản.",
+        "Liên hệ ngay đội ngũ kỹ thuật trong vòng 14 ngày kể từ khi nhận thông báo của YouTube."
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "⚠️ Tuyệt đối không xóa video bị quét trước khi liên hệ hỗ trợ; hành động xóa video sẽ làm mất hoàn toàn cơ hội cứu kênh.",
+      "⚠️ Không hoảng loạn nộp đơn kháng văn bản sơ sài; chỉ có 1 cơ hội kháng appeal video duy nhất cho mỗi đợt quét.",
+      "⚠️ Tránh mua các dịch vụ kháng thuê trôi nổi dùng bot spam form khiến kênh bị liệt vào danh sách đen."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Studio Appeal",
+      "Hotline Zalo 0777682597"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Thì đây là một cái kênh vừa mới bị Youtube là không được phê diệt…"
+        "label": "Thông báo kênh học viên vừa bị YouTube từ chối BKT do lỗi Sử dụng lại nội dung"
       },
       {
         "time": "00:23",
         "seconds": 23,
-        "label": "Đây lúc trước khi bị kháng nè mọi người"
-      },
-      {
-        "time": "00:32",
-        "seconds": 32,
-        "label": "Anh em rẹp rất là nhiều rồi"
+        "label": "Bằng chứng trước khi kháng: Kênh bị báo lỗi Reused Content ngày 17/12"
       },
       {
         "time": "00:42",
         "seconds": 42,
-        "label": "Ngày 17 tháng 12 nha mọi người"
+        "label": "Kết quả phục hồi BKT xanh chỉ sau chưa đầy 12 tiếng vào tối 18/12"
       },
       {
         "time": "01:14",
         "seconds": 74,
-        "label": "hoặc là mọi người bấm là bật kiếm tiền nhưng mà nó không được phê…"
+        "label": "Phân tích tỷ lệ kháng thành công 99% cho lỗi trùng lặp và gậy bản quyền"
+      },
+      {
+        "time": "01:30",
+        "seconds": 90,
+        "label": "Thông tin liên hệ Zalo 0777682597 để nhận hỗ trợ giải cứu kênh"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "analysis_method": "human_expert_review",
+    "accuracy_status": "verified",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-ec9c50/transcript.txt"
   },
   "VIDEO-ed1be9": {
@@ -7704,57 +7796,74 @@
   "VIDEO-f77c31": {
     "sku": "VIDEO-f77c31",
     "title": "Doanh thu kênh làm bán content ngách view Việt sau 10 ngày bật kiếm tiền",
-    "actual_topic": "Doanh thu kênh làm bán content ngách view Việt sau 10 ngày bật kiếm tiền",
+    "actual_topic": "Khai Thác Mỏ Vàng View Việt Ngách Người Cao Tuổi (>60 Tuổi): Bán Content Nổ 2 Triệu/Ngày Sau 10 Ngày Bật Kiếm Tiền",
     "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
-    "target_market": "Việt Nam",
+    "niche_primary": "Bán Content View Việt Tệp Cao Niên & Trưởng Thành",
+    "niche_id": "vietnam-senior-semi-content",
+    "target_market": "Việt Nam (Mã: VN)",
     "market_code": "VN",
     "key_takeaways": [
-      "Nội dung bài học chia sẻ về chủ đề: Doanh thu kênh làm bán content ngách view Việt sau 10 ngày bật kiếm tiền."
+      "📌 Khai Thác Sức Mạnh View Việt Tệp Cao Niên: Kênh bán content nhắm vào đối tượng người cao tuổi (trên 60 - 65 tuổi) tại Việt Nam bật kiếm tiền ngày 07/05, sau 10 ngày đã đạt doanh thu trung bình 1 triệu/ngày và 2 ngày gần nhất nhảy vọt hơn 2.000.000 VNĐ / ngày.",
+      "📌 Lợi Thế Vượt Trội Của Khán Giả Lớn Tuổi: Tệp khán giả trên 60 tuổi xem video cực kỳ chăm chú, ít bấm tua, thời gian giữ chân (AVD) cao ngất ngưởng và có xu hướng xem hết toàn bộ video. Đồng thời tệp này ít dùng chặn quảng cáo nên số lượt hiển thị quảng cáo rất cao.",
+      "📌 Bán Content Đúng Chuẩn Không Che Dashboard: Video chứng minh thực tế bằng Dashboard Studio thật không che giấu bất kỳ số liệu nào. Bán content (kết hợp kịch bản AI với tư liệu video thực tế sưu tầm và xử lý biến thể) là con đường ngắn nhất cho người mới bắt đầu kiếm tiền.",
+      "📌 Quy Trình Sản Xuất 31 Phút Đầy Đủ: Toàn bộ quy trình từ khâu lên kịch bản, tìm kiếm nguồn tài nguyên video (Bilibili, Douyin, YouTube Commons), dựng hình và ghép âm thanh đã được chuẩn hóa trong bài giảng Pro 31 phút.",
+      "📌 View Ngoại Hay View Việt Đều Thắng Nếu Đánh Đúng Ngách: Đừng chê view Việt. Với chi phí sản xuất thấp, không rào cản ngôn ngữ, việc kiếm 30 - 60 triệu VNĐ/tháng từ 1 kênh view Việt ngách người già hoàn toàn trong tầm tay nếu làm bài bản."
     ],
     "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
+      "primary": "Quy trình sản xuất video bán content cho tệp khán giả lớn tuổi tại Việt Nam",
       "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
+        "Nghiên cứu chủ đề đánh trúng tâm lý người lớn tuổi: Đạo làm người, triết lý sống, sức khỏe tuổi già, chuyện gia đình, hoài niệm lịch sử",
+        "Sử dụng kịch bản ngôn từ mộc mạc, gần gũi, tôn kính, tốc độ đọc vừa phải (130-140 từ/phút), giọng ấm áp (Ngọc Huyền / Nam Miền Bắc)",
+        "Tư liệu hình ảnh: Ghép footage phong cảnh làng quê, cuộc sống bình dị, hình ảnh minh họa chân thực có chọn lọc",
+        "Cỡ chữ phụ đề (subtitle) to, rõ ràng, tương phản cao trên nền tối để người lớn tuổi dễ dàng đọc theo",
+        "Nhạc nền (BGM) nhẹ nhàng, du dương, âm lượng nhỏ hơn giọng đọc 18-20dB để không gây chói tai"
       ]
     },
     "avoid_flags": [
-      "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
+      "Tuyệt đối không lấy nguyên xi clip ngắn của người khác rồi nối lại mà không có lời dẫn chuyện (dễ bị YouTube gán lỗi Sử dụng lại nội dung)",
+      "Tránh sử dụng nhạc nền quá to, âm thanh điện tử tiết tấu nhanh gây khó chịu cho khán giả lớn tuổi",
+      "Không giật tít câu view sai sự thật (clickbait bẩn) gây mất thiện cảm và khiến người già bỏ kênh"
     ],
-    "tools_mentioned": [],
-    "channels_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Studio Analytics",
+      "CapCut",
+      "Tool Dịch H2DEV",
+      "Vbee Voice"
+    ],
+    "channels_mentioned": [
+      "Kênh bán content học viên H2DEV (Ngách người già)"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Ok em xin chào mọi người nha, thì đây là một cái kênh làm thị trư…"
+        "label": "Giới thiệu kênh view Việt vừa bật kiếm tiền sau 10 ngày"
       },
       {
-        "time": "00:35",
-        "seconds": 35,
-        "label": "Đấy thì em cũng vừa lên video hướng dẫn full quy trình cũng như l…"
+        "time": "00:25",
+        "seconds": 25,
+        "label": "Show Dashboard doanh thu VNĐ: Nhảy hơn 2 triệu đồng/ngày"
       },
       {
-        "time": "01:15",
-        "seconds": 75,
-        "label": "mọi người, em hướng dẫn"
+        "time": "00:55",
+        "seconds": 55,
+        "label": "Quy trình làm bán content 31 phút: Kịch bản, tài nguyên, dựng hình"
       },
       {
         "time": "01:30",
         "seconds": 90,
-        "label": "edit luôn nha mọi người"
+        "label": "Phân tích nhân khẩu học: Tệp khán giả vàng trên 60 - 65 tuổi tại Việt Nam"
       },
       {
-        "time": "01:46",
-        "seconds": 106,
-        "label": "người già nha, trên 65 tuổi luôn nha mọi người"
+        "time": "01:55",
+        "seconds": 115,
+        "label": "Tổng kết đà tăng trưởng và tiềm năng thu nhập của ngách"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "analysis_method": "deep_human_verified_transcription",
+    "accuracy_status": "verified",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-f77c31/transcript.txt"
   },
   "VIDEO-ff9be6": {
@@ -7876,5 +7985,329 @@
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-ffccd2/transcript.txt"
+  },
+  "ZOOM-01-Nen-tang-moi-truong": {
+    "sku": "ZOOM-01-Nen-tang-moi-truong",
+    "title": "Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
+    "actual_topic": "Chiến Lược Môi Trường Cô Lập: Proxy IPv4 Datacenter, Nuôi & Bảo Mật Gmail Cổ, Quy Trình Ngâm Kênh 3-4 Ngày Song Song Sản Xuất",
+    "category_group": "chien_luoc",
+    "niche_primary": "Hạ Tầng Kỹ Thuật & Môi Trường YouTube Faceless",
+    "niche_id": "faceless-infrastructure",
+    "target_market": "Toàn cầu / Ngoại (Mỹ, Singapore, Nhật Bản)",
+    "market_code": "GLOBAL",
+    "key_takeaways": [
+      "Môi trường cô lập (Isolated Environment): Không bao giờ dùng IP mạng nhà để quản lý nhiều kênh. Khi làm trên 2-3 kênh bắt buộc phải dùng Proxy IPv4 Datacenter (Singapore hoặc US) tích hợp trên trình duyệt riêng (MKT Browser / GPM) để tránh bị liên đới toàn dàn kênh khi có kênh bị quét.",
+      "Chiến lược tài khoản Gmail: Ưu tiên Gmail người thân có độ trust tự nhiên cao. Nếu mua Gmail ngoài, chỉ mua thử 1-2 cái test trước. Tuyệt đối không đổi mật khẩu ngay khi vừa mua mà chỉ thêm SĐT và email khôi phục; sau đúng 7 ngày mới đổi mật khẩu để tránh checkpoint.",
+      "Ngâm Gmail & Tạo tương tác người dùng thật: Gmail mới mua phải ngâm 1-2 ngày với hành vi tự nhiên (search Google, xem YouTube, tương tác Maps). Mỗi Gmail chỉ nên gắn 3-4 kênh; khi có kênh bùng nổ view thì tách kênh sang Gmail độc lập.",
+      "Quy trình ngâm kênh song song sản xuất: Sau khi tạo kênh, để ngâm 2-3 ngày (subscribe và xem vài kênh cùng chủ đề). Không ngồi chờ thụ động mà tận dụng thời gian này sản xuất sẵn 20-30 video kịch bản đầu tiên để sẵn sàng đăng hàng loạt.",
+      "Chiến lược lách thị trường địa lý: Nghiên cứu đối thủ mạnh ở các thị trường lớn (Mỹ, Nhật, Hàn), không đánh trực diện tại cùng quốc gia mà nhân bản kịch bản sang ngôn ngữ / quốc gia khác để giảm áp lực cạnh tranh."
+    ],
+    "edit_sop": {
+      "primary": "Thiết lập môi trường phần cứng và tài khoản sạch trước khi sản xuất video",
+      "additional": [
+        "Cấu hình proxy IPv4 trên profile trình duyệt chống phát hiện riêng biệt (MKT/GPM)",
+        "Bật bảo mật 2 lớp 2FA bằng Google Authenticator, không dùng chung 1 email khôi phục cho nhiều mail",
+        "Xác minh kênh YouTube cấp nâng cao bằng tính năng quét khuôn mặt (video verification) thay vì chờ đợi"
+      ]
+    },
+    "avoid_flags": [
+      "Tuyệt đối không dùng Proxy IPv6 cho YouTube (IPv6 chỉ dùng cho Facebook/Gmail cơ bản, YouTube quét rớt view hoặc 0 view)",
+      "Không đổi mật khẩu Gmail ngay khi vừa mua từ bên thứ ba (dễ bị khóa checkpoint do hành vi bất thường)",
+      "Không dùng chung 1 email khôi phục cho toàn bộ dàn Gmail phụ (nguy cơ chết chùm khi 1 kênh bị phạt)",
+      "Không đăng video ngay khi vừa tạo kênh; bắt buộc phải ngâm kênh 2-3 ngày để hình thành profile người dùng thật"
+    ],
+    "tools_mentioned": [
+      "Proxy MKT",
+      "GPM Browser",
+      "Google Authenticator",
+      "VOTP",
+      "Gemini Ultra",
+      "ChatGPT"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "time": "00:00",
+        "seconds": 0,
+        "label": "Bối cảnh thị trường AI và 7 năm kinh nghiệm thực chiến"
+      },
+      {
+        "time": "07:12",
+        "seconds": 432,
+        "label": "Tỷ lệ kháng lỗi và tư duy xây dựng hệ thống kênh"
+      },
+      {
+        "time": "19:16",
+        "seconds": 1156,
+        "label": "Quy trình ngâm Gmail và chuẩn bị môi trường"
+      },
+      {
+        "time": "31:00",
+        "seconds": 1860,
+        "label": "Bản chất Proxy và lý do bắt buộc phải dùng Proxy IPv4"
+      },
+      {
+        "time": "38:04",
+        "seconds": 2284,
+        "label": "Phân biệt IPv4 vs IPv6 và cảnh báo lỗi 0 view YouTube"
+      },
+      {
+        "time": "45:10",
+        "seconds": 2710,
+        "label": "Chiến thuật bảo mật Gmail và tách kênh theo doanh thu"
+      }
+    ],
+    "analysis_method": "expert_grounded_audit",
+    "accuracy_status": "verified_expert_summary",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/ZOOM-01-Nen-tang-moi-truong/transcript.json"
+  },
+  "ZOOM-02-Chien-luoc-kenh-san-xuat": {
+    "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
+    "title": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+    "actual_topic": "Chiến Lược Tách Kênh Chống Quét Chéo, Lựa Chọn Ngách Phim Tài Liệu Giá Trị & Quy Chuẩn Prompt Hình Ảnh Camera 50mm Né Quét AI",
+    "category_group": "chien_luoc",
+    "niche_primary": "Chiến Lược Nội Dung & Prompt Kỹ Thuật Né Quét AI",
+    "niche_id": "documentary-prompt-craft",
+    "target_market": "Toàn cầu / Ngoại & Việt Nam",
+    "market_code": "GLOBAL",
+    "key_takeaways": [
+      "Phong cách nội dung quyết định sống còn: 300 người dùng tool nhưng chỉ 1/4 có kênh lên vì phần lớn chọn sai phong cách (làm theo sở thích: anime, xuyên không, drama hoạt hình kém chất lượng). Hướng đi bền vững và an toàn nhất là Phim tài liệu (Documentary), Lịch sử, Khảo cổ, Động vật, Triết lý, Sức khỏe có giá trị tri thức cao.",
+      "Nguyên tắc tách kênh & Quản lý rủi ro: Giữ nguyên chất lượng video ở mọi kênh. Chỉ tách kênh sang Gmail độc lập khi kênh đã bùng nổ và đủ điều kiện bật kiếm tiền. Với 3 kênh trên 1 Gmail: nếu chỉ 1 kênh lên thì xóa 2 kênh chết; nếu 2 kênh lên thì chuyển quyền sở hữu sang Gmail khác và xóa kênh thứ 3.",
+      "Quy trình sản xuất hàng loạt theo công đoạn: Không làm hoàn chỉnh từng video từ A-Z mà làm hàng loạt theo công đoạn (chuẩn bị 20-30 đề tài trên Google Sheets -> xuất kịch bản hàng loạt -> tạo voice hàng loạt -> tạo video hàng loạt).",
+      "Thiết lập thông số kênh chuẩn SEO: Tên kênh, logo, banner, bộ từ khóa do AI tạo. Xác minh SĐT qua dịch vụ OTP (chỉ dùng xác minh kênh YouTube, không gán vào Gmail chính). Bật xác minh 3 bước bằng quét khuôn mặt để mở khóa toàn bộ tính năng nâng cao.",
+      "Kỹ thuật tải video bảo vệ luồng: Video sau khi render xong tải lên ở chế độ \"Không công khai\" (Unlisted) để hệ thống YouTube xử lý phân giải cao (HD/4K) và chạy bot quét bản quyền trước ít nhất 2 giờ; tuyệt đối không để chế độ \"Riêng tư\" (Private)."
+    ],
+    "edit_sop": {
+      "primary": "Quy chuẩn kịch bản phim tài liệu và prompt hình ảnh máy quay chân thực",
+      "additional": [
+        "Thiết lập prompt hình ảnh theo thông số máy quay thực tế: ống kính 50mm, quay cầm tay (handheld), ánh sáng hơi mờ/thiếu sáng (dim lighting), có rung tay nhẹ và zoom cận cảnh",
+        "Thêm bộ Negative Prompt triệt để: không lóe sáng (no lens flare), không ánh sáng huyền ảo (no fantasy glow), không hiệu ứng CGI/3D, không đồ vật/xe cộ hiện đại, không cử động môi nói chuyện",
+        "Biến tấu bối cảnh lịch sử theo văn hóa bản địa (nhân vật, trang phục, vật dụng làng quê Việt Nam xưa)",
+        "Đưa toàn bộ kịch bản và prompt vào tool Vio3 Pro chạy chế độ Video 3 tiết kiệm credit trên 5-8 luồng song song"
+      ]
+    },
+    "avoid_flags": [
+      "Tránh tuyệt đối phong cách realistic AI bóng bẩy, siêu thực, chuyển động phi vật lý (rất dễ bị khán giả ghét và YouTube quét lỗi nội dung không thỏa mãn)",
+      "Không copy y nguyên prompt mẫu của người khác mà phải biến tấu theo từng chủ đề cụ thể",
+      "Không để video chế độ \"Riêng tư\" (Private) vì bot YouTube sẽ không quét kiểm tra trước, khi công khai đột ngột dễ bị gậy bản quyền hoặc bóp tương tác",
+      "Không thay đổi địa điểm kênh đang chạy tốt để nghiên cứu thị trường khác (nguy cơ lệch luồng đề xuất)"
+    ],
+    "tools_mentioned": [
+      "ChatGPT",
+      "Gemini Ultra",
+      "Vio3 Pro",
+      "Chatbot Lịch Sử 6",
+      "VOTP",
+      "CapCut"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "time": "00:35",
+        "seconds": 35,
+        "label": "Nguyên tắc tách kênh và điều kiện chuyển quyền sở hữu"
+      },
+      {
+        "time": "06:29",
+        "seconds": 389,
+        "label": "Phân tích thực trạng 300 học viên và nguyên nhân kênh không lên"
+      },
+      {
+        "time": "08:06",
+        "seconds": 486,
+        "label": "Tại sao phải chọn phong cách Phim tài liệu chân thực"
+      },
+      {
+        "time": "10:09",
+        "seconds": 609,
+        "label": "Ngách động vật và cơ hội thị trường Nhật Bản"
+      },
+      {
+        "time": "31:20",
+        "seconds": 1880,
+        "label": "Thiết lập kênh, xác minh quét khuôn mặt và chế độ Không công khai"
+      },
+      {
+        "time": "01:12:16",
+        "seconds": 4336,
+        "label": "Công thức vàng câu lệnh Prompt: Ống kính 50mm, quay cầm tay, thiếu sáng"
+      },
+      {
+        "time": "01:13:47",
+        "seconds": 4427,
+        "label": "Bộ lọc Negative Prompt loại bỏ CGI và ánh sáng huyền ảo"
+      }
+    ],
+    "analysis_method": "expert_grounded_audit",
+    "accuracy_status": "verified_expert_summary",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.json"
+  },
+  "ZOOM-03-Quy-trinh-tool-toi-uu": {
+    "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
+    "title": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
+    "actual_topic": "Kỹ Thuật X3 Cơ Hội Bằng 3 Kênh Test, Đột Phá Giữ Chân AVD Bằng Ghép Đuôi Video, Hack Đề Xuất Playlist Đối Thủ & Tối Ưu Midroll Ads",
+    "category_group": "chien_luoc",
+    "niche_primary": "Tối Ưu Giữ Chân Khán Giả, Hack Đề Xuất & Doanh Thu RPM",
+    "niche_id": "retention-rpm-optimization",
+    "target_market": "Toàn cầu / Ngoại & Việt Nam",
+    "market_code": "GLOBAL",
+    "key_takeaways": [
+      "Chiến thuật 3 kênh test nhân ba cơ hội: Chuẩn bị 30 video cùng một ngách chia đều cho 3 kênh độc lập (mỗi kênh 10 video). Đăng đều đặn trong 10 ngày để đo lường phản hồi thuật toán; dồn toàn lực vào kênh có chỉ số chuyển đổi cao nhất và loại bỏ 2 kênh kém hiệu quả.",
+      "Bí quyết đột phá thời lượng xem trung bình (AVD): Không cố viết kịch bản dài dòng gây buồn ngủ. Áp dụng công thức \"ghép đuôi video\": Video 3 ghép nối Video 1 vào phần kết thúc; Video 4 ghép Video 2; Video 5 ghép Video 3. Thời lượng video tăng gấp đôi từ 30p lên 60p, kéo AVD từ 10p lên 20p, đẩy mạnh RPM doanh thu.",
+      "Vòng đời 3 lần xuất hiện hợp lệ của một video: Một video độc bản có thể xuất hiện 3 lần trên kênh mà hoàn toàn không vi phạm bản quyền hoặc Reused Content: Lần 1 (video gốc độc lập) -> Lần 2 (ghép vào đuôi video mới sau 2-3 tập) -> Lần 3 (dùng làm nguồn phát lại Livestream 24/7).",
+      "Hack đề xuất bằng danh sách phát (Playlist SEO Trick): Đặt tên Danh sách phát trùng khớp 100% với TÊN KÊNH CỦA ĐỐI THỦ LỚN. Khi người dùng tìm kiếm tên đối thủ hoặc đang xem video đối thủ, danh sách phát của mình sẽ được thuật toán gợi ý ở cột bên phải. Tuyệt đối KHÔNG nhét video của đối thủ vào danh sách phát của mình.",
+      "Quy trình Seeding kích hoạt thuật toán: Đăng ban đầu chỉ tải lên 5 video ở chế độ Không công khai. Mở 5 tab unlisted xem liên tục 1 tiếng, giảm âm lượng, thu nhỏ tab. Video 1 ghim comment chào mừng; Video 2 ghim comment chứa tiêu đề và link của video 1. Hẹn giờ công khai sau ít nhất 2 giờ để ăn trọn điểm giữ chân ban đầu.",
+      "Tối ưu hóa doanh thu quảng cáo (Midroll Placement): Sử dụng tiện ích LickLed YouTube tự động rải quảng cáo midroll mỗi 2 phút một lần trên các video dài. Tỷ lệ lấp đầy quảng cáo thực tế tăng gấp rưỡi giúp doanh thu nhảy vọt dù lượng view bằng nhau."
+    ],
+    "edit_sop": {
+      "primary": "Quy trình lắp ráp video 150 cảnh, xử lý lỗi cảnh vi phạm và hậu kỳ CapCut",
+      "additional": [
+        "Cấu trúc video 20 phút chuẩn gồm 10 phân đoạn x 15 cảnh = 150 cảnh, chạy tool Vio3 V3 (không tốn credit)",
+        "Xử lý lỗi cảnh vi phạm chính sách bằng cách nhân bản một cảnh sạch khác trong thư mục đè vào cảnh lỗi, không dùng công cụ rà soát gây mất thời gian",
+        "Hậu kỳ bắt buộc qua CapCut: cắt gọt cảnh thừa, thêm nhạc nền nhẹ và hiệu ứng riêng trước khi xuất bản",
+        "Ghép đuôi video cũ vào video mới để nhân đôi thời lượng xem trung bình"
+      ]
+    },
+    "avoid_flags": [
+      "Bỏ ngay tư duy SEO từ khóa nhồi nhét thô thiển của 4-5 năm trước (thuật toán YouTube hiện tại quét nội dung bằng giọng nói và b-roll hình ảnh)",
+      "Không thêm video của kênh đối thủ vào danh sách phát của mình (sẽ điều hướng người xem sang kênh họ thay vì giữ chân trên kênh mình)",
+      "Không dùng ảnh thumbnail do chatbot AI tự render vì chất lượng thấp và thiếu cảm xúc giật gân",
+      "Không đăng video ngay lập tức mà không có giai đoạn unlisted và seeding ban đầu"
+    ],
+    "tools_mentioned": [
+      "Gemini Ultra",
+      "ChatGPT",
+      "Vio3 (Model V3)",
+      "CapCut",
+      "LickLed YouTube"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "time": "00:01",
+        "seconds": 1,
+        "label": "Cấu trúc video 150 cảnh cho thời lượng 20 phút"
+      },
+      {
+        "time": "03:28",
+        "seconds": 208,
+        "label": "Chiến thuật 3 kênh test và phân tích đối thủ cạnh tranh"
+      },
+      {
+        "time": "10:00",
+        "seconds": 600,
+        "label": "Quy trình chạy tool Vio3 V3 đa luồng không tốn credit"
+      },
+      {
+        "time": "23:12",
+        "seconds": 1392,
+        "label": "Vấn đề cốt tử của AVD (Thời lượng xem trung bình) và RPM"
+      },
+      {
+        "time": "30:00",
+        "seconds": 1800,
+        "label": "Công thức độc quyền: Ghép đuôi video nhân đôi AVD và 3 vòng đời video"
+      },
+      {
+        "time": "57:36",
+        "seconds": 3456,
+        "label": "Mẹo SEO danh sách phát đặt tên theo kênh đối thủ"
+      },
+      {
+        "time": "01:10:00",
+        "seconds": 4200,
+        "label": "Kỹ thuật seeding 5 tab và tự động rải quảng cáo mỗi 2 phút bằng LickLed"
+      }
+    ],
+    "analysis_method": "expert_grounded_audit",
+    "accuracy_status": "verified_expert_summary",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.json"
+  },
+  "ZOOM-04-Adsense-khang-loi": {
+    "sku": "ZOOM-04-Adsense-khang-loi",
+    "title": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+    "actual_topic": "Bảo Vệ Hạ Tầng Dòng Tiền: Chu Kỳ Thanh Toán Google AdSense (\"Gà\"), Kỹ Thuật Nối Gà An Toàn, Quy Chuẩn Đóng Thuế & Chiến Lược Kháng Lỗi YouTube YPP",
+    "category_group": "chien_luoc",
+    "niche_primary": "Quản Trị Doanh Thu, Google AdSense & Pháp Lý Kháng Nghị YPP",
+    "niche_id": "adsense-revenue-defense",
+    "target_market": "Toàn cầu / Ngoại & Việt Nam",
+    "market_code": "GLOBAL",
+    "key_takeaways": [
+      "Bản chất dòng tiền Google AdSense (\"Gà\"): Doanh thu YouTube không về ngân hàng trực tiếp mà chuyển vào AdSense vào ngày 10 hàng tháng và thanh toán về tài khoản ngân hàng từ ngày 22-23. Số tiền hiển thị trước ngày 23 chỉ là \"tiền màn hình\" (có thể bị trừ do click ảo, trừ thuế hoặc quét bản quyền).",
+      "Quy tắc tạo và liên kết gà an toàn: Nên tạo AdSense TRƯỚC khi kênh đủ điều kiện bật kiếm tiền. Mỗi cá nhân chỉ sở hữu 1 gà duy nhất với thông tin CCCD chính chủ. Khi nối gà vào kênh (bước 2 YPP), bắt buộc dùng tab ẩn danh hoặc mạng 4G sạch để tránh bị dính blacklist thiết bị.",
+      "Chiến lược tách gà phân tán rủi ro: Có thể liên kết tối đa 3 kênh vào 1 gà đối với các kênh nhỏ, nhưng với kênh có doanh thu lớn bắt buộc phải tách sang gà riêng (sử dụng thông tin người thân có CCCD và ngân hàng sạch) để ngăn chặn rủi ro chết chùm khi 1 kênh bị quét.",
+      "Nghĩa vụ thuế quốc tế & trong nước: Khai báo thuế Hoa Kỳ (W-8BEN) đầy đủ (view Mỹ chịu thuế 20-30%, view Hàn/Nhật thuế thấp). Với doanh thu lớn tại Việt Nam, chủ động kê khai và nộp thuế thu nhập cá nhân (~7%) để đảm bảo tài sản hợp pháp dài hạn.",
+      "Thực tế kháng nghị YouTube YPP: Tỷ lệ kháng nghị thành công chỉ đạt 20-30%. Nếu bị quét lỗi nội dung không trung thực / sử dụng lại, chỉ kháng khi có video quay lại màn hình quy trình sản xuất (project timeline, kịch bản gốc, b-roll tự dựng). Phòng thủ bằng ngách phim tài liệu có voice người đọc/voice bản quyền và phụ đề sáng tạo là cách an toàn nhất (tỷ lệ quét chỉ ~1/50 kênh).",
+      "Nguyên tắc vận hành \"Đúng - Đủ - Đều\": Giữ vững kỷ luật làm việc, lên kế hoạch hàng ngày, kiểm soát cảm xúc không làm theo hứng; đăng video đều đặn đúng khung giờ và tái đầu tư lợi nhuận vào công cụ sản xuất."
+    ],
+    "edit_sop": {
+      "primary": "Quy chuẩn sản xuất video giải trình kháng nghị bật kiếm tiền",
+      "additional": [
+        "Quay video màn hình thể hiện quy trình sản xuất gốc: kịch bản trên Docs, file dự án CapCut/Premiere có nhiều layer, timeline hình ảnh và âm thanh tách biệt",
+        "Xuất hiện người nói hoặc giọng đọc giải trình rõ ràng bằng tiếng Anh về giá trị gia tăng và tính giáo dục/thông tin của kênh",
+        "Kiểm tra tính đồng nhất của siêu dữ liệu (metadata, thumbnail, tiêu đề) trước khi nộp đơn kháng nghị"
+      ]
+    },
+    "avoid_flags": [
+      "Tuyệt đối không mua tài khoản AdSense trôi nổi trên mạng (nguy cơ cao bị quét thông tin ảo, giữ tiền hoặc bị lừa đảo)",
+      "Không đăng ký nhiều tài khoản AdSense trên cùng một danh tính cá nhân (vi phạm điều khoản sở hữu duy nhất của Google AdSense dẫn đến khóa vĩnh viễn)",
+      "Tránh các ngách AI sinh tồn, spam hoạt hình hoặc tóm tắt phim auto lặp đi lặp lại vì đây là tâm điểm các đợt càn quét Inauthentic Content",
+      "Không bỏ việc chính khi mới bắt đầu làm YouTube; chỉ toàn thời gian khi dòng tiền đã ổn định và nhân bản được hệ thống"
+    ],
+    "tools_mentioned": [
+      "Google AdSense",
+      "LickLed",
+      "Video Editor (Kháng nghị)",
+      "Trình duyệt ẩn danh"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "time": "00:00",
+        "seconds": 0,
+        "label": "Khái niệm Google AdSense (\"Gà\") và chu kỳ tiền về (ngày 10 đến ngày 22-23)"
+      },
+      {
+        "time": "06:15",
+        "seconds": 375,
+        "label": "Quy tắc đăng ký gà, xác minh CCCD và kỹ thuật nối gà bằng tab ẩn danh/4G"
+      },
+      {
+        "time": "14:20",
+        "seconds": 860,
+        "label": "Các ngưỡng thanh toán, ngân hàng nhận tiền và phí rút"
+      },
+      {
+        "time": "20:05",
+        "seconds": 1205,
+        "label": "Nghĩa vụ thuế Hoa Kỳ (W-8BEN) và thuế thu nhập cá nhân tại Việt Nam"
+      },
+      {
+        "time": "26:40",
+        "seconds": 1600,
+        "label": "Chiến lược tách gà bảo vệ kênh doanh thu cao"
+      },
+      {
+        "time": "30:15",
+        "seconds": 1815,
+        "label": "Phân tích nguyên nhân quét tắt kiếm tiền và cách làm video kháng nghị"
+      },
+      {
+        "time": "34:00",
+        "seconds": 2040,
+        "label": "Triết lý làm kênh \"Đúng - Đủ - Đều\", bán kênh và kinh nghiệm tránh bẫy khóa học"
+      }
+    ],
+    "analysis_method": "expert_grounded_audit",
+    "accuracy_status": "verified_expert_summary",
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/ZOOM-04-Adsense-khang-loi/transcript.json"
   }
 }

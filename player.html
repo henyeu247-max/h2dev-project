@@ -490,9 +490,12 @@ window.addEventListener('keydown', (e)=>{
       document.getElementById('pdocslist').innerHTML=v.docs.map(d=>{
         const name=cleanDocName(d.name||'', d.file||'');
         const host=hostLabel(d.link);
-        const link=d.link?`<a href="${esc(d.link)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>↗</span><span>${esc(host||'Mở nguồn')}</span></a>`:'';
-        const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>📄</span><span>File local</span></a>`:'';
-        return `<article class="card p-3.5 min-w-0 overflow-hidden"><div class="text-[13px] font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host?`<div class="text-[11px] text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${link}${localFile}</div></article>`;
+        const isExternal = d.link && /^https?:\/\//i.test(d.link) && d.link !== d.file;
+        const link=isExternal?`<a href="${esc(d.link)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>↗</span><span>${esc(host||'Mở nguồn')}</span></a>`:'';
+        const isReadable = d.file && /\.(md|txt)$/i.test(d.file);
+        const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" onclick="viewDocInModal('${esc(d.file)}', '${esc(name)}')"><span>👁️</span><span>Đọc trực tiếp</span></button>` : '';
+        const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>📄</span><span>Mở file local</span></a>`:'';
+        return `<article class="card p-3.5 min-w-0 overflow-hidden"><div class="text-[13px] font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-[11px] text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
       }).join('');
     }
 
@@ -621,7 +624,7 @@ window.addEventListener('keydown', (e)=>{
       document.getElementById('btnDownloadTxt').href = txtPath;
 
       // Prefer declared transcript type: if the catalog record has a .json transcript path,
-      // fetch it; otherwise go straight to .txt (Zoom sessions ship only transcript.txt).
+      // fetch it; otherwise try jsonPath directly before falling back to .txt.
       const declaredJson = (v.transcript && /\.json$/i.test(v.transcript)) ? v.transcript : '';
       const txtFallback = async () => {
         const txtRes = await fetch(txtPath);
@@ -641,9 +644,10 @@ window.addEventListener('keydown', (e)=>{
       };
 
       let trData = null;
-      if (declaredJson) {
+      const jsonCandidate = declaredJson || jsonPath;
+      if (jsonCandidate) {
         try {
-          const trRes = await fetch(declaredJson);
+          const trRes = await fetch(jsonCandidate);
           if (trRes.ok) trData = await trRes.json();
         } catch (e) { /* fall through to txt */ }
       }
@@ -652,8 +656,9 @@ window.addEventListener('keydown', (e)=>{
       }
       {
         const tList = document.getElementById('transcriptList');
-        if (trData && trData.segments && trData.segments.length) {
-          transcriptSegments = trData.segments;
+        const segs = Array.isArray(trData) ? trData : (trData?.segments || []);
+        if (segs && segs.length) {
+          transcriptSegments = segs;
           document.getElementById('ptranscript').classList.remove('hidden');
           tList.innerHTML = transcriptSegments.map((s, idx) => {
             const start = Math.floor(s.start || 0);
@@ -865,7 +870,165 @@ function copyHandle(handle) {
   });
 }
 
-/* ---------- Global Keyboard Shortcuts ---------- */
+/* ---------- Doc Reader Modal ---------- */
+let currentDocRawText = '';
+
+async function viewDocInModal(filePath, title) {
+  const modal = document.getElementById('docModal');
+  const titleEl = document.getElementById('docModalTitle');
+  const bodyEl = document.getElementById('docModalBody');
+  const rawLink = document.getElementById('docModalRawLink');
+  if (!modal || !titleEl || !bodyEl) return;
+  
+  titleEl.textContent = title || filePath.split('/').pop();
+  rawLink.href = filePath;
+  bodyEl.innerHTML = '<div class="text-center text-gray-400 py-12 flex flex-col items-center gap-3"><div class="w-6 h-6 border-2 border-brand-500 border-t-transparent rounded-full animate-spin"></div><div>Đang tải tài liệu...</div></div>';
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+
+  try {
+    const res = await fetch(filePath);
+    if (!res.ok) throw new Error('Không thể tải file: HTTP ' + res.status);
+    const text = await res.text();
+    currentDocRawText = text;
+    if (/\.md$/i.test(filePath)) {
+      bodyEl.innerHTML = renderMarkdownDoc(text);
+    } else {
+      bodyEl.innerHTML = `<pre class="bg-ink-900/80 p-4 rounded-xl border border-ink-600 text-xs font-mono text-gray-200 overflow-x-auto whitespace-pre-wrap">${esc(text)}</pre>`;
+    }
+  } catch (err) {
+    bodyEl.innerHTML = `<div class="p-4 rounded-xl bg-red-900/30 border border-red-700/50 text-red-200 text-sm">Lỗi tải tài liệu: ${esc(err.message)}</div>`;
+  }
+}
+
+function closeDocModal() {
+  const modal = document.getElementById('docModal');
+  if (modal) modal.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function copyDocContent() {
+  if (!currentDocRawText) return;
+  navigator.clipboard.writeText(currentDocRawText).then(() => {
+    showToast('Đã sao chép nội dung tài liệu');
+  }).catch(() => {
+    showToast('Không thể sao chép');
+  });
+}
+
+function renderMarkdownDoc(md) {
+  const lines = md.split('\n');
+  const out = [];
+  let inCode = false;
+  let codeBuf = [];
+  let inTable = false;
+  let tableRows = [];
+
+  function flushTable() {
+    if (!inTable) return;
+    if (tableRows.length > 0) {
+      let html = '<div class="overflow-x-auto my-3"><table class="w-full border-collapse border border-ink-600 text-xs text-left">';
+      let isHeader = true;
+      for (let i = 0; i < tableRows.length; i++) {
+        const row = tableRows[i];
+        if (row.every(c => /^:?-+:?$/.test(c.trim()))) {
+          isHeader = false;
+          continue;
+        }
+        html += '<tr class="' + (isHeader ? 'bg-ink-700 text-white font-semibold' : 'hover:bg-ink-800/50 border-t border-ink-600') + '">';
+        row.forEach(c => {
+          html += '<' + (isHeader ? 'th' : 'td') + ' class="p-2 border border-ink-600">' + inlineMd(c.trim()) + '</' + (isHeader ? 'th' : 'td') + '>';
+        });
+        html += '</tr>';
+      }
+      html += '</table></div>';
+      out.push(html);
+    }
+    tableRows = [];
+    inTable = false;
+  }
+
+  function inlineMd(str) {
+    return esc(str)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:underline">$1</a>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
+      .replace(/\*([^*]+)\*/g, '<em class="text-gray-300">$1</em>')
+      .replace(/`([^`]+)`/g, '<code class="px-1.5 py-0.5 rounded bg-ink-800 border border-ink-600 text-amber-300 font-mono text-xs">$1</code>');
+  }
+
+  for (let line of lines) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith('```')) {
+      if (inCode) {
+        out.push('<pre class="p-3.5 bg-ink-900 border border-ink-600 rounded-xl text-xs font-mono text-emerald-300 overflow-x-auto my-2"><code>' + esc(codeBuf.join('\n')) + '</code></pre>');
+        codeBuf = [];
+        inCode = false;
+      } else {
+        flushTable();
+        inCode = true;
+      }
+      continue;
+    }
+    if (inCode) {
+      codeBuf.push(line);
+      continue;
+    }
+    if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+      inTable = true;
+      tableRows.push(trimmed.slice(1, -1).split('|'));
+      continue;
+    } else {
+      flushTable();
+    }
+    if (!trimmed) continue;
+    if (trimmed.startsWith('# ')) {
+      out.push('<h1 class="text-xl font-bold text-white border-b border-ink-600 pb-2 mt-4 mb-2">' + inlineMd(trimmed.slice(2)) + '</h1>');
+    } else if (trimmed.startsWith('## ')) {
+      out.push('<h2 class="text-base font-bold text-brand-400 mt-4 mb-2">' + inlineMd(trimmed.slice(3)) + '</h2>');
+    } else if (trimmed.startsWith('### ')) {
+      out.push('<h3 class="text-sm font-semibold text-sky-300 mt-3 mb-1">' + inlineMd(trimmed.slice(4)) + '</h3>');
+    } else if (trimmed.startsWith('> ')) {
+      out.push('<blockquote class="border-l-4 border-brand-500 bg-brand-500/10 px-3.5 py-2 rounded-r-xl text-gray-300 text-xs my-2">' + inlineMd(trimmed.slice(2)) + '</blockquote>');
+    } else if (trimmed.startsWith('- [ ] ') || trimmed.startsWith('- [x] ')) {
+      const chk = trimmed.startsWith('- [x] ');
+      out.push('<div class="flex items-center gap-2 py-0.5 text-xs ' + (chk ? 'text-emerald-400 font-medium' : 'text-gray-300') + '"><span class="w-4 h-4 rounded border ' + (chk ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 flex items-center justify-center text-[10px]' : 'border-ink-500') + '">' + (chk ? '✓' : '') + '</span>' + inlineMd(trimmed.slice(6)) + '</div>');
+    } else if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+      out.push('<li class="text-xs text-gray-300 ml-4 list-disc my-1">' + inlineMd(trimmed.slice(2)) + '</li>');
+    } else {
+      out.push('<p class="text-xs text-gray-300 leading-relaxed my-1.5">' + inlineMd(trimmed) + '</p>');
+    }
+  }
+  flushTable();
+  return out.join('\n');
+}
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDocModal();
+});
 </script>
+
+<!-- Doc Reader Modal -->
+<div id="docModal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:9999; background:rgba(0,0,0,0.85); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:1.25rem;" onclick="if(event.target===this)closeDocModal()">
+  <div style="position:relative; width:100%; max-width:860px; max-height:88vh; display:flex; flex-direction:column; background-color:#111827; border:1px solid #374151; border-radius:1rem; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); overflow:hidden;">
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:0.875rem 1.25rem; border-bottom:1px solid #374151; background:rgba(31,41,55,0.85); flex-shrink:0;">
+      <div style="display:flex; align-items:center; gap:0.625rem; min-width:0; overflow:hidden;">
+        <span style="font-size:1.25rem;">📄</span>
+        <h3 id="docModalTitle" style="font-size:0.95rem; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Tài liệu</h3>
+      </div>
+      <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
+        <a id="docModalRawLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-press" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; text-decoration:none; display:inline-flex; align-items:center; gap:0.25rem;">
+          <span>↗</span><span>Mở tab mới</span>
+        </a>
+        <button type="button" onclick="copyDocContent()" class="btn-press cursor-pointer" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; display:inline-flex; align-items:center; gap:0.25rem;">
+          <span>📋</span><span>Sao chép</span>
+        </button>
+        <button type="button" onclick="closeDocModal()" class="btn-press cursor-pointer" style="font-size:0.875rem; padding:0.25rem 0.6rem; border-radius:0.625rem; background:#374151; color:#9ca3af; border:1px solid #4b5563;">✕</button>
+      </div>
+    </div>
+    <div id="docModalBody" style="padding:1.5rem; overflow-y:auto; max-height:calc(88vh - 65px); color:#e5e7eb; line-height:1.65; font-size:0.875rem;">
+      <div style="text-align:center; color:#9ca3af; padding:3rem 0;">Đang tải tài liệu...</div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

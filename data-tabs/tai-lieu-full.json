@@ -248,15 +248,6 @@
     "contentNiche": "Nền tảng / Tool"
   },
   {
-    "sku": "VIDEO-d84a78",
-    "name": "Prompt + tài nguyên ngách nhỏ phật pháp (thị trường Hàn)",
-    "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt",
-    "fileLocal": "docs/NOI-BO/prompt/phat-phap-han.md",
-    "kind": "prompt",
-    "contentNiche": "Triết lý / Tâm linh"
-  },
-  {
     "sku": "VIDEO-5c438a",
     "name": "NGUỒN VIDEO REUP DOUYIN + BILIBILI",
     "link": "https://docs.google.com/spreadsheets/d/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU/edit?usp=sharing",
@@ -422,14 +413,6 @@
   },
   {
     "sku": "VIDEO-21824a",
-    "name": "Tài nguyên Drive · 1I7KqLj5",
-    "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-    "file": "",
-    "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-46c57e",
     "name": "Tài nguyên Drive · 1I7KqLj5",
     "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
     "file": "",
@@ -875,5 +858,23 @@
     "file": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
     "contentNiche": "Hệ thống / Quy trình",
     "kind": "internal-doc"
+  },
+  {
+    "sku": "VIDEO-46c57e",
+    "name": "Quy trình kháng lỗi Sử dụng lại nội dung & Trùng lặp (Tài liệu chuẩn)",
+    "link": "",
+    "file": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
+    "fileLocal": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
+    "kind": "guide",
+    "contentNiche": "Kháng bản quyền & Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-d84a78",
+    "name": "Prompt + tài nguyên ngách nhỏ phật pháp (thị trường Hàn)",
+    "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing",
+    "file": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
+    "fileLocal": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
+    "kind": "prompt",
+    "contentNiche": "Triết lý / Tâm linh"
   }
 ]

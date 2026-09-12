@@ -614,9 +614,14 @@
     "desc": "<p><em><span style=\"color: rgb(224, 62, 45);\"><strong><a style=\"color: rgb(224, 62, 45);\" title=\"file Skill ng&aacute;ch động vật\" href=\"https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing\" target=\"_blank\" rel=\"noopener\">file Skill ng&aacute;ch động vật</a> </strong></span><strong><span style=\"color: rgb(185, 106, 217);\">(bấm v&agrave;o đ&acirc;y)</span></strong></em></p>",
     "docs": [
       {
-        "name": "file Skill ngách động vật",
-        "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing",
-        "file": ""
+        "name": "Skill Prompt — Kịch Bản & Motion Wildlife Survival (Tài liệu chuẩn)",
+        "file": "assets/docs/VIDEO-e91589/SKILL-wildlife-survival.md",
+        "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-e91589/transcript.txt",
+        "link": ""
       }
     ],
     "url_key": "16-trieu-1-ngay-doanh-thu-kenh-thi-truong-nhat-lam-nhan-ban-thi-truong",
@@ -668,9 +673,14 @@
     "desc": "<p><span style=\"color: rgb(224, 62, 45);\"><em><strong>Skill prompt</strong></em></span> <span style=\"color: rgb(0, 0, 0);\"><strong>- ng&aacute;ch bible explainer:</strong></span> <span style=\"color: rgb(185, 106, 217);\"><strong><a style=\"color: rgb(185, 106, 217);\" href=\"https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing\" target=\"_blank\" rel=\"noopener\">https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing</a></strong></span></p>",
     "docs": [
       {
-        "name": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-        "file": ""
+        "name": "Skill Prompt — Ngách Bible Explainer V2.1 (Công thức kịch bản & Prompt)",
+        "file": "assets/docs/VIDEO-21824a/SKILL-bible-explainer.md",
+        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-21824a/transcript.txt",
+        "link": ""
       }
     ],
     "url_key": "bat-kiem-tien-kenh-hoc-vien-pro",
@@ -968,7 +978,18 @@
     "size": 15267371,
     "drm": false,
     "desc": "",
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Thực Chiến — Bán Content Ngách Người Cao Tuổi View Việt (>60 Tuổi)",
+        "file": "assets/docs/VIDEO-f77c31/QUY-TRINH-BAN-CONTENT-VIEW-VIET-NGUOI-GIA.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-f77c31/transcript.txt",
+        "link": ""
+      }
+    ],
     "url_key": "doanh-thu-kenh-lam-ban-content-ngach-view-viet-sau-10-ngay-bat-kiem-tien",
     "mp4": "video/VIDEO-f77c31/VIDEO-f77c31.mp4",
     "origin": "https://h2dev.vn/learn/study/doanh-thu-kenh-lam-ban-content-ngach-view-viet-sau-10-ngay-bat-kiem-tien",
@@ -1206,9 +1227,14 @@
     "desc": "<p><span style=\"color: rgb(224, 62, 45);\"><em><strong>tool tại đ&acirc;y: </strong></em></span><strong><a title=\"https://h2devtool.com/\" href=\"https://h2devtool.com/\" target=\"_blank\" rel=\"noopener\">https://h2devtool.com/</a></strong></p>",
     "docs": [
       {
-        "name": "https://h2devtool.com/",
-        "link": "https://h2devtool.com/",
-        "file": ""
+        "name": "Cẩm Nang Sử Dụng — Tool Dịch Phụ Đề & Tạo Voice Ngọc Huyền Khớp SRT",
+        "file": "assets/docs/VIDEO-6283a6/HUONG-DAN-TOOL-DICH-SRT-VOICE-NGOCHUYEN.md",
+        "link": "https://h2devtool.com/"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-6283a6/transcript.txt",
+        "link": ""
       }
     ],
     "url_key": "update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt",
@@ -1236,9 +1262,14 @@
     "desc": "<p><span style=\"color: rgb(224, 62, 45);\"><em><strong>Skill prompt</strong></em></span> <span style=\"color: rgb(0, 0, 0);\"><strong>- ng&aacute;ch bible explainer:</strong></span> <span style=\"color: rgb(185, 106, 217);\"><strong><a style=\"color: rgb(185, 106, 217);\" href=\"https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing\" target=\"_blank\" rel=\"noopener\">https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing</a></strong></span></p>",
     "docs": [
       {
-        "name": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-        "file": ""
+        "name": "Quy trình kháng lỗi Sử dụng lại nội dung & Trùng lặp (Tài liệu chuẩn)",
+        "file": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-46c57e/transcript.txt",
+        "link": ""
       }
     ],
     "url_key": "khang-loi-su-dung-lai-noi-dung-trung-lap-noi-dung-moi-nhat-2026",
@@ -1873,9 +1904,14 @@
     "desc": "<p><span style=\"color: rgb(224, 62, 45);\"><em><strong>tool tại đ&acirc;y: </strong></em></span><strong><a title=\"https://h2devtool.com/\" href=\"https://h2devtool.com/\" target=\"_blank\" rel=\"noopener\">https://h2devtool.com/</a></strong></p>",
     "docs": [
       {
-        "name": "https://h2devtool.com/",
-        "link": "https://h2devtool.com/",
-        "file": ""
+        "name": "Cẩm nang sử dụng — Tool Dịch Phụ Đề SRT VIP H2DEV",
+        "file": "assets/docs/VIDEO-64130d/HUONG-DAN-SU-DUNG-TOOL-DICH-SRT-VIP-H2DEV.md",
+        "link": "https://h2devtool.com/"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-64130d/transcript.txt",
+        "link": ""
       }
     ],
     "url_key": "tool-dich-phu-de-srt-vip-huong-dan-dung-tool-dich-phu-de-srt-chuyen-vietsub-lam-reup-ban-content",
@@ -2491,9 +2527,19 @@
     "desc": "<p><span style=\"color: rgb(224, 62, 45);\"><strong><a style=\"color: rgb(224, 62, 45);\" title=\"Prompt + t&agrave;i nguy&ecirc;n ng&aacute;ch nhỏ phật ph&aacute;p (thị trường H&agrave;n)\" href=\"https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing\" target=\"_blank\" rel=\"noopener\">Prompt + t&agrave;i nguy&ecirc;n ng&aacute;ch nhỏ phật ph&aacute;p (thị trường H&agrave;n)</a></strong></span></p>",
     "docs": [
       {
-        "name": "Prompt + tài nguyên ngách nhỏ phật pháp (thị trường Hàn)",
-        "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing",
-        "file": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt"
+        "name": "Prompt & Tài nguyên ngách Phật pháp / Vận mệnh Hàn Quốc",
+        "file": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
+        "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing"
+      },
+      {
+        "name": "File tài nguyên gốc (Google Doc text backup)",
+        "file": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt",
+        "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-d84a78/transcript.txt",
+        "link": ""
       }
     ],
     "url_key": "hop-tac-lam-kenh-youtube-an-chia-doanh-thu-va-huong-dan-xem-video-dung-quy-trinh-chuan",
@@ -2953,7 +2999,18 @@
     "size": 18271008,
     "drm": false,
     "desc": "<p><strong><em>li&ecirc;n hệ zalo:</em></strong> <span style=\"color: rgb(224, 62, 45);\"><strong>0777682597</strong></span></p>",
-    "docs": [],
+    "docs": [
+      {
+        "name": "Sổ tay thực chiến — Xử lý gậy bản quyền & Kháng trùng lặp (99% về bờ)",
+        "file": "assets/docs/VIDEO-ec9c50/SO-TAY-KHANG-BAN-QUYEN-TRUNG-LAP-NOI-DUNG.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-ec9c50/transcript.txt",
+        "link": ""
+      }
+    ],
     "url_key": "khang-su-dung-lai-noi-dung-trung-lap-noi-dung-gay-ban-quyen-99-ve-bo-moi-nhat-2026",
     "mp4": "video/VIDEO-ec9c50/VIDEO-ec9c50.mp4",
     "origin": "https://h2dev.vn/learn/study/khang-su-dung-lai-noi-dung-trung-lap-noi-dung-gay-ban-quyen-99-ve-bo-moi-nhat-2026",
@@ -4512,7 +4569,23 @@
     "size": 212700043,
     "drm": false,
     "desc": "Buổi Zoom thực chiến H2DEV — kiến thức nền tảng xây kênh YouTube A–Z.",
-    "docs": [],
+    "docs": [
+      {
+        "name": "Zoom 01 — Nền tảng & Môi trường (Proxy, Gmail, Tạo & Ngâm kênh)",
+        "file": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+        "link": ""
+      },
+      {
+        "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+        "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/ZOOM-01-Nen-tang-moi-truong/transcript.txt",
+        "link": ""
+      }
+    ],
     "url_key": "zoom-01-nen-tang-moi-truong",
     "mp4": "video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm",
     "origin": "",
@@ -4526,7 +4599,8 @@
     "target_market": "Việt Nam",
     "market_code": "VN",
     "duration": "53:01",
-    "total_view": 0
+    "total_view": 0,
+    "transcript": "video/ZOOM-01-Nen-tang-moi-truong/transcript.json"
   },
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -4536,7 +4610,23 @@
     "size": 402600409,
     "drm": false,
     "desc": "Buổi Zoom thực chiến H2DEV — kiến thức nền tảng xây kênh YouTube A–Z.",
-    "docs": [],
+    "docs": [
+      {
+        "name": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+        "file": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+        "link": ""
+      },
+      {
+        "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+        "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.txt",
+        "link": ""
+      }
+    ],
     "url_key": "zoom-02-chien-luoc-kenh-san-xuat",
     "mp4": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm",
     "origin": "",
@@ -4550,7 +4640,8 @@
     "target_market": "Việt Nam",
     "market_code": "VN",
     "duration": "81:33",
-    "total_view": 0
+    "total_view": 0,
+    "transcript": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.json"
   },
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -4560,7 +4651,23 @@
     "size": 300619595,
     "drm": false,
     "desc": "Buổi Zoom thực chiến H2DEV — kiến thức nền tảng xây kênh YouTube A–Z.",
-    "docs": [],
+    "docs": [
+      {
+        "name": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Ads",
+        "file": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+        "link": ""
+      },
+      {
+        "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+        "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.txt",
+        "link": ""
+      }
+    ],
     "url_key": "zoom-03-quy-trinh-tool-toi-uu",
     "mp4": "video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm",
     "origin": "",
@@ -4574,7 +4681,8 @@
     "target_market": "Việt Nam",
     "market_code": "VN",
     "duration": "74:21",
-    "total_view": 0
+    "total_view": 0,
+    "transcript": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.json"
   },
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
@@ -4584,7 +4692,23 @@
     "size": 119352148,
     "drm": false,
     "desc": "Buổi Zoom thực chiến H2DEV — kiến thức nền tảng xây kênh YouTube A–Z.",
-    "docs": [],
+    "docs": [
+      {
+        "name": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+        "file": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+        "link": ""
+      },
+      {
+        "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+        "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/ZOOM-04-Adsense-khang-loi/transcript.txt",
+        "link": ""
+      }
+    ],
     "url_key": "zoom-04-adsense-khang-loi",
     "mp4": "video/ZOOM-04-Adsense-khang-loi/ZOOM-04-Adsense-khang-loi.webm",
     "origin": "",
@@ -4598,6 +4722,7 @@
     "target_market": "Việt Nam",
     "market_code": "VN",
     "duration": "37:13",
-    "total_view": 0
+    "total_view": 0,
+    "transcript": "video/ZOOM-04-Adsense-khang-loi/transcript.json"
   }
 ]

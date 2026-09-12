@@ -1,3 +1,24 @@
+## 2026-09-13 — Chuẩn hoá chuyên sâu 4 video PRO đợt 2 (484f9e, e24c31, a7bfd0, 4b3c09): Bổ sung list kênh, 4 SOP thực chiến & đồng bộ toàn diện
+
+- **Khắc phục lỗi lệch data channels trong `video_insights.json`:**
+  - `VIDEO-a7bfd0`: Bổ sung đủ 2 kênh đối thủ `@은밀한응답` (Lời Chúa Hàn Quốc) và `@장수채소습관` (Rau củ trường thọ).
+  - `VIDEO-4b3c09`: Bổ sung đủ 5 kênh đối thủ (`@시니어살림노트`, `@HealthyToday0`, `@desidilse`, `@RichPatternResearchInstitute`, `@의사가숨긴건강법-z9n`) và tools (`CapCut`, `YouTube Search`, `Xiaohongshu`, `Douyin`).
+- **Xác minh nội dung & kỹ thuật qua trích xuất khung hình video:**
+  - `VIDEO-484f9e`: Xác minh mô hình Phật pháp Việt Nam `@MộtĐờiBìnhAn-v6s` (Thầy Thích Pháp Hòa, 9.76K sub, tăng 375k view/7 ngày) học hỏi từ kênh đại sư Hàn Quốc `@자비의법음-j5h`, kỹ thuật bố cục 4 lớp né quét AI.
+  - `VIDEO-e24c31`: Xác minh case study kênh cổ 2008 `@복이오는길` chỉ 5 video đạt 8.05K sub, video 42K-45K view cắn đề xuất thần tốc > 100x với tiêu đề phong thủy đầu tháng.
+  - `VIDEO-a7bfd0`: Xác minh kênh Lời Chúa `@은밀한응답` (video 36-44 phút) và giải mã nguyên nhân gây "bẫy 0 view" do nhảy ngách lan man (Audience Confusion).
+  - `VIDEO-4b3c09`: Xác minh 4 ngách nhỏ ẩm thực & mẹo vặt gia đình (mẹo lò vi sóng siêu tốc `@HealthyToday0`, mẹo tỏi & rong biển `@시니어살림노트` 203k view, mẹo bác sĩ giấu kín, quản lý tiền bạc tuổi già).
+- **Biên soạn 4 bộ tài liệu SOP Cẩm nang thực chiến chuyên sâu (`assets/docs/`):**
+  1. `assets/docs/VIDEO-484f9e/SOP-NGACH-PHAT-PHAP-VIET-NAM-VA-KY-THUAT-EDIT-NE-QUET-AI.md` (6.0 KB).
+  2. `assets/docs/VIDEO-e24c31/SOP-NGACH-TAM-LINH-PHONG-THUY-TAI-LOC-KENH-CO.md` (5.9 KB).
+  3. `assets/docs/VIDEO-a7bfd0/SOP-NGACH-LOI-CHUA-TAM-LINH-VA-FIX-LOI-FLOP-KENH.md` (5.8 KB).
+  4. `assets/docs/VIDEO-4b3c09/SOP-4-NGACH-NHO-AM-THUC-MEO-VAT-VI-SONG-HAN-QUOC.md` (6.2 KB).
+  - Gắn link tài liệu vào trường `docs` của cả 4 video trong `catalog.json`, `catalog_full.json`, `modules.json`, `data-tabs/videos.json`.
+- **Nghiệm thu kiểm định:**
+  - `validate-project.js`: PASS.
+  - `audit_all_136_videos.py`: 136/136 video SẠCH (0 lỗi).
+  - Đồng bộ `assets/docs/` lên VPS, commit & push git, pull VPS và reload PM2 `h2dev-learn`.
+
 ## 2026-09-13 — Chuẩn hoá chuyên sâu 4 video PRO: Bổ sung list kênh, biên soạn 4 SOP thực chiến & đồng bộ toàn diện
 
 - **Khắc phục lỗi thiếu kênh mẫu (`VIDEO-3a38f9`):**

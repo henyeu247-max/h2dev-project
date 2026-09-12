@@ -15,6 +15,7 @@
   - `VIDEO-2aa1f7`: bỏ segment trùng + sắp xếp lại thứ tự (423→421) + sửa mốc thời gian vượt phạm vi.
   - Vá `key_takeaways`/`key_timestamps` cho 6 video sơ sài; điền `tags` cho 4 video rỗng.
   - **Sửa insight sai `VIDEO-21956b`:** ngách **Sức khỏe** (không phải "tâm linh/tâm lý học").
+  - **Chuẩn hoá thuật ngữ** Whisper nghe sai: `sức khỉ / xuất khỉ / xuất khế` → **`sức khỏe`**, `cây sức khỏe` → `cái sức khỏe`, `kỳ/ký sức khỏe` → `key sức khỏe` (33 video, 78 lượt); dọn lặp `cái cái` (35 chỗ).
 - **Nghiệm thu:**
   - `audit_all_136_videos.py`: **136/136 video SẠCH (0 lỗi)**.
   - `validate-project.js`: PASS (136 videos, 165 channels, 45 kich-ban, 103 tai-lieu-full, 136 thumbs, 136 video dirs).

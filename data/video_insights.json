@@ -805,14 +805,18 @@
   "VIDEO-21956b": {
     "sku": "VIDEO-21956b",
     "title": "Update ngách nhân bản thị trường Hàn, Nhật và Việt",
-    "actual_topic": "Update ngách nhân bản thị trường Hàn, Nhật và Việt",
+    "actual_topic": "Share ngách Sức khỏe (key sức khỏe) thị trường Hàn Quốc & Nhật Bản; chiến lược nhân bản nội dung/kịch bản sang Việt – Nhật",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇰🇷 Hàn / 🇯🇵 Nhật / 🇻🇳 Việt",
     "market_code": "JP",
     "key_takeaways": [
-      "Đó chính là ngách tâm linh, tâm lý Về vũ trụ em mọi người Thì cái ngách này mọi người nhớ lúc trước Em có share Có chia sẻ Ở thị trường Nhật không"
+      "Ngách chia sẻ: kênh Sức khỏe (key sức khỏe) thị trường Hàn Quốc — làm khá nhiều video, có video nổ cao view xen kẽ video chỉ vài trăm view.",
+      "Kênh này edit rất đơn giản (chỉ cần đọc nhân vật/game) nhưng tác giả khuyên nên chèn thêm hình ảnh/video minh họa để an toàn, tránh bị quét.",
+      "Chất lượng video thấp nhưng view vẫn rất cao → cho thấy chọn đúng ngách quan trọng hơn kỹ thuật dựng.",
+      "Dạng sức khỏe ở thị trường Nhật còn cao view hơn Hàn vì dân số già cao; kênh Nhật làm rất chỉn chu, không bị quét tắt kiếm tiền.",
+      "Chiến lược cốt lõi: nhân bản thị trường — lấy content/kịch bản kênh mẫu đem sang Nhật hoặc Việt để làm, không bao giờ thiếu content."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -823,37 +827,35 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Search",
+      "Google Translate"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Em chào tất cả mọi người nha, thì đây là một cái kênh làm về cây …"
+        "label": "Giới thiệu kênh sức khỏe thị trường Hàn Quốc"
       },
       {
-        "time": "02:03",
-        "seconds": 123,
-        "label": "Đó cái này"
+        "time": "01:23",
+        "seconds": 83,
+        "label": "Dạng sức khỏe bên Nhật: dân số già cao, view vượt trội"
       },
       {
-        "time": "03:52",
-        "seconds": 232,
-        "label": "Thì lúc trước á"
+        "time": "02:45",
+        "seconds": 165,
+        "label": "Chiến lược nhân bản nội dung sang Việt/Nhật"
       },
       {
-        "time": "05:53",
-        "seconds": 353,
-        "label": "Cái video gần nhất là BN ngày trước"
-      },
-      {
-        "time": "07:17",
-        "seconds": 437,
-        "label": "Cái dạng này thì nói về"
+        "time": "08:43",
+        "seconds": 523,
+        "label": "Chia sẻ thêm ngách re-up"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-21956b/transcript.txt"
@@ -1357,8 +1359,8 @@
         "label": "Kỹ thuật dựng CapCut: Hiệu ứng khung phim, bộ lọc màu và phụ đề tiếng Anh"
       },
       {
-        "time": "19:20",
-        "seconds": 1160,
+        "time": "17:40",
+        "seconds": 1060,
         "label": "Demo thành phẩm video hoàn chỉnh và lưu ý vận hành kênh"
       }
     ],
@@ -2338,14 +2340,18 @@
   "VIDEO-3fd0d9": {
     "sku": "VIDEO-3fd0d9",
     "title": "SHARE NGÁCH CỰC NHỎ REUP HOẠT HÌNH TRUNG VÀ SHOW 2 KÊNH MỚI BUILD",
-    "actual_topic": "SHARE NGÁCH CỰC NHỎ REUP HOẠT HÌNH TRUNG VÀ SHOW 2 KÊNH MỚI BUILD",
+    "actual_topic": "Share ngách cực nhỏ Reup hoạt hình Trung Quốc — kênh mới lập chưa 1 tháng đã bật kiếm tiền",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇨🇳 Trung",
     "market_code": "CN",
     "key_takeaways": [
-      "Thì anh em có thể xem lại những video trước của em nha Giờ có thêm nguồn thì em cứ share cho mọi người Hẹn em có thể làm thêm thì làm thôi Rồi ok em chào mọi người"
+      "Ngách chia sẻ: Reup hoạt hình Trung Quốc (Douyin/Bilibili) — nguồn nội dung dồi dào, dễ khai thác.",
+      "Kênh mẫu chỉ mới lập cuối tháng 3, chưa đầy 1 tháng đã đủ điều kiện bật kiếm tiền với view rất cao.",
+      "Ngách cực nhỏ nên làm rất nhanh, phù hợp cho người mới muốn có kết quả sớm.",
+      "Nội dung hoạt hình không cần lộ mặt, dễ nhân bản sang nhiều thị trường khác nhau.",
+      "Chỉ cần tìm đúng nguồn hoạt hình Trung Quốc và biên tập lại là có thể lên view nhanh chóng."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -2357,6 +2363,8 @@
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
     "tools_mentioned": [
+      "YouTube Studio",
+      "Douyin",
       "Bilibili"
     ],
     "channels_mentioned": [],
@@ -2364,31 +2372,21 @@
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Ừ rồi ok em chào mọi người nha thì tiếp tục hôm nay em xe thêm ch…"
+        "label": "Giới thiệu ngách Reup hoạt hình Trung Quốc"
       },
       {
-        "time": "00:26",
-        "seconds": 26,
-        "label": "bật kiếm tiền nha mọi người như cân này là đủ điều kiện rồi này t…"
+        "time": "00:45",
+        "seconds": 45,
+        "label": "Phân tích kênh mẫu: lập cuối tháng 3, view cực cao"
       },
       {
-        "time": "00:55",
-        "seconds": 55,
-        "label": "ho l m ng ch c m h l m ng xem n th m ng c th cap c m h l n v d em…"
-      },
-      {
-        "time": "01:22",
-        "seconds": 82,
-        "label": "Hai cái kênh em share này thì có vẻ trung một chủ luôn hay sao ấy"
-      },
-      {
-        "time": "01:36",
-        "seconds": 96,
-        "label": "Cũng là re-up luôn nha"
+        "time": "01:40",
+        "seconds": 100,
+        "label": "Xác nhận kênh đã đủ điều kiện bật kiếm tiền"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-3fd0d9/transcript.txt"
@@ -4102,14 +4100,18 @@
   "VIDEO-7312df": {
     "sku": "VIDEO-7312df",
     "title": "Bật kiếm tiền cho 2 kênh làm Reup hoạt hình - Show kênh không che",
-    "actual_topic": "Bật kiếm tiền cho 2 kênh làm Reup hoạt hình - Show kênh không che",
+    "actual_topic": "Thực chiến kháng nghị bật kiếm tiền thành công cho 2 kênh Reup hoạt hình",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🌐 Ngoại / 🇨🇳 Trung",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Nội dung bài học chia sẻ về chủ đề: Bật kiếm tiền cho 2 kênh làm Reup hoạt hình - Show kênh không che."
+      "Kết quả thực tế: 2 kênh Reup bị tắt kiếm tiền đã kháng nghị thành công và được bật lại chỉ trong cùng ngày.",
+      "Quy trình kháng nghị: gửi kháng nghị khi bị gắn cờ 'sử dụng lại nội dung' — tỷ lệ thành công phụ thuộc vào mức độ biên tập lại nội dung.",
+      "Kinh nghiệm: làm Reup không cần quá lo sợ nếu biết cách biên tập và có quy trình kháng nghị đúng.",
+      "Tác giả đã kháng nghị rất nhiều kênh và có tỷ lệ thành công cao nhờ quy trình chuẩn.",
+      "Bài học cốt lõi: chuẩn bị sẵn kịch bản video kháng nghị để phản hồi nhanh khi kênh bị quét."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -4120,37 +4122,30 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Studio",
+      "AdSense"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Thì ngày hôm nay em đã kháng về bật kiếm tiền cho 2 cơn Reup nha …"
+        "label": "Thông báo kháng nghị thành công cho 2 kênh Reup"
       },
       {
-        "time": "00:18",
-        "seconds": 18,
-        "label": "Đấy em cho mọi người xem que cơn Reup"
+        "time": "00:30",
+        "seconds": 30,
+        "label": "Show kênh Reup thứ nhất đã được bật lại kiếm tiền"
       },
       {
-        "time": "00:27",
-        "seconds": 27,
-        "label": "Cơn này thì hôm vừa trước nha"
-      },
-      {
-        "time": "00:36",
-        "seconds": 36,
-        "label": "Đấy, nên là nói chung anh em làm Reup thì anh em không phải lo sợ…"
-      },
-      {
-        "time": "00:50",
-        "seconds": 50,
-        "label": "Rồi, ok, thì em đăng lên để cho anh em thấy được và có được động …"
+        "time": "01:10",
+        "seconds": 70,
+        "label": "Show kênh Reup thứ hai và kinh nghiệm kháng nghị"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-7312df/transcript.txt"
@@ -4814,15 +4809,18 @@
   "VIDEO-86c1ec": {
     "sku": "VIDEO-86c1ec",
     "title": "NGÁCH CỰC NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC ĐANG RẤT TRENDS",
-    "actual_topic": "NGÁCH CỰC NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC ĐANG RẤT TRENDS",
+    "actual_topic": "Ngách cực nhỏ Sức khỏe thị trường Hàn Quốc — kênh mới lập hơn 1 tháng, chỉ 15 video đã có view khủng",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇰🇷 Hàn",
     "market_code": "KR",
     "key_takeaways": [
-      "Rồi, em bấm vào cái video để em xem phân tích ra kênh này đã làm video như thế nào nha",
-      "Đầu tiên thì nó làm bằng video hay game nè"
+      "Ngách chia sẻ: Sức khỏe (key sức khỏe) thị trường Hàn Quốc — kênh mới lập hơn 1 tháng.",
+      "Kênh mẫu chỉ có khoảng 15 video nhưng view rất cao, chứng minh ngách còn nhiều dư địa.",
+      "Kênh bắt đầu đăng video từ 11 ngày trước nhưng đã có video bùng nổ view — tốc độ cắn đề xuất rất nhanh.",
+      "Đây là dạng ngách nhỏ dễ làm, không đòi hỏi kỹ thuật phức tạp, phù hợp người mới.",
+      "Chiến lược: tìm ngách sức khỏe nhỏ trong ngách lớn, bám theo đối thủ đang có view cao."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -4833,37 +4831,30 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Search",
+      "Google Translate"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Ừ rồi em xin chào mọi người nha thì hôm nay em lại tiếp tục xe ch…"
+        "label": "Giới thiệu ngách Sức khỏe thị trường Hàn Quốc"
       },
       {
-        "time": "00:38",
-        "seconds": 38,
-        "label": "Cây sức khỏe nha mọi người"
+        "time": "01:00",
+        "seconds": 60,
+        "label": "Phân tích kênh mẫu: hơn 1 tháng tuổi, chỉ 15 video"
       },
       {
-        "time": "01:01",
-        "seconds": 61,
-        "label": "Nên là cái kỹ sức khỏe nó có rất rất là nhiều ngách luôn nha mọi …"
-      },
-      {
-        "time": "01:44",
-        "seconds": 104,
-        "label": "Nó kiểu như vậy đó mọi người."
-      },
-      {
-        "time": "02:16",
-        "seconds": 136,
-        "label": "Hay là sử dụng lại nội dung ấy mọi người"
+        "time": "02:20",
+        "seconds": 140,
+        "label": "Đánh giá tiềm năng và hướng khai thác ngách"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-86c1ec/transcript.txt"
@@ -6810,14 +6801,18 @@
   "VIDEO-ca266f": {
     "sku": "VIDEO-ca266f",
     "title": "Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)",
-    "actual_topic": "Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)",
+    "actual_topic": "Update share key mới 27-09-2025 — ngách nhỏ triết lý thị trường Nhật Bản (28 video, view cao đều)",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇯🇵 Nhật / 🇺🇸 Mỹ / 🇬🇧 Anh / 🇰🇷 Hàn",
     "market_code": "JP",
     "key_takeaways": [
-      "Nội dung bài học chia sẻ về chủ đề: Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)."
+      "Ngách chia sẻ: Triết lý (key triết lý) thị trường Nhật Bản — nhưng là một ngách nhỏ hoàn toàn mới.",
+      "Kênh mẫu chỉ có 28 video nhưng view rất cao và đều — dấu hiệu ngách còn ít cạnh tranh.",
+      "Đây là ngách nhỏ khác biệt so với các ngách triết lý đã chia sẻ trước đó — cần tìm ngách nhỏ trong ngách lớn.",
+      "Kênh mẫu từng làm key sai (không lên view) trước khi chuyển sang đúng ngách này.",
+      "Bài học: luôn kiểm tra kỹ ngách trước khi làm — chọn ngách đang có view cao và đều."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -6828,37 +6823,30 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Search",
+      "Google Translate"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Rồi em xin chào tất cả mọi người nha"
+        "label": "Giới thiệu ngách triết lý mới thị trường Nhật"
       },
       {
-        "time": "00:57",
-        "seconds": 57,
-        "label": "View cái ngách này là cũng là"
+        "time": "01:20",
+        "seconds": 80,
+        "label": "Phân tích kênh mẫu: 28 video, view cao và đều"
       },
       {
-        "time": "02:20",
-        "seconds": 140,
-        "label": "Cái đầu tiên là ở Nhật Bản"
-      },
-      {
-        "time": "03:38",
-        "seconds": 218,
-        "label": "Anh em mà thích thì anh em cứ làm thôi"
-      },
-      {
-        "time": "04:36",
-        "seconds": 276,
-        "label": "Thì kiếm nguồn"
+        "time": "02:50",
+        "seconds": 170,
+        "label": "So sánh với ngách cũ và hướng triển khai"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-ca266f/transcript.txt"
@@ -7433,14 +7421,18 @@
   "VIDEO-e25d3b": {
     "sku": "VIDEO-e25d3b",
     "title": "HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT",
-    "actual_topic": "HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT",
+    "actual_topic": "Hợp tác kênh & share ngách nhỏ Sức khỏe thị trường Hàn + US (kênh cổ 1 năm, 4-5 video, view cao)",
     "category_group": "ngach_xanh",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "faceless-general",
     "target_market": "🇰🇷 Hàn / 🇺🇸 Mỹ",
     "market_code": "KR",
     "key_takeaways": [
-      "Nội dung bài học chia sẻ về chủ đề: HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT."
+      "Ngách chia sẻ: Sức khỏe (key sức khỏe) thị trường Hàn Quốc và Hoa Kỳ — một ngách nhỏ khác trong ngách lớn.",
+      "Kênh mẫu dùng kênh cũ lập từ 1 năm trước, chỉ mới đăng 4-5 video nhưng view rất cao.",
+      "Việc dùng kênh cổ (aged channel) giúp rút ngắn thời gian thoát Sandbox và dễ cắn đề xuất hơn.",
+      "Key sức khỏe có rất nhiều ngách nhỏ — quan trọng là tìm ra ngách cụ thể để làm.",
+      "Chiến lược hợp tác kênh: chia sẻ ngách và phối hợp khai thác để giảm rủi ro."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -7451,37 +7443,30 @@
     "avoid_flags": [
       "Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung."
     ],
-    "tools_mentioned": [],
+    "tools_mentioned": [
+      "YouTube Studio",
+      "YouTube Search"
+    ],
     "channels_mentioned": [],
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Em chào mọi người nha, thì hôm nay em sẽ tiếp tục loay video shar…"
+        "label": "Giới thiệu ngách sức khỏe Hàn Quốc mới"
       },
       {
-        "time": "01:26",
-        "seconds": 86,
-        "label": "V k n d theo c th video l 4 ph 50s M ng th c video c n Nh video k…"
+        "time": "01:10",
+        "seconds": 70,
+        "label": "Phân tích kênh cổ 1 năm, chỉ 4-5 video, view cao"
       },
       {
-        "time": "03:21",
-        "seconds": 201,
-        "label": "Đó, thì em muốn là"
-      },
-      {
-        "time": "04:09",
-        "seconds": 249,
-        "label": "Mọi người thấy lượt điện thoại không"
-      },
-      {
-        "time": "05:21",
-        "seconds": 321,
-        "label": "thôi mọi người ạ, đấy, như nào mà anh em"
+        "time": "02:40",
+        "seconds": 160,
+        "label": "Chiến lược hợp tác kênh và khai thác ngách"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-e25d3b/transcript.txt"

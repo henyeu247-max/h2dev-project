@@ -32,7 +32,7 @@ const check = (name, ok, detail = '') => {
   // 3. GET /lotrinh/VIDEO-ba3904 (Player via clean URL)
   const r3 = await page.goto(`${BASE}/lotrinh/VIDEO-ba3904`, { waitUntil: 'load', timeout: 30000 });
   check('Route /lotrinh/VIDEO-ba3904: HTTP 200', r3.status() === 200, `status=${r3.status()}`);
-  await page.waitForTimeout(2000);
+  await page.waitForSelector('#pmeta .badge', { timeout: 15000 });
   const ptitle = await page.locator('#ptitle').textContent().catch(() => '');
   check('Route /lotrinh/VIDEO-ba3904: loaded video title', ptitle && !/Đang tải/i.test(ptitle), `title=${ptitle}`);
   const skuBadge = await page.locator('#pmeta .badge').first().textContent().catch(() => '');
@@ -41,7 +41,7 @@ const check = (name, ok, detail = '') => {
   // 4. Backward compatibility: GET /player.html?sku=VIDEO-ba3904
   const r4 = await page.goto(`${BASE}/player.html?sku=VIDEO-ba3904`, { waitUntil: 'load', timeout: 30000 });
   check('Legacy /player.html?sku=...: HTTP 200', r4.status() === 200);
-  await page.waitForTimeout(2000);
+  await page.waitForSelector('#pmeta .badge', { timeout: 15000 });
   const ptitleOld = await page.locator('#ptitle').textContent().catch(() => '');
   check('Legacy /player.html?sku=...: loaded video title', ptitleOld && !/Đang tải/i.test(ptitleOld), `title=${ptitleOld}`);
 
@@ -94,11 +94,12 @@ const check = (name, ok, detail = '') => {
   const topUrlAfterTab = page.url();
   check('Clicking Lộ trình tab updates top URL to /lotrinh', /\/lotrinh/i.test(topUrlAfterTab), `url=${topUrlAfterTab}`);
 
-  // Now click a lesson inside the iframe -> top window must navigate to /lotrinh/VIDEO-xxx
+  // Now click a lesson inside the iframe -> top window must navigate to /lotrinh/:sku
   const iframeEl = page.frameLocator('iframe.learn-frame');
-  const frameLessonBtn = iframeEl.locator('.lesson-watch, .row-thumb, .row-title').first();
+  const frameLessonBtn = iframeEl.locator('.lesson-watch').first();
+  await frameLessonBtn.waitFor({ state: 'visible', timeout: 15000 });
   await frameLessonBtn.click();
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(3500);
   const topUrlAfterWatch = page.url();
   check('Clicking lesson inside embedded iframe navigates top window to /lotrinh/:sku', /\/lotrinh\/[a-zA-Z0-9_-]+/i.test(topUrlAfterWatch), `url=${topUrlAfterWatch}`);
 

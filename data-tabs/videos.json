@@ -10,7 +10,13 @@
     "size": 117657149,
     "free": false,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Kỹ Thuật Edit B-Roll Thật & Bí Quyết Né Quét Bản Quyền / Trùng Lặp AI 2026",
+        "link": "assets/docs/VIDEO-DD983D/SOP-KY-THUAT-EDIT-BROLL-THAT-NE-QUET-AI.md",
+        "file": "assets/docs/VIDEO-DD983D/SOP-KY-THUAT-EDIT-BROLL-THAT-NE-QUET-AI.md"
+      }
+    ],
     "channels": [
       "@ธรรมสุข-2275",
       "@新しい私の毎日",
@@ -3897,7 +3903,13 @@
     "size": 65011810,
     "free": false,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Sản Xuất Bán Content Video Dài (> 1 Tiếng) Ngách Drama Gia Đình & Lời Khuyên Tuổi Già (Nhật - Hàn)",
+        "link": "assets/docs/VIDEO-61ad94/SOP-BAN-CONTENT-DRAMA-GIA-DINH-NHAT-HAN.md",
+        "file": "assets/docs/VIDEO-61ad94/SOP-BAN-CONTENT-DRAMA-GIA-DINH-NHAT-HAN.md"
+      }
+    ],
     "channels": [
       "@시어머니와며느리",
       "@마음을안아주는이야",
@@ -3931,8 +3943,17 @@
     "size": 147537949,
     "free": false,
     "drm": false,
-    "docs": [],
-    "channels": [],
+    "docs": [
+      {
+        "name": "SOP Nhân Bản Ngách Triết Lý Dưỡng Sinh & Tâm Sự Tuổi Già Từ Hàn Quốc Về Việt Nam",
+        "link": "assets/docs/VIDEO-3a38f9/SOP-NHAN-BAN-NGACH-TRIET-LY-DUONG-SINH-HAN-VIET.md",
+        "file": "assets/docs/VIDEO-3a38f9/SOP-NHAN-BAN-NGACH-TRIET-LY-DUONG-SINH-HAN-VIET.md"
+      }
+    ],
+    "channels": [
+      "@오늘의삶의지혜",
+      "@Haythauhieuchuyendoi"
+    ],
     "origin": "https://h2dev.vn/learn/study/qua-kinh-khung-voi-2-kenh-moi-hoan-toan-lam-dung-ngach-khong-bao-gio-thieu-view-share-kenh-thi-truong-han-va-viet",
     "mp4": "video/VIDEO-3a38f9/VIDEO-3a38f9.mp4",
     "image": "assets/thumbs/VIDEO-3a38f9.png",
@@ -3956,7 +3977,13 @@
     "size": 199940701,
     "free": false,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Khai Thác Ngách Cực Nhỏ: Drama Cảm Động Nhân Văn & Sức Khỏe Dưỡng Lão (Nhật - Hàn)",
+        "link": "assets/docs/VIDEO-73d98a/SOP-NGACH-CUC-NHO-DRAMA-CAM-DONG-VA-DUONG-LAO.md",
+        "file": "assets/docs/VIDEO-73d98a/SOP-NGACH-CUC-NHO-DRAMA-CAM-DONG-VA-DUONG-LAO.md"
+      }
+    ],
     "channels": [
       "@涙のひと駅",
       "@사연만남1짱",

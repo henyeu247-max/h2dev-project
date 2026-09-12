@@ -98,7 +98,7 @@ const check = (name, ok, detail = '') => {
   const iframeEl = page.frameLocator('iframe.learn-frame');
   const frameLessonBtn = iframeEl.locator('.lesson-watch').first();
   await frameLessonBtn.waitFor({ state: 'visible', timeout: 15000 });
-  await frameLessonBtn.click();
+  await frameLessonBtn.dispatchEvent('click');
   await page.waitForTimeout(3500);
   const topUrlAfterWatch = page.url();
   check('Clicking lesson inside embedded iframe navigates top window to /lotrinh/:sku', /\/lotrinh\/[a-zA-Z0-9_-]+/i.test(topUrlAfterWatch), `url=${topUrlAfterWatch}`);

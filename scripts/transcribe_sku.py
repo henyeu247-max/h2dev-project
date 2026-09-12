@@ -35,6 +35,53 @@ GROQ_CONFIG_PATH = LINLY_DIR / "config" / "groq_config.json"
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
+# Prompt ngữ cảnh chuyên ngành — giúp Whisper bóc đúng thuật ngữ & hạn chế rớt nguyên âm.
+# LƯU Ý: KHÔNG đưa các từ khoá kiểu "đăng ký kênh/like/share" vào prompt, vì model có thể
+# "đọc lại" prompt thành phụ đề ảo giác.
+VI_PROMPT = (
+    "Đây là bản ghi video hướng dẫn xây kênh YouTube faceless bằng tiếng Việt. "
+    "Thuật ngữ thường gặp: kênh, ngách, key, view, prompt, kịch bản, thumbnail, "
+    "CapCut, AdSense, Gmail, proxy, GPM, VOTP, ngâm kênh, bán content, reup, "
+    "doanh thu, RPM, AVD, đề xuất, đối thủ, tool, ChatGPT, Gemini, video, nội dung."
+)
+
+# Mẫu ảo giác Whisper hay sinh trong khoảng lặng / nhạc nền.
+HALL_PATTERNS = [
+    "la la school", "ghiền mì gõ", "subscribe cho kênh", "hãy subscribe",
+    "cảm ơn các bạn đã theo dõi", "quảng cáo sau", "đăng ký kênh để ủng hộ",
+    "nhớ đăng ký kênh", "like và chia sẻ", "like và share",
+    "nhận thêm bản ghi", "nhận thêm nhiều thông tin", "nhận thêm thông tin",
+    "bản ghi của mình trong phần bình luận", "các mục tiêu của youtube",
+    "nhớ like, share và đăng ký kênh", "các bạn có thể nhận thêm",
+    "bản ghi video hướng dẫn xây kênh", "thuật ngữ thường gặp",
+    "các bạn có thể xem video này trên kênh",
+]
+
+VOWELS = set("aàáảãạăằắẳẵặâầấẩẫậeèéẻẽẹêềếểễệiìíỉĩị"
+             "oòóỏõọôồốổỗộơờớởỡợuùúủũụưừứửữựyỳýỷỹỵ")
+
+
+def is_hallucination(text: str) -> bool:
+    low = text.lower()
+    if any(h in low for h in HALL_PATTERNS):
+        return True
+    toks = low.split()
+    if len(toks) > 8:  # lặp lại y hệt nửa câu -> ảo giác
+        half = len(toks) // 2
+        if toks[:half] == toks[half:half * 2]:
+            return True
+    return False
+
+
+def is_compressed(text: str) -> bool:
+    """Phát hiện segment bị rớt nguyên âm (nén chữ) để gắn cờ xử lý thủ công."""
+    toks = [t for t in text.split() if t]
+    if len(toks) < 6:
+        return False
+    short = sum(1 for t in toks if len(t) <= 2) / len(toks)
+    novowel = sum(1 for t in toks if not any(c in VOWELS for c in t.lower())) / len(toks)
+    return short >= 0.75 and novowel >= 0.40
+
 
 class GroqKeyManager:
     def __init__(self, config_path: Path):
@@ -146,6 +193,8 @@ def call_groq_whisper(key_mgr: GroqKeyManager, audio_path: Path, max_retries: in
         f'--{boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\nwhisper-large-v3\r\n'.encode("utf-8"),
         f'--{boundary}\r\nContent-Disposition: form-data; name="response_format"\r\n\r\nverbose_json\r\n'.encode("utf-8"),
         f'--{boundary}\r\nContent-Disposition: form-data; name="language"\r\n\r\nvi\r\n'.encode("utf-8"),
+        f'--{boundary}\r\nContent-Disposition: form-data; name="temperature"\r\n\r\n0\r\n'.encode("utf-8"),
+        f'--{boundary}\r\nContent-Disposition: form-data; name="prompt"\r\n\r\n{VI_PROMPT}\r\n'.encode("utf-8"),
         f'--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="{filename}"\r\nContent-Type: audio/mpeg\r\n\r\n'.encode("utf-8"),
         audio_data,
         f'\r\n--{boundary}--\r\n'.encode("utf-8")
@@ -226,6 +275,8 @@ def transcribe_video_sku(key_mgr: GroqKeyManager, sku: str, chunk_size: float = 
     print(f"[{sku}] Tách thành {len(chunks)} chunk(s)...")
 
     all_segments = []
+    hallucination_count = 0
+    compressed_count = 0
     tmp_dir = folder / "_temp_audio"
     tmp_dir.mkdir(exist_ok=True)
 
@@ -248,17 +299,28 @@ def transcribe_video_sku(key_mgr: GroqKeyManager, sku: str, chunk_size: float = 
                 text = seg.get("text", "").strip()
                 if not text:
                     continue
-                # Lọc bỏ hallucination loop
-                if any(bad in text.lower() for bad in ["subscribe cho kênh", "ghiền mì gõ", "la la school"]):
+                # 1) Lọc bỏ ảo giác Whisper (vòng lặp subscribe / kênh lạ / prompt bị đọc lại)
+                if is_hallucination(text):
+                    hallucination_count += 1
                     continue
+                # 2) Gắn cờ "nén chữ" để hậu kiểm thủ công (không tự bịa nội dung)
+                if is_compressed(text):
+                    compressed_count += 1
                 all_segments.append({
                     "id": len(all_segments) + 1,
                     "start": real_start,
                     "end": real_end,
-                    "text": text
+                    "start_time": format_srt_time(real_start),
+                    "end_time": format_srt_time(real_end),
+                    "text": text,
                 })
 
         print(f"[{sku}] Tổng số phân đoạn phụ đề thu được: {len(all_segments)}")
+        print(f"[{sku}] Đã lọc bỏ {hallucination_count} segment ảo giác; "
+              f"gắn cờ {compressed_count} segment 'nén chữ' (cần hậu kiểm).")
+        if compressed_count:
+            print(f"[{sku}] ⚠️  Có {compressed_count} segment nén chữ — nên bóc lại "
+                  f"theo từng segment (xem scripts/restore_over_annotated.py) trước khi xuất bản.")
 
         # 1. Ghi transcript.json
         with open(json_path, "w", encoding="utf-8") as jf:

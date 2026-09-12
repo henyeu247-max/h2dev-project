@@ -1,3 +1,25 @@
+## 2026-09-12 — Chuẩn hoá phụ đề TOÀN BỘ 136 video: sạch ảo giác & nén chữ, đồng bộ dữ liệu
+
+- **Kiểm định N/N toàn kho (không lấy mẫu) — `scripts/audit_all_136_videos.py`:**
+  - 5 nhóm tiêu chí: A (phụ đề: ảo giác / nén chữ / rác / thứ tự / định dạng / độ phủ), B (file video–thumb–docs), C (đồng bộ catalog ↔ videos.json ↔ modules), D (insights), E (tag/market).
+  - Trước fix: chỉ **4/136 video sạch**; 40 video 248 segment ảo giác, 119 video 299 segment nén chữ, 130 video TXT gộp 1 dòng…
+  - Sửa false-positive "market mismatch": so sánh theo **tập giá trị** thay vì chuỗi ⇒ thực tế **0 lệch**.
+  - Cải tiến bộ dò "nén chữ": chỉ bắt khi từ **mất nguyên âm** (không bắt nhầm câu thật ngắn như "Và anh em để ý nè").
+- **Khử ảo giác & khôi phục nén chữ:**
+  - Khử sạch ảo giác vòng lặp (*La La School / Ghiền Mì Gõ / subscribe*) bằng chú thích trung thực cho các khoảng lặng thao tác.
+  - Khôi phục 299 segment nén chữ bằng `whisper-large-v3` + prompt chuyên ngành + `temperature=0`.
+  - **Phát hiện & sửa lỗi quy trình:** 160 segment từng bị thay chú thích quá rộng tay; rà lại bằng **đo âm lượng (mean/max dB)** + **bóc lại có kiểm soát**, khôi phục đúng các câu thật bị chú thích oan (vd "Và anh em để ý nè", "Số ký tự là 41 ký tự nè").
+  - Bổ sung phụ đề phần đuôi bị thiếu: `VIDEO-c1bd51` (+3 phút), `VIDEO-f59aa7` (+27 phút).
+- **Chuẩn hoá định dạng & dữ liệu:**
+  - `transcript.txt` chuẩn **1 dòng/segment** (6 video còn gộp 1 dòng đã chuyển; 2 video giữ dạng tài liệu timeline giàu nội dung).
+  - `VIDEO-2aa1f7`: bỏ segment trùng + sắp xếp lại thứ tự (423→421) + sửa mốc thời gian vượt phạm vi.
+  - Vá `key_takeaways`/`key_timestamps` cho 6 video sơ sài; điền `tags` cho 4 video rỗng.
+  - **Sửa insight sai `VIDEO-21956b`:** ngách **Sức khỏe** (không phải "tâm linh/tâm lý học").
+- **Nghiệm thu:**
+  - `audit_all_136_videos.py`: **136/136 video SẠCH (0 lỗi)**.
+  - `validate-project.js`: PASS (136 videos, 165 channels, 45 kich-ban, 103 tai-lieu-full, 136 thumbs, 136 video dirs).
+  - Đồng bộ transcript lên VPS (tar+ssh) → `git push origin/vps` → VPS pull `0c588ec` → PM2 `h2dev-learn` online; kiểm chứng HTTP live 200 + nội dung sạch ảo giác.
+
 ## 2026-09-12 — Khắc phục triệt để 4 điểm lưu ý kiểm toán: Projection-Sync, Avatars 100%, Linter YPP 2027 & Pilot Mirror 100/100
 
 - **Sửa dứt điểm bài test `scripts/tests/projection-sync.test.cjs` (22/22 ALL PASS):**

@@ -568,7 +568,7 @@ window.addEventListener('keydown', (e)=>{
             takeawaysEl.innerHTML = ins.key_takeaways.map(t => {
               const colonIdx = t.indexOf(':');
               if (colonIdx > 0 && colonIdx < 60) {
-                const head = t.slice(0, colonIdx).trim();
+                let head = t.slice(0, colonIdx).trim().replace(/^[\s📌•\-*]+/, '').trim();
                 const body = t.slice(colonIdx + 1).trim();
                 return `<li class="py-1.5 list-none"><div class="font-bold text-amber-300 text-[12.5px] leading-snug tracking-tight mb-1 flex items-start gap-1"><span>📌</span><span>${esc(head)}:</span></div><div class="text-gray-300 text-xs leading-relaxed pl-5">${esc(body)}</div></li>`;
               }

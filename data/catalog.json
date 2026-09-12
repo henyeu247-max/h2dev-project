@@ -3813,6 +3813,11 @@
         "name": "LIST NGUỒN KÊNH/ VIDEO KEY CAM CẢNH SÁT (key Việt)",
         "link": "https://docs.google.com/spreadsheets/d/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I/edit?usp=sharing",
         "file": "assets/docs/VIDEO-5c3116/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I.csv"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-5c3116/transcript.txt",
+        "link": ""
       }
     ],
     "market": "🌐 Ngoại"
@@ -3842,7 +3847,21 @@
     "total_view": 9314,
     "tags": [
       "Nổi bật"
-    ]
+    ],
+    "docs": [
+      {
+        "name": "SOP Thực Chiến — Bán Content Ngách Lịch Sử Cổ Đại (La Mã)",
+        "file": "assets/docs/VIDEO-3df94e/SOP-BAN-CONTENT-LICH-SU-CO-DAI-ROME.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-3df94e/transcript.txt",
+        "link": ""
+      }
+    ],
+    "market": "🌐 Ngoại",
+    "country": "US"
   },
   {
     "sku": "VIDEO-5cb825",
@@ -3866,7 +3885,20 @@
     "target_market": "Toàn Cầu / Ngoại",
     "market_code": "GLOBAL",
     "duration": "11:45",
-    "total_view": 11104
+    "total_view": 11104,
+    "docs": [
+      {
+        "name": "Bộ Prompt Chuẩn — Trích Xuất & Tái Cấu Trúc Kịch Bản Kênh Đối Thủ",
+        "file": "assets/docs/VIDEO-5cb825/PROMPT-LAY-VA-TAO-KICH-BAN-DOI-THU.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-5cb825/transcript.txt",
+        "link": ""
+      }
+    ],
+    "market": "🌐 Ngoại"
   },
   {
     "sku": "VIDEO-891f32",
@@ -3893,7 +3925,20 @@
     "total_view": 11130,
     "tags": [
       "Nổi bật"
-    ]
+    ],
+    "docs": [
+      {
+        "name": "Bộ Prompt Chuẩn — Tạo Kịch Bản Video Dài Hơn 2 Tiếng Trên ChatGPT",
+        "file": "assets/docs/VIDEO-891f32/PROMPT-TAO-KICH-BAN-DAI-2-TIENG-CHATGPT.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-891f32/transcript.txt",
+        "link": ""
+      }
+    ],
+    "market": "🌐 Ngoại"
   },
   {
     "sku": "VIDEO-61e354",

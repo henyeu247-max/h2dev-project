@@ -27,7 +27,7 @@ const REL = Object.freeze({
   canonical: 'data-tabs/raw-kenh-mau.json',
   deepRoot: 'data/raw-channels-deep',
   rootManifest: 'data/raw-channels-deep/deep-channels-manifest.json',
-  metadataFull: 'Raw Kênh Mẫu Tìm Kiếm/metadata-full.json',
+  metadataFull: 'raw-kenh-goc/metadata-full.json',
 });
 const AUDIT_REL = '_audit/20260910-campaign-wave1/A16-P';
 
@@ -488,7 +488,9 @@ function collectFolderSource(root, folderName, top, errors, fileHashes) {
   const entries = listRegularEntries(folderAbs, folderRel, errors);
   const transcriptDirRel = `${folderRel}/transcripts`;
   const transcriptDirAbs = resolveInside(root, transcriptDirRel);
-  const transcriptEntries = listRegularEntries(transcriptDirAbs, transcriptDirRel, errors);
+  const transcriptEntries = fs.existsSync(transcriptDirAbs)
+    ? listRegularEntries(transcriptDirAbs, transcriptDirRel, errors)
+    : [];
   const transcriptFiles = [];
   const summaryFiles = [];
   for (const item of entries) {

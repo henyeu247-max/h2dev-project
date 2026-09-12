@@ -68,6 +68,7 @@ function sendFile(res, full, mime, rangeHeader, isHead = false){
       'Content-Length': (end-start+1),
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+      'Content-Disposition': 'inline',
     };
     if(status===206) headers['Content-Range']='bytes '+start+'-'+end+'/'+total;
     res.writeHead(status, headers);
@@ -108,8 +109,6 @@ const BLOCKED_SEGMENTS = new Set([
   'pipelines', 'raw-kenh-goc', 'raw kênh mẫu tìm kiếm', 'raw-niches', 'design-is-2026-08-22',
 ]);
 const BLOCKED_PREFIXES = [
-  ['docs', 'noi-bo'],
-  ['docs', 'zoom-*'],
   ['data', 'raw-channels-deep'],
   ['data', 'registry'],
   ['assets', 'raw-kenh'],

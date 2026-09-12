@@ -26,7 +26,7 @@
 1. `AGENTS.md` (file này)
 2. `knowledge-hub\docs\RULE-LAM-VIEC.md` (rule làm việc bắt buộc + verify ngách + nguyên tắc linh hoạt)
 3. `knowledge-hub\docs\SOUL.md` (chuẩn sản xuất video: script/cấu trúc/thumbnail/SEO/upload)
-4. `knowledge-hub\docs\HUONG-DAN-MCP-CHUAN.md` (đội agent MCP local qua 9router)
+4. `knowledge-hub\docs\HUONG-DAN-MCP-CHUAN.md` (chuẩn MCP Pool Local :3988 & phân định 9router :20128)
 5. `CHANGELOG.md` (bản gần nhất)
 6. `docs\NOI-BO\zoom\README.md` (kiến thức nền tảng — quy trình xây kênh A–Z từ 4 buổi Zoom)
 7. Data cần: `data-tabs\*.json`
@@ -38,7 +38,7 @@
 | `videos.json` | **136** (22 free / 110 pro + 4 Zoom free) |
 | `kenh-mau.json` | **165** (152 live + 13 dead) · `ngay_do` 165/165 |
 | `tai-lieu-full.json` | **103** (prompt 33 · report 20 · tool 17 · list 16 · other 12 · internal-doc 5; cập nhật Zoom 11/09) |
-| `ngach-xanh.json` | **34** ngách — `xanh:true` **11** · `CÓ MẪU TĂNG` 10 · `CHƯA ĐỦ BẰNG CHỨNG` 8 · `THẬN TRỌNG` 3 · `CÓ ĐIỀU KIỆN` 1 · `CÓ ĐK` 1 · + 5 meta kho · 5 ngách đỏ · 13 BXH |
+| `ngach-xanh.json` | **34** ngách — `xanh:true` **11** · `CÓ MẪU TĂNG` 10 · `CHƯA ĐỦ BẰNG CHỨNG` 8 · `THẬN TRỌNG` 3 · `CÓ ĐIỀU KIỆN` 2 · + 5 meta kho · 5 ngách đỏ · 13 BXH |
 | `kich-ban.json` | **45** (extract cũ, UI không đọc) |
 | `nguon-reup.json` | **27** |
 | `chien-luoc.json` | workflow 9 bước · 4 nguyên tắc cốt lõi |
@@ -62,12 +62,12 @@
 - **Dọn rác: DỜI (ưu tiên) hoặc CHẶN, không XÓA** (NO_DELETE). `git mv` vào `_archive\<YYYYMMDD>-rac\` — nhưng **fail "Permission denied"** trên NTFS với tên có dấu/dấu cách → khi đó thêm tên vào `BLOCKED` (`server.js:150`) thay vì copy (copy sinh trùng lặp vô ích, phình repo).
 - 🔑 **CẤM hardcode key vào repo** — kể cả script "chạy nội bộ". Key phải đọc từ env (`os.environ.get`) hoặc `_private/` (đã chặn web 2 lớp: segment `_private` + regex `mcp-keys`). Đã từng lộ: `transcribe_videos.py:163` hardcode `Bearer sk-b920…`.
 - 🔑 **Đếm secret ≠ đếm regex match.** Phải `sort -u` + **soi ngữ cảnh từng match**. `fc-` trong dự án này phần lớn là **fragment tên file ảnh** (`C9F89BF6-…-4Afc-…`) hoặc **token URL video** — không phải key. Quét secret phải quét **toàn bộ repo**, không chỉ `docs/` + `knowledge-hub/` (em từng bỏ sót `scripts/`).
-- 🔑 **MCP chạy LOCAL qua proxy `127.0.0.1:20128` (9router), cấu hình nằm ở omp/CLI — KHÔNG set cứng trong dự án.** Không cần key ngoài (Tavily/Firecrawl/Jina/vidIQ) nữa. `D:\YTB\.agents\mcp_config.json` hiện **rỗng** (`mcpServers: {}`) — không phải nguồn. ⚠️ MCP Pool VPS `mcp-pool.tonymmo.com` (194 tools) đang **chết — HTTP 502** (đo 31/08), đừng trỏ vào đó.
+- 🔑 **MCP Tool Server chuẩn chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` trên cổng `http://127.0.0.1:3988/mcp`** (Healthcheck: `http://127.0.0.1:3988/health` — 168+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...). **9Router tại `127.0.0.1:20128` là AI Chat Model Gateway** (chuyên điều hướng LLM chat models như Claude/GPT/Gemini), KHÔNG PHẢI là MCP Tool Server. Trước đây MCP Pool từng chạy trên VPS, nay đã được chuyển về chạy Local độc lập tại `D:\Mcp-Pool-Vps`. Cấu hình nằm ở IDE/CLI ngoài dự án.
 - ⚠️ `d:\YTB\.mcp.json` là **legacy, đã không còn tồn tại** — không trỏ vào file này nữa.
 
-## 🔑 Key / MCP — trạng thái 31/08/2026
+## 🔑 Phân định Key & Dịch vụ — Chuẩn 12/09/2026
 
-**MCP giờ chạy LOCAL qua 9router proxy (`127.0.0.1:20128`) — cấu hình nằm ở omp/CLI, KHÔNG set trong dự án.**
+**MCP Tools chạy Local qua `D:\Mcp-Pool-Vps` (:3988). Chat Model Gateway chạy qua 9Router (:20128).**
 
 11 secret từng lộ plaintext (`docs/NOI-BO/` + `knowledge-hub/` + `scripts/`) đã **redact khỏi file 31/08**. Nhưng:
 
@@ -82,11 +82,13 @@
 
 ⚠️ **Key vẫn còn trong lịch sử git** (4 commit trước). Gỡ khỏi index chỉ ngăn commit tương lai. Muốn xóa hẳn lịch sử phải rewrite (đổi toàn bộ hash) — cần anh duyệt riêng.
 
-## Ngách xanh hiện tại (đo lại 21/08)
+## Khung tham chiếu ngách (Ảnh chụp dữ liệu lịch sử — Luôn mở để cập nhật sống)
 
-- **Ưu tiên cao**: Phật pháp Nhật (overall 76.8 / comp 13.3) · Everyday History EN (69.7 / 31) · Kinh Thánh EN explainer (68.9 / 48) · Wildlife documentary (không rescue).
-- **Bền vững nếu đúng format**: Phong thủy VN · Chúa Hàn · Senior kể chuyện JP.
-- **Cẩn trọng**: Sức khỏe senior (cửa 3 + AIR Health $1.23) · Food History (comp 56) · UFO case-file.
+> 💡 **Nguyên tắc mở:** Hạ tầng H2DEV là nền tảng nghiên cứu và động cơ tìm kiếm mở, KHÔNG bị trói buộc cứng nhắc vào bất kỳ ngách hay kịch bản đơn lẻ nào. Mọi danh mục dưới đây là ảnh chụp đối chiếu (snapshot); trước khi triển khai sản xuất thực tế, bắt buộc phải dùng vidIQ đo lại dữ liệu sống 30 ngày gần nhất để xác định sóng tăng trưởng thật.
+
+- **Nhóm tiềm năng cao (theo snapshot):** Phật pháp Nhật (overall 76.8 / comp 13.3) · Everyday History EN (69.7 / 31) · Kinh Thánh EN explainer (68.9 / 48) · Khoa học ru ngủ EN · Wildlife documentary (không rescue).
+- **Nhóm theo dõi format:** Phong thủy VN · Chúa Hàn · Senior kể chuyện JP.
+- **Nhóm rủi ro chính sách:** Sức khỏe senior (cửa 3 YMYL) · Food History (cạnh tranh cao) · UFO/Kỳ bí (tránh khẳng định mê tín).
 
 ## Chính sách YPP 2027 (data ngoài mới nhất)
 

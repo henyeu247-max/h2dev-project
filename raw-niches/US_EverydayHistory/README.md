@@ -1,6 +1,6 @@
 # Hồ Sơ Ngách Thực Chiến: US_EverydayHistory (Lịch Sử Đời Sống, Đồ Vật & Thực Phẩm)
 
-> **Mã ngách:** `US_EverydayHistory` · **Thị trường:** 🇺🇸 Hoa Kỳ / Toàn cầu (Tiếng Anh) · **Trạng thái:** TRỤ CỘT ĐỀ XUẤT SỐ 1  
+> **Mã ngách:** `US_EverydayHistory` · **Thị trường:** 🇺🇸 Hoa Kỳ / Toàn cầu (Tiếng Anh) · **Trạng thái:** HỒ SƠ ỨNG VIÊN THAM KHẢO (Đã kiểm chứng dữ liệu mẫu)  
 > **Cơ sở dữ liệu:** Bóc tách 1:1 từ các kênh đối thủ trong kho 95 ảnh raw (`RAW-044`, `RAW-042`, `RAW-045`, `RAW-046`, `RAW-047`, `RAW-015`, `RAW-007`, `RAW-048`).
 
 ---
@@ -27,7 +27,7 @@
 
 ## 3. Công Thức Kịch Bản Thực Chiến 3 Hồi (Script Blueprint)
 
-Áp dụng cho chuỗi video tài liệu lịch sử đồ vật (đặc biệt là **PILOT-01-THE-MIRROR**):
+Áp dụng cho chuỗi video tài liệu lịch sử đồ vật (tham khảo kịch bản mẫu The Mirror hoặc các đề tài tương đương):
 
 ### Hồi 1: The Ordinary Hook (00:00 – 01:30)
 - **Mở màn bằng một nghịch lý thường nhật:** Bắt đầu bằng một vật thể mà ai cũng thấy hàng ngày nhưng không hề biết quá khứ chết chóc hoặc bất ngờ của nó.

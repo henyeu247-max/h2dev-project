@@ -1,3 +1,12 @@
+## 2026-09-12 — Chuẩn hoá kiến trúc MCP: Phân định rõ 9Router (Model Gateway) và MCP Pool Local (:3988)
+
+- **Sửa dứt điểm sự nhầm lẫn giữa Chat Model Gateway và Tool Server:**
+  - **9Router (`http://127.0.0.1:20128`):** Là AI Chat Model Gateway / Proxy chuyên điều hướng các LLM chat model (Claude, GPT, Gemini, DeepSeek...) qua cổng `/v1/chat/completions` để AI có "bộ não" trò chuyện. KHÔNG PHẢI là MCP Tool Server.
+  - **MCP Pool v2 Local (`D:\Mcp-Pool-Vps` — `http://127.0.0.1:3988/mcp`):** Là **MCP Tool Server chuẩn duy nhất** cung cấp 168+ công cụ thực chiến (vidIQ, Trends, Firecrawl, Exa, Tavily, Jina, Playwright, Camoufox, Filesystem, Memory...). Chạy 100% Local độc lập trên Windows, không phụ thuộc vào VPS ngoài. Healthcheck: `http://127.0.0.1:3988/health`.
+- **Cập nhật tài liệu chuẩn:**
+  - Viết lại toàn diện `knowledge-hub/docs/HUONG-DAN-MCP-CHUAN.md`: Cung cấp sơ đồ phân định hạ tầng, lệnh kiểm tra healthcheck `curl http://127.0.0.1:3988/health`, danh mục 10 nhóm công cụ và quy trình thẩm định ngách YouTube qua vidIQ sống.
+  - Đồng bộ `AGENTS.md` và `docs/NOI-BO/MCP_POOL_HUONG_DAN.md`: Xoá bỏ nhận định sai lầm cho rằng cổng 3988 là legacy; xác nhận 3988 là runtime chuẩn duy nhất cho tools.
+
 ## 2026-09-12 — Sửa dứt điểm lỗi xoá tiến độ học tập khi F5 & Bổ sung Badge "Đã xem" trực quan trên Lộ trình (`learn.html`)
 
 - **Bổ sung Badge "Đã xem" trực quan trên thumbnail Lộ trình (`learn.html`):**

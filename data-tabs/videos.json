@@ -427,9 +427,14 @@
     "drm": false,
     "docs": [
       {
-        "name": "file Skill ngách động vật",
-        "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing",
-        "file": ""
+        "name": "Skill Prompt — Kịch Bản & Motion Wildlife Survival (Tài liệu chuẩn)",
+        "file": "assets/docs/VIDEO-e91589/SKILL-wildlife-survival.md",
+        "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-e91589/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -471,9 +476,14 @@
     "drm": false,
     "docs": [
       {
-        "name": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-        "file": ""
+        "name": "Skill Prompt — Ngách Bible Explainer V2.1 (Công thức kịch bản & Prompt)",
+        "file": "assets/docs/VIDEO-21824a/SKILL-bible-explainer.md",
+        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-21824a/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -655,7 +665,18 @@
     "size": 15267371,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Thực Chiến — Bán Content Ngách Người Cao Tuổi View Việt (>60 Tuổi)",
+        "file": "assets/docs/VIDEO-f77c31/QUY-TRINH-BAN-CONTENT-VIEW-VIET-NGUOI-GIA.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-f77c31/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "https://h2dev.vn/learn/study/doanh-thu-kenh-lam-ban-content-ngach-view-viet-sau-10-ngay-bat-kiem-tien",
     "mp4": "video/VIDEO-f77c31/VIDEO-f77c31.mp4",
@@ -827,9 +848,14 @@
     "drm": false,
     "docs": [
       {
-        "name": "https://h2devtool.com/",
-        "link": "https://h2devtool.com/",
-        "file": ""
+        "name": "Cẩm Nang Sử Dụng — Tool Dịch Phụ Đề & Tạo Voice Ngọc Huyền Khớp SRT",
+        "file": "assets/docs/VIDEO-6283a6/HUONG-DAN-TOOL-DICH-SRT-VOICE-NGOCHUYEN.md",
+        "link": "https://h2devtool.com/"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-6283a6/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -852,9 +878,14 @@
     "drm": false,
     "docs": [
       {
-        "name": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-        "file": ""
+        "name": "Quy trình kháng lỗi Sử dụng lại nội dung & Trùng lặp (Tài liệu chuẩn)",
+        "file": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-46c57e/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -1314,9 +1345,14 @@
     "drm": false,
     "docs": [
       {
-        "name": "https://h2devtool.com/",
-        "link": "https://h2devtool.com/",
-        "file": ""
+        "name": "Cẩm nang sử dụng — Tool Dịch Phụ Đề SRT VIP H2DEV",
+        "file": "assets/docs/VIDEO-64130d/HUONG-DAN-SU-DUNG-TOOL-DICH-SRT-VIP-H2DEV.md",
+        "link": "https://h2devtool.com/"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-64130d/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -1734,9 +1770,19 @@
     "drm": false,
     "docs": [
       {
-        "name": "Prompt + tài nguyên ngách nhỏ phật pháp (thị trường Hàn)",
-        "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing",
-        "file": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt"
+        "name": "Prompt & Tài nguyên ngách Phật pháp / Vận mệnh Hàn Quốc",
+        "file": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
+        "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing"
+      },
+      {
+        "name": "File tài nguyên gốc (Google Doc text backup)",
+        "file": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt",
+        "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-d84a78/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -2051,7 +2097,18 @@
     "size": 18271008,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "Sổ tay thực chiến — Xử lý gậy bản quyền & Kháng trùng lặp (99% về bờ)",
+        "file": "assets/docs/VIDEO-ec9c50/SO-TAY-KHANG-BAN-QUYEN-TRUNG-LAP-NOI-DUNG.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-ec9c50/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "https://h2dev.vn/learn/study/khang-su-dung-lai-noi-dung-trung-lap-noi-dung-gay-ban-quyen-99-ve-bo-moi-nhat-2026",
     "mp4": "video/VIDEO-ec9c50/VIDEO-ec9c50.mp4",
@@ -3295,14 +3352,31 @@
     "size": 212700043,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "Zoom 01 — Nền tảng & Môi trường (Proxy, Gmail, Tạo & Ngâm kênh)",
+        "file": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+        "link": ""
+      },
+      {
+        "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+        "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/ZOOM-01-Nen-tang-moi-truong/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "",
     "mp4": "video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm",
     "image": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.png",
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
-    "channelResolve": []
+    "channelResolve": [],
+    "transcript": "video/ZOOM-01-Nen-tang-moi-truong/transcript.json"
   },
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -3315,14 +3389,31 @@
     "size": 402600409,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+        "file": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+        "link": ""
+      },
+      {
+        "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+        "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "",
     "mp4": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm",
     "image": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.png",
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
-    "channelResolve": []
+    "channelResolve": [],
+    "transcript": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.json"
   },
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -3335,14 +3426,31 @@
     "size": 300619595,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Ads",
+        "file": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+        "link": ""
+      },
+      {
+        "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+        "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "",
     "mp4": "video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm",
     "image": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.png",
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
-    "channelResolve": []
+    "channelResolve": [],
+    "transcript": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.json"
   },
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
@@ -3355,13 +3463,30 @@
     "size": 119352148,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+        "file": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+        "link": ""
+      },
+      {
+        "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+        "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/ZOOM-04-Adsense-khang-loi/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "",
     "mp4": "video/ZOOM-04-Adsense-khang-loi/ZOOM-04-Adsense-khang-loi.webm",
     "image": "assets/thumbs/ZOOM-04-Adsense-khang-loi.png",
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
-    "channelResolve": []
+    "channelResolve": [],
+    "transcript": "video/ZOOM-04-Adsense-khang-loi/transcript.json"
   }
 ]

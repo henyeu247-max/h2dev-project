@@ -1,14 +1,16 @@
 {
   "schema_version": "h2dev.video-acceptance.v1",
+  "framework": "open_verification_framework",
+  "description": "Khung tiêu chuẩn kỹ thuật nghiệm thu video mẫu mở — áp dụng linh hoạt cho bất kỳ đề tài nào được chọn thử nghiệm",
   "pilot": {
-    "id": "PILOT-01-THE-MIRROR",
-    "source_dir": "raw-niches/US_EverydayHistory/PILOT-01-THE-MIRROR",
-    "target_language": "vi",
-    "target_duration_min": 6,
-    "target_duration_max": 8,
+    "id": "PILOT-DYNAMIC-CANDIDATE",
+    "topic_selection": "dynamic_based_on_live_vidiq_data",
+    "target_language": "en",
+    "target_duration_min": 8,
+    "target_duration_max": 15,
     "status": "not_started",
-    "reason": "Chưa có quota/tài nguyên miễn phí đã xác nhận cho voice và image; không dùng bản ghép tạm để gắn PASS.",
-    "source_readiness": "needs_rewrite_and_fact_check",
+    "reason": "Hạ tầng nghiên cứu đang trong pha khảo sát dữ liệu sống đa ngách; chưa khoá cứng đề tài đơn lẻ.",
+    "source_readiness": "ready_for_candidate_evaluation",
     "outputs": {
       "script": "pending",
       "voice": "pending",
@@ -23,10 +25,15 @@
       "factual_claims": "requires_source_review",
       "cost_log": "pending"
     },
+    "technical_criteria": [
+      "Thời lượng đạt chuẩn 8–15 phút để tối ưu tỷ lệ giữ chân và phân bổ quảng cáo tự nhiên",
+      "Kịch bản có dẫn chứng xác thực, không vi phạm 3 vùng cấm của YouTube YPP",
+      "Âm thanh giọng đọc AI tự nhiên, không giật cục, âm lượng nhạc nền cân bằng",
+      "Hình ảnh minh hoạ AI sắc nét, đúng bối cảnh, chuyển động mượt mà",
+      "Khán giả nghe hiểu trọn vẹn câu chuyện ngay cả khi chỉ nghe thụ động"
+    ],
     "blockers": [
-      "Bản master hiện chỉ khoảng 355 từ dù ghi mục tiêu 1.400–1.600 từ; cần viết lại từ hồ sơ nguồn.",
-      "Các claim lịch sử chưa có nguồn không được giữ như sự thật.",
-      "Chưa được phép gọi video đạt hoặc xuất bản YouTube."
+      "Chưa chọn đề tài bấm máy chính thức; đang mở rộng khảo sát dữ liệu sống."
     ]
   }
 }

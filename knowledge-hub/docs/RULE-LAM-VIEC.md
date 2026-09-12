@@ -132,14 +132,17 @@
 
 ---
 
-## PHẦN 5 — NGÁCH XANH ĐÃ CHỐT (đối chiếu đầy đủ, 20/08)
+## PHẦN 5 — KHUNG THAM CHIẾU & ĐÁNH GIÁ NGÁCH (KHUNG MỞ)
 
-### 5.1 Chốt lâu dài (từ 27/07, vẫn đúng)
-- 🥇 **Bible/tôn giáo EN** (educational storytelling) — RPM $6-7, video 5 năm vẫn kéo view. Vào bằng **WEDGE** (giải nghĩa từ gốc Hebrew/Hy Lạp).
-- 🥈 **History/văn minh cổ đại EN** — trụ 2.
-- 🥉 **Kiến thức evergreen EN** (lịch sử kinh tế, kỹ năng).
+### 5.1 Các hướng ứng viên đã qua kiểm chứng (Snapshot tham chiếu — Luôn đo lại sống)
+- **Tôn giáo / Kinh Thánh học thuật EN** (educational storytelling) — RPM $6-7, tính bền vững cao. Tiếp cận bằng WEDGE (giải nghĩa từ gốc Hebrew/Hy Lạp).
+- **Lịch sử / Văn minh cổ đại & Nguồn gốc đồ vật EN** — nhu cầu lớn, cạnh tranh thấp ở các chủ đề hẹp.
+- **Khoa học vũ trụ / Đại dương ru ngủ (Sleep Science / Calm Documentary)** — nhu cầu tăng trưởng mạnh, thời lượng xem AVD rất cao.
+- **Triết lý / Phật pháp Nhật Bản (JP)** — mức cạnh tranh từ khóa thấp hiếm có, khán giả trung thành.
 
-### 5.2 Chuẩn hóa theo `overall score` (đo vidIQ 20/08)
+> 💡 **Nguyên tắc không đóng băng:** Không có ngách nào là "chốt vĩnh viễn". Mỗi đợt làm việc phải dùng vidIQ/dữ liệu sống đo lại volume, competition, và tìm kênh con mới mọc (outliers). Quyết định chọn ngách thuộc về người dùng và dữ liệu thực tế tại thời điểm triển khai.
+
+### 5.2 Chuẩn hóa theo `overall score` (Snapshot vidIQ tham chiếu)
 | Hạng | Ngách | Overall | Ghi chú |
 |---|---|---|---|
 | 1 | Phật pháp Nhật (ブッダの教え) | **74.1** | volume 76.2, comp 29.2, 41.8K tìm/tháng |

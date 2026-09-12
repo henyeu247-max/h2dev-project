@@ -2,12 +2,13 @@
 <html lang="vi" data-theme="dark" data-density="compact">
 <head>
 <meta charset="UTF-8">
+<base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xem video — H2DEV Project</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
-<link rel="stylesheet" href="assets/tailwind.css">
-<link rel="stylesheet" href="assets/viddar.css">
-<link rel="stylesheet" href="assets/player.css">
+<link rel="stylesheet" href="/assets/tailwind.css">
+<link rel="stylesheet" href="/assets/viddar.css">
+<link rel="stylesheet" href="/assets/player.css">
 <meta name="description" content="H2DEV — xem video khóa học.">
 <meta name="theme-color" content="#050505">
 </head>
@@ -181,9 +182,16 @@
   </button>
 </main>
 <script>
-const params=new URLSearchParams(location.search);
-const sku=params.get('sku');
-const CAT='data/catalog_full.json';
+const params = new URLSearchParams(location.search);
+function resolveSku() {
+  const pathParts = location.pathname.split('/').filter(Boolean);
+  if (pathParts.length >= 2 && (pathParts[0].toLowerCase() === 'lotrinh' || pathParts[0].toLowerCase() === 'video')) {
+    return decodeURIComponent(pathParts[1]);
+  }
+  return params.get('sku');
+}
+const sku = resolveSku();
+const CAT = '/data/catalog_full.json';
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function fmtBytes(n){if(!n)return'';if(n>1e9)return(n/1e9).toFixed(2)+' GB';if(n>1e6)return(n/1e6).toFixed(0)+' MB';return(n/1e3).toFixed(0)+' KB';}
 function docName(p){const n=(p||'').split('/').pop().split('?')[0];try{return decodeURIComponent(n);}catch(e){return n;}}
@@ -221,8 +229,16 @@ function saveStore(m){
 }
 function fmtTime(sec){ const n=Math.max(0, Math.floor(Number(sec)||0)); const m=Math.floor(n/60), s=Math.floor(n%60); return m+':'+String(s).padStart(2,'0'); }
 
-/* Quay lại: về trang trước nếu có tham số back=1 (history.back), else index */
-function goBack(){ if(params.get('back')) history.back(); else location.href='index.html'; }
+/* Quay lại: về trang trước nếu có tham số back=1 (history.back), nếu ở lộ trình về /lotrinh, else về / */
+function goBack(){
+  if (params.get('back') === '1') {
+    history.back();
+  } else if (/^\/lotrinh\//i.test(location.pathname) || params.get('back') === 'learn.html') {
+    location.href = '/lotrinh';
+  } else {
+    location.href = '/';
+  }
+}
 const btnBack=document.getElementById('btnBack');
 if(btnBack) btnBack.onclick = goBack;
 const floatingBackBtn=document.getElementById('floatingBackBtn');
@@ -402,13 +418,19 @@ window.addEventListener('keydown', (e)=>{
     if(routeSeq){
       routeSeq.textContent = 'Lộ trình · Bài ' + String(routePos + 1).padStart(2,'0') + '/' + route.length;
     }
+    function makeNavUrl(targetSku) {
+      if (/^\/lotrinh\//i.test(location.pathname)) {
+        return '/lotrinh/' + encodeURIComponent(targetSku);
+      }
+      return 'player.html?sku=' + encodeURIComponent(targetSku) + (params.get('back') ? '&back=1' : '');
+    }
     if(btnPrev){
       btnPrev.disabled = !prevItem;
-      btnPrev.onclick = () => { if(prevItem) location.href='player.html?sku='+encodeURIComponent(prevItem.sku)+(params.get('back')?'&back=1':''); };
+      btnPrev.onclick = () => { if(prevItem) location.href = makeNavUrl(prevItem.sku); };
     }
     if(btnNext){
       btnNext.disabled = !nextItem;
-      btnNext.onclick = () => { if(nextItem) location.href='player.html?sku='+encodeURIComponent(nextItem.sku)+(params.get('back')?'&back=1':''); };
+      btnNext.onclick = () => { if(nextItem) location.href = makeNavUrl(nextItem.sku); };
     }
     document.title=v.title+' — H2DEV Project';
     document.getElementById('ptitle').textContent=v.title;
@@ -657,10 +679,32 @@ window.addEventListener('keydown', (e)=>{
       const adminResponse = await fetch('/api/admin-state', {cache:'no-store'});
       if (adminResponse.ok) {
         const adminState = await adminResponse.json();
-        localStorage.setItem('h2dev-watched', JSON.stringify(adminState.watched || {}));
-        localStorage.setItem('h2dev-fav', JSON.stringify(Array.isArray(adminState.favorites) ? adminState.favorites : []));
-        if (adminState.recent) localStorage.setItem('h2dev-recent', JSON.stringify(adminState.recent));
-        localStorage.setItem('h2dev-admin', JSON.stringify(adminState));
+        const curW = loadStore();
+        const remoteW = (adminState.watched && typeof adminState.watched === 'object') ? adminState.watched : {};
+        const mergedW = Object.assign({}, remoteW);
+        for (const k in curW) {
+          if (!mergedW[k]) {
+            mergedW[k] = curW[k];
+          } else {
+            mergedW[k] = {
+              watched: Boolean(curW[k].watched || mergedW[k].watched),
+              t: Math.max(curW[k].t || 0, mergedW[k].t || 0),
+              d: Math.max(curW[k].d || 0, mergedW[k].d || 0),
+              note: curW[k].note || mergedW[k].note || ''
+            };
+          }
+        }
+        localStorage.setItem('h2dev-watched', JSON.stringify(mergedW));
+
+        const curF = JSON.parse(localStorage.getItem('h2dev-fav') || '[]');
+        const remoteF = Array.isArray(adminState.favorites) ? adminState.favorites : [];
+        const favSet = new Set([...remoteF, ...(Array.isArray(curF) ? curF : [])].filter(Boolean));
+        localStorage.setItem('h2dev-fav', JSON.stringify([...favSet]));
+
+        if (adminState.recent && !localStorage.getItem('h2dev-recent')) {
+          localStorage.setItem('h2dev-recent', JSON.stringify(adminState.recent));
+        }
+        localStorage.setItem('h2dev-admin', JSON.stringify(Object.assign({}, adminState, { watched: mergedW, favorites: [...favSet] })));
       }
     } catch(e) {}
     const store=loadStore();

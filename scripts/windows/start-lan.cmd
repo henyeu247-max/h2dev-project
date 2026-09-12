@@ -10,8 +10,8 @@ REM  ASCII only - safe for cmd.exe on any Windows.
 REM ============================================================
 setlocal
 
-REM --- Go to script folder (works with local path) ---
-pushd "%~dp0" >nul 2>nul
+REM --- Go to project root (this launcher lives in scripts\windows) ---
+pushd "%~dp0..\.." >nul 2>nul
 if errorlevel 1 (
   echo [ERROR] Cannot enter folder: %~dp0
   echo [ERROR] Copy project to a local drive on this machine and run again.

@@ -82,10 +82,33 @@
   function hydrateAdmin() {
     return fetch('/api/admin-state', {cache:'no-store'}).then(function (r) { return r.ok ? r.json() : null; }).then(function (s) {
       if (!s) return null;
-      localStorage.setItem(WKEY, JSON.stringify(s.watched || {}));
-      localStorage.setItem(FKEY, JSON.stringify(Array.isArray(s.favorites) ? s.favorites : []));
-      if (s.recent) localStorage.setItem(RKEY, JSON.stringify(s.recent));
-      localStorage.setItem('h2dev-admin', JSON.stringify(s));
+      var curW = loadWatched();
+      var remoteW = (s.watched && typeof s.watched === 'object') ? s.watched : {};
+      var mergedW = Object.assign({}, remoteW);
+      for (var k in curW) {
+        if (!mergedW[k]) {
+          mergedW[k] = curW[k];
+        } else {
+          mergedW[k] = {
+            watched: !!(curW[k].watched || mergedW[k].watched),
+            t: Math.max(curW[k].t || 0, mergedW[k].t || 0),
+            d: Math.max(curW[k].d || 0, mergedW[k].d || 0),
+            note: curW[k].note || mergedW[k].note || ''
+          };
+        }
+      }
+      localStorage.setItem(WKEY, JSON.stringify(mergedW));
+
+      var curF = loadFavs();
+      var remoteF = Array.isArray(s.favorites) ? s.favorites : [];
+      var favSet = {};
+      remoteF.concat(curF).forEach(function(k) { if (k) favSet[k] = true; });
+      localStorage.setItem(FKEY, JSON.stringify(Object.keys(favSet)));
+
+      if (s.recent && !localStorage.getItem(RKEY)) {
+        localStorage.setItem(RKEY, JSON.stringify(s.recent));
+      }
+      localStorage.setItem('h2dev-admin', JSON.stringify(Object.assign({}, s, { watched: mergedW, favorites: Object.keys(favSet) })));
       return s;
     }).catch(function () { return null; });
   }
@@ -116,7 +139,7 @@
   function renderLessonRow(v, opts) {
     opts = opts || {};
     var sku = v.sku;
-    var href = 'player.html?sku=' + encodeURIComponent(sku) + (opts.back ? '&back=' + encodeURIComponent(opts.back) : '');
+    var href = '/lotrinh/' + encodeURIComponent(sku);
     var favs = loadFavs();
     var isFav = favs.indexOf(sku) >= 0;
     var pr = videoProgress(sku);
@@ -124,6 +147,10 @@
     var thumbOverlays = '';
     if (opts.seq != null) thumbOverlays += '<span class="row-seq">' + esc(opts.seq) + '</span>';
     thumbOverlays += '<button class="row-fav' + (isFav ? ' is-fav' : '') + '" data-fav="' + esc(sku) + '" title="' + (isFav ? 'Bỏ yêu thích' : 'Thêm yêu thích') + '">' + (isFav ? ICONS.heartSolid : ICONS.heartRegular) + '</button>';
+    // Watched badge on thumbnail (progress bar already rendered by row-watchbar below)
+    if (pr.done) {
+      thumbOverlays += '<div class="watched-badge" title="Đã xem xong"></div>';
+    }
     thumbOverlays += '<div class="row-watchbar"><i style="width:' + Math.round(pr.ratio * 100) + '%"></i></div>';
     if (v.duration) thumbOverlays += '<span class="row-time">' + ICONS.clock + esc(v.duration) + '</span>';
 
@@ -140,7 +167,7 @@
     var action = opts.showAction ? '<a class="lesson-watch" href="' + href + '" aria-label="Xem video: ' + esc(v.title) + '">Xem video</a>' : '';
 
     return '' +
-      '<div class="lesson-row' + (opts.active ? ' is-active' : '') + '" data-sku="' + esc(sku) + '">' +
+      '<div class="lesson-row' + (opts.active ? ' is-active' : '') + (pr.done ? ' is-watched' : '') + '" data-sku="' + esc(sku) + '">' +
         '<a class="row-thumb" href="' + href + '" title="Xem: ' + esc(v.title) + '">' +
           '<img src="' + esc(v.image || '') + '" alt="' + esc(v.title || '') + '" loading="lazy">' +
           thumbOverlays +

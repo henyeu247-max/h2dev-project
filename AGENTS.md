@@ -31,7 +31,7 @@
 6. `docs\NOI-BO\zoom\README.md` (kiến thức nền tảng — quy trình xây kênh A–Z từ 4 buổi Zoom)
 7. Data cần: `data-tabs\*.json`
 
-## Data core (đếm chuẩn 11/09/2026 — check N/N bằng script)
+## Data core (đếm chuẩn 12/09/2026 — check N/N bằng script)
 
 | File | Số record |
 |---|---|
@@ -43,9 +43,9 @@
 | `nguon-reup.json` | **27** |
 | `chien-luoc.json` | workflow 9 bước · 4 nguyên tắc cốt lõi |
 | `dong-bo-ngoai.json` | 13 matched · 19 merged · 5 không gom · 4 pipeline |
-| `raw-kenh-mau.json` | **95** ảnh/record · OCR 95/95 · Vision 31 · verified 2 |
+| `raw-kenh-mau.json` | **83** record canonical (95 source snapshot · 12 duplicate) · OCR source 95/95 · Vision 31 · verified 2 |
 
-**Tài sản đi kèm:** `docs/` 137 thư mục (132 `VIDEO-*` + 4 `ZOOM-*` + `NOI-BO`) · `assets/thumbs/` 136/136 khớp + `placeholder.svg` · `video/` 136 thư mục (132 mp4 + 4 webm Zoom); kiểm ffprobe hiện tại: 136/136 có luồng hình và 136/136 có luồng audio, không có file 0 byte.
+**Tài sản đi kèm:** `docs/` 138 thư mục (132 `VIDEO-*` + 5 `ZOOM-*` + `NOI-BO`) · `assets/thumbs/` 136/136 khớp + `placeholder.svg` · `video/` 136 thư mục (132 mp4 + 4 webm Zoom); kiểm ffprobe hiện tại: 136/136 có luồng hình và 136/136 có luồng audio, không có file 0 byte.
 
 > ⚠️ `xanh` là field **đa kiểu** (boolean + string). Đếm `xanh:true` phải dùng `is True`, KHÔNG dùng truthy — chuỗi `"CHƯA ĐỦ BẰNG CHỨNG"` cũng truthy → đếm sai thành 34.
 

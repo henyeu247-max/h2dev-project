@@ -10,7 +10,7 @@
   'use strict';
   var C = window.H2Core;
 
-  var DATA_URL = 'data/modules.json';
+  var DATA_URL = '/data/modules.json';
   var state = { tab: 'danhmuc', q: '' };
   var COLLAPSE_KEY = 'h2dev-collapsed';
 
@@ -124,7 +124,7 @@
           '<div class="resume-meta">' + C.esc(meta) + '</div>' +
         '</div>' +
         status +
-        '<a class="resume-go" href="player.html?sku=' + encodeURIComponent(target.sku) + '&back=learn.html">' + label + '</a>' +
+        '<a class="resume-go" href="/lotrinh/' + encodeURIComponent(target.sku) + '">' + label + '</a>' +
       '</div>';
     els.resumeBanner.classList.remove('hidden');
   }
@@ -218,7 +218,7 @@
    * TAB 4 — TÌM KIẾM BÀI HỌC (chuẩn gốc: search bar + card compact)
    * ============================================================ */
   function searchCard(v) {
-    var href = 'player.html?sku=' + encodeURIComponent(v.sku) + '&back=learn.html';
+    var href = '/lotrinh/' + encodeURIComponent(v.sku);
     return '' +
       '<a class="s-card" href="' + href + '">' +
         '<img src="' + C.esc(v.image || '') + '" alt="' + C.esc(v.title || '') + '" loading="lazy">' +

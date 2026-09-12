@@ -4195,34 +4195,63 @@
   "VIDEO-73d98a": {
     "sku": "VIDEO-73d98a",
     "title": "Update key (ngách cực nhỏ) mới nhất 06-09-2026",
-    "actual_topic": "Chiến lược khai thác ngách cực nhỏ (Micro-niche): Drama cảm động nhân văn & Sức khỏe dưỡng lão Nhật-Hàn",
+    "actual_topic": "Chiến lược bóc tách ngách cực nhỏ (Micro-niche): Drama cảm động nhân văn & Sức khỏe dưỡng lão Nhật-Hàn",
     "category_group": "ngach_xanh",
     "niche_primary": "Drama Cảm Động & Dưỡng Lão",
     "niche_id": "drama-cam-dong-duong-lao",
     "target_market": "🇯🇵 Nhật / 🇰🇷 Hàn",
     "market_code": "JP-KR",
+    "key_timestamps": [
+      {
+        "time": "00:00",
+        "seconds": 0,
+        "label": "Kênh Nhật @涙のひと駅 & Ngách Drama Cảm Động (168k view/22h)"
+      },
+      {
+        "time": "02:14",
+        "seconds": 134,
+        "label": "Kênh Hàn @사연만남1짱 & Kỹ thuật tự quay bàn tay né quét AI"
+      },
+      {
+        "time": "04:27",
+        "seconds": 267,
+        "label": "Kênh Dưỡng Lão @simbot2 & Cảnh báo sai lầm Edit Full ảnh AI"
+      },
+      {
+        "time": "06:40",
+        "seconds": 400,
+        "label": "Kênh Sức Khỏe @元気な老後 & Bí quyết đào từ khóa ngách từ tab Phổ biến"
+      },
+      {
+        "time": "07:50",
+        "seconds": 470,
+        "label": "Tư duy rèn luyện độ nhạy ngách & Công thức nhân bản không cạn kịch bản"
+      }
+    ],
     "key_takeaways": [
-      "Chuyển dịch từ Drama hận thù sang Drama cảm động nhân văn: Thay vì làm kịch bản đấu đá tiêu cực dễ gây mệt mỏi, chuyển sang ngách câu chuyện cảm động (như chuyện chia ly, tình nghĩa gia đình tại sân ga) tiếp cận tệp khán giả trung niên và cao tuổi (45-75 tuổi) có thời gian xem thụ động rất cao.",
-      "Phân tích kênh Nhật Bản @涙のひと駅: Đăng video drama cảm động dài từ 1-2 tiếng, video mới nhất đăng chỉ 22 giờ đã đạt 168.000 lượt xem, tốc độ cắn đề xuất thần tốc nhờ giữ chân người xem bằng cốt truyện nhân văn.",
-      "Phân tích kênh Hàn Quốc @사연만남1짱 & @simbot2: Kênh tâm sự đời sống và tiếng lòng tuổi già (Simbot2 chỉ 20 video đạt 4.5M view và 27.4K sub), khai thác nỗi lòng người già, bài học hối hận và đạo lý nhân quả.",
-      "Phân tích ngách Sức khỏe dưỡng lão @元気な老後-t5d: Kênh mới 19 video đạt video 81.000 view sau 11 ngày, tập trung vào mẹo sức khỏe tuổi xế chiều (bài tập trí não 1 phút, thực phẩm hại khớp, phục hồi thận).",
-      "Kỹ thuật dựng Minimalist: Sử dụng ảnh AI nhân vật biểu cảm cảm động kết hợp hiệu ứng tuyết rơi/hạt bụi nhẹ nhàng và sóng âm audio (như kênh @simbot2), vừa tối ưu chi phí vừa chống quét ảnh tĩnh."
+      "Chuyển dịch sang Drama cảm động nhân văn (Nhẹ nhàng & Giữ chân cao): Khác với drama tranh chấp hận thù dễ gây mệt mỏi, tác giả phân tích ngách câu chuyện cảm động gia đình (chia ly, tình chị em, ngày ly hôn). Kênh Nhật @涙のひと駅 mới 2 tháng đã có video 168.000 view sau 22 giờ; tệp khán giả lớn tuổi nghe thụ động rất lâu, đẩy thời gian xem trung bình (AVD) lên cực đại.",
+      "Bí quyết tự quay B-roll độc bản né 100% lỗi Reused Content: Kênh Hàn Quốc @사연만남1짱 sử dụng kỹ thuật dùng điện thoại tự quay cận cảnh bàn tay đang gõ bàn phím máy tính (hoặc quay hồ cá bơi) làm video nền lặp lại. Đây là source tự quay độc quyền 100%, không lấy của ai trên mạng, bảo đảm kênh sống cực bền (đã làm 4 tháng vẫn sống khỏe), bật kiếm tiền YPP và có nút Hội viên.",
+      "Cảnh báo chí mạng về sai lầm Edit Full ảnh AI của kênh Simbot2: Kênh @simbot2 đạt 400.000 - 500.000 view nhắm vào tệp người già trên 70 tuổi nhưng mắc sai lầm nghiêm trọng là dựng bằng 100% ảnh tạo từ AI. Tác giả cảnh báo tuyệt đối KHÔNG làm theo cách này vì rất dễ bị YouTube quét lỗi nội dung không xác thực (Inauthentic AI Content), dẫn đến tắt kiếm tiền hoặc bay màu kênh vĩnh viễn.",
+      "Quy trình 3 bước đào từ khóa ngách triệu view từ tab Phổ biến: Từ kênh sức khỏe Nhật @元気な老後-t5d (chỉ 19 video), bấm vào tab Phổ biến để lọc 2 video cao view nhất (bài tập trí não 1 phút chống sa sút trí tuệ & thực phẩm hại khớp chân). Bóc tách từ khóa tiếng Nhật đắt giá này rồi dán vào thanh tìm kiếm YouTube để thuật toán quét ra hàng chục kênh đối thủ và ngách con tiềm năng khác.",
+      "Chiến lược nhân bản tam giác (Nhật - Hàn - Việt) không bao giờ cạn content: Không cần tốn thời gian sáng tạo kịch bản từ đầu; kịch bản từ Nhật nhân bản sang Hàn, kịch bản Hàn nhân bản sang Nhật, hoặc lấy kịch bản của cả hai đem về thị trường Việt Nam sản xuất. Đây là hướng đi chuẩn giúp kênh luôn dồi dào kịch bản và phát triển bền vững."
     ],
     "edit_sop": {
-      "primary": "Sử dụng hình ảnh minh họa chân thực/ấm áp + Giọng đọc AI chậm rãi, trầm ấm + Nhạc nền acoustic hoặc piano xúc động",
+      "primary": "Tự quay B-roll bàn tay gõ phím / hồ cá độc bản 100% + Ghép video phong cảnh đời thường tự nhiên + Phụ đề chữ to rõ nét (Cấm dùng Full ảnh AI)",
       "additional": [
-        "Viết tiêu đề theo góc nhìn thứ nhất (Tôi/Chị tôi/Gia đình tôi) để tăng tính chân thực.",
-        "Đối với ngách sức khỏe người già: Trình bày thông tin dinh dưỡng/tập luyện đơn giản, chữ phụ đề to rõ cho người mắt kém."
+        "Quay video bàn tay thật: Dùng điện thoại tự quay góc cận bàn tay đang thao tác trên bàn phím máy tính (khoảng 30-60 giây) rồi lặp loop làm nền video. Đây là source độc bản 100% giúp kênh vượt qua mọi đợt quét \"Sử dụng lại nội dung\" của YouTube.",
+        "Ghép video tự nhiên (Natural Footage): Dùng các đoạn video phong cảnh đường phố, nhà ga xe lửa, quán cà phê hoặc cảnh sinh hoạt đời thường phù hợp với cốt truyện cảm động nhẹ nhàng.",
+        "Chạy phụ đề (Subtitle) to bản, dễ đọc: Do tệp khán giả là người trung niên và người cao tuổi (từ 50-75 tuổi), chữ phụ đề phải đặt ở vị trí dễ nhìn, cỡ chữ lớn, độ tương phản cao với nền."
       ]
     },
     "avoid_flags": [
-      "Tránh làm drama đấu tố giật gân bạo lực đi ngược với phong cách câu chuyện cảm động.",
-      "Không đưa thông tin y khoa sai lệch hoặc khẳng định chữa bách bệnh ở ngách dưỡng lão để tránh vi phạm chính sách Y Tế của YouTube."
+      "TUYỆT ĐỐI KHÔNG EDIT FULL BẰNG HÌNH ẢNH AI: Sai lầm lớn nhất của các kênh như Simbot2 là lạm dụng 100% ảnh sinh từ AI. Tác giả cảnh báo cách làm này rất dễ bị YouTube quét lỗi nội dung không xác thực (Inauthentic/Spam), dẫn đến tắt kiếm tiền hoặc bị xóa kênh vĩnh viễn.",
+      "Không làm drama đấu đá giật gân, bạo lực tiêu cực: Ngách này thành công nhờ yếu tố cảm động, tình nghĩa và giá trị nhân văn nhẹ nhàng; việc nhồi nhét drama tiêu cực sẽ làm mất tệp người già.",
+      "Không trông chờ vào một công thức tìm ngách thần thánh 100%: Thuật toán chỉ đề xuất khi bạn tích cực tương tác, tìm kiếm từ khóa và xem nhiều video trong ngách; người mới nên bám sát danh sách kênh có sẵn để nhân bản ngay thay vì loay hoay tự mò."
     ],
     "tools_mentioned": [
       "AI Voice",
       "CapCut",
-      "YouTube Studio"
+      "YouTube Search / Studio"
     ],
     "channels_mentioned": [
       "@涙のひと駅",
@@ -4230,29 +4259,7 @@
       "@simbot2",
       "@元気な老後-t5d"
     ],
-    "key_timestamps": [
-      {
-        "time": "00:00",
-        "seconds": 0,
-        "label": "Phân tích ngách Drama cảm động Nhật Bản & Kênh mẫu triệu view"
-      },
-      {
-        "time": "02:40",
-        "seconds": 160,
-        "label": "Mổ xẻ kịch bản câu chuyện gia đình cảm xúc (Ngày ly hôn...)"
-      },
-      {
-        "time": "05:15",
-        "seconds": 315,
-        "label": "Chia sẻ kênh Hàn Quốc tâm sự đời sống @사연만남1짱 & @simbot2"
-      },
-      {
-        "time": "07:30",
-        "seconds": 450,
-        "label": "Phân tích ngách sức khỏe người cao tuổi Nhật Bản @元気な老後-t5d"
-      }
-    ],
-    "analysis_method": "local_transcript_heuristic",
+    "analysis_method": "deep_visual_audio_inspection",
     "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": true,
     "claims_require_external_verification": false,

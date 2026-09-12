@@ -16,7 +16,7 @@
 - Thì trước khi vào cái clip share key hôm nay á, thì em show qua một trong những cái kênh em đang làm nha mọi người
 - Đấy, để cho anh em có động lực mà làm nha
 - Về cái key mà hôm nay em share cho mọi người á, là key về cái ngách lịch sử nha mọi người
-- Về em cũng sẽ share cho mọi người cái forum để mọi người làm cái kịch bản hoàn thiện, và cũng như là làm ra một cái video hoàn thiện luôn nha
+- Về em cũng sẽ share cho mọi người cái prompt để mọi người làm cái kịch bản hoàn thiện, và cũng như là làm ra một cái video hoàn thiện luôn nha
 
 ## 3. Kênh Mẫu & Đối Thủ Phân Tích
 - *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*

@@ -23,7 +23,7 @@
 
 ## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
 - **Kỹ thuật chính:** Rồi anh em quay lại con chat youtube nha
-- **Bổ sung:** Đấy, như vậy là rất là ok v r l r nha m ng R b ti theo sau khi m c k b thanh r Th b ti theo l m s l t h nha m ng T h m edit c video m ng Rồi đây là cái from để mình tạo hình ảnh
+- **Bổ sung:** Đấy, như vậy là rất là ok v r l r nha m ng R b ti theo sau khi m c k b thanh r Th b ti theo l m s l t h nha m ng T h m edit c video m ng Rồi đây là cái prompt để mình tạo hình ảnh
 - **Bổ sung:** Mọi người quay lại con chat beauty lúc nãy nè
 
 ## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)

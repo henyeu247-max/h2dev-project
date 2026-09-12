@@ -34,7 +34,7 @@
   - `00:46` — Bởi vì người Hàn Quốc rất là ghét Triều Tiên luôn anh em ạ
   - `01:36` — Nên là mọi người sản xuất nội dung AI
   - `02:21` — Có thể có hợp nhiều video
-  - `03:07` — thì em đã có hướng dẫn mọi người tự viết from rồi.
+  - `03:07` — thì em đã có hướng dẫn mọi người tự viết prompt rồi.
 
 ## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
 > link kênh

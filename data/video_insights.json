@@ -4254,8 +4254,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-73d98a/transcript.txt"
   },
   "VIDEO-7ae3d6": {

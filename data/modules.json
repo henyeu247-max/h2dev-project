@@ -30,8 +30,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "https://www.facebook.com/share/g/1Av3v37xj7/?mibextid=wwXIfr",
-              "link": "https://www.facebook.com/share/g/1Av3v37xj7/?mibextid=wwXIfr"
+              "name": "THAM GIA VÀO GROUP CỘNG ĐỒNG TẠI ĐÂY!",
+              "link": "https://www.facebook.com/share/g/1Av3v37xj7/?mibextid=wwXIfr",
+              "file": ""
             }
           ],
           "desc": "THAM GIA V&Agrave;O GROUP CỘNG ĐỒNG TẠI Đ&Acirc;Y!&nbsp;     \n    (mấy b&aacute;c vui l&ograve;ng nhập đ&uacute;ng th&ocirc;ng tin c&acirc;u trả lời để được duyệt v&agrave;o group nh&eacute;,  nếu bị "
@@ -72,15 +73,21 @@
           "free": true,
           "size": 26354465,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 2,
           "seq": "01",
           "duration": "03:29",
           "badge": "NỔI BẬT",
           "access": "FREE",
           "docs": [
             {
-              "name": "Google Drive Tài liệu đính kèm",
+              "name": "Skill Prompt — Kịch Bản & Motion Wildlife Survival (Tài liệu chuẩn)",
+              "file": "assets/docs/VIDEO-e91589/SKILL-wildlife-survival.md",
               "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing"
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-e91589/transcript.txt",
+              "link": ""
             }
           ],
           "desc": "file Skill ng&aacute;ch động vật      (bấm v&agrave;o đ&acirc;y)"
@@ -95,15 +102,21 @@
           "free": true,
           "size": 21668016,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 2,
           "seq": "02",
           "duration": "03:02",
           "badge": "NỔI BẬT",
           "access": "FREE",
           "docs": [
             {
-              "name": "Google Drive Tài liệu đính kèm",
+              "name": "Skill Prompt — Ngách Bible Explainer V2.1 (Công thức kịch bản & Prompt)",
+              "file": "assets/docs/VIDEO-21824a/SKILL-bible-explainer.md",
               "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-21824a/transcript.txt",
+              "link": ""
             }
           ],
           "desc": "Skill prompt      - ng&aacute;ch bible explainer:      https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
@@ -118,11 +131,23 @@
           "free": true,
           "size": 15267371,
           "channels": [],
-          "docsCount": 0,
+          "docsCount": 2,
           "seq": "03",
           "duration": "02:08",
           "badge": "NỔI BẬT",
-          "access": "FREE"
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "SOP Thực Chiến — Bán Content Ngách Người Cao Tuổi View Việt (>60 Tuổi)",
+              "file": "assets/docs/VIDEO-f77c31/QUY-TRINH-BAN-CONTENT-VIEW-VIET-NGUOI-GIA.md",
+              "link": ""
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-f77c31/transcript.txt",
+              "link": ""
+            }
+          ]
         },
         {
           "sku": "VIDEO-46c57e",
@@ -134,11 +159,28 @@
           "free": true,
           "size": 29383580,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 3,
           "seq": "04",
           "duration": "02:55",
           "badge": "QUAN TRỌNG",
-          "access": "FREE"
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "Skill prompt — ngách bible explainer",
+              "file": "assets/docs/VIDEO-46c57e/SKILL-bible-explainer.md",
+              "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
+            },
+            {
+              "name": "Quy trình kháng lỗi Sử dụng lại nội dung & Trùng lặp (Tài liệu chuẩn)",
+              "file": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
+              "link": ""
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-46c57e/transcript.txt",
+              "link": ""
+            }
+          ]
         },
         {
           "sku": "VIDEO-ec9c50",
@@ -150,11 +192,23 @@
           "free": true,
           "size": 18271008,
           "channels": [],
-          "docsCount": 0,
+          "docsCount": 2,
           "seq": "05",
           "duration": "01:42",
           "badge": "QUAN TRỌNG",
-          "access": "FREE"
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "Sổ tay thực chiến — Xử lý gậy bản quyền & Kháng trùng lặp (99% về bờ)",
+              "file": "assets/docs/VIDEO-ec9c50/SO-TAY-KHANG-BAN-QUYEN-TRUNG-LAP-NOI-DUNG.md",
+              "link": ""
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-ec9c50/transcript.txt",
+              "link": ""
+            }
+          ]
         },
         {
           "sku": "VIDEO-4425fc",
@@ -192,15 +246,26 @@
           "free": true,
           "size": 93872143,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 3,
           "seq": "01",
           "duration": "07:54",
           "badge": "QUAN TRỌNG",
           "access": "FREE",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
+              "name": "Prompt & Tài nguyên ngách Phật pháp / Vận mệnh Hàn Quốc",
+              "file": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
               "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing"
+            },
+            {
+              "name": "File tài nguyên gốc (Google Doc text backup)",
+              "file": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt",
+              "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing"
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-d84a78/transcript.txt",
+              "link": ""
             }
           ],
           "desc": "Prompt + t&agrave;i nguy&ecirc;n ng&aacute;ch nhỏ phật ph&aacute;p (thị trường H&agrave;n)"
@@ -222,16 +287,19 @@
           "access": "FREE",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU/edit?usp=sharing"
+              "name": "NGUỒN VIDEO REUP DOUYIN + BILIBILI",
+              "link": "https://docs.google.com/spreadsheets/d/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-5c438a/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU.csv"
             },
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg/edit?usp=sharing"
+              "name": "LIST KÊNH DOUYIN NGUỒN TÀI NGUYÊN REUP",
+              "link": "https://docs.google.com/spreadsheets/d/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-5c438a/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg.csv"
             },
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY/edit?usp=sharing"
+              "name": "PROMPT THUMB + TỪ KHÓA SEO / HASHTAGS KEY SENIOR",
+              "link": "https://docs.google.com/document/d/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-5c438a/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY.txt"
             }
           ],
           "desc": "NGUỒN VIDEO REUP DOUYIN + BILIBILI    \n &nbsp; \n    LIST K&Ecirc;NH DOUYIN NGUỒN T&Agrave;I NGUY&Ecirc;N REUP    \n    PROMPT THUMB + TỪ KH&Oacute;A SEO / HASHTAGS KEY SENIOR"
@@ -467,8 +535,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Drive Tài liệu đính kèm",
-              "link": "https://drive.google.com/drive/folders/1PYGR8SHPWj9GdGLT361yP-1lTAvQwIVG?usp=sharing"
+              "name": "tài nguyên em train trong video TẠI ĐÂY nhe",
+              "link": "https://drive.google.com/drive/folders/1PYGR8SHPWj9GdGLT361yP-1lTAvQwIVG?usp=sharing",
+              "file": ""
             }
           ],
           "desc": "v&igrave; video qu&aacute; d&agrave;i n&ecirc;n n&oacute; đang c&ograve;n xử l&yacute; chất lượng HD, mấy b&aacute;c đợi t&iacute; xong l&agrave; video n&eacute;t lại nh&eacute; ạ!    \n     t&agrave;i"
@@ -485,15 +554,21 @@
           "channels": [
             "https://www.youtube.com/watch?v=l06eKkZCkxQ"
           ],
-          "docsCount": 1,
+          "docsCount": 2,
           "seq": "03",
           "duration": "01:00:59",
           "badge": "QUAN TRỌNG",
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Drive Tài liệu đính kèm",
-              "link": "https://drive.google.com/drive/folders/14bf1nCiGzvU6aCSKjrs2lRxEDiJINdeT?usp=sharing"
+              "name": "skill prompt của ngách trong video",
+              "link": "https://drive.google.com/drive/folders/14bf1nCiGzvU6aCSKjrs2lRxEDiJINdeT?usp=sharing",
+              "file": ""
+            },
+            {
+              "name": "【美輪明宏】",
+              "link": "https://www.youtube.com/watch?v=l06eKkZCkxQ",
+              "file": ""
             }
           ],
           "desc": "skill prompt của ng&aacute;ch trong video    \n    c&aacute;c c&acirc;u l&ecirc;nh em train trong video:    \n  đ&acirc;y l&agrave; 2 k&ecirc;nh đối thủ v&agrave; t&ocirc;i đang định hướng sắp tới sẽ l&"
@@ -515,12 +590,14 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA/edit?usp=sharing"
+              "name": "Prompt em chia sẻ trong video",
+              "link": "https://docs.google.com/document/d/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-e90874/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA.txt"
             },
             {
-              "name": "https://www.youtube-transcript.io/",
-              "link": "https://www.youtube-transcript.io/"
+              "name": "web lấy kịch bản",
+              "link": "https://www.youtube-transcript.io/",
+              "file": ""
             }
           ],
           "desc": "Prompt em chia sẻ trong video    \n     web lấy kịch bản"
@@ -554,8 +631,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1DPv3XBIzpkH2mF163b47y2FvxkRKseIprcPn4QU1WaE/edit?usp=sharing"
+              "name": "PROMPT DEMO KEY TRONG VIDEO",
+              "link": "https://docs.google.com/document/d/1DPv3XBIzpkH2mF163b47y2FvxkRKseIprcPn4QU1WaE/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-bdfab7/1DPv3XBIzpkH2mF163b47y2FvxkRKseIprcPn4QU1WaE.txt"
             }
           ],
           "desc": "PROMPT DEMO KEY TRONG VIDEO     \n    K&Ecirc;NH ĐỐI THỦ    \n    C&Acirc;U LỆNH TRAIN:    \n  Dựa tr&ecirc;n ph&acirc;n t&iacute;ch to&agrave;n bộ k&ecirc;nh 구름야담 v&agrave; cấu tr&uacute;c kịch bản 70&n"
@@ -580,8 +658,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit"
+              "name": "câu lệnh train",
+              "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit",
+              "file": "assets/docs/VIDEO-b380a1/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5.txt"
             }
           ],
           "desc": "link k&ecirc;nh 1  \n  link k&ecirc;nh 2  \n  c&acirc;u lệnh train"
@@ -603,8 +682,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit?tab=t.0"
+              "name": "PROMPT TRAIN",
+              "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit?tab=t.0",
+              "file": "assets/docs/VIDEO-b380a1/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5.txt"
             }
           ],
           "desc": "PROMPT TRAIN"
@@ -775,16 +855,19 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt?ref=H2DEV-001",
-              "link": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt?ref=H2DEV-001"
+              "name": "hướng dẫn tool dịch",
+              "link": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt?ref=H2DEV-001",
+              "file": ""
             },
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/3546626561935534/upload/video"
+              "name": "https://space.bilibili.com/3546626561935534/upload/video",
+              "link": "https://space.bilibili.com/3546626561935534/upload/video",
+              "file": ""
             },
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/1692631217?spm_id_from=333.788.upinfo.detail.click"
+              "name": "https://space.bilibili.com/1692631217?spm_id_from=333.788.upinfo.detail.click",
+              "link": "https://space.bilibili.com/1692631217?spm_id_from=333.788.upinfo.detail.click",
+              "file": ""
             }
           ],
           "desc": "tool dịch: &nbsp;     hướng dẫn tool dịch    \n &nbsp; \n   2 k&ecirc;nh nguồn bili trong video:   \n    https://space.bilibili.com/3546626561935534/upload/video    \n    https://space.bilibili.com/169263"
@@ -917,28 +1000,34 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click"
+              "name": "https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click",
+              "link": "https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click",
+              "file": ""
             },
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/3546888691256089?spm_id_from=333.788.upinfo.head.click"
+              "name": "https://space.bilibili.com/3546888691256089?spm_id_from=333.788.upinfo.head.click",
+              "link": "https://space.bilibili.com/3546888691256089?spm_id_from=333.788.upinfo.head.click",
+              "file": ""
             },
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/3546852697836055?spm_id_from=333.788.upinfo.head.click"
+              "name": "https://space.bilibili.com/3546852697836055?spm_id_from=333.788.upinfo.head.click",
+              "link": "https://space.bilibili.com/3546852697836055?spm_id_from=333.788.upinfo.head.click",
+              "file": ""
             },
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/3546819541863216?spm_id_from=333.788.upinfo.head.click"
+              "name": "https://space.bilibili.com/3546819541863216?spm_id_from=333.788.upinfo.head.click",
+              "link": "https://space.bilibili.com/3546819541863216?spm_id_from=333.788.upinfo.head.click",
+              "file": ""
             },
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/1641862092?spm_id_from=333.788.upinfo.head.click"
+              "name": "https://space.bilibili.com/1641862092?spm_id_from=333.788.upinfo.head.click",
+              "link": "https://space.bilibili.com/1641862092?spm_id_from=333.788.upinfo.head.click",
+              "file": ""
             },
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/3461566735322013?spm_id_from=333.788.upinfo.head.click"
+              "name": "https://space.bilibili.com/3461566735322013?spm_id_from=333.788.upinfo.head.click",
+              "link": "https://space.bilibili.com/3461566735322013?spm_id_from=333.788.upinfo.head.click",
+              "file": ""
             }
           ],
           "desc": "em share th&ecirc;m một số k&ecirc;nh nguồn gốc  (từ đ&oacute; mấy b&aacute;c c&oacute; thể tự lọc ra th&ecirc;m nữa nh&eacute;)  \n  https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upi"
@@ -1103,8 +1192,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y/edit?usp=sharing"
+              "name": "tài nguyên + prompt trong video em hướng dẫn Ở ĐÂY",
+              "link": "https://docs.google.com/document/d/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-ca0b1a/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y.txt"
             }
           ],
           "desc": "t&agrave;i nguy&ecirc;n + prompt trong video em hướng dẫn Ở Đ&Acirc;Y"
@@ -1303,8 +1393,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "https://forms.gle/8My4gaTxouE8JtAL7",
-              "link": "https://forms.gle/8My4gaTxouE8JtAL7"
+              "name": "forms thông tin muốn mua kênh",
+              "link": "https://forms.gle/8My4gaTxouE8JtAL7",
+              "file": ""
             }
           ],
           "desc": "forms th&ocirc;ng tin muốn mua k&ecirc;nh &nbsp;     (Lưu &yacute;: b&aacute;c n&agrave;o thật sự c&oacute; thiện ch&iacute; v&agrave; nhu cần muốn mua về để l&agrave;m lu&ocirc;n th&igrave; mới điền "
@@ -1329,8 +1420,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "https://zalo.me/g/wmd6w4pqzopkuj5huww5",
-              "link": "https://zalo.me/g/wmd6w4pqzopkuj5huww5"
+              "name": "group tool dịch",
+              "link": "https://zalo.me/g/wmd6w4pqzopkuj5huww5",
+              "file": ""
             }
           ],
           "desc": "group tool dịch     \n     k&ecirc;nh đối thủ 1     \n     k&ecirc;nh đối thủ 2"
@@ -1373,8 +1465,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/292057296?spm_id_from=333.788.upinfo.head.click"
+              "name": "NGUỒN GỐC BILIBILI",
+              "link": "https://space.bilibili.com/292057296?spm_id_from=333.788.upinfo.head.click",
+              "file": ""
             }
           ],
           "desc": "K&Ecirc;NH ĐỐI THỦ    \n    NGUỒN GỐC BILIBILI    \n    b&aacute;c n&agrave;o c&oacute; cần tool dịch th&igrave; nhắn zl e"
@@ -1479,7 +1572,8 @@
           "docs": [
             {
               "name": "https://h2devtool.com/",
-              "link": "https://h2devtool.com/"
+              "link": "https://h2devtool.com/",
+              "file": ""
             }
           ],
           "desc": "tool dịch SRT:    https://h2devtool.com/      \n     k&ecirc;nh đối thủ"
@@ -1564,12 +1658,14 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "https://v.douyin.com/rHlTXqwqe7k/",
-              "link": "https://v.douyin.com/rHlTXqwqe7k/"
+              "name": "kênh nguồn gốc tặng kèm (mọi người có thể tự tìm thêm như e đã hướng dẫn)",
+              "link": "https://v.douyin.com/rHlTXqwqe7k/",
+              "file": ""
             },
             {
-              "name": "https://v.douyin.com/b3sSc-MXVUY/",
-              "link": "https://v.douyin.com/b3sSc-MXVUY/"
+              "name": "thêm nguồn gốc (tặng kèm)",
+              "link": "https://v.douyin.com/b3sSc-MXVUY/",
+              "file": ""
             }
           ],
           "desc": "k&ecirc;nh đối thủ     \n     k&ecirc;nh nguồn gốc tặng k&egrave;m (mọi người c&oacute; thể tự t&igrave;m th&ecirc;m như e đ&atilde; hướng dẫn)     \n     th&ecirc;m nguồn gốc (tặng k&egrave;m)"
@@ -1633,8 +1729,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Nguồn Bilibili Video",
-              "link": "https://space.bilibili.com/3706935473866913?spm_id_from=333.788.upinfo.head.click"
+              "name": "nguồn kênh gốc và update giờ",
+              "link": "https://space.bilibili.com/3706935473866913?spm_id_from=333.788.upinfo.head.click",
+              "file": ""
             }
           ],
           "desc": "nguồn k&ecirc;nh gốc v&agrave; update giờ"
@@ -1739,7 +1836,8 @@
           "docs": [
             {
               "name": "https://www.douyin.com/user/MS4wLjABAAAAShPDui4jT63haBEolNbHB-ZRj1_3MWuzuPdvB7m66MWNQP5W31lbn1lbR08KawBd",
-              "link": "https://www.douyin.com/user/MS4wLjABAAAAShPDui4jT63haBEolNbHB-ZRj1_3MWuzuPdvB7m66MWNQP5W31lbn1lbR08KawBd"
+              "link": "https://www.douyin.com/user/MS4wLjABAAAAShPDui4jT63haBEolNbHB-ZRj1_3MWuzuPdvB7m66MWNQP5W31lbn1lbR08KawBd",
+              "file": ""
             }
           ],
           "desc": "nguồn:     https://www.douyin.com/user/MS4wLjABAAAAShPDui4jT63haBEolNbHB-ZRj1_3MWuzuPdvB7m66MWNQP5W31lbn1lbR08KawBd"
@@ -1784,8 +1882,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "https://forms.gle/ksJTZ9B7GgAaDZYu6",
-              "link": "https://forms.gle/ksJTZ9B7GgAaDZYu6"
+              "name": "FORMS MUA KÊNH (CHO AE CÓ THIỆN CHÍ MUỐN MUA LÀM RIÊNG) - *(HIỆN TẠI KÊNH ĐÃ CÓ NGƯỜI MUA RỒI EM ĐÓNG FORM MỌI NGƯỜI NHÉ)",
+              "link": "https://forms.gle/ksJTZ9B7GgAaDZYu6",
+              "file": ""
             }
           ],
           "desc": "FORMS MUA K&Ecirc;NH    (CHO AE C&Oacute; THIỆN CH&Iacute; MUỐN MUA L&Agrave;M RI&Ecirc;NG) -  *(HIỆN TẠI K&Ecirc;NH Đ&Atilde; C&Oacute; NGƯỜI MUA RỒI EM Đ&Oacute;NG FORM MỌI NGƯỜI NH&Eacute;)      \n "
@@ -1802,7 +1901,7 @@
           "channels": [
             "https://www.youtube.com/@Tu%E1%BB%95iGi%C3%A0Radio_VN"
           ],
-          "docsCount": 14,
+          "docsCount": 5,
           "seq": "54",
           "duration": "03:26",
           "badge": "QUAN TRỌNG",
@@ -1810,59 +1909,28 @@
           "docs": [
             {
               "name": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape",
-              "link": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape"
+              "link": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape",
+              "file": ""
             },
             {
               "name": "https://www.vecteezy.com/",
-              "link": "https://www.vecteezy.com/"
+              "link": "https://www.vecteezy.com/",
+              "file": ""
             },
             {
               "name": "https://coverr.co/",
-              "link": "https://coverr.co/"
+              "link": "https://coverr.co/",
+              "file": ""
             },
             {
               "name": "https://www.freepik.com/videos",
-              "link": "https://www.freepik.com/videos"
+              "link": "https://www.freepik.com/videos",
+              "file": ""
             },
             {
               "name": "https://pixabay.com/",
-              "link": "https://pixabay.com/"
-            },
-            {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA/edit?tab=t.0"
-            },
-            {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY/edit?usp=sharing"
-            },
-            {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc/edit?usp=sharing"
-            },
-            {
-              "name": "https://dreamina.capcut.com/?utm_medium=sem&amp;utm_source=googleadwords_int&amp;utm_campaign=brand&amp;pid=513641&amp;campaign_id=21589138307&amp;adset_id=173517691420&amp;ad_id=726980043010&amp;keyword=dreamina&amp;matchtype=e&amp;channel=g&amp;placement=&amp;target=kwd-781492265004&amp;gad_source=1&amp;gad_campaignid=21589138307&amp;gbraid=0AAAAACROvhkqV2O6v9JILWYquU6g5_F8E&amp;gclid=Cj0KCQiA5abIBhCaARIsAM3-zFVAHjwuaJz_2ToAg0TXw_s_07rJzEKXywgQb9lf4-86gHyI8po5mNUaAh1cEALw_wcB",
-              "link": "https://dreamina.capcut.com/?utm_medium=sem&amp;utm_source=googleadwords_int&amp;utm_campaign=brand&amp;pid=513641&amp;campaign_id=21589138307&amp;adset_id=173517691420&amp;ad_id=726980043010&amp;keyword=dreamina&amp;matchtype=e&amp;channel=g&amp;placement=&amp;target=kwd-781492265004&amp;gad_source=1&amp;gad_campaignid=21589138307&amp;gbraid=0AAAAACROvhkqV2O6v9JILWYquU6g5_F8E&amp;gclid=Cj0KCQiA5abIBhCaARIsAM3-zFVAHjwuaJz_2ToAg0TXw_s_07rJzEKXywgQb9lf4-86gHyI8po5mNUaAh1cEALw_wcB"
-            },
-            {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c/edit?usp=sharing"
-            },
-            {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk/edit?usp=sharing"
-            },
-            {
-              "name": "https://labs.google/fx/vi/tools/whisk",
-              "link": "https://labs.google/fx/vi/tools/whisk"
-            },
-            {
-              "name": "https://labs.google/fx/vi/tools/flow/",
-              "link": "https://labs.google/fx/vi/tools/flow/"
-            },
-            {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY/edit?usp=sharing"
+              "link": "https://pixabay.com/",
+              "file": ""
             }
           ],
           "desc": "LINK K&Ecirc;NH ĐỐI THỦ     \n   WEB TẢI T&Agrave;I NGUY&Ecirc;N VIDEO:   \n  https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape  \n  https://www.vecteezy.com/  \n   https://coverr"
@@ -1944,12 +2012,14 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc/edit?usp=sharing"
+              "name": "List (danh sách) nguồn tài nguyên kênh reup",
+              "link": "https://docs.google.com/spreadsheets/d/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-cb907b/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc.csv"
             },
             {
               "name": "https://tikvideo.app/vi/download-douyin-video",
-              "link": "https://tikvideo.app/vi/download-douyin-video"
+              "link": "https://tikvideo.app/vi/download-douyin-video",
+              "file": ""
             }
           ],
           "desc": "List (danh s&aacute;ch) nguồn t&agrave;i nguy&ecirc;n k&ecirc;nh reup     \n     C&Acirc;U LỆNH THUMB:      \n    từ ảnh n&agrave;y bạn h&atilde;y thiết kế ra h&igrave;nh ảnh tỉ lệ khung h&igrave;nh 16:"
@@ -2065,11 +2135,73 @@
           "free": true,
           "size": 257066533,
           "channels": [],
-          "docsCount": 11,
+          "docsCount": 12,
           "seq": "64",
           "duration": "18:03",
           "badge": "NỔI BẬT",
-          "access": "FREE"
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "PROMPT: NGÁCH Kiểm soát sinh học - chiến thuật - tâm lý (UPDATE 26/02/2026) - H2DEV",
+              "link": "https://docs.google.com/document/d/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA/edit?tab=t.0",
+              "file": "assets/docs/VIDEO-2aa1f7/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA.txt"
+            },
+            {
+              "name": "PROMPT NGÁCH ĐỨA TRẺ (UPDATE 24/01/2026) - H2DEV",
+              "link": "https://docs.google.com/document/d/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-2aa1f7/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY.txt"
+            },
+            {
+              "name": "PROMPT NGÁCH NHỎ TRIẾT LÝ (H2Dev)",
+              "link": "https://docs.google.com/document/d/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-2aa1f7/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc.txt"
+            },
+            {
+              "name": "TẠO ẢNH AI",
+              "link": "https://dreamina.capcut.com/?utm_medium=sem&utm_source=googleadwords_int&utm_campaign=brand&pid=513641&campaign_id=21589138307&adset_id=173517691420&ad_id=726980043010&keyword=dreamina&matchtype=e&channel=g&placement=&target=kwd-781492265004&gad_source=1&gad_campaignid=21589138307&gbraid=0AAAAACROvhkqV2O6v9JILWYquU6g5_F8E&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFVAHjwuaJz_2ToAg0TXw_s_07rJzEKXywgQb9lf4-86gHyI8po5mNUaAh1cEALw_wcB",
+              "file": ""
+            },
+            {
+              "name": "WEB TẢI TÀI NGUYÊN VIDEO FREE 1",
+              "link": "https://pixabay.com/",
+              "file": ""
+            },
+            {
+              "name": "WEB TẢI TÀI NGUYÊN VIDEO FREE 2",
+              "link": "https://www.vecteezy.com/",
+              "file": ""
+            },
+            {
+              "name": "PROMPT NGÁCH QUY LUẬT KINH TẾ",
+              "link": "https://docs.google.com/document/d/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-2aa1f7/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c.txt"
+            },
+            {
+              "name": "PROMPT KEY QUY TRÌNH/ NHÀ MÁY SẢN XUẤT",
+              "link": "https://docs.google.com/document/d/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-2aa1f7/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk.txt"
+            },
+            {
+              "name": "WEB TẠO ẢNH",
+              "link": "https://labs.google/fx/vi/tools/whisk",
+              "file": ""
+            },
+            {
+              "name": "WEB TẠO VIDEO",
+              "link": "https://labs.google/fx/vi/tools/flow/",
+              "file": ""
+            },
+            {
+              "name": "PROMPT: NGÁCH KINH TẾ - THỊ TRƯỜNG HÀN",
+              "link": "https://docs.google.com/document/d/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-2aa1f7/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY.txt"
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-2aa1f7/transcript.txt",
+              "link": ""
+            }
+          ]
         },
         {
           "sku": "VIDEO-9ef6fe",
@@ -2217,23 +2349,31 @@
           "free": true,
           "size": 250509973,
           "channels": [],
-          "docsCount": 3,
+          "docsCount": 4,
           "seq": "72",
           "duration": "17:07",
           "badge": "NỔI BẬT",
           "access": "FREE",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM/edit?usp=sharing"
+              "name": "PROMPT KEY WORLD WAR II HISTORY (bấm vào đây)",
+              "link": "https://docs.google.com/document/d/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-458892/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM.txt"
             },
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY/edit?usp=sharing"
+              "name": "list link kênh key ở video ytb",
+              "link": "https://docs.google.com/spreadsheets/d/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-458892/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY.csv"
             },
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o/edit?usp=sharing"
+              "name": "LIST KÊNH NGUỒN REUP DOUYIN",
+              "link": "https://docs.google.com/spreadsheets/d/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-458892/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o.csv"
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-458892/transcript.txt",
+              "link": ""
             }
           ],
           "desc": "PROMPT KEY WORLD WAR II HISTORY (bấm v&agrave;o đ&acirc;y)  \n  list link k&ecirc;nh key ở video ytb  \n  LIST K&Ecirc;NH NGUỒN REUP DOUYIN"
@@ -2255,8 +2395,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1naPiYans0-np4pylKY8_KRl471M_dN_sR0TR_OkPT64/edit?usp=sharing"
+              "name": "LINK KÊNH KEY",
+              "link": "https://docs.google.com/spreadsheets/d/1naPiYans0-np4pylKY8_KRl471M_dN_sR0TR_OkPT64/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-806c0c/1naPiYans0-np4pylKY8_KRl471M_dN_sR0TR_OkPT64.csv"
             }
           ],
           "desc": "LINK K&Ecirc;NH KEY"
@@ -2278,20 +2419,24 @@
           "access": "FREE",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1-lBHSM3jBoHLvymN6JJT0wQdsIHUeoQyvGGh-_Whh_Y/edit?usp=sharing"
+              "name": "Prompt Key Nhật",
+              "link": "https://docs.google.com/document/d/1-lBHSM3jBoHLvymN6JJT0wQdsIHUeoQyvGGh-_Whh_Y/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-5c3116/1-lBHSM3jBoHLvymN6JJT0wQdsIHUeoQyvGGh-_Whh_Y.txt"
             },
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1Oz9FxDW3vL_oKHQOuQ0HvkgOHXWD033BB8AZa2HJr4E/edit?usp=sharing"
+              "name": "PROMPT TRAIN NGÁCH TIỀN SỬ",
+              "link": "https://docs.google.com/document/d/1Oz9FxDW3vL_oKHQOuQ0HvkgOHXWD033BB8AZa2HJr4E/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-5c3116/1Oz9FxDW3vL_oKHQOuQ0HvkgOHXWD033BB8AZa2HJr4E.txt"
             },
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1ssSE9vExaJlHlNUAWVG1X-duEB6xB0ru6vcUmKkoaRw/edit?usp=sharing"
+              "name": "PROMPT TRAIN (BẤM VÀO TẠI ĐÂY)",
+              "link": "https://docs.google.com/document/d/1ssSE9vExaJlHlNUAWVG1X-duEB6xB0ru6vcUmKkoaRw/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-5c3116/1ssSE9vExaJlHlNUAWVG1X-duEB6xB0ru6vcUmKkoaRw.txt"
             },
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I/edit?usp=sharing"
+              "name": "LIST NGUỒN KÊNH/ VIDEO KEY CAM CẢNH SÁT (key Việt)",
+              "link": "https://docs.google.com/spreadsheets/d/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-5c3116/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I.csv"
             }
           ],
           "desc": "Prompt Key Nhật  \n  PROMPT TRAIN NG&Aacute;CH TIỀN SỬ  \n  PROMPT TRAIN (BẤM V&Agrave;O TẠI Đ&Acirc;Y)  \n  LIST NGUỒN K&Ecirc;NH/ VIDEO KEY CAM CẢNH S&Aacute;T (key Việt)"
@@ -2313,8 +2458,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1Doz37LNCbNKHtYH4uaraNPSEW3OQRrv5iCfEV-9DQmc/edit?usp=sharing"
+              "name": "Link kênh key",
+              "link": "https://docs.google.com/spreadsheets/d/1Doz37LNCbNKHtYH4uaraNPSEW3OQRrv5iCfEV-9DQmc/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-83a28e/1Doz37LNCbNKHtYH4uaraNPSEW3OQRrv5iCfEV-9DQmc.csv"
             }
           ],
           "desc": "Link k&ecirc;nh key"
@@ -2336,8 +2482,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/13ehUG_aMoGlhBu0JOChffANOQQ4UmWGS6fxS6Fbrk2Y/edit?usp=drivesdk"
+              "name": "Link kênh key",
+              "link": "https://docs.google.com/spreadsheets/d/13ehUG_aMoGlhBu0JOChffANOQQ4UmWGS6fxS6Fbrk2Y/edit?usp=drivesdk",
+              "file": "assets/docs/VIDEO-948336/13ehUG_aMoGlhBu0JOChffANOQQ4UmWGS6fxS6Fbrk2Y.csv"
             }
           ],
           "desc": "Link k&ecirc;nh key"
@@ -2359,8 +2506,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1Q1rhStw_0JO6eLR5NLmTv7i5HT_Zvn-KR4KuaaLR7KI/edit?usp=sharing"
+              "name": "list kênh key 27/9",
+              "link": "https://docs.google.com/spreadsheets/d/1Q1rhStw_0JO6eLR5NLmTv7i5HT_Zvn-KR4KuaaLR7KI/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-ca266f/1Q1rhStw_0JO6eLR5NLmTv7i5HT_Zvn-KR4KuaaLR7KI.csv"
             }
           ],
           "desc": "list k&ecirc;nh key 27/9"
@@ -2382,8 +2530,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/17MyDQQ_wBW63gTJ2VS-alOqPg3SSYeRt4_lozEHgBq0/edit?usp=sharing"
+              "name": "List Kênh Key 7/9/2025",
+              "link": "https://docs.google.com/spreadsheets/d/17MyDQQ_wBW63gTJ2VS-alOqPg3SSYeRt4_lozEHgBq0/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-8603a9/17MyDQQ_wBW63gTJ2VS-alOqPg3SSYeRt4_lozEHgBq0.csv"
             }
           ],
           "desc": "List K&ecirc;nh Key 7/9/2025"
@@ -2405,8 +2554,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1jSfRYhNkVpqAA34DjX0CiJjn18Ph5U093JlV0a4P1ao/edit?usp=sharing"
+              "name": "LIST LINK KÊNH ĐỐI THỦ",
+              "link": "https://docs.google.com/spreadsheets/d/1jSfRYhNkVpqAA34DjX0CiJjn18Ph5U093JlV0a4P1ao/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-82f8a8/1jSfRYhNkVpqAA34DjX0CiJjn18Ph5U093JlV0a4P1ao.csv"
             }
           ],
           "desc": "LIST LINK K&Ecirc;NH ĐỐI THỦ"
@@ -2428,8 +2578,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/15WFg5REGYsmW1p1p-sz5E-C7mkC_NdRH/edit?usp=sharing&amp;ouid=103446946492928743175&amp;rtpof=true&amp;sd=true"
+              "name": "PROMPT TRAIN CHATGPT",
+              "link": "https://docs.google.com/document/d/15WFg5REGYsmW1p1p-sz5E-C7mkC_NdRH/edit?usp=sharing&ouid=103446946492928743175&rtpof=true&sd=true",
+              "file": "assets/docs/VIDEO-39ae49/15WFg5REGYsmW1p1p-sz5E-C7mkC_NdRH.txt"
             }
           ],
           "desc": "PROMPT TRAIN CHATGPT"
@@ -2451,12 +2602,14 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1XSpdBykFxAQfpndhX-09pyuriPtCYtGS/edit?tab=t.0"
+              "name": "PROMPT TRAIN CHATGPT",
+              "link": "https://docs.google.com/document/d/1XSpdBykFxAQfpndhX-09pyuriPtCYtGS/edit?tab=t.0",
+              "file": "assets/docs/VIDEO-25fddf/1XSpdBykFxAQfpndhX-09pyuriPtCYtGS.txt"
             },
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1VE1XufGZey3NWpcNx7gaec1iVGHyCO3R/edit?gid=387143067#gid=387143067"
+              "name": "LIST KÊNH",
+              "link": "https://docs.google.com/spreadsheets/d/1VE1XufGZey3NWpcNx7gaec1iVGHyCO3R/edit?gid=387143067#gid=387143067",
+              "file": "assets/docs/VIDEO-25fddf/1VE1XufGZey3NWpcNx7gaec1iVGHyCO3R.csv"
             }
           ],
           "desc": "PROMPT TRAIN CHATGPT  \n &nbsp; \n  LIST K&Ecirc;NH"
@@ -2643,11 +2796,23 @@
           "free": true,
           "size": 131685203,
           "channels": [],
-          "docsCount": 0,
+          "docsCount": 2,
           "seq": "05",
           "duration": "07:26",
           "badge": "NỔI BẬT",
-          "access": "FREE"
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "Cẩm Nang Thực Chiến — Thiết Kế Thumbnail Ngách Triết Lý Khắc Kỷ",
+              "file": "assets/docs/VIDEO-a348a5/HUONG-DAN-DESIGN-THUMBNAIL-TRIET-LY-KHAC-KY.md",
+              "link": ""
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-a348a5/transcript.txt",
+              "link": ""
+            }
+          ]
         },
         {
           "sku": "VIDEO-8e0275",
@@ -2666,20 +2831,24 @@
           "access": "FREE",
           "docs": [
             {
-              "name": "Google Drive Tài liệu đính kèm",
-              "link": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing"
+              "name": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing",
+              "link": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing",
+              "file": "assets/docs/VIDEO-8e0275/drive_1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj"
             },
             {
-              "name": "Google Drive Tài liệu đính kèm",
-              "link": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing"
+              "name": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing",
+              "link": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing",
+              "file": "assets/docs/VIDEO-8e0275/drive_1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc"
             },
             {
-              "name": "Google Drive Tài liệu đính kèm",
-              "link": "https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing"
+              "name": "https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing",
+              "link": "https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing",
+              "file": "assets/docs/VIDEO-8e0275/drive_1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf"
             },
             {
-              "name": "Google Drive Tài liệu đính kèm",
-              "link": "https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing"
+              "name": "https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing",
+              "link": "https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing",
+              "file": "assets/docs/VIDEO-8e0275/drive_1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0"
             }
           ],
           "desc": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing  \n &nbsp; \n  https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing  \n &nbsp; \n  https://"
@@ -2743,8 +2912,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc/edit?usp=sharing"
+              "name": "link tài nguyên",
+              "link": "https://docs.google.com/spreadsheets/d/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-1b4be3/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc.csv"
             }
           ],
           "desc": "link t&agrave;i nguy&ecirc;n"
@@ -2792,8 +2962,9 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "Google Docs Prompt / Kịch bản",
-              "link": "https://docs.google.com/document/d/1QZZ16kd7eXbAkA-G5V0Ws4Wvv_iPe3Nr/edit?usp=sharing&amp;ouid=103446946492928743175&amp;rtpof=true&amp;sd=true"
+              "name": "PROMPT TRAIN CHATGPT",
+              "link": "https://docs.google.com/document/d/1QZZ16kd7eXbAkA-G5V0Ws4Wvv_iPe3Nr/edit?usp=sharing&ouid=103446946492928743175&rtpof=true&sd=true",
+              "file": "assets/docs/VIDEO-f59aa7/1QZZ16kd7eXbAkA-G5V0Ws4Wvv_iPe3Nr.txt"
             }
           ],
           "desc": "PROMPT TRAIN CHATGPT"
@@ -2818,15 +2989,21 @@
           "free": true,
           "size": 26812421,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 2,
           "seq": "01",
           "duration": "02:53",
           "badge": "NỔI BẬT",
           "access": "FREE",
           "docs": [
             {
-              "name": "https://h2devtool.com/",
+              "name": "Cẩm Nang Sử Dụng — Tool Dịch Phụ Đề & Tạo Voice Ngọc Huyền Khớp SRT",
+              "file": "assets/docs/VIDEO-6283a6/HUONG-DAN-TOOL-DICH-SRT-VOICE-NGOCHUYEN.md",
               "link": "https://h2devtool.com/"
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-6283a6/transcript.txt",
+              "link": ""
             }
           ],
           "desc": "tool tại đ&acirc;y:      https://h2devtool.com/"
@@ -2841,11 +3018,23 @@
           "free": true,
           "size": 83691418,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 2,
           "seq": "02",
           "duration": "07:22",
           "badge": "NỔI BẬT",
-          "access": "FREE"
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "Cẩm nang sử dụng — Tool Dịch Phụ Đề SRT VIP H2DEV",
+              "file": "assets/docs/VIDEO-64130d/HUONG-DAN-SU-DUNG-TOOL-DICH-SRT-VIP-H2DEV.md",
+              "link": "https://h2devtool.com/"
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-64130d/transcript.txt",
+              "link": ""
+            }
+          ]
         },
         {
           "sku": "VIDEO-d20744",
@@ -2864,28 +3053,34 @@
           "access": "PRO",
           "docs": [
             {
-              "name": "https://vietsubmmo.com/tool/free/YoutubeDownload.zip",
-              "link": "https://vietsubmmo.com/tool/free/YoutubeDownload.zip"
+              "name": "TOOL TẢI YOUTUBE",
+              "link": "https://vietsubmmo.com/tool/free/YoutubeDownload.zip",
+              "file": "assets/docs/VIDEO-d20744/YoutubeDownload.zip"
             },
             {
-              "name": "https://vietsubmmo.com/tool/free/Tiktokdouyin.zip",
-              "link": "https://vietsubmmo.com/tool/free/Tiktokdouyin.zip"
+              "name": "TOOL TẢI TIKTOK",
+              "link": "https://vietsubmmo.com/tool/free/Tiktokdouyin.zip",
+              "file": "assets/docs/VIDEO-d20744/Tiktokdouyin.zip"
             },
             {
-              "name": "https://vietsubmmo.com/tool/free/BilibiliDownload.zip",
-              "link": "https://vietsubmmo.com/tool/free/BilibiliDownload.zip"
+              "name": "TOOL TẢI BILIBILI",
+              "link": "https://vietsubmmo.com/tool/free/BilibiliDownload.zip",
+              "file": "assets/docs/VIDEO-d20744/BilibiliDownload.zip"
             },
             {
-              "name": "https://vietsubmmo.com/tool/free/FacebookDownload.zip",
-              "link": "https://vietsubmmo.com/tool/free/FacebookDownload.zip"
+              "name": "TOOL TẢI FACEBOOK",
+              "link": "https://vietsubmmo.com/tool/free/FacebookDownload.zip",
+              "file": "assets/docs/VIDEO-d20744/FacebookDownload.zip"
             },
             {
-              "name": "https://vietsubmmo.com/tool/free/quaymanhinh.zip",
-              "link": "https://vietsubmmo.com/tool/free/quaymanhinh.zip"
+              "name": "TOOL QUAY MÀN HÌNH",
+              "link": "https://vietsubmmo.com/tool/free/quaymanhinh.zip",
+              "file": "assets/docs/VIDEO-d20744/quaymanhinh.zip"
             },
             {
-              "name": "https://vietsubmmo.com/tool/free/cutghep.zip",
-              "link": "https://vietsubmmo.com/tool/free/cutghep.zip"
+              "name": "TOOL CẮT GHÉP VIDEO SIÊU TỐC",
+              "link": "https://vietsubmmo.com/tool/free/cutghep.zip",
+              "file": "assets/docs/VIDEO-d20744/cutghep.zip"
             }
           ],
           "desc": "TẢI TOOL MIỄN PH&Iacute;:    \n      TOOL TẢI YOUTUBE         TOOL TẢI TIKTOK         TOOL TẢI BILIBILI         TOOL TẢI FACEBOOK         TOOL QUAY M&Agrave;N H&Igrave;NH         TOOL CẮT GH&Eacute;P V"
@@ -2900,15 +3095,21 @@
           "free": true,
           "size": 20353652,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 2,
           "seq": "04",
           "duration": "03:03",
           "badge": "NỔI BẬT",
           "access": "FREE",
           "docs": [
             {
-              "name": "Google Sheets Nguồn / Danh sách kênh",
-              "link": "https://docs.google.com/spreadsheets/d/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM/edit?usp=sharing"
+              "name": "TOOL VÀ TÀI KHOẢN GIÁ RẺ (bấm vào đây để liên hệ)",
+              "link": "https://docs.google.com/spreadsheets/d/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM/edit?usp=sharing",
+              "file": "assets/docs/VIDEO-04c2e3/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM.csv"
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/VIDEO-04c2e3/transcript.txt",
+              "link": ""
             }
           ],
           "desc": "T&agrave;i khoản ChatGPT v&agrave; CapCutPro em đ&atilde; hết từ cuối th&aacute;ng 12/2025,   hiện tại chỉ c&ograve;n một số tool voice elevenlab, clone minimax v&agrave; dịch..    \n    TOOL V&Agrave;"
@@ -2933,14 +3134,25 @@
           "free": true,
           "size": 212700043,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 3,
           "seq": "01",
           "duration": "53:01",
           "badge": "ZOOM",
           "access": "FREE",
           "docs": [
             {
-              "name": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+              "name": "Zoom 01 — Nền tảng & Môi trường (Proxy, Gmail, Tạo & Ngâm kênh)",
+              "file": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+              "link": ""
+            },
+            {
+              "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+              "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+              "link": ""
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/ZOOM-01-Nen-tang-moi-truong/transcript.txt",
               "link": ""
             }
           ],
@@ -2956,14 +3168,25 @@
           "free": true,
           "size": 402600409,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 3,
           "seq": "02",
           "duration": "81:33",
           "badge": "ZOOM",
           "access": "FREE",
           "docs": [
             {
-              "name": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+              "name": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+              "file": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+              "link": ""
+            },
+            {
+              "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+              "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+              "link": ""
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.txt",
               "link": ""
             }
           ],
@@ -2979,14 +3202,25 @@
           "free": true,
           "size": 300619595,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 3,
           "seq": "03",
           "duration": "74:21",
           "badge": "ZOOM",
           "access": "FREE",
           "docs": [
             {
-              "name": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+              "name": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Ads",
+              "file": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+              "link": ""
+            },
+            {
+              "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+              "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+              "link": ""
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.txt",
               "link": ""
             }
           ],
@@ -3002,14 +3236,25 @@
           "free": true,
           "size": 119352148,
           "channels": [],
-          "docsCount": 1,
+          "docsCount": 3,
           "seq": "04",
           "duration": "37:13",
           "badge": "ZOOM",
           "access": "FREE",
           "docs": [
             {
-              "name": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+              "name": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+              "file": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+              "link": ""
+            },
+            {
+              "name": "Quy trình xây kênh A–Z (Đề cương & SOP 11 bước thực chiến)",
+              "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+              "link": ""
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "file": "video/ZOOM-04-Adsense-khang-loi/transcript.txt",
               "link": ""
             }
           ],

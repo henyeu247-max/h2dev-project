@@ -19,6 +19,7 @@ const ARTIFACT_DIR = 'C:/Users/SaxukeB/.gemini/antigravity/brain/a2e4c820-6071-4
   console.log('3. Finding VIDEO-5c438a inside Lộ trình iframe...');
   const iframeEl = page.frameLocator('iframe.learn-frame');
   const targetRow = iframeEl.locator('.lesson-row[data-sku="VIDEO-5c438a" i]');
+  await targetRow.first().waitFor({ state: 'attached', timeout: 20000 });
   const count = await targetRow.count();
   console.log('   Found VIDEO-5c438a rows:', count);
 

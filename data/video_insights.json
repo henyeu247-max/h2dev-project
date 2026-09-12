@@ -609,8 +609,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-1aaf46/transcript.txt"
   },
   "VIDEO-1acb10": {
@@ -1282,8 +1282,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-28e1cc/transcript.txt"
   },
   "VIDEO-2aa1f7": {
@@ -1739,8 +1739,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-348217/transcript.txt"
   },
   "VIDEO-34c92b": {
@@ -2043,8 +2043,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-3a38f9/transcript.txt"
   },
   "VIDEO-3ae732": {
@@ -2824,8 +2824,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-484f9e/transcript.txt"
   },
   "VIDEO-4a5aac": {
@@ -2956,8 +2956,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-4b3c09/transcript.txt"
   },
   "VIDEO-502960": {
@@ -3791,8 +3791,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-61ad94/transcript.txt"
   },
   "VIDEO-61e354": {
@@ -5534,8 +5534,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-9aff6d/transcript.txt"
   },
   "VIDEO-9ea5e3": {
@@ -5979,8 +5979,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-a7bfd0/transcript.txt"
   },
   "VIDEO-aacc70": {
@@ -6801,8 +6801,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-c5837a/transcript.txt"
   },
   "VIDEO-ca0b1a": {
@@ -7104,8 +7104,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-d2cd90/transcript.txt"
   },
   "VIDEO-d71802": {
@@ -7367,8 +7367,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-DD983D/transcript.txt"
   },
   "VIDEO-de2564": {
@@ -7494,8 +7494,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-e24c31/transcript.txt"
   },
   "VIDEO-e25d3b": {
@@ -7671,8 +7671,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-e90874/transcript.txt"
   },
   "VIDEO-e91589": {
@@ -8126,8 +8126,8 @@
     ],
     "analysis_method": "local_transcript_heuristic",
     "accuracy_status": "verified_expert_summary",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
+    "visual_audio_checked": true,
+    "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-f74bb1/transcript.txt"
   },
   "VIDEO-f77c31": {

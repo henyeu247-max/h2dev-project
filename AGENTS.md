@@ -8,16 +8,10 @@
 |---|---|
 | Data core (video/ngách/kênh/tài liệu) | `d:\YTB\H2DEV-Project\data-tabs\*.json` |
 | Catalog | `d:\YTB\H2DEV-Project\data\catalog.json` · `catalog_full.json` |
-| Gemini audit/status | `data\video_analysis_schema.json` · `video_analysis_batches.json` · `video_analysis_manifest.json` · `video_analysis_public.json` |
 | Video acceptance | `data\video_acceptance.json` — trạng thái pilot/QA, không gọi nghiệm thu khi còn blocker |
 | Scripts (validate/audit) | `d:\YTB\H2DEV-Project\scripts\` |
 | Docs + Rule làm việc | `d:\YTB\H2DEV-Project\knowledge-hub\docs\` |
 | **Kiến thức Zoom (quy trình xây kênh A–Z)** | `d:\YTB\H2DEV-Project\docs\NOI-BO\zoom\` |
-| Backup | `d:\YTB\H2DEV-Project\_backup\` |
-| Changelog | `d:\YTB\H2DEV-Project\CHANGELOG.md` |
-
-| Scripts (validate/audit) | `d:\YTB\H2DEV-Project\scripts\` |
-| Docs + Rule làm việc | `d:\YTB\H2DEV-Project\knowledge-hub\docs\` |
 | Backup | `d:\YTB\H2DEV-Project\_backup\` |
 | Changelog | `d:\YTB\H2DEV-Project\CHANGELOG.md` |
 
@@ -61,7 +55,6 @@
 ## Rules cứng
 
 - **Check N/N**: 100 check 100, 1000 check 1000 — cấm tượng trưng.
-- **Gemini video audit**: `data/video_analysis_manifest.json` phải có đủ 136 SKU; tình trạng file, độ phủ phân tích và độ đúng nội dung là ba trường độc lập. Chỉ `approved_for_ui` mới được đưa quan sát vào giao diện; raw nằm trong `_audit` và bị chặn web.
 - **Đọc FULL**, không dở dang.
 - **Phản biện + evidence**: nhận định chỉ CÓ/KHÔNG/KHÔNG-VERIFY.
 - **Verify đa nguồn MCP**: vidIQ (lõi kênh/keyword) → exa/tavily/jina/firecrawl → trends. Tool lỗi → chuyển tool.

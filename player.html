@@ -109,21 +109,6 @@
             <div id="insightBadges" class="flex flex-wrap gap-1.5"></div>
           </div>
           <p id="legacyInsightNotice" class="hidden mb-3 text-[11px] text-gray-400 bg-ink-900/50 border border-ink-700 rounded-lg px-3 py-2">Các ghi chú bên dưới là heuristic từ transcript cũ: chưa kiểm hình/âm thanh, claim và địa lý khán giả. Chỉ dùng làm manh mối để kiểm lại.</p>
-
-          <div id="geminiAnalysisStatus" class="mb-4 rounded-xl bg-ink-900/70 p-3 border border-violet-900/40">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <span class="text-xs font-bold text-violet-300">🔎 Kiểm chứng video bằng Gemini</span>
-              <span id="geminiAnalysisStatusBadge" class="badge badge-muted">Chưa phân tích</span>
-            </div>
-            <p id="geminiAnalysisCoverage" class="mt-1.5 text-[11px] text-gray-400">Chưa có hồ sơ phân tích video trực tiếp.</p>
-            <p id="geminiAnalysisNotice" class="mt-1 text-[11px] text-amber-300/90"></p>
-          </div>
-          <div id="geminiTimelineWrap" class="bg-ink-900/70 rounded-xl p-3.5 border border-violet-900/30 hidden">
-            <h4 class="text-xs font-bold text-violet-300 uppercase tracking-wider mb-2.5 flex items-center gap-1.5 font-heading">
-              <span>🎯</span><span>Mốc quan sát Gemini</span>
-            </h4>
-            <div id="geminiTimeline" class="flex flex-wrap gap-1.5"></div>
-          </div>
           
           <div class="space-y-3.5">
             <!-- Box 1: Mốc thời gian trọng tâm (Action-first: tua video nhanh) -->
@@ -500,50 +485,6 @@ window.addEventListener('keydown', (e)=>{
     }
 
     /* ---------- Phân Tích Thực Chiến & Ghi Chú AI (Insights) ---------- */
-    /* ---------- Grounded Gemini video-analysis status ---------- */
-    try {
-      const [manifestRes, publicRes] = await Promise.all([
-        fetch('data/video_analysis_manifest.json', {cache:'no-store'}),
-        fetch('data/video_analysis_public.json', {cache:'no-store'})
-      ]);
-      const manifest = manifestRes.ok ? await manifestRes.json() : null;
-      const publicData = publicRes.ok ? await publicRes.json() : null;
-      document.getElementById('pinsights').classList.remove('hidden');
-      const row = manifest && Array.isArray(manifest.videos) ? manifest.videos.find(x => x.sku === sku) : null;
-      const approved = publicData && publicData.videos && publicData.videos[sku];
-      const status = approved?.status || row?.analysis_status || 'not_started';
-      const statusLabels = {
-        not_started: ['Chưa phân tích', 'badge-muted'],
-        validated_pending_review: ['Đã nhận · chờ duyệt', 'badge-amber'],
-        approved: ['Đã duyệt quan sát', 'badge-green'],
-        blocked: ['Bị chặn', 'badge-red']
-      };
-      const label = statusLabels[status] || ['Chưa xác định', 'badge-muted'];
-      const statusEl = document.getElementById('geminiAnalysisStatusBadge');
-      statusEl.className = 'badge ' + label[1]; statusEl.textContent = label[0];
-      const coverage = Number(approved?.coverage_percent ?? row?.coverage_percent ?? 0);
-      const duration = Number(row?.duration_sec || v.duration_sec || 0);
-      const coverageEl = document.getElementById('geminiAnalysisCoverage');
-      coverageEl.textContent = `Độ phủ timeline: ${coverage.toFixed(2)}%` + (duration ? ` · thời lượng nguồn ${fmtTime(duration)}` : '') + ' · Quan sát Gemini không thay thế kiểm nguồn.';
-      const noticeEl = document.getElementById('geminiAnalysisNotice');
-      if (status === 'not_started') noticeEl.textContent = 'Chưa đưa video vào AI Studio. Đây là trạng thái trung thực, không phải PASS.';
-      else if (status === 'validated_pending_review') noticeEl.textContent = 'JSON hợp lệ nhưng chưa được người duyệt xác nhận để hiển thị.';
-      else if (status === 'approved') noticeEl.textContent = approved.claims_pending ? `Còn ${approved.claims_pending} claim cần kiểm chứng nguồn.` : 'Đã duyệt hiển thị; các claim vẫn phải có nguồn độc lập.';
-      else if (status === 'blocked') noticeEl.textContent = 'Cần xử lý lỗi file hoặc quyền truy cập trước khi phân tích.';
-      if (status === 'approved' && Array.isArray(approved.observations) && approved.observations.length) {
-        const wrap = document.getElementById('geminiTimelineWrap');
-        const tl = document.getElementById('geminiTimeline');
-        wrap.classList.remove('hidden');
-        tl.innerHTML = approved.observations.slice(0, 40).map(o => {
-          const start = Math.max(0, Number(o.start_sec) || 0);
-          const summary = o.visual || o.spoken || o.on_screen_text || 'Quan sát';
-          return `<button type="button" class="inline-flex items-center gap-1.5 bg-ink-800 hover:bg-ink-700 border border-violet-800/60 px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer" onclick="document.getElementById('pv').currentTime=${start};document.getElementById('pv').play();"><span class="font-mono text-violet-300 font-bold bg-ink-900 px-1.5 py-0.5 rounded text-[10px]">${esc(fmtTime(start))}</span><span class="text-gray-300 text-[11px] truncate max-w-[200px]">${esc(summary)}</span></button>`;
-        }).join('');
-      }
-    } catch(e) {
-      const noticeEl = document.getElementById('geminiAnalysisNotice');
-      if (noticeEl) noticeEl.textContent = 'Chưa tải được hồ sơ Gemini; không suy ra trạng thái đạt.';
-    }
     try {
       const insRes = await fetch('data/video_insights.json', {cache:'no-store'});
       if (insRes.ok) {

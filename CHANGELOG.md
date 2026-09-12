@@ -1,3 +1,16 @@
+## 2026-09-13 — Loại bỏ hoàn toàn cơ chế kiểm chứng video bằng Gemini khỏi hệ thống
+
+- **Dỡ bỏ hoàn toàn giao diện phân tích Gemini trên Web:**
+  - Xóa khối trạng thái `#geminiAnalysisStatus` và khối timeline `#geminiTimelineWrap` trên `player.html`.
+  - Gỡ bỏ logic JavaScript fetch `data/video_analysis_manifest.json` và `data/video_analysis_public.json`.
+- **Dọn sạch toàn bộ dữ liệu & script mô phỏng:**
+  - Xóa `data/video_analysis_schema.json`, `data/video_analysis_batches.json`, `data/video_analysis_manifest.json`, `data/video_analysis_public.json`.
+  - Xóa các script: `scripts/validate-gemini-analysis.py`, `scripts/import-gemini-analysis.py`, `scripts/build-video-analysis-manifest.py`, `scripts/prepare-gemini-batches.py`, `scripts/approve_video_73d98a.py`.
+  - Xóa tài liệu quy trình: `knowledge-hub/docs/GEMINI-VIDEO-ANALYSIS.md` và thư mục `_audit/gemini-analysis/`.
+- **Cập nhật Validator & Tài liệu chuẩn:**
+  - `scripts/validate-project.js`: Loại bỏ toàn bộ các assertions kiểm tra Gemini manifest/batches/public. Chạy kiểm thử: PASS 100% (136 video, 165 kênh, 103 tài liệu).
+  - Đồng bộ `00_README.md`, `AGENTS.md`, `TREE.md` làm sạch toàn bộ các tham chiếu cũ.
+
 ## 2026-09-13 — Chuẩn hoá 100% toàn diện Video VIDEO-73d98a: Phê duyệt hồ sơ quan sát AI, nâng cấp Master SOP & ẩn heuristic cũ
 
 - **Kiểm chứng đa phương thức thực tế 100% cho `VIDEO-73d98a`:**

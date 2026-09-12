@@ -861,12 +861,12 @@
   },
   {
     "sku": "VIDEO-46c57e",
-    "name": "Quy trình kháng lỗi Sử dụng lại nội dung & Trùng lặp (Tài liệu chuẩn)",
-    "link": "",
-    "file": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
-    "fileLocal": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
-    "kind": "guide",
-    "contentNiche": "Kháng bản quyền & Lỗi GA"
+    "name": "Skill prompt — ngách bible explainer",
+    "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
+    "file": "assets/docs/VIDEO-46c57e/SKILL-bible-explainer.md",
+    "fileLocal": "assets/docs/VIDEO-46c57e/SKILL-bible-explainer.md",
+    "kind": "tool",
+    "contentNiche": "Nền tảng / Tool"
   },
   {
     "sku": "VIDEO-d84a78",

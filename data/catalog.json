@@ -4041,7 +4041,14 @@
     "tags": [
       "Quan trọng"
     ],
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "docs": [
+      {
+        "name": "SOP Tư Duy Tìm & Lọc Key YouTube View Ngoại (Google Trends, TubeAtlas & Outliers)",
+        "link": "assets/docs/VIDEO-61e354/TU-DUY-TIM-LOC-KEY-YOUTUBE-VIEW-NGOAI.md",
+        "file": "assets/docs/VIDEO-61e354/TU-DUY-TIM-LOC-KEY-YOUTUBE-VIEW-NGOAI.md"
+      }
+    ]
   },
   {
     "sku": "VIDEO-bdfa54",
@@ -4069,7 +4076,14 @@
     "tags": [
       "Nổi bật"
     ],
-    "market": "🇻🇳 Việt, 🇨🇳 Trung"
+    "market": "🇻🇳 Việt, 🇨🇳 Trung",
+    "docs": [
+      {
+        "name": "SOP Sản Xuất Bán Content Ngách Sinh Tồn View Việt (Nguồn Reup Douyin & Quy Trình Fair Use)",
+        "link": "assets/docs/VIDEO-bdfa54/SOP-BAN-CONTENT-NGACH-SINH-TON-VIEW-VIET.md",
+        "file": "assets/docs/VIDEO-bdfa54/SOP-BAN-CONTENT-NGACH-SINH-TON-VIEW-VIET.md"
+      }
+    ]
   },
   {
     "sku": "VIDEO-8e0275",
@@ -4096,24 +4110,29 @@
     "total_view": 6138,
     "docs": [
       {
-        "name": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing",
-        "link": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing",
-        "file": "assets/docs/VIDEO-8e0275/drive_1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj"
+        "name": "SOP Thiết Kế Thumbnail & Dựng Video So Sánh Nonagon (Photopea & CapCut)",
+        "link": "assets/docs/VIDEO-8e0275/HUONG-DAN-EDIT-CAPCUT-VA-DESIGN-THUMBNAIL-NONAGON.md",
+        "file": "assets/docs/VIDEO-8e0275/HUONG-DAN-EDIT-CAPCUT-VA-DESIGN-THUMBNAIL-NONAGON.md"
       },
       {
-        "name": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing",
-        "link": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing",
-        "file": "assets/docs/VIDEO-8e0275/drive_1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc"
-      },
-      {
-        "name": "https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing",
+        "name": "File Thiết Kế Thumbnail Nonagon Gốc (Photoshop .PSD 1.36MB)",
         "link": "https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing",
         "file": "assets/docs/VIDEO-8e0275/drive_1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf"
       },
       {
-        "name": "https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing",
+        "name": "Ảnh Thumbnail Mẫu Đồ Họa Nonagon Hoàn Chỉnh (.JPG)",
         "link": "https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing",
         "file": "assets/docs/VIDEO-8e0275/drive_1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0"
+      },
+      {
+        "name": "Asset Đồ Họa Viền Khung Đa Giác 9 Cạnh Nonagon (.PNG Trong Suốt)",
+        "link": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing",
+        "file": "assets/docs/VIDEO-8e0275/drive_1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc"
+      },
+      {
+        "name": "Link Google Drive Kho Tài Nguyên Thiết Kế Nonagon Gốc",
+        "link": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing",
+        "file": "assets/docs/VIDEO-8e0275/drive_1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj"
       }
     ],
     "market": "🌐 Ngoại"
@@ -4169,7 +4188,14 @@
     "market_code": "GLOBAL",
     "duration": "21:51",
     "total_view": 8799,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại, 🇺🇸 Mỹ",
+    "docs": [
+      {
+        "name": "SOP Quy Trình Dựng Video Triết Lý Khắc Kỷ Chi Tiết Từ A-Z (CapCut Desktop)",
+        "link": "assets/docs/VIDEO-b96929/QUY-TRINH-EDIT-VIDEO-TRIET-LY-KHAC-KY.md",
+        "file": "assets/docs/VIDEO-b96929/QUY-TRINH-EDIT-VIDEO-TRIET-LY-KHAC-KY.md"
+      }
+    ]
   },
   {
     "sku": "VIDEO-44cf22",
@@ -4194,7 +4220,14 @@
     "market_code": "VN",
     "duration": "11:54",
     "total_view": 14034,
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt, 🌐 Ngoại",
+    "docs": [
+      {
+        "name": "Cẩm Nang Chiến Lược: Phân Tích Ngách RPM Cao & Tối Ưu Doanh Thu Video Dài (> 1 Tiếng)",
+        "link": "assets/docs/VIDEO-44cf22/PHAN-TICH-NGACH-RPM-CAO-VA-VIDEO-DAI.md",
+        "file": "assets/docs/VIDEO-44cf22/PHAN-TICH-NGACH-RPM-CAO-VA-VIDEO-DAI.md"
+      }
+    ]
   },
   {
     "sku": "VIDEO-5c438a",
@@ -4223,6 +4256,11 @@
       "Quan trọng"
     ],
     "docs": [
+      {
+        "name": "Cẩm Nang Chiến Lược: Chọn Mail, Chọn Kênh & Nuôi Kênh Chuẩn Độ Trust Tránh 0 View",
+        "link": "assets/docs/VIDEO-5c438a/CHIEN-LUOC-CHON-MAIL-VA-CHON-KENH-AN-TOAN.md",
+        "file": "assets/docs/VIDEO-5c438a/CHIEN-LUOC-CHON-MAIL-VA-CHON-KENH-AN-TOAN.md"
+      },
       {
         "name": "NGUỒN VIDEO REUP DOUYIN + BILIBILI",
         "link": "https://docs.google.com/spreadsheets/d/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU/edit?usp=sharing",

@@ -55,6 +55,10 @@ HALL_PATTERNS = [
     "subscribe cho kênh", "Ghiền Mì Gõ", "La La School",
     "Cảm ơn các bạn đã theo dõi", "Hãy subscribe", "quảng cáo sau",
     "đăng ký kênh để ủng hộ", "nhớ đăng ký kênh", "like và chia sẻ",
+    "nhận thêm bản ghi", "nhận thêm nhiều thông tin", "nhận thêm thông tin",
+    "bản ghi của mình trong phần bình luận", "các mục tiêu của youtube",
+    "nhớ like, share và đăng ký kênh", "các bạn có thể nhận thêm",
+    "bản ghi video hướng dẫn xây kênh", "thuật ngữ thường gặp",
 ]
 VALID_MARKETS = ["🇻🇳", "🇺🇸", "🇨🇦", "🇯🇵", "🇰🇷", "🇨🇳", "🌐", "🇬🇧", "🇦🇺", "🇩🇪", "🇲🇽", "🇮🇳", "🇫🇷", "🇪🇸", "🇮🇹", "🇧🇷", "🇹🇭", "🇮🇩", "🇵🇭", "🇸🇬"]
 
@@ -64,6 +68,25 @@ def short_ratio(text):
     if len(toks) < 6:
         return 0.0
     return sum(1 for t in toks if len(t) <= 2) / len(toks)
+
+
+VOWELS = set("aàáảãạăằắẳẵặâầấẩẫậeèéẻẽẹêềếểễệiìíỉĩị"
+             "oòóỏõọôồốổỗộơờớởỡợuùúủũụưừứửữựyỳýỷỹỵ")
+
+
+def _has_vowel(tok):
+    return any(ch in VOWELS for ch in tok.lower())
+
+
+def is_compressed(text):
+    """Nén chữ = nhiều từ ngắn VÀ nhiều từ MẤT NGUYÊN ÂM (dấu hiệu rớt chữ).
+    Câu thật ngắn (vd 'Và anh em để ý nè') vẫn đủ nguyên âm -> không bị bắt nhầm."""
+    toks = [t for t in re.split(r"\s+", text.strip()) if t]
+    if len(toks) < 6:
+        return False
+    short = sum(1 for t in toks if len(t) <= 2) / len(toks)
+    novowel = sum(1 for t in toks if not _has_vowel(t)) / len(toks)
+    return short >= 0.75 and novowel >= 0.40
 
 
 def load(p):
@@ -143,7 +166,7 @@ def main():
                     t = s.get("text", "")
                     if any(h.lower() in t.lower() for h in HALL_PATTERNS):
                         hall += 1
-                    if short_ratio(t) >= 0.75:
+                    if is_compressed(t):
                         comp += 1
                     if re.fullmatch(r"(?:à\s*)+", t.strip()):
                         junk += 1
@@ -165,8 +188,12 @@ def main():
                   "hallucination": hall, "compressed": comp, "junk": junk,
                   "out_of_order": ooo, "bad_timestamp": bad_ts,
                   "last_end_sec": round(last_end, 1)})
-        if not (n_json == n_srt == n_txt) and n_json > 0:
-            issues.append(f"A2: số segment lệch (json={n_json} srt={n_srt} txt={n_txt})")
+        if n_json:
+            if n_srt != n_json:
+                issues.append(f"A2: srt lệch json (json={n_json} srt={n_srt})")
+            # txt: chuẩn là 1 dòng/segment; cho phép txt dạng tài liệu timeline (giàu hơn)
+            if n_txt and n_txt == 1 and n_json > 1:
+                issues.append(f"A2: txt gộp 1 dòng (json={n_json})")
         if hall:
             issues.append(f"A3: {hall} segment ảo giác")
         if comp:
@@ -232,9 +259,13 @@ def main():
             issues.append("C1: thiếu trong modules.json")
 
         def norm_market(m):
-            if isinstance(m, list):
-                return ",".join(sorted(str(x) for x in m))
-            return str(m)
+            """Chuẩn hóa để so sánh: tách theo dấu phẩy, bỏ khoảng trắng, sắp xếp.
+            Tránh false-positive do khác kiểu (str 'A, B' vs list ['A','B'])."""
+            if m is None:
+                return ""
+            parts = m if isinstance(m, list) else str(m).split(",")
+            parts = sorted(p.strip() for p in parts if str(p).strip())
+            return "|".join(parts)
 
         m_cat = norm_market(c.get("market"))
         cc["market_catalog"] = m_cat
@@ -324,7 +355,7 @@ def main():
 
     summary["A_transcript"] = {
         "missing_files": cnt(lambda r: not (r["A"]["has_json"] and r["A"]["has_srt"] and r["A"]["has_txt"])),
-        "count_mismatch": cnt(lambda r: r["A"]["n_json"] > 0 and not (r["A"]["n_json"] == r["A"]["n_srt"] == r["A"]["n_txt"])),
+        "count_mismatch": cnt(lambda r: any(i.startswith("A2") for i in r["issues"])),
         "hallucination": cnt(lambda r: r["A"]["hallucination"] > 0),
         "compressed": cnt(lambda r: r["A"]["compressed"] > 0),
         "junk": cnt(lambda r: r["A"]["junk"] > 0),

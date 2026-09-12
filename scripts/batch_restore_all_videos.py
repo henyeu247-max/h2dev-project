@@ -146,9 +146,36 @@ def is_hallucination(t):
 
 
 # ------------------------------------------------------------------ output
+def fmt_time(seconds):
+    """Chuyển giây -> HH:MM:SS,mmm (chuẩn SRT)."""
+    seconds = max(0.0, float(seconds))
+    h = int(seconds // 3600)
+    m = int((seconds % 3600) // 60)
+    sec = int(seconds % 60)
+    ms = int(round((seconds - int(seconds)) * 1000))
+    if ms >= 1000:
+        ms = 999
+    return f"{h:02d}:{m:02d}:{sec:02d},{ms:03d}"
+
+
+def ensure_times(seg):
+    """Đảm bảo segment luôn có đủ start/end (số) và start_time/end_time (chuỗi)."""
+    if "start" not in seg or seg.get("start") is None:
+        seg["start"] = 0.0
+    if "end" not in seg or seg.get("end") is None:
+        seg["end"] = float(seg["start"]) + 1.0
+    if not seg.get("start_time"):
+        seg["start_time"] = fmt_time(seg["start"])
+    if not seg.get("end_time"):
+        seg["end_time"] = fmt_time(seg["end"])
+    return seg
+
+
 def write_outputs(sku, segments):
     vp = ROOT / "video" / sku
     jp = vp / "transcript.json"
+    for s in segments:
+        ensure_times(s)
     with open(jp, "r", encoding="utf-8") as f:
         d = json.load(f)
     d["segments"] = segments

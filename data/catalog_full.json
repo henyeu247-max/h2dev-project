@@ -4367,7 +4367,10 @@
     "market_code": "GLOBAL",
     "duration": "11:45",
     "total_view": 11104,
-    "market": "🇺🇸 Mỹ, 🌐 Ngoại"
+    "market": "🇺🇸 Mỹ, 🌐 Ngoại",
+    "tags": [
+      "Quan trọng"
+    ]
   },
   {
     "sku": "VIDEO-891f32",
@@ -4516,7 +4519,10 @@
     "market_code": "GLOBAL",
     "duration": "88:14",
     "total_view": 6138,
-    "market": "🌐 Ngoại"
+    "market": "🌐 Ngoại",
+    "tags": [
+      "Nổi bật"
+    ]
   },
   {
     "sku": "VIDEO-b559c8",
@@ -4572,7 +4578,10 @@
     "market_code": "GLOBAL",
     "duration": "21:51",
     "total_view": 8799,
-    "market": "🌐 Ngoại, 🇺🇸 Mỹ"
+    "market": "🌐 Ngoại, 🇺🇸 Mỹ",
+    "tags": [
+      "Nổi bật"
+    ]
   },
   {
     "sku": "VIDEO-44cf22",
@@ -4603,7 +4612,10 @@
     "market_code": "VN",
     "duration": "11:54",
     "total_view": 14034,
-    "market": "🇻🇳 Việt, 🌐 Ngoại"
+    "market": "🇻🇳 Việt, 🌐 Ngoại",
+    "tags": [
+      "Quan trọng"
+    ]
   },
   {
     "sku": "VIDEO-5c438a",

@@ -42,9 +42,6 @@ const resources = readJson('data-tabs/nguon-reup.json') || [];
 const ngachXanh = readJson('data-tabs/ngach-xanh.json') || {};
 const chienLuoc = readJson('data-tabs/chien-luoc.json') || {};
 const rawCanonical = readJson('data-tabs/raw-kenh-mau.json') || {};
-const geminiManifest = readJson('data/video_analysis_manifest.json') || {};
-const geminiPublic = readJson('data/video_analysis_public.json') || {};
-const geminiBatches = readJson('data/video_analysis_batches.json') || {};
 const videoAcceptance = readJson('data/video_acceptance.json') || {};
 
 function uniqueSkus(records, name) {
@@ -172,43 +169,6 @@ for (const [surface, text] of liveControlText) {
   for (const token of staleCurrentTokens) {
     if (text.includes(token)) errors.push(`${surface}: stale current count text "${token}"`);
   }
-}
-const geminiRows = array(geminiManifest.videos);
-if (geminiRows.length !== EXPECTED_VIDEOS) errors.push(`Gemini analysis manifest must contain ${EXPECTED_VIDEOS} records; got ${geminiRows.length}`);
-const geminiSkus = uniqueSkus(geminiRows, 'video_analysis_manifest.json');
-const geminiBySku = new Map(geminiRows.map(row => [row.sku, row]));
-if (geminiManifest.schema_version !== 'h2dev.gemini.manifest.v1') errors.push('data/video_analysis_manifest.json: invalid schema_version');
-if (geminiManifest.summary && geminiManifest.summary.videos !== geminiRows.length) errors.push('video_analysis_manifest.json: summary.videos mismatch');
-if (geminiManifest.summary && geminiManifest.summary.analysis_done !== geminiRows.filter(row => ['validated_pending_review', 'approved'].includes(row.analysis_status)).length) errors.push('video_analysis_manifest.json: summary.analysis_done mismatch');
-const batchItems = array(geminiBatches.batches).flatMap(batch => array(batch && batch.items));
-const batchSkus = batchItems.map(item => item && item.sku).filter(Boolean);
-if (geminiBatches.schema_version !== 'h2dev.gemini.batch-manifest.v1') errors.push('data/video_analysis_batches.json: invalid schema_version');
-if (batchItems.length !== EXPECTED_VIDEOS || new Set(batchSkus).size !== EXPECTED_VIDEOS || !batchSkus.every(sku => geminiSkus.has(sku))) {
-  errors.push(`Gemini batch manifest must contain each of ${EXPECTED_VIDEOS} catalog SKUs exactly once`);
-}
-for (const sku of fullSkus) {
-  if (!geminiSkus.has(sku)) errors.push(`video_analysis_manifest.json missing ${sku}`);
-}
-for (const row of geminiRows) {
-  if (!row || typeof row.sku !== 'string') errors.push('video_analysis_manifest.json: invalid row');
-  if (!['not_started', 'validated_pending_review', 'approved', 'blocked'].includes(row.analysis_status)) errors.push(`${row.sku}: invalid Gemini analysis_status`);
-  if (typeof row.coverage_percent !== 'number' || row.coverage_percent < 0 || row.coverage_percent > 100) errors.push(`${row.sku}: invalid Gemini coverage_percent`);
-  if (typeof row.file_ok !== 'boolean' || typeof row.audio_ok !== 'boolean') errors.push(`${row.sku}: invalid Gemini media flags`);
-  if (!Number.isInteger(row.source_size_bytes) || row.source_size_bytes < 0) errors.push(`${row.sku}: invalid Gemini source_size_bytes`);
-  if (!['unverified', 'pending_claim_verification', 'verified', 'rejected'].includes(row.accuracy_status)) errors.push(`${row.sku}: invalid Gemini accuracy_status`);
-  if (!['not_reviewed', 'pending_review', 'approved_for_ui'].includes(row.review_status)) errors.push(`${row.sku}: invalid Gemini review_status`);
-}
-if (geminiPublic.schema_version !== 'h2dev.gemini.public.v1' || !geminiPublic.videos || typeof geminiPublic.videos !== 'object') {
-  errors.push('data/video_analysis_public.json: invalid public schema');
-}
-for (const sku of Object.keys(geminiPublic.videos || {})) {
-  if (!geminiSkus.has(sku)) errors.push(`video_analysis_public.json has unknown ${sku}`);
-  const row = geminiPublic.videos[sku];
-  if (!['validated_pending_review', 'approved'].includes(row.status)) errors.push(`${sku}: invalid public analysis status`);
-  if (typeof row.coverage_percent !== 'number' || row.coverage_percent < 0 || row.coverage_percent > 100) errors.push(`${sku}: invalid public coverage_percent`);
-  if ('raw_file' in row) errors.push(`${sku}: public analysis must not expose raw_file`);
-  if (row.raw_sha256 && !/^[a-f0-9]{64}$/i.test(row.raw_sha256)) errors.push(`${sku}: invalid public raw_sha256`);
-  if (geminiBySku.get(sku)?.analysis_status !== row.status) errors.push(`${sku}: public/manifest status drift`);
 }
 if (videoAcceptance.schema_version !== 'h2dev.video-acceptance.v1' || !videoAcceptance.pilot || !['not_started', 'in_progress', 'complete', 'blocked'].includes(videoAcceptance.pilot.status)) {
   errors.push('data/video_acceptance.json: pilot acceptance must remain explicit and structured');

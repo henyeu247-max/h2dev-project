@@ -319,14 +319,14 @@
     ]
   },
   "phamViKho": {
-    "video": 131,
-    "taiLieu": 96,
-    "kenhMau": 161,
+    "video": 136,
+    "taiLieu": 103,
+    "kenhMau": 165,
     "kenhDeadTrongFile": 13,
-    "kenhLiveTrongFile": 148,
-    "kenhDaDoSong": 148,
+    "kenhLiveTrongFile": 152,
+    "kenhDaDoSong": 165,
     "kenhLiveChuaDo": 0,
-    "ghiChu": "21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08."
+    "ghiChu": "Lịch sử 21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08. Snapshot live 12/09/2026: 165 kênh (152 live · 13 dead), ngay_do 165/165."
   },
   "thongTinChinhSach2026": [
     "16/07/2026 Halprin (VP Trust & Safety) trên Creator Insider: chính sách KHÔNG đổi — chỉ ngôn ngữ. 3 nhóm inauthentic: (1) generic/repetitive — 'đã có 1 đống như vậy ngoài kia, làm cái tiếp theo = chung chung, lặp lại → kênh không ở lại YPP'; (2) off-putting/unsatisfying — con vật gặp nạn rồi được cứu + TRẺ EM trong tình huống đau khổ — kênh dedicate nội dung này bị remove khỏi YPP; (3) AI persona nói health/finance/legal — 'không muốn tạo động lực cho điều đó'.",
@@ -1331,7 +1331,7 @@
       "ngach": "Nhân bản / Kênh",
       "xanh": "META",
       "vaiTro": "Quy trình clone / setup — không phải ngách đăng.",
-      "evidence": "33/130 video.",
+      "evidence": "33/136 video.",
       "skus": [
         "VIDEO-e24c31",
         "VIDEO-a7bfd0",
@@ -1372,7 +1372,7 @@
       "ngach": "Share key / Ngách nhỏ",
       "xanh": "META",
       "vaiTro": "Loại video share key. Từng key đã tách ra các mục phía trên.",
-      "evidence": "35/130 video.",
+      "evidence": "35/136 video.",
       "skus": [
         "VIDEO-4b3c09",
         "VIDEO-d2cd90",
@@ -1415,7 +1415,7 @@
       "ngach": "Kiếm tiền / Chính sách",
       "xanh": "META",
       "vaiTro": "Kháng lỗi / AdSense / gãy view.",
-      "evidence": "9/130 video.",
+      "evidence": "9/136 video.",
       "skus": [
         "VIDEO-4425fc",
         "VIDEO-46c57e",
@@ -1432,7 +1432,7 @@
       "ngach": "Edit / Thumb",
       "xanh": "META",
       "vaiTro": "Packaging.",
-      "evidence": "9/130 video.",
+      "evidence": "9/136 video.",
       "skus": [
         "VIDEO-DD983D",
         "VIDEO-484f9e",
@@ -1449,7 +1449,7 @@
       "ngach": "Nền tảng / Tool",
       "xanh": "META",
       "vaiTro": "Claude/ChatGPT train prompt, SRT, voice, VIP. Hạ tầng sản xuất — không phải ngách đăng YouTube. Nằm cuối tab.",
-      "evidence": "10/130 video.",
+      "evidence": "10/136 video.",
       "skus": [
         "VIDEO-e90874",
         "VIDEO-5d54d0",

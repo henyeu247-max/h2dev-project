@@ -1,6 +1,6 @@
 # Cây thư mục chuẩn — H2DEV-Project
 
-Cập nhật: **2026-09-08**
+Cập nhật: **2026-09-12**
 
 H2DEV là **một nguồn sự thật**. Gốc `Y:\YTB` không chứa data làm việc.
 
@@ -50,14 +50,14 @@ Y:\YTB\
     │   ├── chien-luoc.json        # workflow 9 bước · 4 nguyên tắc
     │   ├── kich-ban.json          # 45 — extract cũ, UI không đọc
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)
-    │   └── raw-kenh-mau.json      # 95 record ảnh raw · OCR 95/95 · Vision 31 · verified 2
+    │   └── raw-kenh-mau.json      # 83 record canonical (95 source · 12 duplicate) · OCR source 95/95 · Vision 31 · verified 2
     │
     ├── assets\                    # tailwind.css · viddar.css · learn.css · fonts\ (woff2 self-host)
     │   ├── thumbs\                # 136/136 khớp videos.json + placeholder.svg
     │   └── avatars\ · docs\
     ├── docs\
     │   ├── VIDEO-*\               # 132/132 SKU: README + description.html
-    │   ├── ZOOM-*\                # 4 buổi Zoom: README + link tài liệu chi tiết
+    │   ├── ZOOM-*\                # 4 buổi Zoom (ZOOM-01..04) + ZOOM-00 quy trình: README + link tài liệu chi tiết
     │   └── NOI-BO\                # tài sản nội bộ đã chuẩn hóa tên
     │       ├── README.md
     │       ├── bao-cao\
@@ -81,7 +81,7 @@ Y:\YTB\
     ├── _private\                  # chỗ key local — web bị chặn
     ├── _archive\                  # rác đã dời khỏi web serve — KHÔNG xoá (NO_DELETE) · web bị chặn
     │   └── 20260831-rac\_verify\  # 7 file scratch (chứa SKU pending VIDEO-3F8339)
-    ├── Raw Kênh Mẫu Tìm Kiếm\     # 95 ảnh raw + metadata · web bị CHẶN (403) · git mv fail do tên có dấu
+    ├── raw-kenh-goc\             # 83 ảnh raw canonical + metadata · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git
 ```
@@ -103,6 +103,6 @@ MD rời, prompt, excel, `_tmp_*`, `.bak`, pipeline zip, key.
 
 ## Web không serve (`server.js:150` BLOCKED)
 
-`_backup` · `_private` · `_audit` · `inbox` · `node_modules` · `_verify` · `.git` · `_archive` · `Raw Kênh Mẫu Tìm Kiếm` · `DESIGN-IS-2026-08-22` · file `.env*` · `mcp-keys*`
+`_backup` · `_private` · `_audit` · `inbox` · `node_modules` · `_verify` · `.git` · `_archive` · `Raw Kênh Mẫu Tìm Kiếm` (historical only) · `DESIGN-IS-2026-08-22` · file `.env*` · `mcp-keys*`
 
-> 31/08: chặn thêm `Raw Kênh Mẫu Tìm Kiếm` (96 ảnh 12 MB, từng public HTTP 200) + `DESIGN-IS-2026-08-22` (bản audit nội bộ). Đo lại: 3 vùng → **403**, `data-tabs/` + `assets/` → **200**.
+> 31/08: chặn thêm `Raw Kênh Mẫu Tìm Kiếm` (historical only; 96 ảnh 12 MB, từng public HTTP 200) + `DESIGN-IS-2026-08-22` (bản audit nội bộ). Đo lại: 3 vùng → **403**, `data-tabs/` + `assets/` → **200**.

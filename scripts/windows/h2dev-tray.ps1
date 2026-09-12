@@ -12,7 +12,9 @@ param(
 
 $ErrorActionPreference = "Continue"
 
-$script:root    = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
+# This file lives in <project>\scripts\windows; walk back three levels to the
+# project root, where server.js and the runtime logs actually live.
+$script:root    = Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path))
 $script:nodeExe = "node"
 $script:port    = 8899
 $script:log     = Join-Path $script:root "server-lan.log"

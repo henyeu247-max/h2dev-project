@@ -13,9 +13,9 @@
 - **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-them-2-ngach-moi-nhat-cuc-trend-thi-truong-han-va-nhat](https://h2dev.vn/learn/study/update-them-2-ngach-moi-nhat-cuc-trend-thi-truong-han-va-nhat)
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì như cái form hôm trước là làm về thị trường Việt nè
+- Thì như cái form prompt hôm trước là làm về thị trường Việt nè
 - Thị trường Việt này thì hôm trước em kế hướng nhau mọi người nè
-- Là cái form này em cũng share luôn rồi á
+- Là cái form prompt này em cũng share luôn rồi á
 - Là cái này là dịch từ bản là từ US sang Việt Nam nha
 
 ## 3. Kênh Mẫu & Đối Thủ Phân Tích

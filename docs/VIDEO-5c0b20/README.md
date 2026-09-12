@@ -26,7 +26,7 @@
 
 ## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
 - **Kỹ thuật chính:** Về cách edit thì cũng như em đã hướng dẫn mọi người luôn
-- **Bổ sung:** Đấy, nên là em phải đi theo về cái cách edit cũng như là chứng theo cái form để mọi người làm nha
+- **Bổ sung:** Đấy, nên là em phải đi theo về cái cách edit cũng như là chứng theo cái form prompt để mọi người làm nha
 - **Bổ sung:** Bấm vào xem video thì có bật quảng cáo nè Mọi người biết là hoàn toàn bật kiếm tiền Về cách edit thì mọi người thấy chưa
 
 ## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)

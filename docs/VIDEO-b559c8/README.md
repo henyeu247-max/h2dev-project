@@ -14,7 +14,7 @@
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
 - Tiếp tới là cái video này sẽ hướng dẫn cho mọi người cách làm ra cái thông bờ của cái cây người huy đấy nha
-- Cái from này thì em cũng đã có sẽ ở trên kênh youtube của em rồi
+- cái prompt này thì em cũng đã có sẽ ở trên kênh youtube của em rồi
 - Có gì em sẽ để lại ở trong cái file trong cái thư mục này cho mọi người luôn nha
 - Đấy bây giờ thì mọi người cứ làm theo hướng dẫn là được nha
 

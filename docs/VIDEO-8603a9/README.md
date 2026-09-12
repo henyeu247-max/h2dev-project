@@ -34,7 +34,7 @@
   - `01:40` — Đấy, cái dạng này
   - `03:09` — Cái kênh, cái kênh này á
   - `04:25` — cho mọi người xem
-  - `05:50` — Đấy forum cách trên các kiểu thì em cũng đã hướng dẫn rồi
+  - `05:50` — Đấy prompt cách trên các kiểu thì em cũng đã hướng dẫn rồi
 
 ## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
 > List Kênh Key 7/9/2025

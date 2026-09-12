@@ -14,7 +14,7 @@
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
 - Thì cái video mới này em sẽ tiếp tục share kia cho mọi người nha
-- Đấy, thì trước khi share kia thì các bộ số anh em hỏi về cũng như là không biết cái chỗ mà lấy forum cũng như là tài liệu chỗ nào ấy
+- Đấy, thì trước khi share kia thì các bộ số anh em hỏi về cũng như là không biết cái chỗ mà lấy prompt cũng như là tài liệu chỗ nào ấy
 - Thì em hướng dẫn, sẵn chỗ này em hướng dẫn luôn nha mọi người
 - Thì mọi người để ý cái chỗ dưới chỗ danh mục nó có cái phần mô tả về cái phần bình luận ấy
 

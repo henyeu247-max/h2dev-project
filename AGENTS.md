@@ -49,6 +49,15 @@
 
 > ⚠️ `xanh` là field **đa kiểu** (boolean + string). Đếm `xanh:true` phải dùng `is True`, KHÔNG dùng truthy — chuỗi `"CHƯA ĐỦ BẰNG CHỨNG"` cũng truthy → đếm sai thành 34.
 
+## Chuẩn phụ đề (transcript) — chuẩn hoá 12/09/2026
+
+- **Nguồn chân lý:** `video/<SKU>/transcript.json` — mỗi segment gồm `id, start, end, start_time, end_time, text`.
+- **Định dạng xuất:** `transcript.srt` (khớp 1-1 JSON) · `transcript.txt` = **1 dòng/segment**.
+- **Kiểm định N/N:** `python scripts/audit_all_136_videos.py` → mục tiêu **136/136 sạch**; bắt ảo giác Whisper, nén chữ (rớt nguyên âm), rác, lệch thứ tự, độ phủ < 90%, lệch định dạng/file, lệch market/docs, thiếu insights/tag.
+- **Chống ảo giác khi bóc mới:** `scripts/transcribe_sku.py` đã thêm `prompt` chuyên ngành + `temperature=0` + bộ lọc ảo giác tự động.
+- ⚠️ **Bài học:** KHÔNG biến đổi audio (vd `atempo`) mà không đối chiếu nội dung — dễ sinh ảo giác mới. Segment không bóc tách được → **chú thích trung thực** (`[Khoảng lặng thao tác — …]` / `[Đoạn nói nhanh — …]`), KHÔNG bịa nội dung.
+- ⚠️ KHÔNG đưa từ khoá "đăng ký kênh / like / share" vào `prompt` — model sẽ "đọc lại" prompt thành phụ đề ảo giác.
+
 ## Rules cứng
 
 - **Check N/N**: 100 check 100, 1000 check 1000 — cấm tượng trưng.

@@ -28,7 +28,7 @@
   "auditTong2026": {
     "ngayChot": "2026-08-21",
     "phamVi": "34/34 record. Nguồn đo: vidIQ keyword_research đúng market, vidIQ channel_stats 30 ngày cho đủ 70 handle evidence, YouTube direct resolve 70 handle (69 còn resolve, 1 không tồn tại), TrendsMCP chỉ dùng làm phản biện khi chuỗi không nhiễu, YouTube Help chính thức về YPP/reused/inauthentic.",
-    "nguyenTac": "Đây là thứ tự thực thi format cho kênh mới, không phải cam kết doanh thu. Demand, view hoặc một kênh lớn không đủ để ưu tiên. Không cộng đôi handle dùng chéo record; không dùng handle không resolve, sai topic, reset hoặc cadence content-farm làm điểm xanh.",
+    "nguyenTac": "Khung đánh giá ứng viên mở theo dữ liệu kiểm chứng, không phải thứ bậc cố định hay chỉ định sản xuất cứng nhắc. Mọi ngách là ứng viên cần đo lại bằng vidIQ/dữ liệu sống thời gian thực trước khi sản xuất; không bị trói buộc cứng vào bất kỳ ngách hay kịch bản đơn lẻ nào.",
     "nguon": [
       "https://support.google.com/youtube/answer/1311392",
       "https://support.google.com/youtube/answer/2490020",
@@ -50,7 +50,7 @@
         "ngach": "Everyday History EN (lịch sử đồ vật thường ngày)",
         "nhom": "UU_TIEN_SAN_XUAT",
         "lienKetVideo": "Chưa có học liệu trực tiếp; tạo pipeline mới, không gán video meta thành evidence thị trường.",
-        "lyDo": "Wedge competition 31; có nhiều kênh US còn tăng, gồm cả kênh nhỏ. Không bắt chước cadence 264 video/30 ngày của mẫu lớn."
+        "lyDo": "Wedge competition 31; có nhiều kênh US còn tăng, gồm cả kênh nhỏ (The Origin +285%). Là một trong các ứng viên tiềm năng, cần đo lại dữ liệu sống trước khi sản xuất."
       },
       {
         "thuTu": 2,
@@ -1145,7 +1145,7 @@
     },
     {
       "ngach": "Wildlife documentary / animal behavior / conservation",
-      "xanh": "CÓ ĐK",
+      "xanh": "CÓ ĐIỀU KIỆN",
       "thiTruong": [
         "🇺🇸 US"
       ],
@@ -1196,7 +1196,7 @@
       "evidence": "ĐỦ NGƯỠNG XANH (đo 20/08/2026). Keyword 'history of everyday objects' overall 70.3 · volume 71.2 · competition 31 (THẤP). Mẫu faceless US còn đăng + tăng: The Passive Explainer 42.300/+34,3% · Toaster Tales 18.300/+33,6% (avg 166K view) · LILLIPUT HISTORY +33,2% · Everyday Things Explained +29,9% · EvoTrace +29,1% ($2,3K) · History of Simple Things 1.010.000 (+117%/1y). Hook 'Nếu thứ này chưa từng tồn tại thì sao?' = cơ chế retention chuẩn kênh thắng.",
       "hang": 30,
       "nenLam": true,
-      "quyetDinh": "ƯU TIÊN SẢN XUẤT — demand tìm kiếm có thật, competition keyword thấp hơn history tổng và có nhiều mẫu faceless US còn đăng/tăng. Không dùng series hàng loạt chỉ đổi tên đồ vật.",
+      "quyetDinh": "ỨNG VIÊN TIỀM NĂNG (ĐÃ KIỂM CHỨNG SNAPSHOT) — demand tìm kiếm có thật, competition keyword thấp hơn history tổng và có nhiều mẫu faceless US còn đăng/tăng. Cần đo lại dữ liệu sống trước khi bấm máy; không dùng series hàng loạt chỉ đổi tên đồ vật.",
       "formatBrand": "Mỗi video chỉ 1 vật dụng/thói quen → đời sống trước khi có nó → mâu thuẫn hoặc giải pháp lịch sử có nguồn → hệ quả còn thấy hôm nay. Hook: ‘Trước khi có X, con người đã làm gì?’; kết thúc nối lại vật dụng hiện đại.",
       "lamDuoc": "CÓ — chỉ cần 1 vật dụng/thói quen → nguồn gốc → vì sao ra đời → ảnh hưởng. Đề tài vô tận (ăn uống/vệ sinh/quần áo/tiền/nhà/y tế/tình yêu/hôn nhân/giao thông/giấc ngủ).",
       "kiemDuoc": "CÓ — US. Education RPM ~$1-4. Mẫu The Passive Explainer $3,3K/tháng, History of Simple Things 1M subs. Hook câu hỏi giữ retention video dài.",

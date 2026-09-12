@@ -1,7 +1,7 @@
 # 🧠 MCP POOL — Hướng dẫn chuẩn toàn diện
 
-> **Note tri thức** — dùng lại cho các phiên sau. Mọi thứ về MCP Pool VPS: cài đặt, tools, API keys, cách gọi chuẩn.
-> *Cập nhật: 2026-08-23*
+> **Note tri thức** — dùng lại cho các phiên sau. Mọi thứ về MCP Pool Local & VPS: cài đặt, tools, API keys, cách gọi chuẩn.  
+> ⚠️ **CẬP NHẬT CHUẨN 12/09/2026:** MCP Pool Server hiện đã chuyển sang chạy **100% LOCAL độc lập trên Windows tại `D:\Mcp-Pool-Vps`** (Endpoint chuẩn: `http://127.0.0.1:3988/mcp`, Healthcheck: `http://127.0.0.1:3988/health`). Không phụ thuộc vào VPS ngoài. **9Router (:20128) là AI Chat Model Gateway, không phải MCP Tools.**
 
 ---
 

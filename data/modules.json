@@ -3777,7 +3777,9 @@
           "desc": "Kiến thức nền tảng — quy trình xây kênh YouTube A–Z",
           "market": [
             "🇻🇳 Việt"
-          ]
+          ],
+          "is_free": true,
+          "is_pro": false
         },
         {
           "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -3814,7 +3816,9 @@
           "desc": "Kiến thức nền tảng — quy trình xây kênh YouTube A–Z",
           "market": [
             "🇻🇳 Việt"
-          ]
+          ],
+          "is_free": true,
+          "is_pro": false
         },
         {
           "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -3851,7 +3855,9 @@
           "desc": "Kiến thức nền tảng — quy trình xây kênh YouTube A–Z",
           "market": [
             "🇻🇳 Việt"
-          ]
+          ],
+          "is_free": true,
+          "is_pro": false
         },
         {
           "sku": "ZOOM-04-Adsense-khang-loi",
@@ -3888,7 +3894,9 @@
           "desc": "Kiến thức nền tảng — quy trình xây kênh YouTube A–Z",
           "market": [
             "🇻🇳 Việt"
-          ]
+          ],
+          "is_free": true,
+          "is_pro": false
         }
       ]
     }

@@ -2113,7 +2113,7 @@
       "Không để chữ phụ đề quá nhỏ hoặc màu sắc khó đọc trên nền đá cẩm thạch sáng"
     ],
     "tools_mentioned": [
-      "Netflix Extension",
+      "Nexlev Extension (nexlev.io)",
       "ChatGPT",
       "ElevenLabs",
       "CapCut Desktop"
@@ -2130,7 +2130,7 @@
       {
         "time": "03:40",
         "seconds": 220,
-        "label": "Xem số liệu phân tích chuyên sâu qua tiện ích Netflix/Studio: RPM gần , view US"
+        "label": "Xem số liệu phân tích chuyên sâu qua tiện ích Nexlev / YouTube Studio: RPM gần $3, view US"
       },
       {
         "time": "07:15",
@@ -3767,7 +3767,7 @@
     "key_takeaways": [
       "Nguyên tắc cốt tử: Tuyệt đối không lao vào chủ đề lớn (Health, Fitness, Cooking) vì bị kênh lớn tích xám chiếm đóng dẫn đến 0 view; bắt buộc phải tìm 'ngách nhỏ trong ngách nhỏ' (micro-niche).",
       "Quy trình lọc 3 bước: Dùng ChatGPT chia 20 ngách con bảng 2 cột Anh - Việt -> Đo lường trên Google Trends YouTube Search US 30 ngày (điểm phải > 70-80) -> Soi Outlier trên YouTube.",
-      "Công cụ chuyên dụng: TubeAtlas (quét từ khóa và trends tự động hàng loạt) và 1of10 (công cụ tự động phát hiện video vượt trội gấp hàng chục lần sub của đối thủ).",
+      "Công cụ chuyên dụng: TubeAtlas (quét từ khóa và trends tự động hàng loạt) và Nexlev (nexlev.io - công cụ tìm ngách Faceless & video Outlier hàng đầu thế giới với tài khoản bản quyền ~20 triệu VNĐ).",
       "Case study thực chiến: Ngách chuột rút (Cramp) đạt điểm 90-100 Google Trends, kênh chỉ 17 video đạt 145k sub, video đột biến đạt 6,9 triệu view và 1,9 triệu view.",
       "Công thức thắng chắc: Tìm 10 kênh đối thủ x 2 video outlier trong 30 ngày gần nhất = 20 kịch bản thắng chắc đã được thuật toán YouTube kiểm chứng."
     ],
@@ -3795,7 +3795,7 @@
       {
         "time": "12:20",
         "seconds": 740,
-        "label": "Giới thiệu công cụ quét hàng loạt TubeAtlas và công cụ phát hiện Outlier 1of10"
+        "label": "Giới thiệu công cụ quét hàng loạt TubeAtlas và công cụ lọc ngách & Outlier Nexlev (nexlev.io)"
       },
       {
         "time": "16:50",
@@ -3825,7 +3825,7 @@
       "ChatGPT",
       "Google Trends",
       "TubeAtlas",
-      "1of10",
+      "Nexlev (nexlev.io)",
       "YouTube Search Filter"
     ],
     "channels_mentioned": [

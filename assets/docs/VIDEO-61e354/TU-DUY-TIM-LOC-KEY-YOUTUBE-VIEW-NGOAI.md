@@ -39,13 +39,16 @@
 
 ---
 
-## 3. CÁC CÔNG CỤ NÂNG CAO TỐI ƯU HÓA TỐC ĐỘ (TUBEATLAS & 1OF10)
+## 3. CÁC CÔNG CỤ NÂNG CAO TỐI ƯU HÓA TỐC ĐỘ (TUBEATLAS & NEXLEV)
 1. **TubeAtlas:**
    - Hỗ trợ quét hàng loạt từ khóa cùng lúc, tự động xuất biểu đồ Google Trends 30 ngày cho hàng chục keyword chỉ với 1 click.
    - Giúp tiết kiệm 90% thời gian so với việc copy-paste thủ công từng từ khóa vào trình duyệt.
-2. **1of10 (Được mệnh danh là "Netflix của các nhà làm YouTube"):**
-   - Công cụ chuyên dụng tự động phát hiện các video "1 of 10" (Video đạt hiệu suất số 1 trong 10 video gần nhất của đối thủ).
-   - Lọc ra những video có view gấp 10 lần đến 100 lần số sub của kênh.
+2. **Nexlev (nexlev.io) - (Trong video tác giả phát âm thành Netflix):**
+   - Công cụ chuyên dụng số 1 thế giới dành cho dân làm YouTube Faceless / Bán Content để:
+     - **Niche Explorer:** Quét và tìm kiếm các ngách Faceless xanh, ít cạnh tranh nhưng nhu cầu người xem cực lớn.
+     - **Outlier Detector:** Tự động phát hiện các video Outlier (video có lượt xem cao đột biến gấp 10–100 lần số sub của kênh đối thủ).
+     - **Nexlev Chrome Extension:** Hiển thị trực tiếp các chỉ số ngầm (RPM ước tính, Outlier Score, Tốc độ View/Hour) ngay trên trang YouTube.
+     - **Chi phí đầu tư:** Tài khoản bản quyền Pro / Lifetime có giá khoảng gần 20 triệu VNĐ (~$800) như tác giả chia sẻ trong bài giảng (thường các team sẽ mua chung hoặc liên hệ admin để share tài khoản dùng chung tiết kiệm).
 
 ---
 

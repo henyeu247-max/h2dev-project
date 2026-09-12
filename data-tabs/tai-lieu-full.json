@@ -406,7 +406,7 @@
     "sku": "VIDEO-e91589",
     "name": "file Skill ngách động vật",
     "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing",
-    "file": "pipelines/wildlife/wildlife-survival-H2dev/script-wildlife-survival/SKILL.md",
+    "file": "assets/docs/tai-lieu/skill-wildlife-survival.md",
     "fileLocal": "pipelines/wildlife/wildlife-survival-H2dev/script-wildlife-survival/SKILL.md",
     "contentNiche": "Share key / Ngách nhỏ",
     "kind": "tool"
@@ -572,7 +572,7 @@
     "sku": "NOI-BO",
     "name": "Pipeline hoạt hình AI (5 bước · kie.ai + Grok Imagine)",
     "link": "",
-    "file": "pipelines/hoat-hinh-ai/README.md",
+    "file": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
     "kind": "tool",
     "contentNiche": "Reup / Hoạt hình",
     "source": "noi-bo"
@@ -581,7 +581,7 @@
     "sku": "NOI-BO",
     "name": "Pipeline video tôn giáo EN (script + ElevenLabs + merge)",
     "link": "",
-    "file": "pipelines/ton-giao/skill-tao-video-Youtube-ton-giao/SKILL.md",
+    "file": "assets/docs/tai-lieu/pipeline-video-ton-giao.md",
     "kind": "tool",
     "contentNiche": "Triết lý / Tâm linh",
     "source": "noi-bo"
@@ -590,7 +590,7 @@
     "sku": "NOI-BO",
     "name": "Skill Wildlife Survival + motion prompt Veo",
     "link": "",
-    "file": "pipelines/wildlife/wildlife-survival-H2dev/script-wildlife-survival/SKILL.md",
+    "file": "assets/docs/tai-lieu/skill-wildlife-survival.md",
     "kind": "tool",
     "contentNiche": "Reup / Hoạt hình",
     "source": "noi-bo"
@@ -599,7 +599,7 @@
     "sku": "NOI-BO",
     "name": "Bible Explainer V2.1 (script + image + thumb + 24 ảnh mẫu)",
     "link": "",
-    "file": "pipelines/bible-explainer/README.md",
+    "file": "assets/docs/tai-lieu/pipeline-bible-explainer.md",
     "kind": "tool",
     "contentNiche": "Triết lý / Tâm linh",
     "source": "noi-bo"
@@ -608,7 +608,7 @@
     "sku": "NOI-BO",
     "name": "Knowledge Hub — archive NotebookLM (nằm trong H2DEV)",
     "link": "",
-    "file": "knowledge-hub/README.md",
+    "file": "assets/docs/tai-lieu/knowledge-hub-notebooklm.md",
     "kind": "other",
     "contentNiche": "Nền tảng / Tool",
     "source": "noi-bo"

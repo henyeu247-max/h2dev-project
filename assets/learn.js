@@ -335,6 +335,19 @@
       history.replaceState(null, '', u);
     });
 
+    // Điều hướng toàn bộ cửa sổ cha khi nhúng iframe (đảm bảo thanh URL browser đổi đúng /lotrinh/:sku)
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href^="/lotrinh/"]');
+      if (a && window.self !== window.top) {
+        e.preventDefault();
+        try {
+          window.top.location.href = a.href;
+        } catch (err) {
+          window.location.href = a.href;
+        }
+      }
+    });
+
     els.panelRoot.addEventListener('click', function (e) {
       var fbtn = e.target.closest('[data-fav]');
       if (fbtn) {

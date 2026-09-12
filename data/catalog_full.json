@@ -4780,7 +4780,14 @@
     "duration": "53:01",
     "total_view": 0,
     "transcript": "video/ZOOM-01-Nen-tang-moi-truong/transcript.json",
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "resolution": "720p",
+    "width": 532,
+    "height": 720,
+    "duration_sec": 3181,
+    "is_free": true,
+    "is_pro": false,
+    "access": "free"
   },
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -4822,7 +4829,14 @@
     "duration": "81:33",
     "total_view": 0,
     "transcript": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.json",
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "resolution": "720p",
+    "width": 906,
+    "height": 720,
+    "duration_sec": 4893,
+    "is_free": true,
+    "is_pro": false,
+    "access": "free"
   },
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -4864,7 +4878,14 @@
     "duration": "74:21",
     "total_view": 0,
     "transcript": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.json",
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "resolution": "720p",
+    "width": 1130,
+    "height": 720,
+    "duration_sec": 4461,
+    "is_free": true,
+    "is_pro": false,
+    "access": "free"
   },
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
@@ -4906,6 +4927,13 @@
     "duration": "37:13",
     "total_view": 0,
     "transcript": "video/ZOOM-04-Adsense-khang-loi/transcript.json",
-    "market": "🇻🇳 Việt"
+    "market": "🇻🇳 Việt",
+    "resolution": "720p",
+    "width": 1130,
+    "height": 720,
+    "duration_sec": 2233,
+    "is_free": true,
+    "is_pro": false,
+    "access": "free"
   }
 ]

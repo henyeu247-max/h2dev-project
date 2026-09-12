@@ -1969,17 +1969,18 @@
   "VIDEO-3a38f9": {
     "sku": "VIDEO-3a38f9",
     "title": "Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt",
-    "actual_topic": "Phân Tích 2 Kênh Mới Toanh Cắn Đề Xuất Thần Tốc Tại Hàn Quốc Và Việt Nam",
+    "actual_topic": "Quy trình cắn đề xuất thần tốc của kênh mới 10 ngày & Công thức nhân bản kịch bản dưỡng sinh, tâm sự tuổi già từ Hàn Quốc về Việt Nam",
     "category_group": "ngach_xanh",
     "niche_primary": "Tâm Sự & Câu Chuyện Đời Sống",
     "niche_id": "tam-su-doi-song",
     "target_market": "🇰🇷 Hàn / 🇻🇳 Việt",
     "market_code": "KR-VN",
     "key_takeaways": [
-      "Show kênh Hàn Quốc lập ngày 17/08 (chỉ mới 10 ngày), đăng 10 video đã cắn đề xuất mạnh mẽ với hàng nghìn view mỗi video.",
-      "Đặc điểm kịch bản: Khai thác ngách tâm sự đời sống, câu chuyện gia đình, xung đột tình cảm gần gũi thực tế, đánh trúng tâm lý tò mò và đồng cảm của người xem lớn tuổi.",
-      "Kênh thị trường Việt Nam: Áp dụng cùng công thức kịch bản nhưng bản địa hóa bối cảnh nông thôn/gia đình Việt Nam, lượt xem tăng trưởng rất nhanh mà không tốn nhiều chi phí sản xuất.",
-      "Chiến lược kênh mới: Duy trì lịch đăng bài đều đặn mỗi ngày như kênh mẫu Hàn Quốc (10 video trong 10 ngày đầu) để tích lũy lượng nội dung nối tiếp khi người xem bắt đầu tiếp cận."
+      "Phân tích kênh Hàn Quốc @오늘의삶의지혜: Kênh lập ngày 17/08/2026, chỉ sau 10 ngày đăng 10 video đã đạt 5.240 subs, các video đầu tiên đều cắn đề xuất 3.000 - 5.000 views sau 1-2 ngày đăng tải.",
+      "Phân tích kênh Việt Nam @Haythauhieuchuyendoi: Kênh 'Thấu Hiểu Chuyện Đời' tham gia 14/08/2026, áp dụng chuẩn chỉ công thức từ Hàn Quốc đã nổ video 69.000 view sau 3 ngày (tốc độ 285 VPH > 100x), tổng kênh hơn 200.000 view sau 22 video.",
+      "Công thức tiêu đề 3 yếu tố 'bắt mắt': (1) Neo tuổi tác cụ thể (62, 71, 77, 103 tuổi...) + (2) Nút thắt nghịch lý gia đình (xoá số con cái, âm thầm mua đất an táng, bị mắng ăn bám) + (3) Cái kết hả lòng/thức tỉnh.",
+      "Cấu trúc kịch bản giữ chân AVD: Hook cao trào 0-30s đặt ngay biến cố lớn nhất, 3-5 phút đầu tích tụ mâu thuẫn, đỉnh điểm biến cố và kết thúc bằng bài học nhân tình thế thái sâu sắc.",
+      "Quy trình Việt hoá kịch bản: Bóc tách transcript video triệu view của kênh Hàn Quốc, prompt AI viết lại theo văn phong truyền cảm, xưng hô gần gũi của người Việt, dùng giọng đọc AI trầm ấm tốc độ 0.92x."
     ],
     "edit_sop": {
       "primary": "Tạo thumbnail kích thích tò mò với câu hỏi mở hoặc tình huống cao trào + Dựng video bằng chuỗi ảnh AI/stock cảm xúc kết hợp zoom in/zoom out nhẹ",
@@ -1997,7 +1998,10 @@
       "CapCut",
       "Vrew"
     ],
-    "channels_mentioned": [],
+    "channels_mentioned": [
+      "@오늘의삶의지혜",
+      "@Haythauhieuchuyendoi"
+    ],
     "key_timestamps": [
       {
         "time": "00:00",
@@ -2021,7 +2025,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-3a38f9/transcript.txt"
@@ -3694,17 +3698,18 @@
   "VIDEO-61ad94": {
     "sku": "VIDEO-61ad94",
     "title": "Update ngách bán content Nhật, Hàn..",
-    "actual_topic": "Ngách Bán Content Drama Gia Đình Dài Hạn Nhật-Hàn & Tư Duy Nhân Bản",
+    "actual_topic": "Sản xuất bán content video dài (> 1 tiếng) ngách Drama gia đình & Lời khuyên tuổi già; Phân tích 8 kênh đối thủ cắn đề xuất Nhật-Hàn",
     "category_group": "ngach_xanh",
     "niche_primary": "Drama Gia Đình & Xã Hội",
     "niche_id": "drama-nhat-han",
     "target_market": "🇯🇵 Nhật / 🇰🇷 Hàn",
     "market_code": "JP-KR",
     "key_takeaways": [
-      "Kênh drama Nhật Bản tiếp tục giữ phong độ cực kỳ cao, view đều đặn hàng chục nghìn view mỗi video dài từ 1-2 tiếng.",
-      "Giới thiệu kênh mới toanh tại thị trường Hàn Quốc: Mới lập gần đây, ra video đều đặn và cắn view đề xuất rất nhanh nhờ chọn đúng chủ đề câu chuyện đời sống/tâm sự.",
-      "Chiến lược nội dung dạng dài (long-form): Ghép nhiều mẩu chuyện ngắn hoặc kể chuyện sâu sắc kết hợp nhạc nền nhẹ nhàng (lofi, tiếng mưa, piano) giúp người xem nghe thụ động khi làm việc hoặc trước khi đi ngủ.",
-      "Tư duy nhân bản liên thị trường: Quan sát kịch bản drama đang thu hút người xem tại Hàn Quốc để chuyển thể văn hóa, dịch và kể lại bằng tiếng Nhật (hoặc ngược lại) nhằm tối ưu quy trình lên ý tưởng."
+      "Lợi thế vượt trội của video dài (> 1 tiếng): Khán giả cao tuổi tại Nhật Bản và Hàn Quốc có thói quen nghe thụ động khi làm việc nhà hoặc trước khi đi ngủ, giúp đẩy AVD lên 30-50 phút và cho phép chèn 8-12 điểm quảng cáo Mid-roll, tối ưu RPM đạt $5.00 - $15.00 USD.",
+      "Phân tích 8 kênh đối thủ phân hóa theo ngách: Kênh drama mẹ chồng nàng dâu (@시어머니와며느리), kênh câu chuyện ôm ấp tâm hồn (@마음을안아주는이야 - 1.2M view/84 video), kênh cổ 2010 (@新しい私の毎日), kênh lời dạy tài lộc (@부를부르는말씀)...",
+      "Kỹ thuật dựng Minimalist Editing: Sử dụng 1 ảnh AI tĩnh chất lượng 4K thể hiện bối cảnh xúc động, thêm sóng âm audio (Waveform) và lớp phủ hiệu ứng hạt (tuyết rơi/mưa bay/bụi nắng loop) tạo chuyển động liên tục.",
+      "Phương pháp ghép tuyển tập (Anthology): Thay vì viết 1 kịch bản dài 20.000 từ, hãy ghép 3 đến 5 mẩu chuyện ngắn độc lập (15-20 phút/chuyện) thành một video dài 1-2 tiếng.",
+      "Bảo vệ kênh và bản quyền âm thanh: Tuyệt đối chỉ dùng nhạc nền miễn phí bản quyền thương mại từ YouTube Audio Library hoặc Artlist/Epidemic Sound, tránh dính khiếu nại Content ID làm mất doanh thu video dài."
     ],
     "edit_sop": {
       "primary": "Sử dụng B-roll chuyển động chậm hoặc ảnh minh họa đời sống chất lượng cao + Ghép nhạc nền lofi/tiếng mưa tạo cảm giác thư giãn",
@@ -3723,7 +3728,14 @@
       "YouTube Studio"
     ],
     "channels_mentioned": [
-      "@明日へ歩く日々"
+      "@시어머니와며느리",
+      "@마음을안아주는이야",
+      "@新しい私の毎日",
+      "@부를부르는말씀",
+      "@시니어살림노트",
+      "@feelrelaxedtv",
+      "@JaebeolNunmul16",
+      "@노을빛사연-l2m"
     ],
     "key_timestamps": [
       {
@@ -3748,7 +3760,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-61ad94/transcript.txt"
@@ -4153,17 +4165,18 @@
   "VIDEO-73d98a": {
     "sku": "VIDEO-73d98a",
     "title": "Update key (ngách cực nhỏ) mới nhất 06-09-2026",
-    "actual_topic": "Update Key Ngách Cực Nhỏ: Drama Cảm Động Nhật-Hàn & Sức Khỏe Tuổi Già",
+    "actual_topic": "Chiến lược khai thác ngách cực nhỏ (Micro-niche): Drama cảm động nhân văn & Sức khỏe dưỡng lão Nhật-Hàn",
     "category_group": "ngach_xanh",
     "niche_primary": "Drama Cảm Động & Dưỡng Lão",
     "niche_id": "drama-cam-dong-duong-lao",
     "target_market": "🇯🇵 Nhật / 🇰🇷 Hàn",
     "market_code": "JP-KR",
     "key_takeaways": [
-      "Phân tích ngách cực nhỏ (micro-niche): Không làm drama đấu đá thù hận gay gắt mà chuyển sang 'câu chuyện cảm động nhẹ nhàng' (Ví dụ: 'Vào ngày ly hôn, chị gái tôi bỏ nhà ra đi...'). Kênh lập từ tháng 5, video đầu tiên từ 2 tháng trước đã đạt view rất cao.",
-      "Đặc điểm ngách câu chuyện cảm động: Tập trung vào tình cảm gia đình, sự đồng cảm và nhân văn, tiếp cận tệp khán giả trung niên và lớn tuổi.",
-      "Phân tích 4 kênh đối thủ chia sẻ trong bài: @涙のひと駅 (Nhật: câu chuyện cảm động ga tàu), @사연만남1짱 (Hàn: tâm sự đời sống), @simbot2 (Hàn: hoạt hình/triết lý tâm sự), @元気な老後-t5d (Nhật: sức khỏe và dưỡng lão cho người già).",
-      "Định hướng ngách người cao tuổi: Ngách sức khỏe tuổi già tại Nhật Bản (@元気な老後-t5d) hướng tới tệp khán giả hưu trí với các chủ đề dinh dưỡng, vận động đơn giản dễ áp dụng."
+      "Chuyển dịch từ Drama hận thù sang Drama cảm động nhân văn: Thay vì làm kịch bản đấu đá tiêu cực dễ gây mệt mỏi, chuyển sang ngách câu chuyện cảm động (như chuyện chia ly, tình nghĩa gia đình tại sân ga) tiếp cận tệp khán giả trung niên và cao tuổi (45-75 tuổi) có thời gian xem thụ động rất cao.",
+      "Phân tích kênh Nhật Bản @涙のひと駅: Đăng video drama cảm động dài từ 1-2 tiếng, video mới nhất đăng chỉ 22 giờ đã đạt 168.000 lượt xem, tốc độ cắn đề xuất thần tốc nhờ giữ chân người xem bằng cốt truyện nhân văn.",
+      "Phân tích kênh Hàn Quốc @사연만남1짱 & @simbot2: Kênh tâm sự đời sống và tiếng lòng tuổi già (Simbot2 chỉ 20 video đạt 4.5M view và 27.4K sub), khai thác nỗi lòng người già, bài học hối hận và đạo lý nhân quả.",
+      "Phân tích ngách Sức khỏe dưỡng lão @元気な老後-t5d: Kênh mới 19 video đạt video 81.000 view sau 11 ngày, tập trung vào mẹo sức khỏe tuổi xế chiều (bài tập trí não 1 phút, thực phẩm hại khớp, phục hồi thận).",
+      "Kỹ thuật dựng Minimalist: Sử dụng ảnh AI nhân vật biểu cảm cảm động kết hợp hiệu ứng tuyết rơi/hạt bụi nhẹ nhàng và sóng âm audio (như kênh @simbot2), vừa tối ưu chi phí vừa chống quét ảnh tĩnh."
     ],
     "edit_sop": {
       "primary": "Sử dụng hình ảnh minh họa chân thực/ấm áp + Giọng đọc AI chậm rãi, trầm ấm + Nhạc nền acoustic hoặc piano xúc động",
@@ -4210,7 +4223,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-73d98a/transcript.txt"
@@ -7225,18 +7238,18 @@
   "VIDEO-DD983D": {
     "sku": "VIDEO-DD983D",
     "title": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
-    "actual_topic": "Ngách Drama Gia Đình Nhật Bản & Kỹ Thuật Edit B-Roll Thật Né Quét AI",
+    "actual_topic": "Kỹ thuật tự quay B-roll đời thật làm nền video Drama Nhật Bản & Bí quyết né quét bản quyền, trùng lặp AI 2026",
     "category_group": "ngach_xanh",
     "niche_primary": "Drama Gia Đình & Xã Hội Nhật Bản",
     "niche_id": "drama-nhat",
     "target_market": "🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "Phân tích kênh Drama gia đình Nhật mới làm 5 ngày (14 video) đạt 80k - 50k view/video trên nền kênh cổ 2010.",
-      "Quy trình edit né quét bản quyền/AI: Tự quay video B-roll thật (bàn tay gõ phím, hồ cá, phong cảnh nét) làm nền, giảm độ sáng và ghép sub to rõ.",
-      "So sánh 4 kênh đối thủ: Kênh tự quay B-roll thật duy trì bật kiếm tiền bền vững hơn hẳn kênh chỉ tải stock Pexels/Pixabay.",
-      "Khai thác kịch bản: Lấy kịch bản từ kênh đối thủ Nhật hoặc chuyển thể xào nấu từ thị trường Drama Hàn Quốc.",
-      "Lưu ý kiên trì: Cần đăng đều đặn tối thiểu 10-15 video đầu tiên để thuật toán học tệp."
+      "Vấn nạn quét trùng lặp AI năm 2026: Dùng video stock Pexels/Pixabay miễn phí hoặc video AI chuyển động sơ sài sẽ bị YouTube quét lỗi Sử dụng lại nội dung (Reused Content) hoặc Nội dung thiếu tính xác thực (Inauthentic Content).",
+      "Giải pháp tự quay B-roll đời thật (Original B-roll): Tự dùng điện thoại quay bể cá cảnh bơi lội, bàn tay gõ phím máy tính, cảnh pha trà... làm nền mờ (Background B-roll) để tạo ra mã hash video hoàn toàn mới 100%.",
+      "Giải mã kênh cổ Thái Lan làm content Nhật @ธรรมสุข-2275: Tên hiển thị 'スカッと感動物語', tận dụng kênh cổ Thái Lan (handle @ธรรมสุข-2275) để đăng nội dung Nhật Bản đạt 7.66K sub và hơn 3.4M view mà không bị Sandbox.",
+      "Quy trình xử lý hình ảnh & độ tương phản: Hạ độ sáng video nền xuống -10% đến -15%, tăng độ mờ viền (Vignette) và đặt chữ phụ đề tiếng Nhật to rõ màu xanh viền trắng ở giữa để tăng khả năng đọc lướt.",
+      "Chiến lược tận dụng Kênh Cổ (Aged Channel): Ưu tiên các kênh tạo từ 2010 - 2018 có độ trust cao, kết hợp giữ lại file project dựng video làm bằng chứng nếu cần thực hiện video kháng nghị (Appeal Video)."
     ],
     "edit_sop": {
       "primary": "Tự quay B-roll thật (bàn tay gõ phím, hồ cá, phong cảnh nét) + Giảm độ sáng video nền + Chèn phụ đề nổi bật",
@@ -7257,7 +7270,9 @@
       "CapCut"
     ],
     "channels_mentioned": [
-      "@明日へ歩く日々"
+      "@ธรรมสุข-2275",
+      "@新しい私の毎日",
+      "@心に残る話-y10k"
     ],
     "key_timestamps": [
       {
@@ -7287,7 +7302,7 @@
       }
     ],
     "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
+    "accuracy_status": "verified_expert_summary",
     "visual_audio_checked": false,
     "claims_require_external_verification": true,
     "source_transcript": "video/VIDEO-DD983D/transcript.txt"

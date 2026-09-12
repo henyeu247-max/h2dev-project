@@ -23,7 +23,8 @@
     "duration": "10:00",
     "total_view": 1130,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -51,7 +52,8 @@
     "duration": "09:39",
     "total_view": 1464,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt"
     ],
     "market": "🇻🇳 Việt"
   },
@@ -79,7 +81,9 @@
     "duration": "10:09",
     "total_view": 1837,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại",
+      "Hàn"
     ],
     "market": "🌐 Ngoại, 🇰🇷 Hàn"
   },
@@ -107,7 +111,9 @@
     "duration": "10:27",
     "total_view": 1700,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn",
+      "Việt"
     ],
     "market": "🇰🇷 Hàn, 🇻🇳 Việt"
   },
@@ -135,7 +141,8 @@
     "duration": "16:21",
     "total_view": 1676,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -163,7 +170,9 @@
     "duration": "20:16",
     "total_view": 1876,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt",
+      "Trung"
     ],
     "docs": [
       {
@@ -208,7 +217,8 @@
     "duration": "10:05",
     "total_view": 2287,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -236,7 +246,8 @@
     "duration": "12:11",
     "total_view": 2172,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -264,7 +275,8 @@
     "duration": "18:33",
     "total_view": 2803,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -304,7 +316,10 @@
     "duration": "10:09",
     "total_view": 2804,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật",
+      "Hàn",
+      "Việt"
     ],
     "market": "🇯🇵 Nhật, 🇰🇷 Hàn, 🇻🇳 Việt"
   },
@@ -332,7 +347,9 @@
     "duration": "06:32",
     "total_view": 2682,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn",
+      "Nhật"
     ],
     "market": "🇰🇷 Hàn, 🇯🇵 Nhật"
   },
@@ -360,7 +377,8 @@
     "duration": "10:58",
     "total_view": 2162,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -388,7 +406,8 @@
     "duration": "10:07",
     "total_view": 2348,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "docs": [
       {
@@ -448,7 +467,10 @@
     "duration": "10:03",
     "total_view": 1884,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn",
+      "Nhật",
+      "Việt"
     ],
     "market": "🇰🇷 Hàn, 🇯🇵 Nhật, 🇻🇳 Việt"
   },
@@ -476,7 +498,9 @@
     "duration": "03:29",
     "total_view": 15075,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật",
+      "Việt"
     ],
     "docs": [
       {
@@ -516,7 +540,9 @@
     "duration": "10:11",
     "total_view": 1729,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật",
+      "Việt"
     ],
     "market": "🇯🇵 Nhật, 🇻🇳 Việt"
   },
@@ -544,7 +570,8 @@
     "duration": "03:01",
     "total_view": 6591,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Việt"
     ],
     "docs": [
       {
@@ -584,7 +611,9 @@
     "duration": "10:09",
     "total_view": 2135,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại",
+      "Nhật"
     ],
     "market": "🌐 Ngoại, 🇯🇵 Nhật"
   },
@@ -612,7 +641,9 @@
     "duration": "05:44",
     "total_view": 1574,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật",
+      "Việt"
     ],
     "market": "🇯🇵 Nhật, 🇻🇳 Việt"
   },
@@ -640,7 +671,8 @@
     "duration": "09:11",
     "total_view": 2613,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -668,7 +700,8 @@
     "duration": "05:02",
     "total_view": 1843,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt"
     ],
     "market": "🇻🇳 Việt"
   },
@@ -696,7 +729,8 @@
     "duration": "06:20",
     "total_view": 1530,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -724,7 +758,8 @@
     "duration": "60:58",
     "total_view": 6090,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "docs": [
       {
@@ -764,7 +799,8 @@
     "duration": "10:04",
     "total_view": 1965,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt"
     ],
     "market": "🇻🇳 Việt"
   },
@@ -792,7 +828,8 @@
     "duration": "02:08",
     "total_view": 8424,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Việt"
     ],
     "docs": [
       {
@@ -832,7 +869,9 @@
     "duration": "31:29",
     "total_view": 3013,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Việt"
     ],
     "docs": [
       {
@@ -867,7 +906,8 @@
     "duration": "72:33",
     "total_view": 8287,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "docs": [
       {
@@ -902,7 +942,8 @@
     "duration": "04:42",
     "total_view": 2736,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -930,7 +971,9 @@
     "duration": "03:08",
     "total_view": 3946,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Ngoại"
     ],
     "market": "🇺🇸 Mỹ, 🌐 Ngoại"
   },
@@ -958,7 +1001,9 @@
     "duration": "02:02",
     "total_view": 1396,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại",
+      "Trung"
     ],
     "market": "🌐 Ngoại, 🇨🇳 Trung"
   },
@@ -986,7 +1031,10 @@
     "duration": "04:00",
     "total_view": 1494,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Thái",
+      "Việt"
     ],
     "market": "🇺🇸 Mỹ, 🇹🇭 Thái, 🇻🇳 Việt"
   },
@@ -1014,7 +1062,8 @@
     "duration": "10:02",
     "total_view": 1653,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -1042,7 +1091,8 @@
     "duration": "02:52",
     "total_view": 3081,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Việt"
     ],
     "docs": [
       {
@@ -1082,7 +1132,8 @@
     "duration": "02:55",
     "total_view": 13366,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -1127,7 +1178,8 @@
     "duration": "04:35",
     "total_view": 1417,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -1155,7 +1207,8 @@
     "duration": "04:32",
     "total_view": 1418,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -1183,7 +1236,8 @@
     "duration": "15:00",
     "total_view": 2202,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -1211,7 +1265,8 @@
     "duration": "04:02",
     "total_view": 1561,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -1239,7 +1294,8 @@
     "duration": "05:32",
     "total_view": 2071,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -1267,7 +1323,9 @@
     "duration": "03:38",
     "total_view": 1773,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt",
+      "Trung"
     ],
     "market": "🇻🇳 Việt, 🇨🇳 Trung"
   },
@@ -1295,7 +1353,8 @@
     "duration": "20:02",
     "total_view": 7319,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -1323,7 +1382,8 @@
     "duration": "05:01",
     "total_view": 1865,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt"
     ],
     "market": "🇻🇳 Việt"
   },
@@ -1351,7 +1411,8 @@
     "duration": "03:33",
     "total_view": 1770,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "docs": [
       {
@@ -1386,7 +1447,8 @@
     "duration": "02:02",
     "total_view": 1479,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "docs": [
       {
@@ -1421,7 +1483,8 @@
     "duration": "05:14",
     "total_view": 1767,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -1449,7 +1512,8 @@
     "duration": "04:36",
     "total_view": 3518,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -1477,7 +1541,8 @@
     "duration": "03:27",
     "total_view": 1897,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "docs": [
       {
@@ -1512,7 +1577,8 @@
     "duration": "10:00",
     "total_view": 2163,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -1540,7 +1606,8 @@
     "duration": "03:44",
     "total_view": 1525,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -1568,7 +1635,8 @@
     "duration": "04:27",
     "total_view": 5873,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt"
     ],
     "docs": [
       {
@@ -1603,7 +1671,8 @@
     "duration": "03:28",
     "total_view": 1628,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -1631,7 +1700,9 @@
     "duration": "05:02",
     "total_view": 1813,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Hàn",
+      "Nhật"
     ],
     "market": "🇰🇷 Hàn, 🇯🇵 Nhật"
   },
@@ -1659,7 +1730,9 @@
     "duration": "10:15",
     "total_view": 1978,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt",
+      "Trung"
     ],
     "docs": [
       {
@@ -1694,7 +1767,9 @@
     "duration": "07:22",
     "total_view": 4667,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Việt",
+      "Trung"
     ],
     "docs": [
       {
@@ -1735,7 +1810,10 @@
     "duration": "05:40",
     "total_view": 1540,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Hàn",
+      "Việt"
     ],
     "market": "🇺🇸 Mỹ, 🇰🇷 Hàn, 🇻🇳 Việt"
   },
@@ -1763,7 +1841,9 @@
     "duration": "05:04",
     "total_view": 1574,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Canada",
+      "Nhật"
     ],
     "market": "🇨🇦 Canada, 🇯🇵 Nhật"
   },
@@ -1791,7 +1871,8 @@
     "duration": "05:07",
     "total_view": 1652,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -1819,7 +1900,8 @@
     "duration": "04:08",
     "total_view": 1748,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "docs": [
       {
@@ -1859,7 +1941,10 @@
     "duration": "07:08",
     "total_view": 1669,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Nga",
+      "Ngoại"
     ],
     "market": "🇺🇸 Mỹ, 🇷🇺 Nga, 🌐 Ngoại"
   },
@@ -1887,7 +1972,8 @@
     "duration": "04:04",
     "total_view": 1457,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -1915,7 +2001,8 @@
     "duration": "01:56",
     "total_view": 3372,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "docs": [
       {
@@ -1950,7 +2037,8 @@
     "duration": "02:11",
     "total_view": 1498,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -1978,7 +2066,8 @@
     "duration": "01:04",
     "total_view": 4581,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Trung"
     ],
     "docs": [
       {
@@ -2038,7 +2127,9 @@
     "duration": "08:47",
     "total_view": 1811,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật",
+      "Việt"
     ],
     "market": "🇯🇵 Nhật, 🇻🇳 Việt"
   },
@@ -2066,7 +2157,8 @@
     "duration": "10:44",
     "total_view": 2373,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -2094,7 +2186,8 @@
     "duration": "05:31",
     "total_view": 3824,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -2122,7 +2215,8 @@
     "duration": "04:28",
     "total_view": 3158,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -2150,7 +2244,8 @@
     "duration": "04:13",
     "total_view": 4121,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -2178,7 +2273,8 @@
     "duration": "03:21",
     "total_view": 4642,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -2206,7 +2302,9 @@
     "duration": "05:00",
     "total_view": 1853,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật",
+      "Việt"
     ],
     "market": "🇯🇵 Nhật, 🇻🇳 Việt"
   },
@@ -2234,7 +2332,9 @@
     "duration": "07:54",
     "total_view": 17474,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn",
+      "Việt"
     ],
     "docs": [
       {
@@ -2279,7 +2379,8 @@
     "duration": "16:21",
     "total_view": 3921,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Trung"
     ],
     "docs": [
       {
@@ -2314,7 +2415,8 @@
     "duration": "04:23",
     "total_view": 2244,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Trung"
     ],
     "market": "🇨🇳 Trung"
   },
@@ -2342,7 +2444,9 @@
     "duration": "06:24",
     "total_view": 1843,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn",
+      "Mỹ"
     ],
     "docs": [
       {
@@ -2377,7 +2481,8 @@
     "duration": "25:06",
     "total_view": 10545,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "docs": [
       {
@@ -2412,7 +2517,8 @@
     "duration": "03:26",
     "total_view": 1842,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt"
     ],
     "docs": [
       {
@@ -2467,7 +2573,9 @@
     "duration": "01:45",
     "total_view": 1952,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Canada"
     ],
     "market": "🇺🇸 Mỹ, 🇨🇦 Canada"
   },
@@ -2495,7 +2603,9 @@
     "duration": "07:18",
     "total_view": 2093,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn",
+      "Nhật"
     ],
     "market": "🇰🇷 Hàn, 🇯🇵 Nhật"
   },
@@ -2523,7 +2633,9 @@
     "duration": "10:13",
     "total_view": 3975,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật",
+      "Hàn"
     ],
     "market": "🇯🇵 Nhật, 🇰🇷 Hàn"
   },
@@ -2551,7 +2663,9 @@
     "duration": "31:16",
     "total_view": 8373,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt",
+      "Trung"
     ],
     "docs": [
       {
@@ -2591,7 +2705,10 @@
     "duration": "06:19",
     "total_view": 2437,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt",
+      "Hàn",
+      "Nhật"
     ],
     "market": "🇻🇳 Việt, 🇰🇷 Hàn, 🇯🇵 Nhật"
   },
@@ -2619,7 +2736,9 @@
     "duration": "11:55",
     "total_view": 4026,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật",
+      "Việt"
     ],
     "docs": [
       {
@@ -2654,7 +2773,8 @@
     "duration": "01:41",
     "total_view": 6876,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -2694,7 +2814,8 @@
     "duration": "05:37",
     "total_view": 2700,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -2722,7 +2843,8 @@
     "duration": "05:33",
     "total_view": 2746,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -2750,7 +2872,8 @@
     "duration": "04:39",
     "total_view": 2402,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -2778,7 +2901,8 @@
     "duration": "14:01",
     "total_view": 3530,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -2806,7 +2930,9 @@
     "duration": "02:31",
     "total_view": 2454,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Mỹ",
+      "Philippines"
     ],
     "market": "🇺🇸 Mỹ, 🇵🇭 Phil"
   },
@@ -2834,7 +2960,8 @@
     "duration": "31:40",
     "total_view": 7818,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "docs": [
       {
@@ -2869,7 +2996,8 @@
     "duration": "04:00",
     "total_view": 2226,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -2897,7 +3025,9 @@
     "duration": "03:08",
     "total_view": 2979,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Mỹ",
+      "Ngoại"
     ],
     "market": "🇺🇸 Mỹ, 🌐 Ngoại"
   },
@@ -2925,7 +3055,8 @@
     "duration": "03:03",
     "total_view": 2075,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Việt"
     ],
     "market": "🇻🇳 Việt"
   },
@@ -2953,7 +3084,8 @@
     "duration": "03:02",
     "total_view": 1832,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -2981,7 +3113,8 @@
     "duration": "02:23",
     "total_view": 2659,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -3009,7 +3142,8 @@
     "duration": "02:24",
     "total_view": 1452,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -3037,7 +3171,8 @@
     "duration": "03:42",
     "total_view": 1833,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -3065,7 +3200,9 @@
     "duration": "18:03",
     "total_view": 47326,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Mỹ",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -3156,7 +3293,8 @@
     "duration": "03:17",
     "total_view": 2218,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Việt"
     ],
     "market": "🇻🇳 Việt"
   },
@@ -3184,7 +3322,9 @@
     "duration": "03:40",
     "total_view": 2047,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Việt"
     ],
     "market": "🇺🇸 Mỹ, 🇻🇳 Việt"
   },
@@ -3212,7 +3352,9 @@
     "duration": "17:07",
     "total_view": 24017,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Mỹ",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -3262,7 +3404,8 @@
     "duration": "04:18",
     "total_view": 2862,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "docs": [
       {
@@ -3297,7 +3440,8 @@
     "duration": "06:05",
     "total_view": 1931,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Hàn"
     ],
     "docs": [
       {
@@ -3332,7 +3476,8 @@
     "duration": "04:47",
     "total_view": 1450,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "docs": [
       {
@@ -3367,7 +3512,9 @@
     "duration": "03:03",
     "total_view": 11540,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Việt",
+      "Trung"
     ],
     "docs": [
       {
@@ -3408,7 +3555,10 @@
     "duration": "06:31",
     "total_view": 2147,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật",
+      "Mỹ",
+      "Anh"
     ],
     "docs": [
       {
@@ -3443,7 +3593,10 @@
     "duration": "07:25",
     "total_view": 3132,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hong Kong",
+      "Hàn",
+      "Việt"
     ],
     "docs": [
       {
@@ -3478,7 +3631,8 @@
     "duration": "07:06",
     "total_view": 4834,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn"
     ],
     "market": "🇰🇷 Hàn"
   },
@@ -3506,7 +3660,8 @@
     "duration": "09:09",
     "total_view": 3056,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "docs": [
       {
@@ -3541,7 +3696,8 @@
     "duration": "10:45",
     "total_view": 4285,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật"
     ],
     "market": "🇯🇵 Nhật"
   },
@@ -3569,7 +3725,8 @@
     "duration": "02:24",
     "total_view": 4738,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -3597,7 +3754,9 @@
     "duration": "17:32",
     "total_view": 17254,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Ngoại"
     ],
     "market": "🇺🇸 Mỹ, 🌐 Ngoại"
   },
@@ -3625,7 +3784,8 @@
     "duration": "58:57",
     "total_view": 3750,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -3653,7 +3813,9 @@
     "duration": "07:26",
     "total_view": 5557,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Mỹ",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -3693,7 +3855,9 @@
     "duration": "26:16",
     "total_view": 3316,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Nhật",
+      "Hàn"
     ],
     "docs": [
       {
@@ -3733,7 +3897,8 @@
     "duration": "03:37",
     "total_view": 5693,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -3761,7 +3926,8 @@
     "duration": "43:08",
     "total_view": 8679,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật"
     ],
     "docs": [
       {
@@ -3796,7 +3962,8 @@
     "duration": "33:09",
     "total_view": 6596,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt"
     ],
     "docs": [
       {
@@ -3831,7 +3998,10 @@
     "duration": "38:31",
     "total_view": 4285,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật",
+      "Hàn",
+      "Việt"
     ],
     "docs": [
       {
@@ -3866,7 +4036,9 @@
     "duration": "17:13",
     "total_view": 39660,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Canada",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -3921,7 +4093,9 @@
     "duration": "20:14",
     "total_view": 9314,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Mỹ",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -3975,7 +4149,9 @@
     ],
     "market": "🇺🇸 Mỹ, 🌐 Ngoại",
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Ngoại"
     ]
   },
   {
@@ -4002,7 +4178,9 @@
     "duration": "13:48",
     "total_view": 11130,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Mỹ",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -4042,7 +4220,9 @@
     "duration": "22:38",
     "total_view": 20433,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Ngoại"
     ],
     "market": "🇺🇸 Mỹ, 🌐 Ngoại",
     "docs": [
@@ -4077,7 +4257,9 @@
     "duration": "21:09",
     "total_view": 8834,
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Việt",
+      "Trung"
     ],
     "market": "🇻🇳 Việt, 🇨🇳 Trung",
     "docs": [
@@ -4140,7 +4322,8 @@
     ],
     "market": "🌐 Ngoại",
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại"
     ]
   },
   {
@@ -4167,7 +4350,8 @@
     "duration": "24:21",
     "total_view": 3305,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Ngoại"
     ],
     "market": "🌐 Ngoại"
   },
@@ -4203,7 +4387,9 @@
       }
     ],
     "tags": [
-      "Nổi bật"
+      "Nổi bật",
+      "Ngoại",
+      "Mỹ"
     ]
   },
   {
@@ -4238,7 +4424,9 @@
       }
     ],
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Việt",
+      "Ngoại"
     ]
   },
   {
@@ -4265,7 +4453,9 @@
     "duration": "14:21",
     "total_view": 61315,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Mỹ",
+      "Ngoại"
     ],
     "docs": [
       {
@@ -4315,7 +4505,9 @@
     "duration": "10:28",
     "total_view": 223,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật",
+      "Hàn"
     ],
     "market": "🇯🇵 Nhật, 🇰🇷 Hàn"
   },
@@ -4343,7 +4535,9 @@
     "duration": "11:11",
     "total_view": 876,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Hàn",
+      "Việt"
     ],
     "market": "🇰🇷 Hàn, 🇻🇳 Việt"
   },
@@ -4371,7 +4565,9 @@
     "duration": "09:19",
     "total_view": 0,
     "tags": [
-      "Quan trọng"
+      "Quan trọng",
+      "Nhật",
+      "Hàn"
     ],
     "market": "🇯🇵 Nhật, 🇰🇷 Hàn"
   },
@@ -4400,7 +4596,8 @@
     "total_view": 0,
     "tags": [
       "Zoom",
-      "Quy trình"
+      "Quy trình",
+      "Việt"
     ],
     "docs": [
       {
@@ -4447,7 +4644,8 @@
     "total_view": 0,
     "tags": [
       "Zoom",
-      "Quy trình"
+      "Quy trình",
+      "Việt"
     ],
     "docs": [
       {
@@ -4494,7 +4692,8 @@
     "total_view": 0,
     "tags": [
       "Zoom",
-      "Quy trình"
+      "Quy trình",
+      "Việt"
     ],
     "docs": [
       {
@@ -4541,7 +4740,8 @@
     "total_view": 0,
     "tags": [
       "Zoom",
-      "Quy trình"
+      "Quy trình",
+      "Việt"
     ],
     "docs": [
       {

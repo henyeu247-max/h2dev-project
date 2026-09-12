@@ -2439,7 +2439,7 @@
     "title": "SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
     "index": 97,
     "market": [
-      "🇯🇵 Nhật"
+      "🇺🇸 Mỹ"
     ],
     "niche": "Triết Lý Sống & Đạo Làm Người",
     "size": 257066533,
@@ -2500,6 +2500,11 @@
         "name": "PROMPT: NGÁCH KINH TẾ - THỊ TRƯỜNG HÀN",
         "link": "https://docs.google.com/document/d/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY/edit?usp=sharing",
         "file": "assets/docs/VIDEO-2aa1f7/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY.txt"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-2aa1f7/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -2507,7 +2512,8 @@
     "mp4": "video/VIDEO-2aa1f7/VIDEO-2aa1f7.mp4",
     "image": "assets/thumbs/VIDEO-2aa1f7.png",
     "published_at": "2025-11-04",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "country": "US"
   },
   {
     "sku": "VIDEO-5fe83a",
@@ -2580,6 +2586,11 @@
         "name": "LIST KÊNH NGUỒN REUP DOUYIN",
         "link": "https://docs.google.com/spreadsheets/d/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o/edit?usp=sharing",
         "file": "assets/docs/VIDEO-458892/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o.csv"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-458892/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -2669,7 +2680,7 @@
     "title": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
     "index": 104,
     "market": [
-      "🇨🇳 Trung"
+      "🇻🇳 Việt"
     ],
     "niche": "Bán Content & Phát Triển Kênh",
     "size": 20353652,
@@ -2680,6 +2691,11 @@
         "name": "TOOL VÀ TÀI KHOẢN GIÁ RẺ (bấm vào đây để liên hệ)",
         "link": "https://docs.google.com/spreadsheets/d/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM/edit?usp=sharing",
         "file": "assets/docs/VIDEO-04c2e3/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM.csv"
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-04c2e3/transcript.txt",
+        "link": ""
       }
     ],
     "channels": [],
@@ -2687,7 +2703,8 @@
     "mp4": "video/VIDEO-04c2e3/VIDEO-04c2e3.mp4",
     "image": "assets/thumbs/VIDEO-04c2e3.png",
     "published_at": "2025-10-11",
-    "contentNiche": "Bán Content & Phát Triển Kênh"
+    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "country": "VN"
   },
   {
     "sku": "VIDEO-ca266f",
@@ -2870,7 +2887,18 @@
     "size": 131685203,
     "free": true,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "Cẩm Nang Thực Chiến — Thiết Kế Thumbnail Ngách Triết Lý Khắc Kỷ",
+        "file": "assets/docs/VIDEO-a348a5/HUONG-DAN-DESIGN-THUMBNAIL-TRIET-LY-KHAC-KY.md",
+        "link": ""
+      },
+      {
+        "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+        "file": "video/VIDEO-a348a5/transcript.txt",
+        "link": ""
+      }
+    ],
     "channels": [],
     "origin": "https://h2dev.vn/learn/study/huong-dan-lam-thumb-key-triet-ly-khac-ky",
     "mp4": "video/VIDEO-a348a5/VIDEO-a348a5.mp4",

@@ -214,6 +214,11 @@
     "drm": false,
     "docs": [
       {
+        "name": "SOP Quy Trình Reup Hoạt Hình 2D Bilibili Bật Kiếm Tiền & Case Study Kênh 'Mộng Đam Mỹ'",
+        "link": "assets/docs/VIDEO-28e1cc/SOP-QUY-TRINH-REUP-HOAT-HINH-BILIBILI-BAT-KIEM-TIEN.md",
+        "file": "assets/docs/VIDEO-28e1cc/SOP-QUY-TRINH-REUP-HOAT-HINH-BILIBILI-BAT-KIEM-TIEN.md"
+      },
+      {
         "name": "hướng dẫn tool dịch",
         "link": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt?ref=H2DEV-001",
         "file": ""
@@ -229,7 +234,9 @@
         "file": ""
       }
     ],
-    "channels": [],
+    "channels": [
+      "@MộngĐamMỹ"
+    ],
     "origin": "https://h2dev.vn/learn/study/show-kenh-moi-vua-bat-kiem-tien-va-huong-dan-thuc-chien-full-quy-trinh-lam-reup-ngach-nho-hoat-hinh-tu-bilibili",
     "mp4": "video/VIDEO-28e1cc/VIDEO-28e1cc.mp4",
     "image": "assets/thumbs/VIDEO-28e1cc.png",
@@ -251,7 +258,13 @@
     "size": 198973528,
     "free": false,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP 5 Ngách Nhỏ Bán Content Thị Trường Nhật Bản & Hàn Quốc (Triết Lý Inamori Kazuo, Trẻ Hóa & Dưỡng Sinh)",
+        "link": "assets/docs/VIDEO-d2cd90/SOP-5-NGACH-NHO-BAN-CONTENT-TRIET-LY-TRE-HOA-NHAT-BAN.md",
+        "file": "assets/docs/VIDEO-d2cd90/SOP-5-NGACH-NHO-BAN-CONTENT-TRIET-LY-TRE-HOA-NHAT-BAN.md"
+      }
+    ],
     "channels": [
       "@quietstrength88",
       "@アマテラス巫女あまね",
@@ -279,7 +292,13 @@
     "size": 205302720,
     "free": false,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Kỹ Thuật Edit Tạo Khung Viền CapCut & 2 Ngách Đột Phá Xe Hơi, Bác Sĩ Cắn Hơn 300K Views",
+        "link": "assets/docs/VIDEO-9aff6d/SOP-EDIT-TAO-KHUNG-VA-2-NGACH-XE-HOI-BAC-SI-NHAT.md",
+        "file": "assets/docs/VIDEO-9aff6d/SOP-EDIT-TAO-KHUNG-VA-2-NGACH-XE-HOI-BAC-SI-NHAT.md"
+      }
+    ],
     "channels": [
       "@kurumanozokitai",
       "@昔の人の知恵",
@@ -306,6 +325,11 @@
     "free": false,
     "drm": false,
     "docs": [
+      {
+        "name": "SOP Hướng Dẫn Sử Dụng Bộ Prompt Master Tự Động Nhân Bản Kịch Bản Sang Mọi Thị Trường",
+        "link": "assets/docs/VIDEO-e90874/SOP-HUONG-DAN-SU-DUNG-PROMPT-MASTER-NHAN-BAN-MOI-THI-TRUONG.md",
+        "file": "assets/docs/VIDEO-e90874/SOP-HUONG-DAN-SU-DUNG-PROMPT-MASTER-NHAN-BAN-MOI-THI-TRUONG.md"
+      },
       {
         "name": "Prompt em chia sẻ trong video",
         "link": "https://docs.google.com/document/d/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA/edit?usp=sharing",
@@ -340,7 +364,13 @@
     "size": 211960392,
     "free": false,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Bán Content Ngách Tâm Linh Saito Hitori & Khai Thác Reup Đa Thị Trường Nhật - Hàn - Việt",
+        "link": "assets/docs/VIDEO-c5837a/SOP-BAN-CONTENT-TAM-LINH-SAITO-HITORI-VA-REUP-HOAT-HINH.md",
+        "file": "assets/docs/VIDEO-c5837a/SOP-BAN-CONTENT-TAM-LINH-SAITO-HITORI-VA-REUP-HOAT-HINH.md"
+      }
+    ],
     "channels": [
       "@斎藤一人の福の言霊",
       "@oijfwaoldsfae",
@@ -373,10 +403,17 @@
     "size": 125155842,
     "free": false,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Khai Thác 2 Ngách Đột Phá Bài Thuốc Bàn Ăn & Năng Lượng Lời Nói Kim Vận (Hàn - Nhật) & Case Study Kênh Việt",
+        "link": "assets/docs/VIDEO-348217/SOP-2-NGACH-BAI-THUOC-BAN-AN-VA-NANG-LUONG-LOI-NOI-HAN-NHAT.md",
+        "file": "assets/docs/VIDEO-348217/SOP-2-NGACH-BAI-THUOC-BAN-AN-VA-NANG-LUONG-LOI-NOI-HAN-NHAT.md"
+      }
+    ],
     "channels": [
       "@식탁보약·백세비결",
-      "@金運と言葉の力"
+      "@金運と言葉の力",
+      "@ĐờiVĩ-u6x"
     ],
     "origin": "https://h2dev.vn/learn/study/update-them-2-ngach-moi-nhat-cuc-trend-thi-truong-han-va-nhat",
     "mp4": "video/VIDEO-348217/VIDEO-348217.mp4",
@@ -399,11 +436,18 @@
     "size": 220807526,
     "free": false,
     "drm": false,
-    "docs": [],
+    "docs": [
+      {
+        "name": "SOP Khai Thác Ngách Cực Nhỏ Rau Củ Dưa Chuột Trường Thọ & Bữa Ăn Dưỡng Lão Hàn Quốc",
+        "link": "assets/docs/VIDEO-f74bb1/SOP-NGACH-CUC-NHO-RAU-CU-DUA-CHUOT-VA-DUONG-LAO-HAN-QUOC.md",
+        "file": "assets/docs/VIDEO-f74bb1/SOP-NGACH-CUC-NHO-RAU-CU-DUA-CHUOT-VA-DUONG-LAO-HAN-QUOC.md"
+      }
+    ],
     "channels": [
       "@노후건강한끼",
       "@건강백단",
-      "@장수채소습관"
+      "@장수채소습관",
+      "@fuetunojin"
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-cuc-nho-thi-truong-han-quoc-moi-nhat",
     "mp4": "video/VIDEO-f74bb1/VIDEO-f74bb1.mp4",
@@ -426,6 +470,11 @@
     "free": false,
     "drm": false,
     "docs": [
+      {
+        "name": "SOP Khai Thác Kho Hoạt Hình Bilibili & Kỹ Thuật Reup Bán Content An Toàn Không Bản Quyền",
+        "link": "assets/docs/VIDEO-1aaf46/SOP-CHIEN-LUOC-KHAI-THAC-REUP-HOAT-HINH-BILIBILI-AN-TOAN.md",
+        "file": "assets/docs/VIDEO-1aaf46/SOP-CHIEN-LUOC-KHAI-THAC-REUP-HOAT-HINH-BILIBILI-AN-TOAN.md"
+      },
       {
         "name": "https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click",
         "link": "https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click",

@@ -1,3 +1,30 @@
+## 2026-09-13 — Chuẩn hoá chuyên sâu 8 video PRO đợt 3 (28e1cc, d2cd90, 9aff6d, e90874, c5837a, 348217, f74bb1, 1aaf46)
+
+- **Xác minh hình ảnh thực tế (Visual Verification via Frame Extraction):**
+  - `VIDEO-28e1cc`: Mổ xẻ kênh YouTube Việt Nam thực chiến "Mộng Đam Mỹ" (`UCPhw3R6ly3mnGRqA_TazlUw`) vừa được bật kiếm tiền YPP với toàn bộ video đô la xanh, bổ sung handle `@MộngĐamMỹ` vào `channels`.
+  - `VIDEO-d2cd90`: Xác minh 5 kênh đối thủ (Triết lý Inamori Kazuo `@quietstrength88`, Sổ tay nội trợ `@시니어살림노트`, Amaterasu `@アマテラス巫女あまね`, Trẻ hóa `@みんなの若返りアカデミア`, Dòng suối tâm linh `@スピリチュアルの泉-l4z`).
+  - `VIDEO-9aff6d`: Xác minh 3 kênh đối thủ (Xe hơi `@kurumanozokitai` 14k-22k view sau vài giờ, Bác sĩ `@昔の人の知恵`, `@EricBennettMD`) và kỹ thuật tạo khung viền (Border Frame) CapCut né quét AI.
+  - `VIDEO-e90874`: Xác minh bộ Prompt Master biên kịch gia bản địa (đã có file txt prompt).
+  - `VIDEO-c5837a`: Xác minh 7 kênh đối thủ (Triết lý Saito Hitori `@斎藤一人の福の言霊` 27k-44k view/ngày, Review hoạt hình `@NắngNhỏToonReview`...).
+  - `VIDEO-348217`: Xác minh 2 kênh đối thủ (Bài thuốc bàn ăn `@식탁보약·백세비결`, Kim vận `@金運と言葉の力`) và kênh Việt Nam `@ĐờiVĩ-u6x` nổ 265K view sau 5 video.
+  - `VIDEO-f74bb1`: Xác minh 3 kênh đối thủ (Dưa chuột `@장수채소습관`, Bữa ăn dưỡng lão `@노후건강한끼`, `@건강백단`) và kênh bất diệt `@fuetunojin` 210K sub.
+  - `VIDEO-1aaf46`: Xác minh 6 kho tài nguyên Space Bilibili và bộ quy tắc Fair Use reup hoạt hình an toàn.
+- **Biên soạn 8 bộ tài liệu SOP Cẩm nang thực chiến chuyên sâu (`assets/docs/`):**
+  1. `assets/docs/VIDEO-28e1cc/SOP-QUY-TRINH-REUP-HOAT-HINH-BILIBILI-BAT-KIEM-TIEN.md` (6.2 KB).
+  2. `assets/docs/VIDEO-d2cd90/SOP-5-NGACH-NHO-BAN-CONTENT-TRIET-LY-TRE-HOA-NHAT-BAN.md` (6.5 KB).
+  3. `assets/docs/VIDEO-9aff6d/SOP-EDIT-TAO-KHUNG-VA-2-NGACH-XE-HOI-BAC-SI-NHAT.md` (6.3 KB).
+  4. `assets/docs/VIDEO-e90874/SOP-HUONG-DAN-SU-DUNG-PROMPT-MASTER-NHAN-BAN-MOI-THI-TRUONG.md` (6.1 KB).
+  5. `assets/docs/VIDEO-c5837a/SOP-BAN-CONTENT-TAM-LINH-SAITO-HITORI-VA-REUP-HOAT-HINH.md` (6.0 KB).
+  6. `assets/docs/VIDEO-348217/SOP-2-NGACH-BAI-THUOC-BAN-AN-VA-NANG-LUONG-LOI-NOI-HAN-NHAT.md` (5.9 KB).
+  7. `assets/docs/VIDEO-f74bb1/SOP-NGACH-CUC-NHO-RAU-CU-DUA-CHUOT-VA-DUONG-LAO-HAN-QUOC.md` (5.8 KB).
+  8. `assets/docs/VIDEO-1aaf46/SOP-CHIEN-LUOC-KHAI-THAC-REUP-HOAT-HINH-BILIBILI-AN-TOAN.md` (6.2 KB).
+  - Gắn link docs vào `catalog.json`, `catalog_full.json`, `modules.json`, `data-tabs/videos.json`.
+  - Nâng cấp `video_insights.json` (5 key takeaways sâu sắc / video, đồng bộ `channels_mentioned` và `tools_mentioned`).
+- **Nghiệm thu kiểm định:**
+  - `validate-project.js`: PASS.
+  - `audit_all_136_videos.py`: 136/136 video SẠCH (0 lỗi).
+  - Đồng bộ `assets/docs/` lên VPS, commit & push git, pull VPS và reload PM2 `h2dev-learn`.
+
 ## 2026-09-13 — Chuẩn hoá chuyên sâu 4 video PRO đợt 2 (484f9e, e24c31, a7bfd0, 4b3c09): Bổ sung list kênh, 4 SOP thực chiến & đồng bộ toàn diện
 
 - **Khắc phục lỗi lệch data channels trong `video_insights.json`:**

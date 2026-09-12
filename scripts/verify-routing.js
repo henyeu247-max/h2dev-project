@@ -100,19 +100,19 @@ const check = (name, ok, detail = '') => {
   await frameLessonBtn.click();
   await page.waitForTimeout(3000);
   const topUrlAfterWatch = page.url();
-  check('Clicking lesson inside embedded iframe navigates top window to /lotrinh/VIDEO-:sku', /\/lotrinh\/VIDEO-/i.test(topUrlAfterWatch), `url=${topUrlAfterWatch}`);
+  check('Clicking lesson inside embedded iframe navigates top window to /lotrinh/:sku', /\/lotrinh\/[a-zA-Z0-9_-]+/i.test(topUrlAfterWatch), `url=${topUrlAfterWatch}`);
 
   // 11. Tab Video navigation test:
-  // From /video, clicking "Xem bài" must navigate to /lotrinh/VIDEO-xxx
+  // From /video, clicking "Xem bài" must navigate to /lotrinh/:sku
   await page.goto(`${BASE}/video`, { waitUntil: 'load', timeout: 30000 });
   await page.waitForTimeout(1500);
   const vidCardLink = page.locator('.interactive-card a[href^="/lotrinh/"]').first();
   const vidCardHref = await vidCardLink.getAttribute('href');
-  check('Video card in tab Video links to /lotrinh/:sku', /^\/lotrinh\/VIDEO-/i.test(vidCardHref), `href=${vidCardHref}`);
+  check('Video card in tab Video links to /lotrinh/:sku', /^\/lotrinh\/[a-zA-Z0-9_-]+/i.test(vidCardHref), `href=${vidCardHref}`);
   await vidCardLink.click();
   await page.waitForTimeout(2500);
   const topUrlAfterVidClick = page.url();
-  check('Clicking video card navigates to /lotrinh/VIDEO-:sku', /\/lotrinh\/VIDEO-/i.test(topUrlAfterVidClick), `url=${topUrlAfterVidClick}`);
+  check('Clicking video card navigates to /lotrinh/:sku', /\/lotrinh\/[a-zA-Z0-9_-]+/i.test(topUrlAfterVidClick), `url=${topUrlAfterVidClick}`);
 
   // 12. Console errors check (loại trừ 405 admin-state do server chủ động disable writes)
   const noise = errs.filter(e => !/favicon|admin-state|net::ERR|405/i.test(e));

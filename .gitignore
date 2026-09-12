@@ -5,6 +5,7 @@ video/
 # Bản sao lưu & nhật ký kiểm chứng nội bộ
 _backup/
 _audit/
+_frames/
 _archive/
 _private/
 _drafts/

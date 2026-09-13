@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-058",
+  "channelFolder": "RAW-058_Best_Travel",
+  "sourceVideo": {
+    "videoId": "Kp1Sri5ldyU",
+    "title": "Living in Vietnam | How People Live in One of Asia’s Most Su",
+    "url": "https://www.youtube.com/watch?v=Kp1Sri5ldyU",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-058_Best_Travel/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-058.mp3",
+    "fileSizeKB": 1056.3,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam phóng viên du lịch / Phóng khoáng, ấm áp & tôn trọng văn hóa",
+    "ageRange": "28 – 40 tuổi",
+    "toneAndStyle": "Ấm cúng, ngưỡng mộ, năng động, nhịp độ vừa phải dẫn dắt khám phá cuộc sống Việt",
+    "targetAudience": "Khách du lịch quốc tế, cộng đồng expat và khán giả quan tâm Đông Nam Á",
+    "actualPaceWPM": "108 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "An international travel essay sound studio. Crisp clean acoustic treatment, forward voice presence conveying authentic warmth and genuine discovery.",
+    "sampleContext": "Appreciative, vibrant, immersive, and informative. Rhythms reflect the bustling street life and serene rural landscapes of modern Vietnam.",
+    "speakerTag": "Speaker 1 - Vietnam Travel Documentarian (Chris / Brian)",
+    "sampleSpeechBlock": "centuries of change and endurance. It is a land carved by monsoon rains, softened by the morning mist, and brightened by the golden light that spills across endless rice fields. This is a place of striking contrasts and quiet strength. This is Vietnam. From the vantage point of a soaring heron, the country appears as a living tapestry. Terrace hillsides rising in green waves, rivers winding through fertile deltas and cities pulsing with the energy of a million lives in motion.",
+    "combinedPromptTemplate": "Scene: An international travel essay sound studio. Crisp clean acoustic treatment, forward voice presence conveying authentic warmth and genuine discovery.\nSample Context: Appreciative, vibrant, immersive, and informative. Rhythms reflect the bustling street life and serene rural landscapes of modern Vietnam.\n\nSpeaker 1 - Vietnam Travel Documentarian (Chris / Brian):\ncenturies of change and endurance. It is a land carved by monsoon rains, softened by the morning mist, and brightened by the golden light that spills across endless rice fields. This is a place of striking contrasts and quiet strength. This is Vietnam. From the vantage point of a soaring heron, the country appears as a living tapestry. Terrace hillsides rising in green waves, rivers winding through fertile deltas and cities pulsing with the energy of a million lives in motion."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Chris (Warm World Explorer)",
+    "alternativeVoices": [
+      "Brian (Casual Global Host)",
+      "Adam (Grounded Commercial)"
+    ],
+    "voiceSettings": {
+      "stability": 0.42,
+      "similarity_boost": 0.85,
+      "style": 0.25,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Ấm cúng, ngưỡng mộ, năng động, nhịp độ vừa phải dẫn dắt khám phá cuộc sống Việt.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-089",
+  "channelFolder": "RAW-089_Хроники_аномалий",
+  "sourceVideo": {
+    "videoId": "iOO8dapfvr8",
+    "title": "Жуткие находки в Иране, которые меняют ВСЁ",
+    "url": "https://www.youtube.com/watch?v=iOO8dapfvr8",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-089_Хроники_аномалий/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-089.mp3",
+    "fileSizeKB": 1056.9,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam thuyết minh tài liệu Nga / Huyền bí học & khảo cổ học cổ đại",
+    "ageRange": "35 – 50 tuổi",
+    "toneAndStyle": "Bí ẩn, hồi hộp, ma mị, nhấn nhá từng khám phá làm chấn động lịch sử",
+    "targetAudience": "Khán giả nói tiếng Nga mê khảo cổ bí ẩn, văn minh Lưỡng Hà, hiện tượng dị thường",
+    "actualPaceWPM": "122 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "A historical enigma audio suite. Warm low-frequency coloration with subtle dark tone, tailored for mysterious artifact revelations.",
+    "sampleContext": "Enigmatic, dramatic, intense, and investigative. Measured Russian articulation with subtle suspense pauses around forbidden archaeological finds.",
+    "speakerTag": "Speaker 1 - Archaeological Anomaly Chronicler (Dmitry / Callum)",
+    "sampleSpeechBlock": "программе, запутанную геополитику Ближнего Востока. Кто-то вспомнит персидские ковры, шафран, фисташки, кто-то древнюю Персию, царя Дария, армию бессмертных Кира Великого. Но всё это лишь верхний слой. тонкая плёнка над тем настоящим Ираном, который скрыт под слоями песка, глины и времени. И вот этот настоящий Иран, выходящий на поверхность последние два десятилетия, заставляет историков переписывать учебники с пугающей регулярностью. Каждый раз, когда казалось, что о Персии уже всё известно, лопата археолога натыкается на нечто такое, от чего у академического сообщества сводит зубы. И самое интересное, большинство этих находок широкая публика никогда не увидит.",
+    "combinedPromptTemplate": "Scene: A historical enigma audio suite. Warm low-frequency coloration with subtle dark tone, tailored for mysterious artifact revelations.\nSample Context: Enigmatic, dramatic, intense, and investigative. Measured Russian articulation with subtle suspense pauses around forbidden archaeological finds.\n\nSpeaker 1 - Archaeological Anomaly Chronicler (Dmitry / Callum):\nпрограмме, запутанную геополитику Ближнего Востока. Кто-то вспомнит персидские ковры, шафран, фисташки, кто-то древнюю Персию, царя Дария, армию бессмертных Кира Великого. Но всё это лишь верхний слой. тонкая плёнка над тем настоящим Ираном, который скрыт под слоями песка, глины и времени. И вот этот настоящий Иран, выходящий на поверхность последние два десятилетия, заставляет историков переписывать учебники с пугающей регулярностью. Каждый раз, когда казалось, что о Персии уже всё известно, лопата археолога натыкается на нечто такое, от чего у академического сообщества сводит зубы. И самое интересное, большинство этих находок широкая публика никогда не увидит."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Dmitry (Deep Russian Mystery) / Callum (Enigmatic Storyteller)",
+    "alternativeVoices": [
+      "Marcus (Forensic Historian)",
+      "Daniel (Atmospheric Voice)"
+    ],
+    "voiceSettings": {
+      "stability": 0.46,
+      "similarity_boost": 0.88,
+      "style": 0.22,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Bí ẩn, hồi hộp, ma mị, nhấn nhá từng khám phá làm chấn động lịch sử.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

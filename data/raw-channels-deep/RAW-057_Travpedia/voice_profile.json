@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-057",
+  "channelFolder": "RAW-057_Travpedia",
+  "sourceVideo": {
+    "videoId": "h6JVGfOZDpE",
+    "title": "UNSEEN CARIBBEAN — The Side of Paradise No One Sees! (Full D",
+    "url": "https://www.youtube.com/watch?v=h6JVGfOZDpE",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-057_Travpedia/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-057.mp3",
+    "fileSizeKB": 1056.3,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam khám phá chiều sâu / Kể chuyện văn hóa & địa chính trị",
+    "ageRange": "30 – 42 tuổi",
+    "toneAndStyle": "Lôi cuốn, kích thích suy ngẫm, bóc tách thực tế sau bức tranh nghỉ dưỡng hào nhoáng",
+    "targetAudience": "Du khách thích du lịch văn hóa, tìm hiểu địa lý nhân văn và kinh tế đảo",
+    "actualPaceWPM": "68 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "A high-definition travel journalism podcast suite. Direct vocal capture with subtle air, intimate and analytical without pompous theatricality.",
+    "sampleContext": "Engaging, observant, inquisitive, and nuanced. Unveils the contrast between luxury tourist enclaves and the rugged daily realities of Caribbean islanders.",
+    "speakerTag": "Speaker 1 - Cultural Investigative Guide (Paul / Sam)",
+    "sampleSpeechBlock": "only by adapting to forces strong enough to erase it overnight. Here, volcanoes rise straight [music] from the depths of the sea. Unstable slopes plunge into deep [music] water beside white sand beaches and glass clear lagoons. The beauty [music] appears utterly effortless, masking how close the line between creation and",
+    "combinedPromptTemplate": "Scene: A high-definition travel journalism podcast suite. Direct vocal capture with subtle air, intimate and analytical without pompous theatricality.\nSample Context: Engaging, observant, inquisitive, and nuanced. Unveils the contrast between luxury tourist enclaves and the rugged daily realities of Caribbean islanders.\n\nSpeaker 1 - Cultural Investigative Guide (Paul / Sam):\nonly by adapting to forces strong enough to erase it overnight. Here, volcanoes rise straight [music] from the depths of the sea. Unstable slopes plunge into deep [music] water beside white sand beaches and glass clear lagoons. The beauty [music] appears utterly effortless, masking how close the line between creation and"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Paul (Thoughtful Cultural Host)",
+    "alternativeVoices": [
+      "Sam (Engaging Reporter)",
+      "Will (Expressive Narrator)"
+    ],
+    "voiceSettings": {
+      "stability": 0.4,
+      "similarity_boost": 0.84,
+      "style": 0.28,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Lôi cuốn, kích thích suy ngẫm, bóc tách thực tế sau bức tranh nghỉ dưỡng hào nhoáng.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

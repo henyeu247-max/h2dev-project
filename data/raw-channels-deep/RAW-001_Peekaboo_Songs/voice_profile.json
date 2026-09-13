@@ -5,28 +5,38 @@
     "videoId": "01aHhgMuE14",
     "title": "Baby Shark Doo Doo - Dance and Sing with KARAOKE! | BEST OF Nursery Rhymes | Sing Along With Me!",
     "url": "https://www.youtube.com/watch?v=01aHhgMuE14",
-    "timeWindow": "20s – 60s (40s)"
+    "timeWindow": "58s – 103s (45s)",
+    "selectionMethod": "Smart Cut dựa trên mật độ thoại cao nhất trong Transcript"
   },
-  "sampleAudio": {
+  "audioSpecs": {
     "localPath": "data/raw-channels-deep/RAW-001_Peekaboo_Songs/voice_sample_30s.mp3",
     "publicUrl": "assets/voice-samples/RAW-001.mp3",
-    "fileSizeKB": 626.3,
-    "format": "MP3 Mono 44.1kHz 128kbps (Chuẩn hóa LUFS -16)"
+    "fileSizeKB": 864.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
   },
   "voiceCharacteristics": {
-    "genderEstimate": "Nữ / Trẻ em",
-    "ageEstimate": "Trẻ em / Thiếu nhi (6-12 tuổi) hoặc Nữ trẻ trung (20-25)",
-    "toneAndStyle": "Trong trẻo, tươi vui, giàu nhạc điệu, nhí nhảnh",
-    "estimatedPace": "120 - 135 từ/phút (Vừa phải, phát âm tròn vành rõ chữ)",
-    "nicheCategory": "Trẻ em / hoạt hình / IP"
+    "genderEstimate": "Nữ trẻ trung / Trẻ em",
+    "ageRange": "20 – 25 tuổi (hoặc bé gái 8-12 tuổi)",
+    "toneAndStyle": "Trong trẻo, cao, năng động, tươi vui rạng rỡ, nhí nhảnh",
+    "targetAudience": "Trẻ em mầm non (Toddler & Kids 1-6 tuổi) và Phụ huynh",
+    "actualPaceWPM": "165 từ/phút (Nhịp điệu vừa phải, hát rõ lời, nhấn nhá từng âm tiết để trẻ tập nói theo)"
   },
-  "aiVoiceCloningGuide": {
-    "elevenlabsRecommendedVoices": [
-      "Gigi (Childish & Playful)",
-      "Freya (Expressive & Youthful)",
-      "Alice (Confident & Clear)"
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Gigi (Childish & Upbeat Animation)",
+    "alternativeVoices": [
+      "Freya (Expressive Youthful Story)",
+      "Alice (Clear & Bright Kids)"
     ],
-    "suggestedVoiceDesignPrompt": "A cheerful and energetic young female voice with an upbeat, playful tone suitable for children animations and nursery rhymes.",
-    "usageNotes": "Mẫu voice đã được lọc nhiễu nhẹ và chuẩn hóa -16 LUFS, sẵn sàng nạp trực tiếp vào ElevenLabs Instant Voice Clone hoặc Custom Voice Design."
+    "voiceSettings": {
+      "stability": 0.35,
+      "similarity_boost": 0.82,
+      "style": 0.25,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A youthful, cheerful female voice with a high, bright, and playful pitch. Sounds warm, bubbly, and enthusiastic, perfect for nursery rhymes and animated children stories.",
+    "dubbingProductionSOP": "Giọng đọc/hát cần tươi cười trong khi thu âm (smiling voice), giữ năng lượng cao từ đầu đến cuối, không hạ giọng ở cuối câu để giữ sự phấn khích cho trẻ."
   }
 }

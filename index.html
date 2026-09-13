@@ -2218,15 +2218,18 @@
                     </div>
                   </div>
 
-                  <!-- Box 2: Khuôn Đúc Kịch Bản & Hook 3s-15s -->
-                  <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
+                  <!-- Box 2: Khuôn Đúc Kịch Bản & Hook 3s-15s (Chuẩn North Effect 70/30) -->
+                  <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.65rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; flex-wrap:wrap;">
                       <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>📝</span> Khuôn Đúc Kịch Bản (Script Blueprint)
                       </div>
-                      <div style="display:flex; align-items:center; gap:0.35rem;">
+                      <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;">
                         <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(refVid)}" data-title="${esc(refTitle)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(refViews)}" style="font-size:0.7rem; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">📜 Kịch Bản Gốc (${esc(refVid ? refVid.slice(0,6) : 'Sub')})</button>
-                        <button type="button" onclick="navigator.clipboard.writeText('${esc(sb.masterScriptPrompt || '')}').then(()=>alert('Đã copy Master Scriptwriting Prompt!'))" style="font-size:0.72rem; color:#34d399; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">📋 Copy Script Prompt</button>
+                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" target="_blank" rel="noopener noreferrer" style="font-size:0.7rem; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;" class="hover:bg-purple-600 hover:text-white transition">
+                          <span>📄 SOP North Effect</span> ↗
+                        </a>
+                        <button type="button" onclick="navigator.clipboard.writeText(decodeURIComponent('${encodeURIComponent(sb.masterScriptPrompt || '')}')).then(()=>alert('Đã copy Full Master Scriptwriting Prompt (Chuẩn North Effect 70/30)!'))" style="font-size:0.72rem; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">📋 Copy Full Master Prompt</button>
                       </div>
                     </div>
 
@@ -2234,10 +2237,28 @@
                       <div><strong style="color:#fcd34d;">HOOK 0–15s:</strong> <span style="color:#f8fafc;">${esc(sb.hookArchetype || '')}</span></div>
                       <div style="font-size:0.72rem; color:#94a3b8; font-style:italic; line-height:1.4;">"${esc(sb.openingFormula || '')}"</div>
                       <div style="font-size:0.72rem; color:#38bdf8; line-height:1.45;"><strong style="color:#38bdf8;">NHỊP PACING:</strong> ${esc(sb.pacingStructure || '')}</div>
-                      ${sb.masterScriptPrompt ? `
-                      <div style="border-top:1px solid #1e293b; padding-top:0.4rem; font-size:0.72rem; color:#e2e8f0; line-height:1.4;">
-                        <strong style="color:#34d399;">Master Prompt (70/30):</strong> "${esc(sb.masterScriptPrompt)}"
-                      </div>` : ''}
+                      
+                      <!-- Chi Tiết Công Thức North Effect 70/30 -->
+                      <div style="border-top:1px solid #1e293b; padding-top:0.45rem; display:flex; flex-direction:column; gap:0.35rem;">
+                        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.3rem;">
+                          <span style="font-size:0.73rem; font-weight:700; color:#34d399; display:flex; align-items:center; gap:0.3rem;">
+                            <span>⚡</span> Công Thức North Effect (70/30 Part-by-Part SOP):
+                          </span>
+                          <span style="font-size:0.68rem; color:#94a3b8; background:#1e293b; padding:0.1rem 0.4rem; border-radius:0.25rem;">
+                            10–15 Parts · 1000–1100 từ/Part · Lệnh "CONTINUE"
+                          </span>
+                        </div>
+                        <div style="font-size:0.7rem; color:#94a3b8; line-height:1.4;">
+                          ${esc(sb.masterScriptPromptShort || 'Giữ 70% mạch kịch bản & dẫn chứng gốc của đối thủ; Bổ sung 30% góc nhìn, bối cảnh lịch sử và phản biện học thuật mới. Chia Part viết nối tiếp để không bị giới hạn token.')}
+                        </div>
+                        
+                        <!-- Box Prompt Đầy Đủ Có Thể Cuộn & Đọc Trực Tiếp -->
+                        ${sb.masterScriptPrompt ? `
+                        <div style="position:relative; margin-top:0.3rem;">
+                          <pre style="margin:0; max-height:140px; overflow-y:auto; background:#070a12; border:1px solid #233148; border-radius:0.375rem; padding:0.6rem 0.75rem; font-size:0.68rem; color:#e2e8f0; font-family:monospace; white-space:pre-wrap; word-break:break-word; line-height:1.45;">${esc(sb.masterScriptPrompt)}</pre>
+                          <div style="position:absolute; top:0.35rem; right:0.5rem; font-size:0.65rem; color:#64748b; background:rgba(15,23,42,0.85); padding:0.1rem 0.35rem; border-radius:0.25rem; pointer-events:none;">Full Training Prompt</div>
+                        </div>` : ''}
+                      </div>
                     </div>
                   </div>
 

@@ -101,5 +101,56 @@
       "title": "Kích Hoạt YPP & AdSense",
       "detail": "Seeding ngầm 2 tab, đạt mốc 1.000 sub / 4.000 giờ thì bật kiếm tiền qua tab ẩn danh sạch."
     }
-  ]
+  ],
+  "yppRiskNote": {
+    "status": "WATCHLIST_LOW_RISK_ACTIVE",
+    "reason": "Kênh đang active và có YPP signal tốt, nhưng mô tả nhiều video có disclaimer \"Some visuals were AI-generated\" nên cần phòng thủ Reused/Inauthentic Content khi nhân bản.",
+    "riskFactors": [
+      "AI-generated visuals có thể bị đánh giá reused/template nếu dùng lặp shot/prompt mà thiếu bình luận gốc.",
+      "Chủ đề khảo cổ/địa lý dễ bị overclaim nếu không dẫn nguồn và không phân biệt giả thuyết với sự thật.",
+      "Format TOP 10/TOP 15 dễ thành công thức lặp nếu không đổi cấu trúc hook, nhịp cliffhanger và source research."
+    ],
+    "requiredMitigations": [
+      "Mỗi video mới phải có commentary/analysis gốc rõ ràng, không chỉ đọc lại transcript đối thủ.",
+      "Visual phải có biến thể shot và evidence-driven scene list; tránh reuse asset/prompt y hệt nhiều video.",
+      "Bắt buộc AI disclosure khi hình ảnh/đoạn dựng có AI-generated visuals theo chính sách YouTube.",
+      "Hook 0-15s và claims khảo cổ phải grounded transcript/source; không bịa số liệu hoặc kết luận lịch sử."
+    ],
+    "templateForFutureChannels": true,
+    "updatedAt": "2026-09-13"
+  },
+  "dataGaps": {
+    "liveSnapshotAfter2026_09_09": {
+      "status": "NEEDS_REFRESH",
+      "currentEvidence": "Subscribers/views/videoCount/latestUpload đang dựa trên snapshot extractedAt=2026-09-09T03:28:36Z.",
+      "whyItMatters": "Nếu dùng làm hồ sơ mẫu lâu dài, cần refresh định kỳ để biết kênh còn active/YPP/live growth hay đã private/purge video.",
+      "nextCheck": "Dùng vidIQ/YouTube live hoặc oEmbed/API để refresh subscribers, views, videoCount, latestUpload, top videos."
+    },
+    "thumbnailOcrVisualScoring10of10": {
+      "status": "MISSING_SCORE",
+      "currentEvidence": "Có thumbnail URL 10/10 top videos và OCR outlier từ snapshot raw, nhưng chưa có điểm visual/CTR/OCR riêng từng thumbnail.",
+      "whyItMatters": "Cần điểm hóa CTR packaging để nhân bản được bố cục thắng: mặt chính, text overlay, contrast, curiosity gap, mobile readability.",
+      "nextCheck": "Chạy OCR/vision cho 10/10 thumbnail, chấm 0-100 theo clarity, contrast, subject scale, text burden, curiosity, policy safety."
+    },
+    "retentionAvdProxy": {
+      "status": "PROXY_ONLY",
+      "currentEvidence": "Chưa có dữ liệu retention/AVD thật; hiện chỉ suy ra từ VPH, views, duration, comment density, transcript pacing và breakoutScore.",
+      "whyItMatters": "AVD là tín hiệu quyết định scale; proxy giúp ước lượng nhưng không thay thế retention chart thật.",
+      "nextCheck": "Tạo AVD proxy score từ transcript cliffhanger density, segment pacing, first-60s hook strength, VPH/views velocity và comment density."
+    }
+  },
+  "thumbnailScoringRubric": {
+    "status": "RUBRIC_READY_NOT_SCORED",
+    "dimensions": [
+      "subjectScale",
+      "contrast",
+      "mobileReadability",
+      "curiosityGap",
+      "textBurden",
+      "policySafety",
+      "visualNovelty"
+    ],
+    "scale": "0-100 per dimension; final average with policySafety as hard gate",
+    "appliesTo": "10/10 top video thumbnails in top-videos.json"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "base": "https://h2dev-learn.tonymmo.com",
+  "base": "http://127.0.0.1:8899",
   "checks": [
     {
       "name": "Card RAW-021 visible",
@@ -85,6 +85,26 @@
       "name": "Modal contains: Sao chép tất cả Tags",
       "pass": true,
       "detail": "Sao chép tất cả Tags"
+    },
+    {
+      "name": "Modal contains: YPP Risk Note",
+      "pass": true,
+      "detail": "YPP Risk Note"
+    },
+    {
+      "name": "Modal contains: Data Gaps",
+      "pass": true,
+      "detail": "Data Gaps"
+    },
+    {
+      "name": "Modal contains: Display Rank",
+      "pass": true,
+      "detail": "Display Rank"
+    },
+    {
+      "name": "Modal contains: Source Rank gốc",
+      "pass": true,
+      "detail": "Source Rank gốc"
     },
     {
       "name": "Mission Control visible",

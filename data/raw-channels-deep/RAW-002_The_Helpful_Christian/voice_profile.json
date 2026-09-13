@@ -5,28 +5,38 @@
     "videoId": "wqAKUbHvNXU",
     "title": "Do This in Remembrance of Me Why Remembrance in the Bible Means Sacrifice Catholic v Protestant View",
     "url": "https://www.youtube.com/watch?v=wqAKUbHvNXU",
-    "timeWindow": "20s – 60s (40s)"
+    "timeWindow": "35s – 80s (45s)",
+    "selectionMethod": "Smart Cut dựa trên mật độ thoại cao nhất trong Transcript"
   },
-  "sampleAudio": {
+  "audioSpecs": {
     "localPath": "data/raw-channels-deep/RAW-002_The_Helpful_Christian/voice_sample_30s.mp3",
     "publicUrl": "assets/voice-samples/RAW-002.mp3",
-    "fileSizeKB": 626.3,
-    "format": "MP3 Mono 44.1kHz 128kbps (Chuẩn hóa LUFS -16)"
+    "fileSizeKB": 1056.9,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
   },
   "voiceCharacteristics": {
-    "genderEstimate": "Nam / Nữ chuyên nghiệp",
-    "ageEstimate": "30-50 tuổi",
-    "toneAndStyle": "Rõ ràng, tự nhiên, cuốn hút",
-    "estimatedPace": "120-130 từ/phút",
-    "nicheCategory": "Đức tin / Kinh Thánh"
+    "genderEstimate": "Nam trung niên trí thức",
+    "ageRange": "35 – 45 tuổi",
+    "toneAndStyle": "Trầm ấm, điềm đạm, có chiều sâu học thuật, đĩnh đạc nhưng gần gũi",
+    "targetAudience": "Tín hữu Kitô giáo, người tìm hiểu thần học và lịch sử tôn giáo",
+    "actualPaceWPM": "207 từ/phút (Tốc độ vừa phải, ngắt nghỉ câu rõ ràng, nhấn mạnh trọng âm các từ khóa thần học)"
   },
-  "aiVoiceCloningGuide": {
-    "elevenlabsRecommendedVoices": [
-      "Adam (Versatile Narrative)",
-      "Rachel (Clear & Friendly)",
-      "George (Deep Narrative)"
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2 (hoặc Turbo v2.5 cho tốc độ)",
+    "primaryVoiceMatch": "Daniel (Deep Authoritative Theological Wisdom)",
+    "alternativeVoices": [
+      "Will (Friendly & Earnest Religious Educator)",
+      "Adam (Clear Professional Dialogue)"
     ],
-    "suggestedVoiceDesignPrompt": "A clear, engaging, and versatile narrator voice with natural inflections suitable for educational documentaries.",
-    "usageNotes": "Mẫu voice đã được lọc nhiễu nhẹ và chuẩn hóa -16 LUFS, sẵn sàng nạp trực tiếp vào ElevenLabs Instant Voice Clone hoặc Custom Voice Design."
+    "voiceSettings": {
+      "stability": 0.65,
+      "similarity_boost": 0.85,
+      "style": 0.08,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, warm, and articulate male American voice with a calm, intellectual tone. Clear diction, trustworthy, and measured, ideal for theological analysis and biblical documentaries.",
+    "dubbingProductionSOP": "Giữ âm vực ngực (chest resonance), tốc độ ổn định, không dùng hiệu ứng reverb quá mức; cần tạo cảm giác một người thầy đang trò chuyện thân mật."
   }
 }

@@ -235,7 +235,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Nhí nhảnh / Trẻ thơ)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -427,7 +427,9 @@
           "estimatedMonthlyRev": "$51 – $95 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -442,6 +444,12 @@
         "estimatedMonthlyRev": "$51 – $95 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -633,7 +641,9 @@
           "estimatedMonthlyRev": "$10 – $19 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -648,6 +658,12 @@
         "estimatedMonthlyRev": "$10 – $19 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -837,7 +853,9 @@
           "estimatedMonthlyRev": "$1 – $2 / tháng",
           "playableVideosCount": 9,
           "totalAuditedVideos": 9
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -852,6 +870,12 @@
         "estimatedMonthlyRev": "$1 – $2 / tháng",
         "playableVideosCount": 9,
         "totalAuditedVideos": 9
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -1041,7 +1065,9 @@
           "estimatedMonthlyRev": "$949 – $1,762 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1056,6 +1082,12 @@
         "estimatedMonthlyRev": "$949 – $1,762 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -1247,7 +1279,9 @@
           "estimatedMonthlyRev": "$382 – $709 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1262,6 +1296,12 @@
         "estimatedMonthlyRev": "$382 – $709 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -1421,7 +1461,9 @@
           "estimatedMonthlyRev": "$15 – $28 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1436,6 +1478,12 @@
         "estimatedMonthlyRev": "$15 – $28 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -1596,7 +1644,9 @@
           "estimatedMonthlyRev": "$2,097 – $3,894 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1611,6 +1661,12 @@
         "estimatedMonthlyRev": "$2,097 – $3,894 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -1772,7 +1828,9 @@
           "estimatedMonthlyRev": "$21 – $40 / tháng",
           "playableVideosCount": 8,
           "totalAuditedVideos": 8
-        }
+        },
+        "audioLanguage": "Tiếng Nhật (Japanese)",
+        "languageFlag": "🇯🇵"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1787,6 +1845,12 @@
         "estimatedMonthlyRev": "$21 – $40 / tháng",
         "playableVideosCount": 8,
         "totalAuditedVideos": 8
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Nhật (Japanese)",
+        "code": "ja-JP",
+        "flag": "🇯🇵",
+        "dialect": "Polite Senior Japanese (Tư vấn người cao tuổi)"
       }
     },
     {
@@ -1969,7 +2033,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Hoạt hình hài hước / Parody)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -2131,7 +2195,9 @@
           "estimatedMonthlyRev": "$330 – $613 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2146,6 +2212,12 @@
         "estimatedMonthlyRev": "$330 – $613 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -2310,7 +2382,9 @@
           "estimatedMonthlyRev": "$713 – $1,324 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2325,6 +2399,12 @@
         "estimatedMonthlyRev": "$713 – $1,324 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -2485,7 +2565,9 @@
           "estimatedMonthlyRev": "$5 – $9 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2500,6 +2582,12 @@
         "estimatedMonthlyRev": "$5 – $9 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -2660,7 +2748,9 @@
           "estimatedMonthlyRev": "$428 – $795 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2675,6 +2765,12 @@
         "estimatedMonthlyRev": "$428 – $795 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -2836,7 +2932,9 @@
           "estimatedMonthlyRev": "$143 – $265 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2851,6 +2949,12 @@
         "estimatedMonthlyRev": "$143 – $265 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -3012,7 +3116,9 @@
           "estimatedMonthlyRev": "$1,338 – $2,484 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3027,6 +3133,12 @@
         "estimatedMonthlyRev": "$1,338 – $2,484 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -3188,7 +3300,9 @@
           "estimatedMonthlyRev": "$3,575 – $6,639 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3203,6 +3317,12 @@
         "estimatedMonthlyRev": "$3,575 – $6,639 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -3394,7 +3514,9 @@
           "estimatedMonthlyRev": "$1,772 – $3,290 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3409,6 +3531,12 @@
         "estimatedMonthlyRev": "$1,772 – $3,290 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -3569,7 +3697,9 @@
           "estimatedMonthlyRev": "$37 – $69 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Nhật (Japanese)",
+        "languageFlag": "🇯🇵"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3584,6 +3714,12 @@
         "estimatedMonthlyRev": "$37 – $69 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Nhật (Japanese)",
+        "code": "ja-JP",
+        "flag": "🇯🇵",
+        "dialect": "Friendly Japanese (Thuyết minh thú cưng)"
       }
     },
     {
@@ -3775,7 +3911,9 @@
           "estimatedMonthlyRev": "$5,749 – $10,677 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3790,6 +3928,12 @@
         "estimatedMonthlyRev": "$5,749 – $10,677 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -3973,7 +4117,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "International English (Tài liệu thám hiểm hang động)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -4165,7 +4309,9 @@
           "estimatedMonthlyRev": "$1,029 – $1,910 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4180,6 +4326,12 @@
         "estimatedMonthlyRev": "$1,029 – $1,910 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -4394,7 +4546,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Vintage Analog Horror)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -4584,7 +4736,9 @@
           "estimatedMonthlyRev": "$2,238 – $4,156 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4599,6 +4753,12 @@
         "estimatedMonthlyRev": "$2,238 – $4,156 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -4811,7 +4971,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Casual Gamer / Lore Sarcastic)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -4972,7 +5132,9 @@
           "estimatedMonthlyRev": "$455 – $845 / tháng",
           "playableVideosCount": 6,
           "totalAuditedVideos": 6
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4987,6 +5149,12 @@
         "estimatedMonthlyRev": "$455 – $845 / tháng",
         "playableVideosCount": 6,
         "totalAuditedVideos": 6
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -5220,7 +5388,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Kể chuyện mầm non / Ấm áp)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -5382,7 +5550,9 @@
           "estimatedMonthlyRev": "$493 – $916 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5397,6 +5567,12 @@
         "estimatedMonthlyRev": "$493 – $916 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -5601,7 +5777,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Bình luận xe / SFX Action)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -5763,7 +5939,9 @@
           "estimatedMonthlyRev": "$5,514 – $10,240 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5778,6 +5956,12 @@
         "estimatedMonthlyRev": "$5,514 – $10,240 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -5939,7 +6123,9 @@
           "estimatedMonthlyRev": "",
           "playableVideosCount": 0,
           "totalAuditedVideos": 0
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇬🇧"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5954,6 +6140,12 @@
         "estimatedMonthlyRev": "",
         "playableVideosCount": 0,
         "totalAuditedVideos": 0
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-GB",
+        "flag": "🇬🇧",
+        "dialect": "British English (BBC Style)"
       }
     },
     {
@@ -6115,7 +6307,9 @@
           "estimatedMonthlyRev": "$1,905 – $3,537 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6130,6 +6324,12 @@
         "estimatedMonthlyRev": "$1,905 – $3,537 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -6291,7 +6491,9 @@
           "estimatedMonthlyRev": "$3,004 – $5,580 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6306,6 +6508,12 @@
         "estimatedMonthlyRev": "$3,004 – $5,580 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -6467,7 +6675,9 @@
           "estimatedMonthlyRev": "$23,461 – $43,570 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6482,6 +6692,12 @@
         "estimatedMonthlyRev": "$23,461 – $43,570 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -6643,7 +6859,9 @@
           "estimatedMonthlyRev": "$5,811 – $10,792 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6658,6 +6876,12 @@
         "estimatedMonthlyRev": "$5,811 – $10,792 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -6819,7 +7043,9 @@
           "estimatedMonthlyRev": "$152 – $282 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6834,6 +7060,12 @@
         "estimatedMonthlyRev": "$152 – $282 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -6996,7 +7228,9 @@
           "estimatedMonthlyRev": "$217 – $403 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7011,6 +7245,12 @@
         "estimatedMonthlyRev": "$217 – $403 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -7173,7 +7413,9 @@
           "estimatedMonthlyRev": "$1,351 – $2,509 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7188,6 +7430,12 @@
         "estimatedMonthlyRev": "$1,351 – $2,509 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -7351,7 +7599,9 @@
           "estimatedMonthlyRev": "$1,655 – $3,073 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7366,6 +7616,12 @@
         "estimatedMonthlyRev": "$1,655 – $3,073 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -7527,7 +7783,9 @@
           "estimatedMonthlyRev": "$2,404 – $4,464 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7542,6 +7800,12 @@
         "estimatedMonthlyRev": "$2,404 – $4,464 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -7703,7 +7967,9 @@
           "estimatedMonthlyRev": "$173 – $321 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7718,6 +7984,12 @@
         "estimatedMonthlyRev": "$173 – $321 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -7878,7 +8150,9 @@
           "estimatedMonthlyRev": "$1,040 – $1,931 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7893,6 +8167,12 @@
         "estimatedMonthlyRev": "$1,040 – $1,931 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -8054,7 +8334,9 @@
           "estimatedMonthlyRev": "$74 – $137 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8069,6 +8351,12 @@
         "estimatedMonthlyRev": "$74 – $137 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -8230,7 +8518,9 @@
           "estimatedMonthlyRev": "$684 – $1,270 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8245,6 +8535,12 @@
         "estimatedMonthlyRev": "$684 – $1,270 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -8406,7 +8702,9 @@
           "estimatedMonthlyRev": "$955 – $1,774 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Nhật (Japanese)",
+        "languageFlag": "🇯🇵"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8421,6 +8719,12 @@
         "estimatedMonthlyRev": "$955 – $1,774 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Nhật (Japanese)",
+        "code": "ja-JP",
+        "flag": "🇯🇵",
+        "dialect": "Yukkuri Japanese (Kiến thức nền giải trí)"
       }
     },
     {
@@ -8786,7 +9090,9 @@
           "estimatedMonthlyRev": "$488 – $907 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8801,6 +9107,12 @@
         "estimatedMonthlyRev": "$488 – $907 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -8990,7 +9302,9 @@
           "estimatedMonthlyRev": "$604 – $1,121 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9005,6 +9319,12 @@
         "estimatedMonthlyRev": "$604 – $1,121 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -9194,7 +9514,9 @@
           "estimatedMonthlyRev": "$1,276 – $2,370 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9209,6 +9531,12 @@
         "estimatedMonthlyRev": "$1,276 – $2,370 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -9399,7 +9727,9 @@
           "estimatedMonthlyRev": "$6,780 – $12,591 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9414,6 +9744,12 @@
         "estimatedMonthlyRev": "$6,780 – $12,591 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -9628,7 +9964,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "Mid-Atlantic English (National Geographic Cinematic)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -9843,7 +10179,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "General American (Phóng sự đời sống Siberia sâu lắng)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -10058,7 +10394,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "Standard English (Khám phá văn hóa & địa lý đảo)"
+        "dialect": "Canadian English"
       }
     },
     {
@@ -10271,7 +10607,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Phóng viên du lịch thế giới)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -10441,7 +10777,9 @@
           "estimatedMonthlyRev": "$613 – $1,138 / tháng",
           "playableVideosCount": 5,
           "totalAuditedVideos": 5
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10456,6 +10794,12 @@
         "estimatedMonthlyRev": "$613 – $1,138 / tháng",
         "playableVideosCount": 5,
         "totalAuditedVideos": 5
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Canadian English"
       }
     },
     {
@@ -10618,7 +10962,9 @@
           "estimatedMonthlyRev": "$3,223 – $5,985 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10633,6 +10979,12 @@
         "estimatedMonthlyRev": "$3,223 – $5,985 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -10795,7 +11147,9 @@
           "estimatedMonthlyRev": "$133 – $247 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10810,6 +11164,12 @@
         "estimatedMonthlyRev": "$133 – $247 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -10971,7 +11331,9 @@
           "estimatedMonthlyRev": "$3 – $5 / tháng",
           "playableVideosCount": 9,
           "totalAuditedVideos": 9
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10986,6 +11348,12 @@
         "estimatedMonthlyRev": "$3 – $5 / tháng",
         "playableVideosCount": 9,
         "totalAuditedVideos": 9
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -11146,7 +11514,9 @@
           "estimatedMonthlyRev": "$84 – $156 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11161,6 +11531,12 @@
         "estimatedMonthlyRev": "$84 – $156 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -11351,7 +11727,9 @@
           "estimatedMonthlyRev": "$20,850 – $38,721 / tháng",
           "playableVideosCount": 4,
           "totalAuditedVideos": 4
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11366,6 +11744,12 @@
         "estimatedMonthlyRev": "$20,850 – $38,721 / tháng",
         "playableVideosCount": 4,
         "totalAuditedVideos": 4
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -11526,7 +11910,9 @@
           "estimatedMonthlyRev": "$641 – $1,190 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11541,6 +11927,12 @@
         "estimatedMonthlyRev": "$641 – $1,190 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -11700,7 +12092,9 @@
           "estimatedMonthlyRev": "$8 – $15 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11715,6 +12109,12 @@
         "estimatedMonthlyRev": "$8 – $15 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -11894,7 +12294,9 @@
           "estimatedMonthlyRev": "$3,208 – $5,958 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11909,6 +12311,12 @@
         "estimatedMonthlyRev": "$3,208 – $5,958 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Canadian English"
       }
     },
     {
@@ -12099,7 +12507,9 @@
           "estimatedMonthlyRev": "$3,225 – $5,990 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12114,6 +12524,12 @@
         "estimatedMonthlyRev": "$3,225 – $5,990 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -12275,7 +12691,9 @@
           "estimatedMonthlyRev": "$96 – $178 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12290,6 +12708,12 @@
         "estimatedMonthlyRev": "$96 – $178 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -12474,7 +12898,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Video Essay Hoạt hình)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -12646,7 +13070,9 @@
           "estimatedMonthlyRev": "$9,718 – $18,048 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12661,6 +13087,12 @@
         "estimatedMonthlyRev": "$9,718 – $18,048 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -12851,7 +13283,9 @@
           "estimatedMonthlyRev": ",256 – ,475 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12866,6 +13300,12 @@
         "estimatedMonthlyRev": ",256 – ,475 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -13048,7 +13488,9 @@
           "estimatedMonthlyRev": "$1,169 – $2,171 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13063,6 +13505,12 @@
         "estimatedMonthlyRev": "$1,169 – $2,171 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -13276,7 +13724,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Comic Ranking / Nhịp nhanh)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -13464,7 +13912,9 @@
           "estimatedMonthlyRev": "$4,584 – $8,513 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13479,6 +13929,12 @@
         "estimatedMonthlyRev": "$4,584 – $8,513 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Australian English"
       }
     },
     {
@@ -13693,7 +14149,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "Epic English (Sử thi kỳ quan Trái Đất 4K)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -13906,7 +14362,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "Southern American English (Phóng viên điều tra địa phương)"
+        "dialect": "Canadian English"
       }
     },
     {
@@ -14097,7 +14553,9 @@
           "estimatedMonthlyRev": "$402 – $746 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14112,6 +14570,12 @@
         "estimatedMonthlyRev": "$402 – $746 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -14273,7 +14737,9 @@
           "estimatedMonthlyRev": "$5,328 – $9,894 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14288,6 +14754,12 @@
         "estimatedMonthlyRev": "$5,328 – $9,894 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -14448,7 +14920,9 @@
           "estimatedMonthlyRev": "$234 – $434 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Nhật (Japanese)",
+        "languageFlag": "🇯🇵"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14463,6 +14937,12 @@
         "estimatedMonthlyRev": "$234 – $434 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Nhật (Japanese)",
+        "code": "ja-JP",
+        "flag": "🇯🇵",
+        "dialect": "2ch Dialogue Japanese (Diễn đàn học tiếng Anh)"
       }
     },
     {
@@ -14624,7 +15104,9 @@
           "estimatedMonthlyRev": "$427 – $793 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14639,6 +15121,12 @@
         "estimatedMonthlyRev": "$427 – $793 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -14830,7 +15318,9 @@
           "estimatedMonthlyRev": "$4,446 – $8,256 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14845,6 +15335,12 @@
         "estimatedMonthlyRev": "$4,446 – $8,256 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -15058,7 +15554,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "American English (Deadpan Satirical Investigation)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -15468,7 +15964,9 @@
           "estimatedMonthlyRev": "$165 – $306 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15483,6 +15981,12 @@
         "estimatedMonthlyRev": "$165 – $306 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Australian English"
       }
     },
     {
@@ -15673,7 +16177,9 @@
           "estimatedMonthlyRev": "$1,667 – $3,096 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15688,6 +16194,12 @@
         "estimatedMonthlyRev": "$1,667 – $3,096 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -15872,7 +16384,7 @@
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
-        "dialect": "Documentary English (Phóng sự nhân văn & địa chính trị)"
+        "dialect": "Standard American English"
       }
     },
     {
@@ -15948,7 +16460,15 @@
           "estimatedMonthlyRev": ",800 – ,200 / tháng",
           "playableVideosCount": 237,
           "totalAuditedVideos": 237
-        }
+        },
+        "audioLanguage": "Tiếng Tây Ban Nha (Spanish)",
+        "languageFlag": "🇪🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Tây Ban Nha (Spanish)",
+        "code": "es-MX",
+        "flag": "🇪🇸",
+        "dialect": "Mexican Spanish (Khám phá địa phương & văn hóa Mexico)"
       }
     },
     {
@@ -16024,7 +16544,15 @@
           "estimatedMonthlyRev": ",500 – ,800 / tháng",
           "playableVideosCount": 28,
           "totalAuditedVideos": 28
-        }
+        },
+        "audioLanguage": "Tiếng Nhật (Japanese)",
+        "languageFlag": "🇯🇵"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Nhật (Japanese)",
+        "code": "ja-JP",
+        "flag": "🇯🇵",
+        "dialect": "Classical Japanese (Kịch lịch sử Chiến Quốc AI)"
       }
     },
     {
@@ -16100,7 +16628,15 @@
           "estimatedMonthlyRev": "00 – ,100 / tháng",
           "playableVideosCount": 15,
           "totalAuditedVideos": 15
-        }
+        },
+        "audioLanguage": "Tiếng Nhật (Japanese)",
+        "languageFlag": "🇯🇵"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Nhật (Japanese)",
+        "code": "ja-JP",
+        "flag": "🇯🇵",
+        "dialect": "Tokyo Casual Japanese (Manga tâm sự đời thực)"
       }
     },
     {
@@ -16176,7 +16712,15 @@
           "estimatedMonthlyRev": ",500 – 8,200 / tháng",
           "playableVideosCount": 481,
           "totalAuditedVideos": 481
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16252,7 +16796,15 @@
           "estimatedMonthlyRev": ",200 – ,100 / tháng",
           "playableVideosCount": 29,
           "totalAuditedVideos": 29
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16327,7 +16879,15 @@
           "estimatedMonthlyRev": ",500 – ,900 / tháng",
           "playableVideosCount": 70,
           "totalAuditedVideos": 70
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16402,7 +16962,15 @@
           "estimatedMonthlyRev": "00 – ,400 / tháng",
           "playableVideosCount": 100,
           "totalAuditedVideos": 100
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16478,7 +17046,15 @@
           "estimatedMonthlyRev": ",200 – ,500 / tháng",
           "playableVideosCount": 35,
           "totalAuditedVideos": 35
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16554,7 +17130,15 @@
           "estimatedMonthlyRev": ",200 – ,500 / tháng",
           "playableVideosCount": 35,
           "totalAuditedVideos": 35
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16630,7 +17214,15 @@
           "estimatedMonthlyRev": ",200 – ,500 / tháng",
           "playableVideosCount": 35,
           "totalAuditedVideos": 35
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16706,7 +17298,15 @@
           "estimatedMonthlyRev": ",500 – 1,000 / tháng",
           "playableVideosCount": 42,
           "totalAuditedVideos": 42
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16782,7 +17382,15 @@
           "estimatedMonthlyRev": ",500 – 1,000 / tháng",
           "playableVideosCount": 42,
           "totalAuditedVideos": 42
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16859,7 +17467,15 @@
           "estimatedMonthlyRev": "8,000 – 2,000 / tháng",
           "playableVideosCount": 240,
           "totalAuditedVideos": 240
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     },
     {
@@ -16935,7 +17551,15 @@
           "estimatedMonthlyRev": "8,000 – 2,000 / tháng",
           "playableVideosCount": 240,
           "totalAuditedVideos": 240
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard American English"
       }
     }
   ],

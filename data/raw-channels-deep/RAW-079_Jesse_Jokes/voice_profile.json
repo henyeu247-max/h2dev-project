@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-079",
+  "channelFolder": "RAW-079_Jesse_Jokes",
+  "sourceVideo": {
+    "videoId": "qieJzQ0sL3w",
+    "title": "Ranking Every Illuminations Villain",
+    "url": "https://www.youtube.com/watch?v=qieJzQ0sL3w",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-079_Jesse_Jokes/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-079.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam hoạt náo viên / Kể chuyện hài hước bảng xếp hạng",
+    "ageRange": "20 – 28 tuổi",
+    "toneAndStyle": "Hài hước, tốc độ cao, biểu cảm đa dạng, dí dỏm thân thiện",
+    "targetAudience": "Khán giả đại chúng, trẻ em và gia đình yêu thích phim hoạt hình chiếu rạp",
+    "actualPaceWPM": "186 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "A compact acoustically dampened creator studio. Dry, crisp audio captures fast comedic inflections without flutter echo.",
+    "sampleContext": "Playful, punchy, lively, and enthusiastic. Rapid comedic cadence with expressive delivery for ranking formats.",
+    "speakerTag": "Speaker 1 - Ranking Host (Will / Charlie)",
+    "sampleSpeechBlock": "from the movie Hop is called a kudeta which is a French for Keta first of all what the [ __ ] is this so Carlos is an Easter chick that is second in command to the Easter Bunny but he is tired of his job and he wants a promotion to become the new Easter Bunny So He suggests his idea to the Easter Bunny I mean does it even have to be a a Bonnie what well I suppose given these trouble times even a humble chick could uh do the job but the Easter Bunny is not going to make Carlos the new Easter Bunny because he wants his son to be the new Easter Bunny and also how can a Mexican chick be the Easter bun racist so then Carlos decides to start a chick Revolution",
+    "combinedPromptTemplate": "Scene: A compact acoustically dampened creator studio. Dry, crisp audio captures fast comedic inflections without flutter echo.\nSample Context: Playful, punchy, lively, and enthusiastic. Rapid comedic cadence with expressive delivery for ranking formats.\n\nSpeaker 1 - Ranking Host (Will / Charlie):\nfrom the movie Hop is called a kudeta which is a French for Keta first of all what the [ __ ] is this so Carlos is an Easter chick that is second in command to the Easter Bunny but he is tired of his job and he wants a promotion to become the new Easter Bunny So He suggests his idea to the Easter Bunny I mean does it even have to be a a Bonnie what well I suppose given these trouble times even a humble chick could uh do the job but the Easter Bunny is not going to make Carlos the new Easter Bunny because he wants his son to be the new Easter Bunny and also how can a Mexican chick be the Easter bun racist so then Carlos decides to start a chick Revolution"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Will (Upbeat Comic Narrator)",
+    "alternativeVoices": [
+      "Charlie (Punchy Cartoon Host)",
+      "Liam (Casual Comic)"
+    ],
+    "voiceSettings": {
+      "stability": 0.36,
+      "similarity_boost": 0.83,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Hài hước, tốc độ cao, biểu cảm đa dạng, dí dỏm thân thiện. Suitable for Khán giả đại chúng, trẻ em và gia đình yêu thích phim hoạt hình chiếu rạp.",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

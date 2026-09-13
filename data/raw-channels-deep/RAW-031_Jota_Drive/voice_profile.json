@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-031",
+  "channelFolder": "RAW-031_Jota_Drive",
+  "sourceVideo": {
+    "videoId": "zs1B4g0O_vQ",
+    "title": "Truck and Car Crashes #13 [BeamNG.Drive]",
+    "url": "https://www.youtube.com/watch?v=zs1B4g0O_vQ",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-031_Jota_Drive/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-031.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam bình luận viên / Trẻ trung sảng khoái",
+    "ageRange": "20 – 28 tuổi",
+    "toneAndStyle": "Hào hứng, trực quan, ngắn gọn, hỗ trợ hiệu ứng âm thanh mô phỏng",
+    "targetAudience": "Trẻ em và thanh thiếu niên đam mê mô phỏng xe cộ, BeamNG Drive",
+    "actualPaceWPM": "30 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "A modern podcast streaming studio. Treated booth acoustics, rich mid-range voice punch with crisp attack.",
+    "sampleContext": "Energetic, observant, and punchy. Clear diction with excitement on vehicular stunts and simulation milestones.",
+    "speakerTag": "Speaker 1 - Vehicle Action Host (Sam / Adam)",
+    "sampleSpeechBlock": "Stop the truck! stop now! Hmm, I had an idea. Goodbye. Hahahahaha! Oh no! No, My car! Excuse me, I need the truck.",
+    "combinedPromptTemplate": "Scene: A modern podcast streaming studio. Treated booth acoustics, rich mid-range voice punch with crisp attack.\nSample Context: Energetic, observant, and punchy. Clear diction with excitement on vehicular stunts and simulation milestones.\n\nSpeaker 1 - Vehicle Action Host (Sam / Adam):\nStop the truck! stop now! Hmm, I had an idea. Goodbye. Hahahahaha! Oh no! No, My car! Excuse me, I need the truck."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Sam (Youthful Energetic Commentator)",
+    "alternativeVoices": [
+      "Adam (Warm Commercial)",
+      "Brian (Casual Host)"
+    ],
+    "voiceSettings": {
+      "stability": 0.42,
+      "similarity_boost": 0.8,
+      "style": 0.25,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Hào hứng, trực quan, ngắn gọn, hỗ trợ hiệu ứng âm thanh mô phỏng. Suitable for Trẻ em và thanh thiếu niên đam mê mô phỏng xe cộ, BeamNG Drive.",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

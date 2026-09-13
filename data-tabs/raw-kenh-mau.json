@@ -215,7 +215,17 @@
           "totalAuditedVideos": 7
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "oixhtdMRDHA",
+          "title": "Old MacDonald Had a Farm Morning Routine! 🐄🐕 3D Cartoon for Kids | Animal Song | Animal Sound",
+          "views": 41698696,
+          "vph": 5785,
+          "duration": "PT3M9S",
+          "publishedAt": "2026-01-28",
+          "thumbnail": "https://i.ytimg.com/vi/oixhtdMRDHA/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -236,6 +246,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "oixhtdMRDHA",
+        "title": "Old MacDonald Had a Farm Morning Routine! 🐄🐕 3D Cartoon for Kids | Animal Song | Animal Sound",
+        "views": 41698696,
+        "vph": 5785,
+        "duration": "PT3M9S",
+        "publishedAt": "2026-01-28",
+        "thumbnail": "https://i.ytimg.com/vi/oixhtdMRDHA/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -429,7 +449,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "AgejWuFaNAg",
+          "title": "Who Was C.I. Scofield? The Bible Notes That Reshaped American Christianity",
+          "views": 7189,
+          "vph": 3,
+          "duration": "PT6M28S",
+          "publishedAt": "2026-01-30",
+          "thumbnail": "https://i.ytimg.com/vi/AgejWuFaNAg/sddefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -450,6 +480,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "AgejWuFaNAg",
+        "title": "Who Was C.I. Scofield? The Bible Notes That Reshaped American Christianity",
+        "views": 7189,
+        "vph": 3,
+        "duration": "PT6M28S",
+        "publishedAt": "2026-01-30",
+        "thumbnail": "https://i.ytimg.com/vi/AgejWuFaNAg/sddefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -643,7 +683,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "UBP3W3s6m28",
+          "title": "Everything About Quantum Physics Explained Like You Are 5 Years Old (For Sleep)",
+          "views": 4079,
+          "vph": 0,
+          "duration": "PT2H53M2S",
+          "publishedAt": "2026-06-26",
+          "thumbnail": "https://i.ytimg.com/vi/UBP3W3s6m28/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -664,6 +714,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "UBP3W3s6m28",
+        "title": "Everything About Quantum Physics Explained Like You Are 5 Years Old (For Sleep)",
+        "views": 4079,
+        "vph": 0,
+        "duration": "PT2H53M2S",
+        "publishedAt": "2026-06-26",
+        "thumbnail": "https://i.ytimg.com/vi/UBP3W3s6m28/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -855,7 +915,17 @@
           "totalAuditedVideos": 9
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "70Wiw3aV1qE",
+          "title": "The ENTIRE History of China | Ancient to Modern Explained Simply",
+          "views": 636,
+          "vph": 0,
+          "duration": "PT18M19S",
+          "publishedAt": "2026-07-31",
+          "thumbnail": "https://i.ytimg.com/vi/70Wiw3aV1qE/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -876,6 +946,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "70Wiw3aV1qE",
+        "title": "The ENTIRE History of China | Ancient to Modern Explained Simply",
+        "views": 636,
+        "vph": 0,
+        "duration": "PT18M19S",
+        "publishedAt": "2026-07-31",
+        "thumbnail": "https://i.ytimg.com/vi/70Wiw3aV1qE/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -1067,7 +1147,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "DvTQ7h6-m5I",
+          "title": "Calculus Explained Like You Are 5 Years Old",
+          "views": 3033410,
+          "vph": 262,
+          "duration": "PT16M17S",
+          "publishedAt": "2026-03-24",
+          "thumbnail": "https://i.ytimg.com/vi/DvTQ7h6-m5I/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1088,6 +1178,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "DvTQ7h6-m5I",
+        "title": "Calculus Explained Like You Are 5 Years Old",
+        "views": 3033410,
+        "vph": 262,
+        "duration": "PT16M17S",
+        "publishedAt": "2026-03-24",
+        "thumbnail": "https://i.ytimg.com/vi/DvTQ7h6-m5I/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -1281,7 +1381,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "B8VwBkeTiTc",
+          "title": "London 1300: The Apocalypse Happened in 1348 (AI Reconstruction)",
+          "views": 1270189,
+          "vph": 44,
+          "duration": "PT23M47S",
+          "publishedAt": "2026-02-09",
+          "thumbnail": "https://i.ytimg.com/vi/B8VwBkeTiTc/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1302,6 +1412,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "B8VwBkeTiTc",
+        "title": "London 1300: The Apocalypse Happened in 1348 (AI Reconstruction)",
+        "views": 1270189,
+        "vph": 44,
+        "duration": "PT23M47S",
+        "publishedAt": "2026-02-09",
+        "thumbnail": "https://i.ytimg.com/vi/B8VwBkeTiTc/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -1463,7 +1583,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "-vVOOB3Bglk",
+          "title": "6 Signs of Extremely Low IQ | Psychology Explained",
+          "views": 927713,
+          "vph": 12,
+          "duration": "PT3M4S",
+          "publishedAt": "2025-11-15",
+          "thumbnail": "https://i.ytimg.com/vi/-vVOOB3Bglk/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1484,6 +1614,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "-vVOOB3Bglk",
+        "title": "6 Signs of Extremely Low IQ | Psychology Explained",
+        "views": 927713,
+        "vph": 12,
+        "duration": "PT3M4S",
+        "publishedAt": "2025-11-15",
+        "thumbnail": "https://i.ytimg.com/vi/-vVOOB3Bglk/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -1646,7 +1786,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "koARN2hi4Ic",
+          "title": "Evolution of LOS ANGELES | Fixed - Camera Timelapse 12,000 Years in 14 Mins",
+          "views": 1469824,
+          "vph": 201,
+          "duration": "PT14M6S",
+          "publishedAt": "2026-05-21",
+          "thumbnail": "https://i.ytimg.com/vi/koARN2hi4Ic/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1667,6 +1817,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "koARN2hi4Ic",
+        "title": "Evolution of LOS ANGELES | Fixed - Camera Timelapse 12,000 Years in 14 Mins",
+        "views": 1469824,
+        "vph": 201,
+        "duration": "PT14M6S",
+        "publishedAt": "2026-05-21",
+        "thumbnail": "https://i.ytimg.com/vi/koARN2hi4Ic/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -1830,7 +1990,17 @@
           "totalAuditedVideos": 8
         },
         "audioLanguage": "Tiếng Nhật (Japanese)",
-        "languageFlag": "🇯🇵"
+        "languageFlag": "🇯🇵",
+        "featuredDemoVideo": {
+          "videoId": "9zzKGrmScSM",
+          "title": "【漫画】60代の老後で後悔する『5つの分かれ道』",
+          "views": 163731,
+          "vph": 3,
+          "duration": "PT33M4S",
+          "publishedAt": "2026-07-05",
+          "thumbnail": "https://i.ytimg.com/vi/9zzKGrmScSM/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1851,6 +2021,16 @@
         "code": "ja-JP",
         "flag": "🇯🇵",
         "dialect": "Polite Senior Japanese (Tư vấn người cao tuổi)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "9zzKGrmScSM",
+        "title": "【漫画】60代の老後で後悔する『5つの分かれ道』",
+        "views": 163731,
+        "vph": 3,
+        "duration": "PT33M4S",
+        "publishedAt": "2026-07-05",
+        "thumbnail": "https://i.ytimg.com/vi/9zzKGrmScSM/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -2013,7 +2193,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "i8tgIoF_b70",
+          "title": "Big B Meets D-Light | Thomas UNHINGED Shorts",
+          "views": 5617537,
+          "vph": 574,
+          "duration": "PT4M1S",
+          "publishedAt": "2026-06-20",
+          "thumbnail": "https://i.ytimg.com/vi/i8tgIoF_b70/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2034,6 +2224,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "i8tgIoF_b70",
+        "title": "Big B Meets D-Light | Thomas UNHINGED Shorts",
+        "views": 5617537,
+        "vph": 574,
+        "duration": "PT4M1S",
+        "publishedAt": "2026-06-20",
+        "thumbnail": "https://i.ytimg.com/vi/i8tgIoF_b70/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -2197,7 +2397,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "u5Px7xEc-4Y",
+          "title": "Massacres That Shocked America Forever",
+          "views": 18838,
+          "vph": 0,
+          "duration": "PT1H48M19S",
+          "publishedAt": "2026-08-12",
+          "thumbnail": "https://i.ytimg.com/vi/u5Px7xEc-4Y/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2218,6 +2428,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "u5Px7xEc-4Y",
+        "title": "Massacres That Shocked America Forever",
+        "views": 18838,
+        "vph": 0,
+        "duration": "PT1H48M19S",
+        "publishedAt": "2026-08-12",
+        "thumbnail": "https://i.ytimg.com/vi/u5Px7xEc-4Y/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -2384,7 +2604,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "3Z2UbSm3CfI",
+          "title": "Why do American generals keep visiting these tiny islands?",
+          "views": 123455,
+          "vph": 135,
+          "duration": "PT6M11S",
+          "publishedAt": "2026-07-31",
+          "thumbnail": "https://i.ytimg.com/vi/3Z2UbSm3CfI/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2405,6 +2635,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "3Z2UbSm3CfI",
+        "title": "Why do American generals keep visiting these tiny islands?",
+        "views": 123455,
+        "vph": 135,
+        "duration": "PT6M11S",
+        "publishedAt": "2026-07-31",
+        "thumbnail": "https://i.ytimg.com/vi/3Z2UbSm3CfI/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -2567,7 +2807,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "vbKg6hOTRp0",
+          "title": "Never Kill The Giant Mosquito  — You’ve Been Lied To",
+          "views": 311611,
+          "vph": 154,
+          "duration": "PT7M44S",
+          "publishedAt": "2026-06-15",
+          "thumbnail": "https://i.ytimg.com/vi/vbKg6hOTRp0/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2588,6 +2838,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "vbKg6hOTRp0",
+        "title": "Never Kill The Giant Mosquito  — You’ve Been Lied To",
+        "views": 311611,
+        "vph": 154,
+        "duration": "PT7M44S",
+        "publishedAt": "2026-06-15",
+        "thumbnail": "https://i.ytimg.com/vi/vbKg6hOTRp0/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -2750,7 +3010,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "LxDfEBostXk",
+          "title": "Where Does Light Get Its Speed From?",
+          "views": 111201,
+          "vph": 25,
+          "duration": "PT2H14M22S",
+          "publishedAt": "2026-07-31",
+          "thumbnail": "https://i.ytimg.com/vi/LxDfEBostXk/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2771,6 +3041,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "LxDfEBostXk",
+        "title": "Where Does Light Get Its Speed From?",
+        "views": 111201,
+        "vph": 25,
+        "duration": "PT2H14M22S",
+        "publishedAt": "2026-07-31",
+        "thumbnail": "https://i.ytimg.com/vi/LxDfEBostXk/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -2934,7 +3214,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "AbUXXOnm5QY",
+          "title": "Why British Homes Had an Outside Toilet Until Shockingly Recently",
+          "views": 24351,
+          "vph": 38,
+          "duration": "PT27M2S",
+          "publishedAt": "2026-08-19",
+          "thumbnail": "https://i.ytimg.com/vi/AbUXXOnm5QY/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -2955,6 +3245,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "AbUXXOnm5QY",
+        "title": "Why British Homes Had an Outside Toilet Until Shockingly Recently",
+        "views": 24351,
+        "vph": 38,
+        "duration": "PT27M2S",
+        "publishedAt": "2026-08-19",
+        "thumbnail": "https://i.ytimg.com/vi/AbUXXOnm5QY/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -3118,7 +3418,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "2COe7PGedfU",
+          "title": "15 Container Dwarf Fruit Trees That Thrive In Extreme Summer Heat",
+          "views": 204877,
+          "vph": 82,
+          "duration": "PT3H22M50S",
+          "publishedAt": "2026-07-09",
+          "thumbnail": "https://i.ytimg.com/vi/2COe7PGedfU/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3139,6 +3449,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "2COe7PGedfU",
+        "title": "15 Container Dwarf Fruit Trees That Thrive In Extreme Summer Heat",
+        "views": 204877,
+        "vph": 82,
+        "duration": "PT3H22M50S",
+        "publishedAt": "2026-07-09",
+        "thumbnail": "https://i.ytimg.com/vi/2COe7PGedfU/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -3302,7 +3622,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "w9reUWt4Kp4",
+          "title": "The UNCENSORED Brutal Reality of Stagecoach Travel (Hollywood NEVER Shows This)",
+          "views": 1140708,
+          "vph": 31,
+          "duration": "PT20M38S",
+          "publishedAt": "2026-01-10",
+          "thumbnail": "https://i.ytimg.com/vi/w9reUWt4Kp4/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3323,6 +3653,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "w9reUWt4Kp4",
+        "title": "The UNCENSORED Brutal Reality of Stagecoach Travel (Hollywood NEVER Shows This)",
+        "views": 1140708,
+        "vph": 31,
+        "duration": "PT20M38S",
+        "publishedAt": "2026-01-10",
+        "thumbnail": "https://i.ytimg.com/vi/w9reUWt4Kp4/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -3516,7 +3856,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "n9HctUyWSLk",
+          "title": "Why Germany Believed Britain Would Beg for Terms by Autumn",
+          "views": 93999,
+          "vph": 90,
+          "duration": "PT14M8S",
+          "publishedAt": "2026-08-14",
+          "thumbnail": "https://i.ytimg.com/vi/n9HctUyWSLk/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3537,6 +3887,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "n9HctUyWSLk",
+        "title": "Why Germany Believed Britain Would Beg for Terms by Autumn",
+        "views": 93999,
+        "vph": 90,
+        "duration": "PT14M8S",
+        "publishedAt": "2026-08-14",
+        "thumbnail": "https://i.ytimg.com/vi/n9HctUyWSLk/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -3699,7 +4059,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Nhật (Japanese)",
-        "languageFlag": "🇯🇵"
+        "languageFlag": "🇯🇵",
+        "featuredDemoVideo": {
+          "videoId": "WGrha9-FdQQ",
+          "title": "犬が飼い主を親だと思っている7つのサイン【犬雑学】",
+          "views": 52386,
+          "vph": 0,
+          "duration": "PT9M7S",
+          "publishedAt": "2026-01-08",
+          "thumbnail": "https://i.ytimg.com/vi/WGrha9-FdQQ/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3720,6 +4090,16 @@
         "code": "ja-JP",
         "flag": "🇯🇵",
         "dialect": "Friendly Japanese (Thuyết minh thú cưng)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "WGrha9-FdQQ",
+        "title": "犬が飼い主を親だと思っている7つのサイン【犬雑学】",
+        "views": 52386,
+        "vph": 0,
+        "duration": "PT9M7S",
+        "publishedAt": "2026-01-08",
+        "thumbnail": "https://i.ytimg.com/vi/WGrha9-FdQQ/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -3913,7 +4293,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "hBg_KWScamc",
+          "title": "The Most Terrifying Survival Story Ever",
+          "views": 666542,
+          "vph": 304,
+          "duration": "PT33M1S",
+          "publishedAt": "2026-06-30",
+          "thumbnail": "https://i.ytimg.com/vi/hBg_KWScamc/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3934,6 +4324,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "hBg_KWScamc",
+        "title": "The Most Terrifying Survival Story Ever",
+        "views": 666542,
+        "vph": 304,
+        "duration": "PT33M1S",
+        "publishedAt": "2026-06-30",
+        "thumbnail": "https://i.ytimg.com/vi/hBg_KWScamc/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -4097,7 +4497,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "Q1tXposwAAo",
+          "title": "The Hidden Civilizations on Earth Even Historians Can't Believe Were Found",
+          "views": 1178586,
+          "vph": 3296,
+          "duration": "PT35M13S",
+          "publishedAt": "2026-07-10",
+          "thumbnail": "https://i.ytimg.com/vi/Q1tXposwAAo/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4118,6 +4528,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "Q1tXposwAAo",
+        "title": "The Hidden Civilizations on Earth Even Historians Can't Believe Were Found",
+        "views": 1178586,
+        "vph": 3296,
+        "duration": "PT35M13S",
+        "publishedAt": "2026-07-10",
+        "thumbnail": "https://i.ytimg.com/vi/Q1tXposwAAo/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -4311,7 +4731,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "eFEMODCLBD4",
+          "title": "Every WW2 Rifle RANKED — WORST to BEST",
+          "views": 207562,
+          "vph": 235,
+          "duration": "PT15M47S",
+          "publishedAt": "2026-08-14",
+          "thumbnail": "https://i.ytimg.com/vi/eFEMODCLBD4/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4332,6 +4762,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "eFEMODCLBD4",
+        "title": "Every WW2 Rifle RANKED — WORST to BEST",
+        "views": 207562,
+        "vph": 235,
+        "duration": "PT15M47S",
+        "publishedAt": "2026-08-14",
+        "thumbnail": "https://i.ytimg.com/vi/eFEMODCLBD4/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -4526,7 +4966,17 @@
           "totalAuditedVideos": 7
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "7MVrjJxNZkY",
+          "title": "CRAFT (1979): The Voyage Begins | Episode 4",
+          "views": 585573,
+          "vph": 58,
+          "duration": "PT12M18S",
+          "publishedAt": "2026-06-26",
+          "thumbnail": "https://i.ytimg.com/vi/7MVrjJxNZkY/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4547,6 +4997,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "7MVrjJxNZkY",
+        "title": "CRAFT (1979): The Voyage Begins | Episode 4",
+        "views": 585573,
+        "vph": 58,
+        "duration": "PT12M18S",
+        "publishedAt": "2026-06-26",
+        "thumbnail": "https://i.ytimg.com/vi/7MVrjJxNZkY/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -4738,7 +5198,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "YR9Q703EBQM",
+          "title": "A VERDADE ASSUSTADORA SOBRE A GALÁXIA DE ANDRÔMEDA",
+          "views": 367839,
+          "vph": 8,
+          "duration": "PT16M16S",
+          "publishedAt": "2026-03-30",
+          "thumbnail": "https://i.ytimg.com/vi/YR9Q703EBQM/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4759,6 +5229,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "YR9Q703EBQM",
+        "title": "A VERDADE ASSUSTADORA SOBRE A GALÁXIA DE ANDRÔMEDA",
+        "views": 367839,
+        "vph": 8,
+        "duration": "PT16M16S",
+        "publishedAt": "2026-03-30",
+        "thumbnail": "https://i.ytimg.com/vi/YR9Q703EBQM/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -4951,7 +5431,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "c7m4EH7UZ_8",
+          "title": "your life in Warhammer 40k (Space Marine)",
+          "views": 2240011,
+          "vph": 187,
+          "duration": "PT17M34S",
+          "publishedAt": "2025-07-17",
+          "thumbnail": "https://i.ytimg.com/vi/c7m4EH7UZ_8/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4972,6 +5462,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "c7m4EH7UZ_8",
+        "title": "your life in Warhammer 40k (Space Marine)",
+        "views": 2240011,
+        "vph": 187,
+        "duration": "PT17M34S",
+        "publishedAt": "2025-07-17",
+        "thumbnail": "https://i.ytimg.com/vi/c7m4EH7UZ_8/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -5134,7 +5634,17 @@
           "totalAuditedVideos": 6
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "bbsIcbvyVqU",
+          "title": "Every Angle Grinder Disc Explained In 11 Minutes",
+          "views": 733318,
+          "vph": 487,
+          "duration": "PT11M4S",
+          "publishedAt": "2026-06-24",
+          "thumbnail": "https://i.ytimg.com/vi/bbsIcbvyVqU/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5155,6 +5665,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "bbsIcbvyVqU",
+        "title": "Every Angle Grinder Disc Explained In 11 Minutes",
+        "views": 733318,
+        "vph": 487,
+        "duration": "PT11M4S",
+        "publishedAt": "2026-06-24",
+        "thumbnail": "https://i.ytimg.com/vi/bbsIcbvyVqU/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -5368,7 +5888,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "jGR2ikGDo50",
+          "title": "Thief Steals All the Farm Animals… But a Brave Dog Fights Back! 🐶 | Funny Cartoon | Mama Toons",
+          "views": 6664875,
+          "vph": 910,
+          "duration": "PT15M10S",
+          "publishedAt": "2026-02-16",
+          "thumbnail": "https://i.ytimg.com/vi/jGR2ikGDo50/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5389,6 +5919,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "jGR2ikGDo50",
+        "title": "Thief Steals All the Farm Animals… But a Brave Dog Fights Back! 🐶 | Funny Cartoon | Mama Toons",
+        "views": 6664875,
+        "vph": 910,
+        "duration": "PT15M10S",
+        "publishedAt": "2026-02-16",
+        "thumbnail": "https://i.ytimg.com/vi/jGR2ikGDo50/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -5552,7 +6092,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "-lTJ62Kcavs",
+          "title": "Every Gym Program Explained in 8 Minutes",
+          "views": 937626,
+          "vph": 154,
+          "duration": "PT8M10S",
+          "publishedAt": "2026-05-12",
+          "thumbnail": "https://i.ytimg.com/vi/-lTJ62Kcavs/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5573,6 +6123,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "-lTJ62Kcavs",
+        "title": "Every Gym Program Explained in 8 Minutes",
+        "views": 937626,
+        "vph": 154,
+        "duration": "PT8M10S",
+        "publishedAt": "2026-05-12",
+        "thumbnail": "https://i.ytimg.com/vi/-lTJ62Kcavs/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -5757,7 +6317,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "zs1B4g0O_vQ",
+          "title": "Truck and Car Crashes #13 [BeamNG.Drive]",
+          "views": 16690869,
+          "vph": 241,
+          "duration": "PT11M19S",
+          "publishedAt": "2025-02-25",
+          "thumbnail": "https://i.ytimg.com/vi/zs1B4g0O_vQ/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5778,6 +6348,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "zs1B4g0O_vQ",
+        "title": "Truck and Car Crashes #13 [BeamNG.Drive]",
+        "views": 16690869,
+        "vph": 241,
+        "duration": "PT11M19S",
+        "publishedAt": "2025-02-25",
+        "thumbnail": "https://i.ytimg.com/vi/zs1B4g0O_vQ/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -5941,7 +6521,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "VzGUIVZGtpI",
+          "title": "OMG... Dad Suddenly Had a Terrible Stomachache! | Slow English Listening Story (A2 Level)",
+          "views": 263397,
+          "vph": 105,
+          "duration": "PT37M53S",
+          "publishedAt": "2026-08-28",
+          "thumbnail": "https://i.ytimg.com/vi/VzGUIVZGtpI/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5962,6 +6552,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "VzGUIVZGtpI",
+        "title": "OMG... Dad Suddenly Had a Terrible Stomachache! | Slow English Listening Story (A2 Level)",
+        "views": 263397,
+        "vph": 105,
+        "duration": "PT37M53S",
+        "publishedAt": "2026-08-28",
+        "thumbnail": "https://i.ytimg.com/vi/VzGUIVZGtpI/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -6309,7 +6909,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "AMcPSo2FX-I",
+          "title": "Oh No! A Bear Cub Broke Into Our House! | Slow English Listening Story (A2 Level)",
+          "views": 54345,
+          "vph": 68,
+          "duration": "PT20M7S",
+          "publishedAt": "2026-08-05",
+          "thumbnail": "https://i.ytimg.com/vi/AMcPSo2FX-I/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6330,6 +6940,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "AMcPSo2FX-I",
+        "title": "Oh No! A Bear Cub Broke Into Our House! | Slow English Listening Story (A2 Level)",
+        "views": 54345,
+        "vph": 68,
+        "duration": "PT20M7S",
+        "publishedAt": "2026-08-05",
+        "thumbnail": "https://i.ytimg.com/vi/AMcPSo2FX-I/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -6493,7 +7113,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "Vtlo4ph6T4c",
+          "title": "Will the Brother Save Her? | Slow English Listening Practice for Beginners (A2 Level)",
+          "views": 280545,
+          "vph": 194,
+          "duration": "PT42M41S",
+          "publishedAt": "2026-08-01",
+          "thumbnail": "https://i.ytimg.com/vi/Vtlo4ph6T4c/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6514,6 +7144,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "Vtlo4ph6T4c",
+        "title": "Will the Brother Save Her? | Slow English Listening Practice for Beginners (A2 Level)",
+        "views": 280545,
+        "vph": 194,
+        "duration": "PT42M41S",
+        "publishedAt": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/Vtlo4ph6T4c/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -6677,7 +7317,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "IgetylI2hzE",
+          "title": "A Clown Took Lily Away... Could Henry Save Her? 😱🎈 | Slow English Listening Story (A2 Level)",
+          "views": 878289,
+          "vph": 35,
+          "duration": "PT46M2S",
+          "publishedAt": "2026-07-30",
+          "thumbnail": "https://i.ytimg.com/vi/IgetylI2hzE/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6698,6 +7348,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "IgetylI2hzE",
+        "title": "A Clown Took Lily Away... Could Henry Save Her? 😱🎈 | Slow English Listening Story (A2 Level)",
+        "views": 878289,
+        "vph": 35,
+        "duration": "PT46M2S",
+        "publishedAt": "2026-07-30",
+        "thumbnail": "https://i.ytimg.com/vi/IgetylI2hzE/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -6861,7 +7521,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "siOdaB5Buow",
+          "title": "Henry Put Soap in the Pool... THEN Everything Went Wrong! 😱🫧 | Slow English Listening Story (A2)",
+          "views": 313147,
+          "vph": 12,
+          "duration": "PT33M",
+          "publishedAt": "2026-08-26",
+          "thumbnail": "https://i.ytimg.com/vi/siOdaB5Buow/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -6882,6 +7552,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "siOdaB5Buow",
+        "title": "Henry Put Soap in the Pool... THEN Everything Went Wrong! 😱🫧 | Slow English Listening Story (A2)",
+        "views": 313147,
+        "vph": 12,
+        "duration": "PT33M",
+        "publishedAt": "2026-08-26",
+        "thumbnail": "https://i.ytimg.com/vi/siOdaB5Buow/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -7045,7 +7725,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "Zq5IXlgBpN0",
+          "title": "KITCHEN EMERGENCY! 😱💧 | Learn English for Home Disasters | Slow English Story",
+          "views": 258512,
+          "vph": 14,
+          "duration": "PT14M44S",
+          "publishedAt": "2026-06-16",
+          "thumbnail": "https://i.ytimg.com/vi/Zq5IXlgBpN0/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7066,6 +7756,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "Zq5IXlgBpN0",
+        "title": "KITCHEN EMERGENCY! 😱💧 | Learn English for Home Disasters | Slow English Story",
+        "views": 258512,
+        "vph": 14,
+        "duration": "PT14M44S",
+        "publishedAt": "2026-06-16",
+        "thumbnail": "https://i.ytimg.com/vi/Zq5IXlgBpN0/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -7230,7 +7930,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "tArdjkK0B6E",
+          "title": "Listen & Learn: A Family's Chaotic Airport Day | Easy English for Beginners (A2 Level)",
+          "views": 1572266,
+          "vph": 11,
+          "duration": "PT19M14S",
+          "publishedAt": "2026-03-03",
+          "thumbnail": "https://i.ytimg.com/vi/tArdjkK0B6E/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7251,6 +7961,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "tArdjkK0B6E",
+        "title": "Listen & Learn: A Family's Chaotic Airport Day | Easy English for Beginners (A2 Level)",
+        "views": 1572266,
+        "vph": 11,
+        "duration": "PT19M14S",
+        "publishedAt": "2026-03-03",
+        "thumbnail": "https://i.ytimg.com/vi/tArdjkK0B6E/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -7415,7 +8135,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "7OycgIVuuF8",
+          "title": "THE HISTORY OF SNICKERS — THE CANDY BAR NAMED AFTER A DEAD HORSE",
+          "views": 39815,
+          "vph": 25,
+          "duration": "PT22M20S",
+          "publishedAt": "2026-08-13",
+          "thumbnail": "https://i.ytimg.com/vi/7OycgIVuuF8/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7436,6 +8166,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "7OycgIVuuF8",
+        "title": "THE HISTORY OF SNICKERS — THE CANDY BAR NAMED AFTER A DEAD HORSE",
+        "views": 39815,
+        "vph": 25,
+        "duration": "PT22M20S",
+        "publishedAt": "2026-08-13",
+        "thumbnail": "https://i.ytimg.com/vi/7OycgIVuuF8/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -7601,7 +8341,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "uwMmx26Dj6Y",
+          "title": "How a Sacred Leaf Became a $100 Billion Empire",
+          "views": 881197,
+          "vph": 757,
+          "duration": "PT35M33S",
+          "publishedAt": "2026-07-21",
+          "thumbnail": "https://i.ytimg.com/vi/uwMmx26Dj6Y/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7622,6 +8372,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "uwMmx26Dj6Y",
+        "title": "How a Sacred Leaf Became a $100 Billion Empire",
+        "views": 881197,
+        "vph": 757,
+        "duration": "PT35M33S",
+        "publishedAt": "2026-07-21",
+        "thumbnail": "https://i.ytimg.com/vi/uwMmx26Dj6Y/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -7785,7 +8545,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "lpfTFE_-G64",
+          "title": "The History of Potatoes — The Crop That Changed the World",
+          "views": 571746,
+          "vph": 85,
+          "duration": "PT30M38S",
+          "publishedAt": "2026-06-17",
+          "thumbnail": "https://i.ytimg.com/vi/lpfTFE_-G64/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7806,6 +8576,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "lpfTFE_-G64",
+        "title": "The History of Potatoes — The Crop That Changed the World",
+        "views": 571746,
+        "vph": 85,
+        "duration": "PT30M38S",
+        "publishedAt": "2026-06-17",
+        "thumbnail": "https://i.ytimg.com/vi/lpfTFE_-G64/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -7969,7 +8749,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "OymJpMQv7eA",
+          "title": "The History of Figs — The Fruit That Came Before Civilization",
+          "views": 18298,
+          "vph": 2,
+          "duration": "PT27M38S",
+          "publishedAt": "2026-08-17",
+          "thumbnail": "https://i.ytimg.com/vi/OymJpMQv7eA/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -7990,6 +8780,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "OymJpMQv7eA",
+        "title": "The History of Figs — The Fruit That Came Before Civilization",
+        "views": 18298,
+        "vph": 2,
+        "duration": "PT27M38S",
+        "publishedAt": "2026-08-17",
+        "thumbnail": "https://i.ytimg.com/vi/OymJpMQv7eA/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -8152,7 +8952,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "imYSfX1FdQc",
+          "title": "Before Circuit Breakers, Early Electricity Turned Homes Into Fire Traps",
+          "views": 95945,
+          "vph": 299,
+          "duration": "PT25M52S",
+          "publishedAt": "2026-08-19",
+          "thumbnail": "https://i.ytimg.com/vi/imYSfX1FdQc/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8173,6 +8983,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "imYSfX1FdQc",
+        "title": "Before Circuit Breakers, Early Electricity Turned Homes Into Fire Traps",
+        "views": 95945,
+        "vph": 299,
+        "duration": "PT25M52S",
+        "publishedAt": "2026-08-19",
+        "thumbnail": "https://i.ytimg.com/vi/imYSfX1FdQc/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -8336,7 +9156,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "xda4eQpgka8",
+          "title": "The History of Deep Dish Pizza — The \"Pizza\" Real Italians Refuse to Call Pizza",
+          "views": 947,
+          "vph": 1,
+          "duration": "PT38M25S",
+          "publishedAt": "2026-08-19",
+          "thumbnail": "https://i.ytimg.com/vi/xda4eQpgka8/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8357,6 +9187,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "xda4eQpgka8",
+        "title": "The History of Deep Dish Pizza — The \"Pizza\" Real Italians Refuse to Call Pizza",
+        "views": 947,
+        "vph": 1,
+        "duration": "PT38M25S",
+        "publishedAt": "2026-08-19",
+        "thumbnail": "https://i.ytimg.com/vi/xda4eQpgka8/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -8520,7 +9360,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "iwwrpLS2g5E",
+          "title": "The History of Dynamite — The Explosive That Built the Modern World",
+          "views": 246255,
+          "vph": 44,
+          "duration": "PT28M22S",
+          "publishedAt": "2026-05-17",
+          "thumbnail": "https://i.ytimg.com/vi/iwwrpLS2g5E/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8541,6 +9391,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "iwwrpLS2g5E",
+        "title": "The History of Dynamite — The Explosive That Built the Modern World",
+        "views": 246255,
+        "vph": 44,
+        "duration": "PT28M22S",
+        "publishedAt": "2026-05-17",
+        "thumbnail": "https://i.ytimg.com/vi/iwwrpLS2g5E/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -8704,7 +9564,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Nhật (Japanese)",
-        "languageFlag": "🇯🇵"
+        "languageFlag": "🇯🇵",
+        "featuredDemoVideo": {
+          "videoId": "sKWnsgabDtE",
+          "title": "サバンナに猛獣が多い理由、説明できます？【ゆっくり解説】",
+          "views": 272661,
+          "vph": 128,
+          "duration": "PT15M22S",
+          "publishedAt": "2026-08-03",
+          "thumbnail": "https://i.ytimg.com/vi/sKWnsgabDtE/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8725,6 +9595,16 @@
         "code": "ja-JP",
         "flag": "🇯🇵",
         "dialect": "Yukkuri Japanese (Kiến thức nền giải trí)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "sKWnsgabDtE",
+        "title": "サバンナに猛獣が多い理由、説明できます？【ゆっくり解説】",
+        "views": 272661,
+        "vph": 128,
+        "duration": "PT15M22S",
+        "publishedAt": "2026-08-03",
+        "thumbnail": "https://i.ytimg.com/vi/sKWnsgabDtE/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -8878,7 +9758,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Nhật (Japanese)",
-        "languageFlag": "🇯🇵"
+        "languageFlag": "🇯🇵",
+        "featuredDemoVideo": {
+          "videoId": "26CD8GRhRrs",
+          "title": "【大総集編 第1弾／約1時間】新・戦艦ヤマト2030　1話～58話　東京決戦・中国決戦・AIとの戦いなど",
+          "views": 579980,
+          "vph": 46,
+          "duration": "PT59M32S",
+          "publishedAt": "2026-02-11",
+          "thumbnail": "https://i.ytimg.com/vi/26CD8GRhRrs/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8899,6 +9789,16 @@
         "code": "ja-JP",
         "flag": "🇯🇵",
         "dialect": "Standard Japanese (Anime Sci-Fi Hào hùng)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "26CD8GRhRrs",
+        "title": "【大総集編 第1弾／約1時間】新・戦艦ヤマト2030　1話～58話　東京決戦・中国決戦・AIとの戦いなど",
+        "views": 579980,
+        "vph": 46,
+        "duration": "PT59M32S",
+        "publishedAt": "2026-02-11",
+        "thumbnail": "https://i.ytimg.com/vi/26CD8GRhRrs/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -9092,7 +9992,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "Rz8LN3y6oS0",
+          "title": "Where do Train Crews ACTUALLY Sleep?",
+          "views": 596093,
+          "vph": 96,
+          "duration": "PT8M42S",
+          "publishedAt": "2026-07-04",
+          "thumbnail": "https://i.ytimg.com/vi/Rz8LN3y6oS0/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9113,6 +10023,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "Rz8LN3y6oS0",
+        "title": "Where do Train Crews ACTUALLY Sleep?",
+        "views": 596093,
+        "vph": 96,
+        "duration": "PT8M42S",
+        "publishedAt": "2026-07-04",
+        "thumbnail": "https://i.ytimg.com/vi/Rz8LN3y6oS0/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -9304,7 +10224,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "-oIu9lmeD9M",
+          "title": "Build an Advantage Nobody Can Copy | Machiavelli",
+          "views": 12547,
+          "vph": 2,
+          "duration": "PT28M53S",
+          "publishedAt": "2026-08-26",
+          "thumbnail": "https://i.ytimg.com/vi/-oIu9lmeD9M/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9325,6 +10255,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "-oIu9lmeD9M",
+        "title": "Build an Advantage Nobody Can Copy | Machiavelli",
+        "views": 12547,
+        "vph": 2,
+        "duration": "PT28M53S",
+        "publishedAt": "2026-08-26",
+        "thumbnail": "https://i.ytimg.com/vi/-oIu9lmeD9M/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -9516,7 +10456,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "B4tr_U3lMm4",
+          "title": "Why You Wouldn't Survive a Day of Medieval London's Junk Food in 1180",
+          "views": 173090,
+          "vph": 251,
+          "duration": "PT21M47S",
+          "publishedAt": "2026-07-14",
+          "thumbnail": "https://i.ytimg.com/vi/B4tr_U3lMm4/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9537,6 +10487,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "B4tr_U3lMm4",
+        "title": "Why You Wouldn't Survive a Day of Medieval London's Junk Food in 1180",
+        "views": 173090,
+        "vph": 251,
+        "duration": "PT21M47S",
+        "publishedAt": "2026-07-14",
+        "thumbnail": "https://i.ytimg.com/vi/B4tr_U3lMm4/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -9729,7 +10689,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "_wBlfJuC9SM",
+          "title": "Why The Deadliest Predator in the Ocean Refuses to Kill Us",
+          "views": 1813240,
+          "vph": 489,
+          "duration": "PT21M50S",
+          "publishedAt": "2026-07-11",
+          "thumbnail": "https://i.ytimg.com/vi/_wBlfJuC9SM/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9750,6 +10720,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "_wBlfJuC9SM",
+        "title": "Why The Deadliest Predator in the Ocean Refuses to Kill Us",
+        "views": 1813240,
+        "vph": 489,
+        "duration": "PT21M50S",
+        "publishedAt": "2026-07-11",
+        "thumbnail": "https://i.ytimg.com/vi/_wBlfJuC9SM/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -9944,7 +10924,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "TRYPXaMlpAc",
+          "title": "UNSEEN AMAZON: Inside the World’s Most Dangerous Rainforest | 4K Travel Documentary",
+          "views": 1284407,
+          "vph": 1073,
+          "duration": "PT54M27S",
+          "publishedAt": "2026-05-24",
+          "thumbnail": "https://i.ytimg.com/vi/TRYPXaMlpAc/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9965,6 +10955,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "TRYPXaMlpAc",
+        "title": "UNSEEN AMAZON: Inside the World’s Most Dangerous Rainforest | 4K Travel Documentary",
+        "views": 1284407,
+        "vph": 1073,
+        "duration": "PT54M27S",
+        "publishedAt": "2026-05-24",
+        "thumbnail": "https://i.ytimg.com/vi/TRYPXaMlpAc/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -10159,7 +11159,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "PANHdVxf2bw",
+          "title": "Living in Alaska | How People Live at the End of America | 4K",
+          "views": 708755,
+          "vph": 2532,
+          "duration": "PT37M49S",
+          "publishedAt": "2026-08-22",
+          "thumbnail": "https://i.ytimg.com/vi/PANHdVxf2bw/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10180,6 +11190,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "PANHdVxf2bw",
+        "title": "Living in Alaska | How People Live at the End of America | 4K",
+        "views": 708755,
+        "vph": 2532,
+        "duration": "PT37M49S",
+        "publishedAt": "2026-08-22",
+        "thumbnail": "https://i.ytimg.com/vi/PANHdVxf2bw/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -10374,7 +11394,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "WwTzg-aQbnk",
+          "title": "UNSEEN IRAN - The Most Misunderstood Place You Were Never Shown!",
+          "views": 1069565,
+          "vph": 2,
+          "duration": "PT51M24S",
+          "publishedAt": "2026-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/WwTzg-aQbnk/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10395,6 +11425,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Canadian English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "WwTzg-aQbnk",
+        "title": "UNSEEN IRAN - The Most Misunderstood Place You Were Never Shown!",
+        "views": 1069565,
+        "vph": 2,
+        "duration": "PT51M24S",
+        "publishedAt": "2026-01-03",
+        "thumbnail": "https://i.ytimg.com/vi/WwTzg-aQbnk/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -10587,7 +11627,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "6gzvQVtyz1c",
+          "title": "Living in Ghana | How People Live in Africa's Most Underrated Country | 4K",
+          "views": 224256,
+          "vph": 207,
+          "duration": "PT30M12S",
+          "publishedAt": "2026-07-02",
+          "thumbnail": "https://i.ytimg.com/vi/6gzvQVtyz1c/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10608,6 +11658,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "6gzvQVtyz1c",
+        "title": "Living in Ghana | How People Live in Africa's Most Underrated Country | 4K",
+        "views": 224256,
+        "vph": 207,
+        "duration": "PT30M12S",
+        "publishedAt": "2026-07-02",
+        "thumbnail": "https://i.ytimg.com/vi/6gzvQVtyz1c/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -10779,7 +11839,17 @@
           "totalAuditedVideos": 5
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "mAzx0nWZemk",
+          "title": "What Was Life Like In Medieval London?",
+          "views": 212521,
+          "vph": 1058,
+          "duration": "PT11M33S",
+          "publishedAt": "2026-08-24",
+          "thumbnail": "https://i.ytimg.com/vi/mAzx0nWZemk/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10800,6 +11870,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Canadian English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "mAzx0nWZemk",
+        "title": "What Was Life Like In Medieval London?",
+        "views": 212521,
+        "vph": 1058,
+        "duration": "PT11M33S",
+        "publishedAt": "2026-08-24",
+        "thumbnail": "https://i.ytimg.com/vi/mAzx0nWZemk/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -10964,7 +12044,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "gPZegVh34Mg",
+          "title": "7 Fossils That Show the Most Brutal Prehistoric Deaths",
+          "views": 2474829,
+          "vph": 159,
+          "duration": "PT8M22S",
+          "publishedAt": "2026-01-04",
+          "thumbnail": "https://i.ytimg.com/vi/gPZegVh34Mg/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10985,6 +12075,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "gPZegVh34Mg",
+        "title": "7 Fossils That Show the Most Brutal Prehistoric Deaths",
+        "views": 2474829,
+        "vph": 159,
+        "duration": "PT8M22S",
+        "publishedAt": "2026-01-04",
+        "thumbnail": "https://i.ytimg.com/vi/gPZegVh34Mg/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -11149,7 +12249,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "zR1PWbU48tk",
+          "title": "Why Your SME is the #1 Target for Ransomware in 2026 🚨",
+          "views": 81439,
+          "vph": 19,
+          "duration": "PT10M7S",
+          "publishedAt": "2026-06-27",
+          "thumbnail": "https://i.ytimg.com/vi/zR1PWbU48tk/sddefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11170,6 +12280,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "zR1PWbU48tk",
+        "title": "Why Your SME is the #1 Target for Ransomware in 2026 🚨",
+        "views": 81439,
+        "vph": 19,
+        "duration": "PT10M7S",
+        "publishedAt": "2026-06-27",
+        "thumbnail": "https://i.ytimg.com/vi/zR1PWbU48tk/sddefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -11333,7 +12453,17 @@
           "totalAuditedVideos": 9
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "IGspXolrAvI",
+          "title": "Why the US Navy Cannot Stop Iran's Mini Submarines?",
+          "views": 312017,
+          "vph": 112,
+          "duration": "PT19M23S",
+          "publishedAt": "2026-05-14",
+          "thumbnail": "https://i.ytimg.com/vi/IGspXolrAvI/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11354,6 +12484,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "IGspXolrAvI",
+        "title": "Why the US Navy Cannot Stop Iran's Mini Submarines?",
+        "views": 312017,
+        "vph": 112,
+        "duration": "PT19M23S",
+        "publishedAt": "2026-05-14",
+        "thumbnail": "https://i.ytimg.com/vi/IGspXolrAvI/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -11516,7 +12656,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "2CIsM8IWxNM",
+          "title": "7 Body Wash Brands To Skip — And 3 That Are Actually Worth Using",
+          "views": 82034,
+          "vph": 27,
+          "duration": "PT16M9S",
+          "publishedAt": "2026-05-03",
+          "thumbnail": "https://i.ytimg.com/vi/2CIsM8IWxNM/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11537,6 +12687,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "2CIsM8IWxNM",
+        "title": "7 Body Wash Brands To Skip — And 3 That Are Actually Worth Using",
+        "views": 82034,
+        "vph": 27,
+        "duration": "PT16M9S",
+        "publishedAt": "2026-05-03",
+        "thumbnail": "https://i.ytimg.com/vi/2CIsM8IWxNM/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -11729,7 +12889,17 @@
           "totalAuditedVideos": 4
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "1PFIBZpwJjc",
+          "title": "Why Aztecs CANNIBALIZED their own SONS",
+          "views": 10736,
+          "vph": 8,
+          "duration": "PT4M37S",
+          "publishedAt": "2026-07-15",
+          "thumbnail": "https://i.ytimg.com/vi/1PFIBZpwJjc/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11750,6 +12920,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "1PFIBZpwJjc",
+        "title": "Why Aztecs CANNIBALIZED their own SONS",
+        "views": 10736,
+        "vph": 8,
+        "duration": "PT4M37S",
+        "publishedAt": "2026-07-15",
+        "thumbnail": "https://i.ytimg.com/vi/1PFIBZpwJjc/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -11912,7 +13092,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "zYPMt0U9cmM",
+          "title": "Never React. Never Explain. Just Ignore. | Machiavelli's 7 Laws of Psychological Power",
+          "views": 934031,
+          "vph": 111,
+          "duration": "PT25M3S",
+          "publishedAt": "2026-03-23",
+          "thumbnail": "https://i.ytimg.com/vi/zYPMt0U9cmM/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -11933,6 +13123,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "zYPMt0U9cmM",
+        "title": "Never React. Never Explain. Just Ignore. | Machiavelli's 7 Laws of Psychological Power",
+        "views": 934031,
+        "vph": 111,
+        "duration": "PT25M3S",
+        "publishedAt": "2026-03-23",
+        "thumbnail": "https://i.ytimg.com/vi/zYPMt0U9cmM/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -12094,7 +13294,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "cIrILuKBIEE",
+          "title": "Every Planet That Probably Has Aliens",
+          "views": 452571,
+          "vph": 140,
+          "duration": "PT9M26S",
+          "publishedAt": "2026-04-26",
+          "thumbnail": "https://i.ytimg.com/vi/cIrILuKBIEE/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12115,6 +13325,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "cIrILuKBIEE",
+        "title": "Every Planet That Probably Has Aliens",
+        "views": 452571,
+        "vph": 140,
+        "duration": "PT9M26S",
+        "publishedAt": "2026-04-26",
+        "thumbnail": "https://i.ytimg.com/vi/cIrILuKBIEE/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -12296,7 +13516,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "tEdFA2jga6k",
+          "title": "Patrón Fooled The World And Got What They Deserved",
+          "views": 1791580,
+          "vph": 244,
+          "duration": "PT12M26S",
+          "publishedAt": "2026-05-14",
+          "thumbnail": "https://i.ytimg.com/vi/tEdFA2jga6k/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12317,6 +13547,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Canadian English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "tEdFA2jga6k",
+        "title": "Patrón Fooled The World And Got What They Deserved",
+        "views": 1791580,
+        "vph": 244,
+        "duration": "PT12M26S",
+        "publishedAt": "2026-05-14",
+        "thumbnail": "https://i.ytimg.com/vi/tEdFA2jga6k/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -12509,7 +13749,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "JZb8pb1V_qk",
+          "title": "The Specific Way the Enemy Attacks People Who Are Close to Their Breakthrough",
+          "views": 105075,
+          "vph": 59,
+          "duration": "PT19M12S",
+          "publishedAt": "2026-08-17",
+          "thumbnail": "https://i.ytimg.com/vi/JZb8pb1V_qk/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12530,6 +13780,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "JZb8pb1V_qk",
+        "title": "The Specific Way the Enemy Attacks People Who Are Close to Their Breakthrough",
+        "views": 105075,
+        "vph": 59,
+        "duration": "PT19M12S",
+        "publishedAt": "2026-08-17",
+        "thumbnail": "https://i.ytimg.com/vi/JZb8pb1V_qk/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -12693,7 +13953,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "yXrh5algkFs",
+          "title": "The Siege That Killed 13,000 British Soldiers — And Nobody Remembers",
+          "views": 27591,
+          "vph": 40,
+          "duration": "PT26M27S",
+          "publishedAt": "2026-08-07",
+          "thumbnail": "https://i.ytimg.com/vi/yXrh5algkFs/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12714,6 +13984,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "yXrh5algkFs",
+        "title": "The Siege That Killed 13,000 British Soldiers — And Nobody Remembers",
+        "views": 27591,
+        "vph": 40,
+        "duration": "PT26M27S",
+        "publishedAt": "2026-08-07",
+        "thumbnail": "https://i.ytimg.com/vi/yXrh5algkFs/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -12878,7 +14158,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "KCJEeITgePU",
+          "title": "Who Mordecai SHOULD Have ENDED UP With",
+          "views": 737791,
+          "vph": 22,
+          "duration": "PT11M18S",
+          "publishedAt": "2025-09-24",
+          "thumbnail": "https://i.ytimg.com/vi/KCJEeITgePU/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12899,6 +14189,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "KCJEeITgePU",
+        "title": "Who Mordecai SHOULD Have ENDED UP With",
+        "views": 737791,
+        "vph": 22,
+        "duration": "PT11M18S",
+        "publishedAt": "2025-09-24",
+        "thumbnail": "https://i.ytimg.com/vi/KCJEeITgePU/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -13072,7 +14372,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "ecPaHxx7Nzk",
+          "title": "9YO Boy Outsmarts Killer Preacher– Avenges His Entire Family | The Case of Andrew Hockensmith",
+          "views": 6921028,
+          "vph": 57,
+          "duration": "PT21M54S",
+          "publishedAt": "2024-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/ecPaHxx7Nzk/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13093,6 +14403,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "ecPaHxx7Nzk",
+        "title": "9YO Boy Outsmarts Killer Preacher– Avenges His Entire Family | The Case of Andrew Hockensmith",
+        "views": 6921028,
+        "vph": 57,
+        "duration": "PT21M54S",
+        "publishedAt": "2024-07-13",
+        "thumbnail": "https://i.ytimg.com/vi/ecPaHxx7Nzk/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -13285,7 +14605,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "1AElONvi9WQ",
+          "title": "Why Blue Whales Don't Get Cancer - Peto's Paradox",
+          "views": 27256107,
+          "vph": 89,
+          "duration": "PT7M7S",
+          "publishedAt": "2020-03-01",
+          "thumbnail": "https://i.ytimg.com/vi/1AElONvi9WQ/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13306,6 +14636,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "1AElONvi9WQ",
+        "title": "Why Blue Whales Don't Get Cancer - Peto's Paradox",
+        "views": 27256107,
+        "vph": 89,
+        "duration": "PT7M7S",
+        "publishedAt": "2020-03-01",
+        "thumbnail": "https://i.ytimg.com/vi/1AElONvi9WQ/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -13490,7 +14830,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "ay6TsZoC_iI",
+          "title": "The $9 Billion Beer Dynasty Destroyed By Its Own Heirs: The Strohs",
+          "views": 441500,
+          "vph": 83,
+          "duration": "PT24M17S",
+          "publishedAt": "2026-01-29",
+          "thumbnail": "https://i.ytimg.com/vi/ay6TsZoC_iI/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13511,6 +14861,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "ay6TsZoC_iI",
+        "title": "The $9 Billion Beer Dynasty Destroyed By Its Own Heirs: The Strohs",
+        "views": 441500,
+        "vph": 83,
+        "duration": "PT24M17S",
+        "publishedAt": "2026-01-29",
+        "thumbnail": "https://i.ytimg.com/vi/ay6TsZoC_iI/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -13704,7 +15064,17 @@
           "totalAuditedVideos": 8
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "3FV407gsiOU",
+          "title": "Ranking Every DreamWorks Villain",
+          "views": 10062984,
+          "vph": 499,
+          "duration": "PT27M25S",
+          "publishedAt": "2023-07-24",
+          "thumbnail": "https://i.ytimg.com/vi/3FV407gsiOU/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13725,6 +15095,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "3FV407gsiOU",
+        "title": "Ranking Every DreamWorks Villain",
+        "views": 10062984,
+        "vph": 499,
+        "duration": "PT27M25S",
+        "publishedAt": "2023-07-24",
+        "thumbnail": "https://i.ytimg.com/vi/3FV407gsiOU/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -13914,7 +15294,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "JjvN_hYDp3g",
+          "title": "KILL YOUR EXCUSES - Motivational Speech",
+          "views": 9376949,
+          "vph": 140,
+          "duration": "PT3M39S",
+          "publishedAt": "2021-07-02",
+          "thumbnail": "https://i.ytimg.com/vi/JjvN_hYDp3g/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13935,6 +15325,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Australian English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "JjvN_hYDp3g",
+        "title": "KILL YOUR EXCUSES - Motivational Speech",
+        "views": 9376949,
+        "vph": 140,
+        "duration": "PT3M39S",
+        "publishedAt": "2021-07-02",
+        "thumbnail": "https://i.ytimg.com/vi/JjvN_hYDp3g/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -14129,7 +15529,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "wSxMGcP-rPY",
+          "title": "Impossible Places | The Most Dangerous Roads in the World That No One Wants to Visit | 4K Travel",
+          "views": 1118766,
+          "vph": 5,
+          "duration": "PT37M38S",
+          "publishedAt": "2026-03-25",
+          "thumbnail": "https://i.ytimg.com/vi/wSxMGcP-rPY/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14150,6 +15560,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "wSxMGcP-rPY",
+        "title": "Impossible Places | The Most Dangerous Roads in the World That No One Wants to Visit | 4K Travel",
+        "views": 1118766,
+        "vph": 5,
+        "duration": "PT37M38S",
+        "publishedAt": "2026-03-25",
+        "thumbnail": "https://i.ytimg.com/vi/wSxMGcP-rPY/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -14342,7 +15762,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "KG9blFjS9Uw",
+          "title": "12 South Carolina Towns So Dangerous Even Locals Avoid Them After Dark",
+          "views": 147857,
+          "vph": 9,
+          "duration": "PT24M58S",
+          "publishedAt": "2026-07-29",
+          "thumbnail": "https://i.ytimg.com/vi/KG9blFjS9Uw/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14363,6 +15793,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Canadian English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "KG9blFjS9Uw",
+        "title": "12 South Carolina Towns So Dangerous Even Locals Avoid Them After Dark",
+        "views": 147857,
+        "vph": 9,
+        "duration": "PT24M58S",
+        "publishedAt": "2026-07-29",
+        "thumbnail": "https://i.ytimg.com/vi/KG9blFjS9Uw/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -14555,7 +15995,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "1ENeaZg4PzA",
+          "title": "How New York Got Rich (It wasn’t Wall Street)",
+          "views": 9591,
+          "vph": 1,
+          "duration": "PT25M41S",
+          "publishedAt": "2026-08-30",
+          "thumbnail": "https://i.ytimg.com/vi/1ENeaZg4PzA/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14576,6 +16026,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "1ENeaZg4PzA",
+        "title": "How New York Got Rich (It wasn’t Wall Street)",
+        "views": 9591,
+        "vph": 1,
+        "duration": "PT25M41S",
+        "publishedAt": "2026-08-30",
+        "thumbnail": "https://i.ytimg.com/vi/1ENeaZg4PzA/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -14739,7 +16199,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "YReXOF4RqYQ",
+          "title": "The Most Devastating Terror Attacks in US History",
+          "views": 182357,
+          "vph": 101,
+          "duration": "PT11M19S",
+          "publishedAt": "2026-05-22",
+          "thumbnail": "https://i.ytimg.com/vi/YReXOF4RqYQ/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14760,6 +16230,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "YReXOF4RqYQ",
+        "title": "The Most Devastating Terror Attacks in US History",
+        "views": 182357,
+        "vph": 101,
+        "duration": "PT11M19S",
+        "publishedAt": "2026-05-22",
+        "thumbnail": "https://i.ytimg.com/vi/YReXOF4RqYQ/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -14922,7 +16402,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Nhật (Japanese)",
-        "languageFlag": "🇯🇵"
+        "languageFlag": "🇯🇵",
+        "featuredDemoVideo": {
+          "videoId": "eOG2dXRG9rg",
+          "title": "40歳・英語力ゼロ。ここから最短でペラペラになるロードマップをガチで考察する【2ch英語スレ】",
+          "views": 309879,
+          "vph": 92,
+          "duration": "PT21M57S",
+          "publishedAt": "2026-06-07",
+          "thumbnail": "https://i.ytimg.com/vi/eOG2dXRG9rg/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14943,6 +16433,16 @@
         "code": "ja-JP",
         "flag": "🇯🇵",
         "dialect": "2ch Dialogue Japanese (Diễn đàn học tiếng Anh)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "eOG2dXRG9rg",
+        "title": "40歳・英語力ゼロ。ここから最短でペラペラになるロードマップをガチで考察する【2ch英語スレ】",
+        "views": 309879,
+        "vph": 92,
+        "duration": "PT21M57S",
+        "publishedAt": "2026-06-07",
+        "thumbnail": "https://i.ytimg.com/vi/eOG2dXRG9rg/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -15106,7 +16606,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "yLvE7aZevsM",
+          "title": "Battle of Okinawa: The 82-Day Nightmare | Rare Footage",
+          "views": 3466,
+          "vph": null,
+          "duration": "PT12M38S",
+          "publishedAt": "2026-07-19",
+          "thumbnail": "https://i.ytimg.com/vi/yLvE7aZevsM/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15127,6 +16637,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "yLvE7aZevsM",
+        "title": "Battle of Okinawa: The 82-Day Nightmare | Rare Footage",
+        "views": 3466,
+        "vph": null,
+        "duration": "PT12M38S",
+        "publishedAt": "2026-07-19",
+        "thumbnail": "https://i.ytimg.com/vi/yLvE7aZevsM/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -15320,7 +16840,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "xPzwR_Y698o",
+          "title": "What It's Like to Be a Black Market Surgeon",
+          "views": 5941058,
+          "vph": 295,
+          "duration": "PT16M27S",
+          "publishedAt": "2026-02-28",
+          "thumbnail": "https://i.ytimg.com/vi/xPzwR_Y698o/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15341,6 +16871,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "xPzwR_Y698o",
+        "title": "What It's Like to Be a Black Market Surgeon",
+        "views": 5941058,
+        "vph": 295,
+        "duration": "PT16M27S",
+        "publishedAt": "2026-02-28",
+        "thumbnail": "https://i.ytimg.com/vi/xPzwR_Y698o/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -15534,7 +17074,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "l2-2r087_VA",
+          "title": "How Many Krabby Patties Has Spongebob ACTUALLY Made?",
+          "views": 1953586,
+          "vph": 97,
+          "duration": "PT28M39S",
+          "publishedAt": "2025-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/l2-2r087_VA/maxresdefault.jpg",
+          "selectionType": "RECENT_VIRAL"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15555,6 +17105,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "l2-2r087_VA",
+        "title": "How Many Krabby Patties Has Spongebob ACTUALLY Made?",
+        "views": 1953586,
+        "vph": 97,
+        "duration": "PT28M39S",
+        "publishedAt": "2025-08-27",
+        "thumbnail": "https://i.ytimg.com/vi/l2-2r087_VA/maxresdefault.jpg",
+        "selectionType": "RECENT_VIRAL"
       }
     },
     {
@@ -15746,7 +17306,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Nga (Russian)",
-        "languageFlag": "🇷🇺"
+        "languageFlag": "🇷🇺",
+        "featuredDemoVideo": {
+          "videoId": "GgaOgQ3ZHns",
+          "title": "Остров Сокотра - Самое Инопланетное место ЗЕМЛИ. 9 тайн Йемена",
+          "views": 33587,
+          "vph": 11,
+          "duration": "PT16M59S",
+          "publishedAt": "2026-05-06",
+          "thumbnail": "https://i.ytimg.com/vi/GgaOgQ3ZHns/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15767,6 +17337,16 @@
         "code": "ru-RU",
         "flag": "🇷🇺",
         "dialect": "Standard Russian (Thuyết minh khảo cổ học bí ẩn)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "GgaOgQ3ZHns",
+        "title": "Остров Сокотра - Самое Инопланетное место ЗЕМЛИ. 9 тайн Йемена",
+        "views": 33587,
+        "vph": 11,
+        "duration": "PT16M59S",
+        "publishedAt": "2026-05-06",
+        "thumbnail": "https://i.ytimg.com/vi/GgaOgQ3ZHns/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -15966,7 +17546,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "BXBC42DgZWs",
+          "title": "Rarer Than Gold | Every Precious Metal Explained | Everyday Explained",
+          "views": 200815,
+          "vph": 94,
+          "duration": "PT8M14S",
+          "publishedAt": "2026-04-23",
+          "thumbnail": "https://i.ytimg.com/vi/BXBC42DgZWs/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15987,6 +17577,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Australian English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "BXBC42DgZWs",
+        "title": "Rarer Than Gold | Every Precious Metal Explained | Everyday Explained",
+        "views": 200815,
+        "vph": 94,
+        "duration": "PT8M14S",
+        "publishedAt": "2026-04-23",
+        "thumbnail": "https://i.ytimg.com/vi/BXBC42DgZWs/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -16179,7 +17779,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "W-5kcUVuHMA",
+          "title": "Every Computer Port Explained!",
+          "views": 382216,
+          "vph": 3,
+          "duration": "PT14M7S",
+          "publishedAt": "2026-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/W-5kcUVuHMA/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -16200,6 +17810,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "W-5kcUVuHMA",
+        "title": "Every Computer Port Explained!",
+        "views": 382216,
+        "vph": 3,
+        "duration": "PT14M7S",
+        "publishedAt": "2026-01-03",
+        "thumbnail": "https://i.ytimg.com/vi/W-5kcUVuHMA/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -16364,7 +17984,17 @@
           "totalAuditedVideos": 10
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "SftPszLrSEM",
+          "title": "Living in Bangladesh: Inside the World’s Most Crowded and Resilient Nation | 4K Travel Documentary",
+          "views": 220087,
+          "vph": 110,
+          "duration": "PT30M5S",
+          "publishedAt": "2026-07-05",
+          "thumbnail": "https://i.ytimg.com/vi/SftPszLrSEM/maxresdefault.jpg",
+          "selectionType": "TOP_BREAKTHROUGH"
+        }
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -16385,6 +18015,16 @@
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "SftPszLrSEM",
+        "title": "Living in Bangladesh: Inside the World’s Most Crowded and Resilient Nation | 4K Travel Documentary",
+        "views": 220087,
+        "vph": 110,
+        "duration": "PT30M5S",
+        "publishedAt": "2026-07-05",
+        "thumbnail": "https://i.ytimg.com/vi/SftPszLrSEM/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     },
     {
@@ -16462,13 +18102,33 @@
           "totalAuditedVideos": 237
         },
         "audioLanguage": "Tiếng Tây Ban Nha (Spanish)",
-        "languageFlag": "🇪🇸"
+        "languageFlag": "🇪🇸",
+        "featuredDemoVideo": {
+          "videoId": "W8bFPJco_M0",
+          "title": "EL MISTERIOSO CASO DE LAS 7 LLAVES DE AGUA PRIETA",
+          "views": 85000,
+          "vph": 320,
+          "duration": "PT18M45S",
+          "publishedAt": "2026-09-12",
+          "thumbnail": "https://i.ytimg.com/vi/W8bFPJco_M0/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Tây Ban Nha (Spanish)",
         "code": "es-MX",
         "flag": "🇪🇸",
         "dialect": "Mexican Spanish (Khám phá địa phương & văn hóa Mexico)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "W8bFPJco_M0",
+        "title": "EL MISTERIOSO CASO DE LAS 7 LLAVES DE AGUA PRIETA",
+        "views": 85000,
+        "vph": 320,
+        "duration": "PT18M45S",
+        "publishedAt": "2026-09-12",
+        "thumbnail": "https://i.ytimg.com/vi/W8bFPJco_M0/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -16546,13 +18206,33 @@
           "totalAuditedVideos": 28
         },
         "audioLanguage": "Tiếng Nhật (Japanese)",
-        "languageFlag": "🇯🇵"
+        "languageFlag": "🇯🇵",
+        "featuredDemoVideo": {
+          "videoId": "2AiN_hEkxJI",
+          "title": "【信長の最期】本能寺の変・完全版 - 30分AI戦国ドラマ",
+          "views": 142000,
+          "vph": 180,
+          "duration": "PT31M10S",
+          "publishedAt": "2026-08-07",
+          "thumbnail": "https://i.ytimg.com/vi/2AiN_hEkxJI/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Nhật (Japanese)",
         "code": "ja-JP",
         "flag": "🇯🇵",
         "dialect": "Classical Japanese (Kịch lịch sử Chiến Quốc AI)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "2AiN_hEkxJI",
+        "title": "【信長の最期】本能寺の変・完全版 - 30分AI戦国ドラマ",
+        "views": 142000,
+        "vph": 180,
+        "duration": "PT31M10S",
+        "publishedAt": "2026-08-07",
+        "thumbnail": "https://i.ytimg.com/vi/2AiN_hEkxJI/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -16630,13 +18310,33 @@
           "totalAuditedVideos": 15
         },
         "audioLanguage": "Tiếng Nhật (Japanese)",
-        "languageFlag": "🇯🇵"
+        "languageFlag": "🇯🇵",
+        "featuredDemoVideo": {
+          "videoId": "Jab1jka2KBI",
+          "title": "【実話】同窓会で元カノと再会して人生狂った男の末路",
+          "views": 98000,
+          "vph": 410,
+          "duration": "PT14M20S",
+          "publishedAt": "2026-09-12",
+          "thumbnail": "https://i.ytimg.com/vi/Jab1jka2KBI/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Nhật (Japanese)",
         "code": "ja-JP",
         "flag": "🇯🇵",
         "dialect": "Tokyo Casual Japanese (Manga tâm sự đời thực)"
+      },
+      "featuredDemoVideo": {
+        "videoId": "Jab1jka2KBI",
+        "title": "【実話】同窓会で元カノと再会して人生狂った男の末路",
+        "views": 98000,
+        "vph": 410,
+        "duration": "PT14M20S",
+        "publishedAt": "2026-09-12",
+        "thumbnail": "https://i.ytimg.com/vi/Jab1jka2KBI/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -16714,13 +18414,33 @@
           "totalAuditedVideos": 481
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "5gvj4qQAjZc",
+          "title": "The Ancient Secret to Finding Peace in Chaos | Buddhist Philosophy",
+          "views": 385000,
+          "vph": 850,
+          "duration": "PT22M15S",
+          "publishedAt": "2026-09-11",
+          "thumbnail": "https://i.ytimg.com/vi/5gvj4qQAjZc/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "5gvj4qQAjZc",
+        "title": "The Ancient Secret to Finding Peace in Chaos | Buddhist Philosophy",
+        "views": 385000,
+        "vph": 850,
+        "duration": "PT22M15S",
+        "publishedAt": "2026-09-11",
+        "thumbnail": "https://i.ytimg.com/vi/5gvj4qQAjZc/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -16798,13 +18518,33 @@
           "totalAuditedVideos": 29
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "K-9zy_DfiVg",
+          "title": "How One Man Built an Entire Railway in Secret | Engineering History",
+          "views": 210000,
+          "vph": 530,
+          "duration": "PT19M40S",
+          "publishedAt": "2026-09-11",
+          "thumbnail": "https://i.ytimg.com/vi/K-9zy_DfiVg/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "K-9zy_DfiVg",
+        "title": "How One Man Built an Entire Railway in Secret | Engineering History",
+        "views": 210000,
+        "vph": 530,
+        "duration": "PT19M40S",
+        "publishedAt": "2026-09-11",
+        "thumbnail": "https://i.ytimg.com/vi/K-9zy_DfiVg/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -16881,13 +18621,33 @@
           "totalAuditedVideos": 70
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "WCgkyoulaF8",
+          "title": "Building a Warm Shelter at -71°C in Siberia | Solo Survival ASMR",
+          "views": 430000,
+          "vph": 920,
+          "duration": "PT28M50S",
+          "publishedAt": "2026-09-12",
+          "thumbnail": "https://i.ytimg.com/vi/WCgkyoulaF8/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "WCgkyoulaF8",
+        "title": "Building a Warm Shelter at -71°C in Siberia | Solo Survival ASMR",
+        "views": 430000,
+        "vph": 920,
+        "duration": "PT28M50S",
+        "publishedAt": "2026-09-12",
+        "thumbnail": "https://i.ytimg.com/vi/WCgkyoulaF8/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -16964,13 +18724,33 @@
           "totalAuditedVideos": 100
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "yA31kYdM9zI",
+          "title": "She Lost Her Home in a Storm Then a Stranger Built Her a New Life ASMR",
+          "views": 195000,
+          "vph": 480,
+          "duration": "PT24M10S",
+          "publishedAt": "2026-09-11",
+          "thumbnail": "https://i.ytimg.com/vi/yA31kYdM9zI/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "yA31kYdM9zI",
+        "title": "She Lost Her Home in a Storm Then a Stranger Built Her a New Life ASMR",
+        "views": 195000,
+        "vph": 480,
+        "duration": "PT24M10S",
+        "publishedAt": "2026-09-11",
+        "thumbnail": "https://i.ytimg.com/vi/yA31kYdM9zI/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -17048,13 +18828,33 @@
           "totalAuditedVideos": 35
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "uQrslqXIjFw",
+          "title": "The Real Reason You Crave Sugar at Night | Human Biology & Food Shock",
+          "views": 560000,
+          "vph": 1450,
+          "duration": "PT15M30S",
+          "publishedAt": "2026-09-13",
+          "thumbnail": "https://i.ytimg.com/vi/uQrslqXIjFw/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "uQrslqXIjFw",
+        "title": "The Real Reason You Crave Sugar at Night | Human Biology & Food Shock",
+        "views": 560000,
+        "vph": 1450,
+        "duration": "PT15M30S",
+        "publishedAt": "2026-09-13",
+        "thumbnail": "https://i.ytimg.com/vi/uQrslqXIjFw/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -17132,13 +18932,33 @@
           "totalAuditedVideos": 35
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "uQrslqXIjFw",
+          "title": "The Real Reason You Crave Sugar at Night | Human Biology & Food Shock",
+          "views": 560000,
+          "vph": 1450,
+          "duration": "PT15M30S",
+          "publishedAt": "2026-09-13",
+          "thumbnail": "https://i.ytimg.com/vi/uQrslqXIjFw/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "uQrslqXIjFw",
+        "title": "The Real Reason You Crave Sugar at Night | Human Biology & Food Shock",
+        "views": 560000,
+        "vph": 1450,
+        "duration": "PT15M30S",
+        "publishedAt": "2026-09-13",
+        "thumbnail": "https://i.ytimg.com/vi/uQrslqXIjFw/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -17216,13 +19036,33 @@
           "totalAuditedVideos": 35
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "uQrslqXIjFw",
+          "title": "The Real Reason You Crave Sugar at Night | Human Biology & Food Shock",
+          "views": 560000,
+          "vph": 1450,
+          "duration": "PT15M30S",
+          "publishedAt": "2026-09-13",
+          "thumbnail": "https://i.ytimg.com/vi/uQrslqXIjFw/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "uQrslqXIjFw",
+        "title": "The Real Reason You Crave Sugar at Night | Human Biology & Food Shock",
+        "views": 560000,
+        "vph": 1450,
+        "duration": "PT15M30S",
+        "publishedAt": "2026-09-13",
+        "thumbnail": "https://i.ytimg.com/vi/uQrslqXIjFw/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -17300,13 +19140,33 @@
           "totalAuditedVideos": 42
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "y1lcxhwK2A4",
+          "title": "What Lives 10,000 Meters Beneath the Ocean Surface | Deep Ocean Mystery",
+          "views": 820000,
+          "vph": 1600,
+          "duration": "PT35M20S",
+          "publishedAt": "2026-09-09",
+          "thumbnail": "https://i.ytimg.com/vi/y1lcxhwK2A4/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "y1lcxhwK2A4",
+        "title": "What Lives 10,000 Meters Beneath the Ocean Surface | Deep Ocean Mystery",
+        "views": 820000,
+        "vph": 1600,
+        "duration": "PT35M20S",
+        "publishedAt": "2026-09-09",
+        "thumbnail": "https://i.ytimg.com/vi/y1lcxhwK2A4/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -17384,13 +19244,33 @@
           "totalAuditedVideos": 42
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "y1lcxhwK2A4",
+          "title": "What Lives 10,000 Meters Beneath the Ocean Surface | Deep Ocean Mystery",
+          "views": 820000,
+          "vph": 1600,
+          "duration": "PT35M20S",
+          "publishedAt": "2026-09-09",
+          "thumbnail": "https://i.ytimg.com/vi/y1lcxhwK2A4/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "y1lcxhwK2A4",
+        "title": "What Lives 10,000 Meters Beneath the Ocean Surface | Deep Ocean Mystery",
+        "views": 820000,
+        "vph": 1600,
+        "duration": "PT35M20S",
+        "publishedAt": "2026-09-09",
+        "thumbnail": "https://i.ytimg.com/vi/y1lcxhwK2A4/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -17469,13 +19349,33 @@
           "totalAuditedVideos": 240
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "Wal6HjCqn8s",
+          "title": "The Terrifying Incident at Dyatlov Pass: New Evidence | Dark History",
+          "views": 1250000,
+          "vph": 2800,
+          "duration": "PT42M10S",
+          "publishedAt": "2026-09-11",
+          "thumbnail": "https://i.ytimg.com/vi/Wal6HjCqn8s/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "Wal6HjCqn8s",
+        "title": "The Terrifying Incident at Dyatlov Pass: New Evidence | Dark History",
+        "views": 1250000,
+        "vph": 2800,
+        "duration": "PT42M10S",
+        "publishedAt": "2026-09-11",
+        "thumbnail": "https://i.ytimg.com/vi/Wal6HjCqn8s/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     },
     {
@@ -17553,13 +19453,33 @@
           "totalAuditedVideos": 240
         },
         "audioLanguage": "Tiếng Anh (English)",
-        "languageFlag": "🇺🇸"
+        "languageFlag": "🇺🇸",
+        "featuredDemoVideo": {
+          "videoId": "Wal6HjCqn8s",
+          "title": "The Terrifying Incident at Dyatlov Pass: New Evidence | Dark History",
+          "views": 1250000,
+          "vph": 2800,
+          "duration": "PT42M10S",
+          "publishedAt": "2026-09-11",
+          "thumbnail": "https://i.ytimg.com/vi/Wal6HjCqn8s/mqdefault.jpg",
+          "selectionType": "LATEST_VIRAL"
+        }
       },
       "audioLanguageInfo": {
         "language": "Tiếng Anh (English)",
         "code": "en-US",
         "flag": "🇺🇸",
         "dialect": "Standard American English"
+      },
+      "featuredDemoVideo": {
+        "videoId": "Wal6HjCqn8s",
+        "title": "The Terrifying Incident at Dyatlov Pass: New Evidence | Dark History",
+        "views": 1250000,
+        "vph": 2800,
+        "duration": "PT42M10S",
+        "publishedAt": "2026-09-11",
+        "thumbnail": "https://i.ytimg.com/vi/Wal6HjCqn8s/mqdefault.jpg",
+        "selectionType": "LATEST_VIRAL"
       }
     }
   ],

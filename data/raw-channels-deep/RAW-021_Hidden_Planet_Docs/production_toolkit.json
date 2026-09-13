@@ -5,45 +5,45 @@
   "editorialNiche": "Địa lý / du lịch / đời sống nơi khác",
   "targetMarket": {
     "primaryRegion": "US / Global (Tiếng Anh)",
-    "audienceProfile": "Khán giả hiếu kỳ về địa chất bí ẩn, khảo cổ học lòng đất và những nơi con người chưa từng đặt chân tới (Extreme Spelunking & Underground Earth Mysteries)",
-    "viewingHabit": "Xem màn hình lớn (Smart TV, PC) vào buổi tối; thích âm thanh bí ẩn, nhịp kể chuyện trầm ổn lôi cuốn"
+    "audienceProfile": "Khán giả đam mê khảo cổ học bí ẩn, những nền văn minh cổ đại bị lãng quên và những di chỉ lòng đất làm đảo lộn sách giáo khoa lịch sử (Ancient Lost Civilizations, Subterranean Archaeology & Forbidden History)",
+    "viewingHabit": "Xem video thời lượng dài (30–45 phút) vào buổi tối; thích nhịp kể chuyện trầm ổn, nhiều dẫn chứng khảo cổ cụ thể, logic phản biện sắc bén"
   },
   "visualDirective": {
-    "styleShort": "Raw subterranean expedition documentary (the audience is US/Global, deep cave exploration, limestone caverns, subterranean rivers)",
-    "mascot": "Lead Spelunker / Archeologist in rugged caving suit, harness, and headlamp helmet",
-    "cameraLighting": "Stark handheld light beam piercing pitch-black subterranean void, claustrophobic close-up angles, dynamic descent tracking, 35mm-50mm documentary lens",
-    "style": "Handheld expedition camera footage, 35mm-50mm documentary lens, stark headlamp chiaroscuro lighting piercing pitch-black void, water droplets dripping from stalactites, limestone dust particles floating in beam of light, wet rock textures, steam and breath condensation, natural motion blur, authentic sense of dangerous isolation, no CGI, no magical illumination, no clean studio look",
-    "negativePrompt": "no CGI, no glowing fantasy crystals, no clean studio lighting, no 3D animated look, no plastic skin, no unrealistic neon saturation, no distorted limbs",
-    "masterVisualPrompt": "Raw subterranean expedition documentary, shot on 35mm lens, handheld camera, stark headlamp beam cutting through pitch-black limestone cavern, floating dust particles, condensation breath, wet dripping rock walls, claustrophobic atmosphere, authentic expedition realism, no CGI, no glowing effects --ar 16:9 --style raw"
+    "styleShort": "Authentic archaeological excavation realism (the audience is US/Global, ancient lost civilizations, mysterious bronze artifacts, buried monumental temples)",
+    "mascot": "Lead Field Archaeologist / Historian examining ancient relics under natural excavation lighting",
+    "cameraLighting": "Documentary archival 35mm lens, natural excavation trench light, handheld camera movement, fine soil and dust motes, weathered bronze patina with realistic oxidation, no CGI, no fantasy glowing effects, no digital polish",
+    "style": "Cinematic historical documentary style, 35mm-50mm lens, natural directional sunlight cutting into excavated pits, realistic mud and clay textures, ancient bronze masks with authentic patina and green oxidation, hand-held camera subtle breathing, chiaroscuro contrast between dark trenches and daylight, museum-grade archival realism, no magical aura, no CGI, no cartoonish rendering",
+    "negativePrompt": "no CGI, no sci-fi neon lights, no glowing magic crystals, no 3D cartoon style, no glossy plastic textures, no distorted hands, no artificial oversaturation",
+    "masterVisualPrompt": "Archaeological excavation documentary shot, 35mm lens, handheld camera, extreme close-up of an ancient 3000-year-old bronze mask with protruding eyes half-buried in wet clay trench, realistic patina and oxidation, dramatic dust motes in natural sunbeam, authentic historical realism, no CGI, no fantasy lighting --ar 16:9 --style raw"
   },
   "scriptBlueprint": {
-    "hookArchetype": "Hiểm họa sinh tử / Mở đầu ngay tại ranh giới vực thẳm không đáy (Action Precipice Hook)",
-    "openingFormula": "In 1986, two workers digging a routine drainage ditch struck something solid beneath the mud. They didn't realize they were standing on top of a 3,000-year-old subterranean mystery that defies modern archeology...",
-    "pacingStructure": "[0–15s] Hook hiểm họa/bí ẩn rợn người -> [15–45s] Giới hạn sinh tồn & bản đồ địa chất tử thần -> [45s–12m] 3 tầng thám hiểm nghẹt thở, mỗi 90s có 1 mini-cliffhanger -> [Kết thúc] Sự nhỏ bé của nhân loại trước lòng đất",
-    "masterScriptPrompt": "Bạn là chuyên gia biên kịch phim tài liệu địa lý và khảo cổ học hàng đầu (phong cách Hidden Planet Docs, NatGeo và Real Life Lore). Hãy viết kịch bản YouTube về chủ đề [TÊN BÍ ẨN ĐỊA CHẤT / HANG ĐỘNG / KHẢO CỔ] bằng tiếng Anh chuẩn giọng Mỹ, văn phong nghiêm nghị, hồi hộp, kịch tính. Áp dụng tỷ lệ 70% dữ liệu lịch sử/địa chất có thật + 30% kịch tính hóa trải nghiệm sinh tồn. Mở đầu trực tiếp không chào hỏi, nhịp đọc 130–140 từ/phút. Chia kịch bản thành các phân đoạn 30–45 giây tương ứng với từng góc máy thám hiểm.",
+    "hookArchetype": "Nghịch lý hiện vật dị thường làm sụp đổ lịch sử chính thống (Paradoxical Artifact Discovery Hook)",
+    "openingFormula": "In 1986, two workers digging a routine drainage ditch in Sichuan Province struck something metallic. When they pulled it from the mud, they found a bronze face over a meter wide with eyes protruding on 10cm stalks — an artifact so advanced it rivaled ancient Egypt, yet 3,000 years of recorded Chinese history never mentioned this civilization once...",
+    "pacingStructure": "[0–15s] Hook phát hiện hiện vật dị thường trong bùn đất -> [15–45s] Nghịch lý: Tại sao một nền văn minh đúc đồng vĩ đại bị xóa sổ hoàn toàn khỏi sử sách? -> [45s–30m] 3 hồ sơ khảo cổ chấn động (Tam Tinh Đôi Tứ Xuyên, Đền Göbekli Tepe 12.000 năm tuổi trước cả nông nghiệp, Đô thị ngầm Amazon) với mini-cliffhanger mỗi 90s -> [Kết thúc] Đúc kết: Nhân loại không phải là nền văn minh đầu tiên",
+    "masterScriptPrompt": "Bạn là chuyên gia biên kịch phim tài liệu khảo cổ học và lịch sử cấm hàng đầu (phong cách Hidden Planet Docs, Graham Hancock và Joe Rogan Archaeology). Hãy viết kịch bản YouTube dài 30–35 phút về chủ đề [TÊN NỀN VĂN MINH / DI CHỈ KHẢO CỔ BÍ ẨN] bằng tiếng Anh chuẩn giọng Mỹ (US English). Áp dụng công thức 70% dữ liệu khảo cổ học/hiện vật khai quật thực tế + 30% xâu chuỗi giả thuyết logic phản biện sách giáo khoa truyền thống. Mở đầu trực tiếp bằng hiện vật gây sốc trong 15s đầu không chào hỏi, nhịp đọc trầm ổn 135–145 từ/phút. Chia kịch bản thành các phân đoạn 45–60 giây tương ứng với từng góc máy tư liệu.",
     "scriptRefVid": "Q1tXposwAAo",
     "scriptRefTitle": "The Hidden Civilizations on Earth Even Historians Can't Believe Were Found (1.17M views)"
   },
   "packagingCTR": {
-    "titleFormula": "[Bí danh Địa chất/Độ sâu] + [Hành trình xuống sâu X mét] + [Thứ họ tìm thấy rợn người / Why No One Returns]",
-    "thumbnailComposition": "Nhà thám hiểm cầm đèn pha soi xuống miệng vực khổng lồ chiếm 65% bên phải; Vực sâu đen ngòm thăm thẳm ở trung tâm; Text ngắn 2–3 từ màu Vàng chanh (#FACC15) hoặc Đỏ cảnh báo (#EF4444) viền đen đậm bên trái.",
-    "thumbnailText": "DEPTH: -2,197M ⚠️ / NEVER ENTER 🚫 / NO RETURN? 💀",
-    "cleanThumbnailPrompt": "Photorealistic expedition documentary thumbnail base, rugged explorer with glowing headlamp looking down into an abyss of a colossal dark cave, dramatic contrast, pitch-black shadows, extreme sense of depth and scale, volumetric light beam, high detail 8k, no text, no logo --ar 16:9",
+    "titleFormula": "[Hiện vật/Di chỉ kỳ dị] + [Nền văn minh cổ đại bị lãng quên] + [Lý do các nhà sử học không thể tin / Even Historians Can't Believe Were Found]",
+    "thumbnailComposition": "Mặt nạ đồng cổ đại mắt lồi bí ẩn chiếm 65% khung hình bên phải; Hố khai quật đất bùn u tối ở trung tâm; Text ngắn 2–3 từ màu Vàng chanh (#FACC15) hoặc Đỏ cảnh báo (#EF4444) viền đen đậm bên trái.",
+    "thumbnailText": "3,000 YEARS OLD ⏳ / NOT HUMAN? 👽 / ERASED FROM HISTORY 🚫",
+    "cleanThumbnailPrompt": "Photorealistic documentary thumbnail base, ancient monumental bronze mask with elongated eyes emerging from excavated dark soil, dramatic excavation trench spotlight, high contrast, museum archive artifact detail, dust motes, 8k resolution, no text, no watermark --ar 16:9",
     "exampleTitles": [
       "The Hidden Civilizations on Earth Even Historians Can't Believe Were Found",
-      "What Scientists Found at the Bottom of the Deepest Cave on Earth",
-      "Why Experienced Divers Refuse to Ever Enter This Underground Cave"
+      "What Archaeologists Found 30 Feet Beneath This Turkish Hill Terrified Historians",
+      "The 12,000-Year-Old Temple That Proves History Books Got Everything Backwards"
     ]
   },
   "productionStack": {
-    "matchingSkill": "h2dev-wildlife-motion & script-forging (Phim tài liệu thám hiểm điện ảnh)",
+    "matchingSkill": "script-forging & video-script-dissect (Bóc tách kịch bản khảo cổ học & phân cảnh điện ảnh)",
     "sopDocPath": "assets/docs/tai-lieu/skill-wildlife-survival.md",
     "repoPath": "pipelines/wildlife/README.md",
-    "scriptTool": "Claude 3.5 Sonnet (Chuyên sâu kịch tính hóa tài liệu khám phá)",
-    "voiceTool": "ElevenLabs Model Multilingual v2, Giọng: Liam / Brian (Trầm ấm, nghiêm nghị, bí ẩn)",
-    "videoTool": "Kling 1.5 / Runway Gen-3 (Chuyển động đèn pha và hạt bụi ngầm) -> Hậu kỳ CapCut PC",
-    "bgmSoundtrack": "Dark Ambient Drone & Subterranean Echoes (Tiếng gió rít hang sâu, tiếng giọt nước, ducking âm lượng -18dB dưới giọng đọc)",
-    "soundEffects": "Dripping water, carabiner click, gravel falling down abyss, heavy breathing into respirator"
+    "scriptTool": "Claude 3.5 Sonnet (Chuyên sâu kịch tính hóa tư liệu lịch sử & khảo cổ học)",
+    "voiceTool": "ElevenLabs Model Multilingual v2, Giọng: Liam / Brian (Trầm ấm, nghiêm nghị, bí ẩn, phong cách tài liệu PBS/NatGeo)",
+    "videoTool": "Kling 1.5 / Runway Gen-3 (Chuyển động chùm sáng khai quật và góc lia hiện vật đồng cổ) -> Hậu kỳ CapCut PC",
+    "bgmSoundtrack": "Ancient Historical Ambient & Deep Bronze Resonances (Tiếng chuông đồng vang vọng xa xăm, nhịp trống bộ lạc chậm rãi, ducking âm lượng -18dB dưới giọng đọc)",
+    "soundEffects": "Shovel striking metal, crumbling dry earth, echoing cavern wind, deep low-frequency sub drone"
   },
   "launchpad5Steps": [
     {
@@ -54,12 +54,12 @@
     {
       "step": 2,
       "title": "Setup Nhận Diện & SEO Kênh",
-      "detail": "Gắn Banner, Avatar thám hiểm + Sao chép trọn bộ 16 tags SEO có sẵn trong hồ sơ -> Ngâm kênh 3-4 ngày."
+      "detail": "Gắn Banner, Avatar khảo cổ thám hiểm + Sao chép trọn bộ 16 tags SEO có sẵn trong hồ sơ -> Ngâm kênh 3-4 ngày."
     },
     {
       "step": 3,
       "title": "Sản Xuất Batch 5-10 Video",
-      "detail": "Dùng Master Script Prompt + Voice Liam ElevenLabs (-16 LUFS) + Kling/Runway tạo B-roll thám hiểm."
+      "detail": "Dùng Master Script Prompt + Voice Liam ElevenLabs (-16 LUFS) + Kling/Runway tạo B-roll khai quật chân thực."
     },
     {
       "step": 4,

@@ -23,6 +23,13 @@
     "targetAudience": "Người nghe thư giãn ban đêm, người yêu thích thiên văn học và khoa học vũ trụ",
     "actualPaceWPM": "151 từ/phút (Chậm rãi, âm vang trầm hùng, khoảng dừng giữa các sự thật khoa học sâu sắc)"
   },
+  "promptingStudio": {
+    "scene": "A soundproofed astronomical observatory library at midnight. Expansive, velvety acoustic space with intimate proximity and deep atmospheric silence.",
+    "sampleContext": "Mysterious, awe-inspiring, and contemplative. Tone is deep baritone, whisper-soft, measured, and hypnotic with generous pauses between cosmic revelations.",
+    "speakerTag": "Speaker 1 - Deep Cosmic Narrator (George / Charon)",
+    "sampleSpeechBlock": "Out beyond the quiet orbits of Neptune and the Kuiper Belt, the universe unfolds into vast, silent emptiness. Light from ancient stars has traveled across billions of years, just to meet our eyes in this quiet moment. We are not merely observing the cosmos; we are the universe observing itself.",
+    "combinedPromptTemplate": "Scene: A soundproofed astronomical observatory library at midnight. Expansive, velvety acoustic space with intimate proximity and deep atmospheric silence.\nSample Context: Mysterious, awe-inspiring, and contemplative. Tone is deep baritone, whisper-soft, measured, and hypnotic with generous pauses between cosmic revelations.\n\nSpeaker 1 - Deep Cosmic Narrator (George / Charon):\nOut beyond the quiet orbits of Neptune and the Kuiper Belt, the universe unfolds into vast, silent emptiness. Light from ancient stars has traveled across billions of years, just to meet our eyes in this quiet moment. We are not merely observing the cosmos; we are the universe observing itself."
+  },
   "elevenlabsCloningConfiguration": {
     "recommendedModel": "ElevenLabs Multilingual v2",
     "primaryVoiceMatch": "George (Deep, Resonant & Reflective British Narrator)",

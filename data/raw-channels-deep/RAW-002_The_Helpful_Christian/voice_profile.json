@@ -23,6 +23,13 @@
     "targetAudience": "Tín hữu Kitô giáo, người tìm hiểu thần học và lịch sử tôn giáo",
     "actualPaceWPM": "207 từ/phút (Tốc độ vừa phải, ngắt nghỉ câu rõ ràng, nhấn mạnh trọng âm các từ khóa thần học)"
   },
+  "promptingStudio": {
+    "scene": "A quiet, solemn wooden study or cathedral library with high ceilings. Soft natural acoustic space with warmth, intimate room presence, and zero flutter echo.",
+    "sampleContext": "Steady, scholarly, and unhurried. Tone is deeply sincere, calm, and intellectually reassuring with clear, dignified pauses and compassionate authority.",
+    "speakerTag": "Speaker 1 - Theological Narrator (Daniel / Aoede / Adam)",
+    "sampleSpeechBlock": "This is where things get really interesting. Section one: more than a memory. This is the big question we're tackling: is remembrance really just about remembering? In modern English, remembrance is a mental thing—a thought, a memory. When we remember something, we're just pulling up a file in our brain. But in the world of the Bible, that is not what it meant at all. Remembrance wasn't just a thought; it was a sacred reality made present.",
+    "combinedPromptTemplate": "Scene: A quiet, solemn wooden study or cathedral library with high ceilings. Soft natural acoustic space with warmth, intimate room presence, and zero flutter echo.\nSample Context: Steady, scholarly, and unhurried. Tone is deeply sincere, calm, and intellectually reassuring with clear, dignified pauses and compassionate authority.\n\nSpeaker 1 - Theological Narrator (Daniel / Aoede / Adam):\nThis is where things get really interesting. Section one: more than a memory. This is the big question we're tackling: is remembrance really just about remembering? In modern English, remembrance is a mental thing—a thought, a memory. When we remember something, we're just pulling up a file in our brain. But in the world of the Bible, that is not what it meant at all. Remembrance wasn't just a thought; it was a sacred reality made present."
+  },
   "elevenlabsCloningConfiguration": {
     "recommendedModel": "ElevenLabs Multilingual v2 (hoặc Turbo v2.5 cho tốc độ)",
     "primaryVoiceMatch": "Daniel (Deep Authoritative Theological Wisdom)",

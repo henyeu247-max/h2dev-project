@@ -5,7 +5,8 @@ H2DEV Project — Smart Voice Sample Extractor & Voice DNA Profiler
 - Tự động phân tích transcript để tìm đoạn vocal có mật độ thoại liên tục, rõ chữ nhất (Smart Cut).
 - Xử lý âm thanh High Fidelity (EBU R128 -16 LUFS, Mono 44.1kHz, 192kbps) — nhẹ nhưng không nén méo tiếng.
 - Tính toán chính xác tốc độ nói WPM/CPM thực tế từ transcript.
-- Xuất hồ sơ Voice DNA chuyên sâu theo từng kênh cụ thể kèm thông số ElevenLabs Voice Settings chuẩn.
+- Bổ sung Scene (Bối cảnh / Không gian âm học) & Sample Context (Ngữ cảnh biểu cảm / Giọng điệu) chuẩn hóa cho Google AI Studio, Gemini Speech, ElevenLabs Projects.
+- Xuất hồ sơ Voice DNA chuyên sâu theo từng kênh cụ thể kèm Speech Block và thông số ElevenLabs Voice Settings chuẩn.
 """
 
 import os
@@ -31,6 +32,10 @@ CHANNEL_SPECIFIC_PROFILES = {
         'toneAndStyle': 'Trong trẻo, cao, năng động, tươi vui rạng rỡ, nhí nhảnh',
         'targetAudience': 'Trẻ em mầm non (Toddler & Kids 1-6 tuổi) và Phụ huynh',
         'vocalPacingAnalysis': 'Nhịp điệu vừa phải, hát rõ lời, nhấn nhá từng âm tiết để trẻ tập nói theo',
+        'scene': 'A bright, cheerful, and acoustically treated preschool playroom or recording booth. Completely dry acoustics with close-mic presence and zero background reverb.',
+        'sampleContext': 'Playful, radiant, and childlike. Tone is bubbly, enthusiastic, and warm with bouncy rhythmic cadence, smiling articulation, and infectious energy.',
+        'speakerTag': 'Speaker 1 - Animated Storyteller (Gigi / Freya / Aoede)',
+        'sampleSpeechBlock': "Baby shark, doo-doo, doo-doo! Baby shark, doo-doo, doo-doo! Baby shark! Mommy shark, doo-doo, doo-doo! Mommy shark, doo-doo, doo-doo! Mommy shark! Let's go hunt, doo-doo, doo-doo! Run away, doo-doo, doo-doo! Safe at last, doo-doo, doo-doo!",
         'elevenlabsPrimaryVoice': 'Gigi (Childish & Upbeat Animation)',
         'elevenlabsAlternatives': ['Freya (Expressive Youthful Story)', 'Alice (Clear & Bright Kids)'],
         'recommendedModel': 'ElevenLabs Multilingual v2',
@@ -50,6 +55,10 @@ CHANNEL_SPECIFIC_PROFILES = {
         'toneAndStyle': 'Trầm ấm, điềm đạm, có chiều sâu học thuật, đĩnh đạc nhưng gần gũi',
         'targetAudience': 'Tín hữu Kitô giáo, người tìm hiểu thần học và lịch sử tôn giáo',
         'vocalPacingAnalysis': 'Tốc độ vừa phải, ngắt nghỉ câu rõ ràng, nhấn mạnh trọng âm các từ khóa thần học',
+        'scene': 'A quiet, solemn wooden study or cathedral library with high ceilings. Soft natural acoustic space with warmth, intimate room presence, and zero flutter echo.',
+        'sampleContext': 'Steady, scholarly, and unhurried. Tone is deeply sincere, calm, and intellectually reassuring with clear, dignified pauses and compassionate authority.',
+        'speakerTag': 'Speaker 1 - Theological Narrator (Daniel / Aoede / Adam)',
+        'sampleSpeechBlock': "This is where things get really interesting. Section one: more than a memory. This is the big question we're tackling: is remembrance really just about remembering? In modern English, remembrance is a mental thing—a thought, a memory. When we remember something, we're just pulling up a file in our brain. But in the world of the Bible, that is not what it meant at all. Remembrance wasn't just a thought; it was a sacred reality made present.",
         'elevenlabsPrimaryVoice': 'Daniel (Deep Authoritative Theological Wisdom)',
         'elevenlabsAlternatives': ['Will (Friendly & Earnest Religious Educator)', 'Adam (Clear Professional Dialogue)'],
         'recommendedModel': 'ElevenLabs Multilingual v2 (hoặc Turbo v2.5 cho tốc độ)',
@@ -69,6 +78,10 @@ CHANNEL_SPECIFIC_PROFILES = {
         'toneAndStyle': 'Thủ thỉ, tâm sự, giàu cảm xúc đồng cảm, có độ lắng đọng và bùi ngùi',
         'targetAudience': 'Người cao tuổi Nhật Bản (Senior 60-80 tuổi) và người lo lắng tuổi xế chiều',
         'vocalPacingAnalysis': 'Chậm rãi, nhịp điệu thư thả, khoảng lặng sau mỗi câu dài để người lớn tuổi kịp tiếp nhận',
+        'scene': 'A serene, quiet Japanese tatami living room in the late afternoon. Intimate room acoustics with gentle ambient warmth, soft paper screen reflections, and zero metallic echo.',
+        'sampleContext': 'Empathetic, reflective, and unhurried. Tone is soft-spoken, respectful, nostalgic, and deeply comforting with slow, considerate pacing for elderly listeners.',
+        'speakerTag': 'Speaker 1 - Gentle Japanese Narrator (Mayumi / Takumi)',
+        'sampleSpeechBlock': "歳を重ねるにつれて、誰にも言えない悩みや不安が増えていくものです。でも、決して一人で抱え込まないでください。あなたのこれまでの歩みは、何一つ間違っていません。今日から少しずつ、心を軽くしていきましょう。",
         'elevenlabsPrimaryVoice': 'Mayumi (Gentle Japanese Female Narrative)',
         'elevenlabsAlternatives': ['Takumi (Calm Japanese Storyteller)', 'Rachel (với ElevenLabs Japanese Multilingual)'],
         'recommendedModel': 'ElevenLabs Multilingual v2',
@@ -88,6 +101,10 @@ CHANNEL_SPECIFIC_PROFILES = {
         'toneAndStyle': 'Trầm ấm, mê hoặc, mang hơi hướng thì thầm thư giãn (Calm / Space ASMR)',
         'targetAudience': 'Người nghe thư giãn ban đêm, người yêu thích thiên văn học và khoa học vũ trụ',
         'vocalPacingAnalysis': 'Chậm rãi, âm vang trầm hùng, khoảng dừng giữa các sự thật khoa học sâu sắc',
+        'scene': 'A soundproofed astronomical observatory library at midnight. Expansive, velvety acoustic space with intimate proximity and deep atmospheric silence.',
+        'sampleContext': 'Mysterious, awe-inspiring, and contemplative. Tone is deep baritone, whisper-soft, measured, and hypnotic with generous pauses between cosmic revelations.',
+        'speakerTag': 'Speaker 1 - Deep Cosmic Narrator (George / Charon)',
+        'sampleSpeechBlock': "Out beyond the quiet orbits of Neptune and the Kuiper Belt, the universe unfolds into vast, silent emptiness. Light from ancient stars has traveled across billions of years, just to meet our eyes in this quiet moment. We are not merely observing the cosmos; we are the universe observing itself.",
         'elevenlabsPrimaryVoice': 'George (Deep, Resonant & Reflective British Narrator)',
         'elevenlabsAlternatives': ['Marcus (Calm Documentary Narrator)', 'Brian (Deep & Soothing Bedtime Voice)'],
         'recommendedModel': 'ElevenLabs Multilingual v2',
@@ -107,6 +124,10 @@ CHANNEL_SPECIFIC_PROFILES = {
         'toneAndStyle': 'Cực kỳ êm dịu, nhẹ nhàng, ấm áp, giúp an thần và đưa vào giấc ngủ',
         'targetAudience': 'Người mất ngủ, căng thẳng cần âm thanh thư giãn',
         'vocalPacingAnalysis': 'Rất chậm (95 - 110 WPM), kéo dài nguyên âm nhẹ nhàng',
+        'scene': 'A dimly lit, quiet bedtime bedroom on a rainy night. Soft-padded acoustic space with intimate microphone proximity, warm room tone, and complete isolation.',
+        'sampleContext': 'Drowsy, peaceful, and whisper-soft. Tone is velvety, rhythmic, and deeply comforting with slow cadence and gentle exhalations to induce sleep.',
+        'speakerTag': 'Speaker 1 - Hypnotic Sleep Guide (Brian / Kore)',
+        'sampleSpeechBlock': "Take a slow, deep breath in, and let your shoulders drop completely. The day is finished, and there is nothing else you need to do. Feel the quiet weight of your body resting against the bed, as your thoughts gently drift away into deep, tranquil rest.",
         'elevenlabsPrimaryVoice': 'Brian (Deep & Hypnotic Soothing)',
         'elevenlabsAlternatives': ['Nicole (Whisper & Gentle Meditation)', 'George (Calm Night Voice)'],
         'recommendedModel': 'ElevenLabs Multilingual v2',
@@ -125,50 +146,54 @@ def find_smart_audio_window(transcripts_dir, video_id, target_duration=45):
     """
     Phân tích file transcript của video để tìm ra khoảng thời gian có giọng nói
     liên tục nhất, nhiều từ nhất, né intro và né khoảng im lặng.
+    Đồng thời trích xuất luôn đoạn văn bản thoại thực tế trong cửa sổ đó.
     """
     tr_path = os.path.join(transcripts_dir, f"{video_id}_transcript.json")
     if not os.path.exists(tr_path):
-        return 20, target_duration, None
+        return 20, target_duration, None, ""
 
     try:
         with open(tr_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         segments = data.get('segments', [])
         if not segments or len(segments) < 3:
-            return 20, target_duration, None
+            return 20, target_duration, None, ""
 
-        # Bỏ qua 15s đầu để né intro
+        # Bỏ qua 12s đầu để né intro
         valid_segs = [s for s in segments if s.get('start', 0) >= 12]
         if not valid_segs:
             valid_segs = segments
 
         best_start = valid_segs[0].get('start', 20)
         best_word_count = 0
-        best_end = best_start + target_duration
+        best_text = ""
 
         # Duyệt qua các điểm bắt đầu tiềm năng
         for i, seg in enumerate(valid_segs[:20]):
             w_start = seg.get('start', 0)
             w_end = w_start + target_duration
             
-            # Đếm số từ trong cửa sổ thời gian này
-            window_text = ""
+            # Gom các câu thoại nằm trong cửa sổ thời gian này
+            window_lines = []
             for s in valid_segs:
                 s_start = s.get('start', 0)
                 if w_start <= s_start < w_end:
-                    window_text += " " + s.get('text', '')
+                    txt = s.get('text', '').strip()
+                    if txt:
+                        window_lines.append(txt)
 
+            window_text = " ".join(window_lines)
             words = len(re.findall(r'\w+', window_text))
             if words > best_word_count:
                 best_word_count = words
                 best_start = w_start
-                best_end = w_end
+                best_text = window_text
 
         # Tính toán WPM trong đoạn được chọn
         wpm = round(best_word_count / (target_duration / 60)) if target_duration > 0 else 125
-        return round(best_start), target_duration, wpm
+        return round(best_start), target_duration, wpm, best_text.strip()
     except Exception as e:
-        return 20, target_duration, None
+        return 20, target_duration, None, ""
 
 def try_download_audio_section(video_url, output_path, start_sec=20, duration=45):
     m_start, s_start = divmod(start_sec, 60)
@@ -213,7 +238,9 @@ def process_channel(folder_name, duration=45):
 
     # Chọn video số 1 hoặc video có transcript sạch nhất
     chosen_vid = videos[0]
-    start_sec, actual_duration, calculated_wpm = find_smart_audio_window(transcripts_dir, chosen_vid.get('videoId'), duration)
+    start_sec, actual_duration, calculated_wpm, extracted_snippet = find_smart_audio_window(
+        transcripts_dir, chosen_vid.get('videoId'), duration
+    )
 
     print(f"\n=======================================================")
     print(f"🎙️ ĐANG XỬ LÝ: [{raw_id}] {folder_name}")
@@ -274,6 +301,23 @@ def process_channel(folder_name, duration=45):
             with open(profile_path, 'r', encoding='utf-8') as f:
                 channel_niche = json.load(f).get('editorialNiche', channel_niche)
 
+        # Suy luận Scene & Context theo ngách
+        niche_lower = channel_niche.lower()
+        if any(k in niche_lower for k in ['history', 'lịch sử', 'documentary', 'tài liệu']):
+            scene_val = "A quiet, professional archive library or soundproof documentary studio. Clean, focused acoustics with subtle warm natural room presence."
+            context_val = "Authoritative, serious, and measured. Tone is dramatic, engaging, and clear with natural narrative pacing and dignified pauses."
+        elif any(k in niche_lower for k in ['crime', 'mystery', 'bí ẩn', 'vụ án', 'horror']):
+            scene_val = "A dimly lit room at midnight with tight, dry acoustics and an intimate close-microphone proximity."
+            context_val = "Tense, suspenseful, and hushed. Tone is ominous, intense, and deliberate with dramatic pauses to build anticipation."
+        elif any(k in niche_lower for k in ['finance', 'kinh tế', 'business', 'tech', 'công nghệ']):
+            scene_val = "A modern, professional broadcasting studio with crisp, dry vocal acoustics and zero room reverb."
+            context_val = "Crisp, confident, and energetic. Tone is analytical, persuasive, and sharp with brisk, articulate pacing."
+        else:
+            scene_val = "A quiet, professional remote workspace with sound-absorbing acoustic treatment."
+            context_val = "Steady, efficient, and unhurried. Tone is empathetic, crisp, and reassuring."
+
+        sample_speech = extracted_snippet if extracted_snippet else "Welcome back to the channel. In today's video, we are breaking down everything you need to know step-by-step with real data and actionable insights."
+
         specific_prof = {
             'channelTitle': folder_name.replace(raw_id + '_', '').replace('_', ' '),
             'gender': 'Nam / Nữ chuyên nghiệp',
@@ -281,6 +325,10 @@ def process_channel(folder_name, duration=45):
             'toneAndStyle': 'Rõ ràng, mạch lạc, cuốn hút, giàu sức thuyết phục',
             'targetAudience': f'Khán giả quan tâm ngách {channel_niche}',
             'vocalPacingAnalysis': f'Tốc độ {calculated_wpm or 125} từ/phút, rõ chữ, nhịp điệu tự nhiên',
+            'scene': scene_val,
+            'sampleContext': context_val,
+            'speakerTag': 'Speaker 1 - Aoede / Professional Explainer',
+            'sampleSpeechBlock': sample_speech,
             'elevenlabsPrimaryVoice': 'Adam (Deep & Versatile Narrative)',
             'elevenlabsAlternatives': ['Rachel (Calm & Clear)', 'George (Warm & Reflective)'],
             'recommendedModel': 'ElevenLabs Multilingual v2',
@@ -288,6 +336,10 @@ def process_channel(folder_name, duration=45):
             'voiceDesignPrompt': f'A clear, engaging, and articulate voice with a natural conversational flow, suitable for {channel_niche} video explainers.',
             'dubbingSOP': 'Thu âm rõ chữ, giữ trường độ ổn định, kết hợp BGM phù hợp với chủ đề ngách.'
         }
+
+    # Đoạn thoại mẫu ưu tiên: nếu có specific_prof['sampleSpeechBlock'] thì dùng, không thì dùng extracted_snippet
+    final_speech_block = specific_prof.get('sampleSpeechBlock') or extracted_snippet
+    combined_prompt = f"Scene: {specific_prof['scene']}\nSample Context: {specific_prof['sampleContext']}\n\n{specific_prof['speakerTag']}:\n{final_speech_block}"
 
     end_sec = start_sec + actual_duration
     voice_dna = {
@@ -315,6 +367,13 @@ def process_channel(folder_name, duration=45):
             "targetAudience": specific_prof['targetAudience'],
             "actualPaceWPM": f"{calculated_wpm or 125} từ/phút ({specific_prof['vocalPacingAnalysis']})"
         },
+        "promptingStudio": {
+            "scene": specific_prof['scene'],
+            "sampleContext": specific_prof['sampleContext'],
+            "speakerTag": specific_prof['speakerTag'],
+            "sampleSpeechBlock": final_speech_block,
+            "combinedPromptTemplate": combined_prompt
+        },
         "elevenlabsCloningConfiguration": {
             "recommendedModel": specific_prof['recommendedModel'],
             "primaryVoiceMatch": specific_prof['elevenlabsPrimaryVoice'],
@@ -329,7 +388,7 @@ def process_channel(folder_name, duration=45):
     with open(voice_profile_path, 'w', encoding='utf-8') as f:
         json.dump(voice_dna, f, ensure_ascii=False, indent=2)
 
-    print(f"📝 Đã lưu hồ sơ Voice DNA chuyên sâu: {voice_profile_path}")
+    print(f"📝 Đã lưu hồ sơ Voice DNA chuyên sâu kèm Scene & Context: {voice_profile_path}")
     return True
 
 def main():
@@ -343,24 +402,21 @@ def main():
 
     if args.target.upper() == 'BENCHMARK':
         benchmarks = ['RAW-001', 'RAW-002', 'RAW-009', 'RAW-014', 'RAW-003']
-        print(f"🎯 ĐANG XỬ LÝ BỘ BENCHMARK CHUẨN MỰC {len(benchmarks)} KÊNH:")
+        print(f"🎯 ĐANG XỬ LÝ BỘ BENCHMARK CHUẨN MỰC {len(benchmarks)} KÊNH (KÈM SCENE & SAMPLE CONTEXT):")
         for b in benchmarks:
             target_folder = next((f for f in folders if f.startswith(b)), None)
             if target_folder:
                 process_channel(target_folder, duration=args.duration)
     elif args.target.upper() == 'ALL':
-        print(f"🚀 BẮT ĐẦU TRÍCH XUẤT HÀNG LOẠT CHO {len(folders)} KÊNH...")
-        success = 0
+        print(f"🎯 ĐANG XỬ LÝ TOÀN BỘ {len(folders)} KÊNH TRONG HỆ THỐNG:")
         for f in folders:
-            if process_channel(f, duration=args.duration):
-                success += 1
-        print(f"\n🎉 HOÀN TẤT: {success}/{len(folders)} kênh!")
+            process_channel(f, duration=args.duration)
     else:
-        target_folder = next((f for f in folders if f.startswith(args.target.upper())), None)
-        if not target_folder:
-            print(f"❌ Không tìm thấy thư mục kênh cho {args.target}")
-            sys.exit(1)
-        process_channel(target_folder, duration=args.duration)
+        target_folder = next((f for f in folders if f.startswith(args.target)), None)
+        if target_folder:
+            process_channel(target_folder, duration=args.duration)
+        else:
+            print(f"[ERROR] Không tìm thấy thư mục cho mã '{args.target}'")
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

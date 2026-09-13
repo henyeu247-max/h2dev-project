@@ -23,6 +23,13 @@
     "targetAudience": "Người mất ngủ, căng thẳng cần âm thanh thư giãn",
     "actualPaceWPM": "184 từ/phút (Rất chậm (95 - 110 WPM), kéo dài nguyên âm nhẹ nhàng)"
   },
+  "promptingStudio": {
+    "scene": "A dimly lit, quiet bedtime bedroom on a rainy night. Soft-padded acoustic space with intimate microphone proximity, warm room tone, and complete isolation.",
+    "sampleContext": "Drowsy, peaceful, and whisper-soft. Tone is velvety, rhythmic, and deeply comforting with slow cadence and gentle exhalations to induce sleep.",
+    "speakerTag": "Speaker 1 - Hypnotic Sleep Guide (Brian / Kore)",
+    "sampleSpeechBlock": "Take a slow, deep breath in, and let your shoulders drop completely. The day is finished, and there is nothing else you need to do. Feel the quiet weight of your body resting against the bed, as your thoughts gently drift away into deep, tranquil rest.",
+    "combinedPromptTemplate": "Scene: A dimly lit, quiet bedtime bedroom on a rainy night. Soft-padded acoustic space with intimate microphone proximity, warm room tone, and complete isolation.\nSample Context: Drowsy, peaceful, and whisper-soft. Tone is velvety, rhythmic, and deeply comforting with slow cadence and gentle exhalations to induce sleep.\n\nSpeaker 1 - Hypnotic Sleep Guide (Brian / Kore):\nTake a slow, deep breath in, and let your shoulders drop completely. The day is finished, and there is nothing else you need to do. Feel the quiet weight of your body resting against the bed, as your thoughts gently drift away into deep, tranquil rest."
+  },
   "elevenlabsCloningConfiguration": {
     "recommendedModel": "ElevenLabs Multilingual v2",
     "primaryVoiceMatch": "Brian (Deep & Hypnotic Soothing)",

@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-055",
+  "channelFolder": "RAW-055_TRUE_GLOBE",
+  "sourceVideo": {
+    "videoId": "DX8J-xIJzf0",
+    "title": "UGANDA: The Most Pristine Beauty You’ve Never Seen | 4K Trav",
+    "url": "https://www.youtube.com/watch?v=DX8J-xIJzf0",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-055_TRUE_GLOBE/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-055.mp3",
+    "fileSizeKB": 1056.3,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam truyền cảm điện ảnh / Phim tài liệu National Geographic",
+    "ageRange": "38 – 52 tuổi",
+    "toneAndStyle": "Hào hùng, truyền cảm, ấm áp, nhịp điệu chậm rãi tôn vinh vẻ đẹp thiên nhiên",
+    "targetAudience": "Khán giả yêu thiên nhiên hoang dã, du lịch khám phá văn hóa châu Phi",
+    "actualPaceWPM": "74 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "A world-class cinematic nature documentary mixing room. Expansive broadcast acoustics, smooth velvety low-mids, pristine high-end clarity capturing breath and wonder.",
+    "sampleContext": "Warm, expansive, poetic, and serene. Flowing documentary rhythm allowing footage of sweeping African landscapes to breathe.",
+    "speakerTag": "Speaker 1 - Cinematic Nature Host (George / Clyde)",
+    "sampleSpeechBlock": "Nile by sunset? This isn't a scene from a fantasy film. This is Uganda, the place Winston Churchill famously crowned the Pearl of Africa. But Uganda is more than just a title. It is a living canvas. Here, nature doesn't just exist. It pulsates with an untamed energy that challenges everything you thought you knew about",
+    "combinedPromptTemplate": "Scene: A world-class cinematic nature documentary mixing room. Expansive broadcast acoustics, smooth velvety low-mids, pristine high-end clarity capturing breath and wonder.\nSample Context: Warm, expansive, poetic, and serene. Flowing documentary rhythm allowing footage of sweeping African landscapes to breathe.\n\nSpeaker 1 - Cinematic Nature Host (George / Clyde):\nNile by sunset? This isn't a scene from a fantasy film. This is Uganda, the place Winston Churchill famously crowned the Pearl of Africa. But Uganda is more than just a title. It is a living canvas. Here, nature doesn't just exist. It pulsates with an untamed energy that challenges everything you thought you knew about"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "George (Warm & Noble Narrator)",
+    "alternativeVoices": [
+      "Clyde (Mature Documentary)",
+      "Arthur (Reflective Cinematic)"
+    ],
+    "voiceSettings": {
+      "stability": 0.48,
+      "similarity_boost": 0.86,
+      "style": 0.25,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Hào hùng, truyền cảm, ấm áp, nhịp điệu chậm rãi tôn vinh vẻ đẹp thiên nhiên.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

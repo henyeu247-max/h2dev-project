@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-095",
+  "channelFolder": "RAW-095_EON_ATLAS",
+  "sourceVideo": {
+    "videoId": "-UqbEOgbwAU",
+    "title": "Living in Ukraine: How People Really Live Beyond the Media M",
+    "url": "https://www.youtube.com/watch?v=-UqbEOgbwAU",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-095_EON_ATLAS/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-095.mp3",
+    "fileSizeKB": 1056.3,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam phóng sự địa chính trị & nhân văn / Sâu sắc, điềm đạm",
+    "ageRange": "32 – 46 tuổi",
+    "toneAndStyle": "Điềm tĩnh, khách quan, giàu lòng trắc ẩn, phân tích chiều sâu đời sống người dân",
+    "targetAudience": "Khán giả toàn cầu theo dõi thời sự địa lý, đời sống nhân dân vùng xung đột",
+    "actualPaceWPM": "70 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "An international humanitarian reporting booth. Pristine broadcast acoustical clarity, respectful, balanced proximity with zero exaggerated theatricality.",
+    "sampleContext": "Sober, empathetic, analytical, and respectful. Articulates human endurance and economic realities with dignified narrative poise.",
+    "speakerTag": "Speaker 1 - Global Atlas Essayist (Marcus / Adam)",
+    "sampleSpeechBlock": "Rich enough to feed Europe, yet heavy with memories the world cannot ignore. In Kiev, ordinary mornings begin more than 100 m underground. This country does not keep all of its history in museums. It is stitched into embroidered shirts, carried through family traditions, and kept alive by people who keep moving forward.",
+    "combinedPromptTemplate": "Scene: An international humanitarian reporting booth. Pristine broadcast acoustical clarity, respectful, balanced proximity with zero exaggerated theatricality.\nSample Context: Sober, empathetic, analytical, and respectful. Articulates human endurance and economic realities with dignified narrative poise.\n\nSpeaker 1 - Global Atlas Essayist (Marcus / Adam):\nRich enough to feed Europe, yet heavy with memories the world cannot ignore. In Kiev, ordinary mornings begin more than 100 m underground. This country does not keep all of its history in museums. It is stitched into embroidered shirts, carried through family traditions, and kept alive by people who keep moving forward."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Marcus (Grounded Geopolitical Analyst)",
+    "alternativeVoices": [
+      "Adam (Empathetic Documentarian)",
+      "George (Reflective Historian)"
+    ],
+    "voiceSettings": {
+      "stability": 0.44,
+      "similarity_boost": 0.86,
+      "style": 0.25,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Điềm tĩnh, khách quan, giàu lòng trắc ẩn, phân tích chiều sâu đời sống người dân.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

@@ -12,11 +12,11 @@
 ## 1. VẤN NẠN QUÉT NỘI DUNG AI & TRÙNG LẶP CỦA YOUTUBE (YPP 2026)
 
 - **Nguyên nhân các kênh bán content bị tắt kiếm tiền:**
-  1. Dùng đi dùng lại các video stock miễn phí trên Pexels, Pixabay, Canva mà hàng nghìn kênh khác cũng đã tải về dùng $\rightarrow$ Dính lỗi *Reused Content (Sử dụng lại nội dung)*.
-  2. Sử dụng 100% hình ảnh/video AI tạo ra nhưng chuyển động sơ sài, thiếu giá trị biên tập $\rightarrow$ Bị thuật toán quét gắn cờ *Inauthentic Content (Nội dung thiếu tính xác thực)*.
+  1. Dùng đi dùng lại các video stock miễn phí trên Pexels, Pixabay, Canva mà hàng nghìn kênh khác cũng đã tải về dùng → Dính lỗi *Reused Content (Sử dụng lại nội dung)*.
+  2. Sử dụng 100% hình ảnh/video AI tạo ra nhưng chuyển động sơ sài, thiếu giá trị biên tập → Bị thuật toán quét gắn cờ *Inauthentic Content (Nội dung thiếu tính xác thực)*.
 - **Giải pháp thực chiến từ kênh mẫu trong bài giảng:**
   - **Tự quay video đời thật (Original B-roll Footage):** Dùng chính điện thoại cá nhân quay những cảnh vật xung quanh (bể cá cảnh bơi lội, đôi bàn tay gõ phím máy tính, cảnh pha trà, cảnh đường phố, góc sân vườn...).
-  - Ghép footage tự quay vào làm nền mờ (Background B-roll) cho câu chuyện drama $\rightarrow$ **Tạo ra 100% mã hash video mới tinh**, vượt qua mọi lớp lọc bản quyền tự động của YouTube!
+  - Ghép footage tự quay vào làm nền mờ (Background B-roll) cho câu chuyện drama → **Tạo ra 100% mã hash video mới tinh**, vượt qua mọi lớp lọc bản quyền tự động của YouTube!
 
 ---
 

@@ -29,13 +29,13 @@ Trong bài giảng, tác giả chỉ ra sai lầm chí mạng mà 90% người m
 
 ### 2.1. Hiện tượng "Gây Bối Rối Cho Thuật Toán" (Algorithmic Confusion)
 - **Kịch bản sai lầm:**
-  - Hôm nay thấy ngách Lời Chúa đang hot $\rightarrow$ Đăng 2 video về Lời Chúa.
-  - Ngày mai thấy ngách Rau củ trường thọ (`@장수채소습관`) nhiều view $\rightarrow$ Lập tức đăng 2 video về nước ép rau củ.
+  - Hôm nay thấy ngách Lời Chúa đang hot → Đăng 2 video về Lời Chúa.
+  - Ngày mai thấy ngách Rau củ trường thọ (`@장수채소습관`) nhiều view → Lập tức đăng 2 video về nước ép rau củ.
   - Ngày mốt thấy ngách tin tức chiến tranh lại đăng 1 video tin tức.
-- **Hậu quả thuật toán:** Hệ thống AI của YouTube không thể phân loại kênh thuộc chủ đề nào, không biết đề xuất video cho ai (Người thích nghe Lời Chúa sẽ bấm bỏ qua khi thấy video rau củ $\rightarrow$ CTR tụt dốc $\rightarrow$ Thuật toán ngừng phân phối $\rightarrow$ **Kênh rơi vào bẫy 0 view vĩnh viễn**).
+- **Hậu quả thuật toán:** Hệ thống AI của YouTube không thể phân loại kênh thuộc chủ đề nào, không biết đề xuất video cho ai (Người thích nghe Lời Chúa sẽ bấm bỏ qua khi thấy video rau củ → CTR tụt dốc → Thuật toán ngừng phân phối → **Kênh rơi vào bẫy 0 view vĩnh viễn**).
 
 ### 2.2. Quy Tắc "Nhất Quán 1 Trường Từ Khóa" (Niche Consistency Rule)
-- Đã chọn làm ngách Lời Chúa / Đức tin $\rightarrow$ **Phải đăng tối thiểu 15 - 20 video đầu tiên cùng 1 chủ đề, cùng 1 tệp từ khóa**.
+- Đã chọn làm ngách Lời Chúa / Đức tin → **Phải đăng tối thiểu 15 - 20 video đầu tiên cùng 1 chủ đề, cùng 1 tệp từ khóa**.
 - Khi thuật toán đã định vị được tệp khán giả trung thành và lượng xem đều đặn, kênh mới bắt đầu cắn đề xuất mạnh mẽ.
 
 ---
@@ -43,12 +43,12 @@ Trong bài giảng, tác giả chỉ ra sai lầm chí mạng mà 90% người m
 ## 3. QUY TRÌNH 4 BƯỚC KHÁM KÊNH & HỒI SINH KÊNH BỊ FLOP
 
 1. **Bước 1 — Kiểm tra Analytics & Nguồn lưu lượng (Traffic Source):**
-   - Vào YouTube Studio $\rightarrow$ Tab Số liệu phân tích $\rightarrow$ Xem nguồn xem đến từ đâu (Tìm kiếm YouTube, Tính năng duyệt xem hay Trang kênh).
+   - Vào YouTube Studio → Tab Số liệu phân tích → Xem nguồn xem đến từ đâu (Tìm kiếm YouTube, Tính năng duyệt xem hay Trang kênh).
    - Nếu tỉ lệ xem từ Tính năng duyệt xem (Browse Features) bằng 0, nghĩa là kênh chưa được thuật toán phân phối.
 2. **Bước 2 — Thanh lọc nội dung tạp nham (Content Clean-up):**
    - Chuyển toàn bộ các video lạc ngách, không đúng chủ đề chính sang chế độ **Không công khai (Unlisted)**. Tuyệt đối không bấm Xoá video vì sẽ làm tụt chỉ số giờ xem và ảnh hưởng trust score.
 3. **Bước 3 — Chuẩn hóa siêu dữ liệu (Metadata Alignment):**
-   - Cập nhật lại từ khóa kênh (Channel Tags) trong Cài đặt $\rightarrow$ Kênh: Điền 10-15 từ khóa cốt lõi của ngách.
+   - Cập nhật lại từ khóa kênh (Channel Tags) trong Cài đặt → Kênh: Điền 10-15 từ khóa cốt lõi của ngách.
    - Viết lại mô tả kênh tập trung duy nhất vào sứ mệnh phục vụ tệp khán giả mục tiêu.
 4. **Bước 4 — Bơm 5-7 video chuẩn chỉ liên tục trong 10 ngày:**
    - Sản xuất kịch bản chất lượng cao, thumbnail đồng bộ nhận diện (cùng font chữ, cùng tông màu, cùng bố cục).

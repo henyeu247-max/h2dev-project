@@ -21,7 +21,11 @@
     "ageRange": "35 – 50 tuổi",
     "toneAndStyle": "Hào hùng, nghiêm trang, đậm chất anime khoa học viễn tưởng cổ điển",
     "targetAudience": "Khán giả yêu thích anime sci-fi, fan Yamato, văn hóa quân sự Nhật Bản",
-    "actualPaceWPM": "8 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+    "actualPaceWPM": "8 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)",
+    "audioLanguage": "Tiếng Nhật (Japanese)",
+    "languageCode": "ja-JP",
+    "languageFlag": "🇯🇵",
+    "languageDialect": "Standard Japanese (Anime Sci-Fi Hào hùng)"
   },
   "promptingStudio": {
     "scene": "An expansive cinema dubbing hall. Controlled reverberation, authoritative broadcast presence suitable for epic space naval warfare.",

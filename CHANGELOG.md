@@ -1,3 +1,26 @@
+## 2026-09-13 — Chuẩn hóa toàn diện SSoT Hệ Thống: Kiến Trúc 7 Tầng, Phân Luồng 4 Nhánh & Khóa Bộ Quy Tắc Vận Hành "Không Mò Đường"
+
+- **Chuẩn hóa Vai trò, Sứ mệnh & Tác phong:**
+  - Định danh chính thức: Kiến trúc sư Trưởng Hệ thống YouTube, Kỹ sư Reverse-Engineering Cấp cao & Giám đốc Vận hành Kênh Faceless cho Hệ sinh thái H2DEV (`D:\YTB\H2DEV-Project`).
+  - Xác lập nguyên tắc hành động: "Không mò đường" — kiểm chứng liên tục mọi lúc, tra cứu web/MCP ngay khi nghi vấn, tuyệt đối không suy đoán. Hệ giá trị chân lý: `Sự thật Runtime > Source Code > Test Tự Động > Docs > Giả định`.
+- **Hệ Thống Hóa Kiến Trúc 7 Tầng (Dỡ bỏ hoàn toàn tàn dư Gemini mô phỏng):**
+  - Tầng 1: Kho Học Liệu & Âm Thanh Chuẩn (Phụ đề 3 định dạng sạch, Voice DNA Studio mẫu 45s, tính WPM, clone ElevenLabs, media ffprobe > 0 byte).
+  - Tầng 2: Thị Trường & Đối Thủ (97 hồ sơ kênh mẫu bao quát 31 ngách nghiệp vụ đã audit live sức sống YPP, chỉ số tốc độ bứt phá velocity tracker).
+  - Tầng 3: Pipeline Sản Xuất (4 pipeline song song: tôn giáo, hoạt hình 3D, tài liệu động vật, giải nghĩa Kinh Thánh; SOP kịch bản, tối ưu AVD).
+  - Tầng 4: Hạ Tầng Phục Vụ & Mạng Nội Bộ (Node.js :8899, LAN + Tailscale, mở khóa dữ liệu tĩnh nguyên bản, map ổ mạng `Y:\`).
+  - Tầng 5: Hạ Tầng Công Cụ & Mô Hình (MCP Tool Server 100% LOCAL tại `D:\Mcp-Pool-Vps` cổng 3988 với 168+ tools + AI Chat Gateway 9Router :20128).
+  - Tầng 6: Tự Động Hóa & Script Kiểm Định (Pipeline tiếp nhận `inbox/`, đồng bộ catalog, test suite `validate-project.js`).
+  - Tầng 7: Tri Thức Vận Hành Thực Chiến (Masterclass Zoom chuyên gia A-Z: 11 bước xây kênh, proxy IPv4/Gmail, chuỗi AVD kép, AdSense).
+- **Phân Luồng Công Việc Chuẩn Hóa & Kỷ Luật TODO Plan:**
+  - 4 Luồng độc lập: Luồng A (Nghiệm thu Video), Luồng B (Sức sống Ngách & Đối thủ), Luồng C (Voice DNA), Luồng D (Hạ tầng Server/VPS).
+  - Kỷ luật lập TODO Plan chi tiết 4 trạng thái: `[ ] CHỜ XỬ LÝ` ➔ `[>] ĐANG THỰC HIỆN` ➔ `[x] ĐÃ NGHIỆM THU (CHECK-PASS)` ➔ `[!] BỊ CHẶN (BLOCKED)`.
+  - Quy trình thực thi 7 bước và Chuẩn báo cáo 8 mục (Root Cause, Changes Made, Validation Proof, Notes & Blockers, Next Steps, Proactive Ideas, Search Directives, Data Gaps).
+- **Đồng Bộ Bộ Nhớ & Tài Liệu SSoT:**
+  - Cập nhật `knowledge-hub/docs/RULE-LAM-VIEC.md` (Phần 1, 9, 10, 11).
+  - Cập nhật `AGENTS.md` (Đồng bộ số liệu 97 canonical raw channels, Boot order 7 bước).
+  - Cập nhật bộ nhớ 3 tầng (`D:\YTB\.workbuddy\memory\MEMORY.md`, `~/.workbuddy/MEMORY.md`, `~/.workbuddy-ai/MEMORY.md`).
+  - Kiểm định `node scripts/validate-project.js`: PASS 100% 0 lỗi.
+
 ## 2026-09-13 — Kiểm định toàn diện 31 ngách nghiệp vụ, chuẩn hóa 100% sức sống YPP và mở rộng bộ lọc bao quát 97 kênh mẫu
 
 - **Kiểm định 100% đối soát 31 Ngách Nghiệp Vụ:**

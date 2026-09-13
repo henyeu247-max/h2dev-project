@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-023",
+  "channelFolder": "RAW-023_LatentDiffusion",
+  "sourceVideo": {
+    "videoId": "zX-e9LRR_ko",
+    "title": "CRAFT (1979): The First Night | Episode 1",
+    "url": "https://www.youtube.com/watch?v=zX-e9LRR_ko",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-023_LatentDiffusion/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-023.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam trầm ấm / Kể chuyện Analog Horror",
+    "ageRange": "30 – 45 tuổi",
+    "toneAndStyle": "Trầm tĩnh, ma mị, hồi hộp, mang âm hưởng phim tài liệu VHS cổ điển",
+    "targetAudience": "Thanh thiếu niên và người lớn mê phim hoạt hình kinh dị, lore bí ẩn",
+    "actualPaceWPM": "69 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "An insulated vintage studio room with low-noise tube mic emulation. Deep close proximity effect with very subtle room ambiance reminiscent of late 70s analog broadcast.",
+    "sampleContext": "Eerie, subdued, and suspenseful. Steady measured tempo, resonant low-end, subtle breathiness conveying quiet dread.",
+    "speakerTag": "Speaker 1 - Vintage Narrator (Callum / Marcus)",
+    "sampleSpeechBlock": "him got him they both really intense that's why I came here today to see it so it's like a game that you want to watch it it's gonna be a good one battle of the barracks 13. Freedom uh this is round one here are the rules this is Fleck iron",
+    "combinedPromptTemplate": "Scene: An insulated vintage studio room with low-noise tube mic emulation. Deep close proximity effect with very subtle room ambiance reminiscent of late 70s analog broadcast.\nSample Context: Eerie, subdued, and suspenseful. Steady measured tempo, resonant low-end, subtle breathiness conveying quiet dread.\n\nSpeaker 1 - Vintage Narrator (Callum / Marcus):\nhim got him they both really intense that's why I came here today to see it so it's like a game that you want to watch it it's gonna be a good one battle of the barracks 13. Freedom uh this is round one here are the rules this is Fleck iron"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Callum (Intense & Deep Thriller)",
+    "alternativeVoices": [
+      "Marcus (Authoritative Horror)",
+      "Daniel (Atmospheric Storyteller)"
+    ],
+    "voiceSettings": {
+      "stability": 0.45,
+      "similarity_boost": 0.88,
+      "style": 0.2,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Trầm tĩnh, ma mị, hồi hộp, mang âm hưởng phim tài liệu VHS cổ điển. Suitable for Thanh thiếu niên và người lớn mê phim hoạt hình kinh dị, lore bí ẩn.",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

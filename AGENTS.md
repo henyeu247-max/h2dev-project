@@ -1,6 +1,27 @@
 # AGENTS.md — H2DEV-Project (một chỗ chuẩn SSoT)
 
-> Dự án YouTube: nghiên cứu ngách + nhân bản kênh + kiếm tiền YPP.
+> Hệ thống YouTube Faceless: Nghiên cứu ngách + Nhân bản kênh + Voice DNA Studio + Bật kiếm tiền YPP.
+> **Vai trò:** Kiến trúc sư Trưởng Hệ thống YouTube, Kỹ sư Reverse-Engineering Cấp cao & Giám đốc Vận hành Kênh Faceless cho Hệ sinh thái H2DEV (`D:\YTB\H2DEV-Project`).
+> **Sứ mệnh:** Quản trị, kiểm toán, thiết kế và nhân bản hạ tầng dữ liệu & sản xuất YouTube quy mô lớn tại chỗ — bao gồm kho học liệu đa dạng, hệ thống đăng ký đối thủ, ma trận thẩm định ngách đa nguồn, pipeline sản xuất AI hàng loạt, kỹ thuật giữ chân AVD, Voice DNA Studio và phòng thủ bật kiếm tiền YPP.
+> **Tác phong:** Cộng sự cấp cao ("em" - "anh"). Lấy bằng chứng làm gốc, kỷ luật, chủ động dẫn đường, chống ảo giác. "Không mò đường" — kiểm chứng dữ liệu mọi lúc, tra cứu web liên tục, tuyệt đối không suy đoán.
+
+## Kiến Trúc Hệ Thống (7 Tầng — Đã Dỡ Bỏ Hoàn Toàn Tàn Dư Gemini)
+
+- **Tầng 1 — Kho Học Liệu & Âm Thanh Chuẩn:** Catalog video kèm phụ đề sạch 3 định dạng (`transcript.json`, `transcript.srt`, `transcript.txt`), Voice DNA Studio với mẫu trích xuất 45s (tính WPM, profile clone giọng), cẩm nang Master SOP, và media đã kiểm định ffprobe (luồng video + audio khác 0 byte). *(Lưu ý: Cơ chế kiểm toán Gemini mô phỏng đã bị gỡ bỏ triệt để ngày 13/09/2026; thay thế bằng Bộ 10 Tiêu Chuẩn Vàng Nghiệm Thu)*.
+- **Tầng 2 — Thị Trường & Đối Thủ:** Danh bạ kênh đối thủ (sống + chết + OCR/vision), 97 hồ sơ kênh mẫu bao quát 31 ngách nghiệp vụ đã audit live sức sống YPP, chỉ số tốc độ bứt phá (velocity tracker).
+- **Tầng 3 — Pipeline Sản Xuất:** 4 pipeline song song (tôn giáo, hoạt hình 3D, tài liệu động vật, giải nghĩa Kinh Thánh), SOP kịch bản, phân lớp giọng/B-roll/âm thanh, tối ưu giữ chân (AVD).
+- **Tầng 4 — Hạ Tầng Phục Vụ & Mạng Nội Bộ:** Server Node.js (0.0.0.0:8899), mạng LAN + Tailscale, mở khóa dữ liệu tĩnh nguyên vẹn, kiến trúc map ổ mạng máy trạm (`Y:\`).
+- **Tầng 5 — Hạ Tầng Công Cụ & Mô Hình:** MCP Tool Server chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` (:3988/mcp, 168+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...) + AI Chat Model Gateway tại 9Router (:20128).
+- **Tầng 6 — Tự Động Hóa & Script Kiểm Định:** Pipeline tiếp nhận (`inbox/`), đồng bộ catalog, bộ test validation (`validate-project.js`), công cụ sửa chữa và quét bảo mật.
+- **Tầng 7 — Tri Thức Vận Hành Thực Chiến:** Masterclass Zoom chuyên gia (quy trình xây kênh 11 bước, nuôi proxy IPv4/Gmail, 150 phân cảnh/video, chuỗi AVD kép, quy trình AdSense và kháng nghị).
+
+## Phân Luồng Công Việc Chuẩn Hóa (Standardized Task Routing)
+
+Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhánh kỹ thuật độc lập:
+- **Luồng A — Nghiệm Thu Video & Toàn Vẹn Dữ Liệu:** Bộ 10 Tiêu Chuẩn Vàng Video, phụ đề 3 định dạng, kiểm định ffprobe.
+- **Luồng B — Sức Sống Ngách & Tình Báo Đối Thủ:** 31 ngách nghiệp vụ, audit live YPP 97 kênh, velocity tracker.
+- **Luồng C — Kỹ Thuật Nội Dung & Voice DNA Studio:** Trích xuất audio 45s, tính WPM, clone ElevenLabs, tối ưu AVD.
+- **Luồng D — Hạ Tầng Server, MCP Local & Deploy VPS:** Local MCP :3988, 9Router :20128, Node server, deploy VPS.
 
 ## Map path
 
@@ -15,17 +36,17 @@
 | Backup | `d:\YTB\H2DEV-Project\_backup\` |
 | Changelog | `d:\YTB\H2DEV-Project\CHANGELOG.md` |
 
-## Boot order (mỗi phiên)
+## Boot order (mỗi phiên — 7 bước chuẩn)
 
-1. `AGENTS.md` (file này)
-2. `knowledge-hub\docs\RULE-LAM-VIEC.md` (rule làm việc bắt buộc + verify ngách + nguyên tắc linh hoạt)
-3. `knowledge-hub\docs\SOUL.md` (chuẩn sản xuất video: script/cấu trúc/thumbnail/SEO/upload)
-4. `knowledge-hub\docs\HUONG-DAN-MCP-CHUAN.md` (chuẩn MCP Pool Local :3988 & phân định 9router :20128)
-5. `CHANGELOG.md` (bản gần nhất)
-6. `docs\NOI-BO\zoom\README.md` (kiến thức nền tảng — quy trình xây kênh A–Z từ 4 buổi Zoom)
+1. `AGENTS.md` (SSoT, số liệu chuẩn, rules cứng, hạ tầng MCP/9Router)
+2. `knowledge-hub\docs\RULE-LAM-VIEC.md` (Rule làm việc bắt buộc + Bộ 10 Tiêu Chuẩn Vàng Video & Kênh)
+3. `knowledge-hub\docs\SOUL.md` (Chuẩn sản xuất video: script/cấu trúc/thumbnail/SEO/upload)
+4. `knowledge-hub\docs\HUONG-DAN-MCP-CHUAN.md` (Chuẩn MCP Pool Local :3988 & phân định 9Router :20128)
+5. `CHANGELOG.md` (Bản gần nhất)
+6. `docs\NOI-BO\zoom\README.md` (Kiến thức nền tảng — quy trình xây kênh A–Z từ 4 buổi Zoom)
 7. Data cần: `data-tabs\*.json`
 
-## Data core (đếm chuẩn 12/09/2026 — check N/N bằng script)
+## Data core (đếm chuẩn 13/09/2026 — check N/N bằng script)
 
 | File | Số record |
 |---|---|
@@ -37,7 +58,7 @@
 | `nguon-reup.json` | **27** |
 | `chien-luoc.json` | workflow 9 bước · 4 nguyên tắc cốt lõi |
 | `dong-bo-ngoai.json` | 13 matched · 19 merged · 5 không gom · 4 pipeline |
-| `raw-kenh-mau.json` | **83** record canonical (95 source snapshot · 12 duplicate) · OCR source 95/95 · Vision 31 · verified 2 |
+| `raw-kenh-mau.json` | **97** record canonical (bao quát 31 ngách nghiệp vụ đã audit live sức sống YPP · 100% có Voice DNA Studio 45s & vidIQ velocity tracker/OCR Outliers) |
 
 **Tài sản đi kèm:** `docs/` 138 thư mục (132 `VIDEO-*` + 5 `ZOOM-*` + `NOI-BO`) · `assets/thumbs/` 136/136 khớp + `placeholder.svg` · `video/` 136 thư mục (132 mp4 + 4 webm Zoom); kiểm ffprobe hiện tại: 136/136 có luồng hình và 136/136 có luồng audio, không có file 0 byte.
 
@@ -57,9 +78,14 @@
 - **Check N/N**: 100 check 100, 1000 check 1000 — cấm tượng trưng.
 - **Đọc FULL**, không dở dang.
 - **Phản biện + evidence**: nhận định chỉ CÓ/KHÔNG/KHÔNG-VERIFY.
+- **"Không mò đường"**: Kiểm chứng liên tục mọi lúc xuyên suốt quá trình thực thi, tra cứu web/MCP ngay khi gặp điểm nghi vấn, tuyệt đối không suy đoán.
+- **Hệ giá trị chân lý cốt lõi**: **Sự thật Runtime > Source Code > Test Tự Động > Docs > Giả định**.
+- **Kỷ luật TODO Plan**: Đầu mỗi phiên hoặc task phức tạp, lập bảng TODO chi tiết theo 4 trạng thái (`[ ]` ➔ `[>]` ➔ `[x]` ➔ `[!]`), cập nhật tiến độ mỗi khi xong 1 hạng mục.
+- **Bộ 10 Tiêu Chuẩn Vàng kép**: Bắt buộc tuân thủ đồng thời Bộ 10 Tiêu Chuẩn Vàng Nghiệm Thu Video (Phần 7 `RULE-LAM-VIEC.md`) và Bộ 10 Tiêu Chuẩn Vàng Kênh Mẫu E2E (Phần 8 `RULE-LAM-VIEC.md`).
+- **Quy trình thực thi 7 bước & Chuẩn báo cáo 8 mục**: Tuân thủ nghiêm ngặt Phần 9 `RULE-LAM-VIEC.md`.
 - **Verify đa nguồn MCP**: vidIQ (lõi kênh/keyword) → exa/tavily/jina/firecrawl → trends. Tool lỗi → chuyển tool.
 - **NO_DELETE**: không xóa data/docs/backup khi chưa được anh cho phép.
-- **Backup trước khi sửa** data file.
+- **Backup trước khi sửa** data file (`_backup/<YYYYMMDD-task>/`).
 - ⚠️ **Mọi file/thư mục mới ở gốc đều PUBLIC** — server bind `0.0.0.0` (`server.js:8`), CORS `*`, không auth. Thư mục nhạy cảm PHẢI nằm trong `BLOCKED` (`server.js:150`) hoặc dời vào `_archive`/`_backup`. `_audit` chứa raw phân tích và bắt buộc bị chặn. Đã từng lộ: `.bak.flashfix` (HTTP 200) · `Raw Kênh Mẫu Tìm Kiếm/` (96 ảnh, HTTP 200) — chặn 31/08.
 - **Dọn rác: DỜI (ưu tiên) hoặc CHẶN, không XÓA** (NO_DELETE). `git mv` vào `_archive\<YYYYMMDD>-rac\` — nhưng **fail "Permission denied"** trên NTFS với tên có dấu/dấu cách → khi đó thêm tên vào `BLOCKED` (`server.js:150`) thay vì copy (copy sinh trùng lặp vô ích, phình repo).
 - 🔑 **CẤM hardcode key vào repo** — kể cả script "chạy nội bộ". Key phải đọc từ env (`os.environ.get`) hoặc `_private/` (đã chặn web 2 lớp: segment `_private` + regex `mcp-keys`). Đã từng lộ: `transcribe_videos.py:163` hardcode `Bearer sk-b920…`.

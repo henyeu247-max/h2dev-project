@@ -1453,12 +1453,16 @@
         const statusBadge = (r.vidiqVerification && r.vidiqVerification.status === 'VERIFIED')
           ? `<span class="badge badge-green">vidIQ Verified</span>`
           : (r.duplicateOf ? `<span class="badge badge-amber">Trùng (${esc(r.duplicateOf)})</span>` : (r.status === 'OCR_COMPLETE' ? `<span class="badge badge-blue">OCR đủ</span>` : `<span class="badge badge-amber">Manual</span>`));
+        const langInfo = r.audioLanguageInfo || (r.deepIntelligence && r.deepIntelligence.audioLanguage ? { flag: r.deepIntelligence.languageFlag || '🌐', code: r.deepIntelligence.audioLanguage } : null);
         const imgSrc = r.fileName ? 'assets/raw-kenh/' + encodeURIComponent(r.fileName) : 'assets/thumbs/placeholder.svg';
         return `
         <article class="card overflow-hidden min-w-0 flex flex-col hover:border-brand-500 transition group" data-raw-card="${esc(r.id)}">
           <div class="relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700 cursor-pointer" onclick="viewRawImage('${esc(imgSrc)}', '${esc((ch.title || r.id).trim())}')" title="Bấm xem ảnh kích thước đầy đủ">
             <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
-            <span class="absolute top-2 left-2 bg-ink-900/80 px-2 py-0.5 rounded-xl text-[10px] font-mono text-gray-300 border border-white/10 truncate max-w-[45%]">${esc(r.id)}</span>
+            <div class="absolute top-2 left-2 flex items-center gap-1 z-10">
+              <span class="bg-ink-900/80 px-2 py-0.5 rounded-xl text-[10px] font-mono text-gray-300 border border-white/10 truncate">${esc(r.id)}</span>
+              ${langInfo ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-[9.5px] shrink-0" title="${esc(langInfo.language || langInfo.code)}">${esc(langInfo.flag)} ${esc(langInfo.code ? langInfo.code.split('-')[0].toUpperCase() : '')}</span>` : ''}
+            </div>
             <span class="absolute top-2 right-2 bg-brand-600/90 text-white text-[10px] font-medium px-2 py-0.5 rounded-xl truncate max-w-[50%]">${esc(r.editorialNiche || r.niche || 'Chưa rõ')}</span>
             <span class="absolute bottom-2 right-2 bg-black/70 hover:bg-black/90 text-white text-[10px] px-2 py-0.5 rounded-lg border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">🔍 Xem ảnh</span>
           </div>
@@ -2057,6 +2061,12 @@
                     <span>${esc(pData.handle || ch.handle || '')}</span>
                     <span>•</span>
                     <span>Quốc gia: <strong style="color:#e2e8f0;">${esc(countryDisplay)}</strong></span>
+                    ${(voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (r.audioLanguageInfo && r.audioLanguageInfo.flag) ? `
+                    <span>•</span>
+                    <span style="display:inline-flex; align-items:center; gap:0.3rem; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.35); padding:0.1rem 0.5rem; border-radius:0.375rem; color:#38bdf8; font-weight:700;">
+                      <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (r.audioLanguageInfo && r.audioLanguageInfo.flag))}</span>
+                      <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.audioLanguage) || (r.audioLanguageInfo && r.audioLanguageInfo.language))}</span>
+                    </span>` : ''}
                     <span>•</span>
                     <span style="color:#10b981; font-weight:600;">${esc(vA.healthBadge || (pData.longevityAudit ? pData.longevityAudit.sustainabilityStatus : ''))}</span>
                   </div>
@@ -2114,7 +2124,13 @@
                   <div style="display:flex; align-items:center; gap:0.5rem;">
                     <span style="font-size:1.25rem;">🎙️</span>
                     <div>
-                      <h4 style="font-size:0.95rem; font-weight:800; color:#fff; margin:0;">Mẫu Giọng Chuẩn Của Kênh (Voice DNA Studio)</h4>
+                      <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap;">
+                        <h4 style="font-size:0.95rem; font-weight:800; color:#fff; margin:0;">Mẫu Giọng Chuẩn Của Kênh (Voice DNA Studio)</h4>
+                        ${(voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) ? `
+                        <span style="font-size:0.7rem; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(14,165,233,0.2); border:1px solid rgba(14,165,233,0.4); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
+                          ${esc(voiceProfile.voiceCharacteristics.languageFlag)} ${esc(voiceProfile.voiceCharacteristics.audioLanguage || '')}
+                        </span>` : ''}
+                      </div>
                       <p style="font-size:0.72rem; color:#94a3b8; margin:0;">${voiceProfile.sourceVideo ? voiceProfile.sourceVideo.timeWindow : '45s'} • MP3 Mono 44.1kHz • Chuẩn hóa EBU R128 (-16 LUFS)</p>
                     </div>
                   </div>
@@ -2127,11 +2143,19 @@
                 </div>
 
                 <!-- Voice DNA Characteristics Grid -->
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:0.65rem; font-size:0.8rem;">
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.65rem; font-size:0.8rem;">
                   <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem;">
                     <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Đặc tính giọng</div>
                     <div style="color:#38bdf8; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.genderEstimate)}</div>
                     <div style="color:#94a3b8; font-size:0.72rem; margin-top:0.15rem;">Độ tuổi: <span style="color:#e2e8f0;">${esc(voiceProfile.voiceCharacteristics.ageRange || 'Chưa rõ')}</span></div>
+                  </div>
+                  <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem;">
+                    <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Ngôn ngữ giọng đọc</div>
+                    <div style="color:#38bdf8; font-weight:700; margin-top:0.2rem; display:flex; align-items:center; gap:0.35rem;">
+                      <span>${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || '🌐')}</span>
+                      <span>${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.audioLanguage) || 'Tiếng Anh')}</span>
+                    </div>
+                    <div style="color:#94a3b8; font-size:0.72rem; margin-top:0.15rem;">Phương ngữ: <span style="color:#e2e8f0;">${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageDialect) || 'Standard')}</span></div>
                   </div>
                   <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem;">
                     <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Tốc độ nói thực tế (WPM)</div>

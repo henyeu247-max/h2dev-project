@@ -21,7 +21,11 @@
     "ageRange": "35 – 50 tuổi",
     "toneAndStyle": "Bí ẩn, hồi hộp, ma mị, nhấn nhá từng khám phá làm chấn động lịch sử",
     "targetAudience": "Khán giả nói tiếng Nga mê khảo cổ bí ẩn, văn minh Lưỡng Hà, hiện tượng dị thường",
-    "actualPaceWPM": "122 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "122 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Nga (Russian)",
+    "languageCode": "ru-RU",
+    "languageFlag": "🇷🇺",
+    "languageDialect": "Standard Russian (Thuyết minh khảo cổ học bí ẩn)"
   },
   "promptingStudio": {
     "scene": "A historical enigma audio suite. Warm low-frequency coloration with subtle dark tone, tailored for mysterious artifact revelations.",

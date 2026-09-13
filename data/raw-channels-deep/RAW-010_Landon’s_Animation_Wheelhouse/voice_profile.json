@@ -21,7 +21,11 @@
     "ageRange": "20 – 30 tuổi",
     "toneAndStyle": "Năng lượng cực cao, biểu cảm kịch tính, lém lỉnh, hoạt kê cường điệu",
     "targetAudience": "Khán giả mê hoạt hình 3D, parody meme và trẻ em lớn tuổi (8–16 tuổi)",
-    "actualPaceWPM": "77 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+    "actualPaceWPM": "77 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "American English (Hoạt hình hài hước / Parody)"
   },
   "promptingStudio": {
     "scene": "A dry, dynamic soundstage or voiceover recording room. Dead room acoustics with zero reverb, immediate presence suited for hyper-expressive animated dubbing.",

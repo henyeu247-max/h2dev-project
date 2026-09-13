@@ -21,7 +21,11 @@
     "ageRange": "30 – 45 tuổi",
     "toneAndStyle": "Trầm tĩnh, ma mị, hồi hộp, mang âm hưởng phim tài liệu VHS cổ điển",
     "targetAudience": "Thanh thiếu niên và người lớn mê phim hoạt hình kinh dị, lore bí ẩn",
-    "actualPaceWPM": "69 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+    "actualPaceWPM": "69 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "American English (Vintage Analog Horror)"
   },
   "promptingStudio": {
     "scene": "An insulated vintage studio room with low-noise tube mic emulation. Deep close proximity effect with very subtle room ambiance reminiscent of late 70s analog broadcast.",

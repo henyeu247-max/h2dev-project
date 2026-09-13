@@ -21,7 +21,11 @@
     "ageRange": "38 – 52 tuổi",
     "toneAndStyle": "Hào hùng, truyền cảm, ấm áp, nhịp điệu chậm rãi tôn vinh vẻ đẹp thiên nhiên",
     "targetAudience": "Khán giả yêu thiên nhiên hoang dã, du lịch khám phá văn hóa châu Phi",
-    "actualPaceWPM": "74 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "74 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "Mid-Atlantic English (National Geographic Cinematic)"
   },
   "promptingStudio": {
     "scene": "A world-class cinematic nature documentary mixing room. Expansive broadcast acoustics, smooth velvety low-mids, pristine high-end clarity capturing breath and wonder.",

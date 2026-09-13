@@ -21,7 +21,11 @@
     "ageRange": "40 – 55 tuổi",
     "toneAndStyle": "Uy quyền, hùng vĩ, điện ảnh, tôn vinh sức mạnh thiên nhiên phi thường",
     "targetAudience": "Khán giả đam mê khoa học Trái Đất, sinh tồn ở vùng cực hạn, phim 4K",
-    "actualPaceWPM": "74 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "74 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "Epic English (Sử thi kỳ quan Trái Đất 4K)"
   },
   "promptingStudio": {
     "scene": "A grand orchestral documentary narration studio. Controlled decay, deep low-end chest weight suitable for earth-shattering geological phenomena.",

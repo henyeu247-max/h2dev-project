@@ -20,7 +20,7 @@
 Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhánh kỹ thuật độc lập:
 - **Luồng A — Nghiệm Thu Video & Toàn Vẹn Dữ Liệu:** Bộ 10 Tiêu Chuẩn Vàng Video, phụ đề 3 định dạng, kiểm định ffprobe.
 - **Luồng B — Sức Sống Ngách & Tình Báo Đối Thủ:** 31 ngách nghiệp vụ, audit live YPP 97 kênh, velocity tracker.
-- **Luồng C — Kỹ Thuật Nội Dung & Voice DNA Studio:** Trích xuất audio 45s, tính WPM, clone ElevenLabs, tối ưu AVD.
+- **Luồng C — Kỹ Thuật Nội Dung & Voice DNA Studio:** Trích xuất audio 45s, gắn nhãn Cờ ngôn ngữ âm thanh chuẩn thực tế (Language Flag: 🇺🇸, 🇯🇵, 🇷🇺, 🇪🇸...), tính WPM, clone ElevenLabs, tối ưu AVD.
 - **Luồng D — Hạ Tầng Server, MCP Local & Deploy VPS:** Local MCP :3988, 9Router :20128, Node server, deploy VPS.
 
 ## Map path
@@ -58,7 +58,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | `nguon-reup.json` | **27** |
 | `chien-luoc.json` | workflow 9 bước · 4 nguyên tắc cốt lõi |
 | `dong-bo-ngoai.json` | 13 matched · 19 merged · 5 không gom · 4 pipeline |
-| `raw-kenh-mau.json` | **97** record canonical (bao quát 31 ngách nghiệp vụ đã audit live sức sống YPP · 100% có Voice DNA Studio 45s & vidIQ velocity tracker/OCR Outliers) |
+| `raw-kenh-mau.json` | **97** record canonical (bao quát 31 ngách nghiệp vụ đã audit live sức sống YPP · có Voice DNA Studio 45s, cờ ngôn ngữ Language Flag & vidIQ velocity tracker/OCR Outliers) |
 
 **Tài sản đi kèm:** `docs/` 138 thư mục (132 `VIDEO-*` + 5 `ZOOM-*` + `NOI-BO`) · `assets/thumbs/` 136/136 khớp + `placeholder.svg` · `video/` 136 thư mục (132 mp4 + 4 webm Zoom); kiểm ffprobe hiện tại: 136/136 có luồng hình và 136/136 có luồng audio, không có file 0 byte.
 

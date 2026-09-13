@@ -21,7 +21,11 @@
     "ageRange": "25 – 35 tuổi",
     "toneAndStyle": "Nghiêm túc giả tạo (Deadpan Serious), châm biếm, dẫn dắt số liệu kịch tính",
     "targetAudience": "Khán giả hâm mộ Family Guy, Rick and Morty, hoạt hình người lớn 16+",
-    "actualPaceWPM": "160 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+    "actualPaceWPM": "160 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "American English (Deadpan Satirical Investigation)"
   },
   "promptingStudio": {
     "scene": "An investigative audio booth. Focused central presence with crisp low-mid body, designed for dry satirical analysis.",

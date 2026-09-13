@@ -21,7 +21,11 @@
     "ageRange": "22 – 32 tuổi",
     "toneAndStyle": "Hài hước châm biếm, mỉa mai, dí dỏm, tốc độ nói nhanh cuốn hút",
     "targetAudience": "Game thủ, thanh thiếu niên yêu thích hoạt hình tóm tắt lore game",
-    "actualPaceWPM": "157 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+    "actualPaceWPM": "157 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "American English (Casual Gamer / Lore Sarcastic)"
   },
   "promptingStudio": {
     "scene": "A clean domestic home-studio with reflection filters. Tight acoustical isolation, vocal forward in the mix with zero noticeable room slap.",

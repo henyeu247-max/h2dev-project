@@ -58,15 +58,24 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
   - Tra cứu web/MCP ngay tại thời điểm đó (YouTube Policy Help chính thức, bài nghiên cứu RPM của AIR Media, vidIQ, exa).
 - **Hệ giá trị chân lý:** Sự thật Runtime > Source Code > Test Tự Động > Docs > Giả định.
 
-### 4. Quy Tắc Phổ Quát "Check N/N" Kiểm Định 100% Tổng Thể
+### 4. Kỷ Luật Grounded Data Tuyệt Đối (Chống Ảo Giác & Lệch Pha Dữ Liệu)
+- Tuyệt đối cấm suy đoán hay gán ghép chủ đề giữa các video.
+- Mọi kịch bản, câu Hook 0–15s mở màn, nhịp Pacing và prompt của kênh mẫu bắt buộc phải đối soát trích xuất 1:1 từ file transcript và video bão view #1 thực tế của chính kênh đó trước khi ghi vào hồ sơ.
+- Khi thiếu dữ liệu hoặc gặp ngách mới: Bắt buộc dùng MCP Pool Local (:3988 dùng Exa / Firecrawl / vidIQ) cào dữ liệu thực tế thời gian thực, tuyệt đối không tự ý bịa đặt thông số.
+
+### 5. Quy Tắc Phổ Quát "Check N/N" Kiểm Định 100% Tổng Thể
 - Kiểm tra đủ 100% số lượng đối tượng thực tế tại runtime: Có N đối tượng (video, kênh, tài liệu, ngách) phải kiểm đủ cả N. Không lấy mẫu tượng trưng.
 - Mọi độ lệch (N - K) phải được định danh và phân loại nguyên nhân rõ ràng.
 - Nhận diện đúng kiểu dữ liệu (phân biệt boolean `true` với chuỗi cảnh báo trong `ngach-xanh.json`).
 
-### 5. Bằng Chứng Sự Thật 3 Mức & Thao Tác An Toàn
-- Nhận định chỉ dùng 3 trạng thái: `[CÓ]` / `[KHÔNG]` / `[KHÔNG-VERIFY-ĐƯỢC]`.
-- Không tự ý xóa dữ liệu, media hay backup. Ưu tiên DỜI VÀO `_archive/` hoặc CHẶN trên server thay vì XÓA (NO_DELETE).
+### 6. Bằng Chứng Sự Thật 3 Mức & Thao Tác An Toàn (NO_DELETE)
+- Nhận định chỉ dùng 3 trạng thái: `[CÓ]` / `[KHÔNG]` / `[KHÔNG-VERIFY-ĐƯỢC]` kèm bằng chứng.
+- Không tự ý xóa dữ liệu, media hay backup. Ưu tiên DỜI VÀO `_archive/` hoặc CHẶN trên server thay vì XÓA.
 - Chỉ xóa hoặc thay đổi cấu hình mạng khi có đánh giá tác động đầy đủ và được anh xác nhận đồng ý rõ ràng.
+
+### 7. Kỷ Luật Windows Scripting An Toàn (Pure ASCII Only)
+- Mọi file script vận hành trên Windows (.bat, .cmd) phải sử dụng 100% ký tự 7-bit ASCII thuần.
+- Tuyệt đối không dùng tiếng Việt có dấu, ký tự Unicode lạ hay dấu & không bọc thoát trong chuỗi lệnh nhằm triệt tiêu hoàn toàn lỗi lệch byte và vỡ lệnh của cmd.exe.
 
 ---
 
@@ -281,7 +290,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | **8** | **Kho Báu SEO Kênh (Channel Tags)** | Đủ 30–50 tags kênh có giá trị định vị thuật toán và kéo traffic ăn theo đối thủ lớn; Nút `📋 Sao chép tất cả Tags` 1-click hoạt động hoàn hảo. | Bấm nút sao chép tags; kiểm tra clipboard có đủ danh sách tags ngăn cách chuẩn xác hay không. |
 | **9** | **Top Video & Modal Sub Song Ngữ (Sắp xếp Most Viewed)** | Danh sách Top video **bắt buộc sắp xếp theo Lượt xem giảm dần (Most Viewed)** để video `#1` luôn là video nhiều view nhất/bão view nhất của kênh. Thẻ video có rank `#1, #2...`, thumbnail, thời lượng, views, VPH, ngày đăng. Nút `📜 Xem Sub, Lời Thoại & Kịch Bản AI` mở Modal mượt mà với đủ 4 Tab: (1) Song ngữ 1:1 có timestamp `[00:00]`; (2) Bản dịch Tiếng Việt; (3) Bản Tiếng Gốc; (4) Kịch bản AI & Voice production. | Sắp xếp lại file `top-videos.json` và UI logic theo `views` giảm dần; click mở từng video; bấm chuyển mượt mà giữa cả 4 tab; bấm nút copy phụ đề hoạt động 100%. |
 | **10** | **Tình Báo Đa Nguồn, Outlier & Đối Soát Tiến Hóa** | Kết hợp đa nguồn không ảo giác: (1) Bảng theo dõi tăng trưởng 7 ngày thực tế từ **vidIQ Live API** (`recentVelocity`); (2) Bảng bóc tách 8 video Outlier từ **ảnh chụp gốc OCR** kèm chỉ số đột phá `>100x`; (3) Khối **Đối soát tiến hóa kênh (Timeline Evolution Audit)** phân định rõ ràng giữa Ảnh raw snapshot lịch sử (lúc kênh mới bứt phá) vs Dữ liệu YouTube Live hiện tại (lý do ẩn/xóa bớt video, video mega-viral); (4) Phân tích **Vision AI** phong cách sản xuất; (5) Đồng bộ deploy VPS và test Playwright PASS 100%. | Soát bảng số liệu vidIQ live; kiểm tra thẻ OCR Outlier; kiểm tra khối Timeline Evolution trên modal; chạy Playwright kiểm thử E2E trên live VPS không có lỗi console/network. |
-| **11** | **Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control)** | **Cơ Chế Khí Giới Ba Ngôi (The Trinity Production Engine)** được tích hợp ngay đầu modal: <br>1. *Pipeline SOP Kỹ Thuật:* Nút `📄 Xem Toàn Bộ SOP Skill Gốc ↗` mở trực tiếp file Markdown SOP gốc (`assets/docs/tai-lieu/...md`, HTTP 200 OK) + `📂 Repo Code ↗`.<br>2. *Prompt Engine Chuyên Dụng:* (a) Visual Directive biến thể đa thị trường (`{{STYLE_SHORT}}`, `{{STYLE}}`, `{{MASCOT}}`, ống kính 35/50mm, handheld, negative khử rác AI); (b) Master Scriptwriting Prompt chuẩn `north-effect.md` (1000–1100 từ/Part, lệnh `Stop`/`CONTINUE`, tỷ lệ 70% dẫn chứng gốc + 30% mới, Hook 0–15s hành động trích 1:1 từ transcript video #1); (c) Packaging CTR (Title Formula bão view + Bố cục Thumbnail 3 điểm vàng 65%).<br>3. *Dedicated Agent Skill:* Khớp đúng Skill chuyên biệt trong bộ 11 Skills đã cài đặt.<br>4. *Lộ Trình 5 Bước Ra Quân:* Khởi động kênh chuẩn Zoom A–Z Masterclass. | Mở modal kênh; kiểm tra khối Mission Control hiển thị ở vị trí ưu tiên; bấm các nút copy prompt; bấm nút mở SOP trả về HTTP 200; bấm nút Kịch Bản Gốc mở đúng transcript video #1; kiểm tra file `production_toolkit.json` của kênh có đầy đủ dữ liệu grounded 100%. |
+| **11** | **Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control)** | **Cơ Chế Khí Giới Ba Ngôi (The Trinity Production Engine)** được tích hợp ngay đầu modal: <br>1. *Pipeline SOP Kỹ Thuật:* Nút `📄 Xem Toàn Bộ SOP Skill Gốc ↗` mở trực tiếp file Markdown SOP gốc (`assets/docs/tai-lieu/...md`, HTTP 200 OK) + `📂 Repo Code ↗`.<br>2. *Prompt Engine Chuyên Dụng:* (a) Visual Directive biến thể đa thị trường (`{{STYLE_SHORT}}`, `{{STYLE}}`, `{{MASCOT}}`, ống kính 35/50mm, handheld, negative khử rác AI); (b) Master Scriptwriting Prompt chuẩn `north-effect.md` (Nạp 100% transcript đối thủ trong 1 prompt nhờ Context Window 200K–1M tokens của Claude/GPT hiện đại; điều khiển nhả output theo từng Part 1000–1100 từ bằng lệnh `Stop`/`CONTINUE` để vượt qua trần Max Output Tokens, triệt tiêu Dilution Tax và giữ nhịp cliffhanger AVD từng 90 giây; Hook 0–15s hành động trích 1:1 từ transcript video #1); (c) Packaging CTR (Title Formula bão view + Bố cục Thumbnail 3 điểm vàng 65%).<br>3. *Dedicated Agent Skill:* Khớp đúng Skill chuyên biệt trong bộ 11 Skills đã cài đặt.<br>4. *Lộ Trình 5 Bước Ra Quân:* Khởi động kênh chuẩn Zoom A–Z Masterclass. | Mở modal kênh; kiểm tra khối Mission Control hiển thị ở vị trí ưu tiên; bấm các nút copy prompt; bấm nút mở SOP trả về HTTP 200; bấm nút Kịch Bản Gốc mở đúng transcript video #1; kiểm tra file `production_toolkit.json` của kênh có đầy đủ dữ liệu grounded 100%. |
 
 ---
 

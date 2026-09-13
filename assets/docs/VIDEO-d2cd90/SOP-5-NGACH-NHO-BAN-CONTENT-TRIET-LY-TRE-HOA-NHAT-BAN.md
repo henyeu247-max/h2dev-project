@@ -18,7 +18,7 @@
   - *"Phương trình cuộc đời: Tài năng không quan trọng bằng tâm thế..."* (13K view sau 7 ngày).
   - *"Bản chất thực sự của cuộc sống mà 99% người không hay biết..."* (6.5K view sau 8 ngày).
   - *"Tại sao nỗ lực hết mình nhưng số phận vẫn không đổi thay?"*
-- **Phong cách thumbnail:** Nền tối huyền bí, ảnh Inamori Kazuo đeo kính lịch lãm, chữ lớn màu trắng viền đen hoặc chữ vàng kim: `TỪ BỎ NGAY THÓI QUEN NÀY` $\rightarrow$ `SỨC MẠNH TÂM TRÍ`.
+- **Phong cách thumbnail:** Nền tối huyền bí, ảnh Inamori Kazuo đeo kính lịch lãm, chữ lớn màu trắng viền đen hoặc chữ vàng kim: `TỪ BỎ NGAY THÓI QUEN NÀY` → `SỨC MẠNH TÂM TRÍ`.
 
 ### Ngách 2: Sổ tay nội trợ & Mẹo vặt đời sống gia đình (`@시니어살림노트`)
 - **Kênh mẫu:** `@시니어살림노트` (Senior Housekeeping Note — Hàn Quốc).

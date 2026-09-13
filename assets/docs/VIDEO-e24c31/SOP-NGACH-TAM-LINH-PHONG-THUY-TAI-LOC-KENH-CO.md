@@ -16,10 +16,10 @@
 - **Nền tảng kênh:** Kênh cổ lập ngày **14 thg 10, 2008** (đã có tuổi đời gần 18 năm).
 - **Quy mô thần tốc:** Chỉ mới đăng **5 video**, đạt **8.050 người đăng ký**!
 - **Tốc độ cắn đề xuất của từng video (vidIQ Outliers > 100x):**
-  - Video 1: *"Để muối ở vị trí này trong nhà, đại vận kéo đến tiền bạc đổ về"* $\rightarrow$ Đạt **45.000 lượt xem** sau 3 ngày (tốc độ 528 VPH > 100x).
-  - Video 2: *"Đừng vứt quần áo cũ theo cách này, hãy làm điều này để tránh vận xui tháng 8/2026"* $\rightarrow$ Đạt **42.000 lượt xem** sau 2 ngày (tốc độ 1.1K VPH > 100x).
-  - Video 3: *"Muốn giàu có, trong nhà vệ sinh chỉ cần đặt 1 thứ này thôi"* $\rightarrow$ Đạt **18.000 lượt xem** sau 4 ngày (tốc độ 320 VPH > 100x).
-  - Video 4: *"Trước khi cắt móng tay hãy nhớ kỹ, cắt vào ngày này tài lộc 7 năm bay sạch"* $\rightarrow$ Đạt **14.000 lượt xem** sau 3 ngày (tốc độ 272 VPH > 100x).
+  - Video 1: *"Để muối ở vị trí này trong nhà, đại vận kéo đến tiền bạc đổ về"* → Đạt **45.000 lượt xem** sau 3 ngày (tốc độ 528 VPH > 100x).
+  - Video 2: *"Đừng vứt quần áo cũ theo cách này, hãy làm điều này để tránh vận xui tháng 8/2026"* → Đạt **42.000 lượt xem** sau 2 ngày (tốc độ 1.1K VPH > 100x).
+  - Video 3: *"Muốn giàu có, trong nhà vệ sinh chỉ cần đặt 1 thứ này thôi"* → Đạt **18.000 lượt xem** sau 4 ngày (tốc độ 320 VPH > 100x).
+  - Video 4: *"Trước khi cắt móng tay hãy nhớ kỹ, cắt vào ngày này tài lộc 7 năm bay sạch"* → Đạt **14.000 lượt xem** sau 3 ngày (tốc độ 272 VPH > 100x).
   - Video 5: Video mới nhất đăng 4 phút trước khi tác giả quay màn hình.
 
 ---

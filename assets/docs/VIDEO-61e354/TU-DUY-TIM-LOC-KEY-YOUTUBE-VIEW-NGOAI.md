@@ -10,9 +10,9 @@
 ## 1. NGUYÊN TẮC VÀNG: ĐỪNG ÔM CHỦ ĐỀ LỚN, HÃY TÌM "NGÁCH NHỎ TRONG NGÁCH NHỎ" (MICRO-NICHE)
 - **Sai lầm cốt tử của người mới:** Nhảy thẳng vào các chủ đề khổng lồ như *Health (Sức khỏe), Fitness, Finance (Tài chính), Cooking*. Các từ khóa này đã bị các kênh triệu sub, tích xám độc quyền chiếm đóng. Kênh mới đăng video sẽ lập tức bị chìm nghỉm, rơi vào tình trạng **0 view** kéo dài dẫn đến nản chí.
 - **Tư duy lách ngách con đa tầng:**
-  - **Tầng 1 (Chủ đề lớn):** `Health` (Sức khỏe) $\rightarrow$ *Cạnh tranh cực cao, không thể vào.*
-  - **Tầng 2 (Ngách con):** `Nutrition / Healthy Food` (Dinh dưỡng lành mạnh) $\rightarrow$ *Vẫn còn quá nhiều kênh lớn.*
-  - **Tầng 3 (Micro-niche cắn view):** `Cramps (Chuột rút bắp chân / ngón chân)` $\rightarrow$ **ĐÂY LÀ ĐIỂM VÀNG!** Nhu cầu người xem tìm kiếm giải pháp cấp bách cực lớn, đối thủ lớn ít tập trung làm chuyên sâu.
+  - **Tầng 1 (Chủ đề lớn):** `Health` (Sức khỏe) → *Cạnh tranh cực cao, không thể vào.*
+  - **Tầng 2 (Ngách con):** `Nutrition / Healthy Food` (Dinh dưỡng lành mạnh) → *Vẫn còn quá nhiều kênh lớn.*
+  - **Tầng 3 (Micro-niche cắn view):** `Cramps (Chuột rút bắp chân / ngón chân)` → **ĐÂY LÀ ĐIỂM VÀNG!** Nhu cầu người xem tìm kiếm giải pháp cấp bách cực lớn, đối thủ lớn ít tập trung làm chuyên sâu.
 
 ---
 
@@ -35,7 +35,7 @@
 ### Bước 3: Thẩm định Outlier trên YouTube
 - Tìm từ khóa trên thanh tìm kiếm YouTube, bật bộ lọc: `Ngày tải lên: Tháng này / Tuần này`, `Thời lượng: Video dài (> 4 phút)`.
 - Quan sát tỉ lệ giữa **Lượt xem video** và **Số lượng đăng ký (Subscribers)**:
-  - Nếu một kênh chỉ có vài nghìn sub hoặc vài chục video mà có video đạt **vài trăm nghìn đến triệu view** $\rightarrow$ Đây chính là video đột biến (Outlier), chứng minh thuật toán YouTube đang ưu ái đẩy đề xuất cho chủ đề này!
+  - Nếu một kênh chỉ có vài nghìn sub hoặc vài chục video mà có video đạt **vài trăm nghìn đến triệu view** → Đây chính là video đột biến (Outlier), chứng minh thuật toán YouTube đang ưu ái đẩy đề xuất cho chủ đề này!
 
 ---
 

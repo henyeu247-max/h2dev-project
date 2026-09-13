@@ -12,7 +12,7 @@
 ## 1. NGUYÊN LÝ HOẠT ĐỘNG CỦA BỘ "PROMPT MASTER"
 
 Bộ Prompt Master (được đính kèm trong file `1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA.txt`) giải quyết bài toán lớn nhất của người làm YouTube Faceless:
-- **Nỗi đau cũ:** Dùng Google Dịch kịch bản đối thủ khiến câu từ bị thô cứng, ngô nghê, mất hết ngữ điệu và nhịp thở tự nhiên của ngôn ngữ bản xứ $\rightarrow$ Khán giả nghe 10 giây đầu là bấm thoát $\rightarrow$ Video bị bóp đề xuất.
+- **Nỗi đau cũ:** Dùng Google Dịch kịch bản đối thủ khiến câu từ bị thô cứng, ngô nghê, mất hết ngữ điệu và nhịp thở tự nhiên của ngôn ngữ bản xứ → Khán giả nghe 10 giây đầu là bấm thoát → Video bị bóp đề xuất.
 - **Giải pháp Prompt Master:** Đóng vai trò như một **Biên kịch gia bản địa kỳ cựu (Native Scriptwriter)**:
   - Phân tích cấu trúc nút thắt kịch bản gốc.
   - Tự động thay thế các thành ngữ, tục ngữ, cách xưng hô và bối cảnh sinh hoạt cho khớp 100% với văn hóa thị trường đích.

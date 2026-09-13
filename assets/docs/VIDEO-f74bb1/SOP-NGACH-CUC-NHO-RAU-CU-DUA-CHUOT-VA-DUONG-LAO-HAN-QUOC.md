@@ -42,4 +42,4 @@ Trong bài giảng (phút 00:20), tác giả mở trang học tập H2Dev và nh
 ## 3. CHECKLIST SẢN XUẤT THUMBNAIL NGÁCH DƯA CHUỘT
 - Hình ảnh quả dưa chuột xanh mướt cắt lát giọt nước đọng.
 - Bát dưa chuột ngâm giấm bên cạnh người già vui cười khỏe mạnh.
-- Chữ lớn: `MỖI NGÀY 1 QUẢ DƯA CHUỘT` $\rightarrow$ `ĐƯỜNG HUYẾT VỀ ỔN ĐỊNH` $\rightarrow$ `THẦN DƯỢC RẺ TIỀN!`.
+- Chữ lớn: `MỖI NGÀY 1 QUẢ DƯA CHUỘT` → `ĐƯỜNG HUYẾT VỀ ỔN ĐỊNH` → `THẦN DƯỢC RẺ TIỀN!`.

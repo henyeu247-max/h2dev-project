@@ -21,9 +21,9 @@
 ### 1.2. Chiến Lược Nhân Bản Tam Giác (Nhật — Hàn — Việt)
 - Không cần tốn thời gian sáng tạo kịch bản từ con số 0.
 - **Công thức xoay vòng nội dung:**
-  1. Kịch bản nổ view tại Nhật $\rightarrow$ Dịch và bản địa hóa sang Hàn Quốc.
-  2. Kịch bản nổ view tại Hàn $\rightarrow$ Dịch và bản địa hóa sang Nhật Bản.
-  3. Lấy kịch bản ăn khách của cả hai thị trường $\rightarrow$ Đem về thị trường Việt Nam sản xuất.
+  1. Kịch bản nổ view tại Nhật → Dịch và bản địa hóa sang Hàn Quốc.
+  2. Kịch bản nổ view tại Hàn → Dịch và bản địa hóa sang Nhật Bản.
+  3. Lấy kịch bản ăn khách của cả hai thị trường → Đem về thị trường Việt Nam sản xuất.
 - Đây là chiến lược cốt lõi giúp kênh không bao giờ cạn kịch bản và giảm thiểu tối đa rủi ro thất bại.
 
 ---
@@ -32,10 +32,10 @@
 
 | Kênh đối thủ | Thị trường | Quy mô & Chỉ số | Hình thức thể hiện | Đánh giá & Rút ra bài học |
 | :--- | :---: | :--- | :--- | :--- |
-| **`@涙のひと駅`**<br>(Một ga tàu nước mắt) | 🇯🇵 Nhật Bản | 11.4K sub • Kênh lập T5, video đầu 2 tháng trước.<br>Video mới: **168.000 view / 22h**. | Video cảnh ga tàu tĩnh + phụ đề chạy mượt mà. | Kênh có quảng cáo (bật YPP). Nội dung cảm động nhẹ nhàng, kích thích tò mò cao nhưng không toxic. |
-| **`@사연만남1짱`**<br>(Tâm sự đời sống số 1) | 🇰🇷 Hàn Quốc | 22.1K sub • 85 video.<br>Video 1 ngày: **230.000 view**.<br>Có nút **Hội viên (Join)**. | **Tự lấy điện thoại quay cận cảnh bàn tay gõ phím** làm video nền lặp lại. | **BÀI HỌC VÀNG:** Source tự quay 100%, sống cực bền (>4 tháng), né triệt để 100% lỗi Reused Content của YouTube. |
-| **`@simbot2`**<br>(Tiếng lòng tuổi già) | 🇰🇷 Hàn Quốc | 27.4K sub • 20 video • **4.5M views tổng**.<br>Video 2 ngày: 419K view; 5 ngày: 595K view. | Dựng bằng **100% ảnh tạo từ AI** (người bà ngồi công viên) + sóng âm. | **CẢNH BÁO ĐỎ:** Tác giả nhấn mạnh đây là sai lầm nguy hiểm. Rất dễ bị YouTube quét lỗi Inauthentic AI Content, tắt kiếm tiền hoặc bay kênh. |
-| **`@元気な老後-t5d`**<br>(Tuổi già khỏe mạnh) | 🇯🇵 Nhật Bản | Kênh mới, chỉ **19 video** • 2.42K sub.<br>Video luyện trí não: **81.000 view / 11 ngày** (gấp 33 lần sub). | Avatar chuột hamster mặc áo blouse trắng, video sức khỏe ngắn gọn. | Mỏ vàng đào từ khóa ngách: Dùng tab Phổ biến lọc ra 2 video cao view nhất để lấy cụm từ khóa tiếng Nhật đắt giá. |
+| **`@涙のひと駅`** (Một ga tàu nước mắt) | 🇯🇵 Nhật Bản | 11.4K sub — Kênh lập T5, video đầu 2 tháng trước. Video mới: **168.000 view / 22h**. | Video cảnh ga tàu tĩnh + phụ đề chạy mượt mà. | Kênh có quảng cáo (bật YPP). Nội dung cảm động nhẹ nhàng, kích thích tò mò cao nhưng không toxic. |
+| **`@사연만남1짱`** (Tâm sự đời sống số 1) | 🇰🇷 Hàn Quốc | 22.1K sub — 85 video. Video 1 ngày: **230.000 view** (có nút **Hội viên Join**). | **Tự lấy điện thoại quay cận cảnh bàn tay gõ phím** làm video nền lặp lại. | **BÀI HỌC VÀNG:** Source tự quay 100%, sống cực bền (>4 tháng), né triệt để 100% lỗi Reused Content của YouTube. |
+| **`@simbot2`** (Tiếng lòng tuổi già) | 🇰🇷 Hàn Quốc | 27.4K sub — 20 video — **4.5M views tổng** (Video 2 ngày: 419K view; 5 ngày: 595K view). | Dựng bằng **100% ảnh tạo từ AI** (người bà ngồi công viên) + sóng âm. | **CẢNH BÁO ĐỎ:** Tác giả nhấn mạnh đây là sai lầm nguy hiểm. Rất dễ bị YouTube quét lỗi Inauthentic AI Content, tắt kiếm tiền hoặc bay kênh. |
+| **`@元気な老後-t5d`** (Tuổi già khỏe mạnh) | 🇯🇵 Nhật Bản | Kênh mới, chỉ **19 video** — 2.42K sub (Video luyện trí não: **81.000 view / 11 ngày**, gấp 33 lần sub). | Avatar chuột hamster mặc áo blouse trắng, video sức khỏe ngắn gọn. | Mỏ vàng đào từ khóa ngách: Dùng tab Phổ biến lọc ra 2 video cao view nhất để lấy cụm từ khóa tiếng Nhật đắt giá. |
 
 ---
 
@@ -58,7 +58,7 @@ Từ phân tích kênh `@元気な老後-t5d`, tác giả hướng dẫn phươn
 1. **Bước 1 — Săn cốt truyện & Lọc từ khóa:**
    - Lấy kịch bản từ các video outlier của kênh Nhật/Hàn, dịch và phân tích cấu trúc kịch bản.
 2. **Bước 2 — Bản địa hóa văn hóa (Localization):**
-   - Giữ nguyên cấu trúc: Hook nghịch lý (0-15s) $\rightarrow$ Biến cố gia đình (3-5 phút) $\rightarrow$ Đỉnh điểm day dứt $\rightarrow$ Bước ngoặt nhân văn $\rightarrow$ Lời đọng lại.
+   - Giữ nguyên cấu trúc: Hook nghịch lý (0-15s) → Biến cố gia đình (3-5 phút) → Đỉnh điểm day dứt → Bước ngoặt nhân văn → Lời đọng lại.
    - Thay đổi bối cảnh, tên nhân vật cho phù hợp thị trường đích (Việt, Hàn hoặc Nhật).
 3. **Bước 3 — Tạo giọng đọc AI truyền cảm:**
    - Sử dụng giọng đọc AI trầm ấm, tốc độ 0.9x - 0.95x, kết hợp nhạc nền piano, lofi hoặc tiếng mưa rơi (White Noise).

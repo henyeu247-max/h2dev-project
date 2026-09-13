@@ -899,7 +899,9 @@ function renderMarkdownDoc(md) {
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:underline">$1</a>')
       .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
       .replace(/\*([^*]+)\*/g, '<em class="text-gray-300">$1</em>')
-      .replace(/`([^`]+)`/g, '<code class="px-1.5 py-0.5 rounded bg-ink-800 border border-ink-600 text-amber-300 font-mono text-xs">$1</code>');
+      .replace(/`([^`]+)`/g, '<code class="px-1.5 py-0.5 rounded bg-ink-800 border border-ink-600 text-amber-300 font-mono text-xs">$1</code>')
+      .replace(/&lt;br\s*\/?&gt;/gi, '<br>')
+      .replace(/\$\\rightarrow\$|\\rightarrow/g, '→');
   }
 
   for (let line of lines) {

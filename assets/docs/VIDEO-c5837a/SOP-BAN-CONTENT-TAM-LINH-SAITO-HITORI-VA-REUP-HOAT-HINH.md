@@ -17,11 +17,11 @@
 - **Hiện tượng bùng nổ view (phút 00:20):**
   - Video dài từ 20 đến 30 phút.
   - Tốc độ xem kinh khủng:
-    + *"Chỉ cần làm điều này trong phòng ngủ trước khi ngủ, kim vận bùng nổ"* $\rightarrow$ 2.2K view sau 22 giờ.
-    + *"Người đặt cây trầu bà ở vị trí này chắc chắn thành đại phú"* $\rightarrow$ 27K view sau 1 ngày (370 VPH).
-    + *"Xả thứ này vào bồn cầu, tiền bạc khổng lồ kéo đến"* $\rightarrow$ 44K view sau 2 ngày (289 VPH).
-    + *"Bỏ thứ này vào ví, tiền tài bừng tỉnh kéo về"* $\rightarrow$ 7.2K view sau 3 ngày.
-    + *"Trước ngày 2/7: Kỳ tích 68 năm có 1 lần, hành động sẽ gặp đại may mắn"* $\rightarrow$ 22K view sau 4 ngày.
+    + *"Chỉ cần làm điều này trong phòng ngủ trước khi ngủ, kim vận bùng nổ"* → 2.2K view sau 22 giờ.
+    + *"Người đặt cây trầu bà ở vị trí này chắc chắn thành đại phú"* → 27K view sau 1 ngày (370 VPH).
+    + *"Xả thứ này vào bồn cầu, tiền bạc khổng lồ kéo đến"* → 44K view sau 2 ngày (289 VPH).
+    + *"Bỏ thứ này vào ví, tiền tài bừng tỉnh kéo về"* → 7.2K view sau 3 ngày.
+    + *"Trước ngày 2/7: Kỳ tích 68 năm có 1 lần, hành động sẽ gặp đại may mắn"* → 22K view sau 4 ngày.
 - **Phong cách đồ họa đặc trưng:**
   - Hình ảnh Saito Hitori đội mũ phớt quay lưng bí ẩn trong bộ vest lịch lãm.
   - Phối màu chữ cực kỳ kích thích thị giác: Chữ trắng to viền mỏng + chữ đỏ rực rỡ trên nền đen tuyền.

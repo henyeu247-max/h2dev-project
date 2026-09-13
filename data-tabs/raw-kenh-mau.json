@@ -1,7 +1,7 @@
 {
   "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
-  "updatedAt": "2026-09-09T10:56:39.066Z",
-  "totalRecords": 83,
+  "updatedAt": "2026-09-13T17:15:00.000Z",
+  "totalRecords": 97,
   "records": [
     {
       "id": "RAW-001",
@@ -15722,6 +15722,537 @@
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
       }
+    },
+    {
+      "id": "RAW-096",
+      "fileName": "HRxYCtLaUAAlqf-.jpg",
+      "sha256": "d78b53d32ab22adb66382161025e34977c7153b6fe12ca36cdeec98e1fe0b3de",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 92200,
+        "sizeKb": "90.0",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCySIrYAsp3Y7FsE8f2bcz9w",
+        "title": "El Viejo Mexicano",
+        "handle": "@ElViejoMexicano",
+        "url": "https://www.youtube.com/channel/UCySIrYAsp3Y7FsE8f2bcz9w",
+        "subscribers": 68800,
+        "views": 19800000,
+        "videoCount": 237,
+        "country": "MX",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Tò mò Địa lý / Thị trấn nguy hiểm & Bỏ hoang",
+      "visionAnalysis": {
+        "channelName": "El Viejo Mexicano",
+        "handle": "@ElViejoMexicano",
+        "videoTitles": [
+          "12 Places in Veracruz You Should NEVER Move To (2026)",
+          "EMPTY SINALOA – Its Houses Cost $18,000 MXN But NO ONE Wants Them",
+          "Pueblos Más Peligrosos de Puebla"
+        ],
+        "mainTopic": "Khám phá các thị trấn nguy hiểm, bị bỏ hoang hoặc giá rẻ tại Mexico và các nước nói tiếng Tây Ban Nha",
+        "suggestedNiche": "Địa lý tò mò / Spanish Culture",
+        "language": "ES"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Tây Ban Nha / Mexico / Địa lý tò mò",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-097",
+      "fileName": "HR7LDkZaIAEs_ID.jpg",
+      "sha256": "d802a652b1247ae13b9cd28fb3df944344826762156dc48f9fed00210631a420",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 106992,
+        "sizeKb": "104.5",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCovs4S2LrmPMUzSbtxzm3Sw",
+        "title": "AI Historia (AI歴史ドラマ)",
+        "handle": "@AI_Historia-n5b",
+        "url": "https://www.youtube.com/channel/UCovs4S2LrmPMUzSbtxzm3Sw",
+        "subscribers": 46200,
+        "views": 5790000,
+        "videoCount": 28,
+        "country": "JP",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Phim Kịch Lịch Sử Chiến Quốc AI",
+      "visionAnalysis": {
+        "channelName": "AI Historia (AI歴史ドラマ)",
+        "handle": "@AI_Historia-n5b",
+        "videoTitles": [
+          "柴田勝家の最期 豊臣秀吉 VS 柴田勝家 (Trận Shizugatake)",
+          "豊臣秀吉 vs 徳川家康 (Trận Komaki Nagakute)",
+          "備中高松城の戦い 水攻めの12日間"
+        ],
+        "mainTopic": "Tái hiện các trận chiến bi tráng thời Chiến Quốc bằng phim kịch AI thời lượng dài 30–57 phút",
+        "suggestedNiche": "Lịch sử AI / Drama Chiến Quốc JP",
+        "language": "JA"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Lịch sử Nhật Bản / Kịch AI 30-57 phút",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-098",
+      "fileName": "HRw7uwnbsAEVXgH.jpg",
+      "sha256": "030464d1235ab6b70e48604d30fc2445e3ef204853cc9e20ff8ddb2066233200",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 145252,
+        "sizeKb": "141.8",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCvA0jwPl5qjhsHQOWuZYe-g",
+        "title": "他人の人生【タニジン】",
+        "handle": "@taninnojinsei",
+        "url": "https://www.youtube.com/channel/UCvA0jwPl5qjhsHQOWuZYe-g",
+        "subscribers": 6230,
+        "views": 3800000,
+        "videoCount": 15,
+        "country": "JP",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Manga Đời Thực / Nghề Nghiệp & Xã Hội Nhật Bản",
+      "visionAnalysis": {
+        "channelName": "他人の人生【タニジン】",
+        "handle": "@taninnojinsei",
+        "videoTitles": [
+          "【漫画】脱サラしてラーメン屋になった45歳独身男性の生活",
+          "【漫画】262万円の中古キャンピングカーで生活する人のリアルな実態",
+          "【漫画】自動販売機の補充ドライバーになるとどうなる？48歳"
+        ],
+        "mainTopic": "Bóc tách cuộc sống mưu sinh, tâm sự và nỗi đau đời thực của các ngành nghề bình dân Nhật Bản qua nét vẽ manga",
+        "suggestedNiche": "Manga đời thực / Câu chuyện xã hội",
+        "language": "JA"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Manga thực tế / Xã hội Nhật",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-099",
+      "fileName": "HRvu352aYAAG5nc.jpg",
+      "sha256": "332fc6aeb2a766b841faab7c3db7d0d079d22c319def6f0ac4abde3344cbb789",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 80827,
+        "sizeKb": "78.9",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UC14aFPpH4jF3FfRQZojCfeg",
+        "title": "Words of Wisdom",
+        "handle": "@wordsofwisdomstories",
+        "url": "https://www.youtube.com/channel/UC14aFPpH4jF3FfRQZojCfeg",
+        "subscribers": 1180000,
+        "views": 120000000,
+        "videoCount": 481,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Triết lý Phật giáo / Câu chuyện truyền cảm hứng & Chữa lành",
+      "visionAnalysis": {
+        "channelName": "Words of Wisdom",
+        "handle": "@wordsofwisdomstories",
+        "videoTitles": [
+          "Whenever you feel sad in life always remember | Buddha Quotes",
+          "WHENEVER YOU FEEL SAD, JUST LISTEN TO THIS STORY | Short motivational story of Raven",
+          "HOW TO CONTROL THOUGHTS OF YOUR MIND | TRY THIS TRICK | Buddhist story on meditation"
+        ],
+        "mainTopic": "Triết lý sống của Đức Phật, truyện ngụ ngôn cổ xưa và phương pháp tĩnh tâm kiểm soát tâm trí",
+        "suggestedNiche": "Triết lý Phật giáo / Chữa lành tâm hồn",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Phật pháp / Động lực / Chữa lành",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-100",
+      "fileName": "HSCa0JcaQAAkJoB.jpg",
+      "sha256": "9ffdb6eacd62d276fcd76edb876f7f136a3dd4e36587b7b91dc1eab6de630609",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 63210,
+        "sizeKb": "61.7",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCfNtnsd5fokdhruktR4Zn4w",
+        "title": "Hidden Genius",
+        "handle": "@HiddenGenius44",
+        "url": "https://www.youtube.com/channel/UCfNtnsd5fokdhruktR4Zn4w",
+        "subscribers": 11500,
+        "views": 1800000,
+        "videoCount": 29,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Lịch Sử Phát Minh & Đằng Sau Các Kỳ Tích Công Nghệ",
+      "visionAnalysis": {
+        "channelName": "Hidden Genius",
+        "handle": "@HiddenGenius44",
+        "videoTitles": [
+          "How a Fearless Engineer Built the World's First Car",
+          "How a Man Risked Everything to Build the First Steam Train",
+          "How Humans Learned to Capture Light Forever (Invention of Camera)"
+        ],
+        "mainTopic": "Những câu chuyện ly kỳ về sự hy sinh và thiên tài của các nhà phát minh tạo ra thế giới hiện đại",
+        "suggestedNiche": "Lịch sử công nghệ / Phát minh vĩ đại",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Lịch sử phát minh / Kỹ sư mạo hiểm",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-101",
+      "fileName": "HR90KsFbcAAHCBb.jpg",
+      "sha256": "27a6f4b7f8ee6fa4b547829b4356cbee4afe9deb88b574720ad998cce423c28e",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 68241,
+        "sizeKb": "66.6",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCrMoEl093urDOa8AnyJSWWA",
+        "title": "Solo Survival -71°C",
+        "handle": "@SoloSurvival_91",
+        "url": "https://www.youtube.com/channel/UCrMoEl093urDOa8AnyJSWWA",
+        "subscribers": 11200,
+        "views": 2500000,
+        "videoCount": 70,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Sinh Tồn Băng Giá & Cải Tạo Nhà Hoang ASMR",
+      "visionAnalysis": {
+        "channelName": "Solo Survival -71°C",
+        "handle": "@SoloSurvival_91",
+        "videoTitles": [
+          "We Rescued a Single Mother and 3 Children From a Storm - Then Built a Warm Home",
+          "An abandoned castle transformed into a luxurious space. ASRM home renovation"
+        ],
+        "mainTopic": "Sinh tồn khắc nghiệt trong bão tuyết và cải tạo các công trình bỏ hoang thành không gian sống tiện nghi",
+        "suggestedNiche": "Sinh tồn cực hạn / ASMR",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Sinh tồn / Cải tạo nhà hoang / ASMR",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-102",
+      "fileName": "HR90NWOXsAYZcL-.jpg",
+      "sha256": "f32aaafa82a8da0f94003f7eb328003448e3a3d2c5f71aa265164b1ea2cd5369",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 68850,
+        "sizeKb": "67.2",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UC4Lu5YL8jLV_WULVSl1ZS4w",
+        "title": "SurvivalStory",
+        "handle": "@SurvivalStory",
+        "url": "https://www.youtube.com/channel/UC4Lu5YL8jLV_WULVSl1ZS4w",
+        "subscribers": 2750,
+        "views": 850000,
+        "videoCount": 100,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Sinh Tồn & Phục Hồi Sau Thảm Họa Tự Nhiên",
+      "visionAnalysis": {
+        "channelName": "SurvivalStory",
+        "handle": "@SurvivalStory",
+        "videoTitles": [
+          "After the Tornado Destroyed Their Home, We Gave This Family a New Beginning",
+          "She Found a Homeless Family Living in a Tiny Hut... Then Built Them a Dream Home"
+        ],
+        "mainTopic": "Những câu chuyện vượt qua thiên tai bão lốc và hành trình giúp đỡ người vô gia cư tái thiết cuộc sống",
+        "suggestedNiche": "Sinh tồn nhân văn / Tái thiết cuộc sống",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Sinh tồn / Thảm họa tự nhiên / Cứu trợ",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-103",
+      "fileName": "790147181_122137383825353870_4279095091548675246_n.jpg",
+      "sha256": "6f4b669247489aa36b7e1aee2b85033f3ba13b51286c579fd34ab44ba7394a84",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 289738,
+        "sizeKb": "282.9",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCBkDZBfMUlQiasKTlg7bHPg",
+        "title": "Food code",
+        "handle": "@Foodcode1",
+        "url": "https://www.youtube.com/channel/UCBkDZBfMUlQiasKTlg7bHPg",
+        "subscribers": 14700,
+        "views": 1200000,
+        "videoCount": 35,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Khoa Học Thực Phẩm & Tác Động Cơ Thể (Food Shock)",
+      "visionAnalysis": {
+        "channelName": "Food code",
+        "handle": "@Foodcode1",
+        "videoTitles": [
+          "Onion Shock: This Is What Raw Onion REALLY Does To Your Blood",
+          "Garlic Shock: This Is What Raw Garlic REALLY Does To Your Blood",
+          "Beet Shock: This Is What Raw Beet REALLY Does To Your Blood Pressure"
+        ],
+        "mainTopic": "Tác động sinh học thực sự của hành tây, tỏi và củ dền đối với hệ tuần hoàn máu và huyết áp",
+        "suggestedNiche": "Dinh dưỡng sinh học / Cơ thể học",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Sức khỏe / Dinh dưỡng / Food Shock",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-104",
+      "fileName": "790425893_122137383753353870_5853096616468246110_n.jpg",
+      "sha256": "e7d905c355bc3921639d52f1e97df2a4e3d7d00409fb87717881bb588aafb24b",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 238923,
+        "sizeKb": "233.3",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCBkDZBfMUlQiasKTlg7bHPg",
+        "title": "Food code",
+        "handle": "@Foodcode1",
+        "url": "https://www.youtube.com/channel/UCBkDZBfMUlQiasKTlg7bHPg",
+        "subscribers": 14700,
+        "views": 1200000,
+        "videoCount": 35,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Khoa Học Thực Phẩm & Sinh Học Con Người",
+      "visionAnalysis": {
+        "channelName": "Food code",
+        "handle": "@Foodcode1",
+        "videoTitles": [
+          "Banana Formula: What Muscles REALLY Do",
+          "Mushroom Shock: This Is What Mushrooms REALLY Do To Your Immune System",
+          "Dark Chocolate: What REALLY Happens In Your Brain"
+        ],
+        "mainTopic": "Cơ chế hấp thụ khoáng chất của chuối, nấm và chocolate đen đối với cơ bắp, miễn dịch và não bộ",
+        "suggestedNiche": "Dinh dưỡng sinh học / Cơ thể học",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Sức khỏe / Dinh dưỡng / Food Shock",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-105",
+      "fileName": "790593445_122137383765353870_1309104256310644486_n.jpg",
+      "sha256": "a4f5295afeea6e3ea35c4a222dfe2bc1274cf1c6fa10dd605a3d5eb534189591",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 276242,
+        "sizeKb": "269.8",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCBkDZBfMUlQiasKTlg7bHPg",
+        "title": "Food code",
+        "handle": "@Foodcode1",
+        "url": "https://www.youtube.com/channel/UCBkDZBfMUlQiasKTlg7bHPg",
+        "subscribers": 14700,
+        "views": 1200000,
+        "videoCount": 35,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Khoa Học Thực Phẩm & Tác Động Tế Bào",
+      "visionAnalysis": {
+        "channelName": "Food code",
+        "handle": "@Foodcode1",
+        "videoTitles": [
+          "Broccoli Shock: This Is What Broccoli Sprouts REALLY Do To Your DNA",
+          "Yogurt Shock: This Is What Greek Yogurt REALLY Does To Your Gut",
+          "Walnut Shock: This Is What Walnuts REALLY Do To Your Brain"
+        ],
+        "mainTopic": "Sức mạnh chống oxy hóa và sửa chữa tế bào của súp lơ xanh, sữa chua Hy Lạp và quả óc chó",
+        "suggestedNiche": "Dinh dưỡng sinh học / Tế bào học",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Sức khỏe / Dinh dưỡng / Food Shock",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-106",
+      "fileName": "799280044_122139170829353870_1987025522923913918_n.jpg",
+      "sha256": "cb0a78c8f8fa2d5011df13d8dd9e7dd31411e6c4f6b29e860d05d4a1bd921bc8",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 195053,
+        "sizeKb": "190.5",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCy6-V0dTuvNB_uFXpE5K5uQ",
+        "title": "BeyondTheBlue",
+        "handle": "@OfficialBeyondTheBlue",
+        "url": "https://www.youtube.com/channel/UCy6-V0dTuvNB_uFXpE5K5uQ",
+        "subscribers": 212000,
+        "views": 35000000,
+        "videoCount": 42,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Sinh Vật Biển Sâu & Tiến Hóa Dị Thường",
+      "visionAnalysis": {
+        "channelName": "BeyondTheBlue",
+        "handle": "@OfficialBeyondTheBlue",
+        "videoTitles": [
+          "Why Animals Are So Terrifying In Polar Oceans",
+          "Why Orcas are Terrified of Walruses",
+          "Why Prehistoric Oceans get Deadlier the Further Back You Go"
+        ],
+        "mainTopic": "Giải mã các hiện tượng sinh vật dị thường tại vùng biển cực băng giá và đại dương thời tiền sử",
+        "suggestedNiche": "Bí ẩn đại dương / Quái vật tiền sử",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Động vật hoang dã / Sinh vật biển / Tiến hóa",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-107",
+      "fileName": "799362904_122139170841353870_7763184755104596125_n.jpg",
+      "sha256": "6f70bc7a8083025ea848f34b3cc6610f36da9a075bacdab993a5c94b9e428d1b",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 200260,
+        "sizeKb": "195.6",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCy6-V0dTuvNB_uFXpE5K5uQ",
+        "title": "BeyondTheBlue",
+        "handle": "@OfficialBeyondTheBlue",
+        "url": "https://www.youtube.com/channel/UCy6-V0dTuvNB_uFXpE5K5uQ",
+        "subscribers": 212000,
+        "views": 35000000,
+        "videoCount": 42,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Bí Ẩn Đại Dương & Quái Vật Biển Sâu",
+      "visionAnalysis": {
+        "channelName": "BeyondTheBlue",
+        "handle": "@OfficialBeyondTheBlue",
+        "videoTitles": [
+          "Deep Sea Giants Are Everywhere. We've Been Searching Wrong",
+          "Why The Deadliest Predator in the Ocean Refuses to Kill Us",
+          "Why The Entire Ocean is Terrified of Pilot Whales"
+        ],
+        "mainTopic": "Khám phá quái vật biển sâu khổng lồ và hành vi kỳ lạ của các loài thú săn mồi đỉnh chóp đại dương",
+        "suggestedNiche": "Sinh vật biển sâu / Đại dương bí ẩn",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Động vật hoang dã / Sinh vật biển / Tiến hóa",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-108",
+      "fileName": "806894131_122140765839353870_3212373414179926352_n.jpg",
+      "sha256": "d10e16b9e276709dd4b111138cbe39c127227ef80cabfef37f40baaf59d18839",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 155073,
+        "sizeKb": "151.4",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCNXvmGafmrtJ7VPSqjRRbwg",
+        "title": "Scary Interesting",
+        "handle": "@ScaryInteresting",
+        "url": "https://www.youtube.com/channel/UCNXvmGafmrtJ7VPSqjRRbwg",
+        "subscribers": 2020000,
+        "views": 350000000,
+        "videoCount": 240,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Dark History / Disturbing Stories / Thảm Họa Sống Sót",
+      "visionAnalysis": {
+        "channelName": "Scary Interesting",
+        "handle": "@ScaryInteresting",
+        "videoTitles": [
+          "The Russian Cannibal Island",
+          "The Most Dangerous Ocean Crossing on Earth",
+          "A Collection of Disturbing Stories",
+          "Alaska's Hidden Deathtrap"
+        ],
+        "mainTopic": "Những bi kịch sống sót kinh hoàng, thảm họa thám hiểm và hòn đảo ăn thịt người có thật trong lịch sử",
+        "suggestedNiche": "Lịch sử đen tối / Sinh tồn thảm họa",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Lịch sử đen tối / Bí ẩn chưa có lời giải",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
+    },
+    {
+      "id": "RAW-109",
+      "fileName": "807184965_122140765851353870_7519390811055047521_n.jpg",
+      "sha256": "f9d46e1d03c5e0049e5fc3be9c793abe987390f4254d16f045a67091430f9f95",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 176874,
+        "sizeKb": "172.7",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCNXvmGafmrtJ7VPSqjRRbwg",
+        "title": "Scary Interesting",
+        "handle": "@ScaryInteresting",
+        "url": "https://www.youtube.com/channel/UCNXvmGafmrtJ7VPSqjRRbwg",
+        "subscribers": 2020000,
+        "views": 350000000,
+        "videoCount": 240,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+      },
+      "niche": "Dark History / Ngôi Nhà Bí Ẩn / Địa Điểm Kinh Dị",
+      "visionAnalysis": {
+        "channelName": "Scary Interesting",
+        "handle": "@ScaryInteresting",
+        "videoTitles": [
+          "What Happened in This House Still Haunts Japan",
+          "The Horrifying Dungeons of Elmina Castle",
+          "What Happened in This Basement Still Haunts Russia"
+        ],
+        "mainTopic": "Những địa điểm lịch sử rùng rợn, ngôi nhà bị nguyền rủa tại Nhật Bản và ngục tối pháo đài Elmina",
+        "suggestedNiche": "Địa điểm bí ẩn / Lịch sử kinh dị",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Lịch sử đen tối / Bí ẩn chưa có lời giải",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026"
     }
   ],
   "summary": {

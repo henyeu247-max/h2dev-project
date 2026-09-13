@@ -1,3 +1,18 @@
+## 2026-09-13 — Chuẩn Hóa Windows Boot-Time Services (NSSM) & Triển Khai Production Mission Control
+
+- **Cài Đặt Thành Công Windows Service (services.msc) Tự Động Chạy Ngay Khi Bật Máy (Kể Cả Chưa Đăng Nhập):**
+  - Đăng ký `H2DEV_Service` (Cổng 8899 - `D:\YTB\H2DEV-Project\server.js`) và `MCP_Pool_Service` (Cổng 3988 - `D:\Mcp-Pool-Vps\server.js`) thành 2 dịch vụ Windows chính thức qua NSSM.
+  - Chế độ khởi động: `SERVICE_AUTO_START` — máy tính vừa cắm điện bật nguồn là kernel tự động kích hoạt 2 server ngay lập tức, dù chưa có ai đăng nhập vào tài khoản Windows.
+  - Tự động restart nếu bị crash; ghi log chuẩn mực ra `logs/server.log` và `error.log`.
+  - Dọn sạch 100% WorkBuddy background tasks, giao diện app hoàn toàn không còn banner task tạm thời.
+  - Nghiệm thu thực tế: Cả 2 service đều đạt trạng thái `STATE: 4 RUNNING`, TCP 8899 LISTENING (HTTP 200 OK), TCP 3988 LISTENING (168 MCP tools loaded).
+- **Triển Khai Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control):**
+  - Tích hợp khối Bento Grid 2 cột ưu tiên ở đầu modal cho các kênh chuẩn (`RAW-021`, `RAW-025`).
+  - **Chỉ Thị Thị Giác (Visual Directive):** Template biến thể theo thị trường (`{{STYLE_SHORT}}`, `{{STYLE}}`, `{{MASCOT}}`, `{{NEGATIVE}}`), ống kính 35mm/50mm, quay cầm tay, khử triệt để rác CGI/AI.
+  - **Khuôn Đúc Kịch Bản (Script Blueprint):** Tích hợp trọn vẹn 1.883 ký tự Full Master Scriptwriting Prompt chuẩn `north-effect.md` (tỷ lệ 70% cốt lõi + 30% mới, chia 10–15 Parts 1000–1100 từ, điều khiển token bằng lệnh `Stop` & `CONTINUE`).
+  - Cụm nút hành động: Nút `📜 Kịch Bản Gốc` mở transcript đối thủ, nút `📄 SOP North Effect ↗` mở file Markdown gốc (HTTP 200 OK), nút `📋 Copy Full Master Prompt`.
+  - **Bao Bì CTR & Lộ Trình 5 Bước Ra Quân:** Title Formula bão view, Thumbnail 3 điểm vàng, Clean Base Image Prompt và 5 bước khởi động kênh chuẩn Zoom A–Z Masterclass.
+
 ## 2026-09-13 — Nâng Cấp Toàn Diện: Trình Phát Quick Cinema Đồng Bộ Cho 100% Top Videos Live (Danh Sách Kênh Nổi Bật)
 
 - **Đồng Bộ Nút Xem Video Cho 100% Video Trong Danh Sách Top Videos Live:**

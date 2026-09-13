@@ -23,6 +23,13 @@
     "targetAudience": "Người cao tuổi Nhật Bản (Senior 60-80 tuổi) và người lo lắng tuổi xế chiều",
     "actualPaceWPM": "29 từ/phút (Chậm rãi, nhịp điệu thư thả, khoảng lặng sau mỗi câu dài để người lớn tuổi kịp tiếp nhận)"
   },
+  "promptingStudio": {
+    "scene": "A serene, quiet Japanese tatami living room in the late afternoon. Intimate room acoustics with gentle ambient warmth, soft paper screen reflections, and zero metallic echo.",
+    "sampleContext": "Empathetic, reflective, and unhurried. Tone is soft-spoken, respectful, nostalgic, and deeply comforting with slow, considerate pacing for elderly listeners.",
+    "speakerTag": "Speaker 1 - Gentle Japanese Narrator (Mayumi / Takumi)",
+    "sampleSpeechBlock": "歳を重ねるにつれて、誰にも言えない悩みや不安が増えていくものです。でも、決して一人で抱え込まないでください。あなたのこれまでの歩みは、何一つ間違っていません。今日から少しずつ、心を軽くしていきましょう。",
+    "combinedPromptTemplate": "Scene: A serene, quiet Japanese tatami living room in the late afternoon. Intimate room acoustics with gentle ambient warmth, soft paper screen reflections, and zero metallic echo.\nSample Context: Empathetic, reflective, and unhurried. Tone is soft-spoken, respectful, nostalgic, and deeply comforting with slow, considerate pacing for elderly listeners.\n\nSpeaker 1 - Gentle Japanese Narrator (Mayumi / Takumi):\n歳を重ねるにつれて、誰にも言えない悩みや不安が増えていくものです。でも、決して一人で抱え込まないでください。あなたのこれまでの歩みは、何一つ間違っていません。今日から少しずつ、心を軽くしていきましょう。"
+  },
   "elevenlabsCloningConfiguration": {
     "recommendedModel": "ElevenLabs Multilingual v2",
     "primaryVoiceMatch": "Mayumi (Gentle Japanese Female Narrative)",

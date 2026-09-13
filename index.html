@@ -1522,7 +1522,7 @@
             <button type="button" class="btn-quick-demo w-full mt-1.5 py-1.5 px-2 bg-rose-950/40 hover:bg-rose-900/60 border border-rose-500/40 hover:border-rose-400 text-rose-200 hover:text-white rounded-xl text-[11px] font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer" onclick="event.stopPropagation(); window.openQuickVideoModal('${esc(r.featuredDemoVideo.videoId)}', '${esc(r.featuredDemoVideo.title)}', '${esc((ch.title || r.id).trim())}')">
               <span>🎬 Xem Demo Tuyến Mới Nhất</span> <span class="text-xs font-bold text-rose-400">▶</span>
             </button>` : ''}
-            <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-1.5 px-2 bg-gradient-to-r from-blue-900/60 to-indigo-900/60 hover:from-blue-800/80 hover:to-indigo-800/80 border border-blue-500/50 hover:border-blue-400 text-blue-200 hover:text-white rounded-xl text-[11px] font-bold flex items-center justify-center gap-1.5 transition cursor-pointer shadow-lg shadow-blue-950/50" data-raw-id="${esc(r.id)}">
+            <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-1.5 px-2 bg-gradient-to-r from-blue-900/60 to-indigo-900/60 hover:from-blue-800/80 hover:to-indigo-800/80 border border-blue-500/50 hover:border-blue-400 text-blue-200 hover:text-white rounded-xl text-[11px] font-bold flex items-center justify-center gap-1.5 transition cursor-pointer shadow-lg shadow-blue-950/50" data-raw-id="${esc(r.id)}" data-jump="mission-control">
               <span>⚡ Xem Prompts & Vũ Khí Tác Chiến</span> →
             </button>
             <button type="button" class="btn-open-raw-deep w-full mt-1 py-1.5 px-2.5 bg-brand-900/30 hover:bg-brand-800/50 border border-brand-500/30 hover:border-brand-400 text-brand-300 hover:text-white rounded-xl text-[11px] font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer" data-raw-id="${esc(r.id)}">
@@ -1827,7 +1827,8 @@
         btn.onclick = (e) => {
           e.stopPropagation();
           const rid = btn.getAttribute('data-raw-id');
-          if (window.openRawDeepModal) openRawDeepModal(rid);
+          const jump = btn.getAttribute('data-jump') || '';
+          if (window.openRawDeepModal) openRawDeepModal(rid, jump);
         };
       });
       const fn = document.getElementById('fniche');
@@ -1973,13 +1974,14 @@
         const btn = e.target.closest('.btn-open-raw-deep');
         if (btn) {
           const rawId = btn.getAttribute('data-raw-id');
+          const jump = btn.getAttribute('data-jump') || '';
           if (window.openRawDeepModal) {
-            window.openRawDeepModal(rawId);
+            window.openRawDeepModal(rawId, jump);
           }
         }
       });
 
-      window.openRawDeepModal = async function(rawId) {
+      window.openRawDeepModal = async function(rawId, jumpTarget) {
         let modal = document.getElementById('raw-deep-modal');
         if (!modal) {
           modal = document.createElement('div');
@@ -2206,7 +2208,7 @@
                       <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>🎨</span> Chỉ Thị Thị Giác (Visual Directive)
                       </div>
-                      <button type="button" onclick="navigator.clipboard.writeText('${esc(vd.masterVisualPrompt || vd.style || '')}').then(()=>alert('Đã copy Visual Directive Prompt!'))" style="font-size:0.72rem; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-sky-600 hover:text-white transition">📋 Copy Visual Prompt</button>
+                      <button type="button" class="btn-copy-visual-prompt" style="font-size:0.72rem; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-sky-600 hover:text-white transition">📋 Copy Visual Prompt</button>
                     </div>
 
                     <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
@@ -2229,7 +2231,7 @@
                         <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" target="_blank" rel="noopener noreferrer" style="font-size:0.7rem; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;" class="hover:bg-purple-600 hover:text-white transition">
                           <span>📄 SOP North Effect</span> ↗
                         </a>
-                        <button type="button" onclick="navigator.clipboard.writeText(decodeURIComponent('${encodeURIComponent(sb.masterScriptPrompt || '')}')).then(()=>alert('Đã copy Full Master Scriptwriting Prompt (Chuẩn North Effect 70/30)!'))" style="font-size:0.72rem; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">📋 Copy Full Master Prompt</button>
+                        <button type="button" class="btn-copy-master-prompt" style="font-size:0.72rem; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">📋 Copy Full Master Prompt</button>
                       </div>
                     </div>
 
@@ -2268,7 +2270,7 @@
                       <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>🎯</span> Bao Bì CTR (Title & Thumbnail)
                       </div>
-                      <button type="button" onclick="navigator.clipboard.writeText('${esc(pkg.cleanThumbnailPrompt || '')}').then(()=>alert('Đã copy Thumbnail Prompt Engine!'))" style="font-size:0.72rem; color:#f59e0b; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-amber-600 hover:text-white transition">📋 Copy Thumb Prompt</button>
+                      <button type="button" class="btn-copy-thumb-prompt" style="font-size:0.72rem; color:#f59e0b; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-amber-600 hover:text-white transition">📋 Copy Thumb Prompt</button>
                     </div>
 
                     <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
@@ -2723,17 +2725,77 @@
           </div>
         `;
 
+        function copyWithFallback(text, btn, successLabel, defaultLabel) {
+          function markSuccess() {
+            if (btn) {
+              btn.textContent = successLabel || '✅ Đã sao chép!';
+              setTimeout(() => { btn.textContent = defaultLabel || '📋 Sao chép'; }, 2000);
+            }
+          }
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).then(markSuccess).catch(() => fallback());
+          } else {
+            fallback();
+          }
+          function fallback() {
+            try {
+              const ta = document.createElement('textarea');
+              ta.value = text;
+              ta.style.position = 'fixed';
+              ta.style.left = '-9999px';
+              ta.style.top = '-9999px';
+              ta.setAttribute('readonly', '');
+              document.body.appendChild(ta);
+              ta.focus();
+              ta.select();
+              const ok = document.execCommand('copy');
+              document.body.removeChild(ta);
+              if (ok) markSuccess();
+              else alert('Không thể tự động sao chép. Vui lòng chọn và sao chép thủ công!');
+            } catch(e) {
+              console.error('Fallback copy error:', e);
+            }
+          }
+        }
+
+        // Bind copy buttons for Production Mission Control
+        if (productionToolkit) {
+          const tk = productionToolkit;
+          const vd = tk.visualDirective || {};
+          const sb = tk.scriptBlueprint || {};
+          const pkg = tk.packagingCTR || {};
+
+          const btnCopyMaster = modal.querySelector('.btn-copy-master-prompt');
+          if (btnCopyMaster) {
+            btnCopyMaster.onclick = (e) => {
+              e.stopPropagation();
+              copyWithFallback(sb.masterScriptPrompt || '', btnCopyMaster, '✅ Đã copy Full Master Prompt!', '📋 Copy Full Master Prompt');
+            };
+          }
+
+          const btnCopyVisual = modal.querySelector('.btn-copy-visual-prompt');
+          if (btnCopyVisual) {
+            btnCopyVisual.onclick = (e) => {
+              e.stopPropagation();
+              copyWithFallback(vd.masterVisualPrompt || vd.style || '', btnCopyVisual, '✅ Đã copy Visual Prompt!', '📋 Copy Visual Prompt');
+            };
+          }
+
+          const btnCopyThumb = modal.querySelector('.btn-copy-thumb-prompt');
+          if (btnCopyThumb) {
+            btnCopyThumb.onclick = (e) => {
+              e.stopPropagation();
+              copyWithFallback(pkg.cleanThumbnailPrompt || '', btnCopyThumb, '✅ Đã copy Thumb Prompt!', '📋 Copy Thumb Prompt');
+            };
+          }
+        }
+
         // Bind copy tags button
         const copyBtn = document.getElementById('btn-copy-raw-tags');
         if (copyBtn) {
           copyBtn.onclick = () => {
             const allTags = tags.map(t => '#' + t).join(' ');
-            navigator.clipboard.writeText(allTags).then(() => {
-              copyBtn.textContent = '✅ Đã sao chép!';
-              setTimeout(() => { copyBtn.textContent = '📋 Sao chép tất cả Tags'; }, 2000);
-            }).catch(() => {
-              alert('Đã sao chép: ' + allTags.slice(0, 100) + '...');
-            });
+            copyWithFallback(allTags, copyBtn, '✅ Đã sao chép tất cả Tags!', '📋 Sao chép tất cả Tags');
           };
         }
 
@@ -2742,30 +2804,21 @@
           const btnCopyScene = modal.querySelector('.btn-copy-scene');
           if (btnCopyScene) {
             btnCopyScene.onclick = () => {
-              navigator.clipboard.writeText(voiceProfile.promptingStudio.scene || '').then(() => {
-                btnCopyScene.textContent = '✅ Đã copy Scene!';
-                setTimeout(() => { btnCopyScene.textContent = '📋 Copy Scene'; }, 2000);
-              });
+              copyWithFallback(voiceProfile.promptingStudio.scene || '', btnCopyScene, '✅ Đã copy Scene!', '📋 Copy Scene');
             };
           }
 
           const btnCopyContext = modal.querySelector('.btn-copy-context');
           if (btnCopyContext) {
             btnCopyContext.onclick = () => {
-              navigator.clipboard.writeText(voiceProfile.promptingStudio.sampleContext || '').then(() => {
-                btnCopyContext.textContent = '✅ Đã copy Context!';
-                setTimeout(() => { btnCopyContext.textContent = '📋 Copy Context'; }, 2000);
-              });
+              copyWithFallback(voiceProfile.promptingStudio.sampleContext || '', btnCopyContext, '✅ Đã copy Context!', '📋 Copy Context');
             };
           }
 
           const btnCopySpeech = modal.querySelector('.btn-copy-speech-block');
           if (btnCopySpeech) {
             btnCopySpeech.onclick = () => {
-              navigator.clipboard.writeText(voiceProfile.promptingStudio.sampleSpeechBlock || '').then(() => {
-                btnCopySpeech.textContent = '✅ Đã copy Speech Block!';
-                setTimeout(() => { btnCopySpeech.textContent = '📋 Copy Speech Block'; }, 2000);
-              });
+              copyWithFallback(voiceProfile.promptingStudio.sampleSpeechBlock || '', btnCopySpeech, '✅ Đã copy Speech Block!', '📋 Copy Speech Block');
             };
           }
 
@@ -2774,12 +2827,18 @@
             btnCopyCombined.onclick = () => {
               const combined = voiceProfile.promptingStudio.combinedPromptTemplate || 
                 `Scene: ${voiceProfile.promptingStudio.scene}\nSample Context: ${voiceProfile.promptingStudio.sampleContext}\n\n${voiceProfile.promptingStudio.speakerTag || 'Speaker 1'}:\n${voiceProfile.promptingStudio.sampleSpeechBlock}`;
-              navigator.clipboard.writeText(combined).then(() => {
-                btnCopyCombined.textContent = '✅ Đã copy trọn bộ Prompt!';
-                setTimeout(() => { btnCopyCombined.textContent = '📋 Copy Trọn Bộ (Scene + Context + Speech)'; }, 2000);
-              });
+              copyWithFallback(combined, btnCopyCombined, '✅ Đã copy trọn bộ Prompt!', '📋 Copy Trọn Bộ (Scene + Context + Speech)');
             };
           }
+        }
+
+        if (jumpTarget === 'mission-control') {
+          setTimeout(() => {
+            const mc = modal.querySelector('#raw-mission-control') || document.getElementById('raw-mission-control');
+            if (mc) {
+              mc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 150);
         }
       };
 

@@ -39,8 +39,8 @@
   },
   "productionStack": {
     "matchingSkill": "script-forging & video-script-dissect (Bóc tách kịch bản khảo cổ học & phân cảnh điện ảnh)",
-    "sopDocPath": "assets/docs/tai-lieu/skill-wildlife-survival.md",
-    "repoPath": "pipelines/wildlife/README.md",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md",
+    "repoPath": "raw-niches/US_EverydayHistory/README.md",
     "scriptTool": "Claude 3.5 Sonnet (Chuyên sâu kịch tính hóa tư liệu lịch sử & khảo cổ học)",
     "voiceTool": "ElevenLabs Model Multilingual v2, Giọng: Liam / Brian (Trầm ấm, nghiêm nghị, bí ẩn, phong cách tài liệu PBS/NatGeo)",
     "videoTool": "Kling 1.5 / Runway Gen-3 (Chuyển động chùm sáng khai quật và góc lia hiện vật đồng cổ) -> Hậu kỳ CapCut PC",
@@ -56,7 +56,7 @@
     {
       "step": 2,
       "title": "Setup Nhận Diện & SEO Kênh",
-      "detail": "Gắn Banner, Avatar khảo cổ thám hiểm + Sao chép trọn bộ 16 tags SEO có sẵn trong hồ sơ -> Ngâm kênh 3-4 ngày."
+      "detail": "Gắn Banner, Avatar khảo cổ thám hiểm + Sao chép trọn bộ 36 tags SEO có sẵn trong hồ sơ -> Ngâm kênh 3-4 ngày."
     },
     {
       "step": 3,

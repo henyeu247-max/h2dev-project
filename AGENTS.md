@@ -81,8 +81,10 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 - **"Không mò đường"**: Kiểm chứng liên tục mọi lúc xuyên suốt quá trình thực thi, tra cứu web/MCP ngay khi gặp điểm nghi vấn, tuyệt đối không suy đoán.
 - **Hệ giá trị chân lý cốt lõi**: **Sự thật Runtime > Source Code > Test Tự Động > Docs > Giả định**.
 - **Kỷ luật TODO Plan**: Đầu mỗi phiên hoặc task phức tạp, lập bảng TODO chi tiết theo 4 trạng thái (`[ ]` ➔ `[>]` ➔ `[x]` ➔ `[!]`), cập nhật tiến độ mỗi khi xong 1 hạng mục.
-- **Bộ 10 Tiêu Chuẩn Vàng kép**: Bắt buộc tuân thủ đồng thời Bộ 10 Tiêu Chuẩn Vàng Nghiệm Thu Video (Phần 7 `RULE-LAM-VIEC.md`) và Bộ 10 Tiêu Chuẩn Vàng Kênh Mẫu E2E (Phần 8 `RULE-LAM-VIEC.md`).
+- **Kỷ luật Grounded Data Tuyệt Đối**: Chống ảo giác & lệch pha dữ liệu. Mọi kịch bản, câu Hook 0–15s mở màn, nhịp Pacing và prompt của kênh mẫu bắt buộc phải đối soát trích xuất 1:1 từ file transcript và video bão view #1 thực tế của chính kênh đó trước khi ghi vào hồ sơ. Thiếu dữ liệu bắt buộc dùng MCP Pool Local (:3988) cào thực tế, cấm tự ý bịa đặt thông số.
+- **Bộ Tiêu Chuẩn Vàng Kép**: Bắt buộc tuân thủ đồng thời Bộ 10 Tiêu Chuẩn Vàng Nghiệm Thu Video (Phần 7 `RULE-LAM-VIEC.md`) và Bộ 11 Tiêu Chuẩn Vàng Kênh Mẫu E2E (Phần 8 `RULE-LAM-VIEC.md` — Trạm Vũ Khí Tác Chiến Production Mission Control).
 - **Quy trình thực thi 7 bước & Chuẩn báo cáo 8 mục**: Tuân thủ nghiêm ngặt Phần 9 `RULE-LAM-VIEC.md`.
+- **Kỷ luật Windows Scripting An Toàn**: Mọi file script vận hành trên Windows (.bat, .cmd) phải sử dụng 100% ký tự 7-bit ASCII thuần, không dùng tiếng Việt có dấu hay Unicode lạ.
 - **Verify đa nguồn MCP**: vidIQ (lõi kênh/keyword) → exa/tavily/jina/firecrawl → trends. Tool lỗi → chuyển tool.
 - **NO_DELETE**: không xóa data/docs/backup khi chưa được anh cho phép.
 - **Backup trước khi sửa** data file (`_backup/<YYYYMMDD-task>/`).

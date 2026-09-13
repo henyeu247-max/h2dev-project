@@ -1,3 +1,18 @@
+## 2026-09-13 — Triển khai Video Demo Mẫu Đại Diện Tuyến Nội Dung (Facade Player & Quick Video Modal) 97 Kênh
+
+- **Triển Khai Khung Video Demo Mẫu (Featured Video Showcase) Trong Modal:**
+  - Thuật toán thông minh tự động chọn **Video đại diện cho tuyến nội dung mới nhất, gần nhất và bão view nhất** của kênh.
+  - Sử dụng kỹ thuật **Thumbnail Facade Lazy-load** (0 byte file tải về đĩa, 0ms overhead tải trang). Iframe YouTube chỉ được gắn khi người dùng bấm nút Play `▶`.
+  - Hỗ trợ phát trực tiếp Full HD có âm thanh, tua, fullscreen ngay trong modal mà không cần mở tab mới sang YouTube.
+  - Kèm nút `↗ Mở YouTube` và nút `📜 Xem Sub & Kịch Bản AI` dẫn thẳng vào modal phân tích kịch bản của video demo.
+- **Nút "🎬 Xem Demo Tuyến Mới Nhất ▶" Trên Từng Thẻ Card Ngoài Trang `/rawkenh`:**
+  - Cho phép người dùng bấm xem video demo ngay từ danh sách ngoài qua popup **Quick Cinema Video Modal** (16:9) chỉ trong 1 giây mà không cần rời trang.
+- **Gán `featuredDemoVideo` cho 100% 97 kênh:**
+  - Đồng bộ trường dữ liệu vào `data-tabs/raw-kenh-mau.json` và `raw-kenh-goc/metadata-full.json`.
+- **Kiểm định Playwright E2E trên Live VPS:**
+  - Kiểm thử nút Quick Video ngoài card: Hoạt động hoàn hảo.
+  - Kiểm thử nút Play trong modal: Tự động embed Iframe và phát video mượt mà. Proof: `_audit/vps-proof-quick-video-live.png` & `_audit/vps-proof-showcase-live.png`.
+
 ## 2026-09-13 — Triển khai Bộ lọc Ngôn ngữ Âm thanh (Language Flag Filter) & Gắn nhãn chuẩn 100% 97 kênh mẫu
 
 - **Phân loại & Gán nhãn Ngôn ngữ Âm thanh 97/97 kênh mẫu:**

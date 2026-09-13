@@ -34,7 +34,7 @@
 - **Sức mạnh vượt trội của video dài trên 1 tiếng:**
   - **Chèn quảng cáo đa tầng:** Có thể đặt từ `8 đến 12 điểm Mid-roll ads` cách nhau mỗi 7–10 phút mà không gây khó chịu cho người xem.
   - **Hành vi "Bật để nghe thụ động" (Background Listening):** Người xem thường bật các video triết lý, thiền định hoặc bài học cuộc sống khi đang lái xe, nấu ăn, làm việc tại văn phòng hoặc trước khi ngủ.
-  - **Chỉ số Giữ chân người xem (Watch Time):** Thời lượng xem trung bình (AVD) có thể đạt từ **25 đến 45 phút/lượt xem** $\rightarrow$ Thuật toán YouTube ưu tiên đề xuất tuyệt đối cho các video giữ chân người dùng lâu trên nền tảng.
+  - **Chỉ số Giữ chân người xem (Watch Time):** Thời lượng xem trung bình (AVD) có thể đạt từ **25 đến 45 phút/lượt xem** → Thuật toán YouTube ưu tiên đề xuất tuyệt đối cho các video giữ chân người dùng lâu trên nền tảng.
 
 ---
 

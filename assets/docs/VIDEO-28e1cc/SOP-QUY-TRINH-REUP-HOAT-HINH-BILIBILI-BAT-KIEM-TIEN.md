@@ -16,10 +16,10 @@
   - Kênh đã được YouTube chấp thuận vào Chương trình Đối tác (YPP).
   - Toàn bộ video trong mục *Nội dung của kênh* đều hiển thị **biểu tượng tiền xanh (Bật kiếm tiền)** với trạng thái: *"Video này đang tiếp cận người xem và kiếm tiền theo chế độ cài đặt của bạn"*.
   - Các video tiêu biểu đang tạo doanh thu:
-    + *"TRUYỆN 2D ĐAM MỸ | Nhặt Được Mỹ Nam Trúng Độc..."* $\rightarrow$ Đạt 3.773 lượt xem, tạo doanh thu $0.81.
-    + *"TRUYỆN 2D ĐAM MỸ | Phản Diện Nghe Được Tiếng Lòng..."* $\rightarrow$ Đạt 2.013 lượt xem, tạo doanh thu $0.21.
-    + *"TRUYỆN 2D ĐAM MỸ | Gả Cho Vương Gia Đang Hôn Mê..."* $\rightarrow$ Tạo doanh thu $0.22.
-    + *"TRUYỆN 2D ĐAM MỸ | Rời Hoàng Cung Cùng Nàng..."* $\rightarrow$ Tạo doanh thu $0.09.
+    + *"TRUYỆN 2D ĐAM MỸ | Nhặt Được Mỹ Nam Trúng Độc..."* → Đạt 3.773 lượt xem, tạo doanh thu $0.81.
+    + *"TRUYỆN 2D ĐAM MỸ | Phản Diện Nghe Được Tiếng Lòng..."* → Đạt 2.013 lượt xem, tạo doanh thu $0.21.
+    + *"TRUYỆN 2D ĐAM MỸ | Gả Cho Vương Gia Đang Hôn Mê..."* → Tạo doanh thu $0.22.
+    + *"TRUYỆN 2D ĐAM MỸ | Rời Hoàng Cung Cùng Nàng..."* → Tạo doanh thu $0.09.
 
 ---
 
@@ -51,4 +51,4 @@ Trong bài giảng, tác giả chia sẻ trực tiếp 2 kênh Bilibili nguồn 
    - **Xử lý âm thanh gốc:** Giảm âm lượng âm thanh gốc xuống 5-10% làm tiếng động nền (SFX), lồng tiếng đọc mới đè lên ở mức 100%.
 5. **Bước 5 — Thiết kế Thumbnail "Giật tít tò mò":**
    - Chọn khung hình mỹ nam/mỹ nữ nhân vật chính đẹp nhất.
-   - Chèn chữ tiêu đề lớn màu vàng/đỏ: `TRUYỆN 2D CỔ TRANG` $\rightarrow$ `NHẶT ĐƯỢC MỸ NAM` $\rightarrow$ `VƯƠNG GIA HỐI HẬN!`.
+   - Chèn chữ tiêu đề lớn màu vàng/đỏ: `TRUYỆN 2D CỔ TRANG` → `NHẶT ĐƯỢC MỸ NAM` → `VƯƠNG GIA HỐI HẬN!`.

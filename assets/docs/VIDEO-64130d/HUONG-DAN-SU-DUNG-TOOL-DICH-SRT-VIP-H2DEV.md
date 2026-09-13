@@ -28,7 +28,7 @@
    - Tách lấy file phụ đề gốc `.srt`.
 2. **Bước 2: Thiết lập dịch thuật trên Web**:
    - Đăng nhập vào [h2devtool.com](https://h2devtool.com/) bằng Key được cấp.
-   - Bấm **"Tạo mới"** $\rightarrow$ Tải file `.srt` lên.
+   - Bấm **"Tạo mới"** → Tải file `.srt` lên.
    - **Lưu ý quan trọng**: Chọn chính xác chiều dịch tại mục *Thiết lập dịch thuật* (ví dụ: `Trung Quốc sang Việt Nam` hoặc `Nhật Bản sang Việt Nam`). Tránh chọn ngược chiều làm dịch sai ngôn ngữ.
 3. **Bước 3: Theo dõi tiến độ thời gian thực**:
    - Thanh tiến trình hiển thị % xử lý.

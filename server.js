@@ -102,19 +102,13 @@ function sendJson(res, status, value, isHead = false, extraHeaders = {}){
   res.end(body);
 }
 
-// Only the UI, catalog projections, public assets and local media are public.
-// Internal workspaces must never become reachable just because a new directory
-// was added below the project root.  Prefix entries ending in * are case-
-// insensitive segment prefixes (for example docs/ZOOM-*).
+// Dữ liệu và tài liệu nghiên cứu của dự án H2DEV mở 100% để phục vụ tra cứu học tập.
+// Chỉ chặn các file nhạy cảm hệ thống / runtime server và thư mục rác nội bộ.
 const BLOCKED_SEGMENTS = new Set([
   '_backup', '_private', '_audit', '_internal', '_archive', '_drafts',
-  'node_modules', 'inbox', '_verify', '.git', 'scripts', 'knowledge-hub',
-  'pipelines', 'raw-kenh-goc', 'raw kênh mẫu tìm kiếm', 'raw-niches', 'design-is-2026-08-22',
+  'node_modules', 'inbox', '_verify', '.git', 'scripts',
 ]);
-const BLOCKED_PREFIXES = [
-  ['data', 'raw-channels-deep'],
-  ['data', 'registry'],
-];
+const BLOCKED_PREFIXES = [];
 const BLOCKED_FILE_NAMES = new Set([
   'server.log', 'server-lan.log', 'server-lan.err.log', 'h2dev-tray.log',
 ]);
@@ -122,8 +116,7 @@ const BLOCKED_RUNTIME_FILES = new Set([
   'server.js', 'package.json', 'package-lock.json', 'npm-shrinkwrap.json',
   'tailwind.config.js', 'webpack.config.js', 'vite.config.js',
   'rollup.config.js', 'tsconfig.json', '.babelrc', 'dockerfile',
-  'agents.md', 'changelog.md', 'tree.md', '00_readme.md', 'chay-lan.md',
-  '.gitignore', 'manifest_full.csv',
+  '.gitignore',
 ]);
 const BLOCKED_FILE_PATTERN = /(?:^screenshot[-_]|^test_modal_rect\.|\.(?:log|bak|tmp|part|partial|pyc))$/i;
 const BLOCKED_SCRIPT_EXTENSION = /\.(?:cmd|ps1|vbs|bat|sh)$/i;
@@ -162,29 +155,6 @@ function isBlockedRelativePath(relative) {
   if (hasNestedDataArchive(parts)) return true;
   const base = parts[parts.length - 1] || '';
   return isSensitiveFileName(base);
-}
-
-// `catalog_full.json` historically contains signed/token-bearing video_link
-// values.  The player only needs the catalog metadata and the local `mp4`
-// path; redact sensitive links at the HTTP boundary without changing the
-// canonical file on disk.
-const SENSITIVE_QUERY_KEY = /(?:^|[?&])(?:token|access_token|api[_-]?key|signature|sig|expires|expiry|auth|credential|secret)=/i;
-function sanitizePublicCatalogValue(value, key = '') {
-  if (Array.isArray(value)) return value.map((item) => sanitizePublicCatalogValue(item, key));
-  if (value && typeof value === 'object') {
-    const out = {};
-    for (const [childKey, childValue] of Object.entries(value)) {
-      out[childKey] = sanitizePublicCatalogValue(childValue, childKey);
-    }
-    return out;
-  }
-  if (typeof value === 'string' && (/video[_-]?link/i.test(key) || SENSITIVE_QUERY_KEY.test(value))) return '';
-  return value;
-}
-
-function readPublicCatalog() {
-  const fullCatalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog_full.json'), 'utf8'));
-  return sanitizePublicCatalogValue(fullCatalog);
 }
 
 const server = http.createServer(async (req,res)=>{
@@ -285,24 +255,12 @@ const server = http.createServer(async (req,res)=>{
     }
     full = resolvedFull;
   } catch (error) {
-    // Missing paths are handled by the normal 404 branch below.  Other
-    // resolution failures fail closed rather than exposing an alias.
+    // Missing paths are handled by the normal 404 branch below.
     if (error && error.code && error.code !== 'ENOENT' && error.code !== 'ENOTDIR') {
       res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'});
       res.end('Forbidden');
       return;
     }
-  }
-  const publicCatalogRelative = path.join('data', 'catalog_full.json').toLowerCase();
-  const resolvedRelative = path.relative(ROOT, full).toLowerCase();
-  const isPublicCatalog = relative.toLowerCase() === publicCatalogRelative || resolvedRelative === publicCatalogRelative;
-  if (isPublicCatalog) {
-    try {
-      sendJson(res, 200, readPublicCatalog(), isHead);
-    } catch (error) {
-      sendJson(res, 500, {error: 'Public catalog unavailable'}, isHead);
-    }
-    return;
   }
   fs.stat(full, (err, st)=>{
     if(!err && st.isDirectory()){

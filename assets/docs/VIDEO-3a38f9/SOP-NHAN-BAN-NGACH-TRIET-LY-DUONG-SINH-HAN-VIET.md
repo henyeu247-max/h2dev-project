@@ -19,15 +19,15 @@
   - *"Bí quyết trường thọ của cụ ông 103 tuổi: Hãy ăn món này mỗi ngày..."*
   - *"3 món ăn duy nhất giúp cụ ông 105 tuổi phục hồi đôi chân khỏe mạnh..."*
   - *"5 điều tuyệt đối phải làm khi sống một mình để tuổi già an yên không cô đơn..."*
-- **Kỹ thuật thumbnail:** Ảnh bà cụ/ông cụ người Hàn hiền hậu ngồi trước hiên nhà truyền thống, chữ đỏ - trắng viền đậm chia 2 vế: Vế 1 nêu hiện tượng tò mò $\rightarrow$ Vế 2 đưa ra giải pháp bất ngờ.
+- **Kỹ thuật thumbnail:** Ảnh bà cụ/ông cụ người Hàn hiền hậu ngồi trước hiên nhà truyền thống, chữ đỏ - trắng viền đậm chia 2 vế: Vế 1 nêu hiện tượng tò mò → Vế 2 đưa ra giải pháp bất ngờ.
 
 ### Kênh 2: `@Haythauhieuchuyendoi` (Thấu Hiểu Chuyện Đời)
 - **Thị trường:** 🇻🇳 Việt Nam  
 - **Hiện trạng:** Kênh tham gia ngày 14/08/2026, chỉ mới đăng video 8-10 ngày, đạt **892 người đăng ký** và **201.220 lượt xem** qua 22 video.
 - **Kết quả cắn đề xuất:**
-  - Video 1: *"71 Tuổi Xoá Số Điện Thoại Các Con Để Sống Cho Bản Thân - Nửa Năm Sau Rời Đi Cả Họ Hối Hận"* $\rightarrow$ Đạt **69.000 lượt xem** sau 3 ngày (tốc độ 285 VPH > 100x).
-  - Video 2: *"77 Tuổi Tôi Âm Thầm Mua Đất An Táng - Đến Khi Đọc Được Tờ Giấy, Con Dâu Quỳ Xuống Xin Lỗi"* $\rightarrow$ Đạt **20.000 lượt xem** sau 9 ngày.
-  - Video 3: *"62 Tuổi Bị Con Dâu Mắng 'Già Rồi Còn Ăn Bám' - Tôi Xách Túi Rời Đi, Tự Làm Chủ Tuổi Già"* $\rightarrow$ Đạt **17.000 lượt xem** sau 8 ngày.
+  - Video 1: *"71 Tuổi Xoá Số Điện Thoại Các Con Để Sống Cho Bản Thân - Nửa Năm Sau Rời Đi Cả Họ Hối Hận"* → Đạt **69.000 lượt xem** sau 3 ngày (tốc độ 285 VPH > 100x).
+  - Video 2: *"77 Tuổi Tôi Âm Thầm Mua Đất An Táng - Đến Khi Đọc Được Tờ Giấy, Con Dâu Quỳ Xuống Xin Lỗi"* → Đạt **20.000 lượt xem** sau 9 ngày.
+  - Video 3: *"62 Tuổi Bị Con Dâu Mắng 'Già Rồi Còn Ăn Bám' - Tôi Xách Túi Rời Đi, Tự Làm Chủ Tuổi Già"* → Đạt **17.000 lượt xem** sau 8 ngày.
 - **Đặc điểm:** Đây là minh chứng hùng hồn cho việc **mang công thức kịch bản dưỡng sinh / đạo lý tuổi già từ Hàn Quốc về áp dụng cho thị trường Việt Nam**, đổi tên nhân vật và câu chuyện gần gũi với phong tục Việt Nam.
 
 ---
@@ -35,7 +35,7 @@
 ## 2. CÔNG THỨC KỊCH BẢN THẮNG CHẮC (THE WINNING FORMULA)
 
 ### 2.1. Cấu Trúc Tiêu Đề 3 Yếu Tố "Bắt Mắt"
-1. **Yếu tố 1 — Neo tuổi tác cụ thể:** `[62 Tuổi / 71 Tuổi / 77 Tuổi / 103 Tuổi...]` $\rightarrow$ Khán giả trung niên thấy mình trong câu chuyện ngay lập tức.
+1. **Yếu tố 1 — Neo tuổi tác cụ thể:** `[62 Tuổi / 71 Tuổi / 77 Tuổi / 103 Tuổi...]` → Khán giả trung niên thấy mình trong câu chuyện ngay lập tức.
 2. **Yếu tố 2 — Nút thắt nghịch lý gia đình:** `[Xoá số điện thoại con / Âm thầm mua đất an táng / Bị con dâu mắng ăn bám / Con trai đòi bán nhà...]`
 3. **Yếu tố 3 — Cái kết hả lòng / Bài học thức tỉnh:** `[Cả họ hối hận / Con dâu quỳ xin lỗi / Tự do tự tại an hưởng tuổi già]`.
 

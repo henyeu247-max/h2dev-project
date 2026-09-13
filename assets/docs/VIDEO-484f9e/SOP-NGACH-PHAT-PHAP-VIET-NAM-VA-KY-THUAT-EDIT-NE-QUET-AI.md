@@ -52,5 +52,5 @@ Nhiều kênh làm bán content Phật pháp bị tắt kiếm tiền do YouTube
 - **Phối màu phong thủy:** Nền vàng cam rực rỡ tượng trưng cho ánh đạo và tài lộc.
 - **Bố cục 2 vế rõ ràng:**
   - Vế trái: Ảnh Thầy Thích Pháp Hòa hoặc vị cao tăng chắp tay từ bi.
-  - Vế phải: Tên hành động cụ thể in hoa nổi bật: `ĐẦU GIƯỜNG ĐỂ VẬT NÀY` (Chữ xanh/đỏ viền trắng) $\rightarrow$ `TIỀN VÀO NHƯ NƯỚC` (Chữ xanh đậm viền trắng).
+  - Vế phải: Tên hành động cụ thể in hoa nổi bật: `ĐẦU GIƯỜNG ĐỂ VẬT NÀY` (Chữ xanh/đỏ viền trắng) → `TIỀN VÀO NHƯ NƯỚC` (Chữ xanh đậm viền trắng).
 - **Tránh từ ngữ mê tín dị đoan cực đoan:** Không dùng các từ ngữ ma mị, hù dọa người xem để tránh vi phạm chính sách nội dung gây hại của YouTube.

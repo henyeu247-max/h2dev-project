@@ -16,9 +16,9 @@ Trong bài giảng, tác giả phân tích sâu 4 ngách nhỏ cực kỳ tiềm
 ### Ngách 1: Mẹo nấu ăn siêu tốc bằng Lò vi sóng (Microwave Cooking Hacks)
 - **Kênh mẫu:** `@HealthyToday0` & Kênh mẹo vặt gia đình.
 - **Hiện tượng:** Toàn bộ thumbnail chụp đĩa thực phẩm đặt trước cửa lò vi sóng mở sẵn:
-  - *"Khoai lang mua nhiều cứ cho vào lò vi sóng 6 phút $\rightarrow$ Món ăn vặt cả nhà mê mẩn"* (2.1K view sau 1 ngày).
-  - *"Ớt chuông mua nhiều quay lò vi sóng 3 phút $\rightarrow$ Món salad thanh lọc cơ thể"* (11K view sau 4 ngày).
-  - *"Cá hồi cho vào lò vi sóng 5 phút $\rightarrow$ Ngon hơn cả nhà hàng"* (23K view sau 5 ngày).
+  - *"Khoai lang mua nhiều cứ cho vào lò vi sóng 6 phút → Món ăn vặt cả nhà mê mẩn"* (2.1K view sau 1 ngày).
+  - *"Ớt chuông mua nhiều quay lò vi sóng 3 phút → Món salad thanh lọc cơ thể"* (11K view sau 4 ngày).
+  - *"Cá hồi cho vào lò vi sóng 5 phút → Ngon hơn cả nhà hàng"* (23K view sau 5 ngày).
   - *"Rau bina / mướp đắng quay lò vi sóng 2 phút"* (399K view sau 11 ngày).
 - **Lý do bùng nổ view:** Người trẻ và người già sống một mình tại Hàn Quốc rất ngại rửa chảo, nấu nướng cầu kỳ dầu mỡ. Nấu bằng lò vi sóng vừa nhanh, vừa giữ nguyên dưỡng chất và không tốn công dọn dẹp.
 
@@ -52,4 +52,4 @@ Trong bài giảng, tác giả phân tích sâu 4 ngách nhỏ cực kỳ tiềm
 4. **Bước 4 — Thumbnail bắt mắt tông Đỏ - Vàng:**
    - Nền đĩa đồ ăn thực tế bên phải.
    - Bên trái là 3 dòng chữ in hoa màu vàng viền đen và đỏ viền trắng:
-     `KHOAI LANG MUA NHIỀU` $\rightarrow$ `CHO VÀO LÒ VI SÓNG` $\rightarrow$ `THUỐC BỔ KHÔNG ĐÂU BẰNG!!`
+     `KHOAI LANG MUA NHIỀU` → `CHO VÀO LÒ VI SÓNG` → `THUỐC BỔ KHÔNG ĐÂU BẰNG!!`

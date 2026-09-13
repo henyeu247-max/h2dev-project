@@ -14,9 +14,9 @@
 ### Ngách 1: Tin tức công nghiệp ô tô & Xe hơi nội địa Nhật (`@kurumanozokitai`)
 - **Kênh mẫu:** `@kurumanozokitai` (Kuruma no Zokitai — Đội Khám Phá Xe Hơi).
 - **Hiện tượng bùng nổ view:**
-  - Video 1: *"Hyundai đứng bên bờ phá sản, kết cục bi đát khi đối đầu với gã khổng lồ Toyota"* $\rightarrow$ Đạt **14.000 view sau 7 giờ** (tốc độ 1.4K VPH > 100x).
-  - Video 2: *"Xe điện cỡ nhỏ tự hào của BYD gặp sai lầm tai hại tại Nhật Bản"* $\rightarrow$ Đạt **22.000 view sau 21 giờ** (tốc độ 1.3K VPH > 100x).
-  - Video 3: *"Bí mật thợ xe không muốn tiết lộ: Top dòng xe nội địa Nhật không bao giờ hỏng hóc"* $\rightarrow$ Đạt view cực cao.
+  - Video 1: *"Hyundai đứng bên bờ phá sản, kết cục bi đát khi đối đầu với gã khổng lồ Toyota"* → Đạt **14.000 view sau 7 giờ** (tốc độ 1.4K VPH > 100x).
+  - Video 2: *"Xe điện cỡ nhỏ tự hào của BYD gặp sai lầm tai hại tại Nhật Bản"* → Đạt **22.000 view sau 21 giờ** (tốc độ 1.3K VPH > 100x).
+  - Video 3: *"Bí mật thợ xe không muốn tiết lộ: Top dòng xe nội địa Nhật không bao giờ hỏng hóc"* → Đạt view cực cao.
 - **Lý do ăn khách:** Thị trường Nhật Bản rất tự hào về ngành sản xuất ô tô (Toyota, Honda, Mazda). Các video phân tích sự cạnh tranh giữa Toyota vs Hyundai/BYD đánh trúng tâm lý người Nhật, kích thích lượng bình luận tranh luận rất lớn.
 
 ### Ngách 2: Nhân vật Bác sĩ tư vấn sức khỏe & Mẹo vặt chữa bệnh tuổi già
@@ -43,8 +43,8 @@ Một trong những kỹ thuật quan trọng nhất được tác giả hướn
 ### Quy trình 4 bước tạo khung trên CapCut Desktop:
 1. **Bước 1 — Tạo tỷ lệ dự án:** Thiết lập tỷ lệ chuẩn 16:9 (1920×1080 hoặc 2560×1440).
 2. **Bước 2 — Thêm lớp khung nền (Background Canvas Frame):**
-   - Vào mục Canvas $\rightarrow$ Chọn màu nền (Color) màu xanh navy đậm, đỏ mận hoặc đen nhung.
-   - Thu nhỏ kích thước video chính xuống 90% hoặc 92% $\rightarrow$ Tạo ra một đường viền khung 4 cạnh xung quanh video.
+   - Vào mục Canvas → Chọn màu nền (Color) màu xanh navy đậm, đỏ mận hoặc đen nhung.
+   - Thu nhỏ kích thước video chính xuống 90% hoặc 92% → Tạo ra một đường viền khung 4 cạnh xung quanh video.
 3. **Bước 3 — Tạo đường viền đôi (Double Border Line):**
    - Dùng công cụ Shape hoặc dải màu tạo 2 đường viền chỉ mảnh màu vàng kim hoặc trắng chạy dọc 2 bên mép video.
 4. **Bước 4 — Đặt chữ tiêu đề cố định trên khung:**

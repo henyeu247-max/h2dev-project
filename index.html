@@ -2365,20 +2365,53 @@
                 ${tvList.length ? `
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:0.85rem;">
                   ${tvList.map((v, i) => `
-                    <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; overflow:hidden; display:flex; flex-direction:column;">
-                      <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" style="position:relative; aspect-ratio:16/9; display:block; background:#000; overflow:hidden;">
-                        <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" style="width:100%; height:100%; object-fit:cover;">
-                        <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.75); color:#fff; font-size:0.65rem; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem;">#${i + 1}</span>
-                        ${v.duration ? `<span style="position:absolute; bottom:0.35rem; right:0.35rem; background:rgba(0,0,0,0.85); color:#fff; font-size:0.65rem; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem;">${formatDuration(v.duration)}</span>` : ''}
-                      </a>
+                    <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; overflow:hidden; display:flex; flex-direction:column; transition:all 0.2s;" class="hover:border-slate-500">
+                      <!-- Compact Thumbnail Container with Play Trigger -->
+                      <div class="group relative block bg-black overflow-hidden cursor-pointer" onclick="window.openQuickVideoModal('${esc(v.videoId)}', '${esc(v.title)}', '${esc(pData.title || ch.title || '')}', '#${i + 1} Top Video')" style="aspect-ratio:16/9;" title="Bấm để phát video trực tiếp (${esc(v.title)})">
+                        <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" loading="lazy" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;" class="group-hover:scale-105">
+                        
+                        <!-- Rank Badge -->
+                        <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size:0.65rem; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); z-index:2;">#${i + 1}</span>
+                        
+                        <!-- Mini Open YouTube Icon Link -->
+                        <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" style="position:absolute; top:0.35rem; right:0.35rem; background:rgba(0,0,0,0.75); color:#94a3b8; font-size:0.65rem; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; text-decoration:none; display:inline-flex; align-items:center; gap:0.2rem; border:1px solid rgba(255,255,255,0.1); z-index:2;" class="hover:text-white hover:bg-red-600 transition-colors" title="Mở tab YouTube ngoài">
+                          <span>↗ YT</span>
+                        </a>
+
+                        <!-- Center Play Button (Sleek, Compact, Fast) -->
+                        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.25); transition:background 0.2s;" class="group-hover:bg-black/40">
+                          <div style="width:42px; height:42px; border-radius:50%; background:rgba(239,68,68,0.92); border:2px solid #fff; color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.15rem; box-shadow:0 0 16px rgba(239,68,68,0.7); transition:all 0.2s;" class="group-hover:scale-110 group-hover:bg-red-600">
+                            <span style="margin-left:3px; line-height:1;">▶</span>
+                          </div>
+                        </div>
+
+                        <!-- Duration Badge -->
+                        ${v.duration ? `<span style="position:absolute; bottom:0.35rem; right:0.35rem; background:rgba(0,0,0,0.85); color:#fff; font-size:0.65rem; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; z-index:2;">${formatDuration(v.duration)}</span>` : ''}
+                      </div>
+
+                      <!-- Card Content -->
                       <div style="padding:0.75rem; display:flex; flex-direction:column; flex:1; gap:0.4rem;">
-                        <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem; font-weight:700; color:#fff; text-decoration:none; line-height:1.35;" class="line-clamp-2 hover:text-brand-300 transition-colors">${esc(v.title)}</a>
-                        <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.72rem; color:#94a3b8; margin-top:auto; pt-1;">
+                        <div style="cursor:pointer;" onclick="window.openQuickVideoModal('${esc(v.videoId)}', '${esc(v.title)}', '${esc(pData.title || ch.title || '')}', '#${i + 1} Top Video')" title="Bấm để xem video">
+                          <span style="font-size:0.8rem; font-weight:700; color:#fff; line-height:1.35;" class="line-clamp-2 hover:text-brand-300 transition-colors">${esc(v.title)}</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.72rem; color:#94a3b8; margin-top:auto; padding-top:0.2rem;">
                           <span>👁️ <strong style="color:#38bdf8;">${formatNum(v.views)}</strong> views</span>
                           ${v.vph != null ? `<span>⚡ <strong style="color:#f59e0b;">${Math.round(v.vph)}</strong> VPH</span>` : ''}
                           <span>📅 ${v.publishedAt ? v.publishedAt.slice(0, 10) : ''}</span>
                         </div>
-                        <button type="button" class="btn-open-video-sub w-full py-1.5 px-2 mt-1 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/70 border border-indigo-500/40 text-indigo-200 hover:text-white font-semibold text-[11px] flex items-center justify-center gap-1.5 transition-colors cursor-pointer" data-dossier="${esc(dossierPath)}" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(v.views))}">
+
+                        <!-- Unified Action Buttons: Xem Video (Cinema) + Mở YT + Xem Sub -->
+                        <div style="display:grid; grid-template-columns:1fr auto; gap:0.35rem; margin-top:0.25rem;">
+                          <button type="button" class="py-1.5 px-2.5 rounded-lg bg-rose-600/30 hover:bg-rose-600/80 border border-rose-500/40 hover:border-rose-400 text-rose-200 hover:text-white font-semibold text-[11px] flex items-center justify-center gap-1.5 transition cursor-pointer" onclick="window.openQuickVideoModal('${esc(v.videoId)}', '${esc(v.title)}', '${esc(pData.title || ch.title || '')}', '#${i + 1} Top Video')" title="Phát video trực tiếp tại chỗ">
+                            <span style="font-size:0.75rem;">▶</span> Xem Video
+                          </button>
+                          <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" style="padding:0.35rem 0.65rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#94a3b8; font-size:11px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center;" class="hover:text-white hover:bg-slate-700 transition" title="Mở trên YouTube tab mới">
+                            ↗ YT
+                          </a>
+                        </div>
+
+                        <button type="button" class="btn-open-video-sub w-full py-1.5 px-2 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/70 border border-indigo-500/40 text-indigo-200 hover:text-white font-semibold text-[11px] flex items-center justify-center gap-1.5 transition-colors cursor-pointer" data-dossier="${esc(dossierPath)}" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(v.views))}">
                           <span>📜 Xem Sub, Lời Thoại & Kịch Bản AI</span> →
                         </button>
                       </div>
@@ -2656,7 +2689,8 @@
                 </div>
               </div>
               <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
-                <a href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener noreferrer" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:rgba(239,68,68,0.85); color:#fff; font-size:0.75rem; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem;">📺 Xem YouTube ↗</a>
+                <button type="button" onclick="window.openQuickVideoModal('${esc(videoId)}', '${esc(videoTitle)}', '${esc(channelName)}', '🔥 Đang xem Transcript')" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:rgba(225,29,72,0.9); border:1px solid #f43f5e; color:#fff; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:0.35rem;" title="Mở video xem trực tiếp đồng bộ với phụ đề">🎬 Xem Video Nhanh</button>
+                <a href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener noreferrer" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#38bdf8; font-size:0.75rem; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem;">📺 YouTube ↗</a>
                 <button type="button" id="close-video-sub" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size:0.75rem; font-weight:600; cursor:pointer;">✕ Đóng</button>
               </div>
             </div>
@@ -2803,35 +2837,50 @@
         container.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" style="width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
       };
 
-      window.openQuickVideoModal = function(videoId, videoTitle, channelName) {
+      window.openQuickVideoModal = function(videoId, videoTitle, channelName, badgeLabel) {
         let modal = document.getElementById('quick-video-modal');
         if (!modal) {
           modal = document.createElement('div');
           modal.id = 'quick-video-modal';
           modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:100001; background:rgba(0,0,0,0.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
+          
+          const closeModal = () => {
+            modal.style.display = 'none';
+            modal.innerHTML = '';
+            const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' ||
+                              document.getElementById('video-transcript-modal')?.style.display === 'flex' ||
+                              document.getElementById('raw-image-modal')?.style.display === 'flex';
+            if (!otherOpen) {
+              document.body.style.overflow = '';
+            }
+          };
+          window.closeQuickVideoModal = closeModal;
+
           modal.onclick = (e) => {
             if (e.target === modal || e.target.id === 'close-quick-video' || (e.target.closest && e.target.closest('#close-quick-video'))) {
-              modal.style.display = 'none';
-              modal.innerHTML = '';
-              document.body.style.overflow = '';
+              closeModal();
             }
           };
           document.body.appendChild(modal);
         }
+
+        const badge = badgeLabel || '🔥 Tuyến Chuẩn';
+        const displayChannel = channelName ? ('Kênh: ' + channelName) : 'Xem Trực Tiếp';
+
         modal.innerHTML = `
           <div style="position:relative; width:100%; max-width:960px; background:#0f172a; border:1px solid #334155; border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
             <div style="display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.15rem; background:#1e293b; border-bottom:1px solid #334155; gap:1rem;">
               <div style="min-width:0;">
                 <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap;">
                   <span style="font-size:1.1rem;">🎬</span>
-                  <h3 style="font-size:0.92rem; font-weight:700; color:#fff; margin:0;" class="truncate">Video Demo Mẫu Tuyến Gần Nhất: ${esc(channelName)}</h3>
-                  <span style="font-size:0.68rem; font-weight:700; padding:0.1rem 0.45rem; border-radius:0.35rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;">🔥 Tuyến Chuẩn</span>
+                  <h3 style="font-size:0.92rem; font-weight:700; color:#fff; margin:0;" class="truncate">${esc(displayChannel)}</h3>
+                  <span style="font-size:0.68rem; font-weight:700; padding:0.1rem 0.45rem; border-radius:0.35rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;">${esc(badge)}</span>
                 </div>
-                <p style="font-size:0.75rem; color:#94a3b8; margin:0.2rem 0 0 0;" class="truncate">${esc(videoTitle)}</p>
+                <p style="font-size:0.75rem; color:#94a3b8; margin:0.2rem 0 0 0;" class="truncate" title="${esc(videoTitle)}">${esc(videoTitle)}</p>
               </div>
               <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
                 <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:600;">↗ Mở YouTube</a>
-                <button type="button" id="close-quick-video" style="padding:0.35rem 0.75rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size:0.75rem; font-weight:600; cursor:pointer;">✕ Đóng</button>
+                <button type="button" id="close-quick-video" style="padding:0.35rem 0.75rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size:0.75rem; font-weight:600; cursor:pointer;" title="Đóng [Esc]">✕ Đóng</button>
               </div>
             </div>
             <div style="width:100%; aspect-ratio:16/9; background:#000;">
@@ -2842,6 +2891,35 @@
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
       };
+
+      // Global Escape Key to close top-most active modal
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const quickModal = document.getElementById('quick-video-modal');
+          if (quickModal && quickModal.style.display === 'flex') {
+            if (window.closeQuickVideoModal) window.closeQuickVideoModal();
+            else { quickModal.style.display = 'none'; quickModal.innerHTML = ''; }
+            return;
+          }
+          const subModal = document.getElementById('video-transcript-modal');
+          if (subModal && subModal.style.display === 'flex') {
+            subModal.style.display = 'none';
+            return;
+          }
+          const rawModal = document.getElementById('raw-deep-modal') || document.getElementById('raw-detail-modal');
+          if (rawModal && rawModal.style.display === 'flex') {
+            rawModal.style.display = 'none';
+            document.body.style.overflow = '';
+            return;
+          }
+          const imgModal = document.getElementById('raw-image-modal');
+          if (imgModal && imgModal.style.display === 'flex') {
+            imgModal.style.display = 'none';
+            document.body.style.overflow = '';
+            return;
+          }
+        }
+      });
     })();
   </script>
 </body>

@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-088",
+  "channelFolder": "RAW-088_No_Villains_Are_SAFE!",
+  "sourceVideo": {
+    "videoId": "UbKKl9ov8ic",
+    "title": "How Much Has Peter Griffin Cost Quahog?",
+    "url": "https://www.youtube.com/watch?v=UbKKl9ov8ic",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-088_No_Villains_Are_SAFE!/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-088.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam điều tra hài hước / Bóc tách số liệu hoạt hình",
+    "ageRange": "25 – 35 tuổi",
+    "toneAndStyle": "Nghiêm túc giả tạo (Deadpan Serious), châm biếm, dẫn dắt số liệu kịch tính",
+    "targetAudience": "Khán giả hâm mộ Family Guy, Rick and Morty, hoạt hình người lớn 16+",
+    "actualPaceWPM": "160 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "An investigative audio booth. Focused central presence with crisp low-mid body, designed for dry satirical analysis.",
+    "sampleContext": "Deadpan, mock-serious, and methodical. Articulates absurd fictional damages with rigorous journalistic authority.",
+    "speakerTag": "Speaker 1 - Satirical Investigator (Roger / Marcus)",
+    "sampleSpeechBlock": "Six utility poles, $800 each. He's destroyed a lot, and I do mean a lot of stuff. But how much worth of property damage has this maniac racked up over the years? And is it enough to bankrupt the entirety of Rhode Island? Let's find out, shall we? Never ever let Peter have anything even mildly dangerous. If he doesn't destroy it, he's going to destroy something else with it. But somehow people keep letting this guy be in charge of things. Like Jerome, for example, in the episode The Wolf of Wall Street, where he had to leave town to go take care of his mom, and unfortunately for him, he bumped into these guys on his way out.",
+    "combinedPromptTemplate": "Scene: An investigative audio booth. Focused central presence with crisp low-mid body, designed for dry satirical analysis.\nSample Context: Deadpan, mock-serious, and methodical. Articulates absurd fictional damages with rigorous journalistic authority.\n\nSpeaker 1 - Satirical Investigator (Roger / Marcus):\nSix utility poles, $800 each. He's destroyed a lot, and I do mean a lot of stuff. But how much worth of property damage has this maniac racked up over the years? And is it enough to bankrupt the entirety of Rhode Island? Let's find out, shall we? Never ever let Peter have anything even mildly dangerous. If he doesn't destroy it, he's going to destroy something else with it. But somehow people keep letting this guy be in charge of things. Like Jerome, for example, in the episode The Wolf of Wall Street, where he had to leave town to go take care of his mom, and unfortunately for him, he bumped into these guys on his way out."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Roger (Deadpan Detective / Cynical Host)",
+    "alternativeVoices": [
+      "Marcus (Grounded Forensic)",
+      "Adam (Investigative Voice)"
+    ],
+    "voiceSettings": {
+      "stability": 0.45,
+      "similarity_boost": 0.86,
+      "style": 0.2,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Nghiêm túc giả tạo (Deadpan Serious), châm biếm, dẫn dắt số liệu kịch tính. Suitable for Khán giả hâm mộ Family Guy, Rick and Morty, hoạt hình người lớn 16+.",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

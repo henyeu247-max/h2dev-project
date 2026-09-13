@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-075",
+  "channelFolder": "RAW-075_The_Regular_Recap",
+  "sourceVideo": {
+    "videoId": "dm9vNIq_CTc",
+    "title": "How Did Mordecai and Rigby’s Friendship SURVIVE?",
+    "url": "https://www.youtube.com/watch?v=dm9vNIq_CTc",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-075_The_Regular_Recap/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-075.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam phân tích hoạt hình / Pop-culture Reviewer",
+    "ageRange": "22 – 30 tuổi",
+    "toneAndStyle": "Hài hước, tự nhiên, lôi cuốn, phân tích tâm lý nhân vật hoạt hình sắc sảo",
+    "targetAudience": "Fan Cartoon Network, thế hệ Gen Z & Millennial yêu hoạt hình thập niên 2010",
+    "actualPaceWPM": "144 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "A well-damped video essay recording booth. Close-mic proximity, crystal-clear dialogue clarity, zero background reflections.",
+    "sampleContext": "Analytical, conversational, witty, and passionate. Flowing pacing with conversational emphasis on comedic observations.",
+    "speakerTag": "Speaker 1 - Cartoon Essayist (Eric / Chris)",
+    "sampleSpeechBlock": "So, how did their friendship even make it this far? Let's break down some of their most chaotic moments. Starting off with episode 2 from season 1 called Just Set Up the Chairs, where Morai and Riby are given the boring task of setting up chairs for a kid's birthday party. Morai and Rigby, you set up the chairs. [groaning] And while both Morai and Riby complained about getting stuck with a mediocre task, Morai was determined to do it well because Benson had called them slackers. You calling us slackers? He's calling us slackers. Look, dude, we can totally set up all those chairs without slacking off.",
+    "combinedPromptTemplate": "Scene: A well-damped video essay recording booth. Close-mic proximity, crystal-clear dialogue clarity, zero background reflections.\nSample Context: Analytical, conversational, witty, and passionate. Flowing pacing with conversational emphasis on comedic observations.\n\nSpeaker 1 - Cartoon Essayist (Eric / Chris):\nSo, how did their friendship even make it this far? Let's break down some of their most chaotic moments. Starting off with episode 2 from season 1 called Just Set Up the Chairs, where Morai and Riby are given the boring task of setting up chairs for a kid's birthday party. Morai and Rigby, you set up the chairs. [groaning] And while both Morai and Riby complained about getting stuck with a mediocre task, Morai was determined to do it well because Benson had called them slackers. You calling us slackers? He's calling us slackers. Look, dude, we can totally set up all those chairs without slacking off."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Eric (Conversational Essayist)",
+    "alternativeVoices": [
+      "Chris (Animated Reviewer)",
+      "Paul (Snappy Explainer)"
+    ],
+    "voiceSettings": {
+      "stability": 0.38,
+      "similarity_boost": 0.84,
+      "style": 0.25,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Hài hước, tự nhiên, lôi cuốn, phân tích tâm lý nhân vật hoạt hình sắc sảo. Suitable for Fan Cartoon Network, thế hệ Gen Z & Millennial yêu hoạt hình thập niên 2010.",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

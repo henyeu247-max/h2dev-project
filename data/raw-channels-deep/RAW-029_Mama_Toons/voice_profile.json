@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-029",
+  "channelFolder": "RAW-029_Mama_Toons",
+  "sourceVideo": {
+    "videoId": "jGR2ikGDo50",
+    "title": "Thief Steals All the Farm Animals… But a Brave Dog Saves the Day!",
+    "url": "https://www.youtube.com/watch?v=jGR2ikGDo50",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-029_Mama_Toons/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-029.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nữ truyền cảm / Người kể chuyện cổ tích thiếu nhi",
+    "ageRange": "25 – 35 tuổi",
+    "toneAndStyle": "Ấm áp, ân cần, giàu tình cảm, diễn xuất hoạt hình sinh động",
+    "targetAudience": "Trẻ em mầm non (2–7 tuổi) và các bậc phụ huynh",
+    "actualPaceWPM": "32 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "A warm, brightly carpeted nursery storytelling room. Completely dry acoustics, ultra-soft high frequencies avoiding sibilance, gentle intimate presence.",
+    "sampleContext": "Gentle, maternal, and engaging. Melodic cadence, animated enthusiasm with smiling articulation designed to comfort and delight young children.",
+    "speakerTag": "Speaker 1 - Preschool Storyteller (Freya / Alice)",
+    "sampleSpeechBlock": "Please, you must help. Give me a second. I just sat down. Hi. No. [groaning and screaming] [screaming] You are my source of money.",
+    "combinedPromptTemplate": "Scene: A warm, brightly carpeted nursery storytelling room. Completely dry acoustics, ultra-soft high frequencies avoiding sibilance, gentle intimate presence.\nSample Context: Gentle, maternal, and engaging. Melodic cadence, animated enthusiasm with smiling articulation designed to comfort and delight young children.\n\nSpeaker 1 - Preschool Storyteller (Freya / Alice):\nPlease, you must help. Give me a second. I just sat down. Hi. No. [groaning and screaming] [screaming] You are my source of money."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Freya (Expressive Youthful Story)",
+    "alternativeVoices": [
+      "Alice (Clear & Bright Kids)",
+      "Sarah (Gentle Motherly Tone)"
+    ],
+    "voiceSettings": {
+      "stability": 0.4,
+      "similarity_boost": 0.85,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Ấm áp, ân cần, giàu tình cảm, diễn xuất hoạt hình sinh động. Suitable for Trẻ em mầm non (2–7 tuổi) và các bậc phụ huynh.",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

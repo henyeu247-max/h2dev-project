@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-010",
+  "channelFolder": "RAW-010_Landon’s_Animation_Wheelhouse",
+  "sourceVideo": {
+    "videoId": "ZGHSG9J2ZL4",
+    "title": "Big B Saving James | Thomas UNHINGED Shorts",
+    "url": "https://www.youtube.com/watch?v=ZGHSG9J2ZL4",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-010_Landon’s_Animation_Wheelhouse/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-010.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam trẻ trung / Hoạt hình hài hước",
+    "ageRange": "20 – 30 tuổi",
+    "toneAndStyle": "Năng lượng cực cao, biểu cảm kịch tính, lém lỉnh, hoạt kê cường điệu",
+    "targetAudience": "Khán giả mê hoạt hình 3D, parody meme và trẻ em lớn tuổi (8–16 tuổi)",
+    "actualPaceWPM": "77 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "A dry, dynamic soundstage or voiceover recording room. Dead room acoustics with zero reverb, immediate presence suited for hyper-expressive animated dubbing.",
+    "sampleContext": "Hyper-expressive, quirky, and theatrical. Fast-paced comic delivery with pitch shifts and sudden dynamic changes.",
+    "speakerTag": "Speaker 1 - Cartoon Parodist (Charlie / Fin)",
+    "sampleSpeechBlock": "You let him go right now. Going to take more than that to stop Topham Hat. Help me on my day off and everything. Okay, you need to stop breaking things. Don't mess with me while I'm cross the audacity. Off. Wow, everyone. What a peaceful day it is. Never mind. I am cross. Oh boy. My cross.",
+    "combinedPromptTemplate": "Scene: A dry, dynamic soundstage or voiceover recording room. Dead room acoustics with zero reverb, immediate presence suited for hyper-expressive animated dubbing.\nSample Context: Hyper-expressive, quirky, and theatrical. Fast-paced comic delivery with pitch shifts and sudden dynamic changes.\n\nSpeaker 1 - Cartoon Parodist (Charlie / Fin):\nYou let him go right now. Going to take more than that to stop Topham Hat. Help me on my day off and everything. Okay, you need to stop breaking things. Don't mess with me while I'm cross the audacity. Off. Wow, everyone. What a peaceful day it is. Never mind. I am cross. Oh boy. My cross."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Charlie (Energetic & Dynamic Cartoon)",
+    "alternativeVoices": [
+      "Fin (Humorous Narrator)",
+      "George (Classic British Animated)"
+    ],
+    "voiceSettings": {
+      "stability": 0.35,
+      "similarity_boost": 0.85,
+      "style": 0.4,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Năng lượng cực cao, biểu cảm kịch tính, lém lỉnh, hoạt kê cường điệu. Suitable for Khán giả mê hoạt hình 3D, parody meme và trẻ em lớn tuổi (8–16 tuổi).",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

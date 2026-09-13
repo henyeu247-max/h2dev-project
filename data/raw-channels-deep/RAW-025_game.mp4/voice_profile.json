@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-025",
+  "channelFolder": "RAW-025_game.mp4",
+  "sourceVideo": {
+    "videoId": "MibddujOjxU",
+    "title": "The entire story of Elden Ring, i guess (DLC Update)",
+    "url": "https://www.youtube.com/watch?v=MibddujOjxU",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-025_game.mp4/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-025.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam hài hước / Game Lore Storyteller",
+    "ageRange": "22 – 32 tuổi",
+    "toneAndStyle": "Hài hước châm biếm, mỉa mai, dí dỏm, tốc độ nói nhanh cuốn hút",
+    "targetAudience": "Game thủ, thanh thiếu niên yêu thích hoạt hình tóm tắt lore game",
+    "actualPaceWPM": "157 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "A clean domestic home-studio with reflection filters. Tight acoustical isolation, vocal forward in the mix with zero noticeable room slap.",
+    "sampleContext": "Casual, witty, slightly sarcastic and rapid-fire. Expressive inflection with comedic pauses and self-aware irony.",
+    "speakerTag": "Speaker 1 - Lore Comedian (Antoni / Liam)",
+    "sampleSpeechBlock": "No gods, no souls, no rot. And then it broke. Not shattered by some grand battle or divine betrayal. It just split on its own. The first and greatest fracture in all of reality. From that split came the outer gods. And like any dysfunctional family tree, each fragment immediately developed its own personality crisis. The greater will wanted control, order, law, and golden light at the expense of everything else. The frenzied flame wanted freedom by incinerating identity, memory, and probably your pets. The formless mother craved connection through blood, obsession, and deeply concerning boundaries. The scarlet rot whispered promises of beauty, growth, and decay. In the same breath, the dark moon just watched cold, distant, calculating.",
+    "combinedPromptTemplate": "Scene: A clean domestic home-studio with reflection filters. Tight acoustical isolation, vocal forward in the mix with zero noticeable room slap.\nSample Context: Casual, witty, slightly sarcastic and rapid-fire. Expressive inflection with comedic pauses and self-aware irony.\n\nSpeaker 1 - Lore Comedian (Antoni / Liam):\nNo gods, no souls, no rot. And then it broke. Not shattered by some grand battle or divine betrayal. It just split on its own. The first and greatest fracture in all of reality. From that split came the outer gods. And like any dysfunctional family tree, each fragment immediately developed its own personality crisis. The greater will wanted control, order, law, and golden light at the expense of everything else. The frenzied flame wanted freedom by incinerating identity, memory, and probably your pets. The formless mother craved connection through blood, obsession, and deeply concerning boundaries. The scarlet rot whispered promises of beauty, growth, and decay. In the same breath, the dark moon just watched cold, distant, calculating."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Antoni (Engaging & Modulated)",
+    "alternativeVoices": [
+      "Liam (Fast Casual Gamer)",
+      "Will (Expressive Explainer)"
+    ],
+    "voiceSettings": {
+      "stability": 0.38,
+      "similarity_boost": 0.82,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Hài hước châm biếm, mỉa mai, dí dỏm, tốc độ nói nhanh cuốn hút. Suitable for Game thủ, thanh thiếu niên yêu thích hoạt hình tóm tắt lore game.",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

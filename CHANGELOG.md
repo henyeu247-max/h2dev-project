@@ -1,3 +1,20 @@
+## 2026-09-13 — Nâng Cấp Toàn Diện: Trình Phát Quick Cinema Đồng Bộ Cho 100% Top Videos Live (Danh Sách Kênh Nổi Bật)
+
+- **Đồng Bộ Nút Xem Video Cho 100% Video Trong Danh Sách Top Videos Live:**
+  - Mọi video trong danh sách *"Top Video Đang Phát Trên YouTube (YouTube Live - N video)"* nay đều có nút `▶ Xem Video` nổi bật màu đỏ, cho phép bấm phát trực tiếp tại chỗ.
+  - **Giữ nguyên 100% kích thước Thumbnail & Layout Card cũ:** Không làm to phóng đại như player tham khảo phía trên, layout grid `minmax(280px, 1fr)` 3 cột nhỏ gọn, vuông vức và sắc nét.
+  - **Thumbnail Compact Clickable:** Thêm icon Play tròn đỏ ở tâm thumbnail có hiệu ứng hover zoom nhẹ (`scale(1.1)`), click vào thumbnail hoặc icon Play là mở video ngay.
+  - **Cụm 3 nút hành động tinh tế:**
+    1. `▶ Xem Video`: Kích hoạt Quick Cinema modal (16:9) tức thì trong app.
+    2. `↗ YT`: Mở tab mới xem trên YouTube.
+    3. `📜 Xem Sub, Lời Thoại & Kịch Bản AI →`: Mở modal xem phụ đề song ngữ 1:1 và prompt AI.
+- **Tối Ưu Hiệu Năng Nhanh - Nhẹ - Mượt Tuyệt Đối:**
+  - **Facade Lazy-Load:** 0 iframe ban đầu, không tốn dù chỉ 1 KB dữ liệu khi chưa click.
+  - **Clean Tear-down & Memory Recovery:** Khi đóng modal, xóa sạch iframe khỏi DOM (`modal.innerHTML = ''`), ngắt ngay âm thanh lập tức, trả lại 100% RAM và CPU.
+  - **Phím tắt `Escape` toàn cục:** Nhấn phím `Esc` để đóng modal video ngay lập tức; hệ thống tự động nhận diện và giữ nguyên trạng thái cuộn của modal hồ sơ kênh bên dưới.
+  - **Tích hợp chéo vào Modal Transcript:** Bổ sung nút `🎬 Xem Video Nhanh` ngay trên thanh công cụ của modal Sub song ngữ để người dùng đối chiếu video trực tiếp khi đang đọc kịch bản AI.
+- **Kiểm Định Playwright E2E:** 8/8 bước kiểm thử pass 100% (`scripts/test-live-videos-cinema.js`), chụp ảnh proof `docs/top-videos-compact-layout.png` và `docs/quick-cinema-open.png`.
+
 ## 2026-09-13 — Triển khai Video Demo Mẫu Đại Diện Tuyến Nội Dung (Facade Player & Quick Video Modal) 97 Kênh
 
 - **Triển Khai Khung Video Demo Mẫu (Featured Video Showcase) Trong Modal:**

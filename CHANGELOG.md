@@ -1,3 +1,33 @@
+## 2026-09-13 — Kiểm định toàn diện 31 ngách nghiệp vụ, chuẩn hóa 100% sức sống YPP và mở rộng bộ lọc bao quát 97 kênh mẫu
+
+- **Kiểm định 100% đối soát 31 Ngách Nghiệp Vụ:**
+  - 97 kênh mẫu phân bổ chuẩn xác 100% theo đúng bảng phân loại:
+    + Trẻ em / hoạt hình / IP: 10
+    + Địa lý / du lịch / đời sống nơi khác: 9
+    + Học tiếng Anh: 9
+    + Lịch sử tổng hợp / tái dựng: 8
+    + Lịch sử thực phẩm / đồ vật: 7
+    + Quân sự / địa chính trị: 6
+    + Tội phạm / bi kịch: 4 | Khoa học vũ trụ / tự nhiên / tiền sử: 4 | Cơ chế / công cụ / công nghệ: 4
+    + Giáo dục kiến thức nền: 3 | Triết lý / động lực: 3 | Kinh doanh / thương hiệu: 3 | Sức khỏe / Dinh dưỡng / Food Shock: 3
+    + Đức tin / Kinh Thánh: 2 | Khoa học nghe chậm: 2 | Thiên nhiên quanh nhà / thú cưng: 2 | Fitness / review sức khỏe: 2 | Động vật hoang dã / Sinh vật biển: 2 | Lịch sử đen tối / Bí ẩn: 2
+    + 12 ngách chuyên biệt (mỗi ngách 1 kênh): Đời sống senior, Làm vườn, Lịch sử dược chất, Lịch sử công nghiệp, Công nghệ / quy định thời sự, Tây Ban Nha / Mexico / Địa lý tò mò, Lịch sử Nhật Bản / Kịch AI 30-57 phút, Manga thực tế / Xã hội Nhật, Phật pháp / Động lực / Chữa lành, Lịch sử phát minh / Kỹ sư mạo hiểm, Sinh tồn / Cải tạo nhà hoang / ASMR, Sinh tồn / Thảm họa tự nhiên / Cứu trợ.
+- **Audit thực tế Vitality & YPP 14 kênh mới (RAW-096 đến RAW-109):**
+  - Trực tiếp probe YouTube live: 13 kênh `ACTIVE` ra video trong vòng 1–4 ngày gần nhất; 1 kênh `SLOW` (RAW-097) ra video kịch lịch sử AI chu kỳ 37 ngày/video; 100% đều bật kiếm tiền hợp lệ.
+  - Bổ sung `vitalityAudit` và `deepIntelligence` cho toàn bộ 14 kênh vào `data-tabs/raw-kenh-mau.json` và `raw-kenh-goc/metadata-full.json`.
+- **Nâng cấp trực quan bộ lọc Sức Sống YPP trong `index.html`:**
+  - Mở rộng thanh filter hiển thị đầy đủ 6 nhóm trạng thái bao quát 100% 97 kênh:
+    + `Tất cả · 97`
+    + `🟢 Đang hoạt động · 59` (<30 ngày)
+    + `🟡 Ra video chậm · 13` (1–2 tháng)
+    + `🟠 Ngủ đông · 16` (2–6 tháng)
+    + `🔴 Nguy cơ tắt YPP / Dừng lâu · 9` (8 dừng đăng >6 tháng + 1 ẩn/xóa video)
+    + `💰 Bật kiếm tiền (YPP Active) · 88`
+  - Đổi tiêu đề: "Kho Ảnh Raw & Dữ Liệu Bóc Tách 97 Kênh Mẫu Thực Chiến".
+- **Triển khai & Kiểm thử Playwright E2E:**
+  - Cài đặt hook tự động `post-receive` trên VPS (`/root/h2dev.git/hooks/post-receive`), commit và push `vps:main`.
+  - Playwright E2E test cả VPS live (`https://h2dev-learn.tonymmo.com/rawkenh`) và Local (`http://127.0.0.1:8899/rawkenh`): Đủ 97 cards, filter chuyển tab mượt mà, 100% PASS.
+
 ## 2026-09-13 — Bãi bỏ hoàn toàn mọi cơ chế kiểm duyệt/chặn dữ liệu, mở khóa 100% kho tư liệu và khôi phục Modal Sub Song Ngữ & Kịch Bản AI
 
 - **Xóa bỏ triệt để toàn bộ cơ chế kiểm duyệt/chặn file trong `server.js`:**

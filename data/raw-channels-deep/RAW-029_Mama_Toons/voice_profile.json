@@ -21,7 +21,11 @@
     "ageRange": "25 – 35 tuổi",
     "toneAndStyle": "Ấm áp, ân cần, giàu tình cảm, diễn xuất hoạt hình sinh động",
     "targetAudience": "Trẻ em mầm non (2–7 tuổi) và các bậc phụ huynh",
-    "actualPaceWPM": "32 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+    "actualPaceWPM": "32 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "American English (Kể chuyện mầm non / Ấm áp)"
   },
   "promptingStudio": {
     "scene": "A warm, brightly carpeted nursery storytelling room. Completely dry acoustics, ultra-soft high frequencies avoiding sibilance, gentle intimate presence.",

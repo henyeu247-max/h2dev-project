@@ -21,7 +21,11 @@
     "ageRange": "32 – 45 tuổi",
     "toneAndStyle": "Trầm mặc, thấu cảm, chân thực, khắc họa sự kiên cường của con người xứ tuyết",
     "targetAudience": "Khán giả tò mò về cuộc sống thực tế ở các vùng đất băng giá, Siberia, Bắc Cực",
-    "actualPaceWPM": "92 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "92 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "General American (Phóng sự đời sống Siberia sâu lắng)"
   },
   "promptingStudio": {
     "scene": "An insulated winter log-cabin audio setup. Ultra-quiet background, rich close-mic warmth conveying the frost-bitten chill and resilient human warmth of Siberia.",

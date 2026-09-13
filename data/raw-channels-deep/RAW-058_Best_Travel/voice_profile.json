@@ -21,7 +21,11 @@
     "ageRange": "28 – 40 tuổi",
     "toneAndStyle": "Ấm cúng, ngưỡng mộ, năng động, nhịp độ vừa phải dẫn dắt khám phá cuộc sống Việt",
     "targetAudience": "Khách du lịch quốc tế, cộng đồng expat và khán giả quan tâm Đông Nam Á",
-    "actualPaceWPM": "108 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "108 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "American English (Phóng viên du lịch thế giới)"
   },
   "promptingStudio": {
     "scene": "An international travel essay sound studio. Crisp clean acoustic treatment, forward voice presence conveying authentic warmth and genuine discovery.",

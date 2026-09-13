@@ -1,4 +1,5 @@
-// H2DEV Project server - serves the project at http://127.0.0.1:8899/
+// H2DEV Project server - serves the project at http://0.0.0.0:8899/
+// Toàn bộ dự án và tài liệu nghiên cứu mở 100%, không áp đặt cơ chế kiểm duyệt/chặn dữ liệu.
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -88,6 +89,7 @@ function readAdminState(){
   try { return JSON.parse(fs.readFileSync(ADMIN_STATE, 'utf8')); }
   catch (e) { return {role:'admin', version:1, updatedAt:0, watched:{}, favorites:[], recent:null}; }
 }
+
 function sendJson(res, status, value, isHead = false, extraHeaders = {}){
   const body=JSON.stringify(value);
   res.writeHead(status, {
@@ -100,61 +102,6 @@ function sendJson(res, status, value, isHead = false, extraHeaders = {}){
   });
   if (isHead) { res.end(); return; }
   res.end(body);
-}
-
-// Dữ liệu và tài liệu nghiên cứu của dự án H2DEV mở 100% để phục vụ tra cứu học tập.
-// Chỉ chặn các file nhạy cảm hệ thống / runtime server và thư mục rác nội bộ.
-const BLOCKED_SEGMENTS = new Set([
-  '_backup', '_private', '_audit', '_internal', '_archive', '_drafts',
-  'node_modules', 'inbox', '_verify', '.git', 'scripts',
-]);
-const BLOCKED_PREFIXES = [];
-const BLOCKED_FILE_NAMES = new Set([
-  'server.log', 'server-lan.log', 'server-lan.err.log', 'h2dev-tray.log',
-]);
-const BLOCKED_RUNTIME_FILES = new Set([
-  'server.js', 'package.json', 'package-lock.json', 'npm-shrinkwrap.json',
-  'tailwind.config.js', 'webpack.config.js', 'vite.config.js',
-  'rollup.config.js', 'tsconfig.json', '.babelrc', 'dockerfile',
-  '.gitignore',
-]);
-const BLOCKED_FILE_PATTERN = /(?:^screenshot[-_]|^test_modal_rect\.|\.(?:log|bak|tmp|part|partial|pyc))$/i;
-const BLOCKED_SCRIPT_EXTENSION = /\.(?:cmd|ps1|vbs|bat|sh)$/i;
-const BLOCKED_ENV_FILE = /^\.env(?:$|[._-]|rc$)/i;
-const NESTED_ARCHIVE_SEGMENT = /^_?(?:backups?|archives?|superseded)(?:$|[-_])/i;
-
-function matchesBlockedPrefix(parts, prefix) {
-  if (parts.length < prefix.length) return false;
-  return prefix.every((expected, index) => {
-    const actual = parts[index];
-    if (expected.endsWith('*')) return actual.startsWith(expected.slice(0, -1));
-    return actual === expected;
-  });
-}
-
-function hasNestedDataArchive(parts) {
-  const dataIndex = parts.indexOf('data');
-  if (dataIndex < 0) return false;
-  return parts.slice(dataIndex + 1).some((part) => NESTED_ARCHIVE_SEGMENT.test(part));
-}
-
-function isSensitiveFileName(name) {
-  const lower = String(name || '').toLowerCase();
-  return BLOCKED_FILE_NAMES.has(lower)
-    || BLOCKED_RUNTIME_FILES.has(lower)
-    || BLOCKED_FILE_PATTERN.test(name)
-    || BLOCKED_SCRIPT_EXTENSION.test(name)
-    || BLOCKED_ENV_FILE.test(name)
-    || /mcp-keys/i.test(name);
-}
-
-function isBlockedRelativePath(relative) {
-  const parts = relative.split(path.sep).filter(Boolean).map((part) => part.toLowerCase());
-  if (parts.some((part) => BLOCKED_SEGMENTS.has(part))) return true;
-  if (BLOCKED_PREFIXES.some((prefix) => matchesBlockedPrefix(parts, prefix))) return true;
-  if (hasNestedDataArchive(parts)) return true;
-  const base = parts[parts.length - 1] || '';
-  return isSensitiveFileName(base);
 }
 
 const server = http.createServer(async (req,res)=>{
@@ -175,9 +122,6 @@ const server = http.createServer(async (req,res)=>{
       sendJson(res, 200, readAdminState(), isHead, {'Allow': 'GET, HEAD, OPTIONS'});
       return;
     }
-    // Cross-device writes used to be unauthenticated.  Keep the read path for
-    // the existing UI, but disable writes until a separately designed auth
-    // boundary exists; do not invent or embed a shared secret here.
     sendJson(res, 405, {error:'Admin state writes are disabled'}, false, {'Allow': 'GET, HEAD, OPTIONS'});
     return;
   }
@@ -191,33 +135,17 @@ const server = http.createServer(async (req,res)=>{
     res.end('Method Not Allowed');
     return;
   }
-  let urlPath;
-  try {
-    urlPath = decodeURIComponent(req.url.split('?')[0]);
-  } catch (error) {
-    res.writeHead(400, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
-    res.end('400 Bad Request: malformed URL encoding');
-    return;
-  }
-  // Windows alternate data streams (for example .env::$DATA) must not be
-  // allowed to reach path.resolve or the filesystem.  Check after decoding so
-  // both literal and percent-encoded colons are rejected.
-  const urlSegments = urlPath.split('/');
-  if (urlSegments.some((segment) => segment.includes(':') || segment.includes('\0'))) {
-    res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'});
-    res.end('Forbidden');
-    return;
-  }
-  if(urlPath === '/') urlPath = '/index.html';
+  let urlPath = decodeURIComponent(req.url.split('?')[0]);
+  if(urlPath === '/' || urlPath === '') urlPath = '/index.html';
 
-  // Virtual semantic SPA clean routing
-  const lotrinhMatch = urlPath.match(/^\/(?:lotrinh|video)(?:\/([a-zA-Z0-9_.-]+))?\/?$/i);
-  if (lotrinhMatch) {
-    const skuSegment = lotrinhMatch[1];
-    if (skuSegment && !skuSegment.includes('.')) {
+  // Routing các trang giao diện chính
+  if (/^\/lotrinh(?:\/(.*))?$/i.test(urlPath)) {
+    const match = urlPath.match(/^\/lotrinh(?:\/(.*))?$/i);
+    const sku = match && match[1] ? match[1].replace(/\/+$/, '') : '';
+    if (sku) {
       urlPath = '/player.html';
-    } else if (!skuSegment) {
-      urlPath = /^\/lotrinh\/?$/i.test(urlPath) ? '/learn.html' : '/index.html';
+    } else {
+      urlPath = '/learn.html';
     }
   } else if (/^\/(?:tongquan|video|ngachxanh|kichban|nguonreup|kenh|rawkenh|chienluoc)\/?$/i.test(urlPath)) {
     urlPath = '/index.html';
@@ -225,43 +153,22 @@ const server = http.createServer(async (req,res)=>{
 
   let full = path.resolve(ROOT, '.'+urlPath);
   const relative = path.relative(ROOT, full);
+
+  // Bảo vệ cơ bản: Chống path traversal vượt ra ngoài thư mục dự án ROOT
   if(relative === '..' || relative.startsWith('..'+path.sep) || path.isAbsolute(relative)){
     res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
     res.end('Forbidden');
     return;
   }
-  if (isBlockedRelativePath(relative)) {
-    res.writeHead(403, {
-      'Content-Type':'text/plain; charset=utf-8',
-      'Access-Control-Allow-Origin':'*',
-      'X-Content-Type-Options':'nosniff',
-    });
+
+  // Bảo vệ duy nhất file secret cấu hình môi trường (.env)
+  const baseName = path.basename(full).toLowerCase();
+  if (baseName.startsWith('.env')) {
+    res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
     res.end('Forbidden');
     return;
   }
-  // Resolve existing symlinks/junctions before serving.  A public-looking
-  // alias must not bypass the blocked private/raw path policy.
-  try {
-    const resolvedFull = fs.realpathSync.native(full);
-    const resolvedRelative = path.relative(ROOT, resolvedFull);
-    if (resolvedRelative === '..' || resolvedRelative.startsWith('..'+path.sep) || path.isAbsolute(resolvedRelative) || isBlockedRelativePath(resolvedRelative)) {
-      res.writeHead(403, {
-        'Content-Type':'text/plain; charset=utf-8',
-        'Access-Control-Allow-Origin':'*',
-        'X-Content-Type-Options':'nosniff',
-      });
-      res.end('Forbidden');
-      return;
-    }
-    full = resolvedFull;
-  } catch (error) {
-    // Missing paths are handled by the normal 404 branch below.
-    if (error && error.code && error.code !== 'ENOENT' && error.code !== 'ENOTDIR') {
-      res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'});
-      res.end('Forbidden');
-      return;
-    }
-  }
+
   fs.stat(full, (err, st)=>{
     if(!err && st.isDirectory()){
       const idx = path.join(full, 'index.html');
@@ -293,5 +200,3 @@ server.listen(PORT, HOST, ()=>{
   console.log('H2DEV Project running at http://'+HOST+':'+PORT+'/');
   console.log('Root: '+ROOT);
 });
-
-// watch-test-20260815

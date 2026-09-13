@@ -5,7 +5,7 @@
     "videoId": "01aHhgMuE14",
     "title": "Baby Shark Doo Doo - Dance and Sing with KARAOKE! | BEST OF Nursery Rhymes | Sing Along With Me!",
     "url": "https://www.youtube.com/watch?v=01aHhgMuE14",
-    "timeWindow": "58s – 103s (45s)",
+    "timeWindow": "10s – 55s (45s)",
     "selectionMethod": "Smart Cut dựa trên mật độ thoại cao nhất trong Transcript"
   },
   "audioSpecs": {
@@ -27,8 +27,8 @@
     "scene": "A bright, cheerful, and acoustically treated preschool playroom or recording booth. Completely dry acoustics with close-mic presence and zero background reverb.",
     "sampleContext": "Playful, radiant, and childlike. Tone is bubbly, enthusiastic, and warm with bouncy rhythmic cadence, smiling articulation, and infectious energy.",
     "speakerTag": "Speaker 1 - Animated Storyteller (Gigi / Freya / Aoede)",
-    "sampleSpeechBlock": "Baby shark, doo-doo, doo-doo! Baby shark, doo-doo, doo-doo! Baby shark! Mommy shark, doo-doo, doo-doo! Mommy shark, doo-doo, doo-doo! Mommy shark! Let's go hunt, doo-doo, doo-doo! Run away, doo-doo, doo-doo! Safe at last, doo-doo, doo-doo!",
-    "combinedPromptTemplate": "Scene: A bright, cheerful, and acoustically treated preschool playroom or recording booth. Completely dry acoustics with close-mic presence and zero background reverb.\nSample Context: Playful, radiant, and childlike. Tone is bubbly, enthusiastic, and warm with bouncy rhythmic cadence, smiling articulation, and infectious energy.\n\nSpeaker 1 - Animated Storyteller (Gigi / Freya / Aoede):\nBaby shark, doo-doo, doo-doo! Baby shark, doo-doo, doo-doo! Baby shark! Mommy shark, doo-doo, doo-doo! Mommy shark, doo-doo, doo-doo! Mommy shark! Let's go hunt, doo-doo, doo-doo! Run away, doo-doo, doo-doo! Safe at last, doo-doo, doo-doo!"
+    "sampleSpeechBlock": "Mommy shark, doo-doo, doo-doo! Mommy shark! Daddy shark, doo-doo, doo-doo! Daddy shark! Grandma shark, doo-doo, doo-doo! Grandma shark! Grandpa shark, doo-doo, doo-doo! Grandpa shark! Let's go hunt, doo-doo, doo-doo! Let's go hunt!",
+    "combinedPromptTemplate": "Scene: A bright, cheerful, and acoustically treated preschool playroom or recording booth. Completely dry acoustics with close-mic presence and zero background reverb.\nSample Context: Playful, radiant, and childlike. Tone is bubbly, enthusiastic, and warm with bouncy rhythmic cadence, smiling articulation, and infectious energy.\n\nSpeaker 1 - Animated Storyteller (Gigi / Freya / Aoede):\nMommy shark, doo-doo, doo-doo! Mommy shark! Daddy shark, doo-doo, doo-doo! Daddy shark! Grandma shark, doo-doo, doo-doo! Grandma shark! Grandpa shark, doo-doo, doo-doo! Grandpa shark! Let's go hunt, doo-doo, doo-doo! Let's go hunt!"
   },
   "elevenlabsCloningConfiguration": {
     "recommendedModel": "ElevenLabs Multilingual v2",

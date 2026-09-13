@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-081",
+  "channelFolder": "RAW-081_Unknown_Planet",
+  "sourceVideo": {
+    "videoId": "AjwjDyZqPEM",
+    "title": "Impossible Places | The Most Extreme Places on Earth | 4K Tr",
+    "url": "https://www.youtube.com/watch?v=AjwjDyZqPEM",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-081_Unknown_Planet/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-081.mp3",
+    "fileSizeKB": 1056.3,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam sử thi / Thuyết minh kỳ quan cực hạn",
+    "ageRange": "40 – 55 tuổi",
+    "toneAndStyle": "Uy quyền, hùng vĩ, điện ảnh, tôn vinh sức mạnh thiên nhiên phi thường",
+    "targetAudience": "Khán giả đam mê khoa học Trái Đất, sinh tồn ở vùng cực hạn, phim 4K",
+    "actualPaceWPM": "74 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "A grand orchestral documentary narration studio. Controlled decay, deep low-end chest weight suitable for earth-shattering geological phenomena.",
+    "sampleContext": "Solemn, monumental, dramatic, and captivating. Steady, unhurried cadence emphasizing the immense danger and beauty of extreme earthly outposts.",
+    "speakerTag": "Speaker 1 - Earth Odyssey Narrator (Arnold / Marcus)",
+    "sampleSpeechBlock": "to its absolute edge. Villages cling to sheer cliffs. An entire communities remain cut off by brutal terrain and unforgiving climates. By all logic, life here shouldn't be possible. And yet people stay. They build homes, carve out paths, and carry on. With daily life balanced on the brink of danger. So why don't they leave?",
+    "combinedPromptTemplate": "Scene: A grand orchestral documentary narration studio. Controlled decay, deep low-end chest weight suitable for earth-shattering geological phenomena.\nSample Context: Solemn, monumental, dramatic, and captivating. Steady, unhurried cadence emphasizing the immense danger and beauty of extreme earthly outposts.\n\nSpeaker 1 - Earth Odyssey Narrator (Arnold / Marcus):\nto its absolute edge. Villages cling to sheer cliffs. An entire communities remain cut off by brutal terrain and unforgiving climates. By all logic, life here shouldn't be possible. And yet people stay. They build homes, carve out paths, and carry on. With daily life balanced on the brink of danger. So why don't they leave?"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Arnold (Epic Voiceover Master)",
+    "alternativeVoices": [
+      "Marcus (Authoritative Explorer)",
+      "George (Classic BBC Documentarian)"
+    ],
+    "voiceSettings": {
+      "stability": 0.5,
+      "similarity_boost": 0.9,
+      "style": 0.2,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Uy quyền, hùng vĩ, điện ảnh, tôn vinh sức mạnh thiên nhiên phi thường.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

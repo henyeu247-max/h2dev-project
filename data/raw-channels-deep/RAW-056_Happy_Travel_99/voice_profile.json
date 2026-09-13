@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-056",
+  "channelFolder": "RAW-056_Happy_Travel_99",
+  "sourceVideo": {
+    "videoId": "2ff1eL7oE9I",
+    "title": "Living in Siberia | The Truth About Life in the Land the Wor",
+    "url": "https://www.youtube.com/watch?v=2ff1eL7oE9I",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-056_Happy_Travel_99/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-056.mp3",
+    "fileSizeKB": 1056.9,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam sâu lắng / Phóng sự đời sống nơi khắc nghiệt",
+    "ageRange": "32 – 45 tuổi",
+    "toneAndStyle": "Trầm mặc, thấu cảm, chân thực, khắc họa sự kiên cường của con người xứ tuyết",
+    "targetAudience": "Khán giả tò mò về cuộc sống thực tế ở các vùng đất băng giá, Siberia, Bắc Cực",
+    "actualPaceWPM": "92 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "An insulated winter log-cabin audio setup. Ultra-quiet background, rich close-mic warmth conveying the frost-bitten chill and resilient human warmth of Siberia.",
+    "sampleContext": "Reflective, grounded, empathetic, and compelling. Steady cadence that respects the vast, quiet solitude of northern taiga settlements.",
+    "speakerTag": "Speaker 1 - Northern Chronicler (Adam / Liam)",
+    "sampleSpeechBlock": "Rivers wider than cities pour north toward the Arctic, and the horizon never quite arrives. Somewhere far below, chimney smoke rises from a village perfectly straight into the freezing air. This is Siberia. It stretches from the Eural Mountains all the way to the Pacific, larger than the United States and all of Europe put together. And for most of the world, its name means exactly one thing. Cold.",
+    "combinedPromptTemplate": "Scene: An insulated winter log-cabin audio setup. Ultra-quiet background, rich close-mic warmth conveying the frost-bitten chill and resilient human warmth of Siberia.\nSample Context: Reflective, grounded, empathetic, and compelling. Steady cadence that respects the vast, quiet solitude of northern taiga settlements.\n\nSpeaker 1 - Northern Chronicler (Adam / Liam):\nRivers wider than cities pour north toward the Arctic, and the horizon never quite arrives. Somewhere far below, chimney smoke rises from a village perfectly straight into the freezing air. This is Siberia. It stretches from the Eural Mountains all the way to the Pacific, larger than the United States and all of Europe put together. And for most of the world, its name means exactly one thing. Cold."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Adam (Warm & Grounded Storyteller)",
+    "alternativeVoices": [
+      "Liam (Observant Realist)",
+      "Eric (Conversational Essayist)"
+    ],
+    "voiceSettings": {
+      "stability": 0.42,
+      "similarity_boost": 0.85,
+      "style": 0.25,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Trầm mặc, thấu cảm, chân thực, khắc họa sự kiên cường của con người xứ tuyết.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

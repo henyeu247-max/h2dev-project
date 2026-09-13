@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-082",
+  "channelFolder": "RAW-082_Carolina_Living",
+  "sourceVideo": {
+    "videoId": "KG9blFjS9Uw",
+    "title": "12 South Carolina Towns So Dangerous Even Locals Avoid Them",
+    "url": "https://www.youtube.com/watch?v=KG9blFjS9Uw",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-082_Carolina_Living/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-082.mp3",
+    "fileSizeKB": 1056.3,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam bản địa Mỹ / Phóng viên điều tra địa phương & tội phạm xã hội",
+    "ageRange": "30 – 42 tuổi",
+    "toneAndStyle": "Thực tế, sắc bén, thẳng thắn, phong cách kể chuyện đời sống vùng sâu nước Mỹ",
+    "targetAudience": "Người dân Mỹ, người tìm hiểu về địa lý di cư, an ninh xã hội các bang Hoa Kỳ",
+    "actualPaceWPM": "149 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "A local investigative journalism studio. Sharp modern mic presence with close capture, zero fluff or artificial gloss, conveying gritty grassroots reality.",
+    "sampleContext": "Direct, serious, candid, and slightly cautionary. Conversational American cadence dissecting local crime statistics and regional abandonment.",
+    "speakerTag": "Speaker 1 - Regional Crime & Living Analyst (Liam / Roger)",
+    "sampleSpeechBlock": "State. And I'm not talking about the sanitized worst neighborhoods lists that just recycle the same two zip codes. I mean the towns where the violent crime rate runs more than six times the national average. Where a beloved beach vacation spot quietly posts a property crime rate north of 5,000 per 100,000 people. Where a town that literally gave America an astronaut now shows up near the top of the state's crime charts. And where an entire county lives with a poverty rate close to 1 in three. Every number in this video comes from real data. FBI sourced crime reporting compiled by sites like Area Vibes and Neighborhood Scout, Census",
+    "combinedPromptTemplate": "Scene: A local investigative journalism studio. Sharp modern mic presence with close capture, zero fluff or artificial gloss, conveying gritty grassroots reality.\nSample Context: Direct, serious, candid, and slightly cautionary. Conversational American cadence dissecting local crime statistics and regional abandonment.\n\nSpeaker 1 - Regional Crime & Living Analyst (Liam / Roger):\nState. And I'm not talking about the sanitized worst neighborhoods lists that just recycle the same two zip codes. I mean the towns where the violent crime rate runs more than six times the national average. Where a beloved beach vacation spot quietly posts a property crime rate north of 5,000 per 100,000 people. Where a town that literally gave America an astronaut now shows up near the top of the state's crime charts. And where an entire county lives with a poverty rate close to 1 in three. Every number in this video comes from real data. FBI sourced crime reporting compiled by sites like Area Vibes and Neighborhood Scout, Census"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Liam (Realist American Reporter)",
+    "alternativeVoices": [
+      "Roger (Direct Regional Chronicler)",
+      "Eric (Analytical Essayist)"
+    ],
+    "voiceSettings": {
+      "stability": 0.38,
+      "similarity_boost": 0.83,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Thực tế, sắc bén, thẳng thắn, phong cách kể chuyện đời sống vùng sâu nước Mỹ.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-021",
+  "channelFolder": "RAW-021_Hidden_Planet_Docs",
+  "sourceVideo": {
+    "videoId": "3wzZyaxhWmw",
+    "title": "TOP 10 Deepest Caves on Earth Even Scientists Were Afraid to",
+    "url": "https://www.youtube.com/watch?v=3wzZyaxhWmw",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript trường đoạn địa lý mở đầu"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-021_Hidden_Planet_Docs/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-021.mp3",
+    "fileSizeKB": 1056.3,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Bảo toàn âm sắc tự nhiên, hơi thở trầm ấm và tần số cao cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam trầm ấm / Thuyết minh tài liệu địa chất & thám hiểm",
+    "ageRange": "35 – 48 tuổi",
+    "toneAndStyle": "Trầm tĩnh, sâu lắng, bí ẩn, kích thích tò mò về thế giới lòng đất",
+    "targetAudience": "Khán giả mê địa lý, thám hiểm hang động, khoa học tự nhiên toàn cầu",
+    "actualPaceWPM": "138 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+  },
+  "promptingStudio": {
+    "scene": "An underground research outpost or quiet broadcast acoustics booth. Dry, close proximity effect with zero room reflections, giving an intimate sense of being deep subterranean.",
+    "sampleContext": "Atmospheric, hushed, awe-inspiring, and slightly eerie. Deliberate measured pacing with deep chest resonance, emphasizing the isolation of deep cave exploration.",
+    "speakerTag": "Speaker 1 - Subterranean Explorer (Marcus / Callum)",
+    "sampleSpeechBlock": "of years. They squeezed through passages so narrow that they had to exhale completely to fit their rib cages through the rock. At 2,212 m below the surface, deeper than six Empire State buildings stacked on top of each other, they found a river. It was flowing. They could hear it in the darkness before they saw it. Nobody knows where it goes. In another cave in the Mexican desert, crystals taller than a fourstory building grow in a chamber where the air temperature is 58° C and the humidity is 99%. A human being without protective equipment loses consciousness in roughly 10 minutes.",
+    "combinedPromptTemplate": "Scene: An underground research outpost or quiet broadcast acoustics booth. Dry, close proximity effect with zero room reflections, giving an intimate sense of being deep subterranean.\nSample Context: Atmospheric, hushed, awe-inspiring, and slightly eerie. Deliberate measured pacing with deep chest resonance, emphasizing the isolation of deep cave exploration.\n\nSpeaker 1 - Subterranean Explorer (Marcus / Callum):\nof years. They squeezed through passages so narrow that they had to exhale completely to fit their rib cages through the rock. At 2,212 m below the surface, deeper than six Empire State buildings stacked on top of each other, they found a river. It was flowing. They could hear it in the darkness before they saw it. Nobody knows where it goes. In another cave in the Mexican desert, crystals taller than a fourstory building grow in a chamber where the air temperature is 58° C and the humidity is 99%. A human being without protective equipment loses consciousness in roughly 10 minutes."
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Marcus (Authoritative & Deep Explorer)",
+    "alternativeVoices": [
+      "Callum (Intense & Deep Thriller)",
+      "Daniel (Atmospheric Storyteller)"
+    ],
+    "voiceSettings": {
+      "stability": 0.45,
+      "similarity_boost": 0.88,
+      "style": 0.2,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, authoritative, and engaging documentary voice for geography, cultural travel, and global exploration. Trầm tĩnh, sâu lắng, bí ẩn, kích thích tò mò về thế giới lòng đất.",
+    "dubbingProductionSOP": "Giọng đọc điềm đạm, giữ trường hơi sâu, thả câu chậm rãi khi miêu tả phong cảnh rộng và gia tăng nhịp kịch tính khi dẫn dắt vào các sự kiện lịch sử/nguy hiểm."
+  }
+}

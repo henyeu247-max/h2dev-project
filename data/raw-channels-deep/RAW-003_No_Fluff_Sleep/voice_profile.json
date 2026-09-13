@@ -1,0 +1,42 @@
+{
+  "rawId": "RAW-003",
+  "channelFolder": "RAW-003_No_Fluff_Sleep",
+  "sourceVideo": {
+    "videoId": "0pqYKLwfA3U",
+    "title": "Antibiotics & How Resistance Happens Explained Like You Are 5 (Pharmacology For Sleep & Study)",
+    "url": "https://www.youtube.com/watch?v=0pqYKLwfA3U",
+    "timeWindow": "67s – 112s (45s)",
+    "selectionMethod": "Smart Cut dựa trên mật độ thoại cao nhất trong Transcript"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-003_No_Fluff_Sleep/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-003.mp3",
+    "fileSizeKB": 1056.9,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam / Nữ giọng thiền định",
+    "ageRange": "35 – 50 tuổi",
+    "toneAndStyle": "Cực kỳ êm dịu, nhẹ nhàng, ấm áp, giúp an thần và đưa vào giấc ngủ",
+    "targetAudience": "Người mất ngủ, căng thẳng cần âm thanh thư giãn",
+    "actualPaceWPM": "184 từ/phút (Rất chậm (95 - 110 WPM), kéo dài nguyên âm nhẹ nhàng)"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "Brian (Deep & Hypnotic Soothing)",
+    "alternativeVoices": [
+      "Nicole (Whisper & Gentle Meditation)",
+      "George (Calm Night Voice)"
+    ],
+    "voiceSettings": {
+      "stability": 0.8,
+      "similarity_boost": 0.85,
+      "style": 0.0,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A soothing, quiet, and hypnotic voice with a slow cadence. Extremely calming, gentle, and relaxing for sleep stories and guided meditation.",
+    "dubbingProductionSOP": "Nói ở cường độ thì thầm hoặc nửa thì thầm (soft-spoken), nhịp thở đều, kết hợp âm thanh tiếng mưa rơi hoặc sóng biển nhẹ."
+  }
+}

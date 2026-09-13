@@ -20,7 +20,9 @@
     "hookArchetype": "Giễu nhại cốt truyện mở đầu ngay bằng hành động (Action-Packed Sarcastic Hook)",
     "openingFormula": "Không chào hỏi, không giới thiệu kênh. Bắt đầu bằng 1 nghịch lý ngớ ngẩn của thế giới game trong 0–15s đầu (VD: 'Thế giới này hoàn toàn yên bình cho đến khi các vị thần quyết định chia tài sản...')",
     "pacingStructure": "3 Hồi Giữ Chân Cao Độ: [0–15s] Hook nghịch lý giễu nhại -> [15–45s] Tóm tắt bối cảnh bi hài -> [45s–8m] 3–5 mắt xích cốt truyện kỳ quặc, mỗi 60–90s có 1 mini-cliffhanger -> [Kết thúc] Đúc kết triết lý ngược đời + Kêu gọi đăng ký kênh tự nhiên",
-    "masterScriptPrompt": "Bạn là chuyên gia biên kịch hoạt hình châm biếm hàng đầu (phong cách kênh game.mp4, Sam O'Nella và Casually Explained). Hãy viết kịch bản YouTube tóm tắt cốt truyện [TÊN GAME / CHỦ ĐỀ] bằng tiếng Anh chuẩn, phong cách mỉa mai, dí dỏm, nhịp đọc nhanh 155–160 từ/phút. Áp dụng cấu trúc 70% bám sát sự kiện lore gốc + 30% châm biếm so sánh đời thực. Mở đầu trực tiếp không chào hỏi. Chia kịch bản thành các phân đoạn 15–30 giây tương ứng với từng cảnh vẽ tay."
+    "masterScriptPromptShort": "Prompt chuẩn 70% bám sát lore game gốc + 30% châm biếm so sánh đời thực, chia 5–8 Part (800–1000 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional satirical scriptwriter specializing in humorous lore recaps and comedic 2D animated storyboards (style of game.mp4, Sam O'Nella Academy, and Casually Explained).\n\nI will provide you with [the full original transcript from a competitor’s gaming recap video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original lore events to preserve the canonical storyline and accurate game events.\n   - Add 30% new content: witty modern analogies, relatable real-world comparisons, self-deprecating humor, and sarcastic commentary.\n   - Writing style: Sarcastic, high-energy, deadpan humor, fast-paced (155–160 WPM), zero corporate fluff, no greeting, straight into the action.\n\n2. Technical Requirements:\n   - Divide the script into 5–8 parts (for a 6–10 minute animated video).\n   - Each part should be 800–1000 words, written in continuous natural dialogue with [Action Notes] for 2D stickman animator.\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor’s full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 (800–1000 words) according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: The entire story of Elden Ring, i guess (MibddujOjxU - 2.2M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md"
   },
   "packagingCTR": {
     "titleFormula": "[Hành động ngớ ngẩn] + [Tên Game/Nhân vật] + [Hậu quả tai hại / i guess]",
@@ -34,7 +36,14 @@
     "cleanThumbnailPrompt": "Dramatic minimalist 2D vector cartoon thumbnail, a funny stickman character screaming in panic clutching his head on the right side, a colossal shadowy dark fantasy knight towering on the left, high contrast vibrant flat colors, comic book line art, clean empty space for text overlay, YouTube thumbnail composition --ar 16:9"
   },
   "productionStack": {
-    "matchingSkill": "h2dev-hoat-hinh (Flux 2D Comic LoRA + Grok Image-to-Video)",
+    "matchingSkill": "h2dev-hoat-hinh",
+    "skillName": "Pipeline Hoạt Hình AI 5 Bước (Story-to-Animation)",
+    "skillDocPath": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
+    "skillRepoPath": "pipelines/hoat-hinh-ai/README.md",
+    "referenceVideo": {
+      "videoId": "MibddujOjxU",
+      "title": "The entire story of Elden Ring, i guess (DLC Update)"
+    },
     "scriptTool": "Claude 3.5 Sonnet (Chuyên sâu văn phong châm biếm dí dỏm)",
     "voiceTool": "ElevenLabs Model Multilingual v2, Giọng: Antoni (Settings: Stability 0.38, Similarity 0.82, Style 0.3)",
     "videoTool": "Vẽ tay trên iPad Procreate / Illustrator hoặc sinh khung hình 2D bằng Flux LoRA Comic -> Hậu kỳ CapCut PC",

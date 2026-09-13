@@ -1,0 +1,563 @@
+{
+  "base": "http://127.0.0.1:8899",
+  "checks": [
+    {
+      "name": "Card RAW-021 visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Card title Hidden Planet Docs",
+      "pass": true,
+      "detail": "title"
+    },
+    {
+      "name": "Card tags count 36",
+      "pass": true,
+      "detail": "36 tags no 0 tags"
+    },
+    {
+      "name": "Card revenue normalized",
+      "pass": true,
+      "detail": "$800–$2.400"
+    },
+    {
+      "name": "Card language flag EN",
+      "pass": true,
+      "detail": "flag"
+    },
+    {
+      "name": "RAW deep modal opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Modal contains: Hidden Planet Docs",
+      "pass": true,
+      "detail": "Hidden Planet Docs"
+    },
+    {
+      "name": "Modal contains: @HiddenPlanetDocs",
+      "pass": true,
+      "detail": "@HiddenPlanetDocs"
+    },
+    {
+      "name": "Modal contains: 89.200",
+      "pass": true,
+      "detail": "89.200"
+    },
+    {
+      "name": "Modal contains: $800 – $2.400/tháng",
+      "pass": true,
+      "detail": "$800 – $2.400/tháng"
+    },
+    {
+      "name": "Modal contains: Voice DNA Studio",
+      "pass": true,
+      "detail": "Voice DNA Studio"
+    },
+    {
+      "name": "Modal contains: Trạm Vũ Khí Tác Chiến",
+      "pass": true,
+      "detail": "Trạm Vũ Khí Tác Chiến"
+    },
+    {
+      "name": "Modal contains: Visual Directive",
+      "pass": true,
+      "detail": "Visual Directive"
+    },
+    {
+      "name": "Modal contains: Khuôn Đúc Kịch Bản",
+      "pass": true,
+      "detail": "Khuôn Đúc Kịch Bản"
+    },
+    {
+      "name": "Modal contains: Bao Bì CTR",
+      "pass": true,
+      "detail": "Bao Bì CTR"
+    },
+    {
+      "name": "Modal contains: Top Video Đang Phát Trên YouTube",
+      "pass": true,
+      "detail": "Top Video Đang Phát Trên YouTube"
+    },
+    {
+      "name": "Modal contains: Sao chép tất cả Tags",
+      "pass": true,
+      "detail": "Sao chép tất cả Tags"
+    },
+    {
+      "name": "Mission Control visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Button exists: Copy Master Shot",
+      "pass": true,
+      "detail": ".btn-copy-visual-prompt"
+    },
+    {
+      "name": "Clipboard Copy Master Shot length >= 500",
+      "pass": true,
+      "detail": "len=618"
+    },
+    {
+      "name": "Button exists: Copy Trọn Bộ Visual Kit",
+      "pass": true,
+      "detail": ".btn-copy-visual-kit"
+    },
+    {
+      "name": "Clipboard Copy Trọn Bộ Visual Kit length >= 3000",
+      "pass": true,
+      "detail": "len=4625"
+    },
+    {
+      "name": "Button exists: Copy Full Master Prompt",
+      "pass": true,
+      "detail": ".btn-copy-master-prompt"
+    },
+    {
+      "name": "Clipboard Copy Full Master Prompt length >= 1500",
+      "pass": true,
+      "detail": "len=1914"
+    },
+    {
+      "name": "Button exists: Copy AI Image Prompt",
+      "pass": true,
+      "detail": ".btn-copy-thumb-prompt"
+    },
+    {
+      "name": "Clipboard Copy AI Image Prompt length >= 600",
+      "pass": true,
+      "detail": "len=728"
+    },
+    {
+      "name": "Button exists: Copy Trọn Bộ Bao Bì CTR",
+      "pass": true,
+      "detail": ".btn-copy-full-packaging"
+    },
+    {
+      "name": "Clipboard Copy Trọn Bộ Bao Bì CTR length >= 1500",
+      "pass": true,
+      "detail": "len=2032"
+    },
+    {
+      "name": "Button exists: Sao chép tất cả Tags",
+      "pass": true,
+      "detail": "#btn-copy-raw-tags"
+    },
+    {
+      "name": "Clipboard Sao chép tất cả Tags length >= 500",
+      "pass": true,
+      "detail": "len=681"
+    },
+    {
+      "name": "Button exists: Copy Scene",
+      "pass": true,
+      "detail": ".btn-copy-scene"
+    },
+    {
+      "name": "Clipboard Copy Scene length >= 100",
+      "pass": true,
+      "detail": "len=176"
+    },
+    {
+      "name": "Button exists: Copy Context",
+      "pass": true,
+      "detail": ".btn-copy-context"
+    },
+    {
+      "name": "Clipboard Copy Context length >= 100",
+      "pass": true,
+      "detail": "len=161"
+    },
+    {
+      "name": "Button exists: Copy Speech Block",
+      "pass": true,
+      "detail": ".btn-copy-speech-block"
+    },
+    {
+      "name": "Clipboard Copy Speech Block length >= 500",
+      "pass": true,
+      "detail": "len=603"
+    },
+    {
+      "name": "Button exists: Copy Trọn Bộ Audio Prompt",
+      "pass": true,
+      "detail": ".btn-copy-combined-prompt"
+    },
+    {
+      "name": "Clipboard Copy Trọn Bộ Audio Prompt length >= 900",
+      "pass": true,
+      "detail": "len=1023"
+    },
+    {
+      "name": "Button exists: Copy Voice Design",
+      "pass": true,
+      "detail": ".btn-copy-voice-design"
+    },
+    {
+      "name": "Clipboard Copy Voice Design length >= 100",
+      "pass": true,
+      "detail": "len=176"
+    },
+    {
+      "name": "Top video transcript buttons count 10",
+      "pass": true,
+      "detail": "count=10"
+    },
+    {
+      "name": "Transcript modal opens 1/10 Q1tXposwAAo",
+      "pass": true,
+      "detail": "textLen=70725"
+    },
+    {
+      "name": "Transcript Q1tXposwAAo has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript Q1tXposwAAo has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript Q1tXposwAAo has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript Q1tXposwAAo has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript Q1tXposwAAo active tab copy non-empty",
+      "pass": true,
+      "detail": "len=74195"
+    },
+    {
+      "name": "Transcript modal opens 2/10 MW0FKI4jezU",
+      "pass": true,
+      "detail": "textLen=78281"
+    },
+    {
+      "name": "Transcript MW0FKI4jezU has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript MW0FKI4jezU has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript MW0FKI4jezU has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript MW0FKI4jezU has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript MW0FKI4jezU active tab copy non-empty",
+      "pass": true,
+      "detail": "len=82402"
+    },
+    {
+      "name": "Transcript modal opens 3/10 p9013S0rOuE",
+      "pass": true,
+      "detail": "textLen=84598"
+    },
+    {
+      "name": "Transcript p9013S0rOuE has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript p9013S0rOuE has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript p9013S0rOuE has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript p9013S0rOuE has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript p9013S0rOuE active tab copy non-empty",
+      "pass": true,
+      "detail": "len=88966"
+    },
+    {
+      "name": "Transcript modal opens 4/10 3wzZyaxhWmw",
+      "pass": true,
+      "detail": "textLen=75645"
+    },
+    {
+      "name": "Transcript 3wzZyaxhWmw has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript 3wzZyaxhWmw has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript 3wzZyaxhWmw has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript 3wzZyaxhWmw has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript 3wzZyaxhWmw active tab copy non-empty",
+      "pass": true,
+      "detail": "len=79553"
+    },
+    {
+      "name": "Transcript modal opens 5/10 Hz-8h0TK8wY",
+      "pass": true,
+      "detail": "textLen=67839"
+    },
+    {
+      "name": "Transcript Hz-8h0TK8wY has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript Hz-8h0TK8wY has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript Hz-8h0TK8wY has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript Hz-8h0TK8wY has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript Hz-8h0TK8wY active tab copy non-empty",
+      "pass": true,
+      "detail": "len=71509"
+    },
+    {
+      "name": "Transcript modal opens 6/10 ieq4c-4vGh0",
+      "pass": true,
+      "detail": "textLen=84314"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 active tab copy non-empty",
+      "pass": true,
+      "detail": "len=89004"
+    },
+    {
+      "name": "Transcript modal opens 7/10 Vj7sOGyCAoQ",
+      "pass": true,
+      "detail": "textLen=67556"
+    },
+    {
+      "name": "Transcript Vj7sOGyCAoQ has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript Vj7sOGyCAoQ has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript Vj7sOGyCAoQ has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript Vj7sOGyCAoQ has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript Vj7sOGyCAoQ active tab copy non-empty",
+      "pass": true,
+      "detail": "len=71358"
+    },
+    {
+      "name": "Transcript modal opens 8/10 gQOQJ49LsfE",
+      "pass": true,
+      "detail": "textLen=65751"
+    },
+    {
+      "name": "Transcript gQOQJ49LsfE has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript gQOQJ49LsfE has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript gQOQJ49LsfE has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript gQOQJ49LsfE has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript gQOQJ49LsfE active tab copy non-empty",
+      "pass": true,
+      "detail": "len=69087"
+    },
+    {
+      "name": "Transcript modal opens 9/10 TvgyAd8K1PQ",
+      "pass": true,
+      "detail": "textLen=60802"
+    },
+    {
+      "name": "Transcript TvgyAd8K1PQ has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript TvgyAd8K1PQ has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript TvgyAd8K1PQ has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript TvgyAd8K1PQ has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript TvgyAd8K1PQ active tab copy non-empty",
+      "pass": true,
+      "detail": "len=64113"
+    },
+    {
+      "name": "Transcript modal opens 10/10 cDFrCFvJU-k",
+      "pass": true,
+      "detail": "textLen=69903"
+    },
+    {
+      "name": "Transcript cDFrCFvJU-k has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript cDFrCFvJU-k has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript cDFrCFvJU-k has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript cDFrCFvJU-k has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript cDFrCFvJU-k active tab copy non-empty",
+      "pass": true,
+      "detail": "len=73910"
+    },
+    {
+      "name": "Transcript opened unique 10 videos",
+      "pass": true,
+      "detail": "Q1tXposwAAo,MW0FKI4jezU,p9013S0rOuE,3wzZyaxhWmw,Hz-8h0TK8wY,ieq4c-4vGh0,Vj7sOGyCAoQ,gQOQJ49LsfE,TvgyAd8K1PQ,cDFrCFvJU-k"
+    },
+    {
+      "name": "Link exists: SOP Skill",
+      "pass": true,
+      "detail": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md"
+    },
+    {
+      "name": "HTTP 200: SOP Skill",
+      "pass": true,
+      "detail": "200 assets/docs/tai-lieu/pipeline-everyday-history-geography.md"
+    },
+    {
+      "name": "Link exists: Repo Code",
+      "pass": true,
+      "detail": "raw-niches/US_EverydayHistory/README.md"
+    },
+    {
+      "name": "HTTP 200: Repo Code",
+      "pass": true,
+      "detail": "200 raw-niches/US_EverydayHistory/README.md"
+    },
+    {
+      "name": "Link exists: North Effect SOP",
+      "pass": true,
+      "detail": "docs/NOI-BO/prompt/north-effect.md"
+    },
+    {
+      "name": "HTTP 200: North Effect SOP",
+      "pass": true,
+      "detail": "200 docs/NOI-BO/prompt/north-effect.md"
+    },
+    {
+      "name": "Proof screenshot saved",
+      "pass": true,
+      "detail": "docs/proof-raw021-full-audit.png"
+    },
+    {
+      "name": "No console errors",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "No failed local requests",
+      "pass": true,
+      "detail": "0"
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "pass": true
+}

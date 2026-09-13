@@ -1,5 +1,5 @@
 {
-  "base": "https://h2dev-learn.tonymmo.com",
+  "base": "http://127.0.0.1:8899",
   "checks": [
     {
       "name": "Card RAW-021 visible",
@@ -179,7 +179,7 @@
     {
       "name": "Clipboard Copy Speech Block length >= 500",
       "pass": true,
-      "detail": "len=603"
+      "detail": "len=671"
     },
     {
       "name": "Button exists: Copy Trọn Bộ Audio Prompt",
@@ -189,7 +189,7 @@
     {
       "name": "Clipboard Copy Trọn Bộ Audio Prompt length >= 900",
       "pass": true,
-      "detail": "len=1023"
+      "detail": "len=1091"
     },
     {
       "name": "Button exists: Copy Voice Design",

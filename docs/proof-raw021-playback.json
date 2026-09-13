@@ -1,0 +1,167 @@
+{
+  "base": "https://h2dev-learn.tonymmo.com",
+  "total": 32,
+  "passed": 32,
+  "checks": [
+    {
+      "name": "Lấy được danh sách video trong modal",
+      "pass": true,
+      "detail": "count=10"
+    },
+    {
+      "name": "Video Q1tXposwAAo mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video Q1tXposwAAo iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/Q1tXposwAAo?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video Q1tXposwAAo phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":5.550999,\"paused\":false,\"duration\":2112.061}"
+    },
+    {
+      "name": "Video MW0FKI4jezU mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video MW0FKI4jezU iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/MW0FKI4jezU?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video MW0FKI4jezU phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":5.86991,\"paused\":false,\"duration\":2318.721}"
+    },
+    {
+      "name": "Video p9013S0rOuE mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video p9013S0rOuE iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/p9013S0rOuE?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video p9013S0rOuE phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":6.091815,\"paused\":false,\"duration\":2517.261}"
+    },
+    {
+      "name": "Video 3wzZyaxhWmw mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video 3wzZyaxhWmw iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/3wzZyaxhWmw?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video 3wzZyaxhWmw phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":6.093151,\"paused\":false,\"duration\":2388.841}"
+    },
+    {
+      "name": "Video Hz-8h0TK8wY mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video Hz-8h0TK8wY iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/Hz-8h0TK8wY?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video Hz-8h0TK8wY phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":5.807698,\"paused\":false,\"duration\":1979.621}"
+    },
+    {
+      "name": "Video ieq4c-4vGh0 mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video ieq4c-4vGh0 iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/ieq4c-4vGh0?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video ieq4c-4vGh0 phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":6.086225,\"paused\":false,\"duration\":2648.041}"
+    },
+    {
+      "name": "Video Vj7sOGyCAoQ mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video Vj7sOGyCAoQ iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/Vj7sOGyCAoQ?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video Vj7sOGyCAoQ phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":6.09684,\"paused\":false,\"duration\":1944.041}"
+    },
+    {
+      "name": "Video gQOQJ49LsfE mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video gQOQJ49LsfE iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/gQOQJ49LsfE?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video gQOQJ49LsfE phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":6.136839,\"paused\":false,\"duration\":1880.041}"
+    },
+    {
+      "name": "Video TvgyAd8K1PQ mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video TvgyAd8K1PQ iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/TvgyAd8K1PQ?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video TvgyAd8K1PQ phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":5.991964,\"paused\":false,\"duration\":1832.041}"
+    },
+    {
+      "name": "Video cDFrCFvJU-k mở được modal player",
+      "pass": true,
+      "detail": "visible"
+    },
+    {
+      "name": "Video cDFrCFvJU-k iframe player load",
+      "pass": true,
+      "detail": "https://www.youtube-nocookie.com/embed/cDFrCFvJU-k?autoplay=1&rel=0&modestbranding=1"
+    },
+    {
+      "name": "Video cDFrCFvJU-k phát được trong app",
+      "pass": true,
+      "detail": "{\"readyState\":4,\"currentTime\":5.113655,\"paused\":false,\"duration\":2063.041}"
+    },
+    {
+      "name": "Không có console error",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

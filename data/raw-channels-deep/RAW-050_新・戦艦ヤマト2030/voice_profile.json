@@ -1,0 +1,49 @@
+{
+  "rawId": "RAW-050",
+  "channelFolder": "RAW-050_新・戦艦ヤマト2030",
+  "sourceVideo": {
+    "videoId": "j9DgLk3S4wo",
+    "title": "新・戦艦ヤマト2030台湾有事編6 47-52話",
+    "url": "https://www.youtube.com/watch?v=j9DgLk3S4wo",
+    "timeWindow": "10s – 55s (45s)",
+    "selectionMethod": "Smart Cut bóc tách từ transcript và phân đoạn thoại nổi bật"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-050_新・戦艦ヤマト2030/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-050.mp3",
+    "fileSizeKB": 1056.0,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam trung niên / Thuyết minh chiến tranh viễn tưởng (Tiếng Nhật)",
+    "ageRange": "35 – 50 tuổi",
+    "toneAndStyle": "Hào hùng, nghiêm trang, đậm chất anime khoa học viễn tưởng cổ điển",
+    "targetAudience": "Khán giả yêu thích anime sci-fi, fan Yamato, văn hóa quân sự Nhật Bản",
+    "actualPaceWPM": "8 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+  },
+  "promptingStudio": {
+    "scene": "An expansive cinema dubbing hall. Controlled reverberation, authoritative broadcast presence suitable for epic space naval warfare.",
+    "sampleContext": "Solemn, commanding, heroic, and cinematic. Deliberate Japanese rhythm with profound gravity and intense resolve.",
+    "speakerTag": "Speaker 1 - Yamato Commander (Anime Sci-Fi Narrator)",
+    "sampleSpeechBlock": "日本政府は 大和を沖縄に派遣したが[音楽] 大和もまたドローン艦隊に襲われた。 米軍との協力で私たちは追い詰められた状況を乗り越えた。 しかしその後アメリカは政治的な理由から台湾への支援を中断すると決めた。 多くのものがそれを中国のドローンだと疑った。",
+    "combinedPromptTemplate": "Scene: An expansive cinema dubbing hall. Controlled reverberation, authoritative broadcast presence suitable for epic space naval warfare.\nSample Context: Solemn, commanding, heroic, and cinematic. Deliberate Japanese rhythm with profound gravity and intense resolve.\n\nSpeaker 1 - Yamato Commander (Anime Sci-Fi Narrator):\n日本政府は 大和を沖縄に派遣したが[音楽] 大和もまたドローン艦隊に襲われた。 米軍との協力で私たちは追い詰められた状況を乗り越えた。 しかしその後アメリカは政治的な理由から台湾への支援を中断すると決めた。 多くのものがそれを中国のドローンだと疑った。"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "George (Noble Anime Captain) / Takumi (Japanese Voice)",
+    "alternativeVoices": [
+      "Clyde (War Veteran)",
+      "Arnold (Deep Epic)"
+    ],
+    "voiceSettings": {
+      "stability": 0.5,
+      "similarity_boost": 0.9,
+      "style": 0.2,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A dynamic, clear voice for animated content. Hào hùng, nghiêm trang, đậm chất anime khoa học viễn tưởng cổ điển. Suitable for Khán giả yêu thích anime sci-fi, fan Yamato, văn hóa quân sự Nhật Bản.",
+    "dubbingProductionSOP": "Giọng đọc diễn hoạt theo nhịp cắt của hình ảnh, nhấn mạnh các mấu chốt kịch tính và giữ năng lượng cao suốt trường đoạn."
+  }
+}

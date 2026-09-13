@@ -41,9 +41,9 @@ function assert(cond, msg, details = {}) {
   });
 
   try {
-    await page.goto(BASE, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    await page.locator('.tab-btn[data-tab="rawkenh"]').first().click();
-    await page.waitForTimeout(1200);
+    const rawUrl = BASE.replace(/\/$/, '') + '/rawkenh';
+    await page.goto(rawUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await page.waitForTimeout(1800);
 
     const card = page.locator('article[data-raw-card="RAW-021"]');
     await card.waitFor({ state: 'visible', timeout: 10000 });
@@ -120,9 +120,15 @@ function assert(cond, msg, details = {}) {
       seen.push(vid);
       await btn.scrollIntoViewIfNeeded();
       await btn.click();
-      await page.waitForTimeout(450);
       const transcriptModal = page.locator('#video-transcript-modal');
-      await transcriptModal.waitFor({ state: 'visible', timeout: 5000 });
+      await transcriptModal.waitFor({ state: 'visible', timeout: 10000 });
+      await transcriptModal.locator('.sub-tab-btn').first().waitFor({ state: 'visible', timeout: 15000 });
+      await transcriptModal.locator('#sub-content-body').waitFor({ state: 'visible', timeout: 15000 });
+      await page.waitForFunction(() => {
+        const m = document.getElementById('video-transcript-modal');
+        const body = document.getElementById('sub-content-body');
+        return m && m.style.display !== 'none' && body && body.innerText && body.innerText.length > 1000;
+      }, null, { timeout: 15000 });
       const tText = await transcriptModal.innerText();
       add(`Transcript modal opens ${i + 1}/10 ${vid}`, tText.includes(vid) || tText.length > 1000, `textLen=${tText.length}`);
       const tabTexts = ['Song ngữ 1:1', 'Tiếng Việt', 'Tiếng Gốc', 'Kịch bản AI'];

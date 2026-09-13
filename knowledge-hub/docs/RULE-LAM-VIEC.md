@@ -30,6 +30,10 @@
 - Cấm dừng giữa chừng vì 1 hướng fail → thử ≥3 vector (tool khác).
 - Blocker thật → báo thẳng + đầy đủ đã thử gì.
 
+### 1.6 Tiêu chuẩn hoàn mỹ chi tiết & Trách nhiệm chuyên gia (Zero-Flaw Standard)
+- **Trách nhiệm tự thân 100%:** Rà soát từng chi tiết nhỏ nhất (hiển thị Markdown, bảng biểu, mũi tên Unicode `→`, thẻ HTML, độ tương phản, chính tả, tính toàn vẹn kỹ thuật) là trách nhiệm tuyệt đối của em, KHÔNG PHẢI việc của anh.
+- **Tiêu chuẩn "Không hạt cát":** Tuyệt đối không để sót bất kỳ hạt sạn hiển thị nào (mã LaTeX thô `$\rightarrow$`, thẻ `<br>` văng text, format lệch, link chết, lỗi giao diện). Trước khi báo cáo hoàn thành, bắt buộc phải tự soi xét kỹ lưỡng, chạy kiểm thử trình duyệt thực tế và kiểm chứng trực quan bằng mắt.
+
 ---
 
 ## PHẦN 2 — QUY TRÌNH VERIFY NGÁCH (bắt buộc trước khi làm)

@@ -1984,9 +1984,10 @@
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
 
-        // Fetch deep profile and top videos
+        // Fetch deep profile, top videos and voice profile
         let profile = null;
         let topVideos = null;
+        let voiceProfile = null;
         if (dossierPath) {
           try {
             const pRes = await fetch(dossierPath + '/channel-profile.json');
@@ -1995,6 +1996,10 @@
           try {
             const tvRes = await fetch(dossierPath + '/top-videos.json');
             if (tvRes.ok) topVideos = await tvRes.json();
+          } catch(e) {}
+          try {
+            const vRes = await fetch(dossierPath + '/voice_profile.json');
+            if (vRes.ok) voiceProfile = await vRes.json();
           } catch(e) {}
         }
 
@@ -2087,6 +2092,30 @@
                   <span>💡</span> Đánh Giá Sức Khỏe Kênh & Lời Khuyên Khai Thác:
                 </div>
                 <p style="font-size:0.78rem; color:#fef3c7; line-height:1.55; margin-top:0.35rem;">${esc(vA.monetizationAdvisory)}</p>
+              </div>` : ''}
+
+              <!-- Section: Mẫu Giọng Chuẩn Của Kênh & Gợi Ý Clone Voice (Voice DNA Studio) -->
+              ${voiceProfile ? `
+              <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1.1rem; display:flex; flex-direction:column; gap:0.75rem;">
+                <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+                  <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
+                    <span>🎙️</span> Mẫu Giọng Chuẩn Kênh (${voiceProfile.sourceVideo ? voiceProfile.sourceVideo.timeWindow : '40s'} • Mono 44.1kHz):
+                  </div>
+                  <div style="display:flex; align-items:center; gap:0.5rem;">
+                    <a href="${esc(voiceProfile.sampleAudio.publicUrl)}" download="${esc(rawId)}_voice_sample.mp3" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.3rem;">⬇️ Tải MP3 Clone Voice</a>
+                  </div>
+                </div>
+                <audio controls style="width:100%; height:40px; border-radius:0.5rem; outline:none;" src="${esc(voiceProfile.sampleAudio.publicUrl)}"></audio>
+                <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:0.85rem; font-size:0.8rem; color:#cbd5e1; display:flex; flex-direction:column; gap:0.35rem;">
+                  <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+                    <div><strong style="color:#38bdf8;">Đặc tính giọng:</strong> ${esc(voiceProfile.voiceCharacteristics.genderEstimate)} • ${esc(voiceProfile.voiceCharacteristics.ageEstimate)}</div>
+                    <div><strong style="color:#f59e0b;">Tốc độ:</strong> ${esc(voiceProfile.voiceCharacteristics.estimatedPace)}</div>
+                  </div>
+                  <div><strong style="color:#10b981;">Tông giọng:</strong> ${esc(voiceProfile.voiceCharacteristics.toneAndStyle)}</div>
+                  <div style="margin-top:0.35rem; padding-top:0.35rem; border-top:1px solid #1e293b;">
+                    <strong style="color:#e2e8f0;">Gợi ý ElevenLabs tương đương:</strong> <span style="color:#a855f7; font-weight:600;">${esc((voiceProfile.aiVoiceCloningGuide.elevenlabsRecommendedVoices || []).join(' · '))}</span>
+                  </div>
+                </div>
               </div>` : ''}
 
               <!-- Section: Bộ Tags Kênh (Channel Tags) -->

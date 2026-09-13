@@ -1371,7 +1371,10 @@
       const sortedNiches = Object.keys(nicheCounts).sort((a, b) => nicheCounts[b] - nicheCounts[a]);
 
       const activeCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'ACTIVE').length;
-      const riskCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'DORMANT_LONG').length;
+      const slowCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'SLOW').length;
+      const dormantMidCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'DORMANT_MID').length;
+      const riskCount = records.filter(r => r.vitalityAudit && (r.vitalityAudit.healthStatus === 'DORMANT_LONG' || r.vitalityAudit.healthStatus === 'DEAD_OR_PURGED' || r.vitalityAudit.monetizationStatus === 'MONETIZED_AT_RISK')).length;
+      const yppCount = records.filter(r => r.vitalityAudit && (r.vitalityAudit.monetizationStatus === 'MONETIZED_ACTIVE' || r.vitalityAudit.monetizationStatus === 'MONETIZED')).length;
 
       const filtered = records.filter(r => {
         const ch = r.channel || {};
@@ -1383,7 +1386,10 @@
         const n = (r.editorialNiche || r.niche || 'Chưa phân loại').toLowerCase();
         if (currentNiche && (r.editorialNiche || r.niche || 'Chưa phân loại') !== currentNiche) return false;
         if (state.rawVitality === 'active' && vA.healthStatus !== 'ACTIVE') return false;
-        if (state.rawVitality === 'risk' && vA.healthStatus !== 'DORMANT_LONG') return false;
+        if (state.rawVitality === 'slow' && vA.healthStatus !== 'SLOW') return false;
+        if (state.rawVitality === 'dormant' && vA.healthStatus !== 'DORMANT_MID') return false;
+        if (state.rawVitality === 'risk' && vA.healthStatus !== 'DORMANT_LONG' && vA.healthStatus !== 'DEAD_OR_PURGED' && vA.monetizationStatus !== 'MONETIZED_AT_RISK') return false;
+        if (state.rawVitality === 'ypp' && vA.monetizationStatus !== 'MONETIZED_ACTIVE' && vA.monetizationStatus !== 'MONETIZED') return false;
         const rid = (r.id || '').toLowerCase();
         if (q && !title.includes(q) && !handle.includes(q) && !fname.includes(q) && !n.includes(q) && !rid.includes(q)) return false;
         return true;
@@ -1407,7 +1413,7 @@
     <div class="flex items-start gap-3">
       <span class="text-lg shrink-0">📸</span>
       <div class="min-w-0">
-        <h2 class="text-sm font-bold text-white">Kho Ảnh Raw & Dữ Liệu Bóc Tách 83 Kênh Mẫu Thực Chiến</h2>
+        <h2 class="text-sm font-bold text-white">Kho Ảnh Raw & Dữ Liệu Bóc Tách ${records.length} Kênh Mẫu Thực Chiến</h2>
         <p class="text-xs text-gray-300 mt-1 leading-relaxed">Hiển thị trực quan 100% ảnh chụp màn hình kênh đối thủ thực tế kèm số liệu bóc tách Vision AI, OCR và kiểm định sức sống YPP. Bấm vào ảnh để xem kích thước đầy đủ.</p>
       </div>
     </div>
@@ -1429,7 +1435,10 @@
       <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Tình trạng sống & YPP:</div>
       <button type="button" data-raw-vitality="" class="filter-btn ${!state.rawVitality ? 'active' : ''}">Tất cả · ${records.length}</button>
       <button type="button" data-raw-vitality="active" class="filter-btn ${state.rawVitality === 'active' ? 'active' : ''}">🟢 Đang hoạt động · ${activeCount}</button>
+      <button type="button" data-raw-vitality="slow" class="filter-btn ${state.rawVitality === 'slow' ? 'active' : ''}">🟡 Ra video chậm · ${slowCount}</button>
+      <button type="button" data-raw-vitality="dormant" class="filter-btn ${state.rawVitality === 'dormant' ? 'active' : ''}">🟠 Ngủ đông · ${dormantMidCount}</button>
       <button type="button" data-raw-vitality="risk" class="filter-btn ${state.rawVitality === 'risk' ? 'active' : ''}">🔴 Nguy cơ tắt YPP / Dừng lâu · ${riskCount}</button>
+      <button type="button" data-raw-vitality="ypp" class="filter-btn ${state.rawVitality === 'ypp' ? 'active' : ''}">💰 Bật kiếm tiền (YPP Active) · ${yppCount}</button>
     </div>
   </div>
   <div class="space-y-6">

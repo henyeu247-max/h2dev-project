@@ -1,0 +1,32 @@
+{
+  "rawId": "RAW-001",
+  "channelFolder": "RAW-001_Peekaboo_Songs",
+  "sourceVideo": {
+    "videoId": "01aHhgMuE14",
+    "title": "Baby Shark Doo Doo - Dance and Sing with KARAOKE! | BEST OF Nursery Rhymes | Sing Along With Me!",
+    "url": "https://www.youtube.com/watch?v=01aHhgMuE14",
+    "timeWindow": "20s – 60s (40s)"
+  },
+  "sampleAudio": {
+    "localPath": "data/raw-channels-deep/RAW-001_Peekaboo_Songs/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-001.mp3",
+    "fileSizeKB": 626.3,
+    "format": "MP3 Mono 44.1kHz 128kbps (Chuẩn hóa LUFS -16)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nữ / Trẻ em",
+    "ageEstimate": "Trẻ em / Thiếu nhi (6-12 tuổi) hoặc Nữ trẻ trung (20-25)",
+    "toneAndStyle": "Trong trẻo, tươi vui, giàu nhạc điệu, nhí nhảnh",
+    "estimatedPace": "120 - 135 từ/phút (Vừa phải, phát âm tròn vành rõ chữ)",
+    "nicheCategory": "Trẻ em / hoạt hình / IP"
+  },
+  "aiVoiceCloningGuide": {
+    "elevenlabsRecommendedVoices": [
+      "Gigi (Childish & Playful)",
+      "Freya (Expressive & Youthful)",
+      "Alice (Confident & Clear)"
+    ],
+    "suggestedVoiceDesignPrompt": "A cheerful and energetic young female voice with an upbeat, playful tone suitable for children animations and nursery rhymes.",
+    "usageNotes": "Mẫu voice đã được lọc nhiễu nhẹ và chuẩn hóa -16 LUFS, sẵn sàng nạp trực tiếp vào ElevenLabs Instant Voice Clone hoặc Custom Voice Design."
+  }
+}

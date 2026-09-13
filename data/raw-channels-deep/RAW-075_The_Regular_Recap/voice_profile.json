@@ -21,7 +21,11 @@
     "ageRange": "22 – 30 tuổi",
     "toneAndStyle": "Hài hước, tự nhiên, lôi cuốn, phân tích tâm lý nhân vật hoạt hình sắc sảo",
     "targetAudience": "Fan Cartoon Network, thế hệ Gen Z & Millennial yêu hoạt hình thập niên 2010",
-    "actualPaceWPM": "144 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+    "actualPaceWPM": "144 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "American English (Video Essay Hoạt hình)"
   },
   "promptingStudio": {
     "scene": "A well-damped video essay recording booth. Close-mic proximity, crystal-clear dialogue clarity, zero background reflections.",

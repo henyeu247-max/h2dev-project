@@ -21,7 +21,11 @@
     "ageRange": "30 – 42 tuổi",
     "toneAndStyle": "Lôi cuốn, kích thích suy ngẫm, bóc tách thực tế sau bức tranh nghỉ dưỡng hào nhoáng",
     "targetAudience": "Du khách thích du lịch văn hóa, tìm hiểu địa lý nhân văn và kinh tế đảo",
-    "actualPaceWPM": "68 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "68 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "Standard English (Khám phá văn hóa & địa lý đảo)"
   },
   "promptingStudio": {
     "scene": "A high-definition travel journalism podcast suite. Direct vocal capture with subtle air, intimate and analytical without pompous theatricality.",

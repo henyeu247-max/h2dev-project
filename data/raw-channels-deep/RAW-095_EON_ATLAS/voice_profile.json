@@ -21,7 +21,11 @@
     "ageRange": "32 – 46 tuổi",
     "toneAndStyle": "Điềm tĩnh, khách quan, giàu lòng trắc ẩn, phân tích chiều sâu đời sống người dân",
     "targetAudience": "Khán giả toàn cầu theo dõi thời sự địa lý, đời sống nhân dân vùng xung đột",
-    "actualPaceWPM": "70 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "70 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "Documentary English (Phóng sự nhân văn & địa chính trị)"
   },
   "promptingStudio": {
     "scene": "An international humanitarian reporting booth. Pristine broadcast acoustical clarity, respectful, balanced proximity with zero exaggerated theatricality.",

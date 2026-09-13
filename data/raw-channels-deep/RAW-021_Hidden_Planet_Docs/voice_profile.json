@@ -21,7 +21,11 @@
     "ageRange": "35 – 48 tuổi",
     "toneAndStyle": "Trầm tĩnh, sâu lắng, bí ẩn, kích thích tò mò về thế giới lòng đất",
     "targetAudience": "Khán giả mê địa lý, thám hiểm hang động, khoa học tự nhiên toàn cầu",
-    "actualPaceWPM": "138 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "138 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "International English (Tài liệu thám hiểm hang động)"
   },
   "promptingStudio": {
     "scene": "An underground research outpost or quiet broadcast acoustics booth. Dry, close proximity effect with zero room reflections, giving an intimate sense of being deep subterranean.",

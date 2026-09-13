@@ -21,7 +21,11 @@
     "ageRange": "20 – 28 tuổi",
     "toneAndStyle": "Hào hứng, trực quan, ngắn gọn, hỗ trợ hiệu ứng âm thanh mô phỏng",
     "targetAudience": "Trẻ em và thanh thiếu niên đam mê mô phỏng xe cộ, BeamNG Drive",
-    "actualPaceWPM": "30 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)"
+    "actualPaceWPM": "30 từ/phút (Nhịp điệu hoạt hình tiêu chuẩn, giữ chân người xem)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "American English (Bình luận xe / SFX Action)"
   },
   "promptingStudio": {
     "scene": "A modern podcast streaming studio. Treated booth acoustics, rich mid-range voice punch with crisp attack.",

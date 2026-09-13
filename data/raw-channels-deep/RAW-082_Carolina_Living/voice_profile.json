@@ -21,7 +21,11 @@
     "ageRange": "30 – 42 tuổi",
     "toneAndStyle": "Thực tế, sắc bén, thẳng thắn, phong cách kể chuyện đời sống vùng sâu nước Mỹ",
     "targetAudience": "Người dân Mỹ, người tìm hiểu về địa lý di cư, an ninh xã hội các bang Hoa Kỳ",
-    "actualPaceWPM": "149 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)"
+    "actualPaceWPM": "149 từ/phút (Nhịp điệu khám phá địa lý, phát âm rõ ràng, hấp dẫn)",
+    "audioLanguage": "Tiếng Anh (English)",
+    "languageCode": "en-US",
+    "languageFlag": "🇺🇸",
+    "languageDialect": "Southern American English (Phóng viên điều tra địa phương)"
   },
   "promptingStudio": {
     "scene": "A local investigative journalism studio. Sharp modern mic presence with close capture, zero fluff or artificial gloss, conveying gritty grassroots reality.",

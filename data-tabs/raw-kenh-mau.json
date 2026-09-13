@@ -213,7 +213,9 @@
           "estimatedMonthlyRev": "$24,506 – $45,510 / tháng",
           "playableVideosCount": 7,
           "totalAuditedVideos": 7
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -228,6 +230,12 @@
         "estimatedMonthlyRev": "$24,506 – $45,510 / tháng",
         "playableVideosCount": 7,
         "totalAuditedVideos": 7
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Nhí nhảnh / Trẻ thơ)"
       }
     },
     {
@@ -1939,7 +1947,9 @@
           "estimatedMonthlyRev": "$9,605 – $17,839 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -1954,6 +1964,12 @@
         "estimatedMonthlyRev": "$9,605 – $17,839 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Hoạt hình hài hước / Parody)"
       }
     },
     {
@@ -3935,7 +3951,9 @@
           "estimatedMonthlyRev": "N/A (kênh chững view)",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -3950,6 +3968,12 @@
         "estimatedMonthlyRev": "N/A (kênh chững view)",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "International English (Tài liệu thám hiểm hang động)"
       }
     },
     {
@@ -4348,7 +4372,9 @@
           "estimatedMonthlyRev": "$2,429 – $4,511 / tháng",
           "playableVideosCount": 7,
           "totalAuditedVideos": 7
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4363,6 +4389,12 @@
         "estimatedMonthlyRev": "$2,429 – $4,511 / tháng",
         "playableVideosCount": 7,
         "totalAuditedVideos": 7
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Vintage Analog Horror)"
       }
     },
     {
@@ -4757,7 +4789,9 @@
           "estimatedMonthlyRev": "$4,516 – $8,386 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -4772,6 +4806,12 @@
         "estimatedMonthlyRev": "$4,516 – $8,386 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Casual Gamer / Lore Sarcastic)"
       }
     },
     {
@@ -5158,7 +5198,9 @@
           "estimatedMonthlyRev": "$5,719 – $10,620 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5173,6 +5215,12 @@
         "estimatedMonthlyRev": "$5,719 – $10,620 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Kể chuyện mầm non / Ấm áp)"
       }
     },
     {
@@ -5531,7 +5579,9 @@
           "estimatedMonthlyRev": "$8,936 – $16,595 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -5546,6 +5596,12 @@
         "estimatedMonthlyRev": "$8,936 – $16,595 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Bình luận xe / SFX Action)"
       }
     },
     {
@@ -8516,7 +8572,9 @@
           "estimatedMonthlyRev": "$923 – $1,714 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Nhật (Japanese)",
+        "languageFlag": "🇯🇵"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -8531,6 +8589,12 @@
         "estimatedMonthlyRev": "$923 – $1,714 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Nhật (Japanese)",
+        "code": "ja-JP",
+        "flag": "🇯🇵",
+        "dialect": "Standard Japanese (Anime Sci-Fi Hào hùng)"
       }
     },
     {
@@ -9542,7 +9606,9 @@
           "estimatedMonthlyRev": "$9,093 – $16,888 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9557,6 +9623,12 @@
         "estimatedMonthlyRev": "$9,093 – $16,888 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Mid-Atlantic English (National Geographic Cinematic)"
       }
     },
     {
@@ -9749,7 +9821,9 @@
           "estimatedMonthlyRev": "$9,853 – $18,298 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9764,6 +9838,12 @@
         "estimatedMonthlyRev": "$9,853 – $18,298 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "General American (Phóng sự đời sống Siberia sâu lắng)"
       }
     },
     {
@@ -9956,7 +10036,9 @@
           "estimatedMonthlyRev": "$2,911 – $5,406 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -9971,6 +10053,12 @@
         "estimatedMonthlyRev": "$2,911 – $5,406 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Standard English (Khám phá văn hóa & địa lý đảo)"
       }
     },
     {
@@ -10161,7 +10249,9 @@
           "estimatedMonthlyRev": "$7,432 – $13,803 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -10176,6 +10266,12 @@
         "estimatedMonthlyRev": "$7,432 – $13,803 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Phóng viên du lịch thế giới)"
       }
     },
     {
@@ -12356,7 +12452,9 @@
           "estimatedMonthlyRev": "$20 – $37 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -12371,6 +12469,12 @@
         "estimatedMonthlyRev": "$20 – $37 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Video Essay Hoạt hình)"
       }
     },
     {
@@ -13150,7 +13254,9 @@
           "estimatedMonthlyRev": "$1,730 – $3,212 / tháng",
           "playableVideosCount": 8,
           "totalAuditedVideos": 8
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13165,6 +13271,12 @@
         "estimatedMonthlyRev": "$1,730 – $3,212 / tháng",
         "playableVideosCount": 8,
         "totalAuditedVideos": 8
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Comic Ranking / Nhịp nhanh)"
       }
     },
     {
@@ -13559,7 +13671,9 @@
           "estimatedMonthlyRev": "$2,762 – $5,130 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13574,6 +13688,12 @@
         "estimatedMonthlyRev": "$2,762 – $5,130 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Epic English (Sử thi kỳ quan Trái Đất 4K)"
       }
     },
     {
@@ -13764,7 +13884,9 @@
           "estimatedMonthlyRev": "$393 – $730 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -13779,6 +13901,12 @@
         "estimatedMonthlyRev": "$393 – $730 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Southern American English (Phóng viên điều tra địa phương)"
       }
     },
     {
@@ -14908,7 +15036,9 @@
           "estimatedMonthlyRev": "$13,018 – $24,176 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -14923,6 +15053,12 @@
         "estimatedMonthlyRev": "$13,018 – $24,176 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Deadpan Satirical Investigation)"
       }
     },
     {
@@ -15112,7 +15248,9 @@
           "estimatedMonthlyRev": "$6,081 – $11,294 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Nga (Russian)",
+        "languageFlag": "🇷🇺"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15127,6 +15265,12 @@
         "estimatedMonthlyRev": "$6,081 – $11,294 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Nga (Russian)",
+        "code": "ru-RU",
+        "flag": "🇷🇺",
+        "dialect": "Standard Russian (Thuyết minh khảo cổ học bí ẩn)"
       }
     },
     {
@@ -15706,7 +15850,9 @@
           "estimatedMonthlyRev": "$1,114 – $2,069 / tháng",
           "playableVideosCount": 10,
           "totalAuditedVideos": 10
-        }
+        },
+        "audioLanguage": "Tiếng Anh (English)",
+        "languageFlag": "🇺🇸"
       },
       "vitalityAudit": {
         "evaluatedAt": "2026-09-09",
@@ -15721,6 +15867,12 @@
         "estimatedMonthlyRev": "$1,114 – $2,069 / tháng",
         "playableVideosCount": 10,
         "totalAuditedVideos": 10
+      },
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Documentary English (Phóng sự nhân văn & địa chính trị)"
       }
     },
     {

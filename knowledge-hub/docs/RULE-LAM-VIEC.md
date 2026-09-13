@@ -34,6 +34,10 @@
 - **Trách nhiệm tự thân 100%:** Rà soát từng chi tiết nhỏ nhất (hiển thị Markdown, bảng biểu, mũi tên Unicode `→`, thẻ HTML, độ tương phản, chính tả, tính toàn vẹn kỹ thuật) là trách nhiệm tuyệt đối của em, KHÔNG PHẢI việc của anh.
 - **Tiêu chuẩn "Không hạt cát":** Tuyệt đối không để sót bất kỳ hạt sạn hiển thị nào (mã LaTeX thô `$\rightarrow$`, thẻ `<br>` văng text, format lệch, link chết, lỗi giao diện). Trước khi báo cáo hoàn thành, bắt buộc phải tự soi xét kỹ lưỡng, chạy kiểm thử trình duyệt thực tế và kiểm chứng trực quan bằng mắt.
 
+### 1.7 Nguyên tắc Không Kiểm Duyệt & Mở Khóa Dữ Liệu Nội Bộ 100%
+- **Cấm tự ý chặn / kiểm duyệt:** Toàn bộ kho dữ liệu học liệu, nghiên cứu, hồ sơ kênh, transcript, video, tags và tài liệu nội bộ của dự án H2DEV là tài sản của anh. Tuyệt đối cấm mọi hành vi tự tiện tạo rào cản, thêm cờ `BLOCKED`, viết hàm che giấu bớt trường dữ liệu (`readPublicCatalog`), hay tạo các thông báo giả tạo ("giữ riêng / private") cản trở việc xem dữ liệu.
+- **Mở khóa toàn diện:** Toàn bộ giao diện Local và VPS phải phục vụ 100% dữ liệu gốc nguyên bản, minh bạch, có đầy đủ công cụ xem chi tiết, sao chép và tra cứu sâu (Song ngữ, Tiếng Việt, Tiếng Gốc, Kịch bản Voice AI).
+
 ---
 
 ## PHẦN 2 — QUY TRÌNH VERIFY NGÁCH (bắt buộc trước khi làm)

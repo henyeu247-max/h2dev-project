@@ -1,3 +1,20 @@
+## 2026-09-13 — Bãi bỏ hoàn toàn mọi cơ chế kiểm duyệt/chặn dữ liệu, mở khóa 100% kho tư liệu và khôi phục Modal Sub Song Ngữ & Kịch Bản AI
+
+- **Xóa bỏ triệt để toàn bộ cơ chế kiểm duyệt/chặn file trong `server.js`:**
+  - Gỡ bỏ hoàn toàn `BLOCKED_PREFIXES`, `BLOCKED_SEGMENTS`, `isBlockedRelativePath`, `readPublicCatalog()`.
+  - Phục vụ file tĩnh nguyên vẹn 100%, không redact hay che giấu bất kỳ trường dữ liệu nào.
+- **Khôi phục toàn diện tính năng tra cứu Top Videos, Sub/Lyric song ngữ và Kịch bản AI trong `index.html`:**
+  - Xóa vĩnh viễn nút "Chi tiết sâu giữ riêng" và modal popup che giấu dữ liệu.
+  - Tích hợp Modal Hồ Sơ Chuyên Sâu 83 kênh: Đầy đủ 4 thẻ KPIs, 50 tags kênh đắt giá (kèm nút copy), phân tích Vision AI.
+  - Tích hợp Modal Sub / Lyric & Kịch Bản AI cho từng video đột phá:
+    + Tab 1: Song ngữ 1:1 (English + Phụ đề tiếng Việt đi kèm từng câu có mốc giây `[00:00]`).
+    + Tab 2: Bản dịch Tiếng Việt chuẩn.
+    + Tab 3: Bản Tiếng Gốc.
+    + Tab 4: Kịch bản lồng tiếng Voice AI hoàn chỉnh & Phân tích cấu trúc 3 hồi + Prompt Midjourney/Veo 3.1.
+    + Bộ 4 nút Sao Chép Tiện Ích: Copy Song Ngữ, Copy Tiếng Việt, Copy Tiếng Gốc, Copy Kịch Bản AI.
+- **Đồng bộ tuyệt đối Local ↔ VPS:**
+  - Codebase và giao diện tại Local (`http://100.83.146.28:8899/`) và VPS (`https://h2dev-learn.tonymmo.com/`) hoàn toàn đồng nhất 100%.
+
 ## 2026-09-13 — Khóa vĩnh viễn Bộ 10 Tiêu Chuẩn Vàng Nghiệm Thu Check Pass 1 Video & Đồng bộ Memory 3 Tầng
 
 - **Khóa vĩnh viễn Bộ 10 Tiêu Chuẩn Vàng vào SSoT:**

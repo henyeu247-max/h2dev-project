@@ -1,0 +1,71 @@
+{
+  "rawId": "RAW-025",
+  "channelTitle": "game.mp4",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "US & Global (Tiếng Anh)",
+    "audiencePersona": "Game thủ, thanh thiếu niên, người thích hoạt hình châm biếm văn hóa pop (Pop Culture & Game Lore Fans)",
+    "viewingHabit": "Xem giải trí giờ nghỉ trưa hoặc đêm muộn, thích nhịp độ nhanh, đùa giỡn mỉa mai, không thích bài giảng hàn lâm",
+    "emotionalCore": "Cười cợt sự ngớ ngẩn của cốt truyện game (Sarcasm), bất ngờ với các chi tiết vô lý mà hợp lý"
+  },
+  "visualDirective": {
+    "styleShort": "2D Minimalist satirical comic storyboard (the audience is US gaming and meme culture, featuring expressive exaggerated line-art characters)",
+    "style": "Hand-drawn 2D vector comic illustration style, clean bold ink outlines, flat vibrant color fills with intentional rustic imperfections, highly expressive stickman and cartoon faces, comedic body language, dynamic manga-style speedlines, paper-like matte texture, satirical storyboard framing, no photorealistic 3D rendering, no glossy plastic, no realistic human skin, no magical lighting, no CGI effects",
+    "mascot": "Sarcastic Stickman Narrator (Nhân vật người que vẽ tay đơn giản với biểu cảm châm biếm)",
+    "cameraLighting": "Flat 2D comic strip panels, dramatic zoom-in on panicked meme faces, stark high contrast, clean white or muted comic background, rapid cut transitions",
+    "negativePrompt": "no photorealistic 3D, no CGI, no gradient mesh, no glossy plastic, no real human faces, no lens flare, no cinematic bloom, no volumetric fog, no blurry artifacts",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: 2D Minimalist satirical comic storyboard (the audience is US gaming and meme culture, featuring expressive exaggerated line-art characters)\n{{STYLE}}: Hand-drawn 2D vector comic illustration style, clean bold ink outlines, flat vibrant color fills with intentional rustic imperfections, highly expressive stickman and cartoon faces, comedic body language, dynamic manga-style speedlines, paper-like matte texture, satirical storyboard framing, no photorealistic 3D rendering, no glossy plastic, no realistic human skin, no magical lighting, no CGI effects\n{{MASCOT}}: Sarcastic Stickman Narrator\nScene Action: Sarcastic stickman narrator holding a tiny wooden sword looking utterly terrified in front of a giant disproportionate dragon boss, comedic wide eyes, sweating droplets, minimalist fantasy cave background, bold ink lines, flat colors --ar 16:9"
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Giễu nhại cốt truyện mở đầu ngay bằng hành động (Action-Packed Sarcastic Hook)",
+    "openingFormula": "Không chào hỏi, không giới thiệu kênh. Bắt đầu bằng 1 nghịch lý ngớ ngẩn của thế giới game trong 0–15s đầu (VD: 'Thế giới này hoàn toàn yên bình cho đến khi các vị thần quyết định chia tài sản...')",
+    "pacingStructure": "3 Hồi Giữ Chân Cao Độ: [0–15s] Hook nghịch lý giễu nhại -> [15–45s] Tóm tắt bối cảnh bi hài -> [45s–8m] 3–5 mắt xích cốt truyện kỳ quặc, mỗi 60–90s có 1 mini-cliffhanger -> [Kết thúc] Đúc kết triết lý ngược đời + Kêu gọi đăng ký kênh tự nhiên",
+    "masterScriptPrompt": "Bạn là chuyên gia biên kịch hoạt hình châm biếm hàng đầu (phong cách kênh game.mp4, Sam O'Nella và Casually Explained). Hãy viết kịch bản YouTube tóm tắt cốt truyện [TÊN GAME / CHỦ ĐỀ] bằng tiếng Anh chuẩn, phong cách mỉa mai, dí dỏm, nhịp đọc nhanh 155–160 từ/phút. Áp dụng cấu trúc 70% bám sát sự kiện lore gốc + 30% châm biếm so sánh đời thực. Mở đầu trực tiếp không chào hỏi. Chia kịch bản thành các phân đoạn 15–30 giây tương ứng với từng cảnh vẽ tay."
+  },
+  "packagingCTR": {
+    "titleFormula": "[Hành động ngớ ngẩn] + [Tên Game/Nhân vật] + [Hậu quả tai hại / i guess]",
+    "exampleTitles": [
+      "The entire story of Elden Ring, i guess (DLC Update)",
+      "How One Minor Character Accidentally Ruined The Whole Lore",
+      "Why Dark Souls Lore Makes Zero Sense (And Why We Love It)"
+    ],
+    "thumbnailComposition": "Nhân vật người que biểu cảm hoang mang / sốc chiếm 65% khung hình bên phải; Biểu tượng boss hoặc vũ khí khổng lồ ở trung tâm; Text ngắn 2–3 từ màu Vàng chanh (#FACC15) hoặc Đỏ khẩn cấp (#EF4444) viền đen đậm bên trái.",
+    "thumbnailText": "ZERO SENSE! 💀 / WHY THOUGH? ❓ / WORST MISTAKE 🚫",
+    "cleanThumbnailPrompt": "Dramatic minimalist 2D vector cartoon thumbnail, a funny stickman character screaming in panic clutching his head on the right side, a colossal shadowy dark fantasy knight towering on the left, high contrast vibrant flat colors, comic book line art, clean empty space for text overlay, YouTube thumbnail composition --ar 16:9"
+  },
+  "productionStack": {
+    "matchingSkill": "h2dev-hoat-hinh (Flux 2D Comic LoRA + Grok Image-to-Video)",
+    "scriptTool": "Claude 3.5 Sonnet (Chuyên sâu văn phong châm biếm dí dỏm)",
+    "voiceTool": "ElevenLabs Model Multilingual v2, Giọng: Antoni (Settings: Stability 0.38, Similarity 0.82, Style 0.3)",
+    "videoTool": "Vẽ tay trên iPad Procreate / Illustrator hoặc sinh khung hình 2D bằng Flux LoRA Comic -> Hậu kỳ CapCut PC",
+    "bgmSoundtrack": "Lo-fi Acoustic Comic BGM (Nhạc nền guitar thùng vui nhộn hoặc tiếng huýt sáo ngớ ngẩn, ducking âm lượng -18dB dưới giọng đọc)",
+    "soundEffects": "Cartoon boing, record scratch, dramatic vine boom, whoosh cuts"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ (MKT Datacenter 2) + Trình duyệt chống phát hiện (MKT/GPM) + Gmail ngâm 2 ngày bật 2FA Authenticator."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube US, gắn Logo/Banner phong cách người que tối giản, dán trọn bộ 25 tags SEO có sẵn trong hồ sơ, ngâm kênh 3–4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5–10 Video",
+      "detail": "Dùng Master Script Prompt nạp cho Claude -> Thu âm ElevenLabs Antoni -> Dựng chuỗi khung hình 2D trên CapCut (mỗi video 8–12 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Tạo Thumbnail 3 điểm vàng + Đặt tiêu đề có đuôi 'i guess' -> Đăng chế độ Không công khai (Unlisted) 2 giờ để quét bản quyền -> Hẹn giờ công khai giờ vàng US (20h–23h EST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn vẹn video đầu tiên + ghim comment tương tác -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense tab ẩn danh."
+    }
+  ]
+}

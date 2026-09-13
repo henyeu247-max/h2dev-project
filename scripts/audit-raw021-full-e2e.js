@@ -74,6 +74,10 @@ function assert(cond, msg, details = {}) {
       'Bao Bì CTR',
       'Top Video Đang Phát Trên YouTube',
       'Sao chép tất cả Tags',
+      'YPP Risk Note',
+      'Data Gaps',
+      'Display Rank',
+      'Source Rank gốc',
     ];
     for (const t of requiredTexts) add(`Modal contains: ${t}`, modalText.includes(t), t);
 

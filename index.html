@@ -1969,6 +1969,7 @@
         const vA = r.vitalityAudit || {};
         const ocr = r.ocr || {};
         const vision = r.visionAnalysis || {};
+        const vRec = (r.vidiqVerification && r.vidiqVerification.recentVelocity) ? r.vidiqVerification.recentVelocity : [];
         const dossierPath = (r.deepIntelligence && r.deepIntelligence.dossierPath) ? r.deepIntelligence.dossierPath : ('data/raw-channels-deep/' + (r.deepIntelligence && r.deepIntelligence.folderName ? r.deepIntelligence.folderName : ''));
 
         // Hiển thị trạng thái đang tải
@@ -2279,6 +2280,74 @@
                   Đang đồng bộ danh sách Top Video của kênh này.
                 </div>`}
               </div>
+
+              <!-- Section: Tốc Độ Tăng Trưởng Thực Tế 7 Ngày Qua (vidIQ Live Velocity) -->
+              ${vRec && vRec.length ? `
+              <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem;">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                  <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
+                    <span>📈</span> Tốc Độ Tăng Trưởng Thực Tế 7 Ngày Qua (vidIQ Live Velocity):
+                  </div>
+                  <span style="font-size:0.7rem; color:#10b981; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">✓ Live Verified API</span>
+                </div>
+                <div style="overflow-x:auto;">
+                  <table style="width:100%; border-collapse:collapse; font-size:0.75rem; text-align:left;">
+                    <thead>
+                      <tr style="border-bottom:1px solid #334155; color:#94a3b8; text-transform:uppercase; font-size:0.68rem;">
+                        <th style="padding:0.4rem 0.6rem;">Ngày theo dõi</th>
+                        <th style="padding:0.4rem 0.6rem;">Lượng Subs</th>
+                        <th style="padding:0.4rem 0.6rem;">Tổng Views</th>
+                        <th style="padding:0.4rem 0.6rem;">Tăng trưởng Views/Ngày</th>
+                        <th style="padding:0.4rem 0.6rem;">Số Video</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${vRec.map((row, idx) => {
+                        const prevViews = idx > 0 ? vRec[idx - 1].views : null;
+                        const diffViews = prevViews != null ? (row.views - prevViews) : null;
+                        return `
+                        <tr style="border-bottom:1px solid #1e293b; color:#cbd5e1;">
+                          <td style="padding:0.45rem 0.6rem; font-family:monospace; color:#38bdf8;">${row.date}</td>
+                          <td style="padding:0.45rem 0.6rem; font-weight:600;">${Number(row.subscribers).toLocaleString('vi-VN')}</td>
+                          <td style="padding:0.45rem 0.6rem; font-weight:600; color:#a855f7;">${Number(row.views).toLocaleString('vi-VN')}</td>
+                          <td style="padding:0.45rem 0.6rem;">
+                            ${diffViews != null ? `<span style="color:#10b981; font-weight:700;">+${Number(diffViews).toLocaleString('vi-VN')}</span>` : `<span style="color:#64748b;">Mốc đầu</span>`}
+                          </td>
+                          <td style="padding:0.45rem 0.6rem; color:#94a3b8;">${row.videos}</td>
+                        </tr>
+                        `;
+                      }).join('')}
+                    </tbody>
+                  </table>
+                </div>
+              </div>` : ''}
+
+              <!-- Section: Chỉ Số Outlier Bóc Tách Từ Ảnh Chụp Gốc (OCR Vision Benchmark) -->
+              ${ocr && ocr.videoRows && ocr.videoRows.length ? `
+              <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem;">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                  <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
+                    <span>🎯</span> Bóc Tách Đột Phá Outlier Từ Ảnh Chụp Gốc (OCR Vision):
+                  </div>
+                  <span style="font-size:0.7rem; color:#f59e0b; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">OCR Ngày: ${esc(ocr.scannedAt || '2026-09-05')}</span>
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:0.6rem;">
+                  ${ocr.videoRows.map(vr => `
+                    <div style="background:#182234; border:1px solid #233148; border-radius:0.625rem; padding:0.65rem 0.8rem; display:flex; flex-direction:column; gap:0.35rem;">
+                      <div style="font-size:0.78rem; font-weight:700; color:#fff; line-height:1.35;" class="line-clamp-2">${esc(vr.title)}</div>
+                      <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.72rem; color:#94a3b8; margin-top:auto; pt-1;">
+                        <span>⏱️ ${esc(vr.duration || 'N/A')}</span>
+                        <span>👁️ <strong style="color:#38bdf8;">${esc(vr.viewsText || '')}</strong></span>
+                        <span style="background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.4); padding:0.1rem 0.4rem; border-radius:0.25rem; font-weight:700;">${esc(vr.outlier || '')}</span>
+                      </div>
+                      <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.68rem; color:#64748b;">
+                        <span>⚡ ${esc(vr.vph || '')}</span>
+                        <span>🕒 ${esc(vr.age || '')}</span>
+                      </div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>` : ''}
 
               <!-- Section: Phân Tích Nội Dung & Kỹ Thuật (Vision AI) -->
               ${vision.mainTopic || vision.contentStyle ? `

@@ -1362,6 +1362,7 @@
       window._rawKenhRecords = records;
       const q = (state.rawQ || '').trim().toLowerCase();
       const currentNiche = state.rawNiche || '';
+      const currentLang = state.rawLang || '';
 
       const nicheCounts = records.reduce((acc, r) => {
         const n = r.editorialNiche || r.niche || 'Chưa phân loại';
@@ -1369,6 +1370,12 @@
         return acc;
       }, {});
       const sortedNiches = Object.keys(nicheCounts).sort((a, b) => nicheCounts[b] - nicheCounts[a]);
+
+      const langCounts = records.reduce((acc, r) => {
+        const l = (r.audioLanguageInfo && r.audioLanguageInfo.language) ? r.audioLanguageInfo.language : 'Tiếng Anh (English)';
+        acc[l] = (acc[l] || 0) + 1;
+        return acc;
+      }, {});
 
       const activeCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'ACTIVE').length;
       const slowCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'SLOW').length;
@@ -1380,18 +1387,22 @@
         const ch = r.channel || {};
         const ocr = r.ocr || {};
         const vA = r.vitalityAudit || {};
+        const aL = r.audioLanguageInfo || {};
         const title = ((ch.title || '') + ' ' + (ocr.channelName || '')).toLowerCase();
         const handle = ((ch.handle || '') + ' ' + (ocr.handle || '')).toLowerCase();
         const fname = (r.fileName || '').toLowerCase();
         const n = (r.editorialNiche || r.niche || 'Chưa phân loại').toLowerCase();
+        const lName = (aL.language || 'Tiếng Anh (English)').toLowerCase();
+        const lCode = (aL.code || '').toLowerCase();
         if (currentNiche && (r.editorialNiche || r.niche || 'Chưa phân loại') !== currentNiche) return false;
+        if (currentLang && (aL.language || 'Tiếng Anh (English)') !== currentLang) return false;
         if (state.rawVitality === 'active' && vA.healthStatus !== 'ACTIVE') return false;
         if (state.rawVitality === 'slow' && vA.healthStatus !== 'SLOW') return false;
         if (state.rawVitality === 'dormant' && vA.healthStatus !== 'DORMANT_MID') return false;
         if (state.rawVitality === 'risk' && vA.healthStatus !== 'DORMANT_LONG' && vA.healthStatus !== 'DEAD_OR_PURGED' && vA.monetizationStatus !== 'MONETIZED_AT_RISK') return false;
         if (state.rawVitality === 'ypp' && vA.monetizationStatus !== 'MONETIZED_ACTIVE' && vA.monetizationStatus !== 'MONETIZED') return false;
         const rid = (r.id || '').toLowerCase();
-        if (q && !title.includes(q) && !handle.includes(q) && !fname.includes(q) && !n.includes(q) && !rid.includes(q)) return false;
+        if (q && !title.includes(q) && !handle.includes(q) && !fname.includes(q) && !n.includes(q) && !rid.includes(q) && !lName.includes(q) && !lCode.includes(q)) return false;
         return true;
       });
 
@@ -1439,6 +1450,14 @@
       <button type="button" data-raw-vitality="dormant" class="filter-btn ${state.rawVitality === 'dormant' ? 'active' : ''}">🟠 Ngủ đông · ${dormantMidCount}</button>
       <button type="button" data-raw-vitality="risk" class="filter-btn ${state.rawVitality === 'risk' ? 'active' : ''}">🔴 Nguy cơ tắt YPP / Dừng lâu · ${riskCount}</button>
       <button type="button" data-raw-vitality="ypp" class="filter-btn ${state.rawVitality === 'ypp' ? 'active' : ''}">💰 Bật kiếm tiền (YPP Active) · ${yppCount}</button>
+    </div>
+    <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Ngôn ngữ giọng đọc:</div>
+      <button type="button" data-raw-lang="" class="filter-btn ${!currentLang ? 'active' : ''}">Mọi ngôn ngữ · ${records.length}</button>
+      <button type="button" data-raw-lang="Tiếng Anh (English)" class="filter-btn ${currentLang === 'Tiếng Anh (English)' ? 'active' : ''}">🇺🇸 Tiếng Anh · ${langCounts['Tiếng Anh (English)'] || 0}</button>
+      <button type="button" data-raw-lang="Tiếng Nhật (Japanese)" class="filter-btn ${currentLang === 'Tiếng Nhật (Japanese)' ? 'active' : ''}">🇯🇵 Tiếng Nhật · ${langCounts['Tiếng Nhật (Japanese)'] || 0}</button>
+      <button type="button" data-raw-lang="Tiếng Nga (Russian)" class="filter-btn ${currentLang === 'Tiếng Nga (Russian)' ? 'active' : ''}">🇷🇺 Tiếng Nga · ${langCounts['Tiếng Nga (Russian)'] || 0}</button>
+      <button type="button" data-raw-lang="Tiếng Tây Ban Nha (Spanish)" class="filter-btn ${currentLang === 'Tiếng Tây Ban Nha (Spanish)' ? 'active' : ''}">🇪🇸 Tiếng Tây Ban Nha · ${langCounts['Tiếng Tây Ban Nha (Spanish)'] || 0}</button>
     </div>
   </div>
   <div class="space-y-6">
@@ -1794,8 +1813,9 @@
       if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; render(); }; }
       document.querySelectorAll('[data-raw-niche]').forEach(btn => { btn.onclick = () => { state.rawNiche = btn.getAttribute('data-raw-niche') || ''; render(); }; });
       document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; render(); }; });
+      document.querySelectorAll('[data-raw-lang]').forEach(btn => { btn.onclick = () => { state.rawLang = btn.getAttribute('data-raw-lang') || ''; render(); }; });
       const rr2 = document.getElementById('freset-raw');
-      if (rr2) { rr2.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawVitality = ''; render(); }; }
+      if (rr2) { rr2.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawVitality = ''; state.rawLang = ''; render(); }; }
       document.querySelectorAll('.btn-open-raw-deep').forEach(btn => {
         btn.onclick = (e) => {
           e.stopPropagation();

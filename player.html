@@ -435,23 +435,34 @@ window.addEventListener('keydown', (e)=>{
     // Media path: prefer the declared path from data (supports .mp4 and .webm),
     // then fall back to probing video/<sku>/<sku>.mp4 and .webm in order.
     const declared = (v.mp4 && /(^|\/)video\//.test(v.mp4)) ? v.mp4 : '';
+    const defaultLocal = declared || `video/${sku}/${sku}.mp4`;
+    let local = '';
     const candidates = declared ? [declared] : [`video/${sku}/${sku}.mp4`, `video/${sku}/${sku}.webm`];
-    let local='', localBytes=0;
-    for(const cand of candidates){
-      try{
-        const headRes=await fetch(cand,{method:'HEAD',cache:'no-store'});
-        if(headRes.ok){
-          const len=Number(headRes.headers.get('content-length')||0);
-          if(len>0){ local=cand; localBytes=len; break; }
+    for (const cand of candidates) {
+      try {
+        const headRes = await fetch(cand, { method: 'HEAD', cache: 'no-store' });
+        if (headRes.ok) {
+          local = cand;
+          break;
         }
-      }catch(e){}
+      } catch(e) {}
     }
-    const localAvailable=localBytes>0;
-    const playbackSource=localAvailable?local:(v.video_link||'');
-    const isWebm=/\.webm(\?|$)/i.test(local);
-    if(playbackSource){
-      pv.src=playbackSource;
-      pv.onerror=()=>{ metaEl.innerHTML += `<span class="badge badge-red">Không đọc được nguồn phát</span>`; };
+    // Fallback nếu HEAD probe bị chặn bởi proxy nhưng catalog xác nhận có file (>0 byte)
+    if (!local && v.size && v.size > 0) {
+      local = defaultLocal;
+    }
+    const localAvailable = Boolean(local);
+    const playbackSource = localAvailable ? local : (v.video_link || defaultLocal);
+    const isWebm = /\.webm(\?|$)/i.test(playbackSource);
+    if (playbackSource) {
+      pv.src = playbackSource;
+      pv.onerror = () => {
+        if (playbackSource.endsWith('.mp4')) {
+          pv.src = playbackSource.replace(/\.mp4$/, '.webm');
+        } else {
+          metaEl.innerHTML += `<span class="badge badge-red">Không đọc được nguồn phát</span>`;
+        }
+      };
     } else {
       metaEl.innerHTML += `<span class="badge badge-amber">Chưa tải được video (file 0 byte)</span>`;
     }

@@ -114,7 +114,6 @@ const BLOCKED_SEGMENTS = new Set([
 const BLOCKED_PREFIXES = [
   ['data', 'raw-channels-deep'],
   ['data', 'registry'],
-  ['assets', 'raw-kenh'],
 ];
 const BLOCKED_FILE_NAMES = new Set([
   'server.log', 'server-lan.log', 'server-lan.err.log', 'h2dev-tray.log',

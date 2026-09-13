@@ -25,6 +25,7 @@ DESIGN-IS-2026-08-22/
 
 # File tạm, log, cache hệ thống
 *.log
+logs/
 *.bak
 *.bak.*
 *.tmp

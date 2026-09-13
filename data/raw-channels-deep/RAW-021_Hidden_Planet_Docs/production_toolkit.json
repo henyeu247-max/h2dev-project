@@ -13,8 +13,36 @@
     "mascot": "Lead Field Archaeologist / Historian examining ancient relics under natural excavation lighting",
     "cameraLighting": "Documentary archival 35mm lens, natural excavation trench light, handheld camera movement, fine soil and dust motes, weathered bronze patina with realistic oxidation, no CGI, no fantasy glowing effects, no digital polish",
     "style": "Cinematic historical documentary style, 35mm-50mm lens, natural directional sunlight cutting into excavated pits, realistic mud and clay textures, ancient bronze masks with authentic patina and green oxidation, hand-held camera subtle breathing, chiaroscuro contrast between dark trenches and daylight, museum-grade archival realism, no magical aura, no CGI, no cartoonish rendering",
-    "negativePrompt": "no CGI, no sci-fi neon lights, no glowing magic crystals, no 3D cartoon style, no glossy plastic textures, no distorted hands, no artificial oversaturation",
-    "masterVisualPrompt": "Archaeological excavation documentary shot, 35mm lens, handheld camera, extreme close-up of an ancient 3000-year-old bronze mask with protruding eyes half-buried in wet clay trench, realistic patina and oxidation, dramatic dust motes in natural sunbeam, authentic historical realism, no CGI, no fantasy lighting --ar 16:9 --style raw"
+    "negativePrompt": "no CGI, no sci-fi neon lights, no glowing magic crystals, no 3D cartoon style, no glossy plastic textures, no distorted hands, no artificial oversaturation, no fantasy sparks, no modern clothes, no fluorescent studio lighting",
+    "masterVisualPrompt": "Photorealistic archaeological documentary still, 35mm-50mm macro lens, shot on Hasselblad H6D-100c, extreme close-up of an ancient 3,000-year-old colossal bronze mask with cylindrical protruding eyes, partially excavated from a muddy stratified soil trench, exquisite green verdigris oxidation patina, weathered metallic micro-scratches, single dramatic shaft of warm natural sunlight piercing through damp subterranean air, illuminated dust motes floating in light beam, museum archival realism, National Geographic editorial grade, no CGI, no 3D rendering, no neon glow, no fantasy aura --ar 16:9 --style raw --v 6.1",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Macro Artifact Close-up",
+        "description": "Cận cảnh hiện vật đồng cổ 3.000 năm tuổi, rỉ xanh oxy hóa gồ ghề, mắt lồi hình trụ, tia nắng xiên qua bụi đất.",
+        "prompt": "Photorealistic archaeological documentary macro shot, extreme close-up of an ancient 3,000-year-old bronze mask with protruding eyes half-buried in wet clay trench, realistic verdigris patina, dramatic dust motes in natural sunbeam, National Geographic archival realism --ar 16:9 --style raw"
+      },
+      {
+        "shotType": "Góc 2: Wide Excavation Trench",
+        "description": "Đại cảnh hố khai quật sâu 10m, vách đất chia tầng địa chất, giàn giáo gỗ cổ, nhà khảo cổ phủ bụi quét đất.",
+        "prompt": "Cinematic wide-angle documentary shot of a deep 30-foot archaeological excavation trench, stratified dirt walls, wooden scaffolding, field archaeologists in dust-covered gear carefully brushing ancient stone foundations, dramatic rim sunlight from trench edge, authentic realism --ar 16:9 --style raw"
+      },
+      {
+        "shotType": "Góc 3: Subterranean Megalithic Site",
+        "description": "Công trình cự thạch đền ngầm Göbekli Tepe 12.000 năm, trụ đá chữ T khắc phù điêu thú hoang, ánh đuốc rọi bóng ma mị.",
+        "prompt": "Atmospheric subterranean archaeological discovery shot, monumental T-shaped stone pillars carved with ancient low-relief animal totems, ancient subterranean temple chamber, dramatic expedition flashlight beams cutting through dark dust, eerie shadow play, authentic historical mystery --ar 16:9 --style raw"
+      },
+      {
+        "shotType": "Góc 4: Aerial Remote Expedition",
+        "description": "Flycam góc cao thung lũng khảo cổ hoặc rừng rậm Amazon hiểm trở che giấu phế tích cổ, sương sớm bao phủ.",
+        "prompt": "High-altitude cinematic drone landscape shot, remote misty valley surrounded by ancient forested cliffs, hidden stone ruins barely visible through dense jungle canopy, early morning atmospheric haze, Indiana Jones expedition mood, National Geographic quality --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1 (Macro): Slow 0.5x subtle push-in toward the protruding bronze eyes, gentle organic handheld camera float.",
+      "Shot 2 (Wide): Slow vertical jib downward from ground level into the deep trench, revealing excavation scale.",
+      "Shot 3 (Megalith): Smooth 180-degree orbit around the central carved pillar with dynamic flickering rim light.",
+      "Shot 4 (Aerial): Forward sweeping drone flight through low-hanging fog bank revealing hidden ruins."
+    ]
   },
   "scriptBlueprint": {
     "hookArchetype": "Nghịch lý hiện vật dị thường làm sụp đổ lịch sử chính thống (Paradoxical Artifact Discovery Hook)",

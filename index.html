@@ -2096,26 +2096,87 @@
 
               <!-- Section: Mẫu Giọng Chuẩn Của Kênh & Gợi Ý Clone Voice (Voice DNA Studio) -->
               ${voiceProfile ? `
-              <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1.1rem; display:flex; flex-direction:column; gap:0.75rem;">
-                <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
-                  <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
-                    <span>🎙️</span> Mẫu Giọng Chuẩn Kênh (${voiceProfile.sourceVideo ? voiceProfile.sourceVideo.timeWindow : '40s'} • Mono 44.1kHz):
-                  </div>
+              <div style="background:#0f172a; border:1px solid #1e293b; border-radius:1rem; padding:1.25rem; display:flex; flex-direction:column; gap:0.9rem; box-shadow:0 4px 20px -2px rgba(0,0,0,0.5);">
+                <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; border-b:1px solid #1e293b; padding-bottom:0.75rem;">
                   <div style="display:flex; align-items:center; gap:0.5rem;">
-                    <a href="${esc(voiceProfile.sampleAudio.publicUrl)}" download="${esc(rawId)}_voice_sample.mp3" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.3rem;">⬇️ Tải MP3 Clone Voice</a>
+                    <span style="font-size:1.25rem;">🎙️</span>
+                    <div>
+                      <h4 style="font-size:0.95rem; font-weight:800; color:#fff; margin:0;">Mẫu Giọng Chuẩn Của Kênh (Voice DNA Studio)</h4>
+                      <p style="font-size:0.72rem; color:#94a3b8; margin:0;">${voiceProfile.sourceVideo ? voiceProfile.sourceVideo.timeWindow : '45s'} • MP3 Mono 44.1kHz • Chuẩn hóa EBU R128 (-16 LUFS)</p>
+                    </div>
+                  </div>
+                  <a href="${esc(voiceProfile.audioSpecs ? voiceProfile.audioSpecs.publicUrl : ('assets/voice-samples/' + rawId + '.mp3'))}" download="${esc(rawId)}_voice_sample.mp3" style="font-size:0.75rem; padding:0.4rem 0.85rem; border-radius:0.5rem; background:#2563eb; hover:background:#1d4ed8; color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.35rem; transition:background 0.2s;">⬇️ Tải MP3 Clone Voice</a>
+                </div>
+
+                <!-- Audio Player -->
+                <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:0.6rem 0.75rem;">
+                  <audio controls style="width:100%; height:38px; border-radius:0.375rem; outline:none;" src="${esc(voiceProfile.audioSpecs ? voiceProfile.audioSpecs.publicUrl : ('assets/voice-samples/' + rawId + '.mp3'))}"></audio>
+                </div>
+
+                <!-- Voice DNA Characteristics Grid -->
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:0.65rem; font-size:0.8rem;">
+                  <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem;">
+                    <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Đặc tính giọng</div>
+                    <div style="color:#38bdf8; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.genderEstimate)}</div>
+                    <div style="color:#94a3b8; font-size:0.72rem; margin-top:0.15rem;">Độ tuổi: <span style="color:#e2e8f0;">${esc(voiceProfile.voiceCharacteristics.ageRange || 'Chưa rõ')}</span></div>
+                  </div>
+                  <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem;">
+                    <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Tốc độ nói thực tế (WPM)</div>
+                    <div style="color:#f59e0b; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.actualPaceWPM || voiceProfile.voiceCharacteristics.estimatedPace)}</div>
+                  </div>
+                  <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem; grid-column: 1 / -1;">
+                    <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Tông giọng & Cảm xúc</div>
+                    <div style="color:#10b981; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.toneAndStyle)}</div>
+                    ${voiceProfile.voiceCharacteristics.targetAudience ? `<div style="color:#94a3b8; font-size:0.72rem; margin-top:0.2rem;">Khán giả mục tiêu: <span style="color:#cbd5e1;">${esc(voiceProfile.voiceCharacteristics.targetAudience)}</span></div>` : ''}
                   </div>
                 </div>
-                <audio controls style="width:100%; height:40px; border-radius:0.5rem; outline:none;" src="${esc(voiceProfile.sampleAudio.publicUrl)}"></audio>
-                <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:0.85rem; font-size:0.8rem; color:#cbd5e1; display:flex; flex-direction:column; gap:0.35rem;">
+
+                <!-- ElevenLabs Voice Cloning Configuration -->
+                ${voiceProfile.elevenlabsCloningConfiguration ? `
+                <div style="background:#131d31; border:1px solid rgba(168,85,247,0.3); border-radius:0.75rem; padding:0.85rem 1rem; display:flex; flex-direction:column; gap:0.6rem;">
                   <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
-                    <div><strong style="color:#38bdf8;">Đặc tính giọng:</strong> ${esc(voiceProfile.voiceCharacteristics.genderEstimate)} • ${esc(voiceProfile.voiceCharacteristics.ageEstimate)}</div>
-                    <div><strong style="color:#f59e0b;">Tốc độ:</strong> ${esc(voiceProfile.voiceCharacteristics.estimatedPace)}</div>
+                    <div style="font-size:0.82rem; font-weight:700; color:#c084fc; display:flex; align-items:center; gap:0.35rem;">
+                      <span>⚡</span> Cấu Hình Clone Voice Trên ElevenLabs:
+                    </div>
+                    <span style="font-size:0.7rem; background:rgba(168,85,247,0.15); color:#d8b4fe; padding:0.15rem 0.5rem; border-radius:0.375rem; border:1px solid rgba(168,85,247,0.3);">${esc(voiceProfile.elevenlabsCloningConfiguration.recommendedModel || 'Multilingual v2')}</span>
                   </div>
-                  <div><strong style="color:#10b981;">Tông giọng:</strong> ${esc(voiceProfile.voiceCharacteristics.toneAndStyle)}</div>
-                  <div style="margin-top:0.35rem; padding-top:0.35rem; border-top:1px solid #1e293b;">
-                    <strong style="color:#e2e8f0;">Gợi ý ElevenLabs tương đương:</strong> <span style="color:#a855f7; font-weight:600;">${esc((voiceProfile.aiVoiceCloningGuide.elevenlabsRecommendedVoices || []).join(' · '))}</span>
+
+                  <div style="font-size:0.8rem; color:#e2e8f0; display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;">
+                    <span>Giọng chuẩn gợi ý:</span>
+                    <span style="background:#1e293b; color:#38bdf8; font-weight:700; padding:0.2rem 0.6rem; border-radius:0.375rem; border:1px solid #334155;">${esc(voiceProfile.elevenlabsCloningConfiguration.primaryVoiceMatch || '')}</span>
+                    ${voiceProfile.elevenlabsCloningConfiguration.alternativeVoices ? voiceProfile.elevenlabsCloningConfiguration.alternativeVoices.map(av => `<span style="background:#1e293b; color:#94a3b8; font-size:0.75rem; padding:0.2rem 0.5rem; border-radius:0.375rem;">${esc(av)}</span>`).join('') : ''}
                   </div>
-                </div>
+
+                  <!-- Voice Settings Chips -->
+                  ${voiceProfile.elevenlabsCloningConfiguration.voiceSettings ? `
+                  <div style="display:flex; flex-wrap:wrap; gap:0.5rem; font-size:0.75rem; color:#94a3b8; background:#0b0f19; padding:0.5rem 0.75rem; border-radius:0.5rem; border:1px solid #1e293b;">
+                    <span>Settings:</span>
+                    <span>Stability: <strong style="color:#fcd34d;">${voiceProfile.elevenlabsCloningConfiguration.voiceSettings.stability}</strong></span>
+                    <span>•</span>
+                    <span>Similarity: <strong style="color:#38bdf8;">${voiceProfile.elevenlabsCloningConfiguration.voiceSettings.similarity_boost}</strong></span>
+                    <span>•</span>
+                    <span>Style: <strong style="color:#a855f7;">${voiceProfile.elevenlabsCloningConfiguration.voiceSettings.style}</strong></span>
+                    <span>•</span>
+                    <span>Speaker Boost: <strong style="color:#10b981;">ON</strong></span>
+                  </div>` : ''}
+
+                  <!-- Voice Design Prompt -->
+                  ${voiceProfile.elevenlabsCloningConfiguration.voiceDesignPrompt ? `
+                  <div style="margin-top:0.25rem;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.75rem; color:#94a3b8; margin-bottom:0.25rem;">
+                      <span>Voice Design Prompt (Dùng tạo giọng AI không cần clone):</span>
+                      <button type="button" onclick="navigator.clipboard.writeText('${esc(voiceProfile.elevenlabsCloningConfiguration.voiceDesignPrompt)}').then(()=>alert('Đã copy Voice Design Prompt!'))" style="font-size:0.7rem; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">📋 Copy Prompt</button>
+                    </div>
+                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.5rem 0.75rem; font-size:0.75rem; color:#cbd5e1; font-style:italic;">"${esc(voiceProfile.elevenlabsCloningConfiguration.voiceDesignPrompt)}"</div>
+                  </div>` : ''}
+
+                  <!-- Dubbing SOP -->
+                  ${voiceProfile.elevenlabsCloningConfiguration.dubbingProductionSOP ? `
+                  <div style="font-size:0.75rem; color:#fef3c7; background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.2); border-radius:0.5rem; padding:0.5rem 0.75rem;">
+                    <strong style="color:#fcd34d;">SOP Lồng tiếng chuẩn:</strong> ${esc(voiceProfile.elevenlabsCloningConfiguration.dubbingProductionSOP)}
+                  </div>` : ''}
+                </div>` : ''}
+
               </div>` : ''}
 
               <!-- Section: Bộ Tags Kênh (Channel Tags) -->

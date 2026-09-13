@@ -1,0 +1,42 @@
+{
+  "rawId": "RAW-014",
+  "channelFolder": "RAW-014_Calm_Science",
+  "sourceVideo": {
+    "videoId": "y6plYybn9zE",
+    "title": "Inside a Neutron Star... Matter Stops Existing as We Know It",
+    "url": "https://www.youtube.com/watch?v=y6plYybn9zE",
+    "timeWindow": "16s – 61s (45s)",
+    "selectionMethod": "Smart Cut dựa trên mật độ thoại cao nhất trong Transcript"
+  },
+  "audioSpecs": {
+    "localPath": "data/raw-channels-deep/RAW-014_Calm_Science/voice_sample_30s.mp3",
+    "publicUrl": "assets/voice-samples/RAW-014.mp3",
+    "fileSizeKB": 1056.9,
+    "format": "MP3 Mono 44.1kHz 192kbps LAME",
+    "normalization": "EBU R128 Integrated -16 LUFS (True Peak -1.5dB)",
+    "qualityStandard": "High Fidelity (Giữ nguyên tần số cao, hơi thở và âm vực chuẩn cho Voice Clone)"
+  },
+  "voiceCharacteristics": {
+    "genderEstimate": "Nam phát thanh viên tài liệu vũ trụ",
+    "ageRange": "40 – 55 tuổi",
+    "toneAndStyle": "Trầm ấm, mê hoặc, mang hơi hướng thì thầm thư giãn (Calm / Space ASMR)",
+    "targetAudience": "Người nghe thư giãn ban đêm, người yêu thích thiên văn học và khoa học vũ trụ",
+    "actualPaceWPM": "151 từ/phút (Chậm rãi, âm vang trầm hùng, khoảng dừng giữa các sự thật khoa học sâu sắc)"
+  },
+  "elevenlabsCloningConfiguration": {
+    "recommendedModel": "ElevenLabs Multilingual v2",
+    "primaryVoiceMatch": "George (Deep, Resonant & Reflective British Narrator)",
+    "alternativeVoices": [
+      "Marcus (Calm Documentary Narrator)",
+      "Brian (Deep & Soothing Bedtime Voice)"
+    ],
+    "voiceSettings": {
+      "stability": 0.72,
+      "similarity_boost": 0.88,
+      "style": 0.0,
+      "use_speaker_boost": true
+    },
+    "voiceDesignPrompt": "A deep, baritone male British narrator with a calm, hypnotic, and awe-inspiring tone. Slow-paced, cinematic, and soothing, perfect for space documentaries and sleep science.",
+    "dubbingProductionSOP": "Đặt micro gần miệng (proximity effect) để tăng độ trầm ấm của âm trầm, kết hợp nhạc nền ambient không gian vũ trụ âm lượng -24dB phía dưới."
+  }
+}

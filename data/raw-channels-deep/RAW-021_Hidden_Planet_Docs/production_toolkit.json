@@ -28,9 +28,9 @@
   },
   "packagingCTR": {
     "titleFormula": "[Hiện vật/Di chỉ kỳ dị] + [Nền văn minh cổ đại bị lãng quên] + [Lý do các nhà sử học không thể tin / Even Historians Can't Believe Were Found]",
-    "thumbnailComposition": "Mặt nạ đồng cổ đại mắt lồi bí ẩn chiếm 65% khung hình bên phải; Hố khai quật đất bùn u tối ở trung tâm; Text ngắn 2–3 từ màu Vàng chanh (#FACC15) hoặc Đỏ cảnh báo (#EF4444) viền đen đậm bên trái.",
+    "thumbnailComposition": "Mặt nạ đồng cổ đại mắt lồi bí ẩn chiếm 65% khung hình bên phải (Rule of Thirds); Hố khai quật đất bùn u tối ở trung tâm; Vùng âm bản tối 35% bên trái để đặt Text ngắn 2–3 từ màu Vàng chanh (#FACC15) hoặc Đỏ cảnh báo (#EF4444) viền đen đậm (Stroke 8px).",
     "thumbnailText": "3,000 YEARS OLD ⏳ / NOT HUMAN? 👽 / ERASED FROM HISTORY 🚫",
-    "cleanThumbnailPrompt": "Photorealistic documentary thumbnail base, ancient monumental bronze mask with elongated eyes emerging from excavated dark soil, dramatic excavation trench spotlight, high contrast, museum archive artifact detail, dust motes, 8k resolution, no text, no watermark --ar 16:9",
+    "cleanThumbnailPrompt": "Photorealistic documentary YouTube thumbnail base, rule of thirds composition with dark negative space on the left side, an ancient 3,000-year-old colossal bronze mask with cylindrical protruding eyes emerging from an excavated archaeological dirt trench on the right side, dramatic single-source sunlight beam illuminating realistic green verdigris patina and weathered bronze textures, dark shadowy trench walls on the left for text overlay placement, high-contrast chiaroscuro lighting, floating fine dust motes, shot on Hasselblad H6D-100c, 50mm lens f/2.8, museum archival artifact detail, 8k resolution, authentic historical documentary realism, no text, no watermark, no digital glow, no CGI --ar 16:9 --style raw --v 6.1",
     "exampleTitles": [
       "The Hidden Civilizations on Earth Even Historians Can't Believe Were Found",
       "What Archaeologists Found 30 Feet Beneath This Turkish Hill Terrified Historians",

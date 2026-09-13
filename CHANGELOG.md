@@ -1,3 +1,22 @@
+## 2026-09-13 — Triển khai Bộ lọc Ngôn ngữ Âm thanh (Language Flag Filter) & Gắn nhãn chuẩn 100% 97 kênh mẫu
+
+- **Phân loại & Gán nhãn Ngôn ngữ Âm thanh 97/97 kênh mẫu:**
+  - 88 kênh Tiếng Anh (English): 87 🇺🇸 + 1 🇬🇧.
+  - 7 kênh Tiếng Nhật (Japanese): 🇯🇵 (RAW-009, RAW-019, RAW-049, RAW-050, RAW-085, RAW-097, RAW-098).
+  - 1 kênh Tiếng Nga (Russian): 🇷🇺 (RAW-089).
+  - 1 kênh Tiếng Tây Ban Nha (Spanish): 🇪🇸 (RAW-096).
+  - Cập nhật trường `audioLanguageInfo` đồng bộ vào `data-tabs/raw-kenh-mau.json` và `raw-kenh-goc/metadata-full.json`.
+- **Tích hợp Bộ Lọc Ngôn Ngữ Trên Web (`index.html`):**
+  - Thêm hàng nút lọc `NGÔN NGỮ GIỌNG ĐỌC` động: `Mọi ngôn ngữ · 97`, `🇺🇸 Tiếng Anh · 88`, `🇯🇵 Tiếng Nhật · 7`, `🇷🇺 Tiếng Nga · 1`, `🇪🇸 Tiếng Tây Ban Nha · 1`.
+  - Hỗ trợ lọc kết hợp đa tầng: Ngách × Sức sống YPP × Ngôn ngữ âm thanh × Từ khóa tìm kiếm text.
+  - Thêm cờ ngôn ngữ trên Card ảnh raw ngoài và hiển thị chi tiết Cờ, Ngôn ngữ, Phương ngữ trong Header Modal & Voice DNA Studio.
+- **Nghiệm Thu Playwright Chromium E2E Live VPS:**
+  - Click Tiếng Nhật: 7 cards chính xác.
+  - Click Tiếng Nga: 1 card RAW-089 chính xác.
+  - Click Tiếng Tây Ban Nha: 1 card RAW-096 chính xác.
+  - Click Tiếng Anh: 88 cards chính xác.
+  - Click Mọi ngôn ngữ: 97 cards đầy đủ. PASS 100%.
+
 ## 2026-09-13 — Chuẩn hóa toàn diện SSoT Hệ Thống: Kiến Trúc 7 Tầng, Phân Luồng 4 Nhánh & Khóa Bộ Quy Tắc Vận Hành "Không Mò Đường"
 
 - **Chuẩn hóa Vai trò, Sứ mệnh & Tác phong:**

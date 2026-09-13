@@ -1,3 +1,13 @@
+## 2026-09-13 — Khóa vĩnh viễn Bộ 10 Tiêu Chuẩn Vàng Nghiệm Thu Check Pass 1 Video & Đồng bộ Memory 3 Tầng
+
+- **Khóa vĩnh viễn Bộ 10 Tiêu Chuẩn Vàng vào SSoT:**
+  - Bổ sung `PHẦN 7 — BỘ 10 TIÊU CHUẨN VÀNG NGHIỆM THU CHECK PASS 1 VIDEO` vào `knowledge-hub/docs/RULE-LAM-VIEC.md`.
+  - Quy định bắt buộc: Mổ xẻ lại từ đầu bằng tay 100%, thỏa mãn đồng thời đủ 10 tiêu chí (Media/Thumb, Sub sạch 3 định dạng, Kênh đối thủ, Cẩm nang Master SOP, Mốc tua nhanh, Mấu chốt 5 takeaways grounded, Kỹ thuật Edit SOP, Tránh bẫy chính sách, Cờ `visual_audio_checked`, Đồng bộ deploy VPS).
+- **Đồng bộ Hệ thống Bộ nhớ 3 Tầng xuyên suốt:**
+  - Cập nhật đồng bộ `D:\YTB\.workbuddy\memory\MEMORY.md`, `~/.workbuddy/MEMORY.md`, và `~/.workbuddy-ai/MEMORY.md`.
+  - Khởi tạo và ghi chép đầy đủ workspace memory tại `C:\Users\SaxukeB\WorkBuddy AI\2026-09-13-13-53-53\.workbuddy-ai\memory\`.
+- **Kiểm định nghiệm thu:** `node scripts/validate-project.js` PASS (136 video, 165 kênh, 103 tài liệu).
+
 ## 2026-09-13 — Loại bỏ hoàn toàn cơ chế kiểm chứng video bằng Gemini khỏi hệ thống
 
 - **Dỡ bỏ hoàn toàn giao diện phân tích Gemini trên Web:**

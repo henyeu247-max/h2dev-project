@@ -2131,6 +2131,51 @@
                   </div>
                 </div>
 
+                <!-- Section: Scene & Sample Context (Chuẩn Hóa Cho Google AI Studio / Gemini Speech / ElevenLabs) -->
+                ${voiceProfile.promptingStudio ? `
+                <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.75rem;">
+                  <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+                    <div style="font-size:0.85rem; font-weight:800; color:#38bdf8; display:flex; align-items:center; gap:0.4rem;">
+                      <span>🎬</span> Scene & Sample Context (Chuẩn Google AI Studio / Gemini Speech / Aoede):
+                    </div>
+                    <button type="button" class="btn-copy-combined-prompt" style="font-size:0.72rem; padding:0.35rem 0.75rem; border-radius:0.375rem; background:#0284c7; hover:background:#0369a1; color:#fff; font-weight:700; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem; transition:background 0.2s;">📋 Copy Trọn Bộ (Scene + Context + Speech)</button>
+                  </div>
+
+                  <!-- Scene Field -->
+                  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.75rem;">
+                      <span style="font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.3rem;">
+                        <span style="color:#38bdf8;">Scene</span> <span style="color:#94a3b8; font-weight:400;">(Bối cảnh & Không gian âm học)</span>
+                      </span>
+                      <button type="button" class="btn-copy-scene" style="font-size:0.7rem; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">📋 Copy Scene</button>
+                    </div>
+                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.55rem 0.75rem; font-size:0.78rem; color:#f1f5f9; font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.scene)}</div>
+                  </div>
+
+                  <!-- Sample Context Field -->
+                  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.75rem;">
+                      <span style="font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.3rem;">
+                        <span style="color:#f59e0b;">Sample Context</span> <span style="color:#94a3b8; font-weight:400;">(Ngữ cảnh biểu cảm & Giọng điệu)</span>
+                      </span>
+                      <button type="button" class="btn-copy-context" style="font-size:0.7rem; color:#f59e0b; background:none; border:none; cursor:pointer; text-decoration:underline;">📋 Copy Context</button>
+                    </div>
+                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.55rem 0.75rem; font-size:0.78rem; color:#fef3c7; font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.sampleContext)}</div>
+                  </div>
+
+                  <!-- Speaker & Sample Speech Block Field -->
+                  ${voiceProfile.promptingStudio.sampleSpeechBlock ? `
+                  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.75rem;">
+                      <span style="font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.3rem;">
+                        <span>👤</span> <span style="color:#10b981;">${esc(voiceProfile.promptingStudio.speakerTag || 'Speaker 1')}</span> <span style="color:#94a3b8; font-weight:400;">(Đoạn thoại mẫu đối soát)</span>
+                      </span>
+                      <button type="button" class="btn-copy-speech-block" style="font-size:0.7rem; color:#10b981; background:none; border:none; cursor:pointer; text-decoration:underline;">📋 Copy Speech Block</button>
+                    </div>
+                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.6rem 0.75rem; font-size:0.78rem; color:#cbd5e1; line-height:1.5; font-style:italic;">"${esc(voiceProfile.promptingStudio.sampleSpeechBlock)}"</div>
+                  </div>` : ''}
+                </div>` : ''}
+
                 <!-- ElevenLabs Voice Cloning Configuration -->
                 ${voiceProfile.elevenlabsCloningConfiguration ? `
                 <div style="background:#131d31; border:1px solid rgba(168,85,247,0.3); border-radius:0.75rem; padding:0.85rem 1rem; display:flex; flex-direction:column; gap:0.6rem;">
@@ -2254,6 +2299,51 @@
               alert('Đã sao chép: ' + allTags.slice(0, 100) + '...');
             });
           };
+        }
+
+        // Bind copy buttons for Scene, Sample Context, and Prompting Studio
+        if (voiceProfile && voiceProfile.promptingStudio) {
+          const btnCopyScene = modal.querySelector('.btn-copy-scene');
+          if (btnCopyScene) {
+            btnCopyScene.onclick = () => {
+              navigator.clipboard.writeText(voiceProfile.promptingStudio.scene || '').then(() => {
+                btnCopyScene.textContent = '✅ Đã copy Scene!';
+                setTimeout(() => { btnCopyScene.textContent = '📋 Copy Scene'; }, 2000);
+              });
+            };
+          }
+
+          const btnCopyContext = modal.querySelector('.btn-copy-context');
+          if (btnCopyContext) {
+            btnCopyContext.onclick = () => {
+              navigator.clipboard.writeText(voiceProfile.promptingStudio.sampleContext || '').then(() => {
+                btnCopyContext.textContent = '✅ Đã copy Context!';
+                setTimeout(() => { btnCopyContext.textContent = '📋 Copy Context'; }, 2000);
+              });
+            };
+          }
+
+          const btnCopySpeech = modal.querySelector('.btn-copy-speech-block');
+          if (btnCopySpeech) {
+            btnCopySpeech.onclick = () => {
+              navigator.clipboard.writeText(voiceProfile.promptingStudio.sampleSpeechBlock || '').then(() => {
+                btnCopySpeech.textContent = '✅ Đã copy Speech Block!';
+                setTimeout(() => { btnCopySpeech.textContent = '📋 Copy Speech Block'; }, 2000);
+              });
+            };
+          }
+
+          const btnCopyCombined = modal.querySelector('.btn-copy-combined-prompt');
+          if (btnCopyCombined) {
+            btnCopyCombined.onclick = () => {
+              const combined = voiceProfile.promptingStudio.combinedPromptTemplate || 
+                `Scene: ${voiceProfile.promptingStudio.scene}\nSample Context: ${voiceProfile.promptingStudio.sampleContext}\n\n${voiceProfile.promptingStudio.speakerTag || 'Speaker 1'}:\n${voiceProfile.promptingStudio.sampleSpeechBlock}`;
+              navigator.clipboard.writeText(combined).then(() => {
+                btnCopyCombined.textContent = '✅ Đã copy trọn bộ Prompt!';
+                setTimeout(() => { btnCopyCombined.textContent = '📋 Copy Trọn Bộ (Scene + Context + Speech)'; }, 2000);
+              });
+            };
+          }
         }
       };
 

@@ -23,6 +23,13 @@
     "targetAudience": "Trẻ em mầm non (Toddler & Kids 1-6 tuổi) và Phụ huynh",
     "actualPaceWPM": "165 từ/phút (Nhịp điệu vừa phải, hát rõ lời, nhấn nhá từng âm tiết để trẻ tập nói theo)"
   },
+  "promptingStudio": {
+    "scene": "A bright, cheerful, and acoustically treated preschool playroom or recording booth. Completely dry acoustics with close-mic presence and zero background reverb.",
+    "sampleContext": "Playful, radiant, and childlike. Tone is bubbly, enthusiastic, and warm with bouncy rhythmic cadence, smiling articulation, and infectious energy.",
+    "speakerTag": "Speaker 1 - Animated Storyteller (Gigi / Freya / Aoede)",
+    "sampleSpeechBlock": "Baby shark, doo-doo, doo-doo! Baby shark, doo-doo, doo-doo! Baby shark! Mommy shark, doo-doo, doo-doo! Mommy shark, doo-doo, doo-doo! Mommy shark! Let's go hunt, doo-doo, doo-doo! Run away, doo-doo, doo-doo! Safe at last, doo-doo, doo-doo!",
+    "combinedPromptTemplate": "Scene: A bright, cheerful, and acoustically treated preschool playroom or recording booth. Completely dry acoustics with close-mic presence and zero background reverb.\nSample Context: Playful, radiant, and childlike. Tone is bubbly, enthusiastic, and warm with bouncy rhythmic cadence, smiling articulation, and infectious energy.\n\nSpeaker 1 - Animated Storyteller (Gigi / Freya / Aoede):\nBaby shark, doo-doo, doo-doo! Baby shark, doo-doo, doo-doo! Baby shark! Mommy shark, doo-doo, doo-doo! Mommy shark, doo-doo, doo-doo! Mommy shark! Let's go hunt, doo-doo, doo-doo! Run away, doo-doo, doo-doo! Safe at last, doo-doo, doo-doo!"
+  },
   "elevenlabsCloningConfiguration": {
     "recommendedModel": "ElevenLabs Multilingual v2",
     "primaryVoiceMatch": "Gigi (Childish & Upbeat Animation)",

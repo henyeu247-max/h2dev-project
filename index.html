@@ -2355,110 +2355,123 @@
                 const mp = tk.targetMarket || {};
 
                 return `
-              <div style="background:#090d16; border:1px solid rgba(59,130,246,0.35); border-radius:1rem; padding:1.25rem; display:flex; flex-direction:column; gap:1rem; box-shadow:0 8px 30px -4px rgba(0,0,0,0.7); position:relative; flex-shrink:0;">
+              <div id="raw-mission-control" style="background:#111827; border:1px solid #3b82f6; border-radius:1rem; padding:1.25rem; display:flex; flex-direction:column; gap:1.1rem; box-shadow:0 10px 35px -5px rgba(0,0,0,0.8); position:relative; flex-shrink:0;">
                 <!-- Header Banner -->
-                <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.6rem; border-bottom:1px solid #1e293b; padding-bottom:0.85rem;">
-                  <div style="display:flex; align-items:center; gap:0.6rem;">
-                    <div style="width:36px; height:36px; border-radius:0.6rem; background:rgba(37,99,235,0.2); border:1px solid rgba(59,130,246,0.4); display:flex; align-items:center; justify-content:center; font-size:1.2rem;">🚀</div>
+                <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.6rem; border-bottom:1px solid #1f2937; padding-bottom:0.85rem;">
+                  <div style="display:flex; align-items:center; gap:0.65rem;">
+                    <div style="width:38px; height:38px; border-radius:0.6rem; background:linear-gradient(135deg, rgba(37,99,235,0.3) 0%, rgba(147,51,234,0.3) 100%); border:1px solid #3b82f6; display:flex; align-items:center; justify-content:center; font-size:1.25rem;">🚀</div>
                     <div>
-                      <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap;">
-                        <h4 style="font-size:0.98rem; font-weight:800; color:#fff; margin:0;">Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control)</h4>
-                        <span style="font-size:0.68rem; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.35); color:#34d399;">
-                          ✓ Ready to Launch
+                      <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
+                        <h4 style="font-size:1.02rem; font-weight:800; color:#fff; margin:0;">Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control)</h4>
+                        <span style="font-size:0.68rem; font-weight:700; padding:0.12rem 0.55rem; border-radius:0.375rem; background:rgba(16,185,129,0.2); border:1px solid rgba(16,185,129,0.5); color:#34d399;">
+                          ✓ Sẵn sàng bấm máy (Ready to Launch)
                         </span>
                       </div>
-                      <p style="font-size:0.72rem; color:#94a3b8; margin:0.15rem 0 0 0;">Bộ tham số khuôn đúc kịch bản, thị giác biến thể, bao bì CTR & lộ trình 5 bước ra quân thực chiến</p>
+                      <p style="font-size:0.75rem; color:#94a3b8; margin:0.15rem 0 0 0;">Khuôn đúc kịch bản 3 hồi, visual directive đa thị trường, bao bì CTR & liên kết trực tiếp tài liệu SOP gốc</p>
                     </div>
                   </div>
-                  <div style="display:flex; align-items:center; gap:0.4rem;">
-                    <span style="font-size:0.7rem; color:#cbd5e1; background:#1e293b; border:1px solid #334155; padding:0.25rem 0.6rem; border-radius:0.4rem; font-weight:600;">
-                      Thị trường: <strong style="color:#38bdf8;">${esc(mp.primaryRegion || 'US/Global')}</strong>
+                  <div style="display:flex; align-items:center; gap:0.45rem;">
+                    <span style="font-size:0.72rem; color:#cbd5e1; background:#1e293b; border:1px solid #334155; padding:0.25rem 0.65rem; border-radius:0.4rem; font-weight:600;">
+                      Thị trường mục tiêu: <strong style="color:#38bdf8;">${esc(mp.primaryRegion || 'US & Global')}</strong>
                     </span>
                   </div>
                 </div>
 
                 <!-- Bento Grid 2 Columns -->
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:0.85rem;">
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:0.9rem;">
                   
                   <!-- Box 1: Chỉ Thị Phong Cách Thị Giác Biến Thể -->
-                  <div style="background:#0f172a; border:1px solid #1e293b; border-radius:0.75rem; padding:0.9rem; display:flex; flex-direction:column; gap:0.5rem;">
+                  <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem;">
-                      <div style="font-size:0.82rem; font-weight:700; color:#f8fafc; display:flex; align-items:center; gap:0.35rem;">
+                      <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>🎨</span> Chỉ Thị Thị Giác (Visual Directive)
                       </div>
-                      <button type="button" onclick="navigator.clipboard.writeText('${esc(vd.masterVisualPrompt || vd.style || '')}').then(()=>alert('Đã copy Visual Directive Prompt!'))" style="font-size:0.7rem; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:0.2rem 0.5rem; border-radius:0.375rem; cursor:pointer; font-weight:600;">📋 Copy Prompt</button>
+                      <button type="button" onclick="navigator.clipboard.writeText('${esc(vd.masterVisualPrompt || vd.style || '')}').then(()=>alert('Đã copy Visual Directive Prompt!'))" style="font-size:0.72rem; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-sky-600 hover:text-white transition">📋 Copy Visual Prompt</button>
                     </div>
 
-                    <div style="font-size:0.75rem; color:#cbd5e1; background:#070a12; padding:0.55rem 0.75rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.35rem;">
-                      <div><strong style="color:#fcd34d;">STYLE_SHORT:</strong> ${esc(vd.styleShort || '')}</div>
-                      <div><strong style="color:#38bdf8;">MASCOT / BRAND:</strong> ${esc(vd.mascot || 'None')}</div>
-                      <div><strong style="color:#a855f7;">CAMERA / LIGHT:</strong> ${esc(vd.cameraLighting || '')}</div>
-                      <div style="font-size:0.7rem; color:#94a3b8; line-height:1.4;"><strong style="color:#10b981;">STYLE DETAILS:</strong> ${esc(vd.style || '')}</div>
-                      ${vd.negativePrompt ? `<div style="font-size:0.7rem; color:#f87171;"><strong style="color:#ef4444;">NEGATIVE:</strong> ${esc(vd.negativePrompt)}</div>` : ''}
+                    <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
+                      <div><strong style="color:#fcd34d;">STYLE_SHORT:</strong> <span style="color:#f8fafc;">${esc(vd.styleShort || '')}</span></div>
+                      <div><strong style="color:#38bdf8;">MASCOT / BRAND:</strong> <span style="color:#f8fafc;">${esc(vd.mascot || 'None')}</span></div>
+                      <div><strong style="color:#c084fc;">CAMERA / LIGHT:</strong> <span style="color:#e2e8f0;">${esc(vd.cameraLighting || '')}</span></div>
+                      <div style="font-size:0.72rem; color:#94a3b8; line-height:1.45;"><strong style="color:#34d399;">STYLE DETAILS:</strong> ${esc(vd.style || '')}</div>
+                      ${vd.negativePrompt ? `<div style="font-size:0.72rem; color:#fca5a5; line-height:1.35; background:rgba(239,68,68,0.08); padding:0.35rem 0.5rem; border-radius:0.35rem; border:1px solid rgba(239,68,68,0.2);"><strong style="color:#ef4444;">NEGATIVE PROMPT:</strong> ${esc(vd.negativePrompt)}</div>` : ''}
                     </div>
                   </div>
 
                   <!-- Box 2: Khuôn Đúc Kịch Bản & Hook 3s-15s -->
-                  <div style="background:#0f172a; border:1px solid #1e293b; border-radius:0.75rem; padding:0.9rem; display:flex; flex-direction:column; gap:0.5rem;">
-                    <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem;">
-                      <div style="font-size:0.82rem; font-weight:700; color:#f8fafc; display:flex; align-items:center; gap:0.35rem;">
+                  <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; flex-wrap:wrap;">
+                      <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>📝</span> Khuôn Đúc Kịch Bản (Script Blueprint)
                       </div>
-                      <button type="button" onclick="navigator.clipboard.writeText('${esc(sb.masterScriptPrompt || '')}').then(()=>alert('Đã copy Master Scriptwriting Prompt!'))" style="font-size:0.7rem; color:#34d399; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); padding:0.2rem 0.5rem; border-radius:0.375rem; cursor:pointer; font-weight:600;">📋 Copy Script Prompt</button>
+                      <div style="display:flex; align-items:center; gap:0.35rem;">
+                        <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc((ps.referenceVideo && ps.referenceVideo.videoId) || 'MibddujOjxU')}" data-title="${esc((ps.referenceVideo && ps.referenceVideo.title) || 'The entire story of Elden Ring, i guess')}" data-channel="${esc(pData.title || ch.title || '')}" data-views="2.2M" style="font-size:0.7rem; color:#38bdf8; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.35); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:600;">📜 Kịch Bản Gốc</button>
+                        <button type="button" onclick="navigator.clipboard.writeText('${esc(sb.masterScriptPrompt || '')}').then(()=>alert('Đã copy Master Scriptwriting Prompt!'))" style="font-size:0.72rem; color:#34d399; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">📋 Copy Script Prompt</button>
+                      </div>
                     </div>
 
-                    <div style="font-size:0.75rem; color:#cbd5e1; background:#070a12; padding:0.55rem 0.75rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.35rem;">
-                      <div><strong style="color:#fcd34d;">HOOK 0–15s:</strong> ${esc(sb.hookArchetype || '')}</div>
-                      <div style="font-size:0.7rem; color:#94a3b8; font-style:italic;">"${esc(sb.openingFormula || '')}"</div>
-                      <div style="font-size:0.7rem; color:#38bdf8; line-height:1.4;"><strong style="color:#38bdf8;">NHỊP PACING:</strong> ${esc(sb.pacingStructure || '')}</div>
+                    <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
+                      <div><strong style="color:#fcd34d;">HOOK 0–15s:</strong> <span style="color:#f8fafc;">${esc(sb.hookArchetype || '')}</span></div>
+                      <div style="font-size:0.72rem; color:#94a3b8; font-style:italic; line-height:1.4;">"${esc(sb.openingFormula || '')}"</div>
+                      <div style="font-size:0.72rem; color:#38bdf8; line-height:1.45;"><strong style="color:#38bdf8;">NHỊP PACING:</strong> ${esc(sb.pacingStructure || '')}</div>
                       ${sb.masterScriptPrompt ? `
-                      <div style="border-top:1px solid #1e293b; padding-top:0.35rem; font-size:0.7rem; color:#e2e8f0; line-height:1.35;">
-                        <strong style="color:#10b981;">Master Prompt:</strong> "${esc(sb.masterScriptPrompt)}"
+                      <div style="border-top:1px solid #1e293b; padding-top:0.4rem; font-size:0.72rem; color:#e2e8f0; line-height:1.4;">
+                        <strong style="color:#34d399;">Master Prompt (70/30):</strong> "${esc(sb.masterScriptPrompt)}"
                       </div>` : ''}
                     </div>
                   </div>
 
                   <!-- Box 3: Chiến Lược Bao Bì CTR (Title + Thumbnail) -->
-                  <div style="background:#0f172a; border:1px solid #1e293b; border-radius:0.75rem; padding:0.9rem; display:flex; flex-direction:column; gap:0.5rem;">
+                  <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem;">
-                      <div style="font-size:0.82rem; font-weight:700; color:#f8fafc; display:flex; align-items:center; gap:0.35rem;">
+                      <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>🎯</span> Bao Bì CTR (Title & Thumbnail)
                       </div>
-                      <button type="button" onclick="navigator.clipboard.writeText('${esc(pkg.cleanThumbnailPrompt || '')}').then(()=>alert('Đã copy Thumbnail Prompt Engine!'))" style="font-size:0.7rem; color:#f59e0b; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); padding:0.2rem 0.5rem; border-radius:0.375rem; cursor:pointer; font-weight:600;">📋 Copy Thumb Prompt</button>
+                      <button type="button" onclick="navigator.clipboard.writeText('${esc(pkg.cleanThumbnailPrompt || '')}').then(()=>alert('Đã copy Thumbnail Prompt Engine!'))" style="font-size:0.72rem; color:#f59e0b; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-amber-600 hover:text-white transition">📋 Copy Thumb Prompt</button>
                     </div>
 
-                    <div style="font-size:0.75rem; color:#cbd5e1; background:#070a12; padding:0.55rem 0.75rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.35rem;">
-                      <div><strong style="color:#fcd34d;">TITLE FORMULA:</strong> <code style="color:#38bdf8; font-family:monospace;">${esc(pkg.titleFormula || '')}</code></div>
-                      <div><strong style="color:#a855f7;">THUMB BỐ CỤC:</strong> ${esc(pkg.thumbnailComposition || '')}</div>
-                      ${pkg.thumbnailText ? `<div><strong style="color:#ef4444;">TEXT OVERLAY:</strong> <span style="background:#1e293b; padding:0.1rem 0.4rem; border-radius:0.25rem; font-weight:700; color:#fef08a;">${esc(pkg.thumbnailText)}</span></div>` : ''}
+                    <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
+                      <div><strong style="color:#fcd34d;">TITLE FORMULA:</strong> <code style="color:#38bdf8; font-family:monospace; background:#1e293b; padding:0.1rem 0.4rem; border-radius:0.25rem;">${esc(pkg.titleFormula || '')}</code></div>
+                      <div><strong style="color:#c084fc;">THUMB BỐ CỤC:</strong> <span style="color:#f8fafc;">${esc(pkg.thumbnailComposition || '')}</span></div>
+                      ${pkg.thumbnailText ? `<div><strong style="color:#ef4444;">TEXT OVERLAY:</strong> <span style="background:rgba(239,68,68,0.15); border:1px solid rgba(239,68,68,0.35); padding:0.15rem 0.5rem; border-radius:0.35rem; font-weight:800; color:#fef08a;">${esc(pkg.thumbnailText)}</span></div>` : ''}
                       ${pkg.exampleTitles && pkg.exampleTitles.length ? `
-                      <div style="border-top:1px solid #1e293b; padding-top:0.3rem; font-size:0.7rem; color:#94a3b8;">
-                        <strong style="color:#34d399;">Ví dụ Tiêu đề mẫu:</strong>
-                        <ul style="margin:0.2rem 0 0 1rem; padding:0;">
-                          ${pkg.exampleTitles.map(t => `<li>${esc(t)}</li>`).join('')}
+                      <div style="border-top:1px solid #1e293b; padding-top:0.35rem; font-size:0.72rem; color:#94a3b8;">
+                        <strong style="color:#34d399;">Ví dụ Tiêu đề mẫu từ kênh:</strong>
+                        <ul style="margin:0.2rem 0 0 1rem; padding:0; line-height:1.4;">
+                          ${pkg.exampleTitles.map(t => `<li style="color:#cbd5e1;">${esc(t)}</li>`).join('')}
                         </ul>
                       </div>` : ''}
                     </div>
                   </div>
 
                   <!-- Box 4: Bộ Tool Stack & Matching Skill Dự Án -->
-                  <div style="background:#0f172a; border:1px solid #1e293b; border-radius:0.75rem; padding:0.9rem; display:flex; flex-direction:column; gap:0.5rem;">
-                    <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem;">
-                      <div style="font-size:0.82rem; font-weight:700; color:#f8fafc; display:flex; align-items:center; gap:0.35rem;">
+                  <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; flex-wrap:wrap;">
+                      <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>🛠️</span> Tech Stack & Matching Skill
                       </div>
                       ${ps.matchingSkill ? `
-                      <span style="font-size:0.7rem; color:#c084fc; background:rgba(168,85,247,0.15); border:1px solid rgba(168,85,247,0.35); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:700;">
+                      <span style="font-size:0.72rem; color:#c084fc; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.5); padding:0.2rem 0.6rem; border-radius:0.4rem; font-weight:800;">
                         Skill: ${esc(ps.matchingSkill)}
                       </span>` : ''}
                     </div>
 
-                    <div style="font-size:0.75rem; color:#cbd5e1; background:#070a12; padding:0.55rem 0.75rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.35rem;">
-                      <div><strong style="color:#38bdf8;">Kịch bản:</strong> ${esc(ps.scriptTool || 'Claude 3.5 Sonnet / Gemini Ultra')}</div>
-                      <div><strong style="color:#fcd34d;">Lồng tiếng:</strong> ${esc(ps.voiceTool || 'ElevenLabs Multilingual v2')}</div>
-                      <div><strong style="color:#a855f7;">Dựng video:</strong> ${esc(ps.videoTool || 'Flux + Grok / CapCut PC')}</div>
-                      <div><strong style="color:#34d399;">Nhạc nền BGM:</strong> ${esc(ps.bgmSoundtrack || 'Lo-fi Comic Sarcastic (Ducking -18dB)')}</div>
-                      <div><strong style="color:#f43f5e;">Hiệu ứng SFX:</strong> ${esc(ps.soundEffects || 'Whoosh, Pop, Cartoon Boing')}</div>
+                    <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
+                      <div><strong style="color:#38bdf8;">Kịch bản:</strong> <span style="color:#f8fafc;">${esc(ps.scriptTool || 'Claude 3.5 Sonnet / Gemini Ultra')}</span></div>
+                      <div><strong style="color:#fcd34d;">Lồng tiếng:</strong> <span style="color:#f8fafc;">${esc(ps.voiceTool || 'ElevenLabs Multilingual v2')}</span></div>
+                      <div><strong style="color:#c084fc;">Dựng video:</strong> <span style="color:#f8fafc;">${esc(ps.videoTool || 'Flux + Grok / CapCut PC')}</span></div>
+                      <div><strong style="color:#34d399;">Nhạc nền BGM:</strong> <span style="color:#f8fafc;">${esc(ps.bgmSoundtrack || 'Lo-fi Acoustic Comic BGM (Ducking -18dB)')}</span></div>
+                      <div><strong style="color:#f43f5e;">Hiệu ứng SFX:</strong> <span style="color:#f8fafc;">${esc(ps.soundEffects || 'Whoosh, Pop, Cartoon Boing')}</span></div>
+                      
+                      <!-- Direct Links to Skill and Repo -->
+                      <div style="display:flex; align-items:center; gap:0.4rem; margin-top:0.4rem; pt-1; border-top:1px solid #1e293b; flex-wrap:wrap;">
+                        <a href="${esc(ps.skillDocPath || 'assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md')}" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem; padding:0.3rem 0.65rem; border-radius:0.4rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.3rem;" class="hover:bg-purple-600 hover:text-white transition">
+                          <span>📄 Xem Toàn Bộ SOP Skill Gốc</span> ↗
+                        </a>
+                        <a href="${esc(ps.skillRepoPath || 'pipelines/hoat-hinh-ai/README.md')}" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem; padding:0.3rem 0.65rem; border-radius:0.4rem; background:#1e293b; border:1px solid #334155; color:#cbd5e1; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;" class="hover:text-white hover:bg-slate-700 transition">
+                          <span>📂 Repo Code</span> ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -2466,18 +2479,18 @@
 
                 <!-- Box 5: Lộ Trình 5 Bước Ra Kênh Thực Chiến Chuẩn Zoom A-Z -->
                 ${lp && lp.length ? `
-                <div style="background:#0f172a; border:1px solid #1e293b; border-radius:0.75rem; padding:0.9rem;">
-                  <div style="font-size:0.82rem; font-weight:700; color:#f8fafc; margin-bottom:0.6rem; display:flex; align-items:center; gap:0.35rem;">
+                <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem;">
+                  <div style="font-size:0.85rem; font-weight:700; color:#fff; margin-bottom:0.65rem; display:flex; align-items:center; gap:0.4rem;">
                     <span>⚡</span> Lộ Trình 5 Bước Khởi Động Kênh Thực Chiến (Chuẩn Zoom A–Z Masterclass)
                   </div>
-                  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.6rem;">
+                  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.65rem;">
                     ${lp.map(s => `
-                    <div style="background:#070a12; border:1px solid #1e293b; border-radius:0.5rem; padding:0.6rem 0.75rem; display:flex; flex-direction:column; gap:0.25rem;">
-                      <div style="display:flex; align-items:center; gap:0.35rem;">
-                        <span style="font-size:0.68rem; font-weight:800; background:#2563eb; color:#fff; width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:monospace;">${s.step}</span>
-                        <strong style="font-size:0.75rem; color:#fcd34d;">${esc(s.title)}</strong>
+                    <div style="background:#0f172a; border:1px solid #1e293b; border-radius:0.5rem; padding:0.65rem 0.8rem; display:flex; flex-direction:column; gap:0.3rem;">
+                      <div style="display:flex; align-items:center; gap:0.4rem;">
+                        <span style="font-size:0.68rem; font-weight:800; background:#2563eb; color:#fff; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:monospace; flex-shrink:0;">${s.step}</span>
+                        <strong style="font-size:0.78rem; color:#fcd34d;">${esc(s.title)}</strong>
                       </div>
-                      <p style="font-size:0.7rem; color:#94a3b8; margin:0; line-height:1.4;">${esc(s.detail)}</p>
+                      <p style="font-size:0.72rem; color:#94a3b8; margin:0; line-height:1.45;">${esc(s.detail)}</p>
                     </div>`).join('')}
                   </div>
                 </div>` : ''}

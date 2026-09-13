@@ -201,7 +201,26 @@
 
 ---
 
-## PHẦN 8 — ĐÓNG PHIÊN (bắt buộc)
+## PHẦN 8 — BỘ 10 TIÊU CHUẨN VÀNG NGHIỆM THU CHECK PASS 1 HỒ SƠ KÊNH MẪU THỰC CHIẾN (CANONICAL CHANNEL BENCHMARK E2E)
+
+> **Nguyên tắc cốt lõi:** Một kênh mẫu trong kho dữ liệu raw không đơn thuần là một bức ảnh chụp màn hình hay một cái tên. Nó là **một bản thiết kế giải mã toàn diện (Reverse-Engineering Dossier)**. Dù là kênh cũ hay kênh mới, khi nghiệm thu check pass 1 kênh bắt buộc phải kiểm tra chi tiết bằng tay và trình duyệt thật theo đúng 10 tiêu chuẩn vàng sau:
+
+| STT | Hạng mục kiểm định | Tiêu chuẩn bắt buộc | Cách kiểm chứng thực tế (Evidence-First) |
+| :---: | :--- | :--- | :--- |
+| **1** | **Định danh & Header Kênh** | Avatar sắc nét (YouTube CDN/fallback); Tên kênh chuẩn; Chip ID (`RAW-xxx`); Chip Ngách chuẩn biên tập; Handle `@...` chính xác; Quốc gia (`country`); Badge trạng thái sống; Nút mở YouTube ↗ hoạt động. | Mở modal trên web; kiểm tra link kênh mở đúng trang chủ YouTube; avatar không vỡ hoặc lỗi placeholder. |
+| **2** | **Bộ 4 Thẻ KPIs Định Lượng** | Đầy đủ 4 khối số liệu: (1) Lượng Subs + Tăng trưởng 30 ngày (`+... subs/30d`); (2) Tổng Views + Tăng trưởng 30 ngày; (3) Doanh thu ước tính (`$low – $high/tháng`) + Quy mô video; (4) Tình trạng YPP & Sức khỏe. | Soát format số liệu (dấu chấm/phẩy ngăn cách hàng nghìn chuẩn tiếng Việt); kiểm tra tính logic giữa lượt view và doanh thu ước tính. |
+| **3** | **Sức Sống & Rủi Ro YPP 2026** | Audit chính xác ngày đăng video gần nhất (`latestUploadDate`) và số ngày trôi qua (`daysSinceLatest`). Nếu > 180 ngày (> 6 tháng) bắt buộc phải có hộp cảnh báo nguy cơ tắt YPP theo quy định YouTube Help 2025–2027. | Kiểm tra probe video mới nhất trên YouTube live; kiểm tra nội dung khuyến cáo không copy thụ động mà phải cải tiến format. |
+| **4** | **Phôi Giọng Chuẩn High-Fidelity** | File âm thanh mẫu MP3 Mono 44.1kHz 192kbps LAME, chuẩn hóa EBU R128 (-16 LUFS, True Peak -1.5dB), lọc low-end <60Hz. Thời lượng file phải **khớp chính xác từng miligiây** với metadata (ví dụ: `10s – 55s (45s)`). Cấm lỗi số học vượt quá độ dài video gốc. | Chạy lệnh `ffprobe` đo thời lượng file; kiểm tra thanh Audio Player trên trình duyệt hiển thị đúng `0:00 / 0:45`; kiểm tra cơ chế Cache-Busting `?t=...` vượt cache CDN. |
+| **5** | **Phân Tích Voice DNA & WPM** | Xác định chuẩn xác: Giới tính, độ tuổi ước lượng của Voice Talent; Tốc độ đọc thực tế WPM (Words Per Minute); Tông giọng & sắc thái cảm xúc chủ đạo; Tệp khán giả mục tiêu. | Đối chiếu số từ trong transcript 45s với thời lượng âm thanh; kiểm tra nhịp điệu đọc có đúng chuẩn ngách hay không. |
+| **6** | **Khung Prompt Âm Thanh AI (Audio Studio)** | Chuẩn hóa theo tiêu chuẩn Google AI Studio / Gemini Speech (Aoede): Đủ 3 khối `Scene` (Không gian âm học phòng thu), `Sample Context` (Cảm xúc & ngữ cảnh), `Speaker Speech Block` (Khớp 100% từng từ với audio 45s). Đủ 4 nút copy 1-click. | Bấm từng nút copy trên giao diện; dán vào text editor kiểm tra nội dung prompt có bị rỗng hoặc lỗi format không. |
+| **7** | **Cấu Hình Clone Voice ElevenLabs** | Nêu rõ: Primary Voice match có sẵn trên ElevenLabs; Top 2-3 Alternative voices; Bộ thông số kỹ thuật (`Stability`, `Similarity Boost`, `Style`, `Speaker Boost`); Voice Design Prompt (sinh giọng từ chữ); SOP kỹ thuật lồng tiếng (Smiling voice, giữ năng lượng). | Kiểm tra các thông số kỹ thuật có nằm trong khoảng tối ưu của ElevenLabs Multilingual v2 hay không. |
+| **8** | **Kho Báu SEO Kênh (Channel Tags)** | Đủ 30–50 tags kênh có giá trị định vị thuật toán và kéo traffic ăn theo đối thủ lớn; Nút `📋 Sao chép tất cả Tags` 1-click hoạt động hoàn hảo. | Bấm nút sao chép tags; kiểm tra clipboard có đủ danh sách tags ngăn cách chuẩn xác hay không. |
+| **9** | **Top Video & Modal Sub Song Ngữ** | Danh sách Top video có rank `#1, #2...`, thumbnail, thời lượng, views, VPH, ngày đăng. Nút `📜 Xem Sub, Lời Thoại & Kịch Bản AI` mở Modal mượt mà với đủ 4 Tab: (1) Song ngữ 1:1 có timestamp `[00:00]`; (2) Bản dịch Tiếng Việt; (3) Bản Tiếng Gốc; (4) Kịch bản AI & Voice production. | Click mở từng video; bấm chuyển mượt mà giữa cả 4 tab; bấm nút copy phụ đề hoạt động 100%. |
+| **10** | **Tình Báo Đa Nguồn & Bóc Tách Outlier** | Kết hợp đa nguồn không ảo giác: (1) Bảng theo dõi tăng trưởng 7 ngày thực tế từ **vidIQ Live API** (`recentVelocity`); (2) Bảng bóc tách 8 video Outlier từ **ảnh chụp gốc OCR** kèm chỉ số đột phá `>100x`; (3) Phân tích **Vision AI** phong cách sản xuất; (4) Đồng bộ deploy VPS và test Playwright PASS 100%. | Soát bảng số liệu vidIQ live; kiểm tra thẻ OCR Outlier; chạy Playwright kiểm thử E2E trên live VPS không có lỗi console/network. |
+
+---
+
+## PHẦN 9 — ĐÓNG PHIÊN (bắt buộc)
 
 1. Cập nhật `CHANGELOG.md` bản mới.
 2. Backup (`_backup/`) trước khi sửa data.
@@ -209,6 +228,6 @@
 4. Xóa script tạm, giữ script tái dùng (`deep-audit.js`).
 5. Chạy `node scripts/validate-project.js` xác nhận sạch.
 
-## PHẦN 9 — "THỔI VÀO TAI" mỗi phiên
+## PHẦN 10 — "THỔI VÀO TAI" mỗi phiên
 
-Mỗi phiên em tự nhắc (3-4 dòng): (1) cộng sự evidence-first, check N/N, đọc FULL; (2) verify đa nguồn MCP, tool lỗi → chuyển tool; (3) phản biện + CÓ/KHÔNG/KHÔNG-VERIFY; (4) đóng phiên cập nhật CHANGELOG + backup + validate; (5) kiểm định video theo đúng Bộ 10 tiêu chuẩn vàng.
+Mỗi phiên em tự nhắc (3-4 dòng): (1) cộng sự evidence-first, check N/N, đọc FULL; (2) verify đa nguồn MCP, tool lỗi → chuyển tool; (3) phản biện + CÓ/KHÔNG/KHÔNG-VERIFY; (4) đóng phiên cập nhật CHANGELOG + backup + validate; (5) kiểm định video theo đúng Bộ 10 tiêu chuẩn vàng Video; (6) kiểm định kênh mẫu theo đúng Bộ 10 tiêu chuẩn vàng Kênh E2E.

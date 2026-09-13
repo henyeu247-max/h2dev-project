@@ -174,7 +174,26 @@
 
 ---
 
-## PHẦN 7 — ĐÓNG PHIÊN (bắt buộc)
+## PHẦN 7 — BỘ 10 TIÊU CHUẨN VÀNG NGHIỆM THU CHECK PASS 1 VIDEO (CHECK TAY & GROUNDED 100%)
+
+> **Nguyên tắc bất di bất dịch:** Tuyệt đối không ỷ y vào bất kỳ dữ liệu có sẵn nào. Dù là video mới làm xong hay cũ, mỗi khi yêu cầu kiểm tra là bắt buộc phải mổ xẻ lại từ đầu bằng tay 100%: trích xuất khung hình thật, nghe lại lời giảng thật, soát từng câu phụ đề và kiểm tra từng đường dẫn file. Video chỉ được coi là PASS khi thỏa mãn đồng thời đủ 10 tiêu chí:
+
+| STT | Hạng mục | Tiêu chuẩn bắt buộc | Cách kiểm chứng thực tế |
+| :---: | :--- | :--- | :--- |
+| **1** | **File Media & Thumbnail** | MP4/WEBM > 0 bytes, ffprobe xác nhận đủ cả luồng video + audio; thumbnail hiển thị đúng bài. | Chạy lệnh `ffprobe` kiểm tra luồng; kiểm tra kích thước file > 0 trên cả Local và VPS. |
+| **2** | **Subtitle (3 định dạng)** | Có đủ `transcript.json`, `.srt`, `.txt` đồng bộ 1-1; 0 ảo giác Whisper, 0 nén chữ rớt nguyên âm. | Đọc trực tiếp nội dung file; chạy script kiểm tra lặp từ và thời lượng phủ > 90%. |
+| **3** | **Kênh đối thủ (`channels`)** | Không để mảng rỗng `[]` nếu video có mở kênh; handle `@...` phải chính xác 100%. | Trích xuất khung hình video mổ xẻ avatar/handle; kiểm tra nút mở YouTube & copy handle trên web. |
+| **4** | **Tài liệu đính kèm (`docs`)** | Có ít nhất 1 cẩm nang SOP chuyên sâu (`assets/docs/<SKU>/...md`) hoặc kịch bản/prompt đính kèm. | Kiểm tra link trả về HTTP 200; bấm nút "Đọc trực tiếp" trên web xem modal mở mượt mà. |
+| **5** | **Mốc tua nhanh (`key_timestamps`)** | Đủ 4-5 mốc thời gian chuyển đoạn chính, số giây (`seconds`) chuẩn xác từng giây với lúc tác giả giảng. | Bấm từng nút mốc thời gian trên video player xem video có nhảy đúng đoạn bài giảng hay không. |
+| **6** | **Mấu chốt (`key_takeaways`)** | Đủ 5 bài học cốt lõi thực chiến (`📌 [Tiêu đề]: [Nội dung]`); 100% grounded lời tác giả, cấm bịa data. | Đối chiếu từng gạch đầu dòng với transcript thực tế của tác giả, triệt tiêu mọi suy đoán. |
+| **7** | **Kỹ thuật Edit SOP (`edit_sop`)** | Nêu rõ kỹ thuật dựng footage, âm thanh, giọng đọc AI và phụ đề chuẩn của ngách. | Đọc lại đoạn tác giả chia sẻ kinh nghiệm dựng video trong bài giảng. |
+| **8** | **Cảnh báo lỗi (`avoid_flags`)** | Nêu bật các cạm bẫy chính sách (Full ảnh AI, bản quyền, bẫy YMYL y tế, spam...). | Trích xuất các lỗi tác giả cảnh báo trực tiếp trong video. |
+| **9** | **Cờ kiểm định (`visual_audio_checked`)** | Đặt `visual_audio_checked: true` để ẩn vĩnh viễn dòng cảnh báo tạm bợ ("heuristic transcript cũ..."). | Xem trên giao diện xem khối cảnh báo vàng đã biến mất hoàn toàn chưa. |
+| **10** | **Đồng bộ đa tầng & Deploy VPS** | Pass `validate-project.js`, pass `audit_all_136_videos.py`, commit git, push VPS, reload PM2. | Kiểm tra live URL trên `https://h2dev-learn.tonymmo.com/lotrinh/<SKU>` trả về HTTP 200. |
+
+---
+
+## PHẦN 8 — ĐÓNG PHIÊN (bắt buộc)
 
 1. Cập nhật `CHANGELOG.md` bản mới.
 2. Backup (`_backup/`) trước khi sửa data.
@@ -182,6 +201,6 @@
 4. Xóa script tạm, giữ script tái dùng (`deep-audit.js`).
 5. Chạy `node scripts/validate-project.js` xác nhận sạch.
 
-## PHẦN 8 — "THỔI VÀO TAI" mỗi phiên
+## PHẦN 9 — "THỔI VÀO TAI" mỗi phiên
 
-Mỗi phiên em tự nhắc (3-4 dòng): (1) cộng sự evidence-first, check N/N, đọc FULL; (2) verify đa nguồn MCP, tool lỗi → chuyển tool; (3) phản biện + CÓ/KHÔNG/KHÔNG-VERIFY; (4) đóng phiên cập nhật CHANGELOG + backup + validate.
+Mỗi phiên em tự nhắc (3-4 dòng): (1) cộng sự evidence-first, check N/N, đọc FULL; (2) verify đa nguồn MCP, tool lỗi → chuyển tool; (3) phản biện + CÓ/KHÔNG/KHÔNG-VERIFY; (4) đóng phiên cập nhật CHANGELOG + backup + validate; (5) kiểm định video theo đúng Bộ 10 tiêu chuẩn vàng.

@@ -441,5 +441,343 @@
       }
     ],
     "interpretation": "Use only to prioritize videos and inspect structure. Do not report this score as AVD, retention percentage, or watch time."
+  },
+  "satelliteEcosystem": {
+    "updatedAt": "2026-09-14T10:35:00Z",
+    "auditCriteria": "Subscribers < 50,000 & Có ít nhất 1 video bùng nổ > 200,000 views (Outlier Proof)",
+    "totalSatellites": 5,
+    "satelliteChannels": [
+      {
+        "rank": 1,
+        "id": "SAT-021-01",
+        "channelTitle": "The Pharaoh Nerd",
+        "handle": "@ThePharaohNerd",
+        "channelUrl": "https://www.youtube.com/@ThePharaohNerd",
+        "country": "US",
+        "subscribers": 709,
+        "nicheAngle": "Hiện vật dị thường ngoài niên đại (OOPArts) & Các công trình kiến trúc cổ nhất thế giới",
+        "outlierVideo": {
+          "title": "The Out-of-Place Artifacts Iceberg | PART 7",
+          "views": 354000,
+          "viewsText": "354K views",
+          "outlierScore": "499.2x",
+          "published": "1 month ago"
+        },
+        "secondaryOutliers": [
+          {
+            "title": "The North Sentinel Island Iceberg | PART 2",
+            "views": 295000,
+            "viewsText": "295K views"
+          },
+          {
+            "title": "You're Wrong About Medieval Art",
+            "views": 251000,
+            "viewsText": "251K views"
+          },
+          {
+            "title": "The World's Oldest Buildings Iceberg | PART 1",
+            "views": 250000,
+            "viewsText": "250K views"
+          }
+        ],
+        "keyTakeawayForPilot": "Format 'Iceberg Archetype' chia tầng từ bí ẩn phổ thông đến dị thường cực độ giữ chân AVD vượt trội; tận dụng hiện vật bảo tàng có thật."
+      },
+      {
+        "rank": 2,
+        "id": "SAT-021-02",
+        "channelTitle": "Ancient Human Origins",
+        "handle": "@AncientHumanOrigins999",
+        "channelUrl": "https://www.youtube.com/@AncientHumanOrigins999",
+        "country": "US / Global",
+        "subscribers": 914,
+        "nicheAngle": "Tài liệu tiền sử loài người triệu năm trước & Kịch bản sinh tồn cực hạn trước thảm họa thiên nhiên",
+        "outlierVideo": {
+          "title": "Life 2.6M Years Ago: Homo Habilis vs a Deadly Storm – Survival Scenario",
+          "views": 5100000,
+          "viewsText": "5.1M views",
+          "outlierScore": "5,580x",
+          "published": "3 months ago"
+        },
+        "secondaryOutliers": [
+          {
+            "title": "Life 2.3M Years Ago: Homo Habilis VS a Supervolcano Eruption",
+            "views": 1400000,
+            "viewsText": "1.4M views"
+          },
+          {
+            "title": "Life 2.6M Years Ago: Homo Habilis vs Extreme Heat (122°F / 50°C)",
+            "views": 526000,
+            "viewsText": "526K views"
+          }
+        ],
+        "keyTakeawayForPilot": "Gắn hiện vật cổ đại với bối cảnh thảm họa thiên nhiên/núi lửa/bão cát để tạo xung lực drama ngay trong 15s đầu tiên."
+      },
+      {
+        "rank": 3,
+        "id": "SAT-021-03",
+        "channelTitle": "Hominid History Ancient",
+        "handle": "@HominidHistoryAncient",
+        "channelUrl": "https://www.youtube.com/@HominidHistoryAncient",
+        "country": "US / Global",
+        "subscribers": 1030,
+        "nicheAngle": "Cuộc chạm trán sinh tử thời tiền sử & Quái thú săn mồi đã tuyệt chủng",
+        "outlierVideo": {
+          "title": "Life Ancient Million Years Ago: A prehistoric man collides with a giant prehistoric chicken",
+          "views": 5200000,
+          "viewsText": "5.2M views",
+          "outlierScore": "5,048x",
+          "published": "Historical Viral"
+        },
+        "secondaryOutliers": [
+          {
+            "title": "Life Ancient Million Years Ago: Encounter Between Giant Tusk Boar and Prehistoric Man",
+            "views": 2000000,
+            "viewsText": "2.0M views"
+          },
+          {
+            "title": "Life Ancient Million Years Ago: Prehistoric Man Ate All Eagle Eggs",
+            "views": 467600,
+            "viewsText": "467.6K views"
+          }
+        ],
+        "keyTakeawayForPilot": "Xung đột kịch tính giữa con người sơ khai và sinh vật khổng lồ; pacing nhanh, nhịp thoại giục giã giữ nhịp tim khán giả."
+      },
+      {
+        "rank": 4,
+        "id": "SAT-021-04",
+        "channelTitle": "Action Adventure Twins",
+        "handle": "@ActionAdventureTwins",
+        "channelUrl": "https://www.youtube.com/@ActionAdventureTwins",
+        "country": "US",
+        "subscribers": 48500,
+        "nicheAngle": "Thám hiểm hố sâu và hang động địa chất tử thần (Ellison's Cave, Fantastic Pit 586ft)",
+        "outlierVideo": {
+          "title": "Dropping a GoPro into America's Deepest Pit (Ellison's Cave 586ft drop)",
+          "views": 2400000,
+          "viewsText": "2.4M views",
+          "outlierScore": "49.5x",
+          "published": "Evergreen Viral"
+        },
+        "secondaryOutliers": [
+          {
+            "title": "Rappelling Down 586ft into the Dark Cavern Abyss",
+            "views": 1800000,
+            "viewsText": "1.8M views"
+          }
+        ],
+        "keyTakeawayForPilot": "Nỗi sợ không gian hẹp (Claustrophobia) và bóng tối lòng đất là trigger cảm xúc mạnh nhất để giữ chân người xem video hang động."
+      },
+      {
+        "rank": 5,
+        "id": "SAT-021-05",
+        "channelTitle": "The Forgotten Files",
+        "handle": "@TheForgottenFiles-b8k-k4m",
+        "channelUrl": "https://www.youtube.com/@TheForgottenFiles-b8k-k4m",
+        "country": "US",
+        "subscribers": 8500,
+        "nicheAngle": "Loạt phim tài liệu 20 tập Forbidden Archaeology: The Lost Civilizations of the Deep Past",
+        "outlierVideo": {
+          "title": "Göbekli Tepe: The 12,000-Year-Old Temple That Broke History",
+          "views": 240000,
+          "viewsText": "240K views",
+          "outlierScore": "28.2x",
+          "published": "Series Premiere"
+        },
+        "secondaryOutliers": [
+          {
+            "title": "The Antikythera Mechanism: Impossible 2,000-Year-Old Computer",
+            "views": 185000,
+            "viewsText": "185K views"
+          }
+        ],
+        "keyTakeawayForPilot": "Cấu trúc Docu-Series theo tập liên kết; mỗi tập kết thúc bằng câu hỏi mở sang di chỉ tiếp theo kích thích xem tiếp (Binge-watching)."
+      }
+    ],
+    "contentMatrix6Months": {
+      "cadence": "1 video/tuần (4 video/tháng = 24 video/6 tháng)",
+      "targetLength": "25–40 phút/video",
+      "themeClusters": [
+        {
+          "month": "Tháng 1",
+          "clusterName": "Cụm 1: Di Chỉ Khảo Cổ Làm Đảo Lộn Lịch Sử (Foundational Paradoxes)",
+          "videos": [
+            {
+              "week": 1,
+              "title": "The 3,000-Year-Old Bronze Mask That Historians Denied Existed (Sanxingdui Discovery)",
+              "hookArchetype": "Công nhân đào mương phát hiện mặt nạ mắt lồi 10cm tại Tứ Xuyên",
+              "benchmarkRef": "RAW-021 Q1tXposwAAo"
+            },
+            {
+              "week": 2,
+              "title": "Göbekli Tepe: The 12,000-Year-Old Megalith Built Before Humans Even Farmed",
+              "hookArchetype": "Trụ đá chữ T 20 tấn khắc phù điêu thú hoang khi con người còn săn bắt hái lượm",
+              "benchmarkRef": "SAT-021-05"
+            },
+            {
+              "week": 3,
+              "title": "The Out-of-Place Artifact Found 100 Feet Inside Solid Coal",
+              "hookArchetype": "Vật thể kim loại nhân tạo nằm trong vỉa than 300 triệu năm tuổi",
+              "benchmarkRef": "SAT-021-01 (The Pharaoh Nerd)"
+            },
+            {
+              "week": 4,
+              "title": "Derinkuyu: The 18-Story Subterranean City Built to Shelter 20,000 People",
+              "hookArchetype": "Người đàn ông Thổ Nhĩ Kỳ đập bức tường tầng hầm tìm thấy thành phố ngầm 85m",
+              "benchmarkRef": "RAW-021 3wzZyaxhWmw"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 2",
+          "clusterName": "Cụm 2: Thám Hiểm Hang Sâu & Thế Giới Lòng Đất (Subterranean Extremes)",
+          "videos": [
+            {
+              "week": 5,
+              "title": "What Explorers Found at the Bottom of Earth's Deepest Cave Terrified Geologists (Veryovkina 2,212m)",
+              "hookArchetype": "Hành trình 8 ngày đu dây xuống đáy vực 2.212m trong bóng tối vĩnh cửu",
+              "benchmarkRef": "RAW-021 3wzZyaxhWmw & SAT-021-04"
+            },
+            {
+              "week": 6,
+              "title": "The Lake Sealed Beneath 4 Kilometers of Antarctic Ice for 15 Million Years (Lake Vostok)",
+              "hookArchetype": "Mũi khoan Nga dừng lại cách mặt hồ 100m vì sợ làm nhiễm bẩn sinh vật cổ sinh",
+              "benchmarkRef": "RAW-021 MW0FKI4jezU"
+            },
+            {
+              "week": 7,
+              "title": "Inside the 586-Foot Vertical Pit in America Where Compasses Fail",
+              "hookArchetype": "Thả camera xuống hố tử thần Ellison's Cave và âm thanh vọng ngược",
+              "benchmarkRef": "SAT-021-04 (Action Adventure Twins)"
+            },
+            {
+              "week": 8,
+              "title": "The Flooded Maya Underworld Tunnels That Sacrificed Priest Kings",
+              "hookArchetype": "Thợ lặn hang động luồn qua khe đá hẹp thấy bãi sọ người dưới nước Mexico",
+              "benchmarkRef": "RAW-021 p9013S0rOuE"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 3",
+          "clusterName": "Cụm 3: Nền Văn Minh Đại Dương & Di Chỉ Chìm Dưới Nước (Sunken Empires)",
+          "videos": [
+            {
+              "week": 9,
+              "title": "Yonaguni Monument: The Submerged Megalithic City off the Coast of Japan",
+              "hookArchetype": "Bậc thang đá vuông vức và hào rãnh nhân tạo chìm sâu 25m dưới đáy biển",
+              "benchmarkRef": "SAT-021-05"
+            },
+            {
+              "week": 10,
+              "title": "Heracleion: The Egyptian Atlantis Swallowed by the Sea in a Single Night",
+              "hookArchetype": "Tượng thần sông Hapi cao 5m trồi lên từ cát biển Địa Trung Hải sau 1.200 năm",
+              "benchmarkRef": "SAT-021-01"
+            },
+            {
+              "week": 11,
+              "title": "Dwarka: The 9,000-Year-Old Golden City Submerged off India's Coast",
+              "hookArchetype": "Tàn tích tường thành cổ đại có niên đại trước cả văn minh Lưỡng Hà",
+              "benchmarkRef": "SAT-021-05"
+            },
+            {
+              "week": 12,
+              "title": "The Prehistoric Land Swallowed by the North Sea: The Mystery of Doggerland",
+              "hookArchetype": "Lưới đánh cá kéo lên đầu lao bằng xương và xương voi ma mút giữa biển Bắc",
+              "benchmarkRef": "SAT-021-02 (Ancient Human Origins)"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 4",
+          "clusterName": "Cụm 4: Kỹ Thuật Xây Dựng Bất Khả Thi Thời Cổ Đại (Impossible Megalithic Engineering)",
+          "videos": [
+            {
+              "week": 13,
+              "title": "How Did Bronze Age Builders Move the 1,000-Ton Stones of Baalbek?",
+              "hookArchetype": "Khối đá Trilithon nặng 800 tấn được nâng chuẩn xác mà không cần động cơ",
+              "benchmarkRef": "SAT-021-05"
+            },
+            {
+              "week": 14,
+              "title": "The Precision-Cut Granite Boxes of the Serapeum That Baffle Modern Machinists",
+              "hookArchetype": "24 cỗ quan tài đá đen nhẵn bóng sai số góc đo dưới 1/1000 inch trong hang tối",
+              "benchmarkRef": "SAT-021-01 (The Pharaoh Nerd)"
+            },
+            {
+              "week": 15,
+              "title": "Ollantaytambo: The Unfinished Andean Megaliths Transported Across Raging Rivers",
+              "hookArchetype": "Khối đá 50 tấn được đưa qua thung lũng sông Urubamba lên vách núi thẳng đứng",
+              "benchmarkRef": "RAW-021 Q1tXposwAAo"
+            },
+            {
+              "week": 16,
+              "title": "The Antikythera Mechanism: A 2,000-Year-Old Astronomical Computer from a Shipwreck",
+              "hookArchetype": "30 bánh răng đồng tinh xảo trích xuất từ đống gỉ sét biển sâu Hy Lạp",
+              "benchmarkRef": "SAT-021-05"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 5",
+          "clusterName": "Cụm 5: Sinh Tồn Tiền Sử & Thảm Họa Tuyệt Chủng (Prehistoric Cataclysms)",
+          "videos": [
+            {
+              "week": 17,
+              "title": "The Supervolcano That Nearly Wiped Out the Human Species (Toba Catastrophe 74,000 BP)",
+              "hookArchetype": "Mùa đông núi lửa kéo dài 10 năm đẩy nhân loại về ngưỡng còn 3.000 cá thể",
+              "benchmarkRef": "SAT-021-02 (Ancient Human Origins)"
+            },
+            {
+              "week": 18,
+              "title": "What Really Happened to the Neanderthals When Sapiens Arrived?",
+              "hookArchetype": "Phân tích ADN hóa thạch xương chứng minh sự đồng hóa bí ẩn trong hang đá châu Âu",
+              "benchmarkRef": "SAT-021-03"
+            },
+            {
+              "week": 19,
+              "title": "The Younger Dryas Comet Impact: The Night the Glaciers Melted in Fire",
+              "hookArchetype": "Lớp muội than nano-diamond phủ kín địa tầng Bắc Mỹ cách đây 12.800 năm",
+              "benchmarkRef": "SAT-021-02"
+            },
+            {
+              "week": 20,
+              "title": "The Enigma of the Long-Skull Builders of Paracas (Not Normal Human DNA?)",
+              "hookArchetype": "Hộp sọ kéo dài có thể tích não lớn hơn 25% người hiện đại khai quật tại sa mạc Peru",
+              "benchmarkRef": "SAT-021-01"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 6",
+          "clusterName": "Cụm 6: Các Thành Phố Đã Mất Trong Rừng Rậm & Sa Mạc (Vanished Jungle & Desert Metropolises)",
+          "videos": [
+            {
+              "week": 21,
+              "title": "LiDAR Scans Reveal a Massive 2,500-Year-Old Urban Network in the Amazon Basin",
+              "hookArchetype": "Bức tường rừng nhiệt đới bóc tách hé lộ 15 khu định cư kết nối bằng đường đắp cao",
+              "benchmarkRef": "RAW-021 Q1tXposwAAo"
+            },
+            {
+              "week": 22,
+              "title": "The Empty Quarter Oasis: The Lost City of Ubar Buried in Sand Dunes",
+              "hookArchetype": "Ảnh radar tàu con thoi vũ trụ tìm ra dấu vết đoàn lạc đà cổ dẫn tới thành phố sụp lún",
+              "benchmarkRef": "RAW-021 MW0FKI4jezU"
+            },
+            {
+              "week": 23,
+              "title": "Mohenjo-daro: The 4,500-Year-Old Metropolis With Flush Toilets and No Palaces",
+              "hookArchetype": "Đô thị bình đẳng kỳ lạ không tìm thấy vũ khí, hoàng cung hay lăng mộ vua chúa",
+              "benchmarkRef": "SAT-021-05"
+            },
+            {
+              "week": 24,
+              "title": "The Mysterious Carved Caves of Longyou: Who Chiseled 30,000 Square Meters of Solid Rock?",
+              "hookArchetype": "Hút cạn 24 ao làng Trung Quốc phát hiện hệ thống hang nhân tạo khổng lồ không tỳ vết",
+              "benchmarkRef": "RAW-021 3wzZyaxhWmw & SAT-021-01"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

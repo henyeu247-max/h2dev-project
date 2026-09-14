@@ -1,3 +1,20 @@
+## 2026-09-14 — Triển khai Log Auto-Rotation & Quản trị tập trung thư mục logs/
+
+- **Xây dựng module `scripts/logrotate.js` độc lập & chuẩn mực:**
+  - Tự động kiểm tra và bảo đảm thư mục tập trung `D:\YTB\H2DEV-Project\logs/` luôn tồn tại.
+  - Ngưỡng giới hạn: Tự động nén Gzip (`.gz`) và xoay vòng (logrotate) khi bất kỳ file log nào vượt quá **10 MB** (10.485.760 bytes).
+  - Truncate an toàn file log hiện hành về 0 bytes mà không làm gián đoạn tiến trình đang ghi.
+  - Áp dụng chính sách lưu trữ (Retention Policy): Giữ tối đa 5 bản nén gần nhất (`MAX_BACKUPS = 5`), tự động dọn dẹp các bản nén cũ hơn.
+  - Cơ chế quét rễ (Root Sweeper): Tự động quét và di chuyển các file `.log` mồ côi rơi rớt ở thư mục gốc `D:\YTB\` hoặc `H2DEV-Project/` gom về đúng thư mục tập trung `logs/` (đã quét gom sạch 5 file `debug.log`, `h2dev-tray.log`, `server-lan*.log`, `server.log`).
+- **Tích hợp sâu vào `server.js`:**
+  - Khởi tạo bộ đếm thời gian kiểm tra định kỳ mỗi 30 phút (`initLogRotation(30 * 60 * 1000)`).
+  - Tự động kích hoạt 1 lượt quét ngay khi server khởi động (`server.listen`).
+  - Bổ sung bộ xử lý ngoại lệ an toàn `uncaughtException` và `unhandledRejection` chống sập server bất thường.
+- **Bổ sung lệnh thực thi trong `package.json`:**
+  - `npm run logrotate`: Chạy kiểm tra và xoay vòng log thủ công theo ngưỡng 10 MB.
+  - `npm run logrotate:force`: Ép buộc xoay vòng và nén toàn bộ log hiện có bất kể kích thước.
+- **Kiểm định nghiệm thu:** Cú pháp Node PASS; unit test file giả lập 11.5 MB nén thành công 11 KB gzip; `validate-project.js` PASS 100%.
+
 ## 2026-09-14 — Fix toàn diện 8 vấn đề cross-field consistency hồ sơ RAW-021
 
 - **FIX 1-3 — Xóa duplicate 3 fields khỏi production_toolkit.json:**

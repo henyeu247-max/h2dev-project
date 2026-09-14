@@ -3,6 +3,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const zlib = require('node:zlib');
 const { initLogRotation, checkAndRotateAll } = require('./scripts/logrotate');
 const { searchFts, mutateDatabase, query, queryOne } = require('./scripts/master_dal');
 
@@ -40,13 +41,18 @@ const MIME = {
   '.xlsx':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 };
 
-function sendFile(res, full, mime, rangeHeader, isHead = false){
+const COMPRESSIBLE_EXTS = new Set([
+  '.html', '.css', '.js', '.json', '.svg', '.csv', '.tsv', '.txt', '.md'
+]);
+
+function sendFile(req, res, full, mime, rangeHeader, isHead = false){
   fs.stat(full, (err, st)=>{
     if(err || !st.isFile()){
       res.writeHead(404, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
       res.end('404 Not Found');
       return;
     }
+    const ext = path.extname(full).toLowerCase();
     const total = st.size;
     let start=0, end=total-1, status=200;
     if(rangeHeader){
@@ -70,8 +76,6 @@ function sendFile(res, full, mime, rangeHeader, isHead = false){
     }
     const headers = {
       'Content-Type': mime,
-      'Accept-Ranges':'bytes',
-      'Content-Length': (end-start+1),
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
       'Content-Disposition': 'inline',
@@ -79,13 +83,44 @@ function sendFile(res, full, mime, rangeHeader, isHead = false){
     if (mime === 'application/json' || full.endsWith('.json') || full.endsWith('.html')) {
       headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
     }
-    if(status===206) headers['Content-Range']='bytes '+start+'-'+end+'/'+total;
-    res.writeHead(status, headers);
-    if(isHead){
-      res.end();
+
+    if(status===206){
+      // Video/Audio Range requests: ALWAYS uncompressed, exact byte boundaries
+      headers['Accept-Ranges'] = 'bytes';
+      headers['Content-Length'] = (end-start+1);
+      headers['Content-Range'] = 'bytes '+start+'-'+end+'/'+total;
+      res.writeHead(status, headers);
+      if(isHead){ res.end(); return; }
+      const stream = fs.createReadStream(full, {start, end});
+      stream.on('error', () => { if (!res.headersSent) res.destroy(); });
+      stream.pipe(res);
       return;
     }
-    fs.createReadStream(full, {start, end}).pipe(res);
+
+    // Standard 200 GET: Check if client accepts Gzip and file is compressible text/data
+    const acceptEncoding = req && req.headers ? (req.headers['accept-encoding'] || '') : '';
+    const canGzip = !rangeHeader && COMPRESSIBLE_EXTS.has(ext) && acceptEncoding.includes('gzip');
+
+    headers['Vary'] = 'Accept-Encoding';
+
+    if (canGzip) {
+      headers['Content-Encoding'] = 'gzip';
+      res.writeHead(200, headers);
+      if (isHead) { res.end(); return; }
+      const rawStream = fs.createReadStream(full);
+      const gz = zlib.createGzip({ level: 6 });
+      rawStream.on('error', () => { if (!res.headersSent) res.destroy(); });
+      gz.on('error', () => { if (!res.headersSent) res.destroy(); });
+      rawStream.pipe(gz).pipe(res);
+    } else {
+      headers['Accept-Ranges'] = 'bytes';
+      headers['Content-Length'] = total;
+      res.writeHead(200, headers);
+      if (isHead) { res.end(); return; }
+      const stream = fs.createReadStream(full);
+      stream.on('error', () => { if (!res.headersSent) res.destroy(); });
+      stream.pipe(res);
+    }
   });
 }
 
@@ -95,18 +130,34 @@ function readAdminState(){
   catch (e) { return {role:'admin', version:1, updatedAt:0, watched:{}, favorites:[], recent:null}; }
 }
 
-function sendJson(res, status, value, isHead = false, extraHeaders = {}){
-  const body=JSON.stringify(value);
-  res.writeHead(status, {
+function sendJson(req, res, status, value, isHead = false, extraHeaders = {}){
+  const body = JSON.stringify(value);
+  const acceptEncoding = req && req.headers ? (req.headers['accept-encoding'] || '') : '';
+  const canGzip = acceptEncoding.includes('gzip');
+
+  const headers = {
     'Content-Type':'application/json; charset=utf-8',
-    'Content-Length': Buffer.byteLength(body),
     'Access-Control-Allow-Origin':'*',
     'Cache-Control':'no-store',
     'X-Content-Type-Options':'nosniff',
+    'Vary': 'Accept-Encoding',
     ...extraHeaders,
-  });
-  if (isHead) { res.end(); return; }
-  res.end(body);
+  };
+
+  if (canGzip) {
+    const buf = Buffer.from(body);
+    const gzipped = zlib.gzipSync(buf, { level: 6 });
+    headers['Content-Encoding'] = 'gzip';
+    headers['Content-Length'] = gzipped.length;
+    res.writeHead(status, headers);
+    if (isHead) { res.end(); return; }
+    res.end(gzipped);
+  } else {
+    headers['Content-Length'] = Buffer.byteLength(body);
+    res.writeHead(status, headers);
+    if (isHead) { res.end(); return; }
+    res.end(body);
+  }
 }
 
 const server = http.createServer(async (req,res)=>{
@@ -124,17 +175,17 @@ const server = http.createServer(async (req,res)=>{
   const apiPath = req.url.split('?')[0];
   if (apiPath === '/api/admin-state') {
     if (req.method === 'GET' || isHead) {
-      sendJson(res, 200, readAdminState(), isHead, {'Allow': 'GET, HEAD, OPTIONS'});
+      sendJson(req, res, 200, readAdminState(), isHead, {'Allow': 'GET, HEAD, OPTIONS'});
       return;
     }
-    sendJson(res, 405, {error:'Admin state writes are disabled'}, false, {'Allow': 'GET, HEAD, OPTIONS'});
+    sendJson(req, res, 405, {error:'Admin state writes are disabled'}, false, {'Allow': 'GET, HEAD, OPTIONS'});
     return;
   }
   if (apiPath === '/api/intelligence/breakouts') {
     if (req.method === 'GET' || isHead) {
       const dbFile = path.join(ROOT, 'data', 'intelligence.db');
       if (!fs.existsSync(dbFile)) {
-        sendJson(res, 200, { total: 0, channels: [] }, isHead);
+        sendJson(req, res, 200, { total: 0, channels: [] }, isHead);
         return;
       }
       let db = null;
@@ -142,16 +193,16 @@ const server = http.createServer(async (req,res)=>{
         const { DatabaseSync } = require('node:sqlite');
         db = new DatabaseSync(dbFile);
         const rows = db.prepare('SELECT channel_id, handle, title, channel_age_days, median_views, top_outlier_multiplier, is_faceless, faceless_type, last_crawled_at FROM channels WHERE is_breakout = 1 ORDER BY median_views DESC LIMIT 30').all();
-        sendJson(res, 200, { total: rows.length, channels: rows }, isHead);
+        sendJson(req, res, 200, { total: rows.length, channels: rows }, isHead);
         return;
       } catch (err) {
-        sendJson(res, 500, { error: err.message }, isHead);
+        sendJson(req, res, 500, { error: err.message }, isHead);
         return;
       } finally {
         if (db) db.close();
       }
     }
-    sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
   if (apiPath === '/api/intelligence/spider') {
@@ -161,14 +212,14 @@ const server = http.createServer(async (req,res)=>{
       try {
         const spider = require('./scripts/spider_graph_engine');
         const report = await spider.executeSpiderGraphTraversal(seed, { maxHop2Videos: 2 });
-        sendJson(res, 200, report, isHead);
+        sendJson(req, res, 200, report, isHead);
         return;
       } catch (err) {
-        sendJson(res, 500, { error: err.message }, isHead);
+        sendJson(req, res, 500, { error: err.message }, isHead);
         return;
       }
     }
-    sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
   if (apiPath === '/api/search') {
@@ -178,14 +229,14 @@ const server = http.createServer(async (req,res)=>{
       const limit = Math.min(50, Math.max(1, parseInt(parsedUrl.searchParams.get('limit') || '20', 10)));
       try {
         const rows = searchFts(q, limit);
-        sendJson(res, 200, { query: q, total: rows.length, results: rows }, isHead);
+        sendJson(req, res, 200, { query: q, total: rows.length, results: rows }, isHead);
         return;
       } catch (err) {
-        sendJson(res, 200, { query: q, total: 0, results: [], error: err.message }, isHead);
+        sendJson(req, res, 200, { query: q, total: 0, results: [], error: err.message }, isHead);
         return;
       }
     }
-    sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
   if (req.method !== 'GET' && !isHead) {
@@ -248,20 +299,20 @@ const server = http.createServer(async (req,res)=>{
     if(!err && st.isDirectory()){
       const idx = path.join(full, 'index.html');
       fs.stat(idx, (e2,s2)=>{
-        if(!e2 && s2.isFile()) sendFile(res, idx, MIME['.html'], req.headers.range, isHead);
+        if(!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
         else { res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'}); res.end('404 Not Found'); }
       });
       return;
     }
     if(!err && st.isFile()){
       const mime = MIME[path.extname(full).toLowerCase()] || 'application/octet-stream';
-      sendFile(res, full, mime, req.headers.range, isHead);
+      sendFile(req, res, full, mime, req.headers.range, isHead);
       return;
     }
     if(!path.extname(full)){
       const idx = path.join(full, 'index.html');
       fs.stat(idx, (e2,s2)=>{
-        if(!e2 && s2.isFile()) sendFile(res, idx, MIME['.html'], req.headers.range, isHead);
+        if(!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
         else { res.writeHead(404,{'Content-Type':'text/plain', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'}); res.end('404: '+urlPath); }
       });
       return;

@@ -1,7 +1,7 @@
 {
-  "base": "https://h2dev-learn.tonymmo.com",
-  "total": 32,
-  "passed": 32,
+  "base": "http://127.0.0.1:8899",
+  "total": 33,
+  "passed": 33,
   "checks": [
     {
       "name": "Lấy được danh sách video trong modal",
@@ -21,7 +21,7 @@
     {
       "name": "Video Q1tXposwAAo phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":5.550999,\"paused\":false,\"duration\":2112.061}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":0.564185,\"paused\":false,\"duration\":2112.061},\"playerError\":null}"
     },
     {
       "name": "Video MW0FKI4jezU mở được modal player",
@@ -36,7 +36,7 @@
     {
       "name": "Video MW0FKI4jezU phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":5.86991,\"paused\":false,\"duration\":2318.721}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":1.149902,\"paused\":false,\"duration\":2318.721},\"playerError\":null}"
     },
     {
       "name": "Video p9013S0rOuE mở được modal player",
@@ -51,7 +51,7 @@
     {
       "name": "Video p9013S0rOuE phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":6.091815,\"paused\":false,\"duration\":2517.261}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":1.292359,\"paused\":false,\"duration\":2517.261},\"playerError\":null}"
     },
     {
       "name": "Video 3wzZyaxhWmw mở được modal player",
@@ -66,7 +66,7 @@
     {
       "name": "Video 3wzZyaxhWmw phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":6.093151,\"paused\":false,\"duration\":2388.841}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":1.392057,\"paused\":false,\"duration\":2388.841},\"playerError\":null}"
     },
     {
       "name": "Video Hz-8h0TK8wY mở được modal player",
@@ -81,7 +81,7 @@
     {
       "name": "Video Hz-8h0TK8wY phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":5.807698,\"paused\":false,\"duration\":1979.621}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":1.445971,\"paused\":false,\"duration\":1979.621},\"playerError\":null}"
     },
     {
       "name": "Video ieq4c-4vGh0 mở được modal player",
@@ -96,7 +96,7 @@
     {
       "name": "Video ieq4c-4vGh0 phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":6.086225,\"paused\":false,\"duration\":2648.041}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":1.249073,\"paused\":false,\"duration\":2648.041},\"playerError\":null}"
     },
     {
       "name": "Video Vj7sOGyCAoQ mở được modal player",
@@ -111,7 +111,7 @@
     {
       "name": "Video Vj7sOGyCAoQ phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":6.09684,\"paused\":false,\"duration\":1944.041}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":1.250764,\"paused\":false,\"duration\":1944.041},\"playerError\":null}"
     },
     {
       "name": "Video gQOQJ49LsfE mở được modal player",
@@ -126,7 +126,7 @@
     {
       "name": "Video gQOQJ49LsfE phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":6.136839,\"paused\":false,\"duration\":1880.041}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":0.961414,\"paused\":false,\"duration\":1880.041},\"playerError\":null}"
     },
     {
       "name": "Video TvgyAd8K1PQ mở được modal player",
@@ -141,7 +141,7 @@
     {
       "name": "Video TvgyAd8K1PQ phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":5.991964,\"paused\":false,\"duration\":1832.041}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":1.313156,\"paused\":false,\"duration\":1832.041},\"playerError\":null}"
     },
     {
       "name": "Video cDFrCFvJU-k mở được modal player",
@@ -156,12 +156,17 @@
     {
       "name": "Video cDFrCFvJU-k phát được trong app",
       "pass": true,
-      "detail": "{\"readyState\":4,\"currentTime\":5.113655,\"paused\":false,\"duration\":2063.041}"
+      "detail": "{\"state\":\"PLAYING\",\"firstAttempt\":null,\"video\":{\"readyState\":4,\"currentTime\":1.397597,\"paused\":false,\"duration\":2063.041},\"playerError\":null}"
     },
     {
       "name": "Không có console error",
       "pass": true,
       "detail": ""
+    },
+    {
+      "name": "Đã ghi playbackVerifiedAt vào top-videos.json",
+      "pass": true,
+      "detail": "10/10 PLAYABLE_VERIFIED"
     }
   ]
 }

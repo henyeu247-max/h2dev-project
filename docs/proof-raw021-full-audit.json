@@ -1,5 +1,5 @@
 {
-  "base": "https://h2dev-learn.tonymmo.com",
+  "base": "http://127.0.0.1:8899",
   "checks": [
     {
       "name": "Card RAW-021 visible",
@@ -32,6 +32,41 @@
       "detail": ""
     },
     {
+      "name": "Data Gaps block present",
+      "pass": true,
+      "detail": "data gaps block"
+    },
+    {
+      "name": "Data Gaps all-resolved label",
+      "pass": true,
+      "detail": "all resolved"
+    },
+    {
+      "name": "Data Gaps audit timestamp",
+      "pass": true,
+      "detail": "audit timestamp"
+    },
+    {
+      "name": "Data Gaps human label: Live snapshot",
+      "pass": true,
+      "detail": "live snapshot label"
+    },
+    {
+      "name": "Data Gaps human label: Thumbnail",
+      "pass": true,
+      "detail": "thumbnail label"
+    },
+    {
+      "name": "Data Gaps human label: Retention proxy",
+      "pass": true,
+      "detail": "retention proxy label"
+    },
+    {
+      "name": "Data Gaps: status codes collapsed (not raw text)",
+      "pass": true,
+      "detail": "status codes collapsed"
+    },
+    {
       "name": "Modal contains: Hidden Planet Docs",
       "pass": true,
       "detail": "Hidden Planet Docs"
@@ -42,9 +77,9 @@
       "detail": "@HiddenPlanetDocs"
     },
     {
-      "name": "Modal contains: 89.200",
+      "name": "Modal contains: 91.100",
       "pass": true,
-      "detail": "89.200"
+      "detail": "91.100"
     },
     {
       "name": "Modal contains: $800 – $2.400/tháng",
@@ -92,11 +127,6 @@
       "detail": "YPP Risk Note"
     },
     {
-      "name": "Modal contains: Data Gaps",
-      "pass": true,
-      "detail": "Data Gaps"
-    },
-    {
       "name": "Modal contains: Display Rank",
       "pass": true,
       "detail": "Display Rank"
@@ -105,6 +135,61 @@
       "name": "Modal contains: Source Rank gốc",
       "pass": true,
       "detail": "Source Rank gốc"
+    },
+    {
+      "name": "Modal contains: Public retention signal — không phải AVD thật",
+      "pass": true,
+      "detail": "Public retention signal — không phải AVD thật"
+    },
+    {
+      "name": "Modal contains: PROXY_ONLY",
+      "pass": true,
+      "detail": "PROXY_ONLY"
+    },
+    {
+      "name": "Modal contains: Điểm tín hiệu công khai",
+      "pass": true,
+      "detail": "Điểm tín hiệu công khai"
+    },
+    {
+      "name": "Modal contains: Độ tin cậy: MEDIUM",
+      "pass": true,
+      "detail": "Độ tin cậy: MEDIUM"
+    },
+    {
+      "name": "Modal contains: 10/10 video",
+      "pass": true,
+      "detail": "10/10 video"
+    },
+    {
+      "name": "Modal contains: transcript đầy đủ 10/10",
+      "pass": true,
+      "detail": "transcript đầy đủ 10/10"
+    },
+    {
+      "name": "Modal contains: Hồ sơ Benchmark đối thủ đã khóa",
+      "pass": true,
+      "detail": "Hồ sơ Benchmark đối thủ đã khóa"
+    },
+    {
+      "name": "AVD proxy score is 63/100",
+      "pass": true,
+      "detail": "proxy score"
+    },
+    {
+      "name": "AVD proxy does not claim minutes or percentage",
+      "pass": true,
+      "detail": "no false AVD claim"
+    },
+    {
+      "name": "Xóa bỏ triệt để nghiệm thu mù: không còn Sẵn sàng bấm máy",
+      "pass": true,
+      "detail": "no blind acceptance"
+    },
+    {
+      "name": "Giải trình số âm minh bạch trong modal",
+      "pass": true,
+      "detail": "anomaly explained"
     },
     {
       "name": "Mission Control visible",

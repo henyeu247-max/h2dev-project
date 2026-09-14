@@ -4,6 +4,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const { initLogRotation, checkAndRotateAll } = require('./scripts/logrotate');
+const { searchFts, mutateDatabase, query, queryOne } = require('./scripts/master_dal');
 
 // Khởi tạo cơ chế Log Auto-Rotation (tự nén .gz khi log > 10MB, quét dọn file mồ côi)
 initLogRotation(30 * 60 * 1000); // Quét định kỳ mỗi 30 phút
@@ -175,28 +176,13 @@ const server = http.createServer(async (req,res)=>{
       const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
       const q = (parsedUrl.searchParams.get('q') || '').trim();
       const limit = Math.min(50, Math.max(1, parseInt(parsedUrl.searchParams.get('limit') || '20', 10)));
-      const dbFile = path.join(ROOT, 'data', 'h2dev_master.db');
-      if (!fs.existsSync(dbFile) || !q) {
-        sendJson(res, 200, { query: q, total: 0, results: [] }, isHead);
-        return;
-      }
-      let db = null;
       try {
-        const { DatabaseSync } = require('node:sqlite');
-        db = new DatabaseSync(dbFile);
-        const rows = db.prepare(`
-          SELECT entity_id, entity_type, title, snippet(search_fts, 3, '<mark>', '</mark>', '...', 15) AS snippet
-          FROM search_fts
-          WHERE search_fts MATCH ?
-          LIMIT ?
-        `).all(q, limit);
+        const rows = searchFts(q, limit);
         sendJson(res, 200, { query: q, total: rows.length, results: rows }, isHead);
         return;
       } catch (err) {
         sendJson(res, 200, { query: q, total: 0, results: [], error: err.message }, isHead);
         return;
-      } finally {
-        if (db) db.close();
       }
     }
     sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });

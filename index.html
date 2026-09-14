@@ -599,7 +599,7 @@
       return `<div class="card interactive-card overflow-hidden min-w-0 flex flex-col justify-between group">
     <div>
       <a href="${vUrl}" class="relative block aspect-video bg-black overflow-hidden" title="Xem: ${esc(v.title)}">
-        <img src="${esc(v.image || 'assets/thumbs/placeholder.svg')}" alt="Thumbnail: ${esc(v.title)}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+        <img src="${esc(v.image || 'assets/thumbs/placeholder.svg')}" alt="Thumbnail: ${esc(v.title)}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
         <div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1">${lock}${drm}${wb}${notDownloaded}</div>
         ${channels.length ? '<div class="absolute top-2.5 right-2.5 badge badge-blue">' + channels.length + ' kênh</div>' : ''}
         ${wp}
@@ -777,7 +777,7 @@
         const docs = safeArray(v.docs);
         const channels = safeArray(v.channels);
         return `<a href="/lotrinh/${encodeURIComponent(v.sku)}" class="flex gap-2.5 p-2 rounded-xl hover:bg-ink-700/60 border border-transparent hover:border-ink-600 transition-colors group min-w-0 ${extraClass || ''}" ${extraAttr || ''}>
-      <img src="${esc(v.image || 'assets/thumbs/placeholder.svg')}" alt="Thumbnail bài học: ${esc(v.title)}" width="72" height="40" loading="lazy" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-[72px] h-[40px] rounded-xl object-cover shrink-0 bg-black">
+      <img src="${esc(v.image || 'assets/thumbs/placeholder.svg')}" alt="Thumbnail bài học: ${esc(v.title)}" width="72" height="40" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-[72px] h-[40px] rounded-xl object-cover shrink-0 bg-black">
       <div class="min-w-0 flex-1">
         <div class="text-xs font-medium text-white leading-snug line-clamp-2 group-hover:text-brand-200 transition-colors break-words">${esc(v.title)}</div>
         <div class="flex items-center flex-wrap gap-x-2 gap-y-0.5 mt-1">
@@ -1477,7 +1477,7 @@
         return `
         <article class="card overflow-hidden min-w-0 flex flex-col hover:border-brand-500 transition group" data-raw-card="${esc(r.id)}">
           <div class="js-view-raw-image relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700 cursor-pointer" data-src="${esc(imgSrc)}" data-title="${esc((ch.title || r.id).trim())}" title="Bấm xem ảnh kích thước đầy đủ">
-            <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
             <div class="absolute top-2 left-2 flex items-center gap-1 z-10">
               <span class="bg-ink-900/80 px-2 py-0.5 rounded-xl text-[10px] font-mono text-gray-300 border border-white/10 truncate">${esc(r.id)}</span>
               ${langInfo ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-[9.5px] shrink-0" title="${esc(langInfo.language || langInfo.code)}">${esc(langInfo.flag)} ${esc(langInfo.code ? langInfo.code.split('-')[0].toUpperCase() : '')}</span>` : ''}
@@ -1548,7 +1548,7 @@
       }
       function avatarHtml(ch) {
         if (ch.avatar) {
-          return `<img src="${esc(ch.avatar)}" alt="${esc(ch.handle || ch.name || 'Kênh')}" class="w-11 h-11 rounded-xl object-cover shrink-0 bg-ink-700" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm items-center justify-center shrink-0 hidden">${esc(initial(ch.handle))}</div>`;
+          return `<img src="${esc(ch.avatar)}" alt="${esc(ch.handle || ch.name || 'Kênh')}" class="w-11 h-11 rounded-xl object-cover shrink-0 bg-ink-700" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm items-center justify-center shrink-0 hidden">${esc(initial(ch.handle))}</div>`;
         }
         return `<div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm flex items-center justify-center shrink-0">${esc(initial(ch.handle))}</div>`;
       }
@@ -2089,7 +2089,7 @@
             <!-- Header -->
             <div style="display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; background:#111827; border-bottom:1px solid #1f2937; flex-shrink:0; gap:1rem;">
               <div style="display:flex; align-items:center; gap:0.85rem; min-width:0;">
-                <img src="${esc(pData.avatar || ch.avatar || 'assets/thumbs/placeholder.svg')}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" alt="Avatar" style="width:48px; height:48px; border-radius:0.75rem; object-fit:cover; border:1px solid #374151; flex-shrink:0;">
+                <img src="${esc(pData.avatar || ch.avatar || 'assets/thumbs/placeholder.svg')}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" alt="Avatar" loading="lazy" decoding="async" style="width:48px; height:48px; border-radius:0.75rem; object-fit:cover; border:1px solid #374151; flex-shrink:0;">
                 <div style="min-width:0;">
                   <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
                     <h3 style="font-size:1.1rem; font-weight:800; color:#fff; margin:0;" class="truncate">${esc(pData.title || ch.title || r.id)}</h3>
@@ -2532,7 +2532,7 @@
 
                 <!-- Facade Player Container (Lazy Load YouTube Embed - 0 MB disk, 0ms delay) -->
                 <div id="demo-video-player-${rawId}" style="position:relative; width:100%; aspect-ratio:16/9; background:#000; border-radius:0.75rem; overflow:hidden; border:1px solid #1e293b; box-shadow:0 8px 30px rgba(0,0,0,0.7);">
-                  <img src="https://i.ytimg.com/vi/${demoVid.videoId}/hqdefault.jpg" alt="${esc(demoVid.title)}" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.85);">
+                  <img src="https://i.ytimg.com/vi/${demoVid.videoId}/hqdefault.jpg" alt="${esc(demoVid.title)}" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.85);">
                   <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.5) 100%); display:flex; flex-direction:column; justify-content:space-between; padding:0.85rem 1rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem;">
                       <span style="font-size:0.75rem; font-weight:700; color:#fff; background:rgba(0,0,0,0.75); padding:0.25rem 0.6rem; border-radius:0.375rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); line-clamp:1;" class="line-clamp-1">
@@ -2736,7 +2736,7 @@
                     <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; overflow:hidden; display:flex; flex-direction:column; transition:all 0.2s;" class="hover:border-slate-500">
                       <!-- Compact Thumbnail Container with Play Trigger -->
                       <div class="js-quick-video group relative block bg-black overflow-hidden cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" style="aspect-ratio:16/9;" title="Bấm để phát video trực tiếp (${esc(v.title)})">
-                        <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" loading="lazy" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;" class="group-hover:scale-105">
+                        <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;" class="group-hover:scale-105">
                         
                         <!-- Rank Badge -->
                         <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size:0.65rem; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); z-index:2;" title="Display Rank theo views giảm dần${sourceRank ? ' · Source Rank gốc: #' + sourceRank : ''}">#${displayRank}</span>
@@ -3331,7 +3331,7 @@
                 <button type="button" id="close-raw-img" class="btn-press cursor-pointer" style="padding:0.35rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size:0.8rem; font-weight:600;">✕ Đóng</button>
               </div>
               <div style="padding:0.75rem; overflow:auto; max-height:calc(92vh - 55px); display:flex; align-items:center; justify-content:center; background:#000;">
-                <img id="raw-img-src" src="" alt="Ảnh kênh chi tiết" style="max-width:100%; max-height:80vh; object-fit:contain; border-radius:0.5rem;">
+                <img id="raw-img-src" src="" alt="Ảnh kênh chi tiết" loading="lazy" decoding="async" style="max-width:100%; max-height:80vh; object-fit:contain; border-radius:0.5rem;">
               </div>
             </div>`;
           document.body.appendChild(modal);

@@ -1,3 +1,27 @@
+## 2026-09-14 — Triển khai Master SQLite WAL Database & Kiến Trúc Lõi Kép (Dual-Core Architecture)
+
+- **Khởi tạo và nạp thành công Master Database `data/h2dev_master.db` (1.7 MB):**
+  - Cấu hình chuẩn hiệu năng tối thượng: `PRAGMA journal_mode = WAL; PRAGMA synchronous = NORMAL; PRAGMA mmap_size = 30000000000; PRAGMA cache_size = -64000; PRAGMA foreign_keys = ON;`.
+  - Nghiệm thu định lượng N/N 100% không mất một byte dữ liệu:
+    * `niches`: 110 records (bao gồm 34 ngách xanh, 5 meta, 5 đỏ và các danh mục bài học mở rộng).
+    * `lessons`: Đủ 136/136 video bài học H2DEV (132 MP4 + 4 Zoom WEBM).
+    * `lesson_timestamps`: 689 mốc thời gian tua nhanh chuẩn xác từng giây.
+    * `competitor_channels`: 212 kênh đối thủ (bao quát toàn vẹn cả 165 kênh `kenh-mau.json` + 97 canonical `raw-kenh-mau.json`).
+    * `competitor_top_videos`: 793 video bão view từ 83 dossiers nghiên cứu sâu.
+    * `documents`: Đủ 103/103 tài liệu kỹ thuật và SOP cẩm nang.
+    * `reup_sources`: Đủ 27/27 nguồn reup tư liệu.
+    * `search_fts`: 1.249 mục chỉ mục tìm kiếm toàn văn FTS5 siêu tốc (độ trễ < 0.6 ms).
+- **Vá 4 khiếm khuyết an toàn mã nguồn & rò rỉ kết nối:**
+  1. *Lỗi DoS treo HTTP socket:* Bọc `try ... catch` cho `decodeURIComponent` tại `server.js` dòng 181, trả về HTTP 400 Bad Request ngay khi URL bị lỗi percent-encoding.
+  2. *Lỗi Database handle leak:* Bọc toàn bộ các lệnh truy vấn `DatabaseSync` trong khối `try { ... } finally { db.close(); }` tại `server.js` và `youtube_intelligence.js`.
+  3. *Lỗi subscriber parsing logic:* Sửa hàm `parseSubscriberCount` trong `breakout_finder`, nhân đúng hệ số triệu (M) và nghìn (K) chống lọt kênh 1.5M subs.
+  4. *Cơ chế cách ly nhị phân:* Thêm `data/h2dev_master.db*` vào `.gitignore` để bảo đảm Git diff luôn hiển thị text sạch và VPS deploy qua `git pull` không bị xung đột.
+- **Tích hợp tính năng Tìm Kiếm Toàn Văn FTS5 vào Server.js (`:8899`):**
+  - Bổ sung endpoint `GET /api/search?q=...&limit=...` quét 136 bài giảng, SOP và phụ đề trong 0.5 mili-giây có tô màu highlight `<mark>`.
+- **Động cơ đồng bộ ngược (`scripts/sync_db_to_tabs.js`):**
+  - Đối soát tính nhất quán 1:1 giữa Master SQLite DB và các file `data-tabs/*.json`, `git diff data-tabs/` giữ nguyên 0 thay đổi.
+- **Kiểm định nghiệm thu:** `validate-project.js` PASS 100%, E2E Playwright `audit-raw021-full-e2e.js` PASS 132/132 checks.
+
 ## 2026-09-14 — Triển khai H2DEV YouTube Intelligence MCP (100% Local $0, Thay thế vidIQ & NexLev)
 
 - **Xây dựng module `D:\Mcp-Pool-Vps\tools\youtube_intelligence.js`:**

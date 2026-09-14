@@ -42,4 +42,7 @@ data/admin-state.json
 data/intelligence.db
 data/intelligence.db-wal
 data/intelligence.db-shm
+data/h2dev_master.db
+data/h2dev_master.db-wal
+data/h2dev_master.db-shm
 manifest_full.csv

@@ -3,6 +3,10 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { initLogRotation, checkAndRotateAll } = require('./scripts/logrotate');
+
+// Khởi tạo cơ chế Log Auto-Rotation (tự nén .gz khi log > 10MB, quét dọn file mồ côi)
+initLogRotation(30 * 60 * 1000); // Quét định kỳ mỗi 30 phút
 
 const ROOT = __dirname; // D:/YTB/H2DEV-Project
 const PORT = process.env.PORT || 8899;
@@ -199,4 +203,13 @@ const server = http.createServer(async (req,res)=>{
 server.listen(PORT, HOST, ()=>{
   console.log('H2DEV Project running at http://'+HOST+':'+PORT+'/');
   console.log('Root: '+ROOT);
+  checkAndRotateAll();
+});
+
+// Xử lý ngoại lệ an toàn, chống sập server và ghi vết lỗi
+process.on('uncaughtException', (err) => {
+  console.error('[H2DEV_UNCAUGHT_EXCEPTION]', err);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('[H2DEV_UNHANDLED_REJECTION]', reason);
 });

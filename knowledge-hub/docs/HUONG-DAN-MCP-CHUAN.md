@@ -38,13 +38,27 @@ curl -s http://127.0.0.1:3988/health
 
 ## 3. BẢNG TRA CỨU CÔNG CỤ MCP CHO CÔNG VIỆC YOUTUBE
 
+### 🌟 BỘ CÔNG CỤ H2DEV YOUTUBE INTELLIGENCE 100% LOCAL ($0 — THAY THẾ HOÀN HẢO VIDIQ & NEXLEV)
+*Chạy 100% Local qua InnerTube API & Google RSS, 0 token limit, 0 API Key, không bao giờ hết quota.*
+
+| Việc cần làm | Tên Tool Chuẩn (`youtube_intelligence__*`) | Cơ chế kỹ thuật & Ưu thế |
+|---|---|---|
+| **Tìm kiếm kênh đối thủ theo ngách** | `youtube_intelligence__search_channels` | InnerTube `/search` lọc channel, bóc handle, subs, ID, avatar trong 0.2s |
+| **Bóc tách hồ sơ kênh chuyên sâu** | `youtube_intelligence__channel_dossier` | Trích xuất Subs, Video count, Channel ID, kiểm tra nút Join (YPP Signal 1) |
+| **Quét 15 video mới nhất & đo VPH** | `youtube_intelligence__latest_videos` | Google RSS Feed real-time, đo tuổi theo giờ và VPH (Views Per Hour) |
+| **Bắt video bão view (Outlier Multiplier)** | `youtube_intelligence__outlier_scanner` | **Chuẩn 1of10 Engine**: Tính trung vị (Median), chấm điểm 3x–10x+ Outlier |
+| **Kiểm tra Bật kiếm tiền (YPP Audit)** | `youtube_intelligence__check_monetization` | **Chuẩn NexLev Engine**: Thuật toán 4 tín hiệu (Join, Super Thanks, Ad cues) |
+| **Bóc 100% Video Tags ẩn & Views** | `youtube_intelligence__video_details` | InnerTube + yt-dlp: Lấy 100% tags ẩn, danh mục, thời lượng chính xác |
+| **Đo lường từ khóa tìm kiếm (Demand)** | `youtube_intelligence__keyword_suggest` | Google/YouTube Search Autocomplete (Alphabet soup mining 100% real-time) |
+| **Tải kịch bản & phụ đề nguyên bản** | `youtube_intelligence__transcript` | TimedText API: Trích xuất phụ đề có timestamp và plain-text script |
+
+### CÁC CÔNG CỤ BỔ TRỢ KHÁC (MCP POOL :3988)
+
 | Việc cần làm | Tên Tool MCP Pool chuẩn (`nhóm__tool`) | Tool thay thế (Fallback) |
 |---|---|---|
-| **Phân tích chỉ số kênh YouTube** (Sub, view, tăng trưởng 30 ngày) | `vidiq__vidiq_channel_stats` | `vidiq__channel_stats` |
-| **Tìm video bùng nổ view (Outliers)** | `vidiq__vidiq_outliers` | `vidiq__trending_videos` |
-| **Nghiên cứu từ khoá** (Volume, Competition, Overall) | `vidiq__vidiq_keyword_research` | `vidiq__keyword_research` |
-| **Tìm kiếm kênh đối thủ theo ngách** | `vidiq__vidiq_channel_search` | `vidiq__youtube_search` |
-| **Xem danh sách video của một kênh** | `vidiq__vidiq_channel_videos` | `vidiq__youtube_search` |
+| **Phân tích chỉ số kênh YouTube (vidIQ API)** | `vidiq__vidiq_channel_stats` | `youtube_intelligence__channel_dossier` |
+| **Tìm video bùng nổ view (Outliers vidIQ)** | `vidiq__vidiq_outliers` | `youtube_intelligence__outlier_scanner` |
+| **Nghiên cứu từ khoá (vidIQ)** | `vidiq__vidiq_keyword_research` | `youtube_intelligence__keyword_suggest` |
 | **Đo xu hướng thị trường (Google/YouTube Trends)** | `trends__get_top_trends` | `trends__get_time_series` |
 | **Cào nội dung bài viết / báo cáo web** | `firecrawl__firecrawl_scrape` | `jina__read_url` · `tavily__tavily_extract` |
 | **Tìm kiếm web chuyên sâu** | `exa__web_search_exa` | `tavily__tavily_search` |

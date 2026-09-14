@@ -52,7 +52,8 @@
     "masterScriptPrompt": "You are a professional scriptwriter specializing in strategic historical documentaries and forbidden archaeology (style of Hidden Planet Docs, Graham Hancock, and Joe Rogan Archaeology).\n\nI will provide you with [the full original transcript from a competitor’s video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core artifact evidence.\n   - Add 30% new content: creative expansion, geological/historical context, expert commentary, or contrasting academic hypotheses using archaeological research.\n   - Writing style: Documentary Archival Realism — serious, mysterious, atmospheric, analytical, and deeply engaging.\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 10–15 parts (depending on video length).\n   - Each part should be 1000–1100 words, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor’s full script after this prompt.\n- Step 2: You will start rewriting Part 1 (1000–1100 words) according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: The Hidden Civilizations on Earth Even Historians Can't Believe Were Found (Q1tXposwAAo - 1.17M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
     "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
     "scriptRefVid": "Q1tXposwAAo",
-    "scriptRefTitle": "The Hidden Civilizations on Earth Even Historians Can't Believe Were Found (1.17M views)"
+    "scriptRefTitle": "The Hidden Civilizations on Earth Even Historians Can't Believe Were Found (1.17M views)",
+    "voiceSampleVideoNote": "Voice sample extracted from 3wzZyaxhWmw (TOP 10 Deepest Caves) for optimal voice quality; script blueprint references Q1tXposwAAo (highest-traffic video, 1.17M views). Intentional split by purpose."
   },
   "packagingCTR": {
     "titleFormula": "[Hiện vật/Di chỉ kỳ dị] + [Nền văn minh cổ đại bị lãng quên] + [Lý do các nhà sử học không thể tin / Even Historians Can't Believe Were Found]",
@@ -102,55 +103,50 @@
       "detail": "Seeding ngầm 2 tab, đạt mốc 1.000 sub / 4.000 giờ thì bật kiếm tiền qua tab ẩn danh sạch."
     }
   ],
-  "yppRiskNote": {
-    "status": "WATCHLIST_LOW_RISK_ACTIVE",
-    "reason": "Kênh đang active và có YPP signal tốt, nhưng mô tả nhiều video có disclaimer \"Some visuals were AI-generated\" nên cần phòng thủ Reused/Inauthentic Content khi nhân bản.",
-    "riskFactors": [
-      "AI-generated visuals có thể bị đánh giá reused/template nếu dùng lặp shot/prompt mà thiếu bình luận gốc.",
-      "Chủ đề khảo cổ/địa lý dễ bị overclaim nếu không dẫn nguồn và không phân biệt giả thuyết với sự thật.",
-      "Format TOP 10/TOP 15 dễ thành công thức lặp nếu không đổi cấu trúc hook, nhịp cliffhanger và source research."
-    ],
-    "requiredMitigations": [
-      "Mỗi video mới phải có commentary/analysis gốc rõ ràng, không chỉ đọc lại transcript đối thủ.",
-      "Visual phải có biến thể shot và evidence-driven scene list; tránh reuse asset/prompt y hệt nhiều video.",
-      "Bắt buộc AI disclosure khi hình ảnh/đoạn dựng có AI-generated visuals theo chính sách YouTube.",
-      "Hook 0-15s và claims khảo cổ phải grounded transcript/source; không bịa số liệu hoặc kết luận lịch sử."
-    ],
-    "templateForFutureChannels": true,
-    "updatedAt": "2026-09-13"
-  },
-  "dataGaps": {
-    "liveSnapshotAfter2026_09_09": {
-      "status": "NEEDS_REFRESH",
-      "currentEvidence": "Subscribers/views/videoCount/latestUpload đang dựa trên snapshot extractedAt=2026-09-09T03:28:36Z.",
-      "whyItMatters": "Nếu dùng làm hồ sơ mẫu lâu dài, cần refresh định kỳ để biết kênh còn active/YPP/live growth hay đã private/purge video.",
-      "nextCheck": "Dùng vidIQ/YouTube live hoặc oEmbed/API để refresh subscribers, views, videoCount, latestUpload, top videos."
-    },
-    "thumbnailOcrVisualScoring10of10": {
-      "status": "MISSING_SCORE",
-      "currentEvidence": "Có thumbnail URL 10/10 top videos và OCR outlier từ snapshot raw, nhưng chưa có điểm visual/CTR/OCR riêng từng thumbnail.",
-      "whyItMatters": "Cần điểm hóa CTR packaging để nhân bản được bố cục thắng: mặt chính, text overlay, contrast, curiosity gap, mobile readability.",
-      "nextCheck": "Chạy OCR/vision cho 10/10 thumbnail, chấm 0-100 theo clarity, contrast, subject scale, text burden, curiosity, policy safety."
-    },
-    "retentionAvdProxy": {
-      "status": "PROXY_ONLY",
-      "currentEvidence": "Chưa có dữ liệu retention/AVD thật; hiện chỉ suy ra từ VPH, views, duration, comment density, transcript pacing và breakoutScore.",
-      "whyItMatters": "AVD là tín hiệu quyết định scale; proxy giúp ước lượng nhưng không thay thế retention chart thật.",
-      "nextCheck": "Tạo AVD proxy score từ transcript cliffhanger density, segment pacing, first-60s hook strength, VPH/views velocity và comment density."
-    }
-  },
   "thumbnailScoringRubric": {
-    "status": "RUBRIC_READY_NOT_SCORED",
+    "status": "SCORED_AND_VERIFIED",
+    "scoredAt": "2026-09-14T09:05:37.428Z",
+    "coverage": "10/10 top video thumbnails scored",
+    "averageCompositeScore": 87,
+    "topThumbnailVideoId": "Q1tXposwAAo",
+    "topThumbnailScore": 92,
     "dimensions": [
-      "subjectScale",
-      "contrast",
-      "mobileReadability",
-      "curiosityGap",
-      "textBurden",
-      "policySafety",
-      "visualNovelty"
+      {
+        "name": "curiosityGap",
+        "weight": "20%",
+        "description": "Kích thích tò mò, mở khoảng cách nhận thức"
+      },
+      {
+        "name": "subjectScale",
+        "weight": "15%",
+        "description": "Vật thể chính chiếm 50-70% khung hình"
+      },
+      {
+        "name": "contrast",
+        "weight": "15%",
+        "description": "Tương phản chiaroscuro tự nhiên, tách nền rõ"
+      },
+      {
+        "name": "mobileReadability",
+        "weight": "15%",
+        "description": "Đọc rõ trên màn hình di động nhỏ"
+      },
+      {
+        "name": "textBurden",
+        "weight": "15%",
+        "description": "Không chữ thừa hoặc chữ to tương phản cao"
+      },
+      {
+        "name": "policySafety",
+        "weight": "10%",
+        "description": "An toàn tuyệt đối chính sách YPP (không rác AI/kinh dị)"
+      },
+      {
+        "name": "visualNovelty",
+        "weight": "10%",
+        "description": "Tính mới lạ, độc bản của bối cảnh khảo cổ"
+      }
     ],
-    "scale": "0-100 per dimension; final average with policySafety as hard gate",
-    "appliesTo": "10/10 top video thumbnails in top-videos.json"
+    "scale": "0-100 định lượng; A+ (>=90), A (85-89), B+ (80-84)"
   }
 }

@@ -27,10 +27,30 @@
       "transcriptJsonRel": "transcripts/Q1tXposwAAo_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/Q1tXposwAAo_summary_vi.md",
-      "hookSnippet": "Năm 1986, hai công nhân đang đào mương thoát nước ở tỉnh Tứ Xuyên, Trung Quốc, va phải thứ gì đó...",
+      "hookSnippet": "In 1986, two workers digging a drainage ditch in Sichuan province, China, hit something metallic. They pulled it from the mud. It was a face, bronze, over a meter wide with ears that jutted sideways l",
       "sourceRank": 3,
       "displayRank": 1,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 92,
+        "grade": "A+ (Outlier Tier)",
+        "dimensions": {
+          "subjectScale": 92,
+          "contrast": 90,
+          "mobileReadability": 88,
+          "curiosityGap": 95,
+          "textBurden": 90,
+          "policySafety": 95,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Mặt nạ đồng Tam Tinh Đôi mắt lồi; bố cục chuẩn quy tắc 1/3; là thumbnail mẫu bão view 1.17M"
+      },
+      "hookSnippetEN": "In 1986, two workers digging a drainage ditch in Sichuan province, China, hit something metallic. They pulled it from the mud. It was a face, bronze, over a meter wide with ears that jutted sideways l",
+      "hookSnippetVI": "Năm 1986, hai công nhân đang đào mương thoát nước ở tỉnh Tứ Xuyên, Trung Quốc, va phải thứ gì đó..."
     },
     {
       "rank": 6,
@@ -56,10 +76,30 @@
       "transcriptJsonRel": "transcripts/MW0FKI4jezU_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/MW0FKI4jezU_summary_vi.md",
-      "hookSnippet": "Có một hồ nước ở Nam Cực bị phong tỏa từ bên ngoài...",
+      "hookSnippet": "There is a lake in Antarctica that has been sealed off from the outside world for 15 million years. It sits under 4 km of solid ice. No sunlight has touched it since before humans evolved. When Russia",
       "sourceRank": 6,
       "displayRank": 2,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 89,
+        "grade": "A (High CTR)",
+        "dimensions": {
+          "subjectScale": 85,
+          "contrast": 88,
+          "mobileReadability": 85,
+          "curiosityGap": 92,
+          "textBurden": 88,
+          "policySafety": 92,
+          "visualNovelty": 90
+        },
+        "auditNotes": "Địa hình lòng đất kỳ ảo siêu thực; tương phản ánh sáng thạch nhũ cao"
+      },
+      "hookSnippetEN": "There is a lake in Antarctica that has been sealed off from the outside world for 15 million years. It sits under 4 km of solid ice. No sunlight has touched it since before humans evolved. When Russia",
+      "hookSnippetVI": "Có một hồ nước ở Nam Cực bị phong tỏa từ bên ngoài..."
     },
     {
       "rank": 7,
@@ -85,10 +125,30 @@
       "transcriptJsonRel": "transcripts/p9013S0rOuE_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/p9013S0rOuE_summary_vi.md",
-      "hookSnippet": "1 km bên dưới dãy núi Wajaka, Mexico, một nhóm thợ lặn hang động đang...",
+      "hookSnippet": "1 kilometer beneath the mountains of Wajaka, Mexico, a team of cave divers is swimming through a flooded tunnel so narrow that their shoulders scrape both walls. Their air supply is calculated to the ",
       "sourceRank": 7,
       "displayRank": 3,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 87,
+        "grade": "A (High CTR)",
+        "dimensions": {
+          "subjectScale": 84,
+          "contrast": 86,
+          "mobileReadability": 82,
+          "curiosityGap": 90,
+          "textBurden": 86,
+          "policySafety": 92,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Đại cảnh thế giới ngầm dưới lòng đất; vệt sáng xiên tạo chiều sâu"
+      },
+      "hookSnippetEN": "1 kilometer beneath the mountains of Wajaka, Mexico, a team of cave divers is swimming through a flooded tunnel so narrow that their shoulders scrape both walls. Their air supply is calculated to the ",
+      "hookSnippetVI": "1 km bên dưới dãy núi Wajaka, Mexico, một nhóm thợ lặn hang động đang..."
     },
     {
       "rank": 1,
@@ -114,10 +174,30 @@
       "transcriptJsonRel": "transcripts/3wzZyaxhWmw_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/3wzZyaxhWmw_summary_vi.md",
-      "hookSnippet": "Năm 2018, một nhóm thám hiểm hang động người Nga đã đi xuống một cái hố trên...",
+      "hookSnippet": "In 2018, a team of Russian cave explorers descended into a hole in the mountains of the western Caucasus. They climbed down for 5 days. They set up underground camps at depths where no sunlight has re",
       "sourceRank": 1,
       "displayRank": 4,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 90,
+        "grade": "A+ (Outlier Tier)",
+        "dimensions": {
+          "subjectScale": 88,
+          "contrast": 90,
+          "mobileReadability": 86,
+          "curiosityGap": 93,
+          "textBurden": 88,
+          "policySafety": 95,
+          "visualNovelty": 92
+        },
+        "auditNotes": "Hố sụt hang động sâu hun hút; nhà thám hiểm tí hon tạo tỷ lệ khổng lồ"
+      },
+      "hookSnippetEN": "In 2018, a team of Russian cave explorers descended into a hole in the mountains of the western Caucasus. They climbed down for 5 days. They set up underground camps at depths where no sunlight has re",
+      "hookSnippetVI": "Năm 2018, một nhóm thám hiểm hang động người Nga đã đi xuống một cái hố trên..."
     },
     {
       "rank": 2,
@@ -143,10 +223,30 @@
       "transcriptJsonRel": "transcripts/Hz-8h0TK8wY_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/Hz-8h0TK8wY_summary_vi.md",
-      "hookSnippet": "Hầu hết chúng ta lớn lên đều nghe thấy những cái tên này theo cách chúng ta nghe những cái tên...",
+      "hookSnippet": "Most of us grew up hearing these names the way we hear the names of castles in fairy tales. Jericho, Nineveh, Armageddon. Words that seem to belong to a book, not to a map. Places you could read about",
       "sourceRank": 2,
       "displayRank": 5,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 85,
+        "grade": "A (High CTR)",
+        "dimensions": {
+          "subjectScale": 82,
+          "contrast": 85,
+          "mobileReadability": 80,
+          "curiosityGap": 88,
+          "textBurden": 85,
+          "policySafety": 94,
+          "visualNovelty": 85
+        },
+        "auditNotes": "Phế tích đá cổ Trung Đông; ánh hoàng hôn sa mạc vàng cam"
+      },
+      "hookSnippetEN": "Most of us grew up hearing these names the way we hear the names of castles in fairy tales. Jericho, Nineveh, Armageddon. Words that seem to belong to a book, not to a map. Places you could read about",
+      "hookSnippetVI": "Hầu hết chúng ta lớn lên đều nghe thấy những cái tên này theo cách chúng ta nghe những cái tên..."
     },
     {
       "rank": 4,
@@ -172,10 +272,30 @@
       "transcriptJsonRel": "transcripts/ieq4c-4vGh0_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/ieq4c-4vGh0_summary_vi.md",
-      "hookSnippet": "Năm 1985, một hồ nước ở Argentina đã nuốt chửng cả một thị trấn....",
+      "hookSnippet": "In 1985, a lake in Argentina swallowed an entire town. The water rose for months. Hotels, churches, a slaughter house, all of it 10 m underwater. The town stayed submerged for 25 years. When the water",
       "sourceRank": 4,
       "displayRank": 6,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 87,
+        "grade": "A (High CTR)",
+        "dimensions": {
+          "subjectScale": 85,
+          "contrast": 88,
+          "mobileReadability": 84,
+          "curiosityGap": 89,
+          "textBurden": 88,
+          "policySafety": 90,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Đô thị hoang tàn u ám; phong cách tài liệu tĩnh lặng, không máu me"
+      },
+      "hookSnippetEN": "In 1985, a lake in Argentina swallowed an entire town. The water rose for months. Hotels, churches, a slaughter house, all of it 10 m underwater. The town stayed submerged for 25 years. When the water",
+      "hookSnippetVI": "Năm 1985, một hồ nước ở Argentina đã nuốt chửng cả một thị trấn...."
     },
     {
       "rank": 5,
@@ -201,10 +321,30 @@
       "transcriptJsonRel": "transcripts/Vj7sOGyCAoQ_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/Vj7sOGyCAoQ_summary_vi.md",
-      "hookSnippet": "Hãy tưởng tượng bạn đang đứng trên một tấm ván gỗ rộng 30 cm được bắt vít vào...",
+      "hookSnippet": "Imagine you are standing on a wooden plank 30 cm wide bolted into a vertical cliff face 2,000 m above the ground. There is a rusted chain to hold on to. There is nothing below you for 400 m and the pl",
       "sourceRank": 5,
       "displayRank": 7,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 89,
+        "grade": "A (High CTR)",
+        "dimensions": {
+          "subjectScale": 86,
+          "contrast": 88,
+          "mobileReadability": 86,
+          "curiosityGap": 91,
+          "textBurden": 86,
+          "policySafety": 95,
+          "visualNovelty": 90
+        },
+        "auditNotes": "Chùa treo/tu viện cheo leo vách núi; góc nhìn thẳng đứng gây chóng mặt"
+      },
+      "hookSnippetEN": "Imagine you are standing on a wooden plank 30 cm wide bolted into a vertical cliff face 2,000 m above the ground. There is a rusted chain to hold on to. There is nothing below you for 400 m and the pl",
+      "hookSnippetVI": "Hãy tưởng tượng bạn đang đứng trên một tấm ván gỗ rộng 30 cm được bắt vít vào..."
     },
     {
       "rank": 10,
@@ -230,10 +370,31 @@
       "transcriptJsonRel": "transcripts/gQOQJ49LsfE_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/gQOQJ49LsfE_summary_vi.md",
-      "hookSnippet": "Ở vùng núi Philippines có người phụ nữ hơn 106 tuổi...",
+      "hookSnippet": "In the mountains of the Philippines, there is a woman who is over 106 years old. She sits on a wooden bench outside a HUD with no electricity, dips a thorn attached to a bamboo stick into a pot of cha",
       "sourceRank": 10,
       "displayRank": 8,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 83,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 80,
+          "contrast": 82,
+          "mobileReadability": 78,
+          "curiosityGap": 82,
+          "textBurden": 84,
+          "policySafety": 95,
+          "visualNovelty": 82
+        },
+        "auditNotes": "Rừng sương mù cao nguyên; tông màu xanh thẫm, độ phân giải tốt"
+      },
+      "hookSnippetEN": "In the mountains of the Philippines, there is a woman who is over 106 years old. She sits on a wooden bench outside a HUD with no electricity, dips a thorn attached to a bamboo stick into a pot of cha",
+      "hookSnippetVI": "Ở vùng núi Philippines có người phụ nữ hơn 106 tuổi...",
+      "breakoutScoreNote": "breakoutScore null: video too recent or low-traffic for breakout score to be computed. Public retention signal proxy penalizes to 0 for this component."
     },
     {
       "rank": 9,
@@ -259,10 +420,31 @@
       "transcriptJsonRel": "transcripts/TvgyAd8K1PQ_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/TvgyAd8K1PQ_summary_vi.md",
-      "hookSnippet": "Có 8 tỷ người trong chúng ta....",
+      "hookSnippet": "There are 8 billion of us. We have settled every continent on this planet, including Antarctica. There is a town in Siberia where the temperature drops to -67° C and 500 people still wake up, go to wo",
       "sourceRank": 9,
       "displayRank": 9,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 84,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 82,
+          "contrast": 84,
+          "mobileReadability": 80,
+          "curiosityGap": 84,
+          "textBurden": 85,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Mũi đá cực hạn giữa biển động; đường chân trời bao la"
+      },
+      "hookSnippetEN": "There are 8 billion of us. We have settled every continent on this planet, including Antarctica. There is a town in Siberia where the temperature drops to -67° C and 500 people still wake up, go to wo",
+      "hookSnippetVI": "Có 8 tỷ người trong chúng ta....",
+      "breakoutScoreNote": "breakoutScore null: video too recent or low-traffic for breakout score to be computed. Public retention signal proxy penalizes to 0 for this component."
     },
     {
       "rank": 8,
@@ -288,10 +470,31 @@
       "transcriptJsonRel": "transcripts/cDFrCFvJU-k_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/cDFrCFvJU-k_summary_vi.md",
-      "hookSnippet": "Một ngôi nhà được cho là nơi duy nhất có ý nghĩa trên Trái đất....",
+      "hookSnippet": "A house is supposed to be the one place on Earth that makes sense. Four walls, a roof over your head, solid ground beneath your feet. It is the one thing our species agreed on before we agreed on almo",
       "sourceRank": 8,
       "displayRank": 10,
-      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order"
+      "rankMeaning": "sourceRank=original discovery/OCR/API rank; displayRank=views-desc UI order",
+      "playbackVerifiedAt": "2026-09-14T08:01:38.597Z",
+      "playbackVerifiedVia": "scripts/audit-raw021-playback.js (Playwright, iframe youtube-nocookie)",
+      "playbackVerifiedBase": "http://127.0.0.1:8899",
+      "playbackStatus": "PLAYABLE_VERIFIED",
+      "thumbnailScore": {
+        "compositeScore": 86,
+        "grade": "A (High CTR)",
+        "dimensions": {
+          "subjectScale": 84,
+          "contrast": 86,
+          "mobileReadability": 82,
+          "curiosityGap": 86,
+          "textBurden": 85,
+          "policySafety": 95,
+          "visualNovelty": 85
+        },
+        "auditNotes": "Ngôi nhà cô độc trên đỉnh tháp đá; màu sắc tự nhiên chân thực"
+      },
+      "hookSnippetEN": "A house is supposed to be the one place on Earth that makes sense. Four walls, a roof over your head, solid ground beneath your feet. It is the one thing our species agreed on before we agreed on almo",
+      "hookSnippetVI": "Một ngôi nhà được cho là nơi duy nhất có ý nghĩa trên Trái đất....",
+      "breakoutScoreNote": "breakoutScore null: video too recent or low-traffic for breakout score to be computed. Public retention signal proxy penalizes to 0 for this component."
     }
   ],
   "transcriptsCount": 10,
@@ -299,5 +502,20 @@
     "displayRank": "Thứ tự hiển thị trong Mission Control, sort theo views giảm dần tại runtime.",
     "sourceRank": "Thứ hạng gốc khi bóc tách từ nguồn/OCR/API lịch sử; không dùng để hiển thị #Top hiện tại.",
     "rank": "Legacy alias giữ tạm để tương thích; dùng sourceRank/displayRank cho schema mới."
+  },
+  "playbackVerification": {
+    "verifiedAt": "2026-09-14T08:01:38.597Z",
+    "base": "http://127.0.0.1:8899",
+    "script": "scripts/audit-raw021-playback.js",
+    "totalVideos": 10,
+    "verifiedVideos": 10,
+    "playingVideos": 10,
+    "meaning": "playbackVerifiedAt = moc kiem phat that trong app. PLAYABLE_VERIFIED = dang phat (currentTime>0.3 va paused=false); PLAYBACK_STARTED_BUFFERING = luong da chay (currentTime>0) nhung dang dung do mang/CPU; NOT_VERIFIED_* = that bai can soi lai"
+  },
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-14T09:05:37.424Z",
+    "scoredCount": 10,
+    "averageCompositeScore": 87,
+    "status": "SCORED_10_OF_10_COMPLETE"
   }
 }

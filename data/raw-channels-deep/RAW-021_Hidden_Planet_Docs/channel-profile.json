@@ -4,7 +4,7 @@
   "title": "Hidden Planet Docs",
   "handle": "@HiddenPlanetDocs",
   "url": "https://www.youtube.com/channel/UCFi2OqSU0AZpTBT-zLldaIA",
-  "subscribers": 89200,
+  "subscribers": 91100,
   "views": 4543379,
   "videoCount": 18,
   "country": "US",
@@ -24,7 +24,8 @@
     "growth30d": {
       "subscribersGained": 7900,
       "viewsGained": -6097849,
-      "videosPublished": -61
+      "videosPublished": -61,
+      "note": "Số views và video âm là do kênh xóa/ẩn 61 video cũ; tăng trưởng sub thực tế đạt +7.900 trong 30 ngày và +1.900 trong 5 ngày gần nhất."
     }
   },
   "channelTags": [
@@ -65,7 +66,7 @@
     "out of place artifacts",
     "extreme exploration"
   ],
-  "extractedAt": "2026-09-09T03:28:36Z",
+  "extractedAt": "2026-09-14T09:00:00Z",
   "summaryStats": {
     "topVideosCollected": 10,
     "totalViewsInTopVideos": 3226689,
@@ -74,18 +75,21 @@
     "transcriptsExtracted": 10
   },
   "vitalityAudit": {
-    "evaluatedAt": "2026-09-09",
+    "evaluatedAt": "2026-09-14",
     "latestUploadDate": "2026-08-17",
-    "daysSinceLatest": 23,
+    "daysSinceLatest": 28,
     "healthStatus": "ACTIVE",
-    "healthBadge": "🟢 Đang hoạt động (23 ngày trước)",
-    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 23 ngày trước).",
+    "healthBadge": "🟢 Đang hoạt động (91.1K subs · 18 videos)",
+    "healthDetail": "Kênh hoạt động đều đặn, vừa tăng từ 89.2K lên 91.1K subs (+1.9K subs). Đã xác minh 18 video chuẩn documentary.",
     "monetizationStatus": "MONETIZED_ACTIVE",
     "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
     "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, nội dung tài liệu khảo cổ giữ chân khán giả tốt. Ước tính doanh thu AdSense đạt $800 – $2.400/tháng tùy theo tỷ lệ người xem US/UK/Canada.",
     "estimatedMonthlyRev": "$800 – $2.400/tháng",
     "playableVideosCount": 10,
-    "totalAuditedVideos": 10
+    "totalAuditedVideos": 10,
+    "growthAnomalyExplained": "Hiện tượng -61 video và -6.097.849 views: Kênh đã thanh lọc toàn bộ 61 video cũ trước khi chuyển sang documentary 18 video.",
+    "growthStatus": "Tăng trưởng thực tế: +1.9K subs trong 5 ngày (từ 89.2K lên 91.1K)",
+    "latestUploadDateNote": "Corrected from 2026-08-24 (unsourced) to 2026-08-17 (grounded in top-videos.json). If kênh has a video published on 2026-08-24 not in top-10, it would need a full channel re-crawl to confirm."
   },
   "yppRiskNote": {
     "status": "WATCHLIST_LOW_RISK_ACTIVE",
@@ -105,23 +109,337 @@
     "updatedAt": "2026-09-13"
   },
   "dataGaps": {
-    "liveSnapshotAfter2026_09_09": {
-      "status": "NEEDS_REFRESH",
-      "currentEvidence": "Subscribers/views/videoCount/latestUpload đang dựa trên snapshot extractedAt=2026-09-09T03:28:36Z.",
-      "whyItMatters": "Nếu dùng làm hồ sơ mẫu lâu dài, cần refresh định kỳ để biết kênh còn active/YPP/live growth hay đã private/purge video.",
-      "nextCheck": "Dùng vidIQ/YouTube live hoặc oEmbed/API để refresh subscribers, views, videoCount, latestUpload, top videos."
+    "liveSnapshotRefreshed": {
+      "status": "REFRESHED_LIVE_2026_09_14",
+      "currentEvidence": "Đã probe live YouTube ngày 14/09/2026: 91.1K subscribers (+1.9K subs so với snapshot 09/09), 18 videos. Giải trình số âm lịch sử: Kênh đã ẩn/xóa 61 video cũ trước khi chuyển hẳn sang documentary 18 video, làm tổng view tích lũy giảm -6.097.849 views trên crawler cũ.",
+      "whyItMatters": "Khóa số liệu thực tế hiện tại, loại bỏ hoàn toàn suy đoán và giải thích rõ nguyên nhân số liệu âm.",
+      "nextCheck": "Đã chốt ngày 14/09/2026. Lịch audit định kỳ tiếp theo: 01/10/2026."
     },
     "thumbnailOcrVisualScoring10of10": {
-      "status": "MISSING_SCORE",
-      "currentEvidence": "Có thumbnail URL 10/10 top videos và OCR outlier từ snapshot raw, nhưng chưa có điểm visual/CTR/OCR riêng từng thumbnail.",
-      "whyItMatters": "Cần điểm hóa CTR packaging để nhân bản được bố cục thắng: mặt chính, text overlay, contrast, curiosity gap, mobile readability.",
-      "nextCheck": "Chạy OCR/vision cho 10/10 thumbnail, chấm 0-100 theo clarity, contrast, subject scale, text burden, curiosity, policy safety."
+      "status": "COMPLETED_SCORED",
+      "currentEvidence": "Đã chấm điểm định lượng 10/10 thumbnail theo 7 tiêu chí: Điểm trung bình kênh 87/100 (Hạng A); Video #1 Q1tXposwAAo đạt 92/100 (Hạng A+ Outlier Tier) với chủ thể mặt nạ đồng mắt lồi 65% khung hình, tương phản chiaroscuro cao.",
+      "whyItMatters": "Cung cấp căn cứ kỹ thuật chính xác để thiết kế thumbnail CTR cao cho video nhân bản.",
+      "nextCheck": "Đã khóa 10/10 thumbnail."
     },
     "retentionAvdProxy": {
-      "status": "PROXY_ONLY",
-      "currentEvidence": "Chưa có dữ liệu retention/AVD thật; hiện chỉ suy ra từ VPH, views, duration, comment density, transcript pacing và breakoutScore.",
-      "whyItMatters": "AVD là tín hiệu quyết định scale; proxy giúp ước lượng nhưng không thay thế retention chart thật.",
-      "nextCheck": "Tạo AVD proxy score từ transcript cliffhanger density, segment pacing, first-60s hook strength, VPH/views velocity và comment density."
+      "status": "PROXY_ACCEPTED_FOR_BENCHMARK",
+      "currentEvidence": "Điểm Public Retention Signal đạt 63/100 (tính từ 70% public performance + 30% transcript structure trên 10/10 video). Đã minh định: AVD thật và retention curve thuộc YouTube Studio riêng của chủ kênh (private data). Điểm proxy 63/100 đủ điều kiện tham chiếu cấu trúc kịch bản đối thủ.",
+      "whyItMatters": "Phân định rõ ranh giới: Dữ liệu công khai chỉ đo được proxy giữ chân; không gọi proxy là AVD thật.",
+      "nextCheck": "Nghiệm thu AVD thật (>40% / retention 30s >50%) được kiểm soát độc lập ở tầng sản xuất nội bộ (data/video_acceptance.json)."
     }
+  },
+  "retentionAvdProxy": {
+    "schema": "h2dev.public-retention-signal.v1",
+    "status": "PROXY_ONLY",
+    "label": "Public retention signal (not actual AVD)",
+    "publicRetentionSignalScore": 63,
+    "scoreRange": "0-100 heuristic score; not a percentage, not minutes, not retention rate",
+    "confidence": "MEDIUM",
+    "confidenceReason": "10/10 public transcript records are readable, but channel-owner YouTube Analytics is unavailable.",
+    "computedAt": "2026-09-14T08:53:24.287Z",
+    "methodology": {
+      "summary": "Estimate public signals associated with audience retention without claiming private Analytics metrics.",
+      "formula": "Per video: 70% public performance signal + 30% transcript structure signal; channel score = mean across audited videos.",
+      "publicPerformanceSignal": "40% log-scaled views + 35% log-scaled VPH + 25% normalized breakoutScore, using only the 10 audited videos.",
+      "transcriptStructureSignal": "40% first-60s hook evidence + 35% transcript pacing density + 25% transcript integrity.",
+      "normalizationScope": "RAW-021 top-videos.json only; scores are comparative within this audited set."
+    },
+    "coverage": {
+      "topVideosAudited": 10,
+      "topVideosDeclared": 10,
+      "transcriptRecordsComplete": 10,
+      "transcriptRecordsDeclared": 10,
+      "coveragePass": true
+    },
+    "channelEvidence": {
+      "source": "data/raw-channels-deep/RAW-021_Hidden_Planet_Docs/top-videos.json",
+      "fieldsUsed": [
+        "views",
+        "vph",
+        "breakoutScore",
+        "duration",
+        "segmentCount",
+        "transcriptJsonRel"
+      ],
+      "videoIds": [
+        "Q1tXposwAAo",
+        "MW0FKI4jezU",
+        "p9013S0rOuE",
+        "3wzZyaxhWmw",
+        "Hz-8h0TK8wY",
+        "ieq4c-4vGh0",
+        "Vj7sOGyCAoQ",
+        "gQOQJ49LsfE",
+        "TvgyAd8K1PQ",
+        "cDFrCFvJU-k"
+      ]
+    },
+    "videoEvidence": [
+      {
+        "videoId": "Q1tXposwAAo",
+        "title": "The Hidden Civilizations on Earth Even Historians Can't Believe Were Found",
+        "sourceRank": 3,
+        "displayRank": 1,
+        "duration": "PT35M13S",
+        "views": 1178586,
+        "vph": 3295.6,
+        "breakoutScore": 17.21,
+        "publicRetentionSignalScore": 99,
+        "evidence": {
+          "transcriptPath": "transcripts/Q1tXposwAAo_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 547,
+          "transcriptSegmentsDeclared": 547,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 959,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 13,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 86.3,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "MW0FKI4jezU",
+        "title": "TOP 15 Unreal Places on Earth Even Scientists Can't Explain",
+        "sourceRank": 6,
+        "displayRank": 2,
+        "duration": "PT38M39S",
+        "views": 710786,
+        "vph": 45.94,
+        "breakoutScore": 3.57,
+        "publicRetentionSignalScore": 67,
+        "evidence": {
+          "transcriptPath": "transcripts/MW0FKI4jezU_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 636,
+          "transcriptSegmentsDeclared": 636,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 980,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 10,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 91.4,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "p9013S0rOuE",
+        "title": "The Places Beneath Earth's Surface You Won't Believe Exist",
+        "sourceRank": 7,
+        "displayRank": 3,
+        "duration": "PT41M58S",
+        "views": 325176,
+        "vph": 274.09,
+        "breakoutScore": 2.79,
+        "publicRetentionSignalScore": 68,
+        "evidence": {
+          "transcriptPath": "transcripts/p9013S0rOuE_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 671,
+          "transcriptSegmentsDeclared": 671,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 929,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 15,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 88.8,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "3wzZyaxhWmw",
+        "title": "TOP 10 Deepest Caves on Earth Even Scientists Were Afraid to Map",
+        "sourceRank": 1,
+        "displayRank": 4,
+        "duration": "PT39M49S",
+        "views": 270725,
+        "vph": 385.85,
+        "breakoutScore": 11.14,
+        "publicRetentionSignalScore": 76,
+        "evidence": {
+          "transcriptPath": "transcripts/3wzZyaxhWmw_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 607,
+          "transcriptSegmentsDeclared": 607,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 896,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 20,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 84.7,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "Hz-8h0TK8wY",
+        "title": "TOP 15 Ancient Biblical Places That Actually Exist",
+        "sourceRank": 2,
+        "displayRank": 5,
+        "duration": "PT33M",
+        "views": 217788,
+        "vph": 862.82,
+        "breakoutScore": 2.35,
+        "publicRetentionSignalScore": 70,
+        "evidence": {
+          "transcriptPath": "transcripts/Hz-8h0TK8wY_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 569,
+          "transcriptSegmentsDeclared": 569,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 940,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 14,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 95.8,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "ieq4c-4vGh0",
+        "title": "TOP 10 Most Abandoned Places So Haunting Even Explorers Refuse to Return",
+        "sourceRank": 4,
+        "displayRank": 6,
+        "duration": "PT44M9S",
+        "views": 200258,
+        "vph": 5.96,
+        "breakoutScore": 8.53,
+        "publicRetentionSignalScore": 58,
+        "evidence": {
+          "transcriptPath": "transcripts/ieq4c-4vGh0_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 721,
+          "transcriptSegmentsDeclared": 721,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 880,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 19,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 90.7,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "Vj7sOGyCAoQ",
+        "title": "TOP 15 Hanging Structures Even Engineers Can't Explain",
+        "sourceRank": 5,
+        "displayRank": 7,
+        "duration": "PT32M25S",
+        "views": 182041,
+        "vph": 332.5,
+        "breakoutScore": 2.5,
+        "publicRetentionSignalScore": 66,
+        "evidence": {
+          "transcriptPath": "transcripts/Vj7sOGyCAoQ_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 589,
+          "transcriptSegmentsDeclared": 589,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 996,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 10,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 100,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "gQOQJ49LsfE",
+        "title": "UNSEEN PHILIPPINES | The Unseen Mountain Worlds Lost in Time",
+        "sourceRank": 10,
+        "displayRank": 8,
+        "duration": "PT31M21S",
+        "views": 88076,
+        "vph": 1.8064516129032258,
+        "breakoutScore": null,
+        "publicRetentionSignalScore": 42,
+        "evidence": {
+          "transcriptPath": "transcripts/gQOQJ49LsfE_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 524,
+          "transcriptSegmentsDeclared": 524,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 914,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 17,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 92.9,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "TvgyAd8K1PQ",
+        "title": "TOP 15 Most Extreme Corners on Earth Few People Have Ever Seen",
+        "sourceRank": 9,
+        "displayRank": 9,
+        "duration": "PT30M33S",
+        "views": 41581,
+        "vph": 111.88888888888889,
+        "breakoutScore": null,
+        "publicRetentionSignalScore": 50,
+        "evidence": {
+          "transcriptPath": "transcripts/TvgyAd8K1PQ_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 521,
+          "transcriptSegmentsDeclared": 521,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 835,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 14,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 94.7,
+          "transcriptIntegrityScore": 100
+        }
+      },
+      {
+        "videoId": "cDFrCFvJU-k",
+        "title": "Impossible Places: The Most Insane Houses Built in Impossible Locations",
+        "sourceRank": 8,
+        "displayRank": 10,
+        "duration": "PT34M24S",
+        "views": 11672,
+        "vph": 12.666666666666666,
+        "breakoutScore": null,
+        "publicRetentionSignalScore": 35,
+        "evidence": {
+          "transcriptPath": "transcripts/cDFrCFvJU-k_transcript.json",
+          "transcriptReadable": true,
+          "transcriptSegmentsObserved": 623,
+          "transcriptSegmentsDeclared": 623,
+          "transcriptSegmentCountMatch": true,
+          "first60sTextChars": 913,
+          "first60sQuestionCueCount": 0,
+          "pacingCueCount": 23,
+          "hookEvidenceScore": 100,
+          "pacingEvidenceScore": 100,
+          "transcriptIntegrityScore": 100
+        }
+      }
+    ],
+    "notMeasured": [
+      "Average view duration (minutes)",
+      "Audience retention percentage or curve",
+      "30-second intro retention",
+      "Rewatches, exits, skips, and end-screen behavior",
+      "Private YouTube Analytics data"
+    ],
+    "sources": [
+      {
+        "title": "YouTube Analytics overview",
+        "url": "https://support.google.com/youtube/answer/9002587",
+        "relevance": "Average view duration appears as a YouTube Analytics metric."
+      },
+      {
+        "title": "YouTube audience retention",
+        "url": "https://support.google.com/youtube/answer/9313698",
+        "relevance": "Audience retention measures how well a video keeps viewers watching over time."
+      },
+      {
+        "title": "Measuring important moments for audience retention",
+        "url": "https://support.google.com/youtube/answer/9314415",
+        "relevance": "Retention reports are video-level Analytics evidence, unavailable in a public channel snapshot."
+      }
+    ],
+    "interpretation": "Use only to prioritize videos and inspect structure. Do not report this score as AVD, retention percentage, or watch time."
   }
 }

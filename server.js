@@ -131,21 +131,23 @@ const server = http.createServer(async (req,res)=>{
   }
   if (apiPath === '/api/intelligence/breakouts') {
     if (req.method === 'GET' || isHead) {
+      const dbFile = path.join(ROOT, 'data', 'intelligence.db');
+      if (!fs.existsSync(dbFile)) {
+        sendJson(res, 200, { total: 0, channels: [] }, isHead);
+        return;
+      }
+      let db = null;
       try {
         const { DatabaseSync } = require('node:sqlite');
-        const dbFile = path.join(ROOT, 'data', 'intelligence.db');
-        if (!fs.existsSync(dbFile)) {
-          sendJson(res, 200, { total: 0, channels: [] }, isHead);
-          return;
-        }
-        const db = new DatabaseSync(dbFile);
+        db = new DatabaseSync(dbFile);
         const rows = db.prepare('SELECT channel_id, handle, title, channel_age_days, median_views, top_outlier_multiplier, is_faceless, faceless_type, last_crawled_at FROM channels WHERE is_breakout = 1 ORDER BY median_views DESC LIMIT 30').all();
-        db.close();
         sendJson(res, 200, { total: rows.length, channels: rows }, isHead);
         return;
       } catch (err) {
         sendJson(res, 500, { error: err.message }, isHead);
         return;
+      } finally {
+        if (db) db.close();
       }
     }
     sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
@@ -168,6 +170,38 @@ const server = http.createServer(async (req,res)=>{
     sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
+  if (apiPath === '/api/search') {
+    if (req.method === 'GET' || isHead) {
+      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const q = (parsedUrl.searchParams.get('q') || '').trim();
+      const limit = Math.min(50, Math.max(1, parseInt(parsedUrl.searchParams.get('limit') || '20', 10)));
+      const dbFile = path.join(ROOT, 'data', 'h2dev_master.db');
+      if (!fs.existsSync(dbFile) || !q) {
+        sendJson(res, 200, { query: q, total: 0, results: [] }, isHead);
+        return;
+      }
+      let db = null;
+      try {
+        const { DatabaseSync } = require('node:sqlite');
+        db = new DatabaseSync(dbFile);
+        const rows = db.prepare(`
+          SELECT entity_id, entity_type, title, snippet(search_fts, 3, '<mark>', '</mark>', '...', 15) AS snippet
+          FROM search_fts
+          WHERE search_fts MATCH ?
+          LIMIT ?
+        `).all(q, limit);
+        sendJson(res, 200, { query: q, total: rows.length, results: rows }, isHead);
+        return;
+      } catch (err) {
+        sendJson(res, 200, { query: q, total: 0, results: [], error: err.message }, isHead);
+        return;
+      } finally {
+        if (db) db.close();
+      }
+    }
+    sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    return;
+  }
   if (req.method !== 'GET' && !isHead) {
     res.writeHead(405, {
       'Allow': 'GET, HEAD, OPTIONS',
@@ -178,7 +212,19 @@ const server = http.createServer(async (req,res)=>{
     res.end('Method Not Allowed');
     return;
   }
-  let urlPath = decodeURIComponent(req.url.split('?')[0]);
+
+  let urlPath;
+  try {
+    urlPath = decodeURIComponent(req.url.split('?')[0]);
+  } catch (err) {
+    res.writeHead(400, {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Access-Control-Allow-Origin': '*',
+      'X-Content-Type-Options': 'nosniff',
+    });
+    res.end('400 Bad Request: Malformed URI');
+    return;
+  }
   if(urlPath === '/' || urlPath === '') urlPath = '/index.html';
 
   // Routing các trang giao diện chính

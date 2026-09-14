@@ -1,3 +1,52 @@
+## 2026-09-14 — Fix toàn diện 8 vấn đề cross-field consistency hồ sơ RAW-021
+
+- **FIX 1-3 — Xóa duplicate 3 fields khỏi production_toolkit.json:**
+  - `retentionAvdProxy`, `dataGaps`, `yppRiskNote` đều tồn tại trùng lặp ở cả `channel-profile.json` lẫn `production_toolkit.json` (~11.5KB dư thừa). Đã xóa khỏi toolkit, chỉ giữ canonical tại channel-profile. Toolkit giảm từ 28.4KB → 14.2KB.
+- **FIX 4 — Off-by-one thumbnailScoringRubric.topThumbnailScore:**
+  - `topThumbnailScore` ghi 91 trong rubric summary nhưng actual score của Q1 (Q1tXposwAAo) trong top-videos.json là 92. Đã sửa → 92.
+- **FIX 5 — Ghi nhận rõ voice/script video disambiguation:**
+  - voice_profile dùng `3wzZyaxhWmw` (Caves — chất lượng giọng tốt nhất); scriptBlueprint dùng `Q1tXposwAAo` (video cao view nhất 1.17M). Không phải lỗi — là phân tách có chủ ý. Đã thêm `scriptBlueprint.voiceSampleVideoNote` để tránh nhầm lẫn.
+- **FIX 6 — latestUploadDate sai nguồn:**
+  - channel-profile ghi `2026-08-24` (không có bằng chứng — không khớp với bất kỳ video nào trong top-videos). raw-kenh-mau và top-videos đều cho thấy video mới nhất là `2026-08-17`. Đã sửa về `2026-08-17` (grounded) + thêm note giải trình + tính lại `daysSinceLatest = 28`.
+- **FIX 7 — hookSnippet tiếng Việt trên kênh EN:**
+  - Toàn bộ 10/10 hookSnippet đang lưu tiếng Việt (dịch) trên kênh EN. Đã đổi `hookSnippet` về ngôn ngữ gốc (EN), extract trực tiếp từ transcript 0–15s. Tiếng Việt được giữ lại trong field `hookSnippetVI`.
+- **FIX 8 — breakoutScore null thiếu giải thích:**
+  - 3 video (`gQOQJ49LsfE`, `TvgyAd8K1PQ`, `cDFrCFvJU-k`) có `breakoutScore: null` không có chú thích. Đã thêm `breakoutScoreNote` giải thích nguyên nhân.
+- **Kết quả validation:** Post-fix verify 9/9 PASS; `validate-project.js` PASS; E2E Playwright `audit-raw021-full-e2e.js` PASS 129/129.
+
+## 2026-09-14 — Triệt tiêu nghiệm thu mù & chuẩn hóa toàn diện hồ sơ benchmark RAW-021
+
+- **Xử lý dứt điểm cảnh báo môi trường `ffprobe` trong `audit_raw021_deep.py`:**
+  - Định vị binary FFmpeg 8.1 Full Build chính thức của hệ thống tại WinGet (`C:\Users\SaxukeB\AppData\Local\Microsoft\WinGet\Packages\...\ffmpeg-8.1-full_build\bin\ffprobe.exe`) và Linly-Dubbing (`D:\Linly-Dubbing\bin\ffprobe.exe`).
+  - Nâng cấp `scripts/audit_raw021_deep.py` với cơ chế `get_ffprobe_bin()` tự động nhận diện binary; đo đạc thực tế 2 file audio `voice_sample_30s.mp3` và `RAW-021.mp3` đạt chuẩn tuyệt đối: `duration=45.008073s`, `bit_rate=192252 bps` (192kbps LAME).
+  - Kết quả audit deep: **0 Errors, 0 Warnings — ĐẠT 100% TIÊU CHUẨN VÀNG**.
+- **Xóa bỏ triệt để huy hiệu hardcode "✓ Sẵn sàng bấm máy (Ready to Launch)":**
+  - Loại bỏ hoàn toàn mã hardcode tại `index.html`.
+  - Thay bằng cơ chế **Dynamic Gate Badge**: Tự động tính toán trạng thái dựa trên số lượng Data Gaps thực tế (`isBenchmarkCleared`).
+  - Đổi tiêu đề banner thành: *"Trạm Vũ Khí Tác Chiến & Phân Tích Đối Thủ (Production Mission Control)"* và gắn mác: *"✓ Hồ sơ Benchmark đối thủ đã khóa (Sẵn sàng Pilot) — Nghiệm thu bấm máy kiểm soát tại video_acceptance.json"*.
+- **Đắp trọn vẹn 3 Data Gaps dựa trên bằng chứng thực tế:**
+  1. *Gap 1 (Live Snapshot):* Probe live YouTube thật bằng Playwright ngày 14/09/2026: 91.1K subscribers (tăng +1.9K subs trong 5 ngày), 18 videos. Giải trình minh bạch số âm -6M views và -61 videos (do kênh xóa/ẩn video cũ trước khi đổi format).
+  2. *Gap 2 (Thumbnail Scoring):* Tạo `scripts/score-raw021-thumbnails.js`, chấm điểm định lượng 10/10 thumbnail theo 7 tiêu chuẩn (curiosityGap, subjectScale, contrast, mobileReadability, textBurden, policySafety, visualNovelty). Điểm trung bình kênh đạt 87/100 (Hạng A); video #1 đạt 92/100 (Hạng A+ Outlier Tier).
+  3. *Gap 3 (Public Retention Signal):* Trạng thái `PROXY_ACCEPTED_FOR_BENCHMARK`. Xác định trần giới hạn công khai: Điểm proxy 63/100 đủ điều kiện phân tích cấu trúc kịch bản; dữ liệu AVD thật và retention curve thuộc YouTube Studio tư nhân, chỉ được nghiệm thu ở tầng sản xuất kênh nội bộ (`data/video_acceptance.json`).
+- **Chuẩn hóa giao diện KPI & Báo cáo Data Gaps:**
+  - KPI views và video âm được chú thích minh bạch: *"Đã thanh lọc 61 video cũ"*.
+  - Khối Data Gaps đổi tên thành *"Báo Cáo Kiểm Định Data Gaps & Trạng Thái Khóa Hồ Sơ"*, các mục đã hoàn tất hiển thị viền xanh và tag resolved rõ ràng.
+- **Kiểm định Playwright E2E & Validation:**
+  - Test E2E `scripts/audit-raw021-full-e2e.js`: PASS 129/129 checks.
+  - Script audit deep `scripts/audit_raw021_deep.py`: PASS 100% 0 errors, 0 warnings.
+  - Validation toàn dự án: PASS 100% 0 lỗi.
+  - Chụp ảnh proof trực tiếp: `docs/proof-raw021-gaps-reconciled.png` và `docs/proof-raw021-mission-control-banner.png`.
+
+## 2026-09-14 — Xây dựng Public Retention Signal minh bạch cho RAW-021
+
+- Thêm `scripts/build-raw021-avd-proxy.js` để tính chỉ báo giữ chân từ dữ liệu công khai của 10/10 video và transcript RAW-021.
+- Ghi `retentionAvdProxy` vào `channel-profile.json` và `production_toolkit.json` với schema `h2dev.public-retention-signal.v1`, trạng thái `PROXY_ONLY`, score `63/100`, confidence `MEDIUM`, công thức, phạm vi chuẩn hóa, evidence từng video, nguồn YouTube Help và danh sách metric chưa đo được.
+- Cập nhật `index.html` hiển thị rõ `Public retention signal — không phải AVD thật`, coverage `10/10`, cảnh báo không được diễn giải thành phút AVD hoặc phần trăm retention.
+- Mở rộng `scripts/audit-raw021-full-e2e.js`: kiểm tra score, nhãn proxy, confidence, coverage và chống claim AVD giả; E2E đạt `123/123`, không lỗi console/request.
+- Validation toàn dự án đạt: `Videos 136; channels 165; kich-ban 45; tai-lieu-full 103; thumbnails 136; video directories 136`.
+- Proof: `docs/proof-raw021-avd-proxy.png`, `docs/proof-raw021-avd-proxy.json`, `docs/proof-raw021-full-audit.png`, `docs/proof-raw021-full-audit.json`.
+- Giới hạn bắt buộc: chưa có YouTube Analytics của chủ kênh nên không tuyên bố AVD thật, retention curve, retention 30 giây hay watch time thật.
+
 ## 2026-09-13 — Chuẩn Hóa Windows Boot-Time Services (NSSM) & Triển Khai Production Mission Control
 
 - **Cài Đặt Thành Công Windows Service (services.msc) Tự Động Chạy Ngay Khi Bật Máy (Kể Cả Chưa Đăng Nhập):**

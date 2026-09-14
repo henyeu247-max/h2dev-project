@@ -1,0 +1,5 @@
+{
+  "pass": true,
+  "text": "◌\nPublic retention signal — không phải AVD thật\nPROXY_ONLY\n63/100\nĐiểm tín hiệu công khai\n\nÝ nghĩa: Use only to prioritize videos and inspect structure. Do not report this score as AVD, retention percentage, or watch time.\n\nĐộ tin cậy: MEDIUM — 10/10 public transcript records are readable, but channel-owner YouTube Analytics is unavailable.\n\nPhạm vi: 10/10 video; transcript đầy đủ 10/10.\n\nDÙNG LÀM GÌ\nSo sánh tương đối trong 10 video đã audit; ưu tiên kiểm tra hook, pacing và cấu trúc.\nKHÔNG ĐƯỢC GỌI LÀ\nAVD bao nhiêu phút, retention bao nhiêu %, hay watch time thật.\nNguồn: data/raw-channels-deep/RAW-021_Hidden_Planet_Docs/top-videos.json · YouTube Analytics thật chưa được cung cấp.",
+  "consoleErrors": []
+}

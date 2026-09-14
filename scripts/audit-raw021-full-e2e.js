@@ -65,7 +65,7 @@ function assert(cond, msg, details = {}) {
     const requiredTexts = [
       'Hidden Planet Docs',
       '@HiddenPlanetDocs',
-      '89.200',
+      '91.100',
       '$800 – $2.400/tháng',
       'Voice DNA Studio',
       'Trạm Vũ Khí Tác Chiến',
@@ -75,11 +75,31 @@ function assert(cond, msg, details = {}) {
       'Top Video Đang Phát Trên YouTube',
       'Sao chép tất cả Tags',
       'YPP Risk Note',
-      'Data Gaps',
       'Display Rank',
       'Source Rank gốc',
+      'Public retention signal — không phải AVD thật',
+      'PROXY_ONLY',
+      'Điểm tín hiệu công khai',
+      'Độ tin cậy: MEDIUM',
+      '10/10 video',
+      'transcript đầy đủ 10/10',
+      'Hồ sơ Benchmark đối thủ đã khóa',
     ];
+    // Data Gaps UI (new collapsed-when-resolved design)
+    add('Data Gaps block present', modalText.includes('Kiểm định Data Gaps'), 'data gaps block');
+    add('Data Gaps all-resolved label', modalText.includes('Hoàn tất') || modalText.includes('resolved'), 'all resolved');
+    add('Data Gaps audit timestamp', modalText.includes('14/09/2026'), 'audit timestamp');
+    add('Data Gaps human label: Live snapshot', modalText.includes('Live snapshot'), 'live snapshot label');
+    add('Data Gaps human label: Thumbnail', modalText.includes('Thumbnail 10/10'), 'thumbnail label');
+    add('Data Gaps human label: Retention proxy', modalText.includes('Retention proxy'), 'retention proxy label');
+    // Status codes hidden in collapsed mode (tooltip only) — verify NOT rendering as raw text
+    add('Data Gaps: status codes collapsed (not raw text)', !modalText.includes('REFRESHED_LIVE_2026_09_14') && !modalText.includes('COMPLETED_SCORED') && !modalText.includes('PROXY_ACCEPTED_FOR_BENCHMARK'), 'status codes collapsed');
     for (const t of requiredTexts) add(`Modal contains: ${t}`, modalText.includes(t), t);
+    add('AVD proxy score is 63/100', modalText.includes('63/100'), 'proxy score');
+    add('AVD proxy does not claim minutes or percentage', !/AVD\s*[:=]?\s*\d+\s*(phút|%)/i.test(modalText), 'no false AVD claim');
+    add('Xóa bỏ triệt để nghiệm thu mù: không còn Sẵn sàng bấm máy', !modalText.includes('Sẵn sàng bấm máy'), 'no blind acceptance');
+    add('Giải trình số âm minh bạch trong modal', modalText.includes('thanh lọc') || modalText.includes('Đã lọc'), 'anomaly explained');
+
 
     const missionControl = modal.locator('#raw-mission-control');
     await missionControl.waitFor({ state: 'visible', timeout: 10000 });

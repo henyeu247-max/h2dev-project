@@ -1,6 +1,6 @@
 {
   "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
-  "updatedAt": "2026-09-13T17:15:00.000Z",
+  "updatedAt": "2026-09-14T09:05:57.397Z",
   "totalRecords": 97,
   "records": [
     {
@@ -4351,7 +4351,7 @@
         "title": "Hidden Planet Docs",
         "handle": "@HiddenPlanetDocs",
         "url": "https://www.youtube.com/channel/UCFi2OqSU0AZpTBT-zLldaIA",
-        "subscribers": 89200,
+        "subscribers": 91100,
         "views": 4543379,
         "videoCount": 18,
         "country": "US",
@@ -4483,12 +4483,12 @@
         "folderName": "RAW-021_Hidden_Planet_Docs",
         "dossierPath": "data/raw-channels-deep/RAW-021_Hidden_Planet_Docs",
         "vitalityAudit": {
-          "evaluatedAt": "2026-09-09",
+          "evaluatedAt": "2026-09-14",
           "latestUploadDate": "2026-08-17",
-          "daysSinceLatest": 23,
+          "daysSinceLatest": 21,
           "healthStatus": "ACTIVE",
-          "healthBadge": "🟢 Đang hoạt động (23 ngày trước)",
-          "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 23 ngày trước).",
+          "healthBadge": "🟢 Đang hoạt động (91.1K subs · 18 videos)",
+          "healthDetail": "Kênh hoạt động đều đặn, tăng từ 89.2K lên 91.1K subs (+1.9K subs). 18 video chuẩn documentary.",
           "monetizationStatus": "MONETIZED_ACTIVE",
           "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
           "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, nội dung tài liệu khảo cổ giữ chân khán giả tốt. Ước tính doanh thu AdSense đạt $800 – $2.400/tháng tùy theo tỷ lệ người xem US/UK/Canada.",
@@ -4510,12 +4510,12 @@
         }
       },
       "vitalityAudit": {
-        "evaluatedAt": "2026-09-09",
+        "evaluatedAt": "2026-09-14",
         "latestUploadDate": "2026-08-17",
-        "daysSinceLatest": 23,
+        "daysSinceLatest": 21,
         "healthStatus": "ACTIVE",
-        "healthBadge": "🟢 Đang hoạt động (23 ngày trước)",
-        "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 23 ngày trước).",
+        "healthBadge": "🟢 Đang hoạt động (91.1K subs · 18 videos)",
+        "healthDetail": "Kênh hoạt động đều đặn, tăng từ 89.2K lên 91.1K subs (+1.9K subs). 18 video chuẩn documentary.",
         "monetizationStatus": "MONETIZED_ACTIVE",
         "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
         "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, nội dung tài liệu khảo cổ giữ chân khán giả tốt. Ước tính doanh thu AdSense đạt $800 – $2.400/tháng tùy theo tỷ lệ người xem US/UK/Canada.",

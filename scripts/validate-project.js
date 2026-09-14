@@ -190,6 +190,17 @@ const docsOnDisk = fs.existsSync(path.join(ROOT, 'docs'))
   : 0;
 if (docsOnDisk < 45) warnings.push(`docs file count is ${docsOnDisk}; expected at least the original 45 extract files`);
 
+// Guard: chan inline event handler chua du lieu dong (nguyen nhan lam nut Xem Video chet
+// khi tieu de co dau nhay don). Chi tiet: scripts/guard-no-inline-onclick.js
+try {
+  const inlineGuard = require('./guard-no-inline-onclick.js');
+  inlineGuard.scan().forEach((offender) => {
+    errors.push(`index.html:${offender.line} inline handler chua du lieu dong (${offender.snippet})`);
+  });
+} catch (guardError) {
+  errors.push(`Khong chay duoc guard-no-inline-onclick.js: ${guardError.message}`);
+}
+
 if (errors.length) {
   console.error(`Validation failed with ${errors.length} error(s):`);
   errors.forEach(error => console.error(`- ${error}`));

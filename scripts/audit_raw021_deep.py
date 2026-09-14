@@ -1,6 +1,7 @@
 import json
 import os
 import subprocess
+import shutil
 
 PROJECT_DIR = r"D:\YTB\H2DEV-Project"
 DOSSIER_DIR = os.path.join(PROJECT_DIR, "data", "raw-channels-deep", "RAW-021_Hidden_Planet_Docs")
@@ -35,12 +36,26 @@ else:
 v_audio = os.path.join(DOSSIER_DIR, "voice_sample_30s.mp3")
 v_asset = os.path.join(PROJECT_DIR, "assets", "voice-samples", "RAW-021.mp3")
 
+def get_ffprobe_bin():
+    p = shutil.which("ffprobe")
+    if p: return p
+    candidates = [
+        r"C:\Users\SaxukeB\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1-full_build\bin\ffprobe.exe",
+        r"D:\Linly-Dubbing\bin\ffprobe.exe"
+    ]
+    for c in candidates:
+        if os.path.exists(c):
+            return c
+    return "ffprobe"
+
+ffprobe_bin = get_ffprobe_bin()
+
 for label, a_path in [("Dossier MP3", v_audio), ("Public Asset MP3", v_asset)]:
     if not os.path.exists(a_path):
         errors.append(f"Thiếu file âm thanh: {label} ({a_path})")
     else:
         sz = os.path.getsize(a_path)
-        cmd = ["ffprobe", "-v", "error", "-show_entries", "format=duration,bit_rate", "-of", "default=noprint_wrappers=1", a_path]
+        cmd = [ffprobe_bin, "-v", "error", "-show_entries", "format=duration,bit_rate", "-of", "default=noprint_wrappers=1", a_path]
         try:
             out = subprocess.check_output(cmd, text=True).strip()
             print(f"[2] {label}: Size={sz}B ({sz/1024:.1f}KB) | ffprobe: {out.replace(chr(10), ' ')}")

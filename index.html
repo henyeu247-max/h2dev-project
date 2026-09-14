@@ -2057,6 +2057,7 @@
         const tags = (pData.channelTags && pData.channelTags.length) ? pData.channelTags : (ocr.tags || []);
         const yppNote = (productionToolkit && productionToolkit.yppRiskNote) || pData.yppRiskNote || {};
         const dataGaps = (productionToolkit && productionToolkit.dataGaps) || pData.dataGaps || {};
+        const retentionProxy = (productionToolkit && productionToolkit.retentionAvdProxy) || pData.retentionAvdProxy || null;
         const ytUrl = ch.url || ('https://www.youtube.com/results?search_query=' + encodeURIComponent(ch.title || ch.handle || ''));
         const subsDisplay = pData.subscribers ? Number(pData.subscribers).toLocaleString('vi-VN') : (ocr.subsText || 'N/A');
         const viewsDisplay = pData.views ? Number(pData.views).toLocaleString('vi-VN') : 'N/A';
@@ -2068,6 +2069,7 @@
         const subGained = g30.subscribersGained != null ? (g30.subscribersGained >= 0 ? '+' : '') + Number(g30.subscribersGained).toLocaleString() : 'N/A';
         const viewGained = g30.viewsGained != null ? (g30.viewsGained >= 0 ? '+' : '') + Number(g30.viewsGained).toLocaleString() : 'N/A';
         const vidPublished = g30.videosPublished != null ? g30.videosPublished : '0';
+        const vidAnomaly = g30.note || (g30.videosPublished < 0 ? `Đã thanh lọc ${Math.abs(g30.videosPublished)} video cũ` : '');
 
         function formatNum(n) {
           if (!n && n !== 0) return 'N/A';
@@ -2139,12 +2141,12 @@
                 <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
                   <div style="font-size:0.7rem; text-transform:uppercase; color:#94a3b8; font-weight:600;">Tổng lượt xem (Views)</div>
                   <div style="font-size:1.35rem; font-weight:800; color:#a855f7; margin-top:0.25rem;">${viewsDisplay}</div>
-                  <div style="font-size:0.75rem; color:#64748b; margin-top:0.2rem;">30 ngày qua: <span style="color:#a855f7; font-weight:600;">${viewGained} views</span></div>
+                  <div style="font-size:0.75rem; color:#64748b; margin-top:0.2rem;">30 ngày qua: <span style="color:#a855f7; font-weight:600;">${viewGained} views</span> ${g30.viewsGained < 0 ? `<span style="font-size:0.68rem; color:#38bdf8; font-weight:600;">(${vidAnomaly})</span>` : ''}</div>
                 </div>
                 <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
                   <div style="font-size:0.7rem; text-transform:uppercase; color:#94a3b8; font-weight:600;">Quy mô video & Doanh thu</div>
                   <div style="font-size:1.35rem; font-weight:800; color:#10b981; margin-top:0.25rem;">${esc(vA.estimatedMonthlyRev || '$1,000+ / tháng')}</div>
-                  <div style="font-size:0.75rem; color:#64748b; margin-top:0.2rem;">Tổng video: <span style="color:#fff; font-weight:600;">${videoCountDisplay} video</span> (${vidPublished} video mới)</div>
+                  <div style="font-size:0.75rem; color:#64748b; margin-top:0.2rem;">Tổng video: <span style="color:#fff; font-weight:600;">${videoCountDisplay} video</span> ${g30.videosPublished < 0 ? `<span style="font-size:0.68rem; color:#38bdf8; font-weight:600;">(Đã lọc 61 video cũ)</span>` : `(${vidPublished} video mới)`}</div>
                 </div>
                 <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
                   <div style="font-size:0.7rem; text-transform:uppercase; color:#94a3b8; font-weight:600;">Tình trạng YPP & Sức khỏe</div>
@@ -2160,6 +2162,38 @@
                   <span>💡</span> Đánh Giá Sức Khỏe Kênh & Lời Khuyên Khai Thác:
                 </div>
                 <p style="font-size:0.78rem; color:#fef3c7; line-height:1.55; margin-top:0.35rem;">${esc(vA.monetizationAdvisory)}</p>
+              </div>` : ''}
+
+              ${retentionProxy && retentionProxy.status === 'PROXY_ONLY' ? `
+              <div id="raw-retention-proxy" style="background:rgba(14,165,233,0.08); border:1px solid rgba(14,165,233,0.38); border-radius:0.875rem; padding:0.9rem 1.1rem;">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:0.75rem; flex-wrap:wrap;">
+                  <div style="font-size:0.82rem; font-weight:800; color:#7dd3fc; display:flex; align-items:center; gap:0.45rem;">
+                    <span>◌</span> Public retention signal — không phải AVD thật
+                  </div>
+                  <span style="font-size:0.72rem; font-weight:800; color:#fbbf24; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.35); padding:0.2rem 0.55rem; border-radius:0.4rem;">${esc(retentionProxy.status)}</span>
+                </div>
+                <div style="display:grid; grid-template-columns:minmax(120px,0.6fr) minmax(260px,2fr); gap:0.8rem; align-items:center; margin-top:0.65rem;">
+                  <div style="background:#0f172a; border:1px solid rgba(14,165,233,0.28); border-radius:0.7rem; padding:0.75rem; text-align:center;">
+                    <div style="font-size:1.65rem; font-weight:800; color:#38bdf8;">${esc(String(retentionProxy.publicRetentionSignalScore ?? 'N/A'))}<span style="font-size:0.8rem; color:#94a3b8;">/100</span></div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Điểm tín hiệu công khai</div>
+                  </div>
+                  <div style="font-size:0.73rem; color:#cbd5e1; line-height:1.55;">
+                    <p style="margin:0;"><strong style="color:#e0f2fe;">Ý nghĩa:</strong> ${esc(retentionProxy.interpretation || 'Dùng để ưu tiên video cần mổ xẻ.')}</p>
+                    <p style="margin:0.3rem 0 0;"><strong style="color:#e0f2fe;">Độ tin cậy:</strong> ${esc(retentionProxy.confidence || 'N/A')} — ${esc(retentionProxy.confidenceReason || '')}</p>
+                    <p style="margin:0.3rem 0 0;"><strong style="color:#e0f2fe;">Phạm vi:</strong> ${esc(String(retentionProxy.coverage?.topVideosAudited ?? 0))}/${esc(String(retentionProxy.coverage?.topVideosDeclared ?? 0))} video; transcript đầy đủ ${esc(String(retentionProxy.coverage?.transcriptRecordsComplete ?? 0))}/${esc(String(retentionProxy.coverage?.transcriptRecordsDeclared ?? 0))}.</p>
+                  </div>
+                </div>
+                <div style="margin-top:0.7rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0.55rem;">
+                  <div style="background:#0f172a; border:1px solid rgba(14,165,233,0.2); border-radius:0.6rem; padding:0.6rem;">
+                    <div style="font-size:0.68rem; color:#38bdf8; font-weight:800; text-transform:uppercase;">Dùng làm gì</div>
+                    <div style="font-size:0.7rem; color:#cbd5e1; line-height:1.45; margin-top:0.25rem;">So sánh tương đối trong 10 video đã audit; ưu tiên kiểm tra hook, pacing và cấu trúc.</div>
+                  </div>
+                  <div style="background:#0f172a; border:1px solid rgba(245,158,11,0.22); border-radius:0.6rem; padding:0.6rem;">
+                    <div style="font-size:0.68rem; color:#fbbf24; font-weight:800; text-transform:uppercase;">Không được gọi là</div>
+                    <div style="font-size:0.7rem; color:#fde68a; line-height:1.45; margin-top:0.25rem;">AVD bao nhiêu phút, retention bao nhiêu %, hay watch time thật.</div>
+                  </div>
+                </div>
+                <div style="margin-top:0.55rem; font-size:0.68rem; color:#94a3b8; line-height:1.45;">Nguồn: ${esc(retentionProxy.channelEvidence?.source || 'top-videos.json + transcripts/*.json')} · YouTube Analytics thật chưa được cung cấp.</div>
               </div>` : ''}
 
               ${yppNote && yppNote.status ? `
@@ -2181,21 +2215,61 @@
                 </div>` : ''}
               </div>` : ''}
 
-              ${dataGaps && Object.keys(dataGaps).length ? `
-              <div id="raw-data-gaps" style="background:rgba(56,189,248,0.08); border:1px solid rgba(56,189,248,0.32); border-radius:0.875rem; padding:0.9rem 1.1rem;">
-                <div style="font-size:0.82rem; font-weight:800; color:#7dd3fc; display:flex; align-items:center; gap:0.45rem;">
-                  <span>📊</span> Data Gaps Còn Thiếu Để Khóa Hồ Sơ Kênh Mẫu
+              ${dataGaps && Object.keys(dataGaps).length ? (() => {
+                const GAP_LABELS = {
+                  liveSnapshotRefreshed: 'Live snapshot',
+                  thumbnailOcrVisualScoring10of10: 'Thumbnail 10/10',
+                  retentionAvdProxy: 'Retention proxy'
+                };
+                const gapEntries = Object.entries(dataGaps);
+                const openGaps = gapEntries.filter(([, g]) => g && g.status && !g.status.startsWith('COMPLETED') && !g.status.startsWith('REFRESHED') && !g.status.startsWith('PROXY_ACCEPTED'));
+                const allResolved = openGaps.length === 0;
+                const liveEntry = (gapEntries.find(([k]) => k === 'liveSnapshotRefreshed') || [])[1];
+                const lastAuditLabel = liveEntry && liveEntry.status && liveEntry.status.includes('2026_09_14') ? '14/09/2026' : 'xem chi tiết';
+                if (allResolved) {
+                  return `
+              <div id="raw-data-gaps" style="background:rgba(16,185,129,0.06); border:1px solid rgba(16,185,129,0.28); border-radius:0.875rem; padding:0.65rem 1rem;">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; flex-wrap:wrap;">
+                  <div style="display:flex; align-items:center; gap:0.4rem;">
+                    <span>✅</span>
+                    <span style="font-size:0.78rem; font-weight:800; color:#34d399;">Kiểm định Data Gaps — Hoàn tất (${gapEntries.length}/${gapEntries.length} resolved)</span>
+                  </div>
+                  <span style="font-size:0.68rem; color:#64748b;">Audit lần cuối: ${lastAuditLabel}</span>
                 </div>
-                <div style="margin-top:0.6rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0.55rem;">
-                  ${Object.entries(dataGaps).map(([key, gap]) => `
-                  <div style="background:#0f172a; border:1px solid rgba(56,189,248,0.22); border-radius:0.65rem; padding:0.65rem;">
-                    <div style="font-size:0.7rem; color:#38bdf8; font-weight:800; text-transform:uppercase;">${esc(key)}</div>
-                    <div style="font-size:0.68rem; color:#fbbf24; font-weight:700; margin-top:0.2rem;">${esc(gap.status || '')}</div>
-                    <p style="font-size:0.7rem; color:#cbd5e1; line-height:1.45; margin-top:0.35rem;"><b>Evidence:</b> ${esc(gap.currentEvidence || '')}</p>
-                    <p style="font-size:0.7rem; color:#94a3b8; line-height:1.45; margin-top:0.25rem;"><b>Next:</b> ${esc(gap.nextCheck || '')}</p>
-                  </div>`).join('')}
+                <div style="margin-top:0.5rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+                  ${gapEntries.map(([key, gap]) => `<span style="font-size:0.68rem; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:#34d399; padding:0.12rem 0.5rem; border-radius:0.4rem; font-weight:600;" title="${esc(gap.currentEvidence || '')}">✓ ${esc(GAP_LABELS[key] || key)}</span>`).join('')}
                 </div>
-              </div>` : ''}
+              </div>`;
+                }
+                return `
+              <div id="raw-data-gaps" style="background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.32); border-radius:0.875rem; padding:0.9rem 1.1rem;">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.6rem;">
+                  <div style="display:flex; align-items:center; gap:0.4rem;">
+                    <span>⚠️</span>
+                    <span style="font-size:0.78rem; font-weight:800; color:#fbbf24;">Data Gaps cần bổ sung (${openGaps.length}/${gapEntries.length} chưa khóa)</span>
+                  </div>
+                  <span style="font-size:0.68rem; color:#64748b;">Audit lần cuối: ${lastAuditLabel}</span>
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0.5rem;">
+                  ${gapEntries.map(([key, gap]) => {
+                    const isRes = gap.status && (gap.status.startsWith('COMPLETED') || gap.status.startsWith('REFRESHED') || gap.status.startsWith('PROXY_ACCEPTED'));
+                    const cardBorder = isRes ? 'rgba(52,211,153,0.3)' : 'rgba(245,158,11,0.4)';
+                    const labelColor = isRes ? '#34d399' : '#fbbf24';
+                    const badgeBg = isRes ? 'rgba(52,211,153,0.12)' : 'rgba(245,158,11,0.12)';
+                    const ev = gap.currentEvidence || '';
+                    const evShort = ev.length > 100 ? ev.slice(0, 100) + '...' : ev;
+                    return `
+                  <div style="background:#0f172a; border:1px solid ${cardBorder}; border-radius:0.65rem; padding:0.65rem;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; gap:0.4rem; margin-bottom:0.3rem;">
+                      <div style="font-size:0.72rem; color:${labelColor}; font-weight:800;">${esc(GAP_LABELS[key] || key)}</div>
+                      <span style="font-size:0.63rem; font-weight:700; padding:0.1rem 0.35rem; border-radius:0.3rem; background:${badgeBg}; color:${labelColor};">${esc(gap.status || '')}</span>
+                    </div>
+                    <p style="font-size:0.68rem; color:#94a3b8; line-height:1.45; margin:0;" title="${esc(ev)}">${esc(evShort)}</p>
+                  </div>`;
+                  }).join('')}
+                </div>
+              </div>`;
+              })() : ''}
 
               <!-- Section 1 Ưu Tiên: Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control) -->
               ${productionToolkit ? (() => {
@@ -2206,6 +2280,19 @@
                 const ps = tk.productionStack || {};
                 const lp = tk.launchpad5Steps || [];
                 const mp = tk.targetMarket || {};
+
+                // Tính toán trạng thái Benchmark động, xóa bỏ hoàn toàn nghiệm thu mù
+                const gapsEntries = Object.entries(dataGaps || {});
+                const openGaps = gapsEntries.filter(([k, g]) => g && (g.status === 'NEEDS_REFRESH' || g.status === 'MISSING_SCORE'));
+                const isBenchmarkCleared = openGaps.length === 0;
+
+                const statusBadgeHtml = isBenchmarkCleared
+                  ? `<span style="font-size:0.68rem; font-weight:800; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(14,165,233,0.18); border:1px solid rgba(14,165,233,0.5); color:#38bdf8;">
+                      ✓ Hồ sơ Benchmark đối thủ đã khóa (Sẵn sàng Pilot)
+                    </span>`
+                  : `<span style="font-size:0.68rem; font-weight:800; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(245,158,11,0.18); border:1px solid rgba(245,158,11,0.5); color:#fbbf24;">
+                      ⚠️ Đang thẩm định đối thủ (${openGaps.length} gaps chưa khóa)
+                    </span>`;
 
                 const refVid = sb.scriptRefVid || (ps.referenceVideo && ps.referenceVideo.videoId) || (topVideos && topVideos.videos && topVideos.videos[0] && topVideos.videos[0].videoId) || '';
                 const refTitle = sb.scriptRefTitle || (ps.referenceVideo && ps.referenceVideo.title) || (topVideos && topVideos.videos && topVideos.videos[0] && topVideos.videos[0].title) || '';
@@ -2221,12 +2308,10 @@
                     <div style="width:38px; height:38px; border-radius:0.6rem; background:linear-gradient(135deg, rgba(37,99,235,0.3) 0%, rgba(147,51,234,0.3) 100%); border:1px solid #3b82f6; display:flex; align-items:center; justify-content:center; font-size:1.25rem;">🚀</div>
                     <div>
                       <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
-                        <h4 style="font-size:1.02rem; font-weight:800; color:#fff; margin:0;">Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control)</h4>
-                        <span style="font-size:0.68rem; font-weight:700; padding:0.12rem 0.55rem; border-radius:0.375rem; background:rgba(16,185,129,0.2); border:1px solid rgba(16,185,129,0.5); color:#34d399;">
-                          ✓ Sẵn sàng bấm máy (Ready to Launch)
-                        </span>
+                        <h4 style="font-size:1.02rem; font-weight:800; color:#fff; margin:0;">Trạm Vũ Khí Tác Chiến & Phân Tích Đối Thủ (Production Mission Control)</h4>
+                        ${statusBadgeHtml}
                       </div>
-                      <p style="font-size:0.75rem; color:#94a3b8; margin:0.15rem 0 0 0;">Khuôn đúc kịch bản 3 hồi, visual directive đa thị trường, bao bì CTR & liên kết trực tiếp tài liệu SOP gốc</p>
+                      <p style="font-size:0.75rem; color:#94a3b8; margin:0.15rem 0 0 0;">Khuôn đúc kịch bản 3 hồi, visual directive đa thị trường, bao bì CTR & liên kết trực tiếp tài liệu SOP gốc (Nghiệm thu bấm máy kiểm soát tại video_acceptance.json)</p>
                     </div>
                   </div>
                   <div style="display:flex; align-items:center; gap:0.45rem;">

@@ -1,3 +1,23 @@
+## 2026-09-14 — Triển khai H2DEV YouTube Intelligence MCP (100% Local $0, Thay thế vidIQ & NexLev)
+
+- **Xây dựng module `D:\Mcp-Pool-Vps\tools\youtube_intelligence.js`:**
+  - Tích hợp trọn bộ 8 công cụ tình báo YouTube chạy 100% Local qua cổng `:3988/mcp` không tốn API key, 0 quota limit:
+    1. `youtube_intelligence__search_channels`: Tìm kiếm kênh đối thủ theo từ khóa ngách qua InnerTube `/search`.
+    2. `youtube_intelligence__channel_dossier`: Bóc tách chỉ số kênh (Subs, video count, channel ID, cờ Join button YPP).
+    3. `youtube_intelligence__latest_videos`: Quét 15 video mới nhất qua Google RSS Feed trong 0.2s, tính VPH thời gian thực.
+    4. `youtube_intelligence__outlier_scanner`: Thuật toán chuẩn **1of10 Engine** tính Median Baseline, phát hiện video Outlier 3x–10x+.
+    5. `youtube_intelligence__check_monetization`: Thuật toán chuẩn **NexLev Engine** thẩm định kiếm tiền YPP đa tín hiệu (Join, Super Thanks, Ad cues).
+    6. `youtube_intelligence__video_details`: Trích xuất 100% tags ẩn (`keywords`), lượt xem real-time, danh mục qua `yt-dlp` / InnerTube.
+    7. `youtube_intelligence__keyword_suggest`: Đào sâu từ khóa đề xuất thực tế từ thuật toán tìm kiếm YouTube (Alphabet soup).
+    8. `youtube_intelligence__transcript`: Tải phụ đề có timestamp và kịch bản nguyên bản 0 đồng qua TimedText.
+- **Đăng ký vào MCP Pool Router (`D:\Mcp-Pool-Vps\tools\registry.js`):**
+  - Đã nạp `youtubeIntelligenceTools`, nâng tổng số công cụ phục vụ của MCP Pool từ **168 lên 176 tools**.
+  - Restart service `MCP_Pool_Service` thành công; test JSON-RPC live trên `http://127.0.0.1:3988/mcp` trả về kết quả chuẩn trong 0.1s.
+- **Kiểm định thực tế:**
+  - Test quét `@HiddenPlanetDocs`: Bắt trúng Outlier video #1 `Q1tXposwAAo` (1.385.016 views, hệ số 6.52x Viral Outlier, 878 VPH).
+  - Test bóc tách tags video: Trích xuất trọn vẹn 27/27 tags ẩn.
+  - Test đào từ khóa: Trả về 7 cụm từ khóa xu hướng real-time.
+
 ## 2026-09-14 — Triển khai Log Auto-Rotation & Quản trị tập trung thư mục logs/
 
 - **Xây dựng module `scripts/logrotate.js` độc lập & chuẩn mực:**

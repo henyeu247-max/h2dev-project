@@ -358,6 +358,8 @@ code { font-size: 11px; color: var(--fg-2); }
  .btn:focus-visible, .btn-primary:focus-visible, a:focus-visible, button:focus-visible, .btn:focus, a:focus, button:focus { outline: none; box-shadow: var(--focus-ring); }
  .tab-btn:focus { outline: none; box-shadow: var(--focus-ring); }
 .card, .studio-card, .bento-card, .interactive-card, .niche-card {
+  contain: layout style;
+
   position: relative;
   min-width: 0;
   max-width: 100%;

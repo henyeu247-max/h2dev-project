@@ -10,6 +10,8 @@
     "start": "node server.js",
     "validate": "node scripts/validate-project.js",
     "test": "node scripts/validate-project.js",
+    "logrotate": "node scripts/logrotate.js",
+    "logrotate:force": "node scripts/logrotate.js --force",
     "guard": "node scripts/guard-no-inline-onclick.js",
     "test:playback:raw021": "node scripts/audit-raw021-playback.js",
     "build:css": "tailwindcss -i ./css/input.css -o ./assets/tailwind.css --minify"

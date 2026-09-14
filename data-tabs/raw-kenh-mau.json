@@ -4538,6 +4538,53 @@
         "publishedAt": "2026-07-10",
         "thumbnail": "https://i.ytimg.com/vi/Q1tXposwAAo/maxresdefault.jpg",
         "selectionType": "TOP_BREAKTHROUGH"
+      },
+      "satelliteEcosystem": {
+        "totalSatellites": 5,
+        "auditCriteria": "< 50K subs & > 200K views outlier",
+        "satellites": [
+          {
+            "rank": 1,
+            "title": "The Pharaoh Nerd",
+            "handle": "@ThePharaohNerd",
+            "subs": 709,
+            "topOutlierViews": 354000,
+            "outlierScore": "499.2x"
+          },
+          {
+            "rank": 2,
+            "title": "Ancient Human Origins",
+            "handle": "@AncientHumanOrigins999",
+            "subs": 914,
+            "topOutlierViews": 5100000,
+            "outlierScore": "5,580x"
+          },
+          {
+            "rank": 3,
+            "title": "Hominid History Ancient",
+            "handle": "@HominidHistoryAncient",
+            "subs": 1030,
+            "topOutlierViews": 5200000,
+            "outlierScore": "5,048x"
+          },
+          {
+            "rank": 4,
+            "title": "Action Adventure Twins",
+            "handle": "@ActionAdventureTwins",
+            "subs": 48500,
+            "topOutlierViews": 2400000,
+            "outlierScore": "49.5x"
+          },
+          {
+            "rank": 5,
+            "title": "The Forgotten Files",
+            "handle": "@TheForgottenFiles-b8k-k4m",
+            "subs": 8500,
+            "topOutlierViews": 240000,
+            "outlierScore": "28.2x"
+          }
+        ],
+        "contentMatrix6MonthsSummary": "24 video chuẩn hóa theo 6 cụm đề tài (Di chỉ đảo lộn lịch sử, Hang sâu lòng đất, Di chỉ chìm dưới nước, Kỹ thuật cự thạch, Sinh tồn tiền sử, Đô thị rừng rậm)"
       }
     },
     {

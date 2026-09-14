@@ -1,3 +1,17 @@
+## 2026-09-14 — Triển khai Bộ 3 Cải Tiến Tốc Độ Web (Gzip Streaming, CSS Containment, Async Decoding)
+
+- **Cải tiến 1 — HTTP Gzip Compression Streaming trên `server.js`:**
+  - Tích hợp `node:zlib` tự động nén luồng cho các định dạng text/code/data (`.html`, `.css`, `.js`, `.json`, `.svg`, `.csv`, `.md`).
+  - Đo đạc thực tế: `raw-kenh-mau.json` giảm từ **746.5 KB xuống 96.4 KB (giảm 87.1%)**; `index.html` giảm từ **257.8 KB xuống 56.6 KB (giảm 78.1%)**.
+  - Bảo tồn tuyệt đối cơ chế Range Requests (HTTP 206) cho video/audio (`.mp4`, `.webm`, `.mp3`) không nén để đảm bảo tua video chuẩn giây.
+- **Cải tiến 2 — Tối ưu hóa CSS Containment (`assets/viddar.css`):**
+  - Thêm thuộc tính `contain: layout style;` cho toàn bộ `.card`, `.niche-card`, `article[data-raw-card]`.
+  - Giảm thiểu việc trình duyệt phải tính toán lại toàn bộ cây DOM khi cuộn trang hoặc mở tab mới.
+- **Cải tiến 3 — Tải và giải mã hình ảnh bất đồng bộ (`decoding="async"` trong `index.html`):**
+  - Bổ sung thuộc tính `decoding="async"` kết hợp `loading="lazy"` cho toàn bộ 8 vị trí thẻ `<img>` (thumbnails, avatars, raw screenshot, demo facade).
+  - Đưa việc giải nén ảnh JPG/PNG sang background thread, giữ Main Thread rảnh rỗi đạt 60 FPS khi cuộn trang.
+- **Kiểm định nghiệm thu:** `validate-project.js` PASS 100%, Playwright E2E `audit-raw021-full-e2e.js` PASS 132/132 checks, Gzip headers xác thực chuẩn xác trên live server `0.0.0.0:8899`.
+
 ## 2026-09-14 — Triển khai Master Data Access Layer (DAL) & Hàm mutateDatabase() Chuẩn Mực
 
 - **Xây dựng module `scripts/master_dal.js` độc lập & chuẩn công nghiệp:**

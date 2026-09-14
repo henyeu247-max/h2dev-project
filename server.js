@@ -129,6 +129,45 @@ const server = http.createServer(async (req,res)=>{
     sendJson(res, 405, {error:'Admin state writes are disabled'}, false, {'Allow': 'GET, HEAD, OPTIONS'});
     return;
   }
+  if (apiPath === '/api/intelligence/breakouts') {
+    if (req.method === 'GET' || isHead) {
+      try {
+        const { DatabaseSync } = require('node:sqlite');
+        const dbFile = path.join(ROOT, 'data', 'intelligence.db');
+        if (!fs.existsSync(dbFile)) {
+          sendJson(res, 200, { total: 0, channels: [] }, isHead);
+          return;
+        }
+        const db = new DatabaseSync(dbFile);
+        const rows = db.prepare('SELECT channel_id, handle, title, channel_age_days, median_views, top_outlier_multiplier, is_faceless, faceless_type, last_crawled_at FROM channels WHERE is_breakout = 1 ORDER BY median_views DESC LIMIT 30').all();
+        db.close();
+        sendJson(res, 200, { total: rows.length, channels: rows }, isHead);
+        return;
+      } catch (err) {
+        sendJson(res, 500, { error: err.message }, isHead);
+        return;
+      }
+    }
+    sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    return;
+  }
+  if (apiPath === '/api/intelligence/spider') {
+    if (req.method === 'GET' || isHead) {
+      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const seed = parsedUrl.searchParams.get('seed') || 'Q1tXposwAAo';
+      try {
+        const spider = require('./scripts/spider_graph_engine');
+        const report = await spider.executeSpiderGraphTraversal(seed, { maxHop2Videos: 2 });
+        sendJson(res, 200, report, isHead);
+        return;
+      } catch (err) {
+        sendJson(res, 500, { error: err.message }, isHead);
+        return;
+      }
+    }
+    sendJson(res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    return;
+  }
   if (req.method !== 'GET' && !isHead) {
     res.writeHead(405, {
       'Allow': 'GET, HEAD, OPTIONS',

@@ -1351,6 +1351,161 @@
   </div>`;
     }
 
+    function highlightQuery(text, query) {
+      if (!text || !query) return esc(text || '');
+      const cleanQ = query.trim();
+      if (!cleanQ) return esc(text);
+      const escapedQ = cleanQ.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(${escapedQ})`, 'gi');
+      const safeText = esc(text);
+      return safeText.replace(regex, '<mark class="bg-brand-500/35 text-brand-200 px-0.5 rounded font-bold">$1</mark>');
+    }
+
+    function buildRawSearchSuggestions(query) {
+      if (!query || !query.trim()) return [];
+      const q = query.trim().toLowerCase();
+      const records = window._rawKenhRecords || [];
+      const suggestions = [];
+      const seenKeys = new Set();
+
+      for (const r of records) {
+        const ch = r.channel || {};
+        const ocr = r.ocr || {};
+        const vision = r.visionAnalysis || {};
+        const chTitle = ch.title || vision.channelName || r.id;
+        const handle = ch.handle || vision.handle || '';
+        const rid = r.id || '';
+        const niche = r.editorialNiche || r.niche || '';
+        const demoVid = r.featuredDemoVideo || {};
+
+        // 1. Check Channel & Handle & RAW ID Match
+        const chKey = 'ch:' + rid;
+        if (!seenKeys.has(chKey)) {
+          if (chTitle.toLowerCase().includes(q) || handle.toLowerCase().includes(q) || rid.toLowerCase().includes(q)) {
+            seenKeys.add(chKey);
+            suggestions.push({
+              type: 'channel',
+              icon: '📺',
+              badge: rid,
+              badgeColor: 'bg-red-950/60 text-red-300 border-red-800/60',
+              title: chTitle,
+              sub: `${handle ? handle + ' · ' : ''}${niche}${ch.subscribers ? ' · ' + Number(ch.subscribers).toLocaleString() + ' subs' : ''}`,
+              searchTerm: chTitle,
+              rawId: rid,
+              priority: rid.toLowerCase() === q || chTitle.toLowerCase().startsWith(q) ? 100 : 80
+            });
+          }
+        }
+
+        // 2. Check Demo Video Match
+        if (demoVid.title && demoVid.title.toLowerCase().includes(q)) {
+          const vidKey = 'vid:' + (demoVid.videoId || demoVid.title);
+          if (!seenKeys.has(vidKey)) {
+            seenKeys.add(vidKey);
+            suggestions.push({
+              type: 'video',
+              icon: '🎬',
+              badge: 'Demo Tuyến',
+              badgeColor: 'bg-blue-950/60 text-blue-300 border-blue-800/60',
+              title: demoVid.title,
+              sub: `Kênh: ${chTitle} (${rid})${demoVid.views ? ' · ' + Number(demoVid.views).toLocaleString() + ' views' : ''}`,
+              searchTerm: demoVid.title,
+              rawId: rid,
+              priority: 90
+            });
+          }
+        }
+
+        // 3. Check OCR Video Rows & Vision Titles
+        const ocrRows = (ocr && Array.isArray(ocr.videoRows)) ? ocr.videoRows : [];
+        for (const row of ocrRows) {
+          if (row.title && row.title.toLowerCase().includes(q)) {
+            const vidKey = 'vid:' + row.title;
+            if (!seenKeys.has(vidKey)) {
+              seenKeys.add(vidKey);
+              suggestions.push({
+                type: 'video',
+                icon: '🎬',
+                badge: row.viewsText || 'Video Raw',
+                badgeColor: 'bg-emerald-950/60 text-emerald-300 border-emerald-800/60',
+                title: row.title,
+                sub: `Kênh: ${chTitle} (${rid}) · ${niche}`,
+                searchTerm: row.title,
+                rawId: rid,
+                priority: 70
+              });
+            }
+          }
+        }
+
+        // 4. Check Niche Match
+        if (niche && niche.toLowerCase().includes(q)) {
+          const nKey = 'niche:' + niche;
+          if (!seenKeys.has(nKey)) {
+            seenKeys.add(nKey);
+            suggestions.push({
+              type: 'niche',
+              icon: '🏷️',
+              badge: 'Ngách',
+              badgeColor: 'bg-purple-950/60 text-purple-300 border-purple-800/60',
+              title: niche,
+              sub: 'Lọc toàn bộ kênh mẫu thuộc ngách này',
+              searchTerm: niche,
+              rawId: null,
+              priority: 60
+            });
+          }
+        }
+      }
+
+      return suggestions.sort((a, b) => b.priority - a.priority).slice(0, 7);
+    }
+
+    window.showRawSearchSuggestions = function(inputVal) {
+      const box = document.getElementById('raw-search-suggestions');
+      if (!box) return;
+      const q = (inputVal || '').trim();
+      if (!q) {
+        box.innerHTML = '';
+        box.classList.add('hidden');
+        return;
+      }
+
+      const items = buildRawSearchSuggestions(q);
+      if (items.length === 0) {
+        box.innerHTML = `
+          <div class="p-3 text-xs text-gray-400 flex items-center justify-between">
+            <span>Không tìm thấy gợi ý khớp với "<strong>${esc(q)}</strong>"</span>
+            <span class="text-[10px] text-gray-500 font-mono">Gõ tiếp hoặc nhấn Reset</span>
+          </div>`;
+        box.classList.remove('hidden');
+        return;
+      }
+
+      box.innerHTML = `
+        <div class="px-3.5 py-2 bg-[#060910] text-[10.5px] font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
+          <span class="flex items-center gap-1.5"><span class="text-brand-400">⚡</span> Gợi ý khớp kênh & video raw (${items.length})</span>
+          <span class="text-gray-500 font-normal">Nhấp để chọn hoặc xem hồ sơ</span>
+        </div>
+        ${items.map((item, idx) => `
+          <div class="js-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-raw-id="${esc(item.rawId || '')}" data-type="${esc(item.type)}">
+            <div class="flex items-center gap-2.5 min-w-0">
+              <span class="text-base shrink-0">${item.icon}</span>
+              <div class="min-w-0">
+                <div class="text-xs font-bold text-white truncate group-hover:text-brand-300 transition-colors">${highlightQuery(item.title, q)}</div>
+                <div class="text-[11px] text-gray-400 truncate">${esc(item.sub)}</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+              <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded border ${item.badgeColor}">${esc(item.badge)}</span>
+              ${item.rawId ? `<button type="button" class="js-sug-open-modal text-[10px] bg-brand-600/80 hover:bg-brand-500 text-white font-bold px-2 py-0.5 rounded transition shadow" data-raw-id="${esc(item.rawId)}" title="Mở trực tiếp hồ sơ kênh">Mở ↗</button>` : ''}
+            </div>
+          </div>
+        `).join('')}
+      `;
+      box.classList.remove('hidden');
+    };
+
     async function renderRawKenh() {
       let rawData;
       try {
@@ -1402,7 +1557,13 @@
         if (state.rawVitality === 'risk' && vA.healthStatus !== 'DORMANT_LONG' && vA.healthStatus !== 'DEAD_OR_PURGED' && vA.monetizationStatus !== 'MONETIZED_AT_RISK') return false;
         if (state.rawVitality === 'ypp' && vA.monetizationStatus !== 'MONETIZED_ACTIVE' && vA.monetizationStatus !== 'MONETIZED') return false;
         const rid = (r.id || '').toLowerCase();
-        if (q && !title.includes(q) && !handle.includes(q) && !fname.includes(q) && !n.includes(q) && !rid.includes(q) && !lName.includes(q) && !lCode.includes(q)) return false;
+        const demoVidTitle = (r.featuredDemoVideo && r.featuredDemoVideo.title ? r.featuredDemoVideo.title : '').toLowerCase();
+        const otherVidTitles = [
+          ...(r.visionAnalysis && r.visionAnalysis.videoTitles ? r.visionAnalysis.videoTitles : []),
+          ...(r.ocr && Array.isArray(r.ocr.videoRows) ? r.ocr.videoRows.map(row => row.title || '') : [])
+        ].join(' ').toLowerCase();
+
+        if (q && !title.includes(q) && !handle.includes(q) && !fname.includes(q) && !n.includes(q) && !rid.includes(q) && !lName.includes(q) && !lCode.includes(q) && !demoVidTitle.includes(q) && !otherVidTitles.includes(q)) return false;
         return true;
       });
 
@@ -1429,10 +1590,14 @@
       </div>
     </div>
   </div>
-  <div class="card p-4 sm:p-5 mb-5">
-    <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+  <div class="card p-4 sm:p-5 mb-5 overflow-visible">
+    <div class="flex flex-col sm:flex-row gap-3 sm:items-center relative">
       <label class="sr-only" for="fq">Tìm ảnh raw</label>
-      <input id="fq" value="${esc(state.rawQ)}" placeholder="Tìm theo tên kênh, handle, ngách, tên file..." class="search-input-premium w-full sm:flex-1 min-w-0" aria-label="Tìm ảnh raw kênh mẫu">
+      <div class="relative w-full sm:flex-1 min-w-0" id="raw-search-wrap">
+        <input id="fq" value="${esc(state.rawQ)}" autocomplete="off" placeholder="Tìm theo tên kênh, handle, ngách, video bão view, tên file..." class="search-input-premium w-full min-w-0 pr-9" aria-label="Tìm ảnh raw kênh mẫu">
+        ${state.rawQ ? `<button type="button" id="btn-clear-raw-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition z-10" title="Xóa tìm kiếm">✕</button>` : ''}
+        <div id="raw-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 bg-[#0b0f19]/95 border border-[#334155] rounded-2xl shadow-2xl z-50 overflow-hidden backdrop-blur-xl max-h-[380px] overflow-y-auto divide-y divide-[#1e293b]/80"></div>
+      </div>
       <button type="button" id="freset-raw" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
     </div>
     <div class="mt-4 pt-3 border-t border-hairline">
@@ -1789,18 +1954,119 @@
   </section>`;
     }
 
+    let searchDebounceTimer = null;
+    let isRawSearchNavigating = false;
+
     function bindSearch() {
       const fq = document.getElementById('fq');
       if (fq) {
         fq.oninput = () => {
-          if (state.tab === 'kichban') state.promptQ = fq.value;
-          else if (state.tab === 'nguonreup') state.reupQ = fq.value;
-          else if (state.tab === 'kenh') state.kenhQ = fq.value;
-          else if (state.tab === 'rawkenh') state.rawQ = fq.value;
-          else state.q = fq.value;
+          const val = fq.value;
+          if (state.tab === 'kichban') state.promptQ = val;
+          else if (state.tab === 'nguonreup') state.reupQ = val;
+          else if (state.tab === 'kenh') state.kenhQ = val;
+          else if (state.tab === 'rawkenh') state.rawQ = val;
+          else state.q = val;
+
+          // Real-time live suggestions for rawkenh tab
+          if (state.tab === 'rawkenh' && window.showRawSearchSuggestions) {
+            window.showRawSearchSuggestions(val);
+          }
+
+          clearTimeout(searchDebounceTimer);
+          searchDebounceTimer = setTimeout(() => {
+            render();
+          }, 200);
+        };
+
+        fq.onfocus = () => {
+          if (state.tab === 'rawkenh' && fq.value.trim() && window.showRawSearchSuggestions) {
+            window.showRawSearchSuggestions(fq.value);
+          }
+        };
+
+        let activeSugIdx = -1;
+        fq.onkeydown = (e) => {
+          const box = document.getElementById('raw-search-suggestions');
+          if (!box || box.classList.contains('hidden')) return;
+          const rows = box.querySelectorAll('.js-sug-row');
+          if (!rows.length) return;
+
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            activeSugIdx = (activeSugIdx + 1) % rows.length;
+            rows.forEach((r, i) => r.classList.toggle('bg-[#1e293b]', i === activeSugIdx));
+          } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            activeSugIdx = (activeSugIdx - 1 + rows.length) % rows.length;
+            rows.forEach((r, i) => r.classList.toggle('bg-[#1e293b]', i === activeSugIdx));
+          } else if (e.key === 'Enter') {
+            if (activeSugIdx >= 0 && activeSugIdx < rows.length) {
+              e.preventDefault();
+              rows[activeSugIdx].click();
+            } else {
+              box.classList.add('hidden');
+            }
+          } else if (e.key === 'Escape') {
+            box.classList.add('hidden');
+          }
+        };
+      }
+
+      const btnClearRawQ = document.getElementById('btn-clear-raw-q');
+      if (btnClearRawQ) {
+        btnClearRawQ.onclick = (e) => {
+          e.stopPropagation();
+          state.rawQ = '';
+          const fqEl = document.getElementById('fq');
+          if (fqEl) { fqEl.value = ''; fqEl.focus(); }
+          const box = document.getElementById('raw-search-suggestions');
+          if (box) box.classList.add('hidden');
           render();
         };
       }
+
+      const sugBox = document.getElementById('raw-search-suggestions');
+      if (sugBox) {
+        sugBox.onclick = (e) => {
+          const openModalBtn = e.target.closest('.js-sug-open-modal');
+          if (openModalBtn) {
+            e.stopPropagation();
+            const rid = openModalBtn.getAttribute('data-raw-id');
+            sugBox.classList.add('hidden');
+            if (window.openRawDeepModal && rid) window.openRawDeepModal(rid);
+            return;
+          }
+
+          const row = e.target.closest('.js-sug-row');
+          if (row) {
+            e.stopPropagation();
+            const term = row.getAttribute('data-term');
+            const type = row.getAttribute('data-type');
+            sugBox.classList.add('hidden');
+            if (type === 'niche') {
+              state.rawNiche = term;
+              state.rawQ = '';
+            } else {
+              state.rawQ = term;
+            }
+            render();
+          }
+        };
+      }
+
+      // Outside click listener to dismiss suggestion dropdown
+      if (!window._rawSearchOutsideBound) {
+        window._rawSearchOutsideBound = true;
+        document.addEventListener('click', (e) => {
+          const box = document.getElementById('raw-search-suggestions');
+          const fqEl = document.getElementById('fq');
+          if (box && !box.contains(e.target) && e.target !== fqEl) {
+            box.classList.add('hidden');
+          }
+        });
+      }
+
       document.querySelectorAll('[data-kind]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
         btn.onclick = () => { state.kindFilter = btn.getAttribute('data-kind') || ''; render(); };
@@ -1847,7 +2113,13 @@
       });
       const fq_nx = document.getElementById('fq-nx');
       if (fq_nx) {
-        fq_nx.oninput = () => { state.nxQ = fq_nx.value; render(); };
+        fq_nx.oninput = () => {
+          state.nxQ = fq_nx.value;
+          clearTimeout(searchDebounceTimer);
+          searchDebounceTimer = setTimeout(() => {
+            render();
+          }, 200);
+        };
       }
       document.querySelectorAll('[data-nx-tier]').forEach(btn => {
         btn.onclick = () => { state.nxTier = btn.getAttribute('data-nx-tier') || ''; render(); };
@@ -1868,6 +2140,18 @@
     async function render() {
       const el = document.getElementById('content');
       el.setAttribute('aria-busy', 'true');
+
+      // 1. Capture active input & cursor position before re-render
+      const activeEl = document.activeElement;
+      const activeId = activeEl ? activeEl.id : null;
+      let selStart = null, selEnd = null;
+      if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA')) {
+        try {
+          selStart = activeEl.selectionStart;
+          selEnd = activeEl.selectionEnd;
+        } catch (e) {}
+      }
+
       try {
         let html = '';
         switch (state.tab) {
@@ -1890,6 +2174,17 @@
         document.getElementById('panel-root').setAttribute('aria-labelledby', `tab-${state.tab}`);
         bindSearch();
         bindNicheActions();
+
+        // 2. Restore active input focus and cursor position after re-render
+        if (activeId) {
+          const restored = document.getElementById(activeId);
+          if (restored && (restored.tagName === 'INPUT' || restored.tagName === 'TEXTAREA')) {
+            restored.focus();
+            if (selStart !== null && selEnd !== null) {
+              try { restored.setSelectionRange(selStart, selEnd); } catch (e) {}
+            }
+          }
+        }
         document.querySelectorAll('[data-check-id]').forEach(box => {
           box.onchange = () => { saveCheck(box.getAttribute('data-check-id'), box.checked); box.setAttribute('aria-checked', box.checked ? 'true' : 'false'); };
         });

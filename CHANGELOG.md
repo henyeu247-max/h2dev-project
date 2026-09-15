@@ -1,3 +1,48 @@
+## 2026-09-16 — Benchmark Model 9Router LOCAL: Chọn Model Cho Từng Công Việc (Vision Batch + Text)
+
+### 🎯 Bối cảnh
+User xác nhận VPS API đang dừng/chậm → chuyển test **9Router LOCAL `http://127.0.0.1:20128`** (PID 26872 LIVE, 569 model). Yêu cầu: so sánh `qd/qoder/dfmodel` (route thật của Combo-Gemini-3.7-flash) vs `cbcn/cbai deepseek-v4.1-flash` + test model "không suy nghĩ" + gọi đồng thời nhiều luồng.
+
+### 🧪 Phát hiện route map thật (đọc DB `9router\data.sqlite`, KHÔNG đoán)
+| Combo | Route thật |
+|---|---|
+| Combo-Gemini-3.7-flash | `qd/qoder/dfmodel` (thinkingFormat=deepseek) |
+| Combo-Gemini-3.6-flash | `cbai/deepseek-v4.1-flash` |
+| Combo-Gemini-3.8-flash | ❌ LỖI "No active credentials for provider: openai" |
+
+### 📊 Benchmark Vision (13 thumbnail: 10 hoạt hình + 3 người thật, ground truth tự đọc)
+
+**Head-to-head anh yêu cầu (max_tokens=1200):**
+| Model | PASS | ERR | avg total |
+|---|---|---|---|
+| `qd/qoder/dfmodel` | 11/13 | 1 | 6.87s |
+| `cbcn/deepseek-v4.1-flash` | **12/13** | 1 | **5.72s** |
+| `cbai/deepseek-v4.1-flash` | 12/13 | 0 | 7.95s |
+
+**Đa luồng 13 lanes (batch đồng thời):**
+| Model | OK | JSON | WALL | Hiệu dụng |
+|---|---|---|---|---|
+| `Combo-Gemini-3.7-flash` | 13/13 | 13/13 | 2.0-6.4s | **0.15-0.50s/ảnh** (ổn định 3 lần lặp) |
+| `ag/gemini-3.7-flash-low` | 13/13 | 13/13 | 3.9-6.0s | **0.30-0.46s/ảnh** (ổn định 2 lần lặp) |
+| `ag/gemini-3.7-flash-medium` | 13/13 | 13/13 | 3.8s | 0.29s/ảnh |
+| `gh/gpt-4.1` | 13/13 | 13/13 | 33.6s | 2.58s/ảnh (tail latency) |
+| `gemini/gemini-3.5-flash-lite` | ❌ 429 | — | — | Rate limit từ 4 lanes |
+
+### 🧠 Tắt suy nghĩ (đo thật)
+- `reasoning_effort: minimal` → 16.69s baseline xuống **2.02s**; `/no_think` → **1.53s**
+- `thinking:{type:disabled}` **không có hiệu lực** với DeepSeek (vẫn 227 reasoning tokens)
+- `gh/gpt-4.1`/`gpt-4o` tự nhiên không suy nghĩ (`reasoning:false` trong capabilities)
+- ⚠️ **Bài học:** `max_tokens:400` gây JSON-FAIL hàng loạt (reasoning ăn 357 tokens) → luôn cấp ≥900 cho model reasoning.
+
+### ✍️ Tốc độ sinh văn bản
+- `ag/gemini-3.7-flash-high`: **180.9 tok/s** (cần max_tokens ≥2000)
+- `Combo-Claude-Opus-4.6` (→claude-opus-4.8): 57.0 tok/s, TTFT 2.17s
+- `cbcn/deepseek-v4-pro`: 17.5 tok/s
+
+### 📋 Deliverables
+- `knowledge-hub/docs/QUYET-DINH-MODEL-9ROUTER-LOCAL.md` — bảng nhận định model nào cho việc nào
+- `_archive/20260916-model-benchmark/` — bằng chứng thô (13 thumbnail + 8 script bench + JSON kết quả)
+
 ## 2026-09-16 — Fix Bug Videos=0 (Spider Graph) + Triển Khai GPU Vision SCRFD Thực Đo Trên RTX 4060
 
 ### 🐛 Bug Fix: `videos` table = 0 rows (Spider Graph Engine)

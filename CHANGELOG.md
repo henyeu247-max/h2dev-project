@@ -1,3 +1,10 @@
+## 2026-09-16 — RAW-124 Live VPS E2E Check-Pass 12/12 + Harden audit-raw-124-e2e.js
+
+- Chạy Playwright E2E đối `https://h2dev-learn.tonymmo.com/rawkenh`: **12/12 PASS**.
+- Sửa false-fail: image GET timeout 30s trên PNG lớn (HTTP 200) → HEAD/GET timeout 90s + concurrency 6.
+- Sửa selector search: `#raw-search-input` → `#fq` (input live thực tế).
+- Proof: `docs/proof-raw124-full-audit.json` (base VPS) + `docs/proof-raw124-full-audit.png`.
+
 ## 2026-09-16 — Check-Pass MCP Web Fair + Cập Nhật HUONG-DAN-MCP-CHUAN.md
 
 - Benchmark công bằng thêm Keenable / YDC / TinyFish / Firecrawl map / Tavily map-crawl / Exa alias / context-dev (proof: `_audit/mcp-web-fair-*.json`, `_audit/mcp-web-bench-*.json`, `_audit/mcp-bench-*.json`).

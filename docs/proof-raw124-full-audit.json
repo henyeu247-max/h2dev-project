@@ -1,5 +1,6 @@
 {
-  "base": "http://127.0.0.1:8899",
+  "base": "https://h2dev-learn.tonymmo.com",
+  "startedAt": "2026-09-15T18:23:44.383Z",
   "checks": [
     {
       "name": "Raw Channels Cards Count",
@@ -42,6 +43,11 @@
       "detail": "Preview: RAW-136"
     },
     {
+      "name": "Search Filter on New Channel @OverengineeredEN",
+      "pass": true,
+      "detail": "Found 1 matching cards"
+    },
+    {
       "name": "Zero Console Errors",
       "pass": true,
       "detail": "Errors: 0"
@@ -58,5 +64,8 @@
     }
   ],
   "consoleErrors": [],
-  "failedRequests": []
+  "failedRequests": [],
+  "finishedAt": "2026-09-15T18:23:55.903Z",
+  "passCount": 12,
+  "totalChecks": 12
 }

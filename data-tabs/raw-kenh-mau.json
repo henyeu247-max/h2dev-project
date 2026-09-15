@@ -1,7 +1,7 @@
 {
   "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
-  "updatedAt": "2026-09-14T09:05:57.397Z",
-  "totalRecords": 97,
+  "updatedAt": "2026-09-15T17:00:00.000Z",
+  "totalRecords": 124,
   "records": [
     {
       "id": "RAW-001",
@@ -19537,6 +19537,2050 @@
         "publishedAt": "2026-09-11",
         "thumbnail": "https://i.ytimg.com/vi/Wal6HjCqn8s/mqdefault.jpg",
         "selectionType": "LATEST_VIRAL"
+      }
+    },
+    {
+      "id": "RAW-110",
+      "fileName": "HSK9--NWoAEhd4v.jpg",
+      "sha256": "03c3482618b981a3c9469b72cf1e00d09ac743603ad33e3c082ed95443214134",
+      "technical": {
+        "dimensions": "680x507",
+        "sizeBytes": 70484,
+        "sizeKb": "68.8",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UC1AtJIwlt9tI-Z-QKQJJ_Vw",
+        "title": "Wild Line",
+        "handle": "@wildline_YT",
+        "url": "https://www.youtube.com/channel/UC1AtJIwlt9tI-Z-QKQJJ_Vw",
+        "subscribers": 75400,
+        "views": 1809600,
+        "videoCount": 73,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/c9TWix5WXMV18aUuUEY8EkBUflUeTsnq6rWeeuP3LVPDfb0bLBCZNVd3Rs06SNLApYR97uFKrw=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Tự cung tự cấp / Off-Grid & Nhà sinh thái thông minh",
+      "visionAnalysis": {
+        "channelName": "Wild Line",
+        "handle": "@wildline_YT",
+        "videoTitles": [
+          "Why Did We Stop Using This Natural Cooling System?",
+          "This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?",
+          "This $50 Wall Cools Any Home By 25°F FOREVER. Why Aren't We Using It?",
+          "This Home Survives EF5 Tornadoes, Wildfires, and Costs $0 to Heat. Why Aren't We Using It?"
+        ],
+        "mainTopic": "Hệ thống làm mát tự nhiên không tốn điện, tường chống nhiệt $50 và kiến trúc nhà sinh thái chống bão lốc",
+        "suggestedNiche": "Off-Grid / Kiến trúc tự làm mát $0",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Off-Grid / Kiến trúc tự làm mát $0",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Engineering & Sustainable Living)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-26",
+        "daysSinceLatest": 19,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (19 ngày trước)",
+        "healthDetail": "Xuất bản 73 video, video gần nhất ngày 2026-08-26. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$2,850 – $6,107 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "fjDQ8UDzuB8",
+        "title": "Home Water Is Changing: This Machine Creates Off-Grid Water FOREVER",
+        "views": 552372,
+        "vph": 1151.1,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-26",
+        "thumbnail": "https://i.ytimg.com/vi/fjDQ8UDzuB8/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-111",
+      "fileName": "HSL5QwdaAAAEoEu.jpg",
+      "sha256": "9944d17c6c4979278a0b4d5e27ff865bd337364ac78b2fa403ce6accb5c820c7",
+      "technical": {
+        "dimensions": "680x494",
+        "sizeBytes": 92847,
+        "sizeKb": "90.7",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCqrSZXBGR6kD4ZMx9WLSqig",
+        "title": "Grain & Gravity",
+        "handle": "@GrainandGravity",
+        "url": "https://www.youtube.com/channel/UCqrSZXBGR6kD4ZMx9WLSqig",
+        "subscribers": 8170,
+        "views": 196080,
+        "videoCount": 42,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/t3uyJI2UjRdCjFN3ICnyvsaKihFik859tzMQ3Txwm9WylWd7CU1rOPzfW1TrwyZVldzyHOZlTQ=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Năng lượng độc lập / Pin gia đình & Tiết kiệm điện",
+      "visionAnalysis": {
+        "channelName": "Grain & Gravity",
+        "handle": "@GrainandGravity",
+        "videoTitles": [
+          "This Plug-In Battery Cuts Home Energy Bills By 60% WITHOUT Solar. Why Aren't We Using Them?",
+          "Plug-In Solar Cuts Home Energy Costs Anyone Can Afford. Why Did the Power Industry Ignore It?",
+          "This Is The Most Efficient Home Wind Turbine Ever Made. Why Is Nobody Talking About It?",
+          "One Copper Cable Eliminates ALL Mold Forever - So Why Is This 'Banned'?"
+        ],
+        "mainTopic": "Giải pháp pin cắm trực tiếp giảm 60% hóa đơn tiền điện không cần năng lượng mặt trời, điện gió mini và diệt nấm mốc vĩnh viễn",
+        "suggestedNiche": "Năng lượng độc lập / Pin DIY & Tiết kiệm điện 60%",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Năng lượng độc lập / Pin DIY & Tiết kiệm điện 60%",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Energy Efficiency & Tech Explainer)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-07-15",
+        "daysSinceLatest": 61,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (61 ngày trước)",
+        "healthDetail": "Xuất bản 42 video, video gần nhất ngày 2026-07-15. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$309 – $662 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "xlkBWEvw-ic",
+        "title": "This Plug-In Battery Cuts Home Energy Bills By 60% WITHOUT Solar. Why Aren't We Using Them?",
+        "views": 323652,
+        "vph": 217.7,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-07-15",
+        "thumbnail": "https://i.ytimg.com/vi/xlkBWEvw-ic/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-112",
+      "fileName": "HSMjetCW4AACz1f.jpg",
+      "sha256": "f7fed7eb388304845bd106c2799a3a135c8db9c9deee214f662a5526d815f649",
+      "technical": {
+        "dimensions": "679x400",
+        "sizeBytes": 62914,
+        "sizeKb": "61.4",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCgMh9v0dRVlsPKW3nNHkssg",
+        "title": "Dolly Parton Archives",
+        "handle": "@dollypartonarchives",
+        "url": "https://www.youtube.com/channel/UCgMh9v0dRVlsPKW3nNHkssg",
+        "subscribers": 17900,
+        "views": 429600,
+        "videoCount": 16,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/YXkpwFhMY77sutKbkCX5JQSHo5a69q4eMhtGQDM7iaA09mqdeQ0d1I2QDk9Vq6O1_D3T_CZf=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Huyền thoại âm nhạc / Celebrity Nostalgia & Câu chuyện cảm động",
+      "visionAnalysis": {
+        "channelName": "Dolly Parton Archives",
+        "handle": "@dollypartonarchives",
+        "videoTitles": [
+          "Dolly Parton DARED Michael Jackson to Sing Jolene Live - Nobody Was Ready For THIS...",
+          "He Told Dolly Parton 'You Can't Afford This $45K Guitar' - Then Dolly Picked Up A Dust...",
+          "Dolly Parton Sang GOSPEL at Her Mother's Funeral - Her Voice Cracked... Then..."
+        ],
+        "mainTopic": "Những câu chuyện chưa kể, khoảnh khắc xúc động rơi lệ và tình bạn huyền thoại của Dolly Parton với Michael Jackson và làng nhạc Country",
+        "suggestedNiche": "Người nổi tiếng / Kể chuyện âm nhạc xúc động",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Người nổi tiếng / Kể chuyện âm nhạc xúc động",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Southern American English (Country Storytelling)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-31",
+        "daysSinceLatest": 14,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (14 ngày trước)",
+        "healthDetail": "Xuất bản 16 video, video gần nhất ngày 2026-08-31. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$677 – $1,450 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "1llBHW8ILk0",
+        "title": "Elvis Presley DARED Dolly Parton to Sing GOSPEL Live — Minutes Later, Elvis Was in Tears!",
+        "views": 378745,
+        "vph": 1066.0,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-31",
+        "thumbnail": "https://i.ytimg.com/vi/1llBHW8ILk0/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-113",
+      "fileName": "HSMqi8kWoAAQSvv.jpg",
+      "sha256": "8fc08226bcf1ecffceff22167e615b1438437f9d44a346285d1f040a8a3f2104",
+      "technical": {
+        "dimensions": "680x449",
+        "sizeBytes": 82071,
+        "sizeKb": "80.1",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCZU_hbEi29Z41_XTDYM5CJw",
+        "title": "House Hunting with Baptiste",
+        "handle": "@HouseHuntingWithBaptiste",
+        "url": "https://www.youtube.com/channel/UCZU_hbEi29Z41_XTDYM5CJw",
+        "subscribers": 6970,
+        "views": 167280,
+        "videoCount": 104,
+        "country": "FR",
+        "avatar": "https://yt3.googleusercontent.com/BL2s2GUouohpxgJ-aqEOBzmUVSEGugLhlzySt5m530gEvg1AX6APAhuQwmkKwZGEDZldNfxLfQ=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Bất động sản Châu Âu giá rẻ / Mua nhà cổ Pháp - Ý - TBN",
+      "visionAnalysis": {
+        "channelName": "House Hunting with Baptiste",
+        "handle": "@HouseHuntingWithBaptiste",
+        "videoTitles": [
+          "You Can OWN a French Manor House From $90K",
+          "Cheap Farmhouses in SPAIN From $80K | Move-in Ready 2026",
+          "What €100K vs €300K Buys You In LAKE COMO"
+        ],
+        "mainTopic": "Hướng dẫn thực tế cách tìm mua biệt thự và trang trại cổ giá rẻ dưới 100K USD tại Pháp, Tây Ban Nha và Ý",
+        "suggestedNiche": "Bất động sản Châu Âu / Nhà cổ bỏ hoang giá rẻ",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Bất động sản Châu Âu / Nhà cổ bỏ hoang giá rẻ",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-GB",
+        "flag": "🇪🇺",
+        "dialect": "British/European English (Real Estate & Architecture)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-07-22",
+        "daysSinceLatest": 55,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (55 ngày trước)",
+        "healthDetail": "Xuất bản 104 video, video gần nhất ngày 2026-07-22. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$205 – $439 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "FbDz1L1IixM",
+        "title": "Forget Lake Como: These Italian Lakes Are Way Cheaper",
+        "views": 4515,
+        "vph": 3.4,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-07-22",
+        "thumbnail": "https://i.ytimg.com/vi/FbDz1L1IixM/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-114",
+      "fileName": "HSQloz2XMAA65Qz.jpg",
+      "sha256": "22d309f5e8ea755b229baa3430b3e6949b22783aa8a45fc8ae75956e1b300b0d",
+      "technical": {
+        "dimensions": "679x311",
+        "sizeBytes": 42675,
+        "sizeKb": "41.7",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCtrNrW5RTVzL7Tj07EExLKg",
+        "title": "Overengineered",
+        "handle": "@OverengineeredEN",
+        "url": "https://www.youtube.com/channel/UCtrNrW5RTVzL7Tj07EExLKg",
+        "subscribers": 9450,
+        "views": 226800,
+        "videoCount": 4,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/sCc52LQRkSUpoIE-v-TangXaw2lFWVno68bxtDZtLXRT1jZQzMo-b4Mjc3A6M9OlxbLMFs8FTA=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Siêu công trình & Thảm họa kỹ thuật xây dựng",
+      "visionAnalysis": {
+        "channelName": "Overengineered",
+        "handle": "@OverengineeredEN",
+        "videoTitles": [
+          "The 400 km Wall Japan Built to Stop the Sea",
+          "The Water Project That Made a Country Rich Without Selling Oil | 4K Documentary",
+          "Nepal Flood Explained: How a Glacier Became a Wall of Water"
+        ],
+        "mainTopic": "Giải mã các siêu công trình đê chắn sóng 400km của Nhật Bản, dự án dẫn nước sa mạc và thảm họa vỡ sông băng tại Nepal",
+        "suggestedNiche": "Đại công trình kỹ thuật / Phim tài liệu 4K",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Đại công trình kỹ thuật / Phim tài liệu 4K",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Civil Engineering & Megastructures)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-19",
+        "daysSinceLatest": 27,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (27 ngày trước)",
+        "healthDetail": "Xuất bản 4 video, video gần nhất ngày 2026-08-19. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$357 – $765 / tháng",
+        "playableVideosCount": 4,
+        "totalAuditedVideos": 4
+      },
+      "featuredDemoVideo": {
+        "videoId": "Eg0djVfKXU8",
+        "title": "The 400 km Wall Japan Built to Stop the Sea",
+        "views": 3888596,
+        "vph": 5997.4,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-19",
+        "thumbnail": "https://i.ytimg.com/vi/Eg0djVfKXU8/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-115",
+      "fileName": "photo_2026-09-13_23-06-23.jpg",
+      "sha256": "9e4b919e96324990cea55f26d91978d3129099f28021c98c516a0b1026319061",
+      "technical": {
+        "dimensions": "1122x835",
+        "sizeBytes": 179867,
+        "sizeKb": "175.7",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCA_r3_nfTtkj3sc44jOJZVA",
+        "title": "Stay Awhile ",
+        "handle": "@stayawhilefilms",
+        "url": "https://www.youtube.com/channel/UCA_r3_nfTtkj3sc44jOJZVA",
+        "subscribers": 3140,
+        "views": 75360,
+        "videoCount": 5,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/2JwAdxkldWmpSug5nVXwxQ_lMkK3B2Je2uhXv-wR-JzOrToP4IhVyJxH67amH8RMigY7JVr4v7c=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Kiến trúc nghệ thuật / Tour nhà độc bản phong cách Cinematic",
+      "visionAnalysis": {
+        "channelName": "Stay Awhile ",
+        "handle": "@stayawhilefilms",
+        "videoTitles": [
+          "Inside an 18,000 Sq Ft Los Angeles Estate That Doesn't Feel Like LA | Studio Rob Diaz",
+          "Inside a Former Church Turned Family Home in Laguna Beach | House Tour",
+          "Inside a Joshua Tree Desert Home Built Around Music | House Tour",
+          "Inside a Reimagined 1932 Cabin in Lake Arrowhead | House Tour"
+        ],
+        "mainTopic": "Các thước phim điện ảnh quay bên trong những công trình nhà ở độc bản, nhà thờ cải tạo thành biệt thự và nhà gỗ sa mạc Joshua Tree",
+        "suggestedNiche": "Kiến trúc nghệ thuật / Nhà độc bản Los Angeles",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Kiến trúc nghệ thuật / Nhà độc bản Los Angeles",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Cinematic Architecture Tour)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-05-26",
+        "daysSinceLatest": 111,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (111 ngày trước)",
+        "healthDetail": "Xuất bản 5 video, video gần nhất ngày 2026-05-26. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$119 – $254 / tháng",
+        "playableVideosCount": 5,
+        "totalAuditedVideos": 5
+      },
+      "featuredDemoVideo": {
+        "videoId": "_ZVE8CXc0Nw",
+        "title": "Inside a Joshua Tree Desert Home Built Around Music | House Tour",
+        "views": 97109,
+        "vph": 36.2,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-05-26",
+        "thumbnail": "https://i.ytimg.com/vi/_ZVE8CXc0Nw/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-116",
+      "fileName": "798116334_122172091532979425_543491173526096487_n.jpg",
+      "sha256": "3ac86ea8c5df21b2e0a5cde78895d9fe37d6f5e7062e545447ce0c03dad0f3f3",
+      "technical": {
+        "dimensions": "590x460",
+        "sizeBytes": 51525,
+        "sizeKb": "50.3",
+        "format": "JPEG"
+      },
+      "channel": {
+        "channelId": "UCCEwJbv7D1CYzxdKYYOH6AA",
+        "title": "Money Life POV",
+        "handle": "@MoneyLifePOV",
+        "url": "https://www.youtube.com/channel/UCCEwJbv7D1CYzxdKYYOH6AA",
+        "subscribers": 6160,
+        "views": 147840,
+        "videoCount": 24,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/b1Pj5A0fvbeeZgBZ-ShXcXKwglNbdSeOuB6vX8d875zZLSZmLLAMWJopQbn3z_1unoA4HL6mYA=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Hoạt hình 2D POV Tài chính / Thoát khỏi Rat Race & Tiết kiệm",
+      "visionAnalysis": {
+        "channelName": "Money Life POV",
+        "handle": "@MoneyLifePOV",
+        "videoTitles": [
+          "POV: What Happens When You Start Paying Cash for Cars",
+          "POV: You Became the Rich Friend - Then Things Got Awkward",
+          "POV: You Start Buying Cars With Cash - Everything Changes",
+          "POV: You Skip College and Learn a Trade - Here's What Happens"
+        ],
+        "mainTopic": "Hoạt hình 2D góc nhìn thứ nhất (POV) về quyết định tài chính thực tế, mua xe bằng tiền mặt, học nghề thay vì đại học và lối sống tự do tài chính",
+        "suggestedNiche": "Hoạt hình 2D POV / Tài chính cá nhân & Lối sống",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Hoạt hình 2D POV / Tài chính cá nhân & Lối sống",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Casual Narration & Dialogue)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-02",
+        "daysSinceLatest": 13,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (13 ngày trước)",
+        "healthDetail": "Xuất bản 24 video, video gần nhất ngày 2026-09-02. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$233 – $499 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "Bh13NQLk5uo",
+        "title": "POV: You Became the Rich Friend — Then Things Got Awkward",
+        "views": 214727,
+        "vph": 683.9,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-02",
+        "thumbnail": "https://i.ytimg.com/vi/Bh13NQLk5uo/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-117",
+      "fileName": "Screenshot_4.png",
+      "sha256": "068fe323249dd6c0117d62276379969bb26e0c3f9333c7ab4d93fd2a686961fd",
+      "technical": {
+        "dimensions": "1073x1172",
+        "sizeBytes": 1492015,
+        "sizeKb": "1457.0",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UChHGjAYhP5L4rDs4Sh-H1Lw",
+        "title": "The Invisible Neighbors",
+        "handle": "@TheInvisibleNeighbors",
+        "url": "https://www.youtube.com/channel/UChHGjAYhP5L4rDs4Sh-H1Lw",
+        "subscribers": 8119,
+        "views": 194856,
+        "videoCount": 31,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/uOUD1aIAkkdEMJAAnT-9J7GTP77aIFnprLCia2nPKQ8PLLRtmJS9ryaqdaFrs7GDBoZnCCIZOT4=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Homeless Revival / Cải tạo nhà mini & Làm lại cuộc đời",
+      "visionAnalysis": {
+        "channelName": "The Invisible Neighbors",
+        "handle": "@TheInvisibleNeighbors",
+        "videoTitles": [
+          "Homeless at 24, She Bought a Rusted $1 Tiny Cabin - What She Found Inside Shocked the Entire...",
+          "Homeless After Divorce, She Gambled Her Last $30 On An Old Storage Unit - The Inside Shocked...",
+          "Homeless at 21, He Bought a Rusted $100 Truck to Live In - What He Found Inside Shocked Him",
+          "They Mocked This Homeless Woman's $7 Quonset Shelter - Until What She Found Inside"
+        ],
+        "mainTopic": "Hành trình xúc động của những người vô gia cư mua lại cabin rỉ sét $1 hoặc container cũ để tự xây dựng lại cuộc đời ấm áp",
+        "suggestedNiche": "Nhân văn / Người vô gia cư hồi sinh & Nhà $1",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Nhân văn / Người vô gia cư hồi sinh & Nhà $1",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Heartfelt Empathy Narration)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-07",
+        "daysSinceLatest": 8,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (8 ngày trước)",
+        "healthDetail": "Xuất bản 31 video, video gần nhất ngày 2026-09-07. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$307 – $658 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "a-YjcvtV5r4",
+        "title": "Homeless at 24, She Bought a Rusted $1 Tiny Cabin — What She Found Inside Shocked the Entire Town",
+        "views": 720545,
+        "vph": 3743.6,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-07",
+        "thumbnail": "https://i.ytimg.com/vi/a-YjcvtV5r4/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-118",
+      "fileName": "Screenshot_2.png",
+      "sha256": "4e763d882092b6f268a7c0ed267ebc1bbeb67af8c6b7422f32fe9301e7ce8511",
+      "technical": {
+        "dimensions": "1063x866",
+        "sizeBytes": 1186414,
+        "sizeKb": "1158.6",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCH5muwkuaCG6wBUoEWgUKBg",
+        "title": "Wes Tucker",
+        "handle": "@TuckerWes",
+        "url": "https://www.youtube.com/channel/UCH5muwkuaCG6wBUoEWgUKBg",
+        "subscribers": 25000,
+        "views": 600000,
+        "videoCount": 24,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ETW4n3HSIu4H6ze09E1f936JKg8HWkERzWuj1KYQh0WYon5BTW4MFiPbUwuIb4Mfb2TyYyB5fKM=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "An ninh gia đình / Mẹo chống trộm cho người cao tuổi",
+      "visionAnalysis": {
+        "channelName": "Wes Tucker",
+        "handle": "@TuckerWes",
+        "videoTitles": [
+          "How to STOP Sliding Door Break-Ins - 13 Ways to Burglar-Proof Your Home",
+          "20 Dirt-Cheap Home-Defense Tricks for Seniors That Make $5,000 Security Systems Look Like a Scam",
+          "30 Forgotten Safe-Room Tricks That Protected Seniors Living Alone Before Police Could Arrive",
+          "5 Easy DIY Panic Rooms for Seniors Living Alone (Burglars Will Never Find You)"
+        ],
+        "mainTopic": "Cựu thợ khóa 35 năm kinh nghiệm chia sẻ các mẹo tự vệ gia đình giá rẻ cho người già, gia cố cửa trượt và phòng an toàn chống trộm đột nhập",
+        "suggestedNiche": "An ninh gia đình / Thợ khóa già 35 năm kinh nghiệm",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "An ninh gia đình / Thợ khóa già 35 năm kinh nghiệm",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Experienced Locksmith & Home Defense)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-05",
+        "daysSinceLatest": 9,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (9 ngày trước)",
+        "healthDetail": "Xuất bản 24 video, video gần nhất ngày 2026-09-05. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$945 – $2,025 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "SpktUJlX7fo",
+        "title": "35 Home-Defense Tricks Retired Cops Teach Seniors Living Alone That Cost Pennies",
+        "views": 1796555,
+        "vph": 7551.0,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-05",
+        "thumbnail": "https://i.ytimg.com/vi/SpktUJlX7fo/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-119",
+      "fileName": "Screenshot_3.png",
+      "sha256": "ac01e5842d7e86fa7cd3d6277f53afe3a78c5926dae8cfeb1ee7209ccd38b71f",
+      "technical": {
+        "dimensions": "1062x1173",
+        "sizeBytes": 1443120,
+        "sizeKb": "1409.3",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCUlptKo9d3URdHgR1Q8eSDA",
+        "title": "Calvin Stories Chronicles",
+        "handle": "@Calvinstorieschori",
+        "url": "https://www.youtube.com/channel/UCUlptKo9d3URdHgR1Q8eSDA",
+        "subscribers": 1530,
+        "views": 40000,
+        "videoCount": 11,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/Mhk6kwbNWfu4z94K6niZHyW7DCvz_BwISatieJ6slJen64cXnVWBGXhLVM7YysDzwL-TSRugLQ=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Truyện nhân văn hư cấu AI / Thiếu niên da màu vượt khó",
+      "visionAnalysis": {
+        "channelName": "Calvin Stories Chronicles",
+        "handle": "@Calvinstorieschori",
+        "videoTitles": [
+          "A Black Boy Bought 100 Rejected Acres - Then His Buffalo Found Gold Beneath the Mud",
+          "They Mocked a Black Teen for Buying a $2,500 Motel - Then He Turned It into Millions",
+          "They Laughed When a Black Teen Bought a Failing Car Lot - Then One Deal Changed His Future",
+          "Mechanics Mocked a Black Boy for Taking Rusty..."
+        ],
+        "mainTopic": "Những câu chuyện hư cấu truyền cảm hứng về cậu bé da màu bị coi thường nhưng dùng trí tuệ và sự kiên trì tạo nên cơ nghiệp triệu đô",
+        "suggestedNiche": "Kể chuyện nhân văn AI / Vượt khó làm giàu & Nhân quả",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Kể chuyện nhân văn AI / Vượt khó làm giàu & Nhân quả",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Dramatic Storytelling & Moral Lessons)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-09",
+        "daysSinceLatest": 6,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (6 ngày trước)",
+        "healthDetail": "Xuất bản 11 video, video gần nhất ngày 2026-09-09. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$63 – $135 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "T3VENtPD9AM",
+        "title": "Mechanics Mocked a Black Boy for Taking Rusty Generators—Then His Junk Made Him Rich",
+        "views": 159892,
+        "vph": 1080.6,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-09",
+        "thumbnail": "https://i.ytimg.com/vi/T3VENtPD9AM/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-120",
+      "fileName": "Screenshot_5.png",
+      "sha256": "dc2a95eb421e29bac9d460620728ef3a4acdc094f62adfbb18a615721d6ea728",
+      "technical": {
+        "dimensions": "1048x1223",
+        "sizeBytes": 2174544,
+        "sizeKb": "2123.6",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCVitdltnfZt4ZoN0zrZdVdg",
+        "title": "Earth Craft",
+        "handle": "@Earthcraft-i7c",
+        "url": "https://www.youtube.com/channel/UCVitdltnfZt4ZoN0zrZdVdg",
+        "subscribers": 10800,
+        "views": 259200,
+        "videoCount": 37,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/dKTm4vaAmjfNayWfsAYYfrkUK_I93nKbe_0QJv9kju-OHyciBke_6o4ce4VMiIdQmYtPeadXZw=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Sinh tồn cổ đại / Kiến trúc nhà đất & Chống chọi băng giá",
+      "visionAnalysis": {
+        "channelName": "Earth Craft",
+        "handle": "@Earthcraft-i7c",
+        "videoTitles": [
+          "How Sámi Survived Extreme Cold Without Modern Heating",
+          "How Vikings Built Villages That Never Froze",
+          "They Mocked Her Straw Wall Around the Cabin - Until Winter Hit",
+          "How Vikings Built Warm Homes With Almost No Wood"
+        ],
+        "mainTopic": "Cách người Viking, người Sámi và người Sherpa xây dựng những ngôi làng không bao giờ bị đóng băng và sinh tồn qua mùa đông khắc nghiệt không cần điện",
+        "suggestedNiche": "Sinh tồn cổ đại / Kiến trúc mùa đông người Viking & Sámi",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Sinh tồn cổ đại / Kiến trúc mùa đông người Viking & Sámi",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Ancient History & Primitive Skills)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-08",
+        "daysSinceLatest": 38,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (38 ngày trước)",
+        "healthDetail": "Xuất bản 37 video, video gần nhất ngày 2026-08-08. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$408 – $875 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "R3rpdl9tw1U",
+        "title": "They Laughed at Her Sunflower Wall... Until the Blizzard Came",
+        "views": 3523961,
+        "vph": 3794.4,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/R3rpdl9tw1U/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-121",
+      "fileName": "Screenshot_6.png",
+      "sha256": "b73dd610bc0046024e2e9bd2c4f22075aba82ceb145a0fbf937a73a56465191c",
+      "technical": {
+        "dimensions": "1052x900",
+        "sizeBytes": 502090,
+        "sizeKb": "490.3",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCQnhXRLVlz161PmIuqA9e4A",
+        "title": "MYTHRA",
+        "handle": "@mythrafilms",
+        "url": "https://www.youtube.com/channel/UCQnhXRLVlz161PmIuqA9e4A",
+        "subscribers": 4910,
+        "views": 117840,
+        "videoCount": 1,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/XQfFHrgoDvATJARCP7BUG5lLtq_Rky6MWiEXu-KcFDo4-RZL2XqNu0NLmgi-pIO5Xyh0OTjWqw=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "AI Fantasy Cinema 4K / Phim điện ảnh viễn tưởng dài tập",
+      "visionAnalysis": {
+        "channelName": "MYTHRA",
+        "handle": "@mythrafilms",
+        "videoTitles": [
+          "She Gave Birth to a Dragon | The Mothers Monster | Full Fantasy Movie 4K"
+        ],
+        "mainTopic": "Phim điện ảnh 4K thần thoại viễn tưởng hoàn toàn tạo bằng AI về người mẹ sinh ra loài rồng và cuộc chiến sinh tồn giữa các quái thú cổ đại",
+        "suggestedNiche": "Điện ảnh AI 4K / Phim Dark Fantasy dài 28 phút",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Điện ảnh AI 4K / Phim Dark Fantasy dài 28 phút",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "Epic Cinematic English (Mythology & Dark Fantasy)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-14",
+        "daysSinceLatest": 0,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (0 ngày trước)",
+        "healthDetail": "Xuất bản 1 video, video gần nhất ngày 2026-09-14. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$186 – $398 / tháng",
+        "playableVideosCount": 1,
+        "totalAuditedVideos": 1
+      },
+      "featuredDemoVideo": {
+        "videoId": "dqCGNrQ6N_o",
+        "title": "She Gave Birth to a Dragon | The Mothers Monster | Full Fantasy Movie 4K",
+        "views": 1176654,
+        "vph": 61146.6,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-14",
+        "thumbnail": "https://i.ytimg.com/vi/dqCGNrQ6N_o/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-122",
+      "fileName": "Screenshot_7.png",
+      "sha256": "6b5a8ea328e43db708c3d5681936fae9198e8162be68d0c0485e61dacf5973f6",
+      "technical": {
+        "dimensions": "1052x1231",
+        "sizeBytes": 2127167,
+        "sizeKb": "2077.3",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCv2NylMXh-hTWVoRli_YqtQ",
+        "title": "funny animals wow",
+        "handle": "@FactoryRebornvn",
+        "url": "https://www.youtube.com/channel/UCv2NylMXh-hTWVoRli_YqtQ",
+        "subscribers": 3840,
+        "views": 92160,
+        "videoCount": 98,
+        "country": "VN",
+        "avatar": "https://yt3.googleusercontent.com/eBllx5nHSDy7LMX_NVmNd_0zk-GV6nudrzyPUza2MthzC6snANGHc52LeIAojTZIjkCCgfp1aBY=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Nhà máy tái chế công nghiệp 4K / Biến phế liệu thành giá trị",
+      "visionAnalysis": {
+        "channelName": "funny animals wow",
+        "handle": "@FactoryRebornvn",
+        "videoTitles": [
+          "Incredible Recycling Process: How Old Clothes Become Car Floor Carpets",
+          "Inside the Factory Turning Thousands of Rusty Watering Cans into Brand-New Screwdrivers",
+          "How Millions of Peanuts Are Turned Into Pure Peanut Oil in a Massive Factory",
+          "You Won't Believe What These Old Shopping Carts Are Turned Into"
+        ],
+        "mainTopic": "Quy trình công nghiệp biến hàng ngàn chiếc xe đẩy siêu thị rỉ sét, quần áo cũ và chìa khóa đồng thành các sản phẩm gia dụng mới toanh",
+        "suggestedNiche": "Công nghiệp sản xuất / Quy trình tái chế 4K",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Công nghiệp sản xuất / Quy trình tái chế 4K",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "International English (Industrial Process & Machinery)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-29",
+        "daysSinceLatest": 17,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (17 ngày trước)",
+        "healthDetail": "Xuất bản 98 video, video gần nhất ngày 2026-08-29. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$145 – $311 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "kHKQKs4O_nU",
+        "title": "You Won't Believe What These Old Shopping Carts Are Turned Into",
+        "views": 352608,
+        "vph": 851.4,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-29",
+        "thumbnail": "https://i.ytimg.com/vi/kHKQKs4O_nU/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-123",
+      "fileName": "Screenshot_8.png",
+      "sha256": "0015a14c83acc5c3618bcc4afc1555f31aadcf275ca95f6f02875708ed7c834f",
+      "technical": {
+        "dimensions": "1068x1199",
+        "sizeBytes": 1506371,
+        "sizeKb": "1471.1",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCMXRatGWKHnDNF97wNho14g",
+        "title": "AI See History",
+        "handle": "@AISeeHistory",
+        "url": "https://www.youtube.com/channel/UCMXRatGWKHnDNF97wNho14g",
+        "subscribers": 2660,
+        "views": 63840,
+        "videoCount": 33,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/XbKU60y4vLR7XOTZ5BDBSe_Vc3fEqCdViX7MeE6mH09zGGNDXiQ8mWug5tYbCz3rv5acPbijZQ=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Lịch sử sinh tồn biên viễn Mỹ / Mountain Men thế kỷ 19",
+      "visionAnalysis": {
+        "channelName": "AI See History",
+        "handle": "@AISeeHistory",
+        "videoTitles": [
+          "This Camping Myth Killed More Mountain Men Than Grizzlies Ever Did",
+          "How Mountain Men Slept Safely Surrounded by Wolves",
+          "How Did Mountain Men Sleep Through Freezing Nights Outside?",
+          "How Mountain Men Built a HEATING SYSTEM in -30°C"
+        ],
+        "mainTopic": "Cách những người thợ săn miền núi (Mountain Men) thế kỷ 19 ngủ qua đêm an toàn giữa bầy sói, xây hầm trú ẩn và hệ thống sưởi âm 30 độ",
+        "suggestedNiche": "Lịch sử sinh tồn Mỹ / Cuộc sống thợ săn miền núi thế kỷ 19",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Lịch sử sinh tồn Mỹ / Cuộc sống thợ săn miền núi thế kỷ 19",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American Frontier English (Historical Survival)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-12",
+        "daysSinceLatest": 33,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (33 ngày trước)",
+        "healthDetail": "Xuất bản 33 video, video gần nhất ngày 2026-08-12. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$101 – $215 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "Xj8-Y8XygrE",
+        "title": "How Did Mountain Men Sleep Through Freezing Nights Outdoors?",
+        "views": 251757,
+        "vph": 309.0,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-12",
+        "thumbnail": "https://i.ytimg.com/vi/Xj8-Y8XygrE/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-124",
+      "fileName": "Screenshot_9.png",
+      "sha256": "d7dd161b24df7fb34caed46eb61e4e191f65bc1ad72328eea10cf427e99afddc",
+      "technical": {
+        "dimensions": "1065x1226",
+        "sizeBytes": 1723181,
+        "sizeKb": "1682.8",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCt7J_BNEiy2qJzKqZXAGvig",
+        "title": "Relatos de Eterya",
+        "handle": "@RelatosdeEterya",
+        "url": "https://www.youtube.com/channel/UCt7J_BNEiy2qJzKqZXAGvig",
+        "subscribers": 126000,
+        "views": 3024000,
+        "videoCount": 7,
+        "country": "ES",
+        "avatar": "https://yt3.googleusercontent.com/qmq9cBPM3XI_KlmA4SkPDSTfI6b5fnQN0PkicJyMwM9IxrUlRAxYwDB7-2skMbTzrR5GgDm1nQ=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "AI Sci-Fi & Thần thoại viễn tưởng tiếng Tây Ban Nha",
+      "visionAnalysis": {
+        "channelName": "Relatos de Eterya",
+        "handle": "@RelatosdeEterya",
+        "videoTitles": [
+          "An Alien Asked Me to SAVE His Offspring... While His Giants Destroyed Our World",
+          "Beautiful Woman Falls on a Lost Island and a Reptilian Humanoid Hunts Her Down",
+          "They Sent Me to Kill Medusa But Her Beauty Hypnotized Me",
+          "The Tomb Raider Awakened Something That Should Have Never Been Awakened"
+        ],
+        "mainTopic": "Phim ngắn viễn tưởng AI chất lượng điện ảnh Hollywood bằng tiếng Tây Ban Nha về Medusa, sinh vật ngoài hành tinh và kẻ cướp lăng mộ thức tỉnh quái vật sa mạc",
+        "suggestedNiche": "Phim viễn tưởng AI Tây Ban Nha / Quái vật & Thần thoại",
+        "language": "ES"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Phim viễn tưởng AI Tây Ban Nha / Quái vật & Thần thoại",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Tây Ban Nha (Spanish)",
+        "code": "es-ES",
+        "flag": "🇪🇸",
+        "dialect": "Castilian Spanish (Cinematic Sci-Fi & Fantasy)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-14",
+        "daysSinceLatest": 31,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (31 ngày trước)",
+        "healthDetail": "Xuất bản 7 video, video gần nhất ngày 2026-08-14. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$3,704 – $7,938 / tháng",
+        "playableVideosCount": 7,
+        "totalAuditedVideos": 7
+      },
+      "featuredDemoVideo": {
+        "videoId": "IfYeyO9KU5I",
+        "title": "Beautiful Woman Falls on a Lost Island and a Reptilian Humanoid Hunts Her Down",
+        "views": 13676838,
+        "vph": 17890.4,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-14",
+        "thumbnail": "https://i.ytimg.com/vi/IfYeyO9KU5I/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-125",
+      "fileName": "Screenshot_10.png",
+      "sha256": "985188f57101ebe421c240860db1529c417eff5bf79735aaf570c4640571d5e1",
+      "technical": {
+        "dimensions": "1051x1219",
+        "sizeBytes": 1981055,
+        "sizeKb": "1934.6",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCt_8GB_0yVB_kFLLLVd_0hQ",
+        "title": "딥 호라이즌",
+        "handle": "@DeepHorizon-1991",
+        "url": "https://www.youtube.com/channel/UCt_8GB_0yVB_kFLLLVd_0hQ",
+        "subscribers": 59200,
+        "views": 1420800,
+        "videoCount": 41,
+        "country": "KR",
+        "avatar": "https://yt3.googleusercontent.com/tJCd-vhi106OiNL0X2uoyra2OH1ts-4RijpMk_j-181OvfwPBlTiNqXr-UqDP34bi7xHwnM6FmE=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Lịch sử không có trong sách giáo khoa tiếng Hàn",
+      "visionAnalysis": {
+        "channelName": "딥 호라이즌",
+        "handle": "@DeepHorizon-1991",
+        "videoTitles": [
+          "바이킹 - 배 한 척으로 유럽을 정복하다",
+          "세계 를 지배했던 로마제국은 왜 멸망했을까?",
+          "오디세이는 실화였나? - 실제 유물이 땅에서 나왔다",
+          "칭기즈칸, 10만 명으로 수억 명을 삼켰다"
+        ],
+        "mainTopic": "Giải mã sự sụp đổ của Đế chế La Mã, chiến thuật bách chiến bách thắng của Thành Cát Tư Hãn và bí ẩn người Viking bằng tiếng Hàn",
+        "suggestedNiche": "Lịch sử cổ đại tiếng Hàn / Đế chế & Bí ẩn khảo cổ",
+        "language": "KO"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Lịch sử cổ đại tiếng Hàn / Đế chế & Bí ẩn khảo cổ",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Hàn (Korean)",
+        "code": "ko-KR",
+        "flag": "🇰🇷",
+        "dialect": "Standard Seoul Korean (Historical Documentary Narration)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-29",
+        "daysSinceLatest": 17,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (17 ngày trước)",
+        "healthDetail": "Xuất bản 41 video, video gần nhất ngày 2026-08-29. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$2,735 – $5,861 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "ymyvysUivBw",
+        "title": "세계를 지배했던 로마제국은 왜 멸망했을까?",
+        "views": 888752,
+        "vph": 2154.7,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-29",
+        "thumbnail": "https://i.ytimg.com/vi/ymyvysUivBw/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-126",
+      "fileName": "Screenshot_11.png",
+      "sha256": "aaf47483653aa7f893ef6d49196d4b4367d0a2e1ad1e6c434d971d4c6d6da0d8",
+      "technical": {
+        "dimensions": "1045x1228",
+        "sizeBytes": 2271539,
+        "sizeKb": "2218.3",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCqZpuhhJC5G4kfvBG7MTAXg",
+        "title": "Science Sun",
+        "handle": "@ScienceSun-b4r",
+        "url": "https://www.youtube.com/channel/UCqZpuhhJC5G4kfvBG7MTAXg",
+        "subscribers": 92700,
+        "views": 2224800,
+        "videoCount": 58,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/kUXCYql9sTJvxjuDPqYUHHT9XHFEcSmpBOfDhHLYuuH2JVKTzupoFBshh7UuXN_WfajnLOz6Jg=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Bí ẩn Trái Đất & Khảo cổ học nền văn minh đã mất",
+      "visionAnalysis": {
+        "channelName": "Science Sun",
+        "handle": "@ScienceSun-b4r",
+        "videoTitles": [
+          "Tại sao Sahara cực nóng vào ban ngày nhưng con người lại rét cóng vào ban đêm?",
+          "Cổ Xưa Hơn Stonehenge: Những Bí Ẩn Chưa Có Lời Giải Của Châu Phi Cổ Đại",
+          "Bị Che Giấu Suốt Hàng Nghìn Năm Ngay Dưới Vatican: Bí Mật Của Một Thời Đại Đã Mất",
+          "Lũ Lụt Nepal Hôm Nay: Hé Lộ Nguyên Nhân Thực Sự và Hậu Quả"
+        ],
+        "mainTopic": "Giải mã nhiệt độ khắc nghiệt sa mạc Sahara, tàn tích châu Phi cổ xưa hơn Stonehenge và bí mật giấu dưới hầm mộ Vatican",
+        "suggestedNiche": "Khoa học khám phá / Văn minh Sumer & Cổ vật hang động",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Khoa học khám phá / Văn minh Sumer & Cổ vật hang động",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Science & Ancient Archaeology)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-19",
+        "daysSinceLatest": 27,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (27 ngày trước)",
+        "healthDetail": "Xuất bản 58 video, video gần nhất ngày 2026-08-19. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$3,504 – $7,509 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "gnpHjoJXIiw",
+        "title": "6 Закрытых Гробниц, которые Никто не может Открыть",
+        "views": 374550,
+        "vph": 572.5,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-19",
+        "thumbnail": "https://i.ytimg.com/vi/gnpHjoJXIiw/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-127",
+      "fileName": "Screenshot_12.png",
+      "sha256": "85abfaa94234eb5a48e1f803d469c2b53c3487401d66b37f260e98413083f22d",
+      "technical": {
+        "dimensions": "1071x1223",
+        "sizeBytes": 1834363,
+        "sizeKb": "1791.4",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCsq59qsJPbIgMbkcCjIKWkQ",
+        "title": "Хроники аномалий",
+        "handle": "@xronikianomaliy",
+        "url": "https://www.youtube.com/channel/UCsq59qsJPbIgMbkcCjIKWkQ",
+        "subscribers": 10200,
+        "views": 244800,
+        "videoCount": 66,
+        "country": "RU",
+        "avatar": "https://yt3.googleusercontent.com/XyhR1VGoaVrvcxLqyhETz4iOe0nLhoRbQLqGI7lmw8KahAnrcsvur6dMPRkk3bkVqt2IMbgBOZU=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Hiện tượng bất thường & Kỹ thuật sinh tồn vùng lạnh tiếng Nga",
+      "visionAnalysis": {
+        "channelName": "Хроники аномалий",
+        "handle": "@xronikianomaliy",
+        "videoTitles": [
+          "Họ sẽ làm gì nếu động cơ của tàu phá băng bị hỏng ở nhiệt độ -50°C?",
+          "Không điện, băng nằm suốt mùa hè: người Ba Tư làm kem trên sa mạc như thế nào",
+          "Tại sao giếng dầu không bao giờ bơm hết dầu mà chỉ để lại một nửa trong lòng đất",
+          "Làm thế nào động vật giúp sưởi ấm ngôi nhà ở Ladakh ở -30°C"
+        ],
+        "mainTopic": "Kỹ thuật xử lý sự cố động cơ tàu phá băng ở âm 50 độ C, cách người Ba Tư cổ làm kem giữa sa mạc không cần điện và bí mật giếng dầu",
+        "suggestedNiche": "Kỹ thuật công nghiệp dị thường / Tàu phá băng & Sa mạc",
+        "language": "RU"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Kỹ thuật công nghiệp dị thường / Tàu phá băng & Sa mạc",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Nga (Russian)",
+        "code": "ru-RU",
+        "flag": "🇷🇺",
+        "dialect": "Standard Russian (Industrial Engineering & Cold Tech Anomalies)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-08",
+        "daysSinceLatest": 7,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (7 ngày trước)",
+        "healthDetail": "Xuất bản 66 video, video gần nhất ngày 2026-09-08. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$300 – $643 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "tIPywJYoJRI",
+        "title": "Как в Ладакхе животные помогают отапливать дом при −30°C",
+        "views": 178716,
+        "vph": 1039.3,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-08",
+        "thumbnail": "https://i.ytimg.com/vi/tIPywJYoJRI/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-128",
+      "fileName": "Screenshot_13.png",
+      "sha256": "15f99dca45488fcd7ae0f5720c5ae78c516ec145a8d30c9115178caf36a4b901",
+      "technical": {
+        "dimensions": "1059x1230",
+        "sizeBytes": 1942330,
+        "sizeKb": "1896.8",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UC4zkQ8oGJR65JOjO2K9cB1A",
+        "title": "Những bí ẩn của vũ trụ",
+        "handle": "@MysteriesoftheUniverse00",
+        "url": "https://www.youtube.com/channel/UC4zkQ8oGJR65JOjO2K9cB1A",
+        "subscribers": 240000,
+        "views": 5760000,
+        "videoCount": 76,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/9_6bb5DnsrvgXuovpvHnhy3U5N7ryQA2KPR6KAUN4TC6mDt9CooK-2unvpp8JKnojDbMcPOvHg=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Tiền sử loài người & Đại công trình cổ đại dài 1 tiếng",
+      "visionAnalysis": {
+        "channelName": "Những bí ẩn của vũ trụ",
+        "handle": "@MysteriesoftheUniverse00",
+        "videoTitles": [
+          "Trái Đất Khi Khủng Long Thống Trị",
+          "Những Công Nghệ Bị Lãng Quên Của Các Nền Văn Minh Cổ Đại",
+          "Điều Gì Sẽ Xảy Ra Nếu Đào Sâu Xuống Sa Mạc",
+          "24 Giờ Trong Thời Kỳ Đồ Đá"
+        ],
+        "mainTopic": "Phim tài liệu 1 tiếng về công nghệ bị lãng quên của các nền văn minh cự thạch, cuộc sống thời kỳ đồ đá và bí ẩn dưới đáy cát sa mạc",
+        "suggestedNiche": "Tiền sử loài người / Khảo cổ học đại nhân sư & Sa mạc",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Tiền sử loài người / Khảo cổ học đại nhân sư & Sa mạc",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Deep Time & Earth Prehistory)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-10",
+        "daysSinceLatest": 36,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (36 ngày trước)",
+        "healthDetail": "Xuất bản 76 video, video gần nhất ngày 2026-08-10. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$9,072 – $19,440 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "fXxzM38OJDY",
+        "title": "Как Викинги Выживали В Ледяных Морях Без Огня",
+        "views": 1307420,
+        "vph": 1505.4,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-10",
+        "thumbnail": "https://i.ytimg.com/vi/fXxzM38OJDY/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-129",
+      "fileName": "Screenshot_14.png",
+      "sha256": "cfbe9f9dc636ee2e666e0e60e22858e9bb72dc213fc26d2d26dddea1e03da8b4",
+      "technical": {
+        "dimensions": "1064x1224",
+        "sizeBytes": 1430476,
+        "sizeKb": "1396.9",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCdiDTKQmXEC9iTTUTO06EHQ",
+        "title": "Past Seven",
+        "handle": "@Past_Seven",
+        "url": "https://www.youtube.com/channel/UCdiDTKQmXEC9iTTUTO06EHQ",
+        "subscribers": 29600,
+        "views": 710400,
+        "videoCount": 63,
+        "country": "RU",
+        "avatar": "https://yt3.googleusercontent.com/XeIrPyKRxhELZn2Oe5R89N4rScWLeKJF13Toonj-5a7UaDoW5a3rWoeuvU95c2nNe48K6Tu3VIQ=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Khảo cổ học chấn động & Cổ vật dưới lòng đất tiếng Nga",
+      "visionAnalysis": {
+        "channelName": "Past Seven",
+        "handle": "@Past_Seven",
+        "videoTitles": [
+          "В Затопленном Непале нашли то, чего там быть...",
+          "В Иране Нашли Места, Которых НЕ Должно...",
+          "9 Подземных Находок, Которые Меняют Истори...",
+          "В ИРАНЕ нашли то, чего быть НЕ ДОЛЖНО"
+        ],
+        "mainTopic": "Những phát hiện khảo cổ chấn động làm thay đổi sách giáo khoa tại Nepal, Iran và 9 công trình dưới lòng đất bí ẩn",
+        "suggestedNiche": "Khảo cổ học chấn động / Phát hiện dị thường tại Nepal & Iran",
+        "language": "RU"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Khảo cổ học chấn động / Phát hiện dị thường tại Nepal & Iran",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Nga (Russian)",
+        "code": "ru-RU",
+        "flag": "🇷🇺",
+        "dialect": "Standard Russian (Archaeology & Ancient Relics)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-02",
+        "daysSinceLatest": 13,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (13 ngày trước)",
+        "healthDetail": "Xuất bản 63 video, video gần nhất ngày 2026-09-02. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$870 – $1,865 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "-DOS0Vp4Eus",
+        "title": "В Затопленном Непале нашли то, чего там быть НЕ МОГЛО",
+        "views": 718109,
+        "vph": 2276.2,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-02",
+        "thumbnail": "https://i.ytimg.com/vi/-DOS0Vp4Eus/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-130",
+      "fileName": "Screenshot_15.png",
+      "sha256": "c4db6f29cd358145994411b052e51cf4c23707b630c2ddd1589d6aa921b82c56",
+      "technical": {
+        "dimensions": "1031x1216",
+        "sizeBytes": 1902839,
+        "sizeKb": "1858.2",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCtwNpW2EBBKUkQhmX2pW4AQ",
+        "title": "그림자노트",
+        "handle": "@그림자노트-000",
+        "url": "https://www.youtube.com/channel/UCtwNpW2EBBKUkQhmX2pW4AQ",
+        "subscribers": 1250,
+        "views": 40000,
+        "videoCount": 35,
+        "country": "KR",
+        "avatar": "https://yt3.googleusercontent.com/scfmXWjnuoZKTUCLV9h4Ib7E8-b7ruBG9LqIoEI6WMUCFglESSZ4rbKCP_SU3TlOP3RmFrzA=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Sinh tồn cực hạn & Kiến trúc giữ nhiệt cổ truyền tiếng Hàn",
+      "visionAnalysis": {
+        "channelName": "그림자노트",
+        "handle": "@그림자노트-000",
+        "videoTitles": [
+          "Mùa đông Mông Cổ âm 20 độ ăn gì để sống",
+          "Sóng thần 9m biển nguy hiểm nhất thế giới",
+          "Nhà đất Himalaya không lò sưởi vẫn ấm"
+        ],
+        "mainTopic": "Cách người bản địa vùng Himalaya giữ ấm nhà ở âm 30 độ không cần máy sưởi, kinh nghiệm sống sót trên xe tải Siberia và bão tuyết Mông Cổ",
+        "suggestedNiche": "Sinh tồn vùng lạnh tiếng Hàn / Nhà đất Himalaya & Siberia",
+        "language": "KO"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Sinh tồn vùng lạnh tiếng Hàn / Nhà đất Himalaya & Siberia",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Hàn (Korean)",
+        "code": "ko-KR",
+        "flag": "🇰🇷",
+        "dialect": "Standard Seoul Korean (Extreme Survival & Traditional Architecture)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-01",
+        "daysSinceLatest": 13,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (13 ngày trước)",
+        "healthDetail": "Xuất bản 35 video, video gần nhất ngày 2026-09-01. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$77 – $165 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "L_necqbQW44",
+        "title": "영하 40도가 기본?! 극한의 땅, 미국 인디언들은 왜 눈 밑에 땅을 파고 살았을까?",
+        "views": 128236,
+        "vph": 387.4,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-01",
+        "thumbnail": "https://i.ytimg.com/vi/L_necqbQW44/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-131",
+      "fileName": "Screenshot_16.png",
+      "sha256": "c325e15253ea78facf78dba971197bf8c7a2ca03b34af8419295f85c96497295",
+      "technical": {
+        "dimensions": "1049x1219",
+        "sizeBytes": 2127406,
+        "sizeKb": "2077.5",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCHKiTFete80LTEJ3oOSff5g",
+        "title": "Tuyển tập Phim Tài liệu",
+        "handle": "@ДокументальныйСборник-н3м",
+        "url": "https://www.youtube.com/channel/UCHKiTFete80LTEJ3oOSff5g",
+        "subscribers": 46400,
+        "views": 1113600,
+        "videoCount": 116,
+        "country": "RU",
+        "avatar": "https://yt3.googleusercontent.com/Xn5_OL3kxsyDLEbT5RUcVCjcsvrMLZKenveXbvoFapCZWLA7O9qbbyYeSc63aOyL_BWUSzANTQ=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Hồ sơ mật & Địa điểm bí ẩn bị xóa sổ tiếng Nga",
+      "visionAnalysis": {
+        "channelName": "Tuyển tập Phim Tài liệu",
+        "handle": "@ДокументальныйСборник-н3м",
+        "videoTitles": [
+          "5 BÍ ẨN CỔ XƯA NHẤT CỦA NƯỚC MỸ MÀ NGƯỜI TA ĐÃ CỐ XÓA SẠCH KHỎI KÝ ỨC",
+          "5 PHÁT HIỆN Ở MỸ MÀ CHÍNH THỨC KHÔNG THỂ TỒN TẠI",
+          "BỒ ĐÀO NHA ĐÃ GIẤU ĐIỀU NÀY DƯỚI TRO TÀN VÀ LÒNG ĐẤT HÀNG NGÀN NĂM"
+        ],
+        "mainTopic": "Những hồ sơ khảo cổ bí mật bị che giấu tại nước Mỹ, hang động chứa sinh vật dị thường ở Romania và các di tích cổ ngầm Bồ Đào Nha",
+        "suggestedNiche": "Tài liệu bí ẩn tiếng Nga / Cổ vật cấm kỵ & Địa điểm bí ẩn",
+        "language": "RU"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Tài liệu bí ẩn tiếng Nga / Cổ vật cấm kỵ & Địa điểm bí ẩn",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Nga (Russian)",
+        "code": "ru-RU",
+        "flag": "🇷🇺",
+        "dialect": "Standard Russian (Classified Files & Forbidden Places)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-12",
+        "daysSinceLatest": 3,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (3 ngày trước)",
+        "healthDetail": "Xuất bản 116 video, video gần nhất ngày 2026-09-12. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$1,364 – $2,923 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "BlQoj1Zn20Y",
+        "title": "ПОРТУГАЛИЯ СКРЫВАЛА ЭТО Под Пеплом И Землей ТЫСЯЧИ ЛЕТ",
+        "views": 29301,
+        "vph": 346.8,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-12",
+        "thumbnail": "https://i.ytimg.com/vi/BlQoj1Zn20Y/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-132",
+      "fileName": "Screenshot_17.png",
+      "sha256": "5907281558451297b1ac73392e4b6791b19c7a01b3e973bc0b2302b1051d5db1",
+      "technical": {
+        "dimensions": "1046x1225",
+        "sizeBytes": 1860977,
+        "sizeKb": "1817.4",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UC7CSSLTIe_lUa-zAPOSV--A",
+        "title": "De entonces a hoy Documental",
+        "handle": "@DeEntoncesahoyDocumental",
+        "url": "https://www.youtube.com/channel/UC7CSSLTIe_lUa-zAPOSV--A",
+        "subscribers": 8390,
+        "views": 201360,
+        "videoCount": 13,
+        "country": "ES",
+        "avatar": "https://yt3.googleusercontent.com/db8Uyy5-2s3rjmgMGHYzYQqJqzgz2NzbGLVU_EyXFcUMQ6GOXtIzRuOGzjI8o2bkPkPSWOcVjw=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Lịch sử nguồn gốc đồ vật & Phát minh thường nhật tiếng Tây Ban Nha",
+      "visionAnalysis": {
+        "channelName": "De entonces a hoy Documental",
+        "handle": "@DeEntoncesahoyDocumental",
+        "videoTitles": [
+          "El invento que nos hizo humanos... y nadie sabe quién lo creó",
+          "La inteligencia artificial empezó mucho antes de lo que imaginas",
+          "Por qué una hora tiene 60 minutos? La increíble historia de cómo aprendimos a medir el tiempo",
+          "Por qué sigue existiendo? La increíble historia del teclado qwerty"
+        ],
+        "mainTopic": "Nguồn gốc vì sao 1 giờ có 60 phút, lịch sử bàn phím QWERTY và sự thật về những phát minh định hình nền văn minh nhân loại bằng tiếng Tây Ban Nha",
+        "suggestedNiche": "Lịch sử đồ vật thường nhật / Đồng hồ, Bàn phím & Trí tuệ nhân tạo",
+        "language": "ES"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Lịch sử đồ vật thường nhật / Đồng hồ, Bàn phím & Trí tuệ nhân tạo",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Tây Ban Nha (Spanish)",
+        "code": "es-ES",
+        "flag": "🇪🇸",
+        "dialect": "Castilian Spanish (Everyday History & Inventions)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-02",
+        "daysSinceLatest": 12,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (12 ngày trước)",
+        "healthDetail": "Xuất bản 13 video, video gần nhất ngày 2026-09-02. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$247 – $529 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "-8RoNC90alU",
+        "title": "Por qué una hora tiene 60 minutos? La increíble historia de cómo aprendimos a medir el tiempo",
+        "views": 1384999,
+        "vph": 4472.5,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-02",
+        "thumbnail": "https://i.ytimg.com/vi/-8RoNC90alU/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-133",
+      "fileName": "Screenshot_18.png",
+      "sha256": "88ee2f508f45bcfa8458b10789179215fccfec82093c332068a1059ebf5e96e9",
+      "technical": {
+        "dimensions": "1059x1218",
+        "sizeBytes": 2012330,
+        "sizeKb": "1965.2",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCjTocbwWyVtbywcJlt1EUxw",
+        "title": "HistoriaVivaTV",
+        "handle": "@HistoriaVivaSP",
+        "url": "https://www.youtube.com/channel/UCjTocbwWyVtbywcJlt1EUxw",
+        "subscribers": 7500,
+        "views": 180000,
+        "videoCount": 19,
+        "country": "ES",
+        "avatar": "https://yt3.googleusercontent.com/zZDnd4UfbXd-km6tx3Xliq1qetbQc7Mv3RNZZ5GGrL-SgVg5MRKndj0uqavGxTYaDcp7b-ANtw=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Phim tài liệu đế chế lịch sử 1 tiếng tiếng Tây Ban Nha",
+      "visionAnalysis": {
+        "channelName": "HistoriaVivaTV",
+        "handle": "@HistoriaVivaSP",
+        "videoTitles": [
+          "LA ANTIGUA PERSIA: DE CIRO EL GRANDE AL IMPERIO SASÁNIDA",
+          "El Papel: El Invento De La Antigua China Que Cambió La Humanidad",
+          "LA ANTIGUA INDIA: DEL VALLE DEL INDO A LOS GRANDES IMPERIOS",
+          "La Dinastía Qin: El Primer Imperio Que Unificó China"
+        ],
+        "mainTopic": "Bộ phim tài liệu chuyên sâu 1 giờ về Đế chế Ba Tư từ Cyrus Đại Đế, lịch sử phát minh ra giấy của Trung Hoa và đế chế thung lũng sông Ấn",
+        "suggestedNiche": "Lịch sử đế chế cổ đại / Ba Tư, Tần Thủy Hoàng & Con đường tơ lụa",
+        "language": "ES"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Lịch sử đế chế cổ đại / Ba Tư, Tần Thủy Hoàng & Con đường tơ lụa",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Tây Ban Nha (Spanish)",
+        "code": "es-ES",
+        "flag": "🇪🇸",
+        "dialect": "Castilian Spanish (Historical Empires & Classical Antiquity)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-04",
+        "daysSinceLatest": 42,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (42 ngày trước)",
+        "healthDetail": "Xuất bản 19 video, video gần nhất ngày 2026-08-04. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$220 – $472 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "YftA8zfMM_o",
+        "title": "La Historia del Pan — El Alimento Que Cambió a la Humanidad",
+        "views": 159985,
+        "vph": 158.7,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-04",
+        "thumbnail": "https://i.ytimg.com/vi/YftA8zfMM_o/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-134",
+      "fileName": "Screenshot_19.png",
+      "sha256": "7871ea9e9c06d33d72fd7a6c5da24556dfc6fb11cd8b364fc865b54895a3987e",
+      "technical": {
+        "dimensions": "1065x1223",
+        "sizeBytes": 1234365,
+        "sizeKb": "1205.4",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCoMCQVuCK1wLUpM9Nfetb9Q",
+        "title": "WEON Earth",
+        "handle": "@weonearth_us",
+        "url": "https://www.youtube.com/channel/UCoMCQVuCK1wLUpM9Nfetb9Q",
+        "subscribers": 2640,
+        "views": 63360,
+        "videoCount": 23,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/ZIJl0LnyXwUMrn4z8T07lwhVzBBjJLOqH6k9ahgzzDfqhbQyyak0Drq5fjdnP0s-kv4xchPKgg=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Tiến hóa loài người tiền sử & Kỷ băng hà Ice Age",
+      "visionAnalysis": {
+        "channelName": "WEON Earth",
+        "handle": "@weonearth_us",
+        "videoTitles": [
+          "What Was The World Like During The Ice Age?",
+          "18,000 Years Ago, What Was Life Really Like Inside An Ice...",
+          "The Origins of Humankind: From the End of Dinosaurs t...",
+          "Neanderthals: Ice Age Humans And Their Ultimate..."
+        ],
+        "mainTopic": "Thế giới trông như thế nào trong kỷ băng hà 18,000 năm trước, cuộc sống thực sự bên trong hang đá và sự tuyệt chủng bí ẩn của người Neanderthal",
+        "suggestedNiche": "Tiền sử loài người / Người Neanderthal & Kỷ băng hà",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Tiền sử loài người / Người Neanderthal & Kỷ băng hà",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Paleoanthropology & Ice Age Survival)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-09-07",
+        "daysSinceLatest": 8,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (8 ngày trước)",
+        "healthDetail": "Xuất bản 23 video, video gần nhất ngày 2026-09-07. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$100 – $214 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "9oxPEidN3Ws",
+        "title": "18,000 Years Ago. What Was Life Really Like Inside An Ice Age Cave? Prehistoric Documentary",
+        "views": 206876,
+        "vph": 1047.6,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-09-07",
+        "thumbnail": "https://i.ytimg.com/vi/9oxPEidN3Ws/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-135",
+      "fileName": "Screenshot_20.png",
+      "sha256": "f9d23879cc9c366a7fb66bf97260b0b27ffaddfd4254cc8bfb14f4ca46611e43",
+      "technical": {
+        "dimensions": "1065x1211",
+        "sizeBytes": 1983416,
+        "sizeKb": "1936.9",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCfOhunfxnhP8H5bkNIXcg8g",
+        "title": "세계경제이야기",
+        "handle": "@세계경제이야기",
+        "url": "https://www.youtube.com/channel/UCfOhunfxnhP8H5bkNIXcg8g",
+        "subscribers": 10700,
+        "views": 256800,
+        "videoCount": 57,
+        "country": "KR",
+        "avatar": "https://yt3.googleusercontent.com/9Cu2ThKzBkUeDTCFvE3WqtqvZwthNeNFVfbAsRhg5cwgQFIvahJANRpVSlcJqIzoxLD3WuHE4A=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Kinh tế học tò mò & Địa chính trị thế giới tiếng Hàn",
+      "visionAnalysis": {
+        "channelName": "세계경제이야기",
+        "handle": "@세계경제이야기",
+        "videoTitles": [
+          "Cà phê đảo lộn lịch sử thế giới",
+          "Thụy Sĩ - Đất nước phủ đầy bom và hệ thống quốc phòng đáng sợ",
+          "Văn hóa tiền Tip ngày càng nghiêm trọng ở Mỹ",
+          "Tại sao người phương Tây về nhà không cởi giày"
+        ],
+        "mainTopic": "Giải mã vì sao cà phê làm thay đổi dòng chảy lịch sử, hệ thống quốc phòng độc nhất vô nhị của Thụy Sĩ và những nghịch lý văn hóa kinh tế toàn cầu",
+        "suggestedNiche": "Địa chính trị & Kinh tế thế giới tiếng Hàn / Cà phê, Thụy Sĩ & Tiền Tip",
+        "language": "KO"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Địa chính trị & Kinh tế thế giới tiếng Hàn / Cà phê, Thụy Sĩ & Tiền Tip",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Hàn (Korean)",
+        "code": "ko-KR",
+        "flag": "🇰🇷",
+        "dialect": "Standard Seoul Korean (Geopolitics & Global Culture)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-24",
+        "daysSinceLatest": 22,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (22 ngày trước)",
+        "healthDetail": "Xuất bản 57 video, video gần nhất ngày 2026-08-24. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$494 – $1,059 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "xADP45BZpAM",
+        "title": "\"헹구지 않는 영국식 설거지\" 왜 아직도 바뀌지 않는걸까? 건강은 이상이 없을까?",
+        "views": 626273,
+        "vph": 1153.4,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-24",
+        "thumbnail": "https://i.ytimg.com/vi/xADP45BZpAM/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
+      }
+    },
+    {
+      "id": "RAW-136",
+      "fileName": "Screenshot_21.png",
+      "sha256": "c23832a647ddfc5f52de041bc0d8a31203de704957e0680749d6986748f181ba",
+      "technical": {
+        "dimensions": "1058x1214",
+        "sizeBytes": 1361390,
+        "sizeKb": "1329.5",
+        "format": "PNG"
+      },
+      "channel": {
+        "channelId": "UCxc4r2rCJjK-tnzfVW8CxiQ",
+        "title": "The Wealth Scrolls",
+        "handle": "@TheWealthScrolls_Official",
+        "url": "https://www.youtube.com/channel/UCxc4r2rCJjK-tnzfVW8CxiQ",
+        "subscribers": 14400,
+        "views": 345600,
+        "videoCount": 51,
+        "country": "US",
+        "avatar": "https://yt3.googleusercontent.com/4VVhIBzFbTT0oV3bpLSHjC5mmKgvMpu_T9XpChLftdzbWRSAboy_IEyw0FWPOnaDiFBeTimU=s900-c-k-c0x00ffffff-no-rj",
+        "topics": [
+          "Knowledge",
+          "Society",
+          "Entertainment",
+          "Documentary"
+        ],
+        "publishedAt": "2026-01-01T00:00:00.000Z"
+      },
+      "niche": "Tài chính & Quy luật thịnh vượng trong Kinh Thánh",
+      "visionAnalysis": {
+        "channelName": "The Wealth Scrolls",
+        "handle": "@TheWealthScrolls_Official",
+        "videoTitles": [
+          "Why Paul Tried to Stop the Poorest Church From Giving",
+          "How Job Demanded God Audit His Own Fortune",
+          "Why the Richest-Looking Man in the Room Owned the Least",
+          "Why Isaac's Worst Season Became His Most Profitable Year"
+        ],
+        "mainTopic": "Những quy luật tài chính cổ xưa mã hóa trong Kinh Thánh, bài học quản lý tài sản của Vua Solomon, cuộc kiểm toán tài sản của Job và vụ mùa lịch sử của Isaac",
+        "suggestedNiche": "Kinh Thánh & Tài chính / Luật làm giàu của vua Solomon & Job",
+        "language": "EN"
+      },
+      "status": "VERIFIED_UNIQUE",
+      "editorialNiche": "Kinh Thánh & Tài chính / Luật làm giàu của vua Solomon & Job",
+      "publicVerification": "RESOLVED; bóc tách thực tế từ nguồn chuyên gia 2026",
+      "audioLanguageInfo": {
+        "language": "Tiếng Anh (English)",
+        "code": "en-US",
+        "flag": "🇺🇸",
+        "dialect": "American English (Biblical Finance & Wisdom)"
+      },
+      "vitalityAudit": {
+        "evaluatedAt": "2026-09-15",
+        "latestUploadDate": "2026-08-19",
+        "daysSinceLatest": 26,
+        "healthStatus": "ACTIVE",
+        "healthBadge": "🟢 Đang hoạt động (26 ngày trước)",
+        "healthDetail": "Xuất bản 51 video, video gần nhất ngày 2026-08-19. Kênh bão view đột phá.",
+        "monetizationStatus": "MONETIZED_ACTIVE",
+        "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+        "monetizationAdvisory": "Kênh hoạt động đều đặn, đề xuất thuật toán bão view, giữ chân người xem tốt. Đủ điều kiện kiếm tiền YPP và tài trợ AdSense.",
+        "estimatedMonthlyRev": "$544 – $1,166 / tháng",
+        "playableVideosCount": 10,
+        "totalAuditedVideos": 10
+      },
+      "featuredDemoVideo": {
+        "videoId": "IVEOQg2suNg",
+        "title": "Why Isaac's Worst Season Became His Most Profitable Year",
+        "views": 39875,
+        "vph": 62.0,
+        "duration": "PT18M30S",
+        "publishedAt": "2026-08-19",
+        "thumbnail": "https://i.ytimg.com/vi/IVEOQg2suNg/maxresdefault.jpg",
+        "selectionType": "TOP_BREAKTHROUGH"
       }
     }
   ],

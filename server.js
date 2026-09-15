@@ -296,24 +296,42 @@ const server = http.createServer(async (req,res)=>{
   }
 
   // Bảo vệ thư mục chứa SECRET/CONFIG (KHÔNG chặn data học liệu/video/transcript).
-  // Lưu ý: đây là bảo vệ BÍ MẬT (API key, backup .env), không phải che giấu dữ liệu
-  // theo Rule 1.7. Các thư mục dữ liệu (data/, data-tabs/, docs/, assets/, video/)
+  // Lưu ý: đây là bảo vệ BÍ MẬT (API key, backup .env, git history), không phải che giấu
+  // dữ liệu theo Rule 1.7. Các thư mục dữ liệu (data/, data-tabs/, docs/, assets/, video/)
   // vẫn mở 100%.
+  // Danh sách dưới đây khớp tuyên bố TREE.md (mục "web bị chặn / 403") + bổ sung 16/09/2026.
+  // LƯU Ý: tất cả entry viết CHỮ THƯỜNG — so khớp bằng toLowerCase() vì Windows
+  // filesystem không phân biệt hoa/thường (tránh bypass kiểu /.GIT/config hay /_PRIVATE/).
   const SENSITIVE_SEGMENTS = new Set([
-    '_private',    // chứa mcp-keys-h2dev.md (danh mục key)
-    '_backup',     // chứa .env.bak và bản backup key plaintext
-    '_audit',      // raw phân tích nội bộ (AGENTS.md yêu cầu chặn)
-    '_internal',   // tài liệu nội bộ nháp
-    '_drafts',     // bản nháp chưa duyệt
+    '.git',         // CRITICAL 16/09: toàn bộ lịch sử git từng bị tải qua HTTP (kể cả commit chứa key cũ)
+    'node_modules', // dependency tree — không phục vụ web
+    '_private',     // chứa mcp-keys-h2dev.md (danh mục key)
+    '_backup',      // chứa .env.bak và bản backup key plaintext
+    '_audit',       // raw phân tích nội bộ (AGENTS.md yêu cầu chặn)
+    '_internal',    // tài liệu nội bộ nháp
+    '_drafts',      // bản nháp chưa duyệt
+    '_archive',     // rác đã dời khỏi web serve (NO_DELETE)
+    '_verify',      // scratch verify nội bộ
+    '_frames',      // frame trích từ video (file con từng tải được)
+    '_tmp_audio',   // audio tạm của pipeline
+    '.cache',       // cache runtime (checkpoint, thumbnail tải về)
+    '.venv-gpu',    // môi trường Python GPU — không phục vụ web
+    '.zcode',       // cấu hình agent nội bộ
+    'logs',         // log server/watchdog — có thể chứa path & thông tin vận hành
+    'inbox',        // vùng thả file mới (TREE.md: web bị chặn)
+    'raw-kenh-goc', // ảnh raw canonical bản gốc (TREE.md: web bị CHẶN 403)
+    'design-is-2026-08-22', // audit UI nội bộ (TREE.md: web bị CHẶN 403)
+    'raw kênh mẫu tìm kiếm', // historical only (TREE.md: chặn từ 31/08)
   ]);
   const relSegs = relative.split(path.sep);
-  if (relSegs.some(seg => SENSITIVE_SEGMENTS.has(seg))) {
+  if (relSegs.some(seg => SENSITIVE_SEGMENTS.has(seg.toLowerCase()))) {
     res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
     res.end('Forbidden');
     return;
   }
-  // Bảo vệ file database/secret binary ở thư mục data (không lộ dump toàn bộ DB qua web tĩnh)
-  if (/\.(db|sqlite|sqlite3)$/i.test(baseName)) {
+  // Bảo vệ file database/secret binary ở thư mục data (không lộ dump toàn bộ DB qua web tĩnh).
+  // Bao gồm cả các file phụ trợ của SQLite: -wal, -shm, -journal.
+  if (/\.(db|sqlite|sqlite3)(-(wal|shm|journal))?$/i.test(baseName) || /^mcp-keys/i.test(baseName)) {
     res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
     res.end('Forbidden');
     return;

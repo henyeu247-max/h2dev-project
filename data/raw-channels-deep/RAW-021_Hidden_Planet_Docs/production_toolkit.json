@@ -70,10 +70,26 @@
     "matchingSkill": "script-forging & video-script-dissect (Bóc tách kịch bản khảo cổ học & phân cảnh điện ảnh)",
     "sopDocPath": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md",
     "repoPath": "raw-niches/US_EverydayHistory/README.md",
-    "scriptTool": "Claude 3.5 Sonnet (Chuyên sâu kịch tính hóa tư liệu lịch sử & khảo cổ học)",
-    "voiceTool": "ElevenLabs Model Multilingual v2, Giọng: Marcus / Liam / Brian (Trầm ấm, nghiêm nghị, bí ẩn, phong cách tài liệu PBS/NatGeo)",
-    "videoTool": "Flux 1.1 Pro / Midjourney v6.1 (Tạo ảnh tĩnh hiện vật cổ chân thực) -> Kling 1.5 / Hailuo Minimax / Runway Gen-3 (Chuyển động chùm sáng khai quật và góc lia hiện vật đồng cổ) -> Hậu kỳ CapCut PC",
-    "bgmSoundtrack": "Ancient Historical Ambient & Deep Bronze Resonances (Tiếng chuông đồng vang vọng xa xăm, nhịp trống bộ lạc chậm rãi, ducking âm lượng -18dB dưới giọng đọc)",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens nuốt trọn 11 transcripts, phản hồi 3s, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Marcus / Liam, $1.2/video 15p) HOẶC Kokoro-82M TTS ($0.00 chạy Local GPU RTX 4060)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding vẽ hiện vật cổ chuẩn 100%, 0 credit trên Google Flow / AI Studio)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps (0 đồng, 0 lỗi méo hình, 100% kiểm soát góc máy)",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Fable 5.1 / Claude Sonnet 4.6 / Claude 3.7 Sonnet (Hybrid Thinking) / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders, Custom Pronunciation)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output, 14 reference images)",
+      "motion": "Google Veo 3.1 / ByteDance Seedance 2.0 / Kling 3.0 Omni (6-shot narrative, multi-reference)",
+      "assembly": "CapCut PC + DaVinci Resolve (Color Grading Chiaroscuro)"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Fable 5.1 / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Model: Eleven Multilingual v3, Giọng: Marcus / Liam) song song Kokoro-82M Local GPU",
+    "videoTool": "Google Nano Banana 2 & Pro (Stills) -> Google Flow Veo 3.1 / Kling 3.0 / CapCut Ken Burns -> Hậu kỳ CapCut PC",
+    "bgmSoundtrack": "Ancient Historical Ambient & Deep Bronze Resonances (Tiếng chuông đồng vang vọng xa xăm, nhịp trống bộ lạc chậm rãi, ducking âm lượng -20dB dưới giọng đọc)",
     "soundEffects": "Shovel striking metal, crumbling dry earth, echoing cavern wind, deep low-frequency sub drone"
   },
   "launchpad5Steps": [

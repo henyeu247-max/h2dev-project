@@ -46,3 +46,5 @@ data/h2dev_master.db
 data/h2dev_master.db-wal
 data/h2dev_master.db-shm
 manifest_full.csv
+.venv/
+.venv-gpu/

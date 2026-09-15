@@ -1,3 +1,35 @@
+## 2026-09-16 — Fix Bug Videos=0 (Spider Graph) + Triển Khai GPU Vision SCRFD Thực Đo Trên RTX 4060
+
+### 🐛 Bug Fix: `videos` table = 0 rows (Spider Graph Engine)
+- **Nguyên nhân gốc:** `saveToDatabase()` trong `scripts/spider_graph_engine.js` chỉ insert `cowatch_edges` + `channels` — **hoàn toàn bỏ qua bảng `videos`**. Dữ liệu RSS (15 video/kênh) bị vứt bỏ sau khi tính TMNZ.
+- **Hệ quả trước fix:** CTE 2-hop query (mục đích chính của PH4) trả về **rỗng** vì `videos` trống.
+- **Fix:** gom `allRssVideos` trong traversal + thêm insert statement + **sửa thứ tự insert** (channels trước videos để thỏa FK constraint).
+- **Kết quả đo thật:** `videos: 0 → 217 rows` · CTE 2-hop trả **8 traffic donors** (Epic History, Past Seven, Veritasium...) trong **1ms**.
+
+### 🎮 Triển Khai PH1 GPU Vision (SCRFD trên RTX 4060)
+- **Môi trường:** venv riêng `.venv-gpu` + `onnxruntime-gpu 1.30` + `insightface 2.0` + `nvidia-cudnn-cu13 9.26` (pip, không cần admin).
+- **Fix dependency conflict:** `insightface` kéo `onnxruntime` CPU đè GPU build → gỡ CPU, force-reinstall GPU.
+- **Fix DLL runtime:** CUDA Toolkit 13.1 có DLL ở `bin/x64/` (không phải `bin/`) + cuDNN qua pip → set `os.add_dll_directory()`.
+- **SỐ ĐO THỰC TẾ (không ước tính):**
+
+| Cấu hình | Latency | Throughput |
+|---|---|---|
+| SCRFD wrapper @640 (real thumbnails) | 8.65 ms | **116 ảnh/s** |
+| SCRFD wrapper @320 | 4.69 ms | 213 ảnh/s |
+| Raw ONNX session @640 | 3.70 ms | **270 ảnh/s** |
+| **Đề xuất gốc (lý thuyết)** | ~1.5 ms | **>600 ảnh/s** |
+
+→ **Thực tế đạt 19-45% so với ước tính gốc.** VRAM chỉ 151 MB (tốt hơn 480 MB ước tính).
+
+### ⚠️ Phát Hiện Quan Trọng: False Positive Trên Nội Dung Hoạt Hình
+- Test trên 19 thumbnail thật: SCRFD phát hiện "mặt người" trên **hoạt hình** (RAW-079 villain ranking: **5 faces**, RAW-001: 1 face trên bò 3D, RAW-029: 2 faces).
+- **Xác nhận cảnh báo của đề xuất gốc:** "No pure face detection model can distinguish a real human face from an anime character" — cần cascade 3 tầng (SCRFD → Chrominance/Geometry heuristic → ArcFace clustering) mới dùng được để phân loại faceless.
+- **Chưa triển khai cascade** — cần làm trước khi tin kết quả faceless classification.
+
+### ✅ Kiểm định
+- `validate-project.js` PASS · E2E 52/52 PASS · `intelligence.db`: channels 52 / videos 217 / edges 410.
+- Script tái dùng: `scripts/bench-scrfd-gpu.py` · Backup: `_backup/20260916-spider-fix/`.
+
 ## 2026-09-16 — SECURITY CRITICAL: Vá Lộ API Key Public + Denylist Server + Live Verification 10/10 Kênh
 
 ### 🔴 Phát hiện CRITICAL (đã xử lý)

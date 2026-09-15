@@ -1,3 +1,32 @@
+## 2026-09-16 — SECURITY CRITICAL: Vá Lộ API Key Public + Denylist Server + Live Verification 10/10 Kênh
+
+### 🔴 Phát hiện CRITICAL (đã xử lý)
+- **2 key Context.dev (`ctxt_secret_*`) bị lộ plaintext** trong file git-tracked `docs/NOI-BO/chat/phien-1-khoi-dong-du-an.md:149,151` và `2026-07-30_6c4ddd63.md:317`.
+  - Đã phơi bày trên **GitHub public** (`github.com/henyeu247-max/h2dev-project`) VÀ **VPS public** qua Cloudflare (`https://h2dev-learn.tonymmo.com/docs/NOI-BO/chat/...` → HTTP 200 trước fix).
+  - **Đã redact** khỏi file tracked ngày 16/09/2026; key gốc lưu trong `_private/mcp-keys-h2dev.md`.
+  - ⚠️ **CẦN ANH REVOKE 2 KEY NÀY** — key vẫn truy hồi được từ git history (commit `8309c66`); redact chỉ ngăn phơi bày mới, KHÔNG vô hiệu hóa key.
+- **Cơ chế `BLOCKED` không tồn tại** (đã gỡ 13/09/2026, docs `AGENTS.md`/`TREE.md` ghi sai là còn). Thực tế trước fix: `_private` · `_backup` · `_audit` · `_internal` · `_drafts` · `data/h2dev_master.db` đều serve **HTTP 200** không auth (bind `0.0.0.0:8899`).
+
+### 🛠️ Can thiệp
+- `server.js`: thêm `SENSITIVE_SEGMENTS` denylist chặn 5 thư mục nhạy cảm + chặn file `.db/.sqlite/.sqlite3` qua web tĩnh. **KHÔNG chặn** data học liệu (`data/`, `data-tabs/`, `docs/`, `assets/`, `video/`) — tôn trọng Rule 1.7 mở khóa dữ liệu.
+- Backup trước sửa: `_backup/20260916-security-redact/`.
+
+### ✅ Kiểm chứng
+- **VPS đã vá live**: `_private` / `_backup` / `data/h2dev_master.db` → **HTTP 403**; `data-tabs/raw-kenh-mau.json` + `/` → **HTTP 200**; secret `ctxt_secret_*` không còn xuất hiện trên VPS public.
+- **Local cần restart admin** (PID 7520 chạy SYSTEM): dùng `D:\YTB\RESTART-H2DEV-SERVICE-ADMIN.cmd`.
+- Unit test logic denylist standalone: 12/12 case đúng.
+
+### 📊 Live Verification 10 Kênh Kids/Animation qua MCP Pool :3988
+- `youtube_intelligence__channel_dossier` (~200-450ms/tool): **10/10 kênh MATCH 100%** subs + videoCount so với data lưu.
+- Fix parser locale VI (`80,5 N` = 80.500; `N` = Nghìn) — data lưu vốn ĐÚNG, parser script mới là cái sai.
+- Proof: `docs/proof-live-verification-10kids.json` · script `scripts/verify-live-10kids.py`.
+
+### 🔍 Audit tổng thể (phát hiện thêm)
+- MCP Pool :3988 live (180 tools, uptime 29h); 2 Windows Services Running/Automatic; 9Router :20128 → 307.
+- Path traversal: **[KHÔNG]** — chống đúng (`server.js:280-288`). `.env` không bị web serve ([KHÔNG] + 403 cho 5 biến thể bypass). `.env` chưa từng vào git.
+- Thiếu CI/CD (`.github/workflows` trống), thiếu health-check automation, thiếu `ecosystem.config.js` (PM2 config nằm trên VPS).
+- Kho `.git` 245MB + ảnh raw-kenh PNG 2-2.8MB/file — cần cân nhắc Git LFS.
+
 ## 2026-09-16 — Đóng Gap Benchmark 10 Kênh Kids/Animation: Thumbnail Scoring Heuristic + Kiểm Định WPM + Satellite Ecosystem + E2E 52/52
 
 - **Chấm điểm thumbnail 10/10 (heuristic) cho 10 kênh** (`scripts/audit_10_kids_thumbnails_wpm.py`):

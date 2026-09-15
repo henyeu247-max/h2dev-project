@@ -48,3 +48,5 @@ data/h2dev_master.db-shm
 manifest_full.csv
 .venv/
 .venv-gpu/
+
+.cache/

@@ -1,3 +1,37 @@
+## 2026-09-16 — Triển Khai Faceless Vision Batch v4: Phân Loại 124 Kênh Mẫu Qua 9Router Local (Ổn Định Dài Hạn)
+
+### 🎯 Mục tiêu
+Áp dụng model đã benchmark (`ag/gemini-3.7-flash-low` primary + `Combo-Gemini-3.7-flash` fallback) vào sản xuất: phân loại faceless (kênh có mặt người dẫn thật hay không) + ngách cho **toàn bộ 124 kênh mẫu**, hiển thị lên Web UI.
+
+### 🔁 3 lỗi đã sửa qua 3 version (đo thật, không đoán)
+| Version | Lỗi phát hiện | Bằng chứng | Fix |
+|---|---|---|---|
+| v1 | Prompt trộn "mặt thật" vs "hình người" → 17 kênh AI-human bị đếm nhầm HAS_FACE | Cross-tab verdict×type: `REAL_HUMAN + AI_GENERATED = 17` | Tách nhận thức thị giác khỏi phân loại nghiệp vụ |
+| v2 | Hỏi cấp 1 ảnh → collage người khác nhau bị đếm thành presenter | RAW-011 (mugshots), RAW-080 (film stills nhiều diễn viên) | Chuyển sang câu hỏi cấp kênh |
+| v3 | Input là screenshot trang kênh (nhiễu UI + vidIQ overlay) → ca biên dao động | RAW-118 lật kết quả giữa các lần chạy | v4: 6 thumbnail SẠCH từ RSS |
+| **v4** | — | — | 6 thumbnail sạch + **bỏ phiếu 2 vòng (tie-break vòng 3)** |
+
+### 📊 Kết quả v4 (final)
+- **124/124 kênh OK** trong **120.6s** (0.97s/kênh, 13 lanes) — 0 fail
+- **123/124 unanimous** (99.2% đồng thuận), 1 ca majority (RAW-117)
+- **122 FACELESS · 2 HAS_FACE** (RAW-117 The Invisible Neighbors, RAW-118 Wes Tucker — đã verify bằng mắt: cùng người dẫn lặp lại nhiều thumbnail)
+- **Stability test**: chạy lại 10 kênh → verdict đồng nhất 9/9 (RAW-090 không tồn tại, đánh số có khoảng trống)
+- Phân bố: AI_GENERATED 52 · DRAWN_2D 32 · REAL_FOOTAGE_NO_FACE 24 · RENDER_3D 7 · OBJECT_ONLY 7 · FACE_CAM 2
+- 7 kênh `needsReview` (2 presenter verify + 5 AI lẫn người thật) — cắm cờ sẵn cho anh spot-check
+
+### 🖥️ Tích hợp Web UI (index.html)
+- **Stat banner**: "Faceless (Vision)" = 122, sub "2 kênh có mặt người thật"
+- **Badge trên card**: 🎭 Faceless (xanh) / 👤 Có mặt người thật (đỏ) + tooltip loại hình
+- **Dòng thông tin Vision**: verdict · loại · ngách + cờ "cần review"
+- **Filter mới**: "Faceless (Vision AI)" 3 nút (Tất cả 124 / Faceless 122 / Có mặt 2)
+- **Verify**: Playwright VERIFY-PASS (122/2/124 đúng, 0 console error) · E2E chuẩn 12/12 PASS
+
+### 📁 Deliverables
+- `scripts/faceless-vision-batch.py` (v4, production-ready: RSS clean thumbs + voting + checkpoint resume + backup tự động)
+- `knowledge-hub/docs/QUYET-DINH-MODEL-9ROUTER-LOCAL.md` (bổ sung mục triển khai v4)
+- `_archive/20260916-faceless-vision/` (bằng chứng: 5 log run + cross-check scripts)
+- Data: `data-tabs/raw-kenh-mau.json` — 124 records có `thumbnailVision` {isFaceless, hasRealHumanFace, facelessType, thumbnailNiche, votes, agreement, needsReview...}
+
 ## 2026-09-16 — Benchmark Model 9Router LOCAL: Chọn Model Cho Từng Công Việc (Vision Batch + Text)
 
 ### 🎯 Bối cảnh

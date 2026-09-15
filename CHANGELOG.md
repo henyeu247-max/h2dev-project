@@ -1,3 +1,24 @@
+## 2026-09-14 — Khắc phục Triệt Để Lỗi Mất Focus Ô Tìm Kiếm & Nâng Cấp Gợi Ý Thông Minh Match Video Raw
+
+- **Khắc phục triệt để lỗi mất focus khi gõ chữ (Caret & Focus Loss Bug):**
+  - *Nguyên nhân gốc rễ:* Sự kiện `oninput` trước đó gọi `render()` lập tức trên từng ký tự gõ vào, khiến toàn bộ cây DOM bên trong `#content` bị hủy bỏ và dựng lại (`el.innerHTML = html`), làm thẻ `<input id="fq">` bị xóa và thay thế, dẫn đến việc mất focus bàn phím sau mỗi 1 chữ gõ.
+  - *Xử lý triệt để 2 lớp:*
+    1. Bổ sung cơ chế lưu và khôi phục Focus & Vị trí con trỏ (Caret Range) trong `render()`: Tự động lưu `selectionStart`/`selectionEnd` của input đang hoạt động trước khi re-render và khôi phục lại vị trí ngay sau khi DOM hoàn tất.
+    2. Áp dụng kỹ thuật `searchDebounceTimer` (200ms) trên toàn bộ các ô tìm kiếm (`#fq`, `#fq-nx`): Người dùng gõ chữ liên tục mượt mà mà không bị gián đoạn hay mất nét.
+- **Nâng cấp công cụ tìm kiếm khớp toàn diện Video Raw:**
+  - Mở rộng phạm vi tìm kiếm trong `renderRawKenh()`: Không chỉ khớp tên kênh, handle, ngách, tên file, mà nay đã khớp **toàn bộ tiêu đề video raw bão view** (`featuredDemoVideo.title`, `visionAnalysis.videoTitles`, và `ocr.videoRows[].title`).
+  - Cho phép người dùng tìm trực tiếp bằng chủ đề video (ví dụ: *"civilizations"*, *"forbidden"*, *"islands"*...).
+- **Xây dựng Dropdown Gợi Ý Trực Quan Thời Gian Thực (Smart Match Suggestions):**
+  - Hiển thị bảng gợi ý thông minh nổi bật ngay bên dưới thanh tìm kiếm khi người dùng gõ từ 1 ký tự:
+    * 📺 **Kênh Mẫu & Handle**: Tên kênh, handle, số lượng subs, chip RAW-xxx.
+    * 🎬 **Video Raw Bão View**: Tiêu đề video, lượt views, kênh sở hữu.
+    * 🏷️ **Ngách Nội Dung**: Tên ngách và số lượng kênh trong ngách.
+  - Tô màu highlight từ khóa tìm kiếm bằng thẻ `<mark>`.
+  - Hỗ trợ phím điều hướng `ArrowDown`, `ArrowUp`, `Enter` để chọn, `Escape` hoặc click ngoài để đóng.
+  - Nút bấm nhanh `[Mở ↗]` trên từng gợi ý cho phép mở trực tiếp modal phân tích sâu của kênh đó.
+  - Bổ sung nút xóa nhanh `[✕]` (`#btn-clear-raw-q`) để xóa trắng ô tìm kiếm và tự động focus lại.
+- **Kiểm định nghiệm thu:** Test gõ chuỗi liên tục bằng Playwright thành công, dropdown gợi ý hiển thị tức thì, `validate-project.js` PASS 100%, E2E PASS 132/132 checks.
+
 ## 2026-09-14 — Nâng cấp CI/CD VPS: Tự Động Hóa Xây Dựng Master DB Qua Post-Receive Hook
 
 - **Tích hợp tự động hóa nạp database vào Git Hook trên VPS (`/root/h2dev.git/hooks/post-receive`):**

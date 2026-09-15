@@ -1,0 +1,123 @@
+{
+  "channelId": "UCPYrBmO_Sea2LwdB-PJQNlA",
+  "rawId": "RAW-031",
+  "channelTitle": "Jota Drive",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "BR + US / Global (Tiếng Anh) - fan BeamNG.Drive & Gameplay",
+    "audienceProfile": "Game thủ, fan vật lý mô phỏng xe cộ và cảnh crash mãn nhãn (16-40 tuổi); yêu thích cảm giác phá hủy chân thực nhưng hài hước",
+    "viewingHabit": "Xem compilation crash 8-15 phút vào giờ giải trí; xem lặp lại các pha crash đẹp; thích bình luận hài hước ngắn gọn",
+    "emotionalCore": "Phấn khích trước pha phá hủy vật lý mãn nhãn + cười trước những pha 'Instant Karma'"
+  },
+  "visualDirective": {
+    "styleShort": "Hyper-realistic BeamNG.Drive vehicle crash simulation footage (the audience is gaming & physics fans, cinematic crash staging, slow-motion replays, dramatic camera angles)",
+    "mascot": "Xe Tải / Xe Đua chính (chiếc xe gây 'Instant Karma' trong mỗi tập)",
+    "cameraLighting": "Cinematic gameplay lighting, bright sunny test tracks mixed with dramatic slow-mo, sparks and debris highlight, camera shake on impact, replays from multiple angles",
+    "style": "Realistic BeamNG.Drive simulation capture, photorealistic vehicle damage physics, cinematic staging of crash sequences, slow-motion replays, dynamic multi-angle cuts, no real violence (simulation only), comedic 'Instant Karma' storytelling through action",
+    "negativePrompt": "no real gore, no real people harmed, no political content, no fake CGI explosions (use game physics), no motion sickness-inducing chaotic cuts without replay",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: Hyper-realistic BeamNG.Drive vehicle crash simulation footage (gaming & physics fans, cinematic staging, slow-mo replays)\n{{STYLE}}: Realistic BeamNG.Drive simulation capture, photorealistic vehicle damage physics, cinematic crash staging, slow-motion replays, multi-angle cuts, comedic karma storytelling\n{{MASCOT}}: The Karma Truck\nScene Action: A red sports car speeds recklessly past a semi-truck on a sunny highway, sparks fly as the truck swerves, dramatic dust and debris, cinematic composition, gameplay realism --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Pha Lái Ẩu Tốc Độ",
+        "description": "Xe đua phóng ẩu trên cao tốc, góc camera bám sát bánh xe, tốc độ + độ rung chân thực.",
+        "prompt": "Cinematic gameplay shot of a sports car speeding recklessly on a sunny highway, low camera angle near wheels, motion blur, realistic BeamNG physics --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Va Chạm Chậm (Impact Slow-mo)",
+        "description": "Slow-motion pha va chạm, mảnh vỡ kim loại bay, bánh xe văng, khói bụi bốc lên.",
+        "prompt": "Dramatic slow-motion crash impact, metal debris flying, wheel bouncing, smoke and dust explosion, cinematic lighting, realistic simulation --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Replay Đa Góc",
+        "description": "Replay pha crash từ nhiều góc máy trên không + góc thấp, chỉ số tốc độ hiển thị.",
+        "prompt": "Multi-angle replay shot of a vehicle crash, aerial drone view plus low ground angle, speed indicators, cinematic color grade, BeamNG simulation --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: Hậu Quả Karma",
+        "description": "Chiếc xe gây chuyện lật ngửa giữa đường, các xe khác né tránh, hài hước.",
+        "prompt": "Comedic karma aftermath, reckless car flipped upside down on the highway, other vehicles avoiding, smoke rising, bright daylight, realistic simulation humor --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1: Fast low-angle tracking beside the speeding car, slight camera shake.",
+      "Shot 2: 50% slow-motion on impact, then normal speed follow-through.",
+      "Shot 3: Smooth aerial drone orbit replay, then cut to ground-level slow-mo.",
+      "Shot 4: Static wide shot hold on the karma aftermath, subtle zoom-out reveal."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng thoại gấp gáp + pha nguy hiểm ngay giây đầu (Immediate Danger Hook)",
+    "openingFormula": "Mở bằng thoại khẩn cấp: 'Stop the truck! stop now!' kèm tiếng phanh gấp và hình ảnh xe lao nhanh — khán giả bị cuốn vào pha nguy hiểm ngay từ giây 0, không intro dài dòng.",
+    "pacingStructure": "[0-15s] Hook thoại khẩn + xe lao nhanh -> [15-45s] Giới thiệu tình huống (cướp xe nhầm, phanh hỏng, đua ẩu) -> [45s-hết] Chuỗi 4-6 pha crash liên tiếp (mỗi pha 60-90s có replay chậm) -> [Kết thúc] Pha karma đỉnh nhất + CTA đăng ký",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% kịch bản crash gốc + 30% tình huống mới, chia 3-5 Part (400-600 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional gaming compilation scriptwriter specializing in BeamNG.Drive crash compilations and 'Instant Karma' storytelling (style of Jota Drive and BeamNG crash channels).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Energetic, concise, comedic commentary, short punchy lines, hype for each crash, dramatic build-up before impact. Keep 70% of the original crash sequence structure; add 30% new comedic framing, karma callouts, and viewer-engagement hooks.\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 3-5 parts (for a 8-15 minute compilation).\n   - Each part should be 400-600 words, written as continuous energetic commentary with [Action Notes] for the editor, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: Truck and Car Crashes #13 [BeamNG.Drive] (zs1B4g0O_vQ - 16.69M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "zs1B4g0O_vQ",
+    "scriptRefTitle": "Truck and Car Crashes #13 [BeamNG.Drive] (16.69M views)",
+    "voiceSampleVideoNote": "Voice sample extracted from zs1B4g0O_vQ (Truck and Car Crashes #13) for optimal voice quality; script blueprint references zs1B4g0O_vQ (highest-traffic video, 16.69M views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "[Loại Xe 1] and [Loại Xe 2] Crashes #[N] [BeamNG.Drive] + [Yếu Tố Hài Hước]",
+    "thumbnailComposition": "Chiếc xe đua đỏ đang va chạm giữa không trung chiếm 65% khung; Xe tải trắng + khói bụi nền; Text 2-3 từ màu Đỏ (#EF4444) hoặc Vàng (#FACC15) viền đen dày.",
+    "thumbnailText": "CRASH! 💥 / KARMA! ⚡ / WRONG TRUCK! 🚚",
+    "cleanThumbnailPrompt": "Cinematic BeamNG.Drive YouTube thumbnail, red sports car mid-air collision with a white semi-truck on the right 65% of frame, sparks and debris, sunny highway background, dramatic lighting, bold empty space for text, realistic simulation style, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "Truck and Car Crashes #13 [BeamNG.Drive]",
+      "Instant Karma and Car Crashes #06 [BeamNG.Drive]",
+      "Truck and Car Crashes #17 [BeamNG.Drive] | Bad Day Edition"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "h2dev-hoat-hinh (Pipeline Hoạt Hình AI - biến thể Gameplay Compilation)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
+    "repoPath": "pipelines/hoat-hinh-ai/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Antoni / Daniel - giọng nam bình luận năng lượng cao, $0.8/video)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output)",
+      "motion": "Google Veo 3.1 / Kling 3.0 Omni (6-shot narrative)",
+      "assembly": "CapCut PC + DaVinci Resolve"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Antoni / Daniel - hype, sảng khoái)",
+    "videoTool": "BeamNG.Drive capture (ReShade 4K) -> CapCut PC (slow-mo replay, cinematic grade)",
+    "bgmSoundtrack": "Epic gaming EDM/trap beat nền + tiếng động cơ (ducking -20dB dưới giọng bình luận)",
+    "soundEffects": "Engine rev, tire screech, metallic crash, glass shatter, comedic record scratch, whoosh"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ/BR sạch + Trình duyệt chống phát hiện + Gmail ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube, gắn Logo/Banner xe đua, dán trọn bộ 46 tags SEO có sẵn, ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Chạy BeamNG.Drive + ReShade capture 4K -> Thu âm ElevenLabs Antoni -> Dựng compilation + replay chậm trên CapCut (mỗi video 8-15 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức 'Crashes #[N]' -> Đăng Unlisted 2 giờ -> Hẹn giờ công khai giờ vàng US (18h-22h EST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

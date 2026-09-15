@@ -46,7 +46,21 @@
       "transcriptJsonRel": "transcripts/oixhtdMRDHA_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/oixhtdMRDHA_summary_vi.md",
-      "hookSnippet": "Ông già Macdonald có một con bò, e-i-e-i-o...."
+      "hookSnippet": "Ông già Macdonald có một con bò, e-i-e-i-o....",
+      "thumbnailScore": {
+        "compositeScore": 70,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 10,
+          "contrast": 72,
+          "mobileReadability": 89,
+          "curiosityGap": 69,
+          "textBurden": 85,
+          "policySafety": 100,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Old MacDonald Had a Farm Morning Routine! 🐄🐕 3D Cartoon for Kids | Animal Song |...)"
+      }
     },
     {
       "rank": 7,
@@ -95,47 +109,21 @@
       "transcriptJsonRel": "transcripts/28e1BQUU63E_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/28e1BQUU63E_summary_vi.md",
-      "hookSnippet": "Chào mừng bạn trở lại trang trại của Old MacDonald, nơi tất cả các loài động vật đều vui vẻ và ca hát!..."
-    },
-    {
-      "rank": 5,
-      "videoId": "bsuwHO7mFbE",
-      "url": "https://www.youtube.com/watch?v=bsuwHO7mFbE",
-      "title": "Five Little Monkeys Jumping at Old MacDonald’s Farm. They Stole all the Food 😱 Poor Animals!",
-      "thumbnail": "https://i.ytimg.com/vi/bsuwHO7mFbE/maxresdefault.jpg",
-      "publishedAt": "2026-02-26T10:44:35Z",
-      "duration": "PT11M29S",
-      "views": 2432195,
-      "likes": 47212,
-      "comments": 0,
-      "vph": 523.67,
-      "breakoutScore": 1.63,
-      "tags": [
-        "old macdonald farm",
-        "farm story",
-        "animal story",
-        "kids cartoon",
-        "farm animals",
-        "stop the thief",
-        "animal rescue",
-        "moral story",
-        "3d animation",
-        "kids video",
-        "Thief in Farm",
-        "five little monkeys",
-        "five little monkeys jumping on the bed"
-      ],
-      "description": "#OldMacdonaldFarm #FarmStory #animalstory Five Little Monkeys Jumping at Old MacDonald’s Farm. They Stole all the Food 😱 Poor Animals!",
-      "hasTranscript": true,
-      "playability": "PLAYABLE",
-      "playabilityStatus": "🟢 Public & Khả dụng",
-      "estimatedEarnings": "$8,513",
-      "segmentCount": 16,
-      "transcriptLength": 623,
-      "transcriptJsonRel": "transcripts/bsuwHO7mFbE_transcript.json",
-      "hasSummaryVi": true,
-      "summaryViRel": "transcripts/bsuwHO7mFbE_summary_vi.md",
-      "hookSnippet": "Đã đến lúc cho một ngày vinh quang khác tại trang trại của Old MacDonald!..."
+      "hookSnippet": "Chào mừng bạn trở lại trang trại của Old MacDonald, nơi tất cả các loài động vật đều vui vẻ và ca hát!...",
+      "thumbnailScore": {
+        "compositeScore": 70,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 29,
+          "contrast": 83,
+          "mobileReadability": 93,
+          "curiosityGap": 55,
+          "textBurden": 63,
+          "policySafety": 100,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Old MacDonald Farm, Animals are Happy + Five Monkeys + Finger Family | Nursery R...)"
+      }
     },
     {
       "rank": 3,
@@ -173,7 +161,21 @@
       "transcriptJsonRel": "transcripts/i2Iz5nJgXKw_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/i2Iz5nJgXKw_summary_vi.md",
-      "hookSnippet": "Chào buổi sáng ông già MacDonald!..."
+      "hookSnippet": "Chào buổi sáng ông già MacDonald!...",
+      "thumbnailScore": {
+        "compositeScore": 79,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 31,
+          "contrast": 97,
+          "mobileReadability": 99,
+          "curiosityGap": 81,
+          "textBurden": 69,
+          "policySafety": 100,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Two Monkey  at Old MacDonald’s Farm!  Every Animal Is Gone | New Old MacDonald R...)"
+      }
     },
     {
       "rank": 2,
@@ -221,63 +223,21 @@
       "transcriptJsonRel": "transcripts/slMHWuik1nw_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/slMHWuik1nw_summary_vi.md",
-      "hookSnippet": "Bác MacDonald có một nông trại, E-I-E-I-O! Và trong nông trại bác có chú bò sữa, E-I-E-I-O! Này một tiếng 'úm bò' đây, m..."
-    },
-    {
-      "rank": 6,
-      "videoId": "88xcvKytRLQ",
-      "url": "https://www.youtube.com/watch?v=88xcvKytRLQ",
-      "title": "Wheels on the Bus 🚌 +Baby  Shark🦈 + Old MacDonald🌸. | KARAOKE! | Sing Along With Me! | Kids Songs",
-      "thumbnail": "https://i.ytimg.com/vi/88xcvKytRLQ/maxresdefault.jpg",
-      "publishedAt": "2026-02-25T10:58:19Z",
-      "duration": "PT8M8S",
-      "views": 736222,
-      "likes": 22659,
-      "comments": 0,
-      "vph": 64.35,
-      "breakoutScore": 0.9,
-      "tags": [
-        "Wheels on the Bus",
-        "abckidtv",
-        "baby songs",
-        "best nursery rhymes",
-        "children's music",
-        "for kids",
-        "healthy habits",
-        "karaoke",
-        "karaoke songs for kids",
-        "kids learning",
-        "kids music",
-        "kids song",
-        "kids songs",
-        "kids videos",
-        "lyrics",
-        "nursery rhyme",
-        "nursery rhymes",
-        "preschool",
-        "sing along",
-        "sing along songs",
-        "sing along with me",
-        "sing-along songs",
-        "songs for babies",
-        "toddler",
-        "toddler songs",
-        "videos for babies",
-        "with lyrics",
-        "baby shark",
-        "old macdonald had a farm"
-      ],
-      "description": "#SingAlong #Karaoke #oldmacdonald #babyshark #wheelsonthebus \nWheels on the Bus 🚌 +Baby  Shark🦈 + Old MacDonald🌸. | KARAOKE! | Sing Along With Me! | Kids Songs\n\nSing Along with the very best kids' songs and nursery rhymes for kids! Sing, Dance and Party with us! 😀🎤 \n\nYour new best friends are taking a ride on the bus!\n\nSubscribe for new videos every week!\n\n\nWheels on the Bus \n\nThe wheels on the bus go round and round,\nRound and round, round and round.\nThe wheels on the bus go round and round,\nAll through the town.\n\nThe doors on the bus go open and shut,\nOpen and shut, open and shut.\nThe doors on the bus go open and shut,\nAll through the town.\n\nThe wipers on the bus go swish, swish, swish,\nSwish, swish, swish, swish, swish, swish.\nThe wipers on the bus go swish, swish, swish,\nAll through the town.\n\nThe signals on the bus go blink, blink, blink,\nBlink, blink, blink, blink, blink, blink.\nThe signals on the bus go blink, blink, blink,\nAll over the town.\n\nThe horn on the bus goes beep, beep, beep,\nBeep, beep, beep, beep, beep, beep.\nThe horn on the bus goes beep, beep, beep,\nAll through the town.\n\nThe motor on the bus goes vroom, vroom, vroom,\nVroom, vroom, vroom, vroom, vroom, vroom.\nThe motor on the bus goes vroom, vroom, vroom,\nAll through the town.\n\nThe people on the bus go up and down,\nUp and down, up and down.\nThe people on the bus go up and down,\nAll through the town.\n\nThe babies on the bus go “wah, wah, wah,”\nWah, wah, wah, wah, wah, wah.\nThe babies on the bus go “wah, wah, wah,”\nAll through the town.\n\nThe mommies on the bus go shh, shh, shh,\nShh, shh, shh, shh, shh, shh.\nThe mommies on the bus go shh, shh, shh,\nAll through the town.\n\nThe daddies on the bus go “I love you,”\n“I love you,” “I love you.”\nThe daddies on the bus go “I love you,”\nAll through the town.\n\nThe wheels on the bus go round and round,\nRound and round, round and round.\nThe wheels on the bus go round and round,\nAll through the town.",
-      "hasTranscript": true,
-      "playability": "PLAYABLE",
-      "playabilityStatus": "🟢 Public & Khả dụng",
-      "estimatedEarnings": "$2,577",
-      "segmentCount": 15,
-      "transcriptLength": 614,
-      "transcriptJsonRel": "transcripts/88xcvKytRLQ_transcript.json",
-      "hasSummaryVi": true,
-      "summaryViRel": "transcripts/88xcvKytRLQ_summary_vi.md",
-      "hookSnippet": "Các bánh xe trên xe buýt quay tròn, quay tròn, tròn và..."
+      "hookSnippet": "Bác MacDonald có một nông trại, E-I-E-I-O! Và trong nông trại bác có chú bò sữa, E-I-E-I-O! Này một tiếng 'úm bò' đây, m...",
+      "thumbnailScore": {
+        "compositeScore": 59,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 0,
+          "contrast": 61,
+          "mobileReadability": 85,
+          "curiosityGap": 55,
+          "textBurden": 51,
+          "policySafety": 100,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Old MacDonald Had A Farm | Nursery Rhymes | Kids Songs Nursery Rhymes...)"
+      }
     },
     {
       "rank": 1,
@@ -342,8 +302,34 @@
       "transcriptJsonRel": "transcripts/01aHhgMuE14_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/01aHhgMuE14_summary_vi.md",
-      "hookSnippet": "Cá mập con, đu đu đu đu đu đu. Cá mập con, đu đu đu đu đu đu. Cá mập con, đu đu đu đu đu đu. Cá mập con! Cá mập mẹ, đu đ..."
+      "hookSnippet": "Cá mập con, đu đu đu đu đu đu. Cá mập con, đu đu đu đu đu đu. Cá mập con, đu đu đu đu đu đu. Cá mập con! Cá mập mẹ, đu đ...",
+      "thumbnailScore": {
+        "compositeScore": 63,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 11,
+          "contrast": 37,
+          "mobileReadability": 75,
+          "curiosityGap": 75,
+          "textBurden": 80,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Baby Shark Doo Doo - Dance and Sing with KARAOKE! | BEST OF Nursery Rhymes | Sin...)"
+      }
     }
   ],
-  "transcriptsCount": 7
+  "transcriptsCount": 7,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 5,
+    "declaredCount": 7,
+    "missingThumbnails": [
+      "bsuwHO7mFbE",
+      "88xcvKytRLQ"
+    ],
+    "averageCompositeScore": 68,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

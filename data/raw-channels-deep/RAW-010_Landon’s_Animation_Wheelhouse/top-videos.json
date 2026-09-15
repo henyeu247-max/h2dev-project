@@ -42,7 +42,21 @@
       "transcriptJsonRel": "transcripts/i8tgIoF_b70_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/i8tgIoF_b70_summary_vi.md",
-      "hookSnippet": "Just in time, Đại ca Big B! Này, thanks, you can't escape that easily. Thanks again Đại ca Big B. I got you Đầu tàu Thom..."
+      "hookSnippet": "Just in time, Đại ca Big B! Này, thanks, you can't escape that easily. Thanks again Đại ca Big B. I got you Đầu tàu Thom...",
+      "thumbnailScore": {
+        "compositeScore": 58,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 10,
+          "contrast": 63,
+          "mobileReadability": 85,
+          "curiosityGap": 67,
+          "textBurden": 23,
+          "policySafety": 80,
+          "visualNovelty": 92
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Big B Meets D-Light | Thomas UNHINGED Shorts...)"
+      }
     },
     {
       "rank": 10,
@@ -77,7 +91,21 @@
       "transcriptJsonRel": "transcripts/psK1U3FeMAU_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/psK1U3FeMAU_summary_vi.md",
-      "hookSnippet": "Này, hold the brake! Này, look out! Chúng ta đang ở đâu thế này? Này, uh-oh. Well, if it isn't Đầu tàu Thomas himself. N..."
+      "hookSnippet": "Này, hold the brake! Này, look out! Chúng ta đang ở đâu thế này? Này, uh-oh. Well, if it isn't Đầu tàu Thomas himself. N...",
+      "thumbnailScore": {
+        "compositeScore": 56,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 17,
+          "contrast": 56,
+          "mobileReadability": 82,
+          "curiosityGap": 61,
+          "textBurden": 29,
+          "policySafety": 75,
+          "visualNovelty": 92
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Big B & Double Trouble | Thomas UNHINGED Shorts...)"
+      }
     },
     {
       "rank": 5,
@@ -117,7 +145,21 @@
       "transcriptJsonRel": "transcripts/dbezBzyhr4A_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/dbezBzyhr4A_summary_vi.md",
-      "hookSnippet": "Bạn đã xác định được Thomas chưa?..."
+      "hookSnippet": "Bạn đã xác định được Thomas chưa?...",
+      "thumbnailScore": {
+        "compositeScore": 56,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 17,
+          "contrast": 66,
+          "mobileReadability": 87,
+          "curiosityGap": 61,
+          "textBurden": 6,
+          "policySafety": 80,
+          "visualNovelty": 92
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Thomas - UNHINGED VERSION 3...)"
+      }
     },
     {
       "rank": 2,
@@ -158,7 +200,21 @@
       "transcriptJsonRel": "transcripts/ZGHSG9J2ZL4_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/ZGHSG9J2ZL4_summary_vi.md",
-      "hookSnippet": "Dừng lại mau đi. Thả tôi ra. Này, huh? Này, oh, no you don't. Này, you want me to win? Này, you let him go right now. Go..."
+      "hookSnippet": "Dừng lại mau đi. Thả tôi ra. Này, huh? Này, oh, no you don't. Này, you want me to win? Này, you let him go right now. Go...",
+      "thumbnailScore": {
+        "compositeScore": 59,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 27,
+          "contrast": 59,
+          "mobileReadability": 83,
+          "curiosityGap": 67,
+          "textBurden": 23,
+          "policySafety": 75,
+          "visualNovelty": 92
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Big B Saving James | Thomas UNHINGED Shorts...)"
+      }
     },
     {
       "rank": 4,
@@ -201,7 +257,21 @@
       "transcriptJsonRel": "transcripts/rKdft0wEJ7M_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/rKdft0wEJ7M_summary_vi.md",
-      "hookSnippet": "Marty, chuyện đó có thể là thảm họa...."
+      "hookSnippet": "Marty, chuyện đó có thể là thảm họa....",
+      "thumbnailScore": {
+        "compositeScore": 53,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 21,
+          "contrast": 45,
+          "mobileReadability": 78,
+          "curiosityGap": 61,
+          "textBurden": 17,
+          "policySafety": 75,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Back to the Future - UNHINGED VERSION...)"
+      }
     },
     {
       "rank": 9,
@@ -238,7 +308,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 61,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 4,
+          "contrast": 89,
+          "mobileReadability": 96,
+          "curiosityGap": 55,
+          "textBurden": 29,
+          "policySafety": 80,
+          "visualNovelty": 92
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Train Disaster in London Paddington Station CRASH ON VIDEO...)"
+      }
     },
     {
       "rank": 1,
@@ -264,7 +348,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 47,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 19,
+          "contrast": 33,
+          "mobileReadability": 73,
+          "curiosityGap": 61,
+          "textBurden": 0,
+          "policySafety": 75,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Blender Car Chase Animation...)"
+      }
     },
     {
       "rank": 8,
@@ -304,7 +402,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 52,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 0,
+          "contrast": 69,
+          "mobileReadability": 88,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 80,
+          "visualNovelty": 92
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Flying Scotsman Smashes SUV...)"
+      }
     },
     {
       "rank": 6,
@@ -337,7 +449,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 45,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 21,
+          "contrast": 28,
+          "mobileReadability": 71,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 75,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: “Toasted” Short Film Animation...)"
+      }
     },
     {
       "rank": 3,
@@ -374,8 +500,31 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 53,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 13,
+          "contrast": 58,
+          "mobileReadability": 83,
+          "curiosityGap": 55,
+          "textBurden": 11,
+          "policySafety": 75,
+          "visualNovelty": 92
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Robot Car Chase Animation Short Film...)"
+      }
     }
   ],
-  "transcriptsCount": 5
+  "transcriptsCount": 5,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 10,
+    "declaredCount": 10,
+    "missingThumbnails": [],
+    "averageCompositeScore": 54,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

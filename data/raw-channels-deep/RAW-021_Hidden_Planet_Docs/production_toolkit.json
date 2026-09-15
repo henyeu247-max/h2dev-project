@@ -71,16 +71,16 @@
     "sopDocPath": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md",
     "repoPath": "raw-niches/US_EverydayHistory/README.md",
     "scriptTool": "Claude 3.5 Sonnet (Chuyên sâu kịch tính hóa tư liệu lịch sử & khảo cổ học)",
-    "voiceTool": "ElevenLabs Model Multilingual v2, Giọng: Liam / Brian (Trầm ấm, nghiêm nghị, bí ẩn, phong cách tài liệu PBS/NatGeo)",
-    "videoTool": "Kling 1.5 / Runway Gen-3 (Chuyển động chùm sáng khai quật và góc lia hiện vật đồng cổ) -> Hậu kỳ CapCut PC",
+    "voiceTool": "ElevenLabs Model Multilingual v2, Giọng: Marcus / Liam / Brian (Trầm ấm, nghiêm nghị, bí ẩn, phong cách tài liệu PBS/NatGeo)",
+    "videoTool": "Flux 1.1 Pro / Midjourney v6.1 (Tạo ảnh tĩnh hiện vật cổ chân thực) -> Kling 1.5 / Hailuo Minimax / Runway Gen-3 (Chuyển động chùm sáng khai quật và góc lia hiện vật đồng cổ) -> Hậu kỳ CapCut PC",
     "bgmSoundtrack": "Ancient Historical Ambient & Deep Bronze Resonances (Tiếng chuông đồng vang vọng xa xăm, nhịp trống bộ lạc chậm rãi, ducking âm lượng -18dB dưới giọng đọc)",
     "soundEffects": "Shovel striking metal, crumbling dry earth, echoing cavern wind, deep low-frequency sub drone"
   },
   "launchpad5Steps": [
     {
       "step": 1,
-      "title": "Môi Trường & Hạ Tầng",
-      "detail": "Chuẩn bị Proxy IPv4 US/UK sạch + Gmail 2FA trust ngâm 2 ngày trên trình duyệt cô lập."
+      "title": "Môi Trường, Hạ Tầng & Video Mỏ Neo (YPP Shield)",
+      "detail": "Chuẩn bị Proxy IPv4 US/UK sạch + Gmail 2FA trust. Đặc biệt: Quay 1 video Trailer 60s hậu trường (màn hình CapCut PC, timeline cắt dựng, giọng giới thiệu sứ mệnh) ghim đầu kênh để bảo chứng 100% người thật làm thủ công (chiến thuật Calvin Stories, Past Seven, The Invisible Neighbors)."
     },
     {
       "step": 2,
@@ -90,17 +90,17 @@
     {
       "step": 3,
       "title": "Sản Xuất Batch 5-10 Video",
-      "detail": "Dùng Master Script Prompt + Voice Liam ElevenLabs (-16 LUFS) + Kling/Runway tạo B-roll khai quật chân thực."
+      "detail": "Dùng Master Script Prompt (North Effect 70/30) + Voice Marcus/Liam ElevenLabs (-16 LUFS) + Kling 1.5/Hailuo Minimax tạo B-roll khai quật chiaroscuro."
     },
     {
       "step": 4,
       "title": "Bao Bì CTR & Lên Sóng",
-      "detail": "Áp dụng Title Formula + Thumbnail 3 điểm vàng, upload Unlisted 2h hẹn giờ phát sóng khung 19h–21h EST."
+      "detail": "Áp dụng Title Formula + Thumbnail quy tắc 1/3 (mặt nạ đồng 65% bên phải, text 35% bên trái), upload Unlisted 2h hẹn giờ phát sóng khung 19h–21h EST."
     },
     {
       "step": 5,
       "title": "Kích Hoạt YPP & AdSense",
-      "detail": "Seeding ngầm 2 tab, đạt mốc 1.000 sub / 4.000 giờ thì bật kiếm tiền qua tab ẩn danh sạch."
+      "detail": "Đạt mốc 1.000 sub / 4.000 giờ thì gửi đơn duyệt YPP qua tab ẩn danh sạch; Human Reviewer thấy video Trailer hậu trường ghim đầu sẽ duyệt ngay 100%."
     }
   ],
   "thumbnailScoringRubric": {

@@ -50,7 +50,21 @@
       "transcriptJsonRel": "transcripts/jGR2ikGDo50_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/jGR2ikGDo50_summary_vi.md",
-      "hookSnippet": "Ah...."
+      "hookSnippet": "Ah....",
+      "thumbnailScore": {
+        "compositeScore": 72,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 20,
+          "contrast": 60,
+          "mobileReadability": 84,
+          "curiosityGap": 87,
+          "textBurden": 82,
+          "policySafety": 92,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Thief Steals All the Farm Animals… But a Brave Dog Fights Back! 🐶 | Funny Cartoo...)"
+      }
     },
     {
       "rank": 10,
@@ -93,7 +107,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 63,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 40,
+          "contrast": 47,
+          "mobileReadability": 79,
+          "curiosityGap": 61,
+          "textBurden": 63,
+          "policySafety": 84,
+          "visualNovelty": 82
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: The Baby Elephant Who Got Lost on a Train | 3D Animation | Mama Toons...)"
+      }
     },
     {
       "rank": 4,
@@ -138,7 +166,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 65,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 25,
+          "contrast": 56,
+          "mobileReadability": 82,
+          "curiosityGap": 67,
+          "textBurden": 63,
+          "policySafety": 92,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Brave Rabbit vs Evil Eagle | Heart-Touching 3D Animated Short Film | Turtle Resc...)"
+      }
     },
     {
       "rank": 8,
@@ -183,7 +225,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 57,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 22,
+          "contrast": 42,
+          "mobileReadability": 77,
+          "curiosityGap": 55,
+          "textBurden": 51,
+          "policySafety": 92,
+          "visualNovelty": 82
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Brave Rabbit Saves Lost Duckling | Emotional Jungle Adventure Story | Mama Toons...)"
+      }
     },
     {
       "rank": 3,
@@ -217,7 +273,21 @@
       "transcriptJsonRel": "transcripts/affxL8VEXUE_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/affxL8VEXUE_summary_vi.md",
-      "hookSnippet": "[cười] Hãy xem con cá này tôi bắt được...."
+      "hookSnippet": "[cười] Hãy xem con cá này tôi bắt được....",
+      "thumbnailScore": {
+        "compositeScore": 61,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 18,
+          "contrast": 51,
+          "mobileReadability": 80,
+          "curiosityGap": 69,
+          "textBurden": 51,
+          "policySafety": 92,
+          "visualNovelty": 82
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Magic banyan tree   Stolen Magic Pot, Golden Goat & Revenge Stick! |Mama Toons...)"
+      }
     },
     {
       "rank": 2,
@@ -265,7 +335,21 @@
       "transcriptJsonRel": "transcripts/2m--dFkATDE_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/2m--dFkATDE_summary_vi.md",
-      "hookSnippet": "[cổ vũ và vỗ tay] Đi, đi, đi...."
+      "hookSnippet": "[cổ vũ và vỗ tay] Đi, đi, đi....",
+      "thumbnailScore": {
+        "compositeScore": 63,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 9,
+          "contrast": 53,
+          "mobileReadability": 81,
+          "curiosityGap": 61,
+          "textBurden": 80,
+          "policySafety": 92,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Epic Rabbit vs Turtle Race in the Jungle | Fun 3D Cartoon Adventure with a Big T...)"
+      }
     },
     {
       "rank": 6,
@@ -307,7 +391,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 58,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 17,
+          "contrast": 39,
+          "mobileReadability": 76,
+          "curiosityGap": 55,
+          "textBurden": 69,
+          "policySafety": 92,
+          "visualNovelty": 82
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Mama Cat Takes Her Unconscious Kitten to Hospital - Mama Toons - Heartbreaking M...)"
+      }
     },
     {
       "rank": 7,
@@ -354,7 +452,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 68,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 25,
+          "contrast": 59,
+          "mobileReadability": 83,
+          "curiosityGap": 75,
+          "textBurden": 65,
+          "policySafety": 92,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Giant Python Attacks the City! 🐍 Gorilla vs Monster Snake | Funny 3D Cartoon Ani...)"
+      }
     },
     {
       "rank": 9,
@@ -405,7 +517,21 @@
       "transcriptJsonRel": "transcripts/x-TUhSOo1Uo_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/x-TUhSOo1Uo_summary_vi.md",
-      "hookSnippet": "[khịt mũi] [khịt mũi] Xin chào...."
+      "hookSnippet": "[khịt mũi] [khịt mũi] Xin chào....",
+      "thumbnailScore": {
+        "compositeScore": 63,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 7,
+          "contrast": 59,
+          "mobileReadability": 84,
+          "curiosityGap": 55,
+          "textBurden": 80,
+          "policySafety": 92,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Fox & Crocodile’s Rainy Road Trip – Funny 3D Cartoon Adventure with an Emotional...)"
+      }
     },
     {
       "rank": 5,
@@ -451,8 +577,31 @@
       "transcriptJsonRel": "transcripts/W0kDOtrW1-c_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/W0kDOtrW1-c_summary_vi.md",
-      "hookSnippet": "và có lẽ một số trong số đó cũng có màu xanh lá cây...."
+      "hookSnippet": "và có lẽ một số trong số đó cũng có màu xanh lá cây....",
+      "thumbnailScore": {
+        "compositeScore": 58,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 5,
+          "contrast": 46,
+          "mobileReadability": 78,
+          "curiosityGap": 55,
+          "textBurden": 69,
+          "policySafety": 92,
+          "visualNovelty": 82
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Thousands of Rats Took Over the City Until a Mysterious Flute Player Appeared | ...)"
+      }
     }
   ],
-  "transcriptsCount": 5
+  "transcriptsCount": 5,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 10,
+    "declaredCount": 10,
+    "missingThumbnails": [],
+    "averageCompositeScore": 63,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

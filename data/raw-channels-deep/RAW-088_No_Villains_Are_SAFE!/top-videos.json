@@ -27,7 +27,21 @@
       "transcriptJsonRel": "transcripts/UbKKl9ov8ic_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/UbKKl9ov8ic_summary_vi.md",
-      "hookSnippet": "Đây là cảnh Peter đang phá hủy một chiếc tivi màn hình phẳng...."
+      "hookSnippet": "Đây là cảnh Peter đang phá hủy một chiếc tivi màn hình phẳng....",
+      "thumbnailScore": {
+        "compositeScore": 70,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 27,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 73,
+          "textBurden": 17,
+          "policySafety": 93,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Much Has Peter Griffin Cost Quahog?...)"
+      }
     },
     {
       "rank": 4,
@@ -53,7 +67,21 @@
       "transcriptJsonRel": "transcripts/l2-2r087_VA_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/l2-2r087_VA_summary_vi.md",
-      "hookSnippet": "Đây là cảnh Spongebob đang dành thời gian nấu món Krabby Patty...."
+      "hookSnippet": "Đây là cảnh Spongebob đang dành thời gian nấu món Krabby Patty....",
+      "thumbnailScore": {
+        "compositeScore": 60,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 24,
+          "contrast": 60,
+          "mobileReadability": 84,
+          "curiosityGap": 67,
+          "textBurden": 23,
+          "policySafety": 88,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Many Krabby Patties Has Spongebob ACTUALLY Made?...)"
+      }
     },
     {
       "rank": 5,
@@ -79,7 +107,21 @@
       "transcriptJsonRel": "transcripts/BCOG-y03OEo_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/BCOG-y03OEo_summary_vi.md",
-      "hookSnippet": "Đây là Spongebob hắt hơi khắp nhà bếp...."
+      "hookSnippet": "Đây là Spongebob hắt hơi khắp nhà bếp....",
+      "thumbnailScore": {
+        "compositeScore": 58,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 23,
+          "contrast": 45,
+          "mobileReadability": 78,
+          "curiosityGap": 67,
+          "textBurden": 29,
+          "policySafety": 88,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Many FDA Violations Has the Krusty Krab Had?...)"
+      }
     },
     {
       "rank": 8,
@@ -105,7 +147,21 @@
       "transcriptJsonRel": "transcripts/vpy-k5VIr1k_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/vpy-k5VIr1k_summary_vi.md",
-      "hookSnippet": "nghĩ rằng Chris Griffin chỉ là một đứa trẻ không biết gì của CW, tôi đã sai lầm khi xem xét..."
+      "hookSnippet": "nghĩ rằng Chris Griffin chỉ là một đứa trẻ không biết gì của CW, tôi đã sai lầm khi xem xét...",
+      "thumbnailScore": {
+        "compositeScore": 59,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 32,
+          "contrast": 52,
+          "mobileReadability": 81,
+          "curiosityGap": 67,
+          "textBurden": 17,
+          "policySafety": 88,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Long Would CHRIS's Prison Sentence be?...)"
+      }
     },
     {
       "rank": 9,
@@ -131,7 +187,21 @@
       "transcriptJsonRel": "transcripts/U0KLSNpN69Y_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/U0KLSNpN69Y_summary_vi.md",
-      "hookSnippet": "Đây là những gì Morty có thể làm với linh hồn ngoài hành tinh bình thường của bạn...."
+      "hookSnippet": "Đây là những gì Morty có thể làm với linh hồn ngoài hành tinh bình thường của bạn....",
+      "thumbnailScore": {
+        "compositeScore": 64,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 14,
+          "contrast": 91,
+          "mobileReadability": 96,
+          "curiosityGap": 73,
+          "textBurden": 6,
+          "policySafety": 93,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Strong REALLY is Morty?...)"
+      }
     },
     {
       "rank": 3,
@@ -157,7 +227,21 @@
       "transcriptJsonRel": "transcripts/Q5QI6zkKHzI_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/Q5QI6zkKHzI_summary_vi.md",
-      "hookSnippet": "Peter và Lois không nên kết hôn...."
+      "hookSnippet": "Peter và Lois không nên kết hôn....",
+      "thumbnailScore": {
+        "compositeScore": 67,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 28,
+          "contrast": 87,
+          "mobileReadability": 95,
+          "curiosityGap": 73,
+          "textBurden": 17,
+          "policySafety": 93,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Who Has CHEATED More? (Peter vs Lois)...)"
+      }
     },
     {
       "rank": 6,
@@ -183,7 +267,21 @@
       "transcriptJsonRel": "transcripts/JH0R0uVnaRg_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/JH0R0uVnaRg_summary_vi.md",
-      "hookSnippet": "Đây là một trò đùa của SpongeBob mà bạn 100% không thể bỏ lỡ khi còn nhỏ...."
+      "hookSnippet": "Đây là một trò đùa của SpongeBob mà bạn 100% không thể bỏ lỡ khi còn nhỏ....",
+      "thumbnailScore": {
+        "compositeScore": 54,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 7,
+          "contrast": 52,
+          "mobileReadability": 81,
+          "curiosityGap": 55,
+          "textBurden": 23,
+          "policySafety": 88,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Jokes You Missed As a Kid in SpongeBob...)"
+      }
     },
     {
       "rank": 7,
@@ -209,7 +307,21 @@
       "transcriptJsonRel": "transcripts/TL_8dRyhOgQ_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/TL_8dRyhOgQ_summary_vi.md",
-      "hookSnippet": "Từ những con quái vật đậu thạch cho đến những con khủng long siêu thông minh có khả năng phân hủy Rick Sanchez..."
+      "hookSnippet": "Từ những con quái vật đậu thạch cho đến những con khủng long siêu thông minh có khả năng phân hủy Rick Sanchez...",
+      "thumbnailScore": {
+        "compositeScore": 62,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 11,
+          "contrast": 66,
+          "mobileReadability": 86,
+          "curiosityGap": 67,
+          "textBurden": 34,
+          "policySafety": 93,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Who is The Most OVERPOWERED Character From Rick And Morty?...)"
+      }
     },
     {
       "rank": 10,
@@ -235,7 +347,21 @@
       "transcriptJsonRel": "transcripts/HFtzrL5Ijsk_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/HFtzrL5Ijsk_summary_vi.md",
-      "hookSnippet": "Nếu bạn nghĩ Peter cho nổ tung bệnh viện nhi là điều tồi tệ thì hãy xem video này...."
+      "hookSnippet": "Nếu bạn nghĩ Peter cho nổ tung bệnh viện nhi là điều tồi tệ thì hãy xem video này....",
+      "thumbnailScore": {
+        "compositeScore": 63,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 9,
+          "contrast": 82,
+          "mobileReadability": 93,
+          "curiosityGap": 67,
+          "textBurden": 23,
+          "policySafety": 93,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Long Would PETER's Prison Sentence Be? #2...)"
+      }
     },
     {
       "rank": 2,
@@ -261,8 +387,31 @@
       "transcriptJsonRel": "transcripts/ocnuIUlFWvw_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/ocnuIUlFWvw_summary_vi.md",
-      "hookSnippet": "Đây là điều mà Rick coi là một cuộc gặp gỡ thông thường...."
+      "hookSnippet": "Đây là điều mà Rick coi là một cuộc gặp gỡ thông thường....",
+      "thumbnailScore": {
+        "compositeScore": 57,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 9,
+          "contrast": 59,
+          "mobileReadability": 84,
+          "curiosityGap": 67,
+          "textBurden": 17,
+          "policySafety": 88,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Many People Has Rick Slept With?...)"
+      }
     }
   ],
-  "transcriptsCount": 10
+  "transcriptsCount": 10,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 10,
+    "declaredCount": 10,
+    "missingThumbnails": [],
+    "averageCompositeScore": 61,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

@@ -42,7 +42,21 @@
       "transcriptJsonRel": "transcripts/3FV407gsiOU_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/3FV407gsiOU_summary_vi.md",
-      "hookSnippet": "DreamWorks đã làm rất nhiều phim trong những năm qua và hầu hết trong số này..."
+      "hookSnippet": "DreamWorks đã làm rất nhiều phim trong những năm qua và hầu hết trong số này...",
+      "thumbnailScore": {
+        "compositeScore": 51,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 1,
+          "contrast": 54,
+          "mobileReadability": 82,
+          "curiosityGap": 67,
+          "textBurden": 0,
+          "policySafety": 85,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Ranking Every DreamWorks Villain...)"
+      }
     },
     {
       "rank": 6,
@@ -94,7 +108,21 @@
       "transcriptJsonRel": "transcripts/U6TNLgBvL5c_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/U6TNLgBvL5c_summary_vi.md",
-      "hookSnippet": "tổng cộng có 50 nhân vật phản diện của Disney cả trong phim và chương trình và ngày nay..."
+      "hookSnippet": "tổng cộng có 50 nhân vật phản diện của Disney cả trong phim và chương trình và ngày nay...",
+      "thumbnailScore": {
+        "compositeScore": 59,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 5,
+          "contrast": 88,
+          "mobileReadability": 95,
+          "curiosityGap": 67,
+          "textBurden": 0,
+          "policySafety": 90,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Ranking Every Disney Villain...)"
+      }
     },
     {
       "rank": 1,
@@ -120,7 +148,21 @@
       "transcriptJsonRel": "transcripts/qieJzQ0sL3w_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/qieJzQ0sL3w_summary_vi.md",
-      "hookSnippet": "Mình từng là bad boy chiếu sáng nhân vật phản diện quá tệ nên hãy xếp hạng chúng..."
+      "hookSnippet": "Mình từng là bad boy chiếu sáng nhân vật phản diện quá tệ nên hãy xếp hạng chúng...",
+      "thumbnailScore": {
+        "compositeScore": 55,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 1,
+          "contrast": 71,
+          "mobileReadability": 88,
+          "curiosityGap": 67,
+          "textBurden": 0,
+          "policySafety": 90,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Ranking Every Illuminations Villain...)"
+      }
     },
     {
       "rank": 5,
@@ -146,7 +188,21 @@
       "transcriptJsonRel": "transcripts/u4JegLPuqUo_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/u4JegLPuqUo_summary_vi.md",
-      "hookSnippet": "Pixar có tổng cộng 19 nhân vật phản diện và hôm nay tôi sẽ xếp hạng họ..."
+      "hookSnippet": "Pixar có tổng cộng 19 nhân vật phản diện và hôm nay tôi sẽ xếp hạng họ...",
+      "thumbnailScore": {
+        "compositeScore": 56,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 4,
+          "contrast": 71,
+          "mobileReadability": 89,
+          "curiosityGap": 67,
+          "textBurden": 0,
+          "policySafety": 90,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Ranking Every Pixar Villain...)"
+      }
     },
     {
       "rank": 4,
@@ -198,7 +254,21 @@
       "transcriptJsonRel": "transcripts/CCZ2FClBvfc_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/CCZ2FClBvfc_summary_vi.md",
-      "hookSnippet": "Tôi đã dành [âm nhạc] trong vài tháng qua để xem lại từng chương trình của Cartoon Network và..."
+      "hookSnippet": "Tôi đã dành [âm nhạc] trong vài tháng qua để xem lại từng chương trình của Cartoon Network và...",
+      "thumbnailScore": {
+        "compositeScore": 59,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 7,
+          "contrast": 83,
+          "mobileReadability": 93,
+          "curiosityGap": 67,
+          "textBurden": 6,
+          "policySafety": 90,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Ranking Every Cartoon Network Villain...)"
+      }
     },
     {
       "rank": 2,
@@ -250,7 +320,21 @@
       "transcriptJsonRel": "transcripts/5rzkKOuwa7E_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/5rzkKOuwa7E_summary_vi.md",
-      "hookSnippet": "Blue Sky đóng cửa vào năm 2021...."
+      "hookSnippet": "Blue Sky đóng cửa vào năm 2021....",
+      "thumbnailScore": {
+        "compositeScore": 52,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 3,
+          "contrast": 49,
+          "mobileReadability": 79,
+          "curiosityGap": 67,
+          "textBurden": 11,
+          "policySafety": 85,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Ranking Every Blue Sky Studios Villain...)"
+      }
     },
     {
       "rank": 3,
@@ -302,7 +386,21 @@
       "transcriptJsonRel": "transcripts/z2nviKCdrWg_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/z2nviKCdrWg_summary_vi.md",
-      "hookSnippet": "Sony có phim, phim có phản diện, tôi xếp hạng phản diện...."
+      "hookSnippet": "Sony có phim, phim có phản diện, tôi xếp hạng phản diện....",
+      "thumbnailScore": {
+        "compositeScore": 59,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 5,
+          "contrast": 80,
+          "mobileReadability": 92,
+          "curiosityGap": 67,
+          "textBurden": 6,
+          "policySafety": 90,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Ranking Every Sony Animation Villain...)"
+      }
     },
     {
       "rank": 8,
@@ -354,8 +452,31 @@
       "transcriptJsonRel": "transcripts/deSQLGngAhk_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/deSQLGngAhk_summary_vi.md",
-      "hookSnippet": "Hoạt hình độc lập đã thực sự bùng nổ trong vài năm qua, điều đó có nghĩa là..."
+      "hookSnippet": "Hoạt hình độc lập đã thực sự bùng nổ trong vài năm qua, điều đó có nghĩa là...",
+      "thumbnailScore": {
+        "compositeScore": 61,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 7,
+          "contrast": 91,
+          "mobileReadability": 96,
+          "curiosityGap": 67,
+          "textBurden": 6,
+          "policySafety": 90,
+          "visualNovelty": 88
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Ranking Every Major Indie Pilot...)"
+      }
     }
   ],
-  "transcriptsCount": 8
+  "transcriptsCount": 8,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 8,
+    "declaredCount": 8,
+    "missingThumbnails": [],
+    "averageCompositeScore": 56,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

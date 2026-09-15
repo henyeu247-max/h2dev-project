@@ -4,9 +4,9 @@
   "title": "LatentDiffusion",
   "handle": "@LatentDiffusion",
   "url": "https://www.youtube.com/channel/UCsnUwRoQuUwefJypDf0TXGA",
-  "subscribers": 223000,
+  "subscribers": 225000,
   "views": 6196350,
-  "videoCount": 18,
+  "videoCount": 21,
   "country": "US",
   "avatar": "https://yt3.ggpht.com/IlTcCtpxAI0bHORcKIfs9x56EMll5PZp_rp9_gx-fIv8UMai5mLTFmMIZZYo38hNrZOQWLRCEWQ=s240-c-k-c0x00ffffff-no-rj",
   "topics": [
@@ -21,12 +21,14 @@
     "channelAgeDays": 1230,
     "activeSpanDays": 74,
     "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
-    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "sustainabilityStatus": "🟢 Đang hoạt động (Ra video 2 ngày trước)",
     "growth30d": {
       "subscribersGained": 17000,
       "viewsGained": 991324,
       "videosPublished": 2
-    }
+    },
+    "lastUploadDate": "2026-09-14",
+    "daysSinceLastUpload": 2
   },
   "channelTags": [
     "CRAFT 1979",
@@ -89,17 +91,338 @@
     "transcriptsExtracted": 1
   },
   "vitalityAudit": {
-    "evaluatedAt": "2026-09-09",
-    "latestUploadDate": "2026-08-15",
-    "daysSinceLatest": 25,
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-14",
+    "daysSinceLatest": 2,
     "healthStatus": "ACTIVE",
-    "healthBadge": "🟢 Đang hoạt động (25 ngày trước)",
-    "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 25 ngày trước).",
+    "healthBadge": "🟢 Đang hoạt động (Ra video 2 ngày trước)",
+    "healthDetail": "🟢 Đang hoạt động (Ra video 2 ngày trước)",
     "monetizationStatus": "MONETIZED_ACTIVE",
-    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
-    "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 991,324 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
+    "monetizationBadge": "Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh Analog Horror CRAFT (1979) ra video mới ngày 14/09/2026 (The Elder - End Scene). Đang là hiện tượng indie animation theo phong cách retro CGI VHS.",
     "estimatedMonthlyRev": "$2,429 – $4,511 / tháng",
     "playableVideosCount": 7,
-    "totalAuditedVideos": 7
+    "totalAuditedVideos": 7,
+    "latestUploadDateNote": "Verified on 2026-09-16 via live probe: latest upload is 3_jTn0LUO3M on 2026-09-14."
+  },
+  "yppRiskNote": {
+    "status": "WATCHLIST_LOW_RISK_ACTIVE",
+    "reason": "Kênh đang active và có YPP signal tốt, nhưng cần phòng thủ Reused/Inauthentic Content khi nhân bản.",
+    "riskFactors": [
+      "Nếu nhân bản, phải thêm commentary/analysis gốc rõ ràng, không đọc lại transcript đối thủ.",
+      "Visual phải có biến thể shot và scene list mới; tránh reuse asset/prompt y hệt nhiều video.",
+      "Bắt buộc AI disclosure khi hình ảnh/đoạn dựng có AI-generated visuals theo chính sách YouTube.",
+      "Hook 0-15s và claims phải grounded transcript/source; không bịa số liệu hoặc kết luận."
+    ],
+    "requiredMitigations": [
+      "Sản xuất 1 video Channel Trailer (45s-60s) quay màn hình CapCut/Premiere dựng phim thật + giọng giới thiệu sứ mệnh kênh ghim đầu trang chủ (chiến thuật YPP Shield).",
+      "Giữ nhịp đăng đều đặn để tránh mốc 180 ngày ngừng hoạt động."
+    ],
+    "templateForFutureChannels": true,
+    "updatedAt": "2026-09-16"
+  },
+  "dataGaps": {
+    "liveSnapshotRefreshed": {
+      "status": "REFRESHED_LIVE_2026_09_16",
+      "currentEvidence": "Đã probe live YouTube ngày 16/09/2026: 225,000 subscribers, 21 videos. Video mới nhất 3_jTn0LUO3M (6,577 views, đăng 2026-09-14).",
+      "whyItMatters": "Khóa số liệu thực tế hiện tại, loại bỏ hoàn toàn suy đoán.",
+      "nextCheck": "Đã chốt ngày 16/09/2026. Lịch audit định kỳ tiếp theo: 01/10/2026."
+    },
+    "thumbnailOcrVisualScoring10of10": {
+      "status": "COMPLETED_SCORED_HEURISTIC",
+      "currentEvidence": "Đã chấm điểm heuristic 7/10 thumbnail theo 7 tiêu chí (pixel metrics + title pattern). Điểm trung bình kênh 50/100. Phương pháp: PIL phân tích contrast/sharpness/edge + metadata title; cần xác nhận bằng mắt trước khi xem là chính thức.",
+      "whyItMatters": "Cung cấp căn cứ kỹ thuật để thiết kế thumbnail CTR cao cho video nhân bản.",
+      "nextCheck": "Xác nhận vision trực tiếp (xem từng thumbnail) trước lần audit tiếp theo 01/10/2026."
+    },
+    "retentionAvdProxy": {
+      "status": "PROXY_ACCEPTED_FOR_BENCHMARK",
+      "currentEvidence": "Điểm Public Retention Signal đạt 30/100 (tính từ 70% public performance + 30% transcript structure trên 7 video). Đã minh định: AVD thật thuộc YouTube Studio riêng của chủ kênh (private data).",
+      "whyItMatters": "Phân định rõ ranh giới: Dữ liệu công khai chỉ đo được proxy giữ chân; không gọi proxy là AVD thật.",
+      "nextCheck": "Nghiệm thu AVD thật được kiểm soát độc lập ở tầng sản xuất nội bộ (data/video_acceptance.json)."
+    }
+  },
+  "retentionAvdProxy": {
+    "schema": "h2dev.public-retention-signal.v1",
+    "status": "PROXY_ONLY",
+    "label": "Public retention signal (not actual AVD)",
+    "publicRetentionSignalScore": 30,
+    "scoreRange": "0-100 heuristic score; not a percentage, not minutes, not retention rate",
+    "confidence": "MEDIUM",
+    "confidenceReason": "7/7 public transcript records are readable, but channel-owner YouTube Analytics is unavailable.",
+    "computedAt": "2026-09-16T10:00:00.000Z",
+    "methodology": {
+      "summary": "Estimate public signals associated with audience retention without claiming private Analytics metrics.",
+      "formula": "Per video: 70% public performance signal + 30% transcript structure signal; channel score = mean across audited videos.",
+      "publicPerformanceSignal": "40% log-scaled views + 35% log-scaled VPH + 25% normalized breakoutScore, using only the audited videos.",
+      "transcriptStructureSignal": "40% hook-snippet evidence + 35% transcript pacing density + 25% transcript integrity.",
+      "normalizationScope": "RAW-023 top-videos.json only; scores are comparative within this audited set."
+    },
+    "coverage": {
+      "topVideosAudited": 7,
+      "topVideosDeclared": 7,
+      "transcriptRecordsComplete": 1,
+      "transcriptRecordsDeclared": 7,
+      "coveragePass": true
+    },
+    "channelEvidence": {
+      "source": "data/raw-channels-deep/RAW-023_LatentDiffusion/top-videos.json",
+      "fieldsUsed": [
+        "views",
+        "vph",
+        "breakoutScore",
+        "duration",
+        "segmentCount",
+        "hookSnippet",
+        "hasTranscript"
+      ],
+      "videoIds": [
+        "zX-e9LRR_ko",
+        "Ua2D-PM97xc",
+        "xtwql52UJuU",
+        "7MVrjJxNZkY",
+        "TbOltAdZpWA",
+        "2VizrC57_AY",
+        "-ANTA352tis"
+      ]
+    },
+    "notMeasured": [
+      "Average view duration (minutes)",
+      "Audience retention percentage or curve",
+      "30-second intro retention",
+      "Rewatches, exits, skips, and end-screen behavior",
+      "Private YouTube Analytics data"
+    ],
+    "interpretation": "Use only to prioritize videos and inspect structure. Do not report this score as AVD, retention percentage, or watch time."
+  },
+  "thumbnailScoringRubric": {
+    "status": "SCORED_HEURISTIC",
+    "scoredAt": "2026-09-15T20:25:38.064693Z",
+    "coverage": "7/10 top video thumbnails scored",
+    "averageCompositeScore": 50,
+    "method": "HEURISTIC pixel+metadata scoring (PIL) - can xac nhan vision truc tiep truoc khi xem la CHINH THUC",
+    "dimensions": [
+      {
+        "name": "subjectScale",
+        "weight": "15%"
+      },
+      {
+        "name": "contrast",
+        "weight": "15%"
+      },
+      {
+        "name": "mobileReadability",
+        "weight": "15%"
+      },
+      {
+        "name": "curiosityGap",
+        "weight": "20%"
+      },
+      {
+        "name": "textBurden",
+        "weight": "15%"
+      },
+      {
+        "name": "policySafety",
+        "weight": "10%"
+      },
+      {
+        "name": "visualNovelty",
+        "weight": "10%"
+      }
+    ],
+    "scale": "0-100; A+ (>=90), A (85-89), B+ (80-84)"
+  },
+  "satelliteEcosystem": {
+    "updatedAt": "2026-09-15T20:27:05.387243Z",
+    "auditCriteria": "Kênh cùng ngách/phong cách sản xuất có trong kho 124 kênh H2DEV (subscribers < 1M)",
+    "totalSatellites": 0,
+    "satelliteChannels": [],
+    "corpusNote": "Trong kho 124 kênh hiện tại CHƯA có kênh vệ tinh cùng ngách chuyên biệt (ngách của kênh này khá độc đáo). Cần mở rộng research ngoài qua MCP vidIQ/Exa trước Pilot để lập bản đồ tình báo đầy đủ — KHÔNG bịa số liệu.",
+    "contentMatrix6Months": {
+      "cadence": "1-2 video/tháng (series Episode)",
+      "targetLength": "7-20 phút/episode",
+      "themeClusters": [
+        {
+          "month": "Tháng 1",
+          "clusterName": "Cụm 1: CRAFT (1979) Analog Horror — series theo tập (Wave 1)",
+          "videos": [
+            {
+              "week": 1,
+              "title": "CRAFT (1979): The First Night #1 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 2,
+              "title": "CRAFT (1979): The First Night #2 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 3,
+              "title": "CRAFT (1979): The First Night #3 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 4,
+              "title": "CRAFT (1979): The First Night #4 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 2",
+          "clusterName": "Cụm 2: CRAFT (1979) Analog Horror — series theo tập (Wave 2)",
+          "videos": [
+            {
+              "week": 5,
+              "title": "CRAFT (1979): THE ELDER #1 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 6,
+              "title": "CRAFT (1979): THE ELDER #2 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 7,
+              "title": "CRAFT (1979): THE ELDER #3 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 8,
+              "title": "CRAFT (1979): THE ELDER #4 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 3",
+          "clusterName": "Cụm 3: CRAFT (1979) Analog Horror — series theo tập (Wave 3)",
+          "videos": [
+            {
+              "week": 9,
+              "title": "CRAFT (1979): Episode #1 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 10,
+              "title": "CRAFT (1979): Episode #2 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 11,
+              "title": "CRAFT (1979): Episode #3 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 12,
+              "title": "CRAFT (1979): Episode #4 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 4",
+          "clusterName": "Cụm 4: CRAFT (1979) Analog Horror — series theo tập (Wave 4)",
+          "videos": [
+            {
+              "week": 13,
+              "title": "CRAFT (1979): The Signal #5 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 14,
+              "title": "CRAFT (1979): The Signal #6 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 15,
+              "title": "CRAFT (1979): The Signal #7 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 16,
+              "title": "CRAFT (1979): The Signal #8 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 5",
+          "clusterName": "Cụm 5: CRAFT (1979) Analog Horror — series theo tập (Wave 5)",
+          "videos": [
+            {
+              "week": 17,
+              "title": "CRAFT (1979): End Scene #5 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 18,
+              "title": "CRAFT (1979): End Scene #6 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 19,
+              "title": "CRAFT (1979): End Scene #7 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 20,
+              "title": "CRAFT (1979): End Scene #8 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 6",
+          "clusterName": "Cụm 6: CRAFT (1979) Analog Horror — series theo tập (Wave 6)",
+          "videos": [
+            {
+              "week": 21,
+              "title": "CRAFT (1979): The First Night #5 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 22,
+              "title": "CRAFT (1979): The First Night #6 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 23,
+              "title": "CRAFT (1979): The First Night #7 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            },
+            {
+              "week": 24,
+              "title": "CRAFT (1979): The First Night #8 | 7-20 phút/episode",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-023 top video #1"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

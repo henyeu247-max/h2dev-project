@@ -1,0 +1,123 @@
+{
+  "channelId": "UCl05bwdScd4QKlBEVEeaHFA",
+  "rawId": "RAW-029",
+  "channelTitle": "Mama Toons",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "US / Global (Tiếng Anh)",
+    "audienceProfile": "Trẻ em 4-9 tuổi và phụ huynh thích cổ tích thiếu nhi 3D có bài học đạo đức (animal rescue, công lý, lòng dũng cảm)",
+    "viewingHabit": "Xem 10-18 phút vào giờ tối trước khi ngủ; thích câu chuyện có xung đột rõ ràng (kẻ xấu bị trừng trị, người tốt được cứu)",
+    "emotionalCore": "Hồi hộp nhẹ nhàng + cảm giác công lý thắng lợi, ấm áp khi kết thúc có hậu"
+  },
+  "visualDirective": {
+    "styleShort": "Vibrant 3D cartoon animal fable style (the audience is kids 4-9, expressive animal characters, dramatic but child-safe farm adventures, clear villain-vs-hero dynamics)",
+    "mascot": "Brave Dog (chú chó dũng cảm - nhân vật chính cứu nông trại)",
+    "cameraLighting": "Dynamic storybook lighting: warm sunny farm by day, tense dusk scenes with dramatic shadows, expressive close-ups on animal emotions, child-safe dramatic framing",
+    "style": "High-quality 3D cartoon animal fable, expressive animal faces with big eyes, dramatic storybook compositions, vibrant but balanced colors, farm setting, clear emotional beats, action sequences that are exciting yet non-violent (comic takedowns, no real injury), child-safe tone",
+    "negativePrompt": "no real violence, no blood, no weapons realism, no scary monsters (threats are comical), no gloomy oppressive tone, no horror elements, no distorted anatomy",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: Vibrant 3D cartoon animal fable style (kids 4-9, expressive animals, dramatic child-safe farm adventures)\n{{STYLE}}: High-quality 3D cartoon animal fable, expressive animal faces, dramatic storybook compositions, vibrant balanced colors, farm setting, exciting non-violent action, child-safe\n{{MASCOT}}: Brave Dog\nScene Action: Brave Dog stands guard in the moonlit farmyard, ears alert, as a sneaky thief tiptoes toward the henhouse with a sack, dramatic tense lighting, expressive close-up on the dog's determined eyes --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Mặt Chó Dũng Cảm",
+        "description": "Cận cảnh mắt chú chó quả cảm trong đêm, phản chiếu ánh trăng, đôi tai vểnh lên nghe động tĩnh.",
+        "prompt": "Dramatic close-up of a brave cartoon dog's determined eyes in moonlight, alert ears, tense farmyard night, expressive animation, child-safe dramatic style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Kẻ Trộm Lén Lút",
+        "description": "Kẻ trộm lén lút bồng gà con chạy, bóng đổ dài trên sân nông trại, nhạc hồi hộp.",
+        "prompt": "Sneaky comical thief tiptoeing across moonlit farmyard carrying a sack, long dramatic shadows, expressive cartoon style, tense but child-safe --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Rượt Đuổi Trên Đồng",
+        "description": "Chú chó rượt theo kẻ trộm qua cánh đồng, hoạt cảnh vui nhộn, khói bụi hài hước.",
+        "prompt": "Dynamic chase scene across a sunny farm field, brave dog chasing comical thief, cartoon dust puffs, exciting non-violent action, vibrant colors --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: Chiến Thắng Đoàn Tụ",
+        "description": "Cảnh đoàn tụ ấm áp bên chuồng, gà con về với mẹ, chú chó được cả trang trại cảm ơn.",
+        "prompt": "Warm reunion scene at the henhouse, rescued chicks back with mother hen, brave dog wagging tail, all farm animals celebrating, golden sunset, heartwarming --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1: Slow push-in on the dog's eyes as tension builds.",
+      "Shot 2: Low tracking shot following the thief's sneaky footsteps.",
+      "Shot 3: Fast-paced tracking across the field, camera shake for excitement.",
+      "Shot 4: Gentle crane shot pulling up on the warm reunion, soft golden light."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng tiếng kêu cứu + mất mát ngay lập tức (Immediate Distress Hook)",
+    "openingFormula": "Mở bằng tiếng kêu cứu thảm thiết: 'My calf stolen from there. Please, you must help.' kèm hình ảnh chuồng trống — kéo khán giả nhí vào cảm xúc lo lắng, muốn xem đến khi được cứu.",
+    "pacingStructure": "[0-15s] Hook mất mát (bê con bị bắt, gà bị trộm) -> [15-45s] Giới thiệu chú chó dũng cảm nhận nhiệm vụ -> [45s-hết] Hành trình cứu: 3-4 thử thách leo thang (mỗi 90s 1 pha hành động) -> [Kết thúc] Chiến thắng + bài học đạo đức + CTA đăng ký",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% cốt truyện gốc + 30% tình tiết mới, chia 4-6 Part (700-900 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional children's story scriptwriter specializing in 3D animal fables with clear moral lessons and rescue adventures (style of Mama Toons and 3D farm rescue cartoons).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Simple, clear, emotionally engaging, kid-friendly suspense, repetitive callbacks, warm moral conclusion. Keep 70% of the original rescue storyline; add 30% new obstacles, animal helpers, and a positive moral lesson (bravery, friendship, justice).\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 4-6 parts (for a 10-18 minute animated story).\n   - Each part should be 700-900 words, written in continuous narrative with [Action Notes] for the 3D animator, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: Thief Steals All the Farm Animals… But a Brave Dog Fights Back! (jGR2ikGDo50 - 6.66M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "jGR2ikGDo50",
+    "scriptRefTitle": "Thief Steals All the Farm Animals… But a Brave Dog Fights Back! 🐶 | Funny Cartoon | Mama Toons (6.66M views)",
+    "voiceSampleVideoNote": "Voice sample extracted from jGR2ikGDo50 (Thief Steals All the Farm Animals) for optimal voice quality; script blueprint references jGR2ikGDo50 (highest-traffic video, 6.66M views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "[Kẻ Xấu] Steals [Động Vật/Tài Sản]... But [Người Hùng] Fights Back! | Funny Cartoon | Mama Toons",
+    "thumbnailComposition": "Chú chó dũng cảm chiếm 65% khung bên phải đứng trước chuồng gà; Kẻ trộm hài hước lén lút góc trái; Text 2-4 từ màu Cam (#FB923C) hoặc Đỏ (#EF4444) viền đen dày.",
+    "thumbnailText": "FIGHT BACK! 🐶 / THIEF ALERT! 🚨 / HERO DOG! 🦸",
+    "cleanThumbnailPrompt": "Vibrant 3D cartoon YouTube thumbnail, heroic brave dog standing protectively on the right 65% of frame, comical sneaky thief on the left, dramatic farmyard dusk background, expressive faces, bold empty space for text, child-safe cartoon style, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "Thief Steals All the Farm Animals… But a Brave Dog Fights Back! 🐶 | Funny Cartoon | Mama Toons",
+      "Thousands of Rats Took Over the City Until a Mysterious Flute Player Appeared | Mama Toons",
+      "The Naughty Wolf Tried to Steal the Sheep... But the Farm Team United! | Mama Toons"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "h2dev-hoat-hinh (Pipeline Hoạt Hình AI 5 Bước - biến thể Animal Fable)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
+    "repoPath": "pipelines/hoat-hinh-ai/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Freya / Gigi - giọng nữ truyền cảm kể chuyện, $1.2/video)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output)",
+      "motion": "Google Veo 3.1 / Kling 3.0 Omni (6-shot narrative)",
+      "assembly": "CapCut PC + DaVinci Resolve"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Freya / Gigi - ấm áp, kể chuyện)",
+    "videoTool": "Google Nano Banana 2 & Pro (Stills động vật 3D) -> Google Flow Veo 3.1 / Kling 3.0 (motion hành động) -> Hậu kỳ CapCut PC",
+    "bgmSoundtrack": "Storybook Adventure BGM: đàn dây nhẹ + trống hành trình hồi hộp (ducking -18dB dưới giọng đọc)",
+    "soundEffects": "Cartoon whoosh, comical tiptoe creak, dramatic sting, cheering crowd, warm chime finale"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ sạch + Trình duyệt chống phát hiện + Gmail ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube US, gắn Logo/Banner chú chó dũng cảm, dán trọn bộ 50 tags SEO có sẵn, ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Dùng Master Script Prompt -> Thu âm ElevenLabs Freya/Gigi -> Dựng chuỗi 3D trên CapCut (mỗi video 10-18 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức 'Fights Back' -> Đăng Unlisted 2 giờ -> Hẹn giờ công khai giờ vàng US (17h-20h EST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

@@ -44,7 +44,21 @@
       "transcriptJsonRel": "transcripts/zX-e9LRR_ko_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/zX-e9LRR_ko_summary_vi.md",
-      "hookSnippet": "dự đoán các bạn nghĩ ai sẽ thắng. Tôi nghĩ có lỗ hổng..."
+      "hookSnippet": "dự đoán các bạn nghĩ ai sẽ thắng. Tôi nghĩ có lỗ hổng...",
+      "thumbnailScore": {
+        "compositeScore": 54,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 33,
+          "contrast": 50,
+          "mobileReadability": 80,
+          "curiosityGap": 55,
+          "textBurden": 23,
+          "policySafety": 62,
+          "visualNovelty": 91
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: CRAFT (1979): The First Night | Episode 1...)"
+      }
     },
     {
       "rank": 2,
@@ -97,7 +111,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 59,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 27,
+          "contrast": 72,
+          "mobileReadability": 89,
+          "curiosityGap": 55,
+          "textBurden": 17,
+          "policySafety": 75,
+          "visualNovelty": 99
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: CRAFT (1979): The Cove | Episode 2...)"
+      }
     },
     {
       "rank": 6,
@@ -123,7 +151,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 45,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 19,
+          "contrast": 20,
+          "mobileReadability": 68,
+          "curiosityGap": 55,
+          "textBurden": 17,
+          "policySafety": 62,
+          "visualNovelty": 91
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: CRAFT (1979): The Point | Episode 3...)"
+      }
     },
     {
       "rank": 4,
@@ -173,7 +215,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 50,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 25,
+          "contrast": 29,
+          "mobileReadability": 72,
+          "curiosityGap": 55,
+          "textBurden": 23,
+          "policySafety": 70,
+          "visualNovelty": 95
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: CRAFT (1979): The Voyage Begins | Episode 4...)"
+      }
     },
     {
       "rank": 5,
@@ -224,7 +280,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 49,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 18,
+          "contrast": 36,
+          "mobileReadability": 74,
+          "curiosityGap": 55,
+          "textBurden": 17,
+          "policySafety": 70,
+          "visualNovelty": 95
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: CRAFT (1979): The Village | Episode 5...)"
+      }
     },
     {
       "rank": 3,
@@ -278,7 +348,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 45,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 7,
+          "contrast": 23,
+          "mobileReadability": 69,
+          "curiosityGap": 55,
+          "textBurden": 17,
+          "policySafety": 70,
+          "visualNovelty": 95
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: CRAFT (1979): The Rabbit | Episode 6...)"
+      }
     },
     {
       "rank": 1,
@@ -333,8 +417,31 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 45,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 23,
+          "contrast": 16,
+          "mobileReadability": 66,
+          "curiosityGap": 55,
+          "textBurden": 17,
+          "policySafety": 62,
+          "visualNovelty": 91
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: CRAFT (1979): The Ravine | Episode 7...)"
+      }
     }
   ],
-  "transcriptsCount": 1
+  "transcriptsCount": 1,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 7,
+    "declaredCount": 7,
+    "missingThumbnails": [],
+    "averageCompositeScore": 50,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

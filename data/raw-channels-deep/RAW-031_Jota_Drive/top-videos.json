@@ -73,7 +73,21 @@
       "transcriptJsonRel": "transcripts/zs1B4g0O_vQ_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/zs1B4g0O_vQ_summary_vi.md",
-      "hookSnippet": "Dừng xe tải lại!..."
+      "hookSnippet": "Dừng xe tải lại!...",
+      "thumbnailScore": {
+        "compositeScore": 48,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 11,
+          "contrast": 30,
+          "mobileReadability": 72,
+          "curiosityGap": 61,
+          "textBurden": 11,
+          "policySafety": 85,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Truck and Car Crashes #13 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 2,
@@ -145,7 +159,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 57,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 3,
+          "contrast": 70,
+          "mobileReadability": 88,
+          "curiosityGap": 61,
+          "textBurden": 17,
+          "policySafety": 90,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Loose Wheel and Car Crashes #01 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 1,
@@ -217,7 +245,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 61,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 10,
+          "contrast": 83,
+          "mobileReadability": 93,
+          "curiosityGap": 61,
+          "textBurden": 17,
+          "policySafety": 90,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Police Chase and Car Crashes #02 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 8,
@@ -289,7 +331,21 @@
       "transcriptJsonRel": "transcripts/CS-cpJDZtU8_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/CS-cpJDZtU8_summary_vi.md",
-      "hookSnippet": "Bob: Tôi đang trên đường tới đây, Sếp!..."
+      "hookSnippet": "Bob: Tôi đang trên đường tới đây, Sếp!...",
+      "thumbnailScore": {
+        "compositeScore": 49,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 25,
+          "contrast": 25,
+          "mobileReadability": 70,
+          "curiosityGap": 55,
+          "textBurden": 17,
+          "policySafety": 85,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Phone Texting & Driving Accidents #02 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 9,
@@ -361,7 +417,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 48,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 2,
+          "contrast": 31,
+          "mobileReadability": 72,
+          "curiosityGap": 61,
+          "textBurden": 23,
+          "policySafety": 85,
+          "visualNovelty": 85
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Bad Luck Drivers And Car Crashes #01 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 5,
@@ -433,7 +503,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 65,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 20,
+          "contrast": 96,
+          "mobileReadability": 99,
+          "curiosityGap": 61,
+          "textBurden": 17,
+          "policySafety": 90,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Dangerous Driving and Car Crashes #09 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 7,
@@ -505,7 +589,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 52,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 23,
+          "contrast": 40,
+          "mobileReadability": 76,
+          "curiosityGap": 61,
+          "textBurden": 11,
+          "policySafety": 85,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Rollover and Car Crashes #02 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 6,
@@ -577,7 +675,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 60,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 19,
+          "contrast": 75,
+          "mobileReadability": 90,
+          "curiosityGap": 61,
+          "textBurden": 17,
+          "policySafety": 90,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Roads and Highway Car Crashes #02 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 10,
@@ -649,7 +761,21 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 56,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 22,
+          "contrast": 57,
+          "mobileReadability": 83,
+          "curiosityGap": 61,
+          "textBurden": 17,
+          "policySafety": 85,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Roads and Highway Car Crashes #03 [BeamNG.Drive]...)"
+      }
     },
     {
       "rank": 4,
@@ -721,8 +847,31 @@
       "transcriptJsonRel": null,
       "hasSummaryVi": false,
       "summaryViRel": null,
-      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động)."
+      "hookSnippet": "Clip không chứa lời thoại thuyết minh (Nhạc nền / Kỹ xảo CGI hành động).",
+      "thumbnailScore": {
+        "compositeScore": 49,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 10,
+          "contrast": 29,
+          "mobileReadability": 72,
+          "curiosityGap": 61,
+          "textBurden": 17,
+          "policySafety": 85,
+          "visualNovelty": 89
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Dangerous Driving and Car Crashes #12  [BeamNG.Drive]...)"
+      }
     }
   ],
-  "transcriptsCount": 2
+  "transcriptsCount": 2,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 10,
+    "declaredCount": 10,
+    "missingThumbnails": [],
+    "averageCompositeScore": 54,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

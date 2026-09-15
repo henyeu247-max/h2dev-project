@@ -1,0 +1,123 @@
+{
+  "channelId": "UCNSyOUwDIn_PUfXSQQKDhHQ",
+  "rawId": "RAW-088",
+  "channelTitle": "No Villains Are SAFE!",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "US / Global (Tiếng Anh) - fan Family Guy & Cartoon Theory",
+    "audienceProfile": "Fan Family Guy và hoạt hình người lớn (18-40 tuổi); thích kiểu video 'cartoon logic investigation' — bóc tách các pha phá hoại của Peter Griffin thành số liệu cụ thể, kiểu Film Theory",
+    "viewingHabit": "Xem video phân tích 15-30 phút; thích số liệu, tính toán hài hước, cắt cảnh gốc minh họa; xem lặp lại",
+    "emotionalCore": "Cười trước sự phi lý của hoạt hình được phân tích bằng logic + ngạc nhiên trước con số tính toán"
+  },
+  "visualDirective": {
+    "styleShort": "Cartoon-logic investigation video essay style (the audience is Family Guy fans 18-40, animated-clip evidence + calculation graphics, dry humor, conspiracy-board aesthetics)",
+    "mascot": "Peter Griffin (nhân vật phá hoại chính - đối tượng điều tra)",
+    "cameraLighting": "Investigation-board format: red-string conspiracy board aesthetic, animated clips as evidence, calculation graphics with big numbers, dry-humor captions, punchy zooms",
+    "style": "Video-essay investigation format, red-string conspiracy board graphics, cartoon clips as evidence cards, animated math/calculation overlays with big bold numbers, dry sarcastic commentary, clean typography, fair-use short clips, fast editing",
+    "negativePrompt": "no facecam, no watermarked footage, no long unedited clips, no chaotic cluttered boards, no low-res rips, no political commentary",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: Cartoon-logic investigation video essay (Family Guy fans 18-40, clip evidence + calculation graphics, dry humor, conspiracy-board aesthetics)\n{{STYLE}}: Investigation-board format, red-string conspiracy graphics, cartoon clips as evidence, animated math overlays, dry sarcastic commentary, clean typography\n{{MASCOT}}: Peter Griffin\nScene Action: A conspiracy-style investigation board with Peter Griffin's destruction clips pinned with red strings, giant dollar-total calculation graphic in the center, bold 'HOW MUCH?' caption, dramatic spotlight --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Bảng Điều Tra",
+        "description": "Bảng điều tra kiểu red-string với ảnh clip phá hoại của Peter, chữ nối nhau.",
+        "prompt": "Conspiracy investigation board with Family Guy destruction clips pinned by red strings, chaotic yet organized, dramatic lighting, cartoon analysis style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Bằng Chứng Clip",
+        "description": "Cắt cảnh Peter phá TV, đâm máy bay vào khu phố — đóng khung vàng kèm caption.",
+        "prompt": "Animated clip of Peter destroying a TV, bright yellow evidence frame with bold caption, original animation colors, investigation video style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Phép Tính Khổng Lồ",
+        "description": "Bảng tính toán khổng lồ cộng dồn chi phí, số đếm nhảy số.",
+        "prompt": "Giant calculation graphic tallying property damage, animated numbers counting up with dollar signs, bold red total, clean dark studio background, dry humor style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: Kết Luận Số Liệu",
+        "description": "Khối kết luận tổng chi phí với so sánh hài hước (bằng X chiếc TV).",
+        "prompt": "Conclusion card with the final damage total, comedic comparison graphic 'equivalent to X flat-screen TVs', bold typography, dramatic reveal lighting --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1: Slow sweep across the investigation board, red strings highlighted.",
+      "Shot 2: Punchy zoom-in on the evidence clip with caption pop.",
+      "Shot 3: Numbers count up with rapid cut-ins on each damage item.",
+      "Shot 4: Static hold on the final total with a comedic drum-roll sting."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng loạt phá hoại + câu hỏi chi phí (Damage Reel + Cost Question Hook)",
+    "openingFormula": "Mở bằng reel phá hoại nhanh: 'Here is Peter destroying a flat screen television. And this is Peter destroying his entire neighborhood with an airplane. Three cars, $1,500 each. Six utility poles, $800 each... But how much worth of property...' — dồn số liệu liên tiếp tạo tò mò về tổng thiệt hại.",
+    "pacingStructure": "[0-15s] Hook reel phá hoại + câu hỏi chi phí -> [15-45s] Giới thiệu phương pháp tính toán -> [45s-hết] Phân tích 3-4 hạng mục thiệt hại (mỗi 90s 1 hạng mục có clip + phép tính) -> [Kết thúc] Tổng kết con số + so sánh hài hước + CTA",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% luận điểm gốc + 30% tính toán/phân tích mới, chia 4-6 Part (700-1000 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional cartoon-theory scriptwriter specializing in calculating absurd animated damage costs and quantifying cartoon logic (style of No Villains Are SAFE! and Film Theory).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Dry, analytical, comedic, numbers-driven, deadpan delivery with punchy reveals. Keep 70% of the original investigation structure; add 30% new calculations, itemized breakdowns, and comedic comparisons.\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 4-6 parts (for a 15-30 minute investigation video).\n   - Each part should be 700-1000 words, written as continuous analytical commentary with [Action Notes] for the editor, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: How Much Has Peter Griffin Cost Quahog? (UbKKl9ov8ic - 2.34M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "UbKKl9ov8ic",
+    "scriptRefTitle": "How Much Has Peter Griffin Cost Quahog? (2.34M views)",
+    "voiceSampleVideoNote": "Voice sample extracted from UbKKl9ov8ic (How Much Has Peter Griffin Cost Quahog?) for optimal voice quality; script blueprint references UbKKl9ov8ic (highest-traffic video, 2.34M views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "How Much Has [Nhân Vật] [Hành Động]? | [Cartoon Theory]",
+    "thumbnailComposition": "Peter Griffin với biểu cảm vô tội cầm điều khiển TV chiếm 65% khung bên phải; TV vỡ + máy bay nền; Text 3-4 từ màu Vàng (#FACC15) hoặc Xanh dương (#60A5FA) viền đen dày.",
+    "thumbnailText": "HOW MUCH? 💸 / $2.4M?! 💥 / QUAHOG! 🏘",
+    "cleanThumbnailPrompt": "Cartoon-theory YouTube thumbnail, innocent-looking Peter Griffin holding a TV remote on the right 65% of frame, broken TV and airplane crash background, big dollar-sign graphic, bold empty space for text, Family Guy animation style, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "How Much Has Peter Griffin Cost Quahog?",
+      "How Many Bones Has Peter Broken?",
+      "The REAL Cost of Every Peter Griffin Disaster"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "script-forging & video-script-dissect (Bóc tách kịch bản & điều tra logic hoạt hình)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md",
+    "repoPath": "raw-niches/US_EverydayHistory/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens nuốt trọn transcript, phản hồi 3s, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Daniel / Antoni - giọng nam khô khan phân tích, $1.2/video)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Fable 5.1 / Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output, 14 reference images)",
+      "motion": "Google Veo 3.1 / ByteDance Seedance 2.0 / Kling 3.0 Omni",
+      "assembly": "CapCut PC + DaVinci Resolve (Color Grading)"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Fable 5.1 / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Daniel / Antoni - deadpan, phân tích)",
+    "videoTool": "Cắt clip gốc Family Guy (fair-use ngắn) + Google Nano Banana (graphics bảng tính) -> CapCut PC (investigation board + numbers)",
+    "bgmSoundtrack": "Mystery investigation BGM pha lo-fi comedic (ducking -18dB dưới giọng đọc)",
+    "soundEffects": "Dramatic sting on reveals, number count-up sound, comedic drum roll, whoosh transitions"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ sạch + Trình duyệt chống phát hiện + Gmail ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube US, gắn Logo/Banner investigation style, dán trọn bộ 50 tags SEO có sẵn (đã bổ sung), ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Dùng Master Script Prompt -> Thu âm ElevenLabs Daniel/Antoni -> Dựng investigation board + phép tính trên CapCut (mỗi video 15-30 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức 'How Much' -> Đăng Unlisted 2 giờ -> Hẹn giờ công khai giờ vàng US (19h-22h EST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

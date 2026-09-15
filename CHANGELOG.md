@@ -1,3 +1,33 @@
+## 2026-09-16 — Đóng Gap Benchmark 10 Kênh Kids/Animation: Thumbnail Scoring Heuristic + Kiểm Định WPM + Satellite Ecosystem + E2E 52/52
+
+- **Chấm điểm thumbnail 10/10 (heuristic) cho 10 kênh** (`scripts/audit_10_kids_thumbnails_wpm.py`):
+  - Phân tích pixel PIL (contrast/sharpness/edge-density/colorfulness) + metadata title (curiosity pattern) theo 7 tiêu chí trọng số chuẩn RAW-021.
+  - Điểm trung bình: RAW-001: 68 · RAW-010: 54 · RAW-023: 50 · RAW-025: 63 · RAW-029: 63 · RAW-031: 54 · RAW-050: 51 · RAW-075: 65 · RAW-079: 56 · RAW-088: 61.
+  - Ghi rõ phương pháp HEURISTIC (không phải visual inspection) + nextCheck xác nhận vision 01/10/2026 — minh bạch, chống nghiệm thu mù.
+  - Đóng gap `thumbnailOcrVisualScoring10of10` (NEEDS_REFRESH → COMPLETED_SCORED_HEURISTIC).
+- **Kiểm định WPM thực tế từ transcript window 10s–55s (45s)**:
+  - ✅ Xác nhận đúng: RAW-010 (77), RAW-023 (69), RAW-025 (157), RAW-029 (32 — đặc thù cổ tích ít thoại), RAW-050 (8 — đặc thù JP), RAW-075 (144), RAW-088 (160).
+  - 🔧 **Fix RAW-031**: WPM 30 → "Không áp dụng" (cửa sổ 45s thực tế 0 từ — crash compilation, 32 từ/11 phút toàn video; không dùng làm mẫu clone giọng nói liên tục).
+  - 🔧 **Chú thích RAW-001**: đo thực 136 (có đoạn nhạc không lời trong window), giữ ước lượng 165 cho nhịp hát.
+  - 🔧 **RAW-079**: cập nhật 186 → 187 (kiểm định chính xác).
+- **Build satelliteEcosystem cho 10 kênh** (`scripts/build_10_kids_satellite.py`): grounded từ kho 124 kênh (chỉ RAW-116 là satellite tham chiếu cho RAW-025); ghi trung thực `corpusNote` rằng ngách chuyên biệt chưa có kênh vệ tinh trong kho, cần research MCP vidIQ/Exa trước Pilot. Kèm content matrix 6 tháng grounded từ format video bão view thực.
+- **Kiểm định**: `validate-project.js` PASS, Master DB rebuild PASS (238 channels / 792 top videos / 1.275 FTS5), Playwright E2E `audit-10-kids-mission-control.js` **52/52 PASS**.
+- Script tái dùng: `scripts/audit_10_kids_thumbnails_wpm.py` · `scripts/build_10_kids_satellite.py`.
+- Proof: `docs/proof-10-kids-thumbnails-wpm.json` · Ảnh sheet: `_archive/20260916-thumbnail-audit/`.
+
+## 2026-09-16 — Hoàn Thiện Full Data 10 Kênh Kids/Animation (RAW-001/010/023/025/029/031/050/075/079/088) + E2E 52/52 PASS
+
+- **Sinh `production_toolkit.json` cho 9 kênh còn thiếu** (RAW-001, 010, 023, 029, 031, 050, 075, 079, 088) theo chuẩn Trạm Vũ Khí Tác Chiến: `targetMarket`, `visualDirective` (4 multi-angle archetypes + camera motion SOP), `scriptBlueprint` (Master Script Prompt North Effect 70/30 grounded transcript video #1), `packagingCTR` (title formula + thumbnail 3 điểm vàng), `productionStack` (Sweet Spot + Studio Tier), `launchpad5Steps` (Zoom A-Z).
+- **Enrich `production_toolkit.json` RAW-025** (game.mp4): bổ sung `yppRiskNote`, `dataGaps`, `retentionAvdProxy`.
+- **Khắc phục lệch dữ liệu 7/10 kênh**: Đồng bộ `deepIntelligence.vitalityAudit` trong `data-tabs/raw-kenh-mau.json` và `vitalityAudit` trong `channel-profile.json` theo số liệu live YouTube 2026-09-16 (trước: RAW-001/010/023/031/050/075/088 lệch giữa top-level và deep).
+- **Bổ sung `yppRiskNote`, `dataGaps`, `retentionAvdProxy`** cho 10 channel-profile.json (retention proxy tính theo methodology RAW-021: 70% public performance + 30% transcript structure từ top-videos.json).
+- **Nâng channelTags lên 30-50 tags** cho RAW-025 (25→50), RAW-050 (18→44 tiếng Nhật), RAW-088 (15→35).
+- **Build Master SQLite WAL DB** `data/h2dev_master.db`: 238 competitor channels, 794 top videos, 1.277 FTS5 — PASS 100%.
+- **Kiểm định nghiệm thu**: `validate-project.js` PASS, Playwright E2E `audit-10-kids-mission-control.js` **52/52 PASS** (10 kênh: modal + Mission Control + Voice DNA + Demo Video + 0 console/network lỗi), `audit-raw-124-e2e.js` **12/12 PASS**.
+- Script tái dùng: `scripts/build_10_kids_full_data.py` · `scripts/audit-10-kids-mission-control.js`.
+- Backup: `_backup/20260916-standardize-10-kids/`.
+- Proof: `docs/proof-10-kids-mission-control.png` + `.json`.
+
 ## 2026-09-16 — RAW-124 Live VPS E2E Check-Pass 12/12 + Harden audit-raw-124-e2e.js
 
 - Chạy Playwright E2E đối `https://h2dev-learn.tonymmo.com/rawkenh`: **12/12 PASS**.

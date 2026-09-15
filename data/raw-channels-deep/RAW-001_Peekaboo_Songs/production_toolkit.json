@@ -1,0 +1,123 @@
+{
+  "channelId": "UC229px7FeR-npXuYGZ6KavQ",
+  "rawId": "RAW-001",
+  "channelTitle": "Peekaboo Songs",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "US / Global (Tiếng Anh)",
+    "audienceProfile": "Trẻ em mầm non (Toddler & Kids 1-6 tuổi) và Phụ huynh tìm kiếm bài hát thiếu nhi 3D vui nhộn về nông trại, động vật và âm thanh con vật (Farm Animals, Animal Sounds, Nursery Rhymes)",
+    "viewingHabit": "Xem lặp lại nhiều lần trên TV thông minh/tablet, thời lượng ngắn 3-10 phút, bật trong giờ chơi, nhịp hát rõ lời để trẻ hát theo",
+    "emotionalCore": "Niềm vui tươi sáng, sự hồ hởi khi nghe tiếng kêu động vật, cảm giác an toàn và quen thuộc của bài hát Old MacDonald"
+  },
+  "visualDirective": {
+    "styleShort": "Cute 3D Pixar-style preschool cartoon farm animals (US/global toddlers 1-6, expressive baby animals, bright saturated colors, soft rounded shapes)",
+    "mascot": "Old MacDonald (Bác nông dân vui tính) + Baby Cow (bò con đáng yêu mắt to)",
+    "cameraLighting": "Bright sunny farm landscape, golden morning light, soft shadows, gentle slow pans, close-ups on cute animal faces, warm saturated palette, no darkness, no scary elements",
+    "style": "High-quality 3D cartoon animation style for toddlers, Pixar-inspired soft rounded geometry, large expressive eyes, chubby cheerful baby animals, bright saturated primary colors, clean sunny farm environment, gentle physics, no photorealism, no uncanny valley, no dark or threatening imagery",
+    "negativePrompt": "no photorealistic faces, no scary elements, no dark lighting, no violence, no creepy textures, no distorted anatomy, no realistic human skin, no horror themes, no dim colors",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: Cute 3D Pixar-style preschool cartoon farm animals (US/global toddlers 1-6, expressive baby animals, bright saturated colors)\n{{STYLE}}: High-quality 3D cartoon animation, soft rounded geometry, large expressive eyes, chubby cheerful baby animals, bright saturated primary colors, clean sunny farm, gentle physics, no photorealism, no dark imagery\n{{MASCOT}}: Old MacDonald + Baby Cow\nScene Action: Old MacDonald walks through a sunny farmyard at golden morning light, baby cow moos happily next to a red barn, chickens and piglets follow along, soft warm shadows, joyful atmosphere --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Cận Cảnh Baby Cow",
+        "description": "Cận cảnh khuôn mặt bò con mắt to, đôi tai cử động, tiếng moo to rõ, nền chuồng gỗ ấm áp.",
+        "prompt": "Extreme close-up of a cute 3D baby cow face with huge sparkling eyes and floppy ears, warm red barn background, bright sunny rim light, joyful expression, Pixar style, soft focus background --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Toàn Cảnh Nông Trại",
+        "description": "Đại cảnh trang trại buổi sáng, Old MacDonald dắt đoàn thú con, cối xay gió, mặt trời mọc.",
+        "prompt": "Wide sunny farm landscape at golden morning, cute 3D farmer walks with baby cow, chicken, pig and sheep, red barn, windmill, flowers, warm saturated colors, Pixar preschool style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Nhảy Múa Đồng Ca",
+        "description": "Dàn đồng ca động vật nhún nhảy theo nhịp, bóng nảy đàn hồi vui nhộn kiểu hoạt hình.",
+        "prompt": "Group of cute 3D baby farm animals dancing in a circle on green grass, happy faces, bouncy cartoon physics, confetti, bright blue sky, joyful preschool music vibe --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: Chơi Đùa Dưới Nắng",
+        "description": "Baby cow chạy nhảy trong vườn hoa hướng dương, bướm bay quanh, không khí trong trẻo.",
+        "prompt": "Cute 3D baby cow running joyfully through a sunflower field, butterflies, clear blue sky, soft sunbeams, cheerful preschool cartoon style, warm colors --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1 (Close-up): Gentle slow push-in on the baby cow face as it moos, subtle bouncy idle.",
+      "Shot 2 (Wide): Slow horizontal pan across the farmyard revealing all animals in a line.",
+      "Shot 3 (Dance): Steady medium shot with gentle zoom-out as animals dance in circle.",
+      "Shot 4 (Play): Light tracking shot following the baby cow through sunflowers."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng bài hát quen thuộc + tiếng kêu động vật ngay 0-15s (Familiar Nursery Rhyme + Animal Sound Hook)",
+    "openingFormula": "Mở bằng giai điệu 'Old Macdonald had a cow, e-i-e-i-o. With a moo moo here and a moo moo there' — trẻ nhận diện ngay bài hát, mắt dán vào màn hình từ giây đầu; minh họa 3D bò con moo to, động vật khác nối tiếp nhau.",
+    "pacingStructure": "[0-15s] Hook bài hát quen thuộc + tiếng kêu con vật -> [15-45s] Giới thiệu lần lượt 3 con vật (bò, chó, gà) với âm thanh đặc trưng -> [45s-hết] Tình huống hài hước nhỏ (mất trứng, trộm trứng, cứu bạn) giải quyết bằng tinh thần đoàn kết -> [Kết thúc] Đồng ca toàn bộ động vật + lời chào tạm biệt vui vẻ",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% bài hát/vần điệu gốc + 30% tình huống mới mẻ an toàn, chia 3-5 Part (600-800 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional children's content scriptwriter specializing in preschool nursery rhymes and 3D farm animal cartoons (style of Peekaboo Songs, Cocomelon, and Little Baby Bum).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Cheerful, bouncy, repetitive onomatopoeia (moo moo, woof woof, cluck cluck), short simple sentences, no scary words. Keep 70% of the original song structure, melody cadence, and repeated animal-sound phrases; add 30% gentle mini-adventures (lost egg, thief at the farm, rescue) and positive social lessons (sharing, helping, friendship).\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 3-5 parts (for a 3-10 minute animated video).\n   - Each part should be 600-800 words, written in continuous sing-along style with [Action Notes] for the 3D animator, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: Old MacDonald Had a Farm Morning Routine! (oixhtdMRDHA - 41.7M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "oixhtdMRDHA",
+    "scriptRefTitle": "Old MacDonald Had a Farm Morning Routine! 🐄🐕 3D Cartoon for Kids | Animal Song | Animal Sound (41.7M views)",
+    "voiceSampleVideoNote": "Voice sample extracted from 01aHhgMuE14 (Baby Shark Doo Doo) for optimal voice quality; script blueprint references oixhtdMRDHA (highest-traffic video, 41.7M views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "[Tên Con Vật/Bài Hát] + [Hành Động Dễ Thương/Tình Huống Sáng Tạo] + 3D Cartoon for Kids | [Keyword Phổ Biến]",
+    "thumbnailComposition": "Bò con 3D mắt to chiếm 65% khung hình bên phải (Rule of Thirds); Trang trại tươi sáng + mặt trời ở nền; Vùng sáng 35% bên trái đặt Text ngắn 2-4 từ màu Vàng (#FACC15) viền đen dày.",
+    "thumbnailText": "MOO! 🐄 / SING ALONG! 🎵 / FARM FUN! 🌞",
+    "cleanThumbnailPrompt": "Bright 3D cartoon YouTube thumbnail, huge cute baby cow face with sparkling eyes on the right side occupying 65% of frame, sunny red barn farm background on the left with clear blue sky, warm saturated Pixar-style colors, clean space for text overlay, high contrast, preschool-friendly, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "Old MacDonald Had a Farm Morning Routine! 🐄🐕 3D Cartoon for Kids | Animal Song | Animal Sound",
+      "Naughty Monkey Stole The Eggs! Emergency at Old MacDonald Farm!",
+      "Dinosaur in the Zoo! Old MacDonald Kids Songs"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "h2dev-hoat-hinh (Pipeline Hoạt Hình AI 5 Bước Story-to-Animation)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
+    "repoPath": "pipelines/hoat-hinh-ai/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Gigi / Freya - giọng nữ trẻ trung, $1.2/video) HOẶC Kokoro-82M TTS Local GPU ($0.00)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, vẽ bò con 3D chuẩn 100%)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output)",
+      "motion": "Google Veo 3.1 / Kling 3.0 Omni (6-shot narrative)",
+      "assembly": "CapCut PC + DaVinci Resolve"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Model: Eleven Multilingual v3, Giọng: Gigi / Freya) song song Kokoro-82M Local GPU",
+    "videoTool": "Google Nano Banana 2 & Pro (Stills) -> Google Flow Veo 3.1 / Kling 3.0 / CapCut Ken Burns -> Hậu kỳ CapCut PC",
+    "bgmSoundtrack": "Cheerful Acoustic Nursery BGM (Đàn ukulele, chuông gió, nhịp vỗ tay vui nhộn, ducking -18dB dưới giọng hát)",
+    "soundEffects": "Cartoon boing, animal sounds (moo, woof, cluck), cheerful glockenspiel dings, whoosh transitions"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ (MKT Datacenter 2) + Trình duyệt chống phát hiện + Gmail ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube US, gắn Logo/Banner bò con 3D, dán trọn bộ 50 tags SEO có sẵn, ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Dùng Master Script Prompt -> Thu âm ElevenLabs Gigi/Freya -> Dựng chuỗi 3D trên CapCut (mỗi video 3-10 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức -> Đăng Unlisted 2 giờ quét bản quyền -> Hẹn giờ công khai giờ vàng US (17h-20h EST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

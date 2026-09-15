@@ -1,0 +1,123 @@
+{
+  "channelId": "UCnbhbfM1nGNag9HGTDbSPXA",
+  "rawId": "RAW-079",
+  "channelTitle": "Jesse Jokes",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "NL + US / Global (Tiếng Anh) - fan hoạt hình & ranking",
+    "audienceProfile": "Fan hoạt hình (Disney, DreamWorks, Pixar, Sony) 14-35 tuổi; thích video bảng xếp hạng (ranking/tier list) nhân vật phản diện, tranh luận 'ai là villain hay nhất'",
+    "viewingHabit": "Xem video ranking 15-30 phút; thích danh sách, phân hạng, clip minh họa ngắn; hay xem lại để tranh luận",
+    "emotionalCore": "Tò mò so sánh + cảm giác công nhận khi villain mình thích được xếp hạng cao"
+  },
+  "visualDirective": {
+    "styleShort": "Dynamic animated-villain ranking video essay style (the audience is animation fans 14-35, tier-list graphics, fast-paced montage clips, witty commentary, energetic pacing)",
+    "mascot": "Villain Tier List (bảng xếp hạng nhân vật phản diện - biểu tượng video)",
+    "cameraLighting": "Studio-clean tier-list format, vibrant gradient background, dynamic slide-ins, montage clips with original animation colors, bold countdown numbers, punchy zooms",
+    "style": "High-energy ranking/tier-list video essay, bold gradient tier graphics (S/A/B/C/D), fast-paced montage of animated villain clips, witty sarcastic commentary, countdown numbers with pop effects, clean modern typography, fair-use short clips",
+    "negativePrompt": "no facecam, no watermarked pirated footage, no long unedited clips (keep montage pacing), no cluttered graphics, no low-res rips",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: Dynamic animated-villain ranking video essay (animation fans 14-35, tier-list graphics, fast-paced montage, witty commentary)\n{{STYLE}}: High-energy ranking video essay, bold gradient tier graphics, fast-paced montage clips, witty sarcastic commentary, countdown numbers with pop effects, clean typography\n{{MASCOT}}: Villain Tier List\nScene Action: A glowing S-tier podium with iconic animated villains' portraits arranged on it, vibrant gradient background, bold 'S TIER' title, dramatic spotlight, ranking show energy --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Podium S-Tier",
+        "description": "Bục S-Tier rực rỡ với chân dung các villain huyền thoại, ánh đèn spotlight.",
+        "prompt": "Glowing S-tier podium with iconic animated villain portraits, vibrant gradient background, dramatic spotlight, bold ranking show energy, clean graphics --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Montage Villain",
+        "description": "Chuỗi cắt nhanh các villain đang làm điều ác, số thứ tự pop lên.",
+        "prompt": "Fast-paced montage of animated villains performing iconic evil acts, popping countdown numbers, energetic editing style, original animation colors --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Bảng Tier Đầy Đủ",
+        "description": "Toàn bộ bảng tier S-F với 41 villain xếp hạng, màu gradient.",
+        "prompt": "Full tier list table S through F with 41 animated villain portraits in ranked rows, vibrant gradient background, clean modern UI, ranking video style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: Kết Luận Hài Hước",
+        "description": "Khối kết luận với villain #1 được tôn vinh, confetti, chữ to.",
+        "prompt": "Celebration conclusion card, number-one villain portrait with confetti and crown, bold 'THE BEST VILLAIN' text, vibrant gradient background, comedic energy --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1: Dynamic zoom-in on the S-tier podium, spotlight sweep.",
+      "Shot 2: Rapid whip-pan cuts between villain montage clips.",
+      "Shot 3: Smooth scroll-down reveal of the full tier table.",
+      "Shot 4: Punchy zoom-out with confetti burst on the winner reveal."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng con số gây tò mò + lời thách thức ranking (Countdown Challenge Hook)",
+    "openingFormula": "Mở bằng con số cụ thể gây tò mò: 'DreamWorks has made a lot of movies over the years... I counted 41 villains, and I'm going to rank them from worst to best. Let's go.' — cam kết danh sách đầy đủ, khán giả tò mò ai đứng đầu.",
+    "pacingStructure": "[0-15s] Hook con số + lời thách thức -> [15-45s] Giới thiệu luật chơi (thang điểm, tiêu chí) -> [45s-hết] Lần lượt công bố các hạng từ thấp đến cao (mỗi 60-90s 1-2 villain có clip minh họa) -> [Kết thúc] Villain #1 + CTA bình luận tranh luận",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% đánh giá gốc + 30% góc nhìn hài hước mới, chia 5-8 Part (600-900 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional entertainment scriptwriter specializing in villain rankings and animated movie tier lists (style of Jesse Jokes and animated ranking channels).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Witty, sarcastic, fast-paced, passionate fan energy, punchy one-liners per villain, build-up toward the top spot. Keep 70% of the original ranking reasoning; add 30% new comedic commentary, fan-callout comparisons, and hype moments.\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 5-8 parts (for a 15-30 minute ranking video).\n   - Each part should be 600-900 words, written as continuous energetic commentary with [Action Notes] for the editor, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: Ranking Every DreamWorks Villain (3FV407gsiOU - 10.06M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "3FV407gsiOU",
+    "scriptRefTitle": "Ranking Every DreamWorks Villain (10.06M views)",
+    "voiceSampleVideoNote": "Voice sample extracted from qieJzQ0sL3w for optimal voice quality; script blueprint references 3FV407gsiOU (highest-traffic video, 10.06M views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "Ranking Every [Hãng/Thể Loại] Villain | [Video Essay]",
+    "thumbnailComposition": "Nhóm villain nổi tiếng xếp hàng chiếm 65% khung bên phải; Chữ 'RANKED' khổng lồ bên trái; Text 2-3 từ màu Vàng (#FACC15) hoặc Đỏ (#EF4444) viền đen dày.",
+    "thumbnailText": "RANKED! 🏆 / WORST→BEST ⬆ / 41 VILLAINS! 😈",
+    "cleanThumbnailPrompt": "High-energy ranking YouTube thumbnail, iconic animated villains lineup on the right 65% of frame, bold 'RANKED' text graphic on the left, vibrant gradient background, dramatic spotlight, clean modern typography space, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "Ranking Every DreamWorks Villain",
+      "Ranking Every Sony Animation Villain",
+      "Ranking Every Disney Villain From Worst to Best"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "script-forging & video-script-dissect (Bóc tách kịch bản & phân hạng nhân vật hoạt hình)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md",
+    "repoPath": "raw-niches/US_EverydayHistory/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens nuốt trọn transcript, phản hồi 3s, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Daniel / James - giọng nam hoạt náo, năng lượng cao, $1.2/video)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Fable 5.1 / Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output, 14 reference images)",
+      "motion": "Google Veo 3.1 / ByteDance Seedance 2.0 / Kling 3.0 Omni",
+      "assembly": "CapCut PC + DaVinci Resolve (Color Grading)"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Fable 5.1 / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Daniel / James - hoạt náo, hài hước)",
+    "videoTool": "Cắt clip gốc hoạt hình (fair-use ngắn) + Google Nano Banana (graphics tier) -> CapCut PC (montage + tier list)",
+    "bgmSoundtrack": "Upbeat pop/comedy BGM có tiếng trống hài hước (ducking -18dB dưới giọng đọc)",
+    "soundEffects": "Pop-in sound for rank reveals, dramatic sting for top 3, comedic record scratch, confetti burst"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ/Hà Lan sạch + Trình duyệt chống phát hiện + Gmail ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube, gắn Logo/Banner tier list, dán trọn bộ 36 tags SEO có sẵn, ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Dùng Master Script Prompt -> Thu âm ElevenLabs Daniel/James -> Dựng montage + tier list trên CapCut (mỗi video 15-30 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức 'Ranking Every' -> Đăng Unlisted 2 giờ -> Hẹn giờ công khai giờ vàng US (18h-22h EST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

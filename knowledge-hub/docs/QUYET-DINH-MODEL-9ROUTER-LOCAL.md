@@ -148,3 +148,41 @@ Test trên `cbcn/deepseek-v4.1-flash` (1 ảnh, RAW-010):
 3. **Cơ chế retry:** xử lý 429 (flash-lite) và tail-latency >15s (deepseek) — retry 2 lần, fallback chéo giữa `Combo-Gemini-3.7-flash` ↔ `ag/gemini-3.7-flash-low`.
 4. **Tránh phụ thuộc 1 nguồn:** các prefix (qd, cbcn, cbai, ag, gh) là các upstream khác nhau — khi một cái chập chờn thì fallback sang cái khác cùng tier.
 5. **VPS:** giữ local làm primary; VPS chỉ là backup (đang dừng credential).
+
+---
+
+## VII. TRIỂN KHAI SẢN XUẤT: FACELESS VISION BATCH v4 (16/09/2026)
+
+Script `scripts/faceless-vision-batch.py` — production-ready cho vận hành dài hạn.
+
+### Cấu hình chốt
+| Thành phần | Giá trị | Lý do |
+|---|---|---|
+| PRIMARY | `ag/gemini-3.7-flash-low` | Thắng A/B interleaved (0.28s/ảnh, dao động ±0.25s) |
+| FALLBACK | `Combo-Gemini-3.7-flash` | Burst 104 lanes, 0.037s/ảnh |
+| INPUT | 6 thumbnail SẠCH từ RSS (+fallback screenshot) | Screenshot trang kênh gây nhiễu → dao động kết quả (bài học v3) |
+| VOTING | 2 vòng bỏ phiếu, lệch → vòng 3 tie-break | Chống hallucination ca biên |
+| LANES | 13 | Đo được ổn định 39/39 qua 3 rounds |
+| MAX_TOKENS | 900 | 400 gây JSON-FAIL (bài học benchmark) |
+
+### Semantics cấp KÊNH (code suy diễn, không phụ thuộc model)
+```
+hasRealHumanFace = presenter THẬT lặp lại nhiều thumbnail (talking-head)
+isFaceless       = NOT presenter  (hoạt hình / đồ vật / collage người khác / AI-human = faceless)
+aiGenerated      = thumbnails do AI tạo
+needsReview      = presenter có / confidence thấp / AI lẫn người thật
+```
+
+### Kết quả chạy thật (16/09)
+- **124/124 OK, 120.6s** · 123 unanimous (99.2%) · 122 faceless / 2 HAS_FACE
+- Stability: rerun 10 kênh → verdict đồng nhất
+- Checkpoint resume: `.cache/faceless-vision/checkpoint.json` (đứt giữa chừng chạy lại không mất kết quả)
+- Backup tự động: `_backup/<ts>-faceless-vision-v4/`
+
+### Lệnh vận hành
+```bash
+python scripts/faceless-vision-batch.py              # chạy kênh còn thiếu
+python scripts/faceless-vision-batch.py --all        # chạy lại toàn bộ
+python scripts/faceless-vision-batch.py --ids RAW-001,RAW-010
+python scripts/faceless-vision-batch.py --limit 10   # pilot
+```

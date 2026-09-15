@@ -368,6 +368,24 @@ code { font-size: 11px; color: var(--fg-2); }
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
 }
+
+/* Smart Search Suggestions Dropdown Styling (Solid Opaque Frosted Glass - Zero Bleed-through) */
+#video-search-suggestions, #raw-search-suggestions {
+  background-color: #0b0f19 !important;
+  background: rgba(11, 15, 25, 0.98) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid #334155 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.08) !important;
+  z-index: 1000 !important;
+}
+.js-v-sug-row, .js-sug-row {
+  background-color: #0b0f19 !important;
+  transition: background-color 0.15s ease !important;
+}
+.js-v-sug-row:hover, .js-sug-row:hover {
+  background-color: #1e293b !important;
+}
 .card::after, .interactive-card::after, .bento-card::after, .niche-card::after {
   content: "";
   position: absolute;

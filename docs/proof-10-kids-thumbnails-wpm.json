@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-15T20:25:38.064693Z",
+  "summary": [
+    {
+      "id": "RAW-001",
+      "scored": 5,
+      "avg": 68,
+      "wpm_real": 136,
+      "note": "RAW-001 WPM noted: measured 136"
+    },
+    {
+      "id": "RAW-010",
+      "scored": 10,
+      "avg": 54,
+      "wpm_real": 77,
+      "note": null
+    },
+    {
+      "id": "RAW-023",
+      "scored": 7,
+      "avg": 50,
+      "wpm_real": 69,
+      "note": null
+    },
+    {
+      "id": "RAW-025",
+      "scored": 10,
+      "avg": 63,
+      "wpm_real": 157,
+      "note": null
+    },
+    {
+      "id": "RAW-029",
+      "scored": 10,
+      "avg": 63,
+      "wpm_real": 32,
+      "note": null
+    },
+    {
+      "id": "RAW-031",
+      "scored": 10,
+      "avg": 54,
+      "wpm_real": 0,
+      "note": "RAW-031 WPM fixed: 30 -> N/A (0 words in 45s window)"
+    },
+    {
+      "id": "RAW-050",
+      "scored": 10,
+      "avg": 51,
+      "wpm_real": 8,
+      "note": null
+    },
+    {
+      "id": "RAW-075",
+      "scored": 10,
+      "avg": 65,
+      "wpm_real": 144,
+      "note": null
+    },
+    {
+      "id": "RAW-079",
+      "scored": 8,
+      "avg": 56,
+      "wpm_real": 187,
+      "note": "RAW-079 WPM verified: 187"
+    },
+    {
+      "id": "RAW-088",
+      "scored": 10,
+      "avg": 61,
+      "wpm_real": 160,
+      "note": null
+    }
+  ]
+}

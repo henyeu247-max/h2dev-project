@@ -27,7 +27,21 @@
       "transcriptJsonRel": "transcripts/c7m4EH7UZ_8_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/c7m4EH7UZ_8_summary_vi.md",
-      "hookSnippet": "Bạn chưa được sinh ra...."
+      "hookSnippet": "Bạn chưa được sinh ra....",
+      "thumbnailScore": {
+        "compositeScore": 67,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 34,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 55,
+          "textBurden": 17,
+          "policySafety": 93,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: your life in Warhammer 40k (Space Marine)...)"
+      }
     },
     {
       "rank": 2,
@@ -53,7 +67,21 @@
       "transcriptJsonRel": "transcripts/7JJq9n2o1Yo_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/7JJq9n2o1Yo_summary_vi.md",
-      "hookSnippet": "Bạn thức dậy và hét lên...."
+      "hookSnippet": "Bạn thức dậy và hét lên....",
+      "thumbnailScore": {
+        "compositeScore": 68,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 36,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 55,
+          "textBurden": 23,
+          "policySafety": 93,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: your life in Warhammer 40k (Imperium of Man)...)"
+      }
     },
     {
       "rank": 3,
@@ -79,7 +107,21 @@
       "transcriptJsonRel": "transcripts/KpddAAFFbP0_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/KpddAAFFbP0_summary_vi.md",
-      "hookSnippet": "bạn thức dậy trong một hầm mộ được bao quanh bởi mùi hôi thối của cái chết và thất bại..."
+      "hookSnippet": "bạn thức dậy trong một hầm mộ được bao quanh bởi mùi hôi thối của cái chết và thất bại...",
+      "thumbnailScore": {
+        "compositeScore": 65,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 37,
+          "contrast": 79,
+          "mobileReadability": 91,
+          "curiosityGap": 61,
+          "textBurden": 29,
+          "policySafety": 93,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Why It Sucks To Be Born As A Tarnished...)"
+      }
     },
     {
       "rank": 6,
@@ -105,7 +147,21 @@
       "transcriptJsonRel": "transcripts/Rl0kFo8T_6g_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/Rl0kFo8T_6g_summary_vi.md",
-      "hookSnippet": "Bạn không sinh ra đã là anh hùng...."
+      "hookSnippet": "Bạn không sinh ra đã là anh hùng....",
+      "thumbnailScore": {
+        "compositeScore": 67,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 42,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 55,
+          "textBurden": 11,
+          "policySafety": 93,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: your life as a Salamander(Space Marine)...)"
+      }
     },
     {
       "rank": 10,
@@ -131,7 +187,21 @@
       "transcriptJsonRel": "transcripts/sq831RUw47A_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/sq831RUw47A_summary_vi.md",
-      "hookSnippet": "xin chúc mừng y radon ngôi sao Tai họa ngôi sao cọ rửa bạn hỏi hãy tưởng tượng..."
+      "hookSnippet": "xin chúc mừng y radon ngôi sao Tai họa ngôi sao cọ rửa bạn hỏi hãy tưởng tượng...",
+      "thumbnailScore": {
+        "compositeScore": 61,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 15,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 93,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: your life as Radahn...)"
+      }
     },
     {
       "rank": 1,
@@ -157,7 +227,21 @@
       "transcriptJsonRel": "transcripts/MibddujOjxU_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/MibddujOjxU_summary_vi.md",
-      "hookSnippet": "Trước cây không khí, trước ân sủng, trước chủ đề Reddit tranh luận liệu ngón tay có..."
+      "hookSnippet": "Trước cây không khí, trước ân sủng, trước chủ đề Reddit tranh luận liệu ngón tay có...",
+      "thumbnailScore": {
+        "compositeScore": 58,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 41,
+          "contrast": 56,
+          "mobileReadability": 82,
+          "curiosityGap": 55,
+          "textBurden": 29,
+          "policySafety": 80,
+          "visualNovelty": 78
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: The entire story of Elden Ring,i guess (DLC Update)...)"
+      }
     },
     {
       "rank": 5,
@@ -183,7 +267,21 @@
       "transcriptJsonRel": "transcripts/IosvVkKa7eM_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/IosvVkKa7eM_summary_vi.md",
-      "hookSnippet": "Bạn 12 tuổi khi họ xử tử cha mẹ bạn trên đường phố...."
+      "hookSnippet": "Bạn 12 tuổi khi họ xử tử cha mẹ bạn trên đường phố....",
+      "thumbnailScore": {
+        "compositeScore": 68,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 44,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 55,
+          "textBurden": 17,
+          "policySafety": 93,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Your life as an Imperial Assassin(Warhammer 40k)...)"
+      }
     },
     {
       "rank": 7,
@@ -209,7 +307,21 @@
       "transcriptJsonRel": "transcripts/GVc5d-qok8w_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/GVc5d-qok8w_summary_vi.md",
-      "hookSnippet": "Bạn sắp được sinh ra và la hét bốn lần trong một giờ tới...."
+      "hookSnippet": "Bạn sắp được sinh ra và la hét bốn lần trong một giờ tới....",
+      "thumbnailScore": {
+        "compositeScore": 65,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 10,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 55,
+          "textBurden": 29,
+          "policySafety": 93,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 1 Hour of Space Marine Lore in Warhammer 40k...)"
+      }
     },
     {
       "rank": 8,
@@ -240,7 +352,21 @@
       "transcriptJsonRel": "transcripts/r0Np-YRG_4o_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/r0Np-YRG_4o_summary_vi.md",
-      "hookSnippet": "đây là câu chuyện gốc của trò chơi Five Nights at Freddy's ở đâu đó trong..."
+      "hookSnippet": "đây là câu chuyện gốc của trò chơi Five Nights at Freddy's ở đâu đó trong...",
+      "thumbnailScore": {
+        "compositeScore": 55,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 32,
+          "contrast": 48,
+          "mobileReadability": 79,
+          "curiosityGap": 55,
+          "textBurden": 29,
+          "policySafety": 80,
+          "visualNovelty": 78
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: the history of Five Nights at Freddy's, i guess...)"
+      }
     },
     {
       "rank": 9,
@@ -288,8 +414,31 @@
       "transcriptJsonRel": "transcripts/V7FnnEQWpWw_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/V7FnnEQWpWw_summary_vi.md",
-      "hookSnippet": "tất cả bắt đầu từ hư vô trong vũ trụ rồi trò chơi Watchers không hề hay biết về mình..."
+      "hookSnippet": "tất cả bắt đầu từ hư vô trong vũ trụ rồi trò chơi Watchers không hề hay biết về mình...",
+      "thumbnailScore": {
+        "compositeScore": 60,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 47,
+          "contrast": 57,
+          "mobileReadability": 83,
+          "curiosityGap": 61,
+          "textBurden": 23,
+          "policySafety": 80,
+          "visualNovelty": 82
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: the history of League of Legends, i guess...)"
+      }
     }
   ],
-  "transcriptsCount": 10
+  "transcriptsCount": 10,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 10,
+    "declaredCount": 10,
+    "missingThumbnails": [],
+    "averageCompositeScore": 63,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

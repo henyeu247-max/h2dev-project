@@ -1,0 +1,123 @@
+{
+  "channelId": "UCymIvmFC2lzCVABsAr_Bu7w",
+  "rawId": "RAW-075",
+  "channelTitle": "The Regular Recap",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "US / UK / Global (Tiếng Anh) - fan Cartoon Network",
+    "audienceProfile": "Fan hoạt hình Cartoon Network (Regular Show) 16-32 tuổi; thích phân tích nhân vật, tranh luận 'who should have ended up with whom', nội dung nostalgia",
+    "viewingHabit": "Xem video phân tích 8-15 phút; thích góc nhìn phản biện, bảng so sánh, cắt cảnh gốc hoạt hình; tham gia bình luận tranh luận sôi nổi",
+    "emotionalCore": "Nostalgia tuổi thơ + sự thỏa mãn khi phân tích được logic tình cảm của nhân vật"
+  },
+  "visualDirective": {
+    "styleShort": "Clean cartoon recap/analysis video essay style (the audience is Cartoon Network fans 16-32, clipped cartoon footage + talking-head-free commentary, bold lower-third captions, nostalgic vibe)",
+    "mascot": "Mordecai (nhân vật chim xanh - trung tâm các video phân tích tình cảm)",
+    "cameraLighting": "Studio-clean analysis format: bright neutral background for commentary cards, cartoon clips with original color grade, bold caption overlays, smooth Ken Burns on stills",
+    "style": "Video-essay analysis format, high-quality cartoon clips with original footage, bold animated lower-thirds and callouts, infographic comparison charts, clean modern typography, nostalgic warm grading on flashbacks, no facecam, fast editing rhythm",
+    "negativePrompt": "no facecam, no clickbait red arrows spam, no blurry low-res clips, no copyrighted full-episode reuploads (use short fair-use clips), no watermarks",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: Clean cartoon recap/analysis video essay style (Cartoon Network fans 16-32, clipped cartoon footage + bold captions, nostalgic vibe)\n{{STYLE}}: Video-essay analysis format, cartoon clips with original color grade, bold animated lower-thirds, infographic comparison charts, clean modern typography, no facecam\n{{MASCOT}}: Mordecai\nScene Action: A split-screen analysis graphic showing Mordecai's love life timeline, heart icons and relationship cards, bold caption 'WHO SHOULD HE END UP WITH?', clean studio background, nostalgic cartoon color grade --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Timeline Tình Cảm",
+        "description": "Biểu đồ timeline các mối tình của Mordecai với ảnh nhân vật và mốc thời gian.",
+        "prompt": "Clean infographic timeline of Mordecai's relationships, character portraits with dates, heart and broken-heart icons, studio background, bold modern typography, cartoon analysis style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Cảnh Gốc Phân Tích",
+        "description": "Cắt cảnh gốc Regular Show có khung highlight và caption chú thích.",
+        "prompt": "Cartoon clip of Regular Show scene with bright yellow highlight frame and bold caption overlay, original animation colors, analysis video style, clean composition --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Bảng So Sánh",
+        "description": "Bảng so sánh 3 cặp đôi tiềm năng với điểm ưu/nhược.",
+        "prompt": "Comparison table graphic comparing three potential couples, pros and cons columns, cartoon character portraits, clean studio background, bold typography --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: Kết Luận Tranh Luận",
+        "description": "Khối kết luận với câu hỏi mở cho khán giả tranh luận.",
+        "prompt": "Conclusion card with open question 'WHO SHOULD HE END UP WITH?' and animated poll icons, clean studio background, bold modern design, cartoon analysis style --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1: Gentle pan across the timeline infographic, icon pop-ins.",
+      "Shot 2: Ken Burns zoom on the highlight-framed cartoon clip.",
+      "Shot 3: Smooth slide-in of comparison table rows.",
+      "Shot 4: Static hold on conclusion card with subtle pulse on the question."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng tóm tắt mâu thuẫn tình cảm gây tranh cãi (Controversial Take Hook)",
+    "openingFormula": "Mở bằng tóm tắt nhanh mâu thuẫn: 'From being heartbroken by Margaret multiple times... to getting chased by Stara, who ended up madly in love with him, Mordecai's love life explores different kinds of relationships...' — khơi đúng chủ đề gây tranh cãi để khán giả tò mò.",
+    "pacingStructure": "[0-15s] Hook mâu thuẫn tình cảm -> [15-45s] Giới thiệu khung phân tích (các mối tình chính) -> [45s-hết] Phân tích lần lượt 3-4 cặp đôi (mỗi 90s 1 luận điểm có clip minh họa) -> [Kết thúc] Kết luận + câu hỏi mở cho khán giả",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% luận điểm gốc + 30% góc nhìn mới, chia 3-5 Part (700-900 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional cartoon analysis scriptwriter specializing in character relationship deep-dives and fan-controversy breakdowns (style of The Regular Recap and cartoon video essays).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Analytical, engaging, conversational, balanced argumentation, nostalgia-driven, respectful of fan opinions, punchy chapter transitions. Keep 70% of the original analysis; add 30% new counter-arguments, overlooked scenes, and audience-engagement prompts.\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 3-5 parts (for a 8-15 minute analysis video).\n   - Each part should be 700-900 words, written in continuous commentary with [Action Notes] for the editor, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: Who Mordecai SHOULD Have ENDED UP With (KCJEeITgePU - 738K views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "KCJEeITgePU",
+    "scriptRefTitle": "Who Mordecai SHOULD Have ENDED UP With (738K views)",
+    "voiceSampleVideoNote": "Voice sample extracted from dm9vNIq_CTc for optimal voice quality; script blueprint references KCJEeITgePU (highest-traffic video, 738K views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "Who [Nhân Vật] SHOULD Have [Kết Cục] With | [Tên Kênh Phong Cách Recap]",
+    "thumbnailComposition": "Mordecai với biểu cảm bối rối chiếm 65% khung bên phải; Ảnh 3 cô gái (Margaret, CJ, Stara) góc trái; Text 3-4 từ màu Xanh lá (#4ADE80) hoặc Tím (#C084FC) viền đen dày.",
+    "thumbnailText": "WHO? 🤔 / ENDED UP WITH... 💔 / THE ANSWER! ✅",
+    "cleanThumbnailPrompt": "Clean cartoon analysis YouTube thumbnail, confused Mordecai character on the right 65% of frame, three love-interest portraits on the left, bold modern typography space, nostalgic Regular Show color grade, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "Who Mordecai SHOULD Have ENDED UP With",
+      "The GREATEST Regular Show Episodes",
+      "Why Rigby Was Actually the Smartest Character in Regular Show"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "script-forging & video-script-dissect (Bóc tách kịch bản & phân tích nhân vật hoạt hình)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md",
+    "repoPath": "raw-niches/US_EverydayHistory/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens nuốt trọn transcript, phản hồi 3s, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Daniel / Marcus - giọng nam phân tích ấm áp, $1.2/video)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Fable 5.1 / Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output, 14 reference images)",
+      "motion": "Google Veo 3.1 / ByteDance Seedance 2.0 / Kling 3.0 Omni",
+      "assembly": "CapCut PC + DaVinci Resolve (Color Grading)"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Fable 5.1 / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Daniel / Marcus - phân tích, gần gũi)",
+    "videoTool": "Cắt clip gốc Regular Show (fair-use ngắn) + Google Nano Banana (graphics) -> CapCut PC (lower-thirds, infographic)",
+    "bgmSoundtrack": "Lo-fi nostalgic study BGM (guitar acoustic chill, ducking -20dB dưới giọng đọc)",
+    "soundEffects": "Soft whoosh transitions, pop-in sound for graphics, nostalgic vinyl crackle, gentle chime"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ sạch + Trình duyệt chống phát hiện + Gmail ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube US, gắn Logo/Banner Regular Show style, dán trọn bộ 50 tags SEO có sẵn, ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Dùng Master Script Prompt -> Thu âm ElevenLabs Daniel/Marcus -> Dựng clip gốc + infographic trên CapCut (mỗi video 8-15 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức 'Who... SHOULD Have' -> Đăng Unlisted 2 giờ -> Hẹn giờ công khai giờ vàng US (19h-22h EST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment tranh luận -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

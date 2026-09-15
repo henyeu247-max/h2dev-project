@@ -1,3 +1,13 @@
+## 2026-09-14 — Khắc phục Triệt Để Lỗi Xuyên Thấu Nền Dropdown (Solid Opaque Frosted Glass)
+
+- **Xử lý dứt điểm hiện tượng thẻ và nút bấm bên dưới đè xuyên thấu (Zero Bleed-Through):**
+  - *Nguyên nhân gốc rễ:* Lớp màu nền cũ sử dụng cú pháp Tailwind tùy biến `bg-[#0b0f19]/95` không nằm trong tệp CSS đã biên dịch sẵn (`tailwind.css`), khiến thuộc tính `backgroundColor` bị trình duyệt trả về giá trị mặc định `rgba(0, 0, 0, 0)` (hoàn toàn trong suốt 100%). Do đó, các nút bấm màu đỏ (`Tất cả (136)`), các thẻ card và chữ ở tầng dưới bị lộ xuyên thấu qua menu gợi ý gây rối mắt.
+  - *Xử lý triệt để 2 lớp:*
+    1. Bổ sung quy tắc CSS kiên cố vào [`assets/viddar.css`](file:///d:/YTB/H2DEV-Project/assets/viddar.css): Đặt `background-color: #0b0f19 !important; background: rgba(11, 15, 25, 0.98) !important; backdrop-filter: blur(24px) !important; z-index: 1000 !important;` cho cả `#video-search-suggestions` và `#raw-search-suggestions`.
+    2. Thiết lập màu nền đục đặc `background-color: #0b0f19 !important;` trực tiếp trên từng dòng gợi ý (`.js-v-sug-row`, `.js-sug-row`), hiệu ứng hover `#1e293b` mượt mà.
+    3. Gắn inline style trực tiếp vào thẻ HTML trong [`index.html`](file:///d:/YTB/H2DEV-Project/index.html) như một cơ chế phòng thủ chiều sâu (defense-in-depth), miễn nhiễm hoàn toàn với lỗi lưu cache CSS của trình duyệt.
+- **Kiểm định nghiệm thu:** Đo đạc bằng Playwright xác nhận `backgroundColor` đạt chuẩn `rgba(11, 15, 25, 0.98)`, `backdropFilter: blur(24px)`, `zIndex: 1000`, 0% xuyên thấu, chụp ảnh proof `docs/proof-video-suggestions-solid-blur.png`, `validate-project.js` PASS 100%, E2E PASS 132/132 checks.
+
 ## 2026-09-14 — Tái Thiết Kế Bố Cục UI Thanh Tìm Kiếm Tab Video (Khử Hoàn Toàn Lỗi Bị Bóp Nghẹt 40px)
 
 - **Tái thiết kế bố cục bộ lọc Tab Video (2-Row Premium Card Layout):**

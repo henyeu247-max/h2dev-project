@@ -1,3 +1,15 @@
+## 2026-09-14 — Tái Thiết Kế Bố Cục UI Thanh Tìm Kiếm Tab Video (Khử Hoàn Toàn Lỗi Bị Bóp Nghẹt 40px)
+
+- **Tái thiết kế bố cục bộ lọc Tab Video (2-Row Premium Card Layout):**
+  - *Nguyên nhân gốc rễ lỗi hiển thị:* Trước đó, ô tìm kiếm `#video-search-wrap` bị đặt chung một hàng flexbox với 3 thẻ `<select>` dropdown dài (`fniche`, `fmarket`, `fsort`) và các nút bấm trạng thái, khiến flexbox tự động bóp nghẹt ô tìm kiếm xuống chiều rộng chỉ ~40px (chỉ vừa 1 chữ cái) và làm dropdown gợi ý `#video-search-suggestions` bị co rúm thành một khe dọc không thể đọc được.
+  - *Xử lý triệt để:*
+    1. Đưa toàn bộ bộ lọc Tab Video vào thẻ `.card.overflow-visible` riêng biệt, sang trọng và chuẩn mực.
+    2. Tách thành 2 hàng độc lập:
+       - **Hàng 1:** Ô tìm kiếm rộng rãi toàn hàng (`width: 100%`, chiều rộng thực tế đạt **943.3 px** trên desktop) kèm nút `[Reset]` và nút xóa nhanh `[✕]`.
+       - **Hàng 2:** Các menu dropdown chọn ngách, thị trường, sắp xếp và các nút lọc trạng thái xem (`Chưa xem`, `Đã xem`).
+    3. Hộp gợi ý `#video-search-suggestions` nay có chiều rộng full **943.3 px**, hiển thị trọn vẹn toàn bộ mốc tua `02:14`, tên bài học, mấu chốt và nút bấm `[▶ Tua đến 00:00]` cực kỳ thoáng đãng, sắc nét, không bị che khuất hay vỡ chữ.
+- **Kiểm định nghiệm thu:** Đo đạc bằng Playwright xác nhận chiều rộng ô nhập và dropdown đạt 943.3 px, chụp ảnh proof `docs/proof-video-search-ui-fixed.png`, `validate-project.js` PASS 100%, E2E PASS 132/132 checks.
+
 ## 2026-09-14 — Mở Rộng Bộ Gợi Ý Thông Minh Cho Tab Video Bài Học & Tính Năng Tua Nhanh 1-Click
 
 - **Nâng cấp công cụ tìm kiếm Tab Video (136 Video bài học):**

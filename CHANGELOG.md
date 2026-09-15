@@ -1,3 +1,23 @@
+## 2026-09-15 — Khắc Phục Triệt Để Hiện Tượng Chữ Video Bị Trộn Vào Bảng Tìm Kiếm (CSS Stacking Context & Isolation Fix)
+
+- **Nguyên nhân gốc rễ (Root Cause):**
+  - Trước đó, việc áp dụng `contain: layout style;` lên lớp `.card` trong `assets/viddar.css` vô tình tạo ra một **Stacking Context (ngữ cảnh xếp chồng) cô lập**.
+  - Mặc dù bảng gợi ý `#video-search-suggestions` và `#raw-search-suggestions` được gán `z-index: 1000`, chúng vẫn bị giam cầm bên trong Stacking Context của thẻ Card cha.
+  - Theo thuật toán vẽ (painter's algorithm) của trình duyệt web, các phần tử DOM nằm sau thẻ Card này (bao gồm các nút chip lọc `Tất cả (136)`, `Chỉ Free (26)`... và toàn bộ lưới Video Cards `Update key...`) được vẽ **ĐÈ LÊN TRÊN** phần tràn ra của bảng gợi ý.
+  - Hậu quả: Toàn bộ chữ, nút bấm và badge của video bên dưới bị in đè trực tiếp lên chữ của bảng gợi ý, tạo ra hiện tượng chữ bị trộn lẫn vào nhau, không thể đọc được.
+- **Giải pháp xử lý triệt để 3 lớp:**
+  1. **Khử Stacking Context Trap (`assets/viddar.css`):**
+     - Đặt quy tắc riêng `.card.overflow-visible, .search-filter-card { contain: none !important; position: relative !important; z-index: 60 !important; }`, đảm bảo thẻ Card chứa ô tìm kiếm luôn có ngữ cảnh xếp chồng cao hơn toàn bộ lưới video bên dưới.
+  2. **Nâng Cấp Độ Đục & Nền Kính Mờ Frosted Glass (`assets/viddar.css` & `index.html`):**
+     - Thiết lập cho `#video-search-suggestions` và `#raw-search-suggestions`: `z-index: 9999 !important; background-color: #0b0f19 !important; background: rgba(11, 15, 25, 0.98) !important; backdrop-filter: blur(28px) saturate(180%) !important; -webkit-backdrop-filter: blur(28px) saturate(180%) !important; box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.98), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;`.
+     - Gán nền `rgba(11, 15, 25, 0.98)` đặc trực tiếp trên từng dòng gợi ý (`.js-v-sug-row`, `.js-sug-row`) và khối thông báo trống.
+  3. **Phòng thủ chiều sâu trong Template HTML (`index.html`):**
+     - Gắn trực tiếp `class="card ... search-filter-card" style="position:relative; z-index:60; contain:none !important;"` cho cả 2 bộ lọc Tab Video và Tab Raw Kênh.
+- **Kiểm định nghiệm thu thực tế:**
+  - Kiểm tra Playwright E2E trên cả Desktop và Mobile viewport: Đo đạc vị trí `hitElement` xác nhận 100% phần tử đón nhận click là dòng gợi ý, các thẻ video và chip bên dưới bị che phủ hoàn toàn, không còn bất kỳ chữ nào bị in đè hay trộn lẫn.
+  - Lưu ảnh bằng chứng: `docs/verified-video-search.png` (Desktop), `docs/verified-raw-search.png` (Desktop), `docs/verified-video-mobile.png` (Mobile).
+  - Bộ kiểm định `validate-project.js` và `audit-raw021-full-e2e.js` đạt PASS 132/132.
+
 ## 2026-09-14 — Khắc phục Triệt Để Lỗi Xuyên Thấu Nền Dropdown (Solid Opaque Frosted Glass)
 
 - **Xử lý dứt điểm hiện tượng thẻ và nút bấm bên dưới đè xuyên thấu (Zero Bleed-Through):**

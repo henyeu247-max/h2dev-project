@@ -1,84 +1,155 @@
 # HƯỚNG DẪN DÙNG MCP CHUẨN (H2DEV-Project & D:\Mcp-Pool-Vps)
 
-> Ngày cập nhật: 12/09/2026  
-> Mục đích: Chuẩn hóa kiến trúc MCP nội bộ, phân định rõ ràng giữa **MCP Tool Server** và **AI Chat Model Gateway**, nắm bắt cách vận hành công cụ thực chiến 100% Local.
+> Cập nhật: **2026-09-16**  
+> Mục đích: Chuẩn hóa kiến trúc MCP nội bộ + **routing thực chiến theo evidence live** (benchmark Check-Pass trên máy anh).  
+> Proof: `_audit/mcp-bench-*.json`, `_audit/mcp-web-bench-*.json`, `_audit/mcp-web-fair-*.json`  
+> Backup bản cũ: `_backup/20260916-mcp-guide/HUONG-DAN-MCP-CHUAN.md`
 
 ---
 
-## 1. PHÂN ĐỊNH HẠ TẦNG: TRÁNH NHẦM LẪN GIỮA MODEL PROXY VÀ MCP TOOLS
+## 1. PHÂN ĐỊNH HẠ TẦNG (KHÔNG NHẦM MODEL PROXY VỚI MCP TOOLS)
 
-Hệ thống trên máy tính gồm 2 dịch vụ độc lập với vai trò hoàn toàn khác nhau:
-
-| Dịch vụ | Địa chỉ / Cổng | Bản chất & Vai trò | Vị trí mã nguồn |
+| Dịch vụ | Địa chỉ | Bản chất | Mã nguồn |
 |---|---|---|---|
-| 🛠️ **MCP Pool v2 Local** | `http://127.0.0.1:3988/mcp` | **MCP Tool Server chuẩn cho công việc**<br>• Cung cấp **168–234 công cụ thực chiến** (vidIQ, Trends, Firecrawl, Exa, Tavily, Jina, Playwright, Camoufox, Filesystem, Memory...).<br>• Healthcheck: `http://127.0.0.1:3988/health`<br>• Giao thức: Streamable HTTP (JSON-RPC) của MCP SDK. | `D:\Mcp-Pool-Vps\` |
-| 🧠 **9Router** | `http://127.0.0.1:20128` | **AI Chat Model Gateway / Proxy**<br>• Chuyên điều hướng các LLM chat model (Claude, GPT, Gemini, DeepSeek...) qua cổng `/v1/chat/completions` hoặc `/v1/messages` để AI suy nghĩ và giao tiếp.<br>• **KHÔNG PHẢI là MCP Tool Server**. | App quản lý model AI |
+| **MCP Pool v2 Local** | `http://127.0.0.1:3988/mcp` | Tool server thực chiến (~180 tools live) | `D:\Mcp-Pool-Vps\` |
+| Healthcheck | `http://127.0.0.1:3988/health` | Kỳ vọng: `{"status":"ok","version":"2.0.0","tools":180,...}` | Windows Service `MCP_Pool_Service` AUTO |
+| **9Router** | `http://127.0.0.1:20128` | **AI Chat Model Gateway** — chỉ LLM chat | **KHÔNG phải MCP tool server** |
+| H2DEV Web | `http://127.0.0.1:8899` | App học liệu / Mission Control | `D:\YTB\H2DEV-Project\` |
 
-⚠️ **LƯU Ý CỐT LÕI CHO MỌI AGENT:**  
-- 9Router (:20128) chỉ là nơi cấp API "não" (LLM) để chat.
-- **Toàn bộ công cụ "tay chân"** để quét YouTube, đo từ khoá, cào web, duyệt web đều chạy từ **MCP Pool Local tại `D:\Mcp-Pool-Vps` (cổng :3988)**.
-- Trước đây MCP Pool từng chạy trên VPS `mcp-pool.tonymmo.com`, nhưng hiện tại đã được chuyển đổi thành công sang **chạy 100% Local độc lập trên máy Windows** tại `D:\Mcp-Pool-Vps`.
+**Cốt lõi:** 9Router = “não” chat. Mọi tay chân (YouTube / web / browser) = MCP Pool `:3988`. Auth: header `X-API-Key` từ `MCP_POOL_API_KEY` trong `D:\Mcp-Pool-Vps\.env` (không hardcode vào repo).
+
+Khởi động khi chết cổng: `D:\Mcp-Pool-Vps\start.cmd` hoặc `start-pool.ps1`.
 
 ---
 
-## 2. KIỂM TRA & VẬN HÀNH MCP POOL LOCAL (:3988)
+## 2. CHECK-PASS TỐI THIỂU TRƯỚC MỌI PHIÊN
 
-### Kiểm tra sức khỏe (Healthcheck)
-```bash
-curl -s http://127.0.0.1:3988/health
-# Kết quả kỳ vọng: {"status":"ok","version":"2.0.0","tools":168,...}
+1. `curl -s http://127.0.0.1:3988/health` → `status:ok`, `tools` > 0  
+2. `Get-Service MCP_Pool_Service` → Running / Automatic  
+3. Gọi thử 1 tool nhẹ: `youtube_intelligence__keyword_suggest` hoặc `keenable__search_web_pages`  
+4. Đọc `inputSchema` trước khi gọi — **sai tên tham số = lỗi giả** (vd. `latest_videos` bắt buộc `channelId`, không phải handle)
+
+---
+
+## 3. TẦNG A — YOUTUBE INTELLIGENCE ($0, ĐƯỜNG CHÍNH STREAM B)
+
+Ưu tiên tuyệt đối khi làm ngách / đối thủ / YPP / outlier. Live bench 2026-09-16:
+
+| Tool | Latency tham chiếu | Ghi chú schema |
+|---|---:|---|
+| `youtube_intelligence__niche_rpm_predictor` | ~51ms | `nicheKey` enum + `monthlyViews` |
+| `youtube_intelligence__query_database` | ~72ms | view: breakouts / all_channels / recent_edges |
+| `youtube_intelligence__breakout_finder` | ~157ms | |
+| `youtube_intelligence__latest_videos` | ~183ms | **required `channelId` (UC...)** |
+| `youtube_intelligence__keyword_suggest` | ~288ms | |
+| `youtube_intelligence__search_channels` | ~428ms | |
+| `youtube_intelligence__channel_dossier` | ~450ms | `channel: "@Handle"` hoặc URL |
+| `youtube_intelligence__outlier_scanner` | ~461ms | |
+| `youtube_intelligence__check_monetization` | ~1.3s | |
+| `youtube_intelligence__video_details` | ~1.8s | `videoId` |
+| `youtube_intelligence__transcript` | ~2.3s | `videoId` |
+| `youtube_intelligence__spider_niche` | ~8.7s | `seedVideoId` — co-watch 2-hop |
+
+Fallback script local (không MCP): `scripts/free_yt_engine.py` (`py -3`).  
+`vidiq__*`: chỉ fallback khi cần; hay `ROUTED_ERR` khi quota/API lỗi — **không** đặt làm đường chính.
+
+`trends__*`: hiện **BLOCKED** trên pool anh (`TRENDS_ACCESS_TOKEN` thiếu trong `.env`).
+
+---
+
+## 4. TẦNG B — WEB GROUNDING (ROUTING CÔNG BẰNG THEO BENCH LIVE)
+
+Query chuẩn đối soát: *YouTube YPP reused/inauthentic policy 2026* + URL Help YouTube.  
+Hai vòng: `mcp-web-bench` + `mcp-web-fair` (2026-09-16).
+
+### 4.1 Bảng xếp hạng thực chiến (máy anh)
+
+| Việc | Hạng 1 | Hạng 2 | Hạng 3 / dự phòng |
+|---|---|---|---|
+| **Search / discovery** | **Exa** (`exa__web_search_exa` ~1.8s q8) **hoặc Keenable** (`keenable__search_web_pages` ~0.8s q8) | Firecrawl search (~2.4s) · YDC discover (~3.0s) | Tavily search (~4.4s) · TinyFish search (~3.2s) |
+| **Fetch / đọc URL đã biết** | **Keenable fetch** (~0.4s q9) **hoặc Exa fetch** (~0.27s q7) | **Firecrawl scrape** (~1.0s q9, markdown dày) · Jina (~0.8s) | YDC contents (~2.0s) · TinyFish fetch (~1.7s) |
+| **Scrape sâu / JS / map site** | **Firecrawl scrape** (chất lượng cao nhất) | Firecrawl map (~7.6s, chậm hơn) | Tavily map/crawl hiện yếu / 429 / schema lệch |
+| **Docs thư viện code** | `context-dev__search_docs` | Context7 (cần đúng schema `query`) | Không dùng Exa/Tavily trừ blog |
+
+### 4.2 Kết luận cân bằng (không có 1 tool thắng mọi việc)
+
+1. **Nhanh + đủ dùng khi search:** Keenable hoặc Exa  
+2. **Search semantic / nghiên cứu:** Exa (theo định vị sản phẩm + bench)  
+3. **Scrape markdown đầy đủ từ URL:** Firecrawl scrape  
+4. **Fetch siêu nhanh:** Exa fetch / Keenable fetch / Jina  
+5. **Tavily:** search được nhưng chậm hơn trên cùng query; extract/map/crawl lần đo **WEAK / 429 / schema** → không ưu tiên  
+6. **YDC (You.com) / TinyFish:** lớp dự phòng search/fetch ổn, latency ~2–3s  
+
+### 4.3 Inventory web MCP đang có trong pool
+
+- `exa__*` — search/fetch  
+- `tavily__*` — search/extract/crawl/map/research  
+- `firecrawl__*` — scrape/search/map/crawl/agent/monitor/research… (bộ lớn nhất)  
+- `jina__read_url`  
+- `ydc__you-search|you-contents|you-discover|you-balance`  
+- `tinyfish__search|fetch_content|…automation…`  
+- `keenable__search_web_pages|fetch_page_content`  
+- `context7__*` · `context-dev__*` — docs lib  
+- Lưu ý: `firecrawl_extract` **deprecated** qua MCP → dùng `firecrawl_scrape` + formats json nếu cần structured
+
+### 4.4 Routing bắt buộc khi làm H2DEV
+
+```
+[Cần tìm trên web]
+  → keenable__search_web_pages  OR  exa__web_search_exa
+  → fallback: firecrawl__firecrawl_search → ydc__you-search → tavily__tavily_search → tinyfish__search
+
+[Đã có URL, cần đọc]
+  → keenable__fetch_page_content  OR  exa__web_fetch_exa
+  → nếu cần markdown/JS đầy đủ: firecrawl__firecrawl_scrape
+  → fallback: jina__read_url → ydc__you-contents → tinyfish__fetch_content
+
+[Crawl / map site / agent extract]
+  → firecrawl__firecrawl_map / crawl / agent
+  → (Tavily crawl/map: tránh cho đến khi hết 429 + đúng schema)
+
+[Docs code/lib]
+  → context-dev__search_docs / context7__* (đúng inputSchema)
 ```
 
-### Khởi động khi cổng 3988 chưa chạy
-- Chạy file: `D:\Mcp-Pool-Vps\start.cmd`
-- Hoặc PowerShell: `powershell -File D:\Mcp-Pool-Vps\start-pool.ps1`
-- File cấu hình Key/Token nằm tại: `D:\Mcp-Pool-Vps\.env`
+---
+
+## 5. TẦNG C — BROWSER / E2E (KHI CẦN UI THẬT)
+
+- `playwright__*` · `camoufox__*` · `chrome-devtools__*`  
+- Dùng cho nghiệm thu UI H2DEV / trang động; **không** thay YouTube Intelligence cho số liệu kênh.
 
 ---
 
-## 3. BẢNG TRA CỨU CÔNG CỤ MCP CHO CÔNG VIỆC YOUTUBE
+## 6. FAILBACK & KỶ LUẬT GỌI TOOL
 
-### 🌟 BỘ CÔNG CỤ H2DEV YOUTUBE INTELLIGENCE 100% LOCAL ($0 — THAY THẾ HOÀN HẢO VIDIQ & NEXLEV)
-*Chạy 100% Local qua InnerTube API & Google RSS, 0 token limit, 0 API Key, không bao giờ hết quota.*
-
-| Việc cần làm | Tên Tool Chuẩn (`youtube_intelligence__*`) | Cơ chế kỹ thuật & Ưu thế |
-|---|---|---|
-| **Tìm kiếm kênh đối thủ theo ngách** | `youtube_intelligence__search_channels` | InnerTube `/search` lọc channel, bóc handle, subs, ID, avatar trong 0.2s |
-| **Bóc tách hồ sơ kênh chuyên sâu** | `youtube_intelligence__channel_dossier` | Trích xuất Subs, Video count, Channel ID, kiểm tra nút Join (YPP Signal 1) |
-| **Quét 15 video mới nhất & đo VPH** | `youtube_intelligence__latest_videos` | Google RSS Feed real-time, đo tuổi theo giờ và VPH (Views Per Hour) |
-| **Bắt video bão view (Outlier Multiplier)** | `youtube_intelligence__outlier_scanner` | **Chuẩn 1of10 Engine**: Tính trung vị (Median), chấm điểm 3x–10x+ Outlier |
-| **Kiểm tra Bật kiếm tiền (YPP Audit)** | `youtube_intelligence__check_monetization` | **Chuẩn NexLev Engine**: Thuật toán 4 tín hiệu (Join, Super Thanks, Ad cues) |
-| **Bóc 100% Video Tags ẩn & Views** | `youtube_intelligence__video_details` | InnerTube + yt-dlp: Lấy 100% tags ẩn, danh mục, thời lượng chính xác |
-| **Đo lường từ khóa tìm kiếm (Demand)** | `youtube_intelligence__keyword_suggest` | Google/YouTube Search Autocomplete (Alphabet soup mining 100% real-time) |
-| **Tải kịch bản & phụ đề nguyên bản** | `youtube_intelligence__transcript` | TimedText API: Trích xuất phụ đề có timestamp và plain-text script |
-
-### CÁC CÔNG CỤ BỔ TRỢ KHÁC (MCP POOL :3988)
-
-| Việc cần làm | Tên Tool MCP Pool chuẩn (`nhóm__tool`) | Tool thay thế (Fallback) |
-|---|---|---|
-| **Phân tích chỉ số kênh YouTube (vidIQ API)** | `vidiq__vidiq_channel_stats` | `youtube_intelligence__channel_dossier` |
-| **Tìm video bùng nổ view (Outliers vidIQ)** | `vidiq__vidiq_outliers` | `youtube_intelligence__outlier_scanner` |
-| **Nghiên cứu từ khoá (vidIQ)** | `vidiq__vidiq_keyword_research` | `youtube_intelligence__keyword_suggest` |
-| **Đo xu hướng thị trường (Google/YouTube Trends)** | `trends__get_top_trends` | `trends__get_time_series` |
-| **Cào nội dung bài viết / báo cáo web** | `firecrawl__firecrawl_scrape` | `jina__read_url` · `tavily__tavily_extract` |
-| **Tìm kiếm web chuyên sâu** | `exa__web_search_exa` | `tavily__tavily_search` |
-| **Tự động hoá trình duyệt / Vượt chặn bot** | `camoufox__*` | `playwright__*` · `chrome-devtools__*` |
-| **Đọc / Ghi file dữ liệu** | `filesystem__*` | Tools built-in IDE |
+1. Tool lỗi **1 lần** → đổi tool dự phòng ngay (không spam).  
+2. Phân biệt: lỗi schema/args vs lỗi quota/429 vs lỗi mạng.  
+3. Đối chiếu **≥ 2 nguồn** trước khi kết luận ngách / chính sách.  
+4. Không commit API key; secrets chỉ trong `D:\Mcp-Pool-Vps\.env`.  
+5. Truth hierarchy: **Runtime MCP response > Script local > Docs hướng dẫn này > Giả định**.  
+6. Sau thay đổi routing quan trọng: ghi `CHANGELOG.md` + giữ proof trong `_audit/`.
 
 ---
 
-## 4. QUY TRÌNH THẨM ĐỊNH DỮ LIỆU SỐNG QUA MCP
+## 7. QUY TRÌNH THẨM ĐỊNH DỮ LIỆU SỐNG (STREAM B)
 
-1. **Kiểm tra kết nối:** Gọi `vidiq_balance` hoặc `curl http://127.0.0.1:3988/health` xác nhận server hoạt động.
-2. **Quét từ khoá ngách:** Dùng `vidiq_keyword_research` với `mode: "research"`, `country: "US"` hoặc `"JP"` để lấy điểm Volume và Competition.
-3. **Bắt video bùng nổ (Outlier Scan):** Dùng `vidiq_outliers` với `publishedWithin: "threeMonths"`, `maxSubscribers: 100000` để tìm video của kênh nhỏ đạt view đột biến.
-4. **Kiểm tra sức khoẻ kênh đối thủ:** Dùng `vidiq_channel_stats` truyền ID hoặc handle kênh để xem tốc độ tăng trưởng sub và view thật trong 30 ngày qua (`growth.viewsGained`, `growth.subscribersGained`).
-5. **Đối chiếu chéo:** Kết hợp `trends__get_top_trends` để kiểm tra độ nóng chủ đề trên Google News hoặc YouTube Search.
+1. Health `:3988`  
+2. `youtube_intelligence__channel_dossier` + `latest_videos` (`channelId`) + `outlier_scanner`  
+3. `check_monetization` + `video_details` / `transcript` cho video bão view  
+4. `spider_niche` khi cần co-watch / blue ocean  
+5. Web grounding chính sách (routing mục 4) khi đụng YPP / reused / inauthentic  
+6. Ghi nhận vào `data-tabs` / master DB qua quy trình dự án (backup trước khi sửa)
 
 ---
 
-## 5. NGUYÊN TẮC XỬ LÝ LỖI (FAILBACK RULES)
+## 8. TÓM TẮT “NHỚ KỸ” CHO AGENT
 
-1. **Tool lỗi 1 lần → Đổi sang tool dự phòng ngay**, không spam gọi lại nhiều lần gây timeout.
-2. **Không commit API keys vào Git repo:** Mọi secret/token quản lý tập trung tại `D:\Mcp-Pool-Vps\.env`.
-3. **Đối chiếu chéo ít nhất 2 nguồn dữ liệu** trước khi kết luận một ngách là tiềm năng.
+- MCP Pool = tay chân; 9Router = não chat.  
+- YouTube: `youtube_intelligence__*` trước, vidIQ sau.  
+- Web search: **Keenable / Exa** trước.  
+- Web scrape sâu: **Firecrawl scrape**.  
+- Web fetch nhanh: **Exa fetch / Keenable fetch / Jina**.  
+- Tavily = dự phòng search, không phải mặc định.  
+- Trends = chưa dùng được đến khi có token.  
+- Luôn đọc schema · Check N/N · bằng chứng 3 mức CÓ / KHÔNG / KHÔNG-VERIFY-ĐƯỢC.

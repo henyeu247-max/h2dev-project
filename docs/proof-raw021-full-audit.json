@@ -1,5 +1,5 @@
 {
-  "base": "https://h2dev-learn.tonymmo.com",
+  "base": "http://127.0.0.1:8899",
   "checks": [
     {
       "name": "Card RAW-021 visible",

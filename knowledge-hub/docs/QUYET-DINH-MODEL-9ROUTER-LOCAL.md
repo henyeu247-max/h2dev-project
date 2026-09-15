@@ -85,6 +85,35 @@ Test trên `cbcn/deepseek-v4.1-flash` (1 ảnh, RAW-010):
 
 ---
 
+## IV-B. A/B INTERLEAVED 3 VÒNG (cùng điều kiện, thứ tự đảo chiều) — CHỐT VẤN ĐỀ "AG CÓ PHẢI NHANH NHẤT?"
+
+Đo ngày 16/09 vòng 2, 3 rounds xen kẽ, 13 lanes/round:
+
+| Model | WALL mean | min | max | eff mean | OK |
+|---|---|---|---|---|---|
+| **`ag/gemini-3.7-flash-low`** | **3.63s** | 3.45s | 3.95s | **0.279s/ảnh** | 39/39 |
+| `ag/gemini-3.7-flash-medium` | 4.17s | 2.76s | 5.22s | 0.321s/ảnh | 39/39 |
+| `ag/gemini-3.8-flash-low` | 4.91s | 2.85s | 7.06s | 0.378s/ảnh | 39/39 |
+| `Combo-Gemini-3.7-flash` | 5.27s | 2.01s | 8.43s | 0.406s/ảnh | 39/39 |
+
+→ **`ag/gemini-3.7-flash-low` thắng về độ ỔN ĐỊNH** (dải 3.45-3.95s, lệch chỉ ±0.25s), nhưng `Combo` có **min nhanh nhất** (2.01s) và biên độ dao động lớn hơn (2.0-8.4s).
+
+### Stress test tìm trần (26 → 52 → 104 lanes)
+
+| Model | 26 lanes | 52 lanes | 104 lanes |
+|---|---|---|---|
+| `ag/gemini-3.7-flash-low` | 26/26 · 0.168s/ảnh | 52/52 · 0.153s/ảnh | 104/104 · **0.054s/ảnh** |
+| `Combo-Gemini-3.7-flash` | 26/26 · 0.154s/ảnh | 52/52 · **0.083s/ảnh** | 104/104 · **0.037s/ảnh** |
+
+**Không tìm thấy trần ở 104 lanes — cả hai đều 100% sạch.** Điểm khác biệt lộ rõ ở tải cao: `Combo` (→qd/dfmodel) vượt trội khi burst lớn (0.037s/ảnh @104), `ag-low` bám ổn định ở mọi mức tải nhưng đuôi chậm dần (0.054s/ảnh @104).
+
+### Cơ chế đằng sau (đọc từ DB, không đoán)
+- `ag/` = provider **Antigravity** — có **10 account trong pool** (henyeu247, mducs1244, minahlan10, xaxukeb3/93/04, zingh2781, zongh2782/83, lytutienrv97) → round-robin qua 10 account nên chịu tải song song tốt và ổn định.
+- `qd/` = provider **Qoder** — burst rất mạnh nhưng đơn luồng biến động (2-27s trong các test trước).
+- `cbcn/cbai` deepseek trực tiếp: JSON-FAIL khi đa luồng (3/13 fail @cbai) → loại khỏi batch.
+
+---
+
 ## IV. TỐC ĐỘ SINH VĂN BẢN (script generation)
 
 | Model (routed) | TTFT | Total | Output tok | Reasoning tok | tok/s |
@@ -101,8 +130,9 @@ Test trên `cbcn/deepseek-v4.1-flash` (1 ảnh, RAW-010):
 
 | Công việc | Model đề xuất | Bằng chứng |
 |---|---|---|
-| **Vision batch hàng loạt** (faceless + niche + style classification) | `Combo-Gemini-3.7-flash` hoặc `ag/gemini-3.7-flash-low` | 13/13 OK @13 lanes, 0.15-0.5s/ảnh, ổn định 3 lần lặp |
-| **Vision 1 ảnh cần chất lượng cao nhất** | `ag/gemini-3.7-flash-high` | Niche/style chi tiết nhất, 3.84s/ảnh |
+| **Vision batch hàng loạt — ưu tiên ổn định** | `ag/gemini-3.7-flash-low` | Thắng A/B interleaved (0.279s/ảnh, dải ±0.25s), 39/39 OK; stress 104/104 |
+| **Vision batch hàng loạt — burst cực lớn** | `Combo-Gemini-3.7-flash` | 104/104 OK @104 lanes, 0.037s/ảnh khi burst; min nhanh nhất 2.01s |
+| **Vision 1 ảnh cần chất lượng cao nhất** | `ag/gemini-3.7-flash-high` | Niche/style chi tiết nhất, 3.84s đơn luồng |
 | **Việc text cần NHANH, không suy nghĩ** | `gh/gpt-4.1` hoặc thêm `/no_think` | gpt-4.1 tự nhiên no-think 2.98s; /no_think 1.53s |
 | **Sinh script dài, chất lượng top** | `Combo-Claude-Opus-4.6` | 57 tok/s, TTFT 2.17s, chất lượng Opus |
 | **Sinh text khối lượng lớn nhanh** | `ag/gemini-3.7-flash-high` | 181 tok/s (cấp max_tokens ≥ 2000) |

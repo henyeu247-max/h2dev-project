@@ -1,3 +1,10 @@
+## 2026-09-14 — Nâng cấp CI/CD VPS: Tự Động Hóa Xây Dựng Master DB Qua Post-Receive Hook
+
+- **Tích hợp tự động hóa nạp database vào Git Hook trên VPS (`/root/h2dev.git/hooks/post-receive`):**
+  - Bổ sung lệnh `node scripts/build_master_db.js` ngay sau bước `git reset --hard origin/main` và trước bước `pm2 reload h2dev-learn`.
+  - Cơ chế tự động: Mỗi lần máy trạm thực hiện `git push vps main`, máy chủ VPS sẽ tự động chạy toàn bộ quy trình kiểm kê và nạp 8 bảng SQLite Master DB (`h2dev_master.db`), sau đó reload PM2 tức thì.
+  - Triệt tiêu 100% việc phải đăng nhập SSH thủ công để migrate hay build database.
+
 ## 2026-09-14 — Triển khai Bộ 3 Cải Tiến Tốc Độ Web (Gzip Streaming, CSS Containment, Async Decoding)
 
 - **Cải tiến 1 — HTTP Gzip Compression Streaming trên `server.js`:**

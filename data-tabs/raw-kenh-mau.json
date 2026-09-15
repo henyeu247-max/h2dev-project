@@ -4585,7 +4585,12 @@
           }
         ],
         "contentMatrix6MonthsSummary": "24 video chuẩn hóa theo 6 cụm đề tài (Di chỉ đảo lộn lịch sử, Hang sâu lòng đất, Di chỉ chìm dưới nước, Kỹ thuật cự thạch, Sinh tồn tiền sử, Đô thị rừng rậm)"
-      }
+      },
+      "hasVoiceSample": true,
+      "hasMissionControl": true,
+      "voiceSampleRel": "assets/voice-samples/RAW-021.mp3",
+      "productionToolkitRel": "data/raw-channels-deep/RAW-021_Hidden_Planet_Docs/production_toolkit.json",
+      "voiceProfileRel": "data/raw-channels-deep/RAW-021_Hidden_Planet_Docs/voice_profile.json"
     },
     {
       "id": "RAW-022",
@@ -5519,7 +5524,12 @@
         "publishedAt": "2025-07-17",
         "thumbnail": "https://i.ytimg.com/vi/c7m4EH7UZ_8/maxresdefault.jpg",
         "selectionType": "RECENT_VIRAL"
-      }
+      },
+      "hasVoiceSample": true,
+      "hasMissionControl": true,
+      "voiceSampleRel": "assets/voice-samples/RAW-025.mp3",
+      "productionToolkitRel": "data/raw-channels-deep/RAW-025_game.mp4/production_toolkit.json",
+      "voiceProfileRel": "data/raw-channels-deep/RAW-025_game.mp4/voice_profile.json"
     },
     {
       "id": "RAW-028",

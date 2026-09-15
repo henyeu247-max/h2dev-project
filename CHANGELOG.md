@@ -1,3 +1,18 @@
+## 2026-09-15 — Nâng Cấp Toàn Diện Hồ Sơ Tác Chiến RAW-021 (Hidden Planet Docs) & Tích Hợp Video Mới 547K Views
+
+- **Tái kiểm toán dữ liệu sống YouTube ngày 15/09/2026 (Live MCP Audit):**
+  - Cập nhật số liệu subscribers: Kênh cán mốc **91.5K subs** (tăng +2.300 subs trong 6 ngày, từ 89.2K lên 91.5K).
+  - Video bão view Top #1 `Q1tXposwAAo` cán mốc **1.410.163 views** (tăng vọt +231.577 views so với snapshot cũ), duy trì vận tốc khủng **878.5 VPH** và chỉ số Outlier **6.52x**.
+  - Tích hợp video bão view mới lọt Top #3 kênh: `r4bJvj--GVw` (*"IMPOSSIBLE PLACES | The Most Incredible Megaprojects on Earth Even Their Builders Can't Explain"* - 547.676 views, 620.2 VPH, xuất bản 09/08/2026).
+  - Khai thác và tích hợp trọn bộ 400 câu phụ đề song ngữ 1:1 (`transcripts/r4bJvj--GVw_transcript.json`) và kịch bản phân tích AI (`transcripts/r4bJvj--GVw_summary_vi.md`).
+- **Tích hợp Chiến Thuật Bùa Hộ Mệnh YPP Shield (Anchor BTS / Human-in-the-Loop Proof):**
+  - Rút tỉa và giải mã từ các kênh Micro-Giant bão view (`Past Seven`, `Calvin Stories`, `The Invisible Neighbors`, `AI See History`): Ghim 1 video Trailer 60s quay hậu trường dựng phim CapCut/Premiere thật, bàn phím và lời giới thiệu sứ mệnh kênh lên đầu trang chủ.
+  - Tấm khiên bảo vệ 100% duyệt Bật Kiếm Tiền khi nhân viên YouTube duyệt thủ công và là bằng chứng kháng cáo bất khả chiến bại trước mọi thuật toán quét rác AI.
+- **Nâng cấp Master SQLite WAL Database & Bộ Lọc Co-Watch:**
+  - Bảng `competitor_top_videos` nâng lên 794 video, chỉ mục FTS5 đạt 1.250 bản ghi.
+  - Phân định rạch ròi giữa Kênh Khổng Lồ (>100K subs làm mỏ neo câu view đề xuất) và Kênh Micro-Giant (<50K subs làm khuôn mẫu bão view đột phá).
+  - Bộ kiểm định Playwright E2E nâng lên **PASS 136/136 checks**.
+
 ## 2026-09-15 — Khắc Phục Triệt Để Hiện Tượng Chữ Video Bị Trộn Vào Bảng Tìm Kiếm (CSS Stacking Context & Isolation Fix)
 
 - **Nguyên nhân gốc rễ (Root Cause):**

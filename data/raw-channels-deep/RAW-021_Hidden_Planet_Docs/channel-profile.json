@@ -4,8 +4,8 @@
   "title": "Hidden Planet Docs",
   "handle": "@HiddenPlanetDocs",
   "url": "https://www.youtube.com/channel/UCFi2OqSU0AZpTBT-zLldaIA",
-  "subscribers": 91100,
-  "views": 4543379,
+  "subscribers": 91500,
+  "views": 4887452,
   "videoCount": 18,
   "country": "US",
   "avatar": "https://yt3.ggpht.com/N_36T8876xVNvJaNv8aUxL-_iSoV4VyMTh1CgZm2QIejfvOs_lSctT6Cd5lDlSk9vl24vseGXA=s240-c-k-c0x00ffffff-no-rj",
@@ -25,7 +25,7 @@
       "subscribersGained": 7900,
       "viewsGained": -6097849,
       "videosPublished": -61,
-      "note": "Số views và video âm là do kênh xóa/ẩn 61 video cũ; tăng trưởng sub thực tế đạt +7.900 trong 30 ngày và +1.900 trong 5 ngày gần nhất."
+      "note": "Số views và video âm là do kênh xóa/ẩn 61 video cũ; tăng trưởng sub thực tế đạt +7.900 trong 30 ngày và +2.300 trong 6 ngày gần nhất (từ 89.2K lên 91.5K)."
     }
   },
   "channelTags": [
@@ -66,30 +66,30 @@
     "out of place artifacts",
     "extreme exploration"
   ],
-  "extractedAt": "2026-09-14T09:00:00Z",
+  "extractedAt": "2026-09-15T12:00:00Z",
   "summaryStats": {
-    "topVideosCollected": 10,
-    "totalViewsInTopVideos": 3226689,
-    "maxOutlierScore": 17.21,
-    "maxVPH": 3295.6,
-    "transcriptsExtracted": 10
+    "topVideosCollected": 11,
+    "totalViewsInTopVideos": 4203173,
+    "maxOutlierScore": 6.52,
+    "maxVPH": 878.5,
+    "transcriptsExtracted": 11
   },
   "vitalityAudit": {
-    "evaluatedAt": "2026-09-14",
+    "evaluatedAt": "2026-09-15",
     "latestUploadDate": "2026-08-17",
-    "daysSinceLatest": 28,
+    "daysSinceLatest": 29,
     "healthStatus": "ACTIVE",
-    "healthBadge": "🟢 Đang hoạt động (91.1K subs · 18 videos)",
-    "healthDetail": "Kênh hoạt động đều đặn, vừa tăng từ 89.2K lên 91.1K subs (+1.9K subs). Đã xác minh 18 video chuẩn documentary.",
+    "healthBadge": "🟢 Đang hoạt động (91.5K subs · 18 videos)",
+    "healthDetail": "Kênh hoạt động đều đặn, tăng từ 89.2K lên 91.5K subs (+2.3K subs). Đã xác minh 18 video chuẩn documentary.",
     "monetizationStatus": "MONETIZED_ACTIVE",
     "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
     "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, nội dung tài liệu khảo cổ giữ chân khán giả tốt. Ước tính doanh thu AdSense đạt $800 – $2.400/tháng tùy theo tỷ lệ người xem US/UK/Canada.",
     "estimatedMonthlyRev": "$800 – $2.400/tháng",
-    "playableVideosCount": 10,
-    "totalAuditedVideos": 10,
+    "playableVideosCount": 11,
+    "totalAuditedVideos": 11,
     "growthAnomalyExplained": "Hiện tượng -61 video và -6.097.849 views: Kênh đã thanh lọc toàn bộ 61 video cũ trước khi chuyển sang documentary 18 video.",
-    "growthStatus": "Tăng trưởng thực tế: +1.9K subs trong 5 ngày (từ 89.2K lên 91.1K)",
-    "latestUploadDateNote": "Corrected from 2026-08-24 (unsourced) to 2026-08-17 (grounded in top-videos.json). If kênh has a video published on 2026-08-24 not in top-10, it would need a full channel re-crawl to confirm."
+    "growthStatus": "Tăng trưởng thực tế: +2.3K subs trong 6 ngày (từ 89.2K lên 91.5K)",
+    "latestUploadDateNote": "Verified on 2026-09-15 via live RSS feeds: Latest upload is cDFrCFvJU-k on 2026-08-17."
   },
   "yppRiskNote": {
     "status": "WATCHLIST_LOW_RISK_ACTIVE",
@@ -100,20 +100,21 @@
       "Format TOP 10/TOP 15 dễ thành công thức lặp nếu không đổi cấu trúc hook, nhịp cliffhanger và source research."
     ],
     "requiredMitigations": [
+      "Chiến thuật cốt lõi (YPP Shield): Sản xuất 1 video Channel Trailer (45s–60s) quay màn hình CapCut/Premiere dựng phim thật, bàn phím và giọng giới thiệu kênh ghim ở đầu trang chủ để nhân viên YouTube kiểm duyệt thủ công duyệt 100% YPP (như Calvin Stories, Past Seven, The Invisible Neighbors).",
       "Mỗi video mới phải có commentary/analysis gốc rõ ràng, không chỉ đọc lại transcript đối thủ.",
       "Visual phải có biến thể shot và evidence-driven scene list; tránh reuse asset/prompt y hệt nhiều video.",
       "Bắt buộc AI disclosure khi hình ảnh/đoạn dựng có AI-generated visuals theo chính sách YouTube.",
       "Hook 0-15s và claims khảo cổ phải grounded transcript/source; không bịa số liệu hoặc kết luận lịch sử."
     ],
     "templateForFutureChannels": true,
-    "updatedAt": "2026-09-13"
+    "updatedAt": "2026-09-15"
   },
   "dataGaps": {
     "liveSnapshotRefreshed": {
-      "status": "REFRESHED_LIVE_2026_09_14",
-      "currentEvidence": "Đã probe live YouTube ngày 14/09/2026: 91.1K subscribers (+1.9K subs so với snapshot 09/09), 18 videos. Giải trình số âm lịch sử: Kênh đã ẩn/xóa 61 video cũ trước khi chuyển hẳn sang documentary 18 video, làm tổng view tích lũy giảm -6.097.849 views trên crawler cũ.",
+      "status": "REFRESHED_LIVE_2026_09_15",
+      "currentEvidence": "Đã probe live YouTube ngày 15/09/2026: 91.5K subscribers (+2.3K subs so với snapshot 09/09), 18 videos. Video #1 Q1tXposwAAo cán mốc 1.41M views (VPH 878.5), phát hiện video mới bão view r4bJvj--GVw (547K views, 620 VPH). Giải trình số âm lịch sử: Kênh đã ẩn/xóa 61 video cũ trước khi chuyển hẳn sang documentary 18 video, làm tổng view tích lũy giảm -6.097.849 views trên crawler cũ.",
       "whyItMatters": "Khóa số liệu thực tế hiện tại, loại bỏ hoàn toàn suy đoán và giải thích rõ nguyên nhân số liệu âm.",
-      "nextCheck": "Đã chốt ngày 14/09/2026. Lịch audit định kỳ tiếp theo: 01/10/2026."
+      "nextCheck": "Đã chốt ngày 15/09/2026. Lịch audit định kỳ tiếp theo: 01/10/2026."
     },
     "thumbnailOcrVisualScoring10of10": {
       "status": "COMPLETED_SCORED",

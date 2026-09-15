@@ -429,6 +429,40 @@ for (const r of rawKenhMau) {
   const deepIntel = r.deepIntelligence || {};
   const langInfo = r.audioLanguageInfo || {};
 
+  // Check if deep dossier folder exists on disk
+  const folderName = deepIntel.folderName || `${r.id}_${(ch.title || '').replace(/[^a-zA-Z0-9]/g, '_')}`;
+  let dossierDir = path.join(ROOT, 'data', 'raw-channels-deep', folderName);
+  if (!fs.existsSync(dossierDir)) {
+    try {
+      const entries = fs.readdirSync(path.join(ROOT, 'data', 'raw-channels-deep'));
+      const match = entries.find(e => e.startsWith(r.id));
+      if (match) dossierDir = path.join(ROOT, 'data', 'raw-channels-deep', match);
+    } catch(e) {}
+  }
+
+  let ptData = null, vpData = null;
+  if (fs.existsSync(dossierDir)) {
+    const ptPath = path.join(dossierDir, 'production_toolkit.json');
+    if (fs.existsSync(ptPath)) {
+      try { ptData = JSON.parse(fs.readFileSync(ptPath, 'utf8')); } catch(e) {}
+    }
+    const vpPath = path.join(dossierDir, 'voice_profile.json');
+    if (fs.existsSync(vpPath)) {
+      try { vpData = JSON.parse(fs.readFileSync(vpPath, 'utf8')); } catch(e) {}
+    }
+  }
+
+  const voiceSampleFile = path.join(ROOT, 'assets', 'voice-samples', `${r.id}.mp3`);
+  const hasVoiceSample = fs.existsSync(voiceSampleFile) ? 1 : 0;
+  const voiceSamplePath = hasVoiceSample ? `assets/voice-samples/${r.id}.mp3` : null;
+
+  const hasMissionControl = ptData ? 1 : 0;
+  const sopDocPath = ptData?.productionStack?.sopDocPath || null;
+  const dedicatedSkill = ptData?.productionStack?.matchingSkill || null;
+  const masterScriptPrompt = ptData?.scriptBlueprint?.masterScriptPrompt || null;
+  const voiceTalentProfile = vpData?.voiceCharacteristics?.genderEstimate || null;
+  const wpm = vpData?.voiceCharacteristics?.actualPaceWPM ? parseInt(vpData.voiceCharacteristics.actualPaceWPM) : 135;
+
   insertChannel.run(
     channelId,
     r.id,
@@ -447,16 +481,16 @@ for (const r of rawKenhMau) {
     vat.daysSinceLatest || 0,
     vat.healthStatus || 'ACTIVE',
     1,
-    deepIntel.voiceSampleRel ? 1 : 0,
-    deepIntel.voiceSampleRel ? `assets/voice-samples/${r.id}.mp3` : null,
-    135,
+    hasVoiceSample,
+    voiceSamplePath,
+    wpm,
     langInfo.flag || '🇺🇸',
     langInfo.code || 'en-US',
-    null,
-    r.productionToolkitRel ? 1 : 0,
-    null,
-    null,
-    null
+    voiceTalentProfile,
+    hasMissionControl,
+    sopDocPath,
+    dedicatedSkill,
+    masterScriptPrompt
   );
   channelCount++;
   insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${nicheName} ${(ch.topics || []).join(' ')}`);

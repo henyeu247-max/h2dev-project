@@ -146,9 +146,9 @@ Jina (1 key)
 <JINA_KEY — đã chuyển vào .env>
 Context.dev (2 key)
 
-ctxt_secret_38894dc5798843d3a95a7314889b96d5
+<CONTEXT_DEV_KEY_1 — đã redact 16/09/2026, lưu trong `_private/mcp-keys-h2dev.md`>
 
-ctxt_secret_3c97510725934b9db3491744421d5b48
+<CONTEXT_DEV_KEY_2 — đã redact 16/09/2026, lưu trong `_private/mcp-keys-h2dev.md`>
 
 ### 🤖 **Claude**
 

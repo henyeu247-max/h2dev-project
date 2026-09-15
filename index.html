@@ -117,7 +117,7 @@
   </div>
   <nav class="vd-bottom-nav" id="bottom-nav" aria-label="Điều hướng chính"></nav>
   <script>
-    const state = { tab: 'tongquan', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawStatus: '', rawVitality: '', rawPage: 1 };
+    const state = { tab: 'tongquan', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
 
     const CAT = {};
     const ICONS = {
@@ -1769,6 +1769,9 @@
         if (state.rawVitality === 'dormant' && vA.healthStatus !== 'DORMANT_MID') return false;
         if (state.rawVitality === 'risk' && vA.healthStatus !== 'DORMANT_LONG' && vA.healthStatus !== 'DEAD_OR_PURGED' && vA.monetizationStatus !== 'MONETIZED_AT_RISK') return false;
         if (state.rawVitality === 'ypp' && vA.monetizationStatus !== 'MONETIZED_ACTIVE' && vA.monetizationStatus !== 'MONETIZED') return false;
+        const tvF = r.thumbnailVision || null;
+        if (state.rawFaceless === 'faceless' && !(tvF && tvF.isFaceless)) return false;
+        if (state.rawFaceless === 'hasface' && !(tvF && !tvF.isFaceless)) return false;
         const rid = (r.id || '').toLowerCase();
         const demoVidTitle = (r.featuredDemoVideo && r.featuredDemoVideo.title ? r.featuredDemoVideo.title : '').toLowerCase();
         const otherVidTitles = [
@@ -1784,6 +1787,8 @@
       const visionCount = records.filter(r => r.visionAnalysis).length;
       const withHandle = records.filter(r => (r.channel || {}).handle).length;
       const ocrCount = records.filter(r => r.ocr).length;
+      const facelessCount = records.filter(r => r.thumbnailVision && r.thumbnailVision.isFaceless).length;
+      const hasFaceCount = records.filter(r => r.thumbnailVision && !r.thumbnailVision.isFaceless).length;
 
       return `
   ${pageBanner('Raw kênh mẫu', filtered.length + '/' + records.length + ' hồ sơ · bóc tách qua Vision AI + OCR + vidIQ', [
@@ -1792,6 +1797,7 @@
         { icon: ICONS.search, label: 'Đang hoạt động', value: activeCount, sub: 'ra video gần đây' },
         { icon: ICONS.channel, label: 'Nguy cơ tắt YPP', value: riskCount, sub: 'dừng đăng >6 tháng' },
         { icon: ICONS.doc, label: 'Verified vidIQ', value: verifiedCount, sub: 'khớp vidIQ live' },
+        { icon: ICONS.doc, label: 'Faceless (Vision)', value: facelessCount, sub: hasFaceCount ? (hasFaceCount + ' kênh có mặt người thật') : 'phân loại bằng AI' },
         { icon: ICONS.search, label: 'Có OCR', value: ocrCount, sub: 'quét từ ảnh' }
   ])}
   <div class="card p-4 sm:p-5 mb-5 border-brand-500/30 bg-brand-950/20" role="note">
@@ -1830,6 +1836,12 @@
       <button type="button" data-raw-vitality="ypp" class="filter-btn ${state.rawVitality === 'ypp' ? 'active' : ''}">💰 Bật kiếm tiền (YPP Active) · ${yppCount}</button>
     </div>
     <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Faceless (Vision AI):</div>
+      <button type="button" data-raw-faceless="" class="filter-btn ${!state.rawFaceless ? 'active' : ''}">Tất cả · ${records.length}</button>
+      <button type="button" data-raw-faceless="faceless" class="filter-btn ${state.rawFaceless === 'faceless' ? 'active' : ''}">🎭 Faceless · ${facelessCount}</button>
+      <button type="button" data-raw-faceless="hasface" class="filter-btn ${state.rawFaceless === 'hasface' ? 'active' : ''}">👤 Có mặt người thật · ${hasFaceCount}</button>
+    </div>
+    <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
       <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Ngôn ngữ giọng đọc:</div>
       <button type="button" data-raw-lang="" class="filter-btn ${!currentLang ? 'active' : ''}">Mọi ngôn ngữ · ${records.length}</button>
       <button type="button" data-raw-lang="Tiếng Anh (English)" class="filter-btn ${currentLang === 'Tiếng Anh (English)' ? 'active' : ''}">🇺🇸 Tiếng Anh · ${langCounts['Tiếng Anh (English)'] || 0}</button>
@@ -1852,6 +1864,7 @@
           : (r.duplicateOf ? `<span class="badge badge-amber">Trùng (${esc(r.duplicateOf)})</span>` : (r.status === 'OCR_COMPLETE' ? `<span class="badge badge-blue">OCR đủ</span>` : `<span class="badge badge-amber">Manual</span>`));
         const langInfo = r.audioLanguageInfo || (r.deepIntelligence && r.deepIntelligence.audioLanguage ? { flag: r.deepIntelligence.languageFlag || '🌐', code: r.deepIntelligence.audioLanguage } : null);
         const imgSrc = r.fileName ? 'assets/raw-kenh/' + encodeURIComponent(r.fileName) : 'assets/thumbs/placeholder.svg';
+        const tv = r.thumbnailVision || null;
         return `
         <article class="card overflow-hidden min-w-0 flex flex-col hover:border-brand-500 transition group" data-raw-card="${esc(r.id)}">
           <div class="js-view-raw-image relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700 cursor-pointer" data-src="${esc(imgSrc)}" data-title="${esc((ch.title || r.id).trim())}" title="Bấm xem ảnh kích thước đầy đủ">
@@ -1861,6 +1874,7 @@
               ${langInfo ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-[9.5px] shrink-0" title="${esc(langInfo.language || langInfo.code)}">${esc(langInfo.flag)} ${esc(langInfo.code ? langInfo.code.split('-')[0].toUpperCase() : '')}</span>` : ''}
             </div>
             <span class="absolute top-2 right-2 bg-brand-600/90 text-white text-[10px] font-medium px-2 py-0.5 rounded-xl truncate max-w-[50%]">${esc(r.editorialNiche || r.niche || 'Chưa rõ')}</span>
+            ${tv ? `<span class="absolute bottom-2 left-2 ${tv.isFaceless ? 'bg-emerald-950/90 text-emerald-300 border-emerald-500/50' : 'bg-red-950/90 text-red-300 border-red-500/50'} text-[10px] font-bold px-2 py-0.5 rounded-lg border backdrop-blur-sm z-10" title="Vision AI (9Router local) phân loại cấp kênh · ${esc(tv.agreement || '')}">${tv.isFaceless ? '🎭 Faceless' : '👤 Có mặt người thật'}</span>` : ''}
             <span class="absolute bottom-2 right-2 bg-black/70 hover:bg-black/90 text-white text-[10px] px-2 py-0.5 rounded-lg border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">🔍 Xem ảnh</span>
           </div>
           <div class="p-3.5 flex-1 flex flex-col gap-2 min-w-0">
@@ -1888,6 +1902,7 @@
             </div>` : '')}
             ${vision.mainTopic ? `<p class="text-[11px] text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="text-amber-400 font-semibold">Chủ đề:</span> ${esc(vision.mainTopic)}</p>` : ''}
             ${vision.videoTitles && vision.videoTitles.length ? `<p class="text-[11px] text-gray-400 italic line-clamp-1">"${esc(vision.videoTitles[0])}"</p>` : ''}
+            ${tv ? `<p class="text-[11px] text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="${tv.isFaceless ? 'text-emerald-400' : 'text-red-400'} font-semibold">Vision:</span> ${tv.isFaceless ? 'Faceless' : 'Có mặt người thật'} · ${esc(tv.facelessType || '')} · Ngách: ${esc(tv.thumbnailNiche || '—')}${tv.needsReview ? ' <span class="text-amber-400 font-semibold">· cần review</span>' : ''}</p>` : ''}
             ${ocr ? `<p class="text-[11px] text-gray-400 truncate">${esc([ocr.subsText, ocr.videoCountText, ocr.videoRows && ocr.videoRows[0] ? ocr.videoRows[0].vph : null].filter(Boolean).join(' · '))}</p>` : ''}
             ${r.deepIntelligence ? `
             <div class="text-[10px] bg-white/[0.03] border border-white/10 rounded-xl px-2.5 py-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-gray-300">
@@ -2346,9 +2361,10 @@
       if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; render(); }; }
       document.querySelectorAll('[data-raw-niche]').forEach(btn => { btn.onclick = () => { state.rawNiche = btn.getAttribute('data-raw-niche') || ''; render(); }; });
       document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; render(); }; });
+      document.querySelectorAll('[data-raw-faceless]').forEach(btn => { btn.onclick = () => { state.rawFaceless = btn.getAttribute('data-raw-faceless') || ''; render(); }; });
       document.querySelectorAll('[data-raw-lang]').forEach(btn => { btn.onclick = () => { state.rawLang = btn.getAttribute('data-raw-lang') || ''; render(); }; });
       const rr2 = document.getElementById('freset-raw');
-      if (rr2) { rr2.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawVitality = ''; state.rawLang = ''; render(); }; }
+      if (rr2) { rr2.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; render(); }; }
       document.querySelectorAll('.btn-open-raw-deep').forEach(btn => {
         btn.onclick = (e) => {
           e.stopPropagation();

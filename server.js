@@ -287,9 +287,33 @@ const server = http.createServer(async (req,res)=>{
     return;
   }
 
-  // Bảo vệ duy nhất file secret cấu hình môi trường (.env)
+  // Bảo vệ file secret cấu hình môi trường (.env)
   const baseName = path.basename(full).toLowerCase();
   if (baseName.startsWith('.env')) {
+    res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+    res.end('Forbidden');
+    return;
+  }
+
+  // Bảo vệ thư mục chứa SECRET/CONFIG (KHÔNG chặn data học liệu/video/transcript).
+  // Lưu ý: đây là bảo vệ BÍ MẬT (API key, backup .env), không phải che giấu dữ liệu
+  // theo Rule 1.7. Các thư mục dữ liệu (data/, data-tabs/, docs/, assets/, video/)
+  // vẫn mở 100%.
+  const SENSITIVE_SEGMENTS = new Set([
+    '_private',    // chứa mcp-keys-h2dev.md (danh mục key)
+    '_backup',     // chứa .env.bak và bản backup key plaintext
+    '_audit',      // raw phân tích nội bộ (AGENTS.md yêu cầu chặn)
+    '_internal',   // tài liệu nội bộ nháp
+    '_drafts',     // bản nháp chưa duyệt
+  ]);
+  const relSegs = relative.split(path.sep);
+  if (relSegs.some(seg => SENSITIVE_SEGMENTS.has(seg))) {
+    res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+    res.end('Forbidden');
+    return;
+  }
+  // Bảo vệ file database/secret binary ở thư mục data (không lộ dump toàn bộ DB qua web tĩnh)
+  if (/\.(db|sqlite|sqlite3)$/i.test(baseName)) {
     res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
     res.end('Forbidden');
     return;

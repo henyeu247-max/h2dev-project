@@ -1,0 +1,62 @@
+{
+  "base": "http://127.0.0.1:8899",
+  "checks": [
+    {
+      "name": "Raw Channels Cards Count",
+      "pass": true,
+      "detail": "Expected 124, got 124"
+    },
+    {
+      "name": "All 124 Images Return HTTP 200",
+      "pass": true,
+      "detail": "Loaded: 124/124, Broken: 0"
+    },
+    {
+      "name": "New Channel RAW-110 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-110"
+    },
+    {
+      "name": "New Channel RAW-114 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-114"
+    },
+    {
+      "name": "New Channel RAW-117 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-117"
+    },
+    {
+      "name": "New Channel RAW-121 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-121"
+    },
+    {
+      "name": "New Channel RAW-124 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-124"
+    },
+    {
+      "name": "New Channel RAW-136 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-136"
+    },
+    {
+      "name": "Zero Console Errors",
+      "pass": true,
+      "detail": "Errors: 0"
+    },
+    {
+      "name": "Zero Failed Network Requests",
+      "pass": true,
+      "detail": "Failed: 0"
+    },
+    {
+      "name": "Screenshot Proof Captured",
+      "pass": true,
+      "detail": "docs/proof-raw124-full-audit.png"
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": []
+}

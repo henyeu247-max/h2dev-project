@@ -1,3 +1,27 @@
+## 2026-09-16 — Check-Pass MCP Web Fair + Cập Nhật HUONG-DAN-MCP-CHUAN.md
+
+- Benchmark công bằng thêm Keenable / YDC / TinyFish / Firecrawl map / Tavily map-crawl / Exa alias / context-dev (proof: `_audit/mcp-web-fair-*.json`, `_audit/mcp-web-bench-*.json`, `_audit/mcp-bench-*.json`).
+- Phát hiện mới: `keenable__search_web_pages` ~813ms q8 và `keenable__fetch_page_content` ~402ms q9 — cạnh tranh Exa ở fetch/search nhanh.
+- Firecrawl extract deprecated qua MCP; Tavily map 429; trends vẫn thiếu token.
+- Viết lại `knowledge-hub/docs/HUONG-DAN-MCP-CHUAN.md` theo evidence live (backup `_backup/20260916-mcp-guide/`).
+- Routing chuẩn: YouTube → `youtube_intelligence__*`; web search → Keenable/Exa; scrape sâu → Firecrawl scrape; fetch nhanh → Exa/Keenable/Jina.
+
+
+## 2026-09-15 — Mở Rộng 27 Kênh Mẫu Canonical Mới (RAW-110 đến RAW-136) & Nâng Cấp Hệ Thống Lên 124 Kênh Thực Chiến
+
+- **Phát hiện, Bóc tách & Đối Soát 28 File Ảnh Mới Trong `raw-kenh-goc/`:**
+  - Rà soát toàn vẹn 126 file media trong `raw-kenh-goc/`, lọc bỏ 2 file trùng lặp byte (SHA256 duplicate), xác định chính xác 27 thực thể kênh mẫu hoàn toàn mới (RAW-110 đến RAW-136).
+  - Sao chép 27 file ảnh thực tế sang `assets/raw-kenh/`, nâng tổng số ảnh kênh mẫu lên 124/124 file (100% HTTP 200).
+- **Dò Quét & Định Danh Trực Tiếp Qua YouTube Live (Zero API Quota):**
+  - Sử dụng engine `free_yt_engine.py` trích xuất thông tin thật 100% từ YouTube: Channel ID, Title, Subscribers, Video Count, và RSS feeds.
+  - Phân tích và tính toán Outlier Score từ các video bão view nổi bật cho toàn bộ 27 kênh mới.
+  - Nâng quy mô ngách nghiệp vụ phát hiện được từ 31 lên **58 ngách** chi tiết (Bao gồm: Tự cung tự cấp Off-Grid $0, Pin gia đình DIY tiết kiệm 60%, Kể chuyện huyền thoại Country Dolly Parton, Bất động sản bỏ hoang Châu Âu, Siêu công trình & Thảm họa xây dựng, Hoạt hình 2D POV Tài chính, Homeless Revival, An ninh gia đình người già, AI Dark Fantasy 4K dài tập, Nhà máy tái chế 4K, Sinh tồn vùng lạnh cực hạn...).
+- **Đồng Bộ Hóa Master SQLite WAL Database & Validation Suite:**
+  - Cập nhật `data-tabs/raw-kenh-mau.json` và `raw-kenh-goc/metadata-full.json` lên 124 canonical records.
+  - Tái tạo `data/h2dev_master.db`: Bảng `competitor_channels` nâng lên **238 kênh**, chỉ mục toàn văn `search_fts` đạt **1.277 bản ghi**, tổng ngách trong DB đạt **137 ngách**.
+  - Cập nhật `validate-project.js` (`EXPECTED_CANONICAL_RAW = 124`) và chạy pass 100% không cảnh báo.
+  - Kiểm thử trình duyệt Playwright E2E (`scripts/audit-raw-124-e2e.js`): **PASS 10/10 checks**, kiểm tra đủ 124 ảnh tải thành công HTTP 200, hiển thị bộ lọc gợi ý không lỗi.
+
 ## 2026-09-15 — Nâng Cấp Toàn Diện Hồ Sơ Tác Chiến RAW-021 (Hidden Planet Docs) & Tích Hợp Video Mới 547K Views
 
 - **Tái kiểm toán dữ liệu sống YouTube ngày 15/09/2026 (Live MCP Audit):**

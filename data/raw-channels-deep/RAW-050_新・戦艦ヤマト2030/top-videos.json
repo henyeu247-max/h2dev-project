@@ -27,7 +27,21 @@
       "transcriptJsonRel": "transcripts/26CD8GRhRrs_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/26CD8GRhRrs_summary_vi.md",
-      "hookSnippet": "Năm 2025, tình hình Đông Á thay đổi do câu hỏi bất cẩn của một nhà lập pháp nào đó...."
+      "hookSnippet": "Năm 2025, tình hình Đông Á thay đổi do câu hỏi bất cẩn của một nhà lập pháp nào đó....",
+      "thumbnailScore": {
+        "compositeScore": 52,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 17,
+          "contrast": 47,
+          "mobileReadability": 79,
+          "curiosityGap": 71,
+          "textBurden": 0,
+          "policySafety": 80,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 【大総集編 第1弾／約1時間】新・戦艦ヤマト2030　1話～58話　東京決戦・中国決戦・AIとの戦いなど...)"
+      }
     },
     {
       "rank": 8,
@@ -53,7 +67,21 @@
       "transcriptJsonRel": "transcripts/gXej_AdXfvA_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/gXej_AdXfvA_summary_vi.md",
-      "hookSnippet": "Đạo diễn có một cái bóng mới bổ sung cho cái bóng lớn...."
+      "hookSnippet": "Đạo diễn có một cái bóng mới bổ sung cho cái bóng lớn....",
+      "thumbnailScore": {
+        "compositeScore": 60,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 47,
+          "contrast": 66,
+          "mobileReadability": 86,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 93,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 新・戦艦ヤマト台湾有事編2 19話〜26話ついに沖縄に到着したヤマトだが、待ち受けていたのは… 某国なのか...)"
+      }
     },
     {
       "rank": 2,
@@ -79,7 +107,21 @@
       "transcriptJsonRel": "transcripts/5f0WHZMNnMA_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/5f0WHZMNnMA_summary_vi.md",
-      "hookSnippet": "Đã được một thời gian rồi...."
+      "hookSnippet": "Đã được một thời gian rồi....",
+      "thumbnailScore": {
+        "compositeScore": 45,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 5,
+          "contrast": 34,
+          "mobileReadability": 74,
+          "curiosityGap": 55,
+          "textBurden": 6,
+          "policySafety": 80,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 【大総集編 第3弾／約1時間】【ここから観れば全部わかる】新・戦艦ヤマト2030 第3章 プロトコルゼロ・やまと始動編|97〜129話 完全版...)"
+      }
     },
     {
       "rank": 1,
@@ -105,7 +147,21 @@
       "transcriptJsonRel": "transcripts/j9DgLk3S4wo_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/j9DgLk3S4wo_summary_vi.md",
-      "hookSnippet": "Phần phía bắc thủ đô Đài Loan đột nhiên chìm trong bóng tối...."
+      "hookSnippet": "Phần phía bắc thủ đô Đài Loan đột nhiên chìm trong bóng tối....",
+      "thumbnailScore": {
+        "compositeScore": 61,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 20,
+          "contrast": 92,
+          "mobileReadability": 97,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 93,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 新・戦艦ヤマト2030台湾有事編6 47-52話 中国に打ち勝ったヤマトは台湾へ向かう。...)"
+      }
     },
     {
       "rank": 7,
@@ -131,7 +187,21 @@
       "transcriptJsonRel": "transcripts/GOKfnOMhQZI_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/GOKfnOMhQZI_summary_vi.md",
-      "hookSnippet": "Thủ đô đột nhiên chìm trong bóng tối...."
+      "hookSnippet": "Thủ đô đột nhiên chìm trong bóng tối....",
+      "thumbnailScore": {
+        "compositeScore": 54,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 30,
+          "contrast": 56,
+          "mobileReadability": 82,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 88,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 新・戦艦ヤマト台湾有事編８　59話-64話 台湾に上陸した古賀と真多は捕らわれの身に。エンディングに新作YO7の第一話あり。...)"
+      }
     },
     {
       "rank": 5,
@@ -157,7 +227,21 @@
       "transcriptJsonRel": "transcripts/JpNdi-5w9cY_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/JpNdi-5w9cY_summary_vi.md",
-      "hookSnippet": "Vui lòng kiểm tra kỹ xem bạn đã nạp đủ số bộ phận của hệ thống đẩy theo yêu cầu chưa...."
+      "hookSnippet": "Vui lòng kiểm tra kỹ xem bạn đã nạp đủ số bộ phận của hệ thống đẩy theo yêu cầu chưa....",
+      "thumbnailScore": {
+        "compositeScore": 52,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 29,
+          "contrast": 55,
+          "mobileReadability": 82,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 80,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 新・戦艦ヤマト2030　ヤマト・決断の時　プロトコルZERO９...)"
+      }
     },
     {
       "rank": 10,
@@ -183,7 +267,21 @@
       "transcriptJsonRel": "transcripts/-RhR8OdpOIY_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/-RhR8OdpOIY_summary_vi.md",
-      "hookSnippet": "Báo cáo bắn tỉa liên tục [Âm nhạc] Xác nhận xâm nhập vào cơ sở Senkaku-kai của Đường Chugoku Báo cáo bị bắt giữ..."
+      "hookSnippet": "Báo cáo bắn tỉa liên tục [Âm nhạc] Xác nhận xâm nhập vào cơ sở Senkaku-kai của Đường Chugoku Báo cáo bị bắt giữ...",
+      "thumbnailScore": {
+        "compositeScore": 55,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 7,
+          "contrast": 71,
+          "mobileReadability": 88,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 93,
+          "visualNovelty": 94
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 新・戦艦ヤマト2030　「ヤマト宇和島・南鳥島の攻防」。　　そして、2026年に起こっていた真実。プロトコール8週目完全版...)"
+      }
     },
     {
       "rank": 9,
@@ -209,7 +307,21 @@
       "transcriptJsonRel": "transcripts/ABP7PymieMk_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/ABP7PymieMk_summary_vi.md",
-      "hookSnippet": "Vào tháng 3 năm 2026, Anthropec từ chối hợp tác trong cuộc tấn công của quân đội Mỹ vào Iran...."
+      "hookSnippet": "Vào tháng 3 năm 2026, Anthropec từ chối hợp tác trong cuộc tấn công của quân đội Mỹ vào Iran....",
+      "thumbnailScore": {
+        "compositeScore": 40,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 0,
+          "contrast": 16,
+          "mobileReadability": 66,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 80,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 【新戦艦ヤマト2030 総集編】新カット有 東京襲撃まで、あと７時間——アンソロペック社、再び動く夜【第178〜183話】...)"
+      }
     },
     {
       "rank": 3,
@@ -235,7 +347,21 @@
       "transcriptJsonRel": "transcripts/Mkzh1uaguE0_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/Mkzh1uaguE0_summary_vi.md",
-      "hookSnippet": "Vào những năm 2020, thế giới bắt đầu rung chuyển...."
+      "hookSnippet": "Vào những năm 2020, thế giới bắt đầu rung chuyển....",
+      "thumbnailScore": {
+        "compositeScore": 49,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 4,
+          "contrast": 55,
+          "mobileReadability": 82,
+          "curiosityGap": 55,
+          "textBurden": 0,
+          "policySafety": 80,
+          "visualNovelty": 90
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 新・戦艦ヤマト2030「ヤマト、アマテラス軌道」国産AIアマテラス軌道　　　軌道プロトコル11週目完全版...)"
+      }
     },
     {
       "rank": 6,
@@ -261,8 +387,31 @@
       "transcriptJsonRel": "transcripts/C4Va2RXzzqk_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/C4Va2RXzzqk_summary_vi.md",
-      "hookSnippet": "[Âm nhạc] Amaterasu, bây giờ tôi đang chờ đợi điều gì?..."
+      "hookSnippet": "[Âm nhạc] Amaterasu, bây giờ tôi đang chờ đợi điều gì?...",
+      "thumbnailScore": {
+        "compositeScore": 46,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 12,
+          "contrast": 26,
+          "mobileReadability": 70,
+          "curiosityGap": 63,
+          "textBurden": 0,
+          "policySafety": 80,
+          "visualNovelty": 86
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: 新戦艦ヤマト2030未知の艦の出現　ヤマトは中國艦隊は？　プロトコル12週目前半ロング...)"
+      }
     }
   ],
-  "transcriptsCount": 10
+  "transcriptsCount": 10,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 10,
+    "declaredCount": 10,
+    "missingThumbnails": [],
+    "averageCompositeScore": 51,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

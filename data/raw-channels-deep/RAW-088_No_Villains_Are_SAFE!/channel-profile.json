@@ -4,9 +4,9 @@
   "title": "No Villains Are SAFE!",
   "handle": "@NoVillainsAreSAFE",
   "url": "https://www.youtube.com/channel/UCNSyOUwDIn_PUfXSQQKDhHQ",
-  "subscribers": 333000,
+  "subscribers": 335000,
   "views": 112242088,
-  "videoCount": 208,
+  "videoCount": 209,
   "country": "US",
   "avatar": "https://yt3.ggpht.com/6QzCV8juFUr8u_VW962F7P1EfumRjhaW-Wiwu63jU6cCX_wPWaNiz92Lw7O1ZFVM9E0grilhz3s=s240-c-k-c0x00ffffff-no-rj",
   "topics": [
@@ -20,12 +20,14 @@
     "channelAgeDays": 699,
     "activeSpanDays": 331,
     "windowEvaluation": "Chu kỳ khảo sát 1–3 tháng (30–90 ngày)",
-    "sustainabilityStatus": "Bền vững >3 tháng (High Stability)",
+    "sustainabilityStatus": "🟢 Đang hoạt động (Hồi sinh 4 ngày trước)",
     "growth30d": {
       "subscribersGained": 7000,
       "viewsGained": 5313358,
       "videosPublished": 7
-    }
+    },
+    "lastUploadDate": "2026-09-12",
+    "daysSinceLastUpload": 4
   },
   "channelTags": [
     "family guy",
@@ -42,7 +44,27 @@
     "seth macfarlane",
     "brian griffin",
     "lois griffin",
-    "family guy theory"
+    "family guy theory",
+    "cartoon theory",
+    "animated analysis",
+    "cartoon logic",
+    "animated math",
+    "cartoon science",
+    "cartoon breakdown",
+    "funny analysis",
+    "animation deep dive",
+    "cartoon economics",
+    "family guy moments",
+    "peter griffin theory",
+    "cartoon facts",
+    "animated shows",
+    "funny math",
+    "cartoon humor",
+    "theories explained",
+    "animation facts",
+    "cartoon universe",
+    "tv show analysis",
+    "family guy analysis"
   ],
   "extractedAt": "2026-09-09T03:31:18Z",
   "summaryStats": {
@@ -53,17 +75,341 @@
     "transcriptsExtracted": 10
   },
   "vitalityAudit": {
-    "evaluatedAt": "2026-09-09",
-    "latestUploadDate": "2025-12-20",
-    "daysSinceLatest": 263,
-    "healthStatus": "DORMANT_LONG",
-    "healthBadge": "🔴 Dừng đăng >6 tháng",
-    "healthDetail": "Dừng đăng video 263 ngày (lần cuối: 2025-12-20). Cực kỳ rủi ro: Kênh bỏ hoang hoặc đã bị YouTube tước kiếm tiền YPP.",
-    "monetizationStatus": "MONETIZED_AT_RISK",
-    "monetizationBadge": "⚠️ Nguy cơ tắt YPP (Dừng đăng lâu)",
-    "monetizationAdvisory": "CẢNH BÁO QUAN TRỌNG: Kênh đã dừng xuất bản nội dung trong 263 ngày (> 6 tháng). Theo quy định chính thức của YouTube Help 2026, YouTube có toàn quyền vô hiệu hóa kiếm tiền (Demonetize) đối với các kênh không hoạt động trong 6 tháng. Khả năng kênh đã bị chủ sở hữu bỏ rơi hoặc bị quét bản quyền/Reused Content. KHÔNG NÊN sao chép nguyên mẫu mà không cải tiến!",
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-12",
+    "daysSinceLatest": 4,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (Hồi sinh 4 ngày trước)",
+    "healthDetail": "🟢 Đang hoạt động (Hồi sinh 4 ngày trước)",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "Bật kiếm tiền (YPP Active)",
+    "monetizationAdvisory": "Kênh đã trở lại ngày 12/09/2026 với video bóc tách Peter Griffin Broken Bones (26.6K views). Phá tan cảnh báo dừng đăng cũ, xác nhận ngách cartoon logic investigation vẫn bão view.",
     "estimatedMonthlyRev": "$13,018 – $24,176 / tháng",
     "playableVideosCount": 10,
-    "totalAuditedVideos": 10
+    "totalAuditedVideos": 10,
+    "latestUploadDateNote": "Verified on 2026-09-16 via live probe: latest upload is 1EE5q-r9n00 on 2026-09-12."
+  },
+  "yppRiskNote": {
+    "status": "WATCHLIST_LOW_RISK_ACTIVE",
+    "reason": "Kênh đang active và có YPP signal tốt, nhưng cần phòng thủ Reused/Inauthentic Content khi nhân bản.",
+    "riskFactors": [
+      "Nếu nhân bản, phải thêm commentary/analysis gốc rõ ràng, không đọc lại transcript đối thủ.",
+      "Visual phải có biến thể shot và scene list mới; tránh reuse asset/prompt y hệt nhiều video.",
+      "Bắt buộc AI disclosure khi hình ảnh/đoạn dựng có AI-generated visuals theo chính sách YouTube.",
+      "Hook 0-15s và claims phải grounded transcript/source; không bịa số liệu hoặc kết luận."
+    ],
+    "requiredMitigations": [
+      "Sản xuất 1 video Channel Trailer (45s-60s) quay màn hình CapCut/Premiere dựng phim thật + giọng giới thiệu sứ mệnh kênh ghim đầu trang chủ (chiến thuật YPP Shield).",
+      "Giữ nhịp đăng đều đặn để tránh mốc 180 ngày ngừng hoạt động."
+    ],
+    "templateForFutureChannels": true,
+    "updatedAt": "2026-09-16"
+  },
+  "dataGaps": {
+    "liveSnapshotRefreshed": {
+      "status": "REFRESHED_LIVE_2026_09_16",
+      "currentEvidence": "Đã probe live YouTube ngày 16/09/2026: 335,000 subscribers, 209 videos. Video mới nhất 1EE5q-r9n00 (26,618 views, đăng 2026-09-12).",
+      "whyItMatters": "Khóa số liệu thực tế hiện tại, loại bỏ hoàn toàn suy đoán.",
+      "nextCheck": "Đã chốt ngày 16/09/2026. Lịch audit định kỳ tiếp theo: 01/10/2026."
+    },
+    "thumbnailOcrVisualScoring10of10": {
+      "status": "COMPLETED_SCORED_HEURISTIC",
+      "currentEvidence": "Đã chấm điểm heuristic 10/10 thumbnail theo 7 tiêu chí (pixel metrics + title pattern). Điểm trung bình kênh 61/100. Phương pháp: PIL phân tích contrast/sharpness/edge + metadata title; cần xác nhận bằng mắt trước khi xem là chính thức.",
+      "whyItMatters": "Cung cấp căn cứ kỹ thuật để thiết kế thumbnail CTR cao cho video nhân bản.",
+      "nextCheck": "Xác nhận vision trực tiếp (xem từng thumbnail) trước lần audit tiếp theo 01/10/2026."
+    },
+    "retentionAvdProxy": {
+      "status": "PROXY_ACCEPTED_FOR_BENCHMARK",
+      "currentEvidence": "Điểm Public Retention Signal đạt 47/100 (tính từ 70% public performance + 30% transcript structure trên 10 video). Đã minh định: AVD thật thuộc YouTube Studio riêng của chủ kênh (private data).",
+      "whyItMatters": "Phân định rõ ranh giới: Dữ liệu công khai chỉ đo được proxy giữ chân; không gọi proxy là AVD thật.",
+      "nextCheck": "Nghiệm thu AVD thật được kiểm soát độc lập ở tầng sản xuất nội bộ (data/video_acceptance.json)."
+    }
+  },
+  "retentionAvdProxy": {
+    "schema": "h2dev.public-retention-signal.v1",
+    "status": "PROXY_ONLY",
+    "label": "Public retention signal (not actual AVD)",
+    "publicRetentionSignalScore": 47,
+    "scoreRange": "0-100 heuristic score; not a percentage, not minutes, not retention rate",
+    "confidence": "MEDIUM",
+    "confidenceReason": "10/10 public transcript records are readable, but channel-owner YouTube Analytics is unavailable.",
+    "computedAt": "2026-09-16T10:00:00.000Z",
+    "methodology": {
+      "summary": "Estimate public signals associated with audience retention without claiming private Analytics metrics.",
+      "formula": "Per video: 70% public performance signal + 30% transcript structure signal; channel score = mean across audited videos.",
+      "publicPerformanceSignal": "40% log-scaled views + 35% log-scaled VPH + 25% normalized breakoutScore, using only the audited videos.",
+      "transcriptStructureSignal": "40% hook-snippet evidence + 35% transcript pacing density + 25% transcript integrity.",
+      "normalizationScope": "RAW-088 top-videos.json only; scores are comparative within this audited set."
+    },
+    "coverage": {
+      "topVideosAudited": 10,
+      "topVideosDeclared": 10,
+      "transcriptRecordsComplete": 10,
+      "transcriptRecordsDeclared": 10,
+      "coveragePass": true
+    },
+    "channelEvidence": {
+      "source": "data/raw-channels-deep/RAW-088_No_Villains_Are_SAFE!/top-videos.json",
+      "fieldsUsed": [
+        "views",
+        "vph",
+        "breakoutScore",
+        "duration",
+        "segmentCount",
+        "hookSnippet",
+        "hasTranscript"
+      ],
+      "videoIds": [
+        "UbKKl9ov8ic",
+        "l2-2r087_VA",
+        "BCOG-y03OEo",
+        "vpy-k5VIr1k",
+        "U0KLSNpN69Y",
+        "Q5QI6zkKHzI",
+        "JH0R0uVnaRg",
+        "TL_8dRyhOgQ",
+        "HFtzrL5Ijsk",
+        "ocnuIUlFWvw"
+      ]
+    },
+    "notMeasured": [
+      "Average view duration (minutes)",
+      "Audience retention percentage or curve",
+      "30-second intro retention",
+      "Rewatches, exits, skips, and end-screen behavior",
+      "Private YouTube Analytics data"
+    ],
+    "interpretation": "Use only to prioritize videos and inspect structure. Do not report this score as AVD, retention percentage, or watch time."
+  },
+  "thumbnailScoringRubric": {
+    "status": "SCORED_HEURISTIC",
+    "scoredAt": "2026-09-15T20:25:38.064693Z",
+    "coverage": "10/10 top video thumbnails scored",
+    "averageCompositeScore": 61,
+    "method": "HEURISTIC pixel+metadata scoring (PIL) - can xac nhan vision truc tiep truoc khi xem la CHINH THUC",
+    "dimensions": [
+      {
+        "name": "subjectScale",
+        "weight": "15%"
+      },
+      {
+        "name": "contrast",
+        "weight": "15%"
+      },
+      {
+        "name": "mobileReadability",
+        "weight": "15%"
+      },
+      {
+        "name": "curiosityGap",
+        "weight": "20%"
+      },
+      {
+        "name": "textBurden",
+        "weight": "15%"
+      },
+      {
+        "name": "policySafety",
+        "weight": "10%"
+      },
+      {
+        "name": "visualNovelty",
+        "weight": "10%"
+      }
+    ],
+    "scale": "0-100; A+ (>=90), A (85-89), B+ (80-84)"
+  },
+  "satelliteEcosystem": {
+    "updatedAt": "2026-09-15T20:27:05.387243Z",
+    "auditCriteria": "Kênh cùng ngách/phong cách sản xuất có trong kho 124 kênh H2DEV (subscribers < 1M)",
+    "totalSatellites": 0,
+    "satelliteChannels": [],
+    "corpusNote": "Trong kho 124 kênh hiện tại CHƯA có kênh vệ tinh cùng ngách chuyên biệt (ngách của kênh này khá độc đáo). Cần mở rộng research ngoài qua MCP vidIQ/Exa trước Pilot để lập bản đồ tình báo đầy đủ — KHÔNG bịa số liệu.",
+    "contentMatrix6Months": {
+      "cadence": "1-2 video/tuần (4-8 video/tháng)",
+      "targetLength": "15-30 phút/investigation",
+      "themeClusters": [
+        {
+          "month": "Tháng 1",
+          "clusterName": "Cụm 1: How Much Has [Nhân vật] [Hành động]? (cartoon theory tính toán) (Wave 1)",
+          "videos": [
+            {
+              "week": 1,
+              "title": "How Much Has Peter Griffin Cost Quahog #1 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 2,
+              "title": "How Much Has Peter Griffin Cost Quahog #2 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 3,
+              "title": "How Much Has Peter Griffin Cost Quahog #3 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 4,
+              "title": "How Much Has Peter Griffin Cost Quahog #4 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 2",
+          "clusterName": "Cụm 2: How Much Has [Nhân vật] [Hành động]? (cartoon theory tính toán) (Wave 2)",
+          "videos": [
+            {
+              "week": 5,
+              "title": "How Many Bones Has Peter Broken #1 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 6,
+              "title": "How Many Bones Has Peter Broken #2 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 7,
+              "title": "How Many Bones Has Peter Broken #3 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 8,
+              "title": "How Many Bones Has Peter Broken #4 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 3",
+          "clusterName": "Cụm 3: How Much Has [Nhân vật] [Hành động]? (cartoon theory tính toán) (Wave 3)",
+          "videos": [
+            {
+              "week": 9,
+              "title": "How Much Has Homer Caused #1 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 10,
+              "title": "How Much Has Homer Caused #2 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 11,
+              "title": "How Much Has Homer Caused #3 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 12,
+              "title": "How Much Has Homer Caused #4 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 4",
+          "clusterName": "Cụm 4: How Much Has [Nhân vật] [Hành động]? (cartoon theory tính toán) (Wave 4)",
+          "videos": [
+            {
+              "week": 13,
+              "title": "The REAL Cost of Every Disaster #5 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 14,
+              "title": "The REAL Cost of Every Disaster #6 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 15,
+              "title": "The REAL Cost of Every Disaster #7 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 16,
+              "title": "The REAL Cost of Every Disaster #8 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 5",
+          "clusterName": "Cụm 5: How Much Has [Nhân vật] [Hành động]? (cartoon theory tính toán) (Wave 5)",
+          "videos": [
+            {
+              "week": 17,
+              "title": "How Much Has [Character] Spent #5 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 18,
+              "title": "How Much Has [Character] Spent #6 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 19,
+              "title": "How Much Has [Character] Spent #7 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 20,
+              "title": "How Much Has [Character] Spent #8 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            }
+          ]
+        },
+        {
+          "month": "Tháng 6",
+          "clusterName": "Cụm 6: How Much Has [Nhân vật] [Hành động]? (cartoon theory tính toán) (Wave 6)",
+          "videos": [
+            {
+              "week": 21,
+              "title": "How Much Has Peter Griffin Cost Quahog #5 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 22,
+              "title": "How Much Has Peter Griffin Cost Quahog #6 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 23,
+              "title": "How Much Has Peter Griffin Cost Quahog #7 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            },
+            {
+              "week": 24,
+              "title": "How Much Has Peter Griffin Cost Quahog #8 | 15-30 phút/investigation",
+              "hookArchetype": "Đúng format hook video bão view #1 của kênh (tham chiếu top-videos.json)",
+              "benchmarkRef": "RAW-088 top video #1"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

@@ -50,7 +50,21 @@
       "transcriptJsonRel": "transcripts/KCJEeITgePU_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/KCJEeITgePU_summary_vi.md",
-      "hookSnippet": "Vì bị Margaret làm đau lòng nhiều lần, anh xin lỗi nhưng anh không thể là..."
+      "hookSnippet": "Vì bị Margaret làm đau lòng nhiều lần, anh xin lỗi nhưng anh không thể là...",
+      "thumbnailScore": {
+        "compositeScore": 67,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 30,
+          "contrast": 90,
+          "mobileReadability": 96,
+          "curiosityGap": 73,
+          "textBurden": 17,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Who Mordecai SHOULD Have ENDED UP With...)"
+      }
     },
     {
       "rank": 3,
@@ -81,7 +95,21 @@
       "transcriptJsonRel": "transcripts/cLYb8akSKQ8_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/cLYb8akSKQ8_summary_vi.md",
-      "hookSnippet": "Từ gấu trúc dùng xẻng đánh quái vật đến chim giẻ cùi xanh..."
+      "hookSnippet": "Từ gấu trúc dùng xẻng đánh quái vật đến chim giẻ cùi xanh...",
+      "thumbnailScore": {
+        "compositeScore": 64,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 35,
+          "contrast": 70,
+          "mobileReadability": 88,
+          "curiosityGap": 67,
+          "textBurden": 29,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: What is the most REGULAR Episode of Regular Show...)"
+      }
     },
     {
       "rank": 1,
@@ -112,7 +140,21 @@
       "transcriptJsonRel": "transcripts/dm9vNIq_CTc_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/dm9vNIq_CTc_summary_vi.md",
-      "hookSnippet": "từ vô số lần làm tổn thương nhau đến việc luôn ủng hộ nhau...."
+      "hookSnippet": "từ vô số lần làm tổn thương nhau đến việc luôn ủng hộ nhau....",
+      "thumbnailScore": {
+        "compositeScore": 59,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 8,
+          "contrast": 66,
+          "mobileReadability": 86,
+          "curiosityGap": 73,
+          "textBurden": 17,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Did Mordecai and Rigby’s Friendship SURVIVE?...)"
+      }
     },
     {
       "rank": 7,
@@ -159,7 +201,21 @@
       "transcriptJsonRel": "transcripts/6Hr_95M5OAg_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/6Hr_95M5OAg_summary_vi.md",
-      "hookSnippet": "Từ tập phim miêu tả anh ta là một kẻ tâm thần đến tập phim khác chỉ vạch trần..."
+      "hookSnippet": "Từ tập phim miêu tả anh ta là một kẻ tâm thần đến tập phim khác chỉ vạch trần...",
+      "thumbnailScore": {
+        "compositeScore": 62,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 18,
+          "contrast": 96,
+          "mobileReadability": 98,
+          "curiosityGap": 55,
+          "textBurden": 6,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: The Deserved DOWNFALL of Mordecai...)"
+      }
     },
     {
       "rank": 6,
@@ -193,7 +249,21 @@
       "transcriptJsonRel": "transcripts/iLc51fQqATE_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/iLc51fQqATE_summary_vi.md",
-      "hookSnippet": "Từ việc xóa sạch thời gian vì ghen tuông thuần túy đến phá hỏng toàn bộ chuyện tình của anh..."
+      "hookSnippet": "Từ việc xóa sạch thời gian vì ghen tuông thuần túy đến phá hỏng toàn bộ chuyện tình của anh...",
+      "thumbnailScore": {
+        "compositeScore": 63,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 19,
+          "contrast": 93,
+          "mobileReadability": 97,
+          "curiosityGap": 61,
+          "textBurden": 11,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: Every Time Mordecai Was A Psycho...)"
+      }
     },
     {
       "rank": 8,
@@ -239,7 +309,21 @@
       "transcriptJsonRel": "transcripts/wPwgtHEQsvA_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/wPwgtHEQsvA_summary_vi.md",
-      "hookSnippet": "Regular Show chưa bao giờ tinh tế với các nhân vật của nó...."
+      "hookSnippet": "Regular Show chưa bao giờ tinh tế với các nhân vật của nó....",
+      "thumbnailScore": {
+        "compositeScore": 61,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 23,
+          "contrast": 80,
+          "mobileReadability": 92,
+          "curiosityGap": 61,
+          "textBurden": 11,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: The Most Controversial Regular Show Character...)"
+      }
     },
     {
       "rank": 4,
@@ -272,7 +356,21 @@
       "transcriptJsonRel": "transcripts/_nT2VNTO22c_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/_nT2VNTO22c_summary_vi.md",
-      "hookSnippet": "Từ việc đấm những người nổi tiếng và phá hỏng bữa tiệc của họ cho đến việc JG Quintel bất ngờ nhắc đến Morai trong..."
+      "hookSnippet": "Từ việc đấm những người nổi tiếng và phá hỏng bữa tiệc của họ cho đến việc JG Quintel bất ngờ nhắc đến Morai trong...",
+      "thumbnailScore": {
+        "compositeScore": 68,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 28,
+          "contrast": 80,
+          "mobileReadability": 92,
+          "curiosityGap": 81,
+          "textBurden": 23,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: EVERY Time Regular Show Appeared In Other Cartoons!...)"
+      }
     },
     {
       "rank": 9,
@@ -303,7 +401,21 @@
       "transcriptJsonRel": "transcripts/DOovMQmusA0_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/DOovMQmusA0_summary_vi.md",
-      "hookSnippet": "Chương trình thường xuyên có rất nhiều nhân vật đến và đi mà không báo trước...."
+      "hookSnippet": "Chương trình thường xuyên có rất nhiều nhân vật đến và đi mà không báo trước....",
+      "thumbnailScore": {
+        "compositeScore": 67,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 0,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 79,
+          "textBurden": 23,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: What Happened to EVERY One-Time Regular Show Character?...)"
+      }
     },
     {
       "rank": 5,
@@ -332,7 +444,21 @@
       "transcriptJsonRel": "transcripts/EPfPcEILOBo_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/EPfPcEILOBo_summary_vi.md",
-      "hookSnippet": "Moreai và bộ đôi lười biếng xuất sắc nhất trong chương trình thông thường không chỉ trốn việc nhà và ăn khoai tây chiên...."
+      "hookSnippet": "Moreai và bộ đôi lười biếng xuất sắc nhất trong chương trình thông thường không chỉ trốn việc nhà và ăn khoai tây chiên....",
+      "thumbnailScore": {
+        "compositeScore": 68,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 29,
+          "contrast": 94,
+          "mobileReadability": 98,
+          "curiosityGap": 67,
+          "textBurden": 23,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How many people has Mordecai and Rigby KILLED?...)"
+      }
     },
     {
       "rank": 10,
@@ -362,8 +488,31 @@
       "transcriptJsonRel": "transcripts/U3B0YX7imhA_transcript.json",
       "hasSummaryVi": true,
       "summaryViRel": "transcripts/U3B0YX7imhA_summary_vi.md",
-      "hookSnippet": "Skips, còn được gọi là Vox, là một trong những nhân vật mạnh nhất trong tiểu thuyết...."
+      "hookSnippet": "Skips, còn được gọi là Vox, là một trong những nhân vật mạnh nhất trong tiểu thuyết....",
+      "thumbnailScore": {
+        "compositeScore": 67,
+        "grade": "B+ (Good)",
+        "dimensions": {
+          "subjectScale": 35,
+          "contrast": 100,
+          "mobileReadability": 100,
+          "curiosityGap": 67,
+          "textBurden": 6,
+          "policySafety": 95,
+          "visualNovelty": 84
+        },
+        "auditNotes": "Heuristic pixel+metadata scoring (title: How Strong REALLY is Skips...)"
+      }
     }
   ],
-  "transcriptsCount": 10
+  "transcriptsCount": 10,
+  "thumbnailAudit": {
+    "auditedAt": "2026-09-15T20:25:38.064693Z",
+    "scoredCount": 10,
+    "declaredCount": 10,
+    "missingThumbnails": [],
+    "averageCompositeScore": 65,
+    "method": "HEURISTIC_PIXEL_METADATA (PIL contrast/sharpness/edge + title curiosity pattern; not visual inspection)",
+    "status": "SCORED_10_OF_10_HEURISTIC"
+  }
 }

@@ -76,5 +76,98 @@
       "title": "Seeding & Bật Kiếm Tiền YPP",
       "detail": "Bật 2 tab xem trọn vẹn video đầu tiên + ghim comment tương tác -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense tab ẩn danh."
     }
-  ]
+  ],
+  "yppRiskNote": {
+    "status": "WATCHLIST_LOW_RISK_ACTIVE",
+    "reason": "Kênh đang active và có YPP signal tốt, nhưng cần phòng thủ Reused/Inauthentic Content khi nhân bản.",
+    "riskFactors": [
+      "Nếu nhân bản, phải thêm commentary/analysis gốc rõ ràng, không đọc lại transcript đối thủ.",
+      "Visual phải có biến thể shot và scene list mới; tránh reuse asset/prompt y hệt nhiều video.",
+      "Bắt buộc AI disclosure khi hình ảnh/đoạn dựng có AI-generated visuals theo chính sách YouTube.",
+      "Hook 0-15s và claims phải grounded transcript/source; không bịa số liệu hoặc kết luận."
+    ],
+    "requiredMitigations": [
+      "Sản xuất 1 video Channel Trailer (45s-60s) quay màn hình CapCut/Premiere dựng phim thật + giọng giới thiệu sứ mệnh kênh ghim đầu trang chủ (chiến thuật YPP Shield).",
+      "Giữ nhịp đăng đều đặn để tránh mốc 180 ngày ngừng hoạt động."
+    ],
+    "templateForFutureChannels": true,
+    "updatedAt": "2026-09-16"
+  },
+  "dataGaps": {
+    "liveSnapshotRefreshed": {
+      "status": "REFRESHED_LIVE_2026_09_16",
+      "currentEvidence": "Đã probe live YouTube ngày 16/09/2026: 183,000 subscribers, 30 videos. Video mới nhất IosvVkKa7eM (438,555 views, đăng 2026-08-16).",
+      "whyItMatters": "Khóa số liệu thực tế hiện tại, loại bỏ hoàn toàn suy đoán.",
+      "nextCheck": "Đã chốt ngày 16/09/2026. Lịch audit định kỳ tiếp theo: 01/10/2026."
+    },
+    "thumbnailOcrVisualScoring10of10": {
+      "status": "NEEDS_REFRESH",
+      "currentEvidence": "Chưa chấm điểm định lượng 10/10 thumbnail theo 7 tiêu chí (curiosityGap, subjectScale, contrast, mobileReadability, textBurden, policySafety, visualNovelty).",
+      "whyItMatters": "Cung cấp căn cứ kỹ thuật chính xác để thiết kế thumbnail CTR cao cho video nhân bản.",
+      "nextCheck": "Cần chạy scoring 10/10 thumbnail trước khi khóa Benchmark."
+    },
+    "retentionAvdProxy": {
+      "status": "PROXY_ACCEPTED_FOR_BENCHMARK",
+      "currentEvidence": "Điểm Public Retention Signal đạt 63/100 (tính từ 70% public performance + 30% transcript structure trên 10 video). Đã minh định: AVD thật thuộc YouTube Studio riêng của chủ kênh (private data).",
+      "whyItMatters": "Phân định rõ ranh giới: Dữ liệu công khai chỉ đo được proxy giữ chân; không gọi proxy là AVD thật.",
+      "nextCheck": "Nghiệm thu AVD thật được kiểm soát độc lập ở tầng sản xuất nội bộ (data/video_acceptance.json)."
+    }
+  },
+  "retentionAvdProxy": {
+    "schema": "h2dev.public-retention-signal.v1",
+    "status": "PROXY_ONLY",
+    "label": "Public retention signal (not actual AVD)",
+    "publicRetentionSignalScore": 63,
+    "scoreRange": "0-100 heuristic score; not a percentage, not minutes, not retention rate",
+    "confidence": "MEDIUM",
+    "confidenceReason": "10/10 public transcript records are readable, but channel-owner YouTube Analytics is unavailable.",
+    "computedAt": "2026-09-16T10:00:00.000Z",
+    "methodology": {
+      "summary": "Estimate public signals associated with audience retention without claiming private Analytics metrics.",
+      "formula": "Per video: 70% public performance signal + 30% transcript structure signal; channel score = mean across audited videos.",
+      "publicPerformanceSignal": "40% log-scaled views + 35% log-scaled VPH + 25% normalized breakoutScore, using only the audited videos.",
+      "transcriptStructureSignal": "40% hook-snippet evidence + 35% transcript pacing density + 25% transcript integrity.",
+      "normalizationScope": "RAW-025 top-videos.json only; scores are comparative within this audited set."
+    },
+    "coverage": {
+      "topVideosAudited": 10,
+      "topVideosDeclared": 10,
+      "transcriptRecordsComplete": 10,
+      "transcriptRecordsDeclared": 10,
+      "coveragePass": true
+    },
+    "channelEvidence": {
+      "source": "data/raw-channels-deep/RAW-025_game.mp4/top-videos.json",
+      "fieldsUsed": [
+        "views",
+        "vph",
+        "breakoutScore",
+        "duration",
+        "segmentCount",
+        "hookSnippet",
+        "hasTranscript"
+      ],
+      "videoIds": [
+        "c7m4EH7UZ_8",
+        "7JJq9n2o1Yo",
+        "KpddAAFFbP0",
+        "Rl0kFo8T_6g",
+        "sq831RUw47A",
+        "MibddujOjxU",
+        "IosvVkKa7eM",
+        "GVc5d-qok8w",
+        "r0Np-YRG_4o",
+        "V7FnnEQWpWw"
+      ]
+    },
+    "notMeasured": [
+      "Average view duration (minutes)",
+      "Audience retention percentage or curve",
+      "30-second intro retention",
+      "Rewatches, exits, skips, and end-screen behavior",
+      "Private YouTube Analytics data"
+    ],
+    "interpretation": "Use only to prioritize videos and inspect structure. Do not report this score as AVD, retention percentage, or watch time."
+  },
+  "thumbnailScoringRubric": null
 }

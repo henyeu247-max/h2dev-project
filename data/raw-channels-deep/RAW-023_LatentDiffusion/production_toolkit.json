@@ -1,0 +1,123 @@
+{
+  "channelId": "UCsnUwRoQuUwefJypDf0TXGA",
+  "rawId": "RAW-023",
+  "channelTitle": "LatentDiffusion",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "US / Global (Tiếng Anh) - fan Analog Horror & Retro Gaming",
+    "audienceProfile": "Fan analog horror, Minecraft creepy content, phim kinh dị retro 80s (16-40 tuổi); người thích cảm giác rùng rợn tâm lý thay vì jumpscare",
+    "viewingHabit": "Xem hoạt hình indie 7-20 phút vào buổi tối/đêm; thích chi tiết ẩn (lore), atmosphere nghẹt thở, phân tích lại nhiều lần",
+    "emotionalCore": "Nỗi sợ âm ỉ, claustrophobia, cảm giác 'có gì đó không ổn' khi xem lại từng khung hình"
+  },
+  "visualDirective": {
+    "styleShort": "Retro 1979 VHS analog horror CGI (the audience is analog horror & retro gaming fans, low-poly blocky Minecraft-like world, grainy VHS degradation, unsettling entity, claustrophobic tunnels)",
+    "mascot": "Lone Miner (thợ mỏ đơn độc) + The Elder (thực thể kỳ dị mắt sáng trong bóng tối)",
+    "cameraLighting": "Flickering CRT monitor glow, handheld camera instability, dim flashlight cone cutting through pitch darkness, green-tinted night vision, static noise overlays",
+    "style": "Low-poly 1980s CGI voxel animation (Minecraft-like), VHS tape degradation, tracking lines, analog static, desaturated cold palette, blocky architecture, unsettling uncanny movements, psychological horror atmosphere, no gore, no jumpscare abuse, dread-building pacing",
+    "negativePrompt": "no modern high-fidelity CGI, no colorful children's aesthetic, no gore, no excessive jumpscares, no silly cartoon physics, no bright saturated colors, no happy ending tone",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: Retro 1979 VHS analog horror CGI, low-poly blocky Minecraft-like world, grainy VHS degradation, unsettling entity (analog horror & retro gaming fans)\n{{STYLE}}: Low-poly 1980s CGI voxel animation, VHS tape degradation, tracking lines, analog static, desaturated cold palette, blocky architecture, psychological horror, no gore\n{{MASCOT}}: Lone Miner + The Elder\nScene Action: A lone miner in a yellow hard hat holds a flickering flashlight down a dark damp cave corridor, blocky voxel walls, VHS static flicker, a distant pair of glowing eyes reflected in the darkness, claustrophobic dread --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Đèn Pha Trong Hang",
+        "description": "Đèn pha cầm tay rọi vào tối đen, bụi bặm bay lơ lửng, camera rung nhẹ như cầm tay.",
+        "prompt": "Handheld flashlight cone cutting through pitch-black voxel cave, floating dust particles, VHS grain, green-tinted darkness, retro 1979 analog horror aesthetic --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Thực Thể Trong Bóng Tối",
+        "description": "Cặp mắt sáng lờ mờ hiện ra cuối hành lang hẹp, thân hình khối khó nhận dạng.",
+        "prompt": "Distant pair of glowing eyes emerging from darkness at the end of a narrow voxel tunnel, blocky humanoid silhouette, VHS static interference, retro analog horror, unsettling --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Băng Ghi Hình 1979",
+        "description": "Khổng lồ hình màn hình TV CRT cũ với vạch nhiễu, dòng chữ CRAFT (1979) chìm trong static.",
+        "prompt": "Old CRT television screen showing grainy VHS static with faint 'CRAFT (1979)' text, tracking lines, analog noise, dark 70s room, retro horror --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: Toàn Cảnh Hầm Mỏ",
+        "description": "Đại cảnh hầm mỏ voxel tối tăm với giàn gỗ chống lở, đèn dầu lờ mờ dọc lối đi.",
+        "prompt": "Wide shot of a dark low-poly voxel mine tunnel network, wooden support beams, dim oil lamps along the path, oppressive atmosphere, VHS grain, analog horror --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1: Slow handheld push forward with slight sway, occasional static glitch frames.",
+      "Shot 2: Very slow zoom toward the glowing eyes, hold with dread, sudden cut to black.",
+      "Shot 3: Static overlay intensifies, tracking lines roll, camera shake on text reveal.",
+      "Shot 4: Slow pan across the mine, then reverse dolly retreat feeling of being watched."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng băng ghi hình 1979 cũ kỹ + tiếng nói hồi tưởng (Found-Footage Analog Horror Hook)",
+    "openingFormula": "Mở bằng đoạn băng VHS nhiễu static kèm thoại hồi tưởng: 'predictions... who do you guys think's gonna win... I think Holes kind of got him... they both really intense...' — tạo cảm giác tài liệu thực được khai quật, khán giả đứng từ góc nhìn người trong cuộc.",
+    "pacingStructure": "[0-15s] Băng VHS nhiễu + thoại mơ hồ -> [15-45s] Giới thiệu bối cảnh CRAFT (1979) + lời cảnh báo -> [45s-hết] Hành trình xuống hầm mỏ: 3-4 tầng leo thang dread (mỗi 90s 1 chi tiết bất ổn) -> [Kết thúc] Đối đầu The Elder mở kết + teaser tập sau",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% cốt truyện analog horror gốc + 30% lore ẩn mới, chia 3-6 Part (500-800 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional analog horror scriptwriter specializing in found-footage 1980s retro horror and unsettling Minecraft-style narratives (style of LatentDiffusion CRAFT (1979), The Mandela Catalogue, and Kane Pixels).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Atmospheric, restrained, dread-building, ambiguous dialogue, archival-tape framing, psychological horror. Keep 70% of the original analog horror storyline; add 30% new hidden lore, environmental dread details, and unsettling implications without gore or cheap jumpscares.\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 3-6 parts (for a 7-20 minute analog horror short).\n   - Each part should be 500-800 words, written in continuous narrative with [Action Notes] for the voxel animator, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: CRAFT (1979): The First Night | Episode 1 (zX-e9LRR_ko - 2.17M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "zX-e9LRR_ko",
+    "scriptRefTitle": "CRAFT (1979): The First Night | Episode 1 (2.17M views)",
+    "voiceSampleVideoNote": "Voice sample extracted from zX-e9LRR_ko (CRAFT (1979): The First Night) for optimal voice quality; script blueprint references zX-e9LRR_ko (highest-traffic video, 2.17M views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "CRAFT (1979): [Tên Sự Kiện/Đêm Thứ N] | [Episode N] | Analog Horror Short Film",
+    "thumbnailComposition": "Thực thể mắt sáng chiếm 65% khung bên phải nổi lên từ bóng tối; Hầm mỏ voxel + đèn pha ở nền; Vùng tối 35% bên trái đặt Text 2-3 từ màu Xám tro (#E2E8F0) hoặc Đỏ nhạt (#F87171) kiểu retro.",
+    "thumbnailText": "IT SEES YOU 👁 / CRAFT 1979 📼 / TURN BACK ⛔",
+    "cleanThumbnailPrompt": "Retro VHS analog horror YouTube thumbnail, unsettling glowing-eyed blocky entity emerging from darkness on the right 65% of frame, voxel mine tunnel background with flashlight beam, VHS grain and static, dark desaturated palette, clean negative space for text, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "CRAFT (1979): The First Night | Episode 1",
+      "CRAFT (1979): THE ELDER - End Scene",
+      "CRAFT (1979): The Signal They Found in the Mine"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "h2dev-hoat-hinh (Pipeline Hoạt Hình AI 5 Bước - biến thể Analog Horror VHS)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
+    "repoPath": "pipelines/hoat-hinh-ai/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Daniel / Callum - giọng nam trầm rùng rợn, $1.2/video)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output)",
+      "motion": "Google Veo 3.1 / Kling 3.0 Omni (6-shot narrative)",
+      "assembly": "CapCut PC + DaVinci Resolve"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Daniel / Callum - trầm, thì thầm, dread)",
+    "videoTool": "Google Nano Banana 2 & Pro (Stills voxel) -> Google Flow Veo 3.1 / Kling 3.0 (chuyển động chậm dread) -> Hậu kỳ CapCut PC + VHS overlay plugin",
+    "bgmSoundtrack": "Drone ambience tần số thấp, tiếng gió hầm mỏ, chuông điện thoại xa xăm, LFO rumble (ducking -22dB dưới giọng đọc)",
+    "soundEffects": "VHS static burst, CRT hum, metal creaking, distant footsteps, low-frequency sub drone"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ sạch + Trình duyệt chống phát hiện + Gmail ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube US, gắn Logo/Banner VHS 1979, dán trọn bộ 50 tags SEO có sẵn, ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Dùng Master Script Prompt -> Thu âm ElevenLabs Daniel/Callum -> Dựng chuỗi voxel + overlay VHS trên CapCut (mỗi video 7-20 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức 'CRAFT (1979)' -> Đăng Unlisted 2 giờ -> Hẹn giờ công khai khung 22h-00h EST (giờ xem kinh dị cao nhất)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment lore -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

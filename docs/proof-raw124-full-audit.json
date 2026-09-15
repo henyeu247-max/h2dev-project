@@ -1,6 +1,6 @@
 {
-  "base": "https://h2dev-learn.tonymmo.com",
-  "startedAt": "2026-09-15T18:23:44.383Z",
+  "base": "http://127.0.0.1:8899",
+  "startedAt": "2026-09-15T20:14:48.270Z",
   "checks": [
     {
       "name": "Raw Channels Cards Count",
@@ -65,7 +65,7 @@
   ],
   "consoleErrors": [],
   "failedRequests": [],
-  "finishedAt": "2026-09-15T18:23:55.903Z",
+  "finishedAt": "2026-09-15T20:14:51.528Z",
   "passCount": 12,
   "totalChecks": 12
 }

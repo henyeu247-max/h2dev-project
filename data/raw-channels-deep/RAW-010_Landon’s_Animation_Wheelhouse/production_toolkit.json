@@ -1,0 +1,123 @@
+{
+  "channelId": "UC2WJrMmd_eNMqfWJbD_fq2A",
+  "rawId": "RAW-010",
+  "channelTitle": "Landon's Animation Wheelhouse",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "US / Global (Tiếng Anh)",
+    "audienceProfile": "Gen Z và fan hoạt hình (12-35 tuổi) thích parody châm biếm nhân vật hoạt hình kinh điển (Thomas the Tank Engine) theo phong cách 'unhinged' — bạo lực hoạt hình hài hước, meme culture",
+    "viewingHabit": "Xem Shorts/hoạt hình 2-8 phút vào giờ giải trí; thích nhịp nhanh, thoại châm biếm, plot twist vô lý; chia sẻ qua mạng xã hội",
+    "emotionalCore": "Cười sảng khoái với sự ngớ ngẩn cực đoan, bất ngờ trước mức độ 'unhinged' của cốt truyện"
+  },
+  "visualDirective": {
+    "styleShort": "Exaggerated 3D cartoon parody of classic children's trains (Thomas-style) with gritty streetwise attitude, expressive anthropomorphic faces, dark comedy (the audience is Gen Z meme culture)",
+    "mascot": "Big B (đầu máy xe lửa bắt nạt - villain chính với nụ cười nham hiểm)",
+    "cameraLighting": "High-contrast dramatic lighting, gritty urban railway yard, moody shadows, dynamic Dutch angles, snap-zoom on panicked faces, comic slow-motion on crashes",
+    "style": "Stylized 3D CGI parody animation, glossy plastic-like cartoon trains with exaggerated anthropomorphic facial features, expressive bulging eyes, sharp comedic timing, dark-humor juxtaposition of innocent children's show aesthetic with unhinged violence, comic impact effects, no realistic gore, cartoonish damage only",
+    "negativePrompt": "no photorealistic gore, no real blood, no realistic injury, no horror uncanny valley, no actual children's show tone, no dark horror lighting without comedic contrast, no grotesque body horror",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: Exaggerated 3D cartoon parody of classic children's trains with gritty streetwise attitude and dark comedy (Gen Z meme culture)\n{{STYLE}}: Stylized 3D CGI parody animation, glossy cartoon trains with exaggerated anthropomorphic faces, expressive bulging eyes, high-contrast gritty lighting, comedic impact effects, cartoonish damage only\n{{MASCOT}}: Big B\nScene Action: Big B the menacing train engine grins wickedly as he rams a terrified small blue engine off the tracks, cartoon dust cloud explosion, dynamic Dutch angle, dramatic rim light --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Cận Cảnh Big B Nham Hiểm",
+        "description": "Cận cảnh khuôn mặt đầu máy Big B cười nham hiểm, đèn pha sáng rực, bánh xe nghiến qua ray.",
+        "prompt": "Dramatic close-up of a menacing anthropomorphic cartoon train engine grinning wickedly, glowing headlight, dark gritty railway yard, high-contrast rim lighting, comic villain expression, 3D parody style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Từ Dưới Thấp (Low-Angle Intimidation)",
+        "description": "Góc máy từ dưới nhìn lên Big B sừng sững trước đầu máy nhỏ run rẩy, tạo cảm giác áp đảo hài hước.",
+        "prompt": "Low-angle shot of a towering cartoon train villain looming over a small trembling engine, comic intimidation, gritty yard background, dramatic shadows, parody 3D style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Rượt Đuổi Động (Dynamic Chase)",
+        "description": "Cú máy đuổi theo hai đầu máy lao vun vút, bánh xe bắn tia lửa, nhạc kịch tính hài hước.",
+        "prompt": "Dynamic tracking shot of two cartoon trains racing down tracks, sparks flying from wheels, motion blur, comedic urgency, parody 3D animation style --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: Va Chạm Chậm (Impact Slow-mo)",
+        "description": "Slow-motion khoảnh khắc va chạm, mảnh vỡ hoạt hình bay tung, khuôn mặt kinh ngạc.",
+        "prompt": "Comic slow-motion impact shot, cartoon train collision, plastic debris flying, exaggerated shocked faces, dust explosion, parody 3D style --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1: Slow menacing push-in on Big B's face, subtle shake for intimidation.",
+      "Shot 2: Low-angle tilt-up from rails to Big B towering over the victim.",
+      "Shot 3: Fast tracking follow on racing trains, whip-pan transitions.",
+      "Shot 4: 50% slow-motion impact with cartoon bounce, then speed-up reveal."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng cuộc đối đầu hài hước gay cấn giữa các đầu máy (Conflict-Open Unhinged Hook)",
+    "openingFormula": "Mở thẳng bằng thoại đối đầu: 'Just in time, Big B! Thanks, you can't escape that easily. Thanks again Big B. I got you Thomas!' — kéo khán giả vào trận chiến hài hước ngay giây đầu, không giới thiệu kênh.",
+    "pacingStructure": "[0-15s] Hook đối đầu thoại nhanh -> [15-45s] Bối cảnh trận chiến + Big B lộ mặt -> [45s-hết] Chuỗi 3-5 màn chơi khăm leo thang (mỗi 60-90s 1 plot twist) -> [Kết thúc] Lật kèo bất ngờ + CTA đăng ký",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% cốt truyện parody gốc + 30% châm biếm meme mới, chia 3-5 Part (600-900 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional parody scriptwriter specializing in unhinged animated shorts and dark-comedy children's-show parodies (style of Landon's Animation Wheelhouse and unhinged Thomas & Friends memes).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Fast-paced, sarcastic, deadpan dark humor, rapid-fire dialogue, escalating absurdity, comedic violence (cartoonish, never gory), Gen Z meme references. Keep 70% of the original parody storyline; add 30% new comedic escalations, meme-worthy punchlines, and unexpected plot twists.\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 3-5 parts (for a 2-8 minute animated short).\n   - Each part should be 600-900 words, written in continuous natural dialogue with [Action Notes] for the 3D animator, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: Big B Meets D-Light | Thomas UNHINGED Shorts (i8tgIoF_b70 - 5.6M views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "i8tgIoF_b70",
+    "scriptRefTitle": "Big B Meets D-Light | Thomas UNHINGED Shorts (5.6M views)",
+    "voiceSampleVideoNote": "Voice sample extracted from ZGHSG9J2ZL4 for optimal voice quality; script blueprint references i8tgIoF_b70 (highest-traffic video, 5.6M views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "[Nhân Vật 1] Meets [Nhân Vật 2] | [Hành Động Unhinged] | Thomas UNHINGED Shorts",
+    "thumbnailComposition": "Khuôn mặt Big B giận dữ chiếm 65% khung bên phải; Đầu máy nhỏ run rẩy góc trái; Text ngắn 2-3 từ màu Đỏ (#EF4444) viền đen dày.",
+    "thumbnailText": "UNHINGED! 💥 / TOO FAR! 🚂 / NOT AGAIN! 😱",
+    "cleanThumbnailPrompt": "High-contrast 3D cartoon YouTube thumbnail, enraged anthropomorphic train engine face dominating the right 65% of frame, small terrified train engine on the left, gritty dark railway yard, dramatic rim lighting, bold empty space for text, parody animation style, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "Big B Meets D-Light | Thomas UNHINGED Shorts",
+      "Big B Meets Angélique Magnifique | Thomas UNHINGED Shorts",
+      "Big B Has Had ENOUGH | Thomas UNHINGED Shorts"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "h2dev-hoat-hinh (Pipeline Hoạt Hình AI 5 Bước Story-to-Animation - biến thể Unhinged Parody)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
+    "repoPath": "pipelines/hoat-hinh-ai/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Daniel / Antoni - giọng nam châm biếm sắc sảo, $1.2/video)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output)",
+      "motion": "Google Veo 3.1 / Kling 3.0 Omni (6-shot narrative)",
+      "assembly": "CapCut PC + DaVinci Resolve"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (Daniel / Antoni - châm biếm, deadpan)",
+    "videoTool": "Google Nano Banana 2 & Pro (Stills đầu máy parody) -> Google Flow Veo 3.1 / Kling 3.0 (motion châm biếm) -> Hậu kỳ CapCut PC",
+    "bgmSoundtrack": "Epic Orchestral Parody BGM pha lẫn kèn cartoon hài hước (ducking -18dB dưới giọng đọc)",
+    "soundEffects": "Train whistle cartoon, comedic boing, dramatic vine boom, record scratch, crunch impact"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Mỹ (MKT Datacenter 2) + Trình duyệt chống phát hiện + Gmail ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube US, gắn Logo/Banner đầu máy châm biếm, dán trọn bộ 50 tags SEO có sẵn, ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Dùng Master Script Prompt -> Thu âm ElevenLabs Daniel/Antoni -> Dựng chuỗi 3D parody trên CapCut (mỗi video 2-8 phút)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức 'Meets' -> Đăng Unlisted 2 giờ quét bản quyền -> Hẹn giờ công khai giờ vàng US (20h-23h EST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

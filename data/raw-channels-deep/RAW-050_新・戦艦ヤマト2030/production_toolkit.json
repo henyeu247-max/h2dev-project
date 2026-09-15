@@ -1,0 +1,123 @@
+{
+  "channelId": "UCe2g4U6IBskkdy7MEQQfysw",
+  "rawId": "RAW-050",
+  "channelTitle": "新・戦艦ヤマト2030",
+  "editorialNiche": "Trẻ em / hoạt hình / IP",
+  "targetMarket": {
+    "primaryRegion": "JP (Tiếng Nhật) - fan anime chiến tranh viễn tưởng",
+    "audienceProfile": "Fan anime Nhật Bản trung niên (25-60 tuổi) mê Space Battleship Yamato, chiến tranh hải quân viễn tưởng, chủ đề AI chiến tranh; khán giả trung thành xem theo tập",
+    "viewingHabit": "Xem tập ngắn 1-5 phút hoặc tổng tập 1 giờ; theo dõi đều đặn hằng ngày; thích bình luận phân tích diễn biến",
+    "emotionalCore": "Tự hào dân tộc, hồi hộp trước diễn biến chiến trận, cảm xúc bi tráng khi chiến hạm hy sinh"
+  },
+  "visualDirective": {
+    "styleShort": "High-octane Japanese anime sci-fi naval mecha style (the audience is JP military sci-fi anime fans, epic space battleships, dramatic fleet combat, cel-shaded anime aesthetics)",
+    "mascot": "Chiến Hạm Yamato 2030 (siêu chiến hạm chủ lực với pháo sóng chính)",
+    "cameraLighting": "Epic cinematic anime lighting, dramatic sunset backlight on warships, explosive muzzle flashes, lens flares, dynamic camera sweeps across the fleet",
+    "style": "High-quality Japanese anime sci-fi style, cel-shaded mecha warship designs, dramatic fleet combat scenes, space/naval battle aesthetics, epic scale, dynamic action cuts, emotional character moments, retro-future 1970s Yamato homage blended with modern digital animation",
+    "negativePrompt": "no live-action, no chibi comedic style, no low-quality flash animation, no bright children's cartoon palette, no modern real-world military footage",
+    "masterVisualPrompt": "{{STYLE_SHORT}}: High-octane Japanese anime sci-fi naval mecha style (JP military sci-fi anime fans, epic space battleships, dramatic fleet combat, cel-shaded)\n{{STYLE}}: High-quality Japanese anime sci-fi, cel-shaded mecha warship designs, dramatic fleet combat, epic scale, dynamic action cuts, retro-future 1970s Yamato homage\n{{MASCOT}}: Chiến Hạm Yamato 2030\nScene Action: The massive Yamato 2030 battleship cuts through stormy seas at sunset, wave-motion cannon charging with blue glow, enemy fleet silhouettes on the horizon, epic anime composition, dramatic backlight --ar 16:9",
+    "multiAngleArchetypes": [
+      {
+        "shotType": "Góc 1: Yamato Phóng Sóng Xung Kích",
+        "description": "Pháo sóng chính Yamato nạp năng lượng phát sáng xanh, bắn xuyên qua hạm đội địch.",
+        "prompt": "Epic anime shot of Yamato battleship firing its wave-motion cannon, blue energy glow, shockwave rippling the sea, enemy ships exploding in distance, dramatic backlight --ar 16:9"
+      },
+      {
+        "shotType": "Góc 2: Hạm Đội Đối Đầu",
+        "description": "Đại cảnh hai hạm đội đối đầu trên biển động, màn đêm pháo kích sáng rực.",
+        "prompt": "Wide anime shot of two fleets facing off on stormy seas at night, tracer fire and explosions illuminating the darkness, epic naval battle scale --ar 16:9"
+      },
+      {
+        "shotType": "Góc 3: Boong Tàu Chỉ Huy",
+        "description": "Chỉ huy trên boong tàu nhìn về phía chân trời, gió biển thổi mạnh, quyết tâm.",
+        "prompt": "Dramatic anime close-up of a captain on the Yamato deck looking at the horizon, wind-blown coat, determined eyes, sunset backlight, warship behind --ar 16:9"
+      },
+      {
+        "shotType": "Góc 4: AI Địch Hiện Hình",
+        "description": "Thực thể AI chiến tranh hiện ra trên màn hình radar khổng lồ, cảnh báo đỏ nhấp nháy.",
+        "prompt": "Unsettling anime shot of a war AI entity emerging on a giant radar screen, red alert lights flashing, crew in panic, dark control room, sci-fi tension --ar 16:9"
+      }
+    ],
+    "cameraMotionSOP": [
+      "Shot 1: Slow dramatic push-in on the charging wave-motion cannon, then rapid cut on firing.",
+      "Shot 2: Sweeping orbital crane shot across the two fleets, speed ramps on explosions.",
+      "Shot 3: Steady medium close-up on the captain, subtle handheld emotion shake.",
+      "Shot 4: Slow dolly into the radar screen with flickering red light, glitch cut."
+    ]
+  },
+  "scriptBlueprint": {
+    "hookArchetype": "Mở màn bằng cảnh báo chiến tranh + mệnh lệnh khẩn (War Alert Hook)",
+    "openingFormula": "Mở bằng mệnh lệnh khẩn cấp kiểu anime: cảnh báo radar '敵艦隊接近！迎撃態勢に入れ！' (Hạm đội địch tiếp cận! Vào tư thế đón đánh!) kèm tiếng còi báo động — khán giả Nhật nhận diện ngay không khí chiến tranh viễn tưởng.",
+    "pacingStructure": "[0-15s] Hook cảnh báo chiến tranh + mệnh lệnh -> [15-45s] Triển khai hạm đội + bối cảnh tình hình -> [45s-hết] Trận hải chiến leo thang: 3-4 giai đoạn (mỗi 90s 1 bước ngoặt) -> [Kết thúc] Yamato tung đòn quyết định + teaser tập sau",
+    "masterScriptPromptShort": "Prompt chuẩn giữ 70% cốt truyện gốc + 30% phát triển tình tiết mới, chia 3-6 Part (400-700 từ/Part), điều khiển bằng lệnh 'CONTINUE' và dừng bằng 'Stop' theo chuẩn North Effect.",
+    "masterScriptPrompt": "You are a professional Japanese anime scriptwriter specializing in military sci-fi naval battles and epic space warship narratives (style of 新・戦艦ヤマト2030 and Space Battleship Yamato).\n\nI will provide you with [the full original transcript from a competitor's video].\nYour task:\n\n1. Rewrite & Restructure:\n   - Keep 70% of the original script to preserve the storyline, factual accuracy, and core structure.\n   - Add 30% new content: creative expansion, context, expert commentary, or contrasting angles using grounded research.\n   - Writing style: Epic, dramatic, honor-driven, Japanese anime dialogue conventions, tactical tension, emotional weight on sacrifice and courage. Keep 70% of the original episode storyline; add 30% new tactical developments, character moments, and cliffhanger escalation.\n\n2. Technical Requirements:\n   - Total length depends on the original video script provided.\n   - Divide the script into 3-6 parts (for a 1-5 minute episode or compilation segment).\n   - Each part should be 400-700 words, written in continuous narrative with [Action Notes] for the anime animator, written in continuous narrative (no subheadings inside, ready for voiceover).\n   - Title each part as: Part n (n = sequence number).\n\n3. Workflow Instructions:\n   - For every command \"CONTINUE\" from me:\n     - You must expand only the next part according to the sequence.\n     - Do not skip ahead.\n   - At the end of each part, write \"Stop\" so I can issue the \"CONTINUE\" command.\n   - After the final part is completed, you must add \"Script Completed\" at the very end.\n\n---\n📌 How to Use:\n- Step 1: I will paste the competitor's full transcript after this prompt.\n- Step 2: You will start rewriting Part 1 according to the rules above.\n- Step 3: I will type \"CONTINUE\" to move forward part by part until the entire script is finished.\n\n* Competitor's Reference Video: 【大総集編 第1弾／約1時間】新・戦艦ヤマト2030　1話～58話 (26CD8GRhRrs - 580K views)\n* Here is the competitor's transcript:\n[PASTE TRANSCRIPT FROM THE BUTTON '📜 Kịch Bản Gốc' HERE]",
+    "northEffectSopPath": "docs/NOI-BO/prompt/north-effect.md",
+    "scriptRefVid": "26CD8GRhRrs",
+    "scriptRefTitle": "【大総集編 第1弾／約1時間】新・戦艦ヤマト2030　1話～58話　東京決戦・中国決戦・AIとの戦いなど (580K views)",
+    "voiceSampleVideoNote": "Voice sample extracted from j9DgLk3S4wo for optimal voice quality; script blueprint references 26CD8GRhRrs (highest-traffic video, 580K views). Intentional split by purpose."
+  },
+  "packagingCTR": {
+    "titleFormula": "【キーワード】新・戦艦ヤマト2030 第[N]話【サブタイトル】",
+    "thumbnailComposition": "Yamato 2030 phóng pháo sóng chiếm 65% khung bên phải; Hạm đội địch + biển động nền; Text kanji 2-4 chữ màu Trắng (#F8FAFC) hoặc Xanh dương (#60A5FA) viền đen dày.",
+    "thumbnailText": "決戦！⚔ / AIの戦い🤖 / 第250話📺",
+    "cleanThumbnailPrompt": "Epic Japanese anime YouTube thumbnail, Yamato 2030 battleship firing its wave-motion cannon on the right 65% of frame, enemy fleet and stormy sea background, dramatic sunset backlight, cel-shaded anime style, clean space for kanji text, no text, no watermark --ar 16:9",
+    "exampleTitles": [
+      "【大総集編 第1弾／約1時間】新・戦艦ヤマト2030　1話～58話　東京決戦・中国決戦・AIとの戦いなど",
+      "「全部、話します」——なぜ漁師の証言は放送されない？｜新・戦艦ヤマト2030 第250話【1分版】",
+      "【最終決戦】新・戦艦ヤマト2030　第260話　東京決戦・AIとの最終戦"
+    ]
+  },
+  "productionStack": {
+    "matchingSkill": "h2dev-hoat-hinh (Pipeline Hoạt Hình AI - biến thể Anime Chiến Tranh)",
+    "sopDocPath": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
+    "repoPath": "pipelines/hoat-hinh-ai/README.md",
+    "tierSweetSpot": {
+      "name": "Lựa Chọn Tối Ưu & Tiết Kiệm Nhất (Sweet Spot H2DEV - ~$0.10/video)",
+      "script": "Gemini 3.8 Flash (Cửa sổ 1M tokens, $0.00 trên Google AI Studio)",
+      "voice": "ElevenLabs v3 (Giọng Nhật: Yamato Captain - nam trung niên trầm, $1.2/video)",
+      "stills": "Google Nano Banana 2 & Pro (Gemini 3 Pro Image, tích hợp Google Search Grounding)",
+      "motion": "Google Flow (Veo 3.1) + CapCut Ken Burns 60fps",
+      "assembly": "CapCut PC (Auto-captions burned-in, ducking BGM -20dB, export 4K 60fps)"
+    },
+    "tierStudio": {
+      "name": "Lựa Chọn Đỉnh Cao (Studio Tier - Hollywood / Max AVD)",
+      "script": "Claude Sonnet 4.6 / GPT-6 Astra (1.1M context)",
+      "voice": "ElevenLabs v3 (Multi-Speaker Text-to-Dialogue, Emotion Sliders)",
+      "stills": "FLUX.2 Pro / Google Nano Banana Pro (4K output)",
+      "motion": "Google Veo 3.1 / Kling 3.0 Omni (6-shot narrative)",
+      "assembly": "CapCut PC + DaVinci Resolve"
+    },
+    "scriptTool": "Gemini 3.8 Flash / Claude Sonnet 4.6 (North Effect 70/30 Part-by-Part)",
+    "voiceTool": "ElevenLabs v3 (JP Multilingual - trầm, bi tráng, thuyết minh chiến tranh)",
+    "videoTool": "Google Nano Banana 2 & Pro (Stills anime chiến hạm) -> Google Flow Veo 3.1 / Kling 3.0 (motion hải chiến) -> Hậu kỳ CapCut PC",
+    "bgmSoundtrack": "Epic Symphonic War BGM (kèn đồng + trống taiko, ducking -20dB dưới giọng đọc)",
+    "soundEffects": "Còi báo động, pháo kích, sóng biển, tiếng động cơ tàu, chuông cảnh báo radar"
+  },
+  "launchpad5Steps": [
+    {
+      "step": 1,
+      "title": "Môi Trường Sạch & Định Vị",
+      "detail": "Proxy IPv4 Nhật Bản sạch (quan trọng: phải là IP Nhật để định vị thị trường JP) + Trình duyệt chống phát hiện + Gmail JP ngâm 2 ngày bật 2FA."
+    },
+    {
+      "step": 2,
+      "title": "Thiết Lập Kênh & Bộ Từ Khóa",
+      "detail": "Tạo kênh YouTube Nhật Bản, gắn Logo/Banner Yamato anime, dán trọn bộ 50 tags SEO tiếng Nhật có sẵn, ngâm kênh 3-4 ngày."
+    },
+    {
+      "step": 3,
+      "title": "Sản Xuất Song Song Batch 5-10 Video",
+      "detail": "Dùng Master Script Prompt (tiếng Nhật) -> Thu âm ElevenLabs giọng Nhật -> Dựng chuỗi anime trên CapCut (mỗi tập 1-5 phút hoặc tổng tập 1 giờ)."
+    },
+    {
+      "step": 4,
+      "title": "Đóng Gói CTR & Upload Chuẩn Zoom",
+      "detail": "Thumbnail 3 điểm vàng + Title công thức kanji -> Đăng Unlisted 2 giờ -> Hẹn giờ công khai giờ vàng JP (20h-23h JST)."
+    },
+    {
+      "step": 5,
+      "title": "Seeding & Bật Kiếm Tiền YPP",
+      "detail": "Bật 2 tab xem trọn video + ghim comment -> Đạt 1.000 sub & 4.000 giờ xem -> Bật YPP & nối Google AdSense."
+    }
+  ]
+}

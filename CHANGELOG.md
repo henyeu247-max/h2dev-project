@@ -1,3 +1,19 @@
+## 2026-09-14 — Mở Rộng Bộ Gợi Ý Thông Minh Cho Tab Video Bài Học & Tính Năng Tua Nhanh 1-Click
+
+- **Nâng cấp công cụ tìm kiếm Tab Video (136 Video bài học):**
+  - Mở rộng phạm vi tìm kiếm toàn diện: Không chỉ lọc `(title + sku)`, mà nay đã khớp **toàn bộ 19 trường dữ liệu của bài giảng**: chủ đề thực tế (`actual_topic`), 5 mấu chốt cốt lõi (`key_takeaways`), quy trình dựng B-roll (`edit_sop`), cạm bẫy bản quyền (`avoid_flags`), kênh đối thủ mổ xẻ (`channels`), và **toàn bộ tiêu đề mốc tua thời gian (`key_timestamps`)**.
+  - Cho phép tìm nhanh mọi kỹ thuật thực chiến: gõ *"B-roll bàn tay"*, *"Thầy Pháp Hòa"*, *"chống quét AI"*, *"xây kênh"*, *"Simbot2"*... đều lọc ra chính xác bài giảng liên quan.
+- **Xây dựng Dropdown Gợi Ý Thời Gian Thực Cho Tab Video (`#video-search-suggestions`):**
+  - Hiển thị bảng gợi ý nổi bật ngay khi gõ từ 1 ký tự:
+    * ⏱️ **Mốc Tua Nhanh**: Hiển thị chính xác số phút (ví dụ: `02:14 — Kỹ thuật tự quay bàn tay né quét AI`) kèm nút bấm trực tiếp `[▶ Tua đến 02:14]`.
+    * 🎓 **Bài Giảng Khớp Chủ Đề**: Tiêu đề bài học, mã SKU, thời lượng.
+    * 📌 **Mấu Chốt Thực Chiến (Takeaways)**: Tóm tắt bài học tác giả giảng dạy.
+    * ⚠️ **Cảnh Báo YPP**: Nhận diện nhanh các cạm bẫy chính sách cần tránh.
+    * 📺 **Kênh Đối Thủ Được Mổ Xẻ**: Khớp kênh mẫu xuất hiện trong bài giảng.
+- **Tính năng Tua Nhanh Tự Động Trong `player.html` qua URL (`&t=seconds`):**
+  - Bổ sung cơ chế tự động đọc tham số `&t=` trong `player.html`: Khi người dùng bấm nút `[▶ Tua đến 02:14]`, trình phát video tự động mở, nhảy đúng giây thứ 134 và phát ngay lập tức.
+- **Kiểm định nghiệm thu:** Test Playwright bắt trúng mốc tua `02:14` của `VIDEO-73d98a`, link `player.html?sku=VIDEO-73d98a&t=134` chuẩn xác, `validate-project.js` PASS 100%, E2E PASS 132/132 checks.
+
 ## 2026-09-14 — Khắc phục Triệt Để Lỗi Mất Focus Ô Tìm Kiếm & Nâng Cấp Gợi Ý Thông Minh Match Video Raw
 
 - **Khắc phục triệt để lỗi mất focus khi gõ chữ (Caret & Focus Loss Bug):**

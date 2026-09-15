@@ -624,12 +624,199 @@
   </div>`;
     }
 
+    function buildVideoSearchSuggestions(query) {
+      if (!query || !query.trim()) return [];
+      const q = query.trim().toLowerCase();
+      const videos = window._allVideos || [];
+      const insights = window._videoInsights || {};
+      const suggestions = [];
+      const seenKeys = new Set();
+
+      for (const v of videos) {
+        const sku = v.sku;
+        const ins = insights[sku] || {};
+        const title = v.title || '';
+        const actualTopic = ins.actual_topic || '';
+        const niche = v.contentNiche || v.niche || ins.niche_primary || '';
+
+        // 1. Match Video Title / SKU / Actual Topic
+        if (title.toLowerCase().includes(q) || sku.toLowerCase().includes(q) || actualTopic.toLowerCase().includes(q)) {
+          const vKey = 'vid:' + sku;
+          if (!seenKeys.has(vKey)) {
+            seenKeys.add(vKey);
+            suggestions.push({
+              type: 'lesson',
+              icon: '🎓',
+              badge: sku,
+              badgeColor: 'bg-brand-950/60 text-brand-300 border-brand-800/60',
+              title: title,
+              sub: `${sku} · ${actualTopic || niche} · ${v.duration || ''}`,
+              searchTerm: title,
+              sku: sku,
+              directUrl: `/lotrinh/${encodeURIComponent(sku)}`,
+              btnLabel: 'Xem bài ↗',
+              priority: sku.toLowerCase() === q || title.toLowerCase().startsWith(q) ? 100 : 85
+            });
+          }
+        }
+
+        // 2. Match Timestamps (Mốc tua nhanh)
+        const timestamps = ins.key_timestamps || [];
+        for (const ts of timestamps) {
+          const tsTitle = ts.label || ts.title || '';
+          const tsTime = ts.time || '';
+          if (tsTitle.toLowerCase().includes(q) || tsTime.includes(q)) {
+            const tsKey = 'ts:' + sku + ':' + tsTime;
+            if (!seenKeys.has(tsKey)) {
+              seenKeys.add(tsKey);
+              const sec = ts.seconds || 0;
+              suggestions.push({
+                type: 'timestamp',
+                icon: '⏱️',
+                badge: tsTime,
+                badgeColor: 'bg-sky-950/60 text-sky-300 border-sky-800/60',
+                title: `${tsTime} — ${tsTitle}`,
+                sub: `Bài học: ${title} (${sku})`,
+                searchTerm: tsTitle,
+                sku: sku,
+                directUrl: `/player.html?sku=${encodeURIComponent(sku)}&t=${sec}`,
+                btnLabel: `▶ Tua đến ${tsTime}`,
+                priority: 95
+              });
+            }
+          }
+        }
+
+        // 3. Match Key Takeaways & Edit SOP
+        const takeaways = ins.key_takeaways || [];
+        for (const tk of takeaways) {
+          if (tk.toLowerCase().includes(q)) {
+            const tkKey = 'tk:' + sku + ':' + tk.slice(0, 30);
+            if (!seenKeys.has(tkKey)) {
+              seenKeys.add(tkKey);
+              suggestions.push({
+                type: 'takeaway',
+                icon: '📌',
+                badge: 'Mấu Chốt',
+                badgeColor: 'bg-amber-950/60 text-amber-300 border-amber-800/60',
+                title: tk,
+                sub: `Bài học: ${title} (${sku})`,
+                searchTerm: tk.slice(0, 40),
+                sku: sku,
+                directUrl: `/lotrinh/${encodeURIComponent(sku)}`,
+                btnLabel: 'Xem bài ↗',
+                priority: 80
+              });
+            }
+          }
+        }
+
+        // 4. Match Avoid Flags
+        const avoidFlags = ins.avoid_flags || [];
+        for (const af of avoidFlags) {
+          if (af.toLowerCase().includes(q)) {
+            const afKey = 'af:' + sku + ':' + af.slice(0, 30);
+            if (!seenKeys.has(afKey)) {
+              seenKeys.add(afKey);
+              suggestions.push({
+                type: 'avoid',
+                icon: '⚠️',
+                badge: 'Cảnh Báo YPP',
+                badgeColor: 'bg-red-950/60 text-red-300 border-red-800/60',
+                title: af,
+                sub: `Cảnh báo YPP: ${title} (${sku})`,
+                searchTerm: af.slice(0, 40),
+                sku: sku,
+                directUrl: `/lotrinh/${encodeURIComponent(sku)}`,
+                btnLabel: 'Xem bài ↗',
+                priority: 75
+              });
+            }
+          }
+        }
+
+        // 5. Match Channels Mentioned
+        const chList = v.channels || [];
+        for (const ch of chList) {
+          if (ch.toLowerCase().includes(q)) {
+            const chKey = 'ch:' + sku + ':' + ch;
+            if (!seenKeys.has(chKey)) {
+              seenKeys.add(chKey);
+              suggestions.push({
+                type: 'channel',
+                icon: '📺',
+                badge: 'Kênh Mẫu',
+                badgeColor: 'bg-purple-950/60 text-purple-300 border-purple-800/60',
+                title: ch,
+                sub: `Được tác giả mổ xẻ trong bài: ${title} (${sku})`,
+                searchTerm: ch,
+                sku: sku,
+                directUrl: `/lotrinh/${encodeURIComponent(sku)}`,
+                btnLabel: 'Xem bài ↗',
+                priority: 70
+              });
+            }
+          }
+        }
+      }
+
+      return suggestions.sort((a, b) => b.priority - a.priority).slice(0, 8);
+    }
+
+    window.showVideoSearchSuggestions = function(inputVal) {
+      const box = document.getElementById('video-search-suggestions');
+      if (!box) return;
+      const q = (inputVal || '').trim();
+      if (!q) {
+        box.innerHTML = '';
+        box.classList.add('hidden');
+        return;
+      }
+
+      const items = buildVideoSearchSuggestions(q);
+      if (items.length === 0) {
+        box.innerHTML = `
+          <div class="p-3 text-xs text-gray-400 flex items-center justify-between">
+            <span>Không tìm thấy gợi ý bài học khớp với "<strong>${esc(q)}</strong>"</span>
+            <span class="text-[10px] text-gray-500 font-mono">Nhấn Enter để lọc</span>
+          </div>`;
+        box.classList.remove('hidden');
+        return;
+      }
+
+      box.innerHTML = `
+        <div class="px-3.5 py-2 bg-[#060910] text-[10.5px] font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
+          <span class="flex items-center gap-1.5"><span class="text-brand-400">⚡</span> Gợi ý bài học, mốc tua & kỹ thuật (${items.length})</span>
+          <span class="text-gray-500 font-normal">Nhấp để lọc hoặc tua ngay</span>
+        </div>
+        ${items.map((item, idx) => `
+          <div class="js-v-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-sku="${esc(item.sku || '')}" data-url="${esc(item.directUrl || '')}">
+            <div class="flex items-center gap-2.5 min-w-0">
+              <span class="text-base shrink-0">${item.icon}</span>
+              <div class="min-w-0">
+                <div class="text-xs font-bold text-white truncate group-hover:text-brand-300 transition-colors">${highlightQuery(item.title, q)}</div>
+                <div class="text-[11px] text-gray-400 truncate">${esc(item.sub)}</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+              <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded border ${item.badgeColor}">${esc(item.badge)}</span>
+              ${item.directUrl ? `<a href="${esc(item.directUrl)}" class="js-v-sug-jump text-[10px] bg-brand-600/80 hover:bg-brand-500 text-white font-bold px-2 py-0.5 rounded transition shadow" title="Mở trực tiếp bài học/mốc tua">${esc(item.btnLabel || 'Xem ↗')}</a>` : ''}
+            </div>
+          </div>
+        `).join('')}
+      `;
+      box.classList.remove('hidden');
+    };
+
     async function renderVideo() {
-      const [rawVideos, rawNx] = await Promise.all([
+      const [rawVideos, rawNx, rawInsights] = await Promise.all([
         loadJSON('data-tabs/videos.json'),
-        loadJSON('data-tabs/ngach-xanh.json').catch(() => null)
+        loadJSON('data-tabs/ngach-xanh.json').catch(() => null),
+        loadJSON('data/video_insights.json').catch(() => ({}))
       ]);
       const videos = Array.isArray(rawVideos) ? rawVideos : safeArray(rawVideos && rawVideos.videos);
+      window._allVideos = videos;
+      window._videoInsights = rawInsights || {};
       const macroToSkus = {};
       if (rawNx && Array.isArray(rawNx.ngachXanh)) {
         rawNx.ngachXanh.forEach(x => {
@@ -643,7 +830,22 @@
       const macroNiches = [...new Set(Object.values(NICHE_MAP))].sort();
       const markets = [...new Set(videos.flatMap(v => v.market || []))];
       let list = videos.filter(v => {
-        if (state.q && !(v.title + v.sku).toLowerCase().includes(state.q.toLowerCase())) return false;
+        const ins = (window._videoInsights && window._videoInsights[v.sku]) || {};
+        const fullSearchText = [
+          v.title || '',
+          v.sku || '',
+          v.niche || '',
+          v.contentNiche || '',
+          ins.actual_topic || '',
+          ...(ins.key_takeaways || []),
+          ...(ins.avoid_flags || []),
+          ...(ins.tools_mentioned || []),
+          (Array.isArray(ins.edit_sop) ? ins.edit_sop.join(' ') : (typeof ins.edit_sop === 'string' ? ins.edit_sop : (ins.edit_sop?.primary || '') + ' ' + ((ins.edit_sop?.additional || []).join(' ')))),
+          ...((ins.key_timestamps || []).map(t => (t.time || '') + ' ' + (t.title || ''))),
+          ...((v.channels || []))
+        ].join(' ').toLowerCase();
+
+        if (state.q && !fullSearchText.includes(state.q.toLowerCase())) return false;
         if (state.skuFilter) {
           const allow = new Set(String(state.skuFilter).split(',').map(s => s.trim().toLowerCase()).filter(Boolean));
           if (allow.size && !allow.has(String(v.sku || '').toLowerCase())) return false;
@@ -701,9 +903,13 @@
         { icon: ICONS.video, label: 'Đang hiện', value: list.length, sub: list.length === videos.length ? 'Không lọc' : 'Đang filter' }
       ])}
   <div class="flex flex-wrap gap-2.5 mb-3 items-center justify-between">
-    <div class="flex flex-wrap gap-2 items-center flex-1 min-w-0">
+    <div class="flex flex-wrap gap-2 items-center flex-1 min-w-0 relative">
       <label class="sr-only" for="fq">Tìm video</label>
- <input id="fq" aria-label="Tìm video" value="${esc(state.q)}" placeholder="Tìm theo tên video, SKU, ngách..." class="search-input-premium w-full sm:w-64 sm:flex-1 sm:min-w-0 sm:max-w-[340px]">
+      <div class="relative w-full sm:w-80 sm:flex-1 sm:min-w-0 sm:max-w-[440px]" id="video-search-wrap">
+        <input id="fq" aria-label="Tìm video bài học" value="${esc(state.q)}" autocomplete="off" placeholder="Tìm tên video, SKU, kỹ thuật (B-roll bàn tay, AI, Thầy Pháp Hòa...)" class="search-input-premium w-full min-w-0 pr-9">
+        ${state.q ? `<button type="button" id="btn-clear-video-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition z-10" title="Xóa tìm kiếm">✕</button>` : ''}
+        <div id="video-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 bg-[#0b0f19]/95 border border-[#334155] rounded-2xl shadow-2xl z-50 overflow-hidden backdrop-blur-xl max-h-[420px] overflow-y-auto divide-y divide-[#1e293b]/80"></div>
+      </div>
       <label class="sr-only" for="fniche">Lọc theo ngách</label>
       <select id="fniche" aria-label="Lọc theo ngách" class="search-input-premium text-xs font-semibold py-2">
         <option value="">Mọi ngách</option>
@@ -1972,6 +2178,10 @@
           if (state.tab === 'rawkenh' && window.showRawSearchSuggestions) {
             window.showRawSearchSuggestions(val);
           }
+          // Real-time live suggestions for video tab
+          if (state.tab === 'video' && window.showVideoSearchSuggestions) {
+            window.showVideoSearchSuggestions(val);
+          }
 
           clearTimeout(searchDebounceTimer);
           searchDebounceTimer = setTimeout(() => {
@@ -1983,13 +2193,19 @@
           if (state.tab === 'rawkenh' && fq.value.trim() && window.showRawSearchSuggestions) {
             window.showRawSearchSuggestions(fq.value);
           }
+          if (state.tab === 'video' && fq.value.trim() && window.showVideoSearchSuggestions) {
+            window.showVideoSearchSuggestions(fq.value);
+          }
         };
 
         let activeSugIdx = -1;
         fq.onkeydown = (e) => {
-          const box = document.getElementById('raw-search-suggestions');
+          const isVideoTab = (state.tab === 'video');
+          const boxId = isVideoTab ? 'video-search-suggestions' : 'raw-search-suggestions';
+          const rowClass = isVideoTab ? '.js-v-sug-row' : '.js-sug-row';
+          const box = document.getElementById(boxId);
           if (!box || box.classList.contains('hidden')) return;
-          const rows = box.querySelectorAll('.js-sug-row');
+          const rows = box.querySelectorAll(rowClass);
           if (!rows.length) return;
 
           if (e.key === 'ArrowDown') {
@@ -2026,6 +2242,39 @@
         };
       }
 
+      const btnClearVideoQ = document.getElementById('btn-clear-video-q');
+      if (btnClearVideoQ) {
+        btnClearVideoQ.onclick = (e) => {
+          e.stopPropagation();
+          state.q = '';
+          const fqEl = document.getElementById('fq');
+          if (fqEl) { fqEl.value = ''; fqEl.focus(); }
+          const box = document.getElementById('video-search-suggestions');
+          if (box) box.classList.add('hidden');
+          render();
+        };
+      }
+
+      const vSugBox = document.getElementById('video-search-suggestions');
+      if (vSugBox) {
+        vSugBox.onclick = (e) => {
+          const jumpBtn = e.target.closest('.js-v-sug-jump');
+          if (jumpBtn) {
+            // Let the direct link navigate normally
+            return;
+          }
+
+          const row = e.target.closest('.js-v-sug-row');
+          if (row) {
+            e.stopPropagation();
+            const term = row.getAttribute('data-term');
+            vSugBox.classList.add('hidden');
+            state.q = term;
+            render();
+          }
+        };
+      }
+
       const sugBox = document.getElementById('raw-search-suggestions');
       if (sugBox) {
         sugBox.onclick = (e) => {
@@ -2055,14 +2304,18 @@
         };
       }
 
-      // Outside click listener to dismiss suggestion dropdown
-      if (!window._rawSearchOutsideBound) {
-        window._rawSearchOutsideBound = true;
+      // Outside click listener to dismiss suggestion dropdowns
+      if (!window._searchOutsideBound) {
+        window._searchOutsideBound = true;
         document.addEventListener('click', (e) => {
-          const box = document.getElementById('raw-search-suggestions');
+          const rawBox = document.getElementById('raw-search-suggestions');
+          const vidBox = document.getElementById('video-search-suggestions');
           const fqEl = document.getElementById('fq');
-          if (box && !box.contains(e.target) && e.target !== fqEl) {
-            box.classList.add('hidden');
+          if (rawBox && !rawBox.contains(e.target) && e.target !== fqEl) {
+            rawBox.classList.add('hidden');
+          }
+          if (vidBox && !vidBox.contains(e.target) && e.target !== fqEl) {
+            vidBox.classList.add('hidden');
           }
         });
       }

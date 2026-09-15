@@ -456,6 +456,13 @@ window.addEventListener('keydown', (e)=>{
     const isWebm = /\.webm(\?|$)/i.test(playbackSource);
     if (playbackSource) {
       pv.src = playbackSource;
+      const initialSeek = parseFloat(params.get('t'));
+      if (Number.isFinite(initialSeek) && initialSeek > 0) {
+        pv.addEventListener('loadedmetadata', () => {
+          pv.currentTime = initialSeek;
+          pv.play().catch(() => {});
+        }, { once: true });
+      }
       pv.onerror = () => {
         if (playbackSource.endsWith('.mp4')) {
           pv.src = playbackSource.replace(/\.mp4$/, '.webm');

@@ -2780,7 +2780,7 @@
                 const openGaps = gapEntries.filter(([, g]) => g && g.status && !g.status.startsWith('COMPLETED') && !g.status.startsWith('REFRESHED') && !g.status.startsWith('PROXY_ACCEPTED'));
                 const allResolved = openGaps.length === 0;
                 const liveEntry = (gapEntries.find(([k]) => k === 'liveSnapshotRefreshed') || [])[1];
-                const lastAuditLabel = liveEntry && liveEntry.status && liveEntry.status.includes('2026_09_14') ? '14/09/2026' : 'xem chi tiết';
+                const lastAuditLabel = liveEntry && liveEntry.status && (liveEntry.status.includes('2026_09_15') ? '15/09/2026' : liveEntry.status.includes('2026_09_14') ? '14/09/2026' : 'xem chi tiết');
                 if (allResolved) {
                   return `
               <div id="raw-data-gaps" style="background:rgba(16,185,129,0.06); border:1px solid rgba(16,185,129,0.28); border-radius:0.875rem; padding:0.65rem 1rem;">

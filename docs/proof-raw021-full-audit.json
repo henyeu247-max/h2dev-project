@@ -32,6 +32,11 @@
       "detail": ""
     },
     {
+      "name": "Modal contains: Subscribers (91.5K+)",
+      "pass": true,
+      "detail": "subscribers"
+    },
+    {
       "name": "Data Gaps block present",
       "pass": true,
       "detail": "data gaps block"
@@ -75,11 +80,6 @@
       "name": "Modal contains: @HiddenPlanetDocs",
       "pass": true,
       "detail": "@HiddenPlanetDocs"
-    },
-    {
-      "name": "Modal contains: 91.100",
-      "pass": true,
-      "detail": "91.100"
     },
     {
       "name": "Modal contains: $800 – $2.400/tháng",
@@ -155,16 +155,6 @@
       "name": "Modal contains: Độ tin cậy: MEDIUM",
       "pass": true,
       "detail": "Độ tin cậy: MEDIUM"
-    },
-    {
-      "name": "Modal contains: 10/10 video",
-      "pass": true,
-      "detail": "10/10 video"
-    },
-    {
-      "name": "Modal contains: transcript đầy đủ 10/10",
-      "pass": true,
-      "detail": "transcript đầy đủ 10/10"
     },
     {
       "name": "Modal contains: Hồ sơ Benchmark đối thủ đã khóa",
@@ -307,12 +297,12 @@
       "detail": "len=176"
     },
     {
-      "name": "Top video transcript buttons count 10",
+      "name": "Top video transcript buttons count >= 10",
       "pass": true,
-      "detail": "count=10"
+      "detail": "count=11"
     },
     {
-      "name": "Transcript modal opens 1/10 Q1tXposwAAo",
+      "name": "Transcript modal opens 1/11 Q1tXposwAAo",
       "pass": true,
       "detail": "textLen=70725"
     },
@@ -342,7 +332,7 @@
       "detail": "len=74195"
     },
     {
-      "name": "Transcript modal opens 2/10 MW0FKI4jezU",
+      "name": "Transcript modal opens 2/11 MW0FKI4jezU",
       "pass": true,
       "detail": "textLen=78281"
     },
@@ -372,7 +362,37 @@
       "detail": "len=82402"
     },
     {
-      "name": "Transcript modal opens 3/10 p9013S0rOuE",
+      "name": "Transcript modal opens 3/11 r4bJvj--GVw",
+      "pass": true,
+      "detail": "textLen=33639"
+    },
+    {
+      "name": "Transcript r4bJvj--GVw has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript r4bJvj--GVw has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript r4bJvj--GVw has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript r4bJvj--GVw has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript r4bJvj--GVw active tab copy non-empty",
+      "pass": true,
+      "detail": "len=36036"
+    },
+    {
+      "name": "Transcript modal opens 4/11 p9013S0rOuE",
       "pass": true,
       "detail": "textLen=84598"
     },
@@ -402,7 +422,7 @@
       "detail": "len=88966"
     },
     {
-      "name": "Transcript modal opens 4/10 3wzZyaxhWmw",
+      "name": "Transcript modal opens 5/11 3wzZyaxhWmw",
       "pass": true,
       "detail": "textLen=75645"
     },
@@ -432,7 +452,7 @@
       "detail": "len=79553"
     },
     {
-      "name": "Transcript modal opens 5/10 Hz-8h0TK8wY",
+      "name": "Transcript modal opens 6/11 Hz-8h0TK8wY",
       "pass": true,
       "detail": "textLen=67839"
     },
@@ -462,37 +482,7 @@
       "detail": "len=71509"
     },
     {
-      "name": "Transcript modal opens 6/10 ieq4c-4vGh0",
-      "pass": true,
-      "detail": "textLen=84314"
-    },
-    {
-      "name": "Transcript ieq4c-4vGh0 has tab Song ngữ 1:1",
-      "pass": true,
-      "detail": "Song ngữ 1:1"
-    },
-    {
-      "name": "Transcript ieq4c-4vGh0 has tab Tiếng Việt",
-      "pass": true,
-      "detail": "Tiếng Việt"
-    },
-    {
-      "name": "Transcript ieq4c-4vGh0 has tab Tiếng Gốc",
-      "pass": true,
-      "detail": "Tiếng Gốc"
-    },
-    {
-      "name": "Transcript ieq4c-4vGh0 has tab Kịch bản AI",
-      "pass": true,
-      "detail": "Kịch bản AI"
-    },
-    {
-      "name": "Transcript ieq4c-4vGh0 active tab copy non-empty",
-      "pass": true,
-      "detail": "len=89004"
-    },
-    {
-      "name": "Transcript modal opens 7/10 Vj7sOGyCAoQ",
+      "name": "Transcript modal opens 7/11 Vj7sOGyCAoQ",
       "pass": true,
       "detail": "textLen=67556"
     },
@@ -522,7 +512,37 @@
       "detail": "len=71358"
     },
     {
-      "name": "Transcript modal opens 8/10 gQOQJ49LsfE",
+      "name": "Transcript modal opens 8/11 ieq4c-4vGh0",
+      "pass": true,
+      "detail": "textLen=84314"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 has tab Song ngữ 1:1",
+      "pass": true,
+      "detail": "Song ngữ 1:1"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 has tab Tiếng Việt",
+      "pass": true,
+      "detail": "Tiếng Việt"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 has tab Tiếng Gốc",
+      "pass": true,
+      "detail": "Tiếng Gốc"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 has tab Kịch bản AI",
+      "pass": true,
+      "detail": "Kịch bản AI"
+    },
+    {
+      "name": "Transcript ieq4c-4vGh0 active tab copy non-empty",
+      "pass": true,
+      "detail": "len=89004"
+    },
+    {
+      "name": "Transcript modal opens 9/11 gQOQJ49LsfE",
       "pass": true,
       "detail": "textLen=65751"
     },
@@ -552,7 +572,7 @@
       "detail": "len=69087"
     },
     {
-      "name": "Transcript modal opens 9/10 TvgyAd8K1PQ",
+      "name": "Transcript modal opens 10/11 TvgyAd8K1PQ",
       "pass": true,
       "detail": "textLen=60802"
     },
@@ -582,7 +602,7 @@
       "detail": "len=64113"
     },
     {
-      "name": "Transcript modal opens 10/10 cDFrCFvJU-k",
+      "name": "Transcript modal opens 11/11 cDFrCFvJU-k",
       "pass": true,
       "detail": "textLen=69903"
     },
@@ -612,9 +632,9 @@
       "detail": "len=73910"
     },
     {
-      "name": "Transcript opened unique 10 videos",
+      "name": "Transcript opened unique 11 videos",
       "pass": true,
-      "detail": "Q1tXposwAAo,MW0FKI4jezU,p9013S0rOuE,3wzZyaxhWmw,Hz-8h0TK8wY,ieq4c-4vGh0,Vj7sOGyCAoQ,gQOQJ49LsfE,TvgyAd8K1PQ,cDFrCFvJU-k"
+      "detail": "Q1tXposwAAo,MW0FKI4jezU,r4bJvj--GVw,p9013S0rOuE,3wzZyaxhWmw,Hz-8h0TK8wY,Vj7sOGyCAoQ,ieq4c-4vGh0,gQOQJ49LsfE,TvgyAd8K1PQ,cDFrCFvJU-k"
     },
     {
       "name": "Link exists: SOP Skill",

@@ -358,8 +358,6 @@ code { font-size: 11px; color: var(--fg-2); }
  .btn:focus-visible, .btn-primary:focus-visible, a:focus-visible, button:focus-visible, .btn:focus, a:focus, button:focus { outline: none; box-shadow: var(--focus-ring); }
  .tab-btn:focus { outline: none; box-shadow: var(--focus-ring); }
 .card, .studio-card, .bento-card, .interactive-card, .niche-card {
-  contain: layout style;
-
   position: relative;
   min-width: 0;
   max-width: 100%;
@@ -369,22 +367,31 @@ code { font-size: 11px; color: var(--fg-2); }
   border-radius: var(--r-lg);
 }
 
+/* Card hosting a search filter bar with open floating dropdown must never be trapped by CSS containment */
+.card.overflow-visible, .search-filter-card, .overflow-visible {
+  contain: none !important;
+  position: relative !important;
+  z-index: 60 !important;
+}
+
 /* Smart Search Suggestions Dropdown Styling (Solid Opaque Frosted Glass - Zero Bleed-through) */
 #video-search-suggestions, #raw-search-suggestions {
   background-color: #0b0f19 !important;
   background: rgba(11, 15, 25, 0.98) !important;
-  backdrop-filter: blur(24px) !important;
-  -webkit-backdrop-filter: blur(24px) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
   border: 1px solid #334155 !important;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.08) !important;
-  z-index: 1000 !important;
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.98), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+  z-index: 9999 !important;
 }
 .js-v-sug-row, .js-sug-row {
   background-color: #0b0f19 !important;
+  background: rgba(11, 15, 25, 0.98) !important;
   transition: background-color 0.15s ease !important;
 }
 .js-v-sug-row:hover, .js-sug-row:hover {
   background-color: #1e293b !important;
+  background: #1e293b !important;
 }
 .card::after, .interactive-card::after, .bento-card::after, .niche-card::after {
   content: "";

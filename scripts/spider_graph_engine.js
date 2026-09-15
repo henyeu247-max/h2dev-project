@@ -271,12 +271,30 @@ async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
 
   // Deep Enrichment of Discovered Channels via RSS & Outlier Calculation
   const enrichedChannels = [];
+  const allRssVideos = []; // FIX: collect actual video metadata for videos table
   const channelsList = Array.from(channelsMap.values()).slice(0, 15); // Enrich top 15 candidates
 
   for (const c of channelsList) {
     await sleepMs(200);
     const vids = await getChannelRssVideos(c.channelId);
     if (vids.length === 0) continue;
+
+    // FIX: collect RSS videos with channel_id for videos table ingestion
+    for (const v of vids) {
+      if (v.videoId) {
+        allRssVideos.push({
+          videoId: v.videoId,
+          channelId: c.channelId,
+          title: v.title || '',
+          publishedAt: v.publishedEpoch || 0,
+          durationSeconds: 0,
+          views: v.views || 0,
+          likes: 0,
+          comments: 0,
+          vphRealtime: v.vph || 0,
+        });
+      }
+    }
 
     const outlierReport = calculateTrimmedOutliers(vids);
     const titles = vids.map((v) => v.title);
@@ -322,7 +340,7 @@ async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
   );
 
   // Persist to local SQLite intelligence.db
-  saveToDatabase({ edges, enrichedChannels, seedVideoId });
+  saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId });
 
   return {
     seedVideoId,
@@ -339,7 +357,7 @@ async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
 }
 
 // Persist to SQLite intelligence.db
-function saveToDatabase({ edges, enrichedChannels, seedVideoId }) {
+function saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId }) {
   try {
     const { DatabaseSync } = require('node:sqlite');
     if (!fs.existsSync(DB_PATH)) return;
@@ -361,6 +379,16 @@ function saveToDatabase({ edges, enrichedChannels, seedVideoId }) {
         last_crawled_at=excluded.last_crawled_at;
     `);
 
+    // FIX: insert video metadata from RSS into videos table
+    const insertVideo = db.prepare(`
+      INSERT INTO videos (video_id, channel_id, title, published_at, duration_seconds, views, likes, comments, vph_realtime, outlier_score, is_outlier, has_human_face, title_archetype, last_updated_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ON CONFLICT(video_id) DO UPDATE SET
+        views=excluded.views,
+        vph_realtime=excluded.vph_realtime,
+        last_updated_at=excluded.last_updated_at;
+    `);
+
     const now = Math.round(Date.now() / 1000);
 
     for (const e of edges) {
@@ -375,10 +403,11 @@ function saveToDatabase({ edges, enrichedChannels, seedVideoId }) {
       );
     }
 
+    // FIX: insert channels BEFORE videos (FK constraint: videos.channel_id -> channels.channel_id)
     for (const c of enrichedChannels) {
       insertChannel.run(
         c.channelId,
-        c.channelName ? `@${c.channelName.replace(/\\s+/g, '')}` : `@${c.channelId}`,
+        c.channelName ? `@${c.channelName.replace(/\s+/g, '')}` : `@${c.channelId}`,
         c.channelName || 'Unknown',
         c.operationalAgeDays || 0,
         c.medianBaseline || 0,
@@ -391,9 +420,38 @@ function saveToDatabase({ edges, enrichedChannels, seedVideoId }) {
       );
     }
 
+    // FIX: persist RSS videos AFTER channels exist (FK satisfied)
+    let videosInserted = 0;
+    if (Array.isArray(allRssVideos)) {
+      for (const v of allRssVideos) {
+        if (!v.videoId || !v.channelId) continue;
+        try {
+          insertVideo.run(
+            v.videoId,
+            v.channelId,
+            v.title || '',
+            v.publishedAt || 0,
+            v.durationSeconds || 0,
+            v.views || 0,
+            v.likes || 0,
+            v.comments || 0,
+            v.vphRealtime || 0,
+            1.0,
+            0,
+            0,
+            null,
+            now
+          );
+          videosInserted++;
+        } catch (e) { /* skip FK violations for channels not enriched */ }
+      }
+    }
+
     db.close();
+    return { videosInserted };
   } catch (err) {
     // Non-blocking database logging
+    return { videosInserted: 0, error: err.message };
   }
 }
 

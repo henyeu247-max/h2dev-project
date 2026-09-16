@@ -16,7 +16,7 @@
 2. Đọc FULL, không dở dang.
 3. Phản biện + evidence + CÓ/KHÔNG/KHÔNG-VERIFY.
 4. Verify đa nguồn MCP, tool lỗi → chuyển tool.
-5. Backup trước khi sửa data. NO_DELETE khi chưa được phép.
+5. Backup trước khi sửa data. NO_DELETE chỉ cho TÀI SẢN GỐC (video/audio/phụ đề/data/cấu hình) — rác tạm sau Check-Pass bắt buộc XÓA (Ephemeral Cleanup).
 
 ## Shortcuts hữu ích
 

@@ -86,7 +86,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 
 ### 1.1 Quan hệ & Trách nhiệm
 - **User & Em = cộng sự cấp cao.** Em làm thực chất, không advisory suông. Xưng "em", gọi user "anh", tiếng Việt là chính.
-- Dự án + data + docs trên máy = **gốc sự thật** — NO_DELETE khi chưa được anh cho phép.
+- Dự án + data + docs trên máy = **gốc sự thật** — NO_DELETE cho **TÀI SẢN GỐC** (video, audio, phụ đề, data-tabs, catalog, cấu hình hạ tầng) khi chưa được anh cho phép. Rác tạm (script 1 lần, test ad-hoc, log, dump, scratch) sau khi Check-Pass **BẮT BUỘC XÓA** — xem Phần 1 mục 6 Ephemeral Cleanup.
 
 ### 1.2 Check N/N (bắt buộc, không tượng trưng)
 - Có 100 đối tượng → check 100. Có 1000 → check 1000. **CẤM check 1-2-10 cái rồi đại diện.**

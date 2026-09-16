@@ -92,7 +92,10 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 - **Quy trình thực thi 7 bước & Chuẩn báo cáo 8 mục**: Tuân thủ nghiêm ngặt Phần 9 `RULE-LAM-VIEC.md`.
 - **Kỷ luật Windows Scripting An Toàn**: Mọi file script vận hành trên Windows (.bat, .cmd) phải sử dụng 100% ký tự 7-bit ASCII thuần, không dùng tiếng Việt có dấu hay Unicode lạ.
 - **Verify đa nguồn MCP**: vidIQ (lõi kênh/keyword) → exa/tavily/jina/firecrawl → trends. Tool lỗi → chuyển tool.
-- **NO_DELETE**: không xóa data/docs/backup khi chưa được anh cho phép.
+- **Bảo vệ tài sản gốc vs Dọn rác tạm:**
+  - *Tài sản gốc:* Tuyệt đối bảo vệ nguyên vẹn video, audio, phụ đề, thumbnails, dữ liệu sống `data-tabs/`, catalog, server và configs.
+  - *Kỷ luật dọn dẹp (Ephemeral Cleanup):* Mọi script vá lỗi 1 lần, script test ad-hoc, file scratch sau khi đã kiểm tra Check-Pass xong **BẮT BUỘC PHẢI XÓA BỎ**, không lưu cữu rác thải vận hành làm phình repo và gây rối loạn các phiên làm việc sau.
+  - "NO_DELETE" chỉ áp dụng cho tài sản cốt lõi và dữ liệu sống, không dùng để ngụy biện cho việc lưu rác.
 - **Backup trước khi sửa** data file (`_backup/<YYYYMMDD-task>/`).
 - ⚠️ **Mọi file/thư mục mới ở gốc đều PUBLIC** — server bind `0.0.0.0` (`server.js:15`), CORS `*`, không auth. Thư mục nhạy cảm PHẢI nằm trong `SENSITIVE_SEGMENTS` (`server.js:305`) hoặc dời vào `_archive`/`_backup`. `_audit` chứa raw phân tích và bắt buộc bị chặn. Đã từng lộ: `.bak.flashfix` (HTTP 200) · `Raw Kênh Mẫu Tìm Kiếm/` (96 ảnh, HTTP 200) — chặn 31/08.
   - *(Lịch sử: cơ chế cũ là mảng `BLOCKED` tại `server.js:150`; 16/09 đã nâng cấp thành `Set SENSITIVE_SEGMENTS` (`server.js:305`), so khớp chữ thường để chống bypass `/.GIT/config`, bổ sung `.git` · `.cache` · `.venv-gpu` · `.zcode` · `logs` · `_internal` · `_drafts` · `_frames` · `_tmp_audio`.)*

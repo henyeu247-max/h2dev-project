@@ -1,4 +1,28 @@
-## 2026-09-17 — GUARD Counts Drift vào Post-Receive Hook VPS (Chặn Deploy Khi Docs Lệch Data)
+## 2026-09-17 — Dọn Dẹp Toàn Diện: Loại Bỏ >167 Scripts Rác & Chuẩn Hóa Lại Rule NO_DELETE
+
+### 🎯 Bối cảnh
+User chỉ đạo chấn chỉnh tư duy `NO_DELETE`: không được ngụy biện "NO_DELETE" để lưu cữu hàng trăm script vá lỗi tạm, file test ad-hoc, dump rác làm phình repo và gây phiền hà. Phải dọn sạch toàn bộ sau khi đã check-pass kỹ lưỡng 2-3 lượt.
+
+### 🛠️ Can thiệp kỹ thuật
+1. **Chuẩn hóa lại Rule `NO_DELETE`** trong `RULE-LAM-VIEC.md`, `AGENTS.md` và `MEMORY.md`:
+   - Phân định rõ ràng: **Bảo vệ tuyệt đối tài sản cốt lõi** (Media, Videos, Transcripts, Thumbs, Data sống, Configs).
+   - Thiết lập kỷ luật **Ephemeral Cleanup**: Mọi script vá lỗi 1 lần, test scratch, dump trung gian bắt buộc xóa bỏ ngay sau khi check-pass.
+2. **Xóa sổ >167 files rác thừa thãi trong `scripts/` (giải phóng >2 MB mã nguồn rác)**:
+   - Xóa sạch 7 cụm thư mục offline A1–A6 (`registry/`, `gates/`, `repair/`, `migration/`, `security/`, `tests/`, `adapters/` — 73 files).
+   - Xóa 23 script vá lỗi 1 lần trong quá khứ (`fix-*`, `restore_*`, `repair_*`, `clean_zoom_*`...).
+   - Xóa 65 script audit / verify / test ad-hoc từng kênh cũ và file dump rác `audit_full_results.json`.
+   - Xóa 6 script 0 KB và script lô cũ (`build_toolkits_for_kids.js`, `restart-server.cmd`, `process_all_129_videos.py`...).
+   - Xóa toàn bộ `__pycache__` và `.pyc`.
+   - Gỡ lệnh test chết `test:playback:raw021` khỏi `package.json`.
+
+### ✅ Kiểm chứng 3 lượt (Check-Pass 3 Loops)
+- **Lượt 1 (Validate & Sync):** `validate-project.js` PASS 100% (136/165/45/152/136/136) · `sync-counts.js --check` PASS 100%.
+- **Lượt 2 (DB & Projection):** Rebuild Master DB `build_master_db.js` PASS 100% · Sync tabs PASS · FTS5 query 0.486ms.
+- **Lượt 3 (Web & Runtime):** Local web `:8899` phản hồi HTTP 200 toàn bộ 8 endpoint chính.
+
+---
+
+
 
 ### 🎯 Mục tiêu
 Thêm bước `sync-counts.js --check` vào hook deploy VPS → **chặn deploy khi docs/số liệu lệch data live**.

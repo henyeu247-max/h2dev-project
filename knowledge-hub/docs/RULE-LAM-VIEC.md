@@ -68,10 +68,13 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 - Mọi độ lệch (N - K) phải được định danh và phân loại nguyên nhân rõ ràng.
 - Nhận diện đúng kiểu dữ liệu (phân biệt boolean `true` với chuỗi cảnh báo trong `ngach-xanh.json`).
 
-### 6. Bằng Chứng Sự Thật 3 Mức & Thao Tác An Toàn (NO_DELETE)
+### 6. Bằng Chứng Sự Thật 3 Mức & Chuẩn Mực Bảo Vệ Tài Sản vs Dọn Rác Tạm
 - Nhận định chỉ dùng 3 trạng thái: `[CÓ]` / `[KHÔNG]` / `[KHÔNG-VERIFY-ĐƯỢC]` kèm bằng chứng.
-- Không tự ý xóa dữ liệu, media hay backup. Ưu tiên DỜI VÀO `_archive/` hoặc CHẶN trên server thay vì XÓA.
-- Chỉ xóa hoặc thay đổi cấu hình mạng khi có đánh giá tác động đầy đủ và được anh xác nhận đồng ý rõ ràng.
+- **Bảo vệ tài sản gốc (Asset Preservation):** Tuyệt đối cấm tự ý xóa, ghi đè làm hỏng hoặc thay đổi cấu trúc của tài sản cốt lõi: Video bài giảng, file MP4/WEBM, phụ đề 3 định dạng (`.json`, `.srt`, `.txt`), thumbnails, dữ liệu sống trong `data-tabs/*.json`, catalog gốc, cấu hình server, và hạ tầng Windows Services/VPS.
+- **Kỷ luật Dọn dẹp rác & Tinh gọn (Ephemeral Cleanup Standard):** 
+  - Mọi script vá lỗi 1 lần (`fix-*`, `restore_*`, `repair_*`), script test ad-hoc (`audit-*`, `verify-*`, `test-*`), file dump trung gian (`*.log`, `*.tmp`, dump `.json`) sau khi đã hoàn thành nhiệm vụ và đã được kiểm định Check-Pass **BẮT BUỘC PHẢI DỌN DẸP XÓA BỎ NGAY LẬP TỨC**.
+  - Tuyệt đối cấm biến repository và thư mục `scripts/` thành bãi rác chứa các bản vá cũ hoặc cơ chế chồng chéo gây phiền hà cho các phiên làm việc sau.
+  - "NO_DELETE" chỉ áp dụng cho TÀI SẢN DỰ ÁN và DỮ LIỆU SỐNG, không phải là cái cớ để lưu cữu rác thải vận hành.
 
 ### 7. Kỷ Luật Windows Scripting An Toàn (Pure ASCII Only)
 - Mọi file script vận hành trên Windows (.bat, .cmd) phải sử dụng 100% ký tự 7-bit ASCII thuần.

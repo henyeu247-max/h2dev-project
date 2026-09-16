@@ -34,7 +34,7 @@ Y:\YTB\
     │   ├── video_acceptance.json      # trạng thái pilot, QA, blocker — không gọi PASS giả
     │   ├── raw-channels-deep\         # 149 hồ sơ kênh sâu (transcripts/summary/vision) — phục vụ UI
     │   ├── research-20260916\         # 43 prompt master research (nguồn của +43 card 16/09)
-    │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest · *_backup_* (detritus cũ, không trỏ vào)
+    │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest  # (2 folder *_backup_* cũ đã dời _archive 16/09)
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165

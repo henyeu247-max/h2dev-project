@@ -125,6 +125,7 @@ CREATE TABLE competitor_channels (
     sop_doc_path TEXT,
     dedicated_skill TEXT,
     master_script_prompt TEXT,
+    handle_history_json TEXT,
     FOREIGN KEY (niche_id) REFERENCES niches (niche_id)
 ) STRICT;
 
@@ -431,13 +432,21 @@ const insertChannel = db.prepare(`
     editorial_niche, latest_upload_date, days_since_latest, ypp_status,
     is_monetized, has_voice_sample, voice_sample_path, wpm, language_flag,
     audio_language_code, voice_talent_profile, has_mission_control,
-    sop_doc_path, dedicated_skill, master_script_prompt
-  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    sop_doc_path, dedicated_skill, master_script_prompt, handle_history_json
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   ON CONFLICT(channel_id) DO UPDATE SET
     raw_id = coalesce(competitor_channels.raw_id, excluded.raw_id),
     subscribers = max(competitor_channels.subscribers, excluded.subscribers),
     total_views = max(competitor_channels.total_views, excluded.total_views),
-    video_count = max(competitor_channels.video_count, excluded.video_count)
+    video_count = max(competitor_channels.video_count, excluded.video_count),
+    -- Fix 16/09: 2 ban ghi cung channelId (RAW-089/127) - giu handle_history DAY DU hon
+    -- (truoc day coalesce lay excluded -> ban 1-entry cua RAW-127 de mat chain cua RAW-089)
+    handle_history_json = CASE
+      WHEN excluded.handle_history_json IS NULL THEN competitor_channels.handle_history_json
+      WHEN competitor_channels.handle_history_json IS NULL THEN excluded.handle_history_json
+      WHEN length(excluded.handle_history_json) > length(competitor_channels.handle_history_json) THEN excluded.handle_history_json
+      ELSE competitor_channels.handle_history_json
+    END
 `);
 
 db.exec('BEGIN TRANSACTION;');
@@ -532,7 +541,8 @@ for (const r of rawKenhMau) {
     hasMissionControl,
     sopDocPath,
     dedicatedSkill,
-    masterScriptPrompt
+    masterScriptPrompt,
+    JSON.stringify(r.handleHistory || [])
   );
   channelCount++;
   insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${nicheName} ${(ch.topics || []).join(' ')}`);
@@ -604,7 +614,8 @@ for (const k of kenhMau) {
     0,
     null,
     null,
-    null
+    null,
+    JSON.stringify([{ handle: k.handle || '', channelId: null, firstSeenCommit: null, firstSeenDate: k.ngay_do || null, source: 'kenh-mau.json (benchmark record - no git history)' }])
   );
   channelCount++;
   insertFts.run(channelId, 'CHANNEL', title, `${title} ${k.handle} ${nicheName}`);

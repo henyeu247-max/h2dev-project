@@ -80,6 +80,23 @@ function copyFile(src, dst) {
   console.log('  [COPY]', path.basename(src), '->', dst);
 }
 
+// Ghi/lam moi 1 file PHAI SINH (.from-*). File phai sinh la artefact cua script,
+// duoc phep ghi de de luon khop nguon — KHONG dung toi file goc cua 2 kho.
+function syncDerived(src, dst, label) {
+  const same = fs.existsSync(dst) && sha(src) === sha(dst);
+  if (same) {
+    console.log(`    (${path.basename(dst)} da khop ${label} -> bo qua)`);
+    return false;
+  }
+  if (DRY) {
+    console.log(`  [DRY] ${fs.existsSync(dst) ? 'REFRESH' : 'COPY'} ${path.basename(src)} -> ${path.basename(dst)}`);
+    return true;
+  }
+  fs.copyFileSync(src, dst);
+  console.log(`  [${fs.existsSync(dst) ? 'REFRESH' : 'COPY'}] ${path.basename(src)} -> ${path.basename(dst)}`);
+  return true;
+}
+
 // ---- Chay dong bo --------------------------------------------------------
 // Loai bo file sao phai sinh (.from-zcode / .from-workbuddy) khoi tap hop dong bo
 // -> tranh ban sao phai sinh lan nguoc, dam bao chay lai la idempotent.
@@ -149,14 +166,14 @@ for (const name of union) {
   if (ca.length && cb.includes(ca)) {
     console.log('    (ZCode la tap con cua WorkBuddy -> bo qua ban .from-zcode)');
     nSkipped++;
-  } else if (!fs.existsSync(altInB)) copyFile(pa, altInB);
-  else { console.log('    (da co', path.basename(altInB) + ', bo qua)'); nSkipped++; }
+  } else if (syncDerived(pa, altInB, 'ZCode')) nCopied++;
+  else nSkipped++;
 
   if (cb.length && ca.includes(cb)) {
     console.log('    (WorkBuddy la tap con cua ZCode -> bo qua ban .from-workbuddy)');
     nSkipped++;
-  } else if (!fs.existsSync(altInA)) copyFile(pb, altInA);
-  else { console.log('    (da co', path.basename(altInA) + ', bo qua)'); nSkipped++; }
+  } else if (syncDerived(pb, altInA, 'WorkBuddy')) nCopied++;
+  else nSkipped++;
 }
 
 console.log('-'.repeat(72));

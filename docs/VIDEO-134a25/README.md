@@ -35,7 +35,7 @@
   - `00:59` — Cái ngách của cái bè này nè
   - `02:15` — Đó, cái bạn này làm rất là hay nha
   - `03:21` — Để cho nó không bị phân phối tập khán giả
-  - `04:06` — n s vi c con m ng th l th Maccom nh m v c d m s d l n dung hay l …
+  - `04:06` — thì như vậy thì nó sẽ, có một ngày Có một ngày, sĩ viết kênh của mọi người ấy, lúc đấy thì mắc công kháng thì…
 
 ## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
 > link kênh link kênh đối thủ 2 video share key này hôm trước em quay làm nhưng up bị lỗi nhiều ae chưa xem được, nên em up lại cho mọi người nhé

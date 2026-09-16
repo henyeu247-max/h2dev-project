@@ -1,0 +1,22 @@
+{
+  "id": "RAW-132",
+  "channelId": "UC7CSSLTIe_lUa-zAPOSV--A",
+  "title": "De entonces a hoy Documental",
+  "handle": "@DeEntoncesahoyDocumental",
+  "url": "https://www.youtube.com/@DeEntoncesahoyDocumental",
+  "subscribers": 8290,
+  "views": null,
+  "videoCount": 13,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/db8Uyy5-2s3rjmgMGHYzYQqJqzgz2NzbGLVU_EyXFcUMQ6GOXtIzRuOGzjI8o2bkPkPSWOcVjw=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T18:05:31+07:00",
+  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+  "dataGaps": [
+    "views tong kenh: chua do duoc - null trung thuc",
+    "country: khong co trong HTML - null trung thuc",
+    "longevityAudit/growth30d: chua do - dot 2",
+    "transcripts: chua extract - chi co metadata top videos"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
+}

@@ -1,0 +1,43 @@
+{
+  "id": "RAW-124",
+  "channelId": "UCt7J_BNEiy2qJzKqZXAGvig",
+  "title": "Relatos de Eterya",
+  "handle": "@RelatosdeEterya",
+  "url": "https://www.youtube.com/@RelatosdeEterya",
+  "subscribers": 125000,
+  "views": null,
+  "videoCount": 7,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/qmq9cBPM3XI_KlmA4SkPDSTfI6b5fnQN0PkicJyMwM9IxrUlRAxYwDB7-2skMbTzrR5GgDm1nQ=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T18:03:56+07:00",
+  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+  "dataGaps": [
+    "views tong kenh: chua do duoc - null trung thuc",
+    "country: khong co trong HTML - null trung thuc",
+    "longevityAudit/growth30d: chua do - dot 2",
+    "transcripts: chua extract - chi co metadata top videos"
+  ],
+  "topTagsSample": [
+    "Audio de fantasía",
+    "Aventuras espaciales",
+    "Aventuras imaginativas",
+    "Búsquedas encantadas",
+    "Cuentos de fantasía",
+    "Cuentos del alma humana",
+    "Exploración del universo",
+    "Fantasía corta",
+    "Ficción futurista",
+    "Giros de sci-fi",
+    "Historias cortas narradas",
+    "Leyendas de dragones",
+    "Mundos alienígenas",
+    "Narración de sci-fi",
+    "Narración inmersiva",
+    "Narrativas épicas",
+    "Reflexiones de fantasía",
+    "Reinos mágicos",
+    "Relatos de ciencia ficción",
+    "Sci-fi corto"
+  ],
+  "topTagsCount": 20
+}

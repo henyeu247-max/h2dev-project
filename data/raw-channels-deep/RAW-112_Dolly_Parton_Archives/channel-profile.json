@@ -1,0 +1,42 @@
+{
+  "id": "RAW-112",
+  "channelId": "UCgMh9v0dRVlsPKW3nNHkssg",
+  "title": "Dolly Parton Archives",
+  "handle": "@dollypartonarchives",
+  "url": "https://www.youtube.com/@dollypartonarchives",
+  "subscribers": 17300,
+  "views": null,
+  "videoCount": 17,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/YXkpwFhMY77sutKbkCX5JQSHo5a69q4eMhtGQDM7iaA09mqdeQ0d1I2QDk9Vq6O1_D3T_CZf=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T18:01:26+07:00",
+  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+  "dataGaps": [
+    "views tong kenh: chua do duoc - null trung thuc",
+    "country: khong co trong HTML - null trung thuc",
+    "longevityAudit/growth30d: chua do - dot 2",
+    "transcripts: chua extract - chi co metadata top videos"
+  ],
+  "topTagsSample": [
+    "000 People",
+    "Dolly Parton Sang GOSPEL at Her Mother’s Funeral — Her Voice Cracked…Then EVERYTHING CHANGED",
+    "He Said \"If You Know Like a Prayer So Well",
+    "Johnny Cash Walked into Dolly Parton's concert Uninvited — Dolly Stopped Mid-Song And Said THIS",
+    "Madonna SHOWED UP at Dolly Parton’s Concert — What Happened SHOCKED 70",
+    "Sing It\" to Madonna — But Dolly Parton Heard It All",
+    "dolly parton",
+    "dolly parton archives",
+    "dolly parton best moments",
+    "dolly parton elvis presley",
+    "dolly parton gospel",
+    "dolly parton madonna",
+    "dolly parton michael jackson",
+    "dolly parton stories",
+    "dolly parton story",
+    "dolly parton tonight show",
+    "johnny cash",
+    "johnny cash dolly parton",
+    "johnny cash dolly parton sing"
+  ],
+  "topTagsCount": 19
+}

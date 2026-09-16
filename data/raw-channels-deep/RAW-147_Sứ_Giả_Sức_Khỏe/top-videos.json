@@ -1,0 +1,79 @@
+{
+  "channelId": "UC9n4Doub6N6x3bvzKKTNbOA",
+  "rawId": "RAW-147",
+  "totalVideos": 5,
+  "extractedAt": "2026-09-16T20:49:32+07:00",
+  "extractionSource": "RSS top10 + watch page - 16/09/2026",
+  "videos": [
+    {
+      "rank": 1,
+      "videoId": "XUsk4bBe1ec",
+      "url": "https://www.youtube.com/watch?v=XUsk4bBe1ec",
+      "title": "Người Cao Tuổi Có Nên Uống Cà Phê Mỗi Ngày? Sự Thật Bất Ngờ Ai Cũng Nên Biết",
+      "thumbnail": "https://i.ytimg.com/vi/XUsk4bBe1ec/maxresdefault.jpg",
+      "publishedAt": "2025-10-31T13:30:38+00:00",
+      "duration": "PT12M56S",
+      "durationSeconds": 776,
+      "views": 247296,
+      "vph": 32.2,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 2,
+      "videoId": "8VozkI3qB30",
+      "url": "https://www.youtube.com/watch?v=8VozkI3qB30",
+      "title": "Tỏi - Tốt Gấp Vạn Lần Nhân Sâm: Bác Sĩ Tiết Lộ Cách Dùng",
+      "thumbnail": "https://i.ytimg.com/vi/8VozkI3qB30/maxresdefault.jpg",
+      "publishedAt": "2025-10-24T13:00:30+00:00",
+      "duration": "PT11M40S",
+      "durationSeconds": 700,
+      "views": 153034,
+      "vph": 19.5,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 3,
+      "videoId": "PxYy6c_9mts",
+      "url": "https://www.youtube.com/watch?v=PxYy6c_9mts",
+      "title": "4 Thảm Họa Ngầm Khi Bỏ Bữa Sáng Ở Người Cao Tuổi Mà Bạn Nên Biết",
+      "thumbnail": "https://i.ytimg.com/vi/PxYy6c_9mts/maxresdefault.jpg",
+      "publishedAt": "2026-08-03T15:05:00+00:00",
+      "duration": "PT15M21S",
+      "durationSeconds": 921,
+      "views": 516,
+      "vph": 0.5,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 4,
+      "videoId": "cdUlF5n0ow0",
+      "url": "https://www.youtube.com/watch?v=cdUlF5n0ow0",
+      "title": "Ăn Đủ Thịt Cá Nhưng Tay Chân Vẫn Yếu? Sự Thật Y Học Ít Người Biết",
+      "thumbnail": "https://i.ytimg.com/vi/cdUlF5n0ow0/maxresdefault.jpg",
+      "publishedAt": "2026-08-02T04:38:10+00:00",
+      "duration": "PT20M17S",
+      "durationSeconds": 1217,
+      "views": 269,
+      "vph": 0.2,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 5,
+      "videoId": "gi54rcZxcb0",
+      "url": "https://www.youtube.com/watch?v=gi54rcZxcb0",
+      "title": "Nhiều Người Sa Sút Trí Tuệ Từng Giữ Thói Quen Này Suốt Hơn Một Thập Kỷ! Liệu Bạn Có Nằm Trong Số Đó?",
+      "thumbnail": "https://i.ytimg.com/vi/gi54rcZxcb0/maxresdefault.jpg",
+      "publishedAt": "2026-09-14T13:30:00+00:00",
+      "duration": "PT17M11S",
+      "durationSeconds": 1031,
+      "views": 66,
+      "vph": 1.4,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    }
+  ]
+}

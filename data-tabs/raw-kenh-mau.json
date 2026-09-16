@@ -1,7 +1,7 @@
 {
  "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
- "updatedAt": "2026-09-16T12:16:31.000000+00:00",
- "totalRecords": 130,
+ "updatedAt": "2026-09-16T13:51:17.000000+00:00",
+ "totalRecords": 147,
  "records": [
   {
    "id": "RAW-001",
@@ -28264,6 +28264,1421 @@
    "channelLifecycle": {
     "state": "ACTIVE",
     "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026 tu anh chup kenh)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-143",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCLKb-XEfimm39VGrTG6YXsA",
+    "title": "Sống Khoẻ Khi Về Già",
+    "handle": "@songkhoekhivegia",
+    "url": "https://www.youtube.com/@songkhoekhivegia",
+    "subscribers": 87000,
+    "views": 8799120,
+    "videoCount": 646,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/b4OAuJqiwj8p-_yB8g5oBlzVoXW0m4wLzAumhMXg2GwtstGBjFBPBRHLEyLq3Hz-hKdEtbcp=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Sức khỏe người cao tuổi VN / Mẹo sống khỏe",
+   "editorialNiche": "Sức khỏe VN",
+   "visionAnalysis": {
+    "channelName": "Sống Khoẻ Khi Về Già",
+    "handle": "@songkhoekhivegia",
+    "videoTitles": [
+     "NẾU Bạn 70–80 TUỔI Vẫn LÀM Được 10 BÀI KIỂM TRA Này Thì CƠ THỂ Và NÃO BỘ Của Bạn TRẺ Hơn 20 TUỔI",
+     "ĐẶC ĐIỂM Chung Của Những NGƯỜI GỤC NGÃ Trước TUỔI 85! Chỉ Cần THAY Đổi 4 ĐIỀU Này SỐNG Đến 100 TUỔI",
+     "BÁC SĨ Chỉ Rõ: Người CAO TUỔI Muốn TÁI TẠO CƠ BẮP Hãy Ăn THỨ NÀY Ngay – ĐẠM Nhiều Gấp 9 LẦN TRỨNG!"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe VN - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Sức khỏe VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-13",
+    "daysSinceLatest": 3,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (3 ngày trước)",
+    "healthDetail": "Xuat ban 646 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-143_Sống_Khoẻ_Khi_Về_Già",
+    "dossierPath": "data/raw-channels-deep/RAW-143_Sống_Khoẻ_Khi_Về_Già",
+    "topVideosCount": 10,
+    "tagsCount": 31,
+    "subscribersLive": 87000,
+    "videoCountLive": 646,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@songkhoekhivegia",
+     "channelId": "UCLKb-XEfimm39VGrTG6YXsA",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-144",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCze2ASXUyZ1ubwLYJvuYWEQ",
+    "title": "Sống Lâu Sống Khỏe 360",
+    "handle": "@songlausongkhoe360",
+    "url": "https://www.youtube.com/@songlausongkhoe360",
+    "subscribers": 71500,
+    "views": 8441462,
+    "videoCount": 244,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/O2aXVBvgH-YrQw-EhxWmqtsX5Yqp3MGzvVbf6alqzat2SatwSXokfqacgwcXddLUsVi21AzhnQ=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Sức khỏe trường thọ / Bí quyết sống lâu VN",
+   "editorialNiche": "Sức khỏe VN",
+   "visionAnalysis": {
+    "channelName": "Sống Lâu Sống Khỏe 360",
+    "handle": "@songlausongkhoe360",
+    "videoTitles": [
+     "60 Phút Đầu Tiên Sau Khi Thức Dậy Quyết Định Liệu Bạn Đốt Cháy Hay Tích Trữ Mỡ Bụng",
+     "Các Nhà Khoa Học Đã Phát Hiện Ra Bài Tập Giúp Tim Bạn Trẻ Hơn 20 Tuổi",
+     "Uống 1 Ly Nước Đinh Hương Trước Khi Đi Ngủ... Đây Là Những Gì Xảy Ra Qua Đêm"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe VN - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Sức khỏe VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-16",
+    "daysSinceLatest": 0,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (0 ngày trước)",
+    "healthDetail": "Xuat ban 244 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-144_Sống_Lâu_Sống_Khỏe_360",
+    "dossierPath": "data/raw-channels-deep/RAW-144_Sống_Lâu_Sống_Khỏe_360",
+    "topVideosCount": 10,
+    "tagsCount": 33,
+    "subscribersLive": 71500,
+    "videoCountLive": 244,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@songlausongkhoe360",
+     "channelId": "UCze2ASXUyZ1ubwLYJvuYWEQ",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-145",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCfVLuf8bqORyZeUjmGVeArw",
+    "title": "Sức Khỏe Đông Y",
+    "handle": "@suckhoedongy99",
+    "url": "https://www.youtube.com/@suckhoedongy99",
+    "subscribers": 30300,
+    "views": 3060345,
+    "videoCount": 254,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/OiWaPzH7MpIJdPo4iXxxbsiGqF-IM321FWwvMa5s-w4Mw_CpIpsY0mkurdiqZe0BqABSP3byjO8=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Sức khỏe Đông Y / Y học cổ truyền VN",
+   "editorialNiche": "Sức khỏe VN",
+   "visionAnalysis": {
+    "channelName": "Sức Khỏe Đông Y",
+    "handle": "@suckhoedongy99",
+    "videoTitles": [
+     "Dấu Hiệu Cơ Thể Đang Tắc Nghẽn Nặng: Khí Trệ, Đàm Thấp Và Cách Xử Lý!",
+     "Nhịn Đói Đi Ngủ Khiến Bạn Bị Teo Cơ: 8 Món Ăn Đêm Cứu Mạng",
+     "Rêu Lưỡi Dày, Người Lờ Đờ? Giải Mã Vị Thuốc Phục Linh Và Cách Chữa Tận Gốc Thấp Khí"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe VN - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Sức khỏe VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-07-29",
+    "daysSinceLatest": 49,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 (49 ngày trước)",
+    "healthDetail": "Xuat ban 254 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-145_Sức_Khỏe_Đông_Y",
+    "dossierPath": "data/raw-channels-deep/RAW-145_Sức_Khỏe_Đông_Y",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 30300,
+    "videoCountLive": 254,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@suckhoedongy99",
+     "channelId": "UCfVLuf8bqORyZeUjmGVeArw",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 16/09/2026)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-146",
+   "fileName": null,
+   "channel": {
+    "channelId": "UClDnSL-WytGI6FnwMlAgiGQ",
+    "title": "Sống Khỏe Từng Ngày",
+    "handle": "@Songkhoetungngay365",
+    "url": "https://www.youtube.com/@Songkhoetungngay365",
+    "subscribers": 9020,
+    "views": 1084301,
+    "videoCount": 44,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/er2opKuMQiBod9OUFWaO58oVsRSF-NFOLmGurguTm2JbQ1tm168qaeOv7hHiS-Z8xZu8jEQQVek=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Sức khỏe thường ngày VN / Thói quen sống khỏe",
+   "editorialNiche": "Sức khỏe VN",
+   "visionAnalysis": {
+    "channelName": "Sống Khỏe Từng Ngày",
+    "handle": "@Songkhoetungngay365",
+    "videoTitles": [
+     "Bác Sĩ Tiết Lộ: Bí Quyết Dùng Dầu Gió Dể Ngủ Sâu -  Chữa Tỷ Bệnh",
+     "Ăn 2 Quả Trứng Gà Luộc Mỗi Ngày: Sự Thật Về Cholesterol, Não Bộ Và Gan Mà Nhiều Người Hiểu Sai",
+     "Cơm Nguội Để Qua Đêm Có Nên Ăn Không? Sự Thật Về Lợi Ích Và Nguy Cơ Sức Khỏe"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe VN - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Sức khỏe VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-08-01",
+    "daysSinceLatest": 46,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 (46 ngày trước)",
+    "healthDetail": "Xuat ban 44 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-146_Sống_Khỏe_Từng_Ngày",
+    "dossierPath": "data/raw-channels-deep/RAW-146_Sống_Khỏe_Từng_Ngày",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 9020,
+    "videoCountLive": 44,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@Songkhoetungngay365",
+     "channelId": "UClDnSL-WytGI6FnwMlAgiGQ",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 16/09/2026)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-147",
+   "fileName": null,
+   "channel": {
+    "channelId": "UC9n4Doub6N6x3bvzKKTNbOA",
+    "title": "Sứ Giả Sức Khỏe",
+    "handle": "@SuGia_SucKhoe",
+    "url": "https://www.youtube.com/@SuGia_SucKhoe",
+    "subscribers": 9940,
+    "views": 401056,
+    "videoCount": 5,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/3i3y_9EqizLc4asJwG-FBuzcOBjARzH3Cn3UW9Gm7m3IcgfaLWljZ5lUGKj_Dms10ePsGMoA8Q=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Sức khỏe cộng đồng VN / Thông tin y tế",
+   "editorialNiche": "Sức khỏe VN",
+   "visionAnalysis": {
+    "channelName": "Sứ Giả Sức Khỏe",
+    "handle": "@SuGia_SucKhoe",
+    "videoTitles": [
+     "Người Cao Tuổi Có Nên Uống Cà Phê Mỗi Ngày? Sự Thật Bất Ngờ Ai Cũng Nên Biết",
+     "Tỏi - Tốt Gấp Vạn Lần Nhân Sâm: Bác Sĩ Tiết Lộ Cách Dùng",
+     "4 Thảm Họa Ngầm Khi Bỏ Bữa Sáng Ở Người Cao Tuổi Mà Bạn Nên Biết"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe VN - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Sức khỏe VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-14",
+    "daysSinceLatest": 2,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (2 ngày trước)",
+    "healthDetail": "Xuat ban 5 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 5,
+    "totalAuditedVideos": 5
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-147_Sứ_Giả_Sức_Khỏe",
+    "dossierPath": "data/raw-channels-deep/RAW-147_Sứ_Giả_Sức_Khỏe",
+    "topVideosCount": 5,
+    "tagsCount": 0,
+    "subscribersLive": 9940,
+    "videoCountLive": 5,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@SuGia_SucKhoe",
+     "channelId": "UC9n4Doub6N6x3bvzKKTNbOA",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-148",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCveeSaU0rGzqe4Pg7LHgLtw",
+    "title": "Thuật Phong Thủy Audio",
+    "handle": "@thuatphongthuy26",
+    "url": "https://www.youtube.com/@thuatphongthuy26",
+    "subscribers": 37100,
+    "views": 2025560,
+    "videoCount": 10,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/xKbZeowcGr976-Nv316INFkNOsuTj_4E0MUN3yDCsd8WTMXwPlyQONHBbBC_ecdRXBZlMWgr=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Phong thủy audio / Tâm linh ứng dụng",
+   "editorialNiche": "Phong thủy VN",
+   "visionAnalysis": {
+    "channelName": "Thuật Phong Thủy Audio",
+    "handle": "@thuatphongthuy26",
+    "videoTitles": [
+     "ĐÀN ÔNG THUỘC 5 CON GIÁP NÀY: Trẻ Khổ Bao Nhiêu, Già Sướng Bấy Nhiêu!",
+     "Tháng 12 Âm Lịch Cắt Tóc 4 Ngày Này – Không Giàu Cũng Khó, Sai Ngày Mất Lộc Cả Năm",
+     "PHỤ NỮ 5 CON GIÁP NÀY CÀNG GIÀ CÀNG GIÀU, TIỀN TIÊU KHÔNG HẾT – BẠN CÓ TRONG SỐ ĐÓ?"
+    ],
+    "mainTopic": "Kenh mau ngach Phong thủy VN - bo sung 16/09/2026",
+    "suggestedNiche": "Phong thủy VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Phong thủy VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-07-31",
+    "daysSinceLatest": 47,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 (47 ngày trước)",
+    "healthDetail": "Xuat ban 10 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-148_Thuật_Phong_Thủy_Audio",
+    "dossierPath": "data/raw-channels-deep/RAW-148_Thuật_Phong_Thủy_Audio",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 37100,
+    "videoCountLive": 10,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@thuatphongthuy26",
+     "channelId": "UCveeSaU0rGzqe4Pg7LHgLtw",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 16/09/2026)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-149",
+   "fileName": null,
+   "channel": {
+    "channelId": "UC0ScMBbEv02xieZGC9KY21Q",
+    "title": "Mẹo Phong Thủy",
+    "handle": "@meophongthuy-m7d",
+    "url": "https://www.youtube.com/@meophongthuy-m7d",
+    "subscribers": 2670,
+    "views": 432670,
+    "videoCount": 111,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/G6tojbt1RTIOI8Xc1AJ5h3rtEK9G4KCELpIPL8PiOgMQUJ_kZ4rnE-f-9voV0jGk3q0FWc9zRQ=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Phong thủy ứng dụng / Mẹo nhà cửa",
+   "editorialNiche": "Phong thủy VN",
+   "visionAnalysis": {
+    "channelName": "Mẹo Phong Thủy",
+    "handle": "@meophongthuy-m7d",
+    "videoTitles": [
+     "CUỐI THÁNG 7 ÂM LỊCH: 4 TUỔI BẤT NGỜ CÓ SỐ TIỀN LỚN, TRẢ SẠCH NỢ NẦN | Mẹo Phong Thủy",
+     "ĐÀN ÔNG THUỘC 5 CON GIÁP NÀY: Trẻ Khổ Bao Nhiêu, Già Sướng Bấy Nhiêu! Mẹo Phong Thủy",
+     "Tháng 7 Âm, Cứ Cắt Tóc Vào 5 Ngày Này, Cắt Hết Vận Xui, Tiền Về Đếm Mỏi Tay | Mẹo Phong Thủy"
+    ],
+    "mainTopic": "Kenh mau ngach Phong thủy VN - bo sung 16/09/2026",
+    "suggestedNiche": "Phong thủy VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Phong thủy VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-16",
+    "daysSinceLatest": 0,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (0 ngày trước)",
+    "healthDetail": "Xuat ban 111 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-149_Mẹo_Phong_Thủy",
+    "dossierPath": "data/raw-channels-deep/RAW-149_Mẹo_Phong_Thủy",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 2670,
+    "videoCountLive": 111,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@meophongthuy-m7d",
+     "channelId": "UC0ScMBbEv02xieZGC9KY21Q",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-150",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCANf_IBYgP8SIJIowmfyhwA",
+    "title": "PHONG THỦY TIỀM TÀNG",
+    "handle": "@PHONGTHUYTIEMTANG",
+    "url": "https://www.youtube.com/@PHONGTHUYTIEMTANG",
+    "subscribers": 15800,
+    "views": 1539971,
+    "videoCount": 48,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/yHzIBHYaKpu2gwNWMuMXo0fw0SK4WhuN90nfQtmzjocvUwgrVXSuedN69c_8LPQdMi_Q9m_aIg=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Phong thủy toàn diện / Khám phá",
+   "editorialNiche": "Phong thủy VN",
+   "visionAnalysis": {
+    "channelName": "PHONG THỦY TIỀM TÀNG",
+    "handle": "@PHONGTHUYTIEMTANG",
+    "videoTitles": [
+     "THẦY PHÁP HÒA CẢNH BÁO: 7 CHỖ TUYỆT ĐỐI KHÔNG NÊN NGỦ, CÀNG NGỦ CÀNG HAO TÀI MẤT LỘC!",
+     "THẦY PHÁP HÒA CẢNH BÁO: Bàn Thờ 3 Bát Hương Thắp Sai Nén Nhang, Gia Đạo Bất An Lúc Nào Không Hay!",
+     "THẦY PHÁP HÒA CẢNH BÁO: ĐẶT SAI ẢNH THỜ, GIA ĐẠO BẤT AN, TÀI LỘC TIÊU TAN!"
+    ],
+    "mainTopic": "Kenh mau ngach Phong thủy VN - bo sung 16/09/2026",
+    "suggestedNiche": "Phong thủy VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Phong thủy VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-06-25",
+    "daysSinceLatest": 83,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 (83 ngày trước)",
+    "healthDetail": "Xuat ban 48 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-150_PHONG_THỦY_TIỀM_TÀNG",
+    "dossierPath": "data/raw-channels-deep/RAW-150_PHONG_THỦY_TIỀM_TÀNG",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 15800,
+    "videoCountLive": 48,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@PHONGTHUYTIEMTANG",
+     "channelId": "UCANf_IBYgP8SIJIowmfyhwA",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 16/09/2026)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-151",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCqZpuhhJC5G4kfvBG7MTAXg",
+    "title": "Science Sun",
+    "handle": "@UCqZpuhhJC5G4kfvBG7MTAXg",
+    "url": "https://www.youtube.com/@UCqZpuhhJC5G4kfvBG7MTAXg",
+    "subscribers": 92500,
+    "views": 22732880,
+    "videoCount": 58,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Khoa học / Trái Đất / Vũ trụ documentary EN",
+   "editorialNiche": "Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)",
+   "visionAnalysis": {
+    "channelName": "Science Sun",
+    "handle": "@UCqZpuhhJC5G4kfvBG7MTAXg",
+    "videoTitles": [
+     "6 Закрытых Гробниц, которые Никто не может Открыть",
+     "Как сейчас Китай превращает Мертвые пустыни в Тропики",
+     "То что Нашли в Этих Древних Гробницах Поразило Всех"
+    ],
+    "mainTopic": "Kenh mau ngach Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ) - bo sung 16/09/2026",
+    "suggestedNiche": "Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)",
+    "language": "EN"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Anh (English)",
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "dialect": "Tiếng Anh (English) - Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-13",
+    "daysSinceLatest": 3,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (3 ngày trước)",
+    "healthDetail": "Xuat ban 58 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "DUPLICATE_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-151_Science_Sun",
+    "dossierPath": "data/raw-channels-deep/RAW-151_Science_Sun",
+    "topVideosCount": 10,
+    "tagsCount": 38,
+    "subscribersLive": 92500,
+    "videoCountLive": 58,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null,
+    "duplicateOf": "RAW-126",
+    "note": "XAC MINH THAT 16/09/2026: @UCqZpuhhJC5G4kfvBG7MTAXg la Science Sun - cung channelId voi RAW-126 @ScienceSun-b4r da extract truoc do. Ho so chuyen sau nam tai RAW-126_Science_Sun. Folder nay la ban extract trung, giu theo NO_DELETE."
+   },
+   "handleHistory": [
+    {
+     "handle": "@UCqZpuhhJC5G4kfvBG7MTAXg",
+     "channelId": "UCqZpuhhJC5G4kfvBG7MTAXg",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16",
+     "note": "Kenh nay trung voi RAW-126 - xem ho so tai do"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "DUPLICATE",
+    "stateReason": "Cung channelId voi RAW-126 (Science Sun) - ban ghi trung",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   },
+   "duplicateOf": "RAW-126"
+  },
+  {
+   "id": "RAW-152",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCoEvqxj4MXmG71XAbWyAkWQ",
+    "title": "ほのぼのラジオ",
+    "handle": "@ほのぼのラジオ1",
+    "url": "https://www.youtube.com/@ほのぼのラジオ1",
+    "subscribers": 90000,
+    "views": 23622359,
+    "videoCount": 74,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Radio kể chuyện sức khỏe senior Nhật",
+   "editorialNiche": "Sức khỏe Nhật",
+   "visionAnalysis": {
+    "channelName": "ほのぼのラジオ",
+    "handle": "@ほのぼのラジオ1",
+    "videoTitles": [
+     "アメリカで一番売れているインスタントラーメンは？",
+     "事務は0.29倍、現場は7.55倍。いま人が足りない仕事15",
+     "同じ年生まれでも、男性と女性で5年違います"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe Nhật - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe Nhật",
+    "language": "JA"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Nhật (Japanese)",
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "dialect": "Tiếng Nhật (Japanese) - Sức khỏe Nhật"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-08-25",
+    "daysSinceLatest": 22,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (22 ngày trước)",
+    "healthDetail": "Xuat ban 74 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-152_ほのぼのラジオ",
+    "dossierPath": "data/raw-channels-deep/RAW-152_ほのぼのラジオ",
+    "topVideosCount": 10,
+    "tagsCount": 17,
+    "subscribersLive": 90000,
+    "videoCountLive": 74,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@ほのぼのラジオ1",
+     "channelId": "UCoEvqxj4MXmG71XAbWyAkWQ",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-153",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCMNjTg2ihpmNWvpdg_0WT8g",
+    "title": "みんなの若返りアカデミア【健康長寿・老化防止・日本人の健康寿命延ばす・120歳以上生きる】【けいた】",
+    "handle": "@みんなの若返りアカデミア",
+    "url": "https://www.youtube.com/@みんなの若返りアカデミア",
+    "subscribers": 48000,
+    "views": 4956429,
+    "videoCount": 18,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Trẻ hóa / Sức khỏe trường thọ Nhật Bản",
+   "editorialNiche": "Sức khỏe Nhật",
+   "visionAnalysis": {
+    "channelName": "みんなの若返りアカデミア【健康長寿・老化防止・日本人の健康寿命延ばす・120歳以上生きる】【けいた】",
+    "handle": "@みんなの若返りアカデミア",
+    "videoTitles": [
+     "【不老不死を達成した男】ジョジョの奇妙な冒険作者の荒木飛呂彦の若さの秘密４選｜彼が実践しているある若返り法とは？【食事、運動…】",
+     "【50代間近なのに、見た目20代に見える】UVERworldのボーカルTAKUYA∞の若さの秘密３選｜彼が実践しているある若返り法とは？｜着々と不老不死に近づいている男【食事、運動、サウナ、冷水浴…】",
+     "【20歳若返った男】なぜ彼は老けないのか？還暦間近のバイオハッカーが実践する若返り習慣3選【食事、運動、サプリメント…】"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe Nhật - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe Nhật",
+    "language": "JA"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Nhật (Japanese)",
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "dialect": "Tiếng Nhật (Japanese) - Sức khỏe Nhật"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-07-09",
+    "daysSinceLatest": 69,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 (69 ngày trước)",
+    "healthDetail": "Xuat ban 18 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-153_みんなの若返りアカデミア",
+    "dossierPath": "data/raw-channels-deep/RAW-153_みんなの若返りアカデミア",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 48000,
+    "videoCountLive": 18,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@みんなの若返りアカデミア",
+     "channelId": "UCMNjTg2ihpmNWvpdg_0WT8g",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 16/09/2026)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-154",
+   "fileName": null,
+   "channel": {
+    "channelId": "UChAGYKHe2glCAzPBwPndsGg",
+    "title": "黄金の老年期",
+    "handle": "@黄金の老年期-x9g",
+    "url": "https://www.youtube.com/@黄金の老年期-x9g",
+    "subscribers": 64200,
+    "views": 3003200,
+    "videoCount": 320,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Tuổi vàng / Cuộc sống hạnh phúc tuổi già Nhật",
+   "editorialNiche": "Sức khỏe Nhật",
+   "visionAnalysis": {
+    "channelName": "黄金の老年期",
+    "handle": "@黄金の老年期-x9g",
+    "videoTitles": [
+     "はちみつと一緒に「これ」を3日間だけ塗ってください！ボトックスを打ったように、シミとシワが一気に消えます!",
+     "このように蜂蜜を食べると腎臓の老化を遅らせることができます｜大学研究が明らかにした蜂蜜一匙の力｜腎臓健康｜シニア健康｜高齢者の健康習慣｜健康情報",
+     "コーヒーを飲む時、相手の本性がすべて見えてくる！この「行動」をしたら、すぐに距離を置きなさい！｜一目で人間性を見抜く方法｜人生｜名言｜心｜幸せ"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe Nhật - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe Nhật",
+    "language": "JA"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Nhật (Japanese)",
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "dialect": "Tiếng Nhật (Japanese) - Sức khỏe Nhật"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-01-23",
+    "daysSinceLatest": 236,
+    "healthStatus": "DORMANT_MID",
+    "healthBadge": "🟡 (236 ngày trước)",
+    "healthDetail": "Xuat ban 320 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-154_黄金の老年期",
+    "dossierPath": "data/raw-channels-deep/RAW-154_黄金の老年期",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 64200,
+    "videoCountLive": 320,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@黄金の老年期-x9g",
+     "channelId": "UChAGYKHe2glCAzPBwPndsGg",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 16/09/2026)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-155",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCtmXuebPfug2V5Pa2nGmdRQ",
+    "title": "Khỏe Về Già",
+    "handle": "@KhỏeVềGià",
+    "url": "https://www.youtube.com/@KhỏeVềGià",
+    "subscribers": 67500,
+    "views": 5722469,
+    "videoCount": 195,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Sức khỏe người cao tuổi VN / Sống khỏe tuổi già",
+   "editorialNiche": "Sức khỏe VN",
+   "visionAnalysis": {
+    "channelName": "Khỏe Về Già",
+    "handle": "@KhỏeVềGià",
+    "videoTitles": [
+     "Ăn Đủ Thịt Cá Nhưng Cơ Bắp Vẫn Biến Mất Sau Tuổi 60? Bác Sĩ Chỉ Ra Nguyên Nhân",
+     "Sau 30 Ngày Ăn Trứng, Cơ Thể Người Cao Tuổi Thay Đổi Ra Sao?",
+     "3 Bài Tập Phục Hồi Mắt Mờ Chuẩn Y Khoa Dành Cho Người Cao Tuổi"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe VN - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe VN",
+    "language": "VI"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Việt (Vietnamese)",
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "dialect": "Tiếng Việt (Vietnamese) - Sức khỏe VN"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-08-08",
+    "daysSinceLatest": 39,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 (39 ngày trước)",
+    "healthDetail": "Xuat ban 195 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-155_Khỏe_Về_Già",
+    "dossierPath": "data/raw-channels-deep/RAW-155_Khỏe_Về_Già",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 67500,
+    "videoCountLive": 195,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@KhỏeVềGià",
+     "channelId": "UCtmXuebPfug2V5Pa2nGmdRQ",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 16/09/2026)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-156",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCPXSL9saGzpbMcqIZuvi9Tw",
+    "title": "時代を生きた声",
+    "handle": "@時代を生きた声",
+    "url": "https://www.youtube.com/@時代を生きた声",
+    "subscribers": 56300,
+    "views": 37349299,
+    "videoCount": 290,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Tiếng nói thời đại / Kể chuyện cuộc đời senior Nhật",
+   "editorialNiche": "Chuyện đời / kể chuyện senior Nhật",
+   "visionAnalysis": {
+    "channelName": "時代を生きた声",
+    "handle": "@時代を生きた声",
+    "videoTitles": [
+     "【岩崎宏美】ケンカ一つない7年の結婚 ― 終わらせたのは、たった10日",
+     "【佐久間良子・鶴田浩二】「悩むようなことはなかった」――夫の5年の恋を知り、妻が選んだ道",
+     "【藤山寛美・藤山直美】「凄絶修羅四十年」――家に帰らぬ夫を支えた妻を、娘が語った真実"
+    ],
+    "mainTopic": "Kenh mau ngach Chuyện đời / kể chuyện senior Nhật - bo sung 16/09/2026",
+    "suggestedNiche": "Chuyện đời / kể chuyện senior Nhật",
+    "language": "JA"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Nhật (Japanese)",
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "dialect": "Tiếng Nhật (Japanese) - Chuyện đời / kể chuyện senior Nhật"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-16",
+    "daysSinceLatest": 0,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (0 ngày trước)",
+    "healthDetail": "Xuat ban 290 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-156_時代を生きた声",
+    "dossierPath": "data/raw-channels-deep/RAW-156_時代を生きた声",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 56300,
+    "videoCountLive": 290,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@時代を生きた声",
+     "channelId": "UCPXSL9saGzpbMcqIZuvi9Tw",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-157",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCMvoDcgw7_oRBuQTvL6WNtQ",
+    "title": "シルバー世代の語り部",
+    "handle": "@シルバー世代の語り部",
+    "url": "https://www.youtube.com/@シルバー世代の語り部",
+    "subscribers": 15600,
+    "views": 805298,
+    "videoCount": 57,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Người kể chuyện thế hệ bạc / Ký ức Nhật",
+   "editorialNiche": "Chuyện đời / kể chuyện senior Nhật",
+   "visionAnalysis": {
+    "channelName": "シルバー世代の語り部",
+    "handle": "@シルバー世代の語り部",
+    "videoTitles": [
+     "谷底に捨てられた瀕死の奥女中…12歳の薬草採りが救い、江戸の闇を暴く｜野談｜時代劇｜昔話",
+     "最後の一杯の粥を物乞いに差し出した貧しい娘…その善意が運命を変えた｜民話｜野談｜昔話",
+     "姉の身代わりで「口のきけない跡取り」に嫁いだ娘…初夜に明かされた秘密｜野談｜昔話｜民話"
+    ],
+    "mainTopic": "Kenh mau ngach Chuyện đời / kể chuyện senior Nhật - bo sung 16/09/2026",
+    "suggestedNiche": "Chuyện đời / kể chuyện senior Nhật",
+    "language": "JA"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Nhật (Japanese)",
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "dialect": "Tiếng Nhật (Japanese) - Chuyện đời / kể chuyện senior Nhật"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-07-27",
+    "daysSinceLatest": 51,
+    "healthStatus": "SLOW",
+    "healthBadge": "🟡 (51 ngày trước)",
+    "healthDetail": "Xuat ban 57 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-157_シルバー世代の語り部",
+    "dossierPath": "data/raw-channels-deep/RAW-157_シルバー世代の語り部",
+    "topVideosCount": 10,
+    "tagsCount": 45,
+    "subscribersLive": 15600,
+    "videoCountLive": 57,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@シルバー世代の語り部",
+     "channelId": "UCMvoDcgw7_oRBuQTvL6WNtQ",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 16/09/2026)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-158",
+   "fileName": null,
+   "channel": {
+    "channelId": "UC2AIhcNB9EOsGaZiG0S7MTA",
+    "title": "お金の心理",
+    "handle": "@お金の心理",
+    "url": "https://www.youtube.com/@お金の心理",
+    "subscribers": 9560,
+    "views": 940132,
+    "videoCount": 32,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Tâm lý tiền / Kinh tế học hành vi Nhật",
+   "editorialNiche": "Kinh tế Nhật",
+   "visionAnalysis": {
+    "channelName": "お金の心理",
+    "handle": "@お金の心理",
+    "videoTitles": [
+     "一度背を向けたら二度と振り返らない人の心理",
+     "写真を撮らない人の心理｜記憶の科学",
+     "スマホを5年以上買い替えない人たち、実はこんな人たちです"
+    ],
+    "mainTopic": "Kenh mau ngach Kinh tế Nhật - bo sung 16/09/2026",
+    "suggestedNiche": "Kinh tế Nhật",
+    "language": "JA"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Nhật (Japanese)",
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "dialect": "Tiếng Nhật (Japanese) - Kinh tế Nhật"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-16",
+    "daysSinceLatest": 0,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (0 ngày trước)",
+    "healthDetail": "Xuat ban 32 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-158_お金の心理",
+    "dossierPath": "data/raw-channels-deep/RAW-158_お金の心理",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 9560,
+    "videoCountLive": 32,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@お金の心理",
+     "channelId": "UC2AIhcNB9EOsGaZiG0S7MTA",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-159",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCn-u2CG-jtoY-UOVfbubp6g",
+    "title": "시니어살림노트",
+    "handle": "@시니어살림노트",
+    "url": "https://www.youtube.com/@시니어살림노트",
+    "subscribers": 88500,
+    "views": 7026931,
+    "videoCount": 27,
+    "country": null,
+    "avatar": ""
+   },
+   "niche": "Ghi chú sinh hoạt senior Hàn / Sống khỏe tuổi già",
+   "editorialNiche": "Sức khỏe / sinh hoạt senior Hàn",
+   "visionAnalysis": {
+    "channelName": "시니어살림노트",
+    "handle": "@시니어살림노트",
+    "videoTitles": [
+     "누런 옷 제발 삶지 마세요! 천원짜리 '이것'만 부으면 3분만에 새하얗게 묵은 때도 싹 빠집니다! 버리기전에 딱 한 번만 해보세요! 수건 쉰내까지 완벽 세탁 초간단 살림 비법",
+     "마트에서 이런 고추장은 절대 사지 마세요!  저는 이것만 삽니다! 고추장 TOP 3 추천! 맛없는 고추장 단번에 살려내는 꿀팁까지",
+     "고추 쌀 때 잔뜩 사서 '소주'를 부으세요! 1년 내내  든든합니다! 아삭하고 곰팡이 없는 초간단 고추장아찌 황금비율 5분 만에 끝나는 쉬운 고추장아찌 &amp; 무침 레시피"
+    ],
+    "mainTopic": "Kenh mau ngach Sức khỏe / sinh hoạt senior Hàn - bo sung 16/09/2026",
+    "suggestedNiche": "Sức khỏe / sinh hoạt senior Hàn",
+    "language": "KO"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu kenh mau thieu cua ngach",
+   "audioLanguageInfo": {
+    "language": "Tiếng Hàn (Korean)",
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "dialect": "Tiếng Hàn (Korean) - Sức khỏe / sinh hoạt senior Hàn"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-08",
+    "daysSinceLatest": 8,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (8 ngày trước)",
+    "healthDetail": "Xuat ban 27 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:49:32+07:00",
+    "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
+    "folderName": "RAW-159_시니어살림노트",
+    "dossierPath": "data/raw-channels-deep/RAW-159_시니어살림노트",
+    "topVideosCount": 10,
+    "tagsCount": 35,
+    "subscribersLive": 88500,
+    "videoCountLive": 27,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@시니어살림노트",
+     "channelId": "UCn-u2CG-jtoY-UOVfbubp6g",
+     "firstSeenCommit": "WORKTREE-16/09-PM",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:extract-for-missing-niche",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
     "healthState": "ACTIVE",
     "monetizationState": "MONETIZED_ACTIVE",
     "events": [],

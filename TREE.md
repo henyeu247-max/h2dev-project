@@ -40,13 +40,13 @@ Y:\YTB\
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165
-    │   ├── tai-lieu-full.json     # 103 card (prompt 33 · report 20 · tool 17 · list 16 · other 12 · internal-doc 5)
+    │   ├── tai-lieu-full.json     # 109 card (prompt 35 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
     │   ├── ngach-xanh.json        # 34 ngách (xanh:true 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
     │   ├── chien-luoc.json        # workflow 9 bước · 4 nguyên tắc
     │   ├── kich-ban.json          # 45 — extract cũ, UI không đọc
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)
-    │   └── raw-kenh-mau.json      # 83 record canonical (95 source · 12 duplicate) · OCR source 95/95 · Vision 31 · verified 2
+    │   └── raw-kenh-mau.json      # 124 record canonical (118 kênh unique · 6 bản ghi trùng channel) · OCR 83 · Vision 124/124 · vidIQ verified 83
     │
     ├── assets\                    # tailwind.css · viddar.css · learn.css · fonts\ (woff2 self-host)
     │   ├── thumbs\                # 136/136 khớp videos.json + placeholder.svg
@@ -77,7 +77,7 @@ Y:\YTB\
     ├── _private\                  # chỗ key local — web bị chặn
     ├── _archive\                  # rác đã dời khỏi web serve — KHÔNG xoá (NO_DELETE) · web bị chặn
     │   └── 20260831-rac\_verify\  # 7 file scratch (chứa SKU pending VIDEO-3F8339)
-    ├── raw-kenh-goc\             # 83 ảnh raw canonical + metadata · web bị CHẶN (403)
+    ├── raw-kenh-goc\             # 124 ảnh raw canonical + metadata · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git
 ```

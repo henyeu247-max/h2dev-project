@@ -1,6 +1,6 @@
 {
  "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
- "updatedAt": "2026-09-15T22:30:18.415674+00:00",
+ "updatedAt": "2026-09-16T09:19:10.000000+00:00",
  "totalRecords": 124,
  "records": [
   {
@@ -21368,7 +21368,8 @@
     "latencySec": 4.41,
     "analyzedAt": "2026-09-15T22:28:19.540813+00:00",
     "source": "rss_clean"
-   }
+   },
+   "duplicateOf": "RAW-103"
   },
   {
    "id": "RAW-105",
@@ -21498,7 +21499,8 @@
     "latencySec": 3.79,
     "analyzedAt": "2026-09-15T22:28:18.618135+00:00",
     "source": "rss_clean"
-   }
+   },
+   "duplicateOf": "RAW-103"
   },
   {
    "id": "RAW-106",
@@ -21628,7 +21630,8 @@
     "latencySec": 4.29,
     "analyzedAt": "2026-09-15T22:28:19.994386+00:00",
     "source": "rss_clean"
-   }
+   },
+   "duplicateOf": "RAW-054"
   },
   {
    "id": "RAW-107",
@@ -21758,7 +21761,8 @@
     "latencySec": 3.42,
     "analyzedAt": "2026-09-15T22:28:19.005285+00:00",
     "source": "rss_clean"
-   }
+   },
+   "duplicateOf": "RAW-054"
   },
   {
    "id": "RAW-108",
@@ -22019,7 +22023,8 @@
     "latencySec": 5.35,
     "analyzedAt": "2026-09-15T22:28:23.115409+00:00",
     "source": "rss_clean"
-   }
+   },
+   "duplicateOf": "RAW-108"
   },
   {
    "id": "RAW-110",
@@ -23850,7 +23855,8 @@
     "latencySec": 3.8,
     "analyzedAt": "2026-09-15T22:28:39.222033+00:00",
     "source": "rss_clean"
-   }
+   },
+   "duplicateOf": "RAW-089"
   },
   {
    "id": "RAW-128",

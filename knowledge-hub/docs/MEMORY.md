@@ -30,7 +30,7 @@
 
 ## Current live baseline (12/09/2026)
 
-- 136 learning records (132 video + 4 Zoom) · 103 tài liệu · 165 kênh (152 live · 13 dead) · 34 ngách · 45 kịch bản · 27 nguồn reup.
+- 136 learning records (132 video + 4 Zoom) · 109 tài liệu · 165 kênh (152 live · 13 dead) · 34 ngách · 45 kịch bản · 27 nguồn reup.
 - Raw channel: 95 source snapshots, trong đó 83 record canonical và 12 duplicate; UI dùng `data-tabs/raw-kenh-mau.json` (83 record).
 
 ## Historical verified snapshot (21/08/2026)

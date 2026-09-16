@@ -16,11 +16,11 @@ Anh yêu cầu: (1) dời 2 folder backup detritus trong `data/`, (2) xử `.git
 - `python scripts/audit_all_136_videos.py` → **136/136 sạch, 0 lỗi**.
 - Backup trước khi sửa: `_backup/20260916-transcript-duration-fix/` (114 file: json+srt+txt).
 
-### ❓ CÒN LẠI — cần anh quyết (mục 2 chưa làm)
-**`.git` backup 108 MB** trong `_archive/.../_internal/dot_git_backup/`:
-- Là bản sao `.git` (ref `main = e6dc501`, 5 commit cuối 28/08–31/08) — **KHÔNG có commit này trong `.git` hiện tại** (nhánh cũ đã bị rewrite).
-- ⚠️ **Chứa blob `.env` ở ít nhất 2 commit** (`d1263b7` Init + `e6dc501` gỡ .env) → có secret plaintext trong lịch sử.
-- Đã bị web chặn 403. **Đề xuất: XÓA** (là bản sao lịch sử lỗi thời, không phải nguồn chân lý, còn làm phình dung lượng) — nhưng theo NO_DELETE em **chờ anh xác nhận** trước khi xóa.
+### ✅ ĐÃ XỬ LÝ `.git` backup (mục 2 — anh duyệt 17/09)
+- **XÓA** `_archive/20260916-junk-cleanup/_internal/dot_git_backup/` (**108 MB**, 1210 object) — bản sao `.git` cũ, 6 commit 28/08–31/08 (nhánh `main = e6dc501` **không tồn tại** trong `.git` hiện tại), chứa blob **`.env` secret** ở `d1263b7` + `e6dc501`.
+- Ghi bản ghi nguồn gốc trước khi xóa: `_archive/20260916-junk-cleanup/DELETED-dot-git-backup.md` (6 SHA + lý do + khuyến nghị xoay secret).
+- Kết quả: `_archive` 215 MB → **108 MB**; `mv`/`rm` đều thành công trên NTFS (không cần fallback chặn-tên).
+- ⚠️ Khuyến nghị kèm: **xoay (rotate) secret từng nằm trong `.env` cũ** nếu còn hiệu lực (`_private/mcp-keys-h2dev.md`).
 
 ## 2026-09-16 — Dời Rác Vận Hành Vào _archive + Bổ Sung Data/ Vào TREE.md (Vòng 2)
 

@@ -930,5 +930,392 @@
     "kind": "tool",
     "contentNiche": "Lịch sử / Quân sự",
     "source": "noi-bo"
+  },
+  {
+    "sku": "RESEARCH-01",
+    "name": "3D Documentary",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/3D_DOCUMENTARY.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-02",
+    "name": "AI Horror Content Master Prompt",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/AI_Horror_Content_Master_Prompt.txt",
+    "contentNiche": "Drama / Stories",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-03",
+    "name": "Cinematic Videos",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/CINEMATIC_VIDEOS.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-04",
+    "name": "Consistent Character Prompt by Raj",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Consistent_Character_Prompt_by_Raj.docx.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-05",
+    "name": "Dark Ledger",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/DARK_LEDGER.txt",
+    "contentNiche": "Drama / Stories",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-06",
+    "name": "FIFA Masterprompt",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/FIFA_MASTERPROMPT.txt",
+    "contentNiche": "Lịch sử / Quân sự",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-07",
+    "name": "Finance Magical Prompt",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Finance_Magical_Prompt.txt",
+    "contentNiche": "Kinh tế / Tài chính",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-08",
+    "name": "Finance Stick Figure Animation Masterclass",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Finance_Stick_Figure_Animation_Masterclass.txt",
+    "contentNiche": "Kinh tế / Tài chính",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-09",
+    "name": "Finance Videos Master Prompts",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Finance_Videos_Master_Prompts.txt",
+    "contentNiche": "Kinh tế / Tài chính",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-10",
+    "name": "History Documentary",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/HISTORY_DOCUMENTARY.txt",
+    "contentNiche": "Lịch sử / Quân sự",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-11",
+    "name": "History Of Foods",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/HISTORY_OF_FOODS.txt",
+    "contentNiche": "Lịch sử / Quân sự",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-12",
+    "name": "Historical Stick Figure Animation Masterclass",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Historical_Stick_Figure_Animation_Masterclass.txt",
+    "contentNiche": "Lịch sử / Quân sự",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-13",
+    "name": "Master Prompt By Digital Raj",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/MASTER_PROMPT_BY_DIGITAL_RAJ.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-14",
+    "name": "Magial Prompt",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Magial_Prompt.txt",
+    "contentNiche": "Kinh tế / Tài chính",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-15",
+    "name": "Master Prompts",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Master_Prompts.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-16",
+    "name": "Prompts For Fern Like Videos",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/PROMPTS_FOR_FERN_LIKE_VIDEOS.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-17",
+    "name": "Prompts )",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Prompts_).txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-18",
+    "name": "Prompts For VOX Style Animation",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Prompts_For_VOX_Style_Animation.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-19",
+    "name": "So You Want To Own",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/SO_YOU_WANT_TO_OWN.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-20",
+    "name": "Viral History Video Breakdown",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/Viral_History_Video_Breakdown.txt",
+    "contentNiche": "Lịch sử / Quân sự",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-21",
+    "name": "Zenn Stickman",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/ZENN_STICKMAN.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "Telegram Desktop"
+  },
+  {
+    "sku": "RESEARCH-22",
+    "name": "AiLockup — ailockup-90s-anime",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/ailockup-90s-anime.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "AiLockup"
+  },
+  {
+    "sku": "RESEARCH-23",
+    "name": "AiLockup — ailockup-cinematic-films",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/ailockup-cinematic-films.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "AiLockup"
+  },
+  {
+    "sku": "RESEARCH-24",
+    "name": "AiLockup — ailockup-music-video",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/ailockup-music-video.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "AiLockup"
+  },
+  {
+    "sku": "RESEARCH-25",
+    "name": "AiLockup — ailockup-whiteboard",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/ailockup-whiteboard.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "AiLockup"
+  },
+  {
+    "sku": "RESEARCH-26",
+    "name": "AI Playbook — aiplaybook-finance-chatgpt",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/aiplaybook-finance-chatgpt.txt",
+    "contentNiche": "Kinh tế / Tài chính",
+    "kind": "prompt",
+    "source": "AI Playbook"
+  },
+  {
+    "sku": "RESEARCH-27",
+    "name": "AI Playbook — aiplaybook-paper-animation",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/aiplaybook-paper-animation.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "AI Playbook"
+  },
+  {
+    "sku": "RESEARCH-28",
+    "name": "AI Playbook — aiplaybook-seedance-runninghub",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/aiplaybook-seedance-runninghub.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "AI Playbook"
+  },
+  {
+    "sku": "RESEARCH-29",
+    "name": "AI Playbook — aiplaybook-VOX-style",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/aiplaybook-vox-style.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "AI Playbook"
+  },
+  {
+    "sku": "RESEARCH-30",
+    "name": "AI Playbook — aiplaybook-workflow-minutes",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/aiplaybook-workflow-minutes.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "AI Playbook"
+  },
+  {
+    "sku": "RESEARCH-31",
+    "name": "AIpreneur — aipreneur-stickman-prompt",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/aipreneur-stickman-prompt.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "AIpreneur"
+  },
+  {
+    "sku": "RESEARCH-32",
+    "name": "TheByteGenius — bytegenius-1",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/bytegenius-1.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "TheByteGenius"
+  },
+  {
+    "sku": "RESEARCH-33",
+    "name": "TheByteGenius — bytegenius-2",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/bytegenius-2.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "TheByteGenius"
+  },
+  {
+    "sku": "RESEARCH-34",
+    "name": "TheByteGenius — bytegenius-3",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/bytegenius-3.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "TheByteGenius"
+  },
+  {
+    "sku": "RESEARCH-35",
+    "name": "TheByteGenius — bytegenius-4",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/bytegenius-4.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "TheByteGenius"
+  },
+  {
+    "sku": "RESEARCH-36",
+    "name": "TheByteGenius — bytegenius-5",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/bytegenius-5.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "TheByteGenius"
+  },
+  {
+    "sku": "RESEARCH-37",
+    "name": "Markaiguy — markaiguy-doc2",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/markaiguy-doc2.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "Markaiguy"
+  },
+  {
+    "sku": "RESEARCH-38",
+    "name": "Markaiguy — markaiguy-stickman-engine",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/markaiguy-stickman-engine.txt",
+    "contentNiche": "Reup / Hoạt hình",
+    "kind": "prompt",
+    "source": "Markaiguy"
+  },
+  {
+    "sku": "RESEARCH-39",
+    "name": "MonetizeMind — mm-faceless-master",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/mm-faceless-master.txt",
+    "contentNiche": "Nhân bản / Kênh",
+    "kind": "prompt",
+    "source": "MonetizeMind"
+  },
+  {
+    "sku": "RESEARCH-40",
+    "name": "MonetizeMind — mm-master-prompt-1",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/mm-master-prompt-1.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "MonetizeMind"
+  },
+  {
+    "sku": "RESEARCH-41",
+    "name": "MonetizeMind — mm-master-prompt-2",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/mm-master-prompt-2.txt",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "prompt",
+    "source": "MonetizeMind"
+  },
+  {
+    "sku": "RESEARCH-42",
+    "name": "MonetizeMind — mm-mr-finance",
+    "link": "",
+    "file": "data/research-20260916/prompts-built-in/mm-mr-finance.txt",
+    "contentNiche": "Kinh tế / Tài chính",
+    "kind": "prompt",
+    "source": "MonetizeMind"
+  },
+  {
+    "sku": "RESEARCH-43",
+    "name": "MonetizeMind Telegram — crayon-capital-telegram-niche-post",
+    "link": "",
+    "file": "data/research-20260916/niche-research/crayon-capital-telegram-niche-post.txt",
+    "contentNiche": "Kinh tế / Tài chính",
+    "kind": "prompt",
+    "source": "MonetizeMind Telegram"
   }
 ]

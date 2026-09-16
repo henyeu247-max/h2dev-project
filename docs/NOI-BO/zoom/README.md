@@ -55,4 +55,4 @@
 - [AGENTS.md — Boot order & quy tắc làm việc](../../../AGENTS.md)
 - [TREE.md — Cây thư mục chuẩn](../../../TREE.md)
 - [Ngách xanh (34 ngách)](../../../data-tabs/ngach-xanh.json)
-- [Chiến lược (workflow 9 bước)](../../../data-tabs/chien-luoc.json)
+- [Chiến lược (workflow 11 bước)](../../../data-tabs/chien-luoc.json)

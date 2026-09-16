@@ -1,11 +1,11 @@
 {
   "schema": "h2dev.counts-manifest.v1",
-  "generatedAt": "2026-09-16T18:18:45.670Z",
+  "generatedAt": "2026-09-16T19:05:41.098Z",
   "counts": {
     "videos": 136,
     "videoLessons": 132,
     "zoomSessions": 4,
-    "documents": 152,
+    "documents": 153,
     "channels": 165,
     "liveChannels": 152,
     "deadChannels": 13,

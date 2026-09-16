@@ -1,3 +1,29 @@
+## 2026-09-17 — Chuẩn Hóa Kho Nhạc Nền 38 Tracks Theo Ngách & Xóa File Nén 250 MB
+
+### 🎯 Bối cảnh
+User chỉ đạo: Rà soát toàn bộ thư mục `D:\YTB\Nhạc nền` đã giải nén, bóc tách phân loại nhạc nền edit theo từng ngách nội dung, đưa vào catalog chuẩn của dự án để làm việc, và xóa bỏ file `Nhạc nền.rar` (250 MB) sau khi đã check-pass toàn vẹn.
+
+### 🛠️ Can thiệp kỹ thuật
+1. **Kiểm định ffprobe 38/38 file MP3**: 100% file nguyên vẹn, tổng 2.45 giờ nhạc nền chất lượng cao (từ các bản dài 15–24 phút như `nên.mp3`, `LITE BRITE`, `Maestro Tlakaelel` đến các track 1–4 phút).
+2. **Lập `data/music_catalog.json`**: Cung cấp metadata định lượng (thời lượng, bitrate, mood, license YouTube Audio Library / Royalty-free).
+3. **Lập cẩm nang `CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`**: Phân loại chuẩn 5 nhóm ngách:
+   - Lịch sử / Khảo cổ / Đồ vật (Everyday History)
+   - Tiên tri / Kinh Thánh / Bí ẩn vũ trụ (Prophecy & Mystery)
+   - Triết lý / Trầm mặc / Ru ngủ / Vũ trụ (Philosophy & Sleep Science)
+   - Sinh tồn / Động vật hoang dã / Căng thẳng (Wildlife Survival)
+   - Long-form Ambient (Video dài 15–25 phút, AVD tối đa).
+4. **Kết nối Web UI**: Thêm card tài liệu `NOI-BO-MUSIC-01` vào `data-tabs/tai-lieu-full.json` (tài liệu tăng lên 153).
+5. **Chạy `sync-counts.js`**: Tự động đồng bộ số liệu 153 documents sang toàn bộ manifest, docs và memory.
+6. **Xóa `D:\YTB\Nhạc nền.rar`**: Giải phóng 250 MB đĩa cứng sau khi đã check-pass 100%.
+
+### ✅ Kiểm chứng
+- `validate-project.js` PASS 100% (136 / 165 / 45 / 153 / 136 / 136).
+- `sync-counts.js --check` PASS 100%.
+- SQLite Master DB build PASS (153 documents, 2004 FTS5 index).
+
+---
+
+
 ## 2026-09-17 — Dọn Dẹp Toàn Diện: Loại Bỏ >167 Scripts Rác & Chuẩn Hóa Lại Rule NO_DELETE
 
 ### 🎯 Bối cảnh

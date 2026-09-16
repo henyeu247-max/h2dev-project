@@ -1,6 +1,7 @@
 # Dữ liệu nặng / media — KHÔNG đưa vào git
 node_modules/
 video/
+assets/nhac-nen/
 
 # Bản sao lưu & nhật ký kiểm chứng nội bộ
 _backup/

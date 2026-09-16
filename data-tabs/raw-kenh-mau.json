@@ -1,6 +1,6 @@
 {
   "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
-  "updatedAt": "2026-09-16T22:15:00+07:00",
+  "updatedAt": "2026-09-16T22:08:28+07:00",
   "totalRecords": 156,
   "records": [
     {
@@ -27840,6 +27840,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": false,
+        "medium": "ILLUSTRATION_2D",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "DRAWN_2D",
+        "thumbnailNiche": "animated educational science trivia",
+        "thumbnailStyle": "clean stickman cartoon illustration with bold text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.05,
+        "analyzedAt": "2026-09-16T15:07:19.836852+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -27930,6 +27956,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": false,
+        "hasRealHumanFace": true,
+        "presenterCount": "1",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "MIXED_MEDIA",
+        "facelessVerdict": "REAL_HUMAN",
+        "facelessType": "FACE_CAM",
+        "thumbnailNiche": "ancient mysteries and mythology theories",
+        "thumbnailStyle": "expressive presenter with dramatic illustrated artifacts",
+        "confidence": "high",
+        "votes": [
+          "YES",
+          "YES"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": true,
+        "reviewNote": "Presenter face detected (1 person(s)) — verify repeats across videos",
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.5,
+        "analyzedAt": "2026-09-16T15:07:49.728121+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28020,6 +28072,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "Ancient mystery and conspiracy history",
+        "thumbnailStyle": "Sepia vintage archival AI photographs",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 6.51,
+        "analyzedAt": "2026-09-16T15:07:52.200351+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28110,6 +28188,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "ancient history and archaeology mysteries",
+        "thumbnailStyle": "split screen ancient artifacts with glowing symbols",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.92,
+        "analyzedAt": "2026-09-16T15:07:51.162871+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28200,6 +28304,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "ancient DNA ancestry and human origins",
+        "thumbnailStyle": "AI portraits with glowing graphic maps",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.86,
+        "analyzedAt": "2026-09-16T15:07:50.663438+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28290,6 +28420,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "retro-futuristic Japanese visual music",
+        "thumbnailStyle": "cinematic retro sci-fi anime realism",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.98,
+        "analyzedAt": "2026-09-16T15:07:48.901211+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28373,6 +28529,33 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "REAL_PHOTO",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "REAL_FOOTAGE_NO_FACE",
+        "thumbnailNiche": "Vietnamese daily life and local vlog",
+        "thumbnailStyle": "raw casual unedited video stills",
+        "confidence": "high",
+        "votes": [
+          "YES",
+          "NO",
+          "NO"
+        ],
+        "agreement": "majority",
+        "sourceCount": 6,
+        "needsReview": true,
+        "reviewNote": "Votes disagreed: ['YES', 'NO', 'NO']",
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.77,
+        "analyzedAt": "2026-09-16T15:07:53.802018+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28456,6 +28639,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "2+",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "MIXED_MEDIA",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "REAL_FOOTAGE_NO_FACE",
+        "thumbnailNiche": "Health and medical advice",
+        "thumbnailStyle": "Informational infographics with doctor portraits",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.39,
+        "analyzedAt": "2026-09-16T15:07:47.842056+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28539,6 +28748,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "traditional medicine and health tips",
+        "thumbnailStyle": "AI doctor with health graphics and text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.99,
+        "analyzedAt": "2026-09-16T15:07:51.438627+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28622,6 +28857,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": false,
+        "hasRealHumanFace": true,
+        "presenterCount": "1",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "REAL_PHOTO",
+        "facelessVerdict": "REAL_HUMAN",
+        "facelessType": "FACE_CAM",
+        "thumbnailNiche": "health and medical advice",
+        "thumbnailStyle": "doctor presenter with bold warning text",
+        "confidence": "high",
+        "votes": [
+          "YES",
+          "YES"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": true,
+        "reviewNote": "Presenter face detected (1 person(s)) — verify repeats across videos",
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.67,
+        "analyzedAt": "2026-09-16T15:07:49.202504+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28705,6 +28966,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "Senior health and nutrition advice",
+        "thumbnailStyle": "AI doctor with bold Vietnamese text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 5,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.56,
+        "analyzedAt": "2026-09-16T15:07:49.106171+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28788,6 +29075,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": false,
+        "medium": "ILLUSTRATION_2D",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "DRAWN_2D",
+        "thumbnailNiche": "feng shui and fortune advice",
+        "thumbnailStyle": "traditional landscape illustration with bold text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.4,
+        "analyzedAt": "2026-09-16T15:07:47.746893+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28871,6 +29184,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": false,
+        "hasRealHumanFace": true,
+        "presenterCount": "1",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "MIXED_MEDIA",
+        "facelessVerdict": "REAL_HUMAN",
+        "facelessType": "FACE_CAM",
+        "thumbnailNiche": "Vietnamese spirituality feng shui astrology",
+        "thumbnailStyle": "Gold-accented thumbnails with monk and bold text",
+        "confidence": "high",
+        "votes": [
+          "YES",
+          "YES"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": true,
+        "reviewNote": "Presenter face detected (1 person(s)) — verify repeats across videos",
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.13,
+        "analyzedAt": "2026-09-16T15:07:49.202504+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -28954,6 +29293,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": false,
+        "hasRealHumanFace": true,
+        "presenterCount": "1",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "REAL_PHOTO",
+        "facelessVerdict": "REAL_HUMAN",
+        "facelessType": "FACE_CAM",
+        "thumbnailNiche": "Vietnamese Feng Shui spirituality",
+        "thumbnailStyle": "Glowing cutout with bold Vietnamese text",
+        "confidence": "high",
+        "votes": [
+          "YES",
+          "YES"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": true,
+        "reviewNote": "Presenter face detected (1 person(s)) — verify repeats across videos",
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.26,
+        "analyzedAt": "2026-09-16T15:07:47.842056+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29041,7 +29406,33 @@
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
       },
-      "duplicateOf": "RAW-126"
+      "duplicateOf": "RAW-126",
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "Ancient mysteries and disaster speculations",
+        "thumbnailStyle": "Cinematic AI concept art landscapes",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.66,
+        "analyzedAt": "2026-09-16T15:08:03.462418+00:00",
+        "source": "rss_clean"
+      }
     },
     {
       "id": "RAW-152",
@@ -29124,6 +29515,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": false,
+        "medium": "ILLUSTRATION_2D",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "DRAWN_2D",
+        "thumbnailNiche": "Japanese rankings and infographic trivia",
+        "thumbnailStyle": "Clean vertical list infographics",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 3.97,
+        "analyzedAt": "2026-09-16T15:08:01.122562+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29207,6 +29624,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "REAL_PHOTO",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "REAL_FOOTAGE_NO_FACE",
+        "thumbnailNiche": "Celebrity anti-aging health tips",
+        "thumbnailStyle": "Template celebrity portrait bold text overlays",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.3,
+        "analyzedAt": "2026-09-16T15:08:01.403198+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29290,6 +29733,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "REAL_PHOTO",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "REAL_FOOTAGE_NO_FACE",
+        "thumbnailNiche": "senior lifestyle and health advice",
+        "thumbnailStyle": "stock photo with prominent Japanese text overlays",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.57,
+        "analyzedAt": "2026-09-16T15:08:04.932254+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29373,6 +29842,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": false,
+        "hasRealHumanFace": true,
+        "presenterCount": "1",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "REAL_PHOTO",
+        "facelessVerdict": "REAL_HUMAN",
+        "facelessType": "FACE_CAM",
+        "thumbnailNiche": "health and medical advice",
+        "thumbnailStyle": "doctor presenter with graphics and bold text",
+        "confidence": "high",
+        "votes": [
+          "YES",
+          "YES"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": true,
+        "reviewNote": "Presenter face detected (1 person(s)) — verify repeats across videos",
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.52,
+        "analyzedAt": "2026-09-16T15:08:06.657668+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29456,6 +29951,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "MOST",
+        "aiGenerated": false,
+        "medium": "REAL_PHOTO",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "REAL_FOOTAGE_NO_FACE",
+        "thumbnailNiche": "Japanese celebrity history and scandal biography",
+        "thumbnailStyle": "Retro celebrity portraits with bold kanji text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.08,
+        "analyzedAt": "2026-09-16T15:08:03.957394+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29539,6 +30060,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "Japanese historical drama stories",
+        "thumbnailStyle": "AI anime Edo period storytelling",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 6.09,
+        "analyzedAt": "2026-09-16T15:08:08.091266+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29622,6 +30169,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": false,
+        "medium": "MIXED_MEDIA",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "OBJECT_ONLY",
+        "thumbnailNiche": "Psychology and self improvement tips",
+        "thumbnailStyle": "2D minimalist character with warm background text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.58,
+        "analyzedAt": "2026-09-16T15:08:07.065610+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29705,6 +30278,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "SOME",
+        "aiGenerated": false,
+        "medium": "REAL_PHOTO",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "REAL_FOOTAGE_NO_FACE",
+        "thumbnailNiche": "household tips and life hacks",
+        "thumbnailStyle": "bold text overlays on practical photos",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.54,
+        "analyzedAt": "2026-09-16T15:08:05.794878+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29787,6 +30386,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": false,
+        "medium": "ILLUSTRATION_2D",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "DRAWN_2D",
+        "thumbnailNiche": "Korean historical folktales storytelling",
+        "thumbnailStyle": "colorful manhwa illustration with text overlays",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.58,
+        "analyzedAt": "2026-09-16T15:08:06.219697+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29869,6 +30494,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "Korean historical folktales storytelling",
+        "thumbnailStyle": "Korean webtoon manhwa style illustrations",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.44,
+        "analyzedAt": "2026-09-16T15:08:06.219697+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -29951,6 +30602,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "Korean historical folktales storytelling",
+        "thumbnailStyle": "webtoon style AI illustration with bold text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.69,
+        "analyzedAt": "2026-09-16T15:08:09.173126+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -30033,6 +30710,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "Korean historical folk tales storytelling",
+        "thumbnailStyle": "Korean webtoon AI illustration with text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.87,
+        "analyzedAt": "2026-09-16T15:08:08.212013+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -30115,6 +30818,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": false,
+        "medium": "ILLUSTRATION_2D",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "DRAWN_2D",
+        "thumbnailNiche": "Korean historical folktales storytelling",
+        "thumbnailStyle": "Manhwa webtoon style storytelling illustrations",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 5,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.4,
+        "analyzedAt": "2026-09-16T15:08:13.677040+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -30197,6 +30926,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "Korean historical audiobooks and folklore",
+        "thumbnailStyle": "AI animated Joseon era illustrations",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 3.87,
+        "analyzedAt": "2026-09-16T15:08:28.782028+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -30287,6 +31042,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "AI sci-fi cinematic storytelling",
+        "thumbnailStyle": "cinematic photorealistic sci-fi concept art",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 5.19,
+        "analyzedAt": "2026-09-16T15:08:17.950533+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -30377,6 +31158,32 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": true,
+        "medium": "AI_GENERATED",
+        "facelessVerdict": "AI_GENERATED",
+        "facelessType": "AI_GENERATED",
+        "thumbnailNiche": "futuristic concepts and speculative scenarios",
+        "thumbnailStyle": "cinematic AI landscape art with bold text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.47,
+        "analyzedAt": "2026-09-16T15:08:16.640209+00:00",
+        "source": "rss_clean"
       }
     },
     {
@@ -30467,19 +31274,45 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-16",
         "schemaVersion": 1
+      },
+      "thumbnailVision": {
+        "schema": "v4",
+        "isFaceless": true,
+        "hasRealHumanFace": false,
+        "presenterCount": "0",
+        "realPeopleLevel": "NONE",
+        "aiGenerated": false,
+        "medium": "ILLUSTRATION_2D",
+        "facelessVerdict": "NO_REAL_FACE",
+        "facelessType": "DRAWN_2D",
+        "thumbnailNiche": "medieval history animated educational stories",
+        "thumbnailStyle": "cartoon medieval vector illustrations with text",
+        "confidence": "high",
+        "votes": [
+          "NO",
+          "NO"
+        ],
+        "agreement": "unanimous",
+        "sourceCount": 6,
+        "needsReview": false,
+        "reviewNote": null,
+        "model": "ag/gemini-3.7-flash-low",
+        "latencySec": 4.52,
+        "analyzedAt": "2026-09-16T15:08:17.550272+00:00",
+        "source": "rss_clean"
       }
     }
   ],
   "summary": {
-    "totalRecords": 83,
-    "uniqueChannels": 83,
-    "duplicateRecords": 0,
-    "duplicateGroups": 0,
-    "editorialNichesCount": 21,
+    "totalRecords": 156,
+    "uniqueChannels": 149,
+    "duplicateRecords": 7,
+    "duplicateGroups": 5,
+    "editorialNichesCount": 75,
     "vidiqVerified": 83,
     "vidiqActiveCredits": 5640,
-    "totalAggregatedSubscribers": 36176783,
-    "totalAggregatedViews": 5882925944,
+    "totalAggregatedSubscribers": 41241889,
+    "totalAggregatedViews": 6540964165,
     "vidiqVerifiedUnique": 83,
     "topGrowthChannels30d": [
       {

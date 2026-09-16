@@ -1,0 +1,40 @@
+{
+  "id": "RAW-096",
+  "channelId": "UCySIrYAsp3Y7FsE8f2bcz9w",
+  "title": "El Viejo Mexicano",
+  "handle": "@ElViejoMexicano",
+  "url": "https://www.youtube.com/@ElViejoMexicano",
+  "subscribers": 69100,
+  "views": null,
+  "videoCount": 244,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/sYGRcH1HAOIuzDaBC2GJvhNuZ3EVUHtOKn0Jy9hIGMToNBgiYjq3vMdCfNWjipjARkJyCggm=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T16:22:31+07:00",
+  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+  "dataGaps": [
+    "views (tong luot xem kenh): chua do duoc do khong co API - de null trung thuc",
+    "country: khong co trong HTML hien tai - de null trung thuc",
+    "longevityAudit/growth30d: chua do - can do dot 2",
+    "transcripts: chua extract - top video chi co metadata"
+  ],
+  "topTagsSample": [
+    "Inmobiliaria",
+    "México",
+    "México rural",
+    "bienes raíces México",
+    "casas baratas México",
+    "ciudades baratas México",
+    "costo de vida México",
+    "inversión inmobiliaria",
+    "invertir en México",
+    "libertad en México",
+    "mudarse a México",
+    "pueblos de México",
+    "real estate México",
+    "terrenos baratos",
+    "tierra en México",
+    "vida sencilla México",
+    "vivir en México"
+  ],
+  "topTagsCount": 17
+}

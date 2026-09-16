@@ -1,0 +1,28 @@
+{
+  "id": "RAW-101",
+  "channelId": "UCrMoEl093urDOa8AnyJSWWA",
+  "title": "Solo Survival -71°C",
+  "handle": "@SoloSurvival_91",
+  "url": "https://www.youtube.com/@SoloSurvival_91",
+  "subscribers": 11600,
+  "views": null,
+  "videoCount": 78,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/FdR-I4wljkXyDxEgkbcrfuIxM60nvXPJX4SyNJZh3WkMj-KMATUClA5YR_HSife6CIp_RKO9=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T16:23:52+07:00",
+  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+  "dataGaps": [
+    "views (tong luot xem kenh): chua do duoc do khong co API - de null trung thuc",
+    "country: khong co trong HTML hien tai - de null trung thuc",
+    "longevityAudit/growth30d: chua do - can do dot 2",
+    "transcripts: chua extract - top video chi co metadata"
+  ],
+  "topTagsSample": [
+    "construction",
+    "constructionproject",
+    "gooddeed",
+    "repair",
+    "replacement"
+  ],
+  "topTagsCount": 5
+}

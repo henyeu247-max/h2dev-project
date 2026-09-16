@@ -1026,7 +1026,9 @@
         const rawMarket = safeArray(detail.thiTruong);
         let mTag = 'GLOBAL';
         const nameLower = (r.ngach + ' ' + rawMarket.join(' ')).toLowerCase();
-        if (/us|en|tiếng anh|mỹ|quốc tế/.test(nameLower)) mTag = 'US';
+        // Fix 16/09: /\ben\b/ + /\bus\b/ (word boundary) — trước đây /en/ khớp chữ "sEnior"
+        // làm 3 ngách Nhật/Hàn bị gắn nhầm tag 🇺🇸 US.
+        if (/\bus\b|\ben\b|tiếng anh|mỹ|quốc tế/.test(nameLower)) mTag = 'US';
         else if (/jp|nhật|japan/.test(nameLower)) mTag = 'JP';
         else if (/kr|hàn|korea|야담/.test(nameLower)) mTag = 'KR';
         else if (/vn|việt nam|vietnam/.test(nameLower)) mTag = 'VN';
@@ -1262,8 +1264,8 @@
       const kich = await loadJSON('data-tabs/tai-lieu-full.json');
       const videos = await loadJSON('data-tabs/videos.json');
       const bySku = Object.fromEntries(videos.map(v => [v.sku, v]));
-      const KIND_LABEL = { prompt: 'Prompt', list: 'List kênh', tool: 'Tool', drive: 'Drive', form: 'Form', ai: 'AI gen', report: 'Báo cáo', other: 'Khác' };
-      const KIND_BADGE = { prompt: 'badge-brand', list: 'badge-blue', tool: 'badge-amber', drive: 'badge-green', form: 'badge-red', ai: 'badge-blue', report: 'badge-green', other: 'badge-muted' };
+      const KIND_LABEL = { prompt: 'Prompt', list: 'List kênh', tool: 'Tool', drive: 'Drive', form: 'Form', ai: 'AI gen', report: 'Báo cáo', 'internal-doc': 'Tài liệu nội bộ', other: 'Khác' };
+      const KIND_BADGE = { prompt: 'badge-brand', list: 'badge-blue', tool: 'badge-amber', drive: 'badge-green', form: 'badge-red', ai: 'badge-blue', report: 'badge-green', 'internal-doc': 'badge-muted', other: 'badge-muted' };
       const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Nền tảng / Tool', 'Khác'];
       function classifyPrompt(item) {
         if (item.kind) return item.kind;
@@ -1350,7 +1352,7 @@
         const hay = [item.title, item.name, item.sku, item.kind, item.contentNiche, item.videoNiche, item.videoTitle, item.host, item.ext].join(' ').toLowerCase();
         return hay.includes(q);
       });
-      const kindChips = [['', 'Tất cả', kindCounts.all || 0], ['prompt', 'Prompt', kindCounts.prompt || 0], ['report', 'Báo cáo', kindCounts.report || 0], ['list', 'List kênh', kindCounts.list || 0], ['tool', 'Tool', kindCounts.tool || 0], ['drive', 'Drive', kindCounts.drive || 0], ['form', 'Form', kindCounts.form || 0], ['ai', 'AI gen', kindCounts.ai || 0], ['other', 'Khác', kindCounts.other || 0]].filter(x => !x[0] || x[2]);
+      const kindChips = [['', 'Tất cả', kindCounts.all || 0], ['prompt', 'Prompt', kindCounts.prompt || 0], ['report', 'Báo cáo', kindCounts.report || 0], ['list', 'List kênh', kindCounts.list || 0], ['tool', 'Tool', kindCounts.tool || 0], ['drive', 'Drive', kindCounts.drive || 0], ['form', 'Form', kindCounts.form || 0], ['ai', 'AI gen', kindCounts.ai || 0], ['internal-doc', 'Tài liệu nội bộ', kindCounts['internal-doc'] || 0], ['other', 'Khác', kindCounts.other || 0]].filter(x => !x[0] || x[2]);
       const nicheChips = NICHE_ORDER.filter(n => nicheCounts[n]).map(n => [n, n, nicheCounts[n]]);
       const grouped = [];
       NICHE_ORDER.forEach(n => {

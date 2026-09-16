@@ -8,10 +8,10 @@
 ## Kiến Trúc Hệ Thống (7 Tầng — Đã Dỡ Bỏ Hoàn Toàn Tàn Dư Gemini)
 
 - **Tầng 1 — Kho Học Liệu & Âm Thanh Chuẩn:** Catalog video kèm phụ đề sạch 3 định dạng (`transcript.json`, `transcript.srt`, `transcript.txt`), Voice DNA Studio với mẫu trích xuất 45s (tính WPM, profile clone giọng), cẩm nang Master SOP, và media đã kiểm định ffprobe (luồng video + audio khác 0 byte). *(Lưu ý: Cơ chế kiểm toán Gemini mô phỏng đã bị gỡ bỏ triệt để ngày 13/09/2026; thay thế bằng Bộ 10 Tiêu Chuẩn Vàng Nghiệm Thu)*.
-- **Tầng 2 — Thị Trường & Đối Thủ:** Danh bạ kênh đối thủ (sống + chết + OCR/vision), 124 hồ sơ kênh mẫu bao quát 58 ngách nghiệp vụ đã audit live sức sống YPP, chỉ số tốc độ bứt phá (velocity tracker).
+- **Tầng 2 — Thị Trường & Đối Thủ:** Danh bạ kênh đối thủ (sống + chết + OCR/vision), 156 hồ sơ kênh mẫu bao quát 34 ngách nghiệp vụ đã audit live sức sống YPP, chỉ số tốc độ bứt phá (velocity tracker).
 - **Tầng 3 — Pipeline Sản Xuất:** 4 pipeline song song (tôn giáo, hoạt hình 3D, tài liệu động vật, giải nghĩa Kinh Thánh), SOP kịch bản, phân lớp giọng/B-roll/âm thanh, tối ưu giữ chân (AVD).
 - **Tầng 4 — Hạ Tầng Phục Vụ & Mạng Nội Bộ:** Server Node.js (0.0.0.0:8899) chạy dưới dạng Windows Service chính thức (`H2DEV_Service`, NSSM `SERVICE_AUTO_START`), tự chạy khi bật máy không cần đăng nhập; mạng LAN + Tailscale, mở khóa dữ liệu tĩnh nguyên vẹn, kiến trúc map ổ mạng máy trạm (`Y:\`).
-- **Tầng 5 — Hạ Tầng Công Cụ & Mô Hình:** MCP Tool Server chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` dưới dạng Windows Service chính thức (`MCP_Pool_Service`, NSSM `SERVICE_AUTO_START`, :3988/mcp, 168+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...), tự chạy khi mở máy không cần đăng nhập + AI Chat Model Gateway tại 9Router (:20128). Độc lập 100% ngoài WorkBuddy (0 background tasks trong WorkBuddy).
+- **Tầng 5 — Hạ Tầng Công Cụ & Mô Hình:** MCP Tool Server chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` dưới dạng Windows Service chính thức (`MCP_Pool_Service`, NSSM `SERVICE_AUTO_START`, :3988/mcp, 180+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...), tự chạy khi mở máy không cần đăng nhập + AI Chat Model Gateway tại 9Router (:20128). Độc lập 100% ngoài WorkBuddy (0 background tasks trong WorkBuddy).
 - **Tầng 6 — Tự Động Hóa & Script Kiểm Định:** Pipeline tiếp nhận (`inbox/`), đồng bộ catalog, bộ test validation (`validate-project.js`), công cụ sửa chữa và quét bảo mật.
 - **Tầng 7 — Tri Thức Vận Hành Thực Chiến:** Masterclass Zoom chuyên gia (quy trình xây kênh 11 bước, nuôi proxy IPv4/Gmail, 150 phân cảnh/video, chuỗi AVD kép, quy trình AdSense và kháng nghị).
 
@@ -19,7 +19,7 @@
 
 Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhánh kỹ thuật độc lập:
 - **Luồng A — Nghiệm Thu Video & Toàn Vẹn Dữ Liệu:** Bộ 10 Tiêu Chuẩn Vàng Video, phụ đề 3 định dạng, kiểm định ffprobe.
-- **Luồng B — Sức Sống Ngách & Tình Báo Đối Thủ:** 58 ngách nghiệp vụ, audit live YPP 124 kênh, velocity tracker.
+- **Luồng B — Sức Sống Ngách & Tình Báo Đối Thủ:** 34 ngách nghiệp vụ, audit live YPP 156 kênh, velocity tracker.
 - **Luồng C — Kỹ Thuật Nội Dung & Voice DNA Studio:** Trích xuất audio 45s, gắn nhãn Cờ ngôn ngữ âm thanh chuẩn thực tế (Language Flag: 🇺🇸, 🇯🇵, 🇷🇺, 🇪🇸...), tính WPM, clone ElevenLabs, tối ưu AVD.
 - **Luồng D — Hạ Tầng Server, MCP Local & Deploy VPS:** Local MCP :3988, 9Router :20128, Node server, deploy VPS.
 
@@ -58,7 +58,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | `nguon-reup.json` | **27** |
 | `chien-luoc.json` | workflow 9 bước · 4 nguyên tắc cốt lõi |
 | `dong-bo-ngoai.json` | 13 matched · 19 merged · 5 không gom · 4 pipeline |
-| `raw-kenh-mau.json` | **124** record canonical (bao quát 58 ngách nghiệp vụ đã audit live sức sống YPP · có Voice DNA Studio 45s, cờ ngôn ngữ Language Flag & vidIQ velocity tracker/OCR Outliers) |
+| `raw-kenh-mau.json` | **156** record canonical (bao quát 34 ngách nghiệp vụ đã audit live sức sống YPP · có Voice DNA Studio 45s, cờ ngôn ngữ Language Flag & vidIQ velocity tracker/OCR Outliers) |
 
 **Tài sản đi kèm:** `docs/` 138 thư mục (132 `VIDEO-*` + 5 `ZOOM-*` + `NOI-BO`) · `assets/thumbs/` 136/136 khớp + `placeholder.svg` · `video/` 136 thư mục (132 mp4 + 4 webm Zoom); kiểm ffprobe hiện tại: 136/136 có luồng hình và 136/136 có luồng audio, không có file 0 byte.
 
@@ -92,7 +92,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 - **Dọn rác: DỜI (ưu tiên) hoặc CHẶN, không XÓA** (NO_DELETE). `git mv` vào `_archive\<YYYYMMDD>-rac\` — nhưng **fail "Permission denied"** trên NTFS với tên có dấu/dấu cách → khi đó thêm tên vào `BLOCKED` (`server.js:150`) thay vì copy (copy sinh trùng lặp vô ích, phình repo).
 - 🔑 **CẤM hardcode key vào repo** — kể cả script "chạy nội bộ". Key phải đọc từ env (`os.environ.get`) hoặc `_private/` (đã chặn web 2 lớp: segment `_private` + regex `mcp-keys`). Đã từng lộ: `transcribe_videos.py:163` hardcode `Bearer sk-b920…`.
 - 🔑 **Đếm secret ≠ đếm regex match.** Phải `sort -u` + **soi ngữ cảnh từng match**. `fc-` trong dự án này phần lớn là **fragment tên file ảnh** (`C9F89BF6-…-4Afc-…`) hoặc **token URL video** — không phải key. Quét secret phải quét **toàn bộ repo**, không chỉ `docs/` + `knowledge-hub/` (em từng bỏ sót `scripts/`).
-- 🔑 **MCP Tool Server chuẩn chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` trên cổng `http://127.0.0.1:3988/mcp`** (Healthcheck: `http://127.0.0.1:3988/health` — 168+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...). **9Router tại `127.0.0.1:20128` là AI Chat Model Gateway** (chuyên điều hướng LLM chat models như Claude/GPT/Gemini), KHÔNG PHẢI là MCP Tool Server. Trước đây MCP Pool từng chạy trên VPS, nay đã được chuyển về chạy Local độc lập tại `D:\Mcp-Pool-Vps`. Cấu hình nằm ở IDE/CLI ngoài dự án.
+- 🔑 **MCP Tool Server chuẩn chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` trên cổng `http://127.0.0.1:3988/mcp`** (Healthcheck: `http://127.0.0.1:3988/health` — 180+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...). **9Router tại `127.0.0.1:20128` là AI Chat Model Gateway** (chuyên điều hướng LLM chat models như Claude/GPT/Gemini), KHÔNG PHẢI là MCP Tool Server. Trước đây MCP Pool từng chạy trên VPS, nay đã được chuyển về chạy Local độc lập tại `D:\Mcp-Pool-Vps`. Cấu hình nằm ở IDE/CLI ngoài dự án.
 - ⚠️ `d:\YTB\.mcp.json` là **legacy, đã không còn tồn tại** — không trỏ vào file này nữa.
 
 ## 🔑 Phân định Key & Dịch vụ — Chuẩn 12/09/2026

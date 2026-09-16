@@ -38,7 +38,7 @@ Y:\YTB\
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165
-    │   ├── tai-lieu-full.json     # 152 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
+    │   ├── tai-lieu-full.json     # 153 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
     │   ├── ngach-xanh.json        # 34 ngách (xanh:true 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
     │   ├── chien-luoc.json        # workflow 11 bước · 4 nguyên tắc

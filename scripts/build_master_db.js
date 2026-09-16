@@ -126,6 +126,7 @@ CREATE TABLE competitor_channels (
     dedicated_skill TEXT,
     master_script_prompt TEXT,
     handle_history_json TEXT,
+    channel_lifecycle_json TEXT,
     FOREIGN KEY (niche_id) REFERENCES niches (niche_id)
 ) STRICT;
 
@@ -432,8 +433,9 @@ const insertChannel = db.prepare(`
     editorial_niche, latest_upload_date, days_since_latest, ypp_status,
     is_monetized, has_voice_sample, voice_sample_path, wpm, language_flag,
     audio_language_code, voice_talent_profile, has_mission_control,
-    sop_doc_path, dedicated_skill, master_script_prompt, handle_history_json
-  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    sop_doc_path, dedicated_skill, master_script_prompt, handle_history_json,
+    channel_lifecycle_json
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   ON CONFLICT(channel_id) DO UPDATE SET
     raw_id = coalesce(competitor_channels.raw_id, excluded.raw_id),
     subscribers = max(competitor_channels.subscribers, excluded.subscribers),
@@ -446,7 +448,11 @@ const insertChannel = db.prepare(`
       WHEN competitor_channels.handle_history_json IS NULL THEN excluded.handle_history_json
       WHEN length(excluded.handle_history_json) > length(competitor_channels.handle_history_json) THEN excluded.handle_history_json
       ELSE competitor_channels.handle_history_json
-    END
+    END,
+    -- Cung logic cho lifecycle: row DB = kenh THAT (canonical record dau tien theo channelId).
+    -- DUPLICATE la thuoc tinh cap RECORD (RAW-104/105/127...) - giu trong JSON cho UI;
+    -- DB uu tien trang thai kenh that (canonical insert dau tien) de query "kenh dang song" dung.
+    channel_lifecycle_json = coalesce(competitor_channels.channel_lifecycle_json, excluded.channel_lifecycle_json)
 `);
 
 db.exec('BEGIN TRANSACTION;');
@@ -542,7 +548,8 @@ for (const r of rawKenhMau) {
     sopDocPath,
     dedicatedSkill,
     masterScriptPrompt,
-    JSON.stringify(r.handleHistory || [])
+    JSON.stringify(r.handleHistory || []),
+    JSON.stringify(r.channelLifecycle || {})
   );
   channelCount++;
   insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${nicheName} ${(ch.topics || []).join(' ')}`);
@@ -615,7 +622,8 @@ for (const k of kenhMau) {
     null,
     null,
     null,
-    JSON.stringify([{ handle: k.handle || '', channelId: null, firstSeenCommit: null, firstSeenDate: k.ngay_do || null, source: 'kenh-mau.json (benchmark record - no git history)' }])
+    JSON.stringify([{ handle: k.handle || '', channelId: null, firstSeenCommit: null, firstSeenDate: k.ngay_do || null, source: 'kenh-mau.json (benchmark record - no git history)' }]),
+    JSON.stringify({ state: k.dead ? 'DEAD_404' : 'ACTIVE', stateReason: k.dead ? 'kenh-mau.json dead flag (404 khi do)' : 'kenh-mau.json benchmark record', healthState: null, monetizationState: null, events: [], auditedAt: k.ngay_do || null, schemaVersion: 1 })
   );
   channelCount++;
   insertFts.run(channelId, 'CHANNEL', title, `${title} ${k.handle} ${nicheName}`);

@@ -1,0 +1,64 @@
+# SOURCE: https://docs.google.com/document/d/e/2PACX-1vTUodRqnOLvhfpXAaLVZPydVxnMCr4hpwqFZXH54Aptwl7HTfcPgd2GThc3miDSJfOY8xbBc8Od9cMz/pub
+
+Untitled document- Đã công bố bằng Google Tài liệu
+Báo vi phạmTìm hiểu thêm
+
+Untitled document
+Cập nhật tự động 5 phút một lần
+
+Byte Genius
+Geography Videos
+
+Act as an expert AI Video Prompt Engineer and viral Shorts strategist. Your task is to generate ideas and frame-based prompts that replicate the EXACT visual, narrative, editing, and audio style of the viral channel (3D Satellite Map Motion Graphics, Geo-Spatial Animation, Glowing Neon Highlights, and Documentary-style dark geographic facts).
+
+### CORE VISUAL, EDITING & NARRATIVE RULES:
+- Visual Aesthetic (Bright Continental Satellite Maps):
+  - Backgrounds & Opening: Ultra-high-resolution photorealistic high-altitude satellite map view featuring bright, vivid, natural daylight lighting (clear, high-clarity Google Earth style with vibrant green, brown, and bright blue ocean tones—not overly dark or dim).
+  - Visual Overlays: Bright glowing neon lines (red, blue, or yellow) defining borders, flight paths, or danger zones, with clean, professional contrast against the bright map.
+  - Elements: 3D or 2D minimalist icons (commercial airplanes, ships, X marks, warning signs, pins) casting realistic drop shadows on the map.
+- Editing Style & Motion (Cinematic Fluid Animation & Dynamic Zoom):
+  - Camera Movement (CRITICAL FOR SCENE 1): Smooth, fluid cinematic 3D motion physics with natural ease-in and ease-out. Starts at a wide high-altitude continental view, then executes a dynamic, hyper-smooth, cinematic kinetic zoom-in directly plunging down into the target area as the glowing neon border materializes. Continuous smooth tracking and isometric pans. NO hard cuts within a scene.
+- Narrative & Audio:
+  - Voiceover: Fast, mysterious, documentary-style narration presenting shocking geographical facts.
+  - SFX: Deep bass whooshes, digital high-tech scanning sounds, radar beeps, and atmospheric drone music.
+
+Follow this two-phase workflow strictly:
+
+### PHASE 1: 10 VIRAL GEO-SPATIAL STORY CONCEPTS
+Generate 10 viral Shorts concepts matching @GeoGlobeTales' exact vibe (strictly 8 seconds per scene).
+Format as a clean table: | # | Topic / Story | Scene 1: Shocking Hook (0-8s) | Scene 2: The Context (8-16s) | Scene 3: The Twist (16-24s) | Scene 4: The Payoff (24-32s) |
+
+Stop and wait at the end of Phase 1. Ask me to choose a number from 1 to 10. Do NOT proceed to Phase 2 until I give the command.
+
+---
+
+### PHASE 2: 4-SCENE FRAME-TO-VIDEO BLUEPRINT (8 seconds each)
+Once I select a number, break it down into exactly 4 precise chronological scenes (strictly 8 seconds each).
+
+CRITICAL OUTPUT FORMATTING CONSTRAINT: 
+You MUST output each specific prompt inside its own SEPARATE markdown code block. ONLY Scene 1 requires a separate Image Prompt. Scenes 2, 3, and 4 must ONLY contain a Video Prompt because I will use the exact last frame of the previous generated video.
+
+Format the output EXACTLY like this:
+
+**Scene 1: THE SHOCKING HOOK (0-8 seconds)**
+Image Prompt:
+[Describe a bright, high-resolution photorealistic high-altitude satellite map view (Google Earth perspective showing a major continent or region under clear daylight with vivid colors), 3D topography, realistic ocean depth, and a glowing neon outline starting to form over the target country. Clean, professional geo-spatial motion graphics style, vertical 9:16 aspect ratio.]
+
+Video Prompt:
+- Action: Upload Scene 1 image as the start frame. Cinematic fluid animation! The camera starts at a wide continental view, then executes a dynamic, ultra-smooth kinetic zoom-in with natural easing directly into the target region as a bright glowing neon border fully materializes. No hard cuts. (Duration: 8 seconds)
+- Audio & SFX: [Describe narrator dialogue and specific SFX, e.g., deep bass whoosh as the camera zooms in].
+
+**Scene 2: THE CONTEXT (8-16 seconds)**
+Video Prompt:
+- Action: CRITICAL: Upload LAST FRAME from Scene 1. Continuous fluid animation. [Describe the smooth 3D isometric tilt or panning movement across the bright map, with fluid easing and new icons or neon lines appearing seamlessly]. (Duration: 8 seconds)
+- Audio & SFX: [Describe narrator dialogue and specific SFX].
+
+**Scene 3: THE TWIST (16-24 seconds)**
+Video Prompt:
+- Action: CRITICAL: Upload LAST FRAME from Scene 2. Continuous fluid animation. [Describe further smooth camera movement, dynamic zoom-ins, and visual data/icons popping up over the 3D terrain with polished motion physics]. (Duration: 8 seconds)
+- Audio & SFX: [Describe narrator dialogue and specific SFX].
+
+**Scene 4: THE PAYOFF (24-32 seconds)**
+Video Prompt:
+- Action: CRITICAL: Upload LAST FRAME from Scene 3. Final dramatic cinematic movement. [Describe the smooth zoom out, tilt, or final glowing safe path/border drawing out cleanly to resolve the story]. (Duration: 8 seconds)
+- Audio & SFX: [Describe concluding narration and SFX].

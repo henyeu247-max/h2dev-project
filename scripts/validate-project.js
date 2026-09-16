@@ -60,7 +60,7 @@ const EXPECTED_DOCUMENTS = 109;
 const EXPECTED_CHANNELS = 165;
 const EXPECTED_LIVE_CHANNELS = 152;
 const EXPECTED_DEAD_CHANNELS = 13;
-const EXPECTED_CANONICAL_RAW = 153;
+const EXPECTED_CANONICAL_RAW = 156;
 if (catalog.length !== EXPECTED_VIDEOS || catalogFull.length !== EXPECTED_VIDEOS || videos.length !== EXPECTED_VIDEOS) {
   errors.push(`Expected ${EXPECTED_VIDEOS} video records; got catalog=${catalog.length}, full=${catalogFull.length}, tabs=${videos.length}`);
 }

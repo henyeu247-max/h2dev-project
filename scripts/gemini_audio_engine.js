@@ -11,13 +11,32 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const KEYS_FILE = path.join(ROOT, '_private', 'gemini-api-keys.json');
 
-function getApiKey() {
-  if (process.env.GEMINI_API_KEY) return process.env.GEMINI_API_KEY;
-  if (fs.existsSync(KEYS_FILE)) {
-    const keys = JSON.parse(fs.readFileSync(KEYS_FILE, 'utf8'));
-    return keys.GEMINI_API_KEY;
+function getApiKeys() {
+  if (process.env.GEMINI_KEYS) {
+    return process.env.GEMINI_KEYS.split(',').map(s => s.trim()).filter(Boolean);
   }
-  throw new Error(`Khong tim thay GEMINI_API_KEY tai ${KEYS_FILE} hoac env`);
+  if (fs.existsSync(KEYS_FILE)) {
+    const data = JSON.parse(fs.readFileSync(KEYS_FILE, 'utf8'));
+    if (data.all_live_keys && Array.isArray(data.all_live_keys)) return data.all_live_keys;
+    if (data.primary_key) return [data.primary_key, ...(data.fallback_keys || [])];
+    if (data.GEMINI_API_KEY) return [data.GEMINI_API_KEY];
+  }
+  throw new Error(`Khong tim thay GEMINI_KEYS tai ${KEYS_FILE} hoac env`);
+}
+
+async function executeWithKeyRotation(fn) {
+  const keys = getApiKeys();
+  let lastErr = null;
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    try {
+      return await fn(key);
+    } catch (err) {
+      lastErr = err;
+      console.log(`[KeyRotation] Key #${i + 1} gap loi (${err.message.slice(0, 60)}), chuyen key fallback...`);
+    }
+  }
+  throw new Error(`Tat ca ${keys.length} keys trong pool deu that bai. Loi cuoi: ${lastErr?.message}`);
 }
 
 async function uploadToFilesApi(filePath, mimeType, apiKey) {
@@ -70,15 +89,15 @@ async function analyzeAudio(filePath, options = {}) {
     throw new Error(`File am thanh khong ton tai: ${filePath}`);
   }
 
-  const apiKey = getApiKey();
-  const fileName = path.basename(filePath);
-  const ext = path.extname(filePath).toLowerCase();
-  const mimeType = ext === '.wav' ? 'audio/wav' : 'audio/mp3';
-  const stats = fs.statSync(filePath);
-  const sizeMB = stats.size / (1024 * 1024);
+  return await executeWithKeyRotation(async (apiKey) => {
+    const fileName = path.basename(filePath);
+    const ext = path.extname(filePath).toLowerCase();
+    const mimeType = ext === '.wav' ? 'audio/wav' : 'audio/mp3';
+    const stats = fs.statSync(filePath);
+    const sizeMB = stats.size / (1024 * 1024);
 
-  const model = options.model || 'gemini-2.5-flash';
-  const customPrompt = options.prompt || `Bạn là chuyên gia thẩm định âm thanh và đạo diễn âm thanh YouTube Faceless.
+    const model = options.model || 'gemini-2.5-flash';
+    const customPrompt = options.prompt || `Bạn là chuyên gia thẩm định âm thanh và đạo diễn âm thanh YouTube Faceless.
 Hãy nghe kỹ toàn bộ file âm thanh đính kèm này và xuất kết quả phân tích dạng JSON thuần túy theo schema sau:
 {
   "genre_style": "thể loại nhạc và phong cách",
@@ -92,65 +111,64 @@ Hãy nghe kỹ toàn bộ file âm thanh đính kèm này và xuất kết quả
   "video_editing_placement": "khuyến nghị vị trí dựng: Hook mở màn, Nhạc nền lót xuyên suốt, hay Cao trào"
 }`;
 
-  let audioPart;
-  if (sizeMB <= 15) {
-    // Gui truc tiep inlineData base64
-    const base64 = fs.readFileSync(filePath).toString('base64');
-    audioPart = {
-      inlineData: {
-        mimeType,
-        data: base64,
+    let audioPart;
+    if (sizeMB <= 15) {
+      const base64 = fs.readFileSync(filePath).toString('base64');
+      audioPart = {
+        inlineData: {
+          mimeType,
+          data: base64,
+        },
+      };
+    } else {
+      const fileUri = await uploadToFilesApi(filePath, mimeType, apiKey);
+      audioPart = {
+        fileData: {
+          mimeType,
+          fileUri,
+        },
+      };
+    }
+
+    const payload = {
+      contents: [
+        {
+          parts: [
+            audioPart,
+            { text: customPrompt },
+          ],
+        },
+      ],
+      generationConfig: {
+        responseMimeType: 'application/json',
+        temperature: 0.1,
       },
     };
-  } else {
-    // Dung Files API cho file lon (>15 MB)
-    const fileUri = await uploadToFilesApi(filePath, mimeType, apiKey);
-    audioPart = {
-      fileData: {
-        mimeType,
-        fileUri,
-      },
-    };
-  }
 
-  const payload = {
-    contents: [
-      {
-        parts: [
-          audioPart,
-          { text: customPrompt },
-        ],
-      },
-    ],
-    generationConfig: {
-      responseMimeType: 'application/json',
-      temperature: 0.1,
-    },
-  };
+    const t0 = Date.now();
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
 
-  const t0 = Date.now();
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
+    const data = await res.json();
+    const elapsedSec = ((Date.now() - t0) / 1000).toFixed(2);
+
+    if (data.candidates && data.candidates[0]) {
+      const rawText = data.candidates[0].content.parts[0].text;
+      const parsed = JSON.parse(rawText);
+      return {
+        success: true,
+        fileName,
+        sizeMB: Math.round(sizeMB * 100) / 100,
+        elapsedSec: parseFloat(elapsedSec),
+        result: parsed,
+      };
+    } else {
+      throw new Error(`Gemini API error: ${JSON.stringify(data.error || data)}`);
+    }
   });
-
-  const data = await res.json();
-  const elapsedSec = ((Date.now() - t0) / 1000).toFixed(2);
-
-  if (data.candidates && data.candidates[0]) {
-    const rawText = data.candidates[0].content.parts[0].text;
-    const parsed = JSON.parse(rawText);
-    return {
-      success: true,
-      fileName,
-      sizeMB: Math.round(sizeMB * 100) / 100,
-      elapsedSec: parseFloat(elapsedSec),
-      result: parsed,
-    };
-  } else {
-    throw new Error(`Gemini tra ve loi: ${JSON.stringify(data)}`);
-  }
 }
 
 // Chay truc tiep tu command line
@@ -161,13 +179,12 @@ if (require.main === module) {
     .then(res => {
       console.log(`[PASS] Hoan tat sau ${res.elapsedSec}s:`);
       console.log(JSON.stringify(res.result, null, 2));
-      process.exit(0);
     })
     .catch(err => {
       console.error('[FAIL]', err.message);
-      process.exit(1);
+      process.exitCode = 1;
     });
 }
 
-module.exports = { analyzeAudio, getApiKey };
+module.exports = { analyzeAudio, getApiKeys, executeWithKeyRotation };
 

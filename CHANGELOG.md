@@ -1,3 +1,27 @@
+## 2026-09-16 — Vòng 3: Dọn data Detritus + Audit Chất Lượng 136 Transcript (Phát Hiện Lỗi Integrity Ẩn)
+
+### 🎯 Bối cảnh
+Anh yêu cầu: (1) dời 2 folder backup detritus trong `data/`, (2) xử `.git` backup 108 MB trong `_archive`, (3) audit nội dung 136 transcript.
+
+### 🛠️ Đã làm
+1. **DỜI `data/_backup_desc_20260822_214012\` + `data/backups_20260822_000511\`** → `_archive/20260916-junk-cleanup/data-detritus/` (giữ NO_DELETE; trước đã 404, không lộ web).
+2. **Audit nội dung 136 transcript** bằng `scripts/audit_all_136_videos.py` (5 nhóm A–E, N/N). Kết quả script: **136/136 sạch, 0 lỗi**. Phản biện độc lập (đọc thẳng file): 0 ảo giác (quét 6 pattern), 3 định dạng khớp số segment, coverage median 99.8%.
+3. **🔴 PHÁT HIỆN LỖI ẨN (script bỏ sót):** 36 video có segment `end` **vượt thời lượng video thật** (35 file do segment chú thích cuối `[Khoảng lặng thao tác…]` tràn mốc; 3 file lệch nặng hơn: `VIDEO-f59aa7` overflow 1794s, `VIDEO-c1bd51` 174s, `VIDEO-948336` 6.6s). Nguyên nhân: script chỉ kiểm coverage **< 90%**, bỏ qua **> 100%**.
+4. **Sửa:** `scripts/fix_transcript_duration_overflow.py` (mới) — (a) cập nhật field `duration` theo **ffprobe thật** khi lệch >1s hoặc nhỏ hơn segment cuối; (b) cap `end` segment vượt = real_duration − 0.05s, tính lại `end_time`; (c) ghi lại `transcript.srt` + `.txt` đồng bộ 1-1 **chỉ với transcript schema chuẩn** (bỏ qua 2 file "doc-style" cũ).
+   - Lượt cuối: **11 file sửa `duration` + 23 file cap segment + 1 ZOOM** → chạy lại **idempotent 0/0/0**.
+
+### ✅ Kiểm chứng (đo thật)
+- Độc lập: **0 segment vượt duration**, **0 lệch đồng bộ 3 định dạng**, **0 file thiếu `end_time`** (ngoài 2 doc-style đã biết).
+- `node scripts/validate-project.js` → **PASS** (136 · 165 · 45 · 152 · 136 · 136).
+- `python scripts/audit_all_136_videos.py` → **136/136 sạch, 0 lỗi**.
+- Backup trước khi sửa: `_backup/20260916-transcript-duration-fix/` (114 file: json+srt+txt).
+
+### ❓ CÒN LẠI — cần anh quyết (mục 2 chưa làm)
+**`.git` backup 108 MB** trong `_archive/.../_internal/dot_git_backup/`:
+- Là bản sao `.git` (ref `main = e6dc501`, 5 commit cuối 28/08–31/08) — **KHÔNG có commit này trong `.git` hiện tại** (nhánh cũ đã bị rewrite).
+- ⚠️ **Chứa blob `.env` ở ít nhất 2 commit** (`d1263b7` Init + `e6dc501` gỡ .env) → có secret plaintext trong lịch sử.
+- Đã bị web chặn 403. **Đề xuất: XÓA** (là bản sao lịch sử lỗi thời, không phải nguồn chân lý, còn làm phình dung lượng) — nhưng theo NO_DELETE em **chờ anh xác nhận** trước khi xóa.
+
 ## 2026-09-16 — Dời Rác Vận Hành Vào _archive + Bổ Sung Data/ Vào TREE.md (Vòng 2)
 
 ### 🎯 Vấn đề (rà soát tồn đọng sau khi phiên song song dừng)

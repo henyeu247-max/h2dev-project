@@ -1,0 +1,28 @@
+{
+  "id": "RAW-162",
+  "channelId": "UCBc5mODVVWJtll269LvGO8Q",
+  "title": "비채야담",
+  "handle": null,
+  "url": "https://www.youtube.com/channel/UCBc5mODVVWJtll269LvGO8Q",
+  "subscribers": 19500,
+  "views": 2078854,
+  "videoCount": 60,
+  "country": "KR",
+  "avatar": "",
+  "extractedAt": "2026-09-16T20:55:30+07:00",
+  "extractionSource": "free_yt_engine + /about - extract 16/09/2026 (kenh mau ngach Drama/야담 Hàn - tim qua YouTube search)",
+  "dataGaps": [
+    "handle: chua resolve (co the doi) - dung channelId URL",
+    "transcripts: chua extract"
+  ],
+  "topTagsSample": [
+    "민담",
+    "비채야담",
+    "설화",
+    "야담",
+    "옛날이야기",
+    "오디오북",
+    "조선시대야담"
+  ],
+  "topTagsCount": 7
+}

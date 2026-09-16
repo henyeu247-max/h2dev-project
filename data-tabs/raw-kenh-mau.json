@@ -1,6 +1,6 @@
 {
  "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
- "updatedAt": "2026-09-16T11:08:18.000000+00:00",
+ "updatedAt": "2026-09-16T11:27:24.000000+00:00",
  "totalRecords": 124,
  "records": [
   {
@@ -293,8 +293,8 @@
    "channel": {
     "channelId": "UCIuYagTL7yRu90_-civ2gUQ",
     "title": "The Helpful Christian",
-    "handle": "@TheHelpfulChristian",
-    "url": "https://www.youtube.com/channel/UCIuYagTL7yRu90_-civ2gUQ",
+    "handle": "@TheHelpfullChristian",
+    "url": "https://www.youtube.com/@TheHelpfullChristian",
     "subscribers": 1390,
     "views": 159716,
     "videoCount": 570,
@@ -448,10 +448,10 @@
     ]
    },
    "deepIntelligence": {
-    "status": "EXTRACTED",
+    "status": "EXTRACTED_REAL",
     "topVideosCount": 10,
     "transcriptsCount": 10,
-    "tagsCount": 50,
+    "tagsCount": 3,
     "longevityStatus": "Bền vững >3 tháng (High Stability)",
     "channelAgeDays": 5459,
     "folderName": "RAW-002_The_Helpful_Christian",
@@ -481,7 +481,10 @@
      "publishedAt": "2026-01-30",
      "thumbnail": "https://i.ytimg.com/vi/AgejWuFaNAg/sddefault.jpg",
      "selectionType": "RECENT_VIRAL"
-    }
+    },
+    "subscribersLive": 1410,
+    "videoCountLive": 580,
+    "handleChangeNote": "HANDLE DOI: @TheHelpfulChristian bi kenh \"Lucas Smith\" chiem sau khi kenh doi ten. Handle that: @TheHelpfullChristian (2 chu L). Kenh song: 1410 subs, 580 videos. Xac minh 16/09/2026."
    },
    "vitalityAudit": {
     "evaluatedAt": "2026-09-09",
@@ -1589,8 +1592,8 @@
    "channel": {
     "channelId": "UCXZgWbXq80e7-xFGZebcWkA",
     "title": "Simplify Actually",
-    "handle": "@DanielPatel-f5u",
-    "url": "https://www.youtube.com/channel/UCXZgWbXq80e7-xFGZebcWkA",
+    "handle": "@Simplify.Actually",
+    "url": "https://www.youtube.com/@Simplify.Actually",
     "subscribers": 7890,
     "views": 1012378,
     "videoCount": 45,
@@ -1712,10 +1715,10 @@
     ]
    },
    "deepIntelligence": {
-    "status": "EXTRACTED",
+    "status": "EXTRACTED_REAL",
     "topVideosCount": 10,
     "transcriptsCount": 10,
-    "tagsCount": 50,
+    "tagsCount": 239,
     "longevityStatus": "Bền vững >3 tháng (High Stability)",
     "channelAgeDays": 555,
     "folderName": "RAW-007_Simplify_Actually",
@@ -1745,7 +1748,10 @@
      "publishedAt": "2025-11-15",
      "thumbnail": "https://i.ytimg.com/vi/-vVOOB3Bglk/maxresdefault.jpg",
      "selectionType": "TOP_BREAKTHROUGH"
-    }
+    },
+    "subscribersLive": null,
+    "videoCountLive": 57,
+    "handleChangeNote": "HANDLE DOI: @DanielPatel-f5u (404) -> @Simplify.Actually (co dau cham). Kenh song: 7.98K subs, 57 videos. Xac minh 16/09/2026."
    },
    "vitalityAudit": {
     "evaluatedAt": "2026-09-09",
@@ -2859,40 +2865,16 @@
     ]
    },
    "deepIntelligence": {
-    "status": "EXTRACTED",
-    "topVideosCount": 10,
-    "transcriptsCount": 10,
-    "tagsCount": 50,
-    "longevityStatus": "Đang tăng trưởng 1–3 tháng (Active Growth Phase)",
-    "channelAgeDays": 83,
-    "folderName": "RAW-012_History_Endures",
-    "dossierPath": "data/raw-channels-deep/RAW-012_History_Endures",
-    "vitalityAudit": {
-     "evaluatedAt": "2026-09-09",
-     "latestUploadDate": "2026-08-14",
-     "daysSinceLatest": 26,
-     "healthStatus": "ACTIVE",
-     "healthBadge": "🟢 Đang hoạt động (26 ngày trước)",
-     "healthDetail": "Đang duy trì tần suất ra video đều đặn (video gần nhất 26 ngày trước).",
-     "monetizationStatus": "MONETIZED_ACTIVE",
-     "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
-     "monetizationAdvisory": "Kênh đã vượt ngưỡng 1.000 subs & 4.000 giờ xem, duy trì tương tác tốt với 290,993 lượt xem/30 ngày. Đủ điều kiện hiển thị quảng cáo AdSense và tài trợ.",
-     "estimatedMonthlyRev": "$713 – $1,324 / tháng",
-     "playableVideosCount": 10,
-     "totalAuditedVideos": 10
-    },
-    "audioLanguage": "Tiếng Anh (English)",
-    "languageFlag": "🇺🇸",
-    "featuredDemoVideo": {
-     "videoId": "3Z2UbSm3CfI",
-     "title": "Why do American generals keep visiting these tiny islands?",
-     "views": 123455,
-     "vph": 135,
-     "duration": "PT6M11S",
-     "publishedAt": "2026-07-31",
-     "thumbnail": "https://i.ytimg.com/vi/3Z2UbSm3CfI/maxresdefault.jpg",
-     "selectionType": "RECENT_VIRAL"
-    }
+    "status": "TERMINATED_BY_YOUTUBE",
+    "extractedAt": "2026-09-16T18:27:24+07:00",
+    "source": "YouTube alert page - xac minh 16/09/2026",
+    "folderName": null,
+    "dossierPath": null,
+    "note": "KENH DA BI YOUTUBE GO BO - alert chinh thuc tren trang: \"Kenh nay da bi go bo do vi pham Nguyen tac cong dong cua chung toi.\" RSS 404, khong con video. Snapshot cu (2600 subs, 28 videos, US) giu lai trong record de tham chieu lich su.",
+    "topVideosCount": 0,
+    "tagsCount": 0,
+    "transcriptsCount": 0,
+    "terminatedAt": "2026-09-16 (phat hien)"
    },
    "vitalityAudit": {
     "evaluatedAt": "2026-09-09",
@@ -19201,8 +19183,8 @@
    "channel": {
     "channelId": "UCsq59qsJPbIgMbkcCjIKWkQ",
     "title": "Хроники аномалий",
-    "handle": "@xronikianomaly",
-    "url": "https://www.youtube.com/channel/UCsq59qsJPbIgMbkcCjIKWkQ",
+    "handle": "@xronikianomaliy",
+    "url": "https://www.youtube.com/@xronikianomaliy",
     "subscribers": 9460,
     "views": 4932242,
     "videoCount": 59,
@@ -19354,7 +19336,7 @@
     ]
    },
    "deepIntelligence": {
-    "status": "EXTRACTED",
+    "status": "EXTRACTED_REAL",
     "topVideosCount": 10,
     "transcriptsCount": 10,
     "tagsCount": 0,
@@ -19387,7 +19369,10 @@
      "publishedAt": "2026-05-06",
      "thumbnail": "https://i.ytimg.com/vi/GgaOgQ3ZHns/maxresdefault.jpg",
      "selectionType": "TOP_BREAKTHROUGH"
-    }
+    },
+    "subscribersLive": 10200,
+    "videoCountLive": 66,
+    "handleChangeNote": "HANDLE DOI: @xronikianomaly (404) -> @xronikianomaliy (chu y). Kenh song: 10.2K subs, 66 videos. Xac minh 16/09/2026."
    },
    "vitalityAudit": {
     "evaluatedAt": "2026-09-09",
@@ -19459,8 +19444,8 @@
    "channel": {
     "channelId": "UCFeSzuYEw0Z1_AMvjMj2Ypg",
     "title": "Everyday Explained",
-    "handle": "@Everydayexplained",
-    "url": "https://www.youtube.com/channel/UCFeSzuYEw0Z1_AMvjMj2Ypg",
+    "handle": "@Everydaexplained",
+    "url": "https://www.youtube.com/@Everydaexplained",
     "subscribers": 1630,
     "views": 211318,
     "videoCount": 12,
@@ -19620,10 +19605,10 @@
     ]
    },
    "deepIntelligence": {
-    "status": "EXTRACTED",
+    "status": "EXTRACTED_REAL",
     "topVideosCount": 10,
     "transcriptsCount": 10,
-    "tagsCount": 50,
+    "tagsCount": 210,
     "longevityStatus": "Bền vững >3 tháng (High Stability)",
     "channelAgeDays": 271,
     "folderName": "RAW-091_Everyday_Explained",
@@ -19653,7 +19638,10 @@
      "publishedAt": "2026-04-23",
      "thumbnail": "https://i.ytimg.com/vi/BXBC42DgZWs/maxresdefault.jpg",
      "selectionType": "TOP_BREAKTHROUGH"
-    }
+    },
+    "subscribersLive": 1740,
+    "videoCountLive": 13,
+    "handleChangeNote": "HANDLE DOI: @Everydayexplained bi kenh 3 subs chiem. Handle that: @Everydaexplained (thieu chu y). Kenh song: 1.74K subs, 13 videos. Xac minh 16/09/2026."
    },
    "vitalityAudit": {
     "evaluatedAt": "2026-09-09",
@@ -20860,15 +20848,15 @@
     "format": "JPEG"
    },
    "channel": {
-    "channelId": "UC4Lu5YL8jLV_WULVSl1ZS4w",
+    "channelId": "UCgJKsFJy7mip3VpOEhj717g",
     "title": "SurvivalStory",
-    "handle": "@SurvivalStory",
-    "url": "https://www.youtube.com/channel/UC4Lu5YL8jLV_WULVSl1ZS4w",
-    "subscribers": 2750,
+    "handle": "@SurvivaIStory",
+    "url": "https://www.youtube.com/@SurvivaIStory",
+    "subscribers": 2820,
     "views": 850000,
-    "videoCount": 100,
+    "videoCount": 104,
     "country": "US",
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+    "avatar": "https://yt3.googleusercontent.com/etQ6T5SsoPM9capOD-HzcZHv6GK-bOuIAaqyBF5EMk1iERUEghOuxKkKljKS4JKOAvdCMjFsJg=s900-c-k-c0x00ffffff-no-rj"
    },
    "niche": "Sinh Tồn & Phục Hồi Sau Thảm Họa Tự Nhiên",
    "visionAnalysis": {
@@ -20900,19 +20888,19 @@
     "totalAuditedVideos": 100
    },
    "deepIntelligence": {
-    "status": "REBRANDED",
-    "extractedAt": "2026-09-16T16:25:42+07:00",
-    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:21:07+07:00",
+    "source": "free_yt_engine.py - re-extract sau khi phat hien handle doi @SurvivalStory -> @SurvivaIStory (I HOA)",
     "folderName": "RAW-102_SurvivalStory",
     "dossierPath": "data/raw-channels-deep/RAW-102_SurvivalStory",
-    "topVideosCount": 0,
+    "topVideosCount": 10,
     "tagsCount": 0,
-    "subscribersLive": 3,
-    "videoCountLive": 0,
+    "subscribersLive": 2820,
+    "videoCountLive": 104,
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null,
-    "note": "HANDLE @SurvivalStory + channelId nay HIEN tro ve kenh tieng Nga \"История Выживания\" voi 3 subs va 0 video cong khai. Du lieu lich su (2750 subs, 100 video, US) la snapshot 09/2026 khong con do duoc. KHONG bia so - giu nguyen trang thai that."
+    "handleChangeNote": "Ken cu @SurvivalStory da doi thanh @SurvivaIStory (I HOA) - kenh THAT con song. Handle @SurvivalStory gio bi kenh Nga 3 subs chiem. Xac minh 16/09/2026 qua video goc \"After the Tornado Destroyed Their Home\" van phat."
    },
    "audioLanguageInfo": {
     "language": "Tiếng Anh (English)",

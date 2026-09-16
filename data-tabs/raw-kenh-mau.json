@@ -1,6 +1,6 @@
 {
  "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
- "updatedAt": "2026-09-16T09:25:42.000000+00:00",
+ "updatedAt": "2026-09-16T11:08:18.000000+00:00",
  "totalRecords": 124,
  "records": [
   {
@@ -21829,6 +21829,20 @@
     "latencySec": 4.55,
     "analyzedAt": "2026-09-15T22:28:25.498356+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-110_Wild_Line",
+    "dossierPath": "data/raw-channels-deep/RAW-110_Wild_Line",
+    "topVideosCount": 10,
+    "tagsCount": 66,
+    "subscribersLive": 75400,
+    "videoCountLive": 74,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -21931,6 +21945,20 @@
     "latencySec": 4.0,
     "analyzedAt": "2026-09-15T22:30:11.648146+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-111_Grain_&_Gravity",
+    "dossierPath": "data/raw-channels-deep/RAW-111_Grain_&_Gravity",
+    "topVideosCount": 10,
+    "tagsCount": 41,
+    "subscribersLive": 8260,
+    "videoCountLive": 42,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22032,6 +22060,20 @@
     "latencySec": 3.94,
     "analyzedAt": "2026-09-15T22:28:24.747140+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-112_Dolly_Parton_Archives",
+    "dossierPath": "data/raw-channels-deep/RAW-112_Dolly_Parton_Archives",
+    "topVideosCount": 10,
+    "tagsCount": 19,
+    "subscribersLive": 17300,
+    "videoCountLive": 17,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22133,6 +22175,20 @@
     "latencySec": 4.96,
     "analyzedAt": "2026-09-15T22:28:29.890213+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-113_House_Hunting_with_Baptiste",
+    "dossierPath": "data/raw-channels-deep/RAW-113_House_Hunting_with_Baptiste",
+    "topVideosCount": 10,
+    "tagsCount": 181,
+    "subscribersLive": 6970,
+    "videoCountLive": 104,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22234,6 +22290,20 @@
     "latencySec": 3.57,
     "analyzedAt": "2026-09-15T22:28:26.913346+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-114_Overengineered",
+    "dossierPath": "data/raw-channels-deep/RAW-114_Overengineered",
+    "topVideosCount": 4,
+    "tagsCount": 81,
+    "subscribersLive": 9010,
+    "videoCountLive": 4,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22336,6 +22406,20 @@
     "latencySec": 4.08,
     "analyzedAt": "2026-09-15T22:28:28.996122+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-115_Stay_Awhile",
+    "dossierPath": "data/raw-channels-deep/RAW-115_Stay_Awhile",
+    "topVideosCount": 5,
+    "tagsCount": 90,
+    "subscribersLive": 3140,
+    "videoCountLive": 5,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22438,6 +22522,20 @@
     "latencySec": 4.39,
     "analyzedAt": "2026-09-15T22:28:30.639520+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-116_Money_Life_POV",
+    "dossierPath": "data/raw-channels-deep/RAW-116_Money_Life_POV",
+    "topVideosCount": 10,
+    "tagsCount": 192,
+    "subscribersLive": 5850,
+    "videoCountLive": 24,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22540,6 +22638,20 @@
     "latencySec": 5.32,
     "analyzedAt": "2026-09-15T22:30:14.277773+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-117_The_Invisible_Neighbors",
+    "dossierPath": "data/raw-channels-deep/RAW-117_The_Invisible_Neighbors",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 7860,
+    "videoCountLive": 31,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22643,6 +22755,20 @@
     "latencySec": 4.92,
     "analyzedAt": "2026-09-15T22:30:18.410160+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-118_Wes_Tucker",
+    "dossierPath": "data/raw-channels-deep/RAW-118_Wes_Tucker",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 23900,
+    "videoCountLive": 24,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22745,6 +22871,20 @@
     "latencySec": 5.36,
     "analyzedAt": "2026-09-15T22:30:14.373649+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-119_Calvin_Stories_Chronicles",
+    "dossierPath": "data/raw-channels-deep/RAW-119_Calvin_Stories_Chronicles",
+    "topVideosCount": 10,
+    "tagsCount": 114,
+    "subscribersLive": 1370,
+    "videoCountLive": 11,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22847,6 +22987,20 @@
     "latencySec": 4.23,
     "analyzedAt": "2026-09-15T22:28:31.348153+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-120_Earth_Craft",
+    "dossierPath": "data/raw-channels-deep/RAW-120_Earth_Craft",
+    "topVideosCount": 10,
+    "tagsCount": 51,
+    "subscribersLive": 10700,
+    "videoCountLive": 37,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -22946,6 +23100,20 @@
     "latencySec": 3.43,
     "analyzedAt": "2026-09-15T22:28:29.519345+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-121_MYTHRA",
+    "dossierPath": "data/raw-channels-deep/RAW-121_MYTHRA",
+    "topVideosCount": 1,
+    "tagsCount": 20,
+    "subscribersLive": 9440,
+    "videoCountLive": 1,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23048,6 +23216,20 @@
     "latencySec": 4.95,
     "analyzedAt": "2026-09-15T22:28:35.782529+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-122_funny_animals_wow",
+    "dossierPath": "data/raw-channels-deep/RAW-122_funny_animals_wow",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 3840,
+    "videoCountLive": 98,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23150,6 +23332,20 @@
     "latencySec": 5.66,
     "analyzedAt": "2026-09-15T22:28:39.572100+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-123_AI_See_History",
+    "dossierPath": "data/raw-channels-deep/RAW-123_AI_See_History",
+    "topVideosCount": 10,
+    "tagsCount": 117,
+    "subscribersLive": 2660,
+    "videoCountLive": 33,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23252,6 +23448,20 @@
     "latencySec": 4.4,
     "analyzedAt": "2026-09-15T22:28:36.879297+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-124_Relatos_de_Eterya",
+    "dossierPath": "data/raw-channels-deep/RAW-124_Relatos_de_Eterya",
+    "topVideosCount": 7,
+    "tagsCount": 20,
+    "subscribersLive": 125000,
+    "videoCountLive": 7,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23354,6 +23564,20 @@
     "latencySec": 3.47,
     "analyzedAt": "2026-09-15T22:28:35.595564+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-125_딥_호라이즌",
+    "dossierPath": "data/raw-channels-deep/RAW-125_딥_호라이즌",
+    "topVideosCount": 10,
+    "tagsCount": 261,
+    "subscribersLive": 59200,
+    "videoCountLive": 41,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23456,6 +23680,20 @@
     "latencySec": 3.93,
     "analyzedAt": "2026-09-15T22:28:37.849116+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-126_Science_Sun",
+    "dossierPath": "data/raw-channels-deep/RAW-126_Science_Sun",
+    "topVideosCount": 10,
+    "tagsCount": 38,
+    "subscribersLive": 92500,
+    "videoCountLive": 58,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23559,7 +23797,19 @@
     "analyzedAt": "2026-09-15T22:28:39.222033+00:00",
     "source": "rss_clean"
    },
-   "duplicateOf": "RAW-089"
+   "duplicateOf": "RAW-089",
+   "deepIntelligence": {
+    "status": "DUPLICATE_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine - xac minh 16/09/2026",
+    "folderName": null,
+    "dossierPath": null,
+    "duplicateOf": "RAW-089",
+    "note": "XAC MINH THAT: @xronikianomaliy co CUNG channelId (UCsq59qsJPbIgMbkcCjIKWkQ) voi RAW-089 @xronikianomaly - la 1 kenh, 2 ban ghi. Ho so chuyen sau nam tai RAW-089_Хроники_аномалий.",
+    "topVideosCount": 0,
+    "tagsCount": 0,
+    "transcriptsCount": 0
+   }
   },
   {
    "id": "RAW-128",
@@ -23661,6 +23911,20 @@
     "latencySec": 5.5,
     "analyzedAt": "2026-09-15T22:28:43.135578+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-128_Những_bí_ẩn_của_vũ_trụ",
+    "dossierPath": "data/raw-channels-deep/RAW-128_Những_bí_ẩn_của_vũ_trụ",
+    "topVideosCount": 10,
+    "tagsCount": 204,
+    "subscribersLive": 240000,
+    "videoCountLive": 76,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23763,6 +24027,20 @@
     "latencySec": 3.91,
     "analyzedAt": "2026-09-15T22:28:37.336792+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-129_Past_Seven",
+    "dossierPath": "data/raw-channels-deep/RAW-129_Past_Seven",
+    "topVideosCount": 10,
+    "tagsCount": 145,
+    "subscribersLive": 29600,
+    "videoCountLive": 63,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23864,6 +24142,20 @@
     "latencySec": 5.24,
     "analyzedAt": "2026-09-15T22:28:43.899474+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-130_그림자노트",
+    "dossierPath": "data/raw-channels-deep/RAW-130_그림자노트",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 1220,
+    "videoCountLive": 36,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -23965,6 +24257,20 @@
     "latencySec": 4.03,
     "analyzedAt": "2026-09-15T22:28:41.863115+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-131_Tuyển_tập_Phim_Tài_liệu",
+    "dossierPath": "data/raw-channels-deep/RAW-131_Tuyển_tập_Phim_Tài_liệu",
+    "topVideosCount": 10,
+    "tagsCount": 147,
+    "subscribersLive": 46300,
+    "videoCountLive": 117,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -24067,6 +24373,20 @@
     "latencySec": 3.7,
     "analyzedAt": "2026-09-15T22:28:41.972013+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-132_De_entonces_a_hoy_Documental",
+    "dossierPath": "data/raw-channels-deep/RAW-132_De_entonces_a_hoy_Documental",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 8290,
+    "videoCountLive": 13,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -24169,6 +24489,20 @@
     "latencySec": 5.28,
     "analyzedAt": "2026-09-15T22:28:45.447960+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-133_HistoriaVivaTV",
+    "dossierPath": "data/raw-channels-deep/RAW-133_HistoriaVivaTV",
+    "topVideosCount": 10,
+    "tagsCount": 30,
+    "subscribersLive": 7490,
+    "videoCountLive": 19,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -24271,6 +24605,20 @@
     "latencySec": 4.73,
     "analyzedAt": "2026-09-15T22:28:47.965358+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-134_WEON_Earth",
+    "dossierPath": "data/raw-channels-deep/RAW-134_WEON_Earth",
+    "topVideosCount": 10,
+    "tagsCount": 60,
+    "subscribersLive": 2570,
+    "videoCountLive": 23,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -24373,6 +24721,20 @@
     "latencySec": 4.35,
     "analyzedAt": "2026-09-15T22:28:47.322541+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-135_세계경제이야기",
+    "dossierPath": "data/raw-channels-deep/RAW-135_세계경제이야기",
+    "topVideosCount": 10,
+    "tagsCount": 192,
+    "subscribersLive": 10700,
+    "videoCountLive": 57,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   },
   {
@@ -24475,6 +24837,20 @@
     "latencySec": 5.4,
     "analyzedAt": "2026-09-15T22:28:50.366528+00:00",
     "source": "rss_clean"
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T18:08:18+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-136_The_Wealth_Scrolls",
+    "dossierPath": "data/raw-channels-deep/RAW-136_The_Wealth_Scrolls",
+    "topVideosCount": 10,
+    "tagsCount": 98,
+    "subscribersLive": 14400,
+    "videoCountLive": 51,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
    }
   }
  ],

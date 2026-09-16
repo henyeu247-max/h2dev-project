@@ -1,0 +1,22 @@
+{
+  "id": "RAW-130",
+  "channelId": "UCtwNpW2EBBKUkQhmX2pW4AQ",
+  "title": "그림자노트",
+  "handle": "@그림자노트-000",
+  "url": "https://www.youtube.com/%EA%B7%B8%EB%A6%BC%EC%9E%90%EB%85%B8%ED%8A%B8-000",
+  "subscribers": 1220,
+  "views": null,
+  "videoCount": 36,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/scfmXWjnuoZKTUCLV9h4Ib7E8-b7ruBG9LqIoEI6WMUCFglESSZ4rbKCP_SU3TlOP3RmFrzA=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T18:07:22+07:00",
+  "extractionSource": "free_yt_engine.py + URL percent-encode fix - do that 16/09/2026",
+  "dataGaps": [
+    "views tong kenh: chua do duoc - null trung thuc",
+    "country: khong co trong HTML - null trung thuc",
+    "longevityAudit/growth30d: chua do - dot 2",
+    "transcripts: chua extract - chi co metadata top videos"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
+}

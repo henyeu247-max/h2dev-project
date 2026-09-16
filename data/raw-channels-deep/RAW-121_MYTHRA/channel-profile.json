@@ -1,0 +1,43 @@
+{
+  "id": "RAW-121",
+  "channelId": "UCQnhXRLVlz161PmIuqA9e4A",
+  "title": "MYTHRA",
+  "handle": "@mythrafilms",
+  "url": "https://www.youtube.com/@mythrafilms",
+  "subscribers": 9440,
+  "views": null,
+  "videoCount": 1,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/XQfFHrgoDvATJARCP7BUG5lLtq_Rky6MWiEXu-KcFDo4-RZL2XqNu0NLmgi-pIO5Xyh0OTjWqw=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T18:03:10+07:00",
+  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+  "dataGaps": [
+    "views tong kenh: chua do duoc - null trung thuc",
+    "country: khong co trong HTML - null trung thuc",
+    "longevityAudit/growth30d: chua do - dot 2",
+    "transcripts: chua extract - chi co metadata top videos"
+  ],
+  "topTagsSample": [
+    "creature feature full movie",
+    "dark fantasy movie",
+    "dragon fantasy movie",
+    "dragon full movie",
+    "dragon movie 2026",
+    "dragon movie full movie in english",
+    "epic fantasy adventure film",
+    "epic fantasy movie",
+    "fantasy adventure movie",
+    "fantasy full movie in english",
+    "fantasy movie full movie",
+    "fantasy movies 2026",
+    "free full movie",
+    "full fantasy movie",
+    "full movie 4k",
+    "full movie in english",
+    "medieval fantasy movie",
+    "monster movie full movie",
+    "new fantasy movie 2026",
+    "the mothers monster"
+  ],
+  "topTagsCount": 20
+}

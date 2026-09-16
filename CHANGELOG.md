@@ -1,3 +1,24 @@
+## 2026-09-16 — Đồng Bộ SSoT Số Liệu Runtime & Đính Chính Claim mmap_size/FTS (Audit Toàn Dự Án)
+
+### 🎯 Vấn đề
+Audit toàn dự án phát hiện tài liệu SSoT **lệch pha dữ liệu thật**: `AGENTS.md` ghi 124 hồ sơ kênh mẫu / 58 ngách; `RULE-LAM-VIEC.md` + `SOUL.md` ghi 97 hồ sơ / 31 ngách; tools 168; SOP 65; Master Prompts 12. Số liệu runtime đo thật: raw = **156**, ngách nghiệp vụ = **34**, tools = **180**, SOP = **6**, Master Prompts = **20**.
+
+### 🛠️ Đã đồng bộ (nguồn chân lý: runtime)
+- `AGENTS.md`: 124→**156** hồ sơ · 58→**34** ngách · 168→**180** tools.
+- `knowledge-hub/docs/RULE-LAM-VIEC.md`: 97→**156** hồ sơ · 31→**34** ngách · 168→**180** tools · 12→**20** Master Prompts · 65→**6** tài liệu catalog SOP.
+- `~/.workbuddy/SOUL.md` (file identity ngoài repo): 97→**156** hồ sơ · 31→**34** ngách · 168→**180** tools · 12→**20** Master Prompts · 65→**6** file SOP.
+- `data-tabs/raw-kenh-mau.json`: rebuild khối `summary` — totalRecords 83→**156** · uniqueChannels 83→**149** · duplicateRecords 0→**7** · duplicateGroups 0→**5** · editorialNichesCount 21→**75** · aggregate subscribers/views cập nhật. Script mới **`scripts/rebuild-raw-summary.cjs`** (phẫu thuật chỉ khối summary, giữ CRLF, idempotent).
+
+### 📌 Đính chính claim cũ (đo runtime thật — KHÔNG sửa lại entry lịch sử, tôn trọng NO_DELETE)
+- `PRAGMA mmap_size` thực tế = **0** (KHÔNG phải 30GB / `30000000000` như entry 2026-09-14). `journal_mode=WAL` ✅ và `synchronous=NORMAL` ✅ đúng.
+- `search_fts` thực tế = **1960** bản ghi (KHÔNG phải 1.250 như entry cũ).
+- MCP Pool tools thực tế = **180**. `kenh-mau.json` không có field trạng thái sống/chết → con số "152 live + 13 dead" là `[KHÔNG-VERIFY-ĐƯỢC]` từ file này.
+
+### ✅ Kiểm chứng
+- `node scripts/validate-project.js` → **PASS** (Videos 136; channels 165; kich-ban 45; tai-lieu-full 109; thumbnails 136; video directories 136).
+- Runtime: `:8899` HTTP 200 · `:3988` health `{tools:180}` · `:20128` HTTP 307.
+- Backup trước khi sửa: `_backup/20260916-ssot-sync/`.
+
 ## 2026-09-16 — AUTO-RELOAD H2DEV_Service KHÔNG CẦN ADMIN/UAC: Vá Denylist Tự Động Qua Kênh Task Highest
 
 ### 🎯 Vấn đề

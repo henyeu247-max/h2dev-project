@@ -1,3 +1,33 @@
+## 2026-09-17 — Xây Dựng Trạm Phát Nhạc Nền Chuyên Nghiệp (Interactive Music Studio Modal)
+
+### 🎯 Vấn đề người dùng phản hồi
+Kho 38 track nhạc nền sau khi audit nằm trên đĩa nhưng **người dùng không có chỗ nào để nghe thử, kiểm tra âm thanh hay tải về trên giao diện Web**. Thẻ tài liệu chỉ mở file markdown chữ thô, không có trình phát âm thanh và không phát được nhạc.
+
+### 🛠️ Can thiệp kỹ thuật toàn diện
+1. **Phục vụ Media Audio (Local & VPS Streaming)**:
+   - Tạo Directory Junction `assets/nhac-nen` trỏ về `D:\YTB\Nhạc nền` -> `server.js` phục vụ trực tiếp HTTP Range (seek bar tua nhanh, phát nhạc tức thì).
+   - Đã scp đồng bộ đủ 38 file MP3 (265 MB) lên VPS tại `/www/wwwroot/h2dev-learn.tonymmo.com/app/assets/nhac-nen/`.
+   - Kiểm tra trực tiếp trên Live VPS: Stream video/audio trả về **HTTP 200 & HTTP 206 Partial Content**.
+2. **Cập nhật `data/music_catalog.json`**: Bổ sung `streamUrl` và `localAbsPath` cho 100% (38/38) tracks.
+3. **Xây dựng Interactive Music Studio Modal (`assets/music_player_modal.js`)**:
+   - Tích hợp trình phát nhạc chuẩn HTML5 `<audio controls>` cho từng bài hát.
+   - Bộ lọc ngách tức thì (Tabs): **Tất cả (38)** | **🟢 25 SAFE YPP** | **🏛️ Lịch sử (7)** | **🔮 Tiên tri (14)** | **🌌 Triết lý/Ru ngủ (6)** | **🐾 Sinh tồn (8)** | **⏳ Ambient 15-25p (2)** | **🔴 4 Bản quyền**.
+   - Tìm kiếm bài hát theo thời gian thực (nhạc cụ, mood, ngách).
+   - Nút **`⬇️ Tải MP3`** tải file trực tiếp và nút **`📋 Copy Path`** copy đường dẫn ổ cứng local để paste vào Premiere/CapCut.
+4. **Gắn nút mở trực tiếp trên Tab Tài liệu**:
+   - Banner lớn đầu tab: `▶ Mở Trạm Nhạc Nền`.
+   - Nút trực tiếp trên thẻ card `NOI-BO-MUSIC-01`: `🎧 Mở Trạm Nhạc Nền (38 Tracks)`.
+
+### ✅ Kiểm chứng Playwright E2E 100%
+- Mở modal trạm nhạc: PASS.
+- Ban đầu render đủ 38 track có thẻ audio: PASS.
+- Lọc 🟢 SAFE YPP: Đúng 25 track (PASS).
+- Lọc 🔴 Bản quyền: Đúng 4 track (PASS).
+- Stream audio file MP3 từ server: HTTP 200 OK (PASS).
+
+---
+
+
 ## 2026-09-17 — Sửa Lỗi Lệch Chip Tab Tài Liệu & Kênh Mẫu (Fix UI Consistency 153/153)
 
 ### 🎯 Vấn đề người dùng phát hiện qua ảnh chụp màn hình

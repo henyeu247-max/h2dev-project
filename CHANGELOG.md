@@ -1,3 +1,22 @@
+## 2026-09-16 — Gỡ Hẳn Qoder AI Tracker Git Hooks + Chặn Tự Cài Lại
+
+### 🎯 Vấn đề
+- Mỗi lần commit/push hiện `PROGRAM BLOCKED BY SECURITY POLICY — reg.exe`.
+- Nguyên nhân: 2 git hook `.git/hooks/post-commit` + `.git/hooks/post-checkout` do **Qoder AI tracker** tự cài — hook gọi `Qoder.exe` → `qoder-worker-runtime.obf.mjs commit --hook`, spawn `reg.exe` đọc registry → bị sandbox chặn.
+
+### 🛠️ Can thiệp
+- **Gỡ hẳn** 2 hook Qoder (dời vào `_archive/20260916-qoder-hooks-removed/`; bản gốc backup tại `_backup/20260916-qoder-hooks/`).
+- Cài **guard hook** thay thế: shebang `#!/bin/sh.exe` (thay vì `/bin/sh`). Git chạy no-op bình thường qua `sh.exe`, NHƯNG regex nhận diện shell của Qoder (`sh|bash|zsh|dash|ksh|ash` phải theo sau bởi whitespace/kết thúc) KHÔNG khớp `.exe` → Qoder trả `status: unsupported` và **từ chối ghi đè** (bằng chứng: hàm `iYl()` trả `false`).
+- **Tắt tracker tại nguồn:** thêm `aiCodeTracking.installGitCommitHook=false` + `aiCodeStatistics.enabled=false` vào `C:\Users\SaxukeB\.qoder\settings.json` (backup `.bak` — belt & suspenders).
+- **NO_DELETE:** toàn bộ hook gốc + settings gốc đã được backup, không xóa dữ liệu.
+
+### ✅ Kiểm chứng
+- Mô phỏng logic Qoder `iYl()` trên guard → `false` (Qoder từ chối); hook Qoder thật → `true` (đối chiếu).
+- Empty commit + checkout test → **exit 0, 0 lỗi, 0 `reg.exe`, 0 `cannot spawn`**.
+- `.git/hooks/` chỉ còn 2 guard file (mode 755); working tree clean.
+
+---
+
 ## 2026-09-16 — Liệt Kê 43 Prompt Master Research Vào Catalog + UI
 
 ### 🎯 Vấn đề

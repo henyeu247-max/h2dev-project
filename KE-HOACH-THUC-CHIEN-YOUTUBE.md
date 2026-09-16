@@ -23,8 +23,8 @@ Toàn bộ tài nguyên trên máy chủ cục bộ `D:\YTB\H2DEV-Project` đã 
 - **Danh mục ứng viên linh hoạt:** Phân thành 3 nhóm (Tiềm năng cao, Cần theo dõi thêm, và Cảnh báo rủi ro chính sách).
 - **Nguyên tắc cốt lõi:** Ngách không tự xanh hay đỏ vĩnh viễn. Dữ liệu trong kho là ảnh chụp tham chiếu (Snapshot); trước khi làm bất kỳ video nào, bắt buộc phải dùng vidIQ đo lại dữ liệu sống trong 30 ngày gần nhất.
 
-### 4. Kho tài liệu & Pipeline kỹ thuật (103 tài liệu)
-- **103 tài liệu nghiệp vụ:** 33 bộ prompt chuẩn, 20 báo cáo phân tích thị trường, 17 tools, 16 checklists/danh mục và tài liệu Zoom.
+### 4. Kho tài liệu & Pipeline kỹ thuật (109 tài liệu)
+- **109 tài liệu nghiệp vụ:** 35 bộ prompt chuẩn, 20 báo cáo phân tích thị trường, 22 tools, 16 checklists/danh mục và tài liệu Zoom.
 - **4 pipeline cấu trúc sẵn:** `bible-explainer/`, `wildlife/`, `hoat-hinh-ai/`, `ton-giao/` — sẵn sàng điều chỉnh cho mọi đề tài mới.
 
 ---

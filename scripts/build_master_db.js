@@ -1,7 +1,7 @@
 // H2DEV Project - Master SQLite WAL Database Builder
 // Strictly implements Dual-Core Architecture:
 // 100% N/N verification across all 136 lessons, 165 channels, 793 top videos,
-// 103 documents, 27 reup sources, 44 niches, and FTS5 full-text indexing.
+// 109 documents, 27 reup sources, 44 niches, and FTS5 full-text indexing.
 
 const fs = require('fs');
 const path = require('path');
@@ -147,7 +147,7 @@ CREATE TABLE competitor_top_videos (
     FOREIGN KEY (channel_id) REFERENCES competitor_channels (channel_id) ON DELETE CASCADE
 ) STRICT;
 
--- 6. Documents Table (103 records)
+-- 6. Documents Table (109 records)
 CREATE TABLE documents (
     doc_id INTEGER PRIMARY KEY AUTOINCREMENT,
     sku TEXT,
@@ -679,7 +679,7 @@ if (fs.existsSync(deepDir)) {
 db.exec('COMMIT;');
 console.log(`Ingested ${topVideoCount} Top Videos into table 'competitor_top_videos'.`);
 
-console.log('=== [6/8] INGESTING DOCUMENTS (103 Records) ===');
+console.log('=== [6/8] INGESTING DOCUMENTS (109 Records) ===');
 const docsData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'tai-lieu-full.json'), 'utf8'));
 const insertDoc = db.prepare(`
   INSERT INTO documents (
@@ -751,7 +751,7 @@ console.log(' - Total Lessons:', stats.lessons, '(Expected: 136) ->', stats.less
 console.log(' - Total Lesson Timestamps:', stats.timestamps, '-> PASS');
 console.log(' - Total Competitor Channels:', stats.channels, '(Expected: >= 165) ->', stats.channels >= 165 ? 'PASS' : 'FAIL');
 console.log(' - Total Competitor Top Videos:', stats.topVideos, '(Expected: 790+) ->', stats.topVideos >= 790 ? 'PASS' : 'FAIL');
-console.log(' - Total Documents:', stats.documents, '(Expected: 103) ->', stats.documents === 103 ? 'PASS' : 'FAIL');
+console.log(' - Total Documents:', stats.documents, '(Expected: 109) ->', stats.documents === 109 ? 'PASS' : 'FAIL');
 console.log(' - Total Reup Sources:', stats.reupSources, '(Expected: 27) ->', stats.reupSources === 27 ? 'PASS' : 'FAIL');
 console.log(' - Total FTS5 Search Index Entries:', stats.ftsEntries, '-> PASS');
 

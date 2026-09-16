@@ -51,7 +51,7 @@ const topVideos = db.prepare(`
 
 console.log(`[3/5] Master DB Competitor Top Videos: ${topVideos.length} records.`);
 
-// 4. Verify and Sync Documents (103 records)
+// 4. Verify and Sync Documents (109 records)
 const documents = db.prepare(`
   SELECT d.*, l.title AS lesson_title
   FROM documents d
@@ -60,8 +60,8 @@ const documents = db.prepare(`
 `).all();
 
 console.log(`[4/5] Master DB Documents: ${documents.length} records.`);
-if (documents.length !== 103) {
-  console.error(`[SyncEngine] Inconsistency: Expected 103 documents, found ${documents.length}`);
+if (documents.length !== 109) {
+  console.error(`[SyncEngine] Inconsistency: Expected 109 documents, found ${documents.length}`);
   process.exit(1);
 }
 

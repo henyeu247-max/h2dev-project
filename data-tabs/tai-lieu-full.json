@@ -876,5 +876,59 @@
     "fileLocal": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
     "kind": "prompt",
     "contentNiche": "Triết lý / Tâm linh"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "Prompt Master: Sinh vật biển & Bí ẩn đại dương (Deep Ocean viral titles)",
+    "link": "",
+    "file": "assets/docs/prompt-master/PROMPT-DEEP-OCEAN-10-VIRAL-TITLES.md",
+    "kind": "prompt",
+    "contentNiche": "Share key / Ngách nhỏ",
+    "source": "noi-bo"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "Prompt Master: Khoa học thực phẩm & Tác động cơ thể (Food Shock 50 topics)",
+    "link": "",
+    "file": "assets/docs/prompt-master/PROMPT-FOOD-SHOCK-50-TOPICS.md",
+    "kind": "prompt",
+    "contentNiche": "Sức khỏe / Lão hóa",
+    "source": "noi-bo"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "Master SOP: Phim kịch lịch sử chiến quốc bằng AI (AI Historia 30 min)",
+    "link": "",
+    "file": "assets/docs/prompt-master/SOP-AI-HISTORIA-SENGOKU-30MIN.md",
+    "kind": "tool",
+    "contentNiche": "Lịch sử / Quân sự",
+    "source": "noi-bo"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "Master SOP: Ngách đảo xa xôi & Đời sống biệt lập (Remote Islands VOX 3D)",
+    "link": "",
+    "file": "assets/docs/prompt-master/SOP-REMOTE-ISLANDS-VOX-3D.md",
+    "kind": "tool",
+    "contentNiche": "Share key / Ngách nhỏ",
+    "source": "noi-bo"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "Master SOP: Khai thác thị trường YouTube tiếng Tây Ban Nha (Spanish curiosity)",
+    "link": "",
+    "file": "assets/docs/prompt-master/SOP-SPANISH-YOUTUBE-CURIOSTIY.md",
+    "kind": "tool",
+    "contentNiche": "Share key / Ngách nhỏ",
+    "source": "noi-bo"
+  },
+  {
+    "sku": "NOI-BO",
+    "name": "Pipeline: Địa lý & Khảo cổ khám phá (Everyday Geography & Lost Civilizations)",
+    "link": "",
+    "file": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md",
+    "kind": "tool",
+    "contentNiche": "Lịch sử / Quân sự",
+    "source": "noi-bo"
   }
 ]

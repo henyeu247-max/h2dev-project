@@ -117,6 +117,25 @@ if (rawCanonical.totalRecords !== undefined && rawCanonical.totalRecords !== raw
 if (rawIds.length !== rawRecords.length || new Set(rawIds).size !== rawIds.length) {
   errors.push('data-tabs/raw-kenh-mau.json: canonical raw IDs must be present and unique');
 }
+// Guard 16/09: moi record phai co handleHistory >= 1 entry voi handle khop entry cuoi.
+// Muc dich: chong tai dien lop loi "handle bi doi/ bi chiem ma khong ghi lai lich su" (phat hien 16/09).
+for (const record of rawRecords) {
+  const hist = Array.isArray(record.handleHistory) ? record.handleHistory : null;
+  if (!hist || hist.length === 0) {
+    errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} missing handleHistory`);
+    continue;
+  }
+  const last = hist[hist.length - 1];
+  const currentHandle = (record.channel && record.channel.handle) || '';
+  if (last.handle !== currentHandle) {
+    errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} handleHistory last entry "${last.handle}" != channel.handle "${currentHandle}"`);
+  }
+  for (let i = 1; i < hist.length; i += 1) {
+    if (hist[i].handle === hist[i - 1].handle) {
+      errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} handleHistory has duplicate consecutive entry "${hist[i].handle}"`);
+    }
+  }
+}
 
 const scope = ngachXanh.phamViKho || {};
 const liveScope = {

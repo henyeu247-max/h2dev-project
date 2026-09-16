@@ -288,7 +288,28 @@ function formatEditSop(sop) {
 
 console.log('=== [3/8] INGESTING LESSONS & TIMESTAMPS (136 Videos) ===');
 const catalogFull = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog_full.json'), 'utf8'));
+const catalogSlim = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog.json'), 'utf8'));
+const videoTabs = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'videos.json'), 'utf8'));
 const videoInsights = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'video_insights.json'), 'utf8'));
+
+// Map SKU -> nguồn phụ trợ (fix 16/09: catalog_full thiếu duration_sec/is_pro/resolution;
+// videos.json là nguồn sự thật của UI cho market; catalog.json có đủ media metadata)
+const slimBySku = new Map(catalogSlim.map(v => [v.sku, v]));
+const tabsBySku = new Map((Array.isArray(videoTabs) ? videoTabs : []).map(v => [v.sku, v]));
+const MARKET_FLAG_TO_CODE = {
+  '🇻🇳 Việt': 'VN', '🇯🇵 Nhật': 'JP', '🇰🇷 Hàn': 'KR', '🇨🇳 Trung': 'CN',
+  '🇺🇸 Mỹ': 'US', '🇷🇺 Nga': 'RU', '🌐 Ngoại': 'GLOBAL', '🇨🇦 Canada': 'CA',
+  '🇹🇭 Thái': 'TH', '🇵🇭 Phil': 'PH', '🇬🇧 Anh': 'GB', '🇭🇰 HK': 'HK'
+};
+function marketCodeFromTab(tab) {
+  if (!tab || !Array.isArray(tab.market) || !tab.market.length) return null;
+  const codes = [];
+  for (const flag of tab.market) {
+    const code = MARKET_FLAG_TO_CODE[flag];
+    if (code && !codes.includes(code)) codes.push(code);
+  }
+  return codes.length ? codes.join(',') : null;
+}
 
 const insertLesson = db.prepare(`
   INSERT INTO lessons (
@@ -317,6 +338,8 @@ let timestampCount = 0;
 for (const v of catalogFull) {
   const sku = v.sku;
   const insight = videoInsights[sku] || {};
+  const slim = slimBySku.get(sku) || {};
+  const tab = tabsBySku.get(sku) || {};
 
   // Niche lookup
   const nicheName = v.niche_primary || insight.niche_primary || 'Khác';
@@ -324,7 +347,7 @@ for (const v of catalogFull) {
   if (!nicheId) {
     nicheId = 'niche_' + nicheName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
     if (!nicheMap.has(nicheName)) {
-      insertNiche.run(nicheId, nicheName, 1, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
+      insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
       nicheMap.set(nicheName, nicheId);
     }
   }
@@ -335,25 +358,43 @@ for (const v of catalogFull) {
   const tools = insight.tools_mentioned || [];
   const readmePath = `docs/${sku}/README.md`;
 
+  // Fix 16/09: market_code lấy từ videos.json (nguồn UI) — catalog_full từng hardcode JP sai 10 dòng.
+  // Fallback giữ nguyên chuỗi cũ nếu tab thiếu cờ.
+  const tabMarketCode = marketCodeFromTab(tab);
+  const marketCode = tabMarketCode || v.market_code || insight.market_code || 'ALL';
+  const targetMarket = tabMarketCode
+    ? (tab.market || []).join(' / ')
+    : (v.target_market || insight.target_market || 'Toàn cầu');
+
+  // Fix 16/09: duration_sec chỉ có trong catalog.json (catalog_full thiếu hoàn toàn)
+  const durationSec = slim.duration_sec || v.duration_sec || 0;
+  // Fix 16/09: is_pro/is_free theo catalog.json (nguồn UI) — catalog_full hardcode is_pro=true
+  const isFree = slim.is_free !== undefined ? slim.is_free : (v.free || v.is_free ? true : false);
+  const isPro = slim.is_pro !== undefined ? slim.is_pro : (v.is_pro !== false);
+  // Fix 16/09: resolution/width/height ưu tiên catalog.json
+  const resolution = slim.resolution || v.resolution || '1080p';
+  const width = slim.width || v.width || 1920;
+  const height = slim.height || v.height || 1080;
+
   insertLesson.run(
     sku,
     v.title,
     insight.actual_topic || v.actual_topic || v.title,
     nicheId,
     v.contentNiche || v.niche || nicheName,
-    v.target_market || insight.target_market || 'Toàn cầu',
-    v.market_code || insight.market_code || 'ALL',
+    targetMarket,
+    marketCode,
     v.duration || '00:00',
-    v.duration_sec || 0,
+    durationSec,
     v.size || 0,
-    v.resolution || '1080p',
-    v.width || 1920,
-    v.height || 1080,
+    resolution,
+    width,
+    height,
     v.mp4 || `video/${sku}/${sku}.mp4`,
     v.image || `assets/thumbs/${sku}.png`,
     v.origin || v.video_link || '',
-    v.free || v.is_free ? 1 : 0,
-    v.is_pro !== false ? 1 : 0,
+    isFree ? 1 : 0,
+    isPro ? 1 : 0,
     v.size > 0 ? 1 : 0,
     v.size > 0 ? 1 : 0,
     insight.visual_audio_checked ? 1 : 0,
@@ -365,9 +406,9 @@ for (const v of catalogFull) {
   );
   lessonCount++;
 
-  // Insert Timestamps
+  // Insert Timestamps — fix 16/09: label nằm ở field ts.label (trước đây đọc ts.title -> rỗng 689/689)
   for (const ts of insight.key_timestamps || []) {
-    insertTimestamp.run(sku, ts.seconds || 0, ts.time || '00:00', ts.title || '');
+    insertTimestamp.run(sku, ts.seconds || 0, ts.time || '00:00', ts.label || ts.title || '');
     timestampCount++;
   }
 
@@ -420,7 +461,8 @@ for (const r of rawKenhMau) {
   if (!nicheId) {
     nicheId = 'niche_' + nicheName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
     if (!nicheMap.has(nicheName)) {
-      insertNiche.run(nicheId, nicheName, 1, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
+      // Fix 16/09: ngách auto-gen (từ channel) KHÔNG được gắn cờ xanh — chưa qua 7 tiêu chí XANH
+      insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
       nicheMap.set(nicheName, nicheId);
     }
   }
@@ -503,20 +545,37 @@ for (const k of kenhMau) {
   if (processedHandles.has(cleanHandle)) continue;
   processedHandles.add(cleanHandle);
 
-  const channelId = `GEN_${handle.replace(/[^a-zA-Z0-9]/g, '')}`;
+  const title = k.handle || 'Unknown Channel';
+  const nicheName = k.niche || 'Khác';
+
+  // Fix 16/09 (CRITICAL): handle CJK (Nhật/Hàn/Trung) bị regex xóa sạch thành '' ->
+  // 43 kênh dồn vào 1 row 'GEN_'. Fallback hash SHA-1 khi base rỗng, chống trùng lần 2.
+  const gidBase = handle.replace(/[^a-zA-Z0-9]/g, '');
+  let channelId = gidBase
+    ? `GEN_${gidBase}`
+    : `GEN_x${require('crypto').createHash('sha1').update(handle).digest('hex').slice(0, 10)}`;
+  if (processedChannelIds.has(channelId)) {
+    // Fail-safe: khác handle nhưng cùng slug ascii -> phân biệt bằng hash
+    channelId = `${channelId}_${require('crypto').createHash('sha1').update(handle).digest('hex').slice(0, 6)}`;
+  }
   if (processedChannelIds.has(channelId)) continue;
   processedChannelIds.add(channelId);
 
-  const title = k.handle || 'Unknown Channel';
-  const nicheName = k.niche || 'Khác';
   let nicheId = nicheMap.get(nicheName);
   if (!nicheId) {
     nicheId = 'niche_' + nicheName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
     if (!nicheMap.has(nicheName)) {
-      insertNiche.run(nicheId, nicheName, 1, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
+      // Fix 16/09: ngách auto-gen (từ channel) KHÔNG được gắn cờ xanh — chưa qua 7 tiêu chí XANH
+      insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
       nicheMap.set(nicheName, nicheId);
     }
   }
+
+  // Fix 16/09: k.avatar trong kenh-mau.json ĐÃ là path đầy đủ 'assets/avatars/...'
+  // (trước đây prepend thêm 'assets/avatars/' lần nữa -> 111 path hỏng 'assets/avatars/assets/avatars/...')
+  const avatarPath = k.avatar
+    ? (k.avatar.startsWith('assets/') ? k.avatar : `assets/avatars/${k.avatar}`)
+    : '';
 
   insertChannel.run(
     channelId,
@@ -525,8 +584,8 @@ for (const k of kenhMau) {
     title,
     k.url || `https://www.youtube.com/${k.handle}`,
     'US',
-    k.avatar ? `assets/avatars/${k.avatar}` : '',
-    k.avatar ? `assets/avatars/${k.avatar}` : '',
+    avatarPath,
+    avatarPath,
     0,
     0,
     k.count || 0,
@@ -567,6 +626,16 @@ const insertTopVideo = db.prepare(`
 db.exec('BEGIN TRANSACTION;');
 let topVideoCount = 0;
 
+// Fix 16/09: duration top-videos lưu dạng ISO 8601 (PT3M9S) -> parse thành giây.
+// Trước đây hardcode 0 -> 792/792 video thiếu thời lượng trong DB.
+function parseIsoDuration(s) {
+  if (!s) return 0;
+  if (typeof s === 'number') return Math.round(s);
+  const m = String(s).match(/^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/i);
+  if (!m) return 0;
+  return (parseInt(m[1] || 0) * 3600) + (parseInt(m[2] || 0) * 60) + parseInt(m[3] || 0);
+}
+
 if (fs.existsSync(deepDir)) {
   const folders = fs.readdirSync(deepDir).filter(f => fs.statSync(path.join(deepDir, f)).isDirectory());
   for (const folder of folders) {
@@ -587,7 +656,7 @@ if (fs.existsSync(deepDir)) {
           v.rank || (topVideoCount + 1),
           v.title || '',
           v.views || 0,
-          0,
+          parseIsoDuration(v.duration),
           v.publishedAt || '',
           v.vph || 0.0,
           v.outlierMultiplier || '1.0x',

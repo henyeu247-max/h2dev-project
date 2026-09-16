@@ -1,3 +1,47 @@
+## 2026-09-16 — Liệt Kê 43 Prompt Master Research Vào Catalog + UI
+
+### 🎯 Vấn đề
+- 22 PDF Telegram (`C:\Users\SaxukeB\Downloads\Telegram Desktop`) đã extract + gộp vào corpus `data/research-20260916/` (43 prompt master, commit `67a78b5`) nhưng **KHÔNG** nằm trong catalog chính `data-tabs/tai-lieu-full.json` → không hiển thị trên web UI (tab "Kịch bản & Tài liệu" → Tìm prompt).
+
+### 🛠️ Can thiệp
+- Script `scripts/gen-research-catalog.cjs` (idempotent, `--dry`) sinh 43 entry `RESEARCH-01..43` (kind=prompt, phân ngách) → `tai-lieu-full.json` **109 → 152**.
+- Fix FK `documents.sku → lessons.sku`: sku không thuộc lessons (RESEARCH-*) → lưu NULL; rebuild Master DB → documents **152**, FTS5 **2003**.
+- Cập nhật số canonical 109→152: `AGENTS.md` · `00_README.md` · `TREE.md` · `KE-HOACH-THUC-CHIEN-YOUTUBE.md` · `knowledge-hub/docs/MEMORY.md` · `ngach-xanh.json` · `validate-project.js` · `build_master_db.js`.
+- E2E `scripts/audit-research-catalog-e2e.cjs`.
+
+### ✅ Kiểm chứng
+- `validate-project.js` → PASS (tai-lieu-full: 152).
+- E2E Playwright: 152 card, lọc "RESEARCH-" = **43**, 43 nút File local, 0 console error, 0 network fail (`docs/proof-research-catalog.png`).
+- Nguồn: Telegram 21 · AiLockup 4 · AI Playbook 5 · AIpreneur 1 · TheByteGenius 5 · Markaiguy 2 · MonetizeMind 4 · MonetizeMind Telegram 1.
+- Ngách: Nền tảng/Tool 16 · Reup/Hoạt hình 12 · Kinh tế 7 · Lịch sử 5 · Drama 2 · Nhân bản 1.
+
+## 2026-09-16 — Đồng Bộ Tài Liệu ↔ Runtime (Đợt 6 điểm lệch) + Kiểm Chứng ffprobe 136/136
+
+### 🎯 Vấn đề (audit đọc-all phát hiện 6 điểm lệch doc/runtime)
+1. `chien-luoc.json` runtime **workflow 11 bước**, nhưng `AGENTS.md` / `TREE.md` / `docs/NOI-BO/zoom/README.md` ghi **"9 bước"** → lệch.
+2. `AGENTS.md` + `TREE.md` còn trỏ **`server.js:150` (`BLOCKED`)** — biến này **không còn tồn tại**; cơ chế chặn hiện là `Set SENSITIVE_SEGMENTS` tại **`server.js:305`** (siết hơn: thêm `.git` · `.cache` · `.venv-gpu` · `.zcode` · `logs` · `_internal` · `_drafts` · `_frames` · `_tmp_audio`; so khớp chữ thường chống bypass HOA/thường).
+3. `TREE.md` lỗi thời: khai các file vận hành (`start-lan.cmd` · `h2dev-tray.ps1` · `install-*.ps1` · `check-server.ps1`) còn ở gốc — thực tế đã dời vào `scripts/windows/` từ 11/09; chưa khai `_frames/` · `_drafts/` · `_internal/` · `.cache/` · `logs/`.
+4. **ffprobe KHÔNG có trong PATH** → nghi vấn claim "136/136" là KHÔNG-VERIFY-ĐƯỢC.
+5. Dung lượng media ghi "~21.9 GB" — đo thật **21.55 GiB / 23.1 GB**.
+6. Rác vận hành `_frames` (69) · `_tmp_audio` (21) · `_drafts` (4) · `_internal` (17) + thư mục lạc `H2DEV-Project/H2DEV-Project/_audit` chưa gom.
+
+### 🛠️ Can thiệp kỹ thuật
+- **Chốt #1:** `AGENTS.md` (bảng Data core) · `TREE.md` (dòng `chien-luoc.json`) · `docs/NOI-BO/zoom/README.md` → **workflow 11 bước**.
+- **Chốt #2:** `AGENTS.md` mục Rules cứng + `TREE.md` mục "Web không serve" → **`SENSITIVE_SEGMENTS` (`server.js:305`)**; `server.js:8` → **`:15`** (bind `0.0.0.0`); thêm ghi chú lịch sử `BLOCKED:150` → `SENSITIVE_SEGMENTS:305`.
+- **Chốt #3:** `TREE.md` → thay khối "VẬN HÀNH" bằng `scripts\windows\`; bổ sung `_frames\` · `_drafts\` · `_internal\` · `.cache\` · `logs\`; liệt kê đủ `SENSITIVE_SEGMENTS` 19 mục + chặn theo tên file (`.env*` · `*.db*` · `mcp-keys*`).
+- **Chốt #4:** phát hiện **ffprobe thật ở `D:\Linly-Dubbing\bin\ffprobe.exe`**. Chạy lại ffprobe **136/136** → **136/136 có luồng video + audio, 0 file 0 byte** (ffprobe N-125856). → **ĐÍNH CHÍNH kết luận audit trước:** claim **ĐÚNG**, chỉ thiếu path trong PATH. Ghi chú vào `AGENTS.md` (Map path + mục transcript).
+- **Chốt #5:** `00_README.md` · `TREE.md` · `KE-HOACH-THUC-CHIEN-YOUTUBE.md` → **~23.1 GB (21.55 GiB)**.
+- **Chốt #6 — DỪNG AN TOÀN:** phát hiện **phiên khác đang chạy song song** trên cùng repo (commit `2f55998` lúc 23:11 thêm `scripts/sync-memory.cjs`; `_archive/20260916-junk-cleanup/` 23:07 chứa `_tmp_audio`). → **KHÔNG** dời `_frames`/`_drafts`/`_internal`/nested lúc này để tránh tranh chấp; `_tmp_audio` **do phiên kia đã dời**. Đề xuất gom 1 lượt khi không còn phiên song song.
+
+### ✅ Kiểm chứng
+- `node scripts/validate-project.js` → **PASS** (Videos 136; channels 165; kich-ban 45; tai-lieu-full 109; thumbnails 136; video directories 136).
+- ffprobe thật: `136/136` video+audio (log `.cache/_ffprobe_136.json`).
+- Probe denylist sau đổi doc: `_private` `_backup` `_audit` `_frames` `_drafts` `_internal` `raw-kenh-goc` → **403**; `data-tabs/videos.json` · `index.html` → **200**.
+- Backup trước khi sửa: `_backup/20260916-docsync-cleanup/` (AGENTS.md · TREE.md · 00_README.md · chien-luoc.json).
+
+### ❓ Còn lại (cần anh quyết)
+- `_frames` (69 mục / 71 MB) · `_drafts` (4 file, 304 KB, gồm 3 `insightface-proposal-*.md`) · `_internal` (17 mục / 125 MB) · thư mục lạc `H2DEV-Project/H2DEV-Project/_audit/20260912-full-136-audit` (rỗng) → **dời `_archive/` (không xóa)** khi hết phiên song song.
+
 ## 2026-09-16 — Đồng Bộ SSoT Số Liệu Runtime & Đính Chính Claim mmap_size/FTS (Audit Toàn Dự Án)
 
 ### 🎯 Vấn đề

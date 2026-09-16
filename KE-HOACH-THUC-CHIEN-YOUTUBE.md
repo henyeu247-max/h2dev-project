@@ -9,7 +9,7 @@
 
 Toàn bộ tài nguyên trên máy chủ cục bộ `D:\YTB\H2DEV-Project` đã qua kiểm định tất định 100%:
 
-### 1. Kho học liệu bài giảng (136 bài học — ~21.9 GB)
+### 1. Kho học liệu bài giảng (136 bài học — ~23.1 GB / 21.55 GiB)
 - **132 video bài giảng MP4 (`VIDEO-*`):** Hướng dẫn từ A đến Z cách làm YouTube (nuôi mail, môi trường sạch, nghiên cứu từ khóa, dựng video, kháng lỗi bản quyền và AdSense). Đầy đủ phụ đề đa định dạng (`.srt`, `.txt`, `.json`).
 - **4 video ghi hình Zoom chuyên sâu (`ZOOM-01..04` — WebM):** Thực chiến nền tảng môi trường, chiến lược tách kênh, quy trình tool và AdSense kháng lỗi. Đầy đủ transcript và tài liệu tóm lược trong `docs/NOI-BO/zoom/`.
 - Kiểm định `ffprobe`: **136/136 video có đầy đủ luồng hình ảnh và âm thanh**, 0 file lỗi, 0 file 0 byte.
@@ -23,8 +23,8 @@ Toàn bộ tài nguyên trên máy chủ cục bộ `D:\YTB\H2DEV-Project` đã 
 - **Danh mục ứng viên linh hoạt:** Phân thành 3 nhóm (Tiềm năng cao, Cần theo dõi thêm, và Cảnh báo rủi ro chính sách).
 - **Nguyên tắc cốt lõi:** Ngách không tự xanh hay đỏ vĩnh viễn. Dữ liệu trong kho là ảnh chụp tham chiếu (Snapshot); trước khi làm bất kỳ video nào, bắt buộc phải dùng vidIQ đo lại dữ liệu sống trong 30 ngày gần nhất.
 
-### 4. Kho tài liệu & Pipeline kỹ thuật (109 tài liệu)
-- **109 tài liệu nghiệp vụ:** 35 bộ prompt chuẩn, 20 báo cáo phân tích thị trường, 22 tools, 16 checklists/danh mục và tài liệu Zoom.
+### 4. Kho tài liệu & Pipeline kỹ thuật (152 tài liệu)
+- **152 tài liệu nghiệp vụ:** 78 bộ prompt chuẩn (35 gốc + 43 prompt master research từ `data/research-20260916/`), 20 báo cáo phân tích thị trường, 22 tools, 16 checklists/danh mục và tài liệu Zoom.
 - **4 pipeline cấu trúc sẵn:** `bible-explainer/`, `wildlife/`, `hoat-hinh-ai/`, `ton-giao/` — sẵn sàng điều chỉnh cho mọi đề tài mới.
 
 ---

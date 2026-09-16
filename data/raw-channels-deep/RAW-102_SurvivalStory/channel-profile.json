@@ -1,20 +1,23 @@
 {
   "id": "RAW-102",
-  "channelId": "UC4Lu5YL8jLV_WULVSl1ZS4w",
-  "title": "История Выживания (kenh da doi ten/noi dung)",
-  "handle": "@SurvivalStory",
-  "url": "https://www.youtube.com/channel/UC4Lu5YL8jLV_WULVSl1ZS4w",
-  "subscribers": 3,
+  "channelId": "UCgJKsFJy7mip3VpOEhj717g",
+  "title": "SurvivalStory",
+  "handle": "@SurvivaIStory",
+  "handleNote": "HANDLE DA DOI: @SurvivalStory (cu) -> @SurvivaIStory (I HOA, hien tai). Kenh cu @SurvivalStory hien bi mot kenh Nga 3 subs chiem. Kenh THAT @SurvivaIStory con song: 2820 subs, 104 videos, video moi nhat 15/09/2026.",
+  "url": "https://www.youtube.com/@SurvivaIStory",
+  "subscribers": 2820,
   "views": null,
-  "videoCount": 0,
+  "videoCount": 104,
   "country": null,
-  "avatar": "",
-  "extractedAt": "2026-09-16T16:25:42+07:00",
-  "extractionSource": "free_yt_engine.py - do that 16/09/2026",
-  "rebrandNote": "HANDLE @SurvivalStory + channelId nay HIEN tro ve kenh tieng Nga \"История Выживания\" voi 3 subs va 0 video cong khai. Du lieu lich su (2750 subs, 100 video, US) la snapshot 09/2026 khong con do duoc. KHONG bia so - giu nguyen trang thai that.",
+  "avatar": "https://yt3.googleusercontent.com/etQ6T5SsoPM9capOD-HzcZHv6GK-bOuIAaqyBF5EMk1iERUEghOuxKkKljKS4JKOAvdCMjFsJg=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T18:21:07+07:00",
+  "extractionSource": "free_yt_engine.py - re-extract 16/09/2026 (phat hien qua ngh ngo 3 subs cua anh)",
   "dataGaps": [
-    "Ken da rebrand/ban handle - khong con la \"SurvivalStory\" goc",
-    "RSS rong (0 video cong khai) - khong the lay top videos that",
-    "Goi y: replace kenh mau nay hoac do lai tu snapshot cu neu can"
-  ]
+    "views tong kenh: chua do duoc - null trung thuc",
+    "country: chua co trong HTML - null trung thuc",
+    "longevityAudit/growth30d: chua do - dot 2",
+    "transcripts: chua extract"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
 }

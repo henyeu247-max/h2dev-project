@@ -1,3 +1,30 @@
+## 2026-09-17 — Sửa Lỗi Lệch Chip Tab Tài Liệu & Kênh Mẫu (Fix UI Consistency 153/153)
+
+### 🎯 Vấn đề người dùng phát hiện qua ảnh chụp màn hình
+Hộp thống kê ghi **"13 Ngách có data · chip bên dưới"** và **"153 Tổng mục"**, nhưng bên dưới chỉ render **11 chips** với tổng số lượng cộng lại chỉ là **147** (thiếu mất 6 mục)!
+Nguyên nhân gốc rễ: `index.html` lọc danh sách chip qua mảng tĩnh `NICHE_ORDER` (12 mục cứng), dẫn đến 2 ngách có dữ liệu thực tế bị nuốt chửng khỏi bộ lọc:
+1. `Hệ thống / Quy trình` (5 tài liệu: 4 Zoom sessions + 1 Zoom outline) -> thiếu.
+2. `Everyday History EN (lịch sử đồ vật thường ngày)` (1 prompt) -> thiếu.
+
+Tương tự trên tab Kênh mẫu: mảng `NICHE_ORDER` thiếu ngách `Khoa học EN` (5 kênh) khiến chip bị rơi từ 9 xuống 8.
+
+### 🛠️ Can thiệp kỹ thuật
+1. **Chuyển cơ chế `nicheChips` sang Động (Dynamic):**
+   - Ghép `NICHE_ORDER` với `Object.keys(nicheCounts).filter(n => !NICHE_ORDER.includes(n))` để đảm bảo **100% ngách có data trong `nicheCounts` đều được tạo chip**.
+   - Bổ sung `Hệ thống / Quy trình` và `Everyday History EN...` vào `NICHE_ORDER` và `NICHE_MAP`.
+   - Áp dụng cấu trúc tương tự cho `renderKenh()` (Kênh mẫu).
+2. **Đồng bộ hóa render theo nhóm (`grouped`):**
+   - Vòng lặp hiển thị danh sách thẻ bên dưới duyệt chính xác theo `allNicheKeys`, đảm bảo số thẻ khớp 1:1 với số lượng ghi trên chip.
+
+### ✅ Kiểm chứng Playwright E2E trên Live VPS (`https://h2dev-learn.tonymmo.com/`)
+- Tab Tài liệu: Hiển thị đủ **13 chips**, tổng số mục trong chip: **153/153** (PASS 100%).
+- Click chip `Hệ thống / Quy trình`: Hiển thị chuẩn xác **5 tài liệu Zoom** (PASS).
+- Click chip `Everyday History EN`: Hiển thị chuẩn xác **1 prompt** (PASS).
+- Tab Kênh mẫu: Hiển thị đủ **9 chips**, tổng kênh trong chip: **165/165** (PASS 100%).
+
+---
+
+
 ## 2026-09-17 — Hoàn Tất Quét Sạch Bản Quyền Kho Nhạc Nền 38 Tracks Qua Gemini Multimodal
 
 ### 🎯 Mục tiêu

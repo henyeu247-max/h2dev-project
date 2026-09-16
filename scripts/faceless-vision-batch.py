@@ -444,6 +444,7 @@ def main():
     save_checkpoint({'done': done_map, 'updatedAt': datetime.now(timezone.utc).isoformat()})
 
     # Ghi kết quả vào raw-kenh-mau.json
+    # Format chuẩn hiện hành (16/09): indent=2, CRLF, không newline cuối file.
     n_written = 0
     for r in records:
         rid = r.get('id', '')
@@ -451,11 +452,15 @@ def main():
             r['thumbnailVision'] = done_map[rid]
             n_written += 1
     doc['records'] = records
-    doc['updatedAt'] = datetime.now(timezone.utc).isoformat()
+    doc['updatedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S+07:00')
     tmp = DATA_TABS + '.tmp'
     with io.open(tmp, 'w', encoding='utf-8') as f:
-        json.dump(doc, f, ensure_ascii=False, indent=1)
+        json.dump(doc, f, ensure_ascii=False, indent=2)
     os.replace(tmp, DATA_TABS)
+    # Sync mirror canonical raw-kenh-goc/metadata-full.json (gitignored, giữ song song 1:1)
+    META_FULL = os.path.join(ROOT, 'raw-kenh-goc', 'metadata-full.json')
+    if os.path.exists(META_FULL):
+        shutil.copy2(DATA_TABS, META_FULL)
 
     wall = time.time() - t_run
     print('=' * 68)

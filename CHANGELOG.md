@@ -1,4 +1,25 @@
-## 2026-09-17 — Nguồn Số Duy Nhất (Single Source of Count Truth) — Dứt Điểm Bệnh Hardcode Số
+## 2026-09-17 — GUARD Counts Drift vào Post-Receive Hook VPS (Chặn Deploy Khi Docs Lệch Data)
+
+### 🎯 Mục tiêu
+Thêm bước `sync-counts.js --check` vào hook deploy VPS → **chặn deploy khi docs/số liệu lệch data live**.
+
+### 🛠️ Can thiệp kỹ thuật
+1. **Hook `post-receive`** (`scripts/deploy/post-receive` → cài tại `/root/h2dev.git/hooks/post-receive`): Sync app → **GUARD** `sync-counts.js --check` → build Master DB → reload PM2.
+2. **ROLLBACK (điểm then chốt):** `server.js` serve file tĩnh đọc **disk mỗi request** → code mới có hiệu lực ngay dù chưa reload PM2. Vì vậy hook lưu `OLD_REV` trước `reset --hard`; khi guard fail → `git reset --hard "$OLD_REV"` (không chỉ `exit 1`).
+3. **`.gitattributes`** (mới): bắt buộc `eol=lf` cho `scripts/deploy/post-receive` + `*.sh/*.bash` (chống `core.autocrlf=true` làm hỏng hook bash); `eol=crlf` cho `*.cmd/*.bat/*.ps1`.
+4. **`scripts/deploy/README.md`**: hướng dẫn cài/test hook + lý do cần rollback.
+
+### ✅ Kiểm chứng (test E2E thật)
+- Tạo commit lệch (`manifest videos=999`) → push VPS → hook in **BLOCKED** + **ROLLBACK về `9080646`**.
+- Verify: VPS app HEAD = `9080646` · manifest disk `videos=136` · live serve `videos=136`.
+- Dọn: `git reset --hard 9080646` local + `git push vps main --force` → deploy lại OK.
+- Push thật (commit `82c8eb4`): guard `Counts OK` → build DB → PM2 reload ✓.
+- **Đồng bộ 4 nơi = `82c8eb4`:** local · github · VPS bare repo · VPS app.
+- Backup hook cũ: `/root/h2dev.git/hooks/post-receive.bak-20260917` + `_backup/20260917-counts-single-source/`.
+
+---
+
+
 
 ### 🎯 Bối cảnh
 Anh chỉ ra gốc rễ: số liệu (136/152/165/156...) bị **hardcode rải rác ~90+ chỗ** (validate-project.js, build_master_db.js, sync_db_to_tabs.js, master_dal.js, AGENTS.md, TREE.md, 00_README.md, MEMORY.md, memory...). Sửa 1 chỗ (vd thêm 1 video) → hàng loạt chỗ lệch → "chỗ sai chỗ đúng", lặp vô hạn.

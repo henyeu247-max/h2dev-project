@@ -320,13 +320,13 @@
   },
   "phamViKho": {
     "video": 136,
-    "taiLieu": 109,
+    "taiLieu": 152,
     "kenhMau": 165,
     "kenhDeadTrongFile": 13,
     "kenhLiveTrongFile": 152,
     "kenhDaDoSong": 165,
     "kenhLiveChuaDo": 0,
-    "ghiChu": "Lịch sử 21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08. Snapshot live 12/09/2026: 165 kênh (152 live · 13 dead), ngay_do 165/165. Cập nhật 16/09/2026: đánh số lại BXH 1–34 (2 dòng từng trùng số 18); đo lại code: 19 handle trên video chưa có trong kenh-mau; tài liệu 103→109."
+    "ghiChu": "Lịch sử 21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08. Snapshot live 12/09/2026: 165 kênh (152 live · 13 dead), ngay_do 165/165. Cập nhật 16/09/2026: đánh số lại BXH 1–34 (2 dòng từng trùng số 18); đo lại code: 19 handle trên video chưa có trong kenh-mau; tài liệu 103→109. Cập nhật 16/09/2026 (bổ sung): tài liệu 109→152 (+43 prompt master research từ data/research-20260916/)."
   },
   "thongTinChinhSach2026": [
     "16/07/2026 Halprin (VP Trust & Safety) trên Creator Insider: chính sách KHÔNG đổi — chỉ ngôn ngữ. 3 nhóm inauthentic: (1) generic/repetitive — 'đã có 1 đống như vậy ngoài kia, làm cái tiếp theo = chung chung, lặp lại → kênh không ở lại YPP'; (2) off-putting/unsatisfying — con vật gặp nạn rồi được cứu + TRẺ EM trong tình huống đau khổ — kênh dedicate nội dung này bị remove khỏi YPP; (3) AI persona nói health/finance/legal — 'không muốn tạo động lực cho điều đó'.",

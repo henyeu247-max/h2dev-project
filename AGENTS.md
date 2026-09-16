@@ -28,7 +28,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | Vai trò | Path |
 |---|---|
 | Data core (video/ngách/kênh/tài liệu) | `d:\YTB\H2DEV-Project\data-tabs\*.json` |
-| Catalog | `d:\YTB\H2DEV-Project\data\catalog.json` · `catalog_full.json` |
+| Catalog | `d:\YTB\H2DEV-Project\data\catalog.json` · `catalog_full.json` · `music_catalog.json` |
 | Video acceptance | `data\video_acceptance.json` — trạng thái pilot/QA, không gọi nghiệm thu khi còn blocker |
 | Scripts (validate/audit) | `d:\YTB\H2DEV-Project\scripts\` |
 | Docs + Rule làm việc | `d:\YTB\H2DEV-Project\knowledge-hub\docs\` |
@@ -53,7 +53,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 |---|---|
 | `videos.json` | **136** (22 free / 110 pro + 4 Zoom free) |
 | `kenh-mau.json` | **165** (152 live + 13 dead) · `ngay_do` 165/165 |
-| `tai-lieu-full.json` | **153** (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5; +43 prompt master research 16/09) |
+| `tai-lieu-full.json` | **153** (prompt 78 · report 20 · tool 23 · list 16 · other 11 · internal-doc 5; +cẩm nang nhạc nền 17/09) |
 | `ngach-xanh.json` | **34** ngách — `xanh:true` **11** · `CÓ MẪU TĂNG` 10 · `CHƯA ĐỦ BẰNG CHỨNG` 8 · `THẬN TRỌNG` 3 · `CÓ ĐIỀU KIỆN` 2 · + 5 meta kho · 5 ngách đỏ · 13 BXH |
 | `kich-ban.json` | **45** (extract cũ, UI không đọc) |
 | `nguon-reup.json` | **27** |

@@ -7,6 +7,7 @@ H2DEV là **một nguồn sự thật**. Gốc `Y:\YTB` không chứa data làm 
 ```
 Y:\YTB\
 ├── README.md                      # trỏ vào H2DEV
+├── Nhạc nền\                      # KHO 38 TRACKS NHẠC NỀN (265 MB) đã audit Gemini Multimodal
 ├── _archive\                      # KHÔNG sửa · bản gốc đã gom
 │   ├── 20260818-root\             # MD / prompt / excel / tmp / pipeline gốc
 │   └── secrets\                   # mcp-keys — không đưa lên web
@@ -34,6 +35,8 @@ Y:\YTB\
     │   ├── video_acceptance.json      # trạng thái pilot, QA, blocker — không gọi PASS giả
     │   ├── raw-channels-deep\         # 149 hồ sơ kênh sâu (transcripts/summary/vision) — phục vụ UI
     │   ├── research-20260916\         # 43 prompt master research (nguồn của +43 card 16/09)
+    │   ├── music_catalog.json         # 38 tracks nhạc nền đã audit Gemini (25 SAFE · 9 REVIEW · 4 COPYRIGHTED)
+    │   ├── counts-manifest.json       # manifest số liệu chuẩn tự động sinh bởi sync-counts.js
     │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest  # (2 folder *_backup_* cũ đã dời _archive 16/09)
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)

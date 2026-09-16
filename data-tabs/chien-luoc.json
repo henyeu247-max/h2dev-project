@@ -1,226 +1,226 @@
 {
-  "updated": "2026-09-16",
-  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 11 bước thực chiến). Tổng hợp đầy đủ từ 4 buổi Zoom thực chiến chuyên gia và kho học liệu 136 bài học H2DEV. Có liên kết trực tiếp tới tài liệu local và công cụ thực tế.",
-  "nguyenTacCotLoi": [
-    "NGÁCH KHÔNG QUYẾT ĐỊNH XANH/ĐỎ — CÁCH LÀM quyết định. Phải có giá trị gốc nhìn thấy được, câu chuyện có nguồn sử học/khoa học xác thực.",
-    "Hai cửa độc lập của YouTube: Inauthentic Content (tự làm nội dung công nghiệp lặp lại) và Reused Content (lấy clip người khác). Faceless/AI hoàn toàn hợp lệ nếu có biên tập, chuyển biến nội dung gốc và đóng góp giá trị riêng.",
-    "3 điểm mấu chốt giữ chân người xem: Chiến lược kênh đúng tệp, Hook 10–15 giây đầu giải đáp tò mò, và Quality Pass kiểm duyệt âm thanh/hình ảnh trước khi đăng.",
-    "Nhất quán = Thương hiệu (Brand): 1 giọng đọc đặc trưng, 1 phong cách hình ảnh đồng bộ, 1 cấu trúc kịch bản mạch lạc giữ chân khán giả lâu dài."
-  ],
-  "workflow": [
-    {
-      "n": 1,
-      "title": "Môi trường & Tài khoản sạch",
-      "detail": "Dùng Proxy IPv4 sạch (Mỹ/Singapore), trình duyệt chống phát hiện (MKT/GPM) tách riêng từng kênh. Ngâm Gmail 1–2 ngày, bật 2FA Authenticator, tránh blacklist IP mạng nhà.",
-      "tab": "video",
-      "tabLabel": "Module Môi trường",
-      "docPath": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
-      "docTitle": "SOP Nền tảng & Môi trường sạch"
-    },
-    {
-      "n": 2,
-      "title": "Nghiên cứu Ngách & Chọn Key",
-      "detail": "Dùng vidIQ đo Volume (>65) và Competition (<50). Lách thị trường đối thủ để giảm cạnh tranh (học ý tưởng US làm cho JP/KR hoặc ngược lại). Lập chùm 20–30 từ khóa dài.",
-      "tab": "ngachxanh",
-      "tabLabel": "Ma trận Ngách xanh",
-      "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
-      "docTitle": "SOP Chiến lược Kênh & Chọn Key"
-    },
-    {
-      "n": 3,
-      "title": "Tạo Kênh & Quản lý Hệ thống",
-      "detail": "Tạo kênh YouTube, thiết lập Logo, Banner, thẻ từ khóa và vị trí địa lý theo thị trường mục tiêu. Lập Excel theo dõi Mail–Kênh–Key–Trạng thái. Ngâm kênh 3–4 ngày.",
-      "tab": "kenh",
-      "tabLabel": "Kho 165 Kênh mẫu",
-      "docPath": "docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt",
-      "docTitle": "Đề cương Quản lý Kênh A–Z"
-    },
-    {
-      "n": 4,
-      "title": "Viết Kịch bản Chuẩn Giữ chân",
-      "detail": "Áp dụng công thức 3 hồi: Hook 15s đầu giải đáp nghịch lý thường nhật -> Thân bài 3–5 luận điểm có nguồn dẫn chứng -> Kêu gọi hành động. Dùng Gemini Ultra/ChatGPT viết lại sáng tạo.",
-      "tab": "kichban",
-      "tabLabel": "Thư viện Kịch bản",
-      "docPath": "knowledge-hub/docs/SOUL.md",
-      "docTitle": "Chuẩn Kịch bản & SOUL.md"
-    },
-    {
-      "n": 5,
-      "title": "Sản xuất Video Tăng tốc bằng Tool",
-      "detail": "Lọc giọng đọc AI tự nhiên (nhịp 130–150 wpm), phối hợp tool tạo video đa luồng. Hậu kỳ CapCut: cắt tỉa cảnh thừa, thêm nhạc nền nhẹ nhàng, hiệu ứng chuyển cảnh mượt mà.",
-      "tab": "kichban",
-      "tabLabel": "Công cụ & Tool",
-      "kind": "tool",
-      "docPath": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
-      "docTitle": "SOP Quy trình Tool & Tối ưu"
-    },
-    {
-      "n": 6,
-      "title": "Đóng gói Video (CTR & SEO)",
-      "detail": "Title chứa Hook gợi mở + từ khóa chính ở 25% đầu. Thumbnail tương phản cao: chủ thể chính 60–70% khung, chữ to <= 4 từ nổi bật (vàng/đỏ). Mô tả ngắn gọn + 3–5 hashtag.",
-      "tab": "kichban",
-      "tabLabel": "Prompt Edit/Thumb",
-      "promptNiche": "Edit / Thumb",
-      "docPath": "docs/NOI-BO/prompt/thumb-seo-hashtag.md",
-      "docTitle": "Prompt Thumbnail & SEO"
-    },
-    {
-      "n": 7,
-      "title": "Upload, Lên lịch & Seeding",
-      "detail": "Tải lên để chế độ Không công khai ít nhất 2 giờ để YouTube quét bản quyền. Hẹn giờ công khai vào khung giờ vàng khán giả online. Đánh dấu Không dành cho trẻ em, ghim comment, bật ad 2p.",
-      "tab": "video",
-      "tabLabel": "Kho Video & Player",
-      "docPath": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
-      "docTitle": "Quy trình Upload & Seeding"
-    },
-    {
-      "n": 8,
-      "title": "Google AdSense & Doanh thu",
-      "detail": "Liên kết tài khoản AdSense (Gà) bằng tab ẩn danh hoặc 4G sạch. Thông tin CCCD + ngân hàng trùng khớp 100%. Khai báo thuế Mỹ (W-8BEN) và thuế VN. Chu kỳ tiền về ngày 21–23 hàng tháng.",
-      "tab": "video",
-      "tabLabel": "Module Kiếm tiền",
-      "docPath": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
-      "docTitle": "SOP AdSense & Kháng lỗi"
-    },
-    {
-      "n": 9,
-      "title": "Bật kiếm tiền YPP & Giữ chuẩn",
-      "detail": "Đạt ngưỡng 1.000 sub + 4.000 giờ xem hợp lệ (hoặc 8.000 giờ từ 2027). Kiểm duyệt 100% video loại bỏ sạch nội dung vi phạm Reused/Inauthentic Content trước khi gửi đơn xét duyệt.",
-      "tab": "ngachxanh",
-      "tabLabel": "Chính sách YPP",
-      "docPath": "knowledge-hub/docs/RULE-LAM-VIEC.md",
-      "docTitle": "Quy chuẩn YPP & Khung Rule"
-    },
-    {
-      "n": 10,
-      "title": "Xử lý Vi phạm & Kháng nghị",
-      "detail": "Bình tĩnh kiểm tra nguyên nhân khi bị gắn cờ. Làm video kháng nghị 3–5 phút có người thật nói tiếng Anh/bản xứ, quay lại màn hình quy trình sản xuất bằng tool để chứng minh tính sáng tạo gốc.",
-      "tab": "video",
-      "tabLabel": "Kháng nghị & Bảo vệ",
-      "docPath": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
-      "docTitle": "Kỹ thuật Kháng nghị YouTube"
-    },
-    {
-      "n": 11,
-      "title": "Nhân bản Hệ thống & Quy mô lớn",
-      "detail": "Khi kênh đạt ngưỡng doanh thu ổn định, nhân bản công thức sang kênh mới hoặc dịch thuật lách sang quốc gia khác. Quản lý 10–20 kênh theo hệ thống phân cấp, tối ưu hóa chi phí sản xuất.",
-      "tab": "tongquan",
-      "tabLabel": "Bảng Điều khiển Tổng thể",
-      "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
-      "docTitle": "Chiến lược Mở rộng Quy mô"
-    }
-  ],
-  "loTrinhXinKiemTien": {
-    "hienTai2026": "Quảng cáo & Premium: 1.000 sub và 4.000 giờ xem video dài hợp lệ trong 12 tháng, hoặc 10 triệu view Shorts trong 90 ngày. Đủ số vẫn phải qua vòng xét duyệt chính sách của con người.",
-    "tu2027": "Từ 01/02/2027: Kênh mới xin bật quảng cáo nâng lên 1.000 sub + 8.000 giờ xem/365 ngày hoặc 20 triệu view Shorts/90 ngày. Kênh đã bật trước ngày này giữ nguyên ngưỡng cũ.",
-    "duyTriYPP": "Duy trì hoạt động: Không đăng video quá 6 tháng YouTube có quyền tắt kiếm tiền. Kênh chuyên về AI persona tư vấn sức khỏe, tài chính, pháp lý sẽ bị xóa khỏi YPP."
+ "updated": "2026-09-16",
+ "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 11 bước thực chiến). Tổng hợp đầy đủ từ 4 buổi Zoom thực chiến chuyên gia và kho học liệu 136 bài học H2DEV. Có liên kết trực tiếp tới tài liệu local và công cụ thực tế.",
+ "nguyenTacCotLoi": [
+  "NGÁCH KHÔNG QUYẾT ĐỊNH XANH/ĐỎ — CÁCH LÀM quyết định. Phải có giá trị gốc nhìn thấy được, câu chuyện có nguồn sử học/khoa học xác thực.",
+  "Hai cửa độc lập của YouTube: Inauthentic Content (tự làm nội dung công nghiệp lặp lại) và Reused Content (lấy clip người khác). Faceless/AI hoàn toàn hợp lệ nếu có biên tập, chuyển biến nội dung gốc và đóng góp giá trị riêng.",
+  "3 điểm mấu chốt giữ chân người xem: Chiến lược kênh đúng tệp, Hook 10–15 giây đầu giải đáp tò mò, và Quality Pass kiểm duyệt âm thanh/hình ảnh trước khi đăng.",
+  "Nhất quán = Thương hiệu (Brand): 1 giọng đọc đặc trưng, 1 phong cách hình ảnh đồng bộ, 1 cấu trúc kịch bản mạch lạc giữ chân khán giả lâu dài."
+ ],
+ "workflow": [
+  {
+   "n": 1,
+   "title": "Môi trường & Tài khoản sạch",
+   "detail": "Dùng Proxy IPv4 sạch (Mỹ/Singapore), trình duyệt chống phát hiện (MKT/GPM) tách riêng từng kênh. Ngâm Gmail 1–2 ngày, bật 2FA Authenticator, tránh blacklist IP mạng nhà.",
+   "tab": "video",
+   "tabLabel": "Module Môi trường",
+   "docPath": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+   "docTitle": "SOP Nền tảng & Môi trường sạch"
   },
-  "checklistTruocKhiDang": [
-    "Video có giá trị nội dung gốc rõ ràng (không phải slideshow ảnh ghép tự động)?",
-    "15 giây đầu có câu hỏi tò mò (Hook) giữ chân khán giả không?",
-    "Giọng đọc AI nghe tự nhiên, phát âm chuẩn, nhịp điệu vừa phải?",
-    "Hình ảnh minh họa có bản quyền hợp lệ hoặc tạo bởi AI đúng bối cảnh?",
-    "Nếu dùng hình ảnh/nhân vật AI chân thực: đã khai báo nhãn nội dung tổng hợp?",
-    "Thumbnail đọc rõ chữ, tương phản cao, hình ảnh kích thích tò mò?",
-    "Tiêu đề chứa từ khóa chính ở 25% ký tự đầu, không giật tít lừa đảo?",
-    "Mô tả video đầy đủ thông tin tóm tắt và 3–5 hashtag liên quan?"
-  ],
-  "nguonDuLieu": "136 bài học catalog (132 video + 4 buổi Zoom) + 109 tài liệu full + 165 kênh mẫu (152 live · 13 dead ẩn) + 124 hồ sơ Raw Canonical (118 kênh unique). Hệ thống kết nối MCP Pool Local tại D://Mcp-Pool-Vps cổng :3988.",
-  "nguonChinhSach": [
-    "https://support.google.com/youtube/answer/72851",
-    "https://support.google.com/youtube/answer/1311392",
-    "https://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn"
-  ],
-  "huongDiNoiDung": [
-    {
-      "hang": 1,
-      "ngach": "Nguồn gốc Đồ vật thường ngày (Everyday History EN)",
-      "pack": "prompt-ngach-everyday-history + pipeline ton-giao -> video 8–15p",
-      "lyDo": "Cạnh tranh từ khóa vidIQ cực thấp (19.3/100). Nhiều kênh mới bùng nổ (The Origin +285% sub). Đề tài quen thuộc, nghe thụ động khi làm việc nhà rất đông.",
-      "tab": "ngachxanh",
-      "localPath": "docs/NOI-BO/prompt/prompt-ngach-everyday-history.md"
-    },
-    {
-      "hang": 2,
-      "ngach": "Khoa học ru ngủ & Vũ trụ đại dương (Calm Science & Deep Sea)",
-      "pack": "Hồ sơ DE_ScienceParadox + format giọng đọc chậm, nhạc nền sóng biển",
-      "lyDo": "Nhu cầu nghe ru ngủ bùng nổ (+146%). Kênh đối thủ BeyondTheBlue 210K sub húp 5,4 triệu view/30 ngày. Thời lượng AVD cao ngất ngưởng, RPM –4.",
-      "tab": "ngachxanh",
-      "localPath": "raw-niches/DE_ScienceParadox/README.md"
-    },
-    {
-      "hang": 3,
-      "ngach": "Phật pháp & Triết lý tĩnh tâm Nhật Bản (JP Buddhist Wisdom)",
-      "pack": "Kênh mẫu @こころの道しるべ + triết lý buông bỏ muộn phiền",
-      "lyDo": "Độ cạnh tranh từ khóa tại Nhật thấp kỷ lục (19.9/100). Khán giả trung niên Nhật Bản nghe đều đặn mỗi đêm, trung thành cao, RPM –.",
-      "tab": "ngachxanh",
-      "localPath": "raw-niches/JP_PhatPhap/README.md"
-    },
-    {
-      "hang": 4,
-      "ngach": "Nguồn gốc loài người & Khảo cổ cổ đại (Human Origins & Ancient Civilizations)",
-      "pack": "Pipeline bible-explainer / ancient-history -> góc nhìn khảo cổ học",
-      "lyDo": "Kênh nhỏ Basically Primitive 21K sub video đạt gần 400K view (3.300 view/giờ). Tính trường tồn (evergreen) cao, 3–5 năm sau vẫn có view.",
-      "tab": "ngachxanh",
-      "localPath": "pipelines/bible-explainer/"
-    },
-    {
-      "hang": 5,
-      "ngach": "Phim tài liệu động vật hoang dã (Wildlife Documentary)",
-      "pack": "Pipeline wildlife -> tập tính sinh tồn tự nhiên, không dàn cảnh cứu hộ",
-      "lyDo": "Chủ đề phi biên giới, trẻ em hay người lớn toàn cầu đều xem được. Dễ cắn đề xuất view lớn, video sống dai.",
-      "tab": "ngachxanh",
-      "localPath": "pipelines/wildlife/"
-    }
-  ],
-  "cachNoiTab": [
-    "Tab Video = Nguồn bài học 136 SKU (gồm 132 video bài giảng + 4 buổi ghi hình Zoom).",
-    "Tab Ngách xanh = Ma trận 34 ngách ứng viên linh hoạt, có dẫn chứng số liệu vidIQ.",
-    "Tab Kịch bản = Thư viện 103 tài liệu, prompt viết kịch bản và báo cáo thị trường.",
-    "Tab Kênh mẫu = Kho 165 kênh đối thủ thực tế để phân tích tăng trưởng.",
-    "Tab Chiến lược = Quy trình xây kênh A–Z chuẩn hóa 11 bước SOP thực chiến."
-  ],
-  "taiSanNoiBo": [
-    {
-      "loai": "Đề cương Zoom A–Z",
-      "path": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
-      "so": 1,
-      "tab": "kichban",
-      "kind": "report"
-    },
-    {
-      "loai": "Hồ sơ 4 buổi Zoom",
-      "path": "docs/NOI-BO/zoom/",
-      "so": 5,
-      "tab": "kichban",
-      "kind": "report"
-    },
-    {
-      "loai": "Báo cáo nghiên cứu",
-      "path": "docs/NOI-BO/bao-cao/",
-      "so": 20,
-      "tab": "kichban",
-      "kind": "report"
-    },
-    {
-      "loai": "Prompt MD chuẩn",
-      "path": "docs/NOI-BO/prompt/",
-      "so": 12,
-      "tab": "kichban",
-      "kind": "prompt"
-    },
-    {
-      "loai": "Pipeline sản xuất",
-      "path": "pipelines/",
-      "so": 4,
-      "tab": "kichban",
-      "kind": "tool"
-    },
-    {
-      "loai": "Hồ sơ ngách thực chiến",
-      "path": "raw-niches/",
-      "so": 6,
-      "tab": "ngachxanh"
-    }
-  ]
+  {
+   "n": 2,
+   "title": "Nghiên cứu Ngách & Chọn Key",
+   "detail": "Dùng vidIQ đo Volume (>65) và Competition (<50). Lách thị trường đối thủ để giảm cạnh tranh (học ý tưởng US làm cho JP/KR hoặc ngược lại). Lập chùm 20–30 từ khóa dài.",
+   "tab": "ngachxanh",
+   "tabLabel": "Ma trận Ngách xanh",
+   "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+   "docTitle": "SOP Chiến lược Kênh & Chọn Key"
+  },
+  {
+   "n": 3,
+   "title": "Tạo Kênh & Quản lý Hệ thống",
+   "detail": "Tạo kênh YouTube, thiết lập Logo, Banner, thẻ từ khóa và vị trí địa lý theo thị trường mục tiêu. Lập Excel theo dõi Mail–Kênh–Key–Trạng thái. Ngâm kênh 3–4 ngày.",
+   "tab": "kenh",
+   "tabLabel": "Kho 165 Kênh mẫu",
+   "docPath": "docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt",
+   "docTitle": "Đề cương Quản lý Kênh A–Z"
+  },
+  {
+   "n": 4,
+   "title": "Viết Kịch bản Chuẩn Giữ chân",
+   "detail": "Áp dụng công thức 3 hồi: Hook 15s đầu giải đáp nghịch lý thường nhật -> Thân bài 3–5 luận điểm có nguồn dẫn chứng -> Kêu gọi hành động. Dùng Gemini Ultra/ChatGPT viết lại sáng tạo.",
+   "tab": "kichban",
+   "tabLabel": "Thư viện Kịch bản",
+   "docPath": "knowledge-hub/docs/SOUL.md",
+   "docTitle": "Chuẩn Kịch bản & SOUL.md"
+  },
+  {
+   "n": 5,
+   "title": "Sản xuất Video Tăng tốc bằng Tool",
+   "detail": "Lọc giọng đọc AI tự nhiên (nhịp 130–150 wpm), phối hợp tool tạo video đa luồng. Hậu kỳ CapCut: cắt tỉa cảnh thừa, thêm nhạc nền nhẹ nhàng, hiệu ứng chuyển cảnh mượt mà.",
+   "tab": "kichban",
+   "tabLabel": "Công cụ & Tool",
+   "kind": "tool",
+   "docPath": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+   "docTitle": "SOP Quy trình Tool & Tối ưu"
+  },
+  {
+   "n": 6,
+   "title": "Đóng gói Video (CTR & SEO)",
+   "detail": "Title chứa Hook gợi mở + từ khóa chính ở 25% đầu. Thumbnail tương phản cao: chủ thể chính 60–70% khung, chữ to <= 4 từ nổi bật (vàng/đỏ). Mô tả ngắn gọn + 3–5 hashtag.",
+   "tab": "kichban",
+   "tabLabel": "Prompt Edit/Thumb",
+   "promptNiche": "Edit / Thumb",
+   "docPath": "docs/NOI-BO/prompt/thumb-seo-hashtag.md",
+   "docTitle": "Prompt Thumbnail & SEO"
+  },
+  {
+   "n": 7,
+   "title": "Upload, Lên lịch & Seeding",
+   "detail": "Tải lên để chế độ Không công khai ít nhất 2 giờ để YouTube quét bản quyền. Hẹn giờ công khai vào khung giờ vàng khán giả online. Đánh dấu Không dành cho trẻ em, ghim comment, bật ad 2p.",
+   "tab": "video",
+   "tabLabel": "Kho Video & Player",
+   "docPath": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+   "docTitle": "Quy trình Upload & Seeding"
+  },
+  {
+   "n": 8,
+   "title": "Google AdSense & Doanh thu",
+   "detail": "Liên kết tài khoản AdSense (Gà) bằng tab ẩn danh hoặc 4G sạch. Thông tin CCCD + ngân hàng trùng khớp 100%. Khai báo thuế Mỹ (W-8BEN) và thuế VN. Chu kỳ tiền về ngày 21–23 hàng tháng.",
+   "tab": "video",
+   "tabLabel": "Module Kiếm tiền",
+   "docPath": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+   "docTitle": "SOP AdSense & Kháng lỗi"
+  },
+  {
+   "n": 9,
+   "title": "Bật kiếm tiền YPP & Giữ chuẩn",
+   "detail": "Đạt ngưỡng 1.000 sub + 4.000 giờ xem hợp lệ (hoặc 8.000 giờ từ 2027). Kiểm duyệt 100% video loại bỏ sạch nội dung vi phạm Reused/Inauthentic Content trước khi gửi đơn xét duyệt.",
+   "tab": "ngachxanh",
+   "tabLabel": "Chính sách YPP",
+   "docPath": "knowledge-hub/docs/RULE-LAM-VIEC.md",
+   "docTitle": "Quy chuẩn YPP & Khung Rule"
+  },
+  {
+   "n": 10,
+   "title": "Xử lý Vi phạm & Kháng nghị",
+   "detail": "Bình tĩnh kiểm tra nguyên nhân khi bị gắn cờ. Làm video kháng nghị 3–5 phút có người thật nói tiếng Anh/bản xứ, quay lại màn hình quy trình sản xuất bằng tool để chứng minh tính sáng tạo gốc.",
+   "tab": "video",
+   "tabLabel": "Kháng nghị & Bảo vệ",
+   "docPath": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+   "docTitle": "Kỹ thuật Kháng nghị YouTube"
+  },
+  {
+   "n": 11,
+   "title": "Nhân bản Hệ thống & Quy mô lớn",
+   "detail": "Khi kênh đạt ngưỡng doanh thu ổn định, nhân bản công thức sang kênh mới hoặc dịch thuật lách sang quốc gia khác. Quản lý 10–20 kênh theo hệ thống phân cấp, tối ưu hóa chi phí sản xuất.",
+   "tab": "tongquan",
+   "tabLabel": "Bảng Điều khiển Tổng thể",
+   "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+   "docTitle": "Chiến lược Mở rộng Quy mô"
+  }
+ ],
+ "loTrinhXinKiemTien": {
+  "hienTai2026": "Quảng cáo & Premium: 1.000 sub và 4.000 giờ xem video dài hợp lệ trong 12 tháng, hoặc 10 triệu view Shorts trong 90 ngày. Đủ số vẫn phải qua vòng xét duyệt chính sách của con người.",
+  "tu2027": "Từ 01/02/2027: Kênh mới xin bật quảng cáo nâng lên 1.000 sub + 8.000 giờ xem/365 ngày hoặc 20 triệu view Shorts/90 ngày. Kênh đã bật trước ngày này giữ nguyên ngưỡng cũ.",
+  "duyTriYPP": "Duy trì hoạt động: Không đăng video quá 6 tháng YouTube có quyền tắt kiếm tiền. Kênh chuyên về AI persona tư vấn sức khỏe, tài chính, pháp lý sẽ bị xóa khỏi YPP."
+ },
+ "checklistTruocKhiDang": [
+  "Video có giá trị nội dung gốc rõ ràng (không phải slideshow ảnh ghép tự động)?",
+  "15 giây đầu có câu hỏi tò mò (Hook) giữ chân khán giả không?",
+  "Giọng đọc AI nghe tự nhiên, phát âm chuẩn, nhịp điệu vừa phải?",
+  "Hình ảnh minh họa có bản quyền hợp lệ hoặc tạo bởi AI đúng bối cảnh?",
+  "Nếu dùng hình ảnh/nhân vật AI chân thực: đã khai báo nhãn nội dung tổng hợp?",
+  "Thumbnail đọc rõ chữ, tương phản cao, hình ảnh kích thích tò mò?",
+  "Tiêu đề chứa từ khóa chính ở 25% ký tự đầu, không giật tít lừa đảo?",
+  "Mô tả video đầy đủ thông tin tóm tắt và 3–5 hashtag liên quan?"
+ ],
+ "nguonDuLieu": "136 bài học catalog (132 video + 4 buổi Zoom) + 109 tài liệu full + 165 kênh mẫu (152 live · 13 dead ẩn) + 124 hồ sơ Raw Canonical (118 kênh unique). Hệ thống kết nối MCP Pool Local tại D://Mcp-Pool-Vps cổng :3988.",
+ "nguonChinhSach": [
+  "https://support.google.com/youtube/answer/72851",
+  "https://support.google.com/youtube/answer/1311392",
+  "https://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn"
+ ],
+ "huongDiNoiDung": [
+  {
+   "hang": 1,
+   "ngach": "Nguồn gốc Đồ vật thường ngày (Everyday History EN)",
+   "pack": "prompt-ngach-everyday-history + pipeline ton-giao -> video 8–15p",
+   "lyDo": "Cạnh tranh từ khóa vidIQ cực thấp (19.3/100). Nhiều kênh mới bùng nổ (The Origin +285% sub). Đề tài quen thuộc, nghe thụ động khi làm việc nhà rất đông.",
+   "tab": "ngachxanh",
+   "localPath": "docs/NOI-BO/prompt/prompt-ngach-everyday-history.md"
+  },
+  {
+   "hang": 2,
+   "ngach": "Khoa học ru ngủ & Vũ trụ đại dương (Calm Science & Deep Sea)",
+   "pack": "Hồ sơ DE_ScienceParadox + format giọng đọc chậm, nhạc nền sóng biển",
+   "lyDo": "Nhu cầu nghe ru ngủ bùng nổ (+146%). Kênh đối thủ BeyondTheBlue 210K sub húp 5,4 triệu view/30 ngày. Thời lượng AVD cao ngất ngưởng, RPM –4.",
+   "tab": "ngachxanh",
+   "localPath": "raw-niches/DE_ScienceParadox/README.md"
+  },
+  {
+   "hang": 3,
+   "ngach": "Phật pháp & Triết lý tĩnh tâm Nhật Bản (JP Buddhist Wisdom)",
+   "pack": "Kênh mẫu @こころの道しるべ + triết lý buông bỏ muộn phiền",
+   "lyDo": "Độ cạnh tranh từ khóa tại Nhật thấp kỷ lục (19.9/100). Khán giả trung niên Nhật Bản nghe đều đặn mỗi đêm, trung thành cao, RPM –.",
+   "tab": "ngachxanh",
+   "localPath": "raw-niches/JP_PhatPhap/README.md"
+  },
+  {
+   "hang": 4,
+   "ngach": "Nguồn gốc loài người & Khảo cổ cổ đại (Human Origins & Ancient Civilizations)",
+   "pack": "Pipeline bible-explainer / ancient-history -> góc nhìn khảo cổ học",
+   "lyDo": "Kênh nhỏ Basically Primitive 21K sub video đạt gần 400K view (3.300 view/giờ). Tính trường tồn (evergreen) cao, 3–5 năm sau vẫn có view.",
+   "tab": "ngachxanh",
+   "localPath": "pipelines/bible-explainer/"
+  },
+  {
+   "hang": 5,
+   "ngach": "Phim tài liệu động vật hoang dã (Wildlife Documentary)",
+   "pack": "Pipeline wildlife -> tập tính sinh tồn tự nhiên, không dàn cảnh cứu hộ",
+   "lyDo": "Chủ đề phi biên giới, trẻ em hay người lớn toàn cầu đều xem được. Dễ cắn đề xuất view lớn, video sống dai.",
+   "tab": "ngachxanh",
+   "localPath": "pipelines/wildlife/"
+  }
+ ],
+ "cachNoiTab": [
+  "Tab Video = Nguồn bài học 136 SKU (gồm 132 video bài giảng + 4 buổi ghi hình Zoom).",
+  "Tab Ngách xanh = Ma trận 34 ngách ứng viên linh hoạt, có dẫn chứng số liệu vidIQ.",
+  "Tab Kịch bản = Thư viện 109 tài liệu, prompt viết kịch bản và báo cáo thị trường.",
+  "Tab Kênh mẫu = Kho 165 kênh đối thủ thực tế để phân tích tăng trưởng.",
+  "Tab Chiến lược = Quy trình xây kênh A–Z chuẩn hóa 11 bước SOP thực chiến."
+ ],
+ "taiSanNoiBo": [
+  {
+   "loai": "Đề cương Zoom A–Z",
+   "path": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+   "so": 1,
+   "tab": "kichban",
+   "kind": "report"
+  },
+  {
+   "loai": "Hồ sơ 4 buổi Zoom",
+   "path": "docs/NOI-BO/zoom/",
+   "so": 5,
+   "tab": "kichban",
+   "kind": "report"
+  },
+  {
+   "loai": "Báo cáo nghiên cứu",
+   "path": "docs/NOI-BO/bao-cao/",
+   "so": 20,
+   "tab": "kichban",
+   "kind": "report"
+  },
+  {
+   "loai": "Prompt MD chuẩn",
+   "path": "docs/NOI-BO/prompt/",
+   "so": 12,
+   "tab": "kichban",
+   "kind": "prompt"
+  },
+  {
+   "loai": "Pipeline sản xuất",
+   "path": "pipelines/",
+   "so": 4,
+   "tab": "kichban",
+   "kind": "tool"
+  },
+  {
+   "loai": "Hồ sơ ngách thực chiến",
+   "path": "raw-niches/",
+   "so": 6,
+   "tab": "ngachxanh"
+  }
+ ]
 }

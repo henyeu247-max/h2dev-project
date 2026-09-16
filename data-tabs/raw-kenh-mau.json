@@ -1,6 +1,6 @@
 {
  "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
- "updatedAt": "2026-09-16T11:33:09.000000+00:00",
+ "updatedAt": "2026-09-16T11:40:05.000000+00:00",
  "totalRecords": 124,
  "records": [
   {
@@ -288,7 +288,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-002",
@@ -569,7 +579,33 @@
      "note": "Handle cu bi kenh \"Lucas Smith\" chiem sau khi kenh doi ten. Handle that xac minh qua canonicalBaseUrl (2 chu L).",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "HANDLE_HIJACKED",
+    "stateReason": "Handle cu @TheHelpfulChristian gio thuoc kenh khac (Lucas Smith, cid=UCoJqFOg6v9dHVauHwGg8shg). Kenh that doi thanh @TheHelpfullChristian.",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "handle_renamed",
+      "date": "2026-09-16",
+      "from": "@TheHelpfulChristian",
+      "to": "@TheHelpfullChristian",
+      "source": "live:canonicalBaseUrl"
+     },
+     {
+      "type": "old_handle_hijacked",
+      "date": "2026-09-16",
+      "handle": "@TheHelpfulChristian",
+      "hijackerTitle": "Lucas Smith",
+      "hijackerCid": "UCoJqFOg6v9dHVauHwGg8shg",
+      "source": "live:probe-handle-vs-record-cid"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-003",
@@ -839,7 +875,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-004",
@@ -1107,7 +1153,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 40,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-005",
@@ -1375,7 +1438,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-006",
@@ -1645,7 +1718,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 32,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-007",
@@ -1894,7 +1984,32 @@
      "note": "Handle cu 404. Handle that @Simplify.Actually (co dau cham) xac minh qua canonicalBaseUrl.",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "RENAMED",
+    "stateReason": "Handle cu @DanielPatel-f5u 404 (da doi). Handle that @Simplify.Actually, kenh song binh thuong.",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "handle_renamed",
+      "date": "2026-09-16",
+      "from": "@DanielPatel-f5u",
+      "to": "@Simplify.Actually",
+      "source": "live:canonicalBaseUrl"
+     },
+     {
+      "type": "old_handle_dead",
+      "date": "2026-09-16",
+      "handle": "@DanielPatel-f5u",
+      "httpStatus": 404,
+      "source": "live:probe"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-008",
@@ -2133,7 +2248,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 69,
+      "healthDetail": "Chưa ra video mới trong 69 ngày (lần cuối: 2026-07-02). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-009",
@@ -2373,7 +2506,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-010",
@@ -2608,7 +2751,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-011",
@@ -2848,7 +3001,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-012",
@@ -3069,7 +3232,24 @@
      "note": "KENH DA BI YOUTUBE GO BO (16/09/2026) - alert chinh thuc \"vi pham Nguyen tac cong dong\". Handle giu nguyen lich su.",
      "status": "TERMINATED_BY_YOUTUBE"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "TERMINATED_BY_YOUTUBE",
+    "stateReason": "YouTube alert: \"Kenh nay da bi go bo do vi pham Nguyen tac cong dong\" (xac minh 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "terminated_by_youtube",
+      "date": "2026-09-16",
+      "source": "live:channel-page-alert",
+      "note": "KENH DA BI YOUTUBE GO BO - alert chinh thuc tren trang: \"Kenh nay da bi go bo do vi pham Nguyen tac cong dong cua chung toi.\" RSS 404, khong con video. Snapshot cu (2600 subs, 28 videos, US) giu lai trong record de tham chieu lich su."
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-013",
@@ -3308,7 +3488,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 44,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-014",
@@ -3547,7 +3744,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-015",
@@ -3787,7 +3994,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-016",
@@ -4027,7 +4244,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-017",
@@ -4267,7 +4494,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 37,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-018",
@@ -4537,7 +4781,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-019",
@@ -4776,7 +5030,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 87,
+      "healthDetail": "Chưa ra video mới trong 87 ngày (lần cuối: 2026-06-14). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-020",
@@ -5046,7 +5318,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 41,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-021",
@@ -5338,7 +5627,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-022",
@@ -5608,7 +5907,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-023",
@@ -5875,7 +6184,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-024",
@@ -6143,7 +6462,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 80,
+      "healthDetail": "Chưa ra video mới trong 80 ngày (lần cuối: 2026-06-21). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-025",
@@ -6413,7 +6750,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-028",
@@ -6652,7 +6999,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-029",
@@ -6938,7 +7295,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 114,
+      "healthDetail": "Chưa ra video mới trong 107 ngày (lần cuối: 2026-05-25). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-030",
@@ -7178,7 +7553,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-031",
@@ -7435,7 +7820,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-032",
@@ -7675,7 +8070,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-033",
@@ -7895,7 +8300,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "DEAD_404",
+    "stateReason": "vitalityAudit.healthStatus=DEAD_OR_PURGED (Kênh đã xóa hoặc ẩn toàn bộ 21 video trên YouTube, lượt xem 30 ngày sụt giảm nghiêm trọng )",
+    "healthState": "DEAD_OR_PURGED",
+    "monetizationState": "NOT_MONETIZED",
+    "events": [
+     {
+      "type": "videos_purged",
+      "date": "2026-09-09",
+      "source": "vitalityAudit",
+      "daysSinceLatest": null
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-034",
@@ -8135,7 +8557,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-035",
@@ -8375,7 +8807,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 32,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-037",
@@ -8615,7 +9064,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-038",
@@ -8855,7 +9314,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-039",
@@ -9095,7 +9564,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 50,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-040",
@@ -9336,7 +9822,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 64,
+      "healthDetail": "Chưa ra video mới trong 64 ngày (lần cuối: 2026-07-07). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-042",
@@ -9577,7 +10081,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-043",
@@ -9819,7 +10333,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-044",
@@ -10059,7 +10583,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-045",
@@ -10299,7 +10833,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-046",
@@ -10538,7 +11082,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-047",
@@ -10778,7 +11332,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-048",
@@ -11018,7 +11582,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 111,
+      "healthDetail": "Chưa ra video mới trong 111 ngày (lần cuối: 2026-05-21). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-049",
@@ -11258,7 +11840,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-050",
@@ -11484,7 +12076,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-051",
@@ -11754,7 +12356,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-052",
@@ -12022,7 +12634,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-053",
@@ -12290,7 +12912,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-054",
@@ -12559,7 +13191,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 35,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-055",
@@ -12830,7 +13479,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 108,
+      "healthDetail": "Chưa ra video mới trong 108 ngày (lần cuối: 2026-05-24). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-056",
@@ -13101,7 +13768,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-057",
@@ -13372,7 +14049,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 144,
+      "healthDetail": "Chưa ra video mới trong 144 ngày (lần cuối: 2026-04-18). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-058",
@@ -13641,7 +14336,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 50,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-059",
@@ -13889,7 +14601,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-060",
@@ -14130,7 +14852,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_LONG (do 2026-09-09)",
+    "healthState": "DORMANT_LONG",
+    "monetizationState": "MONETIZED_AT_RISK",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 248,
+      "healthDetail": "Dừng đăng video 248 ngày (lần cuối: 2026-01-04). Cực kỳ rủi ro: Kênh bỏ hoang hoặc đã bị YouTube tướ",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-062",
@@ -14371,7 +15111,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-063",
@@ -14611,7 +15361,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 118,
+      "healthDetail": "Chưa ra video mới trong 118 ngày (lần cuối: 2026-05-14). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-064",
@@ -14850,7 +15618,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 42,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-065",
@@ -15119,7 +15904,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 56,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-066",
@@ -15358,7 +16160,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 89,
+      "healthDetail": "Chưa ra video mới trong 89 ngày (lần cuối: 2026-06-12). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-067",
@@ -15596,7 +16416,24 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-09)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-09",
+      "daysSinceLatest": 52,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-068",
@@ -15854,7 +16691,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 118,
+      "healthDetail": "Chưa ra video mới trong 118 ngày (lần cuối: 2026-05-14). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-069",
@@ -16123,7 +16978,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-070",
@@ -16363,7 +17228,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-075",
@@ -16600,7 +17475,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 154,
+      "healthDetail": "Dừng đăng video 197 ngày (lần cuối: 2026-02-24). Cực kỳ rủi ro: Kênh bỏ hoang hoặc đã bị YouTube tướ",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-076",
@@ -16850,7 +17743,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_LONG (do 2026-09-09)",
+    "healthState": "DORMANT_LONG",
+    "monetizationState": "MONETIZED_AT_RISK",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 263,
+      "healthDetail": "Dừng đăng video 263 ngày (lần cuối: 2025-12-20). Cực kỳ rủi ro: Kênh bỏ hoang hoặc đã bị YouTube tướ",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-077",
@@ -17119,7 +18030,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-078",
@@ -17380,7 +18301,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_LONG (do 2026-09-09)",
+    "healthState": "DORMANT_LONG",
+    "monetizationState": "MONETIZED_AT_RISK",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 223,
+      "healthDetail": "Dừng đăng video 223 ngày (lần cuối: 2026-01-29). Cực kỳ rủi ro: Kênh bỏ hoang hoặc đã bị YouTube tướ",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-079",
@@ -17646,7 +18585,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-080",
@@ -17912,7 +18861,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_LONG (do 2026-09-09)",
+    "healthState": "DORMANT_LONG",
+    "monetizationState": "MONETIZED_AT_RISK",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 1895,
+      "healthDetail": "Dừng đăng video 1895 ngày (lần cuối: 2021-07-02). Cực kỳ rủi ro: Kênh bỏ hoang hoặc đã bị YouTube tư",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-081",
@@ -18183,7 +19150,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-082",
@@ -18452,7 +19429,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-083",
@@ -18721,7 +19708,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-084",
@@ -18961,7 +19958,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 83,
+      "healthDetail": "Chưa ra video mới trong 83 ngày (lần cuối: 2026-06-18). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-085",
@@ -19200,7 +20215,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-086",
@@ -19440,7 +20465,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-087",
@@ -19710,7 +20745,25 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=DORMANT_MID (do 2026-09-09)",
+    "healthState": "DORMANT_MID",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "gone_dormant",
+      "date": "2026-09-09",
+      "daysSinceLatest": 109,
+      "healthDetail": "Chưa ra video mới trong 109 ngày (lần cuối: 2026-05-23). Cần theo dõi nhịp sản xuất.",
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-088",
@@ -19976,7 +21029,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-089",
@@ -20255,7 +21318,32 @@
      "note": "Handle cu 404. Handle that @xronikianomaliy (chi khac 1 chu i) xac minh qua canonicalBaseUrl. Luu y: cung handle voi RAW-127 (duplicate).",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "RENAMED",
+    "stateReason": "Handle cu @xronikianomaly 404 (da doi). Handle that @xronikianomaliy, kenh song binh thuong.",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "handle_renamed",
+      "date": "2026-09-16",
+      "from": "@xronikianomaly",
+      "to": "@xronikianomaliy",
+      "source": "live:canonicalBaseUrl"
+     },
+     {
+      "type": "old_handle_dead",
+      "date": "2026-09-16",
+      "handle": "@xronikianomaly",
+      "httpStatus": 404,
+      "source": "live:probe"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-091",
@@ -20542,7 +21630,33 @@
      "note": "Handle cu bi kenh 3 subs chiem. Handle that @Everydaexplained (thieu chu y) xac minh qua canonicalBaseUrl.",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "HANDLE_HIJACKED",
+    "stateReason": "Handle cu @Everydayexplained gio thuoc kenh khac (Everyday Explained (kenh 3 subs), cid=UCmOWu9_p2B_5X6HcYUkDjeg). Kenh that doi thanh @Everydaexplained.",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "handle_renamed",
+      "date": "2026-09-16",
+      "from": "@Everydayexplained",
+      "to": "@Everydaexplained",
+      "source": "live:canonicalBaseUrl"
+     },
+     {
+      "type": "old_handle_hijacked",
+      "date": "2026-09-16",
+      "handle": "@Everydayexplained",
+      "hijackerTitle": "Everyday Explained (kenh 3 subs)",
+      "hijackerCid": "UCmOWu9_p2B_5X6HcYUkDjeg",
+      "source": "live:probe-handle-vs-record-cid"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-092",
@@ -20811,7 +21925,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-095",
@@ -21052,7 +22176,17 @@
      "source": "git:8309c66:init-83",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-09)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-09",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-096",
@@ -21170,7 +22304,17 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-13)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-097",
@@ -21288,7 +22432,24 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=SLOW (do 2026-09-13)",
+    "healthState": "SLOW",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "slowed_cadence",
+      "date": "2026-09-13",
+      "daysSinceLatest": 37,
+      "source": "vitalityAudit"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-098",
@@ -21406,7 +22567,17 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-13)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-099",
@@ -21524,7 +22695,17 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-13)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-100",
@@ -21642,7 +22823,17 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-13)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-101",
@@ -21759,7 +22950,17 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-13)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-102",
@@ -21885,7 +23086,33 @@
      "note": "Handle cu bi kenh Nga 3 subs chiem. Handle that @SurvivaIStory (I HOA thay l thuong) - kenh song 2820 subs, video moi nhat 15/09/2026.",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "HANDLE_HIJACKED",
+    "stateReason": "Handle cu @SurvivalStory gio thuoc kenh khac (История Выживания (kenh Nga 3 subs), cid=UC4Lu5YL8jLV_WULVSl1ZS4w). Kenh that doi thanh @SurvivaIStory.",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "handle_renamed",
+      "date": "2026-09-16",
+      "from": "@SurvivalStory",
+      "to": "@SurvivaIStory",
+      "source": "live:canonicalBaseUrl"
+     },
+     {
+      "type": "old_handle_hijacked",
+      "date": "2026-09-16",
+      "handle": "@SurvivalStory",
+      "hijackerTitle": "История Выживания (kenh Nga 3 subs)",
+      "hijackerCid": "UC4Lu5YL8jLV_WULVSl1ZS4w",
+      "source": "live:probe-handle-vs-record-cid"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-103",
@@ -22003,7 +23230,17 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-13)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-104",
@@ -22124,7 +23361,24 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "DUPLICATE",
+    "stateReason": "Ban ghi trung channel voi RAW-103 (cung channelId) - ho so that nam tai canonical",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "marked_duplicate",
+      "date": "2026-09-16",
+      "canonical": "RAW-103",
+      "source": "channelId-set"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-105",
@@ -22245,7 +23499,24 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "DUPLICATE",
+    "stateReason": "Ban ghi trung channel voi RAW-103 (cung channelId) - ho so that nam tai canonical",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "marked_duplicate",
+      "date": "2026-09-16",
+      "canonical": "RAW-103",
+      "source": "channelId-set"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-106",
@@ -22366,7 +23637,24 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "DUPLICATE",
+    "stateReason": "Ban ghi trung channel voi RAW-054 (cung channelId) - ho so that nam tai canonical",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "marked_duplicate",
+      "date": "2026-09-16",
+      "canonical": "RAW-054",
+      "source": "channelId-set"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-107",
@@ -22487,7 +23775,24 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "DUPLICATE",
+    "stateReason": "Ban ghi trung channel voi RAW-054 (cung channelId) - ho so that nam tai canonical",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "marked_duplicate",
+      "date": "2026-09-16",
+      "canonical": "RAW-054",
+      "source": "channelId-set"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-108",
@@ -22606,7 +23911,17 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-13)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-109",
@@ -22727,7 +24042,24 @@
      "source": "git:6a1b759:expand-97",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "DUPLICATE",
+    "stateReason": "Ban ghi trung channel voi RAW-108 (cung channelId) - ho so that nam tai canonical",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "marked_duplicate",
+      "date": "2026-09-16",
+      "canonical": "RAW-108",
+      "source": "channelId-set"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-13",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-110",
@@ -22853,7 +24185,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-111",
@@ -22979,7 +24321,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-112",
@@ -23104,7 +24456,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-113",
@@ -23229,7 +24591,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-114",
@@ -23354,7 +24726,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-115",
@@ -23480,7 +24862,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-116",
@@ -23606,7 +24998,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-117",
@@ -23732,7 +25134,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-118",
@@ -23859,7 +25271,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-119",
@@ -23985,7 +25407,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-120",
@@ -24111,7 +25543,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-121",
@@ -24234,7 +25676,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-122",
@@ -24360,7 +25812,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-123",
@@ -24486,7 +25948,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-124",
@@ -24612,7 +26084,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-125",
@@ -24738,7 +26220,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-126",
@@ -24864,7 +26356,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-127",
@@ -24989,7 +26491,24 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "DUPLICATE",
+    "stateReason": "Ban ghi trung channel voi RAW-089 (cung channelId) - ho so that nam tai canonical",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [
+     {
+      "type": "marked_duplicate",
+      "date": "2026-09-16",
+      "canonical": "RAW-089",
+      "source": "channelId-set"
+     }
+    ],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-128",
@@ -25115,7 +26634,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-129",
@@ -25241,7 +26770,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-130",
@@ -25366,7 +26905,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-131",
@@ -25491,7 +27040,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-132",
@@ -25617,7 +27176,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-133",
@@ -25743,7 +27312,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-134",
@@ -25869,7 +27448,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-135",
@@ -25995,7 +27584,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   },
   {
    "id": "RAW-136",
@@ -26121,7 +27720,17 @@
      "source": "git:a76e99e:expand-124",
      "verifiedAt": "2026-09-16"
     }
-   ]
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 2026-09-15)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
   }
  ],
  "summary": {

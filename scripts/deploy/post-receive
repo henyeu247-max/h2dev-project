@@ -1,0 +1,41 @@
+#!/bin/bash
+# H2DEV post-receive hook (VPS: /root/h2dev.git/hooks/post-receive)
+# Luong: Sync app -> GUARD counts drift -> build Master DB -> reload PM2
+# Guard: neu docs/so lieu lech data live (sync-counts.js --check) => CHAN deploy + ROLLBACK.
+# Cai dat: xem scripts/deploy/README.md
+set -o pipefail
+
+APP=/www/wwwroot/h2dev-learn.tonymmo.com/app
+
+echo '[POST-RECEIVE] Syncing /www/wwwroot/h2dev-learn.tonymmo.com/app to main...'
+unset GIT_DIR GIT_WORK_TREE
+cd "$APP" || { echo '[POST-RECEIVE] FATAL: app dir not found'; exit 1; }
+
+# Luu commit dang chay de REVERT neu guard chan (server.js doc file tu disk
+# moi request -> code moi tren disk = hieu luc ngay, phai rollback that su).
+OLD_REV=$(git rev-parse HEAD)
+echo "[POST-RECEIVE] Commit dang chay: $OLD_REV"
+
+git fetch origin
+git reset --hard origin/main
+
+echo '[POST-RECEIVE] GUARD: kiem tra so lieu dong bo (sync-counts.js --check)...'
+if ! node scripts/sync-counts.js --check; then
+  echo ''
+  echo '[POST-RECEIVE] ################################################################'
+  echo '[POST-RECEIVE] #  BLOCKED: docs/so lieu LECH data live. DUNG DEPLOY.           #'
+  echo '[POST-RECEIVE] #  Sua: o local chay  node scripts/sync-counts.js  -> commit -> push lai.'
+  echo '[POST-RECEIVE] ################################################################'
+  echo "[POST-RECEIVE] ROLLBACK app ve commit cu: $OLD_REV"
+  git reset --hard "$OLD_REV"
+  exit 1
+fi
+echo '[POST-RECEIVE] Counts OK - docs khop data live.'
+
+echo '[POST-RECEIVE] Running Master SQLite DB build / migration...'
+node scripts/build_master_db.js
+
+echo '[POST-RECEIVE] Reloading PM2 h2dev-learn...'
+pm2 reload h2dev-learn
+echo '[POST-RECEIVE] Deployment completed successfully!'
+

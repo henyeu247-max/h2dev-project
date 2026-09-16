@@ -8,6 +8,8 @@ const { DatabaseSync } = require('node:sqlite');
 
 const ROOT = path.resolve(__dirname, '..');
 const DB_PATH = path.join(ROOT, 'data', 'h2dev_master.db');
+const { computeCounts } = require('./lib/counts');
+const C = computeCounts();
 
 if (!fs.existsSync(DB_PATH)) {
   console.error('[SyncEngine] Error: data/h2dev_master.db does not exist. Run scripts/build_master_db.js first.');
@@ -26,8 +28,8 @@ const lessons = db.prepare(`
 `).all();
 
 console.log(`[1/5] Master DB Lessons: ${lessons.length} records.`);
-if (lessons.length !== 136) {
-  console.error(`[SyncEngine] Inconsistency: Expected 136 lessons, found ${lessons.length}`);
+if (lessons.length !== C.videos) {
+  console.error(`[SyncEngine] Inconsistency: Expected ${C.videos} lessons, found ${lessons.length}`);
   process.exit(1);
 }
 
@@ -39,7 +41,7 @@ const channels = db.prepare(`
   ORDER BY c.total_views DESC
 `).all();
 
-console.log(`[2/5] Master DB Competitor Channels: ${channels.length} records (Covering 165 legacy + 97 raw canonical).`);
+console.log(`[2/5] Master DB Competitor Channels: ${channels.length} records (Covering ${C.channels} legacy + raw canonical).`);
 
 // 3. Verify and Sync Top Videos (793 records)
 const topVideos = db.prepare(`
@@ -60,8 +62,8 @@ const documents = db.prepare(`
 `).all();
 
 console.log(`[4/5] Master DB Documents: ${documents.length} records.`);
-if (documents.length !== 109) {
-  console.error(`[SyncEngine] Inconsistency: Expected 109 documents, found ${documents.length}`);
+if (documents.length !== C.documents) {
+  console.error(`[SyncEngine] Inconsistency: Expected ${C.documents} documents, found ${documents.length}`);
   process.exit(1);
 }
 
@@ -74,8 +76,8 @@ const reup = db.prepare(`
 `).all();
 
 console.log(`[5/5] Master DB Reup Sources: ${reup.length} records.`);
-if (reup.length !== 27) {
-  console.error(`[SyncEngine] Inconsistency: Expected 27 reup sources, found ${reup.length}`);
+if (reup.length !== C.nguonReup) {
+  console.error(`[SyncEngine] Inconsistency: Expected ${C.nguonReup} reup sources, found ${reup.length}`);
   process.exit(1);
 }
 

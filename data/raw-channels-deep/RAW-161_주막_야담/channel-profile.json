@@ -1,0 +1,20 @@
+{
+  "id": "RAW-161",
+  "channelId": "UCKDbQhyRAqToDLBbrw1uU3w",
+  "title": "주막 야담",
+  "handle": null,
+  "url": "https://www.youtube.com/channel/UCKDbQhyRAqToDLBbrw1uU3w",
+  "subscribers": 20200,
+  "views": 2299335,
+  "videoCount": 52,
+  "country": "KR",
+  "avatar": "",
+  "extractedAt": "2026-09-16T20:55:30+07:00",
+  "extractionSource": "free_yt_engine + /about - extract 16/09/2026 (kenh mau ngach Drama/야담 Hàn - tim qua YouTube search)",
+  "dataGaps": [
+    "handle: chua resolve (co the doi) - dung channelId URL",
+    "transcripts: chua extract"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
+}

@@ -1,0 +1,79 @@
+{
+  "channelId": "UCzhZwfb05mVKpybL-Uy9wzA",
+  "rawId": "RAW-164",
+  "totalVideos": 5,
+  "extractedAt": "2026-09-16T20:55:30+07:00",
+  "extractionSource": "RSS top10 + watch page - 16/09/2026",
+  "videos": [
+    {
+      "videoId": "1ABEha8OhFI",
+      "url": "https://www.youtube.com/watch?v=1ABEha8OhFI",
+      "title": "[야담] 산에서 얼어 죽어가던 할머니를 구한 가난한 선비, 과거시험에 낙방하지만 인생역전한다. 과연 할머니의 정체는?ㅣ옛날이야기ㅣ오디오북ㅣ수면동화",
+      "publishedAt": "2026-02-26T06:00:03+00:00",
+      "views": 366075,
+      "thumbnail": "https://i.ytimg.com/vi/1ABEha8OhFI/maxresdefault.jpg",
+      "vph": 0,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0,
+      "rank": 1,
+      "duration": "PT1H33M21S",
+      "durationSeconds": 5601
+    },
+    {
+      "videoId": "UZ8j45XBGq0",
+      "url": "https://www.youtube.com/watch?v=UZ8j45XBGq0",
+      "title": "[야담] 못생긴 막내딸 아내 삼은 가난한 선비, 벼락 부자가 되는데...",
+      "publishedAt": "2026-08-23T23:00:01+00:00",
+      "views": 114537,
+      "thumbnail": "https://i.ytimg.com/vi/UZ8j45XBGq0/maxresdefault.jpg",
+      "vph": 0,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0,
+      "rank": 2,
+      "duration": "PT2M44S",
+      "durationSeconds": 164
+    },
+    {
+      "videoId": "qd1nIG-Gb7k",
+      "url": "https://www.youtube.com/watch?v=qd1nIG-Gb7k",
+      "title": "못생긴 막내딸을 아내로 삼은 가난한 선비, 하루아침에 벼락 부자가 된 사연 │야담 옛날이야기 오디오북 수면동화",
+      "publishedAt": "2026-04-06T11:01:16+00:00",
+      "views": 110616,
+      "thumbnail": "https://i.ytimg.com/vi/qd1nIG-Gb7k/maxresdefault.jpg",
+      "vph": 0,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0,
+      "rank": 3,
+      "duration": "PT1H18M48S",
+      "durationSeconds": 4728
+    },
+    {
+      "videoId": "8d7a7mUVRSU",
+      "url": "https://www.youtube.com/watch?v=8d7a7mUVRSU",
+      "title": "[야담] 도적이 된 지혜로운 선비, 끝내 재상이 되다  ㅣ옛날이야기ㅣ오디오북ㅣ수면유도",
+      "publishedAt": "2026-03-07T09:00:11+00:00",
+      "views": 43792,
+      "thumbnail": "https://i.ytimg.com/vi/8d7a7mUVRSU/maxresdefault.jpg",
+      "vph": 0,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0,
+      "rank": 4,
+      "duration": "PT1H26M58S",
+      "durationSeconds": 5218
+    },
+    {
+      "videoId": "OFKN3Q1C7MY",
+      "url": "https://www.youtube.com/watch?v=OFKN3Q1C7MY",
+      "title": "야담)가난한 선비가 구한 할머니의 정체는?",
+      "publishedAt": "2026-08-18T06:30:17+00:00",
+      "views": 18542,
+      "thumbnail": "https://i.ytimg.com/vi/OFKN3Q1C7MY/maxresdefault.jpg",
+      "vph": 0,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0,
+      "rank": 5,
+      "duration": "PT2M25S",
+      "durationSeconds": 145
+    }
+  ]
+}

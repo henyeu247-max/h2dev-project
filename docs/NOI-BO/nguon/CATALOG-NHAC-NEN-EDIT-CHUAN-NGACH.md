@@ -1,73 +1,91 @@
-﻿# CẨM NANG TRA CỨU & SỬ DỤNG KHO NHẠC NỀN EDIT THEO NGÁCH (38 TRACKS)
+# CẨM NANG KHO NHẠC NỀN EDIT THEO NGÁCH (38 TRACKS) — ĐÃ AUDIT GEMINI MULTIMODAL
 
-> **Cập nhật:** 2026-09-17  
-> **Tổng quy mô:** 38 tracks Â· **Tổng thời lượng:** 2.45 giờ Â· **Dung lượng:** 265.82 MB  
-> **Vị trí tài nguyên:** D:\YTB\Nhạc nền\  
-> **Bản quyền:** 100% YouTube Audio Library & Royalty-Free an toàn Bật kiếm tiền (YPP).
-
----
-
-## 1. PHÂN BỔ NHẠC NỀN THEO TỪNG NHÓM NGÁCH NỘI DUNG
-
-### 🏛️ Nhóm 1: Lịch Sử, Khảo Cổ & Nguồn Gốc Đồ Vật (Everyday History)
-*Phong cách: Hoài niệm, trầm hùng, sâu lắng, nhịp kể chuyện chân thực, kích thích trí tò mò.*
-- Lịch sử 1.mp3 (01:13) â€” Nhịp mở đầu, thích hợp đoạn Hook giới thiệu bối cảnh cổ đại.
-- Lịch sử 3.mp3 (02:20) â€” Chuyển cảnh, bóc tách diễn biến lịch sử, giải thích nguồn gốc.
-- Lịch sử 4.mp3 (02:20) â€” Mạch phim kể chuyện chậm, phù hợp phân tích tư liệu/hiện vật.
-- Lịch sử 5.mp3 (01:12) â€” Mini-cliffhanger, tạo điểm nhấn trước khi sang phân đoạn mới.
-- Lịch sử 6.mp3 (01:16) â€” Đoạn cao trào hoặc kết luận ý nghĩa lịch sử.
-- House on the Hill - Everet Almond.mp3 (03:29) â€” Không khí cổ kính, bí ẩn của các di tích/nhà cổ.
-- Dance of the U-boat - Aakash Gandhi.mp3 (02:40) â€” Âm hưởng giao hưởng bi tráng, chiến tranh, khám phá cổ xưa.
+> **Cập nhật:** 2026-09-17 (Gemini Multimodal Audio Intelligence Audit)
+> **Tổng quy mô:** 38 tracks · **Tổng thời lượng:** 2.45 giờ · **Dung lượng:** 265.82 MB
+> **Phân loại bản quyền:** 🟢 **25 SAFE** (100% YPP) · 🟡 **9 REVIEW** (Thận trọng) · 🔴 **4 COPYRIGHTED** (Cấm bật kiếm tiền)
 
 ---
 
-### 🔮 Nhóm 2: Tiên Tri, Kinh Thánh & Bí Ẩn Vũ Trụ (Prophecy & Mystery)
-*Phong cách: Huyền bí, kịch tính, cuốn hút, dồn dập ở các mốc dự báo tương lai.*
-- Tiên tri 1.mp3 â†’ Tiên Tri 8.mp3 (Thời lượng 01:38 â†’ 03:19):
-  + Track 1 & 2: Dựng lời mở đầu câu chuyện sấm truyền, điềm báo.
-  + Track 3 & 4: Cao trào lúc sự kiện ứng nghiệm, biến cố xảy ra.
-  + Track 5, 6, 7, 8: Nhịp nền căng thẳng vừa phải, lót đều dưới giọng đọc Voice AI.
-- Spirit of the Dead - Aakash Gandhi.mp3 (02:49) â€” Trầm u uất, bí hiểm, kích thích tột độ.
-- Glimpsing Infinity - Asher Fulero.mp3 (02:28) â€” Không gian vô tận, linh thiêng, giải thích Kinh Thánh.
-- Voices - Patrick Patrikios.mp3 (02:32) â€” Âm hưởng giọng hát mờ ảo trong không gian, huyền ảo.
-- Hypnosis - Godmode.mp3 (02:17) â€” Tiết tấu thôi miên, giữ chân người xem tập trung cao độ.
-- Lord Of The Dawn - Jesse Gallagher.mp3 (06:52) â€” Bản trường ca dài, hợp cho các video thuyết minh Kinh Thánh sâu.
+## 1. 🚨 CẢNH BÁO ĐỎ: 4 BÀI BẢN QUYỀN NẶNG (TUYỆT ĐỐI KHÔNG DÙNG CHO VIDEO YPP)
+
+> *Qua việc dùng Gemini 2.5/3.5 nghe waveform thực tế, hệ thống đã phát hiện 4 bài hát này chứa giai điệu/vocal có bản quyền thương mại quốc tế hoặc Việt Nam. Nếu đưa vào video sẽ bị YouTube Content ID claim doanh thu hoặc tắt kiếm tiền.*
+
+### 1. nên.mp3 (23:52 · 21.87 MB)
+- **Bản chất phát hiện:** **River Flows in You** — Yiruma
+- **Thể loại & Mood:** Contemporary Classical, Neoclassical, Instrumental Piano · Melancholy, peaceful, reflective, emotional, serene, calming
+- **Khuyến cáo:** ❌ **LOẠI BỎ KHỎI SẢN XUẤT THƯƠNG MẠI.** Chỉ dùng tham khảo hoặc demo nội bộ.
+
+### 2. Tiên tri 1.mp3 (02:44 · 3.71 MB)
+- **Bản chất phát hiện:** **Cô Đơn Trên Sofa (lofi version)** — Tăng Duy Tân / Hồ Ngọc Hà
+- **Thể loại & Mood:** Ambient Cinematic Electronic, Pop Lofi Vocalize · Ethereal, Bí ẩn, Thanh bình, Suy tư, Hơi buồn, Cô đơn
+- **Khuyến cáo:** ❌ **LOẠI BỎ KHỎI SẢN XUẤT THƯƠNG MẠI.** Chỉ dùng tham khảo hoặc demo nội bộ.
+
+### 3. Tiên tri 2.mp3 (02:53 · 3.85 MB)
+- **Bản chất phát hiện:** Nhạc phim/trailer thương mại
+- **Thể loại & Mood:** Nhạc phim giao hưởng, Epic, Dark Ambient, Nhạc trailer · Hồi hộp, Căng thẳng, Kịch tính, Hùng tráng, Bí ẩn, Đe dọa, Khẩn cấp
+- **Khuyến cáo:** ❌ **LOẠI BỎ KHỎI SẢN XUẤT THƯƠNG MẠI.** Chỉ dùng tham khảo hoặc demo nội bộ.
+
+### 4. Tiên Tri 8.mp3 (02:22 · 3.16 MB)
+- **Bản chất phát hiện:** Nhạc phim/trailer thương mại
+- **Thể loại & Mood:** Nhạc giao hưởng, epic orchestral · Hùng tráng, u ám, căng thẳng, kỳ bí
+- **Khuyến cáo:** ❌ **LOẠI BỎ KHỎI SẢN XUẤT THƯƠNG MẠI.** Chỉ dùng tham khảo hoặc demo nội bộ.
 
 ---
 
-### 🌌 Nhóm 3: Triết Lý, Vũ Trụ, Khoa Học Ru Ngủ (Philosophy & Sleep Science)
-*Phong cách: Sâu lắng, mở rộng không gian, thư giãn thần kinh, AVD cực cao.*
-- AETHER - Density & Time.mp3 (08:46) â€” Siêu phẩm Ambient dài gần 9 phút, chạy xuyên suốt không đứt mạch.
-- Maestro Tlakaelel - Jesse Gallagher.mp3 (15:15) â€” Bản hùng ca cổ dài hơn 15 phút, giải quyết trọn vẹn 1 video dài.
-- Soft Blossom - ann annie.mp3 (03:50) â€” Nhẹ nhàng như mây, thư giãn, ngách triết lý/chữa lành.
-- Cold Blue - Astron.mp3 (03:04) â€” Lạnh lùng, sâu thẳm, đại dương sâu hoặc vũ trụ xa xôi.
-- Dream Escape - The Tides.mp3 (03:14) â€” Cảm giác trôi dạt vào giấc ngủ, phù hợp ngách ru ngủ.
-- Velvet Annex.mp3 (01:05) â€” Track ngắn chuyển hồi.
+## 2. 🟢 DANH SÁCH 25 BÀI AN TOÀN BẬT KIẾM TIỀN 100% (SAFE YPP)
+
+Bao gồm 8 bài nhạc nền ambient/piano độc quyền và 17 bài cinematic từ YouTube Audio Library.
+
+| # | Tên file | Thời lượng | Thể loại & Phong cách | Mood | Ngách khuyến nghị |
+|:---|:---|:---:|:---|:---|:---|
+| 1 | `AETHER - Density & Time.mp3` | 08:46 | Vũ trụ / Triết lý / Ru ngủ sâu | Sâu lắng, triết lý, mở rộng kh | Vũ trụ / Triết lý / Ru ngủ sâu / Kh |
+| 2 | `Cold Blue - Astron.mp3` | 03:04 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 3 | `Dance of the U-boat - Aakash Gandhi.mp3` | 02:40 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 4 | `Dream Escape - The Tides.mp3` | 03:14 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 5 | `Gamela - E_s Jammy Jams.mp3` | 02:48 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 6 | `Glimpsing Infinity - Asher Fulero.mp3` | 02:28 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 7 | `House on the Hill - Everet Almond.mp3` | 03:29 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 8 | `Hypnosis - Godmode.mp3` | 02:17 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 9 | `LITE BRITE - Density & Time.mp3` | 17:57 | Vũ trụ / Triết lý / Ru ngủ sâu | Sâu lắng, triết lý, mở rộng kh | Vũ trụ / Triết lý / Ru ngủ sâu / Kh |
+| 10 | `Lord Of The Dawn - Jesse Gallagher.mp3` | 06:52 | Vũ trụ / Triết lý / Ru ngủ sâu | Sâu lắng, triết lý, mở rộng kh | Vũ trụ / Triết lý / Ru ngủ sâu / Kh |
+| 11 | `Maestro Tlakaelel - Jesse Gallagher.mp3` | 15:14 | Vũ trụ / Triết lý / Ru ngủ sâu | Sâu lắng, triết lý, mở rộng kh | Vũ trụ / Triết lý / Ru ngủ sâu / Kh |
+| 12 | `On the Island - Godmode.mp3` | 01:33 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 13 | `Slow Sneak Up - Godmode.mp3` | 01:37 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 14 | `Soft Blossom - ann annie.mp3` | 03:50 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 15 | `Spirit of the Dead - Aakash Gandhi.mp3` | 02:49 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 16 | `Tragic Story - Myuu.mp3` | 01:36 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 17 | `Voices - Patrick Patrikios.mp3` | 02:32 | Tiên tri / Kịch tính / Youtube | Cinematic, giàu cảm xúc, an to | Tiên tri / Kịch tính / Youtube Audi |
+| 18 | `Lịch sử 1.mp3` | 01:04 | Classical Crossover, Cinematic | Calm, Peaceful, Reflective, Me | Meditation & Relaxation, Study & Fo |
+| 19 | `SK1.mp3` | 02:07 | Ambient Piano, Lofi Chillhop | Thư giãn, Bình yên, Trầm tư, B | Nhạc học tập, Nhạc thư giãn |
+| 20 | `SK4.mp3` | 01:23 | Lo-Fi Hip Hop / Chillhop | Thư giãn, nhẹ nhàng, hoài niệm | Vlog thư giãn, Học tập / Làm việc ( |
+| 21 | `SK5.mp3` | 02:28 | Ambient / Lo-fi Cinematic | Thư giãn, huyền ảo, bình yên | Meditation & Sleep Music, Study & R |
+| 22 | `SK6.mp3` | 03:02 | Ambient Instrumental | Thư giãn, nhẹ nhàng | Vlogging, Meditation |
+| 23 | `Tiên Tri 5.mp3` | 01:34 | Ambient / Chillout | Thư giãn, nhẹ nhàng, bình yên | Meditation & Sleep, Study & Focus |
+| 24 | `Tiên Tri 6.mp3` | 01:24 | Ambient / Meditation Music | Thư giãn, nhẹ nhàng, tĩnh lặng | Thiền định và Thư giãn, Học tập / T |
+| 25 | `Velvet Annex.mp3` | 00:48 | Classical, Cinematic, Instrume | Melancholy, Peaceful, Reflecti | Relaxation, Study Music |
 
 ---
 
-### 🐾 Nhóm 4: Sinh Tồn, Động Vật Hoang Dã & Kịch Tính (Wildlife Survival)
-*Phong cách: Gay cấn, hồi hộp, dồn dập cuộc chiến sinh tử trong thiên nhiên.*
-- SK1.mp3 â†’ SK6.mp3 (Thời lượng 01:21 â†’ 03:02):
-  + Tiết tấu gõ dồn, tiếng thở dốc, âm hưởng rình mồi và rượt đuổi.
-- Slow Sneak Up - Godmode.mp3 (01:37) â€” Rình rập, săn mồi, bước chân thú ăn thịt.
-- Tragic Story - Myuu.mp3 (01:36) â€” Bi kịch tự nhiên, động vật mất mát, chạm cảm xúc.
+## 3. 🟡 DANH SÁCH 9 BÀI CẦN THẬN TRỌNG (REVIEW / KỊCH TÍNH CỔ TRANG)
+
+> *Nhóm này gồm các track nhạc kịch tính, dân tộc hoặc trailer. Có thể dùng an toàn cho các phân đoạn ngắn (10-30s) hoặc làm nhạc đệm nhỏ dưới giọng đọc Voiceover (-28 dB to -32 dB).*
+
+| # | Tên file | Thời lượng | Nhạc cụ chính | Mood | Khuyến nghị vị trí |
+|:---|:---|:---:|:---|:---|:---|
+| 1 | `Lịch sử 3.mp3` | 01:54 | Ney flute, Drone, Percussion | Calm, Peaceful, Spiritual, Rel | Nhạc nền lót xuyên suốt |
+| 2 | `Lịch sử 4.mp3` | 01:58 | Flute, Singing bowl, Synth pad | Mystical, serene, and haunting | Nhạc nền lót xuyên suốt |
+| 3 | `Lịch sử 5.mp3` | 01:03 | Dàn dây (Strings), Kèn đồng mạ | Hành động, Hùng vĩ, Căng thẳng | Hook mở màn hoặc Cao trào của  |
+| 4 | `Lịch sử 6.mp3` | 01:07 | Brass, Strings, Choir, Percuss | Grand, Adventurous, Heroic | Hook mở màn |
+| 5 | `SK2.mp3` | 02:16 | Hộp âm nhạc (Music box), Đàn d | Thư giãn, hoài niệm, nhẹ nhàng | Nhạc nền lót xuyên suốt cho cá |
+| 6 | `SK3.mp3` | 01:05 | Piano, Guitar acoustic | Thư giãn, nhẹ nhàng, hoài niệm | Nhạc nền lót xuyên suốt (Backg |
+| 7 | `Tiên Tri 3.mp3` | 03:04 | Sáo trúc, Đàn tranh, Dàn dây t | Huyền ảo, u buồn, hoài niệm và | Nhạc nền lót xuyên suốt cho cá |
+| 8 | `Tiên Tri 4.mp3` | 03:19 | Synthesizer, Pad, Flute | Thư giãn, huyền bí, hoài niệm | Nhạc nền lót xuyên suốt |
+| 9 | `Tiên Tri 7.mp3` | 02:23 | Dàn hợp xướng (Choir), Hệ thốn | Huyền bí, hoành tráng, sâu lắn | Hook mở màn hoặc Cao trào chuy |
 
 ---
 
-### ⏳ Nhóm 5: Long-form Ambient Chạy Xuyên Suốt (15 â€“ 25 phút)
-*Giải pháp triệt tiêu hiện tượng lặp nhạc ngắn gây nhàm chán cho người xem:*
-- 
-ên.mp3 (23:52) â€” Nhạc nền lót dài gần 24 phút, phối khí đa tầng không làm át giọng Voice AI.
-- LITE BRITE - Density & Time.mp3 (17:57) â€” Bản nhạc dài gần 18 phút, biến đổi nhịp nhàng, tối ưu AVD.
+## 4. QUY CHUẨN MIX ÂM THANH CHO VIDEO FACELESS
 
----
-
-## 2. NGUYÊN TẮC MIX NHẠC NỀN CHUẨN ĐẠT DUYỆT YPP 2026
-
-1. **Âm lượng Voice vs Background Music:**
-   - Voice Talent AI: Chuẩn hóa -16 LUFS (True Peak -1.5 dB).
-   - Nhạc nền (BGM): Đặt ở mức **-26 dB đến -30 dB** so với Voice (giảm 10–14 dB khi giọng nói bắt đầu).
-   - Dùng tính năng **Auto-Ducking** trong Premiere / CapCut để nhạc tự động hạ xuống mỗi khi Voice AI cất lời.
-2. **Không để âm trầm (<80Hz) của nhạc đè lên giọng đọc:** Dùng EQ cắt High-pass filter ở 80Hz trên track nhạc nền để tránh giọng đọc bị đục.
-3. **Bản quyền:** Toàn bộ 38 bài đã được đối soát thuộc kho bản quyền mở / YouTube Audio Library, an toàn 100% cho mọi thị trường US, Nhật, Hàn, Việt Nam.
+1. **Âm lượng Voiceover:** Chuẩn hóa **-16 LUFS** (True Peak -1.5 dBTP).
+2. **Âm lượng BGM (Nhạc nền):** Đặt ở mức **-26 dB đến -30 dB** so với Voiceover.
+3. **EQ High-pass filter:** Cắt tần số dưới 80Hz trên track nhạc nền để giọng đọc không bị đục và giữ độ trong trẻo.

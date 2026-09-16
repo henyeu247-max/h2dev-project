@@ -34,6 +34,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | Docs + Rule làm việc | `d:\YTB\H2DEV-Project\knowledge-hub\docs\` |
 | **Kiến thức Zoom (quy trình xây kênh A–Z)** | `d:\YTB\H2DEV-Project\docs\NOI-BO\zoom\` |
 | Backup | `d:\YTB\H2DEV-Project\_backup\` |
+| **ffprobe (kiểm định media)** | `D:\Linly-Dubbing\bin\ffprobe.exe` — **KHÔNG có trong PATH**; script audit phải trỏ thẳng hoặc thêm vào PATH |
 | Changelog | `d:\YTB\H2DEV-Project\CHANGELOG.md` |
 
 ## Boot order (mỗi phiên — 7 bước chuẩn)
@@ -52,11 +53,11 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 |---|---|
 | `videos.json` | **136** (22 free / 110 pro + 4 Zoom free) |
 | `kenh-mau.json` | **165** (152 live + 13 dead) · `ngay_do` 165/165 |
-| `tai-lieu-full.json` | **109** (prompt 35 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5; cập nhật 16/09) |
+| `tai-lieu-full.json` | **152** (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5; +43 prompt master research 16/09) |
 | `ngach-xanh.json` | **34** ngách — `xanh:true` **11** · `CÓ MẪU TĂNG` 10 · `CHƯA ĐỦ BẰNG CHỨNG` 8 · `THẬN TRỌNG` 3 · `CÓ ĐIỀU KIỆN` 2 · + 5 meta kho · 5 ngách đỏ · 13 BXH |
 | `kich-ban.json` | **45** (extract cũ, UI không đọc) |
 | `nguon-reup.json` | **27** |
-| `chien-luoc.json` | workflow 9 bước · 4 nguyên tắc cốt lõi |
+| `chien-luoc.json` | workflow **11** bước · 4 nguyên tắc cốt lõi (mục `workflow`) |
 | `dong-bo-ngoai.json` | 13 matched · 19 merged · 5 không gom · 4 pipeline |
 | `raw-kenh-mau.json` | **156** record canonical (bao quát 34 ngách nghiệp vụ đã audit live sức sống YPP · có Voice DNA Studio 45s, cờ ngôn ngữ Language Flag & vidIQ velocity tracker/OCR Outliers) |
 
@@ -69,6 +70,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 - **Nguồn chân lý:** `video/<SKU>/transcript.json` — mỗi segment gồm `id, start, end, start_time, end_time, text`.
 - **Định dạng xuất:** `transcript.srt` (khớp 1-1 JSON) · `transcript.txt` = **1 dòng/segment**.
 - **Kiểm định N/N:** `python scripts/audit_all_136_videos.py` → mục tiêu **136/136 sạch**; bắt ảo giác Whisper, nén chữ (rớt nguyên âm), rác, lệch thứ tự, độ phủ < 90%, lệch định dạng/file, lệch market/docs, thiếu insights/tag.
+- ⚠️ **ffprobe KHÔNG có trong PATH** — nhị phân thật ở `D:\Linly-Dubbing\bin\ffprobe.exe`. Các script gọi `shutil.which("ffprobe")` (`audit-learning-media.py`) sẽ fail ở môi trường sạch; `audit_all_136_videos.py:100` hard-code path này nên chạy được. Đo thật 16/09/2026 (ffprobe N-125856): **136/136 có luồng video + audio**.
 - **Chống ảo giác khi bóc mới:** `scripts/transcribe_sku.py` đã thêm `prompt` chuyên ngành + `temperature=0` + bộ lọc ảo giác tự động.
 - ⚠️ **Bài học:** KHÔNG biến đổi audio (vd `atempo`) mà không đối chiếu nội dung — dễ sinh ảo giác mới. Segment không bóc tách được → **chú thích trung thực** (`[Khoảng lặng thao tác — …]` / `[Đoạn nói nhanh — …]`), KHÔNG bịa nội dung.
 - ⚠️ KHÔNG đưa từ khoá "đăng ký kênh / like / share" vào `prompt` — model sẽ "đọc lại" prompt thành phụ đề ảo giác.
@@ -88,8 +90,9 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 - **Verify đa nguồn MCP**: vidIQ (lõi kênh/keyword) → exa/tavily/jina/firecrawl → trends. Tool lỗi → chuyển tool.
 - **NO_DELETE**: không xóa data/docs/backup khi chưa được anh cho phép.
 - **Backup trước khi sửa** data file (`_backup/<YYYYMMDD-task>/`).
-- ⚠️ **Mọi file/thư mục mới ở gốc đều PUBLIC** — server bind `0.0.0.0` (`server.js:8`), CORS `*`, không auth. Thư mục nhạy cảm PHẢI nằm trong `BLOCKED` (`server.js:150`) hoặc dời vào `_archive`/`_backup`. `_audit` chứa raw phân tích và bắt buộc bị chặn. Đã từng lộ: `.bak.flashfix` (HTTP 200) · `Raw Kênh Mẫu Tìm Kiếm/` (96 ảnh, HTTP 200) — chặn 31/08.
-- **Dọn rác: DỜI (ưu tiên) hoặc CHẶN, không XÓA** (NO_DELETE). `git mv` vào `_archive\<YYYYMMDD>-rac\` — nhưng **fail "Permission denied"** trên NTFS với tên có dấu/dấu cách → khi đó thêm tên vào `BLOCKED` (`server.js:150`) thay vì copy (copy sinh trùng lặp vô ích, phình repo).
+- ⚠️ **Mọi file/thư mục mới ở gốc đều PUBLIC** — server bind `0.0.0.0` (`server.js:15`), CORS `*`, không auth. Thư mục nhạy cảm PHẢI nằm trong `SENSITIVE_SEGMENTS` (`server.js:305`) hoặc dời vào `_archive`/`_backup`. `_audit` chứa raw phân tích và bắt buộc bị chặn. Đã từng lộ: `.bak.flashfix` (HTTP 200) · `Raw Kênh Mẫu Tìm Kiếm/` (96 ảnh, HTTP 200) — chặn 31/08.
+  - *(Lịch sử: cơ chế cũ là mảng `BLOCKED` tại `server.js:150`; 16/09 đã nâng cấp thành `Set SENSITIVE_SEGMENTS` (`server.js:305`), so khớp chữ thường để chống bypass `/.GIT/config`, bổ sung `.git` · `.cache` · `.venv-gpu` · `.zcode` · `logs` · `_internal` · `_drafts` · `_frames` · `_tmp_audio`.)*
+- **Dọn rác: DỜI (ưu tiên) hoặc CHẶN, không XÓA** (NO_DELETE). `git mv` vào `_archive\<YYYYMMDD>-rac\` — nhưng **fail "Permission denied"** trên NTFS với tên có dấu/dấu cách → khi đó thêm tên vào `SENSITIVE_SEGMENTS` (`server.js:305`) thay vì copy (copy sinh trùng lặp vô ích, phình repo).
 - 🔑 **CẤM hardcode key vào repo** — kể cả script "chạy nội bộ". Key phải đọc từ env (`os.environ.get`) hoặc `_private/` (đã chặn web 2 lớp: segment `_private` + regex `mcp-keys`). Đã từng lộ: `transcribe_videos.py:163` hardcode `Bearer sk-b920…`.
 - 🔑 **Đếm secret ≠ đếm regex match.** Phải `sort -u` + **soi ngữ cảnh từng match**. `fc-` trong dự án này phần lớn là **fragment tên file ảnh** (`C9F89BF6-…-4Afc-…`) hoặc **token URL video** — không phải key. Quét secret phải quét **toàn bộ repo**, không chỉ `docs/` + `knowledge-hub/` (em từng bỏ sót `scripts/`).
 - 🔑 **MCP Tool Server chuẩn chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` trên cổng `http://127.0.0.1:3988/mcp`** (Healthcheck: `http://127.0.0.1:3988/health` — 180+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...). **9Router tại `127.0.0.1:20128` là AI Chat Model Gateway** (chuyên điều hướng LLM chat models như Claude/GPT/Gemini), KHÔNG PHẢI là MCP Tool Server. Trước đây MCP Pool từng chạy trên VPS, nay đã được chuyển về chạy Local độc lập tại `D:\Mcp-Pool-Vps`. Cấu hình nằm ở IDE/CLI ngoài dự án.

@@ -17,22 +17,16 @@ Y:\YTB\
     ├── CHANGELOG.md               # trạng thái vận hành
     ├── CHAY-LAN.md                # hướng dẫn chạy LAN / Tailscale
     ├── index.html · player.html · learn.html
-    ├── server.js                  # HTTP tĩnh · bind 0.0.0.0:8899 · BLOCKED ở dòng 150
+    ├── server.js                  # HTTP tĩnh · bind 0.0.0.0:8899 · chặn web tại `SENSITIVE_SEGMENTS` (dòng 305)
     ├── package.json · package-lock.json · tailwind.config.js
     ├── css\                       # input.css — nguồn Tailwind → assets/tailwind.css
+    ├── H2DEV-OneClick.cmd         # ⭐ khởi động 1 nhấp (wrapper mỏng → scripts\windows\)
+    ├── h2dev-silent.vbs · h2dev-watchdog-hidden.vbs   # wrapper mỏng cho Task Scheduler → scripts\windows\
+    ├── h2dev-icon.ico · h2dev-icon.png · .env.example
     │
-    ├── VẬN HÀNH (giữ server sống)
-    ├── H2DEV-OneClick.cmd         # khởi động 1 nhấp
-    ├── start-lan.cmd              # khởi động LAN
-    ├── h2dev-tray.ps1             # tray app + ghi h2dev-tray.log
-    ├── h2dev-watchdog.ps1         # check port 8899 mỗi 5 phút · healthy = exit 0 không log
-    ├── h2dev-watchdog-hidden.vbs  # task H2DEV-Watchdog gọi file này (wscript, không flash console)
-    ├── install-h2dev-watchdog.ps1 # đăng ký task (cần Administrator)
-    ├── install-h2dev-noadmin.ps1 · install-h2dev-startup.ps1
-    ├── check-server.ps1           # kiểm tra nhanh server
-    ├── h2dev-silent.vbs · h2dev-icon.ico · .env.example
-    ├── _rereg_watchdog_silent_admin.cmd   # đăng ký lại task (silent, cần Administrator)
-    │
+    ├── scripts\windows\           # (dời từ gốc 11/09) start-lan.cmd · h2dev-tray.ps1 · h2dev-watchdog.ps1
+    │                              #   install-h2dev-{watchdog,noadmin,startup}.ps1 · check-server.ps1
+    │                              #   _rereg_watchdog_silent_admin.cmd · h2dev-service-autoreload-hook.ps1 (16/09)
     ├── data\                      # catalog gốc + manifest dẫn xuất — tạo bằng script
     │   ├── catalog.json
     │   ├── catalog_full.json
@@ -40,10 +34,10 @@ Y:\YTB\
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165
-    │   ├── tai-lieu-full.json     # 109 card (prompt 35 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
+    │   ├── tai-lieu-full.json     # 152 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
     │   ├── ngach-xanh.json        # 34 ngách (xanh:true 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
-    │   ├── chien-luoc.json        # workflow 9 bước · 4 nguyên tắc
+    │   ├── chien-luoc.json        # workflow 11 bước · 4 nguyên tắc
     │   ├── kich-ban.json          # 45 — extract cũ, UI không đọc
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)
     │   └── raw-kenh-mau.json      # 156 record canonical (149 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 156/156 · vidIQ verified 83
@@ -69,7 +63,7 @@ Y:\YTB\
     │   └── bible-explainer\
     ├── knowledge-hub\             # archive transcript / NotebookLM
     │
-    ├── video\                     # 136 thư mục: 132 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.9 GB) · KHÔNG vào git
+    ├── video\                     # 136 thư mục: 132 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.55 GiB / 23.1 GB) · KHÔNG vào git
     ├── inbox\                     # THẢ FILE MỚI VÀO ĐÂY (web bị chặn)
     ├── scripts\                   # validate · sync · intake · clean
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git
@@ -77,6 +71,12 @@ Y:\YTB\
     ├── _private\                  # chỗ key local — web bị chặn
     ├── _archive\                  # rác đã dời khỏi web serve — KHÔNG xoá (NO_DELETE) · web bị chặn
     │   └── 20260831-rac\_verify\  # 7 file scratch (chứa SKU pending VIDEO-3F8339)
+    ├── _frames\                   # frame trích từ video (rác vận hành) · web bị chặn
+    ├── _tmp_audio\                # audio tạm của pipeline (rác vận hành) · web bị chặn
+    ├── _drafts\                   # bản nháp (enrichment · insightface proposal) · web bị chặn
+    ├── _internal\                 # tài liệu nội bộ nháp + debug shots · web bị chặn
+    ├── .cache\                    # cache runtime (checkpoint, thumbnail, reload-state) · web bị chặn
+    ├── logs\                      # log server/watchdog/reload · web bị chặn · KHÔNG vào git
     ├── raw-kenh-goc\             # 135 ảnh raw canonical + metadata (156 record: 21 kênh mới chưa có ảnh chụp) · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git
@@ -97,8 +97,12 @@ Y:\YTB\
 
 MD rời, prompt, excel, `_tmp_*`, `.bak`, pipeline zip, key.
 
-## Web không serve (`server.js:150` BLOCKED)
+## Web không serve (`server.js:305` — `SENSITIVE_SEGMENTS`)
 
-`_backup` · `_private` · `_audit` · `inbox` · `node_modules` · `_verify` · `.git` · `_archive` · `Raw Kênh Mẫu Tìm Kiếm` (historical only) · `DESIGN-IS-2026-08-22` · file `.env*` · `mcp-keys*`
+> Cơ chế cũ là mảng `BLOCKED` tại `server.js:150`; **16/09/2026** nâng cấp thành `Set SENSITIVE_SEGMENTS` (dòng 305), so khớp **chữ thường** (chống bypass `/.GIT/config`, `/_PRIVATE/`) và mở rộng danh sách.
 
-> 31/08: chặn thêm `Raw Kênh Mẫu Tìm Kiếm` (historical only; 96 ảnh 12 MB, từng public HTTP 200) + `DESIGN-IS-2026-08-22` (bản audit nội bộ). Đo lại: 3 vùng → **403**, `data-tabs/` + `assets/` → **200**.
+`SENSITIVE_SEGMENTS` hiện tại: `.git` · `node_modules` · `_private` · `_backup` · `_audit` · `_internal` · `_drafts` · `_archive` · `_verify` · `_frames` · `_tmp_audio` · `.cache` · `.venv-gpu` · `.zcode` · `logs` · `inbox` · `raw-kenh-goc` · `design-is-2026-08-22` · `raw kênh mẫu tìm kiếm` (historical only)
+
+Ngoài ra chặn theo **tên file**: `.env*` (`:293`) · `*.db` / `*.sqlite*` kèm `-wal/-shm/-journal` · `mcp-keys*` (`:334`).
+
+> Đo lại 16/09/2026: `_private` · `_backup` · `_audit` · `_frames` · `_tmp_audio` · `_drafts` · `_internal` · `raw-kenh-goc` → **403**; `data-tabs/` · `assets/` · `index.html` → **200**.

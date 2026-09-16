@@ -46,7 +46,7 @@ Y:\YTB\
     │   ├── chien-luoc.json        # workflow 9 bước · 4 nguyên tắc
     │   ├── kich-ban.json          # 45 — extract cũ, UI không đọc
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)
-    │   └── raw-kenh-mau.json      # 156 record canonical (150 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 124/124 · vidIQ verified 83
+    │   └── raw-kenh-mau.json      # 156 record canonical (149 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 156/156 · vidIQ verified 83
     │
     ├── assets\                    # tailwind.css · viddar.css · learn.css · fonts\ (woff2 self-host)
     │   ├── thumbs\                # 136/136 khớp videos.json + placeholder.svg
@@ -77,7 +77,7 @@ Y:\YTB\
     ├── _private\                  # chỗ key local — web bị chặn
     ├── _archive\                  # rác đã dời khỏi web serve — KHÔNG xoá (NO_DELETE) · web bị chặn
     │   └── 20260831-rac\_verify\  # 7 file scratch (chứa SKU pending VIDEO-3F8339)
-    ├── raw-kenh-goc\             # 133 ảnh raw canonical + metadata (156 record: 23 kênh mới chưa có ảnh chụp) · web bị CHẶN (403)
+    ├── raw-kenh-goc\             # 134 ảnh raw canonical + metadata (156 record: 22 kênh mới chưa có ảnh chụp) · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git
 ```

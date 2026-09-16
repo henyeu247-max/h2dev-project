@@ -143,7 +143,7 @@ Test trên `cbcn/deepseek-v4.1-flash` (1 ảnh, RAW-010):
 
 ## VI. KHUYẾN NGHỊ TRIỂN KHAI
 
-1. **Vision batch 124 kênh × 10 thumbnails (~1.240 ảnh):** dùng `Combo-Gemini-3.7-flash`, 13 lanes song song → ~2-5 phút thay vì 2.2 giờ (ước tính cũ theo 6.4s/ảnh đơn luồng).
+1. **Vision batch 156 kênh × 10 thumbnails (~1.560 ảnh):** dùng `Combo-Gemini-3.7-flash`, 13 lanes song song → ~2-5 phút thay vì 2.8 giờ (ước tính cũ theo 6.4s/ảnh đơn luồng).
 2. **Luôn cấp `max_tokens` ≥ 900** cho mọi model reasoning (bài học từ lỗi 400 tokens).
 3. **Cơ chế retry:** xử lý 429 (flash-lite) và tail-latency >15s (deepseek) — retry 2 lần, fallback chéo giữa `Combo-Gemini-3.7-flash` ↔ `ag/gemini-3.7-flash-low`.
 4. **Tránh phụ thuộc 1 nguồn:** các prefix (qd, cbcn, cbai, ag, gh) là các upstream khác nhau — khi một cái chập chờn thì fallback sang cái khác cùng tier.

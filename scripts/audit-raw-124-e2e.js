@@ -133,7 +133,7 @@ async function mapPool(items, concurrency, worker) {
     );
     assert(broken.length === 0 && ok === imgUrls.length, `Broken images: ${JSON.stringify(broken).slice(0, 2000)}`);
 
-    const testIds = ['RAW-110', 'RAW-114', 'RAW-117', 'RAW-121', 'RAW-124', 'RAW-136', 'RAW-137', 'RAW-142'];
+    const testIds = ['RAW-110', 'RAW-114', 'RAW-117', 'RAW-121', 'RAW-124', 'RAW-136', 'RAW-137', 'RAW-142', 'RAW-166', 'RAW-167', 'RAW-168'];
     for (const tid of testIds) {
       const card = page.locator(`article[data-raw-card="${tid}"]`);
       const visible = await card.isVisible();

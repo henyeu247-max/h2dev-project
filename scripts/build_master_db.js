@@ -459,6 +459,7 @@ db.exec('BEGIN TRANSACTION;');
 let channelCount = 0;
 const processedChannelIds = new Set();
 const processedHandles = new Set();
+const ftsChannelIds = new Set(); // Fix 16/09: chong FTS entry trung khi 2 record cung channelId (RAW-054/106/107...) 288->282
 
 // 1. Ingest all 97 Canonical Raw Channels (with deep dossiers)
 for (const r of rawKenhMau) {
@@ -552,7 +553,10 @@ for (const r of rawKenhMau) {
     JSON.stringify(r.channelLifecycle || {})
   );
   channelCount++;
-  insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${nicheName} ${(ch.topics || []).join(' ')}`);
+  if (!ftsChannelIds.has(channelId)) {
+    ftsChannelIds.add(channelId);
+    insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${nicheName} ${(ch.topics || []).join(' ')}`);
+  }
 }
 
 // 2. Ingest remaining Benchmark Channels from kenh-mau.json
@@ -626,7 +630,10 @@ for (const k of kenhMau) {
     JSON.stringify({ state: k.dead ? 'DEAD_404' : 'ACTIVE', stateReason: k.dead ? 'kenh-mau.json dead flag (404 khi do)' : 'kenh-mau.json benchmark record', healthState: null, monetizationState: null, events: [], auditedAt: k.ngay_do || null, schemaVersion: 1 })
   );
   channelCount++;
-  insertFts.run(channelId, 'CHANNEL', title, `${title} ${k.handle} ${nicheName}`);
+  if (!ftsChannelIds.has(channelId)) {
+    ftsChannelIds.add(channelId);
+    insertFts.run(channelId, 'CHANNEL', title, `${title} ${k.handle} ${nicheName}`);
+  }
 }
 
 db.exec('COMMIT;');

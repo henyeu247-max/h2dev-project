@@ -77,7 +77,7 @@ Y:\YTB\
     ├── _private\                  # chỗ key local — web bị chặn
     ├── _archive\                  # rác đã dời khỏi web serve — KHÔNG xoá (NO_DELETE) · web bị chặn
     │   └── 20260831-rac\_verify\  # 7 file scratch (chứa SKU pending VIDEO-3F8339)
-    ├── raw-kenh-goc\             # 134 ảnh raw canonical + metadata (156 record: 22 kênh mới chưa có ảnh chụp) · web bị CHẶN (403)
+    ├── raw-kenh-goc\             # 135 ảnh raw canonical + metadata (156 record: 21 kênh mới chưa có ảnh chụp) · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git
 ```

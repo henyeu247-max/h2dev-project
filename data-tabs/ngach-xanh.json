@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-09-16",
   "doNgay": "2026-08-21",
   "quyTacQuyetDinh2026": {
     "mucTieu": "Ngách đáng làm + điều kiện làm an toàn; không phải cam kết kiếm tiền.",
@@ -189,7 +189,7 @@
         "lyDo": "Keyword competition thấp nhưng chỉ 1 mẫu canonical; thêm evidence cùng lane trước scale."
       },
       {
-        "thuTu": 18,
+        "thuTu": 19,
         "record": 12,
         "ngach": "Kinh tế Hàn (giáo dục)",
         "nhom": "TEST_FORMAT",
@@ -197,7 +197,7 @@
         "lyDo": "Demand cao nhưng competition 51.2 và chỉ 1 mẫu clean; chỉ khái niệm/lịch sử kinh tế, không khuyến nghị đầu tư."
       },
       {
-        "thuTu": 19,
+        "thuTu": 20,
         "record": 13,
         "ngach": "Kinh tế Nhật",
         "nhom": "TEST_FORMAT",
@@ -205,7 +205,7 @@
         "lyDo": "Chỉ 1 mẫu canonical và query kéo về đầu tư; chỉ economic history/explainer, không advice."
       },
       {
-        "thuTu": 20,
+        "thuTu": 21,
         "record": 14,
         "ngach": "Drama / kaidan Nhật",
         "nhom": "TEST_FORMAT",
@@ -213,7 +213,7 @@
         "lyDo": "Có demand và 1 mẫu tăng; dùng folklore/câu chuyện gốc có nguồn, không horror factory hay trình bày fiction là fact."
       },
       {
-        "thuTu": 21,
+        "thuTu": 22,
         "record": 15,
         "ngach": "Sức khỏe / sinh hoạt senior Hàn",
         "nhom": "TEST_FORMAT",
@@ -221,7 +221,7 @@
         "lyDo": "Một mẫu bứt phá nhưng nhiều mẫu reset/bác sĩ. Chỉ mẹo sinh hoạt không chuyên gia và test nhỏ."
       },
       {
-        "thuTu": 22,
+        "thuTu": 23,
         "record": 19,
         "ngach": "Triết lý / khắc kỷ",
         "nhom": "TEST_FORMAT",
@@ -229,7 +229,7 @@
         "lyDo": "Keyword competition thấp nhưng chưa có mẫu canonical và quote-farm rủi ro inauthentic. Làm case-study/primary source, không quote carousel."
       },
       {
-        "thuTu": 23,
+        "thuTu": 24,
         "record": 26,
         "ngach": "Tiền sử / Canada / cam cảnh sát",
         "nhom": "TEST_FORMAT",
@@ -237,7 +237,7 @@
         "lyDo": "Chỉ biến thể tiền sử documentary có thể test; police-cam không thuộc lộ trình do privacy/reused. Cần evidence kênh riêng trước scale."
       },
       {
-        "thuTu": 24,
+        "thuTu": 25,
         "record": 21,
         "ngach": "Reup hoạt hình (đã transform)",
         "nhom": "TEST_FORMAT",
@@ -245,7 +245,7 @@
         "lyDo": "Chỉ làm khi có quyền thương mại và commentary/biến đổi thực chất. Các kênh mẫu hiện 0 video mới nên không chứng minh cadence an toàn."
       },
       {
-        "thuTu": 25,
+        "thuTu": 26,
         "record": 22,
         "ngach": "Drama / 야담 Hàn",
         "nhom": "TEST_FORMAT",
@@ -253,7 +253,7 @@
         "lyDo": "Demand cao nhưng evidence lane canonical không đủ và format farm rõ. Chỉ fiction/folklore gốc với thesis khác nhau; không scale theo template."
       },
       {
-        "thuTu": 26,
+        "thuTu": 27,
         "record": 23,
         "ngach": "Sinh tồn VN",
         "nhom": "KHONG_DU_EVIDENCE",
@@ -261,7 +261,7 @@
         "lyDo": "Keyword có demand nhưng chưa có evidence faceless cùng lane; chỉ test nếu tự quay hoặc có quyền footage."
       },
       {
-        "thuTu": 27,
+        "thuTu": 28,
         "record": 24,
         "ngach": "Người que / Chill Dude / Nonagon",
         "nhom": "KHONG_DU_EVIDENCE",
@@ -269,7 +269,7 @@
         "lyDo": "Keyword tốt nhưng lane explainer original chưa có evidence canonical; không clone creator lớn."
       },
       {
-        "thuTu": 28,
+        "thuTu": 29,
         "record": 25,
         "ngach": "Đứa trẻ Hàn",
         "nhom": "KHONG_DU_EVIDENCE",
@@ -277,7 +277,7 @@
         "lyDo": "Evidence hiện không khớp faceless; không dùng trẻ em trong tình huống gây đau khổ hoặc câu tương tác."
       },
       {
-        "thuTu": 29,
+        "thuTu": 30,
         "record": 16,
         "ngach": "Nhà máy sản xuất",
         "nhom": "KHONG_DU_EVIDENCE",
@@ -285,7 +285,7 @@
         "lyDo": "Keyword cạnh tranh cao và chưa có mẫu canonical; documentary quy trình có thể test sau khi thêm evidence/source footage."
       },
       {
-        "thuTu": 30,
+        "thuTu": 31,
         "record": 18,
         "ngach": "Lịch sử / quân sự",
         "nhom": "KHONG_DU_EVIDENCE",
@@ -293,7 +293,7 @@
         "lyDo": "Hai sample lưu kho không hoạt động; nếu test chỉ lịch sử đã xa với nguồn/public-domain, không compilation footage."
       },
       {
-        "thuTu": 31,
+        "thuTu": 32,
         "record": 20,
         "ngach": "Quy luật kinh tế / Economy Rewind",
         "nhom": "KHONG_DU_EVIDENCE",
@@ -301,7 +301,7 @@
         "lyDo": "Handle kho sai mapping; chỉ khung lịch sử kinh tế có nguồn, không finance advice."
       },
       {
-        "thuTu": 32,
+        "thuTu": 33,
         "record": 27,
         "ngach": "Kiểm soát sinh học / chiến thuật",
         "nhom": "KHONG_DU_EVIDENCE",
@@ -309,7 +309,7 @@
         "lyDo": "Không có keyword/lane đủ ổn định; không tạo nội dung có thể dẫn tới gây hại."
       },
       {
-        "thuTu": 33,
+        "thuTu": 34,
         "record": 17,
         "ngach": "Địa chính trị EN (North Effect)",
         "nhom": "TACH_KHOI_DE_XUAT",
@@ -320,13 +320,13 @@
   },
   "phamViKho": {
     "video": 136,
-    "taiLieu": 103,
+    "taiLieu": 109,
     "kenhMau": 165,
     "kenhDeadTrongFile": 13,
     "kenhLiveTrongFile": 152,
     "kenhDaDoSong": 165,
     "kenhLiveChuaDo": 0,
-    "ghiChu": "Lịch sử 21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08. Snapshot live 12/09/2026: 165 kênh (152 live · 13 dead), ngay_do 165/165."
+    "ghiChu": "Lịch sử 21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08. Snapshot live 12/09/2026: 165 kênh (152 live · 13 dead), ngay_do 165/165. Cập nhật 16/09/2026: đánh số lại BXH 1–34 (2 dòng từng trùng số 18); đo lại code: 19 handle trên video chưa có trong kenh-mau; tài liệu 103→109."
   },
   "thongTinChinhSach2026": [
     "16/07/2026 Halprin (VP Trust & Safety) trên Creator Insider: chính sách KHÔNG đổi — chỉ ngôn ngữ. 3 nhóm inauthentic: (1) generic/repetitive — 'đã có 1 đống như vậy ngoài kia, làm cái tiếp theo = chung chung, lặp lại → kênh không ở lại YPP'; (2) off-putting/unsatisfying — con vật gặp nạn rồi được cứu + TRẺ EM trong tình huống đau khổ — kênh dedicate nội dung này bị remove khỏi YPP; (3) AI persona nói health/finance/legal — 'không muốn tạo động lực cho điều đó'.",

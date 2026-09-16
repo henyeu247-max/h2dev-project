@@ -56,7 +56,7 @@ const fullSkus = uniqueSkus(catalogFull, 'catalog_full.json');
 const videoSkus = uniqueSkus(videos, 'videos.json');
 
 const EXPECTED_VIDEOS = 136;
-const EXPECTED_DOCUMENTS = 103;
+const EXPECTED_DOCUMENTS = 109;
 const EXPECTED_CHANNELS = 165;
 const EXPECTED_LIVE_CHANNELS = 152;
 const EXPECTED_DEAD_CHANNELS = 13;

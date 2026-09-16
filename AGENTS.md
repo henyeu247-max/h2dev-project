@@ -52,7 +52,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 |---|---|
 | `videos.json` | **136** (22 free / 110 pro + 4 Zoom free) |
 | `kenh-mau.json` | **165** (152 live + 13 dead) · `ngay_do` 165/165 |
-| `tai-lieu-full.json` | **103** (prompt 33 · report 20 · tool 17 · list 16 · other 12 · internal-doc 5; cập nhật Zoom 11/09) |
+| `tai-lieu-full.json` | **109** (prompt 35 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5; cập nhật 16/09) |
 | `ngach-xanh.json` | **34** ngách — `xanh:true` **11** · `CÓ MẪU TĂNG` 10 · `CHƯA ĐỦ BẰNG CHỨNG` 8 · `THẬN TRỌNG` 3 · `CÓ ĐIỀU KIỆN` 2 · + 5 meta kho · 5 ngách đỏ · 13 BXH |
 | `kich-ban.json` | **45** (extract cũ, UI không đọc) |
 | `nguon-reup.json` | **27** |

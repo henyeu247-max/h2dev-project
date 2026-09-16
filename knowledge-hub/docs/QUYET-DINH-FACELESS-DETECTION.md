@@ -80,7 +80,7 @@ Prompt 1 lần, trả về cùng lúc:
 | Tiêu chí | Đánh giá |
 |---|---|
 | Chi phí | $0 (dùng 9Router hiện có) |
-| Tốc độ | **6.4s/ảnh** (chậm) — 1.240 ảnh = ~2.2 giờ |
+| Tốc độ | **6.4s/ảnh** (chậm) — 1.560 ảnh = ~2.8 giờ |
 | Offline | ❌ Phụ thuộc 9Router |
 | **Độ chính xác faceless** | ✅ **90%** — hiểu ngữ cảnh "real human" |
 | **Đa nhiệm** | ✅ 1 call = faceless + niche + style |
@@ -112,17 +112,17 @@ Prompt 1 lần, trả về cùng lúc:
 ### Đề xuất theo mục đích sử dụng
 
 **Dùng ngay (hôm nay):** Vision Cloud cho **faceless detection + niche labeling** — vì 90% accuracy, đa nhiệm, $0, đã chạy được.
-- Quy mô: 124 kênh × 10 ảnh = 1.240 ảnh × 6.4s = **~2.2 giờ** (chạy đêm, một lần).
+- Quy mô: 156 kênh × 10 ảnh = 1.560 ảnh × 6.4s = **~2.8 giờ** (chạy đêm, một lần).
 - Chi phí: **$0** (qua 9Router hiện có).
 
 **Giữ SCRFD local** cho các việc khác mà nó làm tốt: đếm số mặt, đo vị trí mặt, phát hiện khuôn mặt trong video frame (tốc độ 116-270 ảnh/s là lợi thế thật khi cần xử lý hàng chục nghìn frame).
 
 **Không mua NexLev** — vì:
-1. Chỉ có 5 checks/ngày ở bản free (quá ít cho 124 kênh).
+1. Chỉ có 5 checks/ngày ở bản free (quá ít cho 156 kênh).
 2. $156-504/năm, trong khi Vision Cloud $0 và đo được 90%.
 3. Không kiểm soát được, phụ thuộc bên thứ 3.
 
-**Có thể làm thêm (tuỳ chọn):** Hybrid SCRFD→Cloud nếu sau này cần chạy hàng chục nghìn ảnh (tiết kiệm 60% thời gian cloud). Nhưng với quy mô hiện tại (1.240 ảnh), không cần thiết.
+**Có thể làm thêm (tuỳ chọn):** Hybrid SCRFD→Cloud nếu sau này cần chạy hàng chục nghìn ảnh (tiết kiệm 60% thời gian cloud). Nhưng với quy mô hiện tại (1.560 ảnh), không cần thiết.
 
 ---
 
@@ -130,8 +130,8 @@ Prompt 1 lần, trả về cùng lúc:
 
 | Ưu tiên | Việc | Ghi chú |
 |---|---|---|
-| 1 | Viết `scripts/faceless-vision-batch.py` | Gọi Vision Cloud cho 124 kênh, gắn `is_faceless` + `facelessConfidence` + `thumbnailNiche` |
-| 2 | Chạy batch qua đêm | ~2.2 giờ cho 1.240 ảnh |
+| 1 | Viết `scripts/faceless-vision-batch.py` | Gọi Vision Cloud cho 156 kênh, gắn `is_faceless` + `facelessConfidence` + `thumbnailNiche` |
+| 2 | Chạy batch qua đêm | ~2.8 giờ cho 1.560 ảnh |
 | 3 | Kiểm tra kết quả mẫu 20 kênh | Đối chiếu thủ công trước khi tin toàn bộ |
 | 4 | (Tuỳ chọn) Giữ SCRFD cho video-frame analysis | Không dùng cho thumbnail classification |
 

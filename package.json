@@ -10,6 +10,8 @@
     "start": "node server.js",
     "validate": "node scripts/validate-project.js",
     "test": "node scripts/validate-project.js",
+    "counts": "node scripts/sync-counts.js",
+    "counts:check": "node scripts/sync-counts.js --check",
     "logrotate": "node scripts/logrotate.js",
     "logrotate:force": "node scripts/logrotate.js --force",
     "guard": "node scripts/guard-no-inline-onclick.js",

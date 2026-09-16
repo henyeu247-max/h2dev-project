@@ -13,6 +13,8 @@ const { DatabaseSync } = require('node:sqlite');
 
 const ROOT = path.resolve(__dirname, '..');
 const DB_PATH = path.join(ROOT, 'data', 'h2dev_master.db');
+const { computeCounts } = require('./lib/counts');
+const C = computeCounts();
 
 // Safe connection opener with performance PRAGMAs
 function getMasterDb() {
@@ -174,7 +176,7 @@ function exportProjections() {
   try {
     // Check if there are changes
     const lessons = db.prepare(`SELECT * FROM lessons ORDER BY rowid ASC`).all();
-    if (lessons.length === 136) {
+    if (lessons.length === C.videos) {
       // Export videos.json projection format
       const videosJsonPath = path.join(ROOT, 'data-tabs', 'videos.json');
       const existingVideos = JSON.parse(fs.readFileSync(videosJsonPath, 'utf8'));

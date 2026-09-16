@@ -1,0 +1,65 @@
+{
+  "channelId": "UCtrNrW5RTVzL7Tj07EExLKg",
+  "rawId": "RAW-114",
+  "totalVideos": 4,
+  "extractedAt": "2026-09-16T18:01:51+07:00",
+  "extractionSource": "free_yt_engine.py RSS (top 10 by views) + watch page durations/tags - do that 16/09/2026",
+  "videos": [
+    {
+      "rank": 1,
+      "videoId": "Eg0djVfKXU8",
+      "url": "https://www.youtube.com/watch?v=Eg0djVfKXU8",
+      "title": "The 400 km Wall Japan Built to Stop the Sea",
+      "thumbnail": "https://i.ytimg.com/vi/Eg0djVfKXU8/maxresdefault.jpg",
+      "publishedAt": "2026-08-19T17:06:12+00:00",
+      "duration": "PT25M15S",
+      "durationSeconds": 1515,
+      "views": 3922458,
+      "vph": 5890.2,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 2,
+      "videoId": "huP0Yr2PlZ0",
+      "url": "https://www.youtube.com/watch?v=huP0Yr2PlZ0",
+      "title": "Nepal Flood Explained: How a Glacier Became a Wall of Water",
+      "thumbnail": "https://i.ytimg.com/vi/huP0Yr2PlZ0/maxresdefault.jpg",
+      "publishedAt": "2026-09-02T16:56:12+00:00",
+      "duration": "PT15M49S",
+      "durationSeconds": 949,
+      "views": 220658,
+      "vph": 668.5,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 3,
+      "videoId": "0T_KCWIKSbM",
+      "url": "https://www.youtube.com/watch?v=0T_KCWIKSbM",
+      "title": "The Water Project That Made a Country Rich Without Selling Oil | 4K Documentary",
+      "thumbnail": "https://i.ytimg.com/vi/0T_KCWIKSbM/maxresdefault.jpg",
+      "publishedAt": "2026-08-21T15:17:46+00:00",
+      "duration": "PT18M45S",
+      "durationSeconds": 1125,
+      "views": 79305,
+      "vph": 128.0,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 4,
+      "videoId": "oHSqe6onipQ",
+      "url": "https://www.youtube.com/watch?v=oHSqe6onipQ",
+      "title": "How Egypt Is Digging a 310 km River Into the Sahara Desert",
+      "thumbnail": "https://i.ytimg.com/vi/oHSqe6onipQ/maxresdefault.jpg",
+      "publishedAt": "2026-09-11T13:56:21+00:00",
+      "duration": "PT28M7S",
+      "durationSeconds": 1687,
+      "views": 52814,
+      "vph": 451.1,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    }
+  ]
+}

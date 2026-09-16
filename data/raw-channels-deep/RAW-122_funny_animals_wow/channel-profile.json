@@ -1,0 +1,22 @@
+{
+  "id": "RAW-122",
+  "channelId": "UCv2NylMXh-hTWVoRli_YqtQ",
+  "title": "funny animals wow",
+  "handle": "@FactoryRebornvn",
+  "url": "https://www.youtube.com/@FactoryRebornvn",
+  "subscribers": 3840,
+  "views": null,
+  "videoCount": 98,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/eBllx5nHSDy7LMX_NVmNd_0zk-GV6nudrzyPUza2MthzC6snANGHc52LeIAojTZIjkCCgfp1aBY=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T18:03:29+07:00",
+  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+  "dataGaps": [
+    "views tong kenh: chua do duoc - null trung thuc",
+    "country: khong co trong HTML - null trung thuc",
+    "longevityAudit/growth30d: chua do - dot 2",
+    "transcripts: chua extract - chi co metadata top videos"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
+}

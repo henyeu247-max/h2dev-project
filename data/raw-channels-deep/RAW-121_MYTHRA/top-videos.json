@@ -1,0 +1,23 @@
+{
+  "channelId": "UCQnhXRLVlz161PmIuqA9e4A",
+  "rawId": "RAW-121",
+  "totalVideos": 1,
+  "extractedAt": "2026-09-16T18:03:10+07:00",
+  "extractionSource": "free_yt_engine.py RSS (top 10 by views) + watch page durations/tags - do that 16/09/2026",
+  "videos": [
+    {
+      "rank": 1,
+      "videoId": "dqCGNrQ6N_o",
+      "url": "https://www.youtube.com/watch?v=dqCGNrQ6N_o",
+      "title": "She Gave Birth to a Dragon | The Mothers Monster | Full Fantasy Movie 4K",
+      "thumbnail": "https://i.ytimg.com/vi/dqCGNrQ6N_o/maxresdefault.jpg",
+      "publishedAt": "2026-09-14T22:14:22+00:00",
+      "duration": "PT28M29S",
+      "durationSeconds": 1709,
+      "views": 3063345,
+      "vph": 83213.4,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    }
+  ]
+}

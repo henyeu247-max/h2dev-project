@@ -1,0 +1,22 @@
+{
+  "id": "RAW-118",
+  "channelId": "UCH5muwkuaCG6wBUoEWgUKBg",
+  "title": "Wes Tucker",
+  "handle": "@TuckerWes",
+  "url": "https://www.youtube.com/TuckerWes",
+  "subscribers": 23900,
+  "views": null,
+  "videoCount": 24,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/ETW4n3HSIu4H6ze09E1f936JKg8HWkERzWuj1KYQh0WYon5BTW4MFiPbUwuIb4Mfb2TyYyB5fKM=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T18:07:07+07:00",
+  "extractionSource": "free_yt_engine.py + URL percent-encode fix - do that 16/09/2026",
+  "dataGaps": [
+    "views tong kenh: chua do duoc - null trung thuc",
+    "country: khong co trong HTML - null trung thuc",
+    "longevityAudit/growth30d: chua do - dot 2",
+    "transcripts: chua extract - chi co metadata top videos"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
+}

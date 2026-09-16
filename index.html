@@ -226,7 +226,8 @@
       "Kỹ Thuật Setup Nuôi Kênh & VPS": "Nền tảng / Tool",
       "Bán Content Đa Thị Trường Nhật & Hàn": "Nhân bản / Kênh",
       "Bán Content Đa Thị Trường Hàn & Việt": "Nhân bản / Kênh",
-      "Bán Content Ngách Cực Nhỏ": "Share key / Ngách nhỏ"
+      "Bán Content Ngách Cực Nhỏ": "Share key / Ngách nhỏ",
+      "Hệ thống / Quy trình": "Hệ thống / Quy trình"
     };
     function nicheKeyFor(ngach) { return NICHE_MAP[ngach] || ngach; }
     function xanhBadge(x) {
@@ -1266,7 +1267,7 @@
       const bySku = Object.fromEntries(videos.map(v => [v.sku, v]));
       const KIND_LABEL = { prompt: 'Prompt', list: 'List kênh', tool: 'Tool', drive: 'Drive', form: 'Form', ai: 'AI gen', report: 'Báo cáo', 'internal-doc': 'Tài liệu nội bộ', other: 'Khác' };
       const KIND_BADGE = { prompt: 'badge-brand', list: 'badge-blue', tool: 'badge-amber', drive: 'badge-green', form: 'badge-red', ai: 'badge-blue', report: 'badge-green', 'internal-doc': 'badge-muted', other: 'badge-muted' };
-      const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Nền tảng / Tool', 'Khác'];
+      const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Everyday History EN (lịch sử đồ vật thường ngày)', 'Khoa học EN', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Hệ thống / Quy trình', 'Nền tảng / Tool', 'Khác'];
       function classifyPrompt(item) {
         if (item.kind) return item.kind;
         const name = (item.name || '').toLowerCase();
@@ -1353,17 +1354,12 @@
         return hay.includes(q);
       });
       const kindChips = [['', 'Tất cả', kindCounts.all || 0], ['prompt', 'Prompt', kindCounts.prompt || 0], ['report', 'Báo cáo', kindCounts.report || 0], ['list', 'List kênh', kindCounts.list || 0], ['tool', 'Tool', kindCounts.tool || 0], ['drive', 'Drive', kindCounts.drive || 0], ['form', 'Form', kindCounts.form || 0], ['ai', 'AI gen', kindCounts.ai || 0], ['internal-doc', 'Tài liệu nội bộ', kindCounts['internal-doc'] || 0], ['other', 'Khác', kindCounts.other || 0]].filter(x => !x[0] || x[2]);
-      const nicheChips = NICHE_ORDER.filter(n => nicheCounts[n]).map(n => [n, n, nicheCounts[n]]);
+      const allNicheKeys = [...NICHE_ORDER.filter(n => nicheCounts[n]), ...Object.keys(nicheCounts).filter(n => !NICHE_ORDER.includes(n))];
+      const nicheChips = allNicheKeys.map(n => [n, n, nicheCounts[n]]);
       const grouped = [];
-      NICHE_ORDER.forEach(n => {
+      allNicheKeys.forEach(n => {
         const items = list.filter(x => x.contentNiche === n);
         if (items.length) grouped.push({ niche: n, items });
-      });
-      Object.keys(nicheCounts).forEach(n => {
-        if (!NICHE_ORDER.includes(n)) {
-          const items = list.filter(x => x.contentNiche === n);
-          if (items.length) grouped.push({ niche: n, items });
-        }
       });
       function videoNicheKey(contentNiche) {
         return NICHE_MAP[contentNiche] || (Object.values(NICHE_MAP).includes(contentNiche) ? contentNiche : '');
@@ -1936,7 +1932,7 @@
 
     async function renderKenh() {
       const kenh = await loadJSON('data-tabs/kenh-mau.json');
-      const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Khoa học EN', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Nền tảng / Tool', 'Khác'];
+      const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Khoa học EN', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Everyday History EN (lịch sử đồ vật thường ngày)', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Hệ thống / Quy trình', 'Nền tảng / Tool', 'Khác'];
       function initial(handle) {
         const t = String(handle || '').replace(/^@/, '').trim();
         return (t[0] || '?').toUpperCase();
@@ -1956,17 +1952,12 @@
         const hay = [ch.handle, ch.niche, (ch.niches || []).join(' '), (ch.markets || []).join(' '), ch.url].join(' ').toLowerCase();
         return hay.includes(q);
       }).slice().sort((a, b) => (b.count || 0) - (a.count || 0));
-      const chips = NICHE_ORDER.filter(n => nicheCounts[n]).map(n => [n, n, nicheCounts[n]]);
+      const allKenhNiches = [...NICHE_ORDER.filter(n => nicheCounts[n]), ...Object.keys(nicheCounts).filter(n => !NICHE_ORDER.includes(n))];
+      const chips = allKenhNiches.map(n => [n, n, nicheCounts[n]]);
       const grouped = [];
-      NICHE_ORDER.forEach(n => {
+      allKenhNiches.forEach(n => {
         const items = list.filter(x => (x.niche || 'Khác') === n);
         if (items.length) grouped.push({ niche: n, items });
-      });
-      Object.keys(nicheCounts).forEach(n => {
-        if (!NICHE_ORDER.includes(n)) {
-          const items = list.filter(x => (x.niche || 'Khác') === n);
-          if (items.length) grouped.push({ niche: n, items });
-        }
       });
       function videoNicheKey(niche) {
         return NICHE_MAP[niche] || (Object.values(NICHE_MAP).includes(niche) ? niche : (niche && niche !== 'Khác' ? niche : ''));

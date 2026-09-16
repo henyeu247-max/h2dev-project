@@ -119,21 +119,36 @@ if (rawIds.length !== rawRecords.length || new Set(rawIds).size !== rawIds.lengt
 }
 // Guard 16/09: moi record phai co handleHistory >= 1 entry voi handle khop entry cuoi.
 // Muc dich: chong tai dien lop loi "handle bi doi/ bi chiem ma khong ghi lai lich su" (phat hien 16/09).
+const LIFECYCLE_STATES = new Set(['ACTIVE', 'RENAMED', 'HANDLE_HIJACKED', 'DUPLICATE', 'DEAD_404', 'TERMINATED_BY_YOUTUBE']);
 for (const record of rawRecords) {
   const hist = Array.isArray(record.handleHistory) ? record.handleHistory : null;
   if (!hist || hist.length === 0) {
     errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} missing handleHistory`);
-    continue;
-  }
-  const last = hist[hist.length - 1];
-  const currentHandle = (record.channel && record.channel.handle) || '';
-  if (last.handle !== currentHandle) {
-    errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} handleHistory last entry "${last.handle}" != channel.handle "${currentHandle}"`);
-  }
-  for (let i = 1; i < hist.length; i += 1) {
-    if (hist[i].handle === hist[i - 1].handle) {
-      errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} handleHistory has duplicate consecutive entry "${hist[i].handle}"`);
+  } else {
+    const last = hist[hist.length - 1];
+    const currentHandle = (record.channel && record.channel.handle) || '';
+    if (last.handle !== currentHandle) {
+      errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} handleHistory last entry "${last.handle}" != channel.handle "${currentHandle}"`);
     }
+    for (let i = 1; i < hist.length; i += 1) {
+      if (hist[i].handle === hist[i - 1].handle) {
+        errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} handleHistory has duplicate consecutive entry "${hist[i].handle}"`);
+      }
+    }
+  }
+  // Guard channelLifecycle: state phai thuoc enum 6 trang thai chuan (6.1).
+  const lc = record.channelLifecycle;
+  if (!lc || !lc.state) {
+    errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} missing channelLifecycle.state`);
+  } else if (!LIFECYCLE_STATES.has(lc.state)) {
+    errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} channelLifecycle.state "${lc.state}" not in enum (${[...LIFECYCLE_STATES].join(', ')})`);
+  }
+  // Nhat quan cheo: co duplicateOf thi state phai DUPLICATE; TERMINATED thi khong co folderName.
+  if (record.duplicateOf && lc && lc.state && lc.state !== 'DUPLICATE') {
+    errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} co duplicateOf=${record.duplicateOf} nhung channelLifecycle.state=${lc.state}`);
+  }
+  if (lc && lc.state === 'TERMINATED_BY_YOUTUBE' && record.deepIntelligence && record.deepIntelligence.folderName) {
+    errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} TERMINATED nhung van con folderName`);
   }
 }
 

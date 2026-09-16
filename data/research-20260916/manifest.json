@@ -1,0 +1,238 @@
+{
+ "schema": "h2dev.research-corpus.v2",
+ "collectedAt": "2026-09-16",
+ "updatedAt": "2026-09-16",
+ "purpose": "Kho prompt master + nghien cuu ngach tu: Telegram Desktop (22 PDF) + 6 kenh chia se (ByteGenius, MonetizeMind, Markaiguy, AIpreneur, AiLockup, MonetizeMind Telegram)",
+ "sources": [
+  {
+   "name": "Telegram Desktop folder",
+   "type": "local-pdf",
+   "count": 21,
+   "note": "22 PDF goc, 1 file trung da archive"
+  },
+  {
+   "name": "TheByteGenius",
+   "type": "google-docs",
+   "count": 6,
+   "url": "https://www.youtube.com/@TheByteGenius"
+  },
+  {
+   "name": "MonetizeMindbysam",
+   "type": "notion",
+   "count": 4,
+   "url": "https://www.youtube.com/@MonetizeMindbysam"
+  },
+  {
+   "name": "Markaiguy",
+   "type": "telegram->gdocs",
+   "count": 2,
+   "url": "https://t.me/markaiguyHQ"
+  },
+  {
+   "name": "AIpreneur",
+   "type": "pinned-comment->gdocs",
+   "count": 1,
+   "url": "https://www.youtube.com/@AIpreneur2176"
+  },
+  {
+   "name": "AiLockup",
+   "type": "description->gdocs",
+   "count": 4,
+   "url": "https://www.youtube.com/@AiLockup"
+  },
+  {
+   "name": "MonetizeMind Telegram",
+   "type": "telegram-intel",
+   "count": 1,
+   "url": "https://t.me/Monitezemind"
+  },
+  {
+   "name": "AI Playbook",
+   "type": "description->gdocs",
+   "count": 5,
+   "url": "https://www.youtube.com/@AIPlaybook-b5c"
+  }
+ ],
+ "docs": [
+  {
+   "file": "prompts-built-in/3D_DOCUMENTARY.txt",
+   "sizeBytes": 49074
+  },
+  {
+   "file": "prompts-built-in/AI_Horror_Content_Master_Prompt.txt",
+   "sizeBytes": 6082
+  },
+  {
+   "file": "prompts-built-in/CINEMATIC_VIDEOS.txt",
+   "sizeBytes": 13512
+  },
+  {
+   "file": "prompts-built-in/Consistent_Character_Prompt_by_Raj.docx.txt",
+   "sizeBytes": 8350
+  },
+  {
+   "file": "prompts-built-in/DARK_LEDGER.txt",
+   "sizeBytes": 84646
+  },
+  {
+   "file": "prompts-built-in/FIFA_MASTERPROMPT.txt",
+   "sizeBytes": 16728
+  },
+  {
+   "file": "prompts-built-in/Finance_Magical_Prompt.txt",
+   "sizeBytes": 74066
+  },
+  {
+   "file": "prompts-built-in/Finance_Stick_Figure_Animation_Masterclass.txt",
+   "sizeBytes": 3653
+  },
+  {
+   "file": "prompts-built-in/Finance_Videos_Master_Prompts.txt",
+   "sizeBytes": 9901
+  },
+  {
+   "file": "prompts-built-in/HISTORY_DOCUMENTARY.txt",
+   "sizeBytes": 26783
+  },
+  {
+   "file": "prompts-built-in/HISTORY_OF_FOODS.txt",
+   "sizeBytes": 16418
+  },
+  {
+   "file": "prompts-built-in/Historical_Stick_Figure_Animation_Masterclass.txt",
+   "sizeBytes": 3715
+  },
+  {
+   "file": "prompts-built-in/MASTER_PROMPT_BY_DIGITAL_RAJ.txt",
+   "sizeBytes": 12657
+  },
+  {
+   "file": "prompts-built-in/Magial_Prompt.txt",
+   "sizeBytes": 31262
+  },
+  {
+   "file": "prompts-built-in/Master_Prompts.txt",
+   "sizeBytes": 15793
+  },
+  {
+   "file": "prompts-built-in/PROMPTS_FOR_FERN_LIKE_VIDEOS.txt",
+   "sizeBytes": 19067
+  },
+  {
+   "file": "prompts-built-in/Prompts_).txt",
+   "sizeBytes": 11899
+  },
+  {
+   "file": "prompts-built-in/Prompts_For_VOX_Style_Animation.txt",
+   "sizeBytes": 27609
+  },
+  {
+   "file": "prompts-built-in/SO_YOU_WANT_TO_OWN.txt",
+   "sizeBytes": 33453
+  },
+  {
+   "file": "prompts-built-in/Viral_History_Video_Breakdown.txt",
+   "sizeBytes": 10987
+  },
+  {
+   "file": "prompts-built-in/ZENN_STICKMAN.txt",
+   "sizeBytes": 44044
+  },
+  {
+   "file": "prompts-built-in/ailockup-90s-anime.txt",
+   "sizeBytes": 4871
+  },
+  {
+   "file": "prompts-built-in/ailockup-cinematic-films.txt",
+   "sizeBytes": 5958
+  },
+  {
+   "file": "prompts-built-in/ailockup-music-video.txt",
+   "sizeBytes": 3505
+  },
+  {
+   "file": "prompts-built-in/ailockup-whiteboard.txt",
+   "sizeBytes": 12182
+  },
+  {
+   "file": "prompts-built-in/aiplaybook-finance-chatgpt.txt",
+   "sizeBytes": 11922
+  },
+  {
+   "file": "prompts-built-in/aiplaybook-paper-animation.txt",
+   "sizeBytes": 12046
+  },
+  {
+   "file": "prompts-built-in/aiplaybook-seedance-runninghub.txt",
+   "sizeBytes": 43365
+  },
+  {
+   "file": "prompts-built-in/aiplaybook-vox-style.txt",
+   "sizeBytes": 28142
+  },
+  {
+   "file": "prompts-built-in/aiplaybook-workflow-minutes.txt",
+   "sizeBytes": 52519
+  },
+  {
+   "file": "prompts-built-in/aipreneur-stickman-prompt.txt",
+   "sizeBytes": 5245
+  },
+  {
+   "file": "prompts-built-in/bytegenius-1.txt",
+   "sizeBytes": 26742
+  },
+  {
+   "file": "prompts-built-in/bytegenius-2.txt",
+   "sizeBytes": 5077
+  },
+  {
+   "file": "prompts-built-in/bytegenius-3.txt",
+   "sizeBytes": 7488
+  },
+  {
+   "file": "prompts-built-in/bytegenius-4.txt",
+   "sizeBytes": 38484
+  },
+  {
+   "file": "prompts-built-in/bytegenius-5.txt",
+   "sizeBytes": 8646
+  },
+  {
+   "file": "prompts-built-in/markaiguy-doc2.txt",
+   "sizeBytes": 9514
+  },
+  {
+   "file": "prompts-built-in/markaiguy-stickman-engine.txt",
+   "sizeBytes": 10169
+  },
+  {
+   "file": "prompts-built-in/mm-faceless-master.txt",
+   "sizeBytes": 42709
+  },
+  {
+   "file": "prompts-built-in/mm-master-prompt-1.txt",
+   "sizeBytes": 78782
+  },
+  {
+   "file": "prompts-built-in/mm-master-prompt-2.txt",
+   "sizeBytes": 16453
+  },
+  {
+   "file": "prompts-built-in/mm-mr-finance.txt",
+   "sizeBytes": 23679
+  },
+  {
+   "file": "niche-research/crayon-capital-telegram-niche-post.txt",
+   "sizeBytes": 1142
+  }
+ ],
+ "totalDocs": 43,
+ "totalBytes": 968339,
+ "archived": [
+  "_archive/20260916-research-dedupe/Untitled_document_(1).txt (ban rut gon)",
+  "_archive/20260916-research-dedupe/AI_Horror_Content_Pipeline_Master_Prompt.pdf.txt (ban PDF spacing artifact)",
+  "_archive/20260916-research-dedupe/prompts-old/ (13 files cu da phan loai lai)"
+ ],
+ "note": "v3: them AI Playbook 5 docs (VOX, paper animation, finance, seedance, business economics)"
+}

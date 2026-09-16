@@ -1,6 +1,6 @@
 # Cây thư mục chuẩn — H2DEV-Project
 
-Cập nhật: **2026-09-12**
+Cập nhật: **2026-09-16**
 
 H2DEV là **một nguồn sự thật**. Gốc `Y:\YTB` không chứa data làm việc.
 
@@ -28,9 +28,13 @@ Y:\YTB\
     │                              #   install-h2dev-{watchdog,noadmin,startup}.ps1 · check-server.ps1
     │                              #   _rereg_watchdog_silent_admin.cmd · h2dev-service-autoreload-hook.ps1 (16/09)
     ├── data\                      # catalog gốc + manifest dẫn xuất — tạo bằng script
-    │   ├── catalog.json
-    │   ├── catalog_full.json
-    │   └── video_acceptance.json             # trạng thái pilot, QA, blocker — không gọi PASS giả
+    │   ├── catalog.json               # 136 record (projection gốc)
+    │   ├── catalog_full.json          # 136 record (projection đầy đủ)
+    │   ├── modules.json               # 12 module
+    │   ├── video_acceptance.json      # trạng thái pilot, QA, blocker — không gọi PASS giả
+    │   ├── raw-channels-deep\         # 149 hồ sơ kênh sâu (transcripts/summary/vision) — phục vụ UI
+    │   ├── research-20260916\         # 43 prompt master research (nguồn của +43 card 16/09)
+    │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest · *_backup_* (detritus cũ, không trỏ vào)
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165
@@ -70,13 +74,11 @@ Y:\YTB\
     ├── _audit\                    # raw/nhật ký kiểm chứng — web bị chặn · KHÔNG đưa lên UI
     ├── _private\                  # chỗ key local — web bị chặn
     ├── _archive\                  # rác đã dời khỏi web serve — KHÔNG xoá (NO_DELETE) · web bị chặn
-    │   └── 20260831-rac\_verify\  # 7 file scratch (chứa SKU pending VIDEO-3F8339)
-    ├── _frames\                   # frame trích từ video (rác vận hành) · web bị chặn
-    ├── _tmp_audio\                # audio tạm của pipeline (rác vận hành) · web bị chặn
-    ├── _drafts\                   # bản nháp (enrichment · insightface proposal) · web bị chặn
-    ├── _internal\                 # tài liệu nội bộ nháp + debug shots · web bị chặn
+    │   ├── 20260831-rac\_verify\  # 7 file scratch (chứa SKU pending VIDEO-3F8339)
+    │   └── 20260916-junk-cleanup\ # _frames (235 file/71M) · _internal (1285 file/125M, gồm dot_git_backup\ 108M) · _drafts (4) · _tmp_audio
     ├── .cache\                    # cache runtime (checkpoint, thumbnail, reload-state) · web bị chặn
     ├── logs\                      # log server/watchdog/reload · web bị chặn · KHÔNG vào git
+    │   # (không còn ở gốc: _frames\ · _tmp_audio\ · _drafts\ · _internal\ — đã dời 16/09; script tự tạo lại khi chạy)
     ├── raw-kenh-goc\             # 135 ảnh raw canonical + metadata (156 record: 21 kênh mới chưa có ảnh chụp) · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git

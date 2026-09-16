@@ -1,6 +1,6 @@
 # H2DEV Project — Não Faceless YouTube
 
-> Cập nhật: **2026-09-12**
+> Cập nhật: **2026-09-16**
 
 Web quản lý **toàn bộ** kho học H2DEV (136 bài: 132 video + 4 buổi Zoom) + tài sản nội bộ đã chuẩn hóa (prompt, báo cáo, pipeline).
 

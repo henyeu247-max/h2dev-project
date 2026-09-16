@@ -17,7 +17,7 @@ Toàn bộ tài nguyên trên máy chủ cục bộ `D:\YTB\H2DEV-Project` đã 
 ### 2. Kho kênh đối thủ mẫu (165 kênh theo dõi)
 - **152 kênh đang hoạt động (Live):** Dữ liệu đối chiếu đa thị trường (Mỹ, Nhật, Hàn, Việt Nam).
 - **13 kênh đã dừng/chết (Dead 404):** Đã gắn cờ ẩn khỏi giao diện để tránh làm sai lệch việc nghiên cứu.
-- **124 record Raw Canonical (118 kênh unique):** Chuẩn hóa và khử trùng từ 95 ảnh chụp màn hình đối thủ gốc + 2 đợt mở rộng (RAW-110→136); 6 bản ghi trùng channel được gắn liên kết canonical (cập nhật 16/09/2026).
+- **156 record Raw Canonical (149 kênh unique):** Chuẩn hóa và khử trùng từ 95 ảnh chụp màn hình đối thủ gốc + các đợt mở rộng (RAW-110→168); 7 bản ghi trùng channel được gắn liên kết canonical (cập nhật 16/09/2026).
 
 ### 3. Ma trận khảo sát ngách (34 ngách thị trường — Khung động)
 - **Danh mục ứng viên linh hoạt:** Phân thành 3 nhóm (Tiềm năng cao, Cần theo dõi thêm, và Cảnh báo rủi ro chính sách).

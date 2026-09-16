@@ -71,8 +71,12 @@ async function mapPool(items, concurrency, worker) {
 
     const allCards = page.locator('article[data-raw-card]');
     const count = await allCards.count();
-    add('Raw Channels Cards Count', count === 124, `Expected 124, got ${count}`);
-    assert(count === 124, `Expected 124 raw cards, got ${count}`);
+    // 16/09: count dong theo so records thuc trong JSON (truoc day hardcode 124)
+    const rawJsonResp = await page.request.get(BASE.replace(/\/$/, '') + '/data-tabs/raw-kenh-mau.json');
+    const rawJson = await rawJsonResp.json();
+    const expectedCount = (rawJson.records || []).length;
+    add('Raw Channels Cards Count', count === expectedCount, `Expected ${expectedCount}, got ${count}`);
+    assert(count === expectedCount, `Expected ${expectedCount} raw cards, got ${count}`);
 
     const imgUrls = await page.evaluate(() => {
       const cards = document.querySelectorAll('article[data-raw-card]');
@@ -123,13 +127,13 @@ async function mapPool(items, concurrency, worker) {
     });
 
     add(
-      'All 124 Images Return HTTP 200',
-      broken.length === 0 && ok === 124,
-      `Loaded: ${ok}/124, Broken: ${broken.length}`
+      `All ${imgUrls.length} Images Return HTTP 200`,
+      broken.length === 0 && ok === imgUrls.length,
+      `Loaded: ${ok}/${imgUrls.length}, Broken: ${broken.length}`
     );
-    assert(broken.length === 0 && ok === 124, `Broken images: ${JSON.stringify(broken).slice(0, 2000)}`);
+    assert(broken.length === 0 && ok === imgUrls.length, `Broken images: ${JSON.stringify(broken).slice(0, 2000)}`);
 
-    const testIds = ['RAW-110', 'RAW-114', 'RAW-117', 'RAW-121', 'RAW-124', 'RAW-136'];
+    const testIds = ['RAW-110', 'RAW-114', 'RAW-117', 'RAW-121', 'RAW-124', 'RAW-136', 'RAW-137', 'RAW-142'];
     for (const tid of testIds) {
       const card = page.locator(`article[data-raw-card="${tid}"]`);
       const visible = await card.isVisible();

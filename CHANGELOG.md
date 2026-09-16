@@ -1,3 +1,26 @@
+## 2026-09-16 — Dời Rác Vận Hành Vào _archive + Bổ Sung Data/ Vào TREE.md (Vòng 2)
+
+### 🎯 Vấn đề (rà soát tồn đọng sau khi phiên song song dừng)
+- Sau khi phiên song song dừng (commit cuối `5e84993` lúc 23:44), runtime đã đổi: `tai-lieu-full.json` **109 → 152** (prompt 35 → 78). Đã xác nhận doc sync kịp (00_README · TREE · AGENTS · MEMORY · KE-HOACH = 152) và `validate-project.js` cập nhật `EXPECTED_DOCUMENTS = 152` → **PASS**.
+- **Rác vận hành vẫn ở gốc** (chưa gom): `_frames` (235 file / 71 MB) · `_internal` (1285 file / **125 MB**, trong đó `dot_git_backup\` = **108 MB** bản sao `.git`) · `_drafts` (4 file / 304 KB).
+- `TREE.md` **không mô tả `data/` thực tế**: thiếu `modules.json` · `raw-channels-deep\` (149 hồ sơ) · `research-20260916\` (43 prompt master) · các `.db`.
+
+### 🛠️ Can thiệp kỹ thuật
+1. **DỜI (không xóa — NO_DELETE):** `_frames` · `_internal` · `_drafts` → `_archive/20260916-junk-cleanup/` (đứng cạnh `_tmp_audio` do phiên trước dời). Tổng `_archive` nay **215 MB**. Đã verify không script nào phụ thuộc dữ liệu cũ: `deep-ui-acceptance.js:13` + `playwright-acceptance.js:12` tự `fs.mkdirSync`; `purge_isolated_hallucinations.py:86` tự `mkdir(parents=True)` → tái tạo được.
+2. **`TREE.md`**: bổ sung khối `data\` đầy đủ (`modules.json` · `raw-channels-deep\` · `research-20260916\` · `*.db`) + cập nhật khối `_archive\` (2 thư mục con) + ghi chú 4 thư mục rác đã rời gốc.
+3. **`CHAY-LAN.md`** (cập nhật 18/08 — lỗi thời nặng): viết lại đúng runtime — service `H2DEV_Service` chạy `node server.js` (KHÔNG `node --watch`) qua NSSM `SERVICE_AUTO_START` + hook auto-reload `h2dev-service-autoreload-hook.ps1` (kill switch `.cache/auto-reload-enabled`); sửa đường dẫn file vận hành sang `scripts\windows\`; ghi rõ bind `0.0.0.0:8899` + CORS `*` ⇒ PUBLIC.
+4. **Thư mục lạc** `H2DEV-Project\H2DEV-Project\_audit\20260912-full-136-audit` (rỗng) → dời `_archive/20260916-junk-cleanup/nested-H2DEV-Project-empty-audit`.
+
+### ✅ Kiểm chứng
+- `node scripts/validate-project.js` → **PASS** (136 · 165 · 45 · **152** · 136 · 136), **0 warning**.
+- Probe: `/` · `index.html` · `data-tabs/videos.json` → **200**; `_archive` · `_private` · `_backup` · `_audit` · `_frames` · `_internal` · `_drafts` · `raw-kenh-goc` → **403** (không lộ mới sau khi dời).
+- `git status` **clean** — các sửa vòng 1 đã được commit `f5e9ff1` gộp (giữ nguyên entry CHANGELOG "Đợt 6 điểm lệch").
+- `.env` trên đĩa **không bị git track** (chỉ `.env.example` × 3). Backup vòng 2: `_backup/20260916-docsync-cleanup/` (+`CHAY-LAN.md`).
+
+### ❓ Còn lại (nhỏ, cần anh quyết)
+- `data/_backup_desc_20260822_214012\` + `data/backups_20260822_000511\` (detritus cũ) — đang **404** (không lộ); có thể dời `_archive/` cho gọn.
+- `_archive/20260916-junk-cleanup/_internal/dot_git_backup\` (108 MB) — bản `.git` cũ; đã bị web chặn (403). Có thể xóa nếu anh chắc không cần (hiện giữ theo NO_DELETE).
+
 ## 2026-09-16 — Gỡ Hẳn Qoder AI Tracker Git Hooks + Chặn Tự Cài Lại
 
 ### 🎯 Vấn đề

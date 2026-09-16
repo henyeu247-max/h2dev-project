@@ -1,0 +1,79 @@
+{
+  "channelId": "UCA_r3_nfTtkj3sc44jOJZVA",
+  "rawId": "RAW-115",
+  "totalVideos": 5,
+  "extractedAt": "2026-09-16T18:02:00+07:00",
+  "extractionSource": "free_yt_engine.py RSS (top 10 by views) + watch page durations/tags - do that 16/09/2026",
+  "videos": [
+    {
+      "rank": 1,
+      "videoId": "_ZVE8CXc0Nw",
+      "url": "https://www.youtube.com/watch?v=_ZVE8CXc0Nw",
+      "title": "Inside a Joshua Tree Desert Home Built Around Music | House Tour",
+      "thumbnail": "https://i.ytimg.com/vi/_ZVE8CXc0Nw/maxresdefault.jpg",
+      "publishedAt": "2026-05-26T23:14:28+00:00",
+      "duration": "PT5M28S",
+      "durationSeconds": 328,
+      "views": 97156,
+      "vph": 36.0,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 2,
+      "videoId": "VrY2PpljwVg",
+      "url": "https://www.youtube.com/watch?v=VrY2PpljwVg",
+      "title": "Inside an 18,000 Sq Ft Los Angeles Estate That Doesn’t Feel Like LA | Studio Rob Diaz",
+      "thumbnail": "https://i.ytimg.com/vi/VrY2PpljwVg/maxresdefault.jpg",
+      "publishedAt": "2026-08-28T18:30:20+00:00",
+      "duration": "PT4M45S",
+      "durationSeconds": 285,
+      "views": 78584,
+      "vph": 175.2,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 3,
+      "videoId": "fHZgoLWiE5M",
+      "url": "https://www.youtube.com/watch?v=fHZgoLWiE5M",
+      "title": "Inside a Former Church Turned Family Home in Laguna Beach | House Tour",
+      "thumbnail": "https://i.ytimg.com/vi/fHZgoLWiE5M/maxresdefault.jpg",
+      "publishedAt": "2026-06-26T23:52:26+00:00",
+      "duration": "PT6M5S",
+      "durationSeconds": 365,
+      "views": 69628,
+      "vph": 35.6,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 4,
+      "videoId": "3eLgpzPRBGw",
+      "url": "https://www.youtube.com/watch?v=3eLgpzPRBGw",
+      "title": "Inside a Reimagined 1932 Cabin in Lake Arrowhead | House Tour",
+      "thumbnail": "https://i.ytimg.com/vi/3eLgpzPRBGw/maxresdefault.jpg",
+      "publishedAt": "2026-04-29T04:04:04+00:00",
+      "duration": "PT4M17S",
+      "durationSeconds": 257,
+      "views": 7203,
+      "vph": 2.1,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    },
+    {
+      "rank": 5,
+      "videoId": "jrMHx5W5CzI",
+      "url": "https://www.youtube.com/watch?v=jrMHx5W5CzI",
+      "title": "Quiet Moments Inside a Joshua Tree Home #house #architecture #interiordesign #cinematic #housetour",
+      "thumbnail": "https://i.ytimg.com/vi/jrMHx5W5CzI/maxresdefault.jpg",
+      "publishedAt": "2026-05-28T01:58:50+00:00",
+      "duration": "PT11S",
+      "durationSeconds": 11,
+      "views": 349,
+      "vph": 0.1,
+      "hasTranscript": false,
+      "transcriptSegmentsCount": 0
+    }
+  ]
+}

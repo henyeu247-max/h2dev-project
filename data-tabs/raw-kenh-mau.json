@@ -1,6 +1,6 @@
 {
  "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
- "updatedAt": "2026-09-16T11:27:24.000000+00:00",
+ "updatedAt": "2026-09-16T11:33:09.000000+00:00",
  "totalRecords": 124,
  "records": [
   {
@@ -278,7 +278,17 @@
     "latencySec": 4.16,
     "analyzedAt": "2026-09-15T22:26:58.960343+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@pekaboosongs",
+     "channelId": "UC229px7FeR-npXuYGZ6KavQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-002",
@@ -541,7 +551,25 @@
     "latencySec": 3.8,
     "analyzedAt": "2026-09-15T22:26:58.320727+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@TheHelpfulChristian",
+     "channelId": "UCIuYagTL7yRu90_-civ2gUQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83"
+    },
+    {
+     "handle": "@TheHelpfullChristian",
+     "channelId": "UCIuYagTL7yRu90_-civ2gUQ",
+     "firstSeenCommit": "dda7387",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:canonicalBaseUrl+channel-page",
+     "note": "Handle cu bi kenh \"Lucas Smith\" chiem sau khi kenh doi ten. Handle that xac minh qua canonicalBaseUrl (2 chu L).",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-003",
@@ -801,7 +829,17 @@
     "latencySec": 4.59,
     "analyzedAt": "2026-09-15T22:27:03.985045+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@NoFluffSleep",
+     "channelId": "UCQe4VedqhnbW6VaAcodgL5Q",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-004",
@@ -1059,7 +1097,17 @@
     "latencySec": 4.38,
     "analyzedAt": "2026-09-15T22:27:03.844162+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@NoFluff-History",
+     "channelId": "UCXNLRriBLvz0kYzb_5Uoh4w",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-005",
@@ -1317,7 +1365,17 @@
     "latencySec": 5.0,
     "analyzedAt": "2026-09-15T22:27:05.054746+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@NoFluffAcademy",
+     "channelId": "UC-W2U1IZzeGm863V3SLRkng",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-006",
@@ -1577,7 +1635,17 @@
     "latencySec": 5.74,
     "analyzedAt": "2026-09-15T22:27:06.386339+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@ArthurRevivesthePast",
+     "channelId": "UCJC35B558iY_ljm6RwRlkcg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-007",
@@ -1808,7 +1876,25 @@
     "latencySec": 3.78,
     "analyzedAt": "2026-09-15T22:27:02.539293+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@DanielPatel-f5u",
+     "channelId": "UCXZgWbXq80e7-xFGZebcWkA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83"
+    },
+    {
+     "handle": "@Simplify.Actually",
+     "channelId": "UCXZgWbXq80e7-xFGZebcWkA",
+     "firstSeenCommit": "dda7387",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:canonicalBaseUrl+channel-page",
+     "note": "Handle cu 404. Handle that @Simplify.Actually (co dau cham) xac minh qua canonicalBaseUrl.",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-008",
@@ -2037,7 +2123,17 @@
     "latencySec": 4.57,
     "analyzedAt": "2026-09-15T22:30:12.770942+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@RestoredTimeline",
+     "channelId": "UCaG2AYyPoVLBdfeLuQhEiVQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-009",
@@ -2267,7 +2363,17 @@
     "latencySec": 6.95,
     "analyzedAt": "2026-09-15T22:27:08.903189+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@シニアお困りごと相談室",
+     "channelId": "UCykepz8gqyCcsJx5xK06j7A",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-010",
@@ -2492,7 +2598,17 @@
     "latencySec": 4.16,
     "analyzedAt": "2026-09-15T22:27:03.212664+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@LandonsAnimationWheelhouse",
+     "channelId": "UC2WJrMmd_eNMqfWJbD_fq2A",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-011",
@@ -2722,7 +2838,17 @@
     "latencySec": 4.04,
     "analyzedAt": "2026-09-15T22:26:58.543695+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@DarkCrimesHistory",
+     "channelId": "UCIgV49QHsBxsLq93WyshvrQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-012",
@@ -2931,7 +3057,19 @@
     "latencySec": 3.13,
     "analyzedAt": "2026-09-15T22:30:10.168393+00:00",
     "source": "channel_screenshot"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HistoryEndures-68",
+     "channelId": "UCIl8_C_RxVmRDWz4UTm8aBQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16",
+     "note": "KENH DA BI YOUTUBE GO BO (16/09/2026) - alert chinh thuc \"vi pham Nguyen tac cong dong\". Handle giu nguyen lich su.",
+     "status": "TERMINATED_BY_YOUTUBE"
+    }
+   ]
   },
   {
    "id": "RAW-013",
@@ -3160,7 +3298,17 @@
     "latencySec": 4.62,
     "analyzedAt": "2026-09-15T22:27:04.051739+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@BackyardStoryUS",
+     "channelId": "UCW6sbhIAXUVY0p-AkYIJ95Q",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-014",
@@ -3389,7 +3537,17 @@
     "latencySec": 4.35,
     "analyzedAt": "2026-09-15T22:27:08.396369+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@CalmScienceToSleep",
+     "channelId": "UCUGv6JOgXVKbGYF57VYTagQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-015",
@@ -3619,7 +3777,17 @@
     "latencySec": 4.18,
     "analyzedAt": "2026-09-15T22:27:10.055597+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@VanishedBritainUK",
+     "channelId": "UClI2TFqsf0H-MVF8E6E8VQA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-016",
@@ -3849,7 +4017,17 @@
     "latencySec": 3.56,
     "analyzedAt": "2026-09-15T22:27:09.447140+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@slowlivingagricultureus",
+     "channelId": "UCYN7F6Bm_BDh1fMpYoTMh6w",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-017",
@@ -4079,7 +4257,17 @@
     "latencySec": 3.53,
     "analyzedAt": "2026-09-15T22:27:09.219897+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HistoryinPicturesENG",
+     "channelId": "UCQRqxRRdA8ZFsOSCpt3N22g",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-018",
@@ -4339,7 +4527,17 @@
     "latencySec": 4.75,
     "analyzedAt": "2026-09-15T22:27:15.701184+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@SinceWWII",
+     "channelId": "UCOEVhp-8IwehkUEKuS1kKqg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-019",
@@ -4568,7 +4766,17 @@
     "latencySec": 4.57,
     "analyzedAt": "2026-09-15T22:27:16.898057+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@wanko-saikoTV",
+     "channelId": "UCQDbA3kvui43jXoKKOti7qg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-020",
@@ -4828,7 +5036,17 @@
     "latencySec": 3.98,
     "analyzedAt": "2026-09-15T22:27:15.881569+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@official-yesterday",
+     "channelId": "UCE08yuKd8vfMhtC0YoUYBSw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-021",
@@ -5110,7 +5328,17 @@
     "latencySec": 5.58,
     "analyzedAt": "2026-09-15T22:27:18.985757+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HiddenPlanetDocs",
+     "channelId": "UCFi2OqSU0AZpTBT-zLldaIA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-022",
@@ -5370,7 +5598,17 @@
     "latencySec": 4.6,
     "analyzedAt": "2026-09-15T22:27:17.302664+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Blitzkrieg-channel",
+     "channelId": "UCPNro6-pzlC4koUqQB7r6uw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-023",
@@ -5627,7 +5865,17 @@
     "latencySec": 4.2,
     "analyzedAt": "2026-09-15T22:27:16.098085+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@LatentDiffusion",
+     "channelId": "UCsnUwRoQuUwefJypDf0TXGA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-024",
@@ -5885,7 +6133,17 @@
     "latencySec": 5.55,
     "analyzedAt": "2026-09-15T22:27:19.980581+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@aoinfinitoealem7567",
+     "channelId": "UCU0f13-rsOopO2w4MfQjobA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-025",
@@ -6145,7 +6403,17 @@
     "latencySec": 4.72,
     "analyzedAt": "2026-09-15T22:27:18.834346+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@game.mp4",
+     "channelId": "UCoiJkL70naHMQODWx3mL96g",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-028",
@@ -6374,7 +6642,17 @@
     "latencySec": 4.12,
     "analyzedAt": "2026-09-15T22:27:19.392911+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@WorkshopDecoded",
+     "channelId": "UCouXJsJ-pZycHkaxY9BZtGw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-029",
@@ -6650,7 +6928,17 @@
     "latencySec": 4.22,
     "analyzedAt": "2026-09-15T22:27:20.735741+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@MamaToonss",
+     "channelId": "UCl05bwdScd4QKlBEVEeaHFA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-030",
@@ -6880,7 +7168,17 @@
     "latencySec": 5.21,
     "analyzedAt": "2026-09-15T22:27:22.414842+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@GYMDECODED1",
+     "channelId": "UCzDR8vhKvR0rRVLjawiMCzw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-031",
@@ -7127,7 +7425,17 @@
     "latencySec": 5.31,
     "analyzedAt": "2026-09-15T22:27:23.196851+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@jotadrive",
+     "channelId": "UCPYrBmO_Sea2LwdB-PJQNlA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-032",
@@ -7357,7 +7665,17 @@
     "latencySec": 4.79,
     "analyzedAt": "2026-09-15T22:27:22.906258+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@GraceDailyEnglish",
+     "channelId": "UC9T6h_2S-m3ZPExAGP1ngZw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-033",
@@ -7567,7 +7885,17 @@
     "latencySec": 3.56,
     "analyzedAt": "2026-09-15T22:27:24.943753+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@tobikdh1",
+     "channelId": "UCGD6_MLzRViap_TiezJgNqg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-034",
@@ -7797,7 +8125,17 @@
     "latencySec": 3.74,
     "analyzedAt": "2026-09-15T22:27:26.552499+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@GraceEnglishLearning",
+     "channelId": "UC3XPGEItpBG7-LE8cyEDIsA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-035",
@@ -8027,7 +8365,17 @@
     "latencySec": 3.76,
     "analyzedAt": "2026-09-15T22:27:27.271810+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@PassionLearningLive",
+     "channelId": "UCG-PEaNv0Yf8QJ7_-A0wjFA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-037",
@@ -8257,7 +8605,17 @@
     "latencySec": 4.36,
     "analyzedAt": "2026-09-15T22:27:28.861197+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@FamilyLifeEnglish888",
+     "channelId": "UCzpEOOK3amHPa9GbbeR9DJw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-038",
@@ -8487,7 +8845,17 @@
     "latencySec": 4.14,
     "analyzedAt": "2026-09-15T22:27:28.929446+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HLGooDailyEnglish888",
+     "channelId": "UCWbg8M9NvmRjxXZHLYOlS2A",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-039",
@@ -8717,7 +9085,17 @@
     "latencySec": 4.52,
     "analyzedAt": "2026-09-15T22:27:31.748257+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@BeginnerEnglishZone123",
+     "channelId": "UC4khh7le-gwvPD9Wk7yRuXA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-040",
@@ -8948,7 +9326,17 @@
     "latencySec": 4.1,
     "analyzedAt": "2026-09-15T22:27:31.543594+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Amelia_DailyEnglish",
+     "channelId": "UCk6JBSdNlcLWM5ke6qAQxRQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-042",
@@ -9179,7 +9567,17 @@
     "latencySec": 4.14,
     "analyzedAt": "2026-09-15T22:27:31.817791+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@theorigin619",
+     "channelId": "UCW4-cm-BuvUjdEKdsGXX23w",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-043",
@@ -9411,7 +9809,17 @@
     "latencySec": 5.97,
     "analyzedAt": "2026-09-15T22:27:35.655428+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Shipped_YT",
+     "channelId": "UC0xt26AH9IJ1T86xp95Faug",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-044",
@@ -9641,7 +10049,17 @@
     "latencySec": 4.22,
     "analyzedAt": "2026-09-15T22:27:32.333469+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@crumb.lore-yt",
+     "channelId": "UC2zE6fEfmqrRSJiPy0xHkhQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-045",
@@ -9871,7 +10289,17 @@
     "latencySec": 4.47,
     "analyzedAt": "2026-09-15T22:30:12.587348+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Historybeneathofficial",
+     "channelId": "UCxD13Ho0URDlPQGIgbGd-WA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-046",
@@ -10100,7 +10528,17 @@
     "latencySec": 4.06,
     "analyzedAt": "2026-09-15T22:27:33.924865+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@WeirdwardBound",
+     "channelId": "UCuJxFxVuj4s_MmupOMmDqCQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-047",
@@ -10330,7 +10768,17 @@
     "latencySec": 3.36,
     "analyzedAt": "2026-09-15T22:27:33.780740+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@AppetiteForHistory",
+     "channelId": "UCqQ1WeGq5oQ2CQk9PQFSZSA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-048",
@@ -10560,7 +11008,17 @@
     "latencySec": 3.49,
     "analyzedAt": "2026-09-15T22:27:35.097942+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@kronoset.history",
+     "channelId": "UCFtmEceTl8O9QbxXz1e22Zg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-049",
@@ -10790,7 +11248,17 @@
     "latencySec": 3.84,
     "analyzedAt": "2026-09-15T22:27:37.324303+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@ゆっくり雑学ちゃんねるEX",
+     "channelId": "UCkCHJOXCXDpHsn3KkUQmUeg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-050",
@@ -11006,7 +11474,17 @@
     "latencySec": 4.66,
     "analyzedAt": "2026-09-15T22:27:39.656562+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@yamato2030byromifilm",
+     "channelId": "UCe2g4U6IBskkdy7MEQQfysw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-051",
@@ -11266,7 +11744,17 @@
     "latencySec": 3.69,
     "analyzedAt": "2026-09-15T22:27:39.270256+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@SimpleConceptsExplained",
+     "channelId": "UCwubHaBayvEQQdFHBOmGzEw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-052",
@@ -11524,7 +12012,17 @@
     "latencySec": 6.0,
     "analyzedAt": "2026-09-15T22:27:43.733221+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@PsychUnboxed",
+     "channelId": "UCjk5DufQcT_HPOmy0lziS2A",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-053",
@@ -11782,7 +12280,17 @@
     "latencySec": 3.89,
     "analyzedAt": "2026-09-15T22:27:42.737734+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@WorldsBeforeUsofficial",
+     "channelId": "UCXgYsaO70gBNGcmpGKnln1Q",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-054",
@@ -12041,7 +12549,17 @@
     "latencySec": 3.75,
     "analyzedAt": "2026-09-15T22:27:41.964141+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@OfficialBeyondTheBlue",
+     "channelId": "UCy6-V0dTuvNB_uFXpE5K5uQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-055",
@@ -12302,7 +12820,17 @@
     "latencySec": 3.89,
     "analyzedAt": "2026-09-15T22:27:42.450550+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@trueglobe66",
+     "channelId": "UCSoRPhBTtQ4ntgOj4RA_XqA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-056",
@@ -12563,7 +13091,17 @@
     "latencySec": 5.16,
     "analyzedAt": "2026-09-15T22:27:45.636225+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HappyTravel99",
+     "channelId": "UCBZcvRhTjwtAdycWFSCHMsg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-057",
@@ -12824,7 +13362,17 @@
     "latencySec": 4.26,
     "analyzedAt": "2026-09-15T22:27:45.136431+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@travpedia",
+     "channelId": "UCcyOI2xMEfK940Tgwzb2VHg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-058",
@@ -13083,7 +13631,17 @@
     "latencySec": 3.76,
     "analyzedAt": "2026-09-15T22:27:41.582335+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@BestTravel2",
+     "channelId": "UCfNOrLQ9LF7OAsN9b25uZZw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-059",
@@ -13321,7 +13879,17 @@
     "latencySec": 4.44,
     "analyzedAt": "2026-09-15T22:27:47.006269+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@ytAnimistry",
+     "channelId": "UCHkFXdREB7gUJ3_M4UN06lw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-060",
@@ -13552,7 +14120,17 @@
     "latencySec": 4.01,
     "analyzedAt": "2026-09-15T22:30:11.660221+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Jay_Hona",
+     "channelId": "UCxSn-rKHu1FUFxjHyY1nKmw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-062",
@@ -13783,7 +14361,17 @@
     "latencySec": 4.59,
     "analyzedAt": "2026-09-15T22:27:47.853521+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Theleme-confidential",
+     "channelId": "UCSVKj0YL9sSQWm8BCYEjVaQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-063",
@@ -14013,7 +14601,17 @@
     "latencySec": 4.41,
     "analyzedAt": "2026-09-15T22:27:49.309399+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@AnimatedMilitaryy",
+     "channelId": "UCFov2-ZJAm7rN-Teo2de9Hw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-064",
@@ -14242,7 +14840,17 @@
     "latencySec": 3.68,
     "analyzedAt": "2026-09-15T22:27:49.965908+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@brandreport1",
+     "channelId": "UCtZE_gP5J7nvmOzoNJSLS7A",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-065",
@@ -14501,7 +15109,17 @@
     "latencySec": 3.72,
     "analyzedAt": "2026-09-15T22:27:49.727275+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@PlebMagic",
+     "channelId": "UC7J-1S5paTyq-e9n4mROj3Q",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-066",
@@ -14730,7 +15348,17 @@
     "latencySec": 3.91,
     "analyzedAt": "2026-09-15T22:27:53.356504+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@noema-272",
+     "channelId": "UCC-z6M9BpxavGn-D1suMAbw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-067",
@@ -14958,7 +15586,17 @@
     "latencySec": 4.18,
     "analyzedAt": "2026-09-15T22:27:54.589375+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@greendudeexplains",
+     "channelId": "UCkXMKKYZlI209sxUxjxqxZA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-068",
@@ -15206,7 +15844,17 @@
     "latencySec": 4.02,
     "analyzedAt": "2026-09-15T22:27:53.891329+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@ThePhilosophyOfMarketing",
+     "channelId": "UCBZ_L7SDvjbosGBav4Z5PRw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-069",
@@ -15465,7 +16113,17 @@
     "latencySec": 4.93,
     "analyzedAt": "2026-09-15T22:27:56.357539+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@GodsPerspective10",
+     "channelId": "UC-V9-gFIrfWdCCNsocDWmRQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-070",
@@ -15695,7 +16353,17 @@
     "latencySec": 3.58,
     "analyzedAt": "2026-09-15T22:27:54.440795+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@RedoubtWarHistory",
+     "channelId": "UCZPEw8MjM8gHyymnubT66MA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-075",
@@ -15922,7 +16590,17 @@
     "latencySec": 4.32,
     "analyzedAt": "2026-09-15T22:27:57.400575+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@The_Regular_Recap",
+     "channelId": "UCymIvmFC2lzCVABsAr_Bu7w",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-076",
@@ -16162,7 +16840,17 @@
     "latencySec": 3.63,
     "analyzedAt": "2026-09-15T22:27:55.530443+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@unseentruecrime",
+     "channelId": "UCVtHlqfvXn-6m6A2IWUB8MQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-077",
@@ -16421,7 +17109,17 @@
     "latencySec": 3.67,
     "analyzedAt": "2026-09-15T22:27:56.635667+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@kurzgesagt",
+     "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-078",
@@ -16672,7 +17370,17 @@
     "latencySec": 4.74,
     "analyzedAt": "2026-09-15T22:27:59.867233+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@oldmoneyluxury",
+     "channelId": "UCk5M6DI3_uollQflghQB4lg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-079",
@@ -16928,7 +17636,17 @@
     "latencySec": 5.19,
     "analyzedAt": "2026-09-15T22:27:58.303849+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@JesseJokes",
+     "channelId": "UCnbhbfM1nGNag9HGTDbSPXA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-080",
@@ -17184,7 +17902,17 @@
     "latencySec": 4.35,
     "analyzedAt": "2026-09-15T22:27:58.012095+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@BenLionelScott",
+     "channelId": "UCgkKA7xEOoBQNpC5TJxPLiw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-081",
@@ -17445,7 +18173,17 @@
     "latencySec": 3.84,
     "analyzedAt": "2026-09-15T22:28:00.352407+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@unknownplanetdoc",
+     "channelId": "UCkjJyLxx36BJiXAOFaY_5EA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-082",
@@ -17704,7 +18442,17 @@
     "latencySec": 4.35,
     "analyzedAt": "2026-09-15T22:28:02.502451+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Carolina_Living",
+     "channelId": "UCqLpkuk64U82HW0s392MQaQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-083",
@@ -17963,7 +18711,17 @@
     "latencySec": 4.09,
     "analyzedAt": "2026-09-15T22:28:04.503738+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@tony99.studios",
+     "channelId": "UCxshRXQ6E15YnJcaY3v5u0w",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-084",
@@ -18193,7 +18951,17 @@
     "latencySec": 4.15,
     "analyzedAt": "2026-09-15T22:28:05.494522+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@PrometheushistoryOfficial",
+     "channelId": "UCrFLBmfail98wOmvtYs-xKQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-085",
@@ -18422,7 +19190,17 @@
     "latencySec": 3.85,
     "analyzedAt": "2026-09-15T22:28:06.861054+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@eigo2ch",
+     "channelId": "UCsxsWd7iftyrKJj_4uxEsgQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-086",
@@ -18652,7 +19430,17 @@
     "latencySec": 4.11,
     "analyzedAt": "2026-09-15T22:28:07.087383+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@magicalanimationsai",
+     "channelId": "UC1GCeaCZuyUoH8wcvukjt1Q",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-087",
@@ -18912,7 +19700,17 @@
     "latencySec": 4.18,
     "analyzedAt": "2026-09-15T22:28:07.243500+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HypotheticallyHQ",
+     "channelId": "UC0L9hD7HMwWU7xuU5HRA6Iw",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-088",
@@ -19168,7 +19966,17 @@
     "latencySec": 3.66,
     "analyzedAt": "2026-09-15T22:28:07.334362+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@NoVillainsAreSAFE",
+     "channelId": "UCNSyOUwDIn_PUfXSQQKDhHQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-089",
@@ -19429,7 +20237,25 @@
     "latencySec": 3.88,
     "analyzedAt": "2026-09-15T22:28:07.786176+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@xronikianomaly",
+     "channelId": "UCsq59qsJPbIgMbkcCjIKWkQ",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83"
+    },
+    {
+     "handle": "@xronikianomaliy",
+     "channelId": "UCsq59qsJPbIgMbkcCjIKWkQ",
+     "firstSeenCommit": "dda7387",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:canonicalBaseUrl+channel-page",
+     "note": "Handle cu 404. Handle that @xronikianomaliy (chi khac 1 chu i) xac minh qua canonicalBaseUrl. Luu y: cung handle voi RAW-127 (duplicate).",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-091",
@@ -19698,7 +20524,25 @@
     "latencySec": 3.68,
     "analyzedAt": "2026-09-15T22:28:08.701330+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Everydayexplained",
+     "channelId": "UCFeSzuYEw0Z1_AMvjMj2Ypg",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83"
+    },
+    {
+     "handle": "@Everydaexplained",
+     "channelId": "UCFeSzuYEw0Z1_AMvjMj2Ypg",
+     "firstSeenCommit": "dda7387",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:canonicalBaseUrl+channel-page",
+     "note": "Handle cu bi kenh 3 subs chiem. Handle that @Everydaexplained (thieu chu y) xac minh qua canonicalBaseUrl.",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-092",
@@ -19957,7 +20801,17 @@
     "latencySec": 3.89,
     "analyzedAt": "2026-09-15T22:28:09.126753+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@mrbyte-exp",
+     "channelId": "UCuUh2fJubMw3oE2EZRTem0Q",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-095",
@@ -20188,7 +21042,17 @@
     "latencySec": 4.63,
     "analyzedAt": "2026-09-15T22:28:10.953925+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@eonatlas",
+     "channelId": "UCw2zVY9OyV0pY4oqRzzDYxA",
+     "firstSeenCommit": "8309c66",
+     "firstSeenDate": "2026-09-11",
+     "source": "git:8309c66:init-83",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-096",
@@ -20296,7 +21160,17 @@
     "latencySec": 4.43,
     "analyzedAt": "2026-09-15T22:28:12.409836+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@ElViejoMexicano",
+     "channelId": "UCySIrYAsp3Y7FsE8f2bcz9w",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-097",
@@ -20404,7 +21278,17 @@
     "latencySec": 4.64,
     "analyzedAt": "2026-09-15T22:28:13.048213+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@AI_Historia-n5b",
+     "channelId": "UCovs4S2LrmPMUzSbtxzm3Sw",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-098",
@@ -20512,7 +21396,17 @@
     "latencySec": 4.1,
     "analyzedAt": "2026-09-15T22:28:13.501176+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@taninnojinsei",
+     "channelId": "UCvA0jwPl5qjhsHQOWuZYe-g",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-099",
@@ -20620,7 +21514,17 @@
     "latencySec": 5.05,
     "analyzedAt": "2026-09-15T22:28:17.675935+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@wordsofwisdomstories",
+     "channelId": "UC14aFPpH4jF3FfRQZojCfeg",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-100",
@@ -20728,7 +21632,17 @@
     "latencySec": 3.76,
     "analyzedAt": "2026-09-15T22:28:16.411542+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HiddenGenius44",
+     "channelId": "UCfNtnsd5fokdhruktR4Zn4w",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-101",
@@ -20835,7 +21749,17 @@
     "latencySec": 4.03,
     "analyzedAt": "2026-09-15T22:28:18.329198+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@SoloSurvival_91",
+     "channelId": "UCrMoEl093urDOa8AnyJSWWA",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-102",
@@ -20943,7 +21867,25 @@
     "latencySec": 3.44,
     "analyzedAt": "2026-09-15T22:30:11.057644+00:00",
     "source": "channel_screenshot"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@SurvivalStory",
+     "channelId": "UC4Lu5YL8jLV_WULVSl1ZS4w",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97"
+    },
+    {
+     "handle": "@SurvivaIStory",
+     "channelId": "UCgJKsFJy7mip3VpOEhj717g",
+     "firstSeenCommit": "dda7387",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:canonicalBaseUrl+channel-page",
+     "note": "Handle cu bi kenh Nga 3 subs chiem. Handle that @SurvivaIStory (I HOA thay l thuong) - kenh song 2820 subs, video moi nhat 15/09/2026.",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-103",
@@ -21051,7 +21993,17 @@
     "latencySec": 3.89,
     "analyzedAt": "2026-09-15T22:28:18.477591+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Foodcode1",
+     "channelId": "UCBkDZBfMUlQiasKTlg7bHPg",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-104",
@@ -21162,7 +22114,17 @@
     "analyzedAt": "2026-09-15T22:28:19.540813+00:00",
     "source": "rss_clean"
    },
-   "duplicateOf": "RAW-103"
+   "duplicateOf": "RAW-103",
+   "handleHistory": [
+    {
+     "handle": "@Foodcode1",
+     "channelId": "UCBkDZBfMUlQiasKTlg7bHPg",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-105",
@@ -21273,7 +22235,17 @@
     "analyzedAt": "2026-09-15T22:28:18.618135+00:00",
     "source": "rss_clean"
    },
-   "duplicateOf": "RAW-103"
+   "duplicateOf": "RAW-103",
+   "handleHistory": [
+    {
+     "handle": "@Foodcode1",
+     "channelId": "UCBkDZBfMUlQiasKTlg7bHPg",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-106",
@@ -21384,7 +22356,17 @@
     "analyzedAt": "2026-09-15T22:28:19.994386+00:00",
     "source": "rss_clean"
    },
-   "duplicateOf": "RAW-054"
+   "duplicateOf": "RAW-054",
+   "handleHistory": [
+    {
+     "handle": "@OfficialBeyondTheBlue",
+     "channelId": "UCy6-V0dTuvNB_uFXpE5K5uQ",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-107",
@@ -21495,7 +22477,17 @@
     "analyzedAt": "2026-09-15T22:28:19.005285+00:00",
     "source": "rss_clean"
    },
-   "duplicateOf": "RAW-054"
+   "duplicateOf": "RAW-054",
+   "handleHistory": [
+    {
+     "handle": "@OfficialBeyondTheBlue",
+     "channelId": "UCy6-V0dTuvNB_uFXpE5K5uQ",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-108",
@@ -21604,7 +22596,17 @@
     "latencySec": 4.2,
     "analyzedAt": "2026-09-15T22:28:21.595591+00:00",
     "source": "rss_clean"
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@ScaryInteresting",
+     "channelId": "UCNXvmGafmrtJ7VPSqjRRbwg",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-109",
@@ -21715,7 +22717,17 @@
     "analyzedAt": "2026-09-15T22:28:23.115409+00:00",
     "source": "rss_clean"
    },
-   "duplicateOf": "RAW-108"
+   "duplicateOf": "RAW-108",
+   "handleHistory": [
+    {
+     "handle": "@ScaryInteresting",
+     "channelId": "UCNXvmGafmrtJ7VPSqjRRbwg",
+     "firstSeenCommit": "6a1b759",
+     "firstSeenDate": "2026-09-13",
+     "source": "git:6a1b759:expand-97",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-110",
@@ -21831,7 +22843,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@wildline_YT",
+     "channelId": "UC1AtJIwlt9tI-Z-QKQJJ_Vw",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-111",
@@ -21947,7 +22969,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@GrainandGravity",
+     "channelId": "UCqrSZXBGR6kD4ZMx9WLSqig",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-112",
@@ -22062,7 +23094,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@dollypartonarchives",
+     "channelId": "UCgMh9v0dRVlsPKW3nNHkssg",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-113",
@@ -22177,7 +23219,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HouseHuntingWithBaptiste",
+     "channelId": "UCZU_hbEi29Z41_XTDYM5CJw",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-114",
@@ -22292,7 +23344,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@OverengineeredEN",
+     "channelId": "UCtrNrW5RTVzL7Tj07EExLKg",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-115",
@@ -22408,7 +23470,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@stayawhilefilms",
+     "channelId": "UCA_r3_nfTtkj3sc44jOJZVA",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-116",
@@ -22524,7 +23596,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@MoneyLifePOV",
+     "channelId": "UCCEwJbv7D1CYzxdKYYOH6AA",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-117",
@@ -22640,7 +23722,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@TheInvisibleNeighbors",
+     "channelId": "UChHGjAYhP5L4rDs4Sh-H1Lw",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-118",
@@ -22757,7 +23849,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@TuckerWes",
+     "channelId": "UCH5muwkuaCG6wBUoEWgUKBg",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-119",
@@ -22873,7 +23975,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Calvinstorieschori",
+     "channelId": "UCUlptKo9d3URdHgR1Q8eSDA",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-120",
@@ -22989,7 +24101,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Earthcraft-i7c",
+     "channelId": "UCVitdltnfZt4ZoN0zrZdVdg",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-121",
@@ -23102,7 +24224,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@mythrafilms",
+     "channelId": "UCQnhXRLVlz161PmIuqA9e4A",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-122",
@@ -23218,7 +24350,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@FactoryRebornvn",
+     "channelId": "UCv2NylMXh-hTWVoRli_YqtQ",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-123",
@@ -23334,7 +24476,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@AISeeHistory",
+     "channelId": "UCMXRatGWKHnDNF97wNho14g",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-124",
@@ -23450,7 +24602,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@RelatosdeEterya",
+     "channelId": "UCt7J_BNEiy2qJzKqZXAGvig",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-125",
@@ -23566,7 +24728,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@DeepHorizon-1991",
+     "channelId": "UCt_8GB_0yVB_kFLLLVd_0hQ",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-126",
@@ -23682,7 +24854,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@ScienceSun-b4r",
+     "channelId": "UCqZpuhhJC5G4kfvBG7MTAXg",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-127",
@@ -23797,7 +24979,17 @@
     "topVideosCount": 0,
     "tagsCount": 0,
     "transcriptsCount": 0
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@xronikianomaliy",
+     "channelId": "UCsq59qsJPbIgMbkcCjIKWkQ",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-128",
@@ -23913,7 +25105,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@MysteriesoftheUniverse00",
+     "channelId": "UC4zkQ8oGJR65JOjO2K9cB1A",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-129",
@@ -24029,7 +25231,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@Past_Seven",
+     "channelId": "UCdiDTKQmXEC9iTTUTO06EHQ",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-130",
@@ -24144,7 +25356,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@그림자노트-000",
+     "channelId": "UCtwNpW2EBBKUkQhmX2pW4AQ",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-131",
@@ -24259,7 +25481,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@ДокументальныйСборник-н3м",
+     "channelId": "UCHKiTFete80LTEJ3oOSff5g",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-132",
@@ -24375,7 +25607,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@DeEntoncesahoyDocumental",
+     "channelId": "UC7CSSLTIe_lUa-zAPOSV--A",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-133",
@@ -24491,7 +25733,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@HistoriaVivaSP",
+     "channelId": "UCjTocbwWyVtbywcJlt1EUxw",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-134",
@@ -24607,7 +25859,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@weonearth_us",
+     "channelId": "UCoMCQVuCK1wLUpM9Nfetb9Q",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-135",
@@ -24723,7 +25985,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@세계경제이야기",
+     "channelId": "UCfOhunfxnhP8H5bkNIXcg8g",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   },
   {
    "id": "RAW-136",
@@ -24839,7 +26111,17 @@
     "transcriptsCount": 0,
     "longevityStatus": null,
     "channelAgeDays": null
-   }
+   },
+   "handleHistory": [
+    {
+     "handle": "@TheWealthScrolls_Official",
+     "channelId": "UCxc4r2rCJjK-tnzfVW8CxiQ",
+     "firstSeenCommit": "a76e99e",
+     "firstSeenDate": "2026-09-16",
+     "source": "git:a76e99e:expand-124",
+     "verifiedAt": "2026-09-16"
+    }
+   ]
   }
  ],
  "summary": {

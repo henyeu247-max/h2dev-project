@@ -1,0 +1,22 @@
+{
+  "id": "RAW-108",
+  "channelId": "UCNXvmGafmrtJ7VPSqjRRbwg",
+  "title": "Scary Interesting",
+  "handle": "@ScaryInteresting",
+  "url": "https://www.youtube.com/@ScaryInteresting",
+  "subscribers": 2029999,
+  "views": null,
+  "videoCount": 303,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/bfoIfzmEtXlobDQ3Qy5ak5_OQjf8Xvq1FbGBHXRu5gk4eZ6UMd0ytqUk4S4dpLKppACf3pil5A=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T16:24:27+07:00",
+  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+  "dataGaps": [
+    "views (tong luot xem kenh): chua do duoc do khong co API - de null trung thuc",
+    "country: khong co trong HTML hien tai - de null trung thuc",
+    "longevityAudit/growth30d: chua do - can do dot 2",
+    "transcripts: chua extract - top video chi co metadata"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
+}

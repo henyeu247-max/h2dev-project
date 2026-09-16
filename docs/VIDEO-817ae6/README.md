@@ -35,7 +35,7 @@
   - `01:34` — mọi người like, đăng ký đi
   - `02:22` — Nên là cái thâm thì cũng rất là quan trọng nha mọi người
   - `03:24` — Đây là kênh thị trường Nhật
-  - `04:10` — B 5 ng g l k n l view r cao lu n K n nha m ng V em b v m ph bi ch…
+  - `04:10` — Thấy show này thì mọi người thấy không Các bạn có thể thấy, bắt đầu 5 ngày gần đây là kênh nó lên view rất ca…
 
 ## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
 > kênh 1 kênh 2

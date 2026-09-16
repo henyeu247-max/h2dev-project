@@ -1,3 +1,35 @@
+## 2026-09-17 — Hoàn Tất Quét Sạch Bản Quyền Kho Nhạc Nền 38 Tracks Qua Gemini Multimodal
+
+### 🎯 Mục tiêu
+User yêu cầu quét toàn bộ 21 track còn lại trong kho `Nhạc nền/` bằng Gemini Audio Intelligence Engine, bóc tách chính xác rủi ro bản quyền (Copyright Risk) và cập nhật đồng bộ vào `data/music_catalog.json` cùng cẩm nang tra cứu.
+
+### 🛠️ Can thiệp kỹ thuật & Kết quả Audit
+1. **Hoàn tất Audit N/N 100% (21/21 tracks)**:
+   - 🔴 **4 bài Bản quyền nặng (COPYRIGHTED - Cấm đưa vào video kiếm tiền YPP)**:
+     + `nên.mp3` (24 phút): **River Flows in You — Yiruma** (Bản quyền quốc tế).
+     + `Tiên tri 1.mp3`: **Cô Đơn Trên Sofa — Tăng Duy Tân & Hồ Ngọc Hà** (Lofi vocalize).
+     + `Tiên tri 2.mp3`: Epic Dark Ambient Trailer Score thương mại.
+     + `Tiên Tri 8.mp3`: Nhạc giao hưởng Epic Orchestral thương mại.
+   - 🟢 **25 bài An toàn tuyệt đối (SAFE YPP - Khuyên dùng số 1)**:
+     + 8 track ambient/lofi/piano độc quyền (`Lịch sử 1`, `Velvet Annex`, `SK1`, `SK4`, `SK5`, `SK6`, `Tiên Tri 5`, `Tiên Tri 6`).
+     + 17 track cinematic chuẩn YouTube Audio Library trong thư mục `Music tiên tri/`.
+   - 🟡 **9 bài Cần thận trọng (REVIEW)**:
+     + Nhạc kịch tính, dân tộc, trailer (`Lịch sử 3, 4, 5, 6`, `SK2, 3`, `Tiên Tri 3, 4, 7`), chỉ dùng đệm nhỏ dưới giọng đọc (-28 dB to -32 dB).
+2. **Cập nhật dữ liệu & Cẩm nang**:
+   - `data/music_catalog.json`: Bổ sung `copyrightRisk`, `safeForYPP` (false với bài COPYRIGHTED), `genreStyle`, `mood`, `leadInstruments`, `recommendedNiches`, `editingPlacement`.
+   - `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`: Cẩm nang tra cứu hiển thị trực tiếp trên Web UI.
+   - `docs/NOI-BO/nguon/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`: Cẩm nang nội bộ.
+3. **Kỷ luật Dọn dẹp rác (Ephemeral Cleanup)**:
+   - Xóa ngay script batch tạm `scripts/batch_audit_music.js` và file cache tạm `data/music_analysis_cache.json`.
+
+### ✅ Kiểm chứng
+- `validate-project.js` PASS 100% (136/165/45/153/136/136).
+- `sync-counts.js --check` PASS 100%.
+- Master SQLite DB build PASS 100% (153 docs, 2004 FTS5 index).
+
+---
+
+
 ## 2026-09-17 — Chuẩn Hóa Kho Nhạc Nền 38 Tracks Theo Ngách & Xóa File Nén 250 MB
 
 ### 🎯 Bối cảnh

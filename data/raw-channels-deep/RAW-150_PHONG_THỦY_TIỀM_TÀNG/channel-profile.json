@@ -1,0 +1,20 @@
+{
+  "id": "RAW-150",
+  "channelId": "UCANf_IBYgP8SIJIowmfyhwA",
+  "title": "PHONG THỦY TIỀM TÀNG",
+  "handle": "@PHONGTHUYTIEMTANG",
+  "url": "https://www.youtube.com/@PHONGTHUYTIEMTANG",
+  "subscribers": 15800,
+  "views": 1539971,
+  "videoCount": 48,
+  "country": null,
+  "avatar": "https://yt3.googleusercontent.com/yHzIBHYaKpu2gwNWMuMXo0fw0SK4WhuN90nfQtmzjocvUwgrVXSuedN69c_8LPQdMi_Q9m_aIg=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T20:49:32+07:00",
+  "extractionSource": "free_yt_engine + /about - extract 16/09/2026 (bo sung kenh mau thieu cho 8 ngach)",
+  "dataGaps": [
+    "country: null trung thuc",
+    "transcripts: chua extract"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
+}

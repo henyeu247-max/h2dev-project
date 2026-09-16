@@ -1,0 +1,38 @@
+{
+  "id": "RAW-152",
+  "channelId": "UCoEvqxj4MXmG71XAbWyAkWQ",
+  "title": "ほのぼのラジオ",
+  "handle": "@ほのぼのラジオ1",
+  "url": "https://www.youtube.com/@ほのぼのラジオ1",
+  "subscribers": 90000,
+  "views": 23622359,
+  "videoCount": 74,
+  "country": null,
+  "avatar": "",
+  "extractedAt": "2026-09-16T20:49:32+07:00",
+  "extractionSource": "free_yt_engine + /about - extract 16/09/2026 (bo sung kenh mau thieu cho 8 ngach)",
+  "dataGaps": [
+    "country: null trung thuc",
+    "transcripts: chua extract"
+  ],
+  "topTagsSample": [
+    "アンチエイジング",
+    "オーディオブック",
+    "シニア健康",
+    "人生の知恵",
+    "健康な老後",
+    "健康のヒント",
+    "健康の秘訣",
+    "健康情報",
+    "健康管理",
+    "健康管理法",
+    "活力ある老後",
+    "生活のヒント",
+    "百歳の健康",
+    "老人の健康",
+    "老後の健康",
+    "長寿の秘訣",
+    "高齢期の健康"
+  ],
+  "topTagsCount": 17
+}

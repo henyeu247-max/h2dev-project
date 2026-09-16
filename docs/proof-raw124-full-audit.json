@@ -1,16 +1,16 @@
 {
   "base": "http://127.0.0.1:8899",
-  "startedAt": "2026-09-16T12:17:42.944Z",
+  "startedAt": "2026-09-16T13:51:38.083Z",
   "checks": [
     {
       "name": "Raw Channels Cards Count",
       "pass": true,
-      "detail": "Expected 130, got 130"
+      "detail": "Expected 147, got 147"
     },
     {
-      "name": "All 130 Images Return HTTP 200",
+      "name": "All 147 Images Return HTTP 200",
       "pass": true,
-      "detail": "Loaded: 130/130, Broken: 0"
+      "detail": "Loaded: 147/147, Broken: 0"
     },
     {
       "name": "New Channel RAW-110 Visible in DOM",
@@ -75,7 +75,7 @@
   ],
   "consoleErrors": [],
   "failedRequests": [],
-  "finishedAt": "2026-09-16T12:17:46.459Z",
+  "finishedAt": "2026-09-16T13:51:42.043Z",
   "passCount": 14,
   "totalChecks": 14
 }

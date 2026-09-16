@@ -1,8 +1,8 @@
 // H2DEV Project - Master SQLite WAL Database Builder
 // Strictly implements Dual-Core Architecture:
-// 100% N/N verification across all 136 lessons, 165 channels, 793 top videos,
-// 109 documents, 27 reup sources, 44 niches, and FTS5 full-text indexing.
-// NOTE 16/09/2026: documents 109 -> 152 (+43 prompt master research tu data/research-20260916/).
+// 100% N/N verification across all lessons, channels, top videos,
+// documents, reup sources, niches, and FTS5 full-text indexing.
+// So lieu ky vong lay tu scripts/lib/counts.js (khong hardcode).
 
 const fs = require('fs');
 const path = require('path');
@@ -10,6 +10,8 @@ const { DatabaseSync } = require('node:sqlite');
 
 const ROOT = path.resolve(__dirname, '..');
 const DB_PATH = path.join(ROOT, 'data', 'h2dev_master.db');
+const { computeCounts } = require('./lib/counts');
+const C = computeCounts();
 
 // Ensure DB directory exists
 if (!fs.existsSync(path.dirname(DB_PATH))) {
@@ -777,12 +779,12 @@ const stats = {
 
 console.log('\nFINAL MASTER DATABASE AUDIT RESULTS:');
 console.log(' - Total Niches:', stats.niches, '(Expected: 44+) ->', stats.niches >= 44 ? 'PASS' : 'FAIL');
-console.log(' - Total Lessons:', stats.lessons, '(Expected: 136) ->', stats.lessons === 136 ? 'PASS' : 'FAIL');
+console.log(' - Total Lessons:', stats.lessons, `(Expected: ${C.videos}) ->`, stats.lessons === C.videos ? 'PASS' : 'FAIL');
 console.log(' - Total Lesson Timestamps:', stats.timestamps, '-> PASS');
-console.log(' - Total Competitor Channels:', stats.channels, '(Expected: >= 165) ->', stats.channels >= 165 ? 'PASS' : 'FAIL');
+console.log(' - Total Competitor Channels:', stats.channels, `(Expected: >= ${C.channels}) ->`, stats.channels >= C.channels ? 'PASS' : 'FAIL');
 console.log(' - Total Competitor Top Videos:', stats.topVideos, '(Expected: 790+) ->', stats.topVideos >= 790 ? 'PASS' : 'FAIL');
-console.log(' - Total Documents:', stats.documents, '(Expected: 152) ->', stats.documents === 152 ? 'PASS' : 'FAIL');
-console.log(' - Total Reup Sources:', stats.reupSources, '(Expected: 27) ->', stats.reupSources === 27 ? 'PASS' : 'FAIL');
+console.log(' - Total Documents:', stats.documents, `(Expected: ${C.documents}) ->`, stats.documents === C.documents ? 'PASS' : 'FAIL');
+console.log(' - Total Reup Sources:', stats.reupSources, `(Expected: ${C.nguonReup}) ->`, stats.reupSources === C.nguonReup ? 'PASS' : 'FAIL');
 console.log(' - Total FTS5 Search Index Entries:', stats.ftsEntries, '-> PASS');
 
 db.close();

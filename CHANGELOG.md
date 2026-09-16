@@ -1,3 +1,45 @@
+## 2026-09-17 — Nguồn Số Duy Nhất (Single Source of Count Truth) — Dứt Điểm Bệnh Hardcode Số
+
+### 🎯 Bối cảnh
+Anh chỉ ra gốc rễ: số liệu (136/152/165/156...) bị **hardcode rải rác ~90+ chỗ** (validate-project.js, build_master_db.js, sync_db_to_tabs.js, master_dal.js, AGENTS.md, TREE.md, 00_README.md, MEMORY.md, memory...). Sửa 1 chỗ (vd thêm 1 video) → hàng loạt chỗ lệch → "chỗ sai chỗ đúng", lặp vô hạn.
+
+### 🛠️ Can thiệp kỹ thuật (Hướng B — 1 nguồn số duy nhất)
+1. **`scripts/lib/counts.js`** (mới) — nguồn chân lý: đọc trực tiếp `data-tabs/*.json` + `data/catalog*.json`, tính TOÀN BỘ số (videos/videoLessons/zoomSessions/documents/channels/liveChannels/deadChannels/canonicalRaw/canonicalRawUniqueChannels/kichBan/nguonReup/niches/nichesGreenTrue). KHÔNG hardcode số nào.
+2. **`data/counts-manifest.json`** (mới) — bản chốt số liệu, commit git để review.
+3. **`scripts/sync-counts.js`** (mới) — 3 chế độ: ghi manifest + tự cập nhật docs (`AGENTS.md`/`TREE.md`/`00_README.md` qua 27 rule neo ngữ cảnh) + memory (chỉ trong block `AUTO-COUNTS`, không đụng log lịch sử); `--check` báo drift (exit 1); `--docs-only` chỉ sửa docs.
+4. **`scripts/validate-project.js`** — bỏ 6 hằng hardcode (`EXPECTED_VIDEOS`...), đọc từ manifest + **guard drift** so data live vs manifest (phát hiện data đổi mà chưa sync).
+5. **`scripts/sync_db_to_tabs.js`** + **`scripts/build_master_db.js`** + **`scripts/master_dal.js`** — đọc `C.videos/C.documents/C.channels/C.nguonReup` thay vì số cứng (136/109/165/27).
+6. **`package.json`** — thêm `npm run counts` + `npm run counts:check`.
+7. **`AGENTS.md`** — thêm mục "NGUỒN SỐ DUY NHẤT" hướng dẫn dùng.
+
+**Giữ nguyên số lịch sử:** `scripts/migration/legacy-proposal.cjs` (snapshot A5 có `asOf` + test khóa cứng) — KHÔNG đụng.
+
+### ✅ Kiểm chứng (đo thật)
+- `node scripts/sync-counts.js` → ghi manifest; lần 2 **idempotent 0 thay đổi**.
+- `node scripts/sync-counts.js --check` → `OK — data live, manifest, docs, memory dong bo 100%` (exit 0).
+- `node scripts/validate-project.js` → **PASS** (136 · 165 · 45 · 152 · 136 · 136).
+- **Test guard drift:** thêm 1 video tạm → validate **FAIL 3 lỗi** + `--check` báo lệch → khôi phục → PASS lại.
+- 27/27 rule sync khớp 100% (test tự động, 0 MISS).
+- Backup: `_backup/20260917-counts-single-source/` (11 file gốc).
+
+### ❓ Ghi chú
+- Memory `projects.md` còn số cũ (127/103/109) — nằm trong log lịch sử, không tự rewrite (đúng chuẩn memory); số chuẩn nay ở block `AUTO-COUNTS` trong `MEMORY.md`.
+- Từ nay thêm/xoá video/kênh/tài liệu: chỉ sửa data → chạy `node scripts/sync-counts.js` → cả dự án tự khớp.
+
+### ➕ Mở rộng (cùng phiên)
+- Thêm rule sync cho **`knowledge-hub/docs/MEMORY.md`** (dòng "learning records" hiện hành — KHÔNG đụng snapshot lịch sử 21/08 "- 129 video · 161 kênh") + **`index.html`** (banner "Bản đồ 34 ngách"). Tổng rule: **30** (trước 27).
+- Test tự động xác nhận rule hoạt động (đổi counts giả → đúng số dòng đổi, snapshot lịch sử không bị chạm).
+
+### 🔎 Xác nhận claim `status` (điều tra)
+- `data-tabs/videos.json`: **136/136 thiếu field `status`** (không có `status`, `visual_audio_checked`).
+- `validate-project.js` **KHÔNG** check field `status` của video → thiếu field không gây fail.
+- UI (`index.html`) **KHÔNG** đọc `video.status` → không có tính năng nào phụ thuộc.
+- Cờ nghiệm thu thật nằm ở **`data/video_insights.json`**: 136 entry, `visual_audio_checked` true **34** / false **102**; `player.html:514` dùng cờ này ẩn/hiện cảnh báo "legacy insight".
+- **Kết luận:** "thiếu `status` 136/136" là **đúng sự thật** nhưng **không phải lỗi đang hoạt động** — không code nào đọc nó. Chỉ là field tùy chọn cho tương lai.
+
+---
+
+
 ## 2026-09-16 — Vòng 3: Dọn data Detritus + Audit Chất Lượng 136 Transcript (Phát Hiện Lỗi Integrity Ẩn)
 
 ### 🎯 Bối cảnh

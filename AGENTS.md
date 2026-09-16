@@ -65,6 +65,8 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 
 > ⚠️ `xanh` là field **đa kiểu** (boolean + string). Đếm `xanh:true` phải dùng `is True`, KHÔNG dùng truthy — chuỗi `"CHƯA ĐỦ BẰNG CHỨNG"` cũng truthy → đếm sai thành 34.
 
+> 🔢 **NGUỒN SỐ DUY NHẤT (từ 17/09/2026):** Số liệu trong bảng trên KHÔNG hardcode. Chúng được sinh từ `scripts/lib/counts.js` (đọc trực tiếp `data-tabs/*.json`) → chốt vào `data/counts-manifest.json` → tự ghi vào `AGENTS.md`/`TREE.md`/`00_README.md`/memory. Khi data đổi (thêm video/kênh/tài liệu), chạy **`node scripts/sync-counts.js`** để cập nhật đồng loạt; kiểm tra lệch bằng **`node scripts/sync-counts.js --check`** (cũng chạy tự động trong `validate-project.js`). KHÔNG sửa tay các con số này.
+
 ## Chuẩn phụ đề (transcript) — chuẩn hoá 12/09/2026
 
 - **Nguồn chân lý:** `video/<SKU>/transcript.json` — mỗi segment gồm `id, start, end, start_time, end_time, text`.

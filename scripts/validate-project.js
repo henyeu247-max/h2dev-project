@@ -55,12 +55,30 @@ const catalogSkus = uniqueSkus(catalog, 'catalog.json');
 const fullSkus = uniqueSkus(catalogFull, 'catalog_full.json');
 const videoSkus = uniqueSkus(videos, 'videos.json');
 
-const EXPECTED_VIDEOS = 136;
-const EXPECTED_DOCUMENTS = 152;
-const EXPECTED_CHANNELS = 165;
-const EXPECTED_LIVE_CHANNELS = 152;
-const EXPECTED_DEAD_CHANNELS = 13;
-const EXPECTED_CANONICAL_RAW = 156;
+// Nguon so lieu chuan: data/counts-manifest.json (ban chot, commit git).
+// Sinh/cap nhat bang: node scripts/sync-counts.js
+// validate so SANH manifest (ky vong) voi data live -> phat hien drift.
+const countsManifest = readJson('data/counts-manifest.json') || {};
+const C = countsManifest.counts || {};
+const { computeCounts } = require('./lib/counts');
+const liveCounts = computeCounts();
+
+// Guard drift: neu data live khac manifest => can chay sync-counts.js.
+for (const key of Object.keys(C)) {
+  if (liveCounts[key] !== C[key]) {
+    errors.push(`counts drift: ${key} live=${liveCounts[key]} manifest=${C[key]} — chay: node scripts/sync-counts.js`);
+  }
+}
+
+const EXPECTED_VIDEOS = C.videos;
+const EXPECTED_DOCUMENTS = C.documents;
+const EXPECTED_CHANNELS = C.channels;
+const EXPECTED_LIVE_CHANNELS = C.liveChannels;
+const EXPECTED_DEAD_CHANNELS = C.deadChannels;
+const EXPECTED_CANONICAL_RAW = C.canonicalRaw;
+if (EXPECTED_VIDEOS === undefined) {
+  errors.push('data/counts-manifest.json thieu so lieu — chay: node scripts/sync-counts.js');
+}
 if (catalog.length !== EXPECTED_VIDEOS || catalogFull.length !== EXPECTED_VIDEOS || videos.length !== EXPECTED_VIDEOS) {
   errors.push(`Expected ${EXPECTED_VIDEOS} video records; got catalog=${catalog.length}, full=${catalogFull.length}, tabs=${videos.length}`);
 }
@@ -100,7 +118,7 @@ const thumbs = fs.existsSync(path.join(ROOT, 'assets', 'thumbs'))
 if (videoDirs.length !== EXPECTED_VIDEOS) warnings.push(`video directory count is ${videoDirs.length}, expected ${EXPECTED_VIDEOS}`);
 if (thumbs.length !== EXPECTED_VIDEOS) warnings.push(`thumbnail count is ${thumbs.length}, expected ${EXPECTED_VIDEOS}`);
 if (channels.length !== EXPECTED_CHANNELS) errors.push(`Expected ${EXPECTED_CHANNELS} channel records; got ${channels.length}`);
-if (scripts.length !== 45) warnings.push(`legacy kich-ban.json records are ${scripts.length}, expected 45 local-file extract`);
+if (scripts.length !== C.kichBan) warnings.push(`legacy kich-ban.json records are ${scripts.length}, expected ${C.kichBan} local-file extract`);
 if (docsMerged.length !== EXPECTED_DOCUMENTS) errors.push(`Expected ${EXPECTED_DOCUMENTS} live document records; got ${docsMerged.length}`);
 
 const deadChannels = channels.filter(channel => channel && channel.dead === true).length;
@@ -170,8 +188,9 @@ for (const [field, expected] of Object.entries(liveScope)) {
 // historical snapshots opt-in so stale current counts cannot silently return.
 for (const [index, meta] of array(ngachXanh.ngachMetaKho).entries()) {
   const evidence = typeof meta?.evidence === 'string' ? meta.evidence : '';
-  if (/(?:^|\/)\d+\s+video\b/i.test(evidence) && !/\/136\s+video\b/i.test(evidence) && meta?.historicalSnapshot !== true) {
-    errors.push(`data-tabs/ngach-xanh.json: ngachMetaKho[${index}].evidence must use current /136 video denominator`);
+  const videoDenom = new RegExp(`/${EXPECTED_VIDEOS}\\s+video\\b`, 'i');
+  if (/(?:^|\/)\d+\s+video\b/i.test(evidence) && !videoDenom.test(evidence) && meta?.historicalSnapshot !== true) {
+    errors.push(`data-tabs/ngach-xanh.json: ngachMetaKho[${index}].evidence must use current /${EXPECTED_VIDEOS} video denominator`);
   }
 }
 

@@ -1,7 +1,7 @@
 {
  "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
- "updatedAt": "2026-09-16T13:51:17.000000+00:00",
- "totalRecords": 147,
+ "updatedAt": "2026-09-16T13:55:30.000000+00:00",
+ "totalRecords": 153,
  "records": [
   {
    "id": "RAW-001",
@@ -29679,6 +29679,498 @@
    "channelLifecycle": {
     "state": "ACTIVE",
     "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-160",
+   "fileName": null,
+   "channel": {
+    "channelId": "UC7ZQ31YmPBPvFC0YIyTtk8Q",
+    "title": "야담을 빚다",
+    "handle": null,
+    "url": "https://www.youtube.com/channel/UC7ZQ31YmPBPvFC0YIyTtk8Q",
+    "subscribers": 23400,
+    "views": 3652191,
+    "videoCount": 74,
+    "country": "KR",
+    "avatar": ""
+   },
+   "niche": "Drama / Stories",
+   "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
+   "visionAnalysis": {
+    "channelName": "야담을 빚다",
+    "videoTitles": [
+     "파리만 날리던 주막에 굴러든 열두 살 꼬마, 거지인 줄 알았던 노인이 국밥 한 그릇을 안고 우는데... | 야담 | 옛날이야기 | 민담 | 수면동화 | 오디오북",
+     "하룻밤 새 마른 논에 물고기 예순 마리, 서로 제 것이라 우기는 두 농부와 천재 꼬마 사또 | 야담 | 옛날이야기 | 민담 | 수면동화 | 오디오북",
+     "만석꾼이 며느리 셋에게 한 냥씩 주고 시험하자, 꼬마 며느리가 모두를 놀라게 하는데... | 야담 | 옛날이야기 | 민담 | 수면동화 | 오디오북"
+    ],
+    "mainTopic": "Kenh mau ngach Drama/야담 Han - ke chuyen dan gian/lich su",
+    "suggestedNiche": "Drama / 야담 Hàn",
+    "language": "KO"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; tim qua YouTube search + do live 16/09/2026",
+   "audioLanguageInfo": {
+    "language": "Tiếng Hàn (Korean)",
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "dialect": "Standard Korean (Yadam storytelling)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-11",
+    "daysSinceLatest": 5,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (5 ngày trước)",
+    "healthDetail": "Xuat ban 74 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:55:30+07:00",
+    "source": "free_yt_engine - 16/09/2026 (tim kenh mau ngach thieu qua search)",
+    "folderName": "RAW-160_야담을_빚다",
+    "dossierPath": "data/raw-channels-deep/RAW-160_야담을_빚다",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 23400,
+    "videoCountLive": 74,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "",
+     "channelId": "UC7ZQ31YmPBPvFC0YIyTtk8Q",
+     "firstSeenCommit": "WORKTREE-16/09-EVENING",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:search-found",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-161",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCKDbQhyRAqToDLBbrw1uU3w",
+    "title": "주막 야담",
+    "handle": null,
+    "url": "https://www.youtube.com/channel/UCKDbQhyRAqToDLBbrw1uU3w",
+    "subscribers": 20200,
+    "views": 2299335,
+    "videoCount": 52,
+    "country": "KR",
+    "avatar": ""
+   },
+   "niche": "Drama / Stories",
+   "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
+   "visionAnalysis": {
+    "channelName": "주막 야담",
+    "videoTitles": [
+     "&quot;어르신! 지금입니다! 어서 바지를 내리십시오!&quot; 귀양 간 좌의정과유배지에서 만난 천재소년  |야담|만담 |전설|옛날이야기|오디오북|수면동화|민담",
+     "산적소굴에 들어간 며느리 외 4편 /중간 광고 없는 6시간 연속 옛날이야기,잘때 듣는 이야기,오디오북,민담,설화,창작,전설",
+     "천재 거지 소년과 비밀결사대 외 4편 /중간 광고 없는 6시간 연속 옛날이야기,잘때 듣는 이야기,오디오북,민담,설화,창작,전설"
+    ],
+    "mainTopic": "Kenh mau ngach Drama/야담 Han - ke chuyen dan gian/lich su",
+    "suggestedNiche": "Drama / 야담 Hàn",
+    "language": "KO"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; tim qua YouTube search + do live 16/09/2026",
+   "audioLanguageInfo": {
+    "language": "Tiếng Hàn (Korean)",
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "dialect": "Standard Korean (Yadam storytelling)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-08-17",
+    "daysSinceLatest": 30,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (30 ngày trước)",
+    "healthDetail": "Xuat ban 52 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:55:30+07:00",
+    "source": "free_yt_engine - 16/09/2026 (tim kenh mau ngach thieu qua search)",
+    "folderName": "RAW-161_주막_야담",
+    "dossierPath": "data/raw-channels-deep/RAW-161_주막_야담",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 20200,
+    "videoCountLive": 52,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "",
+     "channelId": "UCKDbQhyRAqToDLBbrw1uU3w",
+     "firstSeenCommit": "WORKTREE-16/09-EVENING",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:search-found",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-162",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCBc5mODVVWJtll269LvGO8Q",
+    "title": "비채야담",
+    "handle": null,
+    "url": "https://www.youtube.com/channel/UCBc5mODVVWJtll269LvGO8Q",
+    "subscribers": 19500,
+    "views": 2078854,
+    "videoCount": 60,
+    "country": "KR",
+    "avatar": ""
+   },
+   "niche": "Drama / Stories",
+   "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
+   "visionAnalysis": {
+    "channelName": "비채야담",
+    "videoTitles": [
+     "8살 바보 아들을 가시밭에 버리자. &quot;고맙습니다. 아버지&quot; 웃으며 말하는데 | 야담 | 설화 | 민담 | 옛날이야기 | 오디오북",
+     "잠행나온 왕인지 모르고 말동무 해준 거지아이 다음날 곤장 100대를 맞게되는데..  | 야담 | 설화 | 민담 | 옛날이야기 | 오디오북",
+     "&quot;아버지는 사흘안에 죽을상이에요!&quot; 제 아비 얼굴에서 죽음을 읽은 관상보는 천재아이 | 야담 | 설화 | 민담 | 옛날이야기 | 오디오북"
+    ],
+    "mainTopic": "Kenh mau ngach Drama/야담 Han - ke chuyen dan gian/lich su",
+    "suggestedNiche": "Drama / 야담 Hàn",
+    "language": "KO"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; tim qua YouTube search + do live 16/09/2026",
+   "audioLanguageInfo": {
+    "language": "Tiếng Hàn (Korean)",
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "dialect": "Standard Korean (Yadam storytelling)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-05",
+    "daysSinceLatest": 11,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (11 ngày trước)",
+    "healthDetail": "Xuat ban 60 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:55:30+07:00",
+    "source": "free_yt_engine - 16/09/2026 (tim kenh mau ngach thieu qua search)",
+    "folderName": "RAW-162_비채야담",
+    "dossierPath": "data/raw-channels-deep/RAW-162_비채야담",
+    "topVideosCount": 10,
+    "tagsCount": 7,
+    "subscribersLive": 19500,
+    "videoCountLive": 60,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "",
+     "channelId": "UCBc5mODVVWJtll269LvGO8Q",
+     "firstSeenCommit": "WORKTREE-16/09-EVENING",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:search-found",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-163",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCQ9N4JaIIhoPaDKPZ4gnpIQ",
+    "title": "울타리야담",
+    "handle": null,
+    "url": "https://www.youtube.com/channel/UCQ9N4JaIIhoPaDKPZ4gnpIQ",
+    "subscribers": 15100,
+    "views": 1643709,
+    "videoCount": 101,
+    "country": "KR",
+    "avatar": ""
+   },
+   "niche": "Drama / Stories",
+   "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
+   "visionAnalysis": {
+    "channelName": "울타리야담",
+    "videoTitles": [
+     "한낱 몸종인 줄 알았던 열일곱 소녀가, 대왕대비의 함정 질문에 막힘없이 답하자… 온 궁궐이 발칵 뒤집혔다.  지혜 하나로 세자빈이 된 통쾌한 반전 이야기",
+     "칠 년을 바쳐 급제시켰더니 씨받이로 팔아넘긴 남편 | 그 남편이 조정 최고 자리에 오른 날 아내가 장부를 들고 나타났다 | 조선야담 | 울타리야담",
+     "관아에서 매 맞던 천한 관노비 계집이, 조선 최고의 거부가 되어 돌아왔다… 어머니를 죽인 원수 정승마저 그 앞에 무릎 꿇린 통쾌한 복수"
+    ],
+    "mainTopic": "Kenh mau ngach Drama/야담 Han - ke chuyen dan gian/lich su",
+    "suggestedNiche": "Drama / 야담 Hàn",
+    "language": "KO"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; tim qua YouTube search + do live 16/09/2026",
+   "audioLanguageInfo": {
+    "language": "Tiếng Hàn (Korean)",
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "dialect": "Standard Korean (Yadam storytelling)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-08",
+    "daysSinceLatest": 8,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (8 ngày trước)",
+    "healthDetail": "Xuat ban 101 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:55:30+07:00",
+    "source": "free_yt_engine - 16/09/2026 (tim kenh mau ngach thieu qua search)",
+    "folderName": "RAW-163_울타리야담",
+    "dossierPath": "data/raw-channels-deep/RAW-163_울타리야담",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 15100,
+    "videoCountLive": 101,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "",
+     "channelId": "UCQ9N4JaIIhoPaDKPZ4gnpIQ",
+     "firstSeenCommit": "WORKTREE-16/09-EVENING",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:search-found",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-164",
+   "fileName": null,
+   "channel": {
+    "channelId": "UCzhZwfb05mVKpybL-Uy9wzA",
+    "title": "야담결",
+    "handle": null,
+    "url": "https://www.youtube.com/channel/UCzhZwfb05mVKpybL-Uy9wzA",
+    "subscribers": 14600,
+    "views": 653547,
+    "videoCount": 5,
+    "country": "KR",
+    "avatar": ""
+   },
+   "niche": "Drama / Stories",
+   "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
+   "visionAnalysis": {
+    "channelName": "야담결",
+    "videoTitles": [
+     "[야담] 산에서 얼어 죽어가던 할머니를 구한 가난한 선비, 과거시험에 낙방하지만 인생역전한다. 과연 할머니의 정체는?ㅣ옛날이야기ㅣ오디오북ㅣ수면동화",
+     "[야담] 못생긴 막내딸 아내 삼은 가난한 선비, 벼락 부자가 되는데...",
+     "못생긴 막내딸을 아내로 삼은 가난한 선비, 하루아침에 벼락 부자가 된 사연 │야담 옛날이야기 오디오북 수면동화"
+    ],
+    "mainTopic": "Kenh mau ngach Drama/야담 Han - ke chuyen dan gian/lich su",
+    "suggestedNiche": "Drama / 야담 Hàn",
+    "language": "KO"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; tim qua YouTube search + do live 16/09/2026",
+   "audioLanguageInfo": {
+    "language": "Tiếng Hàn (Korean)",
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "dialect": "Standard Korean (Yadam storytelling)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-08-23",
+    "daysSinceLatest": 24,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (24 ngày trước)",
+    "healthDetail": "Xuat ban 5 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 5,
+    "totalAuditedVideos": 5
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:55:30+07:00",
+    "source": "free_yt_engine - 16/09/2026 (tim kenh mau ngach thieu qua search)",
+    "folderName": "RAW-164_야담결",
+    "dossierPath": "data/raw-channels-deep/RAW-164_야담결",
+    "topVideosCount": 5,
+    "tagsCount": 26,
+    "subscribersLive": 14600,
+    "videoCountLive": 5,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "",
+     "channelId": "UCzhZwfb05mVKpybL-Uy9wzA",
+     "firstSeenCommit": "WORKTREE-16/09-EVENING",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:search-found",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "healthStatus=ACTIVE (do 16/09/2026)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-165",
+   "fileName": null,
+   "channel": {
+    "channelId": "UClPxAd8Wa8lvzWHoL_wFlOQ",
+    "title": "조선천일 야담",
+    "handle": null,
+    "url": "https://www.youtube.com/channel/UClPxAd8Wa8lvzWHoL_wFlOQ",
+    "subscribers": 10500,
+    "views": 809808,
+    "videoCount": 74,
+    "country": "KR",
+    "avatar": ""
+   },
+   "niche": "Drama / Stories",
+   "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
+   "visionAnalysis": {
+    "channelName": "조선천일 야담",
+    "videoTitles": [
+     "[4시간 연속 듣기] 조천야 특선 달빛 주막 5편 #중간광고없음 #옛날이야기 #야담 #민담 #전설 #오디오북 #시니어 #수면동화",
+     "거지아이 말을 믿은 주모의 하룻밤 위기 #옛날이야기 #야담 #민담 #전설 #오디오북 #시니어 #수면동화",
+     "임금님 단골 주막에 나타난 탐관오리 #중간광고없음 #옛날이야기 #야담 #민담 #전설 #오디오북 #시니어 #수면동화"
+    ],
+    "mainTopic": "Kenh mau ngach Drama/야담 Han - ke chuyen dan gian/lich su",
+    "suggestedNiche": "Drama / 야담 Hàn",
+    "language": "KO"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "publicVerification": "RESOLVED; tim qua YouTube search + do live 16/09/2026",
+   "audioLanguageInfo": {
+    "language": "Tiếng Hàn (Korean)",
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "dialect": "Standard Korean (Yadam storytelling)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-11",
+    "daysSinceLatest": 5,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 (5 ngày trước)",
+    "healthDetail": "Xuat ban 74 video. Do tu RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 (giả định mặc định)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T20:55:30+07:00",
+    "source": "free_yt_engine - 16/09/2026 (tim kenh mau ngach thieu qua search)",
+    "folderName": "RAW-165_조선천일_야담",
+    "dossierPath": "data/raw-channels-deep/RAW-165_조선천일_야담",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 10500,
+    "videoCountLive": 74,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "",
+     "channelId": "UClPxAd8Wa8lvzWHoL_wFlOQ",
+     "firstSeenCommit": "WORKTREE-16/09-EVENING",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:search-found",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "healthStatus=ACTIVE (do 16/09/2026)",
     "healthState": "ACTIVE",
     "monetizationState": "MONETIZED_ACTIVE",
     "events": [],

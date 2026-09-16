@@ -1,0 +1,20 @@
+{
+  "id": "RAW-163",
+  "channelId": "UCQ9N4JaIIhoPaDKPZ4gnpIQ",
+  "title": "울타리야담",
+  "handle": null,
+  "url": "https://www.youtube.com/channel/UCQ9N4JaIIhoPaDKPZ4gnpIQ",
+  "subscribers": 15100,
+  "views": 1643709,
+  "videoCount": 101,
+  "country": "KR",
+  "avatar": "",
+  "extractedAt": "2026-09-16T20:55:30+07:00",
+  "extractionSource": "free_yt_engine + /about - extract 16/09/2026 (kenh mau ngach Drama/야담 Hàn - tim qua YouTube search)",
+  "dataGaps": [
+    "handle: chua resolve (co the doi) - dung channelId URL",
+    "transcripts: chua extract"
+  ],
+  "topTagsSample": [],
+  "topTagsCount": 0
+}

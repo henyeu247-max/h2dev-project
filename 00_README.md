@@ -42,7 +42,7 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 
 - **136 bài học** · ~23.1 GB (21.55 GiB) · ffprobe 136/136 có hình+audio · 26 free / 110 pro
 - **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/` và `ZOOM-00` (tài liệu quy trình, không phải bài học)
-- **152 tài liệu**: prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5 (cập nhật 16/09; +43 prompt master research)
+- **153 tài liệu**: prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5 (cập nhật 16/09; +43 prompt master research)
 - **165 kênh mẫu** (152 sống · 13 dead 404 đã ẩn) · `ngay_do` 165/165
 - **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)

@@ -1317,5 +1317,14 @@
     "contentNiche": "Kinh tế / Tài chính",
     "kind": "prompt",
     "source": "MonetizeMind Telegram"
+  },
+  {
+    "sku": "NOI-BO-MUSIC-01",
+    "name": "Kho Nhạc Nền Edit Video Chuẩn Từng Ngách (38 Tracks Cinematic & Ambient)",
+    "link": "",
+    "file": "assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md",
+    "contentNiche": "Edit / Thumb",
+    "kind": "tool",
+    "source": "noi-bo"
   }
 ]

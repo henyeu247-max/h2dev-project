@@ -35,7 +35,7 @@
   - `01:53` — Ngày hai ba thì bắt đầu mới nổ view nè
   - `03:55` — Về sau khi bật kiếm tiền rồi thì anh em cứ sờ bám nhiều lên
   - `06:11` — Đấy
-  - `07:29` — Ch c ki ti th ch ch s kh b M ng l b content nha V m ng l Reup th …
+  - `07:29` — Kiểu vậy mọi người. Kiểu vậy mọi người, chứ còn kiếm tiền thì chắc chắn sẽ không bình mọi người làm bán conte…
 
 ## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
 > em share thêm một số kênh nguồn gốc (từ đó mấy bác có thể tự lọc ra thêm nữa nhé) https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click https://space.bilibili.com/3546888691256089?spm_id_from=333.788.upinfo.head.click https://space.bilibili.com/3546852697836055?spm_id_from=333.788.upinfo.head.click https://space.bilibili.com/3546819541863216?spm_id_from=333.788.upinfo.head.click https://space.bilibili.com/1641862092?spm_id_from=333.788.upinfo.head.click https://space.bilibili.com/3461566735322013?spm_id_from=333.788.upinfo.head.click

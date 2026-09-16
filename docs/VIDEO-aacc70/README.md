@@ -31,7 +31,7 @@
 ## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
 - **Timeline chi tiết:**
   - `00:00` — Rồi, em xin phép chào tất cả mọi người nha.
-  - `01:39` — l l do t sao m ADM c l m c hay b kh view Ho l view l R c k h k c …
+  - `01:39` — Và cũng như là nó rất là lẹt đẹp Đó là lý do tại sao ADM cứ làm mà cứ hay bị không view hoặc là view lẹt đẹt.…
   - `03:20` — Đây mọi người vào lại một phổ biến nè
   - `04:44` — thì em cũng có nói rồi đầu
   - `06:03` — Đấy thì nó bị phân phối theo khán giả

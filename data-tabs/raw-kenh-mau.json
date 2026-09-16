@@ -1,7 +1,7 @@
 {
  "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
- "updatedAt": "2026-09-16T11:40:05.000000+00:00",
- "totalRecords": 124,
+ "updatedAt": "2026-09-16T12:16:31.000000+00:00",
+ "totalRecords": 130,
  "records": [
   {
    "id": "RAW-001",
@@ -27729,6 +27729,546 @@
     "events": [],
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-137",
+   "fileName": "Screenshot_22.png",
+   "sha256": "044fc65f3edf99e967601b163bf5bde226acfa5b46bd64a4b220e59c73684b8a",
+   "technical": {
+    "dimensions": "1049x1223",
+    "sizeBytes": 1540228,
+    "sizeKb": "1504.1",
+    "format": "PNG"
+   },
+   "channel": {
+    "channelId": "UCdPsd7GBKrHAYn0p-ojZ8Mw",
+    "title": "Murph",
+    "handle": "@Murph-b5y",
+    "url": "https://www.youtube.com/@Murph-b5y",
+    "subscribers": 7050,
+    "views": 1478721,
+    "videoCount": 28,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/OXEKzeHK_ugxVJh0r4N289aW2eSN8YugiEfcCGgN5d_nsCnbDwhxvQE875F9rTEPR9bT7V1v=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Động vật kỳ lạ / Tại sao không? (Why Not) - hoạt hình 2D",
+   "visionAnalysis": {
+    "channelName": "Murph",
+    "handle": "@Murph-b5y",
+    "videoTitles": [
+     "Why Don't We Eat Goose Eggs If They're Bigger Than Chicken Eggs | Murph",
+     "Why Don't We Eat Turkey Eggs Everywhere If We Eat Chicken Eggs Every Day",
+     "Why Do Flamingos Still Stand on One Leg If It Looks Like It Takes More Effort"
+    ],
+    "mainTopic": "Đặt câu hỏi kỳ lạ về động vật, thực phẩm và thế giới tự nhiên bằng nhân vật hoạt hình que vẽ tay, kết hợp giải thích khoa học đơn giản",
+    "suggestedNiche": "Động vật kỳ lạ / Câu hỏi Why Not",
+    "language": "EN"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "editorialNiche": "Câu hỏi động vật kỳ lạ / Hoạt hình 2D explainer",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu anh chup kenh anh gui",
+   "audioLanguageInfo": {
+    "language": "Tiếng Anh (English)",
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "dialect": "American English (Curious Animal Facts)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-15",
+    "daysSinceLatest": 1,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (1 ngày trước)",
+    "healthDetail": "Xuất bản 28 video, video gần nhất ngày 2026-09-15. Đo từ RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T19:16:31+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-137_Murph",
+    "dossierPath": "data/raw-channels-deep/RAW-137_Murph",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 7050,
+    "videoCountLive": 28,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@Murph-b5y",
+     "channelId": "UCdPsd7GBKrHAYn0p-ojZ8Mw",
+     "firstSeenCommit": "WORKTREE-16/09",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:channel-page+about",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026 tu anh chup kenh)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-138",
+   "fileName": "Screenshot_23.png",
+   "sha256": "9d4872da2504a1f03fde1424e17b9f9724dbfdfc3aae32113ce1ab0ee52e6e50",
+   "technical": {
+    "dimensions": "1082x1225",
+    "sizeBytes": 1446126,
+    "sizeKb": "1412.2",
+    "format": "PNG"
+   },
+   "channel": {
+    "channelId": "UCc3zk6zSmBGsK3M7c-3_fLQ",
+    "title": "Anunnaki Talk",
+    "handle": "@AnunnakiTalkYT",
+    "url": "https://www.youtube.com/@AnunnakiTalkYT",
+    "subscribers": 1610,
+    "views": 218400,
+    "videoCount": 15,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/sJ9AZR0OwprtUC2_m4hVAavLDN1sDAWw4ZsBGBvQLNauVCsjd4L1VWwMFwVutG24qbixycGiFA=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Người ngoài hành tinh / Sumer cổ đại / Giải mã văn tự",
+   "visionAnalysis": {
+    "channelName": "Anunnaki Talk",
+    "handle": "@AnunnakiTalkYT",
+    "videoTitles": [
+     "Sumerian Text Reveals the Species the Anunnaki Defeated in the War for Earth",
+     "Sumerian Text Reveals What the Anunnaki Found on Mars That Made Them Come to Earth Instead",
+     "What Enki Knew About The True God That Enlil Tried To Destroy — The Tablets Finally Decoded"
+    ],
+    "mainTopic": "Giải mã bảng đất sét Sumer về Anunnaki, Enki/Enlil, chiến tranh giành Trái Đất và mối liên hệ sao Hỏa",
+    "suggestedNiche": "Ancient Aliens / Sumerian tablets decode",
+    "language": "EN"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "editorialNiche": "Anunnaki / Sumer cổ đại / Người ngoài hành tinh",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu anh chup kenh anh gui",
+   "audioLanguageInfo": {
+    "language": "Tiếng Anh (English)",
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "dialect": "American English (Ancient Aliens Decode)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-15",
+    "daysSinceLatest": 1,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (1 ngày trước)",
+    "healthDetail": "Xuất bản 15 video, video gần nhất ngày 2026-09-15. Đo từ RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T19:16:31+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-138_Anunnaki_Talk",
+    "dossierPath": "data/raw-channels-deep/RAW-138_Anunnaki_Talk",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 1610,
+    "videoCountLive": 15,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@AnunnakiTalkYT",
+     "channelId": "UCc3zk6zSmBGsK3M7c-3_fLQ",
+     "firstSeenCommit": "WORKTREE-16/09",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:channel-page+about",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026 tu anh chup kenh)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-139",
+   "fileName": "Screenshot_24.png",
+   "sha256": "ae849dfd069dc98a54498a187d35409c58a941c56f23c3ecbc2c7307d491a201",
+   "technical": {
+    "dimensions": "1056x1230",
+    "sizeBytes": 2137982,
+    "sizeKb": "2087.9",
+    "format": "PNG"
+   },
+   "channel": {
+    "channelId": "UCkFNo7zEszRprCQm-K4DdZw",
+    "title": "Erased Time",
+    "handle": "@erasedtime1",
+    "url": "https://www.youtube.com/@erasedtime1",
+    "subscribers": 1700,
+    "views": 329902,
+    "videoCount": 35,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/v_PweCU1o1aCBtVY8YBb4iBLZLSy74XRL2moZ7TbN9qYTrUgdt5BgSvcgcmEu6yfGMRrcLkp6Q=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Lịch sử Mỹ bị chôn giấu / Khai thác mỏ bí ẩn",
+   "visionAnalysis": {
+    "channelName": "Erased Time",
+    "handle": "@erasedtime1",
+    "videoTitles": [
+     "The Ancient Tool Found in an Arizona Copper Shaft in 1884 – The Apache Said It Was Left Behind",
+     "What the Paiute Told John Wesley Powell About the Machines Inside the Canyon – Documented in 1873",
+     "The Georgia Driller Who Hit a Poured Copper Floor at 60 Feet — The Family Next Door Told Him to Stop"
+    ],
+    "mainTopic": "Các phát hiện kỳ lạ trong mỏ khai thác Mỹ thế kỷ 19: công cụ cổ đại trong hầm đồng Arizona, máy móc trong hẻm Grand Canyon, sàn đồng nguyên khối Georgia",
+    "suggestedNiche": "Hidden American history / Mining mysteries",
+    "language": "EN"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "editorialNiche": "Lịch sử Mỹ bị xóa / Khai thác mỏ & Văn minh cổ",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu anh chup kenh anh gui",
+   "audioLanguageInfo": {
+    "language": "Tiếng Anh (English)",
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "dialect": "American English (Hidden US History)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-14",
+    "daysSinceLatest": 2,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (2 ngày trước)",
+    "healthDetail": "Xuất bản 35 video, video gần nhất ngày 2026-09-14. Đo từ RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T19:16:31+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-139_Erased_Time",
+    "dossierPath": "data/raw-channels-deep/RAW-139_Erased_Time",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 1700,
+    "videoCountLive": 35,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@erasedtime1",
+     "channelId": "UCkFNo7zEszRprCQm-K4DdZw",
+     "firstSeenCommit": "WORKTREE-16/09",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:channel-page+about",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026 tu anh chup kenh)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-140",
+   "fileName": "Screenshot_25.png",
+   "sha256": "03bc6f5f492fec2de3df1a7eceff14e23a3e6f39d6fad32d08e75feaa533bd5f",
+   "technical": {
+    "dimensions": "1075x1208",
+    "sizeBytes": 1750862,
+    "sizeKb": "1709.8",
+    "format": "PNG"
+   },
+   "channel": {
+    "channelId": "UCudjbwSmv7ZVhfg0omQ25nQ",
+    "title": "First Chamber",
+    "handle": "@TheFirstChamber",
+    "url": "https://www.youtube.com/@TheFirstChamber",
+    "subscribers": 13100,
+    "views": 1471612,
+    "videoCount": 58,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/gUmRYrAi0FpU-H4fqZNbBp0mYoaOleDkVfA1ZYumaTXbIXP2kTuqud7HZr2bFyM1QLIz0y-tHQ=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "Sumer cổ đại / Công nghệ đã mất / AI giải mã văn tự",
+   "visionAnalysis": {
+    "channelName": "First Chamber",
+    "handle": "@TheFirstChamber",
+    "videoTitles": [
+     "The Sumerian Tablet FINALLY Reveals a Lost Planet Between Mars and Jupiter — Scientists Found Clues",
+     "The Lost Technology of Ancient Sumer — And What It Was Really Used For",
+     "The Sumerian Tablets Were Reanalyzed by AI — And What It Found Changes Everything"
+    ],
+    "mainTopic": "Giải mã bảng đất sét Sumer về hành tinh đã mất giữa Sao Hỏa và Sao Mộc, công nghệ cổ đại và phân tích lại bằng AI",
+    "suggestedNiche": "Sumerian mysteries / Lost technology",
+    "language": "EN"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "editorialNiche": "Sumer cổ đại / Công nghệ đã mất & AI decode",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu anh chup kenh anh gui",
+   "audioLanguageInfo": {
+    "language": "Tiếng Anh (English)",
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "dialect": "American English (Sumerian Decode)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-15",
+    "daysSinceLatest": 1,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (1 ngày trước)",
+    "healthDetail": "Xuất bản 58 video, video gần nhất ngày 2026-09-15. Đo từ RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T19:16:31+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-140_First_Chamber",
+    "dossierPath": "data/raw-channels-deep/RAW-140_First_Chamber",
+    "topVideosCount": 10,
+    "tagsCount": 50,
+    "subscribersLive": 13100,
+    "videoCountLive": 58,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@TheFirstChamber",
+     "channelId": "UCudjbwSmv7ZVhfg0omQ25nQ",
+     "firstSeenCommit": "WORKTREE-16/09",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:channel-page+about",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026 tu anh chup kenh)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-141",
+   "fileName": "Screenshot_26.png",
+   "sha256": "60f957fb32014df54763092cbd2fb9ba1c8312126445199fd2de46f5cde01ed2",
+   "technical": {
+    "dimensions": "1063x1209",
+    "sizeBytes": 1532723,
+    "sizeKb": "1496.8",
+    "format": "PNG"
+   },
+   "channel": {
+    "channelId": "UCjTumhrdK2Xt3DBdPox6Qgg",
+    "title": "The Origin Atlas",
+    "handle": "@TheOriginAtlas1",
+    "url": "https://www.youtube.com/@TheOriginAtlas1",
+    "subscribers": 20600,
+    "views": 3619844,
+    "videoCount": 60,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/gJrS1PjBVns1Ged5QrpsbJaBZN1vFHL4-nAd3YXIereYgGOWJxv-sDUZCp66JltjuevAxiot8Q=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "ADN cổ / Di cư loài người / Gốc tích các dân tộc",
+   "visionAnalysis": {
+    "channelName": "The Origin Atlas",
+    "handle": "@TheOriginAtlas1",
+    "videoTitles": [
+     "Scientists Compared Ancient Roman DNA to Every Modern European Nation — Only One Region",
+     "Scientists Compared Sumerian DNA to Every Nation on Earth — Only One Ancient Group Showed Up",
+     "What Ancient DNA Revealed About Neanderthal Women Is Extremely Disturbing"
+    ],
+    "mainTopic": "So sánh ADN cổ đại (La Mã, Sumer, Neanderthal) với các quốc gia hiện đại, vẽ bản đồ di cư loài người bị sách giáo khoa bỏ qua",
+    "suggestedNiche": "Ancient DNA / Human migration mapping",
+    "language": "EN"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "editorialNiche": "ADN cổ đại / Di cư & Gốc tích loài người",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu anh chup kenh anh gui",
+   "audioLanguageInfo": {
+    "language": "Tiếng Anh (English)",
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "dialect": "American English (Ancient DNA)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-15",
+    "daysSinceLatest": 1,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (1 ngày trước)",
+    "healthDetail": "Xuất bản 60 video, video gần nhất ngày 2026-09-15. Đo từ RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T19:16:31+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-141_The_Origin_Atlas",
+    "dossierPath": "data/raw-channels-deep/RAW-141_The_Origin_Atlas",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 20600,
+    "videoCountLive": 60,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@TheOriginAtlas1",
+     "channelId": "UCjTumhrdK2Xt3DBdPox6Qgg",
+     "firstSeenCommit": "WORKTREE-16/09",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:channel-page+about",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026 tu anh chup kenh)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
+    "schemaVersion": 1
+   }
+  },
+  {
+   "id": "RAW-142",
+   "fileName": "Screenshot_27.png",
+   "sha256": "7d90d62e1131f23d9a35bda31b839ef046141546393900f5a755d208a17b89d8",
+   "technical": {
+    "dimensions": "1080x1220",
+    "sizeBytes": 2254026,
+    "sizeKb": "2201.2",
+    "format": "PNG"
+   },
+   "channel": {
+    "channelId": "UCMcrg0z31BlCjNsNET_8sKQ",
+    "title": "空想都市の散歩道",
+    "handle": "@%E5%93%A6%E5%93%A6%E7%9A%84",
+    "url": "https://www.youtube.com/@%E5%93%A6%E5%93%A6%E7%9A%84",
+    "subscribers": 6980,
+    "views": 1271266,
+    "videoCount": 32,
+    "country": null,
+    "avatar": "https://yt3.googleusercontent.com/mLdnl7XC1T_FObyHqK7yk2mLBWPVUYCeUPLuoB-oNIeAlBOyt-I9QXiuu97TOyZQ7n1mnCKGBH4=s900-c-k-c0x00ffffff-no-rj"
+   },
+   "niche": "AI art Nhật / Thế giới tưởng tượng / Thành phố retro-future",
+   "visionAnalysis": {
+    "channelName": "空想都市の散歩道",
+    "handle": "@哦哦的",
+    "videoTitles": [
+     "もし、昭和30年代が夢見た「未来の田舎」で夏休みを過ごしたら",
+     "海に孤立した巨大団地。春になると、屋上が畑にない、街が動き出す",
+     "海に孤立した巨大団地。暴風雪でも暮らしは続く"
+    ],
+    "mainTopic": "Thế giới tưởng tượng retro-future: khu tập thể khổng lồ ngoài biển, thành phố Showa 30s nhìn về tương lai, AI sản xuất short drama/lofi MV",
+    "suggestedNiche": "AI art Nhật / Retro-future city",
+    "language": "JA"
+   },
+   "status": "VERIFIED_UNIQUE",
+   "editorialNiche": "AI art Nhật / Thành phố tưởng tượng (Ký ức Showa)",
+   "publicVerification": "RESOLVED; do live 16/09/2026 tu anh chup kenh anh gui",
+   "audioLanguageInfo": {
+    "language": "Tiếng Nhật (Japanese)",
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "dialect": "Standard Japanese (Retro-future AI Art)"
+   },
+   "vitalityAudit": {
+    "evaluatedAt": "2026-09-16",
+    "latestUploadDate": "2026-09-14",
+    "daysSinceLatest": 2,
+    "healthStatus": "ACTIVE",
+    "healthBadge": "🟢 Đang hoạt động (2 ngày trước)",
+    "healthDetail": "Xuất bản 32 video, video gần nhất ngày 2026-09-14. Đo từ RSS live 16/09/2026.",
+    "monetizationStatus": "MONETIZED_ACTIVE",
+    "monetizationBadge": "💰 Bật kiếm tiền (YPP Active)",
+    "playableVideosCount": 10,
+    "totalAuditedVideos": 10
+   },
+   "deepIntelligence": {
+    "status": "EXTRACTED_REAL",
+    "extractedAt": "2026-09-16T19:16:31+07:00",
+    "source": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+    "folderName": "RAW-142_空想都市の散歩道",
+    "dossierPath": "data/raw-channels-deep/RAW-142_空想都市の散歩道",
+    "topVideosCount": 10,
+    "tagsCount": 0,
+    "subscribersLive": 6980,
+    "videoCountLive": 32,
+    "transcriptsCount": 0,
+    "longevityStatus": null,
+    "channelAgeDays": null
+   },
+   "handleHistory": [
+    {
+     "handle": "@%E5%93%A6%E5%93%A6%E7%9A%84",
+     "channelId": "UCMcrg0z31BlCjNsNET_8sKQ",
+     "firstSeenCommit": "WORKTREE-16/09",
+     "firstSeenDate": "2026-09-16",
+     "source": "live:2026-09-16:channel-page+about",
+     "verifiedAt": "2026-09-16"
+    }
+   ],
+   "channelLifecycle": {
+    "state": "ACTIVE",
+    "stateReason": "vitalityAudit.healthStatus=ACTIVE (do 16/09/2026 tu anh chup kenh)",
+    "healthState": "ACTIVE",
+    "monetizationState": "MONETIZED_ACTIVE",
+    "events": [],
+    "auditedAt": "2026-09-16",
+    "evidenceDate": "2026-09-16",
     "schemaVersion": 1
    }
   }

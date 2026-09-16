@@ -1,16 +1,16 @@
 {
   "base": "http://127.0.0.1:8899",
-  "startedAt": "2026-09-16T13:55:53.876Z",
+  "startedAt": "2026-09-16T14:35:20.872Z",
   "checks": [
     {
       "name": "Raw Channels Cards Count",
       "pass": true,
-      "detail": "Expected 153, got 153"
+      "detail": "Expected 156, got 156"
     },
     {
-      "name": "All 153 Images Return HTTP 200",
+      "name": "All 156 Images Return HTTP 200",
       "pass": true,
-      "detail": "Loaded: 153/153, Broken: 0"
+      "detail": "Loaded: 156/156, Broken: 0"
     },
     {
       "name": "New Channel RAW-110 Visible in DOM",
@@ -53,6 +53,21 @@
       "detail": "Preview: RAW-142"
     },
     {
+      "name": "New Channel RAW-166 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-166"
+    },
+    {
+      "name": "New Channel RAW-167 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-167"
+    },
+    {
+      "name": "New Channel RAW-168 Visible in DOM",
+      "pass": true,
+      "detail": "Preview: RAW-168"
+    },
+    {
       "name": "Search Filter on New Channel @OverengineeredEN",
       "pass": true,
       "detail": "Found 1 matching cards"
@@ -75,7 +90,7 @@
   ],
   "consoleErrors": [],
   "failedRequests": [],
-  "finishedAt": "2026-09-16T13:55:57.234Z",
-  "passCount": 14,
-  "totalChecks": 14
+  "finishedAt": "2026-09-16T14:35:24.377Z",
+  "passCount": 17,
+  "totalChecks": 17
 }

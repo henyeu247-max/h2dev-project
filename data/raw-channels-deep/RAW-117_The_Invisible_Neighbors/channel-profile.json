@@ -1,22 +1,24 @@
 {
-  "id": "RAW-117",
-  "channelId": "UChHGjAYhP5L4rDs4Sh-H1Lw",
-  "title": "The Invisible Neighbors",
-  "handle": "@TheInvisibleNeighbors",
-  "url": "https://www.youtube.com/@TheInvisibleNeighbors",
-  "subscribers": 7860,
-  "views": null,
-  "videoCount": 31,
-  "country": null,
-  "avatar": "https://yt3.googleusercontent.com/uOUD1aIAkkdEMJAAnT-9J7GTP77aIFnprLCia2nPKQ8PLLRtmJS9ryaqdaFrs7GDBoZnCCIZOT4=s900-c-k-c0x00ffffff-no-rj",
-  "extractedAt": "2026-09-16T18:02:33+07:00",
-  "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
-  "dataGaps": [
-    "views tong kenh: chua do duoc - null trung thuc",
-    "country: khong co trong HTML - null trung thuc",
-    "longevityAudit/growth30d: chua do - dot 2",
-    "transcripts: chua extract - chi co metadata top videos"
-  ],
-  "topTagsSample": [],
-  "topTagsCount": 0
+ "id": "RAW-117",
+ "channelId": "UChHGjAYhP5L4rDs4Sh-H1Lw",
+ "title": "The Invisible Neighbors",
+ "handle": "@TheInvisibleNeighbors",
+ "url": "https://www.youtube.com/@TheInvisibleNeighbors",
+ "subscribers": 7900,
+ "views": 1808399,
+ "videoCount": 31,
+ "country": null,
+ "avatar": "https://yt3.googleusercontent.com/uOUD1aIAkkdEMJAAnT-9J7GTP77aIFnprLCia2nPKQ8PLLRtmJS9ryaqdaFrs7GDBoZnCCIZOT4=s900-c-k-c0x00ffffff-no-rj",
+ "extractedAt": "2026-09-16T18:02:33+07:00",
+ "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
+ "dataGaps": [
+  "views tong kenh: chua do duoc - null trung thuc",
+  "country: khong co trong HTML - null trung thuc",
+  "longevityAudit/growth30d: chua do - dot 2",
+  "transcripts: chua extract - chi co metadata top videos"
+ ],
+ "topTagsSample": [],
+ "topTagsCount": 0,
+ "refreshedAt": "2026-09-16T22:05:00+07:00",
+ "refreshSource": "live probe 16/09/2026 PM (tu screenshots anh gui)"
 }

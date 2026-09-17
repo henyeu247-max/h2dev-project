@@ -887,4 +887,35 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   @keyframes fadeSlide { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
   #content .truncate { overflow: visible; text-overflow: unset; white-space: normal; }
   .learn-frame { min-height: calc(100vh - 140px); }
+
+  /* Mobile touch-target upgrades (WCAG 2.5.8) — only affect small screens */
+  #content [data-open-niche],
+  #content [data-expand-niche] {
+    min-height: 38px;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+  }
+  #content .btn-open-raw-deep,
+  #content .btn-quick-demo,
+  #content .js-sug-open-modal {
+    min-height: 38px;
+  }
+  /* Action links/buttons: doc links, "Mở YouTube", module links */
+  #content a.inline-flex,
+  #content button.inline-flex {
+    min-height: 38px;
+  }
+  /* Chienluoc module rows (full-width buttons) */
+  #content button.w-full.flex {
+    min-height: 38px;
+  }
+  /* Overview "Xem toàn bộ N ngách" link-button */
+  #content .overview-link {
+    min-height: 38px;
+    padding: 8px 10px;
+    border-radius: 12px;
+  }
 }

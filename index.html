@@ -118,7 +118,27 @@
   </div>
   <nav class="vd-bottom-nav" id="bottom-nav" aria-label="Điều hướng chính"></nav>
   <script>
-    const state = { tab: 'tongquan', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
+    const state = { tab: 'tongquan', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
+
+        // RAW_NICHE_GROUPS — taxonomy 2 tầng cho raw kênh: 75 ngách vụn -> 12 nhóm chủ đề liên quan.
+    // Cùng chủ đề nằm chung 1 nhóm; bấm nhóm mới xổ ra các ngách chi tiết bên trong.
+    const RAW_NICHE_GROUPS = {
+      'Lịch sử / Khảo cổ': ['Lịch sử tổng hợp / tái dựng', 'Lịch sử thực phẩm / đồ vật', 'Lịch sử công nghiệp', 'Lịch sử dược chất', 'Lịch sử phát minh / Kỹ sư mạo hiểm', 'Tiền sử loài người / Khảo cổ học đại nhân sư & Sa mạc', 'Tiền sử loài người / Người Neanderthal & Kỷ băng hà', 'Khảo cổ học chấn động / Phát hiện dị thường tại Nepal & Iran', 'Khoa học khám phá / Văn minh Sumer & Cổ vật hang động', 'Sumer cổ đại / Công nghệ đã mất & AI decode', 'Anunnaki / Sumer cổ đại / Người ngoài hành tinh', 'ADN cổ đại / Di cư & Gốc tích loài người', 'Lịch sử đế chế cổ đại / Ba Tư, Tần Thủy Hoàng & Con đường tơ lụa', 'Lịch sử Mỹ bị xóa / Khai thác mỏ & Văn minh cổ', 'Lịch sử cổ đại tiếng Hàn / Đế chế & Bí ẩn khảo cổ', 'Lịch sử Nhật Bản / Kịch AI 30-57 phút', 'Lịch sử đồ vật thường nhật / Đồng hồ, Bàn phím & Trí tuệ nhân tạo', 'Lịch sử trung cổ đời thường / Medieval Life AI Art', 'Lịch sử sinh tồn Mỹ / Cuộc sống thợ săn miền núi thế kỷ 19', 'Lịch sử đen tối / Bí ẩn chưa có lời giải', 'Tài liệu bí ẩn tiếng Nga / Cổ vật cấm kỵ & Địa điểm bí ẩn'],
+      'Khoa học / Tự nhiên': ['Khoa học vũ trụ / tự nhiên / tiền sử', 'Khoa học nghe chậm', 'Giáo dục kiến thức nền', 'Cơ chế / công cụ / công nghệ', 'Động vật hoang dã / Sinh vật biển / Tiến hóa', 'Thiên nhiên quanh nhà / thú cưng', 'Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)', 'Câu hỏi động vật kỳ lạ / Hoạt hình 2D explainer'],
+      'Sức khỏe / Lão hóa': ['Sức khỏe VN', 'Sức khỏe Nhật', 'Sức khỏe / Dinh dưỡng / Food Shock', 'Fitness / review sức khỏe', 'Sức khỏe / sinh hoạt senior Hàn', 'Đời sống senior', 'Chuyện đời / kể chuyện senior Nhật'],
+      'Địa lý / Du lịch / Sinh tồn': ['Địa lý / du lịch / đời sống nơi khác', 'Tây Ban Nha / Mexico / Địa lý tò mò', 'Kỹ thuật công nghiệp dị thường / Tàu phá băng & Sa mạc', 'Sinh tồn / Cải tạo nhà hoang / ASMR', 'Sinh tồn / Thảm họa tự nhiên / Cứu trợ', 'Sinh tồn cổ đại / Kiến trúc mùa đông người Viking & Sámi', 'Sinh tồn vùng lạnh tiếng Hàn / Nhà đất Himalaya & Siberia', 'Off-Grid / Kiến trúc tự làm mát $0', 'Năng lượng độc lập / Pin DIY & Tiết kiệm điện 60%', 'Làm vườn'],
+      'Drama / Kể chuyện': ['Drama / 야담 Hàn (tim bo sung 16/09/2026)', 'Manga thực tế / Xã hội Nhật', 'Tội phạm / bi kịch', 'Người nổi tiếng / Kể chuyện âm nhạc xúc động', 'Kể chuyện nhân văn AI / Vượt khó làm giàu & Nhân quả'],
+      'Trẻ em / Hoạt hình': ['Trẻ em / hoạt hình / IP'],
+      'Triết lý / Tâm linh': ['Triết lý / động lực', 'Đức tin / Kinh Thánh', 'Phật pháp / Động lực / Chữa lành', 'Phong thủy VN', 'Kinh Thánh & Tài chính / Luật làm giàu của vua Solomon & Job'],
+      'Học tiếng Anh': ['Học tiếng Anh'],
+      'Quân sự / Địa chính trị': ['Quân sự / địa chính trị', 'Địa chính trị & Kinh tế thế giới tiếng Hàn / Cà phê, Thụy Sĩ & Tiền Tip', 'Công nghệ / quy định thời sự'],
+      'Kiến trúc / Công nghiệp': ['Bất động sản Châu Âu / Nhà cổ bỏ hoang giá rẻ', 'Đại công trình kỹ thuật / Phim tài liệu 4K', 'Kiến trúc nghệ thuật / Nhà độc bản Los Angeles', 'Công nghiệp sản xuất / Quy trình tái chế 4K', 'Nhân văn / Người vô gia cư hồi sinh & Nhà $1', 'An ninh gia đình / Thợ khóa già 35 năm kinh nghiệm'],
+      'Kinh doanh / Tài chính': ['Kinh doanh / thương hiệu', 'Kinh tế Nhật', 'Hoạt hình 2D POV / Tài chính cá nhân & Lối sống'],
+      'Phim AI / Điện ảnh': ['Điện ảnh AI 4K / Phim Dark Fantasy dài 28 phút', 'Phim viễn tưởng AI Tây Ban Nha / Quái vật & Thần thoại', 'Phim ngắn Sci-Fi AI EN / Dystopia 6-10 phút', 'Thành phố tương lai 4K EN / Future City Documentary', 'AI art Nhật / Thành phố tưởng tượng (Ký ức Showa)'],
+    };
+    const RAW_NICHE_TO_GROUP = {};
+    for (const [g, arr] of Object.entries(RAW_NICHE_GROUPS)) for (const n of arr) RAW_NICHE_TO_GROUP[n] = g;
+    function rawNicheGroup(niche) { return RAW_NICHE_TO_GROUP[niche] || 'Khác'; }
 
     const CAT = {};
     const ICONS = {
@@ -1761,6 +1781,14 @@
         return acc;
       }, {});
       const sortedNiches = Object.keys(nicheCounts).sort((a, b) => nicheCounts[b] - nicheCounts[a]);
+      const groupCounts = records.reduce((acc, r) => {
+        const g = rawNicheGroup(r.editorialNiche || r.niche || 'Chưa phân loại');
+        acc[g] = (acc[g] || 0) + 1;
+        return acc;
+      }, {});
+      const sortedGroups = Object.keys(RAW_NICHE_GROUPS)
+        .filter(g => groupCounts[g])
+        .sort((a, b) => groupCounts[b] - groupCounts[a]);
 
       const langCounts = records.reduce((acc, r) => {
         const l = (r.audioLanguageInfo && r.audioLanguageInfo.language) ? r.audioLanguageInfo.language : 'Tiếng Anh (English)';
@@ -1785,7 +1813,9 @@
         const n = (r.editorialNiche || r.niche || 'Chưa phân loại').toLowerCase();
         const lName = (aL.language || 'Tiếng Anh (English)').toLowerCase();
         const lCode = (aL.code || '').toLowerCase();
-        if (currentNiche && (r.editorialNiche || r.niche || 'Chưa phân loại') !== currentNiche) return false;
+        const _nRaw = r.editorialNiche || r.niche || 'Chưa phân loại';
+        if (state.rawGroup && rawNicheGroup(_nRaw) !== state.rawGroup) return false;
+        if (currentNiche && _nRaw !== currentNiche) return false;
         if (currentLang && (aL.language || 'Tiếng Anh (English)') !== currentLang) return false;
         if (state.rawVitality === 'active' && vA.healthStatus !== 'ACTIVE') return false;
         if (state.rawVitality === 'slow' && vA.healthStatus !== 'SLOW') return false;
@@ -1816,7 +1846,7 @@
       return `
   ${pageBanner('Raw kênh mẫu', filtered.length + '/' + records.length + ' hồ sơ · bóc tách qua Vision AI + OCR + vidIQ', [
         { icon: ICONS.image, label: 'Ảnh raw', value: records.length, sub: filtered.length === records.length ? 'Hiện tất cả' : 'Đang lọc ' + filtered.length },
-        { icon: ICONS.niche, label: 'Ngách phát hiện', value: Object.keys(nicheCounts).length, sub: 'chip bên dưới' },
+        { icon: ICONS.niche, label: 'Nhóm chủ đề', value: sortedGroups.length, sub: Object.keys(nicheCounts).length + ' ngách chi tiết' },
         { icon: ICONS.search, label: 'Đang hoạt động', value: activeCount, sub: 'ra video gần đây' },
         { icon: ICONS.channel, label: 'Nguy cơ tắt YPP', value: riskCount, sub: 'dừng đăng >6 tháng' },
         { icon: ICONS.doc, label: 'Verified vidIQ', value: verifiedCount, sub: 'khớp vidIQ live' },
@@ -1843,22 +1873,25 @@
       <button type="button" id="freset-raw" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
     </div>
     <div class="mt-4 pt-3 border-t border-hairline">
-      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách phát hiện</div>
+      <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách phát hiện · theo nhóm chủ đề</div>
+      <p class="text-[11px] text-gray-500 mb-2.5 leading-relaxed">Các kênh cùng chủ đề được gom về một nhóm. Bấm nhóm để xem ngách chi tiết bên trong.</p>
       <div class="flex flex-wrap gap-2">
-        <button type="button" data-raw-niche="" class="filter-btn ${!currentNiche ? 'active' : ''}">Mọi ngách · ${records.length}</button>
-        ${(() => {
-          // Progressive disclosure: chỉ hiện top ngách có >=2 kênh; phần còn lại thu gọn sau nút "Xem thêm"
-          const PRIMARY_LIMIT = 12;
-          const primary = sortedNiches.filter(n => nicheCounts[n] >= 2);
-          const tail = sortedNiches.filter(n => nicheCounts[n] < 2);
-          const visible = state.rawNicheExpanded ? [...primary, ...tail] : primary.slice(0, PRIMARY_LIMIT);
-          const hiddenCount = (primary.length - PRIMARY_LIMIT) + tail.length;
-          // Ngách đang chọn mà nằm ngoài danh sách hiển thị -> luôn hiện để người dùng biết đang lọc gì
-          const selectedOutside = currentNiche && !visible.includes(currentNiche)
-            ? `<button type="button" data-raw-niche="${esc(currentNiche)}" class="filter-btn active" title="Đang lọc ngách này">${esc(currentNiche)} · ${nicheCounts[currentNiche] || 0}</button>` : '';
-          return selectedOutside + visible.map(n => `<button type="button" data-raw-niche="${esc(n)}" class="filter-btn ${currentNiche === n ? 'active' : ''}" title="${esc(n)}">${esc(n)} · ${nicheCounts[n]}</button>`).join('')
-            + (hiddenCount > 0 ? `<button type="button" data-raw-niche-toggle class="filter-btn" style="border-style:dashed; color:var(--fg-muted);" title="${state.rawNicheExpanded ? 'Thu gọn danh sách ngách' : 'Hiện tất cả ' + sortedNiches.length + ' ngách (phần lớn chỉ có 1 kênh)'}">${state.rawNicheExpanded ? '▲ Thu gọn' : '▼ Xem thêm ' + hiddenCount + ' ngách khác'}</button>` : '');
-        })()}
+        <button type="button" data-raw-group="" class="filter-btn ${!state.rawGroup ? 'active' : ''}">Mọi nhóm · ${records.length}</button>
+        ${sortedGroups.map(g => `<button type="button" data-raw-group="${esc(g)}" class="filter-btn ${state.rawGroup === g ? 'active' : ''}" title="${esc(g)} — ${groupCounts[g]} kênh thuộc ${RAW_NICHE_GROUPS[g].filter(n => nicheCounts[n]).length} ngách">${esc(g)} · ${groupCounts[g]}</button>`).join('')}
+      </div>
+      ${state.rawGroup ? (() => {
+        const inGroup = sortedNiches.filter(n => rawNicheGroup(n) === state.rawGroup);
+        return `
+      <div class="mt-3 pt-2.5 border-t border-hairline">
+        <div class="flex items-center justify-between gap-2 mb-2">
+          <div class="text-[11px] text-gray-400 font-semibold">↳ Ngách trong nhóm <span class="text-brand-300">${esc(state.rawGroup)}</span> (${inGroup.length} ngách · ${groupCounts[state.rawGroup]} kênh)</div>
+          <button type="button" data-raw-niche="" class="text-[11px] font-semibold ${!currentNiche ? 'text-brand-300' : 'text-gray-400 hover:text-gray-200'} transition-colors shrink-0">Xem tất cả nhóm này</button>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          ${inGroup.map(n => `<button type="button" data-raw-niche="${esc(n)}" class="filter-btn ${currentNiche === n ? 'active' : ''}" style="font-size:11px;" title="${esc(n)}">${esc(n)} · ${nicheCounts[n]}</button>`).join('')}
+        </div>
+      </div>`;
+      })() : ''}
       </div>
     </div>
     <button type="button" data-raw-filters-toggle class="mt-3.5 pt-3 border-t border-hairline w-full flex items-center justify-between gap-2 text-left group">
@@ -2396,15 +2429,15 @@
       document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; render(); }; });
       const rk = document.getElementById('freset-kenh');
       if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; render(); }; }
+      document.querySelectorAll('[data-raw-group]').forEach(btn => { btn.onclick = () => { const g = btn.getAttribute('data-raw-group') || ''; state.rawGroup = (state.rawGroup === g) ? '' : g; state.rawNiche = ''; state.rawPage = 1; render(); }; });
       document.querySelectorAll('[data-raw-niche]').forEach(btn => { btn.onclick = () => { state.rawNiche = btn.getAttribute('data-raw-niche') || ''; state.rawPage = 1; render(); }; });
       const rfToggle = document.querySelector('[data-raw-filters-toggle]'); if (rfToggle) rfToggle.onclick = () => { state.rawFiltersExpanded = !state.rawFiltersExpanded; render(); };
-      const nicheToggle = document.querySelector('[data-raw-niche-toggle]');
-      if (nicheToggle) nicheToggle.onclick = () => { state.rawNicheExpanded = !state.rawNicheExpanded; render(); };
+
       document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; render(); }; });
       document.querySelectorAll('[data-raw-faceless]').forEach(btn => { btn.onclick = () => { state.rawFaceless = btn.getAttribute('data-raw-faceless') || ''; render(); }; });
       document.querySelectorAll('[data-raw-lang]').forEach(btn => { btn.onclick = () => { state.rawLang = btn.getAttribute('data-raw-lang') || ''; render(); }; });
       const rr2 = document.getElementById('freset-raw');
-      if (rr2) { rr2.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; render(); }; }
+      if (rr2) { rr2.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawGroup = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; state.rawPage = 1; render(); }; }
       document.querySelectorAll('.btn-open-raw-deep').forEach(btn => {
         btn.onclick = (e) => {
           e.stopPropagation();

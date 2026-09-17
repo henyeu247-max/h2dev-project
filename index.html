@@ -107,6 +107,7 @@
         <h1 id="page-title" class="vd-page-title">Tổng quan</h1>
         <div id="hd-stats" class="hd-stats"></div>
         <a href="/lotrinh" class="btn-ghost" style="font-size:12px">Lộ trình</a>
+        <button type="button" class="btn-ghost js-open-music-studio" style="font-size:12px; display:inline-flex; align-items:center; gap:4px; cursor:pointer;" title="Mở trạm phát nhạc nền 38 tracks">🎧 Nhạc nền</button>
       </div>
       <nav id="mobile-tabs" class="vd-mobile-tabs" aria-label="Điều hướng tab"></nav>
     </header>
@@ -4017,9 +4018,16 @@
         }
       }, true);
 
-      // Global Escape Key to close top-most active modal
+      // Global Shortcuts: Escape to close modals, / to focus search
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
+          const musicModal = document.getElementById('music-studio-modal');
+          if (musicModal && musicModal.style.display === 'flex') {
+            const closeM = document.getElementById('close-music-studio');
+            if (closeM) closeM.click();
+            else { musicModal.style.display = 'none'; document.body.style.overflow = ''; }
+            return;
+          }
           const quickModal = document.getElementById('quick-video-modal');
           if (quickModal && quickModal.style.display === 'flex') {
             if (window.closeQuickVideoModal) window.closeQuickVideoModal();
@@ -4042,6 +4050,16 @@
             imgModal.style.display = 'none';
             document.body.style.overflow = '';
             return;
+          }
+        } else if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+          const activeTag = document.activeElement ? document.activeElement.tagName.toUpperCase() : '';
+          if (activeTag !== 'INPUT' && activeTag !== 'TEXTAREA') {
+            const fq = document.getElementById('fq');
+            if (fq) {
+              e.preventDefault();
+              fq.focus();
+              fq.select();
+            }
           }
         }
       });

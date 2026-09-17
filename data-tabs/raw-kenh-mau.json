@@ -26494,8 +26494,8 @@
         "status": "DUPLICATE_REAL",
         "extractedAt": "2026-09-16T18:08:18+07:00",
         "source": "free_yt_engine - xac minh 16/09/2026",
-        "folderName": null,
-        "dossierPath": null,
+        "folderName": "RAW-089_Хроники_аномалий",
+        "dossierPath": "data/raw-channels-deep/RAW-089_Хроники_аномалий",
         "duplicateOf": "RAW-089",
         "note": "XAC MINH THAT: @xronikianomaliy co CUNG channelId (UCsq59qsJPbIgMbkcCjIKWkQ) voi RAW-089 @xronikianomaly - la 1 kenh, 2 ban ghi. Ho so chuyen sau nam tai RAW-089_Хроники_аномалий.",
         "topVideosCount": 0,
@@ -29333,7 +29333,7 @@
         "views": 22732880,
         "videoCount": 58,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg"
       },
       "niche": "Khoa học / Trái Đất / Vũ trụ documentary EN",
       "editorialNiche": "Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)",
@@ -29373,8 +29373,8 @@
         "status": "DUPLICATE_REAL",
         "extractedAt": "2026-09-16T20:49:32+07:00",
         "source": "free_yt_engine - 16/09/2026 (bo sung ngach thieu)",
-        "folderName": "RAW-151_Science_Sun",
-        "dossierPath": "data/raw-channels-deep/RAW-151_Science_Sun",
+        "folderName": "RAW-126_Science_Sun",
+        "dossierPath": "data/raw-channels-deep/RAW-126_Science_Sun",
         "topVideosCount": 10,
         "tagsCount": 38,
         "subscribersLive": 92500,
@@ -29432,7 +29432,8 @@
         "latencySec": 4.66,
         "analyzedAt": "2026-09-16T15:08:03.462418+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg"
     },
     {
       "id": "RAW-152",
@@ -29446,7 +29447,7 @@
         "views": 23622359,
         "videoCount": 74,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/1-77f45e5ddb.jpg"
       },
       "niche": "Radio kể chuyện sức khỏe senior Nhật",
       "editorialNiche": "Sức khỏe Nhật",
@@ -29541,7 +29542,8 @@
         "latencySec": 3.97,
         "analyzedAt": "2026-09-16T15:08:01.122562+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/1-77f45e5ddb.jpg"
     },
     {
       "id": "RAW-153",
@@ -29555,7 +29557,7 @@
         "views": 4956429,
         "videoCount": 18,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/ch-5283eb5f81.jpg"
       },
       "niche": "Trẻ hóa / Sức khỏe trường thọ Nhật Bản",
       "editorialNiche": "Sức khỏe Nhật",
@@ -29650,7 +29652,8 @@
         "latencySec": 4.3,
         "analyzedAt": "2026-09-16T15:08:01.403198+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-5283eb5f81.jpg"
     },
     {
       "id": "RAW-154",
@@ -29664,7 +29667,7 @@
         "views": 3003200,
         "videoCount": 320,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/-x9g-502d482131.jpg"
       },
       "niche": "Tuổi vàng / Cuộc sống hạnh phúc tuổi già Nhật",
       "editorialNiche": "Sức khỏe Nhật",
@@ -29759,7 +29762,8 @@
         "latencySec": 4.57,
         "analyzedAt": "2026-09-16T15:08:04.932254+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/-x9g-502d482131.jpg"
     },
     {
       "id": "RAW-155",
@@ -29773,7 +29777,7 @@
         "views": 5722469,
         "videoCount": 195,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/Kh_eV_Gi-bdcb54d9c5.jpg"
       },
       "niche": "Sức khỏe người cao tuổi VN / Sống khỏe tuổi già",
       "editorialNiche": "Sức khỏe VN",
@@ -29868,7 +29872,8 @@
         "latencySec": 5.52,
         "analyzedAt": "2026-09-16T15:08:06.657668+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/Kh_eV_Gi-bdcb54d9c5.jpg"
     },
     {
       "id": "RAW-156",
@@ -29882,7 +29887,7 @@
         "views": 37349299,
         "videoCount": 290,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/ch-d8e54eba19.jpg"
       },
       "niche": "Tiếng nói thời đại / Kể chuyện cuộc đời senior Nhật",
       "editorialNiche": "Chuyện đời / kể chuyện senior Nhật",
@@ -29977,7 +29982,8 @@
         "latencySec": 4.08,
         "analyzedAt": "2026-09-16T15:08:03.957394+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-d8e54eba19.jpg"
     },
     {
       "id": "RAW-157",
@@ -29991,7 +29997,7 @@
         "views": 805298,
         "videoCount": 57,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/ch-4a31d0cece.jpg"
       },
       "niche": "Người kể chuyện thế hệ bạc / Ký ức Nhật",
       "editorialNiche": "Chuyện đời / kể chuyện senior Nhật",
@@ -30086,7 +30092,8 @@
         "latencySec": 6.09,
         "analyzedAt": "2026-09-16T15:08:08.091266+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-4a31d0cece.jpg"
     },
     {
       "id": "RAW-158",
@@ -30100,7 +30107,7 @@
         "views": 940132,
         "videoCount": 32,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/ch-5de5930ab7.jpg"
       },
       "niche": "Tâm lý tiền / Kinh tế học hành vi Nhật",
       "editorialNiche": "Kinh tế Nhật",
@@ -30195,7 +30202,8 @@
         "latencySec": 5.58,
         "analyzedAt": "2026-09-16T15:08:07.065610+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-5de5930ab7.jpg"
     },
     {
       "id": "RAW-159",
@@ -30209,7 +30217,7 @@
         "views": 7026931,
         "videoCount": 27,
         "country": null,
-        "avatar": ""
+        "avatar": "assets/avatars/ch-be2e7329fe.jpg"
       },
       "niche": "Ghi chú sinh hoạt senior Hàn / Sống khỏe tuổi già",
       "editorialNiche": "Sức khỏe / sinh hoạt senior Hàn",
@@ -30304,7 +30312,8 @@
         "latencySec": 4.54,
         "analyzedAt": "2026-09-16T15:08:05.794878+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-be2e7329fe.jpg"
     },
     {
       "id": "RAW-160",
@@ -30312,13 +30321,13 @@
       "channel": {
         "channelId": "UC7ZQ31YmPBPvFC0YIyTtk8Q",
         "title": "야담을 빚다",
-        "handle": null,
+        "handle": "@야담을_빚다",
         "url": "https://www.youtube.com/channel/UC7ZQ31YmPBPvFC0YIyTtk8Q",
         "subscribers": 23400,
         "views": 3652191,
         "videoCount": 74,
         "country": "KR",
-        "avatar": ""
+        "avatar": "assets/avatars/ch-bdfa16867e.jpg"
       },
       "niche": "Drama / Stories",
       "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
@@ -30369,12 +30378,12 @@
       },
       "handleHistory": [
         {
-          "handle": "",
+          "handle": "@야담을_빚다",
           "channelId": "UC7ZQ31YmPBPvFC0YIyTtk8Q",
           "firstSeenCommit": "WORKTREE-16/09-EVENING",
           "firstSeenDate": "2026-09-16",
           "source": "live:2026-09-16:search-found",
-          "verifiedAt": "2026-09-16"
+          "verifiedAt": "2026-09-17"
         }
       ],
       "channelLifecycle": {
@@ -30412,7 +30421,8 @@
         "latencySec": 4.58,
         "analyzedAt": "2026-09-16T15:08:06.219697+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-bdfa16867e.jpg"
     },
     {
       "id": "RAW-161",
@@ -30420,13 +30430,13 @@
       "channel": {
         "channelId": "UCKDbQhyRAqToDLBbrw1uU3w",
         "title": "주막 야담",
-        "handle": null,
+        "handle": "@주막야담꾼",
         "url": "https://www.youtube.com/channel/UCKDbQhyRAqToDLBbrw1uU3w",
         "subscribers": 20200,
         "views": 2299335,
         "videoCount": 52,
         "country": "KR",
-        "avatar": ""
+        "avatar": "assets/avatars/ch-fcb239c901.jpg"
       },
       "niche": "Drama / Stories",
       "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
@@ -30477,12 +30487,12 @@
       },
       "handleHistory": [
         {
-          "handle": "",
+          "handle": "@주막야담꾼",
           "channelId": "UCKDbQhyRAqToDLBbrw1uU3w",
           "firstSeenCommit": "WORKTREE-16/09-EVENING",
           "firstSeenDate": "2026-09-16",
           "source": "live:2026-09-16:search-found",
-          "verifiedAt": "2026-09-16"
+          "verifiedAt": "2026-09-17"
         }
       ],
       "channelLifecycle": {
@@ -30520,7 +30530,8 @@
         "latencySec": 4.44,
         "analyzedAt": "2026-09-16T15:08:06.219697+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-fcb239c901.jpg"
     },
     {
       "id": "RAW-162",
@@ -30528,13 +30539,13 @@
       "channel": {
         "channelId": "UCBc5mODVVWJtll269LvGO8Q",
         "title": "비채야담",
-        "handle": null,
+        "handle": "@비채야담",
         "url": "https://www.youtube.com/channel/UCBc5mODVVWJtll269LvGO8Q",
         "subscribers": 19500,
         "views": 2078854,
         "videoCount": 60,
         "country": "KR",
-        "avatar": ""
+        "avatar": "assets/avatars/ch-977f237b6c.jpg"
       },
       "niche": "Drama / Stories",
       "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
@@ -30585,12 +30596,12 @@
       },
       "handleHistory": [
         {
-          "handle": "",
+          "handle": "@비채야담",
           "channelId": "UCBc5mODVVWJtll269LvGO8Q",
           "firstSeenCommit": "WORKTREE-16/09-EVENING",
           "firstSeenDate": "2026-09-16",
           "source": "live:2026-09-16:search-found",
-          "verifiedAt": "2026-09-16"
+          "verifiedAt": "2026-09-17"
         }
       ],
       "channelLifecycle": {
@@ -30628,7 +30639,8 @@
         "latencySec": 5.69,
         "analyzedAt": "2026-09-16T15:08:09.173126+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-977f237b6c.jpg"
     },
     {
       "id": "RAW-163",
@@ -30636,13 +30648,13 @@
       "channel": {
         "channelId": "UCQ9N4JaIIhoPaDKPZ4gnpIQ",
         "title": "울타리야담",
-        "handle": null,
+        "handle": "@울타리야담-66",
         "url": "https://www.youtube.com/channel/UCQ9N4JaIIhoPaDKPZ4gnpIQ",
         "subscribers": 15100,
         "views": 1643709,
         "videoCount": 101,
         "country": "KR",
-        "avatar": ""
+        "avatar": "assets/avatars/ch-1fbf460bd7.jpg"
       },
       "niche": "Drama / Stories",
       "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
@@ -30693,12 +30705,12 @@
       },
       "handleHistory": [
         {
-          "handle": "",
+          "handle": "@울타리야담-66",
           "channelId": "UCQ9N4JaIIhoPaDKPZ4gnpIQ",
           "firstSeenCommit": "WORKTREE-16/09-EVENING",
           "firstSeenDate": "2026-09-16",
           "source": "live:2026-09-16:search-found",
-          "verifiedAt": "2026-09-16"
+          "verifiedAt": "2026-09-17"
         }
       ],
       "channelLifecycle": {
@@ -30736,7 +30748,8 @@
         "latencySec": 4.87,
         "analyzedAt": "2026-09-16T15:08:08.212013+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-1fbf460bd7.jpg"
     },
     {
       "id": "RAW-164",
@@ -30744,13 +30757,13 @@
       "channel": {
         "channelId": "UCzhZwfb05mVKpybL-Uy9wzA",
         "title": "야담결",
-        "handle": null,
+        "handle": "@야담결",
         "url": "https://www.youtube.com/channel/UCzhZwfb05mVKpybL-Uy9wzA",
         "subscribers": 14600,
         "views": 653547,
         "videoCount": 5,
         "country": "KR",
-        "avatar": ""
+        "avatar": "assets/avatars/ch-0b6144ff55.jpg"
       },
       "niche": "Drama / Stories",
       "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
@@ -30801,12 +30814,12 @@
       },
       "handleHistory": [
         {
-          "handle": "",
+          "handle": "@야담결",
           "channelId": "UCzhZwfb05mVKpybL-Uy9wzA",
           "firstSeenCommit": "WORKTREE-16/09-EVENING",
           "firstSeenDate": "2026-09-16",
           "source": "live:2026-09-16:search-found",
-          "verifiedAt": "2026-09-16"
+          "verifiedAt": "2026-09-17"
         }
       ],
       "channelLifecycle": {
@@ -30844,7 +30857,8 @@
         "latencySec": 4.4,
         "analyzedAt": "2026-09-16T15:08:13.677040+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-0b6144ff55.jpg"
     },
     {
       "id": "RAW-165",
@@ -30852,13 +30866,13 @@
       "channel": {
         "channelId": "UClPxAd8Wa8lvzWHoL_wFlOQ",
         "title": "조선천일 야담",
-        "handle": null,
+        "handle": "@1001joseon",
         "url": "https://www.youtube.com/channel/UClPxAd8Wa8lvzWHoL_wFlOQ",
         "subscribers": 10500,
         "views": 809808,
         "videoCount": 74,
         "country": "KR",
-        "avatar": ""
+        "avatar": "assets/avatars/ch-0d8a97e731.jpg"
       },
       "niche": "Drama / Stories",
       "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
@@ -30909,12 +30923,12 @@
       },
       "handleHistory": [
         {
-          "handle": "",
+          "handle": "@1001joseon",
           "channelId": "UClPxAd8Wa8lvzWHoL_wFlOQ",
           "firstSeenCommit": "WORKTREE-16/09-EVENING",
           "firstSeenDate": "2026-09-16",
           "source": "live:2026-09-16:search-found",
-          "verifiedAt": "2026-09-16"
+          "verifiedAt": "2026-09-17"
         }
       ],
       "channelLifecycle": {
@@ -30952,7 +30966,8 @@
         "latencySec": 3.87,
         "analyzedAt": "2026-09-16T15:08:28.782028+00:00",
         "source": "rss_clean"
-      }
+      },
+      "avatar": "assets/avatars/ch-0d8a97e731.jpg"
     },
     {
       "id": "RAW-166",

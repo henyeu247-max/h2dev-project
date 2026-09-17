@@ -1,3 +1,51 @@
+## 2026-09-17 — 🔥 SỬA GỐC RỄ: CSS Build Cũ 29/08 Khiến ~500 Class Không Tồn Tại (Kế Hoạch B8 Chưa Từng Thực Thi)
+
+### 🔍 Chẩn đoán gốc rễ (bằng chứng cứng, không phỏng đoán)
+1. **`assets/tailwind.css` build từ 29/08/2026** nhưng `index.html` được sửa tới 17/09 → **hàng trăm class Tailwind viết sau đó không hề tồn tại trong CSS thật được nạp**.
+   - Bằng chứng đo computed-style trên trình duyệt thật trước khi sửa: `.w-4` = **0px**, `.divide-y` = **0px**, `.border-2` = **0px**, `.ml-4` = **0px**, `.pb-2` = **0px**, `.rounded-r-xl` = **0px**, `.whitespace-pre-wrap` = **normal**, `.backdrop-blur-sm` = **none**… → toàn bộ hiệu ứng layout/spacing/radius này **chết âm thầm** trên UI live.
+2. **`tailwind.config.js content` chỉ quét `['./index.html','./player.html']`** → thiếu `learn.html` và `assets/*.js` (nơi sinh class động).
+3. **Thiếu 4 mã màu trong config:** `brand-300` (dùng 20 lần), `brand-900` (1), `brand-950` (2), `ink-950` (1) → các utility này không bao giờ được sinh.
+4. **`assets/viddar.css` chứa 51 "shim" thủ công** vá tạm cho CSS cũ — trong đó `.gap-3.5 { gap: 12px }` **sai chuẩn Tailwind** (đúng phải 14px).
+5. **Checker cũ `check-ui-full.js` đã bị xóa** và từng kiểm file CSS mồ côi (`app.css`) → báo "OK" giả (đã ghi nhận trong `KE-HOACH-SUA-CHUA-TOAN-DIEN-2026-08-27.md` mục **B8** nhưng **chưa bao giờ được thực thi**).
+6. **3 class CSS thật sự bị mất** khi restructure: `.toast-msg` (player.html tạo qua `showToast()`), `.stat-glyph` (index.html `statCard()`), `.month-sec` (learn.js tab "Mới cập nhật").
+7. **2 class chết `prose`/`prose-invert`** trong index.html — chưa bao giờ có CSS; mọi style đã được `inlineMdFull()` gắn inline.
+
+### 🛠️ Can thiệp gốc rễ (đúng tầng hệ thống)
+1. **Rebuild Tailwind thật:** `npm run build:css` → `assets/tailwind.css` từ 17.921 → **32.625 bytes** (selector 271 → 500).
+2. **Sửa `tailwind.config.js`:** `content: ['./index.html','./player.html','./learn.html','./assets/*.js']`; thêm đủ `brand-300/900/950` + `ink-950` vào palette.
+3. **Dọn 28 shim lỗi thời** trong `viddar.css` (giá trị y hệt bản build mới hoặc không nơi nào dùng) — size 41.655 → **39.642 bytes**. `.gap-3.5` giờ do Tailwind cung cấp = **14px chuẩn** (trước sai 12px).
+4. **Khôi phục 3 CSS bị mất vào đúng file sở hữu:**
+   - `.toast-msg` + `@keyframes toastSlideUp` + mobile override → `assets/player.css`.
+   - `.stat-glyph { font-size: 17px }` → `assets/viddar.css` (ngay sau `.stat-icon`).
+   - `.month-sec { padding-left: 10px; border-left: 2px solid var(--border) }` → `assets/learn.css` (ngay sau `.mod-sec`).
+5. **Xóa 2 class chết** `prose`/`prose-invert` khỏi index.html (giữ `.max-w-none` có CSS thật).
+6. **Tạo checker mới `scripts/check-ui-classes.js`** (thay thế `check-ui-full.js` đã mất): parse chính `<link rel="stylesheet">` của từng trang, đối chiếu class thật dùng ↔ union CSS thật nạp; phân loại FAIL (utility) vs WARN (custom); có allowlist hook JS kèm chứng cứ.
+7. **Tích hợp checker vào `validate-project.js`** — từ nay `npm run validate` tự động chặn mọi class thiếu CSS, không thể tái phát.
+8. **Cập nhật cache-busting:** cả 3 trang đổi `?v=20260912v2` → `?v=20260917css1`.
+
+### ✅ Bằng chứng nghiệm thu (before → after trên trình duyệt thật)
+| Class | Trước | Sau |
+|---|---|---|
+| `.w-4` | 0px | **16px** |
+| `.border-2` | 0px | **2px** |
+| `.ml-4` | 0px | **16px** |
+| `.pb-2` | 0px | **8px** |
+| `.rounded-r-xl` | 0px | **16px** |
+| `.divide-y` (child) | 0px | **1px** |
+| `.whitespace-pre-wrap` | normal | **pre-wrap** |
+| `.backdrop-blur-sm` | none | **blur(4px)** |
+| `.border-collapse` | separate | **collapse** |
+| `.gap-3.5` | 12px (sai) | **14px (chuẩn)** |
+| `.toast-msg` | (không tồn tại) | **fixed/24px/z-100/animation** |
+| `.month-sec` (14 sections) | (không tồn tại) | **padding 10px + border-left 2px** |
+
+- **Regression test:** 9 tab index + player + learn — 0 tràn ngang, 0 ảnh lỗi; mobile 375px tab 32/30/30px.
+- **Test âm checker:** chèn class giả `.w-999` → `validate-project.js` **FAIL đúng như thiết kế**; gỡ ra → PASS.
+- `node scripts/check-ui-classes.js` → **OK 3/3 trang**.
+- `node scripts/validate-project.js` → **PASS**; `sync-counts.js --check` → **OK 100%**.
+
+---
+
 ## 2026-09-17 — Chuẩn Hóa 100% Touch Targets Mobile (WCAG 2.5.8): Tất Cả Nút Bấm & Link Đạt Chuẩn 38px+
 
 ### 🎯 Rà soát chuyên sâu toàn bộ các tab trên Mobile (375×667)

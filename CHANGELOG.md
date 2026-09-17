@@ -1,3 +1,32 @@
+## 2026-09-17 — Toàn Diện 156 Kênh Raw: Hoàn Tất 156/156 Avatars, Cập Nhật Handle Sống & Chuẩn Hóa Dossier Path
+
+### 🎯 Vấn đề phát hiện qua rà soát đa tầng
+Khi kiểm toán toàn diện toàn bộ kho dữ liệu đối thủ `data-tabs/raw-kenh-mau.json` (156 records):
+1. **Thiếu avatar ở 15 kênh (RAW-151 đến RAW-165):**
+   - RAW-151 đến RAW-159 vốn đã có file ảnh đại diện chất lượng cao trên đĩa trong `assets/avatars/` nhưng chưa được trỏ đường dẫn trong `raw-kenh-mau.json`.
+   - RAW-160 đến RAW-165 (6 kênh Dã sử Triều Tiên / Yadam Hàn Quốc) thiếu handle và avatar do lúc cào ban đầu qua RSS/free_yt_engine chỉ lưu channel ID.
+2. **Lệch đường dẫn hồ sơ dossier:**
+   - RAW-151 (`duplicateOf: RAW-126`) trỏ vào thư mục `RAW-151_Science_Sun` không tồn tại thay vì trỏ về hồ sơ gốc `RAW-126_Science_Sun`.
+   - RAW-127 (`duplicateOf: RAW-089`) trỏ sai slug tiếng Anh thay vì tên thư mục Cyrillic chuẩn `RAW-089_Хроники_аномалий`.
+
+### 🛠️ Can thiệp kỹ thuật chuẩn chỉ
+1. **Đồng bộ Avatar 100% (156/156 records):**
+   - Trỏ 9 kênh RAW-151..159 về file avatar cục bộ có sẵn.
+   - Dùng Python kết nối trực tiếp YouTube live bóc tách chính xác 6 handle và tải 6 ảnh đại diện chính thức của cụm kênh Yadam (`RAW-160` `@야담을_빚다`, `RAW-161` `@주막야담꾼`, `RAW-162` `@비채야담`, `RAW-163` `@울타리야담-66`, `RAW-164` `@야담결`, `RAW-165` `@1001joseon`) lưu vào `assets/avatars/ch-*.jpg`.
+2. **Chuẩn hóa Dossier Path & Handle History:**
+   - Cập nhật `dossierPath` của RAW-151 và RAW-127 về đúng thư mục cha. Đạt **155/156 hồ sơ tồn tại thực tế trên đĩa** (1 trường hợp duy nhất là `RAW-012` đã ghi chú rõ ràng trạng thái `TERMINATED_BY_YOUTUBE` do bị YouTube gỡ bỏ).
+   - Đồng bộ `handleHistory` khớp 1-1 với `channel.handle` cho toàn bộ 6 kênh Yadam.
+3. **Tái nạp Master Database:** Ingest lại SQLite Master DB, xác nhận 296 competitor channels và 1419 top videos.
+
+### ✅ Bằng chứng nghiệm thu (Verification Proof)
+- `node scripts/validate-project.js`: **PASS 100% (0 lỗi, 0 cảnh báo)**.
+- `node scripts/sync-counts.js --check`: **OK — data live, manifest, docs, memory đồng bộ 100%**.
+- Tỷ lệ Avatar: **156/156 CÓ (100%)**.
+- Tỷ lệ Audio Language Info: **156/156 CÓ (100%)**.
+- Trình duyệt thật (Browser Use / CDP): Mở tab `Raw kênh` render mượt mà 156/156 kênh, hiển thị avatar sắc nét.
+
+---
+
 ## 2026-09-17 — Rà Soát Sạch 100% 136 Video Bằng Tay: Khắc Phục Nén Chữ, Triệt Tiêu Ảo Giác Whisper & Chuẩn Hóa Phụ Đề Demo
 
 ### 🎯 Vấn đề rà soát thực tế (Check-Pass bằng mắt & tai)

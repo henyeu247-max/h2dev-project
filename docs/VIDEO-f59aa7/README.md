@@ -13,10 +13,10 @@
 - **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/vip-tu-duy-nhan-ban-thi-truong-va-huong-dan-tu-a-z-cach-lam-edit-va-thumb](https://h2dev.vn/learn/study/vip-tu-duy-nhan-ban-thi-truong-va-huong-dan-tu-a-z-cach-lam-edit-va-thumb)
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Hoa Kỳ rất là tặng tranh, tuy RM của nó rất là cao, ví dụ Hoa Kỳ RM của nó trung bình là 8-10 giây, thì que thị trường Nhật Bản thì mọi người sẽ được nem ương cho em đúng không
+- Tư duy lách thị trường (US vs JP): Thị trường Hoa Kỳ cạnh tranh rất cao dù RPM cao (khoảng 8 đến 10 USD). Chuyển sang nhân bản ở thị trường Nhật Bản (JP) thì mức độ cạnh tranh thấp hơn, dễ thở hơn cho anh em.
 - Đấy, như vậy rất là ok không
 - Bởi vì như kia thì nó sẽ khiến cho người xem khá nhìn hơn và họ sẽ ít click hơn nha mọi người
-- Đấy, vấn đề thâm là chỗ đó đấy mọi người
+- Nhân bản thị trường không lo trùng lặp kịch bản: Khi làm cùng thị trường US thì phải đổi 60% kịch bản đối thủ, nhưng khi nhân bản sang thị trường khác (như Nhật Bản) chỉ cần dịch kịch bản chuẩn và tinh chỉnh lại qua AI là có thể triển khai ngay.
 
 ## 3. Kênh Mẫu & Đối Thủ Phân Tích
 - *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*

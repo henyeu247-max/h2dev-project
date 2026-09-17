@@ -14,8 +14,8 @@
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
 - Có thấy một điều là Đến cái video này nó đẹp kén view Về cái kì của cái kênh này có nghĩa là gì
-- 000 view nè 7 ngày trước nè 62
-- 000 view nè Đấy mọi người xem nè Về những cái ký này á Phải nói là edit cực kỳ là dễ luôn Đây anh em có thể xem nè nha Mọi người có thấy không
+- Tốc độ cắn view ngách Nhật Bản: Video mới đăng 7 ngày trước đã đạt hơn 62.000 view chứng minh thị trường ngoại rất dễ cắn đề xuất nếu chọn đúng ngách.
+- Quy trình edit cực kỳ tinh giản: Dạng nội dung này chỉ cần 1 ảnh chân dung kết hợp hiệu ứng chuyển động nhẹ và lồng tiếng AI là hoàn thành 1 video.
 - Chỉ có cần một ảnh thôi nha Đấy mọi người có thấy không
 
 ## 3. Kênh Mẫu & Đối Thủ Phân Tích
@@ -27,9 +27,8 @@
 - **Bổ sung:** Chỉ cần 1 video như vậy thì mọi người đã đủ sub rồi, nhầm, đủ giờ xem rồi đúng không
 
 ## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ 000 view nè 7 ngày trước nè 62
-- ⚠️ 000 view nè Đấy mọi người xem nè Về những cái ký này á Phải nói là edit cực kỳ là dễ luôn Đây anh em có thể xem nè nha Mọi người có thấy không
-- ⚠️ 000 view liền Rồi lại lát rồi Đợi em reset lại nha Mình sẽ nhật ra cho lại bác Đấy Rồi Đây tiếp tục là cái video này 8 ngày trước Trời ơi hơn 200
+- ⚠️ Không đâm đầu vào thị trường US: Cạnh tranh khốc liệt và thuế US rất cao; nên nhân bản sang thị trường Nhật Bản (RPM 5 đến 6 USD) hoặc Hàn Quốc (RPM 4 đến 5 USD) ít cạnh tranh hơn.
+- ⚠️ Không chọn video quá cũ để nhân bản: Tránh lấy video đối thủ đăng từ 1–2 tháng trước, phải ưu tiên các video bão view mới nhất trong vòng 7–8 ngày để bám sát thuật toán.
 
 ## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
 - **Timeline chi tiết:**

@@ -13,8 +13,8 @@
 - **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/share-key-ngach-cuc-nho-view-viet-moi-va-huong-dan-tu-tao-prompt-lay-kich-ban-theo-chu-yeu-bat-ky-update-882025](https://h2dev.vn/learn/study/share-key-ngach-cuc-nho-view-viet-moi-va-huong-dan-tu-tao-prompt-lay-kich-ban-theo-chu-yeu-bat-ky-update-882025)
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- 000 sub thôi bây giờ là hơn 20 25
-- 000 sub luôn anh em ạ dạng này bây giờ nó lên xuống về cái sub nó lên rất cao nha Đấy, mọi người thấy không
+- Tốc độ tăng sub thần tốc ngách sức khỏe người già: Kênh theo dõi 4 ngày trước mới 10.000 sub, nay đã nhảy vọt lên hơn 20.000 – 25.000 sub chứng minh tệp khán giả cao tuổi cắn view và đăng ký cực mạnh.
+- Dạng content người già cắn view cao: Lên sub rất nhanh và ổn định, khán giả lớn tuổi có thói quen bấm theo dõi để nghe đều đặn.
 - Về là chủ đề là người già, về sức khỏe, kiểu như nói chung là đủ tuổi người già anh em
 - Nhưng mà cái ngách đó là cái ngách lớn
 
@@ -27,8 +27,8 @@
 - **Bổ sung:** Xin biến chào các bạn đã quay trở lại với kênh Radio Đạo và Đời
 
 ## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ 000 view về video 3 ngày trước hơn 200
-- ⚠️ 000 view thì người phải là ưu tiên và nên lấy cái video mà hơn 200
+- ⚠️ Tránh làm ngách chung chung không có điểm nhấn: Ngách sức khỏe người già là ngách lớn, nếu không đi sâu vào ngách con cụ thể (thói quen, tuổi tác, nỗi sợ) thì view sẽ rất thấp.
+- ⚠️ Không lấy video cũ quá 1 tháng: Phải ưu tiên kịch bản từ video mới nhất vừa nổ view (2–3 ngày gần nhất) của kênh đối thủ để thuật toán YouTube dễ cắn đề xuất.
 
 ## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
 - **Timeline chi tiết:**

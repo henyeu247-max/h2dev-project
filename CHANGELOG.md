@@ -1,3 +1,46 @@
+## 2026-09-18 — Dọn Rác Toàn Dự Án + Chuyển CSS Về Đúng Tầng Build + Vô Hiệu 3 Script Nguy Hiểm
+
+### 🔍 Bằng chứng trước khi hành động (không xóa mù)
+1. **`assets/app.css` (12.003 bytes) + `assets/studio.css` (7.255 bytes) là file MỒ CÔI:**
+   - `grep '<link rel=stylesheet>'` cả 3 trang HTML: **0/3 nạp 2 file này**.
+   - `git grep` toàn repo: chỉ 1 tham chiếu (trong comment của checker mới) — **0 script gọi**.
+   - Kiểm tra 68 selector của `app.css` + 62 selector của `studio.css`: **0 class đang dùng thiếu CSS** (đã khôi phục `.toast-msg` ở đợt trước).
+2. **`scripts/generate_escaped_css.py` lỗi thời:** chỉ ghi thêm rule escape vào `app.css` (file mồ côi) → chạy cũng vô tác dụng.
+3. **3 script sinh data SAI nguy hiểm** (phát hiện qua dry-run an toàn):
+   - `build-modules.js` → 11 modules, **thiếu module Zoom M11** (4 bài), M06 gộp sai 93 vs 89.
+   - `build-modules-v2.js` → 11 modules, chỉ phân **129/136 bài** (7 bài rơi rụng).
+   - `normalize_raw_kenh_mau.cjs` → patch 1 lần cho **95 record**, trong khi `raw-kenh-mau.json` hiện có **156** → chạy sẽ mất 61 records.
+   - Cả 3 đều **không nằm trong pipeline nào** (`package.json`, `validate-project.js`, `server.js` không gọi) nhưng để trong `scripts/` là **bẫy chết người** (như B8 trước đây).
+4. **`scripts/normalize-raw-channels.py` trỏ sai thư mục:** `"Raw Kênh Mẫu Tìm Kiếm"` (không tồn tại) thay vì `raw-kenh-goc` (TREE.md chuẩn).
+5. **`.cache/` KHÔNG phải rác:** là cache runtime (checkpoint vision, thumbnail RAW-001..168, reload-state) — đã git-ignored, giữ nguyên theo TREE.md.
+
+### 🛠️ Can thiệp (đúng tầng, có backup)
+1. **Chuyển CSS đè touch-target về đúng nguồn Tailwind:**
+   - Gỡ 34 dòng CSS đè khỏi `assets/viddar.css` → chuyển vào `css/input.css` (nguồn duy nhất).
+   - Gộp `.stat-glyph` vào `css/input.css`, xóa bản trùng trong `viddar.css`.
+   - Chạy `npm run build:css` → `assets/tailwind.css` **33.129 bytes** (từ 32.625).
+   - Kết quả: touch-target vẫn đạt chuẩn 38px+, nhưng nay **sinh từ pipeline chính thức**, không phải CSS đè.
+2. **Xóa 3 file rác mồ côi** (backup tại `_backup/20260918-obsolete-css-cleanup/`):
+   - `assets/app.css`, `assets/studio.css`, `scripts/generate_escaped_css.py`.
+3. **Dời 3 script nguy hiểm vào `_archive/20260918-obsolete-build-modules/`** kèm `README.md` giải thích chi tiết lý do + cảnh báo nếu chạy lại.
+4. **Sửa `normalize-raw-channels.py`:** cập nhật đường dẫn `raw-kenh-goc` + thêm guard kiểm tra tồn tại thư mục/file trước khi chạy.
+5. **Dọn rác vận hành:**
+   - 4 log cũ/rỗng trong `logs/` (backup tại `_backup/20260918-cleanup-junk/logs/`).
+   - **154 file** script ad-hoc + run-output trong `_audit/` (backup tại `_backup/20260918-cleanup-junk/audit-adhoc/`).
+   - Giữ lại `_audit/`: 1 báo cáo `.md` + 17 `.json` dump + 48 ảnh proof + 24 thư mục nhật ký theo ngày.
+6. **Cập nhật tài liệu SSoT:**
+   - `TREE.md`: ghi rõ `assets/tailwind.css` là **BUILD từ `css/input.css`**; thêm `_archive/20260918-obsolete-build-modules`; thêm quy tắc "Sửa CSS → build:css → check-ui-classes".
+   - `AGENTS.md` / `knowledge-hub/docs/RULE-LAM-VIEC.md`: đồng bộ mô tả.
+
+### ✅ Bằng chứng Check-Pass
+- **Regression UI (trình duyệt thật 1440×900):** 9 tab index — 0 tràn ngang, 0 ảnh lỗi; `learn.html` = **12 modules / 136 bài / CÓ module Zoom**; `player.html` = video + 5 insights + 2 docs + 3 channels + toast hoạt động (`fixed`, `animation: toastSlideUp`).
+- **Mobile 375×667:** 5 tab kiểm — 0 tràn ngang; touch target chỉ còn 1 link **inline trong câu văn** (miễn trừ WCAG 2.5.8).
+- **Pipeline:** `check-ui-classes.js` **OK 3/3 trang** | `validate-project.js` **PASS** | `sync-counts.js --check` **OK 100%** (136/165/45/153/34/27/156 không đổi).
+- **Dry-run an toàn trước khi dời:** xác nhận `build-modules*.js` sinh 11 modules (mất Zoom), `normalize_raw_kenh_mau.cjs` chỉ biết 95 records.
+- **Backup đầy đủ:** `_backup/20260918-obsolete-css-cleanup/` (3 file) + `_backup/20260918-cleanup-junk/` (4 log + 154 audit file).
+
+---
+
 ## 2026-09-17 — 🔥 SỬA GỐC RỄ: CSS Build Cũ 29/08 Khiến ~500 Class Không Tồn Tại (Kế Hoạch B8 Chưa Từng Thực Thi)
 
 ### 🔍 Chẩn đoán gốc rễ (bằng chứng cứng, không phỏng đoán)

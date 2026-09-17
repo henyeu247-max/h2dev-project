@@ -3,9 +3,18 @@ import json, os, sys, time, urllib.request, base64
 sys.stdout.reconfigure(encoding='utf-8')
 
 WORKDIR = r"D:\YTB\H2DEV-Project"
-RAW_DIR = os.path.join(WORKDIR, "Raw Kênh Mẫu Tìm Kiếm")
+RAW_DIR = os.path.join(WORKDIR, "raw-kenh-goc")  # 18/09/2026: dời từ "Raw Kênh Mẫu Tìm Kiếm" (TREE.md)
 META_PATH = os.path.join(RAW_DIR, "metadata-full.json")
 PROGRESS_PATH = os.path.join(RAW_DIR, "metadata-normalized.json")
+
+if not os.path.isdir(RAW_DIR):
+    print(f"[LOI] Thu muc khong ton tai: {RAW_DIR}")
+    print("       Kiem tra TREE.md de biet duong dan chuan.")
+    sys.exit(1)
+if not os.path.exists(META_PATH):
+    print(f"[LOI] Thieu file: {META_PATH}")
+    sys.exit(1)
+
 
 def call_mcp(tool_name, arguments, timeout=40):
     body = json.dumps({

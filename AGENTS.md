@@ -37,6 +37,22 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | **ffprobe (kiểm định media)** | `D:\Linly-Dubbing\bin\ffprobe.exe` — **KHÔNG có trong PATH**; script audit phải trỏ thẳng hoặc thêm vào PATH |
 | Changelog | `d:\YTB\H2DEV-Project\CHANGELOG.md` |
 
+## Quy trình CSS (Tailwind build — BẮT BUỘC)
+
+> **Gốc rễ lịch sử:** `assets/tailwind.css` từng bị build cũ 19 ngày (29/08→17/09/2026) khiến ~500 class
+> viết trong HTML **không tồn tại** → UI chết âm thầm. Đừng lặp lại.
+
+| Bước | Lệnh |
+|---|---|
+| 1. Sửa nguồn | `css/input.css` (custom) hoặc `tailwind.config.js` (token/content) |
+| 2. Build lại | `npm run build:css` |
+| 3. Kiểm tra class thiếu | `node scripts/check-ui-classes.js` |
+| 4. Kiểm tra tổng | `node scripts/validate-project.js` (tự gọi bước 3) |
+
+- **KHÔNG** sửa trực tiếp `assets/tailwind.css` (file build — sẽ mất khi rebuild).
+- **KHÔNG** thêm CSS đè vào `viddar.css` để vá class Tailwind thiếu → sửa ở nguồn.
+- Cache-busting: đổi `?v=` trong 3 file HTML khi CSS thay đổi đáng kể.
+
 ## Boot order (mỗi phiên — 7 bước chuẩn)
 
 1. `AGENTS.md` (SSoT, số liệu chuẩn, rules cứng, hạ tầng MCP/9Router)

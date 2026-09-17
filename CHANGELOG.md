@@ -1,3 +1,18 @@
+## 2026-09-17 — Nâng Cấp Thiết Kế & Trải Nghiệm Tương Tác: Global Music Launcher & Phím Tắt Phản Xạ /
+
+### 🎯 Điểm chạm thiết kế nâng cấp (Claude-Design & UX Standards)
+Theo chuẩn thiết kế `claude-design` (Surface: Monitor + Explore + Operate console) và quy trình kiểm duyệt mã `/requesting-code-review`:
+1. **Nút khởi động nhanh Trạm Nhạc Nền trên Header:** Bổ sung nút bấm `🎧 Nhạc nền` tinh tế, gọn gàng ngay tại thanh điều hướng đỉnh trang (`.vd-topbar`). Người dùng có thể bật modal phát nhạc 38 tracks từ bất kỳ tab nào (Video, Raw Kênh, Ngách, Chiến lược) mà không cần chuyển ngữ cảnh sang tab Tài liệu.
+2. **Chuẩn hóa chu kỳ đóng Modal bằng phím `Escape`:** Tích hợp `music-studio-modal` vào cơ chế lắng nghe phím Escape toàn cục, đóng mượt mà và khôi phục scroll body tức thì.
+3. **Phím tắt phản xạ nhanh `/` (Quick Search Focus):** Nhấn phím `/` ở bất kỳ vị trí nào (ngoài ô input) để focus và bôi đen thanh tìm kiếm `#fq`, mang lại trải nghiệm tương đương các developer console cao cấp (GitHub, Linear).
+
+### ✅ Bằng chứng kiểm thử & Code Review
+- Static Security Scan: 0 secrets, 0 eval/exec, 0 shell injection.
+- Browser Use / CDP Verification: Thao tác click header, Escape key và `/` key phản hồi chuẩn xác 100%.
+- Validation: `validate-project.js` PASS, `sync-counts.js` PASS 100%.
+
+---
+
 ## 2026-09-17 — Toàn Diện 156 Kênh Raw: Hoàn Tất 156/156 Avatars, Cập Nhật Handle Sống & Chuẩn Hóa Dossier Path
 
 ### 🎯 Vấn đề phát hiện qua rà soát đa tầng

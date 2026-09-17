@@ -348,6 +348,14 @@ Báo cáo kết quả công việc bắt buộc tuân thủ cấu trúc 8 mục:
 4. Xóa script tạm, giữ script tái dùng (`deep-audit.js`, `validate-project.js`).
 5. Chạy `node scripts/validate-project.js` xác nhận sạch 100% không lỗi.
 
+### 10.1 Quy tắc CSS/Tailwind (bổ sung 18/09/2026 — bài học từ sự cố B8)
+
+- `assets/tailwind.css` là **file BUILD** — sinh từ `css/input.css` + `tailwind.config.js`. Tuyệt đối không sửa tay.
+- Mọi thay đổi CSS phải theo trình tự: sửa nguồn → `npm run build:css` → `node scripts/check-ui-classes.js` → `node scripts/validate-project.js`.
+- **Cấm vá ngọn:** không thêm selector đè vào `viddar.css` để bù class Tailwind bị thiếu — phải sửa ở `tailwind.config.js` (content scan / palette) hoặc nguồn `css/input.css`.
+- `scripts/check-ui-classes.js` là guard tự động: parse `<link rel=stylesheet>` thật của từng trang rồi đối chiếu class dùng ↔ CSS nạp. Đã tích hợp vào `validate-project.js`.
+- Script sinh data cũ phải **dời `_archive/`** kèm README cảnh báo, không để lại `scripts/` (bẫy tái phát).
+
 ---
 
 ## PHẦN 11 — "THỔI VÀO TAI" MỖI PHIÊN

@@ -49,7 +49,7 @@ Y:\YTB\
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)
     │   └── raw-kenh-mau.json      # 156 record canonical (149 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 156/156 · vidIQ verified 83
     │
-    ├── assets\                    # tailwind.css · viddar.css · learn.css · fonts\ (woff2 self-host)
+    ├── assets\                    # tailwind.css (BUILD từ css/input.css) · viddar.css · learn.css · player.css · fonts\ (woff2 self-host)
     │   ├── thumbs\                # 136/136 khớp videos.json + placeholder.svg
     │   └── avatars\ · docs\
     ├── docs\
@@ -76,9 +76,12 @@ Y:\YTB\
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git
     ├── _audit\                    # raw/nhật ký kiểm chứng — web bị chặn · KHÔNG đưa lên UI
     ├── _private\                  # chỗ key local — web bị chặn
-    ├── _archive\                  # rác đã dời khỏi web serve — KHÔNG xoá (NO_DELETE) · web bị chặn
+    ├── _archive\                  # rác & script lỗi thời đã dời khỏi web serve — KHÔNG xoá (NO_DELETE) · web bị chặn
     │   ├── 20260831-rac\_verify\  # 7 file scratch (chứa SKU pending VIDEO-3F8339)
-    │   └── 20260916-junk-cleanup\ # _frames (235 file/71M) · _internal (1285 file/125M, gồm dot_git_backup\ 108M) · _drafts (4) · _tmp_audio
+    │   ├── 20260916-junk-cleanup\ # _frames (235 file/71M) · _internal (1285 file/125M, gồm dot_git_backup\ 108M) · _drafts (4) · _tmp_audio
+    │   └── 20260918-obsolete-build-modules\ # 3 script sinh data SAI (xem README.md trong đó):
+    │       # build-modules.js · build-modules-v2.js (chỉ 11 module, MẤT Zoom M11)
+    │       # normalize_raw_kenh_mau.cjs (patch 1 lần cho 95 record → nay 156)
     ├── .cache\                    # cache runtime (checkpoint, thumbnail, reload-state) · web bị chặn
     ├── logs\                      # log server/watchdog/reload · web bị chặn · KHÔNG vào git
     │   # (không còn ở gốc: _frames\ · _tmp_audio\ · _drafts\ · _internal\ — đã dời 16/09; script tự tạo lại khi chạy)
@@ -96,7 +99,8 @@ Y:\YTB\
 | Báo cáo / pipeline / pack mới | **GÔM** — vào `docs/NOI-BO` hoặc `pipelines` + 1 card `tai-lieu-full.json` |
 | Sửa data tab | Sửa JSON trong `data-tabs\` (không sửa `data\catalog*.json`) |
 | Trước sửa lớn | Copy JSON vào `_backup\<YYYYMMDD>\` |
-| Xong | `node scripts/validate-project.js` |
+| Sửa CSS (Tailwind) | Sửa `css\input.css` hoặc `tailwind.config.js` → chạy `npm run build:css` → rồi `node scripts/check-ui-classes.js` |
+| Xong | `node scripts/validate-project.js` (tự gồm check-ui-classes + guard inline-onclick) |
 
 ## Không được nằm ở gốc Y:\YTB
 

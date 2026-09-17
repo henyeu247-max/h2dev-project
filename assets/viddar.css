@@ -407,7 +407,6 @@ code { font-size: 11px; color: var(--fg-2); }
 .bento-card { display: flex; align-items: center; gap: 12px; min-height: 112px; padding: 14px 16px; }
 .stat-icon { display: grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; color: var(--brand-ink); background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px; }
 .stat-icon svg { width: 16px; height: 16px; color: inherit; }
-.stat-glyph { font-size: 17px; line-height: 1; display: block; }
 .stat-body { min-width: 0; flex: 1; }
 .stat-value { color: var(--fg); font: 600 22px/1.1 var(--font-sans); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .stat-sub { margin-top: 4px; color: var(--fg-muted); font-size: 11px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }
@@ -854,35 +853,4 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   @keyframes fadeSlide { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
   #content .truncate { overflow: visible; text-overflow: unset; white-space: normal; }
   .learn-frame { min-height: calc(100vh - 140px); }
-
-  /* Mobile touch-target upgrades (WCAG 2.5.8) — only affect small screens */
-  #content [data-open-niche],
-  #content [data-expand-niche] {
-    min-height: 38px;
-    padding: 8px 12px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-  }
-  #content .btn-open-raw-deep,
-  #content .btn-quick-demo,
-  #content .js-sug-open-modal {
-    min-height: 38px;
-  }
-  /* Action links/buttons: doc links, "Mở YouTube", module links */
-  #content a.inline-flex,
-  #content button.inline-flex {
-    min-height: 38px;
-  }
-  /* Chienluoc module rows (full-width buttons) */
-  #content button.w-full.flex {
-    min-height: 38px;
-  }
-  /* Overview "Xem toàn bộ N ngách" link-button */
-  #content .overview-link {
-    min-height: 38px;
-    padding: 8px 10px;
-    border-radius: 12px;
-  }
 }

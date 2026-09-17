@@ -596,8 +596,8 @@
       const resume = watchedResumeLabel(v.sku);
       const vUrl = '/lotrinh/' + encodeURIComponent(v.sku);
       const playBtn = resume
-        ? `<a href="${vUrl}" class="btn-press flex-1 text-center btn-primary text-xs font-bold py-2 transition-all">${resume}</a>`
-        : `<a href="${vUrl}" class="btn-press flex-1 text-center btn-primary text-xs font-bold py-2 transition-all">Xem bài</a>`;
+        ? `<a href="${vUrl}" class="btn-press flex-1 text-center btn-primary text-xs font-bold py-2.5 min-h-[38px] flex items-center justify-center transition-all">${resume}</a>`
+        : `<a href="${vUrl}" class="btn-press flex-1 text-center btn-primary text-xs font-bold py-2.5 min-h-[38px] flex items-center justify-center transition-all">Xem bài</a>`;
       return `<div class="card interactive-card overflow-hidden min-w-0 flex flex-col justify-between group">
     <div>
       <a href="${vUrl}" class="relative block aspect-video bg-black overflow-hidden" title="Xem: ${esc(v.title)}">
@@ -1927,13 +1927,13 @@
               <span class="text-emerald-400 font-medium ml-auto">🛡️ ${esc(vA.healthBadge || (r.deepIntelligence.longevityStatus ? r.deepIntelligence.longevityStatus.replace(/\(.*?\)/g, '').trim() : ''))}</span>
             </div>` : ''}
             ${(r.featuredDemoVideo && r.featuredDemoVideo.videoId) ? `
-            <button type="button" class="js-quick-video btn-quick-demo w-full mt-1.5 py-1.5 px-2 bg-rose-950/40 hover:bg-rose-900/60 border border-rose-500/40 hover:border-rose-400 text-rose-200 hover:text-white rounded-xl text-[11px] font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer" data-vid="${esc(r.featuredDemoVideo.videoId)}" data-title="${esc(r.featuredDemoVideo.title)}" data-channel="${esc((ch.title || r.id).trim())}" data-badge="🎬 Demo Tuyến Nội Dung">
+            <button type="button" class="js-quick-video btn-quick-demo w-full mt-1.5 py-2 px-2 bg-rose-950/40 hover:bg-rose-900/60 border border-rose-500/40 hover:border-rose-400 text-rose-200 hover:text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer min-h-[38px]" data-vid="${esc(r.featuredDemoVideo.videoId)}" data-title="${esc(r.featuredDemoVideo.title)}" data-channel="${esc((ch.title || r.id).trim())}" data-badge="🎬 Demo Tuyến Nội Dung">
               <span>🎬 Xem Demo Tuyến Mới Nhất</span> <span class="text-xs font-bold text-rose-400">▶</span>
             </button>` : ''}
-            <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-1.5 px-2 bg-gradient-to-r from-blue-900/60 to-indigo-900/60 hover:from-blue-800/80 hover:to-indigo-800/80 border border-blue-500/50 hover:border-blue-400 text-blue-200 hover:text-white rounded-xl text-[11px] font-bold flex items-center justify-center gap-1.5 transition cursor-pointer shadow-lg shadow-blue-950/50" data-raw-id="${esc(r.id)}" data-jump="mission-control">
+            <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-2 px-2 bg-gradient-to-r from-blue-900/60 to-indigo-900/60 hover:from-blue-800/80 hover:to-indigo-800/80 border border-blue-500/50 hover:border-blue-400 text-blue-200 hover:text-white rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition cursor-pointer shadow-lg shadow-blue-950/50 min-h-[38px]" data-raw-id="${esc(r.id)}" data-jump="mission-control">
               <span>⚡ Xem Prompts & Vũ Khí Tác Chiến</span> →
             </button>
-            <button type="button" class="btn-open-raw-deep w-full mt-1 py-1.5 px-2.5 bg-brand-900/30 hover:bg-brand-800/50 border border-brand-500/30 hover:border-brand-400 text-brand-300 hover:text-white rounded-xl text-[11px] font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer" data-raw-id="${esc(r.id)}">
+            <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-2 px-2.5 bg-brand-900/30 hover:bg-brand-800/50 border border-brand-500/30 hover:border-brand-400 text-brand-300 hover:text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer min-h-[38px]" data-raw-id="${esc(r.id)}">
               <span>📊 Xem Hồ Sơ & Top Videos Chi Tiết</span> →
             </button>
             <div class="mt-auto pt-2.5 border-t border-ink-700 flex items-center justify-between gap-2 text-[11px]">

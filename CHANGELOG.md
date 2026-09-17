@@ -1,3 +1,19 @@
+## 2026-09-17 — Nâng Cấp Toàn Diện UI Mobile (Phone): Chuẩn Hóa Touch Targets 38px+, Cân Bằng Tab Bar & Trải Nghiệm Cảm Ứng
+
+### 🎯 Điểm chạm nâng cấp Mobile (Claude-Design & Touch Target Guidelines)
+Theo chỉ đạo kiểm toán giao diện trên điện thoại di động:
+1. **Khắc phục lỗi vỡ chiều cao Tab Bar trên màn hình nhỏ (`player.html`):**
+   - Rút gọn nhãn tab đầu thành `📋 Bài học` trên mobile (hiện `& Tài liệu` ở desktop/tablet) và cố định `min-h-[38px]`.
+   - Kết quả: Chiều cao 3 tab đồng nhất 30–32px (trước đó bị lệch 47px vs 30px do rớt dòng chữ trên màn hình 375px).
+2. **Nâng cấp Touch Targets đạt chuẩn ngón tay bấm (`index.html`):**
+   - Tăng chiều cao các nút hành động cốt lõi từ 30px lên chuẩn tối thiểu 38px (`min-h-[38px] flex items-center justify-center`).
+   - Nút `Xem bài` (Video cards) và bộ 3 nút tác chiến (Raw Kênh: Demo Tuyến, Prompts & Vũ Khí, Xem Hồ Sơ) bấm cực kỳ chính xác, triệt tiêu tình trạng bấm trượt trên màn hình cảm ứng.
+3. **Kiểm tra độ toàn vẹn Mobile:**
+   - 100% các tab không có lỗi tràn thanh cuộn ngang (`hasHorizontalOverflow: false`).
+   - Thanh điều hướng đáy trang (`#bottom-nav`) 7 nút đạt kích thước 52x55px, hỗ trợ menu trượt `Khác` mượt mà.
+
+---
+
 ## 2026-09-17 — Nâng Cấp Thiết Kế & Trải Nghiệm Tương Tác: Global Music Launcher & Phím Tắt Phản Xạ /
 
 ### 🎯 Điểm chạm thiết kế nâng cấp (Claude-Design & UX Standards)

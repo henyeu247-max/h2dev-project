@@ -45,13 +45,13 @@
 
   <!-- Mobile & Compact View Segmented Tab Control -->
   <div class="flex items-center gap-1 p-1 mb-4 bg-surface-2 border border-border rounded-xl" id="playerTabSelector" role="tablist">
-    <button type="button" role="tab" aria-selected="true" class="flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-all text-center flex items-center justify-center gap-1" onclick="setPlayerTab('overview', this)">
-      <span>📋</span><span>Bài học &amp; Tài liệu</span>
+    <button type="button" role="tab" aria-selected="true" class="flex-1 py-2 px-2 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-all text-center flex items-center justify-center gap-1 min-h-[38px]" onclick="setPlayerTab('overview', this)">
+      <span>📋</span><span>Bài học<span class="hidden sm:inline"> &amp; Tài liệu</span></span>
     </button>
-    <button type="button" role="tab" aria-selected="false" class="flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1" onclick="setPlayerTab('insights', this)">
+    <button type="button" role="tab" aria-selected="false" class="flex-1 py-2 px-2 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1 min-h-[38px]" onclick="setPlayerTab('insights', this)">
       <span>🧠</span><span>Phân tích AI</span>
     </button>
-    <button type="button" role="tab" aria-selected="false" class="flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1" onclick="setPlayerTab('transcript', this)">
+    <button type="button" role="tab" aria-selected="false" class="flex-1 py-2 px-2 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1 min-h-[38px]" onclick="setPlayerTab('transcript', this)">
       <span>💬</span><span>Phụ đề</span>
     </button>
   </div>

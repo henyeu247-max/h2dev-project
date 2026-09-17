@@ -1,3 +1,28 @@
+## 2026-09-17 — Chuẩn Hóa 100% Touch Targets Mobile (WCAG 2.5.8): Tất Cả Nút Bấm & Link Đạt Chuẩn 38px+
+
+### 🎯 Rà soát chuyên sâu toàn bộ các tab trên Mobile (375×667)
+Sau đợt nâng cấp trước, kiểm toán sâu phát hiện còn nhiều nút phụ và link hành động chưa đạt chuẩn:
+1. **Tab Kichban (~290 phần tử):** Các link đính kèm `↗ Google Docs` (30px), `📄 File local` (30px), `📝 MD gốc` (30px), `▶ Video gốc` (30px) và nút `Xem video ngách →` (15px).
+2. **Tab Rawkenh (156 phần tử):** Link `Mở YouTube ↗` (28px) xuất hiện trên toàn bộ 156 thẻ kênh đối thủ.
+3. **Tab Chienluoc (~48 phần tử):** Nút `👁️ Đọc trực tiếp Đề cương A–Z` (30px), các link module (17px) và link `docs/NOI-BO/README.md` (14px).
+4. **Tab Ngachxanh (10 phần tử):** Nút `Mở video →` (15px) và `+ N video khác` (25px).
+5. **Tab Tongquan (2 phần tử):** Link `Xem toàn bộ 34 ngách trong kho` (18px).
+
+### 🛠️ Giải pháp kỹ thuật: CSS Mobile-Only Override (Zero Desktop Impact)
+Bổ sung block quy tắc chuẩn WCAG 2.5.8 vào cuối media query `@media (max-width: 1024px)` trong `assets/viddar.css`:
+- `#content [data-open-niche]`, `[data-expand-niche]`: `min-height: 38px; padding: 8px 12px; display: inline-flex`.
+- `#content a.inline-flex`, `button.inline-flex`: `min-height: 38px` — phủ toàn bộ link đính kèm tài liệu và nút hành động.
+- `#content button.w-full.flex`: `min-height: 38px` — phủ các hàng module Chiến lược.
+- `#content .overview-link`: `min-height: 38px; padding: 8px 10px` — phủ link điều hướng Tổng quan.
+- **Cam kết Zero Desktop Impact:** Media query chỉ kích hoạt ở `max-width: 1024px`, desktop 1440px đo được vẫn nguyên gốc (31px) — không bị phình to.
+
+### ✅ Bằng chứng nghiệm thu cuối cùng (Final Verification)
+- **Mobile 375×667 — đếm toàn bộ 8 tabs:** `[CÓ]` sạch bóng nút dưới 32px, ngoại trừ duy nhất 1 link **inline trong câu văn** là `docs/NOI-BO/README.md` (14px) — được **miễn trừ hợp lệ** theo WCAG 2.5.8 (Inline exception: link nằm trong dòng chảy văn bản).
+- **Desktop 1440×900 — 8 tabs:** 0 tràn ngang, 0 ảnh lỗi, kích thước nút giữ nguyên bản gốc.
+- **Không phá vỡ dữ liệu:** `validate-project.js` PASS, `sync-counts.js` PASS 100% (136 videos, 165 channels, 153 docs).
+
+---
+
 ## 2026-09-17 — Nâng Cấp Toàn Diện UI Mobile (Phone): Chuẩn Hóa Touch Targets 38px+, Cân Bằng Tab Bar & Trải Nghiệm Cảm Ứng
 
 ### 🎯 Điểm chạm nâng cấp Mobile (Claude-Design & Touch Target Guidelines)

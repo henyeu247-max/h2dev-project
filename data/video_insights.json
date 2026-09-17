@@ -874,7 +874,7 @@
     "market_code": "VN",
     "key_takeaways": [
       "View kinh khủng khiếp chưa",
-      "Em s d sang ti Vi cho m ng xem nha Ng c ti c n n T x kh n C th xem s d t kho n N chung l nh c d h n th ch y l c l t b Billy th m ng Đó",
+      "Em dịch sang tiếng Việt cho mọi người xem nha. Mọi người đọc tiêu đề của nó nè: có thể xem được số dư tài khoản. Nói chung những dạng hình này chủ yếu lấy từ bên Bilibili thôi mọi người.",
       "Thì tí nữa em cho mọi người xem một cái kênh ở một thị trường khác nữa nha",
       "Nói chung là dạng Reop này thôi mọi người"
     ],
@@ -1110,8 +1110,8 @@
     "market_code": "JP",
     "key_takeaways": [
       "Có thấy một điều là Đến cái video này nó đẹp kén view Về cái kì của cái kênh này có nghĩa là gì",
-      "000 view nè 7 ngày trước nè 62",
-      "000 view nè Đấy mọi người xem nè Về những cái ký này á Phải nói là edit cực kỳ là dễ luôn Đây anh em có thể xem nè nha Mọi người có thấy không",
+      "Tốc độ cắn view ngách Nhật Bản: Video mới đăng 7 ngày trước đã đạt hơn 62.000 view chứng minh thị trường ngoại rất dễ cắn đề xuất nếu chọn đúng ngách.",
+      "Quy trình edit cực kỳ tinh giản: Dạng nội dung này chỉ cần 1 ảnh chân dung kết hợp hiệu ứng chuyển động nhẹ và lồng tiếng AI là hoàn thành 1 video.",
       "Chỉ có cần một ảnh thôi nha Đấy mọi người có thấy không"
     ],
     "edit_sop": {
@@ -1122,9 +1122,8 @@
       ]
     },
     "avoid_flags": [
-      "000 view nè 7 ngày trước nè 62",
-      "000 view nè Đấy mọi người xem nè Về những cái ký này á Phải nói là edit cực kỳ là dễ luôn Đây anh em có thể xem nè nha Mọi người có thấy không",
-      "000 view liền Rồi lại lát rồi Đợi em reset lại nha Mình sẽ nhật ra cho lại bác Đấy Rồi Đây tiếp tục là cái video này 8 ngày trước Trời ơi hơn 200"
+      "⚠️ Không đâm đầu vào thị trường US: Cạnh tranh khốc liệt và thuế US rất cao; nên nhân bản sang thị trường Nhật Bản (RPM 5 đến 6 USD) hoặc Hàn Quốc (RPM 4 đến 5 USD) ít cạnh tranh hơn.",
+      "⚠️ Không chọn video quá cũ để nhân bản: Tránh lấy video đối thủ đăng từ 1–2 tháng trước, phải ưu tiên các video bão view mới nhất trong vòng 7–8 ngày để bám sát thuật toán."
     ],
     "tools_mentioned": [],
     "channels_mentioned": [],
@@ -1932,8 +1931,8 @@
     "key_takeaways": [
       "Thì cái video hôm nay thì em sẽ update thêm cho mọi người một vài cái kỳ mới và cũng như là một vài cái thị trường khác nhau luôn nha mọi người",
       "Và cũng như là em sẽ hướng dẫn thêm cho mọi người về cách tự làm cái prompt để mình lấy kịch bản theo cái chủ đề, theo cái kênh mà mình muốn luôn nha",
-      "000 view nè Về 10 ngày trước Còn cái video sát bơn á thì hơn Cũng hơn 200",
-      "000 lượt xem Cái video này 2 ngày trước 36"
+      "Ưu tiên bám video bão view mới nhất: So sánh giữa 2 video hơn 200.000 view (1 cái 10 ngày trước, 1 cái sát bên 8 ngày trước) thì phải ưu tiên lấy kịch bản video 8 ngày trước để bám sát trend đang nóng.",
+      "Nguyên tắc bán content ăn theo đối thủ: Chọn video mới nhất (ví dụ video 2 ngày trước 36.000 view). Người ta ăn 100 thì mình bám ăn 10–20%, người ta 1 triệu view thì mình ăn theo 100.000–200.000 view."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -1942,9 +1941,8 @@
       ]
     },
     "avoid_flags": [
-      "000 view nè Về 10 ngày trước Còn cái video sát bơn á thì hơn Cũng hơn 200",
-      "000 view Đấy, về 7 ngày trước này hơn 26",
-      "000 view Đó, mọi người thấy không"
+      "⚠️ Sai lầm chọn video cũ để nhân bản: Tuyệt đối không lấy video đối thủ đăng từ 1–2 tháng trước, phải ưu tiên video bão view mới nhất (trong vòng 2–8 ngày gần nhất) để bám kịp trend đang nóng.",
+      "⚠️ Ảo tưởng có Key là thắng tự động: Không phải có Key ngon là làm kiểu gì cũng lên; bắt buộc phải setting kênh chuẩn ngay từ đầu, biết phân tích bám sát đối thủ và tối ưu chất lượng nội dung."
     ],
     "tools_mentioned": [
       "Bilibili"
@@ -3043,9 +3041,8 @@
       ]
     },
     "avoid_flags": [
-      "Cũng như là tránh những trường hợp mà anh em bị tích kiếm tiền hay như nào đấy á",
-      "000 view Vào video 3 ngày trước Hơn 200",
-      "000 view Thì mọi người phải là ưu tiên Và nên lấy cái video mà hơn 200"
+      "⚠️ Nguy cơ tắt kiếm tiền do sao chép thụ động: Tránh sao chép nguyên xi kịch bản cũ hoặc làm nội dung hời hợt; cần tự train prompt để tạo nội dung độc bản theo từng chủ đề.",
+      "⚠️ Không lấy kịch bản từ video cũ: Khi có video mới 3 ngày trước đạt hơn 200.000 view, phải ưu tiên lấy video mới nhất đó để ăn theo sóng đề xuất."
     ],
     "tools_mentioned": [
       "CapCut"
@@ -6238,8 +6235,8 @@
     "target_market": "🇻🇳 Việt",
     "market_code": "JP",
     "key_takeaways": [
-      "000 sub thôi bây giờ là hơn 20 25",
-      "000 sub luôn anh em ạ dạng này bây giờ nó lên xuống về cái sub nó lên rất cao nha Đấy, mọi người thấy không",
+      "Tốc độ tăng sub thần tốc ngách sức khỏe người già: Kênh theo dõi 4 ngày trước mới 10.000 sub, nay đã nhảy vọt lên hơn 20.000 – 25.000 sub chứng minh tệp khán giả cao tuổi cắn view và đăng ký cực mạnh.",
+      "Dạng content người già cắn view cao: Lên sub rất nhanh và ổn định, khán giả lớn tuổi có thói quen bấm theo dõi để nghe đều đặn.",
       "Về là chủ đề là người già, về sức khỏe, kiểu như nói chung là đủ tuổi người già anh em",
       "Nhưng mà cái ngách đó là cái ngách lớn"
     ],
@@ -6251,8 +6248,8 @@
       ]
     },
     "avoid_flags": [
-      "000 view về video 3 ngày trước hơn 200",
-      "000 view thì người phải là ưu tiên và nên lấy cái video mà hơn 200"
+      "⚠️ Tránh làm ngách chung chung không có điểm nhấn: Ngách sức khỏe người già là ngách lớn, nếu không đi sâu vào ngách con cụ thể (thói quen, tuổi tác, nỗi sợ) thì view sẽ rất thấp.",
+      "⚠️ Không lấy video cũ quá 1 tháng: Phải ưu tiên kịch bản từ video mới nhất vừa nổ view (2–3 ngày gần nhất) của kênh đối thủ để thuật toán YouTube dễ cắn đề xuất."
     ],
     "tools_mentioned": [],
     "channels_mentioned": [],
@@ -6319,27 +6316,37 @@
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Rồi tiếp tới là cái video này sẽ hướng dẫn cho mọi người cách làm…"
+        "label": "Mở đầu: Hướng dẫn tư duy và cách làm thumbnail ngách người que (Chill Dude)"
+      },
+      {
+        "time": "00:30",
+        "seconds": 30,
+        "label": "Bước 1: Mở tool tạo ảnh AI (Flux Schnell), viết prompt tạo nhân vật cartoon stick figure"
       },
       {
         "time": "03:30",
         "seconds": 210,
-        "label": "Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp…"
+        "label": "Bước 2: Tinh chỉnh biểu cảm khuôn mặt (mắt xoáy, răng nghiến) và tóc gai nhọn"
       },
       {
-        "time": "08:30",
-        "seconds": 510,
-        "label": "Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp…"
+        "time": "08:00",
+        "seconds": 480,
+        "label": "Bước 3: Import vào Photopea, tách nền trắng bằng Magic Wand và làm sạch nét vẽ"
       },
       {
-        "time": "13:35",
-        "seconds": 815,
-        "label": "Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…"
+        "time": "11:40",
+        "seconds": 700,
+        "label": "Bước 4: Tạo 4 nhân vật với biểu cảm đa dạng và xếp hàng ngang trên canvas"
       },
       {
-        "time": "18:41",
-        "seconds": 1121,
-        "label": "Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…"
+        "time": "17:00",
+        "seconds": 1020,
+        "label": "Bước 5: Ghép nhân vật vào bố cục, thêm tiêu đề chữ đậm giật CTR mạnh"
+      },
+      {
+        "time": "21:30",
+        "seconds": 1290,
+        "label": "Bước 6: Tinh chỉnh tương phản tổng thể và xuất file thumbnail thành phẩm"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -7981,27 +7988,42 @@
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Rồi tiếp tục ở cái video này sẽ hướng dẫn cho mọi người cách về c…"
+        "label": "Mở đầu: Tư duy edit key người que — kịch bản chất lượng giữ chân người xem"
       },
       {
         "time": "01:24",
         "seconds": 84,
-        "label": "Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp…"
+        "label": "Bước 1: Mở Photopea thiết lập canvas 16:9, vẽ cảnh bầu trời mây và đồi cỏ"
       },
       {
-        "time": "15:39",
-        "seconds": 939,
-        "label": "Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…"
+        "time": "09:20",
+        "seconds": 560,
+        "label": "Bước 2: Dựng nhân vật stick figure trên các layer tách biệt, chỉnh tỉ lệ"
       },
       {
-        "time": "29:53",
-        "seconds": 1793,
-        "label": "Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…"
+        "time": "15:00",
+        "seconds": 900,
+        "label": "Bước 3: Tạo biểu cảm khuôn mặt và áp dụng Layer Style tạo khối nổi bật"
       },
       {
-        "time": "43:53",
-        "seconds": 2633,
-        "label": "[Thực hành CapCut] Import loạt ảnh cartoon (Flux_Schnell_Art_*.png) và file narration.mp3 vào CapCut Desktop,…"
+        "time": "25:00",
+        "seconds": 1500,
+        "label": "Bước 4: Import loạt ảnh AI ImageFX vào dự án để ghép vào các phân cảnh"
+      },
+      {
+        "time": "36:40",
+        "seconds": 2200,
+        "label": "Bước 5: Chuyển sang CapCut Desktop, sắp xếp ảnh cartoon và file thoại timeline"
+      },
+      {
+        "time": "45:00",
+        "seconds": 2700,
+        "label": "Bước 6: Tạo chuyển động Pan/Zoom, thêm hiệu ứng chuyển cảnh đồng bộ giọng đọc"
+      },
+      {
+        "time": "50:50",
+        "seconds": 3050,
+        "label": "Bước 7: Thêm phụ đề tự động (Auto Captions), lồng nhạc nền và xuất video"
       }
     ],
     "analysis_method": "local_transcript_heuristic",
@@ -8020,10 +8042,10 @@
     "target_market": "🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "Hoa Kỳ rất là tặng tranh, tuy RM của nó rất là cao, ví dụ Hoa Kỳ RM của nó trung bình là 8-10 giây, thì que thị trường Nhật Bản thì mọi người sẽ được nem ương cho em đúng không",
+      "Tư duy lách thị trường (US vs JP): Thị trường Hoa Kỳ cạnh tranh rất cao dù RPM cao (khoảng 8 đến 10 USD). Chuyển sang nhân bản ở thị trường Nhật Bản (JP) thì mức độ cạnh tranh thấp hơn, dễ thở hơn cho anh em.",
       "Đấy, như vậy rất là ok không",
       "Bởi vì như kia thì nó sẽ khiến cho người xem khá nhìn hơn và họ sẽ ít click hơn nha mọi người",
-      "Đấy, vấn đề thâm là chỗ đó đấy mọi người"
+      "Nhân bản thị trường không lo trùng lặp kịch bản: Khi làm cùng thị trường US thì phải đổi 60% kịch bản đối thủ, nhưng khi nhân bản sang thị trường khác (như Nhật Bản) chỉ cần dịch kịch bản chuẩn và tinh chỉnh lại qua AI là có thể triển khai ngay."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",

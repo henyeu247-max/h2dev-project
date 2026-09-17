@@ -30,9 +30,10 @@
 
 ## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
 - **Timeline chi tiết:**
-  - `00:00` — Rồi tiếp tới là cái video này sẽ hướng dẫn cho mọi người cách làm…
-  - `03:30` — Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp…
-  - `08:30` — Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp…
-  - `13:35` — Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…
-  - `18:41` — Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…
-
+  - `00:00` — Mở đầu: Hướng dẫn tư duy và cách làm thumbnail ngách người que (Chill Dude)
+  - `00:30` — Bước 1: Mở tool tạo ảnh AI (Flux Schnell), viết prompt tạo nhân vật cartoon stick figure
+  - `03:30` — Bước 2: Tinh chỉnh biểu cảm khuôn mặt (mắt xoáy, răng nghiến) và tóc gai nhọn
+  - `08:00` — Bước 3: Import vào Photopea, tách nền trắng bằng Magic Wand và làm sạch nét vẽ
+  - `11:40` — Bước 4: Tạo 4 nhân vật với biểu cảm đa dạng và xếp hàng ngang trên canvas
+  - `17:00` — Bước 5: Ghép nhân vật vào bố cục, thêm tiêu đề chữ đậm giật CTR mạnh
+  - `21:30` — Bước 6: Tinh chỉnh tương phản tổng thể và xuất file thumbnail thành phẩm

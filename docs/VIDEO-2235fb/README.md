@@ -14,7 +14,7 @@
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
 - View kinh khủng khiếp chưa
-- Em s d sang ti Vi cho m ng xem nha Ng c ti c n n T x kh n C th xem s d t kho n N chung l nh c d h n th ch y l c l t b Billy th m ng Đó
+- Em dịch sang tiếng Việt cho mọi người xem nha. Mọi người đọc tiêu đề của nó nè: có thể xem được số dư tài khoản. Nói chung những dạng hình này chủ yếu lấy từ bên Bilibili thôi mọi người.
 - Thì tí nữa em cho mọi người xem một cái kênh ở một thị trường khác nữa nha
 - Nói chung là dạng Reop này thôi mọi người
 

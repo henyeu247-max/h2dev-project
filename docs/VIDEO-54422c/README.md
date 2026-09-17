@@ -28,9 +28,8 @@
 - **Bổ sung:** Rồi ví dụ mẹ để clone được thì mọi người phải cắt cái file âm thanh Rea tầm 60 giây đổ lại nha
 
 ## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Cũng như là tránh những trường hợp mà anh em bị tích kiếm tiền hay như nào đấy á
-- ⚠️ 000 view Vào video 3 ngày trước Hơn 200
-- ⚠️ 000 view Thì mọi người phải là ưu tiên Và nên lấy cái video mà hơn 200
+- ⚠️ Nguy cơ tắt kiếm tiền do sao chép thụ động: Tránh sao chép nguyên xi kịch bản cũ hoặc làm nội dung hời hợt; cần tự train prompt để tạo nội dung độc bản theo từng chủ đề.
+- ⚠️ Không lấy kịch bản từ video cũ: Khi có video mới 3 ngày trước đạt hơn 200.000 view, phải ưu tiên lấy video mới nhất đó để ăn theo sóng đề xuất.
 
 ## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
 - **Công cụ nhắc đến:** `CapCut`

@@ -15,8 +15,8 @@
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways
 - Thì cái video hôm nay thì em sẽ update thêm cho mọi người một vài cái kỳ mới và cũng như là một vài cái thị trường khác nhau luôn nha mọi người
 - Và cũng như là em sẽ hướng dẫn thêm cho mọi người về cách tự làm cái prompt để mình lấy kịch bản theo cái chủ đề, theo cái kênh mà mình muốn luôn nha
-- 000 view nè Về 10 ngày trước Còn cái video sát bơn á thì hơn Cũng hơn 200
-- 000 lượt xem Cái video này 2 ngày trước 36
+- Ưu tiên bám video bão view mới nhất: So sánh giữa 2 video hơn 200.000 view (1 cái 10 ngày trước, 1 cái sát bên 8 ngày trước) thì phải ưu tiên lấy kịch bản video 8 ngày trước để bám sát trend đang nóng.
+- Nguyên tắc bán content ăn theo đối thủ: Chọn video mới nhất (ví dụ video 2 ngày trước 36.000 view). Người ta ăn 100 thì mình bám ăn 10–20%, người ta 1 triệu view thì mình ăn theo 100.000–200.000 view.
 
 ## 3. Kênh Mẫu & Đối Thủ Phân Tích
 - *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
@@ -26,9 +26,8 @@
 - **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
 
 ## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ 000 view nè Về 10 ngày trước Còn cái video sát bơn á thì hơn Cũng hơn 200
-- ⚠️ 000 view Đấy, về 7 ngày trước này hơn 26
-- ⚠️ 000 view Đó, mọi người thấy không
+- ⚠️ Sai lầm chọn video cũ để nhân bản: Tuyệt đối không lấy video đối thủ đăng từ 1–2 tháng trước, phải ưu tiên video bão view mới nhất (trong vòng 2–8 ngày gần nhất) để bám kịp trend đang nóng.
+- ⚠️ Ảo tưởng có Key là thắng tự động: Không phải có Key ngon là làm kiểu gì cũng lên; bắt buộc phải setting kênh chuẩn ngay từ đầu, biết phân tích bám sát đối thủ và tối ưu chất lượng nội dung.
 
 ## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
 - **Công cụ nhắc đến:** `Bilibili`

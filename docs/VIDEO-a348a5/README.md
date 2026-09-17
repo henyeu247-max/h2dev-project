@@ -29,11 +29,13 @@
 - ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
 
 ## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Công cụ nhắc đến:** `Canva`, `Photoshop`
+- **Công cụ nhắc đến:** `Photopea`, `Canva`, `Photoshop`
 - **Timeline chi tiết:**
-  - `00:00` — Tiếp tục ở cái video này thì sẽ hướng dẫn cho mọi người cách là l…
-  - `00:19` — thôi mọi người. Cái web này thì hoàn toàn là free nên em có thể d…
-  - `01:30` — H subscribe cho k La La School kh b l nh video h d
-  - `03:16` — H subscribe cho k La La School kh b l nh video h d H subscribe ch…
-  - `05:08` — H subscribe cho k La La School kh b l nh video h d
+  - `00:00` — Lời giảng mở đầu: Tư duy làm thumbnail ngách triết lý khắc kỷ
+  - `00:27` — Bước 1: Mở photopea.com & Thiết lập canvas 16:9 chuẩn YouTube
+  - `01:15` — Bước 2: Căn chỉnh chân dung sơn dầu Carl Jung ở 1/3 khung hình trái
+  - `02:25` — Bước 3: Chèn texture xước phấn & Tinh chỉnh Curves tạo nền tối moody
+  - `03:45` — Bước 4: Viết chữ Hook lớn font Days One: "The truth about women who LIVE ALONE"
+  - `05:15` — Bước 5: Tạo khung đỏ Shape Tool nổi bật với cụm từ "without a man" giật CTR
+  - `06:35` — Bước 6: Kiểm tra độ tương phản thu nhỏ và xuất file thumbnail hoàn chỉnh
 

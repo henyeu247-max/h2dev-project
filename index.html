@@ -118,7 +118,7 @@
   </div>
   <nav class="vd-bottom-nav" id="bottom-nav" aria-label="Điều hướng chính"></nav>
   <script>
-    const state = { tab: 'tongquan', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
+    const state = { tab: 'tongquan', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
 
     const CAT = {};
     const ICONS = {
@@ -1403,7 +1403,15 @@
       <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách nội dung</div>
       <div class="flex flex-wrap gap-2">
         <button type="button" data-prompt-niche="" class="filter-btn ${!state.promptNiche ? 'active' : ''}">Mọi ngách · ${kindCounts.all || 0}</button>
-        ${nicheChips.map(([id, label, n]) => `<button type="button" data-prompt-niche="${esc(id)}" class="filter-btn ${state.promptNiche === id ? 'active' : ''}">${esc(label)} · ${n}</button>`).join('')}
+        ${(() => {
+          const LIMIT = 10;
+          const visible = state.promptNicheExpanded ? nicheChips : nicheChips.slice(0, LIMIT);
+          const hidden = nicheChips.length - LIMIT;
+          const selOut = state.promptNiche && !visible.some(([id]) => id === state.promptNiche)
+            ? `<button type="button" data-prompt-niche="${esc(state.promptNiche)}" class="filter-btn active" title="Đang lọc ngách này">${esc(state.promptNiche)} · ${(nicheChips.find(([id]) => id === state.promptNiche) || [0,0,0])[2]}</button>` : '';
+          return selOut + visible.map(([id, label, n]) => `<button type="button" data-prompt-niche="${esc(id)}" class="filter-btn ${state.promptNiche === id ? 'active' : ''}" title="${esc(label)}">${esc(label)} · ${n}</button>`).join('')
+            + (hidden > 0 ? `<button type="button" data-prompt-niche-toggle class="filter-btn" style="border-style:dashed; color:var(--fg-muted);" title="${state.promptNicheExpanded ? 'Thu gọn' : 'Hiện ' + hidden + ' ngách còn lại'}">${state.promptNicheExpanded ? '▲ Thu gọn' : '▼ Xem thêm ' + hidden + ' ngách'}</button>` : '');
+        })()}
       </div>
     </div>
   </div>
@@ -1838,9 +1846,26 @@
       <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách phát hiện</div>
       <div class="flex flex-wrap gap-2">
         <button type="button" data-raw-niche="" class="filter-btn ${!currentNiche ? 'active' : ''}">Mọi ngách · ${records.length}</button>
-        ${sortedNiches.map(n => `<button type="button" data-raw-niche="${esc(n)}" class="filter-btn ${currentNiche === n ? 'active' : ''}">${esc(n)} · ${nicheCounts[n]}</button>`).join('')}
+        ${(() => {
+          // Progressive disclosure: chỉ hiện top ngách có >=2 kênh; phần còn lại thu gọn sau nút "Xem thêm"
+          const PRIMARY_LIMIT = 12;
+          const primary = sortedNiches.filter(n => nicheCounts[n] >= 2);
+          const tail = sortedNiches.filter(n => nicheCounts[n] < 2);
+          const visible = state.rawNicheExpanded ? [...primary, ...tail] : primary.slice(0, PRIMARY_LIMIT);
+          const hiddenCount = (primary.length - PRIMARY_LIMIT) + tail.length;
+          // Ngách đang chọn mà nằm ngoài danh sách hiển thị -> luôn hiện để người dùng biết đang lọc gì
+          const selectedOutside = currentNiche && !visible.includes(currentNiche)
+            ? `<button type="button" data-raw-niche="${esc(currentNiche)}" class="filter-btn active" title="Đang lọc ngách này">${esc(currentNiche)} · ${nicheCounts[currentNiche] || 0}</button>` : '';
+          return selectedOutside + visible.map(n => `<button type="button" data-raw-niche="${esc(n)}" class="filter-btn ${currentNiche === n ? 'active' : ''}" title="${esc(n)}">${esc(n)} · ${nicheCounts[n]}</button>`).join('')
+            + (hiddenCount > 0 ? `<button type="button" data-raw-niche-toggle class="filter-btn" style="border-style:dashed; color:var(--fg-muted);" title="${state.rawNicheExpanded ? 'Thu gọn danh sách ngách' : 'Hiện tất cả ' + sortedNiches.length + ' ngách (phần lớn chỉ có 1 kênh)'}">${state.rawNicheExpanded ? '▲ Thu gọn' : '▼ Xem thêm ' + hiddenCount + ' ngách khác'}</button>` : '');
+        })()}
       </div>
     </div>
+    <button type="button" data-raw-filters-toggle class="mt-3.5 pt-3 border-t border-hairline w-full flex items-center justify-between gap-2 text-left group">
+      <span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold text-gray-400 transition">⚙️ Bộ lọc nâng cao (sức sống · faceless · ngôn ngữ)</span>
+      <span class="text-[11px] font-bold text-brand-300 group-hover:text-brand-200 transition shrink-0">${state.rawFiltersExpanded ? '▲ Thu gọn' : '▼ Mở rộng'}</span>
+    </button>
+    <div class="${state.rawFiltersExpanded ? '' : 'hidden'}">
     <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
       <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Tình trạng sống & YPP:</div>
       <button type="button" data-raw-vitality="" class="filter-btn ${!state.rawVitality ? 'active' : ''}">Tất cả · ${records.length}</button>
@@ -1864,6 +1889,7 @@
       <button type="button" data-raw-lang="Tiếng Nga (Russian)" class="filter-btn ${currentLang === 'Tiếng Nga (Russian)' ? 'active' : ''}">🇷🇺 Tiếng Nga · ${langCounts['Tiếng Nga (Russian)'] || 0}</button>
       <button type="button" data-raw-lang="Tiếng Tây Ban Nha (Spanish)" class="filter-btn ${currentLang === 'Tiếng Tây Ban Nha (Spanish)' ? 'active' : ''}">🇪🇸 Tiếng Tây Ban Nha · ${langCounts['Tiếng Tây Ban Nha (Spanish)'] || 0}</button>
     </div>
+</div>
   </div>
   <div class="space-y-6">
     <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 min-w-0">
@@ -2359,6 +2385,7 @@
       const rp = document.getElementById('freset-prompt');
       if (rp) { rp.onclick = () => { state.promptQ = ''; state.kindFilter = ''; state.promptNiche = ''; render(); }; }
       document.querySelectorAll('[data-prompt-niche]').forEach(btn => {
+      const pnToggle = document.querySelector('[data-prompt-niche-toggle]'); if (pnToggle) pnToggle.onclick = () => { state.promptNicheExpanded = !state.promptNicheExpanded; render(); };
         if (btn.hasAttribute('data-open-tab')) return;
         btn.onclick = () => { state.promptNiche = btn.getAttribute('data-prompt-niche') || ''; render(); };
       });
@@ -2369,7 +2396,10 @@
       document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; render(); }; });
       const rk = document.getElementById('freset-kenh');
       if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; render(); }; }
-      document.querySelectorAll('[data-raw-niche]').forEach(btn => { btn.onclick = () => { state.rawNiche = btn.getAttribute('data-raw-niche') || ''; render(); }; });
+      document.querySelectorAll('[data-raw-niche]').forEach(btn => { btn.onclick = () => { state.rawNiche = btn.getAttribute('data-raw-niche') || ''; state.rawPage = 1; render(); }; });
+      const rfToggle = document.querySelector('[data-raw-filters-toggle]'); if (rfToggle) rfToggle.onclick = () => { state.rawFiltersExpanded = !state.rawFiltersExpanded; render(); };
+      const nicheToggle = document.querySelector('[data-raw-niche-toggle]');
+      if (nicheToggle) nicheToggle.onclick = () => { state.rawNicheExpanded = !state.rawNicheExpanded; render(); };
       document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; render(); }; });
       document.querySelectorAll('[data-raw-faceless]').forEach(btn => { btn.onclick = () => { state.rawFaceless = btn.getAttribute('data-raw-faceless') || ''; render(); }; });
       document.querySelectorAll('[data-raw-lang]').forEach(btn => { btn.onclick = () => { state.rawLang = btn.getAttribute('data-raw-lang') || ''; render(); }; });

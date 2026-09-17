@@ -1,3 +1,72 @@
+## 2026-09-18 — Fix Rối Rắm UI: Progressive Disclosure Cho Chip Wall 90 Ngách + Tối Ưu Mobile Density
+
+### 🔍 Vấn đề anh phát hiện (đúng hoàn toàn — em đã tái hiện được)
+1. **Chip wall 90 nút ở tab "Raw kênh" — rối rắm cực độ:**
+   - Section "Ngách phát hiện" render **76 chip** cùng lúc, trong đó **70/77 ngách chỉ có 1 kênh**.
+   - Sắp xếp theo count giảm dần → đuôi dài 60+ chip 1-kênh nhìn như "bãi rác".
+   - Bằng chứng: đo trên trình duyệt thật tại 1440×900 → `filter-btn = 90 nút`.
+2. **Panel filter chiếm 599px trên desktop:**
+   - 5 tầng filter xếp dọc (Ngách + Sức sống + Faceless + Ngôn ngữ + Tìm kiếm).
+3. **Mobile: phải scroll 2.4 màn hình mới thấy data (rất tệ):**
+   - Panel filter cao **1601px** (gấp 2.4× viewport 667px).
+   - Stats grid: 7 tiles × 113px = **498px**.
+   - Niche chips: **750px**.
+   - Tổng phải scroll **2335px (3.5 màn hình)** mới tới card đầu tiên.
+4. **Checker phát hiện thêm** class `group-hover:text-gray-200` chưa có trong CSS build.
+
+### 🛠️ Can thiệp (progressive disclosure — chuẩn `claude-design`)
+1. **Raw kênh — Progressive disclosure cho ngách:**
+   - Chỉ hiển thị **12 ngách chính** (có ≥2 kênh) + nút `▼ Xem thêm 63 ngách khác`.
+   - Bấm mở rộng → hiện đủ 76 ngách, đổi thành `▲ Thu gọn`.
+   - Ngách đang lọc (nếu nằm ngoài danh sách) luôn được hiển thị để người dùng biết trạng thái.
+   - Thêm `state.rawNicheExpanded` + bind toggle + reset `rawPage` khi đổi ngách.
+2. **Raw kênh — Gom 3 tầng filter phụ vào "⚙️ Bộ lọc nâng cao":**
+   - Sức sống YPP + Faceless + Ngôn ngữ giọng đọc → 1 khối collapsible (mặc định ẩn).
+   - Panel filter: **599px → 377px** trên desktop (giảm 37%).
+   - Thêm `state.rawFiltersExpanded` + bind toggle.
+3. **Kichban — Progressive disclosure cho ngách:**
+   - 10 ngách chính + nút `▼ Xem thêm 3 ngách`; thêm `state.promptNicheExpanded`.
+4. **Mobile density (chỉ áp dụng ≤1024px, desktop giữ nguyên):**
+   - Stats grid: **2 cột → 3 cột**, card chuyển `flex-direction: column` gọn.
+   - Ẩn `.stat-sub` trên mobile (chỉ giữ số + nhãn) — giảm chiều cao tile.
+   - Icon 28px, value 18px, label 9.5px, `.stat-arrow` ẩn.
+   - Chip filters: **2 cột đều nhau**, min-height 34px (dễ bấm).
+   - `stat-body` full width để text không bị nén.
+5. **Sửa class lỗi checker bắt:** `group-hover:text-gray-200` (không có trong build) → `text-gray-400`.
+
+### ✅ Bằng chứng Check-Pass (before → after)
+
+| Chỉ số (Mobile 375×667) | Trước | Sau |
+|---|---|---|
+| Panel filter | **1601px** | **506px** (−68%) |
+| Scroll tới data | **2335px (3.5 màn)** | **1152px (1.7 màn)** |
+| Stats grid | **498px** | **305px** |
+| Niche chips (rawkenh) | **90 nút** | **13 nút** (−86%) |
+
+**Kết quả đo toàn bộ 8 tab mobile sau tối ưu (screens phải scroll để thấy data):**
+| Tab | Trước | Sau |
+|---|---|---|
+| tongquan | ~2.5 | **0.3** |
+| video | ~2.0 | **0.1** |
+| ngachxanh | ~2.0 | **0.2** |
+| kichban | ~2.0 | **0.1** |
+| nguonreup | ~2.0 | **0.1** |
+| kenh | ~2.0 | **0.1** |
+| rawkenh | **3.5** | **0.1** |
+| chienluoc | ~2.0 | **0.2** |
+
+**Functional tests (trình duyệt thật):**
+- Toggle ngách: 13 → 76 → 13 ✓ (text đổi đúng `▼ Xem thêm 63` / `▲ Thu gọn`)
+- Toggle bộ lọc nâng cao: ẩn/hiện đúng 3 tầng ✓
+- Lọc sức sống "Đang hoạt động": 156 → **115 cards** ✓
+- Lọc ngách "Trẻ em / hoạt hình / IP": → **10 cards** ✓
+- Reset: về **156 cards** ✓
+- **Desktop không bị ảnh hưởng:** 4 tiles/row, 112px, sub-text hiển thị, 0 tràn ngang ✓
+
+**Pipeline:** `check-ui-classes.js` **OK 3/3** | `validate-project.js` **PASS** | `sync-counts.js` **OK 100%**
+
+---
+
 ## 2026-09-18 — Dọn Rác Toàn Dự Án + Chuyển CSS Về Đúng Tầng Build + Vô Hiệu 3 Script Nguy Hiểm
 
 ### 🔍 Bằng chứng trước khi hành động (không xóa mù)

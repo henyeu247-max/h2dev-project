@@ -254,6 +254,41 @@ try {
   errors.push(`Khong chay duoc guard-no-inline-onclick.js: ${guardError.message}`);
 }
 
+// Guard: chan tai phat loi "CSS build cu / thieu class" (KE-HOACH-SUA-CHUA-TOAN-DIEN mục B8).
+// Doi chieu class dung trong HTML voi dung cac file CSS ma trang nap that.
+try {
+  const uiCheck = require('child_process').execFileSync(
+    process.execPath, [path.join(__dirname, 'check-ui-classes.js'), '--json'],
+    { cwd: ROOT, encoding: 'utf8' }
+  );
+  const result = JSON.parse(uiCheck);
+  if (result.totalMissing > 0) {
+    for (const r of result.report) {
+      if (r.kind === 'missing-classes') {
+        errors.push(`${r.page}: ${r.count} class thieu CSS that (${r.classes.slice(0, 6).join(', ')}${r.classes.length > 6 ? ', ...' : ''})`);
+      }
+      if (r.kind === 'missing-css-file') {
+        errors.push(`${r.page}: thieu file CSS duoc nap (${r.detail})`);
+      }
+    }
+  }
+} catch (uiError) {
+  // exitCode 1 = co class thieu (da parse o stdout); loi khac = checker hong
+  const out = (uiError.stdout || '').trim();
+  try {
+    const result = JSON.parse(out);
+    for (const r of result.report) {
+      if (r.kind === 'missing-classes') {
+        errors.push(`${r.page}: ${r.count} class thieu CSS that (${r.classes.slice(0, 6).join(', ')}${r.classes.length > 6 ? ', ...' : ''})`);
+      } else if (r.kind === 'missing-css-file') {
+        errors.push(`${r.page}: thieu file CSS duoc nap (${r.detail})`);
+      }
+    }
+  } catch (parseError) {
+    errors.push(`Khong chay duoc check-ui-classes.js: ${uiError.message}`);
+  }
+}
+
 if (errors.length) {
   console.error(`Validation failed with ${errors.length} error(s):`);
   errors.forEach(error => console.error(`- ${error}`));

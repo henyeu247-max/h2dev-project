@@ -211,3 +211,31 @@
   #insightTimeline { grid-template-columns: 1fr !important; }
   .player-transcript .transcript-feed { max-height: 300px !important; }
 }
+
+/* Toast notification — khôi phục từ app.css gốc (bị mất khi restructure,
+   player.html tạo .toast-msg qua showToast() nhưng không CSS nào định nghĩa). */
+.toast-msg {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  padding: 12px 18px;
+  border-radius: var(--r-lg);
+  color: var(--fg);
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: toastSlideUp 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes toastSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 640px) {
+  .toast-msg { left: 12px; right: 12px; bottom: 76px; }
+}

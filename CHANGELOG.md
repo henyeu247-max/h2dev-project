@@ -1,3 +1,62 @@
+## 2026-09-18 — 🔥 TÁI CẤU TRÚC TAXONOMY NGÁCH↔KÊNH: 75 Ngách Vụn → 12 Nhóm Chủ Đề (Đúng Ngữ Nghĩa)
+
+### 🔍 Vấn đề GỐC RỄ (anh chỉ ra — em đã hiểu sai lần đầu)
+**Lần đầu em đi vá UI (thu gọn/xem thêm) → SAI. Anh chỉ rõ: vấn đề là PHÂN TÍCH TAXONOMY.**
+
+Bằng chứng đo trên data thật (`data-tabs/raw-kenh-mau.json`):
+- **75 giá trị `editorialNiche`** khác nhau cho 156 kênh.
+- **70/77 ngách chỉ có 1 kênh** → nhìn như "mỗi ngách một mục, mỗi kênh một ngách".
+- Nhiều ngách TRÙNG CHỦ ĐỀ chéo nhau, ví dụ:
+  - `Sức khỏe VN` + `Sức khỏe Nhật` + `Sức khỏe / Dinh dưỡng / Food Shock` + `Fitness / review sức khỏe` + `Đời sống senior` + `Sức khỏe / sinh hoạt senior Hàn` = **cùng 1 chủ đề sức khỏe** nhưng bị tách rời.
+  - `Sumer cổ đại / Công nghệ đã mất` + `Anunnaki / Sumer cổ đại` + `ADN cổ đại` + `Tiền sử loài người…` = **cùng mạch khảo cổ**.
+- **Bằng chứng code:** `NICHE_MAP` (taxonomy 2 tầng) đã tồn tại trong `index.html` nhưng CHỈ áp dụng cho tab Kênh mẫu / Kịch bản / Video — **tab Raw kênh không được áp** → hiện 75 ngách thô.
+
+### 🛠️ Can thiệp — Taxonomy 2 tầng đúng ngữ nghĩa
+**① Xây `RAW_NICHE_GROUPS`: 75 ngách → 12 nhóm chủ đề** (map tường minh, không hardcode rời rạc):
+| Nhóm chủ đề | Kênh | Ngách bên trong |
+|---|---|---|
+| Lịch sử / Khảo cổ | 35 | 21 ngách (tổng hợp · thực phẩm · công nghiệp · Sumer · ADN cổ · đế chế…) |
+| Khoa học / Tự nhiên | 19 | 8 ngách (vũ trụ · nghe chậm · cơ chế · sinh vật biển · thú cưng…) |
+| Sức khỏe / Lão hóa | 18 | 7 ngách (VN · Nhật · Food Shock · Fitness · senior Hàn/Nhật) |
+| Địa lý / Du lịch / Sinh tồn | 18 | 10 ngách (du lịch · off-grid · pin DIY · làm vườn · sinh tồn cực hạn…) |
+| Drama / Kể chuyện | 13 | 5 ngách (야담 Hàn · manga Nhật · tội phạm · nhân văn AI…) |
+| Trẻ em / Hoạt hình | 10 | 1 ngách |
+| Triết lý / Tâm linh | 10 | 5 ngách (Phật pháp · Kinh Thánh · phong thủy · động lực…) |
+| Học tiếng Anh | 9 | 1 ngách |
+| Quân sự / Địa chính trị | 8 | 3 ngách |
+| Kiến trúc / Công nghiệp | 6 | 6 ngách |
+| Kinh doanh / Tài chính | 5 | 3 ngách |
+| Phim AI / Điện ảnh | 5 | 5 ngách |
+
+**② Giao diện 2 tầng:** Mặc định hiện **12 nhóm chủ đề** → bấm nhóm xổ ra **ngách chi tiết bên trong nhóm** → bấm ngách lọc chính xác kênh. Nút chọn lại = bỏ chọn.
+
+**③ Stat tile đổi ngữ nghĩa:** `Ngách phát hiện · 76` → `Nhóm chủ đề · 12` + subtitle `75 ngách chi tiết`.
+
+**④ Đồng bộ:** phễu lọc thêm tầng nhóm; Reset xóa cả nhóm + về trang 1; gỡ code progressive-disclosure cũ.
+
+### ✅ Bằng chứng Check-Pass (đo trên trình duyệt thật)
+
+| Chỉ số | Trước | Sau |
+|---|---|---|
+| Chip ngách hiện mặc định | **76 nút** (70 ngách 1-kênh) | **12 nhóm chủ đề** + 0 ngách rời |
+| Số tầng lọc | 1 tầng (ngách phẳng) | **2 tầng** (nhóm → ngách) |
+| Panel filter (desktop) | 599px | **309px** |
+| Ngữ nghĩa | mỗi ngách 1 mục rời rạc | kênh cùng chủ đề **nằm chung 1 nhóm** |
+
+**Functional test (browser 1440×900):**
+- Mặc định: 13 chip (`Mọi nhóm · 156` + 12 nhóm), 0 chip ngách rời ✓
+- Bấm "Lịch sử / Khảo cổ": lọc còn **35 kênh**, xổ **22 ngách chi tiết** ✓
+- Bấm "Sức khỏe / Lão hóa": lọc **18 kênh**, xổ 7 ngách; bấm "Sức khỏe VN" → đúng **6 kênh** (RAW-143..147, 155) ✓
+- Toggle bỏ nhóm: về **156 kênh** ✓
+- Regression 9 tab: 0 ảnh lỗi, 0 tràn ngang ✓
+- Mobile 375×667: panel 493px, 0 tràn ngang ✓
+
+**Pipeline:** `check-ui-classes` **OK 3/3** | `validate-project` **PASS** | `sync-counts` **OK 100%**
+
+**SSoT nguyên vẹn:** 136 videos · 165 channels · 156 raw · 34 niches · 153 docs · 45 scripts · 38 music.
+
+---
+
 ## 2026-09-18 — Fix Rối Rắm UI: Progressive Disclosure Cho Chip Wall 90 Ngách + Tối Ưu Mobile Density
 
 ### 🔍 Vấn đề anh phát hiện (đúng hoàn toàn — em đã tái hiện được)

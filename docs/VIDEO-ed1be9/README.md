@@ -30,11 +30,13 @@
 - ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
 
 ## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Công cụ nhắc đến:** `Photoshop`
+- **Công cụ nhắc đến:** `Photopea`, `CapCut`
 - **Timeline chi tiết:**
-  - `00:00` — Rồi tiếp tục ở cái video này sẽ hướng dẫn cho mọi người cách về c…
-  - `01:24` — Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp…
-  - `15:39` — Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…
-  - `29:53` — Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…
-  - `43:53` — [Thực hành CapCut] Import loạt ảnh cartoon (Flux_Schnell_Art_*.png) và file narration.mp3 vào CapCut Desktop,…
-
+  - `00:00` — Mở đầu: Tư duy edit key người que — kịch bản chất lượng giữ chân người xem
+  - `01:24` — Bước 1: Mở Photopea thiết lập canvas 16:9, vẽ cảnh bầu trời mây và đồi cỏ
+  - `09:20` — Bước 2: Dựng nhân vật stick figure trên các layer tách biệt, chỉnh tỉ lệ
+  - `15:00` — Bước 3: Tạo biểu cảm khuôn mặt và áp dụng Layer Style tạo khối nổi bật
+  - `25:00` — Bước 4: Import loạt ảnh AI ImageFX vào dự án để ghép vào các phân cảnh
+  - `36:40` — Bước 5: Chuyển sang CapCut Desktop, sắp xếp ảnh cartoon và file thoại timeline
+  - `45:00` — Bước 6: Tạo chuyển động Pan/Zoom, thêm hiệu ứng chuyển cảnh đồng bộ giọng đọc
+  - `50:50` — Bước 7: Thêm phụ đề tự động (Auto Captions), lồng nhạc nền và xuất video

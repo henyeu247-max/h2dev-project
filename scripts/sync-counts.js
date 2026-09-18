@@ -21,8 +21,16 @@ const MANIFEST_PATH = path.join(ROOT, 'data', 'counts-manifest.json');
 // Moi pattern neo ngu canh du manh; chi khop so HIEN HANH, khong khop snapshot cu.
 const DOC_RULES = [
   // ---- AGENTS.md ----
-  { file: 'AGENTS.md', pattern: /(\| `videos\.json` \| \*\*)\d+(\*\* \()/g,
-    build: c => `$1${c.videos}$2` },
+  { file: 'AGENTS.md', pattern: /(\| `videos\.json` \| \*\*)\d+(\*\* \()\d+ free · \d+ pro — gồm \d+ buổi Zoom free(\) \|)/g,
+    build: c => `$1${c.videos}$2${c.videoFree} free · ${c.videoPro} pro — gồm ${c.zoomSessions} buổi Zoom free$3` },
+  // Dong "Tai san di kem" (docs/ + thumbs + video/ + ffprobe)
+  { file: 'AGENTS.md',
+    pattern: /(`docs\/` )\d+( thư mục \()\d+( `VIDEO-\*` \+ )\d+( `ZOOM-\*` \+ `NOI-BO`\) · `assets\/thumbs\/` )\d+(\/)\d+( khớp \+ `placeholder\.svg` · `video\/` )\d+( thư mục \()\d+( mp4 \+ )\d+( webm Zoom\))/g,
+    build: c => `$1${c.docsTotalDirs}$2${c.docsVideoDirs}$3${c.docsZoomDirs}$4${c.videos}$5${c.videos}$6${c.videoDirs}$7${c.videoLessons}$8${c.zoomSessions}$9` },
+  // Badge rong trong modules.json (hop le)
+  { file: 'AGENTS.md',
+    pattern: /(RỖNG TRONG `modules\.json` là trạng thái HỢP LỆ\*\* \()\d+(\/)\d+( item có nhãn; )\d+( item không có nhãn gốc)/g,
+    build: c => `$1${c.modulesWithBadge}$2${c.modulesItems}$3${c.modulesItems - c.modulesWithBadge}$4` },
   { file: 'AGENTS.md', pattern: /(\| `kenh-mau\.json` \| \*\*)\d+(\*\* \()\d+( live \+ )\d+( dead\) · `ngay_do` )\d+(\/)\d+( \|)/g,
     build: c => `$1${c.channels}$2${c.liveChannels}$3${c.deadChannels}$4${c.channels}$5${c.channels}$6` },
   { file: 'AGENTS.md', pattern: /(\| `tai-lieu-full\.json` \| \*\*)\d+(\*\* \()/g,
@@ -41,8 +49,18 @@ const DOC_RULES = [
     build: c => `$1${c.canonicalRaw}$2` },
 
   // ---- TREE.md ----
-  { file: 'TREE.md', pattern: /(videos\.json            # )\d+( SKU)/g,
-    build: c => `$1${c.videos}$2` },
+  { file: 'TREE.md', pattern: /(catalog\.json\s+# )\d+( record \(projection gốc\))/g,
+    build: c => `$1${c.catalogRecords}$2` },
+  { file: 'TREE.md', pattern: /(catalog_full\.json\s+# )\d+( record \(projection đầy đủ\))/g,
+    build: c => `$1${c.catalogFullRecords}$2` },
+  { file: 'TREE.md', pattern: /(videos\.json\s+# )\d+( SKU \()\d+ free · \d+ pro — gồm \d+ Zoom free(\))/g,
+    build: c => `$1${c.videos}$2${c.videoFree} free · ${c.videoPro} pro — gồm ${c.zoomSessions} Zoom free$3` },
+  // docs/VIDEO-* : so thu muc SKU
+  { file: 'TREE.md', pattern: /(VIDEO-\*\\s+# )\d+(\/)\d+( SKU: README \+ description\.html)/g,
+    build: c => `$1${c.docsVideoDirs}$2${c.docsVideoDirs}$3` },
+  // raw-kenh-goc: so anh + so record thieu anh
+  { file: 'TREE.md', pattern: /(raw-kenh-goc\\\s+# )\d+( ảnh raw canonical \+ metadata \()\d+( record: )\d+( kênh chưa có ảnh chụp\))/g,
+    build: c => `$1${c.rawChannelImages}$2${c.canonicalRaw}$3${c.rawRecordsWithoutImage}$4` },
   { file: 'TREE.md', pattern: /(kenh-mau\.json          # )\d+( kênh \()\d+( sống · )\d+( dead ẩn\) · ngay_do )\d+(\/)\d+/g,
     build: c => `$1${c.channels}$2${c.liveChannels}$3${c.deadChannels}$4${c.channels}$5${c.channels}` },
   { file: 'TREE.md', pattern: /(tai-lieu-full\.json     # )\d+( card)/g,
@@ -57,18 +75,23 @@ const DOC_RULES = [
     build: c => `$1${c.canonicalRaw}$2${c.canonicalRawUniqueChannels}$3` },
   { file: 'TREE.md', pattern: /(thumbs\\                # )\d+(\/)\d+( khớp videos\.json)/g,
     build: c => `$1${c.videos}$2${c.videos}$3` },
-  { file: 'TREE.md', pattern: /(video\\                     # )\d+( thư mục: )\d+( VIDEO-<sku>)/g,
-    build: c => `$1${c.videos}$2${c.videoLessons}$3` },
+  { file: 'TREE.md', pattern: /(video\\\s+# )\d+( thư mục: )\d+( VIDEO-<sku>\\<sku>\.mp4 \+ )\d+( ZOOM-<slug>\\<slug>\.webm \(~)[\d.]+( GiB \/ )[\d.]+( GB\))/g,
+    build: c => `$1${c.videoDirs}$2${c.videoLessons}$3${c.zoomSessions}$4${(c.mediaBytes / 1073741824).toFixed(2)}$5${(c.mediaBytes / 1e9).toFixed(2)}$6` },
 
   // ---- 00_README.md ----
+  { file: '00_README.md', pattern: /(kho học H2DEV \()\d+( bài: )\d+( video \+ )\d+( buổi Zoom\))/g,
+    build: c => `$1${c.videos}$2${c.videoLessons}$3${c.zoomSessions}$4` },
+  // docs/ (tong + VIDEO-* + ZOOM-*) tren dong "Tai san"
+  { file: '00_README.md', pattern: /(`docs\/` )\d+( thư mục \()\d+( `VIDEO-\*` \+ )\d+( `ZOOM-\*`)/g,
+    build: c => `$1${c.docsTotalDirs}$2${c.docsVideoDirs}$3${c.docsZoomDirs}$4` },
   { file: '00_README.md', pattern: /(Video — )\d+( SKU)/g,
     build: c => `$1${c.videos}$2` },
   { file: '00_README.md', pattern: /(Kênh mẫu — )\d+/g,
     build: c => `$1${c.channels}` },
   { file: '00_README.md', pattern: /(Raw kênh — )\d+( record canonical \()\d+( kênh unique)/g,
     build: c => `$1${c.canonicalRaw}$2${c.canonicalRawUniqueChannels}$3` },
-  { file: '00_README.md', pattern: /(\*\*)\d+( bài học\*\* · ~[\d.]+ GB \([^)]+\) · ffprobe )\d+(\/)\d+( có hình\+audio)/g,
-    build: c => `$1${c.videos}$2${c.videos}$3${c.videos}$4` },
+  { file: '00_README.md', pattern: /(\*\*)\d+( bài học\*\* · ~)[\d.]+( GB \()[\d.]+( GiB\) · ffprobe \*\*)\d+(\/)\d+( có hình \+ audio \(0 file 0 byte\) · )\d+( free · )\d+( pro)/g,
+    build: c => `$1${c.videos}$2${(c.mediaBytes / 1e9).toFixed(2)}$3${(c.mediaBytes / 1073741824).toFixed(2)}$4${c.mediaFiles}$5${c.mediaFiles}$6${c.videoFree}$7${c.videoPro}$8` },
   { file: '00_README.md', pattern: /(\*\*)\d+( tài liệu\*\*:)/g,
     build: c => `$1${c.documents}$2` },
   { file: '00_README.md', pattern: /(\*\*)\d+( kênh mẫu\*\* \()\d+( sống · )\d+( dead 404 đã ẩn\) · `ngay_do` )\d+(\/)\d+/g,
@@ -88,6 +111,18 @@ const DOC_RULES = [
   { file: 'knowledge-hub/docs/MEMORY.md',
     pattern: /(→ )\d+( record canonical \()\d+( kênh unique · )\d+( bản ghi trùng channel\))/g,
     build: c => `$1${c.canonicalRaw}$2${c.canonicalRawUniqueChannels}$3${c.canonicalRaw - c.canonicalRawUniqueChannels}$4` },
+
+  // ---- docs/NOI-BO/zoom/README.md ----
+  { file: 'docs/NOI-BO/zoom/README.md', pattern: /(bổ sung cho kho )\d+( video bài giảng PRO)/g,
+    build: c => `$1${c.videoLessons}$2` },
+
+  // ---- knowledge-hub/docs/RULE-LAM-VIEC.md ----
+  { file: 'knowledge-hub/docs/RULE-LAM-VIEC.md', pattern: /(Catalog )\d+( video bài giảng kèm phụ đề sạch)/g,
+    build: c => `$1${c.videoLessons}$2` },
+  { file: 'knowledge-hub/docs/RULE-LAM-VIEC.md', pattern: /(Kho )\d+( tài liệu & Master Prompts)/g,
+    build: c => `$1${c.documents}$2` },
+  { file: 'knowledge-hub/docs/RULE-LAM-VIEC.md', pattern: /(pass `audit_videos_v2\.py` \(N\/N )\d+(\/)\d+( SKU\))/g,
+    build: c => `$1${c.videos}$2${c.videos}$3` },
 
   // ---- index.html ----
   { file: 'index.html', pattern: /(Bản đồ )\d+( ngách YouTube, định dạng an toàn)/g,

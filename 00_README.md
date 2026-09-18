@@ -2,7 +2,7 @@
 
 > Cập nhật: **2026-09-16**
 
-Web quản lý **toàn bộ** kho học H2DEV (136 bài: 132 video + 4 buổi Zoom) + tài sản nội bộ đã chuẩn hóa (prompt, báo cáo, pipeline).
+Web quản lý **toàn bộ** kho học H2DEV (140 bài: 136 video + 4 buổi Zoom) + tài sản nội bộ đã chuẩn hóa (prompt, báo cáo, pipeline).
 
 ## Cơ chế vận hành & Đồng bộ
 
@@ -40,7 +40,7 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 
 ## Data hiện tại
 
-- **140 bài học** · ~23.1 GB (21.55 GiB) · ffprobe 140/140 có hình+audio · 26 free / 110 pro
+- **140 bài học** · ~23.52 GB (21.90 GiB) · ffprobe **140/140** có hình + audio (0 file 0 byte) · 27 free · 113 pro
 - **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/` và `ZOOM-00` (tài liệu quy trình, không phải bài học)
 - **153 tài liệu**: prompt 78 · report 20 · tool 23 · list 16 · other 11 · internal-doc 5 (gồm cẩm nang nhạc nền NOI-BO-MUSIC-01)
 - **38 tracks nhạc nền đã audit Gemini Multimodal**: 25 SAFE (YPP) · 9 REVIEW · 4 COPYRIGHTED loại bỏ — quản lý tại `data/music_catalog.json` & cẩm nang `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`
@@ -48,6 +48,6 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 - **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)
 - 4 pipeline trong `pipelines/` · Knowledge Hub trong `knowledge-hub/`
-- `docs/` 138 thư mục (132 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 140/140 khớp
+- `docs/` 142 thư mục (136 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 140/140 khớp
 - Raw kênh: 156 record canonical (149 kênh unique · 7 bản ghi trùng channel); bản hiển thị chuẩn nằm ở `assets/raw-kenh/` và `data-tabs/raw-kenh-mau.json`.
 - Khung tiêu chuẩn nghiệm thu video mẫu mở được quản lý tại `data/video_acceptance.json`, sẵn sàng áp dụng linh hoạt cho bất kỳ đề tài nào được chọn thử nghiệm.

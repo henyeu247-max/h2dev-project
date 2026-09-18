@@ -1,5 +1,53 @@
-## 2026-09-18 (đợt 3) — 🔐 XÁC THỰC TÀI KHOẢN VIP H2DEV.VN, NÂNG CẤP CHẤT LƯỢNG VIDEO 480P -> 720P HD & GIẢI MÃ BẢN CHẤT LỖI VIDEO-f59aa7
+## 2026-09-18 (đợt 4) — 🔧 AUDIT MCP POOL BẰNG RUNTIME + CHUẨN HOÁ SỐ LIỆU SSoT TOÀN DỰ ÁN (140 SKU)
 
+### 1. Audit MCP Pool `:3988` bằng chính runtime (không tin docs)
+- Gọi thật `POST /mcp tools/list` (có `X-API-Key`) → **HTTP 200 · 256.467 bytes · 180 tools · 19 namespace**; `GET /metrics` → 52 tool phát sinh · 11 circuit · 270 calls / 18 errors; `GET /tools` → 180.
+- Phân bố: `vidiq` 60 · `firecrawl` 30 · `tinyfish` 17 · `monid` 13 · `youtube_intelligence` 12 · `tavily` 7 · `filesystem` 7 · `memory` 6 · `trends` 5 · `exa` 4 · `ydc` 4 · `context7`/`context-dev`/`keenable`/`ui-skills`/`sequential-thinking` 2 mỗi cái · `jina` 1 · `vision` 1 · không prefix 3.
+- **13 cơ chế xác minh trong `server.js` + `registry.js` + `mcp_bridge.js`:** auth 3 vector (`X-API-Key`/`Bearer`/`?key=`) · rate-limit 300/ph · session StreamableHTTP TTL vô hạn + `DELETE /mcp` · graceful direct-path (`tools/list`+`tools/call` không cần session) · filter động `?exclude/include/profile` · circuit breaker 5 lỗi/60s · metrics p50/p95/p99 + log `[SLOW]` · key rotation đa key (đã chạy thật: `out.log` 8 dòng rotation, exa xoay 1→5→1→2) · upload 3 dạng + TTL 24h · bridge stdio+HTTP có patch `cmd /c` cho Windows · slim schema 3 tầng (budget 6000 B/tool) · watchdog auto-heal anti-PID-reuse · ONE-MCP rule + companion installer.
+- 🔴 **ROOT CAUSE tìm được:** process pool **STALE từ 14/09 22:27** (`uptime` 342.949s) trong khi `tools/registry.js` sửa **17/09 03:30**, `tools/gemini_multimodal.js` tạo **17/09 03:43**, `.env` sửa **18/09 00:48**. Bằng chứng runtime: gọi `gemini_analyze_media` → `"Tool not found"`; `trends__get_top_trends` → `"TRENDS_ACCESS_TOKEN not configured in .env"` dù `.env` **đã có** token (42 ký tự) + `TRENDS_KEYS` (10 key). ⇒ Pool đọc `.env` + registry **1 lần lúc boot** (`dotenv.config({override:true})`) → mọi thay đổi cần **restart**.
+- ✅ **Đính chính giả thuyết sai của chính em:** nghi `gemini_multimodal.js` thiếu `handler:` → viết script audit 12 module → **52/52 tool đều có `handler`** ⇒ KHÔNG có bug (2 tool `gemini_analyze_media` + `gemini__analyze_media` đều hợp lệ). Sau restart dự kiến **180 → 182 tools**.
+- Tạo `RESTART-MCP-POOL-ADMIN.cmd` (ASCII thuần) vì shell hiện tại **không có quyền admin** (`nssm restart` → Access is denied; service chạy `LocalSystem`, `AppExit=Restart`).
+
+### 2. Chuẩn hoá số liệu SSoT lệch với data mới (140 SKU)
+- `AGENTS.md`: `videos.json` (22 free/110 pro → **27 free · 113 pro**); dòng "Tài sản đi kèm" (`docs/` 138→**142**, `VIDEO-*` 132→**136**, thumbs 136/136→**140/140**, `video/` 136→**140** thư mục); badge `modules.json` (130/**136** → 130/**140**, 6→**10** item không nhãn); ghi chú "Quét 136 SKU" nay là mốc lịch sử (kho đã 140).
+- `TREE.md`: `catalog.json`/`catalog_full.json` 136→**140** record; `videos.json` free/pro; `docs/VIDEO-*` 132/132→**136/136**; `video/` size 21.55 GiB→**21.89 GiB / 23.51 GB**; `raw-kenh-goc` "21 kênh"→**23 kênh** chưa có ảnh.
+- `00_README.md`: "(136 bài: 132 video…)"→**140 bài: 136 video**; "~23.1 GB (21.55 GiB) · 26 free / 110 pro"→**~23.51 GB (21.89 GiB) · 27 free · 113 pro**; `docs/` 138→**142**.
+- `docs/NOI-BO/zoom/README.md`: "kho 132 video"→**136**.
+- `knowledge-hub/docs/RULE-LAM-VIEC.md`: `audit_all_136_videos.py`→**`audit_videos_v2.py` (N/N 140/140)**.
+- `knowledge-hub/docs/MEMORY.md`: "95 source snapshot gốc"→**135 ảnh raw canonical (23/156 record chưa có ảnh)**.
+
+### 3. Chống tái phát: mở rộng "nguồn số duy nhất"
+- `scripts/lib/counts.js`: thêm 16 chỉ số đo trực tiếp trên đĩa — `catalogRecords` · `catalogFullRecords` · `videoFree/videoPro` · `modules`/`modulesItems`/`modulesWithBadge` · `videoDirs`/`mediaFiles`/`mediaBytes` · `docsTotalDirs`/`docsVideoDirs`/`docsZoomDirs` · `thumbFiles` · `rawChannelImages`/`rawRecordsWithoutImage` · `rawDeepProfiles` · `sopDocs` · `masterPrompts`.
+- `scripts/sync-counts.js`: thêm 12 rule mới (AGENTS 3 · TREE 6 · 00_README 2 · zoom/README 1 · RULE-LAM-VIEC 3) ⇒ các số này **tự đồng bộ** về sau, không còn sửa tay.
+- Chạy `sync-counts.js`: tự sửa lại size video về **21.89 GiB / 23.51 GB** (làm tròn đúng từ 23.506.685.011 bytes) ⇒ chứng minh rule khớp thực tế.
+
+### 4. Đo lại N/N toàn kho 140 SKU (bằng chứng mới)
+| Phép đo | Kết quả 140/140 |
+|---|---|
+| ffprobe (luồng hình + audio) | **140/140 có hình · 140/140 có audio · 0 file 0 byte · 0 lỗi probe** |
+| Transcript 3 định dạng | **140/140** đủ `.json` `.srt` `.txt` |
+| `audit_videos_v2.py` (phủ 140, 0 bỏ qua) | **138 sạch · 2 lỗi** — `VIDEO-f59aa7` (B7 audio hỏng, DRM) · `VIDEO-8e0275` (A8f+B4 audio gần như rỗng −70 LUFS) · **40 video có review-flag** (A10 19 · S6 19 · S9 15 · A8d 5) |
+| audio integrity | ok **139** · broken **1** · not-applicable **0** · không-verify **0** |
+| Thumb / docs / video dirs | thumbs **140/140** khớp · 0 SKU thiếu thư mục video · 0 SKU thiếu docs |
+| Module lộ trình | **12 module · 140 item** (130 có badge) |
+
+### 5. Kiểm định tổng — PASS 100%
+- `node scripts/validate-project.js` → **PASS** (140/165/45/153/140/140).
+- `node scripts/sync-counts.js --check` → **OK — dong bo 100%**.
+- `node scripts/check-ui-classes.js` → **OK** (index/player/learn).
+- `node scripts/deep-audit.js` → **0 ISSUES** toàn vẹn tham chiếu.
+- Backup trước khi sửa: `_backup/20260918-ssot-sync/` (7 file) + `D:\Mcp-Pool-Vps\_backup\20260918-mcp-reload\` (5 file).
+
+### 6. Việc còn lại (chờ anh)
+1. Chạy `RESTART-MCP-POOL-ADMIN.cmd` (Run as administrator) → verify 182 tools + `gemini_analyze_media` callable + `trends__get_top_trends` chạy.
+2. `VIDEO-8e0275` (audio −70 LUFS/5294s) — cần điều tra riêng: file có audio thật hay không.
+3. 23 kênh raw chưa có ảnh chụp (RAW-143→165) + 40 video có review-flag cần đối chiếu tay.
+
+---
+
+
+
+## 2026-09-18 (đợt 3) — 🔐 XÁC THỰC TÀI KHOẢN VIP H2DEV.VN, NÂNG CẤP CHẤT LƯỢNG VIDEO 480P -> 720P HD & GIẢI MÃ BẢN CHẤT LỖI VIDEO-f59aa7
 ### 1. Đăng nhập & Xác thực Tài khoản VIP Học viên
 - **Xác thực tự động qua Playwright:** Đăng nhập thành công tài khoản `henyeu247@gmail.com` / `hihihjhjAa@1` vào `h2dev.vn/learn/auth`.
 - **Cấp quyền PRO:** Token JWT cấp `uid: 33599`, `utypid: 3`, cookie `viewAllVideo: true`, trạng thái hiển thị huy hiệu `[PRO]`.

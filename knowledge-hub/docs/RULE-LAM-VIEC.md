@@ -273,7 +273,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | **7** | **Kỹ thuật Edit SOP (`edit_sop`)** | Nêu rõ kỹ thuật dựng footage, âm thanh, giọng đọc AI và phụ đề chuẩn của ngách. | Đọc lại đoạn tác giả chia sẻ kinh nghiệm dựng video trong bài giảng. |
 | **8** | **Cảnh báo lỗi (`avoid_flags`)** | Nêu bật các cạm bẫy chính sách (Full ảnh AI, bản quyền, bẫy YMYL y tế, spam...). | Trích xuất các lỗi tác giả cảnh báo trực tiếp trong video. |
 | **9** | **Cờ kiểm định (`visual_audio_checked`)** | Đặt `visual_audio_checked: true` để ẩn vĩnh viễn dòng cảnh báo tạm bợ ("heuristic transcript cũ..."). | Xem trên giao diện xem khối cảnh báo vàng đã biến mất hoàn toàn chưa. |
-| **10** | **Đồng bộ đa tầng & Deploy VPS** | Pass `validate-project.js`, pass `audit_all_136_videos.py`, commit git, push VPS, reload PM2. | Kiểm tra live URL trên `https://h2dev-learn.tonymmo.com/lotrinh/<SKU>` trả về HTTP 200. |
+| **10** | **Đồng bộ đa tầng & Deploy VPS** | Pass `validate-project.js`, pass `audit_videos_v2.py` (N/N 140/140 SKU), commit git, push VPS, reload PM2. | Kiểm tra live URL trên `https://h2dev-learn.tonymmo.com/lotrinh/<SKU>` trả về HTTP 200. |
 
 ---
 

@@ -18,6 +18,15 @@
 
 **Cốt lõi:** 9Router = “não” chat. Mọi tay chân (YouTube / web / browser) = MCP Pool `:3988`. Auth: header `X-API-Key` từ `MCP_POOL_API_KEY` trong `D:\Mcp-Pool-Vps\.env` (không hardcode vào repo).
 
+**Reload mềm `.env` (không cần restart service — thêm 18/09/2026):**
+```bash
+# Chỉ làm mới token/header HTTP (trends/vidiq/keenable/monid/tinyfish/ydc/context-dev) — 0 spawn tiến trình
+curl -X POST "http://127.0.0.1:3988/admin/reload-env" -H "X-API-Key: <MCP_POOL_API_KEY>"
+# Thêm ?stdio=1 để respawn CẢ bridge stdio (exa/firecrawl/jina/tavily/context7) — CHỈ respawn bridge có config đổi
+curl -X POST "http://127.0.0.1:3988/admin/reload-env?stdio=1" -H "X-API-Key: <MCP_POOL_API_KEY>"
+```
+Trả về `{ok, changedKeys, httpUpdated, stdioRespawned, stdioUnchanged}`. Mặc định **không spawn** process nào.
+
 Khởi động khi chết cổng: `D:\Mcp-Pool-Vps\start.cmd` hoặc `start-pool.ps1`.
 
 ---

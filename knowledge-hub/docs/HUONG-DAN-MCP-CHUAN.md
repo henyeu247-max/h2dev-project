@@ -11,8 +11,8 @@
 
 | Dịch vụ | Địa chỉ | Bản chất | Mã nguồn |
 |---|---|---|---|
-| **MCP Pool v2 Local** | `http://127.0.0.1:3988/mcp` | Tool server thực chiến (~180 tools live) | `D:\Mcp-Pool-Vps\` |
-| Healthcheck | `http://127.0.0.1:3988/health` | Kỳ vọng: `{"status":"ok","version":"2.0.0","tools":180,...}` | Windows Service `MCP_Pool_Service` AUTO |
+| **MCP Pool v2 Local** | `http://127.0.0.1:3988/mcp` | Tool server thực chiến (**188 tools live** — 20 namespace, đo 18/09/2026) | `D:\Mcp-Pool-Vps\` |
+| Healthcheck | `http://127.0.0.1:3988/health` | Kỳ vọng: `{"status":"ok","version":"2.0.0","tools":188,...}` (182 nếu bridge tavily fail do mạng) | Windows Service `MCP_Pool_Service` AUTO |
 | **9Router** | `http://127.0.0.1:20128` | **AI Chat Model Gateway** — chỉ LLM chat | **KHÔNG phải MCP tool server** |
 | H2DEV Web | `http://127.0.0.1:8899` | App học liệu / Mission Control | `D:\YTB\H2DEV-Project\` |
 
@@ -53,7 +53,7 @@ Khởi động khi chết cổng: `D:\Mcp-Pool-Vps\start.cmd` hoặc `start-pool
 Fallback script local (không MCP): `scripts/free_yt_engine.py` (`py -3`).  
 `vidiq__*`: chỉ fallback khi cần; hay `ROUTED_ERR` khi quota/API lỗi — **không** đặt làm đường chính.
 
-`trends__*`: hiện **BLOCKED** trên pool anh (`TRENDS_ACCESS_TOKEN` thiếu trong `.env`).
+`trends__*`: **ĐÃ HOẠT ĐỘNG** (18/09/2026 — pool restart nạp `TRENDS_ACCESS_TOKEN` + `TRENDS_KEYS` từ `.env`; `trends__get_top_trends` trả data thật). Lưu ý: pool chỉ đọc `.env` **lúc boot** ⇒ đổi token phải restart service.
 
 ---
 
@@ -83,7 +83,8 @@ Hai vòng: `mcp-web-bench` + `mcp-web-fair` (2026-09-16).
 ### 4.3 Inventory web MCP đang có trong pool
 
 - `exa__*` — search/fetch  
-- `tavily__*` — search/extract/crawl/map/research  
+- `tavily__*` — 8 tool: `search`/`extract` (native, gọi thẳng `api.tavily.com`) + `tavily_search|extract|crawl|map|research|feedback` (bridge `npx mcp-remote`)
+  - ⚠️ **Cảnh báo mạng (18/09/2026):** hạ tầng Tavily (`mcp.tavily.com` + `api.tavily.com`, AWS) **rất chậm từ VN** — connect 12–15s, ~33% timeout (đối chứng `mcp.exa.ai`/`mcp.firecrawl.dev` < 1s). Bridge `npx mcp-remote` đã được nâng timeout **15s → 45s** trong `mcp_bridge.js` (trước đó mất cả 5–6 tool bridge lúc boot). ⇒ **Không đặt Tavily làm đường chính** — dùng Exa/Firecrawl/Keenable.
 - `firecrawl__*` — scrape/search/map/crawl/agent/monitor/research… (bộ lớn nhất)  
 - `jina__read_url`  
 - `ydc__you-search|you-contents|you-discover|you-balance`  

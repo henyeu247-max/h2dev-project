@@ -3,7 +3,7 @@
 > **Nguồn:** 4 buổi Zoom thực chiến H2DEV (11–12/09/2026) · **Tổng thời lượng:** 4h 06m
 > **Người chia sẻ:** 7 năm kinh nghiệm YouTube, từng đạt 200–500 triệu/tháng
 
-Đây là **tầng kiến thức nền tảng** bổ sung cho kho 132 video bài giảng PRO — dành cho người mới bắt đầu xây kênh YouTube Faceless/AI theo hệ thống.
+Đây là **tầng kiến thức nền tảng** bổ sung cho kho 136 video bài giảng PRO — dành cho người mới bắt đầu xây kênh YouTube Faceless/AI theo hệ thống.
 
 ---
 

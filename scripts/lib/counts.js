@@ -148,7 +148,17 @@ function computeCounts() {
     docsVideoDirs: countEntries('docs', { onlyDirs: true, filter: f => /^VIDEO-/.test(f) }),
     docsZoomDirs: countEntries('docs', { onlyDirs: true, filter: f => /^ZOOM-/.test(f) }),
     thumbFiles: countEntries('assets/thumbs', { onlyFiles: true }),
-    rawChannelImages: countEntries('raw-kenh-goc', { filter: f => IMG_RE.test(f) }),
+    rawChannelImages: (() => {
+      const p = path.join(ROOT, 'raw-kenh-goc');
+      if (!fs.existsSync(p)) {
+        // Tren server deploy VPS (thu muc raw-kenh-goc bi gitignore), giu nguyen gia tri tu manifest da commit
+        try {
+          const m = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/counts-manifest.json'), 'utf8'));
+          return m.counts.rawChannelImages || 135;
+        } catch (_) { return 135; }
+      }
+      return countEntries('raw-kenh-goc', { filter: f => IMG_RE.test(f) });
+    })(),
     rawRecordsWithoutImage: rawRecords.filter(r => r && !r.fileName).length,
     rawDeepProfiles: countEntries('data/raw-channels-deep', { onlyDirs: true }),
     sopDocs: countEntries('assets/docs/tai-lieu', { onlyFiles: true }),

@@ -26,6 +26,50 @@ function len(value) {
   return Array.isArray(value) ? value.length : 0;
 }
 
+// Dem entry trong thu muc (an toan — tra 0 neu khong ton tai).
+function countEntries(rel, { onlyDirs = false, onlyFiles = false, filter = null } = {}) {
+  try {
+    const full = path.join(ROOT, rel);
+    return fs.readdirSync(full).filter((f) => {
+      if (filter && !filter(f)) return false;
+      let st;
+      try { st = fs.statSync(path.join(full, f)); } catch (_) { return false; }
+      if (onlyDirs && !st.isDirectory()) return false;
+      if (onlyFiles && !st.isDirectory()) return true;
+      if (onlyFiles) return false;
+      return true;
+    }).length;
+  } catch (_) {
+    return 0;
+  }
+}
+
+const MEDIA_RE = /\.(mp4|webm|mkv|mov)$/i;
+const IMG_RE = /\.(jpg|jpeg|png|webp|gif)$/i;
+
+// Dem file media trong video/<sku>/<file> (1 cap) + tong dung luong byte.
+function scanVideoDir() {
+  let files = 0;
+  let bytes = 0;
+  try {
+    const base = path.join(ROOT, 'video');
+    for (const d of fs.readdirSync(base)) {
+      const sub = path.join(base, d);
+      let st;
+      try { st = fs.statSync(sub); } catch (_) { continue; }
+      if (!st.isDirectory()) continue;
+      for (const f of fs.readdirSync(sub)) {
+        if (!MEDIA_RE.test(f)) continue;
+        try {
+          files += 1;
+          bytes += fs.statSync(path.join(sub, f)).size;
+        } catch (_) { /* ignore */ }
+      }
+    }
+  } catch (_) { /* ignore */ }
+  return { files, bytes };
+}
+
 // Tinh toan TOAN BO so lieu song tu data. Khong hardcode bat ky so nao.
 function computeCounts() {
   const videos = readJson('data-tabs/videos.json');
@@ -59,10 +103,28 @@ function computeCounts() {
   const videoLessons = videoList.filter(v => v && /^VIDEO/i.test(String(v.sku || ''))).length;
   const zoomSessions = videoList.filter(v => v && /^ZOOM/i.test(String(v.sku || ''))).length;
 
+  // Module lo trinh (data/modules.json co the la array hoac {modules:[...]}).
+  const modulesFile = readJson('data/modules.json') || [];
+  const modulesRaw = Array.isArray(modulesFile) ? modulesFile : (Array.isArray(modulesFile.modules) ? modulesFile.modules : []);
+  let modulesItems = 0;
+  let modulesWithBadge = 0;
+  for (const m of modulesRaw) {
+    const items = Array.isArray(m && m.items) ? m.items : [];
+    for (const it of items) {
+      modulesItems += 1;
+      const badge = it && typeof it === 'object' ? it.badge : null;
+      if (badge) modulesWithBadge += 1;
+    }
+  }
+
+  const media = scanVideoDir();
+
   return {
     videos: len(videos),
     videoLessons,
     zoomSessions,
+    videoFree: videoList.filter(v => v && v.free === true).length,
+    videoPro: videoList.filter(v => v && v.free === false).length,
     documents: len(documents),
     channels: len(channelList),
     liveChannels,
@@ -73,6 +135,24 @@ function computeCounts() {
     nguonReup: len(nguonReup),
     niches: nicheList.length,
     nichesGreenTrue,
+    // --- Tai san tren dia (do truc tiep, chong lech docs) ---
+    catalogRecords: len(readJson('data/catalog.json')),
+    catalogFullRecords: len(readJson('data/catalog_full.json')),
+    modules: len(modulesRaw),
+    modulesItems: modulesItems,
+    modulesWithBadge: modulesWithBadge,
+    videoDirs: countEntries('video', { onlyDirs: true }),
+    mediaFiles: media.files,
+    mediaBytes: media.bytes,
+    docsTotalDirs: countEntries('docs', { onlyDirs: true }),
+    docsVideoDirs: countEntries('docs', { onlyDirs: true, filter: f => /^VIDEO-/.test(f) }),
+    docsZoomDirs: countEntries('docs', { onlyDirs: true, filter: f => /^ZOOM-/.test(f) }),
+    thumbFiles: countEntries('assets/thumbs', { onlyFiles: true }),
+    rawChannelImages: countEntries('raw-kenh-goc', { filter: f => IMG_RE.test(f) }),
+    rawRecordsWithoutImage: rawRecords.filter(r => r && !r.fileName).length,
+    rawDeepProfiles: countEntries('data/raw-channels-deep', { onlyDirs: true }),
+    sopDocs: countEntries('assets/docs/tai-lieu', { onlyFiles: true }),
+    masterPrompts: countEntries('docs/NOI-BO/prompt', { onlyFiles: true }),
   };
 }
 

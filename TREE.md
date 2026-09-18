@@ -29,8 +29,8 @@ Y:\YTB\
     │                              #   install-h2dev-{watchdog,noadmin,startup}.ps1 · check-server.ps1
     │                              #   _rereg_watchdog_silent_admin.cmd · h2dev-service-autoreload-hook.ps1 (16/09)
     ├── data\                      # catalog gốc + manifest dẫn xuất — tạo bằng script
-    │   ├── catalog.json               # 136 record (projection gốc)
-    │   ├── catalog_full.json          # 136 record (projection đầy đủ)
+    │   ├── catalog.json               # 140 record (projection gốc)
+    │   ├── catalog_full.json          # 140 record (projection đầy đủ)
     │   ├── modules.json               # 12 module
     │   ├── video_acceptance.json      # trạng thái pilot, QA, blocker — không gọi PASS giả
     │   ├── raw-channels-deep\         # 149 hồ sơ kênh sâu (transcripts/summary/vision) — phục vụ UI
@@ -39,7 +39,7 @@ Y:\YTB\
     │   ├── counts-manifest.json       # manifest số liệu chuẩn tự động sinh bởi sync-counts.js
     │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest  # (2 folder *_backup_* cũ đã dời _archive 16/09)
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
-    │   ├── videos.json            # 140 SKU (22 free / 110 pro + 4 Zoom free)
+    │   ├── videos.json            # 140 SKU (27 free · 113 pro — gồm 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165
     │   ├── tai-lieu-full.json     # 153 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
@@ -53,7 +53,7 @@ Y:\YTB\
     │   ├── thumbs\                # 140/140 khớp videos.json + placeholder.svg
     │   └── avatars\ · docs\
     ├── docs\
-    │   ├── VIDEO-*\               # 132/132 SKU: README + description.html
+    │   ├── VIDEO-*\               # 136/136 SKU: README + description.html
     │   ├── ZOOM-*\                # 4 buổi Zoom (ZOOM-01..04) + ZOOM-00 quy trình: README + link tài liệu chi tiết
     │   └── NOI-BO\                # tài sản nội bộ đã chuẩn hóa tên
     │       ├── README.md
@@ -70,7 +70,7 @@ Y:\YTB\
     │   └── bible-explainer\
     ├── knowledge-hub\             # archive transcript / NotebookLM
     │
-    ├── video\                     # 140 thư mục: 136 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.55 GiB / 23.1 GB) · KHÔNG vào git
+    ├── video\                     # 140 thư mục: 136 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.89 GiB / 23.51 GB) · KHÔNG vào git
     ├── inbox\                     # THẢ FILE MỚI VÀO ĐÂY (web bị chặn)
     ├── scripts\                   # validate · sync · intake · clean
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git
@@ -85,7 +85,7 @@ Y:\YTB\
     ├── .cache\                    # cache runtime (checkpoint, thumbnail, reload-state) · web bị chặn
     ├── logs\                      # log server/watchdog/reload · web bị chặn · KHÔNG vào git
     │   # (không còn ở gốc: _frames\ · _tmp_audio\ · _drafts\ · _internal\ — đã dời 16/09; script tự tạo lại khi chạy)
-    ├── raw-kenh-goc\             # 135 ảnh raw canonical + metadata (156 record: 21 kênh mới chưa có ảnh chụp) · web bị CHẶN (403)
+    ├── raw-kenh-goc\             # 135 ảnh raw canonical + metadata (156 record: 23 kênh chưa có ảnh chụp) · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git
 ```

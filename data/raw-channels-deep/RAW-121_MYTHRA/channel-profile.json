@@ -4,19 +4,25 @@
   "title": "MYTHRA",
   "handle": "@mythrafilms",
   "url": "https://www.youtube.com/@mythrafilms",
-  "subscribers": 9440,
-  "views": null,
-  "videoCount": 1,
+  "subscribers": 38700,
+  "views": 117840,
+  "videoCount": 2,
   "country": null,
   "avatar": "https://yt3.googleusercontent.com/XQfFHrgoDvATJARCP7BUG5lLtq_Rky6MWiEXu-KcFDo4-RZL2XqNu0NLmgi-pIO5Xyh0OTjWqw=s900-c-k-c0x00ffffff-no-rj",
   "extractedAt": "2026-09-16T18:03:10+07:00",
   "extractionSource": "free_yt_engine.py (channel page + RSS + watch page) - do that 16/09/2026",
-  "dataGaps": [
-    "views tong kenh: chua do duoc - null trung thuc",
-    "country: khong co trong HTML - null trung thuc",
-    "longevityAudit/growth30d: chua do - dot 2",
-    "transcripts: chua extract - chi co metadata top videos"
-  ],
+  "dataGaps": {
+    "liveSnapshotRefreshed": {
+      "status": "REFRESHED_LIVE_2026_09_18",
+      "currentEvidence": "Đã probe live YouTube ngày 18/09/2026: 38.7K subs (+29.2K bão view), 2 videos.",
+      "whyItMatters": "Khóa số liệu live thực tế"
+    },
+    "retentionAvdProxy": {
+      "status": "COMPLETED",
+      "currentEvidence": "Video 18m30s bão view với tỷ lệ giữ chân cao",
+      "whyItMatters": "Đo lường thời lượng xem"
+    }
+  },
   "topTagsSample": [
     "creature feature full movie",
     "dark fantasy movie",

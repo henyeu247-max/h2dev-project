@@ -74,10 +74,12 @@ function writeJson(file, value) {
   writeJson('data-tabs/videos.json', tabs);
 
   const csvPath = path.join(ROOT, 'manifest_full.csv');
-  const csvLines = fs.readFileSync(csvPath, 'utf8').split(/\r?\n/);
-  const csvIndex = csvLines.findIndex((line) => line.startsWith(`${SKU},`));
-  if (csvIndex >= 0) csvLines[csvIndex] = csvLines[csvIndex].replace(/,\d+,HLS,/, `,${bytes},HLS,`);
-  fs.writeFileSync(csvPath, csvLines.join('\n'), 'utf8');
+  if (fs.existsSync(csvPath)) {
+    const csvLines = fs.readFileSync(csvPath, 'utf8').split(/\r?\n/);
+    const csvIndex = csvLines.findIndex((line) => line.startsWith(`${SKU},`));
+    if (csvIndex >= 0) csvLines[csvIndex] = csvLines[csvIndex].replace(/,\d+,HLS,/, `,${bytes},HLS,`);
+    fs.writeFileSync(csvPath, csvLines.join('\n'), 'utf8');
+  }
   console.log(JSON.stringify({ sku: SKU, bytes, api: 'getCourseNoCategory', synced: true }, null, 2));
 })().catch((error) => {
   console.error(error.stack || error.message || String(error));

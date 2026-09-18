@@ -16,7 +16,10 @@
 - **Tiêu đề bão view:** *"Nếu bạn có số tiền này trong tài khoản ngân hàng sau tuổi 65, đừng kiếm tiền nữa mà hãy tận hưởng cuộc sống!"*
 - **Tâm lý khán giả:** Đánh trúng nỗi lo âu lớn nhất của người trung niên và sắp về hưu tại Hàn Quốc (bảo đảm tài chính tuổi già, tự do tinh thần).
 
-### Kênh 2: `@Gyakkyoyori_Sukatto` (Nghịch Cảnh Vươn Lên / Sukatto — Nhật Bản)
+### Kênh 3: @인생반전이야기 (Đảo Ngược Cuộc Đời — Hàn Quốc)
+- **Chiến lược:** Đăng 9 video đầu lẹt đẹt, đến video thứ 10 bùng nổ 134K view.
+
+### Kênh 2: `@gyakkyoyori_risukatsu` (Nghịch Cảnh Vươn Lên / Sukatto — Nhật Bản)
 - **Đặc thù ngách:** Thể loại Sukatto (câu chuyện trả thù ngọt ngào, lật ngược thế cờ sau khi bị coi thường) và câu chuyện cảm động gia đình tại Nhật Bản.
 - **Tốc độ:** Kênh mới 1 tháng, xuất bản 37 video nhưng tổng lượng view đạt mức triệu view siêu khủng.
 - **Kỹ thuật dựng:** Ghép các đoạn video tự nhiên về thú cưng (chó, mèo), đời sống thường nhật làm nền minh họa cho câu chuyện kịch tính.
@@ -51,6 +54,6 @@ Tác giả cảnh báo một lỗi chí mạng mà kênh đối thủ `@인생�
 
 - 🇰🇷 `@인생의_고수`
 - 🇰🇷 `@기적의마인드-w7d`
-- 🇯🇵 `@Gyakkyoyori_Sukatto`
+- 🇯🇵 `@gyakkyoyori_risukatsu`
 - 🇰🇷 `@매일명상276`
 - 🌐 `@mythrafilms`

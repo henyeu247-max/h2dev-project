@@ -8978,67 +8978,80 @@
   "VIDEO-0bb86b": {
     "sku": "VIDEO-0bb86b",
     "title": "Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật",
-    "actual_topic": "Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật",
+    "actual_topic": "Mổ xẻ hiện tượng video đầu tiên nổ 196K view ngách Triết lý tiền bạc sau tuổi 65 tại Hàn Quốc; phân tích lỗi edit 1 ảnh tĩnh; giải mã ngách Drama cảm động Nhật Bản và chiến lược kiên trì nổ view ở video thứ 10",
     "category_group": "ngach_xanh",
     "niche_primary": "Triết Lý Sống & Tài Chính Tuổi Già",
+    "niche_id": "triet-ly-tai-chinh-tuoi-gia",
     "target_market": "🇰🇷 Hàn, 🇯🇵 Nhật",
     "market_code": "KR,JP",
     "channels_mentioned": [
       "@인생의_고수",
       "@기적의마인드-w7d",
-      "@Gyakkyoyori_Sukatto",
-      "@매일명상276",
-      "@mythrafilms"
+      "@gyakkyoyori_risukatsu",
+      "@인생반전이야기"
     ],
     "tools_mentioned": [
-      "ChatGPT",
       "ElevenLabs",
+      "Clone Voice",
+      "ChatGPT",
       "CapCut"
     ],
     "visual_audio_checked": true,
     "accuracy_status": "verified_expert_summary",
-    "analysis_method": "ai_multimodal_deep_audit",
-    "key_takeaways": [
-      "📌 Bài học 1: Ngách tiền bạc/triết lý cuộc sống copy từ thị trường Hàn/Nhật rất hot",
-      "📌 Bài học 2: Nên chọn key ít cạnh tranh, không cần lo vấn đề spam hay bị quét",
-      "📌 Bài học 3: Quan trọng nhất vẫn là nội dung chất lượng thì sẽ có view",
-      "📌 Bài học 4: Phải kiên trì, làm đủ số lượng video (tối thiểu 10-15 video) mới có kết quả",
-      "📌 Bài học 5: Có thể dùng ChatGPT để học phong cách thumbnail/video từ kênh đối thủ"
-    ],
+    "analysis_method": "deep_visual_audio_inspection",
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-0bb86b/transcript.txt",
     "key_timestamps": [
       {
-        "seconds": 0,
-        "time": "00:00",
-        "label": "Phân tích kênh mới 1 video nổ gần 200K view"
+        "seconds": 3,
+        "time": "00:03",
+        "label": "Kênh Hàn @인생의_고수 & Video đầu tiên nổ 196K view sau 5 ngày"
       },
       {
-        "seconds": 120,
-        "time": "02:00",
-        "label": "Mổ xẻ ngách triết lý tiền bạc sau tuổi 65"
+        "seconds": 76,
+        "time": "01:16",
+        "label": "Kỹ thuật dùng AI Voice (ElevenLabs) & Cảnh báo lỗi 1 ảnh tĩnh"
       },
       {
-        "seconds": 300,
-        "time": "05:00",
-        "label": "Cảnh báo lỗi dùng 1 ảnh tĩnh và hướng dẫn dựng B-roll"
+        "seconds": 126,
+        "time": "02:06",
+        "label": "Phân tích ngách Triết lý tiền bạc Carl Jung (Kênh @기적의마인드-w7d)"
       },
       {
-        "seconds": 480,
-        "time": "08:00",
-        "label": "Kênh câu chuyện cảm động Nhật Bản và chiến lược spam video"
+        "seconds": 230,
+        "time": "03:50",
+        "label": "Kênh Nhật @gyakkyoyori_risukatsu & Ngách Drama cảm động (37 video)"
+      },
+      {
+        "seconds": 389,
+        "time": "06:29",
+        "label": "Kênh Hàn @인생반전이야기 & Chiến lược kiên trì nổ view ở video thứ 10"
+      },
+      {
+        "seconds": 532,
+        "time": "08:52",
+        "label": "Quy trình lấy ý tưởng: Chụp màn hình tiêu đề nạp cho ChatGPT"
       }
     ],
+    "key_takeaways": [
+      "📌 [Bùng nổ view từ video đầu tiên]: Kênh Hàn Quốc @인생의_고수 mới lập ngày 4/9/2026 ngâm kênh vài ngày rồi xuất bản video đầu tiên, chỉ sau 5 ngày đã bứt phá hơn 196.000 lượt xem với chỉ số VPH cực cao nhờ đánh trúng tâm lý lo âu tài chính tuổi già ('Nếu có số tiền này sau tuổi 65, đừng kiếm tiền nữa hãy tận hưởng cuộc sống').",
+      "📌 [Bắt lỗi edit chí mạng của đối thủ]: Kênh đối thủ mắc lỗi nguy hiểm là dùng duy nhất 1 hình ảnh tĩnh chạy suốt video dài. Tác giả cảnh báo cách làm lười biếng này rất dễ bị YouTube quét lỗi nội dung không xác thực (Inauthentic Content); bắt buộc phải khắc phục bằng cách ghép các video phong cảnh, động vật chuyển động tự nhiên lặp loop.",
+      "📌 [Ngách Drama cảm động Nhật Bản]: Kênh Nhật Bản @gyakkyoyori_risukatsu (thể loại Sukatto / truyện cảm động) làm về chủ đề gia đình và thú cưng (chó mèo); mới 1 tháng xuất bản 37 video nhưng tổng view đạt mức triệu view siêu khủng.",
+      "📌 [Chiến lược vượt bẫy nản lòng 10 video]: Nhiều người đăng 2-3 video đầu thấy lẹt đẹt vài chục view là nản chí bỏ cuộc. Tác giả phân tích kênh Hàn Quốc @인생반전이야기 đăng liên tục 9 video đầu không ai xem, nhưng đúng đến video thứ 10 là thuật toán cắn đề xuất và bùng nổ view mạnh mẽ.",
+      "📌 [Quy trình AI bóc tách ý tưởng bằng ChatGPT]: Không cần tự sáng tạo kịch bản từ đầu; chụp ảnh màn hình tiêu đề và thumbnail của các video triệu view đối thủ nạp cho ChatGPT học phong cách để viết kịch bản tương tự, sau đó dùng ElevenLabs tạo giọng đọc truyền cảm."
+    ],
     "edit_sop": {
-      "primary": "Quy trình biên tập nhiều lớp B-roll kết hợp giọng đọc AI trầm ấm",
+      "primary": "Sử dụng giọng đọc AI cao cấp (ElevenLabs / Clone Voice) kết hợp ghép video nền động vật (chó, mèo) hoặc phong cảnh tự nhiên thay đổi mỗi 15-20s, tuyệt đối tránh dùng 1 ảnh tĩnh duy nhất.",
       "additional": [
-        "Dùng ElevenLabs / Minimax clone chất giọng người lớn tuổi",
-        "Ghép footage đời thường (chó mèo, thiên nhiên, uống trà) đổi cảnh mỗi 4-6s",
-        "Chèn sóng âm trực quan và phụ đề nổi bật"
+        "Tạo giọng đọc AI: Dùng ElevenLabs tạo giọng đọc trầm ấm, truyền cảm phù hợp với tệp khán giả trung niên và người già.",
+        "Dựng B-roll chuyển động: Ghép footage chó mèo, sinh hoạt đời thường hoặc video phong cảnh thiên nhiên lặp loop làm nền minh họa.",
+        "Lấy ý tưởng kịch bản: Chụp màn hình tiêu đề video bão view của đối thủ đưa vào ChatGPT để trích xuất cấu trúc và viết lại kịch bản mới."
       ]
     },
     "avoid_flags": [
-      "Kênh dùng 1 hình nền duy nhất dễ bị YouTube quét bản quyền",
-      "Ngách dịch thuật copy nội dung: không bền vững, chỉ ăn được 1-2 tháng đầu, sau đó dễ bị hạn chế phân phối",
-      "Phải làm tối thiểu 10-15 video thì kênh mới bắt đầu được phân phối"
+      "TUYỆT ĐỐI KHÔNG DÙNG 1 ẢNH TĨNH DUY NHẤT: Dùng 1 ảnh nền chạy từ đầu đến cuối video rất dễ bị YouTube quét lỗi nội dung kém chất lượng hoặc thiếu giá trị gia tăng (Inauthentic Content).",
+      "Cảnh báo ngách đề tài rợn người / giật gân: Các dạng video này có thể ăn đề xuất 1-2 tháng đầu nhưng thuật toán YouTube quét rất gắt nên không bền, dễ bị hạn chế phân phối.",
+      "Không bỏ cuộc ở những video đầu tiên: Thuật toán cần thời gian học tệp khán giả; bắt buộc phải kiên trì xuất bản đều đặn từ 10 đến 15 video mới đánh giá được sức phân phối."
     ]
   }
 }

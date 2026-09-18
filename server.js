@@ -175,10 +175,13 @@ const server = http.createServer(async (req,res)=>{
   const apiPath = req.url.split('?')[0];
   if (apiPath === '/api/admin-state') {
     if (req.method === 'GET' || isHead) {
-      sendJson(req, res, 200, readAdminState(), isHead, {'Allow': 'GET, HEAD, OPTIONS'});
+      // `writable:false` = CONG BO kha nang ghi de client KHONG thu PUT nua
+      // (truoc day client thu PUT -> 405 moi lan luu -> console day loi 405 vo ich).
+      const state = readAdminState();
+      sendJson(req, res, 200, Object.assign({}, state, {writable:false}), isHead, {'Allow': 'GET, HEAD, OPTIONS'});
       return;
     }
-    sendJson(req, res, 405, {error:'Admin state writes are disabled'}, false, {'Allow': 'GET, HEAD, OPTIONS'});
+    sendJson(req, res, 405, {error:'Admin state writes are disabled', readable:true, writable:false}, false, {'Allow': 'GET, HEAD, OPTIONS'});
     return;
   }
   if (apiPath === '/api/intelligence/breakouts') {

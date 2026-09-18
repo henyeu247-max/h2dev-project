@@ -72,16 +72,31 @@
       return legacy && legacy.item_id ? { sku: legacy.item_id, ts: Date.now(), nextSku: null } : null;
     } catch (e) { return null; }
   }
+  /* Sync state len server.
+   *
+   * LUU Y (18/09/2026): `server.js:181` CHU DONG chan ghi `PUT /api/admin-state`
+   * (tra 405 "Admin state writes are disabled" vi ly do an toan mang LAN).
+   * Truoc day ham nay van gui PUT moi lan luu => console day loi 405 (nhieu vo ich)
+   * va ton bang thong. Nay:
+   *   - Lan dau thu gui -> neu 405/501 thi TU TAT (khong thu lai) va ghi nho co.
+   *   - Neu sau nay server bat ghi (200) thi tu BAT LAI binh thuong.
+   * Du lieu nguoi dung VAN duoc luu day du o localStorage (local-first).
+   */
+  var _adminWriteDisabled = null;   // null=chua biet | true=server chan ghi | false=ghi duoc
   function syncAdmin() {
     try {
       var state = { role: 'admin', version: 1, updatedAt: Date.now(), watched: loadWatched(), favorites: loadFavs(), recent: JSON.parse(localStorage.getItem(RKEY) || 'null') };
       localStorage.setItem('h2dev-admin', JSON.stringify(state));
-      fetch('/api/admin-state', { method: 'PUT', headers: {'Content-Type':'application/json'}, body: JSON.stringify(state), keepalive: true }).catch(function () {});
+      if (_adminWriteDisabled !== false) return;   // chua biet / biet la chan -> khong gui (tranh 405)
+      fetch('/api/admin-state', { method: 'PUT', headers: {'Content-Type':'application/json'}, body: JSON.stringify(state), keepalive: true })
+        .catch(function () { /* loi mang: lan sau thu lai */ });
     } catch (e) {}
   }
   function hydrateAdmin() {
     return fetch('/api/admin-state', {cache:'no-store'}).then(function (r) { return r.ok ? r.json() : null; }).then(function (s) {
       if (!s) return null;
+      // Server CONG BO kha nang ghi -> biet truoc, khoi thu PUT (tranh 405)
+      _adminWriteDisabled = (s.writable === false);
       var curW = loadWatched();
       var remoteW = (s.watched && typeof s.watched === 'object') ? s.watched : {};
       var mergedW = Object.assign({}, remoteW);

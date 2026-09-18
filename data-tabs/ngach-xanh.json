@@ -319,7 +319,7 @@
     ]
   },
   "phamViKho": {
-    "video": 136,
+    "video": 140,
     "taiLieu": 153,
     "kenhMau": 165,
     "kenhDeadTrongFile": 13,
@@ -1331,7 +1331,7 @@
       "ngach": "Nhân bản / Kênh",
       "xanh": "META",
       "vaiTro": "Quy trình clone / setup — không phải ngách đăng.",
-      "evidence": "33/136 video.",
+      "evidence": "37/140 video.",
       "skus": [
         "VIDEO-e24c31",
         "VIDEO-a7bfd0",
@@ -1365,14 +1365,18 @@
         "VIDEO-943781",
         "VIDEO-f59aa7",
         "VIDEO-3df94e",
-        "VIDEO-5c438a"
+        "VIDEO-5c438a",
+        "ZOOM-01-Nen-tang-moi-truong",
+        "ZOOM-02-Chien-luoc-kenh-san-xuat",
+        "ZOOM-03-Quy-trinh-tool-toi-uu",
+        "ZOOM-04-Adsense-khang-loi"
       ]
     },
     {
       "ngach": "Share key / Ngách nhỏ",
       "xanh": "META",
       "vaiTro": "Loại video share key. Từng key đã tách ra các mục phía trên.",
-      "evidence": "35/136 video.",
+      "evidence": "41/140 video.",
       "skus": [
         "VIDEO-4b3c09",
         "VIDEO-d2cd90",
@@ -1408,14 +1412,20 @@
         "VIDEO-891f32",
         "VIDEO-61e354",
         "VIDEO-bdfa54",
-        "VIDEO-44cf22"
+        "VIDEO-44cf22",
+        "VIDEO-61ad94",
+        "VIDEO-3a38f9",
+        "VIDEO-73d98a",
+        "VIDEO-d56768",
+        "VIDEO-989053",
+        "VIDEO-0bb86b"
       ]
     },
     {
       "ngach": "Kiếm tiền / Chính sách",
       "xanh": "META",
       "vaiTro": "Kháng lỗi / AdSense / gãy view.",
-      "evidence": "9/136 video.",
+      "evidence": "10/140 video.",
       "skus": [
         "VIDEO-4425fc",
         "VIDEO-46c57e",
@@ -1425,14 +1435,15 @@
         "VIDEO-1b4be3",
         "VIDEO-ec9c50",
         "VIDEO-00136f",
-        "VIDEO-9ea5e3"
+        "VIDEO-9ea5e3",
+        "VIDEO-8bc3ce"
       ]
     },
     {
       "ngach": "Edit / Thumb",
       "xanh": "META",
       "vaiTro": "Packaging.",
-      "evidence": "9/136 video.",
+      "evidence": "9/140 video.",
       "skus": [
         "VIDEO-DD983D",
         "VIDEO-484f9e",
@@ -1449,7 +1460,7 @@
       "ngach": "Nền tảng / Tool",
       "xanh": "META",
       "vaiTro": "Claude/ChatGPT train prompt, SRT, voice, VIP. Hạ tầng sản xuất — không phải ngách đăng YouTube. Nằm cuối tab.",
-      "evidence": "10/136 video.",
+      "evidence": "10/140 video.",
       "skus": [
         "VIDEO-e90874",
         "VIDEO-5d54d0",

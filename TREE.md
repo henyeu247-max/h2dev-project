@@ -39,7 +39,7 @@ Y:\YTB\
     │   ├── counts-manifest.json       # manifest số liệu chuẩn tự động sinh bởi sync-counts.js
     │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest  # (2 folder *_backup_* cũ đã dời _archive 16/09)
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
-    │   ├── videos.json            # 136 SKU (22 free / 110 pro + 4 Zoom free)
+    │   ├── videos.json            # 140 SKU (22 free / 110 pro + 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165
     │   ├── tai-lieu-full.json     # 153 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
@@ -50,7 +50,7 @@ Y:\YTB\
     │   └── raw-kenh-mau.json      # 156 record canonical (149 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 156/156 · vidIQ verified 83
     │
     ├── assets\                    # tailwind.css (BUILD từ css/input.css) · viddar.css · learn.css · player.css · fonts\ (woff2 self-host)
-    │   ├── thumbs\                # 136/136 khớp videos.json + placeholder.svg
+    │   ├── thumbs\                # 140/140 khớp videos.json + placeholder.svg
     │   └── avatars\ · docs\
     ├── docs\
     │   ├── VIDEO-*\               # 132/132 SKU: README + description.html
@@ -70,7 +70,7 @@ Y:\YTB\
     │   └── bible-explainer\
     ├── knowledge-hub\             # archive transcript / NotebookLM
     │
-    ├── video\                     # 136 thư mục: 132 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.55 GiB / 23.1 GB) · KHÔNG vào git
+    ├── video\                     # 140 thư mục: 136 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.55 GiB / 23.1 GB) · KHÔNG vào git
     ├── inbox\                     # THẢ FILE MỚI VÀO ĐÂY (web bị chặn)
     ├── scripts\                   # validate · sync · intake · clean
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git

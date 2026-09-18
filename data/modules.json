@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-08-20T16:24:20.718Z",
   "source": "data/catalog_full.json + data/h2dev-raw.json (site gốc h2dev.vn)",
-  "totalLessons": 136,
-  "totalFree": 26,
-  "totalPro": 110,
+  "totalLessons": 140,
+  "totalFree": 27,
+  "totalPro": 113,
   "modules": [
     {
       "id": "M00",
@@ -72,9 +72,9 @@
       "id": "M01",
       "title": "Xử lý & Kháng lỗi kênh YouTube",
       "desc": "Tổng hợp các video kháng lỗi sử dụng lại nội dung, trùng lặp, bản quyền, Fix GA, ...",
-      "count": 6,
+      "count": "Số lượng: 7 video",
       "countOriginal": 6,
-      "totalDuration": "22:29",
+      "totalDuration": "24:20",
       "items": [
         {
           "sku": "VIDEO-e91589",
@@ -277,6 +277,37 @@
           "tags": [
             "Ngoại"
           ]
+        },
+        {
+          "sku": "VIDEO-8bc3ce",
+          "title": "Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt",
+          "image": "assets/thumbs/VIDEO-8bc3ce.png",
+          "mp4": "video/VIDEO-8bc3ce/VIDEO-8bc3ce.mp4",
+          "origin": "https://h2dev.vn/learn/study/cuu-kenh-lam-reup-dashdoanh-thu-hon-1k7-reup-view-viet",
+          "published_at": "2026-09-11",
+          "free": true,
+          "size": 22211679,
+          "channels": [],
+          "docsCount": 1,
+          "seq": "07",
+          "duration": "01:53",
+          "badge": "",
+          "access": "FREE",
+          "docs": [
+            {
+              "name": "Tổng quan bài học & SOP: Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt",
+              "link": "docs/VIDEO-8bc3ce/README.md",
+              "file": "docs/VIDEO-8bc3ce/README.md"
+            }
+          ],
+          "market": "🇻🇳 Việt",
+          "tags": [
+            "Nổi bật",
+            "Kháng lỗi",
+            "Reup",
+            "Doanh thu",
+            "Việt"
+          ]
         }
       ]
     },
@@ -286,7 +317,7 @@
       "desc": "Quy trình setup setting kênh chuẩn ngay từ đầu theo chính sách mới nhất 2026.",
       "count": 12,
       "countOriginal": 12,
-      "totalDuration": "01:30:30",
+      "totalDuration": "01:30:26",
       "items": [
         {
           "sku": "VIDEO-d84a78",
@@ -618,7 +649,7 @@
       "desc": "Hướng dẫn tư duy tìm, lọc Key YouTube View Ngoại, xác định Key Trends, Key Ngon.",
       "count": 1,
       "countOriginal": 1,
-      "totalDuration": "22:39",
+      "totalDuration": "22:38",
       "items": [
         {
           "sku": "VIDEO-61e354",
@@ -659,7 +690,7 @@
       "desc": "Nên dùng bản web hay app? Train prompt Claude cho bất kỳ ngách nào, đóng gói Skill.",
       "count": 4,
       "countOriginal": 4,
-      "totalDuration": "02:36:49",
+      "totalDuration": "02:36:47",
       "items": [
         {
           "sku": "VIDEO-3e943c",
@@ -697,7 +728,7 @@
           "channels": [],
           "docsCount": 1,
           "seq": "02",
-          "duration": "01:12:33",
+          "duration": "72:33",
           "badge": "QUAN TRỌNG",
           "access": "PRO",
           "docs": [
@@ -729,7 +760,7 @@
           ],
           "docsCount": 2,
           "seq": "03",
-          "duration": "01:00:59",
+          "duration": "1:00:59",
           "badge": "QUAN TRỌNG",
           "access": "PRO",
           "docs": [
@@ -800,7 +831,7 @@
       "desc": "Tự train prompt + phân tích kênh đối thủ + share ngách nhỏ sức khỏe thị trường Hàn.",
       "count": 3,
       "countOriginal": 3,
-      "totalDuration": "01:29:58",
+      "totalDuration": "01:29:55",
       "items": [
         {
           "sku": "VIDEO-bdfab7",
@@ -879,7 +910,7 @@
           "channels": [],
           "docsCount": 1,
           "seq": "03",
-          "duration": "33:10",
+          "duration": "33:09",
           "badge": "QUAN TRỌNG",
           "access": "PRO",
           "docs": [
@@ -903,9 +934,9 @@
       "id": "M06",
       "title": "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục",
       "desc": "Module lớn nhất 86 bài. Share key + thực chiến các ngách nhỏ trên mọi thị trường: Nhật · Hàn · Việt · US · Canada · Philippines. Cập nhật liên tục.",
-      "count": 89,
+      "count": "Số lượng: 92 video",
       "countOriginal": 86,
-      "totalDuration": "12:51:22",
+      "totalDuration": "13:16:35",
       "items": [
         {
           "sku": "VIDEO-3a38f9",
@@ -932,7 +963,11 @@
           "tags": [
             "Hàn",
             "Việt"
-          ]
+          ],
+          "duration": "11:11",
+          "access": "PRO",
+          "seq": "01a",
+          "badge": ""
         },
         {
           "sku": "VIDEO-61ad94",
@@ -955,7 +990,7 @@
           ],
           "docsCount": 0,
           "seq": "01b",
-          "duration": "10:28",
+          "duration": "10:29",
           "duration_label": "10:28",
           "badge": "QUAN TRỌNG",
           "access": "PRO",
@@ -1860,7 +1895,7 @@
           "channels": [],
           "docsCount": 0,
           "seq": "28",
-          "duration": "05:33",
+          "duration": "05:32",
           "badge": "QUAN TRỌNG",
           "access": "PRO",
           "desc": "金龍巫女みこと ~龍神様とのおしゃべり~&nbsp;  (k&ecirc;nh 1)    \n   心を磨く言葉たち&nbsp;  (k&ecirc;nh 2)    \n   偉人の智慧&nbsp;  (k&ecirc;nh 3)",
@@ -1969,7 +2004,7 @@
           ],
           "docsCount": 1,
           "seq": "32",
-          "duration": "02:03",
+          "duration": "02:02",
           "badge": "QUAN TRỌNG",
           "access": "PRO",
           "docs": [
@@ -3056,7 +3091,7 @@
           ],
           "docsCount": 0,
           "seq": "66",
-          "duration": "03:04",
+          "duration": "03:03",
           "badge": "NỔI BẬT",
           "access": "PRO",
           "desc": "link k&ecirc;nh",
@@ -3606,7 +3641,7 @@
           "channels": [],
           "docsCount": 2,
           "seq": "83",
-          "duration": "11:46",
+          "duration": "11:45",
           "badge": "NỔI BẬT",
           "access": "FREE",
           "docs": [
@@ -3764,6 +3799,105 @@
           "tags": [
             "Nhật",
             "Hàn"
+          ],
+          "duration": "09:19",
+          "access": "PRO",
+          "seq": "89",
+          "badge": ""
+        },
+        {
+          "sku": "VIDEO-d56768",
+          "title": "Share ngách bán content view Việt mới nhất 09-09-2026",
+          "image": "assets/thumbs/VIDEO-d56768.png",
+          "mp4": "video/VIDEO-d56768/VIDEO-d56768.mp4",
+          "origin": "https://h2dev.vn/learn/study/share-ngach-ban-content-view-viet-moi-nhat-09-09-2026",
+          "published_at": "2026-09-09",
+          "free": false,
+          "size": 69120634,
+          "channels": [],
+          "docsCount": 1,
+          "seq": "90",
+          "duration": "07:17",
+          "badge": "",
+          "access": "PRO",
+          "docs": [
+            {
+              "name": "Tổng quan bài học & SOP: Share ngách bán content view Việt mới nhất 09-09-2026",
+              "link": "docs/VIDEO-d56768/README.md",
+              "file": "docs/VIDEO-d56768/README.md"
+            }
+          ],
+          "market": "🇻🇳 Việt",
+          "tags": [
+            "Quan trọng",
+            "Bán content",
+            "Drama",
+            "Việt",
+            "RPM"
+          ]
+        },
+        {
+          "sku": "VIDEO-989053",
+          "title": "Update key(ngách nhỏ) thị trường US Hoa Kỳ + Hàn",
+          "image": "assets/thumbs/VIDEO-989053.png",
+          "mp4": "video/VIDEO-989053/VIDEO-989053.mp4",
+          "origin": "https://h2dev.vn/learn/study/update-keyngach-nho-thi-truong-us-hoa-ky-han",
+          "published_at": "2026-09-12",
+          "free": false,
+          "size": 72357964,
+          "channels": [],
+          "docsCount": 1,
+          "seq": "91",
+          "duration": "07:22",
+          "badge": "",
+          "access": "PRO",
+          "docs": [
+            {
+              "name": "Tổng quan bài học & SOP: Update key(ngách nhỏ) thị trường US Hoa Kỳ + Hàn",
+              "link": "docs/VIDEO-989053/README.md",
+              "file": "docs/VIDEO-989053/README.md"
+            }
+          ],
+          "market": "🇺🇸 Mỹ, 🇰🇷 Hàn",
+          "tags": [
+            "Quan trọng",
+            "US",
+            "Hàn",
+            "Phong thủy",
+            "Tâm linh",
+            "May mắn"
+          ]
+        },
+        {
+          "sku": "VIDEO-0bb86b",
+          "title": "Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật",
+          "image": "assets/thumbs/VIDEO-0bb86b.png",
+          "mp4": "video/VIDEO-0bb86b/VIDEO-0bb86b.mp4",
+          "origin": "https://h2dev.vn/learn/study/chi-1-video-dau-duy-nhat-no-gan-200k-view-share-ngach-moi-cuc-nho-thi-truong-han-va-nhat",
+          "published_at": "2026-09-17",
+          "free": false,
+          "size": 116680980,
+          "channels": [],
+          "docsCount": 1,
+          "seq": "92",
+          "duration": "10:37",
+          "badge": "",
+          "access": "PRO",
+          "docs": [
+            {
+              "name": "Tổng quan bài học & SOP: Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật",
+              "link": "docs/VIDEO-0bb86b/README.md",
+              "file": "docs/VIDEO-0bb86b/README.md"
+            }
+          ],
+          "market": "🇰🇷 Hàn, 🇯🇵 Nhật",
+          "tags": [
+            "Quan trọng",
+            "Hàn",
+            "Nhật",
+            "Triết lý",
+            "Tuổi già",
+            "Outlier"
           ]
         }
       ]
@@ -3774,7 +3908,7 @@
       "desc": "Hướng dẫn quy trình làm thumb, clone thumb đối thủ, edit key Chill Dude / triết lý / Nonagon.",
       "count": 6,
       "countOriginal": 6,
-      "totalDuration": "03:35:54",
+      "totalDuration": "03:35:50",
       "items": [
         {
           "sku": "VIDEO-a1c98f",
@@ -3835,7 +3969,7 @@
           "channels": [],
           "docsCount": 0,
           "seq": "03",
-          "duration": "58:58",
+          "duration": "58:57",
           "badge": "NỔI BẬT",
           "access": "PRO",
           "docs": [],
@@ -3926,7 +4060,7 @@
           "channels": [],
           "docsCount": 4,
           "seq": "06",
-          "duration": "01:28:14",
+          "duration": "88:14",
           "badge": "",
           "access": "FREE",
           "docs": [
@@ -3973,7 +4107,7 @@
       "desc": "Tút mẹo khắc phục gãy view, bám theo key đối thủ không bị 0 view, edit tránh quét AI.",
       "count": 4,
       "countOriginal": 4,
-      "totalDuration": "43:50",
+      "totalDuration": "43:47",
       "items": [
         {
           "sku": "VIDEO-9ea5e3",
@@ -4124,7 +4258,7 @@
       "desc": "Free tool tạo giọng đọc, tool dịch SRT VIP, 6 bộ tool miễn phí, Elevenlab / Minimax giá rẻ.",
       "count": 4,
       "countOriginal": 4,
-      "totalDuration": "14:24",
+      "totalDuration": "14:22",
       "items": [
         {
           "sku": "VIDEO-6283a6",
@@ -4209,7 +4343,7 @@
           "channels": [],
           "docsCount": 6,
           "seq": "03",
-          "duration": "01:05",
+          "duration": "01:04",
           "badge": "NỔI BẬT",
           "access": "PRO",
           "docs": [
@@ -4297,7 +4431,7 @@
       "desc": "4 buổi Zoom thực chiến: nền tảng môi trường, chiến lược kênh, quy trình tool, AdSense & kháng lỗi.",
       "count": 4,
       "countOriginal": 4,
-      "totalDuration": "4:06",
+      "totalDuration": "04:06:08",
       "items": [
         {
           "sku": "ZOOM-01-Nen-tang-moi-truong",

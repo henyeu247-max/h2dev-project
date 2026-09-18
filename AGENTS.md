@@ -30,7 +30,8 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | Data core (video/ngách/kênh/tài liệu) | `d:\YTB\H2DEV-Project\data-tabs\*.json` |
 | Catalog | `d:\YTB\H2DEV-Project\data\catalog.json` · `catalog_full.json` · `music_catalog.json` |
 | Video acceptance | `data\video_acceptance.json` — trạng thái pilot/QA, không gọi nghiệm thu khi còn blocker |
-| Scripts (validate/audit) | `d:\YTB\H2DEV-Project\scripts\` |
+| Scripts (validate/audit) | `d:\YTB\H2DEV-Project\scripts\` — audit v2: `audit_videos_v2.py` + `silence_scan.py` + `speech_density.py` + `frame_vision_audit.py` + `patch_transcript_gaps.py` |
+| Báo cáo audit (nội bộ, web bị chặn) | `_audit\20260918-full-136-audit\` — `report.json` · `silence.json` · `vision.json` · `speech_density.json` · `gap_probe.json` · `media_integrity.json` |
 | Docs + Rule làm việc | `d:\YTB\H2DEV-Project\knowledge-hub\docs\` |
 | **Kiến thức Zoom (quy trình xây kênh A–Z)** | `d:\YTB\H2DEV-Project\docs\NOI-BO\zoom\` |
 | Backup | `d:\YTB\H2DEV-Project\_backup\` |
@@ -67,7 +68,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 
 | File | Số record |
 |---|---|
-| `videos.json` | **136** (22 free / 110 pro + 4 Zoom free) |
+| `videos.json` | **140** (22 free / 110 pro + 4 Zoom free) |
 | `kenh-mau.json` | **165** (152 live + 13 dead) · `ngay_do` 165/165 |
 | `tai-lieu-full.json` | **153** (prompt 78 · report 20 · tool 23 · list 16 · other 11 · internal-doc 5; +cẩm nang nhạc nền 17/09) |
 | `ngach-xanh.json` | **34** ngách — `xanh:true` **11** · `CÓ MẪU TĂNG` 10 · `CHƯA ĐỦ BẰNG CHỨNG` 8 · `THẬN TRỌNG` 3 · `CÓ ĐIỀU KIỆN` 2 · + 5 meta kho · 5 ngách đỏ · 13 BXH |
@@ -87,10 +88,39 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 
 - **Nguồn chân lý:** `video/<SKU>/transcript.json` — mỗi segment gồm `id, start, end, start_time, end_time, text`.
 - **Định dạng xuất:** `transcript.srt` (khớp 1-1 JSON) · `transcript.txt` = **1 dòng/segment**.
-- **Kiểm định N/N:** `python scripts/audit_all_136_videos.py` → mục tiêu **136/136 sạch**; bắt ảo giác Whisper, nén chữ (rớt nguyên âm), rác, lệch thứ tự, độ phủ < 90%, lệch định dạng/file, lệch market/docs, thiếu insights/tag.
+- **Kiểm định N/N:** `python scripts/audit_videos_v2.py` → mục tiêu **136/136 sạch** (cập nhật 18/09/2026, thay `audit_all_136_videos.py`); bắt ảo giác Whisper, nén chữ (rớt nguyên âm), rác, lệch thứ tự, **coverage 3 lớp + ASR probe**, lệch định dạng/file, lệch market/docs, thiếu insights/tag, loudness. Bổ trợ: `scripts/silence_scan.py` (khoảng lặng thật) · `scripts/speech_density.py` (ASR probe) · `scripts/frame_vision_audit.py` (bằng chứng hình ảnh qua 9Router).
 - ⚠️ **ffprobe KHÔNG có trong PATH** — nhị phân thật ở `D:\Linly-Dubbing\bin\ffprobe.exe`. Các script gọi `shutil.which("ffprobe")` (`audit-learning-media.py`) sẽ fail ở môi trường sạch; `audit_all_136_videos.py:100` hard-code path này nên chạy được. Đo thật 16/09/2026 (ffprobe N-125856): **136/136 có luồng video + audio**.
 - ⚠️ **Điểm mù của `audit_all_136_videos.py`:** chỉ bắt coverage **< 90%**, KHÔNG bắt coverage **> 100%** (segment `end` vượt thời lượng video thật) → dễ báo "136/136 sạch" trong khi vẫn có segment vượt mốc. Đã phát hiện & sửa 16/09/2026 bằng `scripts/fix_transcript_duration_overflow.py` (cập nhật `duration` theo ffprobe + cap `end` segment vượt; ghi lại 3 định dạng 1-1). Khi audit, phải **tự tính riêng** `max(end) vs ffprobe duration`.
-- ⚠️ **2 transcript "doc-style" cũ** (`VIDEO-8e0275`, `VIDEO-a348a5`): segment **không có `start_time`/`end_time`** (chỉ `start`/`end`), `transcript.txt` là **dạng tài liệu** (có tiêu đề + gạch `===`), không phải 1 dòng/segment. KHÔNG auto-rebuild srt/txt cho 2 file này (đã có `note` giải thích trong json).
+- ⚠️⚠️ **Bộ audit v2 (18/09/2026) — `scripts/audit_videos_v2.py`** thay thế bản cũ, bịt **3 điểm mù đã chứng minh bằng số**:
+  1. **Coverage-đến-hết vẫn bỏ sót nội dung bị mất GIỮA video.** VIDEO-f59aa7 mất **1466s nội dung (57%)** nhưng `max(end)/duration = 93.8%` nên bản cũ KHÔNG báo lỗi.
+  2. **"Khoảng trống phụ đề" ≠ "im lặng".** Phải đối chiếu `silence_scan.py` (ffmpeg silencedetect) mới phân biệt được: video im lặng đuôi (VIDEO-469cb5 im 34s cuối) vs mất nội dung thật.
+  3. **"Audio không im lặng" vẫn CHƯA đủ kết luận mất nội dung** — có thể chỉ là **nhạc nền**. Bắt buộc phải **ASR probe** (`scripts/speech_density.py`) mới chốt được (đã bắt quả tang: probe @1190s của VIDEO-3df94e trả về **đúng mẫu ảo giác "Ghiền Mì Gõ"** ⇒ nhạc nền, không phải lời giảng).
+  - Ngưỡng WPM phải **hiệu chuẩn từ phân bố đo thật**: kho này đọc nhanh là đặc thù (p10=207 · median=229 · p90=253 · max=279 WPM), nên ngưỡng "bất thường" là **>300**, KHÔNG phải >240.
+  - Ngưỡng LUFS: kho có 2 cụm (screencast −32…−24 · nói trực tiếp −14…−11), cả hai bình thường; chỉ coi là lỗi khi **< −45 LUFS** (audio rỗng).
+- 🔴 **FILE MEDIA HỎNG — VIDEO-f59aa7 (phát hiện 18/09/2026):** luồng audio **thiếu packet thật 69%** (`nb_frames=34202` / `duration=2588.2s` → 13.2 frame/s, chuẩn AAC 44.1kHz = 43.07). ffmpeg giải mã toàn bộ audio chỉ ra **794.17s**. Workaround `-af aresample=async=1:first_pts=0` tái tạo được 2588.212s nhưng **nội dung vẫn thiếu**. ⇒ **KHÔNG thể bóc lại phụ đề đầy đủ từ file này**; giữ nguyên phụ đề hiện có (334 segment/3609 từ). Cần **thay file gốc** từ h2dev.vn/kênh gốc. Bằng chứng: `_audit/20260918-full-136-audit/media_integrity.json`. (Quét cả kho: **132/132 file còn lại sạch**.)
+- ⚠️ **File media hỏng sẽ làm script bóc phụ đề ghi ra file RỖNG** — `scripts/patch_transcript_gaps.py` đã có **guard an toàn**: từ chối ghi nếu kết quả rỗng, hoặc ít từ hơn bản cũ (chế độ `--gaps`), hoặc < 80% bản cũ (chế độ `--full`).
+- ⚠️ **`badge` RỖNG trong `modules.json` là trạng thái HỢP LỆ** (130/136 item có nhãn; 6 item không có nhãn gốc từ site h2dev.vn — UI chỉ ẩn badge). KHÔNG tự bịa nhãn `QUAN TRỌNG`/`NỔI BẬT`.
+- ⚠️ **"Cảm ơn các bạn đã theo dõi" KHÔNG phải ảo giác** — câu kết video thật cũng dùng câu này (đã báo nhầm ở ZOOM-03 khi test 18/09). Chỉ coi là ảo giác khi là **thương hiệu kênh lạ** (`Ghiền Mì Gõ`, `La La School`) hoặc **vòng lặp/đọc lại prompt**.
+- 🔴 **KIỂM N/N PHẢI ĐẾM CẢ PHẦN BỊ BỎ QUA (bài học 18/09/2026):** script quét audio bỏ qua im lặng 4 file `.webm` (ZOOM) vì `nb_frames` không tồn tại → `TypeError` → rồi vẫn báo *"132/132 sạch"* trong khi thực tế chỉ kiểm 132/136 (**báo cáo N/N KHỐNG**). **Quy tắc:** mọi script audit phải có biến đếm `skipped/quarantined` và **báo ĐỎ nếu > 0**; không được coi "bỏ qua" là "sạch".
+- 🔴 **FILE MEDIA HỎNG PHẢI KIỂM BẰNG 3 PHÉP ĐỘC LẬP** (đã tích hợp vào `audit_videos_v2.py::audio_integrity()`, issue **B7**):
+  1. `nb_frames / duration` (AAC) — chuan do that **43.06 pkt/s**.
+  2. **`nb_read_packets / duration`** (`-count_packets`) — **DÙNG CHO MỌI CODEC**. Chuẩn đo thật 18/09: **AAC 43.06** · **Opus/WebM 16.67** pkt/s.
+  3. **Decode probe**: trích 10s tại 50% thời lượng, đo lại độ dài thực.
+  - Kết quả 136/136: **aac ok=131 · opus ok=4 · broken=1** (`VIDEO-f59aa7`) · **0 not-applicable** · **0 khong-verify-duoc**.
+  - ⚠️ **BÀI HỌC N/N:** lần đầu chỉ dùng phép 1 → 4 file webm trả `not-applicable` và bị **bỏ qua im lặng**, nhưng vẫn báo *"132/132 sạch"* (báo cáo N/N KHỐNG). Phép 2 ra đời để bịt lỗ hổng này.
+- 🔴 **CÁCH ĐÁNH DẤU FILE HỎNG (không để tồn dạng ghi chú):** chạy `py scripts/mark_media_integrity.py` (script tái dùng) → ghi cờ `media_integrity` vào `data/catalog.json` · `catalog_full.json` · `data-tabs/videos.json` + registry `data/media_integrity.json`. UI (`player.html`) đọc cờ này và **hiện cảnh báo chất lượng** cho người dùng. Khi thay được file gốc → chạy lại audit rồi chạy lại script, cờ tự gỡ.
+- ⚠️ **`VIDEO-f59aa7` — trạng thái `BROKEN_AUDIO_TRUNCATED`:** chỉ còn **30.7% packet** (34202/111456); audio thật ~794s/2588s; 3/3 phép đo xác nhận broken. **Đối chiếu bucket 1s:** vùng có audio nhưng thiếu phụ đề = **336s** ⇒ phụ đề không thể đầy đủ vì **audio gốc đã mất**, KHÔNG phải lỗi phụ đề.
+- 🔴 **TẢI LẠI VIDEO TỪ NGUỒN GỐC — CÓ SẴN CƠ CHẾ, KHÔNG CẦN ĐĂNG NHẬP:** `node scripts/fetch_h2dev_video.cjs VIDEO-xxxxxx --quality 1080p --apply` (script tái dùng, đã kiểm chứng: VIDEO-61ad94 76/76 segment 105.7MB · VIDEO-73d98a 68/68 112.5MB). Flow: mở `h2dev.vn/learn` lấy cookie `__vdk`/`__vui` → GraphQL `getCourseNoCategory(sku)` lấy player link → bắt response khi player phát → giải mã AES-128 → ghép MP4.
+  - ⚠️ **3 bài học bắt buộc (nếu không sẽ 403):** (1) **KHÔNG** để ffmpeg tự gọi CDN (thiếu `cookie-hash`+`Referer` → 403); (2) **KHÔNG** tải lại playlist bằng request context (`wmsAuthSign` gắn thời điểm phát) — phải **bắt response ngay lúc player đang phát**; (3) segment là **TS đã mã hoá AES-128** (byte đầu ≠ `0x47`) → giải mã `openssl enc -d -aes-128-cbc -K <key_hex> -iv <seq_hex_bigendian>`.
+  - 🚫 **GIỚI HẠN THẬT — video DRM KHÔNG tải được:** nếu player link có `protected=True` + path `/protected/` + DASH MPD có `ContentProtection` (Widevine `edef8ba9` / PlayReady `9a04f079`) thì flow HLS không qua được. Đã thử 6 vector (đổi `protected=True→False` · bỏ param · `/protected/`→`/vod/` · đổi quality · gọi lại GraphQL) — **đều thất bại**. Đây là giới hạn CDN, không phải thiếu nỗ lực.
+  - 📊 **Quét 136 SKU (18/09):** **126 tải được** · **6 DRM**: `f59aa7` · `c1bd51` · `806c0c` · `83a28e` · `948336` · `aacc70` (đều 480p). Toàn vẹn: **chỉ `f59aa7` hỏng**; 5 còn lại 82–100% nguyên vẹn.
+  - ⇒ **`VIDEO-f59aa7` thuộc nhóm DRM** nên **vẫn cần nguồn nội bộ/khác** để phục hồi. Chi tiết: `knowledge-hub/docs/HUONG-DAN-TAI-VIDEO-H2DEV.md` + `_audit/20260918-full-136-audit/drm_videos_integrity.txt`.
+- ⚠️ **405 `/api/admin-state` KHÔNG phải lỗi — nhưng trước đây là TIẾNG ỒN:** `server.js` chủ động chặn ghi (an toàn LAN), nhưng client (`h2dev-core.js::syncAdmin`) vẫn gửi PUT mỗi lần lưu → console đầy 405 vô ích. **Đã sửa 2 tầng:** (1) `server.js` GET trả thêm `writable:false` — công bố khả năng ghi; (2) client đọc cờ này lúc `hydrateAdmin` và **chỉ gửi PUT khi `writable === true`**. Đo lại: **PUT=0 trên cả 3 trang**. Dữ liệu "Đã xem" **vẫn được giữ 100%** qua reload (local-first).
+- ⚠️ **Cứu file timestamp hỏng:** `transcribe_sku.py::extract_audio_chunk()` dùng `-af aresample=async=1:first_pts=0` để tái tạo timestamp liên tục. **Đã kiểm chứng an toàn** trên video sạch (lệch **0.00s**). Lưu ý: fix này chỉ cứu **timestamp**, KHÔNG cứu được **dữ liệu audio đã mất**.
+- ⚠️ **Số module là 12, KHÔNG phải 11** — `index.html` từng ghi sai "Lộ trình 11 module" ở 2 chỗ (đã sửa 18/09); `learn.html` + `data/modules.json` là nguồn đúng.
+- ⚠️ **Script có tên `patch_*/repair_*/restore_*/_tmp_*` phải xóa ngay sau Check-Pass** (RULE Phần 6). Nếu chứa kỹ thuật còn giá trị → **di trú vào script tái dùng TRƯỚC KHI xóa** (bài học: đã chuyển fix timestamp từ `patch_transcript_gaps.py` sang `transcribe_sku.py` rồi mới xóa).
+- ⚠️ **Báo động 405 `/api/admin-state` trên `learn.html` là THIẾT KẾ**, không phải lỗi: `server.js:181` chủ động trả 405 "Admin state writes are disabled". Khi kiểm console error phải **loại trừ 405 này** trước khi kết luận.
+- ⚠️ **3 transcript "doc-style" cũ** (`VIDEO-8e0275`, `VIDEO-a348a5`, `VIDEO-b96929`): segment **không có `start_time`/`end_time`** (chỉ `start`/`end`), `transcript.txt` là **dạng tài liệu** (có tiêu đề + gạch `===`), không phải 1 dòng/segment. ASR probe 18/09 xác nhận 3 video này là **screencast + nhạc nền** (chỉ đầu video có lời giảng) ⇒ annotation là **ĐÚNG**, KHÔNG auto-rebuild srt/txt (đã có `note` giải thích trong json).
 - **Chống ảo giác khi bóc mới:** `scripts/transcribe_sku.py` đã thêm `prompt` chuyên ngành + `temperature=0` + bộ lọc ảo giác tự động.
 - ⚠️ **Bài học:** KHÔNG biến đổi audio (vd `atempo`) mà không đối chiếu nội dung — dễ sinh ảo giác mới. Segment không bóc tách được → **chú thích trung thực** (`[Khoảng lặng thao tác — …]` / `[Đoạn nói nhanh — …]`), KHÔNG bịa nội dung.
 - ⚠️ KHÔNG đưa từ khoá "đăng ký kênh / like / share" vào `prompt` — model sẽ "đọc lại" prompt thành phụ đề ảo giác.

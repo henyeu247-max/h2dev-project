@@ -1,21 +1,24 @@
 {
- "id": "RAW-166",
- "channelId": "UCf0NCtqYD4hZgttR0E3FXjw",
- "title": "ByMosX",
- "handle": "@MythoriginStudio",
- "url": "https://www.youtube.com/@MythoriginStudio",
- "subscribers": 2100,
- "views": 629844,
- "videoCount": 12,
- "country": "US",
- "avatar": "https://yt3.googleusercontent.com/lpM68gXR1cXa5vuVDXVT0zPep_o6HrCrE9HjyDMolc0d2mTdjdpLp3G70LwIbI5FBqaHRfJO=s900-c-k-c0x00ffffff-no-rj",
- "extractedAt": "2026-09-16T21:45:00+07:00",
- "extractionSource": "free_yt_engine + /about + RSS + watch page - do that 16/09/2026 (tu screenshots anh gui)",
- "dataGaps": [
-  "longevity growth30d: dot 2",
-  "transcripts: chua extract"
- ],
- "topTagsSample": [],
- "topTagsCount": 0,
- "joinedDate": "Đã tham gia 23 thg 2, 2014"
+  "id": "RAW-166",
+  "channelId": "UCf0NCtqYD4hZgttR0E3FXjw",
+  "title": "ByMosX",
+  "handle": "@MythoriginStudio",
+  "url": "https://www.youtube.com/@MythoriginStudio",
+  "subscribers": 2370,
+  "views": 629844,
+  "videoCount": 13,
+  "country": "US",
+  "avatar": "https://yt3.googleusercontent.com/lpM68gXR1cXa5vuVDXVT0zPep_o6HrCrE9HjyDMolc0d2mTdjdpLp3G70LwIbI5FBqaHRfJO=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T21:45:00+07:00",
+  "extractionSource": "free_yt_engine + /about + RSS + watch page - do that 16/09/2026 (tu screenshots anh gui)",
+  "dataGaps": {
+    "liveSnapshotRefreshed": {
+      "status": "REFRESHED_LIVE_2026_09_18",
+      "currentEvidence": "Đã probe live YouTube ngày 18/09/2026: 2.37K subs, 13 videos.",
+      "whyItMatters": "Khóa số liệu live thực tế"
+    }
+  },
+  "topTagsSample": [],
+  "topTagsCount": 0,
+  "joinedDate": "Đã tham gia 23 thg 2, 2014"
 }

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="vi" data-theme="dark" data-density="compact">
+<html lang="vi" data-theme="dark" data-density="compact" style="color-scheme: dark;">
 <head>
 <meta charset="UTF-8">
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
 <title>Xem video — H2DEV Project</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
-<link rel="stylesheet" href="/assets/tailwind.css?v=20260917css1">
-<link rel="stylesheet" href="/assets/viddar.css?v=20260917css1">
-<link rel="stylesheet" href="/assets/player.css?v=20260917css1">
+<link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
+<link rel="stylesheet" href="/assets/viddar.css?v=20260918media1">
+<link rel="stylesheet" href="/assets/player.css?v=20260918media1">
 <meta name="description" content="H2DEV — xem video khóa học.">
 <meta name="theme-color" content="#050505">
 </head>
@@ -20,7 +21,7 @@
     <span class="text-sm font-semibold">H2DEV Studio</span>
   </div>
   <div class="flex items-center gap-2">
-      <button id="btnTheater" type="button" class="theater-toggle-badge inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 transition-all cursor-pointer" title="Bật/Tắt chế độ rạp chiếu (Phím tắt T)">
+      <button id="btnTheater" type="button" class="theater-toggle-badge inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 transition-colors cursor-pointer" title="Bật/Tắt chế độ rạp chiếu (Phím tắt T)">
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><rect x="5" y="7" width="14" height="10" rx="1" fill="currentColor" fill-opacity="0.3"/></svg>
         <span id="theaterLabel">Chiếu rạp</span>
         <span class="shortcut-key hidden sm:inline">T</span>
@@ -109,6 +110,7 @@
             <div id="insightBadges" class="flex flex-wrap gap-1.5"></div>
           </div>
           <p id="legacyInsightNotice" class="hidden mb-3 text-[11px] text-gray-400 bg-ink-900/50 border border-ink-700 rounded-lg px-3 py-2">Các ghi chú bên dưới là heuristic từ transcript cũ: chưa kiểm hình/âm thanh, claim và địa lý khán giả. Chỉ dùng làm manh mối để kiểm lại.</p>
+          <p id="mediaIntegrityNotice" class="hidden mb-3 text-[11px] text-amber-200 bg-amber-950/40 border border-amber-600/50 rounded-lg px-3 py-2"></p>
           
           <div class="space-y-3.5">
             <!-- Box 1: Mốc thời gian trọng tâm (Action-first: tua video nhanh) -->
@@ -286,11 +288,11 @@ function setPlayerTab(tab, btn) {
   const colSide = document.getElementById('colSide');
   const buttons = document.querySelectorAll('#playerTabSelector button');
   buttons.forEach(b => {
-    b.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1';
+    b.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-colors text-center flex items-center justify-center gap-1';
     b.setAttribute('aria-selected', 'false');
   });
   if (btn) {
-    btn.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-all text-center flex items-center justify-center gap-1';
+    btn.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-colors text-center flex items-center justify-center gap-1';
     btn.setAttribute('aria-selected', 'true');
   }
   if (window.innerWidth < 1024) {
@@ -502,6 +504,23 @@ window.addEventListener('keydown', (e)=>{
       }).join('');
     }
 
+    /* ---------- Cảnh báo TOÀN VẸN MEDIA (file hong, thieu du lieu) ---------- */
+    try {
+      const mi = v && v.media_integrity;
+      if (mi && mi.status === 'BROKEN_AUDIO_TRUNCATED') {
+        const m = mi.measured || {};
+        const el = document.getElementById('mediaIntegrityNotice');
+        if (el) {
+          const pct = m.ratio_to_expected ? Math.round(m.ratio_to_expected * 100) : null;
+          el.innerHTML = '⚠️ <strong>Cảnh báo chất lượng file:</strong> luồng audio của video này '
+            + 'bị thiếu dữ liệu gốc' + (pct ? ' (chỉ còn ~' + pct + '% packet)' : '')
+            + '. Phụ đề bên dưới chỉ tương ứng phần audio còn lại — không phải đầy đủ nội dung bài giảng. '
+            + '<span class="text-amber-300/80">Cần thay file gốc để phục hồi.</span>';
+          el.classList.remove('hidden');
+        }
+      }
+    } catch (e) { /* khong anh huong hien thi chinh */ }
+
     /* ---------- Phân Tích Thực Chiến & Ghi Chú AI (Insights) ---------- */
     try {
       const insRes = await fetch('data/video_insights.json', {cache:'no-store'});
@@ -627,7 +646,7 @@ window.addEventListener('keydown', (e)=>{
           tList.innerHTML = transcriptSegments.map((s, idx) => {
             const start = Math.floor(s.start || 0);
             const timeStr = fmtTime(start);
-            return `<div class="transcript-line" id="tr-seg-${idx}" onclick="document.getElementById('pv').currentTime=${start};document.getElementById('pv').play();" title="Bấm để phát từ ${timeStr}">
+            return `<div class="transcript-line" id="tr-seg-${idx}" role="button" tabindex="0" onclick="document.getElementById('pv').currentTime=${start};document.getElementById('pv').play();" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.getElementById('pv').currentTime=${start};document.getElementById('pv').play();}" title="Bấm để phát từ ${timeStr}">
               <span class="transcript-time">${timeStr}</span>
               <span class="transcript-text">${esc(s.text)}</span>
             </div>`;
@@ -846,7 +865,7 @@ async function viewDocInModal(filePath, title) {
   
   titleEl.textContent = title || filePath.split('/').pop();
   rawLink.href = filePath;
-  bodyEl.innerHTML = '<div class="text-center text-gray-400 py-12 flex flex-col items-center gap-3"><div class="w-6 h-6 border-2 border-brand-500 border-t-transparent rounded-full animate-spin"></div><div>Đang tải tài liệu...</div></div>';
+  bodyEl.innerHTML = '<div class="text-center text-gray-400 py-12 flex flex-col items-center gap-3"><div class="w-6 h-6 border-2 border-brand-500 border-t-transparent rounded-full animate-spin"></div><div>Đang tải tài liệu…</div></div>';
   modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 

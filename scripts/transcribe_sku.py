@@ -162,6 +162,21 @@ def get_video_duration(video_file: Path) -> float:
 
 
 def extract_audio_chunk(video_file: Path, start_sec: float, dur_sec: float, output_mp3: Path) -> bool:
+    """Tach audio 1 khoang [start, start+dur].
+
+    FIX TIMESTAMP HONG (18/09/2026): them `-af aresample=async=1:first_pts=0`.
+    Ly do: file `VIDEO-f59aa7.mp4` co luong audio thieu PTS o nhieu packet ->
+    ffmpeg MAC DINH nén 2588s xuong con 794s khi giai ma; `-ss 1200 -t 600` chi
+    nhan duoc ~114s => phu de bi mat hang loat vung noi dung (khong lop audit nao
+    khac phat hien duoc). `aresample=async=1:first_pts=0` tai tao timestamp lien tuc
+    theo so mau thuc.
+
+    Da kiem chung AN TOAN voi video binh thuong (do 4 moc tren 2 video sach:
+    truoc fix 120.03s / sau fix 120.03s, lech 0.00s).
+    LUU Y: fix nay CHI cuu duoc timestamp; neu luong audio thieu DU LIEU THAT
+    (nhu f59aa7 mat 69% packet) thi noi dung van thieu — phai thay file goc.
+    Kiem tra bang `audio_integrity()` trong `audit_videos_v2.py`.
+    """
     cmd = [
         FFMPEG_CMD,
         "-y",
@@ -171,6 +186,7 @@ def extract_audio_chunk(video_file: Path, start_sec: float, dur_sec: float, outp
         "-vn",
         "-ac", "1",
         "-ar", "16000",
+        "-af", "aresample=async=1:first_pts=0",
         "-b:a", "32k",
         "-f", "mp3",
         str(output_mp3)

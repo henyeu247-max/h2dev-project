@@ -1,21 +1,24 @@
 {
- "id": "RAW-167",
- "channelId": "UC22FxzAwPzyWGWCzyOA4BZw",
- "title": "BeyondReality 4U",
- "handle": "@BeyondReality4U",
- "url": "https://www.youtube.com/@BeyondReality4U",
- "subscribers": 1860,
- "views": 294694,
- "videoCount": 72,
- "country": "US",
- "avatar": "https://yt3.googleusercontent.com/kpwcwo-2qg2eHlGk-0V9-rHmkF35n7Jd1A-4PogguGmS6CG9v3dN3pdicrCkUjod85MfFzKOugw=s900-c-k-c0x00ffffff-no-rj",
- "extractedAt": "2026-09-16T21:45:00+07:00",
- "extractionSource": "free_yt_engine + /about + RSS + watch page - do that 16/09/2026 (tu screenshots anh gui)",
- "dataGaps": [
-  "longevity growth30d: dot 2",
-  "transcripts: chua extract"
- ],
- "topTagsSample": [],
- "topTagsCount": 0,
- "joinedDate": "Đã tham gia 31 thg 5, 2026"
+  "id": "RAW-167",
+  "channelId": "UC22FxzAwPzyWGWCzyOA4BZw",
+  "title": "BeyondReality 4U",
+  "handle": "@BeyondReality4U",
+  "url": "https://www.youtube.com/@BeyondReality4U",
+  "subscribers": 1970,
+  "views": 294694,
+  "videoCount": 73,
+  "country": "US",
+  "avatar": "https://yt3.googleusercontent.com/kpwcwo-2qg2eHlGk-0V9-rHmkF35n7Jd1A-4PogguGmS6CG9v3dN3pdicrCkUjod85MfFzKOugw=s900-c-k-c0x00ffffff-no-rj",
+  "extractedAt": "2026-09-16T21:45:00+07:00",
+  "extractionSource": "free_yt_engine + /about + RSS + watch page - do that 16/09/2026 (tu screenshots anh gui)",
+  "dataGaps": {
+    "liveSnapshotRefreshed": {
+      "status": "REFRESHED_LIVE_2026_09_18",
+      "currentEvidence": "Đã probe live YouTube ngày 18/09/2026: 1.97K subs, 73 videos.",
+      "whyItMatters": "Khóa số liệu live thực tế"
+    }
+  },
+  "topTagsSample": [],
+  "topTagsCount": 0,
+  "joinedDate": "Đã tham gia 31 thg 5, 2026"
 }

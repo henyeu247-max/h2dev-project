@@ -41,3 +41,48 @@ node scripts/check-broken-refs.js
 ```
 
 Video mẫu `VIDEO-3a38f9` đã pass flow này: 81/81 segment, 147,537,949 bytes, 1920x1080, 671.467 giây.
+
+---
+
+## Cập nhật 18/09/2026 — Script tải hoàn chỉnh + phân biệt DRM
+
+### Script chính thức
+
+```text
+node scripts/fetch_h2dev_video.cjs VIDEO-xxxxxx --quality 1080p --apply
+```
+
+Không có `--apply` = chỉ tải vào thư mục tạm (không thay file trong repo).
+
+### 3 bài học đã kiểm chứng thực tế (tránh mất thời gian như lần đầu)
+
+1. **KHÔNG để ffmpeg tự gọi CDN** — ffmpeg thiếu `cookie-hash` + `Referer` → HTTP 403.
+2. **KHÔNG tải lại playlist bằng request context** — `wmsAuthSign` gắn **thời điểm phát**;
+   request lại sẽ 403. **Phải bắt (intercept) response ngay lúc player đang phát.**
+3. **Segment là TS ĐÃ MÃ HOÁ AES-128** (byte đầu khác `0x47`) → phải giải mã trước khi ghép.
+   Key 16 byte lấy từ `hls.key`; **IV = số thứ tự segment** (big-endian);
+   dùng `openssl enc -d -aes-128-cbc -K <key_hex> -iv <seq_hex>`.
+
+### Phân biệt video tải được / không tải được
+
+| Loại | Dấu hiệu | Xử lý |
+|---|---|---|
+| **Tải được** | player URL có `protected=False` + segment trong path `/vod/` | Chạy script bình thường |
+| **KHÔNG tải được** | `protected=True` + path `/protected/` + DASH MPD có `ContentProtection` (Widevine `edef8ba9` / PlayReady `9a04f079`) | **DRM thật — flow HLS không qua được** |
+
+Đã thử 6 vector với video DRM (`protected=True→False` · bỏ param · `/protected/`→`/vod/` ·
+đổi quality · gọi lại GraphQL nhiều lần) — **đều thất bại**. Đây là giới hạn thật của CDN.
+
+### Kết quả đo 18/09/2026
+
+- Quét 136 SKU: **126 `protected=False`** · **6 `protected=True` (DRM)** · 4 ZOOM không có link.
+- 6 video DRM: `VIDEO-f59aa7` · `c1bd51` · `806c0c` · `83a28e` · `948336` · `aacc70` (đều 480p).
+- **Toàn vẹn 6 video DRM:** chỉ **`VIDEO-f59aa7` hỏng** (audio 31% packet);
+  5 video còn lại nguyên vẹn 82–100%.
+
+### Đã tải thành công qua script (kiểm chứng thực tế)
+
+| SKU | Segment | Dung lượng | Chuẩn |
+|---|---|---|---|
+| VIDEO-61ad94 | 76/76 | 105.7 MB | h264+aac 1280x720, 630.05s |
+| VIDEO-73d98a | 68/68 | 112.5 MB | h264+aac 1280x720, 559.86s |

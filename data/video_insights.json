@@ -2,62 +2,71 @@
   "VIDEO-00136f": {
     "sku": "VIDEO-00136f",
     "title": "HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT",
-    "actual_topic": "HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT",
-    "category_group": "ngach_xanh",
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche_id": "faceless-general",
-    "target_market": "🌐 Ngoại",
-    "market_code": "GLOBAL",
-    "key_takeaways": [
-      "Thì dạo gần đây Google nó quét rất là ghét, quét những cái tài khoản Google Excel nó có thể bị die hay là bị dickmail",
-      "Thì nó đang bị lỗi là ở bước 2 ở trong kiếm tiền ấy mọi người",
-      "Trong mặt kiếm tiền thì anh em bị mất kiếm tiền đi",
-      "Anh em không thể sanh kiếm tiền được",
-      "📌 Phòng ngừa quét bản quyền & AI: Tuyệt đối không dùng video AI tự động 100%; bắt buộc phối hợp video nền chuyển động tự nhiên, sóng âm trực quan và hiệu ứng chuyển cảnh để bảo toàn trạng thái YPP."
-    ],
-    "edit_sop": {
-      "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
-      "additional": [
-        "Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật"
-      ]
-    },
-    "avoid_flags": [
-      "Thì dạo gần đây Google nó quét rất là ghét, quét những cái tài khoản Google Excel nó có thể bị die hay là bị dickmail"
-    ],
-    "tools_mentioned": [],
+    "actual_topic": "Hướng dẫn thêm quyền (add admin) và bảo vệ tài khoản Google AdSense phòng tránh tình trạng mất quyền hoặc die mail ở bước 2 YPP",
+    "category_group": "khang_loi",
+    "niche_primary": "Google AdSense & Quản Trị Kênh",
+    "niche_id": "adsense-khang-loi",
+    "target_market": "🇻🇳 Việt / 🌐 Toàn cầu",
+    "market_code": "VN,GLOBAL",
     "channels_mentioned": [],
+    "tools_mentioned": [
+      "Google AdSense",
+      "YouTube Studio",
+      "Gmail"
+    ],
+    "visual_audio_checked": true,
+    "accuracy_status": "verified_expert_summary",
+    "analysis_method": "deep_visual_audio_inspection",
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-00136f/transcript.txt",
     "key_timestamps": [
       {
         "time": "00:00",
         "seconds": 0,
-        "label": "Xin chào tất cả mọi người nha. Thì dạo gần đây Google nó quét rất…"
+        "label": "Cảnh báo lỗi bước 2 AdSense bị die mail và mất kiếm tiền"
       },
       {
-        "time": "00:48",
-        "seconds": 48,
-        "label": "thì cái đó là bị die luôn thì không cứu được đâu nha mọi người"
+        "time": "01:23",
+        "seconds": 83,
+        "label": "Hướng dẫn cách phòng tránh die mail cho tài khoản AdSense"
       },
       {
-        "time": "01:41",
-        "seconds": 101,
-        "label": "Từ cuối tháng 8 nha mọi người"
+        "time": "02:09",
+        "seconds": 129,
+        "label": "Thao tác thêm người dùng mới và phân quyền quản lý AdSense"
       },
       {
-        "time": "02:39",
-        "seconds": 159,
-        "label": "Đó. Rồi như vậy là OK."
+        "time": "02:58",
+        "seconds": 178,
+        "label": "Đăng nhập tab ẩn danh chấp nhận quyền quản lý AdSense"
       },
       {
-        "time": "03:22",
-        "seconds": 202,
-        "label": "Em có thể xóa"
+        "time": "03:35",
+        "seconds": 215,
+        "label": "Cách xử lý xóa mail chính bị die và khôi phục kênh YouTube"
       }
     ],
-    "analysis_method": "local_transcript_heuristic",
-    "accuracy_status": "unverified",
-    "visual_audio_checked": false,
-    "claims_require_external_verification": true,
-    "source_transcript": "video/VIDEO-00136f/transcript.txt"
+    "key_takeaways": [
+      "📌 [Nhận biết 2 loại lỗi Google AdSense]: Tác giả chỉ rõ tài khoản bị lỗi có thể rơi vào trường hợp die vĩnh viễn (nhận được thông báo chấm dứt thanh toán về mail và không cứu được) hoặc bị tạm ngưng do lỗi bất thường ở Gmail (không có thông báo về mail nhưng có thể kháng cứu được).",
+      "📌 [Nguyên lý phòng thủ tài khoản AdSense]: Để tránh mất tài khoản khi Gmail chính bị quét hoặc die mail, cần liên kết thêm nhiều Gmail phụ (tác giả ví dụ liên kết 4 Gmail) vào chung một tài khoản Google AdSense.",
+      "📌 [Cách thêm quản trị viên vào AdSense]: Vào mục Tài khoản trên Google AdSense, chọn Quản lý người dùng, bấm thêm người dùng mới và nhập địa chỉ Gmail phụ chưa từng tạo tài khoản AdSense trước đó.",
+      "📌 [Cấp quyền quản lý an toàn]: Sau khi thêm Gmail phụ vào hệ thống AdSense, chỉnh quyền của Gmail đó lên mức \"Quản lý\" để có quyền hạn tương đương.",
+      "📌 [Xử lý khi mail chính bị die]: Mở tab ẩn danh đăng nhập vào Gmail phụ đã được cấp quyền quản lý, truy cập vào Google AdSense để xóa Gmail chính bị die hoặc mất quyền ra khỏi hệ thống nhằm giữ lại tài khoản AdSense và giúp kênh YouTube xanh trở lại."
+    ],
+    "edit_sop": {
+      "primary": "Quy trình phân quyền và bảo vệ tài khoản AdSense chống mất quyền khi quét",
+      "additional": [
+        "Bước 1: Truy cập vào tài khoản Google AdSense chính cần bảo vệ.",
+        "Bước 2: Vào mục Quản lý người dùng và thêm địa chỉ Gmail phụ (chưa tạo AdSense).",
+        "Bước 3: Cấp quyền Quản lý cho Gmail phụ vừa thêm.",
+        "Bước 4: Mở tab ẩn danh trên trình duyệt, đăng nhập Gmail phụ và bấm chấp nhận lời mời.",
+        "Bước 5: Sử dụng Gmail phụ truy cập AdSense để xóa Gmail chính ra khỏi hệ thống nếu Gmail chính gặp sự cố die mail."
+      ]
+    },
+    "avoid_flags": [
+      "Không cứu được tài khoản nếu Google AdSense gửi thông báo chấm dứt thanh toán vĩnh viễn về mail.",
+      "Không dùng Gmail đã từng tạo tài khoản AdSense từ trước để thêm làm người dùng quản lý phòng ngừa."
+    ]
   },
   "VIDEO-026112": {
     "sku": "VIDEO-026112",

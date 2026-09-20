@@ -11,8 +11,8 @@
 
 | Dịch vụ | Địa chỉ | Bản chất | Mã nguồn |
 |---|---|---|---|
-| **MCP Pool v2 Local** | `http://127.0.0.1:3988/mcp` | Tool server thực chiến (**188 tools live** — 20 namespace, đo 18/09/2026) | `D:\Mcp-Pool-Vps\` |
-| Healthcheck | `http://127.0.0.1:3988/health` | Kỳ vọng: `{"status":"ok","version":"2.0.0","tools":188,...}` (182 nếu bridge tavily fail do mạng) | Windows Service `MCP_Pool_Service` AUTO |
+| **MCP Pool v2 Local** | `http://127.0.0.1:3988/mcp` | Tool server thực chiến (**187 tools live** — 20 namespace, đo 19/09/2026) | `D:\Mcp-Pool-Vps\` |
+| Healthcheck | `http://127.0.0.1:3988/health` | Kỳ vọng: `{"status":"ok","version":"2.0.0","tools":187,...}` | Windows Service `MCP_Pool_Service` AUTO |
 | **9Router** | `http://127.0.0.1:20128` | **AI Chat Model Gateway** — chỉ LLM chat | **KHÔNG phải MCP tool server** |
 | H2DEV Web | `http://127.0.0.1:8899` | App học liệu / Mission Control | `D:\YTB\H2DEV-Project\` |
 
@@ -60,9 +60,19 @@ Khởi động khi chết cổng: `D:\Mcp-Pool-Vps\start.cmd` hoặc `start-pool
 | `youtube_intelligence__spider_niche` | ~8.7s | `seedVideoId` — co-watch 2-hop |
 
 Fallback script local (không MCP): `scripts/free_yt_engine.py` (`py -3`).  
-`vidiq__*`: chỉ fallback khi cần; hay `ROUTED_ERR` khi quota/API lỗi — **không** đặt làm đường chính.
 
-`trends__*`: **ĐÃ HOẠT ĐỘNG** (18/09/2026 — pool restart nạp `TRENDS_ACCESS_TOKEN` + `TRENDS_KEYS` từ `.env`; `trends__get_top_trends` trả data thật). Lưu ý: pool chỉ đọc `.env` **lúc boot** ⇒ đổi token phải restart service.
+⚠️ **QUY CHẾ ĐÓNG BĂNG CREDIT vidIQ (CẬP NHẬT 21/09/2026):**  
+- **Hiện trạng số dư:** Renewable Credits = `0/6000` (đến ngày 09/10/2026 mới reset). Tổng credit còn lại duy nhất là **75 Add-on Credits**.
+- **LỆNH CẤM:** TUYỆT ĐỐI KHÔNG tự ý gọi các tool vidIQ tính phí cao:
+  - `vidiq_video_watch` (25 credit/lần)
+  - `vidiq_generate_thumbnail` / `refine_thumbnail` (22 credit/lần)
+  - `vidiq_voiceover_generate` (14 credit/1000 ký tự)
+  - `vidiq_compose` / `generate_video` (tiêu tốn credit lớn)
+  - `vidiq_generate_script` (1 credit/phút)
+- **Chỉ được dùng vidIQ:** Các tool 0 credit (`vidiq_balance`, `vidiq_user_channels`, `vidiq_list_competitors`, `vidiq_bookmarks_list`, `vidiq_trend_categories`) hoặc khi được User yêu cầu đích danh.
+- **THAY THẾ 100%:** Dùng `youtube_intelligence__*` (Miễn phí 100%, không hạn mức, không delay).
+
+`trends__*`: **ĐÃ HOẠT ĐỘNG** (Xoay vòng 5 API key trong `.env`). Lưu ý: Gói free trả top 10 trends với độ trễ 24h, phù hợp phân tích xu hướng trung hạn/dài hạn, không dùng để bắt trend theo từng phút.
 
 ---
 
@@ -155,11 +165,13 @@ Hai vòng: `mcp-web-bench` + `mcp-web-fair` (2026-09-16).
 
 ## 8. TÓM TẮT “NHỚ KỸ” CHO AGENT
 
-- MCP Pool = tay chân; 9Router = não chat.  
-- YouTube: `youtube_intelligence__*` trước, vidIQ sau.  
-- Web search: **Keenable / Exa** trước.  
-- Web scrape sâu: **Firecrawl scrape**.  
-- Web fetch nhanh: **Exa fetch / Keenable fetch / Jina**.  
-- Tavily = dự phòng search, không phải mặc định.  
-- Trends = chưa dùng được đến khi có token.  
-- Luôn đọc schema · Check N/N · bằng chứng 3 mức CÓ / KHÔNG / KHÔNG-VERIFY-ĐƯỢC.
+- **MCP Pool = tay chân; 9Router = não chat.**
+- **YouTube ($0.00 First):** `youtube_intelligence__*` là lựa chọn số 1 (Free 100%, không hạn mức).
+- **vidIQ (ĐÓNG BĂNG TOOL TÍNH PHÍ):** Chỉ còn 75 add-on credits, 0 renewable credits. CẤM gọi `video_watch`, `generate_*` làm cạn kiệt tài khoản.
+- **Web search:** **Keenable / Exa** trước. Khi cần search khối lượng lớn: dùng **YDC (`you-search`)** vì đang có $199.34 USD dồi dào.
+- **Web scrape sâu / JS dynamic:** **Firecrawl scrape** (định dạng markdown).
+- **Web fetch nhanh:** **Exa fetch / Keenable fetch / Jina (`read_url`)**.
+- **Tavily:** Dự phòng khi các công cụ trên lỗi, chú ý độ trễ mạng từ VN.
+- **Trends:** ĐÃ HOẠT ĐỘNG (xoay vòng 5 keys). Gói Free xem top 10 trends với độ trễ 24h.
+- **TinyFish:** Browser automation tạm thời bị khoá (Wallet HTTP 400); chỉ dùng search/fetch.
+- **Luôn đọc schema · Check N/N · bằng chứng 3 mức CÓ / KHÔNG / KHÔNG-VERIFY-ĐƯỢC.**

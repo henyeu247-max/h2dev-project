@@ -75,7 +75,8 @@ Không có `--apply` = chỉ tải vào thư mục tạm (không thay file trong
 
 ### Kết quả đo 18/09/2026
 
-- Quét 136 SKU: **126 `protected=False`** · **6 `protected=True` (DRM)** · 4 ZOOM không có link.
+- Quét **140 SKU** (136 video + 4 ZOOM): **130 `protected=False`** · **6 `protected=True` (DRM)** · 4 ZOOM không có link.
+- *(Ghi chú 18/09/2026: con số cũ "136 SKU / 126 protected=False" là mốc lịch sử khi kho mới có 132 video; nay kho đã 140 bài học — 130 video `protected=False` + 6 DRM + 4 ZOOM = 140.)*
 - 6 video DRM: `VIDEO-f59aa7` · `c1bd51` · `806c0c` · `83a28e` · `948336` · `aacc70` (đều 480p).
 - **Toàn vẹn 6 video DRM:** chỉ **`VIDEO-f59aa7` hỏng** (audio 31% packet);
   5 video còn lại nguyên vẹn 82–100%.

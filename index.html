@@ -108,7 +108,7 @@
         <h1 id="page-title" class="vd-page-title">Tổng quan</h1>
         <div id="hd-stats" class="hd-stats"></div>
         <a href="/lotrinh" class="btn-ghost" style="font-size:12px">Lộ trình</a>
-        <button type="button" class="btn-ghost js-open-music-studio" style="font-size:12px; display:inline-flex; align-items:center; gap:4px; cursor:pointer;" title="Mở trạm phát nhạc nền 38 tracks">🎧 Nhạc nền</button>
+        <button type="button" class="btn-ghost js-open-music-studio" style="font-size:12px; display:inline-flex; align-items:center; gap:4px; cursor:pointer;" title="Mở trạm phát nhạc nền 43 tracks">🎧 Nhạc nền</button>
       </div>
       <nav id="mobile-tabs" class="vd-mobile-tabs" aria-label="Điều hướng tab"></nav>
     </header>
@@ -1398,8 +1398,8 @@
       <span class="text-3xl p-2 rounded-xl bg-purple-500/20 border border-purple-500/30">🎧</span>
       <div>
         <div class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
-          <span>Kho Nhạc Nền 38 Tracks (Đã Thẩm Định Gemini Multimodal)</span>
-          <span class="badge badge-green text-[10px]">25 SAFE YPP</span>
+          <span>Kho Nhạc Nền 43 Tracks (Đã Thẩm Định Gemini Multimodal & FFprobe)</span>
+          <span class="badge badge-green text-[10px]">30 SAFE YPP</span>
         </div>
         <p class="text-xs text-gray-300 mt-0.5">Phân loại theo ngách Lịch sử, Tiên tri, Sinh tồn, Ru ngủ · Tích hợp sẵn Trình phát âm thanh nghe thử & tải MP3.</p>
       </div>
@@ -1461,7 +1461,7 @@
               ${!k.videoTitle && k.source === 'noi-bo' ? `<div class="mt-1 text-[11px] text-lime-400/80">Đồng bộ từ ngoài → H2DEV</div>` : ''}
               ${k.videoNiche && k.videoNiche !== k.contentNiche ? `<div class="mt-1 text-[10px] text-amber-400/80">Video mẹ thuộc: ${esc(k.videoNiche)}</div>` : ''}
               <div class="mt-auto pt-3 flex flex-wrap gap-2">
-                ${k.sku === 'NOI-BO-MUSIC-01' || (k.file && k.file.includes('CATALOG-NHAC-NEN')) ? `<button type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-[11px] font-bold shadow-sm transition js-open-music-studio"><span>🎧 Mở Trạm Nhạc Nền (38 Tracks)</span></button>` : ''}
+                ${k.sku === 'NOI-BO-MUSIC-01' || (k.file && k.file.includes('CATALOG-NHAC-NEN')) ? `<button type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-[11px] font-bold shadow-sm transition js-open-music-studio"><span>🎧 Mở Trạm Nhạc Nền (43 Tracks)</span></button>` : ''}
                 ${k.link ? `<a href="${esc(k.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-[11px] font-bold">↗ ${esc(k.host || 'Mở nguồn')}</a>` : ''}
                 ${k.file ? `<a href="${esc(k.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">📄 File local</a>` : ''}
                 ${k.fileLocal ? `<a href="${esc(k.fileLocal)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">📝 MD gốc</a>` : ''}
@@ -4141,7 +4141,7 @@
       });
     })();
   </script>
-  <script src="assets/music_player_modal.js"></script>
+  <script src="assets/music_player_modal.js?v=20260921-v43"></script>
 </body>
 
 </html>

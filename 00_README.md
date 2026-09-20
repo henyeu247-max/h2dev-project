@@ -43,7 +43,7 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 - **140 bài học** · ~23.52 GB (21.90 GiB) · ffprobe **140/140** có hình + audio (0 file 0 byte) · 27 free · 113 pro
 - **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/` và `ZOOM-00` (tài liệu quy trình, không phải bài học)
 - **157 tài liệu**: prompt 78 · report 20 · tool 23 · list 16 · other 11 · internal-doc 5 (gồm cẩm nang nhạc nền NOI-BO-MUSIC-01)
-- **38 tracks nhạc nền đã audit Gemini Multimodal**: 25 SAFE (YPP) · 9 REVIEW · 4 COPYRIGHTED loại bỏ — quản lý tại `data/music_catalog.json` & cẩm nang `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`
+- **43 tracks nhạc nền đã audit Gemini Multimodal & FFprobe**: 30 SAFE (YPP) · 9 REVIEW · 4 COPYRIGHTED loại bỏ — quản lý tại `data/music_catalog.json` & cẩm nang `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`
 - **165 kênh mẫu** (152 sống · 13 dead 404 đã ẩn) · `ngay_do` 165/165
 - **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)

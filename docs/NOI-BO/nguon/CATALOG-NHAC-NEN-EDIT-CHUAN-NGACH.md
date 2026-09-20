@@ -1,8 +1,8 @@
-# CẨM NANG KHO NHẠC NỀN EDIT THEO NGÁCH (38 TRACKS) — ĐÃ AUDIT GEMINI MULTIMODAL
+# CẨM NANG KHO NHẠC NỀN EDIT THEO NGÁCH (43 TRACKS) — ĐÃ AUDIT GEMINI MULTIMODAL & FFPROBE
 
-> **Cập nhật:** 2026-09-17 (Gemini Multimodal Audio Intelligence Audit)
-> **Tổng quy mô:** 38 tracks · **Tổng thời lượng:** 2.45 giờ · **Dung lượng:** 265.82 MB
-> **Phân loại bản quyền:** 🟢 **25 SAFE** (100% YPP) · 🟡 **9 REVIEW** (Thận trọng) · 🔴 **4 COPYRIGHTED** (Cấm bật kiếm tiền)
+> **Cập nhật:** 2026-09-21 (Bổ sung 5 tracks Public Domain CC0 chuẩn ngách)
+> **Tổng quy mô:** 43 tracks · **Tổng thời lượng:** 2.88 giờ · **Dung lượng:** 301.76 MB
+> **Phân loại bản quyền:** 🟢 **30 SAFE** (100% YPP) · 🟡 **9 REVIEW** (Thận trọng) · 🔴 **4 COPYRIGHTED** (Cấm bật kiếm tiền)
 
 ---
 
@@ -63,6 +63,11 @@ Bao gồm 8 bài nhạc nền ambient/piano độc quyền và 17 bài cinematic
 | 23 | `Tiên Tri 5.mp3` | 01:34 | Ambient / Chillout | Thư giãn, nhẹ nhàng, bình yên | Meditation & Sleep, Study & Focus |
 | 24 | `Tiên Tri 6.mp3` | 01:24 | Ambient / Meditation Music | Thư giãn, nhẹ nhàng, tĩnh lặng | Thiền định và Thư giãn, Học tập / T |
 | 25 | `Velvet Annex.mp3` | 00:48 | Classical, Cinematic, Instrume | Melancholy, Peaceful, Reflecti | Relaxation, Study Music |
+| 26 | `Chopin - Nocturne Op 32 No 1 (Neoclassical Piano).mp3` | 04:43 | Neoclassical Piano / Lãng mạn | Hoài niệm, trang nhã, sâu lắng | Lịch Sử Đời Sống / Everyday History EN |
+| 27 | `Bach - Cello Suite No 1 Prelude in G (John Michel).mp3` | 02:29 | Cello Solo Cổ Điển / Uy nghiêm | Cổ kính, vĩ đại, học thuật | Khảo Cổ Học / Sumer / Nền Văn Minh Cổ |
+| 28 | `Beethoven - Moonlight Sonata Op 27 No 2 (Allegretto).mp3` | 02:08 | Neoclassical Piano Thư Giãn | Thanh thản, thư thái, an yên | Sức Khỏe / Lão Hóa / Senior Wisdom |
+| 29 | `Gustav Holst - Mars The Bringer of War (Epic Brass).mp3` | 07:18 | Epic Orchestral Brass / Kèn đồng | Dồn dập, căng thẳng, chiến lược | Quân Sự / Địa Chính Trị / Chiến Lược |
+| 30 | `Nature ASMR - Summer Thunderstorm in the Woods.mp3` | 07:08 | Âm thanh thiên nhiên ASMR | Mưa rơi êm dịu, sấm rền xa | Địa Lý / Sinh Tồn Hoang Dã / Ru Ngủ |
 
 ---
 

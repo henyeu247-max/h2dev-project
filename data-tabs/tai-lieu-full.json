@@ -1326,5 +1326,41 @@
     "contentNiche": "Edit / Thumb",
     "kind": "tool",
     "source": "noi-bo"
+  },
+  {
+    "sku": "TOOL-NOSIGNUP-01",
+    "name": "OpenCut Web Video Editor — Trình Dựng Video Phi Tuyến Tính (CapCut Alternative $0.00 Không Watermark)",
+    "link": "https://opencut.app",
+    "file": "",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "tool",
+    "source": "NoSignups"
+  },
+  {
+    "sku": "TOOL-NOSIGNUP-02",
+    "name": "AudioMass Web Waveform Editor — Biên Tập Âm Thanh & Chuẩn Hóa EBU R128 (-16 LUFS Trực Tiếp Trình Duyệt)",
+    "link": "https://audiomass.co",
+    "file": "",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "tool",
+    "source": "NoSignups"
+  },
+  {
+    "sku": "TOOL-NOSIGNUP-03",
+    "name": "Image Max URL Engine — Công Cụ Bóc Tách Ảnh Bìa YouTube 4K Gốc Từ CDN 10.000 Trang Web",
+    "link": "https://qsniyg.github.io/maxurl/",
+    "file": "",
+    "contentNiche": "Nền tảng / Tool",
+    "kind": "tool",
+    "source": "NoSignups"
+  },
+  {
+    "sku": "TOOL-NOSIGNUP-04",
+    "name": "World Monitor Real-Time OSINT Dashboard — Bảng Điều Khiển Tình Báo Địa Chính Trị & Tuyến Hàng Hải Thời Gian Thực",
+    "link": "https://www.worldmonitor.app/",
+    "file": "",
+    "contentNiche": "Quân sự / Địa chính trị",
+    "kind": "tool",
+    "source": "NoSignups"
   }
 ]

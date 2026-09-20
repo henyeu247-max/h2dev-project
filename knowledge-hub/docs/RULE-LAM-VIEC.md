@@ -63,12 +63,28 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 - Mọi kịch bản, câu Hook 0–15s mở màn, nhịp Pacing và prompt của kênh mẫu bắt buộc phải đối soát trích xuất 1:1 từ file transcript và video bão view #1 thực tế của chính kênh đó trước khi ghi vào hồ sơ.
 - Khi thiếu dữ liệu hoặc gặp ngách mới: Bắt buộc dùng MCP Pool Local (:3988 dùng Exa / Firecrawl / vidIQ) cào dữ liệu thực tế thời gian thực, tuyệt đối không tự ý bịa đặt thông số.
 
-### 5. Quy Tắc Phổ Quát "Check N/N" Kiểm Định 100% Tổng Thể
+### 5. Kỷ Luật Đồng Bộ Fullstack Media & Deploy VPS (Tuyệt Đối Chống Làm Trước Quên Sau, Bỏ Sót Tùm Lum)
+> **Nguyên tắc sống còn:** Một tác vụ tải về/mở rộng dữ liệu (`/expand`, tải nhạc, thêm video, thêm tài liệu) chỉ được coi là hoàn tất khi và chỉ khi **toàn bộ chuỗi cung ứng 5 bước** hoạt động trơn tru:
+1. **Kiểm tra file đĩa cứng:** Tải về và dùng `ffprobe` kiểm tra luồng audio/video (bitrate, duration > 0, không file 0 byte).
+2. **Chuẩn hóa SSoT Data:** Cập nhật file JSON (`music_catalog.json`, `tai-lieu-full.json`...) đầy đủ ID, metadata, streamUrl, cờ an toàn YPP.
+3. **Đồng bộ logic Frontend toàn diện:**
+   - Thuật toán tìm kiếm phải lập chỉ mục trường mã định danh `t.id` (gõ `MUSIC-041` phải ra ngay kết quả).
+   - Thẻ Card hiển thị rõ badge ID `[MUSIC-xxx]` cho người dùng nhận diện.
+   - Toàn bộ số lượng đếm trên header, banner, tabs lọc phải tính động 100% qua code, cấm hardcode số tĩnh.
+   - Thêm tham số version cache-busting (`?v=YYYYMMDD-vXX`) vào script và stream URL để chống Cloudflare / Browser lưu cache cũ.
+4. **Đồng bộ hạ tầng kép (Git + SCP Media lên VPS):**
+   - File media (nằm trong `.gitignore`) **BẮT BUỘC** phải được SCP trực tiếp lên VPS (`/www/wwwroot/h2dev-learn.tonymmo.com/app/assets/...`). Tuyệt đối không ảo tưởng rằng `git push` sẽ tự đẩy file media bị ignore.
+   - Đẩy code git song song lên cả `origin main` (GitHub) và `vps main` (VPS Production).
+5. **Kiểm thử E2E hai đầu (Local & Live Production):**
+   - Viết test script kiểm tra mã phản hồi `HTTP 200 OK` cho file tĩnh và file media trên cả `http://127.0.0.1:8899` và `https://h2dev-learn.tonymmo.com`.
+   - Test tìm kiếm ID thực tế trên giao diện. Báo cáo hoàn thành chỉ khi 100% pass, không còn 404.
+
+### 6. Quy Tắc Phổ Quát "Check N/N" Kiểm Định 100% Tổng Thể
 - Kiểm tra đủ 100% số lượng đối tượng thực tế tại runtime: Có N đối tượng (video, kênh, tài liệu, ngách) phải kiểm đủ cả N. Không lấy mẫu tượng trưng.
 - Mọi độ lệch (N - K) phải được định danh và phân loại nguyên nhân rõ ràng.
 - Nhận diện đúng kiểu dữ liệu (phân biệt boolean `true` với chuỗi cảnh báo trong `ngach-xanh.json`).
 
-### 6. Bằng Chứng Sự Thật 3 Mức & Chuẩn Mực Bảo Vệ Tài Sản vs Dọn Rác Tạm
+### 7. Bằng Chứng Sự Thật 3 Mức & Chuẩn Mực Bảo Vệ Tài Sản vs Dọn Rác Tạm
 - Nhận định chỉ dùng 3 trạng thái: `[CÓ]` / `[KHÔNG]` / `[KHÔNG-VERIFY-ĐƯỢC]` kèm bằng chứng.
 - **Bảo vệ tài sản gốc (Asset Preservation):** Tuyệt đối cấm tự ý xóa, ghi đè làm hỏng hoặc thay đổi cấu trúc của tài sản cốt lõi: Video bài giảng, file MP4/WEBM, phụ đề 3 định dạng (`.json`, `.srt`, `.txt`), thumbnails, dữ liệu sống trong `data-tabs/*.json`, catalog gốc, cấu hình server, và hạ tầng Windows Services/VPS.
 - **Kỷ luật Dọn dẹp rác & Tinh gọn (Ephemeral Cleanup Standard):** 
@@ -76,7 +92,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
   - Tuyệt đối cấm biến repository và thư mục `scripts/` thành bãi rác chứa các bản vá cũ hoặc cơ chế chồng chéo gây phiền hà cho các phiên làm việc sau.
   - "NO_DELETE" chỉ áp dụng cho TÀI SẢN DỰ ÁN và DỮ LIỆU SỐNG, không phải là cái cớ để lưu cữu rác thải vận hành.
 
-### 7. Kỷ Luật Windows Scripting An Toàn (Pure ASCII Only)
+### 8. Kỷ Luật Windows Scripting An Toàn (Pure ASCII Only)
 - Mọi file script vận hành trên Windows (.bat, .cmd) phải sử dụng 100% ký tự 7-bit ASCII thuần.
 - Tuyệt đối không dùng tiếng Việt có dấu, ký tự Unicode lạ hay dấu & không bọc thoát trong chuỗi lệnh nhằm triệt tiêu hoàn toàn lỗi lệch byte và vỡ lệnh của cmd.exe.
 

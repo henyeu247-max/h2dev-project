@@ -74,6 +74,12 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
   9. Top Video sắp xếp theo Most Viewed (Lượt xem giảm dần, video #1 bão view nhất) + Modal Sub song ngữ 4 Tab.
   10. Tình báo đa nguồn (vidIQ velocity, OCR Outlier 100x, Timeline Evolution Audit).
   11. Trạm Vũ Khí Tác Chiến Ba Ngôi (Pipeline/Skill + Prompt Engine Visual/Script/CTR + Dedicated Skill + Lộ trình 5 bước ra quân).
+- Bộ Tiêu Chuẩn Đồng Bộ Fullstack Media (/expand, Audio, Video, UI, VPS Production):
+  1. Thẩm định kỹ thuật: ffprobe kiểm tra bitrate, thời lượng > 0, không có file rỗng 0 byte.
+  2. Đồng bộ SSoT Data: Cập nhật file JSON chuẩn (music_catalog.json, tai-lieu-full.json) đầy đủ ID, URL, cờ YPP.
+  3. Đồng bộ UI toàn diện: Tìm kiếm bắt buộc index `t.id` (MUSIC-xxx), card hiện badge ID, số liệu header/tabs tính động 100%, query version buster (`?v=YYYYMMDD-vXX`) chống stale cache.
+  4. Đồng bộ hạ tầng kép: Dùng SCP đẩy trực tiếp file media gitignored sang VPS (/www/wwwroot/.../assets/...) + Git commit & push cả origin và vps.
+  5. Kiểm định E2E hai đầu: Chạy script test HTTP 200 OK cho cả Local :8899 và Live VPS Production (Cloudflare domain), xác nhận tìm kiếm ID chạy đúng 100%.
 
 ---
 

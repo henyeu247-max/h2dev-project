@@ -1,9 +1,9 @@
 {
   "schema": "h2dev.music-catalog.v1",
-  "updatedAt": "2026-09-17T02:03:47Z",
-  "totalTracks": 38,
-  "totalDurationHours": 2.45,
-  "totalSizeMB": 265.82,
+  "updatedAt": "2026-09-21T04:20:00Z",
+  "totalTracks": 43,
+  "totalDurationHours": 2.88,
+  "totalSizeMB": 301.76,
   "tracks": [
     {
       "id": "MUSIC-001",
@@ -1036,6 +1036,115 @@
       "geminiAudited": true,
       "streamUrl": "assets/nhac-nen/Velvet Annex.mp3",
       "localAbsPath": "D:\\\\YTB\\\\Nhạc nền\\\\Velvet Annex.mp3"
+    },
+    {
+      "id": "MUSIC-039",
+      "fileName": "Chopin - Nocturne Op 32 No 1 (Neoclassical Piano).mp3",
+      "relativePath": "Nhạc nền/Chopin - Nocturne Op 32 No 1 (Neoclassical Piano).mp3",
+      "folder": "Nhạc nền",
+      "durationSeconds": 283.02,
+      "durationFormatted": "04:43",
+      "sizeMB": 6.48,
+      "bitrateKbps": 192,
+      "categoryNiche": "Lịch Sử Đời Sống / Everyday History EN",
+      "moodDescription": "Hoài niệm, trang nhã, lãng mạn, sâu lắng",
+      "licenseType": "Creative Commons 0 (Public Domain 100% Free)",
+      "safeForYPP": true,
+      "copyrightRisk": "SAFE",
+      "geminiAudited": true,
+      "leadInstruments": [
+        "Piano"
+      ],
+      "streamUrl": "assets/nhac-nen/Chopin - Nocturne Op 32 No 1 (Neoclassical Piano).mp3",
+      "localAbsPath": "D:\\YTB\\Nhạc nền\\Chopin - Nocturne Op 32 No 1 (Neoclassical Piano).mp3"
+    },
+    {
+      "id": "MUSIC-040",
+      "fileName": "Bach - Cello Suite No 1 Prelude in G (John Michel).mp3",
+      "relativePath": "Nhạc nền/Bach - Cello Suite No 1 Prelude in G (John Michel).mp3",
+      "folder": "Nhạc nền",
+      "durationSeconds": 130.27,
+      "durationFormatted": "02:10",
+      "sizeMB": 2.98,
+      "bitrateKbps": 192,
+      "categoryNiche": "Khảo Cổ Học / Sumer / Nền Văn Minh Cổ Đại",
+      "moodDescription": "Uy nghiêm, trầm mặc, vĩ đại, cổ kính",
+      "licenseType": "Creative Commons 0 (Public Domain 100% Free)",
+      "safeForYPP": true,
+      "copyrightRisk": "SAFE",
+      "geminiAudited": true,
+      "leadInstruments": [
+        "Cello solo"
+      ],
+      "streamUrl": "assets/nhac-nen/Bach - Cello Suite No 1 Prelude in G (John Michel).mp3",
+      "localAbsPath": "D:\\YTB\\Nhạc nền\\Bach - Cello Suite No 1 Prelude in G (John Michel).mp3"
+    },
+    {
+      "id": "MUSIC-041",
+      "fileName": "Beethoven - Moonlight Sonata Op 27 No 2 (Allegretto).mp3",
+      "relativePath": "Nhạc nền/Beethoven - Moonlight Sonata Op 27 No 2 (Allegretto).mp3",
+      "folder": "Nhạc nền",
+      "durationSeconds": 124.97,
+      "durationFormatted": "02:04",
+      "sizeMB": 2.86,
+      "bitrateKbps": 192,
+      "categoryNiche": "Sức Khỏe / Lão Hóa / Senior Wisdom (Dưỡng Sinh)",
+      "moodDescription": "Thanh thản, thư thái, an yên, hoài niệm",
+      "licenseType": "Creative Commons 0 (Public Domain 100% Free)",
+      "safeForYPP": true,
+      "copyrightRisk": "SAFE",
+      "geminiAudited": true,
+      "leadInstruments": [
+        "Piano"
+      ],
+      "streamUrl": "assets/nhac-nen/Beethoven - Moonlight Sonata Op 27 No 2 (Allegretto).mp3",
+      "localAbsPath": "D:\\YTB\\Nhạc nền\\Beethoven - Moonlight Sonata Op 27 No 2 (Allegretto).mp3"
+    },
+    {
+      "id": "MUSIC-042",
+      "fileName": "Gustav Holst - Mars The Bringer of War (Epic Brass).mp3",
+      "relativePath": "Nhạc nền/Gustav Holst - Mars The Bringer of War (Epic Brass).mp3",
+      "folder": "Nhạc nền",
+      "durationSeconds": 498.23,
+      "durationFormatted": "08:18",
+      "sizeMB": 11.4,
+      "bitrateKbps": 192,
+      "categoryNiche": "Quân Sự / Địa Chính Trị / Chiến Lược",
+      "moodDescription": "Dồn dập, căng thẳng, đe dọa, hùng tráng",
+      "licenseType": "Creative Commons 0 (Public Domain 100% Free)",
+      "safeForYPP": true,
+      "copyrightRisk": "SAFE",
+      "geminiAudited": true,
+      "leadInstruments": [
+        "Orchestral Brass",
+        "Kèn đồng",
+        "Trống trận"
+      ],
+      "streamUrl": "assets/nhac-nen/Gustav Holst - Mars The Bringer of War (Epic Brass).mp3",
+      "localAbsPath": "D:\\YTB\\Nhạc nền\\Gustav Holst - Mars The Bringer of War (Epic Brass).mp3"
+    },
+    {
+      "id": "MUSIC-043",
+      "fileName": "Nature ASMR - Summer Thunderstorm in the Woods.mp3",
+      "relativePath": "Nhạc nền/Nature ASMR - Summer Thunderstorm in the Woods.mp3",
+      "folder": "Nhạc nền",
+      "durationSeconds": 533.99,
+      "durationFormatted": "08:53",
+      "sizeMB": 12.22,
+      "bitrateKbps": 192,
+      "categoryNiche": "Địa Lý / Sinh Tồn Hoang Dã / Ru Ngủ Sâu",
+      "moodDescription": "Mưa rơi êm dịu, sấm rền xa, tĩnh mịch thiên nhiên",
+      "licenseType": "Creative Commons 0 (Public Domain 100% Free)",
+      "safeForYPP": true,
+      "copyrightRisk": "SAFE",
+      "geminiAudited": true,
+      "leadInstruments": [
+        "Âm thanh thiên nhiên ASMR",
+        "Mưa rừng",
+        "Sấm xa"
+      ],
+      "streamUrl": "assets/nhac-nen/Nature ASMR - Summer Thunderstorm in the Woods.mp3",
+      "localAbsPath": "D:\\YTB\\Nhạc nền\\Nature ASMR - Summer Thunderstorm in the Woods.mp3"
     }
   ],
   "auditSummary": {

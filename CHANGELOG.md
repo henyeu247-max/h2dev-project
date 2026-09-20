@@ -1,3 +1,62 @@
+## 2026-09-21 — 🚀 NÂNG CẤP BƯỚC NGOẶT: HOÀN THIỆN ĐỦ FILL 13 SKILLS ĐA NGÁCH + NÂNG CẤP YT-DLP 2026.8.19 + KHO 8 REPO REVERSE-ENGINEERING + 26 TOOLS MCP LOCAL $0.00
+
+### 1. Phân rã 156 Raw Kênh thành 12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm)
+- Bóc tách toàn diện 156 kênh raw đối thủ tại đĩa (`data-tabs/raw-kenh-mau.json`) và 165 kênh mẫu (`kenh-mau.json`).
+- Khai quật 3 nhóm chủ đề đặc nhiệm từ 153 tài liệu (`tai-lieu-full.json`) và 20 Master Prompts: (1) Quy trình nhà máy sản xuất (`nha-may-san-xuat.md`), (2) Kiểm soát sinh học chiến đấu (`sinh-hoc-combat.md`), (3) Khoa học thực phẩm tế bào Food Shock (`@Foodcode1`).
+
+### 2. Xây dựng & Nâng cấp Hoàn chỉnh 13 Master Agent Skills tại `D:\YTB\.agents\skills\`
+- **`h2dev-everyday-history`:** Kỹ năng sản xuất độc quyền cho Ngách Xanh Ưu Tiên #1 (Record 29, RPM $10-$24, 135 WPM).
+- **`h2dev-ancient-civilizations`:** Mở rộng 6 Master Tracks (Sumer, Anunnaki, Göbekli Tepe, ADN Kỷ băng hà, Mỏ đồng cổ Arizona, Đại đế chế Ba Tư) hỗ trợ 5 ngôn ngữ (EN, RU, ES, KR, VI).
+- **`h2dev-senior-wisdom`:** Phục vụ nhóm lớn thứ 2 (42 kênh mẫu), 100% rào chắn YMYL Không-Bác-Sĩ, nhịp đọc 105 WPM, ASMR lò sưởi mưa rơi.
+- **`h2dev-dark-crime`:** Phóng sự điều tra tài chính Dark Ledger (15 kênh mẫu, RPM $18-$38, nhịp đọc 145 WPM).
+- **`h2dev-survival-offgrid`:** Sinh tồn cực hạn bão tuyết -30°C, nhà đất tự làm mát $0 (18 kênh mẫu).
+- **`h2dev-english-learning`:** Học tiếng Anh thụ động qua câu chuyện Comprehensible Input 2 tốc độ (100 & 140 WPM).
+- **`h2dev-geopolitics-military`:** Chiến thuật quân sự, phân tích nút thắt địa chính trị chokepoints.
+- **`h2dev-ai-film-director` (V2.0):** Studio đạo diễn 10 thể loại điện ảnh AI, khóa nhân vật 3 góc nhìn (三视图), vận kính 5P song ngữ Trung - Anh.
+- Cùng các kỹ năng nền tảng: `h2dev-wildlife-script`, `h2dev-wildlife-motion`, `h2dev-ton-giao`, `h2dev-bible`, `h2dev-hoat-hinh`.
+
+### 3. Xây dựng Bàn Điều Khiển Trung Tâm 1-Click: `scripts/h2dev_master_producer.py`
+- Router CLI điều phối tự động sang đúng Skill chuyên biệt cho bất kỳ ngách nào qua tham số `--group <name> --topic <key> --lang <EN|RU|ES|KR|VI> --duration <min>`.
+
+### 4. Nâng cấp Nhị Phân Media & Khởi Tạo Kho 8 Repo Reverse-Engineering tại `D:\YTB\research-repos\`
+- Nâng cấp `yt-dlp` lên phiên bản mới nhất `2026.8.19` trên Python 3.13.
+- Xác nhận FFmpeg N-125856 hỗ trợ đầy đủ Nvidia GPU Cuda, AV1, H.266 và EBU R128.
+- Clone 8 repo kỹ thuật mã nguồn mở nguyên bản: `Tencent/BrowserSkill`, `ainovel-cli`, `drama-skills`, `make-prompt-seedance2`, `dola-render-gateway`, `LuanRT/YouTube.js`, `yt-fts`, `FckSignups (NoSignups.net - 262 tools)`.
+
+### 5. Nâng cấp Module `youtube_intelligence` MCP Local lên 26 Vũ Khí $0.00
+- Tích hợp InnerTube Catalog 30-50 videos (`outlier_scanner`), Bóc tách tiêu đề 12 động cơ nhận thức (`title_hook_deconstructor`), Dự phóng RPM 249 nước (`niche_rpm_predictor`), Thẩm định thị giác Thumbnail 3 điểm vàng 65% (`thumbnail_vision_clusterer`), Quét nhãn hàng tài trợ (`sponsor_detector`), Linter kịch bản phòng thủ YPP 2026 (`script_ypp_pacing_linter`), Ma trận thẻ SEO nén <500 ký tự (`seo_tag_matrix_generator`), Máy quét SERP X-Ray (`serp_xray_analyzer`), Bóc tách Shorts viral (`viral_shorts_highlight_detector`), Kính ngắm A/B Test (`thumbnail_ab_change_tracker`), Lịch đăng tối ưu (`best_time_to_post_calculator`), và Kho B-Roll Public Domain miễn phí (`free_broll_footage_finder`).
+
+### 6. Bằng chứng Check-Pass
+- `node scripts/validate-project.js` → **Validation passed 100%**: Videos: 140; channels: 165; kich-ban: 45; tai-lieu-full: 153; thumbnails: 140; video directories: 140.
+
+---
+
+## 2026-09-18 (đợt 5) — 🔄 ĐỒNG BỘ SỐ LIỆU SSoT TRONG DOCS/RULE + CHECK-PASS MCP RUNTIME (188 TOOLS) + BASELINE MEMORY 18/09
+
+### 1. Đồng bộ số liệu lệch trong docs/rule (136 → 140)
+- `knowledge-hub/docs/RULE-LAM-VIEC.md` dòng 26 (Tầng 1): "Catalog 136 video bài giảng" → **"Catalog 140 bài học (136 video bài giảng + 4 buổi Zoom)"**.
+- `knowledge-hub/docs/HUONG-DAN-TAI-VIDEO-H2DEV.md` dòng 78: "Quét 136 SKU: 126 protected=False · 6 DRM · 4 ZOOM" → **"Quét 140 SKU (136 video + 4 ZOOM): 130 protected=False · 6 DRM · 4 ZOOM không link"** + chú thích mốc lịch sử.
+- **Căn cứ số liệu (đo trực tiếp `data-tabs/videos.json`):** total 140 · VIDEO-* 136 · ZOOM 4 · free 27 · `drm=true` 6 (`c1bd51 806c0c 83a28e 948336 aacc70 f59aa7`) · `drm!=true` 130. Khớp 130 + 6 + 4 = 140.
+- Cross-check: `tai-lieu-full.json` 153 · `kenh-mau.json` 165 (152 live) — không lệch.
+
+### 2. Check-Pass MCP Pool bằng runtime (không tin docs)
+- `GET http://127.0.0.1:3988/health` → `{"status":"ok","version":"2.0.0","tools":188,"sessions":9,"uploads":1,"uptime":4195.27}` — HTTP 200.
+- `Get-Service MCP_Pool_Service` → **Running / Automatic**.
+- `GET /tools` (có `X-API-Key`) → **188 tools · 20 namespace**: vidiq 64 · firecrawl 30 · tinyfish 17 · monid 13 · youtube_intelligence 12 · tavily 8 · filesystem 7 · memory 6 · trends 6 · ydc 4 · exa 4 · context7/sequential-thinking/context-dev/keenable/ui-skills 2 mỗi cái · jina/vision/gemini/gemini_analyze_media/analyze_image/delete_upload/upload_file 1 mỗi cái.
+- **Trends token ĐÃ HOẠT ĐỘNG:** `.env` có `TRENDS_ACCESS_TOKEN` (len 42) + `TRENDS_KEYS` (len 429 = 10 key). Gọi thật `trends.get_top_trends` → trả data live (`as_of_ts 2026-09-18`, count 5). Gỡ mốc cũ "trends chưa dùng được đến khi có token".
+
+### 3. Cập nhật baseline MEMORY.md (12/09 → 18/09)
+- Header ngày → **18/09/2026**; mục "Current live baseline (18/09/2026)".
+- Bổ sung dòng Media (140/140 ffprobe có hình+audio · ~23.51 GB · docs/ 142 thư mục · thumbs 140/140) + MCP Pool 188 tools + Trends đã chạy.
+- Giữ nguyên "Historical verified snapshot (21/08/2026)" (129 video · 161 kênh · 96 tài liệu) làm mốc lịch sử.
+
+### 4. Bằng chứng Check-Pass
+- `node scripts/validate-project.js` → **Validation passed** · `Videos: 140; channels: 165; kich-ban: 45; tai-lieu-full: 153; thumbnails: 140; video directories: 140`.
+- Backup trước khi sửa: `_backup/20260918-docs-sync/` (3 file gốc).
+- `git diff --stat`: 3 file · 10 insertions · 6 deletions.
+- Grep xác nhận không còn chuỗi cũ (`Catalog 136`, `Quét 136 SKU`, `12/09/2026`, `126 protected`).
+
+
 ## 2026-09-18 (đợt 4) — 🔧 AUDIT MCP POOL BẰNG RUNTIME + CHUẨN HOÁ SỐ LIỆU SSoT TOÀN DỰ ÁN (140 SKU)
 
 ### 1. Audit MCP Pool `:3988` bằng chính runtime (không tin docs)
@@ -49,7 +108,7 @@
 
 ## 2026-09-18 (đợt 3) — 🔐 XÁC THỰC TÀI KHOẢN VIP H2DEV.VN, NÂNG CẤP CHẤT LƯỢNG VIDEO 480P -> 720P HD & GIẢI MÃ BẢN CHẤT LỖI VIDEO-f59aa7
 ### 1. Đăng nhập & Xác thực Tài khoản VIP Học viên
-- **Xác thực tự động qua Playwright:** Đăng nhập thành công tài khoản `henyeu247@gmail.com` / `hihihjhjAa@1` vào `h2dev.vn/learn/auth`.
+- **Xác thực tự động qua Playwright:** Đăng nhập thành công tài khoản VIP học viên (`henyeu247@gmail.com`, mật khẩu lưu ở `_private/`, KHÔNG ghi plaintext) vào `h2dev.vn/learn/auth`.
 - **Cấp quyền PRO:** Token JWT cấp `uid: 33599`, `utypid: 3`, cookie `viewAllVideo: true`, trạng thái hiển thị huy hiệu `[PRO]`.
 - **Trích xuất cây học liệu:** Lưu trữ và đối chiếu toàn bộ 136 bài học (`total_lesson_pro: 113`, `total_lesson_free: 23`) qua GraphQL `getCourse`.
 

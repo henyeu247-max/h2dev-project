@@ -37,6 +37,7 @@ function loadKeys(options = {}) {
   const VIDIQ_KEY = env.VIDIQ_KEY || '';
   const EXA_KEY = env.EXA_KEY || '';
   const JINA_KEY = env.JINA_KEY || '';
+  const MCP_POOL_API_KEY = env.MCP_POOL_API_KEY || 'mcp-pool-2026-secure-key';
 
   if (options.required && Array.isArray(options.required)) {
     const missing = [];
@@ -44,6 +45,7 @@ function loadKeys(options = {}) {
     if (options.required.includes('VIDIQ_KEY') && !VIDIQ_KEY) missing.push('VIDIQ_KEY');
     if (options.required.includes('EXA_KEY') && !EXA_KEY) missing.push('EXA_KEY');
     if (options.required.includes('JINA_KEY') && !JINA_KEY) missing.push('JINA_KEY');
+    if (options.required.includes('MCP_POOL_API_KEY') && !MCP_POOL_API_KEY) missing.push('MCP_POOL_API_KEY');
     if (missing.length) {
       console.error(`.env thiếu key: ${missing.join(', ')}`);
       console.error('→ Vui lòng điền key vào ' + ENV_PATH);
@@ -51,7 +53,7 @@ function loadKeys(options = {}) {
     }
   }
 
-  return { TRENDS_KEYS, VIDIQ_KEY, EXA_KEY, JINA_KEY, hasEnv: fs.existsSync(ENV_PATH) };
+  return { TRENDS_KEYS, VIDIQ_KEY, EXA_KEY, JINA_KEY, MCP_POOL_API_KEY, hasEnv: fs.existsSync(ENV_PATH) };
 }
 
 function getRequiredKey(keyName) {

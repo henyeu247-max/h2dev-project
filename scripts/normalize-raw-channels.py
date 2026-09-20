@@ -16,6 +16,29 @@ if not os.path.exists(META_PATH):
     sys.exit(1)
 
 
+def get_local_mcp_key():
+    # Ưu tiên 1: Biến môi trường
+    key = os.environ.get("MCP_POOL_API_KEY")
+    if key:
+        return key
+    # Ưu tiên 2: Đọc từ .env của dự án
+    env_file = os.path.join(WORKDIR, ".env")
+    if os.path.exists(env_file):
+        try:
+            with open(env_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line.startswith("MCP_POOL_API_KEY="):
+                        val = line.split("=", 1)[1].strip().strip('"').strip("'")
+                        if val:
+                            return val
+        except Exception:
+            pass
+    # Ưu tiên 3: Fallback chuẩn của MCP Pool Local (:3988)
+    return "mcp-pool-2026-secure-key"
+
+LOCAL_MCP_KEY = get_local_mcp_key()
+
 def call_mcp(tool_name, arguments, timeout=40):
     body = json.dumps({
         "jsonrpc": "2.0",
@@ -32,7 +55,8 @@ def call_mcp(tool_name, arguments, timeout=40):
         data=body,
         headers={
             "Content-Type": "application/json",
-            "Authorization": "Bearer YOUR_LOCAL_MCP_KEY"
+            "Authorization": f"Bearer {LOCAL_MCP_KEY}",
+            "X-API-Key": LOCAL_MCP_KEY
         }
     )
     with urllib.request.urlopen(req, timeout=timeout) as resp:

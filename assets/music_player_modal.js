@@ -27,13 +27,15 @@
                       (isCopy ? 'background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;' :
                                 'background:rgba(245,158,11,0.2); border:1px solid rgba(245,158,11,0.4); color:#fde68a;');
     const badgeText = isSafe ? '🟢 SAFE (YPP)' : (isCopy ? '🔴 BẢN QUYỀN (CẤM YPP)' : '🟡 CẦN THẬN TRỌNG');
-    const streamSrc = t.streamUrl || ('assets/nhac-nen/' + (t.folder && t.folder !== 'Nhạc nền' ? t.folder + '/' : '') + t.fileName);
+    const rawSrc = t.streamUrl || ('assets/nhac-nen/' + (t.folder && t.folder !== 'Nhạc nền' ? t.folder + '/' : '') + t.fileName);
+    const streamSrc = rawSrc + (rawSrc.includes('?') ? '&' : '?') + 'v=20260921-v43';
 
     return `
       <div style="background:#0f172a; border:1px solid ${isCopy ? '#7f1d1d' : '#1e293b'}; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.65rem; box-shadow:0 4px 12px rgba(0,0,0,0.3);">
         <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:0.5rem;">
           <div style="min-width:0; flex:1;">
             <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;">
+              <span style="font-size:0.72rem; font-weight:800; padding:0.1rem 0.4rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#d8b4fe; font-family:monospace;">${esc(t.id)}</span>
               <span style="font-size:0.72rem; font-weight:700; padding:0.1rem 0.4rem; border-radius:0.35rem; ${badgeColor}">${badgeText}</span>
               <span style="font-size:0.68rem; color:#94a3b8; font-family:monospace;">${esc(t.durationFormatted)} • ${t.sizeMB} MB</span>
             </div>
@@ -57,7 +59,7 @@
 
         <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.68rem; color:#64748b; border-top:1px solid #1e293b; padding-top:0.4rem;">
           <span class="truncate">📁 Local: ${esc(t.fileName)}</span>
-          <button type="button" onclick="navigator.clipboard.writeText('${esc(t.localAbsPath || t.fileName).replace(/'/g, "\\'")}'); alert('Đã copy đường dẫn local!');" style="background:none; border:none; color:#38bdf8; cursor:pointer; font-size:0.68rem; font-weight:600; padding:0;">📋 Copy Path</button>
+          <button type="button" onclick="navigator.clipboard.writeText('${esc(t.localAbsPath || t.fileName).replace(/'/g, "\\'")}'); alert('Đã copy đường dẫn local: ${esc(t.id)}');" style="background:none; border:none; color:#38bdf8; cursor:pointer; font-size:0.68rem; font-weight:600; padding:0;">📋 Copy Path</button>
         </div>
       </div>
     `;
@@ -93,19 +95,36 @@
         if (currentFilter === 'safe' && t.copyrightRisk !== 'SAFE') return false;
         if (currentFilter === 'copyrighted' && t.copyrightRisk !== 'COPYRIGHTED') return false;
         if (currentFilter === 'review' && t.copyrightRisk !== 'REVIEW') return false;
-        if (currentFilter === 'history' && !t.categoryNiche.includes('Lịch sử')) return false;
-        if (currentFilter === 'prophecy' && !t.categoryNiche.includes('Tiên tri')) return false;
-        if (currentFilter === 'philosophy' && !t.categoryNiche.includes('Vũ trụ') && !t.categoryNiche.includes('Triết lý')) return false;
-        if (currentFilter === 'wildlife' && !t.categoryNiche.includes('Sinh tồn')) return false;
-        if (currentFilter === 'ambient' && !t.categoryNiche.includes('Long-form')) return false;
+        if (currentFilter === 'history' && (!t.categoryNiche || (!t.categoryNiche.includes('Lịch sử') && !t.categoryNiche.includes('Khảo Cổ') && !t.categoryNiche.includes('Everyday')))) return false;
+        if (currentFilter === 'prophecy' && (!t.categoryNiche || !t.categoryNiche.includes('Tiên tri'))) return false;
+        if (currentFilter === 'philosophy' && (!t.categoryNiche || (!t.categoryNiche.includes('Vũ trụ') && !t.categoryNiche.includes('Triết lý') && !t.categoryNiche.includes('Sức Khỏe') && !t.categoryNiche.includes('Senior')))) return false;
+        if (currentFilter === 'wildlife' && (!t.categoryNiche || !t.categoryNiche.includes('Sinh tồn'))) return false;
+        if (currentFilter === 'military' && (!t.categoryNiche || (!t.categoryNiche.includes('Quân sự') && !t.categoryNiche.includes('Chiến tranh') && !t.categoryNiche.includes('Mars')))) return false;
+        if (currentFilter === 'ambient' && (!t.categoryNiche || !t.categoryNiche.includes('Long-form'))) return false;
 
         if (!q) return true;
-        const hay = [t.fileName, t.categoryNiche, t.mood, t.moodDescription, (t.leadInstruments||[]).join(' '), t.detectedTitle, t.detectedArtist].join(' ').toLowerCase();
+        const hay = [
+          t.id || '',
+          t.fileName || '',
+          t.categoryNiche || '',
+          t.mood || '',
+          t.moodDescription || '',
+          (t.leadInstruments || []).join(' '),
+          t.detectedTitle || '',
+          t.detectedArtist || ''
+        ].join(' ').toLowerCase();
         return hay.includes(q);
       });
 
+      const totalCount = cat.tracks.length;
       const safeCount = cat.tracks.filter(t => t.copyrightRisk === 'SAFE').length;
       const copyCount = cat.tracks.filter(t => t.copyrightRisk === 'COPYRIGHTED').length;
+      const historyCount = cat.tracks.filter(t => t.categoryNiche && (t.categoryNiche.includes('Lịch sử') || t.categoryNiche.includes('Khảo Cổ') || t.categoryNiche.includes('Everyday'))).length;
+      const prophecyCount = cat.tracks.filter(t => t.categoryNiche && t.categoryNiche.includes('Tiên tri')).length;
+      const philosophyCount = cat.tracks.filter(t => t.categoryNiche && (t.categoryNiche.includes('Vũ trụ') || t.categoryNiche.includes('Triết lý') || t.categoryNiche.includes('Sức Khỏe') || t.categoryNiche.includes('Senior'))).length;
+      const wildlifeCount = cat.tracks.filter(t => t.categoryNiche && t.categoryNiche.includes('Sinh tồn')).length;
+      const militaryCount = cat.tracks.filter(t => t.categoryNiche && (t.categoryNiche.includes('Quân sự') || t.categoryNiche.includes('Chiến tranh') || t.categoryNiche.includes('Mars'))).length;
+      const ambientCount = cat.tracks.filter(t => t.categoryNiche && t.categoryNiche.includes('Long-form')).length;
 
       modal.innerHTML = `
         <div style="position:relative; width:100%; max-width:1150px; max-height:92vh; background:#070a12; border:1px solid #334155; border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 60px rgba(0,0,0,0.95);">
@@ -114,27 +133,28 @@
               <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
                 <span style="font-size:1.35rem;">🎧</span>
                 <h3 style="font-size:1.1rem; font-weight:800; color:#fff; margin:0;">Trạm Nhạc Nền Edit Video Chuẩn Từng Ngách</h3>
-                <span style="font-size:0.72rem; font-weight:700; padding:0.15rem 0.5rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff;">38 Tracks Đã Audit Gemini</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:0.15rem 0.5rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff;">${totalCount} Tracks Đã Audit Gemini & FFprobe</span>
               </div>
-              <p style="font-size:0.75rem; color:#94a3b8; margin:0.25rem 0 0 0;">Nghe thử trực tiếp, đối chiếu rủi ro bản quyền, lọc theo ngách Lịch sử / Tiên tri / Sinh tồn / Ru ngủ và tải file MP3.</p>
+              <p style="font-size:0.75rem; color:#94a3b8; margin:0.25rem 0 0 0;">Nghe thử trực tiếp, đối chiếu rủi ro bản quyền, lọc theo ngách Lịch sử / Tiên tri / Sinh tồn / Quân sự / Ru ngủ và tải file MP3.</p>
             </div>
             <button type="button" id="close-music-studio" style="padding:0.4rem 0.85rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#e2e8f0; font-size:0.75rem; font-weight:700; cursor:pointer;" title="Đóng [Esc]">✕ Đóng</button>
           </div>
 
           <div style="padding:0.85rem 1.25rem; background:#090d16; border-bottom:1px solid #1e293b; display:flex; flex-direction:column; gap:0.65rem;">
             <div style="display:flex; gap:0.5rem; align-items:center;">
-              <input type="text" id="music-search" placeholder="🔍 Tìm theo tên bài, nhạc cụ, mood, ngách YouTube..." value="${esc(searchQuery)}" style="flex:1; background:#0f172a; border:1px solid #334155; border-radius:0.5rem; padding:0.5rem 0.75rem; font-size:0.8rem; color:#fff; outline:none;">
+              <input type="text" id="music-search" placeholder="🔍 Tìm theo mã track (vd: MUSIC-041), tên bài, nhạc cụ, mood, ngách YouTube..." value="${esc(searchQuery)}" style="flex:1; background:#0f172a; border:1px solid #334155; border-radius:0.5rem; padding:0.5rem 0.75rem; font-size:0.8rem; color:#fff; outline:none;">
               <button type="button" id="music-reset" style="padding:0.5rem 0.85rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#94a3b8; font-size:0.75rem; font-weight:600; cursor:pointer;">Reset</button>
             </div>
 
             <div style="display:flex; gap:0.4rem; overflow-x:auto; padding-bottom:0.2rem; scrollbar-width:thin;">
-              <button type="button" data-mfilter="all" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='all'?'#a855f7':'#1e293b'}; background:${currentFilter==='all'?'#7e22ce':'#0f172a'}; color:#fff;">Tất cả (${cat.tracks.length})</button>
+              <button type="button" data-mfilter="all" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='all'?'#a855f7':'#1e293b'}; background:${currentFilter==='all'?'#7e22ce':'#0f172a'}; color:#fff;">Tất cả (${totalCount})</button>
               <button type="button" data-mfilter="safe" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='safe'?'#10b981':'#1e293b'}; background:${currentFilter==='safe'?'#047857':'#0f172a'}; color:#6ee7b7;">🟢 100% SAFE YPP (${safeCount})</button>
-              <button type="button" data-mfilter="history" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='history'?'#38bdf8':'#1e293b'}; background:${currentFilter==='history'?'#0369a1':'#0f172a'}; color:#bae6fd;">🏛️ Lịch sử (7)</button>
-              <button type="button" data-mfilter="prophecy" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='prophecy'?'#38bdf8':'#1e293b'}; background:${currentFilter==='prophecy'?'#0369a1':'#0f172a'}; color:#bae6fd;">🔮 Tiên tri / Bí ẩn (14)</button>
-              <button type="button" data-mfilter="philosophy" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='philosophy'?'#38bdf8':'#1e293b'}; background:${currentFilter==='philosophy'?'#0369a1':'#0f172a'}; color:#bae6fd;">🌌 Triết lý / Ru ngủ (6)</button>
-              <button type="button" data-mfilter="wildlife" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='wildlife'?'#38bdf8':'#1e293b'}; background:${currentFilter==='wildlife'?'#0369a1':'#0f172a'}; color:#bae6fd;">🐾 Sinh tồn (8)</button>
-              <button type="button" data-mfilter="ambient" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='ambient'?'#38bdf8':'#1e293b'}; background:${currentFilter==='ambient'?'#0369a1':'#0f172a'}; color:#bae6fd;">⏳ 15-25p Ambient (2)</button>
+              <button type="button" data-mfilter="history" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='history'?'#38bdf8':'#1e293b'}; background:${currentFilter==='history'?'#0369a1':'#0f172a'}; color:#bae6fd;">🏛️ Lịch sử & Khảo cổ (${historyCount})</button>
+              <button type="button" data-mfilter="prophecy" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='prophecy'?'#38bdf8':'#1e293b'}; background:${currentFilter==='prophecy'?'#0369a1':'#0f172a'}; color:#bae6fd;">🔮 Tiên tri / Bí ẩn (${prophecyCount})</button>
+              <button type="button" data-mfilter="philosophy" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='philosophy'?'#38bdf8':'#1e293b'}; background:${currentFilter==='philosophy'?'#0369a1':'#0f172a'}; color:#bae6fd;">🌌 Triết lý / Dưỡng sinh (${philosophyCount})</button>
+              <button type="button" data-mfilter="wildlife" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='wildlife'?'#38bdf8':'#1e293b'}; background:${currentFilter==='wildlife'?'#0369a1':'#0f172a'}; color:#bae6fd;">🐾 Sinh tồn (${wildlifeCount})</button>
+              <button type="button" data-mfilter="military" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='military'?'#38bdf8':'#1e293b'}; background:${currentFilter==='military'?'#0369a1':'#0f172a'}; color:#bae6fd;">⚔️ Quân sự (${militaryCount})</button>
+              <button type="button" data-mfilter="ambient" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='ambient'?'#38bdf8':'#1e293b'}; background:${currentFilter==='ambient'?'#0369a1':'#0f172a'}; color:#bae6fd;">⏳ 15-25p Ambient (${ambientCount})</button>
               <button type="button" data-mfilter="copyrighted" style="padding:0.3rem 0.7rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; border:1px solid ${currentFilter==='copyrighted'?'#ef4444':'#1e293b'}; background:${currentFilter==='copyrighted'?'#b91c1c':'#0f172a'}; color:#fca5a5;">🔴 Bản quyền (${copyCount})</button>
             </div>
           </div>

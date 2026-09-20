@@ -127,6 +127,10 @@ const DOC_RULES = [
   // ---- index.html ----
   { file: 'index.html', pattern: /(Bản đồ )\d+( ngách YouTube, định dạng an toàn)/g,
     build: c => `$1${c.niches}$2` },
+
+  // ---- data-tabs/ngach-xanh.json ----
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"taiLieu":\s*)\d+/g,
+    build: c => `$1${c.documents}` },
 ];
 
 function applyDocRules(counts, { write }) {

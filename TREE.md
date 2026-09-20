@@ -41,11 +41,11 @@ Y:\YTB\
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 140 SKU (27 free · 113 pro — gồm 4 Zoom free)
     │   ├── kenh-mau.json          # 165 kênh (152 sống · 13 dead ẩn) · ngay_do 165/165
-    │   ├── tai-lieu-full.json     # 153 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
+    │   ├── tai-lieu-full.json     # 157 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
     │   ├── ngach-xanh.json        # 34 ngách (xanh:true 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
     │   ├── chien-luoc.json        # workflow 11 bước · 4 nguyên tắc
-    │   ├── kich-ban.json          # 45 — extract cũ, UI không đọc
+    │   ├── kich-ban.json          # 60 — extract cũ, UI không đọc
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)
     │   └── raw-kenh-mau.json      # 156 record canonical (149 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 156/156 · vidIQ verified 83
     │

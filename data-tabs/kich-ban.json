@@ -268,5 +268,95 @@
     "name": "Prompt em chia sẻ trong video",
     "link": "https://docs.google.com/document/d/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA/edit?usp=sharing",
     "file": "assets/docs/VIDEO-e90874/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA.txt"
+  },
+  {
+    "sku": "PILOT-01-THE-MIRROR",
+    "name": "Kịch Bản Master: The Mirror — Lịch Sử Chiếc Gương & Bí Mật Độc Quyền Venice (Everyday History EN)",
+    "link": "",
+    "file": "raw-niches/US_EverydayHistory/PILOT-01-THE-MIRROR/master-script.md"
+  },
+  {
+    "sku": "PILOT-02-THE-FORK",
+    "name": "Kịch Bản Master: The Fork — Lịch Sử Chiếc Nĩa & Lệnh Cấm Của Giáo Hội Trung Cổ (Everyday History EN)",
+    "link": "",
+    "file": ".agents/skills/h2dev-everyday-history/scripts/generate_everyday_history.py"
+  },
+  {
+    "sku": "PILOT-03-THE-MATCHES",
+    "name": "Kịch Bản Master: Matches — Lịch Sử Que Diêm & Vụ Bãi Công Của Các Cô Gái Hàm Phốt Pho 1888",
+    "link": "",
+    "file": ".agents/skills/h2dev-everyday-history/scripts/generate_everyday_history.py"
+  },
+  {
+    "sku": "PILOT-04-GOBEKLI-TEPE",
+    "name": "Kịch Bản Master: Göbekli Tepe — Ngôi Đền 12.000 Năm Phá Vỡ Dòng Thời Gian Lịch Sử (Ancient Civilizations)",
+    "link": "",
+    "file": ".agents/skills/h2dev-ancient-civilizations/scripts/generate_ancient_civilization.py"
+  },
+  {
+    "sku": "PILOT-05-SUMERIAN-TABLETS",
+    "name": "Kịch Bản Master: The Sumerian Tablets — Giải Mã Văn Tự Đất Sét & Tri Thức Thiên Văn Anunnaki",
+    "link": "",
+    "file": ".agents/skills/h2dev-ancient-civilizations/scripts/generate_ancient_civilization.py"
+  },
+  {
+    "sku": "PILOT-06-ANCIENT-PERSIA",
+    "name": "Kịch Bản Master: Ancient Persia — Siêu Cường Ba Tư Thống Trị 44% Dân Số Thế Giới [Tài Liệu 4K]",
+    "link": "",
+    "file": ".agents/skills/h2dev-ancient-civilizations/scripts/generate_ancient_civilization.py"
+  },
+  {
+    "sku": "PILOT-07-NEANDERTHAL-DNA",
+    "name": "Kịch Bản Master: Ancient DNA Atlas — Giải Mã Sự Biến Mất Của Người Neanderthal Trong Kỷ Băng Hà",
+    "link": "",
+    "file": ".agents/skills/h2dev-ancient-civilizations/scripts/generate_ancient_civilization.py"
+  },
+  {
+    "sku": "PILOT-08-ARIZONA-COPPER",
+    "name": "Kịch Bản Master: Arizona Copper Shaft — Cổ Vật Bị Xóa Khỏi Lịch Sử Nước Mỹ & Lời Cảnh Báo Apache",
+    "link": "",
+    "file": ".agents/skills/h2dev-ancient-civilizations/scripts/generate_ancient_civilization.py"
+  },
+  {
+    "sku": "PILOT-09-LETTING-GO-60",
+    "name": "Kịch Bản Master: Nghệ Thuật Buông Bỏ Tuổi 60 — Lời Nhắn Nhủ Nửa Đời Sau An Yên (Senior Wisdom 105 WPM)",
+    "link": "",
+    "file": ".agents/skills/h2dev-senior-wisdom/scripts/generate_senior_wisdom.py"
+  },
+  {
+    "sku": "PILOT-10-SOLITUDE-PEACE",
+    "name": "Kịch Bản Master: Sống Tĩnh Lặng Giữa Tuổi Già — Biến Cô Đơn Thành An Nhiên Tự Tại (Senior Wisdom)",
+    "link": "",
+    "file": ".agents/skills/h2dev-senior-wisdom/scripts/generate_senior_wisdom.py"
+  },
+  {
+    "sku": "PILOT-11-FTX-ILLUSION",
+    "name": "Kịch Bản Master: The $32 Billion Crypto Illusion — Vụ Án Gian Lận Tài Chính SBF & FTX (Dark Crime 145 WPM)",
+    "link": "",
+    "file": ".agents/skills/h2dev-dark-crime/scripts/generate_dark_crime.py"
+  },
+  {
+    "sku": "PILOT-12-THERANOS-SCAM",
+    "name": "Kịch Bản Master: The Silicon Valley Blood Scam — Đại Án Thử Máu Lừa Đảo Elizabeth Holmes & Theranos",
+    "link": "",
+    "file": ".agents/skills/h2dev-dark-crime/scripts/generate_dark_crime.py"
+  },
+  {
+    "sku": "PILOT-13-MALACCA-CHOKEPOINT",
+    "name": "Kịch Bản Master: The Malacca Dilemma — Nút Thắt 1.7 Dặm Có Thể Làm Tê Liệt Thương Mại Toàn Cầu (Geopolitics)",
+    "link": "",
+    "file": ".agents/skills/h2dev-geopolitics-military/scripts/generate_geopolitics_script.py"
+  },
+  {
+    "sku": "PILOT-14-RED-CLIFFS-BATTLE",
+    "name": "Kịch Bản Master: Battle of Red Cliffs — Đại Chiến Xích Bích: Khi Gió Lửa Đè Bẹp 80 Vạn Quân Tào",
+    "link": "",
+    "file": ".agents/skills/h2dev-geopolitics-military/scripts/generate_geopolitics_script.py"
+  },
+  {
+    "sku": "PILOT-15-ARCTIC-EARTH-SHELTER",
+    "name": "Kịch Bản Master: Building an Arctic Earth Shelter — Sinh Tồn Bão Tuyết -30°C Trong Hầm Đất (Off-Grid ASMR)",
+    "link": "",
+    "file": ".agents/skills/h2dev-survival-offgrid/scripts/generate_survival_script.py"
   }
 ]

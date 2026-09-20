@@ -70,9 +70,9 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 |---|---|
 | `videos.json` | **140** (27 free · 113 pro — gồm 4 buổi Zoom free) |
 | `kenh-mau.json` | **165** (152 live + 13 dead) · `ngay_do` 165/165 |
-| `tai-lieu-full.json` | **153** (prompt 78 · report 20 · tool 23 · list 16 · other 11 · internal-doc 5; +cẩm nang nhạc nền 17/09) |
+| `tai-lieu-full.json` | **157** (prompt 78 · report 20 · tool 23 · list 16 · other 11 · internal-doc 5; +cẩm nang nhạc nền 17/09) |
 | `ngach-xanh.json` | **34** ngách — `xanh:true` **11** · `CÓ MẪU TĂNG` 10 · `CHƯA ĐỦ BẰNG CHỨNG` 8 · `THẬN TRỌNG` 3 · `CÓ ĐIỀU KIỆN` 2 · + 5 meta kho · 5 ngách đỏ · 13 BXH |
-| `kich-ban.json` | **45** (extract cũ, UI không đọc) |
+| `kich-ban.json` | **60** (extract cũ, UI không đọc) |
 | `nguon-reup.json` | **27** |
 | `chien-luoc.json` | workflow **11** bước · 4 nguyên tắc cốt lõi (mục `workflow`) |
 | `dong-bo-ngoai.json` | 13 matched · 19 merged · 5 không gom · 4 pipeline |

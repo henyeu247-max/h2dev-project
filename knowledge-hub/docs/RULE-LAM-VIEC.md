@@ -23,7 +23,7 @@
 
 ## KIẾN TRÚC HỆ THỐNG (7 TẦNG — ĐÃ DỠ BỎ HOÀN TOÀN TÀN DƯ GEMINI)
 
-- **Tầng 1 — Kho Học Liệu & Âm Thanh Chuẩn:** Catalog 140 bài học (136 video bài giảng + 4 buổi Zoom) kèm phụ đề sạch 3 định dạng (`transcript.json`, `transcript.srt`, `transcript.txt`), Voice DNA Studio với mẫu trích xuất 45s (tính WPM, profile clone giọng), **Kho 43 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (30 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng) tích hợp Trạm phát nhạc nền Interactive Music Studio Modal**, cẩm nang Master SOP, và media đã kiểm định ffprobe (luồng video + audio khác 0 byte).
+- **Tầng 1 — Kho Học Liệu & Âm Thanh Chuẩn:** Catalog 140 bài học (136 video bài giảng + 4 buổi Zoom) kèm phụ đề sạch 3 định dạng (`transcript.json`, `transcript.srt`, `transcript.txt`), Voice DNA Studio với mẫu trích xuất 45s (tính WPM, profile clone giọng), **Kho 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng) tích hợp Trạm phát nhạc nền Interactive Music Studio Modal**, cẩm nang Master SOP, và media đã kiểm định ffprobe (luồng video + audio khác 0 byte).
 - **Tầng 2 — Thị Trường & Đối Thủ:** Danh bạ kênh đối thủ (sống + chết + OCR/vision), 156 hồ sơ kênh mẫu bao quát 34 ngách nghiệp vụ đã audit live sức sống YPP, chỉ số tốc độ bứt phá (velocity tracker).
 - **Tầng 3 — Pipeline Sản Xuất & Hệ Thống Kỹ Năng Tác Chiến:** 4 pipeline song song (tôn giáo, hoạt hình 3D, tài liệu động vật, giải nghĩa Kinh Thánh) + **Kho 11 Skills đặc nhiệm đã cài đặt sẵn** (`h2dev-hoat-hinh`, `h2dev-ton-giao`, `h2dev-bible`, `h2dev-wildlife-script`, `h2dev-wildlife-motion`, `video-script-dissect`, `short-video-script`, `script-forging`, `prompt-master`, `de-ai-writing`, `douyin-scraper`) + **Kho 157 tài liệu & Master Prompts** (`data-tabs/tai-lieu-full.json`) + **6 hồ sơ Pilot ngách** (`raw-niches/` với `PILOT-01-THE-MIRROR`) + **cẩm nang catalog SOP & Music** (`assets/docs/tai-lieu/`).
 - **Tầng 4 — Hạ Tầng Phục Vụ & Mạng Nội Bộ:** Server Node.js (0.0.0.0:8899) chạy dưới dạng Windows Service chính thức (`H2DEV_Service`, NSSM `SERVICE_AUTO_START`), tự chạy khi bật máy không cần đăng nhập; mạng LAN + Tailscale, mở khóa dữ liệu tĩnh nguyên vẹn, kiến trúc map ổ mạng máy trạm (`Y:\`). Deploy VPS tự động có GUARD kiểm tra số liệu (`sync-counts.js --check`) và rollback chống lệch data.
@@ -95,6 +95,19 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 ### 8. Kỷ Luật Windows Scripting An Toàn (Pure ASCII Only)
 - Mọi file script vận hành trên Windows (.bat, .cmd) phải sử dụng 100% ký tự 7-bit ASCII thuần.
 - Tuyệt đối không dùng tiếng Việt có dấu, ký tự Unicode lạ hay dấu & không bọc thoát trong chuỗi lệnh nhằm triệt tiêu hoàn toàn lỗi lệch byte và vỡ lệnh của cmd.exe.
+
+### 9. Kỷ Luật Kiểm Định Đa Vòng Tuyệt Đối (Multi-Loop Verification — Tối Thiểu 3 Vòng Nghiệm Thu)
+> **Nguyên tắc cốt tử:** Tuyệt đối không bao giờ làm việc sơ sài, kiểm tra qua loa 1 lần rồi vội vã báo cáo nghiệm thu. "Phiên nào cũng phải chuẩn từng ly từng tý, đồng bộ và chuyên nghiệp tuyệt đối". Bắt buộc thực hiện tối thiểu 3 vòng độc lập:
+- **Vòng 1 — Kiểm định Kỹ thuật & Đĩa cứng (Disk & Binary Verification):**
+  + Quét trực tiếp file trên đĩa cứng bằng công cụ nhị phân chuyên dụng (`ffprobe`, `fs.statSync`).
+  + Xác nhận: thời lượng $> 0$, dung lượng $> 0$, bitrate chuẩn, luồng codec không lỗi, 0 file rỗng 0 byte.
+- **Vòng 2 — Kiểm định SSoT & Frontend Logic (Code & Data Integrity Verification):**
+  + Kiểm tra toàn vẹn schema JSON (`music_catalog.json`, `tai-lieu-full.json`...).
+  + Kiểm tra logic JavaScript / HTML: Bộ lọc tìm kiếm (`t.id` có trong index), Card render đầy đủ badge/thông số, số lượng đếm 100% động, link stream có query version chống cache.
+- **Vòng 3 — Kiểm định Môi trường Kép & Live Production (Dual-Environment E2E Verification):**
+  + Kiểm tra mã trạng thái `HTTP 200 OK` đồng thời tại cả máy cục bộ (`http://127.0.0.1:8899`) và máy chủ VPS Production qua Cloudflare (`https://h2dev-learn.tonymmo.com`).
+  + Trực tiếp gửi request mô phỏng người dùng: tìm kiếm thử nghiệm các mã định danh vừa thêm (`MUSIC-xxx`), kiểm tra header Content-Type `audio/mpeg` và Content-Length khớp chính xác.
+  + **Chỉ khi cả 3 vòng đều PASS 100% không còn một vết lỗi nhỏ nào thì mới được phép nhận định và nghiệm thu hoàn thành!**
 
 ---
 

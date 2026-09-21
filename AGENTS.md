@@ -22,7 +22,7 @@
 - **156 hồ sơ kênh mẫu bóc tách sâu (Canonical):** 149 kênh unique, có Voice DNA Studio 45s, gắn cờ ngôn ngữ và chỉ số bứt phá velocity.
 - **60 kịch bản Master:** Phủ kín 15 nhóm chủ đề ngách lớn nhất hệ thống.
 - **157 tài liệu & công cụ:** 78 prompt · 20 report · 23 tool · 16 list · 11 other · 5 internal-doc (gồm cẩm nang nhạc nền `NOI-BO-MUSIC-01`).
-- **43 tracks nhạc nền đã audit Gemini Multimodal & FFprobe:** 30 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng. Tích hợp Trạm phát nhạc nền Interactive Music Studio Modal.
+- **49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe:** 36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng. Tích hợp Trạm phát nhạc nền Interactive Music Studio Modal.
 - **34 ngách YouTube Faceless:** Quản lý tại `data-tabs/ngach-xanh.json` (11 ngách xanh `xanh:true`, 10 có mẫu tăng, 8 chưa đủ bằng chứng, 3 thận trọng, 2 có điều kiện).
 
 ---
@@ -139,3 +139,7 @@ Hệ thống được chuẩn hóa 13 bộ kỹ năng sản xuất video YouTube
 5. **Đồng Bộ Dữ Liệu SSoT:** Khi thêm bài học, kênh, kịch bản hoặc tài liệu:
    - Chạy `node scripts/sync-counts.js` để tự động cập nhật `counts-manifest.json` và các file tài liệu.
    - Chạy `node scripts/validate-project.js` để xác nhận toàn vẹn hệ thống trước khi push git.
+6. **Kỷ Luật Kiểm Định Đa Vòng Tuyệt Đối (Multi-Loop Verification — Tối Thiểu 3 Vòng):**
+   - Tuyệt đối không làm việc sơ sài, kiểm tra qua loa 1 lần rồi vội vã báo cáo.
+   - Phiên nào cũng phải chuẩn từng ly từng tý, đồng bộ và chuyên nghiệp.
+   - Bắt buộc kiểm tra 3 vòng: **Vòng 1 (Đĩa cứng & ffprobe)** ➔ **Vòng 2 (Code, Schema & Frontend search index)** ➔ **Vòng 3 (Dual-Environment Local + VPS HTTP 200 & Cloudflare cache-busting)**. Chỉ nghiệm thu khi cả 3 vòng đạt 100% Check-Pass!

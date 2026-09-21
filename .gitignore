@@ -17,6 +17,7 @@ inbox/
 raw-kenh-goc/
 DESIGN-IS-2026-08-22/
 .zcode/
+.agents/
 
 # 🔑 Key / secret — TUYỆT ĐỐI KHÔNG commit
 .env

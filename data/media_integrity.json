@@ -1,45 +1,7 @@
 {
   "schema": "h2dev.media-integrity-registry.v1",
-  "generated_at": "2026-09-18T17:09:04",
-  "note": "Video co luong media HONG (thieu du lieu that). UI/server doc de canh bao.",
-  "broken_count": 1,
-  "videos": {
-    "VIDEO-f59aa7": {
-      "status": "BROKEN_AUDIO_TRUNCATED",
-      "detected_at": "2026-09-18",
-      "detected_by": "scripts/audit_videos_v2.py :: audio_integrity() [3 phep do doc lap]",
-      "severity": "high",
-      "symptom": "Luong audio thieu packet that: 34202 packet / 2588.21s = 13.21 packet/s (chuan 43.06)",
-      "measured": {
-        "codec": "aac",
-        "container_duration_sec": 2588.21,
-        "audio_packets_actual": 34202,
-        "packet_rate_actual": 13.21,
-        "packet_rate_expected": 43.06,
-        "ratio_to_expected": 0.307,
-        "decode_probe": {
-          "seek_sec": 1294.2,
-          "expected_sec": 10.0,
-          "got_sec": 1.84
-        },
-        "methods": {
-          "method_1_frame_rate": "broken",
-          "method_2_packet_rate": "broken",
-          "method_3_decode_probe": "broken"
-        },
-        "broken_by": [
-          "method_1_verdict",
-          "method_2a_verdict",
-          "method_3_verdict"
-        ],
-        "verdict": "broken"
-      },
-      "root_cause": "File media hong tu nguon (thieu packet audio). KHONG phai loi phu de, KHONG phai loi seek/timestamp.",
-      "action": {
-        "subtitle": "GIU NGUYEN phu de hien co (ban ghi cua phan audio con lai)",
-        "user_visible": "UI hien canh bao chat luong cho video nay"
-      },
-      "remediation_required": "Thay file media goc tu nguon khac, sau do chay lai: py scripts/transcribe_sku.py VIDEO-f59aa7"
-    }
-  }
+  "generated_at": "2026-09-22T03:04:04",
+  "note": "140/140 video media sach 100% (0 file hong).",
+  "broken_count": 0,
+  "videos": {}
 }

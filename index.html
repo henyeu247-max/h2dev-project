@@ -2914,20 +2914,18 @@
               </div>
             </div>
 
-            <!-- Body -->
-            <div class="raw-deep-body" style="padding:1.25rem; overflow-y:auto; max-height:calc(92vh - 80px); display:flex; flex-direction:column; gap:1.25rem;">
-              
-              <!-- Quick Jump Nav Bar -->
-              <div class="raw-deep-quicknav" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; background:#111827; border:1px solid #1f2937; padding:0.55rem 0.85rem; border-radius:0.75rem; flex-shrink:0;">
-                <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;">
-                  <span style="font-size:0.75rem; color:#94a3b8; font-weight:700; flex-shrink:0;">⚡ Chuyển nhanh:</span>
-                  <button type="button" onclick="document.getElementById('raw-mission-control')?.scrollIntoView({behavior:'smooth', block:'start'})" style="font-size:0.75rem; font-weight:800; background:rgba(37,99,235,0.25); border:1px solid #3b82f6; color:#93c5fd; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer;" class="hover:bg-blue-600 hover:text-white transition">🚀 Vũ Khí Tác Chiến & Prompts</button>
-                  <button type="button" onclick="document.getElementById('raw-demo-video')?.scrollIntoView({behavior:'smooth', block:'start'})" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer;" class="hover:text-white transition">🎬 Video Demo Tuyến</button>
-                  <button type="button" onclick="document.getElementById('raw-voice-dna')?.scrollIntoView({behavior:'smooth', block:'start'})" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer;" class="hover:text-white transition">🎙️ Voice DNA Studio</button>
-                  <button type="button" onclick="document.getElementById('raw-top-videos')?.scrollIntoView({behavior:'smooth', block:'start'})" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer;" class="hover:text-white transition">📺 Top 7-10 Video Live</button>
-                </div>
-              </div>
+            <!-- Sticky Subheader Nav Bar (Cố định ở đỉnh, nằm ngay dưới Header, luôn hiển thị khi cuộn nội dung bên dưới) -->
+            <div class="raw-deep-quicknav" style="display:flex; align-items:center; gap:0.4rem; background:#0c1220; border-bottom:1px solid #1e293b; padding:0.45rem 1rem; flex-shrink:0; overflow-x:auto; white-space:nowrap; -webkit-overflow-scrolling:touch; scrollbar-width:none; z-index:10;">
+              <span style="font-size:0.75rem; color:#94a3b8; font-weight:700; flex-shrink:0;">⚡ Chuyển nhanh:</span>
+              <button type="button" data-jump="raw-mission-control" style="font-size:0.75rem; font-weight:700; background:rgba(37,99,235,0.25); border:1px solid #3b82f6; color:#93c5fd; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer; flex-shrink:0;" class="hover:bg-blue-600 hover:text-white transition">🚀 Vũ Khí Tác Chiến & Prompts</button>
+              <button type="button" data-jump="raw-demo-video" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer; flex-shrink:0;" class="hover:text-white transition">🎬 Video Demo Tuyến</button>
+              <button type="button" data-jump="raw-voice-dna" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer; flex-shrink:0;" class="hover:text-white transition">🎙️ Voice DNA Studio</button>
+              <button type="button" data-jump="raw-top-videos" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer; flex-shrink:0;" class="hover:text-white transition">📺 Top 7-10 Video Live</button>
+            </div>
 
+            <!-- Body (Cuộn độc lập bên dưới subheader nav) -->
+            <div class="raw-deep-body" style="padding:1.25rem; overflow-y:auto; flex:1; min-height:0; display:flex; flex-direction:column; gap:1.25rem;">
+              
               <!-- 4 KPI Cards -->
               <div class="raw-deep-kpis" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.75rem;">
                 <div class="raw-deep-kpi-card" style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
@@ -3875,12 +3873,31 @@
           }
         }
 
+        // Wire up sticky subheader quicknav buttons (luôn cố định ở đỉnh, chuyển tab mọi lúc)
+        modal.querySelectorAll('.raw-deep-quicknav button[data-jump]').forEach(btn => {
+          btn.onclick = () => {
+            const targetId = btn.getAttribute('data-jump');
+            const targetEl = modal.querySelector('#' + targetId) || document.getElementById(targetId);
+            if (targetEl) {
+              targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              modal.querySelectorAll('.raw-deep-quicknav button[data-jump]').forEach(b => {
+                b.style.background = '#1e293b';
+                b.style.borderColor = '#334155';
+                b.style.color = '#cbd5e1';
+                b.style.fontWeight = '600';
+              });
+              btn.style.background = 'rgba(37,99,235,0.3)';
+              btn.style.borderColor = '#3b82f6';
+              btn.style.color = '#93c5fd';
+              btn.style.fontWeight = '700';
+            }
+          };
+        });
+
         if (jumpTarget === 'mission-control') {
           setTimeout(() => {
-            const mc = modal.querySelector('#raw-mission-control') || document.getElementById('raw-mission-control');
-            if (mc) {
-              mc.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            const mcBtn = modal.querySelector('.raw-deep-quicknav button[data-jump="raw-mission-control"]');
+            if (mcBtn) mcBtn.click();
           }, 150);
         }
       };

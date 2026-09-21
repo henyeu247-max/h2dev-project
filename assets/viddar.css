@@ -667,31 +667,36 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 @media (max-width: 1024px) {
   .app-shell {
     grid-template-columns: 1fr;
-    grid-template-rows: 48px 1fr auto;
+    grid-template-rows: 1fr auto;
     height: auto;
     min-height: 100dvh;
-    overflow-x: hidden;
-    overflow-y: auto;
+    padding-top: 48px; /* Cố định bù trừ chiều cao topbar 48px */
     padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+    overflow-x: hidden;
+    overflow-y: visible;
   }
   .app-sidebar { display: none; }
   .vd-topbar {
     grid-column: 1;
     grid-row: 1;
-    height: 48px;
-    min-height: 48px;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 48px !important;
+    min-height: 48px !important;
     padding: 0 12px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
     overflow: visible;
-    position: sticky;
-    top: 0;
-    z-index: 30;
+    z-index: 40 !important;
     border-bottom: 1px solid var(--border);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(5, 5, 5, 0.94) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
   }
   .vd-top-right {
     height: 48px;
@@ -820,7 +825,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     z-index: 55;
     backdrop-filter: blur(2px);
   }
-  #panel-root { grid-column: 1; grid-row: 2; height: auto; overflow-x: hidden; overflow-y: auto; touch-action: pan-y; }
+  #panel-root { grid-column: 1; grid-row: 1; height: auto; overflow-x: hidden; overflow-y: visible; touch-action: pan-y; }
   .app-footer { grid-column: 1; grid-row: 3; padding: 10px 12px 12px; }
   html, body { height: auto; overflow-x: hidden; overflow-y: auto; overscroll-behavior-x: none; font-size: 15px; }
   .vd-top-right .btn-ghost { display: none; }
@@ -891,23 +896,23 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 /* ── Floating Action Button: Back to Top ── */
 #btn-back-to-top {
   position: fixed;
-  bottom: calc(72px + env(safe-area-inset-bottom, 0px));
-  right: 16px;
-  width: 40px;
-  height: 40px;
+  bottom: calc(66px + env(safe-area-inset-bottom, 0px));
+  right: 14px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--brand, #2563eb);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 55;
+  z-index: 45;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(12px);
+  transform: translateY(8px);
   transition: opacity 0.2s ease, transform 0.2s ease, background 0.15s ease;
 }
 #btn-back-to-top.visible {
@@ -936,7 +941,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .subniche-name { flex: 1; min-width: 0; }
 .subniche-count { font-family: var(--font-mono); font-size: 10px; padding: 1px 6px; border-radius: 4px; background: rgba(0, 0, 0, 0.3); color: var(--fg-muted); flex-shrink: 0; }
 .subniche-chip.active .subniche-count { background: rgba(255, 255, 255, 0.2); color: #fff; }
-.cl-tabbar { display: flex; align-items: center; gap: 6px; background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 5px 8px; margin-bottom: 18px; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; position: sticky; top: 52px; z-index: 15; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.cl-tabbar { display: flex; align-items: center; gap: 6px; background: rgba(11, 15, 25, 0.96); border: 1px solid #1e293b; border-radius: 12px; padding: 5px 8px; margin-bottom: 14px; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; position: sticky; top: 48px; z-index: 35; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
 .cl-tabbar::-webkit-scrollbar { display: none; }
 .cl-tab-btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 13px; border-radius: 8px; background: transparent; border: 1px solid transparent; color: #94a3b8; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s ease; flex-shrink: 0; }
 .cl-tab-btn:hover { color: #fff; background: #1e293b; }

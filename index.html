@@ -12,7 +12,7 @@
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-bugbot-v1">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-master-v3">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -481,6 +481,13 @@
           if (tab === 'kenh') { extra.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; extra.kenhQ = ''; }
           openTab(tab, extra);
         });
+      });
+      document.querySelectorAll('[data-cl-tab]').forEach(btn => {
+        btn.onclick = (e) => {
+          e.preventDefault();
+          state.clSubTab = btn.getAttribute('data-cl-tab') || 'principles';
+          render();
+        };
       });
     }
 
@@ -2306,129 +2313,162 @@
         { when: 'Giữ YPP', tone: 'text-emerald-300', title: 'Đừng để kênh chết', body: cl.loTrinhXinKiemTien.duyTriYPP }
       ];
       const scored = score.reduce((a, s) => a + s.n, 0);
+      state.clSubTab = state.clSubTab || 'principles';
+      const curTab = state.clSubTab;
+      const isAll = curTab === 'all';
+
       return `
-  <div class="mb-6">
+  <div class="mb-4">
     <p class="page-lede">Ngách không quyết định xanh/đỏ — <b class="text-white">cách làm</b> quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.</p>
   </div>
-  <div class="bento-grid mb-6">
-    ${statCard(ICONS.video, 'Video local', videos.length, `${videos.length} video · ${scored} đã điểm`, 'video')}
-    ${statCard(ICONS.doc, 'Kịch bản / tài liệu', docs.length, `${docs.length} file · catalog`, 'kichban')}
-    ${statCard(ICONS.channel, 'Kênh đối thủ', kenh.length, `${kenh.length} kênh · đã check 30 ngày`, 'kenh')}
-    ${statCard(ICONS.link, 'Nguồn reup', nguon.length, `${nguon.length} nguồn · match`, 'nguonreup')}
+
+  <!-- Sticky Segmented Sub-Tab Bar cho Chiến Lược (Chống cuộn trang dài trên điện thoại) -->
+  <div class="cl-tabbar">
+    <button type="button" class="cl-tab-btn ${curTab === 'principles' ? 'active' : ''}" data-cl-tab="principles"><span>📊</span> <span>4 Nguyên tắc</span></button>
+    <button type="button" class="cl-tab-btn ${curTab === 'workflow' ? 'active' : ''}" data-cl-tab="workflow"><span>🚀</span> <span>Quy trình A–Z (11 bước)</span></button>
+    <button type="button" class="cl-tab-btn ${curTab === 'distribution' ? 'active' : ''}" data-cl-tab="distribution"><span>📈</span> <span>Phân bổ ngách & Điểm</span></button>
+    <button type="button" class="cl-tab-btn ${curTab === 'policy' ? 'active' : ''}" data-cl-tab="policy"><span>🛡️</span> <span>YPP & Chính sách</span></button>
+    <button type="button" class="cl-tab-btn cl-tab-all ${isAll ? 'active' : ''}" data-cl-tab="all"><span>📑</span> <span>Tất cả</span></button>
   </div>
-  <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-3 mb-6">
-    ${principles.map(p => `
-      <article class="card p-4 min-w-0">
-        <div class="text-[11px] font-mono text-brand-400 font-bold">${p.tag}</div>
-        <h2 class="text-sm font-bold text-white mt-1 font-heading">${esc(p.title)}</h2>
-        <p class="text-xs text-gray-400 mt-2 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(p.body)}</p>
-      </article>`).join('')}
-  </div>
-  <section class="mb-6">
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
-      <div>
-        <h2 class="page-h2 mb-1">Quy trình xây kênh A–Z (SOP 11 bước thực chiến)</h2>
-        <p class="card-note">Quy trình vận hành trọn vẹn từ môi trường, chọn key, kịch bản, tool sản xuất đến AdSense & kháng lỗi.</p>
-      </div>
-      <div class="flex items-center gap-2 shrink-0">
-        <a href="docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-colors shadow-sm">
-          <span>👁️ Đọc trực tiếp Đề cương A–Z</span>
-          <span class="font-mono">↗</span>
-        </a>
-        <a href="docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 text-xs font-medium transition-colors">
-          <span>📄 File gốc .txt</span>
-        </a>
-      </div>
+
+  <!-- Panel 1: 4 Nguyên Tắc Cốt Lõi & Bento Metrics -->
+  <div id="cl-panel-principles" class="cl-panel" style="${(curTab === 'principles' || isAll) ? 'display:flex;' : 'display:none;'}">
+    <div class="bento-grid">
+      ${statCard(ICONS.video, 'Video local', videos.length, `${videos.length} video · ${scored} đã điểm`, 'video')}
+      ${statCard(ICONS.doc, 'Kịch bản / tài liệu', docs.length, `${docs.length} file · catalog`, 'kichban')}
+      ${statCard(ICONS.channel, 'Kênh đối thủ', kenh.length, `${kenh.length} kênh · đã check 30 ngày`, 'kenh')}
+      ${statCard(ICONS.link, 'Nguồn reup', nguon.length, `${nguon.length} nguồn · match`, 'nguonreup')}
     </div>
-    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3.5 min-w-0">
-      ${steps.map(s => `
-        <div class="card p-4 text-left min-w-0 hover:border-brand-500 flex flex-col justify-between transition-colors">
-          <div class="flex gap-3">
-            <span class="w-9 h-9 rounded-xl bg-brand-600/20 border border-brand-700/40 text-brand-300 font-black text-sm flex items-center justify-center shrink-0 font-mono">${String(s.n).padStart(2, '0')}</span>
-            <div class="min-w-0 flex-1">
-              <span class="block text-sm font-bold text-white font-heading leading-snug">${esc(s.title)}</span>
-              <span class="block text-xs text-gray-300 mt-1.5 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(s.detail)}</span>
+    <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-3">
+      ${principles.map(p => `
+        <article class="card p-4 min-w-0">
+          <div class="text-[11px] font-mono text-brand-400 font-bold">${p.tag}</div>
+          <h2 class="text-sm font-bold text-white mt-1 font-heading">${esc(p.title)}</h2>
+          <p class="text-xs text-gray-400 mt-2 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(p.body)}</p>
+        </article>`).join('')}
+    </div>
+  </div>
+
+  <!-- Panel 2: Quy trình xây kênh A-Z (SOP 11 bước) -->
+  <div id="cl-panel-workflow" class="cl-panel" style="${(curTab === 'workflow' || isAll) ? 'display:flex;' : 'display:none;'}">
+    <section>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+        <div>
+          <h2 class="page-h2 mb-1">Quy trình xây kênh A–Z (SOP 11 bước thực chiến)</h2>
+          <p class="card-note">Quy trình vận hành trọn vẹn từ môi trường, chọn key, kịch bản, tool sản xuất đến AdSense & kháng lỗi.</p>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <a href="docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-colors shadow-sm">
+            <span>👁️ Đọc trực tiếp Đề cương A–Z</span>
+            <span class="font-mono">↗</span>
+          </a>
+          <a href="docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 text-xs font-medium transition-colors">
+            <span>📄 File gốc .txt</span>
+          </a>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3.5 min-w-0">
+        ${steps.map(s => `
+          <div class="card p-4 text-left min-w-0 hover:border-brand-500 flex flex-col justify-between transition-colors">
+            <div class="flex gap-3">
+              <span class="w-9 h-9 rounded-xl bg-brand-600/20 border border-brand-700/40 text-brand-300 font-black text-sm flex items-center justify-center shrink-0 font-mono">${String(s.n).padStart(2, '0')}</span>
+              <div class="min-w-0 flex-1">
+                <span class="block text-sm font-bold text-white font-heading leading-snug">${esc(s.title)}</span>
+                <span class="block text-xs text-gray-300 mt-1.5 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(s.detail)}</span>
+              </div>
             </div>
-          </div>
-          <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center justify-between gap-2">
-            <button type="button" data-open-tab="${esc(s.tab)}"${s.kind != null ? ` data-kind="${esc(s.kind)}"` : ''}${s.promptNiche != null ? ` data-prompt-niche="${esc(s.promptNiche)}"` : ''} class="inline-flex items-center gap-1 text-[11px] text-brand-400 hover:text-brand-300 font-semibold transition-colors">
-              <span>${esc(s.tabLabel)}</span>
-              <span class="font-mono">→</span>
-            </button>
-            ${s.docPath ? `
-            <a href="${esc(s.docPath)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] text-gray-400 hover:text-brand-300 transition-colors" title="${esc(s.docTitle || 'Tài liệu SOP')}">
-              <span>📄 ${esc(s.docTitle || 'Mở SOP')}</span>
-              <span class="font-mono text-[10px]">↗</span>
-            </a>` : ''}
-          </div>
-        </div>`).join('')}
-    </div>
-  </section>
-  <h2 class="page-h2 mb-1">Lộ trình YPP 2026-2027</h2>
-  <p class="card-note mb-4">Đừng để kênh chết — giữ YPP bằng cách làm đúng format, không lạm dụng reused.</p>
-  <div class="grid lg:grid-cols-3 gap-4 mb-6">
-    ${ypp.map(y => `
-      <article class="card p-5 min-w-0">
-        <div class="text-[11px] uppercase tracking-wide ${y.tone} font-bold">${esc(y.when)}</div>
-        <h3 class="text-white font-bold mt-1 font-heading">${esc(y.title)}</h3>
-        <p class="text-sm text-gray-300 mt-2 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(y.body)}</p>
-      </article>`).join('')}
-  </div>
-  ${(cl.huongDiNoiDung && cl.huongDiNoiDung.length) ? `
-  <section class="card p-5 sm:p-6 mb-6 min-w-0">
-    <h2 class="page-h2 mb-1">Các nhóm hướng đi nội dung tiêu biểu</h2>
-    <p class="text-xs text-gray-400 mb-3">Các nhóm đề tài khảo sát tham chiếu từ dữ liệu kênh đối thủ và kho bài học. Luôn đo lại bằng vidIQ trước khi bấm máy.</p>
-    <div class="grid md:grid-cols-3 gap-3">${cl.huongDiNoiDung.map(h => `
-      <button type="button" data-open-tab="${esc(h.tab || 'ngachxanh')}" class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-3 min-w-0 bg-ink-800">
-        <div class="text-[11px] font-mono text-brand-400 font-bold">#${h.hang} · ${esc(h.pack)}</div>
-        <div class="text-sm font-bold text-white mt-1 font-heading">${esc(h.ngach)}</div>
-        <div class="text-xs text-gray-400 mt-2 leading-relaxed break-words">${esc(h.lyDo)}</div>
-      </button>`).join('')}</div>
-    ${cl.cachNoiTab ? `<ul class="mt-4 space-y-1 text-[11px] text-gray-400">${cl.cachNoiTab.map(s => '<li>· ' + esc(s) + '</li>').join('')}</ul>` : ''}
-  </section>`: ''}
-  ${(cl.taiSanNoiBo && cl.taiSanNoiBo.length) ? `
-  <section class="card p-5 sm:p-6 mb-6 min-w-0">
-    <h2 class="page-h2 mb-1">Tài sản ngoài đã đồng bộ vào H2DEV</h2>
-    <p class="text-xs text-gray-500 mb-3">Match cái đã có · gôm cái chưa có. Gốc ở Y:\\YTB không xóa. Chi tiết: <a class="text-brand-400 hover:text-brand-300" href="docs/NOI-BO/README.md" target="_blank" rel="noopener">docs/NOI-BO/README.md</a></p>
-    <div class="grid sm:grid-cols-2 xl:grid-cols-5 gap-3">${cl.taiSanNoiBo.map(t => `
-      <button type="button" data-open-tab="${esc(t.tab || 'kichban')}"${t.kind != null ? ` data-kind="${esc(t.kind)}"` : ''} class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-3 min-w-0">
-        <div class="text-[26px] font-extrabold text-white leading-none">${t.so || '—'}</div>
-        <div class="text-sm font-bold text-white mt-1">${esc(t.loai)}</div>
-        <div class="text-[11px] text-gray-500 mt-1 font-mono break-all">${esc(t.path || '')}</div>
-      </button>`).join('')}</div>
-  </section>`: ''}
-  <div class="grid lg:grid-cols-2 gap-4 mb-6">
-    <section class="card p-5 sm:p-6 min-w-0">
-      <h2 class="page-h2 mb-1">Điểm số kho H2DEV</h2>
-      <p class="text-[11px] text-gray-500 mb-3">Đếm live từ videos.json · ${scored}/${videos.length}</p>
-      <div class="space-y-1.5">
-        ${score.map(s => `
-          <button type="button" data-open-niche="${esc(s.key)}" class="w-full flex items-center gap-3 min-w-0 text-left rounded-xl px-2 py-1.5 hover:bg-ink-700/60">
-            <span class="w-8 text-right text-sm font-extrabold text-white shrink-0">${s.n}</span>
-            <span class="min-w-0 flex-1">
-              <span class="block text-sm text-gray-200 truncate">${esc(s.label)}</span>
-              <span class="block text-[11px] text-gray-500 truncate">${esc(s.note)}</span>
-            </span>
-            <span class="text-[11px] text-brand-400 shrink-0">Xem →</span>
-          </button>`).join('')}
+            <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center justify-between gap-2">
+              <button type="button" data-open-tab="${esc(s.tab)}"${s.kind != null ? ` data-kind="${esc(s.kind)}"` : ''}${s.promptNiche != null ? ` data-prompt-niche="${esc(s.promptNiche)}"` : ''} class="inline-flex items-center gap-1 text-[11px] text-brand-400 hover:text-brand-300 font-semibold transition-colors">
+                <span>${esc(s.tabLabel)}</span>
+                <span class="font-mono">→</span>
+              </button>
+              ${s.docPath ? `
+              <a href="${esc(s.docPath)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] text-gray-400 hover:text-brand-300 transition-colors" title="${esc(s.docTitle || 'Tài liệu SOP')}">
+                <span>📄 ${esc(s.docTitle || 'Mở SOP')}</span>
+                <span class="font-mono text-[10px]">↗</span>
+              </a>` : ''}
+            </div>
+          </div>`).join('')}
       </div>
     </section>
-    <section class="card p-5 sm:p-6 min-w-0">
-      <h2 class="page-h2 mb-3">Checklist trước khi đăng</h2>
-      <div class="space-y-2 text-sm text-gray-300">${cl.checklistTruocKhiDang.map((s, i) => {
-          const id = 'cl-' + i;
-          return `<label class="flex items-start gap-2 break-words [overflow-wrap:anywhere] min-w-0">
- <input type="checkbox" data-check-id="${id}" class="rounded mt-1 shrink-0" ${checks[id] ? 'checked' : ''} aria-label="Checklist ${i + 1}" aria-checked="${checks[id] ? 'true' : 'false'}">
-          <span class="min-w-0">${esc(s)}</span>
-        </label>`;
-        }).join('')}</div>
-    </section>
   </div>
-  <section class="card p-5 sm:p-6">
-    <h2 class="page-h2 mb-3">Chính sách YouTube phải nhớ</h2>
-    <ul class="space-y-2 text-sm text-gray-300">${nx.thongTinChinhSach2026.map(s => `<li class="break-words [overflow-wrap:anywhere]">${esc(s)}</li>`).join('')}</ul>
-    <p class="text-xs text-gray-500 mt-4">${esc(cl.nguonDuLieu)}</p>
-  </section>`;
+
+  <!-- Panel 3: Phân Bổ Ngách, Điểm Số & Hướng Đi Tiêu Biểu -->
+  <div id="cl-panel-distribution" class="cl-panel" style="${(curTab === 'distribution' || isAll) ? 'display:flex;' : 'display:none;'}">
+    <div class="grid lg:grid-cols-2 gap-4">
+      <section class="card p-5 sm:p-6 min-w-0">
+        <h2 class="page-h2 mb-1">Điểm số kho H2DEV</h2>
+        <p class="text-[11px] text-gray-500 mb-3">Đếm live từ videos.json · ${scored}/${videos.length}</p>
+        <div class="space-y-1.5">
+          ${score.map(s => `
+            <button type="button" data-open-niche="${esc(s.key)}" class="w-full flex items-center gap-3 min-w-0 text-left rounded-xl px-2 py-1.5 hover:bg-ink-700/60">
+              <span class="w-8 text-right text-sm font-extrabold text-white shrink-0">${s.n}</span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-sm text-gray-200 truncate">${esc(s.label)}</span>
+                <span class="block text-[11px] text-gray-500 truncate">${esc(s.note)}</span>
+              </span>
+              <span class="text-[11px] text-brand-400 shrink-0">Xem →</span>
+            </button>`).join('')}
+        </div>
+      </section>
+      ${(cl.huongDiNoiDung && cl.huongDiNoiDung.length) ? `
+      <section class="card p-5 sm:p-6 min-w-0">
+        <h2 class="page-h2 mb-1">Các nhóm hướng đi nội dung tiêu biểu</h2>
+        <p class="text-xs text-gray-400 mb-3">Các nhóm đề tài khảo sát tham chiếu từ dữ liệu kênh đối thủ và kho bài học. Luôn đo lại bằng vidIQ trước khi bấm máy.</p>
+        <div class="grid sm:grid-cols-2 gap-2.5">${cl.huongDiNoiDung.map(h => `
+          <button type="button" data-open-tab="${esc(h.tab || 'ngachxanh')}" class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-2.5 min-w-0 bg-ink-800">
+            <div class="text-[11px] font-mono text-brand-400 font-bold">#${h.hang} · ${esc(h.pack)}</div>
+            <div class="text-sm font-bold text-white mt-0.5 font-heading">${esc(h.ngach)}</div>
+            <div class="text-xs text-gray-400 mt-1.5 leading-relaxed break-words">${esc(h.lyDo)}</div>
+          </button>`).join('')}</div>
+        ${cl.cachNoiTab ? `<ul class="mt-3 space-y-1 text-[11px] text-gray-400">${cl.cachNoiTab.map(s => '<li>· ' + esc(s) + '</li>').join('')}</ul>` : ''}
+      </section>`: ''}
+    </div>
+    ${(cl.taiSanNoiBo && cl.taiSanNoiBo.length) ? `
+    <section class="card p-5 sm:p-6 min-w-0">
+      <h2 class="page-h2 mb-1">Tài sản ngoài đã đồng bộ vào H2DEV</h2>
+      <p class="text-xs text-gray-500 mb-3">Match cái đã có · gôm cái chưa có. Gốc ở Y:\\YTB không xóa. Chi tiết: <a class="text-brand-400 hover:text-brand-300" href="docs/NOI-BO/README.md" target="_blank" rel="noopener">docs/NOI-BO/README.md</a></p>
+      <div class="grid sm:grid-cols-2 xl:grid-cols-5 gap-3">${cl.taiSanNoiBo.map(t => `
+        <button type="button" data-open-tab="${esc(t.tab || 'kichban')}"${t.kind != null ? ` data-kind="${esc(t.kind)}"` : ''} class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-3 min-w-0">
+          <div class="text-[26px] font-extrabold text-white leading-none">${t.so || '—'}</div>
+          <div class="text-sm font-bold text-white mt-1">${esc(t.loai)}</div>
+          <div class="text-[11px] text-gray-500 mt-1 font-mono break-all">${esc(t.path || '')}</div>
+        </button>`).join('')}</div>
+    </section>`: ''}
+  </div>
+
+  <!-- Panel 4: Lộ Trình YPP 2026-2027, Checklist & Chính Sách -->
+  <div id="cl-panel-policy" class="cl-panel" style="${(curTab === 'policy' || isAll) ? 'display:flex;' : 'display:none;'}">
+    <div>
+      <h2 class="page-h2 mb-1">Lộ trình YPP 2026-2027</h2>
+      <p class="card-note mb-3">Đừng để kênh chết — giữ YPP bằng cách làm đúng format, không lạm dụng reused.</p>
+      <div class="grid lg:grid-cols-3 gap-3.5 mb-4">
+        ${ypp.map(y => `
+          <article class="card p-4 min-w-0">
+            <div class="text-[11px] uppercase tracking-wide ${y.tone} font-bold">${esc(y.when)}</div>
+            <h3 class="text-white font-bold mt-1 font-heading">${esc(y.title)}</h3>
+            <p class="text-sm text-gray-300 mt-2 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(y.body)}</p>
+          </article>`).join('')}
+      </div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-4">
+      <section class="card p-5 sm:p-6 min-w-0">
+        <h2 class="page-h2 mb-3">Checklist trước khi đăng</h2>
+        <div class="space-y-2 text-sm text-gray-300">${cl.checklistTruocKhiDang.map((s, i) => {
+            const id = 'cl-' + i;
+            return `<label class="flex items-start gap-2 break-words [overflow-wrap:anywhere] min-w-0">
+              <input type="checkbox" data-check-id="${id}" class="rounded mt-1 shrink-0" ${checks[id] ? 'checked' : ''} aria-label="Checklist ${i + 1}" aria-checked="${checks[id] ? 'true' : 'false'}">
+              <span class="min-w-0">${esc(s)}</span>
+            </label>`;
+          }).join('')}</div>
+      </section>
+      <section class="card p-5 sm:p-6 min-w-0">
+        <h2 class="page-h2 mb-3">Chính sách YouTube phải nhớ</h2>
+        <ul class="space-y-2 text-sm text-gray-300">${nx.thongTinChinhSach2026.map(s => `<li class="break-words [overflow-wrap:anywhere]">${esc(s)}</li>`).join('')}</ul>
+        <p class="text-xs text-gray-500 mt-4">${esc(cl.nguonDuLieu)}</p>
+      </section>
+    </div>
+  </div>`;
     }
 
     let searchDebounceTimer = null;
@@ -2775,6 +2815,27 @@
           resetScrollToTop();
         };
       });
+
+      // Floating Back-to-Top FAB controller
+      const btt = document.getElementById('btn-back-to-top');
+      if (btt) {
+        btt.onclick = (e) => {
+          e.preventDefault();
+          resetScrollToTop();
+        };
+        const handleScroll = () => {
+          const pr = document.getElementById('panel-root');
+          const top = Math.max(window.scrollY || 0, document.documentElement.scrollTop || 0, (pr && pr.scrollTop) || 0);
+          if (top > 320) {
+            btt.classList.add('visible');
+          } else {
+            btt.classList.remove('visible');
+          }
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        const pr = document.getElementById('panel-root');
+        if (pr) pr.addEventListener('scroll', handleScroll, { passive: true });
+      }
 
       let syncTimer = null;
       function syncRender() {
@@ -4434,7 +4495,13 @@
       });
     })();
   </script>
-  <script src="assets/music_player_modal.js?v=20260921-perf2"></script>
+
+  <!-- Floating Action Button: Back to Top (Cuộn lên đầu trang mượt mà) -->
+  <button id="btn-back-to-top" type="button" aria-label="Cuộn lên đầu trang" title="Cuộn lên đầu trang">
+    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <script src="assets/music_player_modal.js?v=20260921-master-v3"></script>
 </body>
 
 </html>

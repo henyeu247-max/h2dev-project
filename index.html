@@ -12,7 +12,7 @@
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-mobile-tabs-v2">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-perf2">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -313,9 +313,11 @@
       { id: 'chienluoc', icon: ICONS.strategy, name: 'Chiến lược', short: 'Chiến lược' }
     ];
 
+    const APP_BUILD_VER = '20260921-v49';
     async function loadJSON(p) {
       if (!CAT[p]) {
-        const r = await fetch(p + (p.includes('?') ? '&' : '?') + '_t=' + Date.now(), { cache: 'no-store' });
+        const sep = p.includes('?') ? '&' : '?';
+        const r = await fetch(p + sep + 'v=' + APP_BUILD_VER);
         if (!r.ok) throw new Error(`Không tải được ${p} (${r.status})`);
         CAT[p] = await r.json();
       }
@@ -409,8 +411,23 @@
       if (x === 'META') return ['badge-muted', 'META'];
       return ['badge-muted', String(x || '')];
     }
+    function resetScrollToTop() {
+      try {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      } catch (e) {
+        window.scrollTo(0, 0);
+      }
+      const pr = document.getElementById('panel-root');
+      if (pr) pr.scrollTop = 0;
+      const cnt = document.getElementById('content');
+      if (cnt) cnt.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
+
     function openTab(id, extra, pushHistory = true) {
       state.tab = id || 'tongquan';
+      resetScrollToTop();
       // Nếu mở tab Video mà không kèm danh sách SKU cụ thể, xóa sạch mọi bộ lọc ẩn
       // còn sót từ tab trước (ví dụ skuFilter từ Ngách xanh) để không rơi vào trạng thái 0/tổng.
       if (state.tab === 'video' && !(extra && extra.skuFilter)) {
@@ -2665,6 +2682,8 @@
           case 'chienluoc': html = await renderChienLuoc(); break;
         }
         el.innerHTML = html;
+        resetScrollToTop();
+        requestAnimationFrame(() => resetScrollToTop());
         const titleEl = document.getElementById('page-title');
         const tabMeta = TABS.find(t => t.id === state.tab);
         if (titleEl && tabMeta) titleEl.textContent = tabMeta.name;
@@ -2685,13 +2704,19 @@
         document.querySelectorAll('[data-check-id]').forEach(box => {
           box.onchange = () => { saveCheck(box.getAttribute('data-check-id'), box.checked); box.setAttribute('aria-checked', box.checked ? 'true' : 'false'); };
         });
-        const [vidsTab, kenh, docs] = await Promise.all([
-          loadJSON("data-tabs/videos.json").catch(function(){return [];}),
-          loadJSON("data-tabs/kenh-mau.json").catch(function(){return [];}),
-          loadJSON("data-tabs/tai-lieu-full.json").catch(function(){return [];})
-        ]);
-        const videos = Array.isArray(vidsTab) ? vidsTab : (vidsTab && vidsTab.videos) || [];
-        document.getElementById("hd-stats").textContent = videos.length + " video · " + docs.length + " TL · " + kenh.length + " kênh";
+        if (!window._cachedStatsText) {
+          try {
+            const [vidsTab, kenh, docs] = await Promise.all([
+              loadJSON("data-tabs/videos.json").catch(function(){return [];}),
+              loadJSON("data-tabs/kenh-mau.json").catch(function(){return [];}),
+              loadJSON("data-tabs/tai-lieu-full.json").catch(function(){return [];})
+            ]);
+            const videos = Array.isArray(vidsTab) ? vidsTab : (vidsTab && vidsTab.videos) || [];
+            window._cachedStatsText = videos.length + " video · " + docs.length + " TL · " + kenh.length + " kênh";
+          } catch(e) {}
+        }
+        const hdEl = document.getElementById("hd-stats");
+        if (hdEl && window._cachedStatsText) hdEl.textContent = window._cachedStatsText;
       } catch (error) {
         el.innerHTML = `<div class="card p-6 border-red-800" role="alert"><h1 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h1><p class="text-gray-300">${esc(error.message)}</p><button type="button" class="mt-4 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm" onclick="render()">Thử lại</button></div>`;
       } finally { el.setAttribute("aria-busy", "false"); }
@@ -2710,6 +2735,19 @@
       await hydrateAdminState();
       renderTabs();
       await render();
+      resetScrollToTop();
+
+      // Click logo thương hiệu để về trang chủ Tổng quan & cuộn lên đầu trang
+      document.querySelectorAll('.vd-brand').forEach(brandEl => {
+        brandEl.style.cursor = 'pointer';
+        brandEl.title = 'Về trang chủ Tổng quan';
+        brandEl.onclick = (e) => {
+          e.preventDefault();
+          openTab('tongquan');
+          resetScrollToTop();
+        };
+      });
+
       let syncTimer = null;
       function syncRender() {
         clearTimeout(syncTimer);
@@ -2727,6 +2765,7 @@
         state.nicheFilter = qp.get('niche') || '';
         renderTabs();
         render();
+        resetScrollToTop();
       });
       window.addEventListener('pageshow', (e) => { if (e.persisted) syncRender(); });
       window.addEventListener('visibilitychange', () => { if (!document.hidden) syncRender(); });
@@ -4335,7 +4374,7 @@
       });
     })();
   </script>
-  <script src="assets/music_player_modal.js?v=20260921-mobile-v1"></script>
+  <script src="assets/music_player_modal.js?v=20260921-perf2"></script>
 </body>
 
 </html>

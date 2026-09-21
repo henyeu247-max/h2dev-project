@@ -45,6 +45,9 @@ const COMPRESSIBLE_EXTS = new Set([
   '.html', '.css', '.js', '.json', '.svg', '.csv', '.tsv', '.txt', '.md'
 ]);
 
+// In-memory RAM cache cho file nén Gzip (giảm 100% disk I/O và CPU compression lặp lại)
+const GZIP_CACHE = new Map();
+
 function sendFile(req, res, full, mime, rangeHeader, isHead = false){
   fs.stat(full, (err, st)=>{
     if(err || !st.isFile()){
@@ -80,8 +83,20 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
       'Content-Disposition': 'inline',
     };
-    if (mime === 'application/json' || full.endsWith('.json') || full.endsWith('.html')) {
-      headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
+
+    const etag = `W/"${st.mtimeMs.toString(36)}-${st.size.toString(36)}"`;
+    headers['ETag'] = etag;
+
+    // Cache-Control thông minh: Tăng tốc độ CDN & Trình duyệt
+    if (full.endsWith('.html')) {
+      headers['Cache-Control'] = 'no-cache, must-revalidate';
+    } else if (full.includes('data-tabs') || (full.includes('data') && full.endsWith('.json'))) {
+      // Data tabs và catalog: Cho phép Cloudflare Edge cache 120s, stale-while-revalidate 600s
+      headers['Cache-Control'] = 'public, max-age=120, stale-while-revalidate=600';
+    } else if (full.endsWith('.js') || full.endsWith('.css') || full.endsWith('.woff2') || full.endsWith('.svg') || full.endsWith('.png') || full.endsWith('.jpg') || full.endsWith('.webp')) {
+      headers['Cache-Control'] = 'public, max-age=86400, stale-while-revalidate=604800';
+    } else if (mime === 'application/json') {
+      headers['Cache-Control'] = 'no-cache, must-revalidate';
     }
 
     if(status===206){
@@ -97,14 +112,51 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       return;
     }
 
+    // 304 Not Modified check
+    const ifNoneMatch = req && req.headers ? req.headers['if-none-match'] : null;
+    if (ifNoneMatch && ifNoneMatch === etag) {
+      res.writeHead(304, headers);
+      res.end();
+      return;
+    }
+
     // Standard 200 GET: Check if client accepts Gzip and file is compressible text/data
     const acceptEncoding = req && req.headers ? (req.headers['accept-encoding'] || '') : '';
-    const canGzip = !rangeHeader && COMPRESSIBLE_EXTS.has(ext) && acceptEncoding.includes('gzip');
+    const canGzip = COMPRESSIBLE_EXTS.has(ext) && acceptEncoding.includes('gzip');
 
     headers['Vary'] = 'Accept-Encoding';
 
     if (canGzip) {
       headers['Content-Encoding'] = 'gzip';
+      // Fast path: In-memory Gzip buffer cache cho files < 5MB (trả về trong 0.1ms)
+      if (total < 5 * 1024 * 1024) {
+        const cached = GZIP_CACHE.get(full);
+        if (cached && cached.mtimeMs === st.mtimeMs) {
+          headers['Content-Length'] = cached.buffer.length;
+          res.writeHead(200, headers);
+          if (isHead) { res.end(); return; }
+          res.end(cached.buffer);
+          return;
+        }
+        fs.readFile(full, (readErr, rawBuf) => {
+          if (readErr) {
+            if (!res.headersSent) { res.writeHead(500); res.end('Read Error'); }
+            return;
+          }
+          zlib.gzip(rawBuf, { level: 6 }, (gzErr, gzBuf) => {
+            if (gzErr) {
+              if (!res.headersSent) { res.writeHead(500); res.end('Gzip Error'); }
+              return;
+            }
+            GZIP_CACHE.set(full, { mtimeMs: st.mtimeMs, buffer: gzBuf });
+            headers['Content-Length'] = gzBuf.length;
+            res.writeHead(200, headers);
+            if (isHead) { res.end(); return; }
+            res.end(gzBuf);
+          });
+        });
+        return;
+      }
       res.writeHead(200, headers);
       if (isHead) { res.end(); return; }
       const rawStream = fs.createReadStream(full);

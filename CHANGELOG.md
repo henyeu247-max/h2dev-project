@@ -24,6 +24,12 @@
 - Rebuild SQLite master database: `data/h2dev_master.db` (2014 FTS5 entries).
 - Pass `validate-project.js`, pass `deep-ui-acceptance.js` (11/11 pass), pass `find-404.js` (0 lỗi).
 
+### 6. Bổ Sung 23/23 Ảnh Raw Kênh Mẫu (Đạt 156/156 Hồ Sơ Có Ảnh Offline 100%)
+- Dùng Playwright chụp trực tiếp 23 ảnh snapshot giao diện thực tế kênh YouTube độ phân giải 1280x720, lưu trữ song song vào `raw-kenh-goc/` và `assets/raw-kenh/`.
+- Cập nhật thông số kỹ thuật (dimensions, sizeBytes, format, sha256) cho 23 records (RAW-143 đến RAW-165) trong `data-tabs/raw-kenh-mau.json`.
+- Cột mốc: `rawRecordsWithoutImage` chính thức về 0 (156/156 có ảnh, 0 record rỗng).
+- Đồng bộ SCP 23 ảnh sang VPS Production.
+
 ## 2026-09-21 — 🚀 NÂNG CẤP BƯỚC NGOẶT: HOÀN THIỆN ĐỦ FILL 13 SKILLS ĐA NGÁCH + NÂNG CẤP YT-DLP 2026.8.19 + KHO 8 REPO REVERSE-ENGINEERING + 26 TOOLS MCP LOCAL $0.00
 
 ### 1. Phân rã 156 Raw Kênh thành 12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm)

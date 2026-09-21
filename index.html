@@ -12,7 +12,7 @@
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-perf2">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-subniche-pro1">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -2052,8 +2052,23 @@
           <div class="text-[11px] text-gray-400 font-semibold">↳ Ngách trong nhóm <span class="text-brand-300">${esc(state.rawGroup)}</span> (${inGroup.length} ngách · ${groupCounts[state.rawGroup]} kênh)</div>
           <button type="button" data-raw-niche="" class="text-[11px] font-semibold ${!currentNiche ? 'text-brand-300' : 'text-gray-400 hover:text-gray-200'} transition-colors shrink-0">Xem tất cả nhóm này</button>
         </div>
-        <div class="flex flex-wrap gap-1.5">
-          ${inGroup.map(n => `<button type="button" data-raw-niche="${esc(n)}" class="filter-btn ${currentNiche === n ? 'active' : ''}" style="font-size:11px;" title="${esc(n)}">${esc(n)} · ${nicheCounts[n]}</button>`).join('')}
+
+        <!-- Mobile-friendly Native Dropdown Selector (Chọn ngách chi tiết nhanh, 100% hiển thị đủ chữ) -->
+        <div class="subniche-select-wrap">
+          <select id="raw-subniche-select" class="subniche-select">
+            <option value="">-- Tất cả ${inGroup.length} ngách trong nhóm (${groupCounts[state.rawGroup]} kênh) --</option>
+            ${inGroup.map(n => `<option value="${esc(n)}" ${currentNiche === n ? 'selected' : ''}>${esc(n)} (${nicheCounts[n]} kênh)</option>`).join('')}
+          </select>
+        </div>
+
+        <!-- Subniche Chip List: Co giãn thông minh, text xuống dòng tự nhiên, không bao giờ bị cắt chữ hay tràn màn hình -->
+        <div class="subniche-grid">
+          ${inGroup.map(n => `
+            <button type="button" data-raw-niche="${esc(n)}" class="subniche-chip ${currentNiche === n ? 'active' : ''}" title="${esc(n)} — ${nicheCounts[n]} kênh">
+              <span class="subniche-name">${esc(n)}</span>
+              <span class="subniche-count">${nicheCounts[n]}</span>
+            </button>
+          `).join('')}
         </div>
       </div>`;
       })() : ''}
@@ -2596,6 +2611,14 @@
       if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; render(); }; }
       document.querySelectorAll('[data-raw-group]').forEach(btn => { btn.onclick = () => { const g = btn.getAttribute('data-raw-group') || ''; state.rawGroup = (state.rawGroup === g) ? '' : g; state.rawNiche = ''; state.rawPage = 1; render(); }; });
       document.querySelectorAll('[data-raw-niche]').forEach(btn => { btn.onclick = () => { state.rawNiche = btn.getAttribute('data-raw-niche') || ''; state.rawPage = 1; render(); }; });
+      const subSelect = document.getElementById('raw-subniche-select');
+      if (subSelect) {
+        subSelect.onchange = () => {
+          state.rawNiche = subSelect.value;
+          state.rawPage = 1;
+          render();
+        };
+      }
       const rfToggle = document.querySelector('[data-raw-filters-toggle]'); if (rfToggle) rfToggle.onclick = () => { state.rawFiltersExpanded = !state.rawFiltersExpanded; render(); };
 
       document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; render(); }; });

@@ -12,7 +12,7 @@
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-master-v3">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-pin-nav-v4">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -2318,17 +2318,17 @@
       const isAll = curTab === 'all';
 
       return `
-  <div class="mb-4">
-    <p class="page-lede">Ngách không quyết định xanh/đỏ — <b class="text-white">cách làm</b> quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.</p>
-  </div>
-
-  <!-- Sticky Segmented Sub-Tab Bar cho Chiến Lược (Chống cuộn trang dài trên điện thoại) -->
+  <!-- Fixed/Sticky Segmented Sub-Tab Bar cho Chiến Lược (Nằm ngay sát mép dưới topbar, luôn hiện không cần cuộn) -->
   <div class="cl-tabbar">
     <button type="button" class="cl-tab-btn ${curTab === 'principles' ? 'active' : ''}" data-cl-tab="principles"><span>📊</span> <span>4 Nguyên tắc</span></button>
-    <button type="button" class="cl-tab-btn ${curTab === 'workflow' ? 'active' : ''}" data-cl-tab="workflow"><span>🚀</span> <span>Quy trình A–Z (11 bước)</span></button>
-    <button type="button" class="cl-tab-btn ${curTab === 'distribution' ? 'active' : ''}" data-cl-tab="distribution"><span>📈</span> <span>Phân bổ ngách & Điểm</span></button>
+    <button type="button" class="cl-tab-btn ${curTab === 'workflow' ? 'active' : ''}" data-cl-tab="workflow"><span>🚀</span> <span>Quy trình A–Z</span></button>
+    <button type="button" class="cl-tab-btn ${curTab === 'distribution' ? 'active' : ''}" data-cl-tab="distribution"><span>📈</span> <span>Phân bổ ngách</span></button>
     <button type="button" class="cl-tab-btn ${curTab === 'policy' ? 'active' : ''}" data-cl-tab="policy"><span>🛡️</span> <span>YPP & Chính sách</span></button>
     <button type="button" class="cl-tab-btn cl-tab-all ${isAll ? 'active' : ''}" data-cl-tab="all"><span>📑</span> <span>Tất cả</span></button>
+  </div>
+
+  <div class="mb-3">
+    <p class="page-lede">Ngách không quyết định xanh/đỏ — <b class="text-white">cách làm</b> quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.</p>
   </div>
 
   <!-- Panel 1: 4 Nguyên Tắc Cốt Lõi & Bento Metrics -->

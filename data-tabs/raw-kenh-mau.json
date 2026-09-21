@@ -28450,7 +28450,7 @@
     },
     {
       "id": "RAW-143",
-      "fileName": null,
+      "fileName": "RAW-143_Song_Khoe_Khi_Ve_Gia.jpg",
       "channel": {
         "channelId": "UCLKb-XEfimm39VGrTG6YXsA",
         "title": "Sống Khoẻ Khi Về Già",
@@ -28556,11 +28556,18 @@
         "latencySec": 4.77,
         "analyzedAt": "2026-09-16T15:07:53.802018+00:00",
         "source": "rss_clean"
+      },
+      "sha256": "d1ce82714d6150ac7b428234118030cf77617fbc3415357e49bd3d369007d7d5",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 173597,
+        "sizeKb": "169.5",
+        "format": "JPEG"
       }
     },
     {
       "id": "RAW-144",
-      "fileName": null,
+      "fileName": "RAW-144_Song_Lau_Song_Khoe_360.jpg",
       "channel": {
         "channelId": "UCze2ASXUyZ1ubwLYJvuYWEQ",
         "title": "Sống Lâu Sống Khỏe 360",
@@ -28665,11 +28672,18 @@
         "latencySec": 4.39,
         "analyzedAt": "2026-09-16T15:07:47.842056+00:00",
         "source": "rss_clean"
+      },
+      "sha256": "55b20650697dccb8e551b69f209f8c9275bec13ee82e5e760bbe999c7cb5d761",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 186452,
+        "sizeKb": "182.1",
+        "format": "JPEG"
       }
     },
     {
       "id": "RAW-145",
-      "fileName": null,
+      "fileName": "RAW-145_Suc_Khoe_ong_Y.jpg",
       "channel": {
         "channelId": "UCfVLuf8bqORyZeUjmGVeArw",
         "title": "Sức Khỏe Đông Y",
@@ -28774,11 +28788,18 @@
         "latencySec": 5.99,
         "analyzedAt": "2026-09-16T15:07:51.438627+00:00",
         "source": "rss_clean"
+      },
+      "sha256": "b3a84123ab64f7e926eef05215d33e71a3be9d7110d8f95b2c4cb3b95b75f0d4",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 147587,
+        "sizeKb": "144.1",
+        "format": "JPEG"
       }
     },
     {
       "id": "RAW-146",
-      "fileName": null,
+      "fileName": "RAW-146_Song_Khoe_Tung_Ngay.jpg",
       "channel": {
         "channelId": "UClDnSL-WytGI6FnwMlAgiGQ",
         "title": "Sống Khỏe Từng Ngày",
@@ -28883,11 +28904,18 @@
         "latencySec": 4.67,
         "analyzedAt": "2026-09-16T15:07:49.202504+00:00",
         "source": "rss_clean"
+      },
+      "sha256": "72ede5f73e58c454c5f42ae772bdf329e62da6416e1b3be9cd70daad99752fec",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 169617,
+        "sizeKb": "165.6",
+        "format": "JPEG"
       }
     },
     {
       "id": "RAW-147",
-      "fileName": null,
+      "fileName": "RAW-147_Su_Gia_Suc_Khoe.jpg",
       "channel": {
         "channelId": "UC9n4Doub6N6x3bvzKKTNbOA",
         "title": "Sứ Giả Sức Khỏe",
@@ -28992,11 +29020,18 @@
         "latencySec": 5.56,
         "analyzedAt": "2026-09-16T15:07:49.106171+00:00",
         "source": "rss_clean"
+      },
+      "sha256": "971e14d9cd296e8c75b94d037492d5eb0b0070b141b213dfd01880f549b64558",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 169815,
+        "sizeKb": "165.8",
+        "format": "JPEG"
       }
     },
     {
       "id": "RAW-148",
-      "fileName": null,
+      "fileName": "RAW-148_Thuat_Phong_Thuy_Audio.jpg",
       "channel": {
         "channelId": "UCveeSaU0rGzqe4Pg7LHgLtw",
         "title": "Thuật Phong Thủy Audio",
@@ -29101,11 +29136,18 @@
         "latencySec": 4.4,
         "analyzedAt": "2026-09-16T15:07:47.746893+00:00",
         "source": "rss_clean"
+      },
+      "sha256": "14d411d3670991c79afdf98ba473c1c77c198a8bde65213a3d75f7a9a5d5d223",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 140063,
+        "sizeKb": "136.8",
+        "format": "JPEG"
       }
     },
     {
       "id": "RAW-149",
-      "fileName": null,
+      "fileName": "RAW-149_Meo_Phong_Thuy.jpg",
       "channel": {
         "channelId": "UC0ScMBbEv02xieZGC9KY21Q",
         "title": "Mẹo Phong Thủy",
@@ -29210,11 +29252,18 @@
         "latencySec": 5.13,
         "analyzedAt": "2026-09-16T15:07:49.202504+00:00",
         "source": "rss_clean"
+      },
+      "sha256": "375fe79b7e5669300752dbec9115ca821b9fb155187cf8064ab47bee5e52774f",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 210070,
+        "sizeKb": "205.1",
+        "format": "JPEG"
       }
     },
     {
       "id": "RAW-150",
-      "fileName": null,
+      "fileName": "RAW-150_PHONG_THUY_TIEM_TANG.jpg",
       "channel": {
         "channelId": "UCANf_IBYgP8SIJIowmfyhwA",
         "title": "PHONG THỦY TIỀM TÀNG",
@@ -29319,11 +29368,18 @@
         "latencySec": 4.26,
         "analyzedAt": "2026-09-16T15:07:47.842056+00:00",
         "source": "rss_clean"
+      },
+      "sha256": "e413240db142d1afb295f371a32eb372ef3970630b343fd1f490bd394797cc51",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 193668,
+        "sizeKb": "189.1",
+        "format": "JPEG"
       }
     },
     {
       "id": "RAW-151",
-      "fileName": null,
+      "fileName": "RAW-151_Science_Sun.jpg",
       "channel": {
         "channelId": "UCqZpuhhJC5G4kfvBG7MTAXg",
         "title": "Science Sun",
@@ -29433,11 +29489,18 @@
         "analyzedAt": "2026-09-16T15:08:03.462418+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg"
+      "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg",
+      "sha256": "d35d7584ba304eae20519c0df29a4829d213d7b5731ea9ddd7d7ac3a066e7342",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 27752,
+        "sizeKb": "27.1",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-152",
-      "fileName": null,
+      "fileName": "RAW-152_honobono_radio1.jpg",
       "channel": {
         "channelId": "UCoEvqxj4MXmG71XAbWyAkWQ",
         "title": "ほのぼのラジオ",
@@ -29543,11 +29606,18 @@
         "analyzedAt": "2026-09-16T15:08:01.122562+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/1-77f45e5ddb.jpg"
+      "avatar": "assets/avatars/1-77f45e5ddb.jpg",
+      "sha256": "e10e4fe476788b3f593ac5dd9bde1a1cf0705e9727012d5a08475262969a8199",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 148716,
+        "sizeKb": "145.2",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-153",
-      "fileName": null,
+      "fileName": "RAW-153_wakagaeri_academia.jpg",
       "channel": {
         "channelId": "UCMNjTg2ihpmNWvpdg_0WT8g",
         "title": "みんなの若返りアカデミア【健康長寿・老化防止・日本人の健康寿命延ばす・120歳以上生きる】【けいた】",
@@ -29653,11 +29723,18 @@
         "analyzedAt": "2026-09-16T15:08:01.403198+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-5283eb5f81.jpg"
+      "avatar": "assets/avatars/ch-5283eb5f81.jpg",
+      "sha256": "d91cf5ea7ca6f3bd19195be1ba08acba80c11128c150caede8cb23827a1dd450",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 153751,
+        "sizeKb": "150.1",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-154",
-      "fileName": null,
+      "fileName": "RAW-154_ougon_no_rounenki.jpg",
       "channel": {
         "channelId": "UChAGYKHe2glCAzPBwPndsGg",
         "title": "黄金の老年期",
@@ -29763,11 +29840,18 @@
         "analyzedAt": "2026-09-16T15:08:04.932254+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/-x9g-502d482131.jpg"
+      "avatar": "assets/avatars/-x9g-502d482131.jpg",
+      "sha256": "0394ec5da107736e37338f6352f26fe17899c194cae4361ff52cfd28d3086bff",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 194851,
+        "sizeKb": "190.3",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-155",
-      "fileName": null,
+      "fileName": "RAW-155_Khoe_Ve_Gia.jpg",
       "channel": {
         "channelId": "UCtmXuebPfug2V5Pa2nGmdRQ",
         "title": "Khỏe Về Già",
@@ -29873,11 +29957,18 @@
         "analyzedAt": "2026-09-16T15:08:06.657668+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/Kh_eV_Gi-bdcb54d9c5.jpg"
+      "avatar": "assets/avatars/Kh_eV_Gi-bdcb54d9c5.jpg",
+      "sha256": "96d6ab2d1dad76a5f73de8be0bcb4c05ba1ba576ebdf8ad45a302d6801af0fe4",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 168772,
+        "sizeKb": "164.8",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-156",
-      "fileName": null,
+      "fileName": "RAW-156_jidai_wo_ikita_koe.jpg",
       "channel": {
         "channelId": "UCPXSL9saGzpbMcqIZuvi9Tw",
         "title": "時代を生きた声",
@@ -29983,11 +30074,18 @@
         "analyzedAt": "2026-09-16T15:08:03.957394+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-d8e54eba19.jpg"
+      "avatar": "assets/avatars/ch-d8e54eba19.jpg",
+      "sha256": "bcaeb1c7182e63568907a6e0ac377d16bebffdb8927fc072ba9a770503fac433",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 130623,
+        "sizeKb": "127.6",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-157",
-      "fileName": null,
+      "fileName": "RAW-157_silver_sedai.jpg",
       "channel": {
         "channelId": "UCMvoDcgw7_oRBuQTvL6WNtQ",
         "title": "シルバー世代の語り部",
@@ -30093,11 +30191,18 @@
         "analyzedAt": "2026-09-16T15:08:08.091266+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-4a31d0cece.jpg"
+      "avatar": "assets/avatars/ch-4a31d0cece.jpg",
+      "sha256": "25d8a8deba8cf27d6fb8efb442895b59be97273ca4d2147d312ef611781adc2d",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 208679,
+        "sizeKb": "203.8",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-158",
-      "fileName": null,
+      "fileName": "RAW-158_okane_no_shinri.jpg",
       "channel": {
         "channelId": "UC2AIhcNB9EOsGaZiG0S7MTA",
         "title": "お金の心理",
@@ -30203,11 +30308,18 @@
         "analyzedAt": "2026-09-16T15:08:07.065610+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-5de5930ab7.jpg"
+      "avatar": "assets/avatars/ch-5de5930ab7.jpg",
+      "sha256": "342c4134879c30fdcb96925e8e5104ba663a8937deb2f05fe3704f73f58a8117",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 158604,
+        "sizeKb": "154.9",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-159",
-      "fileName": null,
+      "fileName": "RAW-159_senior_salim_note.jpg",
       "channel": {
         "channelId": "UCn-u2CG-jtoY-UOVfbubp6g",
         "title": "시니어살림노트",
@@ -30313,11 +30425,18 @@
         "analyzedAt": "2026-09-16T15:08:05.794878+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-be2e7329fe.jpg"
+      "avatar": "assets/avatars/ch-be2e7329fe.jpg",
+      "sha256": "6fecbbd78d024027828a766c16ea513c4d81923e1a3dd089ead779d5c9a28f23",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 168948,
+        "sizeKb": "165.0",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-160",
-      "fileName": null,
+      "fileName": "RAW-160_yadam_eul_bitda.jpg",
       "channel": {
         "channelId": "UC7ZQ31YmPBPvFC0YIyTtk8Q",
         "title": "야담을 빚다",
@@ -30422,11 +30541,18 @@
         "analyzedAt": "2026-09-16T15:08:06.219697+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-bdfa16867e.jpg"
+      "avatar": "assets/avatars/ch-bdfa16867e.jpg",
+      "sha256": "22c34ae149c1562cd7d708111abf857f3b0c9246ea972eb58428a44f1d727ff1",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 161188,
+        "sizeKb": "157.4",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-161",
-      "fileName": null,
+      "fileName": "RAW-161_jumak_yadam.jpg",
       "channel": {
         "channelId": "UCKDbQhyRAqToDLBbrw1uU3w",
         "title": "주막 야담",
@@ -30531,11 +30657,18 @@
         "analyzedAt": "2026-09-16T15:08:06.219697+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-fcb239c901.jpg"
+      "avatar": "assets/avatars/ch-fcb239c901.jpg",
+      "sha256": "d35f1be0290e937f8de0501501f13581dfccff79bc1b3a41d3a036c29d823bff",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 202050,
+        "sizeKb": "197.3",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-162",
-      "fileName": null,
+      "fileName": "RAW-162_bichae_yadam.jpg",
       "channel": {
         "channelId": "UCBc5mODVVWJtll269LvGO8Q",
         "title": "비채야담",
@@ -30640,11 +30773,18 @@
         "analyzedAt": "2026-09-16T15:08:09.173126+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-977f237b6c.jpg"
+      "avatar": "assets/avatars/ch-977f237b6c.jpg",
+      "sha256": "b211030fc9ca7d732805905948cc9771bcd17d3aa58687add0e37a969fc442b9",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 196523,
+        "sizeKb": "191.9",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-163",
-      "fileName": null,
+      "fileName": "RAW-163_ultari_yadam.jpg",
       "channel": {
         "channelId": "UCQ9N4JaIIhoPaDKPZ4gnpIQ",
         "title": "울타리야담",
@@ -30749,11 +30889,18 @@
         "analyzedAt": "2026-09-16T15:08:08.212013+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-1fbf460bd7.jpg"
+      "avatar": "assets/avatars/ch-1fbf460bd7.jpg",
+      "sha256": "be852cf44e0499acc0903b768b0bfe88a9902e2b6fcc425dbb8bce73d150ef68",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 213790,
+        "sizeKb": "208.8",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-164",
-      "fileName": null,
+      "fileName": "RAW-164_yadamgyeol.jpg",
       "channel": {
         "channelId": "UCzhZwfb05mVKpybL-Uy9wzA",
         "title": "야담결",
@@ -30858,11 +31005,18 @@
         "analyzedAt": "2026-09-16T15:08:13.677040+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-0b6144ff55.jpg"
+      "avatar": "assets/avatars/ch-0b6144ff55.jpg",
+      "sha256": "8d11f9aee94c7e8d73b933b428fb890e69560f5d2c228dc9f919268720fbfe3a",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 212861,
+        "sizeKb": "207.9",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-165",
-      "fileName": null,
+      "fileName": "RAW-165_1001joseon.jpg",
       "channel": {
         "channelId": "UClPxAd8Wa8lvzWHoL_wFlOQ",
         "title": "조선천일 야담",
@@ -30967,7 +31121,14 @@
         "analyzedAt": "2026-09-16T15:08:28.782028+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-0d8a97e731.jpg"
+      "avatar": "assets/avatars/ch-0d8a97e731.jpg",
+      "sha256": "59b4db198f7714b17f6701babe57c0b98d6cf507ef6012d052888685301d250d",
+      "technical": {
+        "dimensions": "1280x720",
+        "sizeBytes": 182531,
+        "sizeKb": "178.3",
+        "format": "JPEG"
+      }
     },
     {
       "id": "RAW-166",

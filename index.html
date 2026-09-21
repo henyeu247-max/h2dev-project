@@ -12,7 +12,7 @@
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-fixed-shell-v5">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-unified-topbar-v6">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -250,13 +250,14 @@
       </div>
       <nav id="tabs" role="tablist" aria-label="Khu vực"></nav>
     </aside>
-    <header class="vd-topbar">
+    <header class="vd-topbar" id="vd-topbar">
       <div class="vd-top-right">
         <h1 id="page-title" class="vd-page-title">Tổng quan</h1>
         <div id="hd-stats" class="hd-stats"></div>
         <a href="/lotrinh" class="btn-ghost" style="font-size:12px">Lộ trình</a>
-        <button type="button" class="btn-ghost js-open-music-studio" style="font-size:12px; display:inline-flex; align-items:center; gap:4px; cursor:pointer;" title="Mở trạm phát nhạc nền 49 tracks">🎧 Nhạc nền</button>
+        <button type="button" class="btn-ghost js-open-music-studio" style="font-size:12px;" title="Mở trạm phát nhạc nền 49 tracks">🎧 Nhạc nền</button>
       </div>
+      <div id="topbar-subnav" class="vd-topbar-subnav hidden"></div>
       <nav id="mobile-tabs" class="vd-mobile-tabs" aria-label="Điều hướng tab"></nav>
     </header>
     <main id="panel-root" tabindex="-1" aria-live="polite">
@@ -487,6 +488,7 @@
           e.preventDefault();
           state.clSubTab = btn.getAttribute('data-cl-tab') || 'principles';
           render();
+          resetScrollToTop();
         };
       });
     }
@@ -2079,7 +2081,6 @@
         </div>
       </div>`;
       })() : ''}
-      </div>
     </div>
     <button type="button" data-raw-filters-toggle class="mt-3.5 pt-3 border-t border-hairline w-full flex items-center justify-between gap-2 text-left group">
       <span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold text-gray-400 transition">⚙️ Bộ lọc nâng cao (sức sống · faceless · ngôn ngữ)</span>
@@ -2318,16 +2319,7 @@
       const isAll = curTab === 'all';
 
       return `
-  <!-- Fixed/Sticky Segmented Sub-Tab Bar cho Chiến Lược (Nằm ngay sát mép dưới topbar, luôn hiện không cần cuộn) -->
-  <div class="cl-tabbar">
-    <button type="button" class="cl-tab-btn ${curTab === 'principles' ? 'active' : ''}" data-cl-tab="principles"><span>📊</span> <span>4 Nguyên tắc</span></button>
-    <button type="button" class="cl-tab-btn ${curTab === 'workflow' ? 'active' : ''}" data-cl-tab="workflow"><span>🚀</span> <span>Quy trình A–Z</span></button>
-    <button type="button" class="cl-tab-btn ${curTab === 'distribution' ? 'active' : ''}" data-cl-tab="distribution"><span>📈</span> <span>Phân bổ ngách</span></button>
-    <button type="button" class="cl-tab-btn ${curTab === 'policy' ? 'active' : ''}" data-cl-tab="policy"><span>🛡️</span> <span>YPP & Chính sách</span></button>
-    <button type="button" class="cl-tab-btn cl-tab-all ${isAll ? 'active' : ''}" data-cl-tab="all"><span>📑</span> <span>Tất cả</span></button>
-  </div>
-
-  <div class="mb-3">
+  <div class="mb-4">
     <p class="page-lede">Ngách không quyết định xanh/đỏ — <b class="text-white">cách làm</b> quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.</p>
   </div>
 
@@ -2756,6 +2748,37 @@
         const tabMeta = TABS.find(t => t.id === state.tab);
         if (titleEl && tabMeta) titleEl.textContent = tabMeta.name;
         document.getElementById('panel-root').setAttribute('aria-labelledby', `tab-${state.tab}`);
+
+        // Update Topbar Sub-Navigation: nằm cùng trong <header class="vd-topbar">
+        const topbarEl = document.querySelector('.vd-topbar');
+        const topbarSubnav = document.getElementById('topbar-subnav');
+        const appShell = document.querySelector('.app-shell');
+
+        if (state.tab === 'chienluoc') {
+          state.clSubTab = state.clSubTab || 'principles';
+          const curTab = state.clSubTab;
+          const isAll = curTab === 'all';
+          if (topbarSubnav) {
+            topbarSubnav.innerHTML = `
+              <div class="cl-tabbar">
+                <button type="button" class="cl-tab-btn ${curTab === 'principles' ? 'active' : ''}" data-cl-tab="principles"><span>📊</span> <span>4 Nguyên tắc</span></button>
+                <button type="button" class="cl-tab-btn ${curTab === 'workflow' ? 'active' : ''}" data-cl-tab="workflow"><span>🚀</span> <span>Quy trình A–Z</span></button>
+                <button type="button" class="cl-tab-btn ${curTab === 'distribution' ? 'active' : ''}" data-cl-tab="distribution"><span>📈</span> <span>Phân bổ ngách</span></button>
+                <button type="button" class="cl-tab-btn ${curTab === 'policy' ? 'active' : ''}" data-cl-tab="policy"><span>🛡️</span> <span>YPP & Chính sách</span></button>
+                <button type="button" class="cl-tab-btn cl-tab-all ${isAll ? 'active' : ''}" data-cl-tab="all"><span>📑</span> <span>Tất cả</span></button>
+              </div>`;
+            topbarSubnav.classList.remove('hidden');
+          }
+          if (topbarEl) topbarEl.classList.add('has-subnav');
+          if (appShell) appShell.classList.add('has-topbar-subnav');
+        } else {
+          if (topbarSubnav) {
+            topbarSubnav.innerHTML = '';
+            topbarSubnav.classList.add('hidden');
+          }
+          if (topbarEl) topbarEl.classList.remove('has-subnav');
+          if (appShell) appShell.classList.remove('has-topbar-subnav');
+        }
         bindSearch();
         bindNicheActions();
 

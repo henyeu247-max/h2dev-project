@@ -868,4 +868,30 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   @keyframes fadeSlide { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
   #content .truncate { overflow: visible; text-overflow: unset; white-space: normal; }
   .learn-frame { min-height: calc(100vh - 140px); }
+
+  /* ── Mobile Modal Responsive Grids ── */
+  .music-studio-grid { grid-template-columns: 1fr !important; padding: 10px !important; gap: 10px !important; }
+  .raw-deep-kpis { grid-template-columns: repeat(2, 1fr) !important; gap: 8px !important; }
+  .raw-proxy-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+  .raw-proxy-subgrid { grid-template-columns: 1fr !important; gap: 8px !important; }
+  .raw-mission-bento { grid-template-columns: 1fr !important; gap: 10px !important; }
+  .raw-top-videos-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
 }
+
+/* ── Base Modal Helper Classes ── */
+.music-studio-grid { display: grid; }
+.raw-deep-header { display: flex; }
+.raw-deep-header-row1 { display: flex; }
+.raw-deep-header-avatar-info { display: flex; }
+.raw-deep-header-actions { display: flex; }
+.raw-deep-header-meta { display: flex; }
+.raw-deep-body { display: flex; }
+.raw-deep-quicknav { display: flex; }
+.raw-deep-kpis { display: grid; }
+.raw-deep-kpi-card { display: block; }
+.raw-proxy-grid { display: grid; }
+.raw-proxy-subgrid { display: grid; }
+.raw-mission-bento { display: grid; }
+.raw-top-videos-grid { display: grid; }
+.raw-deep-mobile-hide { display: inline; }
+

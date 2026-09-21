@@ -45,8 +45,24 @@ const COMPRESSIBLE_EXTS = new Set([
   '.html', '.css', '.js', '.json', '.svg', '.csv', '.tsv', '.txt', '.md'
 ]);
 
-// In-memory RAM cache cho file nén Gzip (giảm 100% disk I/O và CPU compression lặp lại)
+// In-memory RAM cache cho file nén Gzip (khống chế tối đa 120 entries để an toàn bộ nhớ VPS)
 const GZIP_CACHE = new Map();
+const MAX_GZIP_CACHE_ENTRIES = 120;
+function setGzipCache(key, entry) {
+  if (GZIP_CACHE.size >= MAX_GZIP_CACHE_ENTRIES) {
+    const oldestKey = GZIP_CACHE.keys().next().value;
+    if (oldestKey) GZIP_CACHE.delete(oldestKey);
+  }
+  GZIP_CACHE.set(key, entry);
+}
+
+// So sánh ETag chuẩn RFC 9110 hỗ trợ dấu phẩy và hậu tố Cloudflare -gzip
+function matchEtag(clientHeader, serverEtag) {
+  if (!clientHeader || !serverEtag) return false;
+  const cleanServer = serverEtag.replace(/^W\//, '').replace(/"/g, '').trim();
+  const clientList = clientHeader.split(',').map(s => s.replace(/^W\//, '').replace(/"/g, '').trim());
+  return clientList.some(c => c === cleanServer || c === cleanServer + '-gzip' || c === '*');
+}
 
 function sendFile(req, res, full, mime, rangeHeader, isHead = false){
   fs.stat(full, (err, st)=>{
@@ -82,6 +98,7 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
       'Content-Disposition': 'inline',
+      'Vary': 'Accept-Encoding',
     };
 
     const etag = `W/"${st.mtimeMs.toString(36)}-${st.size.toString(36)}"`;
@@ -112,9 +129,9 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       return;
     }
 
-    // 304 Not Modified check
+    // 304 Not Modified check (Hỗ trợ chuẩn RFC 9110 và Cloudflare -gzip)
     const ifNoneMatch = req && req.headers ? req.headers['if-none-match'] : null;
-    if (ifNoneMatch && ifNoneMatch === etag) {
+    if (matchEtag(ifNoneMatch, etag)) {
       res.writeHead(304, headers);
       res.end();
       return;
@@ -123,8 +140,6 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
     // Standard 200 GET: Check if client accepts Gzip and file is compressible text/data
     const acceptEncoding = req && req.headers ? (req.headers['accept-encoding'] || '') : '';
     const canGzip = COMPRESSIBLE_EXTS.has(ext) && acceptEncoding.includes('gzip');
-
-    headers['Vary'] = 'Accept-Encoding';
 
     if (canGzip) {
       headers['Content-Encoding'] = 'gzip';
@@ -148,7 +163,7 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
               if (!res.headersSent) { res.writeHead(500); res.end('Gzip Error'); }
               return;
             }
-            GZIP_CACHE.set(full, { mtimeMs: st.mtimeMs, buffer: gzBuf });
+            setGzipCache(full, { mtimeMs: st.mtimeMs, buffer: gzBuf });
             headers['Content-Length'] = gzBuf.length;
             res.writeHead(200, headers);
             if (isHead) { res.end(); return; }

@@ -12,7 +12,7 @@
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-mobile-v1">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-mobile-tabs-v2">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -2914,20 +2914,32 @@
               </div>
             </div>
 
-            <!-- Sticky Subheader Nav Bar (Cố định ở đỉnh, nằm ngay dưới Header, luôn hiển thị khi cuộn nội dung bên dưới) -->
-            <div class="raw-deep-quicknav" style="display:flex; align-items:center; gap:0.4rem; background:#0c1220; border-bottom:1px solid #1e293b; padding:0.45rem 1rem; flex-shrink:0; overflow-x:auto; white-space:nowrap; -webkit-overflow-scrolling:touch; scrollbar-width:none; z-index:10;">
-              <span style="font-size:0.75rem; color:#94a3b8; font-weight:700; flex-shrink:0;">⚡ Chuyển nhanh:</span>
-              <button type="button" data-jump="raw-mission-control" style="font-size:0.75rem; font-weight:700; background:rgba(37,99,235,0.25); border:1px solid #3b82f6; color:#93c5fd; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer; flex-shrink:0;" class="hover:bg-blue-600 hover:text-white transition">🚀 Vũ Khí Tác Chiến & Prompts</button>
-              <button type="button" data-jump="raw-demo-video" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer; flex-shrink:0;" class="hover:text-white transition">🎬 Video Demo Tuyến</button>
-              <button type="button" data-jump="raw-voice-dna" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer; flex-shrink:0;" class="hover:text-white transition">🎙️ Voice DNA Studio</button>
-              <button type="button" data-jump="raw-top-videos" style="font-size:0.75rem; font-weight:600; background:#1e293b; border:1px solid #334155; color:#cbd5e1; padding:0.25rem 0.65rem; border-radius:0.5rem; cursor:pointer; flex-shrink:0;" class="hover:text-white transition">📺 Top 7-10 Video Live</button>
+            <!-- Pinned Segmented Tab Bar (4 Tab chia đều 100% màn hình, không bao giờ bị cắt chữ hay tràn lề) -->
+            <div class="raw-deep-tabbar">
+              <button type="button" class="raw-tab-btn active" data-tab="overview">
+                <span>📊</span> <span>Tổng quan</span>
+              </button>
+              <button type="button" class="raw-tab-btn" data-tab="mission">
+                <span>🚀</span> <span>Vũ khí</span>
+              </button>
+              <button type="button" class="raw-tab-btn" data-tab="voice">
+                <span>🎙️</span> <span>Voice DNA</span>
+              </button>
+              <button type="button" class="raw-tab-btn" data-tab="videos">
+                <span>📺</span> <span>Top Videos</span>
+              </button>
+              <button type="button" class="raw-tab-btn raw-tab-all" data-tab="all">
+                <span>📑</span> <span>Tất cả</span>
+              </button>
             </div>
 
-            <!-- Body (Cuộn độc lập bên dưới subheader nav) -->
+            <!-- Body (Cuộn độc lập bên dưới tab bar) -->
             <div class="raw-deep-body" style="padding:1.25rem; overflow-y:auto; flex:1; min-height:0; display:flex; flex-direction:column; gap:1.25rem;">
               
-              <!-- 4 KPI Cards -->
-              <div class="raw-deep-kpis" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.75rem;">
+              <!-- Tab Panel 1: Tổng Quan & KPI -->
+              <div id="raw-panel-overview" class="raw-tab-panel" style="display:flex; flex-direction:column; gap:1.25rem;">
+                <!-- 4 KPI Cards -->
+                <div class="raw-deep-kpis" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.75rem;">
                 <div class="raw-deep-kpi-card" style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
                   <div style="font-size:0.7rem; text-transform:uppercase; color:#94a3b8; font-weight:600;">Lượng người đăng ký (Subs)</div>
                   <div class="kpi-val" style="font-size:1.35rem; font-weight:800; color:#38bdf8; margin-top:0.25rem;">${subsDisplay}</div>
@@ -3074,8 +3086,10 @@
                 </div>
               </div>`;
               })() : ''}
+              </div> <!-- End Tab Panel 1: Overview -->
 
-              <!-- Section 1 Ưu Tiên: Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control) -->
+              <!-- Tab Panel 2: Vũ Khí Tác Chiến (Mission Control) -->
+              <div id="raw-panel-mission" class="raw-tab-panel" style="display:none; flex-direction:column; gap:1.25rem;">
               ${productionToolkit ? (() => {
                 const tk = productionToolkit;
                 const vd = tk.visualDirective || {};
@@ -3307,7 +3321,10 @@
 
               </div>`;
               })() : ''}
+              </div> <!-- End Tab Panel 2: Mission Control -->
 
+              <!-- Tab Panel 3: Voice DNA & Video Demo -->
+              <div id="raw-panel-voice" class="raw-tab-panel" style="display:none; flex-direction:column; gap:1.25rem;">
               <!-- Section: Video Demo Mẫu Đại Diện Tuyến Nội Dung Kênh (Featured Showcase) -->
               ${demoVid && demoVid.videoId ? `
               <div id="raw-demo-video" style="background:#0b1120; border:1px solid #1e293b; border-radius:1rem; padding:1.1rem; display:flex; flex-direction:column; gap:0.75rem; box-shadow:0 4px 25px -4px rgba(0,0,0,0.6);">
@@ -3521,7 +3538,10 @@
                   ${tags.map(t => `<span style="font-size:0.72rem; padding:0.25rem 0.6rem; border-radius:0.5rem; background:#1e293b; color:#cbd5e1; border:1px solid #334155;">#${esc(t)}</span>`).join('')}
                 </div>
               </div>` : ''}
+              </div> <!-- End Tab Panel 3: Voice DNA & Demo -->
 
+              <!-- Tab Panel 4: Top Videos Live & Tiến Hóa Kênh -->
+              <div id="raw-panel-videos" class="raw-tab-panel" style="display:none; flex-direction:column; gap:1.25rem;">
               <!-- Section: Top Videos Đột Phá Triệu View -->
               <div id="raw-top-videos" style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem;">
                 <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.4rem; flex-wrap:wrap; gap:0.5rem;">
@@ -3691,6 +3711,7 @@
                 ${vision.productionFormat ? `<div><strong style="color:#a855f7;">Định dạng sản xuất:</strong> ${esc(vision.productionFormat)}</div>` : ''}
                 ${vision.audienceAge ? `<div><strong style="color:#10b981;">Tệp khán giả nhắm tới:</strong> ${esc(vision.audienceAge)}</div>` : ''}
               </div>` : ''}
+              </div> <!-- End Tab Panel 4: Top Videos -->
 
             </div>
           </div>
@@ -3873,32 +3894,39 @@
           }
         }
 
-        // Wire up sticky subheader quicknav buttons (luôn cố định ở đỉnh, chuyển tab mọi lúc)
-        modal.querySelectorAll('.raw-deep-quicknav button[data-jump]').forEach(btn => {
-          btn.onclick = () => {
-            const targetId = btn.getAttribute('data-jump');
-            const targetEl = modal.querySelector('#' + targetId) || document.getElementById(targetId);
-            if (targetEl) {
-              targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              modal.querySelectorAll('.raw-deep-quicknav button[data-jump]').forEach(b => {
-                b.style.background = '#1e293b';
-                b.style.borderColor = '#334155';
-                b.style.color = '#cbd5e1';
-                b.style.fontWeight = '600';
-              });
-              btn.style.background = 'rgba(37,99,235,0.3)';
-              btn.style.borderColor = '#3b82f6';
-              btn.style.color = '#93c5fd';
-              btn.style.fontWeight = '700';
+        // Tab switching logic for Raw Deep Modal (Chuyển tab mượt mà, cố định đỉnh, 100% hiển thị trên mobile)
+        function switchRawTab(tabKey) {
+          modal.querySelectorAll('.raw-tab-btn').forEach(btn => {
+            const isMatch = btn.getAttribute('data-tab') === tabKey;
+            if (isMatch) {
+              btn.classList.add('active');
+            } else {
+              btn.classList.remove('active');
             }
-          };
+          });
+          modal.querySelectorAll('.raw-tab-panel').forEach(p => {
+            if (tabKey === 'all') {
+              p.style.display = 'flex';
+            } else {
+              p.style.display = (p.id === 'raw-panel-' + tabKey) ? 'flex' : 'none';
+            }
+          });
+          const b = modal.querySelector('.raw-deep-body');
+          if (b) b.scrollTop = 0;
+        }
+
+        modal.querySelectorAll('.raw-tab-btn').forEach(btn => {
+          btn.onclick = () => switchRawTab(btn.getAttribute('data-tab'));
         });
 
         if (jumpTarget === 'mission-control') {
-          setTimeout(() => {
-            const mcBtn = modal.querySelector('.raw-deep-quicknav button[data-jump="raw-mission-control"]');
-            if (mcBtn) mcBtn.click();
-          }, 150);
+          switchRawTab('mission');
+        } else if (jumpTarget === 'voice-dna' || jumpTarget === 'demo-video') {
+          switchRawTab('voice');
+        } else if (jumpTarget === 'top-videos') {
+          switchRawTab('videos');
+        } else {
+          switchRawTab('overview');
         }
       };
 

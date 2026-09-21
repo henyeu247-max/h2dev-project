@@ -169,7 +169,7 @@
             </div>
           </div>
 
-          <div style="flex:1; overflow-y:auto; padding:1.25rem; display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:1rem; align-content:start;">
+          <div class="music-studio-grid" style="flex:1; overflow-y:auto; padding:1.25rem; display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:1rem; align-content:start;">
             ${filtered.length ? filtered.map(renderTrackCard).join('') : '<div style="grid-column:1/-1; text-align:center; padding:3rem 1rem; color:#64748b; font-size:0.9rem;">Không tìm thấy bài hát nào phù hợp bộ lọc</div>'}
           </div>
         </div>

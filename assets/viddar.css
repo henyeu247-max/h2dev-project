@@ -670,7 +670,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     grid-template-rows: 1fr auto;
     height: auto;
     min-height: 100dvh;
-    padding-top: 48px; /* Cố định bù trừ chiều cao topbar 48px */
+    padding-top: 0 !important;
     padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px));
     overflow-x: hidden;
     overflow-y: visible;
@@ -684,44 +684,44 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     left: 0 !important;
     right: 0 !important;
     width: 100% !important;
-    height: 48px !important;
-    min-height: 48px !important;
-    padding: 0 12px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    overflow: visible;
-    z-index: 40 !important;
-    border-bottom: 1px solid var(--border);
-    background: rgba(5, 5, 5, 0.94) !important;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    height: 50px !important;
+    min-height: 50px !important;
+    max-height: 50px !important;
+    padding: 0 14px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    overflow: hidden !important;
+    z-index: 100 !important;
+    border-bottom: 1px solid var(--border) !important;
+    background: #050505 !important;
+    box-sizing: border-box !important;
   }
   .vd-top-right {
-    height: 48px;
-    min-height: 48px;
-    padding: 0;
-    gap: 8px;
-    border-bottom: 0;
-    width: 100%;
-    justify-content: space-between;
+    height: 50px !important;
+    min-height: 50px !important;
+    padding: 0 !important;
+    gap: 8px !important;
+    border-bottom: 0 !important;
+    width: 100% !important;
+    justify-content: space-between !important;
   }
   .vd-mobile-tabs { display: none !important; }
   .vd-bottom-nav {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: calc(56px + env(safe-area-inset-bottom, 0px));
-    padding: 0 4px env(safe-area-inset-bottom, 0px);
-    background: var(--bottom-nav-bg);
-    border-top: 1px solid var(--border);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    z-index: 50;
+    display: grid !important;
+    grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
+    padding: 0 4px env(safe-area-inset-bottom, 0px) !important;
+    background: #050505 !important;
+    border-top: 1px solid var(--border) !important;
+    z-index: 100 !important;
+    box-sizing: border-box !important;
   }
   .vd-bottom-nav .tab-btn {
     display: flex;
@@ -829,7 +829,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .app-footer { grid-column: 1; grid-row: 3; padding: 10px 12px 12px; }
   html, body { height: auto; overflow-x: hidden; overflow-y: auto; overscroll-behavior-x: none; font-size: 15px; }
   .vd-top-right .btn-ghost { display: none; }
-  #content { padding: 12px 14px calc(76px + env(safe-area-inset-bottom, 0px)); overflow-wrap: anywhere; }
+  #content { padding: 62px 14px calc(76px + env(safe-area-inset-bottom, 0px)) !important; overflow-wrap: anywhere; }
   .nx-filter-panel { padding: 14px !important; }
   .nx-filter-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .nx-filter-head input, .nx-filter-head button { width: 100%; max-width: none; min-height: 44px; }
@@ -887,7 +887,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .subniche-select-wrap { display: block !important; }
   .subniche-grid { display: flex !important; flex-direction: column !important; gap: 6px !important; max-height: 200px !important; overflow-y: auto !important; padding-right: 4px !important; -webkit-overflow-scrolling: touch !important; }
   .subniche-chip { width: 100% !important; padding: 8px 12px !important; font-size: 12px !important; box-sizing: border-box !important; }
-  .cl-tabbar { top: 48px !important; margin-bottom: 12px !important; padding: 4px !important; gap: 4px !important; border-radius: 10px !important; }
+  .cl-tabbar { top: 50px !important; margin-bottom: 12px !important; padding: 4px !important; gap: 4px !important; border-radius: 10px !important; background: #0b0f19 !important; z-index: 90 !important; }
   .cl-tab-btn { padding: 5px 8px !important; font-size: 11px !important; gap: 3px !important; }
   .cl-tab-all { display: none !important; }
   .mobile-only-filter { display: block !important; }
@@ -941,7 +941,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .subniche-name { flex: 1; min-width: 0; }
 .subniche-count { font-family: var(--font-mono); font-size: 10px; padding: 1px 6px; border-radius: 4px; background: rgba(0, 0, 0, 0.3); color: var(--fg-muted); flex-shrink: 0; }
 .subniche-chip.active .subniche-count { background: rgba(255, 255, 255, 0.2); color: #fff; }
-.cl-tabbar { display: flex; align-items: center; gap: 6px; background: rgba(11, 15, 25, 0.96); border: 1px solid #1e293b; border-radius: 12px; padding: 5px 8px; margin-bottom: 14px; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; position: sticky; top: 48px; z-index: 35; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.cl-tabbar { display: flex; align-items: center; gap: 6px; background: #0b0f19; border: 1px solid #1e293b; border-radius: 12px; padding: 5px 8px; margin-bottom: 14px; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; position: sticky; top: 50px; z-index: 90; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); }
 .cl-tabbar::-webkit-scrollbar { display: none; }
 .cl-tab-btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 13px; border-radius: 8px; background: transparent; border: 1px solid transparent; color: #94a3b8; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s ease; flex-shrink: 0; }
 .cl-tab-btn:hover { color: #fff; background: #1e293b; }

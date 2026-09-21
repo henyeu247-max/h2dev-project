@@ -876,6 +876,9 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .raw-proxy-subgrid { grid-template-columns: 1fr !important; gap: 8px !important; }
   .raw-mission-bento { grid-template-columns: 1fr !important; gap: 10px !important; }
   .raw-top-videos-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+  .raw-deep-tabbar { display: grid !important; grid-template-columns: repeat(4, 1fr) !important; padding: 6px !important; gap: 4px !important; }
+  .raw-tab-btn { padding: 6px 2px !important; font-size: 11px !important; gap: 2px !important; }
+  .raw-tab-all { display: none !important; }
 }
 
 /* ── Base Modal Helper Classes ── */
@@ -887,6 +890,12 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .raw-deep-header-meta { display: flex; }
 .raw-deep-body { display: flex; }
 .raw-deep-quicknav { display: flex; }
+.raw-deep-tabbar { display: flex; align-items: center; gap: 8px; background: #0c1220; border-bottom: 1px solid #1e293b; padding: 7px 16px; flex-shrink: 0; }
+.raw-tab-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 12.5px; font-weight: 600; background: #1e293b; border: 1px solid #334155; color: #cbd5e1; padding: 6px 14px; border-radius: 8px; cursor: pointer; transition: all 0.15s ease; }
+.raw-tab-btn:hover { background: #334155; color: #fff; }
+.raw-tab-btn.active { background: #2563eb !important; border-color: #3b82f6 !important; color: #fff !important; font-weight: 700 !important; }
+.raw-tab-all { display: inline-flex; }
+.raw-tab-panel { display: flex; flex-direction: column; gap: 16px; }
 .raw-deep-kpis { display: grid; }
 .raw-deep-kpi-card { display: block; }
 .raw-proxy-grid { display: grid; }

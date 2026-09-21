@@ -85,7 +85,7 @@ Y:\YTB\
     ├── .cache\                    # cache runtime (checkpoint, thumbnail, reload-state) · web bị chặn
     ├── logs\                      # log server/watchdog/reload · web bị chặn · KHÔNG vào git
     │   # (không còn ở gốc: _frames\ · _tmp_audio\ · _drafts\ · _internal\ — đã dời 16/09; script tự tạo lại khi chạy)
-    ├── raw-kenh-goc\             # 135 ảnh raw canonical + metadata (156 record: 23 kênh chưa có ảnh chụp) · web bị CHẶN (403)
+    ├── raw-kenh-goc\             # 158 ảnh raw canonical + metadata (156 record: 0 kênh chưa có ảnh chụp) · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git
 ```

@@ -1,6 +1,6 @@
 {
   "schema": "h2dev.counts-manifest.v1",
-  "generatedAt": "2026-09-21T20:04:35.600Z",
+  "generatedAt": "2026-09-21T20:29:39.547Z",
   "counts": {
     "videos": 140,
     "videoLessons": 136,
@@ -29,8 +29,8 @@
     "docsVideoDirs": 136,
     "docsZoomDirs": 5,
     "thumbFiles": 141,
-    "rawChannelImages": 135,
-    "rawRecordsWithoutImage": 23,
+    "rawChannelImages": 158,
+    "rawRecordsWithoutImage": 0,
     "rawDeepProfiles": 149,
     "sopDocs": 7,
     "masterPrompts": 20

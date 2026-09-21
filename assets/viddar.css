@@ -824,7 +824,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .app-footer { grid-column: 1; grid-row: 3; padding: 10px 12px 12px; }
   html, body { height: auto; overflow-x: hidden; overflow-y: auto; overscroll-behavior-x: none; font-size: 15px; }
   .vd-top-right .btn-ghost { display: none; }
-  #content { padding: 12px 14px; overflow-wrap: anywhere; }
+  #content { padding: 12px 14px calc(76px + env(safe-area-inset-bottom, 0px)); overflow-wrap: anywhere; }
   .nx-filter-panel { padding: 14px !important; }
   .nx-filter-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .nx-filter-head input, .nx-filter-head button { width: 100%; max-width: none; min-height: 44px; }
@@ -882,9 +882,50 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .subniche-select-wrap { display: block !important; }
   .subniche-grid { display: flex !important; flex-direction: column !important; gap: 6px !important; max-height: 200px !important; overflow-y: auto !important; padding-right: 4px !important; -webkit-overflow-scrolling: touch !important; }
   .subniche-chip { width: 100% !important; padding: 8px 12px !important; font-size: 12px !important; box-sizing: border-box !important; }
+  .cl-tabbar { top: 48px !important; margin-bottom: 12px !important; padding: 4px !important; gap: 4px !important; border-radius: 10px !important; }
+  .cl-tab-btn { padding: 5px 8px !important; font-size: 11px !important; gap: 3px !important; }
+  .cl-tab-all { display: none !important; }
+  .mobile-only-filter { display: block !important; }
 }
 
-/* ── Base Modal & Subniche Classes ── */
+/* ── Floating Action Button: Back to Top ── */
+#btn-back-to-top {
+  position: fixed;
+  bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--brand, #2563eb);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 55;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.15s ease;
+}
+#btn-back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+#btn-back-to-top:hover {
+  background: #1d4ed8;
+}
+@media (min-width: 641px) {
+  #btn-back-to-top {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+/* ── Base Modal, Subniche & Chiến Lược Classes ── */
 .subniche-select-wrap { display: none; margin-bottom: 10px; width: 100%; }
 .subniche-select { width: 100%; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; font-size: 12px; color: var(--fg); font-weight: 500; outline: none; cursor: pointer; }
 .subniche-select:focus { border-color: var(--brand); }
@@ -895,6 +936,14 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .subniche-name { flex: 1; min-width: 0; }
 .subniche-count { font-family: var(--font-mono); font-size: 10px; padding: 1px 6px; border-radius: 4px; background: rgba(0, 0, 0, 0.3); color: var(--fg-muted); flex-shrink: 0; }
 .subniche-chip.active .subniche-count { background: rgba(255, 255, 255, 0.2); color: #fff; }
+.cl-tabbar { display: flex; align-items: center; gap: 6px; background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 5px 8px; margin-bottom: 18px; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; position: sticky; top: 52px; z-index: 15; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.cl-tabbar::-webkit-scrollbar { display: none; }
+.cl-tab-btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 13px; border-radius: 8px; background: transparent; border: 1px solid transparent; color: #94a3b8; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s ease; flex-shrink: 0; }
+.cl-tab-btn:hover { color: #fff; background: #1e293b; }
+.cl-tab-btn.active { background: #2563eb !important; color: #fff !important; border-color: #3b82f6 !important; font-weight: 700 !important; }
+.cl-tab-all { display: inline-flex; }
+.cl-panel { display: flex; flex-direction: column; gap: 18px; }
+.mobile-only-filter { display: none; margin-bottom: 6px; width: 100%; }
 .music-studio-grid { display: grid; }
 .raw-deep-header { display: flex; }
 .raw-deep-header-row1 { display: flex; }

@@ -1,8 +1,8 @@
-# CẨM NANG KHO NHẠC NỀN EDIT THEO NGÁCH (43 TRACKS) — ĐÃ AUDIT GEMINI MULTIMODAL & FFPROBE
+# CẨM NANG KHO NHẠC NỀN EDIT THEO NGÁCH (49 TRACKS) — ĐÃ AUDIT GEMINI MULTIMODAL & FFPROBE
 
-> **Cập nhật:** 2026-09-21 (Bổ sung 5 tracks Public Domain CC0 chuẩn ngách)
-> **Tổng quy mô:** 43 tracks · **Tổng thời lượng:** 2.88 giờ · **Dung lượng:** 301.76 MB
-> **Phân loại bản quyền:** 🟢 **30 SAFE** (100% YPP) · 🟡 **9 REVIEW** (Thận trọng) · 🔴 **4 COPYRIGHTED** (Cấm bật kiếm tiền)
+> **Cập nhật:** 2026-09-21 (Bổ sung 11 tracks Public Domain CC0 & CC-BY chuẩn ngách)
+> **Tổng quy mô:** 49 tracks · **Tổng thời lượng:** 3.20 giờ · **Dung lượng:** 328.16 MB
+> **Phân loại bản quyền:** 🟢 **36 SAFE** (100% YPP) · 🟡 **9 REVIEW** (Thận trọng) · 🔴 **4 COPYRIGHTED** (Cấm bật kiếm tiền)
 
 ---
 
@@ -32,9 +32,9 @@
 
 ---
 
-## 2. 🟢 DANH SÁCH 25 BÀI AN TOÀN BẬT KIẾM TIỀN 100% (SAFE YPP)
+## 2. 🟢 DANH SÁCH 36 BÀI AN TOÀN BẬT KIẾM TIỀN 100% (SAFE YPP)
 
-Bao gồm 8 bài nhạc nền ambient/piano độc quyền và 17 bài cinematic từ YouTube Audio Library.
+Bao gồm 8 bài nhạc nền ambient/piano độc quyền, 17 bài cinematic từ YouTube Audio Library và 11 bài Public Domain CC0 / CC-BY chuẩn từng ngách.
 
 | # | Tên file | Thời lượng | Thể loại & Phong cách | Mood | Ngách khuyến nghị |
 |:---|:---|:---:|:---|:---|:---|
@@ -68,6 +68,12 @@ Bao gồm 8 bài nhạc nền ambient/piano độc quyền và 17 bài cinematic
 | 28 | `Beethoven - Moonlight Sonata Op 27 No 2 (Allegretto).mp3` | 02:08 | Neoclassical Piano Thư Giãn | Thanh thản, thư thái, an yên | Sức Khỏe / Lão Hóa / Senior Wisdom |
 | 29 | `Gustav Holst - Mars The Bringer of War (Epic Brass).mp3` | 07:18 | Epic Orchestral Brass / Kèn đồng | Dồn dập, căng thẳng, chiến lược | Quân Sự / Địa Chính Trị / Chiến Lược |
 | 30 | `Nature ASMR - Summer Thunderstorm in the Woods.mp3` | 07:08 | Âm thanh thiên nhiên ASMR | Mưa rơi êm dịu, sấm rền xa | Địa Lý / Sinh Tồn Hoang Dã / Ru Ngủ |
+| 31 | `Guzheng Morning - Antti Luode (Chinese Traditional Harp).mp3` | 03:37 | Cổ phong / Đàn Cổ Tranh (Guzheng) | Tiên khí, thanh nhã, hoài niệm | Drama / Cổ Trang / Tiên Hiệp |
+| 32 | `Pop Pipa - Antti Luode (Chinese Traditional Lute).mp3` | 03:49 | Dân gian / Đàn Tỳ Bà (Pipa) | Hào hiệp, sống động, xuất thế | Drama / Kiếm Hiệp / Tiên Hiệp |
+| 33 | `Vivaldi - Winter Mvt 1 Allegro Non Molto (John Harrison Violin).mp3` | 03:29 | Giao hưởng / Dàn dây Staccato | Dồn dập, căng thẳng, truy vết | Kinh Doanh / Tài Chính / Dark Crime |
+| 34 | `Bach - Air on the G String BWV 1068 (Orchestral Suite No 3).mp3` | 04:20 | Giao hưởng cổ điển / Uy nghi | Trang nghiêm, sùng kính, bác học | Triết Lý / Tôn Giáo / Kinh Thánh |
+| 35 | `Erik Satie - Gymnopedie No 3 (Guitar by Michael Laucke).mp3` | 02:03 | Guitar cổ điển độc tấu | Tĩnh lặng, trầm mặc, buông bỏ | Sức Khỏe / Lão Hóa / Senior Wisdom |
+| 36 | `Tchaikovsky - Dance of the Sugar Plum Fairy (Kevin MacLeod).mp3` | 01:46 | Celesta Orchestral / Cổ tích | Vui tươi, ma thuật, huyền ảo | Trẻ Em / Hoạt Hình 3D / Phép Thuật |
 
 ---
 

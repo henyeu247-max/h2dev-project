@@ -12,7 +12,7 @@
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-unified-topbar-v6">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260921-quick-access-v1">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -461,6 +461,38 @@
       wrap.querySelectorAll('[data-more]').forEach(el => el.classList.remove('hidden'));
       btn.remove();
     }
+    function quickAccessBar(options) {
+      const items = (options && Array.isArray(options.items)) ? options.items.filter(Boolean) : [];
+      if (!items.length) return '';
+      const isTablist = options.mode === 'tab';
+      return `<nav id="${esc(options.id || 'quick-access')}" class="quick-access ${esc(options.className || '')}" aria-label="${esc(options.label || 'Đi nhanh')}">
+        <span class="quick-access__label">${esc(options.label || 'Đi nhanh')}</span>
+        <div class="quick-access__list"${isTablist ? ' role="tablist"' : ''}>
+          ${items.map(item => {
+            const active = Boolean(item.active);
+            const action = item.action || {};
+            const mode = action.type || 'state';
+            const patch = action.patch ? esc(JSON.stringify(action.patch)) : '';
+            const role = isTablist ? ' role="tab"' : '';
+            const selected = isTablist ? ` aria-selected="${active ? 'true' : 'false'}"` : ` aria-pressed="${active ? 'true' : 'false'}"`;
+            return `<button type="button" class="quick-access__button${active ? ' active' : ''}"${role}${selected} data-quick-action="${esc(mode)}" data-quick-patch="${patch}" data-quick-target="${esc(action.target || '')}" data-quick-section="${esc(action.section || '')}" aria-label="${esc(item.label)}" title="${esc(item.label)}"><span class="quick-access__long">${esc(item.label)}</span><span class="quick-access__short">${esc(item.shortLabel || item.label)}</span></button>`;
+          }).join('')}
+        </div>
+      </nav>`;
+    }
+    function quickScrollTo(sectionId, expectedTab) {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (expectedTab && state.tab !== expectedTab) return;
+        const target = document.getElementById(sectionId);
+        if (!target) return;
+        const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        target.scrollIntoView({ block: 'start', behavior: reduced ? 'auto' : 'smooth' });
+      }));
+    }
+    function parseQuickPatch(raw) {
+      if (!raw) return {};
+      try { const patch = JSON.parse(raw); return patch && typeof patch === 'object' ? patch : {}; } catch (e) { return {}; }
+    }
     function bindNicheActions() {
       document.querySelectorAll('[data-open-niche]').forEach(btn => {
         btn.addEventListener('click', e => {
@@ -492,6 +524,45 @@
         };
       });
     }
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-quick-action]');
+      if (!btn) return;
+      e.preventDefault();
+      const type = btn.getAttribute('data-quick-action');
+      const patch = parseQuickPatch(btn.getAttribute('data-quick-patch'));
+      if (type === 'state') {
+        Object.assign(state, patch);
+        render();
+        if (btn.getAttribute('data-quick-section')) quickScrollTo(btn.getAttribute('data-quick-section'), state.tab);
+      } else if (type === 'section') {
+        quickScrollTo(btn.getAttribute('data-quick-section'), state.tab);
+      } else if (type === 'cross-tab') {
+        const target = btn.getAttribute('data-quick-target');
+        if (target) openTab(target, patch);
+      } else if (type === 'strategy-tab') {
+        state.clSubTab = patch.clSubTab || 'principles';
+        const restoreFocus = btn.dataset.quickRestoreFocus === 'true';
+        delete btn.dataset.quickRestoreFocus;
+        render().then(() => {
+          resetScrollToTop();
+          if (!restoreFocus) return;
+          const restored = [...document.querySelectorAll('.quick-access [role="tablist"] [data-quick-action]')]
+            .find(tab => tab.getAttribute('data-quick-patch') === JSON.stringify({ clSubTab: state.clSubTab }));
+          if (restored) restored.focus();
+        });
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      const btn = e.target.closest('.quick-access [role="tablist"] [data-quick-action]');
+      if (!btn || !['ArrowLeft', 'ArrowRight'].includes(e.key)) return;
+      const tabs = [...btn.closest('[role="tablist"]').querySelectorAll('[data-quick-action]')];
+      const index = tabs.indexOf(btn);
+      if (index < 0) return;
+      e.preventDefault();
+      const next = tabs[(index + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+      next.dataset.quickRestoreFocus = 'true';
+      next.click();
+    });
 
 
     function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
@@ -1559,6 +1630,10 @@
       function videoNicheKey(contentNiche) {
         return NICHE_MAP[contentNiche] || (Object.values(NICHE_MAP).includes(contentNiche) ? contentNiche : '');
       }
+      const groupQuickAccess = grouped.length >= 3 && grouped.length <= 5 ? quickAccessBar({
+        id: 'kichban-quick-access', label: 'Đi nhanh đến nhóm đang hiện', mode: 'section',
+        items: grouped.map((g, index) => ({ label: g.niche, shortLabel: g.niche, action: { type: 'section', section: 'kichban-group-' + index } }))
+      }) : '';
       return `
   ${pageBanner('Kịch bản & Tài liệu', list.length + '/' + enriched.length + ' mục · gắn theo ngách nội dung, không trùng Nguồn reup', [
         { icon: ICONS.doc, label: 'Tổng mục', value: enriched.length, sub: list.length === enriched.length ? 'Hiện tất cả' : 'Đang lọc ' + list.length },
@@ -1609,11 +1684,12 @@
       </div>
     </div>
   </div>
-  <div class="space-y-6">
-    ${grouped.map(g => {
+  ${groupQuickAccess}
+  <div class="space-y-6" id="kichban-results">
+    ${grouped.map((g, index) => {
         const vKey = videoNicheKey(g.niche);
         return `
-      <section class="min-w-0">
+      <section id="kichban-group-${index}" class="quick-target min-w-0">
         <div class="flex flex-wrap items-center gap-2 mb-3">
           <h2 class="text-base font-bold text-white font-heading">${esc(g.niche)}</h2>
           <span class="badge badge-muted">${g.items.length} data</span>
@@ -1720,6 +1796,10 @@
       function videoNicheKey(contentNiche) {
         return NICHE_MAP[contentNiche] || (Object.values(NICHE_MAP).includes(contentNiche) ? contentNiche : '');
       }
+      const groupQuickAccess = grouped.length >= 3 && grouped.length <= 5 ? quickAccessBar({
+        id: 'reup-quick-access', label: 'Đi nhanh đến nhóm đang hiện', mode: 'section',
+        items: grouped.map(g => ({ label: TYPE_LABEL[g.type] || g.type, shortLabel: TYPE_LABEL[g.type] || g.type, action: { type: 'section', section: 'reup-group-' + g.type } }))
+      }) : '';
       return `
   ${pageBanner('Nguồn tài nguyên Reup', list.length + '/' + enriched.length + ' nguồn · chỉ tham khảo, phải transform trước khi dùng', [
         { icon: ICONS.link, label: 'Tổng nguồn', value: enriched.length, sub: list.length === enriched.length ? 'Hiện tất cả' : 'Đang lọc ' + list.length },
@@ -1747,11 +1827,12 @@
       </div>
     </div>
   </div>
-  <div class="space-y-6">
+  ${groupQuickAccess}
+  <div class="space-y-6" id="reup-results">
     ${grouped.map(g => {
         const vKey = videoNicheKey(g.items[0] && g.items[0].contentNiche);
         return `
-      <section class="min-w-0">
+      <section id="reup-group-${esc(g.type)}" class="quick-target min-w-0">
         <div class="flex flex-wrap items-center gap-2 mb-3">
           <h2 class="text-base font-bold text-white font-heading">${esc(TYPE_LABEL[g.type] || g.type)}</h2>
           <span class="badge badge-muted">${g.items.length} nguồn</span>
@@ -2713,6 +2794,11 @@
       }
     }
 
+    function normalizeFilterChipA11y() {
+      document.querySelectorAll('#content button.filter-btn').forEach(btn => {
+        btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false');
+      });
+    }
     async function render() {
       const el = document.getElementById('content');
       el.setAttribute('aria-busy', 'true');
@@ -2759,14 +2845,16 @@
           const curTab = state.clSubTab;
           const isAll = curTab === 'all';
           if (topbarSubnav) {
-            topbarSubnav.innerHTML = `
-              <div class="cl-tabbar">
-                <button type="button" class="cl-tab-btn ${curTab === 'principles' ? 'active' : ''}" data-cl-tab="principles"><span>📊</span> <span>4 Nguyên tắc</span></button>
-                <button type="button" class="cl-tab-btn ${curTab === 'workflow' ? 'active' : ''}" data-cl-tab="workflow"><span>🚀</span> <span>Quy trình A–Z</span></button>
-                <button type="button" class="cl-tab-btn ${curTab === 'distribution' ? 'active' : ''}" data-cl-tab="distribution"><span>📈</span> <span>Phân bổ ngách</span></button>
-                <button type="button" class="cl-tab-btn ${curTab === 'policy' ? 'active' : ''}" data-cl-tab="policy"><span>🛡️</span> <span>YPP & Chính sách</span></button>
-                <button type="button" class="cl-tab-btn cl-tab-all ${isAll ? 'active' : ''}" data-cl-tab="all"><span>📑</span> <span>Tất cả</span></button>
-              </div>`;
+            topbarSubnav.innerHTML = quickAccessBar({
+              id: 'strategy-quick-access', label: 'Nội dung chiến lược', mode: 'tab', className: 'quick-access--topbar',
+              items: [
+                { label: '4 Nguyên tắc', shortLabel: 'Nguyên tắc', active: curTab === 'principles', action: { type: 'strategy-tab', patch: { clSubTab: 'principles' } } },
+                { label: 'Quy trình A–Z', shortLabel: 'Quy trình', active: curTab === 'workflow', action: { type: 'strategy-tab', patch: { clSubTab: 'workflow' } } },
+                { label: 'Phân bổ ngách', shortLabel: 'Ngách', active: curTab === 'distribution', action: { type: 'strategy-tab', patch: { clSubTab: 'distribution' } } },
+                { label: 'YPP & Chính sách', shortLabel: 'YPP', active: curTab === 'policy', action: { type: 'strategy-tab', patch: { clSubTab: 'policy' } } },
+                { label: 'Tất cả nội dung', shortLabel: 'Tất cả', active: isAll, action: { type: 'strategy-tab', patch: { clSubTab: 'all' } } }
+              ]
+            });
             topbarSubnav.classList.remove('hidden');
           }
           if (topbarEl) topbarEl.classList.add('has-subnav');
@@ -2781,6 +2869,7 @@
         }
         bindSearch();
         bindNicheActions();
+        normalizeFilterChipA11y();
 
         // 2. Restore active input focus and cursor position after re-render
         if (activeId) {
@@ -2883,15 +2972,20 @@
       window.addEventListener('visibilitychange', () => { if (!document.hidden) syncRender(); });
 
       // Cử chỉ vuốt trái / phải chuyển tab (Touch Swipe Tabs Navigation)
-      let touchStartX = 0, touchStartY = 0, touchEndX = 0, touchEndY = 0;
+      // Không nhận swipe bắt đầu từ dải tab cuộn ngang hoặc control tương tác.
+      let touchStartX = 0, touchStartY = 0, touchEndX = 0, touchEndY = 0, touchStartedInInteractive = false;
       window.addEventListener('touchstart', (e) => {
         if (!e.touches || !e.touches[0]) return;
+        touchStartedInInteractive = Boolean(e.target.closest('button, a, input, select, textarea, [role="tab"], .cl-tabbar, .vd-topbar-subnav'));
         touchStartX = e.touches[0].screenX;
         touchStartY = e.touches[0].screenY;
       }, { passive: true });
 
       window.addEventListener('touchend', (e) => {
-        if (!e.changedTouches || !e.changedTouches[0]) return;
+        if (touchStartedInInteractive || !e.changedTouches || !e.changedTouches[0]) {
+          touchStartedInInteractive = false;
+          return;
+        }
         touchEndX = e.changedTouches[0].screenX;
         touchEndY = e.changedTouches[0].screenY;
         const dx = touchEndX - touchStartX;

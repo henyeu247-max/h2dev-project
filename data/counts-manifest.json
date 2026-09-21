@@ -1,6 +1,6 @@
 {
   "schema": "h2dev.counts-manifest.v1",
-  "generatedAt": "2026-09-20T21:04:53.494Z",
+  "generatedAt": "2026-09-21T20:04:35.600Z",
   "counts": {
     "videos": 140,
     "videoLessons": 136,
@@ -24,7 +24,7 @@
     "modulesWithBadge": 130,
     "videoDirs": 140,
     "mediaFiles": 140,
-    "mediaBytes": 23506685011,
+    "mediaBytes": 23507510459,
     "docsTotalDirs": 142,
     "docsVideoDirs": 136,
     "docsZoomDirs": 5,

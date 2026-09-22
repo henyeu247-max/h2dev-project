@@ -1,4 +1,4 @@
-﻿/* H2DEV PWA shell cache — G5 */
+/* H2DEV PWA shell cache — G5 */
 const CACHE = 'h2dev-shell-v20260922-g5';
 const SHELL = [
   '/',

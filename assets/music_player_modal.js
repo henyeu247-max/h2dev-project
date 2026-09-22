@@ -1,4 +1,4 @@
-﻿// H2DEV Project - Interactive Music Studio Modal
+// H2DEV Project - Interactive Music Studio Modal
 (function() {
   let musicData = null;
   let currentFilter = 'all';
@@ -7,7 +7,7 @@
   async function loadMusicCatalog() {
     if (musicData) return musicData;
     try {
-      const res = await fetch('data/music_catalog.json?v=20260921-bugbot-v1');
+      const res = await fetch('data/music_catalog.json?v=20260922-g2');
       musicData = await res.json();
       return musicData;
     } catch (e) {
@@ -17,6 +17,7 @@
   }
 
   function esc(s) {
+    if (globalThis.H2Core && typeof globalThis.H2Core.esc === 'function') return globalThis.H2Core.esc(s);
     return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
 
@@ -28,7 +29,7 @@
                                 'background:rgba(245,158,11,0.2); border:1px solid rgba(245,158,11,0.4); color:#fde68a;');
     const badgeText = isSafe ? '🟢 SAFE (YPP)' : (isCopy ? '🔴 BẢN QUYỀN' : '🟡 THẬN TRỌNG');
     const rawSrc = t.streamUrl || ('assets/nhac-nen/' + (t.folder && t.folder !== 'Nhạc nền' ? t.folder + '/' : '') + t.fileName);
-    const streamSrc = rawSrc + (rawSrc.includes('?') ? '&' : '?') + 'v=20260921-v49';
+    const streamSrc = rawSrc + (rawSrc.includes('?') ? '&' : '?') + 'v=20260922-g2';
 
     return `
       <div style="background:#0f172a; border:1px solid ${isCopy ? '#7f1d1d' : '#1e293b'}; border-radius:0.75rem; padding:0.85rem 1rem; display:flex; flex-direction:column; gap:0.5rem; box-shadow:0 4px 14px rgba(0,0,0,0.35);">
@@ -64,7 +65,7 @@
         <!-- Row 5: Footer & Copy Path (Chống tràn viền) -->
         <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.68rem; color:#64748b; border-top:1px solid #1e293b; padding-top:0.35rem; gap:0.5rem; min-width:0;">
           <span class="truncate" style="flex:1; min-width:0;" title="${esc(t.fileName)}">📁 ${esc(t.fileName)}</span>
-          <button type="button" onclick="navigator.clipboard.writeText('${esc(t.localAbsPath || t.fileName).replace(/'/g, "\\'")}'); alert('Đã copy đường dẫn local: ${esc(t.id)}');" style="background:none; border:none; color:#38bdf8; cursor:pointer; font-size:0.68rem; font-weight:700; padding:0; flex-shrink:0; white-space:nowrap;">📋 Copy Path</button>
+          <button type="button" class="js-copy-music-path" data-copy-path="${esc(t.localAbsPath || t.fileName)}" data-copy-id="${esc(t.id)}" style="background:none; border:none; color:#38bdf8; cursor:pointer; font-size:0.68rem; font-weight:700; padding:0; flex-shrink:0; white-space:nowrap;">📋 Copy Path</button>
         </div>
       </div>
     `;
@@ -82,10 +83,25 @@
     if (!modal) {
       modal = document.createElement('div');
       modal.id = 'music-studio-modal';
+      modal.setAttribute('role', 'dialog');
+      modal.setAttribute('aria-modal', 'true');
+      modal.setAttribute('aria-label', 'Trạm nhạc nền');
+      modal.tabIndex = -1;
       modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:100005; background:rgba(0,0,0,0.92); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
       document.body.appendChild(modal);
 
       modal.onclick = (e) => {
+        const copyBtn = e.target.closest && e.target.closest('.js-copy-music-path');
+        if (copyBtn) {
+          const path = copyBtn.getAttribute('data-copy-path') || '';
+          const id = copyBtn.getAttribute('data-copy-id') || '';
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(path).then(() => alert('Đã copy đường dẫn local: ' + id)).catch(() => alert('Không copy được path: ' + id));
+          } else {
+            alert('Trình duyệt không hỗ trợ clipboard API — path: ' + path);
+          }
+          return;
+        }
         if (e.target === modal || e.target.id === 'close-music-studio' || e.target.closest('#close-music-studio')) {
           modal.style.display = 'none';
           document.body.style.overflow = '';
@@ -138,6 +154,7 @@
       const wildlifeCount = cat.tracks.filter(t => (t.categoryNiche || '').toLowerCase().includes('sinh tồn')).length;
       const militaryCount = cat.tracks.filter(t => { const cn = (t.categoryNiche || '').toLowerCase(); return cn.includes('quân sự') || cn.includes('chiến tranh') || cn.includes('mars'); }).length;
       const ambientCount = cat.tracks.filter(t => { const cn = (t.categoryNiche || '').toLowerCase(); return cn.includes('long-form') || (t.durationSeconds || 0) >= 600; }).length;
+      const nicheCount = new Set(cat.tracks.map(t => t.categoryNiche || 'Khác')).size;
 
       modal.innerHTML = `
         <div style="position:relative; width:100%; max-width:1180px; max-height:92vh; background:#070a12; border:1px solid #334155; border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 60px rgba(0,0,0,0.95);">
@@ -146,7 +163,7 @@
             <div style="min-width:0; flex:1;">
               <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap;">
                 <span style="font-size:1.25rem;">🎧</span>
-                <h3 style="font-size:1.05rem; font-weight:800; color:#fff; margin:0;" class="truncate">Trạm Nhạc Nền 15 Ngách YouTube</h3>
+                <h3 style="font-size:1.05rem; font-weight:800; color:#fff; margin:0;" class="truncate">Trạm Nhạc Nền ${nicheCount} Ngách YouTube</h3>
                 <span style="font-size:0.7rem; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff;">${totalCount} Tracks (${safeCount} SAFE YPP)</span>
               </div>
             </div>

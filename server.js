@@ -7,6 +7,32 @@ const zlib = require('node:zlib');
 const { initLogRotation, checkAndRotateAll } = require('./scripts/logrotate');
 const { searchFts, mutateDatabase, query, queryOne } = require('./scripts/master_dal');
 
+// G4: Security headers chung cho moi response
+const SECURE_HEADERS = {
+  'X-Content-Type-Options': 'nosniff',
+  'X-Frame-Options': 'SAMEORIGIN',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=()',
+  'Content-Security-Policy': [
+    "default-src 'self'",
+    "script-src 'self'",
+    "script-src-attr 'unsafe-inline'",
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data: blob: https://i.ytimg.com https://yt3.ggpht.com https://*.googleusercontent.com https://*.ggpht.com https://i9.ytimg.com",
+    "media-src 'self' blob:",
+    "font-src 'self'",
+    "connect-src 'self'",
+    "frame-src 'self' https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com",
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "frame-ancestors 'self'"
+  ].join('; ')
+};
+function withSecure(extra) {
+  return Object.assign({}, SECURE_HEADERS, extra || {});
+}
+
 // Khởi tạo cơ chế Log Auto-Rotation (tự nén .gz khi log > 10MB, quét dọn file mồ côi)
 initLogRotation(30 * 60 * 1000); // Quét định kỳ mỗi 30 phút
 
@@ -67,7 +93,7 @@ function matchEtag(clientHeader, serverEtag) {
 function sendFile(req, res, full, mime, rangeHeader, isHead = false){
   fs.stat(full, (err, st)=>{
     if(err || !st.isFile()){
-      res.writeHead(404, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+      res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
       res.end('404 Not Found');
       return;
     }
@@ -81,25 +107,25 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
         if(rs==='' && re!==''){ start=Math.max(0,total-parseInt(re,10)); end=total-1; }
         else if(rs!==''){ start=parseInt(rs,10); end=(re!==''?parseInt(re,10):total-1); }
         if(start>end || start>=total || end<0){
-          res.writeHead(416, {'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+          res.writeHead(416, withSecure({'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
           res.end('Range Not Satisfiable');
           return;
         }
         end=Math.min(end,total-1);
         status=206;
       } else {
-        res.writeHead(416, {'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+        res.writeHead(416, withSecure({'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
         res.end('Range Not Satisfiable');
         return;
       }
     }
-    const headers = {
+    const headers = Object.assign(withSecure({
       'Content-Type': mime,
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
       'Content-Disposition': 'inline',
       'Vary': 'Accept-Encoding',
-    };
+    }), SECURE_HEADERS);
 
     const etag = `W/"${st.mtimeMs.toString(36)}-${st.size.toString(36)}"`;
     headers['ETag'] = etag;
@@ -206,8 +232,8 @@ function sendJson(req, res, status, value, isHead = false, extraHeaders = {}){
     'Content-Type':'application/json; charset=utf-8',
     'Access-Control-Allow-Origin':'*',
     'Cache-Control':'no-store',
-    'X-Content-Type-Options':'nosniff',
     'Vary': 'Accept-Encoding',
+    ...SECURE_HEADERS,
     ...extraHeaders,
   };
 
@@ -229,12 +255,11 @@ function sendJson(req, res, status, value, isHead = false, extraHeaders = {}){
 
 const server = http.createServer(async (req,res)=>{
   if(req.method === 'OPTIONS'){
-    res.writeHead(204, {
+    res.writeHead(204, withSecure({
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, Range',
-      'X-Content-Type-Options': 'nosniff',
-    });
+    }));
     res.end();
     return;
   }
@@ -314,7 +339,7 @@ const server = http.createServer(async (req,res)=>{
       'Allow': 'GET, HEAD, OPTIONS',
       'Content-Type': 'text/plain; charset=utf-8',
       'Access-Control-Allow-Origin': '*',
-      'X-Content-Type-Options': 'nosniff',
+      ...SECURE_HEADERS,
     });
     res.end('Method Not Allowed');
     return;
@@ -327,7 +352,7 @@ const server = http.createServer(async (req,res)=>{
     res.writeHead(400, {
       'Content-Type': 'text/plain; charset=utf-8',
       'Access-Control-Allow-Origin': '*',
-      'X-Content-Type-Options': 'nosniff',
+      ...SECURE_HEADERS,
     });
     res.end('400 Bad Request: Malformed URI');
     return;
@@ -352,7 +377,7 @@ const server = http.createServer(async (req,res)=>{
 
   // Bảo vệ cơ bản: Chống path traversal vượt ra ngoài thư mục dự án ROOT
   if(relative === '..' || relative.startsWith('..'+path.sep) || path.isAbsolute(relative)){
-    res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
     res.end('Forbidden');
     return;
   }
@@ -360,7 +385,7 @@ const server = http.createServer(async (req,res)=>{
   // Bảo vệ file secret cấu hình môi trường (.env)
   const baseName = path.basename(full).toLowerCase();
   if (baseName.startsWith('.env')) {
-    res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
     res.end('Forbidden');
     return;
   }
@@ -372,6 +397,72 @@ const server = http.createServer(async (req,res)=>{
   // Danh sách dưới đây khớp tuyên bố TREE.md (mục "web bị chặn / 403") + bổ sung 16/09/2026.
   // LƯU Ý: tất cả entry viết CHỮ THƯỜNG — so khớp bằng toLowerCase() vì Windows
   // filesystem không phân biệt hoa/thường (tránh bypass kiểu /.GIT/config hay /_PRIVATE/).
+  if (apiPath === '/api/niche-radar') {
+    if (req.method === 'GET' || isHead) {
+      try {
+        const nxPath = path.join(ROOT, 'data-tabs', 'ngach-xanh.json');
+        const nxRaw = JSON.parse(fs.readFileSync(nxPath, 'utf8'));
+        const list = Array.isArray(nxRaw) ? nxRaw : (nxRaw.ngachXanh || []);
+        const items = list.map((n) => {
+          const clean = (n.mauSach || []).length;
+          const ban = (n.mauBan || []).length;
+          const skus = (n.skus || []).length;
+          const hang = Number(n.hang) || 9;
+          const rpmRaw = String(n.rpm || '');
+          const rpmNum = parseFloat((rpmRaw.match(/[0-9]+(?:\.[0-9]+)?/) || [])[0] || '0');
+          // SAI = Search Acquisition Index (demand / discoverability)
+          let sai = 20;
+          if (rpmNum > 0) sai += Math.min(30, rpmNum * 3);
+          if (/\d+[.,]?\d*\s*K|\d+[.,]?\d*\s*M|keyword/i.test(n.evidence || '')) sai += 25;
+          if (hang <= 2) sai += 15; else if (hang <= 5) sai += 8;
+          if (n.xanh === true) sai += 10;
+          sai = Math.max(0, Math.min(100, Math.round(sai)));
+          // PRI = Production Readiness Index
+          let pri = 10;
+          pri += Math.min(30, clean * 8);
+          pri += Math.min(20, skus * 10);
+          if (n.lamDuoc && /C?/i.test(n.lamDuoc)) pri += 20;
+          if (n.mauSach && n.mauSach.length) pri += 10;
+          if (ban === 0) pri += 10;
+          if (n.xanh === true) pri += 10;
+          pri = Math.max(0, Math.min(100, Math.round(pri)));
+          // BOI-like: green ocean = high SAI, mid/low competition proxy
+          const comp = Number(n.canhTranh) || 50;
+          const boi = Math.max(0, Math.min(100, Math.round((sai * 0.55) + (pri * 0.25) + ((100 - comp) * 0.2))));
+          return {
+            ngach: n.ngach,
+            xanh: n.xanh,
+            hang: n.hang,
+            rpm: n.rpm,
+            thiTruong: n.thiTruong,
+            SAI: sai,
+            PRI: pri,
+            BOI: boi,
+            cleanSamples: clean,
+            banSamples: ban,
+            skus: skus,
+            nenLam: !!n.nenLam
+          };
+        }).sort((a, b) => (b.BOI - a.BOI) || (b.SAI - a.SAI));
+        sendJson(req, res, 200, {
+          schema: 'h2dev.niche-radar.v1',
+          metrics: {
+            SAI: 'Search Acquisition Index 0-100 ? demand/discoverability (rpm, keyword evidence, hang, xanh)',
+            PRI: 'Production Readiness Index 0-100 ? mauSach/skus/lamDuoc/clean samples',
+            BOI: 'Blue Ocean composite = 0.55*SAI + 0.25*PRI + 0.20*(100-comp)'
+          },
+          total: items.length,
+          items
+        }, isHead);
+      } catch (e) {
+        sendJson(req, res, 500, { error: String(e.message || e) }, isHead);
+      }
+      return;
+    }
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, isHead);
+    return;
+  }
+
   const SENSITIVE_SEGMENTS = new Set([
     '.git',         // CRITICAL 16/09: toàn bộ lịch sử git từng bị tải qua HTTP (kể cả commit chứa key cũ)
     'node_modules', // dependency tree — không phục vụ web
@@ -395,14 +486,14 @@ const server = http.createServer(async (req,res)=>{
   ]);
   const relSegs = relative.split(path.sep);
   if (relSegs.some(seg => SENSITIVE_SEGMENTS.has(seg.toLowerCase()))) {
-    res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
     res.end('Forbidden');
     return;
   }
   // Bảo vệ file database/secret binary ở thư mục data (không lộ dump toàn bộ DB qua web tĩnh).
   // Bao gồm cả các file phụ trợ của SQLite: -wal, -shm, -journal.
   if (/\.(db|sqlite|sqlite3)(-(wal|shm|journal))?$/i.test(baseName) || /^mcp-keys/i.test(baseName)) {
-    res.writeHead(403, {'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
     res.end('Forbidden');
     return;
   }
@@ -412,7 +503,7 @@ const server = http.createServer(async (req,res)=>{
       const idx = path.join(full, 'index.html');
       fs.stat(idx, (e2,s2)=>{
         if(!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
-        else { res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'}); res.end('404 Not Found'); }
+        else { res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'})); res.end('404 Not Found'); }
       });
       return;
     }
@@ -425,11 +516,11 @@ const server = http.createServer(async (req,res)=>{
       const idx = path.join(full, 'index.html');
       fs.stat(idx, (e2,s2)=>{
         if(!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
-        else { res.writeHead(404,{'Content-Type':'text/plain', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'}); res.end('404: '+urlPath); }
+        else { res.writeHead(404, withSecure({'Content-Type':'text/plain', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'})); res.end('404: '+urlPath); }
       });
       return;
     }
-    res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'});
+    res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
     res.end('404 Not Found: '+urlPath);
   });
 });

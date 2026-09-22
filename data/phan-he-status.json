@@ -1,0 +1,43 @@
+{
+  "schema": "h2dev.phan-he-status.v1",
+  "updatedAt": "2026-09-22T20:17:41+07:00",
+  "PH1": {
+    "name": "GPU Vision SCRFD faceless",
+    "status": "partial",
+    "missing": [
+      "cascade 3 tang SCRFD->Chrominance->ArcFace"
+    ]
+  },
+  "PH2": {
+    "name": "Spider+RSS+Autocomplete+Newborn",
+    "status": "done"
+  },
+  "PH3": {
+    "name": "TMNZ+VSR+BOI+HHI",
+    "status": "done"
+  },
+  "PH3.1": {
+    "name": "SAI Search Acquisition Index",
+    "status": "done",
+    "impl": "GET /api/niche-radar field SAI"
+  },
+  "PH3.7": {
+    "name": "PRI Production Readiness Index",
+    "status": "done",
+    "impl": "GET /api/niche-radar field PRI"
+  },
+  "PH4": {
+    "name": "intelligence.db",
+    "status": "done"
+  },
+  "PH5.2": {
+    "name": "REST API Router",
+    "status": "done",
+    "impl": "/api/search + /api/niche-radar + /api/intelligence/*"
+  },
+  "PH5.3": {
+    "name": "Tab Radar Ngach Xanh",
+    "status": "done",
+    "impl": "panel in renderNgachXanh (PH5.3 Radar Ngach Xanh)"
+  }
+}

@@ -1294,10 +1294,12 @@
     }
   ],
   "auditSummary": {
-    "total": 38,
-    "safe": 25,
+    "total": 49,
+    "safe": 36,
     "review": 9,
     "copyrighted": 4,
-    "auditedAt": "2026-09-16T21:02:00.328Z"
+    "basis": "copyrightRisk",
+    "auditedAt": "2026-09-16T21:02:00.328Z",
+    "recountedAt": "2026-09-22T00:00:00.000Z"
   }
 }

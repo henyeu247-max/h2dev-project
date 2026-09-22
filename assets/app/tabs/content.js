@@ -92,12 +92,12 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${videos.length}/$
     </div>
     <a href="?tab=video&watch=watched" class="text-xs text-brand-400 hover:text-brand-300 font-medium inline-flex items-center gap-1">Xem video đã học <span class="font-mono">→</span></a>
   </div>
-  <div class="w-full h-2 bg-surface-2 overflow-hidden" style="border-radius:2px">
+  <div class="w-full h-2 bg-surface-2 progress-track overflow-hidden" style="border-radius:2px">
     <div class="h-full bg-brand" style="width:${Math.max(pct, inprog ? 3 : 0)}%;border-radius:2px;transition:width 0.5s ease;"></div>
   </div>
 </div>`;
     })()}
-  <div class="grid md:grid-cols-2 gap-6">
+  <div class="grid md:grid-cols-2 gap-6 overview-grid">
 <div class="card p-5">
   <div class="flex items-center justify-between gap-2 mb-1">
     <h2 class="page-h2 mb-0">Thị trường đã gắn</h2>
@@ -683,8 +683,8 @@ async function renderNgachXanh() {
       const items = (radar && radar.items) || [];
       if (!items.length) return '';
       const top = items.slice(0, 8);
-      return '<section class="card p-4 sm:p-5 mb-6"><div class="flex items-center justify-between gap-2 mb-3"><h2 class="text-sm font-bold text-white">PH5.3 Radar Ngach Xanh</h2><span class="text-[10px] font-mono text-gray-400">SAI · PRI · BOI</span></div><div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-3">' + top.map(function (n) {
-        return '<div class="rounded-xl border border-white/10 bg-white/[0.03] p-3 min-w-0"><div class="text-xs font-bold text-white truncate mb-1">' + esc(n.ngach || '') + '</div><div class="flex flex-wrap gap-1.5 text-[10px] font-mono"><span class="text-sky-300">SAI ' + n.SAI + '</span><span class="text-emerald-300">PRI ' + n.PRI + '</span><span class="text-amber-300">BOI ' + n.BOI + '</span></div><div class="text-[10px] text-gray-500 mt-1 truncate">' + (n.xanh === true ? 'XANH' : '') + ' · hang ' + (n.hang || '-') + ' · sku ' + (n.skus || 0) + '</div></div>';
+      return '<section class="card p-4 sm:p-5 mb-6"><div class="flex items-center justify-between gap-2 mb-3"><h2 class="text-sm font-bold text-white">PH5.3 Radar Ngach Xanh</h2><span class="text-[10px] font-mono radar-legend text-[11px] font-mono"><b>SAI</b><span class="sep"> · </span><b>PRI</b><span class="sep"> · </span><b>BOI</b></span></div><div class="radar-grid">' + top.map(function (n) {
+        return '<div class="radar-card rounded-xl border border-white/10 bg-white/[0.03] p-3 min-w-0"><div class="title text-xs font-bold text-white mb-1">' + esc(n.ngach || '') + '</div><div class="radar-metrics"><span><span class="k">SAI</span> <span class="v">' + n.SAI + '</span></span><span><span class="k">PRI</span> <span class="v">' + n.PRI + '</span></span><span><span class="k">BOI</span> <span class="v">' + n.BOI + '</span></span></div><div class="text-[10px] text-gray-500 mt-1 truncate">' + (n.xanh === true ? 'XANH' : '') + ' · hang ' + (n.hang || '-') + ' · sku ' + (n.skus || 0) + '</div></div>';
       }).join('') + '</div></section>';
     })()}
 
@@ -1516,6 +1516,7 @@ async function renderRawKenh() {
     const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
     const page = Math.min(Math.max(1, state.rawPage || 1), totalPages);
     state.rawPage = page;
+    try { const u = new URL(location.href); if (page > 1) u.searchParams.set('page', String(page)); else u.searchParams.delete('page'); history.replaceState(history.state, '', u.pathname + u.search); } catch (e) {}
     const paged = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
     const pager = totalPages <= 1 ? '' : `<div class="flex items-center justify-between gap-2 mb-3 text-xs text-gray-400"><span>Trang ${page}/${totalPages} ? ${filtered.length} h? s?</span><span class="flex gap-1">${page > 1 ? `<button type="button" class="filter-btn" data-action="raw-page" data-page="${page - 1}">? Tr??c</button>` : ''}${page < totalPages ? `<button type="button" class="filter-btn" data-action="raw-page" data-page="${page + 1}">Sau ?</button>` : ''}</span></div>`;
     return pager + `
@@ -1537,7 +1538,7 @@ async function renderRawKenh() {
     return `
     <article class="card overflow-hidden min-w-0 flex flex-col hover:border-brand-500 transition group" data-raw-card="${esc(r.id)}">
       <div class="js-view-raw-image relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700 cursor-pointer" data-src="${esc(imgSrc)}" data-title="${esc((ch.title || r.id).trim())}" title="Bấm xem ảnh kích thước đầy đủ">
-        <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+        <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" width="640" height="360" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
         <div class="absolute top-2 left-2 flex items-center gap-1 z-10">
           <span class="bg-ink-900/80 px-2 py-0.5 rounded-xl text-[10px] font-mono text-gray-300 border border-white/10 truncate">${esc(r.id)}</span>
           ${langInfo ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-[9.5px] shrink-0" title="${esc(langInfo.language || langInfo.code)}">${esc(langInfo.flag)} ${esc(langInfo.code ? langInfo.code.split('-')[0].toUpperCase() : '')}</span>` : ''}
@@ -1612,7 +1613,7 @@ async function renderKenh() {
   }
   function avatarHtml(ch) {
     if (ch.avatar) {
-      return `<img src="${esc(ch.avatar)}" alt="${esc(ch.handle || ch.name || 'Kênh')}" class="w-11 h-11 rounded-xl object-cover shrink-0 bg-ink-700" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm items-center justify-center shrink-0 hidden">${esc(initial(ch.handle))}</div>`;
+      return `<img src="${esc(ch.avatar)}" alt="${esc(ch.handle || ch.name || 'Kênh')}" width="44" height="44" class="w-11 h-11 rounded-xl object-cover shrink-0 bg-ink-700" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm items-center justify-center shrink-0 hidden">${esc(initial(ch.handle))}</div>`;
     }
     return `<div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm flex items-center justify-center shrink-0">${esc(initial(ch.handle))}</div>`;
   }

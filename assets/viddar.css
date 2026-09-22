@@ -797,7 +797,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   }
   .vd-bottom-nav {
     display: grid !important;
-    grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
     position: fixed !important;
     bottom: 0 !important;
     left: 0 !important;
@@ -1320,4 +1320,39 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .bento-grid > *:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .bento-grid > .bento-card:last-child:nth-child(odd) { grid-column: 1 / -1; min-height: 88px; }
   .market-row { grid-template-columns: 6rem minmax(0,1fr) 2rem; }
+}
+
+/* UI Pro balance — dense dashboard, keyboard, bottom nav <=5 */
+button.market-row,
+button.niche-row {
+  appearance: none;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--hairline, var(--border));
+  width: 100%;
+  text-align: left;
+}
+button.market-row:focus-visible,
+button.niche-row:focus-visible,
+.overview-link:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 8px;
+}
+.overview-grid > .card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.overview-grid > .card > .market-list,
+.overview-grid > .card > .niche-list { flex: 1 1 auto; }
+.tq-head { align-items: flex-start; }
+.bento-card { min-width: 0; min-height: 96px; }
+@media (min-width: 1280px) {
+  #panel-root > .tq-head,
+  #panel-root > .bento-grid,
+  #panel-root > .card,
+  #panel-root > .overview-grid { max-width: 1200px; }
 }

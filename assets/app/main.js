@@ -165,6 +165,8 @@
           if (state.rawNiche) url.searchParams.set('rn', state.rawNiche);
           if (state.rawGroup) url.searchParams.set('rg', state.rawGroup);
           if (state.rawQ) url.searchParams.set('rq', state.rawQ);
+          if (state.watchFilter) url.searchParams.set('watch', state.watchFilter);
+          if (state.freeOnly) url.searchParams.set('free', '1');
           history.pushState({ tab: state.tab, market: state.marketFilter, niche: state.nicheFilter }, '', url.pathname + url.search);
         } catch (e) {}
       }
@@ -213,6 +215,14 @@
       try { const patch = JSON.parse(raw); return patch && typeof patch === 'object' ? patch : {}; } catch (e) { return {}; }
     }
     function bindNicheActions() {
+      document.querySelectorAll('[data-kpi-card]').forEach(card => {
+        card.onkeydown = (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            card.click();
+          }
+        };
+      });
       document.querySelectorAll('[data-open-niche]').forEach(btn => {
         btn.addEventListener('click', e => {
           if (btn.hasAttribute('data-open-tab')) return;
@@ -229,7 +239,7 @@
           const tab = btn.getAttribute('data-open-tab');
           const extra = {};
           if (tab === 'kichban') { extra.kindFilter = btn.getAttribute('data-kind') || ''; extra.promptNiche = btn.getAttribute('data-prompt-niche') || ''; extra.promptQ = ''; }
-          if (tab === 'video') { extra.nicheFilter = btn.getAttribute('data-open-niche') || ''; extra.skuFilter = btn.getAttribute('data-skus') || ''; extra.marketFilter = btn.getAttribute('data-market-filter') || ''; extra.q = ''; extra.freeOnly = btn.getAttribute('data-free-only') === 'true'; }
+          if (tab === 'video') { extra.nicheFilter = btn.getAttribute('data-open-niche') || ''; extra.skuFilter = btn.getAttribute('data-skus') || ''; extra.marketFilter = btn.getAttribute('data-market-filter') || ''; extra.q = ''; extra.freeOnly = btn.getAttribute('data-free-only') === 'true'; extra.watchFilter = btn.getAttribute('data-watch-filter') || ''; }
           if (tab === 'kenh') { extra.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; extra.kenhQ = ''; }
           openTab(tab, extra);
         });

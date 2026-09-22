@@ -59,7 +59,7 @@ async function renderTongQuan() {
   const marketRows = Object.entries(market).sort((a, b) => b[1] - a[1]);
   if (emptyMarket) marketRows.push(['Chưa gắn', emptyMarket]);
   const liveFile = kich.filter(x => x.file).length;
-  const overviewNiches = nx.ngachXanh.slice(0, 8);
+  const overviewNiches = nx.ngachXanh.slice(0, 6); // UI-balance: canh 6 row nhu market
   const modulesData = await loadJSON('data/modules.json').catch(() => ({ modules: [] }));
   const moduleCount = safeArray(modulesData.modules).length || safeArray(modulesData).length;
   return `
@@ -79,7 +79,7 @@ async function renderTongQuan() {
 ${statCard(ICONS.video, 'Video khóa học', videos.length, `${free} bài Free · ${videos.length - free} bài Pro`, 'video')}
 ${statCard(ICONS.doc, 'Kịch bản & Tài liệu', kich.length, `${liveFile} file local · catalog`, 'kichban')}
 ${statCard(ICONS.channel, 'Kênh mẫu', kenh.filter(k=>!k.dead).length, `${kenh.length} kênh · ${kenh.filter(k=>k.dead).length} dead ẩn`, 'kenh')}
-${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${videos.length}/${videos.length} video trong catalog`, 'video')}
+${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${SC.pad2(videos.length)} video · catalog local`, 'video')}
   </div>
   ${(function () {
       const w = loadWatched();
@@ -100,10 +100,10 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${videos.length}/$
       <span class="badge badge-green">Đã xem ${watched}/${videos.length} bài (${pct}%)</span>
       ${inprog ? `<span class="badge badge-amber">${inprog} bài đang dở</span>` : ''}
     </div>
-    <a href="?tab=video&watch=watched" class="text-xs text-brand-400 hover:text-brand-300 font-medium inline-flex items-center gap-1">Xem video đã học <span class="font-mono">→</span></a>
+    <button type="button" class="text-xs text-brand-400 hover:text-brand-300 font-medium inline-flex items-center gap-1" data-open-tab="video" data-watch-filter="watched" data-free-only="false">Xem video đã học <span class="font-mono">→</span></button>
   </div>
   <div class="w-full h-2 bg-surface-2 progress-track overflow-hidden" style="border-radius:2px">
-    <div class="h-full bg-brand" style="width:${Math.max(pct, inprog ? 3 : 0)}%;border-radius:2px;transition:width 0.5s ease;"></div>
+    <div class="h-full bg-brand" style="width:${pct}%;border-radius:2px;transition:width 0.5s ease;"></div>
   </div>
 </div>`;
     })()}
@@ -113,15 +113,23 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${videos.length}/$
     <h2 class="page-h2 mb-0">Thị trường đã gắn</h2>
     <span class="text-[11px] font-mono text-gray-500">${videos.length} SKU</span>
   </div>
-  <p class="card-note">${emptyMarket ? `Thanh = tỉ lệ trên tổng kho · ${emptyMarket} chưa gắn` : `Tỉ lệ phân bổ ${videos.length} video theo thị trường (click để lọc)`}</p>
+  <p class="card-note">${emptyMarket ? `Thanh = tỉ lệ trên tổng kho · ${emptyMarket} chưa gắn` : `Tỉ trọng 6 thị trường hàng đầu · 1 video có thể gắn nhiều thị trường (click lọc)`}</p>
   <div class="market-list">
-    ${marketRows.map(([k, c]) => `
+    ${(function () {
+      const top = marketRows.slice(0, 6); // UI-balance 6=6
+      const rest = marketRows.slice(6);
+      const restN = rest.reduce((a, r) => a + r[1], 0);
+      const maxC = Math.max(1, ...marketRows.map(r => r[1]));
+      const rows = top.map(([k, c]) => `
       <button type="button" class="market-row cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors w-full text-left" data-open-tab="video" data-market-filter="${k === 'Chưa gắn' ? '' : esc(k)}" title="Xem video thị trường ${esc(k)}">
-        <span class="market-label ${k === 'Chưa gắn' ? 'text-amber-300' : 'text-fg-2'}">${k}</span>
-        <div class="market-bar"><i style="width:${c / videos.length * 100}%"></i></div>
-        <span class="market-n">${c}</span>
-      </button>`).join('')}
+        <span class="market-label">${k}</span>
+        <div class="market-bar" aria-hidden="true"><i style="width:${Math.max(4, Math.round(c / maxC * 100))}%"></i></div>
+        <span class="market-n">${SC.pad2(c)}</span>
+      </button>`).join('');
+      return rows;
+    })()}
   </div>
+  ${marketRows.length > 6 ? `<button type="button" class="overview-link flex items-center gap-1 mt-3" data-open-tab="video"><span>Xem thêm ${marketRows.length - 6} thị trường</span><span class="font-mono">→</span></button>` : ''}
 </div>
 <div class="card p-5">
   <div class="flex items-center justify-between gap-2 mb-1">
@@ -130,12 +138,27 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${videos.length}/$
   </div>
   <p class="card-note">Top ngách trọng điểm kèm số video live trong kho (click để lọc)</p>
   <div class="niche-list">
-    ${overviewNiches.map(n => {
+    ${(function () {
+      const lives = overviewNiches.map(n => {
+        const sk = safeArray(n.skus).map(s0 => typeof s0 === 'string' ? s0 : (s0 && s0.sku));
+        return videos.filter(v => sk.includes(v.sku) || v.contentNiche === n.ngach).length;
+      });
+      window.__tqMaxLive = Math.max(1, ...lives);
+      window.__tqNicheLives = lives;
+      return '';
+    })()}${overviewNiches.map((n, ni) => {
       const skuList = safeArray(n.skus).map(s => typeof s === 'string' ? s : (s && s.sku));
-      const nLive = videos.filter(v => skuList.includes(v.sku) || v.contentNiche === n.ngach).length;
-      const badge = n.xanh === true ? 'badge-green' : (n.xanh === 'CÓ ĐIỀU KIỆN' || n.xanh === 'THẬN TRỌNG' || n.xanh === 'CÓ MẪU TĂNG') ? 'badge-amber' : 'badge-muted';
-      const label = n.xanh === true ? 'XANH' : n.xanh === 'CÓ ĐIỀU KIỆN' ? 'CÓ ĐK' : n.xanh === 'THẬN TRỌNG' ? 'THẬN TRỌNG' : n.xanh === 'CÓ MẪU TĂNG' ? 'CÓ MẪU TĂNG' : n.xanh;
-      return `<button type="button" class="niche-row cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors w-full text-left" data-open-tab="video" data-open-niche="${esc(n.ngach)}" data-skus="${esc(skuList.join(','))}" title="Lọc video ngách ${esc(n.ngach)}"><span class="badge ${badge}">${label}</span><span class="niche-name">${esc(n.ngach)}</span><span class="niche-n">${nLive ? `${nLive} video` : '0 video'}</span></button>`;
+      const nLive = window.__tqNicheLives[ni];
+      const isGreen = n.xanh === true;
+      const rank = ni + 1;
+      const risk = !isGreen ? (n.xanh === 'CÓ ĐIỀU KIỆN' ? 'CÓ ĐK' : n.xanh === 'THẬN TRỌNG' ? 'THẬN TRỌNG' : n.xanh === 'CÓ MẪU TĂNG' ? 'CÓ MẪU' : (n.xanh && n.xanh !== true ? String(n.xanh) : '')) : '';
+      const maxLive = window.__tqMaxLive;
+      const livePct = nLive ? Math.max(8, Math.round((nLive / maxLive) * 100)) : 0;
+      return `<button type="button" class="niche-row${rank <= 3 ? ' niche-row-top' : ''} cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors w-full text-left" data-open-tab="video" data-open-niche="${esc(n.ngach)}" data-skus="${esc(skuList.join(','))}" title="Lọc video ngách ${esc(n.ngach)}">
+        <span class="niche-name">${esc(n.ngach)}${risk ? ` <span class="niche-risk">${esc(risk)}</span>` : ''}</span>
+        <div class="market-bar niche-bar" aria-hidden="true"><i style="width:${livePct}%"></i></div>
+        <span class="niche-n">${nLive ? SC.pad2(nLive) : '00'}</span>
+      </button>`;
     }).join('')}
   </div>
   ${nx.ngachXanh.length > overviewNiches.length ? `<button type="button" class="overview-link flex items-center gap-1 mt-3" data-open-tab="ngachxanh"><span>Xem toàn bộ ${nx.ngachXanh.length} ngách trong kho</span><span class="font-mono">→</span></button>` : ''}
@@ -147,7 +170,7 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${videos.length}/$
   <h2 class="page-h2 mb-0">Chính sách YouTube phải nhớ</h2>
 </div>
 <ol class="policy-list">
-  ${(nx.thongTinChinhSach2026 || []).map((s, i) => `<li><span class="policy-i">${String(i + 1).padStart(2, '0')}</span><span class="policy-t">${esc(s)}</span></li>`).join('')}
+  ${(nx.thongTinChinhSach2026 || []).map((s, i) => `<li class="policy-item"><span class="policy-i">${String(i + 1).padStart(2, '0')}</span><span class="policy-t">${esc(s)}</span></li>`).join('')}
 </ol>
   </div>`;
 }

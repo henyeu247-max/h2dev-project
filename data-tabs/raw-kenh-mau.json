@@ -1,6 +1,6 @@
 {
   "schema": "h2dev.raw-kenh-mau-metadata.v10-ocr",
-  "updatedAt": "2026-09-16T22:08:28+07:00",
+  "updatedAt": "2026-09-22T20:13:04+07:00",
   "totalRecords": 156,
   "records": [
     {
@@ -31487,8 +31487,8 @@
     "editorialNichesCount": 75,
     "vidiqVerified": 83,
     "vidiqActiveCredits": 5640,
-    "totalAggregatedSubscribers": 41241889,
-    "totalAggregatedViews": 6540964165,
+    "totalAggregatedSubscribers": 43859049,
+    "totalAggregatedViews": 6986341845,
     "vidiqVerifiedUnique": 83,
     "topGrowthChannels30d": [
       {

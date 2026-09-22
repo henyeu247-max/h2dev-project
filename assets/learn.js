@@ -76,6 +76,9 @@
 
   /* ---------- header: progress ring (số % tổng tiến độ) ---------- */
   function renderHeaderProgress(data) {
+    var mods = (data && data.modules) || [];
+    var titleEl = document.getElementById('learn-title');
+    if (titleEl && mods.length) titleEl.textContent = 'Lộ trình ' + mods.length + ' module';
     var st = calcTotalProgress(data);
     var pct = Math.round(st.ratio * 100);
     els.progressText.innerHTML = '<span>' + pct + '%</span>' + st.done + '/' + st.total + ' bài · đã hoàn thành';
@@ -410,6 +413,6 @@
     document.addEventListener('visibilitychange', function () { if (!document.hidden) resync(); });
     });
   }).catch(function (err) {
-    els.panelRoot.innerHTML = '<div class="load-err">⚠️ Không tải được data/modules.json — ' + C.esc(err.message) + '<br>Chạy: <code>node scripts/build-modules-v2.js</code></div>';
+    els.panelRoot.innerHTML = '<div class="load-err">⚠️ Không tải được data/modules.json — ' + C.esc(err.message) + '<br>File này được duy trì thủ công (script build-modules đã archive, KHÔNG chạy lại). Kiểm tra: <code>node scripts/validate-project.js</code></div>';
   });
 })();

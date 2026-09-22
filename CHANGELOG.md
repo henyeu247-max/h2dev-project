@@ -1,3 +1,124 @@
+﻿## 2026-09-22 — GAP-FIX ALL: SUMMARY SSoT, MEDIA FLAGS, PH5 RADAR, G6 CSP
+
+### Data gaps
+- Resync `raw-kenh-mau.summary` (subs 43.8M, views 6.99B) + validate guard summary==computed.
+- `VIDEO-8e0275`: AAC 2kbps / -70 LUFS — silent screen tutorial. Flagged `audio_integrity=broken_empty_track`, `needs_audio_recover`.
+- `VIDEO-f59aa7`: DRM B7 — flagged `broken_drm_packets`.
+- S9 honesty: 15 SKUs `visual_audio_needs_eye_confirm=true`.
+- `data/media-review-queue.json` 41 items (2 hard + 39 review).
+
+### PH modules
+- PH3.1 SAI + PH3.7 PRI + PH5.2 REST: `GET /api/niche-radar`.
+- PH5.3: Radar panel on Ngach Xanh tab.
+- PH1: `scripts/faceless_cascade.py` layer-2 (chrominance+geometry). ArcFace layer-3 TODO.
+- `data/phan-he-status.json` SSoT.
+
+### G6 CSP
+- Extract inline JS: `assets/app/main.js`, `player-main.js`, `learn-main.js`, `sw-register.js`.
+- CSP `script-src 'self'` + `script-src-attr 'unsafe-inline'` (onerror fallbacks).
+- PILOT-01 status=blocked awaiting A/B/C (validate enum).
+
+### Check-Pass
+- validate PASS · sync-counts OK · deep-ui 11/11 · playwright-g2 23/23 on :8899 after restart.
+
+## 2026-09-22 — G3 + G3.1 + G4 + G5: RESTRUCTURE MODULE, SECURITY, P2 (PWA/WebP/Pagination)
+
+### G3 — Tach module khoi index.html
+- `assets/app/taxonomy.js` (H2Taxonomy): RAW_NICHE_GROUPS 12 nhom + NICHE_MAP 73.
+- `assets/app/ui-core.js` (H2UICore): 17 helpers (esc, safeArray, fmt*, watched*, statCard, pageBanner...).
+- `assets/app/tabs/nav.js` (H2TabsNav): tabMarkup, bindTabButton, renderTabs, toggleMoreMenu.
+- `assets/app/modals/raw-deep.js` (H2RawDeepModal): makeControls(closeRawDeepModal, switchRawTab).
+- `assets/app/search.js` (H2Search): merge `/api/search` FTS vao goi y video/raw.
+- `assets/app/g3-inline.css`: ~92 static inline style -> component classes.
+- Fix regression: switchRawTab scope trong openRawDeepModal + window.switchRawTab cho delegation.
+
+### G3.1 — 8 tab renderers
+- `assets/app/tabs/content.js` (H2TabContent.createTabContent): renderTongQuan, renderVideo, renderNgachXanh, renderKichBan, renderNguonReup, renderRawKenh, renderKenh, renderChienLuoc.
+- `index.html`: 329KB/4728 dong -> 183KB/2710 dong.
+
+### G4 — Security headers
+- `server.js` SECURE_HEADERS + withSecure(): CSP (self + YouTube img/frame), X-Frame-Options, Referrer-Policy, Permissions-Policy, nosniff.
+- Ap dung static + sendJson + OPTIONS + error responses.
+- verify tren :8898: deep-ui 11/11 + playwright-g2 23/23 voi CSP active.
+
+### G5 — P2
+- WebP: 61 PNG thumbs -> .webp (4.6MB -> 1.1MB, tiet kiem 3.5MB). 244 ref JSON chuyen `.webp` (giu PNG fallback).
+- Phan trang raw: PAGE_SIZE=24 + data-action raw-page (state.rawPage).
+- PWA: `manifest.json` + `sw.js` shell cache (network-first cho /api, /video, nhac-nen).
+
+### Check-Pass
+- validate-project PASS (thumb check = unique SKU).
+- check-ui-classes OK · guard-no-inline-onclick PASS · sync-counts OK.
+- deep-ui 11/11 · playwright-g2 23/23 (0 console error).
+- Backup: `_backup/20260922-giai-doan31-tabs-content/`.
+
+### Con lai (can admin / anh quyet)
+- Restart `H2DEV_Service` de nạp G4 security headers + G5 sw/manifest tren :8899.
+- (Tuy chon) Xoa PNG goc sau khi nhan WebP — dang GIU theo NO_DELETE asset.
+
+
+## 2026-09-22 — PLAYWRIGHT NGHIỆM THU G2 + SỬA FOCUS-TRAP (23/23 PASS)
+
+### 1. Playwright suite `scripts/playwright-g2-acceptance.js` (Chromium headless, local :8899)
+- 23 check: zero [onclick] DOM · esc 5 ký tự · data-action filter · search ngach/handle · music modal a11y + 49 copy-path · Esc · player desktop 2-col + mobile tab · data-seek · docModal · raw-deep a11y + focus-trap + Esc · learn title động · 0 console error.
+
+### 2. Lỗi Playwright bắt được & đã sửa (chưa pass khi còn fail)
+- **Test sai, không phá design:** `#playerTabSelector` ẩn cố ý ở desktop ≥1024px (`player.css:183-185`, hiện ≤1023px). Test ban đầu click tab ở viewport 1440 → timeout. Sửa test: assert desktop 2-col + chạy tab suite ở mobile 390px.
+- **Focus-trap raw-deep tuột focus (lỗi thật):** `focusModal` chỉ gắn cho quick-video; trapFocus không kéo focus khi `activeElement` nằm ngoài modal. Sửa: `focusModal` cho đủ 4 modal open (raw-deep, transcript, raw-image, quick-video); `trapFocus` preventDefault + kéo focus vào container nếu focus ở ngoài (cả index + h2dev-core).
+
+### 3. Check-Pass sau sửa (đủ mới chốt giai đoạn)
+- **playwright-g2-acceptance.js: 23/23 PASS** (focusInside:true, focus-trap giữ trong modal, 0 console error)
+- deep-ui-acceptance.js local: **11/11 PASS**
+- validate-project.js PASS · check-ui-classes OK · guard-no-inline-onclick PASS · sync-counts --check OK
+
+## 2026-09-22 — GIAI ĐOẠN 2: SINGLE ESC + BỎ ONCLICK STRING + MODAL A11Y FOCUS-TRAP
+
+### 1. Canonical esc() 5 ký tự (`& < > " '`)
+- `h2dev-core.js`: esc thiếu escape `'` → bản CANONICAL đầy đủ, export `H2Core.esc` + `trapFocus` + `focusModal`.
+- `index.html` / `player.html` / `music_player_modal.js`: esc khớp 5 ký tự; music re-export `H2Core.esc` khi có.
+
+### 2. Bỏ 100% onclick string trong template → data-* + delegation
+- index: filter video, retry render, switchRawTab, stopPropagation → `data-action` / `class="js-stop-prop"` + delegated click.
+- player: setPlayerTab, copyHandle, viewDocInModal, seek timestamp, transcript, docModal → `data-player-tab` / `data-copy-handle` / `data-doc-file` / `data-seek` / `data-action`.
+- music: Copy Path → `.js-copy-music-path` + `data-copy-path` (không nhét path vào JS string).
+- Guard `guard-no-inline-onclick.js` mở rộng: quét 6 file UI, cấm mọi attribute handler (trừ onerror placeholder tĩnh), vẫn cho phép gán property `el.onclick=`.
+
+### 3. Modal A11y
+- 6 modal (`raw-deep`, `video-transcript`, `raw-image`, `quick-video`, `music-studio`, `docModal`): `role="dialog"` + `aria-modal="true"` + `aria-label` + `tabindex="-1"`.
+- Focus-trap Tab/Shift+Tab trong modal đang mở; focus control đầu khi mở; Esc chỉ đóng modal đang mở.
+
+### 4. Check-Pass
+- guard PASS (0 inline handler) · check-ui-classes OK · validate-project PASS (140/165/60/157) · sync-counts --check OK · deep-ui-acceptance 11/11 PASS (0 console error) · Local HTTP 200 5/5.
+- Backup `_backup/20260922-giai-doan2-esc-onclick-a11y/`. Cache-bust `APP_BUILD_VER=20260922-g2-esc-onclick-a11y-v1`.
+
+## 2026-09-22 — GIAI ĐOẠN 1: BỎ HARDCODE UI + SEARCH ID + AUDITSUMMARY + LEARN.STALE + CSS CLASS
+
+### 1. Zero Hardcoded Counts trên UI (đếm động 100%)
+- `index.html`: gỡ hardcode `49 Tracks` / `34 ngách` / `12 module` / `61 video` / `36 SAFE` — thay bằng `musicStats` (load `data/music_catalog.json`, đếm `copyrightRisk`), `enrichedNiches.length`, `modules.length`, `vidAnomaly` (`Math.abs(g30.videosPublished)` — công thức có sẵn ~dòng 3125; trước đó KPI vẫn hardcode `61` sai cho record `videosPublished: -21/-17`).
+- `assets/music_player_modal.js`: `15 Ngách` → `new Set(tracks.categoryNiche).size` (runtime = 17).
+- `learn.html` + `learn.js`: title `Lộ trình học` → cập nhật động `Lộ trình N module` từ `data/modules.json`.
+- Header nút Nhạc nền: title cập nhật sau khi load catalog (không hardcode).
+
+### 2. Search index đủ ID (chuẩn t.id / sku / handle)
+- Tab Ngách: `hay` bổ sung `n.ngach`, `n.hang`, `n.skus`.
+- Tab Kênh: `hay` bổ sung handle không `@`, `ngay_do`.
+
+### 3. Đồng bộ `data/music_catalog.json` auditSummary
+- Trước: `total:38, safe:25` (stale). Sau: `total:49, safe:36, review:9, copyrighted:4` khớp 100% đếm `copyrightRisk` trên 49 tracks (basis: copyrightRisk).
+
+### 4. learn.js stale reference
+- Sửa thông báo lỗi `build-modules-v2.js` (đã archive, nguy hiểm nếu chạy) → hướng dẫn `validate-project.js` + lưu ý modules.json duy trì thủ công.
+
+### 5. CSS class mồ côi
+- Đưa `.kpi-val`, `.kpi-sub`, `.raw-deep-container`, `.raw-deep-header-avatar`, `.raw-deep-header-title` vào `assets/viddar.css` (check-ui-classes: 0 cảnh báo).
+
+### 6. Chuẩn hóa docs số liệu
+- `MEMORY.md`, `H2DEV-MASTER-OPERATING-PROMPT.md`: 153 tài liệu → 157 · 45 kịch bản → 60 (khớp counts-manifest).
+
+### 7. Check-Pass
+- `validate-project.js` PASS (140/165/60/157) · `sync-counts.js --check` OK · `check-ui-classes.js` OK · `guard-no-inline-onclick.js` PASS · `deep-ui-acceptance.js` 11/11 PASS · Local HTTP 200: `/`, `/learn.html`, `/lotrinh`, `music_catalog.json`, `modules.json`, `ngach-xanh.json`, `viddar.css`, `music_player_modal.js`.
+- Backup: `_backup/20260922-giai-doan1-ui-fix/`. Cache-bust: `APP_BUILD_VER=20260922-g1-dynamic-counts-v1`, CSS/JS `?v=20260922-g1`.
+
 ## 2026-09-22 — 🛡️ ĐẠT CHUẨN HOÀN MỸ 140/140 MEDIA SẠCH 100% + SỬA LỖI AUDIO VIDEO-f59aa7 + NỐI THÔNG 60 KỊCH BẢN MASTER + DỌN RÁC MCP LEAN PROFILE (-32K TOKENS)
 
 ### 1. Khôi phục & Chuẩn hóa Hoàn hảo Audio VIDEO-f59aa7 (Đạt 140/140 Media Sạch 100%)

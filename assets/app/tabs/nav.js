@@ -36,7 +36,6 @@ function bindTabButton(b) {
 function renderTabs() {
   const nav = document.getElementById('tabs');
   const bottom = document.getElementById('bottom-nav');
-  const mobile = document.getElementById('mobile-tabs');
   nav.innerHTML = TABS.map(t => tabMarkup(t)).join('');
   nav.querySelectorAll('.tab-btn').forEach(bindTabButton);
   if (bottom) {
@@ -56,9 +55,6 @@ function renderTabs() {
         toggleMoreMenu(overflowTabs);
       };
     }
-  }
-  if (mobile) {
-    mobile.innerHTML = '';
   }
 }
 

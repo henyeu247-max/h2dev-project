@@ -1,0 +1,329 @@
+/**
+ * H2DEV — SHELL (Khung trang chuan cho CA 3 trang)
+ * Phu thuoc: assets/h2dev-tokens.css
+ * Che do: DARK-MODE ONLY
+ *
+ * MUC DICH: chot 1 he shell duy nhat de 3 trang (index / learn / player)
+ * KHONG con lech header 56 vs 52px, footer co/khong, back-to-top co/khong.
+ *
+ * PHAM VI PHASE 0: file nay MOI duoc TAO + NAP, CHUA ap vao HTML.
+ * Viec doi HTML sang dung class nay duoc lam o Phase 2 (Shell dong nhat 3 trang).
+ *
+ * QUY UOC: moi class bat dau bang .h2-shell- de khong dam vao he class cu
+ * (.vd-topbar / .learn-header / .app-top) trong luc chuyen doi.
+ */
+
+/* ==========================================================================
+   1. HEADER CHUAN — ap cho ca 3 trang
+   ========================================================================== */
+.h2-shell-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--h2-space-4);
+  height: var(--h2-header-h);
+  min-height: var(--h2-header-h);
+  padding: var(--h2-header-pad);
+  background: var(--topbar-bg);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: var(--h2-z-sticky);
+}
+@media (max-width: 639px) {
+  .h2-shell-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 16px;
+    z-index: var(--h2-z-topbar-mobile);
+  }
+}
+
+/* Cum ben trai: brand */
+.h2-shell-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--h2-space-3);
+  min-width: 0;
+}
+.h2-shell-brand__mark {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--r-md);
+  background: var(--brand);
+  color: var(--brand-fg);
+  font-family: var(--font-mono);
+  font-size: var(--h2-font-2xs);
+  font-weight: var(--h2-fw-bold);
+  line-height: 1;
+}
+.h2-shell-brand__wordmark {
+  font-family: var(--font-display);
+  font-size: var(--h2-font-md);
+  font-weight: var(--h2-fw-bold);
+  letter-spacing: var(--h2-ls-tight);
+  color: var(--fg);
+}
+.h2-shell-brand__wordmark em { color: var(--brand); font-style: normal; }
+.h2-shell-brand__tag {
+  display: block;
+  font-size: var(--h2-font-2xs);
+  color: var(--fg-faint);
+  line-height: var(--h2-lh-heading);
+}
+
+/* Tieu de trang tren header: font-display, dong nhat 3 trang */
+.h2-shell-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--h2-font-md);
+  font-weight: var(--h2-fw-semibold);
+  line-height: var(--h2-lh-display);
+  letter-spacing: var(--h2-ls-tight);
+  color: var(--fg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Cum ben phai: hanh dong */
+.h2-shell-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--h2-space-2);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   2. FOOTER CHUAN — ap cho ca 3 trang (player hien dang THIEU)
+   ========================================================================== */
+.h2-shell-footer {
+  padding: var(--h2-space-3) var(--h2-space-6) var(--h2-space-4);
+  border-top: 1px solid var(--hairline);
+  color: var(--fg-faint);
+  font-size: var(--h2-font-2xs);
+  line-height: var(--h2-lh-heading);
+}
+@media (max-width: 639px) {
+  .h2-shell-footer {
+    padding: var(--h2-space-3) var(--h2-space-4) var(--h2-space-4);
+  }
+}
+
+/* ==========================================================================
+   3. BACK-TO-TOP CHUAN — ap cho ca 3 trang (player hien dang THIEU)
+   ========================================================================== */
+.h2-shell-backtotop {
+  position: fixed;
+  right: var(--h2-space-4);
+  bottom: var(--h2-space-4);
+  z-index: var(--h2-z-drawer);
+  display: grid;
+  place-items: center;
+  width: var(--h2-touch-min);
+  height: var(--h2-touch-min);
+  padding: 0;
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  color: var(--fg-2);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--h2-motion-base) var(--h2-motion-ease),
+              visibility var(--h2-motion-base) var(--h2-motion-ease),
+              background-color var(--h2-motion-fast) var(--h2-motion-ease),
+              border-color var(--h2-motion-fast) var(--h2-motion-ease);
+}
+.h2-shell-backtotop svg { width: var(--h2-icon-20); height: var(--h2-icon-20); }
+.h2-shell-backtotop.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.h2-shell-backtotop:hover {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-fg);
+}
+.h2-shell-backtotop:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+@media (max-width: 639px) {
+  .h2-shell-backtotop { right: var(--h2-space-3); bottom: 76px; }
+}
+
+/* ==========================================================================
+   4. NAV CHUAN (tablist) — 1 he ARIA duy nhat cho 3 trang
+   ========================================================================== */
+.h2-shell-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--h2-space-1);
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.h2-shell-nav::-webkit-scrollbar { display: none; }
+
+.h2-shell-nav__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--h2-space-2);
+  flex-shrink: 0;
+  min-height: var(--h2-touch-min);
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--r-md);
+  color: var(--fg-muted);
+  font-family: var(--font-sans);
+  font-size: var(--h2-font-sm);
+  font-weight: var(--h2-fw-medium);
+  line-height: var(--h2-lh-heading);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--h2-motion-fast) var(--h2-motion-ease),
+              color var(--h2-motion-fast) var(--h2-motion-ease);
+}
+.h2-shell-nav__item:hover { background: var(--surface-2); color: var(--fg-2); }
+.h2-shell-nav__item[aria-selected="true"] {
+  background: var(--surface-2);
+  color: var(--fg);
+  font-weight: var(--h2-fw-semibold);
+}
+.h2-shell-nav__item:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.h2-shell-nav__icon { display: inline-flex; flex: 0 0 auto; }
+.h2-shell-nav__icon svg { width: var(--h2-icon-16); height: var(--h2-icon-16); }
+
+/* ==========================================================================
+   5. BOTTOM NAV CHUAN — ap cho ca 3 trang mobile (learn/player hien THIEU)
+   ========================================================================== */
+.h2-shell-bottomnav {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .h2-shell-bottomnav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: var(--h2-z-topbar-mobile);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    height: 56px;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    background: var(--bottom-nav-bg);
+    border-top: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+.h2-shell-bottomnav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: var(--h2-touch-min);
+  padding: 6px 2px;
+  background: transparent;
+  border: 0;
+  color: var(--fg-faint);
+  font-family: var(--font-sans);
+  font-size: var(--h2-font-2xs);
+  font-weight: var(--h2-fw-medium);
+  line-height: 1.2;
+  cursor: pointer;
+}
+.h2-shell-bottomnav__item svg { width: var(--h2-icon-20); height: var(--h2-icon-20); }
+.h2-shell-bottomnav__item[aria-selected="true"] { color: var(--brand); }
+.h2-shell-bottomnav__item:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--r-md);
+}
+
+/* ==========================================================================
+   6. MAIN + CONTAINER CHUAN — 1 he do le duy nhat cho 3 trang
+   ========================================================================== */
+.h2-shell-main {
+  display: block;
+  min-width: 0;
+}
+.h2-shell-container {
+  width: var(--h2-container-max);
+  margin-inline: auto;
+  padding: var(--h2-space-8) var(--h2-space-4);
+}
+@media (min-width: 640px) {
+  .h2-shell-container { padding: var(--h2-space-8) var(--h2-space-6); }
+}
+@media (max-width: 639px) {
+  .h2-shell-container { padding: 64px var(--h2-space-4) 76px; }
+}
+
+/* ==========================================================================
+   7. BREADCRUMB CHUAN (moi trang deu co, phuc vu check-pass URL)
+   ========================================================================== */
+.h2-shell-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--h2-space-1);
+  margin-bottom: var(--h2-space-3);
+  color: var(--fg-faint);
+  font-size: var(--h2-font-xs);
+  line-height: var(--h2-lh-heading);
+}
+.h2-shell-breadcrumb a {
+  color: var(--fg-muted);
+  text-decoration: none;
+  transition: color var(--h2-motion-fast) var(--h2-motion-ease);
+}
+.h2-shell-breadcrumb a:hover { color: var(--fg); }
+.h2-shell-breadcrumb__sep { color: var(--border-strong); }
+.h2-shell-breadcrumb__current { color: var(--fg-2); }
+
+/* ==========================================================================
+   8. SKIP LINK CHUAN — ap cho ca 3 trang (learn/player hien THIEU)
+   ========================================================================== */
+.h2-shell-skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 10px 16px;
+  background: var(--brand);
+  color: var(--brand-fg);
+  border-radius: 0 0 var(--r-md) 0;
+  font-size: var(--h2-font-sm);
+  font-weight: var(--h2-fw-semibold);
+  text-decoration: none;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: var(--h2-z-toast);
+}
+.h2-shell-skip:focus {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  width: auto;
+  height: auto;
+  clip-path: none;
+  overflow: visible;
+}

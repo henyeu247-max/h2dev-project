@@ -425,12 +425,11 @@ code { font-size: 11px; color: var(--fg-2); }
 .card:hover, .interactive-card:hover, .bento-card:hover, .niche-card:hover { border-color: var(--brand); background: var(--surface-2); }
 .bento-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; width: 100%; min-width: 0; }
 .bento-card { display: flex; align-items: center; gap: 12px; min-height: 112px; padding: 14px 16px; }
-.stat-icon { display: grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; color: var(--brand-ink-ink); background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px; }
+.stat-icon { display: grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; color: var(--brand-ink); background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px; }
 .stat-icon svg { width: 16px; height: 16px; color: inherit; }
 .stat-body { min-width: 0; flex: 1; }
 .stat-value { color: var(--fg); font: 600 22px/1.1 var(--font-sans); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
-.stat-sub { margin-top: 4px; color: var(--fg-muted); font-size: 11px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }
-.stat-sub { margin-top: 4px; color: var(--fg-muted); font-size: 11px; line-height: 1.4; }
+.stat-sub { margin-top: 4px; color: var(--fg-faint); font-size: 11px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }
 .page-h2 { margin: 0 0 8px; color: var(--fg); font-size: 16px; font-weight: 600; letter-spacing: -.02em; line-height: 1.35; }
 .page-lede { margin: 0; color: var(--fg-muted); font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
 
@@ -984,41 +983,29 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .mobile-only-filter { display: block !important; }
 }
 
-/* ── Floating Action Button: Back to Top ── */
+/* ── Floating Action Button: Back to Top ──
+   PHASE 2: da chuyen sang class chuan .h2-shell-backtotop (assets/h2dev-shell.css)
+   Ly do go: ban cu 38x38 (< 44px WCAG 2.5.8), hover doi mau XANH DUONG #1d4ed8 (lech brand),
+   va dung class .visible khac voi .is-visible cua ban chuan -> 2 he chong nhau.
+   Giu lai rule nay chi de tranh hoi quy neu con HTML cu; KHONG them thuoc tinh moi. */
 #btn-back-to-top {
-  position: fixed;
-  bottom: calc(66px + env(safe-area-inset-bottom, 0px));
-  right: 14px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: var(--brand, #2563eb);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 45;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(8px);
-  transition: opacity 0.2s ease, transform 0.2s ease, background 0.15s ease;
+  width: var(--h2-touch-min, 44px);
+  height: var(--h2-touch-min, 44px);
+  background: var(--surface-2);
+  color: var(--fg-2);
+  border: 1px solid var(--border-strong);
 }
-#btn-back-to-top.visible {
+#btn-back-to-top:hover {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-fg);
+}
+/* Ho tro CA HAI ten class trang thai hien (.visible cu + .is-visible moi) */
+#btn-back-to-top.visible,
+#btn-back-to-top.is-visible {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
-}
-#btn-back-to-top:hover {
-  background: #1d4ed8;
-}
-@media (min-width: 641px) {
-  #btn-back-to-top {
-    bottom: 24px;
-    right: 24px;
-  }
 }
 
 /* ── Quick Access: shared dashboard navigation primitive ── */
@@ -1289,9 +1276,15 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   text-wrap: balance;
 }
 
-/* UI2 icon contrast + remaining vision QA */
-.stat-icon, .stat-icon svg { color: var(--brand-ink) !important; }
-.bento-card .stat-icon, .bento-card .stat-icon svg { color: var(--brand-ink) !important; }
+/* UI2 icon contrast — Phase 0: go ep mau !important de icon theo ngu nghia
+   (truoc day moi .stat-icon bi ep 1 mau hong -> mat phan biet trang thai).
+   Mau mac dinh da co tai .stat-icon (color: var(--brand-ink)).
+   Cho phep tung stat card tu dat mau qua [data-icon-tone]. */
+.stat-icon[data-icon-tone="brand"]   { color: var(--brand-ink); }
+.stat-icon[data-icon-tone="success"] { color: var(--success-fg); }
+.stat-icon[data-icon-tone="warning"] { color: var(--warning); }
+.stat-icon[data-icon-tone="info"]    { color: var(--info); }
+.stat-icon[data-icon-tone="muted"]   { color: var(--fg-muted); }
 .progress-track, .w-full.h-2.bg-surface-2 {
   background: #4b5563 !important;
   box-shadow: inset 0 0 0 1px #6b7280;
@@ -1633,3 +1626,9 @@ button.niche-row:focus-visible,
   overflow: visible;
 }
 .bento-card[data-kpi-card] { cursor: pointer; }
+
+/* TQ CTA hit target */
+.tq-head .btn-primary {
+  min-height: 44px;
+  padding: 10px 14px;
+}

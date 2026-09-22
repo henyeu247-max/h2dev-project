@@ -1,5 +1,38 @@
 /* G6 extract from player.html */
 
+/**
+ * PHASE 3 (2026-09-23): helper sinh the icon chuan thay cho emoji.
+ * Dung: ico('file-text')  ->  <span class="h2-icon h2-icon--16" data-h2i="file-text" aria-hidden="true"></span>
+ * Sua: ico('file-text', 20) de doi kich thuoc (chi 14/16/20/24).
+ */
+function ico(name, size) {
+  return '<span class="h2-icon h2-icon--' + (size || 16) + '" data-h2i="' + name + '" aria-hidden="true"></span>';
+}
+
+/**
+ * PHASE 3 (2026-09-23): bo emoji TRANG TRI o dau chuoi du lieu (📌 ⚠️ ✨ 👁 🌐...).
+ * Ly do: data/video_insights.json co 274 emoji nam TRONG noi dung text that
+ * (key_takeaways, avoid_flags). Khong sua data (dung quy tac "sua data phai qua script"),
+ * thay vao do loc o TANG RENDER — dung noi, khong pha du lieu goc.
+ * KHONG dung quoc ky (co the la nhan ngon ngu) va khong dung emoji giua cau.
+ */
+function stripLeadEmoji(s) {
+  return String(s == null ? '' : s)
+    .replace(/^[\s\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{2705}\u{274C}\u{23F3}\u{23F1}\u{2B50}\u{2B1B}\u{2B1C}\u{25A0}-\u{25FF}\u{2190}-\u{21FF}\u{2460}-\u{24FF}]+/u, '')
+    .trim();
+}
+
+/**
+ * PHASE 3: bo emoji trang tri NGOAI quoc ky (🌐 ✨ ...) nhung GIU 🇻🇳 🇯🇵 (nhan ngon ngu).
+ * Dung cho chuoi nhu "🇻🇳 Việt / 🌐 Toàn cầu" -> "🇻🇳 Việt / Toàn cầu".
+ */
+function stripDecorEmoji(s) {
+  return String(s == null ? '' : s)
+    .replace(/[\u{1F300}-\u{1F5FF}\u{1F600}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{2705}\u{274C}\u{23F3}\u{23F1}\u{2B50}\u{2B1B}\u{2B1C}]+/gu, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
 const params = new URLSearchParams(location.search);
 function resolveSku() {
   const pathParts = location.pathname.split('/').filter(Boolean);
@@ -15,8 +48,19 @@ try {
   }
 } catch(e) {}
 const CAT = '/data/catalog_full.json';
-function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));} // CANONICAL — khớp H2Core.esc
-function fmtBytes(n){if(!n)return'';if(n>1e9)return(n/1e9).toFixed(2)+' GB';if(n>1e6)return(n/1e6).toFixed(0)+' MB';return(n/1e3).toFixed(0)+' KB';}
+/**
+ * N11 FIX (2026-09-23): uy quyen cho H2Core (nguon su that duy nhat) khi co, fallback khi vang.
+ * Truoc day la ban sao tay ("CANONICAL — khớp H2Core.esc") -> de troi lech.
+ * player.html nay da nap /assets/h2dev-core.js truoc file nay.
+ */
+function esc(s){
+  if (window.H2Core && typeof window.H2Core.esc === 'function') return window.H2Core.esc(s);
+  return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function fmtBytes(n){
+  if (window.H2Core && typeof window.H2Core.fmtBytes === 'function') return window.H2Core.fmtBytes(n);
+  if(!n)return'';if(n>1e9)return(n/1e9).toFixed(2)+' GB';if(n>1e6)return(n/1e6).toFixed(0)+' MB';return(n/1e3).toFixed(0)+' KB';
+}
 function docName(p){const n=(p||'').split('/').pop().split('?')[0];try{return decodeURIComponent(n);}catch(e){return n;}}
 function badge(label, cls){ return `<span class="badge ${cls}">${label}</span>`; }
 function cleanDocName(name, file){
@@ -64,6 +108,20 @@ function goBack(){
 }
 const btnBack=document.getElementById('btnBack');
 if(btnBack) btnBack.onclick = goBack;
+
+/* PHASE 2: Back-to-top chuan (truoc day player THIEU ca element + JS) */
+(function initBackToTop(){
+  const btt = document.getElementById('btn-back-to-top');
+  if(!btt) return;
+  btt.onclick = function(){ try { window.scrollTo({top:0, behavior:'smooth'}); } catch(e){ window.scrollTo(0,0); } };
+  const onScroll = function(){
+    const top = Math.max(window.scrollY || 0, document.documentElement.scrollTop || 0, document.body.scrollTop || 0);
+    if (top > 320) btt.classList.add('is-visible');
+    else btt.classList.remove('is-visible');
+  };
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+})();
 const floatingBackBtn=document.getElementById('floatingBackBtn');
 if(floatingBackBtn) floatingBackBtn.onclick = goBack;
 
@@ -121,10 +179,14 @@ function setPlayerTab(tab, btn) {
   buttons.forEach(b => {
     b.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-colors text-center flex items-center justify-center gap-1';
     b.setAttribute('aria-selected', 'false');
+    /* PHASE 2: roving tabindex chuan ARIA */
+    b.setAttribute('tabindex', '-1');
+    b.setAttribute('aria-controls', 'playerMain');
   });
   if (btn) {
     btn.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-colors text-center flex items-center justify-center gap-1';
     btn.setAttribute('aria-selected', 'true');
+    btn.setAttribute('tabindex', '0');
   }
   if (window.innerWidth < 1024) {
     if (tab === 'overview') {
@@ -155,6 +217,28 @@ window.addEventListener('resize', () => {
     if (pTranscript) pTranscript.style.display = '';
   }
 });
+
+/* PHASE 2: dieu huong player tab bang ban phim (ArrowLeft/Right/Home/End) */
+(function initPlayerTabKeyboard(){
+  const selector = document.getElementById('playerTabSelector');
+  if (!selector) return;
+  selector.addEventListener('keydown', (e) => {
+    if (['ArrowLeft','ArrowRight','Home','End'].indexOf(e.key) === -1) return;
+    const btns = Array.prototype.slice.call(selector.querySelectorAll('button[role="tab"]'));
+    if (!btns.length) return;
+    let idx = btns.indexOf(document.activeElement);
+    if (idx === -1) idx = btns.findIndex(b => b.getAttribute('aria-selected') === 'true');
+    if (idx === -1) idx = 0;
+    e.preventDefault();
+    let next = idx;
+    if (e.key === 'ArrowLeft') next = (idx - 1 + btns.length) % btns.length;
+    else if (e.key === 'ArrowRight') next = (idx + 1) % btns.length;
+    else if (e.key === 'Home') next = 0;
+    else if (e.key === 'End') next = btns.length - 1;
+    btns[next].focus();
+    btns[next].click();
+  });
+})();
 
 // Khôi phục trạng thái đã lưu
 try{
@@ -241,12 +325,12 @@ window.addEventListener('keydown', (e)=>{
     if(routeSeq){
       routeSeq.textContent = 'Lộ trình · Bài ' + String(routePos + 1).padStart(2,'0') + '/' + route.length;
     }
-    function makeNavUrl(targetSku) {
+    const makeNavUrl = function (targetSku) {
       if (/^\/lotrinh\//i.test(location.pathname)) {
         return '/lotrinh/' + encodeURIComponent(targetSku);
       }
       return 'player.html?sku=' + encodeURIComponent(targetSku) + (params.get('back') ? '&back=1' : '');
-    }
+    };
     if(btnPrev){
       btnPrev.disabled = !prevItem;
       btnPrev.onclick = () => { if(prevItem) location.href = makeNavUrl(prevItem.sku); };
@@ -308,8 +392,8 @@ window.addEventListener('keydown', (e)=>{
     }
     const srcBox=document.getElementById('psources');
     let h='';
-    if(v.origin) h+=`<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer"><span>🌐</span><span>Bài học gốc H2Dev</span></a>`;
-    if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4"><span>⬇</span><span>Tải ${isWebm?'WEBM':'MP4'} Full HD</span></a>`;
+    if(v.origin) h+=`<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer">${ico('globe', 14)}<span>Bài học gốc H2Dev</span></a>`;
+    if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4">${ico('download', 14)}<span>Tải ${isWebm?'WEBM':'MP4'} Full HD</span></a>`;
     srcBox.innerHTML=h;
     if(v.channels&&v.channels.length){
       document.getElementById('pchannels').classList.remove('hidden');
@@ -329,8 +413,8 @@ window.addEventListener('keydown', (e)=>{
         const isExternal = d.link && /^https?:\/\//i.test(d.link) && d.link !== d.file;
         const link=isExternal?`<a href="${esc(d.link)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>↗</span><span>${esc(host||'Mở nguồn')}</span></a>`:'';
         const isReadable = d.file && /\.(md|txt)$/i.test(d.file);
-        const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(d.file)}" data-doc-name="${esc(name)}"><span>👁️</span><span>Đọc trực tiếp</span></button>` : '';
-        const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>📄</span><span>Mở file local</span></a>`:'';
+        const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(d.file)}" data-doc-name="${esc(name)}">${ico('eye', 14)}<span>Đọc trực tiếp</span></button>` : '';
+        const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1">${ico('file-text', 14)}<span>Mở file local</span></a>`:'';
         return `<article class="card p-3.5 min-w-0 overflow-hidden"><div class="text-[13px] font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-[11px] text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
       }).join('');
     }
@@ -343,7 +427,7 @@ window.addEventListener('keydown', (e)=>{
         const el = document.getElementById('mediaIntegrityNotice');
         if (el) {
           const pct = m.ratio_to_expected ? Math.round(m.ratio_to_expected * 100) : null;
-          el.innerHTML = '⚠️ <strong>Cảnh báo chất lượng file:</strong> luồng audio của video này '
+          el.innerHTML = ico('alert-triangle', 14) + ' <strong>Cảnh báo chất lượng file:</strong> luồng audio của video này '
             + 'bị thiếu dữ liệu gốc' + (pct ? ' (chỉ còn ~' + pct + '% packet)' : '')
             + '. Phụ đề bên dưới chỉ tương ứng phần audio còn lại — không phải đầy đủ nội dung bài giảng. '
             + '<span class="text-amber-300/80">Cần thay file gốc để phục hồi.</span>';
@@ -371,7 +455,7 @@ window.addEventListener('keydown', (e)=>{
           const badgesEl = document.getElementById('insightBadges');
           const marketBadgeClass = ins.market_code === 'JP' ? 'badge-red' : (ins.market_code === 'KR' ? 'badge-blue' : (ins.market_code === 'VN' ? 'badge-green' : 'badge-amber'));
           badgesEl.innerHTML = [
-            badge(esc(ins.target_market), marketBadgeClass),
+            badge(esc(stripDecorEmoji(ins.target_market)), marketBadgeClass),
             badge(esc(ins.niche_primary), 'badge-muted'),
             ...(ins.tools_mentioned || []).map(t => badge(esc(t), 'badge-blue font-mono text-[10px]'))
           ].join(' ');
@@ -380,20 +464,21 @@ window.addEventListener('keydown', (e)=>{
           const takeawaysEl = document.getElementById('insightTakeaways');
           if (ins.key_takeaways && ins.key_takeaways.length) {
             takeawaysEl.innerHTML = ins.key_takeaways.map(t => {
-              const colonIdx = t.indexOf(':');
+              const clean = stripLeadEmoji(t);
+              const colonIdx = clean.indexOf(':');
               if (colonIdx > 0 && colonIdx < 60) {
-                let head = t.slice(0, colonIdx).trim().replace(/^[\s📌•\-*]+/, '').trim();
-                const body = t.slice(colonIdx + 1).trim();
-                return `<li class="py-1.5 list-none"><div class="font-bold text-amber-300 text-[12.5px] leading-snug tracking-tight mb-1 flex items-start gap-1"><span>📌</span><span>${esc(head)}:</span></div><div class="text-gray-300 text-xs leading-relaxed pl-5">${esc(body)}</div></li>`;
+                const head = clean.slice(0, colonIdx).trim();
+                const body = clean.slice(colonIdx + 1).trim();
+                return `<li class="py-1.5 list-none"><div class="font-bold text-amber-300 text-[12.5px] leading-snug tracking-tight mb-1 flex items-start gap-1">${ico('pin', 14)}<span>${esc(head)}:</span></div><div class="text-gray-300 text-xs leading-relaxed pl-5">${esc(body)}</div></li>`;
               }
-              return `<li class="py-1 text-gray-300 leading-relaxed text-xs list-none">${esc(t)}</li>`;
+              return `<li class="py-1 text-gray-300 leading-relaxed text-xs list-none">${esc(clean)}</li>`;
             }).join('');
           } else {
             takeawaysEl.innerHTML = `<li class="text-gray-400">Đang cập nhật ghi chú…</li>`;
           }
           // Edit SOP
           const editEl = document.getElementById('insightEditSop');
-          let sopHtml = `<div class="p-2 rounded-xl bg-ink-800/80 border border-emerald-900/30 text-emerald-300 font-medium">✨ ${esc(ins.edit_sop?.primary || 'Quy trình chuẩn bị kịch bản & dựng video độc bản')}</div>`;
+          let sopHtml = `<div class="p-2 rounded-xl bg-ink-800/80 border border-emerald-900/30 text-emerald-300 font-medium flex items-start gap-1.5">${ico('sparkles', 14)}<span>${esc(ins.edit_sop?.primary || 'Quy trình chuẩn bị kịch bản & dựng video độc bản')}</span></div>`;
           if (ins.edit_sop?.additional && ins.edit_sop.additional.length) {
             sopHtml += `<ul class="list-disc list-inside space-y-1 mt-1.5 text-gray-300">${ins.edit_sop.additional.map(a => `<li>${esc(a)}</li>`).join('')}</ul>`;
           }
@@ -402,7 +487,7 @@ window.addEventListener('keydown', (e)=>{
           // Avoid Flags
           const avoidEl = document.getElementById('insightAvoidFlags');
           if (ins.avoid_flags && ins.avoid_flags.length) {
-            avoidEl.innerHTML = ins.avoid_flags.map(f => `<li class="text-rose-300/90 leading-relaxed">${esc(f)}</li>`).join('');
+            avoidEl.innerHTML = ins.avoid_flags.map(f => `<li class="text-rose-300/90 leading-relaxed flex items-start gap-1.5">${ico('alert-triangle', 14)}<span>${esc(stripLeadEmoji(f))}</span></li>`).join('');
           } else {
             avoidEl.innerHTML = `<li class="text-gray-400">Không có cảnh báo nghiêm trọng.</li>`;
           }
@@ -542,17 +627,20 @@ window.addEventListener('keydown', (e)=>{
     const noteInput=document.getElementById('noteInput');
     const btnClearProgress=document.getElementById('btnClearProgress');
     const P95=0.95;
-    function renderState(){
+    const renderState = function (){
       const rec2=store[sku]||{watched:false,note:'',t:0,d:0};
       const d=Number(rec2.d)||0, t=Number(rec2.t)||0;
       const ratio=(d>0&&t>0)?Math.min(1, t/d):0;
       const done=Boolean(rec2.watched)||ratio>=P95;
       const inprog=(!done && ratio>0.02);
-      if(done){ btnW.textContent='✅ Đã xem'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-green-700 text-white'; }
-      else if(inprog){ btnW.textContent='⏳ Đang dở '+Math.round(ratio*100)+'%'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-amber-700 text-white'; }
-      else { btnW.textContent='⬜ Chưa xem'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-300'; }
+      // PHASE 3 (2026-09-23): doi emoji -> .h2-icon. Phai dung innerHTML (khong phai
+      // textContent) vi textContent se xoa luon the <span class="h2-icon">.
+      const iconW = (name, size) => '<span class="h2-icon h2-icon--' + (size || 14) + '" data-h2i="' + name + '" aria-hidden="true"></span>';
+      if(done){ btnW.innerHTML=iconW('check-circle') + ' Đã xem'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-green-700 text-white'; }
+      else if(inprog){ btnW.innerHTML=iconW('hourglass') + ' Đang dở '+Math.round(ratio*100)+'%'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-amber-700 text-white'; }
+      else { btnW.innerHTML=iconW('square') + ' Chưa xem'; btnW.className='inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-300'; }
       if(t>5 && !done){
-        btnR.textContent='▶ Xem tiếp từ '+fmtTime(t);
+        btnR.innerHTML=iconW('play') + ' Xem tiếp từ '+fmtTime(t);
         btnR.classList.remove('hidden');
         btnR.classList.add('inline-flex');
       } else {
@@ -686,6 +774,95 @@ function copyHandle(handle) {
 
 /* ---------- Doc Reader Modal ---------- */
 let currentDocRawText = '';
+
+/* ---------- Doc Reader: render Markdown thanh HTML an toan (esc truoc khi noi suy) ---------- */
+function renderMarkdownDoc(md) {
+  const lines = String(md || '').split('\n');
+  const out = [];
+  let inCode = false;
+  let codeBuf = [];
+  let inTable = false;
+  let tableRows = [];
+
+  function flushTable() {
+    if (!inTable) return;
+    if (tableRows.length > 0) {
+      let html = '<div class="overflow-x-auto my-3"><table class="w-full border-collapse border border-ink-600 text-xs text-left">';
+      let isHeader = true;
+      for (let i = 0; i < tableRows.length; i++) {
+        const row = tableRows[i];
+        if (row.every(c => /^:?-+:?$/.test(c.trim()))) {
+          isHeader = false;
+          continue;
+        }
+        html += '<tr class="' + (isHeader ? 'bg-ink-700 text-white font-semibold' : 'hover:bg-ink-800/50 border-t border-ink-600') + '">';
+        row.forEach(c => {
+          html += '<' + (isHeader ? 'th' : 'td') + ' class="p-2 border border-ink-600">' + inlineMd(c.trim()) + '</' + (isHeader ? 'th' : 'td') + '>';
+        });
+        html += '</tr>';
+      }
+      html += '</table></div>';
+      out.push(html);
+    }
+    tableRows = [];
+    inTable = false;
+  }
+
+  function inlineMd(str) {
+    return esc(str)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:underline">$1</a>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
+      .replace(/\*([^*]+)\*/g, '<em class="text-gray-300">$1</em>')
+      .replace(/`([^`]+)`/g, '<code class="px-1.5 py-0.5 rounded bg-ink-800 border border-ink-600 text-amber-300 font-mono text-xs">$1</code>')
+      .replace(/&lt;br\s*\/?&gt;/gi, '<br>')
+      .replace(/\$\\rightarrow\$|\\rightarrow/g, '→');
+  }
+
+  for (let line of lines) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith('```')) {
+      if (inCode) {
+        out.push('<pre class="p-3.5 bg-ink-900 border border-ink-600 rounded-xl text-xs font-mono text-emerald-300 overflow-x-auto my-2"><code>' + esc(codeBuf.join('\n')) + '</code></pre>');
+        codeBuf = [];
+        inCode = false;
+      } else {
+        flushTable();
+        inCode = true;
+      }
+      continue;
+    }
+    if (inCode) {
+      codeBuf.push(line);
+      continue;
+    }
+    if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+      inTable = true;
+      tableRows.push(trimmed.slice(1, -1).split('|'));
+      continue;
+    } else {
+      flushTable();
+    }
+    if (!trimmed) continue;
+    if (trimmed.startsWith('# ')) {
+      out.push('<h1 class="text-xl font-bold text-white border-b border-ink-600 pb-2 mt-4 mb-2">' + inlineMd(trimmed.slice(2)) + '</h1>');
+    } else if (trimmed.startsWith('## ')) {
+      out.push('<h2 class="text-base font-bold text-brand-400 mt-4 mb-2">' + inlineMd(trimmed.slice(3)) + '</h2>');
+    } else if (trimmed.startsWith('### ')) {
+      out.push('<h3 class="text-sm font-semibold text-sky-300 mt-3 mb-1">' + inlineMd(trimmed.slice(4)) + '</h3>');
+    } else if (trimmed.startsWith('> ')) {
+      out.push('<blockquote class="border-l-4 border-brand-500 bg-brand-500/10 px-3.5 py-2 rounded-r-xl text-gray-300 text-xs my-2">' + inlineMd(trimmed.slice(2)) + '</blockquote>');
+    } else if (trimmed.startsWith('- [ ] ') || trimmed.startsWith('- [x] ')) {
+      const chk = trimmed.startsWith('- [x] ');
+      out.push('<div class="flex items-center gap-2 py-0.5 text-xs ' + (chk ? 'text-emerald-400 font-medium' : 'text-gray-300') + '"><span class="w-4 h-4 rounded border ' + (chk ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 flex items-center justify-center text-[10px]' : 'border-ink-500') + '">' + (chk ? '✓' : '') + '</span>' + inlineMd(trimmed.slice(6)) + '</div>');
+    } else if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+      out.push('<li class="text-xs text-gray-300 ml-4 list-disc my-1">' + inlineMd(trimmed.slice(2)) + '</li>');
+    } else {
+      out.push('<p class="text-xs text-gray-300 leading-relaxed my-1.5">' + inlineMd(trimmed) + '</p>');
+    }
+  }
+  flushTable();
+  return out.join('\n');
+}
 
 async function viewDocInModal(filePath, title) {
   const modal = document.getElementById('docModal');

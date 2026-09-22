@@ -30,7 +30,7 @@
 
 ## Current live baseline (21/09/2026)
 
-- 140 learning records (136 video + 4 Zoom; 27 free · 113 pro) · 153 tài liệu · 165 kênh (152 live · 13 dead) · 34 ngách · 45 kịch bản · 27 nguồn reup.
+- 140 learning records (136 video + 4 Zoom; 27 free · 113 pro) · 157 tài liệu · 165 kênh (152 live · 13 dead) · 34 ngách · 60 kịch bản · 27 nguồn reup.
 - Media: 140/140 file ffprobe có hình + audio (0 file 0 byte) · ~23.51 GB (21.89 GiB) · `docs/` 142 thư mục · `assets/thumbs/` 140/140.
 - Raw channel: 156 record canonical (149 kênh unique) phân rã thành **12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm)**.
 - **Hạ tầng 13 Kỹ Năng Tác Chiến Độc Quyền tại `D:\YTB\.agents\skills\` (ĐỦ FILL 100%):**

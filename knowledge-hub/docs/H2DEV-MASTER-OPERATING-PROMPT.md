@@ -32,7 +32,7 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
   + 140/140 media files ffprobe verified (139 file nguyên vẹn, 1 file DRM hỏng audio VIDEO-f59aa7 do lỗi nén nguồn gốc h2dev.vn; 1 file màn hình câm VIDEO-8e0275).
   + 165 kênh mẫu (152 live · 13 dead; 165/165 có ngày đo đối soát).
   + 156 hồ sơ kênh canonical raw (149 unique) phân rã thành **12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm Hoàn Chỉnh)**, có Voice DNA Studio 45s, cờ ngôn ngữ Language Flag, vidIQ velocity & OCR Outliers.
-  + 153 tài liệu học liệu & master prompts (78 Prompts, 20 Reports, 23 Tools, 16 Lists, 11 Khác, 5 SOPs).
+  + 157 tài liệu học liệu & master prompts (78 Prompts, 20 Reports, 23 Tools, 16 Lists, 11 Khác, 5 SOPs).
   + 34 ngách YouTube khảo sát (xanh:true 11 ngách đếm boolean strict is True).
   + 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng).
   + Master SQLite WAL Database: 2.003 entries FTS5 trong `h2dev_master.db` và 52 channels / 410 edges trong `intelligence.db`.

@@ -1,0 +1,24 @@
+/* G3 - CSS component classes extracted from index.html inline styles (20260922) */
+/* Only static, repeated patterns. Dynamic width%/pct stay inline. */
+
+.c-sky { color: #38bdf8; }
+.c-ink { color: #f8fafc; }
+.c-amber { color: #fcd34d; }
+.c-amber-500 { color: #f59e0b; }
+.c-slate-100 { color: #e2e8f0; }
+.c-slate-300 { color: #cbd5e1; }
+.c-slate-400 { color: #94a3b8; }
+.c-emerald { color: #34d399; }
+.c-green { color: #10b981; }
+.c-violet { color: #c084fc; }
+.c-purple { color: #a855f7; }
+.bg-ink-deep { background-color: #0b0f19 !important; }
+.scroll-none { scrollbar-width: none; }
+.scroll-none::-webkit-scrollbar { display: none; }
+.glyph-inline { display: inline-block; vertical-align: baseline; margin-right: 2px; }
+.min-w-0-g3 { min-width: 0; }
+/* Flex row wrap used across cards */
+.row-wrap { display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+.row-between { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; }
+.row-between-tight { display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; }
+.col-gap-xs { display: flex; flex-direction: column; gap: 0.25rem; }

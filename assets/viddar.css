@@ -1160,6 +1160,46 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .raw-deep-header-avatar-info { display: flex; }
 .raw-deep-header-actions { display: flex; }
 .raw-deep-header-meta { display: flex; }
+
+/* Raw deep modal primitives (moved from inline templates — check-ui-classes) */
+.raw-deep-container {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  max-height: 92vh;
+  background: #0b0f19;
+  border: 1px solid #1e293b;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95);
+}
+.raw-deep-header-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  border: 1px solid #374151;
+  flex-shrink: 0;
+}
+.raw-deep-header-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+}
+.kpi-val {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #38bdf8;
+  margin-top: 0.25rem;
+}
+.kpi-sub {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.2rem;
+}
 .raw-deep-body { display: flex; }
 .raw-deep-quicknav { display: flex; }
 .raw-deep-tabbar { display: flex; align-items: center; gap: 8px; background: #0c1220; border-bottom: 1px solid #1e293b; padding: 7px 16px; flex-shrink: 0; }

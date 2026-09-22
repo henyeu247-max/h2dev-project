@@ -101,7 +101,7 @@ function highlightQuery(text, query) {
 function statCard(icon, label, value, sub, tabTarget, live) {
   const isSvg = typeof icon === 'string' && icon.includes('<svg');
   const glyph = isSvg ? icon : (icon ? `<span class="stat-glyph">${icon}</span>` : '');
-  const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${esc(label)}"` : '';
+  const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${esc(label)}" data-kpi-card="1"` : '';
   return `<div class="bento-card${tabTarget ? ' cursor-pointer hover:border-brand/40 transition-colors' : ''}"${clickAttr}>
 <div class="stat-icon">${glyph}</div>
 <div class="stat-body">

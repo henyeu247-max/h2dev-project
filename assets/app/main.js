@@ -137,6 +137,10 @@
           const url = new URL(cleanPath, location.origin);
           if (state.marketFilter) url.searchParams.set('market', state.marketFilter);
           if (state.nicheFilter) url.searchParams.set('niche', state.nicheFilter);
+          if (state.rawPage && state.rawPage > 1) url.searchParams.set('page', String(state.rawPage));
+          if (state.rawNiche) url.searchParams.set('rn', state.rawNiche);
+          if (state.rawGroup) url.searchParams.set('rg', state.rawGroup);
+          if (state.rawQ) url.searchParams.set('rq', state.rawQ);
           history.pushState({ tab: state.tab, market: state.marketFilter, niche: state.nicheFilter }, '', url.pathname + url.search);
         } catch (e) {}
       }
@@ -605,6 +609,11 @@
         if (titleEl && tabMeta) titleEl.textContent = tabMeta.name;
         document.getElementById('panel-root').setAttribute('aria-labelledby', `tab-${state.tab}`);
 
+    try {
+      const a11yEl = document.getElementById('a11y-status');
+      const meta = TABS.find(t => t.id === state.tab);
+      if (a11yEl && meta) a11yEl.textContent = 'Da mo tab ' + meta.name;
+    } catch (e) {}
         // Update Topbar Sub-Navigation: nằm cùng trong <header class="vd-topbar">
         const topbarEl = document.querySelector('.vd-topbar');
         const topbarSubnav = document.getElementById('topbar-subnav');
@@ -668,7 +677,7 @@
         const hdEl = document.getElementById("hd-stats");
         if (hdEl && window._cachedStatsText) hdEl.textContent = window._cachedStatsText;
       } catch (error) {
-        el.innerHTML = `<div class="card p-6 border-red-800" role="alert"><h1 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h1><p class="text-gray-300">${esc(error.message)}</p><button type="button" class="mt-4 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm" data-action="retry-render">Thử lại</button></div>`;
+        el.innerHTML = `<div class="card p-6 border-red-800" role="alert"><h2 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h2><p class="text-gray-300">${esc(error.message)}</p><button type="button" class="mt-4 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm" data-action="retry-render">Thử lại</button></div>`;
       } finally { el.setAttribute("aria-busy", "false"); }
     }
 
@@ -682,6 +691,10 @@
       if (qp.get('watch')) state.watchFilter = qp.get('watch');
       if (qp.get('niche')) state.nicheFilter = qp.get('niche');
       if (qp.get('market')) state.marketFilter = qp.get('market');
+      if (qp.get('page')) state.rawPage = parseInt(qp.get('page'), 10) || 1;
+      if (qp.get('rn')) state.rawNiche = qp.get('rn');
+      if (qp.get('rg')) state.rawGroup = qp.get('rg');
+      if (qp.get('rq')) state.rawQ = qp.get('rq');
       await hydrateAdminState();
       renderTabs();
       await render();
@@ -912,7 +925,7 @@
             <div class="raw-deep-header" style="padding:1rem 1.25rem; background:#111827; border-bottom:1px solid #1f2937; flex-shrink:0;">
               <div class="raw-deep-header-row1" style="display:flex; align-items:center; justify-content:space-between; width:100%; gap:0.75rem;">
                 <div class="raw-deep-header-avatar-info" style="display:flex; align-items:center; gap:0.75rem; min-width:0; flex:1;">
-                  <img src="${esc(pData.avatar || ch.avatar || 'assets/thumbs/placeholder.svg')}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" alt="Avatar" loading="lazy" decoding="async" class="raw-deep-header-avatar" style="width:48px; height:48px; border-radius:0.75rem; object-fit:cover; border:1px solid #374151; flex-shrink:0;">
+                  <img src="${esc(pData.avatar || ch.avatar || 'assets/thumbs/placeholder.svg')}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" alt="Avatar" loading="lazy" decoding="async" class="raw-deep-header-avatar" width="48" height="48" style="width:48px; height:48px; border-radius:0.75rem; object-fit:cover; border:1px solid #374151; flex-shrink:0;">
                   <div style="min-width:0; flex:1;">
                     <div class="row-wrap">
                       <h3 class="raw-deep-header-title truncate" style="font-size:1.1rem; font-weight:800; color:#fff; margin:0;">${esc(pData.title || ch.title || r.id)}</h3>
@@ -1393,7 +1406,7 @@
 
                 <!-- Facade Player Container (Lazy Load YouTube Embed - 0 MB disk, 0ms delay) -->
                 <div id="demo-video-player-${rawId}" style="position:relative; width:100%; aspect-ratio:16/9; background:#000; border-radius:0.75rem; overflow:hidden; border:1px solid #1e293b; box-shadow:0 8px 30px rgba(0,0,0,0.7);">
-                  <img src="https://i.ytimg.com/vi/${demoVid.videoId}/hqdefault.jpg" alt="${esc(demoVid.title)}" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.85);">
+                  <img src="https://i.ytimg.com/vi/${demoVid.videoId}/hqdefault.jpg" alt="${esc(demoVid.title)}" width="480" height="360" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.85);">
                   <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.5) 100%); display:flex; flex-direction:column; justify-content:space-between; padding:0.85rem 1rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem;">
                       <span style="font-size:0.75rem; font-weight:700; color:#fff; background:rgba(0,0,0,0.75); padding:0.25rem 0.6rem; border-radius:0.375rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); line-clamp:1;" class="line-clamp-1">
@@ -1600,7 +1613,7 @@
                     <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; overflow:hidden; display:flex; flex-direction:column; transition:all 0.2s;" class="hover:border-slate-500">
                       <!-- Compact Thumbnail Container with Play Trigger -->
                       <div class="js-quick-video group relative block bg-black overflow-hidden cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" style="aspect-ratio:16/9;" title="Bấm để phát video trực tiếp (${esc(v.title)})">
-                        <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;" class="group-hover:scale-105">
+                        <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" width="320" height="180" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;" class="group-hover:scale-105">
                         
                         <!-- Rank Badge -->
                         <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size:0.65rem; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); z-index:2;" title="Display Rank theo views giảm dần${sourceRank ? ' · Source Rank gốc: #' + sourceRank : ''}">#${displayRank}</span>
@@ -2212,7 +2225,7 @@
                 <button type="button" id="close-raw-img" class="btn-press cursor-pointer" style="padding:0.35rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size:0.8rem; font-weight:600;">✕ Đóng</button>
               </div>
               <div style="padding:0.75rem; overflow:auto; max-height:calc(92vh - 55px); display:flex; align-items:center; justify-content:center; background:#000;">
-                <img id="raw-img-src" src="" alt="Ảnh kênh chi tiết" loading="lazy" decoding="async" style="max-width:100%; max-height:80vh; object-fit:contain; border-radius:0.5rem;">
+                <img id="raw-img-src" src="" alt="Ảnh kênh chi tiết" width="1280" height="720" loading="lazy" decoding="async" style="max-width:100%; max-height:80vh; object-fit:contain; border-radius:0.5rem;">
               </div>
             </div>`;
           document.body.appendChild(modal);

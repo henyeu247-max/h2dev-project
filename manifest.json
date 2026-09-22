@@ -1,0 +1,19 @@
+﻿{
+  "name": "H2DEV Radar kho YouTube",
+  "short_name": "H2DEV",
+  "description": "Radar kho video faceless YouTube — H2DEV",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "assets/thumbs/placeholder.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

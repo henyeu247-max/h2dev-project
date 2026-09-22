@@ -116,8 +116,37 @@ const thumbs = fs.existsSync(path.join(ROOT, 'assets', 'thumbs'))
   ? fs.readdirSync(path.join(ROOT, 'assets', 'thumbs')).filter(name => name !== 'placeholder.svg')
   : [];
 if (videoDirs.length !== EXPECTED_VIDEOS) warnings.push(`video directory count is ${videoDirs.length}, expected ${EXPECTED_VIDEOS}`);
-if (thumbs.length !== EXPECTED_VIDEOS) warnings.push(`thumbnail count is ${thumbs.length}, expected ${EXPECTED_VIDEOS}`);
+const thumbSkus = new Set(thumbs.map(n => n.replace(/\.[^.]+$/, '')));
+if (thumbSkus.size !== EXPECTED_VIDEOS) warnings.push(`thumbnail SKU count is ${thumbSkus.size}, expected ${EXPECTED_VIDEOS} (files=${thumbs.length})`);
 if (channels.length !== EXPECTED_CHANNELS) errors.push(`Expected ${EXPECTED_CHANNELS} channel records; got ${channels.length}`);
+
+// G5-gap: raw-kenh-mau summary phai khop aggregate tinh tu records
+try {
+  const rawKenPath = path.join(ROOT, 'data-tabs', 'raw-kenh-mau.json');
+  if (fs.existsSync(rawKenPath)) {
+    const rawKen = JSON.parse(fs.readFileSync(rawKenPath, 'utf8'));
+    const recs = Array.isArray(rawKen) ? rawKen : (rawKen.records || []);
+    const sum = (!Array.isArray(rawKen) && rawKen.summary) || {};
+    let subs = 0, views = 0, vidiq = 0;
+    for (const x of recs) {
+      const ch = x.channel || {};
+      subs += Number(ch.subscribers) || 0;
+      views += Number(ch.views) || 0;
+      if (x.vidiqVerification && x.vidiqVerification.status === 'VERIFIED') vidiq += 1;
+    }
+    if (sum.totalAggregatedSubscribers != null && Number(sum.totalAggregatedSubscribers) !== subs) {
+      errors.push(`raw-kenh summary subs ${sum.totalAggregatedSubscribers} != computed ${subs}`);
+    }
+    if (sum.totalAggregatedViews != null && Number(sum.totalAggregatedViews) !== views) {
+      errors.push(`raw-kenh summary views ${sum.totalAggregatedViews} != computed ${views}`);
+    }
+    if (sum.vidiqVerified != null && Number(sum.vidiqVerified) !== vidiq) {
+      errors.push(`raw-kenh summary vidiqVerified ${sum.vidiqVerified} != computed ${vidiq}`);
+    }
+  }
+} catch (e) {
+  warnings.push('raw-kenh summary guard error: ' + e.message);
+}
 if (scripts.length !== C.kichBan) warnings.push(`legacy kich-ban.json records are ${scripts.length}, expected ${C.kichBan} local-file extract`);
 if (docsMerged.length !== EXPECTED_DOCUMENTS) errors.push(`Expected ${EXPECTED_DOCUMENTS} live document records; got ${docsMerged.length}`);
 

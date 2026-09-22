@@ -1,0 +1,443 @@
+{
+  "schema": "h2dev.media-review-queue.v1",
+  "source_audit": "_audit/20260918-full-136-audit/report-140.json",
+  "generatedAt": "2026-09-22T20:14:36+07:00",
+  "summary": {
+    "hard_fail": 2,
+    "review_only": 39,
+    "total": 41
+  },
+  "items": [
+    {
+      "sku": "VIDEO-04c2e3",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: vision ghi nhan 1 bat thuong: cac khung hinh gan nhu tinh suot thoi luong video",
+        "S6: ty le neo takeaway/transcript thap (33%, 4/12) — doi chieu tay"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-0bb86b",
+      "hard_issues": [],
+      "review_flags": [
+        "A8d: 5 khoang trong phu de (199s) audio KHONG im lang — can ASR probe"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-10f129",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: thumbnail khong khop noi dung (vision)"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-1aaf46",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (18%, 2/11) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-2277b3",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: thumbnail khong khop noi dung (vision)",
+        "A10: vision ghi nhan 1 bat thuong: thumbnail dung hinh anh AI kiem tien/doanh thu khong lien quan den noi dung quay man hinh phan tich cac kenh YouTube suc khoe"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-28e1cc",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (27%, 3/11) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-2aa1f7",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (21%, 3/14) — doi chieu tay"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-2de9e4",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: thumbnail khong khop noi dung (vision)",
+        "A10: vision ghi nhan 1 bat thuong: Thumbnail khong lien quan den noi dung video (clickbait ve doanh thu va hinh samurai trong khi noi dung la phan tich kenh YouTube suc khoe)"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-348217",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (17%, 1/6) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-35014d",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: thumbnail khong khop noi dung (vision)",
+        "A10: vision ghi nhan 2 bat thuong: Khung hinh cuoi la man hinh trong co luoi do hoa; Cac khung hinh dau gan nhu tinh khong co nhieu thao tac"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-3a38f9",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (17%, 1/6) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-3df94e",
+      "hard_issues": [],
+      "review_flags": [
+        "A8d: 1 khoang trong phu de (24s) audio KHONG im lang — can ASR probe"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-4425fc",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: vision ghi nhan 1 bat thuong: khung hinh bi bat dong trung lap qua cac moc thoi gian"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-458892",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (30%, 6/20) — doi chieu tay"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-46c57e",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (18%, 2/11) — doi chieu tay"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-484f9e",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (17%, 1/6) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-4b3c09",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (10%, 1/10) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-5c438a",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (14%, 2/14) — doi chieu tay"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-5d54d0",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: vision ghi nhan 1 bat thuong: Khung hinh 95% bi man hinh den hoan toan"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-61ad94",
+      "hard_issues": [],
+      "review_flags": [
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-6283a6",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (29%, 4/14) — doi chieu tay"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-7db740",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: vision ghi nhan 1 bat thuong: man hinh gan nhu tinh voi rat it noi dung"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-8603a9",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: thumbnail khong khop noi dung (vision)"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-86c1ec",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: thumbnail khong khop noi dung (vision)",
+        "A10: vision ghi nhan 1 bat thuong: Thumbnail không liên quan đến nội dung video"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-891f32",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (20%, 3/15) — doi chieu tay"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-8bc3ce",
+      "hard_issues": [],
+      "review_flags": [
+        "A8d: 1 khoang trong phu de (30s) audio KHONG im lang — can ASR probe",
+        "A10: vision ghi nhan 1 bat thuong: Khung hinh video gan nhu tinh khong doi qua cac moc thoi gian"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-8e0275",
+      "hard_issues": [
+        "A8f: audio gan nhu rong (chi 0s khong-im-lang / 5294s video)",
+        "B4: audio gan nhu rong (-70.0 LUFS < -45)"
+      ],
+      "review_flags": [],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-9873fb",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: vision ghi nhan 1 bat thuong: Cac khung hinh gan nhu trung lap hoan toan xuyen suot thoi luong"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-989053",
+      "hard_issues": [],
+      "review_flags": [
+        "A8d: 5 khoang trong phu de (147s) audio KHONG im lang — can ASR probe"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-9aff6d",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (27%, 3/11) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-9ef6fe",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: thumbnail khong khop noi dung (vision)",
+        "A10: vision ghi nhan 1 bat thuong: Thumbnail dang text update key khong lien quan den noi dung phan tich kenh YouTube trong video"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-DD983D",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (27%, 4/15) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-a7bfd0",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (19%, 3/16) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-b559c8",
+      "hard_issues": [],
+      "review_flags": [
+        "A10: thumbnail khong khop noi dung (vision)"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-bdfa54",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (33%, 2/6) — doi chieu tay"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-c5837a",
+      "hard_issues": [],
+      "review_flags": [
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-d2cd90",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (0%, 0/12) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-e24c31",
+      "hard_issues": [],
+      "review_flags": [
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-e90874",
+      "hard_issues": [],
+      "review_flags": [
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-f59aa7",
+      "hard_issues": [
+        "B7: LUONG AUDIO THIEU DU LIEU THAT [method_1_verdict,method_2a_verdict,method_3_verdict] — packet_rate 13.2/s (chuan 43.06, dat 31%); frame_rate 13.2/s (chuan 43.06, dat 31%); decode probe: lay 10s tai giay 1294.2 chi duoc 1.8s"
+      ],
+      "review_flags": [
+        "A8d: 9 khoang trong phu de (1466s) audio KHONG im lang — can ASR probe"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    },
+    {
+      "sku": "VIDEO-f74bb1",
+      "hard_issues": [],
+      "review_flags": [
+        "S6: ty le neo takeaway/transcript thap (33%, 3/9) — doi chieu tay",
+        "S9: visual_audio_checked=true nhung method=local_transcript_heuristic — can tai xac nhan bang chung hinh/anh"
+      ],
+      "status": "open",
+      "checked_by": null,
+      "decision": null
+    }
+  ]
+}

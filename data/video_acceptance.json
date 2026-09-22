@@ -10,7 +10,7 @@
     "target_language": "en",
     "target_duration_min": 10,
     "target_duration_max": 14,
-    "status": "in_progress",
+    "status": "blocked",
     "execution_mode": "local_dryrun_only",
     "publish_allowed": false,
     "budget_limit_usd": 0.0,
@@ -53,6 +53,17 @@
       "Âm thanh chuẩn -14 LUFS; hình ảnh mỹ thuật đồng nhất (chiaroscuro 16:9); chuyển động pan/zoom không để ảnh tĩnh quá 5s",
       "Toàn bộ quy trình thực hiện cục bộ với chi phí $0, cấu hình an toàn publish_allowed: false"
     ],
-    "blockers": []
-  }
+    "blockers": [
+      "Cho anh chon A/B/C: lam tiep media / dong dry-run / doi pilot",
+      "localized-scripts stub (en 316 words vs master 1927)",
+      "voice/images/subtitles/thumbnail/mp4 pending"
+    ],
+    "decision_required": [
+      "A. Lam tiep pilot: expand EN full 1927 words -> TTS -14 LUFS -> images -> subtitles -> merge MP4 (budget $0)",
+      "B. Dong dry-run: status=paused, ly do thieu pipeline media, khong treo",
+      "C. Doi pilot ngach khac (da co toolkit)"
+    ],
+    "last_gap_review": "2026-09-22T20:14:52+07:00"
+  },
+  "gapReviewUpdatedAt": "2026-09-22T20:14:52+07:00"
 }

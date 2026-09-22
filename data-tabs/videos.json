@@ -24,7 +24,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-thi-truong-nhat-va-phan-tich-cach-edit-de-khong-bi-quet-loi-do-ai-va-mot-so-loi-lien-quan",
     "mp4": "video/VIDEO-DD983D/VIDEO-DD983D.mp4",
-    "image": "assets/thumbs/VIDEO-DD983D.png",
+    "image": "assets/thumbs/VIDEO-DD983D.webp",
     "published_at": "2026-08-14",
     "contentNiche": "Drama Gia Đình & Xã Hội Nhật Bản",
     "channelResolve": [
@@ -58,7 +58,11 @@
     ],
     "tags": [
       "Nhật"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-484f9e",
@@ -84,7 +88,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/ngach-nho-ban-content-thi-truong-viet-va-cach-edit-han-che-loi-quet-do-ai-moi-nhat-hien-tai",
     "mp4": "video/VIDEO-484f9e/VIDEO-484f9e.mp4",
-    "image": "assets/thumbs/VIDEO-484f9e.png",
+    "image": "assets/thumbs/VIDEO-484f9e.webp",
     "published_at": "2026-08-08",
     "contentNiche": "Triết Lý & Phật Pháp Việt Nam",
     "channelResolve": [
@@ -101,7 +105,11 @@
     ],
     "width": 1280,
     "height": 720,
-    "resolution": "720p"
+    "resolution": "720p",
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-e24c31",
@@ -128,13 +136,17 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-moi-cuc-trends-ban-content-view-ngoai-show-kenh-moi-hoan-toan-5-video",
     "mp4": "video/VIDEO-e24c31/VIDEO-e24c31.mp4",
-    "image": "assets/thumbs/VIDEO-e24c31.png",
+    "image": "assets/thumbs/VIDEO-e24c31.webp",
     "published_at": "2026-08-03",
     "contentNiche": "Tâm Linh & Thu Hút May Mắn",
     "tags": [
       "Ngoại",
       "Hàn"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-a7bfd0",
@@ -161,13 +173,17 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-moi-va-kham-kenh-giai-thich-mot-so-loi-tranh-bi-0-view-let-det-khong-len-duoc",
     "mp4": "video/VIDEO-a7bfd0/VIDEO-a7bfd0.mp4",
-    "image": "assets/thumbs/VIDEO-a7bfd0.png",
+    "image": "assets/thumbs/VIDEO-a7bfd0.webp",
     "published_at": "2026-07-29",
     "contentNiche": "Lời Chúa & Tâm Linh Ngoại",
     "tags": [
       "Hàn",
       "Việt"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-4b3c09",
@@ -196,12 +212,16 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-4-ngach-nho-lam-ban-content-thi-truong-han-quoc",
     "mp4": "video/VIDEO-4b3c09/VIDEO-4b3c09.mp4",
-    "image": "assets/thumbs/VIDEO-4b3c09.png",
+    "image": "assets/thumbs/VIDEO-4b3c09.webp",
     "published_at": "2026-07-26",
     "contentNiche": "Ẩm Thực & Mẹo Vặt Hàn Quốc",
     "tags": [
       "Hàn"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-28e1cc",
@@ -242,13 +262,17 @@
     ],
     "origin": "https://h2dev.vn/learn/study/show-kenh-moi-vua-bat-kiem-tien-va-huong-dan-thuc-chien-full-quy-trinh-lam-reup-ngach-nho-hoat-hinh-tu-bilibili",
     "mp4": "video/VIDEO-28e1cc/VIDEO-28e1cc.mp4",
-    "image": "assets/thumbs/VIDEO-28e1cc.png",
+    "image": "assets/thumbs/VIDEO-28e1cc.webp",
     "published_at": "2026-07-22",
     "contentNiche": "Reup Hoạt Hình Bilibili",
     "tags": [
       "Việt",
       "Trung"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-d2cd90",
@@ -277,12 +301,16 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-5-ngach-nho-ban-content-ngoai-moi-nhat",
     "mp4": "video/VIDEO-d2cd90/VIDEO-d2cd90.mp4",
-    "image": "assets/thumbs/VIDEO-d2cd90.png",
+    "image": "assets/thumbs/VIDEO-d2cd90.webp",
     "published_at": "2026-07-16",
     "contentNiche": "Triết Lý & Trẻ Hóa Nhật Bản",
     "tags": [
       "Nhật"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-9aff6d",
@@ -309,12 +337,16 @@
     ],
     "origin": "https://h2dev.vn/learn/study/4-video-no-hon-300k-view-update-2-ngach-moi-cuc-ky-trends-va-huong-dan-edit-tao-khung-cho-ngach-nho",
     "mp4": "video/VIDEO-9aff6d/VIDEO-9aff6d.mp4",
-    "image": "assets/thumbs/VIDEO-9aff6d.png",
+    "image": "assets/thumbs/VIDEO-9aff6d.webp",
     "published_at": "2026-07-12",
     "contentNiche": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật",
     "tags": [
       "Nhật"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-e90874",
@@ -346,13 +378,17 @@
     ],
     "origin": "https://h2dev.vn/learn/study/tang-prompt-master-tu-nhan-ban-sang-moi-thi-truong-bat-ky-mong-muon-huong-dan-thuc-chien",
     "mp4": "video/VIDEO-e90874/VIDEO-e90874.mp4",
-    "image": "assets/thumbs/VIDEO-e90874.png",
+    "image": "assets/thumbs/VIDEO-e90874.webp",
     "published_at": "2026-07-06",
     "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
     "tags": [
       "Ngoại"
     ],
-    "channels": []
+    "channels": [],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-c5837a",
@@ -385,14 +421,18 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-share-cac-ngach-ban-content-va-reup-moi-nhat-tat-ca-thi-truong-nhat-han-viet",
     "mp4": "video/VIDEO-c5837a/VIDEO-c5837a.mp4",
-    "image": "assets/thumbs/VIDEO-c5837a.png",
+    "image": "assets/thumbs/VIDEO-c5837a.webp",
     "published_at": "2026-07-02",
     "contentNiche": "Tâm Linh & Triết Lý Saito Hitori",
     "tags": [
       "Nhật",
       "Hàn",
       "Việt"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-348217",
@@ -420,13 +460,17 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-them-2-ngach-moi-nhat-cuc-trend-thi-truong-han-va-nhat",
     "mp4": "video/VIDEO-348217/VIDEO-348217.mp4",
-    "image": "assets/thumbs/VIDEO-348217.png",
+    "image": "assets/thumbs/VIDEO-348217.webp",
     "published_at": "2026-06-25",
     "contentNiche": "Nhân Bản Thị Trường (Hàn - Nhật)",
     "tags": [
       "Hàn",
       "Nhật"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-f74bb1",
@@ -454,12 +498,16 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-cuc-nho-thi-truong-han-quoc-moi-nhat",
     "mp4": "video/VIDEO-f74bb1/VIDEO-f74bb1.mp4",
-    "image": "assets/thumbs/VIDEO-f74bb1.png",
+    "image": "assets/thumbs/VIDEO-f74bb1.webp",
     "published_at": "2026-06-20",
     "contentNiche": "Sức Khỏe & Rau Củ Dưa Chuột",
     "tags": [
       "Hàn"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-1aaf46",
@@ -511,13 +559,17 @@
     ],
     "origin": "https://h2dev.vn/learn/study/show-kenh-thuc-chien-reup-va-share-them-cac-ngach-reup-cuc-trends",
     "mp4": "video/VIDEO-1aaf46/VIDEO-1aaf46.mp4",
-    "image": "assets/thumbs/VIDEO-1aaf46.png",
+    "image": "assets/thumbs/VIDEO-1aaf46.webp",
     "published_at": "2026-06-17",
     "contentNiche": "Reup & Khai Thác Hoạt Hình",
     "tags": [
       "Trung"
     ],
-    "channels": []
+    "channels": [],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-21956b",
@@ -541,7 +593,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-nhan-ban-thi-truong-han-nhat-va-viet",
     "mp4": "video/VIDEO-21956b/VIDEO-21956b.mp4",
-    "image": "assets/thumbs/VIDEO-21956b.png",
+    "image": "assets/thumbs/VIDEO-21956b.webp",
     "published_at": "2026-06-15",
     "contentNiche": "Tâm Linh & Thu Hút May Mắn",
     "tags": [
@@ -609,7 +661,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-moi-va-show-thuc-te-them-kenh-nhan-ban-thi-truong",
     "mp4": "video/VIDEO-34c92b/VIDEO-34c92b.mp4",
-    "image": "assets/thumbs/VIDEO-34c92b.png",
+    "image": "assets/thumbs/VIDEO-34c92b.webp",
     "published_at": "2026-06-10",
     "contentNiche": "Triết Lý & Phật Pháp",
     "tags": [
@@ -646,7 +698,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/bat-kiem-tien-kenh-hoc-vien-pro",
     "mp4": "video/VIDEO-21824a/VIDEO-21824a.mp4",
-    "image": "assets/thumbs/VIDEO-21824a.png",
+    "image": "assets/thumbs/VIDEO-21824a.webp",
     "published_at": "2026-06-06",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
@@ -674,7 +726,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/kenh-moi-tao-6-ngay-va-dang-duoc-5-video-da-du-bat-kiem-tien-update-2-ngach-ban-content-view-ngoai-moi-nhat",
     "mp4": "video/VIDEO-84a039/VIDEO-84a039.mp4",
-    "image": "assets/thumbs/VIDEO-84a039.png",
+    "image": "assets/thumbs/VIDEO-84a039.webp",
     "published_at": "2026-06-05",
     "contentNiche": "Tâm Linh & Thu Hút May Mắn",
     "tags": [
@@ -704,7 +756,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/kenh-moi-chi-7-video-da-no-du-dieu-kien-bat-kiem-tien-update-share-them-ngach-thi-truong-viet-va-nhat",
     "mp4": "video/VIDEO-817ae6/VIDEO-817ae6.mp4",
-    "image": "assets/thumbs/VIDEO-817ae6.png",
+    "image": "assets/thumbs/VIDEO-817ae6.webp",
     "published_at": "2026-06-03",
     "contentNiche": "Tâm Linh & Thu Hút May Mắn",
     "tags": [
@@ -733,7 +785,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-fix-va-giai-thich-cach-tao-tai-khoan-google-adsense-ga-an-toan-trau-nhat-de-khong-bi-quet",
     "mp4": "video/VIDEO-4425fc/VIDEO-4425fc.mp4",
-    "image": "assets/thumbs/VIDEO-4425fc.png",
+    "image": "assets/thumbs/VIDEO-4425fc.webp",
     "published_at": "2026-05-30",
     "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
     "tags": [
@@ -761,7 +813,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-3-ngach-nho-ban-content-thi-truong-viet-view-qua-kinh-khung-sau-khi-chuyen-dung-chu-dengach",
     "mp4": "video/VIDEO-2de9e4/VIDEO-2de9e4.mp4",
-    "image": "assets/thumbs/VIDEO-2de9e4.png",
+    "image": "assets/thumbs/VIDEO-2de9e4.webp",
     "published_at": "2026-05-28",
     "contentNiche": "Tâm Linh & Thu Hút May Mắn",
     "tags": [
@@ -789,7 +841,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-moi-thi-truong-nhat-ban-lam-ban-content",
     "mp4": "video/VIDEO-2ba0d1/VIDEO-2ba0d1.mp4",
-    "image": "assets/thumbs/VIDEO-2ba0d1.png",
+    "image": "assets/thumbs/VIDEO-2ba0d1.webp",
     "published_at": "2026-05-28",
     "contentNiche": "Triết Lý & Phật Pháp",
     "tags": [
@@ -822,7 +874,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/thuc-chien-huong-dan-train-claude-lam-prompt-bam-theo-kich-ban-doi-thu-xao-nau-cho-bat-ky-chu-de-ngach-nao-muon-quy-trinh-chuan-ban-content-danh-cho-ngach-bam-theo-70-kich-ban-doi-thu",
     "mp4": "video/VIDEO-5d54d0/VIDEO-5d54d0.mp4",
-    "image": "assets/thumbs/VIDEO-5d54d0.png",
+    "image": "assets/thumbs/VIDEO-5d54d0.webp",
     "published_at": "2026-05-23",
     "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
     "tags": [
@@ -850,7 +902,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/share-them-ngach-nho-thi-truong-viet-va-phan-tich-huong-dan-tu-duy-lam-nhan-ban-tat-ca-cac-thi-truong",
     "mp4": "video/VIDEO-2277b3/VIDEO-2277b3.mp4",
-    "image": "assets/thumbs/VIDEO-2277b3.png",
+    "image": "assets/thumbs/VIDEO-2277b3.webp",
     "published_at": "2026-05-20",
     "contentNiche": "Sức Khỏe & Dinh Dưỡng",
     "tags": [
@@ -943,7 +995,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/full-quy-trinh-thuc-chien-huong-dan-dung-claude-train-prompt-bat-ky-chu-de-ngach-nao-minh-muon-va-cach-dong-goi-skill-de-dung-de-lam-viet-kich-ban-tao-anh-tao-thumb-video-dai-hon-1-gio",
     "mp4": "video/VIDEO-54c8f7/VIDEO-54c8f7.mp4",
-    "image": "assets/thumbs/VIDEO-54c8f7.png",
+    "image": "assets/thumbs/VIDEO-54c8f7.webp",
     "published_at": "2026-05-18",
     "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
     "tags": [
@@ -1164,7 +1216,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/khang-loi-su-dung-lai-noi-dung-trung-lap-noi-dung-moi-nhat-2026",
     "mp4": "video/VIDEO-46c57e/VIDEO-46c57e.mp4",
-    "image": "assets/thumbs/VIDEO-46c57e.png",
+    "image": "assets/thumbs/VIDEO-46c57e.webp",
     "published_at": "2026-05-08",
     "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
     "tags": [
@@ -2171,7 +2223,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/fix-loi-noi-dung-khong-trung-thuc-chinh-sach-moi-nhat-2026",
     "mp4": "video/VIDEO-6ad3fe/VIDEO-6ad3fe.mp4",
-    "image": "assets/thumbs/VIDEO-6ad3fe.png",
+    "image": "assets/thumbs/VIDEO-6ad3fe.webp",
     "published_at": "2026-03-20",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
@@ -2227,7 +2279,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/cach-seo-chuan-tu-khoa-kenh-tu-khoa-video-va-mo-ta-video-moi-nhat-chinh-sach-2026",
     "mp4": "video/VIDEO-7db740/VIDEO-7db740.mp4",
-    "image": "assets/thumbs/VIDEO-7db740.png",
+    "image": "assets/thumbs/VIDEO-7db740.webp",
     "published_at": "2026-03-20",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
@@ -2583,7 +2635,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/show-kenh-thuc-chien-va-full-quy-trinh-huong-dan-reup-ngach-view-viet-rpm-2-khong-bao-gio-het-trends-update-12-01-2026",
     "mp4": "video/VIDEO-cb907b/VIDEO-cb907b.mp4",
-    "image": "assets/thumbs/VIDEO-cb907b.png",
+    "image": "assets/thumbs/VIDEO-cb907b.webp",
     "published_at": "2026-01-11",
     "contentNiche": "Reup & Khai Thác Hoạt Hình",
     "tags": [
@@ -2772,7 +2824,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-fix-add-quyen-cho-tk-google-adsense-khong-bi-die-mat-khi-lo-bi-quet",
     "mp4": "video/VIDEO-00136f/VIDEO-00136f.mp4",
-    "image": "assets/thumbs/VIDEO-00136f.png",
+    "image": "assets/thumbs/VIDEO-00136f.webp",
     "published_at": "2025-12-18",
     "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
     "tags": [
@@ -2858,7 +2910,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-tu-train-prompt-tu-tao-prompt-cho-bat-ky-chu-de-nao-muon",
     "mp4": "video/VIDEO-54422c/VIDEO-54422c.mp4",
-    "image": "assets/thumbs/VIDEO-54422c.png",
+    "image": "assets/thumbs/VIDEO-54422c.webp",
     "published_at": "2025-12-08",
     "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
     "channelResolve": [
@@ -3009,7 +3061,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-add-quyen-quan-ly-kenh-va-mail-khoi-phuc-tranh-bi-google-quet-loi-spam-hang-loat-die-kenh-hang-loat",
     "mp4": "video/VIDEO-3e5a21/VIDEO-3e5a21.mp4",
-    "image": "assets/thumbs/VIDEO-3e5a21.png",
+    "image": "assets/thumbs/VIDEO-3e5a21.webp",
     "published_at": "2025-11-25",
     "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
     "tags": [
@@ -3074,7 +3126,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-key-22112025-ngach-nho-stories-thi-truong-nhat-ban",
     "mp4": "video/VIDEO-de2564/VIDEO-de2564.mp4",
-    "image": "assets/thumbs/VIDEO-de2564.png",
+    "image": "assets/thumbs/VIDEO-de2564.webp",
     "published_at": "2025-11-22",
     "contentNiche": "Drama Gia Đình & Xã Hội",
     "channelResolve": [
@@ -3170,7 +3222,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/share-ngach-moi-triet-ly-thi-truong-us-hoa-ky-dang-cuc-trends-va-huong-dan-full-quy-trinh-lam-tu-a-z-update-04112025",
     "mp4": "video/VIDEO-2aa1f7/VIDEO-2aa1f7.mp4",
-    "image": "assets/thumbs/VIDEO-2aa1f7.png",
+    "image": "assets/thumbs/VIDEO-2aa1f7.webp",
     "published_at": "2025-11-04",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người",
     "country": "US",
@@ -3199,7 +3251,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-05112025-ngach-nho-moi-thi-truong-viet-nam-trends-cuc-cao",
     "mp4": "video/VIDEO-5fe83a/VIDEO-5fe83a.mp4",
-    "image": "assets/thumbs/VIDEO-5fe83a.png",
+    "image": "assets/thumbs/VIDEO-5fe83a.webp",
     "published_at": "2025-11-04",
     "contentNiche": "Sức Khỏe & Dinh Dưỡng",
     "tags": [
@@ -3228,7 +3280,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-04112025-nhan-ban-thi-truong-tu-kenh-doi-thu-hoa-ky-sang-viet-nam",
     "mp4": "video/VIDEO-3ae732/VIDEO-3ae732.mp4",
-    "image": "assets/thumbs/VIDEO-3ae732.png",
+    "image": "assets/thumbs/VIDEO-3ae732.webp",
     "published_at": "2025-11-04",
     "contentNiche": "Sức Khỏe & Dinh Dưỡng",
     "tags": [
@@ -3397,7 +3449,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/tool-elevenlab-clone-minimax-dich-srt-tai-khoan-chatgpt-plus-capcut-pro-gia-re",
     "mp4": "video/VIDEO-04c2e3/VIDEO-04c2e3.mp4",
-    "image": "assets/thumbs/VIDEO-04c2e3.png",
+    "image": "assets/thumbs/VIDEO-04c2e3.webp",
     "published_at": "2025-10-11",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "country": "VN",
@@ -3547,7 +3599,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/tut-trick-meo-test-ban-quyen-khi-reup-ban-content-dang-nguon-tu-douyin-sang-youtube",
     "mp4": "video/VIDEO-9a4ddc/VIDEO-9a4ddc.mp4",
-    "image": "assets/thumbs/VIDEO-9a4ddc.png",
+    "image": "assets/thumbs/VIDEO-9a4ddc.webp",
     "published_at": "2025-08-22",
     "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
     "tags": [
@@ -3575,7 +3627,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-cach-ngam-kenh-va-cac-thu-thuat-meo-tuong-tac-kenh-doi-thu-trong-qua-trinh-ngam-ken",
     "mp4": "video/VIDEO-199f44/VIDEO-199f44.mp4",
-    "image": "assets/thumbs/VIDEO-199f44.png",
+    "image": "assets/thumbs/VIDEO-199f44.webp",
     "published_at": "2025-08-22",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
@@ -3604,7 +3656,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/cach-tao-kenh-lap-kenh-chuyen-doi-kenh-sang-thi-truong-ngoai-chuan-nhat",
     "mp4": "video/VIDEO-027064/VIDEO-027064.mp4",
-    "image": "assets/thumbs/VIDEO-027064.png",
+    "image": "assets/thumbs/VIDEO-027064.webp",
     "published_at": "2025-08-22",
     "contentNiche": "Drama Gia Đình & Xã Hội",
     "tags": [
@@ -3633,7 +3685,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-edit-key-chill-dudechi-tiet-tu-a-z",
     "mp4": "video/VIDEO-ed1be9/VIDEO-ed1be9.mp4",
-    "image": "assets/thumbs/VIDEO-ed1be9.png",
+    "image": "assets/thumbs/VIDEO-ed1be9.webp",
     "published_at": "2025-08-22",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
@@ -3670,7 +3722,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-lam-thumb-key-triet-ly-khac-ky",
     "mp4": "video/VIDEO-a348a5/VIDEO-a348a5.mp4",
-    "image": "assets/thumbs/VIDEO-a348a5.png",
+    "image": "assets/thumbs/VIDEO-a348a5.webp",
     "published_at": "2025-08-21",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người",
     "tags": [
@@ -3733,7 +3785,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/meo-tips-phan-chia-nuoi-cac-mail-kenh-tren-cung-1-thiet-bi-ma-khong-bao-gio-bi-dinh-spam-ma-khong-can-phai-fake-vpn-hay-nuoi-tren-proxy",
     "mp4": "video/VIDEO-943781/VIDEO-943781.mp4",
-    "image": "assets/thumbs/VIDEO-943781.png",
+    "image": "assets/thumbs/VIDEO-943781.webp",
     "published_at": "2025-08-21",
     "contentNiche": "Kỹ Thuật Setup Nuôi Kênh & VPS",
     "tags": [
@@ -3761,13 +3813,21 @@
     ],
     "origin": "https://h2dev.vn/learn/study/vip-tu-duy-nhan-ban-thi-truong-va-huong-dan-tu-a-z-cach-lam-edit-va-thumb",
     "mp4": "video/VIDEO-f59aa7/VIDEO-f59aa7.mp4",
-    "image": "assets/thumbs/VIDEO-f59aa7.png",
+    "image": "assets/thumbs/VIDEO-f59aa7.webp",
     "published_at": "2025-08-21",
     "contentNiche": "Sức Khỏe & Dinh Dưỡng",
     "tags": [
       "Nhật"
     ],
-    "channels": []
+    "channels": [],
+    "audio_integrity": "broken_drm_packets",
+    "media_issues": [
+      "B7"
+    ],
+    "needs_audio_recover": true,
+    "gap_note": "DRM/packet thieu 69% — da biet tu truoc, can source clean",
+    "media_audit_date": "2026-09-18",
+    "media_audit_updated": "2026-09-22T20:14:03+07:00"
   },
   {
     "sku": "VIDEO-b380a1",
@@ -3873,7 +3933,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/share-key-thi-truong-canada-moi-nhat-va-huong-dan-lam-chi-tiet-tu-a-z-update-2182025",
     "mp4": "video/VIDEO-5c3116/VIDEO-5c3116.mp4",
-    "image": "assets/thumbs/VIDEO-5c3116.png",
+    "image": "assets/thumbs/VIDEO-5c3116.webp",
     "published_at": "2025-08-21",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
@@ -4050,7 +4110,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/key-sinh-ton-view-viet-ban-content",
     "mp4": "video/VIDEO-bdfa54/VIDEO-bdfa54.mp4",
-    "image": "assets/thumbs/VIDEO-bdfa54.png",
+    "image": "assets/thumbs/VIDEO-bdfa54.webp",
     "published_at": "2025-08-19",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
@@ -4101,13 +4161,25 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-tao-edit-thumb-key-nonagon",
     "mp4": "video/VIDEO-8e0275/VIDEO-8e0275.mp4",
-    "image": "assets/thumbs/VIDEO-8e0275.png",
+    "image": "assets/thumbs/VIDEO-8e0275.webp",
     "published_at": "2025-08-19",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
       "Nổi bật",
       "Ngoại"
-    ]
+    ],
+    "audio_integrity": "broken_empty_track",
+    "audio_integrated_lufs": -70.0,
+    "audio_bitrate_bps": 2090,
+    "media_issues": [
+      "A8f",
+      "B4"
+    ],
+    "needs_audio_recover": true,
+    "content_kind": "silent_screen_tutorial",
+    "gap_note": "Audio AAC 2kbps/-70 LUFS — man hinh tutorial, outline transcript, can voiceover hoac re-upload source",
+    "media_audit_date": "2026-09-18",
+    "media_audit_updated": "2026-09-22T20:14:03+07:00"
   },
   {
     "sku": "VIDEO-b559c8",
@@ -4129,7 +4201,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-lam-thumb-ngach-nho-trong-key-nguoi-que-chi-tiet",
     "mp4": "video/VIDEO-b559c8/VIDEO-b559c8.mp4",
-    "image": "assets/thumbs/VIDEO-b559c8.png",
+    "image": "assets/thumbs/VIDEO-b559c8.webp",
     "published_at": "2025-08-19",
     "contentNiche": "Bán Content & Phát Triển Kênh",
     "tags": [
@@ -4163,7 +4235,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/huong-dan-edit-key-triet-ly-khac-ky-chi-tiet-tu-a-z",
     "mp4": "video/VIDEO-b96929/VIDEO-b96929.mp4",
-    "image": "assets/thumbs/VIDEO-b96929.png",
+    "image": "assets/thumbs/VIDEO-b96929.webp",
     "published_at": "2025-08-19",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người",
     "tags": [
@@ -4197,7 +4269,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/share-key-va-giai-thich-ve-chu-de-rpm-cao-o-cac-thi-truong",
     "mp4": "video/VIDEO-44cf22/VIDEO-44cf22.mp4",
-    "image": "assets/thumbs/VIDEO-44cf22.png",
+    "image": "assets/thumbs/VIDEO-44cf22.webp",
     "published_at": "2025-08-19",
     "contentNiche": "Sức Khỏe & Dinh Dưỡng",
     "tags": [
@@ -4245,7 +4317,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/giai-thich-va-huong-dan-dua-ra-cach-chon-mail-mail-moi-mail-co-chon-kenh-kenh-moi-kenh-co-tut-chon-de-lam-chac-chan-co-do-trust-can-view",
     "mp4": "video/VIDEO-5c438a/VIDEO-5c438a.mp4",
-    "image": "assets/thumbs/VIDEO-5c438a.png",
+    "image": "assets/thumbs/VIDEO-5c438a.webp",
     "published_at": "2025-08-19",
     "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng",
     "tags": [
@@ -4284,7 +4356,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-ngach-ban-content-nhat-han",
     "mp4": "video/VIDEO-61ad94/VIDEO-61ad94.mp4",
-    "image": "assets/thumbs/VIDEO-61ad94.png",
+    "image": "assets/thumbs/VIDEO-61ad94.webp",
     "published_at": "2026-08-22",
     "contentNiche": "Bán Content Đa Thị Trường Nhật & Hàn",
     "channelResolve": [],
@@ -4295,7 +4367,11 @@
     "width": 1280,
     "height": 720,
     "resolution": "720p",
-    "duration_sec": 630
+    "duration_sec": 630,
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-3a38f9",
@@ -4322,14 +4398,18 @@
     ],
     "origin": "https://h2dev.vn/learn/study/qua-kinh-khung-voi-2-kenh-moi-hoan-toan-lam-dung-ngach-khong-bao-gio-thieu-view-share-kenh-thi-truong-han-va-viet",
     "mp4": "video/VIDEO-3a38f9/VIDEO-3a38f9.mp4",
-    "image": "assets/thumbs/VIDEO-3a38f9.png",
+    "image": "assets/thumbs/VIDEO-3a38f9.webp",
     "published_at": "2026-08-27",
     "contentNiche": "Bán Content Đa Thị Trường Hàn & Việt",
     "channelResolve": [],
     "tags": [
       "Hàn",
       "Việt"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-73d98a",
@@ -4358,7 +4438,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-key-ngach-cuc-nho-moi-nhat-06-09-2026",
     "mp4": "video/VIDEO-73d98a/VIDEO-73d98a.mp4",
-    "image": "assets/thumbs/VIDEO-73d98a.png",
+    "image": "assets/thumbs/VIDEO-73d98a.webp",
     "published_at": "2026-09-06",
     "contentNiche": "Bán Content Ngách Cực Nhỏ",
     "channelResolve": [],
@@ -4397,7 +4477,7 @@
     ],
     "origin": "",
     "mp4": "video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm",
-    "image": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.png",
+    "image": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.webp",
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
     "channelResolve": [],
@@ -4437,7 +4517,7 @@
     ],
     "origin": "",
     "mp4": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm",
-    "image": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.png",
+    "image": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.webp",
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
     "channelResolve": [],
@@ -4477,7 +4557,7 @@
     ],
     "origin": "",
     "mp4": "video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm",
-    "image": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.png",
+    "image": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.webp",
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
     "channelResolve": [],
@@ -4517,7 +4597,7 @@
     ],
     "origin": "",
     "mp4": "video/ZOOM-04-Adsense-khang-loi/ZOOM-04-Adsense-khang-loi.webm",
-    "image": "assets/thumbs/ZOOM-04-Adsense-khang-loi.png",
+    "image": "assets/thumbs/ZOOM-04-Adsense-khang-loi.webp",
     "published_at": "2026-09-11",
     "contentNiche": "Hệ thống / Quy trình",
     "channelResolve": [],
@@ -4563,7 +4643,7 @@
     "channels": [],
     "origin": "https://h2dev.vn/learn/study/cuu-kenh-lam-reup-dashdoanh-thu-hon-1k7-reup-view-viet",
     "mp4": "video/VIDEO-8bc3ce/VIDEO-8bc3ce.mp4",
-    "image": "assets/thumbs/VIDEO-8bc3ce.png",
+    "image": "assets/thumbs/VIDEO-8bc3ce.webp",
     "published_at": "2026-09-11",
     "contentNiche": "Xử Lý & Kháng Lỗi Bản Quyền",
     "channelResolve": [],
@@ -4603,7 +4683,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/share-ngach-ban-content-view-viet-moi-nhat-09-09-2026",
     "mp4": "video/VIDEO-d56768/VIDEO-d56768.mp4",
-    "image": "assets/thumbs/VIDEO-d56768.png",
+    "image": "assets/thumbs/VIDEO-d56768.webp",
     "published_at": "2026-09-09",
     "contentNiche": "Bán Content & Drama Đời Sống",
     "channelResolve": [],
@@ -4642,7 +4722,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/update-keyngach-nho-thi-truong-us-hoa-ky-han",
     "mp4": "video/VIDEO-989053/VIDEO-989053.mp4",
-    "image": "assets/thumbs/VIDEO-989053.png",
+    "image": "assets/thumbs/VIDEO-989053.webp",
     "published_at": "2026-09-12",
     "contentNiche": "Phong Thủy & May Mắn Tâm Linh",
     "channelResolve": [],
@@ -4687,7 +4767,7 @@
     ],
     "origin": "https://h2dev.vn/learn/study/chi-1-video-dau-duy-nhat-no-gan-200k-view-share-ngach-moi-cuc-nho-thi-truong-han-va-nhat",
     "mp4": "video/VIDEO-0bb86b/VIDEO-0bb86b.mp4",
-    "image": "assets/thumbs/VIDEO-0bb86b.png",
+    "image": "assets/thumbs/VIDEO-0bb86b.webp",
     "published_at": "2026-09-17",
     "contentNiche": "Triết Lý Sống & Tài Chính Tuổi Già",
     "channelResolve": [],

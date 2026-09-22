@@ -26,7 +26,9 @@
   };
 
   /* ---------- helpers ---------- */
-  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  // CANONICAL esc — escape đủ & < > " ' cho HTML text/attr. KHÔNG dùng để nhét vào JS string.
+  // index.html / player.html / music_player_modal.js phải khớp bản này (hoặc re-export H2Core.esc).
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function pad2(n) { return String(n).padStart(2, '0'); }
   function normalize(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd'); }
 
@@ -243,6 +245,28 @@
     loadWatched: loadWatched, saveWatchedAll: saveWatchedAll, syncAdmin: syncAdmin, hydrateAdmin: hydrateAdmin,
     loadFavs: loadFavs, saveFavs: saveFavs, toggleFav: toggleFav, loadRecent: loadRecent,
     videoProgress: videoProgress,
-    renderLessonRow: renderLessonRow, renderSectionHead: renderSectionHead, renderEmptyState: renderEmptyState
+    renderLessonRow: renderLessonRow, renderSectionHead: renderSectionHead, renderEmptyState: renderEmptyState,
+    trapFocus: function (container, e) {
+      if (e.key !== 'Tab' || !container) return;
+      if (!container.contains(document.activeElement)) {
+        e.preventDefault();
+        try { container.focus(); } catch (err) {}
+        var f0 = container.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        if (f0) try { f0.focus(); } catch (err) {}
+        return;
+      }
+      var focusables = container.querySelectorAll('a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])');
+      if (!focusables.length) return;
+      var first = focusables[0];
+      var last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    },
+    focusModal: function (modal) {
+      if (!modal) return;
+      try { modal.focus(); } catch (e) {}
+      var f = modal.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+      if (f) try { f.focus(); } catch (e) {}
+    }
   };
 })(window);

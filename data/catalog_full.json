@@ -2,7 +2,7 @@
   {
     "sku": "VIDEO-DD983D",
     "title": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
-    "image": "assets/thumbs/VIDEO-DD983D.png",
+    "image": "assets/thumbs/VIDEO-DD983D.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1786713087-update-key-pro-14-08-2026&protected=False&version=v2&token=gAAAAABqfxQIVL3ggU0Sox9qKYGEPfIOPcRDZIIuUO-xUOhYbrZGiOcdJE-KczhJTQoxvJgXDokhXOD7tN3Kfju_zSM6ByXQF0Bqzuc1Wc_LasOQTn39Cfk%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 117657149,
     "drm": false,
@@ -35,12 +35,16 @@
     "market": "🇯🇵 Nhật",
     "tags": [
       "Nhật"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-484f9e",
     "title": "Ngách nhỏ bán content thị trường Việt và Cách edit hạn chế lỗi quét do AI mới nhất hiện tại",
-    "image": "assets/thumbs/VIDEO-484f9e.png",
+    "image": "assets/thumbs/VIDEO-484f9e.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1786193148-update-key-pro-08-08-2026&protected=False&version=v2&token=gAAAAABqdyUERgVNHCxpwzisXWmfH29-jKzpU8R4MMtNNs_HuvtnSC8zIOQ4oVzhxQGhg4h3w5VWJ8Ytg0dV46fWIdrAC8p3Mw17NSpwMXEfrmK3iQ6Sv_I%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 94156906,
     "drm": false,
@@ -75,12 +79,16 @@
     ],
     "width": 1280,
     "height": 720,
-    "resolution": "720p"
+    "resolution": "720p",
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-e24c31",
     "title": "Update ngách mới cực trends bán content view ngoại, show kênh mới hoàn toàn 5 video",
-    "image": "assets/thumbs/VIDEO-e24c31.png",
+    "image": "assets/thumbs/VIDEO-e24c31.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1785754790-update-key-pro-03-08-2026&protected=False&version=v2&token=gAAAAABqcHSrjE1pOkgeYNXuPa3TA0wgJzdtjK71Pc-xBbFj-bOwfGyiv0AYOn_AO3KTtLxB9xEwaHPPIHRRl7VpcVgaiEhWDwWTB3WUpXXcSSdgjOqjt1k%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 183819452,
     "drm": false,
@@ -113,12 +121,16 @@
     "tags": [
       "Ngoại",
       "Hàn"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-a7bfd0",
     "title": "Update ngách mới và khám kênh + giải thích một số lỗi tránh bị 0 view, lẹt đẹt, không lên được",
-    "image": "assets/thumbs/VIDEO-a7bfd0.png",
+    "image": "assets/thumbs/VIDEO-a7bfd0.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1785323334-update-video-pro-29-07-2026&protected=False&version=v2&token=gAAAAABqad9MAQh7W4lylyDIs9qZJud-D_g2zLPzZ7FGhCo7Zz_NziIgtIj0AOyKywL9rqskLPW9FTUrzhgg1ghWYVXLLgwUPdVQpbSBgitaVqssaCCRF3s%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 178441037,
     "drm": false,
@@ -151,12 +163,16 @@
     "tags": [
       "Hàn",
       "Việt"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-4b3c09",
     "title": "Update 4 ngách nhỏ làm bán content thị trường Hàn Quốc",
-    "image": "assets/thumbs/VIDEO-4b3c09.png",
+    "image": "assets/thumbs/VIDEO-4b3c09.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1785056455-update-key-pro-26-07-2026&protected=False&version=v2&token=gAAAAABqZczRq-hD3FrKtlidR7NxWf1kexgVelAoUFRbYCSWaP9r7qEPg1oqSThGdVyvJdLinOoBvXNYXdlIdcFX9KlOEewriU_iDIDWqaiuS_Bzqwlk-hE%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 347816031,
     "drm": false,
@@ -191,12 +207,16 @@
     "market": "🇰🇷 Hàn",
     "tags": [
       "Hàn"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-28e1cc",
     "title": "Show kênh mới vừa bật kiếm tiền Và Hướng dẫn thực chiến full quy trình làm Reup ngách nhỏ hoạt hình từ bilibili",
-    "image": "assets/thumbs/VIDEO-28e1cc.png",
+    "image": "assets/thumbs/VIDEO-28e1cc.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1784712582-update-video-pro-22-07-2026&protected=False&version=v2&token=gAAAAABqYI2Q6cZu-kfuXH8yR-ECHltg1Nnq1PqswtvhAvKKG4OFT60dy1k31k2wVcEjNlcaQzpeyK_ObfVj5eA2EqWnmkm_J8sfJknwiisLk9kcFdNbyP4%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 357802877,
     "drm": false,
@@ -243,12 +263,16 @@
     "tags": [
       "Việt",
       "Trung"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-d2cd90",
     "title": "Update 5 ngách nhỏ bán content ngoại mới nhất",
-    "image": "assets/thumbs/VIDEO-d2cd90.png",
+    "image": "assets/thumbs/VIDEO-d2cd90.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1784191977-update-key-pro-16-07-2026&protected=False&version=v2&token=gAAAAABqWJvvFK6TAhkSWwNfOlQDMY9Yolfkf6fUGt8NAaQ2rMcjHSB6jCRrVTk4dOaxDDTBD9qhnczRIvXaghkdPHiMHCfIoppYM4Cb3vjF0K7jCmGq-oM%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 198973528,
     "drm": false,
@@ -283,12 +307,16 @@
     "market": "🇯🇵 Nhật",
     "tags": [
       "Nhật"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-9aff6d",
     "title": "4 video nổ hơn 300k view - Update 2 ngách mới cực kỳ trends và hướng dẫn edit tạo khung cho ngách nhỏ...",
-    "image": "assets/thumbs/VIDEO-9aff6d.png",
+    "image": "assets/thumbs/VIDEO-9aff6d.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1783851285-update-key-pro-12-07-2026&protected=False&version=v2&token=gAAAAABqU2kdGQqDpALZOUOzVN8JJpRgRtV0Ic-JBEWM5yLHG78JngQqraM3njKbEHbUDK16SHJEHvPHEF1LEi9Iwi4t21el3UJwetcl3xVS8Lb9C-HdDco%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 205302720,
     "drm": false,
@@ -321,12 +349,16 @@
     "market": "🇯🇵 Nhật",
     "tags": [
       "Nhật"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-e90874",
     "title": "Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến",
-    "image": "assets/thumbs/VIDEO-e90874.png",
+    "image": "assets/thumbs/VIDEO-e90874.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1783329950-update-video-pro-06-07-2026&protected=False&version=v2&token=gAAAAABqS3SnTqpDNUfQByI3MEXJtK74f_kGEJPOyrCPEAJD0kGKu-oH2nTyw5t5B2ehvTIg_-_9MbF3Fo6ftreTgQ00kkABrGGDghUV8tt-2cCHokwP7pw%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 252833711,
     "drm": false,
@@ -364,12 +396,16 @@
     "market": "🌐 Ngoại",
     "tags": [
       "Ngoại"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-c5837a",
     "title": "Update share các ngách Bán content và Reup mới nhất - tất cả thị trường Nhật - Hàn - Việt",
-    "image": "assets/thumbs/VIDEO-c5837a.png",
+    "image": "assets/thumbs/VIDEO-c5837a.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1782981068-update-key-pro-02-07-2026&protected=False&version=v2&token=gAAAAABqRiHSdVbuIncuVm2vEcdzQUPKev0V5Rmj-m1AdJ493n6wnQdgUUQXUDX8d4Oze8SMsg944aao-0jGzuKKVTcfBS5wp___NHWaikpVJPLC5bB1g7k%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 211960392,
     "drm": false,
@@ -408,12 +444,16 @@
       "Nhật",
       "Hàn",
       "Việt"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-348217",
     "title": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
-    "image": "assets/thumbs/VIDEO-348217.png",
+    "image": "assets/thumbs/VIDEO-348217.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1782380050-updare-key-pro-25-06-2026&protected=False&version=v2&token=gAAAAABqPPYXgzhOEtRpHNP9LqS6nH8QNsf1LFJ9WhIaHKW3VpTB5MQp3UZfXRzmGq42q5-ctFxDcCrshFdKjTEYZoKLjYU5hpj0fvWhrelV2kZVDqbJ5a4%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 125155842,
     "drm": false,
@@ -447,12 +487,16 @@
     "tags": [
       "Hàn",
       "Nhật"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-f74bb1",
     "title": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất",
-    "image": "assets/thumbs/VIDEO-f74bb1.png",
+    "image": "assets/thumbs/VIDEO-f74bb1.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1781943885-update-key-pro-20-06-2026&protected=False&version=v2&token=gAAAAABqNk5TeJ6bQAWlLt7NmEA7PVg4eeRrY5U8IHtD9Z3pPlYnLkwrYv8XWSA0doS6CgXqZGMkqL7kMaSwWTb589T8Svpqu5-T1W-1mx5l0SY68JUfZ6U%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 220807526,
     "drm": false,
@@ -486,12 +530,16 @@
     "market": "🇰🇷 Hàn",
     "tags": [
       "Hàn"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-1aaf46",
     "title": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends",
-    "image": "assets/thumbs/VIDEO-1aaf46.png",
+    "image": "assets/thumbs/VIDEO-1aaf46.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1781655493-update-key-pro-16-06-2026&protected=False&version=v2&token=gAAAAABqMefLNHTg6-DrmuXZBZ3Kcs4X1_S7GSatXpUN5MIqoeTwKaegwZlKUicpHKRzuTM3850G1yiDQCQxFGYdzu5UeUqp6owbH0PEdmQEi3X6xo9Ysnk%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 148016471,
     "drm": false,
@@ -549,12 +597,16 @@
     "market": "🇨🇳 Trung",
     "tags": [
       "Trung"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-21956b",
     "title": "Update ngách nhân bản thị trường Hàn, Nhật và Việt",
-    "image": "assets/thumbs/VIDEO-21956b.png",
+    "image": "assets/thumbs/VIDEO-21956b.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1781517110-update-key-pro-15-06-2026&protected=False&version=v2&token=gAAAAABqL8s9HT2Il8cK5mtbOZ0Zh2rghnw03X0ziHRBFjBAKKFj5ofj_D4mpLKZRrMIhLrMC-9ItN1mkrvW08Dni412tJ1JGH0hVT_wPIJPhnf6qptJ0yM%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 279140764,
     "drm": false,
@@ -631,7 +683,7 @@
   {
     "sku": "VIDEO-34c92b",
     "title": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường",
-    "image": "assets/thumbs/VIDEO-34c92b.png",
+    "image": "assets/thumbs/VIDEO-34c92b.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1781085821-update-key-pro-10-06-2026&protected=False&version=v2&token=gAAAAABqKTaB5W8kUayV8U5J0E1YJInGJAeK0oE7zBOOUnCi9axP48X7nH6z4ke4Hf8FCum-OYhK1_F7KDOXukrdT1vmGu0dG7PdMVwvu82wFo06YfOCRRk%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 148295073,
     "drm": false,
@@ -665,7 +717,7 @@
   {
     "sku": "VIDEO-21824a",
     "title": "Bật kiếm tiền kênh học viên Pro",
-    "image": "assets/thumbs/VIDEO-21824a.png",
+    "image": "assets/thumbs/VIDEO-21824a.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1780741202-update-06-06-2026&protected=False&version=v2&token=gAAAAABqI_RTOC8DBlr-DEcfLE_RgMnGA5viLMyeidJXQBTQ98gshUODY42YlyIUK5IZ4xuQArUlKWKRQiRn9kN5JRfphb_HFIv1PjDayO8yI9VN2Irhj-0%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 21668016,
     "drm": false,
@@ -706,7 +758,7 @@
   {
     "sku": "VIDEO-84a039",
     "title": "Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất",
-    "image": "assets/thumbs/VIDEO-84a039.png",
+    "image": "assets/thumbs/VIDEO-84a039.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1780657392-update-key-pro-05-06-2026&protected=False&version=v2&token=gAAAAABqIqz2Th-fNvy_K0fhmdw1yxhebEVZZSi1DRZohY5X9OevPa9k4TBCOEuEEslo24c3OgWLJkoACKTunzpBwzfvOdPQeoTUp39rqIq16-sBJ_fd2Ns%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 140519290,
     "drm": false,
@@ -740,7 +792,7 @@
   {
     "sku": "VIDEO-817ae6",
     "title": "Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật",
-    "image": "assets/thumbs/VIDEO-817ae6.png",
+    "image": "assets/thumbs/VIDEO-817ae6.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1780486761-update-03-06-2026&protected=False&version=v2&token=gAAAAABqIBJvNZD7-4fZDlGIutli2XxDUAyX3L2lUVNXXx33Ye-cgkTmBNLDlHDcOpUEuhRWwKtBkuA6T9Wy0MbpisKvBhMFf9nTybcqYQjByrlxp-dgMtk%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 133715621,
     "drm": false,
@@ -774,7 +826,7 @@
   {
     "sku": "VIDEO-4425fc",
     "title": "Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét",
-    "image": "assets/thumbs/VIDEO-4425fc.png",
+    "image": "assets/thumbs/VIDEO-4425fc.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1780132562-update-video-pro-30-05-2026&protected=False&version=v2&token=gAAAAABqGqrVuisPHK52r1ezTqulj8UProDfEoG-VvkUB5qFnOP_U20c1f5DOjMVxjTtYB1dk4V01Q7_LKNXrJrcWyXezkqINgFgexUWULz6NvoJaofUYLc%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 21455922,
     "drm": false,
@@ -807,7 +859,7 @@
   {
     "sku": "VIDEO-2de9e4",
     "title": "Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách)",
-    "image": "assets/thumbs/VIDEO-2de9e4.png",
+    "image": "assets/thumbs/VIDEO-2de9e4.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1779960854-update-key-pro-28-05-2026-2&protected=False&version=v2&token=gAAAAABqGAwa_6-bTRVbUi_1h37F9YQCzpIUO0f7IlVNBfB8vejayk766MxLbIpGFMMlmwAb1MkW7wc49B1LM6tqHycALblDubwKoh5wq31pMtctdRGMKJ0%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 117167850,
     "drm": false,
@@ -840,7 +892,7 @@
   {
     "sku": "VIDEO-2ba0d1",
     "title": "Update ngách mới thị trường Nhật Bản làm bán content",
-    "image": "assets/thumbs/VIDEO-2ba0d1.png",
+    "image": "assets/thumbs/VIDEO-2ba0d1.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1779960493-update-key-pro-28-05-2026-1-1&protected=False&version=v2&token=gAAAAABqGAq0cV77IfqqlBsM5bPtn_2wyAJQWAw27poTGfSZtBBeUMAvOkgipUdtZMAHAsFrRWoEzQHY_kD6_h0d6xZO8GB19nBg08M3ITQ4iY09YPw0tTk%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 205377478,
     "drm": false,
@@ -873,7 +925,7 @@
   {
     "sku": "VIDEO-5d54d0",
     "title": "Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ",
-    "image": "assets/thumbs/VIDEO-5d54d0.png",
+    "image": "assets/thumbs/VIDEO-5d54d0.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1779532724-update-video-pro-23-05-2026&protected=False&version=v2&token=gAAAAABqEYPCRomqTvy1Xz5easx8i6_O1l6rubpxguoteVbLYip9bGW6ziuBMPvvCyypJCGEXiN9hYvBz5mOUGzimxXS7Ou7T9qVb08CEB0dKFK6xtIwmTA%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 746399312,
     "drm": false,
@@ -911,7 +963,7 @@
   {
     "sku": "VIDEO-2277b3",
     "title": "Share thêm ngách nhỏ thị trường Việt và phân tích hướng dẫn tư duy làm nhân bản tất cả các thị trường",
-    "image": "assets/thumbs/VIDEO-2277b3.png",
+    "image": "assets/thumbs/VIDEO-2277b3.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1779268059-update-key-pro-20-05-2026&protected=False&version=v2&token=gAAAAABqDXnk2WN4uLQe1u1O8ZXkPXmQtH83QHAKsKXBW9xBpRoj_qfET4KJj8_3P1v9n7MzkugDFVyJlkh3imhjKs-f8FeWerp_ztNdi-Z7thltSMD7ozA%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 210630442,
     "drm": false,
@@ -1019,7 +1071,7 @@
   {
     "sku": "VIDEO-54c8f7",
     "title": "Full quy trình thực chiến hướng dẫn dùng Claude train prompt bất kỳ chủ đề ngách nào mình muốn và cách đóng gói Skill để dùng làm viết kịch bản, tạo ảnh, tạo thumb... (video dài hơn 1 giờ) - Quy Trình dạng tự tạo làm mới chủ đề, kịch bản, hình ảnh... ",
-    "image": "assets/thumbs/VIDEO-54c8f7.png",
+    "image": "assets/thumbs/VIDEO-54c8f7.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1779104667-update-claude-train-skill-prompt-pro-18-05-20&protected=False&version=v2&token=gAAAAABqCvumHSzk1uPOG1XBMqtprP1O8qMLhyomHwfwLaks0DCmFm6gME3KeTieo5epTbTv1Ur6On-nCl4VnTK0Z7Z_dFadHQ7Fd6rHJjCj2uPhFM2vU5c%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 795942524,
     "drm": false,
@@ -1262,7 +1314,7 @@
   {
     "sku": "VIDEO-46c57e",
     "title": "KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026",
-    "image": "assets/thumbs/VIDEO-46c57e.png",
+    "image": "assets/thumbs/VIDEO-46c57e.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1778231317-khang-su-dung-lai-noi-dung-08-05-2026&protected=False&version=v2&token=gAAAAABp_agXZU3HJmFSBlmA4n8w-eXqQJ2E9Uoe05DHFmqtARIyiZw4QJo1AOdcuZ9O6QIqaRjoMtcBm9pHnsuS36KQUnNq85kQYNj1ArHrkZLGOjmbpy4%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 29383580,
     "drm": false,
@@ -2407,7 +2459,7 @@
   {
     "sku": "VIDEO-6ad3fe",
     "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
-    "image": "assets/thumbs/VIDEO-6ad3fe.png",
+    "image": "assets/thumbs/VIDEO-6ad3fe.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1774017865-copy-2393aa3b-a982-4442-b8fb-8c90a70ac888&protected=False&version=v2&token=gAAAAABpvV1NCu7ltIm70bxFvfhQZnHQJt5Nv_9SAPrVO1zYjQ8CiNz4hZz662CK4tAQq59kwrOkbPQBRDuxrVE9OJ7b6C8tZmmZInWxmZknwt7aANWsQQQ%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 22218451,
     "drm": false,
@@ -2473,7 +2525,7 @@
   {
     "sku": "VIDEO-7db740",
     "title": "CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
-    "image": "assets/thumbs/VIDEO-7db740.png",
+    "image": "assets/thumbs/VIDEO-7db740.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1774017237-copy-5c75a2f9-da3b-4ad0-938b-458c0704cf95&protected=False&version=v2&token=gAAAAABpvVrXB_viXfce4fSImf-wqi4fqjyAiPSb0md1AwuB1z9y9i9NbWSpfKEa-dt7-cci8DhXon0LkL4DZtqtMbNtc-4lzFtqSRzEp-O74oZbsZrcjuQ%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 5472949,
     "drm": false,
@@ -2872,7 +2924,7 @@
   {
     "sku": "VIDEO-cb907b",
     "title": "SHOW KÊNH THỰC CHIẾN VÀ FULL QUY TRÌNH HƯỚNG DẪN REUP NGÁCH VIEW VIỆT RPM 2$ KHÔNG BAO GIỜ HẾT TRENDS - UPDATE 12-01-2026",
-    "image": "assets/thumbs/VIDEO-cb907b.png",
+    "image": "assets/thumbs/VIDEO-cb907b.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1768139503-video-22-update-11-01-2026&protected=False&version=v2&token=gAAAAABpY6sFp4URFtMiobpuKM3N9blyIruz2cKAulv9M4ahG6ksMjS3tROjhg6-kqgqiWhctku3xAPGAKZ6GTcZp3XYWlbEVXAoJhZdjcHZGSM-qeERfLs%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 384480031,
     "drm": false,
@@ -3084,7 +3136,7 @@
   {
     "sku": "VIDEO-00136f",
     "title": "HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT",
-    "image": "assets/thumbs/VIDEO-00136f.png",
+    "image": "assets/thumbs/VIDEO-00136f.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1766022911-copy-c02d34ea-aa3a-465a-b82c-37f869802c00&protected=False&version=v2&token=gAAAAABpQ18AJJdaDFrnMwAP68Bsu63HaWcIYQ1RWsBsaDrki4WEDPsr5ONgj-qTVTlNc1DGMRXBOYj6YsC0meG4k4pBdW2qKCte3Te1Np7Qwy2Yz4t2TiM%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 8660679,
     "drm": false,
@@ -3184,7 +3236,7 @@
   {
     "sku": "VIDEO-54422c",
     "title": "HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN",
-    "image": "assets/thumbs/VIDEO-54422c.png",
+    "image": "assets/thumbs/VIDEO-54422c.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1765172875-huong-dan-tu-train-prompt-tao-prompt&protected=False&version=v2&token=gAAAAABpNmaewk62WLh7UbqD8ELgYYUH_ZJjOyVm6hBweh9lMCVi6rfqKNeEx0jt0PqkAVlGWcuCNPpqLHSbQrrXyMBoCe4zBSVFSZ0zrQsgJI-z6bE4Xuk%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 870883336,
     "drm": false,
@@ -3350,7 +3402,7 @@
   {
     "sku": "VIDEO-3e5a21",
     "title": "HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
-    "image": "assets/thumbs/VIDEO-3e5a21.png",
+    "image": "assets/thumbs/VIDEO-3e5a21.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1764043835-copy-d54e050e-b380-4460-a85d-cda197394222&protected=False&version=v2&token=gAAAAABpJSw8htmO4WVqnpJhtObKMlNM_mQqDHAbVHXL7VUwptOUZfkr7-8zG-Qc-O5GNuGCnsaGcPfpQLptQv9V5D2pTerqgI42cWjBNw7H275sQqLfLFA%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 10170368,
     "drm": false,
@@ -3416,7 +3468,7 @@
   {
     "sku": "VIDEO-de2564",
     "title": "NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN",
-    "image": "assets/thumbs/VIDEO-de2564.png",
+    "image": "assets/thumbs/VIDEO-de2564.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1763807798-key-22-11&protected=False&version=v2&token=gAAAAABpIZI5RAEpOKrvyKQYBIWzijIc1jYxgQJoh7rtgsSHEbAJEzCdweWunYn20TcSKykWkgUU82MpRNVeQpQvWdFo6QaGuwkCAW9VKC2J17nUm-og2VQ%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 81324705,
     "drm": false,
@@ -3449,7 +3501,7 @@
   {
     "sku": "VIDEO-2aa1f7",
     "title": "SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
-    "image": "assets/thumbs/VIDEO-2aa1f7.png",
+    "image": "assets/thumbs/VIDEO-2aa1f7.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1762251484-copy-0913246e-4c56-4965-9177-5a29b59f1568&protected=False&version=v2&token=gAAAAABpCdLsNItRPq_eSQRUJHwpNWjxXT9GmQTdWn8J-I9J4d9jR56-UtNFWvQcrmTg8kwEXKW9Sdx2n-7ToDRIOpHKxwc0bQn8znOTBeJW5ljckTcNf70%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 257066533,
     "drm": false,
@@ -3542,7 +3594,7 @@
   {
     "sku": "VIDEO-5fe83a",
     "title": "UPDATE 05/11/2025 - Ngách Nhỏ MỚI THỊ TRƯỜNG VIỆT NAM TRENDS CỰC CAO",
-    "image": "assets/thumbs/VIDEO-5fe83a.png",
+    "image": "assets/thumbs/VIDEO-5fe83a.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1762239556-copy-9e60807f-75d4-4ad3-a73d-6619302fc05f&protected=False&version=v2&token=gAAAAABpCaRH_f24Xxdo8o9G_fapXO5jDCFzZnZ13ul-OqdAz5XSuGpeEbSYN1x8JKL0rBa-XA6oKyTGMFi96ohXq-FcclFwcSnq6DrZ8eeTmgmo3bco84A%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 56394037,
     "drm": false,
@@ -3575,7 +3627,7 @@
   {
     "sku": "VIDEO-3ae732",
     "title": "UPDATE 04/11/2025 - NHÂN BẢN THỊ TRƯỜNG TỪ KÊNH ĐỐI THỦ HOA KỲ SANG VIỆT NAM",
-    "image": "assets/thumbs/VIDEO-3ae732.png",
+    "image": "assets/thumbs/VIDEO-3ae732.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1762239366-copy-7b771c79-eb92-491b-9133-3a915f8a624f&protected=False&version=v2&token=gAAAAABpCaONX9ec4sTbKwdq5QXdD7o-iBjivWddmcplvPugQfh_12W4YdfRdE811JX59JwcgGo9hAHzxLlrXGYEcE7jBlasAmuc1Dz3Cc_eu2tYwzis004%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 80295797,
     "drm": false,
@@ -3760,7 +3812,7 @@
   {
     "sku": "VIDEO-04c2e3",
     "title": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
-    "image": "assets/thumbs/VIDEO-04c2e3.png",
+    "image": "assets/thumbs/VIDEO-04c2e3.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1760173125-copy-d3a016fc-cac6-4641-b2f8-0288dbf789b9&protected=False&version=v2&token=gAAAAABo6hxIriEmkkoZSDabezmfBp7O_xOOOCMIr4OTwza1OzS6gmzLj4Jmep7I8F7yXn2TpYuy_VdhbcNSMSVyGaAgpOQjHaoZnKglx1XzocYs7Bk0-5A%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 20353652,
     "drm": false,
@@ -3939,7 +3991,7 @@
   {
     "sku": "VIDEO-9a4ddc",
     "title": "TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube",
-    "image": "assets/thumbs/VIDEO-9a4ddc.png",
+    "image": "assets/thumbs/VIDEO-9a4ddc.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755887321-video-14-meo-tips-cach-test-ban-quyen-khi-reup-ban-content-dang-key-tu-doyin-sang&protected=False&version=v2&token=gAAAAABoqLbdLyKTn6ADB6j4syx3jgmpUohn4r68DFUC8m5d_Kax9sa6Y_t5u6kqY4P0z3o48Ej8d8qkHOSEnndPgrrLLC5DXoritvfQ700HWun9DkhM8Y0%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 153151032,
     "drm": false,
@@ -3972,7 +4024,7 @@
   {
     "sku": "VIDEO-199f44",
     "title": "Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh",
-    "image": "assets/thumbs/VIDEO-199f44.png",
+    "image": "assets/thumbs/VIDEO-199f44.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755887143-video-3-cach-ngam-kenh-va-tuong-tac-voi-kenh-doi-thu&protected=False&version=v2&token=gAAAAABoqLYqmNZzPU0GLaXO0pw8fbw_gwC4CscptFq0JGJdq11YxcrKISsP-NC4Bpt66dr3DpUnrY8bjh95nMVZP3N8ZIPfD_3TiMk2sTT1dbr0aS3rmh8%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 69303503,
     "drm": false,
@@ -4005,7 +4057,7 @@
   {
     "sku": "VIDEO-027064",
     "title": "Cách tạo kênh, lập kênh chuyển đổi kênh sang thị trường ngoại chuẩn nhất",
-    "image": "assets/thumbs/VIDEO-027064.png",
+    "image": "assets/thumbs/VIDEO-027064.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755886988-video-2-huong-dan-tao-kenh-ngam-kenh-setting-chuan-nhat-va-seo-kenh&protected=False&version=v2&token=gAAAAABoqLWT25Z_FjiC_4XnY9TPnw9roi0OCbNI6zB8uMHlNETLVpTKTXYAgimQFYpwE7oAm4ApWHoZ04uvdWi4JtTqqlpKAoBSeSvn0wmPEMe63s5EV1Q%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 283417965,
     "drm": false,
@@ -4039,7 +4091,7 @@
   {
     "sku": "VIDEO-ed1be9",
     "title": "Hướng dẫn edit key _Chill Dude.._chi tiết từ A-Z",
-    "image": "assets/thumbs/VIDEO-ed1be9.png",
+    "image": "assets/thumbs/VIDEO-ed1be9.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755826596-10&protected=False&version=v2&token=gAAAAABop8m4Gcb-kJVJaAY6zJ9H5JIe050IBKm4wGmLfrgKTyk9opbrrAViDh7qJzBw5bSLz6OIU9fhS6rknQdgPQxpqduHvvZcB8uC7ZucuN6wMapDkhQ%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 769642956,
     "drm": false,
@@ -4072,7 +4124,7 @@
   {
     "sku": "VIDEO-a348a5",
     "title": "Hướng dẫn làm thumb key triết lý _ khắc kỷ",
-    "image": "assets/thumbs/VIDEO-a348a5.png",
+    "image": "assets/thumbs/VIDEO-a348a5.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755777071-9&protected=False&version=v2&token=gAAAAABopwgz0lC7Mz8gLPsleCMgskAIVLUdrnaZRpC1xAKYNIGfIOl6NU7172WMTW7ROVVP6pJ5Gikkks_1XNHATxMpX_rjXN08dvCpkgxsj9JauJwDtBM%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 131685203,
     "drm": false,
@@ -4153,7 +4205,7 @@
   {
     "sku": "VIDEO-943781",
     "title": "Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)",
-    "image": "assets/thumbs/VIDEO-943781.png",
+    "image": "assets/thumbs/VIDEO-943781.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755772096-video-7-chia-se-meo-nuoi-nhieu-mail-kenh-tren-cung-1-thiet-bi-de-tranh-bi-spam&protected=False&version=v2&token=gAAAAABopvTBMalYZr5JTFQszlGC-9U0BRMJ_XWK0DOtMFr6oc3mKyxAPxpop3k5PGSDpqy3OF7JOiMb6ioRZPoba8-hQEK6tL-MFQc0fL1Yb7u-NqyqKc8%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 17022745,
     "drm": false,
@@ -4186,7 +4238,7 @@
   {
     "sku": "VIDEO-f59aa7",
     "title": "VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb",
-    "image": "assets/thumbs/VIDEO-f59aa7.png",
+    "image": "assets/thumbs/VIDEO-f59aa7.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755771972-video-5-vip-tu-duy-nhan-ban-thi-truong-va-huong-dan-tu-a-z-cach-lam-edit-va-thumb&protected=True&version=v2&token=gAAAAABopvRT-JGUeC7FBJdGI7kRR-WEuFScs64wSAFSE-dptjUCrO2vTgcCE2ERoMkBayy2tGnS3zkf00orAbXZPOu69zUBFiTCPI1uMgMnqA-n85kk7hc%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 60794706,
     "drm": true,
@@ -4214,7 +4266,15 @@
     "market": "🇯🇵 Nhật",
     "tags": [
       "Nhật"
-    ]
+    ],
+    "audio_integrity": "broken_drm_packets",
+    "media_issues": [
+      "B7"
+    ],
+    "needs_audio_recover": true,
+    "gap_note": "DRM/packet thieu 69% — da biet tu truoc, can source clean",
+    "media_audit_date": "2026-09-18",
+    "media_audit_updated": "2026-09-22T20:14:03+07:00"
   },
   {
     "sku": "VIDEO-b380a1",
@@ -4287,7 +4347,7 @@
   {
     "sku": "VIDEO-5c3116",
     "title": "Share Key thị trường Canada mới nhất và hướng dẫn làm chi tiết từ A-Z - UPDATE 21/8/2025",
-    "image": "assets/thumbs/VIDEO-5c3116.png",
+    "image": "assets/thumbs/VIDEO-5c3116.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755749148-copy-f6495f43-e0ab-4a6e-9fed-61f775dee12f&protected=False&version=v2&token=gAAAAABoppsn-X1PtDIwf7qi4zFXZDtSSiaJRWW8SLcR28mMd9-rol0PwUin5N4YJ0F6Hvr_CznhiK-VfwwIwbi-uhvWgcOKkXeEzontvb7zgWG6NkVS8MI%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 395256693,
     "drm": false,
@@ -4509,7 +4569,7 @@
   {
     "sku": "VIDEO-bdfa54",
     "title": "Key Sinh Tồn view Việt bán content",
-    "image": "assets/thumbs/VIDEO-bdfa54.png",
+    "image": "assets/thumbs/VIDEO-bdfa54.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755610387-video-13-key-sinh-ton-view-viet-ban-content&protected=False&version=v2&token=gAAAAABopH0e0OOabNUeARaHKAPGNsBhyq9VBhRAAALn9NL7V_2FGcD1Hgnt5SzcUhmwB03Rb7i49u4QWt5mLhdG_8se5PV3F-67_uy3Z4qekMcILRilsIA%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 748436515,
     "drm": false,
@@ -4546,7 +4606,7 @@
   {
     "sku": "VIDEO-8e0275",
     "title": "Hướng dẫn tạo edit + thumb key Nonagon",
-    "image": "assets/thumbs/VIDEO-8e0275.png",
+    "image": "assets/thumbs/VIDEO-8e0275.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755610174-video-12-huong-dan-tao-thumb-edit-key-nonagon&protected=False&version=v2&token=gAAAAABopHxMTmzYvwZP-761pdo1XKzOrMccER4ib-R2mWgKItRSxn0gV-x24gS4jN8wMTeTbVhJ8pXhB_QtGcBlIUeXUjQfuaHpdomfSsFuSIqoTGcSpKI%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 550685521,
     "drm": false,
@@ -4598,12 +4658,24 @@
     "tags": [
       "Nổi bật",
       "Ngoại"
-    ]
+    ],
+    "audio_integrity": "broken_empty_track",
+    "audio_integrated_lufs": -70.0,
+    "audio_bitrate_bps": 2090,
+    "media_issues": [
+      "A8f",
+      "B4"
+    ],
+    "needs_audio_recover": true,
+    "content_kind": "silent_screen_tutorial",
+    "gap_note": "Audio AAC 2kbps/-70 LUFS — man hinh tutorial, outline transcript, can voiceover hoac re-upload source",
+    "media_audit_date": "2026-09-18",
+    "media_audit_updated": "2026-09-22T20:14:03+07:00"
   },
   {
     "sku": "VIDEO-b559c8",
     "title": "Hướng dẫn làm thumb ngách nhỏ trong key người que - Chill Dude - chi tiết",
-    "image": "assets/thumbs/VIDEO-b559c8.png",
+    "image": "assets/thumbs/VIDEO-b559c8.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755609786-video-11-huong-dan-chi-tiet-lam-thumb-ngach-nho-trong-key-nguoi-que&protected=False&version=v2&token=gAAAAABopHq_f9VHIEUf4ETDiSTlh7uCGmm7SoGnC7wTrTysdF5CXnWWifceLeTiII54yTSACVgTiiiLb7m2XH8FyUzDCrBiGlxRVgfeAbJZCAzpO5c9xds%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 172775089,
     "drm": false,
@@ -4636,7 +4708,7 @@
   {
     "sku": "VIDEO-b96929",
     "title": "Hướng dẫn edit key triết lý _ khắc kỷ chi tiết từ A-Z ",
-    "image": "assets/thumbs/VIDEO-b96929.png",
+    "image": "assets/thumbs/VIDEO-b96929.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755609225-video-8-huong-dan-edit-chi-tiet-tu-a-z-key-triet-ly-khac-ky&protected=False&version=v2&token=gAAAAABopHiPU9V7EWEZ-rxI88rF8C6CEX7KAVzdmkg5l4R73kQWeKI0pQgza-jV6IyBunBn-9wP9T_wFOifUXiQHmW9Y_-858uBVi_Ld1tFfKfjEXEb9vM%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 211066105,
     "drm": false,
@@ -4676,7 +4748,7 @@
   {
     "sku": "VIDEO-44cf22",
     "title": "Share key và giải thích về chủ đề rpm cao ở các thị trường - UPDATE 23/5",
-    "image": "assets/thumbs/VIDEO-44cf22.png",
+    "image": "assets/thumbs/VIDEO-44cf22.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755608267-video-4-share-key-va-giai-thich-ve-chu-de-rpm-cao-o-cac-thi-truong&protected=False&version=v2&token=gAAAAABopHTT0VmTj_u2_UsrxYigJMmFXiQOHHFB9MojakFExM8wIPaFwnYGdgmk27VQnEnsyY3OsVlw-nsdHVB8nMIo7jbhZxPBj4QfAfLijlxU4DkZBgI%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 283903212,
     "drm": false,
@@ -4715,7 +4787,7 @@
   {
     "sku": "VIDEO-5c438a",
     "title": "Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)",
-    "image": "assets/thumbs/VIDEO-5c438a.png",
+    "image": "assets/thumbs/VIDEO-5c438a.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1755607051-video-1-giai-thich-ve-gmail-va-kenh&protected=False&version=v2&token=gAAAAABopHAPUCySsy8U5iODmDHokzTk6t386gQZQmeu26m910Scwq7Po8PZ-5_CZEMy3uvUXMUofgN-4ml-6n5R05QVw0OijoMvWs2bJLmK10Lx-GloDiM%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 85786674,
     "drm": false,
@@ -4767,7 +4839,7 @@
   {
     "sku": "VIDEO-61ad94",
     "title": "Update ngách bán content Nhật, Hàn..",
-    "image": "assets/thumbs/VIDEO-61ad94.png",
+    "image": "assets/thumbs/VIDEO-61ad94.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1787386494-update-key-pro-22-08-2026&protected=False&version=v2&token=gAAAAABqiVqFcbDbVf65yOsiEWPPbhfi_asAu9u5bhwD_-fgg0dlIH6ISDTS81c2UAuspn6didR8d7-QdiISES8OT6l-5mMiU-fP9ImX6eLP3dCEtGYx0P0%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 110847442,
     "drm": false,
@@ -4810,12 +4882,16 @@
     "width": 1280,
     "height": 720,
     "resolution": "720p",
-    "duration_sec": 630
+    "duration_sec": 630,
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-3a38f9",
     "title": "Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt",
-    "image": "assets/thumbs/VIDEO-3a38f9.png",
+    "image": "assets/thumbs/VIDEO-3a38f9.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1787822125-update-key-pro-27-08-2026&protected=False&version=v2&token=gAAAAABqkAAz1TRq3S-J2Wssc9sGIMwgvwYOTYPKA4SzI6vKY5Nhgh4P6Su3aBQgPH3rpFsZNkJbaE9BoCViiZmivwG3wOWP0QDGBt52G-3iMWr1r29uMtc%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 147537949,
     "drm": false,
@@ -4848,12 +4924,16 @@
     "tags": [
       "Hàn",
       "Việt"
-    ]
+    ],
+    "visual_audio_check_method": "local_transcript_heuristic",
+    "visual_audio_checked": true,
+    "visual_audio_needs_eye_confirm": true,
+    "media_audit_date": "2026-09-18"
   },
   {
     "sku": "VIDEO-73d98a",
     "title": "Update key (ngách cực nhỏ) mới nhất 06-09-2026",
-    "image": "assets/thumbs/VIDEO-73d98a.png",
+    "image": "assets/thumbs/VIDEO-73d98a.webp",
     "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1788687720-update-key-pro-06-09-2026&protected=False&version=v2&token=gAAAAABqnTVtkRl4Ok68TgDJW0JVsDv06MxWTu3YDLJJKkdQ9XohSQNw2nP4ZMFRlZ6MNTgeWKWoalDuULovSAi6gQnRMjN2gIQKFVHfZ-MM-20gz3W3fcc%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
     "size": 199940701,
     "drm": false,
@@ -4893,7 +4973,7 @@
   {
     "sku": "ZOOM-01-Nen-tang-moi-truong",
     "title": "Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
-    "image": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.png",
+    "image": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.webp",
     "video_link": "",
     "size": 212700043,
     "drm": false,
@@ -4944,7 +5024,7 @@
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
     "title": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
-    "image": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.png",
+    "image": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.webp",
     "video_link": "",
     "size": 402600409,
     "drm": false,
@@ -4995,7 +5075,7 @@
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
     "title": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
-    "image": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.png",
+    "image": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.webp",
     "video_link": "",
     "size": 300619595,
     "drm": false,
@@ -5046,7 +5126,7 @@
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
     "title": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
-    "image": "assets/thumbs/ZOOM-04-Adsense-khang-loi.png",
+    "image": "assets/thumbs/ZOOM-04-Adsense-khang-loi.webp",
     "video_link": "",
     "size": 119352148,
     "drm": false,
@@ -5098,7 +5178,7 @@
     "sku": "VIDEO-8bc3ce",
     "title": "Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt",
     "file": "video/VIDEO-8bc3ce/VIDEO-8bc3ce.mp4",
-    "thumb": "assets/thumbs/VIDEO-8bc3ce.png",
+    "thumb": "assets/thumbs/VIDEO-8bc3ce.webp",
     "resolution": "720p",
     "width": 1280,
     "height": 720,
@@ -5158,7 +5238,7 @@
     "sku": "VIDEO-d56768",
     "title": "Share ngách bán content view Việt mới nhất 09-09-2026",
     "file": "video/VIDEO-d56768/VIDEO-d56768.mp4",
-    "thumb": "assets/thumbs/VIDEO-d56768.png",
+    "thumb": "assets/thumbs/VIDEO-d56768.webp",
     "resolution": "720p",
     "width": 1280,
     "height": 720,
@@ -5210,7 +5290,7 @@
     "sku": "VIDEO-989053",
     "title": "Update key(ngách nhỏ) thị trường US Hoa Kỳ + Hàn",
     "file": "video/VIDEO-989053/VIDEO-989053.mp4",
-    "thumb": "assets/thumbs/VIDEO-989053.png",
+    "thumb": "assets/thumbs/VIDEO-989053.webp",
     "resolution": "720p",
     "width": 1280,
     "height": 720,
@@ -5261,7 +5341,7 @@
     "sku": "VIDEO-0bb86b",
     "title": "Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật",
     "file": "video/VIDEO-0bb86b/VIDEO-0bb86b.mp4",
-    "thumb": "assets/thumbs/VIDEO-0bb86b.png",
+    "thumb": "assets/thumbs/VIDEO-0bb86b.webp",
     "resolution": "720p",
     "width": 1280,
     "height": 720,

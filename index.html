@@ -256,13 +256,13 @@
       <div class="vd-top-right">
         <h1 id="page-title" class="vd-page-title">Tổng quan</h1>
         <div id="hd-stats" class="hd-stats"></div>
-        <a href="/lotrinh" class="btn-ghost" style="font-size:12px">Lộ trình</a>
-        <button type="button" class="btn-ghost js-open-music-studio" style="font-size:12px;" id="btn-music-studio" title="Mở trạm phát nhạc nền">🎧 Nhạc nền</button>
+        <a href="/lotrinh" class="btn-ghost" class="vd-mini-action">Lộ trình</a>
+        <button type="button" class="btn-ghost js-open-music-studio vd-mini-action" id="btn-music-studio" title="Mở trạm phát nhạc nền">🎧 Nhạc nền</button>
       </div>
       <div id="topbar-subnav" class="vd-topbar-subnav hidden"></div>
       <nav id="mobile-tabs" class="vd-mobile-tabs" aria-label="Điều hướng tab"></nav>
     </header>
-    <main id="panel-root" tabindex="-1" aria-live="polite">
+    <main id="panel-root" tabindex="-1">
       <div id="content" role="tabpanel"></div>
     </main>
     <footer class="app-footer">H2DEV · kho faceless YouTube · không cần đăng nhập</footer>
@@ -283,6 +283,7 @@
 
   <script src="assets/music_player_modal.js?v=20260922-g2"></script>
 <script src="assets/app/sw-register.js?v=20260922-g6-sw"></script>
+  <div id="a11y-status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 </body>
 
 </html>

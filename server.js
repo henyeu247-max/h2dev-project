@@ -359,16 +359,52 @@ const server = http.createServer(async (req,res)=>{
   }
   if(urlPath === '/' || urlPath === '') urlPath = '/index.html';
 
-  // Routing các trang giao diện chính
+  // ===== PHASE 1: URL ROUTING CHUAN (design-system/URL-ROUTING-SPEC.md) =====
+
+  // --- 1.1. Redirect 301 cho route cu / alias -> canonical (/tongquan cung 301 ve /) ---
+  const REDIRECTS = {
+    '/tongquan': '/',
+    '/kichban': '/tai-lieu',
+    '/kenh': '/kenh-mau',
+    '/raw': '/rawkenh'
+  };
+  const redirectKey = urlPath.replace(/\/+$/, '').toLowerCase() || '/';
+  if (REDIRECTS[redirectKey] !== undefined) {
+    const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+    res.writeHead(301, withSecure({ 'Location': REDIRECTS[redirectKey] + qs, 'Content-Type': 'text/plain; charset=utf-8' }));
+    res.end('301 Moved Permanently: ' + REDIRECTS[redirectKey]);
+    return;
+  }
+
+  // --- 1.2. Whitelist trang giao dien (them /tatca /nhac /tai-lieu /kenh-mau) ---
   if (/^\/lotrinh(?:\/(.*))?$/i.test(urlPath)) {
     const match = urlPath.match(/^\/lotrinh(?:\/(.*))?$/i);
     const sku = match && match[1] ? match[1].replace(/\/+$/, '') : '';
     if (sku) {
+      // --- 1.3. Validate SKU: chi cho phep SKU co that trong catalog ---
+      // Nguon su that: data/catalog.json (140 bai) + data-tabs/videos.json (bai hoc + Zoom)
+      let isValidSku = false;
+      try {
+        const catalogPath = path.join(ROOT, 'data', 'catalog.json');
+        const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
+        const list = Array.isArray(catalog) ? catalog : (catalog.videos || []);
+        const decoded = decodeURIComponent(sku).toLowerCase();
+        isValidSku = list.some(v => String(v && v.sku || '').toLowerCase() === decoded);
+      } catch (e) { isValidSku = false; }
+      if (!isValidSku) {
+        res.writeHead(404, withSecure({ 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' }));
+        res.end('<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><title>404 — Không tìm thấy bài học</title>'
+          + '<meta name="robots" content="noindex"></head><body style="background:#050505;color:#f0f0f0;font-family:Inter,sans-serif;padding:48px;text-align:center">'
+          + '<h1 style="font-size:22px">404 — Không tìm thấy bài học</h1>'
+          + '<p style="color:#a9a9a9">Mã bài học <code>' + sku.replace(/[<>&"]/g, '') + '</code> không tồn tại trong kho.</p>'
+          + '<p><a href="/lotrinh" style="color:#ff8095">← Về danh mục lộ trình</a></p></body></html>');
+        return;
+      }
       urlPath = '/player.html';
     } else {
       urlPath = '/learn.html';
     }
-  } else if (/^\/(?:tongquan|video|ngachxanh|kichban|nguonreup|kenh|rawkenh|chienluoc)\/?$/i.test(urlPath)) {
+  } else if (/^\/(?:tatca|video|ngachxanh|tai-lieu|nhac|nguonreup|kenh-mau|rawkenh|chienluoc)\/?$/i.test(urlPath)) {
     urlPath = '/index.html';
   }
 

@@ -104,6 +104,7 @@
     if (!found) { els.resumeBanner.classList.add('hidden'); return; }
     var v = found.v, pr = C.videoProgress(v.sku);
 
+    // PHASE 3 (2026-09-23): '→' trong cau chu duoc GIU (dau cau, khong phai icon).
     var target = v, label = 'Xem tiếp →', mod = found.mod;
     if (pr.done) {
       var nx = findNextInRoute(data, v.sku);
@@ -113,7 +114,7 @@
     var seq = mod.items.findIndex(function (x) { return x.sku === target.sku; });
     var meta = mod.id + ' · Bài ' + C.pad2(seq + 1) + (target.duration ? ' · ' + target.duration : '');
     var status = pr.done
-      ? '<span class="resume-done">✓ Đã hoàn thành</span>'
+      ? '<span class="resume-done">' + C.ico('check', 14) + ' Đã hoàn thành</span>'
       : (pr.inProgress
           ? '<span class="resume-status">Đang xem ' + C.fmtTotalDur(pr.t) + '</span><span class="resume-pct">' + Math.round(pr.ratio * 100) + '%</span>'
           : '<span class="resume-status">Chưa xem</span>');
@@ -122,7 +123,7 @@
       '<div class="resume-inner">' +
         '<img class="resume-thumb" src="' + C.esc(target.image || '') + '" alt="' + C.esc(target.title || '') + '" loading="lazy">' +
         '<div class="resume-info">' +
-          '<div class="resume-label">▶ ' + (pr.done ? 'Bài tiếp theo' : 'Tiếp tục học') + '</div>' +
+          '<div class="resume-label">' + C.ico('play', 14) + ' ' + (pr.done ? 'Bài tiếp theo' : 'Tiếp tục học') + '</div>' +
           '<div class="resume-title">' + C.esc(target.title) + '</div>' +
           '<div class="resume-meta">' + C.esc(meta) + '</div>' +
         '</div>' +
@@ -287,11 +288,35 @@
     renderHeaderProgress(data);
     renderResumeBanner(data);
     renderTab(data);
+    /* PHASE 2: chuan ARIA tablist — aria-selected + roving tabindex (chuan WAI-ARIA) */
     els.tabbar.querySelectorAll('.tab-btn').forEach(function (btn) {
-      btn.classList.toggle('active', btn.dataset.tab === state.tab);
-      btn.setAttribute('aria-selected', btn.dataset.tab === state.tab ? 'true' : 'false');
+      var isActive = btn.dataset.tab === state.tab;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      btn.setAttribute('tabindex', isActive ? '0' : '-1');
     });
     if (state.tab === 'timkiem') bindSearchEvents(data);
+  }
+
+  /* PHASE 2: dieu huong tab bang ban phim (ArrowLeft/Right/Home/End) — truoc day learn THIEU */
+  function initTabKeyboard() {
+    els.tabbar.addEventListener('keydown', function (e) {
+      var keys = ['ArrowLeft', 'ArrowRight', 'Home', 'End'];
+      if (keys.indexOf(e.key) === -1) return;
+      var btns = Array.prototype.slice.call(els.tabbar.querySelectorAll('.tab-btn'));
+      if (!btns.length) return;
+      var idx = btns.indexOf(document.activeElement);
+      if (idx === -1) idx = btns.findIndex(function (b) { return b.dataset.tab === state.tab; });
+      if (idx === -1) return;
+      e.preventDefault();
+      var next = idx;
+      if (e.key === 'ArrowLeft') next = (idx - 1 + btns.length) % btns.length;
+      else if (e.key === 'ArrowRight') next = (idx + 1) % btns.length;
+      else if (e.key === 'Home') next = 0;
+      else if (e.key === 'End') next = btns.length - 1;
+      btns[next].focus();
+      btns[next].click();
+    });
   }
 
   /* ---------- events ---------- */
@@ -337,6 +362,8 @@
       if (state.tab !== 'timkiem') { u.searchParams.delete('q'); state.q = ''; }
       history.replaceState(null, '', u);
     });
+    /* PHASE 2: kich hoat dieu huong tab bang ban phim */
+    initTabKeyboard();
 
     // Điều hướng toàn bộ cửa sổ cha khi nhúng iframe (đảm bảo thanh URL browser đổi đúng /lotrinh/:sku)
     document.addEventListener('click', function (e) {
@@ -413,6 +440,45 @@
     document.addEventListener('visibilitychange', function () { if (!document.hidden) resync(); });
     });
   }).catch(function (err) {
-    els.panelRoot.innerHTML = '<div class="load-err">⚠️ Không tải được data/modules.json — ' + C.esc(err.message) + '<br>File này được duy trì thủ công (script build-modules đã archive, KHÔNG chạy lại). Kiểm tra: <code>node scripts/validate-project.js</code></div>';
+    els.panelRoot.innerHTML = '<div class="load-err">' + C.ico('alert-triangle', 16) + ' Không tải được data/modules.json — ' + C.esc(err.message) + '<br>File này được duy trì thủ công (script build-modules đã archive, KHÔNG chạy lại). Kiểm tra: <code>node scripts/validate-project.js</code></div>';
   });
+})();
+
+
+// Nav: Quay lai / Trang chu (learn)
+(function () {
+  var bb = document.getElementById('btnHistoryBack');
+  if (bb) {
+    bb.onclick = function () {
+      if (window.history.length > 1) window.history.back();
+      else window.location.href = '/';
+    };
+  }
+})();
+
+
+// UI-nav: Back to top — dong bo voi index #btn-back-to-top
+(function () {
+  function initBackToTop() {
+  var btt = document.getElementById('btn-back-to-top');
+  if (!btt) return;
+  function scrollTopAll() {
+    try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) { window.scrollTo(0, 0); }
+    try { if (window.parent && window.parent !== window) window.parent.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {}
+    var de = document.documentElement;
+    if (de) de.scrollTop = 0;
+  }
+  btt.onclick = function (e) { e.preventDefault(); scrollTopAll(); };
+  var handleScroll = function () {
+    var top = Math.max(window.scrollY || 0, document.documentElement.scrollTop || 0, document.body.scrollTop || 0);
+    /* PHASE 2: class chuan .is-visible dong bo 3 trang */
+    if (top > 320) btt.classList.add('is-visible');
+    else btt.classList.remove('is-visible');
+  };
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  document.addEventListener('scroll', handleScroll, { passive: true, capture: true });
+  handleScroll();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initBackToTop);
+  else initBackToTop();
 })();

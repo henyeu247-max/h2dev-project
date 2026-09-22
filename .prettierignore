@@ -1,0 +1,10 @@
+node_modules/
+_archive/
+assets/icons/
+assets/tailwind.css
+assets/*.min.js
+data/
+data-tabs/
+docs/
+*.min.js
+package-lock.json

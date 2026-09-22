@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi" data-theme="dark" data-density="compact" style="color-scheme: dark;">
 <head>
   <meta charset="UTF-8">
@@ -12,9 +12,14 @@
   <link rel="manifest" href="manifest.json">
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/tailwind.css?v=20260922-g2">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260922-g2">
-  <link rel="stylesheet" href="assets/app/g3-inline.css?v=20260922-g3-css">
+  <link rel="stylesheet" href="/assets/tailwind.css?v=20260923-p3c">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260923-p3c">
+  <link rel="stylesheet" href="assets/app/g3-inline.css?v=20260923-p3c">
+  <link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260923-p3c">
+  <link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260923-p3c">
+  <link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260923-p3c">
+  <link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260923-p3c">
+  <link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260923-p3c">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -223,7 +228,7 @@
   </style>
 </head>
 <body>
-  <a href="#panel-root" class="skip-link">Bỏ qua điều hướng</a>
+  <a href="#panel-root" class="skip-link h2-shell-skip">Bỏ qua điều hướng</a>
   <div class="app-shell">
     <aside class="app-sidebar">
       <div class="vd-brand">
@@ -252,38 +257,41 @@
       </div>
       <nav id="tabs" role="tablist" aria-label="Khu vực"></nav>
     </aside>
-    <header class="vd-topbar" id="vd-topbar">
+    <header class="vd-topbar h2-shell-header" id="vd-topbar">
       <div class="vd-top-right">
-        <h1 id="page-title" class="vd-page-title">Tổng quan</h1>
+        <h1 id="page-title" class="vd-page-title h2-shell-title">Tất cả</h1>
         <div id="hd-stats" class="hd-stats"></div>
-        <a href="/lotrinh" class="btn-ghost" class="vd-mini-action">Lộ trình</a>
-        <button type="button" class="btn-ghost js-open-music-studio vd-mini-action" id="btn-music-studio" title="Mở trạm phát nhạc nền">🎧 Nhạc nền</button>
+        <a href="/lotrinh" class="btn-ghost vd-mini-action">Lộ trình</a>
+        <button type="button" class="btn-ghost js-open-music-studio vd-mini-action" id="btn-music-studio" title="Mở trạm phát nhạc nền"><span class="h2-icon h2-icon--14" data-h2i="headphones" aria-hidden="true"></span> Nhạc nền</button>
       </div>
       <div id="topbar-subnav" class="vd-topbar-subnav hidden"></div>
-      <nav id="mobile-tabs" class="vd-mobile-tabs" aria-label="Điều hướng tab"></nav>
+      <!-- PHASE 2: xoa #mobile-tabs (CSS an vinh vien + JS set rong -> dead element) -->
     </header>
     <main id="panel-root" tabindex="-1">
-      <div id="content" role="tabpanel"></div>
+      <div id="content" role="tabpanel" aria-labelledby="tab-tatca" tabindex="-1"></div>
     </main>
-    <footer class="app-footer">H2DEV · kho faceless YouTube · không cần đăng nhập</footer>
+    <footer class="app-footer h2-shell-footer">H2DEV · kho faceless YouTube · không cần đăng nhập</footer>
   </div>
   <nav class="vd-bottom-nav" id="bottom-nav" aria-label="Điều hướng chính"></nav>
-<script src="assets/app/taxonomy.js?v=20260922-g3-tax"></script>
-<script src="assets/app/ui-core.js?v=20260922-g3-ui"></script>
-  <script src="assets/app/search-core.js?v=20260922-gstd"></script>
-<script src="assets/app/tabs/nav.js?v=20260922-g3-nav"></script>
-<script src="assets/app/tabs/content.js?v=20260922-g31-content"></script>
-<script src="assets/app/modals/raw-deep.js?v=20260922-g3-modal"></script>
-<script src="assets/app/search.js?v=20260922-g3-search"></script>
-  <script src="assets/app/main.js?v=20260922-g6-main"></script>
+<!-- N11 FIX (2026-09-23): h2dev-core.js la TANG NEN dung chung — phai nap TRUOC moi module phu thuoc.
+     Truoc day index.html KHONG nap -> window.H2Core undefined -> ui-core/player tu che ban sao esc/fmtBytes. -->
+<script src="assets/h2dev-core.js?v=20260923-p3c"></script>
+<script src="assets/app/taxonomy.js?v=20260923-p3c"></script>
+<script src="assets/app/ui-core.js?v=20260923-p3c"></script>
+  <script src="assets/app/search-core.js?v=20260923-p3c"></script>
+<script src="assets/app/tabs/nav.js?v=20260923-p3c"></script>
+<script src="assets/app/tabs/content.js?v=20260923-p3c"></script>
+<script src="assets/app/modals/raw-deep.js?v=20260923-p3c"></script>
+<script src="assets/app/search.js?v=20260923-p3c"></script>
+  <script src="assets/app/main.js?v=20260923-p3c"></script>
 
-  <!-- Floating Action Button: Back to Top (Cuộn lên đầu trang mượt mà) -->
-  <button id="btn-back-to-top" type="button" aria-label="Cuộn lên đầu trang" title="Cuộn lên đầu trang">
-    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  <!-- PHASE 2: Back-to-top dung class chuan .h2-shell-backtotop (dong bo 3 trang) -->
+  <button id="btn-back-to-top" type="button" class="h2-shell-backtotop" aria-label="Cuộn lên đầu trang" title="Cuộn lên đầu trang">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
   </button>
 
-  <script src="assets/music_player_modal.js?v=20260922-g2"></script>
-<script src="assets/app/sw-register.js?v=20260922-g6-sw"></script>
+  <script src="assets/music_player_modal.js?v=20260923-p3c"></script>
+<script src="assets/app/sw-register.js?v=20260923-p3c"></script>
   <div id="a11y-status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 </body>
 

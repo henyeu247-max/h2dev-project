@@ -1,4 +1,4 @@
-/* H2TabContent - G3.1 extract: 8 tab renderers from index.html */
+﻿/* H2TabContent - G3.1 extract: 8 tab renderers from index.html */
 (function (global) {
   'use strict';
   const SC = (typeof window !== 'undefined' && window.H2SearchCore) || {
@@ -21,6 +21,9 @@
     const musicStats = deps.musicStats;
     const esc = deps.esc;
     const safeArray = deps.safeArray;
+    /* PHASE 3 (2026-09-23): he icon CSS mask — xem design-system/ICON-MAPPING.md */
+    const ico = deps.ico;
+    const stripDecorEmoji = deps.stripDecorEmoji;
     const nicheKeyFor = deps.nicheKeyFor;
     const xanhBadge = deps.xanhBadge;
     const statCard = deps.statCard;
@@ -44,13 +47,14 @@
     const APP_BUILD_VER = deps.APP_BUILD_VER;
 
 async function renderTongQuan() {
-  const videos = await loadJSON('data-tabs/videos.json');
-  const kenh = await loadJSON('data-tabs/kenh-mau.json');
-  const kich = await loadJSON('data-tabs/tai-lieu-full.json');
-  const slim = await loadJSON('data/catalog.json');
-  const nx = await loadJSON('data-tabs/ngach-xanh.json');
-  const diskMb = slim.reduce((a, v) => a + (v.size_mb || 0), 0);
-  const free = videos.filter(v => v.free).length;
+  // Fallback an toàn: 1 file JSON lỗi không được làm chết cả tab Tổng quan
+  const videos = (await loadJSON('data-tabs/videos.json').catch(() => [])) || [];
+  const kenh = (await loadJSON('data-tabs/kenh-mau.json').catch(() => ({}))) || {};
+  const kich = (await loadJSON('data-tabs/tai-lieu-full.json').catch(() => [])) || [];
+  const slim = (await loadJSON('data/catalog.json').catch(() => [])) || [];
+  const nx = (await loadJSON('data-tabs/ngach-xanh.json').catch(() => ({}))) || {};
+  const diskMb = (Array.isArray(slim) ? slim : []).reduce((a, v) => a + (v.size_mb || 0), 0);
+  const free = (Array.isArray(videos) ? videos : []).filter(v => v.free).length;
   const market = {}; let emptyMarket = 0;
   videos.forEach(v => {
     if (!v.market || !v.market.length) emptyMarket++;
@@ -68,17 +72,17 @@ async function renderTongQuan() {
   <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-[11px] font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
     <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>RADAR KHO
   </span>
-  <p class="page-lede">${videos.length} video · ${kich.length} tài liệu · ${kenh.filter(k=>!k.dead).length} kênh live · ${fmtMb(diskMb)}</p>
+  <p class="page-lede">${SC.pad2(marketRows.length)} thị trường · ${SC.pad2(nx.ngachXanh.length)} ngách · ${SC.pad2((nx.thongTinChinhSach2026 || []).length)} chính sách 2026</p>
 </div>
 <button type="button" class="btn-primary text-xs flex items-center gap-1.5 px-3 py-1.5" data-open-tab="lotrinh">
-  <span>${moduleCount ? 'Lộ trình ' + moduleCount + ' module' : 'Lộ trình học'}</span>
+  <span>${moduleCount ? 'Lộ trình học · ' + SC.pad2(moduleCount) + ' module' : 'Lộ trình học'}</span>
   <span class="text-xs font-mono">→</span>
 </button>
   </div>
   <div class="bento-grid mb-6">
 ${statCard(ICONS.video, 'Video khóa học', videos.length, `${free} bài Free · ${videos.length - free} bài Pro`, 'video')}
-${statCard(ICONS.doc, 'Kịch bản & Tài liệu', kich.length, `${liveFile} file local · catalog`, 'kichban')}
-${statCard(ICONS.channel, 'Kênh mẫu', kenh.filter(k=>!k.dead).length, `${kenh.length} kênh · ${kenh.filter(k=>k.dead).length} dead ẩn`, 'kenh')}
+${statCard(ICONS.doc, 'Kịch bản & Tài liệu', kich.length, `${liveFile} file local · catalog`, 'tai-lieu')}
+${statCard(ICONS.channel, 'Kênh mẫu', kenh.filter(k=>!k.dead).length, `${kenh.length} kênh · ${kenh.filter(k=>k.dead).length} dead ẩn`, 'kenh-mau')}
 ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${SC.pad2(videos.length)} video · catalog local`, 'video')}
   </div>
   ${(function () {
@@ -95,7 +99,7 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${SC.pad2(videos.l
       return `<div class="card p-4 mb-6 border-border-strong bg-surface">
   <div class="flex flex-wrap items-center justify-between gap-3 mb-2.5">
     <div class="flex items-center gap-2 text-sm font-semibold text-fg">
-      <span class="text-xs font-mono text-brand-ink uppercase tracking-wider">Tiến độ học</span>
+      <span class="text-xs font-mono text-brand-ink font-semibold">Tiến độ học</span>
       <span class="text-xs text-gray-500">·</span>
       <span class="badge badge-green">Đã xem ${watched}/${videos.length} bài (${pct}%)</span>
       ${inprog ? `<span class="badge badge-amber">${inprog} bài đang dở</span>` : ''}
@@ -122,7 +126,7 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${SC.pad2(videos.l
       const maxC = Math.max(1, ...marketRows.map(r => r[1]));
       const rows = top.map(([k, c]) => `
       <button type="button" class="market-row cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors w-full text-left" data-open-tab="video" data-market-filter="${k === 'Chưa gắn' ? '' : esc(k)}" title="Xem video thị trường ${esc(k)}">
-        <span class="market-label">${k}</span>
+        <span class="market-label">${esc(stripDecorEmoji(k))}</span>
         <div class="market-bar" aria-hidden="true"><i style="width:${Math.max(4, Math.round(c / maxC * 100))}%"></i></div>
         <span class="market-n">${SC.pad2(c)}</span>
       </button>`).join('');
@@ -201,7 +205,7 @@ function videoCard(v) {
     <a href="${vUrl}" class="block text-[13.5px] font-bold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere] group-hover:text-brand-300 transition-colors font-heading">${esc(v.title)}</a>
     <div class="flex flex-wrap gap-1.5 mt-2.5 min-w-0 items-center">
       ${v.contentNiche ? `<span class="badge badge-green text-[10px]">${esc(v.contentNiche)}</span>` : `<span class="badge badge-muted text-[10px]">${esc(v.niche || 'Khác')}</span>`}
-      ${markets.map(m => `<span class="text-[11px] text-gray-400 font-medium">${esc(m)}</span>`).join('<span class="text-gray-600 text-[10px]">·</span>')}
+      ${markets.map(m => `<span class="text-[11px] text-gray-400 font-medium">${esc(stripDecorEmoji(m))}</span>`).join('<span class="text-gray-600 text-[10px]">·</span>')}
     </div>
     <div class="flex items-center gap-2 mt-2.5 text-[11px] text-gray-400">
       <span class="text-gray-400 truncate min-w-0 font-mono font-semibold">${esc(v.sku)}</span>
@@ -532,7 +536,7 @@ async function renderVideo() {
     </select>
     <label class="sr-only" for="fmarket">Lọc theo thị trường</label>
     <select id="fmarket" aria-label="Lọc theo thị trường" class="search-input-premium text-xs font-semibold py-2">
-      <option value="">Mọi thị trường</option>${markets.map(m => `<option ${state.marketFilter === m ? 'selected' : ''}>${esc(m)}</option>`).join('')}
+      <option value="">Mọi thị trường</option>${markets.map(m => `<option value="${esc(m)}" ${state.marketFilter === m ? 'selected' : ''}>${esc(stripDecorEmoji(m))}</option>`).join('')}
     </select>
     <label class="sr-only" for="fsort">Sắp xếp</label>
     <select id="fsort" aria-label="Sắp xếp" class="search-input-premium text-xs font-semibold py-2">
@@ -552,7 +556,7 @@ async function renderVideo() {
   <div class="flex flex-wrap gap-1.5 mb-4 items-center">
 <button type="button" class="filter-btn text-xs font-medium px-3 py-1 ${!state.freeOnly && !state.marketFilter && !state.nicheFilter && !state.skuFilter && !state.watchFilter ? 'active' : ''}" data-action="video-filter-reset">Tất cả (${videos.length})</button>
 <button type="button" class="filter-btn text-xs font-medium px-3 py-1 ${state.freeOnly ? 'active' : ''}" data-action="video-filter-free">Chỉ Free (${free})</button>
-${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="filter-btn text-xs font-medium px-3 py-1 ${state.marketFilter === m ? 'active' : ''}">${esc(m)} · ${videos.filter(v => (v.market || []).includes(m)).length}</button>`).join('')}
+${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="filter-btn text-xs font-medium px-3 py-1 ${state.marketFilter === m ? 'active' : ''}">${esc(stripDecorEmoji(m))} · ${videos.filter(v => (v.market || []).includes(m)).length}</button>`).join('')}
   </div>
   ${(state.nicheFilter || state.skuFilter) ? `
   <div class="flex items-center gap-2 mb-4 bg-brand-500/10 border border-brand-500/20 px-3.5 py-2 rounded-xl text-xs text-brand-300">
@@ -705,12 +709,30 @@ async function renderNgachXanh() {
     VN: 'Việt Nam',
     GLOBAL: 'Toàn cầu / Khác'
   };
+  // So lieu dong 100% — zero hardcoded counts (Rule AGENTS.md §4.3)
+  function countMauSach(list) {
+    let total = 0;
+    safeArray(list).forEach(n => {
+      const set = new Set();
+      safeArray(n.mauSach).forEach(h => { const s = String(h || '').trim(); if (s) set.add(s.toLowerCase()); });
+      total += set.size;
+    });
+    return total;
+  }
+  const totalMauSach = countMauSach(enrichedNiches);
+  const rpmValues = enrichedNiches
+    .map(n => parseFloat(String(n.rpmMedian || n.rpm || '').replace(/[^0-9.]/g, '')))
+    .filter(v => Number.isFinite(v) && v > 0);
+  const rpmMedian = rpmValues.length
+    ? (() => { const s = [...rpmValues].sort((a, b) => a - b); const m = Math.floor(s.length / 2); return (s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2); })()
+    : null;
+
   return `
   ${pageBanner('Nhận định Ngách xanh 2026', 'Bản đồ ' + enrichedNiches.length + ' ngách YouTube, định dạng an toàn (Safe Format), rủi ro chính sách (Policy Flags) và kênh đối thủ đã kiểm chứng 30 ngày.', [
     { icon: ICONS.niche, label: 'Ưu tiên sản xuất', value: tierCounts.UU_TIEN_SAN_XUAT, sub: 'Top 1-8 ngách sạch, demand thực, RPM cao' },
     { icon: ICONS.doc, label: 'Watchlist & Test', value: (tierCounts.WATCHLIST + tierCounts.TEST_FORMAT), sub: 'Kiểm soát format & test nhỏ 5-10 video' },
-    { icon: ICONS.channel, label: 'Kênh mẫu sạch', value: '70 / 70', sub: 'Đã check 30 ngày qua vidIQ API' },
-    { icon: ICONS.strategy, label: 'RPM Benchmark', value: '$10.22', sub: 'Median danh mục Education & Science (AIR)' }
+    { icon: ICONS.channel, label: 'Kênh mẫu sạch', value: totalMauSach + ' kênh', sub: 'Tổng kênh mẫu đối thủ gắn với ' + enrichedNiches.length + ' ngách' },
+    { icon: ICONS.strategy, label: 'RPM Benchmark', value: rpmMedian != null ? ('$' + rpmMedian.toFixed(2)) : 'N/A', sub: rpmValues.length ? ('Median RPM từ ' + rpmValues.length + ' ngách có dữ liệu') : 'Chưa đủ dữ liệu RPM để tính median' }
   ])
     + (() => {
       const items = (radar && radar.items) || [];
@@ -879,9 +901,9 @@ ${nx.rpmNote ? `<div class="policy-card text-xs text-gray-400 leading-relaxed [o
 
 async function renderKichBan() {
   await loadMusicStats();
-  const kich = await loadJSON('data-tabs/tai-lieu-full.json');
-  const videos = await loadJSON('data-tabs/videos.json');
-  const bySku = Object.fromEntries(videos.map(v => [v.sku, v]));
+  const kich = (await loadJSON('data-tabs/tai-lieu-full.json').catch(() => [])) || [];
+  const videos = (await loadJSON('data-tabs/videos.json').catch(() => [])) || [];
+  const bySku = Object.fromEntries((Array.isArray(videos) ? videos : []).map(v => [v.sku, v]));
   const KIND_LABEL = { prompt: 'Prompt', list: 'List kênh', tool: 'Tool', drive: 'Drive', form: 'Form', ai: 'AI gen', report: 'Báo cáo', 'internal-doc': 'Tài liệu nội bộ', other: 'Khác' };
   const KIND_BADGE = { prompt: 'badge-brand', list: 'badge-blue', tool: 'badge-amber', drive: 'badge-green', form: 'badge-red', ai: 'badge-blue', report: 'badge-green', 'internal-doc': 'badge-muted', other: 'badge-muted' };
   const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Everyday History EN (lịch sử đồ vật thường ngày)', 'Khoa học EN', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Hệ thống / Quy trình', 'Nền tảng / Tool', 'Khác'];
@@ -1708,7 +1730,7 @@ ${grouped.map(g => {
           <div class="min-w-0 flex-1">
             <div class="text-sm font-semibold text-white truncate">${esc(ch.handle)}</div>
             <div class="text-[11px] text-gray-400 truncate">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV</div>
-            ${(ch.markets && ch.markets.length) ? `<div class="text-[10px] text-gray-500 truncate mt-0.5">${ch.markets.map(esc).join(' · ')}</div>` : ''}
+            ${(ch.markets && ch.markets.length) ? `<div class="text-[10px] text-gray-500 truncate mt-0.5">${ch.markets.map(m => esc(stripDecorEmoji(m))).join(' · ')}</div>` : ''}
           </div>
           <span class="text-gray-500 shrink-0 text-sm">↗</span>
         </a>`).join('')}
@@ -1719,12 +1741,12 @@ ${grouped.map(g => {
 }
 
 async function renderChienLuoc() {
-  const cl = await loadJSON('data-tabs/chien-luoc.json');
-  const videos = await loadJSON('data-tabs/videos.json');
-  const docs = await loadJSON('data-tabs/tai-lieu-full.json');
-  const kenh = await loadJSON('data-tabs/kenh-mau.json');
-  const nguon = await loadJSON('data-tabs/nguon-reup.json');
-  const nx = await loadJSON('data-tabs/ngach-xanh.json');
+  const cl = (await loadJSON('data-tabs/chien-luoc.json').catch(() => ({}))) || {};
+  const videos = (await loadJSON('data-tabs/videos.json').catch(() => [])) || [];
+  const docs = (await loadJSON('data-tabs/tai-lieu-full.json').catch(() => [])) || [];
+  const kenh = (await loadJSON('data-tabs/kenh-mau.json').catch(() => ({}))) || {};
+  const nguon = (await loadJSON('data-tabs/nguon-reup.json').catch(() => [])) || [];
+  const nx = (await loadJSON('data-tabs/ngach-xanh.json').catch(() => ({}))) || {};
   const checks = loadChecks();
   const noteOf = {
     'Triết lý / Tâm linh': 'xanh · JP/KR/US',
@@ -1770,8 +1792,8 @@ async function renderChienLuoc() {
   <div id="cl-panel-principles" class="cl-panel" style="${(curTab === 'principles' || isAll) ? 'display:flex;' : 'display:none;'}">
 <div class="bento-grid">
   ${statCard(ICONS.video, 'Video local', videos.length, `${videos.length} video · ${scored} đã điểm`, 'video')}
-  ${statCard(ICONS.doc, 'Kịch bản / tài liệu', docs.length, `${docs.length} file · catalog`, 'kichban')}
-  ${statCard(ICONS.channel, 'Kênh đối thủ', kenh.length, `${kenh.length} kênh · đã check 30 ngày`, 'kenh')}
+  ${statCard(ICONS.doc, 'Kịch bản / tài liệu', docs.length, `${docs.length} file · catalog`, 'tai-lieu')}
+  ${statCard(ICONS.channel, 'Kênh đối thủ', kenh.length, `${kenh.length} kênh · đã check 30 ngày`, 'kenh-mau')}
   ${statCard(ICONS.link, 'Nguồn reup', nguon.length, `${nguon.length} nguồn · match`, 'nguonreup')}
 </div>
 <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-3">
@@ -1864,7 +1886,7 @@ ${(cl.taiSanNoiBo && cl.taiSanNoiBo.length) ? `
   <h2 class="page-h2 mb-1">Tài sản ngoài đã đồng bộ vào H2DEV</h2>
   <p class="text-xs text-gray-500 mb-3">Match cái đã có · gôm cái chưa có. Gốc ở Y:\\YTB không xóa. Chi tiết: <a class="text-brand-400 hover:text-brand-300" href="docs/NOI-BO/README.md" target="_blank" rel="noopener">docs/NOI-BO/README.md</a></p>
   <div class="grid sm:grid-cols-2 xl:grid-cols-5 gap-3">${cl.taiSanNoiBo.map(t => `
-    <button type="button" data-open-tab="${esc(t.tab || 'kichban')}"${t.kind != null ? ` data-kind="${esc(t.kind)}"` : ''} class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-3 min-w-0">
+    <button type="button" data-open-tab="${esc(t.tab || 'tai-lieu')}"${t.kind != null ? ` data-kind="${esc(t.kind)}"` : ''} class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-3 min-w-0">
       <div class="text-[26px] font-extrabold text-white leading-none">${t.so || '—'}</div>
       <div class="text-sm font-bold text-white mt-1">${esc(t.loai)}</div>
       <div class="text-[11px] text-gray-500 mt-1 font-mono break-all">${esc(t.path || '')}</div>

@@ -1,0 +1,301 @@
+﻿/**
+ * H2DEV — ICON SYSTEM (CSS mask + Lucide SVG rieng)
+ * Tang: 2 (Primitives) · Phu thuoc: h2dev-tokens.css
+ * Che do: DARK-MODE ONLY
+ *
+ * CO CHE: 1 file SVG rieng trong assets/icons/ <- mask-image -> hien thi bang currentColor.
+ * UU DIEM so voi <img>: doi mau bang `color`, khong can fetch JS, khong nhay layout.
+ *
+ * QUY TAC BAT BUOC:
+ * 1. CẤM emoji trong UI. Thay bang <span class="h2-icon h2-icon--16" data-h2i="search"></span>
+ * 2. Chi dung 4 muc size: h2-icon--14 / --16 / --20 / --24 (mac dinh 16 neu khong ghi).
+ * 3. Ten icon = ten file SVG (kebab-case), tra cuu assets/icons/.
+ * 4. Them icon moi: copy file SVG vao assets/icons/ + them 1 dong .h2-icon\u005Bdata-h2i="ten"\u005D vao file nay.
+ *    KHONG sua JS. KHONG sua SVG (phai giu currentColor / stroke="currentColor").
+ */
+
+/* --------------------------------------------------------------------------
+   1. BASE — khung icon dung chung
+   -------------------------------------------------------------------------- */
+.h2-icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: var(--h2-icon-16);
+  height: var(--h2-icon-16);
+  min-width: var(--h2-icon-16);
+  min-height: var(--h2-icon-16);
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  vertical-align: -0.125em;
+  /* Chong vo layout khi SVG loi: giu dung kich thuoc da khai bao */
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+/* PHASE 3 (2026-09-23): BAO HIEM flex-shrink.
+   Phat hien khi kiem dinh player.html: khi .h2-icon nam trong flex container
+   (vd nut co flex-1 / nhieu icon canh nhau), item co the bi co ve 0px.
+   Them min-width/min-height cho tung cap size de icon KHONG BAO GIO bi bep. */
+.h2-icon--14 { min-width: var(--h2-icon-14); min-height: var(--h2-icon-14); }
+.h2-icon--16 { min-width: var(--h2-icon-16); min-height: var(--h2-icon-16); }
+.h2-icon--20 { min-width: var(--h2-icon-20); min-height: var(--h2-icon-20); }
+.h2-icon--24 { min-width: var(--h2-icon-24); min-height: var(--h2-icon-24); }
+
+/* --------------------------------------------------------------------------
+   2. SIZE — chi 4 muc chuan (CONVENTIONS.md 7.3)
+   -------------------------------------------------------------------------- */
+.h2-icon--14 { width: var(--h2-icon-14); height: var(--h2-icon-14); }
+.h2-icon--16 { width: var(--h2-icon-16); height: var(--h2-icon-16); }
+.h2-icon--20 { width: var(--h2-icon-20); height: var(--h2-icon-20); }
+.h2-icon--24 { width: var(--h2-icon-24); height: var(--h2-icon-24); }
+
+/* --------------------------------------------------------------------------
+   3. TRANG TRI — bien the hay dung
+   -------------------------------------------------------------------------- */
+.h2-icon--muted { opacity: .65; }
+.h2-icon--spin { animation: h2-icon-spin 1s linear infinite; }
+.h2-icon--flip-x { transform: scaleX(-1); }
+
+@keyframes h2-icon-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .h2-icon--spin { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   4. ICON MAP — ten icon -> duong dan SVG
+   Nguon: assets/icons/*.svg (Lucide, ISC license)
+   So luong: xem cuoi file (dong cuoi = so icon dang ky)
+   -------------------------------------------------------------------------- */
+.h2-icon[data-h2i="activity"]          { -webkit-mask-image: url("icons/activity.svg");          mask-image: url("icons/activity.svg"); }
+.h2-icon[data-h2i="alert-circle"]      { -webkit-mask-image: url("icons/alert-circle.svg");      mask-image: url("icons/alert-circle.svg"); }
+.h2-icon[data-h2i="alert-triangle"]    { -webkit-mask-image: url("icons/alert-triangle.svg");    mask-image: url("icons/alert-triangle.svg"); }
+.h2-icon[data-h2i="align-center"]      { -webkit-mask-image: url("icons/align-center.svg");      mask-image: url("icons/align-center.svg"); }
+.h2-icon[data-h2i="align-left"]        { -webkit-mask-image: url("icons/align-left.svg");        mask-image: url("icons/align-left.svg"); }
+.h2-icon[data-h2i="anchor"]            { -webkit-mask-image: url("icons/anchor.svg");            mask-image: url("icons/anchor.svg"); }
+.h2-icon[data-h2i="archive"]           { -webkit-mask-image: url("icons/archive.svg");           mask-image: url("icons/archive.svg"); }
+.h2-icon[data-h2i="arrow-down"]        { -webkit-mask-image: url("icons/arrow-down.svg");        mask-image: url("icons/arrow-down.svg"); }
+.h2-icon[data-h2i="arrow-left"]        { -webkit-mask-image: url("icons/arrow-left.svg");        mask-image: url("icons/arrow-left.svg"); }
+.h2-icon[data-h2i="arrow-right"]       { -webkit-mask-image: url("icons/arrow-right.svg");       mask-image: url("icons/arrow-right.svg"); }
+.h2-icon[data-h2i="arrow-up"]          { -webkit-mask-image: url("icons/arrow-up.svg");          mask-image: url("icons/arrow-up.svg"); }
+.h2-icon[data-h2i="arrow-up-right"]    { -webkit-mask-image: url("icons/arrow-up-right.svg");    mask-image: url("icons/arrow-up-right.svg"); }
+.h2-icon[data-h2i="at-sign"]           { -webkit-mask-image: url("icons/at-sign.svg");           mask-image: url("icons/at-sign.svg"); }
+.h2-icon[data-h2i="award"]             { -webkit-mask-image: url("icons/award.svg");             mask-image: url("icons/award.svg"); }
+.h2-icon[data-h2i="bar-chart-3"]       { -webkit-mask-image: url("icons/bar-chart-3.svg");       mask-image: url("icons/bar-chart-3.svg"); }
+.h2-icon[data-h2i="barcode"]           { -webkit-mask-image: url("icons/barcode.svg");           mask-image: url("icons/barcode.svg"); }
+.h2-icon[data-h2i="battery"]           { -webkit-mask-image: url("icons/battery.svg");           mask-image: url("icons/battery.svg"); }
+.h2-icon[data-h2i="bell"]              { -webkit-mask-image: url("icons/bell.svg");              mask-image: url("icons/bell.svg"); }
+.h2-icon[data-h2i="binary"]            { -webkit-mask-image: url("icons/binary.svg");            mask-image: url("icons/binary.svg"); }
+.h2-icon[data-h2i="bird"]              { -webkit-mask-image: url("icons/bird.svg");              mask-image: url("icons/bird.svg"); }
+.h2-icon[data-h2i="blocks"]            { -webkit-mask-image: url("icons/blocks.svg");            mask-image: url("icons/blocks.svg"); }
+.h2-icon[data-h2i="book-open"]         { -webkit-mask-image: url("icons/book-open.svg");         mask-image: url("icons/book-open.svg"); }
+.h2-icon[data-h2i="bookmark"]          { -webkit-mask-image: url("icons/bookmark.svg");          mask-image: url("icons/bookmark.svg"); }
+.h2-icon[data-h2i="box"]               { -webkit-mask-image: url("icons/box.svg");               mask-image: url("icons/box.svg"); }
+.h2-icon[data-h2i="boxes"]             { -webkit-mask-image: url("icons/boxes.svg");             mask-image: url("icons/boxes.svg"); }
+.h2-icon[data-h2i="braces"]            { -webkit-mask-image: url("icons/braces.svg");            mask-image: url("icons/braces.svg"); }
+.h2-icon[data-h2i="brackets"]          { -webkit-mask-image: url("icons/brackets.svg");          mask-image: url("icons/brackets.svg"); }
+.h2-icon[data-h2i="brain"]             { -webkit-mask-image: url("icons/brain.svg");             mask-image: url("icons/brain.svg"); }
+.h2-icon[data-h2i="briefcase"]         { -webkit-mask-image: url("icons/briefcase.svg");         mask-image: url("icons/briefcase.svg"); }
+.h2-icon[data-h2i="brush"]             { -webkit-mask-image: url("icons/brush.svg");             mask-image: url("icons/brush.svg"); }
+.h2-icon[data-h2i="bug"]               { -webkit-mask-image: url("icons/bug.svg");               mask-image: url("icons/bug.svg"); }
+.h2-icon[data-h2i="building-2"]        { -webkit-mask-image: url("icons/building-2.svg");        mask-image: url("icons/building-2.svg"); }
+.h2-icon[data-h2i="calendar"]          { -webkit-mask-image: url("icons/calendar.svg");          mask-image: url("icons/calendar.svg"); }
+.h2-icon[data-h2i="calendar-days"]     { -webkit-mask-image: url("icons/calendar-days.svg");     mask-image: url("icons/calendar-days.svg"); }
+.h2-icon[data-h2i="camera"]            { -webkit-mask-image: url("icons/camera.svg");            mask-image: url("icons/camera.svg"); }
+.h2-icon[data-h2i="check"]             { -webkit-mask-image: url("icons/check.svg");             mask-image: url("icons/check.svg"); }
+.h2-icon[data-h2i="check-check"]       { -webkit-mask-image: url("icons/check-check.svg");       mask-image: url("icons/check-check.svg"); }
+.h2-icon[data-h2i="check-circle"]      { -webkit-mask-image: url("icons/check-circle.svg");      mask-image: url("icons/check-circle.svg"); }
+.h2-icon[data-h2i="chevron-down"]      { -webkit-mask-image: url("icons/chevron-down.svg");      mask-image: url("icons/chevron-down.svg"); }
+.h2-icon[data-h2i="chevron-left"]      { -webkit-mask-image: url("icons/chevron-left.svg");      mask-image: url("icons/chevron-left.svg"); }
+.h2-icon[data-h2i="chevron-right"]     { -webkit-mask-image: url("icons/chevron-right.svg");     mask-image: url("icons/chevron-right.svg"); }
+.h2-icon[data-h2i="chevron-up"]        { -webkit-mask-image: url("icons/chevron-up.svg");        mask-image: url("icons/chevron-up.svg"); }
+.h2-icon[data-h2i="circle"]            { -webkit-mask-image: url("icons/circle.svg");            mask-image: url("icons/circle.svg"); }
+.h2-icon[data-h2i="circle-dot"]        { -webkit-mask-image: url("icons/circle-dot.svg");        mask-image: url("icons/circle-dot.svg"); }
+.h2-icon[data-h2i="circle-play"]       { -webkit-mask-image: url("icons/circle-play.svg");       mask-image: url("icons/circle-play.svg"); }
+.h2-icon[data-h2i="clapperboard"]      { -webkit-mask-image: url("icons/clapperboard.svg");      mask-image: url("icons/clapperboard.svg"); }
+.h2-icon[data-h2i="clipboard"]         { -webkit-mask-image: url("icons/clipboard.svg");         mask-image: url("icons/clipboard.svg"); }
+.h2-icon[data-h2i="clipboard-check"]   { -webkit-mask-image: url("icons/clipboard-check.svg");   mask-image: url("icons/clipboard-check.svg"); }
+.h2-icon[data-h2i="clock"]             { -webkit-mask-image: url("icons/clock.svg");             mask-image: url("icons/clock.svg"); }
+.h2-icon[data-h2i="cloud"]             { -webkit-mask-image: url("icons/cloud.svg");             mask-image: url("icons/cloud.svg"); }
+.h2-icon[data-h2i="code"]              { -webkit-mask-image: url("icons/code.svg");              mask-image: url("icons/code.svg"); }
+.h2-icon[data-h2i="code-2"]            { -webkit-mask-image: url("icons/code-2.svg");            mask-image: url("icons/code-2.svg"); }
+.h2-icon[data-h2i="cog"]               { -webkit-mask-image: url("icons/cog.svg");               mask-image: url("icons/cog.svg"); }
+.h2-icon[data-h2i="coins"]             { -webkit-mask-image: url("icons/coins.svg");             mask-image: url("icons/coins.svg"); }
+.h2-icon[data-h2i="columns-3"]         { -webkit-mask-image: url("icons/columns-3.svg");         mask-image: url("icons/columns-3.svg"); }
+.h2-icon[data-h2i="compass"]           { -webkit-mask-image: url("icons/compass.svg");           mask-image: url("icons/compass.svg"); }
+.h2-icon[data-h2i="container"]         { -webkit-mask-image: url("icons/container.svg");         mask-image: url("icons/container.svg"); }
+.h2-icon[data-h2i="copy"]              { -webkit-mask-image: url("icons/copy.svg");              mask-image: url("icons/copy.svg"); }
+.h2-icon[data-h2i="corner-down-right"] { -webkit-mask-image: url("icons/corner-down-right.svg"); mask-image: url("icons/corner-down-right.svg"); }
+.h2-icon[data-h2i="credit-card"]       { -webkit-mask-image: url("icons/credit-card.svg");       mask-image: url("icons/credit-card.svg"); }
+.h2-icon[data-h2i="crown"]             { -webkit-mask-image: url("icons/crown.svg");             mask-image: url("icons/crown.svg"); }
+.h2-icon[data-h2i="database"]          { -webkit-mask-image: url("icons/database.svg");          mask-image: url("icons/database.svg"); }
+.h2-icon[data-h2i="diamond"]           { -webkit-mask-image: url("icons/diamond.svg");           mask-image: url("icons/diamond.svg"); }
+.h2-icon[data-h2i="disc"]              { -webkit-mask-image: url("icons/disc.svg");              mask-image: url("icons/disc.svg"); }
+.h2-icon[data-h2i="dollar-sign"]       { -webkit-mask-image: url("icons/dollar-sign.svg");       mask-image: url("icons/dollar-sign.svg"); }
+.h2-icon[data-h2i="dot"]               { -webkit-mask-image: url("icons/dot.svg");               mask-image: url("icons/dot.svg"); }
+.h2-icon[data-h2i="door-open"]         { -webkit-mask-image: url("icons/door-open.svg");         mask-image: url("icons/door-open.svg"); }
+.h2-icon[data-h2i="download"]          { -webkit-mask-image: url("icons/download.svg");          mask-image: url("icons/download.svg"); }
+.h2-icon[data-h2i="drama"]             { -webkit-mask-image: url("icons/drama.svg");             mask-image: url("icons/drama.svg"); }
+.h2-icon[data-h2i="edit-3"]            { -webkit-mask-image: url("icons/edit-3.svg");            mask-image: url("icons/edit-3.svg"); }
+.h2-icon[data-h2i="external-link"]     { -webkit-mask-image: url("icons/external-link.svg");     mask-image: url("icons/external-link.svg"); }
+.h2-icon[data-h2i="eye"]               { -webkit-mask-image: url("icons/eye.svg");               mask-image: url("icons/eye.svg"); }
+.h2-icon[data-h2i="eye-off"]           { -webkit-mask-image: url("icons/eye-off.svg");           mask-image: url("icons/eye-off.svg"); }
+.h2-icon[data-h2i="factory"]           { -webkit-mask-image: url("icons/factory.svg");           mask-image: url("icons/factory.svg"); }
+.h2-icon[data-h2i="file-edit"]         { -webkit-mask-image: url("icons/file-edit.svg");         mask-image: url("icons/file-edit.svg"); }
+.h2-icon[data-h2i="file-image"]        { -webkit-mask-image: url("icons/file-image.svg");        mask-image: url("icons/file-image.svg"); }
+.h2-icon[data-h2i="file-text"]         { -webkit-mask-image: url("icons/file-text.svg");         mask-image: url("icons/file-text.svg"); }
+.h2-icon[data-h2i="film"]              { -webkit-mask-image: url("icons/film.svg");              mask-image: url("icons/film.svg"); }
+.h2-icon[data-h2i="filter"]            { -webkit-mask-image: url("icons/filter.svg");            mask-image: url("icons/filter.svg"); }
+.h2-icon[data-h2i="filter-x"]          { -webkit-mask-image: url("icons/filter-x.svg");          mask-image: url("icons/filter-x.svg"); }
+.h2-icon[data-h2i="fingerprint"]       { -webkit-mask-image: url("icons/fingerprint.svg");       mask-image: url("icons/fingerprint.svg"); }
+.h2-icon[data-h2i="fish"]              { -webkit-mask-image: url("icons/fish.svg");              mask-image: url("icons/fish.svg"); }
+.h2-icon[data-h2i="flag"]              { -webkit-mask-image: url("icons/flag.svg");              mask-image: url("icons/flag.svg"); }
+.h2-icon[data-h2i="flame"]             { -webkit-mask-image: url("icons/flame.svg");             mask-image: url("icons/flame.svg"); }
+.h2-icon[data-h2i="folder"]            { -webkit-mask-image: url("icons/folder.svg");            mask-image: url("icons/folder.svg"); }
+.h2-icon[data-h2i="folder-open"]       { -webkit-mask-image: url("icons/folder-open.svg");       mask-image: url("icons/folder-open.svg"); }
+.h2-icon[data-h2i="gauge"]             { -webkit-mask-image: url("icons/gauge.svg");             mask-image: url("icons/gauge.svg"); }
+.h2-icon[data-h2i="gem"]               { -webkit-mask-image: url("icons/gem.svg");               mask-image: url("icons/gem.svg"); }
+.h2-icon[data-h2i="gift"]              { -webkit-mask-image: url("icons/gift.svg");              mask-image: url("icons/gift.svg"); }
+.h2-icon[data-h2i="globe"]             { -webkit-mask-image: url("icons/globe.svg");             mask-image: url("icons/globe.svg"); }
+.h2-icon[data-h2i="graduation-cap"]    { -webkit-mask-image: url("icons/graduation-cap.svg");    mask-image: url("icons/graduation-cap.svg"); }
+.h2-icon[data-h2i="grid-3x3"]          { -webkit-mask-image: url("icons/grid-3x3.svg");          mask-image: url("icons/grid-3x3.svg"); }
+.h2-icon[data-h2i="hammer"]            { -webkit-mask-image: url("icons/hammer.svg");            mask-image: url("icons/hammer.svg"); }
+.h2-icon[data-h2i="hard-drive"]        { -webkit-mask-image: url("icons/hard-drive.svg");        mask-image: url("icons/hard-drive.svg"); }
+.h2-icon[data-h2i="hash"]              { -webkit-mask-image: url("icons/hash.svg");              mask-image: url("icons/hash.svg"); }
+.h2-icon[data-h2i="heading-1"]         { -webkit-mask-image: url("icons/heading-1.svg");         mask-image: url("icons/heading-1.svg"); }
+.h2-icon[data-h2i="heading-2"]         { -webkit-mask-image: url("icons/heading-2.svg");         mask-image: url("icons/heading-2.svg"); }
+.h2-icon[data-h2i="heading-3"]         { -webkit-mask-image: url("icons/heading-3.svg");         mask-image: url("icons/heading-3.svg"); }
+.h2-icon[data-h2i="headphones"]        { -webkit-mask-image: url("icons/headphones.svg");        mask-image: url("icons/headphones.svg"); }
+.h2-icon[data-h2i="heart"]             { -webkit-mask-image: url("icons/heart.svg");             mask-image: url("icons/heart.svg"); }
+.h2-icon[data-h2i="help-circle"]       { -webkit-mask-image: url("icons/help-circle.svg");       mask-image: url("icons/help-circle.svg"); }
+.h2-icon[data-h2i="home"]              { -webkit-mask-image: url("icons/home.svg");              mask-image: url("icons/home.svg"); }
+.h2-icon[data-h2i="hourglass"]         { -webkit-mask-image: url("icons/hourglass.svg");         mask-image: url("icons/hourglass.svg"); }
+.h2-icon[data-h2i="image"]             { -webkit-mask-image: url("icons/image.svg");             mask-image: url("icons/image.svg"); }
+.h2-icon[data-h2i="images"]            { -webkit-mask-image: url("icons/images.svg");            mask-image: url("icons/images.svg"); }
+.h2-icon[data-h2i="inbox"]             { -webkit-mask-image: url("icons/inbox.svg");             mask-image: url("icons/inbox.svg"); }
+.h2-icon[data-h2i="indent"]            { -webkit-mask-image: url("icons/indent.svg");            mask-image: url("icons/indent.svg"); }
+.h2-icon[data-h2i="info"]              { -webkit-mask-image: url("icons/info.svg");              mask-image: url("icons/info.svg"); }
+.h2-icon[data-h2i="key"]               { -webkit-mask-image: url("icons/key.svg");               mask-image: url("icons/key.svg"); }
+.h2-icon[data-h2i="key-round"]         { -webkit-mask-image: url("icons/key-round.svg");         mask-image: url("icons/key-round.svg"); }
+.h2-icon[data-h2i="landmark"]          { -webkit-mask-image: url("icons/landmark.svg");          mask-image: url("icons/landmark.svg"); }
+.h2-icon[data-h2i="languages"]         { -webkit-mask-image: url("icons/languages.svg");         mask-image: url("icons/languages.svg"); }
+.h2-icon[data-h2i="layers"]            { -webkit-mask-image: url("icons/layers.svg");            mask-image: url("icons/layers.svg"); }
+.h2-icon[data-h2i="layout-grid"]       { -webkit-mask-image: url("icons/layout-grid.svg");       mask-image: url("icons/layout-grid.svg"); }
+.h2-icon[data-h2i="lightbulb"]         { -webkit-mask-image: url("icons/lightbulb.svg");         mask-image: url("icons/lightbulb.svg"); }
+.h2-icon[data-h2i="line-chart"]        { -webkit-mask-image: url("icons/line-chart.svg");        mask-image: url("icons/line-chart.svg"); }
+.h2-icon[data-h2i="link"]              { -webkit-mask-image: url("icons/link.svg");              mask-image: url("icons/link.svg"); }
+.h2-icon[data-h2i="list"]              { -webkit-mask-image: url("icons/list.svg");              mask-image: url("icons/list.svg"); }
+.h2-icon[data-h2i="list-ordered"]      { -webkit-mask-image: url("icons/list-ordered.svg");      mask-image: url("icons/list-ordered.svg"); }
+.h2-icon[data-h2i="loader"]            { -webkit-mask-image: url("icons/loader.svg");            mask-image: url("icons/loader.svg"); }
+.h2-icon[data-h2i="loader-circle"]     { -webkit-mask-image: url("icons/loader-circle.svg");     mask-image: url("icons/loader-circle.svg"); }
+.h2-icon[data-h2i="lock"]              { -webkit-mask-image: url("icons/lock.svg");              mask-image: url("icons/lock.svg"); }
+.h2-icon[data-h2i="mail"]              { -webkit-mask-image: url("icons/mail.svg");              mask-image: url("icons/mail.svg"); }
+.h2-icon[data-h2i="map"]               { -webkit-mask-image: url("icons/map.svg");               mask-image: url("icons/map.svg"); }
+.h2-icon[data-h2i="map-pin"]           { -webkit-mask-image: url("icons/map-pin.svg");           mask-image: url("icons/map-pin.svg"); }
+.h2-icon[data-h2i="medal"]             { -webkit-mask-image: url("icons/medal.svg");             mask-image: url("icons/medal.svg"); }
+.h2-icon[data-h2i="megaphone"]         { -webkit-mask-image: url("icons/megaphone.svg");         mask-image: url("icons/megaphone.svg"); }
+.h2-icon[data-h2i="message-circle"]    { -webkit-mask-image: url("icons/message-circle.svg");    mask-image: url("icons/message-circle.svg"); }
+.h2-icon[data-h2i="message-square"]    { -webkit-mask-image: url("icons/message-square.svg");    mask-image: url("icons/message-square.svg"); }
+.h2-icon[data-h2i="mic"]               { -webkit-mask-image: url("icons/mic.svg");               mask-image: url("icons/mic.svg"); }
+.h2-icon[data-h2i="milestone"]         { -webkit-mask-image: url("icons/milestone.svg");         mask-image: url("icons/milestone.svg"); }
+.h2-icon[data-h2i="minus"]             { -webkit-mask-image: url("icons/minus.svg");             mask-image: url("icons/minus.svg"); }
+.h2-icon[data-h2i="minus-circle"]      { -webkit-mask-image: url("icons/minus-circle.svg");      mask-image: url("icons/minus-circle.svg"); }
+.h2-icon[data-h2i="moon"]              { -webkit-mask-image: url("icons/moon.svg");              mask-image: url("icons/moon.svg"); }
+.h2-icon[data-h2i="more-horizontal"]   { -webkit-mask-image: url("icons/more-horizontal.svg");   mask-image: url("icons/more-horizontal.svg"); }
+.h2-icon[data-h2i="more-vertical"]     { -webkit-mask-image: url("icons/more-vertical.svg");     mask-image: url("icons/more-vertical.svg"); }
+.h2-icon[data-h2i="mountain"]          { -webkit-mask-image: url("icons/mountain.svg");          mask-image: url("icons/mountain.svg"); }
+.h2-icon[data-h2i="music"]             { -webkit-mask-image: url("icons/music.svg");             mask-image: url("icons/music.svg"); }
+.h2-icon[data-h2i="navigation"]        { -webkit-mask-image: url("icons/navigation.svg");        mask-image: url("icons/navigation.svg"); }
+.h2-icon[data-h2i="outdent"]           { -webkit-mask-image: url("icons/outdent.svg");           mask-image: url("icons/outdent.svg"); }
+.h2-icon[data-h2i="package"]           { -webkit-mask-image: url("icons/package.svg");           mask-image: url("icons/package.svg"); }
+.h2-icon[data-h2i="paintbrush"]        { -webkit-mask-image: url("icons/paintbrush.svg");        mask-image: url("icons/paintbrush.svg"); }
+.h2-icon[data-h2i="palette"]           { -webkit-mask-image: url("icons/palette.svg");           mask-image: url("icons/palette.svg"); }
+.h2-icon[data-h2i="pause"]             { -webkit-mask-image: url("icons/pause.svg");             mask-image: url("icons/pause.svg"); }
+.h2-icon[data-h2i="paw-print"]         { -webkit-mask-image: url("icons/paw-print.svg");         mask-image: url("icons/paw-print.svg"); }
+.h2-icon[data-h2i="pen-tool"]          { -webkit-mask-image: url("icons/pen-tool.svg");          mask-image: url("icons/pen-tool.svg"); }
+.h2-icon[data-h2i="percent"]           { -webkit-mask-image: url("icons/percent.svg");           mask-image: url("icons/percent.svg"); }
+.h2-icon[data-h2i="pie-chart"]         { -webkit-mask-image: url("icons/pie-chart.svg");         mask-image: url("icons/pie-chart.svg"); }
+.h2-icon[data-h2i="pin"]               { -webkit-mask-image: url("icons/pin.svg");               mask-image: url("icons/pin.svg"); }
+.h2-icon[data-h2i="plane"]             { -webkit-mask-image: url("icons/plane.svg");             mask-image: url("icons/plane.svg"); }
+.h2-icon[data-h2i="play"]              { -webkit-mask-image: url("icons/play.svg");              mask-image: url("icons/play.svg"); }
+.h2-icon[data-h2i="play-circle"]       { -webkit-mask-image: url("icons/play-circle.svg");       mask-image: url("icons/play-circle.svg"); }
+.h2-icon[data-h2i="plug"]              { -webkit-mask-image: url("icons/plug.svg");              mask-image: url("icons/plug.svg"); }
+.h2-icon[data-h2i="plus"]              { -webkit-mask-image: url("icons/plus.svg");              mask-image: url("icons/plus.svg"); }
+.h2-icon[data-h2i="plus-circle"]       { -webkit-mask-image: url("icons/plus-circle.svg");       mask-image: url("icons/plus-circle.svg"); }
+.h2-icon[data-h2i="power"]             { -webkit-mask-image: url("icons/power.svg");             mask-image: url("icons/power.svg"); }
+.h2-icon[data-h2i="pulse"]             { -webkit-mask-image: url("icons/pulse.svg");             mask-image: url("icons/pulse.svg"); }
+.h2-icon[data-h2i="puzzle"]            { -webkit-mask-image: url("icons/puzzle.svg");            mask-image: url("icons/puzzle.svg"); }
+.h2-icon[data-h2i="qrcode"]            { -webkit-mask-image: url("icons/qrcode.svg");            mask-image: url("icons/qrcode.svg"); }
+.h2-icon[data-h2i="quote"]             { -webkit-mask-image: url("icons/quote.svg");             mask-image: url("icons/quote.svg"); }
+.h2-icon[data-h2i="radio"]             { -webkit-mask-image: url("icons/radio.svg");             mask-image: url("icons/radio.svg"); }
+.h2-icon[data-h2i="receipt"]           { -webkit-mask-image: url("icons/receipt.svg");           mask-image: url("icons/receipt.svg"); }
+.h2-icon[data-h2i="refresh-cw"]        { -webkit-mask-image: url("icons/refresh-cw.svg");        mask-image: url("icons/refresh-cw.svg"); }
+.h2-icon[data-h2i="rocket"]            { -webkit-mask-image: url("icons/rocket.svg");            mask-image: url("icons/rocket.svg"); }
+.h2-icon[data-h2i="rotate-ccw"]        { -webkit-mask-image: url("icons/rotate-ccw.svg");        mask-image: url("icons/rotate-ccw.svg"); }
+.h2-icon[data-h2i="rotate-cw"]         { -webkit-mask-image: url("icons/rotate-cw.svg");         mask-image: url("icons/rotate-cw.svg"); }
+.h2-icon[data-h2i="rows-3"]            { -webkit-mask-image: url("icons/rows-3.svg");            mask-image: url("icons/rows-3.svg"); }
+.h2-icon[data-h2i="save"]              { -webkit-mask-image: url("icons/save.svg");              mask-image: url("icons/save.svg"); }
+.h2-icon[data-h2i="scan"]              { -webkit-mask-image: url("icons/scan.svg");              mask-image: url("icons/scan.svg"); }
+.h2-icon[data-h2i="scissors"]          { -webkit-mask-image: url("icons/scissors.svg");          mask-image: url("icons/scissors.svg"); }
+.h2-icon[data-h2i="scroll-text"]       { -webkit-mask-image: url("icons/scroll-text.svg");       mask-image: url("icons/scroll-text.svg"); }
+.h2-icon[data-h2i="search"]            { -webkit-mask-image: url("icons/search.svg");            mask-image: url("icons/search.svg"); }
+.h2-icon[data-h2i="search-x"]          { -webkit-mask-image: url("icons/search-x.svg");          mask-image: url("icons/search-x.svg"); }
+.h2-icon[data-h2i="send"]              { -webkit-mask-image: url("icons/send.svg");              mask-image: url("icons/send.svg"); }
+.h2-icon[data-h2i="send-horizontal"]   { -webkit-mask-image: url("icons/send-horizontal.svg");   mask-image: url("icons/send-horizontal.svg"); }
+.h2-icon[data-h2i="server"]            { -webkit-mask-image: url("icons/server.svg");            mask-image: url("icons/server.svg"); }
+.h2-icon[data-h2i="settings"]          { -webkit-mask-image: url("icons/settings.svg");          mask-image: url("icons/settings.svg"); }
+.h2-icon[data-h2i="share-2"]           { -webkit-mask-image: url("icons/share-2.svg");           mask-image: url("icons/share-2.svg"); }
+.h2-icon[data-h2i="shield"]            { -webkit-mask-image: url("icons/shield.svg");            mask-image: url("icons/shield.svg"); }
+.h2-icon[data-h2i="shield-check"]      { -webkit-mask-image: url("icons/shield-check.svg");      mask-image: url("icons/shield-check.svg"); }
+.h2-icon[data-h2i="ship"]              { -webkit-mask-image: url("icons/ship.svg");              mask-image: url("icons/ship.svg"); }
+.h2-icon[data-h2i="signal"]            { -webkit-mask-image: url("icons/signal.svg");            mask-image: url("icons/signal.svg"); }
+.h2-icon[data-h2i="sliders-horizontal"]{ -webkit-mask-image: url("icons/sliders-horizontal.svg"); mask-image: url("icons/sliders-horizontal.svg"); }
+.h2-icon[data-h2i="sparkles"]          { -webkit-mask-image: url("icons/sparkles.svg");          mask-image: url("icons/sparkles.svg"); }
+.h2-icon[data-h2i="spinner"]           { -webkit-mask-image: url("icons/spinner.svg");           mask-image: url("icons/spinner.svg"); }
+.h2-icon[data-h2i="square"]            { -webkit-mask-image: url("icons/square.svg");            mask-image: url("icons/square.svg"); }
+.h2-icon[data-h2i="star"]              { -webkit-mask-image: url("icons/star.svg");              mask-image: url("icons/star.svg"); }
+.h2-icon[data-h2i="star-off"]          { -webkit-mask-image: url("icons/star-off.svg");          mask-image: url("icons/star-off.svg"); }
+.h2-icon[data-h2i="sun"]               { -webkit-mask-image: url("icons/sun.svg");               mask-image: url("icons/sun.svg"); }
+.h2-icon[data-h2i="table"]             { -webkit-mask-image: url("icons/table.svg");             mask-image: url("icons/table.svg"); }
+.h2-icon[data-h2i="tag"]               { -webkit-mask-image: url("icons/tag.svg");               mask-image: url("icons/tag.svg"); }
+.h2-icon[data-h2i="tags"]              { -webkit-mask-image: url("icons/tags.svg");              mask-image: url("icons/tags.svg"); }
+.h2-icon[data-h2i="target"]            { -webkit-mask-image: url("icons/target.svg");            mask-image: url("icons/target.svg"); }
+.h2-icon[data-h2i="tent"]              { -webkit-mask-image: url("icons/tent.svg");              mask-image: url("icons/tent.svg"); }
+.h2-icon[data-h2i="terminal"]          { -webkit-mask-image: url("icons/terminal.svg");          mask-image: url("icons/terminal.svg"); }
+.h2-icon[data-h2i="text"]              { -webkit-mask-image: url("icons/text.svg");              mask-image: url("icons/text.svg"); }
+.h2-icon[data-h2i="text-quote"]        { -webkit-mask-image: url("icons/text-quote.svg");        mask-image: url("icons/text-quote.svg"); }
+.h2-icon[data-h2i="theater"]           { -webkit-mask-image: url("icons/theater.svg");           mask-image: url("icons/theater.svg"); }
+.h2-icon[data-h2i="timer"]             { -webkit-mask-image: url("icons/timer.svg");             mask-image: url("icons/timer.svg"); }
+.h2-icon[data-h2i="toggle-left"]       { -webkit-mask-image: url("icons/toggle-left.svg");       mask-image: url("icons/toggle-left.svg"); }
+.h2-icon[data-h2i="toggle-right"]      { -webkit-mask-image: url("icons/toggle-right.svg");      mask-image: url("icons/toggle-right.svg"); }
+.h2-icon[data-h2i="trash-2"]           { -webkit-mask-image: url("icons/trash-2.svg");           mask-image: url("icons/trash-2.svg"); }
+.h2-icon[data-h2i="tree-pine"]         { -webkit-mask-image: url("icons/tree-pine.svg");         mask-image: url("icons/tree-pine.svg"); }
+.h2-icon[data-h2i="trending-up"]       { -webkit-mask-image: url("icons/trending-up.svg");       mask-image: url("icons/trending-up.svg"); }
+.h2-icon[data-h2i="trophy"]            { -webkit-mask-image: url("icons/trophy.svg");            mask-image: url("icons/trophy.svg"); }
+.h2-icon[data-h2i="truck"]             { -webkit-mask-image: url("icons/truck.svg");             mask-image: url("icons/truck.svg"); }
+.h2-icon[data-h2i="tv"]                { -webkit-mask-image: url("icons/tv.svg");                mask-image: url("icons/tv.svg"); }
+.h2-icon[data-h2i="type"]              { -webkit-mask-image: url("icons/type.svg");              mask-image: url("icons/type.svg"); }
+.h2-icon[data-h2i="unlock"]            { -webkit-mask-image: url("icons/unlock.svg");            mask-image: url("icons/unlock.svg"); }
+.h2-icon[data-h2i="upload"]            { -webkit-mask-image: url("icons/upload.svg");            mask-image: url("icons/upload.svg"); }
+.h2-icon[data-h2i="user"]              { -webkit-mask-image: url("icons/user.svg");              mask-image: url("icons/user.svg"); }
+.h2-icon[data-h2i="users"]             { -webkit-mask-image: url("icons/users.svg");             mask-image: url("icons/users.svg"); }
+.h2-icon[data-h2i="video"]             { -webkit-mask-image: url("icons/video.svg");             mask-image: url("icons/video.svg"); }
+.h2-icon[data-h2i="wallet"]            { -webkit-mask-image: url("icons/wallet.svg");            mask-image: url("icons/wallet.svg"); }
+.h2-icon[data-h2i="wand-sparkles"]     { -webkit-mask-image: url("icons/wand-sparkles.svg");     mask-image: url("icons/wand-sparkles.svg"); }
+.h2-icon[data-h2i="warning"]           { -webkit-mask-image: url("icons/warning.svg");           mask-image: url("icons/warning.svg"); }
+.h2-icon[data-h2i="wifi"]              { -webkit-mask-image: url("icons/wifi.svg");              mask-image: url("icons/wifi.svg"); }
+.h2-icon[data-h2i="wrap-text"]         { -webkit-mask-image: url("icons/wrap-text.svg");         mask-image: url("icons/wrap-text.svg"); }
+.h2-icon[data-h2i="wrench"]            { -webkit-mask-image: url("icons/wrench.svg");            mask-image: url("icons/wrench.svg"); }
+.h2-icon[data-h2i="x"]                 { -webkit-mask-image: url("icons/x.svg");                 mask-image: url("icons/x.svg"); }
+.h2-icon[data-h2i="x-circle"]          { -webkit-mask-image: url("icons/x-circle.svg");          mask-image: url("icons/x-circle.svg"); }
+.h2-icon[data-h2i="zap"]               { -webkit-mask-image: url("icons/zap.svg");               mask-image: url("icons/zap.svg"); }
+
+/* TONG SO ICON DANG KY: 222 (khop 222/222 file SVG trong assets/icons/) */

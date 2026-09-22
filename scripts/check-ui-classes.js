@@ -191,6 +191,29 @@ function isJsHookToken(t, html) {
   return false;
 }
 
+/**
+ * Token có ĐUÔI ĐỘNG — sinh ra do bộ tách class cắt ngang chỗ nội suy `${...}`.
+ *
+ * Ví dụ thật (Phase 3, 2026-09-23): hệ icon viết
+ *     class="h2-icon h2-icon--${size}"
+ * Bộ tách bỏ phần `${size}` và giữ lại token `h2-icon--` — token này KHÔNG và
+ * KHÔNG BAO GIỜ tồn tại trong CSS, vì CSS chỉ có `h2-icon--14/16/20/24`.
+ * => báo lỗi giả, làm cổng validate-project.js đỏ vĩnh viễn.
+ *
+ * Điều kiện nhận diện (chặt, không nới rộng ẩu):
+ *   1. Token kết thúc bằng `--` (dấu hiệu bị cắt ngay trước biến nội suy), VÀ
+ *   2. Trong CSS thật ĐANG nạp có ít nhất 1 class bắt đầu bằng chính token đó
+ *      cộng thêm ký tự (tức là họ class có thật: `h2-icon--` -> có `h2-icon--14`).
+ *      Nếu KHÔNG có họ class nào => vẫn báo lỗi như cũ (không ngụy trang nợ).
+ */
+function isDynamicSuffixToken(t, cssUnion) {
+  if (!t.endsWith('--')) return false;
+  for (const c of cssUnion) {
+    if (c.length > t.length && c.startsWith(t)) return true;
+  }
+  return false;
+}
+
 function main() {
   const jsonMode = process.argv.includes('--json');
   const report = [];
@@ -240,6 +263,7 @@ function main() {
       if (!looksLikeClass(t)) continue;
       if (ALLOWLIST.has(t)) continue;
       if (isJsHookToken(t, html)) continue;
+      if (isDynamicSuffixToken(t, cssUnion)) continue;
       if (cssUnion.has(t)) continue;
       (TW_UTIL.test(t) ? missing : warnings).push(t);
     }

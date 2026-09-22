@@ -20,9 +20,8 @@
     close: '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
     tagImportant: '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2L9.2 8.6 2 9.2l5.5 4.7L5.8 21 12 17.3 18.2 21l-1.7-7.1L22 9.2l-7.2-.6z"/></svg>',
     tagFeatured: '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2L9.2 8.6 2 9.2l5.5 4.7L5.8 21 12 17.3 18.2 21l-1.7-7.1L22 9.2l-7.2-.6z"/></svg>',
-    play: '<svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
-    check: '✓',
-    eye: '👁'
+    play: '<svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'
+    // PHASE 3 (2026-09-23): da bo check:'✓' va eye:'👁' — dung ico('check')/ico('eye') thay the.
   };
 
   /* ---------- helpers ---------- */
@@ -31,6 +30,26 @@
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function pad2(n) { return String(n).padStart(2, '0'); }
   function normalize(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd'); }
+
+  /* ---------- PHASE 3 (2026-09-23): HE ICON CHUAN (CSS mask) ----------
+   * Sua: he icon duy nhat = assets/icons/*.svg + .h2-icon[data-h2i] trong h2dev-icons.css.
+   * Cam dung emoji lam icon trong UI. Xem design-system/ICON-MAPPING.md.
+   */
+  /* ico('search') hoac ico('search', 20) -> the <span class="h2-icon ..."> */
+  function ico(name, size) {
+    return '<span class="h2-icon h2-icon--' + (size || 16) + '" data-h2i="' + String(name) + '" aria-hidden="true"></span>';
+  }
+
+  /* Bo emoji TRANG TRI (🌐 ✨ 📌 ⚠️ ...) nhung GIU QUOC KY (🇻🇳 🇯🇵 = nhan ngon ngu).
+   * Dung khi data co emoji lan trong chuoi hien thi (vd "🌐 Ngoại", "📌 Takeaway").
+   * KHONG dung cho chuoi lam KEY so sanh — key phai giu nguyen gia tri goc. */
+  function stripDecorEmoji(s) {
+    return String(s == null ? '' : s)
+      .replace(/[\u{1F300}-\u{1F5FF}\u{1F600}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{2705}\u{274C}\u{23F3}\u{23F1}\u{2B50}\u{2B1B}\u{2B1C}]+/gu, '')
+      .replace(/\s{2,}/g, ' ')
+      .replace(/^[\s/·-]+|[\s/·-]+$/g, '')
+      .trim();
+  }
 
   // duration "mm:ss" hoặc "hh:mm:ss" → giây
   function durToSecs(d) {
@@ -54,11 +73,26 @@
     return m ? (m[3] + '/' + m[2] + '/' + m[1]) : (iso || '');
   }
 
+  /**
+   * fmtBytes — dinh dang dung luong file (input: BYTES).
+   * N11 FIX (2026-09-23): day la BAN CHUAN DUY NHAT cua toan du he.
+   *
+   * GHI CHU QUAN TRONG (do luong 2026-09-23):
+   * - Truoc day co 3 ban sao KHONG khop nhau:
+   *     h2dev-core.js : chia 1024^3 / 1024^2 (binary)  -> "170 MB"
+   *     ui-core.js    : chia 1e9 / 1e6      (decimal)  -> "178 MB"
+   *     player-main.js: chia 1e9 / 1e6      (decimal)  -> "178 MB"
+   *   -> Cung 1 file 178441037 bytes hien 2 con so KHAC nhau (170 vs 178 MB).
+   * - Kiem dinh: H2Core.fmtBytes KHONG co consumer nao; con ui-core.fmtBytes
+   *   dang hien tren 140 the video (content.js:612). Vi vay CHON BAN DECIMAL
+   *   lam chuan de KHONG doi so lieu dang hien thi cho nguoi dung.
+   * - Muon doi sang binary phai la mot thay doi CO CHU DICH + thong bao.
+   */
   function fmtBytes(b) {
     if (!b) return '';
-    if (b >= 1024 * 1024 * 1024) return (b / 1024 / 1024 / 1024).toFixed(1) + ' GB';
-    if (b >= 1024 * 1024) return (b / 1024 / 1024).toFixed(0) + ' MB';
-    return Math.round(b / 1024) + ' KB';
+    if (b >= 1e9) return (b / 1e9).toFixed(2) + ' GB';
+    if (b >= 1e6) return (b / 1e6).toFixed(0) + ' MB';
+    return (b / 1e3).toFixed(0) + ' KB';
   }
 
   /* ---------- localStorage ---------- */
@@ -153,6 +187,24 @@
    * Layout gốc: [thumb 16:9: seq góc phải-trên, heart góc trái-trên,
    *   progress bar đáy thumb, time chip phải-dưới] + [title + badges]
    * opts: {seq, updatedLine (bool), back, active (bool)} */
+  /* ⚠️ CẢNH BÁO CSS (kiểm chứng 2026-09-23) — ĐỌC TRƯỚC KHI GỌI Ở TRANG MỚI:
+   * Các class .lesson-row .row-thumb .row-body .row-title .row-tags .row-seq
+   * .row-time .row-updated .row-watchbar .watched-badge CHỈ ĐƯỢC ĐỊNH NGHĨA
+   * TRONG assets/learn.css (không nằm trong h2dev-tokens/primitives/shell).
+   *
+   * => Trang nào gọi renderLessonRow() / renderSectionHead() / renderEmptyState()
+   *    BẮT BUỘC phải nạp learn.css, nếu không hàng bài học sẽ VỠ LAYOUT
+   *    (thumb/tiêu đề/nhãn đè lên nhau) dù KHÔNG có lỗi JS nào.
+   *
+   * Trạng thái hiện tại (đã đo runtime): cả 3 hàm này CHỈ được gọi từ
+   * assets/learn.js -> chỉ chạy trên learn.html -> AN TOÀN.
+   * index.html / player.html KHÔNG gọi (đo được 0 phần tử .lesson-row trên cả 2).
+   *
+   * Cổng scripts/check-ui-classes.js vẫn báo row-* thiếu ở index/player: đây là
+   * báo ĐÚNG về mặt kỹ thuật (class có trong JS nạp nhưng không có CSS nạp) —
+   * KHÔNG ỉm đi, giữ để nhắc bẫy này. Muốn hết báo: tách .row-* sang CSS dùng
+   * chung (h2dev-primitives.css) HOẶC nạp learn.css ở trang gọi.
+   */
   function renderLessonRow(v, opts) {
     opts = opts || {};
     var sku = v.sku;
@@ -179,8 +231,9 @@
     tags += v.free
       ? '<span class="ltag ltag-free">FREE</span>'
       : '<span class="ltag ltag-pro">PRO</span>';
-    if (pr.done) tags += '<span class="ltag ltag-done">✓ Đã xem</span>';
-    else if (pr.inProgress) tags += '<span class="ltag ltag-progress">⏳ ' + Math.round(pr.ratio * 100) + '%</span>';
+    // PHASE 3 (2026-09-23): emoji -> .h2-icon (he icon CSS mask duy nhat).
+    if (pr.done) tags += '<span class="ltag ltag-done">' + ico('check', 14) + ' Đã xem</span>';
+    else if (pr.inProgress) tags += '<span class="ltag ltag-progress">' + ico('hourglass', 14) + ' ' + Math.round(pr.ratio * 100) + '%</span>';
     var action = opts.showAction ? '<a class="lesson-watch" target="_top" href="' + href + '" aria-label="Xem video: ' + esc(v.title) + '">Xem video</a>' : '';
 
     return '' +
@@ -241,6 +294,7 @@
     WKEY: WKEY, FKEY: FKEY, RKEY: RKEY,
     ICONS: ICONS,
     esc: esc, pad2: pad2, normalize: normalize,
+    ico: ico, stripDecorEmoji: stripDecorEmoji,
     durToSecs: durToSecs, fmtTotalDur: fmtTotalDur, dateVN: dateVN, fmtBytes: fmtBytes,
     loadWatched: loadWatched, saveWatchedAll: saveWatchedAll, syncAdmin: syncAdmin, hydrateAdmin: hydrateAdmin,
     loadFavs: loadFavs, saveFavs: saveFavs, toggleFav: toggleFav, loadRecent: loadRecent,

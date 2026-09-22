@@ -98,14 +98,14 @@ function highlightQuery(text, query) {
 }
 
 
-function statCard(icon, label, value, sub, tabTarget) {
+function statCard(icon, label, value, sub, tabTarget, live) {
   const isSvg = typeof icon === 'string' && icon.includes('<svg');
   const glyph = isSvg ? icon : (icon ? `<span class="stat-glyph">${icon}</span>` : '');
   const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${esc(label)}"` : '';
   return `<div class="bento-card${tabTarget ? ' cursor-pointer hover:border-brand/40 transition-colors' : ''}"${clickAttr}>
 <div class="stat-icon">${glyph}</div>
 <div class="stat-body">
-  <div class="stat-value">${value}</div>
+  <div class="stat-value"${live ? ' aria-live="polite"': ''}>${value}</div>
   <div class="stat-label">${label}</div>
   ${sub ? `<div class="stat-sub">${sub}</div>` : ''}
 </div>
@@ -116,7 +116,7 @@ function pageBanner(title, sub, stats) {
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
   // Tránh thẻ thứ 5 bị lẻ bóng 1 mình trên mobile (UX Pro Max - Rhythm & Grid stability)
   const displayStats = (stats && stats.length === 5 && isMobile) ? stats.slice(0, 4) : stats;
-  const cards = (displayStats || []).map(s => statCard(s.icon, s.label, s.value, s.sub || '')).join('');
+  const cards = (displayStats || []).map(s => statCard(s.icon, s.label, s.value, s.sub || '', s.tab || '', !!s.live)).join('');
   return `
   ${sub ? `<p class="page-lede">${sub}</p>` : ''}
   ${cards ? `<div class="bento-grid mb-6">${cards}</div>` : ''}`;

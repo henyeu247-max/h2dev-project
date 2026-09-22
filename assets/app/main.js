@@ -71,14 +71,38 @@
     ];
 
     const APP_BUILD_VER = '20260922-g2-esc-onclick-a11y-v1';
+    // G-std: fallback chain like FckSignups useTools (primary -> no-ver -> fail soft)
+    const _loadErrors = [];
+    function noteLoadError(path, msg) {
+      _loadErrors.push({ path: path, msg: msg });
+      try {
+        const el = document.getElementById('a11y-status');
+        if (el) el.textContent = 'Lỗi tải dữ liệu: ' + path;
+      } catch (e) {}
+    }
     async function loadJSON(p) {
-      if (!CAT[p]) {
-        const sep = p.includes('?') ? '&' : '?';
-        const r = await fetch(p + sep + 'v=' + APP_BUILD_VER);
-        if (!r.ok) throw new Error(`Không tải được ${p} (${r.status})`);
-        CAT[p] = await r.json();
+      if (CAT[p]) return CAT[p];
+      const sep = p.includes('?') ? '&' : '?';
+      const urls = [p + sep + 'v=' + APP_BUILD_VER, p];
+      for (let i = 0; i < urls.length; i++) {
+        try {
+          const r = await fetch(urls[i], { cache: i === 0 ? 'no-store' : 'default' });
+          if (!r.ok) throw new Error(r.status + ' ' + urls[i]);
+          CAT[p] = await r.json();
+          return CAT[p];
+        } catch (e) {
+          if (i === urls.length - 1) {
+            noteLoadError(p, String(e && e.message || e));
+            throw new Error(`Không tải được ${p}`);
+          }
+        }
       }
-      return CAT[p];
+    }
+    function renderLoadErrorBanner() {
+      if (!_loadErrors.length) return '';
+      return '<div class="card p-4 mb-4 border-red-800" role="alert"><strong class="text-white">Không tải được một số dữ liệu</strong><ul class="text-xs text-gray-400 mt-2" style="margin:0;padding-left:1rem;list-style:disc">' +
+        _loadErrors.map(x => '<li>' + esc(x.path) + ' — ' + esc(x.msg) + '</li>').join('') +
+        '</ul></div>';
     }
 
     // Đếm nhạc động từ music_catalog — cấm hardcode số track
@@ -294,7 +318,7 @@
       } catch (e) {}
     }
 
-    const BOTTOM_TABS = ['tongquan', 'video', 'ngachxanh', 'kenh', 'rawkenh', 'chienluoc'];
+    const BOTTOM_TABS = ['tongquan', 'video', 'ngachxanh', 'rawkenh']; // UI Pro bottom-nav <=5
 
 
 
@@ -603,7 +627,7 @@
           case 'rawkenh': html = await renderRawKenh(); break;
           case 'chienluoc': html = await renderChienLuoc(); break;
         }
-        el.innerHTML = html;
+        el.innerHTML = renderLoadErrorBanner() + html;
         const titleEl = document.getElementById('page-title');
         const tabMeta = TABS.find(t => t.id === state.tab);
         if (titleEl && tabMeta) titleEl.textContent = tabMeta.name;

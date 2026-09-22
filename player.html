@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi" data-theme="dark" data-density="compact" style="color-scheme: dark;">
 <head>
 <meta charset="UTF-8">
@@ -7,22 +7,30 @@
 <meta name="color-scheme" content="dark">
 <title>Xem video — H2DEV Project</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
-<link rel="stylesheet" href="/assets/tailwind.css?v=20260918media1">
-<link rel="stylesheet" href="/assets/viddar.css?v=20260918media1">
-<link rel="stylesheet" href="/assets/player.css?v=20260918media1">
+<link rel="stylesheet" href="/assets/tailwind.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/viddar.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/player.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260923-p3c">
 <meta name="description" content="H2DEV — xem video khóa học.">
 <meta name="theme-color" content="#050505">
 </head>
 <body class="app-body">
-<header class="app-top">
+<!-- PHASE 2: Skip-link chuan (truoc day player THIEU) -->
+<a href="#playerMain" class="h2-shell-skip">Bỏ qua điều hướng</a>
+<header class="app-top h2-shell-header">
   <div class="flex items-center gap-3">
-    <a href="javascript:void(0)" id="btnBack" class="btn-ghost">← Quay lại</a>
+    <a href="javascript:void(0)" id="btnBack" class="btn-ghost"><span class="h2-icon h2-icon--14" data-h2i="arrow-left" aria-hidden="true"></span> Quay lại</a>
+    <a href="/" class="btn-ghost" title="Về trang chủ">Trang chủ</a>
     <div class="brand-mark">H2</div>
-    <span class="text-sm font-semibold">H2DEV Studio</span>
+    <span class="h2-shell-title">H2DEV Studio</span>
   </div>
   <div class="flex items-center gap-2">
       <button id="btnTheater" type="button" class="theater-toggle-badge inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 transition-colors cursor-pointer" title="Bật/Tắt chế độ rạp chiếu (Phím tắt T)">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><rect x="5" y="7" width="14" height="10" rx="1" fill="currentColor" fill-opacity="0.3"/></svg>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><rect x="5" y="7" width="14" height="10" rx="1" fill="currentColor" fill-opacity="0.3"/></svg>
         <span id="theaterLabel">Chiếu rạp</span>
         <span class="shortcut-key hidden sm:inline">T</span>
       </button>
@@ -37,7 +45,7 @@
     </div>
   </div>
 </section>
-<main class="player-main max-w-5xl mx-auto px-4 sm:px-6 pb-12 pt-2">
+<main class="player-main max-w-5xl mx-auto px-4 sm:px-6 pb-12 pt-2" id="playerMain" tabindex="-1">
   <div class="mb-4">
     <h1 id="ptitle" class="text-xl sm:text-2xl font-bold text-white leading-snug font-heading tracking-tight">Đang tải…</h1>
     <div id="pmeta" class="flex flex-wrap items-center gap-2 mt-2.5 text-xs text-gray-400"></div>
@@ -47,13 +55,13 @@
   <!-- Mobile & Compact View Segmented Tab Control -->
   <div class="flex items-center gap-1 p-1 mb-4 bg-surface-2 border border-border rounded-xl" id="playerTabSelector" role="tablist">
     <button type="button" role="tab" aria-selected="true" data-player-tab="overview" class="flex-1 py-2 px-2 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-all text-center flex items-center justify-center gap-1 min-h-[38px]">
-      <span>📋</span><span>Bài học<span class="hidden sm:inline"> &amp; Tài liệu</span></span>
+      <span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span><span>Bài học<span class="hidden sm:inline"> &amp; Tài liệu</span></span>
     </button>
     <button type="button" role="tab" aria-selected="false" data-player-tab="insights" class="flex-1 py-2 px-2 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1 min-h-[38px]">
-      <span>🧠</span><span>Phân tích AI</span>
+      <span class="h2-icon h2-icon--14" data-h2i="brain" aria-hidden="true"></span><span>Phân tích AI</span>
     </button>
     <button type="button" role="tab" aria-selected="false" data-player-tab="transcript" class="flex-1 py-2 px-2 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1 min-h-[38px]">
-      <span>💬</span><span>Phụ đề</span>
+      <span class="h2-icon h2-icon--14" data-h2i="message-circle" aria-hidden="true"></span><span>Phụ đề</span>
     </button>
   </div>
   <div class="player-layout grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
@@ -62,13 +70,13 @@
       <section class="player-controls card p-4 bg-surface-card border-ink-600">
         <div class="flex flex-wrap items-center justify-between gap-2">
           <div class="flex items-center gap-2">
-            <button id="btnPrev" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 disabled:opacity-30 disabled:cursor-not-allowed">← Bài trước</button>
+            <button id="btnPrev" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 disabled:opacity-30 disabled:cursor-not-allowed"><span class="h2-icon h2-icon--14" data-h2i="chevron-left" aria-hidden="true"></span> Bài trước</button>
             <span id="routeSeq" class="text-xs text-gray-400 font-mono"></span>
-            <button id="btnNext" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 disabled:opacity-30 disabled:cursor-not-allowed">Bài tiếp theo →</button>
+            <button id="btnNext" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 disabled:opacity-30 disabled:cursor-not-allowed">Bài tiếp theo <span class="h2-icon h2-icon--14" data-h2i="chevron-right" aria-hidden="true"></span></button>
           </div>
           <div id="pstate" class="flex items-center gap-2">
-            <button id="btnWatched" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-colors bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-300" aria-label="Đánh dấu trạng thái bài học">⬜ Chưa xem</button>
-            <button id="btnResume" type="button" class="btn-press hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-500 text-white" aria-label="Xem tiếp bài học">▶ Xem tiếp</button>
+            <button id="btnWatched" type="button" class="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-colors bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-300" aria-label="Đánh dấu trạng thái bài học"><span class="h2-icon h2-icon--14" data-h2i="square" aria-hidden="true"></span> Chưa xem</button>
+            <button id="btnResume" type="button" class="btn-press hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-500 text-white" aria-label="Xem tiếp bài học"><span class="h2-icon h2-icon--14" data-h2i="play" aria-hidden="true"></span> Xem tiếp</button>
           </div>
         </div>
 
@@ -81,7 +89,7 @@
 
         <div class="flex flex-wrap gap-2 pt-2 items-center">
           <input id="noteInput" type="text" placeholder="Ghi chú bài này… (tự động lưu)" class="input-dark rounded-xl px-3.5 py-2 text-xs flex-1 min-w-[180px]" aria-label="Ghi chú video">
-          <button id="btnClearProgress" type="button" class="btn-press bg-ink-700 hover:bg-ink-600 border border-ink-600 px-3 py-2 rounded-xl text-xs text-gray-300">↺ Bỏ tiến độ</button>
+          <button id="btnClearProgress" type="button" class="btn-press bg-ink-700 hover:bg-ink-600 border border-ink-600 px-3 py-2 rounded-xl text-xs text-gray-300"><span class="h2-icon h2-icon--14" data-h2i="rotate-ccw" aria-hidden="true"></span> Bỏ tiến độ</button>
         </div>
       </section>
 
@@ -116,7 +124,7 @@
             <!-- Box 1: Mốc thời gian trọng tâm (Action-first: tua video nhanh) -->
             <div id="insightTimelineWrap" class="bg-ink-900/70 rounded-xl p-3.5 border border-sky-900/30 hidden">
               <h4 class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5 font-heading">
-                <span>⏱️</span><span>Mốc thời gian trọng tâm (Bấm tua)</span>
+                <span class="h2-icon h2-icon--16" data-h2i="timer" aria-hidden="true"></span><span>Mốc thời gian trọng tâm (Bấm tua)</span>
               </h4>
               <div id="insightTimeline" class="flex flex-wrap gap-1.5"></div>
             </div>
@@ -124,7 +132,7 @@
             <!-- Box 2: Mấu chốt bài giảng (Key Takeaways) -->
             <div class="bg-ink-900/70 rounded-xl p-3.5 border border-ink-700/60">
               <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2 flex items-center gap-1.5 font-heading">
-                <span>💡</span><span>Mấu chốt bài giảng</span>
+                <span class="h2-icon h2-icon--16" data-h2i="lightbulb" aria-hidden="true"></span><span>Mấu chốt bài giảng</span>
               </h4>
               <ul id="insightTakeaways" class="space-y-1.5 text-xs text-gray-300 list-disc list-inside"></ul>
             </div>
@@ -132,12 +140,12 @@
             <!-- Box 3: Kỹ thuật Edit SOP & Cảnh báo an toàn -->
             <div class="bg-ink-900/70 rounded-xl p-3.5 border border-ink-700/60">
               <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2 flex items-center gap-1.5 font-heading">
-                <span>🛡️</span><span>Kỹ thuật edit &amp; SOP né quét AI</span>
+                <span class="h2-icon h2-icon--16" data-h2i="shield" aria-hidden="true"></span><span>Kỹ thuật edit &amp; SOP né quét AI</span>
               </h4>
               <div id="insightEditSop" class="space-y-1.5 text-xs text-gray-300"></div>
               
               <h4 class="text-xs font-bold text-rose-400 uppercase tracking-wider mt-3 mb-1.5 flex items-center gap-1.5 font-heading">
-                <span>⚠️</span><span>Cảnh báo &amp; lỗi cần tránh</span>
+                <span class="h2-icon h2-icon--16" data-h2i="alert-triangle" aria-hidden="true"></span><span>Cảnh báo &amp; lỗi cần tránh</span>
               </h4>
               <ul id="insightAvoidFlags" class="space-y-1 text-xs text-gray-300 list-disc list-inside"></ul>
             </div>
@@ -152,8 +160,8 @@
             <span class="w-1.5 h-4 bg-emerald-500"></span> Lời thoại phụ đề
           </h3>
           <div class="flex items-center gap-1.5">
-            <a id="btnDownloadSrt" href="#" download class="text-[11px] bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono">⬇ .SRT</a>
-            <a id="btnDownloadTxt" href="#" download class="text-[11px] bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono">⬇ .TXT</a>
+            <a id="btnDownloadSrt" href="#" download class="text-[11px] bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono inline-flex items-center gap-1"><span class="h2-icon h2-icon--14" data-h2i="download" aria-hidden="true"></span>.SRT</a>
+            <a id="btnDownloadTxt" href="#" download class="text-[11px] bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono inline-flex items-center gap-1"><span class="h2-icon h2-icon--14" data-h2i="download" aria-hidden="true"></span>.TXT</a>
           </div>
         </div>
         <div class="transcript-feed card p-2.5 max-h-[420px] overflow-y-auto space-y-1 text-xs border-ink-700 bg-ink-900/60" id="transcriptList"></div>
@@ -163,119 +171,34 @@
   <!-- Toast Container -->
   <div id="toast-box"></div>
   <!-- Floating Back Button (Nút quay lại nổi) -->
-  <button id="floatingBackBtn" type="button" class="floating-back-btn" title="Quay lại danh mục">
-    <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-    <span>Quay lại</span>
+  <!-- PHASE 2: Back-to-top chuan (truoc day player THIEU hoan toan) -->
+  <button id="btn-back-to-top" type="button" class="h2-shell-backtotop" aria-label="Cuộn lên đầu trang" title="Cuộn lên đầu trang">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
   </button>
 </main>
-<script src="assets/app/player-main.js?v=20260922-g6"></script>
-
-function renderMarkdownDoc(md) {
-  const lines = md.split('\n');
-  const out = [];
-  let inCode = false;
-  let codeBuf = [];
-  let inTable = false;
-  let tableRows = [];
-
-  function flushTable() {
-    if (!inTable) return;
-    if (tableRows.length > 0) {
-      let html = '<div class="overflow-x-auto my-3"><table class="w-full border-collapse border border-ink-600 text-xs text-left">';
-      let isHeader = true;
-      for (let i = 0; i < tableRows.length; i++) {
-        const row = tableRows[i];
-        if (row.every(c => /^:?-+:?$/.test(c.trim()))) {
-          isHeader = false;
-          continue;
-        }
-        html += '<tr class="' + (isHeader ? 'bg-ink-700 text-white font-semibold' : 'hover:bg-ink-800/50 border-t border-ink-600') + '">';
-        row.forEach(c => {
-          html += '<' + (isHeader ? 'th' : 'td') + ' class="p-2 border border-ink-600">' + inlineMd(c.trim()) + '</' + (isHeader ? 'th' : 'td') + '>';
-        });
-        html += '</tr>';
-      }
-      html += '</table></div>';
-      out.push(html);
-    }
-    tableRows = [];
-    inTable = false;
-  }
-
-  function inlineMd(str) {
-    return esc(str)
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:underline">$1</a>')
-      .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
-      .replace(/\*([^*]+)\*/g, '<em class="text-gray-300">$1</em>')
-      .replace(/`([^`]+)`/g, '<code class="px-1.5 py-0.5 rounded bg-ink-800 border border-ink-600 text-amber-300 font-mono text-xs">$1</code>')
-      .replace(/&lt;br\s*\/?&gt;/gi, '<br>')
-      .replace(/\$\\rightarrow\$|\\rightarrow/g, '→');
-  }
-
-  for (let line of lines) {
-    const trimmed = line.trim();
-    if (trimmed.startsWith('```')) {
-      if (inCode) {
-        out.push('<pre class="p-3.5 bg-ink-900 border border-ink-600 rounded-xl text-xs font-mono text-emerald-300 overflow-x-auto my-2"><code>' + esc(codeBuf.join('\n')) + '</code></pre>');
-        codeBuf = [];
-        inCode = false;
-      } else {
-        flushTable();
-        inCode = true;
-      }
-      continue;
-    }
-    if (inCode) {
-      codeBuf.push(line);
-      continue;
-    }
-    if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
-      inTable = true;
-      tableRows.push(trimmed.slice(1, -1).split('|'));
-      continue;
-    } else {
-      flushTable();
-    }
-    if (!trimmed) continue;
-    if (trimmed.startsWith('# ')) {
-      out.push('<h1 class="text-xl font-bold text-white border-b border-ink-600 pb-2 mt-4 mb-2">' + inlineMd(trimmed.slice(2)) + '</h1>');
-    } else if (trimmed.startsWith('## ')) {
-      out.push('<h2 class="text-base font-bold text-brand-400 mt-4 mb-2">' + inlineMd(trimmed.slice(3)) + '</h2>');
-    } else if (trimmed.startsWith('### ')) {
-      out.push('<h3 class="text-sm font-semibold text-sky-300 mt-3 mb-1">' + inlineMd(trimmed.slice(4)) + '</h3>');
-    } else if (trimmed.startsWith('> ')) {
-      out.push('<blockquote class="border-l-4 border-brand-500 bg-brand-500/10 px-3.5 py-2 rounded-r-xl text-gray-300 text-xs my-2">' + inlineMd(trimmed.slice(2)) + '</blockquote>');
-    } else if (trimmed.startsWith('- [ ] ') || trimmed.startsWith('- [x] ')) {
-      const chk = trimmed.startsWith('- [x] ');
-      out.push('<div class="flex items-center gap-2 py-0.5 text-xs ' + (chk ? 'text-emerald-400 font-medium' : 'text-gray-300') + '"><span class="w-4 h-4 rounded border ' + (chk ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 flex items-center justify-center text-[10px]' : 'border-ink-500') + '">' + (chk ? '✓' : '') + '</span>' + inlineMd(trimmed.slice(6)) + '</div>');
-    } else if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
-      out.push('<li class="text-xs text-gray-300 ml-4 list-disc my-1">' + inlineMd(trimmed.slice(2)) + '</li>');
-    } else {
-      out.push('<p class="text-xs text-gray-300 leading-relaxed my-1.5">' + inlineMd(trimmed) + '</p>');
-    }
-  }
-  flushTable();
-  return out.join('\n');
-}
-
-</script>
+<!-- PHASE 2: Footer chuan (truoc day player THIEU hoan toan) -->
+<footer class="h2-shell-footer">H2DEV · kho faceless YouTube · không cần đăng nhập</footer>
+<!-- N11 FIX (2026-09-23): nap h2dev-core.js (tang nen dung chung) TRUOC player-main.js.
+     Truoc day player.html KHONG nap -> phai tu che esc()/showToast(). -->
+<script src="/assets/h2dev-core.js?v=20260923-p3c"></script>
+<script src="assets/app/player-main.js?v=20260923-p3c"></script>
 
 <!-- Doc Reader Modal -->
 <div id="docModal" role="dialog" aria-modal="true" aria-label="Tài liệu" tabindex="-1" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:9999; background:rgba(0,0,0,0.85); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:1.25rem;">
   <div style="position:relative; width:100%; max-width:860px; max-height:88vh; display:flex; flex-direction:column; background-color:#111827; border:1px solid #374151; border-radius:1rem; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); overflow:hidden;">
     <div style="display:flex; align-items:center; justify-content:space-between; padding:0.875rem 1.25rem; border-bottom:1px solid #374151; background:rgba(31,41,55,0.85); flex-shrink:0;">
       <div style="display:flex; align-items:center; gap:0.625rem; min-width:0; overflow:hidden;">
-        <span style="font-size:1.25rem;">📄</span>
+        <span class="h2-icon h2-icon--20" data-h2i="file-text" aria-hidden="true"></span>
         <h3 id="docModalTitle" style="font-size:0.95rem; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Tài liệu</h3>
       </div>
       <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
         <a id="docModalRawLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-press" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; text-decoration:none; display:inline-flex; align-items:center; gap:0.25rem;">
-          <span>↗</span><span>Mở tab mới</span>
+          <span class="h2-icon h2-icon--14" data-h2i="external-link" aria-hidden="true"></span><span>Mở tab mới</span>
         </a>
         <button type="button" data-action="copy-doc" class="btn-press cursor-pointer" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; display:inline-flex; align-items:center; gap:0.25rem;">
-          <span>📋</span><span>Sao chép</span>
+          <span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span><span>Sao chép</span>
         </button>
-        <button type="button" data-action="close-doc" class="btn-press cursor-pointer" style="font-size:0.875rem; padding:0.25rem 0.6rem; border-radius:0.625rem; background:#374151; color:#9ca3af; border:1px solid #4b5563;">✕</button>
+        <button type="button" data-action="close-doc" class="btn-press cursor-pointer" style="font-size:0.875rem; padding:0.25rem 0.6rem; border-radius:0.625rem; background:#374151; color:#9ca3af; border:1px solid #4b5563; display:inline-flex; align-items:center;" aria-label="Đóng tài liệu"><span class="h2-icon h2-icon--16" data-h2i="x" aria-hidden="true"></span></button>
       </div>
     </div>
     <div id="docModalBody" style="padding:1.5rem; overflow-y:auto; max-height:calc(88vh - 65px); color:#e5e7eb; line-height:1.65; font-size:0.875rem;">

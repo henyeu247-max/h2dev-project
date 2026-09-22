@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi" data-theme="dark" data-density="compact" style="color-scheme: dark;">
 <head>
   <meta charset="UTF-8">
@@ -9,16 +9,23 @@
   <meta name="theme-color" content="#050505">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
   <title>H2DEV — Lộ trình</title>
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260918media1">
-  <link rel="stylesheet" href="/assets/learn.css?v=20260918media1">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260923-p3c">
+  <link rel="stylesheet" href="/assets/learn.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260923-p3c">
+<link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260923-p3c">
+  <link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260923-p3c">
 </head>
 <body>
-  <header class="learn-header">
+  <!-- PHASE 2: Skip-link chuan (truoc day learn THIEU) -->
+  <a href="#panelRoot" class="h2-shell-skip">Bỏ qua điều hướng</a>
+  <header class="learn-header h2-shell-header">
     <div class="learn-brand">
       <div class="brand-mark">H2</div>
       <div>
-        <h1 id="learn-title">Lộ trình học</h1>
-        <span id="learnCount">không cần đăng nhập</span>
+        <h1 id="learn-title" class="h2-shell-title">Lộ trình học</h1>
+        <span id="learnCount" class="h2-shell-brand__tag">không cần đăng nhập</span>
       </div>
     </div>
     <div class="header-right">
@@ -26,27 +33,33 @@
         <div id="progressRingWrap"></div>
         <div class="progress-text" id="progressText"></div>
       </div>
-      <a href="/" class="back-home" target="_top">← Trang chủ</a>
+      <button type="button" class="back-home" id="btnHistoryBack" title="Quay lại trang trước"><span class="h2-icon h2-icon--14" data-h2i="arrow-left" aria-hidden="true"></span> Quay lại</button>
+      <a href="/" class="back-home" target="_top" title="Về trang chủ">Trang chủ</a>
     </div>
   </header>
 
   <div class="resume-banner hidden" id="resumeBanner"></div>
 
-  <nav class="tabbar" id="tabbar" aria-label="Chế độ xem lộ trình">
-    <button class="tab-btn active" data-tab="danhmuc" type="button">Danh mục bài học</button>
-    <button class="tab-btn" data-tab="moi" type="button">Mới cập nhật</button>
-    <button class="tab-btn" data-tab="yeuthich" type="button">Yêu thích</button>
-    <button class="tab-btn" data-tab="timkiem" type="button">Tìm kiếm bài học</button>
+  <!-- PHASE 2: nav tab chuan ARIA (them role/aria-selected/aria-controls roving tabindex) -->
+  <nav class="tabbar" id="tabbar" role="tablist" aria-label="Chế độ xem lộ trình">
+    <button class="tab-btn active" data-tab="danhmuc" type="button" role="tab" aria-selected="true" aria-controls="panelRoot" tabindex="0">Danh mục bài học</button>
+    <button class="tab-btn" data-tab="moi" type="button" role="tab" aria-selected="false" aria-controls="panelRoot" tabindex="-1">Mới cập nhật</button>
+    <button class="tab-btn" data-tab="yeuthich" type="button" role="tab" aria-selected="false" aria-controls="panelRoot" tabindex="-1">Yêu thích</button>
+    <button class="tab-btn" data-tab="timkiem" type="button" role="tab" aria-selected="false" aria-controls="panelRoot" tabindex="-1">Tìm kiếm bài học</button>
   </nav>
 
-  <main class="learn-content" id="panelRoot" aria-live="polite"></main>
+  <main class="learn-content" id="panelRoot" role="tabpanel" aria-live="polite" tabindex="-1"></main>
 
-  <footer class="learn-footer">
-    H2DEV · Lộ trình học · Không cần đăng nhập
+  <footer class="learn-footer h2-shell-footer">
+    H2DEV · kho faceless YouTube · không cần đăng nhập
   </footer>
 
-  <script src="assets/app/learn-main.js?v=20260922-g6"></script>
-  <script src="/assets/h2dev-core.js?v=20260922-g2"></script>
-  <script src="/assets/learn.js?v=20260922-g2"></script>
+  <script src="assets/app/learn-main.js?v=20260923-p3c"></script>
+  <script src="/assets/h2dev-core.js?v=20260923-p3c"></script>
+  <script src="/assets/learn.js?v=20260923-p3c"></script>
+  <!-- PHASE 2: Back-to-top chuan (dung class .h2-shell-backtotop, dong bo index/player) -->
+  <button id="btn-back-to-top" type="button" class="h2-shell-backtotop" aria-label="Cuộn lên đầu trang" title="Cuộn lên đầu trang">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
 </body>
 </html>

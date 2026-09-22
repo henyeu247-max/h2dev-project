@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "kitType": "H2DEV Dark",
+  "mode": "dark-only",
+  "brandHex": "#E2023A",
+  "tokenSource": "design-system/tokens.json",
+  "rulesSource": "design-system/SKILL.md",
+  "auditSource": "design-system/consistency-matrix.md",
+  "selectionPolicy": "idempotent-tab-blueprint-first",
+  "comment": "Ke hoach chuan hoa UI kit theo tung page/tab. Moi muc la hop dong cho lan refactor UI tiep theo. evidenceFile la file THAT trong du an.",
+  "productContext": {
+    "productType": "Web tinh dark-mode, kho video faceless YouTube, tieng Viet",
+    "pageNames": [
+      "index",
+      "learn",
+      "player"
+    ],
+    "tabNames": [
+      "tongquan",
+      "video",
+      "ngachxanh",
+      "tailieu",
+      "nguonreup",
+      "kenhmau",
+      "rawkenh",
+      "chienluoc",
+      "lotrinh"
+    ]
+  },
+  "shellComponents": [
+    {
+      "slot": "shell-header",
+      "priority": 1,
+      "reason": "3 trang dung 3 header khac nhau ve chieu cao (56/56/52px), dinh vi (sticky-fixed/fixed/sticky) va z-index (20-100/40-50/20). Phai chot 1 chuan.",
+      "evidenceFile": "assets/viddar.css",
+      "requiredComponents": [
+        "header-chuan",
+        "brand-logo-svg-radar",
+        "wordmark-h2dev"
+      ],
+      "currentState": "index .vd-topbar 56px; learn .learn-header 56px fixed; player .app-top 52px sticky"
+    },
+    {
+      "slot": "shell-footer",
+      "priority": 2,
+      "reason": "player.html KHONG CO footer; learn.html thieu border-top va viet 'Khong can dang nhap' chu K hoa. Phai cung cau truc + bat buoc border-top + cung chuoi text.",
+      "evidenceFile": "learn.html",
+      "requiredComponents": [
+        "footer-chuan",
+        "border-top"
+      ],
+      "currentState": "index .app-footer co border-top; learn .learn-footer thieu border-top; player khong co"
+    },
+    {
+      "slot": "shell-back-to-top",
+      "priority": 3,
+      "reason": "player.html THIEU HOAN TOAN ca element lan JS. Kich thuoc 38px < 44px. Vi tri DOM lech (index sau script cuoi, learn truoc </body>).",
+      "evidenceFile": "assets/app/main.js",
+      "evidenceLocator": "main.js:754-772; assets/learn.js:434-449",
+      "requiredComponents": [
+        "back-to-top-element",
+        "back-to-top-js-bind"
+      ],
+      "currentState": "index co + JS; learn co + JS; player thieu ca hai"
+    },
+    {
+      "slot": "shell-skip-link",
+      "priority": 4,
+      "reason": "Chi index.html co. learn.html va player.html thieu -> khong the bo qua dieu huong bang ban phim.",
+      "evidenceFile": "index.html",
+      "requiredComponents": [
+        "skip-link"
+      ],
+      "currentState": "1/3 trang co"
+    },
+    {
+      "slot": "shell-nav",
+      "priority": 5,
+      "reason": "3 he dieu huong khac nhau 100%. learn thieu role=tab/tablist + aria-controls + arrow-key; player thieu aria-controls + arrow-key. Dung sidebar #tabs cua index lam khuon mau.",
+      "evidenceFile": "assets/app/tabs/nav.js",
+      "evidenceLocator": "#tabs (index); .tabbar .tab-btn (learn.css); #playerTabSelector (player.html)",
+      "requiredComponents": [
+        "nav-tablist",
+        "nav-tab",
+        "aria-selected",
+        "aria-controls",
+        "roving-tabindex",
+        "arrow-key-nav"
+      ],
+      "currentState": "index day du; learn thieu 3/6; player thieu 2/6"
+    },
+    {
+      "slot": "shell-toast",
+      "priority": 6,
+      "reason": "5 he thong bao. player co showToast + #toast-box nhung thieu aria-live cap trang; index co #a11y-status nhung lan alert() native; learn chi co aria-live tren panel. Khong trang nao co du ca hai.",
+      "evidenceFile": "assets/app/player-main.js",
+      "requiredComponents": [
+        "toast-box",
+        "show-toast",
+        "a11y-status-aria-live"
+      ],
+      "currentState": "khong trang nao co du toast + aria-live cap trang"
+    },
+    {
+      "slot": "shell-modal",
+      "priority": 7,
+      "reason": "6 modal deu KHONG khoi phuc focus (vi pham WCAG 2.4.3). moreMenuSheet (nav.js:73-95) thieu toan bo a11y. 15 gia tri z-index. Bottom-sheet mobile bo sot #quick-video-modal. CSS dead #raw-channel-modal (index.html:19-47) khong co JS/DOM.",
+      "evidenceFile": "assets/app/tabs/nav.js",
+      "evidenceLocator": "nav.js:73-95 (moreMenuSheet); index.html:19-47 (CSS dead); assets/app/main.js:852,2044,2253,2294",
+      "requiredComponents": [
+        "modal-role-dialog",
+        "aria-modal",
+        "aria-label",
+        "focus-trap",
+        "esc-close",
+        "focus-restore",
+        "bottom-sheet-mobile"
+      ],
+      "currentState": "0/6 modal khoi phuc focus; moreMenuSheet thieu toan bo a11y"
+    }
+  ],
+  "tabBlueprints": [
+    {
+      "slot": "tongquan",
+      "name": "Tong quan",
+      "priority": 8,
+      "reason": "THIEU banner, search, filter, empty-state. Tu viet .tq-head thay vi dung cau truc chuan. Margin-bottom mb-6 (lech voi cac tab khac).",
+      "evidenceFile": "assets/app/tabs/content.js",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state",
+        "cta",
+        "toast",
+        "back-to-top"
+      ],
+      "currentState": "4 stat card; thieu 4/8 khoi cau truc"
+    },
+    {
+      "slot": "video",
+      "name": "Video",
+      "priority": 9,
+      "reason": "Co banner/search/filter nhung THIEU pagination (render 100% cua 140 bai). Margin-bottom mb-4 cho filter (lech).",
+      "evidenceFile": "data-tabs/videos.json",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state",
+        "pagination",
+        "cta",
+        "badge",
+        "toast"
+      ],
+      "currentState": "render 100% 140 bai; khong pagination"
+    },
+    {
+      "slot": "ngachxanh",
+      "name": "Ngach xanh",
+      "priority": 10,
+      "reason": "Day du cau truc mo dau (banner/stat/search/filter/empty-state). Dung lam tab tham chieu. Van con margin-bottom mb-6 va padding card phai chuan hoa.",
+      "evidenceFile": "data-tabs/ngach-xanh.json",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state",
+        "badge",
+        "pagination"
+      ],
+      "currentState": "8/8 khoi co; 4 stat card"
+    },
+    {
+      "slot": "tailieu",
+      "name": "Tai lieu",
+      "priority": 11,
+      "reason": "Co 2 nut tim bg-purple-600 TRUNG CHUC NANG (vi pham luat 1 CTA brand/view). Grid gap-4 dung chuan nhung margin-bottom mb-5 lech.",
+      "evidenceFile": "data-tabs/tai-lieu-full.json",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state",
+        "cta",
+        "badge",
+        "pagination"
+      ],
+      "currentState": "2 CTA tim trung chuc nang; mb-5"
+    },
+    {
+      "slot": "nguonreup",
+      "name": "Nguon reup",
+      "priority": 12,
+      "reason": "Cung template voi Tai lieu va Kenh mau nhung render 100% (thieu pagination) va margin-bottom mb-5 lech.",
+      "evidenceFile": "data-tabs/nguon-reup.json",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state",
+        "pagination",
+        "cta",
+        "badge"
+      ],
+      "currentState": "render 100%; mb-5"
+    },
+    {
+      "slot": "kenhmau",
+      "name": "Kenh mau",
+      "priority": 13,
+      "reason": "Tung template voi Tai lieu / Nguon reup nhung dung gap-3 trong khi hai tab kia dung gap-4. Co 5 stat card (cac tab khac 4). Empty-state co nhung MAT KHUNG .card.",
+      "evidenceFile": "data-tabs/kenh-mau.json",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state-card",
+        "pagination",
+        "badge"
+      ],
+      "currentState": "5 stat card; gap-3; empty-state thieu khung .card"
+    },
+    {
+      "slot": "rawkenh",
+      "name": "Raw kenh",
+      "priority": 14,
+      "reason": "Nang nhat ve du lieu: 7 stat card bi pageBanner CAT CON 4 TREN MOBILE -> MAT 3 CHI SO. THIEU empty-state. Co 4 mau nut khac nhau trong cung 1 card. Day la tab DUY NHAT co pagination (PAGE_SIZE=24).",
+      "evidenceFile": "data-tabs/raw-kenh-mau.json",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state",
+        "pagination",
+        "cta",
+        "badge",
+        "toast"
+      ],
+      "currentState": "7 stat card (mat 3 tren mobile); thieu empty-state; 4 mau nut"
+    },
+    {
+      "slot": "chienluoc",
+      "name": "Chien luoc",
+      "priority": 15,
+      "reason": "THIEU banner, search, filter. Co 6 luoi khac nhau trong cung 1 tab. Margin-bottom mb-4 lech.",
+      "evidenceFile": "data-tabs/chien-luoc.json",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state",
+        "badge"
+      ],
+      "currentState": "6 luoi khac nhau; thieu 3/8 khoi"
+    },
+    {
+      "slot": "lotrinh",
+      "name": "Lo trinh",
+      "priority": 16,
+      "reason": "Co cau truc day du nhung RESET container ngoai ve padding 0 -> lech voi he max-width min(1120px,100%) + padding 28px. Cung la trang learn.html nen chiu chung loi breakpoint 720px.",
+      "evidenceFile": "data-tabs/kich-ban.json",
+      "requiredComponents": [
+        "banner",
+        "stat-card",
+        "search",
+        "filter",
+        "page-h2",
+        "empty-state",
+        "badge"
+      ],
+      "currentState": "container padding reset ve 0"
+    }
+  ],
+  "pageBlueprints": [
+    {
+      "name": "player",
+      "priority": 17,
+      "reason": "Shell thieu 3/6 thanh phan: footer, back-to-top (element + JS), skip-link. Header chi 52px. docModal z-index 9999 trong khi modal khac 99999-100005. Khong nap CSS index nen khong co bottom-sheet mobile cho docModal.",
+      "evidenceFile": "player.html",
+      "requiredComponents": [
+        "shell-header",
+        "shell-footer",
+        "shell-back-to-top",
+        "shell-skip-link",
+        "shell-nav",
+        "shell-toast",
+        "shell-modal",
+        "player-tab-selector"
+      ],
+      "currentState": "co .app-top 52px, .floating-back-btn rieng; thieu footer + back-to-top + skip-link"
+    },
+    {
+      "name": "learn",
+      "priority": 18,
+      "reason": "Thieu skip-link; footer thieu border-top; breakpoint CHI co 720px -> dai 641-720px van la desktop; KHONG co rule tablet 721-1024. Touch target CO NHO tren mobile (.lesson-watch 36->30px, .tab-btn 36->34px). learn.css:2-20 dinh nghia token vong lap va token rieng trung chuc nang.",
+      "evidenceFile": "learn.html",
+      "requiredComponents": [
+        "shell-header",
+        "shell-footer",
+        "shell-back-to-top",
+        "shell-skip-link",
+        "shell-nav",
+        "shell-toast",
+        "lesson-row",
+        "progress-pill"
+      ],
+      "currentState": "thieu skip-link; footer thieu border-top; 1 breakpoint 720px; touch target co nho"
+    },
+    {
+      "name": "index",
+      "priority": 19,
+      "reason": "Trang day du nhat (co sidebar, bottom-nav, footer, back-to-top, skip-link, .tabs du chuan ARIA) -> dung lam KHUON MAU chuan. Van phai sua: header z-index 20/100, CSS dead #raw-channel-modal (index.html:19-47), inline @media chi co 640px, bottom-sheet mobile bo sot #quick-video-modal va thieu selector panel cho #raw-image-modal.",
+      "evidenceFile": "index.html",
+      "requiredComponents": [
+        "shell-header",
+        "shell-footer",
+        "shell-back-to-top",
+        "shell-skip-link",
+        "shell-nav",
+        "shell-toast",
+        "shell-modal",
+        "sidebar",
+        "bottom-nav"
+      ],
+      "currentState": "day du nhat; con CSS dead + z-index lan lon + inline media 640"
+    }
+  ],
+  "requiredComponentsGlossary": {
+    "banner": "pageBanner cua tab — khoi tieu de + mo ta + CTA, dung chung bo cuc",
+    "stat-card": "KPI card bento — CHOT 4 the cho MOI tab, cam de pageBanner cat chi so",
+    "search": "O tim kiem — search index BAT BUOC bao gom t.id (xem AGENTS.md muc 4.3)",
+    "filter": "Bo loc theo taxonomy — dung chung 1 kieu control",
+    "page-h2": "Tieu de muc 16px weight 600 — CHOT 1 he duy nhat",
+    "empty-state": "Trang thai rong — BAT BUOC boc trong .card, padding 24px, 1 bien the duy nhat",
+    "pagination": "Phan trang — CHOT PAGE_SIZE = 24 cho MOI danh sach dai",
+    "cta": "Nut hanh dong — CHOT bo class .btn-* , cam to hop Tailwind tu che, cam 2 CTA brand/view",
+    "badge": "Nhan trang thai — dung .badge / .badge-brand / .badge-free / .badge-pro",
+    "toast": "Thong bao — CHOT #toast-box + showToast toan du an, cam alert() native",
+    "back-to-top": "Nut len dau trang — BAT BUOC element + JS bind, >= 44px",
+    "lesson-row": "Hang bai hoc chuan (thumb + seq + time + progress + heart + badge)",
+    "progress-pill": "Pill tien do hoc",
+    "player-tab-selector": "He tab cua player — phai chuan ARIA nhu #tabs cua index"
+  },
+  "allowedTabs": [
+    "tongquan",
+    "video",
+    "ngachxanh",
+    "tailieu",
+    "nguonreup",
+    "kenhmau",
+    "rawkenh",
+    "chienluoc",
+    "lotrinh"
+  ],
+  "slotAssignments": [
+    {
+      "slot": "shell",
+      "owner": "index.html / learn.html / player.html",
+      "reason": "6 thanh phan shell bat buoc tren MOI trang"
+    },
+    {
+      "slot": "tab",
+      "owner": "assets/app/tabs/content.js",
+      "reason": "8 khoi cau truc mo dau bat buoc tren MOI tab"
+    },
+    {
+      "slot": "modal",
+      "owner": "assets/app/main.js + assets/app/tabs/nav.js + assets/music_player_modal.js",
+      "reason": "7 yeu cau a11y bat buoc cho MOI modal"
+    },
+    {
+      "slot": "icon",
+      "owner": "assets/app/main.js (ICONS object)",
+      "reason": "He icon CHUAN duy nhat; thang size 14/16/20/24px"
+    },
+    {
+      "slot": "token",
+      "owner": "assets/viddar.css (:root)",
+      "reason": "Nguon token duy nhat; cac file CSS khac phai hoi tu ve day"
+    }
+  ],
+  "warnings": [
+    "So stat card phai la 4 cho MOI tab. Kenh mau (5) va Raw kenh (7) phai dua ve 4, hoac neu giu nhieu hon thi CAM de pageBanner cat mat chi so tren mobile.",
+    "Paginate MOI danh sach dai. Video (140 bai) va Nguon reup hien render 100% — day la loi, khong phai thiet ke.",
+    "learn.css dang dinh nghia lai token trung chuc nang voi viddar.css (--pri/--sec/--war/--ok/--panel/--line/--txt/--mut/--font-heading/--font-body) va co self-reference (--bg: var(--bg,...)). Phai hoi tu ve viddar.css.",
+    "CAM sua gia tri token hien co (--bg:#050505, --brand:#E2023A, ...). Chi duoc them token moi hoac gan nhan deprecated.",
+    "CAM sua/xoa file media, data/, data-tabs/, catalog, server, config.",
+    "Moi thay doi UI phai cap nhat design-system/consistency-matrix.md cung luot."
+  ]
+}

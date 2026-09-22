@@ -1,0 +1,129 @@
+/**
+ * H2DEV — TOKEN CHUAN (Design Tokens)
+ * Nguon su that: design-system/tokens.json
+ * Che do: DARK-MODE ONLY · Brand: #E2023A
+ *
+ * QUY TAC BAT BUOC:
+ * - File nay CHI DUOC THEM token moi, KHONG duoc sua gia tri token canonical.
+ * - Token canonical (#050505, #E2023A...) da xac minh runtime tai assets/viddar.css:51-80.
+ * - Nhom "proposed" la chuan hoa de xuat (chua ton tai truoc Phase 0), dung dan cho toi khi
+ *   toan bo code hoi tu. Sau khi hoi tu xong thi doi trang thai thanh canonical trong tokens.json.
+ * - Load file nay SAU viddar.css de co the ghi de co kiem soat, TRUOC cac file primitives/shell.
+ */
+
+/* ==========================================================================
+   1. CANONICAL — alias tro ve bien goc viddar.css (khong tao gia tri moi)
+   ========================================================================== */
+:root,
+[data-theme="dark"] {
+  /* --- Layout scale (proposed) --- */
+  --h2-space-1: 4px;
+  --h2-space-2: 8px;
+  --h2-space-3: 12px;
+  --h2-space-4: 16px;
+  --h2-space-6: 24px;
+  --h2-space-8: 32px;
+
+  /* --- Typography scale (proposed) — chot 9 bac --- */
+  --h2-font-2xs: 11px;
+  --h2-font-xs: 12px;
+  --h2-font-sm: 13px;
+  --h2-font-base: 14px;
+  --h2-font-md: 16px;
+  --h2-font-lg: 18px;
+  --h2-font-xl: 20px;
+  --h2-font-2xl: 24px;
+  --h2-font-3xl: 32px;
+
+  /* --- Line-height (proposed) — chot 6 gia tri --- */
+  --h2-lh-none: 1;
+  --h2-lh-display: 1.2;
+  --h2-lh-heading: 1.35;
+  --h2-lh-body: 1.5;
+  --h2-lh-prose: 1.6;
+  --h2-lh-body-px: 20px;
+
+  /* --- Letter-spacing (proposed) — chot 4 gia tri, 1 cach viet duy nhat --- */
+  --h2-ls-normal: 0;
+  --h2-ls-tight: -0.02em;
+  --h2-ls-label: 0.02em;
+  --h2-ls-micro: 0.04em;
+
+  /* --- Font weight (proposed) — chot 4 muc khop @font-face --- */
+  --h2-fw-regular: 400;
+  --h2-fw-medium: 500;
+  --h2-fw-semibold: 600;
+  --h2-fw-bold: 700;
+
+  /* --- Icon size (proposed) — chot 4 muc --- */
+  --h2-icon-14: 14px;
+  --h2-icon-16: 16px;
+  --h2-icon-20: 20px;
+  --h2-icon-24: 24px;
+
+  /* --- Touch target (proposed) --- */
+  --h2-touch-min: 44px;
+
+  /* --- Shell (proposed) --- */
+  --h2-header-h: 56px;
+  --h2-header-pad: 0 24px;
+  --h2-container-max: min(1120px, 100%);
+
+  /* --- Motion (proposed) --- */
+  --h2-motion-fast: 120ms;
+  --h2-motion-base: 200ms;
+  --h2-motion-slow: 300ms;
+  --h2-motion-ease: cubic-bezier(.2, .6, .3, 1);
+  --h2-translate-max: 4px;
+
+  /* --- Overlay / Modal (proposed) — chot 1 muc duy nhat --- */
+  --h2-backdrop-blur: 10px;
+  --h2-overlay-alpha: 0.92;
+  --h2-overlay-bg: rgba(0, 0, 0, 0.92);
+  --h2-panel-bg: var(--surface);
+  --h2-panel-border: var(--border);
+  --h2-panel-radius: var(--r-lg);
+
+  /* --- Z-index ladder (proposed) — chot 8 bac, cam 9999/99999/100000/100001/100005 --- */
+  --h2-z-base: 1;
+  --h2-z-sticky: 20;
+  --h2-z-fixed: 40;
+  --h2-z-drawer: 60;
+  --h2-z-topbar-mobile: 100;
+  --h2-z-toast: 300;
+  --h2-z-modal: 1000;
+  --h2-z-modal-top: 1010;
+
+  /* --- Breakpoint reference (proposed, comment-only, dung trong @media) --- */
+  /* mobile: max-width 639px · tablet: 640-1023px · desktop: 1024-1279px · desktop-lg: min 1280px */
+}
+
+/* ==========================================================================
+   2. REGRESSION GUARD — canh bao khi token chet bi dung lai
+   ========================================================================== */
+/* --brand-ink-ink KHONG ton tai trong :root (da xac minh). Cac rule dung bien nay
+   phai duoc sua thanh --brand-ink. Xem design-system/tokens.json > color.deadTokens */
+
+/* ==========================================================================
+   3. FORBIDDEN-HEX GUARD (documentation)
+   ========================================================================== */
+/* 4 ma nen panel roi rac KHONG duoc dung lai. Thay bang var(--surface) / var(--surface-2):
+   #0b0f19 · #0f172a · #111827 · #070a12
+   Cac hex nay duoc dep dan o Phase 4 (Layout + Surface + Modal). */
+
+/* ==========================================================================
+   4. FORBIDDEN BREAKPOINT GUARD (documentation)
+   ========================================================================== */
+/* Cam them @media voi moc: 720px · 768px · 900px · 1100px · 1200px · 1023px
+   Chi dung 3 moc chuan: 640px · 1024px · 1280px. Dep dan o Phase 5. */
+
+/* ==========================================================================
+   5. REDUCED MOTION (bat buoc)
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --h2-motion-fast: 1ms;
+    --h2-motion-base: 1ms;
+    --h2-motion-slow: 1ms;
+  }
+}

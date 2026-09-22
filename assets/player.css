@@ -268,3 +268,9 @@
 }
 .player-layout { align-items: start; }
 #colInsight { min-width: 0; }
+
+.app-top .btn-ghost {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}

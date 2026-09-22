@@ -16,7 +16,15 @@ function xanhBadge(x) {
   return ['badge-muted', String(x || '')];
 }
 
-function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); } // CANONICAL — khớp H2Core.esc
+/**
+ * N11 FIX (2026-09-23): UY QUYEN cho H2Core khi co, fallback ban sao khi vang.
+ * Truoc day day la BAN SAO tay ("CANONICAL — khớp H2Core.esc") -> de troi lech.
+ * Nay: 1 nguon su that (h2dev-core.js), lop nay chi la lop tuong thich.
+ */
+function esc(s) {
+  if (global.H2Core && typeof global.H2Core.esc === 'function') return global.H2Core.esc(s);
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
 
 function trapFocus(container, e) {
   if (e.key !== 'Tab' || !container) return;
@@ -47,7 +55,17 @@ function focusModal(modal) {
   }
 }
 
-function fmtBytes(n) { if (!n) return ''; if (n > 1e9) return (n / 1e9).toFixed(2) + ' GB'; if (n > 1e6) return (n / 1e6).toFixed(0) + ' MB'; return (n / 1e3).toFixed(0) + ' KB'; }
+/**
+ * N11 FIX (2026-09-23): uy quyen cho H2Core.fmtBytes (ban chuan duy nhat).
+ * Fallback giu NGUYEN cong thuc decimal cu de khong doi so lieu dang hien thi.
+ */
+function fmtBytes(n) {
+  if (global.H2Core && typeof global.H2Core.fmtBytes === 'function') return global.H2Core.fmtBytes(n);
+  if (!n) return '';
+  if (n > 1e9) return (n / 1e9).toFixed(2) + ' GB';
+  if (n > 1e6) return (n / 1e6).toFixed(0) + ' MB';
+  return (n / 1e3).toFixed(0) + ' KB';
+}
 
 function fmtMb(mb) { if (!mb) return ''; return mb >= 1024 ? (mb / 1024).toFixed(1) + ' GB' : mb.toFixed(0) + ' MB'; }
 
@@ -99,15 +117,17 @@ function highlightQuery(text, query) {
 
 
 function statCard(icon, label, value, sub, tabTarget, live) {
+  // icon: chỉ cho phép nhánh SVG nội bộ được render thô; mọi giá trị khác phải escape
   const isSvg = typeof icon === 'string' && icon.includes('<svg');
-  const glyph = isSvg ? icon : (icon ? `<span class="stat-glyph">${icon}</span>` : '');
-  const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${esc(label)}" data-kpi-card="1"` : '';
+  const safeLabel = esc(label);
+  const glyph = isSvg ? icon : (icon ? `<span class="stat-glyph">${esc(icon)}</span>` : '');
+  const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${safeLabel}" data-kpi-card="1"` : '';
   return `<div class="bento-card${tabTarget ? ' cursor-pointer hover:border-brand/40 transition-colors' : ''}"${clickAttr}>
 <div class="stat-icon">${glyph}</div>
 <div class="stat-body">
-  <div class="stat-value"${live ? ' aria-live="polite"': ''}>${value}</div>
-  <div class="stat-label">${label}</div>
-  ${sub ? `<div class="stat-sub">${sub}</div>` : ''}
+  <div class="stat-value"${live ? ' aria-live="polite"': ''}>${esc(value)}</div>
+  <div class="stat-label">${safeLabel}</div>
+  ${sub ? `<div class="stat-sub">${esc(sub)}</div>` : ''}
 </div>
 ${tabTarget ? `<span class="stat-arrow text-gray-500 text-xs font-mono">→</span>` : ''}
   </div>`;

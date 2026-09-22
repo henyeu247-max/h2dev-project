@@ -1,4 +1,4 @@
-﻿/* H2Search - G3: filter-search consolidate + /api/search FTS */
+/* H2Search - G3: filter-search consolidate + /api/search FTS */
 (function (global) {
   "use strict";
 
@@ -65,6 +65,14 @@
     return sortSuggestions(out).slice(0, max || 12);
   }
 
+  /* H2DEV 2026-09-23 — GHI CHU (khong xoa, theo dung ky luat NO_DELETE):
+   * rowHtml() hien KHONG con duoc goi o dau. Trinh render goi y that su hien nay nam
+   * TRUC TIEP trong assets/app/tabs/content.js (buildVideoSearchSuggestions), noi
+   * render .js-v-sug-row bang template string — khong goi nguoc ve ham nay.
+   * Tham so `jsRowClass` la ten class TRUYEN VAO tu luc goi, nen bo quet HTML<->CSS
+   * khong the biet gia tri that => no chi bao "CANH BAO", khong phai loi.
+   * => Giu lai lam API du phong. Neu xac nhan khong dung nua thi xoa o dot don dep sau.
+   */
   function rowHtml(item, idx, jsRowClass) {
     var title = global.H2UICore && global.H2UICore.highlightQuery ? global.H2UICore.highlightQuery(item.title, item.searchTerm) : item.title;
     return (

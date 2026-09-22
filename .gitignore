@@ -35,6 +35,8 @@ logs/
 __pycache__/
 *.pyc
 _tmp_*/
+_tmp-*
+tmp-*
 .DS_Store
 Thumbs.db
 h2dev-tray.log
@@ -48,6 +50,12 @@ data/h2dev_master.db
 data/h2dev_master.db-wal
 data/h2dev_master.db-shm
 manifest_full.csv
+
+# File rác sinh do redirect PowerShell sai encoding (chỉ chứa BOM)
+/125
+/20
+/980
+
 .venv/
 .venv-gpu/
 

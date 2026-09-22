@@ -1,0 +1,135 @@
+/**
+ * H2DEV — COMPONENT: LESSON ROW (hàng bài học)
+ * Phu thuoc: assets/h2dev-tokens.css (phai load truoc)
+ *
+ * VI SAO TACH FILE NAY (2026-09-23):
+ *   renderLessonRow() / renderSectionHead() / renderEmptyState() nam trong
+ *   assets/h2dev-core.js — la JS DUNG CHUNG cho ca 3 trang (index/player/learn).
+ *   Nhung CSS cua chung truoc day CHI nam trong assets/learn.css.
+ *   => Bat ky trang nao goi 3 ham do ma khong nap learn.css deu VO LAYOUT
+ *      (khong co loi JS nao de phat hien).
+ *   Tach ra file dung chung nay de loi kien truc do KHONG THE tai dien.
+ *
+ * PHAM VI: chi chua CSS cua cum component "lesson row" + "module section"
+ *   + "empty state". KHONG chua CSS rieng cua trang learn (header, tabbar...).
+ *
+ * LOAD ORDER BAT BUOC: h2dev-tokens.css -> h2dev-primitives.css
+ *   -> h2dev-components-lesson-row.css -> learn.css (neu la learn.html)
+ *   -> h2dev-icons.css -> h2dev-shell.css
+ *
+ * GHI CHU: bien --panel/--line/--mut/--brand-ink/--war/--success... duoc dinh
+ *   nghia o learn.css (scope :root cua trang learn) HOAC o h2dev-tokens.css.
+ *   Cac gia tri deu co fallback nen file nay dung duoc o moi trang.
+ */
+
+/* ==========================================================================
+   1. SECTION (nhom bai hoc co the thu gon)
+   ========================================================================== */
+.sec-head { display: grid; grid-template-columns: minmax(0,1fr) auto 30px; align-items: center; gap: 14px; min-width: 0; padding: 12px 14px; color: var(--fg); background: var(--panel2); border: 1px solid var(--line); border-radius: 4px 4px 0 0; cursor: pointer; user-select: none; }
+.sec-head:hover { border-color: var(--line-hover); }
+.mod-sec.collapsed .sec-head { border-radius: 4px; }
+.sec-title { min-width: 0; font-size: 14px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
+.sec-stats { display: flex; align-items: center; gap: 10px; color: var(--mut); font: 11px/1.3 var(--font-mono); white-space: nowrap; }
+.sec-stat b { color: var(--fg-2); font-weight: 600; }
+.sec-toggle { position: relative; width: 30px; height: 30px; padding: 0; color: var(--mut); background: transparent; border: 0; border-radius: 4px; cursor: pointer; }
+.sec-toggle::before { content: ""; position: absolute; top: 10px; left: 9px; width: 10px; height: 10px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); transition: transform .15s ease; }
+.mod-sec.collapsed .sec-toggle::before { top: 8px; transform: rotate(-135deg); }
+.sec-body { padding: 6px; background: var(--panel); border: 1px solid var(--line); border-top: 0; border-radius: 0 0 4px 4px; }
+.mod-sec.collapsed .sec-body { display: none; }
+
+/* ==========================================================================
+   2. ROW LIST + LESSON ROW
+   ========================================================================== */
+.row-list { display: flex; flex-direction: column; gap: 2px; }
+.lesson-row { display: flex; align-items: center; gap: 12px; min-width: 0; padding: 8px; border: 1px solid transparent; border-radius: 4px; }
+.lesson-row:hover { background: var(--surface-2); border-color: var(--border); }
+.lesson-row.is-active { background: var(--red-50); border-color: transparent; }
+.row-thumb { position: relative; display: block; flex: 0 0 124px; overflow: hidden; aspect-ratio: 16/9; color: var(--txt); background: #000; border: 1px solid var(--border); border-radius: 4px; }
+.row-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.row-seq,.row-time { position: absolute; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,.82); border-radius: 4px; font: 600 10px/1 var(--font-mono); }
+.row-seq { top: 4px; right: 4px; min-width: 20px; height: 18px; padding: 0 5px; }
+.row-time { right: 4px; bottom: 4px; gap: 3px; height: 18px; padding: 0 5px; }
+.row-fav { position: absolute; top: 4px; left: 4px; display: grid; place-items: center; width: 32px; height: 32px; padding: 6px; color: #fff; background: rgba(0,0,0,.7); border: 0; border-radius: 4px; }
+.row-fav.is-fav { color: var(--brand-ink); }
+.row-watchbar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,.15); }
+.row-watchbar i { display: block; height: 100%; background: var(--war); }
+/* Watched indicator — badge bottom-left, avoids row-seq (top-right) & row-fav (top-left) */
+.watched-badge { position: absolute; bottom: 4px; left: 4px; display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: var(--success, #00ff88); color: #000; border-radius: 50%; z-index: 10; font-size: 11px; box-shadow: 0 2px 6px rgba(0,0,0,.4); animation: fadeIn .3s ease; }
+/* PHASE 3 (2026-09-23): bo emoji "✓" (content:) -> icon mask cho nhat quan voi he .h2-icon.
+   Div rong nen phai dung ::before voi mask; mau lay tu color (var(--success) da dat o .watched-badge). */
+.watched-badge::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: currentColor;
+  -webkit-mask-image: url("icons/check.svg");
+  mask-image: url("icons/check.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.row-body { display: flex; flex: 1; flex-direction: column; gap: 4px; min-width: 0; }
+.row-updated { color: var(--mut); font: 11px/1.3 var(--font-mono); }
+.row-title { display: -webkit-box; overflow: hidden; color: var(--fg); font-size: 13px; font-weight: 600; line-height: 1.35; text-decoration: none; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.row-title:hover { color: var(--brand-ink); }
+.row-tags { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.lesson-row.is-watched .row-title { color: var(--success-fg); text-decoration: none; }
+.lesson-row.is-watched:hover .row-title { color: var(--success-fg); }
+.lesson-watch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-height: 36px;
+  padding: 0 10px;
+  color: var(--brand-ink);
+  background: var(--red-50, #2a0a12);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.lesson-watch:hover { color: #fff; background: var(--pri); }
+
+/* ==========================================================================
+   3. TAGS (ltag) — nhan trang thai bai hoc
+   ========================================================================== */
+.ltag { display: inline-flex; align-items: center; gap: 3px; padding: 2px 6px; border-radius: 4px; font: 600 10px/1.3 var(--font-mono); }
+.badge-important,.ltag-pro { color: var(--brand-ink); background: var(--brand-tint); border: 1px solid transparent; }
+.badge-featured { color: var(--brand-ink); background: var(--brand-tint); border: 1px solid transparent; }
+.ltag-free,.ltag-done { color: var(--success-fg); }
+.ltag-progress { color: #ffcc00; }
+
+/* ==========================================================================
+   4. EMPTY STATE
+   ========================================================================== */
+.empty-state { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 40px 20px; color: var(--mut); text-align: center; }
+.empty-state p { margin: 0; color: var(--fg); font-size: 15px; font-weight: 600; }
+.empty-hint { font-size: 13px; }
+
+/* ==========================================================================
+   5. RESPONSIVE (<= 640px) — giu nguyen hanh vi cu cua learn.css
+   ========================================================================== */
+@media (max-width: 640px) {
+  .sec-head { grid-template-columns: minmax(0,1fr) 30px; gap: 10px; padding: 11px; }
+  .sec-stats { grid-column: 1 / -1; grid-row: 2; gap: 8px; white-space: normal; }
+  .sec-toggle { grid-column: 2; grid-row: 1; }
+  .sec-title { font-size: 14px; }
+  .sec-body { padding: 4px; }
+  .lesson-row {
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    align-items: start;
+    gap: 8px 9px;
+    padding: 7px;
+  }
+  .row-thumb { grid-column: 1; grid-row: 1 / span 2; flex-basis: auto; }
+  .row-body { grid-column: 2; grid-row: 1; }
+  .lesson-watch { grid-column: 2; grid-row: 2; justify-self: start; min-height: 30px; }
+  .row-title { font-size: 13px; }
+}

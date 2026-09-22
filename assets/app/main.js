@@ -1,6 +1,6 @@
-/* H2Main - G6 extract main app script from index.html */
+﻿/* H2Main - G6 extract main app script from index.html */
 
-    const state = { tab: 'tongquan', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
+    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
     // G3: taxonomy tach ra assets/app/taxonomy.js (window.H2Taxonomy)
     // G3: helpers tach ra assets/app/ui-core.js (window.H2UICore)
     const {
@@ -46,6 +46,22 @@
 
 
     const CAT = {};
+
+    /* ---------- PHASE 3 (2026-09-23): HE ICON CHUAN (CSS mask) ----------
+     * Mot he icon duy nhat: assets/icons/*.svg + .h2-icon[data-h2i] (h2dev-icons.css).
+     * Cam emoji lam icon UI. Xem design-system/ICON-MAPPING.md.
+     */
+    const ico = (name, size) => '<span class="h2-icon h2-icon--' + (size || 16) + '" data-h2i="' + String(name) + '" aria-hidden="true"></span>';
+
+    /* Bo emoji TRANG TRI nhung GIU QUOC KY (🇻🇳 🇯🇵 = nhan ngon ngu).
+     * Chi dung cho CHUOI HIEN THI. Tuyet doi KHONG dung cho chuoi lam KEY so sanh
+     * (vd state.marketFilter phai giu nguyen "🌐 Ngoại" de so khop data). */
+    const stripDecorEmoji = (s) => String(s == null ? '' : s)
+      .replace(/[\u{1F300}-\u{1F5FF}\u{1F600}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{2705}\u{274C}\u{23F3}\u{23F1}\u{2B50}\u{2B1B}\u{2B1C}]+/gu, '')
+      .replace(/\s{2,}/g, ' ')
+      .replace(/^[\s/·-]+|[\s/·-]+$/g, '')
+      .trim();
+
     const ICONS = {
       home: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>`,
       video: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>`,
@@ -56,18 +72,27 @@
       strategy: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>`,
       disk: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>`,
       search: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>`,
-      image: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>`
+      image: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>`,
+      /* PHASE 1: icon cho tab moi /tatca va /nhac */
+      grid: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>`,
+      music: `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/></svg>`
     };
+    /* PHASE 1: TABS slug khop URL chuan (design-system/URL-ROUTING-SPEC.md)
+       - tatca     -> /tatca      (tab thu 10, hub & spoke)
+       - tai-lieu  -> /tai-lieu   (truoc la kichban)
+       - kenh-mau  -> /kenh-mau   (truoc la kenh)
+       - nhac      -> /nhac       (mo modal Tram Nhac Nen) */
     const TABS = [
-      { id: 'tongquan', icon: ICONS.home, name: 'Tổng quan', short: 'Tổng quan' },
-      { id: 'lotrinh', icon: ICONS.doc, name: 'Lộ trình', short: 'Lộ trình' },
+      { id: 'tatca', icon: ICONS.home, name: 'Tất cả', short: 'Tất cả' },
       { id: 'video', icon: ICONS.video, name: 'Video', short: 'Video' },
       { id: 'ngachxanh', icon: ICONS.niche, name: 'Ngách xanh', short: 'Ngách' },
-      { id: 'kichban', icon: ICONS.doc, name: 'Tài liệu', short: 'Tài liệu' },
+      { id: 'tai-lieu', icon: ICONS.doc, name: 'Tài liệu', short: 'Tài liệu' },
+      { id: 'nhac', icon: ICONS.music, name: 'Nhạc nền', short: 'Nhạc' },
       { id: 'nguonreup', icon: ICONS.link, name: 'Nguồn reup', short: 'Nguồn' },
-      { id: 'kenh', icon: ICONS.channel, name: 'Kênh mẫu', short: 'Kênh mẫu' },
+      { id: 'kenh-mau', icon: ICONS.channel, name: 'Kênh mẫu', short: 'Kênh mẫu' },
       { id: 'rawkenh', icon: ICONS.image, name: 'Raw kênh', short: 'Raw kênh' },
-      { id: 'chienluoc', icon: ICONS.strategy, name: 'Chiến lược', short: 'Chiến lược' }
+      { id: 'chienluoc', icon: ICONS.strategy, name: 'Chiến lược', short: 'Chiến lược' },
+      { id: 'lotrinh', icon: ICONS.doc, name: 'Lộ trình', short: 'Lộ trình' }
     ];
 
     const APP_BUILD_VER = '20260922-g2-esc-onclick-a11y-v1';
@@ -142,7 +167,7 @@
     }
 
     function openTab(id, extra, pushHistory = true) {
-      state.tab = id || 'tongquan';
+      state.tab = id || 'tatca';
       resetScrollToTop();
       // Nếu mở tab Video mà không kèm danh sách SKU cụ thể, xóa sạch mọi bộ lọc ẩn
       // còn sót từ tab trước (ví dụ skuFilter từ Ngách xanh) để không rơi vào trạng thái 0/tổng.
@@ -157,8 +182,10 @@
       if (extra) Object.assign(state, extra);
       if (pushHistory) {
         try {
-          const cleanPath = (state.tab === 'tongquan') ? '/' : ('/' + state.tab);
+          /* PHASE 1: /tatca la canonical (tatca = trang mac dinh, khong con /tongquan) */
+          const cleanPath = (state.tab === 'tatca') ? '/tatca' : ('/' + state.tab);
           const url = new URL(cleanPath, location.origin);
+          /* PHASE 1: build URL du 9 tham so + bo tham so o gia tri mac dinh */
           if (state.marketFilter) url.searchParams.set('market', state.marketFilter);
           if (state.nicheFilter) url.searchParams.set('niche', state.nicheFilter);
           if (state.rawPage && state.rawPage > 1) url.searchParams.set('page', String(state.rawPage));
@@ -167,6 +194,7 @@
           if (state.rawQ) url.searchParams.set('rq', state.rawQ);
           if (state.watchFilter) url.searchParams.set('watch', state.watchFilter);
           if (state.freeOnly) url.searchParams.set('free', '1');
+          if (state.tab === 'chienluoc' && state.clSubTab && state.clSubTab !== 'principles') url.searchParams.set('sub', state.clSubTab);
           history.pushState({ tab: state.tab, market: state.marketFilter, niche: state.nicheFilter }, '', url.pathname + url.search);
         } catch (e) {}
       }
@@ -238,9 +266,9 @@
           e.preventDefault();
           const tab = btn.getAttribute('data-open-tab');
           const extra = {};
-          if (tab === 'kichban') { extra.kindFilter = btn.getAttribute('data-kind') || ''; extra.promptNiche = btn.getAttribute('data-prompt-niche') || ''; extra.promptQ = ''; }
+          if (tab === 'tai-lieu') { extra.kindFilter = btn.getAttribute('data-kind') || ''; extra.promptNiche = btn.getAttribute('data-prompt-niche') || ''; extra.promptQ = ''; }
           if (tab === 'video') { extra.nicheFilter = btn.getAttribute('data-open-niche') || ''; extra.skuFilter = btn.getAttribute('data-skus') || ''; extra.marketFilter = btn.getAttribute('data-market-filter') || ''; extra.q = ''; extra.freeOnly = btn.getAttribute('data-free-only') === 'true'; extra.watchFilter = btn.getAttribute('data-watch-filter') || ''; }
-          if (tab === 'kenh') { extra.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; extra.kenhQ = ''; }
+          if (tab === 'kenh-mau') { extra.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; extra.kenhQ = ''; }
           openTab(tab, extra);
         });
       });
@@ -328,7 +356,7 @@
       } catch (e) {}
     }
 
-    const BOTTOM_TABS = ['tongquan', 'video', 'ngachxanh', 'rawkenh']; // UI Pro bottom-nav <=5
+    const BOTTOM_TABS = ['tatca', 'video', 'ngachxanh', 'rawkenh', 'kenh-mau']; // PHASE 1: bottom-nav toi da 5 muc
 
 
 
@@ -336,6 +364,7 @@
     const _tabContent = window.H2TabContent.createTabContent({
       state, CAT, ICONS, loadJSON, loadMusicStats, musicStats,
       esc, safeArray, nicheKeyFor, xanhBadge, statCard, pageBanner,
+      ico, stripDecorEmoji,
       highlightQuery, fmtMb, fmtBytes, loadChecks, loadWatched,
       watchedBadge, watchedProgress, watchedResumeLabel,
       quickAccessBar, openNicheVideos, expandNicheMore, bindNicheActions,
@@ -360,9 +389,9 @@
       if (fq) {
         fq.oninput = () => {
           const val = fq.value;
-          if (state.tab === 'kichban') state.promptQ = val;
+          if (state.tab === 'tai-lieu' || state.tab === 'nhac') state.promptQ = val;
           else if (state.tab === 'nguonreup') state.reupQ = val;
-          else if (state.tab === 'kenh') state.kenhQ = val;
+          else if (state.tab === 'kenh-mau') state.kenhQ = val;
           else if (state.tab === 'rawkenh') state.rawQ = val;
           else state.q = val;
 
@@ -559,7 +588,7 @@
           e.stopPropagation();
           const rid = btn.getAttribute('data-raw-id');
           const jump = btn.getAttribute('data-jump') || '';
-          if (window.openRawDeepModal) openRawDeepModal(rid, jump);
+          if (window.openRawDeepModal) window.openRawDeepModal(rid, jump);
         };
       });
       const fn = document.getElementById('fniche');
@@ -625,22 +654,29 @@
       try {
         let html = '';
         switch (state.tab) {
-          case 'tongquan': html = await renderTongQuan(); break;
+          case 'tatca': html = await renderTongQuan(); break;
           case 'lotrinh':
             html = `<iframe class="learn-frame" title="Lộ trình học" src="/learn.html?embed=1"></iframe>`;
             break;
           case 'video': html = await renderVideo(); break;
           case 'ngachxanh': html = await renderNgachXanh(); break;
-          case 'kichban': html = await renderKichBan(); break;
+          case 'tai-lieu': html = await renderKichBan(); break;
+          case 'nhac': html = await renderKichBan(); break;
           case 'nguonreup': html = await renderNguonReup(); break;
-          case 'kenh': html = await renderKenh(); break;
+          case 'kenh-mau': html = await renderKenh(); break;
           case 'rawkenh': html = await renderRawKenh(); break;
           case 'chienluoc': html = await renderChienLuoc(); break;
+          default: html = await renderTongQuan(); break;
         }
         el.innerHTML = renderLoadErrorBanner() + html;
         const titleEl = document.getElementById('page-title');
         const tabMeta = TABS.find(t => t.id === state.tab);
         if (titleEl && tabMeta) titleEl.textContent = tabMeta.name;
+        /* PHASE 1: document.title dong theo route (truoc day luon 1 title) */
+        try {
+          const tName = tabMeta ? tabMeta.name : 'H2DEV';
+          document.title = (state.tab === 'tatca') ? 'H2DEV — Radar kho YouTube' : (tName + ' — H2DEV');
+        } catch (e) {}
         document.getElementById('panel-root').setAttribute('aria-labelledby', `tab-${state.tab}`);
 
     try {
@@ -715,20 +751,34 @@
       } finally { el.setAttribute("aria-busy", "false"); }
     }
 
-    (async function init() {
+    /* PHASE 1: Nguon su that duy nhat cho state tu URL.
+       Dung CHUNG cho init() va popstate() -> Back/Forward khong con mat state.
+       Bat buoc khoi phuc DU 9 tham so: tab, market, niche, page, rn, rg, rq, watch, free, sub. */
+    const URL_TABS = ['tatca', 'lotrinh', 'video', 'ngachxanh', 'tai-lieu', 'nhac', 'nguonreup', 'kenh-mau', 'rawkenh', 'chienluoc'];
+    /* Alias URL cu -> tab id moi (BE da 301, day la lop bao hiem cho link noi bo con sot) */
+    const URL_ALIAS = { 'tongquan': 'tatca', 'kichban': 'tai-lieu', 'kenh': 'kenh-mau' };
+    function readStateFromURL(validTabs) {
+      const tabs = validTabs || URL_TABS;
       const qp = new URLSearchParams(location.search);
       const rawPath = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
-      const validTabs = ['tongquan', 'lotrinh', 'video', 'ngachxanh', 'kichban', 'nguonreup', 'kenh', 'rawkenh', 'chienluoc'];
-      const tabFromPath = validTabs.find(t => t.toLowerCase() === rawPath);
-      if (tabFromPath) state.tab = tabFromPath;
-      else if (qp.get('tab')) state.tab = qp.get('tab');
-      if (qp.get('watch')) state.watchFilter = qp.get('watch');
-      if (qp.get('niche')) state.nicheFilter = qp.get('niche');
-      if (qp.get('market')) state.marketFilter = qp.get('market');
-      if (qp.get('page')) state.rawPage = parseInt(qp.get('page'), 10) || 1;
-      if (qp.get('rn')) state.rawNiche = qp.get('rn');
-      if (qp.get('rg')) state.rawGroup = qp.get('rg');
-      if (qp.get('rq')) state.rawQ = qp.get('rq');
+      const norm = URL_ALIAS[rawPath] || rawPath;
+      const tabFromPath = tabs.find(t => t.toLowerCase() === norm);
+      state.tab = tabFromPath || qp.get('tab') || 'tatca';
+      state.marketFilter = qp.get('market') || '';
+      state.nicheFilter = qp.get('niche') || '';
+      state.watchFilter = qp.get('watch') || '';
+      state.freeOnly = qp.get('free') === '1';
+      state.rawPage = parseInt(qp.get('page'), 10) || 1;
+      state.rawNiche = qp.get('rn') || '';
+      state.rawGroup = qp.get('rg') || '';
+      state.rawQ = qp.get('rq') || '';
+      state.clSubTab = qp.get('sub') || state.clSubTab || 'principles';
+      return state;
+    }
+
+    (async function init() {
+      const validTabs = ['tatca', 'lotrinh', 'video', 'ngachxanh', 'tai-lieu', 'nhac', 'nguonreup', 'kenh-mau', 'rawkenh', 'chienluoc'];
+      readStateFromURL(validTabs);
       await hydrateAdminState();
       renderTabs();
       await render();
@@ -736,11 +786,16 @@
 
       // Click logo thương hiệu để về trang chủ Tổng quan & cuộn lên đầu trang
       document.querySelectorAll('.vd-brand').forEach(brandEl => {
+      brandEl.setAttribute('role', 'link');
+      brandEl.setAttribute('tabindex', '0');
+      brandEl.setAttribute('aria-label', 'Về trang chủ Tổng quan');
+      brandEl.style.cursor = 'pointer';
+      brandEl.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); brandEl.click(); } };
         brandEl.style.cursor = 'pointer';
         brandEl.title = 'Về trang chủ Tổng quan';
         brandEl.onclick = (e) => {
           e.preventDefault();
-          openTab('tongquan');
+          openTab('tatca');
           resetScrollToTop();
         };
       });
@@ -755,10 +810,11 @@
         const handleScroll = () => {
           const pr = document.getElementById('panel-root');
           const top = Math.max(window.scrollY || 0, document.documentElement.scrollTop || 0, (pr && pr.scrollTop) || 0);
+          /* PHASE 2: dung class chuan .is-visible dong bo 3 trang (truoc day .visible) */
           if (top > 320) {
-            btt.classList.add('visible');
+            btt.classList.add('is-visible');
           } else {
-            btt.classList.remove('visible');
+            btt.classList.remove('is-visible');
           }
         };
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -774,13 +830,9 @@
           render().then(() => { window.scrollTo(0, scY); });
         }, 60);
       }
-      window.addEventListener('popstate', (e) => {
-        const qp = new URLSearchParams(location.search);
-        const rawPath2 = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
-        const tabFromPath2 = validTabs.find(t => t.toLowerCase() === rawPath2);
-        state.tab = tabFromPath2 || qp.get('tab') || 'tongquan';
-        state.marketFilter = qp.get('market') || '';
-        state.nicheFilter = qp.get('niche') || '';
+      window.addEventListener('popstate', () => {
+        /* PHASE 1: dung CHUNG readStateFromURL -> khoi phuc du 9 tham so (truoc day mat 6) */
+        readStateFromURL(URL_TABS);
         renderTabs();
         render();
         resetScrollToTop();
@@ -809,7 +861,7 @@
         const dy = touchEndY - touchStartY;
         // Chỉ nhận cử chỉ quẹt ngang rõ ràng (nghiêng dưới 30 độ và vuốt > 70px)
         if (Math.abs(dx) > 70 && Math.abs(dy) < 45) {
-          const tabOrder = ['tongquan', 'lotrinh', 'video', 'ngachxanh', 'kichban', 'nguonreup', 'kenh', 'rawkenh', 'chienluoc'];
+          const tabOrder = ['tatca', 'video', 'ngachxanh', 'tai-lieu', 'nhac', 'nguonreup', 'kenh-mau', 'rawkenh', 'chienluoc', 'lotrinh'];
           const curIdx = tabOrder.indexOf(state.tab);
           if (curIdx >= 0) {
             if (dx < 0 && curIdx < tabOrder.length - 1) {

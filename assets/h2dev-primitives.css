@@ -188,7 +188,11 @@
   background: var(--surface-2);
   color: var(--fg-2);
 }
-.h2-stat__icon svg { width: var(--h2-icon-16); height: var(--h2-icon-16); }
+/* 2026-09-24: phu CA 2 dang icon — he moi dung <span class="h2-icon"> (khong chua svg).
+ * Thieu ve .h2-icon => span gian het co container => icon de len chu (loi that gap tren mobile). */
+.h2-stat__icon svg,
+.h2-stat__icon .h2-icon { width: var(--h2-icon-16); height: var(--h2-icon-16); }
+.h2-stat__icon .h2-icon { display: inline-block; min-width: var(--h2-icon-16); min-height: var(--h2-icon-16); }
 .h2-stat__body { min-width: 0; flex: 1; }
 .h2-stat__value {
   color: var(--fg);
@@ -250,7 +254,9 @@
   line-height: var(--h2-lh-body);
 }
 .h2-empty__icon { color: var(--fg-faint); display: grid; place-items: center; }
-.h2-empty__icon svg { width: var(--h2-icon-24); height: var(--h2-icon-24); }
+.h2-empty__icon svg,
+.h2-empty__icon .h2-icon { width: var(--h2-icon-24); height: var(--h2-icon-24); }
+.h2-empty__icon .h2-icon { display: inline-block; min-width: var(--h2-icon-24); min-height: var(--h2-icon-24); }
 .h2-empty__title { color: var(--fg-2); font-weight: var(--h2-fw-semibold); font-size: var(--h2-font-base); }
 .h2-empty__hint { color: var(--fg-faint); font-size: var(--h2-font-xs); }
 

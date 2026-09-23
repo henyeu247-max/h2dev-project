@@ -161,6 +161,74 @@ for (const rel of sizeTargets) {
 }
 if (!sizeHits) ok('0 size class sai chuan trong ' + sizeTargets.length + ' file');
 
+/* ---------- [6] ICONS.<key> duoc goi phai CO trong NAMES ---------- */
+/* LOI THAT 2026-09-24: content.js goi ICONS.disk + ICONS.search nhung NAMES khong khai bao
+ *   => undefined => the KPI MAT ICON. Gate nay chan vinh vien.
+ *
+ * PHAM VI CHINH XAC (tranh bao dong gia da gap):
+ *   `h2dev-core.js` va `learn.js` co bien `ICONS` RIENG (SVG inline tu dinh nghia trong chinh file)
+ *   => KHONG thuoc namespace H2Icons, so vao la SAI.
+ *
+ * BAY DA GAP KHI PROBE (2026-09-24): ban dau loc file theo chuoi 'H2Icons.NAMES|_h2i.NAMES'
+ *   => CHI khop main.js, BO SOT content.js (no nhan ICONS qua deps.ICONS tu main truyen sang).
+ *   Probe xoa `disk` trong icons.js -> gate VAN BAO PASS => gate hong ma khong ai biet.
+ *   CACH SUA: liet ke TUONG MINH cac file dung namespace H2Icons.NAMES (co kiem chung bang DOM that).
+ *   Cach nay "fail loud": them file moi ma quen khai bao -> gate [1] van bat qua ten icon. */
+head('[6] Moi ICONS.<key> duoc goi deu co khai bao trong assets/app/icons.js');
+const iconsJs = fs.readFileSync(path.join(ROOT, 'assets', 'app', 'icons.js'), 'utf8');
+const declared = new Set([...iconsJs.matchAll(/^\s*([a-zA-Z0-9_]+)\s*:\s*'[a-z0-9-]+'/gm)].map(m => m[1]));
+/* File nhan bien ICONS tu window.H2Icons.NAMES (truc tiep hoac qua deps.ICONS do main.js truyen). */
+const NAMES_USERS = [
+  'assets/app/main.js',            /* const ICONS = _h2i.NAMES */
+  'assets/app/tabs/content.js'     /* const ICONS = deps.ICONS (nguon: main.js) */
+].filter(f => fs.existsSync(path.join(ROOT, f)));
+let keyMiss = 0;
+for (const rel of NAMES_USERS) {
+  const src = stripComments(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
+  const keys = new Set([...src.matchAll(/\bICONS\.([a-zA-Z0-9_]+)/g)].map(m => m[1]));
+  if (!keys.size) continue;
+  const miss = [...keys].filter(k => !declared.has(k));
+  if (miss.length) {
+    keyMiss += miss.length;
+    bad(rel + ' goi ICONS.' + miss.join(', ICONS.') + ' nhung KHONG khai bao trong icons.js NAMES');
+  }
+}
+if (!keyMiss) {
+  const allKeys = new Set();
+  for (const rel of NAMES_USERS) {
+    const src = stripComments(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
+    [...src.matchAll(/\bICONS\.([a-zA-Z0-9_]+)/g)].forEach(m => allKeys.add(m[1]));
+  }
+  ok('0 key thieu — ' + allKeys.size + ' key dung deu co trong NAMES (' + declared.size + ' khai bao)'
+    + '  [pham vi: ' + NAMES_USERS.length + ' file dung NAMES]');
+}
+
+/* ---------- [7] Ten icon khong duoc IN RA CHU qua stat-glyph ---------- */
+/* LOI THAT 2026-09-24: statCard() nhan TEN icon ('video','file-text','tv') nhung roi vao
+ *   nhanh else -> <span class="stat-glyph">video</span> -> IN CHU ra the KPI.
+ *
+ * PHAM VI CHINH XAC (tranh bao dong gia da gap):
+ *   CHI soi CHUOI HTML SINH RA (co <span class="stat-glyph">...</span> dong kin trong 1 dong),
+ *   KHONG soi dong CODE dinh nghia/ghep chuoi (vd ui-core.js:136 la cau lenh tao span).
+ *   Dau hieu la chuoi HTML: bat dau bang < hoac ${ va co the span dong day du. */
+head('[7] Khong co the HTML nao render <span class="stat-glyph">TEN-ICON</span> (in chu ra man hinh)');
+let glyphBad = 0;
+for (const rel of JS_TARGETS) {
+  /* BAT BUOC strip comment: chinh ghi chu giai thich loi nay cung chua chuoi
+   * `<span class="stat-glyph">video</span>` => khong strip se tu bao dong gia. */
+  const lines = stripComments(fs.readFileSync(path.join(ROOT, rel), 'utf8')).split(/\r?\n/);
+  lines.forEach((ln, i) => {
+    /* bo qua dong CODE dinh nghia/ghep chuoi (khong phai chuoi HTML tinh) */
+    if (/^\s*(const|let|var)\s+\w+\s*=/.test(ln) && !/`/.test(ln)) return;
+    /* span phai DONG ngay trong dong nay (co </span>) => chuoi HTML that */
+    for (const m of ln.matchAll(/stat-glyph"?>\s*([a-z][a-z0-9-]*)\s*<\/span>/g)) {
+      glyphBad++;
+      bad(rel + ':' + (i + 1) + ' stat-glyph chua ten icon "' + m[1] + '" => se IN CHU ra man hinh');
+    }
+  });
+}
+if (!glyphBad) ok('0 the HTML stat-glyph chua ten icon');
+
 /* ---------- Ket luan ---------- */
 console.log('\n================ GATE ICONS: ' + (fail ? fail + ' FAIL' : 'ALL PASS') + ' ================');
 process.exit(fail ? 1 : 0);

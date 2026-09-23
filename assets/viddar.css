@@ -271,13 +271,16 @@ code { font-size: 11px; color: var(--fg-2); }
 .tab-more, .tab-more-btn, .tab-more-menu { display: none !important; }
 #moreMenuSheet svg,
 #moreMenuSheet .h2-icon {
-  width: 18px !important;
-  height: 18px !important;
-  max-width: 18px !important;
-  max-height: 18px !important;
-  min-width: 18px !important;
-  min-height: 18px !important;
-  flex: 0 0 18px !important;
+  /* SUA 2026-09-24 (SCAR-014): 18px khong nam trong bac chuan 14/16/20/24.
+   *   Voi .h2-icon (mask + min-width) thi 18px BOP CUNG -> icon lech 2px so voi moi noi.
+   *   Dung 16px = bac chuan gan nhat, khop token --h2-icon-16. */
+  width: 16px !important;
+  height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  flex: 0 0 16px !important;
   stroke-width: 2 !important;
   display: inline-block !important;
 }
@@ -849,10 +852,11 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   }
   .vd-bottom-nav .tab-btn svg,
   .vd-bottom-nav .tab-btn .h2-icon {
-    width: 18px;
-    height: 18px;
-    min-width: 18px;
-    min-height: 18px;
+    /* SUA 2026-09-24 (SCAR-014): 18px -> 16px (bac chuan). Xem ghi chu o #moreMenuSheet. */
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     stroke-width: 2.1;
     flex-shrink: 0;
     display: inline-block;
@@ -907,13 +911,14 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .more-menu-sheet .more-item .h2-icon,
   .more-menu-sheet svg,
   .more-menu-sheet .h2-icon {
-    width: 18px !important;
-    height: 18px !important;
-    max-width: 18px !important;
-    max-height: 18px !important;
-    min-width: 18px !important;
-    min-height: 18px !important;
-    flex: 0 0 18px !important;
+    /* SUA 2026-09-24 (SCAR-014): 18px -> 16px (bac chuan). Xem ghi chu o #moreMenuSheet. */
+    width: 16px !important;
+    height: 16px !important;
+    max-width: 16px !important;
+    max-height: 16px !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    flex: 0 0 16px !important;
     stroke-width: 2;
     display: inline-block;
   }
@@ -964,10 +969,14 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .bento-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
   .bento-card { min-height: 96px !important; padding: 12px !important; flex-direction: column; align-items: flex-start; gap: 7px !important; }
   .bento-card .stat-icon { width: 30px !important; height: 30px !important; font-size: 15px !important; }
-  /* 2026-09-24: phai phu CA 2 dang icon (<svg> cu + .h2-icon moi) — xem ghi chu o rule goc. */
-  .bento-card .stat-icon svg,
-  .bento-card .stat-icon .h2-icon { width: 15px; height: 15px; }
-  .bento-card .stat-icon .h2-icon { display: inline-block; min-width: 15px; min-height: 15px; }
+  /* 2026-09-24: phai phu CA 2 dang icon (<svg> cu + .h2-icon moi) — xem ghi chu o rule goc.
+   * SUA 2026-09-24 (SCAR-014): truoc do dat 15px cho CA .h2-icon — SAI.
+   *   <svg> co the nhan 15px (co gian duoc), nhung .h2-icon dung mask + min-width:
+   *   min-width:15px BOP CUNG icon con 15px -> vi pham luat size 14/16/20/24,
+   *   va lam icon nho hon 1px so voi moi cho khac tren cung trang.
+   *   Dung: .h2-icon phai giu 16px (bac chuan gan nhat), chi svg giu 15px. */
+  .bento-card .stat-icon svg { width: 15px; height: 15px; }
+  .bento-card .stat-icon .h2-icon { width: 16px; height: 16px; display: inline-block; min-width: 16px; min-height: 16px; }
   .bento-card .stat-glyph { font-size: 15px !important; }
   .bento-card .stat-value { font-size: 20px !important; line-height: 1.15 !important; }
   .bento-card .stat-label { font-size: 10px !important; letter-spacing: 0.04em !important; line-height: 1.25; }

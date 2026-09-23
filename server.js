@@ -555,6 +555,36 @@ const server = http.createServer(async (req,res)=>{
     return;
   }
 
+  /* H2DEV 2026-09-23 — CHAN /scripts/ QUA WEB (va lo hong nginx ~\\.(js|css)$ vi mo ta 404).
+   *
+   * VAN DE THAT (do duoc, khong doan):
+   *   nginx vhost co 2 location theo thu tu:
+   *     (a) location ~ .*\\.(js|css)?$   -> add_header no-cache + etag, KHONG proxy_pass
+   *     (b) location /                   -> proxy_pass Node
+   *   Regex (a) co '?' nen khop CA '/scripts/gate-icons.js' lan '/assets/app/main.js'.
+   *   Voi '/assets/...' thi location ^~ /assets/ (trong extension/proxy.conf) THANG location regex
+   *   (dung luat nginx: prefix ^~ duoc uu tien truoc regex) => di dung Node.
+   *   Nhung '/scripts/...' KHONG co location ^~ => roi vao (a), nginx phuc vu TRUC TIEP tu
+   *   disk qua root `/www/wwwroot/h2dev-learn.tonymmo.com` => file that nam o /app/scripts/
+   *   nen request ra 404 (khoa huong dan anh bao: push xong van thay 404).
+   *
+   * CACH SUA (2 lop, phong thu theo chieu sau):
+   *   1. Node: chan '/scripts/' + cac duong dan noi bo, tra 404 NGAY tai day
+   *      => du sau nay co ai sua nginx, script noi bo cung khong bao gio lo ra Internet.
+   *   2. nginx: them block 'location ^~ /scripts/ { return 404; }' truoc regex
+   *      => chan tai tang bien, khong ton 1 byte bang thong.
+   *
+   * Ly do chan: /scripts/ chua script van hanh (build DB, sync, guard, gate) — cong cu noi bo,
+   * khong phai tai san web. Phuc vu ra ngoai = lo logic van hanh + tang be mat tan cong.
+   * Ghi chu: '/design-system/' la TAI LIEU CHUAN duoc phep phuc vu (da verify 200 OK).
+   */
+  const firstSeg = relSegs[0] ? relSegs[0].toLowerCase() : '';
+  if (firstSeg === 'scripts' && !apiPath.startsWith('/api/')) {
+    res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'X-Content-Type-Options':'nosniff'}));
+    res.end('404 Not Found');
+    return;
+  }
+
   fs.stat(full, (err, st)=>{
     if(!err && st.isDirectory()){
       const idx = path.join(full, 'index.html');

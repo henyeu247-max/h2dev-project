@@ -327,3 +327,38 @@
   clip-path: none;
   overflow: visible;
 }
+
+/* ==========================================================================
+   9. TOAST CHUAN — dung chung ca 3 trang (learn/player/index)
+   --------------------------------------------------------------------------
+   TRUOC DAY: .toast-msg chi dinh nghia trong player.css (chi player.html nap).
+   Nhung music_player_modal.js chay tren index.html -> index KHONG nap player.css
+   -> toast tao ra se VO (khong style). Da do: index.html chi nap viddar.css.
+   => Dua len tang shell de moi trang deu co. Giu nguyen gia tri goc de khong
+      doi hinh dang player dang co.
+   ========================================================================== */
+.toast-msg {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  padding: 12px 18px;
+  border-radius: var(--r-lg);
+  color: var(--fg);
+  font-size: var(--h2-font-sm);
+  font-weight: var(--h2-fw-medium);
+  z-index: var(--h2-z-toast);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: h2ToastSlideUp 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes h2ToastSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 640px) {
+  .toast-msg { left: 12px; right: 12px; bottom: 76px; }
+}

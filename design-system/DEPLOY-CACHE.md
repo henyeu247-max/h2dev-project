@@ -118,6 +118,36 @@ curl -sI https://h2dev-learn.tonymmo.com/assets/h2dev-core.js | grep -iE 'cache-
 4. **Thêm `add_header` ở nginx cho `/assets/` là VÔ NGHĨA** → `location ^~ /assets/` chỉ `proxy_pass`, header cuối cùng do Node quyết. Sửa header phải sửa ở `server.js`.
 5. **`$` trong regex qua SSH/PowerShell bị nuốt** → viết script `.sh` rồi `scp` lên, đừng nhồi inline.
 6. **Token Cloudflare dán trong chat = đã lộ** → rotate sau khi dùng xong.
+7. **`location ~ .*\.(js|css)?$` trong vhost KHÔNG `proxy_pass`** → nginx phục vụ trực tiếp từ disk.
+   Vì regex có `?` nên khớp **mọi** URI kết thúc bằng `.js`/`.css`, kể cả `/scripts/*.js`.
+   Với `/assets/...` thì `location ^~ /assets/` (trong `extension/proxy.conf`) **thắng** regex
+   (luật nginx: prefix `^~` được ưu tiên trước regex) → đi đúng Node. Nhưng `/scripts/...`
+   **không có** location `^~` nào → rơi vào nhánh regex → nginx trả 404 vì `root` là
+   `/www/wwwroot/h2dev-learn.tonymmo.com` còn file thật nằm ở `/app/scripts/`.
+   **Triệu chứng dễ nhầm:** "đã push mà vẫn 404" — tưởng deploy hỏng, thật ra là lỗi routing.
+   **Bài học kiểm định:** khi 1 URL trả 404, phải phân biệt **404 do routing** vs **404 do thiếu file**
+   bằng cách so `curl` 3 tầng (Node → nginx → Cloudflare) + `ls` file trên disk. Đừng kết luận vội.
+8. **2 lớp chặn `/scripts/` (đã áp dụng 2026-09-23):** Node trả 404 (`server.js`, biến `firstSeg`)
+   **+** nginx `location ^~ /scripts/ { return 404; }` chèn ở **đầu** `proxy.conf`.
+   Chặn ở Node là lớp phòng thủ cuối (đúng cả khi nginx bị sửa); chặn ở nginx là lớp biên (không tốn băng thông).
+   `/design-system/` **vẫn phục vụ 200** vì đó là tài liệu chuẩn cho dev, không phải secret.
+   Verify: `/scripts/` → 404 ở cả 3 tầng; `/design-system/` → 200 ở cả 3 tầng.
+
+---
+
+## 6b. BẢNG PASS CHECK-PASS 2026-09-23 (chặng P3.6 — ghi lại làm mốc)
+
+| # | Hạng mục | Kết quả |
+|---|---|---|
+| 1 | `/scripts/*` qua Cloudflare | **404** (10/10 file probe: js/py/dal/purge/gate) |
+| 2 | `/scripts/` bypass (traversal, hoa/thường, query, `//`) | **404** (5/5) |
+| 3 | `/design-system/*` | **200** (5/5) — không bị chặn nhầm |
+| 4 | 12 route whitelist (`/`, `/tatca`, `/lotrinh/VIDEO-ba3904`…) | **200** (12/12) |
+| 5 | `/api/niche-radar` | **200** |
+| 6 | `.js` cache-control (Node / nginx / CF) | `no-cache, must-revalidate` — CF=REVALIDATED/EXPIRED, **không** max-age lớn |
+| 7 | `.js` 2 nhánh `Accept-Encoding` (identity + gzip) | **200** cả 2, ETag khớp 1:1 |
+| 8 | `.svg` cache-control | `public, max-age=86400, stale-while-revalidate=604800`, CF=MISS |
+| 9 | `data-tabs/*.json` | `public, max-age=120, stale-while-revalidate=600` |
 
 ---
 
@@ -126,9 +156,12 @@ curl -sI https://h2dev-learn.tonymmo.com/assets/h2dev-core.js | grep -iE 'cache-
 | Thành phần | Đường dẫn |
 |---|---|
 | Header quyết định cuối | `server.js` dòng ~133-164 |
+| **Chặn `/scripts/` (Node)** | `server.js` — biến `firstSeg` (ngay trước `fs.stat(full)`) |
+| **Chặn `/scripts/` (nginx)** | `.../extension/h2dev-learn.tonymmo.com/proxy.conf` — `location ^~ /scripts/` đầu file |
 | nginx proxy h2dev-learn | `/www/server/panel/vhost/nginx/extension/h2dev-learn.tonymmo.com/proxy.conf` |
 | nginx vhost | `/www/server/panel/vhost/nginx/h2dev-learn.tonymmo.com.conf` |
 | proxy_cache toàn cục | `/www/server/nginx/conf/proxy.conf` |
 | Thư mục proxy cache | `/www/server/nginx/proxy_cache_dir` |
 | Backup proxy.conf | `.../proxy.conf.bak-20260923-proxycache` |
+| Backup chặn /scripts/ | `.../proxy.conf.bak-20260923-202249-scripts` |
 | Backup vhost | `/www/server/panel/vhost/nginx/*.conf.bak-20260923-cache` |

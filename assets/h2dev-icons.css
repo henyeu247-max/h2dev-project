@@ -123,6 +123,7 @@
 .h2-icon[data-h2i="clapperboard"]      { -webkit-mask-image: url("icons/clapperboard.svg");      mask-image: url("icons/clapperboard.svg"); }
 .h2-icon[data-h2i="clipboard"]         { -webkit-mask-image: url("icons/clipboard.svg");         mask-image: url("icons/clipboard.svg"); }
 .h2-icon[data-h2i="clipboard-check"]   { -webkit-mask-image: url("icons/clipboard-check.svg");   mask-image: url("icons/clipboard-check.svg"); }
+.h2-icon[data-h2i="clipboard-copy"]    { -webkit-mask-image: url("icons/clipboard-copy.svg");    mask-image: url("icons/clipboard-copy.svg"); }
 .h2-icon[data-h2i="clock"]             { -webkit-mask-image: url("icons/clock.svg");             mask-image: url("icons/clock.svg"); }
 .h2-icon[data-h2i="cloud"]             { -webkit-mask-image: url("icons/cloud.svg");             mask-image: url("icons/cloud.svg"); }
 .h2-icon[data-h2i="code"]              { -webkit-mask-image: url("icons/code.svg");              mask-image: url("icons/code.svg"); }
@@ -264,6 +265,7 @@
 .h2-icon[data-h2i="star"]              { -webkit-mask-image: url("icons/star.svg");              mask-image: url("icons/star.svg"); }
 .h2-icon[data-h2i="star-off"]          { -webkit-mask-image: url("icons/star-off.svg");          mask-image: url("icons/star-off.svg"); }
 .h2-icon[data-h2i="sun"]               { -webkit-mask-image: url("icons/sun.svg");               mask-image: url("icons/sun.svg"); }
+.h2-icon[data-h2i="swords"]            { -webkit-mask-image: url("icons/swords.svg");            mask-image: url("icons/swords.svg"); }
 .h2-icon[data-h2i="table"]             { -webkit-mask-image: url("icons/table.svg");             mask-image: url("icons/table.svg"); }
 .h2-icon[data-h2i="tag"]               { -webkit-mask-image: url("icons/tag.svg");               mask-image: url("icons/tag.svg"); }
 .h2-icon[data-h2i="tags"]              { -webkit-mask-image: url("icons/tags.svg");              mask-image: url("icons/tags.svg"); }

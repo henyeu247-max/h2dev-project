@@ -21,13 +21,47 @@
     return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
 
+  /* Icon: uy quyen cho H2Core.ico (1 chuan duy nhat - ICON-MAPPING.md muc 1b).
+   * KHONG tu viet ban sao thu 3. Fallback rong neu chua nap h2dev-core. */
+  function ico(name, size) {
+    if (globalThis.H2Core && typeof globalThis.H2Core.ico === 'function') return globalThis.H2Core.ico(name, size);
+    return '';
+  }
+
+  /* Icon co MAU (giu ngu nghia den bao YPP SAFE/COPYRIGHTED/REVIEW).
+   * .h2-icon dung background-color:currentColor => doi mau bang color cua span boc ngoai. */
+  function icoColored(name, size, color) {
+    return '<span style="color:' + color + ';display:inline-flex;align-items:center;">' + ico(name, size) + '</span>';
+  }
+
+  /* Toast chuan: dung .toast-msg (h2dev-shell.css muc 9).
+   * Modal co z-index:100005 nen toast phai cao hon de khong bi che. */
+  function showToast(msg) {
+    let el = document.querySelector('.toast-msg.js-music-toast');
+    if (!el) {
+      el = document.createElement('div');
+      el.className = 'toast-msg js-music-toast';
+      el.setAttribute('role', 'status');
+      el.setAttribute('aria-live', 'polite');
+      document.body.appendChild(el);
+    }
+    el.style.zIndex = '100010';
+    el.textContent = msg;
+    if (el._h2Timer) clearTimeout(el._h2Timer);
+    el._h2Timer = setTimeout(() => { el.remove(); }, 2200);
+  }
+
   function renderTrackCard(t) {
     const isSafe = t.copyrightRisk === 'SAFE';
     const isCopy = t.copyrightRisk === 'COPYRIGHTED';
     const badgeColor = isSafe ? 'background:rgba(16,185,129,0.2); border:1px solid rgba(16,185,129,0.4); color:#6ee7b7;' :
                       (isCopy ? 'background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;' :
                                 'background:rgba(245,158,11,0.2); border:1px solid rgba(245,158,11,0.4); color:#fde68a;');
-    const badgeText = isSafe ? '🟢 SAFE (YPP)' : (isCopy ? '🔴 BẢN QUYỀN' : '🟡 THẬN TRỌNG');
+    const badgeText = isSafe
+      ? icoColored('shield-check', 14, '#6ee7b7') + ' SAFE (YPP)'
+      : (isCopy
+        ? icoColored('alert-triangle', 14, '#fca5a5') + ' BẢN QUYỀN'
+        : icoColored('alert-circle', 14, '#fde68a') + ' THẬN TRỌNG');
     const rawSrc = t.streamUrl || ('assets/nhac-nen/' + (t.folder && t.folder !== 'Nhạc nền' ? t.folder + '/' : '') + t.fileName);
     const streamSrc = rawSrc + (rawSrc.includes('?') ? '&' : '?') + 'v=20260922-g2';
 
@@ -41,14 +75,14 @@
             <span style="font-size:0.68rem; color:#94a3b8; font-family:monospace;">${esc(t.durationFormatted)} • ${t.sizeMB} MB</span>
           </div>
           <a href="${esc(streamSrc)}" download="${esc(t.fileName)}" style="flex-shrink:0; font-size:0.72rem; padding:0.25rem 0.6rem; border-radius:0.4rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
-            ⬇️ Tải MP3
+            ${ico('download', 14)} Tải MP3
           </a>
         </div>
 
         <!-- Row 2: Title -->
         <div>
           <h4 style="font-size:0.88rem; font-weight:700; color:#f8fafc; margin:0; word-break:break-word; line-height:1.35;" title="${esc(t.fileName)}">${esc(t.fileName)}</h4>
-          ${t.detectedTitle ? `<div style="font-size:0.72rem; color:#f87171; font-weight:600; margin-top:0.15rem;">⚠️ Phát hiện: ${esc(t.detectedTitle)}${t.detectedArtist ? ' — ' + esc(t.detectedArtist) : ''}</div>` : ''}
+          ${t.detectedTitle ? `<div style="font-size:0.72rem; color:#f87171; font-weight:600; margin-top:0.15rem; display:flex; align-items:center; gap:0.2rem;">${ico('alert-triangle', 14)} <span>Phát hiện: ${esc(t.detectedTitle)}${t.detectedArtist ? ' — ' + esc(t.detectedArtist) : ''}</span></div>` : ''}
         </div>
 
         <!-- Row 3: Meta Info (Ngách & Mood compact) -->
@@ -64,8 +98,8 @@
 
         <!-- Row 5: Footer & Copy Path (Chống tràn viền) -->
         <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.68rem; color:#64748b; border-top:1px solid #1e293b; padding-top:0.35rem; gap:0.5rem; min-width:0;">
-          <span class="truncate" style="flex:1; min-width:0;" title="${esc(t.fileName)}">📁 ${esc(t.fileName)}</span>
-          <button type="button" class="js-copy-music-path" data-copy-path="${esc(t.localAbsPath || t.fileName)}" data-copy-id="${esc(t.id)}" style="background:none; border:none; color:#38bdf8; cursor:pointer; font-size:0.68rem; font-weight:700; padding:0; flex-shrink:0; white-space:nowrap;">📋 Copy Path</button>
+          <span class="truncate" style="flex:1; min-width:0; display:inline-flex; align-items:center; gap:0.25rem;" title="${esc(t.fileName)}">${ico('folder', 14)} <span class="truncate">${esc(t.fileName)}</span></span>
+          <button type="button" class="js-copy-music-path" data-copy-path="${esc(t.localAbsPath || t.fileName)}" data-copy-id="${esc(t.id)}" style="background:none; border:none; color:#38bdf8; cursor:pointer; font-size:0.68rem; font-weight:700; padding:0; flex-shrink:0; white-space:nowrap; display:inline-flex; align-items:center; gap:0.2rem;">${ico('clipboard-copy', 14)} Copy Path</button>
         </div>
       </div>
     `;
@@ -75,7 +109,7 @@
     currentFilter = initialFilter;
     const cat = await loadMusicCatalog();
     if (!cat || !cat.tracks) {
-      alert('Không thể tải kho nhạc nền. Vui lòng thử lại!');
+      showToast('Không thể tải kho nhạc nền. Vui lòng thử lại!');
       return;
     }
 
@@ -96,9 +130,11 @@
           const path = copyBtn.getAttribute('data-copy-path') || '';
           const id = copyBtn.getAttribute('data-copy-id') || '';
           if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(path).then(() => alert('Đã copy đường dẫn local: ' + id)).catch(() => alert('Không copy được path: ' + id));
+            navigator.clipboard.writeText(path)
+              .then(() => showToast('Đã copy đường dẫn local: ' + id))
+              .catch(() => showToast('Không copy được path: ' + id));
           } else {
-            alert('Trình duyệt không hỗ trợ clipboard API — path: ' + path);
+            showToast('Trình duyệt không hỗ trợ clipboard API — path: ' + path);
           }
           return;
         }
@@ -162,54 +198,54 @@
           <div style="display:flex; align-items:center; justify-content:space-between; padding:0.8rem 1.1rem; background:#0f172a; border-bottom:1px solid #1e293b; gap:0.75rem; flex-shrink:0;">
             <div style="min-width:0; flex:1;">
               <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap;">
-                <span style="font-size:1.25rem;">🎧</span>
+                <span style="color:#a855f7;display:inline-flex;align-items:center;">${ico('headphones', 24)}</span>
                 <h3 style="font-size:1.05rem; font-weight:800; color:#fff; margin:0;" class="truncate">Trạm Nhạc Nền ${nicheCount} Ngách YouTube</h3>
                 <span style="font-size:0.7rem; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff;">${totalCount} Tracks (${safeCount} SAFE YPP)</span>
               </div>
             </div>
-            <button type="button" id="close-music-studio" style="width:32px; height:32px; border-radius:50%; background:#1e293b; border:1px solid #334155; color:#e2e8f0; font-size:0.9rem; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;" title="Đóng [Esc]">✕</button>
+            <button type="button" id="close-music-studio" style="width:32px; height:32px; border-radius:50%; background:#1e293b; border:1px solid #334155; color:#e2e8f0; font-size:0.9rem; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;" title="Đóng [Esc]">${ico('x', 16)}</button>
           </div>
 
           <!-- Sticky Search & Filter Toolbar -->
           <div style="padding:0.65rem 1.1rem; background:#090d16; border-bottom:1px solid #1e293b; display:flex; flex-direction:column; gap:0.5rem; flex-shrink:0;">
             <!-- Search Bar with built-in clear -->
             <div style="position:relative; display:flex; align-items:center;">
-              <input type="text" id="music-search" placeholder="🔍 Tìm mã (MUSIC-046), tên bài, mood, nhạc cụ..." value="${esc(searchQuery)}" style="width:100%; background:#0f172a; border:1px solid #334155; border-radius:0.5rem; padding:0.45rem 2rem 0.45rem 0.75rem; font-size:0.8rem; color:#fff; outline:none;">
-              ${searchQuery ? `<button type="button" id="music-reset" style="position:absolute; right:8px; background:none; border:none; color:#94a3b8; font-size:0.85rem; cursor:pointer; padding:2px 6px;">✕</button>` : ''}
+              <input type="text" id="music-search" placeholder="Tìm mã (MUSIC-046), tên bài, mood, nhạc cụ..." value="${esc(searchQuery)}" style="width:100%; background:#0f172a; border:1px solid #334155; border-radius:0.5rem; padding:0.45rem 2rem 0.45rem 0.75rem; font-size:0.8rem; color:#fff; outline:none;">
+              ${searchQuery ? `<button type="button" id="music-reset" style="position:absolute; right:8px; background:none; border:none; color:#94a3b8; font-size:0.85rem; cursor:pointer; padding:2px 6px; display:inline-flex; align-items:center;">${ico('x', 14)}</button>` : ''}
             </div>
 
             <!-- Mobile-Friendly Dropdown Selector -->
             <div class="mobile-only-filter">
               <select id="mobile-mfilter-select" style="width:100%; background:#0f172a; border:1px solid #334155; border-radius:0.5rem; padding:0.42rem 0.65rem; font-size:0.75rem; color:#fff; font-weight:600; outline:none;">
                 <option value="all" ${currentFilter==='all'?'selected':''}>Tất cả (${totalCount})</option>
-                <option value="safe" ${currentFilter==='safe'?'selected':''}>🟢 100% SAFE YPP (${safeCount})</option>
-                <option value="cophong" ${currentFilter==='cophong'?'selected':''}>🏮 Cổ Trang / Tiên Hiệp (${cophongCount})</option>
-                <option value="darkcrime" ${currentFilter==='darkcrime'?'selected':''}>🕵️ Dark Crime / Kịch tính (${darkcrimeCount})</option>
-                <option value="history" ${currentFilter==='history'?'selected':''}>🏛️ Lịch sử & Khảo cổ (${historyCount})</option>
-                <option value="animation" ${currentFilter==='animation'?'selected':''}>✨ Hoạt hình & Trẻ em (${animationCount})</option>
-                <option value="philosophy" ${currentFilter==='philosophy'?'selected':''}>🌌 Triết lý / Dưỡng sinh (${philosophyCount})</option>
-                <option value="prophecy" ${currentFilter==='prophecy'?'selected':''}>🔮 Tiên tri / Bí ẩn (${prophecyCount})</option>
-                <option value="wildlife" ${currentFilter==='wildlife'?'selected':''}>🐾 Sinh tồn (${wildlifeCount})</option>
-                <option value="military" ${currentFilter==='military'?'selected':''}>⚔️ Quân sự (${militaryCount})</option>
-                <option value="ambient" ${currentFilter==='ambient'?'selected':''}>⏳ 15-25p Ambient (${ambientCount})</option>
-                <option value="copyrighted" ${currentFilter==='copyrighted'?'selected':''}>🔴 Bản quyền (${copyCount})</option>
+                <option value="safe" ${currentFilter==='safe'?'selected':''}>100% SAFE YPP (${safeCount})</option>
+                <option value="cophong" ${currentFilter==='cophong'?'selected':''}>Cổ Trang / Tiên Hiệp (${cophongCount})</option>
+                <option value="darkcrime" ${currentFilter==='darkcrime'?'selected':''}>Dark Crime / Kịch tính (${darkcrimeCount})</option>
+                <option value="history" ${currentFilter==='history'?'selected':''}>Lịch sử &amp; Khảo cổ (${historyCount})</option>
+                <option value="animation" ${currentFilter==='animation'?'selected':''}>Hoạt hình &amp; Trẻ em (${animationCount})</option>
+                <option value="philosophy" ${currentFilter==='philosophy'?'selected':''}>Triết lý / Dưỡng sinh (${philosophyCount})</option>
+                <option value="prophecy" ${currentFilter==='prophecy'?'selected':''}>Tiên tri / Bí ẩn (${prophecyCount})</option>
+                <option value="wildlife" ${currentFilter==='wildlife'?'selected':''}>Sinh tồn (${wildlifeCount})</option>
+                <option value="military" ${currentFilter==='military'?'selected':''}>Quân sự (${militaryCount})</option>
+                <option value="ambient" ${currentFilter==='ambient'?'selected':''}>15-25p Ambient (${ambientCount})</option>
+                <option value="copyrighted" ${currentFilter==='copyrighted'?'selected':''}>Bản quyền (${copyCount})</option>
               </select>
             </div>
 
             <!-- Compact Single-Line Swipeable Chip Bar -->
             <div style="display:flex; gap:0.35rem; overflow-x:auto; padding-bottom:0.15rem; white-space:nowrap; -webkit-overflow-scrolling:touch; scrollbar-width:none;">
               <button type="button" data-mfilter="all" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='all'?'#a855f7':'#1e293b'}; background:${currentFilter==='all'?'#7e22ce':'#0f172a'}; color:#fff;">Tất cả (${totalCount})</button>
-              <button type="button" data-mfilter="safe" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='safe'?'#10b981':'#1e293b'}; background:${currentFilter==='safe'?'#047857':'#0f172a'}; color:#6ee7b7;">🟢 SAFE (${safeCount})</button>
-              <button type="button" data-mfilter="cophong" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='cophong'?'#ec4899':'#1e293b'}; background:${currentFilter==='cophong'?'#be185d':'#0f172a'}; color:#fbcfe8;">🏮 Cổ Trang (${cophongCount})</button>
-              <button type="button" data-mfilter="darkcrime" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='darkcrime'?'#f59e0b':'#1e293b'}; background:${currentFilter==='darkcrime'?'#b45309':'#0f172a'}; color:#fde68a;">🕵️ Dark Crime (${darkcrimeCount})</button>
-              <button type="button" data-mfilter="history" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='history'?'#38bdf8':'#1e293b'}; background:${currentFilter==='history'?'#0369a1':'#0f172a'}; color:#bae6fd;">🏛️ Lịch sử (${historyCount})</button>
-              <button type="button" data-mfilter="animation" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='animation'?'#8b5cf6':'#1e293b'}; background:${currentFilter==='animation'?'#6d28d9':'#0f172a'}; color:#ddd6fe;">✨ Hoạt hình (${animationCount})</button>
-              <button type="button" data-mfilter="philosophy" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='philosophy'?'#38bdf8':'#1e293b'}; background:${currentFilter==='philosophy'?'#0369a1':'#0f172a'}; color:#bae6fd;">🌌 Triết lý (${philosophyCount})</button>
-              <button type="button" data-mfilter="prophecy" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='prophecy'?'#38bdf8':'#1e293b'}; background:${currentFilter==='prophecy'?'#0369a1':'#0f172a'}; color:#bae6fd;">🔮 Tiên tri (${prophecyCount})</button>
-              <button type="button" data-mfilter="wildlife" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='wildlife'?'#38bdf8':'#1e293b'}; background:${currentFilter==='wildlife'?'#0369a1':'#0f172a'}; color:#bae6fd;">🐾 Sinh tồn (${wildlifeCount})</button>
-              <button type="button" data-mfilter="military" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='military'?'#38bdf8':'#1e293b'}; background:${currentFilter==='military'?'#0369a1':'#0f172a'}; color:#bae6fd;">⚔️ Quân sự (${militaryCount})</button>
-              <button type="button" data-mfilter="ambient" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='ambient'?'#38bdf8':'#1e293b'}; background:${currentFilter==='ambient'?'#0369a1':'#0f172a'}; color:#bae6fd;">⏳ Ambient (${ambientCount})</button>
-              <button type="button" data-mfilter="copyrighted" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='copyrighted'?'#ef4444':'#1e293b'}; background:${currentFilter==='copyrighted'?'#b91c1c':'#0f172a'}; color:#fca5a5;">🔴 Bản quyền (${copyCount})</button>
+              <button type="button" data-mfilter="safe" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='safe'?'#10b981':'#1e293b'}; background:${currentFilter==='safe'?'#047857':'#0f172a'}; color:#6ee7b7;">${icoColored('shield-check',14,'#6ee7b7')} SAFE (${safeCount})</button>
+              <button type="button" data-mfilter="cophong" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='cophong'?'#ec4899':'#1e293b'}; background:${currentFilter==='cophong'?'#be185d':'#0f172a'}; color:#fbcfe8;">${icoColored('drama',14,'#fbcfe8')} Cổ Trang (${cophongCount})</button>
+              <button type="button" data-mfilter="darkcrime" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='darkcrime'?'#f59e0b':'#1e293b'}; background:${currentFilter==='darkcrime'?'#b45309':'#0f172a'}; color:#fde68a;">${icoColored('fingerprint',14,'#fde68a')} Dark Crime (${darkcrimeCount})</button>
+              <button type="button" data-mfilter="history" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='history'?'#38bdf8':'#1e293b'}; background:${currentFilter==='history'?'#0369a1':'#0f172a'}; color:#bae6fd;">${icoColored('landmark',14,'#bae6fd')} Lịch sử (${historyCount})</button>
+              <button type="button" data-mfilter="animation" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='animation'?'#8b5cf6':'#1e293b'}; background:${currentFilter==='animation'?'#6d28d9':'#0f172a'}; color:#ddd6fe;">${icoColored('sparkles',14,'#ddd6fe')} Hoạt hình (${animationCount})</button>
+              <button type="button" data-mfilter="philosophy" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='philosophy'?'#38bdf8':'#1e293b'}; background:${currentFilter==='philosophy'?'#0369a1':'#0f172a'}; color:#bae6fd;">${icoColored('moon',14,'#bae6fd')} Triết lý (${philosophyCount})</button>
+              <button type="button" data-mfilter="prophecy" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='prophecy'?'#38bdf8':'#1e293b'}; background:${currentFilter==='prophecy'?'#0369a1':'#0f172a'}; color:#bae6fd;">${icoColored('wand-sparkles',14,'#bae6fd')} Tiên tri (${prophecyCount})</button>
+              <button type="button" data-mfilter="wildlife" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='wildlife'?'#38bdf8':'#1e293b'}; background:${currentFilter==='wildlife'?'#0369a1':'#0f172a'}; color:#bae6fd;">${icoColored('paw-print',14,'#bae6fd')} Sinh tồn (${wildlifeCount})</button>
+              <button type="button" data-mfilter="military" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='military'?'#38bdf8':'#1e293b'}; background:${currentFilter==='military'?'#0369a1':'#0f172a'}; color:#bae6fd;">${icoColored('swords',14,'#bae6fd')} Quân sự (${militaryCount})</button>
+              <button type="button" data-mfilter="ambient" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='ambient'?'#38bdf8':'#1e293b'}; background:${currentFilter==='ambient'?'#0369a1':'#0f172a'}; color:#bae6fd;">${icoColored('hourglass',14,'#bae6fd')} Ambient (${ambientCount})</button>
+              <button type="button" data-mfilter="copyrighted" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size:0.72rem; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='copyrighted'?'#ef4444':'#1e293b'}; background:${currentFilter==='copyrighted'?'#b91c1c':'#0f172a'}; color:#fca5a5;">${icoColored('alert-triangle',14,'#fca5a5')} Bản quyền (${copyCount})</button>
             </div>
           </div>
 

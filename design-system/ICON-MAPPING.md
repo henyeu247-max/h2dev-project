@@ -3,6 +3,9 @@
 > **Ngày lập:** 2026-09-23 · **Trạng thái:** approved (anh đã chốt: em tự quyết, anh nghiệm thu kết quả)
 > **Nguyên tắc:** thay **emoji trong UI thật** → `.h2-icon`. **GIỮ NGUYÊN** quốc kỳ (dữ liệu ngôn ngữ) và emoji trong **comment** (không hiện UI).
 > **Đo được:** 375 emoji / 79 loại / 16 file.
+>
+> ⚠️ **CẬP NHẬT 2026-09-23 (sau P3.5):** anh đã **đổi quyết định** cho hệ đèn báo YPP — xem Mục 2b.
+> Số liệu ở bảng dưới là **đo ban đầu**; số thực tế từng file có thể lệch (vd `music_player_modal.js` đo lại = **41**, không phải 44).
 
 ---
 
@@ -54,10 +57,10 @@
 | 👁️ | 1F441 | 6 | `eye` | Lượt xem. ✅ |
 | ⏳ | 23F3 | 6 | `hourglass` | Đang dở. ⚠️ Trong `<option>` → **BỎ**. |
 | ⬇️ | 2B07 | 5 | `download` | Tải về. ✅ |
-| 🔴 | 1F534 | 5 | — | **PHẢN BIỆN:** 🔴🟢🟡 là **hệ đèn báo an toàn bản quyền YPP** (SAFE/COPYRIGHTED/REVIEW). Đây là **semantic color-coding**, thay bằng icon đơn sắc sẽ **MẤT NGHĨA phân biệt**. → **GIỮ NGUYÊN** (hoặc thay bằng badge màu có chữ). |
-| 🟢 | 1F7E2 | 4 | — | idem — **GIỮ** |
-| 🟡 | 1F7E1 | 2 | — | idem — **GIỮ** |
-| 🟠 | 1F7E0 | 1 | — | idem — **GIỮ** |
+| 🔴 | 1F534 | 5 | `alert-triangle` | ~~GIỮ~~ → **ĐỔI (xem Mục 2b):** anh chốt thay bằng icon + giữ màu qua `color`. |
+| 🟢 | 1F7E2 | 4 | `shield-check` | → **ĐỔI (Mục 2b)** |
+| 🟡 | 1F7E1 | 2 | `alert-circle` | → **ĐỔI (Mục 2b)** |
+| 🟠 | 1F7E0 | 1 | `alert-circle` | → **ĐỔI (Mục 2b)** |
 | 📜 | 1F4DC | 5 | `scroll-text`❌ | Không có `scroll-text` trong bộ 213. → dùng `file-text`. ✅ |
 | 🎧 | 1F3A7 | 4 | `headphones`❌ | Không có. → dùng `music`. ⚠️ Hoặc thêm SVG `headphones` mới. |
 | 🛡️ | 1F6E1 | 4 | `shield` | Phòng thủ YPP. ✅ |
@@ -112,7 +115,36 @@
 
 ---
 
-## 3. DANH SÁCH ICON CÒN THIẾU (cần bổ sung SVG)
+## 2b. QUYẾT ĐỊNH MỚI: HỆ ĐÈN BÁO YPP (2026-09-23)
+
+**Thay đổi so với Mục 2:** trước đây chốt **GIỮ** 🟢🔴🟡. Nay anh **đổi quyết định: THAY bằng icon**.
+
+| Emoji | Icon Lucide | Màu giữ lại | Cách làm |
+|---|---|---|---|
+| 🟢 | `shield-check` | `#6ee7b7` (xanh) | Bọc `<span style="color:#6ee7b7">` |
+| 🔴 | `alert-triangle` | `#fca5a5` (đỏ) | Bọc `<span style="color:#fca5a5">` |
+| 🟡 | `alert-circle` | `#fde68a` (vàng) | Bọc `<span style="color:#fde68a">` |
+| 🟠 | `alert-circle` | `#fdba74` (cam) | idem |
+
+**Lý do GIỮ ĐƯỢC ngữ nghĩa màu:** `.h2-icon` dùng `background-color: currentColor` + `mask-image`
+⇒ màu icon **kế thừa từ `color` của phần tử cha**. Nên chỉ cần bọc span có `color` tương ứng là
+**vẫn phân biệt được đèn xanh/vàng/đỏ** như emoji, mà không phụ thuộc font emoji.
+
+**Hàm dùng:** `icoColored(name, size, color)` (định nghĩa local trong `music_player_modal.js`).
+
+---
+
+## 2c. HAI ICON BỔ SUNG (tải 2026-09-23)
+
+| Icon | Nguồn | Dùng cho | Nguồn tải |
+|---|---|---|---|
+| `swords` | `lucide-static@1.47.0` | ⚔️ Quân sự (anh yêu cầu tải) | unpkg CDN |
+| `clipboard-copy` | `lucide-static@1.47.0` | 📋 nút Copy Path | unpkg CDN |
+
+⚠️ **Bản quyền:** cả 2 file giữ nguyên header `<!-- @license lucide-static v1.47.0 - ISC -->`.
+**KHÔNG xoá header này** khi thêm icon mới. Version phải khớp version của 222 icon cũ (`1.47.0`).
+
+---
 
 Các icon Lucide cần mà bộ 213 hiện **chưa có** — cần tải thêm để không phải dùng icon lệch nghĩa:
 
@@ -149,7 +181,7 @@ Các icon Lucide cần mà bộ 213 hiện **chưa có** — cần tải thêm �
 | 13 | `assets/app/search.js` | 5 | JS |
 | 14 | `assets/learn.js` | 18 | JS |
 | 15 | `assets/app/player-main.js` | 26 | JS |
-| 16 | `assets/music_player_modal.js` | 44 | JS modal |
+| 16 | `assets/music_player_modal.js` | ~~44~~ **41** (đo lại) | ✅ **XONG 2026-09-23** — 41→0 emoji, 4 `alert()`→toast, 211 icon render, 17/17 SVG tồn tại, 0 lỗi console |
 | 17 | `assets/app/tabs/content.js` | 133 | **LỚN NHẤT** |
 | 18 | `assets/app/main.js` | 179 | **LỚN NHẤT** |
 

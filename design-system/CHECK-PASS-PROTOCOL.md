@@ -14,6 +14,62 @@
 4. **Bằng chứng phải đo được** — không suy đoán, không "chắc là chạy được".
 5. **Thấy FAIL phải sửa rồi check LẠI từ đầu**, không bỏ qua.
 6. **Dọn rác tạm ngay** sau khi check xong.
+7. **Phân biệt "FAIL do dự án" vs "FAIL do hạ tầng ngoài"** — nhưng KHÔNG được lấy đó làm cớ bỏ qua.
+   Phải chứng minh bằng đo lường đối chứng (xem Mục 2b), và nếu sửa được thì **phải sửa**. (Ngoại lệ duy nhất:
+   thay đổi đó phá vỡ một chính sách bảo mật có chủ đích → phải hỏi anh trước.)
+
+---
+
+## 2b. BÀI HỌC: "FAIL DO HẠ TẦNG NGOÀI" — CÁCH CHỨNG MINH & XỬ LÝ
+
+> Ghi nhận 2026-09-23, khi `deep-ui-acceptance.js` trên PROD báo `10/11` (mục 6.1 console errors)
+> còn trên LOCAL báo `11/11`. Đây là **bẫy kinh điển**: dễ kết luận "lỗi Cloudflare, bỏ qua".
+
+**Sai lầm phải tránh:** thấy lỗi không nằm trong code mình → bỏ qua luôn, coi như không tồn tại.
+→ Hậu quả: probe **mãi mãi** báo FAIL (báo động giả **vĩnh viễn**), và **không ai còn tin** gate nữa.
+
+**Quy trình đúng (đã áp dụng):**
+
+| Bước | Việc làm | Bằng chứng thu được |
+|---|---|---|
+| 1 | So HTML Local vs PROD tìm khác biệt | LOCAL không có `cloudflareinsights`; PROD **có** → nguồn ngoài |
+| 2 | Chạy cùng test trên LOCAL | `11/11 PASS` → code mình **sạch**, loại trừ nghi ngờ code |
+| 3 | Đọc kỹ đoạn HTML bị chen | Thấy `beacon.min.js` + `data-cf-beacon` + `token` |
+| 4 | **Query API thay vì đoán** | `GET /zones/{id}/settings/rum` → `value:"on"` |
+| 5 | Đối chiếu chéo để tìm ĐÚNG nguồn | token trong beacon (`a42a2cd9…`) ≠ `site_tag` của zone (`86e109cd…`) → phải **đo lại sau khi sửa** |
+| 6 | Sửa | `PATCH /zones/{id}/settings/rum {"value":"off"}` → HTTP 200 |
+| 7 | **Đo lại output thật** (không tin API) | Lần 1 sau 20s: vẫn còn beacon → lần 2 sau ~30s: **sạch** ⇒ **độ trễ lan truyền Edge**, không phải API sai |
+| 8 | Verify độc lập nhiều lần | 6/6 (3 trang × 2 lượt, có cache-buster) đều `beacon=False` |
+
+**Cạm bẫy phụ đã gặp — ĐỘ TRỄ LAN TRUYỀN:**
+PATCH trả `200 success=true` **nhưng HTML vẫn còn beacon trong ~30 giây đầu**.
+Suýt kết luận sai là "API không có tác dụng". ⇒ **Sau khi đổi setting Cloudflare, phải đợi ~30s rồi đo lại ít nhất 2 lần.**
+
+**Cạm bẫy phụ 2 — TIN API THAY VÌ TIN OUTPUT:**
+`GET .../settings/rum` báo `"off"` **không** đồng nghĩa HTML đã sạch. **Luôn đo output cuối cùng** (`curl` HTML thật).
+
+**Kết quả:** `11/11 PASS` trên PROD. Probe hết báo động giả ⇒ gate lấy lại được độ tin cậy.
+**Nguyên tắc chốt:** *"Bỏ qua vì lỗi ngoài"* chỉ hợp lệ khi **đã chứng minh bằng đo lường** VÀ **không thể sửa**.
+Sửa được thì sửa — để gate nói thật 100%.
+
+**Các feature Cloudflare có thể tự chèn JS / sửa HTML (check khi nghi ngờ):**
+
+| Feature | Setting ID / Endpoint | Trạng thái H2DEV |
+|---|---|---|
+| Web Analytics (RUM) — chèn `beacon.min.js` | `GET/PATCH /zones/{id}/settings/rum` | **off** (đã tắt 2026-09-23) |
+| Rocket Loader | `rocket_loader` | off |
+| Email Obfuscation — chèn script giải mã | `email_obfuscation` | on (không chèn script với page không có email) |
+| Speed Brain | `GET /zones/{id}/settings/speed_brain` | off |
+| Cloudflare Fonts | `GET /zones/{id}/settings/fonts` | (không set) |
+| Mirage | `mirage` | off (readonly) |
+| NEL | `GET /zones/{id}/settings/nel` | on (chỉ thêm header, không chèn HTML) |
+| Zaraz | dashboard | (không dùng) |
+
+> Token cần: `#zone_settings:read` để đọc, `#zone_settings:edit` để sửa. **Không cần Account ID**
+> cho setting theo zone (`rum` nằm trong quyền zone-level). Endpoint account-level
+> (`/accounts/{id}/rum/...`) cần token account-scoped mới đọc được.
+
+---
 
 ---
 

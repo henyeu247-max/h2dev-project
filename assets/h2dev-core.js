@@ -283,8 +283,12 @@
     '</svg>';
 
   function renderEmptyState(kind) {
+    /* Mota nut yeu thich: dung ICON thay emoji ❤ (mot he icon duy nhat, Phase 3).
+     * Icon heart co san trong ICONS (heartRegular) -> inline svg 14px, khong phu thuoc H2Icons
+     * (file nay nap TRUOC icons.js nen phai tu chua). */
+    var heartHint = '<span class="h2-inline-ico" aria-hidden="true">' + ICONS.heartRegular + '</span>';
     if (kind === 'fav') {
-      return '<div class="empty-state">' + EMPTY_IMG + '<p>Chưa có bài học nào được yêu thích</p><span class="empty-hint">Bấm nút ❤ trên bài học để lưu vào danh sách yêu thích</span></div>';
+      return '<div class="empty-state">' + EMPTY_IMG + '<p>Chưa có bài học nào được yêu thích</p><span class="empty-hint">Bấm nút ' + heartHint + ' trên bài học để lưu vào danh sách yêu thích</span></div>';
     }
     return '<div class="empty-state">' + EMPTY_IMG + '<p>Không tìm thấy bài học nào</p><span class="empty-hint">Thử từ khoá khác (tên bài, SKU, module, kênh…)</span></div>';
   }

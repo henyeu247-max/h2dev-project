@@ -141,7 +141,11 @@
               background-color var(--h2-motion-fast) var(--h2-motion-ease),
               border-color var(--h2-motion-fast) var(--h2-motion-ease);
 }
-.h2-shell-backtotop svg { width: var(--h2-icon-20); height: var(--h2-icon-20); }
+/* 2026-09-24: phu CA 2 dang icon — he moi dung <span class="h2-icon"> (khong chua svg).
+ * Thieu ve .h2-icon => span gian het co => icon de len chu/nut (loi that gap tren mobile). */
+.h2-shell-backtotop svg,
+.h2-shell-backtotop .h2-icon { width: var(--h2-icon-20); height: var(--h2-icon-20); }
+.h2-shell-backtotop .h2-icon { display: inline-block; min-width: var(--h2-icon-20); min-height: var(--h2-icon-20); }
 .h2-shell-backtotop.is-visible {
   opacity: 1;
   visibility: visible;
@@ -205,7 +209,9 @@
   box-shadow: var(--focus-ring);
 }
 .h2-shell-nav__icon { display: inline-flex; flex: 0 0 auto; }
-.h2-shell-nav__icon svg { width: var(--h2-icon-16); height: var(--h2-icon-16); }
+.h2-shell-nav__icon svg,
+.h2-shell-nav__icon .h2-icon { width: var(--h2-icon-16); height: var(--h2-icon-16); }
+.h2-shell-nav__icon .h2-icon { display: inline-block; min-width: var(--h2-icon-16); min-height: var(--h2-icon-16); }
 
 /* ==========================================================================
    5. BOTTOM NAV CHUAN — ap cho ca 3 trang mobile (learn/player hien THIEU)
@@ -248,7 +254,9 @@
   line-height: 1.2;
   cursor: pointer;
 }
-.h2-shell-bottomnav__item svg { width: var(--h2-icon-20); height: var(--h2-icon-20); }
+.h2-shell-bottomnav__item svg,
+.h2-shell-bottomnav__item .h2-icon { width: var(--h2-icon-20); height: var(--h2-icon-20); }
+.h2-shell-bottomnav__item .h2-icon { display: inline-block; min-width: var(--h2-icon-20); min-height: var(--h2-icon-20); }
 .h2-shell-bottomnav__item[aria-selected="true"] { color: var(--brand); }
 .h2-shell-bottomnav__item:focus-visible {
   outline: none;

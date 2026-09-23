@@ -128,8 +128,24 @@ function statCard(icon, label, value, sub, tabTarget, live) {
   /* khop CA 2 dang: class="h2-icon" (khong size) VA class="h2-icon h2-icon--16" (co size).
    * Dung regex de khong phu thuoc dau dong ngoac. */
   const isH2Icon = typeof icon === 'string' && /class="h2-icon(\s|")/.test(icon);
+  /* PHASE 3 (2026-09-24) — P3.6d: TEN ICON (kebab-case) => render qua H2Icons.ico().
+   *
+   * LOI THAT DA GAP (nghiem trong, hien tren CA desktop lan mobile):
+   *   P3.6 doi `icon:` tu emoji sang TEN icon ('video', 'file-text', 'tv'...).
+   *   Nhung statCard() chi nhan <svg> hoac chuoi HTML -> ten icon roi vao nhanh `else`
+   *   -> boc `<span class="stat-glyph">video</span>` -> IN CHU "video"/"file-text"/"tv"
+   *   len 4 the KPI (thay vi hien icon). Anh that: mobile 390px hien "vid eo"/140.
+   *
+   * CACH SUA: nhan dien ten icon (chu thuong + gach noi) -> goi H2Icons.ico(name, 16).
+   * Van giu nguyen nguyen tac bao mat: CHI ten khop regex moi duoc render tho;
+   * moi chuoi khac van phai esc() (khong the inject HTML qua tham so icon). */
+  const isIcoName = typeof icon === 'string' && /^[a-z][a-z0-9-]*$/.test(icon);
+  const H2I = (typeof window !== 'undefined' && window.H2Icons) || null;
   const safeLabel = esc(label);
-  const glyph = (isSvg || isH2Icon) ? icon : (icon ? `<span class="stat-glyph">${esc(icon)}</span>` : '');
+  let glyph;
+  if (isSvg || isH2Icon) glyph = icon;
+  else if (isIcoName && H2I && typeof H2I.ico === 'function') glyph = H2I.ico(icon, 16);
+  else glyph = icon ? `<span class="stat-glyph">${esc(icon)}</span>` : '';
   const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${safeLabel}" data-kpi-card="1"` : '';
   return `<div class="bento-card${tabTarget ? ' cursor-pointer hover:border-brand/40 transition-colors' : ''}"${clickAttr}>
 <div class="stat-icon">${glyph}</div>

@@ -253,7 +253,11 @@ code { font-size: 11px; color: var(--fg-2); }
   text-decoration: none;
   white-space: nowrap;
 }
-#tabs .tab-btn svg { width: 16px; height: 16px; flex: 0 0 auto; color: var(--fg-faint); }
+/* 2026-09-24: phu CA 2 dang icon — he moi dung <span class="h2-icon"> (khong chua svg).
+ * Thieu ve .h2-icon => span gian het co container => icon de len chu (loi that gap tren mobile). */
+#tabs .tab-btn svg,
+#tabs .tab-btn .h2-icon { width: 16px; height: 16px; flex: 0 0 auto; color: var(--fg-faint); }
+#tabs .tab-btn .h2-icon { display: inline-block; min-width: 16px; min-height: 16px; }
 #tabs .tab-btn:hover { color: var(--fg); background: var(--sidebar-hover-bg); }
 #tabs .tab-btn.active,
 #tabs .tab-btn[aria-selected="true"] {
@@ -261,10 +265,12 @@ code { font-size: 11px; color: var(--fg-2); }
   background: var(--sidebar-active-bg);
   font-weight: 600;
 }
-#tabs .tab-btn.active svg { color: var(--brand); }
+#tabs .tab-btn.active svg,
+#tabs .tab-btn.active .h2-icon { color: var(--brand); }
 #tabs .tab-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 .tab-more, .tab-more-btn, .tab-more-menu { display: none !important; }
-#moreMenuSheet svg {
+#moreMenuSheet svg,
+#moreMenuSheet .h2-icon {
   width: 18px !important;
   height: 18px !important;
   max-width: 18px !important;
@@ -426,7 +432,17 @@ code { font-size: 11px; color: var(--fg-2); }
 .bento-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; width: 100%; min-width: 0; }
 .bento-card { display: flex; align-items: center; gap: 12px; min-height: 112px; padding: 14px 16px; }
 .stat-icon { display: grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; color: var(--brand-ink); background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px; }
-.stat-icon svg { width: 16px; height: 16px; color: inherit; }
+/* 2026-09-24 (P3.6 dot 2) — SUA LOI VO LAYOUT tren mobile:
+ *   Rule cu CHI khai bao `.stat-icon svg` (dòng dưới). He icon moi dung
+ *   `<span class="h2-icon h2-icon--16">` KHONG chua <svg> -> rule khong ap dung
+ *   -> span bi keo gian het 36px cua .stat-icon (display:grid) -> DE LEN CHU.
+ *   Trieu chung that: mobile 390px hien "vid eo"/140, "file -text"/157.
+ *   CACH SUA: khai báo ca 2 dang (svg CU + .h2-icon MOI) cung co 16px. */
+.stat-icon svg,
+.stat-icon .h2-icon { width: 16px; height: 16px; color: inherit; }
+/* .h2-icon dung background-color:currentColor + mask => phai giu display:inline-block
+ * va ep co bang min-width/min-height (khong dung width/height vao mask-size). */
+.stat-icon .h2-icon { display: inline-block; min-width: 16px; min-height: 16px; touch-action: none; }
 .stat-body { min-width: 0; flex: 1; }
 .stat-value { color: var(--fg); font: 600 22px/1.1 var(--font-sans); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .stat-sub { margin-top: 4px; color: var(--fg-faint); font-size: 11px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }
@@ -831,11 +847,15 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .vd-bottom-nav .tab-btn:active {
     transform: scale(0.92);
   }
-  .vd-bottom-nav .tab-btn svg {
+  .vd-bottom-nav .tab-btn svg,
+  .vd-bottom-nav .tab-btn .h2-icon {
     width: 18px;
     height: 18px;
+    min-width: 18px;
+    min-height: 18px;
     stroke-width: 2.1;
     flex-shrink: 0;
+    display: inline-block;
   }
   .vd-bottom-nav .tab-btn span {
     overflow: hidden;
@@ -848,7 +868,8 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     color: var(--brand-hover);
     font-weight: 700;
   }
-  .vd-bottom-nav .tab-btn.active svg {
+  .vd-bottom-nav .tab-btn.active svg,
+  .vd-bottom-nav .tab-btn.active .h2-icon {
     color: var(--brand-hover);
     stroke: var(--brand-hover);
   }
@@ -883,7 +904,9 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     width: 100%;
   }
   .more-menu-sheet .more-item svg,
-  .more-menu-sheet svg {
+  .more-menu-sheet .more-item .h2-icon,
+  .more-menu-sheet svg,
+  .more-menu-sheet .h2-icon {
     width: 18px !important;
     height: 18px !important;
     max-width: 18px !important;
@@ -900,7 +923,8 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     background: var(--surface-2);
     color: var(--brand);
   }
-  .more-menu-sheet .more-item.active svg {
+  .more-menu-sheet .more-item.active svg,
+  .more-menu-sheet .more-item.active .h2-icon {
     color: var(--brand);
     stroke: var(--brand);
   }
@@ -940,7 +964,10 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .bento-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
   .bento-card { min-height: 96px !important; padding: 12px !important; flex-direction: column; align-items: flex-start; gap: 7px !important; }
   .bento-card .stat-icon { width: 30px !important; height: 30px !important; font-size: 15px !important; }
-  .bento-card .stat-icon svg { width: 15px; height: 15px; }
+  /* 2026-09-24: phai phu CA 2 dang icon (<svg> cu + .h2-icon moi) — xem ghi chu o rule goc. */
+  .bento-card .stat-icon svg,
+  .bento-card .stat-icon .h2-icon { width: 15px; height: 15px; }
+  .bento-card .stat-icon .h2-icon { display: inline-block; min-width: 15px; min-height: 15px; }
   .bento-card .stat-glyph { font-size: 15px !important; }
   .bento-card .stat-value { font-size: 20px !important; line-height: 1.15 !important; }
   .bento-card .stat-label { font-size: 10px !important; letter-spacing: 0.04em !important; line-height: 1.25; }

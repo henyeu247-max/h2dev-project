@@ -400,8 +400,8 @@ window.addEventListener('keydown', (e)=>{
       document.getElementById('pchannelslist').innerHTML=v.channels.map(c=>{
         const handle=String(c).replace(/^@/,'');
         return `<div class="inline-flex items-center gap-1.5 bg-surface-card border border-ink-600 p-1.5 rounded-xl text-xs">
-          <a href="https://www.youtube.com/@${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors">📺 @${esc(handle)} ↗</a>
-          <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-[11px] font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}">📋 Copy</button>
+          <a href="https://www.youtube.com/@${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}↗</a>
+          <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-[11px] font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}"><span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span> Copy</button>
         </div>`;
       }).join('');
     }
@@ -853,7 +853,7 @@ function renderMarkdownDoc(md) {
       out.push('<blockquote class="border-l-4 border-brand-500 bg-brand-500/10 px-3.5 py-2 rounded-r-xl text-gray-300 text-xs my-2">' + inlineMd(trimmed.slice(2)) + '</blockquote>');
     } else if (trimmed.startsWith('- [ ] ') || trimmed.startsWith('- [x] ')) {
       const chk = trimmed.startsWith('- [x] ');
-      out.push('<div class="flex items-center gap-2 py-0.5 text-xs ' + (chk ? 'text-emerald-400 font-medium' : 'text-gray-300') + '"><span class="w-4 h-4 rounded border ' + (chk ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 flex items-center justify-center text-[10px]' : 'border-ink-500') + '">' + (chk ? '✓' : '') + '</span>' + inlineMd(trimmed.slice(6)) + '</div>');
+      out.push('<div class="flex items-center gap-2 py-0.5 text-xs ' + (chk ? 'text-emerald-400 font-medium' : 'text-gray-300') + '"><span class="w-4 h-4 rounded border flex items-center justify-center ' + (chk ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400' : 'border-ink-500') + '">' + (chk ? '<span class="h2-icon h2-icon--14" data-h2i="check" aria-hidden="true"></span>' : '') + '</span>' + inlineMd(trimmed.slice(6)) + '</div>');
     } else if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
       out.push('<li class="text-xs text-gray-300 ml-4 list-disc my-1">' + inlineMd(trimmed.slice(2)) + '</li>');
     } else {

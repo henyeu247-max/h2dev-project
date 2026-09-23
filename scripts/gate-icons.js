@@ -44,8 +44,16 @@ const EMOJI_CLEAN = [
   'assets/app/tabs/content.js',
   'assets/app/search.js',
   'assets/app/icons.js',
-  'assets/music_player_modal.js'
+  'assets/music_player_modal.js',
+  /* 2026-09-24 — dot 2: 5 emoji cuoi cung cua Phase 3 (ui-core 1, h2dev-core 1, player-main 3) */
+  'assets/app/ui-core.js',
+  'assets/h2dev-core.js',
+  'assets/app/player-main.js'
 ].filter(f => fs.existsSync(path.join(ROOT, f)));
+
+/* 4 muc size DUY NHAT duoc phep (h2dev-icons.css dong 11 ghi ro).
+ * Bat loi thuc te da gap 2026-09-24: viet `h2-icon--12` (khong ton tai) => icon render 0x0. */
+const ALLOWED_SIZES = new Set(['14', '16', '20', '24']);
 
 /* Emoji TRANG TRI. Co y KHONG liet ke quoc ky (U+1F1E6-U+1F1FF) va khong liet ke
  * ky tu ve duong / mui ten (─ → ↗ ▶ ▼ ▲ ↺ ○) vi day la ky tu VAN BAN hop le trong cau. */
@@ -134,6 +142,24 @@ for (const rel of EMOJI_CLEAN) {
   });
 }
 if (!emojiHits) ok('0 emoji trang tri ngoai du kien trong ' + EMOJI_CLEAN.length + ' file da xong');
+
+/* ---------- [5] Size class phai nam trong 4 muc chuan ---------- */
+head('[5] Size class h2-icon--NN chi dung 14/16/20/24 (h2dev-icons.css dong 11)');
+let sizeHits = 0;
+const sizeTargets = JS_TARGETS.concat(['index.html', 'player.html', 'learn.html'])
+  .filter(f => fs.existsSync(path.join(ROOT, f)));
+for (const rel of sizeTargets) {
+  const lines = fs.readFileSync(path.join(ROOT, rel), 'utf8').split(/\r?\n/);
+  lines.forEach((ln, i) => {
+    for (const m of ln.matchAll(/h2-icon--(\d+)/g)) {
+      if (!ALLOWED_SIZES.has(m[1])) {
+        sizeHits++;
+        bad(rel + ':' + (i + 1) + ' size "' + m[1] + '" KHONG hop le (chi 14/16/20/24)  | ' + ln.trim().slice(0, 80));
+      }
+    }
+  });
+}
+if (!sizeHits) ok('0 size class sai chuan trong ' + sizeTargets.length + ' file');
 
 /* ---------- Ket luan ---------- */
 console.log('\n================ GATE ICONS: ' + (fail ? fail + ' FAIL' : 'ALL PASS') + ' ================');

@@ -111,6 +111,9 @@
 .empty-state { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 40px 20px; color: var(--mut); text-align: center; }
 .empty-state p { margin: 0; color: var(--fg); font-size: 15px; font-weight: 600; }
 .empty-hint { font-size: 13px; }
+/* 2026-09-24 (Phase 3): icon SVG inline trong cau van ban (vd nut yeu thich trong empty-hint).
+ * SVG goc dung width/height=100% => phai boc 1 span co co dinh moi hien dung. */
+.h2-inline-ico { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; margin: 0 1px; }
 
 /* ==========================================================================
    5. RESPONSIVE (<= 640px) — giu nguyen hanh vi cu cua learn.css

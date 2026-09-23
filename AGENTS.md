@@ -58,6 +58,10 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   3. Chuẩn hóa UTF-8 toàn diện: Trong các script Python trên Windows, luôn đảm bảo `sys.stdout.reconfigure(encoding="utf-8", errors="replace")` để in bảng biểu, emoji, ký tự đặc biệt không bao giờ bị lỗi `UnicodeEncodeError`.
   4. Tránh lỗi nháy trong f-string Python: Không lồng dấu nháy kép `\"` hoặc logic phức tạp bên trong dấu ngoặc nhọn `{...}` của f-string. Luôn gán biến trung gian trước.
   5. Không dùng Bash-isms trong PowerShell: Cấm dùng `&&`, `||`, `export`, `/dev/null`. Dùng `;`, `$env:VAR`, `$null`.
+  6. Khế Ước Tiến Trình Nền & Tuyệt Đối Không Polling (The Long Foreground & Auto-Background Contract - @_can1357 / oh-my-pi):
+     "Long foreground calls may auto-background by the configured threshold; the result is injected as a follow-up when the job finishes. NEVER poll a backgrounded job (`sleep` / `ps` / `pgrep` / `top` / while loops / status polling) - do other work or end your reply (yield turn) and you will be woken with its output. `timeout: 0` disables the job deadline; otherwise `timeout` sets it without extending foreground waiting. No truncation footer means the displayed output is complete."
+     CẤM TUYỆT ĐỐI các vòng lặp shell polling (`while ($true) { sleep ... }` hoặc gọi lệnh status dồn dập). Tác vụ nặng phải đưa vào background hoặc chạy 1 lần dứt khoát, sau đó nhường lượt để hệ thống tự động đánh thức (Reactive Wakeup).
+
 
 ### 3. CƠ CHẾ TỰ KHẮC PHỤC LỖI (SELF-HEALING & SCAR-LOG PROTOCOL)
 - Khái niệm: File `AGENTS.md` (hoặc `CLAUDE.md`) là một "Nhật ký vết sẹo" (Scar Log) sống của dự án.
@@ -81,7 +85,7 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   + Sử dụng công cụ tìm kiếm web (Keenable, Exa, Tavily, Google, X/Twitter, GitHub, diễn đàn kỹ thuật) để tìm kiếm giải pháp chính xác từ nguồn gốc của nhà sản xuất hoặc cộng đồng thực chiến.
   + Đọc nội dung bài viết thật sự (`fetch_content` / `scrape`), không kết luận vội vã chỉ dựa vào vài dòng snippet trích dẫn.
 
-### 6. QUY TRÌNH THỰC THI 7 BƯỚC & BÁO CÁO 8 MỤC
+### 6. QUY TRÌNH THỰC THI 7 BƯỚC, CHUẨN TASK SPEC & BIÊN NHẬN NGHIỆM THU
 - Chu Trình 7 Bước Mỗi Nhiệm Vụ:
   1. Phân luồng & Lập TODO Plan chi tiết (Pending -> In Progress -> Completed -> Blocked).
   2. Nạp ngữ cảnh Single Source of Truth (Đọc tệp tin, xem cấu hình thật).
@@ -90,11 +94,20 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   5. Can thiệp tối thiểu, chính xác, sạch sẽ (Surgical Changes).
   6. Kiểm thử nghiệm thu tất định N/N (Check-Pass 100%).
   7. Dọn rác tạm thời & Báo cáo minh bạch.
-- Khung Báo Cáo Chuẩn 8 Mục:
+
+- Chuẩn Khế Ước Giao Việc (Task Spec Standard - 4 Thành Phần):
+  Mọi nhiệm vụ lớn đều được chuẩn hóa thành 4 thành phần rõ ràng trước khi can thiệp:
+  1. `Context`: Ngữ cảnh hiện tại, files liên quan, Layer 4 Live State, ports/process đang chạy.
+  2. `Goal`: Mục tiêu kỹ thuật cụ thể, tất định, đo đếm được (Check-Pass N/N).
+  3. `Constraints`: Ranh giới thép, điều cấm tuyệt đối (Do-NOT), bí mật cần bảo vệ, giới hạn can thiệp.
+  4. `Verification Commands`: Lệnh chạy terminal kiểm chứng kết quả thực tế (exit 0, pass/fail, socket listen).
+
+- Khung Biên Nhận Nghiệm Thu (Execution Receipt Standard - 8 Mục Bắt Buộc):
+  Sau khi hoàn tất, kết quả được xuất trình theo biên nhận chuẩn:
   1. 🔍 Nguyên nhân gốc rễ (Root Cause)
-  2. 🛠️ Can thiệp kỹ thuật (Changes Made)
-  3. ✅ Bằng chứng nghiệm thu (Validation Proof & Test Results)
-  4. ❓ Lưu ý & Giới hạn (Notes & Blockers)
+  2. 🛠️ Can thiệp kỹ thuật (Changes Made & Code Diffs)
+  3. ✅ Bằng chứng nghiệm thu (Validation Proof & Machine-Checkable Test Results)
+  4. ❓ Lưu ý, Rủi ro dư lượng & Giới hạn (Residual Risks & Blockers)
   5. 🚀 Lộ trình tiếp theo (Next Steps)
   6. 💡 Đề xuất cải tiến chủ động (Proactive Ideas)
   7. 🔎 Chỉ dẫn tìm kiếm & Nguồn kỹ thuật (Search Directives)
@@ -135,3 +148,11 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
 ### [SCAR-005] Đóng Băng Credential & Chống Rò Rỉ Bí Mật (Secret Hygiene)
 - **Nguyên nhân:** Thư mục `accounts/` và file `config.json` chứa email, mật khẩu, TOTP secret, recovery codes thật và API key dịch vụ.
 - **Guardrail:** Luôn kiểm tra `.gitignore` whitelist fail-safe trước khi thực hiện bất kỳ lệnh `git add` / `git commit` nào. Khi tạo backup hoặc chia sẻ tài liệu, chỉ trích xuất tài liệu phân tích trong `_ANALYSIS/`, tuyệt đối cấm copy các file chứa credential.
+
+### [SCAR-006] Bẫy Thuế Polling (The Polling Tax) & Nguyên Tắc Đánh Thức Dựa Trên Sự Kiện (Event-Driven Reactive Wakeup)
+- **Nguyên nhân:** Viết vòng lặp chủ động hỏi dồn (`while` loop, liên tục kiểm tra status trong shell, sleep vô ích chờ tiến trình nền hoặc subagent) gây bùng nổ token, lãng phí 30-50%+ chi phí LLM và làm ô nhiễm context window, kích hoạt context compaction sớm (như phân tích từ Duy Nguyen @goon_nguyen & @_can1357).
+- **Guardrail:** CẤM TUYỆT ĐỐI các vòng lặp polling dồn dập trong shell (`while ($true) { sleep ... }` hoặc liên tục gọi `status` trong vòng lặp).
+  1. **Background Tasks:** Sau khi gửi lệnh chạy nền (WaitMsBeforeAsync), KHÔNG poll status liên tục. Nhường lượt (yield turn) hoặc tiếp tục công việc khác; chờ hệ thống tự động đánh thức (reactive wakeup) khi tiến trình kết thúc.
+  2. **Kiểm tra trạng thái:** Dùng lệnh kiểm tra đồng bộ dứt khoát 1 lần (single-shot query) hoặc chạy script tổng hợp có timeout cố định.
+  3. **Subagent Orchestration:** Trao đổi qua event/message phản ứng (reactive messaging), không truy vấn dồn dập trạng thái con khi con chưa gửi tín hiệu hoàn thành.
+

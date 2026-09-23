@@ -136,7 +136,28 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
     } else if (full.includes('data-tabs') || (full.includes('data') && full.endsWith('.json'))) {
       // Data tabs và catalog: Cho phép Cloudflare Edge cache 120s, stale-while-revalidate 600s
       headers['Cache-Control'] = 'public, max-age=120, stale-while-revalidate=600';
-    } else if (full.endsWith('.js') || full.endsWith('.css') || full.endsWith('.woff2') || full.endsWith('.svg') || full.endsWith('.png') || full.endsWith('.jpg') || full.endsWith('.webp')) {
+    } else if (full.endsWith('.js') || full.endsWith('.css')) {
+      /* H2DEV 2026-09-23 — TACH .js/.css RA KHOI NHOM ANH/FONT.
+       *
+       * VAN DE THAT (da do 3 duong di Local / nginx / Cloudflare, 2026-09-23):
+       *   .js/.css bi gop chung voi .png/.jpg/.woff2 -> nhan 'max-age=86400'.
+       *   Cloudflare tin file "tuoi 24h" nen KHONG hoi lai origin -> tra ban cu HIT.
+       *   Ket qua: sau moi lan deploy = HTML moi + JS cu  => giao dien loi kho hieu.
+       *   (nginx khong phai thu pham: goi truc tiep 127.0.0.1:8899 cung tra 86400 —
+       *    chinh file nay moi la nguoi set header cuoi cung.)
+       *
+       * CACH SUA: .js/.css -> no-cache. Cloudflare VAN luu, nhung BAT BUOC hoi lai
+       *   origin moi request; file khong doi -> ETag khop -> tra 304 (rat nhe).
+       *   => deploy xong la thay ngay, khong can purge cache, khong ton bang thong.
+       *
+       * ANH/FONT giu max-age=86400: thumbnail & font hiem doi, cache lau giup web nhanh.
+       * .jpeg/.gif/.ico duoc them vao day cho day du (da kiem ke thuc te: .jpeg co 77 file).
+       */
+      headers['Cache-Control'] = 'no-cache, must-revalidate';
+    } else if (full.endsWith('.woff2') || full.endsWith('.woff') || full.endsWith('.ttf')
+            || full.endsWith('.svg') || full.endsWith('.png')
+            || full.endsWith('.jpg') || full.endsWith('.jpeg')
+            || full.endsWith('.webp') || full.endsWith('.gif') || full.endsWith('.ico')) {
       headers['Cache-Control'] = 'public, max-age=86400, stale-while-revalidate=604800';
     } else if (mime === 'application/json') {
       headers['Cache-Control'] = 'no-cache, must-revalidate';

@@ -198,40 +198,97 @@ Toàn bộ nằm trong khối **dữ liệu lấy từ hồ sơ đối thủ**, 
 
 ## 2e. GATE TỰ ĐỘNG (chạy trước mỗi lần push)
 
+**Chạy:** `node scripts/gate-icons.js` → `ALL PASS` (exit 0) hoặc `N FAIL` (exit 1).
+
 | Kiểm tra | Cách đo | Ngưỡng PASS |
 |---|---|---|
 | Tên icon dùng trong `ico()` đều tồn tại | quét `ico('name')` toàn bộ JS ↔ `assets/h2dev-icons.css` | **100%** resolve |
 | SVG ↔ rule CSS khớp 1-1 | đếm file `.svg` ↔ số rule `.h2-icon[data-h2i=...]` | **225 = 225**, 0 lệch, 0 trùng |
 | Không file SVG 0 byte | `Get-Item *.svg \| Length -eq 0` | **0** |
+| 0 emoji trang trí trong code | quét `EMOJI_CLEAN` (8 file), **bỏ comment**, bỏ quốc kỳ | **0** (trừ 2 `data-badge` KEY có ghi lý do) |
+| **[5] Size class đúng chuẩn** | quét `h2-icon--NN` trong 16 file | **0 sai** — chỉ `14/16/20/24` |
 | 0 emoji trang trí trong DOM | Playwright walk text node, bỏ quốc kỳ | **0** ở cả 10 tab |
 | 0 lỗi console | Playwright `pageerror` + `console.error` | **0** |
+
+### Gate đã được CHỨNG MINH hoạt động (probe 2026-09-24)
+
+Gate không chỉ "chạy không lỗi" — đã **tiêm lỗi thử** để chứng minh nó thật sự bắt được:
+
+| Probe | Kết quả | Ý nghĩa |
+|---|---|---|
+| Tiêm `🎯` vào `search.js` | `FAIL \| search.js` + exit 1 | Bắt được emoji lọt |
+| Tiêm `h2-icon--12` vào `player-main.js` | `FAIL \| player-main.js:856 size "12" KHONG hop le` + exit 1 | Bắt được size sai |
+| Phục hồi cả 2 | `ALL PASS` + exit 0, file y nguyên | Không phá dữ liệu |
+
+> **Bài học:** gate phải được **probe** (tiêm lỗi → xác nhận bắt được → phục hồi) trước khi tin.
+> Gate không được probe = gate có thể đang "PASS rỗng" mà không ai biết.
 
 ---
 
 ## 4. LỘ TRÌNH THỰC HIỆN (từng file, check-pass mỗi file)
 
-| # | File | Số emoji | Ưu tiên thay |
-|---|---|---|---|
-| 1 | `player.html` | 26 | Dễ nhất — HTML tĩnh |
-| 2 | `index.html` | 3 | Rất ít |
-| 3 | `learn.html` | 3 | Rất ít |
-| 4 | `assets/learn.css` | 6 | CSS `content:` |
-| 5 | `assets/player.css` | 1 | CSS |
-| 6 | `assets/viddar.css` | 8 | CSS |
-| 7 | `assets/app/tabs/nav.js` | | JS — ✅ **XONG** (không có emoji; nhận `t.icon` đã render sẵn HTML) |
-| 8 | `assets/app/ui-core.js` | 4 | JS |
-| 9 | `assets/app/taxonomy.js` | 2 | JS |
-| 10 | `assets/app/search-core.js` | 1 | JS |
-| 11 | `assets/app/sw-register.js` | 0 | — |
-| 12 | `assets/h2dev-core.js` | 12 | JS core |
-| 13 | `assets/app/search.js` | 5 | JS — ✅ **XONG** (emoji→tên icon + render qua `H2Icons.ico`) |
-| 14 | `assets/learn.js` | 18 | JS |
-| 15 | `assets/app/player-main.js` | 26 | JS |
-| 16 | `assets/music_player_modal.js` | ~~44~~ **41** (đo lại) | ✅ **XONG 2026-09-23** — 41→0 emoji, 4 `alert()`→toast, 211 icon render, 17/17 SVG tồn tại, 0 lỗi console |
-| 17 | `assets/app/tabs/content.js` | 126 (đo lại) | ✅ **XONG 2026-09-23** — 126→0; 9 `icon:` → tên icon; `${item.icon}` → `ico(item.icon)`; thêm `icoColored()` |
-| 18 | `assets/app/main.js` | 155 (đo lại) | ✅ **XONG 2026-09-23** — 155→0; gộp 13 SVG inline `ICONS` → `window.H2Icons` (file mới `assets/app/icons.js`); 15 nhãn `textContent` bỏ emoji; `data-badge` strip khi hiển thị |
+> **TRẠNG THÁI: ✅ HOÀN TẤT 100% (2026-09-24).** Toàn bộ 17 file đã **0 emoji trang trí**.
+> Kiểm chứng cuối: `node scripts/gate-icons.js` → ALL PASS (8 file trong `EMOJI_CLEAN`) +
+> khảo sát 17 file → `TỔNG: 0 emoji trang trí | 0 ký tự quốc kỳ`.
 
-> Thứ tự: nhỏ/dễ → lớn/khó, để phát hiện lỗi sớm khi rủi ro còn thấp.
->
-> **CÒN LẠI (đợt sau):** `player.html`, `learn.html`, `index.html`, 3 file CSS, `ui-core.js`,
-> `taxonomy.js`, `search-core.js`, `h2dev-core.js`, `learn.js`, `player-main.js`.
+| # | File | Số emoji | Trạng thái |
+|---|---|---|---|
+| 1 | `player.html` | ~~26~~ **0** | ✅ XONG — đo lại: HTML đã dùng `h2-icon` sẵn (19 icon tĩnh) |
+| 2 | `index.html` | ~~3~~ **0** | ✅ XONG — đo lại: đã dùng `h2-icon` |
+| 3 | `learn.html` | ~~3~~ **0** | ✅ XONG — đo lại: đã dùng `h2-icon` |
+| 4 | `assets/learn.css` | ~~6~~ **0** | ✅ XONG — đo lại: 0 |
+| 5 | `assets/player.css` | ~~1~~ **0** | ✅ XONG — đo lại: 0 |
+| 6 | `assets/viddar.css` | ~~8~~ **0** | ✅ XONG — đo lại: 0 |
+| 7 | `assets/app/tabs/nav.js` | 0 | ✅ XONG — nhận `t.icon` đã render sẵn HTML |
+| 8 | `assets/app/ui-core.js` | ~~4~~ **1** (đo lại) | ✅ **XONG 2026-09-24** — `✓ Đã xem` → `H2Icons.ico('check',14)` |
+| 9 | `assets/app/taxonomy.js` | ~~2~~ **0** | ✅ XONG — đo lại: 0 |
+| 10 | `assets/app/search-core.js` | ~~1~~ **0** | ✅ XONG — đo lại: 0 |
+| 11 | `assets/app/sw-register.js` | 0 | ✅ — |
+| 12 | `assets/h2dev-core.js` | ~~12~~ **1** (đo lại) | ✅ **XONG 2026-09-24** — `❤` hint → `.h2-inline-ico` + `ICONS.heartRegular` |
+| 13 | `assets/app/search.js` | 5 | ✅ **XONG 2026-09-23** — emoji→tên icon + `H2Icons.ico` |
+| 14 | `assets/learn.js` | ~~18~~ **0** | ✅ XONG — đo lại: 0 (đã dùng `C.ico()`) |
+| 15 | `assets/app/player-main.js` | ~~26~~ **3** (đo lại) | ✅ **XONG 2026-09-24** — `📺`→`tv`, `📋`→`clipboard`, `✓`→`check` |
+| 16 | `assets/music_player_modal.js` | 41 (đo lại) | ✅ **XONG 2026-09-23** — 41→0, 4 `alert()`→toast |
+| 17 | `assets/app/tabs/content.js` | 126 (đo lại) | ✅ **XONG 2026-09-23** — 126→0, 9 `icon:` → tên |
+| 18 | `assets/app/main.js` | 155 (đo lại) | ✅ **XONG 2026-09-23** — 155→0, gộp 13 SVG → `window.H2Icons` |
+
+### 4.1. BÀI HỌC ĐO LƯỜNG: SỐ ƯỚC TÍNH BAN ĐẦU CAO HƠN THỰC TẾ
+
+**Phát hiện quan trọng (2026-09-24):** cột "Số emoji" gốc là **ước tính sai**.
+Khi đo lại bằng script có **strip comment** (Quy tắc 6), con số thật nhỏ hơn rất nhiều:
+
+| File | Ước tính gốc | Thực tế | Sai lệch |
+|---|---|---|---|
+| `player.html` | 26 | **0** | đã dùng `h2-icon` từ trước |
+| `index.html` / `learn.html` | 3 / 3 | **0** / **0** | đã dùng `h2-icon` |
+| `learn.css` / `player.css` / `viddar.css` | 6 / 1 / 8 | **0** | đã sạch |
+| `taxonomy.js` / `search-core.js` / `learn.js` | 2 / 1 / 18 | **0** | đã dùng `ico()` |
+| `ui-core.js` / `h2dev-core.js` / `player-main.js` | 4 / 12 / 26 | **1** / **1** / **3** | chỉ còn 5 |
+
+**Nguyên nhân sai lệch:** con số gốc đếm bằng grep thô, **tính cả emoji trong comment**
+(ví dụ `main.js:64` có `🌐` trong comment giải thích giá trị `state.marketFilter`).
+Comment được phép giữ emoji (Quy tắc 6) → **không phải việc phải sửa**.
+
+> **Nguyên tắc rút ra:** khi báo cáo "còn N emoji cần sửa", **phải nói rõ có strip comment chưa**.
+> Nếu không, con số sẽ **thổi phồng khối lượng** và dẫn tới quyết định sai (làm thừa, hoặc tưởng dự án bẩn hơn thực tế).
+> Cách đo chuẩn: `node scripts/gate-icons.js` (đã strip comment + có `ALLOWED[]` cho ngoại lệ có lý do).
+
+**5 emoji cuối cùng đã xử lý — mỗi cái một bản chất riêng (không gộp):**
+
+| File:dong | Emoji | Bản chất | Cách xử lý |
+|---|---|---|---|
+| `ui-core.js:84` | `✓` | Ký tự văn bản trong badge động | → `H2Icons.ico('check', 14)` |
+| `h2dev-core.js:287` | `❤` | Ký tự văn bản mô tả NÚT (không phải nút) | → `.h2-inline-ico` + `ICONS.heartRegular` (SVG inline, vì file này nạp TRƯỚC `icons.js`) |
+| `player-main.js:403` | `📺` | Emoji trang trí trước link kênh | → `h2-icon tv` |
+| `player-main.js:404` | `📋` | Emoji trang trí trên nút Copy | → `h2-icon clipboard` |
+| `player-main.js:856` | `✓` | Ký tự văn bản trong ô checkbox markdown | → `h2-icon check` |
+
+**Lưu ý kỹ thuật khi thay icon:**
+1. `h2dev-core.js` nạp **TRƯỚC** `assets/app/icons.js` → **không dùng được** `H2Icons`. Phải tự chứa SVG.
+2. `player.html` **KHÔNG** nạp `assets/app/icons.js` → phải dùng class CSS `h2-icon` (không cần JS).
+3. Size class **chỉ được** `14/16/20/24` (đã gặp lỗi thật: viết `h2-icon--12` → render `0x0`).
+   → Đã thêm luật `[5]` vào gate để chặn vĩnh viễn.
+4. Kiểm chứng 2 nhánh khó **không được SKIP**: phải set `localStorage` để ép trạng thái
+   (`h2dev-watched` cho badge "Đã xem"; `h2dev-fav` rỗng cho empty-state yêu thích)
+   + **mở đúng tab** (`videoCard()` chỉ render ở tab Video).
+

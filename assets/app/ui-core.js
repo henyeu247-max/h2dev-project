@@ -81,7 +81,8 @@ function watchedBadge(sku) {
   const d = Number(w.d) || 0, t = Number(w.t) || 0;
   const ratio = (d > 0 && t > 0) ? Math.min(1, t / d) : 0;
   const done = Boolean(w.watched) || ratio >= 0.95;
-  if (done) return `<span class="badge badge-green" title="Đã xem hết">✓ Đã xem</span>`;
+  const _ico = (window.H2Icons && window.H2Icons.ico) || function () { return ''; };
+  if (done) return `<span class="badge badge-green" title="Đã xem hết">${_ico('check', 14)}Đã xem</span>`;
   if (ratio > 0.02) return `<span class="badge badge-amber" title="Đang xem dở ${Math.round(ratio * 100)}% — Xem tiếp">Dở ${Math.round(ratio * 100)}%</span>`;
   return '';
 }

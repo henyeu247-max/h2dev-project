@@ -60,3 +60,6 @@ manifest_full.csv
 .venv-gpu/
 
 .cache/
+
+# Anh chup kiem chung tam (Ephemeral Cleanup)
+_proof-shots/

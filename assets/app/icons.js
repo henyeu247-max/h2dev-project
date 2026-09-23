@@ -23,7 +23,14 @@
     channel: 'tv',
     image: 'image',
     strategy: 'map',
-    grid: 'layout-grid'
+    grid: 'layout-grid',
+    /* 2026-09-24 (P3.6d) — BOSUNG 2 key BI THIEU:
+     * content.js co goi ICONS.disk (the "Dung luong dia") va ICONS.search
+     * (the "Dang hoat dong" / "Co OCR") nhung NAMES khong khai bao
+     * => undefined => the KPI MAT ICON hoan toan (da kiem chung bang DOM that).
+     * Ten icon lay dung tu assets/icons/ (da co san, khong tai moi). */
+    disk: 'hard-drive',
+    search: 'search'
   };
 
   function ico(name, size) {

@@ -356,6 +356,8 @@ learn.js       ──> H2Core (độc lập, ES5)
 | 12 | `h2dev-icons.css` phải load sau primitives | 3/3 trang đã đúng | ✅ Đã xử lý |
 | 13 | **`.row-*` + `.watched-badge` chỉ có CSS trong `learn.css`** | `renderLessonRow()` trong `h2dev-core.js` sinh 9 class `.row-*` mà CHỈ `learn.css` định nghĩa. Hiện **0 caller** ở `index.html`/`player.html` (đo được **0 phần tử** `.lesson-row`) → chưa phải lỗi. Là **bẫy tương lai**: trang nào gọi mà không nạp `learn.css` sẽ vỡ layout, KHÔNG có lỗi JS. | 🟡 TB (đã ghi cảnh báo) |
 | 14 | **`h2-icon--` token giả trong `check-ui-classes.js`** | Bộ tách class cắt ngang `${size}` sinh token `h2-icon--`, không tồn tại trong CSS → cổng `validate-project.js` đỏ vĩnh viễn (chặn push). **ĐÃ SỬA:** thêm `isDynamicSuffixToken()` — chỉ bỏ qua token kết thúc `--` KHI có họ class thật tiền tố đó trong CSS nạp. | ✅ Đã xử lý |
+| 15 | **`proxy_cache cache_one` toàn cục giữ entry JS/CSS cũ** | `/www/server/nginx/conf/proxy.conf` (include ở block `http`) bật `proxy_cache` cho MỌI vhost ⇒ entry `.js` cũ (`max-age=86400`) sống 1 ngày (`inactive=1d`) và **Cloudflare purge KHÔNG đụng tới**. Triệu chứng: HTML mới + JS cũ. **ĐÃ KHOÁ:** thêm `proxy_cache off;` vào **6/6 location** của `extension/h2dev-learn.tonymmo.com/proxy.conf`; đo lại **12/12 PASS** cả 2 nhánh `Accept-Encoding`. Tài liệu: `design-system/DEPLOY-CACHE.md`. | ✅ Đã xử lý |
+| 16 | **`browser_cache_ttl = 14400` trên Cloudflare** (zone `tonymmo.com`) | Cloudflare ép `max-age=14400` lên `.js/.css` bất chấp origin trả `no-cache` (đo 1:1 cùng ETag). **ĐÃ SỬA:** set `browser_cache_ttl = 0` (Respect Existing Headers) qua API + purge zone. | ✅ Đã xử lý |
 
 ---
 
@@ -365,3 +367,4 @@ learn.js       ──> H2Core (độc lập, ES5)
 |---|---|---|
 | 2026-09-23 | Khởi tạo từ kiểm kê thực đo (24 JSON · 67 script · 14 FE JS). Định nghĩa 5 tầng, quy tắc single-writer, lộ trình naming 3 giai đoạn. | Em (Kiến trúc sư hệ thống) |
 | 2026-09-23 | **N11 đóng:** nạp `h2dev-core.js` ở cả 3 trang; bỏ bản sao helper; `fmtBytes` chốt **decimal** làm chuẩn (đo 140/140 giá trị khớp, 0 lệch). Thêm nợ #13 (bẫy `.row-*`/`learn.css`) + #14 (token giả `h2-icon--` đã sửa). | Em (Kiến trúc sư hệ thống) |
+| 2026-09-23 | **Đóng nợ #15 + #16 (sự cố cache 3 tầng):** truy vết bằng 6 giả thuyết test cô lập (bác bỏ 5). Gốc thật = `proxy_cache` toàn cục giữ entry cũ + Cloudflare `browser_cache_ttl=14400`. Đã khoá `proxy_cache off` 6/6 location, set `browser_cache_ttl=0`, purge zone. Đo lại **12/12 PASS** (cả nhánh có/không `Accept-Encoding`), ETag→304. Viết `design-system/DEPLOY-CACHE.md` làm SSoT cache. | Em (Kiến trúc sư hệ thống) |

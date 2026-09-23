@@ -6,6 +6,10 @@
 >
 > ⚠️ **CẬP NHẬT 2026-09-23 (sau P3.5):** anh đã **đổi quyết định** cho hệ đèn báo YPP — xem Mục 2b.
 > Số liệu ở bảng dưới là **đo ban đầu**; số thực tế từng file có thể lệch (vd `music_player_modal.js` đo lại = **41**, không phải 44).
+>
+> ✅ **HOÀN TẤT 2026-09-23 (P3.6):** đã quét sạch `content.js` (126), `main.js` (155), `search.js`.
+> Tổng còn lại **0 emoji trang trí** trong DOM toàn bộ 10 tab (Playwright đo: 0/10 tab có emoji).
+> Chi tiết quyết định riêng của P3.6 → xem **Mục 2d** (bên dưới Mục 2c).
 
 ---
 
@@ -140,25 +144,67 @@
 |---|---|---|---|
 | `swords` | `lucide-static@1.47.0` | ⚔️ Quân sự (anh yêu cầu tải) | unpkg CDN |
 | `clipboard-copy` | `lucide-static@1.47.0` | 📋 nút Copy Path | unpkg CDN |
+| `files` | `lucide@1.47.0` (GitHub raw) | 📑 tab "Tất cả" trong Raw Deep modal | GitHub raw |
 
-⚠️ **Bản quyền:** cả 2 file giữ nguyên header `<!-- @license lucide-static v1.47.0 - ISC -->`.
-**KHÔNG xoá header này** khi thêm icon mới. Version phải khớp version của 222 icon cũ (`1.47.0`).
+⚠️ **Bản quyền:** cả 3 file giữ nguyên `stroke="currentColor"` (và header license nếu có).
+**KHÔNG xoá header license** khi thêm icon mới. Version phải khớp version của các icon cũ (`1.47.0`).
+Tổng hiện tại: **225 SVG = 225 rule CSS** (đã đo parity 225/225, xem Mục 2e).
 
 ---
 
-Các icon Lucide cần mà bộ 213 hiện **chưa có** — cần tải thêm để không phải dùng icon lệch nghĩa:
+## 2d. QUYẾT ĐỊNH RIÊNG CỦA P3.6 (đo thật 2026-09-23)
 
-| Icon cần | Dùng cho | Ưu tiên |
+### Bảng "icon cần tải" ở tài liệu cũ là **SAI** — đã kiểm chứng lại
+
+Tài liệu này từng ghi `lightbulb`, `camera`, `graduation-cap`, `headphones`, `scroll-text`,
+`door-open`, `corner-down-right` là **"chưa có, cần tải"**. **ĐO LẠI THỰC TẾ: TẤT CẢ ĐỀU ĐÃ CÓ.**
+Không tải thêm icon nào cho P3.6 (chỉ `files` là thiếu thật, phát hiện qua gate tự động).
+
+### 4 nhóm quyết định khi thay emoji ở `content.js` + `main.js`
+
+| Nhóm | Xử lý | Lý do |
 |---|---|---|
-| `lightbulb` | 💡 Mấu chốt bài giảng | **CAO** (dùng 3 lần) |
-| `camera` | 📸 Ngữ cảnh thời gian | **CAO** (dùng 4 lần) |
-| `graduation-cap` | 🎓 Bài học | **CAO** (dùng 2 lần + search) |
-| `headphones` | 🎧 Music Studio | **CAO** (dùng 4 lần) |
-| `scroll-text` | 📜 Sub & kịch bản | **CAO** (dùng 5 lần) |
-| `door-open` | 🚪 3 cửa YPP | TRUNG |
-| `corner-down-right` | ↳ Ngách trong nhóm | THẤP (có thể bỏ) |
-| `heart` ✅ đã có | | — |
-| `circle` ✅ đã có | | — |
+| `→` `↗` `▶` `▼` `▲` `↺` `○` nằm **giữa câu chữ** ("Xem bài ↗", "▶ Tua đến 00:30") | **GIỮ NGUYÊN** | Thay icon sẽ làm câu/ nhãn gãy. Đúng Quy tắc 1. |
+| `→` `↗` `▶` là **nút độc lập** (nút tròn, icon-only) | **THAY** `arrow-right`/`arrow-up-right`/`play` | Không có chữ đi kèm → phải là icon. |
+| **Quốc kỳ** `🇺🇸🇯🇵🇷🇺🇪🇸🇻🇳` | **GIỮ NGUYÊN** | Quy tắc 5 — là nhãn ngôn ngữ, dữ liệu thật. |
+| `─` trong `optgroup label="── Nhóm ngách lớn ──"` | **GIỮ NGUYÊN** | Ký tự vẽ đường, không phải emoji. |
+
+### Emoji nằm trong CHUỖI COPY (dán sang Notion/Docs/AI) → BỎ
+`kitText` (Visual Directive Kit) và `fullKit` (Bao bì CTR) mở đầu bằng `🎨` / `🎯`.
+→ Đã **bỏ emoji**, giữ tiêu đề chữ. Lý do: đây là văn bản đích để dán ra ngoài, không phải UI.
+
+### Emoji trong `data-badge` (vừa là KEY vừa HIỂN THỊ) → Quy tắc 10
+`data-badge="🎬 Demo Tuyến Nội Dung"` / `data-badge="🔥 Đang xem Transcript"`:
+- **`data-*` giữ nguyên emoji** (là key, đọc bằng `getAttribute`).
+- **Chỉ `stripDecorEmoji()` khi in ra chữ**: tại `openQuickVideoModal()` → `const badge = stripDecorEmoji(badgeLabel || 'Tuyến Chuẩn')`.
+
+### Emoji trong DỮ LIỆU JSON (`vitalityAudit.healthBadge` = `"🟢 Đang hoạt động"`) → strip khi hiển thị
+Đây **không phải** emoji trong code mà là **giá trị dữ liệu**. Đã bọc `stripDecorEmoji()` tại 3 chỗ render
+(`content.js` healthBadge, `main.js` healthBadge + monetizationBadge). **Không sửa file JSON** (giữ nguyên gốc).
+
+### 6 emoji trong Raw Deep modal được **GIỮ CÓ CHỦ Ý** (đã phân loại từng chỗ)
+Toàn bộ nằm trong khối **dữ liệu lấy từ hồ sơ đối thủ**, không phải UI chrome:
+
+| Chỗ | Nội dung | Kết luận |
+|---|---|---|
+| `<pre>` master script prompt | Prompt nguồn của người dùng | Dữ liệu — giữ |
+| `<span>` ví dụ bao bì | `"MOO! 🐄 / SING ALONG! 🎵"` (chữ trên thumbnail thật của đối thủ) | Dữ liệu — giữ |
+| `<li>` tiêu đề mẫu | `"Old MacDonald... 🐄🐕 3D Cartoon"` (tiêu đề video thật) | Dữ liệu — giữ |
+| 3× tiêu đề Demo/Top Video | Tiêu đề YouTube thật của đối thủ | Dữ liệu — giữ |
+
+> Sửa/xoá các emoji này = **bóp méo dữ liệu đối thủ** → phá mục đích bóc tách. Cấm strip.
+
+---
+
+## 2e. GATE TỰ ĐỘNG (chạy trước mỗi lần push)
+
+| Kiểm tra | Cách đo | Ngưỡng PASS |
+|---|---|---|
+| Tên icon dùng trong `ico()` đều tồn tại | quét `ico('name')` toàn bộ JS ↔ `assets/h2dev-icons.css` | **100%** resolve |
+| SVG ↔ rule CSS khớp 1-1 | đếm file `.svg` ↔ số rule `.h2-icon[data-h2i=...]` | **225 = 225**, 0 lệch, 0 trùng |
+| Không file SVG 0 byte | `Get-Item *.svg \| Length -eq 0` | **0** |
+| 0 emoji trang trí trong DOM | Playwright walk text node, bỏ quốc kỳ | **0** ở cả 10 tab |
+| 0 lỗi console | Playwright `pageerror` + `console.error` | **0** |
 
 ---
 
@@ -172,17 +218,20 @@ Các icon Lucide cần mà bộ 213 hiện **chưa có** — cần tải thêm �
 | 4 | `assets/learn.css` | 6 | CSS `content:` |
 | 5 | `assets/player.css` | 1 | CSS |
 | 6 | `assets/viddar.css` | 8 | CSS |
-| 7 | `assets/app/tabs/nav.js` | ? | JS |
+| 7 | `assets/app/tabs/nav.js` | | JS — ✅ **XONG** (không có emoji; nhận `t.icon` đã render sẵn HTML) |
 | 8 | `assets/app/ui-core.js` | 4 | JS |
 | 9 | `assets/app/taxonomy.js` | 2 | JS |
 | 10 | `assets/app/search-core.js` | 1 | JS |
 | 11 | `assets/app/sw-register.js` | 0 | — |
 | 12 | `assets/h2dev-core.js` | 12 | JS core |
-| 13 | `assets/app/search.js` | 5 | JS |
+| 13 | `assets/app/search.js` | 5 | JS — ✅ **XONG** (emoji→tên icon + render qua `H2Icons.ico`) |
 | 14 | `assets/learn.js` | 18 | JS |
 | 15 | `assets/app/player-main.js` | 26 | JS |
 | 16 | `assets/music_player_modal.js` | ~~44~~ **41** (đo lại) | ✅ **XONG 2026-09-23** — 41→0 emoji, 4 `alert()`→toast, 211 icon render, 17/17 SVG tồn tại, 0 lỗi console |
-| 17 | `assets/app/tabs/content.js` | 133 | **LỚN NHẤT** |
-| 18 | `assets/app/main.js` | 179 | **LỚN NHẤT** |
+| 17 | `assets/app/tabs/content.js` | 126 (đo lại) | ✅ **XONG 2026-09-23** — 126→0; 9 `icon:` → tên icon; `${item.icon}` → `ico(item.icon)`; thêm `icoColored()` |
+| 18 | `assets/app/main.js` | 155 (đo lại) | ✅ **XONG 2026-09-23** — 155→0; gộp 13 SVG inline `ICONS` → `window.H2Icons` (file mới `assets/app/icons.js`); 15 nhãn `textContent` bỏ emoji; `data-badge` strip khi hiển thị |
 
 > Thứ tự: nhỏ/dễ → lớn/khó, để phát hiện lỗi sớm khi rủi ro còn thấp.
+>
+> **CÒN LẠI (đợt sau):** `player.html`, `learn.html`, `index.html`, 3 file CSS, `ui-core.js`,
+> `taxonomy.js`, `search-core.js`, `h2dev-core.js`, `learn.js`, `player-main.js`.

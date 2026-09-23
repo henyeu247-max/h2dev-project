@@ -24,6 +24,10 @@
     /* PHASE 3 (2026-09-23): he icon CSS mask — xem design-system/ICON-MAPPING.md */
     const ico = deps.ico;
     const stripDecorEmoji = deps.stripDecorEmoji;
+    /* Icon co MAU (giu ngu nghia den bao YPP): .h2-icon dung background-color:currentColor
+     * => doi mau bang `color` cua span boc ngoai. KHONG them CSS moi. */
+    const icoColored = (name, color, size) =>
+      '<span style="color:' + color + ';display:inline-flex;align-items:center;" aria-hidden="true">' + ico(name, size || 16) + '</span>';
     const nicheKeyFor = deps.nicheKeyFor;
     const xanhBadge = deps.xanhBadge;
     const statCard = deps.statCard;
@@ -243,7 +247,7 @@ function buildVideoSearchSuggestions(query) {
         seenKeys.add(vKey);
         suggestions.push({
           type: 'lesson',
-          icon: '🎓',
+          icon: 'graduation-cap',
           badge: sku,
           badgeColor: 'bg-brand-950/60 text-brand-300 border-brand-800/60',
           title: title,
@@ -269,7 +273,7 @@ function buildVideoSearchSuggestions(query) {
           const sec = ts.seconds || 0;
           suggestions.push({
             type: 'timestamp',
-            icon: '⏱️',
+            icon: 'timer',
             badge: tsTime,
             badgeColor: 'bg-sky-950/60 text-sky-300 border-sky-800/60',
             title: `${tsTime} — ${tsTitle}`,
@@ -293,7 +297,7 @@ function buildVideoSearchSuggestions(query) {
           seenKeys.add(tkKey);
           suggestions.push({
             type: 'takeaway',
-            icon: '📌',
+            icon: 'pin',
             badge: 'Mấu Chốt',
             badgeColor: 'bg-amber-950/60 text-amber-300 border-amber-800/60',
             title: tk,
@@ -317,7 +321,7 @@ function buildVideoSearchSuggestions(query) {
           seenKeys.add(afKey);
           suggestions.push({
             type: 'avoid',
-            icon: '⚠️',
+            icon: 'alert-triangle',
             badge: 'Cảnh Báo YPP',
             badgeColor: 'bg-red-950/60 text-red-300 border-red-800/60',
             title: af,
@@ -341,7 +345,7 @@ function buildVideoSearchSuggestions(query) {
           seenKeys.add(chKey);
           suggestions.push({
             type: 'channel',
-            icon: '📺',
+            icon: 'tv',
             badge: 'Kênh Mẫu',
             badgeColor: 'bg-purple-950/60 text-purple-300 border-purple-800/60',
             title: ch,
@@ -393,13 +397,13 @@ window.showVideoSearchSuggestions = function(inputVal, _premerged) {
 
   box.innerHTML = `
     <div class="px-3.5 py-2 bg-[#060910] text-[10.5px] font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
-      <span class="flex items-center gap-1.5"><span class="text-brand-400">⚡</span> Gợi ý bài học, mốc tua & kỹ thuật (${items.length})</span>
+      <span class="flex items-center gap-1.5"><span class="text-brand-400">${ico('zap', 14)}</span> Gợi ý bài học, mốc tua & kỹ thuật (${items.length})</span>
       <span class="text-gray-500 font-normal">Nhấp để lọc hoặc tua ngay</span>
     </div>
     ${items.map((item, idx) => `
       <div class="js-v-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-ink-deep" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-sku="${esc(item.sku || '')}" data-url="${esc(item.directUrl || '')}">
         <div class="flex items-center gap-2.5 min-w-0">
-          <span class="text-base shrink-0">${item.icon}</span>
+          <span class="text-base shrink-0">${ico(item.icon, 16)}</span>
           <div class="min-w-0">
             <div class="text-xs font-bold text-white truncate group-hover:text-brand-300 transition-colors">${highlightQuery(item.title, q)}</div>
             <div class="text-[11px] text-gray-400 truncate">${esc(item.sub)}</div>
@@ -515,7 +519,7 @@ async function renderVideo() {
   <label class="sr-only" for="fq">Tìm video</label>
   <div class="relative w-full sm:flex-1 min-w-0" id="video-search-wrap">
     <input id="fq" aria-label="Tìm video bài học" value="${esc(state.q)}" autocomplete="off" placeholder="Tìm tên video, SKU, kỹ thuật (B-roll bàn tay, AI, Thầy Pháp Hòa, xây kênh...)" class="search-input-premium w-full min-w-0 pr-9">
-    ${state.q ? `<button type="button" id="btn-clear-video-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition z-10" title="Xóa tìm kiếm">✕</button>` : ''}
+    ${state.q ? `<button type="button" id="btn-clear-video-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition z-10" title="Xóa tìm kiếm">${ico('x', 14)}</button>` : ''}
     <div id="video-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-[#334155] rounded-2xl shadow-2xl z-50 overflow-hidden max-h-[420px] overflow-y-auto divide-y divide-[#1e293b]/80 min-w-full" style="background-color:#0b0f19 !important; background:rgba(11,15,25,0.98) !important; backdrop-filter:blur(28px) saturate(180%) !important; -webkit-backdrop-filter:blur(28px) saturate(180%) !important; z-index:9999 !important; box-shadow:0 25px 60px -10px rgba(0,0,0,0.98), 0 0 0 1px rgba(255,255,255,0.1) !important;"></div>
   </div>
   <button type="button" id="freset" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
@@ -560,8 +564,8 @@ ${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="fi
   </div>
   ${(state.nicheFilter || state.skuFilter) ? `
   <div class="flex items-center gap-2 mb-4 bg-brand-500/10 border border-brand-500/20 px-3.5 py-2 rounded-xl text-xs text-brand-300">
-<span>🎯 Đang lọc theo ngách: <strong class="text-white">${esc(state.nicheFilter || 'SKU')}</strong> (${list.length} video)</span>
-<button type="button" data-action="video-filter-reset" class="ml-auto text-brand-400 hover:text-white font-semibold underline">✕ Xóa bộ lọc</button>
+<span class="inline-flex items-center gap-1.5">${ico('target', 14)} Đang lọc theo ngách: <strong class="text-white">${esc(state.nicheFilter || 'SKU')}</strong> (${list.length} video)</span>
+<button type="button" data-action="video-filter-reset" class="ml-auto inline-flex items-center gap-1 text-brand-400 hover:text-white font-semibold underline">${ico('x', 14)} Xóa bộ lọc</button>
   </div>` : ''}
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">${list.map(videoCard).join('') || `<div class="card p-12 text-gray-400 col-span-full text-center py-10"><p class="mb-3">Không tìm thấy video phù hợp với bộ lọc hiện tại.</p><button type="button" id="freset-empty" class="bg-surface-2 hover:bg-surface border border-border px-4 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Xóa bộ lọc</button></div>`}</div>`;
 }
@@ -610,11 +614,11 @@ async function renderNgachXanh() {
       <span class="text-[10px] text-gray-500 font-mono truncate">${esc(v.sku)}</span>
       ${v.published_at ? `<span class="text-[10px] text-gray-400 shrink-0">${esc(v.published_at)}</span>` : ''}
       <span class="text-[10px] text-gray-400">${fmtBytes(v.size)}</span>
-      ${docs.length ? '<span class="text-[10px] text-brand-400 shrink-0"><span aria-hidden="true">📄</span> ' + docs.length + '</span>' : ''}
-      ${channels.length ? '<span class="text-[10px] text-sky-400 shrink-0"><span aria-hidden="true">📺</span> ' + channels.length + '</span>' : ''}
+      ${docs.length ? '<span class="text-[10px] text-brand-400 shrink-0 inline-flex items-center gap-1">' + ico('file-text', 14) + ' ' + docs.length + '</span>' : ''}
+      ${channels.length ? '<span class="text-[10px] text-sky-400 shrink-0 inline-flex items-center gap-1">' + ico('tv', 14) + ' ' + channels.length + '</span>' : ''}
     </div>
   </div>
-  <span class="shrink-0 w-7 h-7 rounded-xl bg-brand-600 group-hover:bg-brand-500 text-white flex items-center justify-center text-xs transition-colors">→</span>
+  <span class="shrink-0 w-7 h-7 rounded-xl bg-brand-600 group-hover:bg-brand-500 text-white flex items-center justify-center text-xs transition-colors">${ico('arrow-right', 14)}</span>
 </a>`;
   }
   function nxRpmShort(field) {
@@ -782,26 +786,26 @@ async function renderNgachXanh() {
   <details class="card p-3 sm:p-4 mb-5 border-amber-900/30 bg-amber-950/10 group">
 <summary class="flex items-center justify-between cursor-pointer font-semibold text-xs text-amber-300 select-none">
   <div class="flex items-center gap-2">
-    <span aria-hidden="true">🛡️</span>
+    <span aria-hidden="true">${ico('shield', 14)}</span>
     <span>4 Cửa ải chính sách kiếm tiền YouTube 2026 (Bấm để xem chi tiết)</span>
   </div>
-  <span class="text-gray-400 group-open:rotate-180 transition-transform text-xs font-mono">▼</span>
+  <span class="text-gray-400 group-open:rotate-180 transition-transform text-xs font-mono">${ico('chevron-down', 14)}</span>
 </summary>
 <div class="policy-grid mt-3 pt-3 border-t border-amber-900/30">
   <div class="policy-card">
-    <div class="font-bold text-amber-300 mb-1 text-xs">🚪 Cửa 1: Inauthentic / Spam</div>
+    <div class="font-bold text-amber-300 mb-1 text-xs inline-flex items-center gap-1.5">${ico('door-open', 14)} Cửa 1: Inauthentic / Spam</div>
     <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm dùng 1 template nhân vật / quote lặp lại hàng loạt. Mỗi video phải có kịch bản và case-study mới.</p>
   </div>
   <div class="policy-card">
-    <div class="font-bold text-rose-300 mb-1 text-xs">🚪 Cửa 2: Distress / Harmful</div>
+    <div class="font-bold text-rose-300 mb-1 text-xs inline-flex items-center gap-1.5">${ico('door-open', 14)} Cửa 2: Distress / Harmful</div>
     <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm dàn dựng cứu hộ động vật, trẻ em đau khổ, bạo lực hay thumbnail gây sốc lừa dối người xem.</p>
   </div>
   <div class="policy-card">
-    <div class="font-bold text-sky-300 mb-1 text-xs">🚪 Cửa 3: Fake AI Persona</div>
+    <div class="font-bold text-sky-300 mb-1 text-xs inline-flex items-center gap-1.5">${ico('door-open', 14)} Cửa 3: Fake AI Persona</div>
     <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm AI giả dạng Bác sĩ, Dược sĩ, Luật sư để chẩn đoán bệnh hoặc tư vấn tài chính / cam kết làm giàu.</p>
   </div>
   <div class="policy-card">
-    <div class="font-bold text-emerald-300 mb-1 text-xs">🚪 Cửa 4: Reused Content</div>
+    <div class="font-bold text-emerald-300 mb-1 text-xs inline-flex items-center gap-1.5">${ico('door-open', 14)} Cửa 4: Reused Content</div>
     <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm reup hoạt hình/phim ảnh thô thiển. Phải có lời bình sâu sắc và biến đổi thực chất (Transformative).</p>
   </div>
 </div>
@@ -1016,7 +1020,7 @@ async function renderKichBan() {
   ])}
   <div class="mb-5 p-4 rounded-2xl bg-gradient-to-r from-purple-950/60 via-indigo-950/40 to-ink-900 border border-purple-500/40 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
 <div class="flex items-center gap-3">
-  <span class="text-3xl p-2 rounded-xl bg-purple-500/20 border border-purple-500/30">🎧</span>
+  <span class="text-3xl p-2 rounded-xl bg-purple-500/20 border border-purple-500/30 inline-flex items-center justify-center">${ico('headphones', 24)}</span>
   <div>
     <div class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
       <span>Kho Nhạc Nền ${musicStats.total} Tracks (Đã Thẩm Định Gemini Multimodal & FFprobe)</span>
@@ -1026,7 +1030,7 @@ async function renderKichBan() {
   </div>
 </div>
 <button type="button" class="shrink-0 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition shadow-md flex items-center gap-1.5 js-open-music-studio">
-  <span>▶ Mở Trạm Nhạc Nền</span>
+  <span class="inline-flex items-center gap-1.5">${ico('headphones', 14)} Mở Trạm Nhạc Nền</span>
 </button>
   </div>
   <div class="card p-4 sm:p-5 mb-5">
@@ -1052,7 +1056,7 @@ async function renderKichBan() {
       const selOut = state.promptNiche && !visible.some(([id]) => id === state.promptNiche)
         ? `<button type="button" data-prompt-niche="${esc(state.promptNiche)}" class="filter-btn active" title="Đang lọc ngách này">${esc(state.promptNiche)} · ${(nicheChips.find(([id]) => id === state.promptNiche) || [0,0,0])[2]}</button>` : '';
       return selOut + visible.map(([id, label, n]) => `<button type="button" data-prompt-niche="${esc(id)}" class="filter-btn ${state.promptNiche === id ? 'active' : ''}" title="${esc(label)}">${esc(label)} · ${n}</button>`).join('')
-        + (hidden > 0 ? `<button type="button" data-prompt-niche-toggle class="filter-btn" style="border-style:dashed; color:var(--fg-muted);" title="${state.promptNicheExpanded ? 'Thu gọn' : 'Hiện ' + hidden + ' ngách còn lại'}">${state.promptNicheExpanded ? '▲ Thu gọn' : '▼ Xem thêm ' + hidden + ' ngách'}</button>` : '');
+        + (hidden > 0 ? `<button type="button" data-prompt-niche-toggle class="filter-btn" style="border-style:dashed; color:var(--fg-muted);" title="${state.promptNicheExpanded ? 'Thu gọn' : 'Hiện ' + hidden + ' ngách còn lại'}">${state.promptNicheExpanded ? ico('chevron-up', 14) + ' Thu gọn' : ico('chevron-down', 14) + ' Xem thêm ' + hidden + ' ngách'}</button>` : '');
     })()}
   </div>
 </div>
@@ -1083,16 +1087,16 @@ ${grouped.map((g, index) => {
           ${!k.videoTitle && k.source === 'noi-bo' ? `<div class="mt-1 text-[11px] text-lime-400/80">Đồng bộ từ ngoài → H2DEV</div>` : ''}
           ${k.videoNiche && k.videoNiche !== k.contentNiche ? `<div class="mt-1 text-[10px] text-amber-400/80">Video mẹ thuộc: ${esc(k.videoNiche)}</div>` : ''}
           <div class="mt-auto pt-3 flex flex-wrap gap-2">
-            ${k.sku === 'NOI-BO-MUSIC-01' || (k.file && k.file.includes('CATALOG-NHAC-NEN')) ? `<button type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-[11px] font-bold shadow-sm transition js-open-music-studio"><span>🎧 Mở Trạm Nhạc Nền${musicStats.total ? ' (' + musicStats.total + ' Tracks)' : ''}</span></button>` : ''}
+            ${k.sku === 'NOI-BO-MUSIC-01' || (k.file && k.file.includes('CATALOG-NHAC-NEN')) ? `<button type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-[11px] font-bold shadow-sm transition js-open-music-studio"><span class="inline-flex items-center gap-1.5">${ico('headphones', 14)} Mở Trạm Nhạc Nền${musicStats.total ? ' (' + musicStats.total + ' Tracks)' : ''}</span></button>` : ''}
             ${k.link ? `<a href="${esc(k.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-[11px] font-bold">↗ ${esc(k.host || 'Mở nguồn')}</a>` : ''}
-            ${k.file ? `<a href="${esc(k.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">📄 File local</a>` : ''}
-            ${k.fileLocal ? `<a href="${esc(k.fileLocal)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">📝 MD gốc</a>` : ''}
-            ${k.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(k.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">▶ Video gốc</a>` : ''}
+            ${k.file ? `<a href="${esc(k.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">${ico('file-text', 14)} File local</a>` : ''}
+            ${k.fileLocal ? `<a href="${esc(k.fileLocal)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">${ico('file-edit', 14)} MD gốc</a>` : ''}
+            ${k.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(k.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">${ico('play', 14)} Video gốc</a>` : ''}
           </div>
         </article>`).join('')}
     </div>
   </section>`;
-  }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2">🔍</div>Không tìm thấy prompt / tài nguyên</div>'}
+  }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2">' + ico('search', 24) + '</div>Không tìm thấy prompt / tài nguyên</div>'}
   </div>`;
 }
 
@@ -1225,13 +1229,13 @@ ${grouped.map(g => {
           ${n.videoNiche && n.videoNiche !== n.contentNiche ? `<div class="mt-1 text-[10px] text-amber-400/80">Video mẹ thuộc: ${esc(n.videoNiche)}</div>` : ''}
           <div class="mt-auto pt-3 flex flex-wrap gap-2">
             ${n.link ? `<a href="${esc(n.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-[11px] font-bold">↗ Mở nguồn</a>` : ''}
-            ${n.file ? `<a href="${esc(n.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">📄 File local</a>` : ''}
-            ${n.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(n.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">▶ Video gốc</a>` : ''}
+            ${n.file ? `<a href="${esc(n.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">${ico('file-text', 14)} File local</a>` : ''}
+            ${n.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(n.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">${ico('play', 14)} Video gốc</a>` : ''}
           </div>
         </article>`).join('')}
     </div>
   </section>`;
-  }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2">🔍</div>Không tìm thấy nguồn reup</div>'}
+  }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2">' + ico('search', 24) + '</div>Không tìm thấy nguồn reup</div>'}
   </div>`;
 }
 
@@ -1260,7 +1264,7 @@ function buildRawSearchSuggestions(query) {
         seenKeys.add(chKey);
         suggestions.push({
           type: 'channel',
-          icon: '📺',
+          icon: 'tv',
           badge: rid,
           badgeColor: 'bg-red-950/60 text-red-300 border-red-800/60',
           title: chTitle,
@@ -1279,7 +1283,7 @@ function buildRawSearchSuggestions(query) {
         seenKeys.add(vidKey);
         suggestions.push({
           type: 'video',
-          icon: '🎬',
+          icon: 'clapperboard',
           badge: 'Demo Tuyến',
           badgeColor: 'bg-blue-950/60 text-blue-300 border-blue-800/60',
           title: demoVid.title,
@@ -1300,7 +1304,7 @@ function buildRawSearchSuggestions(query) {
           seenKeys.add(vidKey);
           suggestions.push({
             type: 'video',
-            icon: '🎬',
+            icon: 'clapperboard',
             badge: row.viewsText || 'Video Raw',
             badgeColor: 'bg-emerald-950/60 text-emerald-300 border-emerald-800/60',
             title: row.title,
@@ -1320,7 +1324,7 @@ function buildRawSearchSuggestions(query) {
         seenKeys.add(nKey);
         suggestions.push({
           type: 'niche',
-          icon: '🏷️',
+          icon: 'tag',
           badge: 'Ngách',
           badgeColor: 'bg-purple-950/60 text-purple-300 border-purple-800/60',
           title: niche,
@@ -1367,13 +1371,13 @@ window.showRawSearchSuggestions = function(inputVal, _premerged) {
 
   box.innerHTML = `
     <div class="px-3.5 py-2 bg-[#060910] text-[10.5px] font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
-      <span class="flex items-center gap-1.5"><span class="text-brand-400">⚡</span> Gợi ý khớp kênh & video raw (${items.length})</span>
+      <span class="flex items-center gap-1.5"><span class="text-brand-400">${ico('zap', 14)}</span> Gợi ý khớp kênh & video raw (${items.length})</span>
       <span class="text-gray-500 font-normal">Nhấp để chọn hoặc xem hồ sơ</span>
     </div>
     ${items.map((item, idx) => `
       <div class="js-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-ink-deep" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-raw-id="${esc(item.rawId || '')}" data-type="${esc(item.type)}">
         <div class="flex items-center gap-2.5 min-w-0">
-          <span class="text-base shrink-0">${item.icon}</span>
+          <span class="text-base shrink-0">${ico(item.icon, 16)}</span>
           <div class="min-w-0">
             <div class="text-xs font-bold text-white truncate group-hover:text-brand-300 transition-colors">${highlightQuery(item.title, q)}</div>
             <div class="text-[11px] text-gray-400 truncate">${esc(item.sub)}</div>
@@ -1482,7 +1486,7 @@ async function renderRawKenh() {
   ])}
   <div class="card p-4 sm:p-5 mb-5 border-brand-500/30 bg-brand-950/20" role="note">
 <div class="flex items-start gap-3">
-  <span class="text-lg shrink-0">📸</span>
+  <span class="text-lg shrink-0 inline-flex items-center">${ico('camera', 20)}</span>
   <div class="min-w-0">
     <h2 class="text-sm font-bold text-white">Kho Ảnh Raw & Dữ Liệu Bóc Tách ${records.length} Kênh Mẫu Thực Chiến</h2>
     <p class="text-xs text-gray-300 mt-1 leading-relaxed">Hiển thị trực quan 100% ảnh chụp màn hình kênh đối thủ thực tế kèm số liệu bóc tách Vision AI, OCR và kiểm định sức sống YPP. Bấm vào ảnh để xem kích thước đầy đủ.</p>
@@ -1494,7 +1498,7 @@ async function renderRawKenh() {
   <label class="sr-only" for="fq">Tìm ảnh raw</label>
   <div class="relative w-full sm:flex-1 min-w-0" id="raw-search-wrap">
     <input id="fq" value="${esc(state.rawQ)}" autocomplete="off" placeholder="Tìm theo tên kênh, handle, ngách, video bão view, tên file..." class="search-input-premium w-full min-w-0 pr-9" aria-label="Tìm ảnh raw kênh mẫu">
-    ${state.rawQ ? `<button type="button" id="btn-clear-raw-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition z-10" title="Xóa tìm kiếm">✕</button>` : ''}
+    ${state.rawQ ? `<button type="button" id="btn-clear-raw-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition z-10" title="Xóa tìm kiếm">${ico('x', 14)}</button>` : ''}
     <div id="raw-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-[#334155] rounded-2xl shadow-2xl z-50 overflow-hidden max-h-[380px] overflow-y-auto divide-y divide-[#1e293b]/80" style="background-color:#0b0f19 !important; background:rgba(11,15,25,0.98) !important; backdrop-filter:blur(28px) saturate(180%) !important; -webkit-backdrop-filter:blur(28px) saturate(180%) !important; z-index:9999 !important; box-shadow:0 25px 60px -10px rgba(0,0,0,0.98), 0 0 0 1px rgba(255,255,255,0.1) !important;"></div>
   </div>
   <button type="button" id="freset-raw" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
@@ -1511,7 +1515,7 @@ async function renderRawKenh() {
     return `
   <div class="mt-3 pt-2.5 border-t border-hairline">
     <div class="flex items-center justify-between gap-2 mb-2">
-      <div class="text-[11px] text-gray-400 font-semibold">↳ Ngách trong nhóm <span class="text-brand-300">${esc(state.rawGroup)}</span> (${inGroup.length} ngách · ${groupCounts[state.rawGroup]} kênh)</div>
+      <div class="text-[11px] text-gray-400 font-semibold inline-flex items-center gap-1.5">${ico('corner-down-right', 14)} Ngách trong nhóm <span class="text-brand-300">${esc(state.rawGroup)}</span> (${inGroup.length} ngách · ${groupCounts[state.rawGroup]} kênh)</div>
       <button type="button" data-raw-niche="" class="text-[11px] font-semibold ${!currentNiche ? 'text-brand-300' : 'text-gray-400 hover:text-gray-200'} transition-colors shrink-0">Xem tất cả nhóm này</button>
     </div>
 
@@ -1536,24 +1540,24 @@ async function renderRawKenh() {
   })() : ''}
 </div>
 <button type="button" data-raw-filters-toggle class="mt-3.5 pt-3 border-t border-hairline w-full flex items-center justify-between gap-2 text-left group">
-  <span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold text-gray-400 transition">⚙️ Bộ lọc nâng cao (sức sống · faceless · ngôn ngữ)</span>
-  <span class="text-[11px] font-bold text-brand-300 group-hover:text-brand-200 transition shrink-0">${state.rawFiltersExpanded ? '▲ Thu gọn' : '▼ Mở rộng'}</span>
+  <span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold text-gray-400 transition inline-flex items-center gap-1.5">${ico('settings', 14)} Bộ lọc nâng cao (sức sống · faceless · ngôn ngữ)</span>
+  <span class="text-[11px] font-bold text-brand-300 group-hover:text-brand-200 transition shrink-0 inline-flex items-center gap-1">${state.rawFiltersExpanded ? ico('chevron-up', 14) + ' Thu gọn' : ico('chevron-down', 14) + ' Mở rộng'}</span>
 </button>
 <div class="${state.rawFiltersExpanded ? '' : 'hidden'}">
 <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
   <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Tình trạng sống & YPP:</div>
   <button type="button" data-raw-vitality="" class="filter-btn ${!state.rawVitality ? 'active' : ''}">Tất cả · ${records.length}</button>
-  <button type="button" data-raw-vitality="active" class="filter-btn ${state.rawVitality === 'active' ? 'active' : ''}">🟢 Đang hoạt động · ${activeCount}</button>
-  <button type="button" data-raw-vitality="slow" class="filter-btn ${state.rawVitality === 'slow' ? 'active' : ''}">🟡 Ra video chậm · ${slowCount}</button>
-  <button type="button" data-raw-vitality="dormant" class="filter-btn ${state.rawVitality === 'dormant' ? 'active' : ''}">🟠 Ngủ đông · ${dormantMidCount}</button>
-  <button type="button" data-raw-vitality="risk" class="filter-btn ${state.rawVitality === 'risk' ? 'active' : ''}">🔴 Nguy cơ tắt YPP / Dừng lâu · ${riskCount}</button>
-  <button type="button" data-raw-vitality="ypp" class="filter-btn ${state.rawVitality === 'ypp' ? 'active' : ''}">💰 Bật kiếm tiền (YPP Active) · ${yppCount}</button>
+  <button type="button" data-raw-vitality="active" class="filter-btn ${state.rawVitality === 'active' ? 'active' : ''}">${icoColored('shield-check', '#34d399', 14)} Đang hoạt động · ${activeCount}</button>
+  <button type="button" data-raw-vitality="slow" class="filter-btn ${state.rawVitality === 'slow' ? 'active' : ''}">${icoColored('alert-circle', '#fde68a', 14)} Ra video chậm · ${slowCount}</button>
+  <button type="button" data-raw-vitality="dormant" class="filter-btn ${state.rawVitality === 'dormant' ? 'active' : ''}">${icoColored('alert-circle', '#fb923c', 14)} Ngủ đông · ${dormantMidCount}</button>
+  <button type="button" data-raw-vitality="risk" class="filter-btn ${state.rawVitality === 'risk' ? 'active' : ''}">${icoColored('alert-triangle', '#f87171', 14)} Nguy cơ tắt YPP / Dừng lâu · ${riskCount}</button>
+  <button type="button" data-raw-vitality="ypp" class="filter-btn ${state.rawVitality === 'ypp' ? 'active' : ''}">${icoColored('coins', '#34d399', 14)} Bật kiếm tiền (YPP Active) · ${yppCount}</button>
 </div>
 <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
   <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Faceless (Vision AI):</div>
   <button type="button" data-raw-faceless="" class="filter-btn ${!state.rawFaceless ? 'active' : ''}">Tất cả · ${records.length}</button>
-  <button type="button" data-raw-faceless="faceless" class="filter-btn ${state.rawFaceless === 'faceless' ? 'active' : ''}">🎭 Faceless · ${facelessCount}</button>
-  <button type="button" data-raw-faceless="hasface" class="filter-btn ${state.rawFaceless === 'hasface' ? 'active' : ''}">👤 Có mặt người thật · ${hasFaceCount}</button>
+  <button type="button" data-raw-faceless="faceless" class="filter-btn ${state.rawFaceless === 'faceless' ? 'active' : ''}">${ico('drama', 14)} Faceless · ${facelessCount}</button>
+  <button type="button" data-raw-faceless="hasface" class="filter-btn ${state.rawFaceless === 'hasface' ? 'active' : ''}">${ico('user', 14)} Có mặt người thật · ${hasFaceCount}</button>
 </div>
 <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
   <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Ngôn ngữ giọng đọc:</div>
@@ -1587,7 +1591,7 @@ async function renderRawKenh() {
     const statusBadge = (r.vidiqVerification && r.vidiqVerification.status === 'VERIFIED')
       ? `<span class="badge badge-green">vidIQ Verified</span>`
       : (r.duplicateOf ? `<span class="badge badge-amber">Trùng (${esc(r.duplicateOf)})</span>` : (r.status === 'OCR_COMPLETE' ? `<span class="badge badge-blue">OCR đủ</span>` : `<span class="badge badge-amber">Manual</span>`));
-    const langInfo = r.audioLanguageInfo || (r.deepIntelligence && r.deepIntelligence.audioLanguage ? { flag: r.deepIntelligence.languageFlag || '🌐', code: r.deepIntelligence.audioLanguage } : null);
+    const langInfo = r.audioLanguageInfo || (r.deepIntelligence && r.deepIntelligence.audioLanguage ? { flag: r.deepIntelligence.languageFlag || '', code: r.deepIntelligence.audioLanguage } : null);
     const imgSrc = r.fileName ? 'assets/raw-kenh/' + encodeURIComponent(r.fileName) : 'assets/thumbs/placeholder.svg';
     const tv = r.thumbnailVision || null;
     return `
@@ -1599,15 +1603,15 @@ async function renderRawKenh() {
           ${langInfo ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-[9.5px] shrink-0" title="${esc(langInfo.language || langInfo.code)}">${esc(langInfo.flag)} ${esc(langInfo.code ? langInfo.code.split('-')[0].toUpperCase() : '')}</span>` : ''}
         </div>
         <span class="absolute top-2 right-2 bg-brand-600/90 text-white text-[10px] font-medium px-2 py-0.5 rounded-xl truncate max-w-[50%]">${esc(r.editorialNiche || r.niche || 'Chưa rõ')}</span>
-        ${tv ? `<span class="absolute bottom-2 left-2 ${tv.isFaceless ? 'bg-emerald-950/90 text-emerald-300 border-emerald-500/50' : 'bg-red-950/90 text-red-300 border-red-500/50'} text-[10px] font-bold px-2 py-0.5 rounded-lg border backdrop-blur-sm z-10" title="Vision AI (9Router local) phân loại cấp kênh · ${esc(tv.agreement || '')}">${tv.isFaceless ? '🎭 Faceless' : '👤 Có mặt người thật'}</span>` : ''}
-        <span class="absolute bottom-2 right-2 bg-black/70 hover:bg-black/90 text-white text-[10px] px-2 py-0.5 rounded-lg border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">🔍 Xem ảnh</span>
+        ${tv ? `<span class="absolute bottom-2 left-2 ${tv.isFaceless ? 'bg-emerald-950/90 text-emerald-300 border-emerald-500/50' : 'bg-red-950/90 text-red-300 border-red-500/50'} text-[10px] font-bold px-2 py-0.5 rounded-lg border backdrop-blur-sm z-10" title="Vision AI (9Router local) phân loại cấp kênh · ${esc(tv.agreement || '')}">${tv.isFaceless ? ico('drama', 14) + ' Faceless' : ico('user', 14) + ' Có mặt người thật'}</span>` : ''}
+        <span class="absolute bottom-2 right-2 bg-black/70 hover:bg-black/90 text-white text-[10px] px-2 py-0.5 rounded-lg border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity inline-flex items-center gap-1">${ico('search', 14)} Xem ảnh</span>
       </div>
       <div class="p-3.5 flex-1 flex flex-col gap-2 min-w-0">
         <div class="flex items-start justify-between gap-2 min-w-0">
           <h3 class="text-sm font-bold text-white group-hover:text-brand-300 transition line-clamp-1 min-w-0">${esc((ch.title || '').trim() || 'Chưa rõ tên')}</h3>
           <div class="flex items-center gap-1 shrink-0 flex-wrap justify-end">
             ${statusBadge}
-            ${vA.monetizationStatus === 'MONETIZED_AT_RISK' ? `<span class="badge badge-red text-[10px] font-bold">⚠️ Rủi ro YPP</span>` : ''}
+            ${vA.monetizationStatus === 'MONETIZED_AT_RISK' ? `<span class="badge badge-red text-[10px] font-bold inline-flex items-center gap-1">${ico('alert-triangle', 14)} Rủi ro YPP</span>` : ''}
           </div>
         </div>
         ${(ch.handle || vision.handle || (ocr && ocr.handle)) ? `<div class="text-[11px] text-brand-400 font-mono truncate">${esc(decodeURIComponent(ch.handle || vision.handle || (ocr && ocr.handle)))}</div>` : ''}
@@ -1619,10 +1623,10 @@ async function renderRawKenh() {
         </div>` : ''}
         ${vA.healthStatus === 'DORMANT_LONG' ? `
         <div class="text-[10.5px] bg-red-950/70 border border-red-800/80 rounded-xl px-2.5 py-1.5 text-red-200 font-medium flex items-center gap-1.5">
-          <span class="text-red-400 font-bold animate-pulse">🔴</span> Dừng đăng ${vA.daysSinceLatest} ngày — Nguy cơ tắt YPP / Die
+          <span class="text-red-400 font-bold animate-pulse inline-flex">${ico('alert-triangle', 14)}</span> Dừng đăng ${vA.daysSinceLatest} ngày — Nguy cơ tắt YPP / Die
         </div>` : (vA.daysSinceLatest != null ? `
         <div class="text-[11px] text-gray-400 flex items-center justify-between">
-          <span class="truncate">📅 Video gần nhất: <b class="text-gray-200">${esc(vA.latestUploadDate || 'N/A')}</b></span>
+          <span class="truncate inline-flex items-center gap-1">${ico('calendar', 14)} Video gần nhất: <b class="text-gray-200">${esc(vA.latestUploadDate || 'N/A')}</b></span>
           <span class="${vA.healthStatus === 'ACTIVE' ? 'text-emerald-400 font-semibold' : 'text-amber-400 font-medium'} shrink-0 ml-1">${vA.daysSinceLatest}d trước</span>
         </div>` : '')}
         ${vision.mainTopic ? `<p class="text-[11px] text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="text-amber-400 font-semibold">Chủ đề:</span> ${esc(vision.mainTopic)}</p>` : ''}
@@ -1631,23 +1635,23 @@ async function renderRawKenh() {
         ${ocr ? `<p class="text-[11px] text-gray-400 truncate">${esc([ocr.subsText, ocr.videoCountText, ocr.videoRows && ocr.videoRows[0] ? ocr.videoRows[0].vph : null].filter(Boolean).join(' · '))}</p>` : ''}
         ${r.deepIntelligence ? `
         <div class="text-[10px] bg-white/[0.03] border border-white/10 rounded-xl px-2.5 py-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-gray-300">
-          <span class="text-amber-300 font-medium">⚡ ${r.deepIntelligence.topVideosCount} videos</span>
-          <span class="text-sky-300 font-medium">🏷️ ${r.deepIntelligence.tagsCount} tags</span>
-          <span class="text-emerald-300 font-medium">💰 ${esc(vA.estimatedMonthlyRev || 'N/A')}</span>
-          <span class="text-emerald-400 font-medium ml-auto">🛡️ ${esc(vA.healthBadge || (r.deepIntelligence.longevityStatus ? r.deepIntelligence.longevityStatus.replace(/\(.*?\)/g, '').trim() : ''))}</span>
+          <span class="text-amber-300 font-medium inline-flex items-center gap-1">${ico('zap', 14)} ${r.deepIntelligence.topVideosCount} videos</span>
+          <span class="text-sky-300 font-medium inline-flex items-center gap-1">${ico('tag', 14)} ${r.deepIntelligence.tagsCount} tags</span>
+          <span class="text-emerald-300 font-medium inline-flex items-center gap-1">${ico('coins', 14)} ${esc(vA.estimatedMonthlyRev || 'N/A')}</span>
+          <span class="text-emerald-400 font-medium ml-auto inline-flex items-center gap-1">${ico('shield-check', 14)} ${esc(stripDecorEmoji(vA.healthBadge) || (r.deepIntelligence.longevityStatus ? r.deepIntelligence.longevityStatus.replace(/\(.*?\)/g, '').trim() : ''))}</span>
         </div>` : ''}
         ${(r.featuredDemoVideo && r.featuredDemoVideo.videoId) ? `
         <button type="button" class="js-quick-video btn-quick-demo w-full mt-1.5 py-2 px-2 bg-rose-950/40 hover:bg-rose-900/60 border border-rose-500/40 hover:border-rose-400 text-rose-200 hover:text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer min-h-[38px]" data-vid="${esc(r.featuredDemoVideo.videoId)}" data-title="${esc(r.featuredDemoVideo.title)}" data-channel="${esc((ch.title || r.id).trim())}" data-badge="🎬 Demo Tuyến Nội Dung">
-          <span>🎬 Xem Demo Tuyến Mới Nhất</span> <span class="text-xs font-bold text-rose-400">▶</span>
+          <span class="inline-flex items-center gap-1.5">${ico('clapperboard', 14)} Xem Demo Tuyến Mới Nhất</span> <span class="text-xs font-bold text-rose-400 inline-flex">${ico('play', 14)}</span>
         </button>` : ''}
         <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-2 px-2 bg-gradient-to-r from-blue-900/60 to-indigo-900/60 hover:from-blue-800/80 hover:to-indigo-800/80 border border-blue-500/50 hover:border-blue-400 text-blue-200 hover:text-white rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition cursor-pointer shadow-lg shadow-blue-950/50 min-h-[38px]" data-raw-id="${esc(r.id)}" data-jump="mission-control">
-          <span>⚡ Xem Prompts & Vũ Khí Tác Chiến</span> →
+          <span class="inline-flex items-center gap-1.5">${ico('zap', 14)} Xem Prompts & Vũ Khí Tác Chiến</span> ${ico('arrow-right', 14)}
         </button>
         <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-2 px-2.5 bg-brand-900/30 hover:bg-brand-800/50 border border-brand-500/30 hover:border-brand-400 text-brand-300 hover:text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer min-h-[38px]" data-raw-id="${esc(r.id)}">
-          <span>📊 Xem Hồ Sơ & Top Videos Chi Tiết</span> →
+          <span class="inline-flex items-center gap-1.5">${ico('bar-chart-3', 14)} Xem Hồ Sơ & Top Videos Chi Tiết</span> ${ico('arrow-right', 14)}
         </button>
         <div class="mt-auto pt-2.5 border-t border-ink-700 flex items-center justify-between gap-2 text-[11px]">
-          <span class="text-emerald-400 font-medium truncate min-w-0 flex items-center gap-1"><span>📸</span> Ảnh chụp thực tế</span>
+          <span class="text-emerald-400 font-medium truncate min-w-0 flex items-center gap-1"><span class="inline-flex">${ico('camera', 14)}</span> Ảnh chụp thực tế</span>
           <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-300 hover:text-white bg-brand-500/20 hover:bg-brand-500 px-2.5 py-1.5 rounded-xl transition font-medium whitespace-nowrap shrink-0">Mở YouTube ↗</a>
         </div>
       </div>
@@ -1732,7 +1736,7 @@ ${grouped.map(g => {
             <div class="text-[11px] text-gray-400 truncate">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV</div>
             ${(ch.markets && ch.markets.length) ? `<div class="text-[10px] text-gray-500 truncate mt-0.5">${ch.markets.map(m => esc(stripDecorEmoji(m))).join(' · ')}</div>` : ''}
           </div>
-          <span class="text-gray-500 shrink-0 text-sm">↗</span>
+          <span class="text-gray-500 shrink-0 text-sm inline-flex">${ico('arrow-up-right', 14)}</span>
         </a>`).join('')}
     </div>
   </section>`;
@@ -1816,11 +1820,11 @@ async function renderChienLuoc() {
     </div>
     <div class="flex items-center gap-2 shrink-0">
       <a href="docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-colors shadow-sm">
-        <span>👁️ Đọc trực tiếp Đề cương A–Z</span>
-        <span class="font-mono">↗</span>
+        <span class="inline-flex items-center gap-1.5">${ico('eye', 14)} Đọc trực tiếp Đề cương A–Z</span>
+        <span class="font-mono inline-flex">${ico('arrow-up-right', 14)}</span>
       </a>
       <a href="docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 text-xs font-medium transition-colors">
-        <span>📄 File gốc .txt</span>
+        <span class="inline-flex items-center gap-1.5">${ico('file-text', 14)} File gốc .txt</span>
       </a>
     </div>
   </div>
@@ -1841,8 +1845,8 @@ async function renderChienLuoc() {
           </button>
           ${s.docPath ? `
           <a href="${esc(s.docPath)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] text-gray-400 hover:text-brand-300 transition-colors" title="${esc(s.docTitle || 'Tài liệu SOP')}">
-            <span>📄 ${esc(s.docTitle || 'Mở SOP')}</span>
-            <span class="font-mono text-[10px]">↗</span>
+            <span class="inline-flex items-center gap-1.5">${ico('file-text', 14)} ${esc(s.docTitle || 'Mở SOP')}</span>
+            <span class="font-mono text-[10px] inline-flex">${ico('arrow-up-right', 14)}</span>
           </a>` : ''}
         </div>
       </div>`).join('')}

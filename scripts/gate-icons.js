@@ -161,6 +161,70 @@ for (const rel of sizeTargets) {
 }
 if (!sizeHits) ok('0 size class sai chuan trong ' + sizeTargets.length + ' file');
 
+/* ---------- [5b] Selector CSS KHONG duoc dat size CUNG cho .h2-icon ngoai 14/16/20/24 ----------
+ * LOI THAT 2026-09-24 (SCAR-014): rule `.bento-card .stat-icon .h2-icon { min-width: 15px }`
+ *   va `.vd-bottom-nav .tab-btn .h2-icon { width: 18px }` — cay tu rule `svg` cu duoc copy
+ *   sang `.h2-icon` ma khong doi gia tri. `svg` co gian duoc nen 15/18px vo hai, nhung
+ *   `.h2-icon` dung mask + min-width => bi BOP CUNG, icon lech 1-2px so voi moi noi khac.
+ *   Gate [5] cu CHI kiem size class (h2-icon--NN) => BO LOT lop loi nay. Rule nay bit lo hong.
+ *
+ * CACH KIEM: quet moi file .css, bo comment, tim rule ma selector chua '.h2-icon'
+ *   va co khai bao width / height / min / max dang so px cu the (khong qua var hoac %)
+ *   khac 14/16/20/24. Gia tri qua `var(--h2-icon-*)`, `em`, `%`, `auto` duoc bo qua.
+ */
+head('[5b] Selector CSS dat size CUNG cho .h2-icon phai thuoc 14/16/20/24');
+const CSS_ALLOWED = new Set([14, 16, 20, 24]);
+const cssFiles = [];
+(function walkCss(d) {
+  for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+    const full = path.join(d, e.name);
+    if (e.isDirectory()) {
+      if (/node_modules|\.git|\.venv-gpu|_archive|^video$|icons$/.test(e.name)) continue;
+      walkCss(full);
+    } else if (e.name.endsWith('.css')) cssFiles.push(full);
+  }
+})(path.join(ROOT, 'assets'));
+let s5bHits = 0;
+for (const abs of cssFiles) {
+  const rel = path.relative(ROOT, abs).replace(/\\/g, '/');
+  /* Bo comment truoc khi kiem (tranh bat ghi chu giai thich) */
+  const raw = fs.readFileSync(abs, 'utf8').replace(/\/\*[\s\S]*?\*\//g, m => m.replace(/[^\n]/g, ' '));
+  const lines = raw.split(/\r?\n/);
+  /* Gom rule: tu dong co selector -> dong co '}' dong block */
+  let sel = '';
+  let blockStart = -1;
+  let buf = [];
+  const flush = () => {
+    if (!sel || !buf.length) { sel = ''; buf = []; return; }
+    if (!/\.h2-icon/.test(sel)) { sel = ''; buf = []; return; }
+    for (const bl of buf) {
+      for (const m of bl.matchAll(/(?:^|[\s;{])(min-width|min-height|max-width|max-height|width|height)\s*:\s*([0-9.]+)px/gi)) {
+        const val = parseFloat(m[2]);
+        if (!CSS_ALLOWED.has(val)) {
+          s5bHits++;
+          bad(rel + ':' + (bl.__ln || blockStart) + ' "' + sel.trim().slice(0, 60) + '" dat ' + m[1] + ':' + m[2] + 'px (ngoai 14/16/20/24)');
+        }
+      }
+    }
+    sel = ''; buf = [];
+  };
+  lines.forEach((ln, i) => {
+    const t = ln.trim();
+    if (sel && t === '}') { flush(); return; }
+    if (!sel && /\{/.test(ln) && !/^\s*@/.test(ln) && !/\{/.test(ln.slice(0, ln.indexOf('{')))) {
+      sel = ln.split('{')[0].trim();
+      blockStart = i + 1;
+      const rest = ln.slice(ln.indexOf('{') + 1);
+      if (rest.trim() && rest.trim() !== '}') { const o = { __ln: i + 1 }; buf.push(Object.assign(rest, o)); }
+      return;
+    }
+    if (!sel && /\{$/.test(ln) && !/^\s*@/.test(ln)) { sel = ln.replace(/\{$/, '').trim(); blockStart = i + 1; return; }
+    if (sel) { const o = { __ln: i + 1 }; buf.push(Object.assign(String(ln), o)); }
+  });
+  flush();
+}
+if (!s5bHits) ok('0 selector dat size cung ngoai chuan cho .h2-icon (' + cssFiles.length + ' file CSS)');
+
 /* ---------- [6] ICONS.<key> duoc goi phai CO trong NAMES ---------- */
 /* LOI THAT 2026-09-24: content.js goi ICONS.disk + ICONS.search nhung NAMES khong khai bao
  *   => undefined => the KPI MAT ICON. Gate nay chan vinh vien.

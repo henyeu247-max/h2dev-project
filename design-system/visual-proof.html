@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bang chung nghiem thu truc quan - H2DEV</title>
+<style>
+  :root{
+    --bg:#050505;
+    --surface:#0f0f0f;
+    --surface-2:#1a1a1a;
+    --border:#222222;
+    --border-strong:#333333;
+    --text:#f0f0f0;
+    --muted:#a9a9a9;
+    --brand:#E2023A;
+    --ok:#3fb950;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,"Helvetica Neue",Arial,sans-serif;
+    font-size:14px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1280px;margin:0 auto;padding:32px 20px 64px}
+
+  /* ---- Header ---- */
+  header.top{
+    border:1px solid var(--border);
+    border-left:3px solid var(--brand);
+    background:var(--surface);
+    border-radius:6px;
+    padding:22px 24px;
+    margin-bottom:20px;
+  }
+  header.top h1{
+    margin:0 0 8px;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:.2px;
+  }
+  header.top .sub{color:var(--muted);font-size:13px}
+  header.top .sub code{
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:3px;
+    padding:1px 6px;
+    font-size:12px;
+    color:var(--text);
+    font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+  }
+  header.top .envs{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+  header.top .envs span{
+    border:1px solid var(--border);
+    background:var(--surface-2);
+    border-radius:3px;
+    padding:3px 9px;
+    font-size:12px;
+    color:var(--muted);
+  }
+  header.top .envs span b{color:var(--text)}
+
+  /* ---- KPI cards ---- */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px}
+  .kpi{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:16px 18px;
+  }
+  .kpi .num{font-size:30px;font-weight:700;line-height:1.1;letter-spacing:-.5px}
+  .kpi .num.ok{color:var(--ok)}
+  .kpi .lbl{color:var(--muted);font-size:12px;margin-top:6px}
+  .kpi .note{color:var(--muted);font-size:11px;margin-top:3px;opacity:.75}
+
+  /* ---- Section ---- */
+  section{margin-bottom:34px}
+  h2.sec{
+    font-size:16px;
+    font-weight:700;
+    margin:0 0 12px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--border);
+  }
+  h2.sec span.tag{
+    font-size:11px;
+    font-weight:500;
+    color:var(--muted);
+    margin-left:8px;
+  }
+  h3.sub{
+    font-size:14px;
+    font-weight:600;
+    margin:22px 0 10px;
+    color:var(--text);
+  }
+  h3.sub em{color:var(--muted);font-style:normal;font-weight:400;font-size:12px}
+  p{margin:0 0 10px}
+  p.lead{color:var(--muted)}
+
+  /* ---- Tables ---- */
+  .tbl-scroll{
+    overflow-x:auto;
+    border:1px solid var(--border);
+    border-radius:6px;
+    background:var(--surface);
+  }
+  table{border-collapse:collapse;width:100%;min-width:900px;font-size:13px}
+  thead th{
+    position:sticky;top:0;z-index:2;
+    background:var(--surface-2);
+    color:var(--muted);
+    font-weight:600;
+    font-size:12px;
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--border-strong);
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:9px 12px;
+    border-bottom:1px solid var(--border);
+    vertical-align:top;
+  }
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:rgba(255,255,255,.02)}
+  td.path,td.title-cell{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:12px}
+  td.path{color:#d7d7d7;white-space:nowrap}
+  td.title-cell{color:var(--muted)}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  td.center{text-align:center}
+  .pill{
+    display:inline-block;
+    border-radius:3px;
+    padding:1px 7px;
+    font-size:11px;
+    font-weight:600;
+    border:1px solid transparent;
+    white-space:nowrap;
+  }
+  .pill.ok{color:var(--ok);border-color:rgba(63,185,80,.35);background:rgba(63,185,80,.08)}
+  .pill.bad{color:var(--brand);border-color:rgba(226,2,58,.35);background:rgba(226,2,58,.09)}
+  .pill.warn{color:#d29922;border-color:rgba(210,153,34,.35);background:rgba(210,153,34,.08)}
+  .zero{color:var(--ok)}
+  tfoot td{
+    padding:11px 12px;
+    border-top:1px solid var(--border-strong);
+    background:var(--surface-2);
+    font-weight:700;
+  }
+  .foot-note{
+    color:var(--muted);
+    font-size:12px;
+    margin-top:8px;
+    border-left:2px solid var(--border-strong);
+    padding-left:10px;
+  }
+
+  /* ---- Gallery ---- */
+  .grid{display:grid;gap:12px}
+  .grid.mobile{grid-template-columns:repeat(3,1fr)}
+  .grid.desktop{grid-template-columns:repeat(2,1fr)}
+  figure{
+    margin:0;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:8px 8px 10px;
+  }
+  figure a{display:block}
+  figure img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    display:block;
+    border:1px solid var(--border);
+    border-radius:4px;
+    background:#000;
+  }
+  figcaption{
+    margin-top:7px;
+    font-size:12px;
+    color:var(--text);
+  }
+  figcaption .env{
+    display:inline-block;
+    font-size:10px;
+    color:var(--muted);
+    border:1px solid var(--border);
+    border-radius:3px;
+    padding:0 5px;
+    margin-left:6px;
+    vertical-align:1px;
+  }
+  figcaption .fname{
+    display:block;
+    color:var(--muted);
+    font-size:10px;
+    font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+    margin-top:3px;
+    word-break:break-all;
+  }
+
+  /* ---- Boxes ---- */
+  .box{
+    border:1px solid var(--border);
+    background:var(--surface);
+    border-radius:6px;
+    padding:16px 18px;
+    margin-bottom:14px;
+  }
+  .box.root{border-left:3px solid var(--brand)}
+  .box.guard{border-left:3px solid var(--ok)}
+  .box h3{margin:0 0 8px;font-size:14px}
+  .box p{color:var(--muted);font-size:13px;margin-bottom:8px}
+  .box p:last-child{margin-bottom:0}
+  .box strong{color:var(--text)}
+  .box code,td code,p code{
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:3px;
+    padding:1px 5px;
+    font-size:12px;
+    font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+    color:#e8e8e8;
+  }
+  .kv{font-size:13px;color:var(--muted)}
+  .kv b{color:var(--text)}
+
+  /* ---- Footer ---- */
+  footer{
+    margin-top:40px;
+    padding-top:18px;
+    border-top:1px solid var(--border);
+    color:var(--muted);
+    font-size:12px;
+  }
+  footer code{
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:3px;
+    padding:1px 5px;
+    font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+  }
+
+  @media (max-width:900px){
+    .kpis{grid-template-columns:repeat(2,1fr)}
+    .grid.mobile{grid-template-columns:1fr}
+    .grid.desktop{grid-template-columns:1fr}
+    table{min-width:760px}
+    .wrap{padding:18px 12px 48px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ PHAN 1: HEADER ============ -->
+  <header class="top">
+    <h1>BẰNG CHỨNG NGHIỆM THU TRỰC QUAN &mdash; H2DEV</h1>
+    <div class="sub">
+      Ngày 2026-09-24 &middot; Phương pháp: <strong>Playwright browser thật, không mô phỏng</strong>
+      (Chromium thật, đo DOM runtime và chụp ảnh trực tiếp).
+    </div>
+    <div class="envs">
+      <span>LOCAL: <b>http://127.0.0.1:8899</b></span>
+      <span>PROD: <b>https://h2dev-learn.tonymmo.com</b></span>
+      <span>Theme: <b>dark-mode only</b></span>
+      <span>Brand: <b>#E2023A</b></span>
+      <span>Phạm vi: <b>11 màn hình</b> (10 tab + player)</span>
+    </div>
+  </header>
+
+  <div class="kpis">
+    <div class="kpi">
+      <div class="num">44</div>
+      <div class="lbl">ảnh chụp</div>
+      <div class="note">2 môi trường x 2 viewport x 11 màn hình</div>
+    </div>
+    <div class="kpi">
+      <div class="num ok">22/22</div>
+      <div class="lbl">HTTP 200</div>
+      <div class="note">11 màn hình x 2 môi trường</div>
+    </div>
+    <div class="kpi">
+      <div class="num ok">0</div>
+      <div class="lbl">console error</div>
+      <div class="note">ghi nhận trên toàn bộ 22 lượt tải</div>
+    </div>
+    <div class="kpi">
+      <div class="num ok">0</div>
+      <div class="lbl">icon lỗi</div>
+      <div class="note">0 glyph in chữ, 0 icon đè chữ</div>
+    </div>
+  </div>
+
+  <!-- ============ PHAN 2: BANG TONG HOP ============ -->
+  <section>
+    <h2 class="sec">Bảng tổng hợp nghiệm thu <span class="tag">11 màn hình &middot; đối chiếu report.json runtime</span></h2>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:44px">STT</th>
+            <th>Màn hình</th>
+            <th>Đường dẫn</th>
+            <th>Tiêu đề trang</th>
+            <th style="width:60px" class="center">HTTP</th>
+            <th style="width:78px" class="center">Icon mob</th>
+            <th style="width:78px" class="center">Icon desk</th>
+            <th style="width:88px" class="center">Console err</th>
+            <th style="width:74px" class="center">Icon lỗi</th>
+            <th style="width:74px" class="center">Kết quả</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="num">01</td>
+            <td>Tổng quan</td>
+            <td class="path">/tongquan</td>
+            <td class="title-cell">H2DEV &mdash; Radar kho YouTube</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">20</td>
+            <td class="num">20</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">02</td>
+            <td>Tất cả</td>
+            <td class="path">/tatca</td>
+            <td class="title-cell">H2DEV &mdash; Radar kho YouTube</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">20</td>
+            <td class="num">20</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">03</td>
+            <td>Video</td>
+            <td class="path">/video</td>
+            <td class="title-cell">Video &mdash; H2DEV</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">20</td>
+            <td class="num">20</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">04</td>
+            <td>Ngách xanh</td>
+            <td class="path">/ngachxanh</td>
+            <td class="title-cell">Ngách xanh &mdash; H2DEV</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">271</td>
+            <td class="num">271</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">05</td>
+            <td>Tài liệu</td>
+            <td class="path">/kichban</td>
+            <td class="title-cell">Tài liệu &mdash; H2DEV</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">239</td>
+            <td class="num">239</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">06</td>
+            <td>Nguồn reup</td>
+            <td class="path">/nguonreup</td>
+            <td class="title-cell">Nguồn reup &mdash; H2DEV</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">47</td>
+            <td class="num">47</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">07</td>
+            <td>Kênh mẫu</td>
+            <td class="path">/kenh</td>
+            <td class="title-cell">Kênh mẫu &mdash; H2DEV</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">172</td>
+            <td class="num">173</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">08</td>
+            <td>Raw kênh</td>
+            <td class="path">/rawkenh</td>
+            <td class="title-cell">Raw kênh &mdash; H2DEV</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">369</td>
+            <td class="num">369</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">09</td>
+            <td>Chiến lược</td>
+            <td class="path">/chienluoc</td>
+            <td class="title-cell">Chiến lược &mdash; H2DEV</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">45</td>
+            <td class="num">45</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">10</td>
+            <td>Lộ trình</td>
+            <td class="path">/lotrinh</td>
+            <td class="title-cell">H2DEV &mdash; Lộ trình</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">1</td>
+            <td class="num">1</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+          <tr>
+            <td class="num">11</td>
+            <td>Player</td>
+            <td class="path">/lotrinh/VIDEO-DD983D</td>
+            <td class="title-cell">Update ngách thị trường Nhật và ph... (tiêu đề động theo bài học)</td>
+            <td class="center"><span class="pill ok">200</span></td>
+            <td class="num">38</td>
+            <td class="num">38</td>
+            <td class="center zero">0</td>
+            <td class="center zero">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Tổng icon render đã kiểm: <span style="color:var(--brand)">1242</span> (LOCAL mobile) &mdash; 0 lỗi</td>
+            <td class="num">1242</td>
+            <td class="num">1243</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center"><span class="pill ok">[OK]</span></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <p class="foot-note">
+      <strong>Đính chính số liệu (bắt buộc minh bạch):</strong> số ban đầu em đưa (<code>1212</code> / <code>1213</code>)
+      là <strong>cộng nhầm</strong>. Tổng đúng theo runtime: <code>1242</code> (LOCAL mobile),
+      <code>1243</code> (LOCAL desktop, PROD mobile), <code>1244</code> (PROD desktop) &mdash;
+      chi tiết phép cộng ở mục "Đối soát phép cộng" bên dưới.
+      Cột "Số icon" trong bảng lấy theo <strong>LOCAL</strong>; riêng màn 10 (Lộ trình) PROD nhiều hơn LOCAL 1 icon
+      (xem mục giải thích "Vì sao màn 10 khác nhau").
+    </p>
+  </section>
+
+  <!-- ============ PHAN 3: GALLERY ============ -->
+  <section>
+    <h2 class="sec">Thư viện ảnh chụp <span class="tag">44 ảnh &middot; bấm vào ảnh để mở file gốc</span></h2>
+    <p class="lead">Ảnh nguyên bản chụp bằng Playwright, không crop, không chỉnh sửa. Đường dẫn tương đối tính từ <code>design-system/</code>.</p>
+
+    <!-- ---- NHOM A ---- -->
+    <h3 class="sub">Nhóm A &mdash; LOCAL &mdash; Mobile 390px <em>(11 ảnh)</em></h3>
+    <div class="grid mobile">
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_01_tongquan.png"><img src="../_tmp-proof/shots/LOCAL_mobile_01_tongquan.png" alt="LOCAL mobile 01 Tong quan" loading="lazy"></a>
+        <figcaption>01. Tổng quan<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_01_tongquan.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_02_tatca.png"><img src="../_tmp-proof/shots/LOCAL_mobile_02_tatca.png" alt="LOCAL mobile 02 Tat ca" loading="lazy"></a>
+        <figcaption>02. Tất cả<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_02_tatca.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_03_video.png"><img src="../_tmp-proof/shots/LOCAL_mobile_03_video.png" alt="LOCAL mobile 03 Video" loading="lazy"></a>
+        <figcaption>03. Video<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_03_video.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_04_ngachxanh.png"><img src="../_tmp-proof/shots/LOCAL_mobile_04_ngachxanh.png" alt="LOCAL mobile 04 Ngach xanh" loading="lazy"></a>
+        <figcaption>04. Ngách xanh<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_04_ngachxanh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_05_kichban.png"><img src="../_tmp-proof/shots/LOCAL_mobile_05_kichban.png" alt="LOCAL mobile 05 Tai lieu" loading="lazy"></a>
+        <figcaption>05. Tài liệu<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_05_kichban.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_06_nguonreup.png"><img src="../_tmp-proof/shots/LOCAL_mobile_06_nguonreup.png" alt="LOCAL mobile 06 Nguon reup" loading="lazy"></a>
+        <figcaption>06. Nguồn reup<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_06_nguonreup.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_07_kenh.png"><img src="../_tmp-proof/shots/LOCAL_mobile_07_kenh.png" alt="LOCAL mobile 07 Kenh mau" loading="lazy"></a>
+        <figcaption>07. Kênh mẫu<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_07_kenh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_08_rawkenh.png"><img src="../_tmp-proof/shots/LOCAL_mobile_08_rawkenh.png" alt="LOCAL mobile 08 Raw kenh" loading="lazy"></a>
+        <figcaption>08. Raw kênh<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_08_rawkenh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_09_chienluoc.png"><img src="../_tmp-proof/shots/LOCAL_mobile_09_chienluoc.png" alt="LOCAL mobile 09 Chien luoc" loading="lazy"></a>
+        <figcaption>09. Chiến lược<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_09_chienluoc.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_10_lotrinh.png"><img src="../_tmp-proof/shots/LOCAL_mobile_10_lotrinh.png" alt="LOCAL mobile 10 Lo trinh" loading="lazy"></a>
+        <figcaption>10. Lộ trình<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_10_lotrinh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_mobile_11_player.png"><img src="../_tmp-proof/shots/LOCAL_mobile_11_player.png" alt="LOCAL mobile 11 Player" loading="lazy"></a>
+        <figcaption>11. Player<span class="env">LOCAL / mobile</span><span class="fname">LOCAL_mobile_11_player.png</span></figcaption>
+      </figure>
+    </div>
+
+    <!-- ---- NHOM B ---- -->
+    <h3 class="sub">Nhóm B &mdash; LOCAL &mdash; Desktop 1440px <em>(11 ảnh)</em></h3>
+    <div class="grid desktop">
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_01_tongquan.png"><img src="../_tmp-proof/shots/LOCAL_desktop_01_tongquan.png" alt="LOCAL desktop 01 Tong quan" loading="lazy"></a>
+        <figcaption>01. Tổng quan<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_01_tongquan.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_02_tatca.png"><img src="../_tmp-proof/shots/LOCAL_desktop_02_tatca.png" alt="LOCAL desktop 02 Tat ca" loading="lazy"></a>
+        <figcaption>02. Tất cả<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_02_tatca.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_03_video.png"><img src="../_tmp-proof/shots/LOCAL_desktop_03_video.png" alt="LOCAL desktop 03 Video" loading="lazy"></a>
+        <figcaption>03. Video<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_03_video.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_04_ngachxanh.png"><img src="../_tmp-proof/shots/LOCAL_desktop_04_ngachxanh.png" alt="LOCAL desktop 04 Ngach xanh" loading="lazy"></a>
+        <figcaption>04. Ngách xanh<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_04_ngachxanh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_05_kichban.png"><img src="../_tmp-proof/shots/LOCAL_desktop_05_kichban.png" alt="LOCAL desktop 05 Tai lieu" loading="lazy"></a>
+        <figcaption>05. Tài liệu<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_05_kichban.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_06_nguonreup.png"><img src="../_tmp-proof/shots/LOCAL_desktop_06_nguonreup.png" alt="LOCAL desktop 06 Nguon reup" loading="lazy"></a>
+        <figcaption>06. Nguồn reup<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_06_nguonreup.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_07_kenh.png"><img src="../_tmp-proof/shots/LOCAL_desktop_07_kenh.png" alt="LOCAL desktop 07 Kenh mau" loading="lazy"></a>
+        <figcaption>07. Kênh mẫu<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_07_kenh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_08_rawkenh.png"><img src="../_tmp-proof/shots/LOCAL_desktop_08_rawkenh.png" alt="LOCAL desktop 08 Raw kenh" loading="lazy"></a>
+        <figcaption>08. Raw kênh<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_08_rawkenh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_09_chienluoc.png"><img src="../_tmp-proof/shots/LOCAL_desktop_09_chienluoc.png" alt="LOCAL desktop 09 Chien luoc" loading="lazy"></a>
+        <figcaption>09. Chiến lược<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_09_chienluoc.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_10_lotrinh.png"><img src="../_tmp-proof/shots/LOCAL_desktop_10_lotrinh.png" alt="LOCAL desktop 10 Lo trinh" loading="lazy"></a>
+        <figcaption>10. Lộ trình<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_10_lotrinh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/LOCAL_desktop_11_player.png"><img src="../_tmp-proof/shots/LOCAL_desktop_11_player.png" alt="LOCAL desktop 11 Player" loading="lazy"></a>
+        <figcaption>11. Player<span class="env">LOCAL / desktop</span><span class="fname">LOCAL_desktop_11_player.png</span></figcaption>
+      </figure>
+    </div>
+
+    <!-- ---- NHOM C ---- -->
+    <h3 class="sub">Nhóm C &mdash; PROD &mdash; Mobile 390px <em>(11 ảnh &middot; chụp TRƯỚC khi deploy bản p39)</em></h3>
+    <div class="grid mobile">
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_01_tongquan.png"><img src="../_tmp-proof/shots/PROD_mobile_01_tongquan.png" alt="PROD mobile 01 Tong quan" loading="lazy"></a>
+        <figcaption>01. Tổng quan<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_01_tongquan.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_02_tatca.png"><img src="../_tmp-proof/shots/PROD_mobile_02_tatca.png" alt="PROD mobile 02 Tat ca" loading="lazy"></a>
+        <figcaption>02. Tất cả<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_02_tatca.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_03_video.png"><img src="../_tmp-proof/shots/PROD_mobile_03_video.png" alt="PROD mobile 03 Video" loading="lazy"></a>
+        <figcaption>03. Video<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_03_video.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_04_ngachxanh.png"><img src="../_tmp-proof/shots/PROD_mobile_04_ngachxanh.png" alt="PROD mobile 04 Ngach xanh" loading="lazy"></a>
+        <figcaption>04. Ngách xanh<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_04_ngachxanh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_05_kichban.png"><img src="../_tmp-proof/shots/PROD_mobile_05_kichban.png" alt="PROD mobile 05 Tai lieu" loading="lazy"></a>
+        <figcaption>05. Tài liệu<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_05_kichban.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_06_nguonreup.png"><img src="../_tmp-proof/shots/PROD_mobile_06_nguonreup.png" alt="PROD mobile 06 Nguon reup" loading="lazy"></a>
+        <figcaption>06. Nguồn reup<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_06_nguonreup.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_07_kenh.png"><img src="../_tmp-proof/shots/PROD_mobile_07_kenh.png" alt="PROD mobile 07 Kenh mau" loading="lazy"></a>
+        <figcaption>07. Kênh mẫu<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_07_kenh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_08_rawkenh.png"><img src="../_tmp-proof/shots/PROD_mobile_08_rawkenh.png" alt="PROD mobile 08 Raw kenh" loading="lazy"></a>
+        <figcaption>08. Raw kênh<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_08_rawkenh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_09_chienluoc.png"><img src="../_tmp-proof/shots/PROD_mobile_09_chienluoc.png" alt="PROD mobile 09 Chien luoc" loading="lazy"></a>
+        <figcaption>09. Chiến lược<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_09_chienluoc.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_10_lotrinh.png"><img src="../_tmp-proof/shots/PROD_mobile_10_lotrinh.png" alt="PROD mobile 10 Lo trinh" loading="lazy"></a>
+        <figcaption>10. Lộ trình<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_10_lotrinh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_mobile_11_player.png"><img src="../_tmp-proof/shots/PROD_mobile_11_player.png" alt="PROD mobile 11 Player" loading="lazy"></a>
+        <figcaption>11. Player<span class="env">PROD / mobile</span><span class="fname">PROD_mobile_11_player.png</span></figcaption>
+      </figure>
+    </div>
+
+    <!-- ---- NHOM D ---- -->
+    <h3 class="sub">Nhóm D &mdash; PROD &mdash; Desktop 1440px <em>(11 ảnh &middot; chụp TRƯỚC khi deploy bản p39)</em></h3>
+    <div class="grid desktop">
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_01_tongquan.png"><img src="../_tmp-proof/shots/PROD_desktop_01_tongquan.png" alt="PROD desktop 01 Tong quan" loading="lazy"></a>
+        <figcaption>01. Tổng quan<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_01_tongquan.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_02_tatca.png"><img src="../_tmp-proof/shots/PROD_desktop_02_tatca.png" alt="PROD desktop 02 Tat ca" loading="lazy"></a>
+        <figcaption>02. Tất cả<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_02_tatca.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_03_video.png"><img src="../_tmp-proof/shots/PROD_desktop_03_video.png" alt="PROD desktop 03 Video" loading="lazy"></a>
+        <figcaption>03. Video<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_03_video.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_04_ngachxanh.png"><img src="../_tmp-proof/shots/PROD_desktop_04_ngachxanh.png" alt="PROD desktop 04 Ngach xanh" loading="lazy"></a>
+        <figcaption>04. Ngách xanh<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_04_ngachxanh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_05_kichban.png"><img src="../_tmp-proof/shots/PROD_desktop_05_kichban.png" alt="PROD desktop 05 Tai lieu" loading="lazy"></a>
+        <figcaption>05. Tài liệu<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_05_kichban.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_06_nguonreup.png"><img src="../_tmp-proof/shots/PROD_desktop_06_nguonreup.png" alt="PROD desktop 06 Nguon reup" loading="lazy"></a>
+        <figcaption>06. Nguồn reup<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_06_nguonreup.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_07_kenh.png"><img src="../_tmp-proof/shots/PROD_desktop_07_kenh.png" alt="PROD desktop 07 Kenh mau" loading="lazy"></a>
+        <figcaption>07. Kênh mẫu<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_07_kenh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_08_rawkenh.png"><img src="../_tmp-proof/shots/PROD_desktop_08_rawkenh.png" alt="PROD desktop 08 Raw kenh" loading="lazy"></a>
+        <figcaption>08. Raw kênh<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_08_rawkenh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_09_chienluoc.png"><img src="../_tmp-proof/shots/PROD_desktop_09_chienluoc.png" alt="PROD desktop 09 Chien luoc" loading="lazy"></a>
+        <figcaption>09. Chiến lược<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_09_chienluoc.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_10_lotrinh.png"><img src="../_tmp-proof/shots/PROD_desktop_10_lotrinh.png" alt="PROD desktop 10 Lo trinh" loading="lazy"></a>
+        <figcaption>10. Lộ trình<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_10_lotrinh.png</span></figcaption>
+      </figure>
+      <figure>
+        <a href="../_tmp-proof/shots/PROD_desktop_11_player.png"><img src="../_tmp-proof/shots/PROD_desktop_11_player.png" alt="PROD desktop 11 Player" loading="lazy"></a>
+        <figcaption>11. Player<span class="env">PROD / desktop</span><span class="fname">PROD_desktop_11_player.png</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ PHAN 4: LOI DA SUA ============ -->
+  <section>
+    <h2 class="sec">LỖI ĐÃ SỬA &mdash; SCAR-014 <span class="tag">icon bị bóp size do copy rule svg sang .h2-icon</span></h2>
+
+    <div class="box root">
+      <h3>Gốc rễ</h3>
+      <p>
+        Rule CSS cũ được viết cho thẻ <code>&lt;svg&gt;</code> &mdash; mà <code>&lt;svg&gt;</code> là phần tử
+        co giãn theo viewBox, nên đặt cứng <code>15px</code> hay <code>18px</code> gần như vô hại vì icon vẫn
+        vẽ đúng tỷ lệ. Khi chuyển hệ icon sang <code>&lt;span class="h2-icon"&gt;</code> (vẽ bằng
+        <code>mask-image</code> + <code>min-width</code>/<code>min-height</code>), người sửa đã
+        <strong>copy nguyên xi giá trị cũ</strong> sang selector mới. Với <code>mask</code> + <code>min-width</code>,
+        giá trị cứng đó trở thành <strong>bóp size thật</strong> &mdash; icon hiển thị <code>15px</code> hoặc
+        <code>18px</code> thay vì bậc chuẩn <code>14/16/20/24</code>.
+      </p>
+      <p>
+        Nhấn mạnh: <strong>đây là hậu quả còn sót của SCAR-007</strong> (bẫy CSS selector chỉ phủ
+        <code>&lt;svg&gt;</code> trong khi hệ icon mới dùng <code>&lt;span class="h2-icon"&gt;</code>),
+        <strong>nay đã diệt tận gốc bằng gate [5b]</strong>.
+      </p>
+    </div>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:180px">File</th>
+            <th>Selector</th>
+            <th style="width:180px">Giá trị SAI</th>
+            <th style="width:150px">Giá trị ĐÚNG</th>
+            <th>Hậu quả nếu không sửa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="path" style="white-space:normal">assets/viddar.css<br><span style="color:var(--muted);font-size:11px">(mobile breakpoint)</span></td>
+            <td class="path" style="white-space:normal">.bento-card .stat-icon .h2-icon</td>
+            <td><code>width:15px; height:15px; min-width:15px; min-height:15px</code></td>
+            <td><code>16px</code><br><span style="color:var(--muted);font-size:11px">token <code>--h2-icon-16</code></span></td>
+            <td>9 icon mỗi tab bị bóp còn 15px, nhỏ hơn bậc chuẩn, lệch toàn bộ cụm thẻ KPI trên mobile.</td>
+          </tr>
+          <tr>
+            <td class="path" style="white-space:normal">assets/viddar.css</td>
+            <td class="path" style="white-space:normal">.vd-bottom-nav .tab-btn .h2-icon</td>
+            <td><code>width:18px; min-width:18px</code></td>
+            <td><code>16px</code><br><span style="color:var(--muted);font-size:11px">token <code>--h2-icon-16</code></span></td>
+            <td>Icon <code>home</code> trên thanh điều hướng đáy bị 18px, to hơn các icon cùng hàng, lệch nhịp thị giác.</td>
+          </tr>
+          <tr>
+            <td class="path" style="white-space:normal">assets/viddar.css</td>
+            <td class="path" style="white-space:normal">#moreMenuSheet .h2-icon</td>
+            <td><code>width:18px !important; min-width:18px !important</code></td>
+            <td><code>16px</code><br><span style="color:var(--muted);font-size:11px">token <code>--h2-icon-16</code></span></td>
+            <td>Icon trong sheet "Thêm" bị 18px; có <code>!important</code> nên các rule sau không thể ghi đè, rất khó phát hiện khi chỉ đọc CSS.</td>
+          </tr>
+          <tr>
+            <td class="path" style="white-space:normal">assets/viddar.css</td>
+            <td class="path" style="white-space:normal">.more-menu-sheet .h2-icon</td>
+            <td><code>width:18px !important; min-width:18px !important</code></td>
+            <td><code>16px</code><br><span style="color:var(--muted);font-size:11px">token <code>--h2-icon-16</code></span></td>
+            <td>Bản sao thứ hai của cùng lỗi ở selector khác, khiến việc sửa một chỗ không đủ &mdash; phải quét toàn bộ file.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="foot-note">
+      Cách sửa: đưa toàn bộ các khai báo trên về bậc chuẩn <code>16px</code> (khớp token
+      <code>--h2-icon-16</code>). <strong>Chỉ giữ <code>&lt;svg&gt;</code> ở giá trị cũ</strong> &mdash; không đụng
+      tới rule của <code>svg</code> vì ở đó giá trị đó là hợp lệ.
+    </p>
+
+    <div class="box guard" style="margin-top:16px">
+      <h3>Phòng ngừa vĩnh viễn &mdash; gate [5b]</h3>
+      <p>
+        Đã bổ sung gate mới <code>[5b]</code> trong <code>scripts/gate-icons.js</code> để chặn vĩnh viễn
+        lớp lỗi này. Gate quét <strong>mọi file CSS</strong>, <strong>bỏ comment</strong> trước khi kiểm,
+        và phát hiện mọi selector chứa <code>.h2-icon</code> đặt <code>width</code> / <code>height</code> /
+        <code>min-*</code> / <code>max-*</code> bằng số <code>px</code> cụ thể nằm ngoài bậc chuẩn
+        <code>14 / 16 / 20 / 24</code>.
+      </p>
+      <p>
+        <strong>Gate đã PROBE</strong> theo đúng protocol:
+        tiêm lỗi giả <code>width:17px</code> <strong>-&gt; gate FAIL đúng dòng</strong>;
+        phục hồi <strong>-&gt; ALL PASS, file byte-identical</strong> (khớp HEAD). Gate chưa probe là gate không đáng tin.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PHAN 5: TRANG THAI HAI MOI TRUONG ============ -->
+  <section>
+    <h2 class="sec">Trạng thái hai môi trường &middot; đối soát phép cộng</h2>
+
+    <div class="tbl-scroll" style="margin-bottom:18px">
+      <table style="min-width:820px">
+        <thead>
+          <tr>
+            <th style="width:110px">Môi trường</th>
+            <th style="width:150px">Trạng thái SCAR-014</th>
+            <th>Chi tiết đo được</th>
+            <th style="width:200px">Ghi chú</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>LOCAL</strong></td>
+            <td><span class="pill ok">0 vi phạm &mdash; đã sạch</span></td>
+            <td><code>sizeBad = 0</code> trên toàn bộ 22 lượt đo. Không còn icon nào ở 15px/18px; tất cả về bậc 14/16/20/24.</td>
+            <td><code>http://127.0.0.1:8899</code></td>
+          </tr>
+          <tr>
+            <td><strong>PROD</strong></td>
+            <td><span class="pill warn">9 bản ghi còn 15px</span></td>
+            <td>
+              <code>sizeBad = 9</code> ở 9 màn mobile (01..09). Ví dụ đo được trong <code>report.json</code>:
+              <code>video=15x15</code>, <code>file-text=15x15</code>, <code>tv=15x15</code>,
+              <code>hard-drive=15x15</code>, <code>home=18x18</code>, <code>video=18x18</code>.
+              Desktop PROD <code>sizeBad = 0</code> (lỗi chỉ lộ ở breakpoint mobile).
+            </td>
+            <td>Chờ deploy bản <code>?v=20260924-p39</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box">
+      <h3>Bản p39</h3>
+      <p>
+        Bản <code>p39</code> đã bump <strong>40 ref cache-busting</strong> trên
+        <code>index.html</code> (20 ref), <code>player.html</code> (10 ref), <code>learn.html</code> (10 ref).
+        Mục đích: đảm bảo trình duyệt và CDN lấy đúng bản CSS đã sửa, không phục vụ bản cache cũ.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Cách anh tự kiểm bằng mắt</h3>
+      <p>
+        1. Mở <code>http://127.0.0.1:8899</code> (LOCAL) hoặc <code>https://h2dev-learn.tonymmo.com</code> (PROD).<br>
+        2. Bấm <strong>Ctrl+F5</strong> để xóa cache và tải lại cứng, tránh nhìn phải bản CSS cũ.<br>
+        3. So mắt với ảnh trong trang này. Sau khi PROD nhận bản <code>p39</code>, icon trong 9 màn mobile PROD
+        phải to bằng đúng icon trong ảnh nhóm LOCAL (nhóm A).
+      </p>
+      <p>
+        Điểm cần soi kỹ nhất: cụm stat card ở màn <strong>Tổng quan</strong> và icon <code>home</code>
+        trên thanh điều hướng đáy &mdash; đây là hai chỗ lộ lỗi rõ nhất trong ảnh PROD hiện tại.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Đối soát phép cộng &mdash; lấy trực tiếp từ report.json</h3>
+      <p class="kv">Bốn tổ hợp, cộng theo thứ tự màn 01 -&gt; 11:</p>
+      <table>
+        <thead>
+          <tr><th>Tổ hợp</th><th>Phép cộng</th><th>Tổng</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LOCAL &mdash; mobile</td>
+            <td><code>20+20+20+271+239+47+172+369+45+1+38</code></td>
+            <td class="num">1242</td>
+          </tr>
+          <tr>
+            <td>LOCAL &mdash; desktop</td>
+            <td><code>20+20+20+271+239+47+173+369+45+1+38</code></td>
+            <td class="num">1243</td>
+          </tr>
+          <tr>
+            <td>PROD &mdash; mobile</td>
+            <td><code>20+20+20+271+239+47+172+369+45+2+38</code></td>
+            <td class="num">1243</td>
+          </tr>
+          <tr>
+            <td>PROD &mdash; desktop</td>
+            <td><code>20+20+20+271+239+47+173+369+45+2+38</code></td>
+            <td class="num">1244</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top:12px">
+        <strong>Đính chính thẳng:</strong> con số <code>1212</code> / <code>1213</code> em đưa ra ban đầu là
+        <strong>SAI</strong> do cộng nhầm. Số đúng là <code>1242</code> (LOCAL mobile), <code>1243</code>
+        (LOCAL desktop và PROD mobile), <code>1244</code> (PROD desktop). Trang này đã sửa lại đúng runtime.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Vì sao màn 10 &mdash; Lộ trình khác nhau giữa LOCAL và PROD?</h3>
+      <p>
+        Đã điều tra bằng browser thật (không suy đoán). Cả hai môi trường đều render
+        <strong>412 thẻ &lt;svg&gt;</strong> và <strong>140 lesson-row</strong> giống nhau.
+        Khác biệt duy nhất:
+      </p>
+      <table>
+        <thead><tr><th>Môi trường</th><th>Số .h2-icon</th><th>Danh sách icon</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>LOCAL</td>
+            <td class="num">1</td>
+            <td><code>arrow-left</code> (14px) trong <code>.back-home</code></td>
+          </tr>
+          <tr>
+            <td>PROD</td>
+            <td class="num">2</td>
+            <td><code>arrow-left</code> (14px) + <code>play</code> (14px) trong <code>.resume-label</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top:12px">
+        <strong>Kết luận: KHÔNG phải bug.</strong> Icon <code>play</code> thuộc khối "Tiếp tục học" &mdash;
+        khối này chỉ hiện khi <code>localStorage</code> đã ghi nhớ bài đang học dở. Browser của em đã có
+        trạng thái đó trên PROD, còn trên LOCAL thì chưa. Đây là <strong>khác biệt trạng thái người dùng</strong>,
+        không phải lỗi code hay lỗi render. Cả hai icon đều đúng bậc <code>14px</code>.
+      </p>
+      <p>
+        Các số còn lại khớp <strong>100%</strong> giữa 2 môi trường: <code>status = 200</code> toàn bộ 22 lượt,
+        <code>consoleErrors = []</code> toàn bộ, <code>glyphBad = 0</code> toàn bộ.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PHAN 6: FOOTER ============ -->
+  <footer>
+    <p>
+      Nguồn dữ liệu: <code>_tmp-proof/report.json</code> + thư mục <code>_tmp-proof/shots/</code> (44 file PNG).
+      Mọi con số trong trang này lấy trực tiếp từ <code>report.json</code>, trừ phần "Đối soát phép cộng" đã ghi rõ sai lệch.
+    </p>
+    <p>
+      Ghi chú: trang này là <strong>công cụ nghiệm thu tạm thời</strong>, sẽ được dọn cùng <code>_tmp-proof/</code>
+      sau khi anh duyệt xong. File này tự chứa, không gọi mạng, không dùng CDN.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

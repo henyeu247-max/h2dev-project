@@ -25,7 +25,8 @@
   function ftsToSuggestions(rows) {
     return rows.map(function (r) {
       var et = (r.entity_type || "").toLowerCase();
-      var icon = et === "channel" ? "📺" : et === "lesson" || et === "video" ? "🎓" : et === "document" ? "📄" : "🔎";
+      /* PHASE 3 (2026-09-23): icon = TEN icon (he CSS mask), khong dung emoji. */
+      var icon = et === "channel" ? "tv" : et === "lesson" || et === "video" ? "graduation-cap" : et === "document" ? "file-text" : "search";
       var href = "#";
       if (et === "channel" && r.entity_id) href = "/#kenh";
       else if (et === "lesson" || et === "video") href = "/lotrinh/" + encodeURIComponent(r.entity_id || "");
@@ -75,10 +76,15 @@
    */
   function rowHtml(item, idx, jsRowClass) {
     var title = global.H2UICore && global.H2UICore.highlightQuery ? global.H2UICore.highlightQuery(item.title, item.searchTerm) : item.title;
+    /* PHASE 3: item.icon la TEN icon => render qua H2Icons.ico. Neu noi bo cu con truyen
+     * emoji/HTML thi van chay (khong phai loai bo du lieu lich su). */
+    var icoHtml = (item.icon && global.H2Icons && /^[a-z0-9-]+$/.test(item.icon))
+      ? global.H2Icons.ico(item.icon, 16) + " "
+      : (item.icon ? item.icon + " " : "");
     return (
       '<button type="button" class="' + jsRowClass + " px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group\" data-idx=\"" + idx + '" data-href="' + (item.directUrl || "#") + '" data-sku="' + (item.sku || "") + '" data-raw="' + (item.rawId || "") + '" data-term="' + (item.searchTerm || "") + '">' +
       '<span class="min-w-0 flex-1 text-left">' +
-      '<span class="block text-[13px] text-white truncate">' + (item.icon || "") + " " + title + "</span>" +
+      '<span class="block text-[13px] text-white truncate">' + icoHtml + title + "</span>" +
       '<span class="block text-[11px] text-gray-400 truncate">' + (item.sub || "") + "</span>" +
       "</span>" +
       '<span class="shrink-0 text-[10px] font-mono border rounded px-1.5 py-0.5 ' + (item.badgeColor || "") + '">' + (item.badge || "") + "</span>" +

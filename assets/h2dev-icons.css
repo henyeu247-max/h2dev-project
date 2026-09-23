@@ -153,6 +153,7 @@
 .h2-icon[data-h2i="file-edit"]         { -webkit-mask-image: url("icons/file-edit.svg");         mask-image: url("icons/file-edit.svg"); }
 .h2-icon[data-h2i="file-image"]        { -webkit-mask-image: url("icons/file-image.svg");        mask-image: url("icons/file-image.svg"); }
 .h2-icon[data-h2i="file-text"]         { -webkit-mask-image: url("icons/file-text.svg");         mask-image: url("icons/file-text.svg"); }
+.h2-icon[data-h2i="files"]             { -webkit-mask-image: url("icons/files.svg");             mask-image: url("icons/files.svg"); }
 .h2-icon[data-h2i="film"]              { -webkit-mask-image: url("icons/film.svg");              mask-image: url("icons/film.svg"); }
 .h2-icon[data-h2i="filter"]            { -webkit-mask-image: url("icons/filter.svg");            mask-image: url("icons/filter.svg"); }
 .h2-icon[data-h2i="filter-x"]          { -webkit-mask-image: url("icons/filter-x.svg");          mask-image: url("icons/filter-x.svg"); }
@@ -300,4 +301,4 @@
 .h2-icon[data-h2i="x-circle"]          { -webkit-mask-image: url("icons/x-circle.svg");          mask-image: url("icons/x-circle.svg"); }
 .h2-icon[data-h2i="zap"]               { -webkit-mask-image: url("icons/zap.svg");               mask-image: url("icons/zap.svg"); }
 
-/* TONG SO ICON DANG KY: 222 (khop 222/222 file SVG trong assets/icons/) */
+/* TONG SO ICON DANG KY: 225 (khop 225/225 file SVG trong assets/icons/) */

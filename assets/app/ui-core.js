@@ -117,10 +117,18 @@ function highlightQuery(text, query) {
 
 
 function statCard(icon, label, value, sub, tabTarget, live) {
-  // icon: chỉ cho phép nhánh SVG nội bộ được render thô; mọi giá trị khác phải escape
+  /* icon: CHI cho phep 2 dang NOI BO duoc render tho; moi gia tri khac PHAI escape.
+   * PHASE 3 (2026-09-23) — P3.6a: mo rong nhan dien them <span class="h2-icon">.
+   *   LY DO: truoc day chi nhan `<svg` -> khi gop he icon sang ico('name') (span
+   *   khong chua <svg>), icon se BI ESCAPE thanh text => hien chu "<span class=...>".
+   *   Day la chan bat buoc phai sua TRUOC khi gop (xem _tmp-p36-mapping.md muc B1).
+   *   VAN GIU NGUYEN tinh bao mat: whitelist 2 dang noi bo, moi thu khac esc(). */
   const isSvg = typeof icon === 'string' && icon.includes('<svg');
+  /* khop CA 2 dang: class="h2-icon" (khong size) VA class="h2-icon h2-icon--16" (co size).
+   * Dung regex de khong phu thuoc dau dong ngoac. */
+  const isH2Icon = typeof icon === 'string' && /class="h2-icon(\s|")/.test(icon);
   const safeLabel = esc(label);
-  const glyph = isSvg ? icon : (icon ? `<span class="stat-glyph">${esc(icon)}</span>` : '');
+  const glyph = (isSvg || isH2Icon) ? icon : (icon ? `<span class="stat-glyph">${esc(icon)}</span>` : '');
   const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${safeLabel}" data-kpi-card="1"` : '';
   return `<div class="bento-card${tabTarget ? ' cursor-pointer hover:border-brand/40 transition-colors' : ''}"${clickAttr}>
 <div class="stat-icon">${glyph}</div>

@@ -788,14 +788,15 @@
           </tr>
           <tr>
             <td><strong>PROD</strong></td>
-            <td><span class="pill warn">9 bản ghi còn 15px</span></td>
+            <td><span class="pill ok">0 vi phạm &mdash; đã sạch</span></td>
             <td>
-              <code>sizeBad = 9</code> ở 9 màn mobile (01..09). Ví dụ đo được trong <code>report.json</code>:
-              <code>video=15x15</code>, <code>file-text=15x15</code>, <code>tv=15x15</code>,
-              <code>hard-drive=15x15</code>, <code>home=18x18</code>, <code>video=18x18</code>.
-              Desktop PROD <code>sizeBad = 0</code> (lỗi chỉ lộ ở breakpoint mobile).
+              Trước khi deploy: <code>sizeBad = 9</code> ở 9 màn mobile (01..09), ví dụ
+              <code>video=15x15</code>, <code>file-text=15x15</code>, <code>home=18x18</code>.
+              <strong>Sau khi deploy bản p39 và đo lại: <code>sizeBad = 0</code> trên cả 4 tổ hợp</strong>
+              (PROD mobile 0, PROD desktop 0, LOCAL mobile 0, LOCAL desktop 0), <code>glyphBad = 0</code>,
+              <code>consoleErrors = 0</code>. Bằng chứng: chạy lại Playwright 44 lượt sau deploy.
             </td>
-            <td>Chờ deploy bản <code>?v=20260924-p39</code></td>
+            <td><span class="pill ok">ĐÃ DEPLOY p39</span> &mdash; đo lại 44/44 PASS</td>
           </tr>
         </tbody>
       </table>

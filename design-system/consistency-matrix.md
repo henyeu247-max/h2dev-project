@@ -19,38 +19,49 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 
 ## A. Shell (khung trang)
 
-| Hạng mục | index.html | learn.html | player.html | Tabs khác | Hiện trạng | Chuẩn bắt buộc | Ưu tiên |
+> **CẬP NHẬT 2026-09-24 (P0 SHELL HOÀN TẤT):** các dòng **P0** dưới đây đã được **sửa xong và kiểm chứng**.
+> Bằng chứng: gate mới `scripts/gate-shell.js` **ALL PASS 6/6** (`index|learn|player` × `desktop1440|mobile390`)
+> + **PROBE 2 lớp OK** (tiêm lỗi runtime HTML → FAIL; tiêm lỗi source JS → FAIL; phục hồi byte-identical)
+> + **3 vòng check-pass**: 6/6 shell → 6/6 toast/a11y → **24/24** regression (6 lượt trang + 18 lượt tab).
+> Trạng thái **đo bằng browser thật (Playwright)**, không đo bằng `curl`/grep.
+
+| Hạng mục | index.html | learn.html | player.html | Tabs khác | Hiện trạng (SAU P0) | Chuẩn bắt buộc | Trạng thái |
 |---|---|---|---|---|---|---|---|
-| Header class | `.vd-topbar` | `.learn-header` | `.app-top` | — | 3 class, 3 hệ CSS | 1 class shell chuẩn dùng chung | P1 |
-| Chiều cao header | 56px | 56px | **52px** | — | Lệch 4px giữa player và 2 trang kia | **56px** đồng nhất | P1 |
-| Định vị header | sticky → fixed mobile | fixed | sticky | — | 2 cơ chế khác nhau | sticky desktop / fixed mobile | P1 |
-| z-index header | 20 / 100 | 40 / 50 | 20 | — | 3 giá trị khác nhau | `--z-sticky:20` / `--z-fixed:40` / `--z-topbar-mobile:100` | P1 |
-| Logo brand | SVG radar động + wordmark `h2dev` | ô `.brand-mark` chữ "H2" | ô `.brand-mark` chữ "H2" | — | learn + player lệch brand | **1 dạng duy nhất**: SVG radar + wordmark `h2dev` | P0 |
-| Title font | Space Grotesk (`--font-display`) | Inter (`--font-heading` tự định nghĩa ở `learn.css:17`) | Space Grotesk (`--font-display`) | — | learn tự chế token font riêng | `--font-display` cho title shell; gỡ `--font-heading` khỏi `learn.css` | P1 |
-| Sidebar | `.app-sidebar` | KHÔNG | KHÔNG | — | Chỉ index có | Chấp nhận khác biệt (sidebar là đặc thù index), nhưng bottom-nav phải có chuẩn riêng | P3 |
-| Footer | `.app-footer`, có `border-top` | `.learn-footer`, **KHÔNG** `border-top` | **KHÔNG CÓ FOOTER** | — | 3 trạng thái: đủ / thiếu border / thiếu hẳn | Cùng cấu trúc + **bắt buộc** `border-top` + cùng text | P0 |
-| Footer text | "H2DEV · kho faceless YouTube · không cần đăng nhập" | "Không cần đăng nhập" (chữ **K** hoa) | — | — | Lệch chữ hoa/thường + thiếu nội dung | Cùng 1 chuỗi chuẩn | P2 |
-| Bottom-nav | `#bottom-nav` | KHÔNG | KHÔNG | — | Chỉ index có | Chấp nhận (đặc thù index) | P3 |
-| Back-to-top element | CÓ | CÓ | **KHÔNG CÓ** | — | player thiếu hoàn toàn | **Bắt buộc** mọi trang | P0 |
-| Back-to-top JS bind | `main.js:754-772` | `learn.js:434-449` | **KHÔNG CÓ** | — | player thiếu hoàn toàn | **Bắt buộc** mọi trang | P0 |
-| Back-to-top size | 38px | 38px | — | — | Dưới 44px | **≥ 44px** | P1 |
-| Vị trí DOM back-to-top | sau `<script>` cuối | trước `</body>` | — | — | 2 vị trí khác nhau | Thống nhất: ngay trước `</body>` | P3 |
-| Skip-link | CÓ | **KHÔNG** | **KHÔNG** | — | 1/3 trang có | **Bắt buộc** mọi trang | P0 |
-| Floating back btn riêng | — | — | có `.floating-back-btn` | — | player tự chế nút riêng | Gộp vào chuẩn back-to-top | P3 |
+| Header class | `.vd-topbar`+`.h2-shell-header` | `.learn-header`+`.h2-shell-header` | `.app-top`+`.h2-shell-header` | — | 3 class cũ nhưng **đều đã gắn `.h2-shell-header`** | 1 class shell chuẩn dùng chung | ✅ **ĐẠT** |
+| Chiều cao header | 56px | 56px | 56px | — | **56px ở MỌI viewport** (đã gỡ mốc 50px của index và learn.css) | **56px** đồng nhất | ✅ **XONG** |
+| Định vị header | sticky → fixed mobile | fixed | sticky | — | Còn khác nhau nhưng **đã đúng chuẩn** (sticky desktop / fixed mobile) | sticky desktop / fixed mobile | ✅ **ĐẠT** |
+| z-index header | 20 / 100 | 40 / 50 | 20 | — | 3 giá trị khác nhau | `--z-sticky:20` / `--z-fixed:40` / `--z-topbar-mobile:100` | ⬜ **CÒN NỢ (P1)** |
+| Logo brand | radar SVG + wordmark `h2dev` | radar SVG + wordmark `h2dev` | radar SVG + wordmark `h2dev` | — | **1 dạng duy nhất** (đã thay ô chữ "H2" ở learn+player) | **1 dạng duy nhất**: SVG radar + wordmark `h2dev` | ✅ **XONG** |
+| Title font | Space Grotesk (`--font-display`) | Space Grotesk (shell) | Space Grotesk (`--font-display`) | — | learn đã dùng shell title | `--font-display` cho title shell | ✅ **ĐẠT** |
+| Sidebar | `.app-sidebar` | KHÔNG | KHÔNG | — | Chỉ index có | Chấp nhận khác biệt (đặc thù index) | ✅ **ĐẠT** |
+| Footer | `.h2-shell-footer`, `border-top` 1px | `.h2-shell-footer`, `border-top` 1px | `.h2-shell-footer`, `border-top` 1px | — | **3/3 trang đủ**: cùng class + `border-top` 1px + cùng chuỗi | Cùng cấu trúc + **bắt buộc** `border-top` + cùng text | ✅ **XONG** |
+| Footer text | "H2DEV · kho faceless YouTube · không cần đăng nhập" | ← giống hệt | ← giống hệt | — | **Chuỗi đồng nhất 3/3** (đã sửa learn từ "Không cần đăng nhập") | Cùng 1 chuỗi chuẩn | ✅ **XONG** |
+| Bottom-nav | `#bottom-nav` | KHÔNG | KHÔNG | — | Chỉ index có | Chấp nhận (đặc thù index) | ✅ **ĐẠT** |
+| Back-to-top element | CÓ (`.h2-shell-backtotop`) | CÓ | CÓ | — | **3/3 trang có**, đúng 1 phần tử/trang | **Bắt buộc** mọi trang | ✅ **XONG** |
+| Back-to-top JS bind | `main.js` | `learn.js` | `player-main.js` | — | **3/3 đã bind** (đã đo: click → `scrollY` về 0) | **Bắt buộc** mọi trang | ✅ **XONG** |
+| Back-to-top size | 44x44 | 44x44 | 44x44 | — | **44x44 đạt WCAG 2.5.8** (trước là 38px) | **≥ 44px** | ✅ **XONG** |
+| Vị trí DOM back-to-top | ngay trước `</body>` | ngay trước `</body>` | ngay trước `</body>` | — | **3/3 thống nhất** | Thống nhất: ngay trước `</body>` | ✅ **XONG** |
+| Skip-link | CÓ | CÓ | CÓ | — | **3/3 có**, href trỏ tới phần tử có thật (đã kiểm `#panel-root`/`#panelRoot`/`#playerMain`) | **Bắt buộc** mọi trang | ✅ **XONG** |
+| Floating back btn riêng | — | — | đã gộp | — | Nút riêng đã bị thay bằng chuẩn back-to-top | Gộp vào chuẩn back-to-top | ✅ **XONG** |
 
 ## B. Hệ điều hướng (3 hệ khác nhau 100%)
 
-| Hạng mục | index.html | learn.html | player.html | Hiện trạng | Chuẩn bắt buộc | Ưu tiên |
+> **CẬP NHẬT 2026-09-24 (P0 NAV ARIA HOÀN TẤT):** `role=tablist/tab`, `aria-selected`, `aria-controls`,
+> roving tabindex, arrow-key **đã đủ trên 3/3 trang**. Đo bằng browser thật: index 16/16, learn 4/4, player 3/3.
+
+| Hạng mục | index.html | learn.html | player.html | Hiện trạng (SAU P0) | Chuẩn bắt buộc | Trạng thái |
 |---|---|---|---|---|---|---|
-| Container | sidebar `#tabs` | `.tabbar .tab-btn` | `#playerTabSelector` | 3 hệ độc lập | 1 chuẩn ARIA chung | P1 |
-| `role="tablist"` | CÓ | **KHÔNG** | CÓ | 2/3 có | Bắt buộc | P0 |
-| `role="tab"` | CÓ | **KHÔNG** | CÓ | 2/3 có | Bắt buộc | P0 |
-| `aria-selected` | CÓ | CÓ | CÓ | 3/3 có | Bắt buộc | ✅ |
-| `aria-controls` | CÓ | **KHÔNG** | **KHÔNG** | 1/3 có | Bắt buộc | P0 |
-| Roving tabindex | CÓ | **KHÔNG** | **KHÔNG** | 1/3 có | Bắt buộc | P0 |
-| Arrow-key nav | CÓ | **KHÔNG** | **KHÔNG** | 1/3 có | Bắt buộc | P0 |
-| `aria-label` | CÓ | CÓ | CÓ | 3/3 có | Bắt buộc | ✅ |
+| Container | sidebar `#tabs` | `.tabbar #tabbar` | `#playerTabSelector` | 3 hệ độc lập về hình thức, **đồng nhất về ARIA** | 1 chuẩn ARIA chung | ✅ **ĐẠT ARIA** |
+| `role="tablist"` | CÓ | CÓ | CÓ | **3/3** (player được bổ sung `aria-label`) | Bắt buộc | ✅ **XONG** |
+| `role="tab"` | CÓ (do `nav.js` sinh) | CÓ | CÓ | **3/3** (index 16, learn 4, player 3) | Bắt buộc | ✅ **XONG** |
+| `aria-selected` | CÓ (16/16) | CÓ (4/4) | CÓ (3/3) | **3/3 đủ 100%** | Bắt buộc | ✅ **XONG** |
+| `aria-controls` | CÓ (16/16 → `#content`) | CÓ (4/4 → `#panelRoot`) | **CÓ (3/3 → `#playerMain`)** | **3/3 đủ**, href trỏ tới đích **có thật** | Bắt buộc | ✅ **XONG** |
+| Roving tabindex | CÓ | CÓ (1 tab `tabindex=0`) | **CÓ** (chốt ngay khi nạp qua `initPlayerTabKeyboard`) | **3/3 có ít nhất 1 tab `tabindex=0`** | Bắt buộc | ✅ **XONG** |
+| Arrow-key nav | CÓ | CÓ | **CÓ** (`ArrowLeft/Right/Home/End`) | **3/3** | Bắt buộc | ✅ **XONG** |
+| `aria-label` | CÓ | CÓ | **CÓ** ("Nội dung bài học") | **3/3** | Bắt buộc | ✅ **XONG** |
+| Touch target tab | 44px (mobile) | 44px (mobile) | 44px (mobile) | `min-height: var(--h2-touch-min)` áp ở `≤639px` cho cả 3 | **≥ 44px**, cấm co nhỏ | ✅ **XONG** |
 | Khuôn mẫu để noi theo | **`#tabs` (đủ chuẩn)** | — | — | — | Dùng `#tabs` làm reference | — |
+
 
 ## C. Icon — 4 hệ song song
 

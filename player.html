@@ -25,8 +25,28 @@
   <div class="flex items-center gap-3">
     <a href="javascript:void(0)" id="btnBack" class="btn-ghost"><span class="h2-icon h2-icon--14" data-h2i="arrow-left" aria-hidden="true"></span> Quay lại</a>
     <a href="/" class="btn-ghost" title="Về trang chủ">Trang chủ</a>
-    <div class="brand-mark">H2</div>
-    <span class="h2-shell-title">H2DEV Studio</span>
+    <a href="/" class="h2-shell-brand" title="Về trang chủ H2DEV">
+      <span class="vd-radar-wrap">
+        <svg class="vd-radar" width="28" height="28" viewBox="0 0 64 64" fill="none" role="img" aria-label="H2DEV">
+          <defs>
+            <linearGradient id="vd-sweep" x1="32" y1="32" x2="53" y2="12" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E2023A" stop-opacity=".95"/>
+              <stop offset="1" stop-color="#E2023A" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="4" fill="#050505"></rect>
+          <circle class="radar-ping" cx="32" cy="32" r="21" stroke="#E2023A" stroke-width="2.4" opacity=".55"></circle>
+          <g class="radar-sweep">
+            <path d="M32 32 L32 11 A21 21 0 0 1 51.7 25.8 Z" fill="url(#vd-sweep)"></path>
+            <line x1="32" y1="32" x2="51.7" y2="25.8" stroke="#E2023A" stroke-width="2.4" stroke-linecap="round"></line>
+          </g>
+          <circle cx="32" cy="32" r="2.8" fill="#E2023A"></circle>
+          <circle cx="44" cy="21" r="3.6" fill="#FFCC00"></circle>
+        </svg>
+      </span>
+      <span class="vd-wordmark">h2<em>dev</em></span>
+    </a>
+    <span class="h2-shell-title h2-shell-title--page">H2DEV Studio</span>
   </div>
   <div class="flex items-center gap-2">
       <button id="btnTheater" type="button" class="theater-toggle-badge inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-ink-700 hover:bg-ink-600 border border-ink-600 text-gray-200 transition-colors cursor-pointer" title="Bật/Tắt chế độ rạp chiếu (Phím tắt T)">
@@ -53,14 +73,14 @@
   </div>
 
   <!-- Mobile & Compact View Segmented Tab Control -->
-  <div class="flex items-center gap-1 p-1 mb-4 bg-surface-2 border border-border rounded-xl" id="playerTabSelector" role="tablist">
-    <button type="button" role="tab" aria-selected="true" data-player-tab="overview" class="flex-1 py-2 px-2 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-all text-center flex items-center justify-center gap-1 min-h-[38px]">
+  <div class="flex items-center gap-1 p-1 mb-4 bg-surface-2 border border-border rounded-xl" id="playerTabSelector" role="tablist" aria-label="Nội dung bài học">
+    <button type="button" role="tab" id="ptab-overview" aria-selected="true" aria-controls="playerMain" data-player-tab="overview" class="flex-1 py-2 px-2 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-all text-center flex items-center justify-center gap-1 min-h-[44px]">
       <span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span><span>Bài học<span class="hidden sm:inline"> &amp; Tài liệu</span></span>
     </button>
-    <button type="button" role="tab" aria-selected="false" data-player-tab="insights" class="flex-1 py-2 px-2 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1 min-h-[38px]">
+    <button type="button" role="tab" id="ptab-insights" aria-selected="false" aria-controls="playerMain" data-player-tab="insights" class="flex-1 py-2 px-2 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1 min-h-[44px]">
       <span class="h2-icon h2-icon--14" data-h2i="brain" aria-hidden="true"></span><span>Phân tích AI</span>
     </button>
-    <button type="button" role="tab" aria-selected="false" data-player-tab="transcript" class="flex-1 py-2 px-2 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1 min-h-[38px]">
+    <button type="button" role="tab" id="ptab-transcript" aria-selected="false" aria-controls="playerMain" data-player-tab="transcript" class="flex-1 py-2 px-2 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-all text-center flex items-center justify-center gap-1 min-h-[44px]">
       <span class="h2-icon h2-icon--14" data-h2i="message-circle" aria-hidden="true"></span><span>Phụ đề</span>
     </button>
   </div>
@@ -168,8 +188,8 @@
       </section>
     </div>
   </div>
-  <!-- Toast Container -->
-  <div id="toast-box"></div>
+  <!-- Toast Container — P0: chuan shell (aria-live + aria-atomic), dong bo 3 trang -->
+  <div id="toast-box" role="status" aria-live="polite" aria-atomic="true"></div>
   <!-- Floating Back Button (Nút quay lại nổi) -->
   <!-- PHASE 2: Back-to-top chuan (truoc day player THIEU hoan toan) -->
   <button id="btn-back-to-top" type="button" class="h2-shell-backtotop" aria-label="Cuộn lên đầu trang" title="Cuộn lên đầu trang">
@@ -178,6 +198,8 @@
 </main>
 <!-- PHASE 2: Footer chuan (truoc day player THIEU hoan toan) -->
 <footer class="h2-shell-footer">H2DEV · kho faceless YouTube · không cần đăng nhập</footer>
+<!-- P0: vung thong bao a11y cap trang (dong bo index/learn) -->
+<div id="a11y-status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 <!-- N11 FIX (2026-09-23): nap h2dev-core.js (tang nen dung chung) TRUOC player-main.js.
      Truoc day player.html KHONG nap -> phai tu che esc()/showToast(). -->
 <script src="/assets/h2dev-core.js?v=20260924-p40"></script>

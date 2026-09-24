@@ -84,10 +84,10 @@
     return (
       '<button type="button" class="' + jsRowClass + " px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group\" data-idx=\"" + idx + '" data-href="' + (item.directUrl || "#") + '" data-sku="' + (item.sku || "") + '" data-raw="' + (item.rawId || "") + '" data-term="' + (item.searchTerm || "") + '">' +
       '<span class="min-w-0 flex-1 text-left">' +
-      '<span class="block text-[13px] text-white truncate">' + icoHtml + title + "</span>" +
-      '<span class="block text-[11px] text-gray-400 truncate">' + (item.sub || "") + "</span>" +
+      '<span class="block text-sm text-white truncate">' + icoHtml + title + "</span>" +
+      '<span class="block text-2xs text-gray-400 truncate">' + (item.sub || "") + "</span>" +
       "</span>" +
-      '<span class="shrink-0 text-[10px] font-mono border rounded px-1.5 py-0.5 ' + (item.badgeColor || "") + '">' + (item.badge || "") + "</span>" +
+      '<span class="shrink-0 text-2xs font-mono border rounded px-1.5 py-0.5 ' + (item.badgeColor || "") + '">' + (item.badge || "") + "</span>" +
       "</button>"
     );
   }

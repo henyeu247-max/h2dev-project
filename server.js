@@ -416,7 +416,7 @@ const server = http.createServer(async (req,res)=>{
         res.writeHead(404, withSecure({ 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' }));
         res.end('<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><title>404 — Không tìm thấy bài học</title>'
           + '<meta name="robots" content="noindex"></head><body style="background:#050505;color:#f0f0f0;font-family:Inter,sans-serif;padding:48px;text-align:center">'
-          + '<h1 style="font-size:22px">404 — Không tìm thấy bài học</h1>'
+          + '<h1 style="font-size:24px">404 — Không tìm thấy bài học</h1>'
           + '<p style="color:#a9a9a9">Mã bài học <code>' + sku.replace(/[<>&"]/g, '') + '</code> không tồn tại trong kho.</p>'
           + '<p><a href="/lotrinh" style="color:#ff8095">← Về danh mục lộ trình</a></p></body></html>');
         return;

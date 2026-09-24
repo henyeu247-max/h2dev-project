@@ -1,6 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html','./player.html','./learn.html','./assets/*.js'],
+  /* SUA 2026-09-24 (P3.7): content cu './assets/*.js' la SAI DUONG DAN.
+   *   Thuc te class Tailwind nam o assets/app/*.js + assets/app/tabs/*.js (thu muc con)
+   *   va duoc sinh dong trong JS (render), nen glob cu khong quet toi
+   *   -> `npm run build:css` PURGE MAT 253 class -> vo UI.
+   *   Day la ly do KHONG DUOC rebuild tailwind.css bang config cu.
+   *   Dung glob de quy **\/*.js moi phu het. */
+  content: [
+    './index.html',
+    './player.html',
+    './learn.html',
+    './assets/**/*.js',
+  ],
+  /* P3.7 (2026-09-24): SAFELIST 9 bac font-size chuan.
+   * Ly do: Tailwind chi sinh class NAO duoc quet thay trong content.
+   *   Neu doi text-[10px] -> text-[14px] ma `text-[14px]` chua tung xuat hien
+   *   thi class KHONG duoc sinh -> validate-project bao "class thieu CSS that" (da gap that).
+   *   Safelist dam bao 9 bac LUON co CSS, bat ke co dang duoc dung hay khong. */
+  safelist: [
+    'text-2xs', 'text-xs', 'text-sm', 'text-base', 'text-md',
+    'text-lg', 'text-xl', 'text-2xl', 'text-3xl',
+  ],
   theme: {
     extend: {
       colors: {
@@ -14,6 +34,27 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter','ui-sans-serif','system-ui','-apple-system','sans-serif'],
+      },
+      /* P3.7 (2026-09-24): THANG FONT-SIZE CHUAN 9 BAC.
+       * Ly do: code dang dung class arbitrary `text-[11px]`, `text-[12px]`, `text-[14px]`...
+       *   Tailwind chi sinh class arbitrary NEU quet thay chuoi do trong content.
+       *   Khi doi class cu -> class moi (vd text-[10px] -> text-[14px]) ma class moi
+       *   chua tung xuat hien thi no KHONG duoc sinh -> validate-project BAO FAIL
+       *   "class thieu CSS that".
+       * Giai phap: khai bao san 9 bac -> moi class text-{ten} duoc sinh chac chan,
+       *   ke ca khi chua xuat hien trong content.
+       * Nguon chuan: design-system/tokens.json -> font.sizeScale.standardized.
+       * LUU Y: van KHONG duoc dung text-[Npx] arbitrary ngoai 9 bac (gate chan). */
+      fontSize: {
+        '2xs': '11px',
+        'xs': '12px',
+        'sm': '13px',
+        'base': '14px',
+        'md': '16px',
+        'lg': '18px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
       },
       boxShadow: {
         card: '0 1px 3px rgba(0,0,0,.3), 0 1px 2px rgba(0,0,0,.2)',

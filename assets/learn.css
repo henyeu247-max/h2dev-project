@@ -34,7 +34,7 @@ h1,h2,h3 { margin: 0; color: var(--txt); font-family: var(--font-heading); lette
 }
 .learn-brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
 .brand-mark { display: grid; place-items: center; flex: 0 0 auto; width: 28px; height: 28px; border-radius: 4px; background: var(--pri); color: #fff; font: 700 11px/1 var(--font-mono); }
-.learn-brand h1 { font-size: 15px; font-weight: 600; line-height: 1.2; }
+.learn-brand h1 { font-size: 16px; font-weight: 600; line-height: 1.2; }
 .learn-brand span { display: block; margin-top: 2px; color: var(--mut); font-size: 11px; line-height: 1.2; }
 .header-right { display: flex; align-items: center; gap: 12px; margin-left: auto; min-width: 0; }
 .progress-pill { display: flex; align-items: center; gap: 8px; }

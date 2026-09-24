@@ -921,16 +921,16 @@
           <div style="position:relative; width:100%; max-width:980px; max-height:92vh; background:#0f172a; border:1px solid #334155; border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
             <div style="display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; background:#1e293b; border-bottom:1px solid #334155; flex-shrink:0;">
               <div style="display:flex; align-items:center; gap:0.75rem; min-width:0;">
-                <span style="font-size:1.25rem; display:inline-flex;">${ico('bar-chart-3', 20)}</span>
+                <span style="font-size: 18px; display:inline-flex;">${ico('bar-chart-3', 20)}</span>
                 <div class="min-w-0-g3">
-                  <h3 style="font-size:1rem; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Hồ Sơ Chuyên Sâu: ${esc(ch.title || r.id)}</h3>
-                  <p style="font-size:0.75rem; color:#94a3b8;">Đang nạp dữ liệu chi tiết...</p>
+                  <h3 style="font-size: 14px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Hồ Sơ Chuyên Sâu: ${esc(ch.title || r.id)}</h3>
+                  <p style="font-size: 12px; color:#94a3b8;">Đang nạp dữ liệu chi tiết...</p>
                 </div>
               </div>
-              <button type="button" id="close-raw-deep" style="padding:0.4rem 0.85rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size:0.8rem; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+              <button type="button" id="close-raw-deep" style="padding:0.4rem 0.85rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size: 13px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
             </div>
-            <div style="padding:3rem 2rem; text-align:center; color:#94a3b8; font-size:0.9rem;">
-              <div style="font-size:2rem; margin-bottom:0.75rem; display:flex; justify-content:center;">${ico('hourglass', 24)}</div>
+            <div style="padding:3rem 2rem; text-align:center; color:#94a3b8; font-size: 14px;">
+              <div style="font-size: 32px; margin-bottom:0.75rem; display:flex; justify-content:center;">${ico('hourglass', 24)}</div>
               Đang đọc toàn bộ hồ sơ kênh, thống kê vidIQ và danh sách top videos từ kho dữ liệu...
             </div>
           </div>
@@ -1008,18 +1008,18 @@
                   <img src="${esc(pData.avatar || ch.avatar || 'assets/thumbs/placeholder.svg')}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" alt="Avatar" loading="lazy" decoding="async" class="raw-deep-header-avatar" width="48" height="48" style="width:48px; height:48px; border-radius:0.75rem; object-fit:cover; border:1px solid #374151; flex-shrink:0;">
                   <div style="min-width:0; flex:1;">
                     <div class="row-wrap">
-                      <h3 class="raw-deep-header-title truncate" style="font-size:1.1rem; font-weight:800; color:#fff; margin:0;">${esc(pData.title || ch.title || r.id)}</h3>
-                      <span style="font-size:0.7rem; font-family:monospace; padding:0.12rem 0.45rem; border-radius:0.375rem; background:#1f2937; color:#94a3b8; border:1px solid #374151;">${esc(r.id)}</span>
-                      <span style="font-size:0.7rem; font-weight:600; padding:0.12rem 0.45rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.4);">${esc(nicheDisplay)}</span>
+                      <h3 class="raw-deep-header-title truncate" style="font-size: 16px; font-weight: 700; color:#fff; margin:0;">${esc(pData.title || ch.title || r.id)}</h3>
+                      <span style="font-size: 11px; font-family:monospace; padding:0.12rem 0.45rem; border-radius:0.375rem; background:#1f2937; color:#94a3b8; border:1px solid #374151;">${esc(r.id)}</span>
+                      <span style="font-size: 11px; font-weight:600; padding:0.12rem 0.45rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.4);">${esc(nicheDisplay)}</span>
                     </div>
                   </div>
                 </div>
                 <div class="raw-deep-header-actions" style="display:flex; align-items:center; gap:0.4rem; flex-shrink:0;">
-                  <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:rgba(239,68,68,0.85); color:#fff; font-size:0.78rem; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.3rem;"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide"> Mở YouTube ${ico('arrow-up-right', 14)}</span></a>
-                  <button type="button" id="close-raw-deep" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size:0.78rem; font-weight:600; cursor:pointer; display:inline-flex; align-items:center;" title="Đóng [Esc]">${ico('x', 14)}</button>
+                  <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:rgba(239,68,68,0.85); color:#fff; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.3rem;"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide"> Mở YouTube ${ico('arrow-up-right', 14)}</span></a>
+                  <button type="button" id="close-raw-deep" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center;" title="Đóng [Esc]">${ico('x', 14)}</button>
                 </div>
               </div>
-              <div class="raw-deep-header-meta" style="display:flex; align-items:center; gap:0.5rem; font-size:0.78rem; color:#94a3b8; margin-top:0.35rem; flex-wrap:wrap;">
+              <div class="raw-deep-header-meta" style="display:flex; align-items:center; gap:0.5rem; font-size: 12px; color:#94a3b8; margin-top:0.35rem; flex-wrap:wrap;">
                 <span style="color:#e2e8f0; font-weight:600;">${esc(decodeURIComponent(pData.handle || ch.handle || ''))}</span>
                 <span>•</span>
                 <span>Quốc gia: <strong class="c-slate-100">${esc(countryDisplay)}</strong></span>
@@ -1061,50 +1061,50 @@
                 <!-- 4 KPI Cards -->
                 <div class="raw-deep-kpis" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.75rem;">
                 <div class="raw-deep-kpi-card" style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
-                  <div style="font-size:0.7rem; text-transform:uppercase; color:#94a3b8; font-weight:600;">Lượng người đăng ký (Subs)</div>
-                  <div class="kpi-val" style="font-size:1.35rem; font-weight:800; color:#38bdf8; margin-top:0.25rem;">${subsDisplay}</div>
-                  <div class="kpi-sub" style="font-size:0.75rem; color:#64748b; margin-top:0.2rem;">30 ngày qua: <span style="color:#38bdf8; font-weight:600;">${subGained} subs</span></div>
+                  <div style="font-size: 11px; text-transform:uppercase; color:#94a3b8; font-weight:600;">Lượng người đăng ký (Subs)</div>
+                  <div class="kpi-val" style="font-size: 20px; font-weight: 700; color:#38bdf8; margin-top:0.25rem;">${subsDisplay}</div>
+                  <div class="kpi-sub" style="font-size: 12px; color:#64748b; margin-top:0.2rem;">30 ngày qua: <span style="color:#38bdf8; font-weight:600;">${subGained} subs</span></div>
                 </div>
                 <div class="raw-deep-kpi-card" style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
-                  <div style="font-size:0.7rem; text-transform:uppercase; color:#94a3b8; font-weight:600;">Tổng lượt xem (Views)</div>
-                  <div class="kpi-val" style="font-size:1.35rem; font-weight:800; color:#a855f7; margin-top:0.25rem;">${viewsDisplay}</div>
-                  <div class="kpi-sub" style="font-size:0.75rem; color:#64748b; margin-top:0.2rem;">30 ngày qua: <span style="color:#a855f7; font-weight:600;">${viewGained} views</span> ${g30.viewsGained < 0 ? `<span style="font-size:0.68rem; color:#38bdf8; font-weight:600;">(${vidAnomaly})</span>` : ''}</div>
+                  <div style="font-size: 11px; text-transform:uppercase; color:#94a3b8; font-weight:600;">Tổng lượt xem (Views)</div>
+                  <div class="kpi-val" style="font-size: 20px; font-weight: 700; color:#a855f7; margin-top:0.25rem;">${viewsDisplay}</div>
+                  <div class="kpi-sub" style="font-size: 12px; color:#64748b; margin-top:0.2rem;">30 ngày qua: <span style="color:#a855f7; font-weight:600;">${viewGained} views</span> ${g30.viewsGained < 0 ? `<span style="font-size: 11px; color:#38bdf8; font-weight:600;">(${vidAnomaly})</span>` : ''}</div>
                 </div>
                 <div class="raw-deep-kpi-card" style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
-                  <div style="font-size:0.7rem; text-transform:uppercase; color:#94a3b8; font-weight:600;">Quy mô video & Doanh thu</div>
-                  <div class="kpi-val" style="font-size:1.35rem; font-weight:800; color:#10b981; margin-top:0.25rem;">${esc(vA.estimatedMonthlyRev || '$1,000+ / tháng')}</div>
-                  <div class="kpi-sub" style="font-size:0.75rem; color:#64748b; margin-top:0.2rem;">Tổng video: <span style="color:#fff; font-weight:600;">${videoCountDisplay} video</span> ${g30.videosPublished < 0 ? `<span style="font-size:0.68rem; color:#38bdf8; font-weight:600;">(${esc(vidAnomaly)})</span>` : `(${vidPublished} video mới)`}</div>
+                  <div style="font-size: 11px; text-transform:uppercase; color:#94a3b8; font-weight:600;">Quy mô video & Doanh thu</div>
+                  <div class="kpi-val" style="font-size: 20px; font-weight: 700; color:#10b981; margin-top:0.25rem;">${esc(vA.estimatedMonthlyRev || '$1,000+ / tháng')}</div>
+                  <div class="kpi-sub" style="font-size: 12px; color:#64748b; margin-top:0.2rem;">Tổng video: <span style="color:#fff; font-weight:600;">${videoCountDisplay} video</span> ${g30.videosPublished < 0 ? `<span style="font-size: 11px; color:#38bdf8; font-weight:600;">(${esc(vidAnomaly)})</span>` : `(${vidPublished} video mới)`}</div>
                 </div>
                 <div class="raw-deep-kpi-card" style="background:#131d31; border:1px solid #1e293b; border-radius:0.875rem; padding:0.85rem 1rem;">
-                  <div style="font-size:0.7rem; text-transform:uppercase; color:#94a3b8; font-weight:600;">Tình trạng YPP & Sức khỏe</div>
-                  <div class="kpi-val" style="font-size:0.95rem; font-weight:700; color:#f59e0b; margin-top:0.45rem;">${esc(stripDecorEmoji(vA.monetizationBadge) || (pData.longevityAudit ? pData.longevityAudit.sustainabilityStatus : 'Bình thường'))}</div>
-                  <div class="kpi-sub" style="font-size:0.75rem; color:#94a3b8; margin-top:0.2rem;">${vA.daysSinceLatest != null ? 'Video gần nhất: ' + vA.daysSinceLatest + ' ngày trước' : ''}</div>
+                  <div style="font-size: 11px; text-transform:uppercase; color:#94a3b8; font-weight:600;">Tình trạng YPP & Sức khỏe</div>
+                  <div class="kpi-val" style="font-size: 14px; font-weight:700; color:#f59e0b; margin-top:0.45rem;">${esc(stripDecorEmoji(vA.monetizationBadge) || (pData.longevityAudit ? pData.longevityAudit.sustainabilityStatus : 'Bình thường'))}</div>
+                  <div class="kpi-sub" style="font-size: 12px; color:#94a3b8; margin-top:0.2rem;">${vA.daysSinceLatest != null ? 'Video gần nhất: ' + vA.daysSinceLatest + ' ngày trước' : ''}</div>
                 </div>
               </div>
 
               <!-- Cảnh báo hoặc lời khuyên chuyên gia -->
               ${vA.monetizationAdvisory ? `
               <div style="background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.3); border-radius:0.875rem; padding:0.85rem 1.1rem;">
-                <div style="font-size:0.8rem; font-weight:700; color:#fcd34d; display:flex; align-items:center; gap:0.4rem;">
+                <div style="font-size: 13px; font-weight:700; color:#fcd34d; display:flex; align-items:center; gap:0.4rem;">
                   <span>${ico('lightbulb', 14)}</span> Đánh Giá Sức Khỏe Kênh & Lời Khuyên Khai Thác:
                 </div>
-                <p style="font-size:0.78rem; color:#fef3c7; line-height:1.55; margin-top:0.35rem;">${esc(vA.monetizationAdvisory)}</p>
+                <p style="font-size: 12px; color:#fef3c7; line-height:1.55; margin-top:0.35rem;">${esc(vA.monetizationAdvisory)}</p>
               </div>` : ''}
 
               ${retentionProxy && retentionProxy.status === 'PROXY_ONLY' ? `
               <div id="raw-retention-proxy" style="background:rgba(14,165,233,0.08); border:1px solid rgba(14,165,233,0.38); border-radius:0.875rem; padding:0.9rem 1.1rem;">
                 <div style="display:flex; align-items:center; justify-content:space-between; gap:0.75rem; flex-wrap:wrap;">
-                  <div style="font-size:0.82rem; font-weight:800; color:#7dd3fc; display:flex; align-items:center; gap:0.45rem;">
+                  <div style="font-size: 13px; font-weight: 700; color:#7dd3fc; display:flex; align-items:center; gap:0.45rem;">
                     <span>◌</span> Public retention signal — không phải AVD thật
                   </div>
-                  <span style="font-size:0.72rem; font-weight:800; color:#fbbf24; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.35); padding:0.2rem 0.55rem; border-radius:0.4rem;">${esc(retentionProxy.status)}</span>
+                  <span style="font-size: 12px; font-weight: 700; color:#fbbf24; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.35); padding:0.2rem 0.55rem; border-radius:0.4rem;">${esc(retentionProxy.status)}</span>
                 </div>
                 <div class="raw-proxy-grid" style="display:grid; grid-template-columns:minmax(120px,0.6fr) minmax(260px,2fr); gap:0.8rem; align-items:center; margin-top:0.65rem;">
                   <div style="background:#0f172a; border:1px solid rgba(14,165,233,0.28); border-radius:0.7rem; padding:0.75rem; text-align:center;">
-                    <div style="font-size:1.65rem; font-weight:800; color:#38bdf8;">${esc(String(retentionProxy.publicRetentionSignalScore ?? 'N/A'))}<span style="font-size:0.8rem; color:#94a3b8;">/100</span></div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Điểm tín hiệu công khai</div>
+                    <div style="font-size: 24px; font-weight: 700; color:#38bdf8;">${esc(String(retentionProxy.publicRetentionSignalScore ?? 'N/A'))}<span style="font-size: 13px; color:#94a3b8;">/100</span></div>
+                    <div style="font-size: 11px; color:#94a3b8; margin-top:0.15rem;">Điểm tín hiệu công khai</div>
                   </div>
-                  <div style="font-size:0.73rem; color:#cbd5e1; line-height:1.55;">
+                  <div style="font-size: 12px; color:#cbd5e1; line-height:1.55;">
                     <p style="margin:0;"><strong style="color:#e0f2fe;">Ý nghĩa:</strong> ${esc(retentionProxy.interpretation || 'Dùng để ưu tiên video cần mổ xẻ.')}</p>
                     <p style="margin:0.3rem 0 0;"><strong style="color:#e0f2fe;">Độ tin cậy:</strong> ${esc(retentionProxy.confidence || 'N/A')} — ${esc(retentionProxy.confidenceReason || '')}</p>
                     <p style="margin:0.3rem 0 0;"><strong style="color:#e0f2fe;">Phạm vi:</strong> ${esc(String(retentionProxy.coverage?.topVideosAudited ?? 0))}/${esc(String(retentionProxy.coverage?.topVideosDeclared ?? 0))} video; transcript đầy đủ ${esc(String(retentionProxy.coverage?.transcriptRecordsComplete ?? 0))}/${esc(String(retentionProxy.coverage?.transcriptRecordsDeclared ?? 0))}.</p>
@@ -1112,32 +1112,32 @@
                 </div>
                 <div class="raw-proxy-subgrid" style="margin-top:0.7rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0.55rem;">
                   <div style="background:#0f172a; border:1px solid rgba(14,165,233,0.2); border-radius:0.6rem; padding:0.6rem;">
-                    <div style="font-size:0.68rem; color:#38bdf8; font-weight:800; text-transform:uppercase;">Dùng làm gì</div>
-                    <div style="font-size:0.7rem; color:#cbd5e1; line-height:1.45; margin-top:0.25rem;">So sánh tương đối trong 10 video đã audit; ưu tiên kiểm tra hook, pacing và cấu trúc.</div>
+                    <div style="font-size: 11px; color:#38bdf8; font-weight: 700; text-transform:uppercase;">Dùng làm gì</div>
+                    <div style="font-size: 11px; color:#cbd5e1; line-height:1.45; margin-top:0.25rem;">So sánh tương đối trong 10 video đã audit; ưu tiên kiểm tra hook, pacing và cấu trúc.</div>
                   </div>
                   <div style="background:#0f172a; border:1px solid rgba(245,158,11,0.22); border-radius:0.6rem; padding:0.6rem;">
-                    <div style="font-size:0.68rem; color:#fbbf24; font-weight:800; text-transform:uppercase;">Không được gọi là</div>
-                    <div style="font-size:0.7rem; color:#fde68a; line-height:1.45; margin-top:0.25rem;">AVD bao nhiêu phút, retention bao nhiêu %, hay watch time thật.</div>
+                    <div style="font-size: 11px; color:#fbbf24; font-weight: 700; text-transform:uppercase;">Không được gọi là</div>
+                    <div style="font-size: 11px; color:#fde68a; line-height:1.45; margin-top:0.25rem;">AVD bao nhiêu phút, retention bao nhiêu %, hay watch time thật.</div>
                   </div>
                 </div>
-                <div style="margin-top:0.55rem; font-size:0.68rem; color:#94a3b8; line-height:1.45;">Nguồn: ${esc(retentionProxy.channelEvidence?.source || 'top-videos.json + transcripts/*.json')} · YouTube Analytics thật chưa được cung cấp.</div>
+                <div style="margin-top:0.55rem; font-size: 11px; color:#94a3b8; line-height:1.45;">Nguồn: ${esc(retentionProxy.channelEvidence?.source || 'top-videos.json + transcripts/*.json')} · YouTube Analytics thật chưa được cung cấp.</div>
               </div>` : ''}
 
               ${yppNote && yppNote.status ? `
               <div id="raw-ypp-risk-note" style="background:rgba(251,113,133,0.08); border:1px solid rgba(251,113,133,0.35); border-radius:0.875rem; padding:0.9rem 1.1rem;">
-                <div style="font-size:0.82rem; font-weight:800; color:#fda4af; display:flex; align-items:center; gap:0.45rem;">
+                <div style="font-size: 13px; font-weight: 700; color:#fda4af; display:flex; align-items:center; gap:0.45rem;">
                   <span>${ico('shield', 14)}</span> YPP Risk Note & Phòng Thủ Reused/Inauthentic Content
                 </div>
-                <p style="font-size:0.76rem; color:#fecdd3; line-height:1.55; margin-top:0.4rem;">${esc(yppNote.reason || '')}</p>
+                <p style="font-size: 12px; color:#fecdd3; line-height:1.55; margin-top:0.4rem;">${esc(yppNote.reason || '')}</p>
                 ${Array.isArray(yppNote.riskFactors) && yppNote.riskFactors.length ? `
                 <div class="raw-proxy-subgrid" style="margin-top:0.55rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:0.55rem;">
                   <div style="background:#0f172a; border:1px solid rgba(251,113,133,0.25); border-radius:0.65rem; padding:0.65rem;">
-                    <div style="font-size:0.7rem; color:#fb7185; font-weight:800; text-transform:uppercase; margin-bottom:0.35rem;">Risk Factors</div>
-                    <ul style="margin:0 0 0 1rem; padding:0; color:#fda4af; font-size:0.72rem; line-height:1.5;">${yppNote.riskFactors.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+                    <div style="font-size: 11px; color:#fb7185; font-weight: 700; text-transform:uppercase; margin-bottom:0.35rem;">Risk Factors</div>
+                    <ul style="margin:0 0 0 1rem; padding:0; color:#fda4af; font-size: 12px; line-height:1.5;">${yppNote.riskFactors.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
                   </div>
                   <div style="background:#0f172a; border:1px solid rgba(52,211,153,0.25); border-radius:0.65rem; padding:0.65rem;">
-                    <div style="font-size:0.7rem; color:#34d399; font-weight:800; text-transform:uppercase; margin-bottom:0.35rem;">Required Mitigations</div>
-                    <ul style="margin:0 0 0 1rem; padding:0; color:#bbf7d0; font-size:0.72rem; line-height:1.5;">${(yppNote.requiredMitigations || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+                    <div style="font-size: 11px; color:#34d399; font-weight: 700; text-transform:uppercase; margin-bottom:0.35rem;">Required Mitigations</div>
+                    <ul style="margin:0 0 0 1rem; padding:0; color:#bbf7d0; font-size: 12px; line-height:1.5;">${(yppNote.requiredMitigations || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul>
                   </div>
                 </div>` : ''}
               </div>` : ''}
@@ -1146,9 +1146,9 @@
                 if (Array.isArray(dataGaps)) {
                   return `
               <div id="raw-data-gaps" style="background:rgba(56,189,248,0.06); border:1px solid rgba(56,189,248,0.28); border-radius:0.875rem; padding:0.65rem 1rem;">
-                <div style="font-size:0.78rem; font-weight:800; color:#38bdf8; margin-bottom:0.4rem;">Ghi chú kiểm định (${dataGaps.length} mục):</div>
+                <div style="font-size: 12px; font-weight: 700; color:#38bdf8; margin-bottom:0.4rem;">Ghi chú kiểm định (${dataGaps.length} mục):</div>
                 <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
-                  ${dataGaps.map(g => `<span style="font-size:0.68rem; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); color:#38bdf8; padding:0.12rem 0.5rem; border-radius:0.4rem;">${ico('info', 14)} ${esc(g)}</span>`).join('')}
+                  ${dataGaps.map(g => `<span style="font-size: 11px; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); color:#38bdf8; padding:0.12rem 0.5rem; border-radius:0.4rem;">${ico('info', 14)} ${esc(g)}</span>`).join('')}
                 </div>
               </div>`;
                 }
@@ -1168,12 +1168,12 @@
                 <div class="row-between">
                   <div class="row-wrap">
                     <span>${ico('check', 14)}</span>
-                    <span style="font-size:0.78rem; font-weight:800; color:#34d399;">Kiểm định Data Gaps — Hoàn tất (${gapEntries.length}/${gapEntries.length} resolved)</span>
+                    <span style="font-size: 12px; font-weight: 700; color:#34d399;">Kiểm định Data Gaps — Hoàn tất (${gapEntries.length}/${gapEntries.length} resolved)</span>
                   </div>
-                  <span style="font-size:0.68rem; color:#64748b;">Audit lần cuối: ${lastAuditLabel}</span>
+                  <span style="font-size: 11px; color:#64748b;">Audit lần cuối: ${lastAuditLabel}</span>
                 </div>
                 <div style="margin-top:0.5rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
-                  ${gapEntries.map(([key, gap]) => `<span style="font-size:0.68rem; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:#34d399; padding:0.12rem 0.5rem; border-radius:0.4rem; font-weight:600;" title="${esc(gap.currentEvidence || '')}">${ico('check', 14)} ${esc(GAP_LABELS[key] || key)}</span>`).join('')}
+                  ${gapEntries.map(([key, gap]) => `<span style="font-size: 11px; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:#34d399; padding:0.12rem 0.5rem; border-radius:0.4rem; font-weight:600;" title="${esc(gap.currentEvidence || '')}">${ico('check', 14)} ${esc(GAP_LABELS[key] || key)}</span>`).join('')}
                 </div>
               </div>`;
                 }
@@ -1182,9 +1182,9 @@
                 <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.6rem;">
                   <div class="row-wrap">
                     <span>${ico('alert-triangle', 14)}</span>
-                    <span style="font-size:0.78rem; font-weight:800; color:#fbbf24;">Data Gaps cần bổ sung (${openGaps.length}/${gapEntries.length} chưa khóa)</span>
+                    <span style="font-size: 12px; font-weight: 700; color:#fbbf24;">Data Gaps cần bổ sung (${openGaps.length}/${gapEntries.length} chưa khóa)</span>
                   </div>
-                  <span style="font-size:0.68rem; color:#64748b;">Audit lần cuối: ${lastAuditLabel}</span>
+                  <span style="font-size: 11px; color:#64748b;">Audit lần cuối: ${lastAuditLabel}</span>
                 </div>
                 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0.5rem;">
                   ${gapEntries.map(([key, gap]) => {
@@ -1197,10 +1197,10 @@
                     return `
                   <div style="background:#0f172a; border:1px solid ${cardBorder}; border-radius:0.65rem; padding:0.65rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.4rem; margin-bottom:0.3rem;">
-                      <div style="font-size:0.72rem; color:${labelColor}; font-weight:800;">${esc(GAP_LABELS[key] || key)}</div>
-                      <span style="font-size:0.63rem; font-weight:700; padding:0.1rem 0.35rem; border-radius:0.3rem; background:${badgeBg}; color:${labelColor};">${esc(gap.status || '')}</span>
+                      <div style="font-size: 12px; color:${labelColor}; font-weight: 700;">${esc(GAP_LABELS[key] || key)}</div>
+                      <span style="font-size: 11px; font-weight:700; padding:0.1rem 0.35rem; border-radius:0.3rem; background:${badgeBg}; color:${labelColor};">${esc(gap.status || '')}</span>
                     </div>
-                    <p style="font-size:0.68rem; color:#94a3b8; line-height:1.45; margin:0;" title="${esc(ev)}">${esc(evShort)}</p>
+                    <p style="font-size: 11px; color:#94a3b8; line-height:1.45; margin:0;" title="${esc(ev)}">${esc(evShort)}</p>
                   </div>`;
                   }).join('')}
                 </div>
@@ -1225,10 +1225,10 @@
                 const isBenchmarkCleared = openGaps.length === 0;
 
                 const statusBadgeHtml = isBenchmarkCleared
-                  ? `<span style="font-size:0.68rem; font-weight:800; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(14,165,233,0.18); border:1px solid rgba(14,165,233,0.5); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
+                  ? `<span style="font-size: 11px; font-weight: 700; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(14,165,233,0.18); border:1px solid rgba(14,165,233,0.5); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
                       ${ico('check', 14)} Hồ sơ Benchmark đối thủ đã khóa (Sẵn sàng Pilot)
                     </span>`
-                  : `<span style="font-size:0.68rem; font-weight:800; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(245,158,11,0.18); border:1px solid rgba(245,158,11,0.5); color:#fbbf24; display:inline-flex; align-items:center; gap:0.25rem;">
+                  : `<span style="font-size: 11px; font-weight: 700; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(245,158,11,0.18); border:1px solid rgba(245,158,11,0.5); color:#fbbf24; display:inline-flex; align-items:center; gap:0.25rem;">
                       ${ico('alert-triangle', 14)} Đang thẩm định đối thủ (${openGaps.length} gaps chưa khóa)
                     </span>`;
 
@@ -1243,17 +1243,17 @@
                 <!-- Header Banner -->
                 <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.6rem; border-bottom:1px solid #1f2937; padding-bottom:0.85rem;">
                   <div style="display:flex; align-items:center; gap:0.65rem;">
-                    <div style="width:38px; height:38px; border-radius:0.6rem; background:linear-gradient(135deg, rgba(37,99,235,0.3) 0%, rgba(147,51,234,0.3) 100%); border:1px solid #3b82f6; display:flex; align-items:center; justify-content:center; font-size:1.25rem;">${ico('rocket', 20)}</div>
+                    <div style="width:38px; height:38px; border-radius:0.6rem; background:linear-gradient(135deg, rgba(37,99,235,0.3) 0%, rgba(147,51,234,0.3) 100%); border:1px solid #3b82f6; display:flex; align-items:center; justify-content:center; font-size: 18px;">${ico('rocket', 20)}</div>
                     <div>
                       <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
-                        <h4 style="font-size:1.02rem; font-weight:800; color:#fff; margin:0;">Trạm Vũ Khí Tác Chiến & Phân Tích Đối Thủ (Production Mission Control)</h4>
+                        <h4 style="font-size: 16px; font-weight: 700; color:#fff; margin:0;">Trạm Vũ Khí Tác Chiến & Phân Tích Đối Thủ (Production Mission Control)</h4>
                         ${statusBadgeHtml}
                       </div>
-                      <p style="font-size:0.75rem; color:#94a3b8; margin:0.15rem 0 0 0;">Khuôn đúc kịch bản 3 hồi, visual directive đa thị trường, bao bì CTR & liên kết trực tiếp tài liệu SOP gốc (Nghiệm thu bấm máy kiểm soát tại video_acceptance.json)</p>
+                      <p style="font-size: 12px; color:#94a3b8; margin:0.15rem 0 0 0;">Khuôn đúc kịch bản 3 hồi, visual directive đa thị trường, bao bì CTR & liên kết trực tiếp tài liệu SOP gốc (Nghiệm thu bấm máy kiểm soát tại video_acceptance.json)</p>
                     </div>
                   </div>
                   <div style="display:flex; align-items:center; gap:0.45rem;">
-                    <span style="font-size:0.72rem; color:#cbd5e1; background:#1e293b; border:1px solid #334155; padding:0.25rem 0.65rem; border-radius:0.4rem; font-weight:600;">
+                    <span style="font-size: 12px; color:#cbd5e1; background:#1e293b; border:1px solid #334155; padding:0.25rem 0.65rem; border-radius:0.4rem; font-weight:600;">
                       Thị trường mục tiêu: <strong class="c-sky">${esc(mp.primaryRegion || 'US & Global')}</strong>
                     </span>
                   </div>
@@ -1265,91 +1265,91 @@
                   <!-- Box 1: Chỉ Thị Phong Cách Thị Giác Biến Thể -->
                   <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
                     <div class="row-between">
-                      <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
+                      <div style="font-size: 14px; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>${ico('palette', 14)}</span> Chỉ Thị Thị Giác (Visual Directive)
                       </div>
                       <div class="row-wrap">
-                        <button type="button" class="btn-copy-visual-prompt" style="font-size:0.72rem; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-sky-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy Master Shot</button>
-                        <button type="button" class="btn-copy-visual-kit" style="font-size:0.72rem; color:#c084fc; background:rgba(168,85,247,0.15); border:1px solid rgba(168,85,247,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-purple-600 hover:text-white transition">${ico('package', 14)} Copy Trọn Bộ Visual Kit</button>
+                        <button type="button" class="btn-copy-visual-prompt" style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-sky-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy Master Shot</button>
+                        <button type="button" class="btn-copy-visual-kit" style="font-size: 12px; color:#c084fc; background:rgba(168,85,247,0.15); border:1px solid rgba(168,85,247,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-purple-600 hover:text-white transition">${ico('package', 14)} Copy Trọn Bộ Visual Kit</button>
                       </div>
                     </div>
 
-                    <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.5rem;">
+                    <div style="font-size: 12px; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.5rem;">
                       <div><strong class="c-amber">STYLE_SHORT:</strong> <span class="c-ink">${esc(vd.styleShort || '')}</span></div>
                       <div><strong class="c-sky">MASCOT / BRAND:</strong> <span class="c-ink">${esc(vd.mascot || 'None')}</span></div>
                       <div><strong class="c-violet">CAMERA / LIGHT:</strong> <span class="c-slate-100">${esc(vd.cameraLighting || '')}</span></div>
-                      <div style="font-size:0.72rem; color:#94a3b8; line-height:1.45;"><strong class="c-emerald">STYLE DETAILS:</strong> ${esc(vd.style || '')}</div>
+                      <div style="font-size: 12px; color:#94a3b8; line-height:1.45;"><strong class="c-emerald">STYLE DETAILS:</strong> ${esc(vd.style || '')}</div>
                       
                       ${vd.masterVisualPrompt ? `
                       <div style="border-top:1px solid #1e293b; padding-top:0.4rem;">
-                        <strong style="color:#38bdf8; font-size:0.72rem;">MASTER VISUAL PROMPT (SHOT 1 - MACRO RELIC):</strong>
-                        <div style="margin-top:0.25rem; font-size:0.68rem; color:#e2e8f0; font-family:monospace; background:#070a12; border:1px solid #233148; border-radius:0.375rem; padding:0.45rem 0.6rem; line-height:1.45; word-break:break-word;">
+                        <strong style="color:#38bdf8; font-size: 12px;">MASTER VISUAL PROMPT (SHOT 1 - MACRO RELIC):</strong>
+                        <div style="margin-top:0.25rem; font-size: 11px; color:#e2e8f0; font-family:monospace; background:#070a12; border:1px solid #233148; border-radius:0.375rem; padding:0.45rem 0.6rem; line-height:1.45; word-break:break-word;">
                           ${esc(vd.masterVisualPrompt)}
                         </div>
                       </div>` : ''}
 
                       ${vd.multiAngleArchetypes && vd.multiAngleArchetypes.length ? `
                       <div style="border-top:1px solid #1e293b; padding-top:0.4rem;">
-                        <strong style="color:#a855f7; font-size:0.72rem;">4 CẢNH QUAY CỐT LÕI (MULTI-ANGLE ARCHETYPES):</strong>
+                        <strong style="color:#a855f7; font-size: 12px;">4 CẢNH QUAY CỐT LÕI (MULTI-ANGLE ARCHETYPES):</strong>
                         <div style="margin-top:0.25rem; display:flex; flex-direction:column; gap:0.35rem; max-height:140px; overflow-y:auto; padding-right:0.25rem;">
                           ${vd.multiAngleArchetypes.map(a => `
-                          <div style="background:#070a12; border:1px solid #1e293b; border-radius:0.375rem; padding:0.35rem 0.5rem; font-size:0.68rem;">
+                          <div style="background:#070a12; border:1px solid #1e293b; border-radius:0.375rem; padding:0.35rem 0.5rem; font-size: 11px;">
                             <span style="color:#fcd34d; font-weight:700;">${esc(a.shotType)}:</span> <span class="c-slate-400">${esc(a.description)}</span>
                           </div>`).join('')}
                         </div>
                       </div>` : ''}
 
                       ${vd.cameraMotionSOP && vd.cameraMotionSOP.length ? `
-                      <div style="border-top:1px solid #1e293b; padding-top:0.4rem; font-size:0.7rem; color:#94a3b8;">
+                      <div style="border-top:1px solid #1e293b; padding-top:0.4rem; font-size: 11px; color:#94a3b8;">
                         <strong class="c-emerald">CHỈ THỊ MOTION VIDEO AI (KLING / RUNWAY):</strong>
                         <ul style="margin:0.2rem 0 0 1rem; padding:0; line-height:1.4;">
                           ${vd.cameraMotionSOP.map(m => `<li class="c-slate-300">${esc(m)}</li>`).join('')}
                         </ul>
                       </div>` : ''}
 
-                      ${vd.negativePrompt ? `<div style="font-size:0.72rem; color:#fca5a5; line-height:1.35; background:rgba(239,68,68,0.08); padding:0.35rem 0.5rem; border-radius:0.35rem; border:1px solid rgba(239,68,68,0.2);"><strong style="color:#ef4444;">NEGATIVE PROMPT:</strong> ${esc(vd.negativePrompt)}</div>` : ''}
+                      ${vd.negativePrompt ? `<div style="font-size: 12px; color:#fca5a5; line-height:1.35; background:rgba(239,68,68,0.08); padding:0.35rem 0.5rem; border-radius:0.35rem; border:1px solid rgba(239,68,68,0.2);"><strong style="color:#ef4444;">NEGATIVE PROMPT:</strong> ${esc(vd.negativePrompt)}</div>` : ''}
                     </div>
                   </div>
 
                   <!-- Box 2: Khuôn Đúc Kịch Bản & Hook 3s-15s (Chuẩn North Effect 70/30) -->
                   <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.65rem;">
                     <div class="row-between">
-                      <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
+                      <div style="font-size: 14px; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>${ico('file-edit', 14)}</span> Khuôn Đúc Kịch Bản (Script Blueprint)
                       </div>
                       <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;">
-                        <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(refVid)}" data-title="${esc(refTitle)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(refViews)}" style="font-size:0.7rem; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('scroll-text', 14)} Kịch Bản Gốc (${esc(refVid ? refVid.slice(0,6) : 'Sub')})</button>
-                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" target="_blank" rel="noopener noreferrer" style="font-size:0.7rem; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;" class="hover:bg-purple-600 hover:text-white transition">
+                        <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(refVid)}" data-title="${esc(refTitle)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(refViews)}" style="font-size: 11px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('scroll-text', 14)} Kịch Bản Gốc (${esc(refVid ? refVid.slice(0,6) : 'Sub')})</button>
+                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" target="_blank" rel="noopener noreferrer" style="font-size: 11px; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;" class="hover:bg-purple-600 hover:text-white transition">
                           <span>${ico('file-text', 14)} SOP North Effect</span> ${ico('arrow-up-right', 14)}
                         </a>
-                        <button type="button" class="btn-copy-master-prompt" style="font-size:0.72rem; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy Full Master Prompt</button>
+                        <button type="button" class="btn-copy-master-prompt" style="font-size: 12px; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy Full Master Prompt</button>
                       </div>
                     </div>
 
-                    <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
+                    <div style="font-size: 12px; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
                       <div><strong class="c-amber">HOOK 0–15s:</strong> <span class="c-ink">${esc(sb.hookArchetype || '')}</span></div>
-                      <div style="font-size:0.72rem; color:#94a3b8; font-style:italic; line-height:1.4;">"${esc(sb.openingFormula || '')}"</div>
-                      <div style="font-size:0.72rem; color:#38bdf8; line-height:1.45;"><strong class="c-sky">NHỊP PACING:</strong> ${esc(sb.pacingStructure || '')}</div>
+                      <div style="font-size: 12px; color:#94a3b8; font-style:italic; line-height:1.4;">"${esc(sb.openingFormula || '')}"</div>
+                      <div style="font-size: 12px; color:#38bdf8; line-height:1.45;"><strong class="c-sky">NHỊP PACING:</strong> ${esc(sb.pacingStructure || '')}</div>
                       
                       <!-- Chi Tiết Công Thức North Effect 70/30 -->
                       <div style="border-top:1px solid #1e293b; padding-top:0.45rem; display:flex; flex-direction:column; gap:0.35rem;">
                         <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.3rem;">
-                          <span style="font-size:0.73rem; font-weight:700; color:#34d399; display:flex; align-items:center; gap:0.3rem;">
+                          <span style="font-size: 12px; font-weight:700; color:#34d399; display:flex; align-items:center; gap:0.3rem;">
                             <span>${ico('zap', 14)}</span> Công Thức North Effect (70/30 Part-by-Part SOP):
                           </span>
-                          <span style="font-size:0.68rem; color:#94a3b8; background:#1e293b; padding:0.1rem 0.4rem; border-radius:0.25rem;">
+                          <span style="font-size: 11px; color:#94a3b8; background:#1e293b; padding:0.1rem 0.4rem; border-radius:0.25rem;">
                             10–15 Parts · 1000–1100 từ/Part · Lệnh "CONTINUE"
                           </span>
                         </div>
-                        <div style="font-size:0.7rem; color:#94a3b8; line-height:1.4;">
+                        <div style="font-size: 11px; color:#94a3b8; line-height:1.4;">
                           ${esc(sb.masterScriptPromptShort || 'Giữ 70% mạch kịch bản & dẫn chứng gốc của đối thủ; Bổ sung 30% góc nhìn, bối cảnh lịch sử và phản biện học thuật mới. Chia Part viết nối tiếp để không bị giới hạn token.')}
                         </div>
                         
                         <!-- Box Prompt Đầy Đủ Có Thể Cuộn & Đọc Trực Tiếp -->
                         ${sb.masterScriptPrompt ? `
                         <div style="position:relative; margin-top:0.3rem;">
-                          <pre style="margin:0; max-height:140px; overflow-y:auto; background:#070a12; border:1px solid #233148; border-radius:0.375rem; padding:0.6rem 0.75rem; font-size:0.68rem; color:#e2e8f0; font-family:monospace; white-space:pre-wrap; word-break:break-word; line-height:1.45;">${esc(sb.masterScriptPrompt)}</pre>
-                          <div style="position:absolute; top:0.35rem; right:0.5rem; font-size:0.65rem; color:#64748b; background:rgba(15,23,42,0.85); padding:0.1rem 0.35rem; border-radius:0.25rem; pointer-events:none;">Full Training Prompt</div>
+                          <pre style="margin:0; max-height:140px; overflow-y:auto; background:#070a12; border:1px solid #233148; border-radius:0.375rem; padding:0.6rem 0.75rem; font-size: 11px; color:#e2e8f0; font-family:monospace; white-space:pre-wrap; word-break:break-word; line-height:1.45;">${esc(sb.masterScriptPrompt)}</pre>
+                          <div style="position:absolute; top:0.35rem; right:0.5rem; font-size: 11px; color:#64748b; background:rgba(15,23,42,0.85); padding:0.1rem 0.35rem; border-radius:0.25rem; pointer-events:none;">Full Training Prompt</div>
                         </div>` : ''}
                       </div>
                     </div>
@@ -1358,28 +1358,28 @@
                   <!-- Box 3: Chiến Lược Bao Bì CTR (Title + Thumbnail) -->
                   <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
                     <div class="row-between">
-                      <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
+                      <div style="font-size: 14px; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>${ico('target', 14)}</span> Bao Bì CTR (Title & Thumbnail)
                       </div>
                       <div class="row-wrap">
-                        <button type="button" class="btn-copy-thumb-prompt" style="font-size:0.72rem; color:#f59e0b; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-amber-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy AI Image Prompt</button>
-                        <button type="button" class="btn-copy-full-packaging" style="font-size:0.72rem; color:#f43f5e; background:rgba(244,63,94,0.15); border:1px solid rgba(244,63,94,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-rose-600 hover:text-white transition">${ico('package', 14)} Copy Trọn Bộ Bao Bì CTR</button>
+                        <button type="button" class="btn-copy-thumb-prompt" style="font-size: 12px; color:#f59e0b; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-amber-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy AI Image Prompt</button>
+                        <button type="button" class="btn-copy-full-packaging" style="font-size: 12px; color:#f43f5e; background:rgba(244,63,94,0.15); border:1px solid rgba(244,63,94,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-rose-600 hover:text-white transition">${ico('package', 14)} Copy Trọn Bộ Bao Bì CTR</button>
                       </div>
                     </div>
 
-                    <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.5rem;">
+                    <div style="font-size: 12px; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.5rem;">
                       <div><strong class="c-amber">TITLE FORMULA:</strong> <code style="color:#38bdf8; font-family:monospace; background:#1e293b; padding:0.1rem 0.4rem; border-radius:0.25rem;">${esc(pkg.titleFormula || '')}</code></div>
                       <div><strong class="c-violet">THUMB BỐ CỤC:</strong> <span class="c-ink">${esc(pkg.thumbnailComposition || '')}</span></div>
-                      ${pkg.thumbnailText ? `<div><strong style="color:#ef4444;">TEXT OVERLAY:</strong> <span style="background:rgba(239,68,68,0.15); border:1px solid rgba(239,68,68,0.35); padding:0.15rem 0.5rem; border-radius:0.35rem; font-weight:800; color:#fef08a;">${esc(pkg.thumbnailText)}</span></div>` : ''}
+                      ${pkg.thumbnailText ? `<div><strong style="color:#ef4444;">TEXT OVERLAY:</strong> <span style="background:rgba(239,68,68,0.15); border:1px solid rgba(239,68,68,0.35); padding:0.15rem 0.5rem; border-radius:0.35rem; font-weight: 700; color:#fef08a;">${esc(pkg.thumbnailText)}</span></div>` : ''}
                       ${pkg.cleanThumbnailPrompt ? `
                       <div style="border-top:1px solid #1e293b; padding-top:0.4rem;">
-                        <strong style="color:#38bdf8; font-size:0.72rem;">AI THUMBNAIL PROMPT (NANO BANANA PRO / FLUX.2 PRO):</strong>
-                        <div style="margin-top:0.25rem; font-size:0.68rem; color:#e2e8f0; font-family:monospace; background:#070a12; border:1px solid #233148; border-radius:0.375rem; padding:0.45rem 0.6rem; line-height:1.45; word-break:break-word;">
+                        <strong style="color:#38bdf8; font-size: 12px;">AI THUMBNAIL PROMPT (NANO BANANA PRO / FLUX.2 PRO):</strong>
+                        <div style="margin-top:0.25rem; font-size: 11px; color:#e2e8f0; font-family:monospace; background:#070a12; border:1px solid #233148; border-radius:0.375rem; padding:0.45rem 0.6rem; line-height:1.45; word-break:break-word;">
                           ${esc(pkg.cleanThumbnailPrompt)}
                         </div>
                       </div>` : ''}
                       ${pkg.exampleTitles && pkg.exampleTitles.length ? `
-                      <div style="border-top:1px solid #1e293b; padding-top:0.35rem; font-size:0.72rem; color:#94a3b8;">
+                      <div style="border-top:1px solid #1e293b; padding-top:0.35rem; font-size: 12px; color:#94a3b8;">
                         <strong class="c-emerald">Ví dụ Tiêu đề mẫu từ kênh:</strong>
                         <ul style="margin:0.2rem 0 0 1rem; padding:0; line-height:1.4;">
                           ${pkg.exampleTitles.map(t => `<li class="c-slate-300">${esc(t)}</li>`).join('')}
@@ -1391,16 +1391,16 @@
                   <!-- Box 4: Bộ Tool Stack & Matching Skill Dự Án -->
                   <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
                     <div class="row-between">
-                      <div style="font-size:0.85rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
+                      <div style="font-size: 14px; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
                         <span>${ico('wrench', 14)}</span> Tech Stack & Matching Skill
                       </div>
                       ${ps.matchingSkill ? `
-                      <span style="font-size:0.72rem; color:#c084fc; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.5); padding:0.2rem 0.6rem; border-radius:0.4rem; font-weight:800;">
+                      <span style="font-size: 12px; color:#c084fc; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.5); padding:0.2rem 0.6rem; border-radius:0.4rem; font-weight: 700;">
                         Skill: ${esc(ps.matchingSkill)}
                       </span>` : ''}
                     </div>
 
-                    <div style="font-size:0.75rem; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
+                    <div style="font-size: 12px; color:#cbd5e1; background:#0f172a; padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid #1e293b; display:flex; flex-direction:column; gap:0.45rem;">
                       <div><strong class="c-sky">Kịch bản:</strong> <span class="c-ink">${esc(ps.scriptTool || 'Gemini 3.8 Flash / Claude Sonnet 4.6')}</span></div>
                       <div><strong class="c-amber">Lồng tiếng:</strong> <span class="c-ink">${esc(ps.voiceTool || 'ElevenLabs v3 / Kokoro-82M')}</span></div>
                       <div><strong class="c-violet">Dựng video:</strong> <span class="c-ink">${esc(ps.videoTool || 'Nano Banana 2/Pro + Veo 3.1 / CapCut PC')}</span></div>
@@ -1409,10 +1409,10 @@
                       
                       <!-- Direct Links to Skill and Repo -->
                       <div style="display:flex; align-items:center; gap:0.4rem; margin-top:0.4rem; pt-1; border-top:1px solid #1e293b; flex-wrap:wrap;">
-                        <a href="${esc(sopPath)}" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem; padding:0.3rem 0.65rem; border-radius:0.4rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.3rem;" class="hover:bg-purple-600 hover:text-white transition">
+                        <a href="${esc(sopPath)}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.3rem 0.65rem; border-radius:0.4rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.3rem;" class="hover:bg-purple-600 hover:text-white transition">
                           <span>${ico('file-text', 14)} Xem Toàn Bộ SOP Skill Gốc</span> ${ico('arrow-up-right', 14)}
                         </a>
-                        <a href="${esc(repoPath)}" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem; padding:0.3rem 0.65rem; border-radius:0.4rem; background:#1e293b; border:1px solid #334155; color:#cbd5e1; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;" class="hover:text-white hover:bg-slate-700 transition">
+                        <a href="${esc(repoPath)}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.3rem 0.65rem; border-radius:0.4rem; background:#1e293b; border:1px solid #334155; color:#cbd5e1; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;" class="hover:text-white hover:bg-slate-700 transition">
                           <span>${ico('folder-open', 14)} Repo Code</span> ${ico('arrow-up-right', 14)}
                         </a>
                       </div>
@@ -1424,17 +1424,17 @@
                 <!-- Box 5: Lộ Trình 5 Bước Ra Kênh Thực Chiến Chuẩn Zoom A-Z -->
                 ${lp && lp.length ? `
                 <div style="background:#182234; border:1px solid #233148; border-radius:0.75rem; padding:1rem;">
-                  <div style="font-size:0.85rem; font-weight:700; color:#fff; margin-bottom:0.65rem; display:flex; align-items:center; gap:0.4rem;">
+                  <div style="font-size: 14px; font-weight:700; color:#fff; margin-bottom:0.65rem; display:flex; align-items:center; gap:0.4rem;">
                     <span>${ico('zap', 14)}</span> Lộ Trình 5 Bước Khởi Động Kênh Thực Chiến (Chuẩn Zoom A–Z Masterclass)
                   </div>
                   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.65rem;">
                     ${lp.map(s => `
                     <div style="background:#0f172a; border:1px solid #1e293b; border-radius:0.5rem; padding:0.65rem 0.8rem; display:flex; flex-direction:column; gap:0.3rem;">
                       <div class="row-wrap">
-                        <span style="font-size:0.68rem; font-weight:800; background:#2563eb; color:#fff; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:monospace; flex-shrink:0;">${s.step}</span>
-                        <strong style="font-size:0.78rem; color:#fcd34d;">${esc(s.title)}</strong>
+                        <span style="font-size: 11px; font-weight: 700; background:#2563eb; color:#fff; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:monospace; flex-shrink:0;">${s.step}</span>
+                        <strong style="font-size: 12px; color:#fcd34d;">${esc(s.title)}</strong>
                       </div>
-                      <p style="font-size:0.72rem; color:#94a3b8; margin:0; line-height:1.45;">${esc(s.detail)}</p>
+                      <p style="font-size: 12px; color:#94a3b8; margin:0; line-height:1.45;">${esc(s.detail)}</p>
                     </div>`).join('')}
                   </div>
                 </div>` : ''}
@@ -1442,16 +1442,16 @@
               </div>`;
               })() : `
               <div style="background:#0f172a; border:1px solid #1e293b; border-radius:1rem; padding:2.5rem 1.25rem; text-align:center; display:flex; flex-direction:column; align-items:center; gap:1rem; box-shadow:0 4px 20px rgba(0,0,0,0.4);">
-                <div style="width:52px; height:52px; border-radius:1rem; background:rgba(59,130,246,0.15); border:1px solid rgba(59,130,246,0.35); display:flex; align-items:center; justify-content:center; font-size:1.6rem;">${ico('rocket', 24)}</div>
+                <div style="width:52px; height:52px; border-radius:1rem; background:rgba(59,130,246,0.15); border:1px solid rgba(59,130,246,0.35); display:flex; align-items:center; justify-content:center; font-size: 24px;">${ico('rocket', 24)}</div>
                 <div style="max-width:520px;">
-                  <h4 style="font-size:1rem; font-weight:700; color:#f8fafc; margin:0 0 0.45rem 0;">Hồ Sơ Vũ Khí Tác Chiến Đang Trong Hàng Đợi Chuẩn Hóa</h4>
-                  <p style="font-size:0.78rem; color:#94a3b8; line-height:1.55; margin:0;">
+                  <h4 style="font-size: 14px; font-weight:700; color:#f8fafc; margin:0 0 0.45rem 0;">Hồ Sơ Vũ Khí Tác Chiến Đang Trong Hàng Đợi Chuẩn Hóa</h4>
+                  <p style="font-size: 12px; color:#94a3b8; line-height:1.55; margin:0;">
                     Kênh <strong class="c-slate-100">${esc(pData.title || ch.title || r.id)}</strong> đã hoàn tất bóc tách dữ liệu Reverse-Engineering (Voice DNA, Top Video, Lịch sử tăng trưởng). Kịch bản phân cảnh 3 hồi và bộ Visual Prompt Master đang được tổng hợp tự động qua router trung tâm.
                   </p>
                 </div>
                 <div style="display:flex; flex-wrap:wrap; gap:0.55rem; justify-content:center; margin-top:0.25rem;">
-                  <button type="button" data-action="raw-tab" data-tab="voice" style="padding:0.45rem 0.95rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#38bdf8; font-size:0.78rem; font-weight:600; cursor:pointer;" class="hover:text-white transition">${ico('mic', 14)} Khai thác Voice DNA Studio →</button>
-                  <button type="button" data-action="raw-tab" data-tab="videos" style="padding:0.45rem 0.95rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#a855f7; font-size:0.78rem; font-weight:600; cursor:pointer;" class="hover:text-white transition">${ico('tv', 14)} Xem Top 7-10 Video Live →</button>
+                  <button type="button" data-action="raw-tab" data-tab="voice" style="padding:0.45rem 0.95rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#38bdf8; font-size: 12px; font-weight:600; cursor:pointer;" class="hover:text-white transition">${ico('mic', 14)} Khai thác Voice DNA Studio →</button>
+                  <button type="button" data-action="raw-tab" data-tab="videos" style="padding:0.45rem 0.95rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#a855f7; font-size: 12px; font-weight:600; cursor:pointer;" class="hover:text-white transition">${ico('tv', 14)} Xem Top 7-10 Video Live →</button>
                 </div>
               </div>`}
               </div> <!-- End Tab Panel 2: Mission Control -->
@@ -1463,22 +1463,22 @@
               <div id="raw-demo-video" style="background:#0b1120; border:1px solid #1e293b; border-radius:1rem; padding:1.1rem; display:flex; flex-direction:column; gap:0.75rem; box-shadow:0 4px 25px -4px rgba(0,0,0,0.6);">
                 <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; border-bottom:1px solid #1e293b; padding-bottom:0.6rem;">
                   <div style="display:flex; align-items:center; gap:0.5rem;">
-                    <span style="font-size:1.25rem; display:inline-flex;">${ico('clapperboard', 20)}</span>
+                    <span style="font-size: 18px; display:inline-flex;">${ico('clapperboard', 20)}</span>
                     <div>
                       <div class="row-wrap">
-                        <h4 style="font-size:0.92rem; font-weight:800; color:#fff; margin:0;">Video Demo Mẫu Đại Diện Tuyến Nội Dung</h4>
-                        <span style="font-size:0.68rem; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5; display:inline-flex; align-items:center; gap:0.25rem;">
+                        <h4 style="font-size: 14px; font-weight: 700; color:#fff; margin:0;">Video Demo Mẫu Đại Diện Tuyến Nội Dung</h4>
+                        <span style="font-size: 11px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5; display:inline-flex; align-items:center; gap:0.25rem;">
                           ${ico('flame', 14)} Tuyến Gần Nhất & Nổi Bật Nhất
                         </span>
                       </div>
-                      <p style="font-size:0.72rem; color:#94a3b8; margin:0.15rem 0 0 0;">Xem trực tiếp tại đây để nắm bắt nhịp dựng, phong cách visual, hook 3s đầu và format kịch bản — không cần chuyển tab sang YouTube</p>
+                      <p style="font-size: 12px; color:#94a3b8; margin:0.15rem 0 0 0;">Xem trực tiếp tại đây để nắm bắt nhịp dựng, phong cách visual, hook 3s đầu và format kịch bản — không cần chuyển tab sang YouTube</p>
                     </div>
                   </div>
                   <div class="row-wrap">
-                    <a href="https://www.youtube.com/watch?v=${demoVid.videoId}" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#1e293b; color:#38bdf8; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem; border:1px solid #334155;">
+                    <a href="https://www.youtube.com/watch?v=${demoVid.videoId}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#1e293b; color:#38bdf8; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem; border:1px solid #334155;">
                       <span>${ico('arrow-up-right', 14)} Mở YouTube</span>
                     </a>
-                    <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(demoVid.videoId)}" data-title="${esc(demoVid.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(demoVid.views))}" style="font-size:0.72rem; padding:0.35rem 0.75rem; border-radius:0.5rem; background:rgba(99,102,241,0.2); color:#a5b4fc; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem; border:1px solid rgba(99,102,241,0.4); cursor:pointer;">
+                    <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(demoVid.videoId)}" data-title="${esc(demoVid.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(demoVid.views))}" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.5rem; background:rgba(99,102,241,0.2); color:#a5b4fc; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem; border:1px solid rgba(99,102,241,0.4); cursor:pointer;">
                       <span>${ico('scroll-text', 14)} Xem Sub & Kịch Bản AI</span>
                     </button>
                   </div>
@@ -1489,19 +1489,19 @@
                   <img src="https://i.ytimg.com/vi/${demoVid.videoId}/hqdefault.jpg" alt="${esc(demoVid.title)}" width="480" height="360" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.85);">
                   <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.5) 100%); display:flex; flex-direction:column; justify-content:space-between; padding:0.85rem 1rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem;">
-                      <span style="font-size:0.75rem; font-weight:700; color:#fff; background:rgba(0,0,0,0.75); padding:0.25rem 0.6rem; border-radius:0.375rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); line-clamp:1;" class="line-clamp-1">
+                      <span style="font-size: 12px; font-weight:700; color:#fff; background:rgba(0,0,0,0.75); padding:0.25rem 0.6rem; border-radius:0.375rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); line-clamp:1;" class="line-clamp-1">
                         ${esc(demoVid.title)}
                       </span>
-                      ${demoVid.duration ? `<span style="font-size:0.72rem; font-weight:700; color:#fff; background:rgba(0,0,0,0.85); padding:0.2rem 0.5rem; border-radius:0.375rem;">${formatDuration(demoVid.duration)}</span>` : ''}
+                      ${demoVid.duration ? `<span style="font-size: 12px; font-weight:700; color:#fff; background:rgba(0,0,0,0.85); padding:0.2rem 0.5rem; border-radius:0.375rem;">${formatDuration(demoVid.duration)}</span>` : ''}
                     </div>
 
                     <!-- Center Big Play Button -->
-                    <button type="button" class="js-play-demo" data-container="demo-video-player-${rawId}" data-vid="${esc(demoVid.videoId)}" style="align-self:center; width:64px; height:64px; border-radius:50%; background:rgba(239,68,68,0.95); border:3px solid #fff; color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.6rem; cursor:pointer; box-shadow:0 0 30px rgba(239,68,68,0.8); transition:all 0.2s;" title="Bấm để phát video trực tiếp tại đây">
+                    <button type="button" class="js-play-demo" data-container="demo-video-player-${rawId}" data-vid="${esc(demoVid.videoId)}" style="align-self:center; width:64px; height:64px; border-radius:50%; background:rgba(239,68,68,0.95); border:3px solid #fff; color:#fff; display:flex; align-items:center; justify-content:center; font-size: 24px; cursor:pointer; box-shadow:0 0 30px rgba(239,68,68,0.8); transition:all 0.2s;" title="Bấm để phát video trực tiếp tại đây">
                       <span style="margin-left:4px; display:inline-flex;">${ico('play', 24)}</span>
                     </button>
 
                     <!-- Bottom Info Strip -->
-                    <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.75rem; color:#e2e8f0; background:rgba(0,0,0,0.65); padding:0.35rem 0.75rem; border-radius:0.5rem; backdrop-filter:blur(4px);">
+                    <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:#e2e8f0; background:rgba(0,0,0,0.65); padding:0.35rem 0.75rem; border-radius:0.5rem; backdrop-filter:blur(4px);">
                       <span class="inline-flex items-center gap-1">${ico('eye', 14)} <strong class="c-sky">${formatNum(demoVid.views)}</strong> views</span>
                       ${demoVid.vph != null ? `<span class="inline-flex items-center gap-1">${ico('zap', 14)} <strong class="c-amber-500">${Math.round(demoVid.vph)}</strong> VPH</span>` : ''}
                       <span class="inline-flex items-center gap-1">${ico('calendar', 14)} Xuất bản: ${demoVid.publishedAt ? demoVid.publishedAt.slice(0, 10) : 'N/A'}</span>
@@ -1518,19 +1518,19 @@
               <div id="raw-voice-dna" style="background:#0f172a; border:1px solid #1e293b; border-radius:1rem; padding:1.25rem; display:flex; flex-direction:column; gap:0.9rem; box-shadow:0 4px 20px -2px rgba(0,0,0,0.5);">
                 <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; border-bottom:1px solid #1e293b; padding-bottom:0.75rem;">
                   <div style="display:flex; align-items:center; gap:0.5rem;">
-                    <span style="font-size:1.25rem; display:inline-flex;">${ico('mic', 20)}</span>
+                    <span style="font-size: 18px; display:inline-flex;">${ico('mic', 20)}</span>
                     <div>
                       <div class="row-wrap">
-                        <h4 style="font-size:0.95rem; font-weight:800; color:#fff; margin:0;">Mẫu Giọng Chuẩn Của Kênh (Voice DNA Studio)</h4>
+                        <h4 style="font-size: 14px; font-weight: 700; color:#fff; margin:0;">Mẫu Giọng Chuẩn Của Kênh (Voice DNA Studio)</h4>
                         ${(voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) ? `
-                        <span style="font-size:0.7rem; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(14,165,233,0.2); border:1px solid rgba(14,165,233,0.4); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
+                        <span style="font-size: 11px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(14,165,233,0.2); border:1px solid rgba(14,165,233,0.4); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
                           ${esc(voiceProfile.voiceCharacteristics.languageFlag)} ${esc(voiceProfile.voiceCharacteristics.audioLanguage || '')}
                         </span>` : ''}
                       </div>
-                      <p style="font-size:0.72rem; color:#94a3b8; margin:0;">${voiceProfile.sourceVideo ? voiceProfile.sourceVideo.timeWindow : '45s'} • MP3 Mono 44.1kHz • Chuẩn hóa EBU R128 (-16 LUFS)</p>
+                      <p style="font-size: 12px; color:#94a3b8; margin:0;">${voiceProfile.sourceVideo ? voiceProfile.sourceVideo.timeWindow : '45s'} • MP3 Mono 44.1kHz • Chuẩn hóa EBU R128 (-16 LUFS)</p>
                     </div>
                   </div>
-                  <a href="${esc(cacheBustAudioSrc)}" download="${esc(rawId)}_voice_sample.mp3" style="font-size:0.75rem; padding:0.4rem 0.85rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.35rem; transition:background 0.2s;">${ico('download', 14)} Tải MP3 Clone Voice</a>
+                  <a href="${esc(cacheBustAudioSrc)}" download="${esc(rawId)}_voice_sample.mp3" style="font-size: 12px; padding:0.4rem 0.85rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.35rem; transition:background 0.2s;">${ico('download', 14)} Tải MP3 Clone Voice</a>
                 </div>
 
                 <!-- Audio Player -->
@@ -1539,28 +1539,28 @@
                 </div>
 
                 <!-- Voice DNA Characteristics Grid -->
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.65rem; font-size:0.8rem;">
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.65rem; font-size: 13px;">
                   <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem;">
-                    <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Đặc tính giọng</div>
+                    <div style="color:#94a3b8; font-size: 11px; text-transform:uppercase; font-weight:600;">Đặc tính giọng</div>
                     <div style="color:#38bdf8; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.genderEstimate)}</div>
-                    <div style="color:#94a3b8; font-size:0.72rem; margin-top:0.15rem;">Độ tuổi: <span class="c-slate-100">${esc(voiceProfile.voiceCharacteristics.ageRange || 'Chưa rõ')}</span></div>
+                    <div style="color:#94a3b8; font-size: 12px; margin-top:0.15rem;">Độ tuổi: <span class="c-slate-100">${esc(voiceProfile.voiceCharacteristics.ageRange || 'Chưa rõ')}</span></div>
                   </div>
                   <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem;">
-                    <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Ngôn ngữ giọng đọc</div>
+                    <div style="color:#94a3b8; font-size: 11px; text-transform:uppercase; font-weight:600;">Ngôn ngữ giọng đọc</div>
                     <div style="color:#38bdf8; font-weight:700; margin-top:0.2rem; display:flex; align-items:center; gap:0.35rem;">
                       <span>${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || '')}${(voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) ? '' : ico('globe', 14)}</span>
                       <span>${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.audioLanguage) || 'Tiếng Anh')}</span>
                     </div>
-                    <div style="color:#94a3b8; font-size:0.72rem; margin-top:0.15rem;">Phương ngữ: <span class="c-slate-100">${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageDialect) || 'Standard')}</span></div>
+                    <div style="color:#94a3b8; font-size: 12px; margin-top:0.15rem;">Phương ngữ: <span class="c-slate-100">${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageDialect) || 'Standard')}</span></div>
                   </div>
                   <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem;">
-                    <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Tốc độ nói thực tế (WPM)</div>
+                    <div style="color:#94a3b8; font-size: 11px; text-transform:uppercase; font-weight:600;">Tốc độ nói thực tế (WPM)</div>
                     <div style="color:#f59e0b; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.actualPaceWPM || voiceProfile.voiceCharacteristics.estimatedPace)}</div>
                   </div>
                   <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.85rem; grid-column: 1 / -1;">
-                    <div style="color:#94a3b8; font-size:0.7rem; text-transform:uppercase; font-weight:600;">Tông giọng & Cảm xúc</div>
+                    <div style="color:#94a3b8; font-size: 11px; text-transform:uppercase; font-weight:600;">Tông giọng & Cảm xúc</div>
                     <div style="color:#10b981; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.toneAndStyle)}</div>
-                    ${voiceProfile.voiceCharacteristics.targetAudience ? `<div style="color:#94a3b8; font-size:0.72rem; margin-top:0.2rem;">Khán giả mục tiêu: <span class="c-slate-300">${esc(voiceProfile.voiceCharacteristics.targetAudience)}</span></div>` : ''}
+                    ${voiceProfile.voiceCharacteristics.targetAudience ? `<div style="color:#94a3b8; font-size: 12px; margin-top:0.2rem;">Khán giả mục tiêu: <span class="c-slate-300">${esc(voiceProfile.voiceCharacteristics.targetAudience)}</span></div>` : ''}
                   </div>
                 </div>
 
@@ -1568,10 +1568,10 @@
                 ${voiceProfile.promptingStudio ? `
                 <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:1rem; display:flex; flex-direction:column; gap:0.75rem;">
                   <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
-                    <div style="font-size:0.85rem; font-weight:800; color:#38bdf8; display:flex; align-items:center; gap:0.4rem;">
+                    <div style="font-size: 14px; font-weight: 700; color:#38bdf8; display:flex; align-items:center; gap:0.4rem;">
                       <span>${ico('clapperboard', 14)}</span> Scene & Sample Context (Chuẩn Google AI Studio / Gemini Speech / Aoede):
                     </div>
-                    <button type="button" class="btn-copy-combined-prompt" style="font-size:0.72rem; padding:0.35rem 0.75rem; border-radius:0.375rem; background:#0284c7; hover:background:#0369a1; color:#fff; font-weight:700; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem; transition:background 0.2s;">${ico('clipboard-copy', 14)} Copy Trọn Bộ (Scene + Context + Speech)</button>
+                    <button type="button" class="btn-copy-combined-prompt" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.375rem; background:#0284c7; hover:background:#0369a1; color:#fff; font-weight:700; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem; transition:background 0.2s;">${ico('clipboard-copy', 14)} Copy Trọn Bộ (Scene + Context + Speech)</button>
                   </div>
 
                   <!-- Scene Field -->
@@ -1580,9 +1580,9 @@
                       <span style="font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.3rem;">
                         <span class="c-sky">Scene</span> <span style="color:#94a3b8; font-weight:400;">(Bối cảnh & Không gian âm học)</span>
                       </span>
-                      <button type="button" class="btn-copy-scene" style="font-size:0.7rem; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Scene</button>
+                      <button type="button" class="btn-copy-scene" style="font-size: 11px; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Scene</button>
                     </div>
-                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.55rem 0.75rem; font-size:0.78rem; color:#f1f5f9; font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.scene)}</div>
+                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.55rem 0.75rem; font-size: 12px; color:#f1f5f9; font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.scene)}</div>
                   </div>
 
                   <!-- Sample Context Field -->
@@ -1591,9 +1591,9 @@
                       <span style="font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.3rem;">
                         <span class="c-amber-500">Sample Context</span> <span style="color:#94a3b8; font-weight:400;">(Ngữ cảnh biểu cảm & Giọng điệu)</span>
                       </span>
-                      <button type="button" class="btn-copy-context" style="font-size:0.7rem; color:#f59e0b; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Context</button>
+                      <button type="button" class="btn-copy-context" style="font-size: 11px; color:#f59e0b; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Context</button>
                     </div>
-                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.55rem 0.75rem; font-size:0.78rem; color:#fef3c7; font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.sampleContext)}</div>
+                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.55rem 0.75rem; font-size: 12px; color:#fef3c7; font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.sampleContext)}</div>
                   </div>
 
                   <!-- Speaker & Sample Speech Block Field -->
@@ -1603,9 +1603,9 @@
                       <span style="font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.3rem;">
                         <span>${ico('user', 14)}</span> <span class="c-green">${esc(voiceProfile.promptingStudio.speakerTag || 'Speaker 1')}</span> <span style="color:#94a3b8; font-weight:400;">(Đoạn thoại mẫu đối soát)</span>
                       </span>
-                      <button type="button" class="btn-copy-speech-block" style="font-size:0.7rem; color:#10b981; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Speech Block</button>
+                      <button type="button" class="btn-copy-speech-block" style="font-size: 11px; color:#10b981; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Speech Block</button>
                     </div>
-                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.6rem 0.75rem; font-size:0.78rem; color:#cbd5e1; line-height:1.5; font-style:italic;">"${esc(voiceProfile.promptingStudio.sampleSpeechBlock)}"</div>
+                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.6rem 0.75rem; font-size: 12px; color:#cbd5e1; line-height:1.5; font-style:italic;">"${esc(voiceProfile.promptingStudio.sampleSpeechBlock)}"</div>
                   </div>` : ''}
                 </div>` : ''}
 
@@ -1613,21 +1613,21 @@
                 ${voiceProfile.elevenlabsCloningConfiguration ? `
                 <div style="background:#131d31; border:1px solid rgba(168,85,247,0.3); border-radius:0.75rem; padding:0.85rem 1rem; display:flex; flex-direction:column; gap:0.6rem;">
                   <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
-                    <div style="font-size:0.82rem; font-weight:700; color:#c084fc; display:flex; align-items:center; gap:0.35rem;">
+                    <div style="font-size: 13px; font-weight:700; color:#c084fc; display:flex; align-items:center; gap:0.35rem;">
                       <span>${ico('zap', 14)}</span> Cấu Hình Clone Voice Trên ElevenLabs:
                     </div>
-                    <span style="font-size:0.7rem; background:rgba(168,85,247,0.15); color:#d8b4fe; padding:0.15rem 0.5rem; border-radius:0.375rem; border:1px solid rgba(168,85,247,0.3);">${esc(voiceProfile.elevenlabsCloningConfiguration.recommendedModel || 'Multilingual v2')}</span>
+                    <span style="font-size: 11px; background:rgba(168,85,247,0.15); color:#d8b4fe; padding:0.15rem 0.5rem; border-radius:0.375rem; border:1px solid rgba(168,85,247,0.3);">${esc(voiceProfile.elevenlabsCloningConfiguration.recommendedModel || 'Multilingual v2')}</span>
                   </div>
 
-                  <div style="font-size:0.8rem; color:#e2e8f0; display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;">
+                  <div style="font-size: 13px; color:#e2e8f0; display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;">
                     <span>Giọng chuẩn gợi ý:</span>
                     <span style="background:#1e293b; color:#38bdf8; font-weight:700; padding:0.2rem 0.6rem; border-radius:0.375rem; border:1px solid #334155;">${esc(voiceProfile.elevenlabsCloningConfiguration.primaryVoiceMatch || '')}</span>
-                    ${voiceProfile.elevenlabsCloningConfiguration.alternativeVoices ? voiceProfile.elevenlabsCloningConfiguration.alternativeVoices.map(av => `<span style="background:#1e293b; color:#94a3b8; font-size:0.75rem; padding:0.2rem 0.5rem; border-radius:0.375rem;">${esc(av)}</span>`).join('') : ''}
+                    ${voiceProfile.elevenlabsCloningConfiguration.alternativeVoices ? voiceProfile.elevenlabsCloningConfiguration.alternativeVoices.map(av => `<span style="background:#1e293b; color:#94a3b8; font-size: 12px; padding:0.2rem 0.5rem; border-radius:0.375rem;">${esc(av)}</span>`).join('') : ''}
                   </div>
 
                   <!-- Voice Settings Chips -->
                   ${voiceProfile.elevenlabsCloningConfiguration.voiceSettings ? `
-                  <div style="display:flex; flex-wrap:wrap; gap:0.5rem; font-size:0.75rem; color:#94a3b8; background:#0b0f19; padding:0.5rem 0.75rem; border-radius:0.5rem; border:1px solid #1e293b;">
+                  <div style="display:flex; flex-wrap:wrap; gap:0.5rem; font-size: 12px; color:#94a3b8; background:#0b0f19; padding:0.5rem 0.75rem; border-radius:0.5rem; border:1px solid #1e293b;">
                     <span>Settings:</span>
                     <span>Stability: <strong class="c-amber">${voiceProfile.elevenlabsCloningConfiguration.voiceSettings.stability}</strong></span>
                     <span>•</span>
@@ -1641,16 +1641,16 @@
                   <!-- Voice Design Prompt -->
                   ${voiceProfile.elevenlabsCloningConfiguration.voiceDesignPrompt ? `
                   <div style="margin-top:0.25rem;">
-                    <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.75rem; color:#94a3b8; margin-bottom:0.25rem;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:#94a3b8; margin-bottom:0.25rem;">
                       <span>Voice Design Prompt (Dùng tạo giọng AI không cần clone):</span>
-                      <button type="button" class="btn-copy-voice-design" style="font-size:0.7rem; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Prompt</button>
+                      <button type="button" class="btn-copy-voice-design" style="font-size: 11px; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Prompt</button>
                     </div>
-                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.5rem 0.75rem; font-size:0.75rem; color:#cbd5e1; font-style:italic;">"${esc(voiceProfile.elevenlabsCloningConfiguration.voiceDesignPrompt)}"</div>
+                    <div style="background:#0b0f19; border:1px solid #1e293b; border-radius:0.5rem; padding:0.5rem 0.75rem; font-size: 12px; color:#cbd5e1; font-style:italic;">"${esc(voiceProfile.elevenlabsCloningConfiguration.voiceDesignPrompt)}"</div>
                   </div>` : ''}
 
                   <!-- Dubbing SOP -->
                   ${voiceProfile.elevenlabsCloningConfiguration.dubbingProductionSOP ? `
-                  <div style="font-size:0.75rem; color:#fef3c7; background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.2); border-radius:0.5rem; padding:0.5rem 0.75rem;">
+                  <div style="font-size: 12px; color:#fef3c7; background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.2); border-radius:0.5rem; padding:0.5rem 0.75rem;">
                     <strong class="c-amber">SOP Lồng tiếng chuẩn:</strong> ${esc(voiceProfile.elevenlabsCloningConfiguration.dubbingProductionSOP)}
                   </div>` : ''}
                 </div>` : ''}
@@ -1662,13 +1662,13 @@
               ${tags && tags.length ? `
               <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem;">
                 <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
-                  <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
+                  <div style="font-size: 14px; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
                     <span>${ico('tag', 14)}</span> Bộ Tags Kênh Đắt Giá (${tags.length} tags):
                   </div>
-                  <button type="button" id="btn-copy-raw-tags" style="font-size:0.75rem; padding:0.3rem 0.75rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; cursor:pointer; font-weight:600;">${ico('clipboard-copy', 14)} Sao chép tất cả Tags</button>
+                  <button type="button" id="btn-copy-raw-tags" style="font-size: 12px; padding:0.3rem 0.75rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; cursor:pointer; font-weight:600;">${ico('clipboard-copy', 14)} Sao chép tất cả Tags</button>
                 </div>
                 <div style="display:flex; flex-wrap:wrap; gap:0.4rem; max-height:160px; overflow-y:auto; padding-right:0.25rem;">
-                  ${tags.map(t => `<span style="font-size:0.72rem; padding:0.25rem 0.6rem; border-radius:0.5rem; background:#1e293b; color:#cbd5e1; border:1px solid #334155;">#${esc(t)}</span>`).join('')}
+                  ${tags.map(t => `<span style="font-size: 12px; padding:0.25rem 0.6rem; border-radius:0.5rem; background:#1e293b; color:#cbd5e1; border:1px solid #334155;">#${esc(t)}</span>`).join('')}
                 </div>
               </div>` : ''}
               </div> <!-- End Tab Panel 3: Voice DNA & Demo -->
@@ -1678,12 +1678,12 @@
               <!-- Section: Top Videos Đột Phá Triệu View -->
               <div id="raw-top-videos" style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem;">
                 <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.4rem; flex-wrap:wrap; gap:0.5rem;">
-                  <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
+                  <div style="font-size: 14px; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
                     <span>${ico('flame', 14)}</span> Top Video Đang Phát Trên YouTube (YouTube Live - ${tvList.length} video):
                   </div>
-                  <span style="font-size:0.7rem; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Sắp xếp: Cao nhất đến thấp nhất (Most Viewed)</span>
+                  <span style="font-size: 11px; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Sắp xếp: Cao nhất đến thấp nhất (Most Viewed)</span>
                 </div>
-                <p style="font-size:0.72rem; color:#94a3b8; margin:0 0 0.85rem 0;">100% video dưới đây đang hoạt động thực tế trên YouTube, có đầy đủ Sub song ngữ 1:1, timestamps và phân tích kịch bản Voice AI.</p>
+                <p style="font-size: 12px; color:#94a3b8; margin:0 0 0.85rem 0;">100% video dưới đây đang hoạt động thực tế trên YouTube, có đầy đủ Sub song ngữ 1:1, timestamps và phân tích kịch bản Voice AI.</p>
                 ${tvList.length ? `
                 <div class="raw-top-videos-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:0.85rem;">
                   ${tvList.map((v, i) => {
@@ -1696,55 +1696,55 @@
                         <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" width="320" height="180" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;" class="group-hover:scale-105">
                         
                         <!-- Rank Badge -->
-                        <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size:0.65rem; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); z-index:2;" title="Display Rank theo views giảm dần${sourceRank ? ' · Source Rank gốc: #' + sourceRank : ''}">#${displayRank}</span>
+                        <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size: 11px; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); z-index:2;" title="Display Rank theo views giảm dần${sourceRank ? ' · Source Rank gốc: #' + sourceRank : ''}">#${displayRank}</span>
                         
                         <!-- Mini Open YouTube Icon Link -->
-                        <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" class="js-stop-prop hover:text-white hover:bg-red-600 transition-colors" style="position:absolute; top:0.35rem; right:0.35rem; background:rgba(0,0,0,0.75); color:#94a3b8; font-size:0.65rem; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; text-decoration:none; display:inline-flex; align-items:center; gap:0.2rem; border:1px solid rgba(255,255,255,0.1); z-index:2;" title="Mở tab YouTube ngoài">
+                        <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" class="js-stop-prop hover:text-white hover:bg-red-600 transition-colors" style="position:absolute; top:0.35rem; right:0.35rem; background:rgba(0,0,0,0.75); color:#94a3b8; font-size: 11px; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; text-decoration:none; display:inline-flex; align-items:center; gap:0.2rem; border:1px solid rgba(255,255,255,0.1); z-index:2;" title="Mở tab YouTube ngoài">
                           <span>${ico('arrow-up-right', 14)} YT</span>
                         </a>
 
                         <!-- Center Play Button (Sleek, Compact, Fast) -->
                         <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.25); transition:background 0.2s;" class="group-hover:bg-black/40">
-                          <div style="width:42px; height:42px; border-radius:50%; background:rgba(239,68,68,0.92); border:2px solid #fff; color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.15rem; box-shadow:0 0 16px rgba(239,68,68,0.7); transition:all 0.2s;" class="group-hover:scale-110 group-hover:bg-red-600">
+                          <div style="width:42px; height:42px; border-radius:50%; background:rgba(239,68,68,0.92); border:2px solid #fff; color:#fff; display:flex; align-items:center; justify-content:center; font-size: 18px; box-shadow:0 0 16px rgba(239,68,68,0.7); transition:all 0.2s;" class="group-hover:scale-110 group-hover:bg-red-600">
                             <span style="margin-left:3px; line-height:1; display:inline-flex;">${ico('play', 20)}</span>
                           </div>
                         </div>
 
                         <!-- Duration Badge -->
-                        ${v.duration ? `<span style="position:absolute; bottom:0.35rem; right:0.35rem; background:rgba(0,0,0,0.85); color:#fff; font-size:0.65rem; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; z-index:2;">${formatDuration(v.duration)}</span>` : ''}
+                        ${v.duration ? `<span style="position:absolute; bottom:0.35rem; right:0.35rem; background:rgba(0,0,0,0.85); color:#fff; font-size: 11px; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; z-index:2;">${formatDuration(v.duration)}</span>` : ''}
                       </div>
 
                       <!-- Card Content -->
                       <div style="padding:0.75rem; display:flex; flex-direction:column; flex:1; gap:0.4rem;">
                         <div class="js-quick-video" style="cursor:pointer;" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Bấm để xem video">
-                          <span style="font-size:0.8rem; font-weight:700; color:#fff; line-height:1.35;" class="line-clamp-2 hover:text-brand-300 transition-colors">${esc(v.title)}</span>
+                          <span style="font-size: 13px; font-weight:700; color:#fff; line-height:1.35;" class="line-clamp-2 hover:text-brand-300 transition-colors">${esc(v.title)}</span>
                         </div>
 
-                        <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.72rem; color:#94a3b8; margin-top:auto; padding-top:0.2rem;">
+                        <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:#94a3b8; margin-top:auto; padding-top:0.2rem;">
                           <span class="inline-flex items-center gap-1">${ico('eye', 14)} <strong class="c-sky">${formatNum(v.views)}</strong> views</span>
                           ${v.vph != null ? `<span class="inline-flex items-center gap-1">${ico('zap', 14)} <strong class="c-amber-500">${Math.round(v.vph)}</strong> VPH</span>` : ''}
                           <span class="inline-flex items-center gap-1">${ico('calendar', 14)} ${v.publishedAt ? v.publishedAt.slice(0, 10) : ''}</span>
                         </div>
-                        ${sourceRank ? `<div style="font-size:0.64rem; color:#64748b; background:#0f172a; border:1px solid #1e293b; border-radius:0.4rem; padding:0.2rem 0.35rem;">Display Rank: <b class="c-slate-100">#${displayRank}</b> · Source Rank gốc: <b style="color:#fbbf24;">#${sourceRank}</b></div>` : ''}
+                        ${sourceRank ? `<div style="font-size: 11px; color:#64748b; background:#0f172a; border:1px solid #1e293b; border-radius:0.4rem; padding:0.2rem 0.35rem;">Display Rank: <b class="c-slate-100">#${displayRank}</b> · Source Rank gốc: <b style="color:#fbbf24;">#${sourceRank}</b></div>` : ''}
 
                         <!-- Unified Action Buttons: Xem Video (Cinema) + Mở YT + Xem Sub -->
                         <div style="display:grid; grid-template-columns:1fr auto; gap:0.35rem; margin-top:0.25rem;">
-                          <button type="button" class="js-quick-video py-1.5 px-2.5 rounded-lg bg-rose-600/30 hover:bg-rose-600/80 border border-rose-500/40 hover:border-rose-400 text-rose-200 hover:text-white font-semibold text-[11px] flex items-center justify-center gap-1.5 transition cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Phát video trực tiếp tại chỗ">
-                            <span style="font-size:0.75rem; display:inline-flex;">${ico('play', 14)}</span> Xem Video
+                          <button type="button" class="js-quick-video py-1.5 px-2.5 rounded-lg bg-rose-600/30 hover:bg-rose-600/80 border border-rose-500/40 hover:border-rose-400 text-rose-200 hover:text-white font-semibold text-2xs flex items-center justify-center gap-1.5 transition cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Phát video trực tiếp tại chỗ">
+                            <span style="font-size: 12px; display:inline-flex;">${ico('play', 14)}</span> Xem Video
                           </button>
                           <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" style="padding:0.35rem 0.65rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#94a3b8; font-size:11px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.2rem;" class="hover:text-white hover:bg-slate-700 transition" title="Mở trên YouTube tab mới">
                             ${ico('arrow-up-right', 14)} YT
                           </a>
                         </div>
 
-                        <button type="button" class="btn-open-video-sub w-full py-1.5 px-2 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/70 border border-indigo-500/40 text-indigo-200 hover:text-white font-semibold text-[11px] flex items-center justify-center gap-1.5 transition-colors cursor-pointer" data-dossier="${esc(dossierPath)}" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(v.views))}">
+                        <button type="button" class="btn-open-video-sub w-full py-1.5 px-2 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/70 border border-indigo-500/40 text-indigo-200 hover:text-white font-semibold text-2xs flex items-center justify-center gap-1.5 transition-colors cursor-pointer" data-dossier="${esc(dossierPath)}" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(v.views))}">
                           <span>${ico('scroll-text', 14)} Xem Sub, Lời Thoại & Kịch Bản AI</span> →
                         </button>
                       </div>
                     </div>
                   `}).join('')}
                 </div>` : `
-                <div style="padding:1.5rem; text-align:center; color:#64748b; font-size:0.85rem;">
+                <div style="padding:1.5rem; text-align:center; color:#64748b; font-size: 14px;">
                   Đang đồng bộ danh sách Top Video của kênh này.
                 </div>`}
               </div>
@@ -1753,15 +1753,15 @@
               ${vRec && vRec.length ? `
               <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem;">
                 <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
-                  <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
+                  <div style="font-size: 14px; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
                     <span>${ico('trending-up', 14)}</span> Tốc Độ Tăng Trưởng Thực Tế 7 Ngày Qua (vidIQ Live Velocity):
                   </div>
-                  <span style="font-size:0.7rem; color:#10b981; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600; display:inline-flex; align-items:center; gap:0.25rem;">${ico('check', 14)} Live Verified API (${vRec[vRec.length - 1] ? (vRec[vRec.length - 1].videos + ' video hiện hành') : ''})</span>
+                  <span style="font-size: 11px; color:#10b981; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600; display:inline-flex; align-items:center; gap:0.25rem;">${ico('check', 14)} Live Verified API (${vRec[vRec.length - 1] ? (vRec[vRec.length - 1].videos + ' video hiện hành') : ''})</span>
                 </div>
                 <div style="overflow-x:auto;">
-                  <table style="width:100%; border-collapse:collapse; font-size:0.75rem; text-align:left;">
+                  <table style="width:100%; border-collapse:collapse; font-size: 12px; text-align:left;">
                     <thead>
-                      <tr style="border-bottom:1px solid #334155; color:#94a3b8; text-transform:uppercase; font-size:0.68rem;">
+                      <tr style="border-bottom:1px solid #334155; color:#94a3b8; text-transform:uppercase; font-size: 11px;">
                         <th style="padding:0.4rem 0.6rem;">Ngày theo dõi</th>
                         <th style="padding:0.4rem 0.6rem;">Lượng Subs</th>
                         <th style="padding:0.4rem 0.6rem;">Tổng Views</th>
@@ -1794,24 +1794,24 @@
               ${ocr && ocr.videoRows && ocr.videoRows.length ? `
               <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem;">
                 <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.5rem; flex-wrap:wrap; gap:0.5rem;">
-                  <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
+                  <div style="font-size: 14px; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
                     <span>${ico('target', 14)}</span> Bóc Tách Đột Phá Outlier Từ Ảnh Chụp Màn Hình Gốc (OCR Vision Snapshot):
                   </div>
-                  <span style="font-size:0.7rem; color:#f59e0b; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Snapshot Lúc Phát Hiện (${esc(ocr.scannedAt || '2026-09-05')})</span>
+                  <span style="font-size: 11px; color:#f59e0b; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Snapshot Lúc Phát Hiện (${esc(ocr.scannedAt || '2026-09-05')})</span>
                 </div>
-                <div style="font-size:0.72rem; color:#94a3b8; margin-bottom:0.75rem; background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.2); border-radius:0.5rem; padding:0.5rem 0.75rem; line-height:1.45;">
+                <div style="font-size: 12px; color:#94a3b8; margin-bottom:0.75rem; background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.2); border-radius:0.5rem; padding:0.5rem 0.75rem; line-height:1.45;">
                   ${ico('camera', 14)} <strong class="c-amber">Ngữ cảnh thời gian:</strong> Danh sách dưới đây được bóc tách từ ảnh raw gốc (<em>${esc(r.fileName || '')}</em>) lúc kênh mới bứt phá (${ocr.subsText ? ('Quy mô lúc chụp: ' + esc(ocr.subsText) + ' • ' + esc(ocr.videoCountText || '')) : 'Ảnh raw'}). Người chụp lúc đó dùng vidIQ Extension sắp xếp theo độ nổi tiếng (Sort by Popularity). Các video có thể đã được chủ kênh chuyển về Riêng tư hoặc đổi tiêu đề sau này.
                 </div>
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:0.6rem;">
                   ${ocr.videoRows.map(vr => `
                     <div style="background:#182234; border:1px solid #233148; border-radius:0.625rem; padding:0.65rem 0.8rem; display:flex; flex-direction:column; gap:0.35rem;">
-                      <div style="font-size:0.78rem; font-weight:700; color:#fff; line-height:1.35;" class="line-clamp-2">${esc(vr.title)}</div>
-                      <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.72rem; color:#94a3b8; margin-top:auto; pt-1;">
+                      <div style="font-size: 12px; font-weight:700; color:#fff; line-height:1.35;" class="line-clamp-2">${esc(vr.title)}</div>
+                      <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:#94a3b8; margin-top:auto; pt-1;">
                         <span class="inline-flex items-center gap-1">${ico('timer', 14)} ${esc(vr.duration || 'N/A')}</span>
                         <span class="inline-flex items-center gap-1">${ico('eye', 14)} <strong class="c-sky">${esc(vr.viewsText || '')}</strong></span>
                         <span style="background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.4); padding:0.1rem 0.4rem; border-radius:0.25rem; font-weight:700;">${esc(vr.outlier || '')}</span>
                       </div>
-                      <div style="display:flex; align-items:center; justify-content:space-between; font-size:0.68rem; color:#64748b;">
+                      <div style="display:flex; align-items:center; justify-content:space-between; font-size: 11px; color:#64748b;">
                         <span class="inline-flex items-center gap-1">${ico('zap', 14)} ${esc(vr.vph || '')}</span>
                         <span class="inline-flex items-center gap-1">${ico('clock', 14)} ${esc(vr.age || '')}</span>
                       </div>
@@ -1820,7 +1820,7 @@
                 </div>
 
                 <!-- Box: Đối Soát Tiến Hóa Kênh -->
-                <div style="margin-top:0.85rem; background:#0f172a; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.9rem; font-size:0.74rem; color:#cbd5e1; line-height:1.5;">
+                <div style="margin-top:0.85rem; background:#0f172a; border:1px solid #1e293b; border-radius:0.625rem; padding:0.75rem 0.9rem; font-size: 12px; color:#cbd5e1; line-height:1.5;">
                   <div style="font-weight:700; color:#38bdf8; display:flex; align-items:center; gap:0.35rem; margin-bottom:0.3rem;">
                     <span>${ico('lightbulb', 14)}</span> Đối Soát Tiến Hóa Kênh Giữa 2 Mốc Dữ Liệu (Timeline Evolution):
                   </div>
@@ -1835,8 +1835,8 @@
 
               <!-- Section: Phân Tích Nội Dung & Kỹ Thuật (Vision AI) -->
               ${vision.mainTopic || vision.contentStyle ? `
-              <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem; font-size:0.82rem; color:#cbd5e1; display:flex; flex-direction:column; gap:0.5rem;">
-                <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
+              <div style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1rem 1.1rem; font-size: 13px; color:#cbd5e1; display:flex; flex-direction:column; gap:0.5rem;">
+                <div style="font-size: 14px; font-weight:700; color:#e2e8f0; display:flex; align-items:center; gap:0.4rem;">
                   <span>${ico('brain', 14)}</span> Bóc Tách Nội Dung & Phong Cách Sản Xuất (Vision AI):
                 </div>
                 ${vision.mainTopic ? `<div><strong class="c-amber">Chủ đề chính:</strong> ${esc(vision.mainTopic)}</div>` : ''}
@@ -2065,12 +2065,12 @@
       function inlineMdFull(md) {
         if (!md) return '';
         return md
-          .replace(/^### (.*$)/gim, '<h3 style="color:#fcd34d; font-size:1.05rem; font-weight:700; margin:1rem 0 0.5rem 0;">$1</h3>')
-          .replace(/^## (.*$)/gim, '<h2 style="color:#38bdf8; font-size:1.2rem; font-weight:800; border-bottom:1px solid #334155; padding-bottom:0.35rem; margin:1.25rem 0 0.65rem 0;">$1</h2>')
-          .replace(/^# (.*$)/gim, '<h1 style="color:#fff; font-size:1.35rem; font-weight:800; margin:0 0 1rem 0;">$1</h1>')
+          .replace(/^### (.*$)/gim, '<h3 style="color:#fcd34d; font-size: 16px; font-weight:700; margin:1rem 0 0.5rem 0;">$1</h3>')
+          .replace(/^## (.*$)/gim, '<h2 style="color:#38bdf8; font-size: 18px; font-weight: 700; border-bottom:1px solid #334155; padding-bottom:0.35rem; margin:1.25rem 0 0.65rem 0;">$1</h2>')
+          .replace(/^# (.*$)/gim, '<h1 style="color:#fff; font-size: 20px; font-weight: 700; margin:0 0 1rem 0;">$1</h1>')
           .replace(/\*\*(.*?)\*\*/g, '<strong style="color:#fff; font-weight:700;">$1</strong>')
           .replace(/\*(.*?)\*/g, '<em class="c-slate-300">$1</em>')
-          .replace(/`([^`]+)`/g, '<code style="background:#1e293b; color:#f59e0b; padding:0.15rem 0.35rem; border-radius:0.25rem; font-family:monospace; font-size:0.8rem;">$1</code>')
+          .replace(/`([^`]+)`/g, '<code style="background:#1e293b; color:#f59e0b; padding:0.15rem 0.35rem; border-radius:0.25rem; font-family:monospace; font-size: 13px;">$1</code>')
           .replace(/\n\n/g, '<br><br>')
           .replace(/^- (.*$)/gim, '<li style="margin-left:1.25rem; color:#cbd5e1;">$1</li>');
       }
@@ -2098,13 +2098,13 @@
           <div style="position:relative; width:100%; max-width:980px; max-height:92vh; background:#0f172a; border:1px solid #334155; border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
             <div style="display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; background:#1e293b; border-bottom:1px solid #334155; flex-shrink:0;">
               <div style="display:flex; align-items:center; gap:0.75rem; min-width:0;">
-                <span style="font-size:1.25rem; display:inline-flex;">${ico('scroll-text', 20)}</span>
-                <h3 style="font-size:1rem; font-weight:700; color:#fff;" class="truncate">Đang nạp Sub & Kịch bản: ${esc(videoTitle)}</h3>
+                <span style="font-size: 18px; display:inline-flex;">${ico('scroll-text', 20)}</span>
+                <h3 style="font-size: 14px; font-weight:700; color:#fff;" class="truncate">Đang nạp Sub & Kịch bản: ${esc(videoTitle)}</h3>
               </div>
-              <button type="button" id="close-video-sub" style="padding:0.4rem 0.85rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size:0.8rem; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+              <button type="button" id="close-video-sub" style="padding:0.4rem 0.85rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size: 13px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
             </div>
             <div style="padding:3rem; text-align:center; color:#94a3b8;">
-              <div style="font-size:2rem; margin-bottom:0.5rem; display:flex; justify-content:center;">${ico('hourglass', 24)}</div>
+              <div style="font-size: 32px; margin-bottom:0.5rem; display:flex; justify-content:center;">${ico('hourglass', 24)}</div>
               Đang tải phụ đề song ngữ và kịch bản lồng tiếng...
             </div>
           </div>
@@ -2143,10 +2143,10 @@
             <div style="display:flex; align-items:center; justify-content:space-between; padding:0.9rem 1.25rem; background:#111827; border-bottom:1px solid #1f2937; flex-shrink:0; gap:1rem;">
               <div class="min-w-0-g3">
                 <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
-                  <span style="font-size:1.1rem; display:inline-flex;">${ico('scroll-text', 20)}</span>
-                  <h3 style="font-size:1rem; font-weight:800; color:#fff; margin:0;" class="truncate">${esc((trData && trData.titleVi) ? trData.titleVi : videoTitle)}</h3>
+                  <span style="font-size: 16px; display:inline-flex;">${ico('scroll-text', 20)}</span>
+                  <h3 style="font-size: 14px; font-weight: 700; color:#fff; margin:0;" class="truncate">${esc((trData && trData.titleVi) ? trData.titleVi : videoTitle)}</h3>
                 </div>
-                <div style="display:flex; align-items:center; gap:0.75rem; font-size:0.75rem; color:#94a3b8; margin-top:0.25rem; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:0.75rem; font-size: 12px; color:#94a3b8; margin-top:0.25rem; flex-wrap:wrap;">
                   <span>Gốc: <em class="c-slate-300">"${esc(videoTitle)}"</em></span>
                   <span>•</span>
                   <span>Kênh: <strong class="c-sky">${esc(channelName)}</strong></span>
@@ -2157,27 +2157,27 @@
                 </div>
               </div>
               <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
-                <button type="button" class="js-quick-video" data-vid="${esc(videoId)}" data-title="${esc(videoTitle)}" data-channel="${esc(channelName)}" data-badge="🔥 Đang xem Transcript" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:rgba(225,29,72,0.9); border:1px solid #f43f5e; color:#fff; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:0.35rem;" title="Mở video xem trực tiếp đồng bộ với phụ đề">${ico('clapperboard', 14)} Xem Video Nhanh</button>
-                <a href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener noreferrer" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#38bdf8; font-size:0.75rem; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem;">${ico('tv', 14)} YouTube ${ico('arrow-up-right', 14)}</a>
-                <button type="button" id="close-video-sub" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size:0.75rem; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+                <button type="button" class="js-quick-video" data-vid="${esc(videoId)}" data-title="${esc(videoTitle)}" data-channel="${esc(channelName)}" data-badge="🔥 Đang xem Transcript" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:rgba(225,29,72,0.9); border:1px solid #f43f5e; color:#fff; font-size: 12px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:0.35rem;" title="Mở video xem trực tiếp đồng bộ với phụ đề">${ico('clapperboard', 14)} Xem Video Nhanh</button>
+                <a href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener noreferrer" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#38bdf8; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem;">${ico('tv', 14)} YouTube ${ico('arrow-up-right', 14)}</a>
+                <button type="button" id="close-video-sub" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
               </div>
             </div>
 
             <!-- Toolbar Tabs & Copy -->
             <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem 1.25rem; background:#182234; border-bottom:1px solid #233148; flex-shrink:0; flex-wrap:wrap; gap:0.5rem;">
               <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;" id="sub-tabs-container">
-                <button type="button" class="sub-tab-btn" data-tab="bilingual" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size:0.75rem; font-weight:700; background:#2563eb; color:#fff; border:1px solid #3b82f6; cursor:pointer;">${ico('globe', 14)} Song ngữ 1:1</button>
-                <button type="button" class="sub-tab-btn" data-tab="vietnamese" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size:0.75rem; font-weight:600; background:#1e293b; color:#cbd5e1; border:1px solid #334155; cursor:pointer;">🇻🇳 Tiếng Việt</button>
-                <button type="button" class="sub-tab-btn" data-tab="original" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size:0.75rem; font-weight:600; background:#1e293b; color:#cbd5e1; border:1px solid #334155; cursor:pointer;">🇺🇸 Tiếng Gốc</button>
-                ${summaryMd ? `<button type="button" class="sub-tab-btn" data-tab="summary" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size:0.75rem; font-weight:600; background:#1e293b; color:#fcd34d; border:1px solid rgba(245,158,11,0.4); cursor:pointer;">${ico('mic', 14)} Kịch bản AI</button>` : ''}
+                <button type="button" class="sub-tab-btn" data-tab="bilingual" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#2563eb; color:#fff; border:1px solid #3b82f6; cursor:pointer;">${ico('globe', 14)} Song ngữ 1:1</button>
+                <button type="button" class="sub-tab-btn" data-tab="vietnamese" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:#1e293b; color:#cbd5e1; border:1px solid #334155; cursor:pointer;">🇻🇳 Tiếng Việt</button>
+                <button type="button" class="sub-tab-btn" data-tab="original" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:#1e293b; color:#cbd5e1; border:1px solid #334155; cursor:pointer;">🇺🇸 Tiếng Gốc</button>
+                ${summaryMd ? `<button type="button" class="sub-tab-btn" data-tab="summary" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:#1e293b; color:#fcd34d; border:1px solid rgba(245,158,11,0.4); cursor:pointer;">${ico('mic', 14)} Kịch bản AI</button>` : ''}
               </div>
               <div style="display:flex; align-items:center; gap:0.35rem;">
-                <button type="button" id="btn-copy-sub-active" style="padding:0.35rem 0.8rem; border-radius:0.5rem; font-size:0.75rem; font-weight:700; background:#10b981; color:#fff; border:1px solid #059669; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('clipboard-copy', 14)} Sao Chép Bản Này</button>
+                <button type="button" id="btn-copy-sub-active" style="padding:0.35rem 0.8rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#10b981; color:#fff; border:1px solid #059669; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('clipboard-copy', 14)} Sao Chép Bản Này</button>
               </div>
             </div>
 
             <!-- Content Area -->
-            <div id="sub-content-body" style="padding:1.25rem; overflow-y:auto; max-height:calc(92vh - 125px); font-size:0.85rem; line-height:1.6; color:#e2e8f0;">
+            <div id="sub-content-body" style="padding:1.25rem; overflow-y:auto; max-height:calc(92vh - 125px); font-size: 14px; line-height:1.6; color:#e2e8f0;">
             </div>
           </div>
         `;
@@ -2212,10 +2212,10 @@
               <div style="display:flex; flex-direction:column; gap:0.6rem;">
                 ${segments.map((seg) => `
                   <div style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.65rem 0.85rem; background:#131d31; border:1px solid #1e293b; border-radius:0.625rem;">
-                    <span style="font-family:monospace; font-size:0.72rem; color:#38bdf8; background:#0f172a; padding:0.15rem 0.45rem; border-radius:0.35rem; border:1px solid #1e293b; flex-shrink:0; font-weight:700;">[${formatSec(seg.start)}]</span>
+                    <span style="font-family:monospace; font-size: 12px; color:#38bdf8; background:#0f172a; padding:0.15rem 0.45rem; border-radius:0.35rem; border:1px solid #1e293b; flex-shrink:0; font-weight:700;">[${formatSec(seg.start)}]</span>
                     <div style="flex:1; min-width:0;">
-                      <div style="font-size:0.85rem; font-weight:600; color:#fff; line-height:1.4;">${esc(seg.text)}</div>
-                      <div style="font-size:0.82rem; color:#fcd34d; margin-top:0.25rem; line-height:1.4;">${esc(seg.viText || '')}</div>
+                      <div style="font-size: 14px; font-weight:600; color:#fff; line-height:1.4;">${esc(seg.text)}</div>
+                      <div style="font-size: 13px; color:#fcd34d; margin-top:0.25rem; line-height:1.4;">${esc(seg.viText || '')}</div>
                     </div>
                   </div>
                 `).join('')}
@@ -2223,19 +2223,19 @@
             `;
           } else if (tab === 'vietnamese') {
             contentEl.innerHTML = `
-              <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size:0.88rem; line-height:1.75; color:#fef3c7;">
+              <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.75; color:#fef3c7;">
                 ${esc(fullVi || segments.map(s => s.viText).join('\n'))}
               </div>
             `;
           } else if (tab === 'original') {
             contentEl.innerHTML = `
-              <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size:0.88rem; line-height:1.75; color:#e2e8f0; font-family:monospace;">
+              <div style="background:#131d31; border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.75; color:#e2e8f0; font-family:monospace;">
                 ${esc(fullEn || segments.map(s => s.text).join('\n'))}
               </div>
             `;
           } else if (tab === 'summary') {
             contentEl.innerHTML = `
-              <div class="max-w-none" style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1.5rem; color:#e2e8f0; font-size:0.85rem; line-height:1.65;">
+              <div class="max-w-none" style="background:#111827; border:1px solid #1f2937; border-radius:0.875rem; padding:1.5rem; color:#e2e8f0; font-size: 14px; line-height:1.65;">
                 ${inlineMdFull(summaryMd)}
               </div>
             `;
@@ -2304,8 +2304,8 @@
           modal.innerHTML = `
             <div style="position:relative; width:100%; max-width:960px; max-height:92vh; background:#111827; border:1px solid #374151; border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.85);">
               <div style="display:flex; align-items:center; justify-content:space-between; padding:0.75rem 1.25rem; background:#1f2937; border-bottom:1px solid #374151; flex-shrink:0;">
-                <span id="raw-img-title" style="font-size:0.9rem; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:flex; align-items:center; gap:0.5rem;"><span style="display:inline-flex;">${ico('camera', 16)}</span><span></span></span>
-                <button type="button" id="close-raw-img" class="btn-press cursor-pointer" style="padding:0.35rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size:0.8rem; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+                <span id="raw-img-title" style="font-size: 14px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:flex; align-items:center; gap:0.5rem;"><span style="display:inline-flex;">${ico('camera', 16)}</span><span></span></span>
+                <button type="button" id="close-raw-img" class="btn-press cursor-pointer" style="padding:0.35rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size: 13px; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
               </div>
               <div style="padding:0.75rem; overflow:auto; max-height:calc(92vh - 55px); display:flex; align-items:center; justify-content:center; background:#000;">
                 <img id="raw-img-src" src="" alt="Ảnh kênh chi tiết" width="1280" height="720" loading="lazy" decoding="async" style="max-width:100%; max-height:80vh; object-fit:contain; border-radius:0.5rem;">
@@ -2366,15 +2366,15 @@
             <div style="display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.15rem; background:#1e293b; border-bottom:1px solid #334155; gap:1rem;">
               <div class="min-w-0-g3">
                 <div class="row-wrap">
-                  <span style="font-size:1.1rem; display:inline-flex;">${ico('clapperboard', 20)}</span>
-                  <h3 style="font-size:0.92rem; font-weight:700; color:#fff; margin:0;" class="truncate">${esc(displayChannel)}</h3>
-                  <span style="font-size:0.68rem; font-weight:700; padding:0.1rem 0.45rem; border-radius:0.35rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;">${esc(badge)}</span>
+                  <span style="font-size: 16px; display:inline-flex;">${ico('clapperboard', 20)}</span>
+                  <h3 style="font-size: 14px; font-weight:700; color:#fff; margin:0;" class="truncate">${esc(displayChannel)}</h3>
+                  <span style="font-size: 11px; font-weight:700; padding:0.1rem 0.45rem; border-radius:0.35rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;">${esc(badge)}</span>
                 </div>
-                <p style="font-size:0.75rem; color:#94a3b8; margin:0.2rem 0 0 0;" class="truncate" title="${esc(videoTitle)}">${esc(videoTitle)}</p>
+                <p style="font-size: 12px; color:#94a3b8; margin:0.2rem 0 0 0;" class="truncate" title="${esc(videoTitle)}">${esc(videoTitle)}</p>
               </div>
               <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
-                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">${ico('arrow-up-right', 14)} Mở YouTube</a>
-                <button type="button" id="close-quick-video" style="padding:0.35rem 0.75rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size:0.75rem; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
+                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">${ico('arrow-up-right', 14)} Mở YouTube</a>
+                <button type="button" id="close-quick-video" style="padding:0.35rem 0.75rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
               </div>
             </div>
             <div style="width:100%; aspect-ratio:16/9; background:#000;">

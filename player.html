@@ -7,14 +7,14 @@
 <meta name="color-scheme" content="dark">
 <title>Xem video — H2DEV Project</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
-<link rel="stylesheet" href="/assets/tailwind.css?v=20260924-p39">
-<link rel="stylesheet" href="/assets/viddar.css?v=20260924-p39">
-<link rel="stylesheet" href="/assets/player.css?v=20260924-p39">
-<link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260924-p39">
-<link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260924-p39">
-<link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260924-p39">
-<link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260924-p39">
-<link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260924-p39">
+<link rel="stylesheet" href="/assets/tailwind.css?v=20260924-p40">
+<link rel="stylesheet" href="/assets/viddar.css?v=20260924-p40">
+<link rel="stylesheet" href="/assets/player.css?v=20260924-p40">
+<link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260924-p40">
+<link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260924-p40">
+<link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260924-p40">
+<link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260924-p40">
+<link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260924-p40">
 <meta name="description" content="H2DEV — xem video khóa học.">
 <meta name="theme-color" content="#050505">
 </head>
@@ -96,7 +96,7 @@
       <!-- Competitor Channels Section -->
       <div id="pchannels" class="hidden card p-4 bg-surface-card border-ink-600">
         <h3 class="font-bold text-white mb-3 flex items-center gap-2 text-sm font-heading">Kênh đối thủ trong video</h3>
-        <p class="text-[11px] text-gray-400 mb-3">Mở kênh YouTube hoặc sao chép handle để tìm kiếm.</p>
+        <p class="text-2xs text-gray-400 mb-3">Mở kênh YouTube hoặc sao chép handle để tìm kiếm.</p>
         <div id="pchannelslist" class="flex flex-wrap gap-2 min-w-0"></div>
       </div>
 
@@ -117,8 +117,8 @@
             </h3>
             <div id="insightBadges" class="flex flex-wrap gap-1.5"></div>
           </div>
-          <p id="legacyInsightNotice" class="hidden mb-3 text-[11px] text-gray-400 bg-ink-900/50 border border-ink-700 rounded-lg px-3 py-2">Các ghi chú bên dưới là heuristic từ transcript cũ: chưa kiểm hình/âm thanh, claim và địa lý khán giả. Chỉ dùng làm manh mối để kiểm lại.</p>
-          <p id="mediaIntegrityNotice" class="hidden mb-3 text-[11px] text-amber-200 bg-amber-950/40 border border-amber-600/50 rounded-lg px-3 py-2"></p>
+          <p id="legacyInsightNotice" class="hidden mb-3 text-2xs text-gray-400 bg-ink-900/50 border border-ink-700 rounded-lg px-3 py-2">Các ghi chú bên dưới là heuristic từ transcript cũ: chưa kiểm hình/âm thanh, claim và địa lý khán giả. Chỉ dùng làm manh mối để kiểm lại.</p>
+          <p id="mediaIntegrityNotice" class="hidden mb-3 text-2xs text-amber-200 bg-amber-950/40 border border-amber-600/50 rounded-lg px-3 py-2"></p>
           
           <div class="space-y-3.5">
             <!-- Box 1: Mốc thời gian trọng tâm (Action-first: tua video nhanh) -->
@@ -160,8 +160,8 @@
             <span class="w-1.5 h-4 bg-emerald-500"></span> Lời thoại phụ đề
           </h3>
           <div class="flex items-center gap-1.5">
-            <a id="btnDownloadSrt" href="#" download class="text-[11px] bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono inline-flex items-center gap-1"><span class="h2-icon h2-icon--14" data-h2i="download" aria-hidden="true"></span>.SRT</a>
-            <a id="btnDownloadTxt" href="#" download class="text-[11px] bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono inline-flex items-center gap-1"><span class="h2-icon h2-icon--14" data-h2i="download" aria-hidden="true"></span>.TXT</a>
+            <a id="btnDownloadSrt" href="#" download class="text-2xs bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono inline-flex items-center gap-1"><span class="h2-icon h2-icon--14" data-h2i="download" aria-hidden="true"></span>.SRT</a>
+            <a id="btnDownloadTxt" href="#" download class="text-2xs bg-ink-700 hover:bg-ink-600 border border-ink-600 px-2 py-1 rounded-xl text-gray-300 font-mono inline-flex items-center gap-1"><span class="h2-icon h2-icon--14" data-h2i="download" aria-hidden="true"></span>.TXT</a>
           </div>
         </div>
         <div class="transcript-feed card p-2.5 max-h-[420px] overflow-y-auto space-y-1 text-xs border-ink-700 bg-ink-900/60" id="transcriptList"></div>
@@ -180,8 +180,8 @@
 <footer class="h2-shell-footer">H2DEV · kho faceless YouTube · không cần đăng nhập</footer>
 <!-- N11 FIX (2026-09-23): nap h2dev-core.js (tang nen dung chung) TRUOC player-main.js.
      Truoc day player.html KHONG nap -> phai tu che esc()/showToast(). -->
-<script src="/assets/h2dev-core.js?v=20260924-p39"></script>
-<script src="assets/app/player-main.js?v=20260924-p39"></script>
+<script src="/assets/h2dev-core.js?v=20260924-p40"></script>
+<script src="assets/app/player-main.js?v=20260924-p40"></script>
 
 <!-- Doc Reader Modal -->
 <div id="docModal" role="dialog" aria-modal="true" aria-label="Tài liệu" tabindex="-1" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:9999; background:rgba(0,0,0,0.85); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:1.25rem;">
@@ -189,19 +189,21 @@
     <div style="display:flex; align-items:center; justify-content:space-between; padding:0.875rem 1.25rem; border-bottom:1px solid #374151; background:rgba(31,41,55,0.85); flex-shrink:0;">
       <div style="display:flex; align-items:center; gap:0.625rem; min-width:0; overflow:hidden;">
         <span class="h2-icon h2-icon--20" data-h2i="file-text" aria-hidden="true"></span>
-        <h3 id="docModalTitle" style="font-size:0.95rem; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Tài liệu</h3>
+        <!-- P3.7 (2026-09-24): inline style cu dung don vi rem (~15.2px) nam NGOAI thang 9 bac.
+             Doi ve 14px = bac base chuan. Xem tokens.json font.sizeScale.standardized. -->
+        <h3 id="docModalTitle" style="font-size:14px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Tài liệu</h3>
       </div>
       <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
-        <a id="docModalRawLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-press" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; text-decoration:none; display:inline-flex; align-items:center; gap:0.25rem;">
+        <a id="docModalRawLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-press" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; text-decoration:none; display:inline-flex; align-items:center; gap:0.25rem;">
           <span class="h2-icon h2-icon--14" data-h2i="external-link" aria-hidden="true"></span><span>Mở tab mới</span>
         </a>
-        <button type="button" data-action="copy-doc" class="btn-press cursor-pointer" style="font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; display:inline-flex; align-items:center; gap:0.25rem;">
+        <button type="button" data-action="copy-doc" class="btn-press cursor-pointer" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; display:inline-flex; align-items:center; gap:0.25rem;">
           <span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span><span>Sao chép</span>
         </button>
-        <button type="button" data-action="close-doc" class="btn-press cursor-pointer" style="font-size:0.875rem; padding:0.25rem 0.6rem; border-radius:0.625rem; background:#374151; color:#9ca3af; border:1px solid #4b5563; display:inline-flex; align-items:center;" aria-label="Đóng tài liệu"><span class="h2-icon h2-icon--16" data-h2i="x" aria-hidden="true"></span></button>
+        <button type="button" data-action="close-doc" class="btn-press cursor-pointer" style="font-size: 14px; padding:0.25rem 0.6rem; border-radius:0.625rem; background:#374151; color:#9ca3af; border:1px solid #4b5563; display:inline-flex; align-items:center;" aria-label="Đóng tài liệu"><span class="h2-icon h2-icon--16" data-h2i="x" aria-hidden="true"></span></button>
       </div>
     </div>
-    <div id="docModalBody" style="padding:1.5rem; overflow-y:auto; max-height:calc(88vh - 65px); color:#e5e7eb; line-height:1.65; font-size:0.875rem;">
+    <div id="docModalBody" style="padding:1.5rem; overflow-y:auto; max-height:calc(88vh - 65px); color:#e5e7eb; line-height:1.65; font-size: 14px;">
       <div style="text-align:center; color:#9ca3af; padding:3rem 0;">Đang tải tài liệu...</div>
     </div>
   </div>

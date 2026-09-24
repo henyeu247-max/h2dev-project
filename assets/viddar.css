@@ -218,7 +218,7 @@ code { font-size: 11px; color: var(--fg-2); }
 @media (prefers-reduced-motion: reduce) {
   .radar-sweep, .radar-ping { animation: none; }
 }
-.vd-wordmark { font: 700 17px/1.15 var(--font-display); letter-spacing: -.03em; color: var(--fg); }
+.vd-wordmark { font: 700 16px/1.15 var(--font-display); letter-spacing: -.03em; color: var(--fg); }
 .vd-wordmark em { color: var(--brand-ink); font-style: normal; }
 .vd-tag { display: block; margin-top: 2px; color: var(--fg-muted); font-size: 11px; font-weight: 500; }
 
@@ -246,7 +246,7 @@ code { font-size: 11px; color: var(--fg-2); }
   background: transparent;
   border: 0;
   border-radius: var(--r-md);
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
   text-align: left;
@@ -328,7 +328,7 @@ code { font-size: 11px; color: var(--fg-2); }
   display: block;
   margin: 0;
   color: var(--fg);
-  font: 600 15px/1.2 var(--font-display);
+  font: 600 16px/1.2 var(--font-display);
   letter-spacing: -.02em;
   white-space: nowrap;
 }
@@ -447,7 +447,7 @@ code { font-size: 11px; color: var(--fg-2); }
  * va ep co bang min-width/min-height (khong dung width/height vao mask-size). */
 .stat-icon .h2-icon { display: inline-block; min-width: 16px; min-height: 16px; touch-action: none; }
 .stat-body { min-width: 0; flex: 1; }
-.stat-value { color: var(--fg); font: 600 22px/1.1 var(--font-sans); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.stat-value { color: var(--fg); font: 600 24px/1.1 var(--font-sans); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .stat-sub { margin-top: 4px; color: var(--fg-faint); font-size: 11px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }
 .page-h2 { margin: 0 0 8px; color: var(--fg); font-size: 16px; font-weight: 600; letter-spacing: -.02em; line-height: 1.35; }
 .page-lede { margin: 0; color: var(--fg-muted); font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
@@ -482,7 +482,10 @@ code { font-size: 11px; color: var(--fg-2); }
 .policy-i { padding-top: 1px; color: var(--fg-muted); font: 600 12px/1.5 var(--font-mono); }
 .policy-t { min-width: 0; color: var(--fg-2); font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
 
-.badge { display: inline-flex; align-items: center; width: fit-content; max-width: 100%; padding: 2px 8px; color: var(--fg-2); background: var(--surface-2); border: 1px solid var(--border); border-radius: 2px; font-family: var(--font-mono); font-size: 0.6rem; font-weight: 600; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.08em; white-space: normal; overflow-wrap: anywhere; }
+.badge { display: inline-flex; align-items: center; width: fit-content; max-width: 100%; padding: 2px 8px; color: var(--fg-2); background: var(--surface-2); border: 1px solid var(--border); border-radius: 2px; font-family: var(--font-mono); font-size: 11px; font-weight: 600; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.08em; white-space: normal; overflow-wrap: anywhere; }
+/* P3.7 (2026-09-24): badge cu dung font-size:0.6rem = 9.6px — NGOAI thang 9 bac VA
+ *   nho hon ca 11px, lai GHI DE class text-2xs (11px) cua Tailwind do specificity.
+ *   Doi ve 11px = bac 2xs chuan. Xem tokens.json font.sizeScale.standardized. */
 #content .badge.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (max-width: 720px) {
   .max-w-\[140px\] { max-width: min(140px, 42vw); }
@@ -501,7 +504,7 @@ code { font-size: 11px; color: var(--fg-2); }
 .nc-title { display: flex; flex: 1; flex-direction: column; gap: 4px; min-width: 0; }
 .nc-badges { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
 .nc-badges .badge { min-width: 0; max-width: 100%; }
-.nc-name { min-width: 0; margin: 0; color: var(--fg); font-size: 14.5px; font-weight: 700; line-height: 1.3; letter-spacing: -.02em; overflow-wrap: anywhere; text-wrap: balance; }
+.nc-name { min-width: 0; margin: 0; color: var(--fg); font-size: 14px; font-weight: 700; line-height: 1.3; letter-spacing: -.02em; overflow-wrap: anywhere; text-wrap: balance; }
 .nc-channels { display: flex; flex-wrap: wrap; gap: 4px; }
 .channel-chip { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; min-width: 0; min-height: 32px; padding: 6px 10px; overflow: hidden; color: var(--brand-ink); background: var(--surface-2); border: 1px solid var(--border); border-radius: 2px; font: 11px/1.3 var(--font-mono); text-decoration: none; text-overflow: ellipsis; white-space: nowrap; }
 .channel-chip:hover { border-color: var(--success); color: var(--success); }
@@ -516,7 +519,7 @@ code { font-size: 11px; color: var(--fg-2); }
 .niche-card.is-tier-tach { border-left-color: #8a0122; }
 .nx-card-facts { display: grid; gap: 6px; min-width: 0; padding: 4px 14px 8px; color: var(--fg-2); line-height: 1.45; }
 .nx-card-point { overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.nx-card-channel-label { font: 10px/1.3 var(--font-mono); color: var(--fg-muted); padding: 0 14px 4px; text-transform: uppercase; letter-spacing: 0.08em; }
+.nx-card-channel-label { font: 11px/1.3 var(--font-mono); color: var(--fg-muted); padding: 0 14px 4px; text-transform: uppercase; letter-spacing: 0.08em; }
 .nc-channels { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 4px; padding: 0 14px 8px; }
 .nx-card-action { padding: 8px 14px 12px; border-top: 1px solid var(--hairline); margin-top: auto; }
 .nx-card-action button { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 6px 0; font-size: 11px; color: var(--brand-ink); font-weight: 600; }
@@ -537,7 +540,7 @@ code { font-size: 11px; color: var(--fg-2); }
   background: transparent;
   border: 1px solid var(--border);
   border-radius: 2px;
-  font: 500 11.5px/1 var(--font-mono);
+  font: 500 12px/1 var(--font-mono);
   cursor: pointer;
   white-space: nowrap;
   display: inline-flex;
@@ -660,7 +663,7 @@ details[open] > summary .group-open\:rotate-180 { transform: rotate(180deg); }
 .card-note { margin: 0 0 10px; color: var(--fg-muted); font-size: 12px; line-height: 1.45; overflow-wrap: anywhere; }
 .btn-press:active { transform: scale(.98); }
 .stat-arrow { margin-left: auto; flex: 0 0 auto; }
-.shortcut-key { padding: 1px 5px; border: 1px solid var(--border); border-radius: 2px; font: 600 10px/1.4 var(--font-mono); color: var(--fg-muted); }
+.shortcut-key { padding: 1px 5px; border: 1px solid var(--border); border-radius: 2px; font: 600 11px/1.4 var(--font-mono); color: var(--fg-muted); }
 .theater-video-box { border-radius: var(--r-lg); }
 
 .learn-frame { display: block; width: 100%; min-height: calc(100vh - 112px); background: var(--bg); border: 0; }
@@ -791,7 +794,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .vd-topbar.has-subnav .cl-tab-btn > span:first-child { display: none; }
   .vd-mobile-tabs { display: none !important; }
   .vd-page-title {
-    font-size: 15px !important;
+    font-size: 16px !important;
     font-weight: 700 !important;
     max-width: calc(100% - 105px) !important;
     overflow: hidden !important;
@@ -839,7 +842,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     border: 0;
     border-radius: 2px;
     color: var(--fg-muted);
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 500;
     line-height: 1.1;
     min-width: 0;
@@ -899,7 +902,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     padding: 10px 14px;
     border-radius: 2px;
     color: var(--fg);
-    font-size: 13.5px;
+    font-size: 14px;
     font-weight: 500;
     background: transparent;
     border: 0;
@@ -942,7 +945,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   }
   #panel-root { grid-column: 1; grid-row: 1; height: auto; overflow-x: hidden; overflow-y: visible; touch-action: pan-y; }
   .app-footer { grid-column: 1; grid-row: 3; padding: 10px 12px 12px; }
-  html, body { height: auto; overflow-x: hidden; overflow-y: auto; overscroll-behavior-x: none; font-size: 15px; }
+  html, body { height: auto; overflow-x: hidden; overflow-y: auto; overscroll-behavior-x: none; font-size: 16px; }
   .vd-top-right .btn-ghost { display: none; }
   #content {
     padding: calc(64px + env(safe-area-inset-top, 0px)) 14px calc(76px + env(safe-area-inset-bottom, 0px)) !important;
@@ -962,13 +965,13 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .bento-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .bento-card { min-height: 88px; padding: 12px 14px; }
   .stat-value { font-size: 24px; }
-  .stat-label { font-size: 13.5px; text-transform: uppercase; letter-spacing: 0.08em; }
-  .stat-sub { font-size: 11.5px; }
+  .stat-label { font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .stat-sub { font-size: 12px; }
 
   /* ── Mobile strategy KPIs: 2x2 avoids an orphan fourth card ── */
   .bento-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
   .bento-card { min-height: 96px !important; padding: 12px !important; flex-direction: column; align-items: flex-start; gap: 7px !important; }
-  .bento-card .stat-icon { width: 30px !important; height: 30px !important; font-size: 15px !important; }
+  .bento-card .stat-icon { width: 30px !important; height: 30px !important; font-size: 16px !important; }
   /* 2026-09-24: phai phu CA 2 dang icon (<svg> cu + .h2-icon moi) — xem ghi chu o rule goc.
    * SUA 2026-09-24 (SCAR-014): truoc do dat 15px cho CA .h2-icon — SAI.
    *   <svg> co the nhan 15px (co gian duoc), nhung .h2-icon dung mask + min-width:
@@ -977,10 +980,10 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
    *   Dung: .h2-icon phai giu 16px (bac chuan gan nhat), chi svg giu 15px. */
   .bento-card .stat-icon svg { width: 15px; height: 15px; }
   .bento-card .stat-icon .h2-icon { width: 16px; height: 16px; display: inline-block; min-width: 16px; min-height: 16px; }
-  .bento-card .stat-glyph { font-size: 15px !important; }
+  .bento-card .stat-glyph { font-size: 16px !important; }
   .bento-card .stat-value { font-size: 20px !important; line-height: 1.15 !important; }
-  .bento-card .stat-label { font-size: 10px !important; letter-spacing: 0.04em !important; line-height: 1.25; }
-  .bento-card .stat-sub { font-size: 9px !important; margin-top: 2px !important; display: none !important; }  /* Hide secondary metadata; retain a stable 2x2 card rhythm. */
+  .bento-card .stat-label { font-size: 11px !important; letter-spacing: 0.04em !important; line-height: 1.25; }
+  .bento-card .stat-sub { font-size: 11px !important; margin-top: 2px !important; display: none !important; }  /* Hide secondary metadata; retain a stable 2x2 card rhythm. */
   .bento-card .stat-arrow { display: none !important; }
   .bento-card .stat-body { width: 100% !important; min-width: 0; }
   .bento-card .stat-value, .bento-card .stat-label { overflow-wrap: anywhere; }
@@ -989,14 +992,14 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .card.p-5, .card.p-4 { padding: 14px !important; }
   .niche-card { padding: 14px !important; border-radius: 4px; }
   .nc-header { grid-template-columns: 34px minmax(0, 1fr); gap: 10px; margin-bottom: 12px; }
-  .nc-rank { width: 34px; height: 34px; font-size: 12.5px; }
-  .nc-name { font-size: 15px; line-height: 1.35; }
-  .nx-card-kpi { gap: 6px 10px; font-size: 11.5px; padding-bottom: 4px; }
+  .nc-rank { width: 34px; height: 34px; font-size: 12px; }
+  .nc-name { font-size: 16px; line-height: 1.35; }
+  .nx-card-kpi { gap: 6px 10px; font-size: 12px; padding-bottom: 4px; }
   .nx-card-facts { gap: 8px; margin-bottom: 14px; }
   .channel-chip { min-height: 40px; padding: 8px 12px; font-size: 11px; }
   .nx-card-action button { min-height: 44px; font-size: 12px; }
   details.card { padding: 12px 14px !important; }
-  details.card summary { min-height: 44px; align-items: center; padding: 10px 12px; border-radius: 2px; transition: background-color 0.15s ease; font-size: 12.5px; font-weight: 600; }
+  details.card summary { min-height: 44px; align-items: center; padding: 10px 12px; border-radius: 2px; transition: background-color 0.15s ease; font-size: 12px; font-weight: 600; }
   details.card summary:hover { background-color: rgb(255 255 255 / .04); }
   details.card[open] > div { animation: fadeSlide 200ms cubic-bezier(0.16, 1, 0.3, 1); }
   @keyframes fadeSlide { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
@@ -1058,7 +1061,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .quick-access__label {
   flex: 0 0 auto;
   color: var(--fg-muted, #94a3b8);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: .08em;
   line-height: 1.25;
@@ -1082,7 +1085,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   background: rgba(30, 41, 59, 0.72);
   color: var(--fg-2, #cbd5e1);
   font-size: 14px;
-  font-weight: 650;
+  font-weight: 600;
   line-height: 1.2;
   cursor: pointer;
   transition: background-color .15s ease, border-color .15s ease, color .15s ease, box-shadow .15s ease;
@@ -1101,14 +1104,14 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 }
 @media (max-width: 640px) {
   .quick-access { align-items: stretch; flex-direction: column; gap: 8px; padding: 10px; }
-  .quick-access__label { font-size: 9.5px; }
+  .quick-access__label { font-size: 11px; }
   .quick-access__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 7px; width: 100%; }
   .quick-access__button { min-height: 44px; padding: 8px 7px; font-size: 11px; white-space: normal; overflow-wrap: anywhere; }
   .quick-access__long { display: none; }
   .quick-access__short { display: inline; }
   .quick-access--topbar { display: block; padding: 0; }
   .quick-access--topbar .quick-access__list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
-  .vd-topbar-subnav .quick-access--topbar .quick-access__button { min-width: 0; min-height: 44px; padding: 6px 3px; font-size: 10px; }
+  .vd-topbar-subnav .quick-access--topbar .quick-access__button { min-width: 0; min-height: 44px; padding: 6px 3px; font-size: 11px; }
   .quick-target { scroll-margin-top: calc(146px + env(safe-area-inset-top, 0px)); }
 }
 /* ── Base Modal, Subniche & Chiến Lược Classes ── */
@@ -1116,11 +1119,11 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .subniche-select { width: 100%; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; font-size: 12px; color: var(--fg); font-weight: 500; outline: none; cursor: pointer; }
 .subniche-select:focus { border-color: var(--brand); }
 .subniche-grid { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
-.subniche-chip { display: inline-flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 12px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border); color: var(--fg-2); font-size: 11.5px; line-height: 1.35; text-align: left; cursor: pointer; transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease; max-width: 100%; word-break: break-word; white-space: normal; }
+.subniche-chip { display: inline-flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 12px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border); color: var(--fg-2); font-size: 12px; line-height: 1.35; text-align: left; cursor: pointer; transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease; max-width: 100%; word-break: break-word; white-space: normal; }
 .subniche-chip:hover { background: var(--surface); color: var(--fg); border-color: var(--brand); }
 .subniche-chip.active { background: var(--brand) !important; color: #fff !important; border-color: var(--brand-hover) !important; font-weight: 700 !important; }
 .subniche-name { flex: 1; min-width: 0; }
-.subniche-count { font-family: var(--font-mono); font-size: 10px; padding: 1px 6px; border-radius: 4px; background: rgba(0, 0, 0, 0.3); color: var(--fg-muted); flex-shrink: 0; }
+.subniche-count { font-family: var(--font-mono); font-size: 11px; padding: 1px 6px; border-radius: 4px; background: rgba(0, 0, 0, 0.3); color: var(--fg-muted); flex-shrink: 0; }
 .subniche-chip.active .subniche-count { background: rgba(255, 255, 255, 0.2); color: #fff; }
 .cl-tabbar {
   display: flex;
@@ -1153,7 +1156,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #94a3b8;
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
@@ -1207,14 +1210,14 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   flex-shrink: 0;
 }
 .raw-deep-header-title {
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: 18px;               /* P3.7: cu 1.1rem = 17.6px (ngoai thang) -> 18px = bac lg */
+  font-weight: 700;
   color: #fff;
   margin: 0;
 }
 .kpi-val {
-  font-size: 1.35rem;
-  font-weight: 800;
+  font-size: 20px;               /* P3.7: cu 1.35rem = 21.6px (ngoai thang) -> 20px = bac xl */
+  font-weight: 700;
   color: #38bdf8;
   margin-top: 0.25rem;
 }
@@ -1226,7 +1229,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .raw-deep-body { display: flex; }
 .raw-deep-quicknav { display: flex; }
 .raw-deep-tabbar { display: flex; align-items: center; gap: 8px; background: #0c1220; border-bottom: 1px solid #1e293b; padding: 7px 16px; flex-shrink: 0; }
-.raw-tab-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 12.5px; font-weight: 600; background: #1e293b; border: 1px solid #334155; color: #cbd5e1; padding: 6px 14px; border-radius: 8px; cursor: pointer; transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
+.raw-tab-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 600; background: #1e293b; border: 1px solid #334155; color: #cbd5e1; padding: 6px 14px; border-radius: 8px; cursor: pointer; transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
 .raw-tab-btn:hover { background: #334155; color: #fff; }
 .raw-tab-btn.active { background: #2563eb !important; border-color: #3b82f6 !important; color: #fff !important; font-weight: 700 !important; }
 .raw-tab-all { display: inline-flex; }
@@ -1344,7 +1347,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   overflow: hidden;
 }
 @media (max-width: 640px) {
-  .page-lede { -webkit-line-clamp: 4; font-size: 12.5px; }
+  .page-lede { -webkit-line-clamp: 4; font-size: 12px; }
   .bento-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .bento-grid > *:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .bento-grid > .bento-card:last-child:nth-child(odd) { grid-column: 1 / -1; min-height: 88px; }
@@ -1394,12 +1397,12 @@ button.niche-row:focus-visible,
   padding: 18px 18px 12px;
 }
 .overview-grid > .card .page-h2 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
 .overview-grid > .card .card-note {
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--fg-muted);
   margin-bottom: 10px;
 }
@@ -1421,7 +1424,7 @@ button.niche-row:focus-visible,
 .market-row:last-child, .niche-row:last-child { border-bottom: 0; }
 .market-row { grid-template-columns: 6.5rem minmax(0, 1fr) 2.5rem; }
 .market-label {
-  font-size: 12.5px;
+  font-size: 12px;
   color: var(--fg-2);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1488,7 +1491,7 @@ button.niche-row:focus-visible,
   display: inline-block;
   margin-left: 6px;
   padding: 1px 6px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   border-radius: 4px;
   background: #2a2410;
@@ -1499,7 +1502,7 @@ button.niche-row:focus-visible,
 .niche-n i {
   display: block;
   font-style: normal;
-  font-size: 10px;
+  font-size: 11px;
   color: var(--fg-muted);
   font-weight: 500;
 }
@@ -1647,7 +1650,7 @@ button.niche-row:focus-visible,
 .policy-item { display: grid; grid-template-columns: 2rem minmax(0,1fr); gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--hairline, var(--border)); }
 .policy-item:last-child { border-bottom: 0; }
 .policy-t {
-  font-size: 12.5px;
+  font-size: 12px;
   line-height: 1.55;
   color: var(--fg-2);
   display: -webkit-box;

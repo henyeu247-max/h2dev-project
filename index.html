@@ -12,14 +12,14 @@
   <link rel="manifest" href="manifest.json">
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/tailwind.css?v=20260924-p39">
-  <link rel="stylesheet" href="/assets/viddar.css?v=20260924-p39">
-  <link rel="stylesheet" href="assets/app/g3-inline.css?v=20260924-p39">
-  <link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260924-p39">
-  <link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260924-p39">
-  <link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260924-p39">
-  <link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260924-p39">
-  <link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260924-p39">
+  <link rel="stylesheet" href="/assets/tailwind.css?v=20260924-p40">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20260924-p40">
+  <link rel="stylesheet" href="assets/app/g3-inline.css?v=20260924-p40">
+  <link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260924-p40">
+  <link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260924-p40">
+  <link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260924-p40">
+  <link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260924-p40">
+  <link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260924-p40">
   <style>
     #raw-channel-modal {
       position: fixed !important;
@@ -120,14 +120,14 @@
         border-radius: 0.5rem !important;
       }
       .raw-deep-header-title {
-        font-size: 0.92rem !important;
+        font-size: 14px !important;   /* P3.7: cu 0.92rem = 14.72px (ngoai thang) -> 14px base */
         max-width: 170px !important;
       }
       .raw-deep-header-meta {
         display: flex !important;
         align-items: center !important;
         gap: 0.35rem !important;
-        font-size: 0.7rem !important;
+        font-size: 11px !important;   /* P3.7: cu 0.7rem = 11.2px (ngoai thang) -> 11px 2xs */
         overflow-x: auto !important;
         white-space: nowrap !important;
         -webkit-overflow-scrolling: touch !important;
@@ -146,7 +146,7 @@
       .raw-deep-header-actions a,
       .raw-deep-header-actions button {
         padding: 0.35rem 0.65rem !important;
-        font-size: 0.75rem !important;
+        font-size: 12px !important;
         border-radius: 0.5rem !important;
       }
 
@@ -172,7 +172,7 @@
       }
       .raw-deep-quicknav button {
         flex-shrink: 0 !important;
-        font-size: 0.7rem !important;
+        font-size: 11px !important;   /* P3.7: cu 0.7rem = 11.2px (ngoai thang) -> 11px 2xs */
         padding: 0.25rem 0.55rem !important;
       }
 
@@ -185,7 +185,7 @@
         padding: 0.65rem 0.75rem !important;
       }
       .raw-deep-kpi-card .kpi-val {
-        font-size: 1.15rem !important;
+        font-size: 18px !important;   /* P3.7: cu 1.15rem = 18.4px (ngoai thang) -> 18px lg */
       }
 
       /* Retention proxy mobile fix */
@@ -275,24 +275,24 @@
   <nav class="vd-bottom-nav" id="bottom-nav" aria-label="Điều hướng chính"></nav>
 <!-- N11 FIX (2026-09-23): h2dev-core.js la TANG NEN dung chung — phai nap TRUOC moi module phu thuoc.
      Truoc day index.html KHONG nap -> window.H2Core undefined -> ui-core/player tu che ban sao esc/fmtBytes. -->
-<script src="assets/h2dev-core.js?v=20260924-p39"></script>
-<script src="assets/app/taxonomy.js?v=20260924-p39"></script>
-<script src="assets/app/icons.js?v=20260924-p39"></script>
-<script src="assets/app/ui-core.js?v=20260924-p39"></script>
-  <script src="assets/app/search-core.js?v=20260924-p39"></script>
-<script src="assets/app/tabs/nav.js?v=20260924-p39"></script>
-<script src="assets/app/tabs/content.js?v=20260924-p39"></script>
-<script src="assets/app/modals/raw-deep.js?v=20260924-p39"></script>
-<script src="assets/app/search.js?v=20260924-p39"></script>
-  <script src="assets/app/main.js?v=20260924-p39"></script>
+<script src="assets/h2dev-core.js?v=20260924-p40"></script>
+<script src="assets/app/taxonomy.js?v=20260924-p40"></script>
+<script src="assets/app/icons.js?v=20260924-p40"></script>
+<script src="assets/app/ui-core.js?v=20260924-p40"></script>
+  <script src="assets/app/search-core.js?v=20260924-p40"></script>
+<script src="assets/app/tabs/nav.js?v=20260924-p40"></script>
+<script src="assets/app/tabs/content.js?v=20260924-p40"></script>
+<script src="assets/app/modals/raw-deep.js?v=20260924-p40"></script>
+<script src="assets/app/search.js?v=20260924-p40"></script>
+  <script src="assets/app/main.js?v=20260924-p40"></script>
 
   <!-- PHASE 2: Back-to-top dung class chuan .h2-shell-backtotop (dong bo 3 trang) -->
   <button id="btn-back-to-top" type="button" class="h2-shell-backtotop" aria-label="Cuộn lên đầu trang" title="Cuộn lên đầu trang">
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
   </button>
 
-  <script src="assets/music_player_modal.js?v=20260924-p39"></script>
-<script src="assets/app/sw-register.js?v=20260924-p39"></script>
+  <script src="assets/music_player_modal.js?v=20260924-p40"></script>
+<script src="assets/app/sw-register.js?v=20260924-p40"></script>
   <div id="a11y-status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 </body>
 

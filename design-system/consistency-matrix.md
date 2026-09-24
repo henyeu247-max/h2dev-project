@@ -68,18 +68,26 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 
 ## D. Typography
 
-| Hạng mục | index | learn | player | Tabs khác | Hiện trạng | Chuẩn bắt buộc | Ưu tiên |
+> **CẬP NHẬT 2026-09-24 (P3.7 HOÀN TẤT):** các dòng dưới đây đã được **sửa xong và kiểm chứng**.
+> Bằng chứng: gate `scripts/gate-typography.js` **ALL PASS** 4 luật (có PROBE 16/16) +
+> visual test browser thật **44/44 lượt** (2 môi trường × 2 viewport × 11 màn hình)
+> → `size lạ = 0`, `tràn ngang = 0`, `console error = 0`. Deploy bản `?v=20260924-p40`.
+>
+> **Tổng vi phạm đã sửa: 254 chỗ** (không phải 43 như ước tính ban đầu — xem `AGENTS.md` SCAR-015):
+> 43 (CSS `px`) + 48 (`text-[Npx]` trong JS) + 133 (`font-size: Nrem` inline) + 30 (`font-weight:800`).
+
+| Hạng mục | index | learn | player | Tabs khác | Hiện trạng (SAU P3.7) | Chuẩn bắt buộc | Trạng thái |
 |---|---|---|---|---|---|---|---|
-| Bậc font-size dùng được | ✓ | ✓ | ✓ | ✓ | 9 bậc: 11, 12, 13, 14, 16, 18, 20, 24, 30px | Chốt thang: **11/12/13/14/16/18/20/24/32px** (30→32) | P1 |
-| Bậc lẻ tùy tiện | ✓ | ✓ | ✓ | ✓ | **11 bậc**: 9, 9.5, 10, 10.5, 11.5, 12.5, 13.5, 14.5, 15, 17, 22, 26px | **Cấm** toàn bộ | P1 |
-| Tailwind arbitrary | ✓ | ✓ | ✓ | ✓ | `text-[Npx]` ~112 lần vs class chuẩn ~152 lần (**~42% tùy ý**); `text-[11px]` **70 lần** | Cấm arbitrary mới; chuyển dần về class chuẩn | P1 |
-| font-weight | ✓ | ✓ | ✓ | ✓ | Có `650`, `font-extrabold`(800), `font-black`(900) nhưng `@font-face` (viddar.css:5,13,21,29,37,45) chỉ `400 700` / `500 700` → **synthetic-bold** | Chốt **400/500/600/700** | P0 |
-| line-height | ✓ | ✓ | ✓ | ✓ | **17 giá trị**: 1, 1.1, 1.15, 1.2, 1.25, 1.28, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6, 1.625, 20px | Chốt 6: `1` / `1.2` / `1.35` / `1.5` / `1.6` / `20px` | P1 |
-| letter-spacing | ✓ | ✓ | ✓ | ✓ | **14 giá trị**, cùng giá trị viết 3 kiểu (`0.04em` / `.04em` / `0.04em !important`) | Chốt 4: `0` / `-0.02em` / `0.02em` / `0.04em`; viết đủ `0.`; **cấm `!important`** | P2 |
-| Mono cho tiếng Việt | — | `learn.css` `.ltag` FREE/PRO | — | `viddar.css:466` `.badge`; `content.js:99,115` "Tiến độ học" | Mono dùng sai mục đích cho text Việt | Mono **chỉ** cho số/SKU/code | P1 |
-| Heading mục | ✓ | ✓ | ✓ | ✓ | 3 hệ: `.page-h2` 16px / `text-base font-bold` / `text-sm font-bold` | Chốt **`.page-h2` 16px** | P1 |
-| Căn chỉnh | ✓ | ✓ | ✓ | ✓ | `text-center` 16 lần vs `text-left` 10 lần, cùng loại card chỗ khai báo chỗ không | Chốt theo loại card: nội dung trái, KPI giữa | P2 |
-| Empty state typography | ✓ | ✓ | — | ✓ | 4 empty-state có **3 biến thể** padding/bọc khác nhau | Chốt 1 biến thể duy nhất | P2 |
+| Bậc font-size dùng được | ✓ | ✓ | ✓ | ✓ | **8 bậc đang dùng**: 11, 12, 13, 14, 16, 18, 20, 24px | Thang chuẩn **9 bậc**: 11/12/13/14/16/18/20/24/32px | ✅ **XONG** |
+| Bậc lẻ tùy tiện | ✓ | ✓ | ✓ | ✓ | **0** — đã xoá hết 12 bậc lẻ (9, 9.5, 10, 10.5, 11.5, 12.5, 13.5, 14.5, 15, 17, 22, 26px) | Cấm toàn bộ | ✅ **XONG** |
+| Tailwind arbitrary | ✓ | ✓ | ✓ | ✓ | **0 `text-[Npx]`** — đã chuyển 115 class sang tên chuẩn (`text-2xs/xs/sm/base/md/lg/xl/2xl/3xl`) + khai `safelist` + `fontSize` scale | Dùng class chuẩn, cấm arbitrary | ✅ **XONG** |
+| font-weight | ✓ | ✓ | ✓ | ✓ | **0 vi phạm** — đã xoá `650`(4), `800`(7 CSS + 30 inline), `900`(1), `font-extrabold`, `font-black` | Chốt **400/500/600/700** | ✅ **XONG** |
+| line-height | ✓ | ✓ | ✓ | ✓ | **21 giá trị**: 1, 1.1, 1.15, 1.2, 1.25, 1.28, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6, 1.625, 1.65, 1.75, 1.375, 2, 2.25, 20px | Chốt 6: `1` / `1.2` / `1.35` / `1.5` / `1.6` / `20px` | ⬜ **CÒN NỢ** |
+| letter-spacing | ✓ | ✓ | ✓ | ✓ | **20 giá trị**, cùng giá trị viết nhiều kiểu (`0.08em`/`.08em`, `-0.02em`/`-.02em`) | Chốt 4: `0` / `-0.02em` / `0.02em` / `0.04em`; viết đủ `0.`; **cấm `!important`** | ⬜ **CÒN NỢ** |
+| Mono cho tiếng Việt | — | — | — | — | Mono chỉ còn ở `.badge` (mã định danh) | Mono **chỉ** cho số/SKU/code | ✅ **XONG** |
+| Heading mục | ✓ | ✓ | ✓ | ✓ | 3 hệ: `.page-h2` 16px / `text-base font-bold` / `text-sm font-bold` | Chốt **`.page-h2` 16px** | ⬜ **CÒN NỢ** |
+| Căn chỉnh | ✓ | ✓ | ✓ | ✓ | `text-center` 16 lần vs `text-left` 10 lần, cùng loại card chỗ khai báo chỗ không | Chốt theo loại card: nội dung trái, KPI giữa | ⬜ **CÒN NỢ** |
+| Empty state typography | ✓ | ✓ | — | ✓ | 4 empty-state có **3 biến thể** padding/bọc khác nhau | Chốt 1 biến thể duy nhất | ⬜ **CÒN NỢ** |
 
 ## E. Layout / Spacing theo tab
 

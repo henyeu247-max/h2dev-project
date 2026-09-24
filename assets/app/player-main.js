@@ -1,4 +1,4 @@
-/* G6 extract from player.html */
+﻿/* G6 extract from player.html */
 
 /**
  * PHASE 3 (2026-09-23): helper sinh the icon chuan thay cho emoji.
@@ -177,14 +177,14 @@ function setPlayerTab(tab, btn) {
   const colSide = document.getElementById('colSide');
   const buttons = document.querySelectorAll('#playerTabSelector button');
   buttons.forEach(b => {
-    b.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-colors text-center flex items-center justify-center gap-1';
+    b.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-semibold text-fg-muted hover:text-fg transition-colors text-center flex items-center justify-center gap-1 min-h-[44px]';
     b.setAttribute('aria-selected', 'false');
     /* PHASE 2: roving tabindex chuan ARIA */
     b.setAttribute('tabindex', '-1');
     b.setAttribute('aria-controls', 'playerMain');
   });
   if (btn) {
-    btn.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-colors text-center flex items-center justify-center gap-1';
+    btn.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-colors text-center flex items-center justify-center gap-1 min-h-[44px]';
     btn.setAttribute('aria-selected', 'true');
     btn.setAttribute('tabindex', '0');
   }
@@ -222,6 +222,19 @@ window.addEventListener('resize', () => {
 (function initPlayerTabKeyboard(){
   const selector = document.getElementById('playerTabSelector');
   if (!selector) return;
+  selector.setAttribute('role', 'tablist');
+  if (!selector.getAttribute('aria-label')) selector.setAttribute('aria-label', 'Nội dung bài học');
+  /* P0: chot trang thai roving tabindex NGAY khi nap, khong doi click.
+     Ly do: #playerTabSelector bi an o desktop (display:none) nen setPlayerTab()
+     khong duoc goi -> 3 tab thieu tabindex/aria-controls. Voi nguoi dung ban phim
+     va AT, mot tablist thieu trang thai tabindex la loi WCAG. Dat tai day la
+     NO-OP o desktop (phan tu van an) va DUNG o mobile. */
+  const tabsAll = Array.prototype.slice.call(selector.querySelectorAll('button[role="tab"]'));
+  tabsAll.forEach((b, i) => {
+    if (!b.hasAttribute('aria-controls')) b.setAttribute('aria-controls', 'playerMain');
+    const on = b.getAttribute('aria-selected') === 'true';
+    b.setAttribute('tabindex', on ? '0' : '-1');
+  });
   selector.addEventListener('keydown', (e) => {
     if (['ArrowLeft','ArrowRight','Home','End'].indexOf(e.key) === -1) return;
     const btns = Array.prototype.slice.call(selector.querySelectorAll('button[role="tab"]'));
@@ -756,6 +769,11 @@ function showToast(msg, duration = 3000) {
   el.className = 'toast-msg';
   el.innerHTML = `<span>${esc(msg)}</span>`;
   box.appendChild(el);
+  /* P0: thong bao cho screen reader qua vung a11y cap trang (dong bo index) */
+  try {
+    const a11yEl = document.getElementById('a11y-status');
+    if (a11yEl) a11yEl.textContent = msg;
+  } catch (e) {}
   setTimeout(() => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(12px) scale(0.95)';

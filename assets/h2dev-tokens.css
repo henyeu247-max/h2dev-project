@@ -65,6 +65,9 @@
   --h2-touch-min: 44px;
 
   /* --- Shell (proposed) --- */
+  /* P0 (2026-09-24): 56px la chuan header DUY NHAT cho ca 3 trang o MOI viewport.
+     Truoc day index bi .vd-topbar ep 50px tren mobile -> lech chuan. Nay da go,
+     runtime do duoc: index/learn/player deu = 56px (ca desktop lan mobile). */
   --h2-header-h: 56px;
   --h2-header-pad: 0 24px;
   --h2-container-max: min(1120px, 100%);

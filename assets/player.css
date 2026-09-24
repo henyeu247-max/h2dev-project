@@ -193,7 +193,7 @@
 }
 
 @media (max-width: 640px) {
-  .app-top { padding: 0 12px; height: 52px; }
+  .app-top { padding: 0 12px; height: 56px; }
   .app-top .brand-mark, .app-top .text-sm { display: none; }
   #btnTheater { display: none !important; }
   .theater-wrapper #theaterContainer { padding: 8px 8px 0 !important; }

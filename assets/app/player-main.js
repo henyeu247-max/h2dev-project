@@ -401,7 +401,7 @@ window.addEventListener('keydown', (e)=>{
         const handle=String(c).replace(/^@/,'');
         return `<div class="inline-flex items-center gap-1.5 bg-surface-card border border-ink-600 p-1.5 rounded-xl text-xs">
           <a href="https://www.youtube.com/@${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}↗</a>
-          <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-[11px] font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}"><span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span> Copy</button>
+          <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-2xs font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}"><span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span> Copy</button>
         </div>`;
       }).join('');
     }
@@ -415,7 +415,7 @@ window.addEventListener('keydown', (e)=>{
         const isReadable = d.file && /\.(md|txt)$/i.test(d.file);
         const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(d.file)}" data-doc-name="${esc(name)}">${ico('eye', 14)}<span>Đọc trực tiếp</span></button>` : '';
         const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1">${ico('file-text', 14)}<span>Mở file local</span></a>`:'';
-        return `<article class="card p-3.5 min-w-0 overflow-hidden"><div class="text-[13px] font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-[11px] text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
+        return `<article class="card p-3.5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-2xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
       }).join('');
     }
 
@@ -457,7 +457,7 @@ window.addEventListener('keydown', (e)=>{
           badgesEl.innerHTML = [
             badge(esc(stripDecorEmoji(ins.target_market)), marketBadgeClass),
             badge(esc(ins.niche_primary), 'badge-muted'),
-            ...(ins.tools_mentioned || []).map(t => badge(esc(t), 'badge-blue font-mono text-[10px]'))
+            ...(ins.tools_mentioned || []).map(t => badge(esc(t), 'badge-blue font-mono text-2xs'))
           ].join(' ');
 
           // Takeaways
@@ -469,7 +469,7 @@ window.addEventListener('keydown', (e)=>{
               if (colonIdx > 0 && colonIdx < 60) {
                 const head = clean.slice(0, colonIdx).trim();
                 const body = clean.slice(colonIdx + 1).trim();
-                return `<li class="py-1.5 list-none"><div class="font-bold text-amber-300 text-[12.5px] leading-snug tracking-tight mb-1 flex items-start gap-1">${ico('pin', 14)}<span>${esc(head)}:</span></div><div class="text-gray-300 text-xs leading-relaxed pl-5">${esc(body)}</div></li>`;
+                return `<li class="py-1.5 list-none"><div class="font-bold text-amber-300 text-xs leading-snug tracking-tight mb-1 flex items-start gap-1">${ico('pin', 14)}<span>${esc(head)}:</span></div><div class="text-gray-300 text-xs leading-relaxed pl-5">${esc(body)}</div></li>`;
               }
               return `<li class="py-1 text-gray-300 leading-relaxed text-xs list-none">${esc(clean)}</li>`;
             }).join('');
@@ -498,8 +498,8 @@ window.addEventListener('keydown', (e)=>{
             const tlEl = document.getElementById('insightTimeline');
             tlEl.innerHTML = ins.key_timestamps.map(k => {
               return `<button type="button" class="inline-flex items-center gap-1.5 bg-ink-800 hover:bg-ink-700 border border-ink-600 px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer" data-seek="${k.seconds}">
-                <span class="font-mono text-sky-400 font-bold bg-ink-900 px-1.5 py-0.5 rounded text-[10px]">${esc(k.time)}</span>
-                <span class="text-gray-300 text-[11px] truncate max-w-[200px]">${esc(k.label)}</span>
+                <span class="font-mono text-sky-400 font-bold bg-ink-900 px-1.5 py-0.5 rounded text-2xs">${esc(k.time)}</span>
+                <span class="text-gray-300 text-2xs truncate max-w-[200px]">${esc(k.label)}</span>
               </button>`;
             }).join('');
           }

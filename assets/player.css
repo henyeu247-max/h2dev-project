@@ -1,7 +1,11 @@
 /* Player-only hierarchy. Viddar tokens come from viddar.css. */
 .player-main { width: min(1120px, 100%); }
 .player-layout { align-items: start; }
-#ptitle { max-width: 60ch; font-size: clamp(19px, 2.1vw, 26px) !important; line-height: 1.28 !important; }
+/* P3.7 (2026-09-24): clamp(19px, 2.1vw, 26px) -> CA HAI dau deu ngoai thang 9 bac
+ *   (19px khong co bac, 26px khong co bac; bac lon nhat la 24 = 2xl).
+ *   Doi: min 19px -> 20px (bac xl), max 26px -> 24px (bac 2xl).
+ *   Xem tokens.json font.sizeScale.standardized. */
+#ptitle { max-width: 60ch; font-size: clamp(20px, 2.1vw, 24px) !important; line-height: 1.28 !important; }
 #pmeta { gap: 6px !important; margin-top: 8px !important; }
 #psources { gap: 8px !important; margin-top: 10px !important; display: flex; flex-wrap: wrap; }
 #psources > a {
@@ -110,7 +114,7 @@
   border-color: var(--brand);
 }
 .transcript-line .transcript-text {
-  font-size: 12.5px;
+  font-size: 12px;
   line-height: 1.6;
   color: var(--fg-2);
   min-width: 0;
@@ -156,7 +160,7 @@
   color: var(--fg);
   border: 1px solid var(--border-strong);
   border-radius: 4px;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 600;
   box-shadow: 3px 3px 0 rgba(226,2,58,0.3);
   backdrop-filter: blur(12px);

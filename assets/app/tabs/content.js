@@ -73,7 +73,7 @@ async function renderTongQuan() {
   return `
   <div class="tq-head mb-6">
 <div class="flex items-center gap-3">
-  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-[11px] font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
+  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-2xs font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
     <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>RADAR KHO
   </span>
   <p class="page-lede">${SC.pad2(marketRows.length)} thị trường · ${SC.pad2(nx.ngachXanh.length)} ngách · ${SC.pad2((nx.thongTinChinhSach2026 || []).length)} chính sách 2026</p>
@@ -119,7 +119,7 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${SC.pad2(videos.l
 <div class="card p-5">
   <div class="flex items-center justify-between gap-2 mb-1">
     <h2 class="page-h2 mb-0">Thị trường đã gắn</h2>
-    <span class="text-[11px] font-mono text-gray-500">${videos.length} SKU</span>
+    <span class="text-2xs font-mono text-gray-500">${videos.length} SKU</span>
   </div>
   <p class="card-note">${emptyMarket ? `Thanh = tỉ lệ trên tổng kho · ${emptyMarket} chưa gắn` : `Tỉ trọng 6 thị trường hàng đầu · 1 video có thể gắn nhiều thị trường (click lọc)`}</p>
   <div class="market-list">
@@ -142,7 +142,7 @@ ${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${SC.pad2(videos.l
 <div class="card p-5">
   <div class="flex items-center justify-between gap-2 mb-1">
     <h2 class="page-h2 mb-0">Ngách trong kho</h2>
-    <span class="text-[11px] font-mono text-brand-ink font-semibold">${nx.ngachXanh.length} ngách</span>
+    <span class="text-2xs font-mono text-brand-ink font-semibold">${nx.ngachXanh.length} ngách</span>
   </div>
   <p class="card-note">Top ngách trọng điểm kèm số video live trong kho (click để lọc)</p>
   <div class="niche-list">
@@ -206,12 +206,12 @@ function videoCard(v) {
     ${wp}
   </a>
   <div class="p-4 min-w-0">
-    <a href="${vUrl}" class="block text-[13.5px] font-bold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere] group-hover:text-brand-300 transition-colors font-heading">${esc(v.title)}</a>
+    <a href="${vUrl}" class="block text-base font-bold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere] group-hover:text-brand-300 transition-colors font-heading">${esc(v.title)}</a>
     <div class="flex flex-wrap gap-1.5 mt-2.5 min-w-0 items-center">
-      ${v.contentNiche ? `<span class="badge badge-green text-[10px]">${esc(v.contentNiche)}</span>` : `<span class="badge badge-muted text-[10px]">${esc(v.niche || 'Khác')}</span>`}
-      ${markets.map(m => `<span class="text-[11px] text-gray-400 font-medium">${esc(stripDecorEmoji(m))}</span>`).join('<span class="text-gray-600 text-[10px]">·</span>')}
+      ${v.contentNiche ? `<span class="badge badge-green text-2xs">${esc(v.contentNiche)}</span>` : `<span class="badge badge-muted text-2xs">${esc(v.niche || 'Khác')}</span>`}
+      ${markets.map(m => `<span class="text-2xs text-gray-400 font-medium">${esc(stripDecorEmoji(m))}</span>`).join('<span class="text-gray-600 text-2xs">·</span>')}
     </div>
-    <div class="flex items-center gap-2 mt-2.5 text-[11px] text-gray-400">
+    <div class="flex items-center gap-2 mt-2.5 text-2xs text-gray-400">
       <span class="text-gray-400 truncate min-w-0 font-mono font-semibold">${esc(v.sku)}</span>
       ${v.published_at ? '<span class="text-gray-600">·</span><span class="text-gray-400 font-mono shrink-0">' + esc(v.published_at) + '</span>' : ''}
       ${docs.length ? `<span class="ml-auto flex items-center gap-1 text-sky-400 font-medium"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full"></span> ${docs.length} TL</span>` : ''}
@@ -389,14 +389,14 @@ window.showVideoSearchSuggestions = function(inputVal, _premerged) {
     box.innerHTML = `
       <div class="p-3 text-xs text-gray-400 flex items-center justify-between bg-ink-deep" >
         <span>Không tìm thấy gợi ý bài học khớp với "<strong>${esc(q)}</strong>"</span>
-        <span class="text-[10px] text-gray-500 font-mono">Nhấn Enter để lọc</span>
+        <span class="text-2xs text-gray-500 font-mono">Nhấn Enter để lọc</span>
       </div>`;
     box.classList.remove('hidden');
     return;
   }
 
   box.innerHTML = `
-    <div class="px-3.5 py-2 bg-[#060910] text-[10.5px] font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
+    <div class="px-3.5 py-2 bg-[#060910] text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
       <span class="flex items-center gap-1.5"><span class="text-brand-400">${ico('zap', 14)}</span> Gợi ý bài học, mốc tua & kỹ thuật (${items.length})</span>
       <span class="text-gray-500 font-normal">Nhấp để lọc hoặc tua ngay</span>
     </div>
@@ -406,12 +406,12 @@ window.showVideoSearchSuggestions = function(inputVal, _premerged) {
           <span class="text-base shrink-0">${ico(item.icon, 16)}</span>
           <div class="min-w-0">
             <div class="text-xs font-bold text-white truncate group-hover:text-brand-300 transition-colors">${highlightQuery(item.title, q)}</div>
-            <div class="text-[11px] text-gray-400 truncate">${esc(item.sub)}</div>
+            <div class="text-2xs text-gray-400 truncate">${esc(item.sub)}</div>
           </div>
         </div>
         <div class="flex items-center gap-1.5 shrink-0">
-          <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded border ${item.badgeColor}">${esc(item.badge)}</span>
-          ${item.directUrl ? `<a href="${esc(item.directUrl)}" class="js-v-sug-jump text-[10px] bg-brand-600/80 hover:bg-brand-500 text-white font-bold px-2 py-0.5 rounded transition shadow whitespace-nowrap" title="Mở trực tiếp bài học/mốc tua">${esc(item.btnLabel || 'Xem ↗')}</a>` : ''}
+          <span class="text-2xs font-mono font-bold px-1.5 py-0.5 rounded border ${item.badgeColor}">${esc(item.badge)}</span>
+          ${item.directUrl ? `<a href="${esc(item.directUrl)}" class="js-v-sug-jump text-2xs bg-brand-600/80 hover:bg-brand-500 text-white font-bold px-2 py-0.5 rounded transition shadow whitespace-nowrap" title="Mở trực tiếp bài học/mốc tua">${esc(item.btnLabel || 'Xem ↗')}</a>` : ''}
         </div>
       </div>
     `).join('')}
@@ -611,11 +611,11 @@ async function renderNgachXanh() {
   <div class="min-w-0 flex-1">
     <div class="text-xs font-medium text-white leading-snug line-clamp-2 group-hover:text-brand-200 transition-colors break-words">${esc(v.title)}</div>
     <div class="flex items-center flex-wrap gap-x-2 gap-y-0.5 mt-1">
-      <span class="text-[10px] text-gray-500 font-mono truncate">${esc(v.sku)}</span>
-      ${v.published_at ? `<span class="text-[10px] text-gray-400 shrink-0">${esc(v.published_at)}</span>` : ''}
-      <span class="text-[10px] text-gray-400">${fmtBytes(v.size)}</span>
-      ${docs.length ? '<span class="text-[10px] text-brand-400 shrink-0 inline-flex items-center gap-1">' + ico('file-text', 14) + ' ' + docs.length + '</span>' : ''}
-      ${channels.length ? '<span class="text-[10px] text-sky-400 shrink-0 inline-flex items-center gap-1">' + ico('tv', 14) + ' ' + channels.length + '</span>' : ''}
+      <span class="text-2xs text-gray-500 font-mono truncate">${esc(v.sku)}</span>
+      ${v.published_at ? `<span class="text-2xs text-gray-400 shrink-0">${esc(v.published_at)}</span>` : ''}
+      <span class="text-2xs text-gray-400">${fmtBytes(v.size)}</span>
+      ${docs.length ? '<span class="text-2xs text-brand-400 shrink-0 inline-flex items-center gap-1">' + ico('file-text', 14) + ' ' + docs.length + '</span>' : ''}
+      ${channels.length ? '<span class="text-2xs text-sky-400 shrink-0 inline-flex items-center gap-1">' + ico('tv', 14) + ' ' + channels.length + '</span>' : ''}
     </div>
   </div>
   <span class="shrink-0 w-7 h-7 rounded-xl bg-brand-600 group-hover:bg-brand-500 text-white flex items-center justify-center text-xs transition-colors">${ico('arrow-right', 14)}</span>
@@ -742,8 +742,8 @@ async function renderNgachXanh() {
       const items = (radar && radar.items) || [];
       if (!items.length) return '';
       const top = items.slice(0, 8);
-      return '<section class="card p-4 sm:p-5 mb-6"><div class="flex items-center justify-between gap-2 mb-3"><h2 class="text-sm font-bold text-white">PH5.3 Radar Ngach Xanh</h2><span class="text-[10px] font-mono radar-legend text-[11px] font-mono"><b>SAI</b><span class="sep"> · </span><b>PRI</b><span class="sep"> · </span><b>BOI</b></span></div><div class="radar-grid">' + top.map(function (n) {
-        return '<div class="radar-card rounded-xl border border-white/10 bg-white/[0.03] p-3 min-w-0"><div class="title text-xs font-bold text-white mb-1">' + esc(n.ngach || '') + '</div><div class="radar-metrics"><span><span class="k">SAI</span> <span class="v">' + n.SAI + '</span></span><span><span class="k">PRI</span> <span class="v">' + n.PRI + '</span></span><span><span class="k">BOI</span> <span class="v">' + n.BOI + '</span></span></div><div class="text-[10px] text-gray-500 mt-1 truncate">' + (n.xanh === true ? 'XANH' : '') + ' · hang ' + (n.hang || '-') + ' · sku ' + (n.skus || 0) + '</div></div>';
+      return '<section class="card p-4 sm:p-5 mb-6"><div class="flex items-center justify-between gap-2 mb-3"><h2 class="text-sm font-bold text-white">PH5.3 Radar Ngach Xanh</h2><span class="text-2xs font-mono radar-legend text-2xs font-mono"><b>SAI</b><span class="sep"> · </span><b>PRI</b><span class="sep"> · </span><b>BOI</b></span></div><div class="radar-grid">' + top.map(function (n) {
+        return '<div class="radar-card rounded-xl border border-white/10 bg-white/[0.03] p-3 min-w-0"><div class="title text-xs font-bold text-white mb-1">' + esc(n.ngach || '') + '</div><div class="radar-metrics"><span><span class="k">SAI</span> <span class="v">' + n.SAI + '</span></span><span><span class="k">PRI</span> <span class="v">' + n.PRI + '</span></span><span><span class="k">BOI</span> <span class="v">' + n.BOI + '</span></span></div><div class="text-2xs text-gray-500 mt-1 truncate">' + (n.xanh === true ? 'XANH' : '') + ' · hang ' + (n.hang || '-') + ' · sku ' + (n.skus || 0) + '</div></div>';
       }).join('') + '</div></section>';
     })()}
 
@@ -759,7 +759,7 @@ async function renderNgachXanh() {
 
 <!-- Tier Filter Chips -->
 <div class="nx-filter-row flex items-center gap-1.5 py-1 border-t border-hairline scroll-none" >
-  <span class="text-[11px] font-mono text-fg-muted shrink-0 mr-1">Tầng:</span>
+  <span class="text-2xs font-mono text-fg-muted shrink-0 mr-1">Tầng:</span>
   <div class="nx-filter-chips">
     <button type="button" data-nx-tier="" class="filter-btn shrink-0 ${!state.nxTier ? 'active' : ''}">Tất cả (${tierCounts.ALL})</button>
     ${['UU_TIEN_SAN_XUAT', 'WATCHLIST', 'TEST_FORMAT', 'KHONG_DU_EVIDENCE', 'TACH_KHOI_DE_XUAT'].map(t => {
@@ -771,7 +771,7 @@ async function renderNgachXanh() {
 
 <!-- Market Filter Chips -->
 <div class="nx-filter-row flex items-center gap-1.5 py-1 border-t border-hairline scroll-none" >
-  <span class="text-[11px] font-mono text-fg-muted shrink-0 mr-1">Khu vực:</span>
+  <span class="text-2xs font-mono text-fg-muted shrink-0 mr-1">Khu vực:</span>
   <div class="nx-filter-chips">
     <button type="button" data-nx-market="" class="filter-btn shrink-0 ${!state.nxMarket ? 'active' : ''}">Tất cả (${marketCounts.ALL})</button>
     ${['US', 'JP', 'KR', 'VN'].map(m => {
@@ -794,19 +794,19 @@ async function renderNgachXanh() {
 <div class="policy-grid mt-3 pt-3 border-t border-amber-900/30">
   <div class="policy-card">
     <div class="font-bold text-amber-300 mb-1 text-xs inline-flex items-center gap-1.5">${ico('door-open', 14)} Cửa 1: Inauthentic / Spam</div>
-    <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm dùng 1 template nhân vật / quote lặp lại hàng loạt. Mỗi video phải có kịch bản và case-study mới.</p>
+    <p class="text-gray-300 leading-relaxed text-xs">Cấm dùng 1 template nhân vật / quote lặp lại hàng loạt. Mỗi video phải có kịch bản và case-study mới.</p>
   </div>
   <div class="policy-card">
     <div class="font-bold text-rose-300 mb-1 text-xs inline-flex items-center gap-1.5">${ico('door-open', 14)} Cửa 2: Distress / Harmful</div>
-    <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm dàn dựng cứu hộ động vật, trẻ em đau khổ, bạo lực hay thumbnail gây sốc lừa dối người xem.</p>
+    <p class="text-gray-300 leading-relaxed text-xs">Cấm dàn dựng cứu hộ động vật, trẻ em đau khổ, bạo lực hay thumbnail gây sốc lừa dối người xem.</p>
   </div>
   <div class="policy-card">
     <div class="font-bold text-sky-300 mb-1 text-xs inline-flex items-center gap-1.5">${ico('door-open', 14)} Cửa 3: Fake AI Persona</div>
-    <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm AI giả dạng Bác sĩ, Dược sĩ, Luật sư để chẩn đoán bệnh hoặc tư vấn tài chính / cam kết làm giàu.</p>
+    <p class="text-gray-300 leading-relaxed text-xs">Cấm AI giả dạng Bác sĩ, Dược sĩ, Luật sư để chẩn đoán bệnh hoặc tư vấn tài chính / cam kết làm giàu.</p>
   </div>
   <div class="policy-card">
     <div class="font-bold text-emerald-300 mb-1 text-xs inline-flex items-center gap-1.5">${ico('door-open', 14)} Cửa 4: Reused Content</div>
-    <p class="text-gray-300 leading-relaxed text-[11.5px]">Cấm reup hoạt hình/phim ảnh thô thiển. Phải có lời bình sâu sắc và biến đổi thực chất (Transformative).</p>
+    <p class="text-gray-300 leading-relaxed text-xs">Cấm reup hoạt hình/phim ảnh thô thiển. Phải có lời bình sâu sắc và biến đổi thực chất (Transformative).</p>
   </div>
 </div>
   </details>
@@ -856,8 +856,8 @@ ${filtered.map(n => {
     </div>` : ''}
     ${n.vids.length ? `
     <div class="nx-card-action mt-auto pt-2.5 border-t border-border">
-      <button type="button" data-open-niche="${esc(key)}" data-skus="${esc(n.vids.map(v => v.sku).join(','))}" class="text-[11px] text-brand-ink hover:text-brand-hover font-semibold" title="Mở ${n.vids.length} video bài học liên quan">Xem ${n.vids.length} video liên quan →</button>
-    </div>` : '<div class="mt-auto pt-2 text-[11px] text-gray-500 flex items-center gap-1.5"><span aria-hidden="true">○</span> Chưa có video</div>'}
+      <button type="button" data-open-niche="${esc(key)}" data-skus="${esc(n.vids.map(v => v.sku).join(','))}" class="text-2xs text-brand-ink hover:text-brand-hover font-semibold" title="Mở ${n.vids.length} video bài học liên quan">Xem ${n.vids.length} video liên quan →</button>
+    </div>` : '<div class="mt-auto pt-2 text-2xs text-gray-500 flex items-center gap-1.5"><span aria-hidden="true">○</span> Chưa có video</div>'}
   </article>`;
 }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full">Không tìm thấy ngách phù hợp với bộ lọc hiện tại.</div>'}
   </div>
@@ -1024,7 +1024,7 @@ async function renderKichBan() {
   <div>
     <div class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
       <span>Kho Nhạc Nền ${musicStats.total} Tracks (Đã Thẩm Định Gemini Multimodal & FFprobe)</span>
-      <span class="badge badge-green text-[10px]">${musicStats.safe} SAFE YPP</span>
+      <span class="badge badge-green text-2xs">${musicStats.safe} SAFE YPP</span>
     </div>
     <p class="text-xs text-gray-300 mt-0.5">Phân loại theo ngách Lịch sử, Tiên tri, Sinh tồn, Ru ngủ · Tích hợp sẵn Trình phát âm thanh nghe thử & tải MP3.</p>
   </div>
@@ -1040,13 +1040,13 @@ async function renderKichBan() {
   <button type="button" id="freset-prompt" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>
 <div class="mt-4 pt-3 border-t border-hairline">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Loại data</div>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Loại data</div>
   <div class="flex flex-wrap gap-2">
     ${kindChips.map(([id, label, n]) => `<button type="button" data-kind="${id}" class="filter-btn ${state.kindFilter === id ? 'active' : ''}">${label} · ${n}</button>`).join('')}
   </div>
 </div>
 <div class="mt-3.5">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách nội dung</div>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách nội dung</div>
   <div class="flex flex-wrap gap-2">
     <button type="button" data-prompt-niche="" class="filter-btn ${!state.promptNiche ? 'active' : ''}">Mọi ngách · ${kindCounts.all || 0}</button>
     ${(() => {
@@ -1081,17 +1081,17 @@ ${grouped.map((g, index) => {
             ${k.source === 'noi-bo' ? `<span class="badge badge-green shrink-0">Nội bộ</span>` : ''}
             ${k.ext ? `<span class="ml-auto badge badge-muted shrink-0 font-mono">${esc(k.ext)}</span>` : ''}
           </div>
-          <h3 class="text-[13.5px] font-semibold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere]">${esc(k.title || k.name)}</h3>
-          <div class="mt-2 text-[11px] text-gray-400 font-mono truncate">${esc(k.sku)}</div>
-          ${k.videoTitle ? `<div class="mt-1 text-[11px] text-gray-300 line-clamp-1 break-words">Nguồn video: ${esc(k.videoTitle)}</div>` : ''}
-          ${!k.videoTitle && k.source === 'noi-bo' ? `<div class="mt-1 text-[11px] text-lime-400/80">Đồng bộ từ ngoài → H2DEV</div>` : ''}
-          ${k.videoNiche && k.videoNiche !== k.contentNiche ? `<div class="mt-1 text-[10px] text-amber-400/80">Video mẹ thuộc: ${esc(k.videoNiche)}</div>` : ''}
+          <h3 class="text-base font-semibold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere]">${esc(k.title || k.name)}</h3>
+          <div class="mt-2 text-2xs text-gray-400 font-mono truncate">${esc(k.sku)}</div>
+          ${k.videoTitle ? `<div class="mt-1 text-2xs text-gray-300 line-clamp-1 break-words">Nguồn video: ${esc(k.videoTitle)}</div>` : ''}
+          ${!k.videoTitle && k.source === 'noi-bo' ? `<div class="mt-1 text-2xs text-lime-400/80">Đồng bộ từ ngoài → H2DEV</div>` : ''}
+          ${k.videoNiche && k.videoNiche !== k.contentNiche ? `<div class="mt-1 text-2xs text-amber-400/80">Video mẹ thuộc: ${esc(k.videoNiche)}</div>` : ''}
           <div class="mt-auto pt-3 flex flex-wrap gap-2">
-            ${k.sku === 'NOI-BO-MUSIC-01' || (k.file && k.file.includes('CATALOG-NHAC-NEN')) ? `<button type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-[11px] font-bold shadow-sm transition js-open-music-studio"><span class="inline-flex items-center gap-1.5">${ico('headphones', 14)} Mở Trạm Nhạc Nền${musicStats.total ? ' (' + musicStats.total + ' Tracks)' : ''}</span></button>` : ''}
-            ${k.link ? `<a href="${esc(k.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-[11px] font-bold">↗ ${esc(k.host || 'Mở nguồn')}</a>` : ''}
-            ${k.file ? `<a href="${esc(k.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">${ico('file-text', 14)} File local</a>` : ''}
-            ${k.fileLocal ? `<a href="${esc(k.fileLocal)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">${ico('file-edit', 14)} MD gốc</a>` : ''}
-            ${k.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(k.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">${ico('play', 14)} Video gốc</a>` : ''}
+            ${k.sku === 'NOI-BO-MUSIC-01' || (k.file && k.file.includes('CATALOG-NHAC-NEN')) ? `<button type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-2xs font-bold shadow-sm transition js-open-music-studio"><span class="inline-flex items-center gap-1.5">${ico('headphones', 14)} Mở Trạm Nhạc Nền${musicStats.total ? ' (' + musicStats.total + ' Tracks)' : ''}</span></button>` : ''}
+            ${k.link ? `<a href="${esc(k.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-2xs font-bold">↗ ${esc(k.host || 'Mở nguồn')}</a>` : ''}
+            ${k.file ? `<a href="${esc(k.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-2xs text-gray-200">${ico('file-text', 14)} File local</a>` : ''}
+            ${k.fileLocal ? `<a href="${esc(k.fileLocal)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-2xs text-lime-200">${ico('file-edit', 14)} MD gốc</a>` : ''}
+            ${k.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(k.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-2xs text-gray-200">${ico('play', 14)} Video gốc</a>` : ''}
           </div>
         </article>`).join('')}
     </div>
@@ -1191,13 +1191,13 @@ async function renderNguonReup() {
   <button type="button" id="freset-reup" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>
 <div class="mt-4 pt-3 border-t border-hairline">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Loại nguồn</div>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Loại nguồn</div>
   <div class="flex flex-wrap gap-2">
     ${typeChips.map(([id, label, n]) => `<button type="button" data-reup-type="${id}" class="filter-btn ${state.reupType === id ? 'active' : ''}">${label} · ${n}</button>`).join('')}
   </div>
 </div>
 <div class="mt-3.5">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách / mục đích</div>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách / mục đích</div>
   <div class="flex flex-wrap gap-2">
     <button type="button" data-reup-niche="" class="filter-btn ${!state.reupNiche ? 'active' : ''}">Mọi ngách · ${typeCounts.all || 0}</button>
     ${nicheChips.map(([id, label, n]) => `<button type="button" data-reup-niche="${esc(id)}" class="filter-btn ${state.reupNiche === id ? 'active' : ''}">${esc(label)} · ${n}</button>`).join('')}
@@ -1222,15 +1222,15 @@ ${grouped.map(g => {
             <span class="badge shrink-0 ${TYPE_BADGE[n.type] || 'badge-muted'}">${TYPE_LABEL[n.type] || 'Khác'}</span>
             <span class="badge badge-blue shrink-0 truncate max-w-[140px]" title="${esc(n.contentNiche)}">${esc(n.contentNiche)}</span>
           </div>
-          <h3 class="text-[13.5px] font-semibold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere]">${esc(n.title)}</h3>
-          <div class="mt-2 text-[11px] text-gray-400 truncate">${esc(n.host || '')}</div>
-          <div class="mt-1 text-[11px] text-gray-500 font-mono truncate">${esc(n.sku)}</div>
-          ${n.videoTitle ? `<div class="mt-1 text-[11px] text-gray-300 line-clamp-1 break-words">Nguồn video: ${esc(n.videoTitle)}</div>` : ''}
-          ${n.videoNiche && n.videoNiche !== n.contentNiche ? `<div class="mt-1 text-[10px] text-amber-400/80">Video mẹ thuộc: ${esc(n.videoNiche)}</div>` : ''}
+          <h3 class="text-base font-semibold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere]">${esc(n.title)}</h3>
+          <div class="mt-2 text-2xs text-gray-400 truncate">${esc(n.host || '')}</div>
+          <div class="mt-1 text-2xs text-gray-500 font-mono truncate">${esc(n.sku)}</div>
+          ${n.videoTitle ? `<div class="mt-1 text-2xs text-gray-300 line-clamp-1 break-words">Nguồn video: ${esc(n.videoTitle)}</div>` : ''}
+          ${n.videoNiche && n.videoNiche !== n.contentNiche ? `<div class="mt-1 text-2xs text-amber-400/80">Video mẹ thuộc: ${esc(n.videoNiche)}</div>` : ''}
           <div class="mt-auto pt-3 flex flex-wrap gap-2">
-            ${n.link ? `<a href="${esc(n.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-[11px] font-bold">↗ Mở nguồn</a>` : ''}
-            ${n.file ? `<a href="${esc(n.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-lime-200">${ico('file-text', 14)} File local</a>` : ''}
-            ${n.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(n.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-[11px] text-gray-200">${ico('play', 14)} Video gốc</a>` : ''}
+            ${n.link ? `<a href="${esc(n.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-2xs font-bold">↗ Mở nguồn</a>` : ''}
+            ${n.file ? `<a href="${esc(n.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-2xs text-lime-200">${ico('file-text', 14)} File local</a>` : ''}
+            ${n.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(n.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-2xs text-gray-200">${ico('play', 14)} Video gốc</a>` : ''}
           </div>
         </article>`).join('')}
     </div>
@@ -1363,14 +1363,14 @@ window.showRawSearchSuggestions = function(inputVal, _premerged) {
     box.innerHTML = `
       <div class="p-3 text-xs text-gray-400 flex items-center justify-between bg-ink-deep" >
         <span>Không tìm thấy gợi ý khớp với "<strong>${esc(q)}</strong>"</span>
-        <span class="text-[10px] text-gray-500 font-mono">Gõ tiếp hoặc nhấn Reset</span>
+        <span class="text-2xs text-gray-500 font-mono">Gõ tiếp hoặc nhấn Reset</span>
       </div>`;
     box.classList.remove('hidden');
     return;
   }
 
   box.innerHTML = `
-    <div class="px-3.5 py-2 bg-[#060910] text-[10.5px] font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
+    <div class="px-3.5 py-2 bg-[#060910] text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
       <span class="flex items-center gap-1.5"><span class="text-brand-400">${ico('zap', 14)}</span> Gợi ý khớp kênh & video raw (${items.length})</span>
       <span class="text-gray-500 font-normal">Nhấp để chọn hoặc xem hồ sơ</span>
     </div>
@@ -1380,12 +1380,12 @@ window.showRawSearchSuggestions = function(inputVal, _premerged) {
           <span class="text-base shrink-0">${ico(item.icon, 16)}</span>
           <div class="min-w-0">
             <div class="text-xs font-bold text-white truncate group-hover:text-brand-300 transition-colors">${highlightQuery(item.title, q)}</div>
-            <div class="text-[11px] text-gray-400 truncate">${esc(item.sub)}</div>
+            <div class="text-2xs text-gray-400 truncate">${esc(item.sub)}</div>
           </div>
         </div>
         <div class="flex items-center gap-1.5 shrink-0">
-          <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded border ${item.badgeColor}">${esc(item.badge)}</span>
-          ${item.rawId ? `<button type="button" class="js-sug-open-modal text-[10px] bg-brand-600/80 hover:bg-brand-500 text-white font-bold px-2 py-0.5 rounded transition shadow" data-raw-id="${esc(item.rawId)}" title="Mở trực tiếp hồ sơ kênh">Mở ↗</button>` : ''}
+          <span class="text-2xs font-mono font-bold px-1.5 py-0.5 rounded border ${item.badgeColor}">${esc(item.badge)}</span>
+          ${item.rawId ? `<button type="button" class="js-sug-open-modal text-2xs bg-brand-600/80 hover:bg-brand-500 text-white font-bold px-2 py-0.5 rounded transition shadow" data-raw-id="${esc(item.rawId)}" title="Mở trực tiếp hồ sơ kênh">Mở ↗</button>` : ''}
         </div>
       </div>
     `).join('')}
@@ -1504,8 +1504,8 @@ async function renderRawKenh() {
   <button type="button" id="freset-raw" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>
 <div class="mt-4 pt-3 border-t border-hairline">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách phát hiện · theo nhóm chủ đề</div>
-  <p class="text-[11px] text-gray-500 mb-2.5 leading-relaxed">Các kênh cùng chủ đề được gom về một nhóm. Bấm nhóm để xem ngách chi tiết bên trong.</p>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách phát hiện · theo nhóm chủ đề</div>
+  <p class="text-2xs text-gray-500 mb-2.5 leading-relaxed">Các kênh cùng chủ đề được gom về một nhóm. Bấm nhóm để xem ngách chi tiết bên trong.</p>
   <div class="flex flex-wrap gap-2">
     <button type="button" data-raw-group="" class="filter-btn ${!state.rawGroup ? 'active' : ''}">Mọi nhóm · ${records.length}</button>
     ${sortedGroups.map(g => `<button type="button" data-raw-group="${esc(g)}" class="filter-btn ${state.rawGroup === g ? 'active' : ''}" title="${esc(g)} — ${groupCounts[g]} kênh thuộc ${RAW_NICHE_GROUPS[g].filter(n => nicheCounts[n]).length} ngách">${esc(g)} · ${groupCounts[g]}</button>`).join('')}
@@ -1515,8 +1515,8 @@ async function renderRawKenh() {
     return `
   <div class="mt-3 pt-2.5 border-t border-hairline">
     <div class="flex items-center justify-between gap-2 mb-2">
-      <div class="text-[11px] text-gray-400 font-semibold inline-flex items-center gap-1.5">${ico('corner-down-right', 14)} Ngách trong nhóm <span class="text-brand-300">${esc(state.rawGroup)}</span> (${inGroup.length} ngách · ${groupCounts[state.rawGroup]} kênh)</div>
-      <button type="button" data-raw-niche="" class="text-[11px] font-semibold ${!currentNiche ? 'text-brand-300' : 'text-gray-400 hover:text-gray-200'} transition-colors shrink-0">Xem tất cả nhóm này</button>
+      <div class="text-2xs text-gray-400 font-semibold inline-flex items-center gap-1.5">${ico('corner-down-right', 14)} Ngách trong nhóm <span class="text-brand-300">${esc(state.rawGroup)}</span> (${inGroup.length} ngách · ${groupCounts[state.rawGroup]} kênh)</div>
+      <button type="button" data-raw-niche="" class="text-2xs font-semibold ${!currentNiche ? 'text-brand-300' : 'text-gray-400 hover:text-gray-200'} transition-colors shrink-0">Xem tất cả nhóm này</button>
     </div>
 
     <!-- Mobile-friendly Native Dropdown Selector (Chọn ngách chi tiết nhanh, 100% hiển thị đủ chữ) -->
@@ -1540,12 +1540,12 @@ async function renderRawKenh() {
   })() : ''}
 </div>
 <button type="button" data-raw-filters-toggle class="mt-3.5 pt-3 border-t border-hairline w-full flex items-center justify-between gap-2 text-left group">
-  <span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold text-gray-400 transition inline-flex items-center gap-1.5">${ico('settings', 14)} Bộ lọc nâng cao (sức sống · faceless · ngôn ngữ)</span>
-  <span class="text-[11px] font-bold text-brand-300 group-hover:text-brand-200 transition shrink-0 inline-flex items-center gap-1">${state.rawFiltersExpanded ? ico('chevron-up', 14) + ' Thu gọn' : ico('chevron-down', 14) + ' Mở rộng'}</span>
+  <span class="text-2xs uppercase tracking-wider text-gray-400 font-semibold text-gray-400 transition inline-flex items-center gap-1.5">${ico('settings', 14)} Bộ lọc nâng cao (sức sống · faceless · ngôn ngữ)</span>
+  <span class="text-2xs font-bold text-brand-300 group-hover:text-brand-200 transition shrink-0 inline-flex items-center gap-1">${state.rawFiltersExpanded ? ico('chevron-up', 14) + ' Thu gọn' : ico('chevron-down', 14) + ' Mở rộng'}</span>
 </button>
 <div class="${state.rawFiltersExpanded ? '' : 'hidden'}">
 <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Tình trạng sống & YPP:</div>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mr-1">Tình trạng sống & YPP:</div>
   <button type="button" data-raw-vitality="" class="filter-btn ${!state.rawVitality ? 'active' : ''}">Tất cả · ${records.length}</button>
   <button type="button" data-raw-vitality="active" class="filter-btn ${state.rawVitality === 'active' ? 'active' : ''}">${icoColored('shield-check', '#34d399', 14)} Đang hoạt động · ${activeCount}</button>
   <button type="button" data-raw-vitality="slow" class="filter-btn ${state.rawVitality === 'slow' ? 'active' : ''}">${icoColored('alert-circle', '#fde68a', 14)} Ra video chậm · ${slowCount}</button>
@@ -1554,13 +1554,13 @@ async function renderRawKenh() {
   <button type="button" data-raw-vitality="ypp" class="filter-btn ${state.rawVitality === 'ypp' ? 'active' : ''}">${icoColored('coins', '#34d399', 14)} Bật kiếm tiền (YPP Active) · ${yppCount}</button>
 </div>
 <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Faceless (Vision AI):</div>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mr-1">Faceless (Vision AI):</div>
   <button type="button" data-raw-faceless="" class="filter-btn ${!state.rawFaceless ? 'active' : ''}">Tất cả · ${records.length}</button>
   <button type="button" data-raw-faceless="faceless" class="filter-btn ${state.rawFaceless === 'faceless' ? 'active' : ''}">${ico('drama', 14)} Faceless · ${facelessCount}</button>
   <button type="button" data-raw-faceless="hasface" class="filter-btn ${state.rawFaceless === 'hasface' ? 'active' : ''}">${ico('user', 14)} Có mặt người thật · ${hasFaceCount}</button>
 </div>
 <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Ngôn ngữ giọng đọc:</div>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mr-1">Ngôn ngữ giọng đọc:</div>
   <button type="button" data-raw-lang="" class="filter-btn ${!currentLang ? 'active' : ''}">Mọi ngôn ngữ · ${records.length}</button>
   <button type="button" data-raw-lang="Tiếng Anh (English)" class="filter-btn ${currentLang === 'Tiếng Anh (English)' ? 'active' : ''}">🇺🇸 Tiếng Anh · ${langCounts['Tiếng Anh (English)'] || 0}</button>
   <button type="button" data-raw-lang="Tiếng Nhật (Japanese)" class="filter-btn ${currentLang === 'Tiếng Nhật (Japanese)' ? 'active' : ''}">🇯🇵 Tiếng Nhật · ${langCounts['Tiếng Nhật (Japanese)'] || 0}</button>
@@ -1599,42 +1599,42 @@ async function renderRawKenh() {
       <div class="js-view-raw-image relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700 cursor-pointer" data-src="${esc(imgSrc)}" data-title="${esc((ch.title || r.id).trim())}" title="Bấm xem ảnh kích thước đầy đủ">
         <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" width="640" height="360" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
         <div class="absolute top-2 left-2 flex items-center gap-1 z-10">
-          <span class="bg-ink-900/80 px-2 py-0.5 rounded-xl text-[10px] font-mono text-gray-300 border border-white/10 truncate">${esc(r.id)}</span>
-          ${langInfo ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-[9.5px] shrink-0" title="${esc(langInfo.language || langInfo.code)}">${esc(langInfo.flag)} ${esc(langInfo.code ? langInfo.code.split('-')[0].toUpperCase() : '')}</span>` : ''}
+          <span class="bg-ink-900/80 px-2 py-0.5 rounded-xl text-2xs font-mono text-gray-300 border border-white/10 truncate">${esc(r.id)}</span>
+          ${langInfo ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-2xs shrink-0" title="${esc(langInfo.language || langInfo.code)}">${esc(langInfo.flag)} ${esc(langInfo.code ? langInfo.code.split('-')[0].toUpperCase() : '')}</span>` : ''}
         </div>
-        <span class="absolute top-2 right-2 bg-brand-600/90 text-white text-[10px] font-medium px-2 py-0.5 rounded-xl truncate max-w-[50%]">${esc(r.editorialNiche || r.niche || 'Chưa rõ')}</span>
-        ${tv ? `<span class="absolute bottom-2 left-2 ${tv.isFaceless ? 'bg-emerald-950/90 text-emerald-300 border-emerald-500/50' : 'bg-red-950/90 text-red-300 border-red-500/50'} text-[10px] font-bold px-2 py-0.5 rounded-lg border backdrop-blur-sm z-10" title="Vision AI (9Router local) phân loại cấp kênh · ${esc(tv.agreement || '')}">${tv.isFaceless ? ico('drama', 14) + ' Faceless' : ico('user', 14) + ' Có mặt người thật'}</span>` : ''}
-        <span class="absolute bottom-2 right-2 bg-black/70 hover:bg-black/90 text-white text-[10px] px-2 py-0.5 rounded-lg border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity inline-flex items-center gap-1">${ico('search', 14)} Xem ảnh</span>
+        <span class="absolute top-2 right-2 bg-brand-600/90 text-white text-2xs font-medium px-2 py-0.5 rounded-xl truncate max-w-[50%]">${esc(r.editorialNiche || r.niche || 'Chưa rõ')}</span>
+        ${tv ? `<span class="absolute bottom-2 left-2 ${tv.isFaceless ? 'bg-emerald-950/90 text-emerald-300 border-emerald-500/50' : 'bg-red-950/90 text-red-300 border-red-500/50'} text-2xs font-bold px-2 py-0.5 rounded-lg border backdrop-blur-sm z-10" title="Vision AI (9Router local) phân loại cấp kênh · ${esc(tv.agreement || '')}">${tv.isFaceless ? ico('drama', 14) + ' Faceless' : ico('user', 14) + ' Có mặt người thật'}</span>` : ''}
+        <span class="absolute bottom-2 right-2 bg-black/70 hover:bg-black/90 text-white text-2xs px-2 py-0.5 rounded-lg border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity inline-flex items-center gap-1">${ico('search', 14)} Xem ảnh</span>
       </div>
       <div class="p-3.5 flex-1 flex flex-col gap-2 min-w-0">
         <div class="flex items-start justify-between gap-2 min-w-0">
           <h3 class="text-sm font-bold text-white group-hover:text-brand-300 transition line-clamp-1 min-w-0">${esc((ch.title || '').trim() || 'Chưa rõ tên')}</h3>
           <div class="flex items-center gap-1 shrink-0 flex-wrap justify-end">
             ${statusBadge}
-            ${vA.monetizationStatus === 'MONETIZED_AT_RISK' ? `<span class="badge badge-red text-[10px] font-bold inline-flex items-center gap-1">${ico('alert-triangle', 14)} Rủi ro YPP</span>` : ''}
+            ${vA.monetizationStatus === 'MONETIZED_AT_RISK' ? `<span class="badge badge-red text-2xs font-bold inline-flex items-center gap-1">${ico('alert-triangle', 14)} Rủi ro YPP</span>` : ''}
           </div>
         </div>
-        ${(ch.handle || vision.handle || (ocr && ocr.handle)) ? `<div class="text-[11px] text-brand-400 font-mono truncate">${esc(decodeURIComponent(ch.handle || vision.handle || (ocr && ocr.handle)))}</div>` : ''}
+        ${(ch.handle || vision.handle || (ocr && ocr.handle)) ? `<div class="text-2xs text-brand-400 font-mono truncate">${esc(decodeURIComponent(ch.handle || vision.handle || (ocr && ocr.handle)))}</div>` : ''}
         ${ch.subscribers ? `
-        <div class="text-[11px] text-emerald-400 font-medium flex items-center gap-1.5">
+        <div class="text-2xs text-emerald-400 font-medium flex items-center gap-1.5">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
           <span class="truncate">${Number(ch.subscribers).toLocaleString()} subs · ${Number(ch.views || 0).toLocaleString()} views</span>
           ${vG && vG.subscribersGained ? `<span class="text-gray-400 font-normal shrink-0">(+${Number(vG.subscribersGained).toLocaleString()}/30d)</span>` : ''}
         </div>` : ''}
         ${vA.healthStatus === 'DORMANT_LONG' ? `
-        <div class="text-[10.5px] bg-red-950/70 border border-red-800/80 rounded-xl px-2.5 py-1.5 text-red-200 font-medium flex items-center gap-1.5">
+        <div class="text-2xs bg-red-950/70 border border-red-800/80 rounded-xl px-2.5 py-1.5 text-red-200 font-medium flex items-center gap-1.5">
           <span class="text-red-400 font-bold animate-pulse inline-flex">${ico('alert-triangle', 14)}</span> Dừng đăng ${vA.daysSinceLatest} ngày — Nguy cơ tắt YPP / Die
         </div>` : (vA.daysSinceLatest != null ? `
-        <div class="text-[11px] text-gray-400 flex items-center justify-between">
+        <div class="text-2xs text-gray-400 flex items-center justify-between">
           <span class="truncate inline-flex items-center gap-1">${ico('calendar', 14)} Video gần nhất: <b class="text-gray-200">${esc(vA.latestUploadDate || 'N/A')}</b></span>
           <span class="${vA.healthStatus === 'ACTIVE' ? 'text-emerald-400 font-semibold' : 'text-amber-400 font-medium'} shrink-0 ml-1">${vA.daysSinceLatest}d trước</span>
         </div>` : '')}
-        ${vision.mainTopic ? `<p class="text-[11px] text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="text-amber-400 font-semibold">Chủ đề:</span> ${esc(vision.mainTopic)}</p>` : ''}
-        ${vision.videoTitles && vision.videoTitles.length ? `<p class="text-[11px] text-gray-400 italic line-clamp-1">"${esc(vision.videoTitles[0])}"</p>` : ''}
-        ${tv ? `<p class="text-[11px] text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="${tv.isFaceless ? 'text-emerald-400' : 'text-red-400'} font-semibold">Vision:</span> ${tv.isFaceless ? 'Faceless' : 'Có mặt người thật'} · ${esc(tv.facelessType || '')} · Ngách: ${esc(tv.thumbnailNiche || '—')}${tv.needsReview ? ' <span class="text-amber-400 font-semibold">· cần review</span>' : ''}</p>` : ''}
-        ${ocr ? `<p class="text-[11px] text-gray-400 truncate">${esc([ocr.subsText, ocr.videoCountText, ocr.videoRows && ocr.videoRows[0] ? ocr.videoRows[0].vph : null].filter(Boolean).join(' · '))}</p>` : ''}
+        ${vision.mainTopic ? `<p class="text-2xs text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="text-amber-400 font-semibold">Chủ đề:</span> ${esc(vision.mainTopic)}</p>` : ''}
+        ${vision.videoTitles && vision.videoTitles.length ? `<p class="text-2xs text-gray-400 italic line-clamp-1">"${esc(vision.videoTitles[0])}"</p>` : ''}
+        ${tv ? `<p class="text-2xs text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="${tv.isFaceless ? 'text-emerald-400' : 'text-red-400'} font-semibold">Vision:</span> ${tv.isFaceless ? 'Faceless' : 'Có mặt người thật'} · ${esc(tv.facelessType || '')} · Ngách: ${esc(tv.thumbnailNiche || '—')}${tv.needsReview ? ' <span class="text-amber-400 font-semibold">· cần review</span>' : ''}</p>` : ''}
+        ${ocr ? `<p class="text-2xs text-gray-400 truncate">${esc([ocr.subsText, ocr.videoCountText, ocr.videoRows && ocr.videoRows[0] ? ocr.videoRows[0].vph : null].filter(Boolean).join(' · '))}</p>` : ''}
         ${r.deepIntelligence ? `
-        <div class="text-[10px] bg-white/[0.03] border border-white/10 rounded-xl px-2.5 py-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-gray-300">
+        <div class="text-2xs bg-white/[0.03] border border-white/10 rounded-xl px-2.5 py-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-gray-300">
           <span class="text-amber-300 font-medium inline-flex items-center gap-1">${ico('zap', 14)} ${r.deepIntelligence.topVideosCount} videos</span>
           <span class="text-sky-300 font-medium inline-flex items-center gap-1">${ico('tag', 14)} ${r.deepIntelligence.tagsCount} tags</span>
           <span class="text-emerald-300 font-medium inline-flex items-center gap-1">${ico('coins', 14)} ${esc(vA.estimatedMonthlyRev || 'N/A')}</span>
@@ -1650,7 +1650,7 @@ async function renderRawKenh() {
         <button type="button" class="btn-open-raw-deep w-full mt-1.5 py-2 px-2.5 bg-brand-900/30 hover:bg-brand-800/50 border border-brand-500/30 hover:border-brand-400 text-brand-300 hover:text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer min-h-[38px]" data-raw-id="${esc(r.id)}">
           <span class="inline-flex items-center gap-1.5">${ico('bar-chart-3', 14)} Xem Hồ Sơ & Top Videos Chi Tiết</span> ${ico('arrow-right', 14)}
         </button>
-        <div class="mt-auto pt-2.5 border-t border-ink-700 flex items-center justify-between gap-2 text-[11px]">
+        <div class="mt-auto pt-2.5 border-t border-ink-700 flex items-center justify-between gap-2 text-2xs">
           <span class="text-emerald-400 font-medium truncate min-w-0 flex items-center gap-1"><span class="inline-flex">${ico('camera', 14)}</span> Ảnh chụp thực tế</span>
           <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-300 hover:text-white bg-brand-500/20 hover:bg-brand-500 px-2.5 py-1.5 rounded-xl transition font-medium whitespace-nowrap shrink-0">Mở YouTube ↗</a>
         </div>
@@ -1710,7 +1710,7 @@ async function renderKenh() {
   <button type="button" id="freset-kenh" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>
 <div class="mt-4 pt-3 border-t border-hairline">
-  <div class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách đối thủ</div>
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách đối thủ</div>
   <div class="flex flex-wrap gap-2">
     <button type="button" data-kenh-niche="" class="filter-btn ${!state.kenhNiche ? 'active' : ''}">Mọi ngách · ${kenh.length}</button>
     ${chips.map(([id, label, n]) => `<button type="button" data-kenh-niche="${esc(id)}" class="filter-btn ${state.kenhNiche === id ? 'active' : ''}">${esc(label)} · ${n}</button>`).join('')}
@@ -1733,8 +1733,8 @@ ${grouped.map(g => {
           ${avatarHtml(ch)}
           <div class="min-w-0 flex-1">
             <div class="text-sm font-semibold text-white truncate">${esc(ch.handle)}</div>
-            <div class="text-[11px] text-gray-400 truncate">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV</div>
-            ${(ch.markets && ch.markets.length) ? `<div class="text-[10px] text-gray-500 truncate mt-0.5">${ch.markets.map(m => esc(stripDecorEmoji(m))).join(' · ')}</div>` : ''}
+            <div class="text-2xs text-gray-400 truncate">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV</div>
+            ${(ch.markets && ch.markets.length) ? `<div class="text-2xs text-gray-500 truncate mt-0.5">${ch.markets.map(m => esc(stripDecorEmoji(m))).join(' · ')}</div>` : ''}
           </div>
           <span class="text-gray-500 shrink-0 text-sm inline-flex">${ico('arrow-up-right', 14)}</span>
         </a>`).join('')}
@@ -1803,7 +1803,7 @@ async function renderChienLuoc() {
 <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-3">
   ${principles.map(p => `
     <article class="card p-4 min-w-0">
-      <div class="text-[11px] font-mono text-brand-400 font-bold">${p.tag}</div>
+      <div class="text-2xs font-mono text-brand-400 font-bold">${p.tag}</div>
       <h2 class="text-sm font-bold text-white mt-1 font-heading">${esc(p.title)}</h2>
       <p class="text-xs text-gray-400 mt-2 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(p.body)}</p>
     </article>`).join('')}
@@ -1832,21 +1832,21 @@ async function renderChienLuoc() {
     ${steps.map(s => `
       <div class="card p-4 text-left min-w-0 hover:border-brand-500 flex flex-col justify-between transition-colors">
         <div class="flex gap-3">
-          <span class="w-9 h-9 rounded-xl bg-brand-600/20 border border-brand-700/40 text-brand-300 font-black text-sm flex items-center justify-center shrink-0 font-mono">${String(s.n).padStart(2, '0')}</span>
+          <span class="w-9 h-9 rounded-xl bg-brand-600/20 border border-brand-700/40 text-brand-300 font-bold text-sm flex items-center justify-center shrink-0 font-mono">${String(s.n).padStart(2, '0')}</span>
           <div class="min-w-0 flex-1">
             <span class="block text-sm font-bold text-white font-heading leading-snug">${esc(s.title)}</span>
             <span class="block text-xs text-gray-300 mt-1.5 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(s.detail)}</span>
           </div>
         </div>
         <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center justify-between gap-2">
-          <button type="button" data-open-tab="${esc(s.tab)}"${s.kind != null ? ` data-kind="${esc(s.kind)}"` : ''}${s.promptNiche != null ? ` data-prompt-niche="${esc(s.promptNiche)}"` : ''} class="inline-flex items-center gap-1 text-[11px] text-brand-400 hover:text-brand-300 font-semibold transition-colors">
+          <button type="button" data-open-tab="${esc(s.tab)}"${s.kind != null ? ` data-kind="${esc(s.kind)}"` : ''}${s.promptNiche != null ? ` data-prompt-niche="${esc(s.promptNiche)}"` : ''} class="inline-flex items-center gap-1 text-2xs text-brand-400 hover:text-brand-300 font-semibold transition-colors">
             <span>${esc(s.tabLabel)}</span>
             <span class="font-mono">→</span>
           </button>
           ${s.docPath ? `
-          <a href="${esc(s.docPath)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] text-gray-400 hover:text-brand-300 transition-colors" title="${esc(s.docTitle || 'Tài liệu SOP')}">
+          <a href="${esc(s.docPath)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-2xs text-gray-400 hover:text-brand-300 transition-colors" title="${esc(s.docTitle || 'Tài liệu SOP')}">
             <span class="inline-flex items-center gap-1.5">${ico('file-text', 14)} ${esc(s.docTitle || 'Mở SOP')}</span>
-            <span class="font-mono text-[10px] inline-flex">${ico('arrow-up-right', 14)}</span>
+            <span class="font-mono text-2xs inline-flex">${ico('arrow-up-right', 14)}</span>
           </a>` : ''}
         </div>
       </div>`).join('')}
@@ -1859,16 +1859,16 @@ async function renderChienLuoc() {
 <div class="grid lg:grid-cols-2 gap-4">
   <section class="card p-5 sm:p-6 min-w-0">
     <h2 class="page-h2 mb-1">Điểm số kho H2DEV</h2>
-    <p class="text-[11px] text-gray-500 mb-3">Đếm live từ videos.json · ${scored}/${videos.length}</p>
+    <p class="text-2xs text-gray-500 mb-3">Đếm live từ videos.json · ${scored}/${videos.length}</p>
     <div class="space-y-1.5">
       ${score.map(s => `
         <button type="button" data-open-niche="${esc(s.key)}" class="w-full flex items-center gap-3 min-w-0 text-left rounded-xl px-2 py-1.5 hover:bg-ink-700/60">
-          <span class="w-8 text-right text-sm font-extrabold text-white shrink-0">${s.n}</span>
+          <span class="w-8 text-right text-sm font-bold text-white shrink-0">${s.n}</span>
           <span class="min-w-0 flex-1">
             <span class="block text-sm text-gray-200 truncate">${esc(s.label)}</span>
-            <span class="block text-[11px] text-gray-500 truncate">${esc(s.note)}</span>
+            <span class="block text-2xs text-gray-500 truncate">${esc(s.note)}</span>
           </span>
-          <span class="text-[11px] text-brand-400 shrink-0">Xem →</span>
+          <span class="text-2xs text-brand-400 shrink-0">Xem →</span>
         </button>`).join('')}
     </div>
   </section>
@@ -1878,11 +1878,11 @@ async function renderChienLuoc() {
     <p class="text-xs text-gray-400 mb-3">Các nhóm đề tài khảo sát tham chiếu từ dữ liệu kênh đối thủ và kho bài học. Luôn đo lại bằng vidIQ trước khi bấm máy.</p>
     <div class="grid sm:grid-cols-2 gap-2.5">${cl.huongDiNoiDung.map(h => `
       <button type="button" data-open-tab="${esc(h.tab || 'ngachxanh')}" class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-2.5 min-w-0 bg-ink-800">
-        <div class="text-[11px] font-mono text-brand-400 font-bold">#${h.hang} · ${esc(h.pack)}</div>
+        <div class="text-2xs font-mono text-brand-400 font-bold">#${h.hang} · ${esc(h.pack)}</div>
         <div class="text-sm font-bold text-white mt-0.5 font-heading">${esc(h.ngach)}</div>
         <div class="text-xs text-gray-400 mt-1.5 leading-relaxed break-words">${esc(h.lyDo)}</div>
       </button>`).join('')}</div>
-    ${cl.cachNoiTab ? `<ul class="mt-3 space-y-1 text-[11px] text-gray-400">${cl.cachNoiTab.map(s => '<li>· ' + esc(s) + '</li>').join('')}</ul>` : ''}
+    ${cl.cachNoiTab ? `<ul class="mt-3 space-y-1 text-2xs text-gray-400">${cl.cachNoiTab.map(s => '<li>· ' + esc(s) + '</li>').join('')}</ul>` : ''}
   </section>`: ''}
 </div>
 ${(cl.taiSanNoiBo && cl.taiSanNoiBo.length) ? `
@@ -1891,9 +1891,9 @@ ${(cl.taiSanNoiBo && cl.taiSanNoiBo.length) ? `
   <p class="text-xs text-gray-500 mb-3">Match cái đã có · gôm cái chưa có. Gốc ở Y:\\YTB không xóa. Chi tiết: <a class="text-brand-400 hover:text-brand-300" href="docs/NOI-BO/README.md" target="_blank" rel="noopener">docs/NOI-BO/README.md</a></p>
   <div class="grid sm:grid-cols-2 xl:grid-cols-5 gap-3">${cl.taiSanNoiBo.map(t => `
     <button type="button" data-open-tab="${esc(t.tab || 'tai-lieu')}"${t.kind != null ? ` data-kind="${esc(t.kind)}"` : ''} class="text-left rounded-xl border border-ink-600 hover:border-brand-500 p-3 min-w-0">
-      <div class="text-[26px] font-extrabold text-white leading-none">${t.so || '—'}</div>
+      <div class="text-2xl font-bold text-white leading-none">${t.so || '—'}</div>
       <div class="text-sm font-bold text-white mt-1">${esc(t.loai)}</div>
-      <div class="text-[11px] text-gray-500 mt-1 font-mono break-all">${esc(t.path || '')}</div>
+      <div class="text-2xs text-gray-500 mt-1 font-mono break-all">${esc(t.path || '')}</div>
     </button>`).join('')}</div>
 </section>`: ''}
   </div>
@@ -1906,7 +1906,7 @@ ${(cl.taiSanNoiBo && cl.taiSanNoiBo.length) ? `
   <div class="grid lg:grid-cols-3 gap-3.5 mb-4">
     ${ypp.map(y => `
       <article class="card p-4 min-w-0">
-        <div class="text-[11px] uppercase tracking-wide ${y.tone} font-bold">${esc(y.when)}</div>
+        <div class="text-2xs uppercase tracking-wide ${y.tone} font-bold">${esc(y.when)}</div>
         <h3 class="text-white font-bold mt-1 font-heading">${esc(y.title)}</h3>
         <p class="text-sm text-gray-300 mt-2 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(y.body)}</p>
       </article>`).join('')}

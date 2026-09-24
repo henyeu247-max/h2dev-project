@@ -165,13 +165,13 @@ html.is-embed .learn-header {
 }
 @media (max-width: 720px) {
   .learn-header {
-    height: calc(50px + env(safe-area-inset-top, 0px)) !important;
-    min-height: calc(50px + env(safe-area-inset-top, 0px)) !important;
+    height: calc(56px + env(safe-area-inset-top, 0px)) !important;
+    min-height: calc(56px + env(safe-area-inset-top, 0px)) !important;
     padding: env(safe-area-inset-top, 0px) 12px 0 !important;
     display: flex !important;
     align-items: center;
   }
-  body { padding-top: calc(58px + env(safe-area-inset-top, 0px)); }
+  body { padding-top: calc(64px + env(safe-area-inset-top, 0px)); }
   html.is-embed body {
     padding-top: calc(52px + env(safe-area-inset-top, 0px));
   }

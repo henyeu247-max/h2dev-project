@@ -68,6 +68,9 @@
   font-weight: var(--h2-fw-bold);
   letter-spacing: var(--h2-ls-tight);
   color: var(--fg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .h2-shell-brand__wordmark em { color: var(--brand); font-style: normal; }
 .h2-shell-brand__tag {
@@ -75,6 +78,41 @@
   font-size: var(--h2-font-2xs);
   color: var(--fg-faint);
   line-height: var(--h2-lh-heading);
+}
+
+/* --------------------------------------------------------------------------
+   P0 BO SUNG (2026-09-24): .h2-shell-brand la 1 THE <a> (link ve trang chu),
+   ben trong gom radar SVG (.vd-radar, cua viddar.css) + wordmark (.vd-wordmark).
+   Truoc day learn/player dung o chu ".brand-mark H2" -> lech brand so voi index.
+   Nay chot 1 dang duy nhat. Vai rule duoi day chi chinh phuc vu the <a>:
+   - bo gach chan cua link, color ke thua, khong bi tran khi header hep.
+   -------------------------------------------------------------------------- */
+a.h2-shell-brand {
+  text-decoration: none;
+  color: inherit;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+a.h2-shell-brand:hover .vd-wordmark { color: var(--brand-ink); }
+a.h2-shell-brand:focus-visible {
+  outline: 2px solid var(--brand-ink);
+  outline-offset: 2px;
+  border-radius: var(--r-md);
+}
+/* Wordmark trong shell brand: cung co gian, khong tran header */
+a.h2-shell-brand .vd-wordmark {
+  font: 700 var(--h2-font-md) / var(--h2-lh-display) var(--font-display);
+  letter-spacing: var(--h2-ls-tight);
+}
+/* Tieu de trang di kem brand: ngan cach bang vach mo, tranh dinh lien mach */
+.h2-shell-title--page {
+  padding-left: var(--h2-space-3);
+  border-left: 1px solid var(--hairline);
+  color: var(--fg-2);
+}
+@media (max-width: 639px) {
+  a.h2-shell-brand .vd-wordmark { display: none; }
+  .h2-shell-title--page { padding-left: var(--h2-space-2); }
 }
 
 /* Tieu de trang tren header: font-display, dong nhat 3 trang */
@@ -337,6 +375,35 @@
 }
 
 /* ==========================================================================
+   10. TOUCH TARGET CHUAN (WCAG 2.5.8) — P0 bo sung 2026-09-24
+   --------------------------------------------------------------------------
+   Do runtime that o 390px (truoc khi sua):
+     index  .vd-bottom-nav .tab-btn = 42px   (chuan 44)  -> thieu 2px
+     learn  .tabbar .tab-btn        = 34px   (chuan 44)  -> CO NHO tren mobile
+     player #playerTabSelector btn  = 34..36px (chuan 44)
+   Chuan cua du an (SKILL.md dong 198/266/341): nut co chu min-height 44px,
+   CẤM co nho control tren mobile. Day la "1 viec 1 chuan" cho touch target:
+   moi phan tu bam duoc trong shell deu lay --h2-touch-min.
+   ========================================================================== */
+@media (max-width: 639px) {
+  /* 1. Tab ngang (learn .tabbar, player #playerTabSelector) */
+  .tabbar .tab-btn,
+  #playerTabSelector [role="tab"] {
+    min-height: var(--h2-touch-min);
+  }
+  /* 2. Bottom-nav day man hinh (index) — noi cao o day, KHONG sua container 56px */
+  .vd-bottom-nav .tab-btn {
+    min-height: var(--h2-touch-min);
+  }
+  /* 3. Nut chi icon + nut chu trong shell */
+  .h2-shell-backtotop,
+  .btn-icon {
+    min-width: var(--h2-touch-min);
+    min-height: var(--h2-touch-min);
+  }
+}
+
+/* ==========================================================================
    9. TOAST CHUAN — dung chung ca 3 trang (learn/player/index)
    --------------------------------------------------------------------------
    TRUOC DAY: .toast-msg chi dinh nghia trong player.css (chi player.html nap).
@@ -344,7 +411,26 @@
    -> toast tao ra se VO (khong style). Da do: index.html chi nap viddar.css.
    => Dua len tang shell de moi trang deu co. Giu nguyen gia tri goc de khong
       doi hinh dang player dang co.
+   P0 BO SUNG (2026-09-24): #toast-box TRUOC DAY KHONG CO CSS nao ca -> the div
+   do nam trong luong tai lieu (position static) va KHONG tao containing block
+   cho .toast-msg (position:fixed) => toast neo vao viewport. Nay chot 1 chuan
+   duy nhat: #toast-box la vung aria-live (thong bao cho screen reader) va
+   .toast-msg luon la con cua no.
    ========================================================================== */
+#toast-box {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: var(--h2-z-toast);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+  #toast-box { left: 12px; right: 12px; bottom: 76px; align-items: stretch; }
+}
 .toast-msg {
   position: fixed;
   bottom: 24px;

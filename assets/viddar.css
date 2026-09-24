@@ -694,7 +694,7 @@ img, video { max-width: 100%; height: auto; }
 
 /* Player compatibility */
 .app-body { color: var(--fg); background: var(--bg); }
-.app-top { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 52px; padding: 0 24px; background: var(--topbar-bg); border-bottom: 1px solid var(--border); backdrop-filter: blur(10px); }
+.app-top { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 56px; padding: 0 24px; background: var(--topbar-bg); border-bottom: 1px solid var(--border); backdrop-filter: blur(10px); }
 .brand-mark { display: grid; place-items: center; width: 28px; height: 28px; color: #fff; background: var(--brand); border-radius: 4px; font: 700 11px/1 var(--font-mono); }
 .theater-toggle-badge.active { color: var(--red-50-fg) !important; background: var(--red-50) !important; border-color: transparent !important; }
 body.theater-active .theater-wrapper { background: #000; }
@@ -725,9 +725,9 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     left: 0 !important;
     right: 0 !important;
     width: 100% !important;
-    height: calc(50px + env(safe-area-inset-top, 0px)) !important;
-    min-height: calc(50px + env(safe-area-inset-top, 0px)) !important;
-    max-height: calc(50px + env(safe-area-inset-top, 0px)) !important;
+    height: calc(56px + env(safe-area-inset-top, 0px)) !important;
+    min-height: calc(56px + env(safe-area-inset-top, 0px)) !important;
+    max-height: calc(56px + env(safe-area-inset-top, 0px)) !important;
     padding: env(safe-area-inset-top, 0px) 14px 0 !important;
     display: flex !important;
     flex-direction: column !important;

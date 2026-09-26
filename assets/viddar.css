@@ -110,7 +110,7 @@
   position: absolute;
   left: -9999px;
   top: 0;
-  z-index: 100;
+  z-index: var(--h2-z-topbar-mobile);
   padding: 10px 16px;
   background: var(--brand);
   color: var(--brand-fg);
@@ -129,7 +129,7 @@
   position: fixed;
   top: 8px;
   left: 8px;
-  z-index: 100;
+  z-index: var(--h2-z-topbar-mobile);
   clip: auto;
   clip-path: none;
   width: auto;
@@ -161,7 +161,7 @@ body::before {
   position: fixed;
   top: 0; left: 0; width: 100%; height: 100%;
   pointer-events: none;
-  z-index: 9999;
+  z-index: var(--h2-z-base);
   opacity: 0.035;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat: repeat;
@@ -172,7 +172,7 @@ body::after {
   position: fixed;
   top: 0; left: 0; width: 100%; height: 100%;
   pointer-events: none;
-  z-index: 9998;
+  z-index: var(--h2-z-base);
   opacity: 0.02;
   background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.3) 2px, rgba(0,0,0,0.3) 4px);
 }
@@ -290,7 +290,7 @@ code { font-size: 11px; color: var(--fg-2); }
   grid-row: 1;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: var(--h2-z-sticky);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -396,26 +396,39 @@ code { font-size: 11px; color: var(--fg-2); }
   border-radius: var(--r-lg);
 }
 
-/* Card hosting a search filter bar with open floating dropdown must never be trapped by CSS containment */
+/* Card hosting a search filter bar with open floating dropdown must never be trapped by CSS containment.
+   P1 (2026-09-26) SCAR-022: TRUOC DAY dat `z-index: 60 !important` o day -> the cha TRO THANH
+   STACKING CONTEXT -> z-index 1010 cua dropdown con CHI co hieu luc noi bo the cha
+   -> cac the .card khac (z-index auto, nen duc) ve SAU trong DOM se DE LEN dropdown (lo noi dung).
+   SUA TAN GOC: BO z-index o the cha. The cha chi can position:relative lam moc toa do cho
+   dropdown absolute; KHONG duoc tao stacking context. Dropdown khi do nam tren moi the card. */
 .card.overflow-visible, .search-filter-card, .overflow-visible {
   contain: none !important;
   position: relative !important;
-  z-index: 60 !important;
 }
 
-/* Smart Search Suggestions Dropdown Styling (Solid Opaque Frosted Glass - Zero Bleed-through) */
+/* Smart Search Suggestions Dropdown Styling (Solid Opaque Frosted Glass - Zero Bleed-through)
+   P1 (2026-09-26) SCAR-022 - DA DO RUNTIME, khong doan:
+   (1) STACKING: the cha .search-filter-card tung co `z-index:60 !important` -> tao stacking context
+       -> dropdown con (z-index 1010) chi thang trong noi bo the cha -> the card khac ve sau DE LEN.
+       DA SUA TAN GOC: go z-index o the cha (xem rule phia tren). Do lai: 7/7 diem elementFromPoint
+       deu tra ve dropdown => da nam tren that.
+   (2) TUONG PHAN: nen dropdown KHONG duoc gan bang --surface-2 (#1a1a1a) vi the card cung la
+       #0f0f0f -> chi chenh 4% -> mat nguoi van thay "lo". Nen dung --bg (#050505) dam hon nen card
+       -> tach lop ro rang, van 1 he token. Header dung --surface (khong dung hex #060910 toi hon ca nen trang). */
 #video-search-suggestions, #raw-search-suggestions {
-  background-color: #0b0f19 !important;
-  background: rgba(11, 15, 25, 0.98) !important;
-  backdrop-filter: blur(28px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
-  border: 1px solid #334155 !important;
-  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.98), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
-  z-index: 9999 !important;
+  background-color: var(--bg) !important;
+  backdrop-filter: blur(10px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+  border: 1px solid var(--border-strong) !important;
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.98), 0 0 0 1px rgba(255, 255, 255, 0.16) !important;
+  z-index: var(--h2-z-modal-top) !important;
+}
+#video-search-suggestions > .px-3\\.5, #raw-search-suggestions > .px-3\\.5 {
+  background-color: var(--surface) !important;
 }
 .js-v-sug-row, .js-sug-row {
-  background-color: #0b0f19 !important;
-  background: rgba(11, 15, 25, 0.98) !important;
+  background-color: var(--bg) !important;
   transition: background-color 0.15s ease !important;
 }
 .js-v-sug-row:hover, .js-sug-row:hover {
@@ -694,7 +707,7 @@ img, video { max-width: 100%; height: auto; }
 
 /* Player compatibility */
 .app-body { color: var(--fg); background: var(--bg); }
-.app-top { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 56px; padding: 0 24px; background: var(--topbar-bg); border-bottom: 1px solid var(--border); backdrop-filter: blur(10px); }
+.app-top { position: sticky; top: 0; z-index: var(--h2-z-sticky); display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 56px; padding: 0 24px; background: var(--topbar-bg); border-bottom: 1px solid var(--border); backdrop-filter: blur(10px); }
 .brand-mark { display: grid; place-items: center; width: 28px; height: 28px; color: #fff; background: var(--brand); border-radius: 4px; font: 700 11px/1 var(--font-mono); }
 .theater-toggle-badge.active { color: var(--red-50-fg) !important; background: var(--red-50) !important; border-color: transparent !important; }
 body.theater-active .theater-wrapper { background: #000; }
@@ -735,7 +748,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     align-items: stretch !important;
     gap: 0 !important;
     overflow: hidden !important;
-    z-index: 100 !important;
+    z-index: var(--h2-z-topbar-mobile) !important;
     border-bottom: 1px solid var(--border) !important;
     background: #050505 !important;
     box-sizing: border-box !important;
@@ -828,7 +841,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     padding: 0 4px env(safe-area-inset-bottom, 0px) !important;
     background: #050505 !important;
     border-top: 1px solid var(--border) !important;
-    z-index: 100 !important;
+    z-index: var(--h2-z-topbar-mobile) !important;
     box-sizing: border-box !important;
   }
   .vd-bottom-nav .tab-btn {
@@ -890,7 +903,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     border-radius: 4px;
     padding: 6px;
     box-shadow: 4px 4px 0 rgba(226,2,58,0.15);
-    z-index: 60;
+    z-index: var(--h2-z-drawer);
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -939,9 +952,12 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .more-menu-backdrop {
     position: fixed;
     inset: 0;
+    /* P1 (2026-09-26): backdrop MENU (khong phai modal) -> alpha nhe de van doc duoc
+       noi dung phia sau. Da do bang anh before/after: alpha 0.92 lam thay doi
+       59% pixel (hoi quy that), 0.45 giu nguyen 0.055%. Blur van theo chuan 10px. */
     background: rgba(0, 0, 0, 0.45);
-    z-index: 55;
-    backdrop-filter: blur(2px);
+    z-index: var(--h2-z-drawer);
+    backdrop-filter: blur(10px);
   }
   #panel-root { grid-column: 1; grid-row: 1; height: auto; overflow-x: hidden; overflow-y: visible; touch-action: pan-y; }
   .app-footer { grid-column: 1; grid-row: 3; padding: 10px 12px 12px; }
@@ -1193,7 +1209,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   width: 100%;
   max-width: 1040px;
   max-height: 92vh;
-  background: #0b0f19;
+  background: var(--surface-2);
   border: 1px solid #1e293b;
   border-radius: 1.25rem;
   overflow: hidden;
@@ -1228,7 +1244,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 }
 .raw-deep-body { display: flex; }
 .raw-deep-quicknav { display: flex; }
-.raw-deep-tabbar { display: flex; align-items: center; gap: 8px; background: #0c1220; border-bottom: 1px solid #1e293b; padding: 7px 16px; flex-shrink: 0; }
+.raw-deep-tabbar { display: flex; align-items: center; gap: 8px; background: var(--surface); border-bottom: 1px solid #1e293b; padding: 7px 16px; flex-shrink: 0; }
 .raw-tab-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 600; background: #1e293b; border: 1px solid #334155; color: #cbd5e1; padding: 6px 14px; border-radius: 8px; cursor: pointer; transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
 .raw-tab-btn:hover { background: #334155; color: #fff; }
 .raw-tab-btn.active { background: #2563eb !important; border-color: #3b82f6 !important; color: #fff !important; font-weight: 700 !important; }

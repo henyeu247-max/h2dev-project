@@ -1,4 +1,4 @@
-﻿/* H2TabContent - G3.1 extract: 8 tab renderers from index.html */
+/* H2TabContent - G3.1 extract: 8 tab renderers from index.html */
 (function (global) {
   'use strict';
   const SC = (typeof window !== 'undefined' && window.H2SearchCore) || {
@@ -387,7 +387,7 @@ window.showVideoSearchSuggestions = function(inputVal, _premerged) {
   const items = (Array.isArray(_premerged) ? _premerged : localItems);
   if (items.length === 0) {
     box.innerHTML = `
-      <div class="p-3 text-xs text-gray-400 flex items-center justify-between bg-ink-deep" >
+      <div class="p-3 text-xs text-gray-400 flex items-center justify-between bg-bg" >
         <span>Không tìm thấy gợi ý bài học khớp với "<strong>${esc(q)}</strong>"</span>
         <span class="text-2xs text-gray-500 font-mono">Nhấn Enter để lọc</span>
       </div>`;
@@ -396,12 +396,12 @@ window.showVideoSearchSuggestions = function(inputVal, _premerged) {
   }
 
   box.innerHTML = `
-    <div class="px-3.5 py-2 bg-[#060910] text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
+    <div class="px-3.5 py-2 bg-surface text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
       <span class="flex items-center gap-1.5"><span class="text-brand-400">${ico('zap', 14)}</span> Gợi ý bài học, mốc tua & kỹ thuật (${items.length})</span>
       <span class="text-gray-500 font-normal">Nhấp để lọc hoặc tua ngay</span>
     </div>
     ${items.map((item, idx) => `
-      <div class="js-v-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-ink-deep" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-sku="${esc(item.sku || '')}" data-url="${esc(item.directUrl || '')}">
+      <div class="js-v-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-bg" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-sku="${esc(item.sku || '')}" data-url="${esc(item.directUrl || '')}">
         <div class="flex items-center gap-2.5 min-w-0">
           <span class="text-base shrink-0">${ico(item.icon, 16)}</span>
           <div class="min-w-0">
@@ -513,14 +513,14 @@ async function renderVideo() {
     { icon: ICONS.doc, label: 'Có tài liệu', value: withDocs, sub: 'docs[] catalog' },
     { icon: ICONS.video, label: 'Đang hiện', value: SC.pad2(list.length), live: true, sub: list.length === videos.length ? 'Không lọc' : 'Đang filter' }
   ])}
-  <div class="card p-4 sm:p-5 mb-4 overflow-visible search-filter-card" style="position:relative; z-index:60; contain:none !important;">
+  <div class="card p-4 sm:p-5 mb-4 overflow-visible search-filter-card" style="position:relative; contain:none !important;">
 <!-- Row 1: Search Bar (Full Width & Spacious) -->
 <div class="flex flex-col sm:flex-row gap-3 sm:items-center relative">
   <label class="sr-only" for="fq">Tìm video</label>
   <div class="relative w-full sm:flex-1 min-w-0" id="video-search-wrap">
     <input id="fq" aria-label="Tìm video bài học" value="${esc(state.q)}" autocomplete="off" placeholder="Tìm tên video, SKU, kỹ thuật (B-roll bàn tay, AI, Thầy Pháp Hòa, xây kênh...)" class="search-input-premium w-full min-w-0 pr-9">
-    ${state.q ? `<button type="button" id="btn-clear-video-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition z-10" title="Xóa tìm kiếm">${ico('x', 14)}</button>` : ''}
-    <div id="video-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-[#334155] rounded-2xl shadow-2xl z-50 overflow-hidden max-h-[420px] overflow-y-auto divide-y divide-[#1e293b]/80 min-w-full" style="background-color:#0b0f19 !important; background:rgba(11,15,25,0.98) !important; backdrop-filter:blur(28px) saturate(180%) !important; -webkit-backdrop-filter:blur(28px) saturate(180%) !important; z-index:9999 !important; box-shadow:0 25px 60px -10px rgba(0,0,0,0.98), 0 0 0 1px rgba(255,255,255,0.1) !important;"></div>
+    ${state.q ? `<button type="button" id="btn-clear-video-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition" style="z-index:var(--h2-z-base)" title="Xóa tìm kiếm">${ico('x', 14)}</button>` : ''}
+    <div id="video-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-[#334155] rounded-2xl shadow-2xl overflow-hidden max-h-[420px] overflow-y-auto divide-y divide-[#1e293b]/80 min-w-full"></div>
   </div>
   <button type="button" id="freset" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>
@@ -1361,7 +1361,7 @@ window.showRawSearchSuggestions = function(inputVal, _premerged) {
   let items = (Array.isArray(_premerged) ? _premerged : localItems);
   if (items.length === 0) {
     box.innerHTML = `
-      <div class="p-3 text-xs text-gray-400 flex items-center justify-between bg-ink-deep" >
+      <div class="p-3 text-xs text-gray-400 flex items-center justify-between bg-bg" >
         <span>Không tìm thấy gợi ý khớp với "<strong>${esc(q)}</strong>"</span>
         <span class="text-2xs text-gray-500 font-mono">Gõ tiếp hoặc nhấn Reset</span>
       </div>`;
@@ -1370,12 +1370,12 @@ window.showRawSearchSuggestions = function(inputVal, _premerged) {
   }
 
   box.innerHTML = `
-    <div class="px-3.5 py-2 bg-[#060910] text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
+    <div class="px-3.5 py-2 bg-surface text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
       <span class="flex items-center gap-1.5"><span class="text-brand-400">${ico('zap', 14)}</span> Gợi ý khớp kênh & video raw (${items.length})</span>
       <span class="text-gray-500 font-normal">Nhấp để chọn hoặc xem hồ sơ</span>
     </div>
     ${items.map((item, idx) => `
-      <div class="js-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-ink-deep" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-raw-id="${esc(item.rawId || '')}" data-type="${esc(item.type)}">
+      <div class="js-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-bg" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-raw-id="${esc(item.rawId || '')}" data-type="${esc(item.type)}">
         <div class="flex items-center gap-2.5 min-w-0">
           <span class="text-base shrink-0">${ico(item.icon, 16)}</span>
           <div class="min-w-0">
@@ -1493,13 +1493,13 @@ async function renderRawKenh() {
   </div>
 </div>
   </div>
-  <div class="card p-4 sm:p-5 mb-5 overflow-visible search-filter-card" style="position:relative; z-index:60; contain:none !important;">
+  <div class="card p-4 sm:p-5 mb-5 overflow-visible search-filter-card" style="position:relative; contain:none !important;">
 <div class="flex flex-col sm:flex-row gap-3 sm:items-center relative">
   <label class="sr-only" for="fq">Tìm ảnh raw</label>
   <div class="relative w-full sm:flex-1 min-w-0" id="raw-search-wrap">
     <input id="fq" value="${esc(state.rawQ)}" autocomplete="off" placeholder="Tìm theo tên kênh, handle, ngách, video bão view, tên file..." class="search-input-premium w-full min-w-0 pr-9" aria-label="Tìm ảnh raw kênh mẫu">
-    ${state.rawQ ? `<button type="button" id="btn-clear-raw-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition z-10" title="Xóa tìm kiếm">${ico('x', 14)}</button>` : ''}
-    <div id="raw-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-[#334155] rounded-2xl shadow-2xl z-50 overflow-hidden max-h-[380px] overflow-y-auto divide-y divide-[#1e293b]/80" style="background-color:#0b0f19 !important; background:rgba(11,15,25,0.98) !important; backdrop-filter:blur(28px) saturate(180%) !important; -webkit-backdrop-filter:blur(28px) saturate(180%) !important; z-index:9999 !important; box-shadow:0 25px 60px -10px rgba(0,0,0,0.98), 0 0 0 1px rgba(255,255,255,0.1) !important;"></div>
+    ${state.rawQ ? `<button type="button" id="btn-clear-raw-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition" style="z-index:var(--h2-z-base)" title="Xóa tìm kiếm">${ico('x', 14)}</button>` : ''}
+    <div id="raw-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-[#334155] rounded-2xl shadow-2xl overflow-hidden max-h-[380px] overflow-y-auto divide-y divide-[#1e293b]/80"></div>
   </div>
   <button type="button" id="freset-raw" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>

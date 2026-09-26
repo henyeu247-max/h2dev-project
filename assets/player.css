@@ -151,7 +151,7 @@
   position: fixed;
   bottom: calc(20px + env(safe-area-inset-bottom, 0px));
   left: 16px;
-  z-index: 50;
+  z-index: var(--h2-z-drawer);
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -163,8 +163,8 @@
   font-size: 12px;
   font-weight: 600;
   box-shadow: 3px 3px 0 rgba(226,2,58,0.3);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   cursor: pointer;
   opacity: 0;
   transform: translateY(16px) scale(0.92);
@@ -184,6 +184,12 @@
 .floating-back-btn:active {
   transform: scale(0.95);
 }
+/* P1 (2026-09-26): `.min-h-[44px]` duoc dung 3 lan tren tab bar player.html (touch target)
+   nhung KHONG ton tai trong tailwind.css — build that chi sinh .z-10/.z-50,
+   KHONG sinh arbitrary value dang `.min-h-[...]`.
+   => 3 nut tab bi mat chieu cao toi thieu 44px (vi pham a11y touch target).
+   Bo sung tai day (player.css duoc player.html nap). */
+.min-h-\[44px\] { min-height: 44px; }
 #playerTabSelector { display: none !important; }
 @media (max-width: 1023px) {
   #playerTabSelector { display: flex !important; }

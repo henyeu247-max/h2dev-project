@@ -54,7 +54,7 @@
 .row-watchbar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,.15); }
 .row-watchbar i { display: block; height: 100%; background: var(--war); }
 /* Watched indicator — badge bottom-left, avoids row-seq (top-right) & row-fav (top-left) */
-.watched-badge { position: absolute; bottom: 4px; left: 4px; display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: var(--success, #00ff88); color: #000; border-radius: 50%; z-index: 10; font-size: 11px; box-shadow: 0 2px 6px rgba(0,0,0,.4); animation: fadeIn .3s ease; }
+.watched-badge { position: absolute; bottom: 4px; left: 4px; display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: var(--success, #00ff88); color: #000; border-radius: 50%; z-index: var(--h2-z-base); font-size: 11px; box-shadow: 0 2px 6px rgba(0,0,0,.4); animation: fadeIn .3s ease; }
 /* PHASE 3 (2026-09-23): bo emoji "✓" (content:) -> icon mask cho nhat quan voi he .h2-icon.
    Div rong nen phai dung ::before voi mask; mau lay tu color (var(--success) da dat o .watched-badge). */
 .watched-badge::before {

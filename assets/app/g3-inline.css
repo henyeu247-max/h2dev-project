@@ -12,7 +12,13 @@
 .c-green { color: #10b981; }
 .c-violet { color: #c084fc; }
 .c-purple { color: #a855f7; }
-.bg-ink-deep { background-color: #0b0f19 !important; }
+/* P1 (2026-09-26) SCAR-022: `bg-ink-deep` cu = `--surface-2 !important` va bi dung lam nen
+   dropdown goi y (header + row). Vi --surface-2 (#1a1a1a) chi chenh 4% so voi the card (#0f0f0f)
+   -> dropdown "lo" mau the card phia sau. Da thay bang 2 utility token dung ngu nghia:
+   .bg-bg = nen dam nhat (lop noi / dropdown), .bg-surface = 1 bac sang hon (header trong dropdown).
+   KHONG dung !important de lop CSS sau con ghi de duoc. */
+.bg-bg { background-color: var(--bg); }
+.bg-surface { background-color: var(--surface); }
 .scroll-none { scrollbar-width: none; }
 .scroll-none::-webkit-scrollbar { display: none; }
 .glyph-inline { display: inline-block; vertical-align: baseline; margin-right: 2px; }

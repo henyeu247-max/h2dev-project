@@ -83,6 +83,11 @@
   --h2-backdrop-blur: 10px;
   --h2-overlay-alpha: 0.92;
   --h2-overlay-bg: rgba(0, 0, 0, 0.92);
+  /* P1-F (2026-09-26): blur cho BADGE NHO nam TREN ANH (thumb overlay, cao ~20px).
+     KHONG dung --h2-backdrop-blur (10px) o day: 10px tren badge 20px la qua nang, lam
+     mo ca vung anh rong hon nhieu so voi badge. SCAR-021: token chuan phai ap dung
+     DUNG NGU CANH. Chot rieng 1 muc 4px cho badge, cam cac gia tri le khac. */
+  --h2-badge-blur: 4px;
   --h2-panel-bg: var(--surface);
   --h2-panel-border: var(--border);
   --h2-panel-radius: var(--r-lg);

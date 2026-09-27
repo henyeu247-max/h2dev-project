@@ -119,10 +119,12 @@ head('[4] Emoji trang tri trong cac file DA XONG Phase 3 (bo comment, bo quoc ky
 
 /* NGOAI LE DUOC PHEP (Quy tac 10): emoji nam trong data-badge = KEY du lieu,
  * giu nguyen trong data-*, chi stripDecorEmoji() khi in ra chu.
- * Moi ngoai le phai co ly do + noi strip ro rang. */
+ * Moi ngoai le phai co ly do + noi strip ro rang.
+ * SCAR-012/SCAR-027: khop theo NOI DUNG (data-badge="..."), KHONG khop theo so dong
+ * (so dong troi khi file thay doi phia tren -> gate do gia). */
 const ALLOWED = [
-  { file: 'assets/app/main.js', line: 2160, emoji: '🔥', reason: 'data-badge="🔥 Đang xem Transcript" — KEY, strip tai openQuickVideoModal()' },
-  { file: 'assets/app/tabs/content.js', line: 1644, emoji: '🎬', reason: 'data-badge="🎬 Demo Tuyến Nội Dung" — KEY, strip tai openQuickVideoModal()' }
+  { file: 'assets/app/main.js', emoji: '🔥', marker: 'data-badge="🔥 Đang xem Transcript"', reason: 'data-badge="🔥 Đang xem Transcript" — KEY, strip tai openQuickVideoModal()' },
+  { file: 'assets/app/tabs/content.js', emoji: '🎬', marker: 'data-badge="🎬 Demo Tuyến Nội Dung"', reason: 'data-badge="🎬 Demo Tuyến Nội Dung" — KEY, strip tai openQuickVideoModal()' }
 ];
 
 let emojiHits = 0;
@@ -132,9 +134,9 @@ for (const rel of EMOJI_CLEAN) {
     const m = ln.match(DECOR_EMOJI);
     if (!m) return;
     const lineNo = i + 1;
-    const allowed = ALLOWED.some(a => a.file === rel && a.line === lineNo && m.includes(a.emoji));
-    if (allowed) {
-      console.log('  KEEP | ' + rel + ':' + lineNo + ' [' + [...new Set(m)].join('') + '] — ' + ALLOWED.find(a => a.file === rel && a.line === lineNo).reason);
+    const matched = ALLOWED.find(a => a.file === rel && ln.includes(a.marker));
+    if (matched) {
+      console.log('  KEEP | ' + rel + ':' + lineNo + ' [' + [...new Set(m)].join('') + '] — ' + matched.reason);
       return;
     }
     emojiHits++;

@@ -109,12 +109,12 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | Filter | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ | ✓ | 2 tab thiếu filter | **8/8 tab có filter** | P0 |
 | Empty state | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ (mất khung `.card`) | ✗ | ✗ | ✓ | 3 tab thiếu; Kênh mẫu mất khung | **8/8 tab có empty state bọc `.card`** | P0 |
 | Stat card (số lượng) | 4 | 4 | 4 | 4 | 4 | **5** | **7** (bị `pageBanner` cắt còn 4 trên mobile → **mất 3 chỉ số**) | 4 | 4 | 3 giá trị: 4/5/7 | **4** cho mọi tab; cấm `pageBanner` cắt chỉ số | P0 |
-| Margin-bottom khối đầu | `mb-6` | `mb-4` (filter) | `mb-6` | `mb-5` | `mb-5` | `mb-5` | `mb-5` | `mb-4` | `mb-5` | 3 giá trị lẫn lộn | Chốt **`mb-6` (24px)** | P1 |
-| Padding card desktop | `p-3.5`/`p-4`/`p-4 sm:p-5`/`p-5`/`p-5 sm:p-6` | ← | ← | ← | ← | ← | ← | ← | ← | **5 hệ** | Chốt **`p-4 sm:p-5`** | P1 |
+| Margin-bottom khối đầu | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | **1 giá trị `24px`/36 khối `.card`** = 100% (đo runtime) | Chốt **`mb-6` (24px)** | ✅ **XONG** |
+| Padding card desktop | `p-4 sm:p-5` | ← | ← | ← | ← | ← | ← | ← | ← | **1 hệ `p-4 sm:p-5`** (đã chuyển 15 chỗ: `p-5`×11, `p-6`, `p-3.5`, `p-3 sm:p-4`×2) | Chốt **`p-4 sm:p-5`** | ✅ **XONG** |
 | Grid gap | — | — | — | `gap-4` | `gap-4` | **`gap-3`** | — | 6 lưới khác nhau trong 1 tab | — | Kênh mẫu lệch; Chiến lược 6 lưới | Chốt **`gap-4`** mọi lưới | P1 |
 | Pagination | ✗ | ✗ (140 bài render 100%) | ✗ | ✗ | ✗ | ✗ (render 100%) | ✓ (`PAGE_SIZE=24`) | ✗ | ✗ | **CHỈ Raw kênh có** | **PAGE_SIZE=24** cho mọi danh sách dài | P0 |
 | Cấu trúc mở đầu tự chế | `.tq-head` tự viết | — | — | — | — | — | — | 6 lưới riêng | reset padding về 0 | Tổng quan + Chiến lược + Lộ trình lệch | 8 khối cấu trúc chuẩn | P0 |
-| Nút CTA | — | — | — | **2 nút tím `bg-purple-600` trùng chức năng** | — | — | **4 màu nút trong 1 card** | — | — | **5 tổ hợp class** cho cùng hành động | Bộ class `.btn-*` chuẩn; cấm trùng CTA | P1 |
+| Nút CTA | `h2-btn--brand` | — | — | **2 nút tím trùng chức năng đã GỠ** → `.h2-btn--brand`/`.h2-btn--ghost .h2-btn--sm` | — | — | **4 màu nút đã GỠ** → `.h2-btn--ghost .h2-btn--sm` | — | — | **1 hệ nút** `.h2-btn` (+`--brand`/`--ghost`/`--subtle`/`--icon`/`--sm`). Runtime: 144 × mỗi biến thể, `purple` = 0 | Bộ class `.h2-btn*` chuẩn; cấm trùng CTA, cấm màu raw | ✅ **XONG** |
 | Container ngoài | `#content{max-width:min(1120px,100%);padding:28px}` | ← | ← | ← | ← | ← | ← | ← | **reset về 0** | 3 hệ: index / Lộ trình reset 0 / player `max-w-5xl px-4` | Chốt `min(1120px,100%)` + `28px`/`16px` | P1 |
 
 ## F. Surface, Modal, z-index

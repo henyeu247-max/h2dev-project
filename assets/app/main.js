@@ -2380,8 +2380,10 @@
                 <p style="font-size: 12px; color:#94a3b8; margin:0.2rem 0 0 0;" class="truncate" title="${esc(videoTitle)}">${esc(videoTitle)}</p>
               </div>
               <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
-                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">${ico('arrow-up-right', 14)} Mở YouTube</a>
-                <button type="button" id="close-quick-video" style="padding:0.35rem 0.75rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
+                <!-- P1-P2 TOUCH (2026-09-27): min-height/min-width 44px (WCAG 2.5.5).
+                     Do truoc: a 115x29, button 76x31 -> deu < 44px chieu cao. -->
+                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" style="min-height:44px; min-width:44px; box-sizing:border-box; font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('arrow-up-right', 14)} Mở YouTube</a>
+                <button type="button" id="close-quick-video" style="min-height:44px; min-width:44px; box-sizing:border-box; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
               </div>
             </div>
             <div style="width:100%; aspect-ratio:16/9; background:#000;">

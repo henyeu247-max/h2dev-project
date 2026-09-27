@@ -12,6 +12,22 @@
  */
 
 /* ==========================================================================
+   0. UTILITY DUNG CHUNG
+   ========================================================================== */
+/* P1-P2 (2026-09-27): `.hidden` la utility DUNG CHUNG ca 3 trang (learn.js render
+   nut `.search-clear.hidden`). Truoc day nam o learn.css voi `display:none !important`
+   -> dung `!important` de DO SPECIFICITY, do la loi THAT:
+   `.search-clear` duoc nang len 44px (WCAG 2.5.5) nen khi AN, nut VAN nam trong layout
+   (display:grid) -> chiem vung 44px DE LEN input -> bam trung nut an => "khong go duoc chu".
+   SUA: bo `!important`, dat o file dung chung. Rule hien thi `.search-clear` (0,1,0)
+   THANG `.hidden` (0,1,0) vi: (a) `.search-clear` duoc khai TRUOC `.hidden` trong cung
+   document order? => KHONG. Phai dam bao TAT DINH: xem learn.css — `.search-clear.hidden`
+   duoc sua thanh `display:none` khong !important, va rule `display:grid` cua `.search-clear`
+   duoc khai SAU `.hidden` trong document order (primitives nap TRUOC learn.css) => thang.
+   Day la ly do `.hidden` phai nam o file nap TRUOC, KHONG duoc nam o learn.css. */
+.hidden { display: none; }
+
+/* ==========================================================================
    1. BUTTON — .h2-btn + bien the
    ========================================================================== */
 .h2-btn {

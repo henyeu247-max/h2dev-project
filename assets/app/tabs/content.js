@@ -1604,7 +1604,7 @@ async function renderRawKenh() {
         ${tv ? `<span style="z-index:var(--h2-z-base)" class="absolute bottom-2 left-2 ${tv.isFaceless ? 'bg-emerald-950/90 text-emerald-300 border-emerald-500/50' : 'bg-red-950/90 text-red-300 border-red-500/50'} text-2xs font-bold px-2 py-0.5 rounded-lg border backdrop-blur-sm" title="Vision AI (9Router local) phân loại cấp kênh · ${esc(tv.agreement || '')}">${tv.isFaceless ? ico('drama', 14) + ' Faceless' : ico('user', 14) + ' Có mặt người thật'}</span>` : ''}
         <span class="absolute bottom-2 right-2 bg-black/70 hover:bg-black/90 text-white text-2xs px-2 py-0.5 rounded-lg border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity inline-flex items-center gap-1">${ico('search', 14)} Xem ảnh</span>
       </div>
-      <div class="p-3.5 flex-1 flex flex-col gap-2 min-w-0">
+      <div class="p-4 sm:p-5 flex-1 flex flex-col gap-2 min-w-0">
         <div class="flex items-start justify-between gap-2 min-w-0">
           <h3 class="text-sm font-bold text-white group-hover:text-brand-300 transition line-clamp-1 min-w-0">${esc((ch.title || '').trim() || 'Chưa rõ tên')}</h3>
           <div class="flex items-center gap-1 shrink-0 flex-wrap justify-end">

@@ -78,6 +78,17 @@
   padding: 0;
 }
 
+/* P1-E (2026-09-26): size variants — thay 5 to hop padding tuy tien (px-3 py-1.5 /
+   px-2.5 py-1.5 / px-4 py-2.5 / px-2 py-2 ...) bang 3 bac co dinh.
+   sm = nut phu trong card (van giu touch target >= 32px, khong dung cho hanh dong chinh).
+   Nut mac dinh (.h2-btn) da la size vua (min-height 44px, padding 10px 16px). */
+.h2-btn--sm {
+  min-height: 32px;
+  padding: var(--h2-space-1) var(--h2-space-3);
+  font-size: var(--h2-font-2xs);
+  gap: var(--h2-space-1);
+}
+
 /* The icon trong nut: chi nhan 4 muc size chuan */
 .h2-btn .h2-icon { display: inline-flex; flex: 0 0 auto; }
 .h2-btn .h2-icon--14 { width: var(--h2-icon-14); height: var(--h2-icon-14); }

@@ -184,3 +184,22 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   6. **`z-index` chuẩn dùng `.z-[N]` là HỢP LỆ nếu Tailwind build thật có sinh class** — SCAR-023 cấm `z-[1]` vì **build không sinh**; nhưng `.z-10` **có** trong `tailwind.css` (`{.z-10{z-index:10}}`) nên **vẫn chạy**. Tuy vậy vì **ngoài thang 8 bậc** nên đã chuyển 2 chỗ sang `var(--h2-z-base)`. **Bài học: đừng suy diễn class Tailwind nào "không có" — phải grep `tailwind.css` để chứng minh.**
   7. **`font-size: 13.3333px` (10pt) là UA default** của `<input>/<select>` — **đã chứng minh** bằng cách quét **toàn bộ `document.styleSheets`**: **không rule nào** set giá trị này. Cấm báo đây là lỗi dự án.
 
+### [SCAR-029] Bẫy "Đo Padding Mobile Ra 14px ≠ 16px" — Rule Mobile Cố Ý Của Dự Án (Tái Phạm SCAR-020/021)
+- **Hiện tượng:** Sau khi chuẩn hoá card padding về `p-4 sm:p-5` (P1-E), đo runtime thấy **mobile 390px = `14px`** trong khi `p-4` phải là `16px` → suýt kết luận "class mới không áp dụng / bị ghi đè sai".
+- **Nguyên nhân THẬT (đã truy ra bằng `getComputedStyle` + đọc CSS tận gốc):** `assets/viddar.css` **dòng 1008**, nằm trong `@media (max-width: ...)`:
+  ```css
+  .card.p-5, .card.p-4 { padding: 14px !important; }
+  ```
+  Đây là **rule CỐ Ý của dự án**: trên mobile, **MỌI** `.card.p-4`/`.card.p-5` toàn site đều về **14px** để đồng nhất mật độ. Class mới `p-4 sm:p-5` **vẫn chứa `p-4`** nên khớp rule này ⇒ 14px là **ĐÚNG THIẾT KẾ**, không phải lỗi. Desktop (≥640px) mới lên `20px` do `sm:p-5`.
+- **Vì sao phép đo ĐẦU bị sai (2 lỗi phương pháp, không phải lỗi UI):**
+  1. **Bắt nhầm phần tử:** dùng `card.querySelector(':scope > div')` lấy con **đầu tiên** → trúng `<div>` avatar `hidden` (padding 0px), không phải div nội dung. Phải lọc theo **class đặc trưng** (`p-4` + `sm:p-5`) và kiểm `c.querySelector('img')`.
+  2. **Trang/tab sai:** `p-4 sm:p-5` (dòng 1607) nằm trong **`renderRawKenh()`** — tab **`rawkenh`**, KHÔNG phải tab `kenh`. Phải navigate **`?tab=rawkenh`**; và player.html dùng param **`?sku=`** (không phải `?v=` — sai param thì báo "Thiếu mã video trong URL", `#pdocs` bị `hidden`).
+  3. **Vòng quét `styleSheets` tự viết bị lỗi:** vòng `walk()` dùng `if (rule.cssRules) { walk(...); continue; }` — nhưng khi rule là `CSSStyleRule` bình thường **không có** `cssRules`, còn `CSSMediaRule` **có**; logic viết sai thứ tự khiến `@media` bị bỏ qua ⇒ `candidates: []` **dù rule tồn tại thật**. **Kết luận "không rule nào set" là SAI cho tới khi đọc trực tiếp file CSS bằng grep.**
+- **Bài học cốt lõi:** (a) Khi đo padding/size **phải lọc ĐÚNG phần tử theo class đặc trưng**, không lấy "con đầu tiên". (b) Phải xác định **đúng trang + đúng tab + đúng param URL** trước khi đo. (c) Khi script tự viết báo "không tìm thấy rule" → **BẮT BUỘC grep file CSS trực tiếp** để đối chứng; đừng tin script tự viết (kế thừa SCAR-019).
+- **Guardrail:**
+  1. Đo padding/card **BẮT BUỘC** lọc theo **class đặc trưng** của phần tử đích; in ra `cls` + `padding` để mắt người kiểm.
+  2. Trước khi đo, **xác định đúng route/param**: index dùng `?tab=<id>` (id thật: `rawkenh`, `kenh-mau`, `ngachxanh`...), player dùng `?sku=<sku>`. Sai param → trang render rỗng và mọi số đo vô nghĩa.
+  3. Khi phép đo cho số **lệch chuẩn suy luận** (16px → 14px), **BẮT BUỘC** truy `document.styleSheets` **HOẶC grep file CSS gốc** để tìm rule thắng; cấm kết luận "bị ghi đè sai" khi chưa chỉ ra được **dòng CSS cụ thể**.
+  4. **Rule responsive mobile cố ý của dự án phải được tôn trọng**, không "sửa cho khớp lý thuyết": `.card.p-4/.card.p-5 { padding:14px !important }` (viddar.css dòng 1008) là **chuẩn mobile của site**.
+  5. Mọi script chẩn đoán tự viết **phải được kiểm chứng ngược** (nếu nó báo "không có gì" → phải grep đối chứng), vì script sai sẽ **bịa ra kết luận sai**.
+

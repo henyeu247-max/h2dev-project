@@ -123,7 +123,7 @@
       modal.tabIndex = -1;
       // P1 (2026-09-26): z-index 100005 la SO CAM (ngoai thang 8 bac) -> dung token.
       // blur 12px -> 10px theo --h2-backdrop-blur.
-      modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal-top); background:var(--h2-overlay-bg); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
+      modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal-top); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
       document.body.appendChild(modal);
 
       modal.onclick = (e) => {

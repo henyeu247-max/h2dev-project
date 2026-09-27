@@ -19,6 +19,15 @@
    KHONG dung !important de lop CSS sau con ghi de duoc. */
 .bg-bg { background-color: var(--bg); }
 .bg-surface { background-color: var(--surface); }
+/* P1-D (2026-09-26): `leading-relaxed` cua Tailwind = line-height 1.625 — NGOAI thang chuan
+   (thang: 1 / 1.2 / 1.35 / 1.5 / 1.6). Dung cho 17 cho van ban prose.
+   Do runtime: fs12 x 1.625 = 17.4px / fs14 x 1.625 = 22.75px — lech xa.
+   Ghi de ve bac prose --h2-lh-prose (1.6). KHONG sua tailwind.css (file build - SCAR-018). */
+.leading-relaxed { line-height: var(--h2-lh-prose, 1.6); }
+/* P1-D (2026-09-26): `leading-snug` cua Tailwind = line-height 1.375 — NGOAI thang chuan.
+   Do runtime: fs14 x 1.375 = 19.25px tren 194 phan tu (140 <A> + 54 <H3> o tab tatca/ngachxanh).
+   Ghi de ve bac heading --h2-lh-heading (1.35). KHONG sua tailwind.css (file build - SCAR-018). */
+.leading-snug { line-height: var(--h2-lh-heading, 1.35); }
 .scroll-none { scrollbar-width: none; }
 .scroll-none::-webkit-scrollbar { display: none; }
 .glyph-inline { display: inline-block; vertical-align: baseline; margin-right: 2px; }

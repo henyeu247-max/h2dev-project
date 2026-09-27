@@ -59,6 +59,26 @@ const BANNED_PANEL_HEX = [
 // --- [2] z-index dang so trong CSS: cam tru (tru --h2-z-base: 1 trong token file) ---
 // Chi kiem file nguon, KHONG kiem h2dev-tokens.css (no dinh nghia token).
 
+// --- [7] line-height / letter-spacing phai thuoc thang token ---
+// EXEMPT co chu dich (nguoi dung chot 2026-09-26: "chi sua gia tri lech XA"):
+//   Ti le 1.3 / 1.4 tren CHU NHO (11-14px) duoc GIU NGUYEN vi la ti le hop ly cho
+//   label/badge/mono metadata, khong phai sai so. Chi sua cac ti le lech xa
+//   (1.1 / 1.15 / 1.25 / 1.28 / 1.45 / 1.55 / 1.625 / 1.75 / 2).
+const LH_OK = new Set(['1', '1.2', '1.35', '1.5', '1.6']);
+const LH_EXEMPT_SMALL = new Set(['1.3', '1.4']);   // chi cho phep tren chu nho
+// class duoc phep dung 1.3/1.4 (da do runtime + xac nhan la chu nho)
+const LH_SMALL_ALLOW = /\.(channel-chip|nx-card-channel-label|resume-label|sec-stats|row-updated|ltag|stat-sub|niche-name|badge|market-label|nc-name|shortcut-key|studio-input|filter-select|search-input-premium|input-dark)\b/;
+
+const LS_OK = new Set(['0', 'normal', '-0.02em', '0.02em', '0.04em']);
+// Chuan hoa truoc khi so: bo so 0 dung truoc dau cham (".04em" == "0.04em" - SCAR-025:
+// neu khong chuan hoa se bao GIA 13 vi pham trong khi thuc te da dung chuan).
+function normLs(t) {
+  let s = String(t).trim().replace(/\s*!important\s*/, '');
+  if (/^var\(--h2-ls-/.test(s)) return 'OK';            // da dung token
+  s = s.replace(/^([-+]?)\./, '$10.');                   // ".04em" -> "0.04em"
+  return s;
+}
+
 function stripComments(src) {
   // block comment
   let s = src.replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '));
@@ -78,7 +98,7 @@ function readLive() {
 }
 
 function findViolations(files) {
-  const v = { panelHex: [], zIndexNum: [], blur: [], arbitrary: [], inlineImp: [] };
+  const v = { panelHex: [], zIndexNum: [], blur: [], arbitrary: [], inlineImp: [], lineHeight: [], letterSpacing: [] };
 
   for (const f of files) {
     if (f.missing) continue;
@@ -119,6 +139,34 @@ function findViolations(files) {
       if (im && /(background|z-index)\s*:[^;"]*!\s*important/i.test(im[0])) {
         v.inlineImp.push({ file: f.rel, line: L, txt: ln.trim().slice(0, 140) });
       }
+
+      // [7] line-height phai thuoc thang (ca `line-height:` lan shorthand `font: .../X`)
+      if (/\.css$/.test(f.rel)) {
+        let mm;
+        const reLh = /line-height\s*:\s*([0-9.]+)(?:px)?/g;
+        while ((mm = reLh.exec(ln)) !== null) {
+          const val = mm[1];
+          if (LH_OK.has(val)) continue;
+          if (val === '20' && /line-height\s*:\s*20px/.test(ln)) continue;   // --h2-lh-body-px
+          if (LH_EXEMPT_SMALL.has(val) && LH_SMALL_ALLOW.test(ln)) continue;  // chu nho, co chu dich
+          v.lineHeight.push({ file: f.rel, line: L, val, txt: ln.trim().slice(0, 120) });
+        }
+        const reFont = /font\s*:[^;{}]*?\/([0-9.]+)\s/g;
+        while ((mm = reFont.exec(ln)) !== null) {
+          const val = mm[1];
+          if (LH_OK.has(val)) continue;
+          if (LH_EXEMPT_SMALL.has(val) && LH_SMALL_ALLOW.test(ln)) continue;
+          v.lineHeight.push({ file: f.rel, line: L, val: '/' + val, txt: ln.trim().slice(0, 120) });
+        }
+        // letter-spacing
+        const reLs = /letter-spacing\s*:\s*([^;}"']+)/g;
+        while ((mm = reLs.exec(ln)) !== null) {
+          const raw = mm[1].trim().replace(/\s*!important\s*/, '');
+          const val = normLs(raw);
+          if (val === 'OK' || LS_OK.has(val)) continue;
+          v.letterSpacing.push({ file: f.rel, line: L, val: raw, txt: ln.trim().slice(0, 120) });
+        }
+      }
     });
   }
   return v;
@@ -130,7 +178,9 @@ function report(v) {
     ['[2] z-index dang SO trong CSS (dung token --h2-z-*)', v.zIndexNum],
     ['[3] backdrop blur khac 10px (dung --h2-backdrop-blur)', v.blur],
     ['[5] Class Tailwind arbitrary value (Tailwind khong sinh tu dong)', v.arbitrary],
-    ['[6] Inline style co !important (2 nguon su that - SCAR-022)', v.inlineImp]
+    ['[6] Inline style co !important tren background/z-index (2 nguon su that - SCAR-022)', v.inlineImp],
+    ['[7a] line-height ngoai thang 1 / 1.2 / 1.35 / 1.5 / 1.6 (1.3-1.4 tren chu nho duoc mien)', v.lineHeight],
+    ['[7b] letter-spacing ngoai thang 0 / -0.02em / 0.02em / 0.04em', v.letterSpacing]
   ];
   let total = 0;
   console.log('[gate-p1] Kiem chuan P1 tren ' + LIVE_FILES.length + ' file song');
@@ -158,16 +208,21 @@ function probe() {
   const orig = fs.readFileSync(target, 'utf8');
   const injections = [
     { name: 'hex nen panel (#0f172a)', content: orig + '\n.probe-x { background: #0f172a; }\n' },
-    { name: 'blur 28px', content: orig + '\n.probe-y { backdrop-filter: blur(28px); }\n' }
+    { name: 'blur 28px', content: orig + '\n.probe-y { backdrop-filter: blur(28px); }\n' },
+    { name: 'line-height 1.75 (lech xa)', content: orig + '\n.probe-z { line-height: 1.75; }\n' },
+    { name: 'letter-spacing 0.08em', content: orig + '\n.probe-w { letter-spacing: 0.08em; }\n' },
+    { name: 'z-index so', content: orig + '\n.probe-v { z-index: 9999; }\n' }
   ];
   let caught = 0;
   console.log('\n--- PROBE gate-p1: tiem loi gia, xac nhan gate BAT DUOC ---');
   for (const inj of injections) {
     fs.writeFileSync(target, inj.content);
     const v = findViolations(readLive());
-    const ok = v.panelHex.length > 0 || v.blur.length > 0;
+    const ok = v.panelHex.length > 0 || v.blur.length > 0 || v.lineHeight.length > 0 ||
+               v.letterSpacing.length > 0 || v.zIndexNum.length > 0;
     console.log('  ' + (ok ? 'BAT DUOC' : 'BO LOT!') + '  -> ' + inj.name +
-      '  (panelHex=' + v.panelHex.length + ', blur=' + v.blur.length + ')');
+      '  (hex=' + v.panelHex.length + ', blur=' + v.blur.length + ', lh=' + v.lineHeight.length +
+      ', ls=' + v.letterSpacing.length + ', z=' + v.zIndexNum.length + ')');
     if (ok) caught++;
   }
   fs.writeFileSync(target, orig);

@@ -1,4 +1,4 @@
-﻿/* H2Main - G6 extract main app script from index.html */
+/* H2Main - G6 extract main app script from index.html */
 
     const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
     // G3: taxonomy tach ra assets/app/taxonomy.js (window.H2Taxonomy)
@@ -2223,13 +2223,13 @@
             `;
           } else if (tab === 'vietnamese') {
             contentEl.innerHTML = `
-              <div style="background:var(--surface); border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.75; color:#fef3c7;">
+              <div style="background:var(--surface); border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:#fef3c7;">
                 ${esc(fullVi || segments.map(s => s.viText).join('\n'))}
               </div>
             `;
           } else if (tab === 'original') {
             contentEl.innerHTML = `
-              <div style="background:var(--surface); border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.75; color:#e2e8f0; font-family:monospace;">
+              <div style="background:var(--surface); border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:#e2e8f0; font-family:monospace;">
                 ${esc(fullEn || segments.map(s => s.text).join('\n'))}
               </div>
             `;

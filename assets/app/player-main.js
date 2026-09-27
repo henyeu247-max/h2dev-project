@@ -428,7 +428,7 @@ window.addEventListener('keydown', (e)=>{
         const isReadable = d.file && /\.(md|txt)$/i.test(d.file);
         const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(d.file)}" data-doc-name="${esc(name)}">${ico('eye', 14)}<span>Đọc trực tiếp</span></button>` : '';
         const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1">${ico('file-text', 14)}<span>Mở file local</span></a>`:'';
-        return `<article class="card p-3.5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-2xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
+        return `<article class="card p-4 sm:p-5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-2xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
       }).join('');
     }
 

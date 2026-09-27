@@ -88,9 +88,11 @@
      mo ca vung anh rong hon nhieu so voi badge. SCAR-021: token chuan phai ap dung
      DUNG NGU CANH. Chot rieng 1 muc 4px cho badge, cam cac gia tri le khac. */
   --h2-badge-blur: 4px;
-  --h2-panel-bg: var(--surface);
-  --h2-panel-border: var(--border);
-  --h2-panel-radius: var(--r-lg);
+  /* P2-I4 (2026-09-27): DA XOA 3 token CHET --h2-panel-bg/--h2-panel-border/--h2-panel-radius.
+     Chung la alias 1-1 vo nghia (tro --surface/--border/--r-lg) va 0 noi dung:
+     quet 198 file -> 0 luot. Da chung minh bang do runtime: xoa di KHONG doi bat ky
+     thuoc tinh computed nao (0/6.400 element). Dung truc tiep token goc thay the.
+     Chong tai phat: gate-p2.js luat [7] (token CHET) + gate-p1.js luat [3b] (cam blur tho). */
 
   /* --- Z-index ladder (proposed) — chot 8 bac, cam 9999/99999/100000/100001/100005 --- */
   --h2-z-base: 1;

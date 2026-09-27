@@ -1,4 +1,4 @@
-﻿/* G6 extract from player.html */
+/* G6 extract from player.html */
 
 /**
  * PHASE 3 (2026-09-23): helper sinh the icon chuan thay cho emoji.
@@ -320,6 +320,11 @@ window.addEventListener('keydown', (e)=>{
   let scrollTimeout = null;
   try{
     if(!sku){ throw new Error('Thiếu mã video trong URL'); }
+    /* P2-H1 (2026-09-27): aria-busy quanh tien trinh tai + render trang player.
+       Truoc day player KHONG he bat aria-busy (matrix ghi sai la "index co, player khong"
+       — thuc te CA 3 trang deu thieu thuoc tinh tinh trong HTML; index chi co logic dong).
+       Nay: bat true ngay khi bat dau fetch, tat o ca nhanh thanh cong lan that bai. */
+    document.getElementById('playerMain')?.setAttribute('aria-busy', 'true');
     const [catalogResponse, modulesResponse]=await Promise.all([fetch(CAT), fetch('data/modules.json', {cache:'no-store'})]);
     if(!catalogResponse.ok) throw new Error(`Không tải được catalog (${catalogResponse.status})`);
     if(!modulesResponse.ok) throw new Error(`Không tải được lộ trình (${modulesResponse.status})`);
@@ -757,7 +762,9 @@ window.addEventListener('keydown', (e)=>{
     if (window.innerWidth < 1024) {
       setPlayerTab('overview', document.querySelector('#playerTabSelector button'));
     }
+    document.getElementById('playerMain')?.setAttribute('aria-busy', 'false');
   }catch(error){
+    document.getElementById('playerMain')?.setAttribute('aria-busy', 'false');
     document.getElementById('ptitle').textContent='Không thể tải video';
     document.getElementById('pmeta').innerHTML=`<span class="badge badge-red">${esc(error.message)}</span>`;
   }

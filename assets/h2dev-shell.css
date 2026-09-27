@@ -26,8 +26,8 @@
   padding: var(--h2-header-pad);
   background: var(--topbar-bg);
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--h2-backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--h2-backdrop-blur));
   z-index: var(--h2-z-sticky);
 }
 @media (max-width: 639px) {
@@ -271,8 +271,8 @@ a.h2-shell-brand .vd-wordmark {
     padding-bottom: env(safe-area-inset-bottom, 0);
     background: var(--bottom-nav-bg);
     border-top: 1px solid var(--border);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(var(--h2-backdrop-blur));
+    -webkit-backdrop-filter: blur(var(--h2-backdrop-blur));
   }
 }
 .h2-shell-bottomnav__item {

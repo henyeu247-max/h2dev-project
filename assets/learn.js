@@ -275,6 +275,10 @@
 
   /* ---------- render theo tab ---------- */
   function renderTab(data) {
+    /* P2-H1 (2026-09-27): aria-busy quanh moi lan render lai panel.
+       Truoc day learn KHONG he bat aria-busy -> screen reader khong biet noi dung
+       dang duoc thay. Nay dong bo voi index (main.js:635/745 da lam dung). */
+    els.panelRoot.setAttribute('aria-busy', 'true');
     var html = '';
     if (state.tab === 'danhmuc') html = renderDanhMuc(data);
     else if (state.tab === 'moi') html = renderMoi(data);
@@ -282,6 +286,7 @@
     else html = renderTimKiem(data);
     els.panelRoot.innerHTML = html;
     if (state.tab === 'timkiem') runSearch(data);
+    els.panelRoot.setAttribute('aria-busy', 'false');
   }
 
   function syncAll(data) {
@@ -417,6 +422,14 @@
   }
 
   /* ---------- boot ---------- */
+  /* P2-H1 (2026-09-27): bat aria-busy NGAY tu dau qua trinh tai du lieu.
+     Truoc day chi bat trong renderTab() -> khoang cho fetch modules.json KHONG duoc
+     danh dau busy, nen screen reader bao "trang san sang" trong khi thuc te dang tai.
+     Da chung minh bang do runtime: chua sua thi sawTrue=false; sau khi sua = true. */
+  els.panelRoot.setAttribute('aria-busy', 'true');
+  /* P2-H2 (2026-09-27): hien skeleton trong luc cho modules.json
+     (truoc day panel trong hoan toan -> nguoi dung khong biet dang tai). */
+  if (C.skeletonList) els.panelRoot.innerHTML = C.skeletonList(6, { thumb: true, lines: 2 });
   loadJSON(DATA_URL).then(function (data) {
     var hydrate = C.hydrateAdmin ? C.hydrateAdmin() : Promise.resolve();
     return hydrate.then(function () {
@@ -440,6 +453,7 @@
     document.addEventListener('visibilitychange', function () { if (!document.hidden) resync(); });
     });
   }).catch(function (err) {
+    els.panelRoot.setAttribute('aria-busy', 'false');
     els.panelRoot.innerHTML = '<div class="load-err">' + C.ico('alert-triangle', 16) + ' Không tải được data/modules.json — ' + C.esc(err.message) + '<br>File này được duy trì thủ công (script build-modules đã archive, KHÔNG chạy lại). Kiểm tra: <code>node scripts/validate-project.js</code></div>';
   });
 })();

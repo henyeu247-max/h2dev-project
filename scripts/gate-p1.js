@@ -98,7 +98,7 @@ function readLive() {
 }
 
 function findViolations(files) {
-  const v = { panelHex: [], zIndexNum: [], blur: [], arbitrary: [], inlineImp: [], lineHeight: [], letterSpacing: [], purpleCta: [], adHocBtn: [] };
+  const v = { panelHex: [], zIndexNum: [], blur: [], rawBlur: [], arbitrary: [], inlineImp: [], lineHeight: [], letterSpacing: [], purpleCta: [], adHocBtn: [] };
 
   for (const f of files) {
     if (f.missing) continue;
@@ -127,6 +127,20 @@ function findViolations(files) {
       // nen `backdrop-filter:blur(4px)` (inline, khong space) LOT LUOI.
       const bm = ln.match(/backdrop-filter\s*:\s*blur\(\s*(\d+(?:\.\d+)?)px\s*\)/);
       if (bm && bm[1] !== '10' && bm[1] !== '4') v.blur.push({ file: f.rel, line: L, txt: ln.trim().slice(0, 120), val: bm[1] });
+
+      // [3b] CAM blur VIET THO khi da co TOKEN tuong ung (SCAR-022: 2 nguon su that).
+      // PHAT HIEN THAT (Vong 1 check-pass P2): luat [3] chi ep GIA TRI so (10/4) nen
+      // CHAP NHAN CA `blur(10px)` THO lan `blur(var(--h2-backdrop-blur))` -> token
+      // --h2-backdrop-blur duoc chot nhung co 0 nguoi dung (20 cho viet tho).
+      // Do la "2 nguon su that": doi gia tri token KHONG co tac dung gi -> vo nghia.
+      // NAY: blur 10px PHAI dung var(--h2-backdrop-blur); blur 4px PHAI dung var(--h2-badge-blur).
+      const rawBlur = ln.match(/backdrop-filter\s*:\s*blur\(\s*(10|4)px/);
+      if (rawBlur) {
+        v.rawBlur.push({
+          file: f.rel, line: L, val: rawBlur[1] + 'px',
+          txt: ln.trim().slice(0, 120)
+        });
+      }
 
       // [5] CHI cam `z-[N]` — day la class DA CHUNG MINH khong ton tai trong tailwind.css
       // (build that chi sinh .z-10/.z-50). Cac arbitrary value khac (min-h-[38px],
@@ -200,6 +214,7 @@ function report(v) {
     ['[1] Hex nen panel ngoai chuan (dung var(--surface)/var(--surface-2)/var(--bg))', v.panelHex],
     ['[2] z-index dang SO trong CSS (dung token --h2-z-*)', v.zIndexNum],
     ['[3] backdrop blur khac 10px (dung --h2-backdrop-blur)', v.blur],
+    ['[3b] backdrop blur viet THO 10px/4px (phai dung var(--h2-backdrop-blur)/var(--h2-badge-blur)) — SCAR-022', v.rawBlur],
     ['[5] Class Tailwind arbitrary value (Tailwind khong sinh tu dong)', v.arbitrary],
     ['[6] Inline style co !important tren background/z-index (2 nguon su that - SCAR-022)', v.inlineImp],
     ['[7a] line-height ngoai thang 1 / 1.2 / 1.35 / 1.5 / 1.6 (1.3-1.4 tren chu nho duoc mien)', v.lineHeight],
@@ -236,6 +251,10 @@ function probe() {
   const injections = [
     { name: 'hex nen panel (#0f172a)', file: target, content: orig + '\n.probe-x { background: #0f172a; }\n' },
     { name: 'blur 28px', file: target, content: orig + '\n.probe-y { backdrop-filter: blur(28px); }\n' },
+    // P2-I5 (2026-09-27): luat [3b] — blur 10px/4px viet THO thay vi dung token.
+    // Day la lo hong THAT vua phat hien: luat [3] cu chap nhan `blur(10px)` tho nen
+    // --h2-backdrop-blur co 0 nguoi dung (20 cho viet tho). Phai probe ca dang co space.
+    { name: 'blur 10px viet THO (phai dung token — SCAR-022)', file: target, content: orig + '\n.probe-r { backdrop-filter: blur(10px); }\n' },
     // SCAR-027: probe DUNG dang da tung LOT LUOI — inline, KHONG co khoang trang
     { name: 'blur 12px inline khong space (lo hong da tung lot)', file: target, content: orig, html: origHtml.replace('</body>', '<span style="backdrop-filter:blur(12px)">probe</span>\n</body>') },
     { name: 'line-height 1.75 (lech xa)', file: target, content: orig + '\n.probe-z { line-height: 1.75; }\n' },
@@ -251,11 +270,12 @@ function probe() {
     fs.writeFileSync(inj.file, inj.content);
     if (inj.html) fs.writeFileSync(htmlTarget, inj.html);
     const v = findViolations(readLive());
-    const ok = v.panelHex.length > 0 || v.blur.length > 0 || v.lineHeight.length > 0 ||
+    const ok = v.panelHex.length > 0 || v.blur.length > 0 || v.rawBlur.length > 0 || v.lineHeight.length > 0 ||
                v.letterSpacing.length > 0 || v.zIndexNum.length > 0 ||
                v.purpleCta.length > 0 || v.adHocBtn.length > 0;
     console.log('  ' + (ok ? 'BAT DUOC' : 'BO LOT!') + '  -> ' + inj.name +
-      '  (hex=' + v.panelHex.length + ', blur=' + v.blur.length + ', lh=' + v.lineHeight.length +
+      '  (hex=' + v.panelHex.length + ', blur=' + v.blur.length + ', rawBlur=' + v.rawBlur.length +
+      ', lh=' + v.lineHeight.length +
       ', ls=' + v.letterSpacing.length + ', z=' + v.zIndexNum.length +
       ', purple=' + v.purpleCta.length + ', adhoc=' + v.adHocBtn.length + ')');
     if (ok) caught++;

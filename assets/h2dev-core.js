@@ -293,6 +293,39 @@
     return '<div class="empty-state">' + EMPTY_IMG + '<p>Không tìm thấy bài học nào</p><span class="empty-hint">Thử từ khoá khác (tên bài, SKU, module, kênh…)</span></div>';
   }
 
+  /* ---------- SKELETON (P2 2026-09-27) ----------
+   * Truoc day TOAN DU AN khong co skeleton nao (do duoc: 0 cho) -> khi tai danh
+   * sach dai, nguoi dung chi thay khoang trang, khong biet dang tai hay loi.
+   * Nay: 1 module duy nhat sinh skeleton, dung chung ca 3 trang.
+   * CSS tuong ung o assets/h2dev-primitives.css muc [9] (.h2-skeleton*).
+   * A11y: khoi skeleton la TRANG TRI -> aria-hidden="true";
+   *        trang thai "dang tai" do `aria-busy` cua vung noi dung (xem P2-H1).
+   */
+  function skeletonCard(opts) {
+    opts = opts || {};
+    var thumb = opts.thumb ? '<span class="h2-skeleton h2-skeleton--thumb"></span>' : '';
+    var lines = opts.lines == null ? 2 : opts.lines;
+    var body = '';
+    for (var i = 0; i < lines; i++) body += '<span class="h2-skeleton h2-skeleton--text"></span>';
+    return '<div class="h2-skeleton-card" aria-hidden="true">' + thumb +
+      '<span class="h2-skeleton h2-skeleton--title"></span>' + body + '</div>';
+  }
+
+  /* list(n, opts) -> n the skeleton boc trong luoi chuan.
+   * SCAR-023: CAM dung class Tailwind (.grid / .gap-4 / .sm:p-5) o day vi
+   * learn.html KHONG nap tailwind.css -> class khong ton tai -> vo layout.
+   * Dung class cua chinh primitives (.h2-skeleton-list / .h2-skeleton-item).
+   * Dung cho: #content (index), #panelRoot (learn), #pdocslist (player). */
+  function skeletonList(n, opts) {
+    opts = opts || {};
+    var count = Math.max(1, n || 6);
+    var out = [];
+    for (var i = 0; i < count; i++) {
+      out.push('<div class="h2-skeleton-item">' + skeletonCard(opts) + '</div>');
+    }
+    return '<div class="h2-skeleton-list" aria-hidden="true">' + out.join('') + '</div>';
+  }
+
   /* ---------- export ---------- */
   global.H2Core = {
     WKEY: WKEY, FKEY: FKEY, RKEY: RKEY,
@@ -304,6 +337,7 @@
     loadFavs: loadFavs, saveFavs: saveFavs, toggleFav: toggleFav, loadRecent: loadRecent,
     videoProgress: videoProgress,
     renderLessonRow: renderLessonRow, renderSectionHead: renderSectionHead, renderEmptyState: renderEmptyState,
+    skeletonCard: skeletonCard, skeletonList: skeletonList,
     trapFocus: function (container, e) {
       if (e.key !== 'Tab' || !container) return;
       if (!container.contains(document.activeElement)) {

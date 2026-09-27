@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi" data-theme="dark" data-density="compact" style="color-scheme: dark;">
 <head>
 <meta charset="UTF-8">
@@ -65,7 +65,7 @@
     </div>
   </div>
 </section>
-<main class="player-main max-w-5xl mx-auto px-4 sm:px-6 pb-12 pt-2" id="playerMain" tabindex="-1">
+<main class="player-main max-w-5xl mx-auto px-4 sm:px-6 pb-12 pt-2" id="playerMain" tabindex="-1" aria-busy="false">
   <div class="mb-4">
     <h1 id="ptitle" class="text-xl sm:text-2xl font-bold text-white leading-snug font-heading tracking-tight">Đang tải…</h1>
     <div id="pmeta" class="flex flex-wrap items-center gap-2 mt-2.5 text-xs text-gray-400"></div>
@@ -123,7 +123,13 @@
       <!-- Attached Documents & Prompts -->
       <div id="pdocs" class="hidden card p-4 bg-surface-card border-ink-600">
         <h3 class="font-bold text-white mb-3 flex items-center gap-2 text-sm font-heading">Kịch bản &amp; tài liệu đính kèm</h3>
-        <div id="pdocslist" class="grid sm:grid-cols-2 gap-3"></div>
+        <div id="pdocslist" class="grid sm:grid-cols-2 gap-3">
+          <!-- P2-H2 (2026-09-27): skeleton trong luc tai danh sach tai lieu.
+               Duoc thay the bang noi dung that ngay khi player-main.js render xong.
+               Dung class cua chinh primitives (khong dung Tailwind cho skeleton). -->
+          <div class="h2-skeleton-item"><div class="h2-skeleton-card" aria-hidden="true"><span class="h2-skeleton h2-skeleton--title"></span><span class="h2-skeleton h2-skeleton--text"></span><span class="h2-skeleton h2-skeleton--text"></span></div></div>
+          <div class="h2-skeleton-item"><div class="h2-skeleton-card" aria-hidden="true"><span class="h2-skeleton h2-skeleton--title"></span><span class="h2-skeleton h2-skeleton--text"></span><span class="h2-skeleton h2-skeleton--text"></span></div></div>
+        </div>
       </div>
     </div>
 
@@ -206,7 +212,7 @@
 <script src="assets/app/player-main.js?v=20260924-p40"></script>
 
 <!-- Doc Reader Modal -->
-<div id="docModal" role="dialog" aria-modal="true" aria-label="Tài liệu" tabindex="-1" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal); background:rgba(0,0,0,0.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:1.25rem;">
+<div id="docModal" role="dialog" aria-modal="true" aria-label="Tài liệu" tabindex="-1" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:1.25rem;">
   <div style="position:relative; width:100%; max-width:860px; max-height:88vh; display:flex; flex-direction:column; background-color:var(--surface); border:1px solid #374151; border-radius:1rem; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); overflow:hidden;">
     <div style="display:flex; align-items:center; justify-content:space-between; padding:0.875rem 1.25rem; border-bottom:1px solid #374151; background:rgba(31,41,55,0.85); flex-shrink:0;">
       <div style="display:flex; align-items:center; gap:0.625rem; min-width:0; overflow:hidden;">

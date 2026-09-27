@@ -133,8 +133,9 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | Alpha overlay | **1 mức: 0.92** qua `--h2-overlay-bg`. Lưu ý **`.more-menu-backdrop` giữ 0.45** (backdrop MENU ≠ modal — SCAR-021: áp 0.92 làm tối đen, 59% pixel đổi, không đọc được nội dung) | Chốt **`0.92`** cho modal chặn tương tác | ✅ **XONG** |
 | Nền panel | **0 mã navy ngoài chuẩn** (đã chuyển **82 khai báo** ở 11 file → `var(--surface)`/`var(--surface-2)`/`var(--bg)`). Lưu ý: ngoài 4 mã danh sách còn **4 mã navy khác** (`#131d31`×14, `#182234`×8, `#0b1120`, `#090d16`) — danh sách tài liệu KHÔNG phải tập đầy đủ (SCAR-024) | Token `--surface` / `--surface-2` | ✅ **XONG** |
 | Bottom-sheet mobile | Chỉ áp **5 ID**; **bỏ sót `#quick-video-modal`** | Áp cho **mọi** modal | P1 |
-| `#raw-image-modal` | **Thiếu selector panel con** | Bổ sung selector panel | P2 |
-| `docModal` bottom-sheet | **Không có** (player không nạp CSS index) | Bổ sung CSS bottom-sheet cho player | P2 |
+| `#raw-image-modal` | **Đã bổ sung selector panel con** `#raw-image-modal > div` vào rule 2 (`max-height:95vh`); gate-p2 luật [5] kiểm CẢ 2 rule | Bổ sung selector panel | ✅ **XONG** |
+| `docModal` bottom-sheet | **Đã bổ sung** `@media (max-width:640px)` trong `player.css`: padding 0, `align-items:flex-end`, panel 390px, `border-radius` tl/tr 20px bl/br 0, đáy khớp viewport. Desktop KHÔNG đổi (860px, radius 16px, giữa màn) — đã đo runtime | Bổ sung CSS bottom-sheet cho player | ✅ **XONG** |
+| `#raw-channel-modal` | **CSS CHẾT đã XOÁ** (block `index.html:24-52`) sau khi chứng minh **0 DOM + 0 JS** (repo scan + runtime 6/6 page×viewport `rawChannelExists:false`). Đã gỡ khỏi CẢ 2 rule bottom-sheet | Xoá nếu không dùng | ✅ **XONG** |
 | `background-image` trên nút | `content.js:1640` gradient bị `viddar.css:574` ép `none !important` → mất gradient | Cấm class gradient cho nút | P2 |
 
 ## G. Responsive & Touch target
@@ -145,7 +146,7 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | Breakpoint `learn.css` | **CHỈ có 720** | **640/1024/1280** | P0 |
 | Breakpoint `player.css` | 640/1023 | **640/1024/1280** | P0 |
 | Breakpoint `g3-inline.css` | **KHÔNG có `@media` nào** | Bổ sung theo bộ chuẩn | P1 |
-| Breakpoint inline `index.html` | chỉ 640 | Gộp về bộ chuẩn | P2 |
+| Breakpoint inline `index.html` | **Đã bổ sung 2 `@media` inline**: tablet **641-1023** + desktop **≥1280** (đã có sẵn 640) | Gộp về bộ chuẩn | ✅ **XONG** |
 | Lỗi dải 641-720px | `learn` vẫn desktop, `index`/`player` đã mobile | Đồng nhất ở `640px` | P0 |
 | Rule tablet 721-1024 của learn | **KHÔNG CÓ** | Bổ sung rule tablet `640-1023px` | P1 |
 | `.lesson-watch` | **`36px → 30px`** khi mobile (CO NHỎ) | **≥ 44px**, cấm co nhỏ | P0 |
@@ -165,16 +166,18 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | `alert()` native | **CÓ dùng** | — | — | Phá vỡ trải nghiệm | **Cấm** | P0 |
 | Loading | **11 kiểu khác nhau** | ← | ← | 11 kiểu | 1 spinner chuẩn + skeleton | P1 |
 | Spinner thật | — | — | `player-main.js:788` | Chỉ 1 chỗ | Chuẩn hóa toàn dự án | P1 |
-| `aria-busy` | CÓ | **KHÔNG** | **KHÔNG** | 1/3 trang | Bổ sung mọi trang | P2 |
-| Skeleton | **KHÔNG Ở ĐÂU** | **KHÔNG** | **KHÔNG** | 0 chỗ | Bổ sung cho danh sách card | P2 |
+| `aria-busy` | **Cả 3 trang đã có** `aria-busy` trên vùng nội dung động (`#content` / `#panelRoot` / `#playerMain`). **Matrix cũ ghi SAI là "index đã có"** — thực tế index cũng THIẾU. Đã chứng minh động: throttle mạng → `aria-busy="true"` → tải xong `"false"` | Bổ sung mọi trang | ✅ **XONG** |
+| Skeleton | **Đã có component chuẩn** `.h2-skeleton` (mục 9 `h2dev-primitives.css`: `.h2-skeleton-card`/`-list`/`-item` + 4 modifier + `@keyframes h2-skeleton-shimmer` + guard `prefers-reduced-motion`) cho **CẢ 3 trang**. Chứng minh động bằng `MutationObserver`: ở t=33ms có `sk:24`, `busy:true`, `bg:linear-gradient(90deg, rgb(26,26,26)…)`, `anim:h2-skeleton-shimmer`. **CẤM dùng class Tailwind** (learn.html không nạp `tailwind.css` — SCAR-023) | Bổ sung cho danh sách card | ✅ **XONG** |
 
 ## I. Token & Code Smell
 
 | Hạng mục | Hiện trạng | Chuẩn bắt buộc | Ưu tiên |
 |---|---|---|---|
-| Token vòng lặp | `learn.css:2-20`: `--bg: var(--bg, #050505)`, `--font-mono: var(--font-mono, ...)` | Gỡ self-reference | P2 |
-| Token trùng chức năng | `learn.css` tạo `--pri/--sec/--war/--ok/--panel/--line/--txt/--mut/--font-heading/--font-body` trùng `viddar.css` | Hội tụ về 1 nguồn token (`viddar.css`) | P2 |
-| Token font lệch | `learn.css:17` `--font-heading` | Gỡ, dùng `--font-display` | P2 |
+| Token vòng lặp | **Đã gỡ.** `learn.css` trước có `--bg: var(--bg, #050505)`, `--font-mono: var(--font-mono, …)` — **resolve RỖNG (không phải fallback)** → body mất nền (`rgba(0,0,0,0)`), badge `.ltag` sai font (Inter 14px thay vì JetBrains Mono 11px, cao 27px thay vì 21px). Đã chứng minh bằng đo runtime. Gate-p2 luật [1] chặn tái phát | Gỡ self-reference | ✅ **XONG** |
+| Token trùng chức năng | **Đã hội tụ hẳn.** Xoá toàn bộ block `:root` alias (~26 dòng) ở `learn.css` + thay **25 chỗ**; `h2dev-components-lesson-row.css` thay **12 chỗ**. Ánh xạ: `--pri`→`--brand`, `--sec`/`--panel`→`--surface`, `--panel2`→`--surface-2`, `--war`→`--warning`, `--ok`→`--success`, `--line`→`--border`, `--txt`→`--fg`, `--mut`→`--fg-muted`. Đo runtime 3 trang: **alias còn sống = 0**. Gate-p2 luật [2] chặn tái phát | Hội tụ về 1 nguồn token (`viddar.css`) | ✅ **XONG** |
+| Token font lệch | **Đã gỡ.** `--font-heading`/`--font-body` → dùng `--font-display`/`--font-sans`. Đo runtime: `--font-heading` không còn khai báo | Gỡ, dùng `--font-display` | ✅ **XONG** |
+| **Token CHẾT (phát hiện ở Vòng 1 P2)** | **Đã xoá 12 token**: 9 alias `viddar.css:96-104` (`--txt/--txt-2/--mut/--line/--line-strong/--accent/--accent-2/--bg-card/--bg-hover` — quét **812 file** → **0 lần dùng**) + 3 alias `h2dev-tokens.css:91-93` (`--h2-panel-bg/--h2-panel-border/--h2-panel-radius`). **Chứng minh an toàn bằng đo runtime: 0/6.400 element đổi thuộc tính computed.** Gate-p2 luật [7] chặn tái phát (có allowlist kèm lý do cho **bậc thang thiết kế** — SCAR-031 bẫy 3) | Token phải có người dùng thật | ✅ **XONG** |
+| **Token "chốt" mà 0 người dùng** | **Đã hội tụ.** `--h2-backdrop-blur`/`--h2-overlay-alpha` do P1 chốt nhưng code viết `blur(10px)`/`rgba(0,0,0,0.92)` **THÔ ở 20+ nơi** → token vô nghĩa (SCAR-022 "2 nguồn sự thật"). Đã hội tụ **14 chỗ blur + 5 chỗ overlay + `docModal`**, chứng minh runtime **0/6.400 element đổi giá trị tính toán**. **Siết `gate-p1` luật [3b]** cấm blur thô — lập tức bắt 1 lỗi thật (`player.html:215`) mà mọi vòng kiểm trước bỏ sót | Đổi token phải có tác dụng thật | ✅ **XONG** |
 | Biến chết | `viddar.css:428` `var(--brand-ink-ink)` | Grep `:root` trước khi dùng | P0 |
 | Radius trùng giá trị | `--r-md:4px`, `--r-lg:4px` | Giữ nguyên (bất biến) nhưng ghi chú để tránh nhầm là lỗi | P3 |
 | `!important` tràn lan | `viddar.css` ép `background-image`, `box-shadow`, `color` bằng `!important` | Cấm `!important` cho letter-spacing; hạn chế tối đa cho color | P2 |

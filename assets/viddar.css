@@ -93,15 +93,6 @@
   --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
   --font-display: "Space Grotesk", var(--font-sans);
   --signal-amber: #ffcc00;
-  --txt: var(--fg);
-  --txt-2: var(--fg-2);
-  --mut: var(--fg-muted);
-  --line: var(--border);
-  --line-strong: var(--border-strong);
-  --accent: var(--brand);
-  --accent-2: var(--brand-ink);
-  --bg-card: var(--surface);
-  --bg-hover: var(--surface-2);
 }
 [data-density="comfortable"] { --row-h: 44px; --pad-page: 36px; }
 
@@ -302,7 +293,7 @@ code { font-size: 11px; color: var(--fg-2); }
   overflow: hidden;
   background: var(--topbar-bg);
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--h2-backdrop-blur));
 }
 .vd-topbar.has-subnav {
   height: auto;
@@ -418,8 +409,8 @@ code { font-size: 11px; color: var(--fg-2); }
        -> tach lop ro rang, van 1 he token. Header dung --surface (khong dung hex #060910 toi hon ca nen trang). */
 #video-search-suggestions, #raw-search-suggestions {
   background-color: var(--bg) !important;
-  backdrop-filter: blur(10px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+  backdrop-filter: blur(var(--h2-backdrop-blur)) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(var(--h2-backdrop-blur)) saturate(180%) !important;
   border: 1px solid var(--border-strong) !important;
   box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.98), 0 0 0 1px rgba(255, 255, 255, 0.16) !important;
   z-index: var(--h2-z-modal-top) !important;
@@ -707,7 +698,7 @@ img, video { max-width: 100%; height: auto; }
 
 /* Player compatibility */
 .app-body { color: var(--fg); background: var(--bg); }
-.app-top { position: sticky; top: 0; z-index: var(--h2-z-sticky); display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 56px; padding: 0 24px; background: var(--topbar-bg); border-bottom: 1px solid var(--border); backdrop-filter: blur(10px); }
+.app-top { position: sticky; top: 0; z-index: var(--h2-z-sticky); display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 56px; padding: 0 24px; background: var(--topbar-bg); border-bottom: 1px solid var(--border); backdrop-filter: blur(var(--h2-backdrop-blur)); }
 .brand-mark { display: grid; place-items: center; width: 28px; height: 28px; color: #fff; background: var(--brand); border-radius: 4px; font: 700 11px/1 var(--font-mono); }
 .theater-toggle-badge.active { color: var(--red-50-fg) !important; background: var(--red-50) !important; border-color: transparent !important; }
 body.theater-active .theater-wrapper { background: #000; }
@@ -957,7 +948,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
        59% pixel (hoi quy that), 0.45 giu nguyen 0.055%. Blur van theo chuan 10px. */
     background: rgba(0, 0, 0, 0.45);
     z-index: var(--h2-z-drawer);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(var(--h2-backdrop-blur));
   }
   #panel-root { grid-column: 1; grid-row: 1; height: auto; overflow-x: hidden; overflow-y: visible; touch-action: pan-y; }
   .app-footer { grid-column: 1; grid-row: 3; padding: 10px 12px 12px; }

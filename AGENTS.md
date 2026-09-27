@@ -203,3 +203,58 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   4. **Rule responsive mobile cố ý của dự án phải được tôn trọng**, không "sửa cho khớp lý thuyết": `.card.p-4/.card.p-5 { padding:14px !important }` (viddar.css dòng 1008) là **chuẩn mobile của site**.
   5. Mọi script chẩn đoán tự viết **phải được kiểm chứng ngược** (nếu nó báo "không có gì" → phải grep đối chứng), vì script sai sẽ **bịa ra kết luận sai**.
 
+### [SCAR-030] Bộ 7 Bẫy Gate & Phép Đo Phát Hiện Ở P2 (đều đã chứng minh bằng đo, KHÔNG suy đoán)
+- **Bẫy 1 — Regex non-greedy cắt block CSS khớp QUÁ SỚM:** Gate P2 luật [5] dùng `/@media\(max-width:640px\)\{([\s\S]*?)\n\s{4}\}/` để lấy phạm vi block. Regex dừng ở **`}` đầu tiên có indent 4 space** → scope bị cắt còn **5046** ký tự thay vì **5079** → **cắt mất 2 rule đích** → gate báo **4 vi phạm GIẢ** trong khi code hoàn toàn đúng. Đo lại bằng **đếm ngoặc**: scope 5079, cả 4 modal khớp cả 2 rule.
+  → **Guardrail:** CẤM dùng regex non-greedy để cắt block CSS/JS. BẮT BUỘC dùng **đếm ngoặc** (`extractBlock()` trong `gate-p2.js`).
+
+- **Bẫy 2 — Gate tìm nguồn dữ liệu SAI TẦNG:** `collectCss()` chỉ thu thập `*.css`, nhưng luật [5] lại `files.find(f => f.rel === 'index.html')` → **`undefined`** → `scope` rỗng → **gate báo vi phạm GIẢ** dù code đúng. (Lần đầu gặp dạng "gate sai vì NGUỒN dữ liệu", khác SCAR-008 "lọc file thiếu".)
+  → **Guardrail:** Khi gate kiểm nhiều loại file (CSS + HTML + JS), **mỗi loại phải đọc trực tiếp từ đĩa** (`fs.readFileSync(path.join(ROOT, rel))`), CẤM tìm trong danh sách đã lọc của loại khác.
+
+- **Bẫy 3 — Kiểm SUBSTRING thay vì SELECTOR (tái phạm SCAR-019):** Luật [3] viết `body.includes('.h2-skeleton-card')`. Khi tiêm lỗi `.h2-skeleton-card` → `.h2-skeleton-card-XX`, chuỗi `.h2-skeleton-card` **vẫn là substring** của tên mới → `includes()` trả `true` → **gate BỎ LỌT hoàn toàn**. Phát hiện được **chỉ nhờ PROBE**.
+  → **Guardrail:** Kiểm selector CSS **BẮT BUỘC** dùng regex có **ranh giới** (`/\.h2-skeleton-card\s*\{/`), CẤM `includes('.tên-class')`.
+
+- **Bẫy 4 — PROBE mô phỏng SAI ngữ nghĩa lỗi:** Probe xoá `.h2-skeleton {` (1 chỗ) → gate KHÔNG báo → tưởng gate lỗi. Truy ra: file còn **1 khai báo thứ 2** `.h2-skeleton { animation: none; }` **trong `@media (prefers-reduced-motion)`** → gate tìm thấy nên PASS là **ĐÚNG**. Phải sửa probe thành xoá **TẤT CẢ** (`/g`).
+  → **Guardrail:** Khi probe báo "BỎ LỌT", **BẮT BUỘC truy xem lỗi tiêm có thật sự làm hư chức năng không** trước khi kết luận gate sai. Cùng một selector có thể được khai báo **nhiều nơi** (rule chính + trong `@media`).
+
+- **Bẫy 5 (SCAR-017 tái phạm LẦN 3) — Viết dòng-comment-term trong block comment JS:** Em viết `'*/'` trong block comment của `gate-p2.js` để mô tả chính SCAR-017 → **đóng comment sớm** → `SyntaxError: Invalid or unexpected token`. Lần thứ 3 dẫm bẫy này.
+  → **Guardrail:** Trong block comment JS **CẤM viết ký tự sao-gạch-chéo liền nhau** dưới mọi hình thức (kể cả khi đang MÔ TẢ lỗi đó). Viết tách: "dong-comment-term". Sau khi sửa **BẮT BUỘC `node --check <file>`**.
+
+- **Bẫy 6 — Backup SAI THỜI ĐIỂM làm phép so sánh vô nghĩa:** Khi refactor token, em `Copy-Item` backup **SAU KHI đã xoá block `:root`** nhưng **TRƯỚC KHI thay alias** → bản "before" là **trạng thái trung gian LỖI** (alias dùng nhưng định nghĩa đã mất) → đo ra 5 khác biệt toàn `rgba(0,0,0,0)` → suýt kết luận "refactor làm vỡ giao diện".
+  → **Guardrail:** Khi cần so sánh trước/sau, **BẮT BUỘC lấy bản "trước" từ `git show HEAD:<file>`** (bản đã commit = chân lý), CẤM dùng file backup tự tạo (không kiểm chứng được thời điểm).
+
+- **Bẫy 7 — Token vòng lặp KHÔNG "vô hại" như tưởng:** `learn.css` có `--bg: var(--bg, #050505)` và `--font-mono: var(--font-mono, ...)`. Tài liệu xếp vào "code smell P2" (không gây lỗi trực tiếp). **Đo runtime chứng minh NGƯỢC LẠI:** giá trị resolve ra **RỖNG**, khiến `body { background: var(--bg) }` → **`rgba(0,0,0,0)` = MẤT NỀN HOÀN TOÀN**, và `.sec-stats` mono **hỏng thành sans**.
+  → **Guardrail:** "Self-referencing custom property" trong CSS resolve thành **invalid/RỖNG**, không phải giá trị fallback. Mọi token vòng lặp phải coi là **LỖI HIỂN THỊ MỨC CAO**, không phải code smell. Cách phát hiện: `getComputedStyle(document.documentElement).getPropertyValue('--x')` → nếu trả `''` thì token vô nghĩa (đã đưa vào `gate-p2.js` luật [1]).
+
+### [SCAR-031] Bộ 5 Bẫy Phát Hiện Ở Vòng 1–3 Check-Pass P2 (đều chứng minh bằng ĐO)
+
+- **Bẫy 1 — "Token chết" đội lốt "alias tương thích":** `viddar.css:96-104` có 9 alias (`--txt/--txt-2/--mut/--line/--line-strong/--accent/--accent-2/--bg-card/--bg-hover`) trỏ 1-1 sang token chuẩn. Tài liệu coi là "giữ để tương thích ngược". **Đo tất định:** quét **812 file** → **0 lần dùng**; grep toàn dự án → chỉ khớp **duy nhất dòng khai báo**; không JS/HTML nào `setProperty`.
+  → **Guardrail:** Token "tương thích ngược" **phải chứng minh CÓ NGƯỜI DÙNG**. Đếm bằng regex `var\(--x` trên toàn bộ file nguồn (loại `_backup/` + file build). Đã đưa vào `gate-p2.js` luật **[7]**. **CẤM** dùng `indexOf('--x')` — chính dòng khai báo cũng chứa chuỗi đó nên sẽ tự đếm chính nó.
+
+- **Bẫy 2 — Token được "chốt" nhưng KHÔNG AI DÙNG (bẫy 2 nguồn sự thật ngược):** `--h2-backdrop-blur: 10px` và `--h2-overlay-alpha: 0.92` do chính P1 chốt, nhưng code lại viết **`blur(10px)` / `rgba(0,0,0,0.92)` THÔ ở 20+ nơi**. Gate-p1 luật [3] chỉ ép **giá trị số** (=10/4) nên **CHẤP NHẬN CẢ hai dạng** → token vô nghĩa, đổi token không có tác dụng gì.
+  → **Guardrail:** Đã hội tụ 14+ chỗ về `var(--h2-backdrop-blur)`/`var(--h2-overlay-alpha)` (chứng minh runtime: `0/6.400` element đổi giá trị tính toán), và **siết `gate-p1.js` luật [3b]** cấm blur thô. Luật [3b] lập tức bắt được **1 lỗi thật** (`player.html:215` docModal) mà mọi vòng kiểm trước bỏ sót.
+
+- **Bẫy 3 — Luật gate quá rộng → "đỏ giả" (tái phạm SCAR-025):** Luật [7] mới, phiên bản đầu cấm **MỌI** token 0-lượt-dùng → báo **17 vi phạm** nhưng **12 là GIẢ**: đó là các **bậc trong thang thiết kế đã chốt** (`--h2-font-3xl` = bậc 9 của thang 11→32px, `--h2-lh-*`, `--h2-ls-*`, `--h2-fw-*`, `--red-300/400/500`, `--h2-motion-slow`) — thang phải **đầy đủ mọi bậc**, không bắt buộc mọi bậc có người dùng ngay.
+  → **Guardrail:** Luật gate phải phân biệt 3 mức: **(a) lỗi thật → FAIL**, **(b) phần tử của thang chuẩn → MIỄN kèm lý do**, **(c) cố ý → allowlist**. Sau khi thu hẹp còn **5 vi phạm, cả 5 đều THẬT** → gate vừa chính xác vừa có giá trị.
+
+- **Bẫy 4 — Đo "phần tử kích thước 0" mà KHÔNG truy tổ tiên (tái phạm SCAR-020, phát hiện ở Vòng 2):** Phép đo báo `player.html` có **6 phần tử kích thước 0** ở mobile, **3 ở desktop**. Truy chuỗi cha: mobile là `.transcript-*` trong **`DIV#colSide{display:none}`**, desktop là các nút trong **`DIV#playerTabSelector{display:none}`** — **ẩn theo breakpoint ĐÚNG THIẾT KẾ**, không phải lỗi. Bộ lọc cũ chỉ kiểm `getComputedStyle(el).display` của **chính nó**, không kiểm tổ tiên.
+  → **Guardrail:** Nhận diện "bị ẩn bởi tổ tiên" **BẮT BUỘC dùng `el.offsetParent === null`** (trả `null` khi bất kỳ tổ tiên nào `display:none`), CẤM chỉ kiểm style của chính phần tử.
+
+- **Bẫy 5 — So ảnh trước/sau ra 20–44% khác biệt vì **state bất đồng bộ**, không phải hồi quy:** 3 ảnh báo "NGHI HỒI QUY" (`desktop_03_video` 44.59%, `learn` 21.90%/38.72%). Chứng minh **KHÔNG phải lỗi** bằng 2 phép đo đối chứng: (a) chụp **CÙNG bản code 2 lần** → các ảnh đó **0.00%** (vậy 44% là **timing chọn chế độ xem** của tab Video có 2 chế độ dashboard/danh sách); (b) với `learn.html`, 2 phép chụp **lặp lại đúng con số** → truy tới **nguyên nhân xác định**.
+  → **Nguyên nhân thật của `learn.html` (242px trên mobile):** bản HEAD có `--font-body: var(--font-sans, Inter, …)` **vòng lặp → RỖNG** → `body { font: 14px/1.5 var(--font-body) }` **hủy toàn bộ khai báo** → badge `.ltag` rơi về **14px Inter (SAI)** thay vì **11px JetBrains Mono (ĐÚNG)** → mỗi row cao thêm **6px**. P2 sửa → mobile **ngắn hơn 242px** (`rows=140` không đổi) = **CẢI THIỆN THẬT**, không phải hồi quy.
+  → **Guardrail:**
+    1. Trước khi kết luận "hồi quy thị giác" từ phép so ảnh, **BẮT BUỘC** chụp **cùng code 2 lần** để đo **độ ổn định của phép đo**. Nếu cùng-code đã lệch → phép đo hỏng.
+    2. Ảnh trước/sau **phải CHỜ trạng thái ỔN ĐỊNH**: `waitForFunction` xác nhận tab đã `aria-selected="true"`/`.active`, rồi chờ thêm cho dữ liệu bất đồng bộ render xong.
+    3. Khi phép so ảnh lệch lớn, **CẤM kết luận qua ảnh**. Phải **đo chiều cao từng row** + **so phân bố tần suất** để định vị chính xác phần tử lệch (đã tìm ra: `.ltag` 27px→21px).
+
+### [SCAR-032] Bẫy `git stash` Khi So Sánh Trước/Sau Trên Working Tree Bẩn (P2)
+- **Nguyên nhân:** Để chụp ảnh "TRƯỚC" đúng nghĩa HEAD, phải tạm cất 17 file đang sửa. Nếu dùng `git checkout HEAD -- <file>` hàng loạt rồi **quên khôi phục** (hoặc lệnh giữa chuỗi bị lỗi) → **MẤT TOÀN BỘ CÔNG SỨC P2** chưa commit.
+- **Guardrail:**
+  1. BẮT BUỘC dùng `git stash push -u -m '<nhan>' -- <danh-sach-file>` (có **nhãn nhớ được**) + `git stash pop` ngay sau khi chụp xong.
+  2. Sau **MỖI** lần `stash pop`, **BẮT BUỘC đếm lại** số file thay đổi (`git status --porcelain | Measure-Object`) và **đối chiếu con số kỳ vọng** (P2 = 17 file + 1 untracked).
+  3. `git stash list` phải **RỖNG** sau khi xong — nếu còn stash = có file chưa khôi phục.
+  4. Trước khi chạy chuỗi `stash → đo → pop`, phải đảm bảo **không có lệnh nào có thể `exit` giữa chừng** (dùng `;` nối, không dùng `&&`; kiểm tra mã thoát ở từng bước).
+
+### [SCAR-033] Bẫy `core.autocrlf=true` Trên Windows Làm Git Cảnh Báo Khi Stash/Pop (P2)
+- **Nguyên nhân:** Mọi thao tác `git stash push/pop` trên repo này in ra **hàng chục dòng `warning: in the working copy of 'X', LF will be replaced by CRLF`** làm **rối mắt**, dễ che mất dòng `Saved working directory` / `Dropped refs/stash` — tức là **không biết lệnh có thành công hay không**.
+- **Guardrail:** Khi chạy git trên PowerShell, **BẮT BUỘC lọc bỏ cảnh báo** để đọc kết quả thật: `git -C . stash pop 2>&1 | Select-String -NotMatch 'warning:|LF will be'`. Với lệnh quan trọng (stash/pop/commit), **luôn kiểm chứng lại bằng lệnh đo trạng thái** (`git stash list`, `git status --porcelain`) thay vì tin vào output bị nhiễu.
+

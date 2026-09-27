@@ -258,3 +258,70 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
 - **Nguyên nhân:** Mọi thao tác `git stash push/pop` trên repo này in ra **hàng chục dòng `warning: in the working copy of 'X', LF will be replaced by CRLF`** làm **rối mắt**, dễ che mất dòng `Saved working directory` / `Dropped refs/stash` — tức là **không biết lệnh có thành công hay không**.
 - **Guardrail:** Khi chạy git trên PowerShell, **BẮT BUỘC lọc bỏ cảnh báo** để đọc kết quả thật: `git -C . stash pop 2>&1 | Select-String -NotMatch 'warning:|LF will be'`. Với lệnh quan trọng (stash/pop/commit), **luôn kiểm chứng lại bằng lệnh đo trạng thái** (`git stash list`, `git status --porcelain`) thay vì tin vào output bị nhiễu.
 
+### [SCAR-034] Bẫy `stripComments` Phá Nát File CSS Vì Áp Luật Comment `//` (Tái Phạm SCAR-013/019)
+- **Nguyên nhân (ĐÃ ĐO, KHÔNG SUY ĐOÁN):** Hàm `stripComments(src)` trong `scripts/gate-p2.js` luôn chạy **cả 2** luật strip, kể cả với file CSS:
+  ```js
+  s = src.replace(/(^|[^:])\/\/[^\n]*/g, ...)   // <-- luật comment DÒNG
+  ```
+  CSS **KHÔNG CÓ** comment `//`. Nhưng CSS thật của dự án có chuỗi `//` **nằm trong giá trị** (URL, `content:"https://..."`) và trong **comment block** → luật này **xóa tới cuối dòng**, phá luôn CSS thật phía sau.
+- **Bằng chứng đo được** (tỷ lệ ký tự còn lại sau strip — càng thấp càng nát):
+  | File | Còn lại | Mất |
+  |---|---|---|
+  | `assets/viddar.css` | 91.7% | 8.3% |
+  | `assets/learn.css` | 72.5% | 27.5% |
+  | `assets/h2dev-components-lesson-row.css` | **63.8%** | **36.2%** |
+  | `assets/h2dev-tokens.css` | **26.3%** | **73.7%** |
+- **Hậu quả:** Rules [1][2][7] đọc trên file **đã bị cắt nát** ⇒ mọi kết luận của gate **VÔ NGHĨA** (pass rỗng). Đây chính là **lý do thật** khiến probe "token chết ở learn.css" báo BỎ LỌT mà không ai biết.
+- **Guardrail:**
+  1. **CSS chỉ có comment block** (`/* ... */`). Luật strip comment **DÒNG** (`//`) **CHỈ được chạy cho JS**. Chữ ký hàm phải tường minh: `stripComments(src, isCss)`.
+  2. **BẮT BUỘC đo tỷ lệ ký tự còn lại sau strip** khi viết/nghi ngờ hàm strip: nếu < 95% với file CSS là **dấu hiệu strip đang phá code** (`node -e` cấm — viết file `.js` tạm).
+  3. Gate đọc SOURCE sai ⇒ **mọi rule phụ thuộc nó đều vô giá trị** (SCAR-019). Phải có **PROBE** cho từng rule để chứng minh gate còn "sống".
+
+### [SCAR-035] Bẫy Điều Kiện Tự-Vô-Hiệu `tok === tok` Làm Rule [7] PASS RỖNG (Tái Phạm SCAR-019 lần 4)
+- **Nguyên nhân:** Trong rule [7] (token chết), code cũ viết:
+  ```js
+  const m = ln.match(/^\s*(--[\w-]+)\s*:/);
+  const tok = m[1];
+  if (tok === ln.trim().split(':')[0].trim()) return;   // "bỏ qua dòng --x: var(--x...)"
+  ```
+  Nhưng `tok` **chính là** kết quả parse từ `ln`, và `ln.trim().split(':')[0].trim()` **cũng bằng** `tok` với mọi dòng khai báo hợp lệ ⇒ **điều kiện LUÔN ĐÚNG** ⇒ **MỌI token bị bỏ qua** ⇒ `declaredTokens` **RỖNG** ⇒ rule [7] **PASS RỖNG suốt nhiều vòng check-pass**.
+- **Vì sao không ai phát hiện:** Gate "xanh" nên không ai đọc. Chỉ khi viết **PROBE tiêm token chết vào file canonical** mới lộ: gate **không** bắt được ⇒ "BO LỌT!".
+- **Guardrail:**
+  1. Điều kiện lọc phải kiểm **GIÁ TRỊ (vế phải)**, không kiểm lại chính thứ vừa parse: `if (new RegExp('var\\(\\s*' + tok + '\\s*[,)]').test(val)) return;`
+  2. **Mọi rule gate BẮT BUỘC có PROBE** tiêm lỗi giả ⇒ nếu gate **không** FAIL thì gate **hỏng**, không phải code sạch (SCAR-008/019).
+  3. Nghi ngờ "điều kiện luôn đúng/luôn sai" ⇒ **in ra số lượng đối tượng thu được** (`declaredTokens.length`) chứ không chỉ đọc PASS/FAIL. PASS với **0 đối tượng** là **dấu hiệu đỏ**.
+
+### [SCAR-036] Bẫy Gate Đọc Số Đo "0×0" Do Cắt Sai Vùng (Lookbehind + Pseudo-element Là Rule Riêng)
+- **Nguyên nhân (2 lỗi nối tiếp trong rule [8] touch target):**
+  1. **Lookbehind ăn vào match:** headRegex viết `(?:^|[},])\s*\.row-fav\s*\{` khiến `m.index` **trỏ vào `}`**; `extractBlock` đếm ngoặc từ đó gặp ngay `}` ⇒ depth = −1 ⇒ block bị cắt sai (trả về chuỗi **bắt đầu bằng `}`**). **Sửa:** dùng `(?<=[},])` (lookbehind không tính vào match).
+  2. **Pseudo-element KHÔNG lồng trong rule gốc:** `.row-fav::after { ... }` là một **rule RIÊNG**, không nằm trong `.row-fav { ... }` (đo được: block `.row-fav` dài 1002 ký tự, kết thúc tại `}` rồi mới tới `.row-fav::after`). Lấy `inner` của rule gốc rồi tìm `::after` ⇒ **luôn 0×0** ⇒ báo "thiếu vùng chạm" **SAI** (dương tính giả). **Sửa:** tìm rule có selector `<sel>::after` **trong cùng file**, rồi cắt block riêng.
+- **Guardrail:**
+  1. Khi cắt block CSS bằng cách đếm ngoặc, **BẮT BUỘC dùng lookbehind** cho ký tự phân cách (`(?<=[},])`), **CẤM** đưa phân cách vào match.
+  2. **Pseudo-element/pseudo-class (`::after`, `:hover`, `:focus`) là RULE ĐỘC LẬP** — không được tìm trong thân rule gốc. Phải tìm theo **selector đầy đủ** (`<sel>::after`).
+  3. Số đo `0×0` (hoặc giá trị mặc định) phải được coi là **DẤU HIỆU ĐỎ về phép đo**, không phải kết luận về code. Trước khi báo vi phạm, **in ra vùng vừa cắt** để mắt người kiểm.
+  4. Cấm vòng `while (re.exec) ` với mẫu có thể khớp **rỗng (zero-width)** — phải đẩy `lastIndex`/`indexOf` tiến lên, nếu không sẽ **treo vô tận** (đã gặp thật: gate chạy mãi không kết thúc).
+
+### [SCAR-037] Bẫy Tài Liệu Token Viết Tay Trôi Khỏi Mã Nguồn (SCAR-024 Tái Phạm Lần 4) → ĐÃ CHUYỂN SANG TỰ SINH
+- **Nguyên nhân:** `design-system/tokens.json` là **tài liệu VIẾT TAY**, tự khai `tokenSource: assets/viddar.css` nhưng giá trị **do người gõ**. Không ai đo lại nên trôi âm thầm.
+- **Bằng chứng đo được (2026-09-27, đối chiếu 2 chiều CSS ↔ tài liệu):**
+  | Chỉ số | Số |
+  |---|---|
+  | Token khai báo thật trong **MỌI file .css sống** | **98** |
+  | Token `tokens.json` ghi | **28** |
+  | Token **THIẾU** trong tài liệu | **70** |
+  | Token ghi **SAI giá trị** | **4** (vd `--topbar-bg` ghi `#050505`, CSS thật `rgba(5,5,5,0.92)`; `--border` ghi `#222222`, thật `#222`) |
+- **Bài học cốt lõi (SCAR-024, tái phạm lần 4):** **"Danh sách trong tài liệu KHÔNG phải tập đầy đủ."** Tài liệu viết tay **luôn** trôi; phải **SINH TỪ MÁY**.
+- **Giải pháp đã triển khai (kèm cổng kiểm, kèm PROBE):**
+  1. `scripts/lib/token-manifest.js` — quét **MỌI file .css sống**, strip comment **đúng loại file** (SCAR-034), đếm lượt dùng bằng regex `var\(--x` (SCAR-019). **HERMETIC**: loại trừ `_tmp-*`/`_tmp_*` (khớp `.gitignore`) để kết quả không phụ thuộc rác tạm.
+  2. `scripts/sync-tokens.js` — ghi `design-system/token-manifest.json` + **sinh** `docs/design-system/TOKEN-REFERENCE.md`; có `--check` (exit 1 nếu lệch) giống `sync-counts`.
+  3. `scripts/validate-project.js` — **CHẶN DRIFT**: so `totalTokens` + tập key + **từng giá trị**; lệch ⇒ build **FAIL**, buộc chạy lại `sync-tokens`.
+  4. `design-system/tokens.json` — đánh dấu `_DEPRECATED` + chỉ rõ nguồn thay thế (giữ lại chỉ để tra cứu **lịch sử** giá trị `proposed`).
+- **Kết quả đo:** manifest **98 token / 10 file CSS / 167 file nguồn**; `--check` **exit 0**; **PROBE 3/3** (đổi giá trị / thêm token / xoá token đều bị bắt, phục hồi **byte-identical**).
+- **Guardrail:**
+  1. **CẤM viết tay danh sách token.** Mọi tài liệu token phải **sinh từ CSS** và có cổng `--check` chạy trong `validate-project.js`.
+  2. Phep quet sinh tài liệu **BẮT BUỘC HERMETIC**: loại trừ file tạm (`_tmp-*`), file build, `_backup/`… — nếu không, `--check` sẽ báo **DRIFT GIẢ** ngay sau khi vừa ghi (đã gặp thật: 188 → 189 file khi chạy 1 script tạm).
+  3. Cổng mới **BẮT BUỘC PROBE**: `_tmp-probe-tokens.js` chứng minh bắt được **đổi giá trị / thêm / xoá** token, và phục hồi byte-identical.
+  4. Khi phát hiện "danh sách ≠ thực tế", phải **quét exhaustive theo VAI TRÒ** rồi **đối chiếu 2 CHIỀU** (thiếu ∪ thừa), không chỉ so 1 chiều.
+
+
+

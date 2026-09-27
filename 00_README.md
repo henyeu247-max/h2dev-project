@@ -48,6 +48,6 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 - **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)
 - 4 pipeline trong `pipelines/` · Knowledge Hub trong `knowledge-hub/`
-- `docs/` 143 thư mục (136 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 140/140 khớp
+- `docs/` 144 thư mục (136 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 140/140 khớp
 - Raw kênh: 156 record canonical (149 kênh unique · 7 bản ghi trùng channel); bản hiển thị chuẩn nằm ở `assets/raw-kenh/` và `data-tabs/raw-kenh-mau.json`.
 - Khung tiêu chuẩn nghiệm thu video mẫu mở được quản lý tại `data/video_acceptance.json`, sẵn sàng áp dụng linh hoạt cho bất kỳ đề tài nào được chọn thử nghiệm.

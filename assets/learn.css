@@ -62,7 +62,12 @@ h1,h2,h3 { margin: 0; color: var(--fg); font-family: var(--font-display); letter
 .resume-done { color: var(--success-fg); font-size: 12px; font-weight: 600; }
 .resume-go { display: inline-flex; align-items: center; height: 34px; flex: 0 0 auto; padding: 0 11px; color: #fff; background: var(--brand); border: 1px solid var(--brand); border-radius: 4px; font-size: 12px; font-weight: 600; text-decoration: none; }
 .resume-go:hover { background: var(--brand-hover); }
-.hidden { display: none !important; }
+/* P1-P2 (2026-09-27): `.hidden` DA CHUYEN sang assets/h2dev-primitives.css.
+   LY DO (loi THAT do duoc): rule cu `.hidden { display:none !important }` mang `!important`
+   nen NO DUNG do specificity, de nguyen van de. Nhung `.search-clear` duoc NANG len 44px
+   (WCAG 2.5.5) -> khi o trang thai an, nut 44px van nam DE len input -> BAM TRUNG nut an
+   => "khong go duoc chu" o o tim kiem. Nut an phai la `display:none` KHONG !important
+   de rule hien thi co specificity cao hon thang duoc. */
 
 /* Four functional views—not decorative tabs. */
 .tabbar { display: flex; width: min(1120px, calc(100% - 56px)); margin: 18px auto 0; gap: 3px; padding: 0; border-bottom: 1px solid var(--border); }
@@ -92,10 +97,13 @@ h1,h2,h3 { margin: 0; color: var(--fg); font-family: var(--font-display); letter
 .lesson-row.is-watched:hover .row-title { color: var(--success-fg); }
 
 .search-bar { position: relative; width: min(520px,100%); margin: 0 auto 16px; }
-.search-bar input { width: 100%; min-width: 0; height: 40px; padding: 0 40px; color: var(--fg); background: var(--bg-subtle); border: 1px solid var(--border); border-radius: 4px; font: 13px var(--font-sans); }
+/* P1-P2 TOUCH (2026-09-27): input 40px -> 44px de CHUA duoc nut clear 44px
+   (WCAG 2.5.5: touch target >= 44px). Do truoc: .search-clear 24x24. Do sau: 44x44. */
+.search-bar input { width: 100%; min-width: 0; height: 44px; padding: 0 50px; color: var(--fg); background: var(--bg-subtle); border: 1px solid var(--border); border-radius: 4px; font: 13px var(--font-sans); }
 .search-bar input:focus { outline: none; border-color: var(--brand); box-shadow: var(--focus-ring); }
 .search-ico { position: absolute; top: 50%; left: 13px; display: grid; color: var(--fg-muted); transform: translateY(-50%); pointer-events: none; }
-.search-clear { position: absolute; top: 50%; right: 8px; display: grid; place-items: center; width: 24px; height: 24px; padding: 0; color: var(--fg-muted); background: transparent; border: 0; border-radius: 4px; transform: translateY(-50%); }
+.search-clear { position: absolute; top: 50%; right: 0; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; color: var(--fg-muted); background: transparent; border: 0; border-radius: 4px; transform: translateY(-50%); }
+.search-clear.hidden { display: none; }   /* phai khai SAU rule tren (cung specificity 0,2,0 > 0,1,0 cua .hidden o primitives) */
 .search-clear:hover { color: var(--fg); background: var(--surface-2); }
 .s-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(min(260px,100%),1fr)); gap: 10px; }
 .s-card { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px; color: var(--fg); background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px; text-decoration: none; }

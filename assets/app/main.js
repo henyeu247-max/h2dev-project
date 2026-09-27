@@ -119,7 +119,7 @@
     }
     function renderLoadErrorBanner() {
       if (!_loadErrors.length) return '';
-      return '<div class="card p-4 mb-4 border-red-800" role="alert"><strong class="text-white">Không tải được một số dữ liệu</strong><ul class="text-xs text-gray-400 mt-2" style="margin:0;padding-left:1rem;list-style:disc">' +
+      return '<div class="card p-4 mb-6 border-red-800" role="alert"><strong class="text-white">Không tải được một số dữ liệu</strong><ul class="text-xs text-gray-400 mt-2" style="margin:0;padding-left:1rem;list-style:disc">' +
         _loadErrors.map(x => '<li>' + esc(x.path) + ' — ' + esc(x.msg) + '</li>').join('') +
         '</ul></div>';
     }
@@ -741,7 +741,7 @@
         const hdEl = document.getElementById("hd-stats");
         if (hdEl && window._cachedStatsText) hdEl.textContent = window._cachedStatsText;
       } catch (error) {
-        el.innerHTML = `<div class="card p-6 border-red-800" role="alert"><h2 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h2><p class="text-gray-300">${esc(error.message)}</p><button type="button" class="mt-4 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm" data-action="retry-render">Thử lại</button></div>`;
+        el.innerHTML = `<div class="card p-4 sm:p-5 border-red-800" role="alert"><h2 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h2><p class="text-gray-300">${esc(error.message)}</p><button type="button" class="mt-4 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm" data-action="retry-render">Thử lại</button></div>`;
       } finally { el.setAttribute("aria-busy", "false"); }
     }
 
@@ -1489,7 +1489,7 @@
                   <img src="https://i.ytimg.com/vi/${demoVid.videoId}/hqdefault.jpg" alt="${esc(demoVid.title)}" width="480" height="360" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.85);">
                   <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.5) 100%); display:flex; flex-direction:column; justify-content:space-between; padding:0.85rem 1rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem;">
-                      <span style="font-size: 12px; font-weight:700; color:#fff; background:rgba(0,0,0,0.75); padding:0.25rem 0.6rem; border-radius:0.375rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); line-clamp:1;" class="line-clamp-1">
+                      <span style="font-size: 12px; font-weight:700; color:#fff; background:rgba(0,0,0,0.75); padding:0.25rem 0.6rem; border-radius:0.375rem; backdrop-filter:blur(var(--h2-badge-blur)); border:1px solid rgba(255,255,255,0.15); line-clamp:1;" class="line-clamp-1">
                         ${esc(demoVid.title)}
                       </span>
                       ${demoVid.duration ? `<span style="font-size: 12px; font-weight:700; color:#fff; background:rgba(0,0,0,0.85); padding:0.2rem 0.5rem; border-radius:0.375rem;">${formatDuration(demoVid.duration)}</span>` : ''}
@@ -1501,7 +1501,7 @@
                     </button>
 
                     <!-- Bottom Info Strip -->
-                    <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:#e2e8f0; background:rgba(0,0,0,0.65); padding:0.35rem 0.75rem; border-radius:0.5rem; backdrop-filter:blur(4px);">
+                    <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:#e2e8f0; background:rgba(0,0,0,0.65); padding:0.35rem 0.75rem; border-radius:0.5rem; backdrop-filter:blur(var(--h2-badge-blur));">
                       <span class="inline-flex items-center gap-1">${ico('eye', 14)} <strong class="c-sky">${formatNum(demoVid.views)}</strong> views</span>
                       ${demoVid.vph != null ? `<span class="inline-flex items-center gap-1">${ico('zap', 14)} <strong class="c-amber-500">${Math.round(demoVid.vph)}</strong> VPH</span>` : ''}
                       <span class="inline-flex items-center gap-1">${ico('calendar', 14)} Xuất bản: ${demoVid.publishedAt ? demoVid.publishedAt.slice(0, 10) : 'N/A'}</span>
@@ -1696,7 +1696,7 @@
                         <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" width="320" height="180" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;" class="group-hover:scale-105">
                         
                         <!-- Rank Badge -->
-                        <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size: 11px; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.15); z-index:var(--h2-z-base);" title="Display Rank theo views giảm dần${sourceRank ? ' · Source Rank gốc: #' + sourceRank : ''}">#${displayRank}</span>
+                        <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size: 11px; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(var(--h2-badge-blur)); border:1px solid rgba(255,255,255,0.15); z-index:var(--h2-z-base);" title="Display Rank theo views giảm dần${sourceRank ? ' · Source Rank gốc: #' + sourceRank : ''}">#${displayRank}</span>
                         
                         <!-- Mini Open YouTube Icon Link -->
                         <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" class="js-stop-prop hover:text-white hover:bg-red-600 transition-colors" style="position:absolute; top:0.35rem; right:0.35rem; background:rgba(0,0,0,0.75); color:#94a3b8; font-size: 11px; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; text-decoration:none; display:inline-flex; align-items:center; gap:0.2rem; border:1px solid rgba(255,255,255,0.1); z-index:var(--h2-z-base);" title="Mở tab YouTube ngoài">

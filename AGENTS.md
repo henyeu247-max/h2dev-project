@@ -170,3 +170,17 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   5. Với thay đổi typography như line-height, **bằng chứng TẤT ĐỊNH nằm ở DOM/khai báo, không nằm ở pixel**: so tập `(font-size × line-height)` runtime trước/sau + `git show HEAD:<file>` đối chiếu số khai báo. Pixel chỉ là **phụ trợ**.
   6. Thay đổi cỡ chữ nhỏ (line-height ±0.05) **không thể** tạo diff 45–81% — con số vô lý về mặt vật lý thì **phải nghi phép đo trước tiên**.
 
+### [SCAR-028] Bẫy Regex Gate Bỏ Lọt Do Đòi Khoảng Trắng Cố Định + Cộng Dồn Số Liệu Khi Quét Nhiều Trạng Thái
+- **Nguyên nhân (2 lỗi độc lập, đều đã chứng minh bằng đo):**
+  1. **Gate bỏ lọt:** luật `[3]` viết `/backdrop-filter\s*:\s*blur\((\d+)px\)/` — **đòi đúng 1 khoảng trắng sau dấu `:`**. Nhưng `assets/app/main.js` viết inline `backdrop-filter:blur(4px)` (**không có khoảng trắng**). ⇒ **3 chỗ `blur(4px)` ngoài chuẩn sống sót qua nhiều vòng gate ALL PASS**. Phát hiện được **chỉ nhờ check-pass TIME RUNTIME** (đo `getComputedStyle().backdropFilter` thấy `blur(4px) x96`).
+  2. **Cộng dồn sai:** script check-pass **cộng dồn số liệu qua từng lượt quét** (mỗi tab click = 1 trạng thái DOM khác). Giá trị của trạng thái A bị **tính lẫn** sang trạng thái B ⇒ báo **"font-size 13.3333px x864"** và **"z-index số x159"** — trong khi đo **cô lập từng trạng thái thì cả 2 đều = 0**.
+- **Bài học cốt lõi:** (a) Regex bắt thuộc tính **CẤM đòi khoảng trắng/định dạng cố định** — phải `\s*`. (b) Khi quét **nhiều trạng thái**, ghi vào **Set (khử trùng)** chứ **cấm cộng dồn** — nếu không sẽ sinh số liệu "ma".
+- **Guardrail:**
+  1. Regex gate cho CSS **BẮT BUỘC** dùng `\s*` quanh `:` và trong `(` `)`; cấm giả định `dấu_cách` cố định.
+  2. Mọi luật gate có regex **BẮT BUỘC PROBE đúng dạng đã từng lọt** (ở đây: `blur(12px)` inline không space) — đã thêm vào PROBE `gate-p1.js` (8/8).
+  3. Khi quét nhiều trạng thái/lượt: **khử trùng theo TẬP HỢP**, và **in rõ "đã khử trùng"**; cấm cộng dồn thô.
+  4. Khi số liệu vô lý (x864, x159) → **đo lại CÔ LẬP 1 trạng thái** trước khi kết luận. Cả 2 ca trên cô lập đều = 0 ⇒ số liệu sai nằm ở **phép đo**, không ở UI.
+  5. **Chuẩn blur đã tách theo NGỮ CẢNH (SCAR-021):** `10px` (`--h2-backdrop-blur`) cho modal/header; **`4px` (`--h2-badge-blur`) cho badge nhỏ trên ảnh** (badge cao ~20px, 10px blur là quá nặng). Đã thêm token `--h2-badge-blur` và ghi rõ lý do trong `h2dev-tokens.css`.
+  6. **`z-index` chuẩn dùng `.z-[N]` là HỢP LỆ nếu Tailwind build thật có sinh class** — SCAR-023 cấm `z-[1]` vì **build không sinh**; nhưng `.z-10` **có** trong `tailwind.css` (`{.z-10{z-index:10}}`) nên **vẫn chạy**. Tuy vậy vì **ngoài thang 8 bậc** nên đã chuyển 2 chỗ sang `var(--h2-z-base)`. **Bài học: đừng suy diễn class Tailwind nào "không có" — phải grep `tailwind.css` để chứng minh.**
+  7. **`font-size: 13.3333px` (10pt) là UA default** của `<input>/<select>` — **đã chứng minh** bằng cách quét **toàn bộ `document.styleSheets`**: **không rule nào** set giá trị này. Cấm báo đây là lỗi dự án.
+

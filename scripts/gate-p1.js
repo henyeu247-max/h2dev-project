@@ -120,9 +120,13 @@ function findViolations(files) {
         if (m) v.zIndexNum.push({ file: f.rel, line: L, txt: ln.trim().slice(0, 120), val: m[1] });
       }
 
-      // [3] blur ngoai 10px
-      const bm = ln.match(/backdrop-filter\s*:\s*blur\((\d+(?:\.\d+)?)px\)/);
-      if (bm && bm[1] !== '10') v.blur.push({ file: f.rel, line: L, txt: ln.trim().slice(0, 120), val: bm[1] });
+      // [3] blur ngoai chuan. Chuan: 10px (--h2-backdrop-blur) cho modal/header,
+      // 4px (--h2-badge-blur) cho badge nho tren anh (SCAR-021: dung ngu canh).
+      // SCAR-008/027: BAT BUOC cho phep KHOANG TRANG TUY Y (`blur(12px)` va `blur( 12px )`)
+      // va ca dang `blur(var(--token))` — truoc day regex doi co dung 1 khoang trang
+      // nen `backdrop-filter:blur(4px)` (inline, khong space) LOT LUOI.
+      const bm = ln.match(/backdrop-filter\s*:\s*blur\(\s*(\d+(?:\.\d+)?)px\s*\)/);
+      if (bm && bm[1] !== '10' && bm[1] !== '4') v.blur.push({ file: f.rel, line: L, txt: ln.trim().slice(0, 120), val: bm[1] });
 
       // [5] CHI cam `z-[N]` — day la class DA CHUNG MINH khong ton tai trong tailwind.css
       // (build that chi sinh .z-10/.z-50). Cac arbitrary value khac (min-h-[38px],
@@ -232,6 +236,8 @@ function probe() {
   const injections = [
     { name: 'hex nen panel (#0f172a)', file: target, content: orig + '\n.probe-x { background: #0f172a; }\n' },
     { name: 'blur 28px', file: target, content: orig + '\n.probe-y { backdrop-filter: blur(28px); }\n' },
+    // SCAR-027: probe DUNG dang da tung LOT LUOI — inline, KHONG co khoang trang
+    { name: 'blur 12px inline khong space (lo hong da tung lot)', file: target, content: orig, html: origHtml.replace('</body>', '<span style="backdrop-filter:blur(12px)">probe</span>\n</body>') },
     { name: 'line-height 1.75 (lech xa)', file: target, content: orig + '\n.probe-z { line-height: 1.75; }\n' },
     { name: 'letter-spacing 0.08em', file: target, content: orig + '\n.probe-w { letter-spacing: 0.08em; }\n' },
     { name: 'z-index so', file: target, content: orig + '\n.probe-v { z-index: 9999; }\n' },

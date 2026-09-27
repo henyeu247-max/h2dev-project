@@ -633,6 +633,13 @@
     async function render() {
       const el = document.getElementById('content');
       el.setAttribute('aria-busy', 'true');
+      /* P2-H2 (2026-09-27): hien SKELETON ngay khi bat dau render.
+         Ly do: truoc day khi doi tab / tai lai, panel trong hoan toan -> nguoi dung
+         khong biet dang tai. Chi hien khi panel DANG TRONG (khong de skeleton de len
+         noi dung da render san -> tranh nhay giat). */
+      if (window.H2Core && H2Core.skeletonList && el.children.length === 0) {
+        el.innerHTML = H2Core.skeletonList(6, { thumb: true, lines: 2 });
+      }
 
       // 1. Capture active input & cursor position before re-render
       const activeEl = document.activeElement;
@@ -890,7 +897,7 @@
           modal.setAttribute('aria-modal', 'true');
           modal.setAttribute('aria-label', 'Hồ sơ kênh raw');
           modal.tabIndex = -1;
-          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal); background:rgba(0,0,0,0.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
+          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
           document.body.appendChild(modal);
         }
 
@@ -2084,7 +2091,7 @@
           modal.setAttribute('aria-modal', 'true');
           modal.setAttribute('aria-label', 'Phụ đề & kịch bản video');
           modal.tabIndex = -1;
-          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal-top); background:rgba(0,0,0,0.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
+          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal-top); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
           modal.onclick = (e) => {
             if (e.target === modal || e.target.id === 'close-video-sub' || (e.target.closest && e.target.closest('#close-video-sub'))) {
               modal.style.display = 'none';
@@ -2294,7 +2301,7 @@
           modal.setAttribute('aria-modal', 'true');
           modal.setAttribute('aria-label', 'Xem ảnh raw kênh');
           modal.tabIndex = -1;
-          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal); background:rgba(0,0,0,0.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
+          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
           modal.onclick = (e) => {
             if (e.target === modal || e.target.id === 'close-raw-img' || (e.target.closest && e.target.closest('#close-raw-img'))) {
               modal.style.display = 'none';
@@ -2335,7 +2342,7 @@
           modal.setAttribute('aria-modal', 'true');
           modal.setAttribute('aria-label', 'Xem nhanh video YouTube');
           modal.tabIndex = -1;
-          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal-top); background:rgba(0,0,0,0.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
+          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal-top); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
           
           const closeModal = () => {
             modal.style.display = 'none';

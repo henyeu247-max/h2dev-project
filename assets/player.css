@@ -168,8 +168,8 @@
   font-size: 12px;
   font-weight: 600;
   box-shadow: 3px 3px 0 rgba(226,2,58,0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--h2-backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--h2-backdrop-blur));
   cursor: pointer;
   opacity: 0;
   transform: translateY(16px) scale(0.92);
@@ -225,6 +225,31 @@
   .player-insights h3 { font-size: 14px !important; }
   #insightTimeline { grid-template-columns: 1fr !important; }
   .player-transcript .transcript-feed { max-height: 300px !important; }
+
+  /* P2-F3 (2026-09-27): BOTTOM-SHEET cho #docModal tren mobile.
+   * Ly do: docModal nam o player.html, ma player.html KHONG nap CSS cua index.html
+   *   (index dinh nghia bottom-sheet cho raw-deep/music-studio/video-transcript/raw-image)
+   *   -> docModal la modal DUY NHAT cua player bi bo sot, hien dang giua man hinh (SCAR-023).
+   * Chuan: giong het 4 modal kia — padding 0, align flex-end, panel cao 95vh, bo goc TREN.
+   * Selector panel con: player.html:209 la <div> dau tien, KHONG co class -> dung `> div`. */
+  #docModal {
+    padding: 0 !important;
+    align-items: flex-end !important;
+  }
+  #docModal > div {
+    max-height: 95vh !important;
+    height: 95vh !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 1.25rem !important;
+    border-top-right-radius: 1.25rem !important;
+    margin: 0 !important;
+  }
+  #docModalBody {
+    max-height: calc(95vh - 65px) !important;
+  }
 }
 
 /* Toast notification — DA CHUYEN sang h2dev-shell.css (muc 9) ngay 2026-09-23.

@@ -300,3 +300,87 @@
   border-color: var(--brand);
   box-shadow: var(--focus-ring);
 }
+
+/* ==========================================================================
+   9. SKELETON — chuan loading cho danh sach/card (P2 2026-09-27)
+   Truoc day toan du an KHONG co skeleton nao (0 cho) -> khi tai danh sach dai
+   nguoi dung chi thay khoang trang. Nay co 1 component duy nhat dung chung 3 trang.
+   Quy uoc:
+     .h2-skeleton           -> khoi xuong mo phong 1 dong noi dung
+     .h2-skeleton--title    -> dong tieu de (cao hon, rong 60%)
+     .h2-skeleton--text     -> dong van ban thuong
+     .h2-skeleton--thumb    -> khoi anh 16:9 (cho card co thumbnail)
+     .h2-skeleton--pill     -> badge/tag nho
+     .h2-skeleton-card      -> khung card chua skeleton (giu nguyen khung .card)
+   Accessibility: khoi skeleton la TRANG TRI -> aria-hidden="true";
+   trang thai "dang tai" do `aria-busy` cua vung noi dung dam nhiem (P2-H1).
+   Ton trong prefers-reduced-motion (tat animation).
+   ========================================================================== */
+.h2-skeleton {
+  display: block;
+  width: 100%;
+  height: var(--h2-font-sm);
+  border-radius: var(--r-md);
+  background: linear-gradient(
+    90deg,
+    var(--surface-2) 0%,
+    var(--border) 50%,
+    var(--surface-2) 100%
+  );
+  background-size: 200% 100%;
+  animation: h2-skeleton-shimmer 1.4s ease-in-out infinite;
+}
+.h2-skeleton--title {
+  height: var(--h2-font-lg);
+  width: 60%;
+  margin-bottom: var(--h2-space-2);
+}
+.h2-skeleton--text { height: var(--h2-font-sm); }
+.h2-skeleton--text + .h2-skeleton--text { margin-top: var(--h2-space-1); }
+.h2-skeleton--text:last-of-type { width: 80%; }
+.h2-skeleton--pill {
+  height: var(--h2-font-lg);
+  width: 72px;
+  border-radius: var(--r-md);
+}
+.h2-skeleton--thumb {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--r-md);
+  margin-bottom: var(--h2-space-3);
+}
+.h2-skeleton-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--h2-space-2);
+  padding: var(--h2-space-4);
+}
+/* Danh sach skeleton boc trong luoi chuan.
+ * SCAR-023: learn.html KHONG nap tailwind.css -> CAM dung class Tailwind
+ * (.gap-4 / .sm:p-5 / .grid) trong skeleton, neu khong gate check-ui-classes
+ * se bao thieu CSS va layout VO tren learn. Dung CSS cua chinh primitives. */
+.h2-skeleton-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--h2-space-4);
+}
+@media (min-width: 640px) {
+  .h2-skeleton-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1280px) {
+  .h2-skeleton-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.h2-skeleton-list > .h2-skeleton-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--h2-space-4);
+}
+@keyframes h2-skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .h2-skeleton { animation: none; }
+}

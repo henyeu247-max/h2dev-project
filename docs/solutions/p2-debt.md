@@ -188,6 +188,20 @@ Sau khi sửa: PASS  0 vi phạm
 | `scripts/gate-p2.js` **[4]** | `aria-busy` trên `#content`/`#panelRoot`/`#playerMain` | mất trạng thái busy |
 | `scripts/gate-p2.js` **[5]** | 4 modal phải có bottom-sheet ở **CẢ 2 rule** trong `index.html` | sót `#raw-image-modal` |
 | `scripts/gate-p2.js` **[6]** | CSS chết `#raw-channel-modal` | block chết quay lại |
+| `scripts/gate-p2.js` **[7] — NÂNG PHẠM VI** | Token chết quét **MỌI file .css sống** (trước chỉ file canonical) | token chết khai ở `learn.css`/`player.css`/`app.css`… |
+| `scripts/gate-p2.js` **[8]** | Touch target < 44px (WCAG 2.5.5/2.5.8): **[8a]** `width`+`height/min-height` ≥ 44 · **[8b]** hình nhỏ hơn thì phải có **rule `::after` RIÊNG** ≥ 44×44 · **[8c]** selector phải được **render thật** trong HTML/JS (chống CSS chết) | `.sec-toggle` 30→44 · `.row-fav` vùng chạm 44 · `.search-clear` 24→44 · modal quick-video |
+| `scripts/sync-tokens.js --check` + `validate-project.js` | Tài liệu token phải **SINH TỪ CSS** và **khớp 100%**; lệch ⇒ build FAIL | `tokens.json` viết tay trôi 70 token + 4 giá trị sai |
+
+### 4.1 Ba lỗi NGHIÊM TRỌNG của chính GATE, lộ ra nhờ `--probe` (đã vá)
+Đây là phần đáng chú ý nhất: **gate báo PASS nhưng KHÔNG hề kiểm gì**. Nếu không chạy PROBE thì **không ai biết**.
+
+| # | Lỗi trong gate | Bằng chứng đo | Hậu quả trước khi vá |
+|---|---|---|---|
+| **B1** | `stripComments` áp luật comment `//` cho **cả file CSS** | Tỷ lệ ký tự còn lại: `h2dev-tokens.css` **26.3%**, `h2dev-components-lesson-row.css` **63.8%**, `learn.css` 72.5% | Rules [1][2][7] đọc **file bị cắt nát** ⇒ mọi kết luận **vô nghĩa** |
+| **B2** | Điều kiện tự-vô-hiệu `tok === ln.trim().split(':')[0].trim()` | `tok` **chính là** kết quả parse của `ln` ⇒ điều kiện **luôn đúng** | **MỌI token bị bỏ qua** ⇒ rule [7] **PASS RỖNG** suốt nhiều vòng |
+| **B3** | `extractBlock` + lookbehind sai, và tìm `::after` **trong thân rule gốc** | Block `.row-fav` dài 1002 ký tự, `::after` **không nằm trong đó** (là rule riêng) | Báo "thiếu vùng chạm" **SAI** (dương tính giả); số đo `0×0` |
+
+**Chứng nhận sau khi vá:** `node scripts/gate-p2.js --probe` → **PROBE OK, 16/16 lượt bắt được lỗi tiêm vào**, phục hồi **byte-identical**.
 
 ---
 
@@ -196,6 +210,26 @@ Sau khi sửa: PASS  0 vi phạm
 - **SCAR-031** — 5 bẫy check-pass: token chết đội lốt alias; token "chốt" mà 0 người dùng; luật gate quá rộng ra "đỏ giả"; đo phần tử size-0 **không truy tổ tiên**; so ảnh lệch vì **state bất đồng bộ**.
 - **SCAR-032** — `git stash` khi so trước/sau trên working tree bẩn: **bắt buộc đếm lại file sau mỗi `pop`** (P2 = 17 file + 1 untracked), `stash list` phải RỖNG.
 - **SCAR-033** — `core.autocrlf=true` làm git in hàng chục dòng cảnh báo LF/CRLF → **che mất** `Saved`/`Dropped`; phải lọc `Select-String -NotMatch 'warning:|LF will be'`.
+- **SCAR-034** — `stripComments` áp luật comment `//` cho **CSS** ⇒ **cắt nát file** (đo được: `h2dev-tokens.css` mất **73.7%**). CSS chỉ có comment block; luật `//` **chỉ dành cho JS**.
+- **SCAR-035** — Điều kiện tự-vô-hiệu `tok === <chính tok>` ⇒ rule [7] **PASS RỖNG**. PASS với **0 đối tượng** là **dấu hiệu đỏ**, không phải "sạch".
+- **SCAR-036** — Gate đọc số đo `0×0` do **lookbehind ăn vào match** + tìm pseudo-element **trong thân rule gốc** (nó là **rule riêng**). Cấm `while(re.exec)` với mẫu khớp **rỗng** (treo vô tận).
+- **SCAR-037** — Tài liệu token viết tay **trôi** khỏi mã nguồn (28 ghi vs **98 thật**, 4 giá trị sai) ⇒ **SINH TỪ CSS** + cổng `--check` + chặn drift trong `validate-project.js`. Phép quét sinh tài liệu phải **HERMETIC** (loại `_tmp-*`), nếu không sẽ báo **DRIFT GIẢ**.
+
+---
+
+## 5.1 Nghiệm thu TOUCH TARGET (task cuối P1-P2) — đo runtime
+
+| Đối tượng | TRƯỚC | SAU | Cách đo |
+|---|---|---|---|
+| `.sec-toggle` | 30×30 (12 chỗ) | **44×44** | `getBoundingClientRect` DOM runtime |
+| `.row-fav` | 32×32 (140 chỗ) | hình **32×32** (giữ nguyên, nằm TRÊN thumbnail) + **vùng chạm `::after` 44×44** | `getComputedStyle(el,'::after')` + **hit-test 4/4 điểm** ở vòng ±20px |
+| `.search-clear` | 24×24 | **44×44** (input 40→44px để chứa) | DOM runtime (mở tab Tìm kiếm, gõ từ khoá) |
+| `#close-quick-video` | 76×31 | **76×44** | DOM runtime sau khi mở modal |
+| `#quick-video-modal a` ("Mở YouTube") | 115×29 | **115×44** | DOM runtime sau khi mở modal |
+
+**Kết quả visual:** `8/8 đạt` trên **mobile 390 + desktop 1440** (`learn.html`), `+2/2` modal quick-video ⇒ **10/10**.
+**Ghi chú kỹ thuật:** `.row-fav` **KHÔNG** được phóng to hình vì nằm **đè lên ảnh thumbnail** (SCAR-021 — token phải áp **đúng ngữ cảnh**); thay vào đó mở rộng **vùng chạm vô hình**. Phải dịch nút về **sát góc** (`top:0;left:0`) vì `.row-thumb` có `overflow:hidden` sẽ **cắt cụt** vùng chạm (đo được: chỉ còn 41×42 khi để `top:4px`).
+
 
 ---
 

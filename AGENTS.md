@@ -156,3 +156,17 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   2. **Kiểm tra trạng thái:** Dùng lệnh kiểm tra đồng bộ dứt khoát 1 lần (single-shot query) hoặc chạy script tổng hợp có timeout cố định.
   3. **Subagent Orchestration:** Trao đổi qua event/message phản ứng (reactive messaging), không truy vấn dồn dập trạng thái con khi con chưa gửi tín hiệu hoàn thành.
 
+### [SCAR-027] Bẫy "So Ảnh Pixel" Báo Động Giả 45–81% Do Viewport + Tab Chưa Vẽ Xong (Tái Phạm SCAR-021)
+- **Nguyên nhân (đo được, không suy đoán):** Khi chụp before/after P1-D rồi so pixel, kết quả ra **45–81% khác** ở `desktop/{kichban,kenh,lotrinh,player}` và `mobile/*` → suýt kết luận "sửa line-height làm vỡ layout". Truy gốc bằng 3 phép đo tất định thì ra **2 lỗi PHƯƠNG PHÁP ĐO, không phải lỗi UI**:
+  1. **Sai chiều cao viewport:** ảnh gốc `after-p37` cao **900px**, bản em chụp cao **1000px**. Vì so pixel dùng `Math.min(w,h)` nên **cùng một hình chữ nhật nhưng chứa nội dung khác** → ~50% khác giả. Bằng chứng: đọc header PNG thật (`byte 20-23`) ra `h=900` vs `h=1000`. **Sửa viewport về đúng 900 → diff tụt từ 48% xuống 1.5%.**
+  2. **Tab chưa vẽ xong / chụp sai tab:** ảnh gốc `LOCAL_desktop_kichban.png` thực chất hiển thị **tab Tổng quan** (số `157/142/15/14`), không phải Kịch bản (`140/157/152/21.08`) → do script gốc click tab **rồi chụp quá sớm**. Và `player` khác nhau chỉ vì **iframe YouTube render/không render** trong headless (chữ `#ptitle`/`#pmeta` giống hệt pixel).
+  3. **Phép thử LỌC NHIỄU đã dùng:** (a) **dò dịch Y** (thử shift −60..+60, tìm offset ít khác nhất) → `bestShift ≈ 0` cho hầu hết ⇒ **không phải lệch do dịch**; (b) **so "dấu vân tay" `fontSizesSeen`** giữa 2 lần chụp ⇒ *content khác nhau* mới gây diff; (c) **tạo ảnh DELTA ghép 3 panel (A | B | khác-biệt)** rồi **tự mắt xem** ⇒ thấy ngay panel A là tab khác.
+- **Bài học cốt lõi:** Diff pixel **chỉ có nghĩa khi viewport + nội dung + thời điểm chụp GIỐNG HỆT**. Khác bất kỳ thứ nào trong 3 thứ đó → số % vô nghĩa. **Ảnh gốc cũng có thể SAI** — không được coi ảnh cũ là chân lý.
+- **Guardrail:**
+  1. Trước khi so 2 ảnh, **BẮT BUỘC đối chiếu kích thước thật** (đọc `width/height` từ header PNG). Lệch → **dừng, chụp lại**, cấm so.
+  2. Trước khi so, **BẮT BUỘC so "dấu vân tay nội dung"** (tập `font-size`, `line-height`, số phần tử, text đặc trưng) giữa 2 lần chụp. Lệch ⇒ đang so **2 màn hình khác nhau**, không phải 2 phiên bản.
+  3. Khi diff > 20%: **BẮT BUỘC dò dịch Y** (±60px) + **sinh ảnh DELTA** rồi **mắt người xem** trước khi kết luận. Cấm báo "hồi quy" chỉ từ con số %.
+  4. **Nội dung động (iframe/media/ads/lazy-load) phải che hoặc chấp nhận sai số** — không tính vào kết luận layout.
+  5. Với thay đổi typography như line-height, **bằng chứng TẤT ĐỊNH nằm ở DOM/khai báo, không nằm ở pixel**: so tập `(font-size × line-height)` runtime trước/sau + `git show HEAD:<file>` đối chiếu số khai báo. Pixel chỉ là **phụ trợ**.
+  6. Thay đổi cỡ chữ nhỏ (line-height ±0.05) **không thể** tạo diff 45–81% — con số vô lý về mặt vật lý thì **phải nghi phép đo trước tiên**.
+

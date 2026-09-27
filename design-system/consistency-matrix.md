@@ -93,8 +93,8 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | Bậc lẻ tùy tiện | ✓ | ✓ | ✓ | ✓ | **0** — đã xoá hết 12 bậc lẻ (9, 9.5, 10, 10.5, 11.5, 12.5, 13.5, 14.5, 15, 17, 22, 26px) | Cấm toàn bộ | ✅ **XONG** |
 | Tailwind arbitrary | ✓ | ✓ | ✓ | ✓ | **0 `text-[Npx]`** — đã chuyển 115 class sang tên chuẩn (`text-2xs/xs/sm/base/md/lg/xl/2xl/3xl`) + khai `safelist` + `fontSize` scale | Dùng class chuẩn, cấm arbitrary | ✅ **XONG** |
 | font-weight | ✓ | ✓ | ✓ | ✓ | **0 vi phạm** — đã xoá `650`(4), `800`(7 CSS + 30 inline), `900`(1), `font-extrabold`, `font-black` | Chốt **400/500/600/700** | ✅ **XONG** |
-| line-height | ✓ | ✓ | ✓ | ✓ | **21 giá trị**: 1, 1.1, 1.15, 1.2, 1.25, 1.28, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6, 1.625, 1.65, 1.75, 1.375, 2, 2.25, 20px | Chốt 6: `1` / `1.2` / `1.35` / `1.5` / `1.6` / `20px` | ⬜ **CÒN NỢ** |
-| letter-spacing | ✓ | ✓ | ✓ | ✓ | **20 giá trị**, cùng giá trị viết nhiều kiểu (`0.08em`/`.08em`, `-0.02em`/`-.02em`) | Chốt 4: `0` / `-0.02em` / `0.02em` / `0.04em`; viết đủ `0.`; **cấm `!important`** | ⬜ **CÒN NỢ** |
+| line-height | ✓ | ✓ | ✓ | ✓ | **24 giá trị runtime** (gốc 29–35). Đo tại runtime: **12.043/12.043 phần tử ĐÚNG thang, 0 lệch**; khai báo trên đĩa **76/76 đúng thang, 0 lệch**. Đã sửa 28 khai báo lệch về bậc chuẩn (1.1/1.15/1.25/1.28/1.3/1.4/1.45/1.55 → 1.2/1.35/1.5). Nguồn `tailwind.css` ghi đè: `.leading-snug` 1.375→1.35, `.leading-relaxed` 1.625→1.6 (khai lại ở `g3-inline.css` + `player.css` vì player KHÔNG nạp g3-inline — SCAR-023) | Chốt 6: `1` / `1.2` / `1.35` / `1.5` / `1.6` / `20px` | ✅ **XONG** |
+| letter-spacing | ✓ | ✓ | ✓ | ✓ | **9 giá trị runtime**, tất cả quy đổi hợp lệ về 4 bậc chuẩn. Đo runtime: **12.043/12.043 ĐÚNG, 0 lệch**. Đã sửa 12 chỗ (`.08em`→`0.04em`, `.05em`→`0.04em`, `-.03em`→`-0.02em`, `.01em`/`-.01em`→`0`); **0 `!important`** | Chốt 4: `0` / `-0.02em` / `0.02em` / `0.04em`; viết đủ `0.`; **cấm `!important`** | ✅ **XONG** |
 | Mono cho tiếng Việt | — | — | — | — | Mono chỉ còn ở `.badge` (mã định danh) | Mono **chỉ** cho số/SKU/code | ✅ **XONG** |
 | Heading mục | ✓ | ✓ | ✓ | ✓ | 3 hệ: `.page-h2` 16px / `text-base font-bold` / `text-sm font-bold` | Chốt **`.page-h2` 16px** | ⬜ **CÒN NỢ** |
 | Căn chỉnh | ✓ | ✓ | ✓ | ✓ | `text-center` 16 lần vs `text-left` 10 lần, cùng loại card chỗ khai báo chỗ không | Chốt theo loại card: nội dung trái, KPI giữa | ⬜ **CÒN NỢ** |
@@ -125,13 +125,13 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | `#raw-channel-modal` | CSS ở `index.html:19-47`, **không có JS/DOM** | **Xóa CSS dead** | P2 |
 | `moreMenuSheet` (`nav.js:73-95`) | **Thiếu toàn bộ**: `role`, `aria-modal`, `aria-label`, focus trap, `ESC` | Đủ 7 yêu cầu a11y modal | P0 |
 | Khôi phục focus khi đóng modal | **CẢ 6 MODAL ĐỀU KHÔNG** | **Bắt buộc** khôi phục focus (**WCAG 2.4.3**) | P0 |
-| Số giá trị z-index | **15 giá trị** khác nhau | Z-index ladder 8 bậc | P0 |
-| `docModal` (player) | `9999` còn modal khác `99999`-`100005` | `--z-modal:1000` cho mọi modal | P0 |
-| `.toast-msg` | `100` → **DƯỚI modal** → toast bị che khi copy trong `docModal` | `--z-toast:300` (trên modal) | P0 |
-| `.more-menu-sheet` | `60` → dưới bottom-nav `100` | `--z-drawer:60`, nếu bị phủ thì nâng lên `100` | P1 |
-| Backdrop blur | **4 mức**: 8/10/12px | Chốt **`blur(10px)`** | P1 |
-| Alpha overlay | **3 mức**: 0.85/0.88/0.92 | Chốt **`0.92`** | P1 |
-| Nền panel | **4 mã**: `#0b0f19`/`#0f172a`/`#111827`/`#070a12` | Token `--surface` / `--surface-2` | P1 |
+| Số giá trị z-index | **0 z-index dạng số** (gốc 15 giá trị) — 100% dùng thang token `--h2-z-*` | Z-index ladder 8 bậc | ✅ **XONG** |
+| `docModal` (player) | đã về `var(--h2-z-modal)`; modal khác cũng về token | `--z-modal:1000` cho mọi modal | ✅ **XONG** |
+| `.toast-msg` | về `var(--h2-z-toast)` (trên modal) | `--z-toast:300` (trên modal) | ✅ **XONG** |
+| `.more-menu-sheet` | về `var(--h2-z-drawer)` | `--z-drawer:60`, nếu bị phủ thì nâng lên `100` | ✅ **XONG** |
+| Backdrop blur | **1 mức: 10px** cho mọi backdrop (đã sửa `player.css:166` 12px→10px, `music_player_modal.js:124` 12px→10px) | Chốt **`blur(10px)`** | ✅ **XONG** |
+| Alpha overlay | **1 mức: 0.92** qua `--h2-overlay-bg`. Lưu ý **`.more-menu-backdrop` giữ 0.45** (backdrop MENU ≠ modal — SCAR-021: áp 0.92 làm tối đen, 59% pixel đổi, không đọc được nội dung) | Chốt **`0.92`** cho modal chặn tương tác | ✅ **XONG** |
+| Nền panel | **0 mã navy ngoài chuẩn** (đã chuyển **82 khai báo** ở 11 file → `var(--surface)`/`var(--surface-2)`/`var(--bg)`). Lưu ý: ngoài 4 mã danh sách còn **4 mã navy khác** (`#131d31`×14, `#182234`×8, `#0b1120`, `#090d16`) — danh sách tài liệu KHÔNG phải tập đầy đủ (SCAR-024) | Token `--surface` / `--surface-2` | ✅ **XONG** |
 | Bottom-sheet mobile | Chỉ áp **5 ID**; **bỏ sót `#quick-video-modal`** | Áp cho **mọi** modal | P1 |
 | `#raw-image-modal` | **Thiếu selector panel con** | Bổ sung selector panel | P2 |
 | `docModal` bottom-sheet | **Không có** (player không nạp CSS index) | Bổ sung CSS bottom-sheet cho player | P2 |

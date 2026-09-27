@@ -98,7 +98,7 @@ function readLive() {
 }
 
 function findViolations(files) {
-  const v = { panelHex: [], zIndexNum: [], blur: [], arbitrary: [], inlineImp: [], lineHeight: [], letterSpacing: [] };
+  const v = { panelHex: [], zIndexNum: [], blur: [], arbitrary: [], inlineImp: [], lineHeight: [], letterSpacing: [], purpleCta: [], adHocBtn: [] };
 
   for (const f of files) {
     if (f.missing) continue;
@@ -167,6 +167,25 @@ function findViolations(files) {
           v.letterSpacing.push({ file: f.rel, line: L, val: raw, txt: ln.trim().slice(0, 120) });
         }
       }
+
+      // [8a] P1-E: KHONG dung thu vien mau tim (purple) lam CTA — da thong nhat ve .h2-btn--brand
+      if (/bg-purple-(400|500|600|700)\b/.test(ln)) {
+        v.purpleCta.push({ file: f.rel, line: L, txt: ln.trim().slice(0, 120) });
+      }
+      // [8b] P1-E: nut phai dung HE CHUAN (.h2-btn*/.btn-*), khong tu che to hop padding+mau.
+      // Bat nut <button> co >=3 class mau rieng MA khong co h2-btn/btn- (dau hieu tu che).
+      if (/\bbutton\b/.test(ln) || /<a\s/.test(ln)) {
+        const cm = ln.match(/class="([^"]*)"/);
+        if (cm) {
+          const cls = cm[1];
+          const isStd = /\b(h2-btn|btn-[a-z])/.test(cls);
+          const rawColor = /\bbg-(gradient-to-|rose|blue|indigo|purple|violet|fuchsia|pink|sky|emerald|amber|lime|teal|cyan|orange|slate|zinc|neutral|stone)-\d{2,3}/.test(cls);
+          const hasBoxModel = /\b(py-\d|px-\d|rounded-)/.test(cls);
+          if (!isStd && rawColor && hasBoxModel) {
+            v.adHocBtn.push({ file: f.rel, line: L, txt: ln.trim().slice(0, 130) });
+          }
+        }
+      }
     });
   }
   return v;
@@ -180,7 +199,9 @@ function report(v) {
     ['[5] Class Tailwind arbitrary value (Tailwind khong sinh tu dong)', v.arbitrary],
     ['[6] Inline style co !important tren background/z-index (2 nguon su that - SCAR-022)', v.inlineImp],
     ['[7a] line-height ngoai thang 1 / 1.2 / 1.35 / 1.5 / 1.6 (1.3-1.4 tren chu nho duoc mien)', v.lineHeight],
-    ['[7b] letter-spacing ngoai thang 0 / -0.02em / 0.02em / 0.04em', v.letterSpacing]
+    ['[7b] letter-spacing ngoai thang 0 / -0.02em / 0.02em / 0.04em', v.letterSpacing],
+    ['[8a] CTA dung mau TIM (bg-purple-*) — da thong nhat ve .h2-btn--brand', v.purpleCta],
+    ['[8b] Nut tu che to hop padding + mau raw (dung .h2-btn*/.btn-*)', v.adHocBtn]
   ];
   let total = 0;
   console.log('[gate-p1] Kiem chuan P1 tren ' + LIVE_FILES.length + ' file song');
@@ -205,29 +226,37 @@ function report(v) {
 // --- PROBE: tiem loi gia vao 1 file tam -> gate PHAI bat duoc, roi phuc hoi byte-identical ---
 function probe() {
   const target = path.join(ROOT, 'assets/app/g3-inline.css');
+  const htmlTarget = path.join(ROOT, 'index.html');
   const orig = fs.readFileSync(target, 'utf8');
+  const origHtml = fs.readFileSync(htmlTarget, 'utf8');
   const injections = [
-    { name: 'hex nen panel (#0f172a)', content: orig + '\n.probe-x { background: #0f172a; }\n' },
-    { name: 'blur 28px', content: orig + '\n.probe-y { backdrop-filter: blur(28px); }\n' },
-    { name: 'line-height 1.75 (lech xa)', content: orig + '\n.probe-z { line-height: 1.75; }\n' },
-    { name: 'letter-spacing 0.08em', content: orig + '\n.probe-w { letter-spacing: 0.08em; }\n' },
-    { name: 'z-index so', content: orig + '\n.probe-v { z-index: 9999; }\n' }
+    { name: 'hex nen panel (#0f172a)', file: target, content: orig + '\n.probe-x { background: #0f172a; }\n' },
+    { name: 'blur 28px', file: target, content: orig + '\n.probe-y { backdrop-filter: blur(28px); }\n' },
+    { name: 'line-height 1.75 (lech xa)', file: target, content: orig + '\n.probe-z { line-height: 1.75; }\n' },
+    { name: 'letter-spacing 0.08em', file: target, content: orig + '\n.probe-w { letter-spacing: 0.08em; }\n' },
+    { name: 'z-index so', file: target, content: orig + '\n.probe-v { z-index: 9999; }\n' },
+    // P1-E (SCAR-019: moi luat phai duoc probe)
+    { name: 'CTA mau tim', file: target, content: orig + '\n.probe-u { }\n' , html: origHtml.replace('</body>', '<button class="px-4 py-2 rounded-xl bg-purple-600 text-white">probe</button>\n</body>') },
+    { name: 'nut tu che (raw color + padding)', file: target, content: orig, html: origHtml.replace('</body>', '<button class="px-4 py-2 rounded-xl bg-rose-900/40 text-white">probe</button>\n</body>') }
   ];
   let caught = 0;
   console.log('\n--- PROBE gate-p1: tiem loi gia, xac nhan gate BAT DUOC ---');
   for (const inj of injections) {
-    fs.writeFileSync(target, inj.content);
+    fs.writeFileSync(inj.file, inj.content);
+    if (inj.html) fs.writeFileSync(htmlTarget, inj.html);
     const v = findViolations(readLive());
     const ok = v.panelHex.length > 0 || v.blur.length > 0 || v.lineHeight.length > 0 ||
-               v.letterSpacing.length > 0 || v.zIndexNum.length > 0;
+               v.letterSpacing.length > 0 || v.zIndexNum.length > 0 ||
+               v.purpleCta.length > 0 || v.adHocBtn.length > 0;
     console.log('  ' + (ok ? 'BAT DUOC' : 'BO LOT!') + '  -> ' + inj.name +
       '  (hex=' + v.panelHex.length + ', blur=' + v.blur.length + ', lh=' + v.lineHeight.length +
-      ', ls=' + v.letterSpacing.length + ', z=' + v.zIndexNum.length + ')');
+      ', ls=' + v.letterSpacing.length + ', z=' + v.zIndexNum.length +
+      ', purple=' + v.purpleCta.length + ', adhoc=' + v.adHocBtn.length + ')');
     if (ok) caught++;
   }
   fs.writeFileSync(target, orig);
-  const after = fs.readFileSync(target, 'utf8');
-  const identical = after === orig;
+  fs.writeFileSync(htmlTarget, origHtml);
+  const identical = fs.readFileSync(target, 'utf8') === orig && fs.readFileSync(htmlTarget, 'utf8') === origHtml;
   console.log('  Phuc hoi byte-identical: ' + (identical ? 'OK' : 'THAT BAI!'));
   console.log('  KET QUA PROBE: ' + caught + '/' + injections.length + ' luot bat duoc loi tiem vao');
   if (caught !== injections.length || !identical) {

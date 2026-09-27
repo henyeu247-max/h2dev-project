@@ -79,6 +79,44 @@ const EXPECTED_CANONICAL_RAW = C.canonicalRaw;
 if (EXPECTED_VIDEOS === undefined) {
   errors.push('data/counts-manifest.json thieu so lieu — chay: node scripts/sync-counts.js');
 }
+
+// Nguon tai lieu token chuan: design-system/token-manifest.json (ban chot, commit git),
+// SINH TU CSS THAT bang: node scripts/sync-tokens.js
+// Ly do (SCAR-024, tai pham 3 lan): tokens.json viet tay chi ghi 28 token trong khi CSS
+// that co 98 => "danh sach trong tai lieu KHONG phai tap day du". Guard nay ep tai lieu
+// phai luon khop ma nguon, neu lech -> FAIL va buoc chay lai sync-tokens.
+{
+  const { buildManifest } = require('./lib/token-manifest');
+  const tokenManifestPath = 'design-system/token-manifest.json';
+  const docPath = 'docs/design-system/TOKEN-REFERENCE.md';
+  if (!exists(tokenManifestPath)) {
+    errors.push(`thieu ${tokenManifestPath} — chay: node scripts/sync-tokens.js`);
+  } else if (!exists(docPath)) {
+    errors.push(`thieu ${docPath} — chay: node scripts/sync-tokens.js`);
+  } else {
+    const liveTokens = buildManifest();
+    const recorded = JSON.parse(fs.readFileSync(path.join(ROOT, tokenManifestPath), 'utf8'));
+    if (liveTokens.totalTokens !== recorded.totalTokens) {
+      errors.push(`token drift: CSS that co ${liveTokens.totalTokens} token, manifest ghi ${recorded.totalTokens} — chay: node scripts/sync-tokens.js`);
+    } else {
+      const liveKeys = Object.keys(liveTokens.tokens).sort();
+      const recKeys = Object.keys(recorded.tokens || {}).sort();
+      const missing = liveKeys.filter(k => !recKeys.includes(k));
+      const extra = recKeys.filter(k => !liveKeys.includes(k));
+      if (missing.length) errors.push(`token drift: manifest THIEU ${missing.length} token (${missing.slice(0, 5).join(', ')}...) — chay: node scripts/sync-tokens.js`);
+      if (extra.length) errors.push(`token drift: manifest THUA ${extra.length} token (${extra.slice(0, 5).join(', ')}...) — chay: node scripts/sync-tokens.js`);
+      // Doi chieu GIA TRI: khong duoc de tai lieu ghi sai gia tri (ca that: --topbar-bg)
+      let valDrift = 0;
+      for (const k of liveKeys) {
+        if (recorded.tokens[k] && recorded.tokens[k].value !== liveTokens.tokens[k].value) {
+          if (valDrift < 5) errors.push(`token drift: ${k} manifest="${recorded.tokens[k].value}" CSS="${liveTokens.tokens[k].value}" — chay: node scripts/sync-tokens.js`);
+          valDrift++;
+        }
+      }
+      if (valDrift > 5) errors.push(`token drift: ... va ${valDrift - 5} token nua lech gia tri — chay: node scripts/sync-tokens.js`);
+    }
+  }
+}
 if (catalog.length !== EXPECTED_VIDEOS || catalogFull.length !== EXPECTED_VIDEOS || videos.length !== EXPECTED_VIDEOS) {
   errors.push(`Expected ${EXPECTED_VIDEOS} video records; got catalog=${catalog.length}, full=${catalogFull.length}, tabs=${videos.length}`);
 }

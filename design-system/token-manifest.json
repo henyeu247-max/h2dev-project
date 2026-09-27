@@ -1,0 +1,1027 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "MOI file .css SONG (loai tru: _backup/, _archive/, node_modules/, data/, va file build assets/tailwind.css)",
+  "scanner": "scripts/sync-tokens.js",
+  "usageSources": 167,
+  "cssSources": 10,
+  "totalTokens": 98,
+  "tokens": {
+    "--bg": {
+      "value": "#050505",
+      "file": "assets/viddar.css",
+      "line": 52,
+      "uses": 16,
+      "usedIn": [
+        "assets/app/g3-inline.css",
+        "assets/learn.css",
+        "assets/music_player_modal.js",
+        "assets/viddar.css",
+        "design-system/visual-proof.html",
+        "scripts/gate-p1.js",
+        "scripts/gate-p2.js"
+      ]
+    },
+    "--bg-subtle": {
+      "value": "#0a0a0a",
+      "file": "assets/viddar.css",
+      "line": 53,
+      "uses": 7,
+      "usedIn": [
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--border": {
+      "value": "#222",
+      "file": "assets/viddar.css",
+      "line": 56,
+      "uses": 83,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css",
+        "design-system/visual-proof.html"
+      ]
+    },
+    "--border-strong": {
+      "value": "#333",
+      "file": "assets/viddar.css",
+      "line": 57,
+      "uses": 27,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css",
+        "design-system/visual-proof.html"
+      ]
+    },
+    "--bottom-nav-bg": {
+      "value": "rgba(5,5,5,0.94)",
+      "file": "assets/viddar.css",
+      "line": 86,
+      "uses": 1,
+      "usedIn": [
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--brand": {
+      "value": "#E2023A",
+      "file": "assets/viddar.css",
+      "line": 63,
+      "uses": 58,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css",
+        "design-system/visual-proof.html"
+      ]
+    },
+    "--brand-fg": {
+      "value": "#fff",
+      "file": "assets/viddar.css",
+      "line": 65,
+      "uses": 6,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--brand-hover": {
+      "value": "#ff1a4d",
+      "file": "assets/viddar.css",
+      "line": 64,
+      "uses": 15,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--brand-ink": {
+      "value": "#ff8095",
+      "file": "assets/viddar.css",
+      "line": 66,
+      "uses": 22,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--brand-tint": {
+      "value": "#2a0a12",
+      "file": "assets/viddar.css",
+      "line": 67,
+      "uses": 10,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--brand-tint-fg": {
+      "value": "#ff8095",
+      "file": "assets/viddar.css",
+      "line": 68,
+      "uses": 5,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--danger": {
+      "value": "#ff4060",
+      "file": "assets/viddar.css",
+      "line": 78,
+      "uses": 3,
+      "usedIn": [
+        "assets/learn.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--fg": {
+      "value": "#f0f0f0",
+      "file": "assets/viddar.css",
+      "line": 59,
+      "uses": 53,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css",
+        "scripts/gate-p2.js"
+      ]
+    },
+    "--fg-2": {
+      "value": "#dfdfdf",
+      "file": "assets/viddar.css",
+      "line": 60,
+      "uses": 36,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--fg-faint": {
+      "value": "#9ca3af",
+      "file": "assets/viddar.css",
+      "line": 62,
+      "uses": 11,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--fg-muted": {
+      "value": "#a9a9a9",
+      "file": "assets/viddar.css",
+      "line": 61,
+      "uses": 46,
+      "usedIn": [
+        "assets/app/tabs/content.js",
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--focus-ring": {
+      "value": "0 0 0 2px var(--bg), 0 0 0 4px rgba(226,2,58,.6)",
+      "file": "assets/viddar.css",
+      "line": 87,
+      "uses": 13,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--font-display": {
+      "value": "\"Space Grotesk\", var(--font-sans)",
+      "file": "assets/viddar.css",
+      "line": 94,
+      "uses": 8,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--font-mono": {
+      "value": "\"JetBrains Mono\", ui-monospace, \"SF Mono\", Menlo, Monaco, Consolas, monospace",
+      "file": "assets/viddar.css",
+      "line": 93,
+      "uses": 27,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--font-sans": {
+      "value": "\"Inter\", ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+      "file": "assets/viddar.css",
+      "line": 92,
+      "uses": 17,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--h2-backdrop-blur": {
+      "value": "10px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 83,
+      "uses": 25,
+      "usedIn": [
+        "assets/app/main.js",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/music_player_modal.js",
+        "assets/player.css",
+        "assets/viddar.css",
+        "player.html",
+        "scripts/gate-p1.js"
+      ]
+    },
+    "--h2-badge-blur": {
+      "value": "4px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 93,
+      "uses": 1,
+      "usedIn": [
+        "scripts/gate-p1.js"
+      ]
+    },
+    "--h2-container-max": {
+      "value": "min(1120px, 100%)",
+      "file": "assets/h2dev-tokens.css",
+      "line": 73,
+      "uses": 1,
+      "usedIn": [
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-font-2xl": {
+      "value": "24px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 35,
+      "uses": 1,
+      "usedIn": [
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-font-2xs": {
+      "value": "11px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 28,
+      "uses": 8,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-font-3xl": {
+      "value": "32px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 36,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--h2-font-base": {
+      "value": "14px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 31,
+      "uses": 2,
+      "usedIn": [
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-font-lg": {
+      "value": "18px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 33,
+      "uses": 2,
+      "usedIn": [
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-font-md": {
+      "value": "16px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 32,
+      "uses": 4,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-font-sm": {
+      "value": "13px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 30,
+      "uses": 9,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-font-xl": {
+      "value": "20px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 34,
+      "uses": 1,
+      "usedIn": [
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-font-xs": {
+      "value": "12px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 29,
+      "uses": 2,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-fw-bold": {
+      "value": "700",
+      "file": "assets/h2dev-tokens.css",
+      "line": 56,
+      "uses": 3,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-fw-medium": {
+      "value": "500",
+      "file": "assets/h2dev-tokens.css",
+      "line": 54,
+      "uses": 4,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-fw-regular": {
+      "value": "400",
+      "file": "assets/h2dev-tokens.css",
+      "line": 53,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--h2-fw-semibold": {
+      "value": "600",
+      "file": "assets/h2dev-tokens.css",
+      "line": 55,
+      "uses": 9,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-header-h": {
+      "value": "56px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 71,
+      "uses": 2,
+      "usedIn": [
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-header-pad": {
+      "value": "0 24px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 72,
+      "uses": 1,
+      "usedIn": [
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-icon-14": {
+      "value": "14px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 59,
+      "uses": 6,
+      "usedIn": [
+        "assets/h2dev-icons.css",
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-icon-16": {
+      "value": "16px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 60,
+      "uses": 18,
+      "usedIn": [
+        "assets/h2dev-icons.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-icon-20": {
+      "value": "20px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 61,
+      "uses": 14,
+      "usedIn": [
+        "assets/h2dev-icons.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-icon-24": {
+      "value": "24px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 62,
+      "uses": 10,
+      "usedIn": [
+        "assets/h2dev-icons.css",
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-lh-body": {
+      "value": "1.5",
+      "file": "assets/h2dev-tokens.css",
+      "line": 42,
+      "uses": 3,
+      "usedIn": [
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-lh-body-px": {
+      "value": "20px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 44,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--h2-lh-display": {
+      "value": "1.2",
+      "file": "assets/h2dev-tokens.css",
+      "line": 40,
+      "uses": 4,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-lh-heading": {
+      "value": "1.35",
+      "file": "assets/h2dev-tokens.css",
+      "line": 41,
+      "uses": 12,
+      "usedIn": [
+        "assets/app/g3-inline.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/player.css"
+      ]
+    },
+    "--h2-lh-none": {
+      "value": "1",
+      "file": "assets/h2dev-tokens.css",
+      "line": 39,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--h2-lh-prose": {
+      "value": "1.6",
+      "file": "assets/h2dev-tokens.css",
+      "line": 43,
+      "uses": 2,
+      "usedIn": [
+        "assets/app/g3-inline.css",
+        "assets/player.css"
+      ]
+    },
+    "--h2-ls-label": {
+      "value": "0.02em",
+      "file": "assets/h2dev-tokens.css",
+      "line": 49,
+      "uses": 1,
+      "usedIn": [
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-ls-micro": {
+      "value": "0.04em",
+      "file": "assets/h2dev-tokens.css",
+      "line": 50,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--h2-ls-normal": {
+      "value": "0",
+      "file": "assets/h2dev-tokens.css",
+      "line": 47,
+      "uses": 1,
+      "usedIn": [
+        "assets/h2dev-primitives.css"
+      ]
+    },
+    "--h2-ls-tight": {
+      "value": "-0.02em",
+      "file": "assets/h2dev-tokens.css",
+      "line": 48,
+      "uses": 6,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-motion-base": {
+      "value": "200ms",
+      "file": "assets/h2dev-tokens.css",
+      "line": 77,
+      "uses": 2,
+      "usedIn": [
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-motion-ease": {
+      "value": "cubic-bezier(.2, .6, .3, 1)",
+      "file": "assets/h2dev-tokens.css",
+      "line": 79,
+      "uses": 13,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-motion-fast": {
+      "value": "120ms",
+      "file": "assets/h2dev-tokens.css",
+      "line": 76,
+      "uses": 11,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-motion-slow": {
+      "value": "300ms",
+      "file": "assets/h2dev-tokens.css",
+      "line": 78,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--h2-overlay-alpha": {
+      "value": "0.92",
+      "file": "assets/h2dev-tokens.css",
+      "line": 87,
+      "uses": 1,
+      "usedIn": [
+        "assets/h2dev-tokens.css"
+      ]
+    },
+    "--h2-overlay-bg": {
+      "value": "rgba(0, 0, 0, var(--h2-overlay-alpha))",
+      "file": "assets/h2dev-tokens.css",
+      "line": 88,
+      "uses": 6,
+      "usedIn": [
+        "assets/app/main.js",
+        "assets/music_player_modal.js",
+        "player.html"
+      ]
+    },
+    "--h2-space-1": {
+      "value": "4px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 20,
+      "uses": 8,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-space-2": {
+      "value": "8px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 21,
+      "uses": 8,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-space-3": {
+      "value": "12px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 22,
+      "uses": 11,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-space-4": {
+      "value": "16px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 23,
+      "uses": 15,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-space-6": {
+      "value": "24px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 24,
+      "uses": 5,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-space-8": {
+      "value": "32px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 25,
+      "uses": 3,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-touch-min": {
+      "value": "44px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 65,
+      "uses": 15,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--h2-translate-max": {
+      "value": "4px",
+      "file": "assets/h2dev-tokens.css",
+      "line": 80,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--h2-z-base": {
+      "value": "1",
+      "file": "assets/h2dev-tokens.css",
+      "line": 101,
+      "uses": 7,
+      "usedIn": [
+        "assets/app/tabs/content.js",
+        "assets/h2dev-components-lesson-row.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--h2-z-drawer": {
+      "value": "60",
+      "file": "assets/h2dev-tokens.css",
+      "line": 104,
+      "uses": 4,
+      "usedIn": [
+        "assets/h2dev-shell.css",
+        "assets/player.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--h2-z-fixed": {
+      "value": "40",
+      "file": "assets/h2dev-tokens.css",
+      "line": 103,
+      "uses": 3,
+      "usedIn": [
+        "assets/learn.css"
+      ]
+    },
+    "--h2-z-modal": {
+      "value": "1000",
+      "file": "assets/h2dev-tokens.css",
+      "line": 107,
+      "uses": 3,
+      "usedIn": [
+        "assets/app/main.js",
+        "player.html"
+      ]
+    },
+    "--h2-z-modal-top": {
+      "value": "1010",
+      "file": "assets/h2dev-tokens.css",
+      "line": 108,
+      "uses": 4,
+      "usedIn": [
+        "assets/app/main.js",
+        "assets/music_player_modal.js",
+        "assets/viddar.css"
+      ]
+    },
+    "--h2-z-sticky": {
+      "value": "20",
+      "file": "assets/h2dev-tokens.css",
+      "line": 102,
+      "uses": 3,
+      "usedIn": [
+        "assets/h2dev-shell.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--h2-z-toast": {
+      "value": "300",
+      "file": "assets/h2dev-tokens.css",
+      "line": 106,
+      "uses": 3,
+      "usedIn": [
+        "assets/h2dev-shell.css"
+      ]
+    },
+    "--h2-z-topbar-mobile": {
+      "value": "100",
+      "file": "assets/h2dev-tokens.css",
+      "line": 105,
+      "uses": 6,
+      "usedIn": [
+        "assets/h2dev-shell.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--hairline": {
+      "value": "#1a1a1a",
+      "file": "assets/viddar.css",
+      "line": 58,
+      "uses": 10,
+      "usedIn": [
+        "assets/h2dev-shell.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--info": {
+      "value": "#00ccff",
+      "file": "assets/viddar.css",
+      "line": 79,
+      "uses": 4,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--pad-page": {
+      "value": "28px",
+      "file": "assets/viddar.css",
+      "line": 91,
+      "uses": 1,
+      "usedIn": [
+        "assets/viddar.css"
+      ]
+    },
+    "--r-lg": {
+      "value": "4px",
+      "file": "assets/viddar.css",
+      "line": 89,
+      "uses": 8,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--r-md": {
+      "value": "4px",
+      "file": "assets/viddar.css",
+      "line": 88,
+      "uses": 14,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--red-300": {
+      "value": "#ff8095",
+      "file": "assets/viddar.css",
+      "line": 71,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--red-400": {
+      "value": "#ff4060",
+      "file": "assets/viddar.css",
+      "line": 72,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--red-50": {
+      "value": "#2a0a12",
+      "file": "assets/viddar.css",
+      "line": 69,
+      "uses": 5,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/learn.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--red-50-fg": {
+      "value": "#ff8095",
+      "file": "assets/viddar.css",
+      "line": 70,
+      "uses": 2,
+      "usedIn": [
+        "assets/h2dev-primitives.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--red-500": {
+      "value": "#E2023A",
+      "file": "assets/viddar.css",
+      "line": 73,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--red-700": {
+      "value": "#8a0122",
+      "file": "assets/viddar.css",
+      "line": 74,
+      "uses": 1,
+      "usedIn": [
+        "assets/viddar.css"
+      ]
+    },
+    "--row-h": {
+      "value": "36px",
+      "file": "assets/viddar.css",
+      "line": 90,
+      "uses": 1,
+      "usedIn": [
+        "assets/viddar.css"
+      ]
+    },
+    "--sidebar-active-bg": {
+      "value": "#1a1a1a",
+      "file": "assets/viddar.css",
+      "line": 82,
+      "uses": 1,
+      "usedIn": [
+        "assets/viddar.css"
+      ]
+    },
+    "--sidebar-active-fg": {
+      "value": "#f0f0f0",
+      "file": "assets/viddar.css",
+      "line": 83,
+      "uses": 1,
+      "usedIn": [
+        "assets/viddar.css"
+      ]
+    },
+    "--sidebar-bg": {
+      "value": "var(--bg)",
+      "file": "assets/viddar.css",
+      "line": 81,
+      "uses": 1,
+      "usedIn": [
+        "assets/viddar.css"
+      ]
+    },
+    "--sidebar-hover-bg": {
+      "value": "#141414",
+      "file": "assets/viddar.css",
+      "line": 84,
+      "uses": 1,
+      "usedIn": [
+        "assets/viddar.css"
+      ]
+    },
+    "--sidebar-w": {
+      "value": "240px",
+      "file": "assets/viddar.css",
+      "line": 80,
+      "uses": 1,
+      "usedIn": [
+        "assets/viddar.css"
+      ]
+    },
+    "--signal-amber": {
+      "value": "#ffcc00",
+      "file": "assets/viddar.css",
+      "line": 95,
+      "uses": 0,
+      "usedIn": []
+    },
+    "--success": {
+      "value": "#00ff88",
+      "file": "assets/viddar.css",
+      "line": 75,
+      "uses": 5,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--success-fg": {
+      "value": "#80ffc4",
+      "file": "assets/viddar.css",
+      "line": 76,
+      "uses": 9,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/learn.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--surface": {
+      "value": "#0f0f0f",
+      "file": "assets/viddar.css",
+      "line": 54,
+      "uses": 71,
+      "usedIn": [
+        "assets/app/g3-inline.css",
+        "assets/app/main.js",
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/learn.css",
+        "assets/music_player_modal.js",
+        "assets/player.css",
+        "assets/viddar.css",
+        "design-system/visual-proof.html",
+        "player.html",
+        "scripts/gate-p1.js"
+      ]
+    },
+    "--surface-2": {
+      "value": "#1a1a1a",
+      "file": "assets/viddar.css",
+      "line": 55,
+      "uses": 55,
+      "usedIn": [
+        "assets/app/main.js",
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/player.css",
+        "assets/viddar.css",
+        "design-system/visual-proof.html",
+        "scripts/gate-p1.js"
+      ]
+    },
+    "--topbar-bg": {
+      "value": "rgba(5,5,5,0.92)",
+      "file": "assets/viddar.css",
+      "line": 85,
+      "uses": 5,
+      "usedIn": [
+        "assets/h2dev-shell.css",
+        "assets/learn.css",
+        "assets/viddar.css"
+      ]
+    },
+    "--warning": {
+      "value": "#ffcc00",
+      "file": "assets/viddar.css",
+      "line": 77,
+      "uses": 4,
+      "usedIn": [
+        "assets/h2dev-components-lesson-row.css",
+        "assets/h2dev-primitives.css",
+        "assets/viddar.css"
+      ]
+    }
+  }
+}

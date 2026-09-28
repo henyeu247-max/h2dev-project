@@ -140,13 +140,17 @@
           }
           return;
         }
-        if (e.target === modal || e.target.id === 'close-music-studio' || e.target.closest('#close-music-studio')) {
+        if (e.target === modal || e.target.id === 'close-music-studio' || (e.target.closest && e.target.closest('#close-music-studio'))) {
           modal.style.display = 'none';
           document.body.style.overflow = '';
           modal.querySelectorAll('audio').forEach(a => { a.pause(); a.currentTime = 0; });
+          if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+            try { modal._prevActiveElement.focus(); } catch (err) {}
+          }
         }
       };
     }
+    modal._prevActiveElement = document.activeElement;
 
     function renderModalBody() {
       const q = searchQuery.toLowerCase().trim();

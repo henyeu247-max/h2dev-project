@@ -214,8 +214,9 @@ function isDynamicSuffixToken(t, cssUnion) {
   return false;
 }
 
-function main() {
-  const jsonMode = process.argv.includes('--json');
+function runCheck(opts = {}) {
+  const jsonMode = opts.jsonMode || false;
+  const silent = opts.silent || false;
   const report = [];
   let totalMissing = 0;
 
@@ -277,30 +278,45 @@ function main() {
     }
   }
 
-  if (jsonMode) {
-    process.stdout.write(JSON.stringify({ totalMissing, report }, null, 2) + '\n');
-  } else {
-    console.log('[ui-classes] Kiểm tra class HTML <-> CSS thật được nạp');
-    for (const r of report) {
-      if (r.kind === 'ok') {
-        console.log(`  [OK]      ${r.page}  (css: ${r.cssFiles.join(', ')})`);
-      } else if (r.kind === 'missing-css-file') {
-        console.log(`  [LỖI]     ${r.page}  thiếu file CSS: ${r.detail}`);
-      } else {
-        console.log(`  [THIẾU]   ${r.page}  ${r.count} class utility không có trong CSS được nạp:`);
-        for (const c of r.classes) console.log(`              .${c}`);
+  if (!silent) {
+    if (jsonMode) {
+      process.stdout.write(JSON.stringify({ totalMissing, report }, null, 2) + '\n');
+    } else {
+      console.log('[ui-classes] Kiểm tra class HTML <-> CSS thật được nạp');
+      for (const r of report) {
+        if (r.kind === 'ok') {
+          console.log(`  [OK]      ${r.page}  (css: ${r.cssFiles.join(', ')})`);
+        } else if (r.kind === 'missing-css-file') {
+          console.log(`  [LỖI]     ${r.page}  thiếu file CSS: ${r.detail}`);
+        } else {
+          console.log(`  [THIẾU]   ${r.page}  ${r.count} class utility không có trong CSS được nạp:`);
+          for (const c of r.classes) console.log(`              .${c}`);
+        }
+        if (r.warnings && r.warnings.length) {
+          console.log(`  [CẢNH BÁO] ${r.page}  ${r.warnings.length} class custom chưa có CSS (kiểm tra thủ công):`);
+          for (const c of r.warnings) console.log(`              .${c}`);
+        }
       }
-      if (r.warnings && r.warnings.length) {
-        console.log(`  [CẢNH BÁO] ${r.page}  ${r.warnings.length} class custom chưa có CSS (kiểm tra thủ công):`);
-        for (const c of r.warnings) console.log(`              .${c}`);
-      }
+      console.log(totalMissing === 0
+        ? '[ui-classes] OK — mọi class utility dùng trong HTML đều tồn tại trong CSS thật.'
+        : `[ui-classes] THẤT BẠI — tổng ${totalMissing} class utility thiếu CSS.`);
     }
-    console.log(totalMissing === 0
-      ? '[ui-classes] OK — mọi class utility dùng trong HTML đều tồn tại trong CSS thật.'
-      : `[ui-classes] THẤT BẠI — tổng ${totalMissing} class utility thiếu CSS.`);
   }
 
-  process.exitCode = totalMissing === 0 ? 0 : 1;
+  return { totalMissing, report };
 }
 
-main();
+function main() {
+  const jsonMode = process.argv.includes('--json');
+  const res = runCheck({ jsonMode });
+  process.exitCode = res.totalMissing === 0 ? 0 : 1;
+}
+
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  runCheck,
+  main
+};

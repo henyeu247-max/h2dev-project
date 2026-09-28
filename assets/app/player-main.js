@@ -900,6 +900,7 @@ async function viewDocInModal(filePath, title) {
   rawLink.href = filePath;
   bodyEl.innerHTML = '<div class="text-center text-gray-400 py-12 flex flex-col items-center gap-3"><div class="w-6 h-6 border-2 border-brand-500 border-t-transparent rounded-full animate-spin"></div><div>Đang tải tài liệu…</div></div>';
   modal.style.display = 'flex';
+  modal._prevActiveElement = document.activeElement;
   document.body.style.overflow = 'hidden';
 
   try {
@@ -919,7 +920,12 @@ async function viewDocInModal(filePath, title) {
 
 function closeDocModal() {
   const modal = document.getElementById('docModal');
-  if (modal) modal.style.display = 'none';
+  if (modal) {
+    modal.style.display = 'none';
+    if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+      try { modal._prevActiveElement.focus(); } catch (e) {}
+    }
+  }
   document.body.style.overflow = '';
 }
 

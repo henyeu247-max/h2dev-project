@@ -64,3 +64,4 @@ manifest_full.csv
 # Anh chup kiem chung tam (Ephemeral Cleanup)
 _proof-shots/
 models/scrfd/*.onnx
+models/arcface/*.onnx

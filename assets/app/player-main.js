@@ -243,6 +243,10 @@ window.addEventListener('resize', () => {
     if (idx === -1) idx = btns.findIndex(b => b.getAttribute('aria-selected') === 'true');
     if (idx === -1) idx = 0;
     e.preventDefault();
+    /* UI-10 (2026-09-28): HUT SU KIEN tai day — khong cho noi tiep len global keydown
+       (player-main ArrowLeft/Right seek ±5s). Truoc day 1 nut mui ten vua doi tab
+       vua tua video 30s -> 35s (audit da tai hien). */
+    e.stopPropagation();
     let next = idx;
     if (e.key === 'ArrowLeft') next = (idx - 1 + btns.length) % btns.length;
     else if (e.key === 'ArrowRight') next = (idx + 1) % btns.length;
@@ -770,7 +774,13 @@ window.addEventListener('keydown', (e)=>{
   }
 })();
 /* ---------- Toast & Clipboard Helpers ---------- */
+/* UI-08 (2026-09-28): 1 CHU QUYEN toast = H2Core.showToast (index/player deu nap
+   h2dev-core.js truoc player-main.js). Fallback giu ban cu neu core chua san sang. */
 function showToast(msg, duration = 3000) {
+  if (window.H2Core && typeof window.H2Core.showToast === 'function') {
+    window.H2Core.showToast(msg, duration);
+    return;
+  }
   const box = document.getElementById('toast-box') || document.body;
   const el = document.createElement('div');
   el.className = 'toast-msg';

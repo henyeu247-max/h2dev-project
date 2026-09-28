@@ -456,3 +456,33 @@ a.h2-shell-brand .vd-wordmark {
 @media (max-width: 640px) {
   .toast-msg { left: 12px; right: 12px; bottom: 76px; }
 }
+
+/* ==========================================================================
+   10. TOUCH TARGETS ≥44px — UI-09 (2026-09-28, audit h2dev-design-audit-20260928)
+   Nút điều hành nhỏ giữ kích thước HIỂN THỊ (không vỡ layout) nhưng mở rộng
+   VÙNG CHẠM lên 44×44 bằng ::after trong suốt (cùng cơ chế .row-fav đã chốt
+   ở P1-P2). Nút đứng một mình thì nâng min-height 44px trực tiếp.
+   Lưu ý WCAG 2.5.8: các ::after có thể chồng nhẹ nhau ở cụm nút inline —
+   được phép theo mục spacing (inline exception), vẫn đạt AA 24px và gần AAA 44px.
+   ========================================================================== */
+#freset, #freset-empty { min-height: 44px; }
+.btn-open-raw-deep { min-height: 44px; }
+#btnPrev, #btnNext { min-height: 44px; }
+
+.btn-copy-visual-prompt, .btn-copy-visual-kit, .btn-copy-master-prompt,
+.btn-copy-thumb-prompt, .btn-copy-full-packaging, .btn-copy-combined-prompt,
+.js-sug-open-modal {
+  position: relative;
+}
+.btn-copy-visual-prompt::after, .btn-copy-visual-kit::after,
+.btn-copy-master-prompt::after, .btn-copy-thumb-prompt::after,
+.btn-copy-full-packaging::after, .btn-copy-combined-prompt::after,
+.js-sug-open-modal::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -50%);
+}

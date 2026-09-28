@@ -1,0 +1,1053 @@
+{
+ "schema": "h2dev.cascade-t2.v1",
+ "generatedAt": "2026-09-29T03:42:03",
+ "minScore": 0.45,
+ "images": 156,
+ "boxesTotal": 1387,
+ "boxesKept": 794,
+ "boxesFiltered": 593,
+ "filteredRatio": 0.4275,
+ "imagesKeptWithFace": 84,
+ "errors": 0,
+ "results": [
+  {
+   "id": "RAW-001",
+   "faces": 11,
+   "kept": 3,
+   "filtered": 8,
+   "chrominance": 0.373
+  },
+  {
+   "id": "RAW-002",
+   "faces": 13,
+   "kept": 8,
+   "filtered": 5,
+   "chrominance": 0.631
+  },
+  {
+   "id": "RAW-003",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-004",
+   "faces": 3,
+   "kept": 3,
+   "filtered": 0,
+   "chrominance": 0.65
+  },
+  {
+   "id": "RAW-005",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-006",
+   "faces": 1,
+   "kept": 1,
+   "filtered": 0,
+   "chrominance": 0.325
+  },
+  {
+   "id": "RAW-007",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-008",
+   "faces": 2,
+   "kept": 2,
+   "filtered": 0,
+   "chrominance": 0.405
+  },
+  {
+   "id": "RAW-009",
+   "faces": 20,
+   "kept": 7,
+   "filtered": 13,
+   "chrominance": 0.542
+  },
+  {
+   "id": "RAW-010",
+   "faces": 7,
+   "kept": 6,
+   "filtered": 1,
+   "chrominance": 0.459
+  },
+  {
+   "id": "RAW-011",
+   "faces": 71,
+   "kept": 39,
+   "filtered": 32,
+   "chrominance": 0.517
+  },
+  {
+   "id": "RAW-012",
+   "faces": 3,
+   "kept": 0,
+   "filtered": 3,
+   "chrominance": 0.228
+  },
+  {
+   "id": "RAW-013",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-014",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-015",
+   "faces": 7,
+   "kept": 5,
+   "filtered": 2,
+   "chrominance": 0.597
+  },
+  {
+   "id": "RAW-016",
+   "faces": 1,
+   "kept": 1,
+   "filtered": 0,
+   "chrominance": 0.578
+  },
+  {
+   "id": "RAW-017",
+   "faces": 13,
+   "kept": 3,
+   "filtered": 10,
+   "chrominance": 0.583
+  },
+  {
+   "id": "RAW-018",
+   "faces": 47,
+   "kept": 44,
+   "filtered": 3,
+   "chrominance": 0.347
+  },
+  {
+   "id": "RAW-019",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-020",
+   "faces": 3,
+   "kept": 0,
+   "filtered": 3,
+   "chrominance": 0.234
+  },
+  {
+   "id": "RAW-021",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-022",
+   "faces": 2,
+   "kept": 0,
+   "filtered": 2,
+   "chrominance": 0.241
+  },
+  {
+   "id": "RAW-023",
+   "faces": 4,
+   "kept": 0,
+   "filtered": 4,
+   "chrominance": 0.269
+  },
+  {
+   "id": "RAW-024",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-025",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-028",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-029",
+   "faces": 3,
+   "kept": 1,
+   "filtered": 2,
+   "chrominance": 0.499
+  },
+  {
+   "id": "RAW-030",
+   "faces": 4,
+   "kept": 0,
+   "filtered": 4,
+   "chrominance": 0.126
+  },
+  {
+   "id": "RAW-031",
+   "faces": 4,
+   "kept": 4,
+   "filtered": 0,
+   "chrominance": 0.516
+  },
+  {
+   "id": "RAW-032",
+   "faces": 40,
+   "kept": 13,
+   "filtered": 27,
+   "chrominance": 0.382
+  },
+  {
+   "id": "RAW-033",
+   "faces": 28,
+   "kept": 3,
+   "filtered": 25,
+   "chrominance": 0.42
+  },
+  {
+   "id": "RAW-034",
+   "faces": 23,
+   "kept": 2,
+   "filtered": 21,
+   "chrominance": 0.304
+  },
+  {
+   "id": "RAW-035",
+   "faces": 34,
+   "kept": 12,
+   "filtered": 22,
+   "chrominance": 0.357
+  },
+  {
+   "id": "RAW-037",
+   "faces": 25,
+   "kept": 0,
+   "filtered": 25,
+   "chrominance": 0.31
+  },
+  {
+   "id": "RAW-038",
+   "faces": 30,
+   "kept": 11,
+   "filtered": 19,
+   "chrominance": 0.406
+  },
+  {
+   "id": "RAW-039",
+   "faces": 46,
+   "kept": 24,
+   "filtered": 22,
+   "chrominance": 0.528
+  },
+  {
+   "id": "RAW-040",
+   "faces": 47,
+   "kept": 22,
+   "filtered": 25,
+   "chrominance": 0.471
+  },
+  {
+   "id": "RAW-042",
+   "faces": 13,
+   "kept": 7,
+   "filtered": 6,
+   "chrominance": 0.367
+  },
+  {
+   "id": "RAW-043",
+   "faces": 12,
+   "kept": 7,
+   "filtered": 5,
+   "chrominance": 0.471
+  },
+  {
+   "id": "RAW-044",
+   "faces": 10,
+   "kept": 4,
+   "filtered": 6,
+   "chrominance": 0.358
+  },
+  {
+   "id": "RAW-045",
+   "faces": 13,
+   "kept": 7,
+   "filtered": 6,
+   "chrominance": 0.53
+  },
+  {
+   "id": "RAW-046",
+   "faces": 6,
+   "kept": 3,
+   "filtered": 3,
+   "chrominance": 0.658
+  },
+  {
+   "id": "RAW-047",
+   "faces": 16,
+   "kept": 9,
+   "filtered": 7,
+   "chrominance": 0.426
+  },
+  {
+   "id": "RAW-048",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-049",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-050",
+   "faces": 4,
+   "kept": 1,
+   "filtered": 3,
+   "chrominance": 0.182
+  },
+  {
+   "id": "RAW-051",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-052",
+   "faces": 23,
+   "kept": 5,
+   "filtered": 18,
+   "chrominance": 0.469
+  },
+  {
+   "id": "RAW-053",
+   "faces": 5,
+   "kept": 4,
+   "filtered": 1,
+   "chrominance": 0.365
+  },
+  {
+   "id": "RAW-054",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-055",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-056",
+   "faces": 24,
+   "kept": 15,
+   "filtered": 9,
+   "chrominance": 0.386
+  },
+  {
+   "id": "RAW-057",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-058",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-059",
+   "faces": 6,
+   "kept": 0,
+   "filtered": 6,
+   "chrominance": 0.256
+  },
+  {
+   "id": "RAW-060",
+   "faces": 1,
+   "kept": 0,
+   "filtered": 1,
+   "chrominance": 0.247
+  },
+  {
+   "id": "RAW-062",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-063",
+   "faces": 9,
+   "kept": 1,
+   "filtered": 8,
+   "chrominance": 0.27
+  },
+  {
+   "id": "RAW-064",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-065",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-066",
+   "faces": 2,
+   "kept": 0,
+   "filtered": 2,
+   "chrominance": 0.209
+  },
+  {
+   "id": "RAW-067",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-068",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-069",
+   "faces": 8,
+   "kept": 8,
+   "filtered": 0,
+   "chrominance": 0.38
+  },
+  {
+   "id": "RAW-070",
+   "faces": 12,
+   "kept": 7,
+   "filtered": 5,
+   "chrominance": 0.463
+  },
+  {
+   "id": "RAW-075",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-076",
+   "faces": 14,
+   "kept": 11,
+   "filtered": 3,
+   "chrominance": 0.398
+  },
+  {
+   "id": "RAW-077",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-078",
+   "faces": 43,
+   "kept": 37,
+   "filtered": 6,
+   "chrominance": 0.359
+  },
+  {
+   "id": "RAW-079",
+   "faces": 12,
+   "kept": 12,
+   "filtered": 0,
+   "chrominance": 0.505
+  },
+  {
+   "id": "RAW-080",
+   "faces": 5,
+   "kept": 3,
+   "filtered": 2,
+   "chrominance": 0.352
+  },
+  {
+   "id": "RAW-081",
+   "faces": 1,
+   "kept": 1,
+   "filtered": 0,
+   "chrominance": 0.309
+  },
+  {
+   "id": "RAW-082",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-083",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-084",
+   "faces": 10,
+   "kept": 3,
+   "filtered": 7,
+   "chrominance": 0.28
+  },
+  {
+   "id": "RAW-085",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-086",
+   "faces": 8,
+   "kept": 0,
+   "filtered": 8,
+   "chrominance": 0.171
+  },
+  {
+   "id": "RAW-087",
+   "faces": 4,
+   "kept": 2,
+   "filtered": 2,
+   "chrominance": 0.318
+  },
+  {
+   "id": "RAW-088",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-089",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-091",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-092",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-095",
+   "faces": 9,
+   "kept": 1,
+   "filtered": 8,
+   "chrominance": 0.274
+  },
+  {
+   "id": "RAW-096",
+   "faces": 1,
+   "kept": 1,
+   "filtered": 0,
+   "chrominance": 0.444
+  },
+  {
+   "id": "RAW-097",
+   "faces": 12,
+   "kept": 12,
+   "filtered": 0,
+   "chrominance": 0.452
+  },
+  {
+   "id": "RAW-098",
+   "faces": 36,
+   "kept": 36,
+   "filtered": 0,
+   "chrominance": 0.406
+  },
+  {
+   "id": "RAW-099",
+   "faces": 10,
+   "kept": 5,
+   "filtered": 5,
+   "chrominance": 0.331
+  },
+  {
+   "id": "RAW-100",
+   "faces": 5,
+   "kept": 3,
+   "filtered": 2,
+   "chrominance": 0.576
+  },
+  {
+   "id": "RAW-101",
+   "faces": 14,
+   "kept": 3,
+   "filtered": 11,
+   "chrominance": 0.33
+  },
+  {
+   "id": "RAW-102",
+   "faces": 28,
+   "kept": 26,
+   "filtered": 2,
+   "chrominance": 0.481
+  },
+  {
+   "id": "RAW-103",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-104",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-105",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-106",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-107",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-108",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-109",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-110",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-111",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-112",
+   "faces": 19,
+   "kept": 1,
+   "filtered": 18,
+   "chrominance": 0.406
+  },
+  {
+   "id": "RAW-113",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-114",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-115",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-116",
+   "faces": 31,
+   "kept": 31,
+   "filtered": 0,
+   "chrominance": 0.393
+  },
+  {
+   "id": "RAW-117",
+   "faces": 10,
+   "kept": 8,
+   "filtered": 2,
+   "chrominance": 0.505
+  },
+  {
+   "id": "RAW-118",
+   "faces": 8,
+   "kept": 5,
+   "filtered": 3,
+   "chrominance": 0.482
+  },
+  {
+   "id": "RAW-119",
+   "faces": 16,
+   "kept": 8,
+   "filtered": 8,
+   "chrominance": 0.322
+  },
+  {
+   "id": "RAW-120",
+   "faces": 1,
+   "kept": 1,
+   "filtered": 0,
+   "chrominance": 0.477
+  },
+  {
+   "id": "RAW-121",
+   "faces": 1,
+   "kept": 0,
+   "filtered": 1,
+   "chrominance": 0.262
+  },
+  {
+   "id": "RAW-122",
+   "faces": 1,
+   "kept": 1,
+   "filtered": 0,
+   "chrominance": 0.631
+  },
+  {
+   "id": "RAW-123",
+   "faces": 2,
+   "kept": 2,
+   "filtered": 0,
+   "chrominance": 0.471
+  },
+  {
+   "id": "RAW-124",
+   "faces": 1,
+   "kept": 1,
+   "filtered": 0,
+   "chrominance": 0.425
+  },
+  {
+   "id": "RAW-125",
+   "faces": 11,
+   "kept": 6,
+   "filtered": 5,
+   "chrominance": 0.604
+  },
+  {
+   "id": "RAW-126",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-127",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-128",
+   "faces": 3,
+   "kept": 3,
+   "filtered": 0,
+   "chrominance": 0.569
+  },
+  {
+   "id": "RAW-129",
+   "faces": 10,
+   "kept": 10,
+   "filtered": 0,
+   "chrominance": 0.556
+  },
+  {
+   "id": "RAW-130",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-131",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-132",
+   "faces": 8,
+   "kept": 8,
+   "filtered": 0,
+   "chrominance": 0.443
+  },
+  {
+   "id": "RAW-133",
+   "faces": 15,
+   "kept": 15,
+   "filtered": 0,
+   "chrominance": 0.681
+  },
+  {
+   "id": "RAW-134",
+   "faces": 22,
+   "kept": 7,
+   "filtered": 15,
+   "chrominance": 0.3
+  },
+  {
+   "id": "RAW-135",
+   "faces": 17,
+   "kept": 17,
+   "filtered": 0,
+   "chrominance": 0.598
+  },
+  {
+   "id": "RAW-136",
+   "faces": 20,
+   "kept": 16,
+   "filtered": 4,
+   "chrominance": 0.385
+  },
+  {
+   "id": "RAW-137",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-138",
+   "faces": 37,
+   "kept": 31,
+   "filtered": 6,
+   "chrominance": 0.471
+  },
+  {
+   "id": "RAW-139",
+   "faces": 1,
+   "kept": 1,
+   "filtered": 0,
+   "chrominance": 1.0
+  },
+  {
+   "id": "RAW-140",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-141",
+   "faces": 18,
+   "kept": 14,
+   "filtered": 4,
+   "chrominance": 0.464
+  },
+  {
+   "id": "RAW-142",
+   "faces": 3,
+   "kept": 3,
+   "filtered": 0,
+   "chrominance": 0.5
+  },
+  {
+   "id": "RAW-143",
+   "faces": 7,
+   "kept": 0,
+   "filtered": 7,
+   "chrominance": 0.366
+  },
+  {
+   "id": "RAW-144",
+   "faces": 11,
+   "kept": 0,
+   "filtered": 11,
+   "chrominance": 0.233
+  },
+  {
+   "id": "RAW-145",
+   "faces": 8,
+   "kept": 3,
+   "filtered": 5,
+   "chrominance": 0.285
+  },
+  {
+   "id": "RAW-146",
+   "faces": 7,
+   "kept": 4,
+   "filtered": 3,
+   "chrominance": 0.379
+  },
+  {
+   "id": "RAW-147",
+   "faces": 15,
+   "kept": 0,
+   "filtered": 15,
+   "chrominance": 0.198
+  },
+  {
+   "id": "RAW-148",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-149",
+   "faces": 13,
+   "kept": 13,
+   "filtered": 0,
+   "chrominance": 0.356
+  },
+  {
+   "id": "RAW-150",
+   "faces": 14,
+   "kept": 11,
+   "filtered": 3,
+   "chrominance": 0.326
+  },
+  {
+   "id": "RAW-151",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-152",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-153",
+   "faces": 3,
+   "kept": 0,
+   "filtered": 3,
+   "chrominance": 0.138
+  },
+  {
+   "id": "RAW-154",
+   "faces": 5,
+   "kept": 5,
+   "filtered": 0,
+   "chrominance": 0.367
+  },
+  {
+   "id": "RAW-155",
+   "faces": 12,
+   "kept": 0,
+   "filtered": 12,
+   "chrominance": 0.232
+  },
+  {
+   "id": "RAW-156",
+   "faces": 16,
+   "kept": 16,
+   "filtered": 0,
+   "chrominance": 0.52
+  },
+  {
+   "id": "RAW-157",
+   "faces": 23,
+   "kept": 1,
+   "filtered": 22,
+   "chrominance": 0.273
+  },
+  {
+   "id": "RAW-158",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-159",
+   "faces": 0,
+   "kept": 0,
+   "filtered": 0
+  },
+  {
+   "id": "RAW-160",
+   "faces": 10,
+   "kept": 7,
+   "filtered": 3,
+   "chrominance": 0.325
+  },
+  {
+   "id": "RAW-161",
+   "faces": 9,
+   "kept": 0,
+   "filtered": 9,
+   "chrominance": 0.219
+  },
+  {
+   "id": "RAW-162",
+   "faces": 13,
+   "kept": 12,
+   "filtered": 1,
+   "chrominance": 0.477
+  },
+  {
+   "id": "RAW-163",
+   "faces": 15,
+   "kept": 15,
+   "filtered": 0,
+   "chrominance": 0.607
+  },
+  {
+   "id": "RAW-164",
+   "faces": 14,
+   "kept": 12,
+   "filtered": 2,
+   "chrominance": 0.421
+  },
+  {
+   "id": "RAW-165",
+   "faces": 11,
+   "kept": 11,
+   "filtered": 0,
+   "chrominance": 0.624
+  },
+  {
+   "id": "RAW-166",
+   "faces": 6,
+   "kept": 0,
+   "filtered": 6,
+   "chrominance": 0.214
+  },
+  {
+   "id": "RAW-167",
+   "faces": 25,
+   "kept": 20,
+   "filtered": 5,
+   "chrominance": 0.456
+  },
+  {
+   "id": "RAW-168",
+   "faces": 27,
+   "kept": 27,
+   "filtered": 0,
+   "chrominance": 0.923
+  }
+ ],
+ "note": "Tang 2 Chrominance+Geometry. Tang 3 ArcFace optional chua noi."
+}

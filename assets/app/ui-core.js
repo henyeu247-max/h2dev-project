@@ -158,11 +158,12 @@ ${tabTarget ? `<span class="stat-arrow text-gray-500 text-xs font-mono">→</spa
   </div>`;
 }
 function pageBanner(title, sub, stats) {
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-  // Tránh thẻ thứ 5 bị lẻ bóng 1 mình trên mobile (UX Pro Max - Rhythm & Grid stability)
-  const displayStats = (stats && stats.length === 5 && isMobile) ? stats.slice(0, 4) : stats;
-  const cards = (displayStats || []).map(s => statCard(s.icon, s.label, s.value, s.sub || '', s.tab || '', !!s.live)).join('');
+  /* UI-13 (2026-09-28): (1) tham so title truoc day bi BO QUA hoan toan — gio render
+     h1.page-h1; (2) khong con CUT stat thu 5 tren mobile (mat thong tin) — card cuoi
+     le se span full row qua CSS .bento-grid > .bento-card:nth-child(odd):last-child. */
+  const cards = (stats || []).map(s => statCard(s.icon, s.label, s.value, s.sub || '', s.tab || '', !!s.live)).join('');
   return `
+  ${title ? `<h1 class="page-h1">${esc(title)}</h1>` : ''}
   ${sub ? `<p class="page-lede">${sub}</p>` : ''}
   ${cards ? `<div class="bento-grid mb-6">${cards}</div>` : ''}`;
 }

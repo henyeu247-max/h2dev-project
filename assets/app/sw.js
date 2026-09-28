@@ -1,5 +1,8 @@
-/* H2DEV PWA shell cache — G5 */
-const CACHE = 'h2dev-shell-v20260922-g5';
+/* H2DEV PWA shell cache — G5
+   ⚠️ LEGACY (UI-06, 2026-09-28): file nay KHONG con duoc dang ky. sw-register.js
+   tro ve '/sw.js' o goc de co scope '/' control toan site. Giu file nay theo
+   quy dinh NO_DELETE — KHONG sua logic o day nua, sua o /sw.js de 1 nguon su that. */
+const CACHE = 'h2dev-shell-v20260922-g5-legacy-unused';
 const SHELL = [
   '/',
   '/index.html',

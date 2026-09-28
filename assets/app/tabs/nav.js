@@ -66,15 +66,28 @@ function toggleMoreMenu(overflowTabs) {
     if (backdrop) backdrop.remove();
     return;
   }
+  const triggerBtn = document.activeElement;
+  function closeMoreMenu() {
+    sheet?.remove();
+    backdrop?.remove();
+    if (triggerBtn && typeof triggerBtn.focus === 'function') {
+      try { triggerBtn.focus(); } catch (e) {}
+    }
+  }
+
   backdrop = document.createElement('div');
   backdrop.id = 'moreMenuBackdrop';
   backdrop.className = 'more-menu-backdrop';
-  backdrop.onclick = () => { sheet?.remove(); backdrop?.remove(); };
+  backdrop.onclick = closeMoreMenu;
   document.body.appendChild(backdrop);
 
   sheet = document.createElement('div');
   sheet.id = 'moreMenuSheet';
   sheet.className = 'more-menu-sheet';
+  sheet.setAttribute('role', 'dialog');
+  sheet.setAttribute('aria-modal', 'true');
+  sheet.setAttribute('aria-label', 'Danh mục tab mở rộng');
+  sheet.tabIndex = -1;
   sheet.innerHTML = overflowTabs.map(t => {
     const sel = state.tab === t.id;
     return `<button type="button" class="more-item${sel ? ' active font-bold' : ''}" data-tab="${t.id}">${t.icon}<span>${t.name}</span></button>`;
@@ -82,13 +95,36 @@ function toggleMoreMenu(overflowTabs) {
   sheet.querySelectorAll('.more-item').forEach(btn => {
     btn.onclick = () => {
       state.tab = btn.dataset.tab;
-      sheet.remove();
-      backdrop.remove();
+      closeMoreMenu();
       renderTabs();
       render();
     };
   });
+  sheet.onkeydown = (e) => {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeMoreMenu();
+      return;
+    }
+    if (e.key === 'Tab') {
+      const focusables = Array.from(sheet.querySelectorAll('button, [tabindex="0"]'));
+      if (!focusables.length) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  };
   document.body.appendChild(sheet);
+  const firstItem = sheet.querySelector('.more-item');
+  if (firstItem) {
+    try { firstItem.focus(); } catch (e) {}
+  }
 }
 
     return { tabMarkup: tabMarkup, bindTabButton: bindTabButton, renderTabs: renderTabs, toggleMoreMenu: toggleMoreMenu };

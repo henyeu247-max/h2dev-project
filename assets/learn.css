@@ -135,7 +135,7 @@ html.is-embed .resume-banner,
 html.is-embed .learn-content { width: min(1120px, calc(100% - 24px)); margin-top: 12px; }
 .load-err { padding: 20px; color: var(--danger); background: var(--surface); border: 1px solid var(--danger); border-radius: 4px; }
 
-@media (max-width:720px) {
+@media (max-width: 640px) {
   .learn-header { min-height: 52px; padding: 8px 12px; }
   .learn-brand h1 { font-size: 14px; }
   .learn-brand span,.progress-pill { display: none; }
@@ -144,7 +144,7 @@ html.is-embed .learn-content { width: min(1120px, calc(100% - 24px)); margin-top
   .tabbar,.learn-content,.resume-banner,.learn-footer { width: calc(100% - 24px); }
   .tabbar { margin-top: 12px; overflow-x: auto; scrollbar-width: none; }
   .tabbar::-webkit-scrollbar { display: none; }
-  .tabbar .tab-btn { height: 34px; padding: 0 10px; font-size: 12px; }
+  .tabbar .tab-btn { min-height: var(--h2-touch-min, 44px); height: 44px; padding: 0 12px; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; }
   .learn-content { margin-bottom: 20px; padding: 10px; }
   /* 2026-09-23: responsive cua cum .sec-*/.lesson-row/.row-* DA CHUYEN sang
      h2dev-components-lesson-row.css (media max-width:640px) — cung ly do no #13. */
@@ -154,6 +154,10 @@ html.is-embed .learn-content { width: min(1120px, calc(100% - 24px)); margin-top
   .resume-info { flex: 1 1 auto; min-width: 0; }
   .resume-meta, .resume-status, .resume-done { flex: 0 0 auto; }
   .resume-go { flex: 1 0 100%; width: 100%; justify-content: center; }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .tabbar, .learn-content, .resume-banner, .learn-footer { width: min(calc(100% - 32px), 1024px); }
 }
 
 /* UI-nav: header fixed like vd-topbar + back-to-top */
@@ -176,7 +180,7 @@ html.is-embed .learn-header {
   padding: 4px 12px;
   z-index: var(--h2-z-fixed) !important;
 }
-@media (max-width: 720px) {
+@media (max-width: 640px) {
   .learn-header {
     height: calc(56px + env(safe-area-inset-top, 0px)) !important;
     min-height: calc(56px + env(safe-area-inset-top, 0px)) !important;

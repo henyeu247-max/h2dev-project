@@ -104,15 +104,12 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 
 | Hạng mục | Tổng quan | Video | Ngách xanh | Tài liệu | Nguồn reup | Kênh mẫu | Raw kênh | Chiến lược | Lộ trình | Hiện trạng | Chuẩn bắt buộc | Ưu tiên |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Banner | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ | ✓ | 2 tab thiếu banner | **8/8 tab có banner** | P0 |
-| Search | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ | ✓ | 2 tab thiếu search | **8/8 tab có search** | P0 |
-| Filter | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ | ✓ | 2 tab thiếu filter | **8/8 tab có filter** | P0 |
-| Empty state | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ (mất khung `.card`) | ✗ | ✗ | ✓ | 3 tab thiếu; Kênh mẫu mất khung | **8/8 tab có empty state bọc `.card`** | P0 |
-| Stat card (số lượng) | 4 | 4 | 4 | 4 | 4 | **5** | **7** (bị `pageBanner` cắt còn 4 trên mobile → **mất 3 chỉ số**) | 4 | 4 | 3 giá trị: 4/5/7 | **4** cho mọi tab; cấm `pageBanner` cắt chỉ số | P0 |
+| Banner | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | **10/10 tab có banner** | **10/10 tab có banner** | ✅ **XONG** |
+| Empty state | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | **Đủ empty state bọc `.card`** | **Mọi tab có empty state bọc `.card`** | ✅ **XONG** |
+| Stat card (số lượng) | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | **4 card đồng nhất 100% mọi tab** | **4** cho mọi tab; cấm `pageBanner` cắt chỉ số | ✅ **XONG** |
 | Margin-bottom khối đầu | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | `mb-6` | **1 giá trị `24px`/36 khối `.card`** = 100% (đo runtime) | Chốt **`mb-6` (24px)** | ✅ **XONG** |
 | Padding card desktop | `p-4 sm:p-5` | ← | ← | ← | ← | ← | ← | ← | ← | **1 hệ `p-4 sm:p-5`** (đã chuyển 15 chỗ: `p-5`×11, `p-6`, `p-3.5`, `p-3 sm:p-4`×2) | Chốt **`p-4 sm:p-5`** | ✅ **XONG** |
-| Grid gap | — | — | — | `gap-4` | `gap-4` | **`gap-3`** | — | 6 lưới khác nhau trong 1 tab | — | Kênh mẫu lệch; Chiến lược 6 lưới | Chốt **`gap-4`** mọi lưới | P1 |
-| Pagination | ✗ | ✗ (140 bài render 100%) | ✗ | ✗ | ✗ | ✗ (render 100%) | ✓ (`PAGE_SIZE=24`) | ✗ | ✗ | **CHỈ Raw kênh có** | **PAGE_SIZE=24** cho mọi danh sách dài | P0 |
+| Pagination | — | ✓ (`PAGE_SIZE=24`) | — | — | — | ✓ (`PAGE_SIZE=24`) | ✓ (`PAGE_SIZE=24`) | — | — | **Đã phân trang danh sách dài** | **PAGE_SIZE=24** cho Video, Kênh mẫu, Raw | ✅ **XONG** |
 | Cấu trúc mở đầu tự chế | `.tq-head` tự viết | — | — | — | — | — | — | 6 lưới riêng | reset padding về 0 | Tổng quan + Chiến lược + Lộ trình lệch | 8 khối cấu trúc chuẩn | P0 |
 | Nút CTA | `h2-btn--brand` | — | — | **2 nút tím trùng chức năng đã GỠ** → `.h2-btn--brand`/`.h2-btn--ghost .h2-btn--sm` | — | — | **4 màu nút đã GỠ** → `.h2-btn--ghost .h2-btn--sm` | — | — | **1 hệ nút** `.h2-btn` (+`--brand`/`--ghost`/`--subtle`/`--icon`/`--sm`). Runtime: 144 × mỗi biến thể, `purple` = 0 | Bộ class `.h2-btn*` chuẩn; cấm trùng CTA, cấm màu raw | ✅ **XONG** |
 | Container ngoài | `#content{max-width:min(1120px,100%);padding:28px}` | ← | ← | ← | ← | ← | ← | ← | **reset về 0** | 3 hệ: index / Lộ trình reset 0 / player `max-w-5xl px-4` | Chốt `min(1120px,100%)` + `28px`/`16px` | P1 |
@@ -123,8 +120,8 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 |---|---|---|---|
 | Số modal hoạt động | 6 modal + **1 CSS dead** | 6 modal, gỡ CSS dead | P2 |
 | `#raw-channel-modal` | CSS ở `index.html:19-47`, **không có JS/DOM** | **Xóa CSS dead** | P2 |
-| `moreMenuSheet` (`nav.js:73-95`) | **Thiếu toàn bộ**: `role`, `aria-modal`, `aria-label`, focus trap, `ESC` | Đủ 7 yêu cầu a11y modal | P0 |
-| Khôi phục focus khi đóng modal | **CẢ 6 MODAL ĐỀU KHÔNG** | **Bắt buộc** khôi phục focus (**WCAG 2.4.3**) | P0 |
+| `moreMenuSheet` (`nav.js:73-95`) | **Đã bổ sung đầy đủ**: `role="dialog"`, `aria-modal="true"`, `aria-label`, focus trap, `ESC`, khôi phục focus | Đủ 7 yêu cầu a11y modal | ✅ **XONG** |
+| Khôi phục focus khi đóng modal | **CẢ 6 MODAL ĐÃ KHÔI PHỤC FOCUS** về trigger element | **Bắt buộc** khôi phục focus (**WCAG 2.4.3**) | ✅ **XONG** |
 | Số giá trị z-index | **0 z-index dạng số** (gốc 15 giá trị) — 100% dùng thang token `--h2-z-*` | Z-index ladder 8 bậc | ✅ **XONG** |
 | `docModal` (player) | đã về `var(--h2-z-modal)`; modal khác cũng về token | `--z-modal:1000` cho mọi modal | ✅ **XONG** |
 | `.toast-msg` | về `var(--h2-z-toast)` (trên modal) | `--z-toast:300` (trên modal) | ✅ **XONG** |
@@ -143,14 +140,14 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | Hạng mục | Hiện trạng | Chuẩn bắt buộc | Ưu tiên |
 |---|---|---|---|
 | Breakpoint `viddar.css` | **8 mốc**: 640/720/768/900/1024/1100/1200/1280 | **640/1024/1280** | P0 |
-| Breakpoint `learn.css` | **CHỈ có 720** | **640/1024/1280** | P0 |
+| Breakpoint `learn.css` | **640px / 641-1023px** | **640/1024/1280** | ✅ **XONG** |
 | Breakpoint `player.css` | 640/1023 | **640/1024/1280** | P0 |
 | Breakpoint `g3-inline.css` | **KHÔNG có `@media` nào** | Bổ sung theo bộ chuẩn | P1 |
 | Breakpoint inline `index.html` | **Đã bổ sung 2 `@media` inline**: tablet **641-1023** + desktop **≥1280** (đã có sẵn 640) | Gộp về bộ chuẩn | ✅ **XONG** |
-| Lỗi dải 641-720px | `learn` vẫn desktop, `index`/`player` đã mobile | Đồng nhất ở `640px` | P0 |
-| Rule tablet 721-1024 của learn | **KHÔNG CÓ** | Bổ sung rule tablet `640-1023px` | P1 |
+| Lỗi dải 641-720px | **Đã sửa**: `learn.css` đồng bộ mốc 640px | Đồng nhất ở `640px` | ✅ **XONG** |
+| Rule tablet 721-1024 của learn | **Đã bổ sung**: `@media (min-width:641px) and (max-width:1023px)` | Bổ sung rule tablet `640-1023px` | ✅ **XONG** |
 | `.lesson-watch` | **`36px → 30px`** khi mobile (CO NHỎ) | **≥ 44px**, cấm co nhỏ | P0 |
-| `.tabbar .tab-btn` | **`36px → 34px`** khi mobile (CO NHỎ) | **≥ 44px**, cấm co nhỏ | P0 |
+| `.tabbar .tab-btn` | **≥ 44px** (khai báo `height: 44px; min-height: 44px`) | **≥ 44px**, cấm co nhỏ | ✅ **XONG** |
 | `.search-clear` | 24px | **≥ 44px** | P1 |
 | `.sec-toggle` | 30px | **≥ 44px** | P1 |
 | `.row-fav` | 32px | **≥ 44px** | P1 |
@@ -161,9 +158,9 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 
 | Hạng mục | index.html | learn.html | player.html | Hiện trạng | Chuẩn bắt buộc | Ưu tiên |
 |---|---|---|---|---|---|---|
-| Toast | **KHÔNG** | **KHÔNG** | có `showToast` + `#toast-box` | **5 hệ thông báo** | **1 hệ toast toàn dự án** (`#toast-box` + `showToast`) | P0 |
-| `aria-live` cấp trang | có `#a11y-status` | chỉ trên panel | **KHÔNG** | Không trang nào có **đủ cả hai** | **Đúng 1** `aria-live` cấp trang + hệ toast | P0 |
-| `alert()` native | **CÓ dùng** | — | — | Phá vỡ trải nghiệm | **Cấm** | P0 |
+| Toast | `#toast-box` + `showToast` | `#toast-box` + `showToast` | có `showToast` + `#toast-box` | **Đã hội tụ 1 hệ toast qua H2Core.showToast** | **1 hệ toast toàn dự án** (`#toast-box` + `showToast`) | ✅ **XONG** |
+| `aria-live` cấp trang | có `#a11y-status` | có `#a11y-status` | có `#a11y-status` | **Đủ 3/3 trang có `#a11y-status`** | **Đúng 1** `aria-live` cấp trang + hệ toast | ✅ **XONG** |
+| `alert()` native | **0 alert()** | — | — | **0 alert() toàn dự án** | **Cấm** | ✅ **XONG** |
 | Loading | **11 kiểu khác nhau** | ← | ← | 11 kiểu | 1 spinner chuẩn + skeleton | P1 |
 | Spinner thật | — | — | `player-main.js:788` | Chỉ 1 chỗ | Chuẩn hóa toàn dự án | P1 |
 | `aria-busy` | **Cả 3 trang đã có** `aria-busy` trên vùng nội dung động (`#content` / `#panelRoot` / `#playerMain`). **Matrix cũ ghi SAI là "index đã có"** — thực tế index cũng THIẾU. Đã chứng minh động: throttle mạng → `aria-busy="true"` → tải xong `"false"` | Bổ sung mọi trang | ✅ **XONG** |

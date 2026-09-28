@@ -156,6 +156,6 @@
   }
   .row-thumb { grid-column: 1; grid-row: 1 / span 2; flex-basis: auto; }
   .row-body { grid-column: 2; grid-row: 1; }
-  .lesson-watch { grid-column: 2; grid-row: 2; justify-self: start; min-height: 30px; }
+  .lesson-watch { grid-column: 2; grid-row: 2; justify-self: start; min-height: 44px; padding: 0 12px; }
   .row-title { font-size: 13px; }
 }

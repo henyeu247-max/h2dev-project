@@ -324,11 +324,22 @@ try {
 // Guard: chan tai phat loi "CSS build cu / thieu class" (KE-HOACH-SUA-CHUA-TOAN-DIEN mục B8).
 // Doi chieu class dung trong HTML voi dung cac file CSS ma trang nap that.
 try {
-  const uiCheck = require('child_process').execFileSync(
-    process.execPath, [path.join(__dirname, 'check-ui-classes.js'), '--json'],
-    { cwd: ROOT, encoding: 'utf8' }
-  );
-  const result = JSON.parse(uiCheck);
+  let result;
+  try {
+    const uiCheck = require('child_process').execFileSync(
+      process.execPath, [path.join(__dirname, 'check-ui-classes.js'), '--json'],
+      { cwd: ROOT, encoding: 'utf8' }
+    );
+    result = JSON.parse(uiCheck);
+  } catch (spawnError) {
+    // Fallback in-process khi spawnSync gap EBUSY hoac bi khoa tien trinh tren Windows
+    const checker = require('./check-ui-classes.js');
+    if (typeof checker.runCheck === 'function') {
+      result = checker.runCheck({ jsonMode: true, silent: true });
+    } else {
+      throw spawnError;
+    }
+  }
   if (result.totalMissing > 0) {
     for (const r of result.report) {
       if (r.kind === 'missing-classes') {

@@ -385,9 +385,9 @@
           const val = fq.value;
           if (state.tab === 'tai-lieu' || state.tab === 'nhac') state.promptQ = val;
           else if (state.tab === 'nguonreup') state.reupQ = val;
-          else if (state.tab === 'kenh-mau') state.kenhQ = val;
-          else if (state.tab === 'rawkenh') state.rawQ = val;
-          else state.q = val;
+          else if (state.tab === 'kenh-mau') { state.kenhQ = val; state.kenhPage = 1; }
+          else if (state.tab === 'rawkenh') { state.rawQ = val; state.rawPage = 1; }
+          else { state.q = val; state.videoPage = 1; }
 
           // Real-time live suggestions for rawkenh tab
           if (state.tab === 'rawkenh' && window.showRawSearchSuggestions) {
@@ -550,9 +550,11 @@
       document.querySelectorAll('[data-reup-niche]').forEach(btn => { btn.onclick = () => { state.reupNiche = btn.getAttribute('data-reup-niche') || ''; render(); }; });
       const rr = document.getElementById('freset-reup');
       if (rr) { rr.onclick = () => { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; render(); }; }
-      document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; render(); }; });
+      document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; state.kenhPage = 1; render(); }; });
       const rk = document.getElementById('freset-kenh');
-      if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; render(); }; }
+      if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; state.kenhPage = 1; render(); }; }
+      const rke = document.getElementById('freset-kenh-empty');
+      if (rke) { rke.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; state.kenhPage = 1; render(); }; }
       document.querySelectorAll('[data-raw-group]').forEach(btn => { btn.onclick = () => { const g = btn.getAttribute('data-raw-group') || ''; state.rawGroup = (state.rawGroup === g) ? '' : g; state.rawNiche = ''; state.rawPage = 1; render(); }; });
       document.querySelectorAll('[data-raw-niche]').forEach(btn => {
         btn.onclick = () => {
@@ -577,6 +579,8 @@
       document.querySelectorAll('[data-raw-lang]').forEach(btn => { btn.onclick = () => { state.rawLang = btn.getAttribute('data-raw-lang') || ''; render(); }; });
       const rr2 = document.getElementById('freset-raw');
       if (rr2) { rr2.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawGroup = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; state.rawPage = 1; render(); }; }
+      const rre = document.getElementById('freset-raw-empty');
+      if (rre) { rre.onclick = () => { state.rawQ = ''; state.rawNiche = ''; state.rawGroup = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; state.rawPage = 1; render(); }; }
       document.querySelectorAll('.btn-open-raw-deep').forEach(btn => {
         btn.onclick = (e) => {
           e.stopPropagation();
@@ -616,9 +620,9 @@
         btn.onclick = () => { state.nxMarket = btn.getAttribute('data-nx-market') || ''; render(); };
       });
       const fr = document.getElementById('freset');
-      if (fr) { fr.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; render(); }; }
+      if (fr) { fr.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; state.videoPage = 1; render(); }; }
       const fre = document.getElementById('freset-empty');
-      if (fre) { fre.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; render(); }; }
+      if (fre) { fre.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; state.videoPage = 1; render(); }; }
       const fr_nx = document.getElementById('freset-nx');
       if (fr_nx) {
         fr_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; render(); };
@@ -770,6 +774,8 @@
       state.watchFilter = qp.get('watch') || '';
       state.freeOnly = qp.get('free') === '1';
       state.rawPage = parseInt(qp.get('page'), 10) || 1;
+      state.videoPage = parseInt(qp.get('vp'), 10) || 1;
+      state.kenhPage = parseInt(qp.get('kp'), 10) || 1;
       state.rawNiche = qp.get('rn') || '';
       state.rawGroup = qp.get('rg') || '';
       state.rawQ = qp.get('rq') || '';
@@ -943,6 +949,7 @@
           </div>
         `;
         modal.style.display = 'flex';
+        modal._prevActiveElement = document.activeElement;
         document.body.style.overflow = 'hidden';
         focusModal(modal);
 
@@ -1884,7 +1891,8 @@
               const ok = document.execCommand('copy');
               document.body.removeChild(ta);
               if (ok) markSuccess();
-              else alert('Không thể tự động sao chép. Vui lòng chọn và sao chép thủ công!');
+              else if (typeof showToast === 'function') showToast('Không thể tự động sao chép. Vui lòng chọn và sao chép thủ công!');
+              else if (typeof window.showToast === 'function') window.showToast('Không thể tự động sao chép. Vui lòng chọn và sao chép thủ công!');
             } catch(e) {
               console.error('Fallback copy error:', e);
             }
@@ -2095,6 +2103,10 @@
           modal.onclick = (e) => {
             if (e.target === modal || e.target.id === 'close-video-sub' || (e.target.closest && e.target.closest('#close-video-sub'))) {
               modal.style.display = 'none';
+              document.body.style.overflow = '';
+              if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+                try { modal._prevActiveElement.focus(); } catch (err) {}
+              }
             }
           };
           document.body.appendChild(modal);
@@ -2306,6 +2318,9 @@
             if (e.target === modal || e.target.id === 'close-raw-img' || (e.target.closest && e.target.closest('#close-raw-img'))) {
               modal.style.display = 'none';
               document.body.style.overflow = '';
+              if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+                try { modal._prevActiveElement.focus(); } catch (err) {}
+              }
             }
           };
           modal.innerHTML = `
@@ -2323,6 +2338,7 @@
         document.querySelector('#raw-img-title span:last-child').textContent = title || 'Ảnh kênh gốc';
         document.getElementById('raw-img-src').src = src;
         modal.style.display = 'flex';
+        modal._prevActiveElement = document.activeElement;
         document.body.style.overflow = 'hidden';
         focusModal(modal);
       };
@@ -2352,6 +2368,9 @@
                               document.getElementById('raw-image-modal')?.style.display === 'flex';
             if (!otherOpen) {
               document.body.style.overflow = '';
+            }
+            if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+              try { modal._prevActiveElement.focus(); } catch (err) {}
             }
           };
           window.closeQuickVideoModal = closeModal;
@@ -2392,6 +2411,7 @@
           </div>
         `;
         modal.style.display = 'flex';
+        modal._prevActiveElement = document.activeElement;
         document.body.style.overflow = 'hidden';
         focusModal(modal);
       };
@@ -2409,13 +2429,14 @@
           const action = act.getAttribute('data-action');
           if (action === 'video-filter-reset') {
             e.preventDefault();
-            state.freeOnly = false; state.marketFilter = ''; state.nicheFilter = ''; state.q = ''; state.skuFilter = ''; state.watchFilter = '';
+            state.freeOnly = false; state.marketFilter = ''; state.nicheFilter = ''; state.q = ''; state.skuFilter = ''; state.watchFilter = ''; state.videoPage = 1;
             render();
             return;
           }
           if (action === 'video-filter-free') {
             e.preventDefault();
             state.freeOnly = !state.freeOnly;
+            state.videoPage = 1;
             render();
             return;
           }
@@ -2434,6 +2455,20 @@
             e.preventDefault();
             const p = parseInt(act.getAttribute('data-page') || '1', 10);
             state.rawPage = Number.isFinite(p) && p > 0 ? p : 1;
+            render();
+            return;
+          }
+          if (action === 'video-page') {
+            e.preventDefault();
+            const p = parseInt(act.getAttribute('data-page') || '1', 10);
+            state.videoPage = Number.isFinite(p) && p > 0 ? p : 1;
+            render();
+            return;
+          }
+          if (action === 'kenh-page') {
+            e.preventDefault();
+            const p = parseInt(act.getAttribute('data-page') || '1', 10);
+            state.kenhPage = Number.isFinite(p) && p > 0 ? p : 1;
             render();
             return;
           }
@@ -2492,6 +2527,10 @@
           const subModal = document.getElementById('video-transcript-modal');
           if (subModal && subModal.style.display === 'flex') {
             subModal.style.display = 'none';
+            document.body.style.overflow = '';
+            if (subModal._prevActiveElement && typeof subModal._prevActiveElement.focus === 'function') {
+              try { subModal._prevActiveElement.focus(); } catch (err) {}
+            }
             return;
           }
           const rawModal = document.getElementById('raw-deep-modal') || document.getElementById('raw-detail-modal');
@@ -2503,6 +2542,9 @@
               rawModal.querySelectorAll('iframe').forEach(f => { try { f.src = 'about:blank'; } catch (e) {} });
               rawModal.style.display = 'none';
               document.body.style.overflow = '';
+              if (rawModal._prevActiveElement && typeof rawModal._prevActiveElement.focus === 'function') {
+                try { rawModal._prevActiveElement.focus(); } catch (err) {}
+              }
             }
             return;
           }
@@ -2510,6 +2552,9 @@
           if (imgModal && imgModal.style.display === 'flex') {
             imgModal.style.display = 'none';
             document.body.style.overflow = '';
+            if (imgModal._prevActiveElement && typeof imgModal._prevActiveElement.focus === 'function') {
+              try { imgModal._prevActiveElement.focus(); } catch (err) {}
+            }
             return;
           }
         } else if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {

@@ -14,6 +14,9 @@
         modal.querySelectorAll('iframe').forEach(f => {
           try { f.src = 'about:blank'; } catch (e) {}
         });
+        if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+          try { modal._prevActiveElement.focus(); } catch (e) {}
+        }
     }
 
     function switchRawTab(tabKey) {

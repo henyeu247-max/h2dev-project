@@ -359,6 +359,24 @@
       try { modal.focus(); } catch (e) {}
       var f = modal.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
       if (f) try { f.focus(); } catch (e) {}
+    },
+    showToast: function (msg, duration) {
+      duration = duration || 3000;
+      var box = document.getElementById('toast-box') || document.body;
+      var el = document.createElement('div');
+      el.className = 'toast-msg';
+      el.innerHTML = '<span>' + esc(msg) + '</span>';
+      box.appendChild(el);
+      try {
+        var a11yEl = document.getElementById('a11y-status');
+        if (a11yEl) a11yEl.textContent = msg;
+      } catch (e) {}
+      setTimeout(function () {
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.3s ease';
+        setTimeout(function () { try { el.remove(); } catch (e) {} }, 300);
+      }, duration);
     }
   };
+  global.showToast = global.H2Core.showToast;
 })(window);

@@ -2,11 +2,12 @@
 (function (global) {
   "use strict";
 
-  /** Split into lowercase alphanumeric keywords: "video-editor" / "Video Editor" -> ["video","editor"] */
+  /** Split into lowercase keyword tokens, Unicode-aware:
+   *  giu nguyen chu co dau (tieng Viet) + chu Han/Kana/Cyrillic (SCAR 28/09: /[^a-z0-9+]+/ bien "phật" thanh token rac ["ph","t"]). */
   function tokenize(text) {
     return String(text || "")
       .toLowerCase()
-      .split(/[^a-z0-9+]+/)
+      .split(/[^\p{L}\p{N}+]+/u)
       .filter(Boolean);
   }
 
@@ -15,7 +16,7 @@
       .map(function (p) { return p == null ? "" : String(p); })
       .join(" ")
       .toLowerCase()
-      .replace(/[^a-z0-9+]+/g, " ");
+      .replace(/[^\p{L}\p{N}+]+/gu, " ");
   }
 
   /** Number of query keywords found in haystack. */

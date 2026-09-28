@@ -2146,6 +2146,9 @@
             </div>
           </div>
         `;
+        /* UI-07 (2026-09-28): capture trigger TRUOC khi mo — restore focus khi dong
+           (close handler tu 2125 da doc _prevActiveElement nhung trc day khong ai gan). */
+        modal._prevActiveElement = document.activeElement;
         modal.style.display = 'flex';
         focusModal(modal);
 

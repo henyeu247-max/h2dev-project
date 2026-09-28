@@ -1,61 +1,15 @@
 {
  "schema": "h2dev.voice-dna-pilot.v1",
- "generatedAt": "2026-09-29T03:51:58",
+ "generatedAt": "2026-09-29T05:29:07",
  "results": [
   {
-   "rawId": "RAW-004",
-   "handle": "@NoFluff-History",
-   "videoId": "OMI01Vkhzms",
-   "status": "ok",
-   "mp3": "assets/voice-samples/RAW-004.mp3",
-   "durationSec": 45.0,
-   "channels": 1,
-   "sampleRate": 44100,
-   "inputLufs": "-16.29"
-  },
-  {
-   "rawId": "RAW-005",
-   "handle": "@NoFluffAcademy",
-   "videoId": "FOBlAyLqSeU",
-   "status": "ok",
-   "mp3": "assets/voice-samples/RAW-005.mp3",
-   "durationSec": 45.0,
-   "channels": 1,
-   "sampleRate": 44100,
-   "inputLufs": "-17.07"
-  },
-  {
-   "rawId": "RAW-006",
-   "handle": "@ArthurRevivesthePast",
-   "videoId": "n_qVfFE0510",
-   "status": "ok",
-   "mp3": "assets/voice-samples/RAW-006.mp3",
-   "durationSec": 45.0,
-   "channels": 1,
-   "sampleRate": 44100,
-   "inputLufs": "-15.83"
-  },
-  {
-   "rawId": "RAW-007",
-   "handle": "@Simplify.Actually",
-   "videoId": "jwur5xIPBxw",
-   "status": "ok",
-   "mp3": "assets/voice-samples/RAW-007.mp3",
-   "durationSec": 45.0,
-   "channels": 1,
-   "sampleRate": 44100,
-   "inputLufs": "-16.21"
-  },
-  {
-   "rawId": "RAW-008",
-   "handle": "@RestoredTimeline",
-   "videoId": "dN3L4lXhPXQ",
-   "status": "ok",
-   "mp3": "assets/voice-samples/RAW-008.mp3",
-   "durationSec": 45.0,
-   "channels": 1,
-   "sampleRate": 44100,
-   "inputLufs": "-17.87"
+   "rawId": "RAW-001",
+   "handle": "@pekaboosongs",
+   "videoId": "oixhtdMRDHA",
+   "status": "download-fail",
+   "detail": [
+    "ERROR: [youtube] oixhtdMRDHA: This video is not available"
+   ]
   }
  ]
 }

@@ -4,9 +4,7 @@
  "PH1": {
   "name": "GPU Vision SCRFD faceless",
   "status": "partial",
-  "missing": [
-   "Tang 3 ArcFace (optional) — chua noi; can insightface embedding neu can"
-  ],
+  "missing": [],
   "progress": {
    "scrfdHits": "data/scrfd-hits.json",
    "cascadeT2Report": "data/cascade-t2-report.json",
@@ -14,7 +12,8 @@
    "boxesKept": 794,
    "boxesFiltered": 593,
    "runAt": "2026-09-29T03:42:03"
-  }
+  },
+  "note": "Cascade 3 tang DA NOI (29/09): SCRFD t1 + Chrom/Geo t2 + ArcFace t3 (gallery centroid). Doc data/cascade-t3-report.json de chon nguong van hanh."
  },
  "PH2": {
   "name": "Spider+RSS+Autocomplete+Newborn",

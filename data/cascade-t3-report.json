@@ -1,0 +1,446 @@
+{
+ "schema": "h2dev.cascade-t3.v1",
+ "generatedAt": "2026-09-29T04:18:59",
+ "model": "w600k_mbf.onnx (ArcFace MobileFace, 512d, input 112x112)",
+ "gallery": {
+  "size": 17,
+  "chromMin": 0.5,
+  "source": "top SCRFD-score kept-T2 boxes"
+ },
+ "boxesEvaluated": 70,
+ "similarity": {
+  "min": 0.2102,
+  "p25": 0.4243,
+  "median": 0.5906,
+  "p75": 0.6884,
+  "max": 0.7803
+ },
+ "keptByThreshold": {
+  "0.2": 70,
+  "0.3": 67,
+  "0.4": 55
+ },
+ "results": [
+  {
+   "id": "RAW-001",
+   "sim": 0.6915,
+   "scrfdScore": 0.8133,
+   "chrom": 0.373
+  },
+  {
+   "id": "RAW-004",
+   "sim": 0.3404,
+   "scrfdScore": 0.7138,
+   "chrom": 0.65
+  },
+  {
+   "id": "RAW-006",
+   "sim": 0.3852,
+   "scrfdScore": 0.8315,
+   "chrom": 0.325
+  },
+  {
+   "id": "RAW-008",
+   "sim": 0.3564,
+   "scrfdScore": 0.8895,
+   "chrom": 0.405
+  },
+  {
+   "id": "RAW-009",
+   "sim": 0.4207,
+   "scrfdScore": 0.8656,
+   "chrom": 0.542
+  },
+  {
+   "id": "RAW-010",
+   "sim": 0.2102,
+   "scrfdScore": 0.7921,
+   "chrom": 0.459
+  },
+  {
+   "id": "RAW-011",
+   "sim": 0.7166,
+   "scrfdScore": 0.9273,
+   "chrom": 0.517
+  },
+  {
+   "id": "RAW-015",
+   "sim": 0.3525,
+   "scrfdScore": 0.8447,
+   "chrom": 0.597
+  },
+  {
+   "id": "RAW-016",
+   "sim": 0.6888,
+   "scrfdScore": 0.7128,
+   "chrom": 0.578
+  },
+  {
+   "id": "RAW-018",
+   "sim": 0.422,
+   "scrfdScore": 0.8621,
+   "chrom": 0.347
+  },
+  {
+   "id": "RAW-031",
+   "sim": 0.4357,
+   "scrfdScore": 0.7828,
+   "chrom": 0.516
+  },
+  {
+   "id": "RAW-032",
+   "sim": 0.5005,
+   "scrfdScore": 0.8901,
+   "chrom": 0.382
+  },
+  {
+   "id": "RAW-033",
+   "sim": 0.2222,
+   "scrfdScore": 0.8396,
+   "chrom": 0.42
+  },
+  {
+   "id": "RAW-039",
+   "sim": 0.5194,
+   "scrfdScore": 0.8824,
+   "chrom": 0.528
+  },
+  {
+   "id": "RAW-040",
+   "sim": 0.5657,
+   "scrfdScore": 0.8414,
+   "chrom": 0.471
+  },
+  {
+   "id": "RAW-043",
+   "sim": 0.4508,
+   "scrfdScore": 0.8582,
+   "chrom": 0.471
+  },
+  {
+   "id": "RAW-044",
+   "sim": 0.3416,
+   "scrfdScore": 0.8859,
+   "chrom": 0.358
+  },
+  {
+   "id": "RAW-045",
+   "sim": 0.5875,
+   "scrfdScore": 0.9152,
+   "chrom": 0.53
+  },
+  {
+   "id": "RAW-047",
+   "sim": 0.5798,
+   "scrfdScore": 0.8765,
+   "chrom": 0.426
+  },
+  {
+   "id": "RAW-050",
+   "sim": 0.7302,
+   "scrfdScore": 0.8792,
+   "chrom": 0.182
+  },
+  {
+   "id": "RAW-056",
+   "sim": 0.7134,
+   "scrfdScore": 0.8264,
+   "chrom": 0.386
+  },
+  {
+   "id": "RAW-063",
+   "sim": 0.3022,
+   "scrfdScore": 0.878,
+   "chrom": 0.27
+  },
+  {
+   "id": "RAW-069",
+   "sim": 0.232,
+   "scrfdScore": 0.774,
+   "chrom": 0.38
+  },
+  {
+   "id": "RAW-076",
+   "sim": 0.6841,
+   "scrfdScore": 0.9245,
+   "chrom": 0.398
+  },
+  {
+   "id": "RAW-078",
+   "sim": 0.3609,
+   "scrfdScore": 0.9104,
+   "chrom": 0.359
+  },
+  {
+   "id": "RAW-079",
+   "sim": 0.6328,
+   "scrfdScore": 0.8329,
+   "chrom": 0.505
+  },
+  {
+   "id": "RAW-080",
+   "sim": 0.3896,
+   "scrfdScore": 0.8172,
+   "chrom": 0.352
+  },
+  {
+   "id": "RAW-081",
+   "sim": 0.6365,
+   "scrfdScore": 0.5748,
+   "chrom": 0.309
+  },
+  {
+   "id": "RAW-084",
+   "sim": 0.5937,
+   "scrfdScore": 0.8892,
+   "chrom": 0.28
+  },
+  {
+   "id": "RAW-087",
+   "sim": 0.4243,
+   "scrfdScore": 0.8581,
+   "chrom": 0.318
+  },
+  {
+   "id": "RAW-095",
+   "sim": 0.7302,
+   "scrfdScore": 0.8757,
+   "chrom": 0.274
+  },
+  {
+   "id": "RAW-096",
+   "sim": 0.4333,
+   "scrfdScore": 0.8644,
+   "chrom": 0.444
+  },
+  {
+   "id": "RAW-097",
+   "sim": 0.5656,
+   "scrfdScore": 0.8271,
+   "chrom": 0.452
+  },
+  {
+   "id": "RAW-098",
+   "sim": 0.3464,
+   "scrfdScore": 0.8865,
+   "chrom": 0.406
+  },
+  {
+   "id": "RAW-099",
+   "sim": 0.7185,
+   "scrfdScore": 0.8669,
+   "chrom": 0.331
+  },
+  {
+   "id": "RAW-100",
+   "sim": 0.6512,
+   "scrfdScore": 0.8617,
+   "chrom": 0.576
+  },
+  {
+   "id": "RAW-102",
+   "sim": 0.7067,
+   "scrfdScore": 0.8815,
+   "chrom": 0.481
+  },
+  {
+   "id": "RAW-116",
+   "sim": 0.4243,
+   "scrfdScore": 0.8603,
+   "chrom": 0.393
+  },
+  {
+   "id": "RAW-117",
+   "sim": 0.7404,
+   "scrfdScore": 0.8574,
+   "chrom": 0.505
+  },
+  {
+   "id": "RAW-118",
+   "sim": 0.7803,
+   "scrfdScore": 0.893,
+   "chrom": 0.482
+  },
+  {
+   "id": "RAW-119",
+   "sim": 0.7152,
+   "scrfdScore": 0.8515,
+   "chrom": 0.322
+  },
+  {
+   "id": "RAW-120",
+   "sim": 0.7623,
+   "scrfdScore": 0.5578,
+   "chrom": 0.477
+  },
+  {
+   "id": "RAW-122",
+   "sim": 0.5255,
+   "scrfdScore": 0.5017,
+   "chrom": 0.631
+  },
+  {
+   "id": "RAW-123",
+   "sim": 0.5178,
+   "scrfdScore": 0.7773,
+   "chrom": 0.471
+  },
+  {
+   "id": "RAW-124",
+   "sim": 0.7472,
+   "scrfdScore": 0.6319,
+   "chrom": 0.425
+  },
+  {
+   "id": "RAW-125",
+   "sim": 0.6777,
+   "scrfdScore": 0.9043,
+   "chrom": 0.604
+  },
+  {
+   "id": "RAW-128",
+   "sim": 0.3173,
+   "scrfdScore": 0.8521,
+   "chrom": 0.569
+  },
+  {
+   "id": "RAW-129",
+   "sim": 0.339,
+   "scrfdScore": 0.8703,
+   "chrom": 0.556
+  },
+  {
+   "id": "RAW-132",
+   "sim": 0.4695,
+   "scrfdScore": 0.8702,
+   "chrom": 0.443
+  },
+  {
+   "id": "RAW-133",
+   "sim": 0.7476,
+   "scrfdScore": 0.8972,
+   "chrom": 0.681
+  },
+  {
+   "id": "RAW-134",
+   "sim": 0.5565,
+   "scrfdScore": 0.8849,
+   "chrom": 0.3
+  },
+  {
+   "id": "RAW-135",
+   "sim": 0.6888,
+   "scrfdScore": 0.8692,
+   "chrom": 0.598
+  },
+  {
+   "id": "RAW-136",
+   "sim": 0.6189,
+   "scrfdScore": 0.8634,
+   "chrom": 0.385
+  },
+  {
+   "id": "RAW-138",
+   "sim": 0.6135,
+   "scrfdScore": 0.8814,
+   "chrom": 0.471
+  },
+  {
+   "id": "RAW-139",
+   "sim": 0.6232,
+   "scrfdScore": 0.8473,
+   "chrom": 1.0
+  },
+  {
+   "id": "RAW-141",
+   "sim": 0.7013,
+   "scrfdScore": 0.9084,
+   "chrom": 0.464
+  },
+  {
+   "id": "RAW-142",
+   "sim": 0.6802,
+   "scrfdScore": 0.841,
+   "chrom": 0.5
+  },
+  {
+   "id": "RAW-145",
+   "sim": 0.687,
+   "scrfdScore": 0.9084,
+   "chrom": 0.285
+  },
+  {
+   "id": "RAW-146",
+   "sim": 0.6081,
+   "scrfdScore": 0.8981,
+   "chrom": 0.379
+  },
+  {
+   "id": "RAW-149",
+   "sim": 0.4866,
+   "scrfdScore": 0.9009,
+   "chrom": 0.356
+  },
+  {
+   "id": "RAW-154",
+   "sim": 0.6084,
+   "scrfdScore": 0.8978,
+   "chrom": 0.367
+  },
+  {
+   "id": "RAW-156",
+   "sim": 0.7081,
+   "scrfdScore": 0.8307,
+   "chrom": 0.52
+  },
+  {
+   "id": "RAW-157",
+   "sim": 0.6403,
+   "scrfdScore": 0.8253,
+   "chrom": 0.273
+  },
+  {
+   "id": "RAW-160",
+   "sim": 0.3586,
+   "scrfdScore": 0.783,
+   "chrom": 0.325
+  },
+  {
+   "id": "RAW-162",
+   "sim": 0.6164,
+   "scrfdScore": 0.8737,
+   "chrom": 0.477
+  },
+  {
+   "id": "RAW-163",
+   "sim": 0.6634,
+   "scrfdScore": 0.8919,
+   "chrom": 0.607
+  },
+  {
+   "id": "RAW-164",
+   "sim": 0.5054,
+   "scrfdScore": 0.8621,
+   "chrom": 0.421
+  },
+  {
+   "id": "RAW-165",
+   "sim": 0.6947,
+   "scrfdScore": 0.8612,
+   "chrom": 0.624
+  },
+  {
+   "id": "RAW-167",
+   "sim": 0.5593,
+   "scrfdScore": 0.8494,
+   "chrom": 0.456
+  },
+  {
+   "id": "RAW-168",
+   "sim": 0.6461,
+   "scrfdScore": 0.8317,
+   "chrom": 0.923
+  }
+ ],
+ "note": "Tang 3 ArcFace noi — so embedding box voi centroid gallery nguoi that (chrom cao)."
+}

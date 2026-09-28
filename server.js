@@ -130,6 +130,14 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
     const etag = `W/"${st.mtimeMs.toString(36)}-${st.size.toString(36)}"`;
     headers['ETag'] = etag;
 
+    /* UI-06 production fix (2026-09-28): cho phep SW script tai /assets/app/sw.js
+       dang ky scope '/' — khong co header nay browser se giam scope xuong
+       /assets/app/ va trang goc lai khong duoc control (offline chet). */
+    const normFull = full.replace(/\\/g, '/');
+    if (normFull.endsWith('/assets/app/sw.js') || normFull.endsWith('/sw.js')) {
+      headers['Service-Worker-Allowed'] = '/';
+    }
+
     // Cache-Control thông minh: Tăng tốc độ CDN & Trình duyệt
     if (full.endsWith('.html')) {
       headers['Cache-Control'] = 'no-cache, must-revalidate';

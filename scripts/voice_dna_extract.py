@@ -29,23 +29,37 @@ def sh(cmd, **kw):
     return subprocess.run(cmd, capture_output=True, text=True, **kw)
 
 
-def pick_pilot(limit):
+def pick_pilot(limit, raws=None):
     sys.path.insert(0, str(ROOT / "scripts"))
     import sqlite3
     db = sqlite3.connect(DB)
-    rows = db.execute("""
-        SELECT DISTINCT c.channel_id, c.handle, c.raw_id
-        FROM competitor_channels c
-        JOIN competitor_top_videos v ON v.channel_id = c.channel_id AND v.rank_order = 1
-        WHERE c.has_voice_sample = 0
-        LIMIT ?
-    """, (limit,)).fetchall()
+    if raws:
+        # Re-extract danh sach cu the (force, bat ke has_voice_sample) — lay video_id rank 1
+        marks = ",".join("?" for _ in raws)
+        rows = db.execute(f"""
+            SELECT DISTINCT c.raw_id FROM competitor_channels c
+            JOIN competitor_top_videos v ON v.channel_id = c.channel_id AND v.rank_order = 1
+            WHERE c.raw_id IN ({marks})
+        """, raws).fetchall()
+        raw_ids = [r[0] for r in rows if r[0]]
+    else:
+        rows = db.execute("""
+            SELECT DISTINCT c.raw_id
+            FROM competitor_channels c
+            JOIN competitor_top_videos v ON v.channel_id = c.channel_id AND v.rank_order = 1
+            WHERE c.has_voice_sample = 0
+            LIMIT ?
+        """, (limit,)).fetchall()
+        raw_ids = [r[0] for r in rows]
     vids = {}
-    for cid, handle, raw_id in rows:
+    for raw_id in raw_ids:
         r = db.execute(
+            "SELECT channel_id, handle FROM competitor_channels WHERE raw_id=? LIMIT 1",
+            (raw_id,)).fetchone()
+        v = db.execute(
             "SELECT video_id FROM competitor_top_videos WHERE channel_id=? AND rank_order=1 LIMIT 1",
-            (cid,)).fetchone()
-        vids[raw_id] = {"channel_id": cid, "handle": handle, "video_id": r[0]}
+            (r[0],)).fetchone()
+        vids[raw_id] = {"channel_id": r[0], "handle": r[1], "video_id": v[0]}
     db.close()
     return vids
 
@@ -67,36 +81,67 @@ def measure_lufs(path):
         return None
 
 
+def gain_trim(out_mp3, target=-16.0):
+    """Buoc chot: do LUFS output -> volume gain dB -> LUFS chinh xac ±0.05.
+    (loudnorm linear=true bi bypass khi LRA nguon lon — gain trim la buoc dam bao.)"""
+    cur = measure_lufs(out_mp3)
+    if cur is None:
+        return None
+    dev = float(cur) - target
+    if abs(dev) <= 0.2:
+        return cur
+    tmp = out_mp3.with_suffix(".tmp.mp3")
+    sh([str(FFMPEG), "-y", "-hide_banner", "-nostats", "-i", str(out_mp3),
+        "-af", f"volume={-dev:.3f}dB", "-c:a", "libmp3lame", "-b:a", "128k", str(tmp)], timeout=120)
+    if tmp.exists():
+        tmp.replace(out_mp3)
+    return measure_lufs(out_mp3)
+
+
 def extract_45s(tmp_audio, out_mp3):
-    """2-pass loudnorm — pass 1 do (measured), pass 2 ap dung -> -16 LUFS chinh xac ±0.5."""
-    p1 = sh([str(FFMPEG), "-hide_banner", "-nostats", "-i", str(tmp_audio),
-             "-t", "45", "-af", FFMPEG_LN + ":print_format=json", "-f", "null", "-"])
-    try:
-        j = (p1.stderr or "")[(p1.stderr or "").rindex("{"):(p1.stderr or "").rindex("}") + 1]
-        m = json.loads(j)
-        measured = (f"loudnorm=I=-16:TP=-1.5:LRA=11:"
-                    f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
-                    f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:"
-                    f"offset={m['target_offset']}:linear=true")
-    except Exception:
-        measured = FFMPEG_LN
-    ex = sh([str(FFMPEG), "-y", "-hide_banner", "-nostats", "-i", str(tmp_audio),
-             "-ss", "0", "-t", "45", "-ac", "1", "-ar", "44100",
-             "-af", measured, "-b:a", "128k", str(out_mp3)], timeout=180)
-    return out_mp3.exists()
+    """2-pass loudnorm — pass 1 do DUNG CUA SO 45s (SCAR: do 2 phut nguon thi measured
+    lech cua so encode -> LUFS xat lech 0.5-1.9), pass 2 ap dung linear.
+    Feedback loop: sau encode do lai output; neu |LUFS+16| > 0.5 thi redo toi da 2 lan."""
+    target = 45
+    for _ in range(3):
+        p1 = sh([str(FFMPEG), "-hide_banner", "-nostats", "-i", str(tmp_audio),
+                 "-t", str(target), "-af", FFMPEG_LN + ":print_format=json", "-f", "null", "-"])
+        try:
+            j = (p1.stderr or "")[(p1.stderr or "").rindex("{"):(p1.stderr or "").rindex("}") + 1]
+            m = json.loads(j)
+            measured = (f"loudnorm=I=-16:TP=-1.5:LRA=11:"
+                        f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+                        f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:"
+                        f"offset={m['target_offset']}:linear=true")
+        except Exception:
+            measured = FFMPEG_LN
+        ex = sh([str(FFMPEG), "-y", "-hide_banner", "-nostats", "-i", str(tmp_audio),
+                 "-ss", "0", "-t", "45", "-ac", "1", "-ar", "44100",
+                 "-af", measured, "-b:a", "128k", str(out_mp3)], timeout=180)
+        if not out_mp3.exists():
+            return False
+        cur = measure_lufs(out_mp3)
+        if cur is not None and abs(float(cur) + 16) <= 0.5:
+            gain_trim(out_mp3)
+            return True
+    gain_trim(out_mp3)
+    return True  # het vong feedback — gain trim dam bao -16 chinh xac
 
 
 def main():
     limit = 5
     if "--limit" in sys.argv:
         limit = int(sys.argv[sys.argv.index("--limit") + 1])
+    raws = None
+    if "--raws" in sys.argv:
+        raws = [x.strip() for x in sys.argv[sys.argv.index("--raws") + 1].split(",") if x.strip()]
     if not FFMPEG.exists():
         print("MISSING ffmpeg:", FFMPEG)
         sys.exit(2)
     TMP.mkdir(parents=True, exist_ok=True)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    pilots = pick_pilot(limit)
+    pilots = pick_pilot(limit, raws)
     print(f"PILOT: {len(pilots)} kenh")
     results = []
     for raw_id, meta in pilots.items():

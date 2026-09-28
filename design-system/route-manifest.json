@@ -114,7 +114,7 @@
     },
     {
       "path": "/tatca",
-      "status": "proposed",
+      "status": "current",
       "type": "tab",
       "serveFile": "index.html",
       "tabId": "tatca",
@@ -122,7 +122,7 @@
       "canonical": "/tatca",
       "params": ["type"],
       "redirectFrom": [],
-      "verified": { "httpStatus": 404, "testedAt": "2026-09-23" },
+      "verified": { "httpStatus": 200, "testedAt": "2026-09-28" },
       "decisionRef": "URL-ROUTING-SPEC 9.1"
     },
     {
@@ -151,17 +151,17 @@
     },
     {
       "path": "/tai-lieu",
-      "status": "proposed",
+      "status": "current",
       "type": "tab",
       "serveFile": "index.html",
-      "tabId": "kichban",
+      "tabId": "tai-lieu",
       "title": "Tài liệu — H2DEV",
       "canonical": "/tai-lieu",
       "params": [],
       "redirectFrom": ["/kichban"],
-      "verified": { "httpStatus": 404, "testedAt": "2026-09-23" },
+      "verified": { "httpStatus": 200, "testedAt": "2026-09-28" },
       "decisionRef": "URL-ROUTING-SPEC 9.2",
-      "note": "UI label đã là 'Tài liệu' (main.js:66) nhưng slug hiện tại là /kichban → vi phạm rule R6 (slug phải khớp tên UI)"
+      "note": "Đã live: HTTP 200, tab tai-lieu render renderKichBan (2026-09-28). Note cũ về vi phạm R6 không còn đúng."
     },
     {
       "path": "/kichban",
@@ -181,17 +181,17 @@
     },
     {
       "path": "/nhac",
-      "status": "proposed",
-      "type": "modal",
+      "status": "current",
+      "type": "tab",
       "serveFile": "index.html",
-      "feHandler": "openMusicStudioModal",
+      "tabId": "nhac",
       "title": "Nhạc nền — H2DEV",
       "canonical": "/nhac",
-      "params": ["mood", "risk", "track"],
+      "params": [],
       "redirectFrom": [],
-      "verified": { "httpStatus": 404, "testedAt": "2026-09-23" },
-      "evidence": ["index.html:260 button#btn-music-studio", "music_player_modal.js:74 openMusicStudioModal", "main.js:2424 music-studio-modal"],
-      "decisionRef": "URL-ROUTING-SPEC 9.6"
+      "verified": { "httpStatus": 200, "testedAt": "2026-09-28" },
+      "evidence": ["main.js render() case 'nhac' → renderNhac() view Trạm Nhạc Nền (Batch B, 2026-09-28)", "music_player_modal.js window.openMusicStudioModal", "index.html #btn-music-studio"],
+      "note": "params mood/risk/track trong spec cũ chưa có runtime — giữ làm plan, chưa current."
     },
     {
       "path": "/nguonreup",
@@ -207,17 +207,16 @@
     },
     {
       "path": "/kenh-mau",
-      "status": "proposed",
+      "status": "current",
       "type": "tab",
       "serveFile": "index.html",
-      "tabId": "kenh",
+      "tabId": "kenh-mau",
       "title": "Kênh mẫu — H2DEV",
       "canonical": "/kenh-mau",
       "params": [],
       "redirectFrom": ["/kenh"],
-      "verified": { "httpStatus": 404, "testedAt": "2026-09-23" },
-      "decisionRef": "URL-ROUTING-SPEC 9.2",
-      "note": "UI label là 'Kênh mẫu' (main.js:68) nhưng slug hiện tại là /kenh → vi phạm rule R6"
+      "verified": { "httpStatus": 200, "testedAt": "2026-09-28" },
+      "decisionRef": "URL-ROUTING-SPEC 9.2"
     },
     {
       "path": "/kenh",
@@ -419,7 +418,7 @@
     { "name": "back", "meaning": "URL quay về từ player", "type": "string", "encode": true, "default": null, "omitWhenDefault": true, "usedBy": ["/lotrinh/<sku>"], "status": "current" },
     { "name": "sku", "meaning": "Mã bài học dạng query (đường phụ)", "type": "string", "encode": false, "default": null, "omitWhenDefault": true, "usedBy": ["/player.html"], "status": "current" },
     { "name": "q", "meaning": "Từ khoá tìm kiếm", "type": "string", "encode": true, "default": null, "omitWhenDefault": true, "usedBy": ["/api/search"], "status": "current" },
-    { "name": "sub", "meaning": "Sub-tab trong tab Chiến lược", "type": "enum", "values": ["principles", "workflow", "distribution", "policy", "all"], "encode": false, "default": "all", "omitWhenDefault": true, "usedBy": ["/chienluoc"], "status": "proposed" },
+    { "name": "sub", "meaning": "Sub-tab trong tab Chiến lược", "type": "enum", "values": ["principles", "workflow", "distribution", "policy", "all"], "encode": false, "default": "all", "omitWhenDefault": true, "usedBy": ["/chienluoc"], "status": "current" },
     { "name": "tab", "meaning": "Sub-tab trong player", "type": "enum", "values": ["overview", "sub", "transcript"], "encode": false, "default": "overview", "omitWhenDefault": true, "usedBy": ["/lotrinh/<sku>"], "status": "proposed" },
     { "name": "type", "meaning": "Lọc loại nội dung trong tab gộp", "type": "enum", "values": ["video", "tai-lieu", "kenh", "nguon"], "encode": false, "default": null, "omitWhenDefault": true, "usedBy": ["/tatca"], "status": "proposed" },
     { "name": "mood", "meaning": "Lọc mood nhạc nền", "type": "string", "encode": true, "default": "all", "omitWhenDefault": true, "usedBy": ["/nhac"], "status": "proposed" },

@@ -467,7 +467,7 @@ a.h2-shell-brand .vd-wordmark {
    ========================================================================== */
 #freset, #freset-empty { min-height: 44px; }
 .btn-open-raw-deep { min-height: 44px; }
-#btnPrev, #btnNext { min-height: 44px; }
+/* #btnPrev/#btnNext: quy tac chinh nam o player.css (.player-controls specificity thang ID-only o day) */
 
 .btn-copy-visual-prompt, .btn-copy-visual-kit, .btn-copy-master-prompt,
 .btn-copy-thumb-prompt, .btn-copy-full-packaging, .btn-copy-combined-prompt,

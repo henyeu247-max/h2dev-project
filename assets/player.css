@@ -58,6 +58,10 @@
   border-color: var(--border);
   color: var(--fg-2);
 }
+/* UI-09 (2026-09-28): player navigation (Bài trước / Bài sau) >= 44px.
+   Rule nay de SAU block tren cung specificity (class+ID) => thang cascade;
+   rule 44px trong h2dev-shell.css (#btnPrev ID-only) bi block nay de vi specificity cao hon. */
+.player-controls #btnPrev, .player-controls #btnNext { min-height: 44px; }
 .player-controls #btnPrev:hover, .player-controls #btnNext:hover, .player-controls #btnWatched:hover {
   background: var(--surface);
   color: var(--fg);

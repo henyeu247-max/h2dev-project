@@ -71,23 +71,23 @@ async function renderTongQuan() {
   const modulesData = await loadJSON('data/modules.json').catch(() => ({ modules: [] }));
   const moduleCount = safeArray(modulesData.modules).length || safeArray(modulesData).length;
   return `
-  <div class="tq-head mb-6">
-<div class="flex items-center gap-3">
-  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-2xs font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
-    <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>RADAR KHO
-  </span>
-  <p class="page-lede">${SC.pad2(marketRows.length)} thị trường · ${SC.pad2(nx.ngachXanh.length)} ngách · ${SC.pad2((nx.thongTinChinhSach2026 || []).length)} chính sách 2026</p>
-</div>
-<button type="button" class="btn-primary text-xs flex items-center gap-1.5 px-3 py-1.5" data-open-tab="lotrinh">
-  <span>${moduleCount ? 'Lộ trình học · ' + SC.pad2(moduleCount) + ' module' : 'Lộ trình học'}</span>
-  <span class="text-xs font-mono">→</span>
-</button>
-  </div>
-  <div class="bento-grid mb-6">
-${statCard(ICONS.video, 'Video khóa học', videos.length, `${free} bài Free · ${videos.length - free} bài Pro`, 'video')}
-${statCard(ICONS.doc, 'Kịch bản & Tài liệu', kich.length, `${liveFile} file local · catalog`, 'tai-lieu')}
-${statCard(ICONS.channel, 'Kênh mẫu', kenh.filter(k=>!k.dead).length, `${kenh.length} kênh · ${kenh.filter(k=>k.dead).length} dead ẩn`, 'kenh-mau')}
-${statCard(ICONS.disk, 'Dung lượng đĩa', fmtMb(diskMb), `${SC.pad2(videos.length)} video · catalog local`, 'video')}
+  ${pageBanner('Tổng quan Radar Kho', `${SC.pad2(marketRows.length)} thị trường · ${SC.pad2(nx.ngachXanh.length)} ngách · ${SC.pad2((nx.thongTinChinhSach2026 || []).length)} chính sách 2026`, [
+    { icon: ICONS.video, label: 'Video khóa học', value: videos.length, sub: `${free} bài Free · ${videos.length - free} bài Pro`, tab: 'video' },
+    { icon: ICONS.doc, label: 'Kịch bản & Tài liệu', value: kich.length, sub: `${liveFile} file local · catalog`, tab: 'tai-lieu' },
+    { icon: ICONS.channel, label: 'Kênh mẫu', value: kenh.filter(k=>!k.dead).length, sub: `${kenh.length} kênh · ${kenh.filter(k=>k.dead).length} dead ẩn`, tab: 'kenh-mau' },
+    { icon: ICONS.disk, label: 'Dung lượng đĩa', value: fmtMb(diskMb), sub: `${SC.pad2(videos.length)} video · catalog local`, tab: 'video' }
+  ])}
+  <div class="card p-4 sm:p-5 mb-6 flex flex-wrap items-center justify-between gap-3 border-border-strong bg-surface">
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-2xs font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>RADAR KHO
+      </span>
+      <span class="text-xs text-gray-400 font-medium">Bản đồ điều hướng toàn diện kho học liệu &amp; đối thủ YouTube Faceless</span>
+    </div>
+    <button type="button" class="btn-primary text-xs flex items-center gap-1.5 px-3 py-1.5" data-open-tab="lotrinh">
+      <span>${moduleCount ? 'Lộ trình học · ' + SC.pad2(moduleCount) + ' module' : 'Lộ trình học'}</span>
+      <span class="text-xs font-mono">→</span>
+    </button>
   </div>
   ${(function () {
       const w = loadWatched();
@@ -567,7 +567,17 @@ ${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="fi
 <span class="inline-flex items-center gap-1.5">${ico('target', 14)} Đang lọc theo ngách: <strong class="text-white">${esc(state.nicheFilter || 'SKU')}</strong> (${list.length} video)</span>
 <button type="button" data-action="video-filter-reset" class="ml-auto inline-flex items-center gap-1 text-brand-400 hover:text-white font-semibold underline">${ico('x', 14)} Xóa bộ lọc</button>
   </div>` : ''}
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">${list.map(videoCard).join('') || `<div class="card p-12 text-gray-400 col-span-full text-center py-10"><p class="mb-3">Không tìm thấy video phù hợp với bộ lọc hiện tại.</p><button type="button" id="freset-empty" class="bg-surface-2 hover:bg-surface border border-border px-4 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Xóa bộ lọc</button></div>`}</div>`;
+  ${(() => {
+    const PAGE_SIZE = 24;
+    const totalPages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+    const page = Math.min(Math.max(1, state.videoPage || 1), totalPages);
+    state.videoPage = page;
+    const paged = list.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+    const pager = totalPages <= 1 ? '' : `<div class="flex items-center justify-between gap-2 mb-3 text-xs text-gray-400"><span>Trang ${page}/${totalPages} · ${list.length} bài học</span><span class="flex gap-1">${page > 1 ? `<button type="button" class="filter-btn" data-action="video-page" data-page="${page - 1}">← Trước</button>` : ''}${page < totalPages ? `<button type="button" class="filter-btn" data-action="video-page" data-page="${page + 1}">Sau →</button>` : ''}</span></div>`;
+    return pager + `
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">${paged.map(videoCard).join('') || `<div class="card p-12 text-gray-400 col-span-full text-center py-10"><p class="mb-3">Không tìm thấy video phù hợp với bộ lọc hiện tại.</p><button type="button" id="freset-empty" class="bg-surface-2 hover:bg-surface border border-border px-4 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Xóa bộ lọc</button></div>`}</div>
+  ${totalPages > 1 ? `<div class="mt-6 flex justify-end">${pager}</div>` : ''}`;
+  })()}`;
 }
 
 async function renderNgachXanh() {
@@ -1474,13 +1484,10 @@ async function renderRawKenh() {
 
   return `
   ${pageBanner('Raw kênh mẫu', SC.pad2(filtered.length) + '/' + SC.pad2(records.length) + ' hồ sơ · bóc tách qua Vision AI + OCR + vidIQ', [
-    { icon: ICONS.image, label: 'Ảnh raw', value: records.length, sub: filtered.length === records.length ? 'Hiện tất cả' : 'Đang lọc ' + filtered.length },
-    { icon: ICONS.niche, label: 'Nhóm chủ đề', value: sortedGroups.length, sub: Object.keys(nicheCounts).length + ' ngách chi tiết' },
-    { icon: ICONS.search, label: 'Đang hoạt động', value: activeCount, sub: 'ra video gần đây' },
-    { icon: ICONS.channel, label: 'Nguy cơ tắt YPP', value: riskCount, sub: 'dừng đăng >6 tháng' },
-    { icon: ICONS.doc, label: 'Verified vidIQ', value: verifiedCount, sub: 'khớp vidIQ live' },
-    { icon: ICONS.doc, label: 'Faceless (Vision)', value: facelessCount, sub: hasFaceCount ? (hasFaceCount + ' kênh có mặt người thật') : 'phân loại bằng AI' },
-    { icon: ICONS.search, label: 'Có OCR', value: ocrCount, sub: 'quét từ ảnh' }
+    { icon: ICONS.image, label: 'Ảnh raw', value: records.length, sub: `${filtered.length === records.length ? 'Hiện tất cả' : 'Đang lọc ' + filtered.length} · ${ocrCount} có OCR` },
+    { icon: ICONS.niche, label: 'Nhóm chủ đề', value: sortedGroups.length, sub: `${Object.keys(nicheCounts).length} ngách chi tiết` },
+    { icon: ICONS.channel, label: 'Sức sống YPP', value: `${activeCount} live`, sub: `${riskCount} nguy cơ tắt YPP (>6th)` },
+    { icon: ICONS.doc, label: 'Kiểm định AI', value: `${verifiedCount} vidIQ`, sub: `${facelessCount} faceless AI (${hasFaceCount} có mặt)` }
   ])}
   <div class="card p-4 sm:p-5 mb-6 border-brand-500/30 bg-brand-950/20" role="note">
 <div class="flex items-start gap-3">
@@ -1654,7 +1661,7 @@ async function renderRawKenh() {
         </div>
       </div>
     </article>`;
-    }).join('')}
+    }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2 flex justify-center">' + ico('search', 24) + '</div><p class="mb-3">Không tìm thấy hồ sơ kênh raw phù hợp với bộ lọc hiện tại.</p><button type="button" id="freset-raw-empty" class="bg-surface-2 hover:bg-surface border border-border px-4 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Xóa bộ lọc</button></div>'}
   </div>`;
 })()}
 </div>
@@ -1685,9 +1692,15 @@ async function renderKenh() {
   }).slice().sort((a, b) => (b.count || 0) - (a.count || 0));
   const allKenhNiches = [...NICHE_ORDER.filter(n => nicheCounts[n]), ...Object.keys(nicheCounts).filter(n => !NICHE_ORDER.includes(n))];
   const chips = allKenhNiches.map(n => [n, n, nicheCounts[n]]);
+  const PAGE_SIZE = 24;
+  const totalPages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+  const page = Math.min(Math.max(1, state.kenhPage || 1), totalPages);
+  state.kenhPage = page;
+  const pagedList = list.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const pager = totalPages <= 1 ? '' : `<div class="flex items-center justify-between gap-2 mb-3 text-xs text-gray-400"><span>Trang ${page}/${totalPages} · ${list.length} kênh đối thủ</span><span class="flex gap-1">${page > 1 ? `<button type="button" class="filter-btn" data-action="kenh-page" data-page="${page - 1}">← Trước</button>` : ''}${page < totalPages ? `<button type="button" class="filter-btn" data-action="kenh-page" data-page="${page + 1}">Sau →</button>` : ''}</span></div>`;
   const grouped = [];
   allKenhNiches.forEach(n => {
-    const items = list.filter(x => (x.niche || 'Khác') === n);
+    const items = pagedList.filter(x => (x.niche || 'Khác') === n);
     if (items.length) grouped.push({ niche: n, items });
   });
   function videoNicheKey(niche) {
@@ -1695,11 +1708,10 @@ async function renderKenh() {
   }
   return `
   ${pageBanner('Kênh mẫu / Đối thủ', list.length + '/' + kenh.length + ' kênh · nhóm theo ngách từ video H2DEV', [
-    { icon: ICONS.channel, label: 'Kênh mẫu', value: kenh.length, sub: list.length === kenh.length ? 'Hiện tất cả' : 'Đang lọc ' + list.length },
-    { icon: ICONS.niche, label: 'Ngách có kênh', value: Object.keys(nicheCounts).length, sub: 'chip bên dưới' },
-    { icon: ICONS.home, label: 'Có avatar', value: kenh.filter(k => k.avatar).length, sub: 'thumb local' },
-    { icon: ICONS.link, label: 'Đang hiện', value: list.length, sub: 'sau filter' },
-    { icon: ICONS.doc, label: 'Dead 404', value: kenh.filter(k => k.dead).length, sub: 'đã ẩn' }
+    { icon: ICONS.channel, label: 'Kênh đối thủ', value: kenh.length, sub: `${kenh.filter(k => !k.dead).length} live · ${kenh.filter(k => k.dead).length} dead ẩn` },
+    { icon: ICONS.niche, label: 'Ngách có kênh', value: Object.keys(nicheCounts).length, sub: 'nhóm theo ngách video' },
+    { icon: ICONS.home, label: 'Avatar local', value: kenh.filter(k => k.avatar).length, sub: 'thumb đã tải local' },
+    { icon: ICONS.link, label: 'Đang hiển thị', value: SC.pad2(list.length), live: true, sub: list.length === kenh.length ? 'Hiện tất cả' : 'Đang lọc' }
   ])}
   <div class="card p-4 sm:p-5 mb-6">
 <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
@@ -1715,6 +1727,7 @@ async function renderKenh() {
   </div>
 </div>
   </div>
+  ${pager}
   <div class="space-y-6">
 ${grouped.map(g => {
     const vKey = videoNicheKey(g.niche);
@@ -1738,8 +1751,9 @@ ${grouped.map(g => {
         </a>`).join('')}
     </div>
   </section>`;
-  }).join('') || '<div class="text-gray-400 text-center py-10">Không tìm thấy kênh</div>'}
-  </div>`;
+  }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2 flex justify-center">' + ico('search', 24) + '</div><p class="mb-3">Không tìm thấy kênh phù hợp với bộ lọc hiện tại.</p><button type="button" id="freset-kenh-empty" class="bg-surface-2 hover:bg-surface border border-border px-4 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Xóa bộ lọc</button></div>'}
+  </div>
+  ${totalPages > 1 ? `<div class="mt-6 flex justify-end">${pager}</div>` : ''}`;
 }
 
 async function renderChienLuoc() {
@@ -1786,18 +1800,15 @@ async function renderChienLuoc() {
   const isAll = curTab === 'all';
 
   return `
-  <div class="mb-4">
-<p class="page-lede">Ngách không quyết định xanh/đỏ — <b class="text-white">cách làm</b> quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.</p>
-  </div>
+  ${pageBanner('Chiến lược & Vận hành', `Ngách không quyết định xanh/đỏ — cách làm quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.`, [
+    { icon: ICONS.video, label: 'Video local', value: videos.length, sub: `${videos.length} video · ${scored} đã điểm`, tab: 'video' },
+    { icon: ICONS.doc, label: 'Kịch bản & Tài liệu', value: docs.length, sub: `${docs.length} file · catalog`, tab: 'tai-lieu' },
+    { icon: ICONS.channel, label: 'Kênh đối thủ', value: kenh.length, sub: `${kenh.length} kênh · đã check 30 ngày`, tab: 'kenh-mau' },
+    { icon: ICONS.link, label: 'Nguồn reup', value: nguon.length, sub: `${nguon.length} nguồn · match`, tab: 'nguonreup' }
+  ])}
 
-  <!-- Panel 1: 4 Nguyên Tắc Cốt Lõi & Bento Metrics -->
-  <div id="cl-panel-principles" class="cl-panel" style="${(curTab === 'principles' || isAll) ? 'display:flex;' : 'display:none;'}">
-<div class="bento-grid">
-  ${statCard(ICONS.video, 'Video local', videos.length, `${videos.length} video · ${scored} đã điểm`, 'video')}
-  ${statCard(ICONS.doc, 'Kịch bản / tài liệu', docs.length, `${docs.length} file · catalog`, 'tai-lieu')}
-  ${statCard(ICONS.channel, 'Kênh đối thủ', kenh.length, `${kenh.length} kênh · đã check 30 ngày`, 'kenh-mau')}
-  ${statCard(ICONS.link, 'Nguồn reup', nguon.length, `${nguon.length} nguồn · match`, 'nguonreup')}
-</div>
+  <!-- Panel 1: 4 Nguyên Tắc Cốt Lõi -->
+  <div id="cl-panel-principles" class="cl-panel flex-col" style="${(curTab === 'principles' || isAll) ? 'display:flex;' : 'display:none;'}">
 <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-3">
   ${principles.map(p => `
     <article class="card p-4 min-w-0">

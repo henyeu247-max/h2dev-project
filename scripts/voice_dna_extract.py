@@ -67,6 +67,25 @@ def measure_lufs(path):
         return None
 
 
+def extract_45s(tmp_audio, out_mp3):
+    """2-pass loudnorm — pass 1 do (measured), pass 2 ap dung -> -16 LUFS chinh xac ±0.5."""
+    p1 = sh([str(FFMPEG), "-hide_banner", "-nostats", "-i", str(tmp_audio),
+             "-t", "45", "-af", FFMPEG_LN + ":print_format=json", "-f", "null", "-"])
+    try:
+        j = (p1.stderr or "")[(p1.stderr or "").rindex("{"):(p1.stderr or "").rindex("}") + 1]
+        m = json.loads(j)
+        measured = (f"loudnorm=I=-16:TP=-1.5:LRA=11:"
+                    f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+                    f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:"
+                    f"offset={m['target_offset']}:linear=true")
+    except Exception:
+        measured = FFMPEG_LN
+    ex = sh([str(FFMPEG), "-y", "-hide_banner", "-nostats", "-i", str(tmp_audio),
+             "-ss", "0", "-t", "45", "-ac", "1", "-ar", "44100",
+             "-af", measured, "-b:a", "128k", str(out_mp3)], timeout=180)
+    return out_mp3.exists()
+
+
 def main():
     limit = 5
     if "--limit" in sys.argv:
@@ -86,25 +105,25 @@ def main():
         out_mp3 = OUT_DIR / f"{raw_id}.mp3"
         rec = {"rawId": raw_id, "handle": meta["handle"], "videoId": vid}
 
-        # 1) Download audio (60s dau sau 30s intro, tranh nha cu)
-        dl = sh([sys.executable, "-m", "yt_dlp", "-f", "bestaudio/best",
-                 "--ffmpeg-location", str(FFMPEG.parent),
-                 "--download-sections", "*00:30-02:30", "-x", "--audio-format", "m4a",
-                 "-o", str(tmp_audio), "--no-playlist", "--quiet",
-                 f"https://www.youtube.com/watch?v={vid}"], timeout=300)
-        if not tmp_audio.exists():
+        dl_ok = False
+        for attempt in (1, 2):  # retry 1 lan
+            dl = sh([sys.executable, "-m", "yt_dlp", "-f", "bestaudio/best",
+                     "--ffmpeg-location", str(FFMPEG.parent),
+                     "--download-sections", "*00:30-02:30", "-x", "--audio-format", "m4a",
+                     "-o", str(tmp_audio), "--no-playlist", "--quiet",
+                     f"https://www.youtube.com/watch?v={vid}"], timeout=300)
+            if tmp_audio.exists():
+                dl_ok = True
+                break
+            time.sleep(2)
+        if not dl_ok:
             rec["status"] = "download-fail"
             rec["detail"] = (dl.stderr or dl.stdout or "").strip().splitlines()[-1:] or ["?"]
             results.append(rec)
             continue
 
-        # 2) Trich 45s mono 44.1kHz EBU R128 -16 LUFS
-        ex = sh([str(FFMPEG), "-y", "-hide_banner", "-nostats", "-i", str(tmp_audio),
-                 "-ss", "0", "-t", "45", "-ac", "1", "-ar", "44100",
-                 "-af", FFMPEG_LN, "-b:a", "128k", str(out_mp3)], timeout=180)
-        if not out_mp3.exists():
+        if not extract_45s(tmp_audio, out_mp3):
             rec["status"] = "extract-fail"
-            rec["detail"] = (ex.stderr or "").strip().splitlines()[-1:] or ["?"]
             results.append(rec)
             continue
         tmp_audio.unlink(missing_ok=True)

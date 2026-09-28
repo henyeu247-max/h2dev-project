@@ -1,0 +1,260 @@
+{
+ "schema": "h2dev.voice-dna-verify.v1",
+ "report": [
+  {
+   "rawId": "RAW-001",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-001.mp3"
+  },
+  {
+   "rawId": "RAW-002",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-002.mp3"
+  },
+  {
+   "rawId": "RAW-003",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-003.mp3"
+  },
+  {
+   "rawId": "RAW-004",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-004.mp3"
+  },
+  {
+   "rawId": "RAW-005",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-005.mp3"
+  },
+  {
+   "rawId": "RAW-006",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-006.mp3"
+  },
+  {
+   "rawId": "RAW-007",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-007.mp3"
+  },
+  {
+   "rawId": "RAW-008",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-008.mp3"
+  },
+  {
+   "rawId": "RAW-009",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-009.mp3"
+  },
+  {
+   "rawId": "RAW-010",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-010.mp3"
+  },
+  {
+   "rawId": "RAW-011",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-011.mp3"
+  },
+  {
+   "rawId": "RAW-013",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-013.mp3"
+  },
+  {
+   "rawId": "RAW-014",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-014.mp3"
+  },
+  {
+   "rawId": "RAW-015",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-015.mp3"
+  },
+  {
+   "rawId": "RAW-016",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-016.mp3"
+  },
+  {
+   "rawId": "RAW-017",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-017.mp3"
+  },
+  {
+   "rawId": "RAW-018",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-018.mp3"
+  },
+  {
+   "rawId": "RAW-019",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-019.mp3"
+  },
+  {
+   "rawId": "RAW-020",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-020.mp3"
+  },
+  {
+   "rawId": "RAW-021",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-021.mp3"
+  },
+  {
+   "rawId": "RAW-022",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-022.mp3"
+  },
+  {
+   "rawId": "RAW-023",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-023.mp3"
+  },
+  {
+   "rawId": "RAW-024",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-024.mp3"
+  },
+  {
+   "rawId": "RAW-025",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-025.mp3"
+  },
+  {
+   "rawId": "RAW-028",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-028.mp3"
+  },
+  {
+   "rawId": "RAW-029",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-029.mp3"
+  },
+  {
+   "rawId": "RAW-030",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-030.mp3"
+  },
+  {
+   "rawId": "RAW-031",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-031.mp3"
+  },
+  {
+   "rawId": "RAW-034",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-034.mp3"
+  },
+  {
+   "rawId": "RAW-038",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-038.mp3"
+  },
+  {
+   "rawId": "RAW-039",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-039.mp3"
+  },
+  {
+   "rawId": "RAW-040",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-040.mp3"
+  },
+  {
+   "rawId": "RAW-042",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-042.mp3"
+  },
+  {
+   "rawId": "RAW-043",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-043.mp3"
+  },
+  {
+   "rawId": "RAW-044",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-044.mp3"
+  },
+  {
+   "rawId": "RAW-045",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-045.mp3"
+  },
+  {
+   "rawId": "RAW-046",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-046.mp3"
+  },
+  {
+   "rawId": "RAW-047",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-047.mp3"
+  },
+  {
+   "rawId": "RAW-048",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-048.mp3"
+  },
+  {
+   "rawId": "RAW-050",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-050.mp3"
+  },
+  {
+   "rawId": "RAW-055",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-055.mp3"
+  },
+  {
+   "rawId": "RAW-056",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-056.mp3"
+  },
+  {
+   "rawId": "RAW-057",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-057.mp3"
+  },
+  {
+   "rawId": "RAW-058",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-058.mp3"
+  },
+  {
+   "rawId": "RAW-075",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-075.mp3"
+  },
+  {
+   "rawId": "RAW-079",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-079.mp3"
+  },
+  {
+   "rawId": "RAW-081",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-081.mp3"
+  },
+  {
+   "rawId": "RAW-082",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-082.mp3"
+  },
+  {
+   "rawId": "RAW-088",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-088.mp3"
+  },
+  {
+   "rawId": "RAW-089",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-089.mp3"
+  },
+  {
+   "rawId": "RAW-095",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-095.mp3"
+  }
+ ]
+}

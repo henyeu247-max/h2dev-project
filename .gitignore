@@ -65,3 +65,4 @@ manifest_full.csv
 _proof-shots/
 models/scrfd/*.onnx
 models/arcface/*.onnx
+_tools/

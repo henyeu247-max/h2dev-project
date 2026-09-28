@@ -402,12 +402,22 @@ window.addEventListener('keydown', (e)=>{
           pv.play().catch(() => {});
         }, { once: true });
       }
+      /* UI-14 (2026-09-28): bounded retry — moi nguon CHI thu 1 lan.
+         Truoc day: playbackSource la const (immutable) nen onerror lan 2 van thay
+         .mp4 -> gán lại CUNG src .webm da lỗi => vòng lặp gán .webm vô hạn;
+         ngược lại nguồn .webm lỗi thì bỏ không thử .mp4. */
+      const altSource = playbackSource.endsWith('.mp4')
+        ? playbackSource.replace(/\.mp4$/, '.webm')
+        : (isWebm ? playbackSource.replace(/\.webm$/, '.mp4') : '');
+      let altTried = false;
       pv.onerror = () => {
-        if (playbackSource.endsWith('.mp4')) {
-          pv.src = playbackSource.replace(/\.mp4$/, '.webm');
-        } else {
-          metaEl.innerHTML += `<span class="badge badge-red">Không đọc được nguồn phát</span>`;
+        if (altSource && !altTried) {
+          altTried = true;
+          pv.src = altSource;
+          pv.load();
+          return;
         }
+        metaEl.innerHTML += `<span class="badge badge-red">Không đọc được nguồn phát — thử tải lại trang hoặc dùng nút tải file.</span>`;
       };
     } else {
       metaEl.innerHTML += `<span class="badge badge-amber">Chưa tải được video (file 0 byte)</span>`;

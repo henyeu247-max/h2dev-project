@@ -182,6 +182,9 @@
           /* PHASE 1: build URL du 9 tham so + bo tham so o gia tri mac dinh */
           if (state.marketFilter) url.searchParams.set('market', state.marketFilter);
           if (state.nicheFilter) url.searchParams.set('niche', state.nicheFilter);
+          /* UI-04 (2026-09-28): page Video/Kenh trc day KHONG vao URL -> Back/Forward mat trang phan trang */
+          if (state.tab === 'video' && state.videoPage > 1) url.searchParams.set('vp', String(state.videoPage));
+          if (state.tab === 'kenh-mau' && state.kenhPage > 1) url.searchParams.set('kp', String(state.kenhPage));
           if (state.rawPage && state.rawPage > 1) url.searchParams.set('page', String(state.rawPage));
           if (state.rawNiche) url.searchParams.set('rn', state.rawNiche);
           if (state.rawGroup) url.searchParams.set('rg', state.rawGroup);
@@ -369,6 +372,7 @@
     const renderVideo = _tabContent.renderVideo;
     const renderNgachXanh = _tabContent.renderNgachXanh;
     const renderKichBan = _tabContent.renderKichBan;
+    const renderNhac = _tabContent.renderNhac;
     const renderNguonReup = _tabContent.renderNguonReup;
     const renderRawKenh = _tabContent.renderRawKenh;
     const renderKenh = _tabContent.renderKenh;
@@ -634,7 +638,11 @@
         btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false');
       });
     }
+    /* UI-02 (2026-09-28): render generation — doi tab nhanh khi fetch cham khong cho
+       phep lan render CU (cham hon) ghi de ket qua cua lan render MOI. */
+    let renderGen = 0;
     async function render() {
+      const gen = ++renderGen;
       const el = document.getElementById('content');
       el.setAttribute('aria-busy', 'true');
       /* P2-H2 (2026-09-27): hien SKELETON ngay khi bat dau render.
@@ -666,14 +674,20 @@
           case 'video': html = await renderVideo(); break;
           case 'ngachxanh': html = await renderNgachXanh(); break;
           case 'tai-lieu': html = await renderKichBan(); break;
-          case 'nhac': html = await renderKichBan(); break;
+          /* UI-05 (2026-09-28): /nhac trc day render NHAM renderKichBan (tai lieu) — dung view Tram Nhac Nen */
+          case 'nhac': html = await renderNhac(); break;
           case 'nguonreup': html = await renderNguonReup(); break;
           case 'kenh-mau': html = await renderKenh(); break;
           case 'rawkenh': html = await renderRawKenh(); break;
           case 'chienluoc': html = await renderChienLuoc(); break;
           default: html = await renderTongQuan(); break;
         }
+        /* UI-02: lan render nay da stale (user doi tab giua chung) -> bo qua, khong ghi de DOM */
+        if (gen !== renderGen) return;
         el.innerHTML = renderLoadErrorBanner() + html;
+        /* UI-11: banner "Khong tai duoc mot so du lieu" chi hien 1 lan cho loi da xay ra;
+           xoa sach de lan render sau (retry thanh cong) khong con banner cu ton song. */
+        _loadErrors.length = 0;
         const titleEl = document.getElementById('page-title');
         const tabMeta = TABS.find(t => t.id === state.tab);
         if (titleEl && tabMeta) titleEl.textContent = tabMeta.name;
@@ -752,8 +766,12 @@
         const hdEl = document.getElementById("hd-stats");
         if (hdEl && window._cachedStatsText) hdEl.textContent = window._cachedStatsText;
       } catch (error) {
+        /* UI-02: banner loi cua lan stale khong duoc de len noi dung moi hon */
+        if (gen !== renderGen) return;
         el.innerHTML = `<div class="card p-4 sm:p-5 border-red-800" role="alert"><h2 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h2><p class="text-gray-300">${esc(error.message)}</p><button type="button" class="mt-4 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm" data-action="retry-render">Thử lại</button></div>`;
-      } finally { el.setAttribute("aria-busy", "false"); }
+      } finally {
+        if (gen === renderGen) el.setAttribute("aria-busy", "false");
+      }
     }
 
     /* PHASE 1: Nguon su that duy nhat cho state tu URL.
@@ -2462,6 +2480,8 @@
             e.preventDefault();
             const p = parseInt(act.getAttribute('data-page') || '1', 10);
             state.videoPage = Number.isFinite(p) && p > 0 ? p : 1;
+            /* UI-04: dong bo vp vao URL (replaceState) de Back/Forward giu trang */
+            try { const u = new URL(location.href); if (state.videoPage > 1) u.searchParams.set('vp', String(state.videoPage)); else u.searchParams.delete('vp'); history.replaceState(history.state, '', u.pathname + u.search); } catch (err) {}
             render();
             return;
           }
@@ -2469,6 +2489,8 @@
             e.preventDefault();
             const p = parseInt(act.getAttribute('data-page') || '1', 10);
             state.kenhPage = Number.isFinite(p) && p > 0 ? p : 1;
+            /* UI-04: dong bo kp vao URL (replaceState) de Back/Forward giu trang */
+            try { const u = new URL(location.href); if (state.kenhPage > 1) u.searchParams.set('kp', String(state.kenhPage)); else u.searchParams.delete('kp'); history.replaceState(history.state, '', u.pathname + u.search); } catch (err) {}
             render();
             return;
           }

@@ -1,10 +1,10 @@
 /* H2DEV PWA shell cache — G5
-   UI-06 (2026-09-28): BAN HOAT DONG la file nay (/sw.js, scope '/').
-   assets/app/sw.js chi con la legacy copy — KHONG duoc dang ky nua (sw-register.js
-   tro ve '/sw.js'). CACHE bump de moi client lay SHELL moi.
-   SHELL mo rong: them main.js/search-core.js/h2dev-core + cac CSS/JS shell
-   (truoc day offline thi index.html song nhung main.js khong co trong cache => chet). */
-const CACHE = 'h2dev-shell-v20260928-batchd';
+   ⚠️ LEGACY (UI-06 production fix, 2026-09-28): nginx vhost regex `.*\.(js|css)?`
+   phuc vu /sw.js root TRUC TIEP tu webroot (khong co file) -> 404 => KHONG the
+   dang ky /sw.js tren production. Ban hoat dong la assets/app/sw.js (di dung
+   Node qua ^~ /assets/) voi header Service-Worker-Allowed: '/' (server.js).
+   Giu file theo NO_DELETE — dung sua logic o day nua. */
+const CACHE = 'h2dev-shell-legacy-root-unused';
 const SHELL = [
   '/',
   '/index.html',

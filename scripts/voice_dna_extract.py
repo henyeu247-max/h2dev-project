@@ -34,7 +34,6 @@ def pick_pilot(limit, raws=None):
     import sqlite3
     db = sqlite3.connect(DB)
     if raws:
-        # Re-extract danh sach cu the (force, bat ke has_voice_sample) — lay video_id rank 1
         marks = ",".join("?" for _ in raws)
         rows = db.execute(f"""
             SELECT DISTINCT c.raw_id FROM competitor_channels c
@@ -56,10 +55,11 @@ def pick_pilot(limit, raws=None):
         r = db.execute(
             "SELECT channel_id, handle FROM competitor_channels WHERE raw_id=? LIMIT 1",
             (raw_id,)).fetchone()
-        v = db.execute(
-            "SELECT video_id FROM competitor_top_videos WHERE channel_id=? AND rank_order=1 LIMIT 1",
-            (r[0],)).fetchone()
-        vids[raw_id] = {"channel_id": r[0], "handle": r[1], "video_id": v[0]}
+        # Nhieu video ung vien theo rank — video rank 1 thuong da chet (SCAR 29/09: 17/25 fail)
+        vlist = db.execute(
+            "SELECT video_id FROM competitor_top_videos WHERE channel_id=? ORDER BY rank_order ASC LIMIT 5",
+            (r[0],)).fetchall()
+        vids[raw_id] = {"channel_id": r[0], "handle": r[1], "video_ids": [x[0] for x in vlist]}
     db.close()
     return vids
 
@@ -145,25 +145,32 @@ def main():
     print(f"PILOT: {len(pilots)} kenh")
     results = []
     for raw_id, meta in pilots.items():
-        vid = meta["video_id"]
-        tmp_audio = TMP / f"{raw_id}.m4a"
         out_mp3 = OUT_DIR / f"{raw_id}.mp3"
-        rec = {"rawId": raw_id, "handle": meta["handle"], "videoId": vid}
+        rec = {"rawId": raw_id, "handle": meta["handle"], "videoIds": meta.get("video_ids", [])}
+        if out_mp3.exists():
+            rec["status"] = "ok"
+            rec["mp3"] = str(out_mp3.relative_to(ROOT)).replace("\\", "/")
+            results.append(rec)
+            continue
 
+        # Thu lan luot video ung vien (rank 1 -> 5): video cu thuong da chet
+        tmp_audio = TMP / f"{raw_id}.m4a"
         dl_ok = False
-        for attempt in (1, 2):  # retry 1 lan
-            dl = sh([sys.executable, "-m", "yt_dlp", "-f", "bestaudio/best",
-                     "--ffmpeg-location", str(FFMPEG.parent),
-                     "--download-sections", "*00:30-02:30", "-x", "--audio-format", "m4a",
-                     "-o", str(tmp_audio), "--no-playlist", "--quiet",
-                     f"https://www.youtube.com/watch?v={vid}"], timeout=300)
-            if tmp_audio.exists():
-                dl_ok = True
+        for vid in meta.get("video_ids", []):
+            for attempt in (1, 2):  # retry 1 lan
+                dl = sh([sys.executable, "-m", "yt_dlp", "-f", "bestaudio/best",
+                         "--ffmpeg-location", str(FFMPEG.parent),
+                         "--download-sections", "*00:30-02:30", "-x", "--audio-format", "m4a",
+                         "-o", str(tmp_audio), "--no-playlist", "--quiet",
+                         f"https://www.youtube.com/watch?v={vid}"], timeout=300)
+                if tmp_audio.exists():
+                    dl_ok = True
+                    break
+                time.sleep(2)
+            if dl_ok:
                 break
-            time.sleep(2)
         if not dl_ok:
             rec["status"] = "download-fail"
-            rec["detail"] = (dl.stderr or dl.stdout or "").strip().splitlines()[-1:] or ["?"]
             results.append(rec)
             continue
 

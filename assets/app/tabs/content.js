@@ -2,11 +2,11 @@
 (function (global) {
   'use strict';
   const SC = (typeof window !== 'undefined' && window.H2SearchCore) || {
-    tokenize: (t) => String(t||'').toLowerCase().split(/[^a-z0-9+]+/).filter(Boolean),
+    tokenize: (t) => String(t||'').toLowerCase().split(/[^\p{L}\p{N}+]+/u).filter(Boolean),
     matchesQuery: (parts, q) => {
-      const kw = String(q||'').toLowerCase().split(/[^a-z0-9+]+/).filter(Boolean);
+      const kw = String(q||'').toLowerCase().split(/[^\p{L}\p{N}+]+/u).filter(Boolean);
       if (!kw.length) return true;
-      const hay = (parts||[]).map(x => x==null?'':String(x)).join(' ').toLowerCase().replace(/[^a-z0-9+]+/g,' ');
+      const hay = (parts||[]).map(x => x==null?'':String(x)).join(' ').toLowerCase().replace(/[^\p{L}\p{N}+]+/gu,' ');
       return kw.every(k => hay.indexOf(k) >= 0);
     },
     pad2: (n) => String(n==null?0:n).padStart(2,'0')
@@ -1108,6 +1108,32 @@ ${grouped.map((g, index) => {
   </div>`;
 }
 
+  /* UI-05 (2026-09-28): tab /nhac trc day render NHAM renderKichBan (tai lieu).
+     Spec TABS (main.js): nhac -> Tram Nhac Nen. View nay la nen dat nút mo modal
+     (class js-open-music-studio — music_player_modal.js tu bat click capture). */
+  async function renderNhac() {
+    await loadMusicStats();
+    const t = musicStats;
+    return `
+  ${pageBanner('Trạm Nhạc Nền', 'Kho nhạc local đã thẩm định ffprobe + phân loại rủi ro bản quyền. Mở trạm phát để nghe, tìm và lọc theo ngách nội dung.', [
+    { icon: ICONS.music, label: 'Tổng tracks', value: t.total, sub: t.total ? `${SC.pad2(t.niches)} nhóm ngách nội dung` : 'chưa có catalog' },
+    { icon: ICONS.disk, label: 'SAFE YPP', value: t.safe, sub: `${t.review} REVIEW · ${t.copyrighted} COPYRIGHTED` }
+  ])}
+  <div class="card p-6 mb-6 text-center border-border-strong bg-surface">
+    <div class="stat-icon bg-brand-tint text-brand-tint-fg border border-brand/30 mx-auto mb-4" aria-hidden="true">
+      ${icoColored('headphones', '#E2023A', 24)}
+    </div>
+    <h2 class="page-h2 mb-2">Trạm phát nhạc nền</h2>
+    <p class="text-sm text-gray-400 mx-auto mb-6" style="max-width:28rem">Phát trực tiếp từ kho nhạc local của H2DEV. Track SAFE dùng thoải mái cho video monetize; track REVIEW/COPYRIGHTED chỉ để tham khảo.</p>
+    <button type="button" class="h2-btn h2-btn--ghost h2-btn--sm mx-auto js-open-music-studio"><span class="inline-flex items-center gap-1.5">${ico('headphones', 14)} Mở Trạm Nhạc Nền${t.total ? ' (' + t.total + ' Tracks)' : ''}</span></button>
+    <div class="mt-6 flex flex-wrap items-center justify-center gap-2 text-2xs font-mono">
+      <span class="badge badge-green">${t.safe} SAFE YPP</span>
+      <span class="badge badge-amber">${t.review} REVIEW</span>
+      <span class="badge badge-red">${t.copyrighted} COPYRIGHTED</span>
+    </div>
+  </div>`;
+  }
+
 async function renderNguonReup() {
   const nguon = await loadJSON('data-tabs/nguon-reup.json');
   const videos = await loadJSON('data-tabs/videos.json');
@@ -1582,7 +1608,7 @@ async function renderRawKenh() {
     state.rawPage = page;
     try { const u = new URL(location.href); if (page > 1) u.searchParams.set('page', String(page)); else u.searchParams.delete('page'); history.replaceState(history.state, '', u.pathname + u.search); } catch (e) {}
     const paged = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-    const pager = totalPages <= 1 ? '' : `<div class="flex items-center justify-between gap-2 mb-3 text-xs text-gray-400"><span>Trang ${page}/${totalPages} ? ${filtered.length} h? s?</span><span class="flex gap-1">${page > 1 ? `<button type="button" class="filter-btn" data-action="raw-page" data-page="${page - 1}">? Tr??c</button>` : ''}${page < totalPages ? `<button type="button" class="filter-btn" data-action="raw-page" data-page="${page + 1}">Sau ?</button>` : ''}</span></div>`;
+    const pager = totalPages <= 1 ? '' : `<div class="flex items-center justify-between gap-2 mb-3 text-xs text-gray-400"><span>Trang ${page}/${totalPages} · ${filtered.length} hồ sơ</span><span class="flex gap-1">${page > 1 ? `<button type="button" class="filter-btn" data-action="raw-page" data-page="${page - 1}">← Trước</button>` : ''}${page < totalPages ? `<button type="button" class="filter-btn" data-action="raw-page" data-page="${page + 1}">Sau →</button>` : ''}</span></div>`;
     return pager + `
   <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 min-w-0">
     ${paged.map(r => {
@@ -1946,6 +1972,7 @@ ${(cl.taiSanNoiBo && cl.taiSanNoiBo.length) ? `
       renderVideo: renderVideo,
       renderNgachXanh: renderNgachXanh,
       renderKichBan: renderKichBan,
+      renderNhac: renderNhac,
       renderNguonReup: renderNguonReup,
       renderRawKenh: renderRawKenh,
       renderKenh: renderKenh,

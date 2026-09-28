@@ -94,10 +94,10 @@ function toggleMoreMenu(overflowTabs) {
   }).join('');
   sheet.querySelectorAll('.more-item').forEach(btn => {
     btn.onclick = () => {
-      state.tab = btn.dataset.tab;
+      /* UI-03 (2026-09-28): DI QUA openTab (khong set state.tab truc tiep) de
+         URL/history pushState + don filter chay dung nhu tab thuong. */
       closeMoreMenu();
-      renderTabs();
-      render();
+      openTab(btn.dataset.tab);
     };
   });
   sheet.onkeydown = (e) => {

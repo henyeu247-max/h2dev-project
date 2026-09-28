@@ -1,6 +1,13 @@
-# H2DEV — KẾ HOẠCH XÂY DỰNG LẠI UI TOÀN DỰ ÁN
+# H2DEV — Evidence-based design upgrade plan
 
-> **Trạng thái:** `approved` — chủ dự án đã duyệt ngày 2026-09-23.
+> **Current review: 2026-09-28 · NEEDS WORK.** The earlier five-pillar direction was approved by the owner, but individual defect claims and proposed remedies are not accepted without evidence. The current findings and acceptance contract in section 7 take precedence over the historical progress table below.
+> **This session:** read-only source and local browser audit; correction of this design plan; review deliverable. No production UI code fixes, database synchronization, asset deletion, service restart, commit, or deployment were performed.
+> **Execution boundary:** UI/UX assessment and design specification are covered here. Frontend implementation, service-worker changes, backend/database work and production rollout require an engineering execution session. This document does not certify those tasks as complete.
+> **Review scope:** 3 principal shells; 10 distinct index destinations; 4 learning views; 3 player views; 6 content dialogs plus 1 More drawer. Browser geometry covered 12 entry URLs at 8 widths, not every possible application state.
+
+## Historical plan — retain for provenance, not current certification
+
+> **Trạng thái lịch sử:** `approved` — chủ dự án đã duyệt ngày 2026-09-23.
 > **Phạm vi:** Frontend toàn dự án (3 shell + 10 tab + 7 modal) — **không đụng dữ liệu/media**.
 > **Căn cứ:** `SKILL.md` (luật thi công) · `consistency-matrix.md` (Top 20 việc) · `URL-ROUTING-SPEC.md` (URL chuẩn).
 > **Nguyên tắc thi công:** làm tới đâu chắc tới đó — mỗi Phase phải **check-pass 3 vòng** mới sang Phase kế.
@@ -180,16 +187,18 @@ Phase 0 (nền tảng CSS)
 
 ---
 
-## 6. Tiến độ
+## 6. Historical progress claims — not a current acceptance decision
 
-| Phase | Tên | Trạng thái | Ngày xong |
+The following entries record earlier reports. Current browser evidence in section 7 contradicts the blanket completion claim for phases 4 and 5; existing gates cover a limited set of invariants, not the full UI/UX contract.
+
+| Phase | Tên | Trạng thái lịch sử | Ngày báo cáo |
 |---|---|---|---|
 | 0 | Nền tảng & Hạ tầng CSS | ✅ **HOÀN THÀNH** (check-pass 3 vòng) | 2026-09-23 |
 | 1 | Chuẩn hoá URL & Routing | ✅ **HOÀN THÀNH** (45/46 test PASS) | 2026-09-23 |
 | 2 | Shell đồng nhất 3 trang | ✅ **HOÀN THÀNH** (39/39 test PASS) | 2026-09-23 |
-| 3 | Icon + Typography | ⏳ chờ thi công | — |
-| 4 | Layout tab + Surface + Modal | ⏳ chờ thi công | — |
-| 5 | Thông báo, Responsive, Nghiệm thu | ⏳ chờ thi công | — |
+| 3 | Icon + Typography | ✅ **HOÀN THÀNH** (gate-icons + gate-typography PASS) | 2026-09-24 |
+| 4 | Layout tab + Surface + Modal | **REOPENED** — URL/history, modal entry focus and conditional layout coverage remain incomplete; see section 7 | 2026-09-28 review |
+| 5 | Thông báo, Responsive, Nghiệm thu | **REOPENED** — notification ownership/layering, actual touch targets and offline scope remain incomplete; see section 7 | 2026-09-28 review |
 
 ### Nhật ký thi công
 
@@ -203,4 +212,89 @@ Verify: 45/46 test PASS (1 FAIL là lỗi selector test, không phải lỗi cod
 **Phát hiện mới ghi backlog:**
 - `learn.css:10` — `--bg` render rỗng do token vòng lặp → xử lý Phase 5 (mục 5.7).
 - `viddar.css` còn 3 nơi ép màu/shadows cứng (`progress-track`) → xử lý Phase 4.
+
+---
+
+## 7. Current evidence and repair contract — 2026-09-28
+
+### 7.1 Baseline, evidence levels and limits
+
+- **RUNTIME CONFIRMED:** directly reproduced in a disposable local Chromium context at `http://127.0.0.1:8899`. Browser storage was isolated from the owner's normal profile.
+- **SOURCE CONFIRMED:** a concrete code path was read, but its entire runtime population was not tested.
+- **NOT VERIFIED:** measurement, environment access or complete state coverage is absent. These items cannot be reported as fixed or production-ready.
+- **CONTRADICTED:** prior claim was not supported by the full implementation or current measurement.
+- Priority reflects observed user impact, not a fabricated performance estimate. P1 means the next repair batch; P2 requires measurement or design consolidation. No speculative item is promoted to P0 solely because a pattern looks undesirable.
+
+Current inventory: 3 principal shells; 10 index destinations (`tatca`, `video`, `ngachxanh`, `tai-lieu`, `nhac`, `nguonreup`, `kenh-mau`, `rawkenh`, `chienluoc`, `lotrinh`); 16 rendered index navigation controls = 10 sidebar + 5 repeated bottom controls + More; 4 learning views; 3 player views; 6 content dialogs + More drawer. Across the 3 shells, source inspection found 10 distinct externally declared CSS files and 15 distinct externally declared JS files. Do not confuse controls, destinations, pages, records and unique channels.
+
+**Measured local baseline:**
+
+| Check | Result | Scope caveat |
+|---|---|---|
+| 12 entry URLs × 8 widths (`375/640/641/768/1023/1024/1280/1920`) | 96/96 without horizontal root overflow | Includes both `/lotrinh` and `/learn.html`, plus one player SKU; not 96 independent product states or visual approval |
+| Concrete paths listed in route manifest | 24 tested: 17 HTTP 200, 4 HTTP 301, 3 HTTP 404 | The 3 `/modal/*` entries are still marked proposed; not automatically defects |
+| Lesson route availability | 140/140 HTTP 200 | HEAD only; browser playback is not certified for every lesson |
+| Video thumbnails | 140/140 HTTP 200 | URL availability, not image-content comparison |
+| Media one-byte range | 140/140 HTTP 206 | Not a full ffprobe/packet/audio integrity audit |
+| Local document entries | 142/142 HTTP 200 | 15 catalog entries have no local file; they are not 15 missing files |
+| Paged item identity coverage | 140/140 videos, 156/156 raw records, 152/152 visible channels, no duplicates in these lists | 13 dead channels are intentionally hidden out of 165 |
+| Simple-background `.text-gray-500` contrast | 82 evaluated elements, no below-threshold cases in this limited set | One complex-background case excluded; not a complete contrast audit |
+| Existing non-mutating checks | Validator, counts `--check`, icons, typography, P1, P2 PASS; shell 6/6 PASS | Static gates do not prove behavior, full accessibility, visual quality or production parity |
+
+The two legacy E2E suites were not rerun this turn because they write screenshot artifacts. Their previous 23/23 and 11/11 results are historical, not fresh evidence. No screenshot-based visual approval was completed. No production parity, Firefox/WebKit/mobile OS run, screen-reader run, all-dialog matrix, field Web Vitals, full subtitle/media audit or AI pipeline audit was completed. The whole-project upgrade remains open.
+
+### 7.2 Findings with evidence and repair criteria
+
+| ID | Priority / status | Confirmed finding and evidence | Minimum repair acceptance |
+|---|---|---|---|
+| UI-01 | P1 / runtime | Search tokenizer strips non-ASCII letters: `assets/app/search-core.js:6-32`; fallback repeats it in `content.js:4-12`. After waiting for the actual debounced render: `Phật pháp` yields 139/140 videos, `phat phap` 0/140, Japanese `仏教` 140/140. The Japanese query becomes zero tokens and matches everything. | One documented normalization contract for index, suggestions and filtering. Vietnamese with/without marks must agree where intended; Japanese/Thai/Cyrillic must retain their letters; punctuation-only queries must be explicitly defined. Test IDs, names, combined terms and existing sort/filter interactions. Do not copy the previously suggested mixed-token regex unchanged. |
+| UI-02 | P1 / runtime | A delayed Raw Channels load overwrites a later Video render: after release, `state.tab=video`, URL `/video`, title Video, but 24 raw cards and no video cards. `assets/app/main.js:637-756` commits asynchronous results without a generation check. | Commit only the latest render generation; discard stale results/errors/busy changes. Test delayed success and failure for every data-driven destination, plus rapid search and tab changes. |
+| UI-03 | P1 / runtime | Mobile More → Strategy leaves URL `/video` and focus on BODY. `nav.js:95-100` sets state directly instead of using the normal navigation path. Mobile ArrowRight on `m-tab-video` is a no-op because `nav.js:25-31` searches only `#tabs`. | Main and overflow navigation must share one transition contract. Content, title, selected tab and URL agree; keyboard navigation operates in the active nav group; stable focus survives re-render; Back/Forward restores the destination. More is an expander, not a misleading content tab. |
+| UI-04 | P1 / runtime | Video page 2 → reload resets to page 1; the URL remains `/video`. Channel page 2 also has no page query and focus becomes BODY. `main.js:777-778` reads `vp/kp`, but navigation/pager updates do not consistently serialize them. | Pagination, queries, filters, resets and strategy sub-view changes must round-trip on reload/share/Back/Forward. Every dataset page is traversed with an identity union proving no omissions/duplicates; moving pages must retain sensible focus and announce page/results. |
+| UI-05 | P1 / runtime | `/nhac` returns document content (`157/157`, document search), not the studio; no dialog is opened. `main.js:668-669` renders `renderKichBan()` for both documents and music. The topbar music button still works. | Implement the already approved music destination contract without duplicating the catalog UI: direct link, navigation click, close, Back and filter/track state must agree. Closing a routed dialog restores the defined previous destination. |
+| UI-06 | P1 / runtime | Fresh browser registration has scope `/assets/app/` and no controller on `/`; offline reload fails with disconnected navigation. `assets/app/sw-register.js:4` registers the nested worker. Root and nested worker files share old cache code, with runtime caching as well as incomplete precache. | One authoritative worker, intended root scope, safe versioned cache policy and declared offline boundary. Verify first visit/update, controlled root and deep routes, cached vs uncached assets, offline reload and recovery. Audio/video excluded from offline must be labeled honestly. Never claim missing precache alone proves universal failure. |
+| UI-07 | P1 / runtime + source | Raw detail captures/restores focus in the tested flow. Music and document dialogs restore on close but opening leaves focus outside. `music_player_modal.js:294`; `player-main.js:902`. Transcript open at `main.js:2131-2132` does not capture the trigger; close attempts restoration. All 7 dialogs were not runtime tested. | Test all 6 dialogs and the drawer: initial focus, Tab/Shift+Tab, Escape, backdrop/close, asynchronous content replacement, connected trigger restoration, stacking, media stop and body scroll locking. Only the top dialog handles keyboard events. |
+| UI-08 | P1 / runtime + source | Notifications are still split: shared `H2Core.showToast`, player local `showToast`, music local `showToast`. Shared toast z-index 300 is below music modal 1010; music overrides 100010 via JS. `h2dev-core.js:363-381`, `player-main.js:773`, `music_player_modal.js:39-51`. | One notification owner with an explicit modal-compatible layer and live announcement contract. Check copy/error/success inside every dialog; no duplicate live announcements, unbounded timers or raw z-index overrides. Do not infer that merely defining a shared function removes local implementations. |
+| UI-09 | P1 / runtime | Multiple mobile controls are below the project's 44px contract: reset 40px; raw demo 32px; raw detail/prompts 38px; player previous/next/watched 32px; copy/read 27px. A 32px favorite visual has a 44px pseudo-element, but a tested example's actual hit bound is about 43px with clipping. `h2dev-components-lesson-row.css:50,65-74`; `gate-p2.js:114-120` covers only 3 selectors. | Inventory interactive buttons, links and custom targets by state. Verify actual pointer hit geometry, overlap, clipping and focus rings—not only `getBoundingClientRect` or CSS declarations. Apply project 44px policy with explicit exemptions. Do not label every 32px visual box a failure if an effective hit area exists. |
+| UI-10 | P1 / runtime | Mobile player tab ArrowRight changes selected tab and seeks video from 30s to 35s. Existing tab handler and global shortcuts both run. `player-main.js:238-254,733-770`. | Respect consumed/defaultPrevented events and input/control contexts. Tab, transcript and dialog keys must not seek/play the video; documented video shortcuts still work when appropriate. |
+| UI-11 | P1 / runtime | Aborting `ngach-xanh.json` makes the overview expose `Cannot read properties of undefined (reading 'slice')` despite a Retry button. Restoring the request then Retry produces four KPI cards but retains the old error banner. `content.js:55-70`; `main.js:94-124,755`. | Partial failures cannot crash unrelated content or leak implementation errors. Use safe empty/error schemas; path-scoped errors clear on recovery; user sees plain-language cause and usable retry while data integrity is preserved. Existing Retry must be improved, not falsely described as absent. |
+| UI-12 | P1 / runtime | Raw pager visibly contains `Trang 1/7 ? 156 h? s?` and `Sau ?`. `content.js:1585`. | Restore UTF-8 labels without changing data IDs. Compare all pager directions, counts, headings and status copy; zero corrupted display labels across the UI inventory. |
+| UI-13 | P2 / source + limited runtime | Design ownership is inconsistent: live raw modal border resolves to `rgb(30,41,59)` outside the neutral surface contract; inline templates retain palette/radius overrides. Old blueprint has 9 outdated tab names; route manifest still reports now-live destinations as proposed/404. Main `pageBanner` ignores its title argument and still cuts exactly 5 cards below 768px. | Consolidate specification by component role and loaded cascade. Neutral surface/border/radius/motion use resolved tokens, retaining semantic status colors and data flags. Define headings and KPI visibility explicitly. Split overview/list/strategy/music/player blueprints rather than forcing nonfunctional search/pagers into all views. Extract inline CSS only after before/after behavior and cascade equivalence tests. |
+| UI-14 | P2 / source, measurement open | Player has synchronized transcript and existing shortcuts but no native caption track; transcript timeupdate toggles many DOM classes; media retry lacks a bounded state. `player-main.js:435-440,535-595`. | Define caption behavior for normal/fullscreen playback, retry limit/manual retry, and transcript update budget. Measure representative and longest lessons before optimization; do not assert a fixed event frequency, 2000 operations/s, battery impact or a 15KB payload target without evidence. |
+
+### 7.3 Corrections to prior assertions — mandatory before implementation
+
+1. **Unlimited content width is contradicted.** At 1920px, index and learn content measured 1120px, player main 1024px. Existing `viddar.css:#content`, `learn.css:.learn-content` and player `.wrap` constrain width. Absence of the helper class is not absence of a width limit. Do not narrow the video/theater layout globally.
+2. **Missing keyboard shortcuts is contradicted.** They exist; the confirmed issue is overlapping event ownership, not absence.
+3. **No Retry button is contradicted.** A retry exists; failure schema and stale error recovery are defective.
+4. **All gray text has about 3.5:1 contrast is unverified.** The limited 82-element simple-background check found no failure. Measure full composited foreground/background, opacity, gradients and states before altering tokens.
+5. **Missing image attributes proves CLS is invalid.** Video thumbs already declare 320×180; CSS fixes dimensions/aspect ratio elsewhere. Layout-shift observation and actual affected nodes are prerequisites.
+6. **Eight stylesheets prove FOUC is invalid.** Request count is an observation; FCP/FOUC impact requires a waterfall and visual timing comparison. Bundling is not an automatic fix.
+7. **Database counts must match JSON 1:1 is invalid.** The builder reads both raw channels and benchmark channels (`build_master_db.js:429-430,468,565`); different populations can legitimately have different counts. Reconcile identity/provenance/schema before proposing migration. Never overwrite a richer dataset to satisfy equal numbers.
+8. **Singleton WAL is not a connection pool or an automatic performance cure.** Backend load, statement ownership, worker model and read/write requirements need engineering evidence. No rate-limit/SQLite/async-IO prescription is certified by this design review.
+9. **Voice samples: 156 records are not 156 unique channels.** Manifest has 149 unique raw channels. Compare sample-to-channel mappings and intended scope before calculating gaps. No blanket '133 missing voices' claim is accepted.
+10. **Asset existence is not integrity.** One-byte HTTP 206 and HEAD 200 do not prove complete audio/video, LUFS, transcript alignment or original-preservation. No asset deletion is authorized by these checks.
+11. **Standards:** the project adopts 44px targets. WCAG 2.2 SC 2.5.8 is AA 24×24 CSS px with exceptions; SC 2.5.5 is AAA 44×44 CSS px with exceptions. Do not call every sub-44 target an AA violation. Sources: <https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html> and <https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html>.
+
+### 7.4 Ordered upgrade batches and release criteria
+
+| Batch | IDs / output | Entry prerequisites | Exit criteria | Current status |
+|---|---|---|---|---|
+| A — Evidence and ownership | Current review, inventory, corrected claim register | Read current assets and preserve working tree | Clear populations, sourced findings, explicit exclusions; preserve historical plan | [x] Audit and plan correction complete; not code repair |
+| B — Correct navigation and discovery | UI-01 to UI-05, UI-11, UI-12 | Engineering execution; test cases that reproduce observed defects | Unicode contract, no stale render, URL/history round-trip, correct music destination, recoverable errors, clean labels; all paginated item identities preserved | [ ] Not implemented |
+| C — Interaction and accessibility | UI-07 to UI-10 | Confirm B's stable render/nav ownership; complete dialog/state inventory | 7/7 dialog interactions; all contextual keyboard cases; measured target geometry; one visible/announced toast owner | [ ] Not implemented |
+| D — Offline and release consistency | UI-06 | Approved root worker scope/cache update strategy and rollback | Root/deep routes controlled; fresh/update/offline/recovery matrix; versions resolvable; no media/offline overclaim | [ ] Not implemented |
+| E — Visual refinement and player UX | UI-13, UI-14 | Screenshot-based visual review; measured CLS/contrast/performance; protect brand and data | Component-role blueprints, neutral surfaces, preserved semantics, reliable player captions/retry/transcript behavior; regression evidence | [ ] Not implemented |
+| F — Engineering/data/media handoff | Backend, SQLite, reconciliation, Voice DNA, ArcFace, original assets, rollout | Appropriate engineering/media execution session; identity mapping, measurements, backups and separate destructive confirmation | Per-domain evidence, preservation and rollback; local and production acceptance; user-visible closure of each item | [!] Outside this design session; not executed |
+
+Acceptance is **per item and per stated population**. Passing the current regression gates is necessary but insufficient. Add tests for the confirmed slow-render race, multilingual search, mobile overflow history/focus, pagination reload, all-dialog focus entry, keyboard collision, recovery and service-worker scope. Do not mark a whole phase complete after only generic checks pass.
+
+### 7.5 Safety and next execution boundary
+
+- No deletion of PNG, media, backups, voice samples, data or documentation assets is part of this plan acceptance.
+- Database synchronization is not an audit command by default. Inspect each script's side effects first; `build_master_db.js:21-25` removes the existing database and its WAL/SHM files and must not be run as a harmless check.
+- Do not deploy, restart live services, publish new routes or change networking solely to make a test pass.
+- Preserve existing validated pagination content and canonical tokens. Fix ownership/behavior first, cosmetic consistency second.
+- The owner approved the broad direction. Evidence corrections above are prerequisites for executing that direction accurately; they are not claims that repairs have already occurred.
+- **Current result: verified design audit and corrected plan delivered; whole-project repair NOT complete.** Engineering work remains to be performed in its appropriate execution session.
 

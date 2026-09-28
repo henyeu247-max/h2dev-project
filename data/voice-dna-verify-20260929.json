@@ -1,0 +1,310 @@
+{
+ "schema": "h2dev.voice-dna-verify.v1",
+ "generatedAt": "2026-09-29T04:34:58",
+ "files": 43,
+ "ok": 43,
+ "bad": 0,
+ "report": [
+  {
+   "rawId": "RAW-001",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-002",
+   "status": "ok",
+   "dur": 45.02,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-003",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-004",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-005",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-006",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-007",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-008",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-009",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-010",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-011",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-013",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-014",
+   "status": "ok",
+   "dur": 45.02,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-015",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-016",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-017",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-018",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-019",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-020",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-021",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-022",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-023",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-024",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-025",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-028",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-029",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-030",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-031",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-034",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-038",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-039",
+   "status": "ok",
+   "dur": 45.0,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-050",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-055",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-056",
+   "status": "ok",
+   "dur": 45.03,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-057",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-058",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-075",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-079",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-081",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-082",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-088",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-089",
+   "status": "ok",
+   "dur": 45.03,
+   "ch": 1,
+   "rate": 44100
+  },
+  {
+   "rawId": "RAW-095",
+   "status": "ok",
+   "dur": 45.01,
+   "ch": 1,
+   "rate": 44100
+  }
+ ]
+}

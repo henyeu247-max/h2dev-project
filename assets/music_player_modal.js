@@ -34,9 +34,15 @@
     return '<span style="color:' + color + ';display:inline-flex;align-items:center;">' + ico(name, size) + '</span>';
   }
 
-  /* Toast chuan: dung .toast-msg (h2dev-shell.css muc 9).
-   * Modal co z-index:100005 nen toast phai cao hon de khong bi che. */
+  /* UI-08 (2026-09-28): 1 CHU QUYEN toast = H2Core.showToast. Ban cu tu set
+     z-index inline 100010 (audit UI-08: "music separately overrides"); gio
+     toast chung da duoc nâng --h2-z-toast = 1020 (> modal-top 1010) o tokens.
+     Fallback chi khi h2dev-core chua nap. */
   function showToast(msg) {
+    if (globalThis.H2Core && typeof globalThis.H2Core.showToast === 'function') {
+      globalThis.H2Core.showToast(msg, 2200);
+      return;
+    }
     let el = document.querySelector('.toast-msg.js-music-toast');
     if (!el) {
       el = document.createElement('div');
@@ -291,8 +297,15 @@
     }
 
     renderModalBody();
+    /* UI-07 (2026-09-28): capture trigger khi mo + focus vao trong modal
+       (close o dong 148 da restore _prevActiveElement nhung trc day khong ai gan).
+       Escape + Tab-trap cho modal nay da co o global keydown (main.js muc Global Shortcuts). */
+    modal._prevActiveElement = document.activeElement;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
+    if (globalThis.H2Core && typeof globalThis.H2Core.focusModal === 'function') {
+      globalThis.H2Core.focusModal(modal);
+    }
   };
 
   document.addEventListener('click', (e) => {

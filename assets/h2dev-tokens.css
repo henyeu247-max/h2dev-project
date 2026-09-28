@@ -97,13 +97,16 @@
      thuoc tinh computed nao (0/6.400 element). Dung truc tiep token goc thay the.
      Chong tai phat: gate-p2.js luat [7] (token CHET) + gate-p1.js luat [3b] (cam blur tho). */
 
-  /* --- Z-index ladder (proposed) — chot 8 bac, cam 9999/99999/100000/100001/100005 --- */
+  /* --- Z-index ladder (proposed) — chot 8 bac, cam 9999/99999/100000/100001/100005 ---
+     UI-08 (2026-09-28): --h2-z-toast 300 -> 1020. Toast phai TREN ca modal-top (1010)
+     vi toast duoc goi tu trong modal (mute/pause trong music modal, copy trong raw-deep).
+     Truoc day toast 300 bi modal 1000/1010 che hoan toan. */
   --h2-z-base: 1;
   --h2-z-sticky: 20;
   --h2-z-fixed: 40;
   --h2-z-drawer: 60;
   --h2-z-topbar-mobile: 100;
-  --h2-z-toast: 300;
+  --h2-z-toast: 1020;
   --h2-z-modal: 1000;
   --h2-z-modal-top: 1010;
 

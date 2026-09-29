@@ -2,6 +2,11 @@
  "schema": "h2dev.voice-dna-verify.v1",
  "report": [
   {
+   "rawId": "GEN_123p3k",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_123p3k.mp3"
+  },
+  {
    "rawId": "GEN_22",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_22.mp3"
@@ -17,9 +22,54 @@
    "mp3": "assets/voice-samples/GEN_asuhetsudukumichi.mp3"
   },
   {
+   "rawId": "GEN_BibleLegacyAssets98",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_BibleLegacyAssets98.mp3"
+  },
+  {
+   "rawId": "GEN_biblemadeclear26",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_biblemadeclear26.mp3"
+  },
+  {
+   "rawId": "GEN_Camnhonvietsub",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_Camnhonvietsub.mp3"
+  },
+  {
+   "rawId": "GEN_ChuXinDiaoYu01",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_ChuXinDiaoYu01.mp3"
+  },
+  {
+   "rawId": "GEN_Dadstruerevenge",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_Dadstruerevenge.mp3"
+  },
+  {
    "rawId": "GEN_desidilse",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_desidilse.mp3"
+  },
+  {
+   "rawId": "GEN_handofgod",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_handofgod.mp3"
+  },
+  {
+   "rawId": "GEN_IjinNoNouri",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_IjinNoNouri.mp3"
+  },
+  {
+   "rawId": "GEN_izinnokatari",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_izinnokatari.mp3"
+  },
+  {
+   "rawId": "GEN_JAPAN721",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_JAPAN721.mp3"
   },
   {
    "rawId": "GEN_Jinseioiyasukotoba",
@@ -37,14 +87,44 @@
    "mp3": "assets/voice-samples/GEN_KapitalKompassUS.mp3"
   },
   {
+   "rawId": "GEN_kienthucthanhoc9",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_kienthucthanhoc9.mp3"
+  },
+  {
+   "rawId": "GEN_KoriSub",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_KoriSub.mp3"
+  },
+  {
+   "rawId": "GEN_kotobanohousekibako",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_kotobanohousekibako.mp3"
+  },
+  {
    "rawId": "GEN_kurumanozokitai",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_kurumanozokitai.mp3"
   },
   {
+   "rawId": "GEN_KynSub",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_KynSub.mp3"
+  },
+  {
    "rawId": "GEN_LamNgoqz3bw",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_LamNgoqz3bw.mp3"
+  },
+  {
+   "rawId": "GEN_m2y",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_m2y.mp3"
+  },
+  {
+   "rawId": "GEN_n7u",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_n7u.mp3"
   },
   {
    "rawId": "GEN_quietstrength88",
@@ -55,6 +135,26 @@
    "rawId": "GEN_s1s",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_s1s.mp3"
+  },
+  {
+   "rawId": "GEN_scripturemadesimpleyt",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_scripturemadesimpleyt.mp3"
+  },
+  {
+   "rawId": "GEN_theopenscriptures",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_theopenscriptures.mp3"
+  },
+  {
+   "rawId": "GEN_Tieulongreview2026",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_Tieulongreview2026.mp3"
+  },
+  {
+   "rawId": "GEN_trihueconhanvn",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_trihueconhanvn.mp3"
   },
   {
    "rawId": "GEN_x050001b666",
@@ -87,9 +187,19 @@
    "mp3": "assets/voice-samples/GEN_x71e2e115ce.mp3"
   },
   {
+   "rawId": "GEN_x82cfc9b118",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x82cfc9b118.mp3"
+  },
+  {
    "rawId": "GEN_x87669d49ff",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_x87669d49ff.mp3"
+  },
+  {
+   "rawId": "GEN_x92d599bac3",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x92d599bac3.mp3"
   },
   {
    "rawId": "GEN_x994cc698d8",
@@ -107,6 +217,11 @@
    "mp3": "assets/voice-samples/GEN_xad1df66be4.mp3"
   },
   {
+   "rawId": "GEN_xc371ad7620",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xc371ad7620.mp3"
+  },
+  {
    "rawId": "GEN_xcf9fb4dad3",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_xcf9fb4dad3.mp3"
@@ -115,6 +230,16 @@
    "rawId": "GEN_xdd57766312",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_xdd57766312.mp3"
+  },
+  {
+   "rawId": "GEN_xed9d2082b0",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xed9d2082b0.mp3"
+  },
+  {
+   "rawId": "GEN_xf9dff2d135",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xf9dff2d135.mp3"
   },
   {
    "rawId": "GEN_z9n",

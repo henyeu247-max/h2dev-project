@@ -1,15 +1,78 @@
 {
  "schema": "h2dev.voice-dna-pilot.v1",
- "generatedAt": "2026-09-29T05:29:07",
+ "generatedAt": "2026-09-29T12:42:25",
  "results": [
   {
-   "rawId": "RAW-001",
-   "handle": "@pekaboosongs",
-   "videoId": "oixhtdMRDHA",
-   "status": "download-fail",
-   "detail": [
-    "ERROR: [youtube] oixhtdMRDHA: This video is not available"
-   ]
+   "rawId": "RAW-012",
+   "handle": "@HistoryEndures-68",
+   "videoIds": [
+    "9PIKCBo76G8",
+    "8ahK-eAAZ98",
+    "DqKq4n58sf8",
+    "eqAx4zS-cAk",
+    "3Z2UbSm3CfI"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "RAW-035",
+   "handle": "@PassionLearningLive",
+   "videoIds": [
+    "TGlVk9nvaXI",
+    "Z6p9OqrrV9w",
+    "KcXPTj7FPmE",
+    "AFpYFFb3ztg",
+    "VuYoJKvQ1Lw"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "RAW-037",
+   "handle": "@FamilyLifeEnglish888",
+   "videoIds": [
+    "16WhdicNdgM",
+    "i9tI32yrUdU",
+    "qk_yy9Xz3ec",
+    "mEIHIIwmOlE",
+    "9yXdF-xbrMo"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "RAW-143",
+   "handle": "@songkhoekhivegia",
+   "videoIds": [
+    "giaDSzmyjO0",
+    "ichr24QTMHE",
+    "aJUJsFCD6UY",
+    "ZenMPoOB1HY",
+    "IfksyIk-k6M"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "RAW-145",
+   "handle": "@suckhoedongy99",
+   "videoIds": [
+    "f4W3C-E7lWw",
+    "_Rmf11JvcuE",
+    "sULs-Pa3pgE",
+    "FcAgASEISdM",
+    "8hnnaNFC0as"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "RAW-152",
+   "handle": "@ほのぼのラジオ1",
+   "videoIds": [
+    "jjuOs7xp81w",
+    "LypNo1Ld2eI",
+    "hYWjrvD57Ek",
+    "TWCtwukWdUw",
+    "Jq8G-7bsLRs"
+   ],
+   "status": "download-fail"
   }
  ]
 }

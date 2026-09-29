@@ -248,9 +248,32 @@ def audio_integrity(path, real_dur, cache=None, key=None):
             except OSError:
                 pass
 
+    # ---- Phep 4: zero-fill (noi dung audio that) — SCAR-044 ----
+    # Ba phep tren chi dem goi tin/giai ma; file bi DIEN ZERO van du goi tin va giai ma "ok".
+    # Do so giay digital-zero o GIUA file (bo zero dau/duoi: thao tac man hinh hop le, da co placeholder).
+    if real_dur and real_dur > 40:
+        try:
+            pcm = subprocess.run(
+                [FFMPEG, "-v", "error", "-i", path, "-vn", "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
+                stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, timeout=900).stdout
+            sec = len(pcm) // 32000
+            zero = [pcm[i * 32000:(i + 1) * 32000].count(0) == 32000 for i in range(sec)]
+            lead = 0
+            while lead < sec and zero[lead]:
+                lead += 1
+            tail = 0
+            while tail < sec - lead and zero[sec - 1 - tail]:
+                tail += 1
+            inner = sum(zero) - lead - tail
+            out["zero_fill"] = {"seconds": sec, "zero": sum(zero), "lead": lead, "tail": tail,
+                                "inner": inner, "inner_ratio": round(inner / sec, 3) if sec else None}
+            out["method_4_verdict"] = "broken" if sec and (inner / sec > 0.25 or lead / sec > 0.25) else "ok"
+        except Exception as exc:  # noqa: BLE001
+            out["method_4_error"] = str(exc)[:100]
+
     # Tong hop: BAT KY phep nao bao "broken" => file hong.
     # Neu khong phep nao cho ket luan (toan 'not-available'/'not-applicable') => khong-verify-duoc.
-    keys = ("method_1_verdict", "method_2a_verdict", "method_3_verdict")
+    keys = ("method_1_verdict", "method_2a_verdict", "method_3_verdict", "method_4_verdict")
     verdicts = [out.get(k) for k in keys]
     decided = [v for v in verdicts if v in ("ok", "broken")]
     if not decided:
@@ -262,7 +285,7 @@ def audio_integrity(path, real_dur, cache=None, key=None):
     else:
         out["verdict"] = "ok"
     out["methods_decided"] = len(decided)
-    out["methods_total"] = 3
+    out["methods_total"] = 4
 
     if cache is not None and key is not None:
         cache[key] = out

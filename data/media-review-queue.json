@@ -3,8 +3,8 @@
   "source_audit": "_audit/20260918-full-136-audit/report-140.json",
   "generatedAt": "2026-09-22T20:14:36+07:00",
   "summary": {
-    "hard_fail": 1,
-    "review_only": 40,
+    "hard_fail": 2,
+    "review_only": 39,
     "total": 41
   },
   "items": [
@@ -418,14 +418,16 @@
     },
     {
       "sku": "VIDEO-f59aa7",
-      "hard_issues": [],
+      "hard_issues": [
+        "B7: AUDIO THIEU NOI DUNG THAT — do RMS tung giay 2026-09-30: 1747/2588s (67,5%) la digital zero, chi 818s (31,6%) co tieng; zero xep theo khoi ~6s (HLS chunk mat), packet count du (111466) vi file 22/09 dien zero; 51/51 khoi co tieng khop mau-sample voi audio goc 794s (tuong quan >=0,99)"
+      ],
       "review_flags": [
         "A8d: 9 khoang trong phu de (1466s) audio KHONG im lang — can ASR probe"
       ],
       "status": "open",
       "checked_by": null,
       "decision": null,
-      "note": "B7 da xoa 2026-09-30: audio_integrity() 3/3 phep do ok (nb_read_packets 111466, ratio 1.0, decode 10.0s tai giay 1294.2) sau khi file media duoc thay 2026-09-22 03:02. Con lai A8d: transcript.json cu (334 doan) lech thoi gian so voi file da sua (delta 0s -> +493s). Da can lai 2026-09-30 bang Groq Whisper word-timestamps tren audio da chuan hoa am luong + cat cum ao giac muc tu: 98 doan, phu 644s (24,9%), dung thoi gian nhung THUA (vung am luong thap Whisper tra ao giac nen de trong). Cap nhat dot 4: do RMS tung giay cho thay 67,5% file la digital zero (khoang trong phu de la im lang that, file thieu tieng); 17/17 vung co tieng bi bo sot da duoc Gemini nghe va them vao (135 doan, phu 824s). Con mo: file media thieu tieng, can nguon co du tieng. Chua dong bo VPS. Xem _audit/20260930-f59aa7-transcript-drift/."
+      "note": "2026-09-30: B7 da GO NHAM roi PHUC HOI. Phep do goi tin/decode (3/3 ok) bi lua boi khoi zero. Phu de: 135 doan phu 824s = gan het phan audio co tieng; khoang trong con lai la im lang so, khong co loi de chep. Can source clean (re-tai HLS). Xem _audit/20260930-f59aa7-transcript-drift/."
     },
     {
       "sku": "VIDEO-f74bb1",

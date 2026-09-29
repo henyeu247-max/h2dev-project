@@ -231,3 +231,8 @@ html.learn-booting .resume-banner,
 html.learn-booting .learn-content,
 html.learn-booting .learn-footer { visibility: hidden; animation: learn-boot-reveal 0s linear 4s forwards; }
 @keyframes learn-boot-reveal { to { visibility: visible; } }
+/* FULL PASS 2026-09-30: touch 44px o may tinh bang 641-1024px (do @768: nut Quay lai/Trang chu 34px, tab 36px). */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .back-home { min-height: var(--h2-touch-min, 44px); }
+  .tabbar .tab-btn { height: var(--h2-touch-min, 44px); }
+}

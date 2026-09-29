@@ -476,11 +476,11 @@
           if (e.key === 'ArrowDown') {
             e.preventDefault();
             activeSugIdx = (activeSugIdx + 1) % rows.length;
-            rows.forEach((r, i) => r.classList.toggle('bg-[#1e293b]', i === activeSugIdx));
+            rows.forEach((r, i) => r.classList.toggle('is-sug-active', i === activeSugIdx));
           } else if (e.key === 'ArrowUp') {
             e.preventDefault();
             activeSugIdx = (activeSugIdx - 1 + rows.length) % rows.length;
-            rows.forEach((r, i) => r.classList.toggle('bg-[#1e293b]', i === activeSugIdx));
+            rows.forEach((r, i) => r.classList.toggle('is-sug-active', i === activeSugIdx));
           } else if (e.key === 'Enter') {
             if (activeSugIdx >= 0 && activeSugIdx < rows.length) {
               e.preventDefault();
@@ -1136,7 +1136,7 @@
                   ${r.voiceDna && r.voiceDna.wpm ? `<span>· ${esc(String(r.voiceDna.wpm))}${r.voiceDna.wpmNote ? ' cpm' : ' WPM'}</span>` : ''}
                 </span>` : ''}
                 <span>•</span>
-                <span style="color:#10b981; font-weight:600;">${esc(stripDecorEmoji(vA.healthBadge) || (pData.longevityAudit ? pData.longevityAudit.sustainabilityStatus : ''))}</span>
+                <span style="color:${vA.healthStatus === 'DEAD_OR_PURGED' ? 'var(--danger)' : '#10b981'}; font-weight:600;">${esc(stripDecorEmoji(vA.healthBadge) || (pData.longevityAudit ? pData.longevityAudit.sustainabilityStatus : ''))}</span>
               </div>
             </div>
 
@@ -1550,7 +1550,7 @@
               <div style="background:var(--surface); border:1px solid var(--border); border-radius:1rem; padding:2.5rem 1.25rem; text-align:center; display:flex; flex-direction:column; align-items:center; gap:1rem; box-shadow:0 4px 20px rgba(0,0,0,0.4);">
                 <div style="width:52px; height:52px; border-radius:1rem; background:rgba(59,130,246,0.15); border:1px solid rgba(59,130,246,0.35); display:flex; align-items:center; justify-content:center; font-size: 24px;">${ico('rocket', 24)}</div>
                 <div style="max-width:520px;">
-                  <h4 style="font-size: 14px; font-weight:700; color:#f8fafc; margin:0 0 0.45rem 0;">Hồ Sơ Vũ Khí Tác Chiến Đang Trong Hàng Đợi Chuẩn Hóa</h4>
+                  <h4 style="font-size: 14px; font-weight:700; color:var(--fg); margin:0 0 0.45rem 0;">Hồ Sơ Vũ Khí Tác Chiến Đang Trong Hàng Đợi Chuẩn Hóa</h4>
                   <p style="font-size: 12px; color:var(--fg-muted); line-height:1.55; margin:0;">
                     Kênh <strong class="c-slate-100">${esc(pData.title || ch.title || r.id)}</strong> đã hoàn tất bóc tách dữ liệu Reverse-Engineering (Voice DNA, Top Video, Lịch sử tăng trưởng). Kịch bản phân cảnh 3 hồi và bộ Visual Prompt Master đang được tổng hợp tự động qua router trung tâm.
                   </p>
@@ -1677,7 +1677,7 @@
                     <div style="font-size: 14px; font-weight: 700; color:#38bdf8; display:flex; align-items:center; gap:0.4rem;">
                       <span>${ico('clapperboard', 14)}</span> Scene & Sample Context (Chuẩn Google AI Studio / Gemini Speech / Aoede):
                     </div>
-                    <button type="button" class="btn-copy-combined-prompt" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.375rem; background:#0284c7; hover:background:#0369a1; color:#fff; font-weight:700; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem; transition:background 0.2s;">${ico('clipboard-copy', 14)} Copy Trọn Bộ (Scene + Context + Speech)</button>
+                    <button type="button" class="btn-copy-combined-prompt" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.375rem; background:#0369a1; color:#fff; font-weight:700; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem; transition:background 0.2s;">${ico('clipboard-copy', 14)} Copy Trọn Bộ (Scene + Context + Speech)</button>
                   </div>
 
                   <!-- Scene Field -->
@@ -1688,7 +1688,7 @@
                       </span>
                       <button type="button" class="btn-copy-scene" style="font-size: 11px; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Scene</button>
                     </div>
-                    <div style="background:var(--surface-2); border:1px solid var(--border); border-radius:0.5rem; padding:0.55rem 0.75rem; font-size: 12px; color:#f1f5f9; font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.scene)}</div>
+                    <div style="background:var(--surface-2); border:1px solid var(--border); border-radius:0.5rem; padding:0.55rem 0.75rem; font-size: 12px; color:var(--fg); font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.scene)}</div>
                   </div>
 
                   <!-- Sample Context Field -->
@@ -1835,7 +1835,7 @@
 
                         <!-- Unified Action Buttons: Xem Video (Cinema) + Mở YT + Xem Sub -->
                         <div style="display:grid; grid-template-columns:1fr auto; gap:0.35rem; margin-top:0.25rem;">
-                          <button type="button" class="js-quick-video py-1.5 px-2.5 rounded-lg bg-rose-600/30 hover:bg-rose-600/80 border border-rose-500/40 hover:border-rose-400 text-rose-200 hover:text-white font-semibold text-2xs flex items-center justify-center gap-1.5 transition cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Phát video trực tiếp tại chỗ">
+                          <button type="button" class="js-quick-video py-1.5 px-2.5 rounded-lg bg-rose-600/30 hover:bg-rose-600/80 border border-rose-500/40 hover:border-rose-400 text-brand-200 hover:text-white font-semibold text-2xs flex items-center justify-center gap-1.5 transition cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Phát video trực tiếp tại chỗ">
                             <span style="font-size: 12px; display:inline-flex;">${ico('play', 14)}</span> Xem Video
                           </button>
                           <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" style="padding:0.35rem 0.65rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-muted); font-size:11px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.2rem;" class="hover:text-white hover:bg-slate-700 transition" title="Mở trên YouTube tab mới">
@@ -2206,15 +2206,15 @@
 
         // Loading state
         modal.innerHTML = `
-          <div style="position:relative; width:100%; max-width:980px; max-height:92vh; background:var(--surface); border:1px solid #334155; border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
-            <div style="display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; background:#1e293b; border-bottom:1px solid #334155; flex-shrink:0;">
+          <div style="position:relative; width:100%; max-width:980px; max-height:92vh; background:var(--surface); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; background:var(--surface-2); border-bottom:1px solid var(--border-strong); flex-shrink:0;">
               <div style="display:flex; align-items:center; gap:0.75rem; min-width:0;">
                 <span style="font-size: 18px; display:inline-flex;">${ico('scroll-text', 20)}</span>
                 <h3 style="font-size: 14px; font-weight:700; color:#fff;" class="truncate">Đang nạp Sub & Kịch bản: ${esc(videoTitle)}</h3>
               </div>
-              <button type="button" id="close-video-sub" style="padding:0.4rem 0.85rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size: 13px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+              <button type="button" id="close-video-sub" style="padding:0.4rem 0.85rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 13px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
             </div>
-            <div style="padding:3rem; text-align:center; color:#94a3b8;">
+            <div style="padding:3rem; text-align:center; color:var(--fg-muted);">
               <div style="font-size: 32px; margin-bottom:0.5rem; display:flex; justify-content:center;">${ico('hourglass', 24)}</div>
               Đang tải phụ đề song ngữ và kịch bản lồng tiếng...
             </div>
@@ -2252,15 +2252,15 @@
         }
 
         modal.innerHTML = `
-          <div style="position:relative; width:100%; max-width:1040px; max-height:92vh; background:var(--surface-2); border:1px solid #1e293b; border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
+          <div style="position:relative; width:100%; max-width:1040px; max-height:92vh; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
             <!-- Header -->
-            <div style="display:flex; align-items:center; justify-content:space-between; padding:0.9rem 1.25rem; background:var(--surface); border-bottom:1px solid #1f2937; flex-shrink:0; gap:1rem;">
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:0.9rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border-strong); flex-shrink:0; gap:1rem;">
               <div class="min-w-0-g3">
                 <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
                   <span style="font-size: 16px; display:inline-flex;">${ico('scroll-text', 20)}</span>
                   <h3 style="font-size: 14px; font-weight: 700; color:#fff; margin:0;" class="truncate">${esc((trData && trData.titleVi) ? trData.titleVi : videoTitle)}</h3>
                 </div>
-                <div style="display:flex; align-items:center; gap:0.75rem; font-size: 12px; color:#94a3b8; margin-top:0.25rem; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:0.75rem; font-size: 12px; color:var(--fg-muted); margin-top:0.25rem; flex-wrap:wrap;">
                   <span>Gốc: <em class="c-slate-300">"${esc(videoTitle)}"</em></span>
                   <span>•</span>
                   <span>Kênh: <strong class="c-sky">${esc(channelName)}</strong></span>
@@ -2272,8 +2272,8 @@
               </div>
               <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
                 <button type="button" class="js-quick-video" data-vid="${esc(videoId)}" data-title="${esc(videoTitle)}" data-channel="${esc(channelName)}" data-badge="🔥 Đang xem Transcript" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:rgba(225,29,72,0.9); border:1px solid #f43f5e; color:#fff; font-size: 12px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:0.35rem;" title="Mở video xem trực tiếp đồng bộ với phụ đề">${ico('clapperboard', 14)} Xem Video Nhanh</button>
-                <a href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener noreferrer" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:#1e293b; border:1px solid #334155; color:#38bdf8; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem;">${ico('tv', 14)} YouTube ${ico('arrow-up-right', 14)}</a>
-                <button type="button" id="close-video-sub" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+                <a href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener noreferrer" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem;">${ico('tv', 14)} YouTube ${ico('arrow-up-right', 14)}</a>
+                <button type="button" id="close-video-sub" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
               </div>
             </div>
 
@@ -2281,9 +2281,9 @@
             <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem 1.25rem; background:var(--surface); border-bottom:1px solid #233148; flex-shrink:0; flex-wrap:wrap; gap:0.5rem;">
               <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;" id="sub-tabs-container">
                 <button type="button" class="sub-tab-btn" data-tab="bilingual" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#2563eb; color:#fff; border:1px solid #3b82f6; cursor:pointer;">${ico('globe', 14)} Song ngữ 1:1</button>
-                <button type="button" class="sub-tab-btn" data-tab="vietnamese" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:#1e293b; color:#cbd5e1; border:1px solid #334155; cursor:pointer;">🇻🇳 Tiếng Việt</button>
-                <button type="button" class="sub-tab-btn" data-tab="original" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:#1e293b; color:#cbd5e1; border:1px solid #334155; cursor:pointer;">🇺🇸 Tiếng Gốc</button>
-                ${summaryMd ? `<button type="button" class="sub-tab-btn" data-tab="summary" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:#1e293b; color:#fcd34d; border:1px solid rgba(245,158,11,0.4); cursor:pointer;">${ico('mic', 14)} Kịch bản AI</button>` : ''}
+                <button type="button" class="sub-tab-btn" data-tab="vietnamese" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer;">🇻🇳 Tiếng Việt</button>
+                <button type="button" class="sub-tab-btn" data-tab="original" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer;">🇺🇸 Tiếng Gốc</button>
+                ${summaryMd ? `<button type="button" class="sub-tab-btn" data-tab="summary" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:#fcd34d; border:1px solid rgba(245,158,11,0.4); cursor:pointer;">${ico('mic', 14)} Kịch bản AI</button>` : ''}
               </div>
               <div style="display:flex; align-items:center; gap:0.35rem;">
                 <button type="button" id="btn-copy-sub-active" style="padding:0.35rem 0.8rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#10b981; color:#fff; border:1px solid #059669; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('clipboard-copy', 14)} Sao Chép Bản Này</button>
@@ -2291,7 +2291,7 @@
             </div>
 
             <!-- Content Area -->
-            <div id="sub-content-body" style="padding:1.25rem; overflow-y:auto; max-height:calc(92vh - 125px); font-size: 14px; line-height:1.6; color:#e2e8f0;">
+            <div id="sub-content-body" style="padding:1.25rem; overflow-y:auto; max-height:calc(92vh - 125px); font-size: 14px; line-height:1.6; color:var(--fg);">
             </div>
           </div>
         `;
@@ -2310,23 +2310,23 @@
               btn.style.fontWeight = '700';
               btn.style.borderColor = '#3b82f6';
             } else {
-              btn.style.background = '#1e293b';
-              btn.style.color = btn.getAttribute('data-tab') === 'summary' ? '#fcd34d' : '#cbd5e1';
+              btn.style.background = 'var(--surface-2)';
+              btn.style.color = btn.getAttribute('data-tab') === 'summary' ? '#fcd34d' : 'var(--fg-2)';
               btn.style.fontWeight = '600';
-              btn.style.borderColor = '#334155';
+              btn.style.borderColor = 'var(--border-strong)';
             }
           });
 
           if (tab === 'bilingual') {
             if (!segments.length) {
-              contentEl.innerHTML = `<div style="text-align:center; color:#94a3b8; padding:2rem;">Chưa có phân đoạn phụ đề song ngữ cho video này.</div>`;
+              contentEl.innerHTML = `<div style="text-align:center; color:var(--fg-muted); padding:2rem;">Chưa có phân đoạn phụ đề song ngữ cho video này.</div>`;
               return;
             }
             contentEl.innerHTML = `
               <div style="display:flex; flex-direction:column; gap:0.6rem;">
                 ${segments.map((seg) => `
-                  <div style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.65rem 0.85rem; background:var(--surface); border:1px solid #1e293b; border-radius:0.625rem;">
-                    <span style="font-family:monospace; font-size: 12px; color:#38bdf8; background:var(--surface); padding:0.15rem 0.45rem; border-radius:0.35rem; border:1px solid #1e293b; flex-shrink:0; font-weight:700;">[${formatSec(seg.start)}]</span>
+                  <div style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.65rem 0.85rem; background:var(--surface); border:1px solid var(--border-strong); border-radius:0.625rem;">
+                    <span style="font-family:monospace; font-size: 12px; color:#38bdf8; background:var(--surface); padding:0.15rem 0.45rem; border-radius:0.35rem; border:1px solid var(--border-strong); flex-shrink:0; font-weight:700;">[${formatSec(seg.start)}]</span>
                     <div style="flex:1; min-width:0;">
                       <div style="font-size: 14px; font-weight:600; color:#fff; line-height:1.4;">${esc(seg.text)}</div>
                       <div style="font-size: 13px; color:#fcd34d; margin-top:0.25rem; line-height:1.4;">${esc(seg.viText || '')}</div>
@@ -2337,19 +2337,19 @@
             `;
           } else if (tab === 'vietnamese') {
             contentEl.innerHTML = `
-              <div style="background:var(--surface); border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:#fef3c7;">
+              <div style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:#fef3c7;">
                 ${esc(fullVi || segments.map(s => s.viText).join('\n'))}
               </div>
             `;
           } else if (tab === 'original') {
             contentEl.innerHTML = `
-              <div style="background:var(--surface); border:1px solid #1e293b; border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:#e2e8f0; font-family:monospace;">
+              <div style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:var(--fg); font-family:monospace;">
                 ${esc(fullEn || segments.map(s => s.text).join('\n'))}
               </div>
             `;
           } else if (tab === 'summary') {
             contentEl.innerHTML = `
-              <div class="max-w-none" style="background:var(--surface); border:1px solid #1f2937; border-radius:0.875rem; padding:1.5rem; color:#e2e8f0; font-size: 14px; line-height:1.65;">
+              <div class="max-w-none" style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.875rem; padding:1.5rem; color:var(--fg); font-size: 14px; line-height:1.65;">
                 ${inlineMdFull(summaryMd)}
               </div>
             `;
@@ -2419,10 +2419,10 @@
             }
           };
           modal.innerHTML = `
-            <div style="position:relative; width:100%; max-width:960px; max-height:92vh; background:var(--surface); border:1px solid #374151; border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.85);">
-              <div style="display:flex; align-items:center; justify-content:space-between; padding:0.75rem 1.25rem; background:#1f2937; border-bottom:1px solid #374151; flex-shrink:0;">
+            <div style="position:relative; width:100%; max-width:960px; max-height:92vh; background:var(--surface); border:1px solid var(--border-strong); border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.85);">
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:0.75rem 1.25rem; background:var(--surface-2); border-bottom:1px solid var(--border-strong); flex-shrink:0;">
                 <span id="raw-img-title" style="font-size: 14px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:flex; align-items:center; gap:0.5rem;"><span style="display:inline-flex;">${ico('camera', 16)}</span><span></span></span>
-                <button type="button" id="close-raw-img" class="btn-press cursor-pointer" style="padding:0.35rem 0.8rem; border-radius:0.5rem; background:#374151; border:1px solid #4b5563; color:#e5e7eb; font-size: 13px; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+                <button type="button" id="close-raw-img" class="btn-press cursor-pointer" style="padding:0.35rem 0.8rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 13px; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
               </div>
               <div style="padding:0.75rem; overflow:auto; max-height:calc(92vh - 55px); display:flex; align-items:center; justify-content:center; background:#000;">
                 <img id="raw-img-src" src="" alt="Ảnh kênh chi tiết" width="1280" height="720" loading="lazy" decoding="async" style="max-width:100%; max-height:80vh; object-fit:contain; border-radius:0.5rem;">
@@ -2483,21 +2483,21 @@
         const displayChannel = channelName ? ('Kênh: ' + channelName) : 'Xem Trực Tiếp';
 
         modal.innerHTML = `
-          <div style="position:relative; width:100%; max-width:960px; background:var(--surface); border:1px solid #334155; border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
-            <div style="display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.15rem; background:#1e293b; border-bottom:1px solid #334155; gap:1rem;">
+          <div style="position:relative; width:100%; max-width:960px; background:var(--surface); border:1px solid var(--border-strong); border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.15rem; background:var(--surface-2); border-bottom:1px solid var(--border-strong); gap:1rem;">
               <div class="min-w-0-g3">
                 <div class="row-wrap">
                   <span style="font-size: 16px; display:inline-flex;">${ico('clapperboard', 20)}</span>
                   <h3 style="font-size: 14px; font-weight:700; color:#fff; margin:0;" class="truncate">${esc(displayChannel)}</h3>
                   <span style="font-size: 11px; font-weight:700; padding:0.1rem 0.45rem; border-radius:0.35rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;">${esc(badge)}</span>
                 </div>
-                <p style="font-size: 12px; color:#94a3b8; margin:0.2rem 0 0 0;" class="truncate" title="${esc(videoTitle)}">${esc(videoTitle)}</p>
+                <p style="font-size: 12px; color:var(--fg-muted); margin:0.2rem 0 0 0;" class="truncate" title="${esc(videoTitle)}">${esc(videoTitle)}</p>
               </div>
               <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
                 <!-- P1-P2 TOUCH (2026-09-27): min-height/min-width 44px (WCAG 2.5.5).
                      Do truoc: a 115x29, button 76x31 -> deu < 44px chieu cao. -->
                 <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" style="min-height:44px; min-width:44px; box-sizing:border-box; font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('arrow-up-right', 14)} Mở YouTube</a>
-                <button type="button" id="close-quick-video" style="min-height:44px; min-width:44px; box-sizing:border-box; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#334155; border:1px solid #475569; color:#e2e8f0; font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
+                <button type="button" id="close-quick-video" style="min-height:44px; min-width:44px; box-sizing:border-box; padding:0.35rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
               </div>
             </div>
             <div style="width:100%; aspect-ratio:16/9; background:#000;">
@@ -2624,6 +2624,12 @@
 
       // Global Shortcuts: Escape to close modals, / to focus search, Tab trap trong modal
       document.addEventListener('keydown', (e) => {
+        /* FULL PASS 2026-09-30: o anh raw (div) truoc day chi bam chuot duoc -> nay la role=button, Enter/Space mo anh. */
+        if ((e.key === 'Enter' || e.key === ' ') && e.target && e.target.classList && e.target.classList.contains('js-view-raw-image')) {
+          e.preventDefault();
+          e.target.click();
+          return;
+        }
         if (e.key === 'Tab') {
           const openModal = ['quick-video-modal', 'raw-deep-modal', 'video-transcript-modal', 'raw-image-modal', 'music-studio-modal']
             .map(id => document.getElementById(id))
@@ -2642,6 +2648,17 @@
           if (quickModal && quickModal.style.display === 'flex') {
             if (window.closeQuickVideoModal) window.closeQuickVideoModal();
             else { quickModal.style.display = 'none'; quickModal.innerHTML = ''; }
+            return;
+          }
+          /* FULL PASS 2026-09-30: anh raw co the mo CHONG len modal Raw kenh -> Esc phai dong anh truoc
+             (truoc day kiem tra raw-deep truoc -> Esc dong nham modal ben duoi). */
+          const imgModal = document.getElementById('raw-image-modal');
+          if (imgModal && imgModal.style.display === 'flex') {
+            imgModal.style.display = 'none';
+            document.body.style.overflow = '';
+            if (imgModal._prevActiveElement && typeof imgModal._prevActiveElement.focus === 'function') {
+              try { imgModal._prevActiveElement.focus(); } catch (err) {}
+            }
             return;
           }
           const subModal = document.getElementById('video-transcript-modal');
@@ -2665,15 +2682,6 @@
               if (rawModal._prevActiveElement && typeof rawModal._prevActiveElement.focus === 'function') {
                 try { rawModal._prevActiveElement.focus(); } catch (err) {}
               }
-            }
-            return;
-          }
-          const imgModal = document.getElementById('raw-image-modal');
-          if (imgModal && imgModal.style.display === 'flex') {
-            imgModal.style.display = 'none';
-            document.body.style.overflow = '';
-            if (imgModal._prevActiveElement && typeof imgModal._prevActiveElement.focus === 'function') {
-              try { imgModal._prevActiveElement.focus(); } catch (err) {}
             }
             return;
           }

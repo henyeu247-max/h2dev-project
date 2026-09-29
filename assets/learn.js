@@ -490,8 +490,9 @@
   var btt = document.getElementById('btn-back-to-top');
   if (!btt) return;
   function scrollTopAll() {
-    try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) { window.scrollTo(0, 0); }
-    try { if (window.parent && window.parent !== window) window.parent.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {}
+    var sb = (window.H2Core && window.H2Core.scrollBehavior) ? window.H2Core.scrollBehavior() : 'smooth';
+    try { window.scrollTo({ top: 0, behavior: sb }); } catch (e) { window.scrollTo(0, 0); }
+    try { if (window.parent && window.parent !== window) window.parent.scrollTo({ top: 0, behavior: sb }); } catch (e) {}
     var de = document.documentElement;
     if (de) de.scrollTop = 0;
   }

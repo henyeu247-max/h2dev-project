@@ -1331,6 +1331,9 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 }
 /* UI5 tokens */
 .text-white { color: var(--fg) !important; }
+/* 2026-09-30 (full pass, WCAG AA): chu tren nen brand dac: --fg #f0f0f0 tren #E2023A = 4.28 < 4.5 (quet: 57 phan tu o
+   tai-lieu/nguonreup/rawkenh/chienluoc). --brand-fg #fff = 4.88. */
+[class*="bg-brand-600"].text-white, [class*="bg-brand-500"].text-white, .bg-brand.text-white { color: var(--brand-fg) !important; }
 .font-mono { font-variant-numeric: tabular-nums; }
 .page-h2, h1, h2 {
   text-wrap: balance;
@@ -1692,3 +1695,85 @@ button.niche-row:focus-visible,
   min-height: 44px;
   padding: 10px 14px;
 }
+
+/* =====================================================================================
+   FULL PASS 2026-09-30 — mot khoi tong hop (anh yeu cau sua 1 lan toan dien). Do/kiem chung: CHANGELOG 2026-09-30.
+   ===================================================================================== */
+
+/* (A) BO GOC 2 BAC: --r-sm 2px (chip, nut nho, badge, thanh %), --r-md 4px (the, khung, nut, o nhap).
+   Quet runtime 11 route: 2884/2970 phan tu da dung 2/4px; con lai 6/8/10/14px o quick-access, cl-tab, raw-tab,
+   subniche, rounded-md/-lg. Giu nguyen 2 khung Tong quan 10px (anh da quyet giu). */
+:root { --r-sm: 2px; }
+.quick-access { border-radius: var(--r-md); border-color: var(--border); background: var(--surface); }
+.quick-access--topbar { border-radius: 0; border: 0; background: transparent; }
+.quick-access__button { border-radius: var(--r-sm); border-color: var(--border); background: var(--surface-2); color: var(--fg-2); }
+.quick-access__button:hover { background: var(--surface-2); border-color: var(--brand); color: var(--fg); }
+.quick-access__button.active { background: var(--brand); border-color: var(--brand); color: var(--brand-fg); }
+.quick-access--topbar .quick-access__button { border-radius: var(--r-sm); }
+.cl-tab-btn, .raw-tab-btn, .subniche-chip { border-radius: var(--r-sm); }
+.subniche-select, .overview-link:focus-visible { border-radius: var(--r-md); }
+.market-bar, .market-bar i { border-radius: var(--r-sm); }
+.rounded-md, .rounded-lg { border-radius: var(--r-sm); }
+@media (max-width: 1024px) {
+  .vd-top-right .js-open-music-studio { border-radius: var(--r-md) !important; }
+  /* touch 44px: tab phu Chien luoc tren topbar 641-1024px dang 36px (do @768: 5 nut 36px) */
+  .quick-access--topbar .quick-access__button { min-height: var(--h2-touch-min); }
+}
+
+/* (B) CHU DE DOC: nhan/chip tieng Viet bo font mono (dau tieng Viet trong mono kho doc, chip rong hon);
+   giu so thang cot bang tabular-nums. Mono chi con cho so lieu, ma SKU, ma kenh. */
+.filter-btn { font-family: var(--font-sans); font-variant-numeric: tabular-nums; }
+.badge { font-family: var(--font-sans); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+.badge.badge-sku { font-family: var(--font-mono); }
+.nx-card-channel-label { font-family: var(--font-sans); letter-spacing: 0.02em; }
+/* Doan mo ta dai dang 11px (rawkenh 70, nguonreup 42, tai-lieu 12 doan) -> 12px; doan van 12px -> 13px. */
+#content p.text-2xs, #content .text-2xs.line-clamp-1, #content .text-2xs.line-clamp-2 { font-size: var(--h2-font-xs); }
+#content p.text-xs.leading-relaxed, #content .text-xs.leading-relaxed, #content p.text-xs.break-words,
+.page-lede, .card-note, .policy-t { font-size: var(--h2-font-sm); }
+
+/* (C) CHUYEN DONG: ton trong "giam chuyen dong" cua he dieu hanh cho MOI hieu ung (truoc chi co 6 cho rieng le). */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .group:hover .group-hover\:scale-105, .group:hover .group-hover\:scale-110 { transform: none !important; }
+}
+
+/* (D) DIEN THOAI UU TIEN NOI DUNG (<=640px). Do truoc sua: muc dau tien cua danh sach nam o y=1000-2078px
+   (1,3-2,5 man hinh) vi 4 the KPI (214px) + khoi chip loc xep nhieu dong (244-986px). */
+@media (max-width: 640px) {
+  /* D1: 4 the KPI 2x2 (214px) -> 1 dai ngang */
+  .bento-grid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 6px !important; margin-bottom: 16px !important; }
+  .bento-grid > .bento-card,
+  .bento-grid > .bento-card:last-child:nth-child(odd),
+  .bento-grid > *:last-child:nth-child(odd) { grid-column: auto !important; min-height: 0 !important; height: auto !important; padding: 8px 6px !important; gap: 2px !important; }
+  .bento-card .stat-icon { display: none !important; }
+  .bento-card .stat-value { font-size: var(--h2-font-base) !important; white-space: nowrap; overflow-wrap: normal !important; } /* "156 vidIQ" 16px xuong 2 dong @375 -> 14px 1 dong */
+  .bento-card .stat-label { font-size: var(--h2-font-2xs) !important; letter-spacing: 0 !important; overflow-wrap: normal !important; hyphens: none; }
+  /* D2: hang chip loc -> 1 dong vuot ngang (thay vi xep 5-20 dong) */
+  #content .flex-wrap:has(> .filter-btn), #content .nx-filter-chips {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  #content .flex-wrap:has(> .filter-btn)::-webkit-scrollbar, #content .nx-filter-chips::-webkit-scrollbar { display: none; }
+  #content .flex-wrap:has(> .filter-btn) > .filter-btn, #content .nx-filter-chips > .filter-btn {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    max-width: none !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+}
+/* 2026-09-30: boot-route.js bat .has-subnav tu khi <header> vua mo (subnav chua duoc parse) -> khung subnav hien bang CSS. */
+.vd-topbar.has-subnav > .vd-topbar-subnav.hidden { display: flex; }
+/* 2026-09-30: boot-route.js chay khi <header> vua mo -> lan ve dau co the chua co 2 hang con (tieu de 48px + subnav).
+   Giu san dung chieu cao cuoi: 48 (hang tieu de) + gap 16 + subnav 40 (44 khi <=1024, nut cham 44px) + dem 6 + vien 1.
+   Do @1280 truoc: #panel-root 96 -> 111 (CLS 0.0083, 4/4 lan). Mobile <=640 da co chieu cao co dinh 98px rieng. */
+@media (min-width: 1025px) { .vd-topbar.has-subnav { min-height: calc(48px + var(--h2-space-4) + 40px + 6px + 1px); } }
+@media (min-width: 641px) and (max-width: 1024px) { .vd-topbar.has-subnav { min-height: calc(48px + var(--h2-space-4) + var(--h2-touch-min) + 6px + 1px); } }

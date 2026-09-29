@@ -2,16 +2,16 @@
 /* Only static, repeated patterns. Dynamic width%/pct stay inline. */
 
 .c-sky { color: #38bdf8; }
-.c-ink { color: #f8fafc; }
+.c-ink { color: var(--fg); }
 .c-amber { color: #fcd34d; }
 .c-amber-500 { color: #f59e0b; }
-.c-slate-100 { color: #e2e8f0; }
-.c-slate-300 { color: #cbd5e1; }
-.c-slate-400 { color: #94a3b8; }
+.c-slate-100 { color: var(--fg); }
+.c-slate-300 { color: var(--fg-2); }
+.c-slate-400 { color: var(--fg-muted); }
 .c-emerald { color: #34d399; }
 .c-green { color: #10b981; }
 .c-violet { color: #c084fc; }
-.c-purple { color: #a855f7; }
+.c-purple { color: #c084fc; } /* 2026-09-30: #a855f7 tren #1a1a1a = 4.40 < 4.5 (AA) -> #c084fc = 6.6 */
 /* P1 (2026-09-26) SCAR-022: `bg-ink-deep` cu = `--surface-2 !important` va bi dung lam nen
    dropdown goi y (header + row). Vi --surface-2 (#1a1a1a) chi chenh 4% so voi the card (#0f0f0f)
    -> dropdown "lo" mau the card phia sau. Da thay bang 2 utility token dung ngu nghia:
@@ -37,3 +37,9 @@
 .row-between { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; }
 .row-between-tight { display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; }
 .col-gap-xs { display: flex; flex-direction: column; gap: 0.25rem; }
+
+/* 2026-09-30 (full pass): thay cac lop Tailwind arbitrary mau slate trong dropdown goi y tim kiem bang token.
+   .is-sug-active = dong dang chon bang phim mui ten (truoc day toggle bg-[#1e293b] bi .bg-bg nap sau de mat). */
+.hover\:bg-surface-2:hover { background-color: var(--surface-2); }
+.divide-border > :not([hidden]) ~ :not([hidden]) { border-color: var(--border); }
+.is-sug-active { background-color: var(--surface-2) !important; }

@@ -37,8 +37,9 @@
       "value": "#222",
       "file": "assets/viddar.css",
       "line": 56,
-      "uses": 90,
+      "uses": 96,
       "usedIn": [
+        "assets/app/main.js",
         "assets/h2dev-components-lesson-row.css",
         "assets/h2dev-primitives.css",
         "assets/h2dev-shell.css",
@@ -53,8 +54,9 @@
       "value": "#333",
       "file": "assets/viddar.css",
       "line": 57,
-      "uses": 27,
+      "uses": 34,
       "usedIn": [
+        "assets/app/main.js",
         "assets/h2dev-components-lesson-row.css",
         "assets/h2dev-primitives.css",
         "assets/h2dev-shell.css",
@@ -177,8 +179,9 @@
       "value": "#dfdfdf",
       "file": "assets/viddar.css",
       "line": 60,
-      "uses": 36,
+      "uses": 42,
       "usedIn": [
+        "assets/app/main.js",
         "assets/h2dev-components-lesson-row.css",
         "assets/h2dev-primitives.css",
         "assets/h2dev-shell.css",
@@ -191,8 +194,9 @@
       "value": "#9ca3af",
       "file": "assets/viddar.css",
       "line": 62,
-      "uses": 11,
+      "uses": 14,
       "usedIn": [
+        "assets/app/main.js",
         "assets/h2dev-primitives.css",
         "assets/h2dev-shell.css",
         "assets/viddar.css"
@@ -202,8 +206,9 @@
       "value": "#a9a9a9",
       "file": "assets/viddar.css",
       "line": 61,
-      "uses": 46,
+      "uses": 58,
       "usedIn": [
+        "assets/app/main.js",
         "assets/app/tabs/content.js",
         "assets/h2dev-components-lesson-row.css",
         "assets/h2dev-primitives.css",
@@ -994,7 +999,7 @@
       "value": "#1a1a1a",
       "file": "assets/viddar.css",
       "line": 55,
-      "uses": 55,
+      "uses": 60,
       "usedIn": [
         "assets/app/main.js",
         "assets/h2dev-components-lesson-row.css",

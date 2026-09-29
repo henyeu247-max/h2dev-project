@@ -2,6 +2,126 @@
  "schema": "h2dev.voice-dna-verify.v1",
  "report": [
   {
+   "rawId": "GEN_22",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_22.mp3"
+  },
+  {
+   "rawId": "GEN_556",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_556.mp3"
+  },
+  {
+   "rawId": "GEN_asuhetsudukumichi",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_asuhetsudukumichi.mp3"
+  },
+  {
+   "rawId": "GEN_desidilse",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_desidilse.mp3"
+  },
+  {
+   "rawId": "GEN_Jinseioiyasukotoba",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_Jinseioiyasukotoba.mp3"
+  },
+  {
+   "rawId": "GEN_k5d",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_k5d.mp3"
+  },
+  {
+   "rawId": "GEN_KapitalKompassUS",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_KapitalKompassUS.mp3"
+  },
+  {
+   "rawId": "GEN_kurumanozokitai",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_kurumanozokitai.mp3"
+  },
+  {
+   "rawId": "GEN_LamNgoqz3bw",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_LamNgoqz3bw.mp3"
+  },
+  {
+   "rawId": "GEN_quietstrength88",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_quietstrength88.mp3"
+  },
+  {
+   "rawId": "GEN_s1s",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_s1s.mp3"
+  },
+  {
+   "rawId": "GEN_x050001b666",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x050001b666.mp3"
+  },
+  {
+   "rawId": "GEN_x25dda0d83c",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x25dda0d83c.mp3"
+  },
+  {
+   "rawId": "GEN_x37cf62b956",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x37cf62b956.mp3"
+  },
+  {
+   "rawId": "GEN_x44c36d87c5",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x44c36d87c5.mp3"
+  },
+  {
+   "rawId": "GEN_x5eebc2ae04",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x5eebc2ae04.mp3"
+  },
+  {
+   "rawId": "GEN_x71e2e115ce",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x71e2e115ce.mp3"
+  },
+  {
+   "rawId": "GEN_x87669d49ff",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x87669d49ff.mp3"
+  },
+  {
+   "rawId": "GEN_x994cc698d8",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x994cc698d8.mp3"
+  },
+  {
+   "rawId": "GEN_xa7c4767e6c",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xa7c4767e6c.mp3"
+  },
+  {
+   "rawId": "GEN_xad1df66be4",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xad1df66be4.mp3"
+  },
+  {
+   "rawId": "GEN_xcf9fb4dad3",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xcf9fb4dad3.mp3"
+  },
+  {
+   "rawId": "GEN_xdd57766312",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xdd57766312.mp3"
+  },
+  {
+   "rawId": "GEN_z9n",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_z9n.mp3"
+  },
+  {
    "rawId": "RAW-001",
    "status": "ok",
    "mp3": "assets/voice-samples/RAW-001.mp3"

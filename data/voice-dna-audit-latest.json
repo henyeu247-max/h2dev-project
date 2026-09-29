@@ -1,11 +1,275 @@
 {
  "schema": "h2dev.voice-dna-audit.v1",
- "generatedAt": "2026-09-29T13:35:28",
+ "generatedAt": "2026-09-29T13:41:03",
  "target": "-16.0 LUFS ±0.5",
- "total": 143,
- "passed": 143,
+ "total": 167,
+ "passed": 167,
  "failed": 0,
  "report": [
+  {
+   "file": "GEN_22.mp3",
+   "rawId": "GEN_22",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_556.mp3",
+   "rawId": "GEN_556",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_asuhetsudukumichi.mp3",
+   "rawId": "GEN_asuhetsudukumichi",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_desidilse.mp3",
+   "rawId": "GEN_desidilse",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_Jinseioiyasukotoba.mp3",
+   "rawId": "GEN_Jinseioiyasukotoba",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_k5d.mp3",
+   "rawId": "GEN_k5d",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_KapitalKompassUS.mp3",
+   "rawId": "GEN_KapitalKompassUS",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_kurumanozokitai.mp3",
+   "rawId": "GEN_kurumanozokitai",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_LamNgoqz3bw.mp3",
+   "rawId": "GEN_LamNgoqz3bw",
+   "lufs": -16.42,
+   "dev": 0.42,
+   "dur": 45.0,
+   "speechDensity": 0.858,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_quietstrength88.mp3",
+   "rawId": "GEN_quietstrength88",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 0.778,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_s1s.mp3",
+   "rawId": "GEN_s1s",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.963,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x050001b666.mp3",
+   "rawId": "GEN_x050001b666",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 0.959,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x25dda0d83c.mp3",
+   "rawId": "GEN_x25dda0d83c",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 0.906,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x37cf62b956.mp3",
+   "rawId": "GEN_x37cf62b956",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.937,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x44c36d87c5.mp3",
+   "rawId": "GEN_x44c36d87c5",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x5eebc2ae04.mp3",
+   "rawId": "GEN_x5eebc2ae04",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x71e2e115ce.mp3",
+   "rawId": "GEN_x71e2e115ce",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x87669d49ff.mp3",
+   "rawId": "GEN_x87669d49ff",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 0.872,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x994cc698d8.mp3",
+   "rawId": "GEN_x994cc698d8",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_xa7c4767e6c.mp3",
+   "rawId": "GEN_xa7c4767e6c",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_xad1df66be4.mp3",
+   "rawId": "GEN_xad1df66be4",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.967,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_xcf9fb4dad3.mp3",
+   "rawId": "GEN_xcf9fb4dad3",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 0.85,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_xdd57766312.mp3",
+   "rawId": "GEN_xdd57766312",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 0.983,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_z9n.mp3",
+   "rawId": "GEN_z9n",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 0.948,
+   "verdict": [
+    "OK"
+   ]
+  },
   {
    "file": "RAW-001.mp3",
    "rawId": "RAW-001",

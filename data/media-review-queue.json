@@ -425,7 +425,7 @@
       "status": "open",
       "checked_by": null,
       "decision": null,
-      "note": "B7 da xoa 2026-09-30: audio_integrity() 3/3 phep do ok (nb_read_packets 111466, ratio 1.0, decode 10.0s tai giay 1294.2) sau khi file media duoc thay 2026-09-22 03:02. Con lai A8d: transcript.json tao 2026-09-18 truoc khi thay file, can ASR probe/transcribe_sku.py."
+      "note": "B7 da xoa 2026-09-30: audio_integrity() 3/3 phep do ok (nb_read_packets 111466, ratio 1.0, decode 10.0s tai giay 1294.2) sau khi file media duoc thay 2026-09-22 03:02. Con lai A8d: ASR probe 2026-09-30 cho thay transcript.json (334 doan) lech thoi gian so voi file da sua (delta 0s -> +493s, bac thang); transcribe_sku.py chay tho khong thay the duoc (vung 870-2500s ra cau ao giac). Xem _audit/20260930-f59aa7-transcript-drift/README.md."
     },
     {
       "sku": "VIDEO-f74bb1",

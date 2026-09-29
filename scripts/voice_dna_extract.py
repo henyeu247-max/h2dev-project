@@ -51,13 +51,14 @@ def pick_pilot(limit, raws=None):
         """, raws).fetchall()
         raw_ids = [r[0] for r in rows if r[0]]
     else:
+        # Lay gap 3 lan limit — kenh video chet se bi bo qua, loop main chay den du ok_count
         rows = db.execute("""
             SELECT DISTINCT c.raw_id
             FROM competitor_channels c
             JOIN competitor_top_videos v ON v.channel_id = c.channel_id AND v.rank_order = 1
             WHERE c.has_voice_sample = 0
             LIMIT ?
-        """, (limit,)).fetchall()
+        """, (limit * 3,)).fetchall()
         raw_ids = [r[0] for r in rows]
     vids = {}
     for raw_id in raw_ids:
@@ -151,15 +152,20 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     pilots = pick_pilot(limit, raws)
-    print(f"PILOT: {len(pilots)} kenh")
+    ok_target = limit
+    ok_count = 0
+    print(f"PILOT: {len(pilots)} ung vien (muc tieu {ok_target} thanh cong)")
     results = []
     for raw_id, meta in pilots.items():
+        if ok_count >= ok_target:
+            break
         out_mp3 = OUT_DIR / f"{raw_id}.mp3"
         rec = {"rawId": raw_id, "handle": meta["handle"], "videoIds": meta.get("video_ids", [])}
         if out_mp3.exists():
             rec["status"] = "ok"
             rec["mp3"] = str(out_mp3.relative_to(ROOT)).replace("\\", "/")
             results.append(rec)
+            ok_count += 1
             continue
 
         # Thu lan luot video ung vien (rank 1 -> 5): video cu thuong da chet
@@ -200,6 +206,7 @@ def main():
         rec.update({"status": "ok", "mp3": str(out_mp3.relative_to(ROOT)).replace("\\", "/"),
                     "durationSec": round(dur, 2), "channels": ch, "sampleRate": rate,
                     "inputLufs": lufs})
+        ok_count += 1
         results.append(rec)
 
     print(json.dumps(results, ensure_ascii=False, indent=1, default=float))

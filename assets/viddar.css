@@ -661,9 +661,10 @@ code { font-size: 11px; color: var(--fg-2); }
 .hover\:bg-surface:hover { background-color: var(--surface); }
 .hover\:bg-surface-2\/60:hover { background-color: var(--surface-2); }
 .hover\:text-fg:hover { color: var(--fg); }
-.hover\:text-brand-300:hover, .hover\:text-brand-hover:hover { color: var(--brand-hover); }
+/* FIX 2026-09-30: thieu !important -> .text-brand-300 { ... !important } (dong 581) thang, hover KHONG doi mau (do: rgb(255,128,149) ca khi hover). */
+.hover\:text-brand-300:hover, .hover\:text-brand-400:hover, .hover\:text-brand-hover:hover { color: var(--brand-hover) !important; }
 .hover\:border-brand\/40:hover { border-color: var(--brand); }
-.group:hover .group-hover\:text-brand-300 { color: var(--brand-hover); }
+.group:hover .group-hover\:text-brand-300 { color: var(--brand-hover) !important; }
 details[open] > summary .group-open\:rotate-180 { transform: rotate(180deg); }
 .tq-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
 .card-note { margin: 0 0 10px; color: var(--fg-muted); font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }

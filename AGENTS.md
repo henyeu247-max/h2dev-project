@@ -340,3 +340,7 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
 ### [SCAR-041] Bẫy Luật Validate Giả Định Thứ Tự Sự Kiện (TERMINATED ⇒ không có folderName) (2026-09-30)
 - **Hiện tượng:** validate báo lỗi RAW-143/145/152 "TERMINATED nhưng còn folderName". Đo thật: 3 kênh được crawl deep TRƯỚC khi bị gỡ (404 ngày 29/09), thư mục `data/raw-channels-deep/<folderName>` tồn tại 3/3 và `main.js` dùng folderName để mở dossier.
 - **Luật:** không xoá dữ liệu để chiều một luật validate — kiểm giả định của luật trước. Luật mới: TERMINATED được giữ folderName lịch sử nhưng thư mục phải tồn tại.
+
+### [SCAR-042] Bẫy Đo Chiều Cao Trang Khi Có `content-visibility:auto` (2026-09-30)
+- **Hiện tượng:** đo trang Ngách xanh @375px cho 3 con số khác nhau cho cùng 12 thẻ (14.530 / 9.745px; ~217px/thẻ) trong khi thẻ thật ~590px. `article.niche-card` có `content-visibility:auto; contain-intrinsic-size:auto 180px` → thẻ chưa cuộn tới chỉ chiếm chiều cao ước lượng; ảnh fullPage cũng ra hộp rỗng.
+- **Luật:** trước khi báo số đo chiều cao/CLS/ảnh fullPage, kiểm `getComputedStyle(el).contentVisibility`. Nếu `auto`: cuộn qua từng phần tử (hoặc tạm đặt `content-visibility:visible` trên bản đo) rồi mới đo; không thì ghi rõ [KHÔNG-VERIFY-ĐƯỢC] kèm lý do.

@@ -12,6 +12,7 @@
 - **Data/gate:** `ngach-xanh.phamViKho` 39/126 qua rule mới trong `sync-counts.js`; luật validate TERMINATED: giữ folderName lịch sử nếu thư mục dossier tồn tại (3/3 tồn tại).
 - **Gate-p2 [9]** (bottom-nav đủ cột + vùng phủ 44px) — PROBE 18/18.
 - Cache-bust `?v=20260930-uifix1`, SW cache `h2dev-shell-v20260930-uifix1`.
+- **Nâng cấp 1 — phân trang danh sách dài mobile:** Tài liệu 24 mục/trang (`?dp=`), 157/157 mục qua 7 trang, chiều cao mobile 37.526 → 7.440px; Ngách xanh 12 ngách/trang (`?np=`), 34/34 qua 3 trang (12/12/10), khối thẻ mobile 20.117 → 7.879px (trang 1; đo với `content-visibility:visible`, tổng 3 trang 20.457px — xem SCAR-042). Cả hai: pager trên + dưới (`<nav aria-label>`), bấm pager dưới → cuộn về pager trên trừ chiều cao topbar (navTop 68) + focus nút đầu; đổi bộ lọc/tìm/đặt lại → về trang 1 và xóa tham số URL; reload giữ trang; nút 44px; 0 lỗi console @375/1280. Cache `?v=20260930-uifix4`.
 - **Đợt 3 (anh duyệt ảnh trước/sau):** hover `text-brand-300/400` đổi màu thật (18/18 phần tử thử); modal Raw kênh 176 màu slate viết cứng → token trung tính (`--fg-muted/--fg-faint/--fg-2/--border/--border-strong/--surface-2`), giữ màu nhấn trạng thái; 5/5 tab 0 lỗi JS. Cache `?v=20260930-uifix3`.
 - **Đợt 2 (sau deploy, đo trên production):** `.resume-go` 34px → 44px; `.row-fav` nâng lớp trên `.watched-badge` (trạng thái đã xem + yêu thích). Quét lại có trạng thái giả lập: learn 440/0, video 122/0, tổng quan 27/0. Cache `?v=20260930-uifix2`.
 

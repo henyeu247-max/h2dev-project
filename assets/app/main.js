@@ -1,6 +1,6 @@
 /* H2Main - G6 extract main app script from index.html */
 
-    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1 };
+    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1, docPage: 1, nxPage: 1 };
     // G3: taxonomy tach ra assets/app/taxonomy.js (window.H2Taxonomy)
     // G3: helpers tach ra assets/app/ui-core.js (window.H2UICore)
     const {
@@ -167,6 +167,31 @@
       document.body.scrollTop = 0;
     }
 
+    /* NANG CAP 2026-09-30: dp (trang Tai lieu) luon khop state — doi bo loc/tim kiem ve trang 1 thi xoa dp khoi URL. */
+    function syncDocPageUrl() {
+      try {
+        const u = new URL(location.href);
+        if (state.tab === 'tai-lieu' && state.docPage > 1) u.searchParams.set('dp', String(state.docPage)); else u.searchParams.delete('dp');
+        history.replaceState(history.state, '', u.pathname + u.search);
+      } catch (err) {}
+    }
+    /* NANG CAP 2026-09-30: np (trang Ngach xanh) — cung co che voi dp. */
+    function syncNxPageUrl() {
+      try {
+        const u = new URL(location.href);
+        if (state.tab === 'ngachxanh' && state.nxPage > 1) u.searchParams.set('np', String(state.nxPage)); else u.searchParams.delete('np');
+        history.replaceState(history.state, '', u.pathname + u.search);
+      } catch (err) {}
+    }
+    /* Bam pager DUOI -> cuon ve pager TREN (tru chieu cao topbar co dinh) + focus nut dau cua pager tren. */
+    function scrollToTopPager(label) {
+      const topNav = document.querySelector('#content nav[aria-label="' + label + '"]');
+      if (!topNav) return;
+      const bar = document.getElementById('vd-topbar');
+      const off = (bar ? bar.getBoundingClientRect().height : 0) + 12;
+      window.scrollTo(0, Math.max(0, topNav.getBoundingClientRect().top + window.scrollY - off));
+      const b = topNav.querySelector('button'); if (b) { try { b.focus({ preventScroll: true }); } catch (e2) {} }
+    }
     function openTab(id, extra, pushHistory = true) {
       state.tab = id || 'tatca';
       resetScrollToTop();
@@ -192,6 +217,8 @@
           /* UI-04 (2026-09-28): page Video/Kenh trc day KHONG vao URL -> Back/Forward mat trang phan trang */
           if (state.tab === 'video' && state.videoPage > 1) url.searchParams.set('vp', String(state.videoPage));
           if (state.tab === 'kenh-mau' && state.kenhPage > 1) url.searchParams.set('kp', String(state.kenhPage));
+          if (state.tab === 'tai-lieu' && state.docPage > 1) url.searchParams.set('dp', String(state.docPage));
+          if (state.tab === 'ngachxanh' && state.nxPage > 1) url.searchParams.set('np', String(state.nxPage));
           if (state.rawPage && state.rawPage > 1) url.searchParams.set('page', String(state.rawPage));
           if (state.rawNiche) url.searchParams.set('rn', state.rawNiche);
           if (state.rawGroup) url.searchParams.set('rg', state.rawGroup);
@@ -270,7 +297,7 @@
           e.preventDefault();
           const tab = btn.getAttribute('data-open-tab');
           const extra = {};
-          if (tab === 'tai-lieu') { extra.kindFilter = btn.getAttribute('data-kind') || ''; extra.promptNiche = btn.getAttribute('data-prompt-niche') || ''; extra.promptQ = ''; }
+          if (tab === 'tai-lieu') { extra.kindFilter = btn.getAttribute('data-kind') || ''; extra.promptNiche = btn.getAttribute('data-prompt-niche') || ''; extra.promptQ = ''; extra.docPage = 1; }
           if (tab === 'video') { extra.nicheFilter = btn.getAttribute('data-open-niche') || ''; extra.skuFilter = btn.getAttribute('data-skus') || ''; extra.marketFilter = btn.getAttribute('data-market-filter') || ''; extra.q = ''; extra.freeOnly = btn.getAttribute('data-free-only') === 'true'; extra.watchFilter = btn.getAttribute('data-watch-filter') || ''; }
           if (tab === 'kenh-mau') { extra.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; extra.kenhQ = ''; }
           openTab(tab, extra);
@@ -394,7 +421,7 @@
       if (fq) {
         fq.oninput = () => {
           const val = fq.value;
-          if (state.tab === 'tai-lieu' || state.tab === 'nhac') state.promptQ = val;
+          if (state.tab === 'tai-lieu' || state.tab === 'nhac') { state.promptQ = val; state.docPage = 1; syncDocPageUrl(); }
           else if (state.tab === 'nguonreup') state.reupQ = val;
           else if (state.tab === 'kenh-mau') { state.kenhQ = val; state.kenhPage = 1; }
           else if (state.tab === 'rawkenh') { state.rawQ = val; state.rawPage = 1; }
@@ -548,14 +575,14 @@
 
       document.querySelectorAll('[data-kind]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
-        btn.onclick = () => { state.kindFilter = btn.getAttribute('data-kind') || ''; render(); };
+        btn.onclick = () => { state.kindFilter = btn.getAttribute('data-kind') || ''; state.docPage = 1; syncDocPageUrl(); render(); };
       });
       const rp = document.getElementById('freset-prompt');
-      if (rp) { rp.onclick = () => { state.promptQ = ''; state.kindFilter = ''; state.promptNiche = ''; render(); }; }
+      if (rp) { rp.onclick = () => { state.promptQ = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; syncDocPageUrl(); render(); }; }
       document.querySelectorAll('[data-prompt-niche]').forEach(btn => {
       const pnToggle = document.querySelector('[data-prompt-niche-toggle]'); if (pnToggle) pnToggle.onclick = () => { state.promptNicheExpanded = !state.promptNicheExpanded; render(); };
         if (btn.hasAttribute('data-open-tab')) return;
-        btn.onclick = () => { state.promptNiche = btn.getAttribute('data-prompt-niche') || ''; render(); };
+        btn.onclick = () => { state.promptNiche = btn.getAttribute('data-prompt-niche') || ''; state.docPage = 1; syncDocPageUrl(); render(); };
       });
       document.querySelectorAll('[data-reup-type]').forEach(btn => { btn.onclick = () => { state.reupType = btn.getAttribute('data-reup-type') || ''; render(); }; });
       document.querySelectorAll('[data-reup-niche]').forEach(btn => { btn.onclick = () => { state.reupNiche = btn.getAttribute('data-reup-niche') || ''; render(); }; });
@@ -618,6 +645,7 @@
       if (fq_nx) {
         fq_nx.oninput = () => {
           state.nxQ = fq_nx.value;
+          state.nxPage = 1; syncNxPageUrl();
           clearTimeout(searchDebounceTimer);
           searchDebounceTimer = setTimeout(() => {
             render();
@@ -625,10 +653,10 @@
         };
       }
       document.querySelectorAll('[data-nx-tier]').forEach(btn => {
-        btn.onclick = () => { state.nxTier = btn.getAttribute('data-nx-tier') || ''; render(); };
+        btn.onclick = () => { state.nxTier = btn.getAttribute('data-nx-tier') || ''; state.nxPage = 1; syncNxPageUrl(); render(); };
       });
       document.querySelectorAll('[data-nx-market]').forEach(btn => {
-        btn.onclick = () => { state.nxMarket = btn.getAttribute('data-nx-market') || ''; render(); };
+        btn.onclick = () => { state.nxMarket = btn.getAttribute('data-nx-market') || ''; state.nxPage = 1; syncNxPageUrl(); render(); };
       });
       const fr = document.getElementById('freset');
       if (fr) { fr.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; state.videoPage = 1; render(); }; }
@@ -636,7 +664,7 @@
       if (fre) { fre.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; state.videoPage = 1; render(); }; }
       const fr_nx = document.getElementById('freset-nx');
       if (fr_nx) {
-        fr_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; render(); };
+        fr_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxPage = 1; syncNxPageUrl(); render(); };
       }
     }
 
@@ -811,6 +839,8 @@
       state.rawPage = parseInt(qp.get('page'), 10) || 1;
       state.videoPage = parseInt(qp.get('vp'), 10) || 1;
       state.kenhPage = parseInt(qp.get('kp'), 10) || 1;
+      state.docPage = parseInt(qp.get('dp'), 10) || 1;
+      state.nxPage = parseInt(qp.get('np'), 10) || 1;
       state.rawNiche = qp.get('rn') || '';
       state.rawGroup = qp.get('rg') || '';
       state.rawQ = qp.get('rq') || '';
@@ -2504,6 +2534,27 @@
             /* UI-04: dong bo vp vao URL (replaceState) de Back/Forward giu trang */
             try { const u = new URL(location.href); if (state.videoPage > 1) u.searchParams.set('vp', String(state.videoPage)); else u.searchParams.delete('vp'); history.replaceState(history.state, '', u.pathname + u.search); } catch (err) {}
             render();
+            return;
+          }
+          if (action === 'doc-page') {
+            /* NANG CAP 2026-09-30: phan trang Tai lieu (dp vao URL nhu vp/kp). Bam o pager DUOI -> cuon ve dau
+               danh sach + dat focus vao pager tren de ban phim/trinh doc man hinh khong bi lac. */
+            e.preventDefault();
+            const p = parseInt(act.getAttribute('data-page') || '1', 10);
+            state.docPage = Number.isFinite(p) && p > 0 ? p : 1;
+            const fromBottom = act.getAttribute('data-pos') === 'bottom';
+            syncDocPageUrl();
+            Promise.resolve(render()).then(() => { if (fromBottom) scrollToTopPager('Phân trang tài liệu'); });
+            return;
+          }
+          if (action === 'nx-page') {
+            /* NANG CAP 2026-09-30: phan trang Ngach xanh (np), cung hanh vi voi doc-page. */
+            e.preventDefault();
+            const p = parseInt(act.getAttribute('data-page') || '1', 10);
+            state.nxPage = Number.isFinite(p) && p > 0 ? p : 1;
+            const fromBottom = act.getAttribute('data-pos') === 'bottom';
+            syncNxPageUrl();
+            Promise.resolve(render()).then(() => { if (fromBottom) scrollToTopPager('Phân trang ngách'); });
             return;
           }
           if (action === 'kenh-page') {

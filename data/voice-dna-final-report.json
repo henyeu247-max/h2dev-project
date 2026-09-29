@@ -1,0 +1,243 @@
+{
+ "date": "2026-09-29",
+ "totalChannels": 296,
+ "withSample": 257,
+ "coveragePct": 86.8,
+ "impossible": [
+  {
+   "slot": "GEN_1",
+   "handle": "@偉人のコンパス1",
+   "title": "@偉人のコンパス1",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_BiHcTuiGiVN",
+   "handle": "@BàiHọcTuổiGià-VN",
+   "title": "@BàiHọcTuổiGià-VN",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_CHn8i",
+   "handle": "@漫画で学ぶシニアの健康CH-n8i",
+   "title": "@漫画で学ぶシニアの健康CH-n8i",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_EricBennettMD",
+   "handle": "@EricBennettMD",
+   "title": "@EricBennettMD",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_FinalUrgency",
+   "handle": "@FinalUrgency",
+   "title": "@FinalUrgency",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_HDVietsubh7u",
+   "handle": "@HDVietsub-h7u",
+   "title": "@HDVietsub-h7u",
+   "reason": "music-heavy"
+  },
+  {
+   "slot": "GEN_HealthyToday0",
+   "handle": "@HealthyToday0",
+   "title": "@HealthyToday0",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_KhmPhTrungHoaHT",
+   "handle": "@KhámPháTrungHoa-HT",
+   "title": "@KhámPháTrungHoa-HT",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_NngNhToonReview",
+   "handle": "@NắngNhỏToonReview",
+   "title": "@NắngNhỏToonReview",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_RichPatternResearchInstitute",
+   "handle": "@RichPatternResearchInstitute",
+   "title": "@RichPatternResearchInstitute",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_ScriptureMadeSimpleTV",
+   "handle": "@ScriptureMadeSimpleTV",
+   "title": "@ScriptureMadeSimpleTV",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_ThcPhmScKhou8y",
+   "handle": "@ThựcPhẩmSứcKhoẻ-u8y",
+   "title": "@ThựcPhẩmSứcKhoẻ-u8y",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_TuiGiRadioVN",
+   "handle": "@TuổiGiàRadio_VN",
+   "title": "@TuổiGiàRadio_VN",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_UCEGZeUt6HeseHScQEcqTxw",
+   "handle": "@UCEGZ_eUt6HeseHScQEcqTxw",
+   "title": "@UCEGZ_eUt6HeseHScQEcqTxw",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_UCeVwhrEnYjCNdaDr47x4dSw",
+   "handle": "@UCeVwhrEnYjCNdaDr47x4dSw",
+   "title": "@UCeVwhrEnYjCNdaDr47x4dSw",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_VaultBoy001",
+   "handle": "@VaultBoy001",
+   "title": "@VaultBoy001",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_fansdrWilliamLI",
+   "handle": "@fansdrWilliamLI",
+   "title": "@fansdrWilliamLI",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_fuetunoijin",
+   "handle": "@fuetunoijin",
+   "title": "@fuetunoijin",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_kyzoravietsub",
+   "handle": "@kyzoravietsub",
+   "title": "@kyzoravietsub",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_l4z",
+   "handle": "@スピリチュアルの泉-l4z",
+   "title": "@スピリチュアルの泉-l4z",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_mimymedia",
+   "handle": "@mimymedia",
+   "title": "@mimymedia",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_mokamokae9f",
+   "handle": "@mokamoka-e9f",
+   "title": "@mokamoka-e9f",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_oijfwaoldsfae",
+   "handle": "@oijfwaoldsfae",
+   "title": "@oijfwaoldsfae",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_purebusinesshorts",
+   "handle": "@purebusinesshorts",
+   "title": "@purebusinesshorts",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_redvoices90",
+   "handle": "@redvoices90",
+   "title": "@redvoices90",
+   "reason": "music-heavy"
+  },
+  {
+   "slot": "GEN_toastertalesusa",
+   "handle": "@toastertalesusa",
+   "title": "@toastertalesusa",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_x1b1aabefbd",
+   "handle": "@幻界と神域の扉",
+   "title": "@幻界と神域の扉",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_x4d9db8690f",
+   "handle": "@복이오는길",
+   "title": "@복이오는길",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_x59d20c6d6d",
+   "handle": "@남현진전문의",
+   "title": "@남현진전문의",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_x5cc92669e5",
+   "handle": "@偉人の救い",
+   "title": "@偉人の救い",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_x71422d480c",
+   "handle": "@성실한경제학",
+   "title": "@성실한경제학",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_x8a29727ea7",
+   "handle": "@새벽의두만강",
+   "title": "@새벽의두만강",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_xbe3cd9d344",
+   "handle": "@静思の道",
+   "title": "@静思の道",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_xeaa3a46d59",
+   "handle": "@静かな家族の秘密",
+   "title": "@静かな家族の秘密",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "GEN_xfc18df8254",
+   "handle": "@경제빠월",
+   "title": "@경제빠월",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "RAW-012",
+   "handle": "@HistoryEndures-68",
+   "title": "History Endures",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "RAW-143",
+   "handle": "@songkhoekhivegia",
+   "title": "Sống Khoẻ Khi Về Già",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "RAW-145",
+   "handle": "@suckhoedongy99",
+   "title": "Sức Khỏe Đông Y",
+   "reason": "channel-dead"
+  },
+  {
+   "slot": "RAW-152",
+   "handle": "@ほのぼのラジオ1",
+   "title": "ほのぼのラジオ",
+   "reason": "channel-dead"
+  }
+ ],
+ "note": "Tran that te nguon YouTube: 37 kenh bi xoa (404 ca kenh hoac toan bo video), 2 kenh song nhung nhac nen day (khong dat chuan khong-nhac cua Bo 11). Da thu: video rank 1-10 trong DB + channel listing 3 video moi nhat + deno JS runtime."
+}

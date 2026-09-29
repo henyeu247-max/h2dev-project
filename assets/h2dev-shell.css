@@ -438,7 +438,12 @@ html { scrollbar-gutter: stable; }
   .h2-shell-brand,
   /* FIX 2026-09-30 (do tren PRODUCTION): nut 'Xem tiep' cua banner Tiep tuc hoc (learn) chi hien khi
      co lich su xem -> local khong co trang thai nay nen lan quet dau bo sot (34px). Phai quet theo TRANG THAI. */
-  .resume-go {
+  .resume-go,
+  /* FULL PASS 2026-09-30: tailwind.css ep cac selector DAC HIEU hon (vd `#content button.w-full.flex` 1,2,1)
+     ve 38px -> thang luat chung (1,0,1). Do: /chienluoc?sub=all 19 nut accordion 307x38. Lap lai dung selector. */
+  #content .btn-open-raw-deep, #content .btn-quick-demo, #content .js-sug-open-modal,
+  #content a.inline-flex, #content button.inline-flex, #content button.w-full.flex,
+  #content [data-expand-niche], #content [data-open-niche], #content .overview-link {
     min-height: var(--h2-touch-min);
   }
   /* a.row-title (learn) DUOC MIEN co chu dich: do N/N 140/140 row co a.row-thumb CUNG href, kich thuoc

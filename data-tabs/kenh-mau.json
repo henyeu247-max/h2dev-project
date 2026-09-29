@@ -46,7 +46,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-60a5c7bd95.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 111,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xa7c4767e6c.mp3"
+  }
  },
  {
   "handle": "@장수채소습관",
@@ -60,7 +68,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-5bc2a6efcc.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 117,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x71e2e115ce.mp3"
+  }
  },
  {
   "handle": "@시니어살림노트",
@@ -75,7 +91,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-be2e7329fe.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 107,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-159.mp3"
+  }
  },
  {
   "handle": "@HealthyToday0",
@@ -109,7 +133,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/desidilse-4f07acdebe.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 99,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_desidilse.mp3"
+  }
  },
  {
   "handle": "@RichPatternResearchInstitute",
@@ -143,7 +175,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/-z9n-f43511b3f7.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 131,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_z9n.mp3"
+  }
  },
  {
   "handle": "@quietstrength88",
@@ -158,7 +198,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/quietstrength88-3c3612dc89.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 240,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_quietstrength88.mp3"
+  }
  },
  {
   "handle": "@アマテラス巫女あまね",
@@ -173,7 +221,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/ch-a9cb6b1380.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 329,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x994cc698d8.mp3"
+  }
  },
  {
   "handle": "@みんなの若返りアカデミア",
@@ -188,7 +244,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/ch-5283eb5f81.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 472,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-153.mp3"
+  }
  },
  {
   "handle": "@スピリチュアルの泉-l4z",
@@ -220,7 +284,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/kurumanozokitai-55fbaa110e.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 500,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_kurumanozokitai.mp3"
+  }
  },
  {
   "handle": "@昔の人の知恵",
@@ -234,7 +306,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/ch-5b528fda63.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 352,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x25dda0d83c.mp3"
+  }
  },
  {
   "handle": "@EricBennettMD",
@@ -266,7 +346,15 @@
   ],
   "avatar": "assets/avatars/ch-f6453882c0.jpg",
   "note": "vidIQ 18/08: Religion JP — catalogue từ 29/07. Không phải reup.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 303,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xdd57766312.mp3"
+  }
  },
  {
   "handle": "@oijfwaoldsfae",
@@ -356,7 +444,15 @@
   ],
   "avatar": "assets/avatars/-k5d-dae09519b2.jpg",
   "note": "vidIQ 18/08: Food/Health KR 9740 sub. Không phải reup.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 101,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_k5d.mp3"
+  }
  },
  {
   "handle": "@양자과학이야기",
@@ -372,7 +468,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/ch-dcdaecaaed.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 107,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x37cf62b956.mp3"
+  }
  },
  {
   "handle": "@식탁보약·백세비결",
@@ -388,7 +492,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-0099a01d8b.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 99,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x5eebc2ae04.mp3"
+  }
  },
  {
   "handle": "@金運と言葉の力",
@@ -404,7 +516,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-6f78ed0278.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 315,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xcf9fb4dad3.mp3"
+  }
  },
  {
   "handle": "@노후건강한끼",
@@ -419,7 +539,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-1ffba20538.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 127,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x050001b666.mp3"
+  }
  },
  {
   "handle": "@건강백단",
@@ -437,7 +565,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (URL mở 200, ~164K subs, cùng tên). Cũ: @건강백단-c2u @건강백단-c2u",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 103,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x87669d49ff.mp3"
+  }
  },
  {
   "handle": "@KapitalKompass-US",
@@ -452,7 +588,15 @@
   ],
   "avatar": "assets/avatars/KapitalKompass-US-4b6959407b.jpg",
   "note": "vidIQ 18/08: handle này là Jazz, không phải Economy Rewind. Không dùng làm mẫu kinh tế.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 84,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_KapitalKompassUS.mp3"
+  }
  },
  {
   "handle": "@LamNgo-qz3bw",
@@ -467,7 +611,15 @@
   ],
   "avatar": "assets/avatars/LamNgo-qz3bw-1821645920.jpg",
   "note": "vidIQ 18/08: title 한의사가 전하는 건강 조언 — bác sĩ YHCT, 0 video mới, cửa 3.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 101,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_LamNgoqz3bw.mp3"
+  }
  },
  {
   "handle": "@長生きの秘訣22",
@@ -483,7 +635,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/22-e15ad2ee54.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 356,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_22.mp3"
+  }
  },
  {
   "handle": "@노후의삶-s1s",
@@ -499,7 +659,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/-s1s-25972f03e2.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 105,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_s1s.mp3"
+  }
  },
  {
   "handle": "@songkhoekhivegia",
@@ -534,7 +702,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/Jinseioiyasukotoba-d28a068c92.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 327,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_Jinseioiyasukotoba.mp3"
+  }
  },
  {
   "handle": "@Songkhoetungngay365",
@@ -550,7 +726,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/Songkhoetungngay365-12d6effa51.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 241,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-146.mp3"
+  }
  },
  {
   "handle": "@늦기전에알아야할것",
@@ -566,7 +750,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/ch-02866b9582.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 105,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xad1df66be4.mp3"
+  }
  },
  {
   "handle": "@asuhetsudukumichi",
@@ -580,7 +772,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/asuhetsudukumichi-e7148d8685.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 345,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_asuhetsudukumichi.mp3"
+  }
  },
  {
   "handle": "@イエスのアファメーション",
@@ -598,7 +798,15 @@
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "404 kiểm tra 2026-08-17",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 363,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x44c36d87c5.mp3"
+  }
  },
  {
   "handle": "@meophongthuy-m7d",
@@ -613,7 +821,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/meophongthuy-m7d-c3e1a954ab.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 224,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-149.mp3"
+  }
  },
  {
   "handle": "@プレアデス最終通知556",
@@ -628,7 +844,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/556-0047bdadb8.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 336,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_556.mp3"
+  }
  },
  {
   "handle": "@ThựcPhẩmSứcKhoẻ-u8y",
@@ -661,7 +885,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/kienthucthanhoc9-101d92685d.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 203,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_kienthucthanhoc9.mp3"
+  }
  },
  {
   "handle": "@PHONGTHUYTIEMTANG",
@@ -676,7 +908,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/PHONGTHUYTIEMTANG-a350338a33.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 195,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-150.mp3"
+  }
  },
  {
   "handle": "@偉人の救い",
@@ -710,7 +950,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/izinnokatari-cefb3453c1.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 392,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_izinnokatari.mp3"
+  }
  },
  {
   "handle": "@kotobano-housekibako",
@@ -725,7 +973,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/kotobano-housekibako-dad971ac94.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 295,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_kotobanohousekibako.mp3"
+  }
  },
  {
   "handle": "@IjinNoNouri",
@@ -740,7 +996,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/IjinNoNouri-6c72b5482e.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 307,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_IjinNoNouri.mp3"
+  }
  },
  {
   "handle": "@空海の真理",
@@ -755,7 +1019,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/ch-2bf8602008.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 285,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xf9dff2d135.mp3"
+  }
  },
  {
   "handle": "@お金の心理",
@@ -770,7 +1042,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/ch-5de5930ab7.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 280,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-158.mp3"
+  }
  },
  {
   "handle": "@biblemadeclear26",
@@ -784,7 +1064,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/biblemadeclear26-b6b6ddb84a.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 132,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_biblemadeclear26.mp3"
+  }
  },
  {
   "handle": "@scripturemadesimpleyt",
@@ -798,7 +1086,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/scripturemadesimpleyt-46a7424ac7.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 169,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_scripturemadesimpleyt.mp3"
+  }
  },
  {
   "handle": "@ScriptureMadeSimpleTV",
@@ -829,7 +1125,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/theopenscriptures-f85c576281.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 165,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_theopenscriptures.mp3"
+  }
  },
  {
   "handle": "@BibleLegacyAssets98",
@@ -843,7 +1147,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/BibleLegacyAssets98-7dded8036a.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 144,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_BibleLegacyAssets98.mp3"
+  }
  },
  {
   "handle": "@こころの道しるべブッダの教え",
@@ -858,7 +1170,15 @@
   ],
   "avatar": "assets/avatars/ch-d6c2202ddb.jpg",
   "note": "Phật Nhật. Sửa 18/08: trước đó gắn market Hàn vì nằm nhầm trong VIDEO-70f1f1.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 319,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xed9d2082b0.mp3"
+  }
  },
  {
   "handle": "@은빛복음",
@@ -872,7 +1192,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-a61b33b4a1.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 85,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xc371ad7620.mp3"
+  }
  },
  {
   "handle": "@주님의손길-handofgod",
@@ -886,7 +1214,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/-handofgod-0bc60288a7.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 100,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_handofgod.mp3"
+  }
  },
  {
   "handle": "@trihueconhan-vn",
@@ -900,7 +1236,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/trihueconhan-vn-1a00a11ffe.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 221,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_trihueconhanvn.mp3"
+  }
  },
  {
   "handle": "@BàiHọcTuổiGià-VN",
@@ -931,7 +1275,15 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/Kori_Sub-2c4c6bf040.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 243,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_KoriSub.mp3"
+  }
  },
  {
   "handle": "@Kyn_Sub",
@@ -945,7 +1297,15 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/Kyn_Sub-b8a4a2a136.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 255,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_KynSub.mp3"
+  }
  },
  {
   "handle": "@静かな家族の秘密",
@@ -977,7 +1337,15 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/Camnhonvietsub-d7c2a25e49.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 139,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_Camnhonvietsub.mp3"
+  }
  },
  {
   "handle": "@偉大さJAPAN721",
@@ -991,7 +1359,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/JAPAN721-40784e40cc.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 345,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_JAPAN721.mp3"
+  }
  },
  {
   "handle": "@家族の物語123-p3k",
@@ -1008,7 +1384,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (URL mở 200, cùng tên/niche (có biến thể @OvtR585)). Cũ: @家族の物語449 @家族の物語449",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 371,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_123p3k.mp3"
+  }
  },
  {
   "handle": "@투자전략-n7u",
@@ -1026,7 +1410,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (XÁC MINH cùng channel ID (vidIQ)). Cũ: @UC-pBHWL4Eb7QwBTF0072Afg @UC-pBHWL4Eb7QwBTF0072Afg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 92,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_n7u.mp3"
+  }
  },
  {
   "handle": "@ChuXinDiaoYu01",
@@ -1040,7 +1432,15 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/ChuXinDiaoYu01-e6fbb15a0d.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "zh-CN",
+   "flag": "🇨🇳",
+   "wpm": 221,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_ChuXinDiaoYu01.mp3"
+  }
  },
  {
   "handle": "@mimymedia",
@@ -1092,7 +1492,15 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/ch-952d13e146.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 81,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x82cfc9b118.mp3"
+  }
  },
  {
   "handle": "@静思の道",
@@ -1126,7 +1534,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/Tieulongreview2026-9f0648dd6d.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 287,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_Tieulongreview2026.mp3"
+  }
  },
  {
   "handle": "@Dadstruerevenge",
@@ -1142,7 +1558,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/Dadstruerevenge-b4f1e77ced.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 193,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_Dadstruerevenge.mp3"
+  }
  },
  {
   "handle": "@똑똑해지는경제학-m2y",
@@ -1158,7 +1582,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/-m2y-3b393aa19d.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 108,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_m2y.mp3"
+  }
  },
  {
   "handle": "@방구석워런버핏",
@@ -1174,7 +1606,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/ch-b55c5dfb07.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 117,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x92d599bac3.mp3"
+  }
  },
  {
   "handle": "@AnNhienChuyenDoiBinhDi",
@@ -1190,7 +1630,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/AnNhienChuyenDoiBinhDi-48eb9f50d4.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 213,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_AnNhienChuyenDoiBinhDi.mp3"
+  }
  },
  {
   "handle": "@CandyVengeance",
@@ -1205,7 +1653,15 @@
    "🇨🇦 Canada"
   ],
   "avatar": "assets/avatars/CandyVengeance-7aebe13c55.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 185,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_CandyVengeance.mp3"
+  }
  },
  {
   "handle": "@100歳まで元気1",
@@ -1220,7 +1676,15 @@
    "🇨🇦 Canada"
   ],
   "avatar": "assets/avatars/100_1-2a1c30791e.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 339,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_1001.mp3"
+  }
  },
  {
   "handle": "@Socnaureview2026",
@@ -1235,7 +1699,15 @@
   ],
   "avatar": "assets/avatars/Socnaureview2026-47a5f93877.jpg",
   "note": "vidIQ 18/08: country=VN, 0 video mới — catalogue reup.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 311,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_Socnaureview2026.mp3"
+  }
  },
  {
   "handle": "@keodeovietsub",
@@ -1250,7 +1722,15 @@
    "🇬🇧 Anh"
   ],
   "avatar": "assets/avatars/keodeovietsub-a0735ab63e.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "zh-CN",
+   "flag": "🇨🇳",
+   "wpm": null,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_keodeovietsub.mp3"
+  }
  },
  {
   "handle": "@MindfulPawsPsychology",
@@ -1265,7 +1745,15 @@
   ],
   "avatar": "assets/avatars/MindfulPawsPsychology-d73513e56e.jpg",
   "note": "vidIQ 18/08: Pet/Health US, 0 video mới — catalogue. Không phải triết lý.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 175,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_MindfulPawsPsychology.mp3"
+  }
  },
  {
   "handle": "@UCeVwhrEnYjCNdaDr47x4dSw",
@@ -1315,7 +1803,15 @@
   ],
   "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg",
   "note": "vidIQ 18/08: Science Sun — Knowledge EN 82.6K +11 video. Không phải Share key / drama. | Đổi handle 09/2026: @ScienceSun-b4r (handle cũ dạng channel-ID đã 404; nguồn: DB RAW-126 handle_history + YouTube web 200)",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ru-RU",
+   "flag": "🇷🇺",
+   "wpm": 127,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-126.mp3"
+  }
  },
  {
   "handle": "@HDVietsub-h7u",
@@ -1363,7 +1859,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/100-fc479a368d.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 88,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_100.mp3"
+  }
  },
  {
   "handle": "@경제빠월",
@@ -1395,7 +1899,15 @@
   ],
   "avatar": "assets/avatars/ch-f19660388d.jpg",
   "note": "Danh ngôn / triết lý Nhật. Sửa 18/08: gỡ VN/CN.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 364,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xf0a9e51372.mp3"
+  }
  },
  {
   "handle": "@thuatphongthuy26",
@@ -1410,7 +1922,15 @@
   ],
   "avatar": "assets/avatars/thuatphongthuy26-ff2ffebdaf.jpg",
   "note": "Phong thủy VN. Sửa 18/08: gỡ JP/CN.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 211,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-148.mp3"
+  }
  },
  {
   "handle": "@VaultBoy001",
@@ -1443,7 +1963,15 @@
   ],
   "avatar": "assets/avatars/ch-d8e54eba19.jpg",
   "note": "Chuyện đời senior Nhật. Sửa 18/08: gỡ VN/CN.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 285,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-156.mp3"
+  }
  },
  {
   "handle": "@人生の感動物語-16",
@@ -1461,7 +1989,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (vidIQ cùng tên chính xác, URL mở 200). Cũ: @人生の感動物語-d7f @人生の感動物語-d7f",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 333,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_16.mp3"
+  }
  },
  {
   "handle": "@老後の誤算",
@@ -1476,7 +2012,15 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/ch-acfc57b64b.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 308,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x1393215f20.mp3"
+  }
  },
  {
   "handle": "@漫画で学ぶシニアの健康CH-n8i",
@@ -1512,7 +2056,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/tritueconhanradio-4539896dac.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 263,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_tritueconhanradio.mp3"
+  }
  },
  {
   "handle": "@TRESube156",
@@ -1526,7 +2078,15 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/TRESube156-72694e6ca9.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 255,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_TRESube156.mp3"
+  }
  },
  {
   "handle": "@KhámPháTrungHoa-HT",
@@ -1558,7 +2118,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/DoctorDr.Lee-h9t-a5ca91f907.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 123,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_DoctorDrLeeh9t.mp3"
+  }
  },
  {
   "handle": "@LightYogawithNatalie",
@@ -1573,7 +2141,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/LightYogawithNatalie-abcc9d9fba.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 5,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_LightYogawithNatalie.mp3"
+  }
  },
  {
   "handle": "@TuổiGiàRadio_VN",
@@ -1624,7 +2200,15 @@
   ],
   "avatar": "assets/avatars/ch-404b9e01bb.jpg",
   "note": "야담 Hàn. Sửa 18/08: gỡ JP/CN — kênh Hàn.",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 87,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x4b545d8f45.mp3"
+  }
  },
  {
   "handle": "@남현진전문의",
@@ -1659,7 +2243,15 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/ch-b2082b9929.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 300,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xf6f1c20121.mp3"
+  }
  },
  {
   "handle": "@ほのぼのラジオ1",
@@ -1693,7 +2285,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-de2ddea556.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 119,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xd0cbefe9cf.mp3"
+  }
  },
  {
   "handle": "@gockhuatnhansinh-official",
@@ -1710,7 +2310,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/gockhuatnhansinh-official-c9d917d24c.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 260,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_gockhuatnhansinhofficial.mp3"
+  }
  },
  {
   "handle": "@노년의마음",
@@ -1726,7 +2334,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/ch-82e821217e.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 85,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x9ccdfa9b05.mp3"
+  }
  },
  {
   "handle": "@성실한경제학",
@@ -1763,7 +2379,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/ch-4a31d0cece.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 289,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-157.mp3"
+  }
  },
  {
   "handle": "@fuetunoijin",
@@ -1812,7 +2436,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/buddhamind60s-721ae83838.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 280,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_buddhamind60s.mp3"
+  }
  },
  {
   "handle": "@賢者の灯88",
@@ -1829,7 +2461,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (URL mở 200, cùng tên). Cũ: @賢者の灯 @賢者の灯",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 367,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_88.mp3"
+  }
  },
  {
   "handle": "@黄金の老年期-x9g",
@@ -1843,7 +2483,15 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "assets/avatars/-x9g-502d482131.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 297,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-154.mp3"
+  }
  },
  {
   "handle": "@HinognaKaalamanYT",
@@ -1858,7 +2506,15 @@
   ],
   "avatar": "assets/avatars/HinognaKaalamanYT-42b660dc78.jpg",
   "note": "vidIQ 18/08: PH Vehicle — gỡ hàng loạt 03-10/08 (181→117 video, 23tr→13.4tr view).",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "fil-PH",
+   "flag": "🇵🇭",
+   "wpm": 147,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_HinognaKaalamanYT.mp3"
+  }
  },
  {
   "handle": "@새벽의두만강",
@@ -1892,7 +2548,15 @@
    "🇬🇧 Anh"
   ],
   "avatar": "assets/avatars/thecoldwartales-7ff97a2113.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 147,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_thecoldwartales.mp3"
+  }
  },
  {
   "handle": "@militarytactics113",
@@ -1907,7 +2571,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/militarytactics113-c1dcf72483.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "cy-XX",
+   "flag": "🌐",
+   "wpm": null,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_militarytactics113.mp3"
+  }
  },
  {
   "handle": "@노인건강습관-l",
@@ -1924,7 +2596,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (URL mở 200, ~12.3K subs, cùng tên/niche). Cũ: @노인건강습관-m3o @노인건강습관-m3o",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 120,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_l.mp3"
+  }
  },
  {
   "handle": "@danggyung",
@@ -1943,7 +2623,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (URL mở 200, cùng tên). Cũ: @당신의경제학 @당신의경제학",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 92,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_danggyung.mp3"
+  }
  },
  {
   "handle": "@あの年の空.99",
@@ -1960,7 +2648,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (URL mở 200, cùng tên/niche (~953 subs)). Cũ: @あの年の空 @あの年の空",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 319,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_99.mp3"
+  }
  },
  {
   "handle": "@SuGia_SucKhoe",
@@ -1975,7 +2671,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/SuGia_SucKhoe-2e6bd7378d.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 235,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-147.mp3"
+  }
  },
  {
   "handle": "@suckhoedongy99",
@@ -2008,7 +2712,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/Kh_eV_Gi-bdcb54d9c5.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 241,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-155.mp3"
+  }
  },
  {
   "handle": "@songlausongkhoe360",
@@ -2023,7 +2735,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/songlausongkhoe360-d99b08b23e.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 249,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-144.mp3"
+  }
  },
  {
   "handle": "@healthlonglife",
@@ -2038,7 +2758,15 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/healthlonglife-ab93d477c4.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 99,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_healthlonglife.mp3"
+  }
  },
  {
   "handle": "@시니어건강정보r",
@@ -2052,7 +2780,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/r-8987eb969a.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 95,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_r.mp3"
+  }
  },
  {
   "handle": "@가족건강지킴이",
@@ -2069,7 +2805,15 @@
   "dead": false,
   "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
   "note": "Handle mới 20/08/2026 (Link-in-bio chính chủ trỏ tới — đổi tên kênh). Cũ: @baeksehealth @baeksehealth",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 117,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xcf8116fee7.mp3"
+  }
  },
  {
   "handle": "@실버라디오-z4u",
@@ -2083,7 +2827,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/-z4u-6388a1f6f8.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 101,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_z4u.mp3"
+  }
  },
  {
   "handle": "@theorigin619",
@@ -2097,7 +2849,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/theorigin619-966966df34.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 125,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/RAW-042.mp3"
+  }
  },
  {
   "handle": "@forgottenwaystomakemoney",
@@ -2111,7 +2871,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/forgottenwaystomakemoney-248f796456.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 165,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_forgottenwaystomakemoney.mp3"
+  }
  },
  {
   "handle": "@skywatcherstories",
@@ -2125,7 +2893,15 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/skywatcherstories-11933ccc96.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 207,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_skywatcherstories.mp3"
+  }
  },
  {
   "handle": "@지혜로운위로와명상",
@@ -2139,7 +2915,15 @@
    "🇰🇷 Hàn"
   ],
   "avatar": "assets/avatars/ch-b06333e820.jpg",
-  "ngay_do": "2026-08-22"
+  "ngay_do": "2026-08-22",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 99,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xdcbf2b64f7.mp3"
+  }
  },
  {
   "handle": "@thepassiveexplainer",
@@ -2154,7 +2938,15 @@
   ],
   "note": "Everyday History mẫu sạch 42.6K/+11.1K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/thepassiveexplainer-f0a79a0cc6.jpg"
+  "avatar": "assets/avatars/thepassiveexplainer-f0a79a0cc6.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 173,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_thepassiveexplainer.mp3"
+  }
  },
  {
   "handle": "@historyofsimplethings",
@@ -2169,7 +2961,15 @@
   ],
   "note": "Everyday History 1.01M/+10K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/historyofsimplethings-8fe4610536.jpg"
+  "avatar": "assets/avatars/historyofsimplethings-8fe4610536.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 128,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_historyofsimplethings.mp3"
+  }
  },
  {
   "handle": "@lilliput_history",
@@ -2184,7 +2984,15 @@
   ],
   "note": "Everyday History 5.25K/+1.39K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/lilliput_history-ef08c6cbf5.jpg"
+  "avatar": "assets/avatars/lilliput_history-ef08c6cbf5.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 140,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_lilliputhistory.mp3"
+  }
  },
  {
   "handle": "@toastertalesusa",
@@ -2217,7 +3025,15 @@
   ],
   "note": "Everyday History 2.88K/+660/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/everydaythingsexplain-a3d9a5a6ee.jpg"
+  "avatar": "assets/avatars/everydaythingsexplain-a3d9a5a6ee.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 165,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_everydaythingsexplain.mp3"
+  }
  },
  {
   "handle": "@weirdhistory",
@@ -2232,7 +3048,15 @@
   ],
   "note": "Everyday History mauBan 4.73M (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/weirdhistory-3ccc6b00dc.jpg"
+  "avatar": "assets/avatars/weirdhistory-3ccc6b00dc.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 151,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_weirdhistory.mp3"
+  }
  },
  {
   "handle": "@purebusinesshorts",
@@ -2265,7 +3089,15 @@
   ],
   "note": "Food History 13.9K/+700/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/thedishdecoded-8362675aa9.jpg"
+  "avatar": "assets/avatars/thedishdecoded-8362675aa9.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 167,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_thedishdecoded.mp3"
+  }
  },
  {
   "handle": "@wherefoodbegan",
@@ -2280,7 +3112,15 @@
   ],
   "note": "Food History 10.8K/+0 video/30d ĐỨNG (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/wherefoodbegan-6f1632408a.jpg"
+  "avatar": "assets/avatars/wherefoodbegan-6f1632408a.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 176,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_wherefoodbegan.mp3"
+  }
  },
  {
   "handle": "@tastinghistory",
@@ -2295,7 +3135,15 @@
   ],
   "note": "Food History mauBan 4.44M face +30K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/tastinghistory-2ef12fe4dd.jpg"
+  "avatar": "assets/avatars/tastinghistory-2ef12fe4dd.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 184,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_tastinghistory.mp3"
+  }
  },
  {
   "handle": "@weirdhistoryfood",
@@ -2310,7 +3158,15 @@
   ],
   "note": "Food History mauBan 777K +4K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/weirdhistoryfood-e7ecfff937.jpg"
+  "avatar": "assets/avatars/weirdhistoryfood-e7ecfff937.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 163,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_weirdhistoryfood.mp3"
+  }
  },
  {
   "handle": "@thebadones_series",
@@ -2325,7 +3181,15 @@
   ],
   "note": "UFO mauSach 413K/+110K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/thebadones_series-63b2019c9b.jpg"
+  "avatar": "assets/avatars/thebadones_series-63b2019c9b.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 103,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_thebadonesseries.mp3"
+  }
  },
  {
   "handle": "@unexplainediaries",
@@ -2340,7 +3204,15 @@
   ],
   "note": "UFO mauPhu 12.4K/+800/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/unexplainediaries-3d13e11d2c.jpg"
+  "avatar": "assets/avatars/unexplainediaries-3d13e11d2c.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 169,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_unexplainediaries.mp3"
+  }
  },
  {
   "handle": "@thegalaxyhfy",
@@ -2355,7 +3227,15 @@
   ],
   "note": "UFO mauPhu 13.3K/+7.92K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/thegalaxyhfy-183cca1eb8.jpg"
+  "avatar": "assets/avatars/thegalaxyhfy-183cca1eb8.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 120,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_thegalaxyhfy.mp3"
+  }
  },
  {
   "handle": "@thirdphaseofmoon",
@@ -2370,7 +3250,15 @@
   ],
   "note": "UFO mauBan 824K +4K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/thirdphaseofmoon-17008a87df.svg"
+  "avatar": "assets/avatars/thirdphaseofmoon-17008a87df.svg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 133,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_thirdphaseofmoon.mp3"
+  }
  },
  {
   "handle": "@secureteam10",
@@ -2385,7 +3273,15 @@
   ],
   "note": "UFO mauBan 2.04M +1 video/30d GẦN ĐỨNG (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/secureteam10-f2ef7961f5.jpg"
+  "avatar": "assets/avatars/secureteam10-f2ef7961f5.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 135,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_secureteam10.mp3"
+  }
  },
  {
   "handle": "@마음쉼터relax",
@@ -2400,7 +3296,15 @@
   ],
   "note": "Senior Wisdom KR mauSach 67.7K/+6.9K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/ch-b9afa37ba5.jpg"
+  "avatar": "assets/avatars/ch-b9afa37ba5.jpg",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 88,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_relax.mp3"
+  }
  },
  {
   "handle": "@오늘의건강신호",
@@ -2415,7 +3319,15 @@
   ],
   "note": "Senior Wisdom KR mauPhu 15.2K/+2.4K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/ch-0b1c9d2d79.jpg"
+  "avatar": "assets/avatars/ch-0b1c9d2d79.jpg",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 99,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_xe301b5cd30.mp3"
+  }
  },
  {
   "handle": "@인생버팀목",
@@ -2430,7 +3342,15 @@
   ],
   "note": "Senior Wisdom KR mauPhu 23.2K/+1.6K/30d (đo 20/08)",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/ch-f665761c29.jpg"
+  "avatar": "assets/avatars/ch-f665761c29.jpg",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 104,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x66d0d13877.mp3"
+  }
  },
  {
   "handle": "@MộtĐờiBìnhAn-v6s",
@@ -2445,7 +3365,15 @@
   ],
   "note": "Kênh VN đang NỔ 15.1K/+11K sub/30d (đo vidIQ 20/08) — tham chiếu từ VIDEO-484f9e",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/ch-7a1b227adc.jpg"
+  "avatar": "assets/avatars/ch-7a1b227adc.jpg",
+  "voiceDna": {
+   "code": "vi-VN",
+   "flag": "🇻🇳",
+   "wpm": 175,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_MtiBnhAnv6s.mp3"
+  }
  },
  {
   "handle": "@discoverwildlifeen",
@@ -2460,7 +3388,15 @@
   ],
   "note": "Wildlife documentary evidence 21/08 vidIQ channel_stats: Discover Wildlife 97.1K / +16.4K sub / +5.08M view / 31 video / 30d. Không phải rescue.",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/discoverwildlifeen-d1cc575b60.jpg"
+  "avatar": "assets/avatars/discoverwildlifeen-d1cc575b60.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 92,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_discoverwildlifeen.mp3"
+  }
  },
  {
   "handle": "@livingzoo",
@@ -2475,7 +3411,15 @@
   ],
   "note": "Wildlife documentary evidence 21/08 vidIQ: LivingZoo 234K / +17K sub / +3.08M view / 4 video / 30d. Không phải rescue.",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/livingzoo-83ac9b7fd7.jpg"
+  "avatar": "assets/avatars/livingzoo-83ac9b7fd7.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 215,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_livingzoo.mp3"
+  }
  },
  {
   "handle": "@faunapse",
@@ -2490,7 +3434,15 @@
   ],
   "note": "Wildlife documentary evidence 21/08 vidIQ: Faunapse 984 / +709 sub / +143K view / 19 video / 30d. Kênh nhỏ. Không phải rescue.",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/faunapse-a687103dbf.jpg"
+  "avatar": "assets/avatars/faunapse-a687103dbf.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 103,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_faunapse.mp3"
+  }
  },
  {
   "handle": "@wildanimalsb52",
@@ -2505,7 +3457,15 @@
   ],
   "note": "Wildlife documentary evidence 21/08 vidIQ: Wild Animals - Animal Documentary 39.9K / +10.5K sub / +2.62M view / 3 video / 30d. Không phải rescue.",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/wildanimalsb52-9d70252848.jpg"
+  "avatar": "assets/avatars/wildanimalsb52-9d70252848.jpg",
+  "voiceDna": {
+   "code": "en-US",
+   "flag": "🇺🇸",
+   "wpm": 44,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_wildanimalsb52.mp3"
+  }
  },
  {
   "handle": "@ธรรมสุข-2275",
@@ -2520,7 +3480,15 @@
   ],
   "note": "Kênh đối thủ bài VIDEO-DD983D trên site gốc h2dev.vn: スカッと感動物語 (8.06K subs / 158 videos).",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/ch-a263828efe.jpg"
+  "avatar": "assets/avatars/ch-a263828efe.jpg",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 357,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_2275.mp3"
+  }
  },
  {
   "handle": "@新しい私の毎日",
@@ -2535,7 +3503,15 @@
   ],
   "note": "Kênh đối thủ bài VIDEO-DD983D trên site gốc h2dev.vn: 明日へ歩く日々 (3.93K subs / 30 videos, cổ 2010).",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/ch-172d9f5eff.jpg"
+  "avatar": "assets/avatars/ch-172d9f5eff.jpg",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 372,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x0c236ecb26.mp3"
+  }
  },
  {
   "handle": "@心に残る話-y10k",
@@ -2550,7 +3526,15 @@
   ],
   "note": "Kênh đối thủ bài VIDEO-DD983D trên site gốc h2dev.vn: 心に残る話20 (5.02K subs / 62 videos, cổ 2009).",
   "ngay_do": "2026-08-22",
-  "avatar": "assets/avatars/ch-556aaeac15.jpg"
+  "avatar": "assets/avatars/ch-556aaeac15.jpg",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 363,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_y10k.mp3"
+  }
  },
  {
   "handle": "@涙のひと駅",
@@ -2566,7 +3550,15 @@
   ],
   "avatar": "assets/avatars/namida-hitoeki.jpg",
   "ngay_do": "2026-09-09",
-  "nguon_do": "h2dev VIDEO-73d98a"
+  "nguon_do": "h2dev VIDEO-73d98a",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 263,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_x2c932f7de1.mp3"
+  }
  },
  {
   "handle": "@사연만남1짱",
@@ -2582,7 +3574,15 @@
   ],
   "avatar": "assets/avatars/sayeon-mannam1jjang.jpg",
   "ngay_do": "2026-09-09",
-  "nguon_do": "h2dev VIDEO-73d98a"
+  "nguon_do": "h2dev VIDEO-73d98a",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 75,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_1_8c9758.mp3"
+  }
  },
  {
   "handle": "@simbot2",
@@ -2598,7 +3598,15 @@
   ],
   "avatar": "assets/avatars/simbot2.jpg",
   "ngay_do": "2026-09-09",
-  "nguon_do": "h2dev VIDEO-73d98a"
+  "nguon_do": "h2dev VIDEO-73d98a",
+  "voiceDna": {
+   "code": "ko-KR",
+   "flag": "🇰🇷",
+   "wpm": 131,
+   "wpmNote": null,
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_simbot2.mp3"
+  }
  },
  {
   "handle": "@元気な老後-t5d",
@@ -2614,6 +3622,14 @@
   ],
   "avatar": "assets/avatars/genkina-rogo.jpg",
   "ngay_do": "2026-09-09",
-  "nguon_do": "h2dev VIDEO-73d98a"
+  "nguon_do": "h2dev VIDEO-73d98a",
+  "voiceDna": {
+   "code": "ja-JP",
+   "flag": "🇯🇵",
+   "wpm": 308,
+   "wpmNote": "chars/min",
+   "measuredAt": "2026-09-29",
+   "sampleUrl": "assets/voice-samples/GEN_t5d.mp3"
+  }
  }
 ]

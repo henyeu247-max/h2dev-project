@@ -63,7 +63,7 @@ const SOURCES = {
    Sua code lam doi so nay => phai chu dong cap nhat bang (co y thuc), khong the "pass im lang". */
 const EXPECT_NGUON = {
   //                    nAriaControls  nSetAriaControls  nShellSkip  nShellFooter  nRadar  nToastBox  nA11yStatus
-  index:  { nAriaControls: 2, nSetAriaControls: 0, nShellSkip: 1, nShellFooter: 1, nRadar: 2, nToastBox: 1, nA11yStatus: 3 },
+  index:  { nAriaControls: 1, nSetAriaControls: 0, nShellSkip: 1, nShellFooter: 1, nRadar: 2, nToastBox: 1, nA11yStatus: 3 },
   learn:  { nAriaControls: 5, nSetAriaControls: 0, nShellSkip: 1, nShellFooter: 1, nRadar: 2, nToastBox: 1, nA11yStatus: 1 },
   player: { nAriaControls: 7, nSetAriaControls: 2, nShellSkip: 1, nShellFooter: 1, nRadar: 2, nToastBox: 2, nA11yStatus: 2 },
 };

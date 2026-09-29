@@ -112,16 +112,23 @@
         } catch (e) {
           if (i === urls.length - 1) {
             noteLoadError(p, String(e && e.message || e));
-            throw new Error(`Không tải được ${p}`);
+            const fe = new Error(`Không tải được ${p}.`);
+            fe.h2Friendly = true;
+            throw fe;
           }
         }
       }
     }
     function renderLoadErrorBanner() {
       if (!_loadErrors.length) return '';
-      return '<div class="card p-4 mb-6 border-red-800" role="alert"><strong class="text-white">Không tải được một số dữ liệu</strong><ul class="text-xs text-gray-400 mt-2" style="margin:0;padding-left:1rem;list-style:disc">' +
-        _loadErrors.map(x => '<li>' + esc(x.path) + ' — ' + esc(x.msg) + '</li>').join('') +
-        '</ul></div>';
+      /* FIX 2026-09-30 (UI-11): khong in thong diep ky thuat ("Failed to fetch", "404 /path?v=...")
+         ra UI — ghi console cho dev, nguoi dung thay ngon ngu thuong + nut Thu lai. */
+      try { _loadErrors.forEach(x => console.warn('[H2DEV] load error', x.path, x.msg)); } catch (e) {}
+      const seen = {};
+      const paths = _loadErrors.filter(x => (seen[x.path] ? false : (seen[x.path] = true))).map(x => x.path);
+      return '<div class="card p-4 mb-6 border-red-800" role="alert"><strong class="text-white">Không tải được một số dữ liệu</strong><p class="text-xs text-gray-400 mt-2">Phần còn lại vẫn dùng được. Kiểm tra kết nối hoặc máy chủ rồi bấm Thử lại.</p><ul class="text-xs text-gray-400 mt-2" style="margin:0;padding-left:1rem;list-style:disc">' +
+        paths.map(p => '<li>' + esc(p) + '</li>').join('') +
+        '</ul><button type="button" class="h2-btn h2-btn--ghost mt-3" data-action="retry-render">Thử lại</button></div>';
     }
 
     // Đếm nhạc động từ music_catalog — cấm hardcode số track
@@ -643,6 +650,9 @@
     let renderGen = 0;
     async function render() {
       const gen = ++renderGen;
+      /* FIX 2026-09-30 (UI-11): loi tai la cua TUNG lan render. Truoc day chi xoa khi render THANH CONG,
+         nen lan loi (nhanh catch) de lai loi cu -> retry thanh cong van hien banner loi cu. */
+      _loadErrors.length = 0;
       const el = document.getElementById('content');
       el.setAttribute('aria-busy', 'true');
       /* P2-H2 (2026-09-27): hien SKELETON ngay khi bat dau render.
@@ -760,7 +770,11 @@
               loadJSON("data-tabs/tai-lieu-full.json").catch(function(){return [];})
             ]);
             const videos = Array.isArray(vidsTab) ? vidsTab : (vidsTab && vidsTab.videos) || [];
-            window._cachedStatsText = videos.length + " video · " + docs.length + " TL · " + kenh.length + " kênh";
+            /* FIX 2026-09-30: truoc day dem ca kenh dead (165) trong khi KPI + tab Kenh mau hien kenh song (126).
+               Topbar dung cung quy uoc voi KPI: so kenh SONG. */
+            const kenhArr = Array.isArray(kenh) ? kenh : [];
+            const kenhLive = kenhArr.filter(function (k) { return k && !k.dead; }).length;
+            window._cachedStatsText = videos.length + " video · " + docs.length + " TL · " + kenhLive + " kênh";
           } catch(e) {}
         }
         const hdEl = document.getElementById("hd-stats");
@@ -768,7 +782,10 @@
       } catch (error) {
         /* UI-02: banner loi cua lan stale khong duoc de len noi dung moi hon */
         if (gen !== renderGen) return;
-        el.innerHTML = `<div class="card p-4 sm:p-5 border-red-800" role="alert"><h2 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h2><p class="text-gray-300">${esc(error.message)}</p><button type="button" class="mt-4 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm" data-action="retry-render">Thử lại</button></div>`;
+        /* FIX 2026-09-30 (UI-11): chi hien thong diep than thien; loi ky thuat (TypeError...) vao console. */
+        try { console.error('[H2DEV] render error', state.tab, error); } catch (e) {}
+        const friendly = (error && error.h2Friendly) ? error.message : 'Dữ liệu của mục này chưa tải được hoặc bị sai định dạng.';
+        el.innerHTML = `<div class="card p-4 sm:p-5 border-red-800" role="alert"><h2 class="text-xl font-bold text-white mb-2">Không thể tải dữ liệu</h2><p class="text-gray-300">${esc(friendly)} Kiểm tra kết nối hoặc máy chủ rồi bấm Thử lại.</p><button type="button" class="h2-btn h2-btn--brand mt-4" data-action="retry-render">Thử lại</button></div>`;
       } finally {
         if (gen === renderGen) el.setAttribute("aria-busy", "false");
       }

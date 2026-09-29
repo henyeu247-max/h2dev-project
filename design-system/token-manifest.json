@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedFrom": "MOI file .css SONG (loai tru: _backup/, _archive/, node_modules/, data/, va file build assets/tailwind.css)",
   "scanner": "scripts/sync-tokens.js",
-  "usageSources": 167,
+  "usageSources": 176,
   "cssSources": 10,
   "totalTokens": 98,
   "tokens": {
@@ -10,13 +10,14 @@
       "value": "#050505",
       "file": "assets/viddar.css",
       "line": 52,
-      "uses": 16,
+      "uses": 17,
       "usedIn": [
         "assets/app/g3-inline.css",
         "assets/learn.css",
         "assets/music_player_modal.js",
         "assets/viddar.css",
         "design-system/visual-proof.html",
+        "outputs/h2dev-design-audit-20260928.html",
         "scripts/gate-p1.js",
         "scripts/gate-p2.js"
       ]
@@ -36,7 +37,7 @@
       "value": "#222",
       "file": "assets/viddar.css",
       "line": 56,
-      "uses": 83,
+      "uses": 90,
       "usedIn": [
         "assets/h2dev-components-lesson-row.css",
         "assets/h2dev-primitives.css",
@@ -44,7 +45,8 @@
         "assets/learn.css",
         "assets/player.css",
         "assets/viddar.css",
-        "design-system/visual-proof.html"
+        "design-system/visual-proof.html",
+        "outputs/h2dev-design-audit-20260928.html"
       ]
     },
     "--border-strong": {
@@ -75,7 +77,7 @@
       "value": "#E2023A",
       "file": "assets/viddar.css",
       "line": 63,
-      "uses": 58,
+      "uses": 59,
       "usedIn": [
         "assets/h2dev-components-lesson-row.css",
         "assets/h2dev-primitives.css",
@@ -83,7 +85,8 @@
         "assets/learn.css",
         "assets/player.css",
         "assets/viddar.css",
-        "design-system/visual-proof.html"
+        "design-system/visual-proof.html",
+        "outputs/h2dev-design-audit-20260928.html"
       ]
     },
     "--brand-fg": {
@@ -159,7 +162,7 @@
       "value": "#f0f0f0",
       "file": "assets/viddar.css",
       "line": 59,
-      "uses": 53,
+      "uses": 54,
       "usedIn": [
         "assets/h2dev-components-lesson-row.css",
         "assets/h2dev-primitives.css",
@@ -684,11 +687,13 @@
       "value": "44px",
       "file": "assets/h2dev-tokens.css",
       "line": 65,
-      "uses": 15,
+      "uses": 19,
       "usedIn": [
         "assets/h2dev-primitives.css",
         "assets/h2dev-shell.css",
-        "assets/viddar.css"
+        "assets/learn.css",
+        "assets/viddar.css",
+        "scripts/gate-p2.js"
       ]
     },
     "--h2-translate-max": {
@@ -701,8 +706,8 @@
     "--h2-z-base": {
       "value": "1",
       "file": "assets/h2dev-tokens.css",
-      "line": 101,
-      "uses": 7,
+      "line": 104,
+      "uses": 8,
       "usedIn": [
         "assets/app/tabs/content.js",
         "assets/h2dev-components-lesson-row.css",
@@ -712,7 +717,7 @@
     "--h2-z-drawer": {
       "value": "60",
       "file": "assets/h2dev-tokens.css",
-      "line": 104,
+      "line": 107,
       "uses": 4,
       "usedIn": [
         "assets/h2dev-shell.css",
@@ -723,7 +728,7 @@
     "--h2-z-fixed": {
       "value": "40",
       "file": "assets/h2dev-tokens.css",
-      "line": 103,
+      "line": 106,
       "uses": 3,
       "usedIn": [
         "assets/learn.css"
@@ -732,7 +737,7 @@
     "--h2-z-modal": {
       "value": "1000",
       "file": "assets/h2dev-tokens.css",
-      "line": 107,
+      "line": 110,
       "uses": 3,
       "usedIn": [
         "assets/app/main.js",
@@ -742,7 +747,7 @@
     "--h2-z-modal-top": {
       "value": "1010",
       "file": "assets/h2dev-tokens.css",
-      "line": 108,
+      "line": 111,
       "uses": 4,
       "usedIn": [
         "assets/app/main.js",
@@ -753,7 +758,7 @@
     "--h2-z-sticky": {
       "value": "20",
       "file": "assets/h2dev-tokens.css",
-      "line": 102,
+      "line": 105,
       "uses": 3,
       "usedIn": [
         "assets/h2dev-shell.css",
@@ -761,9 +766,9 @@
       ]
     },
     "--h2-z-toast": {
-      "value": "300",
+      "value": "1020",
       "file": "assets/h2dev-tokens.css",
-      "line": 106,
+      "line": 109,
       "uses": 3,
       "usedIn": [
         "assets/h2dev-shell.css"
@@ -772,7 +777,7 @@
     "--h2-z-topbar-mobile": {
       "value": "100",
       "file": "assets/h2dev-tokens.css",
-      "line": 105,
+      "line": 108,
       "uses": 6,
       "usedIn": [
         "assets/h2dev-shell.css",
@@ -969,7 +974,7 @@
       "value": "#0f0f0f",
       "file": "assets/viddar.css",
       "line": 54,
-      "uses": 71,
+      "uses": 76,
       "usedIn": [
         "assets/app/g3-inline.css",
         "assets/app/main.js",
@@ -980,6 +985,7 @@
         "assets/player.css",
         "assets/viddar.css",
         "design-system/visual-proof.html",
+        "outputs/h2dev-design-audit-20260928.html",
         "player.html",
         "scripts/gate-p1.js"
       ]

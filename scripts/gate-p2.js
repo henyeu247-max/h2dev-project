@@ -445,6 +445,8 @@ function findViolations() {
 
   /* [8] Touch target */
   v.touchTarget = checkTouchTargets();
+  /* [9] Bottom-nav du cot + phu 44px toan bo control (2026-09-30) */
+  v.touchCoverage = checkTouchCoverage();
 
   return v;
 }
@@ -571,6 +573,58 @@ function checkTouchTargets() {
   return v.touchTarget;
 }
 
+/* ---------- KIEM TRA [9] BOTTOM-NAV + PHU 44px (2026-09-30) ----------
+ * Vi sao can: [8] chi quet 3 selector nen PASS trong khi runtime @375px do duoc hang chuc
+ * control 28-40px (input, select, .h2-btn, nut dong modal, player...). Va .vd-bottom-nav
+ * ep repeat(5) trong khi nav.js render 5 tab + nut Khac = 6 nut -> nut Khac rot xuong hang 2
+ * NGOAI man hinh (P0). Gate SOURCE nay khoa 2 bat bien; nghiem thu hit-test van phai do
+ * bang browser that (xem CHECK-PASS-PROTOCOL).
+ */
+function checkTouchCoverage() {
+  const out = [];
+  const read = (rel) => { try { return fs.readFileSync(path.join(ROOT, rel), 'utf8'); } catch (e) { return null; } };
+  // (9a) so cot co dinh cua .vd-bottom-nav phai >= so nut render (BOTTOM_TABS + 1 nut Khac)
+  const mainJs = read('assets/app/main.js');
+  const m = mainJs && mainJs.match(/const\s+BOTTOM_TABS\s*=\s*\[([^\]]*)\]/);
+  if (!m) {
+    out.push({ file: 'assets/app/main.js', line: 0, val: 'BOTTOM_TABS', txt: '[9a] Khong doc duoc BOTTOM_TABS (fail loud, SCAR-019)' });
+  } else {
+    const nBtn = (m[1].match(/'[^']+'|"[^"]+"/g) || []).length + 1;
+    for (const rel of ['assets/viddar.css', 'assets/h2dev-shell.css']) {
+      const src = read(rel);
+      if (src == null) { out.push({ file: rel, line: 0, val: '', txt: '[9a] Khong doc duoc file' }); continue; }
+      const re = /\.vd-bottom-nav\s*\{([^}]*)\}/g;
+      let b;
+      while ((b = re.exec(src))) {
+        const rep = b[1].match(/grid-template-columns\s*:\s*repeat\(\s*(\d+)/);
+        if (rep && parseInt(rep[1], 10) < nBtn) {
+          const line = src.slice(0, b.index).split('\n').length;
+          out.push({ file: rel, line: line, val: 'repeat(' + rep[1] + ')', txt: '[9a] .vd-bottom-nav chi ' + rep[1] + ' cot nhung render ' + nBtn + ' nut -> nut cuoi rot hang 2 ngoai man hinh' });
+        }
+      }
+    }
+  }
+  // (9b) block phu 44px trong h2dev-shell.css phai con du 3 vung: #content, [role=dialog], #playerMain
+  const shell = read('assets/h2dev-shell.css');
+  const REQUIRED = [
+    '#content :is(button, select, a[href], .h2-btn)',
+    '[role="dialog"] :is(button, select, a[href], .h2-btn)',
+    '#playerMain :is(button, select, textarea, a[href], .h2-btn)'
+  ];
+  if (shell == null) {
+    out.push({ file: 'assets/h2dev-shell.css', line: 0, val: '', txt: '[9b] Khong doc duoc file' });
+  } else {
+    const start = shell.indexOf('10b. TOUCH TARGET 44px');
+    const blk = start < 0 ? '' : shell.slice(start, shell.indexOf('9. TOAST CHUAN', start) > 0 ? shell.indexOf('9. TOAST CHUAN', start) : undefined);
+    if (!blk) out.push({ file: 'assets/h2dev-shell.css', line: 0, val: '10b', txt: '[9b] Mat block 10b TOUCH TARGET 44px' });
+    for (const sel of REQUIRED) {
+      if (blk.indexOf(sel) < 0) out.push({ file: 'assets/h2dev-shell.css', line: 0, val: sel, txt: '[9b] Block 10b thieu vung phu ' + sel });
+    }
+    if (blk && !/min-height\s*:\s*var\(--h2-touch-min\)/.test(blk)) out.push({ file: 'assets/h2dev-shell.css', line: 0, val: 'min-height', txt: '[9b] Block 10b khong dat min-height: var(--h2-touch-min)' });
+  }
+  return out;
+}
+
 const SECTIONS = [
   ['[1] Token VONG LAP (--x: var(--x, ...)) — lam gia tri RONG (SCAR: body mat nen)', 'loopToken'],
   ['[2] Alias token TRUNG CHUC NANG ngoai viddar.css/h2dev-tokens.css', 'aliasToken'],
@@ -579,7 +633,8 @@ const SECTIONS = [
   ['[5] Modal thieu bottom-sheet o 1 trong 2 rule (index.html)', 'bottomSheet'],
   ['[6] CSS chet (#raw-channel-modal da xoa)', 'deadCss'],
   ['[7] Token CHET (dinh nghia trong :root nhung 0 lan dung — SCAR-024)', 'deadToken'],
-  ['[8] Touch target < 44px (WCAG 2.5.5 / 2.5.8)', 'touchTarget']
+  ['[8] Touch target < 44px (WCAG 2.5.5 / 2.5.8)', 'touchTarget'],
+  ['[9] Bottom-nav du cot + phu 44px toan control (2026-09-30)', 'touchCoverage']
 ];
 
 function report(v) {
@@ -613,6 +668,7 @@ function probe() {
   const coreTarget = path.join(ROOT, 'assets/h2dev-core.js');
   const viddarTarget = path.join(ROOT, 'assets/viddar.css');
   const lessonRowTarget = path.join(ROOT, 'assets/h2dev-components-lesson-row.css');
+  const shellTarget = path.join(ROOT, 'assets/h2dev-shell.css');
 
   const origCss = fs.readFileSync(cssTarget, 'utf8');
   const origHtml = fs.readFileSync(htmlTarget, 'utf8');
@@ -621,6 +677,7 @@ function probe() {
   const origCore = fs.readFileSync(coreTarget, 'utf8');
   const origViddar = fs.readFileSync(viddarTarget, 'utf8');
   const origLessonRow = fs.readFileSync(lessonRowTarget, 'utf8');
+  const origShell = fs.readFileSync(shellTarget, 'utf8');
 
   const injections = [
     {
@@ -753,6 +810,20 @@ function probe() {
       restore: () => fs.writeFileSync(learnTarget, origLearn),
       count: (v) => v.touchTarget.length,
       verify: () => fs.readFileSync(learnTarget, 'utf8') !== origLearn
+    },
+    {
+      name: '[9a] .vd-bottom-nav quay lai repeat(5) (6 nut)',
+      apply: () => fs.writeFileSync(viddarTarget, origViddar.replace('grid-template-columns: none !important;', 'grid-template-columns: repeat(5, minmax(0, 1fr)) !important;')),
+      restore: () => fs.writeFileSync(viddarTarget, origViddar),
+      count: (v) => v.touchCoverage.length,
+      verify: () => fs.readFileSync(viddarTarget, 'utf8') !== origViddar
+    },
+    {
+      name: '[9b] xoa vung phu 44px cua modal',
+      apply: () => fs.writeFileSync(shellTarget, origShell.replace('[role="dialog"] :is(button, select, a[href], .h2-btn),', '')),
+      restore: () => fs.writeFileSync(shellTarget, origShell),
+      count: (v) => v.touchCoverage.length,
+      verify: () => fs.readFileSync(shellTarget, 'utf8') !== origShell
     }
   ];
 
@@ -780,7 +851,8 @@ function probe() {
     fs.readFileSync(learnTarget, 'utf8') === origLearn &&
     fs.readFileSync(coreTarget, 'utf8') === origCore &&
     fs.readFileSync(viddarTarget, 'utf8') === origViddar &&
-    fs.readFileSync(lessonRowTarget, 'utf8') === origLessonRow;
+    fs.readFileSync(lessonRowTarget, 'utf8') === origLessonRow &&
+    fs.readFileSync(shellTarget, 'utf8') === origShell;
 
   console.log('  Phuc hoi byte-identical: ' + (identical ? 'OK' : 'THAT BAI!'));
   console.log('  KET QUA PROBE: ' + caught + '/' + injections.length + ' luot bat duoc loi tiem vao');

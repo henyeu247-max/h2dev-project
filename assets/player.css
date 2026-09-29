@@ -211,6 +211,12 @@
   .app-top { padding: 0 12px; height: 56px; }
   .app-top .brand-mark, .app-top .text-sm { display: none; }
   #btnTheater { display: none !important; }
+  /* FIX 2026-09-30: do @390px header 'Quay lai' + 'Trang chu' bi xuong 2 dong, 'H2DEV Studio' bi cat.
+     'Trang chu' TRUNG chuc nang voi logo .h2-shell-brand (cung href='/', vung bam 44px) -> an tren mobile;
+     tieu de trang tinh an; nut chu khong xuong dong. */
+  .app-top a.btn-ghost[href="/"] { display: none; }
+  .app-top .h2-shell-title--page { display: none; }
+  .app-top .btn-ghost { white-space: nowrap; }
   .theater-wrapper #theaterContainer { padding: 8px 8px 0 !important; }
   .player-main { padding: 10px 10px 32px !important; }
   #ptitle { font-size: 18px !important; line-height: 1.35 !important; }
@@ -296,3 +302,7 @@
   display: inline-flex;
   align-items: center;
 }
+
+/* FIX 2026-09-30: .badge (viddar.css) ep text-transform:uppercase -> ma SKU 'VIDEO-e91589' hien thanh
+   'VIDEO-E91589' (sai dinh danh, copy/tim kiem lech). Badge chua ma dinh danh giu nguyen chu. */
+.badge.badge-sku { text-transform: none; }

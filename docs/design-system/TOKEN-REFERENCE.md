@@ -8,7 +8,7 @@
 
 - Nguon chan ly: **MOI file .css SONG (loai tru: _backup/, _archive/, node_modules/, data/, va file build assets/tailwind.css)**
 - So file CSS quet: **10**
-- So file nguon dem luot dung: **167** (`.css`/`.js`/`.mjs`/`.html`)
+- So file nguon dem luot dung: **176** (`.css`/`.js`/`.mjs`/`.html`)
 - Tong so token khai bao: **98**
 
 ## Bai hoc SCAR-024
@@ -22,14 +22,14 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--bg` | `#050505` | `assets/viddar.css:52` | 16 |
+| `--bg` | `#050505` | `assets/viddar.css:52` | 17 |
 | `--bg-subtle` | `#0a0a0a` | `assets/viddar.css:53` | 7 |
 
 ### `border` (2 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--border` | `#222` | `assets/viddar.css:56` | 83 |
+| `--border` | `#222` | `assets/viddar.css:56` | 90 |
 | `--border-strong` | `#333` | `assets/viddar.css:57` | 27 |
 
 ### `bottom` (1 token)
@@ -42,7 +42,7 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--brand` | `#E2023A` | `assets/viddar.css:63` | 58 |
+| `--brand` | `#E2023A` | `assets/viddar.css:63` | 59 |
 | `--brand-fg` | `#fff` | `assets/viddar.css:65` | 6 |
 | `--brand-hover` | `#ff1a4d` | `assets/viddar.css:64` | 15 |
 | `--brand-ink` | `#ff8095` | `assets/viddar.css:66` | 22 |
@@ -59,7 +59,7 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--fg` | `#f0f0f0` | `assets/viddar.css:59` | 53 |
+| `--fg` | `#f0f0f0` | `assets/viddar.css:59` | 54 |
 | `--fg-2` | `#dfdfdf` | `assets/viddar.css:60` | 36 |
 | `--fg-faint` | `#9ca3af` | `assets/viddar.css:62` | 11 |
 | `--fg-muted` | `#a9a9a9` | `assets/viddar.css:61` | 46 |
@@ -186,7 +186,7 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-touch-min` | `44px` | `assets/h2dev-tokens.css:65` | 15 |
+| `--h2-touch-min` | `44px` | `assets/h2dev-tokens.css:65` | 19 |
 
 ### `h2-translate` (1 token)
 
@@ -198,14 +198,14 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-z-base` | `1` | `assets/h2dev-tokens.css:101` | 7 |
-| `--h2-z-drawer` | `60` | `assets/h2dev-tokens.css:104` | 4 |
-| `--h2-z-fixed` | `40` | `assets/h2dev-tokens.css:103` | 3 |
-| `--h2-z-modal` | `1000` | `assets/h2dev-tokens.css:107` | 3 |
-| `--h2-z-modal-top` | `1010` | `assets/h2dev-tokens.css:108` | 4 |
-| `--h2-z-sticky` | `20` | `assets/h2dev-tokens.css:102` | 3 |
-| `--h2-z-toast` | `300` | `assets/h2dev-tokens.css:106` | 3 |
-| `--h2-z-topbar-mobile` | `100` | `assets/h2dev-tokens.css:105` | 6 |
+| `--h2-z-base` | `1` | `assets/h2dev-tokens.css:104` | 8 |
+| `--h2-z-drawer` | `60` | `assets/h2dev-tokens.css:107` | 4 |
+| `--h2-z-fixed` | `40` | `assets/h2dev-tokens.css:106` | 3 |
+| `--h2-z-modal` | `1000` | `assets/h2dev-tokens.css:110` | 3 |
+| `--h2-z-modal-top` | `1010` | `assets/h2dev-tokens.css:111` | 4 |
+| `--h2-z-sticky` | `20` | `assets/h2dev-tokens.css:105` | 3 |
+| `--h2-z-toast` | `1020` | `assets/h2dev-tokens.css:109` | 3 |
+| `--h2-z-topbar-mobile` | `100` | `assets/h2dev-tokens.css:108` | 6 |
 
 ### `hairline` (1 token)
 
@@ -276,7 +276,7 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--surface` | `#0f0f0f` | `assets/viddar.css:54` | 71 |
+| `--surface` | `#0f0f0f` | `assets/viddar.css:54` | 76 |
 | `--surface-2` | `#1a1a1a` | `assets/viddar.css:55` | 55 |
 
 ### `topbar` (1 token)

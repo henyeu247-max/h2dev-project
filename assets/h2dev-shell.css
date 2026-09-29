@@ -427,7 +427,10 @@ a.h2-shell-brand .vd-wordmark {
   [role="dialog"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="hidden"]),
   #playerMain :is(button, select, textarea, a[href], .h2-btn),
   #playerMain input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="hidden"]),
-  .h2-shell-brand {
+  .h2-shell-brand,
+  /* FIX 2026-09-30 (do tren PRODUCTION): nut 'Xem tiep' cua banner Tiep tuc hoc (learn) chi hien khi
+     co lich su xem -> local khong co trang thai nay nen lan quet dau bo sot (34px). Phai quet theo TRANG THAI. */
+  .resume-go {
     min-height: var(--h2-touch-min);
   }
   /* a.row-title (learn) DUOC MIEN co chu dich: do N/N 140/140 row co a.row-thumb CUNG href, kich thuoc

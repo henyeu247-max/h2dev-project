@@ -12,6 +12,7 @@
 - **Data/gate:** `ngach-xanh.phamViKho` 39/126 qua rule mới trong `sync-counts.js`; luật validate TERMINATED: giữ folderName lịch sử nếu thư mục dossier tồn tại (3/3 tồn tại).
 - **Gate-p2 [9]** (bottom-nav đủ cột + vùng phủ 44px) — PROBE 18/18.
 - Cache-bust `?v=20260930-uifix1`, SW cache `h2dev-shell-v20260930-uifix1`.
+- **Đợt 2 (sau deploy, đo trên production):** `.resume-go` 34px → 44px; `.row-fav` nâng lớp trên `.watched-badge` (trạng thái đã xem + yêu thích). Quét lại có trạng thái giả lập: learn 440/0, video 122/0, tổng quan 27/0. Cache `?v=20260930-uifix2`.
 
 ### Check-Pass
 - validate PASS · sync-counts --check OK · sync-tokens --check OK · gate-icons/typography/p1/p2 ALL PASS · guard PASS · check-ui-classes OK (1 cảnh báo `.jsRowClass` = biến truyền vào, đã xác minh tay).

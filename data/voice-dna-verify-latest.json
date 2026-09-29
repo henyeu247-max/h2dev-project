@@ -2,9 +2,24 @@
  "schema": "h2dev.voice-dna-verify.v1",
  "report": [
   {
+   "rawId": "GEN_100",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_100.mp3"
+  },
+  {
+   "rawId": "GEN_1001",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_1001.mp3"
+  },
+  {
    "rawId": "GEN_123p3k",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_123p3k.mp3"
+  },
+  {
+   "rawId": "GEN_16",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_16.mp3"
   },
   {
    "rawId": "GEN_22",
@@ -15,6 +30,16 @@
    "rawId": "GEN_556",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_556.mp3"
+  },
+  {
+   "rawId": "GEN_88",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_88.mp3"
+  },
+  {
+   "rawId": "GEN_AnNhienChuyenDoiBinhDi",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_AnNhienChuyenDoiBinhDi.mp3"
   },
   {
    "rawId": "GEN_asuhetsudukumichi",
@@ -32,9 +57,19 @@
    "mp3": "assets/voice-samples/GEN_biblemadeclear26.mp3"
   },
   {
+   "rawId": "GEN_buddhamind60s",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_buddhamind60s.mp3"
+  },
+  {
    "rawId": "GEN_Camnhonvietsub",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_Camnhonvietsub.mp3"
+  },
+  {
+   "rawId": "GEN_CandyVengeance",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_CandyVengeance.mp3"
   },
   {
    "rawId": "GEN_ChuXinDiaoYu01",
@@ -52,9 +87,29 @@
    "mp3": "assets/voice-samples/GEN_desidilse.mp3"
   },
   {
+   "rawId": "GEN_DoctorDrLeeh9t",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_DoctorDrLeeh9t.mp3"
+  },
+  {
+   "rawId": "GEN_gockhuatnhansinhofficial",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_gockhuatnhansinhofficial.mp3"
+  },
+  {
    "rawId": "GEN_handofgod",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_handofgod.mp3"
+  },
+  {
+   "rawId": "GEN_HDVietsubh7u",
+   "status": "not-golden",
+   "mp3": "assets/voice-samples/GEN_HDVietsubh7u.mp3"
+  },
+  {
+   "rawId": "GEN_HinognaKaalamanYT",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_HinognaKaalamanYT.mp3"
   },
   {
    "rawId": "GEN_IjinNoNouri",
@@ -85,6 +140,11 @@
    "rawId": "GEN_KapitalKompassUS",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_KapitalKompassUS.mp3"
+  },
+  {
+   "rawId": "GEN_keodeovietsub",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_keodeovietsub.mp3"
   },
   {
    "rawId": "GEN_kienthucthanhoc9",
@@ -122,6 +182,16 @@
    "mp3": "assets/voice-samples/GEN_m2y.mp3"
   },
   {
+   "rawId": "GEN_militarytactics113",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_militarytactics113.mp3"
+  },
+  {
+   "rawId": "GEN_MindfulPawsPsychology",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_MindfulPawsPsychology.mp3"
+  },
+  {
    "rawId": "GEN_n7u",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_n7u.mp3"
@@ -130,6 +200,11 @@
    "rawId": "GEN_quietstrength88",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_quietstrength88.mp3"
+  },
+  {
+   "rawId": "GEN_redvoices90",
+   "status": "not-golden",
+   "mp3": "assets/voice-samples/GEN_redvoices90.mp3"
   },
   {
    "rawId": "GEN_s1s",
@@ -142,6 +217,16 @@
    "mp3": "assets/voice-samples/GEN_scripturemadesimpleyt.mp3"
   },
   {
+   "rawId": "GEN_Socnaureview2026",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_Socnaureview2026.mp3"
+  },
+  {
+   "rawId": "GEN_thecoldwartales",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_thecoldwartales.mp3"
+  },
+  {
    "rawId": "GEN_theopenscriptures",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_theopenscriptures.mp3"
@@ -152,14 +237,29 @@
    "mp3": "assets/voice-samples/GEN_Tieulongreview2026.mp3"
   },
   {
+   "rawId": "GEN_TRESube156",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_TRESube156.mp3"
+  },
+  {
    "rawId": "GEN_trihueconhanvn",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_trihueconhanvn.mp3"
   },
   {
+   "rawId": "GEN_tritueconhanradio",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_tritueconhanradio.mp3"
+  },
+  {
    "rawId": "GEN_x050001b666",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_x050001b666.mp3"
+  },
+  {
+   "rawId": "GEN_x1393215f20",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x1393215f20.mp3"
   },
   {
    "rawId": "GEN_x25dda0d83c",
@@ -175,6 +275,11 @@
    "rawId": "GEN_x44c36d87c5",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_x44c36d87c5.mp3"
+  },
+  {
+   "rawId": "GEN_x4b545d8f45",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x4b545d8f45.mp3"
   },
   {
    "rawId": "GEN_x5eebc2ae04",
@@ -207,6 +312,11 @@
    "mp3": "assets/voice-samples/GEN_x994cc698d8.mp3"
   },
   {
+   "rawId": "GEN_x9ccdfa9b05",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_x9ccdfa9b05.mp3"
+  },
+  {
    "rawId": "GEN_xa7c4767e6c",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_xa7c4767e6c.mp3"
@@ -227,6 +337,11 @@
    "mp3": "assets/voice-samples/GEN_xcf9fb4dad3.mp3"
   },
   {
+   "rawId": "GEN_xd0cbefe9cf",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xd0cbefe9cf.mp3"
+  },
+  {
    "rawId": "GEN_xdd57766312",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_xdd57766312.mp3"
@@ -235,6 +350,16 @@
    "rawId": "GEN_xed9d2082b0",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_xed9d2082b0.mp3"
+  },
+  {
+   "rawId": "GEN_xf0a9e51372",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xf0a9e51372.mp3"
+  },
+  {
+   "rawId": "GEN_xf6f1c20121",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_xf6f1c20121.mp3"
   },
   {
    "rawId": "GEN_xf9dff2d135",

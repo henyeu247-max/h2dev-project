@@ -376,7 +376,15 @@ const server = http.createServer(async (req,res)=>{
 
   let urlPath;
   try {
-    urlPath = decodeURIComponent(req.url.split('?')[0]);
+    // RFC 7230 §5.3.2: client sau proxy (vd Firefox + system proxy, MITM) gui
+    // ABSOLUTE-FORM ("GET http://host/path HTTP/1.1") thay vi origin-form.
+    // Server PHAI chap nhan ca 2 dang — strip scheme+host, lay path.
+    // Scar 29/09: Firefox qua system proxy gui absolute-form tu request thu 2
+    // tren connection -> stat fail -> 404 toan bo asset -> app chet tren Firefox.
+    let rawUrl = req.url;
+    const absMatch = rawUrl.match(/^https?:\/\/[^/]+(\/.*)$/i);
+    if (absMatch) rawUrl = absMatch[1];
+    urlPath = decodeURIComponent(rawUrl.split('?')[0]);
   } catch (err) {
     res.writeHead(400, {
       'Content-Type': 'text/plain; charset=utf-8',

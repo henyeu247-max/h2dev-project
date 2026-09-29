@@ -181,7 +181,8 @@ CREATE VIRTUAL TABLE search_fts USING fts5(
     entity_id,
     entity_type,
     title,
-    content_text
+    content_text,
+    folded_text
 );
 
 -- Indices for rapid traversal
@@ -331,10 +332,15 @@ const insertTimestamp = db.prepare(`
   VALUES (?, ?, ?, ?)
 `);
 
-const insertFts = db.prepare(`
-  INSERT INTO search_fts (entity_id, entity_type, title, content_text)
-  VALUES (?, ?, ?, ?)
+/* 2026-09-30: cot folded_text = (title + content) bo dau tieng Viet + d/D -> tim khong dau ra ket qua co dau.
+   unicode61 mac dinh chi bo 1 phan dau (do: "nguon" 0 / "nguồn" 30, "nhat" 0 / "Nhật" 50, "duoc" 0).
+   Them o CUOI de chi so cot cu (snippet(search_fts, 3, ...)) khong doi. */
+function foldVi(s) { return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase(); }
+const insertFtsRaw = db.prepare(`
+  INSERT INTO search_fts (entity_id, entity_type, title, content_text, folded_text)
+  VALUES (?, ?, ?, ?, ?)
 `);
+const insertFts = { run: (id, type, title, content) => insertFtsRaw.run(id, type, title, content, foldVi((title || '') + ' ' + (content || ''))) };
 
 db.exec('BEGIN TRANSACTION;');
 let lessonCount = 0;

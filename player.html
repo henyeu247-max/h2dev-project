@@ -14,14 +14,14 @@
 <link rel="preload" as="font" href="assets/fonts/jetbrains-mono-latin.woff2" type="font/woff2" crossorigin>
 <link rel="preload" as="font" href="assets/fonts/jetbrains-mono-vietnamese.woff2" type="font/woff2" crossorigin>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
-<link rel="stylesheet" href="/assets/tailwind.css?v=20260930-uifix26">
-<link rel="stylesheet" href="/assets/viddar.css?v=20260930-uifix26">
-<link rel="stylesheet" href="/assets/player.css?v=20260930-uifix26">
-<link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260930-uifix26">
-<link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260930-uifix26">
-<link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260930-uifix26">
-<link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260930-uifix26">
-<link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260930-uifix26">
+<link rel="stylesheet" href="/assets/tailwind.css?v=20260930-uifix35">
+<link rel="stylesheet" href="/assets/viddar.css?v=20260930-uifix35">
+<link rel="stylesheet" href="/assets/player.css?v=20260930-uifix35">
+<link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20260930-uifix35">
+<link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20260930-uifix35">
+<link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20260930-uifix35">
+<link rel="stylesheet" href="/assets/h2dev-icons.css?v=20260930-uifix35">
+<link rel="stylesheet" href="/assets/h2dev-shell.css?v=20260930-uifix35">
 <meta name="description" content="H2DEV — xem video khóa học.">
 <meta name="theme-color" content="#050505">
 </head>
@@ -216,13 +216,13 @@
 <div id="a11y-status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 <!-- N11 FIX (2026-09-23): nap h2dev-core.js (tang nen dung chung) TRUOC player-main.js.
      Truoc day player.html KHONG nap -> phai tu che esc()/showToast(). -->
-<script src="/assets/h2dev-core.js?v=20260930-uifix26"></script>
-<script src="assets/app/player-main.js?v=20260930-uifix26"></script>
+<script src="/assets/h2dev-core.js?v=20260930-uifix35"></script>
+<script src="assets/app/player-main.js?v=20260930-uifix35"></script>
 
 <!-- Doc Reader Modal -->
 <div id="docModal" role="dialog" aria-modal="true" aria-label="Tài liệu" tabindex="-1" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:1.25rem;">
-  <div style="position:relative; width:100%; max-width:860px; max-height:88vh; display:flex; flex-direction:column; background-color:var(--surface); border:1px solid #374151; border-radius:1rem; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); overflow:hidden;">
-    <div style="display:flex; align-items:center; justify-content:space-between; padding:0.875rem 1.25rem; border-bottom:1px solid #374151; background:rgba(31,41,55,0.85); flex-shrink:0;">
+  <div style="position:relative; width:100%; max-width:860px; max-height:88vh; display:flex; flex-direction:column; background-color:var(--surface); border:1px solid var(--border-strong); border-radius:1rem; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); overflow:hidden;">
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:0.875rem 1.25rem; border-bottom:1px solid var(--border-strong); background:var(--surface-2); flex-shrink:0;">
       <div style="display:flex; align-items:center; gap:0.625rem; min-width:0; overflow:hidden;">
         <span class="h2-icon h2-icon--20" data-h2i="file-text" aria-hidden="true"></span>
         <!-- P3.7 (2026-09-24): inline style cu dung don vi rem (~15.2px) nam NGOAI thang 9 bac.
@@ -230,16 +230,16 @@
         <h3 id="docModalTitle" style="font-size:14px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Tài liệu</h3>
       </div>
       <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
-        <a id="docModalRawLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-press" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; text-decoration:none; display:inline-flex; align-items:center; gap:0.25rem;">
+        <a id="docModalRawLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-press" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.625rem; background:var(--surface-2); color:var(--fg); border:1px solid var(--border-strong); text-decoration:none; display:inline-flex; align-items:center; gap:0.25rem;">
           <span class="h2-icon h2-icon--14" data-h2i="external-link" aria-hidden="true"></span><span>Mở tab mới</span>
         </a>
-        <button type="button" data-action="copy-doc" class="btn-press cursor-pointer" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.625rem; background:#374151; color:#e5e7eb; border:1px solid #4b5563; display:inline-flex; align-items:center; gap:0.25rem;">
+        <button type="button" data-action="copy-doc" class="btn-press cursor-pointer" style="font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.625rem; background:var(--surface-2); color:var(--fg); border:1px solid var(--border-strong); display:inline-flex; align-items:center; gap:0.25rem;">
           <span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span><span>Sao chép</span>
         </button>
-        <button type="button" data-action="close-doc" class="btn-press cursor-pointer" style="font-size: 14px; padding:0.25rem 0.6rem; border-radius:0.625rem; background:#374151; color:#9ca3af; border:1px solid #4b5563; display:inline-flex; align-items:center;" aria-label="Đóng tài liệu"><span class="h2-icon h2-icon--16" data-h2i="x" aria-hidden="true"></span></button>
+        <button type="button" data-action="close-doc" class="btn-press cursor-pointer" style="font-size: 14px; padding:0.25rem 0.6rem; border-radius:0.625rem; background:var(--surface-2); color:#9ca3af; border:1px solid var(--border-strong); display:inline-flex; align-items:center;" aria-label="Đóng tài liệu"><span class="h2-icon h2-icon--16" data-h2i="x" aria-hidden="true"></span></button>
       </div>
     </div>
-    <div id="docModalBody" style="padding:1.5rem; overflow-y:auto; max-height:calc(88vh - 65px); color:#e5e7eb; line-height:1.65; font-size: 14px;">
+    <div id="docModalBody" style="padding:1.5rem; overflow-y:auto; max-height:calc(88vh - 65px); color:var(--fg); line-height:1.65; font-size: 14px;">
       <div style="text-align:center; color:#9ca3af; padding:3rem 0;">Đang tải tài liệu...</div>
     </div>
   </div>

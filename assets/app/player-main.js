@@ -113,7 +113,7 @@ if(btnBack) btnBack.onclick = goBack;
 (function initBackToTop(){
   const btt = document.getElementById('btn-back-to-top');
   if(!btt) return;
-  btt.onclick = function(){ try { window.scrollTo({top:0, behavior:'smooth'}); } catch(e){ window.scrollTo(0,0); } };
+  btt.onclick = function(){ try { window.scrollTo({top:0, behavior:(window.H2Core && H2Core.scrollBehavior ? H2Core.scrollBehavior() : 'smooth')}); } catch(e){ window.scrollTo(0,0); } };
   const onScroll = function(){
     const top = Math.max(window.scrollY || 0, document.documentElement.scrollTop || 0, document.body.scrollTop || 0);
     if (top > 320) btt.classList.add('is-visible');
@@ -784,7 +784,7 @@ window.addEventListener('keydown', (e)=>{
           const activeEl = document.getElementById('tr-seg-' + curIndex);
           if (activeEl && !userIsScrolling) {
             const topPos = activeEl.offsetTop - tList.offsetTop - (tList.clientHeight / 2) + (activeEl.clientHeight / 2);
-            tList.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+            tList.scrollTo({ top: Math.max(0, topPos), behavior: (window.H2Core && H2Core.scrollBehavior ? H2Core.scrollBehavior() : 'smooth') });
           }
         }
       }
@@ -957,9 +957,11 @@ async function viewDocInModal(filePath, title) {
   titleEl.textContent = title || filePath.split('/').pop();
   rawLink.href = filePath;
   bodyEl.innerHTML = '<div class="text-center text-gray-400 py-12 flex flex-col items-center gap-3"><div class="w-6 h-6 border-2 border-brand-500 border-t-transparent rounded-full animate-spin"></div><div>Đang tải tài liệu…</div></div>';
-  modal.style.display = 'flex';
   modal._prevActiveElement = document.activeElement;
+  modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
+  /* FULL PASS 2026-09-30: dua focus vao hop thoai (do: truoc day focus o lai nut mo phia sau). */
+  try { modal.focus({ preventScroll: true }); } catch (e) {}
 
   try {
     const res = await fetch(filePath);
@@ -980,6 +982,8 @@ function closeDocModal() {
   const modal = document.getElementById('docModal');
   if (modal) {
     modal.style.display = 'none';
+    /* FULL PASS 2026-09-30: mo thi khoa cuon (overflow hidden) nhung dong KHONG mo lai -> trang dung sau khi xem tai lieu. */
+    document.body.style.overflow = '';
     if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
       try { modal._prevActiveElement.focus(); } catch (e) {}
     }
@@ -1003,6 +1007,12 @@ function trapFocus(container, e) {
   if (!focusables.length) return;
   const first = focusables[0];
   const last = focusables[focusables.length - 1];
+  /* FULL PASS 2026-09-30: focus dang o NGOAI modal (vd sau khi bam nut mo) -> keo vao trong (truoc day Tab di ra trang ben duoi). */
+  if (!container.contains(document.activeElement) || document.activeElement === container) {
+    e.preventDefault();
+    (e.shiftKey ? last : first).focus();
+    return;
+  }
   if (e.shiftKey && document.activeElement === first) {
     e.preventDefault();
     last.focus();

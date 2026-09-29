@@ -335,6 +335,7 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
 ### [SCAR-040] Bẫy Đo Touch Target Bằng Khung Hình Hoặc Danh Sách Selector (2026-09-30)
 - **Hiện tượng:** gate-p2 [8] PASS (3 selector) trong khi runtime @375px có hàng chục control 28–40px; lần đo đầu không cuộn phần tử vào giữa màn hình → header sticky che làm số đo sai (vd `.row-fav` báo 44×30 nhưng thực 44×44).
 - **Luật:** đo bằng hit-test `elementFromPoint` sau `scrollIntoView({block:'center'})`, quét N/N control (button, a[href] không inline, input, select, textarea, role=tab/button) trên mọi route + mọi modal. Link chữ inline và control có "equivalent control" cùng href ≥44px (vd `a.row-title` ↔ `a.row-thumb` 140/140) được miễn, phải ghi lý do.
+- **Bổ sung sau deploy 30/09 (đo trên PRODUCTION):** quét learn trên prod lộ `.resume-go` 34px — nút chỉ hiện khi có lịch sử xem, local trống trạng thái nên bỏ sót; quét lại với trạng thái giả lập (recent + watched + favorite) lộ thêm `.row-fav.is-fav` bị `.watched-badge` (z 1) đè. **Luật:** quét touch phải chạy CẢ trạng thái rỗng lẫn trạng thái có dữ liệu người dùng (localStorage recent/watched/fav, filter, modal).
 
 ### [SCAR-041] Bẫy Luật Validate Giả Định Thứ Tự Sự Kiện (TERMINATED ⇒ không có folderName) (2026-09-30)
 - **Hiện tượng:** validate báo lỗi RAW-143/145/152 "TERMINATED nhưng còn folderName". Đo thật: 3 kênh được crawl deep TRƯỚC khi bị gỡ (404 ngày 29/09), thư mục `data/raw-channels-deep/<folderName>` tồn tại 3/3 và `main.js` dùng folderName để mở dossier.

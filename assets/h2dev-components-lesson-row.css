@@ -79,7 +79,7 @@
 /* FIX 2026-09-30 (UI-09): do hit-test N/N 140 .row-fav @375px: 139/140 dat 44x44, rieng VIDEO-5d54d0
    bi .row-time (ve SAU trong DOM) de len nua duoi vung cham ::after -> con 44x33. Nang lop cua nut len tren
    cac nhan khong tuong tac (row-seq/row-time/watchbar). */
-.row-fav { z-index: var(--h2-z-base); }   /* token (gate-p1 [2]): 1 > auto cua row-seq/row-time */
+.row-fav { z-index: calc(var(--h2-z-base) + 1); }   /* token (gate-p1 [2]): tren row-seq/row-time (auto) VA .watched-badge (z 1) — do lai theo trang thai da xem + yeu thich */
 .row-fav.is-fav { color: var(--brand-ink); }
 .row-watchbar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,.15); }
 .row-watchbar i { display: block; height: 100%; background: var(--warning); }

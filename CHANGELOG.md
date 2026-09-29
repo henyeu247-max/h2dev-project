@@ -1,4 +1,17 @@
-﻿## 2026-09-30 — UI FIX-ALL: BOTTOM-NAV P0 + UI-01/03/09/11/14 + SỐ KÊNH + GATE [9]
+﻿## 2026-09-30 — DATA AUDIT E2E: ĐỒNG BỘ TOOLING/SIZE/DOC + GỠ CỜ AUDIO STALE VIDEO-f59aa7
+
+### Đo (audit N/N chỉ-đọc 6.293 phép + gate + e2e + ffprobe 140/140)
+- JSON 1.142/1.143 parse được (`manifest.json` chỉ có BOM). Chéo tham chiếu videos↔catalog↔catalog_full↔modules 140/140; media 140/140 tồn tại và khớp catalog (thời lượng/độ phân giải/có hình+audio); thumb 140/140; sha256 ảnh raw 156/156; dossier 156/156; nhạc 49/49 file + size; DB `h2dev_master.db`/`intelligence.db` integrity ok, lessons 140 = videos.json, documents 157 = tai-lieu-full.json.
+- Lệch THẬT (đã sửa, commit `7e3a24f`): gate-shell bảng kỳ vọng index `nAriaControls` 2→1 (UI-03 cố ý bỏ `role=tab` khỏi bottom-nav); `token-manifest.usageSources` 178→177 (98/98 token không đổi); size `VIDEO-f59aa7` trong `videos.json`/`catalog_full`/`modules`/`catalog(size_mb 58→58.8)` (file thay 22/09); TREE.md/README ghi 38 track → 49 (328 MB). Ghi SCAR-043.
+- Không phải lỗi (luật audit quá chặt, đã triage): `dead` chỉ có ở kênh chết; 150 handle vs 149 channelId (1 kênh đổi handle); SKU `NOI-BO`/`PILOT-*` là thiết kế; `size_mb` làm tròn.
+
+### Gỡ cờ `VIDEO-f59aa7` (anh duyệt 30/09)
+- Bằng chứng: bản gốc `_backup/20260918-video-f59aa7-original` audio 34.202 packet, decode 2.0s tại giây 1294; bản hiện tại 111.466 packet (chuẩn 111.465), `audit_videos_v2.audio_integrity()` = ok/ok/ok, decode 10.0s. sha256 hai file khác nhau. Registry `data/media_integrity.json` đã `broken_count: 0` từ 22/09 03:04 và UI chỉ đọc `media_integrity` ⇒ người xem không còn thấy cảnh báo từ 22/09; cờ `audio_integrity/media_issues/needs_audio_recover/gap_note` (22/09 20:14) là dư thừa suy ra từ báo cáo audit cũ 18/09.
+- Gỡ 4 cờ ở `videos.json`, `catalog.json`, `catalog_full.json`; đặt lại `media_audit_date/updated`. `media-review-queue.json`: B7 của f59aa7 xóa, hard_fail 2→1, review_only 39→40 (giữ A8d: transcript tạo 18/09 trước khi thay file).
+- Còn mở: (1) chạy lại `py scripts/transcribe_sku.py VIDEO-f59aa7` để có transcript khớp audio mới; (2) `h2dev_master.db` `lessons.size_bytes` của f59aa7 vẫn 60.794.706 — cần `build_master_db.js`; (3) `VIDEO-8e0275` audio gần rỗng vẫn mở.
+- Backup: `_backup/20260930-data-e2e-fix/`, `_backup/20260930-f59aa7-unflag/` (SHA256SUMS).
+
+## 2026-09-30 — UI FIX-ALL: BOTTOM-NAV P0 + UI-01/03/09/11/14 + SỐ KÊNH + GATE [9]
 
 ### Sửa (đo runtime local :8899 trước/sau)
 - **P0 bottom-nav:** `viddar.css` `repeat(5)` trong khi render 6 nút → nút "Khác" ở y=833–877 @844px (ngoài màn hình, mất lối vào 5 tab). Nay cột tự sinh; 9 bề ngang 6/6 nút trong viewport.

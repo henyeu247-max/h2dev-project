@@ -17,6 +17,7 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parents[1]
 FFMPEG = ROOT / "_tools" / "ffmpeg" / "ffmpeg.exe"
+DENO = ROOT / "_tools" / "deno.exe"
 FFPROBE = ROOT / "_tools" / "ffmpeg" / "ffprobe.exe"
 TMP = ROOT / "assets" / "voice-samples-tmp"
 OUT_DIR = ROOT / "assets" / "voice-samples"
@@ -191,6 +192,7 @@ def main():
                     break
                 dl = sh([sys.executable, "-m", "yt_dlp", "-f", "bestaudio/best",
                          "--ffmpeg-location", str(FFMPEG.parent),
+                         "--js-runtimes", f"deno:{DENO}",
                          "--socket-timeout", "15", "--retries", "2",
                          "--download-sections", "*00:30-02:30", "-x", "--audio-format", "m4a",
                          "-o", str(tmp_audio), "--no-playlist", "--quiet",

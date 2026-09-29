@@ -232,6 +232,11 @@
    "mp3": "assets/voice-samples/GEN_LamNgoqz3bw.mp3"
   },
   {
+   "rawId": "GEN_LightYogawithNatalie",
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_LightYogawithNatalie.mp3"
+  },
+  {
    "rawId": "GEN_lilliputhistory",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_lilliputhistory.mp3"
@@ -720,6 +725,16 @@
    "rawId": "RAW-034",
    "status": "ok",
    "mp3": "assets/voice-samples/RAW-034.mp3"
+  },
+  {
+   "rawId": "RAW-035",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-035.mp3"
+  },
+  {
+   "rawId": "RAW-037",
+   "status": "ok",
+   "mp3": "assets/voice-samples/RAW-037.mp3"
   },
   {
    "rawId": "RAW-038",

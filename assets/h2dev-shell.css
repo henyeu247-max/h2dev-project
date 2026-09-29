@@ -153,8 +153,13 @@ a.h2-shell-brand .vd-wordmark {
   }
 }
 /* NANG CAP 2026-09-30 (CLS): truoc lan render dau #content rong -> footer nam trong man hinh roi bi day xuong
-   (layout-shift 0.069 @375 /rawkenh). Giu cho #content cao bang viewport khi con rong. */
-#content:empty { min-height: 100vh; }
+   (layout-shift 0.069 @375 /rawkenh). Ban dau dung #content:empty{min-height:100vh} nhung trang ngan (/nhac,
+   /chienluoc @768) thi footer lai tu duoi man hinh troi len + thanh cuon bien mat (0.005-0.023). Nay: AN footer
+   khi #content con rong (hien lai = phan tu moi, khong tinh la dich chuyen) + giu cho thanh cuon co dinh
+   (scrollbar-gutter) de be rong trang khong doi khi trang chuyen ngan <-> dai. */
+#panel-root:has(> #content:empty) ~ .h2-shell-footer,
+html.h2-first-render .app-shell > .h2-shell-footer { display: none; }
+html { scrollbar-gutter: stable; }
 
 /* ==========================================================================
    3. BACK-TO-TOP CHUAN — ap cho ca 3 trang (player hien dang THIEU)

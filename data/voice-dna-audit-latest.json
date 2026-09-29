@@ -1,10 +1,10 @@
 {
  "schema": "h2dev.voice-dna-audit.v1",
- "generatedAt": "2026-09-29T15:10:28",
+ "generatedAt": "2026-09-29T16:02:43",
  "target": "-16.0 LUFS ±0.5",
- "total": 217,
- "passed": 215,
- "failed": 2,
+ "total": 237,
+ "passed": 237,
+ "failed": 0,
  "report": [
   {
    "file": "GEN_100.mp3",
@@ -79,6 +79,17 @@
    "dev": 0.44,
    "dur": 45.0,
    "speechDensity": 0.97,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_99.mp3",
+   "rawId": "GEN_99",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 0.935,
    "verdict": [
     "OK"
    ]
@@ -205,6 +216,28 @@
    ]
   },
   {
+   "file": "GEN_everydaythingsexplain.mp3",
+   "rawId": "GEN_everydaythingsexplain",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_forgottenwaystomakemoney.mp3",
+   "rawId": "GEN_forgottenwaystomakemoney",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_gockhuatnhansinhofficial.mp3",
    "rawId": "GEN_gockhuatnhansinhofficial",
    "lufs": -16.45,
@@ -227,14 +260,14 @@
    ]
   },
   {
-   "file": "GEN_HDVietsubh7u.mp3",
-   "rawId": "GEN_HDVietsubh7u",
-   "lufs": -16.42,
-   "dev": 0.42,
+   "file": "GEN_healthlonglife.mp3",
+   "rawId": "GEN_healthlonglife",
+   "lufs": -16.45,
+   "dev": 0.45,
    "dur": 45.0,
-   "speechDensity": 0.578,
+   "speechDensity": 0.867,
    "verdict": [
-    "SPEECH"
+    "OK"
    ]
   },
   {
@@ -244,6 +277,17 @@
    "dev": 0.43,
    "dur": 45.0,
    "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_historyofsimplethings.mp3",
+   "rawId": "GEN_historyofsimplethings",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.872,
    "verdict": [
     "OK"
    ]
@@ -381,12 +425,34 @@
    ]
   },
   {
+   "file": "GEN_l.mp3",
+   "rawId": "GEN_l",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_LamNgoqz3bw.mp3",
    "rawId": "GEN_LamNgoqz3bw",
    "lufs": -16.42,
    "dev": 0.42,
    "dur": 45.0,
    "speechDensity": 0.858,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_lilliputhistory.mp3",
+   "rawId": "GEN_lilliputhistory",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.944,
    "verdict": [
     "OK"
    ]
@@ -447,14 +513,14 @@
    ]
   },
   {
-   "file": "GEN_redvoices90.mp3",
-   "rawId": "GEN_redvoices90",
-   "lufs": -16.45,
-   "dev": 0.45,
+   "file": "GEN_r.mp3",
+   "rawId": "GEN_r",
+   "lufs": -16.17,
+   "dev": 0.17,
    "dur": 45.0,
-   "speechDensity": 0.575,
+   "speechDensity": 0.919,
    "verdict": [
-    "SPEECH"
+    "OK"
    ]
   },
   {
@@ -480,12 +546,45 @@
    ]
   },
   {
+   "file": "GEN_secureteam10.mp3",
+   "rawId": "GEN_secureteam10",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_skywatcherstories.mp3",
+   "rawId": "GEN_skywatcherstories",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_Socnaureview2026.mp3",
    "rawId": "GEN_Socnaureview2026",
    "lufs": -16.45,
    "dev": 0.45,
    "dur": 45.0,
    "speechDensity": 0.982,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_tastinghistory.mp3",
+   "rawId": "GEN_tastinghistory",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
    "verdict": [
     "OK"
    ]
@@ -502,12 +601,56 @@
    ]
   },
   {
+   "file": "GEN_thedishdecoded.mp3",
+   "rawId": "GEN_thedishdecoded",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_thegalaxyhfy.mp3",
+   "rawId": "GEN_thegalaxyhfy",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 0.846,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_theopenscriptures.mp3",
    "rawId": "GEN_theopenscriptures",
    "lufs": -16.43,
    "dev": 0.43,
    "dur": 45.0,
    "speechDensity": 0.849,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_thepassiveexplainer.mp3",
+   "rawId": "GEN_thepassiveexplainer",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 0.797,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_thirdphaseofmoon.mp3",
+   "rawId": "GEN_thirdphaseofmoon",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
    "verdict": [
     "OK"
    ]
@@ -552,6 +695,50 @@
    "dev": 0.45,
    "dur": 45.0,
    "speechDensity": 0.869,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_unexplainediaries.mp3",
+   "rawId": "GEN_unexplainediaries",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_weirdhistory.mp3",
+   "rawId": "GEN_weirdhistory",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_weirdhistoryfood.mp3",
+   "rawId": "GEN_weirdhistoryfood",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.977,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_wherefoodbegan.mp3",
+   "rawId": "GEN_wherefoodbegan",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
    "verdict": [
     "OK"
    ]
@@ -733,6 +920,17 @@
    ]
   },
   {
+   "file": "GEN_xcf8116fee7.mp3",
+   "rawId": "GEN_xcf8116fee7",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_xcf9fb4dad3.mp3",
    "rawId": "GEN_xcf9fb4dad3",
    "lufs": -16.46,
@@ -750,6 +948,17 @@
    "dev": 0.45,
    "dur": 45.0,
    "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_xdcbf2b64f7.mp3",
+   "rawId": "GEN_xdcbf2b64f7",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.915,
    "verdict": [
     "OK"
    ]
@@ -805,6 +1014,17 @@
    "dev": 0.46,
    "dur": 45.0,
    "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_z4u.mp3",
+   "rawId": "GEN_z4u",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 0.916,
    "verdict": [
     "OK"
    ]

@@ -306,3 +306,10 @@
 /* FIX 2026-09-30: .badge (viddar.css) ep text-transform:uppercase -> ma SKU 'VIDEO-e91589' hien thanh
    'VIDEO-E91589' (sai dinh danh, copy/tim kiem lech). Badge chua ma dinh danh giu nguyen chu. */
 .badge.badge-sku { text-transform: none; }
+
+/* NANG CAP 2026-09-30 (CLS player 0,13-0,42 @768): tieu de "Dang tai..." (1 dong) -> ten bai that (2-3 dong) + meta +
+   nguon duoc chen sau khi fetch -> tab + cot noi dung + footer bi day xuong 44px. Trong luc #playerMain dang tai
+   (aria-busy=true, dat san trong HTML) chi hien khoi tieu de; phan con lai + footer hien ra khi xong = phan tu
+   moi, khong tinh la dich chuyen. Nhanh loi cung dat aria-busy=false nen noi dung van hien. */
+#playerMain[aria-busy="true"] > :not(:first-child) { display: none !important; } /* !important: #playerTabSelector co display:flex !important @<1024 */
+body:has(#playerMain[aria-busy="true"]) .h2-shell-footer { display: none !important; }

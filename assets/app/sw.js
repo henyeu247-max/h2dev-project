@@ -6,7 +6,7 @@
    header Service-Worker-Allowed: '/' ma server.js phuc vu cho file nay.
    /sw.js (root) chuyen thanh legacy. SHELL + CACHE giu nguyen ban batchd. */
 /* 2026-09-30: bump ten cache -> SW moi install + activate xoa cache cu (ban UI fix-all). */
-const CACHE = 'h2dev-shell-v20260930-uifix5';
+const CACHE = 'h2dev-shell-v20260930-uifix22';
 const SHELL = [
   '/',
   '/index.html',
@@ -48,6 +48,27 @@ self.addEventListener('fetch', (e) => {
   if (url.pathname.startsWith('/api/') || url.pathname.startsWith('/video/') || url.pathname.startsWith('/assets/nhac-nen/')) {
     return; // network only for data/media
   }
+  /* NANG CAP 2026-09-30: trang HTML (navigate) + du lieu .json = NETWORK-FIRST, cache chi de dung khi offline.
+     Truoc day MOI request deu stale-while-revalidate -> sau moi lan deploy/cap nhat du lieu, lan mo dau tien van nhan
+     HTML cu (?v cu -> JS/CSS cu) va JSON cu; do thuc te: /tatca sau khi doi ?v van nap content.js ban truoc. */
+  if (e.request.mode === 'navigate' || url.pathname.endsWith('.json')) {
+    e.respondWith(
+      fetch(e.request).then((res) => {
+        if (res && res.ok) {
+          const copy = res.clone();
+          caches.open(CACHE).then((c) => c.put(e.request, copy));
+        }
+        return res;
+      }).catch(() => caches.match(e.request, { ignoreSearch: true }).then((hit) => {
+        if (hit || e.request.mode !== 'navigate') return hit;
+        /* offline: tra ve dung trang vo cho route SPA */
+        const p = url.pathname;
+        const shell = /^\/lotrinh\/[^/]+/.test(p) ? '/player.html' : (/^\/(lotrinh|learn\.html)/.test(p) ? '/learn.html' : '/index.html');
+        return caches.match(shell);
+      }))
+    );
+    return;
+  }
   e.respondWith(
     caches.match(e.request).then((hit) => {
       const net = fetch(e.request).then((res) => {
@@ -56,7 +77,9 @@ self.addEventListener('fetch', (e) => {
           caches.open(CACHE).then((c) => c.put(e.request, copy));
         }
         return res;
-      }).catch(() => hit);
+      /* NANG CAP 2026-09-30: offline + URL co ?v= moi (chua tung tai) -> truoc day tra ve undefined (do: offline /video
+         20/20 CSS+JS loi). SHELL duoc precache KHONG kem ?v o dung phien ban cache nay -> dung ignoreSearch lam du phong. */
+      }).catch(() => hit || caches.match(e.request, { ignoreSearch: true }));
       return hit || net;
     })
   );

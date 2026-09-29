@@ -1,7 +1,7 @@
 {
   "schema": "h2dev.media-integrity-registry.v1",
   "generated_at": "2026-09-30T00:00:00",
-  "note": "Video co luong media HONG (thieu du lieu that). UI/server doc de canh bao. 135/136 file sach; VIDEO-f59aa7 thieu 67,5% audio; VIDEO-8e0275 audio rong (xem catalog).",
+  "note": "Video co luong media HONG (thieu du lieu that). UI/server doc de canh bao. 134/136 file sach; VIDEO-f59aa7 thieu 67,5% audio; VIDEO-8e0275 audio rong (xem catalog).",
   "broken_count": 1,
   "videos": {
     "VIDEO-f59aa7": {

@@ -1,4 +1,12 @@
-﻿## 2026-09-30 (đợt 4) — KIỂM CHỨNG PHỤ ĐỀ f59aa7 BẰNG GEMINI + ĐO ÂM LƯỢNG THẬT: KHOẢNG TRỐNG LÀ IM LẶNG SỐ
+﻿## 2026-09-30 (đợt 5) — SỬA SAI: PHỤC HỒI CỜ HỎNG AUDIO f59aa7 + PHÉP ĐO ZERO-FILL (SCAR-044)
+
+- **Đính chính:** các đợt trước trong ngày (commit `2a19969`: "gỡ cờ B7") và `18e1c53` (22/09: "140/140 media sạch") đã sai. Cờ cũ "DRM/packet thiếu 69%" đúng: đo RMS từng giây (2588/2588s) thấy 1.747s (67,5%) là digital zero xếp khối ~6s; file 22/09 điền zero để đủ 111.466 packet nên 3 phép đo packet/decode báo ok giả. 51/51 khối có tiếng khớp mẫu-sample (≥0,99) với audio gốc 794s ngày 18/09.
+- **Phục hồi:** `audio_integrity=broken_drm_packets`, `media_issues=[B7]`, `needs_audio_recover`, `gap_note` (số đo mới) và object `media_integrity` (status `BROKEN_AUDIO_TRUNCATED`, UI `mediaIntegrityNotice` hiện lại — Playwright xác nhận) ở `catalog.json`/`catalog_full.json`/`data-tabs/videos.json`; `data/media_integrity.json` broken_count 0→1; `media-review-queue` hard_fail 1→2 (B7 + số đo).
+- **Phép đo mới:** `audit_videos_v2.audio_integrity()` thêm phép 4 (giây digital-zero ở giữa file, >25% ⇒ broken, lưu `zero_fill`). Quét N/N 140/140: broken = 2 (`VIDEO-f59aa7`, `VIDEO-8e0275`); 138 ok. Đuôi zero dài của 36 video là thao tác màn hình (transcript đã có placeholder) — không phải lỗi.
+- **Phụ đề f59aa7:** 135 đoạn, phủ 824s = gần hết phần audio có tiếng. Khoảng trống còn lại là im lặng số — không có lời để chép, không phải Whisper hỏng. Cần tải lại nguồn HLS để có đủ tiếng.
+- **Cảnh báo dư lượng:** thông báo UI ghi "chỉ còn ~32% packet" (số thực là 32% thời lượng có tiếng); chưa đổi chữ.
+
+## 2026-09-30 (đợt 4) — KIỂM CHỨNG PHỤ ĐỀ f59aa7 BẰNG GEMINI + ĐO ÂM LƯỢNG THẬT: KHOẢNG TRỐNG LÀ IM LẶNG SỐ
 
 - **Đo âm lượng từng giây (ffmpeg → RMS, 2588/2588 giây):** 1.747 giây (67,5%) là **digital zero** (0 tuyệt đối), 818 giây (31,6%) có tiếng ở mức lời nói (median −22 dB), 14 giây ở giữa. Nghĩa là các khoảng trống của phụ đề (26 khoảng ≥20s, 1.792s) phần lớn là **file audio thật sự không có tiếng**, không phải Whisper nghe hỏng. Bản gốc `_backup/20260918-video-f59aa7-original` chỉ có 794 giây audio giải mã được; file hiện tại có ~818 giây tiếng thật rải trên 2588 giây. Lời giảng ở phần còn lại **không tồn tại trong file audio** này.
 - **Gemini (gemini-3.8-flash) xem cả video:** báo ~772–934 giây "có lời", nhưng bảng của nó xen kẽ đều đặn "LỜI_NÓI / NỀN" và khai có lời ở đoạn digital zero (555 giây "chỉ Gemini nói có lời" thì 80% là 0 tuyệt đối) → suy diễn từ hình, **không dùng được làm bằng chứng âm thanh**.

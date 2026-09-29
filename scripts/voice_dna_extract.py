@@ -26,7 +26,16 @@ FFMPEG_LN = "loudnorm=I=-16:TP=-1.5:LRA=11"
 
 
 def sh(cmd, **kw):
-    return subprocess.run(cmd, capture_output=True, text=True, **kw)
+    """Subprocess an toan: TimeoutExpired se DUOC catch — SCAR 29/09: yt-dlp treo vo han
+    tren video cham (RAW-048, 4h49m khong tien do) lam batch treo; socket-timeout + catch."""
+    try:
+        return subprocess.run(cmd, capture_output=True, text=True, **kw)
+    except subprocess.TimeoutExpired as e:
+        class R:
+            returncode = -9
+            stdout = ""
+            stderr = f"TIMEOUT after {kw.get('timeout', '?')}s"
+        return R()
 
 
 def pick_pilot(limit, raws=None):
@@ -160,9 +169,10 @@ def main():
             for attempt in (1, 2):  # retry 1 lan
                 dl = sh([sys.executable, "-m", "yt_dlp", "-f", "bestaudio/best",
                          "--ffmpeg-location", str(FFMPEG.parent),
+                         "--socket-timeout", "15", "--retries", "2",
                          "--download-sections", "*00:30-02:30", "-x", "--audio-format", "m4a",
                          "-o", str(tmp_audio), "--no-playlist", "--quiet",
-                         f"https://www.youtube.com/watch?v={vid}"], timeout=300)
+                         f"https://www.youtube.com/watch?v={vid}"], timeout=240)
                 if tmp_audio.exists():
                     dl_ok = True
                     break

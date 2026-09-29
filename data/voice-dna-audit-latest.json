@@ -1,9 +1,9 @@
 {
  "schema": "h2dev.voice-dna-audit.v1",
- "generatedAt": "2026-09-29T10:38:08",
+ "generatedAt": "2026-09-29T11:09:48",
  "target": "-16.0 LUFS ±0.5",
- "total": 74,
- "passed": 74,
+ "total": 98,
+ "passed": 98,
  "failed": 0,
  "report": [
   {
@@ -788,6 +788,39 @@
    ]
   },
   {
+   "file": "RAW-085.mp3",
+   "rawId": "RAW-085",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-086.mp3",
+   "rawId": "RAW-086",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 0.966,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-087.mp3",
+   "rawId": "RAW-087",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.983,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "RAW-088.mp3",
    "rawId": "RAW-088",
    "lufs": -16.44,
@@ -810,12 +843,243 @@
    ]
   },
   {
+   "file": "RAW-091.mp3",
+   "rawId": "RAW-091",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 0.978,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-092.mp3",
+   "rawId": "RAW-092",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 0.957,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "RAW-095.mp3",
    "rawId": "RAW-095",
    "lufs": -16.1,
    "dev": 0.1,
    "dur": 45.01,
    "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-096.mp3",
+   "rawId": "RAW-096",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-097.mp3",
+   "rawId": "RAW-097",
+   "lufs": -16.5,
+   "dev": 0.5,
+   "dur": 45.0,
+   "speechDensity": 0.937,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-098.mp3",
+   "rawId": "RAW-098",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-099.mp3",
+   "rawId": "RAW-099",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-100.mp3",
+   "rawId": "RAW-100",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-101.mp3",
+   "rawId": "RAW-101",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-102.mp3",
+   "rawId": "RAW-102",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-103.mp3",
+   "rawId": "RAW-103",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-108.mp3",
+   "rawId": "RAW-108",
+   "lufs": -16.42,
+   "dev": 0.42,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-110.mp3",
+   "rawId": "RAW-110",
+   "lufs": -16.48,
+   "dev": 0.48,
+   "dur": 45.0,
+   "speechDensity": 0.977,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-111.mp3",
+   "rawId": "RAW-111",
+   "lufs": -16.49,
+   "dev": 0.49,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-112.mp3",
+   "rawId": "RAW-112",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-113.mp3",
+   "rawId": "RAW-113",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 0.892,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-114.mp3",
+   "rawId": "RAW-114",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-115.mp3",
+   "rawId": "RAW-115",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.984,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-116.mp3",
+   "rawId": "RAW-116",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.987,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-117.mp3",
+   "rawId": "RAW-117",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-118.mp3",
+   "rawId": "RAW-118",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.921,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-119.mp3",
+   "rawId": "RAW-119",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.912,
    "verdict": [
     "OK"
    ]

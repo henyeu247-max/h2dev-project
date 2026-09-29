@@ -1,4 +1,13 @@
-﻿## 2026-09-30 — DATA AUDIT E2E: ĐỒNG BỘ TOOLING/SIZE/DOC + GỠ CỜ AUDIO STALE VIDEO-f59aa7
+﻿## 2026-09-30 (đợt 3) — CĂN LẠI PHỤ ĐỀ VIDEO-f59aa7 THEO FILE ĐÃ SỬA + SỬA SKIP_DIR CỦA sync-tokens
+
+- **Lỗi thật:** `video/VIDEO-f59aa7/transcript.*` (334 đoạn, 18/09) chỉ khớp ~62s đầu của file đã thay 22/09; phụ đề lệch bậc thang tới +493s (dòng thời gian phụ đề cũ bị nén theo file hỏng). Bằng chứng: `_audit/20260930-f59aa7-transcript-drift/README.md`.
+- **Cách làm (chỉ dùng Groq Whisper có sẵn của dự án, không cài gì):** tách audio 120s/chunk, chuẩn hoá âm lượng (`highpass` + `dynaudnorm`), xin **timestamp từng từ** (`timestamp_granularities[]=word`); cắt các cụm ảo giác Whisper ở **mức từ** (La La School / Ghiền Mì Gõ / "Cảm ơn các bạn đã theo dõi…", lấy từ `HALL_PATTERNS` + `_restore_decisions.md`) nhưng giữ phần lời thật đi kèm; chia đoạn theo khoảng lặng ≥0,7s / ≤9s; lọc `is_hallucination`/`is_compressed` của `transcribe_sku.py`; áp `normalize_terminology.REPL`; ghi đúng định dạng 140 video khác (CRLF, `language`, `full_text`).
+- **Kết quả:** 98 đoạn, phủ 644s (24,9%), 2.234 từ, đoạn cuối kết thúc ở giây 2587. 84% số từ có mặt trong phụ đề cũ đã làm sạch. Kiểm ngẫu nhiên 10 đoạn (cắt đúng mốc mới, hỏi lại Whisper): 8/10 khớp (jaccard ≥0,45). `audit_videos_v2.py --sku VIDEO-f59aa7`: **0 issue**, còn review A8d (26 khoảng trống, 1813s) + A8g (WPM 52). Player (Playwright, desktop+mobile): 98/98 cue, bảng phụ đề 98 dòng, 0 lỗi console. `validate-project`, `sync-counts --check` pass.
+- **Giới hạn thật:** phụ đề mới **đúng thời gian nhưng thưa** — ở vùng âm lượng thấp Whisper trả câu ảo giác thay cho lời nên phần đó để trống (không bịa). Bộ dò `speech_density.py` cũng bị đếm cả từ ảo giác nên "100% cửa sổ có lời" (A8g) không đáng tin. Muốn đầy đủ hơn cần soát tay/ASR khác.
+- **Bản cũ giữ nguyên** ở `_backup/20260930-f59aa7-transcript/` (`*.before` + SHA256SUMS); `video/` không nằm trong git nên KHÔNG có bản nào trong commit. **Chưa đồng bộ lên VPS** (cần scp `transcript.json/.srt/.txt`).
+- **token-manifest:** `SKIP_DIR` thêm `_audit`, `_internal`, `_private`, `logs`, `.cache`, `inbox` (probe: file `.js` trong `_audit` không còn làm lệch; file trong `docs/` vẫn làm DRIFT).
+
+## 2026-09-30 — DATA AUDIT E2E: ĐỒNG BỘ TOOLING/SIZE/DOC + GỠ CỜ AUDIO STALE VIDEO-f59aa7
 
 ### Đo (audit N/N chỉ-đọc 6.293 phép + gate + e2e + ffprobe 140/140)
 - JSON 1.142/1.143 parse được (`manifest.json` chỉ có BOM). Chéo tham chiếu videos↔catalog↔catalog_full↔modules 140/140; media 140/140 tồn tại và khớp catalog (thời lượng/độ phân giải/có hình+audio); thumb 140/140; sha256 ảnh raw 156/156; dossier 156/156; nhạc 49/49 file + size; DB `h2dev_master.db`/`intelligence.db` integrity ok, lessons 140 = videos.json, documents 157 = tai-lieu-full.json.

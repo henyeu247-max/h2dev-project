@@ -425,7 +425,7 @@
       "status": "open",
       "checked_by": null,
       "decision": null,
-      "note": "B7 da xoa 2026-09-30: audio_integrity() 3/3 phep do ok (nb_read_packets 111466, ratio 1.0, decode 10.0s tai giay 1294.2) sau khi file media duoc thay 2026-09-22 03:02. Con lai A8d: ASR probe 2026-09-30 cho thay transcript.json (334 doan) lech thoi gian so voi file da sua (delta 0s -> +493s, bac thang); transcribe_sku.py chay tho khong thay the duoc (vung 870-2500s ra cau ao giac). Xem _audit/20260930-f59aa7-transcript-drift/README.md."
+      "note": "B7 da xoa 2026-09-30: audio_integrity() 3/3 phep do ok (nb_read_packets 111466, ratio 1.0, decode 10.0s tai giay 1294.2) sau khi file media duoc thay 2026-09-22 03:02. Con lai A8d: transcript.json cu (334 doan) lech thoi gian so voi file da sua (delta 0s -> +493s). Da can lai 2026-09-30 bang Groq Whisper word-timestamps tren audio da chuan hoa am luong + cat cum ao giac muc tu: 98 doan, phu 644s (24,9%), dung thoi gian nhung THUA (vung am luong thap Whisper tra ao giac nen de trong). Van mo de soat tay/ASR bo sung; ban cu o _backup/20260930-f59aa7-transcript/. Chua dong bo VPS. Xem _audit/20260930-f59aa7-transcript-drift/."
     },
     {
       "sku": "VIDEO-f74bb1",

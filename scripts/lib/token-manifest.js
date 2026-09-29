@@ -17,7 +17,10 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 
-const SKIP_DIR = ['node_modules', '_backup', '_archive', '.git', '_tmp-proof', '.venv-gpu', '_tmp-orig', 'data'];
+/* 2026-09-30: them cac thu muc bang chung/nhat ky/noi bo (khop SENSITIVE_SEGMENTS cua server.js). Luu 1 script
+ * do (.js) vao _audit/ tung lam usageSources lech va sync-tokens --check bao DRIFT gia. */
+const SKIP_DIR = ['node_modules', '_backup', '_archive', '.git', '_tmp-proof', '.venv-gpu', '_tmp-orig', 'data',
+  '_audit', '_internal', '_private', 'logs', '.cache', 'inbox'];
 /* BAY (PROBE phat hien): file `_tmp-*.js` (script kiem tam, da bi .gitignore dong 38) NAM O
  * GOC DU AN nen bi tinh vao `usageSources` (188 -> 189 khi em chay 1 script tam).
  * => phat hien: `--check` bao DRIFT GIA ngay sau khi vua ghi manifest (vi so file doi giua

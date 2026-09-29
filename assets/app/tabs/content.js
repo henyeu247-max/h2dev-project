@@ -410,12 +410,12 @@ window.showVideoSearchSuggestions = function(inputVal, _premerged) {
   }
 
   box.innerHTML = `
-    <div class="px-3.5 py-2 bg-surface text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
+    <div class="px-3.5 py-2 bg-surface text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-border">
       <span class="flex items-center gap-1.5"><span class="text-brand-400">${ico('zap', 14)}</span> Gợi ý bài học, mốc tua & kỹ thuật (${items.length})</span>
       <span class="text-gray-500 font-normal">Nhấp để lọc hoặc tua ngay</span>
     </div>
     ${items.map((item, idx) => `
-      <div class="js-v-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-bg" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-sku="${esc(item.sku || '')}" data-url="${esc(item.directUrl || '')}">
+      <div class="js-v-sug-row px-3.5 py-2.5 hover:bg-surface-2 cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-bg" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-sku="${esc(item.sku || '')}" data-url="${esc(item.directUrl || '')}">
         <div class="flex items-center gap-2.5 min-w-0">
           <span class="text-base shrink-0">${ico(item.icon, 16)}</span>
           <div class="min-w-0">
@@ -535,7 +535,7 @@ async function renderVideo() {
   <div class="relative w-full sm:flex-1 min-w-0" id="video-search-wrap">
     <input id="fq" aria-label="Tìm video bài học" value="${esc(state.q)}" autocomplete="off" placeholder="Tìm tên video, SKU, kỹ thuật (B-roll bàn tay, AI, Thầy Pháp Hòa, xây kênh...)" class="search-input-premium w-full min-w-0 pr-9">
     ${state.q ? `<button type="button" id="btn-clear-video-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition" style="z-index:var(--h2-z-base)" title="Xóa tìm kiếm">${ico('x', 14)}</button>` : ''}
-    <div id="video-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-[#334155] rounded-2xl shadow-2xl overflow-hidden max-h-[420px] overflow-y-auto divide-y divide-[#1e293b]/80 min-w-full"></div>
+    <div id="video-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-border-strong rounded-2xl shadow-2xl overflow-hidden max-h-[420px] overflow-y-auto divide-y divide-border min-w-full"></div>
   </div>
   <button type="button" id="freset" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>
@@ -1442,12 +1442,12 @@ window.showRawSearchSuggestions = function(inputVal, _premerged) {
   }
 
   box.innerHTML = `
-    <div class="px-3.5 py-2 bg-surface text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-[#1e293b]">
+    <div class="px-3.5 py-2 bg-surface text-2xs font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between border-b border-border">
       <span class="flex items-center gap-1.5"><span class="text-brand-400">${ico('zap', 14)}</span> Gợi ý khớp kênh & video raw (${items.length})</span>
       <span class="text-gray-500 font-normal">Nhấp để chọn hoặc xem hồ sơ</span>
     </div>
     ${items.map((item, idx) => `
-      <div class="js-sug-row px-3.5 py-2.5 hover:bg-[#1e293b] cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-bg" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-raw-id="${esc(item.rawId || '')}" data-type="${esc(item.type)}">
+      <div class="js-sug-row px-3.5 py-2.5 hover:bg-surface-2 cursor-pointer flex items-center justify-between gap-3 transition-colors group bg-bg" data-idx="${idx}" data-term="${esc(item.searchTerm)}" data-raw-id="${esc(item.rawId || '')}" data-type="${esc(item.type)}">
         <div class="flex items-center gap-2.5 min-w-0">
           <span class="text-base shrink-0">${ico(item.icon, 16)}</span>
           <div class="min-w-0">
@@ -1473,6 +1473,22 @@ async function renderRawKenh() {
     rawData = { records: [] };
   }
   const records = Array.isArray(rawData) ? rawData : (rawData && rawData.records ? rawData.records : []);
+  /* FULL PASS 2026-09-30: kenh da bi YouTube go (channelLifecycle.state TERMINATED_*) truoc day van hien
+     "Dang hoat dong" + tinh vao bo loc/so dem "hoat dong"/"YPP" vi vitalityAudit la anh chup TRUOC khi bi go
+     (do: 4/156 — RAW-012/143/145/152). Ghi de trang thai HIEU LUC khi hien thi; giu ban goc o _vitalitySnapshot. */
+  records.forEach(r => {
+    const lc = r && r.channelLifecycle;
+    if (!lc || !/^TERMINATED/.test(lc.state || '') || r._vitalitySnapshot) return;
+    const ev = (lc.events || []).find(x => x && /terminated/i.test(x.type || '')) || {};
+    const d = ev.date ? String(ev.date).slice(0, 10).split('-').reverse().join('/') : '';
+    r._vitalitySnapshot = r.vitalityAudit || null;
+    r.vitalityAudit = Object.assign({}, r.vitalityAudit || {}, {
+      healthStatus: 'DEAD_OR_PURGED',
+      healthBadge: 'Đã bị YouTube gỡ' + (d ? ' (' + d + ')' : ''),
+      monetizationStatus: 'TERMINATED',
+      monetizationBadge: 'Không còn kiếm tiền (kênh bị gỡ)'
+    });
+  });
   window._rawKenhRecords = records;
   const q = (state.rawQ || '').trim().toLowerCase();
   const currentNiche = state.rawNiche || '';
@@ -1568,7 +1584,7 @@ async function renderRawKenh() {
   <div class="relative w-full sm:flex-1 min-w-0" id="raw-search-wrap">
     <input id="fq" value="${esc(state.rawQ)}" autocomplete="off" placeholder="Tìm theo tên kênh, handle, ngách, video bão view, tên file..." class="search-input-premium w-full min-w-0 pr-9" aria-label="Tìm ảnh raw kênh mẫu">
     ${state.rawQ ? `<button type="button" id="btn-clear-raw-q" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center rounded-full bg-surface-2 hover:bg-surface text-gray-400 hover:text-white text-xs transition" style="z-index:var(--h2-z-base)" title="Xóa tìm kiếm">${ico('x', 14)}</button>` : ''}
-    <div id="raw-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-[#334155] rounded-2xl shadow-2xl overflow-hidden max-h-[380px] overflow-y-auto divide-y divide-[#1e293b]/80"></div>
+    <div id="raw-search-suggestions" class="hidden absolute left-0 right-0 top-full mt-2 border border-border-strong rounded-2xl shadow-2xl overflow-hidden max-h-[380px] overflow-y-auto divide-y divide-border"></div>
   </div>
   <button type="button" id="freset-raw" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>
@@ -1668,7 +1684,7 @@ async function renderRawKenh() {
     const tv = r.thumbnailVision || null;
     return `
     <article class="card overflow-hidden min-w-0 flex flex-col hover:border-brand-500 transition group" data-raw-card="${esc(r.id)}">
-      <div class="js-view-raw-image relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700 cursor-pointer" data-src="${esc(imgSrc)}" data-title="${esc((ch.title || r.id).trim())}" title="Bấm xem ảnh kích thước đầy đủ">
+      <div class="js-view-raw-image relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700 cursor-pointer" role="button" tabindex="0" aria-label="Xem ảnh raw đầy đủ: ${esc((ch.title || r.id).trim())}" data-src="${esc(imgSrc)}" data-title="${esc((ch.title || r.id).trim())}" title="Bấm xem ảnh kích thước đầy đủ">
         <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" width="640" height="360" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
         <div class="absolute top-2 left-2 flex items-center gap-1" style="z-index:var(--h2-z-base)">
           <span class="bg-ink-900/80 px-2 py-0.5 rounded-xl text-2xs font-mono text-gray-300 border border-white/10 truncate">${esc(r.id)}</span>
@@ -1713,7 +1729,7 @@ async function renderRawKenh() {
           <span class="text-amber-300 font-medium inline-flex items-center gap-1">${ico('zap', 14)} ${r.deepIntelligence.topVideosCount} videos</span>
           <span class="text-sky-300 font-medium inline-flex items-center gap-1">${ico('tag', 14)} ${r.deepIntelligence.tagsCount} tags</span>
           <span class="text-emerald-300 font-medium inline-flex items-center gap-1">${ico('coins', 14)} ${esc(vA.estimatedMonthlyRev || 'N/A')}</span>
-          <span class="text-emerald-400 font-medium ml-auto inline-flex items-center gap-1">${ico('shield-check', 14)} ${esc(stripDecorEmoji(vA.healthBadge) || (r.deepIntelligence.longevityStatus ? r.deepIntelligence.longevityStatus.replace(/\(.*?\)/g, '').trim() : ''))}</span>
+          <span class="${vA.healthStatus === 'DEAD_OR_PURGED' ? 'text-red-400' : 'text-emerald-400'} font-medium ml-auto inline-flex items-center gap-1">${ico(vA.healthStatus === 'DEAD_OR_PURGED' ? 'alert-triangle' : 'shield-check', 14)} ${esc(stripDecorEmoji(vA.healthBadge) || (r.deepIntelligence.longevityStatus ? r.deepIntelligence.longevityStatus.replace(/\(.*?\)/g, '').trim() : ''))}</span>
         </div>` : ''}
         ${(r.featuredDemoVideo && r.featuredDemoVideo.videoId) ? `
         <button type="button" class="js-quick-video h2-btn h2-btn--ghost h2-btn--sm w-full mt-1.5" data-vid="${esc(r.featuredDemoVideo.videoId)}" data-title="${esc(r.featuredDemoVideo.title)}" data-channel="${esc((ch.title || r.id).trim())}" data-badge="🎬 Demo Tuyến Nội Dung">

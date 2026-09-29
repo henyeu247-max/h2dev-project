@@ -1,7 +1,9 @@
 /* H2DEV boot-route (2026-09-30) — chay DONG BO ngay sau </header> trong index.html, TRUOC lan ve dau.
  * Ly do: /chienluoc co thanh tab phu trong topbar (cao +55px @1280). main.js nap cuoi <body> nen trinh duyet
  * co the ve trang 1 lan TRUOC khi main.js dung subnav -> #panel-root bi day xuong (CLS 0.0345, do tren 5/5 lan).
- * File nay chi bat san cac class giu cho; noi dung subnav van do main.js (syncTopbarSubnav) dung. */
+ * File nay chi bat san cac class giu cho; noi dung subnav van do main.js (syncTopbarSubnav) dung.
+ * Dat la phan tu DAU TIEN trong <header>: #topbar-subnav chua ton tai -> CSS
+ * `.vd-topbar.has-subnav > .vd-topbar-subnav.hidden` hien khung subnav thay cho JS. */
 (function () {
   try {
     var p = location.pathname.replace(/\/+$/, "");

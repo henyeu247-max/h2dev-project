@@ -3245,12 +3245,12 @@
     "status": "TERMINATED_BY_YOUTUBE",
     "extractedAt": "2026-09-16T18:27:24+07:00",
     "source": "YouTube alert page - xac minh 16/09/2026",
-    "folderName": null,
-    "dossierPath": null,
-    "note": "KENH DA BI YOUTUBE GO BO - alert chinh thuc tren trang: \"Kenh nay da bi go bo do vi pham Nguyen tac cong dong cua chung toi.\" RSS 404, khong con video. Snapshot cu (2600 subs, 28 videos, US) giu lai trong record de tham chieu lich su.",
-    "topVideosCount": 0,
+    "folderName": "RAW-012_History_Endures",
+    "dossierPath": "data/raw-channels-deep/RAW-012_History_Endures",
+    "note": "KENH DA BI YOUTUBE GO BO - alert chinh thuc tren trang: \"Kenh nay da bi go bo do vi pham Nguyen tac cong dong cua chung toi.\" RSS 404, khong con video. Snapshot cu (2600 subs, 28 videos, US) giu lai trong record de tham chieu lich su. | 2026-09-30: dossier crawl TRUOC khi bi go (09/09) van con tren dia -> gan folderName/dossierPath (cung quy tac RAW-143/145, SCAR-041).",
+    "topVideosCount": 10,
     "tagsCount": 0,
-    "transcriptsCount": 0,
+    "transcriptsCount": 10,
     "terminatedAt": "2026-09-16 (phat hien)"
    },
    "vitalityAudit": {

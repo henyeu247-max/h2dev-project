@@ -30,6 +30,8 @@
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   /* 2026-09-30: tieu de bai co ngay dd-mm-yyyy bi trinh duyet ngat dong o dau "-" (do: row-title learn @375
      "12-01-" / "2026"). escTitle = esc + boc ngay trong span khong ngat dong. Chi dung cho TEXT hien thi, khong cho thuoc tinh. */
+  /* 2026-09-30: cuon muot chi khi nguoi dung KHONG bat "giam chuyen dong" trong he dieu hanh. */
+  function scrollBehavior() { try { return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'; } catch (e) { return 'smooth'; } }
   function escTitle(s) { return esc(s).replace(/\b\d{1,2}-\d{1,2}-\d{2,4}\b/g, function (d) { return '<span class="nowrap-date">' + d + '</span>'; }); }
   function pad2(n) { return String(n).padStart(2, '0'); }
   function normalize(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd'); }
@@ -333,7 +335,7 @@
   global.H2Core = {
     WKEY: WKEY, FKEY: FKEY, RKEY: RKEY,
     ICONS: ICONS,
-    esc: esc, escTitle: escTitle, pad2: pad2, normalize: normalize,
+    esc: esc, escTitle: escTitle, scrollBehavior: scrollBehavior, pad2: pad2, normalize: normalize,
     ico: ico, stripDecorEmoji: stripDecorEmoji,
     durToSecs: durToSecs, fmtTotalDur: fmtTotalDur, dateVN: dateVN, fmtBytes: fmtBytes,
     loadWatched: loadWatched, saveWatchedAll: saveWatchedAll, syncAdmin: syncAdmin, hydrateAdmin: hydrateAdmin,

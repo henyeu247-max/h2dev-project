@@ -142,11 +142,6 @@
    "mp3": "assets/voice-samples/GEN_handofgod.mp3"
   },
   {
-   "rawId": "GEN_HDVietsubh7u",
-   "status": "not-golden",
-   "mp3": "assets/voice-samples/GEN_HDVietsubh7u.mp3"
-  },
-  {
    "rawId": "GEN_healthlonglife",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_healthlonglife.mp3"
@@ -280,11 +275,6 @@
    "rawId": "GEN_r",
    "status": "ok",
    "mp3": "assets/voice-samples/GEN_r.mp3"
-  },
-  {
-   "rawId": "GEN_redvoices90",
-   "status": "not-golden",
-   "mp3": "assets/voice-samples/GEN_redvoices90.mp3"
   },
   {
    "rawId": "GEN_relax",

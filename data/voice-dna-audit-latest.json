@@ -1,10 +1,10 @@
 {
  "schema": "h2dev.voice-dna-audit.v1",
- "generatedAt": "2026-09-29T17:20:51",
+ "generatedAt": "2026-09-29T19:59:17",
  "target": "-16.0 LUFS ±0.5",
- "total": 259,
+ "total": 257,
  "passed": 257,
- "failed": 2,
+ "failed": 0,
  "report": [
   {
    "file": "GEN_100.mp3",
@@ -315,17 +315,6 @@
    ]
   },
   {
-   "file": "GEN_HDVietsubh7u.mp3",
-   "rawId": "GEN_HDVietsubh7u",
-   "lufs": -16.42,
-   "dev": 0.42,
-   "dur": 45.0,
-   "speechDensity": 0.578,
-   "verdict": [
-    "SPEECH"
-   ]
-  },
-  {
    "file": "GEN_healthlonglife.mp3",
    "rawId": "GEN_healthlonglife",
    "lufs": -16.45,
@@ -620,17 +609,6 @@
    "speechDensity": 0.919,
    "verdict": [
     "OK"
-   ]
-  },
-  {
-   "file": "GEN_redvoices90.mp3",
-   "rawId": "GEN_redvoices90",
-   "lufs": -16.45,
-   "dev": 0.45,
-   "dur": 45.0,
-   "speechDensity": 0.575,
-   "verdict": [
-    "SPEECH"
    ]
   },
   {

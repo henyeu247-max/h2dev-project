@@ -124,7 +124,7 @@
         '<img class="resume-thumb" src="' + C.esc(target.image || '') + '" alt="' + C.esc(target.title || '') + '" loading="lazy">' +
         '<div class="resume-info">' +
           '<div class="resume-label">' + C.ico('play', 14) + ' ' + (pr.done ? 'Bài tiếp theo' : 'Tiếp tục học') + '</div>' +
-          '<div class="resume-title">' + C.esc(target.title) + '</div>' +
+          '<div class="resume-title">' + (C.escTitle || C.esc)(target.title) + '</div>' +
           '<div class="resume-meta">' + C.esc(meta) + '</div>' +
         '</div>' +
         status +
@@ -227,7 +227,7 @@
       '<a class="s-card" target="_top" href="' + href + '">' +
         '<img src="' + C.esc(v.image || '') + '" alt="' + C.esc(v.title || '') + '" loading="lazy">' +
         '<span class="s-card-body">' +
-          '<span class="s-card-title">' + C.esc(v.title) + '</span>' +
+          '<span class="s-card-title">' + (C.escTitle || C.esc)(v.title) + '</span>' +
           '<span class="s-card-tags">' +
             (v.free ? '<span class="ltag ltag-free">FREE</span>' : '<span class="ltag ltag-pro">PRO</span>') +
             (v.duration ? '<span class="s-card-dur">' + C.ICONS.clock + C.esc(v.duration) + '</span>' : '') +
@@ -444,7 +444,17 @@
     }
 
     // sync khi quay về từ player (pageshow/focus/visibilitychange)
+    /* 2026-09-30 (CLS khi quay lai tab): truoc day focus/visibilitychange/pageshow LUON ve lai banner + panel
+       -> banner "Tiep tuc hoc" dung lai co the xe dich noi dung du khong co gi doi. Nay chi ve lai khi lich su
+       xem / yeu thich / bai gan nhat THAT SU doi (so chu ky localStorage). */
+    var stateSig = function () {
+      try { return [C.RKEY, C.WKEY, C.FKEY].map(function (k) { return k ? (localStorage.getItem(k) || '') : ''; }).join('|'); } catch (e) { return String(Date.now()); }
+    };
+    var lastSig = stateSig();
     var resync = function () {
+      var sig = stateSig();
+      if (sig === lastSig) return;
+      lastSig = sig;
       renderHeaderProgress(data);
       renderResumeBanner(data);
       renderTab(data);

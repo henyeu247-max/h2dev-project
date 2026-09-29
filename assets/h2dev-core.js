@@ -28,6 +28,9 @@
   // CANONICAL esc — escape đủ & < > " ' cho HTML text/attr. KHÔNG dùng để nhét vào JS string.
   // index.html / player.html / music_player_modal.js phải khớp bản này (hoặc re-export H2Core.esc).
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  /* 2026-09-30: tieu de bai co ngay dd-mm-yyyy bi trinh duyet ngat dong o dau "-" (do: row-title learn @375
+     "12-01-" / "2026"). escTitle = esc + boc ngay trong span khong ngat dong. Chi dung cho TEXT hien thi, khong cho thuoc tinh. */
+  function escTitle(s) { return esc(s).replace(/\b\d{1,2}-\d{1,2}-\d{2,4}\b/g, function (d) { return '<span class="nowrap-date">' + d + '</span>'; }); }
   function pad2(n) { return String(n).padStart(2, '0'); }
   function normalize(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd'); }
 
@@ -244,7 +247,7 @@
         '</a>' +
         '<div class="row-body">' +
           (opts.updatedLine ? '<div class="row-updated">Cập nhật: ' + dateVN(v.published_at) + '</div>' : '') +
-          '<a class="row-title" target="_top" href="' + href + '">' + esc(v.title) + '</a>' +
+          '<a class="row-title" target="_top" href="' + href + '">' + escTitle(v.title) + '</a>' +
           '<div class="row-tags">' + tags + '</div>' +
         '</div>' +
         action +
@@ -330,7 +333,7 @@
   global.H2Core = {
     WKEY: WKEY, FKEY: FKEY, RKEY: RKEY,
     ICONS: ICONS,
-    esc: esc, pad2: pad2, normalize: normalize,
+    esc: esc, escTitle: escTitle, pad2: pad2, normalize: normalize,
     ico: ico, stripDecorEmoji: stripDecorEmoji,
     durToSecs: durToSecs, fmtTotalDur: fmtTotalDur, dateVN: dateVN, fmtBytes: fmtBytes,
     loadWatched: loadWatched, saveWatchedAll: saveWatchedAll, syncAdmin: syncAdmin, hydrateAdmin: hydrateAdmin,

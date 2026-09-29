@@ -192,6 +192,16 @@
       window.scrollTo(0, Math.max(0, topNav.getBoundingClientRect().top + window.scrollY - off));
       const b = topNav.querySelector('button'); if (b) { try { b.focus({ preventScroll: true }); } catch (e2) {} }
     }
+    /* 2026-09-30: sub (tab phu Chien luoc) dong bo URL khi bam — truoc day chi openTab moi ghi sub, bam tab phu
+       khong doi URL -> tai lai / chia se link luon ve "4 Nguyen tac". replaceState nhu dp/np. */
+    const CL_SUBTABS = ['principles', 'workflow', 'distribution', 'policy', 'all'];
+    function syncClSubUrl() {
+      try {
+        const u = new URL(location.href);
+        if (state.tab === 'chienluoc' && state.clSubTab && state.clSubTab !== 'principles') u.searchParams.set('sub', state.clSubTab); else u.searchParams.delete('sub');
+        history.replaceState(history.state, '', u.pathname + u.search);
+      } catch (err) {}
+    }
     function openTab(id, extra, pushHistory = true) {
       state.tab = id || 'tatca';
       resetScrollToTop();
@@ -307,6 +317,7 @@
         btn.onclick = (e) => {
           e.preventDefault();
           state.clSubTab = btn.getAttribute('data-cl-tab') || 'principles';
+          syncClSubUrl();
           render();
           resetScrollToTop();
         };
@@ -329,6 +340,7 @@
         if (target) openTab(target, patch);
       } else if (type === 'strategy-tab') {
         state.clSubTab = patch.clSubTab || 'principles';
+        syncClSubUrl();
         const restoreFocus = btn.dataset.quickRestoreFocus === 'true';
         delete btn.dataset.quickRestoreFocus;
         render().then(() => {
@@ -851,7 +863,9 @@
       state.rawNiche = qp.get('rn') || '';
       state.rawGroup = qp.get('rg') || '';
       state.rawQ = qp.get('rq') || '';
-      state.clSubTab = qp.get('sub') || state.clSubTab || 'principles';
+      /* sub la gia tri tu URL -> chi nhan gia tri hop le */
+      const subQ = qp.get('sub');
+      state.clSubTab = (subQ && CL_SUBTABS.includes(subQ)) ? subQ : (state.clSubTab || 'principles');
       return state;
     }
 

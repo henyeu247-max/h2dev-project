@@ -51,11 +51,11 @@ def pick_pilot(limit, raws=None):
         """, raws).fetchall()
         raw_ids = [r[0] for r in rows if r[0]]
     else:
-        # Lay gap 3 lan limit — kenh video chet se bi bo qua, loop main chay den du ok_count
+        # Lay gap 3 lan limit — kenH video chet se bi bo qua, loop main chay den du ok_count.
+        # UI-06 fix: LEFT JOIN de kenH KHONG co top-video van vao candidates (dung channel listing).
         rows = db.execute("""
             SELECT DISTINCT c.raw_id
             FROM competitor_channels c
-            JOIN competitor_top_videos v ON v.channel_id = c.channel_id AND v.rank_order = 1
             WHERE c.has_voice_sample = 0
             LIMIT ?
         """, (limit * 3,)).fetchall()
@@ -67,9 +67,13 @@ def pick_pilot(limit, raws=None):
             (raw_id,)).fetchone()
         # Nhieu video ung vien theo rank — video rank 1 thuong da chet (SCAR 29/09: 17/25 fail)
         vlist = db.execute(
-            "SELECT video_id FROM competitor_top_videos WHERE channel_id=? ORDER BY rank_order ASC LIMIT 5",
+            "SELECT video_id FROM competitor_top_videos WHERE channel_id=? ORDER BY rank_order ASC LIMIT 10",
             (r[0],)).fetchall()
-        vids[raw_id] = {"channel_id": r[0], "handle": r[1], "video_ids": [x[0] for x in vlist]}
+        vlist = [x[0] for x in vlist]
+        if not vlist and r[1]:
+            # Khong co top-video trong DB — dung CHANNEL LISTING (video moi nhat cua kenh)
+            vlist = ["CH:" + r[1]]
+        vids[raw_id] = {"channel_id": r[0], "handle": r[1], "video_ids": vlist}
     db.close()
     return vids
 
@@ -168,21 +172,30 @@ def main():
             ok_count += 1
             continue
 
-        # Thu lan luot video ung vien (rank 1 -> 5): video cu thuong da chet
+        # Thu lan luot video ung vien: video rank (chet nhieu) + CHANNEL LISTING (video moi nhat)
         tmp_audio = TMP / f"{raw_id}.m4a"
         dl_ok = False
+        attempt = 0
         for vid in meta.get("video_ids", []):
-            for attempt in (1, 2):  # retry 1 lan
+            if vid.startswith("CH:"):
+                handle_u = vid[3:].replace("@", "")
+                from urllib.parse import quote
+                base_url = f"https://www.youtube.com/@{quote(handle_u)}/videos"
+            else:
+                base_url = f"https://www.youtube.com/watch?v={vid}"
+            for pi in (1, 2, 3):  # video moi thu 1..3 cua kenh/list
+                attempt += 1
+                if attempt > 6:
+                    break
                 dl = sh([sys.executable, "-m", "yt_dlp", "-f", "bestaudio/best",
                          "--ffmpeg-location", str(FFMPEG.parent),
                          "--socket-timeout", "15", "--retries", "2",
                          "--download-sections", "*00:30-02:30", "-x", "--audio-format", "m4a",
                          "-o", str(tmp_audio), "--no-playlist", "--quiet",
-                         f"https://www.youtube.com/watch?v={vid}"], timeout=240)
+                         "--playlist-items", str(pi), base_url], timeout=240)
                 if tmp_audio.exists():
                     dl_ok = True
                     break
-                time.sleep(2)
             if dl_ok:
                 break
         if not dl_ok:

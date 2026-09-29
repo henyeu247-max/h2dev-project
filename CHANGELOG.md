@@ -18,7 +18,7 @@
 - validate PASS · sync-counts --check OK · sync-tokens --check OK · gate-icons/typography/p1/p2 ALL PASS · guard PASS · check-ui-classes OK (1 cảnh báo `.jsRowClass` = biến truyền vào, đã xác minh tay).
 - Browser: 13 route × 3 viewport (375/768/1280) = 39/39 HTTP 200, 0 pageerror, 0 console error, 0 tràn ngang.
 - Backup: `_backup/20260930-ui-fix-all/` (SHA256SUMS).
-- Chưa làm: thống nhất Tailwind `brand` với token, gỡ 379 style inline — chờ duyệt ảnh. Chưa deploy VPS.
+- Chưa làm: gỡ 379 style inline (modal raw-deep), bo 10px panel Tổng quan — chờ anh quyết. **Đính chính 30/09:** Tailwind `brand` lệch token chỉ ở config; đo runtime 731/731 phần tử render đúng màu token.
 
 ## 2026-09-22 — GAP-FIX ALL: SUMMARY SSoT, MEDIA FLAGS, PH5 RADAR, G6 CSP
 

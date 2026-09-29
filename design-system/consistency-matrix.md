@@ -235,4 +235,4 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | H. Thông báo/Loading | Banner lỗi tải không lộ chữ kỹ thuật, reset mỗi lần render, nút Thử lại | 40 tổ hợp chặn file × 9 route: 0 lộ lỗi, 0 pageerror |
 | D. Typography | `.page-h1` line-height 1.3 → 1.2; tiêu đề khối nội dung h1 → h2 (hết 2 h1/trang) | gate-p1 ALL PASS |
 | Player | Phụ đề native `<track>` sinh từ transcript; SKU badge giữ đúng hoa/thường; header mobile không xuống dòng | 140/140 bài: cues = dòng transcript |
-| Còn nợ | Tailwind `brand` (#ef4444/#dc2626) ≠ token `--brand #E2023A`; 379 `style=` inline + 49 mã hex trong `main.js` | Chờ anh duyệt bằng ảnh chụp (điều kiện Batch E) |
+| Còn nợ | Tailwind `brand` khác token CHỈ ở config — đo runtime 731/731 phần tử render đúng token (viddar.css ghi đè). Nợ thật: panel Tổng quan bo 10px + gradient (khác `--r-lg` 4px), `hover:text-brand-300` không đổi màu khi hover, 379 `style=` inline + 49 mã hex trong `main.js` (modal raw-deep dùng bảng slate) | Chờ anh quyết định thiết kế |

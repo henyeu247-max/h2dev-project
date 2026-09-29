@@ -66,3 +66,4 @@ _proof-shots/
 models/scrfd/*.onnx
 models/arcface/*.onnx
 _tools/
+assets/voice-samples-tmp/

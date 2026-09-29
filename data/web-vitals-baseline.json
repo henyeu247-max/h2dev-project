@@ -1,0 +1,100 @@
+{
+ "date": "2026-09-29",
+ "note": "Lab metrics (Playwright chromium, 1280x800). Targets: LCP<2500, CLS<0.1, TBT<200",
+ "targets": {
+  "http://127.0.0.1:8899": [
+   {
+    "page": "/",
+    "lcpMs": 1704,
+    "cls": 0.04,
+    "tbtMs": 29,
+    "loadMs": 4068,
+    "ttfb": 5,
+    "domContentLoaded": 32
+   },
+   {
+    "page": "/rawkenh",
+    "lcpMs": 336,
+    "cls": 0.125,
+    "tbtMs": 0,
+    "loadMs": 4164,
+    "ttfb": 4,
+    "domContentLoaded": 38
+   },
+   {
+    "page": "/kenh-mau",
+    "lcpMs": 268,
+    "cls": 0.045,
+    "tbtMs": 75,
+    "loadMs": 4101,
+    "ttfb": 19,
+    "domContentLoaded": 77
+   },
+   {
+    "page": "/nhac",
+    "lcpMs": 152,
+    "cls": 0.033,
+    "tbtMs": 0,
+    "loadMs": 4086,
+    "ttfb": 23,
+    "domContentLoaded": 53
+   },
+   {
+    "page": "/player.html?sku=VIDEO-DD983D",
+    "lcpMs": 644,
+    "cls": 0.012,
+    "tbtMs": 2,
+    "loadMs": 4116,
+    "ttfb": 3,
+    "domContentLoaded": 92
+   }
+  ],
+  "https://h2dev-learn.tonymmo.com": [
+   {
+    "page": "/",
+    "lcpMs": 6992,
+    "cls": 0.04,
+    "tbtMs": 74,
+    "loadMs": 9724,
+    "ttfb": 1420,
+    "domContentLoaded": 5631
+   },
+   {
+    "page": "/rawkenh",
+    "lcpMs": 3284,
+    "cls": 0.122,
+    "tbtMs": 0,
+    "loadMs": 6530,
+    "ttfb": 1215,
+    "domContentLoaded": 2517
+   },
+   {
+    "page": "/kenh-mau",
+    "lcpMs": 6756,
+    "cls": 0.042,
+    "tbtMs": 0,
+    "loadMs": 8405,
+    "ttfb": 1280,
+    "domContentLoaded": 3586
+   },
+   {
+    "page": "/nhac",
+    "lcpMs": 2316,
+    "cls": 0.033,
+    "tbtMs": 0,
+    "loadMs": 7407,
+    "ttfb": 642,
+    "domContentLoaded": 1383
+   },
+   {
+    "page": "/player.html?sku=VIDEO-DD983D",
+    "lcpMs": 1440,
+    "cls": 0.011,
+    "tbtMs": 0,
+    "loadMs": 4885,
+    "ttfb": 361,
+    "domContentLoaded": 688
+   }
+  ]
+ }
+}

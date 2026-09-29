@@ -1,0 +1,37 @@
+{
+ "date": "2026-09-29",
+ "base": "http://127.0.0.1:8899",
+ "pages": [
+  {
+   "page": "/",
+   "violations": [],
+   "summary": {},
+   "pageErrors": 0
+  },
+  {
+   "page": "/rawkenh",
+   "violations": [],
+   "summary": {},
+   "pageErrors": 0
+  },
+  {
+   "page": "/kenh-mau",
+   "violations": [],
+   "summary": {},
+   "pageErrors": 0
+  },
+  {
+   "page": "/nhac",
+   "violations": [],
+   "summary": {},
+   "pageErrors": 0
+  },
+  {
+   "page": "/player.html?sku=VIDEO-DD983D",
+   "violations": [],
+   "summary": {},
+   "pageErrors": 0
+  }
+ ],
+ "totalByImpact": {}
+}

@@ -35,7 +35,8 @@ def measure_lufs(p):
 
 
 def main():
-    files = sorted(f for f in SAMPLES.iterdir() if f.name.endswith(".mp3") and f.name.startswith("RAW-"))
+    files = sorted(f for f in SAMPLES.iterdir() if f.name.endswith(".mp3")
+                   and (f.name.startswith("RAW-") or f.name.startswith("GEN-") or f.name.startswith("GEN_")))
     report = []
     verify = []
     ok = 0

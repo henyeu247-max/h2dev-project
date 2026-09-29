@@ -436,6 +436,8 @@
       if (C.syncAdmin) C.syncAdmin();
       bindEvents(data);
       syncAll(data);
+      /* NANG CAP 2026-09-30 (CLS): lan ve day du dau tien xong (banner Tiep tuc hoc + panel) -> hien khu noi dung. */
+      document.documentElement.classList.remove('learn-booting');
     if (state.tab === 'timkiem') {
       var inp = document.getElementById('searchInput');
       if (inp) { inp.focus(); try { inp.setSelectionRange(inp.value.length, inp.value.length); } catch (e) {} }
@@ -453,6 +455,7 @@
     document.addEventListener('visibilitychange', function () { if (!document.hidden) resync(); });
     });
   }).catch(function (err) {
+    document.documentElement.classList.remove('learn-booting');
     els.panelRoot.setAttribute('aria-busy', 'false');
     els.panelRoot.innerHTML = '<div class="load-err">' + C.ico('alert-triangle', 16) + ' Không tải được data/modules.json — ' + C.esc(err.message) + '<br>File này được duy trì thủ công (script build-modules đã archive, KHÔNG chạy lại). Kiểm tra: <code>node scripts/validate-project.js</code></div>';
   });

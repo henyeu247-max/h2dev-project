@@ -298,7 +298,9 @@ code { font-size: 11px; color: var(--fg-2); }
 .vd-topbar.has-subnav {
   height: auto;
   min-height: 96px;
-  padding: 0 20px 6px;
+  /* 2026-09-30: chi them dem duoi — truoc day "0 20px 6px" lech 4px ngang so voi header thuong (24px, h2-shell)
+     -> cum tieu de nhay 4px khi vao/ra /chienluoc (do: vd-top-right x264 -> x260). */
+  padding-bottom: 6px;
 }
 .vd-top-right { display: flex; align-items: center; gap: 12px; width: 100%; height: 56px; min-height: 56px; }
 .vd-topbar.has-subnav .vd-top-right { height: 48px; min-height: 48px; }

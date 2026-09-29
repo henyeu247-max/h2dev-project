@@ -29,8 +29,8 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--border` | `#222` | `assets/viddar.css:56` | 90 |
-| `--border-strong` | `#333` | `assets/viddar.css:57` | 27 |
+| `--border` | `#222` | `assets/viddar.css:56` | 96 |
+| `--border-strong` | `#333` | `assets/viddar.css:57` | 34 |
 
 ### `bottom` (1 token)
 
@@ -60,9 +60,9 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
 | `--fg` | `#f0f0f0` | `assets/viddar.css:59` | 54 |
-| `--fg-2` | `#dfdfdf` | `assets/viddar.css:60` | 36 |
-| `--fg-faint` | `#9ca3af` | `assets/viddar.css:62` | 11 |
-| `--fg-muted` | `#a9a9a9` | `assets/viddar.css:61` | 46 |
+| `--fg-2` | `#dfdfdf` | `assets/viddar.css:60` | 42 |
+| `--fg-faint` | `#9ca3af` | `assets/viddar.css:62` | 14 |
+| `--fg-muted` | `#a9a9a9` | `assets/viddar.css:61` | 58 |
 
 ### `focus` (1 token)
 
@@ -277,7 +277,7 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
 | `--surface` | `#0f0f0f` | `assets/viddar.css:54` | 76 |
-| `--surface-2` | `#1a1a1a` | `assets/viddar.css:55` | 55 |
+| `--surface-2` | `#1a1a1a` | `assets/viddar.css:55` | 60 |
 
 ### `topbar` (1 token)
 

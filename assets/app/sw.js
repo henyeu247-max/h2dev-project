@@ -6,7 +6,7 @@
    header Service-Worker-Allowed: '/' ma server.js phuc vu cho file nay.
    /sw.js (root) chuyen thanh legacy. SHELL + CACHE giu nguyen ban batchd. */
 /* 2026-09-30: bump ten cache -> SW moi install + activate xoa cache cu (ban UI fix-all). */
-const CACHE = 'h2dev-shell-v20260930-uifix3';
+const CACHE = 'h2dev-shell-v20260930-uifix4';
 const SHELL = [
   '/',
   '/index.html',

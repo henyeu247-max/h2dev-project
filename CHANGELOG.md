@@ -8,7 +8,8 @@
 ### Gỡ cờ `VIDEO-f59aa7` (anh duyệt 30/09)
 - Bằng chứng: bản gốc `_backup/20260918-video-f59aa7-original` audio 34.202 packet, decode 2.0s tại giây 1294; bản hiện tại 111.466 packet (chuẩn 111.465), `audit_videos_v2.audio_integrity()` = ok/ok/ok, decode 10.0s. sha256 hai file khác nhau. Registry `data/media_integrity.json` đã `broken_count: 0` từ 22/09 03:04 và UI chỉ đọc `media_integrity` ⇒ người xem không còn thấy cảnh báo từ 22/09; cờ `audio_integrity/media_issues/needs_audio_recover/gap_note` (22/09 20:14) là dư thừa suy ra từ báo cáo audit cũ 18/09.
 - Gỡ 4 cờ ở `videos.json`, `catalog.json`, `catalog_full.json`; đặt lại `media_audit_date/updated`. `media-review-queue.json`: B7 của f59aa7 xóa, hard_fail 2→1, review_only 39→40 (giữ A8d: transcript tạo 18/09 trước khi thay file).
-- Còn mở: (1) chạy lại `py scripts/transcribe_sku.py VIDEO-f59aa7` để có transcript khớp audio mới; (2) `h2dev_master.db` `lessons.size_bytes` của f59aa7 vẫn 60.794.706 — cần `build_master_db.js`; (3) `VIDEO-8e0275` audio gần rỗng vẫn mở.
+- Đã xử lý sau đó cùng ngày: `h2dev_master.db` `lessons.size_bytes` của f59aa7 = 61.620.154 (một UPDATE có giao dịch; đối chiếu từng dòng với bản dựng lại `build_master_db.js` ở vùng tạm = 0 khác biệt, integrity ok). `VIDEO-8e0275`: audio im tuyệt đối (`mean_volume` −91 dB, AAC 2 kbps, 88 phút) — video quay màn hình không tiếng, cờ đúng, cần voiceover/nguồn mới.
+- Còn mở: phụ đề `VIDEO-f59aa7` **lệch thời gian** so với file đã sửa (delta 0s → +493s dạng bậc thang; chỉ khớp ~62s đầu). `transcribe_sku.py` chạy thô KHÔNG thay thế được (vùng ~870–2500s ra câu ảo giác; chỉ số Whisper không tách được). Cần soát tay/forced alignment. Bằng chứng: `_audit/20260930-f59aa7-transcript-drift/README.md`.
 - Backup: `_backup/20260930-data-e2e-fix/`, `_backup/20260930-f59aa7-unflag/` (SHA256SUMS).
 
 ## 2026-09-30 — UI FIX-ALL: BOTTOM-NAV P0 + UI-01/03/09/11/14 + SỐ KÊNH + GATE [9]

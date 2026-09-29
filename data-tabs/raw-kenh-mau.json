@@ -298,6 +298,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": null,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-001.mp3"
    }
   },
   {
@@ -605,6 +613,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 180,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-002.mp3"
    }
   },
   {
@@ -885,6 +901,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 176,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-003.mp3"
    }
   },
   {
@@ -1170,6 +1194,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 184,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-004.mp3"
    }
   },
   {
@@ -1448,6 +1480,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 165,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-005.mp3"
    }
   },
   {
@@ -1735,6 +1775,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 136,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-006.mp3"
    }
   },
   {
@@ -2009,6 +2057,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 165,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-007.mp3"
    }
   },
   {
@@ -2266,6 +2322,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": null,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-008.mp3"
    }
   },
   {
@@ -2516,6 +2580,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 301,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-009.mp3"
    }
   },
   {
@@ -2761,6 +2833,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🌐",
+    "wpm": null,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-010.mp3"
    }
   },
   {
@@ -3011,6 +3091,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 160,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-011.mp3"
    }
   },
   {
@@ -3505,6 +3593,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 171,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-013.mp3"
    }
   },
   {
@@ -3754,6 +3850,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 149,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-014.mp3"
    }
   },
   {
@@ -4004,6 +4108,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 191,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-015.mp3"
    }
   },
   {
@@ -4254,6 +4366,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 131,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-016.mp3"
    }
   },
   {
@@ -4511,6 +4631,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 137,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-017.mp3"
    }
   },
   {
@@ -4791,6 +4919,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 144,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-018.mp3"
    }
   },
   {
@@ -5048,6 +5184,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 352,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-019.mp3"
    }
   },
   {
@@ -5335,6 +5479,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 169,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-020.mp3"
    }
   },
   {
@@ -5637,6 +5789,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 160,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-021.mp3"
    }
   },
   {
@@ -5917,6 +6077,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 176,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-022.mp3"
    }
   },
   {
@@ -6194,6 +6362,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🌐",
+    "wpm": null,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-023.mp3"
    }
   },
   {
@@ -6480,6 +6656,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "pt-BR",
+    "flag": "🇧🇷",
+    "wpm": 147,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-024.mp3"
    }
   },
   {
@@ -6760,6 +6944,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 168,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-025.mp3"
    }
   },
   {
@@ -7009,6 +7201,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 169,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-028.mp3"
    }
   },
   {
@@ -7313,6 +7513,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": null,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-029.mp3"
    }
   },
   {
@@ -7563,6 +7771,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 231,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-030.mp3"
    }
   },
   {
@@ -7830,6 +8046,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 3,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-031.mp3"
    }
   },
   {
@@ -8080,6 +8304,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 85,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-032.mp3"
    }
   },
   {
@@ -8317,6 +8549,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 56,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-033.mp3"
    }
   },
   {
@@ -8567,6 +8807,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 83,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-034.mp3"
    }
   },
   {
@@ -8824,6 +9072,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 108,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-035.mp3"
    }
   },
   {
@@ -9074,6 +9330,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 131,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-037.mp3"
    }
   },
   {
@@ -9324,6 +9588,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 125,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-038.mp3"
    }
   },
   {
@@ -9581,6 +9853,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 119,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-039.mp3"
    }
   },
   {
@@ -9840,6 +10120,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 77,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-040.mp3"
    }
   },
   {
@@ -10091,6 +10379,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 125,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-042.mp3"
    }
   },
   {
@@ -10343,6 +10639,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 152,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-043.mp3"
    }
   },
   {
@@ -10593,6 +10897,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 169,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-044.mp3"
    }
   },
   {
@@ -10855,7 +11167,15 @@
      "capturedAt": "2026-09-16",
      "note": "Anh chup man hinh moi 16/09/2026 PM - xac nhan so lieu refresh live"
     }
-   ]
+   ],
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 173,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-045.mp3"
+   }
   },
   {
    "id": "RAW-046",
@@ -11104,6 +11424,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 159,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-046.mp3"
    }
   },
   {
@@ -11354,6 +11682,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 141,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-047.mp3"
    }
   },
   {
@@ -11612,6 +11948,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 152,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-048.mp3"
    }
   },
   {
@@ -11862,6 +12206,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 447,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-049.mp3"
    }
   },
   {
@@ -12098,6 +12450,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 285,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-050.mp3"
    }
   },
   {
@@ -12378,6 +12738,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 180,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-051.mp3"
    }
   },
   {
@@ -12656,6 +13024,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 169,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-052.mp3"
    }
   },
   {
@@ -12934,6 +13310,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 128,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-053.mp3"
    }
   },
   {
@@ -13220,6 +13604,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 167,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-054.mp3"
    }
   },
   {
@@ -13509,6 +13901,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 75,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-055.mp3"
    }
   },
   {
@@ -13790,6 +14190,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 100,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-056.mp3"
    }
   },
   {
@@ -14079,6 +14487,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 63,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-057.mp3"
    }
   },
   {
@@ -14365,6 +14781,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 113,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-058.mp3"
    }
   },
   {
@@ -14623,6 +15047,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 124,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-059.mp3"
    }
   },
   {
@@ -14882,6 +15314,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 201,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-060.mp3"
    }
   },
   {
@@ -15133,6 +15573,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 177,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-062.mp3"
    }
   },
   {
@@ -15391,6 +15839,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 164,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-063.mp3"
    }
   },
   {
@@ -15647,6 +16103,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 144,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-064.mp3"
    }
   },
   {
@@ -15933,6 +16397,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 191,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-065.mp3"
    }
   },
   {
@@ -16190,6 +16662,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 176,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-066.mp3"
    }
   },
   {
@@ -16445,6 +16925,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 193,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-067.mp3"
    }
   },
   {
@@ -16721,6 +17209,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 151,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-068.mp3"
    }
   },
   {
@@ -17000,6 +17496,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 155,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-069.mp3"
    }
   },
   {
@@ -17250,6 +17754,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 156,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-070.mp3"
    }
   },
   {
@@ -17505,6 +18017,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 208,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-075.mp3"
    }
   },
   {
@@ -17773,6 +18293,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 143,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-076.mp3"
    }
   },
   {
@@ -18052,6 +18580,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 172,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-077.mp3"
    }
   },
   {
@@ -18331,6 +18867,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 175,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-078.mp3"
    }
   },
   {
@@ -18607,6 +19151,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 173,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-079.mp3"
    }
   },
   {
@@ -18891,6 +19443,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 95,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-080.mp3"
    }
   },
   {
@@ -19172,6 +19732,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 56,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-081.mp3"
    }
   },
   {
@@ -19451,6 +20019,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 180,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-082.mp3"
    }
   },
   {
@@ -19730,6 +20306,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 176,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-083.mp3"
    }
   },
   {
@@ -19988,6 +20572,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 168,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-084.mp3"
    }
   },
   {
@@ -20237,6 +20829,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 408,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-085.mp3"
    }
   },
   {
@@ -20487,6 +21087,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 124,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-086.mp3"
    }
   },
   {
@@ -20775,6 +21383,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 172,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-087.mp3"
    }
   },
   {
@@ -21051,6 +21667,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 221,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-088.mp3"
    }
   },
   {
@@ -21355,6 +21979,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ru-RU",
+    "flag": "🇷🇺",
+    "wpm": 123,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-089.mp3"
    }
   },
   {
@@ -21668,6 +22300,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 176,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-091.mp3"
    }
   },
   {
@@ -21947,6 +22587,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 157,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-092.mp3"
    }
   },
   {
@@ -22198,6 +22846,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-09",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 89,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-095.mp3"
    }
   },
   {
@@ -22326,6 +22982,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "es-ES",
+    "flag": "🇪🇸",
+    "wpm": 217,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-096.mp3"
    }
   },
   {
@@ -22461,6 +23125,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 163,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-097.mp3"
    }
   },
   {
@@ -22589,6 +23261,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 317,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-098.mp3"
    }
   },
   {
@@ -22717,6 +23397,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 117,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-099.mp3"
    }
   },
   {
@@ -22845,6 +23533,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "hi-IN",
+    "flag": "🇮🇳",
+    "wpm": 208,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-100.mp3"
    }
   },
   {
@@ -22972,6 +23668,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 36,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-101.mp3"
    }
   },
   {
@@ -23124,6 +23828,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 172,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-102.mp3"
    }
   },
   {
@@ -23252,6 +23964,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 141,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-103.mp3"
    }
   },
   {
@@ -23390,6 +24110,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 141,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-103.mp3"
    }
   },
   {
@@ -23528,6 +24256,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 141,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-103.mp3"
    }
   },
   {
@@ -23666,6 +24402,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 167,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-054.mp3"
    }
   },
   {
@@ -23804,6 +24548,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 167,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-054.mp3"
    }
   },
   {
@@ -23933,6 +24685,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 156,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-108.mp3"
    }
   },
   {
@@ -24071,6 +24831,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-13",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 156,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-108.mp3"
    }
   },
   {
@@ -24207,6 +24975,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 185,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-110.mp3"
    }
   },
   {
@@ -24343,6 +25119,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 160,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-111.mp3"
    }
   },
   {
@@ -24478,6 +25262,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 216,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-112.mp3"
    }
   },
   {
@@ -24613,6 +25405,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 155,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-113.mp3"
    }
   },
   {
@@ -24748,6 +25548,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 109,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-114.mp3"
    }
   },
   {
@@ -24884,6 +25692,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 168,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-115.mp3"
    }
   },
   {
@@ -25020,6 +25836,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 181,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-116.mp3"
    }
   },
   {
@@ -25164,7 +25988,15 @@
      "capturedAt": "2026-09-16",
      "note": "Anh chup man hinh moi 16/09/2026 PM - xac nhan so lieu refresh live"
     }
-   ]
+   ],
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 169,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-117.mp3"
+   }
   },
   {
    "id": "RAW-118",
@@ -25301,6 +26133,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 159,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-118.mp3"
    }
   },
   {
@@ -25437,6 +26277,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 127,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-119.mp3"
    }
   },
   {
@@ -25573,6 +26421,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 163,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-120.mp3"
    }
   },
   {
@@ -25706,6 +26562,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": null,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-121.mp3"
    }
   },
   {
@@ -25842,6 +26706,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🌐",
+    "wpm": null,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-122.mp3"
    }
   },
   {
@@ -25978,6 +26850,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 136,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-123.mp3"
    }
   },
   {
@@ -26114,6 +26994,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "es-ES",
+    "flag": "🌐",
+    "wpm": null,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-124.mp3"
    }
   },
   {
@@ -26250,6 +27138,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 80,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-125.mp3"
    }
   },
   {
@@ -26386,6 +27282,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ru-RU",
+    "flag": "🇷🇺",
+    "wpm": 127,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-126.mp3"
    }
   },
   {
@@ -26528,6 +27432,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ru-RU",
+    "flag": "🇷🇺",
+    "wpm": 123,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-089.mp3"
    }
   },
   {
@@ -26664,6 +27576,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ru-RU",
+    "flag": "🇷🇺",
+    "wpm": 117,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-128.mp3"
    }
   },
   {
@@ -26800,6 +27720,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ru-RU",
+    "flag": "🇷🇺",
+    "wpm": 133,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-129.mp3"
    }
   },
   {
@@ -26935,6 +27863,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 112,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-130.mp3"
    }
   },
   {
@@ -27070,6 +28006,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ru-RU",
+    "flag": "🇷🇺",
+    "wpm": 169,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-131.mp3"
    }
   },
   {
@@ -27206,6 +28150,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "es-ES",
+    "flag": "🇪🇸",
+    "wpm": 145,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-132.mp3"
    }
   },
   {
@@ -27342,6 +28294,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "es-ES",
+    "flag": "🇪🇸",
+    "wpm": 65,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-133.mp3"
    }
   },
   {
@@ -27478,6 +28438,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 103,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-134.mp3"
    }
   },
   {
@@ -27614,6 +28582,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 107,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-135.mp3"
    }
   },
   {
@@ -27750,6 +28726,14 @@
     "auditedAt": "2026-09-16",
     "evidenceDate": "2026-09-15",
     "schemaVersion": 1
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 161,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-136.mp3"
    }
   },
   {
@@ -27866,6 +28850,14 @@
     "latencySec": 5.05,
     "analyzedAt": "2026-09-16T15:07:19.836852+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 151,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-137.mp3"
    }
   },
   {
@@ -27982,6 +28974,14 @@
     "latencySec": 5.5,
     "analyzedAt": "2026-09-16T15:07:49.728121+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 140,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-138.mp3"
    }
   },
   {
@@ -28098,6 +29098,14 @@
     "latencySec": 6.51,
     "analyzedAt": "2026-09-16T15:07:52.200351+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 160,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-139.mp3"
    }
   },
   {
@@ -28214,6 +29222,14 @@
     "latencySec": 5.92,
     "analyzedAt": "2026-09-16T15:07:51.162871+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 157,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-140.mp3"
    }
   },
   {
@@ -28330,6 +29346,14 @@
     "latencySec": 5.86,
     "analyzedAt": "2026-09-16T15:07:50.663438+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 149,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-141.mp3"
    }
   },
   {
@@ -28446,6 +29470,14 @@
     "latencySec": 4.98,
     "analyzedAt": "2026-09-16T15:07:48.901211+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 27,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-142.mp3"
    }
   },
   {
@@ -28686,6 +29718,14 @@
     "sizeBytes": 186452,
     "sizeKb": "182.1",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "wpm": 249,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-144.mp3"
    }
   },
   {
@@ -28925,6 +29965,14 @@
     "sizeBytes": 169617,
     "sizeKb": "165.6",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "wpm": 241,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-146.mp3"
    }
   },
   {
@@ -29041,6 +30089,14 @@
     "sizeBytes": 169815,
     "sizeKb": "165.8",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "wpm": 235,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-147.mp3"
    }
   },
   {
@@ -29157,6 +30213,14 @@
     "sizeBytes": 140063,
     "sizeKb": "136.8",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "wpm": 211,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-148.mp3"
    }
   },
   {
@@ -29273,6 +30337,14 @@
     "sizeBytes": 210070,
     "sizeKb": "205.1",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "wpm": 224,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-149.mp3"
    }
   },
   {
@@ -29389,6 +30461,14 @@
     "sizeBytes": 193668,
     "sizeKb": "189.1",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "wpm": 195,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-150.mp3"
    }
   },
   {
@@ -29751,6 +30831,14 @@
     "sizeBytes": 153751,
     "sizeKb": "150.1",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 472,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-153.mp3"
    }
   },
   {
@@ -29868,6 +30956,14 @@
     "sizeBytes": 194851,
     "sizeKb": "190.3",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 297,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-154.mp3"
    }
   },
   {
@@ -29985,6 +31081,14 @@
     "sizeBytes": 168772,
     "sizeKb": "164.8",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "vi-VN",
+    "flag": "🇻🇳",
+    "wpm": 241,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-155.mp3"
    }
   },
   {
@@ -30102,6 +31206,14 @@
     "sizeBytes": 130623,
     "sizeKb": "127.6",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 285,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-156.mp3"
    }
   },
   {
@@ -30219,6 +31331,14 @@
     "sizeBytes": 208679,
     "sizeKb": "203.8",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 289,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-157.mp3"
    }
   },
   {
@@ -30336,6 +31456,14 @@
     "sizeBytes": 158604,
     "sizeKb": "154.9",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ja-JP",
+    "flag": "🇯🇵",
+    "wpm": 280,
+    "wpmNote": "chars/min",
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-158.mp3"
    }
   },
   {
@@ -30453,6 +31581,14 @@
     "sizeBytes": 168948,
     "sizeKb": "165.0",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 107,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-159.mp3"
    }
   },
   {
@@ -30569,6 +31705,14 @@
     "sizeBytes": 161188,
     "sizeKb": "157.4",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 91,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-160.mp3"
    }
   },
   {
@@ -30685,6 +31829,14 @@
     "sizeBytes": 202050,
     "sizeKb": "197.3",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 69,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-161.mp3"
    }
   },
   {
@@ -30801,6 +31953,14 @@
     "sizeBytes": 196523,
     "sizeKb": "191.9",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 95,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-162.mp3"
    }
   },
   {
@@ -30917,6 +32077,14 @@
     "sizeBytes": 213790,
     "sizeKb": "208.8",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 87,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-163.mp3"
    }
   },
   {
@@ -31033,6 +32201,14 @@
     "sizeBytes": 212861,
     "sizeKb": "207.9",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 61,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-164.mp3"
    }
   },
   {
@@ -31149,6 +32325,14 @@
     "sizeBytes": 182531,
     "sizeKb": "178.3",
     "format": "JPEG"
+   },
+   "voiceDna": {
+    "code": "ko-KR",
+    "flag": "🇰🇷",
+    "wpm": 87,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-165.mp3"
    }
   },
   {
@@ -31265,6 +32449,14 @@
     "latencySec": 5.19,
     "analyzedAt": "2026-09-16T15:08:17.950533+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 7,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-166.mp3"
    }
   },
   {
@@ -31381,6 +32573,14 @@
     "latencySec": 4.47,
     "analyzedAt": "2026-09-16T15:08:16.640209+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 79,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-167.mp3"
    }
   },
   {
@@ -31497,6 +32697,14 @@
     "latencySec": 4.52,
     "analyzedAt": "2026-09-16T15:08:17.550272+00:00",
     "source": "rss_clean"
+   },
+   "voiceDna": {
+    "code": "en-US",
+    "flag": "🇺🇸",
+    "wpm": 148,
+    "wpmNote": null,
+    "measuredAt": "2026-09-29",
+    "sampleUrl": "assets/voice-samples/RAW-168.mp3"
    }
   }
  ],

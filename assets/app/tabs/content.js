@@ -1623,6 +1623,9 @@ async function renderRawKenh() {
       ? `<span class="badge badge-green">vidIQ Verified</span>`
       : (r.duplicateOf ? `<span class="badge badge-amber">Trùng (${esc(r.duplicateOf)})</span>` : (r.status === 'OCR_COMPLETE' ? `<span class="badge badge-blue">OCR đủ</span>` : `<span class="badge badge-amber">Manual</span>`));
     const langInfo = r.audioLanguageInfo || (r.deepIntelligence && r.deepIntelligence.audioLanguage ? { flag: r.deepIntelligence.languageFlag || '', code: r.deepIntelligence.audioLanguage } : null);
+    /* Bo 11 muc 4 (29/09): voiceDna = ket qua STT do that (faster-whisper) — uu tien hien neu co */
+    const vd = r.voiceDna || null;
+    const vdWpm = vd && vd.wpm ? (vd.wpm + (vd.wpmNote ? ' cpm' : ' WPM')) : '';
     const imgSrc = r.fileName ? 'assets/raw-kenh/' + encodeURIComponent(r.fileName) : 'assets/thumbs/placeholder.svg';
     const tv = r.thumbnailVision || null;
     return `
@@ -1631,7 +1634,7 @@ async function renderRawKenh() {
         <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" width="640" height="360" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
         <div class="absolute top-2 left-2 flex items-center gap-1" style="z-index:var(--h2-z-base)">
           <span class="bg-ink-900/80 px-2 py-0.5 rounded-xl text-2xs font-mono text-gray-300 border border-white/10 truncate">${esc(r.id)}</span>
-          ${langInfo ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-2xs shrink-0" title="${esc(langInfo.language || langInfo.code)}">${esc(langInfo.flag)} ${esc(langInfo.code ? langInfo.code.split('-')[0].toUpperCase() : '')}</span>` : ''}
+          ${langInfo || vd ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-2xs shrink-0" title="${vd ? 'Ngôn ngữ + WPM đo từ phôi giọng (STT 29/09)' : esc(langInfo.language || langInfo.code)}">${esc((vd && vd.flag) || langInfo.flag)} ${esc((vd && vd.code ? vd.code.split('-')[0] : (langInfo.code ? langInfo.code.split('-')[0] : '')).toUpperCase())}${vdWpm ? ' · ' + esc(vdWpm) : ''}</span>` : ''}
         </div>
         <span class="absolute top-2 right-2 bg-brand-600/90 text-white text-2xs font-medium px-2 py-0.5 rounded-xl truncate max-w-[50%]">${esc(r.editorialNiche || r.niche || 'Chưa rõ')}</span>
         ${tv ? `<span style="z-index:var(--h2-z-base)" class="absolute bottom-2 left-2 ${tv.isFaceless ? 'bg-emerald-950/90 text-emerald-300 border-emerald-500/50' : 'bg-red-950/90 text-red-300 border-red-500/50'} text-2xs font-bold px-2 py-0.5 rounded-lg border backdrop-blur-sm" title="Vision AI (9Router local) phân loại cấp kênh · ${esc(tv.agreement || '')}">${tv.isFaceless ? ico('drama', 14) + ' Faceless' : ico('user', 14) + ' Có mặt người thật'}</span>` : ''}
@@ -1772,6 +1775,7 @@ ${grouped.map(g => {
             <div class="text-sm font-semibold text-white truncate">${esc(ch.handle)}</div>
             <div class="text-2xs text-gray-400 truncate">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV</div>
             ${(ch.markets && ch.markets.length) ? `<div class="text-2xs text-gray-500 truncate mt-0.5">${ch.markets.map(m => esc(stripDecorEmoji(m))).join(' · ')}</div>` : ''}
+            ${ch.voiceDna ? `<div class="text-2xs text-sky-400 font-medium truncate mt-0.5" title="Phôi giọng 45s đo tự động (STT 29/09)">${esc(ch.voiceDna.flag)} ${esc(ch.voiceDna.code)}${ch.voiceDna.wpm ? ` · ${ch.voiceDna.wpm}${ch.voiceDna.wpmNote ? ' cpm' : ' WPM'}` : ''} · có phôi giọng</div>` : ''}
           </div>
           <span class="text-gray-500 shrink-0 text-sm inline-flex">${ico('arrow-up-right', 14)}</span>
         </a>`).join('')}

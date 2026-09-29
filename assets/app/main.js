@@ -1055,11 +1055,12 @@
                 <span style="color:#e2e8f0; font-weight:600;">${esc(decodeURIComponent(pData.handle || ch.handle || ''))}</span>
                 <span>•</span>
                 <span>Quốc gia: <strong class="c-slate-100">${esc(countryDisplay)}</strong></span>
-                ${(voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (r.audioLanguageInfo && r.audioLanguageInfo.flag) ? `
+                ${(voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (r.voiceDna) || (r.audioLanguageInfo && r.audioLanguageInfo.flag) ? `
                 <span>•</span>
                 <span style="display:inline-flex; align-items:center; gap:0.25rem; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.35); padding:0.08rem 0.45rem; border-radius:0.35rem; color:#38bdf8; font-weight:700;">
-                  <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (r.audioLanguageInfo && r.audioLanguageInfo.flag))}</span>
-                  <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.audioLanguage) || (r.audioLanguageInfo && r.audioLanguageInfo.language))}</span>
+                  <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (r.voiceDna && r.voiceDna.flag) || (r.audioLanguageInfo && r.audioLanguageInfo.flag))}</span>
+                  <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.audioLanguage) || (r.voiceDna && r.voiceDna.code) || (r.audioLanguageInfo && r.audioLanguageInfo.language))}</span>
+                  ${r.voiceDna && r.voiceDna.wpm ? `<span>· ${esc(String(r.voiceDna.wpm))}${r.voiceDna.wpmNote ? ' cpm' : ' WPM'}</span>` : ''}
                 </span>` : ''}
                 <span>•</span>
                 <span style="color:#10b981; font-weight:600;">${esc(stripDecorEmoji(vA.healthBadge) || (pData.longevityAudit ? pData.longevityAudit.sustainabilityStatus : ''))}</span>

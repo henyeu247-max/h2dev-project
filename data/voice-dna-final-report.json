@@ -38,7 +38,7 @@
    "slot": "GEN_HDVietsubh7u",
    "handle": "@HDVietsub-h7u",
    "title": "@HDVietsub-h7u",
-   "reason": "music-heavy"
+   "reason": "channel-dead"
   },
   {
    "slot": "GEN_HealthyToday0",
@@ -152,7 +152,7 @@
    "slot": "GEN_redvoices90",
    "handle": "@redvoices90",
    "title": "@redvoices90",
-   "reason": "music-heavy"
+   "reason": "channel-dead"
   },
   {
    "slot": "GEN_toastertalesusa",
@@ -239,5 +239,11 @@
    "reason": "channel-dead"
   }
  ],
- "note": "Tran that te nguon YouTube: 37 kenh bi xoa (404 ca kenh hoac toan bo video), 2 kenh song nhung nhac nen day (khong dat chuan khong-nhac cua Bo 11). Da thu: video rank 1-10 trong DB + channel listing 3 video moi nhat + deno JS runtime."
+ "note": "Tran that te nguon YouTube: 39/39 kenh chua co sample da bi XOA khoi YouTube (probe 39/39 CHANNEL_DELETED_404 2026-09-29 19:49 GMT+7). 2 kenh (HDVietsub-h7u, redvoices90) con song luc extract 17:12 nhung chet sau do. Da thu: video rank 1-10 + channel listing + deno JS runtime. 257 sample dat chuan vang Bo 11 (audit 257/257 PASS).",
+ "probe": {
+  "method": "yt-dlp flat-playlist",
+  "summary": "39/39 CHANNEL_DELETED_404",
+  "file": "data/voice-dna-probe-final.json",
+  "markedAt": "2026-09-29"
+ }
 }

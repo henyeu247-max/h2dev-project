@@ -219,7 +219,7 @@ function videoCard(v) {
     ${wp}
   </a>
   <div class="p-4 min-w-0">
-    <a href="${vUrl}" class="block text-base font-bold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere] group-hover:text-brand-300 transition-colors font-heading">${esc(v.title)}</a>
+    <a href="${vUrl}" class="block text-base font-bold text-white leading-snug line-clamp-2 min-h-[38px] break-words [overflow-wrap:anywhere] group-hover:text-brand-300 transition-colors font-heading">${(window.H2Core && H2Core.escTitle ? H2Core.escTitle : esc)(v.title)}</a>
     <div class="flex flex-wrap gap-1.5 mt-2.5 min-w-0 items-center">
       ${v.contentNiche ? `<span class="badge badge-green text-2xs">${esc(v.contentNiche)}</span>` : `<span class="badge badge-muted text-2xs">${esc(v.niche || 'Khác')}</span>`}
       ${markets.map(m => `<span class="text-2xs text-gray-400 font-medium">${esc(stripDecorEmoji(m))}</span>`).join('<span class="text-gray-600 text-2xs">·</span>')}
@@ -634,7 +634,7 @@ async function renderNgachXanh() {
     return `<a href="/lotrinh/${encodeURIComponent(v.sku)}" class="flex gap-2.5 p-2 rounded-xl hover:bg-ink-700/60 border border-transparent hover:border-ink-600 transition-colors group min-w-0 ${extraClass || ''}" ${extraAttr || ''}>
   <img src="${esc(v.image || 'assets/thumbs/placeholder.svg')}" alt="Thumbnail bài học: ${esc(v.title)}" width="72" height="40" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-[72px] h-[40px] rounded-xl object-cover shrink-0 bg-black">
   <div class="min-w-0 flex-1">
-    <div class="text-xs font-medium text-white leading-snug line-clamp-2 group-hover:text-brand-200 transition-colors break-words">${esc(v.title)}</div>
+    <div class="text-xs font-medium text-white leading-snug line-clamp-2 group-hover:text-brand-200 transition-colors break-words">${(window.H2Core && H2Core.escTitle ? H2Core.escTitle : esc)(v.title)}</div>
     <div class="flex items-center flex-wrap gap-x-2 gap-y-0.5 mt-1">
       <span class="text-2xs text-gray-500 font-mono truncate">${esc(v.sku)}</span>
       ${v.published_at ? `<span class="text-2xs text-gray-400 shrink-0">${esc(v.published_at)}</span>` : ''}

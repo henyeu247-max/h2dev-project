@@ -362,7 +362,8 @@ window.addEventListener('keydown', (e)=>{
       btnNext.onclick = () => { if(nextItem) location.href = makeNavUrl(nextItem.sku); };
     }
     document.title=v.title+' — H2DEV Project';
-    document.getElementById('ptitle').textContent=v.title;
+    /* 2026-09-30: ngay trong tieu de khong ngat dong (escTitle da esc truoc khi boc span) */
+    if (window.H2Core && H2Core.escTitle) document.getElementById('ptitle').innerHTML=H2Core.escTitle(v.title); else document.getElementById('ptitle').textContent=v.title;
     const metaEl=document.getElementById('pmeta');
     metaEl.innerHTML = [
       badge(esc(sku), 'badge-muted font-mono badge-sku'),

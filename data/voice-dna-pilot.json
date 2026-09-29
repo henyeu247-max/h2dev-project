@@ -1,6 +1,6 @@
 {
  "schema": "h2dev.voice-dna-pilot.v1",
- "generatedAt": "2026-09-29T12:42:25",
+ "generatedAt": "2026-09-29T17:15:51",
  "results": [
   {
    "rawId": "RAW-012",
@@ -10,31 +10,12 @@
     "8ahK-eAAZ98",
     "DqKq4n58sf8",
     "eqAx4zS-cAk",
-    "3Z2UbSm3CfI"
-   ],
-   "status": "download-fail"
-  },
-  {
-   "rawId": "RAW-035",
-   "handle": "@PassionLearningLive",
-   "videoIds": [
-    "TGlVk9nvaXI",
-    "Z6p9OqrrV9w",
-    "KcXPTj7FPmE",
-    "AFpYFFb3ztg",
-    "VuYoJKvQ1Lw"
-   ],
-   "status": "download-fail"
-  },
-  {
-   "rawId": "RAW-037",
-   "handle": "@FamilyLifeEnglish888",
-   "videoIds": [
-    "16WhdicNdgM",
-    "i9tI32yrUdU",
-    "qk_yy9Xz3ec",
-    "mEIHIIwmOlE",
-    "9yXdF-xbrMo"
+    "3Z2UbSm3CfI",
+    "o8BcxNdHyhU",
+    "WJNA2fcrXqI",
+    "-b7o9k6W9PI",
+    "RVTVVve2m-I",
+    "4zI3rPqMlQ4"
    ],
    "status": "download-fail"
   },
@@ -46,7 +27,12 @@
     "ichr24QTMHE",
     "aJUJsFCD6UY",
     "ZenMPoOB1HY",
-    "IfksyIk-k6M"
+    "IfksyIk-k6M",
+    "VAzM-sqxnZ0",
+    "mkSab8dm66Y",
+    "MWg-kABXnoA",
+    "kNo1GqtnOf8",
+    "-ssGJagpQmE"
    ],
    "status": "download-fail"
   },
@@ -58,7 +44,12 @@
     "_Rmf11JvcuE",
     "sULs-Pa3pgE",
     "FcAgASEISdM",
-    "8hnnaNFC0as"
+    "8hnnaNFC0as",
+    "H-doT97tohI",
+    "Ktclc8NQDtc",
+    "wHHuKxYjCbo",
+    "cmWFhq7R2QI",
+    "QrU_TGVsZck"
    ],
    "status": "download-fail"
   },
@@ -70,7 +61,302 @@
     "LypNo1Ld2eI",
     "hYWjrvD57Ek",
     "TWCtwukWdUw",
-    "Jq8G-7bsLRs"
+    "Jq8G-7bsLRs",
+    "1s62z0ispH4",
+    "eN-JSn5tnsQ",
+    "4uyndGJDtic",
+    "L3x9QV7cVx4",
+    "xMhwUuW0FLs"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_x4d9db8690f",
+   "handle": "@복이오는길",
+   "videoIds": [
+    "CH:@복이오는길"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_mokamokae9f",
+   "handle": "@mokamoka-e9f",
+   "videoIds": [
+    "CH:@mokamoka-e9f"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_HealthyToday0",
+   "handle": "@HealthyToday0",
+   "videoIds": [
+    "CH:@HealthyToday0"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_RichPatternResearchInstitute",
+   "handle": "@RichPatternResearchInstitute",
+   "videoIds": [
+    "CH:@RichPatternResearchInstitute"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_l4z",
+   "handle": "@スピリチュアルの泉-l4z",
+   "videoIds": [
+    "CH:@スピリチュアルの泉-l4z"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_EricBennettMD",
+   "handle": "@EricBennettMD",
+   "videoIds": [
+    "CH:@EricBennettMD"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_oijfwaoldsfae",
+   "handle": "@oijfwaoldsfae",
+   "videoIds": [
+    "CH:@oijfwaoldsfae"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_fansdrWilliamLI",
+   "handle": "@fansdrWilliamLI",
+   "videoIds": [
+    "CH:@fansdrWilliamLI"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_NngNhToonReview",
+   "handle": "@NắngNhỏToonReview",
+   "videoIds": [
+    "CH:@NắngNhỏToonReview"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_x1b1aabefbd",
+   "handle": "@幻界と神域の扉",
+   "videoIds": [
+    "CH:@幻界と神域の扉"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_ThcPhmScKhou8y",
+   "handle": "@ThựcPhẩmSứcKhoẻ-u8y",
+   "videoIds": [
+    "CH:@ThựcPhẩmSứcKhoẻ-u8y"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_x5cc92669e5",
+   "handle": "@偉人の救い",
+   "videoIds": [
+    "CH:@偉人の救い"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_ScriptureMadeSimpleTV",
+   "handle": "@ScriptureMadeSimpleTV",
+   "videoIds": [
+    "CH:@ScriptureMadeSimpleTV"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_BiHcTuiGiVN",
+   "handle": "@BàiHọcTuổiGià-VN",
+   "videoIds": [
+    "CH:@BàiHọcTuổiGià-VN"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_xeaa3a46d59",
+   "handle": "@静かな家族の秘密",
+   "videoIds": [
+    "CH:@静かな家族の秘密"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_mimymedia",
+   "handle": "@mimymedia",
+   "videoIds": [
+    "CH:@mimymedia"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_kyzoravietsub",
+   "handle": "@kyzoravietsub",
+   "videoIds": [
+    "CH:@kyzoravietsub"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_xbe3cd9d344",
+   "handle": "@静思の道",
+   "videoIds": [
+    "CH:@静思の道"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_UCeVwhrEnYjCNdaDr47x4dSw",
+   "handle": "@UCeVwhrEnYjCNdaDr47x4dSw",
+   "videoIds": [
+    "CH:@UCeVwhrEnYjCNdaDr47x4dSw"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_UCEGZeUt6HeseHScQEcqTxw",
+   "handle": "@UCEGZ_eUt6HeseHScQEcqTxw",
+   "videoIds": [
+    "CH:@UCEGZ_eUt6HeseHScQEcqTxw"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_HDVietsubh7u",
+   "handle": "@HDVietsub-h7u",
+   "videoIds": [
+    "CH:@HDVietsub-h7u"
+   ],
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_HDVietsubh7u.mp3",
+   "durationSec": 45.0,
+   "channels": 1,
+   "sampleRate": 44100,
+   "inputLufs": "-16.42"
+  },
+  {
+   "rawId": "GEN_redvoices90",
+   "handle": "@redvoices90",
+   "videoIds": [
+    "CH:@redvoices90"
+   ],
+   "status": "ok",
+   "mp3": "assets/voice-samples/GEN_redvoices90.mp3",
+   "durationSec": 45.0,
+   "channels": 1,
+   "sampleRate": 44100,
+   "inputLufs": "-16.45"
+  },
+  {
+   "rawId": "GEN_xfc18df8254",
+   "handle": "@경제빠월",
+   "videoIds": [
+    "CH:@경제빠월"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_VaultBoy001",
+   "handle": "@VaultBoy001",
+   "videoIds": [
+    "CH:@VaultBoy001"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_CHn8i",
+   "handle": "@漫画で学ぶシニアの健康CH-n8i",
+   "videoIds": [
+    "CH:@漫画で学ぶシニアの健康CH-n8i"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_KhmPhTrungHoaHT",
+   "handle": "@KhámPháTrungHoa-HT",
+   "videoIds": [
+    "CH:@KhámPháTrungHoa-HT"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_TuiGiRadioVN",
+   "handle": "@TuổiGiàRadio_VN",
+   "videoIds": [
+    "CH:@TuổiGiàRadio_VN"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_FinalUrgency",
+   "handle": "@FinalUrgency",
+   "videoIds": [
+    "CH:@FinalUrgency"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_x59d20c6d6d",
+   "handle": "@남현진전문의",
+   "videoIds": [
+    "CH:@남현진전문의"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_x71422d480c",
+   "handle": "@성실한경제학",
+   "videoIds": [
+    "CH:@성실한경제학"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_fuetunoijin",
+   "handle": "@fuetunoijin",
+   "videoIds": [
+    "CH:@fuetunoijin"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_1",
+   "handle": "@偉人のコンパス1",
+   "videoIds": [
+    "CH:@偉人のコンパス1"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_x8a29727ea7",
+   "handle": "@새벽의두만강",
+   "videoIds": [
+    "CH:@새벽의두만강"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_toastertalesusa",
+   "handle": "@toastertalesusa",
+   "videoIds": [
+    "CH:@toastertalesusa"
+   ],
+   "status": "download-fail"
+  },
+  {
+   "rawId": "GEN_purebusinesshorts",
+   "handle": "@purebusinesshorts",
+   "videoIds": [
+    "CH:@purebusinesshorts"
    ],
    "status": "download-fail"
   }

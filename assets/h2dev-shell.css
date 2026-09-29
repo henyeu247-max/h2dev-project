@@ -540,3 +540,6 @@ html { scrollbar-gutter: stable; }
   height: 44px;
   transform: translate(-50%, -50%);
 }
+
+/* 2026-09-30: ngay dd-mm-yyyy trong tieu de bai khong bi ngat o dau "-" (H2Core.escTitle boc span nay). */
+.nowrap-date { white-space: nowrap; }

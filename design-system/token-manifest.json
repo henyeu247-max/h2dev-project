@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedFrom": "MOI file .css SONG (loai tru: _backup/, _archive/, node_modules/, data/, va file build assets/tailwind.css)",
   "scanner": "scripts/sync-tokens.js",
-  "usageSources": 176,
+  "usageSources": 177,
   "cssSources": 10,
   "totalTokens": 98,
   "tokens": {

@@ -1,7 +1,35 @@
 {
   "schema": "h2dev.media-integrity-registry.v1",
-  "generated_at": "2026-09-22T03:04:04",
-  "note": "140/140 video media sach 100% (0 file hong).",
-  "broken_count": 0,
-  "videos": {}
+  "generated_at": "2026-09-30T00:00:00",
+  "note": "Video co luong media HONG (thieu du lieu that). UI/server doc de canh bao. 135/136 file sach; VIDEO-f59aa7 thieu 67,5% audio; VIDEO-8e0275 audio rong (xem catalog).",
+  "broken_count": 1,
+  "videos": {
+    "VIDEO-f59aa7": {
+      "status": "BROKEN_AUDIO_TRUNCATED",
+      "detected_at": "2026-09-18",
+      "redetected_at": "2026-09-30",
+      "detected_by": "scripts/audit_videos_v2.py :: audio_integrity() [3 phep do doc lap] + do RMS tung giay (ffmpeg pcm 16k)",
+      "severity": "high",
+      "symptom": "Audio chi co tieng o 818/2588s (31,6%); 1747s (67,5%) la digital zero, xep theo khoi ~6s (HLS chunk mat). File 22/09 dien day goi tin bang zero nen packet count du (111466) va 3 phep do goi tin/decode cu bao ok gia.",
+      "measured": {
+        "codec": "aac",
+        "container_duration_sec": 2588.21,
+        "audio_seconds_total": 2588,
+        "audio_seconds_digital_zero": 1747,
+        "audio_seconds_speech_level": 818,
+        "ratio_to_expected": 0.316,
+        "original_backup_audio_seconds": 794,
+        "blocks_matched_to_original": "51/51 (tuong quan >= 0,99)",
+        "audio_packets_actual_2026_09_18": 34202,
+        "audio_packets_actual_2026_09_22": 111466,
+        "verdict": "broken"
+      },
+      "root_cause": "Nguon HLS/DRM mat ~2/3 khoi audio luc tai; file 22/09 chi dien zero de du goi tin. KHONG phai loi phu de, KHONG phai loi seek/timestamp.",
+      "action": {
+        "subtitle": "Phu de 135 doan phu 824s = gan het phan audio con lai (2026-09-30). Khoang trong con lai la im lang so, khong co loi de chep.",
+        "user_visible": "UI hien canh bao chat luong cho video nay"
+      },
+      "remediation_required": "Tai lai video tu nguon (mona-cloud HLS) de lay du audio; sau do chay lai py scripts/transcribe_sku.py VIDEO-f59aa7"
+    }
+  }
 }

@@ -1,9 +1,9 @@
 {
  "schema": "h2dev.voice-dna-audit.v1",
- "generatedAt": "2026-09-29T12:52:51",
+ "generatedAt": "2026-09-29T13:35:28",
  "target": "-16.0 LUFS ±0.5",
- "total": 142,
- "passed": 142,
+ "total": 143,
+ "passed": 143,
  "failed": 0,
  "report": [
   {
@@ -319,6 +319,17 @@
    "rawId": "RAW-032",
    "lufs": -16.43,
    "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-033.mp3",
+   "rawId": "RAW-033",
+   "lufs": -16.44,
+   "dev": 0.44,
    "dur": 45.0,
    "speechDensity": 1.0,
    "verdict": [

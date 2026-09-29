@@ -1,10 +1,10 @@
 {
  "schema": "h2dev.voice-dna-audit.v1",
- "generatedAt": "2026-09-29T16:02:43",
+ "generatedAt": "2026-09-29T16:40:31",
  "target": "-16.0 LUFS ±0.5",
- "total": 237,
- "passed": 237,
- "failed": 0,
+ "total": 256,
+ "passed": 254,
+ "failed": 2,
  "report": [
   {
    "file": "GEN_100.mp3",
@@ -51,10 +51,32 @@
    ]
   },
   {
+   "file": "GEN_1_8c9758.mp3",
+   "rawId": "GEN_1_8c9758",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.85,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_22.mp3",
    "rawId": "GEN_22",
    "lufs": -16.44,
    "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_2275.mp3",
+   "rawId": "GEN_2275",
+   "lufs": -16.45,
+   "dev": 0.45,
    "dur": 45.0,
    "speechDensity": 1.0,
    "verdict": [
@@ -194,10 +216,32 @@
    ]
   },
   {
+   "file": "GEN_danggyung.mp3",
+   "rawId": "GEN_danggyung",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_desidilse.mp3",
    "rawId": "GEN_desidilse",
    "lufs": -16.46,
    "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_discoverwildlifeen.mp3",
+   "rawId": "GEN_discoverwildlifeen",
+   "lufs": -16.44,
+   "dev": 0.44,
    "dur": 45.0,
    "speechDensity": 1.0,
    "verdict": [
@@ -220,6 +264,17 @@
    "rawId": "GEN_everydaythingsexplain",
    "lufs": -16.44,
    "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_faunapse.mp3",
+   "rawId": "GEN_faunapse",
+   "lufs": -16.42,
+   "dev": 0.42,
    "dur": 45.0,
    "speechDensity": 1.0,
    "verdict": [
@@ -257,6 +312,17 @@
    "speechDensity": 1.0,
    "verdict": [
     "OK"
+   ]
+  },
+  {
+   "file": "GEN_HDVietsubh7u.mp3",
+   "rawId": "GEN_HDVietsubh7u",
+   "lufs": -16.42,
+   "dev": 0.42,
+   "dur": 45.0,
+   "speechDensity": 0.578,
+   "verdict": [
+    "SPEECH"
    ]
   },
   {
@@ -458,6 +524,17 @@
    ]
   },
   {
+   "file": "GEN_livingzoo.mp3",
+   "rawId": "GEN_livingzoo",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_m2y.mp3",
    "rawId": "GEN_m2y",
    "lufs": -16.42,
@@ -486,6 +563,17 @@
    "dev": 0.45,
    "dur": 45.0,
    "speechDensity": 0.929,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_MtiBnhAnv6s.mp3",
+   "rawId": "GEN_MtiBnhAnv6s",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
    "verdict": [
     "OK"
    ]
@@ -524,6 +612,28 @@
    ]
   },
   {
+   "file": "GEN_redvoices90.mp3",
+   "rawId": "GEN_redvoices90",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 0.575,
+   "verdict": [
+    "SPEECH"
+   ]
+  },
+  {
+   "file": "GEN_relax.mp3",
+   "rawId": "GEN_relax",
+   "lufs": -16.46,
+   "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 0.983,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_s1s.mp3",
    "rawId": "GEN_s1s",
    "lufs": -16.45,
@@ -557,6 +667,17 @@
    ]
   },
   {
+   "file": "GEN_simbot2.mp3",
+   "rawId": "GEN_simbot2",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_skywatcherstories.mp3",
    "rawId": "GEN_skywatcherstories",
    "lufs": -16.45,
@@ -579,10 +700,32 @@
    ]
   },
   {
+   "file": "GEN_t5d.mp3",
+   "rawId": "GEN_t5d",
+   "lufs": -16.43,
+   "dev": 0.43,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_tastinghistory.mp3",
    "rawId": "GEN_tastinghistory",
    "lufs": -16.44,
    "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_thebadonesseries.mp3",
+   "rawId": "GEN_thebadonesseries",
+   "lufs": -16.45,
+   "dev": 0.45,
    "dur": 45.0,
    "speechDensity": 1.0,
    "verdict": [
@@ -744,12 +887,34 @@
    ]
   },
   {
+   "file": "GEN_wildanimalsb52.mp3",
+   "rawId": "GEN_wildanimalsb52",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_x050001b666.mp3",
    "rawId": "GEN_x050001b666",
    "lufs": -16.44,
    "dev": 0.44,
    "dur": 45.0,
    "speechDensity": 0.959,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x0c236ecb26.mp3",
+   "rawId": "GEN_x0c236ecb26",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
    "verdict": [
     "OK"
    ]
@@ -772,6 +937,17 @@
    "dev": 0.46,
    "dur": 45.0,
    "speechDensity": 0.906,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x2c932f7de1.mp3",
+   "rawId": "GEN_x2c932f7de1",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
    "verdict": [
     "OK"
    ]
@@ -814,6 +990,17 @@
    "rawId": "GEN_x5eebc2ae04",
    "lufs": -16.45,
    "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_x66d0d13877.mp3",
+   "rawId": "GEN_x66d0d13877",
+   "lufs": -16.44,
+   "dev": 0.44,
    "dur": 45.0,
    "speechDensity": 1.0,
    "verdict": [
@@ -975,6 +1162,17 @@
    ]
   },
   {
+   "file": "GEN_xe301b5cd30.mp3",
+   "rawId": "GEN_xe301b5cd30",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
    "file": "GEN_xed9d2082b0.mp3",
    "rawId": "GEN_xed9d2082b0",
    "lufs": -16.46,
@@ -1012,6 +1210,17 @@
    "rawId": "GEN_xf9dff2d135",
    "lufs": -16.46,
    "dev": 0.46,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_y10k.mp3",
+   "rawId": "GEN_y10k",
+   "lufs": -16.44,
+   "dev": 0.44,
    "dur": 45.0,
    "speechDensity": 1.0,
    "verdict": [

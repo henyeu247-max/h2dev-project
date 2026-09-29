@@ -323,5 +323,19 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   3. Cổng mới **BẮT BUỘC PROBE**: `_tmp-probe-tokens.js` chứng minh bắt được **đổi giá trị / thêm / xoá** token, và phục hồi byte-identical.
   4. Khi phát hiện "danh sách ≠ thực tế", phải **quét exhaustive theo VAI TRÒ** rồi **đối chiếu 2 CHIỀU** (thiếu ∪ thừa), không chỉ so 1 chiều.
 
+### [SCAR-038] Bẫy Chạy `gate-p2 --probe` Bị Timeout Giết Giữa Chừng → File Nguồn Kẹt Lỗi Tiêm (2026-09-30)
+- **Hiện tượng:** chạy `node scripts/gate-p2.js --probe` trực tiếp trên ổ mount (chậm) bị shell timeout 120s giết → `assets/h2dev-primitives.css` còn nguyên lỗi tiêm `@keyframes h2-skeleton-shimmer-ZZ` (probe chưa kịp restore). Chạy nền (`nohup … &`) trong sandbox cũng bị giết cùng shell cha.
+- **Phát hiện nhờ:** so byte với backup trước khi sửa (`cmp` với `_backup/<ngày>/`) — hash check chỉ các file mình sửa là KHÔNG đủ, phải kiểm cả file mà probe đụng tới.
+- **Luật:** (1) Trước `--probe` luôn `sha256sum` MỌI file đích của probe; sau đó `sha256sum -c`. (2) Không chạy probe trên ổ mount chậm dưới timeout — **mirror** cây nguồn (`rsync` chỉ `.css/.js/.mjs/.html`, loại SKIP_DIR) sang đĩa cục bộ rồi chạy probe ở mirror (0,1s/lượt thay vì >2 phút). (3) Nếu bị giết giữa chừng: khôi phục từ backup, không đoán.
 
+### [SCAR-039] Bẫy Lưới Cố Định `repeat(N)` Cho Nav Sinh Động → Nút Cuối Rơi Ra Ngoài Màn Hình (2026-09-30)
+- **Hiện tượng:** `.vd-bottom-nav { grid-template-columns: repeat(5, …) }` (viết 11/09 khi nav có 4 tab + Khác). 23/09 thêm `kenh-mau` vào `BOTTOM_TABS` → 6 nút, nút "Khác" rơi xuống hàng 2 ở y=833–877 @844px → 5 tab (Tài liệu/Nhạc/Nguồn reup/Chiến lược/Lộ trình) không vào được trên mobile. Mọi test cũ PASS vì Playwright `click()` tự cuộn/ép click, và gate chỉ đọc CSS.
+- **Luật:** (1) Container chứa phần tử sinh từ mảng JS dùng `grid-auto-flow: column; grid-auto-columns: minmax(0,1fr)`, không `repeat(N)` cứng. (2) Nghiệm thu điều hướng mobile phải đo **vị trí thật** (`getBoundingClientRect().bottom <= innerHeight`) cho N/N nút, không tin `click()` thành công. (3) Gate-p2 [9a] khoá: số cột cố định ≥ `BOTTOM_TABS.length + 1`.
 
+### [SCAR-040] Bẫy Đo Touch Target Bằng Khung Hình Hoặc Danh Sách Selector (2026-09-30)
+- **Hiện tượng:** gate-p2 [8] PASS (3 selector) trong khi runtime @375px có hàng chục control 28–40px; lần đo đầu không cuộn phần tử vào giữa màn hình → header sticky che làm số đo sai (vd `.row-fav` báo 44×30 nhưng thực 44×44).
+- **Luật:** đo bằng hit-test `elementFromPoint` sau `scrollIntoView({block:'center'})`, quét N/N control (button, a[href] không inline, input, select, textarea, role=tab/button) trên mọi route + mọi modal. Link chữ inline và control có "equivalent control" cùng href ≥44px (vd `a.row-title` ↔ `a.row-thumb` 140/140) được miễn, phải ghi lý do.
+
+### [SCAR-041] Bẫy Luật Validate Giả Định Thứ Tự Sự Kiện (TERMINATED ⇒ không có folderName) (2026-09-30)
+- **Hiện tượng:** validate báo lỗi RAW-143/145/152 "TERMINATED nhưng còn folderName". Đo thật: 3 kênh được crawl deep TRƯỚC khi bị gỡ (404 ngày 29/09), thư mục `data/raw-channels-deep/<folderName>` tồn tại 3/3 và `main.js` dùng folderName để mở dossier.
+- **Luật:** không xoá dữ liệu để chiều một luật validate — kiểm giả định của luật trước. Luật mới: TERMINATED được giữ folderName lịch sử nhưng thư mục phải tồn tại.

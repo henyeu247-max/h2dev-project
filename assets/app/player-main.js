@@ -365,7 +365,7 @@ window.addEventListener('keydown', (e)=>{
     document.getElementById('ptitle').textContent=v.title;
     const metaEl=document.getElementById('pmeta');
     metaEl.innerHTML = [
-      badge(esc(sku), 'badge-muted font-mono'),
+      badge(esc(sku), 'badge-muted font-mono badge-sku'),
       badge(fmtBytes(v.size), 'badge-muted'),
       badge(v.drm?'DRM':'HLS', v.drm?'badge-amber':'badge-blue'),
       badge(v.free?'FREE':'PRO', v.free?'badge-green':'badge-red'),
@@ -546,6 +546,42 @@ window.addEventListener('keydown', (e)=>{
         document.getElementById('insightAvoidFlags').innerHTML = '<li class="text-gray-400">Chưa có ghi chú cảnh báo.</li>';
       }
     } catch(e) {}
+    /* ---------- UI-14 (2026-09-30): phu de NATIVE cho <video> ----------
+       Truoc day chi co transcript ben canh, KHONG co <track> -> xem toan man hinh / tren TV
+       khong bat duoc phu de. Do N/N: 140/140 video co transcript.json hop le (start/end/text).
+       Sinh WebVTT tu CUNG segments dang hien o bang transcript (1 nguon) -> Blob URL
+       (CSP media-src 'self' blob: da cho phep). kind=captions, MAC DINH TAT (nguoi xem tu bat). */
+    function attachCaptionTrack(segs) {
+      try {
+        const pvEl = document.getElementById('pv');
+        if (!pvEl || !Array.isArray(segs) || !segs.length) return;
+        pvEl.querySelectorAll('track[data-h2-auto]').forEach(t => { try { URL.revokeObjectURL(t.src); } catch (e) {} t.remove(); });
+        const ts = (x) => {
+          x = Math.max(0, Number(x) || 0);
+          const h = Math.floor(x / 3600), m = Math.floor((x % 3600) / 60), s = x - h * 3600 - m * 60;
+          return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + s.toFixed(3).padStart(6, '0');
+        };
+        const cueText = (t) => String(t || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\r?\n\s*\r?\n/g, '\n').trim();
+        let vtt = 'WEBVTT\n\n';
+        let n = 0;
+        segs.forEach((sg, i) => {
+          const st = Number(sg.start) || 0;
+          let en = Number(sg.end);
+          if (!(en > st)) { const nx = segs[i + 1]; en = (nx && Number(nx.start) > st) ? Number(nx.start) : st + 3; }
+          const txt = cueText(sg.text);
+          if (!txt) return;
+          n += 1;
+          vtt += n + '\n' + ts(st) + ' --> ' + ts(en) + '\n' + txt + '\n\n';
+        });
+        if (!n) return;
+        const tr = document.createElement('track');
+        tr.kind = 'captions';
+        tr.label = 'Phụ đề bóc tách (H2DEV)';
+        tr.src = URL.createObjectURL(new Blob([vtt], { type: 'text/vtt' }));
+        tr.setAttribute('data-h2-auto', '1');
+        pvEl.appendChild(tr);
+      } catch (e) { /* phu de native la tang cong them; loi o day khong duoc lam hong bang transcript */ }
+    }
     /* ---------- Interactive AI Transcript (SRT / JSON) ---------- */
     try {
       const srtPath = 'video/' + encodeURIComponent(sku) + '/transcript.srt';
@@ -590,6 +626,7 @@ window.addEventListener('keydown', (e)=>{
         const segs = Array.isArray(trData) ? trData : (trData?.segments || []);
         if (segs && segs.length) {
           transcriptSegments = segs;
+          attachCaptionTrack(segs);
           document.getElementById('ptranscript').classList.remove('hidden');
           tList.innerHTML = transcriptSegments.map((s, idx) => {
             const start = Math.floor(s.start || 0);

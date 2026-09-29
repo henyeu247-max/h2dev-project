@@ -131,6 +131,12 @@ const DOC_RULES = [
   // ---- data-tabs/ngach-xanh.json ----
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"taiLieu":\s*)\d+/g,
     build: c => `$1${c.documents}` },
+  // 2026-09-30: kenhDead/LiveTrongFile truoc day KHONG co rule -> troi 13/152 trong khi thuc te 39/126
+  // (validate-project bao 2 loi). Sinh tu counts nhu cac so khac (SCAR-012: cam so viet tay).
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"kenhDeadTrongFile":\s*)\d+/g,
+    build: c => `$1${c.deadChannels}` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"kenhLiveTrongFile":\s*)\d+/g,
+    build: c => `$1${c.liveChannels}` },
 ];
 
 function applyDocRules(counts, { write }) {

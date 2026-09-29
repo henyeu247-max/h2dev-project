@@ -1321,7 +1321,9 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 }
 
 /* UI4 perf */
-.niche-card, .nx-card, [data-raw-card], .lesson-row, .bento-card {
+/* NANG CAP 2026-09-30 (CLS): bo .bento-card — 4 the KPI luon o dau trang nen khong loi perf, nhung
+   contain-intrinsic-size 180px lam luoi KPI cao 422px roi co ve 214px -> layout-shift 0.127 @375 /rawkenh. */
+.niche-card, .nx-card, [data-raw-card], .lesson-row {
   content-visibility: auto;
   contain-intrinsic-size: auto 180px;
 }

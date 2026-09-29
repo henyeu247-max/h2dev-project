@@ -139,7 +139,11 @@ html.is-embed .learn-content { width: min(1120px, calc(100% - 24px)); margin-top
   .learn-header { min-height: 52px; padding: 8px 12px; }
   .learn-brand h1 { font-size: 14px; }
   .learn-brand span,.progress-pill { display: none; }
-  .back-home { display: inline-flex !important; min-height: 44px; padding: 0 12px; }
+  /* 2026-09-30: header 375px chia deu nhip 8px (gap header, gap brand, padding nut) de tieu de "Lo trinh N module"
+     hien du (khong "...") sau khi cum nut ben phai khong con bi ep (xem cuoi file). h2-shell.css nap sau nen can 2 class. */
+  .learn-header.h2-shell-header { gap: var(--h2-space-2); }
+  .learn-brand { gap: var(--h2-space-2); }
+  .back-home { display: inline-flex !important; min-height: 44px; padding: 0 var(--h2-space-2); }
   .header-right { gap: 0; }
   .tabbar,.learn-content,.resume-banner,.learn-footer { width: calc(100% - 24px); }
   .tabbar { margin-top: 12px; overflow-x: auto; scrollbar-width: none; }
@@ -197,3 +201,33 @@ html.is-embed .learn-header {
 html.is-embed #btn-back-to-top {
   bottom: calc(16px + env(safe-area-inset-bottom, 0px));
 }
+
+/* NANG CAP 2026-09-30 (CLS learn/lotrinh 0,107 @375): (1) truoc render dau #panelRoot rong -> footer nam trong
+   man hinh roi bi day xuong; (2) .lesson-row dung placeholder chung 180px (viddar.css) trong khi hang that cao
+   128px (<=640px) / 88px (>640px) -> section dau co 136px roi keo section sau len. Placeholder tinh cho CONTENT-BOX: tru padding 8+8 + border 1+1 = do that: 128 mobile = 112 + 16, 88 desktop = 70 + 18 (do lai tung breakpoint). */
+.learn-content:empty ~ .learn-footer { display: none; }
+.lesson-row { contain-intrinsic-size: auto 70px; }
+@media (max-width: 640px) {
+  .lesson-row { contain-intrinsic-size: auto 112px; }
+}
+/* NANG CAP 2026-09-30 (CLS header learn): learn.js doi tieu de "Lo trinh hoc" -> "Lo trinh N module" sau khi tai
+   du lieu -> khoi brand no ra, ep .header-right co lai (171 -> 161px, 2 nut tran ra ngoai padding) = layout-shift.
+   Brand chiem phan con lai (flex 1), tieu de cat "..." neu thieu cho; cum nut ben phai khong bi ep. */
+.learn-brand { flex: 1 1 auto; }
+.learn-brand > div { min-width: 0; }
+.learn-brand h1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header-right { flex-shrink: 0; }
+/* NANG CAP 2026-09-30 (CLS header learn >640px): vong % + chu tien do duoc JS chen vao .progress-pill sau khi tai
+   -> cum .header-right no sang trai (layout-shift 0,0015). Giu cho san: vong 30x30, chu toi thieu 148px
+   (do: "0%0/140 bai · da hoan thanh" = 132px @11px Inter; "100%140/140..." rong hon ~15px), so tabular. */
+#progressRingWrap { flex: 0 0 30px; width: 30px; height: 30px; }
+#progressText { min-width: 148px; font-variant-numeric: tabular-nums; }
+/* NANG CAP 2026-09-30 (CLS learn khi DA co lich su xem = 0,28 @375): banner "Tiep tuc hoc" (~247px mobile) chen
+   len tren tabbar SAU khi tai modules.json -> tabbar + panel bi day xuong. <html class="learn-booting"> dat san trong
+   HTML, learn.js go ra sau lan syncAll dau (ca nhanh loi). Trong luc do an (visibility) tabbar/banner/panel/footer;
+   phong khi JS khong chay, animation tu hien lai sau 4s. */
+html.learn-booting .tabbar,
+html.learn-booting .resume-banner,
+html.learn-booting .learn-content,
+html.learn-booting .learn-footer { visibility: hidden; animation: learn-boot-reveal 0s linear 4s forwards; }
+@keyframes learn-boot-reveal { to { visibility: visible; } }

@@ -176,7 +176,7 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
 | `--h2-space-1` | `4px` | `assets/h2dev-tokens.css:20` | 8 |
-| `--h2-space-2` | `8px` | `assets/h2dev-tokens.css:21` | 8 |
+| `--h2-space-2` | `8px` | `assets/h2dev-tokens.css:21` | 11 |
 | `--h2-space-3` | `12px` | `assets/h2dev-tokens.css:22` | 11 |
 | `--h2-space-4` | `16px` | `assets/h2dev-tokens.css:23` | 15 |
 | `--h2-space-6` | `24px` | `assets/h2dev-tokens.css:24` | 5 |

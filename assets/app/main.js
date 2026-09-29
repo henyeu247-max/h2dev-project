@@ -675,12 +675,50 @@
     }
     /* UI-02 (2026-09-28): render generation — doi tab nhanh khi fetch cham khong cho
        phep lan render CU (cham hon) ghi de ket qua cua lan render MOI. */
+    /* NANG CAP 2026-09-30 (CLS /chienluoc 0,033 @1280): subnav topbar chi phu thuoc state.tab/clSubTab nhung truoc
+       day chi gan SAU khi du lieu tai xong -> topbar cao 56 -> 111px, day #panel-root xuong 55px. Nay goi ngay
+       dau render() (truoc skeleton) va goi lai sau render de cap nhat nut active. */
+    function syncTopbarSubnav() {
+      // Update Topbar Sub-Navigation: nằm cùng trong <header class="vd-topbar">
+      const topbarEl = document.querySelector('.vd-topbar');
+      const topbarSubnav = document.getElementById('topbar-subnav');
+      const appShell = document.querySelector('.app-shell');
+
+      if (state.tab === 'chienluoc') {
+        state.clSubTab = state.clSubTab || 'principles';
+        const curTab = state.clSubTab;
+        const isAll = curTab === 'all';
+        if (topbarSubnav) {
+          topbarSubnav.innerHTML = quickAccessBar({
+            id: 'strategy-quick-access', label: 'Nội dung chiến lược', mode: 'tab', className: 'quick-access--topbar',
+            items: [
+              { label: '4 Nguyên tắc', shortLabel: 'Nguyên tắc', active: curTab === 'principles', action: { type: 'strategy-tab', patch: { clSubTab: 'principles' } } },
+              { label: 'Quy trình A–Z', shortLabel: 'Quy trình', active: curTab === 'workflow', action: { type: 'strategy-tab', patch: { clSubTab: 'workflow' } } },
+              { label: 'Phân bổ ngách', shortLabel: 'Ngách', active: curTab === 'distribution', action: { type: 'strategy-tab', patch: { clSubTab: 'distribution' } } },
+              { label: 'YPP & Chính sách', shortLabel: 'YPP', active: curTab === 'policy', action: { type: 'strategy-tab', patch: { clSubTab: 'policy' } } },
+              { label: 'Tất cả nội dung', shortLabel: 'Tất cả', active: isAll, action: { type: 'strategy-tab', patch: { clSubTab: 'all' } } }
+            ]
+          });
+          topbarSubnav.classList.remove('hidden');
+        }
+        if (topbarEl) topbarEl.classList.add('has-subnav');
+        if (appShell) appShell.classList.add('has-topbar-subnav');
+      } else {
+        if (topbarSubnav) {
+          topbarSubnav.innerHTML = '';
+          topbarSubnav.classList.add('hidden');
+        }
+        if (topbarEl) topbarEl.classList.remove('has-subnav');
+        if (appShell) appShell.classList.remove('has-topbar-subnav');
+      }
+    }
     let renderGen = 0;
     async function render() {
       const gen = ++renderGen;
       /* FIX 2026-09-30 (UI-11): loi tai la cua TUNG lan render. Truoc day chi xoa khi render THANH CONG,
          nen lan loi (nhanh catch) de lai loi cu -> retry thanh cong van hien banner loi cu. */
       _loadErrors.length = 0;
+      syncTopbarSubnav();
       const el = document.getElementById('content');
       el.setAttribute('aria-busy', 'true');
       /* P2-H2 (2026-09-27): hien SKELETON ngay khi bat dau render.
@@ -741,38 +779,7 @@
       const meta = TABS.find(t => t.id === state.tab);
       if (a11yEl && meta) a11yEl.textContent = 'Da mo tab ' + meta.name;
     } catch (e) {}
-        // Update Topbar Sub-Navigation: nằm cùng trong <header class="vd-topbar">
-        const topbarEl = document.querySelector('.vd-topbar');
-        const topbarSubnav = document.getElementById('topbar-subnav');
-        const appShell = document.querySelector('.app-shell');
-
-        if (state.tab === 'chienluoc') {
-          state.clSubTab = state.clSubTab || 'principles';
-          const curTab = state.clSubTab;
-          const isAll = curTab === 'all';
-          if (topbarSubnav) {
-            topbarSubnav.innerHTML = quickAccessBar({
-              id: 'strategy-quick-access', label: 'Nội dung chiến lược', mode: 'tab', className: 'quick-access--topbar',
-              items: [
-                { label: '4 Nguyên tắc', shortLabel: 'Nguyên tắc', active: curTab === 'principles', action: { type: 'strategy-tab', patch: { clSubTab: 'principles' } } },
-                { label: 'Quy trình A–Z', shortLabel: 'Quy trình', active: curTab === 'workflow', action: { type: 'strategy-tab', patch: { clSubTab: 'workflow' } } },
-                { label: 'Phân bổ ngách', shortLabel: 'Ngách', active: curTab === 'distribution', action: { type: 'strategy-tab', patch: { clSubTab: 'distribution' } } },
-                { label: 'YPP & Chính sách', shortLabel: 'YPP', active: curTab === 'policy', action: { type: 'strategy-tab', patch: { clSubTab: 'policy' } } },
-                { label: 'Tất cả nội dung', shortLabel: 'Tất cả', active: isAll, action: { type: 'strategy-tab', patch: { clSubTab: 'all' } } }
-              ]
-            });
-            topbarSubnav.classList.remove('hidden');
-          }
-          if (topbarEl) topbarEl.classList.add('has-subnav');
-          if (appShell) appShell.classList.add('has-topbar-subnav');
-        } else {
-          if (topbarSubnav) {
-            topbarSubnav.innerHTML = '';
-            topbarSubnav.classList.add('hidden');
-          }
-          if (topbarEl) topbarEl.classList.remove('has-subnav');
-          if (appShell) appShell.classList.remove('has-topbar-subnav');
-        }
+        syncTopbarSubnav();
         bindSearch();
         bindNicheActions();
         normalizeFilterChipA11y();
@@ -851,9 +858,14 @@
     (async function init() {
       const validTabs = ['tatca', 'lotrinh', 'video', 'ngachxanh', 'tai-lieu', 'nhac', 'nguonreup', 'kenh-mau', 'rawkenh', 'chienluoc'];
       readStateFromURL(validTabs);
+      /* NANG CAP 2026-09-30 (CLS): dung subnav NGAY (dong bo) — truoc await dau tien, de lan ve dau da co subnav. */
+      syncTopbarSubnav();
+      /* NANG CAP 2026-09-30 (CLS): an footer suot lan render DAU (skeleton -> noi dung that doi chieu cao, trang ngan
+         thi footer troi len = layout-shift 0.009-0.012 @768 /nhac /chienluoc). Chi lan dau, khong anh huong doi tab. */
+      document.documentElement.classList.add('h2-first-render');
       await hydrateAdminState();
       renderTabs();
-      await render();
+      try { await render(); } finally { document.documentElement.classList.remove('h2-first-render'); }
       resetScrollToTop();
 
       // Click logo thương hiệu để về trang chủ Tổng quan & cuộn lên đầu trang

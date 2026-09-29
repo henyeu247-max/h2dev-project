@@ -92,7 +92,7 @@ async function renderTongQuan() {
   ])}
   <div class="card p-4 sm:p-5 mb-6 flex flex-wrap items-center justify-between gap-3 border-border-strong bg-surface">
     <div class="flex items-center gap-3">
-      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-2xs font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
+      <span class="inline-flex shrink-0 whitespace-nowrap items-center gap-1.5 px-2.5 py-1 rounded-xl text-2xs font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
         <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>RADAR KHO
       </span>
       <span class="text-xs text-gray-400 font-medium">Bản đồ điều hướng toàn diện kho học liệu &amp; đối thủ YouTube Faceless</span>

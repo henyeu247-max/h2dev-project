@@ -26,7 +26,8 @@ let ok = 0, skip = 0;
 for (const r of entries) {
   const mp3Abs = path.join(ROOT, r.mp3);
   if (!fs.existsSync(mp3Abs)) { console.log('MISSING file:', r.mp3); skip++; continue; }
-  const row = queryOne('SELECT channel_id, has_voice_sample FROM competitor_channels WHERE raw_id = ?', [r.rawId]);
+  // Slot co the la raw_id HOAC channel_id (kenh kenh-mau-only co raw_id NULL)
+  const row = queryOne('SELECT channel_id, has_voice_sample FROM competitor_channels WHERE raw_id=? OR channel_id=?', [r.rawId, r.rawId]);
   if (!row) { console.log('NO CHANNEL for', r.rawId); skip++; continue; }
   if (row.has_voice_sample) { skip++; continue; }
   mutateDatabase(

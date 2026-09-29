@@ -1,9 +1,9 @@
 {
  "schema": "h2dev.voice-dna-audit.v1",
- "generatedAt": "2026-09-29T16:40:31",
+ "generatedAt": "2026-09-29T17:04:46",
  "target": "-16.0 LUFS ±0.5",
- "total": 256,
- "passed": 254,
+ "total": 259,
+ "passed": 257,
  "failed": 2,
  "report": [
   {
@@ -508,6 +508,17 @@
    "dev": 0.42,
    "dur": 45.0,
    "speechDensity": 0.858,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "GEN_LightYogawithNatalie.mp3",
+   "rawId": "GEN_LightYogawithNatalie",
+   "lufs": -16.38,
+   "dev": 0.38,
+   "dur": 45.0,
+   "speechDensity": 1.0,
    "verdict": [
     "OK"
    ]
@@ -1586,6 +1597,28 @@
    "dev": 0.19,
    "dur": 45.0,
    "speechDensity": 0.981,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-035.mp3",
+   "rawId": "RAW-035",
+   "lufs": -16.45,
+   "dev": 0.45,
+   "dur": 45.0,
+   "speechDensity": 1.0,
+   "verdict": [
+    "OK"
+   ]
+  },
+  {
+   "file": "RAW-037.mp3",
+   "rawId": "RAW-037",
+   "lufs": -16.44,
+   "dev": 0.44,
+   "dur": 45.0,
+   "speechDensity": 1.0,
    "verdict": [
     "OK"
    ]

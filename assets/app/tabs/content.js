@@ -714,6 +714,13 @@ async function renderNgachXanh() {
     const hay = [n.ngach || '', n.name || '', n.hang != null ? String(n.hang) : '', n.thesis, n.safeFormat, n.avoidTrap, n.marketTag, (n.markets || []).join(' '), (n.channels || []).join(' '), safeArray(n.skus).join(' '), n.vids.map(v=>v.sku+' '+v.title).join(' ')].join(' ').toLowerCase();
     return SC.matchesQuery([hay], q);
   });
+  /* NANG CAP 2026-09-30: phan trang Ngach xanh (34 the ~20.000px tren mobile). np vao URL nhu dp/vp/kp. */
+  const NX_PAGE_SIZE = 12;
+  const nxTotalPages = Math.max(1, Math.ceil(filtered.length / NX_PAGE_SIZE));
+  const nxPage = Math.min(Math.max(1, state.nxPage || 1), nxTotalPages);
+  state.nxPage = nxPage;
+  const nxItems = filtered.slice((nxPage - 1) * NX_PAGE_SIZE, nxPage * NX_PAGE_SIZE);
+  const nxPager = (pos) => nxTotalPages <= 1 ? '' : `<nav class="flex items-center justify-between gap-2 ${pos === 'top' ? 'mb-3' : 'mb-8'} text-xs text-gray-400" aria-label="Phân trang ngách"><span aria-live="polite">Trang ${nxPage}/${nxTotalPages} · ${filtered.length} ngách</span><span class="flex gap-1">${nxPage > 1 ? `<button type="button" class="filter-btn" data-action="nx-page" data-page="${nxPage - 1}" data-pos="${pos}">← Trước</button>` : ''}${nxPage < nxTotalPages ? `<button type="button" class="filter-btn" data-action="nx-page" data-page="${nxPage + 1}" data-pos="${pos}">Sau →</button>` : ''}</span></nav>`;
 
   const tierLabels = {
     UU_TIEN_SAN_XUAT: 'Ưu tiên sản xuất',
@@ -843,8 +850,9 @@ ${(state.nxTier || state.nxMarket || state.nxQ) ? '<span class="text-brand-ink f
   </div>
 
   <!-- DANH SÁCH THẺ NGÁCH TINH GỌN (TWO-COLUMN INTEL CARDS) -->
-  <div class="niche-grid mb-8">
-${filtered.map(n => {
+  ${nxPager('top')}
+  <div class="niche-grid ${nxTotalPages > 1 ? 'mb-4' : 'mb-8'}">
+${nxItems.map(n => {
   const isTopTier = n.tier === 'UU_TIEN_SAN_XUAT';
   const isWatchlist = n.tier === 'WATCHLIST';
   const key = nicheKeyFor(n.name);
@@ -886,6 +894,7 @@ ${filtered.map(n => {
   </article>`;
 }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full">Không tìm thấy ngách phù hợp với bộ lọc hiện tại.</div>'}
   </div>
+  ${nxPager('bottom')}
 
 
   <!-- NGÁCH ĐỎ CẦN TRÁNH -->
@@ -1024,11 +1033,23 @@ async function renderKichBan() {
   const kindChips = [['', 'Tất cả', kindCounts.all || 0], ['prompt', 'Prompt', kindCounts.prompt || 0], ['report', 'Báo cáo', kindCounts.report || 0], ['list', 'List kênh', kindCounts.list || 0], ['tool', 'Tool', kindCounts.tool || 0], ['drive', 'Drive', kindCounts.drive || 0], ['form', 'Form', kindCounts.form || 0], ['ai', 'AI gen', kindCounts.ai || 0], ['internal-doc', 'Tài liệu nội bộ', kindCounts['internal-doc'] || 0], ['other', 'Khác', kindCounts.other || 0]].filter(x => !x[0] || x[2]);
   const allNicheKeys = [...NICHE_ORDER.filter(n => nicheCounts[n]), ...Object.keys(nicheCounts).filter(n => !NICHE_ORDER.includes(n))];
   const nicheChips = allNicheKeys.map(n => [n, n, nicheCounts[n]]);
-  const grouped = [];
+  /* NANG CAP 2026-09-30: Tai lieu truoc day render ca 157 muc 1 lan -> mobile 37.526px (~50 man hinh).
+     Phan trang 24 muc/trang giong Video/Kenh mau/Raw: xep theo thu tu nhom ngach, cat trang, roi nhom lai. */
+  const groupedAll = [];
   allNicheKeys.forEach(n => {
     const items = list.filter(x => x.contentNiche === n);
-    if (items.length) grouped.push({ niche: n, items });
+    if (items.length) groupedAll.push({ niche: n, items });
   });
+  const orderedDocs = groupedAll.reduce((acc, g) => acc.concat(g.items), []);
+  const DOC_PAGE_SIZE = 24;
+  const docTotalPages = Math.max(1, Math.ceil(orderedDocs.length / DOC_PAGE_SIZE));
+  const docPage = Math.min(Math.max(1, state.docPage || 1), docTotalPages);
+  state.docPage = docPage;
+  const docPageSet = new Set(orderedDocs.slice((docPage - 1) * DOC_PAGE_SIZE, docPage * DOC_PAGE_SIZE));
+  const grouped = groupedAll
+    .map(g => ({ niche: g.niche, total: g.items.length, items: g.items.filter(x => docPageSet.has(x)) }))
+    .filter(g => g.items.length);
+  const docPager = (pos) => docTotalPages <= 1 ? '' : `<nav class="flex items-center justify-between gap-2 ${pos === 'top' ? 'mb-3' : 'mt-6'} text-xs text-gray-400" aria-label="Phân trang tài liệu"><span aria-live="polite">Trang ${docPage}/${docTotalPages} · ${orderedDocs.length} mục</span><span class="flex gap-1">${docPage > 1 ? `<button type="button" class="filter-btn" data-action="doc-page" data-page="${docPage - 1}" data-pos="${pos}">← Trước</button>` : ''}${docPage < docTotalPages ? `<button type="button" class="filter-btn" data-action="doc-page" data-page="${docPage + 1}" data-pos="${pos}">Sau →</button>` : ''}</span></nav>`;
   function videoNicheKey(contentNiche) {
     return NICHE_MAP[contentNiche] || (Object.values(NICHE_MAP).includes(contentNiche) ? contentNiche : '');
   }
@@ -1085,6 +1106,7 @@ async function renderKichBan() {
 </div>
   </div>
   ${groupQuickAccess}
+  ${docPager('top')}
   <div class="space-y-6" id="kichban-results">
 ${grouped.map((g, index) => {
     const vKey = videoNicheKey(g.niche);
@@ -1092,7 +1114,7 @@ ${grouped.map((g, index) => {
   <section id="kichban-group-${index}" class="quick-target min-w-0">
     <div class="flex flex-wrap items-center gap-2 mb-3">
       <h2 class="text-base font-bold text-white font-heading">${esc(g.niche)}</h2>
-      <span class="badge badge-muted">${g.items.length} data</span>
+      <span class="badge badge-muted">${g.items.length === g.total ? g.total + ' data' : g.items.length + '/' + g.total + ' data'}</span>
       ${vKey ? `<button type="button" data-open-niche="${esc(vKey)}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">Xem video ngách →</button>` : ''}
     </div>
     <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 min-w-0">
@@ -1120,7 +1142,8 @@ ${grouped.map((g, index) => {
     </div>
   </section>`;
   }).join('') || '<div class="card p-12 text-center text-gray-400 col-span-full"><div class="text-2xl mb-2">' + ico('search', 24) + '</div>Không tìm thấy prompt / tài nguyên</div>'}
-  </div>`;
+  </div>
+  ${docPager('bottom')}`;
 }
 
   /* UI-05 (2026-09-28): tab /nhac trc day render NHAM renderKichBan (tai lieu).

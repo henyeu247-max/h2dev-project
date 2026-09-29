@@ -3,8 +3,8 @@
   "source_audit": "_audit/20260918-full-136-audit/report-140.json",
   "generatedAt": "2026-09-22T20:14:36+07:00",
   "summary": {
-    "hard_fail": 2,
-    "review_only": 39,
+    "hard_fail": 1,
+    "review_only": 40,
     "total": 41
   },
   "items": [
@@ -418,15 +418,14 @@
     },
     {
       "sku": "VIDEO-f59aa7",
-      "hard_issues": [
-        "B7: LUONG AUDIO THIEU DU LIEU THAT [method_1_verdict,method_2a_verdict,method_3_verdict] — packet_rate 13.2/s (chuan 43.06, dat 31%); frame_rate 13.2/s (chuan 43.06, dat 31%); decode probe: lay 10s tai giay 1294.2 chi duoc 1.8s"
-      ],
+      "hard_issues": [],
       "review_flags": [
         "A8d: 9 khoang trong phu de (1466s) audio KHONG im lang — can ASR probe"
       ],
       "status": "open",
       "checked_by": null,
-      "decision": null
+      "decision": null,
+      "note": "B7 da xoa 2026-09-30: audio_integrity() 3/3 phep do ok (nb_read_packets 111466, ratio 1.0, decode 10.0s tai giay 1294.2) sau khi file media duoc thay 2026-09-22 03:02. Con lai A8d: transcript.json tao 2026-09-18 truoc khi thay file, can ASR probe/transcribe_sku.py."
     },
     {
       "sku": "VIDEO-f74bb1",

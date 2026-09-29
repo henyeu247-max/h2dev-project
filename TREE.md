@@ -7,7 +7,7 @@ H2DEV là **một nguồn sự thật**. Gốc `Y:\YTB` không chứa data làm 
 ```
 Y:\YTB\
 ├── README.md                      # trỏ vào H2DEV
-├── Nhạc nền\                      # KHO 38 TRACKS NHẠC NỀN (265 MB) đã audit Gemini Multimodal
+├── Nhạc nền\                      # KHO 49 TRACKS NHẠC NỀN (328 MB) đã audit Gemini Multimodal
 ├── _archive\                      # KHÔNG sửa · bản gốc đã gom
 │   ├── 20260818-root\             # MD / prompt / excel / tmp / pipeline gốc
 │   └── secrets\                   # mcp-keys — không đưa lên web

@@ -3820,14 +3820,8 @@
       "Nhật"
     ],
     "channels": [],
-    "audio_integrity": "broken_drm_packets",
-    "media_issues": [
-      "B7"
-    ],
-    "needs_audio_recover": true,
-    "gap_note": "DRM/packet thieu 69% — da biet tu truoc, can source clean",
-    "media_audit_date": "2026-09-18",
-    "media_audit_updated": "2026-09-22T20:14:03+07:00"
+    "media_audit_date": "2026-09-30",
+    "media_audit_updated": "2026-09-30T05:49:21+07:00"
   },
   {
     "sku": "VIDEO-b380a1",

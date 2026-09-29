@@ -18,8 +18,8 @@
 - **Tập tin chân lý số liệu:** `data/counts-manifest.json` (tự động cập nhật qua `node scripts/sync-counts.js`).
 - **Tổng kho bài học (`videos.json`):** **140 bài** (136 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 113 Pro).
   → nguồn: `data-tabs/videos.json` (Local = VPS = 140).
-- **Kiểm định media toàn vẹn:** **140/140 file** (140/140 có luồng video + audio khác 0 byte. 139 file nguyên vẹn, 1 file DRM hỏng audio `VIDEO-f59aa7` mất 69% packet do nguồn nén h2dev.vn).
-  → nguồn: `counts-manifest.mediaFiles` + ffprobe.
+- **Kiểm định media toàn vẹn:** **140/140 file** (140/140 có luồng video + audio khác 0 byte, khớp catalog về thời lượng/độ phân giải/size — ffprobe N/N 2026-09-30). `VIDEO-f59aa7` đã được thay file 2026-09-22 03:02 và đo lại bằng `audit_videos_v2.audio_integrity()` = 3/3 phép đo `ok` (111.466 packet, tỉ lệ 1.0, decode 10.0s tại giây 1294.2) → đã gỡ cờ `broken_drm_packets`/`B7`. Còn 1 file audio gần rỗng: `VIDEO-8e0275` (màn hình im, −70 LUFS). Còn mở: A8d của f59aa7 (transcript tạo 2026-09-18, trước khi thay file — cần `transcribe_sku.py`).
+  → nguồn: `counts-manifest.mediaFiles` + ffprobe + `data/media-review-queue.json`.
 - **Danh bạ kênh mẫu (`kenh-mau.json`):** **165 kênh** (152 live · 13 dead).
   → nguồn: `data-tabs/kenh-mau.json` (Local = VPS = 165).
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).

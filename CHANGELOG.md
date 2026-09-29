@@ -1,4 +1,25 @@
-﻿## 2026-09-22 — GAP-FIX ALL: SUMMARY SSoT, MEDIA FLAGS, PH5 RADAR, G6 CSP
+﻿## 2026-09-30 — UI FIX-ALL: BOTTOM-NAV P0 + UI-01/03/09/11/14 + SỐ KÊNH + GATE [9]
+
+### Sửa (đo runtime local :8899 trước/sau)
+- **P0 bottom-nav:** `viddar.css` `repeat(5)` trong khi render 6 nút → nút "Khác" ở y=833–877 @844px (ngoài màn hình, mất lối vào 5 tab). Nay cột tự sinh; 9 bề ngang 6/6 nút trong viewport.
+- **UI-03:** bottom-nav là nav landmark (`aria-current`), mũi tên/Home/End trong đúng nhóm, focus giữ sau khi chọn mục Khác, nút Khác `aria-haspopup/aria-expanded`.
+- **UI-01:** tìm không dấu (`phat phap` 0 → 8 video) — token không dấu so trên bản bỏ dấu, token có dấu so chính xác; áp cho lọc, gợi ý, nhạc.
+- **UI-11:** 40 tổ hợp chặn file × 9 route: 0 lộ "Cannot read properties…", banner lỗi reset mỗi render.
+- **UI-09:** khối 10b `h2dev-shell.css` + `.row-fav` z-index: 0 control < 44px (hit-test N/N).
+- **UI-14:** `<track kind=captions>` từ transcript — 140/140 bài cues = dòng transcript.
+- **Số liệu hiển thị:** topbar/Chiến lược/Kênh mẫu dùng số kênh sống 126 (trước 165); chip ngách đếm kênh sống (10/10 khớp list); dòng OCR thẻ Raw ghi rõ "Lúc chụp raw <ngày>" (83/83 có scannedAt, 33/83 lệch >20% so với số hiện tại).
+- Heading khối nội dung h1 → h2; `.page-h1` line-height 1.2; SKU badge không bị viết hoa; header player mobile gọn; `btnBack` là `<button>`.
+- **Data/gate:** `ngach-xanh.phamViKho` 39/126 qua rule mới trong `sync-counts.js`; luật validate TERMINATED: giữ folderName lịch sử nếu thư mục dossier tồn tại (3/3 tồn tại).
+- **Gate-p2 [9]** (bottom-nav đủ cột + vùng phủ 44px) — PROBE 18/18.
+- Cache-bust `?v=20260930-uifix1`, SW cache `h2dev-shell-v20260930-uifix1`.
+
+### Check-Pass
+- validate PASS · sync-counts --check OK · sync-tokens --check OK · gate-icons/typography/p1/p2 ALL PASS · guard PASS · check-ui-classes OK (1 cảnh báo `.jsRowClass` = biến truyền vào, đã xác minh tay).
+- Browser: 13 route × 3 viewport (375/768/1280) = 39/39 HTTP 200, 0 pageerror, 0 console error, 0 tràn ngang.
+- Backup: `_backup/20260930-ui-fix-all/` (SHA256SUMS).
+- Chưa làm: thống nhất Tailwind `brand` với token, gỡ 379 style inline — chờ duyệt ảnh. Chưa deploy VPS.
+
+## 2026-09-22 — GAP-FIX ALL: SUMMARY SSoT, MEDIA FLAGS, PH5 RADAR, G6 CSP
 
 ### Data gaps
 - Resync `raw-kenh-mau.summary` (subs 43.8M, views 6.99B) + validate guard summary==computed.

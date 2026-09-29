@@ -163,7 +163,9 @@ function pageBanner(title, sub, stats) {
      le se span full row qua CSS .bento-grid > .bento-card:nth-child(odd):last-child. */
   const cards = (stats || []).map(s => statCard(s.icon, s.label, s.value, s.sub || '', s.tab || '', !!s.live)).join('');
   return `
-  ${title ? `<h1 class="page-h1">${esc(title)}</h1>` : ''}
+  ${/* FIX 2026-09-30: topbar da co <h1 id="page-title"> -> render h1 o day tao 2 h1/trang (sai cau truc
+       heading cho trinh doc man hinh). Tieu de khoi noi dung la h2; giu class .page-h1 nen hinh thuc khong doi. */ ''}
+  ${title ? `<h2 class="page-h1">${esc(title)}</h2>` : ''}
   ${sub ? `<p class="page-lede">${sub}</p>` : ''}
   ${cards ? `<div class="bento-grid mb-6">${cards}</div>` : ''}`;
 }

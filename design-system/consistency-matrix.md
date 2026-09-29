@@ -223,3 +223,16 @@ Tài liệu này đối chiếu **hiện trạng đã kiểm kê** với **chu�
 | I. Token/Code smell | 6 | Token vòng lặp + biến chết |
 
 **Chỉ được báo cáo hoàn thành khi cả 3 vòng kiểm định (đĩa/ffprobe → code & frontend → dual-environment Local + VPS HTTP 200) đạt 100% Check-Pass.**
+
+---
+
+## Cập nhật 2026-09-30 — UI fix-all (đo runtime, xem `BUILD-PLAN.md` mục 7.6)
+
+| Miền | Thay đổi | Bằng chứng |
+|---|---|---|
+| B. Điều hướng | Bottom-nav 6 nút hiển thị đủ (trước: nút "Khác" rơi ngoài màn hình); bottom-nav bỏ `role=tab` mồ côi → `aria-current`; phím mũi tên chạy trong đúng nhóm; nút Khác `aria-haspopup/aria-expanded` | 9 bề ngang 320–1023: 6/6 nút trong viewport |
+| G. Responsive/Touch | Khối `h2dev-shell.css` 10b phủ 44px cho `#content`, `[role=dialog]`, `#playerMain`; `.row-fav` nâng lớp | Hit-test @375px: 0 control < 44px (index 874, learn 439, player 19, 5 modal/sheet 143) |
+| H. Thông báo/Loading | Banner lỗi tải không lộ chữ kỹ thuật, reset mỗi lần render, nút Thử lại | 40 tổ hợp chặn file × 9 route: 0 lộ lỗi, 0 pageerror |
+| D. Typography | `.page-h1` line-height 1.3 → 1.2; tiêu đề khối nội dung h1 → h2 (hết 2 h1/trang) | gate-p1 ALL PASS |
+| Player | Phụ đề native `<track>` sinh từ transcript; SKU badge giữ đúng hoa/thường; header mobile không xuống dòng | 140/140 bài: cues = dòng transcript |
+| Còn nợ | Tailwind `brand` (#ef4444/#dc2626) ≠ token `--brand #E2023A`; 379 `style=` inline + 49 mã hex trong `main.js` | Chờ anh duyệt bằng ảnh chụp (điều kiện Batch E) |

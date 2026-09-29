@@ -1,14 +1,20 @@
 /* H2TabContent - G3.1 extract: 8 tab renderers from index.html */
 (function (global) {
   'use strict';
+  /* FIX 2026-09-30 (UI-01): fallback CHI dung khi search-core.js khong nap duoc; cung hop dong dau/khong dau. */
+  const _lnfc = (t) => String(t == null ? '' : t).normalize('NFC').toLowerCase();
+  const _fold = (t) => _lnfc(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\u0111/g, 'd').normalize('NFC');
+  const _marks = (t) => _fold(t) !== _lnfc(t);
   const SC = (typeof window !== 'undefined' && window.H2SearchCore) || {
-    tokenize: (t) => String(t||'').toLowerCase().split(/[^\p{L}\p{N}+]+/u).filter(Boolean),
+    tokenize: (t) => _lnfc(t).split(/[^\p{L}\p{N}\p{M}+]+/u).filter(Boolean),
     matchesQuery: (parts, q) => {
-      const kw = String(q||'').toLowerCase().split(/[^\p{L}\p{N}+]+/u).filter(Boolean);
+      const kw = _lnfc(q).split(/[^\p{L}\p{N}\p{M}+]+/u).filter(Boolean);
       if (!kw.length) return true;
-      const hay = (parts||[]).map(x => x==null?'':String(x)).join(' ').toLowerCase().replace(/[^\p{L}\p{N}+]+/gu,' ');
-      return kw.every(k => hay.indexOf(k) >= 0);
+      const hay = _lnfc((parts||[]).map(x => x==null?'':String(x)).join(' ')).replace(/[^\p{L}\p{N}\p{M}+]+/gu,' ');
+      const hayF = _fold(hay);
+      return kw.every(k => (_marks(k) ? hay : hayF).indexOf(k) >= 0);
     },
+    includes: (text, q) => { const qq = _lnfc(q).trim(); if (!qq) return true; const t = _lnfc(text); return (_marks(qq) ? t : _fold(t)).indexOf(qq) >= 0; },
     pad2: (n) => String(n==null?0:n).padStart(2,'0')
   };
 
@@ -52,11 +58,18 @@
 
 async function renderTongQuan() {
   // Fallback an toàn: 1 file JSON lỗi không được làm chết cả tab Tổng quan
-  const videos = (await loadJSON('data-tabs/videos.json').catch(() => [])) || [];
-  const kenh = (await loadJSON('data-tabs/kenh-mau.json').catch(() => ({}))) || {};
-  const kich = (await loadJSON('data-tabs/tai-lieu-full.json').catch(() => [])) || [];
-  const slim = (await loadJSON('data/catalog.json').catch(() => [])) || [];
-  const nx = (await loadJSON('data-tabs/ngach-xanh.json').catch(() => ({}))) || {};
+  /* FIX 2026-09-30 (UI-11): fallback cu tra ve {} cho kenh/ngach-xanh -> kenh.filter / nx.ngachXanh.slice
+     nem TypeError, lo nguyen van "Cannot read properties of undefined (reading 'slice')" ra UI.
+     Nay chuan hoa schema rong an toan; loi tai file van duoc ghi qua noteLoadError -> banner. */
+  const videos = safeArray(await loadJSON('data-tabs/videos.json').catch(() => []));
+  const kenh = safeArray(await loadJSON('data-tabs/kenh-mau.json').catch(() => []));
+  const kich = safeArray(await loadJSON('data-tabs/tai-lieu-full.json').catch(() => []));
+  const slim = safeArray(await loadJSON('data/catalog.json').catch(() => []));
+  const nxRaw = await loadJSON('data-tabs/ngach-xanh.json').catch(() => null);
+  const nx = Object.assign({}, (nxRaw && typeof nxRaw === 'object') ? nxRaw : {}, {
+    ngachXanh: safeArray(nxRaw && nxRaw.ngachXanh),
+    thongTinChinhSach2026: safeArray(nxRaw && nxRaw.thongTinChinhSach2026)
+  });
   const diskMb = (Array.isArray(slim) ? slim : []).reduce((a, v) => a + (v.size_mb || 0), 0);
   const free = (Array.isArray(videos) ? videos : []).filter(v => v.free).length;
   const market = {}; let emptyMarket = 0;
@@ -214,7 +227,8 @@ function videoCard(v) {
     <div class="flex items-center gap-2 mt-2.5 text-2xs text-gray-400">
       <span class="text-gray-400 truncate min-w-0 font-mono font-semibold">${esc(v.sku)}</span>
       ${v.published_at ? '<span class="text-gray-600">·</span><span class="text-gray-400 font-mono shrink-0">' + esc(v.published_at) + '</span>' : ''}
-      ${docs.length ? `<span class="ml-auto flex items-center gap-1 text-sky-400 font-medium"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full"></span> ${docs.length} TL</span>` : ''}
+      ${/* FIX 2026-09-30: "3 TL" bi gay 2 dong khi SKU dai (ZOOM-01-Nen-tang...) -> khong cho co/xuong dong. */ ''}
+      ${docs.length ? `<span class="ml-auto flex items-center gap-1 text-sky-400 font-medium shrink-0 whitespace-nowrap"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full"></span> ${docs.length} TL</span>` : ''}
     </div>
   </div>
 </div>
@@ -241,7 +255,7 @@ function buildVideoSearchSuggestions(query) {
     const niche = v.contentNiche || v.niche || ins.niche_primary || '';
 
     // 1. Match Video Title / SKU / Actual Topic
-    if (title.toLowerCase().includes(q) || sku.toLowerCase().includes(q) || actualTopic.toLowerCase().includes(q)) {
+    if (SC.includes(title, q) || SC.includes(sku, q) || SC.includes(actualTopic, q)) {
       const vKey = 'vid:' + sku;
       if (!seenKeys.has(vKey)) {
         seenKeys.add(vKey);
@@ -266,7 +280,7 @@ function buildVideoSearchSuggestions(query) {
     for (const ts of timestamps) {
       const tsTitle = ts.label || ts.title || '';
       const tsTime = ts.time || '';
-      if (tsTitle.toLowerCase().includes(q) || tsTime.includes(q)) {
+      if (SC.includes(tsTitle, q) || tsTime.includes(q)) {
         const tsKey = 'ts:' + sku + ':' + tsTime;
         if (!seenKeys.has(tsKey)) {
           seenKeys.add(tsKey);
@@ -291,7 +305,7 @@ function buildVideoSearchSuggestions(query) {
     // 3. Match Key Takeaways & Edit SOP
     const takeaways = ins.key_takeaways || [];
     for (const tk of takeaways) {
-      if (tk.toLowerCase().includes(q)) {
+      if (SC.includes(tk, q)) {
         const tkKey = 'tk:' + sku + ':' + tk.slice(0, 30);
         if (!seenKeys.has(tkKey)) {
           seenKeys.add(tkKey);
@@ -315,7 +329,7 @@ function buildVideoSearchSuggestions(query) {
     // 4. Match Avoid Flags
     const avoidFlags = ins.avoid_flags || [];
     for (const af of avoidFlags) {
-      if (af.toLowerCase().includes(q)) {
+      if (SC.includes(af, q)) {
         const afKey = 'af:' + sku + ':' + af.slice(0, 30);
         if (!seenKeys.has(afKey)) {
           seenKeys.add(afKey);
@@ -339,7 +353,7 @@ function buildVideoSearchSuggestions(query) {
     // 5. Match Channels Mentioned
     const chList = v.channels || [];
     for (const ch of chList) {
-      if (ch.toLowerCase().includes(q)) {
+      if (SC.includes(ch, q)) {
         const chKey = 'ch:' + sku + ':' + ch;
         if (!seenKeys.has(chKey)) {
           seenKeys.add(chKey);
@@ -507,7 +521,8 @@ async function renderVideo() {
   const withDocs = videos.filter(v => v.docs && v.docs.length).length;
   const newest = videos[0] && videos[0].published_at;
   return `
-  ${pageBanner('Video', SC.pad2(list.length) + '/' + SC.pad2(videos.length) + ' · mới nhất trước', [
+  ${/* FIX 2026-09-30: tieu de 'Video' trung y het topbar ('Video') -> dung nhan da co san o KPI Tong quan. */ ''}
+  ${pageBanner('Video khóa học', SC.pad2(list.length) + '/' + SC.pad2(videos.length) + ' · mới nhất trước', [
     { icon: ICONS.video, label: 'Tổng video', value: videos.length, sub: newest ? 'Mới nhất ' + newest : '' },
     { icon: ICONS.doc, label: 'Free', value: free, sub: (videos.length - free) + ' pro' },
     { icon: ICONS.doc, label: 'Có tài liệu', value: withDocs, sub: 'docs[] catalog' },
@@ -1294,7 +1309,7 @@ function buildRawSearchSuggestions(query) {
     // 1. Check Channel & Handle & RAW ID Match
     const chKey = 'ch:' + rid;
     if (!seenKeys.has(chKey)) {
-      if (chTitle.toLowerCase().includes(q) || handle.toLowerCase().includes(q) || rid.toLowerCase().includes(q)) {
+      if (SC.includes(chTitle, q) || SC.includes(handle, q) || SC.includes(rid, q)) {
         seenKeys.add(chKey);
         suggestions.push({
           type: 'channel',
@@ -1311,7 +1326,7 @@ function buildRawSearchSuggestions(query) {
     }
 
     // 2. Check Demo Video Match
-    if (demoVid.title && demoVid.title.toLowerCase().includes(q)) {
+    if (demoVid.title && SC.includes(demoVid.title, q)) {
       const vidKey = 'vid:' + (demoVid.videoId || demoVid.title);
       if (!seenKeys.has(vidKey)) {
         seenKeys.add(vidKey);
@@ -1332,7 +1347,7 @@ function buildRawSearchSuggestions(query) {
     // 3. Check OCR Video Rows & Vision Titles
     const ocrRows = (ocr && Array.isArray(ocr.videoRows)) ? ocr.videoRows : [];
     for (const row of ocrRows) {
-      if (row.title && row.title.toLowerCase().includes(q)) {
+      if (row.title && SC.includes(row.title, q)) {
         const vidKey = 'vid:' + row.title;
         if (!seenKeys.has(vidKey)) {
           seenKeys.add(vidKey);
@@ -1352,7 +1367,7 @@ function buildRawSearchSuggestions(query) {
     }
 
     // 4. Check Niche Match
-    if (niche && niche.toLowerCase().includes(q)) {
+    if (niche && SC.includes(niche, q)) {
       const nKey = 'niche:' + niche;
       if (!seenKeys.has(nKey)) {
         seenKeys.add(nKey);
@@ -1666,7 +1681,10 @@ async function renderRawKenh() {
         ${vision.mainTopic ? `<p class="text-2xs text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="text-amber-400 font-semibold">Chủ đề:</span> ${esc(vision.mainTopic)}</p>` : ''}
         ${vision.videoTitles && vision.videoTitles.length ? `<p class="text-2xs text-gray-400 italic line-clamp-1">"${esc(vision.videoTitles[0])}"</p>` : ''}
         ${tv ? `<p class="text-2xs text-gray-300 bg-white/5 p-2 rounded-xl border border-white/5 line-clamp-2"><span class="${tv.isFaceless ? 'text-emerald-400' : 'text-red-400'} font-semibold">Vision:</span> ${tv.isFaceless ? 'Faceless' : 'Có mặt người thật'} · ${esc(tv.facelessType || '')} · Ngách: ${esc(tv.thumbnailNiche || '—')}${tv.needsReview ? ' <span class="text-amber-400 font-semibold">· cần review</span>' : ''}</p>` : ''}
-        ${ocr ? `<p class="text-2xs text-gray-400 truncate">${esc([ocr.subsText, ocr.videoCountText, ocr.videoRows && ocr.videoRows[0] ? ocr.videoRows[0].vph : null].filter(Boolean).join(' · '))}</p>` : ''}
+        ${/* FIX 2026-09-30: dong OCR la SNAPSHOT luc chup anh raw (ocr.scannedAt), KHONG phai so hien tai.
+             Truoc day hien tran -> nguoi xem thay 2 so subscriber mau thuan (vd 114,000 subs vs 19.6K subscribers).
+             Do N/N: 83/83 record co ocr deu co scannedAt; 33/83 lech >20% so voi channel.subscribers. */ ''}
+        ${ocr ? `<p class="text-2xs text-gray-400 truncate" title="Số liệu đọc từ ảnh raw lúc phát hiện kênh, không phải số hiện tại"><span class="text-gray-500">Lúc chụp raw${ocr.scannedAt ? ' ' + esc(String(ocr.scannedAt).slice(0, 10)) : ''}:</span> ${esc([ocr.subsText, ocr.videoCountText, ocr.videoRows && ocr.videoRows[0] ? ocr.videoRows[0].vph : null].filter(Boolean).join(' · '))}</p>` : ''}
         ${r.deepIntelligence ? `
         <div class="text-2xs bg-white/[0.03] border border-white/10 rounded-xl px-2.5 py-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-gray-300">
           <span class="text-amber-300 font-medium inline-flex items-center gap-1">${ico('zap', 14)} ${r.deepIntelligence.topVideosCount} videos</span>
@@ -1710,7 +1728,10 @@ async function renderKenh() {
     }
     return `<div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm flex items-center justify-center shrink-0">${esc(initial(ch.handle))}</div>`;
   }
-  const nicheCounts = kenh.reduce((a, x) => { const n = x.niche || 'Khác'; a[n] = (a[n] || 0) + 1; return a; }, {});
+  /* FIX 2026-09-30: list mac dinh AN kenh dead (126/165) nhung chip dem ca dead (Moi ngach · 165) va
+     "Dang hien thi" so voi 165 -> luon bao "Dang loc" du khong loc. Dem theo kenh SONG cho khop list. */
+  const kenhLive = kenh.filter(ch => ch && !ch.dead);
+  const nicheCounts = kenhLive.reduce((a, x) => { const n = x.niche || 'Khác'; a[n] = (a[n] || 0) + 1; return a; }, {});
   const q = (state.kenhQ || '').trim().toLowerCase();
   const list = kenh.filter(ch => {
     if (ch.dead) return false;
@@ -1737,10 +1758,11 @@ async function renderKenh() {
   }
   return `
   ${pageBanner('Kênh mẫu / Đối thủ', list.length + '/' + kenh.length + ' kênh · nhóm theo ngách từ video H2DEV', [
-    { icon: ICONS.channel, label: 'Kênh đối thủ', value: kenh.length, sub: `${kenh.filter(k => !k.dead).length} live · ${kenh.filter(k => k.dead).length} dead ẩn` },
+    /* FIX 2026-09-30: cung quy uoc 3 noi (Tong quan / Chien luoc / Kenh mau): value = kenh song. */
+    { icon: ICONS.channel, label: 'Kênh đối thủ', value: kenhLive.length, sub: `${kenh.length} kênh · ${kenh.filter(k => k.dead).length} dead ẩn` },
     { icon: ICONS.niche, label: 'Ngách có kênh', value: Object.keys(nicheCounts).length, sub: 'nhóm theo ngách video' },
     { icon: ICONS.home, label: 'Avatar local', value: kenh.filter(k => k.avatar).length, sub: 'thumb đã tải local' },
-    { icon: ICONS.link, label: 'Đang hiển thị', value: SC.pad2(list.length), live: true, sub: list.length === kenh.length ? 'Hiện tất cả' : 'Đang lọc' }
+    { icon: ICONS.link, label: 'Đang hiển thị', value: SC.pad2(list.length), live: true, sub: list.length === kenhLive.length ? 'Hiện tất cả kênh sống' : 'Đang lọc' }
   ])}
   <div class="card p-4 sm:p-5 mb-6">
 <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
@@ -1751,7 +1773,7 @@ async function renderKenh() {
 <div class="mt-4 pt-3 border-t border-hairline">
   <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách đối thủ</div>
   <div class="flex flex-wrap gap-2">
-    <button type="button" data-kenh-niche="" class="filter-btn ${!state.kenhNiche ? 'active' : ''}">Mọi ngách · ${kenh.length}</button>
+    <button type="button" data-kenh-niche="" class="filter-btn ${!state.kenhNiche ? 'active' : ''}">Mọi ngách · ${kenhLive.length}</button>
     ${chips.map(([id, label, n]) => `<button type="button" data-kenh-niche="${esc(id)}" class="filter-btn ${state.kenhNiche === id ? 'active' : ''}">${esc(label)} · ${n}</button>`).join('')}
   </div>
 </div>
@@ -1788,11 +1810,17 @@ ${grouped.map(g => {
 
 async function renderChienLuoc() {
   const cl = (await loadJSON('data-tabs/chien-luoc.json').catch(() => ({}))) || {};
-  const videos = (await loadJSON('data-tabs/videos.json').catch(() => [])) || [];
-  const docs = (await loadJSON('data-tabs/tai-lieu-full.json').catch(() => [])) || [];
-  const kenh = (await loadJSON('data-tabs/kenh-mau.json').catch(() => ({}))) || {};
-  const nguon = (await loadJSON('data-tabs/nguon-reup.json').catch(() => [])) || [];
-  const nx = (await loadJSON('data-tabs/ngach-xanh.json').catch(() => ({}))) || {};
+  /* FIX 2026-09-30 (UI-11): du lieu phu loi -> schema rong an toan (truoc day kenh={} in "undefined",
+     nx={} lam nx.thongTinChinhSach2026.map nem TypeError -> sap ca tab). */
+  const videos = safeArray(await loadJSON('data-tabs/videos.json').catch(() => []));
+  const docs = safeArray(await loadJSON('data-tabs/tai-lieu-full.json').catch(() => []));
+  const kenh = safeArray(await loadJSON('data-tabs/kenh-mau.json').catch(() => []));
+  const nguon = safeArray(await loadJSON('data-tabs/nguon-reup.json').catch(() => []));
+  const nxRaw = await loadJSON('data-tabs/ngach-xanh.json').catch(() => null);
+  const nx = Object.assign({}, (nxRaw && typeof nxRaw === 'object') ? nxRaw : {}, {
+    ngachXanh: safeArray(nxRaw && nxRaw.ngachXanh),
+    thongTinChinhSach2026: safeArray(nxRaw && nxRaw.thongTinChinhSach2026)
+  });
   const checks = loadChecks();
   const noteOf = {
     'Triết lý / Tâm linh': 'xanh · JP/KR/US',
@@ -1833,7 +1861,8 @@ async function renderChienLuoc() {
   ${pageBanner('Chiến lược & Vận hành', `Ngách không quyết định xanh/đỏ — cách làm quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.`, [
     { icon: ICONS.video, label: 'Video local', value: videos.length, sub: `${videos.length} video · ${scored} đã điểm`, tab: 'video' },
     { icon: ICONS.doc, label: 'Kịch bản & Tài liệu', value: docs.length, sub: `${docs.length} file · catalog`, tab: 'tai-lieu' },
-    { icon: ICONS.channel, label: 'Kênh đối thủ', value: kenh.length, sub: `${kenh.length} kênh · đã check 30 ngày`, tab: 'kenh-mau' },
+    /* FIX 2026-09-30: dong bo quy uoc voi Tong quan (value = kenh song, sub = tong + dead an). */
+    { icon: ICONS.channel, label: 'Kênh đối thủ', value: kenh.filter(k => k && !k.dead).length, sub: `${kenh.length} kênh · ${kenh.filter(k => k && k.dead).length} dead ẩn`, tab: 'kenh-mau' },
     { icon: ICONS.link, label: 'Nguồn reup', value: nguon.length, sub: `${nguon.length} nguồn · match`, tab: 'nguonreup' }
   ])}
 

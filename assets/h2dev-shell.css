@@ -152,6 +152,9 @@ a.h2-shell-brand .vd-wordmark {
     padding: var(--h2-space-3) var(--h2-space-4) var(--h2-space-4);
   }
 }
+/* NANG CAP 2026-09-30 (CLS): truoc lan render dau #content rong -> footer nam trong man hinh roi bi day xuong
+   (layout-shift 0.069 @375 /rawkenh). Giu cho #content cao bang viewport khi con rong. */
+#content:empty { min-height: 100vh; }
 
 /* ==========================================================================
    3. BACK-TO-TOP CHUAN — ap cho ca 3 trang (player hien dang THIEU)

@@ -455,7 +455,7 @@ code { font-size: 11px; color: var(--fg-2); }
 .stat-sub { margin-top: 4px; color: var(--fg-faint); font-size: 11px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }   /* P1-D: 1.4 -> 1.35 */
 .page-h2 { margin: 0 0 8px; color: var(--fg); font-size: 16px; font-weight: 600; letter-spacing: -.02em; line-height: 1.35; }
 /* UI-13 (2026-09-28): tieu de tab cho pageBanner — truoc day banner khong co title. */
-.page-h1 { margin: 0 0 4px; color: var(--fg); font-size: 20px; font-weight: 700; letter-spacing: -.02em; line-height: 1.3; }
+.page-h1 { margin: 0 0 4px; color: var(--fg); font-size: 20px; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }   /* FIX 2026-09-30: 1.3 (them 28/09) ngoai thang gate-p1 [7a] -> 1.2 = bac display cua du an */
 .page-lede { margin: 0 0 6px; color: var(--fg-muted); font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
 
 .market-list, .niche-list { display: flex; flex-direction: column; min-width: 0; }
@@ -827,7 +827,11 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   }
   .vd-bottom-nav {
     display: grid !important;
-    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    /* FIX 2026-09-30 (P0): nav render 5 tab + nut Khac = 6 nut; repeat(5) cu (tu 09-11, luc con 4+Khac)
+       day nut Khac xuong hang 2 ngoai man hinh (do y=833-877 @844px). Cot tu sinh theo so nut. */
+    grid-template-columns: none !important;
+    grid-auto-flow: column !important;
+    grid-auto-columns: minmax(0, 1fr) !important;
     position: fixed !important;
     bottom: 0 !important;
     left: 0 !important;

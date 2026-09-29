@@ -404,6 +404,49 @@ a.h2-shell-brand .vd-wordmark {
 }
 
 /* ==========================================================================
+   10b. TOUCH TARGET 44px — PHU TOAN BO CONTROL (FIX 2026-09-30, UI-09)
+   --------------------------------------------------------------------------
+   Do runtime that @375px (hit-test elementFromPoint, khong chi getBoundingClientRect):
+     index  : input #fq 36 · select 36 · .h2-btn 32 · .btn-primary 31 · Reset 40
+              .channel-chip 40 · a.btn-press w-9 36x36 · link "tai lieu" 38 · raw demo 32
+     modal  : close X 32x32 / 37x28 · .raw-tab-btn 32 · music chip 28 · search 34
+     player : Tai MP4 32 · #btnWatched 32 · #btnClearProgress 32 · #noteInput 35
+              .btn-doc-link 28 · logo .h2-shell-brand 28x28
+     learn  : a.row-title 36 (mien: thumb cung href 96x54) · .row-fav 44x33 o 1/140 row (xem lesson-row.css)
+   Nguon goc: tailwind.css (css/input.css) ep min-height 38px <=1024px + cac nut
+   tu dat h-7/h-8/h-9. gate-p2 [8] chi quet 3 selector nen PASS gia.
+   Chuan du an: --h2-touch-min (44px) tren man hinh cam ung (<=1024px).
+   Link chu nam TRONG doan van (display:inline) duoc mien (ngoai le WCAG 2.5.8).
+   ========================================================================== */
+@media (max-width: 1024px) {
+  /* a[href]: min-height KHONG tac dung len phan tu display:inline -> link chu trong doan van
+     tu nhien duoc mien; chi link dang nut (inline-flex/flex/block/inline-block) bi nang len 44. */
+  #content :is(button, select, a[href], .h2-btn),
+  #content input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="hidden"]),
+  [role="dialog"] :is(button, select, a[href], .h2-btn),
+  [role="dialog"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="hidden"]),
+  #playerMain :is(button, select, textarea, a[href], .h2-btn),
+  #playerMain input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="hidden"]),
+  .h2-shell-brand {
+    min-height: var(--h2-touch-min);
+  }
+  /* a.row-title (learn) DUOC MIEN co chu dich: do N/N 140/140 row co a.row-thumb CUNG href, kich thuoc
+     96x54 (>=44) -> "equivalent control" (ngoai le WCAG 2.5.8). Nang title len 44 lam lech bo cuc
+     (title 1 dong day tags xuong 10-28px) nen KHONG ap. */
+  /* Nut chi co icon (vuong) va nut dong modal: ca chieu ngang */
+  #content :is(a, button).w-9,
+  #content :is(a, button).w-8,
+  #content :is(a, button).w-7,
+  #close-music-studio,
+  #close-raw-deep,
+  [role="dialog"] a[href],
+  [role="dialog"] [aria-label^="Đóng"],
+  .h2-shell-brand {
+    min-width: var(--h2-touch-min);
+  }
+}
+
+/* ==========================================================================
    9. TOAST CHUAN — dung chung ca 3 trang (learn/player/index)
    --------------------------------------------------------------------------
    TRUOC DAY: .toast-msg chi dinh nghia trong player.css (chi player.html nap).

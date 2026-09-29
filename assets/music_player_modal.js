@@ -187,7 +187,8 @@
           t.detectedArtist || '',
           t.author || ''
         ].join(' ').toLowerCase();
-        return hay.includes(q);
+        /* FIX 2026-09-30 (UI-01): tim khong dau dung chung hop dong voi H2SearchCore. */
+        return (globalThis.H2SearchCore && H2SearchCore.includes) ? H2SearchCore.includes(hay, q) : hay.includes(q);
       });
 
       const totalCount = cat.tracks.length;

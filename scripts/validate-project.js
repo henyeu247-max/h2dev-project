@@ -232,8 +232,16 @@ for (const record of rawRecords) {
   if (record.duplicateOf && lc && lc.state && lc.state !== 'DUPLICATE') {
     errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} co duplicateOf=${record.duplicateOf} nhung channelLifecycle.state=${lc.state}`);
   }
+  // SUA 2026-09-30: luat cu "TERMINATED thi khong co folderName" gia dinh kenh bi go TRUOC khi crawl.
+  // Do N/N 29/09: RAW-143/145/152 crawl deep TRUOC khi bi go (yt-dlp 404 ngay 29/09), thu muc
+  // data/raw-channels-deep/<folderName> VAN TON TAI (2 file moi thu muc) va main.js dung folderName de mo
+  // dossier -> xoa folderName = mat duong dan toi bang chung lich su (vi pham NO_DELETE).
+  // Luat dung: TERMINATED duoc giu folderName LICH SU, nhung folderName PHAI tro toi thu muc co that.
   if (lc && lc.state === 'TERMINATED_BY_YOUTUBE' && record.deepIntelligence && record.deepIntelligence.folderName) {
-    errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} TERMINATED nhung van con folderName`);
+    const deepDir = path.join(ROOT, 'data', 'raw-channels-deep', record.deepIntelligence.folderName);
+    if (!fs.existsSync(deepDir) || !fs.statSync(deepDir).isDirectory()) {
+      errors.push(`data-tabs/raw-kenh-mau.json: ${record.id} TERMINATED co folderName nhung thu muc data/raw-channels-deep/${record.deepIntelligence.folderName} khong ton tai`);
+    }
   }
 }
 

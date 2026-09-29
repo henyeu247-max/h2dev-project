@@ -52,19 +52,21 @@ def pick_pilot(limit, raws=None):
         raw_ids = [r[0] for r in rows if r[0]]
     else:
         # Lay gap 3 lan limit — kenH video chet se bi bo qua, loop main chay den du ok_count.
-        # UI-06 fix: LEFT JOIN de kenH KHONG co top-video van vao candidates (dung channel listing).
+        # COALESCE: kenh kenh-mau-only co raw_id NULL — dung channel_id lam slot.
         rows = db.execute("""
-            SELECT DISTINCT c.raw_id
+            SELECT DISTINCT COALESCE(c.raw_id, c.channel_id) AS slot
             FROM competitor_channels c
             WHERE c.has_voice_sample = 0
             LIMIT ?
         """, (limit * 3,)).fetchall()
-        raw_ids = [r[0] for r in rows]
+        raw_ids = [r[0] for r in rows if r[0]]
     vids = {}
     for raw_id in raw_ids:
         r = db.execute(
-            "SELECT channel_id, handle FROM competitor_channels WHERE raw_id=? LIMIT 1",
-            (raw_id,)).fetchone()
+            "SELECT channel_id, handle FROM competitor_channels WHERE raw_id=? OR channel_id=? LIMIT 1",
+            (raw_id, raw_id)).fetchone()
+        if not r:
+            continue
         # Nhieu video ung vien theo rank — video rank 1 thuong da chet (SCAR 29/09: 17/25 fail)
         vlist = db.execute(
             "SELECT video_id FROM competitor_top_videos WHERE channel_id=? ORDER BY rank_order ASC LIMIT 10",

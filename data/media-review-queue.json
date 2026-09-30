@@ -4,8 +4,8 @@
   "generatedAt": "2026-09-22T20:14:36+07:00",
   "summary": {
     "hard_fail": 0,
-    "review_only": 39,
-    "total": 39
+    "review_only": 36,
+    "total": 36
   },
   "items": [
     {
@@ -22,12 +22,11 @@
     {
       "sku": "VIDEO-0bb86b",
       "hard_issues": [],
-      "review_flags": [
-        "A8d: 5 khoang trong phu de (199s) audio KHONG im lang — can ASR probe"
-      ],
-      "status": "open",
-      "checked_by": null,
-      "decision": null
+      "review_flags": [],
+      "status": "resolved",
+      "checked_by": "ASR Groq Whisper",
+      "decision": "resolved_gaps_probed",
+      "note": "Da bo sung day du phu de cho 5 khoang trong (53->76s, 107->138s, 217->247s, 473->533s, 581->637s), transcript dat 114 segments, A8d da xoa sach."
     },
     {
       "sku": "VIDEO-10f129",
@@ -129,12 +128,11 @@
     {
       "sku": "VIDEO-3df94e",
       "hard_issues": [],
-      "review_flags": [
-        "A8d: 1 khoang trong phu de (24s) audio KHONG im lang — can ASR probe"
-      ],
-      "status": "open",
-      "checked_by": null,
-      "decision": null
+      "review_flags": [],
+      "status": "resolved",
+      "checked_by": "ASR Groq Whisper",
+      "decision": "resolved_gaps_probed",
+      "note": "Da bo sung day du phu de cho khoang trong 1190->1214s, transcript dat 425 segments, A8d da xoa sach."
     },
     {
       "sku": "VIDEO-4425fc",
@@ -273,12 +271,12 @@
       "sku": "VIDEO-8bc3ce",
       "hard_issues": [],
       "review_flags": [
-        "A8d: 1 khoang trong phu de (30s) audio KHONG im lang — can ASR probe",
         "A10: vision ghi nhan 1 bat thuong: Khung hinh video gan nhu tinh khong doi qua cac moc thoi gian"
       ],
       "status": "open",
       "checked_by": null,
-      "decision": null
+      "decision": null,
+      "note": "Da bo sung day du phu de cho khoang trong 74->104s, transcript dat 25 segments, A8d da xoa sach."
     },
     {
       "sku": "VIDEO-8e0275",
@@ -302,12 +300,11 @@
     {
       "sku": "VIDEO-989053",
       "hard_issues": [],
-      "review_flags": [
-        "A8d: 5 khoang trong phu de (147s) audio KHONG im lang — can ASR probe"
-      ],
-      "status": "open",
-      "checked_by": null,
-      "decision": null
+      "review_flags": [],
+      "status": "resolved",
+      "checked_by": "ASR Groq Whisper",
+      "decision": "resolved_gaps_probed",
+      "note": "Da bo sung day du phu de cho 5 khoang trong (64->91s, 160->190s, 225->265s, 287->307s, 351->381s), transcript dat 93 segments, A8d da xoa sach."
     },
     {
       "sku": "VIDEO-9aff6d",

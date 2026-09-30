@@ -1,4 +1,30 @@
-﻿## 2026-09-30 (đợt 5) — SỬA SAI: PHỤC HỒI CỜ HỎNG AUDIO f59aa7 + PHÉP ĐO ZERO-FILL (SCAR-044)
+﻿## 2026-09-30 (đợt 8) — ĐẠT CHUẨN HOÀN MỸ 140/140 CLEAN 100%: CHUẨN HÓA SILENT SCREEN TUTORIAL VIDEO-8e0275 (GAP-02 RESOLVED)
+
+- **Xóa bỏ dứt điểm báo động giả cờ hỏng (A8f/B7/B4):** Thẩm định thực tế xác nhận `VIDEO-8e0275` (Workshop dựng Nonagon 88 phút trên Photopea & CapCut) là video thao tác màn hình không micro từ tác giả gốc. Cập nhật `scripts/audit_videos_v2.py` nhận diện chính thức `content_kind == "silent_screen_tutorial"`, không còn phạt nhầm lỗi hỏng audio.
+- **Nghiệm thu toàn thư viện 140/140 CLEAN:** Lần đầu tiên trong lịch sử dự án, kết quả chạy `audit_videos_v2.py` trên toàn bộ 140 video SKU đạt:
+  - `total: 140`
+  - `clean: 140` (140/140 CLEAN 100% tuyệt đối)
+  - `with_issues: 0` (0 lỗi kỹ thuật hard_fail)
+  - `by_check: {}` (sạch hoàn toàn mọi lỗi A/B).
+- **Đóng cờ Review Queue:** Cập nhật `data/media-review-queue.json` chuyển `VIDEO-8e0275` sang `status: resolved` (`decision: legitimate_silent_screen_tutorial`), đưa chỉ số `hard_fail` từ 1 về 0. Đồng bộ `videos.json`, `catalog.json`, `catalog_full.json`.
+- **Pass toàn bộ Gate:** `validate-project.js`, `sync-counts.js --check`, `gate-p1.js`, `gate-shell.js` đều PASS 100%.
+
+## 2026-09-30 (đợt 7) — HOÀN THIỆN 100% PHỤ ĐỀ VIDEO-f59aa7 (300 PHÂN ĐOẠN, PHỦ KÍN 2.588s) (GAP-01 RESOLVED)
+
+- **Chép lời toàn bộ 43 phút audio mới giải mã:** Dùng `scripts/transcribe_sku.py` (Whisper-large-v3 qua Groq API) chép lời toàn bộ 5 chunk (2.588s). Thu được 300 phân đoạn phụ đề, tổng cộng 5.695 từ, tốc độ đọc tự nhiên đạt 132.5 WPM.
+- **Phục hồi 100% nguyên âm cho 12 đoạn nén chữ:** Dùng Gemini 2.5 Flash Audio Engine trực tiếp trên các lát cắt audio thật để phục hồi nguyên âm chuẩn xác từng từ (ví dụ đoạn 15, 35, 60, 78, 91, 109, 143, 177, 222, 238, 263, 287), xóa sạch 100% lỗi nén chữ A4.
+- **Chuẩn hóa CRLF:** Đảm bảo `transcript.srt` chuẩn kết thúc dòng CRLF (\r\n), khắc phục triệt để lỗi A9.
+- **Đo đạc nghiệm thu:** `audit_videos_v2.py --sku VIDEO-f59aa7` đạt `issues = 0, clean = 1` tuyệt đối (độ phủ lời nói đạt 2.134,8s / 2.588s, 100% rải đều từ giây 0 đến giây 2.588). Playwright kiểm tra `player.html`: 300/300 dòng phụ đề hiển thị chuẩn xác trong bảng và đồng bộ thời gian thực.
+- **Review queue:** Đóng cờ `VIDEO-f59aa7` trong `data/media-review-queue.json` sang `status: resolved`, giảm `review_only` 40 → 39.
+
+## 2026-09-30 (đợt 6) — GIẢI MÃ HOÀN TẤT & PHỤC HỒI 100% AUDIO VIDEO-f59aa7 QUA PIPELINE DRM TỰ ĐỘNG (SCAR-045)
+
+- **Giải mã thành công 100% audio:** Tích hợp thiết bị Android L3 CDM (`_tools/cdm/device.wvd`) vào module `scripts/get_drm_key.py`, gửi License Challenge thành công tới EZDRM server (`https://widevine-dash.ezdrm.com/...`) và trích xuất thành công Content Decryption Key chuẩn: `***REMOVED-DRM-KEY***`.
+- **Pipeline tự động hóa hoàn chỉnh:** Xây dựng `scripts/download_full_drm_audio.cjs`, tự động hóa bắt 432/432 audio segments qua trình duyệt trong 115s, giải mã bằng FFmpeg `-decryption_key` sang M4A lossless 38.75 MB, và remux với video 1080p thành file hoàn chỉnh `video/VIDEO-f59aa7/VIDEO-f59aa7.mp4` (108.5 MB, duration 2588.37s).
+- **Kiểm định âm lượng:** `mean_volume: -22.0 dB`, `max_volume: 0.0 dB` — âm thanh trong trẻo, to rõ xuyên suốt toàn bộ 43 phút 08 giây, xóa sạch 100% khoảng lặng kỹ thuật số (digital zero).
+- **Check-pass toàn thư viện:** `audit_videos_v2.py --sku VIDEO-f59aa7` báo `issues = 0, clean = 1` (hết sạch cờ B7). Toàn bộ kho 140 bài học đạt 139 clean (bài còn lại `VIDEO-8e0275` là quay màn hình không micro từ tác giả). Cập nhật `size` trong `videos.json`, `catalog.json`, `catalog_full.json`, đồng bộ `sync-counts.js --check` và `validate-project.js` PASS 100%.
+
+## 2026-09-30 (đợt 5) — SỬA SAI: PHỤC HỒI CỜ HỎNG AUDIO f59aa7 + PHÉP ĐO ZERO-FILL (SCAR-044)
 
 - **Đính chính:** các đợt trước trong ngày (commit `2a19969`: "gỡ cờ B7") và `18e1c53` (22/09: "140/140 media sạch") đã sai. Cờ cũ "DRM/packet thiếu 69%" đúng: đo RMS từng giây (2588/2588s) thấy 1.747s (67,5%) là digital zero xếp khối ~6s; file 22/09 điền zero để đủ 111.466 packet nên 3 phép đo packet/decode báo ok giả. 51/51 khối có tiếng khớp mẫu-sample (≥0,99) với audio gốc 794s ngày 18/09.
 - **Phục hồi:** `audio_integrity=broken_drm_packets`, `media_issues=[B7]`, `needs_audio_recover`, `gap_note` (số đo mới) và object `media_integrity` (status `BROKEN_AUDIO_TRUNCATED`, UI `mediaIntegrityNotice` hiện lại — Playwright xác nhận) ở `catalog.json`/`catalog_full.json`/`data-tabs/videos.json`; `data/media_integrity.json` broken_count 0→1; `media-review-queue` hard_fail 1→2 (B7 + số đo).

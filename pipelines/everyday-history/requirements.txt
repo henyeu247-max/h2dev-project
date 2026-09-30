@@ -1,0 +1,3 @@
+# Dependencies for H2DEV Everyday History Pipeline
+requests>=2.31.0
+python-dotenv>=1.0.0

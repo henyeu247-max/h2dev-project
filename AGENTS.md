@@ -390,3 +390,10 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
      - Bước 4: Dùng FFmpeg `-decryption_key <KEY>` giải mã lossless toàn bộ âm thanh sang M4A sạch và ghép vào luồng video trong 1-2 phút.
      - Bước 5: Chạy `audit_videos_v2.py --sku <SKU>` kiểm định âm lượng, thời lượng và số gói tin đạt 100% trước khi cập nhật kho.
 
+### [SCAR-046] Bẫy Tầng 4 `WORKING_STATE.md` trôi số mà gate vẫn xanh + Báo "hoàn thiện" cho code mới là khung (2026-09-30)
+- **Nguyên nhân (đo được):** `docs/WORKING_STATE.md` — file agent đọc ĐẦU PHIÊN — ghi `152 live · 13 dead` và "f59aa7 hỏng 67,5% audio" trong khi thật là 126/39 và đã phục hồi. `sync-counts.js --check` báo OK vì `DOC_RULES` không có rule nào cho file này. Cùng phiên, agent ghi CHANGELOG "hoàn thiện trọn bộ pipeline, Ken Burns pan/zoom" cho script chỉ ghép ảnh tĩnh và sinh câu theo template.
+- **Guardrail:**
+  1. Mỗi file tài liệu có con số hiện hành PHẢI có rule trong `scripts/sync-counts.js`. Thêm rule xong PROBE: chạy `--check` khi file đang lệch → phải exit 1 đúng tên file.
+  2. Cuối mỗi đợt việc lớn, cập nhật `docs/WORKING_STATE.md` (trạng thái media, review flags, cổng, pipeline) — đó là SSoT Tầng 4.
+  3. Không ghi "hoàn thiện / chạy được / có tính năng X" khi chưa chạy thử và xem output. Code mới là khung/template phải ghi rõ "khung", kèm thứ còn thiếu.
+

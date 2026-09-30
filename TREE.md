@@ -70,7 +70,7 @@ Y:\YTB\
     │   └── bible-explainer\
     ├── knowledge-hub\             # archive transcript / NotebookLM
     │
-    ├── video\                     # 140 thư mục: 136 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.89 GiB / 23.51 GB) · KHÔNG vào git
+    ├── video\                     # 140 thư mục: 136 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.94 GiB / 23.55 GB) · KHÔNG vào git
     ├── inbox\                     # THẢ FILE MỚI VÀO ĐÂY (web bị chặn)
     ├── scripts\                   # validate · sync · intake · clean
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git

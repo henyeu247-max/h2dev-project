@@ -426,6 +426,7 @@ window.addEventListener('keydown', (e)=>{
     const srcBox=document.getElementById('psources');
     let h='';
     if(v.origin) h+=`<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer">${ico('globe', 14)}<span>Bài học gốc H2Dev</span></a>`;
+    if(sku === 'VIDEO-f59aa7' || v.drm) h+=`<a href="/watch-f59aa7.html" target="_blank" rel="noopener noreferrer" class="btn-live-stream" style="background:#059669;color:#fff;display:inline-flex;align-items:center;gap:0.35rem;padding:0.4rem 0.75rem;border-radius:0.5rem;font-weight:700;font-size:12px;text-decoration:none;">${ico('tv', 14)}<span>Xem Bản Gốc Full Tiếng (Cốc Cốc / Chrome / Edge)</span></a>`;
     if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4">${ico('download', 14)}<span>Tải ${isWebm?'WEBM':'MP4'} Full HD</span></a>`;
     srcBox.innerHTML=h;
     if(v.channels&&v.channels.length){

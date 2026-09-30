@@ -14,8 +14,8 @@
   "ngay_do": "2026-08-23",
   "nguon_do": "vidIQ channel_stats (2026-08-23)",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@mokamoka-e9f",
@@ -31,8 +31,8 @@
   "avatar": "assets/avatars/mokamoka-e9f-98744ffab0.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@은밀한응답",
@@ -115,10 +115,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "KHÔNG XÁC ĐỊNH 20/08/2026 (có thể đổi handle/tên) — ngừng check, cần user tự tìm nếu muốn.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@desidilse",
@@ -157,10 +157,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@의사가숨긴건강법-z9n",
@@ -269,8 +269,8 @@
   "avatar": "assets/avatars/ch-399fc78aba.svg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@kurumanozokitai",
@@ -328,10 +328,12 @@
    "🇺🇸 US"
   ],
   "avatar": "assets/avatars/EricBennettMD-81fe9e2c6e.jpg",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "Eric Bennett MD"
  },
  {
   "handle": "@斎藤一人の福の言霊",
@@ -371,10 +373,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@fansdrWilliamLI",
@@ -391,8 +393,8 @@
   "note": "vidIQ 18/08: Health Insight US — reset 27-30/07 (8.2tr view→16K, 33→3 video). Không phải reup.",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@NắngNhỏToonReview",
@@ -410,8 +412,8 @@
   "avatar": "assets/avatars/N_ngNh_ToonReview-0cd8051493.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@幻界と神域の扉",
@@ -426,10 +428,12 @@
   ],
   "avatar": "assets/avatars/ch-291dee52ad.jpg",
   "note": "vidIQ 18/08: Religion JP 4400 sub +30 video/30 ngày. Không phải reup.",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "幻界と神域の扉"
  },
  {
   "handle": "@다시이팔청춘-k5d",
@@ -685,8 +689,8 @@
   "avatar": "assets/avatars/songkhoekhivegia-5ce62eaca0.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Tài khoản YouTube chấm dứt do khiếu nại bản quyền (Copyright Policy 2026). Giữ nguyên link bài học làm case study dẫn chứng.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@Jinseioiyasukotoba",
@@ -794,10 +798,9 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "",
-  "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "dead": false,
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
-  "ngay_do": "2026-08-22",
+  "ngay_do": "2026-09-30",
   "ngay_do_check": "404 kiểm tra 2026-08-17",
   "voiceDna": {
    "code": "ja-JP",
@@ -806,7 +809,10 @@
    "wpmNote": "chars/min",
    "measuredAt": "2026-09-29",
    "sampleUrl": "assets/voice-samples/GEN_x44c36d87c5.mp3"
-  }
+  },
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "イエスのアファメーション"
  },
  {
   "handle": "@meophongthuy-m7d",
@@ -869,8 +875,8 @@
   "avatar": "assets/avatars/Th_cPh_mS_cKho_-u8y-2569c96203.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@kienthucthanhoc9",
@@ -932,10 +938,10 @@
   ],
   "avatar": null,
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@izinnokatari",
@@ -1110,8 +1116,8 @@
   "avatar": "assets/avatars/ScriptureMadeSimpleTV-766804ee1a.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@theopenscriptures",
@@ -1258,10 +1264,12 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/B_iH_cTu_iGi_-VN-6910ef5f41.jpg",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "Bài Học Tuổi Già"
  },
  {
   "handle": "@Kori_Sub",
@@ -1320,10 +1328,12 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/ch-465e958a2d.jpg",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "静かな家族の秘密"
  },
  {
   "handle": "@Camnhonvietsub",
@@ -1455,10 +1465,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@kyzoravietsub",
@@ -1473,10 +1483,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@붓다의등불",
@@ -1517,10 +1527,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@Tieulongreview2026",
@@ -1769,8 +1779,8 @@
   "avatar": "assets/avatars/UCeVwhrEnYjCNdaDr47x4dSw-e6ef74b4c8.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@UCEGZ_eUt6HeseHScQEcqTxw",
@@ -1787,8 +1797,8 @@
   "note": "vidIQ 18/08: CoreSight Technology/Knowledge, 0 video mới. Không phải kinh tế.",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@ScienceSun-b4r",
@@ -1825,10 +1835,12 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/HDVietsub-h7u-cb54404e0d.jpg",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "HD Vietsub"
  },
  {
   "handle": "@redvoices90",
@@ -1842,10 +1854,12 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/redvoices90-865286e79a.jpg",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "REDVOCES"
  },
  {
   "handle": "@올바른마음100",
@@ -1883,8 +1897,8 @@
   "avatar": "assets/avatars/ch-ef72f2dec8.svg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@人生を読む",
@@ -1945,10 +1959,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@時代を生きた声",
@@ -2037,10 +2051,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "KHÔNG XÁC ĐỊNH 20/08/2026 (có thể đổi handle/tên) — ngừng check, cần user tự tìm nếu muốn.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@tritueconhanradio",
@@ -2100,10 +2114,12 @@
    "🇨🇳 Trung"
   ],
   "avatar": "assets/avatars/Kh_mPh_TrungHoa-HT-d76ede2f70.jpg",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "Khám Phá Trung Hoa"
  },
  {
   "handle": "@DoctorDr.Lee-h9t",
@@ -2163,10 +2179,12 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/Tu_iGi_Radio_VN-03216f5437.jpg",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "Tuổi Già Radio"
  },
  {
   "handle": "@FinalUrgency",
@@ -2182,10 +2200,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@조선야담소",
@@ -2226,8 +2244,8 @@
   "avatar": "assets/avatars/ch-11e0f02ba5.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@江戸怪異ものがたり",
@@ -2266,10 +2284,12 @@
   ],
   "avatar": "assets/avatars/1-77f45e5ddb.jpg",
   "note": "Sức khỏe Nhật. Sửa 18/08: gỡ market Hàn (kênh JP).",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "ほのぼのラジオ"
  },
  {
   "handle": "@오싹한경제",
@@ -2359,10 +2379,12 @@
    "🇻🇳 Việt"
   ],
   "avatar": "assets/avatars/ch-5a8edd804f.jpg",
-  "ngay_do": "2026-08-22",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "ngay_do": "2026-09-30",
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "성실한 경제학"
  },
  {
   "handle": "@シルバー世代の語り部",
@@ -2402,10 +2424,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@偉人のコンパス1",
@@ -2421,8 +2443,8 @@
   "avatar": "assets/avatars/ch-5a79856f3b.svg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@buddhamind60s",
@@ -2529,10 +2551,10 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "404 - handle không tồn tại (đổi handle hoặc bị xóa)",
+  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
   "note": "KHÔNG XÁC ĐỊNH 20/08/2026 (có thể đổi handle/tên) — ngừng check, cần user tự tìm nếu muốn.",
   "ngay_do": "2026-08-22",
-  "ngay_do_check": "404 kiểm tra 2026-08-17"
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@thecoldwartales",
@@ -2696,8 +2718,8 @@
   "avatar": "assets/avatars/suckhoedongy99-bf072d5ce8.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "deadNote": "Kênh YouTube bị gỡ do vi phạm Nguyên tắc cộng đồng (Community Guidelines 2026). Giữ nguyên link bài học làm case study dẫn chứng.",
+  "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
   "handle": "@KhỏeVềGià",
@@ -3006,11 +3028,13 @@
    "🇺🇸 US"
   ],
   "note": "Everyday History 18.4K/+4.7K/30d views +3.26M (đo 20/08)",
-  "ngay_do": "2026-08-22",
+  "ngay_do": "2026-09-30",
   "avatar": "assets/avatars/toastertalesusa-3de3e981bc.jpg",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "Toaster Tales"
  },
  {
   "handle": "@everydaythingsexplain",
@@ -3070,11 +3094,13 @@
    "🇺🇸 US"
   ],
   "note": "True Origin 38.7K/+12.9K/30d (đo 20/08)",
-  "ngay_do": "2026-08-22",
+  "ngay_do": "2026-09-30",
   "avatar": "assets/avatars/purebusinesshorts-29b53c269f.jpg",
-  "dead": true,
-  "deadNote": "404 - kenh khong ton tai (yt-dlp flat-playlist \"Requested entity was not found\")",
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)"
+  "dead": false,
+  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
+  "verifiedLiveAt": "2026-09-30",
+  "nguon_do": "YouTube Live Verification (2026-09-30)",
+  "title": "PureBusiness"
  },
  {
   "handle": "@thedishdecoded",

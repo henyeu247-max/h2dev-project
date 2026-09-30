@@ -1,4 +1,12 @@
-﻿## 2026-09-30 (đợt 9) — HOÀN TẤT 100% OCR CHO TOÀN BỘ 156 RAW KÊNH ĐỐI THỦ (GAP-03 RESOLVED)
+﻿## 2026-09-30 (đợt 10) — QUÉT SẠCH 100% CỜ A8d TRÊN TOÀN BỘ 140 VIDEO (GAP-04 RESOLVED)
+
+- **Xóa sạch 100% cờ A8d toàn kho:** Bóc tách chuyên sâu toàn bộ 23 khoảng trống của 4 video cuối cùng (`VIDEO-0bb86b`, `VIDEO-3df94e`, `VIDEO-8bc3ce`, `VIDEO-989053`) và 11 khoảng trống của `VIDEO-f59aa7` bằng Groq Whisper-large-v3. Bổ sung hàng trăm câu giảng thực chiến của tác giả vào `transcript.json`, `transcript.srt` (chuẩn CRLF) và `transcript.txt`.
+- **Nghiệm thu audit A8d = 0:** Kết quả chạy `audit_videos_v2.py` trên toàn bộ 140 video xác nhận:
+  - `A8d`: **0** (xóa sạch 100% cờ khoảng trống trên toàn thư viện).
+  - Đóng cờ trong `data/media-review-queue.json`: chuyển `VIDEO-0bb86b`, `VIDEO-3df94e`, `VIDEO-989053` sang `status: resolved`, giảm `review_only` 39 → 36.
+- **Pass toàn bộ Gate:** `validate-project.js`, `sync-counts.js --check`, `gate-p1.js`, `gate-shell.js` đều PASS 100%.
+
+## 2026-09-30 (đợt 9) — HOÀN TẤT 100% OCR CHO TOÀN BỘ 156 RAW KÊNH ĐỐI THỦ (GAP-03 RESOLVED)
 
 - **Xóa sạch khoảng trống OCR:** Tự động hóa bóc tách chữ cho 73 bản ghi raw kênh còn thiếu bằng công cụ `scripts/batch_ocr_raw_channels.cjs` kết hợp pool 7 model Vision (Gemini 3.7/3.6/3.5/2.5-lite) và đa key rotation.
 - **Nghiệm thu 156/156 có OCR (100%):** Bổ sung đầy đủ 73/73 bản ghi từ RAW-096 đến RAW-168, đưa tổng số bản ghi có cấu trúc OCR chữ (`channelName`, `handle`, `subsNumber`, `videoCountNumber`, `videoRows`) từ 83/156 lên 156/156 (100% tuyệt đối).

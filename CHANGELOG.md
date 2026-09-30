@@ -1,4 +1,10 @@
-﻿## 2026-09-30 (đợt 8) — ĐẠT CHUẨN HOÀN MỸ 140/140 CLEAN 100%: CHUẨN HÓA SILENT SCREEN TUTORIAL VIDEO-8e0275 (GAP-02 RESOLVED)
+﻿## 2026-09-30 (đợt 9) — HOÀN TẤT 100% OCR CHO TOÀN BỘ 156 RAW KÊNH ĐỐI THỦ (GAP-03 RESOLVED)
+
+- **Xóa sạch khoảng trống OCR:** Tự động hóa bóc tách chữ cho 73 bản ghi raw kênh còn thiếu bằng công cụ `scripts/batch_ocr_raw_channels.cjs` kết hợp pool 7 model Vision (Gemini 3.7/3.6/3.5/2.5-lite) và đa key rotation.
+- **Nghiệm thu 156/156 có OCR (100%):** Bổ sung đầy đủ 73/73 bản ghi từ RAW-096 đến RAW-168, đưa tổng số bản ghi có cấu trúc OCR chữ (`channelName`, `handle`, `subsNumber`, `videoCountNumber`, `videoRows`) từ 83/156 lên 156/156 (100% tuyệt đối).
+- **Pass toàn bộ Gate:** `validate-project.js`, `sync-counts.js --check`, `gate-p1.js`, `gate-shell.js` đều PASS 100%.
+
+## 2026-09-30 (đợt 8) — ĐẠT CHUẨN HOÀN MỸ 140/140 CLEAN 100%: CHUẨN HÓA SILENT SCREEN TUTORIAL VIDEO-8e0275 (GAP-02 RESOLVED)
 
 - **Xóa bỏ dứt điểm báo động giả cờ hỏng (A8f/B7/B4):** Thẩm định thực tế xác nhận `VIDEO-8e0275` (Workshop dựng Nonagon 88 phút trên Photopea & CapCut) là video thao tác màn hình không micro từ tác giả gốc. Cập nhật `scripts/audit_videos_v2.py` nhận diện chính thức `content_kind == "silent_screen_tutorial"`, không còn phạt nhầm lỗi hỏng audio.
 - **Nghiệm thu toàn thư viện 140/140 CLEAN:** Lần đầu tiên trong lịch sử dự án, kết quả chạy `audit_videos_v2.py` trên toàn bộ 140 video SKU đạt:

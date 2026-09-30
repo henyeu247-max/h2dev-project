@@ -1,4 +1,14 @@
-﻿## 2026-09-30 (đợt 13) — CHUẨN HÓA MẢNG SKU NGÁCH XANH & HOÀN TẤT KỊCH BẢN PILOT-01-THE-MIRROR 1.927 TỪ
+﻿## 2026-09-30 (đợt 14) — CHỐT PHƯƠNG ÁN B: PAUSED PILOT THE MIRROR & HOÀN THIỆN TRỌN BỘ 4 PIPELINE SẢN XUẤT CHUYÊN BIỆT
+
+- **Chốt dứt điểm Phương án B cho Pilot The Mirror:** Chuyển trạng thái `PILOT-01-THE-MIRROR` sang `paused` (`execution_mode: "paused"`), đóng dry-run, loại bỏ toàn bộ các nhắc nhở thừa về việc làm media cho pilot này để tập trung 100% nguồn lực giải quyết các gap nền tảng và hoàn thiện sườn ứng dụng site.
+- **Hoàn thiện trọn bộ 4 Pipeline sản xuất chuyên biệt (`pipelines/`):**
+  1. `hoat-hinh-ai` (`h2dev-hoat-hinh`): Pipeline 5 bước biến logline thành video hoạt hình AI hoàn chỉnh (`generate_images.py`, `generate_videos.py`, `merge_clips.py`).
+  2. `wildlife` (`h2dev-wildlife-script` & `h2dev-wildlife-motion`): Tự động hóa kịch bản 6 nhịp chuẩn David Attenborough (`generate_wildlife_script.py`) với mật độ 70-90 WPM và bộ sinh prompt chuyển động Veo 3.1 / Kling (`generate_motion_prompts.py`).
+  3. `ton-giao` (`h2dev-ton-giao`): Pipeline 4 bước cho video giải nghĩa tôn giáo học thuật (`generate_image.py`, `generate_voice.py`, `merge_video.py`) với phân đoạn `===` và tính toán thời gian tự động.
+  4. `everyday-history` (`h2dev-everyday-history`): Bộ công cụ sinh kịch bản 3 Hồi đối soát bảo tàng thật (`generate_everyday_history.py`) và lắp ráp video Ken Burns pan/zoom chuẩn 1080p (`assemble_history_video.py`).
+- **Pass toàn bộ Gate:** `validate-project.js`, `sync-counts.js --check`, `gate-p1.js`, `gate-shell.js`, `check-ui-classes.js` đều PASS 100%.
+
+## 2026-09-30 (đợt 13) — CHUẨN HÓA MẢNG SKU NGÁCH XANH & HOÀN TẤT KỊCH BẢN PILOT-01-THE-MIRROR 1.927 TỪ
 
 - **Chuẩn hóa mảng SKU trong `data-tabs/ngach-xanh.json`:** Khắc phục 3 vị trí bị lồng object `{ sku, note }` thành chuỗi SKU chuẩn (`VIDEO-de2564`, `VIDEO-d71802`, `VIDEO-502960`). Loại bỏ triệt để lỗi in chuỗi `[object Object]` trên giao diện và các công cụ dòng lệnh; đồng bộ ghi chú vào trường `skuNote`.
 - **Hoàn thiện kịch bản lồng tiếng tiếng Anh Pilot The Mirror (`PILOT-01-THE-MIRROR`):** Mở rộng `localized-scripts/en.txt` và `en.md` từ bản tóm tắt 316 từ lên đầy đủ 1.927 từ chuẩn kịch bản narration 7 phân đoạn (00:00 - 11:30+), khớp 100% cấu trúc 3 hồi, trích dẫn bảo tàng Anatolian, Murano và Versailles.

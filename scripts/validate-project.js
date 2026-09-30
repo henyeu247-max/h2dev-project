@@ -298,7 +298,7 @@ for (const [surface, text] of liveControlText) {
     if (text.includes(token)) errors.push(`${surface}: stale current count text "${token}"`);
   }
 }
-if (videoAcceptance.schema_version !== 'h2dev.video-acceptance.v1' || !videoAcceptance.pilot || !['not_started', 'in_progress', 'complete', 'blocked'].includes(videoAcceptance.pilot.status)) {
+if (videoAcceptance.schema_version !== 'h2dev.video-acceptance.v1' || !videoAcceptance.pilot || !['not_started', 'in_progress', 'complete', 'blocked', 'paused'].includes(videoAcceptance.pilot.status)) {
   errors.push('data/video_acceptance.json: pilot acceptance must remain explicit and structured');
 }
 if (!['pending', 'complete'].includes(videoAcceptance.pilot?.outputs?.mp4)) errors.push('data/video_acceptance.json: invalid mp4 status');

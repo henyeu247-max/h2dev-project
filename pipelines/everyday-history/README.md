@@ -17,7 +17,9 @@ Object Name → Script (3 Hồi) → Voiceover (130-145 WPM) → Images/B-Roll �
 | **1** | `scripts/generate_everyday_history.py` | Sinh kịch bản 3 Hồi + trích dẫn bảo tàng | `script.md`, `prompts.json` |
 | **2** | Voice AI | Thu giọng đọc nam/nữ trầm ấm Anh-Mỹ chuẩn EBU R128 (-16 LUFS) | `voice/voice.mp3` |
 | **3** | Image/B-Roll AI | Sinh ảnh chiaroscuro 16:9 hoặc thu thập B-roll công cộng | `images/*.png` |
-| **4** | `scripts/assemble_history_video.py` | Lắp ráp video tự động bằng FFmpeg với Ken Burns mượt mà | `final.mp4` |
+| **4** | `scripts/assemble_history_video.py` | Ghép ảnh tĩnh chia đều theo thời lượng audio (CHƯA có Ken Burns / crossfade) | `final.mp4` |
+
+> **Trạng thái thật (2026-09-30):** Bước 1 sinh narration theo TEMPLATE (các đoạn lặp cùng khung câu) — chỉ dùng làm dàn ý, KHÔNG dùng làm bản đọc. Bản đọc chuẩn phải viết tay/LLM theo skill `h2dev-everyday-history` (mẫu: `raw-niches/US_EverydayHistory/PILOT-01-THE-MIRROR/master-script.md`). Bước 4 chưa có chuyển động pan/zoom.
 
 ---
 

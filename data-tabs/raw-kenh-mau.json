@@ -24517,12 +24517,12 @@
         "sampleUrl": "assets/voice-samples/RAW-103.mp3"
       },
       "ocr": {
-        "channelName": null,
-        "handle": null,
-        "subsText": null,
-        "subsNumber": null,
-        "videoCountText": null,
-        "videoCountNumber": null,
+        "channelName": "Food code",
+        "handle": "@Foodcode1",
+        "subsText": "14.7K subscribers",
+        "subsNumber": 14700,
+        "videoCountText": "35 videos",
+        "videoCountNumber": 35,
         "monetized": "unknown",
         "videoRows": [
           {
@@ -24950,12 +24950,12 @@
         "sampleUrl": "assets/voice-samples/RAW-103.mp3"
       },
       "ocr": {
-        "channelName": null,
-        "handle": null,
-        "subsText": null,
-        "subsNumber": null,
-        "videoCountText": null,
-        "videoCountNumber": null,
+        "channelName": "Food code",
+        "handle": "@Foodcode1",
+        "subsText": "14.7K subscribers",
+        "subsNumber": 14700,
+        "videoCountText": "35 videos",
+        "videoCountNumber": 35,
         "monetized": "unknown",
         "videoRows": [
           {
@@ -25172,11 +25172,11 @@
       },
       "ocr": {
         "channelName": "GIANTS OF THE DEEP",
-        "handle": null,
-        "subsText": null,
-        "subsNumber": null,
-        "videoCountText": null,
-        "videoCountNumber": null,
+        "handle": "@OfficialBeyondTheBlue",
+        "subsText": "212.0K subscribers",
+        "subsNumber": 212000,
+        "videoCountText": "42 videos",
+        "videoCountNumber": 42,
         "monetized": "unknown",
         "videoRows": [
           {
@@ -25392,12 +25392,12 @@
         "sampleUrl": "assets/voice-samples/RAW-054.mp3"
       },
       "ocr": {
-        "channelName": "",
-        "handle": "",
-        "subsText": "",
-        "subsNumber": 0,
-        "videoCountText": "",
-        "videoCountNumber": 0,
+        "channelName": "BeyondTheBlue",
+        "handle": "@OfficialBeyondTheBlue",
+        "subsText": "212.0K subscribers",
+        "subsNumber": 212000,
+        "videoCountText": "42 videos",
+        "videoCountNumber": 42,
         "monetized": "unknown",
         "videoRows": [
           {
@@ -25604,12 +25604,12 @@
         "sampleUrl": "assets/voice-samples/RAW-108.mp3"
       },
       "ocr": {
-        "channelName": null,
-        "handle": null,
-        "subsText": null,
-        "subsNumber": null,
-        "videoCountText": null,
-        "videoCountNumber": null,
+        "channelName": "Scary Interesting",
+        "handle": "@ScaryInteresting",
+        "subsText": "2020.0K subscribers",
+        "subsNumber": 2020000,
+        "videoCountText": "240 videos",
+        "videoCountNumber": 240,
         "monetized": "unknown",
         "videoRows": [
           {
@@ -25816,12 +25816,12 @@
         "sampleUrl": "assets/voice-samples/RAW-108.mp3"
       },
       "ocr": {
-        "channelName": null,
-        "handle": null,
-        "subsText": null,
-        "subsNumber": null,
-        "videoCountText": null,
-        "videoCountNumber": null,
+        "channelName": "Scary Interesting",
+        "handle": "@ScaryInteresting",
+        "subsText": "2020.0K subscribers",
+        "subsNumber": 2020000,
+        "videoCountText": "240 videos",
+        "videoCountNumber": 240,
         "monetized": "unknown",
         "videoRows": [
           {
@@ -34653,12 +34653,12 @@
         "format": "JPEG"
       },
       "ocr": {
-        "channelName": "",
-        "handle": "",
-        "subsText": "",
-        "subsNumber": 0,
-        "videoCountText": "",
-        "videoCountNumber": 0,
+        "channelName": "Science Sun",
+        "handle": "@UCqZpuhhJC5G4kfvBG7MTAXg",
+        "subsText": "92.5K subscribers",
+        "subsNumber": 92500,
+        "videoCountText": "58 videos",
+        "videoCountNumber": 58,
         "monetized": "unknown",
         "videoRows": [],
         "scannedAt": "2026-09-30 05:39:21"
@@ -37648,6 +37648,7 @@
         "subscribersGained30d": 13800,
         "viewsGained30d": 753150
       }
-    ]
+    ],
+    "totalRecordsWithOcr": 156
   }
 }

@@ -1,4 +1,11 @@
-﻿## 2026-09-30 (đợt 14) — CHỐT PHƯƠNG ÁN B: PAUSED PILOT THE MIRROR & HOÀN THIỆN TRỌN BỘ 4 PIPELINE SẢN XUẤT CHUYÊN BIỆT
+﻿## 2026-09-30 (đợt 15) — CẬP NHẬT TẦNG 4 `WORKING_STATE.md` + GATE PHỦ FILE NÀY + ĐÍNH CHÍNH ĐỢT 14
+
+- **Gap thật phát hiện:** `docs/WORKING_STATE.md` (Live State, file agent đọc đầu phiên) còn số 24/09: `152 live · 13 dead` (thật 126/39), `f59aa7` "hỏng audio 67,5%" (đã phục hồi), "4 pipeline". `sync-counts.js --check` vẫn xanh vì **không có rule nào phủ file này** (tái phạm SCAR-008/012).
+- **Vá:** thêm 4 rule `docs/WORKING_STATE.md` vào `DOC_RULES` (kênh live/dead, tổng bài, tài liệu, ngách). **PROBE:** trước khi sửa file → `--check` exit 1 báo đúng `docs/WORKING_STATE.md`; sau `sync-counts.js` → OK.
+- **Viết lại nội dung WORKING_STATE:** media 140/140 clean + 36 review_flags (A10 19 · S6 19 · S9 15); cổng 8899/3988/20128/20140 đo lại; bảng mức sẵn sàng THẬT của 5 thư mục pipeline; pilot Mirror `paused`.
+- **Đính chính đợt 14:** `wildlife/` và `everyday-history/` mới là **khung sinh theo template**, chưa phải pipeline hoàn chỉnh: narration everyday-history lặp khung câu (không dùng làm bản đọc), `assemble_history_video.py` chỉ ghép ảnh tĩnh — **chưa có Ken Burns/crossfade**; wildlife chưa có bước voice/merge. `bible-explainer/` không có script. README pipeline đã ghi rõ.
+
+## 2026-09-30 (đợt 14) — CHỐT PHƯƠNG ÁN B: PAUSED PILOT THE MIRROR & THÊM KHUNG 2 PIPELINE (xem đính chính đợt 15)
 
 - **Chốt dứt điểm Phương án B cho Pilot The Mirror:** Chuyển trạng thái `PILOT-01-THE-MIRROR` sang `paused` (`execution_mode: "paused"`), đóng dry-run, loại bỏ toàn bộ các nhắc nhở thừa về việc làm media cho pilot này để tập trung 100% nguồn lực giải quyết các gap nền tảng và hoàn thiện sườn ứng dụng site.
 - **Hoàn thiện trọn bộ 4 Pipeline sản xuất chuyên biệt (`pipelines/`):**

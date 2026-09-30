@@ -1,6 +1,6 @@
 # LIVE RUNTIME STATE — D:\YTB\H2DEV-Project
 # Context Hierarchy Layer 4 | Single Source of Runtime Truth
-# Cập nhật lúc: 2026-09-24T04:05:00+07:00
+# Cập nhật lúc: 2026-09-30T22:30:00+07:00
 
 > **Bản chất kỹ thuật:** File này ghi nhận trạng thái thực tế đang chạy (Live Reality) của hệ sinh thái `D:\YTB\H2DEV-Project`.
 > Mọi Agent khi bắt đầu phiên làm việc đọc file này để nắm ngay thực trạng runtime mà không cần quét lại từ đầu.
@@ -18,10 +18,13 @@
 - **Tập tin chân lý số liệu:** `data/counts-manifest.json` (tự động cập nhật qua `node scripts/sync-counts.js`).
 - **Tổng kho bài học (`videos.json`):** **140 bài** (136 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 113 Pro).
   → nguồn: `data-tabs/videos.json` (Local = VPS = 140).
-- **Kiểm định media toàn vẹn:** **140/140 file** (140/140 có luồng video + audio khác 0 byte, khớp catalog về thời lượng/độ phân giải/size — ffprobe N/N 2026-09-30). **2 file audio hỏng (đo RMS từng giây 140/140, 2026-09-30):** `VIDEO-f59aa7` — 67,5% digital zero (chỉ 818/2588s có tiếng; file 22/09 điền zero cho đủ packet nên 3 phép đo packet báo ok giả; cờ `broken_drm_packets`/`B7`/`BROKEN_AUDIO_TRUNCATED` ĐÃ PHỤC HỒI, UI hiện cảnh báo); `VIDEO-8e0275` — audio rỗng 100% (màn hình im). 36 video có đuôi zero dài là thao tác màn hình hợp lệ (đã có placeholder). Phụ đề f59aa7 đã căn lại: 135 đoạn phủ 824s = gần hết phần audio có tiếng (Groq Whisper + 17 vùng bổ sung bằng Gemini nghe clip); khoảng trống còn lại là im lặng số. Cần tải lại nguồn (mona-cloud HLS) để có đủ tiếng; `video/` không trong git, CHƯA đồng bộ VPS (xem SCAR-044 và `_audit/20260930-f59aa7-transcript-drift/`).
-  → nguồn: `counts-manifest.mediaFiles` + ffprobe + `data/media-review-queue.json`.
-- **Danh bạ kênh mẫu (`kenh-mau.json`):** **165 kênh** (152 live · 13 dead).
-  → nguồn: `data-tabs/kenh-mau.json` (Local = VPS = 165).
+- **Kiểm định media toàn vẹn:** **140/140 file** mp4/webm tồn tại, 0 file 0 byte. `audit_videos_v2.py` (đo lại 2026-09-30): **140/140 clean · 0 issues · 0 standards_gaps · 0 A8d**.
+  - `VIDEO-f59aa7`: ĐÃ PHỤC HỒI đủ tiếng — giải mã Widevine CENC (pipeline `scripts/download_full_drm_audio.cjs` + `scripts/get_drm_key.py`), 108.5 MB, mean_volume -22.0 dB; phụ đề 397 đoạn phủ toàn thời lượng 43:08.
+  - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
+  - Còn **36 review_flags** kiểm tay (không phải data hỏng): A10 19 (thumbnail ≠ nội dung theo vision) · S6 19 (takeaway neo transcript thấp) · S9 15 (xác nhận hình/tiếng bằng heuristic). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).
+  → nguồn: `counts-manifest.mediaFiles` + `py -3 scripts/audit_videos_v2.py` + `data/media-review-queue.json`.
+- **Danh bạ kênh mẫu (`kenh-mau.json`):** **165 kênh** (126 live · 39 dead).
+  → nguồn: `data-tabs/kenh-mau.json` (Local = VPS = 165). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video (kiểm bằng mắt qua Chromium 2026-09-30); GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).
   → nguồn: `counts-manifest.canonicalRaw` / `canonicalRawUniqueChannels`.
 - **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **157 tài liệu**.
@@ -52,14 +55,25 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
 ---
 
 ## 2. HẠ TẦNG DỊCH VỤ & MẠNG NỘI BỘ
-- **Cổng 8899:** `H2DEV_Service` (Windows Service NSSM, Local/LAN/Tailscale/Y:\) $\rightarrow$ `[CÓ] LISTENING` (PID 6980).
-- **Cổng 3988:** `MCP_Pool_Service` (Local MCP Tool Server, 188+ tools, 26 vũ khí `youtube_intelligence`) $\rightarrow$ `[CÓ] LISTENING` (PID 6956).
-- **Cổng 20128:** 9Router Gateway (564+ models AI proxy) $\rightarrow$ `[CÓ] LISTENING` (PID 6328).
+> Đo lại 2026-09-30 bằng `Get-NetTCPConnection -State Listen` + `Get-Service`. PID đổi sau mỗi lần khởi động — đừng dùng PID làm bằng chứng lâu dài.
+- **Cổng 8899:** `H2DEV_Service` (NSSM, Running) $\rightarrow$ `[CÓ] LISTENING`. Runtime Playwright: `/`, `/player.html`, `/learn.html` 0 console error.
+- **Cổng 3988:** `MCP_Pool_Service` (NSSM, Running) $\rightarrow$ `[CÓ] LISTENING`.
+- **Cổng 20128:** 9Router Gateway $\rightarrow$ `[CÓ] LISTENING`.
+- **Cổng 20140:** Claude gateway (`~/.claude/gateway`) $\rightarrow$ `[CÓ] LISTENING`.
+- **VPS production:** `103.249.201.164` — deploy qua `git push vps main` (post-receive: `sync-counts --check` → rebuild SQLite → PM2 reload `h2dev-learn`). Lưu ý: thư mục `video/` KHÔNG nằm trong git — media đổi phải rsync riêng.
 - **Chính sách credit vidIQ:** Tài khoản còn 75 Add-on credits, 0 renewable. Đóng băng 100% các tool tính phí.
 
 ---
 
 ## 3. TRẠM VŨ KHÍ TÁC CHIẾN (SKILLS & PIPELINES)
 - **13 Agent Skills chuyên dụng:** Sẵn sàng tại `D:\YTB\.agents\skills\` và tích hợp vào `scripts/h2dev_master_producer.py`.
-- **4 Pipelines sản xuất song song:** `bible-explainer`, `hoat-hinh-ai`, `ton-giao`, `wildlife` tại `D:\YTB\H2DEV-Project\pipelines\`.
+- **5 thư mục pipeline** tại `D:\YTB\H2DEV-Project\pipelines\` — mức độ sẵn sàng THẬT (đo 2026-09-30):
+  | Pipeline | Có script chạy được | Ghi chú |
+  |---|---|---|
+  | `hoat-hinh-ai` | CÓ (`generate_images.py`, `generate_videos.py`, `merge_clips.py`) | cần `KIE_API_TOKEN` + `IMGBB_API_KEY` |
+  | `ton-giao` | CÓ (`generate_voice.py`, `generate_image.py`, `merge_video.py`) | cần `ELEVENLABS_API_KEY` + `KIE_API_KEY` |
+  | `wildlife` | CÓ — mới là khung (`generate_wildlife_script.py` sinh từ 3 case mẫu, `generate_motion_prompts.py`) | kịch bản sinh theo template, CHƯA gọi LLM; chưa có bước voice/merge |
+  | `everyday-history` | CÓ — mới là khung (`generate_everyday_history.py` template 3 đồ vật, `assemble_history_video.py` ghép tĩnh) | câu narration lặp theo template → KHÔNG dùng làm bản đọc; chưa có Ken Burns thật |
+  | `bible-explainer` | KHÔNG — chỉ zip skill + ảnh mẫu | dùng kèm `ton-giao` để có voice/merge |
+- **Pilot `PILOT-01-THE-MIRROR`:** `paused` (Phương án B, anh chốt 2026-09-30). Kịch bản EN 1.927 từ đã đủ; không làm media cho pilot này đến khi anh mở lại.
 - **8 Repo Reverse-Engineering:** Sẵn sàng tại `D:\YTB\research-repos\` (Tencent BrowserSkill, ainovel-cli, drama-skills, make-prompt-seedance2, dola-render-gateway, YouTube.js LuanRT, yt-fts, FckSignups NoSignups).

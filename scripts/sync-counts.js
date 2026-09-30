@@ -137,6 +137,22 @@ const DOC_RULES = [
     build: c => `$1${c.deadChannels}` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"kenhLiveTrongFile":\s*)\d+/g,
     build: c => `$1${c.liveChannels}` },
+
+  // ---- docs/WORKING_STATE.md (Tang 4 Live State) ----
+  // 2026-09-30: truoc day KHONG co rule -> file ghi "152 live · 13 dead" trong khi that 126/39,
+  // gate van xanh. Neo vao dong "Danh ba kenh mau" va dong "Tong kho bai hoc".
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(\*\*Danh bạ kênh mẫu \(`kenh-mau\.json`\):\*\* \*\*)\d+( kênh\*\* \()\d+( live · )\d+( dead)/g,
+    build: c => `$1${c.channels}$2${c.liveChannels}$3${c.deadChannels}$4` },
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(\*\*Tổng kho bài học \(`videos\.json`\):\*\* \*\*)\d+( bài\*\* \()\d+( Video bài giảng PRO \+ )\d+( Buổi Zoom Masterclass; )\d+( Free · )\d+( Pro\))/g,
+    build: c => `$1${c.videos}$2${c.videoLessons}$3${c.zoomSessions}$4${c.videoFree}$5${c.videoPro}$6` },
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(\*\*Kho tài liệu & Master Prompts \(`tai-lieu-full\.json`\):\*\* \*\*)\d+( tài liệu\*\*)/g,
+    build: c => `$1${c.documents}$2` },
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(\*\*Ma trận ngách YouTube \(`ngach-xanh\.json`\):\*\* \*\*)\d+( ngách\*\* \(`xanh:true` \*\*)\d+(\*\*)/g,
+    build: c => `$1${c.niches}$2${c.nichesGreenTrue}$3` },
 ];
 
 function applyDocRules(counts, { write }) {

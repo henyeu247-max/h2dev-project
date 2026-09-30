@@ -1,4 +1,10 @@
-﻿## 2026-09-30 (đợt 10) — QUÉT SẠCH 100% CỜ A8d TRÊN TOÀN BỘ 140 VIDEO (GAP-04 RESOLVED)
+﻿## 2026-09-30 (đợt 11) — THẨM ĐỊNH THỰC TẾ 39 KÊNH MẪU 404: PHỤC HỒI 13 KÊNH SỐNG (139 LIVE) & BẢO TOÀN DẪN CHỨNG CASE STUDY (GAP-02 REFINED)
+
+- **Phục hồi 13 kênh sống thật sự:** Kiểm tra đối soát trực tiếp trên YouTube live HTTP 200 OK, phát hiện 13 kênh trước đây bị gắn cờ "dead" nhầm (do yt-dlp flat-playlist bị anti-bot, ký tự unicode, hoặc tác giả tạm ẩn video). Phục hồi trạng thái live: `@EricBennettMD` (57.5K subs), `@幻界と神域の扉` (4.88K), `@イエスのアファメーション` (1.27K), `@BàiHọcTuổiGià-VN` (7.03K), `@静かな家族の秘密` (1.47K), `@HDVietsub-h7u` (5.2K), `@redvoices90` (10.2K), `@KhámPháTrungHoa-HT` (1.43K), `@TuổiGiàRadio_VN` (6.69K), `@ほのぼのラジオ1` (90K), `@성실한경제학` (10.3K), `@toastertalesusa` (18.6K), `@purebusinesshorts` (43.8K). Nâng tổng số kênh sống từ 126 lên 139 kênh.
+- **Bảo toàn 26 kênh case study dẫn chứng:** Tuân thủ nguyên tắc NO-DELETE và bảo toàn dẫn chứng bài học, không xóa bỏ 26 kênh còn lại khỏi hệ thống (trong đó 10 bài học khóa học trích dẫn trực tiếp các kênh này). Cập nhật ghi chú nguyên nhân thực tế: 2 kênh bị YouTube chấm dứt theo chính sách (bản quyền / nguyên tắc cộng đồng), 24 kênh do đổi vanity handle hoặc tạm ẩn video chống spam.
+- **Pass toàn bộ Gate:** `check-reconcile-handles.js` đạt 139/139 kênh sống khớp DB, `sync-counts.js --check`, `validate-project.js`, `gate-p1.js`, `gate-shell.js` đều PASS 100%.
+
+## 2026-09-30 (đợt 10) — QUÉT SẠCH 100% CỜ A8d TRÊN TOÀN BỘ 140 VIDEO (GAP-04 RESOLVED)
 
 - **Xóa sạch 100% cờ A8d toàn kho:** Bóc tách chuyên sâu toàn bộ 23 khoảng trống của 4 video cuối cùng (`VIDEO-0bb86b`, `VIDEO-3df94e`, `VIDEO-8bc3ce`, `VIDEO-989053`) và 11 khoảng trống của `VIDEO-f59aa7` bằng Groq Whisper-large-v3. Bổ sung hàng trăm câu giảng thực chiến của tác giả vào `transcript.json`, `transcript.srt` (chuẩn CRLF) và `transcript.txt`.
 - **Nghiệm thu audit A8d = 0:** Kết quả chạy `audit_videos_v2.py` trên toàn bộ 140 video xác nhận:

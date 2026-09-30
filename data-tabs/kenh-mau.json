@@ -14,7 +14,7 @@
   "ngay_do": "2026-08-23",
   "nguon_do": "vidIQ channel_stats (2026-08-23)",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -31,7 +31,7 @@
   "avatar": "assets/avatars/mokamoka-e9f-98744ffab0.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -115,7 +115,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "KHÔNG XÁC ĐỊNH 20/08/2026 (có thể đổi handle/tên) — ngừng check, cần user tự tìm nếu muốn.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -157,7 +157,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -269,7 +269,7 @@
   "avatar": "assets/avatars/ch-399fc78aba.svg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -329,11 +329,11 @@
   ],
   "avatar": "assets/avatars/EricBennettMD-81fe9e2c6e.jpg",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "Eric Bennett MD"
+  "title": "Eric Bennett MD",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@斎藤一人の福の言霊",
@@ -373,7 +373,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -393,7 +393,7 @@
   "note": "vidIQ 18/08: Health Insight US — reset 27-30/07 (8.2tr view→16K, 33→3 video). Không phải reup.",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -412,7 +412,7 @@
   "avatar": "assets/avatars/N_ngNh_ToonReview-0cd8051493.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -429,11 +429,11 @@
   "avatar": "assets/avatars/ch-291dee52ad.jpg",
   "note": "vidIQ 18/08: Religion JP 4400 sub +30 video/30 ngày. Không phải reup.",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "幻界と神域の扉"
+  "title": "幻界と神域の扉",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@다시이팔청춘-k5d",
@@ -689,7 +689,7 @@
   "avatar": "assets/avatars/songkhoekhivegia-5ce62eaca0.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Tài khoản YouTube chấm dứt do khiếu nại bản quyền (Copyright Policy 2026). Giữ nguyên link bài học làm case study dẫn chứng.",
+  "deadNote": "Tài khoản YouTube bị chấm dứt do khiếu nại bản quyền (Copyright Takedown). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -798,10 +798,10 @@
    "🇯🇵 Nhật"
   ],
   "avatar": "",
-  "dead": false,
+  "dead": true,
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-09-30",
-  "ngay_do_check": "404 kiểm tra 2026-08-17",
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "voiceDna": {
    "code": "ja-JP",
    "flag": "🇯🇵",
@@ -810,9 +810,9 @@
    "measuredAt": "2026-09-29",
    "sampleUrl": "assets/voice-samples/GEN_x44c36d87c5.mp3"
   },
-  "verifiedLiveAt": "2026-09-30",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "イエスのアファメーション"
+  "title": "イエスのアファメーション",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@meophongthuy-m7d",
@@ -875,7 +875,7 @@
   "avatar": "assets/avatars/Th_cPh_mS_cKho_-u8y-2569c96203.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -938,7 +938,7 @@
   ],
   "avatar": null,
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -1116,7 +1116,7 @@
   "avatar": "assets/avatars/ScriptureMadeSimpleTV-766804ee1a.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -1265,11 +1265,11 @@
   ],
   "avatar": "assets/avatars/B_iH_cTu_iGi_-VN-6910ef5f41.jpg",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "Bài Học Tuổi Già"
+  "title": "Bài Học Tuổi Già",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@Kori_Sub",
@@ -1329,11 +1329,11 @@
   ],
   "avatar": "assets/avatars/ch-465e958a2d.jpg",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "静かな家族の秘密"
+  "title": "静かな家族の秘密",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@Camnhonvietsub",
@@ -1465,7 +1465,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -1483,7 +1483,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -1527,7 +1527,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -1779,7 +1779,7 @@
   "avatar": "assets/avatars/UCeVwhrEnYjCNdaDr47x4dSw-e6ef74b4c8.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -1797,7 +1797,7 @@
   "note": "vidIQ 18/08: CoreSight Technology/Knowledge, 0 video mới. Không phải kinh tế.",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -1836,11 +1836,11 @@
   ],
   "avatar": "assets/avatars/HDVietsub-h7u-cb54404e0d.jpg",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "HD Vietsub"
+  "title": "HD Vietsub",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@redvoices90",
@@ -1855,11 +1855,11 @@
   ],
   "avatar": "assets/avatars/redvoices90-865286e79a.jpg",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "REDVOCES"
+  "title": "REDVOCES",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@올바른마음100",
@@ -1897,7 +1897,7 @@
   "avatar": "assets/avatars/ch-ef72f2dec8.svg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -1959,7 +1959,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -2051,7 +2051,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "KHÔNG XÁC ĐỊNH 20/08/2026 (có thể đổi handle/tên) — ngừng check, cần user tự tìm nếu muốn.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -2115,11 +2115,11 @@
   ],
   "avatar": "assets/avatars/Kh_mPh_TrungHoa-HT-d76ede2f70.jpg",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "Khám Phá Trung Hoa"
+  "title": "Khám Phá Trung Hoa",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@DoctorDr.Lee-h9t",
@@ -2180,11 +2180,11 @@
   ],
   "avatar": "assets/avatars/Tu_iGi_Radio_VN-03216f5437.jpg",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "Tuổi Già Radio"
+  "title": "Tuổi Già Radio",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@FinalUrgency",
@@ -2200,7 +2200,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -2244,7 +2244,7 @@
   "avatar": "assets/avatars/ch-11e0f02ba5.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -2285,11 +2285,11 @@
   "avatar": "assets/avatars/1-77f45e5ddb.jpg",
   "note": "Sức khỏe Nhật. Sửa 18/08: gỡ market Hàn (kênh JP).",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "ほのぼのラジオ"
+  "title": "ほのぼのラジオ",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@오싹한경제",
@@ -2380,11 +2380,11 @@
   ],
   "avatar": "assets/avatars/ch-5a8edd804f.jpg",
   "ngay_do": "2026-09-30",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "성실한 경제학"
+  "title": "성실한 경제학",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@シルバー世代の語り部",
@@ -2424,7 +2424,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "DEAD THẬT — xác nhận 20/08/2026 (404/vidIQ 0/web không dấu vết). Ngừng check.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -2443,7 +2443,7 @@
   "avatar": "assets/avatars/ch-5a79856f3b.svg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -2551,7 +2551,7 @@
   ],
   "avatar": "",
   "dead": true,
-  "deadNote": "Handle cũ 404 trên YouTube (có thể đã đổi vanity handle, đổi URL hoặc tạm ẩn video chống spam/phá view). Giữ nguyên làm case study dẫn chứng lịch sử trong bài học.",
+  "deadNote": "404 - Handle cũ không tồn tại trên YouTube (đã đổi handle hoặc bị xóa). Bảo toàn dẫn chứng bài học.",
   "note": "KHÔNG XÁC ĐỊNH 20/08/2026 (có thể đổi handle/tên) — ngừng check, cần user tự tìm nếu muốn.",
   "ngay_do": "2026-08-22",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
@@ -2718,7 +2718,7 @@
   "avatar": "assets/avatars/suckhoedongy99-bf072d5ce8.jpg",
   "ngay_do": "2026-08-22",
   "dead": true,
-  "deadNote": "Kênh YouTube bị gỡ do vi phạm Nguyên tắc cộng đồng (Community Guidelines 2026). Giữ nguyên link bài học làm case study dẫn chứng.",
+  "deadNote": "Kênh YouTube bị gỡ do vi phạm Nguyên tắc cộng đồng. Bảo toàn dẫn chứng bài học.",
   "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-09-30"
  },
  {
@@ -3030,11 +3030,11 @@
   "note": "Everyday History 18.4K/+4.7K/30d views +3.26M (đo 20/08)",
   "ngay_do": "2026-09-30",
   "avatar": "assets/avatars/toastertalesusa-3de3e981bc.jpg",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "Toaster Tales"
+  "title": "Toaster Tales",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@everydaythingsexplain",
@@ -3096,11 +3096,11 @@
   "note": "True Origin 38.7K/+12.9K/30d (đo 20/08)",
   "ngay_do": "2026-09-30",
   "avatar": "assets/avatars/purebusinesshorts-29b53c269f.jpg",
-  "dead": false,
-  "ngay_do_check": "404 kiem tra 2026-09-29 (batch Voice DNA final probe)",
-  "verifiedLiveAt": "2026-09-30",
+  "dead": true,
+  "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
   "nguon_do": "YouTube Live Verification (2026-09-30)",
-  "title": "PureBusiness"
+  "title": "PureBusiness",
+  "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
  },
  {
   "handle": "@thedishdecoded",

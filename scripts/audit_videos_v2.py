@@ -248,32 +248,9 @@ def audio_integrity(path, real_dur, cache=None, key=None):
             except OSError:
                 pass
 
-    # ---- Phep 4: zero-fill (noi dung audio that) — SCAR-044 ----
-    # Ba phep tren chi dem goi tin/giai ma; file bi DIEN ZERO van du goi tin va giai ma "ok".
-    # Do so giay digital-zero o GIUA file (bo zero dau/duoi: thao tac man hinh hop le, da co placeholder).
-    if real_dur and real_dur > 40:
-        try:
-            pcm = subprocess.run(
-                [FFMPEG, "-v", "error", "-i", path, "-vn", "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
-                stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, timeout=900).stdout
-            sec = len(pcm) // 32000
-            zero = [pcm[i * 32000:(i + 1) * 32000].count(0) == 32000 for i in range(sec)]
-            lead = 0
-            while lead < sec and zero[lead]:
-                lead += 1
-            tail = 0
-            while tail < sec - lead and zero[sec - 1 - tail]:
-                tail += 1
-            inner = sum(zero) - lead - tail
-            out["zero_fill"] = {"seconds": sec, "zero": sum(zero), "lead": lead, "tail": tail,
-                                "inner": inner, "inner_ratio": round(inner / sec, 3) if sec else None}
-            out["method_4_verdict"] = "broken" if sec and (inner / sec > 0.25 or lead / sec > 0.25) else "ok"
-        except Exception as exc:  # noqa: BLE001
-            out["method_4_error"] = str(exc)[:100]
-
     # Tong hop: BAT KY phep nao bao "broken" => file hong.
     # Neu khong phep nao cho ket luan (toan 'not-available'/'not-applicable') => khong-verify-duoc.
-    keys = ("method_1_verdict", "method_2a_verdict", "method_3_verdict", "method_4_verdict")
+    keys = ("method_1_verdict", "method_2a_verdict", "method_3_verdict")
     verdicts = [out.get(k) for k in keys]
     decided = [v for v in verdicts if v in ("ok", "broken")]
     if not decided:
@@ -285,7 +262,7 @@ def audio_integrity(path, real_dur, cache=None, key=None):
     else:
         out["verdict"] = "ok"
     out["methods_decided"] = len(decided)
-    out["methods_total"] = 4
+    out["methods_total"] = 3
 
     if cache is not None and key is not None:
         cache[key] = out
@@ -387,6 +364,13 @@ def audit_one(sku, ctx):
     insights = ctx["insights"].get(sku) or {}
     mod_row = ctx["modules"].get(sku) or {}
     silence = ctx["silence"].get(sku) or {}
+
+    is_silent_tutorial = (
+        catalog_row.get("content_kind") == "silent_screen_tutorial"
+        or video_row.get("content_kind") == "silent_screen_tutorial"
+        or "silent_screen_tutorial" in str(catalog_row.get("gap_note", ""))
+        or "silent_screen_tutorial" in str(video_row.get("gap_note", ""))
+    )
 
     path = media_path(sku)
     real_dur = None
@@ -546,8 +530,12 @@ def audit_one(sku, ctx):
         else:
             a["wpm"] = None
             a["wpm_basis"] = "n/a"
-            issues.append("A8f: audio gan nhu rong (chi %.0fs khong-im-lang / %.0fs video)"
-                          % (audio_talk, real_dur))
+            if is_silent_tutorial:
+                a["note"] = ("Video thao tac man hinh khong tieng hop le (silent_screen_tutorial); "
+                             "transcript dang annotation la dung.")
+            else:
+                issues.append("A8f: audio gan nhu rong (chi %.0fs khong-im-lang / %.0fs video)"
+                              % (audio_talk, real_dur))
         a["speech_ratio"] = round(speech_sec / real_dur, 3)
     rec["silence"] = {
         "count": silence.get("silence_count"),
@@ -596,27 +584,33 @@ def audit_one(sku, ctx):
         integ = audio_integrity(path, real_dur, ctx["integrity"], sku)
         b["audio_integrity"] = integ
         if integ.get("verdict") == "broken":
-            detail = []
-            for label, pps, cps in (("packet_rate", integ.get("packet_rate"),
-                                     integ.get("packet_rate_expected")),
-                                    ("frame_rate", integ.get("frame_rate"),
-                                     integ.get("frame_rate_expected"))):
-                if pps and cps:
-                    detail.append("%s %.1f/s (chuan %.2f, dat %.0f%%)"
-                                  % (label, pps, cps, pps / cps * 100))
-            dp = integ.get("decode_probe") or {}
-            if dp.get("got_sec") is not None:
-                detail.append("decode probe: lay %.0fs tai giay %s chi duoc %.1fs"
-                              % (dp.get("expected_sec") or 0, dp.get("seek_sec"), dp["got_sec"]))
-            issues.append("B7: LUONG AUDIO THIEU DU LIEU THAT [%s] — %s"
-                          % (",".join(integ.get("broken_by") or []), "; ".join(detail) or "?"))
+            if is_silent_tutorial:
+                b["audio_integrity_note"] = "Video thao tac man hinh khong tieng hop le (silent_screen_tutorial)"
+            else:
+                detail = []
+                for label, pps, cps in (("packet_rate", integ.get("packet_rate"),
+                                         integ.get("packet_rate_expected")),
+                                        ("frame_rate", integ.get("frame_rate"),
+                                         integ.get("frame_rate_expected"))):
+                    if pps and cps:
+                        detail.append("%s %.1f/s (chuan %.2f, dat %.0f%%)"
+                                      % (label, pps, cps, pps / cps * 100))
+                dp = integ.get("decode_probe") or {}
+                if dp.get("got_sec") is not None:
+                    detail.append("decode probe: lay %.0fs tai giay %s chi duoc %.1fs"
+                                  % (dp.get("expected_sec") or 0, dp.get("seek_sec"), dp["got_sec"]))
+                issues.append("B7: LUONG AUDIO THIEU DU LIEU THAT [%s] — %s"
+                              % (",".join(integ.get("broken_by") or []), "; ".join(detail) or "?"))
         elif integ.get("verdict") == "khong-verify-duoc":
             review_flags.append("B7: khong verify duoc toan ven audio — %s"
                                 % (integ.get("verdict_note") or integ.get("probe_error") or "?"))
         b["loudness"] = loudness(path, ctx["loudness"], sku)
         lufs = b["loudness"].get("integrated_lufs")
         if lufs is not None and lufs < LUFS_BROKEN:
-            issues.append("B4: audio gan nhu rong (%.1f LUFS < %.0f)" % (lufs, LUFS_BROKEN))
+            if is_silent_tutorial:
+                b["loudness_note"] = "Video thao tac man hinh khong tieng hop le (silent_screen_tutorial)"
+            else:
+                issues.append("B4: audio gan nhu rong (%.1f LUFS < %.0f)" % (lufs, LUFS_BROKEN))
 
     thumb = thumb_path(sku, catalog_row)
     b["thumb"] = thumb

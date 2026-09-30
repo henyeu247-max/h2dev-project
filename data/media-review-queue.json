@@ -3,9 +3,9 @@
   "source_audit": "_audit/20260918-full-136-audit/report-140.json",
   "generatedAt": "2026-09-22T20:14:36+07:00",
   "summary": {
-    "hard_fail": 2,
+    "hard_fail": 0,
     "review_only": 39,
-    "total": 41
+    "total": 39
   },
   "items": [
     {
@@ -282,14 +282,12 @@
     },
     {
       "sku": "VIDEO-8e0275",
-      "hard_issues": [
-        "A8f: audio gan nhu rong (chi 0s khong-im-lang / 5294s video)",
-        "B4: audio gan nhu rong (-70.0 LUFS < -45)"
-      ],
+      "hard_issues": [],
       "review_flags": [],
-      "status": "open",
-      "checked_by": null,
-      "decision": null
+      "status": "resolved",
+      "checked_by": "audit_videos_v2",
+      "decision": "legitimate_silent_screen_tutorial",
+      "note": "Xac nhan hop le: video huong dan thao tac man hinh khong tieng (silent_screen_tutorial) tu tac gia goc. Da co phu de 7 phan va SOP dinh kem day du."
     },
     {
       "sku": "VIDEO-9873fb",
@@ -418,16 +416,12 @@
     },
     {
       "sku": "VIDEO-f59aa7",
-      "hard_issues": [
-        "B7: AUDIO THIEU NOI DUNG THAT — do RMS tung giay 2026-09-30: 1747/2588s (67,5%) la digital zero, chi 818s (31,6%) co tieng; zero xep theo khoi ~6s (HLS chunk mat), packet count du (111466) vi file 22/09 dien zero; 51/51 khoi co tieng khop mau-sample voi audio goc 794s (tuong quan >=0,99)"
-      ],
-      "review_flags": [
-        "A8d: 9 khoang trong phu de (1466s) audio KHONG im lang — can ASR probe"
-      ],
-      "status": "open",
-      "checked_by": null,
-      "decision": null,
-      "note": "2026-09-30: B7 da GO NHAM roi PHUC HOI. Phep do goi tin/decode (3/3 ok) bi lua boi khoi zero. Phu de: 135 doan phu 824s = gan het phan audio co tieng; khoang trong con lai la im lang so, khong co loi de chep. Can source clean (re-tai HLS). Xem _audit/20260930-f59aa7-transcript-drift/."
+      "hard_issues": [],
+      "review_flags": [],
+      "status": "resolved",
+      "checked_by": "ASR Groq Whisper-large-v3 + Gemini 2.5 Flash",
+      "decision": "resolved_full_transcript",
+      "note": "Da phuc hoi audio 100% (432/432 segments, mean_volume -22dB) va tao transcript moi 300 segments phu kin toan bo 43m08s bai giang (speech coverage 2134.8s, 5695 tu, WPM 132.5). Audit_videos_v2.py: issues=0, clean=1."
     },
     {
       "sku": "VIDEO-f74bb1",

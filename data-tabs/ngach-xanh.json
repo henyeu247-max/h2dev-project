@@ -616,10 +616,7 @@
       "skus": [
         "VIDEO-33d701",
         "VIDEO-34f417",
-        {
-          "sku": "VIDEO-de2564",
-          "note": "LIÊN QUAN: share ngách stories Nhật"
-        }
+        "VIDEO-de2564"
       ],
       "mauSach": [
         "@時代を生きた声",
@@ -646,10 +643,7 @@
         "VIDEO-e24c31",
         "VIDEO-a7bfd0",
         "VIDEO-21956b",
-        {
-          "sku": "VIDEO-d71802",
-          "note": "LIÊN QUAN: show kênh triết lý Hàn của thành viên pro"
-        }
+        "VIDEO-d71802"
       ],
       "mauSach": [
         "@복이오는길",
@@ -782,10 +776,7 @@
       ],
       "skus": [
         "VIDEO-8b69c9",
-        {
-          "sku": "VIDEO-502960",
-          "note": "LIÊN QUAN: show kênh drama Nhật (3 video/1 ngày) — làm mẫu tăng"
-        }
+        "VIDEO-502960"
       ],
       "mauSach": [
         "@江戸怪異ものがたり"

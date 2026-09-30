@@ -1,4 +1,11 @@
-﻿## 2026-09-30 (đợt 12) — THẨM ĐỊNH THỊ GIÁC SÂU (VISUAL CHROMIUM AUDIT): 13 KÊNH RỖNG 0 VIDEO -> CHUẨN HÓA 126 LIVE & 39 CASE STUDY DẪN CHỨNG
+﻿## 2026-09-30 (đợt 13) — CHUẨN HÓA MẢNG SKU NGÁCH XANH & HOÀN TẤT KỊCH BẢN PILOT-01-THE-MIRROR 1.927 TỪ
+
+- **Chuẩn hóa mảng SKU trong `data-tabs/ngach-xanh.json`:** Khắc phục 3 vị trí bị lồng object `{ sku, note }` thành chuỗi SKU chuẩn (`VIDEO-de2564`, `VIDEO-d71802`, `VIDEO-502960`). Loại bỏ triệt để lỗi in chuỗi `[object Object]` trên giao diện và các công cụ dòng lệnh; đồng bộ ghi chú vào trường `skuNote`.
+- **Hoàn thiện kịch bản lồng tiếng tiếng Anh Pilot The Mirror (`PILOT-01-THE-MIRROR`):** Mở rộng `localized-scripts/en.txt` và `en.md` từ bản tóm tắt 316 từ lên đầy đủ 1.927 từ chuẩn kịch bản narration 7 phân đoạn (00:00 - 11:30+), khớp 100% cấu trúc 3 hồi, trích dẫn bảo tàng Anatolian, Murano và Versailles.
+- **Cập nhật `data/video_acceptance.json`:** Giải phóng cờ blocker `localized-scripts stub (en 316 words vs master 1927)`, xác nhận `localized_scripts: "complete (EN 1927 words)"`.
+- **Rebuild Master Database SQLite:** Nạp lại 44 ngách và 151 liên kết ngách vào `h2dev_master.db`, kiểm định 8/8 bước đạt PASS 100%.
+
+## 2026-09-30 (đợt 12) — THẨM ĐỊNH THỊ GIÁC SÂU (VISUAL CHROMIUM AUDIT): 13 KÊNH RỖNG 0 VIDEO -> CHUẨN HÓA 126 LIVE & 39 CASE STUDY DẪN CHỨNG
 
 - **Thẩm định thị giác thực tế bằng Chromium:** Mở trực tiếp tab Videos của 13 kênh từng trả về HTTP 200: phát hiện 100% các kênh này đều là kênh rỗng, "This channel does not have any content" (0 video công khai do tác giả đã xóa/ẩn toàn bộ video hoặc kênh chuyển nhượng/squat handle rác). Đúng như nhận định sắc bén của người dùng, kênh HTTP 200 nhưng không có video thì KHÔNG THỂ coi là kênh đối thủ sống để học viên tham khảo.
 - **Chuẩn hóa phân loại trung thực:**

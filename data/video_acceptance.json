@@ -10,8 +10,8 @@
     "target_language": "en",
     "target_duration_min": 10,
     "target_duration_max": 14,
-    "status": "blocked",
-    "execution_mode": "local_dryrun_only",
+    "status": "paused",
+    "execution_mode": "paused",
     "publish_allowed": false,
     "budget_limit_usd": 0.0,
     "script_compliance": {
@@ -55,15 +55,12 @@
       "Toàn bộ quy trình thực hiện cục bộ với chi phí $0, cấu hình an toàn publish_allowed: false"
     ],
     "blockers": [
-      "Cho anh chon A/B/C: lam tiep media / dong dry-run / doi pilot",
-      "voice/images/subtitles/thumbnail/mp4 pending"
+      "Đã đóng chế độ dry-run theo Phương án B. Trạng thái pilot chuyển sang paused để tập trung hoàn thiện sườn ứng dụng, chuẩn hóa dữ liệu gốc và xây dựng các pipeline sản xuất chuyên biệt."
     ],
     "decision_required": [
-      "A. Lam tiep pilot: voiceover (-14 LUFS) -> images -> subtitles -> merge MP4 (budget $0)",
-      "B. Dong dry-run: status=paused, ly do thieu pipeline media, khong treo",
-      "C. Doi pilot ngach khac (da co toolkit)"
+      "Đã chốt Phương án B: Tạm dừng pilot The Mirror, không nhắc lại việc sản xuất media cho pilot này, tập trung 100% vào việc hoàn thiện sườn ứng dụng site và các pipeline cốt lõi."
     ],
-    "last_gap_review": "2026-09-30T17:25:00+07:00"
+    "last_gap_review": "2026-09-30T17:40:00+07:00"
   },
-  "gapReviewUpdatedAt": "2026-09-30T17:25:00+07:00"
+  "gapReviewUpdatedAt": "2026-09-30T17:40:00+07:00"
 }

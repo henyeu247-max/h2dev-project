@@ -297,6 +297,22 @@
 .player-layout { align-items: start; }
 #colInsight { min-width: 0; }
 
+.btn-live-stream {
+  background: #059669;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+}
+.btn-live-stream:hover {
+  background: #047857;
+}
+
 .app-top .btn-ghost {
   min-height: 44px;
   display: inline-flex;

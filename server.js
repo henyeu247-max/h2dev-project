@@ -363,6 +363,44 @@ const server = http.createServer(async (req,res)=>{
     sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
+  if (apiPath.startsWith('/live/')) {
+    if (req.method === 'GET' || isHead) {
+      const sku = apiPath.replace('/live/', '').trim();
+      if (/^VIDEO-[A-Za-z0-9]+$/i.test(sku)) {
+        try {
+          const { getLivePlayerUrl } = require('./scripts/live_player_resolver');
+          const liveUrl = await getLivePlayerUrl(sku);
+          if (liveUrl) {
+            const monaRes = await fetch(liveUrl, {
+              headers: {
+                'User-Agent': req.headers['user-agent'] || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131',
+                'Referer': 'https://h2dev.vn/'
+              }
+            });
+            let html = await monaRes.text();
+            html = html.replace('<head>', '<head><base href="https://video.mona-cloud.com/">');
+            res.writeHead(200, {
+              'Content-Type': 'text/html; charset=utf-8',
+              'Access-Control-Allow-Origin': '*',
+              'Cache-Control': 'no-cache, no-store, must-revalidate'
+            });
+            res.end(html);
+            return;
+          } else {
+            res.writeHead(404, withSecure({ 'Content-Type': 'text/plain; charset=utf-8' }));
+            res.end(`Không tìm thấy luồng phát trực tiếp cho SKU ${sku}`);
+            return;
+          }
+        } catch (err) {
+          res.writeHead(502, withSecure({ 'Content-Type': 'text/plain; charset=utf-8' }));
+          res.end(`Lỗi kết nối máy chủ nguồn: ${err.message}`);
+          return;
+        }
+      }
+    }
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    return;
+  }
   if (req.method !== 'GET' && !isHead) {
     res.writeHead(405, {
       'Allow': 'GET, HEAD, OPTIONS',

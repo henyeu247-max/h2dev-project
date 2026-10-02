@@ -1,0 +1,267 @@
+{
+ "schema": "h2dev.manual-review-evidence.v1",
+ "videos": {
+  "VIDEO-1aaf46": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-1aaf46_grid.jpg — screencast, dung chu de (Video hướng dẫn xây dựng kênh YouTube và kiếm tiền từ nội dung phim hoạt hình/truyện tranh). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.958, WPM 221, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "55ab7df62247af34",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-28e1cc": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-28e1cc_grid.jpg — screencast, dung chu de (Video huong dan quy trinh xay dung, bien tap video va phan tich so lieu phat trien kenh Yo). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.989, WPM 214, im lang giua video 1s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "fc1d0c120a3cd369",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-348217": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-348217_grid.jpg — screencast, dung chu de (Video huong dan phan tich va nghien cuu cac chu de, kenh YouTube ngoai quoc de phat trien ). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.981, WPM 232, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "00e63d7b0a44e89f",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-3a38f9": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-3a38f9_grid.jpg — screencast, dung chu de (Video huong dan phan tich va xay dung kenh YouTube thong qua thao tac tren trinh duyet web). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.966, WPM 220, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "4c010a08da29b91c",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-484f9e": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-484f9e_grid.jpg — screencast, dung chu de (Video huong dan phan tich va xay dung kenh YouTube chu de tam linh de kiem tien.). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.944, WPM 222, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "0168b133461c6407",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-4b3c09": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-4b3c09_grid.jpg — screencast, dung chu de (Video huong dan phan tich cac kenh va ngach noi dung YouTube nuoc ngoai de phat trien kenh). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.989, WPM 227, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "e81b91e337a96875",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-61ad94": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-61ad94_grid.jpg — screencast, dung chu de (Video huong dan nghien cuu cac chu de va kenh YouTube Han Quoc de lam noi dung kiem tien.). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.990, WPM 206, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "631836d05f48df23",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-9aff6d": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-9aff6d_grid.jpg — screencast, dung chu de (Video hướng dẫn phân tích nội dung, chủ đề và số liệu các kênh YouTube để tối ưu hóa phát ). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.955, WPM 206, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "7c67af9bb203dcfb",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-DD983D": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-DD983D_grid.jpg — screencast, dung chu de (Video huong dan phan tich va lam chu de YouTube thi truong Nhat Ban de kiem tien.). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.988, WPM 220, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "923075e5bc933e3b",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-a7bfd0": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-a7bfd0_grid.jpg — screencast, dung chu de (Video hướng dẫn phân tích và tìm kiếm chủ đề làm nội dung YouTube tiềm năng thông qua các ). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.987, WPM 234, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "2c77b7cc1c31e9dd",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-c5837a": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-c5837a_grid.jpg — screencast, dung chu de (Video huong dan va phan tich cac chu de, kenh YouTube tren giao dien trinh duyet web de ph). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.941, WPM 227, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "c49f27ff239c58db",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-d2cd90": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-d2cd90_grid.jpg — screencast, dung chu de (Video quay màn hình hướng dẫn phân tích và nghiên cứu các kênh YouTube thành công để phát ). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.961, WPM 210, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "60cd08e0c1fe861e",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-e24c31": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-e24c31_grid.jpg — screencast, dung chu de (Video hướng dẫn phân tích và nghiên cứu chủ đề kênh YouTube ngoại quốc để làm nội dung kiế). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.968, WPM 204, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "bcd4764ecf71a9d0",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-e90874": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-e90874_grid.jpg — screencast, dung chu de (Video hướng dẫn quy trình sử dụng câu lệnh AI để nghiên cứu và nhân bản kênh YouTube sang ). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.980, WPM 208, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "5bedf8b488c20eac",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-f74bb1": {
+   "S9": {
+    "decision": "verified_ok",
+    "evidence": "Hinh: da xem grid _audit/20260918-full-136-audit/frames/VIDEO-f74bb1_grid.jpg — screencast, dung chu de (Video hướng dẫn thực chiến quy trình nghiên cứu, phân tích kênh và kịch bản đối thủ trên Y). Tieng: audio_integrity ok 4/4 phep do, speech_ratio 0.950, WPM 227, im lang giua video 0s.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "17aaca7fb6345502",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-04c2e3": {
+   "A10": {
+    "decision": "false_positive",
+    "evidence": "ffmpeg freezedetect (1 khung/giay, n=0.003, d>=10s): dung hinh 96% (177.0s/183.7s), 0 doan den. Dung hinh do tac gia thuyet trinh tren 1 trang (bang gia/slide) — kiem transcript + grid, khong phai file hong.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "5750b9250bf0d434",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-10f129": {
+   "A10": {
+    "decision": "needs_owner_decision",
+    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "ee97067869813e5f",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-2277b3": {
+   "A10": {
+    "decision": "needs_owner_decision",
+    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "92981030c99b9fc3",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-2de9e4": {
+   "A10": {
+    "decision": "needs_owner_decision",
+    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "635a1eed4ff1ac02",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-35014d": {
+   "A10": {
+    "decision": "needs_owner_decision",
+    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay. ffmpeg freezedetect (1 khung/giay, n=0.003, d>=10s): dung hinh 0% (0s/614.0s), 0 doan den.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "e7accdd1ace7932f",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-4425fc": {
+   "A10": {
+    "decision": "false_positive",
+    "evidence": "ffmpeg freezedetect (1 khung/giay, n=0.003, d>=10s): dung hinh 67% (370.0s/551.3s), 0 doan den. Dung hinh do tac gia thuyet trinh tren 1 trang (bang gia/slide) — kiem transcript + grid, khong phai file hong.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "33b7837d6fd979aa",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-5d54d0": {
+   "A10": {
+    "decision": "false_positive",
+    "evidence": "Vision bao \"95% man hinh den\" SAI: ffmpeg blackdetect d>=2s pix_th=0.10 tren 3.659 khung (61 phut) = 0 doan den.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "aa53ff8605a7f597",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-7db740": {
+   "A10": {
+    "decision": "false_positive",
+    "evidence": "ffmpeg freezedetect (1 khung/giay, n=0.003, d>=10s): dung hinh 20% (40.0s/201.4s), 0 doan den.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "577432e984cbff7b",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-8603a9": {
+   "A10": {
+    "decision": "needs_owner_decision",
+    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "fed7cc904884e4f9",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-86c1ec": {
+   "A10": {
+    "decision": "needs_owner_decision",
+    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "5c44ac7cb5c14c0d",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-8bc3ce": {
+   "A10": {
+    "decision": "false_positive",
+    "evidence": "ffmpeg freezedetect (1 khung/giay, n=0.003, d>=10s): dung hinh 0% (0s/113.3s), 0 doan den.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "a582e181c6784970",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-9873fb": {
+   "A10": {
+    "decision": "false_positive",
+    "evidence": "ffmpeg freezedetect (1 khung/giay, n=0.003, d>=10s): dung hinh 11% (30.0s/276.3s), 0 doan den.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "779de4d3814fe68c",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-9ef6fe": {
+   "A10": {
+    "decision": "needs_owner_decision",
+    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "59ea5883534d45e1",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  },
+  "VIDEO-b559c8": {
+   "A10": {
+    "decision": "needs_owner_decision",
+    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
+    "by": "Claude (kiem tay 2026-09-30)",
+    "fingerprint": "76273e04535b8a03",
+    "recorded_at": "2026-09-30T23:20:39+0700"
+   }
+  }
+ },
+ "updatedAt": "2026-09-30T23:20:39+0700"
+}

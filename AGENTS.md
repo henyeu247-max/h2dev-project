@@ -89,7 +89,7 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
     Bước 1: Chẩn đoán nguyên nhân gốc rễ (Root Cause) bằng chứng thực tế.
     Bước 2: Sửa chữa lỗi ngay lập tức.
     Bước 3: TỰ ĐỘNG GHI QUY TẮC PHÒNG NGỪA trực tiếp vào mục `## SCAR LOG & COMMAND GUARDRAILS` trong file hướng dẫn của dự án.
-  + Mục đích: Đảm bảo mọi Agent và phiên làm việc trong tương lai đều thừa hưởng kinh nghiệm này và không bao giờ lặp lại lỗi đó.
+  + Mục đích: Đảm bảo mọi Agent và phiên làm việc tương lai đều thừa hưởng kinh nghiệm này và không bao giờ lặp lại lỗi đó.
 
 ### 4. BẢO TỒN TÀI SẢN (NO-DELETE) & DỌN RÁC TẠM (EPHEMERAL CLEANUP)
 - Bảo vệ tài sản gốc (NO-DELETE):
@@ -396,4 +396,13 @@ Khi chỉ gõ prompt dặn dò trong khung chat:
   1. Mỗi file tài liệu có con số hiện hành PHẢI có rule trong `scripts/sync-counts.js`. Thêm rule xong PROBE: chạy `--check` khi file đang lệch → phải exit 1 đúng tên file.
   2. Cuối mỗi đợt việc lớn, cập nhật `docs/WORKING_STATE.md` (trạng thái media, review flags, cổng, pipeline) — đó là SSoT Tầng 4.
   3. Không ghi "hoàn thiện / chạy được / có tính năng X" khi chưa chạy thử và xem output. Code mới là khung/template phải ghi rõ "khung", kèm thứ còn thiếu.
+
+### [SCAR-047] OCR/vision qua 9Router: HTTP 200 KHÔNG đồng nghĩa kết quả thật + khớp số tự động cho PASS giả (2026-09-30)
+- **Nguyên nhân (đo được):** (1) `Combo-Gemini-3.5-flash` trả 200 với nội dung "Gemini 3.5 Flash is no longer available…" → `scripts/verify_takeaway_claims.cjs` lưu 52 khung rác làm chữ màn hình. (2) Request có ảnh + tên model sai vẫn 200, 9Router đổi ngầm sang model khác. (3) Bản đầu khớp số theo kiểu làm tròn/cắt số 0 → `104,170.06` "khớp" `104 lượt xem`, `2.4` "khớp" `28,924`.
+- **Guardrail:**
+  1. Chuỗi model OCR đọc từ `_private/9router.json` (`ocr_models`, gitignore): `Combo-Gemini-3.6-flash` → `Combo-Gemini-3.7-flash` → `Combo-Memory-Extract`. CẤM `3.5-flash`. Mỗi khung cache lưu `model` + `served`; khung không có `served` bị coi là chưa kiểm.
+  2. Công cụ tự động CHỈ gom bằng chứng (khung + OCR + lời thoại). Kết luận số đúng/sai do người đọc OCR đúng khung đó — không để tool tự PASS.
+  3. Không ghi key vào code: key 9Router ở `_private/9router.json`; kiểm `git grep` key trước commit.
+  4. Tool thay chuỗi của IDE đã làm hỏng cú pháp 3 lần trong phiên này (chèn giữa dòng khác). Với sửa nhiều chỗ: dùng script Python có `assert src.count(neo) == 1`, rồi `node --check` / `py_compile`. File hỏng → khôi phục từ git/backup, KHÔNG vá chồng.
+  5. Chi tiết model + cách đổi: `D:\McpPoolLocal\docs\VISION_MODELS.md`.
 

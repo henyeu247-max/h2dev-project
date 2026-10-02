@@ -8,7 +8,7 @@
 
 - Nguon chan ly: **MOI file .css SONG (loai tru: _backup/, _archive/, node_modules/, data/, va file build assets/tailwind.css)**
 - So file CSS quet: **10**
-- So file nguon dem luot dung: **177** (`.css`/`.js`/`.mjs`/`.html`)
+- So file nguon dem luot dung: **178** (`.css`/`.js`/`.mjs`/`.html`)
 - Tong so token khai bao: **98**
 
 ## Bai hoc SCAR-024

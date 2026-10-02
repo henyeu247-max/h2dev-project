@@ -86,6 +86,35 @@ VOWELS = set("aàáảãạăằắẳẵặâầấẩẫậeèéẻẽẹêề
              "oòóỏõọôồốổỗộơờớởỡợuùúủũụưừứửữựyỳýỷỹỵ")
 
 
+# ---------------------------------------------------------------- manual review evidence
+# Dong 1 co review CHI khi co quyet dinh kiem tay kem bang chung do duoc
+# (data/manual-review-evidence.json). Du lieu nguon doi -> fingerprint doi -> co BAT LAI.
+REVIEW_CLOSING_DECISIONS = {"verified_ok", "false_positive", "corrected"}
+
+
+def source_fingerprint(code, sku, insights):
+    """Dau van tay cua DU LIEU ma co dang kiem."""
+    import hashlib
+    if code == "S6":
+        src = json.dumps(insights.get("key_takeaways") or [], ensure_ascii=False)
+    elif code == "S9":
+        # Bang chung S9 = da xem hinh + nghe tieng cua FILE MEDIA nay -> gan voi kich thuoc file.
+        # (Khong gan voi analysis_method: doi method thi chinh co S9 da tat, fingerprint vo nghia.)
+        mp = media_path(sku)
+        src = str(os.path.getsize(mp)) if mp and os.path.exists(mp) else "no-media"
+    elif code == "A10":
+        p = None
+        for ext in (".webp", ".jpeg", ".jpg", ".png"):
+            cand = os.path.join(THUMB_DIR, sku + ext)
+            if os.path.exists(cand):
+                p = cand
+                break
+        src = hashlib.sha256(open(p, "rb").read()).hexdigest() if p else "no-thumb"
+    else:
+        src = ""
+    return hashlib.sha256(("%s|%s|%s" % (code, sku, src)).encode("utf-8")).hexdigest()[:16]
+
+
 # ---------------------------------------------------------------- utilities
 def load_json(path, default=None):
     try:
@@ -355,8 +384,9 @@ def audit_one(sku, ctx):
     issues = []
     review_flags = []      # nghi van can kiem tay (chua du bang chung ket luan)
     standards_gaps = []    # chua dat chuan Bo Vang (KHONG phai du lieu hong)
+    reviewed_notes = []    # co da KIEM TAY co bang chung (data/manual-review-evidence.json)
     rec = {"sku": sku, "issues": issues, "review_flags": review_flags,
-           "standards_gaps": standards_gaps}
+           "standards_gaps": standards_gaps, "reviewed_notes": reviewed_notes}
     checks = rec["checks"] = {}
 
     catalog_row = ctx["catalog"].get(sku) or {}
@@ -744,6 +774,25 @@ def audit_one(sku, ctx):
     if not market:
         issues.append("E2: market rong")
 
+    # ---------------- R. KIEM TAY CO BANG CHUNG ----------------
+    # Chi chuyen review_flag -> reviewed_notes khi bang chung dung (sku, ma co) VA fingerprint
+    # con khop du lieu hien tai. KHONG bao gio ha issues (loi du lieu that).
+    ev_sku = (ctx.get("review_evidence") or {}).get(sku) or {}
+    kept = []
+    for fl in review_flags:
+        code = fl.split(":")[0].strip()
+        ev = ev_sku.get(code)
+        if ev and ev.get("decision") in REVIEW_CLOSING_DECISIONS \
+                and ev.get("fingerprint") == source_fingerprint(code, sku, insights):
+            reviewed_notes.append("%s: %s | %s" % (code, ev["decision"], (ev.get("evidence") or "")[:160]))
+        else:
+            if ev and ev.get("decision") in REVIEW_CLOSING_DECISIONS:
+                fl += " [bang chung kiem tay da HET HAN: du lieu nguon da doi]"
+            elif ev:
+                fl += " [%s]" % ev.get("decision")
+            kept.append(fl)
+    review_flags[:] = kept
+
     rec["issue_count"] = len(issues)
     return rec
 
@@ -778,7 +827,9 @@ def main():
     ctx = {"catalog": catalog, "catalog_full": catalog_full, "videos": videos,
            "insights": insights, "modules": modules, "silence": silence,
            "vision": vision, "loudness": loudness_cache,
-           "speech_density": speech_density, "integrity": integrity_cache}
+           "speech_density": speech_density, "integrity": integrity_cache,
+           "review_evidence": (load_json(os.path.join(ROOT, "data", "manual-review-evidence.json"))
+                               or {}).get("videos", {})}
 
     skus = args.sku or sorted(catalog.keys())
     print("audit_v2: %d SKU | silence coverage: %d/%d"
@@ -834,6 +885,7 @@ def main():
         "with_issues": sum(1 for r in report if r["issue_count"] > 0),
         "with_review_flags": sum(1 for r in report if r.get("review_flags")),
         "with_standards_gaps": sum(1 for r in report if r.get("standards_gaps")),
+        "with_reviewed_notes": sum(1 for r in report if r.get("reviewed_notes")),
         "by_check": {},
         "by_review": {},
         "by_standards": {},

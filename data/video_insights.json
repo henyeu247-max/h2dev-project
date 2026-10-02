@@ -2025,11 +2025,11 @@
     "target_market": "🇰🇷 Hàn / 🇻🇳 Việt",
     "market_code": "KR-VN",
     "key_takeaways": [
-      "Phân tích kênh Hàn Quốc @오늘의삶의지혜: Kênh lập ngày 17/08/2026, chỉ sau 10 ngày đăng 10 video đã đạt 5.240 subs, các video đầu tiên đều cắn đề xuất 3.000 - 5.000 views sau 1-2 ngày đăng tải.",
-      "Phân tích kênh Việt Nam @Haythauhieuchuyendoi: Kênh 'Thấu Hiểu Chuyện Đời' tham gia 14/08/2026, áp dụng chuẩn chỉ công thức từ Hàn Quốc đã nổ video 69.000 view sau 3 ngày (tốc độ 285 VPH > 100x), tổng kênh hơn 200.000 view sau 22 video.",
-      "Công thức tiêu đề 3 yếu tố 'bắt mắt': (1) Neo tuổi tác cụ thể (62, 71, 77, 103 tuổi...) + (2) Nút thắt nghịch lý gia đình (xoá số con cái, âm thầm mua đất an táng, bị mắng ăn bám) + (3) Cái kết hả lòng/thức tỉnh.",
-      "Cấu trúc kịch bản giữ chân AVD: Hook cao trào 0-30s đặt ngay biến cố lớn nhất, 3-5 phút đầu tích tụ mâu thuẫn, đỉnh điểm biến cố và kết thúc bằng bài học nhân tình thế thái sâu sắc.",
-      "Quy trình Việt hoá kịch bản: Bóc tách transcript video triệu view của kênh Hàn Quốc, prompt AI viết lại theo văn phong truyền cảm, xưng hô gần gũi của người Việt, dùng giọng đọc AI trầm ấm tốc độ 0.92x."
+      "Phân tích kênh Hàn Quốc @오늘의삶의지혜: Kênh mới lập giữa tháng 8/2026, video đầu đăng cách đây 9 ngày, 10 video đã đạt 5,24 N người đăng ký và hơn 100K tổng lượt xem; các video đầu tiên đều có view đều.",
+      "Phân tích kênh Việt Nam @Haythauhieuchuyendoi: Kênh 'Thấu Hiểu Chuyện Đời' tham gia 14/08/2026, áp dụng công thức từ Hàn Quốc — video '71 Tuổi Xoá Số Điện Thoại Các Con...' đạt 69 N lượt xem sau 3 ngày (285 VPH, >100x), tổng kênh 201.220 lượt xem sau 22 video.",
+      "Công thức tiêu đề 3 yếu tố: (1) Neo tuổi tác cụ thể (62, 71, 77 tuổi; kênh Hàn dùng 103, 105 tuổi) + (2) Nút thắt gia đình (xoá số điện thoại các con, âm thầm mua đất an táng, bị con dâu mắng ăn bám) + (3) Cái kết hả lòng/thức tỉnh.",
+      "Cách dựng video đơn giản: ghép video tự nhiên, thêm giọng đọc, dựng phụ đề và ghép hình ảnh nhân vật minh họa; tham khảo thẻ tag video và tag kênh của kênh mẫu.",
+      "Giọng đọc là phần quan trọng nhất: tìm kênh cùng ngách có giọng hay rồi clone giọng đó, hoặc lên ElevenLabs lọc theo quốc gia Hàn Quốc + giọng người già để chọn giọng hợp ngách."
     ],
     "edit_sop": {
       "primary": "Tạo thumbnail kích thích tò mò với câu hỏi mở hoặc tình huống cao trào + Dựng video bằng chuỗi ảnh AI/stock cảm xúc kết hợp zoom in/zoom out nhẹ",
@@ -2614,8 +2614,8 @@
     "accuracy_status": "verified_expert_summary",
     "analysis_method": "frame_vision_manual_audit",
     "key_takeaways": [
-      "📌 Doanh thu kỷ lục $104,170.06 / tháng: Tác giả soi trực tiếp YouTube Analytics kênh đối thủ @WW2Tales (1.41M subs, 239 videos) đạt 11.5 triệu lượt xem, 2.4 triệu giờ xem và 883.621 views realtime trong 48 giờ.",
-      "📌 Công thức cấu trúc kịch bản phân đoạn (Section Prompt): Dùng Claude AI chia kịch bản thành các hồi kịch tính (Section 1: Mở đầu báo động, Section 2: Sự thức tỉnh của phi đội Devastator...), giữ nhịp độ dồn dập mỗi 60-90 giây.",
+      "📌 Doanh thu ước tính $104,170.06 trong 28 ngày: Tác giả mở YouTube Analytics kênh đối thủ @WW2Tales (239 video; ~149 N người đăng ký trên trang kênh) — 28 ngày đạt 11.9 triệu lượt xem (11,870,539), 2.4 triệu giờ xem, +38.4K người đăng ký; realtime 48 giờ 553,850 lượt xem.",
+      "📌 Công thức cấu trúc kịch bản phân đoạn (Section Prompt): Dùng Claude AI chia kịch bản thành nhiều phần, mỗi phần khoảng 700–800 từ, bấm tiếp tục (continue) để AI viết lần lượt từng phần thay vì một lần.",
       "📌 Thiết kế Thumbnail tương phản nhãn vàng (Yellow Badge CTR): Bố cục ảnh tư liệu chiến trường đen trắng kết hợp nhãn tên chiến hạm in hoa trên nền vàng nổi bật góc trái ('USS Helena'), tiêu đề ngắn gọn kích thích tò mò cực độ.",
       "📌 Kỹ thuật dựng B-roll footage chiến tranh sống động: Kết hợp ảnh tư liệu giải mật được phục chế nét cao với hiệu ứng khói lửa, rung lắc màn hình và âm thanh đại bác, động cơ máy bay sống động để người xem chìm đắm vào trận đánh.",
       "📌 Đầy đủ 3 bộ tài liệu thực chiến đi kèm: Bộ tài liệu kịch bản prompt chi tiết trên Google Docs và 2 bảng tính Google Sheets phân loại toàn bộ các trận hải chiến, không chiến đắt giá nhất để sản xuất hàng loạt."
@@ -2936,7 +2936,7 @@
       "Ngách 2 — Bí quyết chế biến & bảo quản thực phẩm dân dã (@시니어살림노트): Mẹo tỏi rẻ ngâm soju (69K view), rong biển khô chan nước sôi (203K view), hành tây xào tương ớt gochujang (210K view) — view cực khủng vì tính ứng dụng gia đình cao.",
       "Ngách 3 & 4 — Y học thường thức & Quản lý tiền bạc tuổi già: Khai thác mẹo bác sĩ giấu kín (@의사가숨긴건강법-z9n) và lời khuyên giữ tiền tiết kiệm, lập quỹ dưỡng già độc lập (@RichPatternResearchInstitute).",
       "Kỹ thuật dựng video 10-15 phút cuốn hút: Sử dụng footage quay cận cảnh (Close-up) bàn tay sơ chế đồ ăn, lồng âm thanh ASMR chân thực (tiếng dao thái, tiếng sôi, tiếng lò vi sóng) kích thích đa giác quan.",
-      "Công thức thumbnail Đỏ - Vàng bắt mắt: Đĩa đồ ăn thực tế hấp dẫn bên phải + 3 dòng chữ giật tít in hoa bên trái ('KHOAI LANG MUA NHIỀU' $\rightarrow$ 'CHO VÀO LÒ VI SÓNG' $\rightarrow$ 'THUỐC BỔ KHÔNG ĐÂU BẰNG!!')."
+      "Công thức thumbnail Đỏ - Vàng bắt mắt: Đĩa đồ ăn thực tế hấp dẫn bên phải + 3 dòng chữ giật tít in hoa bên trái ('KHOAI LANG MUA NHIỀU' → 'CHO VÀO LÒ VI SÓNG' → 'THUỐC BỔ KHÔNG ĐÂU BẰNG!!')."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -6010,7 +6010,7 @@
       "Phân tích kênh Lời Chúa @은밀한응답: Kênh mới chỉ 3-4 video đã cắn đề xuất ổn định và bật kiếm tiền thành công; video dài 36-44 phút thuộc thể loại nhạc cầu nguyện và lời tâm sự đức tin bình an.",
       "Nguyên nhân cốt tử gây bẫy 0 view / lẹt đẹt: Hiện tượng 'Gây bối rối cho thuật toán' (Algorithmic Confusion) khi người làm kênh nhảy ngách tùy hứng (hôm nay làm Chúa, ngày mai làm rau củ trường thọ @장수채소습관, ngày mốt làm tin tức).",
       "Quy tắc nhất quán 1 trường từ khóa (Niche Consistency): Bắt buộc phải đăng tối thiểu 15 - 20 video đầu tiên cùng 1 chủ đề xuyên suốt để AI YouTube nhận diện chính xác tệp khán giả mục tiêu.",
-      "Quy trình 4 bước khám kênh & hồi sinh kênh flop: (1) Đo nguồn lưu lượng Browse Features $\rightarrow$ (2) Chuyển video lạc đề sang Unlisted (không xoá) $\rightarrow$ (3) Cập nhật lại 10-15 Channel Tags cốt lõi $\rightarrow$ (4) Bơm 5-7 video chuẩn chỉ liên tục trong 10 ngày.",
+      "Quy trình 4 bước khám kênh & hồi sinh kênh flop: (1) Đo nguồn lưu lượng Browse Features → (2) Chuyển video lạc đề sang Unlisted (không xoá) → (3) Cập nhật lại 10-15 Channel Tags cốt lõi → (4) Bơm 5-7 video chuẩn chỉ liên tục trong 10 ngày.",
       "Bố cục hình ảnh thiêng liêng: Dùng hình ảnh người phụ nữ/nữ thánh chắp tay cầu nguyện trong ánh hào quang vàng ấm, kết hợp sóng âm audio trực quan tạo cảm giác trị liệu tâm hồn."
     ],
     "edit_sop": {
@@ -7165,7 +7165,7 @@
       "Ngách 2 — Sổ tay nội trợ Hàn Quốc (@시니어살림노트): 11.5K sub chỉ sau 10 video, chuyên mẹo bảo quản dưa chuột đông lạnh, rong biển khô chan nước sôi và hành tây xào tương ớt.",
       "Ngách 3 & 4 — Tâm linh Thần đạo & Học viện trẻ hóa: Khai thác lời chúc phúc Amaterasu Miko (@アマテラス巫女あまね) và mẹo trẻ hóa mạch máu tuổi già (@みんなの若返りアカデミア).",
       "Ngách 5 — Suối nguồn tâm linh (@スピリチュアルの泉-l4z): Kết hợp nhạc thiền và thông điệp xoa dịu tổn thương tâm hồn cho người cao tuổi.",
-      "Bí quyết sản xuất video triết lý 20 phút: Chia bố cục 3 phần rõ ràng (Vấn đề bế tắc 0-3p $\rightarrow$ Lời giải triết lý 3-15p $\rightarrow$ 3 Hành động thực tế 15-20p), thumbnail chữ trắng-đỏ nền tối."
+      "Bí quyết sản xuất video triết lý 20 phút: Chia bố cục 3 phần rõ ràng (Vấn đề bế tắc 0-3p → Lời giải triết lý 3-15p → 3 Hành động thực tế 15-20p), thumbnail chữ trắng-đỏ nền tối."
     ],
     "edit_sop": {
       "primary": "Về còn cách edit thì cũng rất rất là đơn giản luôn",
@@ -7745,7 +7745,7 @@
     "key_takeaways": [
       "Nguyên lý hoạt động của Prompt Master: Đóng vai trò như một Biên kịch gia bản địa kỳ cựu (Native Scriptwriter), giữ nguyên 70% cấu trúc logic và viết lại 100% câu từ mượt mà theo văn hóa thị trường đích.",
       "Khắc phục nỗi đau dịch máy Google Translate: Loại bỏ hoàn toàn các câu từ thô cứng, ngô nghê khiến khán giả thoát video sớm (tụt AVD), thay bằng lối kể chuyện truyền cảm (Storytelling).",
-      "Quy trình 3 bước nhân bản kịch bản: (1) Lấy transcript qua youtube-transcript.io $\rightarrow$ (2) Nạp Master Prompt vào AI $\rightarrow$ (3) Kiểm tra nhịp điệu đọc và lồng tiếng qua ElevenLabs/Vrew.",
+      "Quy trình 3 bước nhân bản kịch bản: (1) Lấy transcript qua youtube-transcript.io → (2) Nạp Master Prompt vào AI → (3) Kiểm tra nhịp điệu đọc và lồng tiếng qua ElevenLabs/Vrew.",
       "Kỹ thuật tạo Hook 15 giây đầu tiên: Prompt tự động sinh ra mở đầu kịch tính, đặt câu hỏi nghịch lý hoặc biến cố lớn nhất để níu chân người nghe ngay lập tức.",
       "Checklist tránh lỗi phổ biến: Phải đổi tên địa danh cho khớp văn hóa Việt/Nhật, loại bỏ các từ sáo rỗng ('Hơn nữa', 'Tóm lại') và kiểm soát thời lượng đạt chuẩn 15-20 phút."
     ],
@@ -8217,7 +8217,7 @@
       "Ngách bữa ăn dưỡng lão 1 bát (@노후건강한끼): Bữa ăn đơn giản cơm gạo lứt + rau luộc + súp miso cho người già sống một mình tại Hàn Quốc.",
       "Case study kênh Nhật Bản bất diệt @fuetunojin: 210K sub / 127 video về nhân vật vĩ đại và triết lý sống trường tồn.",
       "Kỹ thuật train Claude bám theo 70% kịch bản đối thủ: Giữ nguyên 70% cấu trúc luận điểm khoa học, sáng tạo lại 30% phần mở đầu Hook và lời văn gần gũi.",
-      "Thumbnail dưa chuột xanh mướt: Hình ảnh quả dưa chuột cắt lát đọng giọt nước + dòng chữ 'MỖI NGÀY 1 QUẢ DƯA CHUỘT' $\rightarrow$ 'ĐƯỜNG HUYẾT VỀ ỔN ĐỊNH'."
+      "Thumbnail dưa chuột xanh mướt: Hình ảnh quả dưa chuột cắt lát đọng giọt nước + dòng chữ 'MỖI NGÀY 1 QUẢ DƯA CHUỘT' → 'ĐƯỜNG HUYẾT VỀ ỔN ĐỊNH'."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",

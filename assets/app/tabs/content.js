@@ -605,6 +605,8 @@ async function renderNgachXanh() {
   const nx = await loadJSON('data-tabs/ngach-xanh.json');
   const rawVideos = await loadJSON('data-tabs/videos.json');
   const videos = Array.isArray(rawVideos) ? rawVideos : safeArray(rawVideos && rawVideos.videos);
+  const allKenh = safeArray(await loadJSON('data-tabs/kenh-mau.json').catch(() => []));
+  const deadKenhSet = new Set(allKenh.filter(k => k && k.dead).map(k => String(k.handle || '').replace(/^@/, '').toLowerCase()));
 
   function vidsFor(n) {
     const bySku = new Map(videos.map(v => [String(v.sku || '').toLowerCase(), v]));
@@ -882,9 +884,13 @@ ${nxItems.map(n => {
     </div>
     ${n.channels.length ? `
     <div class="mb-3">
-      <div class="nx-card-channel-label">Kênh đối thủ sạch (30 ngày):</div>
+      <div class="nx-card-channel-label">Kênh đối thủ tham khảo (30 ngày):</div>
       <div class="nc-channels">
-        ${n.channels.map(ch => `<a href="https://www.youtube.com/${esc(ch)}" target="_blank" rel="noopener noreferrer" class="channel-chip" translate="no">${esc(ch)} ↗</a>`).join('')}
+        ${n.channels.map(ch => {
+          const h = String(ch || '').replace(/^@/, '').toLowerCase();
+          const isDead = deadKenhSet.has(h);
+          return `<a href="https://www.youtube.com/${esc(ch)}" target="_blank" rel="noopener noreferrer" class="channel-chip ${isDead ? 'channel-chip-dead' : ''}" translate="no" title="${isDead ? 'Kênh đã dừng hoặc bị YouTube gỡ (404)' : esc(ch)}">${esc(ch)}${isDead ? '<span class="channel-chip-dead-badge">DIE</span>' : ''} ↗</a>`;
+        }).join('')}
       </div>
     </div>` : ''}
     ${n.vids.length ? `
@@ -1473,12 +1479,12 @@ async function renderRawKenh() {
     rawData = { records: [] };
   }
   const records = Array.isArray(rawData) ? rawData : (rawData && rawData.records ? rawData.records : []);
-  /* FULL PASS 2026-09-30: kenh da bi YouTube go (channelLifecycle.state TERMINATED_*) truoc day van hien
+  /* FULL PASS 2026-09-30: kenh da bi YouTube go (channelLifecycle.state TERMINATED_* hoac DEAD_*) truoc day van hien
      "Dang hoat dong" + tinh vao bo loc/so dem "hoat dong"/"YPP" vi vitalityAudit la anh chup TRUOC khi bi go
-     (do: 4/156 — RAW-012/143/145/152). Ghi de trang thai HIEU LUC khi hien thi; giu ban goc o _vitalitySnapshot. */
+     (do: 5/156 — RAW-012/033/143/145/152). Ghi de trang thai HIEU LUC khi hien thi; giu ban goc o _vitalitySnapshot. */
   records.forEach(r => {
     const lc = r && r.channelLifecycle;
-    if (!lc || !/^TERMINATED/.test(lc.state || '') || r._vitalitySnapshot) return;
+    if (!lc || !/^(?:TERMINATED|DEAD)/i.test(lc.state || '') || r._vitalitySnapshot) return;
     const ev = (lc.events || []).find(x => x && /terminated/i.test(x.type || '')) || {};
     const d = ev.date ? String(ev.date).slice(0, 10).split('-').reverse().join('/') : '';
     r._vitalitySnapshot = r.vitalityAudit || null;
@@ -1518,7 +1524,8 @@ async function renderRawKenh() {
   const activeCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'ACTIVE').length;
   const slowCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'SLOW').length;
   const dormantMidCount = records.filter(r => r.vitalityAudit && r.vitalityAudit.healthStatus === 'DORMANT_MID').length;
-  const riskCount = records.filter(r => r.vitalityAudit && (r.vitalityAudit.healthStatus === 'DORMANT_LONG' || r.vitalityAudit.healthStatus === 'DEAD_OR_PURGED' || r.vitalityAudit.monetizationStatus === 'MONETIZED_AT_RISK')).length;
+  const deadCount = records.filter(r => (r.vitalityAudit && r.vitalityAudit.healthStatus === 'DEAD_OR_PURGED') || (r.channelLifecycle && /^(?:TERMINATED|DEAD)/i.test(r.channelLifecycle.state || ''))).length;
+  const riskCount = records.filter(r => r.vitalityAudit && (r.vitalityAudit.healthStatus === 'DORMANT_LONG' || r.vitalityAudit.monetizationStatus === 'MONETIZED_AT_RISK')).length;
   const yppCount = records.filter(r => r.vitalityAudit && (r.vitalityAudit.monetizationStatus === 'MONETIZED_ACTIVE' || r.vitalityAudit.monetizationStatus === 'MONETIZED')).length;
 
   const filtered = records.filter(r => {
@@ -1533,13 +1540,15 @@ async function renderRawKenh() {
     const lName = (aL.language || 'Tiếng Anh (English)').toLowerCase();
     const lCode = (aL.code || '').toLowerCase();
     const _nRaw = r.editorialNiche || r.niche || 'Chưa phân loại';
+    const isTerminated = vA.healthStatus === 'DEAD_OR_PURGED' || (r.channelLifecycle && /^(?:TERMINATED|DEAD)/i.test(r.channelLifecycle.state || ''));
     if (state.rawGroup && rawNicheGroup(_nRaw) !== state.rawGroup) return false;
     if (currentNiche && _nRaw !== currentNiche) return false;
     if (currentLang && (aL.language || 'Tiếng Anh (English)') !== currentLang) return false;
     if (state.rawVitality === 'active' && vA.healthStatus !== 'ACTIVE') return false;
     if (state.rawVitality === 'slow' && vA.healthStatus !== 'SLOW') return false;
     if (state.rawVitality === 'dormant' && vA.healthStatus !== 'DORMANT_MID') return false;
-    if (state.rawVitality === 'risk' && vA.healthStatus !== 'DORMANT_LONG' && vA.healthStatus !== 'DEAD_OR_PURGED' && vA.monetizationStatus !== 'MONETIZED_AT_RISK') return false;
+    if (state.rawVitality === 'dead' && !isTerminated) return false;
+    if (state.rawVitality === 'risk' && vA.healthStatus !== 'DORMANT_LONG' && vA.monetizationStatus !== 'MONETIZED_AT_RISK') return false;
     if (state.rawVitality === 'ypp' && vA.monetizationStatus !== 'MONETIZED_ACTIVE' && vA.monetizationStatus !== 'MONETIZED') return false;
     const tvF = r.thumbnailVision || null;
     if (state.rawFaceless === 'faceless' && !(tvF && tvF.isFaceless)) return false;
@@ -1550,8 +1559,9 @@ async function renderRawKenh() {
       ...(r.visionAnalysis && r.visionAnalysis.videoTitles ? r.visionAnalysis.videoTitles : []),
       ...(r.ocr && Array.isArray(r.ocr.videoRows) ? r.ocr.videoRows.map(row => row.title || '') : [])
     ].join(' ').toLowerCase();
+    const deadKeywords = isTerminated ? 'die chết 404 gỡ terminated dead' : 'sống live active';
 
-    if (q && !SC.matchesQuery([title, handle, fname, n, rid, lName, lCode, demoVidTitle, otherVidTitles], q)) return false;
+    if (q && !SC.matchesQuery([title, handle, fname, n, rid, lName, lCode, demoVidTitle, otherVidTitles, deadKeywords, vA.healthStatus || '', vA.healthBadge || ''], q)) return false;
     return true;
   });
 
@@ -1566,7 +1576,7 @@ async function renderRawKenh() {
   ${pageBanner('Raw kênh mẫu', SC.pad2(filtered.length) + '/' + SC.pad2(records.length) + ' hồ sơ · bóc tách qua Vision AI + OCR + vidIQ', [
     { icon: ICONS.image, label: 'Ảnh raw', value: records.length, sub: `${filtered.length === records.length ? 'Hiện tất cả' : 'Đang lọc ' + filtered.length} · ${ocrCount} có OCR` },
     { icon: ICONS.niche, label: 'Nhóm chủ đề', value: sortedGroups.length, sub: `${Object.keys(nicheCounts).length} ngách chi tiết` },
-    { icon: ICONS.channel, label: 'Sức sống YPP', value: `${activeCount} live`, sub: `${riskCount} nguy cơ tắt YPP (>6th)` },
+    { icon: ICONS.channel, label: 'Sức sống YPP', value: `${activeCount} live`, sub: `${deadCount} kênh đã gỡ/die · ${riskCount} rủi ro` },
     { icon: ICONS.doc, label: 'Kiểm định AI', value: `${verifiedCount} vidIQ`, sub: `${facelessCount} faceless AI (${hasFaceCount} có mặt)` }
   ])}
   <div class="card p-4 sm:p-5 mb-6 border-brand-500/30 bg-brand-950/20" role="note">
@@ -1635,6 +1645,9 @@ async function renderRawKenh() {
   <button type="button" data-raw-vitality="active" class="filter-btn ${state.rawVitality === 'active' ? 'active' : ''}">${icoColored('shield-check', '#34d399', 14)} Đang hoạt động · ${activeCount}</button>
   <button type="button" data-raw-vitality="slow" class="filter-btn ${state.rawVitality === 'slow' ? 'active' : ''}">${icoColored('alert-circle', '#fde68a', 14)} Ra video chậm · ${slowCount}</button>
   <button type="button" data-raw-vitality="dormant" class="filter-btn ${state.rawVitality === 'dormant' ? 'active' : ''}">${icoColored('alert-circle', '#fb923c', 14)} Ngủ đông · ${dormantMidCount}</button>
+  <button type="button" data-raw-vitality="dead" class="filter-btn ${state.rawVitality === 'dead' ? 'active' : ''}">
+    <span class="inline-flex items-center gap-1.5"><span class="kenh-dot-dead"></span>Đã bị gỡ / DIE · ${deadCount}</span>
+  </button>
   <button type="button" data-raw-vitality="risk" class="filter-btn ${state.rawVitality === 'risk' ? 'active' : ''}">${icoColored('alert-triangle', '#f87171', 14)} Nguy cơ tắt YPP / Dừng lâu · ${riskCount}</button>
   <button type="button" data-raw-vitality="ypp" class="filter-btn ${state.rawVitality === 'ypp' ? 'active' : ''}">${icoColored('coins', '#34d399', 14)} Bật kiếm tiền (YPP Active) · ${yppCount}</button>
 </div>

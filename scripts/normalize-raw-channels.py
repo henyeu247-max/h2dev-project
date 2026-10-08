@@ -35,7 +35,7 @@ def get_local_mcp_key():
         except Exception:
             pass
     # Ưu tiên 3: Fallback chuẩn của MCP Pool Local (:3988)
-    return "mcp-pool-2026-secure-key"
+    return ""
 
 LOCAL_MCP_KEY = get_local_mcp_key()
 

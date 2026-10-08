@@ -329,11 +329,22 @@ window.addEventListener('keydown', (e)=>{
        — thuc te CA 3 trang deu thieu thuoc tinh tinh trong HTML; index chi co logic dong).
        Nay: bat true ngay khi bat dau fetch, tat o ca nhanh thanh cong lan that bai. */
     document.getElementById('playerMain')?.setAttribute('aria-busy', 'true');
-    const [catalogResponse, modulesResponse]=await Promise.all([fetch(CAT), fetch('data/modules.json', {cache:'no-store'})]);
+    const [catalogResponse, modulesResponse, kmResponse]=await Promise.all([
+      fetch(CAT),
+      fetch('data/modules.json', {cache:'no-store'}),
+      fetch('data-tabs/kenh-mau.json', {cache:'default'}).catch(()=>null)
+    ]);
     if(!catalogResponse.ok) throw new Error(`Không tải được catalog (${catalogResponse.status})`);
     if(!modulesResponse.ok) throw new Error(`Không tải được lộ trình (${modulesResponse.status})`);
     const CAT2=await catalogResponse.json();
     const modulesData=await modulesResponse.json();
+    const deadChannelsMap = new Map();
+    if(kmResponse && kmResponse.ok){
+      try {
+        const kmList = await kmResponse.json();
+        (kmList||[]).filter(k=>k&&k.dead).forEach(k=>deadChannelsMap.set(String(k.handle||'').replace(/^@/,'').toLowerCase(), k));
+      } catch(e){}
+    }
     const catalogBySku=new Map(CAT2.map(item=>[item.sku,item]));
     const route=modulesData.modules.flatMap(module=>module.items.map(item=>({item:catalogBySku.get(item.sku)||item,module})));
     const routePos=route.findIndex(x=>x.item.sku===sku);
@@ -433,8 +444,10 @@ window.addEventListener('keydown', (e)=>{
       document.getElementById('pchannels').classList.remove('hidden');
       document.getElementById('pchannelslist').innerHTML=v.channels.map(c=>{
         const handle=String(c).replace(/^@/,'');
-        return `<div class="inline-flex items-center gap-1.5 bg-surface-card border border-ink-600 p-1.5 rounded-xl text-xs">
-          <a href="https://www.youtube.com/@${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}↗</a>
+        const deadInfo = deadChannelsMap.get(handle.toLowerCase());
+        const isDead = Boolean(deadInfo);
+        return `<div class="inline-flex items-center gap-1.5 bg-surface-card border ${isDead ? 'border-red-500/40 bg-red-950/20' : 'border-ink-600'} p-1.5 rounded-xl text-xs" title="${isDead ? esc(deadInfo.deadNote || 'Kênh đã dừng hoặc bị YouTube gỡ') : ''}">
+          <a href="https://www.youtube.com/@${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors ${isDead ? 'text-gray-400 line-through' : ''}"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}${isDead ? '<span class="channel-chip-dead-badge">DIE</span>' : ''}↗</a>
           <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-2xs font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}"><span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span> Copy</button>
         </div>`;
       }).join('');

@@ -37,7 +37,7 @@ function loadKeys(options = {}) {
   const VIDIQ_KEY = env.VIDIQ_KEY || '';
   const EXA_KEY = env.EXA_KEY || '';
   const JINA_KEY = env.JINA_KEY || '';
-  const MCP_POOL_API_KEY = env.MCP_POOL_API_KEY || '***REMOVED-MCP-POOL-KEY***';
+  const MCP_POOL_API_KEY = env.MCP_POOL_API_KEY || '';
 
   if (options.required && Array.isArray(options.required)) {
     const missing = [];

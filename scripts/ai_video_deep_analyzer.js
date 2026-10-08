@@ -31,7 +31,7 @@ function get9RouterKey() {
     const out = execSync('py -c "import sqlite3, os; p=os.path.expanduser(r\'~\\\\AppData\\\\Roaming\\\\9router\\\\db\\\\data.sqlite\'); con=sqlite3.connect(\'file:%s?mode=ro\'%p, uri=True); row=con.execute(\'SELECT key FROM apiKeys WHERE isActive=1 LIMIT 1\').fetchone(); print(row[0] if row else \'\')"').toString().trim();
     if (out) return out;
   } catch(e) {}
-  return '***REMOVED-9ROUTER-KEY***';
+  return '';
 }
 
 console.log(`================================================================`);

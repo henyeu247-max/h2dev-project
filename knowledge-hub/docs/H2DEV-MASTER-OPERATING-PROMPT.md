@@ -22,7 +22,7 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
 ## 2. HẠ TẦNG VẬN HÀNH LOCAL-FIRST & SỐ LIỆU SSoT RUNTIME (21/09/2026)
 - Bản đồ dịch vụ hệ thống:
   1. H2DEV Web Application Server (:8899) — Windows Service H2DEV_Service (Local, LAN 192.168.50.216, Tailscale 100.83.146.28, Network Share Y:\YTB).
-  2. Local MCP Tool Server (:3988) — Windows Service MCP_Pool_Service tại D:\Mcp-Pool-Vps (188+ tools, module youtube_intelligence mở rộng 26 vũ khí $0.00; Header X-API-Key: ***REMOVED-MCP-POOL-KEY***).
+  2. Local MCP Tool Server (:3988) — Windows Service MCP_Pool_Service tại D:\Mcp-Pool-Vps (188+ tools, module youtube_intelligence mở rộng 26 vũ khí $0.00; Header X-API-Key: <MCP_POOL_API_KEY>).
   3. AI Chat Model Gateway (:20128) — 9Router Gateway điều phối LLM proxy (564+ models), KHÔNG PHẢI là MCP tool server.
   4. Bàn điều khiển trung tâm 1-Click: `scripts/h2dev_master_producer.py` (điều phối 15 nhóm chủ đề).
   5. Kho nghiên cứu Reverse-Engineering tại `D:\YTB\research-repos\`: 8 repo tinh hoa thế giới (Tencent BrowserSkill, ainovel-cli, drama-skills, make-prompt-seedance2, dola-render-gateway, YouTube.js LuanRT, yt-fts, FckSignups NoSignups).

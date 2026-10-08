@@ -19,6 +19,9 @@ echo "[POST-RECEIVE] Commit dang chay: $OLD_REV"
 git fetch origin
 git reset --hard origin/main
 
+echo '[POST-RECEIVE] Running Master SQLite DB build / migration...'
+node scripts/build_master_db.js
+
 echo '[POST-RECEIVE] GUARD: kiem tra so lieu dong bo (sync-counts.js --check)...'
 if ! node scripts/sync-counts.js --check; then
   echo ''
@@ -28,12 +31,10 @@ if ! node scripts/sync-counts.js --check; then
   echo '[POST-RECEIVE] ################################################################'
   echo "[POST-RECEIVE] ROLLBACK app ve commit cu: $OLD_REV"
   git reset --hard "$OLD_REV"
+  node scripts/build_master_db.js
   exit 1
 fi
 echo '[POST-RECEIVE] Counts OK - docs khop data live.'
-
-echo '[POST-RECEIVE] Running Master SQLite DB build / migration...'
-node scripts/build_master_db.js
 
 echo '[POST-RECEIVE] Reloading PM2 h2dev-learn...'
 pm2 reload h2dev-learn

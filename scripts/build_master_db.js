@@ -9,7 +9,11 @@ const path = require('path');
 const { DatabaseSync } = require('node:sqlite');
 
 const ROOT = path.resolve(__dirname, '..');
-const DB_PATH = path.join(ROOT, 'data', 'h2dev_master.db');
+// 2026-10-09: bien moi truong H2DEV_MASTER_DB_PATH (tuy chon) cho phep build ra file tam de doi chieu
+// truoc khi thay DB live. Khong dat bien -> giu nguyen hanh vi cu (data/h2dev_master.db).
+const DB_PATH = process.env.H2DEV_MASTER_DB_PATH
+  ? path.resolve(process.env.H2DEV_MASTER_DB_PATH)
+  : path.join(ROOT, 'data', 'h2dev_master.db');
 const { computeCounts } = require('./lib/counts');
 const C = computeCounts();
 
@@ -469,6 +473,7 @@ let channelCount = 0;
 const processedChannelIds = new Set();
 const processedHandles = new Set();
 const ftsChannelIds = new Set(); // Fix 16/09: chong FTS entry trung khi 2 record cung channelId (RAW-054/106/107...) 288->282
+const rawNicheById = new Map(); // 2026-10-09: raw id -> niche_id, de record duplicateOf dung niche cua record goc
 
 // 1. Ingest all 97 Canonical Raw Channels (with deep dossiers)
 for (const r of rawKenhMau) {
@@ -483,6 +488,12 @@ for (const r of rawKenhMau) {
   const title = ch.title || r.title || r.id;
   const nicheName = r.editorialNiche || r.niche || 'Khác';
   let nicheId = nicheMap.get(nicheName);
+  // 2026-10-09: record trung (duplicateOf) KHONG tao ngach auto moi. Row kenh da upsert vao record goc
+  // (ON CONFLICT khong cap nhat niche_id) nen ngach sinh tu ban trung thanh mo coi
+  // (RAW-106/107 -> RAW-054, RAW-127 -> RAW-089). Dung niche_id cua record goc.
+  if (!nicheId && r.duplicateOf && rawNicheById.has(r.duplicateOf)) {
+    nicheId = rawNicheById.get(r.duplicateOf);
+  }
   if (!nicheId) {
     nicheId = 'niche_' + nicheName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
     if (!nicheMap.has(nicheName)) {
@@ -491,6 +502,7 @@ for (const r of rawKenhMau) {
       nicheMap.set(nicheName, nicheId);
     }
   }
+  rawNicheById.set(r.id, nicheId);
 
   const vat = r.vitalityAudit || {};
   const deepIntel = r.deepIntelligence || {};

@@ -87,7 +87,7 @@
 
 ## 2026-09-30 (đợt 6) — GIẢI MÃ HOÀN TẤT & PHỤC HỒI 100% AUDIO VIDEO-f59aa7 QUA PIPELINE DRM TỰ ĐỘNG (SCAR-045)
 
-- **Giải mã thành công 100% audio:** Tích hợp thiết bị Android L3 CDM (`_tools/cdm/device.wvd`) vào module `scripts/get_drm_key.py`, gửi License Challenge thành công tới EZDRM server (`https://widevine-dash.ezdrm.com/...`) và trích xuất thành công Content Decryption Key chuẩn: `***REMOVED-DRM-KEY***`.
+- **Giải mã thành công 100% audio:** Tích hợp thiết bị Android L3 CDM (`_tools/cdm/device.wvd`) vào module `scripts/get_drm_key.py`, gửi License Challenge thành công tới EZDRM server (`https://widevine-dash.ezdrm.com/...`) và trích xuất thành công Content Decryption Key chuẩn: `<KID:KEY da xoa>`.
 - **Pipeline tự động hóa hoàn chỉnh:** Xây dựng `scripts/download_full_drm_audio.cjs`, tự động hóa bắt 432/432 audio segments qua trình duyệt trong 115s, giải mã bằng FFmpeg `-decryption_key` sang M4A lossless 38.75 MB, và remux với video 1080p thành file hoàn chỉnh `video/VIDEO-f59aa7/VIDEO-f59aa7.mp4` (108.5 MB, duration 2588.37s).
 - **Kiểm định âm lượng:** `mean_volume: -22.0 dB`, `max_volume: 0.0 dB` — âm thanh trong trẻo, to rõ xuyên suốt toàn bộ 43 phút 08 giây, xóa sạch 100% khoảng lặng kỹ thuật số (digital zero).
 - **Check-pass toàn thư viện:** `audit_videos_v2.py --sku VIDEO-f59aa7` báo `issues = 0, clean = 1` (hết sạch cờ B7). Toàn bộ kho 140 bài học đạt 139 clean (bài còn lại `VIDEO-8e0275` là quay màn hình không micro từ tác giả). Cập nhật `size` trong `videos.json`, `catalog.json`, `catalog_full.json`, đồng bộ `sync-counts.js --check` và `validate-project.js` PASS 100%.

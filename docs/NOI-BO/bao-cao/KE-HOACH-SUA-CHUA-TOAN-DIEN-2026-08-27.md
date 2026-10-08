@@ -110,7 +110,7 @@ curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8899/index.html       
 
 **Verify (không in giá trị, chỉ đếm):**
 ```bash
-grep -rc "***REMOVED-MCP-POOL-KEY***" knowledge-hub/ docs/ data-tabs/ index.html 2>/dev/null | grep -v ':0' || echo "SẠCH"
+grep -rc "<MCP_POOL_API_KEY>" knowledge-hub/ docs/ data-tabs/ index.html 2>/dev/null | grep -v ':0' || echo "SẠCH"
 ```
 **Rollback:** `_backup\20260827-plan\` (B0.2).
 

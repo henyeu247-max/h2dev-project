@@ -294,6 +294,11 @@ const server = http.createServer(async (req,res)=>{
   }
   const isHead = (req.method === 'HEAD');
   const apiPath = req.url.split('?')[0];
+  if (apiPath === '/health' && (req.method === 'GET' || isHead)) {
+    res.writeHead(200, withSecure({ 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }));
+    res.end(isHead ? undefined : JSON.stringify({ ok: true }));
+    return;
+  }
   if (apiPath === '/api/admin-state') {
     if (req.method === 'GET' || isHead) {
       // `writable:false` = CONG BO kha nang ghi de client KHONG thu PUT nua
@@ -317,7 +322,10 @@ const server = http.createServer(async (req,res)=>{
         const { DatabaseSync } = require('node:sqlite');
         db = new DatabaseSync(dbFile);
         const rows = db.prepare('SELECT channel_id, handle, title, channel_age_days, median_views, top_outlier_multiplier, is_faceless, faceless_type, last_crawled_at FROM channels WHERE is_breakout = 1 ORDER BY median_views DESC LIMIT 30').all();
-        sendJson(req, res, 200, { total: rows.length, channels: rows }, isHead);
+        // 2026-10-09: 'total' = so phan tu tra ve (toi da 30, giu nguyen cho client cu).
+        // totalBreakouts = TONG so kenh is_breakout = 1 trong intelligence.db (khong gioi han).
+        const totalBreakouts = db.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_breakout = 1').get().c;
+        sendJson(req, res, 200, { total: rows.length, totalBreakouts, channels: rows }, isHead);
         return;
       } catch (err) {
         sendJson(req, res, 500, { error: err.message }, isHead);

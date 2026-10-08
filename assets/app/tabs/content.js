@@ -87,7 +87,7 @@ async function renderTongQuan() {
   ${pageBanner('Tổng quan Radar Kho', `${SC.pad2(marketRows.length)} thị trường · ${SC.pad2(nx.ngachXanh.length)} ngách · ${SC.pad2((nx.thongTinChinhSach2026 || []).length)} chính sách 2026`, [
     { icon: ICONS.video, label: 'Video khóa học', value: videos.length, sub: `${free} bài Free · ${videos.length - free} bài Pro`, tab: 'video' },
     { icon: ICONS.doc, label: 'Kịch bản & Tài liệu', value: kich.length, sub: `${liveFile} file local · catalog`, tab: 'tai-lieu' },
-    { icon: ICONS.channel, label: 'Kênh mẫu', value: kenh.filter(k=>!k.dead).length, sub: `${kenh.length} kênh · ${kenh.filter(k=>k.dead).length} dead ẩn`, tab: 'kenh-mau' },
+    { icon: ICONS.channel, label: 'Kênh mẫu', value: kenh.length, sub: `${kenh.filter(k=>!k.dead).length} sống · ${kenh.filter(k=>k.dead).length} case study DIE`, tab: 'kenh-mau' },
     { icon: ICONS.disk, label: 'Dung lượng đĩa', value: fmtMb(diskMb), sub: `${SC.pad2(videos.length)} video · catalog local`, tab: 'video' }
   ])}
   <div class="card p-4 sm:p-5 mb-6 flex flex-wrap items-center justify-between gap-3 border-border-strong bg-surface">
@@ -1673,9 +1673,12 @@ async function renderRawKenh() {
     const vA = r.vitalityAudit || {};
     const vG = r.vidiqVerification && r.vidiqVerification.growth30d;
     const ytUrl = ch.url || ('https://www.youtube.com/results?search_query=' + encodeURIComponent(ch.title || ch.handle || ''));
-    const statusBadge = (r.vidiqVerification && r.vidiqVerification.status === 'VERIFIED')
-      ? `<span class="badge badge-green">vidIQ Verified</span>`
-      : (r.duplicateOf ? `<span class="badge badge-amber">Trùng (${esc(r.duplicateOf)})</span>` : (r.status === 'OCR_COMPLETE' ? `<span class="badge badge-blue">OCR đủ</span>` : `<span class="badge badge-amber">Manual</span>`));
+    const isTerminated = vA.healthStatus === 'DEAD_OR_PURGED' || (r.channelLifecycle && /^TERMINATED/.test(r.channelLifecycle.state || ''));
+    const statusBadge = isTerminated
+      ? `<span class="badge badge-red font-bold text-2xs uppercase tracking-wider shrink-0">Đã bị gỡ · 404</span>`
+      : ((r.vidiqVerification && r.vidiqVerification.status === 'VERIFIED')
+        ? `<span class="badge badge-green">vidIQ Verified</span>`
+        : (r.duplicateOf ? `<span class="badge badge-amber">Trùng (${esc(r.duplicateOf)})</span>` : (r.status === 'OCR_COMPLETE' ? `<span class="badge badge-blue">OCR đủ</span>` : `<span class="badge badge-amber">Manual</span>`)));
     const langInfo = r.audioLanguageInfo || (r.deepIntelligence && r.deepIntelligence.audioLanguage ? { flag: r.deepIntelligence.languageFlag || '', code: r.deepIntelligence.audioLanguage } : null);
     /* Bo 11 muc 4 (29/09): voiceDna = ket qua STT do that (faster-whisper) — uu tien hien neu co */
     const vd = r.voiceDna || null;
@@ -1683,7 +1686,7 @@ async function renderRawKenh() {
     const imgSrc = r.fileName ? 'assets/raw-kenh/' + encodeURIComponent(r.fileName) : 'assets/thumbs/placeholder.svg';
     const tv = r.thumbnailVision || null;
     return `
-    <article class="card overflow-hidden min-w-0 flex flex-col hover:border-brand-500 transition group" data-raw-card="${esc(r.id)}">
+    <article class="card overflow-hidden min-w-0 flex flex-col hover:border-brand-500 transition group ${isTerminated ? 'kenh-card-dead' : ''}" data-raw-card="${esc(r.id)}">
       <div class="js-view-raw-image relative bg-ink-950 aspect-video overflow-hidden border-b border-ink-700 cursor-pointer" role="button" tabindex="0" aria-label="Xem ảnh raw đầy đủ: ${esc((ch.title || r.id).trim())}" data-src="${esc(imgSrc)}" data-title="${esc((ch.title || r.id).trim())}" title="Bấm xem ảnh kích thước đầy đủ">
         <img src="${esc(imgSrc)}" alt="Ảnh kênh: ${esc((ch.title || r.id).trim())}" width="640" height="360" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
         <div class="absolute top-2 left-2 flex items-center gap-1" style="z-index:var(--h2-z-base)">
@@ -1691,12 +1694,13 @@ async function renderRawKenh() {
           ${langInfo || vd ? `<span class="bg-sky-950/85 text-sky-300 font-bold px-1.5 py-0.5 rounded-md border border-sky-500/40 text-2xs shrink-0" title="${vd ? 'Ngôn ngữ + WPM đo từ phôi giọng (STT 29/09)' : esc(langInfo.language || langInfo.code)}">${esc((vd && vd.flag) || langInfo.flag)} ${esc((vd && vd.code ? vd.code.split('-')[0] : (langInfo.code ? langInfo.code.split('-')[0] : '')).toUpperCase())}${vdWpm ? ' · ' + esc(vdWpm) : ''}</span>` : ''}
         </div>
         <span class="absolute top-2 right-2 bg-brand-600/90 text-white text-2xs font-medium px-2 py-0.5 rounded-xl truncate max-w-[50%]">${esc(r.editorialNiche || r.niche || 'Chưa rõ')}</span>
+        ${isTerminated ? `<span class="kenh-dead-stamp" style="bottom:8px;right:8px">GỠ / DIE</span>` : ''}
         ${tv ? `<span style="z-index:var(--h2-z-base)" class="absolute bottom-2 left-2 ${tv.isFaceless ? 'bg-emerald-950/90 text-emerald-300 border-emerald-500/50' : 'bg-red-950/90 text-red-300 border-red-500/50'} text-2xs font-bold px-2 py-0.5 rounded-lg border backdrop-blur-sm" title="Vision AI (9Router local) phân loại cấp kênh · ${esc(tv.agreement || '')}">${tv.isFaceless ? ico('drama', 14) + ' Faceless' : ico('user', 14) + ' Có mặt người thật'}</span>` : ''}
         <span class="absolute bottom-2 right-2 bg-black/70 hover:bg-black/90 text-white text-2xs px-2 py-0.5 rounded-lg border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity inline-flex items-center gap-1">${ico('search', 14)} Xem ảnh</span>
       </div>
       <div class="p-4 sm:p-5 flex-1 flex flex-col gap-2 min-w-0">
         <div class="flex items-start justify-between gap-2 min-w-0">
-          <h3 class="text-sm font-bold text-white group-hover:text-brand-300 transition line-clamp-1 min-w-0">${esc((ch.title || '').trim() || 'Chưa rõ tên')}</h3>
+          <h3 class="text-sm font-bold text-white group-hover:text-brand-300 transition line-clamp-1 min-w-0 ${isTerminated ? 'kenh-dead-title' : ''}">${esc((ch.title || '').trim() || 'Chưa rõ tên')}</h3>
           <div class="flex items-center gap-1 shrink-0 flex-wrap justify-end">
             ${statusBadge}
             ${vA.monetizationStatus === 'MONETIZED_AT_RISK' ? `<span class="badge badge-red text-2xs font-bold inline-flex items-center gap-1">${ico('alert-triangle', 14)} Rủi ro YPP</span>` : ''}
@@ -1767,18 +1771,25 @@ async function renderKenh() {
     }
     return `<div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm flex items-center justify-center shrink-0">${esc(initial(ch.handle))}</div>`;
   }
-  /* FIX 2026-09-30: list mac dinh AN kenh dead (126/165) nhung chip dem ca dead (Moi ngach · 165) va
-     "Dang hien thi" so voi 165 -> luon bao "Dang loc" du khong loc. Dem theo kenh SONG cho khop list. */
   const kenhLive = kenh.filter(ch => ch && !ch.dead);
-  const nicheCounts = kenhLive.reduce((a, x) => { const n = x.niche || 'Khác'; a[n] = (a[n] || 0) + 1; return a; }, {});
+  const kenhDead = kenh.filter(ch => ch && ch.dead);
+  const statusFilter = state.kenhStatus || '';
+  const baseForNiche = statusFilter === 'live' ? kenhLive : (statusFilter === 'dead' ? kenhDead : kenh);
+  const nicheCounts = baseForNiche.reduce((a, x) => { const n = x.niche || 'Khác'; a[n] = (a[n] || 0) + 1; return a; }, {});
   const q = (state.kenhQ || '').trim().toLowerCase();
   const list = kenh.filter(ch => {
-    if (ch.dead) return false;
+    if (statusFilter === 'live' && ch.dead) return false;
+    if (statusFilter === 'dead' && !ch.dead) return false;
     if (state.kenhNiche && (ch.niche || 'Khác') !== state.kenhNiche) return false;
     if (!q) return true;
-    const hay = [ch.handle || '', (ch.handle || '').replace(/^@/, ''), ch.niche, (ch.niches || []).join(' '), (ch.markets || []).join(' '), ch.url, ch.ngay_do || ''].join(' ').toLowerCase();
+    const hay = [ch.handle || '', (ch.handle || '').replace(/^@/, ''), ch.niche, (ch.niches || []).join(' '), (ch.markets || []).join(' '), ch.url, ch.ngay_do || '', ch.dead ? 'die chết 404 gỡ' : 'sống live', ch.deadNote || ''].join(' ').toLowerCase();
     return SC.matchesQuery([hay], q);
-  }).slice().sort((a, b) => (b.count || 0) - (a.count || 0));
+  }).slice().sort((a, b) => {
+    if (!statusFilter) {
+      if (Boolean(a.dead) !== Boolean(b.dead)) return a.dead ? 1 : -1;
+    }
+    return (b.count || 0) - (a.count || 0);
+  });
   const allKenhNiches = [...NICHE_ORDER.filter(n => nicheCounts[n]), ...Object.keys(nicheCounts).filter(n => !NICHE_ORDER.includes(n))];
   const chips = allKenhNiches.map(n => [n, n, nicheCounts[n]]);
   const PAGE_SIZE = 24;
@@ -1796,23 +1807,32 @@ async function renderKenh() {
     return NICHE_MAP[niche] || (Object.values(NICHE_MAP).includes(niche) ? niche : (niche && niche !== 'Khác' ? niche : ''));
   }
   return `
-  ${pageBanner('Kênh mẫu / Đối thủ', list.length + '/' + kenh.length + ' kênh · nhóm theo ngách từ video H2DEV', [
-    /* FIX 2026-09-30: cung quy uoc 3 noi (Tong quan / Chien luoc / Kenh mau): value = kenh song. */
-    { icon: ICONS.channel, label: 'Kênh đối thủ', value: kenhLive.length, sub: `${kenh.length} kênh · ${kenh.filter(k => k.dead).length} dead ẩn` },
-    { icon: ICONS.niche, label: 'Ngách có kênh', value: Object.keys(nicheCounts).length, sub: 'nhóm theo ngách video' },
-    { icon: ICONS.home, label: 'Avatar local', value: kenh.filter(k => k.avatar).length, sub: 'thumb đã tải local' },
-    { icon: ICONS.link, label: 'Đang hiển thị', value: SC.pad2(list.length), live: true, sub: list.length === kenhLive.length ? 'Hiện tất cả kênh sống' : 'Đang lọc' }
+  ${pageBanner('Kênh mẫu / Đối thủ', `${list.length}/${kenh.length} kênh · trực quan hoá kênh sống & case study DIE`, [
+    { icon: ICONS.channel, label: 'Tổng kênh mẫu', value: kenh.length, sub: `${kenhLive.length} sống · ${kenhDead.length} đã dừng/die` },
+    { icon: ICONS.channel, label: 'Kênh đang sống', value: kenhLive.length + ' live', sub: 'có video công khai' },
+    { icon: ICONS.doc, label: 'Case study DIE', value: kenhDead.length + ' kênh', sub: '404 / bản quyền / gỡ' },
+    { icon: ICONS.link, label: 'Đang hiển thị', value: SC.pad2(list.length), live: true, sub: !statusFilter ? 'Hiện tất cả (' + kenh.length + ' kênh)' : (statusFilter === 'live' ? 'Chỉ kênh sống (' + kenhLive.length + ')' : 'Chỉ kênh DIE (' + kenhDead.length + ')') }
   ])}
   <div class="card p-4 sm:p-5 mb-6">
 <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
   <label class="sr-only" for="fq">Tìm kênh</label>
-  <input id="fq" value="${esc(state.kenhQ)}" placeholder="Tìm theo handle, tên kênh, ngách, thị trường..." class="search-input-premium w-full sm:flex-1 min-w-0" aria-label="Tìm kênh">
+  <input id="fq" value="${esc(state.kenhQ)}" placeholder="Tìm theo handle, tên kênh, ngách, thị trường, die, 404..." class="search-input-premium w-full sm:flex-1 min-w-0" aria-label="Tìm kênh">
   <button type="button" id="freset-kenh" class="shrink-0 bg-surface-2 hover:bg-surface border border-border px-4 py-2.5 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Reset</button>
 </div>
-<div class="mt-4 pt-3 border-t border-hairline">
+<div class="mt-4 pt-3 border-t border-hairline flex flex-wrap items-center gap-2">
+  <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mr-1">Tình trạng sống:</div>
+  <button type="button" data-kenh-status="" class="filter-btn ${!statusFilter ? 'active' : ''}">Tất cả · ${kenh.length}</button>
+  <button type="button" data-kenh-status="live" class="filter-btn ${statusFilter === 'live' ? 'active' : ''}">
+    <span class="inline-flex items-center gap-1.5"><span class="kenh-dot-live"></span>Đang sống · ${kenhLive.length}</span>
+  </button>
+  <button type="button" data-kenh-status="dead" class="filter-btn ${statusFilter === 'dead' ? 'active' : ''}">
+    <span class="inline-flex items-center gap-1.5"><span class="kenh-dot-dead"></span>Đã dừng / DIE · ${kenhDead.length}</span>
+  </button>
+</div>
+<div class="mt-3.5 pt-3 border-t border-hairline">
   <div class="text-2xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Ngách đối thủ</div>
   <div class="flex flex-wrap gap-2">
-    <button type="button" data-kenh-niche="" class="filter-btn ${!state.kenhNiche ? 'active' : ''}">Mọi ngách · ${kenhLive.length}</button>
+    <button type="button" data-kenh-niche="" class="filter-btn ${!state.kenhNiche ? 'active' : ''}">Mọi ngách · ${baseForNiche.length}</button>
     ${chips.map(([id, label, n]) => `<button type="button" data-kenh-niche="${esc(id)}" class="filter-btn ${state.kenhNiche === id ? 'active' : ''}">${esc(label)} · ${n}</button>`).join('')}
   </div>
 </div>
@@ -1829,12 +1849,30 @@ ${grouped.map(g => {
       ${vKey ? `<button type="button" data-open-niche="${esc(vKey)}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">Xem video ngách →</button>` : ''}
     </div>
     <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3 min-w-0">
-      ${g.items.map(ch => `
-        <a href="${esc(ch.url)}" target="_blank" rel="noopener noreferrer" class="card p-3 flex items-center gap-3 min-w-0 overflow-hidden hover:border-brand-500">
+      ${g.items.map(ch => ch.dead ? `
+        <a href="${esc(ch.url)}" target="_blank" rel="noopener noreferrer" class="card p-3 flex items-center gap-3 min-w-0 overflow-hidden kenh-card-dead" title="${esc(ch.deadNote || 'Kênh đã dừng hoặc bị YouTube gỡ')}">
+          <div class="relative shrink-0">
+            ${avatarHtml(ch)}
+            <span class="kenh-dead-stamp">DIE</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center justify-between gap-1.5">
+              <div class="text-sm font-semibold truncate kenh-dead-title">${esc(ch.handle)}</div>
+              <span class="badge badge-red font-bold text-2xs uppercase tracking-wider shrink-0">DIE · 404</span>
+            </div>
+            <div class="text-2xs kenh-dead-note font-medium truncate mt-0.5" title="${esc(ch.deadNote || '')}">${esc(ch.deadNote || 'Đã dừng / 404')}</div>
+            <div class="text-2xs text-gray-500 truncate mt-0.5">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV (dẫn chứng)</div>
+          </div>
+          <span class="text-gray-500 shrink-0 text-sm inline-flex" title="Mở link YouTube kiểm tra">${ico('arrow-up-right', 14)}</span>
+        </a>` : `
+        <a href="${esc(ch.url)}" target="_blank" rel="noopener noreferrer" class="card p-3 flex items-center gap-3 min-w-0 overflow-hidden hover:border-brand-500 transition-all">
           ${avatarHtml(ch)}
           <div class="min-w-0 flex-1">
-            <div class="text-sm font-semibold text-white truncate">${esc(ch.handle)}</div>
-            <div class="text-2xs text-gray-400 truncate">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV</div>
+            <div class="flex items-center justify-between gap-1.5">
+              <div class="text-sm font-semibold text-white truncate">${esc(ch.handle)}</div>
+              <span class="badge badge-green text-2xs shrink-0">SỐNG</span>
+            </div>
+            <div class="text-2xs text-gray-400 truncate mt-0.5">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV</div>
             ${(ch.markets && ch.markets.length) ? `<div class="text-2xs text-gray-500 truncate mt-0.5">${ch.markets.map(m => esc(stripDecorEmoji(m))).join(' · ')}</div>` : ''}
             ${ch.voiceDna ? `<div class="text-2xs text-sky-400 font-medium truncate mt-0.5" title="Phôi giọng 45s đo tự động (STT 29/09)">${esc(ch.voiceDna.flag)} ${esc(ch.voiceDna.code)}${ch.voiceDna.wpm ? ` · ${ch.voiceDna.wpm}${ch.voiceDna.wpmNote ? ' cpm' : ' WPM'}` : ''} · có phôi giọng</div>` : ''}
           </div>

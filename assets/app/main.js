@@ -600,11 +600,12 @@
       document.querySelectorAll('[data-reup-niche]').forEach(btn => { btn.onclick = () => { state.reupNiche = btn.getAttribute('data-reup-niche') || ''; render(); }; });
       const rr = document.getElementById('freset-reup');
       if (rr) { rr.onclick = () => { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; render(); }; }
+      document.querySelectorAll('[data-kenh-status]').forEach(btn => { btn.onclick = () => { state.kenhStatus = btn.getAttribute('data-kenh-status') || ''; state.kenhPage = 1; render(); }; });
       document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; state.kenhPage = 1; render(); }; });
       const rk = document.getElementById('freset-kenh');
-      if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; state.kenhPage = 1; render(); }; }
+      if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; render(); }; }
       const rke = document.getElementById('freset-kenh-empty');
-      if (rke) { rke.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; state.kenhPage = 1; render(); }; }
+      if (rke) { rke.onclick = () => { state.kenhQ = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; render(); }; }
       document.querySelectorAll('[data-raw-group]').forEach(btn => { btn.onclick = () => { const g = btn.getAttribute('data-raw-group') || ''; state.rawGroup = (state.rawGroup === g) ? '' : g; state.rawNiche = ''; state.rawPage = 1; render(); }; });
       document.querySelectorAll('[data-raw-niche]').forEach(btn => {
         btn.onclick = () => {

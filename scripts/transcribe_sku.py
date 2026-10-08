@@ -83,6 +83,26 @@ def is_compressed(text: str) -> bool:
     return short >= 0.75 and novowel >= 0.40
 
 
+def _env_groq_keys() -> list:
+    """GROQ_API_KEY tu bien moi truong hoac file .env (khong in gia tri)."""
+    keys = []
+    v = os.environ.get("GROQ_API_KEY", "").strip()
+    if v:
+        keys.append(v)
+    for env_path in (PROJECT_DIR / ".env", LINLY_DIR / ".env"):
+        try:
+            for line in env_path.read_text(encoding="utf-8", errors="ignore").splitlines():
+                m = line.strip()
+                if m.startswith("GROQ_API_KEY=") or m.startswith("GROQ_API_KEYS="):
+                    for k in m.split("=", 1)[1].strip().strip('"').strip("'").split(","):
+                        k = k.strip()
+                        if k and k not in keys:
+                            keys.append(k)
+        except OSError:
+            pass
+    return keys
+
+
 class GroqKeyManager:
     def __init__(self, config_path: Path):
         self.lock = threading.Lock()
@@ -99,6 +119,11 @@ class GroqKeyManager:
                     raw_keys = [k["key"] for k in cfg.get("groq_api_keys", []) if k.get("key")]
             except Exception as e:
                 print(f"[Cảnh báo] Không thể đọc {config_path}: {e}")
+
+        # Fallback: GROQ_API_KEY tu env / .env (H2DEV-Project, Linly-Dubbing)
+        for k in _env_groq_keys():
+            if k not in raw_keys:
+                raw_keys.append(k)
 
         for k in raw_keys:
             if self._test_key(k):
@@ -199,18 +224,26 @@ def extract_audio_chunk(video_file: Path, start_sec: float, dur_sec: float, outp
         return False
 
 
-def call_groq_whisper(key_mgr: GroqKeyManager, audio_path: Path, max_retries: int = 10) -> dict:
+def call_groq_whisper(key_mgr: GroqKeyManager, audio_path: Path, max_retries: int = 10,
+                      language="vi", prompt=None, model: str = "whisper-large-v3") -> dict:
+    """language=None -> Groq tu detect ngon ngu. prompt=None + language='vi' -> VI_PROMPT (hanh vi cu)."""
+    if prompt is None and language == "vi":
+        prompt = VI_PROMPT
     boundary = "----WebKitFormBoundaryGroqWhisperSingle"
     with open(audio_path, "rb") as f:
         audio_data = f.read()
 
     filename = audio_path.name
     parts = [
-        f'--{boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\nwhisper-large-v3\r\n'.encode("utf-8"),
+        f'--{boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\n{model}\r\n'.encode("utf-8"),
         f'--{boundary}\r\nContent-Disposition: form-data; name="response_format"\r\n\r\nverbose_json\r\n'.encode("utf-8"),
-        f'--{boundary}\r\nContent-Disposition: form-data; name="language"\r\n\r\nvi\r\n'.encode("utf-8"),
-        f'--{boundary}\r\nContent-Disposition: form-data; name="temperature"\r\n\r\n0\r\n'.encode("utf-8"),
-        f'--{boundary}\r\nContent-Disposition: form-data; name="prompt"\r\n\r\n{VI_PROMPT}\r\n'.encode("utf-8"),
+    ]
+    if language:
+        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="language"\r\n\r\n{language}\r\n'.encode("utf-8"))
+    parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="temperature"\r\n\r\n0\r\n'.encode("utf-8"))
+    if prompt:
+        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="prompt"\r\n\r\n{prompt}\r\n'.encode("utf-8"))
+    parts += [
         f'--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="{filename}"\r\nContent-Type: audio/mpeg\r\n\r\n'.encode("utf-8"),
         audio_data,
         f'\r\n--{boundary}--\r\n'.encode("utf-8")

@@ -1777,3 +1777,49 @@ button.niche-row:focus-visible,
    Do @1280 truoc: #panel-root 96 -> 111 (CLS 0.0083, 4/4 lan). Mobile <=640 da co chieu cao co dinh 98px rieng. */
 @media (min-width: 1025px) { .vd-topbar.has-subnav { min-height: calc(48px + var(--h2-space-4) + 40px + 6px + 1px); } }
 @media (min-width: 641px) and (max-width: 1024px) { .vd-topbar.has-subnav { min-height: calc(48px + var(--h2-space-4) + var(--h2-touch-min) + 6px + 1px); } }
+
+/* 2026-10-09: Truc quan hoa kenh DIE / 404 trong tab Kenh mau */
+.kenh-card-dead {
+  border: 1px dashed rgba(239, 68, 68, 0.35) !important;
+  background-color: var(--surface-2) !important;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+.kenh-card-dead:hover {
+  opacity: 1;
+  border-color: rgba(239, 68, 68, 0.7) !important;
+}
+.kenh-dead-title {
+  text-decoration: line-through;
+  color: var(--fg-muted) !important;
+}
+.kenh-dead-stamp {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #dc2626;
+  color: #ffffff;
+}
+.kenh-dead-note {
+  color: #f87171;
+}
+.kenh-dot-live {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #34d399;
+  display: inline-block;
+}
+.kenh-dot-dead {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #f43f5e;
+  display: inline-block;
+}

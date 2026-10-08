@@ -250,7 +250,7 @@ const khNote = [
   '- Index: `knowledge-hub/notebooks-index.md`',
   '- Thả batch mới vào `knowledge-hub/batches/`',
   '',
-  'Không giữ bản thứ hai ở gốc Y:\\YTB.',
+  'Không giữ bản thứ hai ở gốc D:\\YTB.',
   '',
 ].join('\n');
 fs.writeFileSync(path.join(H2, 'docs', 'NOI-BO', 'knowledge-hub-POINTER.md'), khNote, 'utf8');

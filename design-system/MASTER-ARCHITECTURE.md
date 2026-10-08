@@ -203,7 +203,8 @@ video/ (140 SKU) ──> transcribe_*.py ──> transcript.json
 | `data-tabs/tai-lieu-full.json` | 3 | TB | `sync-ngoai-vao-h2dev.js` |
 | `data/video_insights.json` | 2 | TB | `ai_video_deep_analyzer.js` |
 | Các file còn lại | 1 | OK | (giữ nguyên) |
-| `kich-ban.json`, `video_acceptance.json`, `outlier-channels-2026.json`, `phan-he-status.json`, `media-review-queue.json`, `h2dev-current-root.json`, `h2dev-raw.json`, `all_129_*.json`, `raw-channels-audit-report.json` | 0 | OK (thủ công) | — |
+| `kich-ban.json`, `video_acceptance.json`, `outlier-channels-2026.json`, `phan-he-status.json`, `media-review-queue.json`, `raw-channels-audit-report.json` | 0 | OK (thủ công) | — |
+| ~~`h2dev-current-root.json`~~, ~~`h2dev-raw.json`~~, ~~`all_129_videos_complete_manifest.json`~~ | — | ĐÃ XÓA 2026-10-08 (không còn trên đĩa, không code nào đọc) | — |
 
 ### 3.3. Mô hình ghi "read-modify-write" — CẢNH BÁO
 
@@ -350,7 +351,7 @@ learn.js       ──> H2Core (độc lập, ES5)
 | 6 | 4 `alert()` blocking | UX | 🟢 Thấp |
 | 7 | 154 `var` (2 file legacy) | learn.js 100, h2dev-core 38 | 🟢 Thấp |
 | 8 | Tab `/nhac` dùng lại `renderKichBan` | 2 route 1 nội dung | 🟠 TB |
-| 9 | Artifact stale `all_129_*.json` | 129 ≠ 140 | 🟢 Thấp |
+| 9 | ~~Artifact stale `all_129_*.json`~~ → **ĐÃ XÓA (2026-10-08)** | 129 ≠ 140. Đã xóa 3 file stale `all_129_videos_complete_manifest.json`, `h2dev-current-root.json`, `h2dev-raw.json` ngày 2026-10-08 (log `D:\YTB\_backup\fix-20261007\cleanup-20261008.txt`); dọn tham chiếu ngày 2026-10-09. | ✅ Đã xử lý |
 | 10 | `learn.js` + `h2dev-core.js` ES5 | 0 backtick, 100% `function` | 🟢 Thấp |
 | 11 | ~~**`h2dev-core.js` chỉ load ở `learn.html`**~~ → **ĐÃ SỬA (N11)** | `index.html` + `player.html` nay nạp `h2dev-core.js` TRƯỚC mọi module; `H2UICore`/`player-main.js` uỷ quyền cho `window.H2Core` (giữ fallback) | ✅ Đã xử lý |
 | 12 | `h2dev-icons.css` phải load sau primitives | 3/3 trang đã đúng | ✅ Đã xử lý |

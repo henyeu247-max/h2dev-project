@@ -35,7 +35,7 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
   + 157 tài liệu học liệu & master prompts (78 Prompts, 20 Reports, 23 Tools, 16 Lists, 11 Khác, 5 SOPs).
   + 34 ngách YouTube khảo sát (xanh:true 11 ngách đếm boolean strict is True).
   + 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng).
-  + Master SQLite WAL Database: 2.003 entries FTS5 trong `h2dev_master.db` và 52 channels / 410 edges trong `intelligence.db`.
+  + Master SQLite WAL Database: 2.014 entries FTS5 trong `h2dev_master.db` và 202 channels / 2.557 videos / 1.385 edges (178 breakout) trong `intelligence.db` (đo 2026-10-09).
 
 ---
 

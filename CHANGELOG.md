@@ -1,4 +1,20 @@
-﻿## 2026-09-30 (đợt 15) — CẬP NHẬT TẦNG 4 `WORKING_STATE.md` + GATE PHỦ FILE NÀY + ĐÍNH CHÍNH ĐỢT 14
+﻿## 2026-10-09 (đợt 3) — ĐỒNG BỘ SỐ LIỆU `intelligence.db` SAU LẦN CRAWL 01:57:28
+
+- **`data/intelligence.db` nhận 1 lần crawl lúc 01:57:28 (UTC+7), user chọn giữ dữ liệu:** do một lệnh GET `/api/intelligence/spider` trong lúc audit UI (route này chạy `scripts/spider_graph_engine.js` và GHI DB). Dấu thời gian 01:57:28: 15 channels + 216 videos được ghi/cập nhật (upsert), 51 cowatch edges thêm mới. Tổng sau crawl: channels 196 → **202** (+6), videos 2.436 → **2.557** (+121), cowatch_edges 1.334 → **1.385** (+51), `is_breakout = 1` 171 → **178**; `integrity_check` ok, `foreign_key_check` 0 dòng. Docs đã đồng bộ: `knowledge-hub/docs/H2DEV-MASTER-OPERATING-PROMPT.md` L38 (52 channels / 410 edges → số đo mới; FTS5 2.003 → 2.014). Chưa có gate tự động cho số đếm `intelligence.db` (`sync-counts.js` chỉ kiểm `h2dev_master.db`).
+
+## 2026-10-09 (đợt 2) — BỎ 2 NGÁCH MỒ CÔI KHI BUILD DB + GATE ĐẾM DB TRONG `sync-counts.js` + `totalBreakouts`
+
+- **`scripts/build_master_db.js`:** record `raw-kenh-mau.json` có `duplicateOf` KHÔNG tạo ngách auto mới nữa — dùng `niche_id` của record gốc (row kênh vốn đã upsert vào record gốc vì `ON CONFLICT` không cập nhật `niche_id`). Rebuild: `niches` **151 → 149**, bỏ 2 ngách mồ côi (sinh từ RAW-106/107 → RAW-054 và RAW-127 → RAW-089); 0 ngách auto không được tham chiếu; `lessons` 140 · `competitor_channels` 296 · `competitor_top_videos` 1421 · `search_fts` 2014 không đổi; 8/8 self-check PASS; `integrity_check` ok. Thêm biến môi trường tuỳ chọn `H2DEV_MASTER_DB_PATH` để build ra file tạm (không đặt → giữ `data/h2dev_master.db`).
+- **`data-tabs/raw-kenh-mau.json` — status giữ nguyên `VERIFIED_UNIQUE` (có chủ đích):** đổi status 7 record trùng sẽ làm lệch KPI "Kiểm định AI" (`assets/app/tabs/content.js:1558` đếm `VERIFIED_UNIQUE`) và bị `scripts/update-raw-records.py:460` ghi đè lại. Trạng thái trùng đã có ở `channelLifecycle.state = "DUPLICATE"`.
+- **`scripts/sync-counts.js --check`:** thêm kiểm tra số đếm DB `data/h2dev_master.db` (CHỈ-ĐỌC qua `node:sqlite` readOnly) so với `docs/WORKING_STATE.md` L37-39; lệch hoặc mất neo → exit 1; `--check` vẫn không ghi file. `WORKING_STATE.md` cập nhật `niches` → **149** qua chế độ ghi của script (`--docs-only`).
+- **`server.js` `/api/intelligence/breakouts`:** thêm trường `totalBreakouts` (= `COUNT(*) WHERE is_breakout = 1`, hiện **171**); danh sách vẫn tối đa 30, `total` giữ nghĩa cũ (số phần tử trả về).
+
+## 2026-10-09 — ĐÍNH CHÍNH SỐ LIỆU 1419→1421 + DỌN THAM CHIẾU 3 JSON ĐÃ XÓA
+
+- **Đính chính (không sửa log lịch sử):** mục `2026-09-17 — Toàn Diện 156 Kênh Raw` (ý "Tái nạp Master Database") ghi **1419** top videos. Đo lại 2026-10-08: `SELECT COUNT(*) FROM competitor_top_videos` = **1421** (khớp `docs/WORKING_STATE.md`). Dòng cũ giữ nguyên như bản ghi lịch sử.
+- **Dọn tham chiếu 3 JSON đã xóa 2026-10-08** (`data/h2dev-raw.json`, `data/h2dev-current-root.json`, `data/all_129_videos_complete_manifest.json`): `data/modules.json` trường `source` bỏ tên file raw; `design-system/MASTER-ARCHITECTURE.md` tách 3 file sang dòng "ĐÃ XÓA 2026-10-08". Không code nào (.js/.py/.html/.cmd/.ps1) đọc 3 file này.
+
+## 2026-09-30 (đợt 15) — CẬP NHẬT TẦNG 4 `WORKING_STATE.md` + GATE PHỦ FILE NÀY + ĐÍNH CHÍNH ĐỢT 14
 
 - **Gap thật phát hiện:** `docs/WORKING_STATE.md` (Live State, file agent đọc đầu phiên) còn số 24/09: `152 live · 13 dead` (thật 126/39), `f59aa7` "hỏng audio 67,5%" (đã phục hồi), "4 pipeline". `sync-counts.js --check` vẫn xanh vì **không có rule nào phủ file này** (tái phạm SCAR-008/012).
 - **Vá:** thêm 4 rule `docs/WORKING_STATE.md` vào `DOC_RULES` (kênh live/dead, tổng bài, tài liệu, ngách). **PROBE:** trước khi sửa file → `--check` exit 1 báo đúng `docs/WORKING_STATE.md`; sau `sync-counts.js` → OK.

@@ -155,6 +155,77 @@ const DOC_RULES = [
     build: c => `$1${c.niches}$2${c.nichesGreenTrue}$3` },
 ];
 
+// ---- DB COUNT GATE (2026-10-09) ----
+// data/h2dev_master.db la projection dan xuat tu JSON (scripts/build_master_db.js). Truoc day gate
+// KHONG doc DB -> so bang DB ghi o docs/WORKING_STATE.md (L37-39) troi ma --check van xanh.
+// Doc DB CHI-DOC (node:sqlite readOnly). Thieu DB hoac node:sqlite -> bo qua (bao ro), khong fail.
+// Neo khong con khop -> FAIL (tranh rule im lang khong kiem gi).
+const DB_PATH = path.join(ROOT, 'data', 'h2dev_master.db');
+const DB_TABLES = ['lessons', 'lesson_timestamps', 'competitor_channels', 'competitor_top_videos',
+  'documents', 'reup_sources', 'niches', 'search_fts'];
+
+function readDbCounts(dbPath = DB_PATH) {
+  if (!fs.existsSync(dbPath)) return { skipped: `khong thay ${path.relative(ROOT, dbPath)}` };
+  let DatabaseSync;
+  // An rieng canh bao ExperimentalWarning cua node:sqlite (khong anh huong canh bao khac).
+  const origEmit = process.emitWarning;
+  process.emitWarning = function (w, ...rest) {
+    if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+    return origEmit.call(process, w, ...rest);
+  };
+  try { ({ DatabaseSync } = require('node:sqlite')); } catch (_) { return { skipped: 'node:sqlite khong kha dung' }; }
+  finally { process.emitWarning = origEmit; }
+  const db = new DatabaseSync(dbPath, { readOnly: true });
+  try {
+    const counts = {};
+    for (const t of DB_TABLES) counts[t] = db.prepare(`SELECT COUNT(*) AS c FROM ${t}`).get().c;
+    return { counts };
+  } finally {
+    db.close();
+  }
+}
+
+// Dinh dang so kieu VN cho dong "2.014 entries" (dau cham ngan cach hang nghin).
+const viNum = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+const DB_DOC_RULES = [
+  { file: 'docs/WORKING_STATE.md', label: 'FTS5 entries (dong Master SQLite Database)',
+    pattern: /(\*\*Master SQLite Database:\*\* \*\*)[\d.]+( entries\*\* FTS5)/g,
+    build: d => `$1${viNum(d.search_fts)}$2` },
+  { file: 'docs/WORKING_STATE.md', label: 'search_fts (dong nguon do truc tiep)',
+    pattern: /(`SELECT COUNT\(\*\) FROM search_fts`[^\n]*?= \*\*)\d+(\*\*)/g,
+    build: d => `$1${d.search_fts}$2` },
+  { file: 'docs/WORKING_STATE.md', label: 'bang kem theo (lessons..niches)',
+    pattern: /(Bảng kèm theo: `lessons` )\d+( · `lesson_timestamps` )\d+( · `competitor_channels` )\d+( · `competitor_top_videos` )\d+( · `documents` )\d+( · `reup_sources` )\d+( · `niches` )\d+/g,
+    build: d => `$1${d.lessons}$2${d.lesson_timestamps}$3${d.competitor_channels}$4${d.competitor_top_videos}$5${d.documents}$6${d.reup_sources}$7${d.niches}` },
+];
+
+// opts.docPath: ghi de duong dan doc (dung de test tren ban sao tam, KHONG dung file live).
+function applyDbRules({ write, dbPath = DB_PATH, docPath = null } = {}) {
+  const res = readDbCounts(dbPath);
+  if (res.skipped) return { skipped: res.skipped, changes: [], missing: [] };
+  const changes = [];
+  const missing = [];
+  const contents = new Map();
+  for (const rule of DB_DOC_RULES) {
+    const full = docPath || path.join(ROOT, rule.file);
+    if (!fs.existsSync(full)) { missing.push(`${rule.file}: khong ton tai`); continue; }
+    if (!contents.has(full)) contents.set(full, { orig: fs.readFileSync(full, 'utf8') });
+    const entry = contents.get(full);
+    const before = entry.cur !== undefined ? entry.cur : entry.orig;
+    if (!before.match(rule.pattern)) { missing.push(`${rule.file}: ${rule.label} (khong tim thay neo)`); entry.cur = before; continue; }
+    const after = before.replace(rule.pattern, rule.build(res.counts));
+    if (after !== before) changes.push({ file: rule.file, label: rule.label });
+    entry.cur = after;
+  }
+  if (write) {
+    for (const [full, entry] of contents) {
+      if (entry.cur !== undefined && entry.cur !== entry.orig) fs.writeFileSync(full, entry.cur, 'utf8');
+    }
+  }
+  return { counts: res.counts, changes, missing };
+}
+
 function applyDocRules(counts, { write }) {
   const results = [];
   for (const rule of DOC_RULES) {
@@ -242,6 +313,7 @@ function main() {
   const drift = prev ? diffCounts(live, prev) : [];
   const docChanges = applyDocRules(live.counts, { write: !check });
   const memChanges = applyMemorySync(live.counts, { write: !check });
+  const dbRes = applyDbRules({ write: !check });
 
   if (check) {
     let bad = false;
@@ -261,6 +333,23 @@ function main() {
       console.log('[counts] MEMORY lech (can cap nhat):');
       memChanges.forEach(d => console.log(`  - ${d.file}`));
     }
+    if (dbRes.skipped) {
+      console.log(`[counts] DB: bo qua kiem tra (${dbRes.skipped}).`);
+    } else {
+      if (dbRes.missing.length) {
+        bad = true;
+        console.log('[counts] DB: neo doc khong khop (rule khong kiem duoc):');
+        dbRes.missing.forEach(m => console.log(`  - ${m}`));
+      }
+      if (dbRes.changes.length) {
+        bad = true;
+        console.log('[counts] DB lech voi docs (h2dev_master.db that):', JSON.stringify(dbRes.counts));
+        dbRes.changes.forEach(d => console.log(`  - ${d.file}: ${d.label}`));
+      }
+      if (!dbRes.missing.length && !dbRes.changes.length) {
+        console.log('[counts] DB OK — h2dev_master.db khop docs:', JSON.stringify(dbRes.counts));
+      }
+    }
     if (bad) { process.exitCode = 1; return; }
     console.log('[counts] OK — data live, manifest, docs, memory dong bo 100%.');
     return;
@@ -279,9 +368,22 @@ function main() {
   if (memChanges.length) {
     console.log(`[counts] Da cap nhat memory: ${memChanges.map(d => d.file).join(', ')}`);
   }
+  if (dbRes.skipped) {
+    console.log(`[counts] DB: bo qua (${dbRes.skipped}).`);
+  } else {
+    if (dbRes.changes.length) {
+      console.log(`[counts] Da cap nhat so DB trong docs (${dbRes.changes.length} vi tri):`, JSON.stringify(dbRes.counts));
+      dbRes.changes.forEach(d => console.log(`  - ${d.file}: ${d.label}`));
+    }
+    if (dbRes.missing.length) {
+      console.log('[counts] CANH BAO DB: neo doc khong khop:');
+      dbRes.missing.forEach(m => console.log(`  - ${m}`));
+      process.exitCode = 1;
+    }
+  }
   console.log('[counts] So lieu chuan:', JSON.stringify(live.counts));
 }
 
 if (require.main === module) main();
 
-module.exports = { DOC_RULES, applyDocRules, applyMemorySync, diffCounts, MANIFEST_PATH };
+module.exports = { DOC_RULES, DB_DOC_RULES, applyDocRules, applyDbRules, readDbCounts, applyMemorySync, diffCounts, MANIFEST_PATH, DB_PATH };

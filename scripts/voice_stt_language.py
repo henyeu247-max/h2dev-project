@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Voice DNA Bo 11 muc 4: detect ngon ngu that + WPM tu 257 file audio.
-- faster-whisper tiny (CPU int8) — detect language + transcribe.
+- Groq Whisper API (whisper-large-v3-turbo, GROQ_API_KEY / Linly groq_config.json) -- truoc day: faster-whisper tiny (CPU int8) — detect language + transcribe.
 - WPM: Latin = words/min; CJK (ja/zh) = chars/min (ghi chu trong report).
 - Ghi report SAU MOI record (scar 29/09: batch crash mat json).
 Xuat: data/voice-stt-report.json
@@ -14,7 +14,21 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "voice-stt-report.json"
 
-from faster_whisper import WhisperModel
+sys.path.insert(0, str(ROOT / "scripts"))
+from transcribe_sku import GroqKeyManager, GROQ_CONFIG_PATH, call_groq_whisper  # noqa: E402
+
+GROQ_MODEL = "whisper-large-v3-turbo"
+# Groq verbose_json tra 'language' dang ten day du -> iso639-1
+LANG_NAME_TO_ISO = {
+    "english": "en", "japanese": "ja", "korean": "ko", "vietnamese": "vi", "russian": "ru",
+    "spanish": "es", "hindi": "hi", "indonesian": "id", "portuguese": "pt", "french": "fr",
+    "german": "de", "arabic": "ar", "thai": "th", "chinese": "zh", "tagalog": "tl",
+    "italian": "it", "turkish": "tr", "polish": "pl", "ukrainian": "uk", "bengali": "bn", "tamil": "ta",
+}
+
+def _iso(lang):
+    lang = (lang or "").strip().lower()
+    return lang if len(lang) <= 3 else LANG_NAME_TO_ISO.get(lang, lang)
 
 # lang whisper (iso639-1) -> locale mac dinh theo convention DB + flag
 LOCALE_MAP = {
@@ -27,6 +41,7 @@ LOCALE_MAP = {
     "uk": ("uk-UA", "🇺🇦"), "bn": ("bn-BD", "🇧🇩"), "ta": ("ta-IN", "🇱🇰"),
 }
 CJK = {"ja", "zh"}
+MIN_WORDS = 20  # duoi nguong nay = nhac/hat/it loi -> khong tin ngon ngu & wpm
 
 def main():
     sys.path.insert(0, str(ROOT / "scripts"))
@@ -40,10 +55,10 @@ def main():
     db.close()
     print(f"KENH: {len(rows)} sample", flush=True)
 
-    model = WhisperModel("tiny", device="cpu", compute_type="int8")
+    key_mgr = GroqKeyManager(GROQ_CONFIG_PATH)
 
     # Load report cu (resume neu crash giua chung)
-    report = {"date": "2026-09-29", "model": "faster-whisper tiny int8 CPU",
+    report = {"date": "2026-09-29", "model": "groq " + GROQ_MODEL,
               "note": "WPM: Latin = words/min, CJK = chars/min", "results": []}
     if OUT.exists():
         try:
@@ -66,9 +81,18 @@ def main():
             continue
         try:
             t0 = time.time()
-            segments, info = model.transcribe(str(mp3), vad_filter=True, beam_size=1)
-            lang = info.language
-            langProb = round(float(info.language_probability), 3)
+            resp = call_groq_whisper(key_mgr, mp3, language=None, prompt=None, model=GROQ_MODEL)
+            lang = _iso(resp.get("language"))
+            segments = resp.get("segments") or []
+            # Groq khong tra language_probability -> proxy = 1 - no_speech_prob trung binh (theo thoi luong)
+            tot = sum(max(0.0, float(sg.get("end", 0)) - float(sg.get("start", 0))) for sg in segments) or 0.0
+            if tot > 0:
+                nsp = sum(float(sg.get("no_speech_prob", 0)) * max(0.0, float(sg.get("end", 0)) - float(sg.get("start", 0))) for sg in segments) / tot
+                langProb = round(1.0 - nsp, 3)
+            else:
+                langProb = 0.0
+            noSpeechProb = round(1.0 - langProb, 3)
+            segments = [type("Seg", (), {"text": sg.get("text", "")})() for sg in segments]
             words = 0
             textSample = ""
             for seg in segments:
@@ -76,13 +100,17 @@ def main():
                 words += len(t.split()) if lang not in CJK else len([c for c in t if not c.isspace()])
                 if not textSample and t:
                     textSample = t[:80]
-            durationSec = 45.0
+            durationSec = float(resp.get("duration") or 45.0)  # thoi luong that tu Groq; mac dinh 45s
             wpm = int(round(words / (durationSec / 60.0)))
             locale, flag = LOCALE_MAP.get(lang, (lang + "-XX", "🌐"))
             rec.update({
                 "status": "ok", "lang": lang, "langProb": langProb,
                 "locale": locale, "flag": flag, "wordCount": words, "wpm": wpm,
                 "textSample": textSample, "elapsedSec": round(time.time() - t0, 1),
+                "noSpeechProb": noSpeechProb,
+                # RULE (2026-10-07): reliable = du loi noi that (>= MIN_WORDS tu/ky tu) va no_speech thap (<= 0.3).
+                # Groq khong tra language_probability nen langProb (=1-no_speech) gan nhu luon ~1.0 -> khong du de loc nhac.
+                "reliable": bool(words >= MIN_WORDS and noSpeechProb <= 0.3),
                 "changed": (cur_code == "ALL" or cur_code != locale),
             })
         except Exception as e:

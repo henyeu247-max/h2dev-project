@@ -36,7 +36,7 @@
   → nguồn: rule workspace SSoT + `data/music_catalog.json`. *(Số cũ ghi 38 là SAI — đã sửa 2026-09-24.)*
 - **Master SQLite Database:** **2.014 entries** FTS5 trong `h2dev_master.db`.
   → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **2014**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
-  Bảng kèm theo: `lessons` 140 · `lesson_timestamps` 718 · `competitor_channels` 296 · `competitor_top_videos` 1421 · `documents` 157 · `reup_sources` 27 · `niches` 151.
+  Bảng kèm theo: `lessons` 140 · `lesson_timestamps` 718 · `competitor_channels` 296 · `competitor_top_videos` 1421 · `documents` 157 · `reup_sources` 27 · `niches` 149.
 
 ### 1.1. NHẬT KÝ HIỆU CHỈNH SỐ LIỆU (2026-09-24)
 

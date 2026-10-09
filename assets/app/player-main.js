@@ -448,7 +448,7 @@ window.addEventListener('keydown', (e)=>{
         const isDead = Boolean(deadInfo);
         return `<div class="inline-flex items-center gap-1.5 bg-surface-card border ${isDead ? 'border-red-500/40 bg-red-950/20' : 'border-ink-600'} p-1.5 rounded-xl text-xs" title="${isDead ? esc(deadInfo.deadNote || 'Kênh đã dừng hoặc bị YouTube gỡ') : ''}">
           <a href="https://www.youtube.com/@${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors ${isDead ? 'text-gray-400 line-through' : ''}"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}${isDead ? '<span class="channel-chip-dead-badge">DIE</span>' : ''}↗</a>
-          <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-2xs font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}"><span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span> Copy</button>
+          <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-xs font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}"><span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span> Copy</button>
         </div>`;
       }).join('');
     }
@@ -462,7 +462,7 @@ window.addEventListener('keydown', (e)=>{
         const isReadable = d.file && /\.(md|txt)$/i.test(d.file);
         const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(d.file)}" data-doc-name="${esc(name)}">${ico('eye', 14)}<span>Đọc trực tiếp</span></button>` : '';
         const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1">${ico('file-text', 14)}<span>Mở file local</span></a>`:'';
-        return `<article class="card p-4 sm:p-5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-2xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
+        return `<article class="card p-4 sm:p-5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
       }).join('');
     }
 
@@ -504,7 +504,7 @@ window.addEventListener('keydown', (e)=>{
           badgesEl.innerHTML = [
             badge(esc(stripDecorEmoji(ins.target_market)), marketBadgeClass),
             badge(esc(ins.niche_primary), 'badge-muted'),
-            ...(ins.tools_mentioned || []).map(t => badge(esc(t), 'badge-blue font-mono text-2xs'))
+            ...(ins.tools_mentioned || []).map(t => badge(esc(t), 'badge-blue font-mono text-xs'))
           ].join(' ');
 
           // Takeaways

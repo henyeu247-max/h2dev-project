@@ -67,7 +67,8 @@
      Do loi: icon lech KHOI tam nut. Cach dung: dinh tam icon bang `position:absolute`
      cho chinh the <svg> (mask icon), va ::after chi la lop vo hinh de mo rong vung cham. */
 .row-fav { position: absolute; top: 0; left: 0; width: 32px; height: 32px; padding: 6px; margin: 4px; color: #fff; background: rgba(0,0,0,.7); border: 0; border-radius: 4px; }
-.row-fav > svg, .row-fav > .h2-icon { position: absolute; top: 50%; left: 50%; width: 18px; height: 18px; transform: translate(-50%, -50%); }
+.row-fav > svg { position: absolute; top: 50%; left: 50%; width: 18px; height: 18px; transform: translate(-50%, -50%); }
+.row-fav > .h2-icon { position: absolute; top: 50%; left: 50%; width: 16px; height: 16px; transform: translate(-50%, -50%); }
 .row-fav::after {
   content: "";
   position: absolute;

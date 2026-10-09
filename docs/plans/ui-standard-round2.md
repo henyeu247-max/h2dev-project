@@ -247,3 +247,15 @@ Sandbox không có thiết bị thật. Danh sách kiểm trên điện thoại 
 ## 9. Kết quả và nhận xét (điền khi xong)
 
 *PARTIAL (2026-10-09). Chi tiết: `docs/reports/2026-10-09-ui-standard-round2.md`. Mồ côi 36 → 2 trên 60 tổ hợp; không luật nào khác đổi; mọi gate và `validate-project` mã thoát 0 trên working tree; chưa commit. Còn M4, M5 (BLOCKED), M7, DoD-2 (2 mồ côi) và DoD-3 (vùng chạm dưới 44 px chưa nhóm).*
+
+## 9b. Cập nhật vòng 3 (2026-10-09, sau quyết định của chủ dự án)
+
+- **D-02 "Xem tiếp":** trọn hàng 2 (giữ hiện trạng, không đổi CSS).
+- **D-03 commit:** đợt 2 đã nằm trong `800caa4` (commit của việc khác). Vòng 3 chưa commit, chờ yêu cầu.
+- **D-05 `H2DEV_Service`:** route spider đã đổi sang POST kèm header (đã nằm trong `551be56`) và đã nạp (kiểm bằng POST không header → 403). Đã tạo luật chặn 8899 trên Public và tắt Funnel 8443. ACL tailnet chờ chủ dự án.
+- **D-06 chip:** chia đều chỉ cho hàng có nhãn đi kèm, tối đa 4 chip, từ 641 px. Cụm nhiều chip và điện thoại giữ `auto`. Chờ quyết định.
+- **Thanh nút `/chienluoc` điện thoại:** nút thứ 6 làm thanh tràn khung phụ 48 px; đã giữ một hàng cuộn ngang. Mồ côi 60 tổ hợp: 0.
+- **D-07 nhãn KPI:** `text-wrap: balance`, hết chữ lẻ. Rút ngắn chữ chờ chữ mới.
+- **D-09 "Đi nhanh" điện thoại:** hai cột, nút lẻ cuối chiếm cả hàng (đã áp dụng). Chờ xác nhận.
+- **M7:** ba script chưa theo dõi đã vào `_archive/2026-10-09-audit-scripts/` lúc 08:44 (thư mục bị gitignore). Chủ sở hữu chưa xác định.
+- **Trạng thái:** PARTIAL. Mồ côi 0 trên 60 tổ hợp (DoD-2 đạt). G-2 còn 54 vùng, chờ quyết định D-06 và cách xử lý điện thoại.

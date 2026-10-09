@@ -6,7 +6,7 @@
 
 - **UI-standard đợt 1:** commit `c22844d`, `f21837e`, `c984695` trên `ui/ui-standard-2026-10-09` (chưa push). Báo cáo `docs/reports/2026-10-09-ui-standard-round1.md`.
 - **UI-standard đợt 2:** nằm trong commit `800caa4` (commit của việc khác). Báo cáo `docs/reports/2026-10-09-ui-standard-round2.md`; bài học H2DEV-UI-013 đến 024.
-- **Vòng 3 (đã commit trên nhánh, ngay sau `551be56`):** mồ côi 36 → 0 trên 60 tổ hợp route × cỡ; nút "Đi nhanh" điện thoại 2 cột; hàng có nhãn đến 4 chip chia đều từ 641 px; nhãn KPI cân đối. Phiên bản tài nguyên `uifix69`.
+- **Vòng 3 (đã commit trên nhánh, ngay sau `551be56`):** mồ côi 36 → 0 trên 60 tổ hợp route × cỡ; nút "Đi nhanh" điện thoại 2 cột; hàng có nhãn đến 4 chip chia đều từ 641 px; nhãn KPI cân đối. Phiên bản tài nguyên `uifix71`. Thanh nút `/chienluoc` điện thoại (6 nút) giữ một hàng, cuộn ngang; trước đó hàng đầu bị tiêu đề che.
 - **Route spider:** chỉ nhận POST kèm `X-H2DEV-Action: spider` (`server.js`, đã nằm trong `551be56`); dịch vụ đã nạp (POST không header → 403).
 - **Tường lửa:** luật `H2DEV-8899 chan Public` (Block, TCP 8899, Public) đã tạo. LAN và Tailscale vẫn 200.
 - **Tailscale:** Funnel cổng 8443 đã tắt (cấu hình sao lưu); handler chỉ trong tailnet giữ nguyên.

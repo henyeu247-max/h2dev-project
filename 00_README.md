@@ -44,8 +44,8 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 - **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/` và `ZOOM-00` (tài liệu quy trình, không phải bài học)
 - **300 tài liệu**: prompt 78 · report 20 · tool 23 · list 16 · other 11 · internal-doc 5 (gồm cẩm nang nhạc nền NOI-BO-MUSIC-01)
 - **49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe**: 36 SAFE (YPP) · 9 REVIEW · 4 COPYRIGHTED loại bỏ — quản lý tại `data/music_catalog.json` & cẩm nang `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`
-- **256 kênh mẫu** (188 sống · 68 dead 404 đã ẩn) · `ngay_do` 256/256
-- **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
+- **256 kênh mẫu** (194 sống · 62 dead 404 đã ẩn) · `ngay_do` 256/256
+- **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)
 - 5 pipeline trong `pipelines/` (`hoat-hinh-ai`, `wildlife`, `ton-giao`, `everyday-history`, `bible-explainer`) · Knowledge Hub trong `knowledge-hub/`
 - `docs/` 150 thư mục (140 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 144/144 khớp

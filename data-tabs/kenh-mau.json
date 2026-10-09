@@ -534,7 +534,10 @@
       "wpmNote": "chars/min",
       "measuredAt": "2026-09-29",
       "sampleUrl": "assets/voice-samples/GEN_xcf9fb4dad3.mp3"
-    }
+    },
+    "dead": true,
+    "deadNote": "404 - đối soát YouTube 2026-10-09: trang kênh HTTP 404 và channel_dossier HTTP 404 (có thể đã xóa hoặc đổi handle). Giữ làm dẫn chứng bài học.",
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: cờ sống cũ sai, kênh trả 404 ở hai cách đo."
   },
   {
     "handle": "@노후건강한끼",
@@ -1949,11 +1952,9 @@
     ],
     "avatar": "assets/avatars/HDVietsub-h7u-cb54404e0d.jpg",
     "ngay_do": "2026-09-30",
-    "dead": true,
-    "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: trang kênh HTTP 200 + channel_dossier (9 video). Cờ dead cũ sai (ghi chú cũ: Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, k).",
     "nguon_do": "YouTube Live Verification (2026-09-30)",
-    "title": "HD Vietsub",
-    "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
+    "title": "HD Vietsub"
   },
   {
     "handle": "@redvoices90",
@@ -1968,11 +1969,9 @@
     ],
     "avatar": "assets/avatars/redvoices90-865286e79a.jpg",
     "ngay_do": "2026-09-30",
-    "dead": true,
-    "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: trang kênh HTTP 200 + channel_dossier (58 video). Cờ dead cũ sai (ghi chú cũ: Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, k).",
     "nguon_do": "YouTube Live Verification (2026-09-30)",
-    "title": "REDVOCES",
-    "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
+    "title": "REDVOCES"
   },
   {
     "handle": "@올바른마음100",
@@ -3203,11 +3202,9 @@
     "note": "Everyday History 18.4K/+4.7K/30d views +3.26M (đo 20/08)",
     "ngay_do": "2026-09-30",
     "avatar": "assets/avatars/toastertalesusa-3de3e981bc.jpg",
-    "dead": true,
-    "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: trang kênh HTTP 200 + channel_dossier (36 video). Cờ dead cũ sai (ghi chú cũ: Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, k).",
     "nguon_do": "YouTube Live Verification (2026-09-30)",
-    "title": "Toaster Tales",
-    "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
+    "title": "Toaster Tales"
   },
   {
     "handle": "@everydaythingsexplain",
@@ -3269,11 +3266,9 @@
     "note": "True Origin 38.7K/+12.9K/30d (đo 20/08)",
     "ngay_do": "2026-09-30",
     "avatar": "assets/avatars/purebusinesshorts-29b53c269f.jpg",
-    "dead": true,
-    "ngay_do_check": "Kiểm tra thị giác Chromium 2026-09-30 (0 video)",
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: trang kênh HTTP 200 + channel_dossier (355 video, RSS 15 video moi nhat 2026-10-08). Cờ dead cũ sai (ghi chú cũ: Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, k).",
     "nguon_do": "YouTube Live Verification (2026-09-30)",
-    "title": "PureBusiness",
-    "deadNote": "Kênh rỗng / 0 video công khai (tác giả đã xóa hoặc ẩn toàn bộ video, không có video để học). Bảo toàn dẫn chứng bài học."
+    "title": "PureBusiness"
   },
   {
     "handle": "@thedishdecoded",
@@ -3858,8 +3853,9 @@
     "markets": [
       "Đa quốc gia"
     ],
-    "dead": false,
-    "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-10-09"
+    "dead": true,
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: cờ sống cũ sai, kênh trả 404 ở hai cách đo.",
+    "deadNote": "404 - đối soát YouTube 2026-10-09: trang kênh HTTP 404 và channel_dossier HTTP 404 (có thể đã xóa hoặc đổi handle). Giữ làm dẫn chứng bài học."
   },
   {
     "handle": "@구름야담",
@@ -3928,9 +3924,7 @@
     "markets": [
       "Đa quốc gia"
     ],
-    "dead": true,
-    "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
-    "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-10-09"
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: trang kênh HTTP 200 + channel_dossier (66 video). Cờ dead cũ sai (ghi chú cũ: 404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn d)."
   },
   {
     "handle": "@마음을안아주는이야",
@@ -3943,9 +3937,7 @@
     "markets": [
       "Đa quốc gia"
     ],
-    "dead": true,
-    "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
-    "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-10-09"
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: trang kênh HTTP 200 + channel_dossier (116 video). Cờ dead cũ sai (ghi chú cũ: 404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn d)."
   },
   {
     "handle": "@부를부르는말씀",
@@ -3958,9 +3950,7 @@
     "markets": [
       "Đa quốc gia"
     ],
-    "dead": true,
-    "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
-    "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-10-09"
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: trang kênh HTTP 200 + channel_dossier (38 video). Cờ dead cũ sai (ghi chú cũ: 404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn d)."
   },
   {
     "handle": "@feelrelaxedtv",
@@ -4001,9 +3991,7 @@
     "markets": [
       "Đa quốc gia"
     ],
-    "dead": true,
-    "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
-    "ngay_do_check": "Kiểm tra & đối soát đa nguồn 2026-10-09"
+    "ngay_do_check": "Đối soát lại YouTube 2026-10-09: trang kênh HTTP 200 + channel_dossier (166 video). Cờ dead cũ sai (ghi chú cũ: 404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn d)."
   },
   {
     "handle": "@자비의법음-j5h",
@@ -4079,8 +4067,8 @@
       "Động vật hoang dã"
     ],
     "markets": [
-      "🇺🇸 Mỹ",
-      "🌐 Toàn cầu"
+      "🇺🇸 US",
+      "Đa quốc gia"
     ],
     "dead": false,
     "ngay_do": "2026-10-09",
@@ -4158,7 +4146,7 @@
       "Bán content & Reup Part 3"
     ],
     "markets": [
-      "🌐 Toàn cầu"
+      "Đa quốc gia"
     ],
     "dead": true,
     "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
@@ -4742,7 +4730,6 @@
     "markets": [
       "🇯🇵 Nhật"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": true,
     "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
@@ -4757,9 +4744,8 @@
       "Đời sống / Tâm sự"
     ],
     "markets": [
-      "🇻🇳 Việt Nam"
+      "🇻🇳 Việt"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4773,9 +4759,8 @@
       "Sức khỏe / Y tế"
     ],
     "markets": [
-      "🇺🇸 Hoa Kỳ"
+      "🇺🇸 US"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4789,9 +4774,8 @@
       "Tâm linh / Tôn giáo"
     ],
     "markets": [
-      "🇺🇸 Hoa Kỳ"
+      "🇺🇸 US"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4805,9 +4789,8 @@
       "Tâm linh / Phát triển"
     ],
     "markets": [
-      "🇺🇸 Hoa Kỳ"
+      "🇺🇸 US"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4823,7 +4806,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4839,7 +4821,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4855,7 +4836,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4871,7 +4851,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4887,7 +4866,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": true,
     "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị YouTube quét/đổi handle). Bảo toàn dẫn chứng bài học.",
@@ -4904,7 +4882,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4918,9 +4895,8 @@
       "Đời sống / Gia đình"
     ],
     "markets": [
-      "🇻🇳 Việt Nam"
+      "🇻🇳 Việt"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4934,9 +4910,8 @@
       "Đời sống / Tâm sự"
     ],
     "markets": [
-      "🇻🇳 Việt Nam"
+      "🇻🇳 Việt"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4950,9 +4925,8 @@
       "Đời sống / Dưỡng sinh"
     ],
     "markets": [
-      "🇻🇳 Việt Nam"
+      "🇻🇳 Việt"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4966,9 +4940,8 @@
       "Đời sống / Tâm sự"
     ],
     "markets": [
-      "🇻🇳 Việt Nam"
+      "🇻🇳 Việt"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -4984,7 +4957,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -5000,7 +4972,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -5016,7 +4987,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -5032,7 +5002,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"
@@ -5048,7 +5017,6 @@
     "markets": [
       "🇰🇷 Hàn"
     ],
-    "avatar": "assets/avatars/default-avatar.svg",
     "ngay_do": "2026-10-09",
     "dead": false,
     "ngay_do_check": "Kiểm tra HTTP 200 thực tế 2026-10-09"

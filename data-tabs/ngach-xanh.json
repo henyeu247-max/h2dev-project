@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-10-09",
   "doNgay": "2026-08-21",
   "quyTacQuyetDinh2026": {
     "mucTieu": "Ngách đáng làm + điều kiện làm an toàn; không phải cam kết kiếm tiền.",
@@ -322,19 +322,19 @@
     "video": 144,
     "taiLieu": 300,
     "kenhMau": 256,
-    "kenhDeadTrongFile": 68,
-    "kenhLiveTrongFile": 188,
+    "kenhDeadTrongFile": 62,
+    "kenhLiveTrongFile": 194,
     "kenhDaDoSong": 256,
     "kenhLiveChuaDo": 0,
     "ghiChu": "Lịch sử 21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08. Snapshot live 12/09/2026: 165 kênh (152 live · 13 dead), ngay_do 165/165. Cập nhật 16/09/2026: đánh số lại BXH 1–34 (2 dòng từng trùng số 18); đo lại code: 19 handle trên video chưa có trong kenh-mau; tài liệu 103→109. Cập nhật 16/09/2026 (bổ sung): tài liệu 109→152 (+43 prompt master research từ data/research-20260916/)."
   },
   "thongTinChinhSach2026": [
-    "16/07/2026 Halprin (VP Trust & Safety) trên Creator Insider: chính sách KHÔNG đổi — chỉ ngôn ngữ. 3 nhóm inauthentic: (1) generic/repetitive — 'đã có 1 đống như vậy ngoài kia, làm cái tiếp theo = chung chung, lặp lại → kênh không ở lại YPP'; (2) off-putting/unsatisfying — con vật gặp nạn rồi được cứu + TRẺ EM trong tình huống đau khổ — kênh dedicate nội dung này bị remove khỏi YPP; (3) AI persona nói health/finance/legal — 'không muốn tạo động lực cho điều đó'.",
+    "16/07/2026 Halprin (VP Trust & Safety) trên Creator Insider: chính sách KHÔNG đổi — chỉ ngôn ngữ. 3 nhóm inauthentic: (1) generic/repetitive — 'đã có 1 đống như vậy ngoài kia, làm cái tiếp theo = chung chung, lặp lại → kênh không ở lại YPP'; (2) off-putting/unsatisfying — con vật gặp nạn rồi được cứu + TRẺ EM trong tình huống đau khổ — kênh dedicate nội dung này bị remove khỏi YPP; (3) AI persona nói health/finance/legal — 'không muốn tạo động lực cho điều đó'. [Đối soát 2026-10-09: nội dung khớp nguồn gốc Creator Insider (YouTube, video 14Vm0CiyUVE, đăng 16/07/2026) qua NetInfluencer 21/07, Dataconomy 06/08, Yahoo Tech 06/08; chưa đọc được bản chép lời của chính video nên câu trích dẫn nguyên văn chưa kiểm.]",
     "Faceless không bị cấm. Reused và inauthentic là 2 cửa độc lập (YouTube Help 15/07/2025: đổi tên 'repetitious content' → 'inauthentic content' — minor update, không đổi chính sách reused).",
     "Tool-agnostic — 'trung lập với công cụ tạo nội dung, chính sách độc lập với cách nội dung được làm ra'. AI nâng cao sáng tạo OK; content farming không. Tutorial chạy theo trend (kiểu banana/strawberry) = nhóm 1 — Halprin: 'đừng lãng phí thời gian'.",
     "Gắn cờ đối thủ VÔ ÍCH — Halprin khẳng định 100%: 1 cờ hay 1.000 cờ được xử lý như nhau, số cờ KHÔNG ảnh hưởng đánh giá YPP. Ngừng mất thời gian flag kênh khác.",
-    "Bị đình chỉ YPP: có 21 ngày kháng cáo → thất bại → nộp lại sau 90 ngày với nội dung mới — 'người ta nộp lại liên tục và rất nhiều được nhận lại'. Video vi phạm monetization vẫn có thể ở trên YouTube — chỉ mất kiếm tiền.",
-    "YPP: chỉ lưu các ngưỡng/cập nhật có nguồn YouTube Help chính thức tại thời điểm kiểm tra. Claim thay đổi ngưỡng 2027 trước đây chưa có nguồn official đã xác minh nên không dùng để quyết định sản xuất hoặc kiếm tiền.",
+    "Bị đình chỉ YPP: có 21 ngày kháng cáo → thất bại → nộp lại sau 90 ngày với nội dung mới — 'người ta nộp lại liên tục và rất nhiều được nhận lại'. Video vi phạm monetization vẫn có thể ở trên YouTube — chỉ mất kiếm tiền. [Đối soát 2026-10-09: 21 ngày kháng cáo, nộp lại sau 90 ngày là lời Halprin về kênh bị đình chỉ (NetInfluencer 21/07/2026). Trang YPP chính thức (support.google.com/youtube/answer/72851) về đơn đăng ký bị từ chối: kháng cáo trong 21 ngày; nộp lại sau 30 ngày lần đầu, sau 90 ngày nếu đã bị từ chối hoặc nộp lại trước đó.]",
+    "YPP: ngưỡng chính thức đọc ngày 2026-10-09 tại support.google.com/youtube/answer/72851: 1.000 sub + 4.000 giờ xem hợp lệ trong 12 tháng, hoặc 1.000 sub + 10 triệu lượt xem Shorts hợp lệ trong 90 ngày. Không có mục đổi ngưỡng YPP 2027 trên trang này. Riêng chia sẻ doanh thu Shorts: support.google.com/youtube/answer/12504220 nêu từ 01/02/2027 cần ≥10 triệu lượt xem Shorts hợp lệ trong 90 ngày để nhận phần Creator Pool và Premium. Tuyên bố \"điều kiện vào YPP tăng gấp đôi sau 01/02/2027\" của hexcoded.ai không có trên hai trang chính thức nên CHƯA XÁC MINH, không dùng để quyết định.",
     "Hate Speech + Sex/Nudity = 2 CỬA Community Guidelines RIÊNG (KHÔNG thuộc 3 nhóm inauthentic — đừng nhầm khi chấm). Kỳ thị chủng tộc/tôn giáo/giới tính, kêu gọi thù hận, xúc phạm nhóm bảo vệ; khỏa thân/khiêu dâm/gợi dục → mất kiếm tiền hoặc xóa video (account-level, không chỉ YPP). Nguồn: support.google.com/youtube/answer/2801939 (hate) + /answer/2802002 (sex/nudity). Kiểm chứng 20/08/2026."
   ],
   "thiTruongPhu": {
@@ -634,7 +634,7 @@
     },
     {
       "ngach": "Tâm linh / phúc lộc Hàn",
-      "xanh": true,
+      "xanh": "CÓ MẪU TĂNG",
       "rpm": "chưa đo RPM",
       "thiTruong": [
         "🇰🇷 Hàn"
@@ -651,7 +651,7 @@
         "@은밀한응답",
         "@늦기전에알아야할것"
       ],
-      "evidence": "ĐỦ NGƯỠNG XANH. 4 mẫu Religion KR còn đăng + tăng, không reset. @복이오는길 28.900 (từ 126 ngày 31/07) / 12 video. @mokamoka-e9f 12.900 (từ 148 ngày 26/07) / 47 video. @은밀한응답 3.700 / +3.112 / +34 video. @늦기전에알아야할것 6.600 / +790 / +59 video. VIDEO-e24c31 / VIDEO-a7bfd0 desc nêu đúng handle. KHÔNG phải Phật pháp, KHÔNG phải Bible.",
+      "evidence": "[ĐỐI SOÁT 2026-10-09] Hạ từ XANH xuống CÓ MẪU TĂNG: trong 4 kênh mẫu chỉ còn 1 (@늦기전에알아야할것, 239 video) trả HTTP 200; @복이오는길, @mokamoka-e9f, @은밀한응답 trả HTTP 404 ở hai cách đo (trang kênh và channel_dossier). Ngưỡng XANH của file này cần ≥2 kênh mẫu còn hoạt động. Bằng chứng cũ (đo 07/2026) giữ nguyên bên dưới. ĐỦ NGƯỠNG XANH. 4 mẫu Religion KR còn đăng + tăng, không reset. @복이오는길 28.900 (từ 126 ngày 31/07) / 12 video. @mokamoka-e9f 12.900 (từ 148 ngày 26/07) / 47 video. @은밀한응답 3.700 / +3.112 / +34 video. @늦기전에알아야할것 6.600 / +790 / +59 video. VIDEO-e24c31 / VIDEO-a7bfd0 desc nêu đúng handle. KHÔNG phải Phật pháp, KHÔNG phải Bible.",
       "hang": 10,
       "nenLam": false,
       "lamDuoc": "CÓ ĐK — tâm linh/phúc lộc Hàn: nội dung đa dạng (복 부적, nhắc nhẹ tâm linh) KIỂM SOÁT. TRÁNH farm template 사주/타로 hàng loạt = limited ads.",
@@ -672,7 +672,7 @@
         "VIDEO-a2b317"
       ],
       "mauSach": [
-        "@UCqZpuhhJC5G4kfvBG7MTAXg"
+        "@ScienceSun-b4r"
       ],
       "evidence": "Handle kho @UCqZpuhhJC5G4kfvBG7MTAXg = Science Sun. Đo 18/08: 82.600 sub / 19,8 triệu view / 55 video; +6.100 sub +11 video / 30 ngày, topics Knowledge. 1 mẫu sạch còn đăng — CÓ MẪU TĂNG, không đủ XANH. Không phải drama. Biến thể user 20/08 (documentary thiên nhiên–vũ trụ): Underwater Earth +203%/30d · Lyrix 3D +183% (space) — CÓ MẪU TĂNG, chưa đủ XANH.",
       "hang": 11,

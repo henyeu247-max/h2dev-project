@@ -755,18 +755,24 @@ async function renderNgachXanh() {
     GLOBAL: 'Toàn cầu / Khác'
   };
   // So lieu dong 100% — zero hardcoded counts (Rule AGENTS.md §4.3)
+  /* UI-fix 2026-10-09 (data): enrichedNiches luu danh sach kenh o khoa `channels` (= mauSach), khong co `mauSach`
+     -> ham cu doc n.mauSach nen luon tra 0 va the "Kenh mau sach" hien "0 kenh". Dem kenh DUY NHAT tren toan bo ngach. */
   function countMauSach(list) {
-    let total = 0;
+    const set = new Set();
     safeArray(list).forEach(n => {
-      const set = new Set();
-      safeArray(n.mauSach).forEach(h => { const s = String(h || '').trim(); if (s) set.add(s.toLowerCase()); });
-      total += set.size;
+      safeArray(n.channels || n.mauSach).forEach(h => { const s = String(h || '').trim(); if (s) set.add(s.toLowerCase()); });
     });
-    return total;
+    return set.size;
   }
   const totalMauSach = countMauSach(enrichedNiches);
+  /* UI-fix 2026-10-09 (data): cach cu bo moi ky tu khong phai so khoi chuoi tu do nen doc nham "135.1K" (nhu cau search) va "407K..." thanh RPM
+     (5 ngach "co du lieu", 2 trong do la rac). Chi nhan con so dung ngay sau chu "median" (benchmark nganh), khong lay so bat ky. */
   const rpmValues = enrichedNiches
-    .map(n => parseFloat(String(n.rpmMedian || n.rpm || '').replace(/[^0-9.]/g, '')))
+    .map(n => {
+      if (typeof n.rpmMedian === 'number') return n.rpmMedian;
+      const m = String(n.rpm || '').match(/median\s*:?\s*\$?\s*([0-9]+(?:\.[0-9]+)?)/i);
+      return m ? parseFloat(m[1]) : NaN;
+    })
     .filter(v => Number.isFinite(v) && v > 0);
   const rpmMedian = rpmValues.length
     ? (() => { const s = [...rpmValues].sort((a, b) => a - b); const m = Math.floor(s.length / 2); return (s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2); })()
@@ -777,7 +783,7 @@ async function renderNgachXanh() {
     { icon: ICONS.niche, label: 'Ưu tiên sản xuất', value: tierCounts.UU_TIEN_SAN_XUAT, sub: 'Top 1-8 ngách sạch, demand thực, RPM cao' },
     { icon: ICONS.doc, label: 'Watchlist & Test', value: (tierCounts.WATCHLIST + tierCounts.TEST_FORMAT), sub: 'Kiểm soát format & test nhỏ 5-10 video' },
     { icon: ICONS.channel, label: 'Kênh mẫu sạch', value: totalMauSach + ' kênh', sub: 'Tổng kênh mẫu đối thủ gắn với ' + enrichedNiches.length + ' ngách' },
-    { icon: ICONS.strategy, label: 'RPM Benchmark', value: rpmMedian != null ? ('$' + rpmMedian.toFixed(2)) : 'N/A', sub: rpmValues.length ? ('Median RPM từ ' + rpmValues.length + ' ngách có dữ liệu') : 'Chưa đủ dữ liệu RPM để tính median' }
+    { icon: ICONS.strategy, label: 'RPM Benchmark', value: rpmMedian != null ? ('$' + rpmMedian.toFixed(2)) : 'N/A', sub: rpmValues.length ? ('Benchmark ngành từ ' + rpmValues.length + ' ngách · chưa đo RPM kênh mẫu') : 'Chưa đủ dữ liệu RPM để tính median' }
   ])
     + (() => {
       const items = (radar && radar.items) || [];

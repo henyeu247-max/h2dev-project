@@ -151,3 +151,26 @@
 - **Cách sửa:** `viddar.css`: `html:has(> body[style*="overflow: hidden"]) { overflow: hidden; }` (một quy tắc phủ mọi chỗ đang khóa kiểu cũ, kể cả trang bài học); `nav.js`: bảng "Khác" khóa khi mở và mở khóa ở mọi đường đóng. `scrollbar-gutter: stable` giữ bố cục không nhảy.
 - **Kiểm:** cuộn chuột và vuốt chạm thật (CDP) với phép đối chứng không lớp phủ (vuốt vẫn cuộn 345 px): 0 px với cả hai lớp phủ.
 - **Bẫy khi đo:** `window.scrollBy()` vẫn cuộn được khi `overflow: hidden` (cuộn bằng lệnh, không phải người dùng). Phép đo vuốt tổng hợp phải có đối chứng; `Input.synthesizeScrollGesture` không cuộn được trong môi trường này nên dùng `Input.dispatchTouchEvent`.
+
+
+## H2DEV-UI-033: cờ `dead` của kênh lệch thực tế 5,5% và cờ mang hai nghĩa
+
+- **Triệu chứng:** 14/256 kênh có cờ `dead` khác kết quả dò thực: 8 kênh ghi chết đang sống với 9 đến 355 video (4 kênh ghi "404" cùng ngày 09/10 nhưng trả 200), 2 kênh ghi sống nhưng 404.
+- **Nguyên nhân (đã xác minh):** cờ đo một lần rồi để nguyên; `dead` vừa nghĩa "404" vừa nghĩa "kênh rỗng 0 video" nên phép đo thị giác 30/09 có thể nhầm kênh tải chậm thành rỗng.
+- **Guardrail:** (1) kết luận lệch phải có đường đo thứ hai (`channel_dossier`), không dùng RSS làm bằng chứng âm vì RSS chập chờn; (2) chỉ ghi vào dữ liệu những trường đã kiểm (không ghi `channelId`/sub lấy từ HTML trang: regex bắt phần tử đầu tiên, PureBusiness ra 179K thay vì 47,5K); (3) mỗi lần lật cờ ghi nguồn và ngày vào `ngay_do_check`. Còn mở: tách `dead` thành hai trạng thái.
+
+## H2DEV-UI-034: bằng chứng tự khai trong dữ liệu không tự cập nhật theo ngưỡng của chính file
+
+- **Triệu chứng:** ngách "Tâm linh / phúc lộc Hàn" `xanh:true` với bằng chứng "4 mẫu còn đăng + tăng", nhưng 3/4 kênh mẫu nay 404; ngưỡng XANH của file đòi ≥2 mẫu còn hoạt động.
+- **Guardrail:** kiểm mọi ngách `xanh:true` bằng kết quả dò thực, không bằng cờ. Hạ cấp thì giữ bằng chứng cũ, thêm đoạn đối soát có ngày ở đầu. Mục `nichesGreenTrue` và các số đếm chữ trong `TREE.md`/`00_README.md` đổi theo (`sync-counts` chỉ quản số `xanh:true`, không quản "CÓ MẪU TĂNG N": sửa tay và ghi vào danh sách rà soát).
+
+## H2DEV-UI-035: bộ đọc số từ văn bản tự do và khóa đổi tên (cùng mẫu SCAR-006)
+
+- **Triệu chứng:** thẻ "Kênh mẫu sạch" hiện 0; thẻ "RPM Benchmark" tính từ 5 ngách trong đó 2 là rác.
+- **Nguyên nhân:** `countMauSach` đọc `n.mauSach` trong khi `enrichNiche` đặt `channels`; `parseFloat(s.replace(/[^0-9.]/g, ''))` ghép mọi chữ số trong câu ("135.1K", "407K…" thành 135,1 và 4075,4).
+- **Guardrail:** số hiển thị lấy từ văn bản tự do chỉ được đọc bằng mẫu có neo ("median $X"); mọi bộ đếm phải đối chiếu với số tính độc lập từ file (ở đây 51/51). Khi một hàm làm giàu đổi tên khóa, grep mọi nơi đọc khóa cũ.
+
+## H2DEV-UI-036: câu "chưa có nguồn chính thức" tự cũ khi nguồn xuất hiện
+
+- **Triệu chứng:** chính sách mục 6 ghi claim mốc 2027 "chưa có nguồn official", nhưng YouTube Help nay nêu mốc 01/02/2027 cho chia sẻ doanh thu Shorts (≥10 triệu lượt xem Shorts hợp lệ trong 90 ngày). Ngưỡng vào YPP trên trang chính thức không đổi; tuyên bố "gấp đôi" của hexcoded.ai vẫn chưa có nguồn chính thức.
+- **Guardrail:** câu phủ định về nguồn ("chưa có") phải kèm ngày kiểm và được đọc lại theo chu kỳ; tách rõ phạm vi (chia sẻ doanh thu Shorts khác điều kiện vào YPP). Nguồn trích từ video gốc (Creator Insider) mà chưa đọc được chép lời thì ghi đúng giới hạn đó.

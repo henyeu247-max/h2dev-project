@@ -58,7 +58,7 @@
   background: var(--brand);
   color: var(--brand-fg);
   font-family: var(--font-mono);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   font-weight: var(--h2-fw-bold);
   line-height: 1;
 }
@@ -75,7 +75,7 @@
 .h2-shell-brand__wordmark em { color: var(--brand); font-style: normal; }
 .h2-shell-brand__tag {
   display: block;
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   color: var(--fg-faint);
   line-height: var(--h2-lh-heading);
 }
@@ -144,7 +144,7 @@ a.h2-shell-brand .vd-wordmark {
   padding: var(--h2-space-3) var(--h2-space-6) var(--h2-space-4);
   border-top: 1px solid var(--hairline);
   color: var(--fg-faint);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   line-height: var(--h2-lh-heading);
 }
 @media (max-width: 639px) {
@@ -295,7 +295,7 @@ html { scrollbar-gutter: stable; }
   border: 0;
   color: var(--fg-faint);
   font-family: var(--font-sans);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   font-weight: var(--h2-fw-medium);
   line-height: 1.2;
   cursor: pointer;

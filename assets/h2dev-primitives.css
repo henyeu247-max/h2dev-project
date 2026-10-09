@@ -101,7 +101,7 @@
 .h2-btn--sm {
   min-height: 32px;
   padding: var(--h2-space-1) var(--h2-space-3);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   gap: var(--h2-space-1);
 }
 
@@ -176,7 +176,7 @@
   border: 1px solid transparent;
   border-radius: 999px;
   font-family: var(--font-sans);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   font-weight: var(--h2-fw-bold);
   letter-spacing: var(--h2-ls-label);
   line-height: var(--h2-lh-heading);
@@ -232,13 +232,13 @@
 }
 .h2-stat__label {
   color: var(--fg-muted);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   line-height: var(--h2-lh-heading);
 }
 .h2-stat__sub {
   margin-top: var(--h2-space-1);
   color: var(--fg-faint);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   line-height: var(--h2-lh-heading);
   display: -webkit-box;
   -webkit-line-clamp: 3;

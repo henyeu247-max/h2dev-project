@@ -175,7 +175,7 @@ body::after {
 * { scrollbar-width: thin; scrollbar-color: var(--border) var(--bg); }
 button { cursor: pointer; font-family: inherit; }
 code, .mono, .font-mono { font-family: var(--font-mono); }
-code { font-size: 11px; color: var(--fg-2); }
+code { font-size: 12px; color: var(--fg-2); }
 
 .app-shell {
   display: grid;
@@ -211,7 +211,7 @@ code { font-size: 11px; color: var(--fg-2); }
 }
 .vd-wordmark { font: 700 16px/1.2 var(--font-display); letter-spacing: -0.02em; color: var(--fg); }
 .vd-wordmark em { color: var(--brand-ink); font-style: normal; }
-.vd-tag { display: block; margin-top: 2px; color: var(--fg-muted); font-size: 11px; font-weight: 500; }
+.vd-tag { display: block; margin-top: 2px; color: var(--fg-muted); font-size: 12px; font-weight: 500; }
 
 #tabs {
   display: flex;
@@ -325,7 +325,7 @@ code { font-size: 11px; color: var(--fg-2); }
   letter-spacing: -.02em;
   white-space: nowrap;
 }
-.hd-stats { color: var(--fg-muted); font: 11px/1.5 var(--font-mono); white-space: nowrap; margin-left: auto; text-transform: uppercase; letter-spacing: 0.04em; }   /* P1-D: /1.45 -> /1.5 (bac body) */
+.hd-stats { color: var(--fg-muted); font: 12px/1.5 var(--font-mono); white-space: nowrap; margin-left: auto; text-transform: uppercase; letter-spacing: 0.04em; }   /* P1-D: /1.45 -> /1.5 (bac body) */
 
 .vd-bottom-nav { display: none; }
 .vd-mobile-tabs { display: none; }
@@ -358,7 +358,7 @@ code { font-size: 11px; color: var(--fg-2); }
   padding: 12px 24px 16px;
   color: var(--fg-muted);
   border-top: 1px solid var(--hairline);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .btn, .btn-primary, .btn-ghost, .btn-secondary {
@@ -428,6 +428,12 @@ code { font-size: 11px; color: var(--fg-2); }
   background-color: #1e293b !important;
   background: #1e293b !important;
 }
+/* UI-fix 2026-10-09: dien thoai (<=520px) — nhan + nut "Tua den" xuong dong rieng.
+   Truoc do cot nhan chi rong ~110px, moi goi y xuong 5-6 dong. Do lai 390px: dong dau 294px -> 163px, nhan 110px -> 282px. */
+@media (max-width: 520px) {
+  #video-search-suggestions .js-v-sug-row { flex-wrap: wrap !important; }
+  #video-search-suggestions .js-v-sug-row > div:last-child { width: 100% !important; justify-content: flex-start !important; padding-left: 26px !important; }
+}
 .card::after, .interactive-card::after, .bento-card::after, .niche-card::after {
   content: "";
   position: absolute;
@@ -454,7 +460,7 @@ code { font-size: 11px; color: var(--fg-2); }
 .stat-icon .h2-icon { display: inline-block; min-width: 16px; min-height: 16px; touch-action: none; }
 .stat-body { min-width: 0; flex: 1; }
 .stat-value { color: var(--fg); font: 600 24px/1.2 var(--font-sans); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
-.stat-sub { margin-top: 4px; color: var(--fg-faint); font-size: 11px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }   /* P1-D: 1.4 -> 1.35 */
+.stat-sub { margin-top: 4px; color: var(--fg-faint); font-size: 12px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }   /* P1-D: 1.4 -> 1.35 */
 .page-h2 { margin: 0 0 8px; color: var(--fg); font-size: 16px; font-weight: 600; letter-spacing: -.02em; line-height: 1.35; }
 /* UI-13 (2026-09-28): tieu de tab cho pageBanner — truoc day banner khong co title. */
 .page-h1 { margin: 0 0 4px; color: var(--fg); font-size: 20px; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }   /* FIX 2026-09-30: 1.3 (them 28/09) ngoai thang gate-p1 [7a] -> 1.2 = bac display cua du an */
@@ -490,10 +496,10 @@ code { font-size: 11px; color: var(--fg-2); }
 .policy-i { padding-top: 1px; color: var(--fg-muted); font: 600 12px/1.5 var(--font-mono); }
 .policy-t { min-width: 0; color: var(--fg-2); font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
 
-.badge { display: inline-flex; align-items: center; width: fit-content; max-width: 100%; padding: 2px 8px; color: var(--fg-2); background: var(--surface-2); border: 1px solid var(--border); border-radius: 2px; font-family: var(--font-mono); font-size: 11px; font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.04em; white-space: normal; overflow-wrap: anywhere; }   /* P1-D: 1.4 -> 1.35 */
+.badge { display: inline-flex; align-items: center; width: fit-content; max-width: 100%; padding: 2px 8px; color: var(--fg-2); background: var(--surface-2); border: 1px solid var(--border); border-radius: 2px; font-family: var(--font-mono); font-size: 12px; font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.04em; white-space: normal; overflow-wrap: anywhere; }   /* P1-D: 1.4 -> 1.35 */
 /* P3.7 (2026-09-24): badge cu dung font-size:0.6rem = 9.6px — NGOAI thang 9 bac VA
- *   nho hon ca 11px, lai GHI DE class text-2xs (11px) cua Tailwind do specificity.
- *   Doi ve 11px = bac 2xs chuan. Xem tokens.json font.sizeScale.standardized. */
+ *   nho hon ca 11px, lai GHI DE class text-xs (11px) cua Tailwind do specificity.
+ *   Doi len 12px = bac xs (UI-standard T-2, 2026-10-09). Xem tokens.json font.sizeScale.standardized. */
 #content .badge.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (max-width: 720px) {
   .max-w-\[140px\] { max-width: min(140px, 42vw); }
@@ -514,10 +520,10 @@ code { font-size: 11px; color: var(--fg-2); }
 .nc-badges .badge { min-width: 0; max-width: 100%; }
 .nc-name { min-width: 0; margin: 0; color: var(--fg); font-size: 14px; font-weight: 700; line-height: 1.35; letter-spacing: -.02em; overflow-wrap: anywhere; text-wrap: balance; }   /* P1-D: 1.3 -> 1.35 */
 .nc-channels { display: flex; flex-wrap: wrap; gap: 4px; }
-.channel-chip { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; min-width: 0; min-height: 32px; padding: 6px 10px; overflow: hidden; color: var(--brand-ink); background: var(--surface-2); border: 1px solid var(--border); border-radius: 2px; font: 11px/1.35 var(--font-mono); text-decoration: none; text-overflow: ellipsis; white-space: nowrap; }   /* P1-D: 1.3 -> 1.35 */
+.channel-chip { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; min-width: 0; min-height: 32px; padding: 6px 10px; overflow: hidden; color: var(--brand-ink); background: var(--surface-2); border: 1px solid var(--border); border-radius: 2px; font: 12px/1.35 var(--font-mono); text-decoration: none; text-overflow: ellipsis; white-space: nowrap; }   /* P1-D: 1.3 -> 1.35 */
 .channel-chip:hover { border-color: var(--success); color: var(--success); }
 .channel-chip:active { transform: scale(0.97); transition: transform 100ms ease; }
-.nx-card-kpi { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; min-width: 0; font: 600 11px/1.35 var(--font-mono); font-variant-numeric: tabular-nums; text-transform: uppercase; letter-spacing: 0.04em; }
+.nx-card-kpi { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; min-width: 0; font: 600 12px/1.35 var(--font-mono); font-variant-numeric: tabular-nums; text-transform: uppercase; letter-spacing: 0.04em; }
 .nx-card-kpi span { display: inline-flex; align-items: baseline; gap: 4px; min-width: 0; }
 .nc-header { display: grid; grid-template-columns: 30px minmax(0, 1fr); align-items: start; gap: 10px; min-width: 0; padding: 10px 14px 8px; }
 .niche-card.is-tier-uu-tien { border-left-color: #00ff88; }
@@ -527,10 +533,10 @@ code { font-size: 11px; color: var(--fg-2); }
 .niche-card.is-tier-tach { border-left-color: #8a0122; }
 .nx-card-facts { display: grid; gap: 6px; min-width: 0; padding: 4px 14px 8px; color: var(--fg-2); line-height: 1.5; }   /* P1-D: 1.45 -> 1.5 (bac body) */
 .nx-card-point { overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.nx-card-channel-label { font: 11px/1.35 var(--font-mono); color: var(--fg-muted); padding: 0 14px 4px; text-transform: uppercase; letter-spacing: 0.04em; }   /* P1-D: 1.3 -> 1.35 */
+.nx-card-channel-label { font: 12px/1.35 var(--font-mono); color: var(--fg-muted); padding: 0 14px 4px; text-transform: uppercase; letter-spacing: 0.04em; }   /* P1-D: 1.3 -> 1.35 */
 .nc-channels { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 4px; padding: 0 14px 8px; }
 .nx-card-action { padding: 8px 14px 12px; border-top: 1px solid var(--hairline); margin-top: auto; }
-.nx-card-action button { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 6px 0; font-size: 11px; color: var(--brand-ink); font-weight: 600; }
+.nx-card-action button { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 6px 0; font-size: 12px; color: var(--brand-ink); font-weight: 600; }
 .nx-filter-head input { width: 100%; }
 .nx-filter-row { min-width: 0; }
 .nx-filter-chips { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
@@ -672,7 +678,7 @@ details[open] > summary .group-open\:rotate-180 { transform: rotate(180deg); }
 .card-note { margin: 0 0 10px; color: var(--fg-muted); font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
 .btn-press:active { transform: scale(.98); }
 .stat-arrow { margin-left: auto; flex: 0 0 auto; }
-.shortcut-key { padding: 1px 5px; border: 1px solid var(--border); border-radius: 2px; font: 600 11px/1.35 var(--font-mono); color: var(--fg-muted); }   /* P1-D: 1.4 -> 1.35 */
+.shortcut-key { padding: 1px 5px; border: 1px solid var(--border); border-radius: 2px; font: 600 12px/1.35 var(--font-mono); color: var(--fg-muted); }   /* P1-D: 1.4 -> 1.35 */
 .theater-video-box { border-radius: var(--r-lg); }
 
 .learn-frame { display: block; width: 100%; min-height: calc(100vh - 112px); background: var(--bg); border: 0; }
@@ -704,7 +710,7 @@ img, video { max-width: 100%; height: auto; }
 /* Player compatibility */
 .app-body { color: var(--fg); background: var(--bg); }
 .app-top { position: sticky; top: 0; z-index: var(--h2-z-sticky); display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 56px; padding: 0 24px; background: var(--topbar-bg); border-bottom: 1px solid var(--border); backdrop-filter: blur(var(--h2-backdrop-blur)); }
-.brand-mark { display: grid; place-items: center; width: 28px; height: 28px; color: #fff; background: var(--brand); border-radius: 4px; font: 700 11px/1 var(--font-mono); }
+.brand-mark { display: grid; place-items: center; width: 28px; height: 28px; color: #fff; background: var(--brand); border-radius: 4px; font: 700 12px/1 var(--font-mono); }
 .theater-toggle-badge.active { color: var(--red-50-fg) !important; background: var(--red-50) !important; border-color: transparent !important; }
 body.theater-active .theater-wrapper { background: #000; }
 body.theater-active #theaterContainer { max-width: none; padding: 0; }
@@ -820,7 +826,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     align-items: center !important;
     gap: 4px !important;
     padding: 5px 9px !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
     font-weight: 600 !important;
     border-radius: 6px !important;
     background: rgba(255, 255, 255, 0.08) !important;
@@ -858,7 +864,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     border: 0;
     border-radius: 2px;
     color: var(--fg-muted);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.2;   /* P1-D: 1.1 -> 1.2 (bac display) */
     min-width: 0;
@@ -1001,13 +1007,13 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .bento-card .stat-icon .h2-icon { width: 16px; height: 16px; display: inline-block; min-width: 16px; min-height: 16px; }
   .bento-card .stat-glyph { font-size: 16px !important; }
   .bento-card .stat-value { font-size: 20px !important; line-height: 1.2 !important; }   /* P1-D: 1.15 -> 1.2 (bac display) */
-  .bento-card .stat-label { font-size: 11px !important; letter-spacing: 0.04em !important; line-height: 1.35; }   /* P1-D: 1.25 -> 1.35 (bac heading) */
-  .bento-card .stat-sub { font-size: 11px !important; margin-top: 2px !important; display: none !important; }  /* Hide secondary metadata; retain a stable 2x2 card rhythm. */
+  .bento-card .stat-label { font-size: 12px !important; letter-spacing: 0.04em !important; line-height: 1.35; }   /* P1-D: 1.25 -> 1.35 (bac heading) */
+  .bento-card .stat-sub { font-size: 12px !important; margin-top: 2px !important; display: none !important; }  /* Hide secondary metadata; retain a stable 2x2 card rhythm. */
   .bento-card .stat-arrow { display: none !important; }
   .bento-card .stat-body { width: 100% !important; min-width: 0; }
   .bento-card .stat-value, .bento-card .stat-label { overflow-wrap: anywhere; }
   /* Chip filters: co giãn thông minh, không tràn lề, tự xuống dòng khi text dài */
-  #content .filter-btn { min-height: 34px; font-size: 11px !important; padding: 6px 10px !important; max-width: 100% !important; white-space: normal !important; overflow-wrap: anywhere !important; word-break: break-word !important; text-align: left !important; justify-content: flex-start !important; height: auto !important; line-height: 1.35 !important; }
+  #content .filter-btn { min-height: 34px; font-size: 12px !important; padding: 6px 10px !important; max-width: 100% !important; white-space: normal !important; overflow-wrap: anywhere !important; word-break: break-word !important; text-align: left !important; justify-content: flex-start !important; height: auto !important; line-height: 1.35 !important; }
   .card.p-5, .card.p-4 { padding: 14px !important; }
   .niche-card { padding: 14px !important; border-radius: 4px; }
   .nc-header { grid-template-columns: 34px minmax(0, 1fr); gap: 10px; margin-bottom: 12px; }
@@ -1015,7 +1021,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .nc-name { font-size: 16px; line-height: 1.35; }
   .nx-card-kpi { gap: 6px 10px; font-size: 12px; padding-bottom: 4px; }
   .nx-card-facts { gap: 8px; margin-bottom: 14px; }
-  .channel-chip { min-height: 40px; padding: 8px 12px; font-size: 11px; }
+  .channel-chip { min-height: 40px; padding: 8px 12px; font-size: 12px; }
   .nx-card-action button { min-height: 44px; font-size: 12px; }
   details.card { padding: 12px 14px !important; }
   details.card summary { min-height: 44px; align-items: center; padding: 10px 12px; border-radius: 2px; transition: background-color 0.15s ease; font-size: 12px; font-weight: 600; }
@@ -1026,14 +1032,20 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   .learn-frame { min-height: calc(100vh - 140px); }
 
   /* ── Mobile Modal Responsive Grids ── */
-  .music-studio-grid { grid-template-columns: 1fr !important; padding: 10px !important; gap: 10px !important; }
+  /* UI-fix 2026-10-09: 1fr = minmax(auto,1fr) nen cot bi keo theo min-content cua the (483px) tren man 390px -> tran ngang.
+     minmax(0,1fr) cho cot co dung kho khung. Do lai: scrollWidth = clientWidth = 368px. */
+  .music-studio-grid { grid-template-columns: minmax(0, 1fr) !important; padding: 10px !important; gap: 10px !important; }
+  /* UI-fix 2026-10-09: bang tang truong (5 cot) trong modal raw kenh vua khung 390px, khong cuon ngang. Padding inline 0.6rem -> 0.25rem. */
+  #raw-deep-modal table { font-size: 12px !important; }
+  #raw-deep-modal table th, #raw-deep-modal table td { padding: 0.35rem 0.15rem !important; }
+  #raw-deep-modal table td { white-space: nowrap; }
   .raw-deep-kpis { grid-template-columns: repeat(2, 1fr) !important; gap: 8px !important; }
   .raw-proxy-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
   .raw-proxy-subgrid { grid-template-columns: 1fr !important; gap: 8px !important; }
   .raw-mission-bento { grid-template-columns: 1fr !important; gap: 10px !important; }
   .raw-top-videos-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
   .raw-deep-tabbar { display: grid !important; grid-template-columns: repeat(4, 1fr) !important; padding: 6px !important; gap: 4px !important; }
-  .raw-tab-btn { padding: 6px 2px !important; font-size: 11px !important; gap: 2px !important; }
+  .raw-tab-btn { padding: 6px 2px !important; font-size: 12px !important; gap: 2px !important; }
   .raw-tab-all { display: none !important; }
   .subniche-select-wrap { display: block !important; }
   .subniche-grid { display: flex !important; flex-direction: column !important; gap: 6px !important; max-height: 200px !important; overflow-y: auto !important; padding-right: 4px !important; -webkit-overflow-scrolling: touch !important; }
@@ -1080,7 +1092,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .quick-access__label {
   flex: 0 0 auto;
   color: var(--fg-muted, #94a3b8);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1.35;
@@ -1123,14 +1135,14 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 }
 @media (max-width: 640px) {
   .quick-access { align-items: stretch; flex-direction: column; gap: 8px; padding: 10px; }
-  .quick-access__label { font-size: 11px; }
+  .quick-access__label { font-size: 12px; }
   .quick-access__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 7px; width: 100%; }
-  .quick-access__button { min-height: 44px; padding: 8px 7px; font-size: 11px; white-space: normal; overflow-wrap: anywhere; }
+  .quick-access__button { min-height: 44px; padding: 8px 7px; font-size: 12px; white-space: normal; overflow-wrap: anywhere; }
   .quick-access__long { display: none; }
   .quick-access__short { display: inline; }
   .quick-access--topbar { display: block; padding: 0; }
   .quick-access--topbar .quick-access__list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
-  .vd-topbar-subnav .quick-access--topbar .quick-access__button { min-width: 0; min-height: 44px; padding: 6px 3px; font-size: 11px; }
+  .vd-topbar-subnav .quick-access--topbar .quick-access__button { min-width: 0; min-height: 44px; padding: 6px 3px; font-size: 12px; }
   .quick-target { scroll-margin-top: calc(146px + env(safe-area-inset-top, 0px)); }
 }
 /* ── Base Modal, Subniche & Chiến Lược Classes ── */
@@ -1142,7 +1154,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .subniche-chip:hover { background: var(--surface); color: var(--fg); border-color: var(--brand); }
 .subniche-chip.active { background: var(--brand) !important; color: #fff !important; border-color: var(--brand-hover) !important; font-weight: 700 !important; }
 .subniche-name { flex: 1; min-width: 0; }
-.subniche-count { font-family: var(--font-mono); font-size: 11px; padding: 1px 6px; border-radius: 4px; background: rgba(0, 0, 0, 0.3); color: var(--fg-muted); flex-shrink: 0; }
+.subniche-count { font-family: var(--font-mono); font-size: 12px; padding: 1px 6px; border-radius: 4px; background: rgba(0, 0, 0, 0.3); color: var(--fg-muted); flex-shrink: 0; }
 .subniche-chip.active .subniche-count { background: rgba(255, 255, 255, 0.2); color: #fff; }
 .cl-tabbar {
   display: flex;
@@ -1301,7 +1313,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 @media (max-width: 1100px) { .radar-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .radar-grid { grid-template-columns: 1fr; } }
 .radar-card { min-width: 0; }
-.radar-metrics { display: flex; gap: 8px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 11px; }
+.radar-metrics { display: flex; gap: 8px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 12px; }
 .radar-metrics .k { color: var(--fg-muted); }
 .radar-metrics .v { color: var(--fg); font-weight: 700; }
 /* footer action hit area */
@@ -1487,7 +1499,7 @@ button.niche-row:focus-visible,
 }
 .niche-rank {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--fg-muted);
   text-align: center;
@@ -1515,7 +1527,7 @@ button.niche-row:focus-visible,
   display: inline-block;
   margin-left: 6px;
   padding: 1px 6px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   border-radius: 4px;
   background: #2a2410;
@@ -1526,7 +1538,7 @@ button.niche-row:focus-visible,
 .niche-n i {
   display: block;
   font-style: normal;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--fg-muted);
   font-weight: 500;
 }
@@ -1727,7 +1739,7 @@ button.niche-row:focus-visible,
 .badge.badge-sku { font-family: var(--font-mono); }
 .nx-card-channel-label { font-family: var(--font-sans); letter-spacing: 0.02em; }
 /* Doan mo ta dai dang 11px (rawkenh 70, nguonreup 42, tai-lieu 12 doan) -> 12px; doan van 12px -> 13px. */
-#content p.text-2xs, #content .text-2xs.line-clamp-1, #content .text-2xs.line-clamp-2 { font-size: var(--h2-font-xs); }
+#content p.text-xs, #content .text-xs.line-clamp-1, #content .text-xs.line-clamp-2 { font-size: var(--h2-font-xs); }
 #content p.text-xs.leading-relaxed, #content .text-xs.leading-relaxed, #content p.text-xs.break-words,
 .page-lede, .card-note, .policy-t { font-size: var(--h2-font-sm); }
 
@@ -1752,20 +1764,20 @@ button.niche-row:focus-visible,
   .bento-grid > *:last-child:nth-child(odd) { grid-column: auto !important; min-height: 0 !important; height: auto !important; padding: 8px 6px !important; gap: 2px !important; }
   .bento-card .stat-icon { display: none !important; }
   .bento-card .stat-value { font-size: var(--h2-font-base) !important; white-space: nowrap; overflow-wrap: normal !important; } /* "156 vidIQ" 16px xuong 2 dong @375 -> 14px 1 dong */
-  .bento-card .stat-label { font-size: var(--h2-font-2xs) !important; letter-spacing: 0 !important; overflow-wrap: normal !important; hyphens: none; }
-  /* D2: hang chip loc -> 1 dong vuot ngang (thay vi xep 5-20 dong) */
+  .bento-card .stat-label { font-size: var(--h2-font-xs) !important; letter-spacing: 0 !important; overflow-wrap: normal !important; hyphens: none; }
+  /* D2 (UI-fix 2026-10-09): hang chip loc xuong dong trong khung. Truoc day vuot ngang nen chip cuoi bi cat o mep.
+     Chip ngan giu 1 dong (co dung max-content); chip dai hon ca hang (vd "Everyday History EN (...)" tren 360px) tu xuong dong trong chinh no. */
   #content .flex-wrap:has(> .filter-btn), #content .nx-filter-chips {
-    flex-wrap: nowrap !important;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
+    flex-wrap: wrap !important;
+    overflow: visible;
     scrollbar-width: none;
     padding-bottom: 2px;
   }
   #content .flex-wrap:has(> .filter-btn)::-webkit-scrollbar, #content .nx-filter-chips::-webkit-scrollbar { display: none; }
   #content .flex-wrap:has(> .filter-btn) > .filter-btn, #content .nx-filter-chips > .filter-btn {
     flex: 0 0 auto !important;
-    white-space: nowrap !important;
-    max-width: none !important;
+    white-space: normal !important;
+    max-width: 100% !important;
     overflow-wrap: normal !important;
     word-break: normal !important;
   }
@@ -1800,7 +1812,7 @@ button.niche-row:focus-visible,
   right: -4px;
   padding: 1px 4px;
   border-radius: 4px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
   background-color: #dc2626;
@@ -1836,7 +1848,7 @@ button.niche-row:focus-visible,
 .channel-chip-dead-badge {
   background-color: #dc2626;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
   padding: 1px 3px;
@@ -1845,4 +1857,57 @@ button.niche-row:focus-visible,
   text-decoration: none;
   display: inline-block;
   vertical-align: baseline;
+  flex: none;
 }
+/* UI-fix 2026-10-09: handle dai bi cat thanh "..." thay vi cat cut; huy hiep DIE va mui ten khong bi day ra ngoai chip. */
+.channel-chip-handle { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.channel-chip-arrow { flex: none; }
+/* UI-fix 2026-10-09: the "Kenh doi thu" o trang bai hoc (#pchannelslist): handle dai (RichPatternResearchInstitute) day pill tran ra ngoai the 360px. Pill toi da bang khung, handle xuong dong, huy hieu DIE va nut Copy khong xuong dong. */
+#pchannelslist > div { max-width: 100%; min-width: 0; }
+#pchannelslist > div > a { min-width: 0; overflow-wrap: anywhere; }
+#pchannelslist > div > button { flex: none; white-space: nowrap; }
+
+/* UI-fix 2026-10-09 (tab /tatca): chinh sach mo/thu gon bang cham (ca dien thoai); ten ngach xuong dong thay vi cat "...". */
+#content .policy-toggle { display: block; width: 100%; min-width: 0; margin: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+#content .policy-toggle .policy-text { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 12px; line-height: 1.5; color: var(--fg-2); overflow-wrap: anywhere; }
+#content .policy-toggle.is-open .policy-text { display: block; -webkit-line-clamp: unset; overflow: visible; }
+#content .policy-toggle .policy-more { display: block; margin-top: 4px; font-size: 12px; font-weight: 600; color: var(--brand-ink); }
+#content .policy-toggle .policy-more[hidden] { display: none; }
+#content .policy-toggle:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
+#content .niche-row .niche-name { white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere; line-height: 1.3; }
+/* UI-fix 2026-10-09 (tab /tatca): hang ngach dung luoi co dinh de cac thanh tien do thang hang (truoc day flex nen cot ten co theo chu). */
+#content button.niche-row { display: grid; grid-template-columns: minmax(0, 42%) minmax(0, 1fr) 2.75rem; align-items: center; gap: 6px 12px; }
+#content button.niche-row .niche-n { justify-self: end; }
+/* UI-fix 2026-10-09 (tab Video, man hinh hep): 3 o chon (ngach / thi truong / sap xep) co chieu rong that de hien day du chu + mui ten; nhom nut trang thai xem xuong dong thay vi tran. */
+@media (max-width: 640px) {
+  #video-filter-selects { flex: 1 1 100% !important; display: grid !important; grid-template-columns: repeat(auto-fit, minmax(132px, 1fr)); gap: 8px; width: 100%; }
+  #video-filter-selects select { width: 100%; min-width: 0; padding-right: 2rem; }
+  #video-filter-watch { flex: 1 1 100%; flex-wrap: wrap; gap: 6px; }
+  #video-filter-watch .filter-btn { flex: 0 0 auto; }
+}
+/* UI-fix 2026-10-09 (tab Video, dien thoai) - can doi bo cuc theo Gestalt: o Ngach chiem ca hang, Thi truong | Sap xep chia doi (khong con o le),
+   3 nut trang thai xem cung kich thuoc, cum chip thi truong thanh luoi deu cot (khong so le). Nhom cach nhau 12px, trong nhom 8px. */
+@media (max-width: 640px) {
+  #video-filter-selects { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 8px !important; }
+  #video-filter-selects > select#fniche { grid-column: 1 / -1; }
+  #video-filter-watch { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 6px !important; width: 100%; }
+  #video-filter-watch .filter-btn { min-height: 44px; padding: 8px 6px !important; line-height: 1.2; justify-content: center; text-align: center; white-space: normal !important; }
+  #video-chip-cloud { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)) !important; gap: 8px !important; }
+  #video-chip-cloud .filter-btn { min-height: 40px; justify-content: center; text-align: center; white-space: normal !important; }
+}
+/* UI-standard G-3 (2026-10-09): nhom chip loc tren may tinh bang va dien thoai (<= 1024px) chay theo flex-wrap; chip tu gian de
+   hang cuoi khong con chip le. Khong dung so cot co dinh nen khong vo khi chieu rong thay doi. Nhom co id rieng giu nguyen luoi. */
+@media (max-width: 1024px) {
+  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) { display: flex !important; flex-wrap: wrap !important; gap: 8px !important; }
+  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn { flex: 1 1 112px; min-height: 40px; line-height: 1.2; justify-content: center; text-align: center; white-space: normal !important; }
+}
+
+/* UI-standard A-1 (2026-10-09): nut chu nho (text-xs) co vung cham toi thieu 24px, giu nguyen bo cuc chip. */
+#content button.text-xs { min-height: 24px; display: inline-flex; align-items: center; }
+
+/* UI-standard A-1 (2026-10-09): nut mo rong chinh sach va nut doc truc tiep co vung cham toi thieu 24px. */
+#content .policy-toggle { min-height: 24px; }
+.btn-doc-link { min-height: 24px; }
+
+/* UI-standard T-8 (2026-10-09): chu nut trang thai xem khong de mot tu le o dong cuoi. */
+#video-filter-watch .filter-btn { text-wrap: balance; }

@@ -202,6 +202,32 @@
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
+    /* UI-fix 2026-10-09: muc "Chinh sach YouTube" tren /tatca - cham de mo/thu gon. Chi hien goi y khi chu bi cat (scrollHeight > clientHeight). */
+    function measurePolicyClamp() {
+      document.querySelectorAll('#content .policy-toggle').forEach(btn => {
+        const more = btn.querySelector('.policy-more');
+        if (!more) return;
+        if (btn.classList.contains('is-open')) { more.hidden = false; return; }
+        const txt = btn.querySelector('.policy-text');
+        more.hidden = !(txt && txt.scrollHeight > txt.clientHeight + 1);
+      });
+    }
+    function bindPolicyToggles() {
+      document.querySelectorAll('#content .policy-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const open = btn.getAttribute('aria-expanded') !== 'true';
+          btn.setAttribute('aria-expanded', String(open));
+          btn.classList.toggle('is-open', open);
+          const more = btn.querySelector('.policy-more');
+          if (more) more.textContent = open ? 'Thu gọn ▴' : 'Xem đầy đủ ▾';
+        });
+      });
+      measurePolicyClamp();
+      if (!window.__policyResizeBound) {
+        window.__policyResizeBound = true;
+        window.addEventListener('resize', () => measurePolicyClamp());
+      }
+    }
     function openTab(id, extra, pushHistory = true) {
       state.tab = id || 'tatca';
       resetScrollToTop();
@@ -224,6 +250,7 @@
           /* PHASE 1: build URL du 9 tham so + bo tham so o gia tri mac dinh */
           if (state.marketFilter) url.searchParams.set('market', state.marketFilter);
           if (state.nicheFilter) url.searchParams.set('niche', state.nicheFilter);
+          if (state.tab === 'video' && state.skuFilter) url.searchParams.set('skus', state.skuFilter);
           /* UI-04 (2026-09-28): page Video/Kenh trc day KHONG vao URL -> Back/Forward mat trang phan trang */
           if (state.tab === 'video' && state.videoPage > 1) url.searchParams.set('vp', String(state.videoPage));
           if (state.tab === 'kenh-mau' && state.kenhPage > 1) url.searchParams.set('kp', String(state.kenhPage));
@@ -795,6 +822,7 @@
         syncTopbarSubnav();
         bindSearch();
         bindNicheActions();
+        bindPolicyToggles();
         normalizeFilterChipA11y();
 
         // 2. Restore active input focus and cursor position after re-render
@@ -854,6 +882,8 @@
       state.tab = tabFromPath || qp.get('tab') || 'tatca';
       state.marketFilter = qp.get('market') || '';
       state.nicheFilter = qp.get('niche') || '';
+      /* UI-fix 2026-10-09: danh sach SKU cua bo loc ngach phai nam tren URL de tai lai / Back / Forward van dung ket qua. */
+      state.skuFilter = qp.get('skus') || '';
       state.watchFilter = qp.get('watch') || '';
       state.freeOnly = qp.get('free') === '1';
       state.rawPage = parseInt(qp.get('page'), 10) || 1;
@@ -1115,8 +1145,8 @@
                   <div style="min-width:0; flex:1;">
                     <div class="row-wrap">
                       <h3 class="raw-deep-header-title truncate" style="font-size: 16px; font-weight: 700; color:#fff; margin:0;">${esc(pData.title || ch.title || r.id)}</h3>
-                      <span style="font-size: 11px; font-family:monospace; padding:0.12rem 0.45rem; border-radius:0.375rem; background:var(--surface-2); color:var(--fg-muted); border:1px solid var(--border-strong);">${esc(r.id)}</span>
-                      <span style="font-size: 11px; font-weight:600; padding:0.12rem 0.45rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.4);">${esc(nicheDisplay)}</span>
+                      <span style="font-size: 12px; font-family:monospace; padding:0.12rem 0.45rem; border-radius:0.375rem; background:var(--surface-2); color:var(--fg-muted); border:1px solid var(--border-strong);">${esc(r.id)}</span>
+                      <span style="font-size: 12px; font-weight:600; padding:0.12rem 0.45rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.4);">${esc(nicheDisplay)}</span>
                     </div>
                   </div>
                 </div>
@@ -1168,22 +1198,22 @@
                 <!-- 4 KPI Cards -->
                 <div class="raw-deep-kpis" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.75rem;">
                 <div class="raw-deep-kpi-card" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:0.85rem 1rem;">
-                  <div style="font-size: 11px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Lượng người đăng ký (Subs)</div>
+                  <div style="font-size: 12px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Lượng người đăng ký (Subs)</div>
                   <div class="kpi-val" style="font-size: 20px; font-weight: 700; color:#38bdf8; margin-top:0.25rem;">${subsDisplay}</div>
                   <div class="kpi-sub" style="font-size: 12px; color:var(--fg-faint); margin-top:0.2rem;">30 ngày qua: <span style="color:#38bdf8; font-weight:600;">${subGained} subs</span></div>
                 </div>
                 <div class="raw-deep-kpi-card" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:0.85rem 1rem;">
-                  <div style="font-size: 11px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Tổng lượt xem (Views)</div>
+                  <div style="font-size: 12px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Tổng lượt xem (Views)</div>
                   <div class="kpi-val" style="font-size: 20px; font-weight: 700; color:#a855f7; margin-top:0.25rem;">${viewsDisplay}</div>
-                  <div class="kpi-sub" style="font-size: 12px; color:var(--fg-faint); margin-top:0.2rem;">30 ngày qua: <span style="color:#a855f7; font-weight:600;">${viewGained} views</span> ${g30.viewsGained < 0 ? `<span style="font-size: 11px; color:#38bdf8; font-weight:600;">(${vidAnomaly})</span>` : ''}</div>
+                  <div class="kpi-sub" style="font-size: 12px; color:var(--fg-faint); margin-top:0.2rem;">30 ngày qua: <span style="color:#a855f7; font-weight:600;">${viewGained} views</span> ${g30.viewsGained < 0 ? `<span style="font-size: 12px; color:#38bdf8; font-weight:600;">(${vidAnomaly})</span>` : ''}</div>
                 </div>
                 <div class="raw-deep-kpi-card" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:0.85rem 1rem;">
-                  <div style="font-size: 11px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Quy mô video & Doanh thu</div>
+                  <div style="font-size: 12px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Quy mô video & Doanh thu</div>
                   <div class="kpi-val" style="font-size: 20px; font-weight: 700; color:#10b981; margin-top:0.25rem;">${esc(vA.estimatedMonthlyRev || '$1,000+ / tháng')}</div>
-                  <div class="kpi-sub" style="font-size: 12px; color:var(--fg-faint); margin-top:0.2rem;">Tổng video: <span style="color:#fff; font-weight:600;">${videoCountDisplay} video</span> ${g30.videosPublished < 0 ? `<span style="font-size: 11px; color:#38bdf8; font-weight:600;">(${esc(vidAnomaly)})</span>` : `(${vidPublished} video mới)`}</div>
+                  <div class="kpi-sub" style="font-size: 12px; color:var(--fg-faint); margin-top:0.2rem;">Tổng video: <span style="color:#fff; font-weight:600;">${videoCountDisplay} video</span> ${g30.videosPublished < 0 ? `<span style="font-size: 12px; color:#38bdf8; font-weight:600;">(${esc(vidAnomaly)})</span>` : `(${vidPublished} video mới)`}</div>
                 </div>
                 <div class="raw-deep-kpi-card" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:0.85rem 1rem;">
-                  <div style="font-size: 11px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Tình trạng YPP & Sức khỏe</div>
+                  <div style="font-size: 12px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Tình trạng YPP & Sức khỏe</div>
                   <div class="kpi-val" style="font-size: 14px; font-weight:700; color:#f59e0b; margin-top:0.45rem;">${esc(stripDecorEmoji(vA.monetizationBadge) || (pData.longevityAudit ? pData.longevityAudit.sustainabilityStatus : 'Bình thường'))}</div>
                   <div class="kpi-sub" style="font-size: 12px; color:var(--fg-muted); margin-top:0.2rem;">${vA.daysSinceLatest != null ? 'Video gần nhất: ' + vA.daysSinceLatest + ' ngày trước' : ''}</div>
                 </div>
@@ -1209,7 +1239,7 @@
                 <div class="raw-proxy-grid" style="display:grid; grid-template-columns:minmax(120px,0.6fr) minmax(260px,2fr); gap:0.8rem; align-items:center; margin-top:0.65rem;">
                   <div style="background:var(--surface); border:1px solid rgba(14,165,233,0.28); border-radius:0.7rem; padding:0.75rem; text-align:center;">
                     <div style="font-size: 24px; font-weight: 700; color:#38bdf8;">${esc(String(retentionProxy.publicRetentionSignalScore ?? 'N/A'))}<span style="font-size: 13px; color:var(--fg-muted);">/100</span></div>
-                    <div style="font-size: 11px; color:var(--fg-muted); margin-top:0.15rem;">Điểm tín hiệu công khai</div>
+                    <div style="font-size: 12px; color:var(--fg-muted); margin-top:0.15rem;">Điểm tín hiệu công khai</div>
                   </div>
                   <div style="font-size: 12px; color:var(--fg-2); line-height:1.55;">
                     <p style="margin:0;"><strong style="color:#e0f2fe;">Ý nghĩa:</strong> ${esc(retentionProxy.interpretation || 'Dùng để ưu tiên video cần mổ xẻ.')}</p>
@@ -1219,15 +1249,15 @@
                 </div>
                 <div class="raw-proxy-subgrid" style="margin-top:0.7rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0.55rem;">
                   <div style="background:var(--surface); border:1px solid rgba(14,165,233,0.2); border-radius:0.6rem; padding:0.6rem;">
-                    <div style="font-size: 11px; color:#38bdf8; font-weight: 700; text-transform:uppercase;">Dùng làm gì</div>
-                    <div style="font-size: 11px; color:var(--fg-2); line-height:1.45; margin-top:0.25rem;">So sánh tương đối trong 10 video đã audit; ưu tiên kiểm tra hook, pacing và cấu trúc.</div>
+                    <div style="font-size: 12px; color:#38bdf8; font-weight: 700; text-transform:uppercase;">Dùng làm gì</div>
+                    <div style="font-size: 12px; color:var(--fg-2); line-height:1.45; margin-top:0.25rem;">So sánh tương đối trong 10 video đã audit; ưu tiên kiểm tra hook, pacing và cấu trúc.</div>
                   </div>
                   <div style="background:var(--surface); border:1px solid rgba(245,158,11,0.22); border-radius:0.6rem; padding:0.6rem;">
-                    <div style="font-size: 11px; color:#fbbf24; font-weight: 700; text-transform:uppercase;">Không được gọi là</div>
-                    <div style="font-size: 11px; color:#fde68a; line-height:1.45; margin-top:0.25rem;">AVD bao nhiêu phút, retention bao nhiêu %, hay watch time thật.</div>
+                    <div style="font-size: 12px; color:#fbbf24; font-weight: 700; text-transform:uppercase;">Không được gọi là</div>
+                    <div style="font-size: 12px; color:#fde68a; line-height:1.45; margin-top:0.25rem;">AVD bao nhiêu phút, retention bao nhiêu %, hay watch time thật.</div>
                   </div>
                 </div>
-                <div style="margin-top:0.55rem; font-size: 11px; color:var(--fg-muted); line-height:1.45;">Nguồn: ${esc(retentionProxy.channelEvidence?.source || 'top-videos.json + transcripts/*.json')} · YouTube Analytics thật chưa được cung cấp.</div>
+                <div style="margin-top:0.55rem; font-size: 12px; color:var(--fg-muted); line-height:1.45;">Nguồn: ${esc(retentionProxy.channelEvidence?.source || 'top-videos.json + transcripts/*.json')} · YouTube Analytics thật chưa được cung cấp.</div>
               </div>` : ''}
 
               ${yppNote && yppNote.status ? `
@@ -1239,11 +1269,11 @@
                 ${Array.isArray(yppNote.riskFactors) && yppNote.riskFactors.length ? `
                 <div class="raw-proxy-subgrid" style="margin-top:0.55rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:0.55rem;">
                   <div style="background:var(--surface); border:1px solid rgba(251,113,133,0.25); border-radius:0.65rem; padding:0.65rem;">
-                    <div style="font-size: 11px; color:#fb7185; font-weight: 700; text-transform:uppercase; margin-bottom:0.35rem;">Risk Factors</div>
+                    <div style="font-size: 12px; color:#fb7185; font-weight: 700; text-transform:uppercase; margin-bottom:0.35rem;">Risk Factors</div>
                     <ul style="margin:0 0 0 1rem; padding:0; color:#fda4af; font-size: 12px; line-height:1.5;">${yppNote.riskFactors.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
                   </div>
                   <div style="background:var(--surface); border:1px solid rgba(52,211,153,0.25); border-radius:0.65rem; padding:0.65rem;">
-                    <div style="font-size: 11px; color:#34d399; font-weight: 700; text-transform:uppercase; margin-bottom:0.35rem;">Required Mitigations</div>
+                    <div style="font-size: 12px; color:#34d399; font-weight: 700; text-transform:uppercase; margin-bottom:0.35rem;">Required Mitigations</div>
                     <ul style="margin:0 0 0 1rem; padding:0; color:#bbf7d0; font-size: 12px; line-height:1.5;">${(yppNote.requiredMitigations || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul>
                   </div>
                 </div>` : ''}
@@ -1255,7 +1285,7 @@
               <div id="raw-data-gaps" style="background:rgba(56,189,248,0.06); border:1px solid rgba(56,189,248,0.28); border-radius:0.875rem; padding:0.65rem 1rem;">
                 <div style="font-size: 12px; font-weight: 700; color:#38bdf8; margin-bottom:0.4rem;">Ghi chú kiểm định (${dataGaps.length} mục):</div>
                 <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
-                  ${dataGaps.map(g => `<span style="font-size: 11px; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); color:#38bdf8; padding:0.12rem 0.5rem; border-radius:0.4rem;">${ico('info', 14)} ${esc(g)}</span>`).join('')}
+                  ${dataGaps.map(g => `<span style="font-size: 12px; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); color:#38bdf8; padding:0.12rem 0.5rem; border-radius:0.4rem;">${ico('info', 14)} ${esc(g)}</span>`).join('')}
                 </div>
               </div>`;
                 }
@@ -1277,10 +1307,10 @@
                     <span>${ico('check', 14)}</span>
                     <span style="font-size: 12px; font-weight: 700; color:#34d399;">Kiểm định Data Gaps — Hoàn tất (${gapEntries.length}/${gapEntries.length} resolved)</span>
                   </div>
-                  <span style="font-size: 11px; color:var(--fg-faint);">Audit lần cuối: ${lastAuditLabel}</span>
+                  <span style="font-size: 12px; color:var(--fg-faint);">Audit lần cuối: ${lastAuditLabel}</span>
                 </div>
                 <div style="margin-top:0.5rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
-                  ${gapEntries.map(([key, gap]) => `<span style="font-size: 11px; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:#34d399; padding:0.12rem 0.5rem; border-radius:0.4rem; font-weight:600;" title="${esc(gap.currentEvidence || '')}">${ico('check', 14)} ${esc(GAP_LABELS[key] || key)}</span>`).join('')}
+                  ${gapEntries.map(([key, gap]) => `<span style="font-size: 12px; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:#34d399; padding:0.12rem 0.5rem; border-radius:0.4rem; font-weight:600;" title="${esc(gap.currentEvidence || '')}">${ico('check', 14)} ${esc(GAP_LABELS[key] || key)}</span>`).join('')}
                 </div>
               </div>`;
                 }
@@ -1291,7 +1321,7 @@
                     <span>${ico('alert-triangle', 14)}</span>
                     <span style="font-size: 12px; font-weight: 700; color:#fbbf24;">Data Gaps cần bổ sung (${openGaps.length}/${gapEntries.length} chưa khóa)</span>
                   </div>
-                  <span style="font-size: 11px; color:var(--fg-faint);">Audit lần cuối: ${lastAuditLabel}</span>
+                  <span style="font-size: 12px; color:var(--fg-faint);">Audit lần cuối: ${lastAuditLabel}</span>
                 </div>
                 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0.5rem;">
                   ${gapEntries.map(([key, gap]) => {
@@ -1305,9 +1335,9 @@
                   <div style="background:var(--surface); border:1px solid ${cardBorder}; border-radius:0.65rem; padding:0.65rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:0.4rem; margin-bottom:0.3rem;">
                       <div style="font-size: 12px; color:${labelColor}; font-weight: 700;">${esc(GAP_LABELS[key] || key)}</div>
-                      <span style="font-size: 11px; font-weight:700; padding:0.1rem 0.35rem; border-radius:0.3rem; background:${badgeBg}; color:${labelColor};">${esc(gap.status || '')}</span>
+                      <span style="font-size: 12px; font-weight:700; padding:0.1rem 0.35rem; border-radius:0.3rem; background:${badgeBg}; color:${labelColor};">${esc(gap.status || '')}</span>
                     </div>
-                    <p style="font-size: 11px; color:var(--fg-muted); line-height:1.45; margin:0;" title="${esc(ev)}">${esc(evShort)}</p>
+                    <p style="font-size: 12px; color:var(--fg-muted); line-height:1.45; margin:0;" title="${esc(ev)}">${esc(evShort)}</p>
                   </div>`;
                   }).join('')}
                 </div>
@@ -1332,10 +1362,10 @@
                 const isBenchmarkCleared = openGaps.length === 0;
 
                 const statusBadgeHtml = isBenchmarkCleared
-                  ? `<span style="font-size: 11px; font-weight: 700; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(14,165,233,0.18); border:1px solid rgba(14,165,233,0.5); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
+                  ? `<span style="font-size: 12px; font-weight: 700; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(14,165,233,0.18); border:1px solid rgba(14,165,233,0.5); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
                       ${ico('check', 14)} Hồ sơ Benchmark đối thủ đã khóa (Sẵn sàng Pilot)
                     </span>`
-                  : `<span style="font-size: 11px; font-weight: 700; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(245,158,11,0.18); border:1px solid rgba(245,158,11,0.5); color:#fbbf24; display:inline-flex; align-items:center; gap:0.25rem;">
+                  : `<span style="font-size: 12px; font-weight: 700; padding:0.15rem 0.6rem; border-radius:0.375rem; background:rgba(245,158,11,0.18); border:1px solid rgba(245,158,11,0.5); color:#fbbf24; display:inline-flex; align-items:center; gap:0.25rem;">
                       ${ico('alert-triangle', 14)} Đang thẩm định đối thủ (${openGaps.length} gaps chưa khóa)
                     </span>`;
 
@@ -1390,7 +1420,7 @@
                       ${vd.masterVisualPrompt ? `
                       <div style="border-top:1px solid var(--border); padding-top:0.4rem;">
                         <strong style="color:#38bdf8; font-size: 12px;">MASTER VISUAL PROMPT (SHOT 1 - MACRO RELIC):</strong>
-                        <div style="margin-top:0.25rem; font-size: 11px; color:var(--fg-2); font-family:monospace; background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.45rem 0.6rem; line-height:1.45; word-break:break-word;">
+                        <div style="margin-top:0.25rem; font-size: 12px; color:var(--fg-2); font-family:monospace; background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.45rem 0.6rem; line-height:1.45; word-break:break-word;">
                           ${esc(vd.masterVisualPrompt)}
                         </div>
                       </div>` : ''}
@@ -1400,14 +1430,14 @@
                         <strong style="color:#a855f7; font-size: 12px;">4 CẢNH QUAY CỐT LÕI (MULTI-ANGLE ARCHETYPES):</strong>
                         <div style="margin-top:0.25rem; display:flex; flex-direction:column; gap:0.35rem; max-height:140px; overflow-y:auto; padding-right:0.25rem;">
                           ${vd.multiAngleArchetypes.map(a => `
-                          <div style="background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.35rem 0.5rem; font-size: 11px;">
+                          <div style="background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.35rem 0.5rem; font-size: 12px;">
                             <span style="color:#fcd34d; font-weight:700;">${esc(a.shotType)}:</span> <span class="c-slate-400">${esc(a.description)}</span>
                           </div>`).join('')}
                         </div>
                       </div>` : ''}
 
                       ${vd.cameraMotionSOP && vd.cameraMotionSOP.length ? `
-                      <div style="border-top:1px solid var(--border); padding-top:0.4rem; font-size: 11px; color:var(--fg-muted);">
+                      <div style="border-top:1px solid var(--border); padding-top:0.4rem; font-size: 12px; color:var(--fg-muted);">
                         <strong class="c-emerald">CHỈ THỊ MOTION VIDEO AI (KLING / RUNWAY):</strong>
                         <ul style="margin:0.2rem 0 0 1rem; padding:0; line-height:1.4;">
                           ${vd.cameraMotionSOP.map(m => `<li class="c-slate-300">${esc(m)}</li>`).join('')}
@@ -1425,8 +1455,8 @@
                         <span>${ico('file-edit', 14)}</span> Khuôn Đúc Kịch Bản (Script Blueprint)
                       </div>
                       <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;">
-                        <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(refVid)}" data-title="${esc(refTitle)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(refViews)}" style="font-size: 11px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('scroll-text', 14)} Kịch Bản Gốc (${esc(refVid ? refVid.slice(0,6) : 'Sub')})</button>
-                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" target="_blank" rel="noopener noreferrer" style="font-size: 11px; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;" class="hover:bg-purple-600 hover:text-white transition">
+                        <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(refVid)}" data-title="${esc(refTitle)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(refViews)}" style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('scroll-text', 14)} Kịch Bản Gốc (${esc(refVid ? refVid.slice(0,6) : 'Sub')})</button>
+                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;" class="hover:bg-purple-600 hover:text-white transition">
                           <span>${ico('file-text', 14)} SOP North Effect</span> ${ico('arrow-up-right', 14)}
                         </a>
                         <button type="button" class="btn-copy-master-prompt" style="font-size: 12px; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy Full Master Prompt</button>
@@ -1444,19 +1474,19 @@
                           <span style="font-size: 12px; font-weight:700; color:#34d399; display:flex; align-items:center; gap:0.3rem;">
                             <span>${ico('zap', 14)}</span> Công Thức North Effect (70/30 Part-by-Part SOP):
                           </span>
-                          <span style="font-size: 11px; color:var(--fg-muted); background:var(--surface-2); padding:0.1rem 0.4rem; border-radius:0.25rem;">
+                          <span style="font-size: 12px; color:var(--fg-muted); background:var(--surface-2); padding:0.1rem 0.4rem; border-radius:0.25rem;">
                             10–15 Parts · 1000–1100 từ/Part · Lệnh "CONTINUE"
                           </span>
                         </div>
-                        <div style="font-size: 11px; color:var(--fg-muted); line-height:1.4;">
+                        <div style="font-size: 12px; color:var(--fg-muted); line-height:1.4;">
                           ${esc(sb.masterScriptPromptShort || 'Giữ 70% mạch kịch bản & dẫn chứng gốc của đối thủ; Bổ sung 30% góc nhìn, bối cảnh lịch sử và phản biện học thuật mới. Chia Part viết nối tiếp để không bị giới hạn token.')}
                         </div>
                         
                         <!-- Box Prompt Đầy Đủ Có Thể Cuộn & Đọc Trực Tiếp -->
                         ${sb.masterScriptPrompt ? `
                         <div style="position:relative; margin-top:0.3rem;">
-                          <pre style="margin:0; max-height:140px; overflow-y:auto; background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.6rem 0.75rem; font-size: 11px; color:var(--fg-2); font-family:monospace; white-space:pre-wrap; word-break:break-word; line-height:1.45;">${esc(sb.masterScriptPrompt)}</pre>
-                          <div style="position:absolute; top:0.35rem; right:0.5rem; font-size: 11px; color:var(--fg-faint); background:rgba(15,23,42,0.85); padding:0.1rem 0.35rem; border-radius:0.25rem; pointer-events:none;">Full Training Prompt</div>
+                          <pre style="margin:0; max-height:140px; overflow-y:auto; background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.6rem 0.75rem; font-size: 12px; color:var(--fg-2); font-family:monospace; white-space:pre-wrap; word-break:break-word; line-height:1.45;">${esc(sb.masterScriptPrompt)}</pre>
+                          <div style="position:absolute; top:0.35rem; right:0.5rem; font-size: 12px; color:var(--fg-faint); background:rgba(15,23,42,0.85); padding:0.1rem 0.35rem; border-radius:0.25rem; pointer-events:none;">Full Training Prompt</div>
                         </div>` : ''}
                       </div>
                     </div>
@@ -1481,7 +1511,7 @@
                       ${pkg.cleanThumbnailPrompt ? `
                       <div style="border-top:1px solid var(--border); padding-top:0.4rem;">
                         <strong style="color:#38bdf8; font-size: 12px;">AI THUMBNAIL PROMPT (NANO BANANA PRO / FLUX.2 PRO):</strong>
-                        <div style="margin-top:0.25rem; font-size: 11px; color:var(--fg-2); font-family:monospace; background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.45rem 0.6rem; line-height:1.45; word-break:break-word;">
+                        <div style="margin-top:0.25rem; font-size: 12px; color:var(--fg-2); font-family:monospace; background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.45rem 0.6rem; line-height:1.45; word-break:break-word;">
                           ${esc(pkg.cleanThumbnailPrompt)}
                         </div>
                       </div>` : ''}
@@ -1538,7 +1568,7 @@
                     ${lp.map(s => `
                     <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.5rem; padding:0.65rem 0.8rem; display:flex; flex-direction:column; gap:0.3rem;">
                       <div class="row-wrap">
-                        <span style="font-size: 11px; font-weight: 700; background:#2563eb; color:#fff; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:monospace; flex-shrink:0;">${s.step}</span>
+                        <span style="font-size: 12px; font-weight: 700; background:#2563eb; color:#fff; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:monospace; flex-shrink:0;">${s.step}</span>
                         <strong style="font-size: 12px; color:#fcd34d;">${esc(s.title)}</strong>
                       </div>
                       <p style="font-size: 12px; color:var(--fg-muted); margin:0; line-height:1.45;">${esc(s.detail)}</p>
@@ -1574,7 +1604,7 @@
                     <div>
                       <div class="row-wrap">
                         <h4 style="font-size: 14px; font-weight: 700; color:#fff; margin:0;">Video Demo Mẫu Đại Diện Tuyến Nội Dung</h4>
-                        <span style="font-size: 11px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5; display:inline-flex; align-items:center; gap:0.25rem;">
+                        <span style="font-size: 12px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5; display:inline-flex; align-items:center; gap:0.25rem;">
                           ${ico('flame', 14)} Tuyến Gần Nhất & Nổi Bật Nhất
                         </span>
                       </div>
@@ -1630,7 +1660,7 @@
                       <div class="row-wrap">
                         <h4 style="font-size: 14px; font-weight: 700; color:#fff; margin:0;">Mẫu Giọng Chuẩn Của Kênh (Voice DNA Studio)</h4>
                         ${(voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) ? `
-                        <span style="font-size: 11px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(14,165,233,0.2); border:1px solid rgba(14,165,233,0.4); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
+                        <span style="font-size: 12px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.375rem; background:rgba(14,165,233,0.2); border:1px solid rgba(14,165,233,0.4); color:#38bdf8; display:inline-flex; align-items:center; gap:0.25rem;">
                           ${esc(voiceProfile.voiceCharacteristics.languageFlag)} ${esc(voiceProfile.voiceCharacteristics.audioLanguage || '')}
                         </span>` : ''}
                       </div>
@@ -1648,12 +1678,12 @@
                 <!-- Voice DNA Characteristics Grid -->
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.65rem; font-size: 13px;">
                   <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.625rem; padding:0.75rem 0.85rem;">
-                    <div style="color:var(--fg-muted); font-size: 11px; text-transform:uppercase; font-weight:600;">Đặc tính giọng</div>
+                    <div style="color:var(--fg-muted); font-size: 12px; text-transform:uppercase; font-weight:600;">Đặc tính giọng</div>
                     <div style="color:#38bdf8; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.genderEstimate)}</div>
                     <div style="color:var(--fg-muted); font-size: 12px; margin-top:0.15rem;">Độ tuổi: <span class="c-slate-100">${esc(voiceProfile.voiceCharacteristics.ageRange || 'Chưa rõ')}</span></div>
                   </div>
                   <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.625rem; padding:0.75rem 0.85rem;">
-                    <div style="color:var(--fg-muted); font-size: 11px; text-transform:uppercase; font-weight:600;">Ngôn ngữ giọng đọc</div>
+                    <div style="color:var(--fg-muted); font-size: 12px; text-transform:uppercase; font-weight:600;">Ngôn ngữ giọng đọc</div>
                     <div style="color:#38bdf8; font-weight:700; margin-top:0.2rem; display:flex; align-items:center; gap:0.35rem;">
                       <span>${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || '')}${(voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) ? '' : ico('globe', 14)}</span>
                       <span>${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.audioLanguage) || 'Tiếng Anh')}</span>
@@ -1661,11 +1691,11 @@
                     <div style="color:var(--fg-muted); font-size: 12px; margin-top:0.15rem;">Phương ngữ: <span class="c-slate-100">${esc((voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageDialect) || 'Standard')}</span></div>
                   </div>
                   <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.625rem; padding:0.75rem 0.85rem;">
-                    <div style="color:var(--fg-muted); font-size: 11px; text-transform:uppercase; font-weight:600;">Tốc độ nói thực tế (WPM)</div>
+                    <div style="color:var(--fg-muted); font-size: 12px; text-transform:uppercase; font-weight:600;">Tốc độ nói thực tế (WPM)</div>
                     <div style="color:#f59e0b; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.actualPaceWPM || voiceProfile.voiceCharacteristics.estimatedPace)}</div>
                   </div>
                   <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.625rem; padding:0.75rem 0.85rem; grid-column: 1 / -1;">
-                    <div style="color:var(--fg-muted); font-size: 11px; text-transform:uppercase; font-weight:600;">Tông giọng & Cảm xúc</div>
+                    <div style="color:var(--fg-muted); font-size: 12px; text-transform:uppercase; font-weight:600;">Tông giọng & Cảm xúc</div>
                     <div style="color:#10b981; font-weight:700; margin-top:0.2rem;">${esc(voiceProfile.voiceCharacteristics.toneAndStyle)}</div>
                     ${voiceProfile.voiceCharacteristics.targetAudience ? `<div style="color:var(--fg-muted); font-size: 12px; margin-top:0.2rem;">Khán giả mục tiêu: <span class="c-slate-300">${esc(voiceProfile.voiceCharacteristics.targetAudience)}</span></div>` : ''}
                   </div>
@@ -1687,7 +1717,7 @@
                       <span style="font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.3rem;">
                         <span class="c-sky">Scene</span> <span style="color:var(--fg-muted); font-weight:400;">(Bối cảnh & Không gian âm học)</span>
                       </span>
-                      <button type="button" class="btn-copy-scene" style="font-size: 11px; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Scene</button>
+                      <button type="button" class="btn-copy-scene" style="font-size: 12px; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Scene</button>
                     </div>
                     <div style="background:var(--surface-2); border:1px solid var(--border); border-radius:0.5rem; padding:0.55rem 0.75rem; font-size: 12px; color:var(--fg); font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.scene)}</div>
                   </div>
@@ -1698,7 +1728,7 @@
                       <span style="font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.3rem;">
                         <span class="c-amber-500">Sample Context</span> <span style="color:var(--fg-muted); font-weight:400;">(Ngữ cảnh biểu cảm & Giọng điệu)</span>
                       </span>
-                      <button type="button" class="btn-copy-context" style="font-size: 11px; color:#f59e0b; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Context</button>
+                      <button type="button" class="btn-copy-context" style="font-size: 12px; color:#f59e0b; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Context</button>
                     </div>
                     <div style="background:var(--surface-2); border:1px solid var(--border); border-radius:0.5rem; padding:0.55rem 0.75rem; font-size: 12px; color:#fef3c7; font-family:monospace; line-height:1.45;">${esc(voiceProfile.promptingStudio.sampleContext)}</div>
                   </div>
@@ -1710,7 +1740,7 @@
                       <span style="font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.3rem;">
                         <span>${ico('user', 14)}</span> <span class="c-green">${esc(voiceProfile.promptingStudio.speakerTag || 'Speaker 1')}</span> <span style="color:var(--fg-muted); font-weight:400;">(Đoạn thoại mẫu đối soát)</span>
                       </span>
-                      <button type="button" class="btn-copy-speech-block" style="font-size: 11px; color:#10b981; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Speech Block</button>
+                      <button type="button" class="btn-copy-speech-block" style="font-size: 12px; color:#10b981; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Speech Block</button>
                     </div>
                     <div style="background:var(--surface-2); border:1px solid var(--border); border-radius:0.5rem; padding:0.6rem 0.75rem; font-size: 12px; color:var(--fg-2); line-height:1.5; font-style:italic;">"${esc(voiceProfile.promptingStudio.sampleSpeechBlock)}"</div>
                   </div>` : ''}
@@ -1723,7 +1753,7 @@
                     <div style="font-size: 13px; font-weight:700; color:#c084fc; display:flex; align-items:center; gap:0.35rem;">
                       <span>${ico('zap', 14)}</span> Cấu Hình Clone Voice Trên ElevenLabs:
                     </div>
-                    <span style="font-size: 11px; background:rgba(168,85,247,0.15); color:#d8b4fe; padding:0.15rem 0.5rem; border-radius:0.375rem; border:1px solid rgba(168,85,247,0.3);">${esc(voiceProfile.elevenlabsCloningConfiguration.recommendedModel || 'Multilingual v2')}</span>
+                    <span style="font-size: 12px; background:rgba(168,85,247,0.15); color:#d8b4fe; padding:0.15rem 0.5rem; border-radius:0.375rem; border:1px solid rgba(168,85,247,0.3);">${esc(voiceProfile.elevenlabsCloningConfiguration.recommendedModel || 'Multilingual v2')}</span>
                   </div>
 
                   <div style="font-size: 13px; color:var(--fg-2); display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;">
@@ -1750,7 +1780,7 @@
                   <div style="margin-top:0.25rem;">
                     <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:var(--fg-muted); margin-bottom:0.25rem;">
                       <span>Voice Design Prompt (Dùng tạo giọng AI không cần clone):</span>
-                      <button type="button" class="btn-copy-voice-design" style="font-size: 11px; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Prompt</button>
+                      <button type="button" class="btn-copy-voice-design" style="font-size: 12px; color:#38bdf8; background:none; border:none; cursor:pointer; text-decoration:underline;">${ico('clipboard-copy', 14)} Copy Prompt</button>
                     </div>
                     <div style="background:var(--surface-2); border:1px solid var(--border); border-radius:0.5rem; padding:0.5rem 0.75rem; font-size: 12px; color:var(--fg-2); font-style:italic;">"${esc(voiceProfile.elevenlabsCloningConfiguration.voiceDesignPrompt)}"</div>
                   </div>` : ''}
@@ -1788,7 +1818,7 @@
                   <div style="font-size: 14px; font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.4rem;">
                     <span>${ico('flame', 14)}</span> Top Video Đang Phát Trên YouTube (YouTube Live - ${tvList.length} video):
                   </div>
-                  <span style="font-size: 11px; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Sắp xếp: Cao nhất đến thấp nhất (Most Viewed)</span>
+                  <span style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Sắp xếp: Cao nhất đến thấp nhất (Most Viewed)</span>
                 </div>
                 <p style="font-size: 12px; color:var(--fg-muted); margin:0 0 0.85rem 0;">100% video dưới đây đang hoạt động thực tế trên YouTube, có đầy đủ Sub song ngữ 1:1, timestamps và phân tích kịch bản Voice AI.</p>
                 ${tvList.length ? `
@@ -1803,10 +1833,10 @@
                         <img src="${esc(v.thumbnail || ('https://i.ytimg.com/vi/' + v.videoId + '/mqdefault.jpg'))}" alt="${esc(v.title)}" width="320" height="180" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;" class="group-hover:scale-105">
                         
                         <!-- Rank Badge -->
-                        <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size: 11px; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(var(--h2-badge-blur)); border:1px solid rgba(255,255,255,0.15); z-index:var(--h2-z-base);" title="Display Rank theo views giảm dần${sourceRank ? ' · Source Rank gốc: #' + sourceRank : ''}">#${displayRank}</span>
+                        <span style="position:absolute; top:0.35rem; left:0.35rem; background:rgba(0,0,0,0.8); color:#fff; font-size: 12px; font-weight:700; padding:0.15rem 0.4rem; border-radius:0.25rem; backdrop-filter:blur(var(--h2-badge-blur)); border:1px solid rgba(255,255,255,0.15); z-index:var(--h2-z-base);" title="Display Rank theo views giảm dần${sourceRank ? ' · Source Rank gốc: #' + sourceRank : ''}">#${displayRank}</span>
                         
                         <!-- Mini Open YouTube Icon Link -->
-                        <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" class="js-stop-prop hover:text-white hover:bg-red-600 transition-colors" style="position:absolute; top:0.35rem; right:0.35rem; background:rgba(0,0,0,0.75); color:var(--fg-muted); font-size: 11px; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; text-decoration:none; display:inline-flex; align-items:center; gap:0.2rem; border:1px solid rgba(255,255,255,0.1); z-index:var(--h2-z-base);" title="Mở tab YouTube ngoài">
+                        <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" class="js-stop-prop hover:text-white hover:bg-red-600 transition-colors" style="position:absolute; top:0.35rem; right:0.35rem; background:rgba(0,0,0,0.75); color:var(--fg-muted); font-size: 12px; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; text-decoration:none; display:inline-flex; align-items:center; gap:0.2rem; border:1px solid rgba(255,255,255,0.1); z-index:var(--h2-z-base);" title="Mở tab YouTube ngoài">
                           <span>${ico('arrow-up-right', 14)} YT</span>
                         </a>
 
@@ -1818,7 +1848,7 @@
                         </div>
 
                         <!-- Duration Badge -->
-                        ${v.duration ? `<span style="position:absolute; bottom:0.35rem; right:0.35rem; background:rgba(0,0,0,0.85); color:#fff; font-size: 11px; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; z-index:var(--h2-z-base);">${formatDuration(v.duration)}</span>` : ''}
+                        ${v.duration ? `<span style="position:absolute; bottom:0.35rem; right:0.35rem; background:rgba(0,0,0,0.85); color:#fff; font-size: 12px; font-weight:600; padding:0.15rem 0.4rem; border-radius:0.25rem; z-index:var(--h2-z-base);">${formatDuration(v.duration)}</span>` : ''}
                       </div>
 
                       <!-- Card Content -->
@@ -1832,19 +1862,19 @@
                           ${v.vph != null ? `<span class="inline-flex items-center gap-1">${ico('zap', 14)} <strong class="c-amber-500">${Math.round(v.vph)}</strong> VPH</span>` : ''}
                           <span class="inline-flex items-center gap-1">${ico('calendar', 14)} ${v.publishedAt ? v.publishedAt.slice(0, 10) : ''}</span>
                         </div>
-                        ${sourceRank ? `<div style="font-size: 11px; color:var(--fg-faint); background:var(--surface); border:1px solid var(--border); border-radius:0.4rem; padding:0.2rem 0.35rem;">Display Rank: <b class="c-slate-100">#${displayRank}</b> · Source Rank gốc: <b style="color:#fbbf24;">#${sourceRank}</b></div>` : ''}
+                        ${sourceRank ? `<div style="font-size: 12px; color:var(--fg-faint); background:var(--surface); border:1px solid var(--border); border-radius:0.4rem; padding:0.2rem 0.35rem;">Display Rank: <b class="c-slate-100">#${displayRank}</b> · Source Rank gốc: <b style="color:#fbbf24;">#${sourceRank}</b></div>` : ''}
 
                         <!-- Unified Action Buttons: Xem Video (Cinema) + Mở YT + Xem Sub -->
                         <div style="display:grid; grid-template-columns:1fr auto; gap:0.35rem; margin-top:0.25rem;">
-                          <button type="button" class="js-quick-video py-1.5 px-2.5 rounded-lg bg-rose-600/30 hover:bg-rose-600/80 border border-rose-500/40 hover:border-rose-400 text-brand-200 hover:text-white font-semibold text-2xs flex items-center justify-center gap-1.5 transition cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Phát video trực tiếp tại chỗ">
+                          <button type="button" class="js-quick-video py-1.5 px-2.5 rounded-lg bg-rose-600/30 hover:bg-rose-600/80 border border-rose-500/40 hover:border-rose-400 text-brand-200 hover:text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Phát video trực tiếp tại chỗ">
                             <span style="font-size: 12px; display:inline-flex;">${ico('play', 14)}</span> Xem Video
                           </button>
-                          <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" style="padding:0.35rem 0.65rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-muted); font-size:11px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.2rem;" class="hover:text-white hover:bg-slate-700 transition" title="Mở trên YouTube tab mới">
+                          <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" style="padding:0.35rem 0.65rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-muted); font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.2rem;" class="hover:text-white hover:bg-slate-700 transition" title="Mở trên YouTube tab mới">
                             ${ico('arrow-up-right', 14)} YT
                           </a>
                         </div>
 
-                        <button type="button" class="btn-open-video-sub w-full py-1.5 px-2 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/70 border border-indigo-500/40 text-indigo-200 hover:text-white font-semibold text-2xs flex items-center justify-center gap-1.5 transition-colors cursor-pointer" data-dossier="${esc(dossierPath)}" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(v.views))}">
+                        <button type="button" class="btn-open-video-sub w-full py-1.5 px-2 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/70 border border-indigo-500/40 text-indigo-200 hover:text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors cursor-pointer" data-dossier="${esc(dossierPath)}" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(v.views))}">
                           <span>${ico('scroll-text', 14)} Xem Sub, Lời Thoại & Kịch Bản AI</span> →
                         </button>
                       </div>
@@ -1863,12 +1893,12 @@
                   <div style="font-size: 14px; font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.4rem;">
                     <span>${ico('trending-up', 14)}</span> Tốc Độ Tăng Trưởng Thực Tế 7 Ngày Qua (vidIQ Live Velocity):
                   </div>
-                  <span style="font-size: 11px; color:#10b981; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600; display:inline-flex; align-items:center; gap:0.25rem;">${ico('check', 14)} Live Verified API (${vRec[vRec.length - 1] ? (vRec[vRec.length - 1].videos + ' video hiện hành') : ''})</span>
+                  <span style="font-size: 12px; color:#10b981; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600; display:inline-flex; align-items:center; gap:0.25rem;">${ico('check', 14)} Live Verified API (${vRec[vRec.length - 1] ? (vRec[vRec.length - 1].videos + ' video hiện hành') : ''})</span>
                 </div>
                 <div style="overflow-x:auto;">
                   <table style="width:100%; border-collapse:collapse; font-size: 12px; text-align:left;">
                     <thead>
-                      <tr style="border-bottom:1px solid var(--border-strong); color:var(--fg-muted); text-transform:uppercase; font-size: 11px;">
+                      <tr style="border-bottom:1px solid var(--border-strong); color:var(--fg-muted); text-transform:uppercase; font-size: 12px;">
                         <th style="padding:0.4rem 0.6rem;">Ngày theo dõi</th>
                         <th style="padding:0.4rem 0.6rem;">Lượng Subs</th>
                         <th style="padding:0.4rem 0.6rem;">Tổng Views</th>
@@ -1904,7 +1934,7 @@
                   <div style="font-size: 14px; font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.4rem;">
                     <span>${ico('target', 14)}</span> Bóc Tách Đột Phá Outlier Từ Ảnh Chụp Màn Hình Gốc (OCR Vision Snapshot):
                   </div>
-                  <span style="font-size: 11px; color:#f59e0b; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Snapshot Lúc Phát Hiện (${esc(ocr.scannedAt || '2026-09-05')})</span>
+                  <span style="font-size: 12px; color:#f59e0b; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Snapshot Lúc Phát Hiện (${esc(ocr.scannedAt || '2026-09-05')})</span>
                 </div>
                 <div style="font-size: 12px; color:var(--fg-muted); margin-bottom:0.75rem; background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.2); border-radius:0.5rem; padding:0.5rem 0.75rem; line-height:1.45;">
                   ${ico('camera', 14)} <strong class="c-amber">Ngữ cảnh thời gian:</strong> Danh sách dưới đây được bóc tách từ ảnh raw gốc (<em>${esc(r.fileName || '')}</em>) lúc kênh mới bứt phá (${ocr.subsText ? ('Quy mô lúc chụp: ' + esc(ocr.subsText) + ' • ' + esc(ocr.videoCountText || '')) : 'Ảnh raw'}). Người chụp lúc đó dùng vidIQ Extension sắp xếp theo độ nổi tiếng (Sort by Popularity). Các video có thể đã được chủ kênh chuyển về Riêng tư hoặc đổi tiêu đề sau này.
@@ -1918,7 +1948,7 @@
                         <span class="inline-flex items-center gap-1">${ico('eye', 14)} <strong class="c-sky">${esc(vr.viewsText || '')}</strong></span>
                         <span style="background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.4); padding:0.1rem 0.4rem; border-radius:0.25rem; font-weight:700;">${esc(vr.outlier || '')}</span>
                       </div>
-                      <div style="display:flex; align-items:center; justify-content:space-between; font-size: 11px; color:var(--fg-faint);">
+                      <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:var(--fg-faint);">
                         <span class="inline-flex items-center gap-1">${ico('zap', 14)} ${esc(vr.vph || '')}</span>
                         <span class="inline-flex items-center gap-1">${ico('clock', 14)} ${esc(vr.age || '')}</span>
                       </div>
@@ -2490,7 +2520,7 @@
                 <div class="row-wrap">
                   <span style="font-size: 16px; display:inline-flex;">${ico('clapperboard', 20)}</span>
                   <h3 style="font-size: 14px; font-weight:700; color:#fff; margin:0;" class="truncate">${esc(displayChannel)}</h3>
-                  <span style="font-size: 11px; font-weight:700; padding:0.1rem 0.45rem; border-radius:0.35rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;">${esc(badge)}</span>
+                  <span style="font-size: 12px; font-weight:700; padding:0.1rem 0.45rem; border-radius:0.35rem; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.4); color:#fca5a5;">${esc(badge)}</span>
                 </div>
                 <p style="font-size: 12px; color:var(--fg-muted); margin:0.2rem 0 0 0;" class="truncate" title="${esc(videoTitle)}">${esc(videoTitle)}</p>
               </div>

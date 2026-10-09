@@ -109,7 +109,7 @@
 .transcript-line:hover, .transcript-line.is-active { background: var(--surface-2); }
 .transcript-line .transcript-time {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--fg-muted);
   background: var(--surface);
@@ -142,7 +142,7 @@
   background: var(--surface-2) !important;
   border: 1px solid var(--border) !important;
   color: var(--fg-2) !important;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 2px;
@@ -329,3 +329,17 @@
    moi, khong tinh la dich chuyen. Nhanh loi cung dat aria-busy=false nen noi dung van hien. */
 #playerMain[aria-busy="true"] > :not(:first-child) { display: none !important; } /* !important: #playerTabSelector co display:flex !important @<1024 */
 body:has(#playerMain[aria-busy="true"]) .h2-shell-footer { display: none !important; }
+
+/* UI-standard (2026-10-09): khoi dieu khien bai hoc tren man hinh rong (> 640px).
+   Moi dieu khien cao 44px, cung chieu cao voi "Bai truoc / Bai tiep theo" va voi ban tablet (h2dev-shell.css muc 10b),
+   de PC va iPad giong nhau. Hang 1: dieu huong + trang thai ("Dang do / Chua xem / Da xem") cung hang.
+   Hang 2 (chi khi dang xem do): "Xem tiep" chiem ca hang. Hang 3: ghi chu + "Bo tien do".
+   Khoang cach trong nhom 8px; hang ghi chu tach nhom bang khoang cach gap doi. */
+@media (min-width: 641px) {
+  .player-controls > div:first-child { display: grid !important; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 8px; row-gap: 8px; }
+  .player-controls > div:first-child > div:first-child { display: flex !important; flex-wrap: wrap; align-items: center; gap: 8px; min-width: 0; }
+  .player-controls #pstate { display: contents; }
+  .player-controls #btnWatched { grid-column: 2; grid-row: 1; justify-self: end; min-height: 44px; }
+  .player-controls #btnResume { grid-column: 1 / -1; grid-row: 2; width: 100%; justify-content: center; min-height: 44px; }
+  .player-controls #btnClearProgress, .player-controls #noteInput { min-height: 44px; }
+}

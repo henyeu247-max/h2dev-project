@@ -194,7 +194,7 @@
     }
     /* 2026-09-30: sub (tab phu Chien luoc) dong bo URL khi bam — truoc day chi openTab moi ghi sub, bam tab phu
        khong doi URL -> tai lai / chia se link luon ve "4 Nguyen tac". replaceState nhu dp/np. */
-    const CL_SUBTABS = ['principles', 'workflow', 'distribution', 'policy', 'all'];
+    const CL_SUBTABS = ['principles', 'workflow', 'matrix144', 'distribution', 'policy', 'all'];
     function syncClSubUrl() {
       try {
         const u = new URL(location.href);
@@ -378,6 +378,29 @@
           if (restored) restored.focus();
         });
       }
+    });
+
+    document.addEventListener('click', (e) => {
+      const filterBtn = e.target.closest('[data-matrix-filter]');
+      if (!filterBtn) return;
+      const cluster = filterBtn.getAttribute('data-matrix-filter');
+      const container = filterBtn.closest('#cl-panel-matrix144');
+      if (!container) return;
+      
+      container.querySelectorAll('[data-matrix-filter]').forEach(b => {
+        if (b === filterBtn) b.classList.add('active');
+        else b.classList.remove('active');
+      });
+
+      const cards = container.querySelectorAll('#cl-matrix-grid article');
+      cards.forEach(card => {
+        const c = card.getAttribute('data-matrix-cluster');
+        if (cluster === 'all' || c === cluster) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
     });
     document.addEventListener('keydown', (e) => {
       const btn = e.target.closest('.quick-access [role="tablist"] [data-quick-action]');
@@ -734,6 +757,7 @@
             items: [
               { label: '4 Nguyên tắc', shortLabel: 'Nguyên tắc', active: curTab === 'principles', action: { type: 'strategy-tab', patch: { clSubTab: 'principles' } } },
               { label: 'Quy trình A–Z', shortLabel: 'Quy trình', active: curTab === 'workflow', action: { type: 'strategy-tab', patch: { clSubTab: 'workflow' } } },
+              { label: 'Ma trận 144 Bài', shortLabel: '144 Bài', active: curTab === 'matrix144', action: { type: 'strategy-tab', patch: { clSubTab: 'matrix144' } } },
               { label: 'Phân bổ ngách', shortLabel: 'Ngách', active: curTab === 'distribution', action: { type: 'strategy-tab', patch: { clSubTab: 'distribution' } } },
               { label: 'YPP & Chính sách', shortLabel: 'YPP', active: curTab === 'policy', action: { type: 'strategy-tab', patch: { clSubTab: 'policy' } } },
               { label: 'Tất cả nội dung', shortLabel: 'Tất cả', active: isAll, action: { type: 'strategy-tab', patch: { clSubTab: 'all' } } }

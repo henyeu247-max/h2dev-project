@@ -1,0 +1,497 @@
+{
+  "schema": "h2dev.knowledge_deep_audit.v1",
+  "report_id": "2026-10-09-chienluoc-knowledge-deep-audit",
+  "timestamp": "2026-10-09T08:50:00+07:00",
+  "auditor": "Systems & Knowledge Auditor (Chuyên gia Kiểm toán Kiến thức & Cơ chế Sản xuất YouTube AI)",
+  "target_file": "data-tabs/chien-luoc.json",
+  "component": "renderChienLuoc() in assets/app/tabs/content.js",
+  "project_ssot_counts": {
+    "videos_total": 144,
+    "video_lessons": 140,
+    "zoom_sessions": 4,
+    "video_free": 27,
+    "video_pro": 117,
+    "documents_total": 300,
+    "channels_total": 256,
+    "channels_live": 188,
+    "channels_dead": 68,
+    "canonical_raw": 156,
+    "canonical_raw_unique": 149,
+    "niches_total": 34,
+    "niches_green_true": 11,
+    "pipelines_total": 5,
+    "master_prompts_total": 20,
+    "sop_docs_total": 7
+  },
+  "audit_part_1_accuracy": {
+    "verdict": "PARTIALLY ACCURATE WITH CRITICAL DATA DRIFT & BROKEN CHARACTERS",
+    "valid_core_elements": [
+      "4 nguyên tắc cốt lõi (Cách làm quyết định; Hai cửa YPP Reused vs Inauthentic; 3 điểm mấu chốt giữ chân; Nhất quán = Brand) giữ nguyên giá trị triết lý.",
+      "Lộ trình YPP 1.000 sub / 4.000h (hiện tại) và siết 8.000h từ 01/02/2027 phản ánh đúng thông báo cập nhật chính sách của YouTube.",
+      "Khung sườn 11 bước cơ bản đã phản ánh được hành trình từ môi trường, kịch bản, tool đến AdSense và kháng nghị."
+    ],
+    "hardcoded_drift_errors": [
+      {
+        "field": "nguonDuLieu",
+        "old_hardcoded": "136 bài học catalog (132 video + 4 buổi Zoom) + 109 tài liệu full + 165 kênh mẫu (152 live · 13 dead ẩn) + 153 hồ sơ Raw Canonical (147 kênh unique)...",
+        "runtime_truth_2026_10_09": "144 video (140 video bài giảng + 4 buổi Zoom) + 300 tài liệu full + 256 kênh mẫu (188 live · 68 dead) + 156 hồ sơ Raw Canonical (149 kênh unique)...",
+        "severity": "HIGH",
+        "violation": "SCAR-012 (Bẫy số liệu viết tay trôi theo thời gian)",
+        "fix": "Đồng bộ tự động từ counts-manifest.json."
+      },
+      {
+        "field": "cachNoiTab",
+        "old_hardcoded": "Tab Video = Nguồn bài học 136 SKU... Tab Kịch bản = Thư viện 109 tài liệu... Tab Kênh mẫu = Kho 165 kênh...",
+        "runtime_truth_2026_10_09": "144 SKU video, 300 tài liệu, 256 kênh đối thủ.",
+        "severity": "HIGH",
+        "violation": "SCAR-012"
+      },
+      {
+        "field": "huongDiNoiDung[1].lyDo",
+        "old_text": "RPM –4.",
+        "corrected_text": "RPM $2.00 – $4.50 (Calm Science & Deep Sea, AVD dài bù RPM trung bình).",
+        "severity": "MEDIUM",
+        "issue": "Ký tự gãy / lỗi font / thiếu số liệu."
+      },
+      {
+        "field": "huongDiNoiDung[2].lyDo",
+        "old_text": "RPM –.",
+        "corrected_text": "RPM $6.00 – $8.50 (Khán giả trung niên Nhật Bản nghe ban đêm, trung thành cao, đối soát trực tiếp bài học VIDEO-134a25).",
+        "severity": "MEDIUM",
+        "issue": "Ký tự gãy hoàn toàn, mất trắng con số RPM."
+      },
+      {
+        "field": "taiSanNoiBo",
+        "old_counts": "Pipelines: 4, Prompt: 12, Báo cáo: 20",
+        "runtime_truth_2026_10_09": "Pipelines: 5 (bible-explainer, everyday-history, hoat-hinh-ai, ton-giao, wildlife), Master Prompts: 20, Báo cáo: 21",
+        "severity": "LOW",
+        "issue": "Số liệu thống kê cũ chưa cập nhật tài sản mới được thêm vào quý 3/2026."
+      }
+    ],
+    "structural_weakness": {
+      "unbound_skus": "Trong toàn bộ 11 bước của workflow hiện tại, chỉ có docPath trỏ đến file Markdown tổng quát, HOÀN TOÀN THIẾU SKU bài học cụ thể trong kho 144 video. Người học hoặc hệ thống không thể click trực tiếp để nhảy tới bài giảng thực chiến tương ứng."
+    }
+  },
+  "audit_part_2_completeness": {
+    "verdict": "INCOMPLETE - MISSING 5 CRITICAL OPERATIONAL SYSTEMS",
+    "missing_systems": [
+      {
+        "name": "Kỹ thuật Hậu kỳ 5 Lớp Né Quét AI (Multi-layer Anti-AI Compositing SOP)",
+        "evidence_skus": [
+          "VIDEO-1b4be3",
+          "VIDEO-33d701",
+          "VIDEO-DD983D",
+          "VIDEO-484f9e",
+          "VIDEO-6ad3fe"
+        ],
+        "core_layers": [
+          "Layer 1: Biến dạng khung hình vi mô — scale 104–106%, lật ngang (flip horizontal), áp dụng chuyển động giả (pan/zoom chậm).",
+          "Layer 2: Phủ chất liệu quang học (Texture & Film Grain) 2–4% + màu Cinematic LUT độc quyền phá vỡ fingerprint video gốc.",
+          "Layer 3: Can thiệp phổ âm thanh đa tầng — chèn Ambient Noise tự nhiên tần số thấp (-24 dB) dưới voiceover, pitch-shift vi mô ±0.2 semitones.",
+          "Layer 4: Nhịp cắt Pacing — loại bỏ 0.2–0.5s khoảng lặng chết, đổi góc nhìn visual mỗi 3–5 giây.",
+          "Layer 5: Chữ động Kinetic Typography tự render, không dùng subtitle mặc định của tool auto để tránh bị bắt watermark."
+        ]
+      },
+      {
+        "name": "Quy trình Kịch bản Đa Hồi (3 Hồi vs 4 Hồi vs 5 Hồi) & Attention Reset mỗi 60-90s",
+        "skills_evidence": [
+          "h2dev-everyday-history: Cấu trúc 3 Hồi (The Ordinary Hook -> The Dark Struggle -> The Psychological Shift) + Đối soát Bảo tàng thật (British Museum/Smithsonian).",
+          "h2dev-dark-crime: Cấu trúc 4 Hồi The Paper Trail (The Illusion -> The Paper Trail & Mechanism -> The Whistleblower & Collapse -> The Aftermath & Modern Warning) RPM $18-$38.",
+          "h2dev-geopolitics-military: Cấu trúc 4 Hồi Chokepoints (The Chokepoint Hook -> The Strategic Balance -> Asymmetric Maneuvers -> The New World Order) RPM $9.50-$21.",
+          "h2dev-ancient-civilizations: Cấu trúc 4 Hồi Khảo cổ (Anomaly Hook -> Geological/C-14 Evidence -> Academic Debate -> Lost Legacy) RPM $9-$18.50.",
+          "h2dev-ai-film-director: Cấu trúc 5 Hồi Điện ảnh + Công thức 5P Camera + Khóa nhân vật 3 góc + Reset chú ý mỗi 60-90s giữ AVD > 50%."
+        ]
+      },
+      {
+        "name": "Hàng Rào Phòng Thủ YMYL 100% Không-Bác-Sĩ",
+        "skills_evidence": [
+          "h2dev-senior-wisdom",
+          "raw-niches/KR_SeniorWisdom"
+        ],
+        "dead_channels_proof": [
+          "Eric Bennett MD (@EricBennettMD) - die vì mạo danh bác sĩ",
+          "HealthyToday0 (@HealthyToday0)"
+        ],
+        "rules": [
+          "100% KHÔNG BÁC SĨ: Tuyệt đối không dùng avatar áo blouse trắng, không tự xưng chuyên gia y tế.",
+          "100% KHÔNG KÊ ĐƠN / CHẨN ĐOÁN: Không hứa hẹn chữa dứt điểm bệnh nan y (tiểu đường, huyết áp, mất ngủ).",
+          "CHUYỂN DỊCH VĂN PHONG: Toàn bộ kịch bản chuyển thành Triết lý sống an nhiên, dưỡng sinh thường nhật, buông bỏ muộn phiền.",
+          "NHỊP ĐỌC 105 WPM: Giọng đọc nam/nữ trầm ấm, chèn khoảng lặng 1.5–2.0s sau danh ngôn, lồng tiếng mưa rơi / sáo trúc (-28 LUFS)."
+        ]
+      },
+      {
+        "name": "Bẫy Inauthentic vs Reused Content & Bài học từ 68 kênh chết (404)",
+        "evidence_channels": [
+          "@oijfwaoldsfae (Reup hoạt hình - 404 chết hẳn)",
+          "@mimymedia (Reup - 404)",
+          "@kyzoravietsub (Reup vietsub - 404)",
+          "@RichPatternResearchInstitute (Kinh tế auto - 404)",
+          "@偉人の救い (Tâm linh spam - 404)"
+        ],
+        "lessons": [
+          "Inauthentic Content: Bẫy tự động hóa hàng loạt không can thiệp con người (slide ảnh tĩnh, giọng đọc robot vô cảm, kịch bản generic). Khắc phục: Phim tài liệu chân thực, ống kính 50mm, quay cầm tay, chi tiết da nhăn/thô ráp, negative prompt chặn CGI.",
+          "Reused Content: Bẫy bê nguyên xi video người khác hoặc lấy video Bilibili chỉ dịch phụ đề. Khắc phục: Bán content (lấy ý tưởng, viết lại 70-100% kịch bản theo văn phong riêng, tự tạo visual và lồng tiếng mới hoàn toàn)."
+        ]
+      },
+      {
+        "name": "Bí Quyết Kéo AVD & Tối Ưu Doanh Thu Mid-roll",
+        "zoom_evidence": [
+          "ZOOM-02",
+          "ZOOM-03",
+          "ZOOM-04"
+        ],
+        "hacks": [
+          "Chuỗi AVD kép: Ghép đuôi video trước vào video sau (Video 3 ghép đuôi Video 1 -> AVD tăng gấp đôi, video 1 xuất hiện 3 lần: gốc, ghép đuôi, livestream).",
+          "Playlist Hijack: Đặt tên Playlist theo tên kênh đối thủ hàng đầu để cướp đề xuất cột bên phải.",
+          "Mid-roll Ads 2 phút: Dùng tiện ích LickLed tự động chèn quảng cáo mỗi 2 phút cho video dài >8 phút -> tăng doanh thu 40–50%.",
+          "Quản trị chu kỳ dòng tiền AdSense: Tiền về GA ngày 10, chuyển ngân hàng ngày 22–23; khai W-8BEN thuế Mỹ và thuế TNCN VN 7%."
+        ]
+      }
+    ]
+  },
+  "audit_part_3_sop_architecture": {
+    "verdict": "SOP 11 BƯỚC CŨ BỊ DỒN TOA VÀ THIẾU TÁCH BẠCH KHÂU HẬU KỲ & TIỀN KIỂM DUYỆT YPP",
+    "critique_of_11_steps": [
+      "Bước 5 (Sản xuất bằng tool) cũ gộp cả việc chạy tool và edit hậu kỳ CapCut. Đây là sai lầm nghiêm trọng vì chạy tool chỉ ra phôi thô (raw footage), còn khâu 'Edit 5 lớp né quét AI' là khâu kỹ thuật độc lập quyết định sự sống còn của kênh.",
+      "Bước 8 (AdSense) và Bước 9 (Bật kiếm tiền) bị đảo lộn logic thực tế: Cần chuẩn bị hạ tầng Gà AdSense và nuôi Gà trước, nhưng trước khi nộp đơn xét duyệt YPP bắt buộc phải có bước 'Kiểm duyệt tiền BKT (Pre-Audit)' để dọn sạch video rủi ro.",
+      "Bước 11 (Nhân bản hệ thống) chưa bao quát được chiến lược tối ưu Mid-roll ads và mô hình thử nghiệm 3 kênh test."
+    ],
+    "proposal_standardized_12_steps_sop": [
+      {
+        "n": 1,
+        "code": "SOP-01",
+        "title": "Thiết Lập Môi Trường Cô Lập & Quản Trị Danh Tính Sạch",
+        "detail": "Cấu hình Proxy IPv4 Datacenter 2 (Singapore/Mỹ) trên trình duyệt chống phát hiện (MKT/GPM) tách biệt 100% mạng nhà. Nuôi Gmail sạch 1–2 ngày, bật 2FA Authenticator, bảo mật đa tầng.",
+        "tab": "video",
+        "tabLabel": "Module Môi trường",
+        "docPath": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+        "docTitle": "SOP Nền tảng & Môi trường sạch",
+        "skus": [
+          "ZOOM-01-Nen-tang-moi-truong",
+          "VIDEO-027064",
+          "VIDEO-7f0bb4"
+        ],
+        "checklist": [
+          "Proxy IPv4 active",
+          "GPM/MKT profile riêng",
+          "Gmail ngâm >=48h",
+          "2FA Authenticator bật"
+        ]
+      },
+      {
+        "n": 2,
+        "code": "SOP-02",
+        "title": "Tình Báo Đối Thủ & Thẩm Định Ngách Xanh Thực Chiến",
+        "detail": "Khai thác ma trận 34 ngách H2DEV, đo vidIQ Volume (>65) và Competition (<50). Lách thị trường đối thủ US sang Nhật/Hàn/Việt. Phân tích bài học từ 68 kênh chết để loại bỏ chủ đề cấm kỵ.",
+        "tab": "ngachxanh",
+        "tabLabel": "Ma trận Ngách xanh",
+        "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+        "docTitle": "SOP Chiến lược Kênh & Chọn Key",
+        "skus": [
+          "ZOOM-02-Chien-luoc-kenh-san-xuat",
+          "VIDEO-026112",
+          "VIDEO-10ceec",
+          "VIDEO-10f129",
+          "VIDEO-134a25",
+          "VIDEO-1a7f58"
+        ],
+        "checklist": [
+          "3 đối thủ cùng ngách",
+          "Checklist 68 kênh chết đã đối chiếu",
+          "Volume/Comp đạt chuẩn"
+        ]
+      },
+      {
+        "n": 3,
+        "code": "SOP-03",
+        "title": "Khởi Tạo Kênh, Xác Minh Đa Tầng & Quản Trị Hệ Thống",
+        "detail": "Setup kênh chuẩn (quốc gia cư trú, đơn vị tiền tệ, bộ từ khóa). Mua OTP kích hoạt tính năng nâng cao, bật xác minh video/quét mặt. Ngâm kênh 3–4 ngày song song sản xuất. Phân quyền Admin dự phòng.",
+        "tab": "kenh-mau",
+        "tabLabel": "Kho 256 Kênh mẫu",
+        "docPath": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "docTitle": "SOP Setup & Quản trị Kênh",
+        "skus": [
+          "VIDEO-9f9fbc",
+          "VIDEO-7f0bb4",
+          "VIDEO-3e5a21"
+        ],
+        "checklist": [
+          "Avatar/Banner chuẩn",
+          "Từ khóa kênh đã nạp",
+          "Xác minh 3 bước xong",
+          "Mail khôi phục riêng biệt"
+        ]
+      },
+      {
+        "n": 4,
+        "code": "SOP-04",
+        "title": "Thiết Kế Kịch Bản Đa Hồi & Kỹ Thuật Giữ Chân AVD",
+        "detail": "Áp dụng cấu trúc 3 Hồi (Everyday History), 4 Hồi (Dark Crime / Geopolitics / Ancient) hoặc 5 Hồi (AI Film). Hook 0–15s giải đáp nghịch lý. Reset sự chú ý mỗi 60–90s để giữ AVD >= 50%. Triệt tiêu từ ngữ sáo rỗng AI.",
+        "tab": "kichban",
+        "tabLabel": "Thư viện Kịch bản & SOUL",
+        "docPath": "knowledge-hub/docs/SOUL.md",
+        "docTitle": "Chuẩn Kịch bản & SOUL.md",
+        "skus": [
+          "VIDEO-5d54d0",
+          "VIDEO-ed1be9"
+        ],
+        "skillKey": "h2dev-everyday-history",
+        "checklist": [
+          "Hook <15s không chào hỏi",
+          "Cấu trúc hồi rõ ràng",
+          "Cliffhanger mỗi 90s",
+          "Không từ sáo rỗng AI"
+        ]
+      },
+      {
+        "n": 5,
+        "code": "SOP-05",
+        "title": "Sản Xuất Tài Sản Phân Cảnh & Media Đa Luồng",
+        "detail": "Triển khai ngôn ngữ 5P Camera, khóa nhân vật 3 góc. Tạo visual phong cách phim tài liệu chân thực (ống kính 50mm, quay cầm tay, ánh sáng tự nhiên, negative prompt chặn CGI). Sinh voice chuẩn WPM theo ngách.",
+        "tab": "kichban",
+        "tabLabel": "Công cụ & Tool Sản Xuất",
+        "kind": "tool",
+        "docPath": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+        "docTitle": "SOP Quy trình Tool & Tối ưu",
+        "skus": [
+          "ZOOM-03-Quy-trinh-tool-toi-uu",
+          "VIDEO-1aaf46",
+          "VIDEO-1acb10"
+        ],
+        "skillKey": "h2dev-ai-film-director",
+        "checklist": [
+          "150 cảnh/video 20p",
+          "Negative prompt đầy đủ",
+          "Voice khớp WPM ngách",
+          "Audio & Video 15/15"
+        ]
+      },
+      {
+        "n": 6,
+        "code": "SOP-06",
+        "title": "Kỹ Thuật Hậu Kỳ 5 Lớp Né Quét AI (Multi-layer Compositing)",
+        "detail": "Đưa phôi thô vào CapCut: Scale 104–106%, lật ngang, phủ film grain 3%, chèn ambient noise tần số thấp (-24 dB) dưới giọng đọc, pitch-shift vi mô, cắt gọt pacing chết, thêm kinetic typography.",
+        "tab": "kichban",
+        "tabLabel": "SOP Hậu Kỳ Chống Quét",
+        "docPath": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+        "docTitle": "Kỹ thuật Hậu kỳ Né Quét AI",
+        "skus": [
+          "VIDEO-1b4be3",
+          "VIDEO-33d701",
+          "VIDEO-DD983D",
+          "VIDEO-484f9e",
+          "VIDEO-6ad3fe"
+        ],
+        "checklist": [
+          "Scale 105% & lật cảnh",
+          "Grain overlay 3%",
+          "Ambient noise -24dB",
+          "Dynamic Subtitle chuẩn"
+        ]
+      },
+      {
+        "n": 7,
+        "code": "SOP-07",
+        "title": "Đóng Gói Bao Bì Tỷ Lệ Nhấp Cao (CTR & Metadata Packaging)",
+        "detail": "Thumbnail 1 chủ thể chiếm 60–70% khung hình, chữ <= 4 từ tương phản mạnh (vàng/trắng). Tiêu đề chứa Hook gợi mở + từ khóa chính ở 25% đầu ký tự. Mô tả 200–400 từ kèm 3–5 hashtag chuẩn ngách.",
+        "tab": "kichban",
+        "tabLabel": "Prompt Thumbnail & SEO",
+        "promptNiche": "Edit / Thumb",
+        "docPath": "docs/NOI-BO/prompt/thumb-seo-hashtag.md",
+        "docTitle": "Prompt Thumbnail & SEO",
+        "skus": [
+          "ZOOM-03-Quy-trinh-tool-toi-uu"
+        ],
+        "checklist": [
+          "Thumb 1 chủ thể rõ",
+          "Chữ <= 4 từ dễ đọc",
+          "Title có hook + key đầu",
+          "Mô tả chuẩn SEO"
+        ]
+      },
+      {
+        "n": 8,
+        "code": "SOP-08",
+        "title": "Chiến Lược Upload Kín, Kích Hoạt Đề Xuất & Seeding Tự Nhiên",
+        "detail": "Tải lên ở chế độ 'Không công khai' >= 2 giờ để YouTube quét bản quyền và xử lý HD. Đặt tên Playlist theo kênh đối thủ để ăn đề xuất. Seeding tự nhiên 5 tab xem 1 tiếng, comment ghim tương tác, hẹn giờ công khai giờ vàng.",
+        "tab": "video",
+        "tabLabel": "Kho Video & Upload SOP",
+        "docPath": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "docTitle": "Quy trình Upload & Seeding",
+        "skus": [
+          "ZOOM-03-Quy-trinh-tool-toi-uu"
+        ],
+        "checklist": [
+          "Không công khai >=2h",
+          "Playlist tên đối thủ",
+          "Seeding 5 tab 1 tiếng",
+          "Ghim comment tương tác"
+        ]
+      },
+      {
+        "n": 9,
+        "code": "SOP-09",
+        "title": "Chuẩn Bị Hạ Tầng Google AdSense & Khai Báo Thuế",
+        "detail": "Tạo hoặc chuẩn bị tài khoản AdSense (Gà) sạch trước khi bật kiếm tiền. Nối Gà bằng tab ẩn danh hoặc 4G sạch. Thông tin CCCD + ngân hàng trùng khớp 100%. Kê khai thuế Hoa Kỳ (W-8BEN 20–30%) và thuế TNCN VN 7%.",
+        "tab": "video",
+        "tabLabel": "Module AdSense & GA",
+        "docPath": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+        "docTitle": "SOP AdSense & Quản trị Doanh thu",
+        "skus": [
+          "ZOOM-04-Adsense-khang-loi",
+          "VIDEO-00136f",
+          "VIDEO-4425fc"
+        ],
+        "checklist": [
+          "1 người 1 Gà chính chủ",
+          "CCCD + Bank trùng 100%",
+          "Khai W-8BEN chuẩn",
+          "Nối qua tab ẩn danh/4G"
+        ]
+      },
+      {
+        "n": 10,
+        "code": "SOP-10",
+        "title": "Kiểm Duyệt Tiền Bật Kiếm Tiền & Nộp Đơn YPP",
+        "detail": "Khi đạt 1.000 sub + 4.000h (hoặc 8.000h từ 2027), thực hiện Pre-Audit rà soát 100% video trên kênh: xóa/sửa triệt để video dính Reused hoặc Inauthentic. Kiểm tra chuẩn YMYL 100% Không-Bác-Sĩ trước khi bấm gửi đơn.",
+        "tab": "ngachxanh",
+        "tabLabel": "Chính sách YPP & Pre-Audit",
+        "docPath": "knowledge-hub/docs/RULE-LAM-VIEC.md",
+        "docTitle": "Quy chuẩn YPP & Khung Rule",
+        "skus": [
+          "VIDEO-21824a",
+          "VIDEO-28e1cc",
+          "VIDEO-84a039",
+          "VIDEO-817ae6",
+          "VIDEO-7312df"
+        ],
+        "checklist": [
+          "1.000 sub + 4.000h hợp lệ",
+          "Pre-audit 100% video sạch",
+          "Không dính YMYL bác sĩ",
+          "Gửi đơn xét duyệt YPP"
+        ]
+      },
+      {
+        "n": 11,
+        "code": "SOP-11",
+        "title": "Kháng Nghị Vi Phạm Bản Quyền & Xử Lý Gậy Thuật Toán",
+        "detail": "Bình tĩnh xác định nguyên nhân khi bị gắn cờ. Làm video kháng nghị 3–5 phút có giọng nói người thật bằng tiếng Anh/bản xứ, quay màn hình trực tiếp timeline dựng CapCut và project tool để chứng minh tính sáng tạo gốc (tỷ lệ thắng 20–30%).",
+        "tab": "video",
+        "tabLabel": "Kháng nghị & Bảo vệ Kênh",
+        "docPath": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+        "docTitle": "Kỹ thuật Kháng nghị YouTube",
+        "skus": [
+          "ZOOM-04-Adsense-khang-loi",
+          "VIDEO-ec9c50",
+          "VIDEO-46c57e",
+          "VIDEO-3e5a21"
+        ],
+        "checklist": [
+          "Xác định chính xác loại gậy",
+          "Video kháng có người thật nói",
+          "Quay màn hình timeline project",
+          "Không kháng bừa bãi"
+        ]
+      },
+      {
+        "n": 12,
+        "code": "SOP-12",
+        "title": "Tối Ưu Doanh Thu Mid-roll & Nhân Bản Hệ Thống Đa Quốc Gia",
+        "detail": "Khai thác tối đa doanh thu video dài: Bật quảng cáo mỗi 2 phút qua tiện ích LickLed. Áp dụng chuỗi AVD kép ghép đuôi video. Triển khai chiến thuật 3 kênh test, chọn kênh bứt phá để dồn lực nhân bản sang JP/KR/VN.",
+        "tab": "tongquan",
+        "tabLabel": "Bảng Điều khiển Nhân Bản",
+        "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+        "docTitle": "Chiến lược Mở rộng Quy mô",
+        "skus": [
+          "ZOOM-02-Chien-luoc-kenh-san-xuat",
+          "ZOOM-03-Quy-trinh-tool-toi-uu",
+          "VIDEO-34c92b",
+          "VIDEO-e24c31",
+          "VIDEO-e91589",
+          "VIDEO-f77c31"
+        ],
+        "checklist": [
+          "Đặt ad 2 phút mỗi video >8p",
+          "Chuỗi AVD kép ghép đuôi",
+          "Chiến thuật 3 kênh test",
+          "Tách kênh sang Gmail riêng"
+        ]
+      }
+    ]
+  },
+  "audit_part_4_improved_content_niches": [
+    {
+      "hang": 1,
+      "ngach": "Nguồn gốc Đồ vật & Lịch sử Đời thường (US_EverydayHistory)",
+      "pack": "h2dev-everyday-history + pipeline everyday-history -> video 8–15p",
+      "lyDo": "Ngách xanh ưu tiên số 1 H2DEV (Record 29). vidIQ Comp cực thấp (19.3/100). Khán giả 30-65 US/UK nghe thụ động cực đông. Doanh thu RPM thực tế $10.00 – $24.00, đối soát bảo tàng thật Smithsonian/British Museum.",
+      "tab": "ngachxanh",
+      "localPath": "raw-niches/US_EverydayHistory/README.md",
+      "skillKey": "h2dev-everyday-history"
+    },
+    {
+      "hang": 2,
+      "ngach": "Tội phạm Kinh tế & Hồ sơ Đen Doanh nghiệp (Dark Crime & Ledger)",
+      "pack": "h2dev-dark-crime -> kịch bản 4 Hồi The Paper Trail -> video 10–18p",
+      "lyDo": "Ngách có giá trị thương mại quảng cáo cao nhất hệ sinh thái (Record 30). RPM thực tế $18.00 – $38.00/1k view. Kênh mẫu MagnatesMedia, ColdFusion. Nhịp đọc dồn dập 145 WPM truy vết dòng tiền.",
+      "tab": "ngachxanh",
+      "localPath": "raw-niches/US_EverydayHistory/README.md",
+      "skillKey": "h2dev-dark-crime"
+    },
+    {
+      "hang": 3,
+      "ngach": "Senior Wisdom, Triết Lý Dưỡng Sinh & Chuyện Đời Người Cao Tuổi",
+      "pack": "h2dev-senior-wisdom + KR_SeniorWisdom -> video 12–25p",
+      "lyDo": "Chiếm 42 kênh mẫu H2DEV (Record 7, 8, 33). Tuyệt đối tuân thủ rào chắn YMYL 100% Không-Bác-Sĩ. Nhịp đọc chậm 105 WPM, ASMR mưa rơi lò sưởi, RPM $7.50 – $14.00, khán giả trung niên gắn kết sâu sắc.",
+      "tab": "ngachxanh",
+      "localPath": "raw-niches/KR_SeniorWisdom/README.md",
+      "skillKey": "h2dev-senior-wisdom"
+    },
+    {
+      "hang": 4,
+      "ngach": "Địa Chính Trị, Quân Sự & Nút Thắt Bản Đồ (Geopolitics & Military)",
+      "pack": "h2dev-geopolitics-military -> kịch bản 4 Hồi Chokepoints -> video 12–20p",
+      "lyDo": "8 kênh mẫu H2DEV, phong cách CaspainReport/RealLifeLore. Phân tích các nút thắt địa lý sống còn (Malacca, Suez, Hormuz). RPM $9.50 – $21.00, AVD cực cao do tính kịch tính của bản đồ chiến lược.",
+      "tab": "ngachxanh",
+      "localPath": "raw-niches/DE_ScienceParadox/README.md",
+      "skillKey": "h2dev-geopolitics-military"
+    },
+    {
+      "hang": 5,
+      "ngach": "Khảo Cổ Học, Cổ Đại & Nền Văn Minh Đã Mất (Ancient Civilizations)",
+      "pack": "h2dev-ancient-civilizations + pipeline bible-explainer -> video 10–18p",
+      "lyDo": "Phục vụ 35 kênh mẫu lớn nhất hệ sinh thái (Göbekli Tepe, Sumer, Kim Tự Tháp). RPM $9.00 – $18.50. Cấu trúc 4 Hồi giải mã nghịch lý địa tầng C-14, video trường tồn 3-5 năm vẫn cắn đề xuất.",
+      "tab": "ngachxanh",
+      "localPath": "pipelines/bible-explainer/",
+      "skillKey": "h2dev-ancient-civilizations"
+    },
+    {
+      "hang": 6,
+      "ngach": "Phim Tài Liệu Sinh Tồn Động Vật Hoang Dã (Wildlife Survival)",
+      "pack": "h2dev-wildlife-script + h2dev-wildlife-motion + pipeline wildlife -> video 8–12p",
+      "lyDo": "Thị trường toàn cầu phi biên giới. Phong cách David Attenborough, visual siêu thực Megafauna châu Phi kết hợp Veo 3.1 motion prompts. Tỷ lệ giữ chân người xem cực cao, video trường thọ.",
+      "tab": "ngachxanh",
+      "localPath": "pipelines/wildlife/",
+      "skillKey": "h2dev-wildlife-script"
+    },
+    {
+      "hang": 7,
+      "ngach": "Tôn Giáo, Kinh Thánh & Phật Pháp Tĩnh Tâm (Devotional & Faith)",
+      "pack": "h2dev-ton-giao + pipeline ton-giao / bible-explainer -> video 10–20p",
+      "lyDo": "Khán giả sùng đạo nghe lặp đi lặp lại. Cấu trúc 3 tầng ý nghĩa (Văn bản -> Giáo lý -> Ứng dụng). Thị trường Nhật Bản và US có RPM $6.00 – $12.00, tỷ lệ cày view trung thành số 1.",
+      "tab": "ngachxanh",
+      "localPath": "pipelines/ton-giao/",
+      "skillKey": "h2dev-ton-giao"
+    },
+    {
+      "hang": 8,
+      "ngach": "Hoạt Hình AI 3D & Phim Ngắn Điện Ảnh (AI Animation & Film)",
+      "pack": "h2dev-hoat-hinh + h2dev-ai-film-director + pipeline hoat-hinh-ai -> video 5–12p",
+      "lyDo": "Quy trình khép kín 5 bước từ Logline -> Story -> Character Turnaround 3 góc -> Shot list -> Video clips. Mở khóa phân cảnh điện ảnh 5P và né quét bản quyền hoạt hình Reup.",
+      "tab": "ngachxanh",
+      "localPath": "pipelines/hoat-hinh-ai/",
+      "skillKey": "h2dev-hoat-hinh"
+    }
+  ]
+}

@@ -1,3 +1,22 @@
+## 2026-10-09 (đợt 7) — CHUẨN HÓA TOÀN DIỆN CHIẾN LƯỢC /chienluoc & NÂNG CẤP 12 BƯỚC SOP THỰC CHIẾN (nhánh `ui/ui-standard-2026-10-09`)
+
+- **Nâng cấp SOP 11 bước thành 12 bước SOP Chiến Lược Vàng H2DEV:** Tách biệt rõ ràng khâu "Hậu kỳ 5 lớp né quét AI (Multi-layer Compositing)" thành một bước kỹ thuật chuyên sâu (SOP 06), gắn kèm 42 chip liên kết trực tiếp tới các SKU bài học thực tế trong kho 144 video.
+- **Sửa dứt điểm bẫy số liệu cũ và lỗi font (SCAR-012):** Khắc phục toàn bộ các số liệu ghi cứng (136 bài, 109 tài liệu, 165 kênh) thành số liệu chuẩn thời gian thực (144 bài, 300 tài liệu, 256 kênh, 5 pipelines); sửa triệt để các lỗi font nuốt số RPM (`$2.00 – $4.50` và `$6.00 – $8.50`).
+- **Khắc phục lỗi điều hướng tab trong `renderChienLuoc()`:** Sửa 5 nút bấm mở tab bị sai định danh (`tab: "kenh"` -> `kenh-mau`, `tab: "kichban"` -> `tai-lieu`, `tab: "tongquan"` -> `tatca`).
+- **Phân bổ ngách thông minh:** Bổ sung hàm gán nhãn ghi chú tự động cho toàn bộ 35 nhóm chuyên đề từ `videos.json`, triệt tiêu hoàn toàn hiện tượng note rỗng trên giao diện.
+- **Kiểm định E2E Playwright trên /chienluoc:** 100% ALL PASS, 0 Console Errors, chuyển đổi mượt mà giữa 5 subtabs (`principles`, `workflow`, `distribution`, `policy`, `all`), click chuyển tab hoạt động chính xác.
+- **Tài liệu kiểm toán & Biên bản nghiệm thu:** Xuất bản `docs/reports/2026-10-09-chienluoc-knowledge-deep-audit.json` và `docs/reports/2026-10-09-chienluoc-ui-ux-audit.json`.
+
+## 2026-10-09 (đợt 6) — UI-STANDARD ĐỢT 2: CHIP, THẺ KÊNH, THẺ TÀI LIỆU, TAB HỌC, BỎ 2XS (chưa commit, nhánh `ui/ui-standard-2026-10-09`)
+
+- **Chip và nút lẻ:** phần tử lẻ cuối hàng giãn cả hàng ở hàng chip (#content), nhóm Ngách và nút "Đi nhanh" (641–820 px). Mồ côi 36 → 2 trên 60 tổ hợp route × cỡ; còn /tai-lieu 360 và 390 ("Đi nhanh" trên điện thoại).
+- **Thẻ kênh (Kênh mẫu):** thẻ lẻ cuối hàng chiếm cả hàng.
+- **Trang bài học:** thẻ hai tài liệu chia hai cột; thẻ ba tài liệu: nút thứ ba chiếm cả hàng.
+- **Tab học (/learn.html, /lotrinh) ở 390 px:** lưới 2×2; mồ côi 1 → 0 ở 360 và 390 px.
+- **Kiểu chữ:** bỏ bậc 2xs (11 px) khỏi `tailwind.config.js` và `design-system/tokens.json`; năm khai báo 11 px đổi sang 12 px; xóa luật `.text-2xs` trong `assets/tailwind.css`. Không dựng lại Tailwind (file lệch 38 class).
+- **Phiên bản tài nguyên:** `uifix68` (index 21, learn 10, player 10, sw.js 1).
+- **Chưa xong:** nhãn KPI ở 390 px (M4), vùng chạm dưới 44 px chưa nhóm (DoD-3), thiết bị thật (M5, BLOCKED), quyền sở hữu thay đổi ngoài phạm vi (M7).
+
 ## 2026-10-09 (đợt 5) — NGHIỆM THU E2E TOÀN BỘ 144 VIDEO (PART 1 ĐẾN PART 8) & CHUẨN HÓA VẬT LÝ, DỮ LIỆU, ĐỒNG BỘ MANIFEST (nhánh `ui/ui-standard-2026-10-09`)
 
 - **Nghiệm thu E2E tự động qua Playwright (Chromium 1440x900):** Đã kiểm định toàn diện 144/144 video (Part 1 đến Part 8: SKU `VIDEO-d20f6c` đến `VIDEO-a59a5e`), tỷ lệ **144/144 ALL PASS (100%)**, 0 Console Errors, 0 Page Errors. Tương tác DOM thực tế: tua video qua click seek câu thoại phụ đề mượt mà, chuyển đổi trạng thái nút `#btnWatched` (Đã học / Chưa học) chuẩn xác, tải phụ đề TXT/SRT đầy đủ.

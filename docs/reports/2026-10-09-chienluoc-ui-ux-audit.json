@@ -1,0 +1,1687 @@
+{
+  "metadata": {
+    "route": "/chienluoc",
+    "auditor": "Web & UI/UX Auditor",
+    "date": "2026-10-09",
+    "baseUrl": "http://127.0.0.1:8899",
+    "viewports": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      }
+    ]
+  },
+  "consoleErrors": {
+    "desktop": [],
+    "mobile": []
+  },
+  "topbarSubnav": {
+    "desktop": {
+      "buttons": [
+        {
+          "text": "4 Nguyên tắc",
+          "patch": "{\"clSubTab\":\"principles\"}",
+          "active": true,
+          "role": "tab",
+          "ariaSelected": "true"
+        },
+        {
+          "text": "Quy trình A–Z",
+          "patch": "{\"clSubTab\":\"workflow\"}",
+          "active": false,
+          "role": "tab",
+          "ariaSelected": "false"
+        },
+        {
+          "text": "Phân bổ ngách",
+          "patch": "{\"clSubTab\":\"distribution\"}",
+          "active": false,
+          "role": "tab",
+          "ariaSelected": "false"
+        },
+        {
+          "text": "YPP & Chính sách",
+          "patch": "{\"clSubTab\":\"policy\"}",
+          "active": false,
+          "role": "tab",
+          "ariaSelected": "false"
+        },
+        {
+          "text": "Tất cả nội dung",
+          "patch": "{\"clSubTab\":\"all\"}",
+          "active": false,
+          "role": "tab",
+          "ariaSelected": "false"
+        }
+      ],
+      "principles": {
+        "url": "http://127.0.0.1:8899/chienluoc",
+        "panelVisibility": {
+          "principles": "flex",
+          "workflow": "none",
+          "distribution": "none",
+          "policy": "none"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/desktop_01_principles.png"
+      },
+      "workflow": {
+        "url": "http://127.0.0.1:8899/chienluoc?sub=workflow",
+        "panelVisibility": {
+          "principles": "none",
+          "workflow": "flex",
+          "distribution": "none",
+          "policy": "none"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/desktop_02_workflow.png"
+      },
+      "distribution": {
+        "url": "http://127.0.0.1:8899/chienluoc?sub=distribution",
+        "panelVisibility": {
+          "principles": "none",
+          "workflow": "none",
+          "distribution": "flex",
+          "policy": "none"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/desktop_03_distribution.png"
+      },
+      "policy": {
+        "url": "http://127.0.0.1:8899/chienluoc?sub=policy",
+        "panelVisibility": {
+          "principles": "none",
+          "workflow": "none",
+          "distribution": "none",
+          "policy": "flex"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/desktop_04_policy.png"
+      },
+      "all": {
+        "url": "http://127.0.0.1:8899/chienluoc?sub=all",
+        "panelVisibility": {
+          "principles": "flex",
+          "workflow": "flex",
+          "distribution": "flex",
+          "policy": "flex"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/desktop_05_all.png"
+      }
+    },
+    "mobile": {
+      "buttons": [
+        {
+          "text": "Nguyên tắc",
+          "patch": "{\"clSubTab\":\"principles\"}",
+          "active": true,
+          "role": "tab",
+          "ariaSelected": "true"
+        },
+        {
+          "text": "Quy trình",
+          "patch": "{\"clSubTab\":\"workflow\"}",
+          "active": false,
+          "role": "tab",
+          "ariaSelected": "false"
+        },
+        {
+          "text": "Ngách",
+          "patch": "{\"clSubTab\":\"distribution\"}",
+          "active": false,
+          "role": "tab",
+          "ariaSelected": "false"
+        },
+        {
+          "text": "YPP",
+          "patch": "{\"clSubTab\":\"policy\"}",
+          "active": false,
+          "role": "tab",
+          "ariaSelected": "false"
+        },
+        {
+          "text": "Tất cả",
+          "patch": "{\"clSubTab\":\"all\"}",
+          "active": false,
+          "role": "tab",
+          "ariaSelected": "false"
+        }
+      ],
+      "principles": {
+        "url": "http://127.0.0.1:8899/chienluoc",
+        "panelVisibility": {
+          "principles": "flex",
+          "workflow": "none",
+          "distribution": "none",
+          "policy": "none"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/mobile_01_principles.png"
+      },
+      "workflow": {
+        "url": "http://127.0.0.1:8899/chienluoc?sub=workflow",
+        "panelVisibility": {
+          "principles": "none",
+          "workflow": "flex",
+          "distribution": "none",
+          "policy": "none"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/mobile_02_workflow.png"
+      },
+      "distribution": {
+        "url": "http://127.0.0.1:8899/chienluoc?sub=distribution",
+        "panelVisibility": {
+          "principles": "none",
+          "workflow": "none",
+          "distribution": "flex",
+          "policy": "none"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/mobile_03_distribution.png"
+      },
+      "policy": {
+        "url": "http://127.0.0.1:8899/chienluoc?sub=policy",
+        "panelVisibility": {
+          "principles": "none",
+          "workflow": "none",
+          "distribution": "none",
+          "policy": "flex"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/mobile_04_policy.png"
+      },
+      "all": {
+        "url": "http://127.0.0.1:8899/chienluoc?sub=all",
+        "panelVisibility": {
+          "principles": "flex",
+          "workflow": "flex",
+          "distribution": "flex",
+          "policy": "flex"
+        },
+        "screenshot": "_tmp-proof/chienluoc_ui_audit/mobile_05_all.png"
+      }
+    }
+  },
+  "bannerStats": {
+    "domData": {
+      "title": "",
+      "desc": "",
+      "cards": [
+        {
+          "label": "Video local",
+          "value": "144",
+          "sub": "144 video · 144 đã điểm"
+        },
+        {
+          "label": "Kịch bản & Tài liệu",
+          "value": "300",
+          "sub": "300 file · catalog"
+        },
+        {
+          "label": "Kênh đối thủ",
+          "value": "188",
+          "sub": "256 kênh · 68 dead ẩn"
+        },
+        {
+          "label": "Nguồn reup",
+          "value": "27",
+          "sub": "27 nguồn · match"
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "",
+          "value": "",
+          "sub": ""
+        },
+        {
+          "label": "#1 · prompt-ngach-everyday-history + pipeline ton-giao -> video 8–15p",
+          "value": "",
+          "sub": "Cạnh tranh từ khóa vidIQ cực thấp (19.3/100). Nhiều kênh mới bùng nổ (The Origin +285% sub). Đề tài quen thuộc, nghe thụ động khi làm việc nhà rất đông."
+        },
+        {
+          "label": "#2 · Hồ sơ DE_ScienceParadox + format giọng đọc chậm, nhạc nền sóng biển",
+          "value": "",
+          "sub": "Nhu cầu nghe ru ngủ bùng nổ (+146%). Kênh đối thủ BeyondTheBlue 210K sub húp 5,4 triệu view/30 ngày. Thời lượng AVD cao ngất ngưởng, RPM –4."
+        },
+        {
+          "label": "#3 · Kênh mẫu @こころの道しるべ + triết lý buông bỏ muộn phiền",
+          "value": "",
+          "sub": "Độ cạnh tranh từ khóa tại Nhật thấp kỷ lục (19.9/100). Khán giả trung niên Nhật Bản nghe đều đặn mỗi đêm, trung thành cao, RPM –."
+        },
+        {
+          "label": "#4 · Pipeline bible-explainer / ancient-history -> góc nhìn khảo cổ học",
+          "value": "",
+          "sub": "Kênh nhỏ Basically Primitive 21K sub video đạt gần 400K view (3.300 view/giờ). Tính trường tồn (evergreen) cao, 3–5 năm sau vẫn có view."
+        },
+        {
+          "label": "#5 · Pipeline wildlife -> tập tính sinh tồn tự nhiên, không dàn cảnh cứu hộ",
+          "value": "",
+          "sub": "Chủ đề phi biên giới, trẻ em hay người lớn toàn cầu đều xem được. Dễ cắn đề xuất view lớn, video sống dai."
+        },
+        {
+          "label": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+          "value": "1",
+          "sub": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md"
+        },
+        {
+          "label": "docs/NOI-BO/zoom/",
+          "value": "5",
+          "sub": "docs/NOI-BO/zoom/"
+        },
+        {
+          "label": "docs/NOI-BO/bao-cao/",
+          "value": "20",
+          "sub": "docs/NOI-BO/bao-cao/"
+        },
+        {
+          "label": "docs/NOI-BO/prompt/",
+          "value": "12",
+          "sub": "docs/NOI-BO/prompt/"
+        },
+        {
+          "label": "pipelines/",
+          "value": "4",
+          "sub": "pipelines/"
+        },
+        {
+          "label": "raw-niches/",
+          "value": "6",
+          "sub": "raw-niches/"
+        }
+      ]
+    },
+    "realCounts": {
+      "videos": 144,
+      "docs": 300,
+      "kenhAlive": 188,
+      "kenhTotal": 256,
+      "kenhDead": 68,
+      "nguonReup": 27,
+      "manifestCounts": {
+        "videos": 144,
+        "videoLessons": 140,
+        "zoomSessions": 4,
+        "videoFree": 27,
+        "videoPro": 117,
+        "documents": 300,
+        "channels": 256,
+        "liveChannels": 188,
+        "deadChannels": 68,
+        "canonicalRaw": 156,
+        "canonicalRawUniqueChannels": 149,
+        "kichBan": 60,
+        "nguonReup": 27,
+        "niches": 34,
+        "nichesGreenTrue": 11,
+        "catalogRecords": 144,
+        "catalogFullRecords": 144,
+        "modules": 12,
+        "modulesItems": 144,
+        "modulesWithBadge": 134,
+        "videoDirs": 144,
+        "mediaFiles": 144,
+        "mediaBytes": 23945549703,
+        "docsTotalDirs": 150,
+        "docsVideoDirs": 140,
+        "docsZoomDirs": 5,
+        "thumbFiles": 285,
+        "rawChannelImages": 158,
+        "rawRecordsWithoutImage": 0,
+        "rawDeepProfiles": 149,
+        "sopDocs": 7,
+        "masterPrompts": 20
+      }
+    },
+    "inconsistencies": [
+      {
+        "location": "data-tabs/chien-luoc.json: note",
+        "text": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 11 bước thực chiến). Tổng hợp đầy đủ từ 4 buổi Zoom thực chiến chuyên gia và kho học liệu 136 bài học H2DEV. Có liên kết trực tiếp tới tài liệu local và công cụ thực tế.",
+        "issue": "Ghi cứng \"136 bài học\" trong khi thực tế có 144 bài học (140 bài giảng + 4 Zoom)."
+      },
+      {
+        "location": "data-tabs/chien-luoc.json: nguonDuLieu (hiển thị dưới panel Policy)",
+        "text": "136 bài học catalog (132 video + 4 buổi Zoom) + 109 tài liệu full + 165 kênh mẫu (152 live · 13 dead ẩn) + 153 hồ sơ Raw Canonical (147 kênh unique). Hệ thống kết nối MCP Pool Local tại D://Mcp-Pool-Vps cổng :3988.",
+        "issue": "Số liệu ghi cứng lỗi thời: \"136 bài học, 109 tài liệu full, 165 kênh mẫu\" trong khi runtime thực tế là 144 video, 300 tài liệu, 256 kênh mẫu (188 live · 68 dead)."
+      }
+    ]
+  },
+  "sopLinksAudit": {
+    "workflowSteps": [
+      {
+        "stepNum": "01",
+        "stepTitle": "Môi trường & Tài khoản sạch",
+        "tabBtn": {
+          "text": "Module Môi trường\n→",
+          "tab": "video",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "SOP Nền tảng & Môi trường sạch",
+          "href": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+          "target": "_blank"
+        },
+        "issues": [],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "02",
+        "stepTitle": "Nghiên cứu Ngách & Chọn Key",
+        "tabBtn": {
+          "text": "Ma trận Ngách xanh\n→",
+          "tab": "ngachxanh",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "SOP Chiến lược Kênh & Chọn Key",
+          "href": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+          "target": "_blank"
+        },
+        "issues": [],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "03",
+        "stepTitle": "Tạo Kênh & Quản lý Hệ thống",
+        "tabBtn": {
+          "text": "Kho 165 Kênh mẫu\n→",
+          "tab": "kenh",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "Đề cương Quản lý Kênh A–Z",
+          "href": "docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt",
+          "target": "_blank"
+        },
+        "issues": [
+          "Nút mở tab có id 'kenh' không thuộc danh sách tab hợp lệ (tatca, lotrinh, video, ngachxanh, tai-lieu, nhac, nguonreup, kenh-mau, rawkenh, chienluoc). Khi click sẽ rơi vào default (renderTongQuan) và URL hiển thị /kenh không đồng bộ!"
+        ],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "04",
+        "stepTitle": "Viết Kịch bản Chuẩn Giữ chân",
+        "tabBtn": {
+          "text": "Thư viện Kịch bản\n→",
+          "tab": "kichban",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "Chuẩn Kịch bản & SOUL.md",
+          "href": "knowledge-hub/docs/SOUL.md",
+          "target": "_blank"
+        },
+        "issues": [
+          "Nút mở tab có id 'kichban' không thuộc danh sách tab hợp lệ (tatca, lotrinh, video, ngachxanh, tai-lieu, nhac, nguonreup, kenh-mau, rawkenh, chienluoc). Khi click sẽ rơi vào default (renderTongQuan) và URL hiển thị /kichban không đồng bộ!"
+        ],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "05",
+        "stepTitle": "Sản xuất Video Tăng tốc bằng Tool",
+        "tabBtn": {
+          "text": "Công cụ & Tool\n→",
+          "tab": "kichban",
+          "kind": "tool",
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "SOP Quy trình Tool & Tối ưu",
+          "href": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+          "target": "_blank"
+        },
+        "issues": [
+          "Nút mở tab có id 'kichban' không thuộc danh sách tab hợp lệ (tatca, lotrinh, video, ngachxanh, tai-lieu, nhac, nguonreup, kenh-mau, rawkenh, chienluoc). Khi click sẽ rơi vào default (renderTongQuan) và URL hiển thị /kichban không đồng bộ!"
+        ],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "06",
+        "stepTitle": "Đóng gói Video (CTR & SEO)",
+        "tabBtn": {
+          "text": "Prompt Edit/Thumb\n→",
+          "tab": "kichban",
+          "kind": null,
+          "promptNiche": "Edit / Thumb"
+        },
+        "sopLink": {
+          "text": "Prompt Thumbnail & SEO",
+          "href": "docs/NOI-BO/prompt/thumb-seo-hashtag.md",
+          "target": "_blank"
+        },
+        "issues": [
+          "Nút mở tab có id 'kichban' không thuộc danh sách tab hợp lệ (tatca, lotrinh, video, ngachxanh, tai-lieu, nhac, nguonreup, kenh-mau, rawkenh, chienluoc). Khi click sẽ rơi vào default (renderTongQuan) và URL hiển thị /kichban không đồng bộ!"
+        ],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "07",
+        "stepTitle": "Upload, Lên lịch & Seeding",
+        "tabBtn": {
+          "text": "Kho Video & Player\n→",
+          "tab": "video",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "Quy trình Upload & Seeding",
+          "href": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+          "target": "_blank"
+        },
+        "issues": [],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "08",
+        "stepTitle": "Google AdSense & Doanh thu",
+        "tabBtn": {
+          "text": "Module Kiếm tiền\n→",
+          "tab": "video",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "SOP AdSense & Kháng lỗi",
+          "href": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+          "target": "_blank"
+        },
+        "issues": [],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "09",
+        "stepTitle": "Bật kiếm tiền YPP & Giữ chuẩn",
+        "tabBtn": {
+          "text": "Chính sách YPP\n→",
+          "tab": "ngachxanh",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "Quy chuẩn YPP & Khung Rule",
+          "href": "knowledge-hub/docs/RULE-LAM-VIEC.md",
+          "target": "_blank"
+        },
+        "issues": [],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "10",
+        "stepTitle": "Xử lý Vi phạm & Kháng nghị",
+        "tabBtn": {
+          "text": "Kháng nghị & Bảo vệ\n→",
+          "tab": "video",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "Kỹ thuật Kháng nghị YouTube",
+          "href": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+          "target": "_blank"
+        },
+        "issues": [],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      },
+      {
+        "stepNum": "11",
+        "stepTitle": "Nhân bản Hệ thống & Quy mô lớn",
+        "tabBtn": {
+          "text": "Bảng Điều khiển Tổng thể\n→",
+          "tab": "tongquan",
+          "kind": null,
+          "promptNiche": null
+        },
+        "sopLink": {
+          "text": "Chiến lược Mở rộng Quy mô",
+          "href": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+          "target": "_blank"
+        },
+        "issues": [
+          "Nút mở tab có id 'tongquan' không thuộc danh sách tab hợp lệ (tatca, lotrinh, video, ngachxanh, tai-lieu, nhac, nguonreup, kenh-mau, rawkenh, chienluoc). Khi click sẽ rơi vào default (renderTongQuan) và URL hiển thị /tongquan không đồng bộ!"
+        ],
+        "sopHttpCheck": {
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8"
+        }
+      }
+    ],
+    "headerButtons": [
+      {
+        "text": "Đọc trực tiếp Đề cương A–Z",
+        "href": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "File gốc .txt",
+        "href": "docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/plain; charset=utf-8"
+      },
+      {
+        "text": "SOP Nền tảng & Môi trường sạch",
+        "href": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "SOP Chiến lược Kênh & Chọn Key",
+        "href": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "Đề cương Quản lý Kênh A–Z",
+        "href": "docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/plain; charset=utf-8"
+      },
+      {
+        "text": "Chuẩn Kịch bản & SOUL.md",
+        "href": "knowledge-hub/docs/SOUL.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "SOP Quy trình Tool & Tối ưu",
+        "href": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "Prompt Thumbnail & SEO",
+        "href": "docs/NOI-BO/prompt/thumb-seo-hashtag.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "Quy trình Upload & Seeding",
+        "href": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "SOP AdSense & Kháng lỗi",
+        "href": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "Quy chuẩn YPP & Khung Rule",
+        "href": "knowledge-hub/docs/RULE-LAM-VIEC.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "Kỹ thuật Kháng nghị YouTube",
+        "href": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "text": "Chiến lược Mở rộng Quy mô",
+        "href": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+        "target": "_blank",
+        "httpStatus": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      }
+    ]
+  },
+  "typographicAndSpecialCharAudit": {
+    "huongDiTextsRendered": 11,
+    "detectedTypoErrors": [
+      {
+        "hang": 2,
+        "ngach": "Khoa học ru ngủ & Vũ trụ đại dương (Calm Science & Deep Sea)",
+        "rawText": "Nhu cầu nghe ru ngủ bùng nổ (+146%). Kênh đối thủ BeyondTheBlue 210K sub húp 5,4 triệu view/30 ngày. Thời lượng AVD cao ngất ngưởng, RPM –4.",
+        "type": "Ký tự cắt cụt / lỗi typographic ở chỉ số RPM",
+        "detail": [
+          "RPM –4."
+        ]
+      },
+      {
+        "hang": 3,
+        "ngach": "Phật pháp & Triết lý tĩnh tâm Nhật Bản (JP Buddhist Wisdom)",
+        "rawText": "Độ cạnh tranh từ khóa tại Nhật thấp kỷ lục (19.9/100). Khán giả trung niên Nhật Bản nghe đều đặn mỗi đêm, trung thành cao, RPM –.",
+        "type": "Ký tự cắt cụt / lỗi typographic ở chỉ số RPM",
+        "detail": [
+          "RPM –."
+        ]
+      }
+    ]
+  },
+  "liveScoreAudit": {
+    "matches144": true,
+    "domReportedTotal": 144,
+    "realVideosLength": 144,
+    "subtitle": "Đếm live từ videos.json · 144/144",
+    "nicheRowsCount": 35,
+    "emptyNotesCount": 35,
+    "detail": {
+      "header": "Điểm số kho H2DEV",
+      "subtitle": "Đếm live từ videos.json · 144/144",
+      "rowCount": 35,
+      "totalCount": 144,
+      "rows": [
+        {
+          "count": 1,
+          "label": "Drama Gia Đình & Xã Hội Nhật Bản",
+          "note": "",
+          "nicheKey": "Drama Gia Đình & Xã Hội Nhật Bản"
+        },
+        {
+          "count": 1,
+          "label": "Triết Lý & Phật Pháp Việt Nam",
+          "note": "",
+          "nicheKey": "Triết Lý & Phật Pháp Việt Nam"
+        },
+        {
+          "count": 6,
+          "label": "Tâm Linh & Thu Hút May Mắn",
+          "note": "",
+          "nicheKey": "Tâm Linh & Thu Hút May Mắn"
+        },
+        {
+          "count": 2,
+          "label": "Lời Chúa & Tâm Linh Ngoại",
+          "note": "",
+          "nicheKey": "Lời Chúa & Tâm Linh Ngoại"
+        },
+        {
+          "count": 1,
+          "label": "Ẩm Thực & Mẹo Vặt Hàn Quốc",
+          "note": "",
+          "nicheKey": "Ẩm Thực & Mẹo Vặt Hàn Quốc"
+        },
+        {
+          "count": 1,
+          "label": "Reup Hoạt Hình Bilibili",
+          "note": "",
+          "nicheKey": "Reup Hoạt Hình Bilibili"
+        },
+        {
+          "count": 1,
+          "label": "Triết Lý & Trẻ Hóa Nhật Bản",
+          "note": "",
+          "nicheKey": "Triết Lý & Trẻ Hóa Nhật Bản"
+        },
+        {
+          "count": 1,
+          "label": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật",
+          "note": "",
+          "nicheKey": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật"
+        },
+        {
+          "count": 9,
+          "label": "Prompt AI & Nhân Bản Kịch Bản",
+          "note": "",
+          "nicheKey": "Prompt AI & Nhân Bản Kịch Bản"
+        },
+        {
+          "count": 1,
+          "label": "Tâm Linh & Triết Lý Saito Hitori",
+          "note": "",
+          "nicheKey": "Tâm Linh & Triết Lý Saito Hitori"
+        },
+        {
+          "count": 1,
+          "label": "Nhân Bản Thị Trường (Hàn - Nhật)",
+          "note": "",
+          "nicheKey": "Nhân Bản Thị Trường (Hàn - Nhật)"
+        },
+        {
+          "count": 1,
+          "label": "Sức Khỏe & Rau Củ Dưa Chuột",
+          "note": "",
+          "nicheKey": "Sức Khỏe & Rau Củ Dưa Chuột"
+        },
+        {
+          "count": 19,
+          "label": "Reup & Khai Thác Hoạt Hình",
+          "note": "",
+          "nicheKey": "Reup & Khai Thác Hoạt Hình"
+        },
+        {
+          "count": 31,
+          "label": "Bán Content & Phát Triển Kênh",
+          "note": "",
+          "nicheKey": "Bán Content & Phát Triển Kênh"
+        },
+        {
+          "count": 3,
+          "label": "Triết Lý & Phật Pháp",
+          "note": "",
+          "nicheKey": "Triết Lý & Phật Pháp"
+        },
+        {
+          "count": 9,
+          "label": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "note": "",
+          "nicheKey": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+        },
+        {
+          "count": 15,
+          "label": "Sức Khỏe & Dinh Dưỡng",
+          "note": "",
+          "nicheKey": "Sức Khỏe & Dinh Dưỡng"
+        },
+        {
+          "count": 9,
+          "label": "Triết Lý Sống & Đạo Làm Người",
+          "note": "",
+          "nicheKey": "Triết Lý Sống & Đạo Làm Người"
+        },
+        {
+          "count": 4,
+          "label": "Khám Kênh & Tối Ưu Tăng Trưởng",
+          "note": "",
+          "nicheKey": "Khám Kênh & Tối Ưu Tăng Trưởng"
+        },
+        {
+          "count": 10,
+          "label": "Drama Gia Đình & Xã Hội",
+          "note": "",
+          "nicheKey": "Drama Gia Đình & Xã Hội"
+        },
+        {
+          "count": 1,
+          "label": "Khám Kênh Thực Chiến",
+          "note": "",
+          "nicheKey": "Khám Kênh Thực Chiến"
+        },
+        {
+          "count": 1,
+          "label": "Cộng Đồng & Hỗ Trợ VIP",
+          "note": "",
+          "nicheKey": "Cộng Đồng & Hỗ Trợ VIP"
+        },
+        {
+          "count": 1,
+          "label": "Kỹ Thuật Setup Nuôi Kênh & VPS",
+          "note": "",
+          "nicheKey": "Kỹ Thuật Setup Nuôi Kênh & VPS"
+        },
+        {
+          "count": 1,
+          "label": "Bán Content Đa Thị Trường Nhật & Hàn",
+          "note": "",
+          "nicheKey": "Bán Content Đa Thị Trường Nhật & Hàn"
+        },
+        {
+          "count": 1,
+          "label": "Bán Content Đa Thị Trường Hàn & Việt",
+          "note": "",
+          "nicheKey": "Bán Content Đa Thị Trường Hàn & Việt"
+        },
+        {
+          "count": 1,
+          "label": "Bán Content Ngách Cực Nhỏ",
+          "note": "",
+          "nicheKey": "Bán Content Ngách Cực Nhỏ"
+        },
+        {
+          "count": 4,
+          "label": "Hệ thống / Quy trình",
+          "note": "",
+          "nicheKey": "Hệ thống / Quy trình"
+        },
+        {
+          "count": 1,
+          "label": "Xử Lý & Kháng Lỗi Bản Quyền",
+          "note": "",
+          "nicheKey": "Xử Lý & Kháng Lỗi Bản Quyền"
+        },
+        {
+          "count": 1,
+          "label": "Bán Content & Drama Đời Sống",
+          "note": "",
+          "nicheKey": "Bán Content & Drama Đời Sống"
+        },
+        {
+          "count": 1,
+          "label": "Phong Thủy & May Mắn Tâm Linh",
+          "note": "",
+          "nicheKey": "Phong Thủy & May Mắn Tâm Linh"
+        },
+        {
+          "count": 1,
+          "label": "Triết Lý Sống & Tài Chính Tuổi Già",
+          "note": "",
+          "nicheKey": "Triết Lý Sống & Tài Chính Tuổi Già"
+        },
+        {
+          "count": 1,
+          "label": "Tâm Sự Gia Đình & Người Cao Tuổi Việt Nam",
+          "note": "",
+          "nicheKey": "Tâm Sự Gia Đình & Người Cao Tuổi Việt Nam"
+        },
+        {
+          "count": 1,
+          "label": "Dưỡng Sinh Thực Dưỡng & Tâm Sự Người Cao Tuổi Hàn Quốc",
+          "note": "",
+          "nicheKey": "Dưỡng Sinh Thực Dưỡng & Tâm Sự Người Cao Tuổi Hàn Quốc"
+        },
+        {
+          "count": 1,
+          "label": "Quy Trình AI & Train Prompt Kịch Bản Thực Chiến",
+          "note": "",
+          "nicheKey": "Quy Trình AI & Train Prompt Kịch Bản Thực Chiến"
+        },
+        {
+          "count": 1,
+          "label": "Làm Vườn Mùa Thu & Triết Học Lượng Tử Sinh Học",
+          "note": "",
+          "nicheKey": "Làm Vườn Mùa Thu & Triết Học Lượng Tử Sinh Học"
+        }
+      ]
+    },
+    "nicheClickResult": {
+      "nicheTarget": "Drama Gia Đình & Xã Hội Nhật Bản",
+      "newUrl": "http://127.0.0.1:8899/video?niche=Drama+Gia+%C4%90%C3%ACnh+%26+X%C3%A3+H%E1%BB%99i+Nh%E1%BA%ADt+B%E1%BA%A3n",
+      "activeTab": null,
+      "nicheFilter": null
+    }
+  },
+  "checklistLocalStorageAudit": {
+    "totalCheckboxes": 8,
+    "initialState": [
+      {
+        "id": "cl-0",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-1",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-2",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-3",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-4",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-5",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-6",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-7",
+        "checked": false,
+        "ariaChecked": "false"
+      }
+    ],
+    "storageAfterClick": "{\"cl-0\":true,\"cl-1\":true,\"cl-2\":true}",
+    "checkboxesAfterReload": [
+      {
+        "id": "cl-0",
+        "checked": true,
+        "ariaChecked": "true"
+      },
+      {
+        "id": "cl-1",
+        "checked": true,
+        "ariaChecked": "true"
+      },
+      {
+        "id": "cl-2",
+        "checked": true,
+        "ariaChecked": "true"
+      },
+      {
+        "id": "cl-3",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-4",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-5",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-6",
+        "checked": false,
+        "ariaChecked": "false"
+      },
+      {
+        "id": "cl-7",
+        "checked": false,
+        "ariaChecked": "false"
+      }
+    ],
+    "storageAfterReload": "{\"cl-0\":true,\"cl-1\":true,\"cl-2\":true}",
+    "persistsCorrectly": true
+  },
+  "uiUxStandardsAudit": {
+    "desktop": {
+      "horizontalOverflow": {
+        "scrollWidth": 1430,
+        "clientWidth": 1440,
+        "hasOverflow": false
+      },
+      "fontSizes": {
+        "distinctCount": 6,
+        "sizes": {
+          "14px": 167,
+          "20px": 9,
+          "13px": 166,
+          "24px": 10,
+          "12px": 172,
+          "16px": 7
+        },
+        "ratio11px": 0
+      },
+      "technicalLeaks": [],
+      "touchTargetViolations": [
+        {
+          "tag": "A",
+          "role": null,
+          "text": "SOP Nền tảng & Môi trường sạch",
+          "width": 224,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "SOP Chiến lược Kênh & Chọn Key",
+          "width": 227,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "Đề cương Quản lý Kênh A–Z",
+          "width": 197,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "Chuẩn Kịch bản & SOUL.md",
+          "width": 196,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "SOP Quy trình Tool & Tối ưu",
+          "width": 196,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "Prompt Thumbnail & SEO",
+          "width": 180,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "Quy trình Upload & Seeding",
+          "width": 195,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "SOP AdSense & Kháng lỗi",
+          "width": 184,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "Quy chuẩn YPP & Khung Rule",
+          "width": 205,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "Kỹ thuật Kháng nghị YouTube",
+          "width": 205,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "Chiến lược Mở rộng Quy mô",
+          "width": 197,
+          "height": 18,
+          "class": "inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-300 transition-colors"
+        },
+        {
+          "tag": "A",
+          "role": null,
+          "text": "docs/NOI-BO/README.md",
+          "width": 151,
+          "height": 15,
+          "class": "text-brand-400 hover:text-brand-300"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 1",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 2",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 3",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 4",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 5",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 6",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 7",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 8",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        }
+      ],
+      "headings": {
+        "h1Count": 1,
+        "allHeadings": [
+          {
+            "tag": "H1",
+            "text": "Chiến lược",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Chiến lược & Vận hành",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Cách làm quyết định",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Hai cửa YPP",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "3 việc giữ lại người",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Nhất quán = brand",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Quy trình xây kênh A–Z (SOP 11 bước thực chiến)",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Điểm số kho H2DEV",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Các nhóm hướng đi nội dung tiêu biểu",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Tài sản ngoài đã đồng bộ vào H2DEV",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Lộ trình YPP 2026-2027",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Xin ads / Premium",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Kênh mới siết ngưỡng",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Đừng để kênh chết",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Checklist trước khi đăng",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Chính sách YouTube phải nhớ",
+            "visible": true
+          }
+        ]
+      }
+    },
+    "mobile": {
+      "horizontalOverflow": {
+        "scrollWidth": 380,
+        "clientWidth": 390,
+        "hasOverflow": false
+      },
+      "fontSizes": {
+        "distinctCount": 6,
+        "sizes": {
+          "16px": 174,
+          "20px": 1,
+          "13px": 166,
+          "14px": 4,
+          "12px": 164,
+          "24px": 6
+        },
+        "ratio11px": 0
+      },
+      "technicalLeaks": [],
+      "touchTargetViolations": [
+        {
+          "tag": "A",
+          "role": null,
+          "text": "docs/NOI-BO/README.md",
+          "width": 151,
+          "height": 15,
+          "class": "text-brand-400 hover:text-brand-300"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 1",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 2",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 3",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 4",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 5",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 6",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 7",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "text": "Checklist 8",
+          "width": 13,
+          "height": 13,
+          "class": "rounded mt-1 shrink-0"
+        }
+      ],
+      "headings": {
+        "h1Count": 1,
+        "allHeadings": [
+          {
+            "tag": "H1",
+            "text": "Chiến lược",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Chiến lược & Vận hành",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Cách làm quyết định",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Hai cửa YPP",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "3 việc giữ lại người",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Nhất quán = brand",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Quy trình xây kênh A–Z (SOP 11 bước thực chiến)",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Điểm số kho H2DEV",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Các nhóm hướng đi nội dung tiêu biểu",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Tài sản ngoài đã đồng bộ vào H2DEV",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Lộ trình YPP 2026-2027",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Xin ads / Premium",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Kênh mới siết ngưỡng",
+            "visible": true
+          },
+          {
+            "tag": "H3",
+            "text": "Đừng để kênh chết",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Checklist trước khi đăng",
+            "visible": true
+          },
+          {
+            "tag": "H2",
+            "text": "Chính sách YouTube phải nhớ",
+            "visible": true
+          }
+        ]
+      }
+    }
+  },
+  "findings": [
+    {
+      "id": "FINDING-01",
+      "severity": "PASS",
+      "rule": "X-1",
+      "title": "Console Errors bằng 0",
+      "description": "Cả 2 môi trường Desktop (1440x900) và Mobile (390x844) đều không ghi nhận bất kỳ console error hay unhandled exception nào."
+    },
+    {
+      "id": "FINDING-02",
+      "severity": "HIGH",
+      "rule": "St-5 / A-2",
+      "title": "Các nút mở tab trong Quy trình 11 bước bị sai tab ID (rơi vào default TongQuan)",
+      "description": "Có 5/11 bước dùng tab ID cũ hoặc không tồn tại: Bước 3 (kenh -> kenh-mau), Bước 4, 5, 6 (kichban -> tai-lieu), Bước 11 (tongquan -> tatca). Khi người dùng click vào các nút này, ứng dụng không mở đúng tab mong muốn mà rơi vào renderTongQuan, đồng thời URL bị đẩy /kenh, /kichban, /tongquan không đồng bộ.",
+      "affectedSteps": [
+        {
+          "step": "03",
+          "title": "Tạo Kênh & Quản lý Hệ thống",
+          "badTab": "kenh",
+          "expectedTab": "kenh-mau"
+        },
+        {
+          "step": "04",
+          "title": "Viết Kịch bản Chuẩn Giữ chân",
+          "badTab": "kichban",
+          "expectedTab": "tai-lieu"
+        },
+        {
+          "step": "05",
+          "title": "Sản xuất Video Tăng tốc bằng Tool",
+          "badTab": "kichban",
+          "expectedTab": "tai-lieu"
+        },
+        {
+          "step": "06",
+          "title": "Đóng gói Video (CTR & SEO)",
+          "badTab": "kichban",
+          "expectedTab": "tai-lieu"
+        },
+        {
+          "step": "11",
+          "title": "Nhân bản Hệ thống & Quy mô lớn",
+          "badTab": "tongquan",
+          "expectedTab": "tatca"
+        }
+      ],
+      "recommendation": "Cập nhật lại file `data-tabs/chien-luoc.json` tại các bước workflow: đổi `tab: \"kenh\"` thành `tab: \"kenh-mau\"`, đổi `tab: \"kichban\"` thành `tab: \"tai-lieu\"`, đổi `tab: \"tongquan\"` thành `tab: \"tatca\"`."
+    },
+    {
+      "id": "FINDING-03",
+      "severity": "MEDIUM",
+      "rule": "X-2",
+      "title": "Liên kết thư mục dự án / pipeline trả mã HTTP 404",
+      "description": "Đường dẫn '/pipelines/bible-explainer/' trong phần Hướng đi tiêu biểu trỏ tới thư mục thay vì file README.md, node server không cho phép directory listing nên trả về 404.",
+      "recommendation": "Đổi target đường dẫn trong `data-tabs/chien-luoc.json` thành `pipelines/bible-explainer/README.md` (hoặc kiểm tra file tồn tại trong thư mục)."
+    },
+    {
+      "id": "FINDING-04",
+      "severity": "MEDIUM",
+      "rule": "T-10 / St-5",
+      "title": "Lỗi typographic và ký tự bị cắt cụt ở chỉ số RPM trong nhóm hướng đi nội dung",
+      "description": "Phát hiện lỗi hiển thị chuỗi RPM ở Hàng 2 (\"RPM –4.\") và Hàng 3 (\"RPM –.\"). Dấu gạch ngang và số bị thiếu cận dưới/cận trên gây hiểu lầm cho người dùng.",
+      "evidence": [
+        {
+          "hang": 2,
+          "ngach": "Khoa học ru ngủ & Vũ trụ đại dương (Calm Science & Deep Sea)",
+          "rawText": "Nhu cầu nghe ru ngủ bùng nổ (+146%). Kênh đối thủ BeyondTheBlue 210K sub húp 5,4 triệu view/30 ngày. Thời lượng AVD cao ngất ngưởng, RPM –4.",
+          "type": "Ký tự cắt cụt / lỗi typographic ở chỉ số RPM",
+          "detail": [
+            "RPM –4."
+          ]
+        },
+        {
+          "hang": 3,
+          "ngach": "Phật pháp & Triết lý tĩnh tâm Nhật Bản (JP Buddhist Wisdom)",
+          "rawText": "Độ cạnh tranh từ khóa tại Nhật thấp kỷ lục (19.9/100). Khán giả trung niên Nhật Bản nghe đều đặn mỗi đêm, trung thành cao, RPM –.",
+          "type": "Ký tự cắt cụt / lỗi typographic ở chỉ số RPM",
+          "detail": [
+            "RPM –."
+          ]
+        }
+      ],
+      "recommendation": "Sửa lại trong `data-tabs/chien-luoc.json`: Hàng 2 đổi thành \"RPM $2–$4\" (hoặc $1.50–$4.00), Hàng 3 đổi thành \"RPM $3–$6\" (hoặc mức RPM tương ứng của JP)."
+    },
+    {
+      "id": "FINDING-05",
+      "severity": "LOW",
+      "rule": "St-5",
+      "title": "Bảng điểm đếm live 144 video: Toàn bộ ghi chú phân loại (note) bị rỗng",
+      "description": "Bảng điểm đếm live tổng cộng đúng 144/144 video (35 phân nhóm). Tuy nhiên, đối tượng `noteOf` và mảng `scoreOrder` trong hàm `renderChienLuoc()` đang dùng danh sách danh mục cũ ('Triết lý / Tâm linh', 'Sức khỏe / Lão hóa'...), trong khi dữ liệu thực `videos.json` đã chuẩn hóa thành 35 tên chi tiết ('Drama Gia Đình & Xã Hội Nhật Bản', 'Triết Lý & Phật Pháp Việt Nam'...). Do không khớp key, cả 35 nhóm đều có `note: ''`, làm mất đi các ghi chú nhận định 'xanh · JP/KR/US', 'meta · packaging', v.v.",
+      "evidence": {
+        "totalRows": 35,
+        "emptyNotes": 35
+      },
+      "recommendation": "Cập nhật hàm `renderChienLuoc()` trong `assets/app/tabs/content.js` để ánh xạ mờ (fuzzy match / substring match) hoặc cập nhật từ điển `noteOf` theo 35 nhóm mới."
+    },
+    {
+      "id": "FINDING-06",
+      "severity": "LOW",
+      "rule": "SCAR-012 / Dữ liệu",
+      "title": "Số liệu ghi cứng viết tay bị trôi so với counts-manifest.json",
+      "description": "Trong các trường text tĩnh như `note`, `nguonDuLieu`, `tabLabel` của `data-tabs/chien-luoc.json`, số liệu vẫn ghi 136 bài học, 109 tài liệu, 165 kênh mẫu. Trong khi dữ liệu sống tại `data/counts-manifest.json` là 144 video, 300 tài liệu, 256 kênh mẫu.",
+      "evidence": [
+        {
+          "location": "data-tabs/chien-luoc.json: note",
+          "text": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 11 bước thực chiến). Tổng hợp đầy đủ từ 4 buổi Zoom thực chiến chuyên gia và kho học liệu 136 bài học H2DEV. Có liên kết trực tiếp tới tài liệu local và công cụ thực tế.",
+          "issue": "Ghi cứng \"136 bài học\" trong khi thực tế có 144 bài học (140 bài giảng + 4 Zoom)."
+        },
+        {
+          "location": "data-tabs/chien-luoc.json: nguonDuLieu (hiển thị dưới panel Policy)",
+          "text": "136 bài học catalog (132 video + 4 buổi Zoom) + 109 tài liệu full + 165 kênh mẫu (152 live · 13 dead ẩn) + 153 hồ sơ Raw Canonical (147 kênh unique). Hệ thống kết nối MCP Pool Local tại D://Mcp-Pool-Vps cổng :3988.",
+          "issue": "Số liệu ghi cứng lỗi thời: \"136 bài học, 109 tài liệu full, 165 kênh mẫu\" trong khi runtime thực tế là 144 video, 300 tài liệu, 256 kênh mẫu (188 live · 68 dead)."
+        }
+      ],
+      "recommendation": "Đồng bộ lại số liệu trong `data-tabs/chien-luoc.json` theo đúng `data/counts-manifest.json`."
+    },
+    {
+      "id": "FINDING-07",
+      "severity": "INFO",
+      "rule": "A-1",
+      "title": "Kiểm toán vùng chạm (Touch Target A-1)",
+      "description": "Desktop có 20 phần tử tương tác dưới 24px; Mobile có 9 phần tử dưới 24px (chủ yếu là các checkbox nhỏ 16x16px được bọc trong label flex, người dùng vẫn bấm vào nhãn chữ được).",
+      "recommendation": "Tăng padding cho các checkbox trên mobile hoặc thêm min-height 32px cho label chứa checkbox."
+    },
+    {
+      "id": "FINDING-08",
+      "severity": "PASS",
+      "rule": "St-state",
+      "title": "Checklist trước khi đăng lưu trữ trạng thái localStorage hoàn hảo",
+      "description": "Các checkbox checklist lưu đúng vào key `h2dev-checklist` dạng JSON boolean map, sau khi reload trang trạng thái checkbox được giữ nguyên 100%."
+    },
+    {
+      "id": "FINDING-09",
+      "severity": "PASS",
+      "rule": "UI-02 / Subnav",
+      "title": "Topbar Subnav tương tác mượt mà trên cả Desktop và Mobile",
+      "description": "Cả 5 subtab (\"4 Nguyên tắc\", \"Quy trình A–Z\", \"Phân bổ ngách\", \"YPP & Chính sách\", \"Tất cả nội dung\") chuyển đổi panel chính xác, URL search params cập nhật đúng, hiển thị đúng trạng thái active."
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "REC-01",
+      "priority": "P1-HIGH",
+      "title": "Sửa Tab Target trong Workflow 11 bước (data-tabs/chien-luoc.json)",
+      "detail": "Đổi các tab ID lỗi thời về tab canonical hợp lệ: Bước 3 (kenh -> kenh-mau), Bước 4, 5, 6 (kichban -> tai-lieu), Bước 11 (tongquan -> tatca)."
+    },
+    {
+      "code": "REC-02",
+      "priority": "P2-MEDIUM",
+      "title": "Khắc phục link 404 cho pipeline/thư mục (data-tabs/chien-luoc.json)",
+      "detail": "Đổi các link trỏ tới directory như pipelines/bible-explainer/ thành file tài liệu cụ thể hoặc tạo route directory handler an toàn."
+    },
+    {
+      "code": "REC-03",
+      "priority": "P2-MEDIUM",
+      "title": "Sửa lỗi typographic RPM trong nhóm hướng đi nội dung tiêu biểu",
+      "detail": "Cập nhật trường lyDo tại Hàng 2 (Calm Science) và Hàng 3 (JP Buddhist Wisdom) với khoảng RPM đầy đủ và chính xác (ví dụ: RPM – và RPM –)."
+    },
+    {
+      "code": "REC-04",
+      "priority": "P3-LOW",
+      "title": "Khôi phục nhãn phân loại (note) cho bảng điểm đếm live 144 video",
+      "detail": "Bổ sung ánh xạ từ điển noteOf trong hàm renderChienLuoc() (assets/app/tabs/content.js) tương ứng với 35 ngách chi tiết mới để không còn rỗng note."
+    },
+    {
+      "code": "REC-05",
+      "priority": "P3-LOW",
+      "title": "Đồng bộ toàn diện số liệu text tĩnh theo SCAR-012",
+      "detail": "Cập nhật các chuỗi text tĩnh trong data-tabs/chien-luoc.json theo số liệu SSoT counts-manifest.json (144 video, 300 tài liệu, 256 kênh mẫu)."
+    }
+  ]
+}

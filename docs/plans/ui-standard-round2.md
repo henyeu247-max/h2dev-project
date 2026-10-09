@@ -34,9 +34,9 @@
 
 ## 2. Bối cảnh xuất phát
 
-- **Commit:** `c22844d` (đợt sửa), `f21837e` (ba hunk text-2xs còn sót), `c984695` (tài liệu) trên `ui/ui-standard-2026-10-09`, gốc `main` tại `773e40e`. Phiên bản tài nguyên `uifix67`.
+- **Commit:** `c22844d` (đợt sửa), `f21837e` (ba hunk text-2xs còn sót), `c984695` (tài liệu) trên `ui/ui-standard-2026-10-09`, gốc `main` tại `773e40e`. Phiên bản tài nguyên `uifix67` lúc bắt đầu; `uifix68` sau đợt 2.
 - **Server:** dịch vụ `H2DEV_Service` (NSSM) đang nghe `0.0.0.0:8899`. Kiểm bằng `netstat -ano | grep :8899`. Không tự khởi động lại dịch vụ. Xem M7.
-- **Working tree còn của công việc khác:** 122 file M (trong đó `player-main.js` còn 10 hunk ngoài phạm vi) và khoảng 152 file untracked (dữ liệu, tài liệu ingest, script part2/part6, `docs/reports/` không theo dõi). **Không đụng vào.**
+- **Working tree (cập nhật cuối đợt 2):** không còn thay đổi tracked ngoài phạm vi. Các thay đổi ngoài phạm vi ghi trước đó (122 M, 152 untracked, 10 hunk `player-main.js`) không còn trong cây này. Lúc kiểm cuối có ba script chưa theo dõi mới (`scripts/analyze_h2dev_intelligence.js`, `audit_chienluoc_web.js`, `check_chienluoc_links.js`, tạo 08:35–08:36) không do đợt này tạo; không đụng vào. Xem M7.
 - **Gate:** sáu gate ở `scripts/`. `gate-shell.js` cần `NODE_PATH` tới `node_modules` của repo khi chạy trong worktree.
 - **Dữ liệu:** không đổi số đếm trong đợt 1. `docs/WORKING_STATE.md` đang ở trạng thái M do công việc khác.
 
@@ -196,15 +196,15 @@ Sandbox không có thiết bị thật. Danh sách kiểm trên điện thoại 
 - [x] 2026-10-09 Commit `c22844d` (17 file), `f21837e` (ba hunk text-2xs còn sót), `c984695` (tài liệu), nhánh `ui/ui-standard-2026-10-09`.
 - [x] 2026-10-09 Sáu gate mã thoát 0 trên working tree và trên cây commit (`gate-shell` với `NODE_PATH`).
 - [x] 2026-10-09 Báo cáo đợt 1, bài học H2DEV-UI-001 đến 012, plan này.
-- [ ] M0 Chuẩn bị.
-- [ ] M1 Chip và handle mồ côi.
-- [ ] M2 Dải tab Lộ trình.
-- [ ] M3 Trang bài học: thẻ tài liệu.
-- [ ] M4 Nhãn KPI.
-- [ ] M5 Thiết bị thật (cần anh).
-- [ ] M6 Token `2xs`.
-- [ ] M7 Quyền sở hữu thay đổi ngoài phạm vi (cần anh).
-- [ ] M8 Nghiệm thu cuối.
+- [x] M0 Chuẩn bị. Baseline `uifix67` (60 tổ hợp); sáu gate, `validate-project`, `sync-counts --check`: mã thoát 0.
+- [ ] M1 Chip và handle mồ côi. 36 → 2; còn /tai-lieu 360 và 390 ("Đi nhanh" trên điện thoại). Chờ D-06, D-09.
+- [x] M2 Dải tab Lộ trình. Lưới 2×2 ở 390 px; /learn.html và /lotrinh ở 360 và 390 px: mồ côi 1 → 0.
+- [ ] M3 Trang bài học: thẻ tài liệu. Thẻ hai tài liệu không còn dòng lẻ (043d15, d20744). Thẻ ba tài liệu: nút thứ ba chiếm cả hàng (2aa1f7, xem ảnh; D-08). DoD-3 chưa làm.
+- [ ] M4 Nhãn KPI. Chưa sửa; chờ D-07 (nhãn "Ngách có data" 2 dòng ở 390 px).
+- [ ] M5 Thiết bị thật (cần anh). BLOCKED: không có thiết bị.
+- [x] M6 Token `2xs`. Đã bỏ khỏi cấu hình và token; năm khai báo 11 px đổi sang 12 px; không dựng lại Tailwind (rủi ro 38 class).
+- [ ] M7 Quyền sở hữu thay đổi ngoài phạm vi (cần anh). Không còn hunk `player-main.js` trong cây; ba script chưa theo dõi mới là của công việc khác; chưa rõ chủ sở hữu.
+- [ ] M8 Nghiệm thu cuối. PARTIAL, xem mục 9.
 
 ---
 
@@ -228,6 +228,10 @@ Sandbox không có thiết bị thật. Danh sách kiểm trên điện thoại 
 - **D-03 (2026-10-09):** commit trên nhánh riêng, chỉ hunk thuộc đợt này.
 - **D-04 (2026-10-09):** không đưa nhánh resize, SKU và SOP của `player-main.js` vào commit. **Chờ M7.**
 - **D-05 (2026-10-09):** không đổi cấu hình mạng của `H2DEV_Service` trong vòng này. **Chờ anh xác nhận.**
+- **D-06 (2026-10-09):** hàng chip và nút "Đi nhanh" (641–820 px) giãn cho đầy hàng để xóa phần tử lẻ cuối hàng. Thay đổi thị giác, đã xem ảnh. **Chờ anh xác nhận.** Đảo ngược: xóa các luật ghi chú "UI-fix 2026-10-09 (M1)" trong `assets/viddar.css`, rồi đo lại.
+- **D-07 (2026-10-09):** giữ D1 (bốn thẻ KPI một dải trên điện thoại). Nhãn "Ngách có data" còn 2 dòng ở 390 px. **Chờ anh chọn: rút ngắn nhãn (em đề xuất) hoặc đảo D1 về 2×2.**
+- **D-08 (2026-10-09):** thẻ ba tài liệu bài học: nút thứ ba chiếm cả hàng (quy tắc G-3 của skill). Đã xem ảnh ở 390 và 1440 px; 1024 px chưa xem ảnh.
+- **D-09 (2026-10-09):** "Đi nhanh" trên điện thoại (lưới ba cột) giữ nguyên; nút lẻ ở /tai-lieu 360 và 390 là mồ côi còn lại. **Chờ anh chọn: đổi sang hai cột (đổi mọi thanh "Đi nhanh" trên điện thoại) hoặc chấp nhận.**
 
 ---
 
@@ -242,4 +246,4 @@ Sandbox không có thiết bị thật. Danh sách kiểm trên điện thoại 
 
 ## 9. Kết quả và nhận xét (điền khi xong)
 
-*Chưa có. Điền khi kết thúc M8.*
+*PARTIAL (2026-10-09). Chi tiết: `docs/reports/2026-10-09-ui-standard-round2.md`. Mồ côi 36 → 2 trên 60 tổ hợp; không luật nào khác đổi; mọi gate và `validate-project` mã thoát 0 trên working tree; chưa commit. Còn M4, M5 (BLOCKED), M7, DoD-2 (2 mồ côi) và DoD-3 (vùng chạm dưới 44 px chưa nhóm).*

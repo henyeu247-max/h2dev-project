@@ -97,3 +97,13 @@
 - **Đã thử và gỡ:** 3 cột × 2 hàng. Audit mồ côi về 0 nhưng hit-test cho thấy 3 nút bị che. Audit mồ côi chỉ nhìn số hàng, không thấy chồng lớp.
 - **Cách sửa:** `viddar.css`, trong khối tới 640 px, thanh có đúng 6 nút dùng `repeat(6, minmax(76px, 1fr))`; dải phụ vốn có `overflow-x: auto` nên cuộn ngang. Đo ở 360, 390, 820 và 1440 px: 6/6 nút trong tiêu đề, cao 44 px (36 px ở 1440 px), không bị che, không cắt chữ; hai nút cuối cuộn tới được.
 - **Guardrail:** khi thêm một nút vào dải có chiều cao cố định, đo chiều cao nội dung so với chiều cao dải và hit-test từng nút. Kiểm "mồ côi bằng 0" chưa đủ.
+
+
+## H2DEV-UI-026: nút "Cuộn lên đầu trang" bị thanh điều hướng dưới che ở 640–1024 px
+
+- **Triệu chứng:** kiểm lại `/tatca` ở 820 và 1024 px, sau khi cuộn hết trang, phần tử tương tác thấp nhất (nút `btn-back-to-top`) có đáy ở 828 px trong khung nhìn 844 px, thấp hơn đỉnh thanh điều hướng dưới (788 px). Ảnh chụp: chỉ lộ một vệt nhỏ ở mép phải.
+- **Nguyên nhân (đã xác minh):** `assets/h2dev-shell.css` nâng nút lên `bottom: 76px` chỉ ở `max-width: 639px`. Thanh `.vd-bottom-nav` (cao 56 px, z-index 100 so với 60 của nút) hiện từ 1024 px trở xuống. Hai điểm ngắt không khớp nhau.
+- **Cách sửa:** `@media (max-width: 1024px) { body:has(.vd-bottom-nav) .h2-shell-backtotop { bottom: 76px; } }`. Sau sửa đáy nút 768 px, cách thanh 20 px, không bị che ở 360, 390, 820, 1024 px; ở 1440 px thanh ẩn nên giữ nguyên.
+- **Phạm vi:** nút là thành phần dùng chung. Đã hit-test sau khi cuộn hết ở 12 route × 5 cỡ = 60 tổ hợp: 0 nút bị che.
+- **Bẫy khi đo:** hit-test không cuộn báo giả 4 nút ở 820 px và 2 nút ở 1024 px (các hàng sát đáy màn hình đầu tiên nằm dưới thanh cố định). Phải cuộn từng phần tử vào giữa màn hình rồi mới kiểm. Ảnh toàn trang cũng vẽ thanh cố định ở giữa trang (vị trí khung nhìn), không phải lỗi.
+- **Guardrail:** điểm ngắt của một thành phần nổi phải khớp điểm ngắt của thanh cố định mà nó phải tránh. Sau khi sửa bố cục, cuộn hết trang rồi hit-test phần tử thấp nhất.

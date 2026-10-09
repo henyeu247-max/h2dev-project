@@ -209,6 +209,10 @@ html { scrollbar-gutter: stable; }
 @media (max-width: 639px) {
   .h2-shell-backtotop { right: var(--h2-space-3); bottom: 76px; }
 }
+/* UI-fix 2026-10-09: thanh dieu huong duoi hien tu 1024px tro xuong (cao 56px, z-index 100) nen nut "Cuon len dau trang" o bottom 16px bi che (chi con 4px lo ra). Trang co thanh dieu huong thi nang nut len tren thanh. */
+@media (max-width: 1024px) {
+  body:has(.vd-bottom-nav) .h2-shell-backtotop { bottom: 76px; }
+}
 
 /* ==========================================================================
    4. NAV CHUAN (tablist) — 1 he ARIA duy nhat cho 3 trang

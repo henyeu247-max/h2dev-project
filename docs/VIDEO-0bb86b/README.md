@@ -57,3 +57,13 @@ Tác giả cảnh báo một lỗi chí mạng mà kênh đối thủ `@인생�
 - 🇯🇵 `@gyakkyoyori_risukatsu`
 - 🇰🇷 `@매일명상276`
 - 🌐 `@mythrafilms`
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP 5 bước sản xuất video ngách Triết lý Tiền bạc Hàn & Drama Sukatto Nhật đạt 200K view ngay video đầu:
+- Bước 1 (Chọn chủ đề đánh trúng nỗi sợ tài chính & Mâu thuẫn đời sống): Tập trung vào 2 chủ đề bão view: Mâu thuẫn tiền bạc mẹ chồng - nàng dâu / thừa kế tài sản (văn hóa Nhật/Hàn) hoặc bài học tích lũy an dưỡng tuổi già chống cô độc.
+- Bước 2 (Chụp màn hình tiêu đề bão view đối thủ & Chạy AI viết kịch bản): Đưa ảnh chụp màn hình các video đạt 500K-1M view của đối thủ vào ChatGPT để phân tích cấu trúc kịch tính, yêu cầu viết lại thành cốt truyện mới với cái kết bất ngờ (Plot Twist).
+- Bước 3 (Tạo giọng đọc AI truyền cảm ElevenLabs): Sử dụng giọng đọc AI nam/nữ trầm ấm, thiết lập âm điệu kể chuyện thầm thì (Whispering Storytelling) tăng cảm giác hồi hộp, kết hợp tiếng thở dài tự nhiên ở những đoạn thắt nút bi kịch.
+- Bước 4 (Dựng B-roll chuyển động đa tầng né quét Reused Content): Tuyệt đối không dùng 1 ảnh tĩnh duy nhất; ghép footage chó mèo, sinh hoạt gia đình hoặc phong cảnh làng quê thay đổi liên tục mỗi 4-6 giây, áp dụng hiệu ứng chuyển cảnh mềm và phủ hạt phim 10%.
+- Bước 5 (Thiết kế Thumbnail tương phản cực hạn & Gắn cờ kênh đối thủ): Thiết kế thumbnail với biểu cảm gương mặt người già kinh ngạc hoặc giọt nước mắt lăn dài trên má, chèn con số tiền bạc nổi bật (100.000.000 Won); đồng thời gắn cờ DIE cho kênh đối thủ bị quét (@gyakkyoyori_risukatsu) để bảo toàn bài học.
+

@@ -1,4 +1,4 @@
-﻿// H2DEV Project - SINGLE SOURCE COUNT SYNC (sync-counts.js)
+// H2DEV Project - SINGLE SOURCE COUNT SYNC (sync-counts.js)
 // Thay viec HARDCODE so lieu (136/152/165/156...) rai rac khap du an.
 //   1. Nguon chan ly = data-tabs/*.json (live) -> scripts/lib/counts.js
 //   2. data/counts-manifest.json = ban CHOT so lieu (commit git)
@@ -131,6 +131,10 @@ const DOC_RULES = [
   // ---- data-tabs/ngach-xanh.json ----
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"taiLieu":\s*)\d+/g,
     build: c => `$1${c.documents}` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"kenhMau":\s*)\d+/g,
+    build: c => `$1${c.channels}` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"kenhDaDoSong":\s*)\d+/g,
+    build: c => `$1${c.channels}` },
   // 2026-09-30: kenhDead/LiveTrongFile truoc day KHONG co rule -> troi 13/152 trong khi thuc te 39/126
   // (validate-project bao 2 loi). Sinh tu counts nhu cac so khac (SCAR-012: cam so viet tay).
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[\s\S]*?"kenhDeadTrongFile":\s*)\d+/g,

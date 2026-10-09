@@ -37,3 +37,17 @@
   - `12:22` — Để cho mình sao chép về cho nhanh nha mọi người
   - `17:04` — Còn cái này thì em làm đơn giản show nha thôi
 
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** Quy trình dựng video tài liệu sinh tồn bão tuyết né quét bản quyền và tối ưu AVD dài:
+- Bước 1 (Lọc tư liệu nguồn & Viết kịch bản): Thu thập footage tài liệu khí quyển, bão tuyết từ các kho tư liệu mở hoặc cắt lọc video công cộng; viết lại kịch bản 3 Hồi (Thảm họa ập đến - Giằng co sinh tử - Phép màu giải cứu).
+- Bước 2 (Xử lý âm thanh khí quyển đa tầng): Lồng ghép tiếng gió tuyết rít rùng rợn (Blizzard wind ambience 48kHz) ở nền âm lượng -22dB, kết hợp giọng đọc AI kịch tính trầm ấm, chuẩn hóa EBU R128 (-16 LUFS).
+- Bước 3 (Can thiệp thị giác né quét Content ID): Lật gương hình ảnh (Mirror horizontal 10%), áp lớp phủ tuyết rơi động (Snow overlay particle 15% opacity), chỉnh cân bằng trắng (White Balance) hơi ám xanh lạnh và thêm viền tối 4 góc (Vignette).
+- Bước 4 (Cắt cảnh nhịp điệu & Chống ảnh tĩnh): Giới hạn mỗi shot hình tối đa 4-6 giây, áp dụng hiệu ứng thu phóng chậm (Ken Burns zoom-in 105%), chèn biểu đồ đo nhiệt độ âm dần tạo cảm giác nghẹt thở.
+- Bước 5 (Thumbnail kích hoạt CTR sinh tồn): Thiết kế thumbnail 16:9 với khung cảnh con người co ro giữa bão tuyết, viền tuyết dày đặc, headline ngắn gọn gây sốc (VÍ DỤ: ÂM 52°C SINH TỬ) bằng font chữ sans-serif viền đen nổi bật.
+
+### Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags)
+- [x] **Tránh vi phạm:** Không sử dụng các đoạn clip có gắn logo đài truyền hình (Discovery, National Geographic) hoặc watermark bản quyền của bên thứ ba.
+- [x] **Tránh vi phạm:** Tránh để màn hình tĩnh quá 7 giây khiến thuật toán YouTube đánh giá video lười sáng tạo (Low-effort automated content).
+- [x] **Tránh vi phạm:** Không phóng đại giật gân sai lệch kiến thức sinh tồn cơ bản dẫn đến cảnh báo chính sách an toàn người dùng.

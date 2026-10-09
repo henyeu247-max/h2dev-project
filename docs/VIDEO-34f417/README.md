@@ -2,42 +2,50 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-34f417`
-- **Tiêu đề:** SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN
-- **Chủ đề thực tế:** SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 06:19
-- **Dung lượng MP4:** 111.0 MB
-- **File Video:** [`video/VIDEO-34f417/VIDEO-34f417.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-34f417/VIDEO-34f417.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-34f417.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-34f417.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-key-moi-11-01-2026-share-ngach-thi-truong-viet-va-2-ngach-thi-truong-han-quoc-1-ngach-nhat-ban](https://h2dev.vn/learn/study/update-key-moi-11-01-2026-share-ngach-thi-truong-viet-va-2-ngach-thi-truong-han-quoc-1-ngach-nhat-ban)
+- **Bài học:** #81
+- **Tiêu đề bài giảng:** SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN
+- **Thị trường mục tiêu:** 🇻🇳 Việt, 🇰🇷 Hàn, 🇯🇵 Nhật
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-34f417.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-key-moi-11-01-2026-share-ngach-thi-truong-viet-va-2-ngach-thi-truong-han-quoc-1-ngach-nhat-ban)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì hôm nay em sẽ tiếp tục share cho mọi người một vài cái ngách nữa ở các cái thị trường khác nhau nha
-- Thì con đầu tiên là cái ngách thị trường view việt nha mọi người
-- Thì mọi người xem cái con này
-- Con này thì nó dùng con từ 2024 nha mọi người
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@노년의마음` — [Xem kênh YouTube](https://www.youtube.com/@%EB%85%B8%EB%85%84%EC%9D%98%EB%A7%88%EC%9D%8C)
-- `@성실한경제학` — [Xem kênh YouTube](https://www.youtube.com/@%EC%84%B1%EC%8B%A4%ED%95%9C%EA%B2%BD%EC%A0%9C%ED%95%99)
-- `@シルバー世代の語り部` — [Xem kênh YouTube](https://www.youtube.com/@%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E4%B8%96%E4%BB%A3%E3%81%AE%E8%AA%9E%E3%82%8A%E9%83%A8)
-- `@gockhuatnhansinh-official` — [Xem kênh YouTube](https://www.youtube.com/@gockhuatnhansinh-official)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **@gockhuatnhansinh-official** (`@gockhuatnhansinh-official`): [Xem kênh](https://www.youtube.com/@gockhuatnhansinh-official) ✅ **[LIVE 200]**
+- **@노년의마음** (`@노년의마음`): [Xem kênh](https://www.youtube.com/@%EB%85%B8%EB%85%84%EC%9D%98%EB%A7%88%EC%9D%8C) ✅ **[LIVE 200]**
+- **@성실한경제학** (`@성실한경제학`): [Xem kênh](https://www.youtube.com/@%EC%84%B1%EC%8B%A4%ED%95%9C%EA%B2%BD%EC%A0%9C%ED%95%99) ✅ **[LIVE 200]**
+- **@シルバー世代の語り部** (`@シルバー世代の語り部`): [Xem kênh](https://www.youtube.com/@%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E4%B8%96%E4%BB%A3%E3%81%AE%E8%AA%9E%E3%82%8A%E9%83%A8) ✅ **[LIVE 200]**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Chiến lược phân bổ danh mục ngách đa thị trường: Kết hợp 1 ngách nội địa Việt Nam dễ kéo view với 2 ngách Hàn Quốc và 1 ngách Nhật Bản để tối ưu hóa RPM ngoại tệ.
+2. Thị trường Hàn Quốc cực chuộng các kênh chia sẻ góc khuất tâm lý người già và bài học quản lý tài chính cá nhân ở tuổi trung niên.
+3. Thị trường Nhật Bản ưu tiên các kênh phong cách người kể chuyện cổ xưa (người kể chuyện thế hệ bạc - Silver Generation), AVD cực cao.
+4. Học viên không cần biết tiếng Hàn hay tiếng Nhật, sử dụng công thức bóc tách kịch bản đối thủ kết hợp lồng tiếng AI chuẩn bản địa.
+5. Quy trình quản lý đa kênh trên các profile trình duyệt độc lập giúp hạn chế tối đa rủi ro chết chùm khi có biến động chính sách.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ok, em xin chào tất cả mọi người nha. Thì hôm nay em sẽ tiếp tục …
-  - `01:12` — Em thấy cái kênh này khá là trend
-  - `02:42` — Thì mọi người nhớ là xem lại
-  - `03:56` — Này là con kiến đúng không?
-  - `05:00` — Kiểu như dạng triệu như này
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> Kênh 1 Kênh 2 Kênh 3 Kênh 4
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước bóc tách dữ liệu kênh triệu view ngách Senior Wisdom Hàn Quốc**
+  + 1. Phân tích các chủ đề có lượng tương tác cao nhất: Sức khỏe tuổi già, lời dạy cổ nhân, hòa khí gia đình.
+  + 2. Trích xuất kịch bản gốc và dùng AI viết lại với giọng điệu tôn kính phù hợp văn hóa Hàn.
+  + 3. Tạo visual AI người cao tuổi phúc hậu trong khung cảnh sinh hoạt truyền thống ấm cúng.
+  + 4. Dùng giọng AI nam trung niên tiếng Hàn trầm ấm, tốc độ đọc thư thái 105 WPM.
+  + 5. Thiết kế thumbnail font chữ Hangul khổ lớn với màu vàng gold trên nền tối trang nhã.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh đưa ra các phán đoán y học không có căn cứ vi phạm chính sách YMYL.**
+2. **Không dùng sai kính ngữ tiếng Hàn đối với nhân vật người cao tuổi.**
+3. **Tránh dùng hình ảnh hoạt hình nhí nhố không phù hợp với đối tượng khán giả lớn tuổi.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN**: [Tải file / Xem liên kết](docs/VIDEO-34f417/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 81**: [Tải file / Xem liên kết](video/VIDEO-34f417/transcript.txt)

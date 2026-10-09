@@ -1,0 +1,606 @@
+[
+  {
+    "index": 1,
+    "sku": "VIDEO-ba3904",
+    "title": "Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Link Nhóm Facebook Cộng Đồng VIP H2DEV (Hỗ trợ độc quyền học viên Pro)",
+        "file": "",
+        "link": "https://www.facebook.com/share/g/1Av3v37xj7/?mibextid=wwXIfr"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-ba3904/transcript.txt",
+        "link": "video/VIDEO-ba3904/transcript.txt"
+      }
+    ],
+    "webLinks": [
+      "https://www.facebook.com/share/g/1Av3v37xj7/?mibextid=wwXIfr"
+    ],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 2,
+    "sku": "VIDEO-9873fb",
+    "title": "Khám kênh thực tế thành viên Pro sau video đầu tiên – Phân tích dữ liệu và hướng dẫn áp dụng tư duy nhân bản thị trường để phát triển kênh",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Khám Kênh & Tư Duy Nhân Bản Thị Trường Ngoại (Phân tích kênh 0 view)",
+        "file": "assets/docs/VIDEO-9873fb/SOP-KHAM-KENH-VA-NHAN-BAN-THI-TRUONG-NO-VIEW.md",
+        "link": "assets/docs/VIDEO-9873fb/SOP-KHAM-KENH-VA-NHAN-BAN-THI-TRUONG-NO-VIEW.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-9873fb/transcript.txt",
+        "link": "video/VIDEO-9873fb/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 3,
+    "sku": "VIDEO-e91589",
+    "title": "16 triệu/ 1 ngày - Doanh thu kênh thị trường Nhật, làm nhân bản thị trường",
+    "docsCount": 3,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Tài liệu Drive Khóa Học & Prompt Ngách Động Vật Hoang Dã Nhật Bản",
+        "file": "",
+        "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing"
+      },
+      {
+        "title": "Quy trình Skill Wildlife Survival (Bộ prompt & cấu trúc video động vật hoang dã)",
+        "file": "assets/docs/VIDEO-e91589/SKILL-wildlife-survival.md",
+        "link": "assets/docs/VIDEO-e91589/SKILL-wildlife-survival.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-e91589/transcript.txt",
+        "link": "video/VIDEO-e91589/transcript.txt"
+      }
+    ],
+    "webLinks": [
+      "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing"
+    ],
+    "channels": [
+      "@WildBirdSurvival-JP",
+      "Học viên gói Pro H2DEV (Kênh Nhật)",
+      "@WildBirdSurvival"
+    ],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 4,
+    "sku": "VIDEO-21824a",
+    "title": "Bật kiếm tiền kênh học viên Pro",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Kho Tài Liệu Drive & Prompt Ngách Bible Explainer Bật Kiếm Tiền",
+        "file": "",
+        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-21824a/transcript.txt",
+        "link": "video/VIDEO-21824a/transcript.txt"
+      }
+    ],
+    "webLinks": [
+      "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
+    ],
+    "channels": [
+      "Kênh học viên Pro (Ngách Bible Explainer)"
+    ],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 5,
+    "sku": "VIDEO-f77c31",
+    "title": "Doanh thu kênh làm bán content ngách view Việt sau 10 ngày bật kiếm tiền",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Quy Trình Bán Content & Tối Ưu Doanh Thu View Việt (Ngách Triết Lý Người Già)",
+        "file": "assets/docs/VIDEO-f77c31/QUY-TRINH-BAN-CONTENT-VIEW-VIET-NGUOI-GIA.md",
+        "link": "assets/docs/VIDEO-f77c31/QUY-TRINH-BAN-CONTENT-VIEW-VIET-NGUOI-GIA.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-f77c31/transcript.txt",
+        "link": "video/VIDEO-f77c31/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [
+      "Kênh bán content học viên H2DEV (Ngách người già)"
+    ],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 6,
+    "sku": "VIDEO-46c57e",
+    "title": "KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026",
+    "docsCount": 3,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Kho Tài Liệu Drive & Prompt Ngách Bible Explainer Bật Kiếm Tiền",
+        "file": "",
+        "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
+      },
+      {
+        "title": "Quy Trình 6 Bước Kháng Lỗi Sử Dụng Lại Nội Dung & Trùng Lặp 2026 (Tỷ lệ về bờ 90%)",
+        "file": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
+        "link": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-46c57e/transcript.txt",
+        "link": "video/VIDEO-46c57e/transcript.txt"
+      }
+    ],
+    "webLinks": [
+      "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing"
+    ],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 7,
+    "sku": "VIDEO-ec9c50",
+    "title": "KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Sổ Tay Kháng Bản Quyền, Gậy Bản Quyền & Trùng Lặp Nội Dung 2026 (99% về bờ)",
+        "file": "assets/docs/VIDEO-ec9c50/SO-TAY-KHANG-BAN-QUYEN-TRUNG-LAP-NOI-DUNG.md",
+        "link": "assets/docs/VIDEO-ec9c50/SO-TAY-KHANG-BAN-QUYEN-TRUNG-LAP-NOI-DUNG.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-ec9c50/transcript.txt",
+        "link": "video/VIDEO-ec9c50/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 8,
+    "sku": "VIDEO-4425fc",
+    "title": "Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Tạo & Nuôi Tài Khoản Google AdSense Chính Chủ Trâu Nhất (Né quét liên đới)",
+        "file": "assets/docs/VIDEO-4425fc/SOP-FIX-VA-TAO-GOOGLE-ADSENSE-CHINH-CHU.md",
+        "link": "assets/docs/VIDEO-4425fc/SOP-FIX-VA-TAO-GOOGLE-ADSENSE-CHINH-CHU.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-4425fc/transcript.txt",
+        "link": "video/VIDEO-4425fc/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 9,
+    "sku": "VIDEO-8bc3ce",
+    "title": "Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt",
+    "docsCount": 4,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Bảng Kê Dữ Liệu Kênh Reup Cứu Thành Công Doanh Thu 1.700$ (File CSV Offline)",
+        "file": "assets/docs/VIDEO-8bc3ce/1MFndtUcn7J_phjru1GWS2JQc68k1tBPm69YvTfG7K2c.csv",
+        "link": "https://docs.google.com/spreadsheets/d/1MFndtUcn7J_phjru1GWS2JQc68k1tBPm69YvTfG7K2c/edit?usp=sharing"
+      },
+      {
+        "title": "Kho Tài Liệu Setup Kênh & Kháng Lỗi Reup (Google Drive)",
+        "file": "",
+        "link": "https://drive.google.com/drive/folders/1ZoctNgBXNcAI4DmaNc-ydh0GN1FBC9gM?usp=sharing"
+      },
+      {
+        "title": "SOP Kháng Lỗi Sử Dụng Lại Nội Dung & Xử Lý Audio Reup 2026",
+        "file": "assets/docs/VIDEO-8bc3ce/SOP-KHANG-LOI-SU-DUNG-LAI-NOI-DUNG-REUP-AUDIO.md",
+        "link": "assets/docs/VIDEO-8bc3ce/SOP-KHANG-LOI-SU-DUNG-LAI-NOI-DUNG-REUP-AUDIO.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-8bc3ce/transcript.txt",
+        "link": "video/VIDEO-8bc3ce/transcript.txt"
+      }
+    ],
+    "webLinks": [
+      "https://docs.google.com/spreadsheets/d/1MFndtUcn7J_phjru1GWS2JQc68k1tBPm69YvTfG7K2c/edit?usp=sharing",
+      "https://drive.google.com/drive/folders/1ZoctNgBXNcAI4DmaNc-ydh0GN1FBC9gM?usp=sharing",
+      "https://h2dev.vn/learn/study/bat-buoc-phai-xem-danh-cho-nguoi-moi-hoan-toan-chua-biet-gi-huong-dan-full-quy-trinh-setup-setting-kenh-chuan-ngay-tu-dau-theo-chinh-sach-moi-nhat-2026-tao-kenh-setup-cai-dat-kenh-seo-kenh-ngam-kenh-ngach-lam?ref=H2DEV-001"
+    ],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 10,
+    "sku": "VIDEO-d84a78",
+    "title": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
+    "docsCount": 3,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Bộ Prompt Tạo Video Phật Pháp Hàn Quốc & Quy Trình Hợp Tác Ăn Chia Doanh Thu",
+        "file": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
+        "link": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md"
+      },
+      {
+        "title": "Tài Liệu Hướng Dẫn Xem Video & Quy Trình Hợp Tác Kênh (Docs Offline)",
+        "file": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt",
+        "link": "assets/docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-d84a78/transcript.txt",
+        "link": "video/VIDEO-d84a78/transcript.txt"
+      }
+    ],
+    "webLinks": [
+      "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing"
+    ],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 11,
+    "sku": "VIDEO-5c438a",
+    "title": "Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)",
+    "docsCount": 5,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Chiến Lược Chọn Mail & Chọn Kênh An Toàn (Kênh mới/cổ, Mail mới/cổ độ trust cao)",
+        "file": "assets/docs/VIDEO-5c438a/CHIEN-LUOC-CHON-MAIL-VA-CHON-KENH-AN-TOAN.md",
+        "link": "assets/docs/VIDEO-5c438a/CHIEN-LUOC-CHON-MAIL-VA-CHON-KENH-AN-TOAN.md"
+      },
+      {
+        "title": "Danh Sách Nguồn Kênh Mẫu & Nguồn Dữ Liệu Video Ngoại (Sheet 1 - CSV Offline)",
+        "file": "assets/docs/VIDEO-5c438a/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU.csv",
+        "link": "assets/docs/VIDEO-5c438a/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU.csv"
+      },
+      {
+        "title": "Danh Sách Nguồn Kênh Douyin / Bilibili Reup Khai Thác (Sheet 2 - CSV Offline)",
+        "file": "assets/docs/VIDEO-5c438a/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg.csv",
+        "link": "assets/docs/VIDEO-5c438a/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg.csv"
+      },
+      {
+        "title": "Tài Liệu Hướng Dẫn Đăng Ký Tài Khoản & Lọc Kênh Trust Nước Ngoài (Docs Offline)",
+        "file": "assets/docs/VIDEO-5c438a/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY.txt",
+        "link": "assets/docs/VIDEO-5c438a/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY.txt"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-5c438a/transcript.txt",
+        "link": "video/VIDEO-5c438a/transcript.txt"
+      }
+    ],
+    "webLinks": [
+      "https://docs.google.com/spreadsheets/d/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU/edit?usp=sharing",
+      "https://docs.google.com/spreadsheets/d/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg/edit?usp=sharing",
+      "https://docs.google.com/document/d/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY/edit?usp=sharing"
+    ],
+    "channels": [
+      "Kênh nguồn Douyin / Bilibili trong tài liệu đính kèm"
+    ],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 12,
+    "sku": "VIDEO-9f9fbc",
+    "title": "*BẮT BUỘC PHẢI XEM - DÀNH CHO NGƯỜI MỚI HOÀN TOÀN CHƯA BIẾT GÌ - HƯỚNG DẪN FULL QUY TRÌNH SETUP SETTING KÊNH CHUẨN NGAY TỪ ĐẦU THEO CHÍNH SÁCH MỚI NHẤT 2026 (TẠO KÊNH, SETUP CÀI ĐẶT KÊNH, SEO KÊNH, NGÂM KÊNH, NGÁCH LÀM...)",
+    "docsCount": 4,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "Kho Tài Liệu Setup Kênh & Kháng Lỗi Reup (Google Drive)",
+        "file": "",
+        "link": "https://drive.google.com/drive/folders/1ZoctNgBXNcAI4DmaNc-ydh0GN1FBC9gM?usp=sharing"
+      },
+      {
+        "title": "Template Thiết Kế Banner Kênh YouTube Chuẩn Tỉ Lệ (Canva Link)",
+        "file": "",
+        "link": "https://canva.link/2zmyi0mzb407lsg"
+      },
+      {
+        "title": "Template Thiết Kế Avatar / Logo Kênh YouTube Chuẩn Nhận Diện (Canva Link)",
+        "file": "",
+        "link": "https://canva.link/1ngkvt0jz6fr706"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-9f9fbc/transcript.txt",
+        "link": "video/VIDEO-9f9fbc/transcript.txt"
+      }
+    ],
+    "webLinks": [
+      "https://drive.google.com/drive/folders/1ZoctNgBXNcAI4DmaNc-ydh0GN1FBC9gM?usp=sharing",
+      "https://canva.link/2zmyi0mzb407lsg",
+      "https://canva.link/1ngkvt0jz6fr706"
+    ],
+    "channels": [
+      "@ちょっとダークな心理学"
+    ],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 13,
+    "sku": "VIDEO-7db740",
+    "title": "CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP SEO Chuẩn Từ Khóa Kênh, Video & Mô Tả Chuẩn Thuật Toán 2026",
+        "file": "assets/docs/VIDEO-7db740/SOP-SEO-CHUAN-TU-KHOA-KENH-VIDEO-MO-TA-2026.md",
+        "link": "assets/docs/VIDEO-7db740/SOP-SEO-CHUAN-TU-KHOA-KENH-VIDEO-MO-TA-2026.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-7db740/transcript.txt",
+        "link": "video/VIDEO-7db740/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 14,
+    "sku": "VIDEO-7f0bb4",
+    "title": "NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Ngâm Kênh Chuẩn & Kích Hoạt Độ Trust Mạnh Trước Khi Đăng Video 2026",
+        "file": "assets/docs/VIDEO-7f0bb4/SOP-NGAM-KENH-CHUAN-XAC-MINH-TRUST-MANH.md",
+        "link": "assets/docs/VIDEO-7f0bb4/SOP-NGAM-KENH-CHUAN-XAC-MINH-TRUST-MANH.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-7f0bb4/transcript.txt",
+        "link": "video/VIDEO-7f0bb4/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 15,
+    "sku": "VIDEO-ff9be6",
+    "title": "XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Xác Định Ngưỡng Bỏ Kênh & Đọc Chỉ Số Thuật Toán Test Phân Phối Video",
+        "file": "assets/docs/VIDEO-ff9be6/SOP-XAC-DINH-NGUONG-BO-KENH-VA-THUAT-TOAN-TEST-VIEW.md",
+        "link": "assets/docs/VIDEO-ff9be6/SOP-XAC-DINH-NGUONG-BO-KENH-VA-THUAT-TOAN-TEST-VIEW.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-ff9be6/transcript.txt",
+        "link": "video/VIDEO-ff9be6/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 16,
+    "sku": "VIDEO-6ad3fe",
+    "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Khắc Phục Lỗi Nội Dung Không Trung Thực (Inauthentic Content) Chính Sách 2026",
+        "file": "assets/docs/VIDEO-6ad3fe/SOP-FIX-LOI-NOI-DUNG-KHONG-TRUNG-THUC-CHINH-SACH-MOI.md",
+        "link": "assets/docs/VIDEO-6ad3fe/SOP-FIX-LOI-NOI-DUNG-KHONG-TRUNG-THUC-CHINH-SACH-MOI.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-6ad3fe/transcript.txt",
+        "link": "video/VIDEO-6ad3fe/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 17,
+    "sku": "VIDEO-027064",
+    "title": "Cách tạo kênh, lập kênh chuyển đổi kênh sang thị trường ngoại chuẩn nhất",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Quy Trình Tạo Kênh & Chuyển Vùng Thị Trường Ngoại (US/JP/KR) Chuẩn Nhất",
+        "file": "assets/docs/VIDEO-027064/SOP-QUY-TRINH-TAO-KENH-VA-CHUYEN-VUNG-THI-TRUONG-NGOAI.md",
+        "link": "assets/docs/VIDEO-027064/SOP-QUY-TRINH-TAO-KENH-VA-CHUYEN-VUNG-THI-TRUONG-NGOAI.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-027064/transcript.txt",
+        "link": "video/VIDEO-027064/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 18,
+    "sku": "VIDEO-943781",
+    "title": "Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Phân Chia Nuôi Hàng Loạt Mail & Kênh Trên 1 Thiết Bị Né Quét Spam",
+        "file": "assets/docs/VIDEO-943781/SOP-PHAN-CHIA-NUOI-HANG-LOAT-MAIL-KENH-TREN-1-MAY.md",
+        "link": "assets/docs/VIDEO-943781/SOP-PHAN-CHIA-NUOI-HANG-LOAT-MAIL-KENH-TREN-1-MAY.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-943781/transcript.txt",
+        "link": "video/VIDEO-943781/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 19,
+    "sku": "VIDEO-199f44",
+    "title": "Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Thủ Thuật Nuôi Tương Tác Kênh Đối Thủ Trong Thời Gian Ngâm Kênh",
+        "file": "assets/docs/VIDEO-199f44/SOP-THU-THUAT-NUOI-TUONG-TAC-TRONG-THOI-GIAN-NGAM-KENH.md",
+        "link": "assets/docs/VIDEO-199f44/SOP-THU-THUAT-NUOI-TUONG-TAC-TRONG-THOI-GIAN-NGAM-KENH.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-199f44/transcript.txt",
+        "link": "video/VIDEO-199f44/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  },
+  {
+    "index": 20,
+    "sku": "VIDEO-3e5a21",
+    "title": "HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
+    "docsCount": 2,
+    "invalidDocsCount": 0,
+    "docs": [
+      {
+        "title": "SOP Add Quyền Quản Lý Kênh & Mail Khôi Phục Né Quét Die Kênh Hàng Loạt",
+        "file": "assets/docs/VIDEO-3e5a21/SOP-ADD-QUYEN-QUAN-LY-KENH-VA-MAIL-KHOI-PHUC.md",
+        "link": "assets/docs/VIDEO-3e5a21/SOP-ADD-QUYEN-QUAN-LY-KENH-VA-MAIL-KHOI-PHUC.md"
+      },
+      {
+        "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+        "file": "video/VIDEO-3e5a21/transcript.txt",
+        "link": "video/VIDEO-3e5a21/transcript.txt"
+      }
+    ],
+    "webLinks": [],
+    "channels": [],
+    "takeawaysCount": 5,
+    "sopCount": 5,
+    "avoidCount": 3,
+    "verified": true,
+    "issues": []
+  }
+]

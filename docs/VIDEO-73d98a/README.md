@@ -47,3 +47,13 @@
 
 ## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
 > các kênh đối thủ trong video, (để tránh hạn chế mn bấm qua link nhiều quá spam kênh tội họ thì em để id kênh nhé ạ, mấy bác copy qua ytb search nha) @涙のひと駅 @사연만남1짱 @simbot2 @元気な老後-t5d
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** Quy trình 5 bước sản xuất video ngách câu chuyện tâm sự & dưỡng sinh thị trường Nhật - Hàn né quét AI:
+- Bước 1 (Khai thác nguồn câu chuyện tâm sự đời thực): Sưu tầm các câu chuyện cảm động về tuổi già, tình nghĩa gia đình hoặc vượt qua nghịch cảnh từ các diễn đàn đời sống Nhật Bản (2channel, Yahoo Chiebukuro) và Hàn Quốc (Nate Pann).
+- Bước 2 (Chuyển ngữ & Bản địa hóa cảm xúc bằng AI): Dùng AI dịch thuật chuyên sâu giữ nguyên kính ngữ tiếng Nhật (Keigo) hoặc tiếng Hàn trang trọng, thêm thắt các chi tiết văn hóa địa phương tạo sự đồng cảm sâu sắc.
+- Bước 3 (Tạo giọng đọc AI bản xứ truyền cảm): Sử dụng ElevenLabs hoặc CapCut TTS chọn voice nam/nữ lớn tuổi Nhật Bản (như Keiko/Naoki) hoặc Hàn Quốc (như Yuna/Minho), hạ tốc độ 0.9x tạo nhịp điệu chiêm nghiệm.
+- Bước 4 (Kỹ thuật dựng B-roll động chống lặp hình): Ghép xen kẽ các đoạn footage đời sống sinh hoạt, quang cảnh ga tàu điện, con phố cổ Kyoto/Seoul; cắt cảnh mỗi 4-6 giây kết hợp hiệu ứng lia máy nhẹ (Pan & Zoom).
+- Bước 5 (Thiết kế Thumbnail gây xúc động mạnh): Chụp ảnh người cao tuổi ngồi một mình bên ô cửa sổ mưa rơi, tiêu đề font Mincho/Batang u sầu tương phản trắng viền đen khơi gợi sự tò mò (VÍ DỤ: CHUYẾN TÀU CUỐI CÙNG).
+

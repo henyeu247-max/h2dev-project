@@ -2,40 +2,47 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-2ed37a`
-- **Tiêu đề:** NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP
-- **Chủ đề thực tế:** NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Mỹ / Ngoại (Mã: `US`)
-- **Thời lượng:** 02:31
-- **Dung lượng MP4:** 52.7 MB
-- **File Video:** [`video/VIDEO-2ed37a/VIDEO-2ed37a.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-2ed37a/VIDEO-2ed37a.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-2ed37a.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-2ed37a.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-key-moi-10-12-2025-ngach-thi-truong-philippines-view-hoa-ky-dang-cuc-trends-va-canh-tranh-thap](https://h2dev.vn/learn/study/update-key-moi-10-12-2025-ngach-thi-truong-philippines-view-hoa-ky-dang-cuc-trends-va-canh-tranh-thap)
+- **Bài học:** #88
+- **Tiêu đề bài giảng:** NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP
+- **Thị trường mục tiêu:** 🇺🇸 Mỹ, 🇵🇭 Phil
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-2ed37a.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-key-moi-10-12-2025-ngach-thi-truong-philippines-view-hoa-ky-dang-cuc-trends-va-canh-tranh-thap)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Về cái kênh này hiện tại đang xét là quốc gia ở Philippines thì mọi người đừng quan tâm nha, tí nữa em sẽ nói sau
-- Về cái kênh này mọi người thấy nó hơn là một trăm hai mấy người đăng ký và có kẻ thích xanh và nhiều video đúng không
-- Thì mọi người đừng có lo sợ nha, đây bây giờ em sẽ giải thích cho mọi người biết luôn là kênh này thì nó là mua lại nha mọi người
-- Đây, mọi người thấy nè, lúc trước nè, nó làm về kỳ xuất khỉ Đây, anh em thấy không
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@HinognaKaalamanYT` — [Xem kênh YouTube](https://www.youtube.com/@HinognaKaalamanYT)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **@HinognaKaalamanYT** (`@HinognaKaalamanYT`): [Xem kênh](https://www.youtube.com/@HinognaKaalamanYT) ✅ **[LIVE 200]**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Về cái kênh này hiện tại đang xét là quốc gia ở Philippines thì mọi người đừng quan tâm nha, tí nữa em sẽ nói sau
-- ⚠️ Thì mọi người đừng có lo sợ nha, đây bây giờ em sẽ giải thích cho mọi người biết luôn là kênh này thì nó là mua lại nha mọi người
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Ngách thị trường Philippines kết hợp kéo view từ kiều bào tại Hoa Kỳ (US) là một mỏ vàng ít cạnh tranh với RPM rất tốt.
+2. Người Philippines cực kỳ thành thạo tiếng Anh, có thói quen lướt YouTube giải trí cao và rất cởi mở với các nội dung tò mò, khám phá tri thức.
+3. Kênh đối thủ @HinognaKaalamanYT khai thác xuất sắc các bí ẩn khoa học, sự thật kỳ lạ về cơ thể người và thế giới tự nhiên.
+4. Sử dụng tiếng Anh hoặc Tagalog chuẩn giọng bản xứ kết hợp các câu hỏi giật gân ngay tiêu đề để kích thích tỷ lệ nhấp (CTR > 10%).
+5. Tư liệu hình ảnh dễ sản xuất, tận dụng kho B-roll miễn phí kết hợp đồ họa chuyển động đơn giản trên CapCut.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi ok em xin chào tất cả mọi người nha, hôm nay em lại tiếp tục …
-  - `00:43` — Nhưng mà cũng có lẹt đẹp
-  - `01:06` — 2, 4, 6, 8 thì mới có tầm 8-10 video thôi mọi người
-  - `01:46` — Cực kỳ là cao luôn
-  - `02:05` — Làm theo như nó luôn
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> LINK KÊNH
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước dựng video bám theo các vụ án kinh tế và dark ledger bí ẩn**
+  + 1. Thu thập các hồ sơ vụ án kinh tế lớn và các tài liệu điều tra tài chính công khai.
+  + 2. Vẽ sơ đồ dòng tiền (Paper Trail) trực quan bằng đồ họa chuyển động giải thích mánh khóe phạm tội.
+  + 3. Sử dụng visual tông màu tối u ám (Dark Noir) tạo không khí bí ẩn và căng thẳng.
+  + 4. Giọng đọc AI đanh thép, nhịp đọc nhanh 145 WPM tạo cảm giác hồi hộp dồn dập.
+  + 5. Thumbnail có hình ảnh tiền bạc, còng số 8 hoặc biểu đồ tài chính lao dốc gây sốc.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh nêu tên đích danh các cá nhân hoặc tổ chức khi chưa có phán quyết chính thức của tòa án.**
+2. **Không xuyên tạc quy trình tố tụng pháp luật làm sai lệch nhận thức người xem.**
+3. **Tránh dùng từ ngữ phỉ báng hoặc kích động thù địch đối với các bên liên quan.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP**: [Tải file / Xem liên kết](docs/VIDEO-2ed37a/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 88**: [Tải file / Xem liên kết](video/VIDEO-2ed37a/transcript.txt)

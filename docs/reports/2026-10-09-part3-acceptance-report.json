@@ -1,0 +1,428 @@
+{
+  "generatedAt": "2026-10-08T23:06:31.413Z",
+  "totalVideos": 20,
+  "passCount": 20,
+  "failCount": 0,
+  "results": [
+    {
+      "index": 41,
+      "sku": "VIDEO-348217",
+      "title": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@사회의어두운심리학",
+        "@kankokugo_ch",
+        "@fuetunojin",
+        "@nhk_docu"
+      ]
+    },
+    {
+      "index": 42,
+      "sku": "VIDEO-f74bb1",
+      "title": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@노후건강한끼",
+        "@건강백단",
+        "@장수채소습관",
+        "@fuetunojin"
+      ]
+    },
+    {
+      "index": 43,
+      "sku": "VIDEO-1aaf46",
+      "title": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends",
+      "status": "PASS",
+      "docs": {
+        "expected": 8,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kho Bilibili Space Hoạt Hình 3546980485696283",
+        "Kho Bilibili Space Hoạt Hình 3546888691256089",
+        "Kho Bilibili Space Hoạt Hình 3546852697836055",
+        "Kho Bilibili Space Hoạt Hình 3546819541863216",
+        "Kho Bilibili Space Hoạt Hình 1641862092",
+        "Kho Bilibili Space Hoạt Hình 3461566735322013"
+      ]
+    },
+    {
+      "index": 44,
+      "sku": "VIDEO-21956b",
+      "title": "Update ngách nhân bản thị trường Hàn, Nhật và Việt",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@KapitalKompass-US",
+        "@LamNgo-qz3bw",
+        "@長生きの秘訣22",
+        "@노후의삶-s1s",
+        "@songkhoekhivegia",
+        "@Jinseioiyasukotoba",
+        "@Songkhoetungngay365",
+        "@늦기전에알아야할것"
+      ]
+    },
+    {
+      "index": 45,
+      "sku": "VIDEO-34c92b",
+      "title": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh nhân bản thị trường Nhật Bản trong bài học",
+        "Kênh nhân bản thị trường Hàn Quốc trong bài học"
+      ]
+    },
+    {
+      "index": 46,
+      "sku": "VIDEO-84a039",
+      "title": "Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@asuhetsudukumichi",
+        "@イエスのアファメーション"
+      ]
+    },
+    {
+      "index": 47,
+      "sku": "VIDEO-817ae6",
+      "title": "Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@meophongthuy-m7d",
+        "@プレアデス最終通知556"
+      ]
+    },
+    {
+      "index": 48,
+      "sku": "VIDEO-2de9e4",
+      "title": "Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách)",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@ThựcPhẩmSứcKhoẻ-u8y",
+        "@kienthucthanhoc9",
+        "@PHONGTHUYTIEMTANG"
+      ]
+    },
+    {
+      "index": 49,
+      "sku": "VIDEO-2ba0d1",
+      "title": "Update ngách mới thị trường Nhật Bản làm bán content",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@izinnokatari",
+        "@kotobano-housekibako",
+        "@IjinNoNouri"
+      ]
+    },
+    {
+      "index": 50,
+      "sku": "VIDEO-2277b3",
+      "title": "Share thêm ngách nhỏ thị trường Việt và phân tích hướng dẫn tư duy làm nhân bản tất cả các thị trường",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh ngách nhỏ triết lý thị trường Việt Nam",
+        "Kênh nhân bản đa thị trường H2DEV"
+      ]
+    },
+    {
+      "index": 51,
+      "sku": "VIDEO-ca0b1a",
+      "title": "Show kênh thực chiến không che - hướng dẫn quy trình làm bán content nhân bản thị trường US sang Việt",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh thực chiến bán content nhân bản US sang Việt"
+      ]
+    },
+    {
+      "index": 52,
+      "sku": "VIDEO-469cb5",
+      "title": "Update thêm kênh đối thủ - ngách thị trường Hoa Kỳ (US)",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@biblemadeclear26",
+        "@scripturemadesimpleyt",
+        "@ScriptureMadeSimpleTV",
+        "@theopenscriptures",
+        "@BibleLegacyAssets98"
+      ]
+    },
+    {
+      "index": 53,
+      "sku": "VIDEO-7312df",
+      "title": "Bật kiếm tiền cho 2 kênh làm Reup hoạt hình - Show kênh không che",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh Reup hoạt hình 1 bật kiếm tiền (Bài học H2DEV)",
+        "Kênh Reup hoạt hình 2 bật kiếm tiền (Bài học H2DEV)"
+      ]
+    },
+    {
+      "index": 54,
+      "sku": "VIDEO-2235fb",
+      "title": "Show kênh REUP nhân bản thị trường Hoa Kỳ, view cực kỳ kinh khủng + thêm kênh thị trường Thái Lan và hướng dẫn tư duy làm đúng ngách đúng thị trường auto có view",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh Reup nhân bản thị trường Hoa Kỳ (Bài học)",
+        "Kênh Reup thị trường Thái Lan (Bài học)"
+      ]
+    },
+    {
+      "index": 55,
+      "sku": "VIDEO-e9e879",
+      "title": "Thực chiến & Show kênh ngách làm reup mới bật kiếm tiền - Full quy trình thực chiến sản xuất video -> đăng video lên kênh không che ",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh Reup thực chiến H2DEV bật kiếm tiền đầu tháng 5"
+      ]
+    },
+    {
+      "index": 56,
+      "sku": "VIDEO-b1208e",
+      "title": "KÊNH BUILD ĐÚNG 7 NGÀY - SHARE THÊM 3 NGÁCH CỰC NHỎ REUP MỚI NHẤT CỰC TRENDS",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh Reup hoạt hình cổ trang Trung Cổ (Bài học)",
+        "Kênh Reup hoạt hình hiện đại (Bài học)",
+        "Kênh Reup hoạt hình đam mỹ / tình cảm (Bài học)"
+      ]
+    },
+    {
+      "index": 57,
+      "sku": "VIDEO-1acb10",
+      "title": "SHARE NGÁCH REUP HOẠT HÌNH TRUNG QUỐC RẤT TRENDS FULL BỘ MỚI NHẤT",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh Reup hoạt hình tu tiên Trung Quốc (16 video)",
+        "Kênh Reup hoạt hình 2D cổ trang (Hơn 200 video)"
+      ]
+    },
+    {
+      "index": 58,
+      "sku": "VIDEO-70f1f1",
+      "title": "KEY BÁN CONTENT NGÁCH NHỎ ĐỨC PHẬT VÀ CHÚA THỊ TRƯỜNG HÀN QUỐC",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@こころの道しるべブッダの教え",
+        "@은빛복음",
+        "@주님의손길-handofgod"
+      ]
+    },
+    {
+      "index": 59,
+      "sku": "VIDEO-33f474",
+      "title": "CHỈ MỚI 5 VIDEO - KÊNH MỚI LẬP 14/04/2026 NỔ VIEW QUÁ KHIẾP VỚI NGÁCH TÂM LINH, LUẬT HẤP DẪN THỊ TRƯỜNG NHẬT BẢN ",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@金龍巫女みこと",
+        "@心を磨く言葉たち",
+        "@偉人の智慧"
+      ]
+    },
+    {
+      "index": 60,
+      "sku": "VIDEO-28bb9b",
+      "title": "SHARE NGÁCH REUP CỰC TRENDS VÀ 3 NGÁCH BÁN CONTENT VIEW VIỆT - CLONE THEO ĐỐI THỦ",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh Reup hoạt hình mới bật kiếm tiền bàn giao học viên",
+        "Kênh bán content triết lý cổ nhân view Việt"
+      ]
+    }
+  ]
+}

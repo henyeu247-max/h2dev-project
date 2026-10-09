@@ -2,39 +2,47 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-82f8a8`
-- **Tiêu đề:** Share Key MỚI NHẤT Update 23/08/2025 - Ngách nhỏ thị trường Nhật Bản
-- **Chủ đề thực tế:** Share Key MỚI NHẤT Update 23/08/2025 - Ngách nhỏ thị trường Nhật Bản
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 09:09
-- **Dung lượng MP4:** 177.4 MB
-- **File Video:** [`video/VIDEO-82f8a8/VIDEO-82f8a8.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-82f8a8/VIDEO-82f8a8.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-82f8a8.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-82f8a8.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/share-key-moi-nhat-update-23082025-ngach-nho-thi-truong-nhat-ban](https://h2dev.vn/learn/study/share-key-moi-nhat-update-23082025-ngach-nho-thi-truong-nhat-ban)
+- **Bài học:** #108
+- **Tiêu đề bài giảng:** Share Key MỚI NHẤT Update 23/08/2025 - Ngách nhỏ thị trường Nhật Bản
+- **Thị trường mục tiêu:** 🇯🇵 Nhật
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-82f8a8.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/share-key-moi-nhat-update-23082025-ngach-nho-thi-truong-nhat-ban)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì cái video mới này em sẽ tiếp tục share kia cho mọi người nha
-- Đấy, thì trước khi share kia thì các bộ số anh em hỏi về cũng như là không biết cái chỗ mà lấy prompt cũng như là tài liệu chỗ nào ấy
-- Thì em hướng dẫn, sẵn chỗ này em hướng dẫn luôn nha mọi người
-- Thì mọi người để ý cái chỗ dưới chỗ danh mục nó có cái phần mô tả về cái phần bình luận ấy
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **黒猫の予言** (`@黒猫の予言`): [Xem kênh](https://www.youtube.com/@%E9%BB%92%E7%8C%AB%E3%81%AE%E4%BA%88%E8%A8%80) ✅ **[LIVE 200]**
+- **誇りを守った日本人.8386** (`@誇りを守った日本人.8386`): [Xem kênh](https://www.youtube.com/@%E8%AA%87%E3%82%8A%E3%82%92%E5%AE%88%E3%81%A3%E3%81%9F%E6%97%A5%E6%9C%AC%E4%BA%BA.8386) ✅ **[LIVE 200]**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Thị trường Nhật Bản: Ngách Tiên tri Mèo đen và Lịch sử lòng tự hào dân tộc (@黒猫の予言).
+2. Khán giả Nhật Bản đặc biệt yêu thích hình tượng mèo đen huyền bí và các câu chuyện tâm linh sâu sắc.
+3. Tỷ lệ xem hết video (Audience Retention) của khán giả Nhật thuộc hàng cao nhất thế giới.
+4. Mức RPM tại thị trường Nhật Bản đạt từ $8 đến $16, ổn định và bền vững.
+5. Chiến lược xây dựng nhân vật đại diện độc bản để tạo dấu ấn thương hiệu lâu dài.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ok, em xin chào tất cả mọi người nha.
-  - `01:40` — Đây em sẽ xem nè
-  - `03:57` — Từ khóa ngách của nó là mất tích nha
-  - `05:48` — Những cái ngách mới mọi người làm thì cứ làm tương tự thôi
-  - `07:25` — Đấy, nhưng mà video con này lên rất là ngon luôn nha mọi người
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> LIST LINK KÊNH ĐỐI THỦ
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Tạo hình tượng nhân vật mèo đen phong cách anime thần bí bằng AI Midjourney.
+- 2. Giọng đọc AI tiếng Nhật ngữ điệu thì thầm, huyền bí, cuốn hút người nghe.
+- 3. Lồng ghép âm thanh tiếng tích tắc đồng hồ hoặc tiếng chuông đền Shinto ở mức -23 dB.
+- 4. Bố cục video tông màu tối huyền ảo, tương phản với đôi mắt mèo phát sáng.
+- 5. Thumbnail thiết kế với font chữ Mincho sắc nét, chữ vàng nổi bật trên nền đen.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh xuyên tạc lịch sử Nhật Bản gây phẫn nộ trong cộng đồng mạng bản xứ.**
+2. **Tránh giọng đọc AI thiếu tự nhiên, ngữ điệu ngô nghê làm mất cảm xúc huyền bí.**
+3. **Tránh hình ảnh kinh dị máu me dính cờ hạn chế độ tuổi của YouTube.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **LIST LINK KÊNH ĐỐI THỦ**: [Tải file / Xem liên kết](https://docs.google.com/spreadsheets/d/1jSfRYhNkVpqAA34DjX0CiJjn18Ph5U093JlV0a4P1ao/edit?usp=sharing)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-82f8a8/transcript.txt)

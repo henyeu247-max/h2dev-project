@@ -34,3 +34,17 @@
 - **CapCut**
 - **ElevenLabs**
 - **ChatGPT**
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP sản xuất video tâm sự Tuổi Già Tuổi Đẹp đối thoại 2 giọng đọc:
+- Bước 1 (Xây dựng kịch bản đàm thoại mộc mạc): Soạn kịch bản đối thoại giữa 2 nhân vật (ví dụ: ông Hai và bà Ba) chia sẻ về thói quen dưỡng sinh, đạo đối nhân xử thế và cách sống an yên tuổi xế chiều.
+- Bước 2 (Tạo 2 giọng đọc AI phối ngẫu tự nhiên): Phân vai giọng nam trầm ấm chất giọng miền Tây/miền Bắc kết hợp giọng nữ hiền từ, ngắt nghỉ từng nhịp có cảm xúc thở dài nhẹ nhàng.
+- Bước 3 (Sưu tầm & Lọc footage làng quê độ phân giải cao): Dùng hình ảnh đời sống thôn quê, cánh đồng lúa chín, dòng sông êm đềm, người già nhâm nhi chén trà chiều dưới gốc đa cổ thụ.
+- Bước 4 (Phối khí nhạc nền quê hương dịu êm): Sử dụng nhạc đàn tranh, sáo trúc hoặc bolero không lời với âm lượng nhỏ nhẹ (-23dB), tạo không gian thư thái tuyệt đối.
+- Bước 5 (Thiết kế Thumbnail đậm chất tình quê): Chụp góc nghiêng người già mỉm cười hiền từ bên hiên nhà, gam màu vàng ấm ban chiều, chữ to rõ ràng font đậm (VÍ DỤ: AN NHIÊN TUỔI GIÀ).
+
+### Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags)
+- [x] **Tránh vi phạm:** Tránh đưa những bi kịch gia đình quá giật gân, tranh chấp con cái cay nghiệt gây ức chế tâm lý người lớn tuổi.
+- [x] **Tránh vi phạm:** Không chèn nhạc điện tử, nhạc trẻ hoặc âm thanh hiệu ứng giật mình (Jumpscare FX).
+- [x] **Tránh vi phạm:** Không dùng hình ảnh bệnh tật, thuốc men chưa kiểm chứng vi phạm chính sách y tế YMYL của Google.

@@ -35,3 +35,17 @@
 
 ## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
 > https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP thiết kế khung Nonagon 9 cạnh và dựng clip so sánh nhân vật chuẩn YouTube:
+- Bước 1 (Dựng khung đa giác Nonagon trong Photopea): Mở canvas chuẩn 1920x1080, nhập vector đa giác 9 cạnh (vecteezy_one-whole-nonagon), chia đều 9 phân vùng chỉ số với các đường kẻ ánh sáng neon phát sáng (Outer Glow).
+- Bước 2 (Ghép nhân vật qua Clipping Mask): Thu thập ảnh render không nền của 2-3 nhân vật đối đầu, kéo vào từng layer phía trên ô đa giác tương ứng, chọn 'Create Clipping Mask' để ảnh tự động khớp viền sắc nét.
+- Bước 3 (Cân chỉnh màu sắc & Hiệu ứng điện ảnh): Dùng Curves và Color Balance chỉnh độ tương phản nhân vật, thêm hiệu ứng hạt bụi điện tích (Sparks particle overlay) và viền đỏ/xanh biểu trưng cho 2 phe đối đầu.
+- Bước 4 (Dựng timeline CapCut & Hoạt họa thanh chỉ số): Nhập template vào CapCut, tạo keyframe cho thanh đo chỉ số chạy tăng dần từ 0 đến 100 theo nhịp nhạc beat dồn dập (Phonk / Epic Battle theme).
+- Bước 5 (Xuất bản & Tối ưu thẻ tương tác): Xuất file chuẩn 1080p 60fps để chuyển động thanh đo mượt mà; đặt câu hỏi gài tranh luận ở màn hình kết thúc ('Ai mới là kẻ bất bại?').
+
+### Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags)
+- [x] **Tránh vi phạm:** Không để ảnh nhân vật bị vỡ pixel (luôn dùng ảnh gốc độ phân giải từ 2K trở lên).
+- [x] **Tránh vi phạm:** Tránh thiên vị chỉ số quá lộ liễu không có logic khiến khán giả phẫn nộ report video.
+- [x] **Tránh vi phạm:** Không dùng nhạc nền có bản quyền Content ID gắt gao; ưu tiên dùng thư viện nhạc NCS hoặc âm thanh bản quyền thương mại cho phép.

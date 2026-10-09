@@ -2,37 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-199f44`
-- **Tiêu đề:** Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh
-- **Chủ đề thực tế:** Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Mỹ / Ngoại (Mã: `US`)
-- **Thời lượng:** 02:24
-- **Dung lượng MP4:** 66.1 MB
-- **File Video:** [`video/VIDEO-199f44/VIDEO-199f44.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-199f44/VIDEO-199f44.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-199f44.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-199f44.png)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/huong-dan-cach-ngam-kenh-va-cac-thu-thuat-meo-tuong-tac-kenh-doi-thu-trong-qua-trinh-ngam-ken](https://h2dev.vn/learn/study/huong-dan-cach-ngam-kenh-va-cac-thu-thuat-meo-tuong-tac-kenh-doi-thu-trong-qua-trinh-ngam-ken)
+- **Bài học:** #110
+- **Tiêu đề bài giảng:** Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh
+- **Thị trường mục tiêu:** 🌐 Ngoại
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-199f44.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/huong-dan-cach-ngam-kenh-va-cac-thu-thuat-meo-tuong-tac-kenh-doi-thu-trong-qua-trinh-ngam-ken)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Xong rồi cách đấy tầm 1, 2 phút hoặc là bao nhiêu phút đấy nữa thì anh em bấm đăng ký kênh nha
-- Chứ đừng có spam liên tục nha
-- Rồi về cái phần bình luận thì anh em copy cái tiêu đề của nó đi
-- Anh em vào cái con chat nè
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **Kênh Mẫu Ngâm & Nuôi Tương Tác Tự Nhiên**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Chứ đừng có spam liên tục nha
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Mục đích của việc ngâm kênh: Xây dựng Trust Score sạch với thuật toán chống spam của Google.
+2. Thuật toán phân tích hành vi duyệt web và lịch sử xem của tài khoản để định vị ngách kênh.
+3. Tương tác tự nhiên: Xem trọn vẹn video, like và bình luận có chiều sâu trên các kênh đối thủ.
+4. Quy tắc vàng: Tuyệt đối không đăng video ngay trong 24 giờ đầu tiên sau khi tạo kênh.
+5. Định hình tệp khán giả mục tiêu cho kênh ngay từ giai đoạn ủ mầm trước khi xuất bản.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ừ rồi ok Bây giờ em sẽ hướng dẫn anh em cách mẹ tương tác trong t…
-  - `00:43` — Để cho nó viết 10 cái bình luận hay về cái chủ đề đấy luôn.
-  - `01:28` — Đấy, rồi.
-  - `01:47` — Anh em cứ để cho nó tự xem
-  - `02:05` — Anh em nhớ là
+---
 
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Xem hết 5 - 10 video triệu view của các kênh đối thủ trong ngách để tạo lịch sử duyệt web.
+- 2. Để lại bình luận thảo luận chân thực, tích cực (tuyệt đối không để link hay xin sub).
+- 3. Nhấn đăng ký 10 kênh uy tín đầu ngành trong cùng lĩnh vực hoạt động.
+- 4. Ngâm kênh tối thiểu 3 đến 5 ngày trước khi thực hiện lượt tải lên video đầu tiên.
+- 5. Lên lịch xuất bản video đầu tiên vào khung giờ cao điểm của tệp khán giả đối thủ.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh dùng tool buff view ảo hoặc mua sub khiến kênh bị đưa vào danh sách đen.**
+2. **Tránh spam bình luận cùng một nội dung trên hàng loạt kênh khác nhau.**
+3. **Tránh đăng tải video dồn dập ngay sau khi tạo kênh gây kích hoạt hệ thống chống bot.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **SOP Thủ Thuật Nuôi Tương Tác Tự Nhiên Trong Thời Gian Ngâm Kênh**: [Tải file / Xem liên kết](assets/docs/VIDEO-199f44/SOP-THU-THUAT-NUOI-TUONG-TAC-TRONG-THOI-GIAN-NGAM-KENH.md)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-199f44/transcript.txt)

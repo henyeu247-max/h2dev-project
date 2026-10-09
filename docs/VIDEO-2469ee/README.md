@@ -2,40 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-2469ee`
-- **Tiêu đề:** SHARE THÊM NGÁCH REUP CỰC MỚI NHẤT - CÁC KÊNH ĐỐI THỦ MỚI CHỈ 5 VIDEO VÀ HƯỚNG DẪN TƯ DUY TỰ SEARCH RA NGUỒN KÊNH GỐC ĐỂ LẤY VÀ LÀM
-- **Chủ đề thực tế:** SHARE THÊM NGÁCH REUP CỰC MỚI NHẤT - CÁC KÊNH ĐỐI THỦ MỚI CHỈ 5 VIDEO VÀ HƯỚNG DẪN TƯ DUY TỰ SEARCH RA NGUỒN KÊNH GỐC ĐỂ LẤY VÀ LÀM
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Mỹ / Ngoại (Mã: `US`)
-- **Thời lượng:** 04:04
-- **Dung lượng MP4:** 59.9 MB
-- **File Video:** [`video/VIDEO-2469ee/VIDEO-2469ee.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-2469ee/VIDEO-2469ee.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-2469ee.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-2469ee.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/share-them-ngach-reup-cuc-moi-nhat-cac-kenh-doi-thu-moi-chi-5-video-va-huong-dan-tu-duy-tu-search-ra-nguon-kenh-goc-de-lay-va-lam](https://h2dev.vn/learn/study/share-them-ngach-reup-cuc-moi-nhat-cac-kenh-doi-thu-moi-chi-5-video-va-huong-dan-tu-duy-tu-search-ra-nguon-kenh-goc-de-lay-va-lam)
+- **Bài học:** #60
+- **Tiêu đề bài giảng:** SHARE THÊM NGÁCH REUP CỰC MỚI NHẤT - CÁC KÊNH ĐỐI THỦ MỚI CHỈ 5 VIDEO VÀ HƯỚNG DẪN TƯ DUY TỰ SEARCH RA NGUỒN KÊNH GỐC ĐỂ LẤY VÀ LÀM
+- **Thị trường mục tiêu:** 🇨🇳 Trung
+- **Ngách nội dung:** Reup & Khai Thác Hoạt Hình
+- **Thumbnail:** `assets/thumbs/VIDEO-2469ee.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/share-them-ngach-reup-cuc-moi-nhat-cac-kenh-doi-thu-moi-chi-5-video-va-huong-dan-tu-duy-tu-search-ra-nguon-kenh-goc-de-lay-va-lam)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Đây, mọi người copy cái tiêu đề của nó nè
-- Đấy, rồi mọi người google dịch nha, mọi người dịch sang tiếng Trung
-- Rồi, anh em copy cái tiếng Trung đó, mọi người wear doing nha
-- Đấy, em hướng dẫn mọi người tự làm, tự tìm luôn nha
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@redvoices90` — [Xem kênh YouTube](https://www.youtube.com/@redvoices90)
-- `@HDVietsub-h7u` — [Xem kênh YouTube](https://www.youtube.com/@HDVietsub-h7u)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+---
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ừ rồi ok em chào mọi người thì tiếp theo em xin cho mọi người thê…
-  - `00:55` — Cái đây phải là cái dạng đấy không mọi người Chắc chắn là cái dạng này luôn rồi. Rồi cứ thế mọi người bấm vào…
-  - `01:43` — Đó, những cái tập này rất rất hình cao view luôn
-  - `02:20` — Về có một video nổ view là 6.000 nè mọi người
-  - `02:55` — Nhưng mà mọi người biết rồi
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Đây, mọi người copy cái tiêu đề của nó nè
+2. Đấy, rồi mọi người google dịch nha, mọi người dịch sang tiếng Trung
+3. Rồi, anh em copy cái tiếng Trung đó, mọi người wear doing nha
+4. Đấy, em hướng dẫn mọi người tự làm, tự tìm luôn nha
+5. 📌 Phòng ngừa quét bản quyền & AI: Tuyệt đối không dùng video AI tự động 100%; bắt buộc phối hợp video nền chuyển động tự nhiên, sóng âm trực quan và hiệu ứng chuyển cảnh để bảo toàn trạng thái YPP.
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> kênh đối thủ 1 kênh đối thủ 2
+---
+
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước nhân bản tuyến nội dung thành công thành hệ thống kênh vệ tinh**
+  + 1. Chọn ra 5 video có hiệu suất tốt nhất trên kênh mẹ để làm khuôn mẫu sản xuất.
+  + 2. Tái cấu trúc kịch bản và thay đổi góc nhìn tiếp cận cho các kênh vệ tinh phụ trợ.
+  + 3. Sử dụng giọng đọc AI và phong cách visual mới lạ để tạo bản sắc riêng cho từng kênh.
+  + 4. Thiết lập hệ thống liên kết chéo (Cross-linking) giữa các kênh để chia sẻ lưu lượng khán giả.
+  + 5. Quản lý phân quyền tài khoản tập trung đảm bảo an toàn tuyệt đối cho toàn bộ hệ thống.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh đăng tải lại nguyên xi video từ kênh này sang kênh khác dính lỗi Reused Content.**
+2. **Không dùng chung một phương thức thanh toán AdSense cho các kênh chưa được kiểm chứng an toàn.**
+3. **Tránh chia sẻ tài nguyên giữa các kênh một cách lộ liễu khiến YouTube coi là mạng lưới spam.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Nghiệm thu & SOP Bài Giảng: SHARE THÊM NGÁCH REUP CỰC MỚI NHẤT - CÁC KÊNH ĐỐI THỦ MỚI CHỈ 5 VIDEO VÀ HƯỚNG DẪN TƯ DUY TỰ SEARCH RA NGUỒN KÊNH GỐC ĐỂ LẤY VÀ LÀM**: [Tải file / Xem liên kết](docs/VIDEO-2469ee/README.md)

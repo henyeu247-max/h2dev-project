@@ -2,39 +2,44 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-2aa1f7`
-- **Tiêu đề:** SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025
-- **Chủ đề thực tế:** SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 18:03
-- **Dung lượng MP4:** 245.2 MB
+- **Bài học số:** Bài 97 (Part 5)
+- **Tiêu đề bài giảng:** SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025
+- **Ngách nội dung:** Triết Lý Sống & Đạo Làm Người
+- **Thị trường mục tiêu:** 🇺🇸 Mỹ,🌐 Ngoại
+- **Thời lượng:** N/A
+- **Dung lượng MP4:** 257066533
 - **File Video:** [`video/VIDEO-2aa1f7/VIDEO-2aa1f7.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-2aa1f7/VIDEO-2aa1f7.mp4)
 - **Ảnh đại diện:** [`assets/thumbs/VIDEO-2aa1f7.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-2aa1f7.png)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/share-ngach-moi-triet-ly-thi-truong-us-hoa-ky-dang-cuc-trends-va-huong-dan-full-quy-trinh-lam-tu-a-z-update-04112025](https://h2dev.vn/learn/study/share-ngach-moi-triet-ly-thi-truong-us-hoa-ky-dang-cuc-trends-va-huong-dan-full-quy-trinh-lam-tu-a-z-update-04112025)
+- **File Phụ đề bóc tách:** [`video/VIDEO-2aa1f7/transcript.txt`](file:///d:/YTB/H2DEV-Project/video/VIDEO-2aa1f7/transcript.txt)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Hôm nay em sẽ lại tiếp tục share cho mọi người về một cái ngách triết lý động lực sống nữa nha mọi người
-- Nhưng mà trước khi vào thì em show một tí danh thu ở những cái kênh của em cho mọi người có động lực làm nha
-- Đây là một trong những cái kênh em đang làm nè
-- Đấy, vậy em sẽ show 1-2 kênh cho mọi người xem luôn nha
+## 2. Chiến Lược Cốt Lõi & Mấu Chốt Bài Giảng (5 Key Takeaways)
+- Bộ 6 tài liệu độc quyền từ A-Z về ngách Triết lý sống cho người cao tuổi thị trường Hoa Kỳ (US) - một trong những ngách có lợi nhuận cao nhất hệ thống.
+- Cấu trúc kịch bản 4 Hồi hoàn chỉnh: Khủng hoảng tuổi già -> Chiêm nghiệm nhân sinh -> Bài học đối nhân xử thế -> Lời khuyên bình yên.
+- Bản Prompt Master Midjourney/Whisk độc quyền giúp tạo đồng bộ hàng chục bức ảnh phong cách tranh sơn dầu cổ điển cho toàn bộ video.
+- Công thức đặt tiêu đề gây tò mò cho khán giả Bắc Mỹ: Đặt câu hỏi triết lý chạm vào nỗi sợ cô đơn, sự phản bội hoặc bài học về sự buông bỏ.
+- Học viên được cung cấp trọn gói từ kịch bản mẫu, prompt ảnh, bộ từ khóa SEO đến template thumbnail để sản xuất hàng loạt ngay.
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 3. Quy Trình Sản Xuất & Kỹ Thuật Edit SOP (Né Quét AI 2026)
+- Bước 1: Tải trọn bộ 6 tài liệu từ tab Tài liệu của bài giảng, lưu trữ vào thư mục dự án riêng biệt.
+- Bước 2: Sử dụng Kịch bản chuẩn 4 Hồi và Prompt Master để tạo nội dung kịch bản tiếng Anh dài 2500 - 3500 từ trên Claude/ChatGPT.
+- Bước 3: Dùng prompt ảnh tạo loạt 20 - 30 ảnh tranh sơn dầu đồng nhất phong cách với nhân vật người cao tuổi trầm ngâm.
+- Bước 4: Tạo giọng đọc AI tiếng Anh giọng Mỹ sâu lắng (Deep/Warm American Accent) với chuẩn tốc độ 110 WPM.
+- Bước 5: Áp dụng bộ từ khóa SEO và template thumbnail từ tài liệu số 4 và số 6 để xuất bản video lên kênh.
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Bây giờ trong khi đợi thì em sẽ quay lại video của đối thủ xem thử cái phong trữ của nó như nào đó
-- **Bổ sung:** Nó hơi giống như cố gắng để cắt đá bằng tay
+## 4. Cảnh Báo Đỏ & Lỗi Cần Tránh (3 Avoid Flags)
+- ⚠️ Tránh sửa đổi cấu trúc 4 Hồi chuẩn mực dẫn đến kịch bản bị lan man, mất đi nhịp giữ chân khán giả (AVD tụt).
+- ⚠️ Không dùng các hình ảnh phong cách 3D hoạt hình hoặc anime không phù hợp với thị hiếu khán giả lớn tuổi Mỹ.
+- ⚠️ Tránh dùng các từ khóa giật tít lừa dối (Misleading Clickbait) làm khán giả thất vọng và bấm dislike.
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 5. Kênh Mẫu & Đối Thủ Phân Tích
+- Không có kênh mẫu đối thủ đính kèm trong bài này.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Hôm nay em sẽ lại tiếp tục share cho mọi người về một cái ngách t…
-  - `03:40` — Vậy ở trong này em cũng sẽ update video liên tục nha mọi người
-  - `06:59` — Còn những cái phần này á
-  - `11:02` — Tất cả hình ảnh của cái kênh này nó đều là cái hình ảnh kiểu như …
-  - `13:53` — Rồi tí nữa mình sẽ edica kết kép lòng web lại với nhau nha
-
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> PROMPT: NGÁCH Kiểm soát sinh học - chiến thuật - tâm lý (UPDATE 26/02/2026) - H2DEV PROMPT NGÁCH ĐỨA TRẺ (UPDATE 24/01/2026) - H2DEV PROMPT NGÁCH NHỎ TRIẾT LÝ (H2Dev) TẠO ẢNH AI WEB TẢI TÀI NGUYÊN VIDEO FREE 1 WEB TẢI TÀI NGUYÊN VIDEO FREE 2 PROMPT NGÁCH QUY LUẬT KINH TẾ PROMPT KEY QUY TRÌNH/ NHÀ MÁY SẢN XUẤT WEB TẠO ẢNH WEB TẠO VIDEO PROMPT: NGÁCH KINH TẾ - THỊ TRƯỜNG HÀN
+## 6. Tài Liệu & Công Cụ Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025**: [docs/VIDEO-2aa1f7/README.md](docs/VIDEO-2aa1f7/README.md) (docs/VIDEO-2aa1f7/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 97**: [video/VIDEO-2aa1f7/transcript.txt](video/VIDEO-2aa1f7/transcript.txt) (video/VIDEO-2aa1f7/transcript.txt)
+- **1. Kịch Bản Chuẩn Triết Lý Sống US (Full 4 Hồi)**: [https://docs.google.com/document/d/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc/edit?usp=sharing](https://docs.google.com/document/d/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc/edit?usp=sharing) (docs/VIDEO-2aa1f7/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc.txt)
+- **2. Prompt Master Tạo Hình Ảnh Midjourney/Whisk US**: [https://docs.google.com/document/d/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c/edit?usp=sharing](https://docs.google.com/document/d/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c/edit?usp=sharing) (docs/VIDEO-2aa1f7/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c.txt)
+- **3. Quy Trình Sản Xuất Video Dài A-Z Thị Trường Hoa Kỳ**: [https://docs.google.com/document/d/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA/edit?tab=t.0](https://docs.google.com/document/d/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA/edit?tab=t.0) (docs/VIDEO-2aa1f7/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA.txt)
+- **4. Bộ Từ Khóa SEO & Hashtag Ngách Triết Lý US**: [https://docs.google.com/document/d/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY/edit?usp=sharing](https://docs.google.com/document/d/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY/edit?usp=sharing) (docs/VIDEO-2aa1f7/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY.txt)
+- **5. Công Thức Đặt Tiêu Đề Gây Tò Mò Cho Khán Giả Bắc Mỹ**: [https://docs.google.com/document/d/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY/edit?usp=sharing](https://docs.google.com/document/d/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY/edit?usp=sharing) (docs/VIDEO-2aa1f7/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY.txt)
+- **6. Template Thumbnail Triết Lý Sống Cao Tuổi US**: [https://docs.google.com/document/d/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk/edit?usp=sharing](https://docs.google.com/document/d/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk/edit?usp=sharing) (docs/VIDEO-2aa1f7/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk.txt)

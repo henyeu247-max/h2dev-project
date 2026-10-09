@@ -8,13 +8,13 @@
 
 - Nguon chan ly: **MOI file .css SONG (loai tru: _backup/, _archive/, node_modules/, data/, va file build assets/tailwind.css)**
 - So file CSS quet: **10**
-- So file nguon dem luot dung: **178** (`.css`/`.js`/`.mjs`/`.html`)
-- Tong so token khai bao: **98**
+- So file nguon dem luot dung: **203** (`.css`/`.js`/`.mjs`/`.html`)
+- Tong so token khai bao: **97**
 
 ## Bai hoc SCAR-024
 
 Danh sach token viet tay trong `design-system/tokens.json` (28 token) **KHONG phai**
-tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
+tap day du (CSS that co 97). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 ## Bang token
 
@@ -42,10 +42,10 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--brand` | `#E2023A` | `assets/viddar.css:63` | 62 |
+| `--brand` | `#E2023A` | `assets/viddar.css:63` | 63 |
 | `--brand-fg` | `#fff` | `assets/viddar.css:65` | 8 |
 | `--brand-hover` | `#ff1a4d` | `assets/viddar.css:64` | 15 |
-| `--brand-ink` | `#ff8095` | `assets/viddar.css:66` | 22 |
+| `--brand-ink` | `#ff8095` | `assets/viddar.css:66` | 23 |
 | `--brand-tint` | `#2a0a12` | `assets/viddar.css:67` | 10 |
 | `--brand-tint-fg` | `#ff8095` | `assets/viddar.css:68` | 5 |
 
@@ -60,9 +60,9 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
 | `--fg` | `#f0f0f0` | `assets/viddar.css:59` | 69 |
-| `--fg-2` | `#dfdfdf` | `assets/viddar.css:60` | 48 |
+| `--fg-2` | `#dfdfdf` | `assets/viddar.css:60` | 49 |
 | `--fg-faint` | `#9ca3af` | `assets/viddar.css:62` | 14 |
-| `--fg-muted` | `#a9a9a9` | `assets/viddar.css:61` | 69 |
+| `--fg-muted` | `#a9a9a9` | `assets/viddar.css:61` | 71 |
 
 ### `focus` (1 token)
 
@@ -82,94 +82,93 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-backdrop-blur` | `10px` | `assets/h2dev-tokens.css:83` | 25 |
+| `--h2-backdrop-blur` | `10px` | `assets/h2dev-tokens.css:82` | 25 |
 
 ### `h2-badge` (1 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-badge-blur` | `4px` | `assets/h2dev-tokens.css:93` | 1 |
+| `--h2-badge-blur` | `4px` | `assets/h2dev-tokens.css:92` | 1 |
 
 ### `h2-container` (1 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-container-max` | `min(1120px, 100%)` | `assets/h2dev-tokens.css:73` | 1 |
+| `--h2-container-max` | `min(1120px, 100%)` | `assets/h2dev-tokens.css:72` | 1 |
 
-### `h2-font` (9 token)
+### `h2-font` (8 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-font-2xl` | `24px` | `assets/h2dev-tokens.css:35` | 1 |
-| `--h2-font-2xs` | `11px` | `assets/h2dev-tokens.css:28` | 9 |
-| `--h2-font-3xl` | `32px` | `assets/h2dev-tokens.css:36` | 0 |
-| `--h2-font-base` | `14px` | `assets/h2dev-tokens.css:31` | 3 |
-| `--h2-font-lg` | `18px` | `assets/h2dev-tokens.css:33` | 2 |
-| `--h2-font-md` | `16px` | `assets/h2dev-tokens.css:32` | 4 |
-| `--h2-font-sm` | `13px` | `assets/h2dev-tokens.css:30` | 10 |
-| `--h2-font-xl` | `20px` | `assets/h2dev-tokens.css:34` | 1 |
-| `--h2-font-xs` | `12px` | `assets/h2dev-tokens.css:29` | 3 |
+| `--h2-font-2xl` | `24px` | `assets/h2dev-tokens.css:34` | 1 |
+| `--h2-font-3xl` | `32px` | `assets/h2dev-tokens.css:35` | 0 |
+| `--h2-font-base` | `14px` | `assets/h2dev-tokens.css:30` | 3 |
+| `--h2-font-lg` | `18px` | `assets/h2dev-tokens.css:32` | 2 |
+| `--h2-font-md` | `16px` | `assets/h2dev-tokens.css:31` | 4 |
+| `--h2-font-sm` | `13px` | `assets/h2dev-tokens.css:29` | 10 |
+| `--h2-font-xl` | `20px` | `assets/h2dev-tokens.css:33` | 1 |
+| `--h2-font-xs` | `12px` | `assets/h2dev-tokens.css:28` | 12 |
 
 ### `h2-fw` (4 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-fw-bold` | `700` | `assets/h2dev-tokens.css:56` | 3 |
-| `--h2-fw-medium` | `500` | `assets/h2dev-tokens.css:54` | 4 |
-| `--h2-fw-regular` | `400` | `assets/h2dev-tokens.css:53` | 0 |
-| `--h2-fw-semibold` | `600` | `assets/h2dev-tokens.css:55` | 9 |
+| `--h2-fw-bold` | `700` | `assets/h2dev-tokens.css:55` | 3 |
+| `--h2-fw-medium` | `500` | `assets/h2dev-tokens.css:53` | 4 |
+| `--h2-fw-regular` | `400` | `assets/h2dev-tokens.css:52` | 0 |
+| `--h2-fw-semibold` | `600` | `assets/h2dev-tokens.css:54` | 9 |
 
 ### `h2-header` (2 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-header-h` | `56px` | `assets/h2dev-tokens.css:71` | 2 |
-| `--h2-header-pad` | `0 24px` | `assets/h2dev-tokens.css:72` | 1 |
+| `--h2-header-h` | `56px` | `assets/h2dev-tokens.css:70` | 2 |
+| `--h2-header-pad` | `0 24px` | `assets/h2dev-tokens.css:71` | 1 |
 
 ### `h2-icon` (4 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-icon-14` | `14px` | `assets/h2dev-tokens.css:59` | 6 |
-| `--h2-icon-16` | `16px` | `assets/h2dev-tokens.css:60` | 18 |
-| `--h2-icon-20` | `20px` | `assets/h2dev-tokens.css:61` | 14 |
-| `--h2-icon-24` | `24px` | `assets/h2dev-tokens.css:62` | 10 |
+| `--h2-icon-14` | `14px` | `assets/h2dev-tokens.css:58` | 6 |
+| `--h2-icon-16` | `16px` | `assets/h2dev-tokens.css:59` | 18 |
+| `--h2-icon-20` | `20px` | `assets/h2dev-tokens.css:60` | 14 |
+| `--h2-icon-24` | `24px` | `assets/h2dev-tokens.css:61` | 10 |
 
 ### `h2-lh` (6 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-lh-body` | `1.5` | `assets/h2dev-tokens.css:42` | 3 |
-| `--h2-lh-body-px` | `20px` | `assets/h2dev-tokens.css:44` | 0 |
-| `--h2-lh-display` | `1.2` | `assets/h2dev-tokens.css:40` | 4 |
-| `--h2-lh-heading` | `1.35` | `assets/h2dev-tokens.css:41` | 12 |
-| `--h2-lh-none` | `1` | `assets/h2dev-tokens.css:39` | 0 |
-| `--h2-lh-prose` | `1.6` | `assets/h2dev-tokens.css:43` | 2 |
+| `--h2-lh-body` | `1.5` | `assets/h2dev-tokens.css:41` | 3 |
+| `--h2-lh-body-px` | `20px` | `assets/h2dev-tokens.css:43` | 0 |
+| `--h2-lh-display` | `1.2` | `assets/h2dev-tokens.css:39` | 4 |
+| `--h2-lh-heading` | `1.35` | `assets/h2dev-tokens.css:40` | 12 |
+| `--h2-lh-none` | `1` | `assets/h2dev-tokens.css:38` | 0 |
+| `--h2-lh-prose` | `1.6` | `assets/h2dev-tokens.css:42` | 2 |
 
 ### `h2-ls` (4 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-ls-label` | `0.02em` | `assets/h2dev-tokens.css:49` | 1 |
-| `--h2-ls-micro` | `0.04em` | `assets/h2dev-tokens.css:50` | 0 |
-| `--h2-ls-normal` | `0` | `assets/h2dev-tokens.css:47` | 1 |
-| `--h2-ls-tight` | `-0.02em` | `assets/h2dev-tokens.css:48` | 6 |
+| `--h2-ls-label` | `0.02em` | `assets/h2dev-tokens.css:48` | 1 |
+| `--h2-ls-micro` | `0.04em` | `assets/h2dev-tokens.css:49` | 0 |
+| `--h2-ls-normal` | `0` | `assets/h2dev-tokens.css:46` | 1 |
+| `--h2-ls-tight` | `-0.02em` | `assets/h2dev-tokens.css:47` | 6 |
 
 ### `h2-motion` (4 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-motion-base` | `200ms` | `assets/h2dev-tokens.css:77` | 2 |
-| `--h2-motion-ease` | `cubic-bezier(.2, .6, .3, 1)` | `assets/h2dev-tokens.css:79` | 13 |
-| `--h2-motion-fast` | `120ms` | `assets/h2dev-tokens.css:76` | 11 |
-| `--h2-motion-slow` | `300ms` | `assets/h2dev-tokens.css:78` | 0 |
+| `--h2-motion-base` | `200ms` | `assets/h2dev-tokens.css:76` | 2 |
+| `--h2-motion-ease` | `cubic-bezier(.2, .6, .3, 1)` | `assets/h2dev-tokens.css:78` | 13 |
+| `--h2-motion-fast` | `120ms` | `assets/h2dev-tokens.css:75` | 11 |
+| `--h2-motion-slow` | `300ms` | `assets/h2dev-tokens.css:77` | 0 |
 
 ### `h2-overlay` (2 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-overlay-alpha` | `0.92` | `assets/h2dev-tokens.css:87` | 1 |
-| `--h2-overlay-bg` | `rgba(0, 0, 0, var(--h2-overlay-alpha))` | `assets/h2dev-tokens.css:88` | 6 |
+| `--h2-overlay-alpha` | `0.92` | `assets/h2dev-tokens.css:86` | 1 |
+| `--h2-overlay-bg` | `rgba(0, 0, 0, var(--h2-overlay-alpha))` | `assets/h2dev-tokens.css:87` | 6 |
 
 ### `h2-space` (6 token)
 
@@ -186,26 +185,26 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-touch-min` | `44px` | `assets/h2dev-tokens.css:65` | 23 |
+| `--h2-touch-min` | `44px` | `assets/h2dev-tokens.css:64` | 23 |
 
 ### `h2-translate` (1 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-translate-max` | `4px` | `assets/h2dev-tokens.css:80` | 0 |
+| `--h2-translate-max` | `4px` | `assets/h2dev-tokens.css:79` | 0 |
 
 ### `h2-z` (8 token)
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-z-base` | `1` | `assets/h2dev-tokens.css:104` | 8 |
-| `--h2-z-drawer` | `60` | `assets/h2dev-tokens.css:107` | 4 |
-| `--h2-z-fixed` | `40` | `assets/h2dev-tokens.css:106` | 3 |
-| `--h2-z-modal` | `1000` | `assets/h2dev-tokens.css:110` | 3 |
-| `--h2-z-modal-top` | `1010` | `assets/h2dev-tokens.css:111` | 4 |
-| `--h2-z-sticky` | `20` | `assets/h2dev-tokens.css:105` | 3 |
-| `--h2-z-toast` | `1020` | `assets/h2dev-tokens.css:109` | 3 |
-| `--h2-z-topbar-mobile` | `100` | `assets/h2dev-tokens.css:108` | 6 |
+| `--h2-z-base` | `1` | `assets/h2dev-tokens.css:103` | 8 |
+| `--h2-z-drawer` | `60` | `assets/h2dev-tokens.css:106` | 4 |
+| `--h2-z-fixed` | `40` | `assets/h2dev-tokens.css:105` | 3 |
+| `--h2-z-modal` | `1000` | `assets/h2dev-tokens.css:109` | 3 |
+| `--h2-z-modal-top` | `1010` | `assets/h2dev-tokens.css:110` | 4 |
+| `--h2-z-sticky` | `20` | `assets/h2dev-tokens.css:104` | 3 |
+| `--h2-z-toast` | `1020` | `assets/h2dev-tokens.css:108` | 3 |
+| `--h2-z-topbar-mobile` | `100` | `assets/h2dev-tokens.css:107` | 6 |
 
 ### `hairline` (1 token)
 
@@ -277,7 +276,7 @@ tap day du (CSS that co 98). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
 | `--surface` | `#0f0f0f` | `assets/viddar.css:54` | 77 |
-| `--surface-2` | `#1a1a1a` | `assets/viddar.css:55` | 81 |
+| `--surface-2` | `#1a1a1a` | `assets/viddar.css:55` | 82 |
 
 ### `topbar` (1 token)
 

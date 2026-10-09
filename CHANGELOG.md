@@ -1,4 +1,19 @@
-﻿## 2026-10-09 (đợt 4) — UI-STANDARD ĐỢT 1: CÂN ĐỐI BỐ CỤC VÀ KIỂU CHỮ (commit `c22844d`, nhánh `ui/ui-standard-2026-10-09`)
+## 2026-10-09 (đợt 5) — NGHIỆM THU E2E TOÀN BỘ 144 VIDEO (PART 1 ĐẾN PART 8) & CHUẨN HÓA VẬT LÝ, DỮ LIỆU, ĐỒNG BỘ MANIFEST (nhánh `ui/ui-standard-2026-10-09`)
+
+- **Nghiệm thu E2E tự động qua Playwright (Chromium 1440x900):** Đã kiểm định toàn diện 144/144 video (Part 1 đến Part 8: SKU `VIDEO-d20f6c` đến `VIDEO-a59a5e`), tỷ lệ **144/144 ALL PASS (100%)**, 0 Console Errors, 0 Page Errors. Tương tác DOM thực tế: tua video qua click seek câu thoại phụ đề mượt mà, chuyển đổi trạng thái nút `#btnWatched` (Đã học / Chưa học) chuẩn xác, tải phụ đề TXT/SRT đầy đủ.
+- **Chuẩn hóa Thumbnail PNG HD 100%:** Dùng FFmpeg trích xuất khung hình gốc từ các video MP4/WEBM, chuyển đổi toàn bộ 144 video sang định dạng PNG HD (`assets/thumbs/<sku>.png`), không còn tham chiếu `.jpeg` cũ.
+- **Khảo sát thực nghiệm HTTP 256 kênh đối thủ mẫu:** Rà soát mã phản hồi HTTP của toàn bộ kênh đối thủ, phân loại chính xác **188 kênh LIVE (HTTP 200)** và **68 kênh DEAD 404** (bao gồm `@gyakkyoyori_risukatsu` ở Bài 140 và `@HopeGarden-KR` ở Bài 144). Gắn cờ `dead: true` và `deadNote` trong catalog; giao diện player hiển thị badge đỏ `DIE` và gạch ngang tên kênh để làm bài học thực chiến né rủi ro bản quyền/bị khóa kênh.
+- **Chuẩn hóa Insights & SOP né quét AI:** 144/144 video đều đạt chuẩn $\ge 5$ Mấu chốt bài giảng (Key Takeaways), đủ 5 bước Kỹ thuật edit & SOP né quét AI chi tiết (> 500 – 1.385 ký tự, loại bỏ hoàn toàn các chuỗi tóm tắt fallback ngắn), và $\ge 3$ Rào chắn phòng thủ & Tránh gậy (Avoid Flags). Đồng bộ đồng nhất trên `data/video_insights.json`, `data/catalog_full.json` và các hồ sơ `docs/<sku>/README.md`.
+- **Master SQLite Database WAL & FTS5 Index:** Chạy `scripts/build_master_db.js` ingest đầy đủ 144 Lessons, 638 Timestamps, 386 Competitor Channels, 1.421 Top Videos, 300 Documents, 27 Reup Sources, 177 Niches và **2.251 FTS5 search index entries**.
+- **Đồng bộ SSoT Manifest & 4 Core Quality Gates:**
+  - `scripts/sync-counts.js`: Cập nhật `data/counts-manifest.json` (videos: 144, documents: 300, channels: 256 [188 live, 68 dead], thumbFiles: 285).
+  - `scripts/validate-project.js`: **PASS** (144 videos, 256 channels, 60 kịch bản, 300 tài liệu, 284 thumbs).
+  - `scripts/gate-icons.js`: **ALL PASS** (48/48 icon resolve 100%, 225/225 parity).
+  - `scripts/gate-typography.js`: **ALL PASS** (100% 9 bậc font chuẩn, 0 arbitrary leak).
+  - `scripts/gate-shell.js`: **ALL PASS 6/6** (Desktop/Mobile trên index, learn, player).
+- **Tài liệu kiểm toán & Biên bản nghiệm thu:** Đầy đủ biên bản nghiệm thu độc lập từng phần tại `docs/reports/2026-10-09-part*-*.json` và cập nhật Live Runtime State tại `docs/WORKING_STATE.md`.
+
+## 2026-10-09 (đợt 4) — UI-STANDARD ĐỢT 1: CÂN ĐỐI BỐ CỤC VÀ KIỂU CHỮ (commit `c22844d`, nhánh `ui/ui-standard-2026-10-09`)
 
 - **Kiểu chữ:** chữ 11 px đổi thành 12 px (`text-2xs` → `text-xs`, bỏ token `--h2-font-2xs`). Đo lại trên các route đã kiểm: 0% chữ 11 px.
 - **Thứ bậc tiêu đề:** nhóm và thẻ h2 cỡ 13–14 px đổi sang h3; hai mục của trang bài học dùng h2. Không còn nhảy cấp trên các route đã kiểm.

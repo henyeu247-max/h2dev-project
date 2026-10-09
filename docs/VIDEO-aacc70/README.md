@@ -2,37 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-aacc70`
-- **Tiêu đề:** Chia Sẻ Tút (mẹo) Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View
-- **Chủ đề thực tế:** Chia Sẻ Tút (mẹo) Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Hàn Quốc (Mã: `KR`)
-- **Thời lượng:** 07:06
-- **Dung lượng MP4:** 40.7 MB
-- **File Video:** [`video/VIDEO-aacc70/VIDEO-aacc70.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-aacc70/VIDEO-aacc70.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-aacc70.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-aacc70.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/chia-se-tut-meo-bam-theo-key-lam-video-khong-bao-gio-bi-0-view](https://h2dev.vn/learn/study/chia-se-tut-meo-bam-theo-key-lam-video-khong-bao-gio-bi-0-view)
+- **Bài học:** #107
+- **Tiêu đề bài giảng:** Chia Sẻ Tút (mẹo) Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View
+- **Thị trường mục tiêu:** 🇰🇷 Hàn
+- **Ngách nội dung:** Khám Kênh & Tối Ưu Tăng Trưởng
+- **Thumbnail:** `assets/thumbs/VIDEO-aacc70.png`
+- **Trạng thái DRM:** Có bảo vệ bản quyền
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/chia-se-tut-meo-bam-theo-key-lam-video-khong-bao-gio-bi-0-view)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì cái video này á, thì em sẽ hướng dẫn, em sẽ chia sẻ một cái tool
-- Cái tool là cái mẹo, cái cách á mọi người, cái mẹo á, để cho mọi người lấy kịch bản, bám theo trên
-- Mẹ bám bảo là lúc nào là cứng hay là có view, chứ không bao giờ bị không view nha
-- Đấy, nói không view thì nó hơi, nó hơi qué á, nhưng mà thật sự là trước giờ em làm theo cái cách như vậy thì nó không có bị không view mọi người
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **Kênh Đối Thủ Bám Trend Outlier (100k-400k view)**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Cơ chế thuật toán YouTube: Gợi ý video dựa trên sự quan tâm tương đồng của tệp khán giả.
+2. Kỹ thuật bám video Outlier: Lọc video nhiều view đột biến trong 3 - 7 ngày gần nhất của đối thủ.
+3. Công thức vàng 70/30: Giữ 70% giá trị cốt lõi và bổ sung 30% góc nhìn sáng tạo mới mẻ.
+4. Tối ưu hóa Metadata đón đầu đề xuất: Sử dụng từ khóa chính của đối thủ ở đầu tiêu đề.
+5. Cải thiện chất lượng hình ảnh và nhịp dựng để vượt trội hơn video gốc của đối thủ.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi, em xin phép chào tất cả mọi người nha.
-  - `01:39` — Và cũng như là nó rất là lẹt đẹp Đó là lý do tại sao ADM cứ làm mà cứ hay bị không view hoặc là view lẹt đẹt.…
-  - `03:20` — Đây mọi người vào lại một phổ biến nè
-  - `04:44` — thì em cũng có nói rồi đầu
-  - `06:03` — Đấy thì nó bị phân phối theo khán giả
+---
 
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Phân tích Hook 15 giây đầu của đối thủ và viết lại lời dẫn dắt gây tò mò hơn.
+- 2. Nâng cấp chất lượng hình ảnh lên chuẩn 1080p sắc nét và màu sắc tươi sáng hơn.
+- 3. Đẩy nhanh nhịp dựng từ 10% đến 15% so với video đối thủ để giữ chân người xem.
+- 4. Sử dụng phụ đề nhảy chữ động (Dynamic Captions) kích thích thị giác liên tục.
+- 5. Thiết kế thumbnail với màu sắc đối lập hoàn toàn so với đối thủ để hút ánh nhìn.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh tải lại nguyên si video đối thủ dính gậy bản quyền hoặc spam nội dung trùng lặp.**
+2. **Tránh bám theo các video cũ đã hết trend từ nhiều tháng trước.**
+3. **Tránh đổi ngách đột ngột khiến thuật toán không xác định được tệp khán giả.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **SOP Mẹo Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View**: [Tải file / Xem liên kết](assets/docs/VIDEO-aacc70/SOP-BAM-KEY-DOI-THU-CHONG-0-VIEW.md)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-aacc70/transcript.txt)

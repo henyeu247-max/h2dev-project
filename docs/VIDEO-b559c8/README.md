@@ -37,3 +37,17 @@
   - `11:40` — Bước 4: Tạo 4 nhân vật với biểu cảm đa dạng và xếp hàng ngang trên canvas
   - `17:00` — Bước 5: Ghép nhân vật vào bố cục, thêm tiêu đề chữ đậm giật CTR mạnh
   - `21:30` — Bước 6: Tinh chỉnh tương phản tổng thể và xuất file thumbnail thành phẩm
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP tạo nhân vật Chill Dude bằng Flux AI và dựng Thumbnail triệu view:
+- Bước 1 (Soạn Prompt AI chuẩn phong cách nét vẽ tay): Dùng prompt: 'minimalist hand-drawn stick figure character, Cyanide & Happiness cartoon style, messy sketch lines, white background, wide variety of funny expressions' trên Flux Schnell.
+- Bước 2 (Tạo các biến thể biểu cảm cực hạn): Sinh 4 nhân vật độc lập: 1 mắt xoáy chóng mặt, 1 cười toe toét ngớ ngẩn, 1 há hốc mồm kinh ngạc và 1 đang cầm cốc cà phê chill chill.
+- Bước 3 (Tách nền & Tinh chỉnh nét vẽ trong Photopea): Mở Photopea, dùng công cụ Magic Wand xóa sạch nền trắng, áp dụng filter Sharpen nhẹ và tăng viền đen (Stroke 4px) để nét vẽ đậm đà đồng nhất.
+- Bước 4 (Sắp đặt bố cục Thumbnail tương phản cao): Xếp 4 nhân vật dàn hàng ngang trên canvas 1280x720, đổ bóng mềm bên dưới chân (Drop shadow), đặt nền xám nhạt hoặc xanh pastel dịu mắt.
+- Bước 5 (Gắn Typography giật tít không che nhân vật): Thêm tiêu đề ngắn gọn (2-4 từ) bằng font chữ viết tay hoặc comic không chân, viền đen dày, đặt tại góc trên cùng tránh che mất biểu cảm của người que.
+
+### Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags)
+- [x] **Tránh vi phạm:** Không dùng style 3D hoặc bóng bẩy mất đi tính chất nét vẽ nguệch ngoạc mộc mạc đặc trưng của key người que.
+- [x] **Tránh vi phạm:** Tránh nhồi nhét quá nhiều chữ hoặc chi tiết rác vào thumbnail làm rối mắt người xem trên giao diện điện thoại.
+- [x] **Tránh vi phạm:** Không sao chép nguyên xi 100% nhân vật độc quyền của kênh đối thủ lớn để tránh gậy bản quyền hình ảnh.

@@ -2,37 +2,38 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-7db740`
-- **Tiêu đề:** CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026
-- **Chủ đề thực tế:** CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Trung Quốc (Mã: `CN`)
-- **Thời lượng:** 03:21
-- **Dung lượng MP4:** 5.2 MB
+- **Bài học số:** Bài 69 (Part 4)
+- **Tiêu đề bài giảng:** CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thị trường mục tiêu:** 🇨🇳 Trung
+- **Thời lượng:** N/A
+- **Dung lượng MP4:** 5472949
 - **File Video:** [`video/VIDEO-7db740/VIDEO-7db740.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-7db740/VIDEO-7db740.mp4)
 - **Ảnh đại diện:** [`assets/thumbs/VIDEO-7db740.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-7db740.png)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/cach-seo-chuan-tu-khoa-kenh-tu-khoa-video-va-mo-ta-video-moi-nhat-chinh-sach-2026](https://h2dev.vn/learn/study/cach-seo-chuan-tu-khoa-kenh-tu-khoa-video-va-mo-ta-video-moi-nhat-chinh-sach-2026)
+- **File Phụ đề bóc tách:** [`video/VIDEO-7db740/transcript.txt`](file:///d:/YTB/H2DEV-Project/video/VIDEO-7db740/transcript.txt)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Rồi, tiếp theo video này thì em sẽ nói về vấn đề sale từ khóa kênh, từ khóa video, cũng như là mô tả video nha mọi người
-- Đấy, thì áp dụng theo chính sách 2016 mới nhất nha
-- Từ kinh nghiệm của em làm trước giờ cũng như là quan điểm của em làm nha mọi người
-- Thì trước em cũng có hướng dẫn rồi, có video rồi, nhưng mà lực chơi của nó mà mọi người, nó update liên tục thì mình phải chạy theo lực chơi của nó thôi
+## 2. Chiến Lược Cốt Lõi & Mấu Chốt Bài Giảng (5 Key Takeaways)
+- SEO YouTube 2026 không còn là nhồi nhét từ khóa thẻ tag mà là tối ưu ngữ nghĩa tự nhiên trong Tiêu đề, Mô tả và Giọng đọc.
+- Thuật toán AI của YouTube nghe và phiên âm trực tiếp toàn bộ lời thoại trong video để hiểu nội dung và phân phối đến đúng tệp khán giả.
+- Từ khóa chính phải xuất hiện trong 60 ký tự đầu tiên của tiêu đề và được nhắc lại tự nhiên trong 30 giây đầu của video.
+- Phần mô tả video cần viết thành đoạn văn hoàn chỉnh từ 200 - 300 từ có chứa từ khóa chính và 3 - 5 từ khóa liên quan.
+- Sử dụng công cụ tìm kiếm ẩn danh của YouTube để lấy gợi ý từ khóa tự động (Auto-suggest) - đây là từ khóa có lượng search thật 100%.
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 3. Quy Trình Sản Xuất & Kỹ Thuật Edit SOP (Né Quét AI 2026)
+- Bước 1: Mở trình duyệt ẩn danh, gõ từ khóa gốc của ngách vào thanh tìm kiếm YouTube, ghi lại 10 gợi ý hàng đầu.
+- Bước 2: Chọn từ khóa có dung lượng tìm kiếm tốt và độ cạnh tranh vừa phải để đưa vào tiêu đề video theo công thức: [Từ khóa chính] + [Yếu tố giật gân/Lợi ích].
+- Bước 3: Viết phần mô tả video: Đoạn 1 tóm tắt nội dung chứa từ khóa; Đoạn 2 giải thích chi tiết; Đoạn 3 kêu gọi hành động + 3 hashtag chuẩn.
+- Bước 4: Đảm bảo người đọc/giọng AI phát âm rõ ràng từ khóa chính ngay trong phần mở đầu video.
+- Bước 5: Điền các thẻ tag liên quan chặt chẽ vào mục Thẻ (Tags) để bổ trợ phân loại cho thuật toán.
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+## 4. Cảnh Báo Đỏ & Lỗi Cần Tránh (3 Avoid Flags)
+- ⚠️ Tránh nhồi nhét danh sách từ khóa trần trụi (Keyword Stuffing) vào phần mô tả video, vi phạm chính sách spam của YouTube.
+- ⚠️ Không đặt tiêu đề sai lệch nội dung video (Misleading Metadata) khiến khán giả thoát sớm và thuật toán phạt tụt rank.
+- ⚠️ Tránh dùng các hashtag quá chung chung như #youtube, #video, #trending không giúp ích gì cho việc phân loại tệp.
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 5. Kênh Mẫu & Đối Thủ Phân Tích
+- Không có kênh mẫu đối thủ đính kèm trong bài này.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi, tiếp theo video này thì em sẽ nói về vấn đề sale từ khóa kên…
-  - `01:04` — Đấy, thì mọi người nên ghi một vài từ khó
-  - `01:49` — Rồi tiếp tới về vấn đề mô tả thì mọi người cũng như vậy.
-  - `02:23` — Thì anh em giải thích này kia
-  - `02:49` — nhãn dán là có ấy
-
+## 6. Tài Liệu & Công Cụ Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026**: [docs/VIDEO-7db740/README.md](docs/VIDEO-7db740/README.md) (docs/VIDEO-7db740/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 69**: [video/VIDEO-7db740/transcript.txt](video/VIDEO-7db740/transcript.txt) (video/VIDEO-7db740/transcript.txt)

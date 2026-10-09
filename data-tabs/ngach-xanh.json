@@ -319,12 +319,12 @@
     ]
   },
   "phamViKho": {
-    "video": 140,
-    "taiLieu": 157,
-    "kenhMau": 165,
-    "kenhDeadTrongFile": 39,
-    "kenhLiveTrongFile": 126,
-    "kenhDaDoSong": 165,
+    "video": 144,
+    "taiLieu": 300,
+    "kenhMau": 256,
+    "kenhDeadTrongFile": 68,
+    "kenhLiveTrongFile": 188,
+    "kenhDaDoSong": 256,
     "kenhLiveChuaDo": 0,
     "ghiChu": "Lịch sử 21/08: thêm 4 kênh wildlife evidence (@discoverwildlifeen · @livingzoo · @faunapse · @wildanimalsb52) → kenhMau 158 (145 live · 13 dead). 9 handle trên video không có trong kenh-mau: giữ nguyên + channelResolve trên videos.json, không bịa card. Đo vidIQ 21/08. Snapshot live 12/09/2026: 165 kênh (152 live · 13 dead), ngay_do 165/165. Cập nhật 16/09/2026: đánh số lại BXH 1–34 (2 dòng từng trùng số 18); đo lại code: 19 handle trên video chưa có trong kenh-mau; tài liệu 103→109. Cập nhật 16/09/2026 (bổ sung): tài liệu 109→152 (+43 prompt master research từ data/research-20260916/)."
   },
@@ -1322,7 +1322,7 @@
       "ngach": "Nhân bản / Kênh",
       "xanh": "META",
       "vaiTro": "Quy trình clone / setup — không phải ngách đăng.",
-      "evidence": "37/140 video.",
+      "evidence": "37/144 video.",
       "skus": [
         "VIDEO-e24c31",
         "VIDEO-a7bfd0",
@@ -1367,7 +1367,7 @@
       "ngach": "Share key / Ngách nhỏ",
       "xanh": "META",
       "vaiTro": "Loại video share key. Từng key đã tách ra các mục phía trên.",
-      "evidence": "41/140 video.",
+      "evidence": "45/144 video.",
       "skus": [
         "VIDEO-4b3c09",
         "VIDEO-d2cd90",
@@ -1409,14 +1409,18 @@
         "VIDEO-73d98a",
         "VIDEO-d56768",
         "VIDEO-989053",
-        "VIDEO-0bb86b"
+        "VIDEO-0bb86b",
+        "VIDEO-0be6c9",
+        "VIDEO-a85eac",
+        "VIDEO-043d15",
+        "VIDEO-a59a5e"
       ]
     },
     {
       "ngach": "Kiếm tiền / Chính sách",
       "xanh": "META",
       "vaiTro": "Kháng lỗi / AdSense / gãy view.",
-      "evidence": "10/140 video.",
+      "evidence": "10/144 video.",
       "skus": [
         "VIDEO-4425fc",
         "VIDEO-46c57e",
@@ -1434,7 +1438,7 @@
       "ngach": "Edit / Thumb",
       "xanh": "META",
       "vaiTro": "Packaging.",
-      "evidence": "9/140 video.",
+      "evidence": "9/144 video.",
       "skus": [
         "VIDEO-DD983D",
         "VIDEO-484f9e",
@@ -1451,7 +1455,7 @@
       "ngach": "Nền tảng / Tool",
       "xanh": "META",
       "vaiTro": "Claude/ChatGPT train prompt, SRT, voice, VIP. Hạ tầng sản xuất — không phải ngách đăng YouTube. Nằm cuối tab.",
-      "evidence": "10/140 video.",
+      "evidence": "10/144 video.",
       "skus": [
         "VIDEO-e90874",
         "VIDEO-5d54d0",

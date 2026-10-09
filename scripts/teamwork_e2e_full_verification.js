@@ -131,7 +131,7 @@ const REPORT_FILE = path.join(BASE_DIR, 'docs', 'reports', '2026-10-09-teamwork-
     await page.goto('http://127.0.0.1:8899/player.html?sku=VIDEO-DD983D', { waitUntil: 'networkidle' });
     await page.waitForTimeout(1000);
     const ptitle = await page.$eval('#ptitle', el => el.textContent.trim()).catch(() => "");
-    const transcriptLines = await page.$$eval('#transcriptList .t-line, #transcriptList tr', els => els.length).catch(() => 0);
+    const transcriptLines = await page.$$eval('#transcriptList .transcript-line', els => els.length).catch(() => 0);
 
     browserResults[vp.name] = {
       workflow_steps_count: stepsCount,

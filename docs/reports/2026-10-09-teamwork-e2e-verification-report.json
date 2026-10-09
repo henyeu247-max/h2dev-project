@@ -1,6 +1,6 @@
 {
   "report_title": "H2DEV Teamwork E2E Verification & Reality Audit Report",
-  "timestamp": "2026-10-09T02:36:27.379Z",
+  "timestamp": "2026-10-09T03:57:53.481Z",
   "overall_status": "ALL PASS 100%",
   "sections": {
     "physical_integrity": {
@@ -31,7 +31,7 @@
         "distribution_panel_visible": true,
         "policy_panel_visible": true,
         "player_title": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
-        "player_transcript_lines": 0,
+        "player_transcript_lines": 276,
         "console_errors": [],
         "status": "PASS"
       },
@@ -45,7 +45,7 @@
         "distribution_panel_visible": true,
         "policy_panel_visible": true,
         "player_title": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
-        "player_transcript_lines": 0,
+        "player_transcript_lines": 276,
         "console_errors": [],
         "status": "PASS"
       }

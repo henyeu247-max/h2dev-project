@@ -1,7 +1,16 @@
 {
   "report_title": "BÁO CÁO KHAI THÁC TRI THỨC CHUYÊN SÂU VIDEO CLUSTER 2 (BÀI 73–144: PART 5 ĐẾN PART 8)",
-  "timestamp": "2026-10-09T02:04:07.191Z",
+  "timestamp": "2026-10-09T02:04:35.191Z",
   "total_videos": 72,
+  "metadata": {
+    "report_title": "BÁO CÁO KHAI THÁC TRI THỨC CHUYÊN SÂU VIDEO CLUSTER 2 (BÀI 73–144: PART 5 ĐẾN PART 8)",
+    "project": "H2DEV Production System",
+    "workspace": "D:\\YTB\\H2DEV-Project",
+    "generated_at": "2026-10-09T02:04:35.191Z",
+    "scope": "72 video học phần từ Bài 73 (VIDEO-026112) đến Bài 144 (VIDEO-a59a5e) bao gồm 4 buổi tọa đàm ZOOM chuyên sâu (ZOOM-01 đến ZOOM-04)",
+    "total_videos_analyzed": 72,
+    "verification_status": "PASS 72/72 (100% video trích xuất đầy đủ 7 trường dữ liệu chuẩn)"
+  },
   "summary_metrics": {
     "total_takeaways": 363,
     "avg_takeaways": "5.0",
@@ -184,6 +193,182 @@
       "🇬🇧 Anh": 1,
       "🇭🇰 HK": 1
     }
+  },
+  "executive_synthesis": {
+    "recurring_ai_bypass_rules": [
+      {
+        "rule_number": 1,
+        "rule_title": "Layering âm thanh đa tầng & Master âm lượng EBU R128 (-16 LUFS / -20dB BGM)",
+        "description": "Không bao giờ để voiceover trơ trọi. Bắt buộc trộn 3 tầng âm thanh: Voice AI đã khử robotic/tăng pitch nhẹ + Nhạc nền lofi/ambient bản quyền sạch ở ngưỡng -20 dB đến -24 dB + SFX tiếng động môi trường tự nhiên (tiếng gió, chim hót, lật sách, whoosh chuyển cảnh). Sự hòa quyện âm tần này phá vỡ khả năng nhận diện giọng máy đơn sắc của hệ thống phân tích phổ âm YouTube."
+      },
+      {
+        "rule_number": 2,
+        "rule_title": "Quy tắc Pacing thị giác: Giới hạn khung hình tĩnh tối đa 3-5 giây (Dynamic Motion)",
+        "description": "Thuật toán Computer Vision của YouTube quét khung hình tĩnh để xác định nội dung lười sáng tạo hoặc slide ảnh spam. Mọi phân cảnh trong 72 bài học đều nhấn mạnh: Áp dụng hiệu ứng Pan & Zoom liên tục (Slow Zoom-in / Zoom-out), cắt nhịp cảnh mỗi 3–4 giây, chèn chuyển cảnh flash/whip pan và kết hợp text phụ đề động nhảy chữ theo từng âm tiết."
+      },
+      {
+        "rule_number": 3,
+        "rule_title": "Can thiệp thị giác sâu: Flip Horizon, Crop 3-5% & Áp LUT màu phá vỡ Perceptual Hash",
+        "description": "Đối với video bán content hoặc reup có chỉnh sửa từ Douyin/Kuaishou, việc lật gương ngang (Horizontal Flip), phóng to nhẹ (Crop 3%–5%) và phủ một lớp LUT màu ấm/lạnh làm thay đổi toàn bộ giá trị băm quang học (Optical/Perceptual Hash), ngăn chặn bộ lọc Content ID tự động so khớp với bản gốc."
+      },
+      {
+        "rule_number": 4,
+        "rule_title": "SOP Kịch bản AI: Thoát bẫy văn phong dịch máy & Đóng vai chuyên gia bản địa",
+        "description": "Các bài học về prompt (Bài 75, 89, 116, 121, 122, 143) chỉ ra lỗi chết người của anh em làm YouTube là dùng prompt dịch thô của ChatGPT. Quy luật bắt buộc: Cung cấp vai trò cụ thể, yêu cầu dịch thoát ý theo phong cách kể chuyện dân gian/đời thường của người bản xứ (Hàn/Nhật/Mỹ), bổ sung yếu tố cảm xúc (Drama, nghịch lý, sự trớ trêu), tuyệt đối không để sót từ ngữ dịch máy sáo rỗng."
+      },
+      {
+        "rule_number": 5,
+        "rule_title": "Chiến thuật Test bản quyền & Đăng kiểm soát: Ngâm Unlisted 2-4 tiếng",
+        "description": "Trước khi công khai video, luôn tải lên ở chế độ Không công khai (Unlisted) hoặc đăng thử lên kênh nháp để hệ thống kiểm tra tự động của YouTube chạy xong toàn bộ tiến trình quét bản quyền âm thanh và video. Nếu có cảnh báo vàng hoặc cờ bản quyền, lập tức thay track nhạc hoặc đổi cảnh vi phạm trước khi video chính thức tiếp cận khán giả."
+      },
+      {
+        "rule_number": 6,
+        "rule_title": "SOP Kháng lỗi nội dung không trung thực & Trùng lặp: Video giải trình OBS Unlisted",
+        "description": "Khi bị quét tắt kiếm tiền (Bài 83, 137, ZOOM-04), tỷ lệ kháng bằng văn bản chỉ đạt <10%. Quy luật né và gỡ là làm video giải trình tiếng Anh dài 3-5 phút quay toàn bộ màn hình dự án: kịch bản Google Docs, timeline dựng nhiều lớp trên CapCut/Premiere, kho nguyên liệu thô và người làm trực tiếp nói giải thích giá trị gia tăng sáng tạo."
+      },
+      {
+        "rule_number": 7,
+        "rule_title": "Phân lập môi trường mạng & Danh tính Google AdSense: Antidetect Browser & Tách gà",
+        "description": "Chiến lược bảo vệ kênh (Bài 86, 94, 115, 129, ZOOM-01, ZOOM-04): Sử dụng Antidetect Browser (Gologin/Hidemyacc) kết hợp Proxy IPv6/4G dân cư sạch để quản lý từng tài khoản kênh; phân tán tối đa 3 kênh/1 tài khoản AdSense và tách gà riêng cho các kênh doanh thu lớn nhằm chống hiện tượng chết chùm khi thuật toán càn quét."
+      }
+    ],
+    "dominant_niches_and_markets": {
+      "market_breakdown": {
+        "🇨🇳 Trung": 4,
+        "🇰🇷 Hàn": 25,
+        "🇺🇸 Mỹ": 17,
+        "🇻🇳 Việt": 21,
+        "🇨🇦 Canada": 2,
+        "🇯🇵 Nhật": 17,
+        "🌐 Ngoại": 21,
+        "🇵🇭 Phil": 1,
+        "🇬🇧 Anh": 1,
+        "🇭🇰 HK": 1
+      },
+      "top_dominant_niches": [
+        {
+          "niche_name": "Lịch sử dã sử & Phóng sự quân sự chiến thuật",
+          "featured_skus": [
+            "VIDEO-458892",
+            "VIDEO-948336",
+            "VIDEO-3df94e"
+          ],
+          "rpm_range": "$8.00 – $25.00 / 1.000 views",
+          "characteristics": "Doanh thu cực cao, khán giả trung niên và nam giới Âu Mỹ/Hàn Quốc gắn bó sâu, thời lượng video dài 15-30 phút đẩy chỉ số AVD lên đỉnh điểm."
+        },
+        {
+          "niche_name": "Drama gia đình Sukatto, Tâm sự hôn nhân & Xã hội (Nhật/Hàn/Việt)",
+          "featured_skus": [
+            "VIDEO-1b4be3",
+            "VIDEO-61ad94",
+            "VIDEO-73d98a",
+            "VIDEO-d56768",
+            "VIDEO-0be6c9"
+          ],
+          "rpm_range": "$4.50 – $12.00 / 1.000 views",
+          "characteristics": "Khai thác mâu thuẫn mẹ chồng nàng dâu, thừa kế tài sản, sự phản bội và quả báo; tốc độ tăng trưởng view thần tốc nhờ kích thích tranh luận mạnh mẽ ở phần bình luận."
+        },
+        {
+          "niche_name": "Triết học Khắc kỷ Stoicism, Tư duy Feynman & Nhân vật Chill Dude / Nonagon",
+          "featured_skus": [
+            "VIDEO-2aa1f7",
+            "VIDEO-ed1be9",
+            "VIDEO-a348a5",
+            "VIDEO-8e0275",
+            "VIDEO-b96929",
+            "VIDEO-a59a5e"
+          ],
+          "rpm_range": "$6.00 – $18.00 / 1.000 views",
+          "characteristics": "Hình ảnh tối giản hoặc tranh minh họa nghệ thuật, giọng đọc trầm ấm thư giãn, khai thác nỗi cô đơn và áp lực cuộc sống của giới trẻ và trung niên hiện đại."
+        },
+        {
+          "niche_name": "Sức khỏe dưỡng sinh, Ẩm thực chữa lành người cao tuổi (Senior Wisdom)",
+          "featured_skus": [
+            "VIDEO-35014d",
+            "VIDEO-86c1ec",
+            "VIDEO-3a38f9",
+            "VIDEO-989053",
+            "VIDEO-a85eac",
+            "VIDEO-043d15"
+          ],
+          "rpm_range": "$7.00 – $16.00 / 1.000 views",
+          "characteristics": "Tệp người xem lớn tuổi có thời gian xem trọn vẹn, cần tuyệt đối tuân thủ rào chắn YMYL (không chẩn đoán, không kê đơn, chỉ chia sẻ thói quen sống lành mạnh)."
+        },
+        {
+          "niche_name": "Reup hoạt hình, Bán content du lịch & Khám phá Douyin",
+          "featured_skus": [
+            "VIDEO-026112",
+            "VIDEO-cb907b",
+            "VIDEO-9a4ddc",
+            "VIDEO-8bc3ce"
+          ],
+          "rpm_range": "$3.50 – $9.00 / 1.000 views",
+          "characteristics": "Nguồn tài nguyên vô tận từ nền tảng Trung Quốc; đòi hỏi kỹ thuật edit lật hình, cắt ghép, lồng tiếng và làm thumbnail chuyên nghiệp để vượt qua kiểm duyệt bản quyền."
+        }
+      ]
+    },
+    "high_value_sops_and_prompts": [
+      {
+        "sku": "VIDEO-043d15",
+        "title": "Bộ Prompt Master Claude Skill 3 Chế Độ Kịch Bản Sức Khỏe Hàn Quốc (Kichban Chaeso KR)",
+        "file_path": "assets/docs/VIDEO-043d15/PROMPT-MASTER-CLAUDE-SKILL-KICHBAN-CHAESO-KR.md",
+        "value_assessment": "Tài liệu chuẩn hóa AI kịch bản đỉnh cao nhất trong cụm. Cho phép tạo kịch bản sức khỏe người già Hàn Quốc theo 3 chế độ: Kể chuyện cảm động, Phân tích khoa học thường thức, và Cảnh báo thói quen. Tích hợp sẵn bộ lọc rào chắn YMYL không vi phạm chính sách y tế."
+      },
+      {
+        "sku": "VIDEO-891f32",
+        "title": "Prompt Tạo Kịch Bản Dài 2 Tiếng Bằng ChatGPT Cho Kênh Triết Lý / Lịch Sử",
+        "file_path": "assets/docs/VIDEO-891f32/PROMPT-TAO-KICH-BAN-DAI-2-TIENG-CHATGPT.md",
+        "value_assessment": "Giải quyết triệt để bài toán tạo video siêu dài để tối ưu hóa thời lượng xem trung bình (AVD) và chèn nhiều quảng cáo giữa video (Mid-roll Ads). Cung cấp khung sườn phân mảnh 10 chương với nhịp cao trào đan xen liên tục."
+      },
+      {
+        "sku": "VIDEO-5cb825",
+        "title": "Prompt Bóc Tách & Lấy Kịch Bản Đối Thủ View Ngoại Bằng AI",
+        "file_path": "assets/docs/VIDEO-5cb825/PROMPT-LAY-VA-TAO-KICH-BAN-DOI-THU.md",
+        "value_assessment": "Công thức trích xuất transcript từ kênh triệu view đối thủ, phân tích cấu trúc hook 30 giây đầu và tái sinh thành kịch bản mới hoàn toàn không trùng lặp văn phong."
+      },
+      {
+        "sku": "VIDEO-458892",
+        "title": "SOP Lịch Sử Quân Sự Triệu View Kiếm Hơn $104,000/Tháng",
+        "file_path": "assets/docs/VIDEO-458892/SOP-LICH-SU-QUAN-SU-TRIEU-VIEW-104K-USD.md",
+        "value_assessment": "Cẩm nang toàn diện mổ xẻ ngách lịch sử quân sự triệu view: Khai thác tư liệu công cộng (Public Domain), kỹ thuật phục dựng bản đồ chiến thuật chuyển động và ghép nhạc tráng ca hùng tráng."
+      },
+      {
+        "sku": "VIDEO-1b4be3",
+        "title": "SOP Kỹ Thuật Edit Video Né Quét AI & Lỗi Nội Dung Không Trung Thực",
+        "file_path": "docs/VIDEO-1b4be3/README.md",
+        "value_assessment": "Bộ quy tắc sống còn khi làm video với AI: Cách can thiệp vào timeline dựng, phối màu LUT, xử lý lớp phủ động và bẻ cong thuật toán quét tự động của YouTube."
+      },
+      {
+        "sku": "VIDEO-ec9c50",
+        "title": "Sổ Tay Kháng Bản Quyền, Trùng Lặp & Sử Dụng Lại Nội Dung (99% Về Bờ)",
+        "file_path": "assets/docs/VIDEO-ec9c50/SO-TAY-KHANG-BAN-QUYEN-TRUNG-LAP-NOI-DUNG.md",
+        "value_assessment": "Mẫu kịch bản và các bước quay video giải trình unlisted thực chiến cứu sống kênh bị tắt kiếm tiền hoặc bị từ chối phê duyệt YPP."
+      },
+      {
+        "sku": "VIDEO-00136f",
+        "title": "SOP Xử Lý Lỗi & Thêm Quyền Tài Khoản Google AdSense Chống Chết Chùm",
+        "file_path": "assets/docs/VIDEO-00136f/SOP-FIX-ADD-QUYEN-GOOGLE-ADSENSE-CHONG-DIE.md",
+        "value_assessment": "Chiến thuật phân bổ quyền Admin/Quản lý AdSense sang email sạch, bảo vệ số dư tài khoản và ngăn chặn nguy cơ khóa tài khoản thanh toán hàng loạt."
+      },
+      {
+        "sku": "ZOOM-01-Nen-tang-moi-truong",
+        "title": "Hồ Sơ Toàn Diện Về Nuôi Kênh, Proxy, Gmail & Antidetect Browser (Zoom 01)",
+        "file_path": "docs/ZOOM-01-Nen-tang-moi-truong/README.md",
+        "value_assessment": "Tài liệu nền tảng xây dựng hạ tầng kỹ thuật vô hình trước thuật toán theo dõi của Google: Quản trị hàng trăm profile độc lập, quy trình ngâm kênh 7-14 ngày nuôi cookie tự nhiên."
+      },
+      {
+        "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
+        "title": "Công Thức Tối Ưu AVD Độc Quyền, SEO Bám Đối Thủ & Seeding 5 Tab (Zoom 03)",
+        "file_path": "docs/ZOOM-03-Quy-trinh-tool-toi-uu/README.md",
+        "value_assessment": "Công thức ghép đuôi video nhân đôi thời lượng xem (AVD), mẹo đặt tên danh sách phát kích hoạt thuật toán đề xuất cạnh video đối thủ lớn và kỹ thuật rải quảng cáo tự động."
+      },
+      {
+        "sku": "ZOOM-04-Adsense-khang-loi",
+        "title": "Cẩm Nang Quản Trị Dòng Tiền AdSense, Nghĩa Vụ Thuế & Kháng BKT (Zoom 04)",
+        "file_path": "docs/ZOOM-04-Adsense-khang-loi/README.md",
+        "value_assessment": "Bản phân tích bản chất dòng tiền thanh toán quốc tế ngày 10 và 22 hàng tháng, thủ tục khai thuế W-8BEN, thuế TNCN và chiến lược giữ an toàn tài sản triệu đô."
+      }
+    ]
   },
   "videos": [
     {

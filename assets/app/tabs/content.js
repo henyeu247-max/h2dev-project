@@ -1964,7 +1964,7 @@ async function renderChienLuoc() {
   const isAll = curTab === 'all';
 
   return `
-  ${pageBanner('Chiến lược & Vận hành', `Ngách không quyết định xanh/đỏ — cách làm quyết định. Bảng điểm đếm live ${scored}/${videos.length} video. Chính sách lấy từ YouTube Help, không lấy blog creator làm luật.`, [
+  ${pageBanner('Chiến lược & Vận hành', `Quy trình xây kênh A–Z chuẩn toàn diện 16 bước thực chiến gắn 144 video bài học, 300 tài liệu SOP và 156 raw kênh. Bảng điểm đếm live ${scored}/${videos.length} video.`, [
     { icon: ICONS.video, label: 'Video local', value: videos.length, sub: `${videos.length} video · ${scored} đã điểm`, tab: 'video' },
     { icon: ICONS.doc, label: 'Kịch bản & Tài liệu', value: docs.length, sub: `${docs.length} file · catalog`, tab: 'tai-lieu' },
     /* FIX 2026-09-30: dong bo quy uoc voi Tong quan (value = kenh song, sub = tong + dead an). */
@@ -1984,13 +1984,13 @@ async function renderChienLuoc() {
 </div>
   </div>
 
-  <!-- Panel 2: Quy trình xây kênh A-Z (SOP 12 bước) -->
+  <!-- Panel 2: Quy trình xây kênh A-Z (SOP 16 bước chuẩn toàn diện) -->
   <div id="cl-panel-workflow" class="cl-panel" style="${(curTab === 'workflow' || isAll) ? 'display:flex;' : 'display:none;'}">
 <section>
   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
     <div>
-      <h2 class="page-h2 mb-1">Quy trình xây kênh A–Z (SOP 12 bước thực chiến toàn diện)</h2>
-      <p class="card-note">Quy trình vận hành trọn vẹn từ môi trường, chọn key, kịch bản, tool sản xuất, hậu kỳ 5 lớp né quét đến AdSense & kháng lỗi.</p>
+      <h2 class="page-h2 mb-1">Quy trình xây kênh A–Z (SOP 16 bước chuẩn toàn diện — Phủ 100% 144 Video)</h2>
+      <p class="card-note">Quy trình vận hành trọn vẹn 8 giai đoạn từ môi trường sạch, chọn key, kịch bản đa hồi, voice DNA, visual 5P, hậu kỳ 5 lớp né quét đến AdSense, YPP & nhân bản toàn cầu.</p>
     </div>
     <div class="flex items-center gap-2 shrink-0">
       <a href="docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-colors shadow-sm">
@@ -2009,8 +2009,10 @@ async function renderChienLuoc() {
           <div class="flex gap-3">
             <span class="w-9 h-9 rounded-xl bg-brand-600/20 border border-brand-700/40 text-brand-300 font-bold text-sm flex items-center justify-center shrink-0 font-mono">${String(s.n).padStart(2, '0')}</span>
             <div class="min-w-0 flex-1">
+              ${s.phase ? `<span class="block text-xs font-mono text-brand-400 font-semibold mb-1">${esc(s.phase)}</span>` : ''}
               <span class="block text-sm font-bold text-white font-heading leading-snug">${esc(s.title)}</span>
               <span class="block text-xs text-gray-300 mt-1.5 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(s.detail)}</span>
+              ${s.sampleCompetitor ? `<div class="mt-2 text-xs text-emerald-400 font-medium flex items-center gap-1"><span class="text-gray-500 font-normal">Kênh tham chiếu:</span> <span class="font-mono">${esc(s.sampleCompetitor)}</span></div>` : ''}
             </div>
           </div>
           ${(s.skus && s.skus.length) ? `
@@ -2043,6 +2045,104 @@ async function renderChienLuoc() {
       </div>`).join('')}
   </div>
 </section>
+  </div>
+
+  <!-- Panel 2.5: Ma Trận 144 Bài Học Thực Chiến (Đối Soát Sâu 100% Video & Transcript) -->
+  <div id="cl-panel-matrix144" class="cl-panel flex-col" style="${(curTab === 'matrix144' || isAll) ? 'display:flex;' : 'display:none;'}">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+      <div>
+        <h2 class="page-h2 mb-1">Ma trận 144 Bài Học Thực Chiến (Bóc Tách Toàn Diện 100% Video)</h2>
+        <p class="card-note">Đối soát trực tiếp 144 SKU, 332.297 từ phụ đề transcript gốc, 5 bước SOP né quét AI và các lỗi cấm kỵ. Không dùng dữ liệu tượng trưng.</p>
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 border border-border text-emerald-400 text-xs font-mono font-bold">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span>144/144 VIDEO ĐỐI SOÁT THẬT</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Cluster Chips Filter Bar -->
+    ${(function() {
+      const m144 = cl.matrix144 || {};
+      const clusters = m144.clusters || [];
+      const items = m144.items || [];
+      return `
+      <div class="card p-4 mb-4 border-border-strong bg-surface">
+        <div class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2 flex items-center justify-between">
+          <span>8 Chuyên đề thực chiến chuyên sâu (${items.length} bài)</span>
+          <span class="text-gray-500 font-mono">${Number(m144.totalWords || 0).toLocaleString()} từ phụ đề</span>
+        </div>
+        <div class="flex flex-wrap gap-2" id="cl-matrix-filter-chips">
+          <button type="button" class="filter-btn active" data-matrix-filter="all">Tất cả · ${items.length}</button>
+          ${clusters.map(c => `
+            <button type="button" class="filter-btn" data-matrix-filter="${esc(c.id)}">
+              <span>${esc(c.name.split('(')[0].trim())}</span>
+              <span class="ml-1 text-xs text-gray-400">· ${(m144.clusterCounts && m144.clusterCounts[c.id]) || 0}</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- 144 Video Matrix Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3.5 min-w-0" id="cl-matrix-grid">
+        ${items.map(it => `
+          <article class="card p-4 flex flex-col justify-between hover:border-brand-500 transition-colors min-w-0" data-matrix-cluster="${esc(it.clusterId)}">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <span class="px-2 py-0.5 rounded-lg bg-brand-tint text-brand-tint-fg border border-brand/30 font-mono text-xs font-bold shrink-0">${esc(it.sku)}</span>
+                <span class="text-xs text-gray-400 font-mono shrink-0">${esc(it.duration || '')}</span>
+              </div>
+              <h3 class="text-sm font-bold text-white leading-snug line-clamp-2 mb-2 font-heading" title="${esc(it.title)}">${esc(it.title)}</h3>
+              
+              <div class="mb-2.5">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium bg-surface-2 text-gray-300 border border-border">
+                  ${ico('layout-grid', 14)}
+                  <span class="truncate">${esc(it.clusterName)}</span>
+                </span>
+              </div>
+
+              ${it.transcriptSample ? `
+              <div class="p-2.5 rounded-xl bg-ink-900/60 border border-hairline mb-2.5">
+                <div class="text-xs font-semibold text-amber-400 mb-1 flex items-center gap-1">
+                  ${ico('file-text', 14)}
+                  <span>Trích thoại phụ đề (${it.transcriptWords} từ):</span>
+                </div>
+                <p class="text-xs text-gray-300 italic line-clamp-3 leading-relaxed break-words">"${esc(it.transcriptSample)}"</p>
+              </div>` : ''}
+
+              ${it.sopSummary ? `
+              <div class="p-2.5 rounded-xl bg-surface-2 border border-hairline mb-2.5">
+                <div class="text-xs font-semibold text-emerald-400 mb-1 flex items-center gap-1">
+                  ${ico('settings', 14)}
+                  <span>SOP né quét AI thực tế:</span>
+                </div>
+                <p class="text-xs text-gray-300 line-clamp-3 leading-relaxed break-words">${esc(it.sopSummary)}</p>
+              </div>` : ''}
+
+              ${(it.avoidFlags && it.avoidFlags.length) ? `
+              <div class="mb-2">
+                <div class="text-xs font-semibold text-rose-400 mb-1 flex items-center gap-1">
+                  ${ico('alert-triangle', 14)}
+                  <span>Cảnh báo lỗi:</span>
+                </div>
+                <ul class="text-xs text-gray-400 space-y-1 list-disc list-inside">
+                  ${it.avoidFlags.map(f => `<li class="truncate">${esc(f)}</li>`).join('')}
+                </ul>
+              </div>` : ''}
+            </div>
+
+            <div class="mt-3 pt-2.5 border-t border-hairline flex items-center justify-between gap-2">
+              <span class="text-xs text-gray-500 font-mono">${it.attachedCount} tài liệu đính kèm</span>
+              <a href="/player.html?sku=${encodeURIComponent(it.sku)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-brand-600 hover:bg-brand-500 text-white text-xs font-medium transition-colors">
+                <span>Mở Video Học</span>
+                <span class="font-mono text-xs">↗</span>
+              </a>
+            </div>
+          </article>
+        `).join('')}
+      </div>`;
+    })()}
   </div>
 
   <!-- Panel 3: Phân Bổ Ngách, Điểm Số & Hướng Đi Tiêu Biểu -->

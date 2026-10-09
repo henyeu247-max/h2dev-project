@@ -545,8 +545,8 @@ window.addEventListener('keydown', (e)=>{
             const tlEl = document.getElementById('insightTimeline');
             tlEl.innerHTML = ins.key_timestamps.map(k => {
               return `<button type="button" class="inline-flex items-center gap-1.5 bg-ink-800 hover:bg-ink-700 border border-ink-600 px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer" data-seek="${k.seconds}">
-                <span class="font-mono text-sky-400 font-bold bg-ink-900 px-1.5 py-0.5 rounded text-2xs">${esc(k.time)}</span>
-                <span class="text-gray-300 text-2xs truncate max-w-[200px]">${esc(k.label)}</span>
+                <span class="font-mono text-sky-400 font-bold bg-ink-900 px-1.5 py-0.5 rounded text-xs">${esc(k.time)}</span>
+                <span class="text-gray-300 text-xs truncate max-w-[200px]" title="${esc(k.label)}">${esc(k.label)}</span>
               </button>`;
             }).join('');
           }

@@ -1,7 +1,7 @@
 # Báo cáo UI-standard đợt 1 — 2026-10-09
 
 **Trạng thái:** `PARTIAL` (không PASS). Phần đã sửa đã đo và đã kiểm; còn các mục mở ở mục 6.
-**Commit:** `c22844d` trên nhánh `ui/ui-standard-2026-10-09`, 17 file, +458 / −293. Chưa push.
+**Commit:** `c22844d` trên nhánh `ui/ui-standard-2026-10-09`, 17 file, +458 / −293; bổ sung `f21837e` (ba hunk text-2xs còn sót trong `player-main.js`) và `c984695` (tài liệu). Chưa push.
 **Bài học:** `docs/solutions/2026-10-09-ui-standard-round1.md` (H2DEV-UI-001 đến 012).
 **Kế hoạch vòng sau:** `docs/plans/ui-standard-round2.md`.
 
@@ -30,7 +30,7 @@
 | URL bộ lọc ngách | tham số `skus` giữ bộ lọc khi tải lại / Back | main.js |
 | Phiên bản | `uifix67` (index, learn, player, sw) | html, sw.js |
 
-Không đưa vào commit (chưa rõ nguồn hoặc thuộc công việc khác): ba nhóm hunk trong `player-main.js` (xem mục 6, M7).
+Không đưa vào commit (chưa rõ nguồn hoặc thuộc công việc khác): bốn nhóm hunk trong `player-main.js`, tổng 10 hunk (xem mục 6, M7).
 
 ## 3. Số đo trước / sau
 
@@ -101,7 +101,7 @@ Mục 6.1, 6.2 là lỗi giao diện thật, chặn PASS. Mục 6.3 đến 6.5 c
 
 ## 8. Bài học đưa vào skill toàn cục
 
-Skill `ui-ux-standard` (nguồn `~/.agents/source/skills/ui-ux-standard/`) được bổ sung mục "Lỗi thường gặp" về: lệch thiết bị do quy tắc theo mốc màn hình; mỗi trạng thái dữ liệu là một trường hợp đo; `display: contents` trong flex-wrap; đổi tên class hàng loạt phải chạy gate token; stage theo hunk khi file lẫn việc khác; gate phụ thuộc môi trường. Sau khi sửa: lint, `apply --yes`, `verify`. Chi tiết kết quả ghi ở mục 9.
+Skill `ui-ux-standard` (nguồn `~/.agents/source/skills/ui-ux-standard/`) được bổ sung mục "Lỗi thường gặp" về: lệch thiết bị do quy tắc theo mốc màn hình; mỗi trạng thái dữ liệu là một trường hợp đo; `display: contents` trong flex-wrap; đổi tên class hàng loạt phải chạy gate token; stage theo hunk khi file lẫn việc khác; gate phụ thuộc môi trường. Kết quả: lint 0 lỗi (5 cảnh báo nằm ở skill khác, không sửa); `apply --yes` cập nhật `ui-ux-standard` ở các công cụ; `verify`: 0 mục lệch, 0 file mồ côi. Không còn tên dự án trong nội dung skill.
 
 ## 9. Cách tái lập
 

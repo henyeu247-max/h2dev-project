@@ -4,11 +4,11 @@
 
 ## Đã xong
 
-- **UI-standard đợt 1:** commit `c22844d` trên nhánh `ui/ui-standard-2026-10-09`, 17 file, chưa push. Phạm vi và số đo: `docs/reports/2026-10-09-ui-standard-round1.md`.
+- **UI-standard đợt 1:** commit `c22844d` (17 file), `f21837e` (ba hunk text-2xs còn sót), `c984695` (tài liệu), trên nhánh `ui/ui-standard-2026-10-09`, chưa push. Phạm vi và số đo: `docs/reports/2026-10-09-ui-standard-round1.md`.
 - **Khối điều khiển bài học:** sáu điều khiển 44 px ở mọi trạng thái trên màn hình rộng. Phiên bản `uifix67`.
 - **Sáu gate của dự án:** mã thoát 0 trên working tree và trên cây commit (`gate-shell` cần `NODE_PATH`).
 - **Bài học:** `docs/solutions/2026-10-09-ui-standard-round1.md` (H2DEV-UI-001 đến 012).
-- **Skill toàn cục `ui-ux-standard`:** đã thêm bài học chung, đã lint, đã đồng bộ (xem kết quả đồng bộ trong báo cáo).
+- **Skill toàn cục `ui-ux-standard`:** đã thêm bảy bài học chung; lint 0 lỗi; đồng bộ và verify 0 lệch (kết quả chi tiết trong báo cáo, mục 8).
 
 ## Đang làm
 

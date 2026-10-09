@@ -1,6 +1,6 @@
 # Sự cố và bài học — UI-standard đợt 1 (2026-10-09)
 
-> **Commit:** `c22844d` trên nhánh `ui/ui-standard-2026-10-09` (chưa push).
+> **Commit:** `c22844d` (đợt sửa), `f21837e` (ba hunk text-2xs còn sót), `c984695` (tài liệu) trên nhánh `ui/ui-standard-2026-10-09` (chưa push).
 > **Phạm vi:** /tatca, /video, /rawkenh, /ngachxanh, /tai-lieu, /kenh-mau, /nguonreup, /lotrinh, /learn.html, trang bài học `/lotrinh/<SKU>`.
 > **Phiên bản tài nguyên:** `uifix67` (index 21 chỗ, learn 10, player 10, `sw.js` CACHE).
 >
@@ -81,7 +81,7 @@
 - **Cách làm đã dùng:**
   1. Phân loại từng hunk bằng mẫu chuẩn hóa: `text-2xs`→`text-xs`, `11px`→`12px`, `h2/h3`→`hX`, số `uifixN`. Hunk không khớp mẫu được đọc bằng tay.
   2. File mà mọi hunk đều thuộc đợt này được stage nguyên (16 file).
-  3. File lẫn việc khác (`player-main.js`) chỉ stage một hunk: `git diff -U0` rồi `git apply --cached --unidiff-zero`.
+  3. File lẫn việc khác (`player-main.js`) chỉ stage các hunk thuộc đợt này (hunk tiêu đề và ba hunk đổi class), bằng `git diff -U0` rồi `git apply --cached --unidiff-zero`. Bỏ 10 hunk còn lại.
 - **Lỗi công cụ đã gặp:** `str.splitlines()` tách thêm ở một số ký tự đặc biệt làm mất một hunk khi phân loại. Dùng `split('\n')`.
 - **Lỗi git đã gặp:** `git add -p` cần terminal tương tác nên không dùng được trong môi trường này.
 - **Guardrail:** trước khi kết luận, đếm hunk bằng `grep -c '^@@'` và đối chiếu với số hunk bộ phân loại tạo ra.

@@ -1,7 +1,7 @@
 # Kế hoạch vòng 2 — UI-standard (H2DEV-Project)
 
 > **Cập nhật:** 2026-10-09. **Tài liệu đọc kèm:** `docs/reports/2026-10-09-ui-standard-round1.md` (số đo và mục mở), `docs/solutions/2026-10-09-ui-standard-round1.md` (bài học H2DEV-UI-001 đến 012).
-> **Nhánh:** `ui/ui-standard-2026-10-09` (commit `c22844d`). Chưa push.
+> **Nhánh:** `ui/ui-standard-2026-10-09` (commit `c22844d`, bổ sung `f21837e` và `c984695`). Chưa push.
 > **Mục đích:** một người mới chỉ đọc file này là làm tiếp được, không cần hỏi lại.
 
 ---
@@ -34,9 +34,9 @@
 
 ## 2. Bối cảnh xuất phát
 
-- **Commit:** `c22844d` trên `ui/ui-standard-2026-10-09`, gốc `main` tại `773e40e`. Phiên bản tài nguyên `uifix67`.
+- **Commit:** `c22844d` (đợt sửa), `f21837e` (ba hunk text-2xs còn sót), `c984695` (tài liệu) trên `ui/ui-standard-2026-10-09`, gốc `main` tại `773e40e`. Phiên bản tài nguyên `uifix67`.
 - **Server:** dịch vụ `H2DEV_Service` (NSSM) đang nghe `0.0.0.0:8899`. Kiểm bằng `netstat -ano | grep :8899`. Không tự khởi động lại dịch vụ. Xem M7.
-- **Working tree còn của công việc khác:** 122 file M (trong đó `player-main.js` còn 13 hunk ngoài phạm vi) và khoảng 152 file untracked (dữ liệu, tài liệu ingest, script part2/part6, `docs/reports/` không theo dõi). **Không đụng vào.**
+- **Working tree còn của công việc khác:** 122 file M (trong đó `player-main.js` còn 10 hunk ngoài phạm vi) và khoảng 152 file untracked (dữ liệu, tài liệu ingest, script part2/part6, `docs/reports/` không theo dõi). **Không đụng vào.**
 - **Gate:** sáu gate ở `scripts/`. `gate-shell.js` cần `NODE_PATH` tới `node_modules` của repo khi chạy trong worktree.
 - **Dữ liệu:** không đổi số đếm trong đợt 1. `docs/WORKING_STATE.md` đang ở trạng thái M do công việc khác.
 
@@ -164,7 +164,7 @@ Sandbox không có thiết bị thật. Danh sách kiểm trên điện thoại 
 
 ### M7 — Thay đổi ngoài phạm vi: quyền sở hữu (DoD-8)
 
-**Đối tượng 1 — `assets/app/player-main.js` (13 hunk còn lại chưa commit):**
+**Đối tượng 1 — `assets/app/player-main.js` (10 hunk ngoài phạm vi, chưa commit):**
 
 | Vị trí (khoảng dòng) | Nội dung | Ghi chú |
 |---|---|---|
@@ -193,7 +193,7 @@ Sandbox không có thiết bị thật. Danh sách kiểm trên điện thoại 
 
 ## 5. Tiến độ
 
-- [x] 2026-10-09 Commit `c22844d` (17 file, nhánh `ui/ui-standard-2026-10-09`).
+- [x] 2026-10-09 Commit `c22844d` (17 file), `f21837e` (ba hunk text-2xs còn sót), `c984695` (tài liệu), nhánh `ui/ui-standard-2026-10-09`.
 - [x] 2026-10-09 Sáu gate mã thoát 0 trên working tree và trên cây commit (`gate-shell` với `NODE_PATH`).
 - [x] 2026-10-09 Báo cáo đợt 1, bài học H2DEV-UI-001 đến 012, plan này.
 - [ ] M0 Chuẩn bị.

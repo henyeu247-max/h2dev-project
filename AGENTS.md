@@ -9,4 +9,4 @@ Load `solutions/legacy-verified-lessons-20261002.md` only when its topic is rele
 ## Lessons
 
 - H2DEV-UI-001 đến H2DEV-UI-012 (UI-standard đợt 1, 2026-10-09): xem `docs/solutions/2026-10-09-ui-standard-round1.md`.
-- H2DEV-UI-013 đến H2DEV-UI-026 (UI-standard đợt 2, 2026-10-09): xem `docs/solutions/2026-10-09-ui-standard-round2.md`.
+- H2DEV-UI-013 đến H2DEV-UI-030 (UI-standard đợt 2, 2026-10-09): xem `docs/solutions/2026-10-09-ui-standard-round2.md`.

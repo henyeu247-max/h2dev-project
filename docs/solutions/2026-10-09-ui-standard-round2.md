@@ -107,3 +107,31 @@
 - **Phạm vi:** nút là thành phần dùng chung. Đã hit-test sau khi cuộn hết ở 12 route × 5 cỡ = 60 tổ hợp: 0 nút bị che.
 - **Bẫy khi đo:** hit-test không cuộn báo giả 4 nút ở 820 px và 2 nút ở 1024 px (các hàng sát đáy màn hình đầu tiên nằm dưới thanh cố định). Phải cuộn từng phần tử vào giữa màn hình rồi mới kiểm. Ảnh toàn trang cũng vẽ thanh cố định ở giữa trang (vị trí khung nhìn), không phải lỗi.
 - **Guardrail:** điểm ngắt của một thành phần nổi phải khớp điểm ngắt của thanh cố định mà nó phải tránh. Sau khi sửa bố cục, cuộn hết trang rồi hit-test phần tử thấp nhất.
+
+
+## H2DEV-UI-027: trang bài học mất vòng focus của bảy loại điều khiển
+
+- **Triệu chứng:** quét focus 12 route bằng bàn phím: 17 phần tử trên `/lotrinh/<SKU>` có `outline: none` và `box-shadow: none` khi focus (Bài trước, Bài tiếp theo, Bài học gốc, Tải MP4, Chưa xem, Bỏ tiến độ, các mốc thời gian).
+- **Nguyên nhân (đã xác minh bằng danh sách quy tắc khớp):** `assets/player.css` có `box-shadow: none !important` ở `#psources > a`, `.player-controls #btn…` và `#insightTimeline > button`. Quy tắc `button:focus-visible { box-shadow: var(--focus-ring) }` của `viddar.css` không thắng được `!important`.
+- **Cách sửa:** cuối `player.css`, quy tắc `:focus-visible` cho đúng các bộ chọn đó, `box-shadow: var(--focus-ring) !important`. Quét lại 5 loại trang bài học: 243 phần tử, 0 thiếu vòng.
+- **Guardrail:** khi một khối đặt `box-shadow: none !important` (hoặc `outline: none`) cho điều khiển, phải đặt kèm quy tắc `:focus-visible` cùng độ ưu tiên ngay sau nó.
+
+## H2DEV-UI-028: ba báo động giả khi đo vòng focus và số thẻ
+
+- **Chuyển tiếp:** đo `box-shadow` ngay sau Tab lúc còn chuyển tiếp 0,2 s cho giá trị trong suốt. Đợi tối thiểu 400 ms rồi mới đo.
+- **Vòng mặc định `outline: auto`:** Chrome vẽ vòng hai lớp tối và trắng, thấy được trên nền tối dù màu tính ra là gần đen. Chụp ảnh trước khi kết luận.
+- **Đếm thẻ:** đếm liên kết `/lotrinh/VIDEO-…` thiếu buổi Zoom (`/lotrinh/ZOOM-…`). Dùng dòng tổng kết ("45/144") và số trang.
+- **Guardrail:** phát hiện từ máy đo phải qua ảnh hoặc cách đo thứ hai trước khi vào danh sách sửa.
+
+## H2DEV-UI-029: đếm "file local" lẫn địa chỉ web
+
+- **Triệu chứng:** thẻ KPI "Kịch bản & Tài liệu" ghi 275 file local, thực tế 269.
+- **Nguyên nhân:** sáu mục công cụ có trường `file` là địa chỉ web (`https://coverr.co/`, v.v.) nên điều kiện `x.file` coi là file local. Tab Tài liệu đếm sai theo cùng cách (275 / 25, nay 269 / 31).
+- **Cách sửa:** `isLocalDocFile(f)` trong `assets/app/tabs/content.js`: chuỗi không rỗng và không bắt đầu bằng `http(s)://`. Kiểm: 269 file đều có trên đĩa, 0 byte không có, 6 mục địa chỉ web đều có `link` trùng.
+- **Guardrail:** con số trên màn hình phải đối chiếu với đĩa, không chỉ với trường dữ liệu.
+
+## H2DEV-UI-030: tên truy cập của logo không chứa chữ hiển thị (WCAG 2.5.3)
+
+- **Triệu chứng:** Lighthouse máy tính: `label-content-name-mismatch` ở `.vd-brand`.
+- **Cách sửa:** `assets/app/main.js`: `aria-label` = chữ hiển thị + " — Về trang chủ Tổng quan". Lighthouse máy tính: 54 đạt và 1 lỗi, nay 55 đạt và 0 lỗi.
+- **Ghi chú:** thẻ KPI và logo trước đó dùng vòng focus trắng mặc định (nhìn thấy được); đã đồng bộ sang `var(--focus-ring)` của dự án trong `viddar.css`.

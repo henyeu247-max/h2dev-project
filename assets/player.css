@@ -347,3 +347,16 @@ body:has(#playerMain[aria-busy="true"]) .h2-shell-footer { display: none !import
   .player-controls #btnResume { grid-column: 1 / -1; grid-row: 2; width: 100%; justify-content: center; min-height: 44px; }
   .player-controls #btnClearProgress, .player-controls #noteInput { min-height: 44px; }
 }
+
+/* UI-fix 2026-10-09 (A-3, WCAG 2.4.7): cac khoi tren dung `box-shadow: none !important` nen xoa mat vong focus cua token (--focus-ring) o trang bai hoc: nguon (#psources > a, ke ca nut Tai MP4), nut dieu khien (#btnPrev/#btnNext/#btnWatched/#btnResume/#btnClearProgress) va cac moc thoi gian (#insightTimeline > button). Khoi phuc bang focus-visible co !important, dat SAU cac khoi do. */
+#psources > a:focus-visible,
+#psources > a.btn-download-mp4:focus-visible,
+.player-controls #btnPrev:focus-visible,
+.player-controls #btnNext:focus-visible,
+.player-controls #btnWatched:focus-visible,
+.player-controls #btnResume:focus-visible,
+.player-controls #btnClearProgress:focus-visible,
+#insightTimeline > button:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring) !important;
+}

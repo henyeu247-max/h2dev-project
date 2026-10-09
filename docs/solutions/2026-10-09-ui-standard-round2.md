@@ -1,6 +1,6 @@
 # UI-standard đợt 2: sự cố và bài học (H2DEV-UI-013 đến H2DEV-UI-020)
 
-> Ngày: 2026-10-09. Nhánh: `ui/ui-standard-2026-10-09`. Đợt 2 đã nằm trong commit `800caa4` (commit của việc khác); vòng 3 (H2DEV-UI-021 đến 024) chưa commit; `server.js` của D-05 đã nằm trong `551be56`.
+> Ngày: 2026-10-09. Nhánh: `ui/ui-standard-2026-10-09`. Đợt 2 đã nằm trong commit `800caa4` (commit của việc khác); vòng 3 (H2DEV-UI-021 đến 025) nằm trong `13c40f5`; `server.js` của D-05 đã nằm trong `551be56`.
 > Bài học đợt 1: `docs/solutions/2026-10-09-ui-standard-round1.md` (H2DEV-UI-001 đến 012).
 
 ## H2DEV-UI-013: gate thang chữ không báo khi thang còn bậc 11 px

@@ -1,7 +1,7 @@
 # Báo cáo UI-standard đợt 2 (2026-10-09), cập nhật vòng 3
 
-> **Trạng thái:** PARTIAL. Đợt 2 đã nằm trong commit `800caa4` (commit của việc khác, message không nhắc UI). Vòng 3 (sửa theo quyết định của chủ dự án) đã commit trên nhánh, ngay sau `551be56` (xem `git log`).
-> **Nhánh:** `ui/ui-standard-2026-10-09`. **HEAD:** `551be56` (commit của việc khác; đã chứa đợt 2 trong `800caa4` và `server.js` của D-05). **Phiên bản tài nguyên:** `uifix71`.
+> **Trạng thái:** PARTIAL. Đợt 2 đã nằm trong commit `800caa4` (commit của việc khác, message không nhắc UI). Vòng 3 (sửa theo quyết định của chủ dự án) nằm trong commit `13c40f5`.
+> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix71`.
 > **Kế hoạch:** `docs/plans/ui-standard-round2.md`. **Bài học:** `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-013 đến 024).
 
 ## 1. Số liệu (12 route × 5 cỡ = 60 tổ hợp)
@@ -19,7 +19,7 @@
 ## 2. Quyết định của chủ dự án và việc đã làm
 
 - **D-02 "Xem tiếp":** chọn **trọn hàng 2**. Hiện trạng đúng như vậy, không đổi CSS. Ảnh so sánh: `scratchpad\ui\preview-xemtiep-2x2.png`.
-- **D-03 commit:** các thay đổi đợt 2 đã nằm trong `800caa4`. Vòng 3 chưa commit vì chưa có yêu cầu.
+- **D-03 commit:** các thay đổi đợt 2 đã nằm trong `800caa4`. Vòng 3 nằm trong `13c40f5` (chủ dự án giao em tự quyết).
 - **D-05 `H2DEV_Service`:**
   - Đã làm trong code: route `/api/intelligence/spider` chỉ nhận POST kèm header `X-H2DEV-Action: spider`. GET trả 405, POST không header trả 403. `server.js` đã nằm trong commit `551be56` (09:04:30, commit của việc khác).
   - Dịch vụ đã nạp code mới: tiến trình 8899 khởi động lúc 09:00:13, sau khi sửa `server.js` lúc 08:55:08. Kiểm bằng POST không header → 403; DB không đổi.

@@ -1137,7 +1137,8 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 @media (max-width: 640px) {
   .quick-access { align-items: stretch; flex-direction: column; gap: 8px; padding: 10px; }
   .quick-access__label { font-size: 12px; }
-  .quick-access__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 7px; width: 100%; }
+  .quick-access__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; width: 100%; }
+  .quick-access:not(.quick-access--topbar) > .quick-access__list > .quick-access__button:last-child:nth-child(odd):nth-child(n+3) { grid-column: 1 / -1; }   /* UI-fix 2026-10-09 (D-09): Di nhanh 2 cot tren dien thoai; nut le cuoi chiem ca hang (G-3), cung mau tab hoc. */
   .quick-access__button { min-height: 44px; padding: 8px 7px; font-size: 12px; white-space: normal; overflow-wrap: anywhere; }
   .quick-access__long { display: none; }
   .quick-access__short { display: inline; }
@@ -1765,7 +1766,7 @@ button.niche-row:focus-visible,
   .bento-grid > *:last-child:nth-child(odd) { grid-column: auto !important; min-height: 0 !important; height: auto !important; padding: 8px 6px !important; gap: 2px !important; }
   .bento-card .stat-icon { display: none !important; }
   .bento-card .stat-value { font-size: var(--h2-font-base) !important; white-space: nowrap; overflow-wrap: normal !important; } /* "156 vidIQ" 16px xuong 2 dong @375 -> 14px 1 dong */
-  .bento-card .stat-label { font-size: var(--h2-font-xs) !important; letter-spacing: 0 !important; overflow-wrap: normal !important; hyphens: none; }
+  .bento-card .stat-label { font-size: var(--h2-font-xs) !important; letter-spacing: 0 !important; overflow-wrap: normal !important; hyphens: none; text-wrap: balance; }   /* UI-fix 2026-10-09 (D-07): nhan 2 dong can deu, khong de chu le (vd 'data'). */
   /* D2 (UI-fix 2026-10-09): hang chip loc xuong dong trong khung. Truoc day vuot ngang nen chip cuoi bi cat o mep.
      Chip ngan giu 1 dong (co dung max-content); chip dai hon ca hang (vd "Everyday History EN (...)" tren 360px) tu xuong dong trong chinh no. */
   #content .flex-wrap:has(> .filter-btn), #content .nx-filter-chips {
@@ -1913,12 +1914,16 @@ button.niche-row:focus-visible,
 /* UI-standard T-8 (2026-10-09): chu nut trang thai xem khong de mot tu le o dong cuoi. */
 #video-filter-watch .filter-btn { text-wrap: balance; }
 
-/* UI-fix 2026-10-09 (M1): chip le cuoi hang gian ca hang (khong mo coi). Loai tru hai khoi loc video (giu layout rieng). */
+/* UI-fix 2026-10-09 (M1): chip le cuoi hang chiem ca hang (G-3). Loai tru hai khoi loc video (giu layout rieng).
+   D-06: hang co nhan di kem (vd "Tinh trang song:", toi 4 chip) tu 641px chia deu chieu rong chip (G-2). Cum nhieu chip (vd Kenh mau 34 chip) giu auto: chia deu o day lam chip co 30px (da do bang anh). */
+:where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn { flex: 1 1 auto; }
 @media (max-width: 640px) {
   :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn,
   #content .nx-filter-chips > .filter-btn { flex: 1 1 auto !important; }
 }
-:where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn { flex: 1 1 auto; }
+@media (min-width: 641px) {
+  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):has(> :not(.filter-btn)):not(:has(> .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn)) > .filter-btn { flex: 1 1 0; min-width: max-content; }
+}
 
 /* UI-fix 2026-10-09 (M1): luoi the kenh (Kenh mau) 2/3 cot: the le cuoi chiem ca hang, khong mo coi. */
 .grid.sm\:grid-cols-2.xl\:grid-cols-3.gap-3.min-w-0 { display: flex; flex-wrap: wrap; }
@@ -1927,3 +1932,8 @@ button.niche-row:focus-visible,
 @media (min-width: 641px) and (max-width: 820px) { #content .nx-filter-chips > .filter-btn { flex: 1 1 auto; } }
 /* UI-fix 2026-10-09 (M1): nut Di nhanh le cuoi hang (641-820px, thanh flex) gian ca hang; phone (grid) va topbar giu nguyen. */
 @media (min-width: 641px) and (max-width: 820px) { .quick-access:not(.quick-access--topbar) > .quick-access__list > .quick-access__button { flex: 1 1 auto; } }
+
+/* UI-fix 2026-10-09 (G-3): thanh topbar co dung 6 nut tren dien thoai (vd /chienluoc) giu MOT hang (dai subnav cao 48px, tu cuon ngang); truoc day 6 nut tren luoi 5 cot thanh 2 hang cao 92px, tran khoi dai 48px nen hang dau bi tieu de che va nut thu 6 nam ngoai tieu de. */
+@media (max-width: 640px) {
+  .quick-access--topbar .quick-access__list:has(> .quick-access__button:nth-child(6):last-child) { grid-template-columns: repeat(6, minmax(76px, 1fr)); }
+}

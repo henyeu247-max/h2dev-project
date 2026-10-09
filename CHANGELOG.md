@@ -7,7 +7,10 @@
 - **Kiểm định E2E Playwright trên /chienluoc:** 100% ALL PASS, 0 Console Errors, chuyển đổi mượt mà giữa 5 subtabs (`principles`, `workflow`, `distribution`, `policy`, `all`), click chuyển tab hoạt động chính xác.
 - **Tài liệu kiểm toán & Biên bản nghiệm thu:** Xuất bản `docs/reports/2026-10-09-chienluoc-knowledge-deep-audit.json` và `docs/reports/2026-10-09-chienluoc-ui-ux-audit.json`.
 
-## 2026-10-09 (đợt 6) — UI-STANDARD ĐỢT 2: CHIP, THẺ KÊNH, THẺ TÀI LIỆU, TAB HỌC, BỎ 2XS (chưa commit, nhánh `ui/ui-standard-2026-10-09`)
+## 2026-10-09 (đợt 6) — UI-STANDARD ĐỢT 2: CHIP, THẺ KÊNH, THẺ TÀI LIỆU, TAB HỌC, BỎ 2XS (đã nằm trong commit `800caa4`; vòng 3 chưa commit, nhánh `ui/ui-standard-2026-10-09`)
+- **Vòng 3 (chưa commit):** nút "Đi nhanh" trên điện thoại thành hai cột, nút lẻ cuối chiếm cả hàng (mồ côi 2 → 0 trên 60 tổ hợp). Hàng chip có nhãn đi kèm, tối đa 4 chip, chia đều từ 641 px ("Tình trạng sống" 1440 px: 261/300/309 → 290/290/290). Cụm nhiều chip và điện thoại giữ `flex: 1 1 auto` (chia đều đã thử: chip còn 30–56 px). Nhãn KPI "Ngách có data" dùng `text-wrap: balance` (hết chữ lẻ). Chip chia đều thêm `min-width: max-content` (lỗi xuống dòng ở 641–659 px do bên đọc độc lập phát hiện). Thanh nút `/chienluoc` trên điện thoại (6 nút) giữ một hàng cuộn ngang: trước đó thành hai hàng, hàng đầu bị tiêu đề cố định che. Phiên bản tài nguyên `uifix71`.
+- **Route `/api/intelligence/spider` (`server.js`, đã nằm trong commit `551be56`):** chỉ nhận POST kèm `X-H2DEV-Action: spider`; GET trả 405, POST không header trả 403. Trình duyệt từ trang khác nguồn không gửi được (đo: `Failed to fetch`; DB không đổi). Dịch vụ `H2DEV_Service` đã nạp code mới (khởi động 09:00:13). Đã tạo luật tường lửa `H2DEV-8899 chan Public` (Block, TCP 8899, Public) và tắt Tailscale Funnel cổng 8443.
+
 
 - **Chip và nút lẻ:** phần tử lẻ cuối hàng giãn cả hàng ở hàng chip (#content), nhóm Ngách và nút "Đi nhanh" (641–820 px). Mồ côi 36 → 2 trên 60 tổ hợp route × cỡ; còn /tai-lieu 360 và 390 ("Đi nhanh" trên điện thoại).
 - **Thẻ kênh (Kênh mẫu):** thẻ lẻ cuối hàng chiếm cả hàng.

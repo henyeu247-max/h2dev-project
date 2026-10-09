@@ -4,38 +4,41 @@
 
 ## Đã xong
 
-- **UI-standard đợt 1:** commit `c22844d` (17 file), `f21837e` (ba hunk text-2xs còn sót), `c984695` (tài liệu), trên nhánh `ui/ui-standard-2026-10-09`, chưa push. Phạm vi và số đo: `docs/reports/2026-10-09-ui-standard-round1.md`.
-- **Khối điều khiển bài học:** sáu điều khiển 44 px ở mọi trạng thái trên màn hình rộng. Phiên bản `uifix67`.
-- **Sáu gate của dự án:** mã thoát 0 trên working tree và trên cây commit (`gate-shell` cần `NODE_PATH`).
-- **Bài học:** `docs/solutions/2026-10-09-ui-standard-round1.md` (H2DEV-UI-001 đến 012).
-- **Skill toàn cục `ui-ux-standard`:** đã thêm bảy bài học chung; lint 0 lỗi; đồng bộ và verify 0 lệch (kết quả chi tiết trong báo cáo, mục 8).
+- **UI-standard đợt 1:** commit `c22844d`, `f21837e`, `c984695` trên `ui/ui-standard-2026-10-09` (chưa push). Báo cáo `docs/reports/2026-10-09-ui-standard-round1.md`.
+- **UI-standard đợt 2 (chưa commit):** chip và nút lẻ, thẻ kênh, thẻ tài liệu bài học, tab học ở 390 px, bỏ 2xs. Mồ côi 36 → 2 trên 60 tổ hợp route × cỡ. Phiên bản `uifix68`. Báo cáo `docs/reports/2026-10-09-ui-standard-round2.md`; bài học H2DEV-UI-013 đến 020.
+- **Gate và kiểm dự án** trên working tree: `validate-project`, sáu gate, `sync-counts --check`: mã thoát 0.
+- **Skill toàn cục `ui-ux-standard`:** đã sửa và đồng bộ tới 11 nơi; kiểm độc lập 649/649 bản sao khớp.
 
 ## Đang làm
 
-- Không có. Chờ anh quyết định ở mục "Cần anh quyết định".
+- Không có. Chờ quyết định ở mục dưới.
 
 ## Tiếp theo
 
-- Kế hoạch vòng 2: `docs/plans/ui-standard-round2.md`. Bắt đầu từ **M0** (chuẩn bị, không đổi code), rồi M1 (chip mồ côi, /ngachxanh trước).
+- Sau quyết định: commit trên nhánh (13 file sửa và tài liệu của đợt này) nếu anh cho phép; đo lại trên cây commit (DoD-5); nhóm vùng chạm dưới 44 px (DoD-3).
 
 ## Lỗi và việc còn treo
 
-- Chip và handle mồ côi ở /ngachxanh, /tai-lieu, /nguonreup, /kenh-mau, /rawkenh (M1).
-- Tab mồ côi "Tìm kiếm bài học" ở /lotrinh và /learn.html ở 390 px (M2).
-- Sáu nút "Mở file local" mồ côi trong thẻ tài liệu bài học (M3).
-- Nhãn KPI sau khi lên 12 px chưa xem bằng mắt (M4).
-- Chưa kiểm trên thiết bị thật (M5).
-- Token `2xs` còn trong `tokens.json` và `tailwind.config.js` (M6).
-- Thay đổi chưa commit trong `player-main.js` (nhánh resize, SKU, SOP, kênh DIE) chưa có chủ sở hữu xác nhận (M7).
+- Mồ côi còn 2: /tai-lieu 360 và 390 ("Reup / Hoạt hình"). Nguyên nhân: "Đi nhanh" trên điện thoại là lưới ba cột. M1, D-09.
+- Nhãn KPI "Ngách có data" xuống 2 dòng ở 390 px (/tai-lieu, /nguonreup). M4, D-07.
+- Vùng chạm dưới 44 px: 4.628 trên 60 tổ hợp; chưa nhóm và chưa có lý do theo nhóm (DoD-3).
+- Nút "Đọc trực tiếp" ngắt chữ ở 1440 px (VIDEO-2aa1f7).
+- Chưa kiểm trên thiết bị thật (M5, BLOCKED).
+- `assets/tailwind.css` lệch 38 class so với cấu hình; chưa dựng lại (M6).
+- Các thay đổi ngoài phạm vi (10 hunk `player-main.js`, 122 M, 152 untracked ghi trong plan) không còn trong cây này. Ba script chưa theo dõi mới (`scripts/analyze_h2dev_intelligence.js`, `audit_chienluoc_web.js`, `check_chienluoc_links.js`) do công việc khác tạo lúc 08:35–08:36; chưa rõ chủ sở hữu (M7).
+- Đích Pi của đồng bộ skill: README v6.3 ghi đã gỡ, manifest ghi cài lại 2026-10-06. Cần xác nhận.
 
 ## Cần anh quyết định
 
-1. "Xem tiếp" chiếm trọn hàng 2, hay căn phải? (D-02)
-2. Nhánh resize, SKU và SOP trong `player-main.js` có phải của anh hoặc của đợt này không? (D-04)
-3. Dịch vụ `H2DEV_Service` nghe `0.0.0.0:8899` có chủ ý không? Quy tắc là `127.0.0.1`. (D-05)
-4. Token `2xs`: giữ như hiện tại (A) hay đổi và build lại Tailwind (B)? (M6)
+1. "Xem tiếp" trọn hàng 2 hay căn phải (D-02).
+2. `H2DEV_Service` nghe `0.0.0.0:8899`: giữ, thu hẹp, hay bind 127.0.0.1 (D-05).
+3. Giãn chip và "Đi nhanh" (đã áp dụng): giữ hay trả về (D-06).
+4. Nhãn "Ngách có data" ở 390 px: rút ngắn hay đảo D1 (D-07).
+5. "Đi nhanh" trên điện thoại: hai cột hay chấp nhận 2 mồ côi (D-09).
+6. Chủ sở hữu của thay đổi ngoài phạm vi (M7, D-04).
+7. Commit đợt 2 trên nhánh (D-03).
 
 ## Ghi chú
 
-- Working tree còn thay đổi của công việc khác: khoảng 122 M và 152 untracked. Không thuộc đợt này. Không commit trong nhánh UI.
-- Số đếm dữ liệu không đổi trong đợt này. `docs/WORKING_STATE.md` là M do công việc khác, không chỉnh.
+- Không commit, không push, không deploy trong đợt này.
+- Số đếm dữ liệu không đổi (`sync-counts --check` mã thoát 0). `docs/WORKING_STATE.md` không chỉnh.

@@ -138,6 +138,10 @@
 #pchannels h3, #pdocs h3 { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
 #pchannelslist > div { background: var(--surface-2) !important; border-color: var(--border) !important; border-radius: 4px !important; }
 #pdocslist > article { background: var(--bg-subtle) !important; border-color: var(--border) !important; border-radius: 4px !important; }
+/* UI-fix 2026-10-09 (M3): hai nut tai lieu trong mot the chia deu 2 cot; the hep o 1440px lam nut thu hai rot xuong dong mot minh. */
+#pdocslist > article div:has(> a:nth-child(2)) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+/* UI-fix 2026-10-09 (M3): nut thu ba cua mot the (3 tai lieu) chiem ca hang, khong de le mot minh. */
+#pdocslist > article div:has(> a:nth-child(2)) > a:last-child:nth-child(odd):nth-child(n+3) { grid-column: 1 / -1; }
 #pdocslist a.btn-doc-link {
   background: var(--surface-2) !important;
   border: 1px solid var(--border) !important;

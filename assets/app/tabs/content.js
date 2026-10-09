@@ -1928,10 +1928,24 @@ async function renderChienLuoc() {
     'Lịch sử / Quân sự': 'thận trọng · 1 key WWII',
     'Khác': 'không còn — đã gắn hết'
   };
+  function getNicheNote(k) {
+    if (noteOf[k]) return noteOf[k];
+    if (/Reup|Hoạt Hình/i.test(k)) return 'có điều kiện · reused + copyright';
+    if (/Sức Khỏe|Dưỡng Sinh/i.test(k)) return 'xanh · senior YMYL';
+    if (/Triết Lý|Tâm Linh|Phật Pháp|Lời Chúa/i.test(k)) return 'xanh · JP/KR/US AVD cao';
+    if (/Drama|Tâm Sự/i.test(k)) return 'thận trọng · drama đời sống';
+    if (/Kinh Tế|Tài Chính/i.test(k)) return 'xanh · US RPM $18-$38';
+    if (/Kháng|Bản Quyền|AdSense|Lỗi GA/i.test(k)) return 'meta · bảo vệ kênh YPP';
+    if (/Prompt|Kịch Bản/i.test(k)) return 'meta · 3-5 Hồi AI';
+    if (/Môi Trường|Setup|Nuôi Kênh|VPS/i.test(k)) return 'meta · hạ tầng sạch';
+    if (/Nhân Bản|Đa Thị Trường/i.test(k)) return 'meta · scale JP/KR/US';
+    if (/Khám Kênh|Tối Ưu/i.test(k)) return 'thực chiến · audit';
+    return 'ngách thực chiến';
+  }
   const scoreOrder = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Reup / Hoạt hình', 'Drama / Stories', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Edit / Thumb', 'Nền tảng / Tool', 'Lịch sử / Quân sự', 'Khác'];
   const hist = videos.reduce((a, v) => { const n = v.niche || 'Khác'; a[n] = (a[n] || 0) + 1; return a; }, {});
-  const score = scoreOrder.filter(k => hist[k]).map(k => ({ label: k, n: hist[k], note: noteOf[k] || '', key: k }));
-  Object.keys(hist).forEach(k => { if (!scoreOrder.includes(k)) score.push({ label: k, n: hist[k], note: '', key: k }); });
+  const score = scoreOrder.filter(k => hist[k]).map(k => ({ label: k, n: hist[k], note: getNicheNote(k), key: k }));
+  Object.keys(hist).forEach(k => { if (!scoreOrder.includes(k)) score.push({ label: k, n: hist[k], note: getNicheNote(k), key: k }); });
   const principles = [
     { tag: '01', title: 'Cách làm quyết định', body: cl.nguyenTacCotLoi[0] },
     { tag: '02', title: 'Hai cửa YPP', body: cl.nguyenTacCotLoi[1] },
@@ -1970,13 +1984,13 @@ async function renderChienLuoc() {
 </div>
   </div>
 
-  <!-- Panel 2: Quy trình xây kênh A-Z (SOP 11 bước) -->
+  <!-- Panel 2: Quy trình xây kênh A-Z (SOP 12 bước) -->
   <div id="cl-panel-workflow" class="cl-panel" style="${(curTab === 'workflow' || isAll) ? 'display:flex;' : 'display:none;'}">
 <section>
   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
     <div>
-      <h2 class="page-h2 mb-1">Quy trình xây kênh A–Z (SOP 11 bước thực chiến)</h2>
-      <p class="card-note">Quy trình vận hành trọn vẹn từ môi trường, chọn key, kịch bản, tool sản xuất đến AdSense & kháng lỗi.</p>
+      <h2 class="page-h2 mb-1">Quy trình xây kênh A–Z (SOP 12 bước thực chiến toàn diện)</h2>
+      <p class="card-note">Quy trình vận hành trọn vẹn từ môi trường, chọn key, kịch bản, tool sản xuất, hậu kỳ 5 lớp né quét đến AdSense & kháng lỗi.</p>
     </div>
     <div class="flex items-center gap-2 shrink-0">
       <a href="docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-colors shadow-sm">
@@ -1991,12 +2005,29 @@ async function renderChienLuoc() {
   <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3.5 min-w-0">
     ${steps.map(s => `
       <div class="card p-4 text-left min-w-0 hover:border-brand-500 flex flex-col justify-between transition-colors">
-        <div class="flex gap-3">
-          <span class="w-9 h-9 rounded-xl bg-brand-600/20 border border-brand-700/40 text-brand-300 font-bold text-sm flex items-center justify-center shrink-0 font-mono">${String(s.n).padStart(2, '0')}</span>
-          <div class="min-w-0 flex-1">
-            <span class="block text-sm font-bold text-white font-heading leading-snug">${esc(s.title)}</span>
-            <span class="block text-xs text-gray-300 mt-1.5 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(s.detail)}</span>
+        <div>
+          <div class="flex gap-3">
+            <span class="w-9 h-9 rounded-xl bg-brand-600/20 border border-brand-700/40 text-brand-300 font-bold text-sm flex items-center justify-center shrink-0 font-mono">${String(s.n).padStart(2, '0')}</span>
+            <div class="min-w-0 flex-1">
+              <span class="block text-sm font-bold text-white font-heading leading-snug">${esc(s.title)}</span>
+              <span class="block text-xs text-gray-300 mt-1.5 leading-relaxed break-words [overflow-wrap:anywhere]">${esc(s.detail)}</span>
+            </div>
           </div>
+          ${(s.skus && s.skus.length) ? `
+          <div class="mt-3 pt-2.5 border-t border-hairline">
+            <div class="text-xs text-gray-400 mb-1.5 font-mono flex items-center justify-between">
+              <span>Bài học thực chiến:</span>
+              <span class="text-gray-500">${s.skus.length} SKU</span>
+            </div>
+            <div class="flex flex-wrap gap-1">
+              ${s.skus.map(sku => `
+                <a href="/player.html?sku=${encodeURIComponent(sku)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-ink-700 hover:bg-brand-500/30 border border-ink-600 hover:border-brand-500 text-xs font-mono text-gray-300 hover:text-brand-300 transition-colors" title="Mở video bài học ${esc(sku)}">
+                  <span>${esc(sku)}</span>
+                  <span class="font-mono text-xs">↗</span>
+                </a>
+              `).join('')}
+            </div>
+          </div>` : ''}
         </div>
         <div class="mt-3.5 pt-3 border-t border-hairline flex flex-wrap items-center justify-between gap-2">
           <button type="button" data-open-tab="${esc(s.tab)}"${s.kind != null ? ` data-kind="${esc(s.kind)}"` : ''}${s.promptNiche != null ? ` data-prompt-niche="${esc(s.promptNiche)}"` : ''} class="inline-flex items-center gap-1 text-xs text-brand-400 hover:text-brand-300 font-semibold transition-colors">

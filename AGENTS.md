@@ -5,3 +5,7 @@ Global operating rules and shared procedures are provided by the user-level agen
 ## Historical lessons
 
 Load `solutions/legacy-verified-lessons-20261002.md` only when its topic is relevant; treat every historical claim as needing current verification.
+
+## Lessons
+
+- H2DEV-UI-001 đến H2DEV-UI-012 (UI-standard đợt 1, 2026-10-09): xem `docs/solutions/2026-10-09-ui-standard-round1.md`.

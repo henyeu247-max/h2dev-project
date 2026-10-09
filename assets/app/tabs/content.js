@@ -1030,7 +1030,7 @@ async function renderKichBan() {
       videoNiche: video ? video.niche : '',
       contentNiche,
       host: hostLabel(item.link),
-      ext: fileLabel(item.file)
+      ext: isLocalDocFile(item.file) ? fileLabel(item.file) : ''
     });
   });
   const kindCounts = enriched.reduce((a, x) => { a[x.kind] = (a[x.kind] || 0) + 1; a.all = (a.all || 0) + 1; return a; }, {});
@@ -1147,7 +1147,7 @@ ${grouped.map((g, index) => {
           <div class="mt-auto pt-3 flex flex-wrap gap-2">
             ${k.sku === 'NOI-BO-MUSIC-01' || (k.file && k.file.includes('CATALOG-NHAC-NEN')) ? `<button type="button" class="h2-btn h2-btn--ghost h2-btn--sm js-open-music-studio"><span class="inline-flex items-center gap-1.5">${ico('headphones', 14)} Mở Trạm Nhạc Nền${musicStats.total ? ' (' + musicStats.total + ' Tracks)' : ''}</span></button>` : ''}
             ${k.link ? `<a href="${esc(k.link)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold">↗ ${esc(k.host || 'Mở nguồn')}</a>` : ''}
-            ${k.file ? `<a href="${esc(k.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-xs text-gray-200">${ico('file-text', 14)} File local</a>` : ''}
+            ${isLocalDocFile(k.file) ? `<a href="${esc(k.file)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-xs text-gray-200">${ico('file-text', 14)} File local</a>` : ''}
             ${k.fileLocal ? `<a href="${esc(k.fileLocal)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-xs text-lime-200">${ico('file-edit', 14)} MD gốc</a>` : ''}
             ${k.videoTitle ? `<a href="/lotrinh/${encodeURIComponent(k.sku)}" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-ink-700 hover:bg-ink-600 border border-ink-600 text-xs text-gray-200">${ico('play', 14)} Video gốc</a>` : ''}
           </div>

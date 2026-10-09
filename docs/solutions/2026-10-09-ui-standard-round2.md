@@ -135,3 +135,19 @@
 - **Triệu chứng:** Lighthouse máy tính: `label-content-name-mismatch` ở `.vd-brand`.
 - **Cách sửa:** `assets/app/main.js`: `aria-label` = chữ hiển thị + " — Về trang chủ Tổng quan". Lighthouse máy tính: 54 đạt và 1 lỗi, nay 55 đạt và 0 lỗi.
 - **Ghi chú:** thẻ KPI và logo trước đó dùng vòng focus trắng mặc định (nhìn thấy được); đã đồng bộ sang `var(--focus-ring)` của dự án trong `viddar.css`.
+
+
+## H2DEV-UI-031: "đổi nghĩa dữ liệu" phải rà mọi nơi đọc trường đó (tiếp H2DEV-UI-029)
+
+- **Triệu chứng:** sau khi sửa hai chỗ đếm "file local", bên đọc độc lập chỉ ra thẻ của 6 mục địa chỉ web vẫn hiện nút "File local" trỏ ra trang web ngoài (trùng với nút "↗ host") và nhãn đuôi "FILE".
+- **Nguyên nhân:** `content.js` còn hai nơi coi `item.file` là file local: nhãn đuôi `fileLabel(item.file)` và điều kiện nút `k.file ? <a>File local</a>`.
+- **Cách sửa:** dùng `isLocalDocFile` ở cả hai nơi. Kiểm DOM: 6 thẻ chỉ còn một nút liên kết ngoài và "Video gốc"; thẻ local vẫn có "File local" và nhãn "MD". Dòng phân loại (`item.kind`, `item.contentNiche` đã có trong dữ liệu) và nguồn reup không bị ảnh hưởng.
+- **Guardrail:** cùng mẫu SCAR-006. Khi định nghĩa lại ý nghĩa của một trường, `grep` mọi nơi đọc trường đó và kiểm thẻ thật, không chỉ chỗ đã đếm.
+
+## H2DEV-UI-032: khóa cuộn bằng `body.style.overflow = 'hidden'` không có tác dụng khi `html` có `overflow-x: hidden`
+
+- **Triệu chứng:** trên điện thoại, mở modal "Nhạc nền" hoặc bảng "Khác" mà cuộn chuột vẫn làm trang phía sau trôi (0 → 700 px); vuốt chạm thật làm trang trôi 185 px khi bảng "Khác" mở.
+- **Nguyên nhân (đã xác minh):** `html { overflow-x: hidden }` nên `overflow` của `body` không được truyền lên khung nhìn (quy tắc truyền chỉ áp dụng khi `html` có `overflow: visible`). Modal chỉ khóa `body`. Bảng "Khác" không khóa gì.
+- **Cách sửa:** `viddar.css`: `html:has(> body[style*="overflow: hidden"]) { overflow: hidden; }` (một quy tắc phủ mọi chỗ đang khóa kiểu cũ, kể cả trang bài học); `nav.js`: bảng "Khác" khóa khi mở và mở khóa ở mọi đường đóng. `scrollbar-gutter: stable` giữ bố cục không nhảy.
+- **Kiểm:** cuộn chuột và vuốt chạm thật (CDP) với phép đối chứng không lớp phủ (vuốt vẫn cuộn 345 px): 0 px với cả hai lớp phủ.
+- **Bẫy khi đo:** `window.scrollBy()` vẫn cuộn được khi `overflow: hidden` (cuộn bằng lệnh, không phải người dùng). Phép đo vuốt tổng hợp phải có đối chứng; `Input.synthesizeScrollGesture` không cuộn được trong môi trường này nên dùng `Input.dispatchTouchEvent`.

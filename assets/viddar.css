@@ -136,6 +136,9 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
+/* UI-fix 2026-10-09 (khoa cuon): html co overflow-x hidden nen overflow cua body KHONG lan len viewport; modal chi dat `body.style.overflow = hidden`
+   nen tren dien thoai trang phia sau van cuon (do: 0 -> 400px khi modal Nhac nen mo). Khoa ca html khi body bi khoa. scrollbar-gutter: stable giu bo cuc khong nhay. */
+html:has(> body[style*="overflow: hidden"]) { overflow: hidden; }
 body {
   margin: 0;
   max-width: 100%;

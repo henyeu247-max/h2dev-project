@@ -111,6 +111,7 @@ function toggleMoreMenu(overflowTabs) {
   if (sheet) {
     sheet.remove();
     if (backdrop) backdrop.remove();
+    document.body.style.overflow = '';
     const mbClose = document.getElementById('m-tab-more');
     if (mbClose) mbClose.setAttribute('aria-expanded', 'false');
     return;
@@ -118,9 +119,12 @@ function toggleMoreMenu(overflowTabs) {
   const triggerBtn = document.activeElement;
   const moreBtnNow = document.getElementById('m-tab-more');
   if (moreBtnNow) moreBtnNow.setAttribute('aria-expanded', 'true');
+  /* UI-fix 2026-10-09: khoa cuon trang phia sau khi bang mo (CSS viddar.css khoa ca html khi body co overflow hidden). */
+  document.body.style.overflow = 'hidden';
   function closeMoreMenu() {
     sheet?.remove();
     backdrop?.remove();
+    document.body.style.overflow = '';
     const mb = document.getElementById('m-tab-more');
     if (mb) mb.setAttribute('aria-expanded', 'false');
     /* FIX 2026-09-30: trigger co the da bi renderTabs() thay the -> lay lai theo id. */

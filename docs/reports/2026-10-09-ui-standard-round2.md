@@ -1,12 +1,12 @@
 # Báo cáo UI-standard đợt 2 (2026-10-09), cập nhật vòng 3
 
 > **Trạng thái:** PARTIAL. Đợt 2 đã nằm trong commit `800caa4` (commit của việc khác, message không nhắc UI). Vòng 3 (sửa theo quyết định của chủ dự án) nằm trong commit `13c40f5`.
-> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix71`.
+> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix72`.
 > **Kế hoạch:** `docs/plans/ui-standard-round2.md`. **Bài học:** `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-013 đến 024).
 
 ## 1. Số liệu (12 route × 5 cỡ = 60 tổ hợp)
 
-| Chỉ số | Trước đợt 2 (`a97383a`) | Đầu vòng 3 (`uifix68`) | Cuối vòng 3 (`uifix71`) |
+| Chỉ số | Trước đợt 2 (`a97383a`) | Đầu vòng 3 (`uifix68`) | Cuối vòng 3 (`uifix72`) |
 |---|---|---|---|
 | Mồ côi (`orphanRows`) | 36 | 2 | **0** |
 | Vùng chạm dưới 24 px (`smallTargets`) | — | 0 | 0 |
@@ -32,6 +32,7 @@
 - **D-07 nhãn "Ngách có data":** `text-wrap: balance` cho nhãn trong khối điện thoại (D1). Kết quả "Ngách / có data", không còn chữ lẻ. Nhãn vẫn 2 dòng (cao 32 px), các giá trị số vẫn thẳng hàng. Rút ngắn chữ cần chủ dự án đưa chữ.
 - **D-09 "Đi nhanh" điện thoại:** 2 cột; nút lẻ cuối chiếm cả hàng (cùng mẫu tab học). Mồ côi 2 → 0 ở 360 và 390 px.
 - **Thanh nút `/chienluoc` trên điện thoại (phát hiện thêm, đã sửa):** nút thứ 6 "Tất cả nội dung" (thêm bởi công việc chiến lược, `main.js:756`, commit `800caa4`) làm thanh 5 cột thành hai hàng cao 92 px, trong khi khung phụ của tiêu đề cố định cao 48 px: hàng đầu bị dòng tiêu đề che, nút thứ 6 nằm ngoài tiêu đề (đo hit-test: bản HEAD che 1 nút). Đã thử 3 cột × 2 hàng: làm xấu hơn (che 3 nút), nên gỡ. Cách sửa cuối: đúng 6 nút thì giữ một hàng, mỗi nút tối thiểu 76 px, dải tự cuộn ngang (360 và 390 px: 6/6 nút trong tiêu đề, cao 44 px, không cắt chữ, cuộn tới được). Mồ côi `/chienluoc` 360 và 390 px: 1 → 0. Ảnh: `ui\check\chienluoc-truoc-390.png`, `chienluoc-sau-390.png`, `chienluoc-sau-390-cuon.png`.
+- **Nút "Cuộn lên đầu trang" ở 820 và 1024 px (phát hiện khi kiểm lại `/tatca`, đã sửa):** thanh điều hướng dưới (cao 56 px, z-index 100) hiện từ 1024 px trở xuống, nhưng nút chỉ được nâng lên 76 px ở dưới 640 px; ở 820 và 1024 px nút cách đáy 16 px nên bị thanh đè (đáy nút 828 px so với đỉnh thanh 788 px, hit-test: bị che, chỉ lộ một vệt nhỏ). Sửa trong `assets/h2dev-shell.css`: trang có `.vd-bottom-nav` thì từ 1024 px trở xuống nút cách đáy 76 px. Sau sửa: đáy nút 768 px, cách thanh 20 px, không bị che; 60 tổ hợp route × cỡ: 0 nút bị che. Ảnh trước/sau: `ui\check\tatca-nutlendau-truoc-820.png` và `-sau-820.png`.
 - **M7 ba script chưa theo dõi:** `analyze_h2dev_intelligence.js`, `audit_chienluoc_web.js`, `check_chienluoc_links.js` đã được chuyển vào `_archive/2026-10-09-audit-scripts/` lúc 08:44. Thư mục `_archive/` bị `.gitignore:10` bỏ qua, nên `git status` không thấy. Phiên này không có lệnh chuyển file. Các transcript đã lưu của dự án này không nhắc tới ba file. **Chủ sở hữu chưa xác định được.**
 
 ## 3. Tường lửa (đã chạy 2026-10-09)
@@ -65,7 +66,7 @@
 ## 7. Thay đổi trong vòng 3 (đã commit trên nhánh)
 
 - `assets/viddar.css`: hàng có nhãn đến 4 chip chia đều từ 641 px (D-06); nút "Đi nhanh" điện thoại 2 cột (D-09); nhãn KPI `text-wrap: balance` (D-07). Các chip khác giữ hành vi của đợt 2. Chip chia đều thêm `min-width: max-content` (bên đọc độc lập đo lỗi xuống dòng ở 641–659 px). Thanh topbar đúng 6 nút trên điện thoại giữ một hàng, dải cuộn ngang.
-- `index.html`, `learn.html`, `player.html`, `assets/app/sw.js`: `uifix68` → `uifix71`.
+- `index.html`, `learn.html`, `player.html`, `assets/app/sw.js`: `uifix68` → `uifix72`.
 - `server.js`: route spider chỉ POST kèm header (D-05); đã nằm trong commit `551be56`.
 - Tài liệu: `docs/PROGRESS.md`, `docs/reports/2026-10-09-ui-standard-round2.md`, `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-021 đến 024), `docs/plans/ui-standard-round2.md`, `CHANGELOG.md`, `AGENTS.md` (con trỏ 013 đến 024).
 

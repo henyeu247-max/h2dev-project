@@ -79,7 +79,7 @@ async function renderTongQuan() {
   });
   const marketRows = Object.entries(market).sort((a, b) => b[1] - a[1]);
   if (emptyMarket) marketRows.push(['Chưa gắn', emptyMarket]);
-  const liveFile = kich.filter(x => x.file).length;
+  const liveFile = kich.filter(x => isLocalDocFile(x.file)).length;
   const overviewNiches = nx.ngachXanh.slice(0, 6); // UI-balance: canh 6 row nhu market
   const modulesData = await loadJSON('data/modules.json').catch(() => ({ modules: [] }));
   const moduleCount = safeArray(modulesData.modules).length || safeArray(modulesData).length;
@@ -194,6 +194,11 @@ async function renderTongQuan() {
   ${(nx.thongTinChinhSach2026 || []).map((s, i) => `<li class="policy-item"><span class="policy-i">${String(i + 1).padStart(2, '0')}</span><button type="button" class="policy-toggle" aria-expanded="false"><span class="policy-text">${esc(s)}</span><span class="policy-more" hidden>Xem đầy đủ ▾</span></button></li>`).join('')}
 </ol>
   </div>`;
+}
+
+/* UI-fix 2026-10-09 (data): `file` cua tai lieu co the la dia chi web (6 muc cong cu, vd https://coverr.co/). Chi tinh la "file local" khi la duong dan tren dia. */
+function isLocalDocFile(f) {
+  return typeof f === 'string' && f.length > 0 && !/^https?:\/\//i.test(f);
 }
 
 function videoCard(v) {
@@ -1068,8 +1073,8 @@ async function renderKichBan() {
   return `
   ${pageBanner('Kịch bản & Tài liệu', list.length + '/' + enriched.length + ' mục · gắn theo ngách nội dung, không trùng Nguồn reup', [
     { icon: ICONS.doc, label: 'Tổng mục', value: enriched.length, sub: list.length === enriched.length ? 'Hiện tất cả' : 'Đang lọc ' + list.length },
-    { icon: ICONS.disk, label: 'File local', value: enriched.filter(x => x.file).length, sub: 'trong assets/docs' },
-    { icon: ICONS.link, label: 'Link catalog', value: enriched.filter(x => !x.file).length, sub: 'Drive / web' },
+    { icon: ICONS.disk, label: 'File local', value: enriched.filter(x => isLocalDocFile(x.file)).length, sub: 'trong assets/docs' },
+    { icon: ICONS.link, label: 'Link catalog', value: enriched.filter(x => !isLocalDocFile(x.file)).length, sub: 'Drive / web' },
     { icon: ICONS.niche, label: 'Ngách có data', value: Object.keys(nicheCounts).length, sub: 'chip bên dưới' }
   ])}
   <div class="card p-4 sm:p-5 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">

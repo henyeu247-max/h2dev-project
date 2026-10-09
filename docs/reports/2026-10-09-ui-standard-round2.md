@@ -1,12 +1,12 @@
 # Báo cáo UI-standard đợt 2 (2026-10-09), cập nhật vòng 3
 
 > **Trạng thái:** PARTIAL. Đợt 2 đã nằm trong commit `800caa4` (commit của việc khác, message không nhắc UI). Vòng 3 (sửa theo quyết định của chủ dự án) nằm trong commit `13c40f5`.
-> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix72`.
+> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix75`.
 > **Kế hoạch:** `docs/plans/ui-standard-round2.md`. **Bài học:** `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-013 đến 024).
 
 ## 1. Số liệu (12 route × 5 cỡ = 60 tổ hợp)
 
-| Chỉ số | Trước đợt 2 (`a97383a`) | Đầu vòng 3 (`uifix68`) | Cuối vòng 3 (`uifix72`) |
+| Chỉ số | Trước đợt 2 (`a97383a`) | Đầu vòng 3 (`uifix68`) | Cuối vòng 3 (`uifix75`) |
 |---|---|---|---|
 | Mồ côi (`orphanRows`) | 36 | 2 | **0** |
 | Vùng chạm dưới 24 px (`smallTargets`) | — | 0 | 0 |
@@ -66,7 +66,7 @@
 ## 7. Thay đổi trong vòng 3 (đã commit trên nhánh)
 
 - `assets/viddar.css`: hàng có nhãn đến 4 chip chia đều từ 641 px (D-06); nút "Đi nhanh" điện thoại 2 cột (D-09); nhãn KPI `text-wrap: balance` (D-07). Các chip khác giữ hành vi của đợt 2. Chip chia đều thêm `min-width: max-content` (bên đọc độc lập đo lỗi xuống dòng ở 641–659 px). Thanh topbar đúng 6 nút trên điện thoại giữ một hàng, dải cuộn ngang.
-- `index.html`, `learn.html`, `player.html`, `assets/app/sw.js`: `uifix68` → `uifix72`.
+- `index.html`, `learn.html`, `player.html`, `assets/app/sw.js`: `uifix68` → `uifix75`.
 - `server.js`: route spider chỉ POST kèm header (D-05); đã nằm trong commit `551be56`.
 - Tài liệu: `docs/PROGRESS.md`, `docs/reports/2026-10-09-ui-standard-round2.md`, `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-021 đến 024), `docs/plans/ui-standard-round2.md`, `CHANGELOG.md`, `AGENTS.md` (con trỏ 013 đến 024).
 
@@ -88,3 +88,41 @@
 - Đích Pi của đồng bộ skill: README v6.3 ghi đã gỡ, manifest ghi cài lại 2026-10-06. Cần xác nhận.
 - Nút "Đọc trực tiếp" ngắt chữ ở 1440 px (`VIDEO-2aa1f7`): chưa sửa.
 - M5 (thiết bị thật): BLOCKED, không có thiết bị.
+
+## 10. Kiểm lại UX, animation, logic và dữ liệu của `/tatca` (2026-10-09, `uifix75`)
+
+**Kết quả: PASS cho `/tatca`, kèm 4 lỗi tìm thấy ở nơi khác đã sửa.** Mọi con số lấy từ lệnh đo, không ước lượng.
+
+| Nhóm | Đã kiểm | Kết quả |
+|---|---|---|
+| Dữ liệu | 31 phép đối chiếu: SKU, Free/Pro, tài liệu, kênh, dung lượng, thị trường, ngách, chính sách, module, cộng 7 số trên màn hình so với nguồn | 31/31 PASS (sau khi sửa 1 lỗi, mục dưới) |
+| Logic điều hướng | 4 thẻ KPI, nút lộ trình, hàng thị trường, hàng ngách, hai nút "Xem thêm", bộ lọc giữ nguyên sau khi tải lại, nút Quay lại | PASS (lọc Việt 45/144, Hàn 39/144, không lọc 144/144; 2, 2 và 6 trang) |
+| Tiến độ học | 1 bài đã xem + 1 đang dở, chưa xem bài nào, xem hết 144 bài, dữ liệu lưu hỏng, SKU đã xóa | 6/6 PASS |
+| Bàn phím | Tab 14 bước, Enter trên hàng lọc, Space mở chính sách, "Bỏ qua điều hướng", quét 670 phần tử focus trên 12 route | PASS sau khi sửa 1 lỗi (mục dưới) |
+| Animation | Không chuyển động vô hạn khi giảm chuyển động; CLS 0,00; LCP 369 ms (trace Chrome, máy cục bộ) | PASS, 1 ngoại lệ có lý do |
+| Trạng thái lỗi | Mất `videos.json`, `ngach-xanh.json` trả 500, kho rỗng, tải chậm 3,5 s | 6/6 PASS: không lộ `undefined/NaN`, có thông báo lỗi, có nút thử lại, có khung chờ |
+| Trình duyệt | Lighthouse điện thoại 100/100/100/100 (51 mục đạt); máy tính 100/100/100/100 (55 mục đạt, trước đó 54 và 1 lỗi) | PASS |
+| SPA | Tiêu đề tab riêng cho 10 route; thông báo "Đã mở tab Video" cho trình đọc màn hình; mất mạng vẫn mở được khung ứng dụng | 6/6 PASS |
+
+**Lỗi tìm thấy và đã sửa:**
+1. **Dữ liệu:** thẻ KPI "Kịch bản & Tài liệu" ghi 275 file local, thực tế 269. Sáu mục công cụ (Pexels, Vecteezy, Coverr, Freepik, Pixabay, TikVideo) có trường `file` là địa chỉ web. Cùng cách đếm sai ở tab Tài liệu (File local 275 / Link catalog 25, nay 269 / 31). Sửa trong `assets/app/tabs/content.js` (hàm `isLocalDocFile`).
+2. **Truy cập (WCAG 2.5.3):** logo ở thanh bên có chữ hiển thị "h2dev Radar kho YouTube" nhưng tên truy cập chỉ là "Về trang chủ Tổng quan", nên người dùng giọng nói nói "bấm h2dev" không gọi được. Sửa trong `assets/app/main.js`: tên truy cập bắt đầu bằng chữ hiển thị.
+3. **Truy cập (WCAG 2.4.7), trang bài học `/lotrinh/<SKU>`:** bảy loại điều khiển không có chỉ báo focus nào (Bài trước, Bài tiếp theo, Bài học gốc, Tải MP4, Chưa xem, Bỏ tiến độ, các mốc thời gian). Nguyên nhân: `assets/player.css` đặt `box-shadow: none !important` cho các khối đó. Đã khôi phục vòng focus. Quét lại 5 loại trang bài học: 243 phần tử, 0 thiếu vòng.
+4. **Nút "Cuộn lên đầu trang"** bị thanh dưới đè ở 820 và 1024 px (mục 2, đã nằm trong `4a6b342`).
+
+**Đồng bộ kiểu (không phải lỗi):** thẻ KPI và logo dùng vòng focus trắng mặc định của Chrome (nhìn thấy được). Đã chuyển sang vòng đỏ của dự án để giống các nút khác.
+
+**Ngoại lệ có lý do (không sửa):**
+- Hai chuyển động vô hạn (`radar-ping`, `radar-sweep`) ở biểu tượng radar của logo (28 px, `role="img"` có tên "H2DEV"). Là họa tiết thương hiệu và tắt hoàn toàn khi hệ điều hành bật giảm chuyển động.
+- Không có thẻ `canonical`. Đây là ứng dụng nội bộ không cần đăng nhập, không phục vụ tìm kiếm công khai; Lighthouse SEO vẫn 100.
+
+**Báo động giả của máy đo (ghi để khỏi lặp lại):**
+- Đếm thẻ video bằng liên kết `/lotrinh/VIDEO-…` thiếu 4 buổi Zoom (`/lotrinh/ZOOM-…`). Đếm đúng bằng dòng tổng kết "45/144".
+- Đo vòng focus ngay sau khi nhấn Tab, trong lúc còn chuyển tiếp 0,2 s, thấy `box-shadow` trong suốt. Phải đợi tối thiểu 400 ms.
+- Viền mặc định của Chrome (`outline: auto`) là vòng hai lớp tối và trắng, nhìn thấy trên nền tối dù màu tính ra là `rgb(16,16,16)`.
+
+**Đề xuất, chưa làm (chờ chủ dự án):**
+- Nút Quay lại về đầu trang, không khôi phục vị trí cuộn cũ của `/tatca`. Chấp nhận được; khôi phục vị trí cần can thiệp bộ định tuyến tự viết.
+- Nội dung "Chính sách YouTube phải nhớ" cập nhật lần cuối 2026-09-16 (đo ngày 2026-08-21). Đây là việc của người sở hữu dữ liệu, không phải lỗi giao diện.
+
+**Ảnh bằng chứng** (thư mục `scratchpad\ui\check\`): `focus-baitruoc-truoc.png` và `-sau.png`, `focus-taimp4-*.png`, `focus-moc-thoigian-*.png`, `focus-kpi-*.png`, `focus-logo-*.png`, `focus-sau-tabsidebar.png`. Báo cáo Lighthouse: `scratchpad\ui\lighthouse-desktop2\report.html`, `scratchpad\ui\lighthouse-mobile\report.html`.

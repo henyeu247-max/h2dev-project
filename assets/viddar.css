@@ -1411,6 +1411,12 @@ button.niche-row:focus-visible,
   box-shadow: var(--focus-ring);
   border-radius: 8px;
 }
+/* UI-fix 2026-10-09 (A-3): the KPI .bento-card[data-kpi-card] va logo .vd-brand (div role=link/button) truoc day dung vien mac dinh 1px gan den tren nen gan den -> nguoi dung ban phim khong thay dang o dau. Dung chung token vong focus. */
+.bento-card[data-kpi-card]:focus-visible,
+.vd-brand:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
 .overview-grid > .card {
   display: flex;
   flex-direction: column;

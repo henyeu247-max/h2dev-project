@@ -941,7 +941,8 @@
       document.querySelectorAll('.vd-brand').forEach(brandEl => {
       brandEl.setAttribute('role', 'link');
       brandEl.setAttribute('tabindex', '0');
-      brandEl.setAttribute('aria-label', 'Về trang chủ Tổng quan');
+      /* WCAG 2.5.3 (Label in Name): ten truy cap phai bat dau bang chu dang hien thi tren logo, neu khong dieu khien bang giong noi ("bam h2dev") khong goi duoc. */
+      brandEl.setAttribute('aria-label', (brandEl.textContent || '').replace(/\s+/g, ' ').trim() + ' — Về trang chủ Tổng quan');
       brandEl.style.cursor = 'pointer';
       brandEl.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); brandEl.click(); } };
         brandEl.style.cursor = 'pointer';

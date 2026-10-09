@@ -1,12 +1,12 @@
 # Báo cáo UI-standard đợt 2 (2026-10-09), cập nhật vòng 3
 
 > **Trạng thái:** PARTIAL. Đợt 2 đã nằm trong commit `800caa4` (commit của việc khác, message không nhắc UI). Vòng 3 (sửa theo quyết định của chủ dự án) nằm trong commit `13c40f5`.
-> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix80`.
+> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix81`.
 > **Kế hoạch:** `docs/plans/ui-standard-round2.md`. **Bài học:** `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-013 đến 024).
 
 ## 1. Số liệu (12 route × 5 cỡ = 60 tổ hợp)
 
-| Chỉ số | Trước đợt 2 (`a97383a`) | Đầu vòng 3 (`uifix68`) | Cuối vòng 3 (`uifix80`) |
+| Chỉ số | Trước đợt 2 (`a97383a`) | Đầu vòng 3 (`uifix68`) | Cuối vòng 3 (`uifix81`) |
 |---|---|---|---|
 | Mồ côi (`orphanRows`) | 36 | 2 | **0** |
 | Vùng chạm dưới 24 px (`smallTargets`) | — | 0 | 0 |
@@ -66,7 +66,7 @@
 ## 7. Thay đổi trong vòng 3 (đã commit trên nhánh)
 
 - `assets/viddar.css`: hàng có nhãn đến 4 chip chia đều từ 641 px (D-06); nút "Đi nhanh" điện thoại 2 cột (D-09); nhãn KPI `text-wrap: balance` (D-07). Các chip khác giữ hành vi của đợt 2. Chip chia đều thêm `min-width: max-content` (bên đọc độc lập đo lỗi xuống dòng ở 641–659 px). Thanh topbar đúng 6 nút trên điện thoại giữ một hàng, dải cuộn ngang.
-- `index.html`, `learn.html`, `player.html`, `assets/app/sw.js`: `uifix68` → `uifix80`.
+- `index.html`, `learn.html`, `player.html`, `assets/app/sw.js`: `uifix68` → `uifix81`.
 - `server.js`: route spider chỉ POST kèm header (D-05); đã nằm trong commit `551be56`.
 - Tài liệu: `docs/PROGRESS.md`, `docs/reports/2026-10-09-ui-standard-round2.md`, `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-021 đến 024), `docs/plans/ui-standard-round2.md`, `CHANGELOG.md`, `AGENTS.md` (con trỏ 013 đến 024).
 
@@ -89,7 +89,7 @@
 - Nút "Đọc trực tiếp" ngắt chữ ở 1440 px (`VIDEO-2aa1f7`): chưa sửa.
 - M5 (thiết bị thật): BLOCKED, không có thiết bị.
 
-## 10. Kiểm lại UX, animation, logic và dữ liệu của `/tatca` (2026-10-09, `uifix80`)
+## 10. Kiểm lại UX, animation, logic và dữ liệu của `/tatca` (2026-10-09, `uifix81`)
 
 **Kết quả: PASS cho `/tatca` (toàn dự án vẫn PARTIAL, mục 9), kèm 6 lỗi tìm thấy khi kiểm lại đã sửa.** Mọi con số lấy từ lệnh đo, không ước lượng.
 
@@ -136,7 +136,7 @@
 
 **Chưa kiểm:** Firefox và Safari (`:has()`), thiết bị thật, vuốt chạm trên iOS thật (khóa cuộn trên Safari iOS còn có thể khác Chromium).
 
-## 11. Kiểm chứng dữ liệu với nguồn ngoài (2026-10-09, `uifix80`)
+## 11. Kiểm chứng dữ liệu với nguồn ngoài (2026-10-09, `uifix81`)
 
 Mục 10 chỉ chứng minh dữ liệu **nhất quán nội bộ**. Mục này đối chiếu với thực tế bên ngoài và quét toàn bộ file dữ liệu hiển thị (9 file trong `data-tabs/`, `data/catalog.json`, `data/modules.json`).
 
@@ -157,3 +157,18 @@ Mục 10 chỉ chứng minh dữ liệu **nhất quán nội bộ**. Mục này 
 **Giới hạn của phép dò kênh:** HTTP 200 chỉ chứng minh kênh còn tồn tại, không chứng minh "đăng trong 30 ngày" hay "còn tăng"; RSS chập chờn (kênh sống vẫn trả 404/500); `channelId` và số sub lấy từ HTML trang bị lẫn phần tử khác nên không được ghi vào dữ liệu. Cờ `dead` trong dữ liệu mang hai nghĩa (404 và "kênh rỗng 0 video"); chưa tách thành hai trạng thái.
 
 **Ảnh và dữ liệu thô** (thư mục `scratchpad\ui\check\`): `du-lieu-kiem-chung.html`, `dulieu-kenh-song-sau.png`, `dulieu-tatca-sau.png`, `dulieu-ngach-haicap-sau.png`; thô: `scratchpad\ui\channel-resolve-live.json`, `channel-resolve-diff.json`, `channel-rss12.json`.
+
+### 11.1 Rà soát độc lập và xung đột giữa hai phép đo kênh
+
+**Xung đột đo lường (hai phương pháp, kết quả trái nhau, không phải sửa âm thầm).** Commit `a97383a` (luồng việc khác, 08:05 sáng nay) thêm 4 kênh Hàn (`시어머니와며느리`, `마음을안아주는이야`, `부를부르는말씀`, `노을빛사연-l2m`) với `dead:true`, ghi chú "404 … đã bị quét/đổi handle" và dấu "đối soát đa nguồn 2026-10-09"; khảo sát đi kèm báo 188 sống / 68 chết bằng mã HTTP. Đợt này đo lại bằng ba cách: (1) trang kênh theo `@handle`, (2) `channel_dossier` (InnerTube), (3) RSS khi có: kênh trả 200, có tên, 66 / 166 / 116 / 38 video.
+- **Nguyên nhân khả dĩ, đã chứng minh một nửa:** `url` lưu trong chính 4 bản ghi đó thiếu `@` (`youtube.com/시어머니와며느리`); URL thiếu `@` trả 404 cả với kênh đang sống (đo trực tiếp trên 구름야담: 200 theo handle, 404 theo URL lưu). Nhưng 7 kênh sống khác cũng có URL hỏng như vậy mà không bị gắn cờ chết, nên đây chưa phải giải thích đủ. Phương pháp chính xác của luồng kia không tìm thấy trong repo (không có script chứa dấu "đối soát đa nguồn").
+- **Tác động:** 16/256 bản ghi có `url` hỏng (15 thiếu `@`, 1 sai chữ), và giao diện dùng `ch.url` làm liên kết ("Mở link YouTube kiểm tra"), nên 11 thẻ kênh đang sống dẫn vào trang 404. Đã chuẩn hóa 16 `url`; 16/16 URL mới trả đúng kết quả theo handle.
+- **Khả năng bị ghi đè:** 4 trong 8 kênh đã lật cờ sống (`purebusinesshorts`, `toastertalesusa`, `HDVietsub-h7u`, `redvoices90`) nằm trong `data/voice-dna-probe-final.json` với `CHANNEL_DELETED_404` (yt-dlp, 29/09). `scripts/mark_dead_channels.js` là script một lần nhưng chạy lại sẽ gắn cờ chết lại cho 4 kênh đó. Không sửa script (ngoài phạm vi); cần chủ dữ liệu quyết định giữ hay loại khỏi probe.
+- **`@美輪明宏`:** URL lưu ở dạng cũ không có `@`. Đã thử 4 dạng (`/<tên>`, `/c/`, `/user/`, `/@`): cả 4 trả 404; giữ cờ chết.
+- **Chưa xác minh:** vì sao yt-dlp ngày 29/09 báo "không tìm thấy" cho 4 kênh nay đang sống (kênh tạm ẩn rồi mở lại, hoặc probe sai).
+
+**Kiểm lại sau chỉnh sửa:** quét 60 tổ hợp, bốn ảnh trước/sau (thẻ KPI tab Ngách xanh, thẻ ngách, thẻ kênh, danh sách chính sách ở 390 px). Danh sách chính sách mở mục 1, 5, 6 ở 390 px: 731 / 554 / 597 ký tự, không tràn ngang, không phần tử bị cắt thiếu `title`. Thẻ ngách "phúc lộc Hàn" vẫn ở nhóm WATCHLIST (hạng #17), nên phân hạng nhất quán với việc hạ xuống "CÓ MẪU TĂNG". Trường `xanh` của ngách không được vẽ thành huy hiệu ở bất kỳ trang nào; thay đổi thể hiện ở đoạn luận điểm đã đối soát và ở các số đếm.
+
+**Sửa thêm do rà soát:** `auditTong2026.xepHang[16].lyDo` ("4 mẫu KR còn đăng/tăng") thêm đoạn đối soát có ngày; `chien-luoc.json` "11 ngách Xanh chuẩn" → 10 (file của luồng kia, đang sạch trong git, không script nào đòi "11"). 49 kênh thiếu `niche` đúng là 49 kênh thiếu `markets` (giao nhau 49/49).
+
+**Ảnh trước/sau:** `ngach-kpi-truoc.png` / `ngach-kpi-sau.png`, `ngach-phucloc-truoc.png` / `ngach-phucloc-sau.png`, `kenh-the-truoc.png` / `kenh-the-sau.png`, `chinhsach-390-truoc.png` / `chinhsach-390-sau.png` (thư mục `scratchpad\ui\check\`); thô: `scratchpad\ui\channel-url-check.json`.

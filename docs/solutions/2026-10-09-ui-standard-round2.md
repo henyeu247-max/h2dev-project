@@ -174,3 +174,10 @@
 
 - **Triệu chứng:** chính sách mục 6 ghi claim mốc 2027 "chưa có nguồn official", nhưng YouTube Help nay nêu mốc 01/02/2027 cho chia sẻ doanh thu Shorts (≥10 triệu lượt xem Shorts hợp lệ trong 90 ngày). Ngưỡng vào YPP trên trang chính thức không đổi; tuyên bố "gấp đôi" của hexcoded.ai vẫn chưa có nguồn chính thức.
 - **Guardrail:** câu phủ định về nguồn ("chưa có") phải kèm ngày kiểm và được đọc lại theo chu kỳ; tách rõ phạm vi (chia sẻ doanh thu Shorts khác điều kiện vào YPP). Nguồn trích từ video gốc (Creator Insider) mà chưa đọc được chép lời thì ghi đúng giới hạn đó.
+
+
+## H2DEV-UI-037: `url` lưu trong dữ liệu kênh phải khớp `handle`, và phép đo HTTP dựa vào `url` có thể tạo cờ chết giả
+
+- **Triệu chứng:** 16/256 bản ghi `kenh-mau.json` có `url` khác `youtube.com/<handle>` (15 thiếu `@`, 1 sai chữ). URL thiếu `@` trả 404 dù kênh sống, nên 11 thẻ kênh sống dẫn vào trang 404; 4 kênh Hàn mới thêm sáng 09/10 bị gắn "404" có thể vì đúng lý do này.
+- **Guardrail:** khi thêm bản ghi kênh, `url` phải sinh từ `handle` (`'https://www.youtube.com/' + handle`), không dán tay. Mọi phép đo sống/chết phải đo theo `handle`, kiểm lần hai bằng đường khác trước khi ghi `dead`. Một cờ ghi trước đó (yt-dlp 29/09, đối soát 09/10) không phải bằng chứng hơn phép đo mới; hai phép đo trái nhau thì ghi cả hai phương pháp trong báo cáo, không sửa âm thầm.
+- **Còn mở:** `scripts/mark_dead_channels.js` (một lần) sẽ gắn cờ chết lại cho 4 kênh nằm trong `data/voice-dna-probe-final.json`. Thử mọi dạng URL cũ (`/c/`, `/user/`) trước khi kết luận kênh có handle cũ đã chết.

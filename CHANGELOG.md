@@ -1,4 +1,16 @@
-﻿## 2026-10-09 (đợt 3) — ĐỒNG BỘ SỐ LIỆU `intelligence.db` SAU LẦN CRAWL 01:57:28
+﻿## 2026-10-09 (đợt 4) — UI-STANDARD ĐỢT 1: CÂN ĐỐI BỐ CỤC VÀ KIỂU CHỮ (commit `c22844d`, nhánh `ui/ui-standard-2026-10-09`)
+
+- **Kiểu chữ:** chữ 11 px đổi thành 12 px (`text-2xs` → `text-xs`, bỏ token `--h2-font-2xs`). Đo lại trên các route đã kiểm: 0% chữ 11 px.
+- **Thứ bậc tiêu đề:** nhóm và thẻ h2 cỡ 13–14 px đổi sang h3; hai mục của trang bài học dùng h2. Không còn nhảy cấp trên các route đã kiểm.
+- **Vùng chạm:** nút chính sách, nút tài liệu và tiêu đề bài học tối thiểu 24 px. Khối điều khiển bài học 44 px trên màn hình rộng, cùng cỡ với nút điều hướng và với bản tablet.
+- **Tab Video trên điện thoại:** ô Ngách cả hàng, Thị trường và Sắp xếp chia đôi, ba nút trạng thái cùng cỡ, lưới chip đều.
+- **Bộ lọc ngách:** tham số `skus` giữ bộ lọc trên URL để tải lại và Back vẫn đúng kết quả.
+- **Chữ bị cắt:** lớp dùng chung trong `h2dev-core.js` gắn title cho chữ bị cắt; chip mốc thời gian của bài học có title trong template.
+- **Tràn ngang trên điện thoại:** khối music studio, bảng tăng trưởng raw kênh, dải chip lọc, dải tab trang Lộ trình.
+- **Phiên bản tài nguyên:** `uifix67` (index, learn, player, service worker).
+- Chi tiết và số đo: `docs/reports/2026-10-09-ui-standard-round1.md`. Bài học: `docs/solutions/2026-10-09-ui-standard-round1.md`. Kế hoạch vòng 2: `docs/plans/ui-standard-round2.md`.
+
+## 2026-10-09 (đợt 3) — ĐỒNG BỘ SỐ LIỆU `intelligence.db` SAU LẦN CRAWL 01:57:28
 
 - **`data/intelligence.db` nhận 1 lần crawl lúc 01:57:28 (UTC+7), user chọn giữ dữ liệu:** do một lệnh GET `/api/intelligence/spider` trong lúc audit UI (route này chạy `scripts/spider_graph_engine.js` và GHI DB). Dấu thời gian 01:57:28: 15 channels + 216 videos được ghi/cập nhật (upsert), 51 cowatch edges thêm mới. Tổng sau crawl: channels 196 → **202** (+6), videos 2.436 → **2.557** (+121), cowatch_edges 1.334 → **1.385** (+51), `is_breakout = 1` 171 → **178**; `integrity_check` ok, `foreign_key_check` 0 dòng. Docs đã đồng bộ: `knowledge-hub/docs/H2DEV-MASTER-OPERATING-PROMPT.md` L38 (52 channels / 410 edges → số đo mới; FTS5 2.003 → 2.014). Chưa có gate tự động cho số đếm `intelligence.db` (`sync-counts.js` chỉ kiểm `h2dev_master.db`).
 

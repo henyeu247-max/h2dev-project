@@ -2,38 +2,47 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-de2564`
-- **Tiêu đề:** NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN
-- **Chủ đề thực tế:** NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 03:42
-- **Dung lượng MP4:** 77.6 MB
-- **File Video:** [`video/VIDEO-de2564/VIDEO-de2564.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-de2564/VIDEO-de2564.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-de2564.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-de2564.png)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-key-22112025-ngach-nho-stories-thi-truong-nhat-ban](https://h2dev.vn/learn/study/update-key-22112025-ngach-nho-stories-thi-truong-nhat-ban)
+- **Bài học:** #96
+- **Tiêu đề bài giảng:** NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN
+- **Thị trường mục tiêu:** 🇯🇵 Nhật
+- **Ngách nội dung:** Drama Gia Đình & Xã Hội
+- **Thumbnail:** `assets/thumbs/VIDEO-de2564.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-key-22112025-ngach-nho-stories-thi-truong-nhat-ban)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì anh em có thể bấm chuột phải dịch rare nữa nha Đó, thì bắt đầu là view nó lên nè Đó, mọi người thấy không
-- Về phần tạo kịch bản hay là lấy kịch bản của đối thủ thì em cũng có hướng dẫn mọi người hết rồi
-- Bây giờ thì em chỉ còn việc share key thôi, anh em có muốn làm tham khảo thêm thì anh em có thể làm nha
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@あの年の空` — [Xem kênh YouTube](https://www.youtube.com/@%E3%81%82%E3%81%AE%E5%B9%B4%E3%81%AE%E7%A9%BA)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **@あの年の空** (`@あの年の空`): [Xem kênh](https://www.youtube.com/@%E3%81%82%E3%81%AE%E5%B9%B4%E3%81%AE%E7%A9%BA) ❌ **[DIE - KÊNH ĐÃ BỊ XÓA 404]** — *404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.*
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Ngách truyện ngắn đời thường và hồi ức thanh xuân thị trường Nhật Bản trên kênh @あの年の空: Đầy ắp cảm xúc hoài niệm của thế hệ Showa.
+2. Thế hệ người cao tuổi Nhật Bản (sinh ra trong thời kỳ Chiêu Hòa - Showa) có tình cảm đặc biệt thiêng liêng với những ký ức thời thơ ấu, trường làng xưa và tình làng nghĩa xóm.
+3. Kịch bản xây dựng theo phong cách tản văn tự sự ngắn 8 - 12 phút, mỗi video là một mảnh ký ức về một kỷ niệm xưa cũ.
+4. Hình ảnh mang màu sắc phim nhựa cũ (Vintage/Retro 70s - 80s) với ánh nắng vàng chiều tà và những con ngõ nhỏ Tokyo.
+5. Khán giả thường để lại những bình luận tâm sự rất dài kể lại cuộc đời mình, giúp tăng tương tác và đẩy mạnh đề xuất thuật toán.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ừ rồi em chào tất cả mọi người nhá hôm nay em sẽ lại tiếp tục xe …
-  - `00:47` — Mọi người xem này lúc những video cũ
-  - `01:21` — Đó, thì anh em có thể dịch ra nè, chụp phải dịch ra nha
-  - `02:07` — Bây giờ thì em chỉ còn việc share key thôi, anh em có muốn làm th…
-  - `02:58` — bị trùng sử dụng lại nội dung
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> link kênh
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước dựng video chuyện kể hoài niệm (Stories) thị trường Nhật Bản**
+  + 1. Sưu tầm các câu chuyện hoài niệm về thời kỳ Showa hoặc những ký ức tuổi thơ tươi đẹp ở Nhật.
+  + 2. Tạo visual mang tông màu ấm áp, phong cách nhiếp ảnh phim nhựa cổ điển của thế kỷ trước.
+  + 3. Sử dụng âm thanh tiếng ve kêu mùa hè, tiếng tàu điện hoặc tiếng mưa rơi trên mái tôn.
+  + 4. Giọng đọc AI tiếng Nhật ngữ điệu truyền cảm, giàu cảm xúc, đưa người nghe trở về quá khứ.
+  + 5. Phụ đề tiếng Nhật thanh thoát, xuất hiện nhẹ nhàng theo nhịp kể chuyện tâm tình.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh để lọt vào video các chi tiết quá hiện đại (smartphone, ô tô đời mới) làm vỡ không gian hoài niệm.**
+2. **Không dùng nhạc nền điện tử phá hỏng sự tĩnh lặng và không khí hoài cổ.**
+3. **Tránh câu từ nông cạn thiếu chiều sâu văn hóa Nhật Bản.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN**: [Tải file / Xem liên kết](docs/VIDEO-de2564/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 96**: [Tải file / Xem liên kết](video/VIDEO-de2564/transcript.txt)

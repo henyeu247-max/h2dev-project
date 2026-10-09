@@ -2,41 +2,49 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-5fd052`
-- **Tiêu đề:** SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)
-- **Chủ đề thực tế:** SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 05:33
-- **Dung lượng MP4:** 79.0 MB
-- **File Video:** [`video/VIDEO-5fd052/VIDEO-5fd052.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-5fd052/VIDEO-5fd052.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-5fd052.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-5fd052.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-key-moi-18-12-2025-share-3-ngach-thi-truong-nhat-ban-truyen-stories-triet-ly](https://h2dev.vn/learn/study/update-key-moi-18-12-2025-share-3-ngach-thi-truong-nhat-ban-truyen-stories-triet-ly)
+- **Bài học:** #85
+- **Tiêu đề bài giảng:** SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)
+- **Thị trường mục tiêu:** 🇯🇵 Nhật
+- **Ngách nội dung:** Drama Gia Đình & Xã Hội
+- **Thumbnail:** `assets/thumbs/VIDEO-5fd052.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-key-moi-18-12-2025-share-3-ngach-thi-truong-nhat-ban-truyen-stories-triet-ly)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì nó cũng kiểu như trước lý về thị trường bên Nhật ấy mọi người
-- Như kiểu là cái ký lại bên xăm á, mọi người có nhớ không
-- Thì cái ký đó là về dạng nói trước lý các kiểu á
-- Nhưng mà cái ngách nhỏ là cái ông bác lại bên xăm đứng ra nói
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@黄金の老年期-x9g` — [Xem kênh YouTube](https://www.youtube.com/@%E9%BB%84%E9%87%91%E3%81%AE%E8%80%81%E5%B9%B4%E6%9C%9F-x9g)
-- `@buddhamind60s` — [Xem kênh YouTube](https://www.youtube.com/@buddhamind60s)
-- `@賢者の灯` — [Xem kênh YouTube](https://www.youtube.com/@%E8%B3%A2%E8%80%85%E3%81%AE%E7%81%AF)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **@buddhamind60s** (`@buddhamind60s`): [Xem kênh](https://www.youtube.com/@buddhamind60s) ✅ **[LIVE 200]**
+- **@賢者の灯** (`@賢者の灯`): [Xem kênh](https://www.youtube.com/@%E8%B3%A2%E8%80%85%E3%81%AE%E7%81%AF) ❌ **[DIE - KÊNH ĐÃ BỊ XÓA 404]** — *404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.*
+- **@黄金の老年期-x9g** (`@黄金の老年期-x9g`): [Xem kênh](https://www.youtube.com/@%E9%BB%84%E9%87%91%E3%81%AE%E8%80%81%E5%B9%B4%E6%9C%9F-x9g) ✅ **[LIVE 200]**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Trọn bộ 3 ngách thị trường Nhật Bản evergreen: Truyện cổ dân gian, Câu chuyện xúc động đời thường (Stories), và Triết lý dưỡng sinh tuổi già.
+2. Kênh @buddhamind60s và @黄金の老年期-x9g là minh chứng sống cho lượng view ổn định hàng triệu lượt xem mỗi tháng.
+3. Người cao tuổi Nhật Bản thích nghe kể chuyện vào buổi tối trước khi đi ngủ, thời gian giữ chân người xem (AVD) trung bình đạt trên 55%.
+4. Kỹ thuật tạo câu chuyện cảm động: Đặt nhân vật vào hoàn cảnh khó khăn nhưng luôn giữ được lòng biết ơn và sự tử tế.
+5. Doanh thu từ quảng cáo cuối năm (Q4) của thị trường Nhật có thể tăng vọt gấp 1.5 - 2 lần so với các quý thông thường.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Em chào tất cả mọi người nha, thì hôm nay em tiếp tục share cho m…
-  - `01:18` — Như cái tên này thì nó làm được gần 2 tháng rồi nha Bây giờ em sẽ phân tích software để cho mọi người rõ nha.…
-  - `02:22` — Một cái nhân vật thương hiệu
-  - `03:17` — đam me, mẹ nó làm nhiều
-  - `04:04` — Thì mọi người phải bám theo những cái mà cao view, nhiều view Viu nhiều view cũng như là chỉ số VBH nó cao nh…
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> link kênh 1 link kênh 2 link kênh 3
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước xây dựng kịch bản hấp dẫn cho ngách tài liệu lịch sử chiến tranh**
+  + 1. Nghiên cứu các tư liệu lịch sử được giải mật để tìm ra các chi tiết bất ngờ ít người biết.
+  + 2. Xây dựng cấu trúc kịch bản theo thứ tự thời gian kết hợp các nút thắt kịch tính.
+  + 3. Sử dụng hình ảnh tư liệu lịch sử phục chế màu kết hợp đồ họa bản đồ chiến thuật chuyển động.
+  + 4. Giọng đọc hào sảng, kịch tính, đẩy nhanh nhịp điệu ở các đoạn giao tranh ác liệt.
+  + 5. Thiết kế thumbnail với tông màu khói lửa chiến tranh và dòng chữ gây tò mò tột độ.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh sai lệch sự kiện và mốc thời gian lịch sử cơ bản gây phản ứng tiêu cực.**
+2. **Không sử dụng các hình ảnh quá bạo lực máu me dính cờ kiểm duyệt của YouTube.**
+3. **Tránh đưa ra các bình luận thiên vị chính trị mang tính kích động thù hằn.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)**: [Tải file / Xem liên kết](docs/VIDEO-5fd052/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 85**: [Tải file / Xem liên kết](video/VIDEO-5fd052/transcript.txt)

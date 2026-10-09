@@ -34,3 +34,17 @@
 - **ElevenLabs**
 - **CapCut**
 - **ChatGPT**
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP sản xuất video ngách Người Được Chọn & Dưỡng Sinh thị trường US/Hàn:
+- Bước 1 (Nghiên cứu chủ đề tâm linh tích cực & Sức khỏe): Thu thập các thông điệp truyền cảm hứng về đức tin, sự bảo vệ của đấng tối cao và thói quen sinh hoạt khoa học đẩy lùi lão hóa.
+- Bước 2 (Biên soạn kịch bản chuẩn bản xứ EN/KR): Thuê hoặc dùng AI cao cấp biên soạn kịch bản tiếng Anh chuẩn văn phong nhà thờ/truyền giáo hoặc tiếng Hàn kính ngữ trang nghiêm.
+- Bước 3 (Giọng đọc trang nghiêm đầy uy quyền và bao dung): Dùng voice AI nam trung niên Anh ngữ giọng Mỹ trầm ấm, đầy nội lực và truyền tải cảm giác bình an trong tâm hồn.
+- Bước 4 (Hiệu ứng ánh sáng hào quang & Chuyển cảnh mềm): Áp dụng các luồng sáng vàng kim (Light leak overlay 15%), chuyển cảnh mờ dần (Cross dissolve) chậm 1.5 giây tạo cảm giác thiêng liêng.
+- Bước 5 (Thumbnail kích hoạt đức tin): Hình ảnh bàn tay hướng về luồng sáng rực rỡ từ trên cao, tiêu đề viết hoa nổi bật (THE CHOSEN ONE - BE PREPARED) bằng font serif mạ vàng viền đen dày.
+
+### Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags)
+- [x] **Tránh vi phạm:** Tuyệt đối không đưa ra các tuyên bố chữa bách bệnh hoặc bài trừ y học hiện đại vi phạm rào chắn phòng thủ YMYL.
+- [x] **Tránh vi phạm:** Tránh công kích bất kỳ tôn giáo hay tín ngưỡng cụ thể nào; giữ thông điệp ở mức độ năng lượng tích cực phổ quát.
+- [x] **Tránh vi phạm:** Không dùng hình ảnh ma mị, mê tín dị đoan đáng sợ gây phản cảm cho người xem.

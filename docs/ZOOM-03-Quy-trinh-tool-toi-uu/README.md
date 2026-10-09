@@ -36,3 +36,13 @@ Buổi Zoom 3/4 — **Tool Vio3, ghép video hàng loạt, tăng AVD, SEO, seedi
 - [ ] Playlist tên kênh đối thủ
 - [ ] Seeding 5 tab xem 1 tiếng trước khi công khai
 - [ ] Bật quảng cáo mỗi 2 phút
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP 5 bước tối ưu hóa chỉ số AVD, SEO đa tầng, seeding an toàn và kích hoạt đề xuất YouTube:
+- Bước 1 (Tối ưu hóa chỉ số giữ chân khán giả AVD trong 60 giây đầu): Thiết kế đoạn mở đầu (Hook) giật gân, đặt ra nghịch lý kích thích sự tò mò, cắt cảnh dồn dập mỗi 2.5-3 giây để ngăn chặn tỷ lệ thoát video sớm.
+- Bước 2 (Nghiên cứu bộ từ khóa ngách bằng VidIQ / TubeBuddy): Lọc ra 10-15 từ khóa có lượng tìm kiếm vừa phải (Search Volume) nhưng điểm cạnh tranh cực thấp (Low Competition) để chèn vào Tiêu đề, 3 dòng đầu Mô tả và thẻ Tag.
+- Bước 3 (Chiến thuật Seeding comment mồi kích hoạt tranh luận): Dùng dàn tài khoản phụ sạch (ngâm trên Antidetect Browser) để lại 3-5 bình luận mang tính chất tranh cãi hoặc đồng cảm sâu sắc, ghim bình luận câu hỏi lên top đầu.
+- Bước 4 (Thiết lập chiến dịch chạy Ads mồi test Thumbnail & CTR): Chạy chiến dịch Discovery Ads ngân sách nhỏ ($2-$5) nhắm đúng tệp đối tượng tương đồng để kiểm tra tỉ lệ nhấp CTR thực tế của Thumbnail trước khi đẩy tự nhiên.
+- Bước 5 (Kỹ thuật gắn End Screen & Thẻ Card điều hướng luồng xem): Đặt 2 video liên quan chặt chẽ ở màn hình kết thúc 20 giây cuối kết hợp kêu gọi hành động bằng giọng đọc, tạo chuỗi xem liên hoàn (Binge-watching) đẩy kênh lên xu hướng.
+

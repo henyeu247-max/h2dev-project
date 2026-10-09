@@ -2,39 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-948336`
-- **Tiêu đề:** Share Key (Ngách Nhỏ) Thị Trường Hàn Quốc - Update 11/10/2025
-- **Chủ đề thực tế:** Share Key (Ngách Nhỏ) Thị Trường Hàn Quốc - Update 11/10/2025
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Hàn Quốc (Mã: `KR`)
-- **Thời lượng:** 04:47
-- **Dung lượng MP4:** 29.4 MB
-- **File Video:** [`video/VIDEO-948336/VIDEO-948336.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-948336/VIDEO-948336.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-948336.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-948336.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/share-key-ngach-nho-thi-truong-han-quoc-update-11102025](https://h2dev.vn/learn/study/share-key-ngach-nho-thi-truong-han-quoc-update-11102025)
+- **Bài học:** #103
+- **Tiêu đề bài giảng:** Share Key (Ngách Nhỏ) Thị Trường Hàn Quốc - Update 11/10/2025
+- **Thị trường mục tiêu:** 🇰🇷 Hàn
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-948336.png`
+- **Trạng thái DRM:** Có bảo vệ bản quyền
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/share-key-ngach-nho-thi-truong-han-quoc-update-11102025)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Đây em sẽ bấm vào một phộp giấy cho mọi người xem
-- View rất là kinh luôn nha
-- Là về cái dạng lịch sử nha mọi người
-- Để tí nữa em dịch ra cho mọi người xem rõ nha
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **한국사이야기100** (`@한국사이야기100`): [Xem kênh](https://www.youtube.com/@%ED%95%9C%EA%B5%AD%EC%82%AC%EC%9D%B4%EC%95%BC%EA%B8%B0100) ✅ **[LIVE 200]**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Rồi, bây giờ em sẽ vào một video bất kỳ để phân tích cái cách edit của nó nha
-- **Bổ sung:** Vì em cũng khiêu mọi người là phải nên là làm nhiều ảnh ghép lại với nhau
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Ngách Câu chuyện lịch sử Hàn Quốc: Khai thác giai thoại dã sử và các nhân vật lịch sử thời Joseon.
+2. Khán giả Hàn có lòng tự hào dân tộc cao, rất thích xem các video về danh tướng và biến cố triều đình.
+3. Nội dung mang tính giáo dục và giải trí cao, dễ đạt đề xuất tìm kiếm tự nhiên của YouTube.
+4. Nguồn kịch bản phong phú từ các tư liệu lịch sử công cộng và biên niên sử dã sử.
+5. Phân tích cách làm từ kênh đối thủ thực chiến @한국사이야기100.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ừ rồi Ok em xin chào tất cả mọi người nha thì hôm nay em sẽ tiếp …
-  - `00:46` — Đấy.
-  - `01:35` — Rồi, anh em lưu ý là copy thì mọi người dịch lại cái ngôn ngữ gốc…
-  - `02:31` — Video nguồn free á
-  - `03:00` — thì cái lúc đấy thì anh em
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> Link kênh key
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Tạo hình ảnh nhân vật lịch sử cổ trang bằng AI Midjourney/Flux theo phong cách tranh thủy mặc.
+- 2. Giọng đọc AI hào sảng, kịch tính, nhấn nhá câu chữ theo diễn biến kịch bản.
+- 3. Thêm hiệu ứng âm thanh trống trận, tiếng vó ngựa khi mô tả chiến dịch quân sự ở mức -20 dB.
+- 4. Chèn lớp hiệu ứng khói sương mờ ảo (Fog Overlay) tạo không khí hoài niệm lịch sử.
+- 5. Phụ đề tiếng Hàn sử dụng font chữ thư pháp cổ trang trọng, nổi bật.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh sai lệch mốc thời gian và sự kiện lịch sử nhạy cảm gây phản ứng tiêu cực.**
+2. **Tránh dùng hình ảnh nhân vật quá hiện đại làm mất đi tính chân thực lịch sử.**
+3. **Tránh để một khung hình tĩnh quá 6 giây gây nhàm chán.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Link kênh key**: [Tải file / Xem liên kết](https://docs.google.com/spreadsheets/d/13ehUG_aMoGlhBu0JOChffANOQQ4UmWGS6fxS6Fbrk2Y/edit?usp=drivesdk)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-948336/transcript.txt)

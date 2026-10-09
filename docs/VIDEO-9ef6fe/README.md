@@ -2,39 +2,47 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-9ef6fe`
-- **Tiêu đề:** NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP
-- **Chủ đề thực tế:** NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 03:08
-- **Dung lượng MP4:** 51.4 MB
-- **File Video:** [`video/VIDEO-9ef6fe/VIDEO-9ef6fe.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-9ef6fe/VIDEO-9ef6fe.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-9ef6fe.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-9ef6fe.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-key-moi-01-12-2025-ngach-thi-truong-us-hoa-ky-cuc-trends-canh-tranh-thap](https://h2dev.vn/learn/study/update-key-moi-01-12-2025-ngach-thi-truong-us-hoa-ky-cuc-trends-canh-tranh-thap)
+- **Bài học:** #91
+- **Tiêu đề bài giảng:** NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP
+- **Thị trường mục tiêu:** 🇺🇸 Mỹ, 🌐 Ngoại
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-9ef6fe.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-key-moi-01-12-2025-ngach-thi-truong-us-hoa-ky-cuc-trends-canh-tranh-thap)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Chào mọi người nha, hôm nay em sẽ thêm một mọi người một cái ngách nữa, một ngách này là ở thị trường Hoa Kỳ nha mọi người, thị trường U
-- S đấy, và kênh này là chỉ mới 21 video nè mọi người, và cái kỳ này cũng là cực kỳ trên ở bên các cái thị trường ngoại như Hoa Kỳ hay là mấy nước châu Âu nha mọi người
-- Rồi bấm vào phân tích xem thêm thì kênh này nó cũng vừa lập mà mới là ngày 17 tháng 10 đây thôi mọi người Rồi bây giờ bấm vào một phổ biến nè, mọi người thấy view không
-- Đây, ví dụ như kênh này nè, cũng là kênh đối thủ về dạng này, mới 10Bell video nè mọi người
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@thecoldwartales` — [Xem kênh YouTube](https://www.youtube.com/@thecoldwartales)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **@thecoldwartales** (`@thecoldwartales`): [Xem kênh](https://www.youtube.com/@thecoldwartales) ✅ **[LIVE 200]**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Ngách Chiến tranh Lạnh và bí mật quân sự thị trường Mỹ (US) trên kênh @thecoldwartales là một trong những ngách có RPM cao nhất ($12 - $25).
+2. Khán giả Mỹ cực kỳ say mê các bí mật tình báo CIA/KGB, máy bay gián điệp, tàu ngầm hạt nhân và các chiến dịch bí mật trong thế kỷ 20.
+3. Nguồn tài nguyên công cộng khổng lồ: Thư viện Quốc hội Mỹ (Library of Congress) và Lưu trữ Quốc gia (NARA) cung cấp hàng triệu ảnh/clip công cộng miễn phí bản quyền (Public Domain).
+4. Kịch bản đòi hỏi tính chính xác về mốc thời gian, tên vũ khí và địa danh lịch sử để tạo niềm tin tuyệt đối cho người xem.
+5. Kênh phát triển bền vững nhiều năm mà không sợ hết ý tưởng nhờ kho tàng sự kiện Chiến tranh Lạnh vô tận.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Em chào mọi người nha, hôm nay em sẽ thêm một mọi người một cái n…
-  - `00:53` — Mọi người dịch sang tiếng Anh
-  - `01:25` — 2020 luôn nè.
-  - `01:59` — Đó cũng là một số vấn đề anh em người mới anh em không biết
-  - `02:37` — Rồi mọi người có thể tham khảo
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> link kênh
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước dựng video ngách sinh tồn hoang dã và cuộc sống tự cung tự cấp (Off-Grid)**
+  + 1. Thu thập các câu chuyện sinh tồn thực tế hoặc kỹ thuật xây dựng nhà đất tự làm mát.
+  + 2. Tận dụng tối đa âm thanh ASMR thiên nhiên chân thực: Tiếng chặt cây, nhóm lửa, đào đất, mưa rơi.
+  + 3. Giọng đọc thuyết minh thư giãn, mộc mạc, tạo cảm giác hòa mình vào thiên nhiên hoang dã.
+  + 4. Khung hình visual xanh mướt của rừng núi, cây cỏ và kiến trúc sinh thái độc đáo.
+  + 5. Thumbnail làm nổi bật căn nhà gỗ ấm cúng giữa rừng sâu hoặc kỹ năng sinh tồn ấn tượng.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh hướng dẫn các kỹ thuật sinh tồn nguy hiểm có thể gây tử vong nếu làm theo.**
+2. **Không lạm dụng âm thanh ASMR quá chói gắt hoặc rè tai.**
+3. **Tránh các cảnh săn bắt động vật quý hiếm vi phạm pháp luật bảo tồn thiên nhiên.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP**: [Tải file / Xem liên kết](docs/VIDEO-9ef6fe/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 91**: [Tải file / Xem liên kết](video/VIDEO-9ef6fe/transcript.txt)

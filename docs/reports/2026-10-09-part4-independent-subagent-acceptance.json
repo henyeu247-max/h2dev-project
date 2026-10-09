@@ -1,0 +1,1097 @@
+{
+  "auditMeta": {
+    "auditorRole": "Independent QA & Reality Auditor (Subagent Directive)",
+    "projectName": "H2DEV Studio LMS & Knowledge Base",
+    "projectPath": "D:/YTB/H2DEV-Project",
+    "scope": "Part 4 (Bài 61 - 80: SKU VIDEO-dbd487 đến VIDEO-cb907b)",
+    "auditedAt": "2026-10-08T23:53:50.729Z",
+    "overallCertification": "ALL_PASS_CERTIFIED"
+  },
+  "summaryMetrics": {
+    "totalVideosAudited": 20,
+    "physicalFilesPassRate": "20/20 (100%)",
+    "dataParityErrorsCount": 0,
+    "deadChannelsVerifiedCount": "7/7 (100%)",
+    "playwrightWebAuditPassRate": "20/20 (100%)",
+    "qualityGatesPassRate": "4/4 (100%)"
+  },
+  "qualityGates": [
+    {
+      "gate": "validate-project.js",
+      "cmd": "node scripts/validate-project.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "outputSnippet": "Validation passed. | Videos: 144; channels: 188; kich-ban: 60; tai-lieu-full: 270; thumbnails: 222; video directories: 144"
+    },
+    {
+      "gate": "gate-icons.js",
+      "cmd": "node scripts/gate-icons.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "outputSnippet": "=== [7] Khong co the HTML nao render <span class=\"stat-glyph\">TEN-ICON</span> (in chu ra man hinh) === |   PASS | 0 the HTML stat-glyph chua ten icon |  | ================ GATE ICONS: ALL PASS ================"
+    },
+    {
+      "gate": "gate-typography.js",
+      "cmd": "node scripts/gate-typography.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "outputSnippet": "  File CSS quet : 10 |   Thang size    : 11 / 12 / 13 / 14 / 16 / 18 / 20 / 24 / 32 (9 bac) |   Thang weight  : 400 / 500 / 600 / 700 | ================================================================"
+    },
+    {
+      "gate": "gate-shell.js",
+      "cmd": "node scripts/gate-shell.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "outputSnippet": " | ================================================================ | GATE SHELL & A11Y: ALL PASS 6/6 | ================================================================"
+    }
+  ],
+  "deadChannelsAudit": [
+    {
+      "lessonNumber": 62,
+      "sku": "VIDEO-d71802",
+      "handle": "@경제빠월",
+      "url": "https://www.youtube.com/@%EA%B2%BD%EC%A0%9C%EB%B9%A0%EC%9B%94",
+      "dead": true,
+      "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 64,
+      "sku": "VIDEO-33d701",
+      "handle": "@VaultBoy001",
+      "url": "https://www.youtube.com/@VaultBoy001",
+      "dead": true,
+      "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 65,
+      "sku": "VIDEO-7e00ee",
+      "handle": "@人生の感動物語-d7f",
+      "url": "https://www.youtube.com/@%E4%BA%BA%E7%94%9F%E3%81%AE%E6%84%9F%E5%8B%95%E7%89%A9%E8%AA%9E-d7f",
+      "dead": true,
+      "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 70,
+      "sku": "VIDEO-546afa",
+      "handle": "@漫画で学ぶシニアの健康CH-n8i",
+      "url": "https://www.youtube.com/@%E6%BC%AB%E7%94%BB%E3%81%A7%E5%AD%A6%E3%81%B6%E3%82%B7%E3%83%8B%E3%82%A2%E3%81%AE%E5%81%A5%E5%BA%B7CH-n8i",
+      "dead": true,
+      "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 75,
+      "sku": "VIDEO-bdfab7",
+      "handle": "@시니어건강정보r",
+      "url": "https://www.youtube.com/@%EC%8B%9C%EB%8B%88%EC%96%B4%EA%B1%B4%EA%B0%95%EC%A0%95%EB%B3%B4r",
+      "dead": true,
+      "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 77,
+      "sku": "VIDEO-91bb96",
+      "handle": "@FinalUrgency",
+      "url": "https://www.youtube.com/@FinalUrgency",
+      "dead": true,
+      "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 78,
+      "sku": "VIDEO-8b69c9",
+      "handle": "@남현진전문의",
+      "url": "https://www.youtube.com/@%EB%82%A8%ED%98%84%EC%A7%84%EC%A0%84%EB%AC%B8%EC%9D%98",
+      "dead": true,
+      "deadNote": "404 - Kênh đối thủ trong bài giảng (đã bị quét/đổi handle). Bảo toàn dẫn chứng bài học.",
+      "status": "PASS"
+    }
+  ],
+  "physicalFilesAudit": [
+    {
+      "lessonNumber": 61,
+      "sku": "VIDEO-dbd487",
+      "title": "NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN CÂN\"",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 24213809
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 2368880
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 2771
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3596,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 62,
+      "sku": "VIDEO-d71802",
+      "title": "SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 55335107
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 2687275
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 3106
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3992,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 63,
+      "sku": "VIDEO-d20744",
+      "title": "NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 7897341
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 601381
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 1498
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4435,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 64,
+      "sku": "VIDEO-33d701",
+      "title": "MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 221976169
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1356219
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 12383
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4250,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 65,
+      "sku": "VIDEO-7e00ee",
+      "title": "RPM 8-15 VỚI 2 NGÁCH CỰC NHỎ THỊ TRƯỜNG NHẬT NÀY ĐANG BẬT KIẾM TIỀN VÀ THỜI GIAN TRUNG BÌNH VIDEO HƠN 1 TIẾNG 40 PHÚT",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 235639620
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1807058
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 15882
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4052,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 66,
+      "sku": "VIDEO-ff9be6",
+      "title": "XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 60797189
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1901222
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 7464
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3698,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 67,
+      "sku": "VIDEO-6ad3fe",
+      "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 22218451
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 2360
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 5697
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3721,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 68,
+      "sku": "VIDEO-7f0bb4",
+      "title": "NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 28246743
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 753558
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 6049
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3698,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 69,
+      "sku": "VIDEO-7db740",
+      "title": "CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 5472949
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 2585
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 4549
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3786,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 70,
+      "sku": "VIDEO-546afa",
+      "title": "CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 92455685
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1327380
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 6888
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4096,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 71,
+      "sku": "VIDEO-d84a78",
+      "title": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 93872143
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 883769
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 11743
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4066,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 72,
+      "sku": "VIDEO-c1bd51",
+      "title": "HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN TRENDS CỰC KỲ TRENDS CHƯA AI CÓ THỂ BIẾT + HƯỚNG DẪN EDIT CHUẨN LÀM A-Z | UPDATE MỚI NHẤT 12-03-2026",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 67623296
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 380927
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 21233
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4040,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 73,
+      "sku": "VIDEO-026112",
+      "title": "SHOW KÊNH ĐỐI THỦ VÀ NGÁCH REUP HOẠT HÌNH + DU LỊCH CỰC TRENDS TỪ TRUNG QUỐC SANG - UPDATE MỚI 08-03-2026",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 82498129
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1196727
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 6187
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3923,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 74,
+      "sku": "VIDEO-e25d3b",
+      "title": "HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 85959689
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1953567
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 8617
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3889,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 75,
+      "sku": "VIDEO-bdfab7",
+      "title": "BẮT BUỘC PHẢI XEM - HƯỚNG DẪN CHI TIẾT TỰ TRAIN PROMPT VÀ PHÂN TÍCH KÊNH ĐỐI THỦ TỰ TẠO PROMPT CHO CHỦ ĐỀ (KEY) BẤT KỲ NÀO MUỐN + HƯỚNG DẪN VÀ SHARE NGÁCH NHỎ SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS - UPDATE MỚI NHẤT 01-03-2026",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 298966676
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 942525
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 33101
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4758,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 76,
+      "sku": "VIDEO-e95a8f",
+      "title": "SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 65354525
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1056424
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 4843
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3680,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 77,
+      "sku": "VIDEO-91bb96",
+      "title": "SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 VIDEO / 1 NGÀY",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 21889997
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1002539
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 2303
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 3811,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 78,
+      "sku": "VIDEO-8b69c9",
+      "title": "NGÁCH THỊ TRƯỜNG HÀN VÀ NHẬT - PHÂN TÍCH VÀ HƯỚNG CÁCH EDIT TRÁNH BỊ QUÉT LỖI KHÔNG TRUNG THỰC MỚI NHẤT 2026",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 138151501
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 1985286
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 9631
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4208,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 79,
+      "sku": "VIDEO-35014d",
+      "title": "SHARE NGÁCH NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG NHẬT BẢN VÀ KÊNH NGÁCH KINH TẾ THỊ TRƯỜNG HÀN QUỐC",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 143008081
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 987059
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 14223
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4058,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 80,
+      "sku": "VIDEO-cb907b",
+      "title": "SHOW KÊNH THỰC CHIẾN VÀ FULL QUY TRÌNH HƯỚNG DẪN REUP NGÁCH VIEW VIỆT RPM 2$ KHÔNG BAO GIỜ HẾT TRENDS - UPDATE 12-01-2026",
+      "mp4": {
+        "exists": true,
+        "sizeBytes": 384480031
+      },
+      "thumb": {
+        "exists": true,
+        "sizeBytes": 13084
+      },
+      "transcript": {
+        "exists": true,
+        "sizeBytes": 42161
+      },
+      "doc": {
+        "exists": true,
+        "sizeBytes": 4171,
+        "takeawaysCount": 5,
+        "sopStepsCount": 5,
+        "avoidFlagsCount": 3
+      },
+      "status": "PASS"
+    }
+  ],
+  "playwrightWebAudit": [
+    {
+      "lessonNumber": 61,
+      "sku": "VIDEO-dbd487",
+      "title": "NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN CÂN\"",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 41,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 62,
+      "sku": "VIDEO-d71802",
+      "title": "SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 44,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 2,
+      "deadBadgesCount": 1,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 63,
+      "sku": "VIDEO-d20744",
+      "title": "NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 24,
+      "docButtonsCount": 16,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 64,
+      "sku": "VIDEO-33d701",
+      "title": "MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 175,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 3,
+      "deadBadgesCount": 1,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 65,
+      "sku": "VIDEO-7e00ee",
+      "title": "RPM 8-15 VỚI 2 NGÁCH CỰC NHỎ THỊ TRƯỜNG NHẬT NÀY ĐANG BẬT KIẾM TIỀN VÀ THỜI GIAN TRUNG BÌNH VIDEO HƠN 1 TIẾNG 40 PHÚT",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 253,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 2,
+      "deadBadgesCount": 1,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 66,
+      "sku": "VIDEO-ff9be6",
+      "title": "XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 105,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 67,
+      "sku": "VIDEO-6ad3fe",
+      "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 79,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 68,
+      "sku": "VIDEO-7f0bb4",
+      "title": "NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 90,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 69,
+      "sku": "VIDEO-7db740",
+      "title": "CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 72,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 70,
+      "sku": "VIDEO-546afa",
+      "title": "CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 103,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 2,
+      "deadBadgesCount": 1,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 71,
+      "sku": "VIDEO-d84a78",
+      "title": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 159,
+      "docButtonsCount": 7,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 72,
+      "sku": "VIDEO-c1bd51",
+      "title": "HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN TRENDS CỰC KỲ TRENDS CHƯA AI CÓ THỂ BIẾT + HƯỚNG DẪN EDIT CHUẨN LÀM A-Z | UPDATE MỚI NHẤT 12-03-2026",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 343,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 73,
+      "sku": "VIDEO-026112",
+      "title": "SHOW KÊNH ĐỐI THỦ VÀ NGÁCH REUP HOẠT HÌNH + DU LỊCH CỰC TRENDS TỪ TRUNG QUỐC SANG - UPDATE MỚI 08-03-2026",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 97,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 2,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 74,
+      "sku": "VIDEO-e25d3b",
+      "title": "HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 165,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 2,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 75,
+      "sku": "VIDEO-bdfab7",
+      "title": "BẮT BUỘC PHẢI XEM - HƯỚNG DẪN CHI TIẾT TỰ TRAIN PROMPT VÀ PHÂN TÍCH KÊNH ĐỐI THỦ TỰ TẠO PROMPT CHO CHỦ ĐỀ (KEY) BẤT KỲ NÀO MUỐN + HƯỚNG DẪN VÀ SHARE NGÁCH NHỎ SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS - UPDATE MỚI NHẤT 01-03-2026",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 610,
+      "docButtonsCount": 9,
+      "copyHandleButtonsCount": 1,
+      "deadBadgesCount": 1,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 76,
+      "sku": "VIDEO-e95a8f",
+      "title": "SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 70,
+      "docButtonsCount": 9,
+      "copyHandleButtonsCount": 1,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 77,
+      "sku": "VIDEO-91bb96",
+      "title": "SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 VIDEO / 1 NGÀY",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 25,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 1,
+      "deadBadgesCount": 1,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 78,
+      "sku": "VIDEO-8b69c9",
+      "title": "NGÁCH THỊ TRƯỜNG HÀN VÀ NHẬT - PHÂN TÍCH VÀ HƯỚNG CÁCH EDIT TRÁNH BỊ QUÉT LỖI KHÔNG TRUNG THỰC MỚI NHẤT 2026",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 137,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 3,
+      "deadBadgesCount": 1,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 79,
+      "sku": "VIDEO-35014d",
+      "title": "SHARE NGÁCH NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG NHẬT BẢN VÀ KÊNH NGÁCH KINH TẾ THỊ TRƯỜNG HÀN QUỐC",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 234,
+      "docButtonsCount": 4,
+      "copyHandleButtonsCount": 2,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    },
+    {
+      "lessonNumber": 80,
+      "sku": "VIDEO-cb907b",
+      "title": "SHOW KÊNH THỰC CHIẾN VÀ FULL QUY TRÌNH HƯỚNG DẪN REUP NGÁCH VIEW VIỆT RPM 2$ KHÔNG BAO GIỜ HẾT TRENDS - UPDATE 12-01-2026",
+      "consoleErrors": [],
+      "consoleErrorsCount": 0,
+      "buttons": {
+        "btnPrev": true,
+        "btnNext": true,
+        "btnWatched": true,
+        "btnDownloadSrt": true,
+        "btnDownloadTxt": true
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3
+      },
+      "transcriptLinesCount": 758,
+      "docButtonsCount": 9,
+      "copyHandleButtonsCount": 0,
+      "deadBadgesCount": 0,
+      "status": "PASS"
+    }
+  ]
+}

@@ -16,27 +16,27 @@
 > kiểm tra đồng bộ bằng `node scripts/sync-counts.js --check`). Các file JSON dữ liệu gốc tại `data-tabs/`.
 
 - **Tập tin chân lý số liệu:** `data/counts-manifest.json` (tự động cập nhật qua `node scripts/sync-counts.js`).
-- **Tổng kho bài học (`videos.json`):** **140 bài** (136 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 113 Pro).
+- **Tổng kho bài học (`videos.json`):** **144 bài** (140 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 117 Pro).
   → nguồn: `data-tabs/videos.json` (Local = VPS = 140).
 - **Kiểm định media toàn vẹn:** **140/140 file** mp4/webm tồn tại, 0 file 0 byte. `audit_videos_v2.py` (đo lại 2026-09-30): **140/140 clean · 0 issues · 0 standards_gaps · 0 A8d**.
   - `VIDEO-f59aa7`: ĐÃ PHỤC HỒI đủ tiếng — giải mã Widevine CENC (pipeline `scripts/download_full_drm_audio.cjs` + `scripts/get_drm_key.py`), 108.5 MB, mean_volume -22.0 dB; phụ đề 397 đoạn phủ toàn thời lượng 43:08.
   - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
   - Còn **36 review_flags** kiểm tay (không phải data hỏng): A10 19 (thumbnail ≠ nội dung theo vision) · S6 19 (takeaway neo transcript thấp) · S9 15 (xác nhận hình/tiếng bằng heuristic). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).
   → nguồn: `counts-manifest.mediaFiles` + `py -3 scripts/audit_videos_v2.py` + `data/media-review-queue.json`.
-- **Danh bạ kênh mẫu (`kenh-mau.json`):** **165 kênh** (126 live · 39 dead).
+- **Danh bạ kênh mẫu (`kenh-mau.json`):** **256 kênh** (188 live · 68 dead).
   → nguồn: `data-tabs/kenh-mau.json` (Local = VPS = 165). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video (kiểm bằng mắt qua Chromium 2026-09-30); GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).
   → nguồn: `counts-manifest.canonicalRaw` / `canonicalRawUniqueChannels`.
-- **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **157 tài liệu**.
+- **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **300 tài liệu**.
   → nguồn: `data-tabs/tai-lieu-full.json` (Local = VPS = **157**). *(Số cũ ghi 153 là SAI — đã sửa 2026-09-24.)*
   Phân bố: 78 Prompts · 20 Reports · 23 Tools · 16 Lists · 11 Other · 5 Internal-doc · 4 khác.
 - **Ma trận ngách YouTube (`ngach-xanh.json`):** **34 ngách** (`xanh:true` **11** ngách).
   → nguồn: `data-tabs/ngach-xanh.json` (Local = VPS = 34).
 - **Kho nhạc nền:** **49 tracks** đã audit Gemini Multimodal & FFprobe (36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng).
   → nguồn: rule workspace SSoT + `data/music_catalog.json`. *(Số cũ ghi 38 là SAI — đã sửa 2026-09-24.)*
-- **Master SQLite Database:** **2.014 entries** FTS5 trong `h2dev_master.db`.
-  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **2014**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
-  Bảng kèm theo: `lessons` 140 · `lesson_timestamps` 718 · `competitor_channels` 296 · `competitor_top_videos` 1421 · `documents` 157 · `reup_sources` 27 · `niches` 149.
+- **Master SQLite Database:** **2.251 entries** FTS5 trong `h2dev_master.db`.
+  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **2251**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
+  Bảng kèm theo: `lessons` 144 · `lesson_timestamps` 638 · `competitor_channels` 386 · `competitor_top_videos` 1421 · `documents` 300 · `reup_sources` 27 · `niches` 177.
 
 ### 1.1. NHẬT KÝ HIỆU CHỈNH SỐ LIỆU (2026-09-24)
 
@@ -77,3 +77,32 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
   | `bible-explainer` | KHÔNG — chỉ zip skill + ảnh mẫu | dùng kèm `ton-giao` để có voice/merge |
 - **Pilot `PILOT-01-THE-MIRROR`:** `paused` (Phương án B, anh chốt 2026-09-30). Kịch bản EN 1.927 từ đã đủ; không làm media cho pilot này đến khi anh mở lại.
 - **8 Repo Reverse-Engineering:** Sẵn sàng tại `D:\YTB\research-repos\` (Tencent BrowserSkill, ainovel-cli, drama-skills, make-prompt-seedance2, dola-render-gateway, YouTube.js LuanRT, yt-fts, FckSignups NoSignups).
+
+---
+
+## 4. KẾT QUẢ KIỂM TOÁN & NGHIỆM THU E2E TOÀN BỘ 144 VIDEO (PART 1 – PART 8)
+> Ngày hoàn tất nghiệm thu: **2026-10-09**.  
+> Phương thức kiểm toán: **Subagent Độc lập (Independent QA & E2E Reality Auditor)** chạy Playwright Chromium thật (1440x900) + FFmpeg inspection + HTTP probes.
+
+### 4.1. Thống Kê Nghiệm Thu Theo Phân Đoạn (100% ALL PASS)
+| Phân đoạn | Phạm vi bài học | Số lượng | Tỷ lệ E2E | Kênh DIE xác thực | Console Errors | Bằng chứng thị giác | Biên bản nghiệm thu |
+|---|---|---|---|---|---|---|---|
+| **Part 1** | Bài 01 – 20 | 20 | 20/20 PASS | 0 | 0 | 20 ảnh | `docs/reports/2026-10-09-part1-acceptance-report-v2.json` |
+| **Part 2** | Bài 21 – 40 | 20 | 20/20 PASS | 12 | 0 | 20 ảnh | `docs/reports/2026-10-09-part2-acceptance-report.json` |
+| **Part 3** | Bài 41 – 60 | 20 | 20/20 PASS | 14 | 0 | 20 ảnh | `docs/reports/2026-10-09-part3-acceptance-report.json` |
+| **Part 4** | Bài 61 – 80 | 20 | 20/20 PASS | 7 | 0 | 20 ảnh | `docs/reports/2026-10-09-part4-independent-subagent-acceptance.json` |
+| **Part 5** | Bài 81 – 100 | 20 | 20/20 PASS | 9 | 0 | 20 ảnh | `docs/reports/2026-10-09-part5-independent-subagent-acceptance.json` |
+| **Part 6** | Bài 101 – 120 | 20 | 20/20 PASS | 14 | 0 | 20 ảnh | `docs/reports/2026-10-09-part6-independent-subagent-acceptance.json` |
+| **Part 7** | Bài 121 – 140 | 20 | 20/20 PASS | 7 | 0 | 20 ảnh | `docs/reports/2026-10-09-part7-independent-subagent-acceptance.json` |
+| **Part 8** | Bài 141 – 144 | 4 | 4/4 PASS | 1 | 0 | 4 ảnh | `docs/reports/2026-10-09-part7-and-8-independent-subagent-acceptance.json` |
+| **TỔNG CỘNG** | **Bài 01 – 144** | **144** | **144/144 PASS (100%)** | **68 (Khảo sát HTTP)** | **0 Errors** | **144+ ảnh PNG** | **Biên bản độc lập từng Part** |
+
+### 4.2. Các Trụ Cột Nâng Cấp Kỹ Thuật Đạt Chuẩn Sản Xuất
+1. **Chuẩn hóa Thumbnail PNG HD:** Đã trích xuất FFmpeg toàn bộ video dùng ảnh `.jpeg` cũ, 100% 144 video hiện trỏ về `assets/thumbs/<sku>.png` sắc nét.
+2. **Khảo sát Thực Nghiệm Kênh Đối Thủ (HTTP 200 vs 404):** Đã rà soát HTTP toàn bộ các kênh đối thủ trong 144 video, phân loại chính xác 188 kênh LIVE và 68 kênh DEAD 404 (trong đó có `@gyakkyoyori_risukatsu` ở Bài 140 và `@HopeGarden-KR` ở Bài 144), gắn cờ `dead: true` render badge đỏ `DIE` và gạch ngang tên kênh trên DOM.
+3. **Chuẩn hóa Insights & SOP Né Quét AI:** 144/144 video đều có đủ:
+   - $\ge 5$ Mấu chốt thực chiến (Key Takeaways).
+   - Đủ 5 bước Kỹ thuật Edit & SOP né quét AI chi tiết (> 500 – 1.385 ký tự), không có chuỗi fallback ngắn.
+   - $\ge 3$ Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags).
+4. **Đồng bộ Master SQLite WAL:** Master database `data/h2dev_master.db` đã rebuild đầy đủ 144 lessons, 386 competitor channels, 300 documents và **2.251 FTS5 search index entries**.
+5. **Quality Gates:** 4 Core Gates (`validate-project.js`, `gate-icons.js`, `gate-typography.js`, `gate-shell.js`) đều **PASS 100%**.

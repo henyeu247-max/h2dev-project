@@ -1,0 +1,746 @@
+{
+  "totalVideos": 24,
+  "videosOk": 24,
+  "thumbnailsOk": 24,
+  "transcriptsOk": 24,
+  "docsOk": 59,
+  "totalDocsChecked": 59,
+  "screenshotsOk": 24,
+  "details": [
+    {
+      "lesson": 121,
+      "sku": "VIDEO-5cb825",
+      "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Lấy + Tạo Kịch Bản Từ Kênh Đối Thủ",
+      "videoFile": "video/VIDEO-5cb825/VIDEO-5cb825.mp4",
+      "videoSize": 256489327,
+      "thumbFile": "assets/thumbs/VIDEO-5cb825.png",
+      "thumbSize": 380987,
+      "transcriptFile": "video/VIDEO-5cb825/transcript.txt",
+      "transcriptSize": 14119,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-5cb825/PROMPT-LAY-VA-TAO-KICH-BAN-DOI-THU.md",
+          "type": "local_file",
+          "size": 2434,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-5cb825/transcript.txt",
+          "type": "local_file",
+          "size": 14119,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-5cb825.png",
+      "screenshotSize": 596899,
+      "status": "PASS"
+    },
+    {
+      "lesson": 122,
+      "sku": "VIDEO-891f32",
+      "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Tạo Kịch Bản Dài Hơn 2 Tiếng Trên ChatGPT",
+      "videoFile": "video/VIDEO-891f32/VIDEO-891f32.mp4",
+      "videoSize": 354567363,
+      "thumbFile": "assets/thumbs/VIDEO-891f32.png",
+      "thumbSize": 403892,
+      "transcriptFile": "video/VIDEO-891f32/transcript.txt",
+      "transcriptSize": 16915,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-891f32/PROMPT-TAO-KICH-BAN-DAI-2-TIENG-CHATGPT.md",
+          "type": "local_file",
+          "size": 2697,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-891f32/transcript.txt",
+          "type": "local_file",
+          "size": 16915,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-891f32.png",
+      "screenshotSize": 764293,
+      "status": "PASS"
+    },
+    {
+      "lesson": 123,
+      "sku": "VIDEO-61e354",
+      "title": "Hướng Dẫn Tư Duy Tìm, Lọc Key Youtube View Ngoại, Xác Định Được Key Trends, Key Ngon",
+      "videoFile": "video/VIDEO-61e354/VIDEO-61e354.mp4",
+      "videoSize": 493783566,
+      "thumbFile": "assets/thumbs/VIDEO-61e354.png",
+      "thumbSize": 498621,
+      "transcriptFile": "video/VIDEO-61e354/transcript.txt",
+      "transcriptSize": 28713,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-61e354/SOP-TU-DUY-TIM-LOC-KEY-YOUTUBE-VIEW-NGOAI-TRENDS.md",
+          "type": "local_file",
+          "size": 1926,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-61e354/transcript.txt",
+          "type": "local_file",
+          "size": 28713,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-61e354.png",
+      "screenshotSize": 502668,
+      "status": "PASS"
+    },
+    {
+      "lesson": 124,
+      "sku": "VIDEO-bdfa54",
+      "title": "Key Sinh Tồn view Việt bán content",
+      "videoFile": "video/VIDEO-bdfa54/VIDEO-bdfa54.mp4",
+      "videoSize": 748436515,
+      "thumbFile": "assets/thumbs/VIDEO-bdfa54.png",
+      "thumbSize": 18857,
+      "transcriptFile": "video/VIDEO-bdfa54/transcript.txt",
+      "transcriptSize": 27335,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-bdfa54/SOP-BAN-CONTENT-NGACH-SINH-TON-VIEW-VIET.md",
+          "type": "local_file",
+          "size": 5434,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-bdfa54.png",
+      "screenshotSize": 846910,
+      "status": "PASS"
+    },
+    {
+      "lesson": 125,
+      "sku": "VIDEO-8e0275",
+      "title": "Hướng dẫn tạo edit + thumb key Nonagon",
+      "videoFile": "video/VIDEO-8e0275/VIDEO-8e0275.mp4",
+      "videoSize": 550685521,
+      "thumbFile": "assets/thumbs/VIDEO-8e0275.png",
+      "thumbSize": 16038,
+      "transcriptFile": "video/VIDEO-8e0275/transcript.txt",
+      "transcriptSize": 1240,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-8e0275/HUONG-DAN-EDIT-CAPCUT-VA-DESIGN-THUMBNAIL-NONAGON.md",
+          "type": "local_file",
+          "size": 4572,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-8e0275/drive_1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf",
+          "type": "local_file",
+          "size": 1367868,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-8e0275/drive_1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0",
+          "type": "local_file",
+          "size": 277222,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-8e0275/drive_1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc",
+          "type": "local_file",
+          "size": 132864,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-8e0275/drive_1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj",
+          "type": "local_file",
+          "size": 1789,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-8e0275.png",
+      "screenshotSize": 504444,
+      "status": "PASS"
+    },
+    {
+      "lesson": 126,
+      "sku": "VIDEO-b559c8",
+      "title": "Hướng dẫn làm thumb ngách nhỏ trong key người que - Chill Dude - chi tiết",
+      "videoFile": "video/VIDEO-b559c8/VIDEO-b559c8.mp4",
+      "videoSize": 172775089,
+      "thumbFile": "assets/thumbs/VIDEO-b559c8.png",
+      "thumbSize": 22711,
+      "transcriptFile": "video/VIDEO-b559c8/transcript.txt",
+      "transcriptSize": 1465,
+      "docs": [
+        {
+          "file": "docs/VIDEO-b559c8/README.md",
+          "type": "local_file",
+          "size": 5037,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-b559c8.png",
+      "screenshotSize": 684375,
+      "status": "PASS"
+    },
+    {
+      "lesson": 127,
+      "sku": "VIDEO-b96929",
+      "title": "Hướng dẫn edit key triết lý _ khắc kỷ chi tiết từ A-Z ",
+      "videoFile": "video/VIDEO-b96929/VIDEO-b96929.mp4",
+      "videoSize": 211066105,
+      "thumbFile": "assets/thumbs/VIDEO-b96929.png",
+      "thumbSize": 20610,
+      "transcriptFile": "video/VIDEO-b96929/transcript.txt",
+      "transcriptSize": 2066,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-b96929/QUY-TRINH-EDIT-VIDEO-TRIET-LY-KHAC-KY.md",
+          "type": "local_file",
+          "size": 4181,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-b96929.png",
+      "screenshotSize": 617628,
+      "status": "PASS"
+    },
+    {
+      "lesson": 128,
+      "sku": "VIDEO-44cf22",
+      "title": "Share key và giải thích về chủ đề rpm cao ở các thị trường - UPDATE 23/5",
+      "videoFile": "video/VIDEO-44cf22/VIDEO-44cf22.mp4",
+      "videoSize": 283903212,
+      "thumbFile": "assets/thumbs/VIDEO-44cf22.png",
+      "thumbSize": 28167,
+      "transcriptFile": "video/VIDEO-44cf22/transcript.txt",
+      "transcriptSize": 14657,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-44cf22/PHAN-TICH-NGACH-RPM-CAO-VA-VIDEO-DAI.md",
+          "type": "local_file",
+          "size": 4403,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-44cf22.png",
+      "screenshotSize": 883015,
+      "status": "PASS"
+    },
+    {
+      "lesson": 129,
+      "sku": "VIDEO-5c438a",
+      "title": "Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)",
+      "videoFile": "video/VIDEO-5c438a/VIDEO-5c438a.mp4",
+      "videoSize": 85786674,
+      "thumbFile": "assets/thumbs/VIDEO-5c438a.png",
+      "thumbSize": 31426,
+      "transcriptFile": "video/VIDEO-5c438a/transcript.txt",
+      "transcriptSize": 17153,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-5c438a/CHIEN-LUOC-CHON-MAIL-VA-CHON-KENH-AN-TOAN.md",
+          "type": "local_file",
+          "size": 5437,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-5c438a/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU.csv",
+          "type": "local_file",
+          "size": 2192,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-5c438a/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg.csv",
+          "type": "local_file",
+          "size": 1536,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-5c438a/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY.txt",
+          "type": "local_file",
+          "size": 4489,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-5c438a/transcript.txt",
+          "type": "local_file",
+          "size": 17153,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-5c438a.png",
+      "screenshotSize": 584073,
+      "status": "PASS"
+    },
+    {
+      "lesson": 130,
+      "sku": "VIDEO-61ad94",
+      "title": "Update ngách bán content Nhật, Hàn..",
+      "videoFile": "video/VIDEO-61ad94/VIDEO-61ad94.mp4",
+      "videoSize": 110847442,
+      "thumbFile": "assets/thumbs/VIDEO-61ad94.png",
+      "thumbSize": 150602,
+      "transcriptFile": "video/VIDEO-61ad94/transcript.txt",
+      "transcriptSize": 12262,
+      "docs": [
+        {
+          "file": "docs/VIDEO-61ad94/description.txt",
+          "type": "local_file",
+          "size": 412,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-61ad94/transcript.txt",
+          "type": "local_file",
+          "size": 12262,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-61ad94.png",
+      "screenshotSize": 849309,
+      "status": "PASS"
+    },
+    {
+      "lesson": 131,
+      "sku": "VIDEO-3a38f9",
+      "title": "Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt",
+      "videoFile": "video/VIDEO-3a38f9/VIDEO-3a38f9.mp4",
+      "videoSize": 147537949,
+      "thumbFile": "assets/thumbs/VIDEO-3a38f9.png",
+      "thumbSize": 149781,
+      "transcriptFile": "video/VIDEO-3a38f9/transcript.txt",
+      "transcriptSize": 13339,
+      "docs": [
+        {
+          "file": "docs/VIDEO-3a38f9/description.txt",
+          "type": "local_file",
+          "size": 280,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-3a38f9/transcript.txt",
+          "type": "local_file",
+          "size": 13339,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-3a38f9.png",
+      "screenshotSize": 800858,
+      "status": "PASS"
+    },
+    {
+      "lesson": 132,
+      "sku": "VIDEO-73d98a",
+      "title": "Update key (ngách cực nhỏ) mới nhất 06-09-2026",
+      "videoFile": "video/VIDEO-73d98a/VIDEO-73d98a.mp4",
+      "videoSize": 199940701,
+      "thumbFile": "assets/thumbs/VIDEO-73d98a.png",
+      "thumbSize": 42484,
+      "transcriptFile": "video/VIDEO-73d98a/transcript.txt",
+      "transcriptSize": 11704,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-73d98a/SOP-NGACH-CUC-NHO-DRAMA-CAM-DONG-VA-DUONG-LAO.md",
+          "type": "local_file",
+          "size": 8217,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-73d98a.png",
+      "screenshotSize": 857457,
+      "status": "PASS"
+    },
+    {
+      "lesson": 133,
+      "sku": "ZOOM-01-Nen-tang-moi-truong",
+      "title": "Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
+      "videoFile": "video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm",
+      "videoSize": 212700043,
+      "thumbFile": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.png",
+      "thumbSize": 455122,
+      "transcriptFile": "video/ZOOM-01-Nen-tang-moi-truong/transcript.txt",
+      "transcriptSize": 58157,
+      "docs": [
+        {
+          "file": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
+          "type": "local_file",
+          "size": 5273,
+          "ok": true
+        },
+        {
+          "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+          "type": "local_file",
+          "size": 10928,
+          "ok": true
+        },
+        {
+          "file": "video/ZOOM-01-Nen-tang-moi-truong/transcript.txt",
+          "type": "local_file",
+          "size": 58157,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/ZOOM-01-Nen-tang-moi-truong.png",
+      "screenshotSize": 581596,
+      "status": "PASS"
+    },
+    {
+      "lesson": 134,
+      "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
+      "title": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+      "videoFile": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm",
+      "videoSize": 402600409,
+      "thumbFile": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.png",
+      "thumbSize": 255289,
+      "transcriptFile": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.txt",
+      "transcriptSize": 76359,
+      "docs": [
+        {
+          "file": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
+          "type": "local_file",
+          "size": 7984,
+          "ok": true
+        },
+        {
+          "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+          "type": "local_file",
+          "size": 10928,
+          "ok": true
+        },
+        {
+          "file": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.txt",
+          "type": "local_file",
+          "size": 76359,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/ZOOM-02-Chien-luoc-kenh-san-xuat.png",
+      "screenshotSize": 681065,
+      "status": "PASS"
+    },
+    {
+      "lesson": 135,
+      "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
+      "title": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
+      "videoFile": "video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm",
+      "videoSize": 300619595,
+      "thumbFile": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.png",
+      "thumbSize": 192634,
+      "transcriptFile": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.txt",
+      "transcriptSize": 62103,
+      "docs": [
+        {
+          "file": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
+          "type": "local_file",
+          "size": 7967,
+          "ok": true
+        },
+        {
+          "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+          "type": "local_file",
+          "size": 10928,
+          "ok": true
+        },
+        {
+          "file": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.txt",
+          "type": "local_file",
+          "size": 62103,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/ZOOM-03-Quy-trinh-tool-toi-uu.png",
+      "screenshotSize": 704309,
+      "status": "PASS"
+    },
+    {
+      "lesson": 136,
+      "sku": "ZOOM-04-Adsense-khang-loi",
+      "title": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+      "videoFile": "video/ZOOM-04-Adsense-khang-loi/ZOOM-04-Adsense-khang-loi.webm",
+      "videoSize": 119352148,
+      "thumbFile": "assets/thumbs/ZOOM-04-Adsense-khang-loi.png",
+      "thumbSize": 180168,
+      "transcriptFile": "video/ZOOM-04-Adsense-khang-loi/transcript.txt",
+      "transcriptSize": 37004,
+      "docs": [
+        {
+          "file": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
+          "type": "local_file",
+          "size": 6253,
+          "ok": true
+        },
+        {
+          "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
+          "type": "local_file",
+          "size": 10928,
+          "ok": true
+        },
+        {
+          "file": "video/ZOOM-04-Adsense-khang-loi/transcript.txt",
+          "type": "local_file",
+          "size": 37004,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/ZOOM-04-Adsense-khang-loi.png",
+      "screenshotSize": 819042,
+      "status": "PASS"
+    },
+    {
+      "lesson": 137,
+      "sku": "VIDEO-8bc3ce",
+      "title": "Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt",
+      "videoFile": "video/VIDEO-8bc3ce/VIDEO-8bc3ce.mp4",
+      "videoSize": 22211679,
+      "thumbFile": "assets/thumbs/VIDEO-8bc3ce.png",
+      "thumbSize": 15381,
+      "transcriptFile": "video/VIDEO-8bc3ce/transcript.txt",
+      "transcriptSize": 2553,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-8bc3ce/1MFndtUcn7J_phjru1GWS2JQc68k1tBPm69YvTfG7K2c.csv",
+          "type": "local_file",
+          "size": 4317,
+          "ok": true
+        },
+        {
+          "file": "https://drive.google.com/drive/folders/1ZoctNgBXNcAI4DmaNc-ydh0GN1FBC9gM?usp=sharing",
+          "type": "external_link",
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-8bc3ce/SOP-KHANG-LOI-SU-DUNG-LAI-NOI-DUNG-REUP-AUDIO.md",
+          "type": "local_file",
+          "size": 4093,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-8bc3ce/transcript.txt",
+          "type": "local_file",
+          "size": 2553,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-8bc3ce.png",
+      "screenshotSize": 706229,
+      "status": "PASS"
+    },
+    {
+      "lesson": 138,
+      "sku": "VIDEO-d56768",
+      "title": "Share ngách bán content view Việt mới nhất 09-09-2026",
+      "videoFile": "video/VIDEO-d56768/VIDEO-d56768.mp4",
+      "videoSize": 69120634,
+      "thumbFile": "assets/thumbs/VIDEO-d56768.png",
+      "thumbSize": 42060,
+      "transcriptFile": "video/VIDEO-d56768/transcript.txt",
+      "transcriptSize": 6340,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-d56768/SOP-NGACH-DRAMA-GIA-DINH-VA-SUC-KHOE-VIEW-VIET.md",
+          "type": "local_file",
+          "size": 4162,
+          "ok": true
+        },
+        {
+          "file": "https://h2dev.vn/learn/study/tang-prompt-master-tu-nhan-ban-sang-moi-thi-truong-bat-ky-mong-muon-huong-dan-thuc-chien?ref=H2DEV-001",
+          "type": "external_link",
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-d56768.png",
+      "screenshotSize": 817603,
+      "status": "PASS"
+    },
+    {
+      "lesson": 139,
+      "sku": "VIDEO-989053",
+      "title": "Update key(ngách nhỏ) thị trường US Hoa Kỳ + Hàn",
+      "videoFile": "video/VIDEO-989053/VIDEO-989053.mp4",
+      "videoSize": 72357964,
+      "thumbFile": "assets/thumbs/VIDEO-989053.png",
+      "thumbSize": 43245,
+      "transcriptFile": "video/VIDEO-989053/transcript.txt",
+      "transcriptSize": 7699,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-989053/SOP-NGACH-MAY-MAN-PHONG-THUY-US-VA-SUC-KHOE-SENIOR-HAN.md",
+          "type": "local_file",
+          "size": 3804,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-989053.png",
+      "screenshotSize": 842874,
+      "status": "PASS"
+    },
+    {
+      "lesson": 140,
+      "sku": "VIDEO-0bb86b",
+      "title": "Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật",
+      "videoFile": "video/VIDEO-0bb86b/VIDEO-0bb86b.mp4",
+      "videoSize": 116680980,
+      "thumbFile": "assets/thumbs/VIDEO-0bb86b.png",
+      "thumbSize": 40035,
+      "transcriptFile": "video/VIDEO-0bb86b/transcript.txt",
+      "transcriptSize": 10528,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-0bb86b/SOP-NGACH-TRIET-LY-TIEN-BAC-HAN-VA-DRAMA-SUKATTO-NHAT.md",
+          "type": "local_file",
+          "size": 4694,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-0bb86b/transcript.txt",
+          "type": "local_file",
+          "size": 10528,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-0bb86b.png",
+      "screenshotSize": 515365,
+      "status": "PASS"
+    },
+    {
+      "lesson": 141,
+      "sku": "VIDEO-0be6c9",
+      "title": "Kinh khủng với ngách cực nhỏ view Việt - kênh mới 8 video hơn 3 triệu view - bán content ngách người cao tuổi",
+      "videoFile": "video/VIDEO-0be6c9/VIDEO-0be6c9.mp4",
+      "videoSize": 63827639,
+      "thumbFile": "assets/thumbs/VIDEO-0be6c9.png",
+      "thumbSize": 41601,
+      "transcriptFile": "video/VIDEO-0be6c9/transcript.txt",
+      "transcriptSize": 3367,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-0be6c9/SOP-NGACH-NGUOI-CAO-TUOI-TAM-SU-GIA-DINH-VIET-NAM.md",
+          "type": "local_file",
+          "size": 4685,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-0be6c9/transcript.txt",
+          "type": "local_file",
+          "size": 3367,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-0be6c9.png",
+      "screenshotSize": 855358,
+      "status": "PASS"
+    },
+    {
+      "lesson": 142,
+      "sku": "VIDEO-a85eac",
+      "title": "Khám kênh và Update share ngách nhỏ thị trường Hàn mới nhất 29-09-2026",
+      "videoFile": "video/VIDEO-a85eac/VIDEO-a85eac.mp4",
+      "videoSize": 105191113,
+      "thumbFile": "assets/thumbs/VIDEO-a85eac.png",
+      "thumbSize": 42035,
+      "transcriptFile": "video/VIDEO-a85eac/transcript.txt",
+      "transcriptSize": 7635,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-a85eac/SOP-DAO-KEY-DUONG-SINH-SUC-KHOE-THI-TRUONG-HAN.md",
+          "type": "local_file",
+          "size": 3573,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-a85eac/transcript.txt",
+          "type": "local_file",
+          "size": 7635,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-a85eac.png",
+      "screenshotSize": 830084,
+      "status": "PASS"
+    },
+    {
+      "lesson": 143,
+      "sku": "VIDEO-043d15",
+      "title": "*Thực chiến Hướng dẫn train prompt và làm kịch bản ngách nhỏ key sức khỏe thị trường Hàn Quốc | Update 02-10-2026",
+      "videoFile": "video/VIDEO-043d15/VIDEO-043d15.mp4",
+      "videoSize": 148545704,
+      "thumbFile": "assets/thumbs/VIDEO-043d15.png",
+      "thumbSize": 42307,
+      "transcriptFile": "video/VIDEO-043d15/transcript.txt",
+      "transcriptSize": 22794,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-043d15/195NXjEWBarcA8_gl2OFoQB3jT1FPRUDakGHCyJGW4eo.csv",
+          "type": "local_file",
+          "size": 309,
+          "ok": true
+        },
+        {
+          "file": "https://www.youtube-transcript.io/",
+          "type": "external_link",
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-043d15/1DOSPEUUwZbsor6VAxvmmb906peyYHB8T.zip",
+          "type": "local_file",
+          "size": 12127,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-043d15/SKILL-kichban-bapsang-kr.md",
+          "type": "local_file",
+          "size": 20149,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-043d15/PHAN-TICH-DOI-THU-KR.md",
+          "type": "local_file",
+          "size": 3535,
+          "ok": true
+        },
+        {
+          "file": "assets/docs/VIDEO-043d15/SOP-TRAIN-PROMPT-CLAUDE-SKILL-3-CHE-DO-KICH-BAN-SUC-KHOE-HAN.md",
+          "type": "local_file",
+          "size": 3844,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-043d15/transcript.txt",
+          "type": "local_file",
+          "size": 22794,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-043d15.png",
+      "screenshotSize": 934844,
+      "status": "PASS"
+    },
+    {
+      "lesson": 144,
+      "sku": "VIDEO-a59a5e",
+      "title": "Update share 2 ngách mới kênh mới hoàn toàn | Mới nhất 08-10-2026",
+      "videoFile": "video/VIDEO-a59a5e/VIDEO-a59a5e.mp4",
+      "videoSize": 73591756,
+      "thumbFile": "assets/thumbs/VIDEO-a59a5e.png",
+      "thumbSize": 42889,
+      "transcriptFile": "video/VIDEO-a59a5e/transcript.txt",
+      "transcriptSize": 3966,
+      "docs": [
+        {
+          "file": "assets/docs/VIDEO-a59a5e/SOP-2-NGACH-MOI-LAM-VUON-MUA-THU-VA-TRIET-HOC-FEYNMAN.md",
+          "type": "local_file",
+          "size": 7999,
+          "ok": true
+        },
+        {
+          "file": "video/VIDEO-a59a5e/transcript.txt",
+          "type": "local_file",
+          "size": 3966,
+          "ok": true
+        }
+      ],
+      "screenshot": "_tmp-proof/part7_8_e2e_screenshots/VIDEO-a59a5e.png",
+      "screenshotSize": 884585,
+      "status": "PASS"
+    }
+  ]
+}

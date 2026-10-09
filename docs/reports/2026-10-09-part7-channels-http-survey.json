@@ -1,0 +1,175 @@
+{
+  "total": 21,
+  "liveCount": 20,
+  "deadCount": 1,
+  "results": [
+    {
+      "name": "@feelrelaxedtv",
+      "handle": "feelrelaxedtv",
+      "url": "https://www.youtube.com/@feelrelaxedtv",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@JaebeolNunmul16",
+      "handle": "JaebeolNunmul16",
+      "url": "https://www.youtube.com/@JaebeolNunmul16",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@心に残る話-y10k",
+      "handle": "心に残る話-y10k",
+      "url": "https://www.youtube.com/@%E5%BF%83%E3%81%AB%E6%AE%8B%E3%82%8B%E8%A9%B1-y10k",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@오늘의삶의지혜",
+      "handle": "오늘의삶의지혜",
+      "url": "https://www.youtube.com/@%EC%98%A4%EB%8A%98%EC%9D%98%EC%82%B6%EC%9D%98%EC%A7%80%ED%98%9C",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@Haythauhieuchuyendoi",
+      "handle": "Haythauhieuchuyendoi",
+      "url": "https://www.youtube.com/@Haythauhieuchuyendoi",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@涙のひと駅",
+      "handle": "涙のひと駅",
+      "url": "https://www.youtube.com/@%E6%B6%99%E3%81%AE%E3%81%B2%E3%81%A8%E9%A7%85",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@사연만남1짱",
+      "handle": "사연만남1짱",
+      "url": "https://www.youtube.com/@%EC%82%AC%EC%97%B0%EB%A7%8C%EB%82%A81%EC%A7%B1",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@simbot2",
+      "handle": "simbot2",
+      "url": "https://www.youtube.com/@simbot2",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@元気な老後-t5d",
+      "handle": "元気な老後-t5d",
+      "url": "https://www.youtube.com/@%E5%85%83%E6%B0%97%E3%81%AA%E8%80%81%E5%BE%8C-t5d",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@tuoigiatuoidep",
+      "handle": "tuoigiatuoidep",
+      "url": "https://www.youtube.com/@tuoigiatuoidep",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@thehealthcode-12",
+      "handle": "thehealthcode-12",
+      "url": "https://www.youtube.com/@thehealthcode-12",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@Faith_Spotlight",
+      "handle": "Faith_Spotlight",
+      "url": "https://www.youtube.com/@Faith_Spotlight",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@ElroiMotivation",
+      "handle": "ElroiMotivation",
+      "url": "https://www.youtube.com/@ElroiMotivation",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@노년기건강길잡이",
+      "handle": "노년기건강길잡이",
+      "url": "https://www.youtube.com/@%EB%85%B8%EB%85%84%EA%B8%B0%EA%B1%B4%EA%B0%95%EA%B8%B8%EC%9E%A1%EC%9D%B4",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@인생의_고수",
+      "handle": "인생의_고수",
+      "url": "https://www.youtube.com/@%EC%9D%B8%EC%83%9D%EC%9D%98_%EA%B3%A0%EC%88%98",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@기적의마인드-w7d",
+      "handle": "기적의마인드-w7d",
+      "url": "https://www.youtube.com/@%EA%B8%B0%EC%A0%81%EC%9D%98%EB%A7%88%EC%9D%B8%EB%93%9C-w7d",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@gyakkyoyori_risukatsu",
+      "handle": "gyakkyoyori_risukatsu",
+      "url": "https://www.youtube.com/@gyakkyoyori_risukatsu",
+      "statusCode": 404,
+      "isDead": true,
+      "redirect": null
+    },
+    {
+      "name": "@인생반전이야기",
+      "handle": "인생반전이야기",
+      "url": "https://www.youtube.com/@%EC%9D%B8%EC%83%9D%EB%B0%98%EC%A0%84%EC%9D%B4%EC%95%BC%EA%B8%B0",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "Daily Stoic",
+      "handle": "DailyStoic",
+      "url": "https://www.youtube.com/@DailyStoic",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "Stoic Journal",
+      "handle": "StoicJournal",
+      "url": "https://www.youtube.com/@StoicJournal",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "Marcus Aurelius Wisdom",
+      "handle": "MarcusAureliusWisdom",
+      "url": "https://www.youtube.com/@MarcusAureliusWisdom",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    }
+  ]
+}

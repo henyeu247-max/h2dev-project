@@ -36,3 +36,17 @@
   - `09:53` — Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấ…
   - `15:51` — H subscribe cho k Ghi M G kh b l nh video h d H subscribe cho k L…
 
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** Quy trình A-Z sản xuất video Triết lý Khắc kỷ chất lượng điện ảnh bằng CapCut:
+- Bước 1 (Chọn lọc danh ngôn & Biên tập kịch bản đa tầng): Soạn kịch bản gồm 4 phần: Tỉnh ngộ đời sống - 4 điều cần buông bỏ - 4 phẩm chất cần khắc ghi - Lời khuyên hành động mỗi sớm mai.
+- Bước 2 (Thu âm & Tinh chỉnh Voice AI trầm ấm): Dùng giọng đọc nam trung niên trầm ấm (ElevenLabs hoặc CapCut Pro Voice), hạ tông nhẹ (-1 semitone), lọc ồn và thêm chút reverb tạo độ vang cổ kính.
+- Bước 3 (Xử lý Footage tượng đá & Hiệu ứng khói điện ảnh): Chọn video/ảnh tượng đá Hy Lạp độ nét cao, áp dụng hiệu ứng chuyển động chậm (Slow zoom 1.05x), phủ lớp hạt phim (Film grain) và khói mờ ảo (Cinematic smoke overlay 18%).
+- Bước 4 (Đồng bộ phụ đề chạy từng từ): Dùng tính năng Auto-captions tạo phụ đề tiếng Việt chuẩn, font chữ có chân trang nhã (Cinzel / Garamond / Playfair Display), chữ màu vàng kim hoặc trắng viền đen mỏng.
+- Bước 5 (Phối âm thanh ASMR nền thư giãn): Lồng tiếng mưa rơi đêm tĩnh mịch hoặc tiếng củi lửa lò sưởi lách tách ở mức -24dB, đảm bảo không át tiếng giọng đọc triết lý.
+
+### Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags)
+- [x] **Tránh vi phạm:** Tránh chọn nhạc nền có tiết tấu nhanh, dồn dập phá vỡ không gian tĩnh lặng của triết lý khắc kỷ.
+- [x] **Tránh vi phạm:** Không dùng font chữ hoạt hình uốn lượn lòe loẹt làm mất tính uy nghiêm, trang trọng của bài giảng.
+- [x] **Tránh vi phạm:** Tránh các nội dung phán xét cực đoan hoặc lời khuyên tiêu cực làm tổn thương tâm lý người nghe.

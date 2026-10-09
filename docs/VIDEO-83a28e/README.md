@@ -2,39 +2,50 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-83a28e`
-- **Tiêu đề:** UPDATE KEY 13/10/2025 - SHARE (Ngách Nhỏ) Thị Trường Hàn
-- **Chủ đề thực tế:** UPDATE KEY 13/10/2025 - SHARE (Ngách Nhỏ) Thị Trường Hàn
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Toàn cầu / Ngoại (Mã: `GLOBAL`)
-- **Thời lượng:** 06:05
-- **Dung lượng MP4:** 32.5 MB
-- **File Video:** [`video/VIDEO-83a28e/VIDEO-83a28e.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-83a28e/VIDEO-83a28e.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-83a28e.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-83a28e.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-key-13102025-share-ngach-nho-thi-truong-han](https://h2dev.vn/learn/study/update-key-13102025-share-ngach-nho-thi-truong-han)
+- **Bài học:** #102
+- **Tiêu đề bài giảng:** UPDATE KEY 13/10/2025 - SHARE (Ngách Nhỏ) Thị Trường Hàn
+- **Thị trường mục tiêu:** 🇰🇷 Hàn
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-83a28e.png`
+- **Trạng thái DRM:** Có bảo vệ bản quyền
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-key-13102025-share-ngach-nho-thi-truong-han)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Mọi người sẽ tự biết được cái ngách mới và tự đi một cái ngách khác luôn ấy
-- Đó là lý do tại sao mà em tìm kỳ rất là nhanh và cũng như là rất là nhạy trong cái việc tìm kỳ mới cho mọi người
-- Đấy, những cái kênh đó thì nó không có view, kiểu như nó không có trend cao như này, nhưng mà em share thêm để anh em có thể làm thêm hay là tham khảo thêm nha
-- Đấy, cái này thì em nhắc đi nhắc lại rất là nhiều rồi
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **튼튼라디오** (`@튼튼라디오`): [Xem kênh](https://www.youtube.com/@%ED%8A%BC%ED%8A%BC%EB%9D%BC%EB%94%94%EC%98%A4) ✅ **[LIVE 200]**
+- **지혜로운하루-k6h** (`@지혜로운하루-k6h`): [Xem kênh](https://www.youtube.com/@%EC%A7%80%ED%98%9C%EB%A1%9C%EC%9A%B4%ED%95%98%EB%A3%A8-k6h) ❌ **[DIE - KÊNH ĐÃ BỊ XÓA 404]** — *Kênh đã bị xóa hoặc đổi handle (HTTP 404)*
+- **지혜샘라디오** (`@지혜샘라디오`): [Xem kênh](https://www.youtube.com/@%EC%A7%80%ED%98%9C%EC%83%98%EB%9D%BC%EB%94%94%EC%98%A4) ✅ **[LIVE 200]**
+- **노을빛시간** (`@노을빛시간`): [Xem kênh](https://www.youtube.com/@%EB%85%B8%EC%9D%84%EB%B9%9B%EC%8B%9C%EA%B0%84) ✅ **[LIVE 200]**
+- **세월의지혜TV** (`@세월의지혜TV`): [Xem kênh](https://www.youtube.com/@%EC%84%B8%EC%9B%94%EC%9D%98%EC%A7%80%ED%98%9CTV) ❌ **[DIE - KÊNH ĐÃ BỊ XÓA 404]** — *Kênh đã bị xóa hoặc đổi handle (HTTP 404)*
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Thị trường Hàn: Ngách Radio dưỡng sinh & Triết lý sống tuổi già là mỏ vàng chưa khai thác hết.
+2. Tận dụng các từ khóa trị mất ngủ, tĩnh tâm buổi tối và dưỡng lão thu hút người cao tuổi.
+3. Thời lượng video dài từ 15 đến 30 phút giúp tối ưu hóa thời gian giữ chân người xem (AVD).
+4. Khán giả hưu trí tại Hàn Quốc có thời gian rảnh rỗi và thói quen nghe lặp lại nhiều lần.
+5. Học hỏi kỹ thuật kể chuyện từ các kênh top đầu như @튼튼라디오 và @지혜샘라디오.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi em xin chào tất cả mọi người nha
-  - `00:51` — Ngách rất là rộng
-  - `02:25` — Đấy, còn việc của anh em thì cứ làm theo cái quy trình
-  - `03:51` — Cái thứ hai là để cho cái thuật tón á
-  - `04:54` — thì em sẽ để ở mô tẻ cho mọi người
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> Link kênh key
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Sử dụng hình ảnh bối cảnh thiên nhiên mùa thu, hoàng hôn hoặc phòng trà gỗ cổ điển.
+- 2. Dùng giọng đọc AI nam ấm áp, ngữ điệu từ tốn, tốc độ đọc thư thái 105 WPM.
+- 3. Lồng ghép âm thanh tiếng mưa rơi êm dịu hoặc tiếng củi lách tách ở mức -25 dB.
+- 4. Áp dụng hiệu ứng chuyển cảnh Cross Dissolve thời gian 1.5 giây tạo nhịp điệu nhẹ nhàng.
+- 5. Thumbnail thiết kế theo tone màu nâu gỗ hoặc vàng cam ấm áp với font Hangul đậm rõ nét.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh đưa ra các lời khuyên y tế, đơn thuốc hoặc chẩn đoán vi phạm nghiêm trọng chính sách YMYL.**
+2. **Tránh nhạc nền tiết tấu nhanh, sôi động làm hỏng trải nghiệm nghe tĩnh tâm.**
+3. **Tránh chèn hiệu ứng giật chuyển cảnh đột ngột gây khó chịu cho người lớn tuổi.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Link kênh key**: [Tải file / Xem liên kết](https://docs.google.com/spreadsheets/d/1Doz37LNCbNKHtYH4uaraNPSEW3OQRrv5iCfEV-9DQmc/edit?usp=sharing)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-83a28e/transcript.txt)

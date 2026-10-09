@@ -2,36 +2,52 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-ca266f`
-- **Tiêu đề:** Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)
-- **Chủ đề thực tế:** Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 06:31
-- **Dung lượng MP4:** 266.7 MB
-- **File Video:** [`video/VIDEO-ca266f/VIDEO-ca266f.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-ca266f/VIDEO-ca266f.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-ca266f.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-ca266f.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-share-key-moi-27-09-2025-ngach-nho-thi-truong-nhat-ban-hoa-ky-anh-han-quoc](https://h2dev.vn/learn/study/update-share-key-moi-27-09-2025-ngach-nho-thi-truong-nhat-ban-hoa-ky-anh-han-quoc)
+- **Bài học:** #105
+- **Tiêu đề bài giảng:** Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)
+- **Thị trường mục tiêu:** 🇯🇵 Nhật, 🇺🇸 Mỹ, 🇬🇧 Anh, 🇰🇷 Hàn
+- **Ngách nội dung:** Sức Khỏe & Dinh Dưỡng
+- **Thumbnail:** `assets/thumbs/VIDEO-ca266f.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-share-key-moi-27-09-2025-ngach-nho-thi-truong-nhat-ban-hoa-ky-anh-han-quoc)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Nội dung bài học chia sẻ về chủ đề: Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc).
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **ijinmeigench** (`@ijinmeigench`): [Xem kênh](https://www.youtube.com/@ijinmeigench) ❌ **[DIE - KÊNH ĐÃ BỊ XÓA 404]** — *Kênh đã bị xóa hoặc đổi handle (HTTP 404)*
+- **시니어톡톡2025** (`@시니어톡톡2025`): [Xem kênh](https://www.youtube.com/@%EC%8B%9C%EB%8B%88%EC%96%B4%ED%86%A1%ED%86%A12025) ✅ **[LIVE 200]**
+- **KonosukeMatsushitaquote** (`@KonosukeMatsushitaquote`): [Xem kênh](https://www.youtube.com/@KonosukeMatsushitaquote) ❌ **[DIE - KÊNH ĐÃ BỊ XÓA 404]** — *Kênh đã bị xóa hoặc đổi handle (HTTP 404)*
+- **ApocalypseSurvivorsHQ** (`@ApocalypseSurvivorsHQ`): [Xem kênh](https://www.youtube.com/@ApocalypseSurvivorsHQ) ✅ **[LIVE 200]**
+- **ZestRankEverything** (`@ZestRankEverything`): [Xem kênh](https://www.youtube.com/@ZestRankEverything) ✅ **[LIVE 200]**
+- **trueglobe66** (`@trueglobe66`): [Xem kênh](https://www.youtube.com/@trueglobe66) ✅ **[LIVE 200]**
+- **USAMilitaryNews-8** (`@USAMilitaryNews-8`): [Xem kênh](https://www.youtube.com/@USAMilitaryNews-8) ❌ **[DIE - KÊNH ĐÃ BỊ XÓA 404]** — *Kênh đã bị xóa hoặc đổi handle (HTTP 404)*
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Bao quát 4 thị trường Tier 1: Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc với mức RPM $10 - $25.
+2. Ngách Sinh tồn hậu tận thế (Apocalypse Survival) đang tăng trưởng vượt bậc tại Mỹ.
+3. Ngách Danh ngôn lãnh đạo và bài học kinh doanh Nhật Bản có tỷ lệ giữ chân người xem cực cao.
+4. Mô hình Xếp hạng kiến thức tổng hợp (Rank Everything) kích thích tranh luận trong phần bình luận.
+5. Khai thác tư liệu quân sự công khai để dựng các bản tin chiến thuật thu hút triệu view.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi em xin chào tất cả mọi người nha
-  - `00:57` — View cái ngách này là cũng là
-  - `02:20` — Cái đầu tiên là ở Nhật Bản
-  - `03:38` — Anh em mà thích thì anh em cứ làm thôi
-  - `04:36` — Thì kiếm nguồn
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> list kênh key 27/9
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Sử dụng hình ảnh AI phong cách điện ảnh chân thực (Cinematic Photorealism).
+- 2. Giọng lồng tiếng trầm hùng, đĩnh đạc phong cách phim tài liệu quốc tế.
+- 3. Chèn hiệu ứng âm thanh kịch tính (Deep Booms, Risers, Radar beeps) tạo nhịp điệu lôi cuốn.
+- 4. Nhịp cắt chuyển cảnh nhanh 3 - 4 giây đổi góc máy một lần chống quét hình ảnh tĩnh.
+- 5. Thumbnail kết hợp con số ấn tượng và màu sắc tương phản đỏ/vàng trên nền đen.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh tin giả, thuyết âm mưu cực đoan vi phạm nguyên tắc cộng đồng của YouTube.**
+2. **Tránh hình ảnh bạo lực máu me hoặc vũ khí nguy hiểm dính cờ kiểm duyệt.**
+3. **Tránh giật tít clickbait sai lệch hoàn toàn so với nội dung video.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **list kênh key 27/9**: [Tải file / Xem liên kết](https://docs.google.com/spreadsheets/d/1Q1rhStw_0JO6eLR5NLmTv7i5HT_Zvn-KR4KuaaLR7KI/edit?usp=sharing)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-ca266f/transcript.txt)

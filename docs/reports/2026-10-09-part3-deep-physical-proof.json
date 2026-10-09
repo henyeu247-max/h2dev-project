@@ -1,0 +1,994 @@
+{
+  "auditTimestamp": "2026-10-08T23:14:41.001Z",
+  "totalVideosAudited": 20,
+  "allPass": true,
+  "consoleErrorsCount": 26,
+  "consoleErrors": [
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 401 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 429 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 429 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 429 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 403 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 404 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 404 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 404 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 404 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 404 ()",
+    "[CONSOLE ERROR] Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "videos": [
+    {
+      "index": 41,
+      "sku": "VIDEO-348217",
+      "title": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
+      "pageTitle": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 4,
+      "channels": [
+        "@사회의어두운심리학",
+        "@kankokugo_ch",
+        "@fuetunojin",
+        "@nhk_docu"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "SOP Khai Thác 2 Ngách Bài Thuốc Bàn Ăn & Năng Lượng Lời Nói (Hàn Quốc - Nhật Bản) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng V",
+      "physicalDocs": [
+        {
+          "title": "SOP Khai Thác 2 Ngách Bài Thuốc Bàn Ăn & Năng Lượng Lời Nói (Hàn Quốc - Nhật Bản)",
+          "file": "assets/docs/VIDEO-348217/SOP-2-NGACH-BAI-THUOC-BAN-AN-VA-NANG-LUONG-LOI-NOI-HAN-NHAT.md",
+          "link": "assets/docs/VIDEO-348217/SOP-2-NGACH-BAI-THUOC-BAN-AN-VA-NANG-LUONG-LOI-NOI-HAN-NHAT.md",
+          "diskExists": true,
+          "sizeBytes": 3945,
+          "lineCount": 48
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-348217/transcript.txt",
+          "link": "video/VIDEO-348217/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 8326,
+          "lineCount": 135
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-348217.png"
+    },
+    {
+      "index": 42,
+      "sku": "VIDEO-f74bb1",
+      "title": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất",
+      "pageTitle": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 4,
+      "channels": [
+        "@노후건강한끼",
+        "@건강백단",
+        "@장수채소습관",
+        "@fuetunojin"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "SOP Khai Thác Ngách Cực Nhỏ Dưa Chuột Trường Thọ & Bữa Ăn Dưỡng Lão 1 Bát (Hàn Quốc) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiến",
+      "physicalDocs": [
+        {
+          "title": "SOP Khai Thác Ngách Cực Nhỏ Dưa Chuột Trường Thọ & Bữa Ăn Dưỡng Lão 1 Bát (Hàn Quốc)",
+          "file": "assets/docs/VIDEO-f74bb1/SOP-NGACH-CUC-NHO-RAU-CU-DUA-CHUOT-VA-DUONG-LAO-HAN-QUOC.md",
+          "link": "assets/docs/VIDEO-f74bb1/SOP-NGACH-CUC-NHO-RAU-CU-DUA-CHUOT-VA-DUONG-LAO-HAN-QUOC.md",
+          "diskExists": true,
+          "sizeBytes": 3202,
+          "lineCount": 46
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-f74bb1/transcript.txt",
+          "link": "video/VIDEO-f74bb1/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 12133,
+          "lineCount": 229
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-f74bb1.png"
+    },
+    {
+      "index": 43,
+      "sku": "VIDEO-1aaf46",
+      "title": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends",
+      "pageTitle": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 6,
+      "channels": [
+        "Kho Bilibili Space Hoạt Hình 3546980485696283",
+        "Kho Bilibili Space Hoạt Hình 3546888691256089",
+        "Kho Bilibili Space Hoạt Hình 3546852697836055",
+        "Kho Bilibili Space Hoạt Hình 3546819541863216",
+        "Kho Bilibili Space Hoạt Hình 1641862092",
+        "Kho Bilibili Space Hoạt Hình 3461566735322013"
+      ],
+      "docsCount": 8,
+      "docsTextPreview": "SOP Chiến Lược Khai Thác Kho Hoạt Hình Bilibili & Reup Bán Content An Toàn 2026 Đọc trực tiếp Mở file local Kho Tài Nguyên Hoạt Họa Bilibili Space 354",
+      "physicalDocs": [
+        {
+          "title": "SOP Chiến Lược Khai Thác Kho Hoạt Hình Bilibili & Reup Bán Content An Toàn 2026",
+          "file": "assets/docs/VIDEO-1aaf46/SOP-CHIEN-LUOC-KHAI-THAC-REUP-HOAT-HINH-BILIBILI-AN-TOAN.md",
+          "link": "assets/docs/VIDEO-1aaf46/SOP-CHIEN-LUOC-KHAI-THAC-REUP-HOAT-HINH-BILIBILI-AN-TOAN.md",
+          "diskExists": true,
+          "sizeBytes": 3166,
+          "lineCount": 33
+        },
+        {
+          "title": "Kho Tài Nguyên Hoạt Họa Bilibili Space 3546980485696283 (Truyện tranh hài hước)",
+          "file": "",
+          "link": "https://space.bilibili.com/3546980485696283?spm_id_from=333.788.upinfo.head.click",
+          "diskExists": false,
+          "sizeBytes": 0,
+          "lineCount": 0
+        },
+        {
+          "title": "Kho Tài Nguyên Hoạt Họa Bilibili Space 3546888691256089 (Tu tiên kiếm hiệp)",
+          "file": "",
+          "link": "https://space.bilibili.com/3546888691256089?spm_id_from=333.788.upinfo.head.click",
+          "diskExists": false,
+          "sizeBytes": 0,
+          "lineCount": 0
+        },
+        {
+          "title": "Kho Tài Nguyên Hoạt Họa Bilibili Space 3546852697836055 (Gia đình đô thị)",
+          "file": "",
+          "link": "https://space.bilibili.com/3546852697836055?spm_id_from=333.788.upinfo.head.click",
+          "diskExists": false,
+          "sizeBytes": 0,
+          "lineCount": 0
+        },
+        {
+          "title": "Kho Tài Nguyên Hoạt Họa Bilibili Space 3546819541863216 (Cổ trang xuyên không)",
+          "file": "",
+          "link": "https://space.bilibili.com/3546819541863216?spm_id_from=333.788.upinfo.head.click",
+          "diskExists": false,
+          "sizeBytes": 0,
+          "lineCount": 0
+        },
+        {
+          "title": "Kho Tài Nguyên Hoạt Họa Bilibili Space 1641862092 (Đạo lý nhân sinh)",
+          "file": "",
+          "link": "https://space.bilibili.com/1641862092?spm_id_from=333.788.upinfo.head.click",
+          "diskExists": false,
+          "sizeBytes": 0,
+          "lineCount": 0
+        },
+        {
+          "title": "Kho Tài Nguyên Hoạt Họa Bilibili Space 3461566735322013 (Anime 2D sáng tạo)",
+          "file": "",
+          "link": "https://space.bilibili.com/3461566735322013?spm_id_from=333.788.upinfo.head.click",
+          "diskExists": false,
+          "sizeBytes": 0,
+          "lineCount": 0
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-1aaf46/transcript.txt",
+          "link": "video/VIDEO-1aaf46/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 11549,
+          "lineCount": 224
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-1aaf46.png"
+    },
+    {
+      "index": 44,
+      "sku": "VIDEO-21956b",
+      "title": "Update ngách nhân bản thị trường Hàn, Nhật và Việt",
+      "pageTitle": "Update ngách nhân bản thị trường Hàn, Nhật và Việt — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 8,
+      "channels": [
+        "@KapitalKompass-US",
+        "@LamNgo-qz3bw",
+        "@長生きの秘訣22",
+        "@노후의삶-s1s",
+        "@songkhoekhivegia",
+        "@Jinseioiyasukotoba",
+        "@Songkhoetungngay365",
+        "@늦기전에알아야할것"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-21956b/README.md",
+          "link": "docs/VIDEO-21956b/README.md",
+          "diskExists": true,
+          "sizeBytes": 3489,
+          "lineCount": 45
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-21956b/transcript.txt",
+          "link": "video/VIDEO-21956b/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 11481,
+          "lineCount": 219
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-21956b.png"
+    },
+    {
+      "index": 45,
+      "sku": "VIDEO-34c92b",
+      "title": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường",
+      "pageTitle": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 2,
+      "channels": [
+        "Kênh nhân bản thị trường Nhật Bản trong bài học",
+        "Kênh nhân bản thị trường Hàn Quốc trong bài học"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-34c92b/README.md",
+          "link": "docs/VIDEO-34c92b/README.md",
+          "diskExists": true,
+          "sizeBytes": 2657,
+          "lineCount": 39
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-34c92b/transcript.txt",
+          "link": "video/VIDEO-34c92b/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 10511,
+          "lineCount": 187
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-34c92b.png"
+    },
+    {
+      "index": 46,
+      "sku": "VIDEO-84a039",
+      "title": "Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất",
+      "pageTitle": "Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 2,
+      "channels": [
+        "@asuhetsudukumichi",
+        "@イエスのアファメーション"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-84a039/README.md",
+          "link": "docs/VIDEO-84a039/README.md",
+          "diskExists": true,
+          "sizeBytes": 2936,
+          "lineCount": 42
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-84a039/transcript.txt",
+          "link": "video/VIDEO-84a039/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 12255,
+          "lineCount": 260
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-84a039.png"
+    },
+    {
+      "index": 47,
+      "sku": "VIDEO-817ae6",
+      "title": "Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật",
+      "pageTitle": "Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 2,
+      "channels": [
+        "@meophongthuy-m7d",
+        "@プレアデス最終通知556"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-817ae6/README.md",
+          "link": "docs/VIDEO-817ae6/README.md",
+          "diskExists": true,
+          "sizeBytes": 3118,
+          "lineCount": 42
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-817ae6/transcript.txt",
+          "link": "video/VIDEO-817ae6/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 7355,
+          "lineCount": 119
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-817ae6.png"
+    },
+    {
+      "index": 48,
+      "sku": "VIDEO-2de9e4",
+      "title": "Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách)",
+      "pageTitle": "Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách) — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 3,
+      "channels": [
+        "@ThựcPhẩmSứcKhoẻ-u8y",
+        "@kienthucthanhoc9",
+        "@PHONGTHUYTIEMTANG"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-2de9e4/README.md",
+          "link": "docs/VIDEO-2de9e4/README.md",
+          "diskExists": true,
+          "sizeBytes": 3047,
+          "lineCount": 43
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-2de9e4/transcript.txt",
+          "link": "video/VIDEO-2de9e4/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 5788,
+          "lineCount": 97
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-2de9e4.png"
+    },
+    {
+      "index": 49,
+      "sku": "VIDEO-2ba0d1",
+      "title": "Update ngách mới thị trường Nhật Bản làm bán content",
+      "pageTitle": "Update ngách mới thị trường Nhật Bản làm bán content — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 3,
+      "channels": [
+        "@izinnokatari",
+        "@kotobano-housekibako",
+        "@IjinNoNouri"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-2ba0d1/README.md",
+          "link": "docs/VIDEO-2ba0d1/README.md",
+          "diskExists": true,
+          "sizeBytes": 3092,
+          "lineCount": 46
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-2ba0d1/transcript.txt",
+          "link": "video/VIDEO-2ba0d1/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 7771,
+          "lineCount": 147
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-2ba0d1.png"
+    },
+    {
+      "index": 50,
+      "sku": "VIDEO-2277b3",
+      "title": "Share thêm ngách nhỏ thị trường Việt và phân tích hướng dẫn tư duy làm nhân bản tất cả các thị trường",
+      "pageTitle": "Share thêm ngách nhỏ thị trường Việt và phân tích hướng dẫn tư duy làm nhân bản tất cả các thị trường — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 2,
+      "channels": [
+        "Kênh ngách nhỏ triết lý thị trường Việt Nam",
+        "Kênh nhân bản đa thị trường H2DEV"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-2277b3/README.md",
+          "link": "docs/VIDEO-2277b3/README.md",
+          "diskExists": true,
+          "sizeBytes": 2796,
+          "lineCount": 39
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-2277b3/transcript.txt",
+          "link": "video/VIDEO-2277b3/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 12415,
+          "lineCount": 250
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-2277b3.png"
+    },
+    {
+      "index": 51,
+      "sku": "VIDEO-ca0b1a",
+      "title": "Show kênh thực chiến không che - hướng dẫn quy trình làm bán content nhân bản thị trường US sang Việt",
+      "pageTitle": "Show kênh thực chiến không che - hướng dẫn quy trình làm bán content nhân bản thị trường US sang Việt — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 1,
+      "channels": [
+        "Kênh thực chiến bán content nhân bản US sang Việt"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Tài Nguyên Kịch Bản & Bộ Prompt Bán Content Nhân Bản US Sang Việt (Docs Offline) Google Docs Đọc trực tiếp ↗ Google Docs Mở file local Lời thoại phụ đ",
+      "physicalDocs": [
+        {
+          "title": "Tài Nguyên Kịch Bản & Bộ Prompt Bán Content Nhân Bản US Sang Việt (Docs Offline)",
+          "file": "assets/docs/VIDEO-ca0b1a/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y.txt",
+          "link": "https://docs.google.com/document/d/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y/edit?usp=sharing",
+          "diskExists": true,
+          "sizeBytes": 10773,
+          "lineCount": 175
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-ca0b1a/transcript.txt",
+          "link": "video/VIDEO-ca0b1a/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 38920,
+          "lineCount": 795
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-ca0b1a.png"
+    },
+    {
+      "index": 52,
+      "sku": "VIDEO-469cb5",
+      "title": "Update thêm kênh đối thủ - ngách thị trường Hoa Kỳ (US)",
+      "pageTitle": "Update thêm kênh đối thủ - ngách thị trường Hoa Kỳ (US) — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 5,
+      "channels": [
+        "@biblemadeclear26",
+        "@scripturemadesimpleyt",
+        "@ScriptureMadeSimpleTV",
+        "@theopenscriptures",
+        "@BibleLegacyAssets98"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-469cb5/README.md",
+          "link": "docs/VIDEO-469cb5/README.md",
+          "diskExists": true,
+          "sizeBytes": 2779,
+          "lineCount": 45
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-469cb5/transcript.txt",
+          "link": "video/VIDEO-469cb5/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 3333,
+          "lineCount": 68
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-469cb5.png"
+    },
+    {
+      "index": 53,
+      "sku": "VIDEO-7312df",
+      "title": "Bật kiếm tiền cho 2 kênh làm Reup hoạt hình - Show kênh không che",
+      "pageTitle": "Bật kiếm tiền cho 2 kênh làm Reup hoạt hình - Show kênh không che — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 2,
+      "channels": [
+        "Kênh Reup hoạt hình 1 bật kiếm tiền (Bài học H2DEV)",
+        "Kênh Reup hoạt hình 2 bật kiếm tiền (Bài học H2DEV)"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-7312df/README.md",
+          "link": "docs/VIDEO-7312df/README.md",
+          "diskExists": true,
+          "sizeBytes": 2353,
+          "lineCount": 36
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-7312df/transcript.txt",
+          "link": "video/VIDEO-7312df/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 1484,
+          "lineCount": 21
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-7312df.png"
+    },
+    {
+      "index": 54,
+      "sku": "VIDEO-2235fb",
+      "title": "Show kênh REUP nhân bản thị trường Hoa Kỳ, view cực kỳ kinh khủng + thêm kênh thị trường Thái Lan và hướng dẫn tư duy làm đúng ngách đúng thị trường auto có view",
+      "pageTitle": "Show kênh REUP nhân bản thị trường Hoa Kỳ, view cực kỳ kinh khủng + thêm kênh thị trường Thái Lan và hướng dẫn tư duy làm đúng ngách đúng thị trường auto có view — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 2,
+      "channels": [
+        "Kênh Reup nhân bản thị trường Hoa Kỳ (Bài học)",
+        "Kênh Reup thị trường Thái Lan (Bài học)"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-2235fb/README.md",
+          "link": "docs/VIDEO-2235fb/README.md",
+          "diskExists": true,
+          "sizeBytes": 3131,
+          "lineCount": 39
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-2235fb/transcript.txt",
+          "link": "video/VIDEO-2235fb/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 5459,
+          "lineCount": 73
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-2235fb.png"
+    },
+    {
+      "index": 55,
+      "sku": "VIDEO-e9e879",
+      "title": "Thực chiến & Show kênh ngách làm reup mới bật kiếm tiền - Full quy trình thực chiến sản xuất video -> đăng video lên kênh không che ",
+      "pageTitle": "Thực chiến & Show kênh ngách làm reup mới bật kiếm tiền - Full quy trình thực chiến sản xuất video -> đăng video lên kênh không che — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 1,
+      "channels": [
+        "Kênh Reup thực chiến H2DEV bật kiếm tiền đầu tháng 5"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-e9e879/README.md",
+          "link": "docs/VIDEO-e9e879/README.md",
+          "diskExists": true,
+          "sizeBytes": 2831,
+          "lineCount": 39
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-e9e879/transcript.txt",
+          "link": "video/VIDEO-e9e879/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 11886,
+          "lineCount": 230
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-e9e879.png"
+    },
+    {
+      "index": 56,
+      "sku": "VIDEO-b1208e",
+      "title": "KÊNH BUILD ĐÚNG 7 NGÀY - SHARE THÊM 3 NGÁCH CỰC NHỎ REUP MỚI NHẤT CỰC TRENDS",
+      "pageTitle": "KÊNH BUILD ĐÚNG 7 NGÀY - SHARE THÊM 3 NGÁCH CỰC NHỎ REUP MỚI NHẤT CỰC TRENDS — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 3,
+      "channels": [
+        "Kênh Reup hoạt hình cổ trang Trung Cổ (Bài học)",
+        "Kênh Reup hoạt hình hiện đại (Bài học)",
+        "Kênh Reup hoạt hình đam mỹ / tình cảm (Bài học)"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-b1208e/README.md",
+          "link": "docs/VIDEO-b1208e/README.md",
+          "diskExists": true,
+          "sizeBytes": 2484,
+          "lineCount": 39
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-b1208e/transcript.txt",
+          "link": "video/VIDEO-b1208e/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 5791,
+          "lineCount": 88
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-b1208e.png"
+    },
+    {
+      "index": 57,
+      "sku": "VIDEO-1acb10",
+      "title": "SHARE NGÁCH REUP HOẠT HÌNH TRUNG QUỐC RẤT TRENDS FULL BỘ MỚI NHẤT",
+      "pageTitle": "SHARE NGÁCH REUP HOẠT HÌNH TRUNG QUỐC RẤT TRENDS FULL BỘ MỚI NHẤT — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 2,
+      "channels": [
+        "Kênh Reup hoạt hình tu tiên Trung Quốc (16 video)",
+        "Kênh Reup hoạt hình 2D cổ trang (Hơn 200 video)"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-1acb10/README.md",
+          "link": "docs/VIDEO-1acb10/README.md",
+          "diskExists": true,
+          "sizeBytes": 2273,
+          "lineCount": 39
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-1acb10/transcript.txt",
+          "link": "video/VIDEO-1acb10/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 5078,
+          "lineCount": 104
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-1acb10.png"
+    },
+    {
+      "index": 58,
+      "sku": "VIDEO-70f1f1",
+      "title": "KEY BÁN CONTENT NGÁCH NHỎ ĐỨC PHẬT VÀ CHÚA THỊ TRƯỜNG HÀN QUỐC",
+      "pageTitle": "KEY BÁN CONTENT NGÁCH NHỎ ĐỨC PHẬT VÀ CHÚA THỊ TRƯỜNG HÀN QUỐC — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 3,
+      "channels": [
+        "@こころの道しるべブッダの教え",
+        "@은빛복음",
+        "@주님의손길-handofgod"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-70f1f1/README.md",
+          "link": "docs/VIDEO-70f1f1/README.md",
+          "diskExists": true,
+          "sizeBytes": 3040,
+          "lineCount": 43
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-70f1f1/transcript.txt",
+          "link": "video/VIDEO-70f1f1/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 4910,
+          "lineCount": 61
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-70f1f1.png"
+    },
+    {
+      "index": 59,
+      "sku": "VIDEO-33f474",
+      "title": "CHỈ MỚI 5 VIDEO - KÊNH MỚI LẬP 14/04/2026 NỔ VIEW QUÁ KHIẾP VỚI NGÁCH TÂM LINH, LUẬT HẤP DẪN THỊ TRƯỜNG NHẬT BẢN ",
+      "pageTitle": "CHỈ MỚI 5 VIDEO - KÊNH MỚI LẬP 14/04/2026 NỔ VIEW QUÁ KHIẾP VỚI NGÁCH TÂM LINH, LUẬT HẤP DẪN THỊ TRƯỜNG NHẬT BẢN — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 3,
+      "channels": [
+        "@金龍巫女みこと",
+        "@心を磨く言葉たち",
+        "@偉人の智慧"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-33f474/README.md",
+          "link": "docs/VIDEO-33f474/README.md",
+          "diskExists": true,
+          "sizeBytes": 3335,
+          "lineCount": 41
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-33f474/transcript.txt",
+          "link": "video/VIDEO-33f474/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 7329,
+          "lineCount": 97
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-33f474.png"
+    },
+    {
+      "index": 60,
+      "sku": "VIDEO-28bb9b",
+      "title": "SHARE NGÁCH REUP CỰC TRENDS VÀ 3 NGÁCH BÁN CONTENT VIEW VIỆT - CLONE THEO ĐỐI THỦ",
+      "pageTitle": "SHARE NGÁCH REUP CỰC TRENDS VÀ 3 NGÁCH BÁN CONTENT VIEW VIỆT - CLONE THEO ĐỐI THỦ — H2DEV Project",
+      "status": "PASS",
+      "hasUndefinedDocs": false,
+      "hasUndefinedChannels": false,
+      "hasUndefinedInsights": false,
+      "channelsCount": 2,
+      "channels": [
+        "Kênh Reup hoạt hình mới bật kiếm tiền bàn giao học viên",
+        "Kênh bán content triết lý cổ nhân view Việt"
+      ],
+      "docsCount": 2,
+      "docsTextPreview": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README) Đọc trực tiếp Mở file local Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ) Đọc trực tiếp Mở",
+      "physicalDocs": [
+        {
+          "title": "Hồ sơ kỹ thuật & Hướng dẫn phân tích bài học (README)",
+          "file": "docs/VIDEO-28bb9b/README.md",
+          "link": "docs/VIDEO-28bb9b/README.md",
+          "diskExists": true,
+          "sizeBytes": 2579,
+          "lineCount": 39
+        },
+        {
+          "title": "Lời thoại phụ đề gốc (Transcript tiếng Việt đầy đủ)",
+          "file": "video/VIDEO-28bb9b/transcript.txt",
+          "link": "video/VIDEO-28bb9b/transcript.txt",
+          "diskExists": true,
+          "sizeBytes": 5127,
+          "lineCount": 85
+        }
+      ],
+      "insightsCheck": {
+        "takeawaysCount": 5,
+        "sopCount": 5,
+        "avoidCount": 3,
+        "verified": true
+      },
+      "screenshot": "_tmp-proof/part3_audit_screenshots/proof_VIDEO-28bb9b.png"
+    }
+  ],
+  "youtubePhysicalEvidence": [
+    {
+      "handle": "@노후건강한끼",
+      "type": "LIVE",
+      "url": "https://www.youtube.com/@%EB%85%B8%ED%9B%84%EA%B1%B4%EA%B0%95%ED%95%9C%EB%81%BC",
+      "httpStatus": 200,
+      "detected404": false,
+      "screenshot": "_tmp-proof/part3_audit_screenshots/yt_LIVE__노후건강한끼.png"
+    },
+    {
+      "handle": "@KapitalKompass-US",
+      "type": "LIVE",
+      "url": "https://www.youtube.com/@KapitalKompass-US",
+      "httpStatus": 200,
+      "detected404": false,
+      "screenshot": "_tmp-proof/part3_audit_screenshots/yt_LIVE__KapitalKompass-US.png"
+    },
+    {
+      "handle": "@biblemadeclear26",
+      "type": "LIVE",
+      "url": "https://www.youtube.com/@biblemadeclear26",
+      "httpStatus": 200,
+      "detected404": false,
+      "screenshot": "_tmp-proof/part3_audit_screenshots/yt_LIVE__biblemadeclear26.png"
+    },
+    {
+      "handle": "@사회의어두운심리학",
+      "type": "DEAD_404",
+      "url": "https://www.youtube.com/@%EC%82%AC%ED%92%8C%EC%9D%98%EC%96%B4%EB%91%90%EC%9A%B4%EC%8B%AC%EB%A6%AC%ED%95%99",
+      "httpStatus": 404,
+      "detected404": true,
+      "screenshot": "_tmp-proof/part3_audit_screenshots/yt_DEAD_404__사회의어두운심리학.png"
+    },
+    {
+      "handle": "@ThựcPhẩmSứcKhoẻ-u8y",
+      "type": "DEAD_404",
+      "url": "https://www.youtube.com/@Th%E1%BB%B1cPh%E1%BA%A9mS%E1%BB%A9cKho%E1%BA%BB-u8y",
+      "httpStatus": 404,
+      "detected404": true,
+      "screenshot": "_tmp-proof/part3_audit_screenshots/yt_DEAD_404__ThựcPhẩmSứcKhoẻ-u8y.png"
+    },
+    {
+      "handle": "@ScriptureMadeSimpleTV",
+      "type": "DEAD_404",
+      "url": "https://www.youtube.com/@ScriptureMadeSimpleTV",
+      "httpStatus": 404,
+      "detected404": true,
+      "screenshot": "_tmp-proof/part3_audit_screenshots/yt_DEAD_404__ScriptureMadeSimpleTV.png"
+    }
+  ]
+}

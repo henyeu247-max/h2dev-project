@@ -2,39 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-3df94e`
-- **Tiêu đề:** Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube
-- **Chủ đề thực tế:** Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Việt Nam (Mã: `VN`)
-- **Thời lượng:** 20:14
-- **Dung lượng MP4:** 363.5 MB
-- **File Video:** [`video/VIDEO-3df94e/VIDEO-3df94e.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-3df94e/VIDEO-3df94e.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-3df94e.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-3df94e.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/hon-18k-thang-kenh-nay-da-kiem-duoc-share-key-view-ngoai-va-quy-trinh-lam-ai-ban-content-youtube](https://h2dev.vn/learn/study/hon-18k-thang-kenh-nay-da-kiem-duoc-share-key-view-ngoai-va-quy-trinh-lam-ai-ban-content-youtube)
+- **Bài học:** #120
+- **Tiêu đề bài giảng:** Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube
+- **Thị trường mục tiêu:** 🇺🇸 Mỹ, 🌐 Ngoại
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-3df94e.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/hon-18k-thang-kenh-nay-da-kiem-duoc-share-key-view-ngoai-va-quy-trinh-lam-ai-ban-content-youtube)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì trước khi vào cái clip share key hôm nay á, thì em show qua một trong những cái kênh em đang làm nha mọi người
-- Đấy, để cho anh em có động lực mà làm nha
-- Về cái key mà hôm nay em share cho mọi người á, là key về cái ngách lịch sử nha mọi người
-- Về em cũng sẽ share cho mọi người cái prompt để mọi người làm cái kịch bản hoàn thiện, và cũng như là làm ra một cái video hoàn thiện luôn nha
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **Kênh Lịch Sử Cổ Đại Đối Thủ (Rome History - $18K/tháng)**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Rồi bây giờ em sẽ vào nghe lại cái video kịch bản góc này và so sánh với cái âm thanh em vừa cầu loan ra nha mọi người
-- **Bổ sung:** Và import cái file âm thanh mà lúc nãy mình vừa clone xong nữa nha
-- **Bổ sung:** Nên em sẽ cắt bớt hết nha mọi người
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ 000 view đúng không anh em Họ được 100
-- ⚠️ 000 view thì mình ít nhất mình bám theo á Thì mình cũng anh được 10
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Bằng chứng doanh thu thực tế hơn $18.000/tháng từ ngách Lịch sử Cổ đại La Mã (Rome History).
+2. Khán giả phương Tây cực kỳ say mê các đế chế cổ đại: La Mã, Hy Lạp, Ai Cập.
+3. Quy trình sản xuất bán content kết hợp tư liệu lịch sử và hình ảnh điện ảnh từ AI.
+4. Khai thác sâu các câu chuyện về chiến thuật quân sự, hoàng đế và những vụ mưu sát cung đình.
+5. Mức RPM ngách lịch sử Tier 1 dao động ấn tượng từ $15 đến $35 trên mỗi 1.000 lượt xem.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Em xin chào tất cả mọi người đã quay trở lại với kênh H2Dip của e…
-  - `03:31` — 100.000 view đúng không anh em
-  - `07:18` — Đấy, về cái vấn đề này á, thì cũng sẽ có nhiều anh em thắc mắc là…
-  - `11:05` — Nhưng mà cái đây là cách làm của em trước giờ
-  - `15:44` — Đấy, còn những cái kia thì nó chia ra để cho anh em có thể đít, c…
+---
 
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Dùng Midjourney tạo hình ảnh tranh sơn dầu điện ảnh về các chiến binh và hoàng đế La Mã.
+- 2. Sử dụng giọng đọc AI nam Anh - Mỹ trầm hùng, phong cách phim tài liệu lịch sử Hollywood.
+- 3. Lồng ghép âm thanh giao hưởng cổ điển hào hùng, tiếng hò reo đấu trường ở mức -22 dB.
+- 4. Thêm hiệu ứng bản đồ chiến thuật quân sự chuyển động 3D mô tả các trận đánh nổi tiếng.
+- 5. Thumbnail làm nổi bật mũ giáp La Mã vàng ánh kim và dòng chữ gây sốc kích thích tò mò.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh sai lệch thông tin lịch sử cơ bản khiến khán giả phương Tây phản ứng tiêu cực.**
+2. **Tránh dùng visual quá hiện đại không đúng với bối cảnh thời kỳ La Mã cổ đại.**
+3. **Tránh kịch bản thiếu cao trào kịch tính khiến tỷ lệ giữ chân người xem bị sụt giảm.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **SOP Thực Chiến — Bán Content Ngách Lịch Sử Cổ Đại (La Mã)**: [Tải file / Xem liên kết](assets/docs/VIDEO-3df94e/SOP-BAN-CONTENT-LICH-SU-CO-DAI-ROME.md)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-3df94e/transcript.txt)

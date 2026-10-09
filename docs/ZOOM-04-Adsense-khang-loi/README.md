@@ -34,3 +34,13 @@ Buổi Zoom 4/4 — **Google AdSense ("gà"), thuế, kháng lỗi, bảo vệ k
 - [ ] Tách gà cho kênh doanh thu cao
 - [ ] Đóng thuế đầy đủ (Mỹ + VN)
 - [ ] Duy trì "đúng, đủ, đều"
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP 5 bước xử lý lỗi Google AdSense, kháng nghị hủy bật kiếm tiền và bảo vệ tài khoản thanh toán:
+- Bước 1 (Chẩn đoán chính xác nguyên nhân bị từ chối BKT): Phân biệt rõ lỗi 'Sử dụng lại nội dung' (Reused Content) vs 'Nội dung lặp lại' (Repetitive Content) qua thông báo trong YouTube Studio và rà soát lại toàn bộ video trên kênh.
+- Bước 2 (Chuẩn bị kịch bản giải trình bằng tiếng Anh chuyên nghiệp): Soạn kịch bản giải trình cấu trúc 4 phần: Giới thiệu kênh - Quy trình sáng tạo nội dung từ đầu - Minh chứng can thiệp giá trị gia tăng - Cam kết tuân thủ chính sách bản quyền.
+- Bước 3 (Quay video giải trình màn hình thực tế có mặt người nói): Sử dụng OBS quay màn hình hiển thị toàn bộ quy trình: Viết kịch bản trên Google Docs, timeline dự án CapCut/Premiere có nhiều layer video/audio tách biệt, và xuất hiện người nói trực tiếp giải thích rõ ràng.
+- Bước 4 (Đồng bộ siêu dữ liệu và dọn dẹp kênh trước khi nộp đơn): Ẩn hoặc xóa các video có nguy cơ cao (video dính bản quyền âm nhạc hoặc visual thô), chuẩn hóa lại toàn bộ tiêu đề, mô tả và thumbnail đảm bảo tính trung thực 100%.
+- Bước 5 (Nộp video kháng nghị và theo dõi phản hồi): Tải video giải trình lên kênh ở chế độ Không công khai (Unlisted) dài 3-5 phút, dán link vào mục Kháng nghị trong tab Kiếm tiền, theo dõi phản hồi từ đội ngũ kiểm duyệt YouTube trong vòng 7-14 ngày.
+

@@ -2,40 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-10ceec`
-- **Tiêu đề:** SHOW NGÁCH REUP MỚI CỰC HOT VÀ NHIỀU NGUỒN GỐC ĐỂ LÀM TỪ BILIBILI
-- **Chủ đề thực tế:** SHOW NGÁCH REUP MỚI CỰC HOT VÀ NHIỀU NGUỒN GỐC ĐỂ LÀM TỪ BILIBILI
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Trung Quốc (Mã: `CN`)
-- **Thời lượng:** 03:27
-- **Dung lượng MP4:** 62.3 MB
-- **File Video:** [`video/VIDEO-10ceec/VIDEO-10ceec.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-10ceec/VIDEO-10ceec.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-10ceec.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-10ceec.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/show-ngach-reup-moi-cuc-hot-va-nhieu-nguon-goc-de-lam-tu-bilibili](https://h2dev.vn/learn/study/show-ngach-reup-moi-cuc-hot-va-nhieu-nguon-goc-de-lam-tu-bilibili)
+- **Bài học:** #47
+- **Tiêu đề bài giảng:** SHOW NGÁCH REUP MỚI CỰC HOT VÀ NHIỀU NGUỒN GỐC ĐỂ LÀM TỪ BILIBILI
+- **Thị trường mục tiêu:** 🇨🇳 Trung
+- **Ngách nội dung:** Reup & Khai Thác Hoạt Hình
+- **Thumbnail:** `assets/thumbs/VIDEO-10ceec.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/show-ngach-reup-moi-cuc-hot-va-nhieu-nguon-goc-de-lam-tu-bilibili)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Hoàn toàn là re-up từ bên trung kia nha mọi người
-- Thì cái dạng này em có rất là nhiều kênh nguồn gốc luôn
-- Thì tí nữa em show cho anh em xem
-- Thì thấy que thì mọi người thấy cái dạng này thì chủ yếu là đang full tập nha
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@Camnhonvietsub` — [Xem kênh YouTube](https://www.youtube.com/@Camnhonvietsub)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+---
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Công cụ nhắc đến:** `Bilibili`
-- **Timeline chi tiết:**
-  - `00:00` — Ừ rồi em chào mấy bác nha Thì mới có được một cái nách nhỏ hộp hì…
-  - `00:42` — Toàn là mấy chục phút với
-  - `01:31` — Về kênh này còn rất rất nhiều video khác nữa. Đấy thì nói chung đây còn rất nhiều kênh khác nữa. Tí nữa thì e…
-  - `02:35` — Rồi mọi người vào
-  - `02:58` — Ở một module 8 á
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Hoàn toàn là re-up từ bên trung kia nha mọi người
+2. Thì cái dạng này em có rất là nhiều kênh nguồn gốc luôn
+3. Thì tí nữa em show cho anh em xem
+4. Thì thấy que thì mọi người thấy cái dạng này thì chủ yếu là đang full tập nha
+5. 📌 Chiến lược nhân bản thị trường: Tập trung sâu vào 1 ngách nhỏ cốt lõi đang có sóng đề xuất cao trước khi mở rộng sang các chủ đề lân cận, tránh làm phân mảnh tệp khán giả trung thành.
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> KÊNH ĐỐI THỦ NGUỒN GỐC BILIBILI bác nào có cần tool dịch thì nhắn zl e
+---
+
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước tinh chỉnh Master Visual và Audio cho tuyến nội dung dài (Long-form)**
+  + 1. Thiết lập cấu hình khung hình chuẩn 1920x1080 60fps trên phần mềm dựng video chuyên nghiệp.
+  + 2. Phân chia các track âm thanh riêng biệt: Track Voice, Track BGM, Track SFX để dễ kiểm soát âm lượng.
+  + 3. Áp dụng hiệu ứng làm mờ hậu cảnh nhẹ để nhân vật chính luôn nổi bật ở trung tâm.
+  + 4. Chèn watermark nhận diện thương hiệu kênh ở góc trên màn hình với độ mờ 30%.
+  + 5. Xuất file với codec âm thanh AAC 320 kbps cho chất lượng âm thanh trung thực nhất.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh để nhạc nền đè lên dải tần giọng nói khiến người xem nghe không rõ lời thoại.**
+2. **Không đặt watermark quá lớn hoặc che mất các thông tin quan trọng trên màn hình.**
+3. **Tránh thay đổi tỷ lệ khung hình giữa các phân cảnh làm gián đoạn thị giác.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **NGUỒN GỐC BILIBILI**: [Tải file / Xem liên kết](https://space.bilibili.com/292057296?spm_id_from=333.788.upinfo.head.click)

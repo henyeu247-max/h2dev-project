@@ -29,8 +29,8 @@ Y:\YTB\
     │                              #   install-h2dev-{watchdog,noadmin,startup}.ps1 · check-server.ps1
     │                              #   _rereg_watchdog_silent_admin.cmd · h2dev-service-autoreload-hook.ps1 (16/09)
     ├── data\                      # catalog gốc + manifest dẫn xuất — tạo bằng script
-    │   ├── catalog.json               # 140 record (projection gốc)
-    │   ├── catalog_full.json          # 140 record (projection đầy đủ)
+    │   ├── catalog.json               # 144 record (projection gốc)
+    │   ├── catalog_full.json          # 144 record (projection đầy đủ)
     │   ├── modules.json               # 12 module
     │   ├── video_acceptance.json      # trạng thái pilot, QA, blocker — không gọi PASS giả
     │   ├── raw-channels-deep\         # 149 hồ sơ kênh sâu (transcripts/summary/vision) — phục vụ UI
@@ -39,9 +39,9 @@ Y:\YTB\
     │   ├── counts-manifest.json       # manifest số liệu chuẩn tự động sinh bởi sync-counts.js
     │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest  # (2 folder *_backup_* cũ đã dời _archive 16/09)
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
-    │   ├── videos.json            # 140 SKU (27 free · 113 pro — gồm 4 Zoom free)
-    │   ├── kenh-mau.json          # 165 kênh (126 sống · 39 dead ẩn) · ngay_do 165/165
-    │   ├── tai-lieu-full.json     # 157 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
+    │   ├── videos.json            # 144 SKU (27 free · 117 pro — gồm 4 Zoom free)
+    │   ├── kenh-mau.json          # 256 kênh (188 sống · 68 dead ẩn) · ngay_do 256/256
+    │   ├── tai-lieu-full.json     # 300 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
     │   ├── ngach-xanh.json        # 34 ngách (xanh:true 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
     │   ├── chien-luoc.json        # workflow 11 bước · 4 nguyên tắc
@@ -50,7 +50,7 @@ Y:\YTB\
     │   └── raw-kenh-mau.json      # 156 record canonical (149 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 156/156 · vidIQ verified 83
     │
     ├── assets\                    # tailwind.css (BUILD từ css/input.css) · viddar.css · learn.css · player.css · fonts\ (woff2 self-host)
-    │   ├── thumbs\                # 140/140 khớp videos.json + placeholder.svg
+    │   ├── thumbs\                # 144/144 khớp videos.json + placeholder.svg
     │   └── avatars\ · docs\
     ├── docs\
     │   ├── VIDEO-*\               # 136/136 SKU: README + description.html
@@ -70,7 +70,7 @@ Y:\YTB\
     │   └── bible-explainer\
     ├── knowledge-hub\             # archive transcript / NotebookLM
     │
-    ├── video\                     # 140 thư mục: 136 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~21.94 GiB / 23.55 GB) · KHÔNG vào git
+    ├── video\                     # 144 thư mục: 140 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~22.30 GiB / 23.95 GB) · KHÔNG vào git
     ├── inbox\                     # THẢ FILE MỚI VÀO ĐÂY (web bị chặn)
     ├── scripts\                   # validate · sync · intake · clean
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git

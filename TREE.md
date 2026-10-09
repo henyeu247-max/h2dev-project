@@ -40,10 +40,10 @@ Y:\YTB\
     │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest  # (2 folder *_backup_* cũ đã dời _archive 16/09)
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 144 SKU (27 free · 117 pro — gồm 4 Zoom free)
-    │   ├── kenh-mau.json          # 256 kênh (188 sống · 68 dead ẩn) · ngay_do 256/256
+    │   ├── kenh-mau.json          # 256 kênh (194 sống · 62 dead ẩn) · ngay_do 256/256
     │   ├── tai-lieu-full.json     # 300 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
     │   ├── nguon-reup.json        # 27
-    │   ├── ngach-xanh.json        # 34 ngách (xanh:true 11 · CÓ MẪU TĂNG 10 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
+    │   ├── ngach-xanh.json        # 34 ngách (xanh:true 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
     │   ├── chien-luoc.json        # workflow 11 bước · 4 nguyên tắc
     │   ├── kich-ban.json          # 60 — extract cũ, UI không đọc
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)

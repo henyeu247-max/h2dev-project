@@ -23,14 +23,14 @@
   - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
   - Còn **36 review_flags** kiểm tay (không phải data hỏng): A10 19 (thumbnail ≠ nội dung theo vision) · S6 19 (takeaway neo transcript thấp) · S9 15 (xác nhận hình/tiếng bằng heuristic). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).
   → nguồn: `counts-manifest.mediaFiles` + `py -3 scripts/audit_videos_v2.py` + `data/media-review-queue.json`.
-- **Danh bạ kênh mẫu (`kenh-mau.json`):** **256 kênh** (188 live · 68 dead).
+- **Danh bạ kênh mẫu (`kenh-mau.json`):** **256 kênh** (194 live · 62 dead).
   → nguồn: `data-tabs/kenh-mau.json` (Local = VPS = 165). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video (kiểm bằng mắt qua Chromium 2026-09-30); GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).
   → nguồn: `counts-manifest.canonicalRaw` / `canonicalRawUniqueChannels`.
 - **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **300 tài liệu**.
   → nguồn: `data-tabs/tai-lieu-full.json` (Local = VPS = **157**). *(Số cũ ghi 153 là SAI — đã sửa 2026-09-24.)*
   Phân bố: 78 Prompts · 20 Reports · 23 Tools · 16 Lists · 11 Other · 5 Internal-doc · 4 khác.
-- **Ma trận ngách YouTube (`ngach-xanh.json`):** **34 ngách** (`xanh:true` **11** ngách).
+- **Ma trận ngách YouTube (`ngach-xanh.json`):** **34 ngách** (`xanh:true` **10** ngách).
   → nguồn: `data-tabs/ngach-xanh.json` (Local = VPS = 34).
 - **Kho nhạc nền:** **49 tracks** đã audit Gemini Multimodal & FFprobe (36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng).
   → nguồn: rule workspace SSoT + `data/music_catalog.json`. *(Số cũ ghi 38 là SAI — đã sửa 2026-09-24.)*

@@ -1,12 +1,12 @@
 # Báo cáo UI-standard đợt 2 (2026-10-09), cập nhật vòng 3
 
 > **Trạng thái:** PARTIAL. Đợt 2 đã nằm trong commit `800caa4` (commit của việc khác, message không nhắc UI). Vòng 3 (sửa theo quyết định của chủ dự án) nằm trong commit `13c40f5`.
-> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix77`.
+> **Nhánh:** `ui/ui-standard-2026-10-09`. **Commit vòng 3:** `13c40f5` (sau `54872e1` của việc khác; đợt 2 nằm trong `800caa4`, `server.js` của D-05 trong `551be56`). **Phiên bản tài nguyên:** `uifix80`.
 > **Kế hoạch:** `docs/plans/ui-standard-round2.md`. **Bài học:** `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-013 đến 024).
 
 ## 1. Số liệu (12 route × 5 cỡ = 60 tổ hợp)
 
-| Chỉ số | Trước đợt 2 (`a97383a`) | Đầu vòng 3 (`uifix68`) | Cuối vòng 3 (`uifix77`) |
+| Chỉ số | Trước đợt 2 (`a97383a`) | Đầu vòng 3 (`uifix68`) | Cuối vòng 3 (`uifix80`) |
 |---|---|---|---|
 | Mồ côi (`orphanRows`) | 36 | 2 | **0** |
 | Vùng chạm dưới 24 px (`smallTargets`) | — | 0 | 0 |
@@ -66,7 +66,7 @@
 ## 7. Thay đổi trong vòng 3 (đã commit trên nhánh)
 
 - `assets/viddar.css`: hàng có nhãn đến 4 chip chia đều từ 641 px (D-06); nút "Đi nhanh" điện thoại 2 cột (D-09); nhãn KPI `text-wrap: balance` (D-07). Các chip khác giữ hành vi của đợt 2. Chip chia đều thêm `min-width: max-content` (bên đọc độc lập đo lỗi xuống dòng ở 641–659 px). Thanh topbar đúng 6 nút trên điện thoại giữ một hàng, dải cuộn ngang.
-- `index.html`, `learn.html`, `player.html`, `assets/app/sw.js`: `uifix68` → `uifix77`.
+- `index.html`, `learn.html`, `player.html`, `assets/app/sw.js`: `uifix68` → `uifix80`.
 - `server.js`: route spider chỉ POST kèm header (D-05); đã nằm trong commit `551be56`.
 - Tài liệu: `docs/PROGRESS.md`, `docs/reports/2026-10-09-ui-standard-round2.md`, `docs/solutions/2026-10-09-ui-standard-round2.md` (H2DEV-UI-021 đến 024), `docs/plans/ui-standard-round2.md`, `CHANGELOG.md`, `AGENTS.md` (con trỏ 013 đến 024).
 
@@ -89,7 +89,7 @@
 - Nút "Đọc trực tiếp" ngắt chữ ở 1440 px (`VIDEO-2aa1f7`): chưa sửa.
 - M5 (thiết bị thật): BLOCKED, không có thiết bị.
 
-## 10. Kiểm lại UX, animation, logic và dữ liệu của `/tatca` (2026-10-09, `uifix77`)
+## 10. Kiểm lại UX, animation, logic và dữ liệu của `/tatca` (2026-10-09, `uifix80`)
 
 **Kết quả: PASS cho `/tatca` (toàn dự án vẫn PARTIAL, mục 9), kèm 6 lỗi tìm thấy khi kiểm lại đã sửa.** Mọi con số lấy từ lệnh đo, không ước lượng.
 
@@ -135,3 +135,25 @@
 **Ảnh bằng chứng** (thư mục `scratchpad\ui\check\`): `focus-baitruoc-*`, `focus-taimp4-*`, `focus-moc-thoigian-*`, `focus-kpi-*`, `focus-logo-*` (mỗi loại có `-truoc.png` và `-sau.png`), `focus-sau-tabsidebar.png`, `tailieu-coverr-truoc.png` và `-sau.png`, `tailieu-kpi-truoc.png` và `-sau.png`, `overlay-nhacnen-1440.png`, `overlay-nhacnen-390.png`, `overlay-khac-390.png`. Báo cáo Lighthouse: `scratchpad\ui\lighthouse-mobile-final\report.html`, `scratchpad\ui\lighthouse-desktop-final\report.html`.
 
 **Chưa kiểm:** Firefox và Safari (`:has()`), thiết bị thật, vuốt chạm trên iOS thật (khóa cuộn trên Safari iOS còn có thể khác Chromium).
+
+## 11. Kiểm chứng dữ liệu với nguồn ngoài (2026-10-09, `uifix80`)
+
+Mục 10 chỉ chứng minh dữ liệu **nhất quán nội bộ**. Mục này đối chiếu với thực tế bên ngoài và quét toàn bộ file dữ liệu hiển thị (9 file trong `data-tabs/`, `data/catalog.json`, `data/modules.json`).
+
+**Phạm vi N/N:** 256/256 kênh (HTTP), 7/7 chính sách (5 trang YouTube Help), 144/144 video và 300/300 tài liệu (tham chiếu SKU, file trên đĩa), 34/34 ngách (ngưỡng XANH). Không đo: nhãn thị trường so với nội dung từng video (chỉ thử gần đúng qua chữ viết tên kênh).
+
+| Nhóm | Trạng thái | Ghi chú |
+|---|---|---|
+| Số đếm, tham chiếu SKU, file trên đĩa | Nhất quán | 15/15 số viết tay khớp trước khi sửa; 0 SKU mồ côi; 0 file tài liệu/video/ảnh thiếu |
+| Kênh sống/chết | Đã xác minh ngoài, có sửa | 242 khớp, 14 lệch (5,5%): 8 `dead` sai, 2 sống sai, 4 giữ nguyên (3 rỗng đúng, 1 chưa đủ bằng chứng) |
+| 7 chính sách | Đã xác minh ngoài, có sửa | 6/7 khớp; mục 5 thiếu quy tắc chính thức; mục 6 lỗi thời. Mục 1: chưa đọc được chép lời video gốc |
+| Ngách XANH | Đã sửa 1 | 1/11 dưới ngưỡng ≥2 kênh mẫu còn sống |
+| Từ vựng thị trường | Đã gộp trong `kenh-mau` | Việt Nam/Việt, Hoa Kỳ/Mỹ/US, Toàn cầu/Đa quốc gia |
+| Từ vựng ngách | Chưa chuẩn hóa | 3 bộ tên, 0 trùng giữa videos và ngach-xanh; chờ quyết định bảng ánh xạ |
+| Khoảng trống | Mở | 49/256 kênh thiếu `niche` và `markets`; 8 ngách thiếu `rpm` |
+
+**Hai lỗi hiển thị tìm thấy khi đọc dữ liệu:** (1) thẻ "Kênh mẫu sạch" luôn 0 vì bộ đếm đọc `n.mauSach` trong khi dữ liệu đã làm giàu để ở `n.channels`; nay 51, trùng số tính độc lập từ file. (2) Thẻ "RPM Benchmark $10,22" bỏ mọi ký tự không phải số khỏi văn bản tự do, nên "135.1K" (nhu cầu search) và "407K…" bị tính là RPM; trung vị đúng chỉ do may mắn. Nay chỉ đọc số ngay sau chữ "median" và ghi rõ là benchmark ngành, không phải RPM đo trên kênh mẫu.
+
+**Giới hạn của phép dò kênh:** HTTP 200 chỉ chứng minh kênh còn tồn tại, không chứng minh "đăng trong 30 ngày" hay "còn tăng"; RSS chập chờn (kênh sống vẫn trả 404/500); `channelId` và số sub lấy từ HTML trang bị lẫn phần tử khác nên không được ghi vào dữ liệu. Cờ `dead` trong dữ liệu mang hai nghĩa (404 và "kênh rỗng 0 video"); chưa tách thành hai trạng thái.
+
+**Ảnh và dữ liệu thô** (thư mục `scratchpad\ui\check\`): `du-lieu-kiem-chung.html`, `dulieu-kenh-song-sau.png`, `dulieu-tatca-sau.png`, `dulieu-ngach-haicap-sau.png`; thô: `scratchpad\ui\channel-resolve-live.json`, `channel-resolve-diff.json`, `channel-rss12.json`.

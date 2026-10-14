@@ -2,45 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-a2b317`
-- **Tiêu đề:** CHỈ MỚI 4 VIDEO NGÁCH US (HOA KỲ) NÀY ĐÃ NỔ HƠN GẦN 3 TRIỆU VIEW VÀ ĐANG BẬT KIẾM TIỀN + SHARE THÊM 3 NGÁCH THỊ TRƯỜNG US + NGA VÀ GIẢI THÍCH CHỌN NGÁCH/ THỊ TRƯỜNG LÀM ĐỂ DỄ LÊN NHẤT
-- **Chủ đề thực tế:** CHỈ MỚI 4 VIDEO NGÁCH US (HOA KỲ) NÀY ĐÃ NỔ HƠN GẦN 3 TRIỆU VIEW VÀ ĐANG BẬT KIẾM TIỀN + SHARE THÊM 3 NGÁCH THỊ TRƯỜNG US + NGA VÀ GIẢI THÍCH CHỌN NGÁCH/ THỊ TRƯỜNG LÀM ĐỂ DỄ LÊN NHẤT
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Việt Nam (Mã: `VN`)
-- **Thời lượng:** 07:08
-- **Dung lượng MP4:** 84.5 MB
-- **File Video:** [`video/VIDEO-a2b317/VIDEO-a2b317.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-a2b317/VIDEO-a2b317.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-a2b317.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-a2b317.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/chi-moi-4-video-ngach-us-hoa-ky-nay-da-no-hon-gan-3-trieu-view-va-dang-bat-kiem-tien-share-them-3-ngach-thi-truong-us-nga-va-giai-thich-chon-ngach-thi-truong-lam-de-de-len-nhat](https://h2dev.vn/learn/study/chi-moi-4-video-ngach-us-hoa-ky-nay-da-no-hon-gan-3-trieu-view-va-dang-bat-kiem-tien-share-them-3-ngach-thi-truong-us-nga-va-giai-thich-chon-ngach-thi-truong-lam-de-de-len-nhat)
+- **Bài học:** #59
+- **Tiêu đề bài giảng:** CHỈ MỚI 4 VIDEO NGÁCH US (HOA KỲ) NÀY ĐÃ NỔ HƠN GẦN 3 TRIỆU VIEW VÀ ĐANG BẬT KIẾM TIỀN + SHARE THÊM 3 NGÁCH THỊ TRƯỜNG US + NGA VÀ GIẢI THÍCH CHỌN NGÁCH/ THỊ TRƯỜNG LÀM ĐỂ DỄ LÊN NHẤT
+- **Thị trường mục tiêu:** 🇺🇸 Mỹ, 🇷🇺 Nga, 🌐 Ngoại
+- **Ngách nội dung:** Kháng Bản Quyền & Xử Lý Lỗi GA
+- **Thumbnail:** `assets/thumbs/VIDEO-a2b317.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/chi-moi-4-video-ngach-us-hoa-ky-nay-da-no-hon-gan-3-trieu-view-va-dang-bat-kiem-tien-share-them-3-ngach-thi-truong-us-nga-va-giai-thich-chon-ngach-thi-truong-lam-de-de-len-nhat)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Đó, thì mọi người nhìn qua cái tiêu đề thì mọi người biết cái ngách là về tâm lý của chú chó rồi đúng không
-- Vì view của nó rất là cao luôn, thấy không mọi người
-- Nhưng mà mọi người có đỡ ý không
-- Là video của nó ra rất là ít bởi vì cái dạng này edit rất là cực và khá là khó nha mọi người
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@MindfulPawsPsychology` — [Xem kênh YouTube](https://www.youtube.com/@MindfulPawsPsychology)
-- `@UCeVwhrEnYjCNdaDr47x4dSw` — [Xem kênh YouTube](https://www.youtube.com/@UCeVwhrEnYjCNdaDr47x4dSw)
-- `https://www.youtube.com/channel/UCeVwhrEnYjCNdaDr47x4dSw` — https://www.youtube.com/channel/UCeVwhrEnYjCNdaDr47x4dSw
-- `https://www.youtube.com/channel/UCEGZ_eUt6HeseHScQEcqTxw` — https://www.youtube.com/channel/UCEGZ_eUt6HeseHScQEcqTxw
-- `https://www.youtube.com/channel/UCqZpuhhJC5G4kfvBG7MTAXg` — https://www.youtube.com/channel/UCqZpuhhJC5G4kfvBG7MTAXg
-- `@UCEGZ_eUt6HeseHScQEcqTxw` — [Xem kênh YouTube](https://www.youtube.com/@UCEGZ_eUt6HeseHScQEcqTxw)
-- `@UCqZpuhhJC5G4kfvBG7MTAXg` — [Xem kênh YouTube](https://www.youtube.com/@UCqZpuhhJC5G4kfvBG7MTAXg)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Là video của nó ra rất là ít bởi vì cái dạng này edit rất là cực và khá là khó nha mọi người
-- **Bổ sung:** Nhưng mà quan trọng nhất là cái cách edit nha
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+---
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ừ rồi em chào mọi người nha thì video hôm nay em chỉ sẽ cho mọi n…
-  - `01:16` — anh em mà chưa biết gì về edit
-  - `02:49` — Nên là mọi người thấy không
-  - `04:24` — Thật sự ban đầu ngày xưa thì em cũng mới tập làm
-  - `05:45` — đơn giản như thế thôi mọi người, rất rất là
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Đó, thì mọi người nhìn qua cái tiêu đề thì mọi người biết cái ngách là về tâm lý của chú chó rồi đúng không
+2. Vì view của nó rất là cao luôn, thấy không mọi người
+3. Nhưng mà mọi người có đỡ ý không
+4. Là video của nó ra rất là ít bởi vì cái dạng này edit rất là cực và khá là khó nha mọi người
+5. 📌 Kỹ thuật Edit & Packaging chuẩn: Ghép footage minh họa khớp từng nhịp kịch bản, hạ âm lượng nhạc nền xuống -20dB đến -25dB so với giọng đọc để tăng độ rõ nét và nâng cao chỉ số giữ chân AVD.
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> kênh 1 kênh 2 kênh 3 kênh 4
+---
+
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước tối ưu hóa SEO Video toàn diện trên YouTube**
+  + 1. Đặt từ khóa chính ở vị trí đầu tiên của tiêu đề video để tăng điểm số thuật toán SEO.
+  + 2. Viết đoạn mô tả mở đầu 200 từ chứa từ khóa chính và 3 từ khóa phụ liên quan chặt chẽ.
+  + 3. Tạo các mốc thời gian (Timestamps/Chapters) phân đoạn nội dung rõ ràng giúp người xem tra cứu.
+  + 4. Gắn bộ thẻ tag chuẩn từ 15 đến 20 tag bao gồm tag thương hiệu, tag ngách và tag câu hỏi.
+  + 5. Thêm màn hình kết thúc (End Screen) và thẻ thông tin (Cards) điều hướng sang các video khác.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh nhồi nhét thẻ tag vào phần mô tả video (vi phạm chính sách thẻ tag của YouTube).**
+2. **Không dùng các thẻ tag của những người nổi tiếng không hề liên quan đến nội dung.**
+3. **Tránh để phần mô tả hoàn toàn trống trơn làm giảm khả năng phân phối của thuật toán.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Nghiệm thu & SOP Bài Giảng: CHỈ MỚI 4 VIDEO NGÁCH US (HOA KỲ) NÀY ĐÃ NỔ HƠN GẦN 3 TRIỆU VIEW VÀ ĐANG BẬT KIẾM TIỀN + SHARE THÊM 3 NGÁCH THỊ TRƯỜNG US + NGA VÀ GIẢI THÍCH CHỌN NGÁCH/ THỊ TRƯỜNG LÀM ĐỂ DỄ LÊN NHẤT**: [Tải file / Xem liên kết](docs/VIDEO-a2b317/README.md)

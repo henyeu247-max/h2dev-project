@@ -1,0 +1,95 @@
+{
+  "total": 11,
+  "liveCount": 10,
+  "deadCount": 1,
+  "results": [
+    {
+      "name": "@ChuyệnNhàXưaNay-s2j",
+      "handle": "ChuyệnNhàXưaNay-s2j",
+      "url": "https://www.youtube.com/@Chuy%E1%BB%87nNh%C3%A0X%C6%B0aNay-s2j",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@Admin_vansamtamsuthamkin",
+      "handle": "Admin_vansamtamsuthamkin",
+      "url": "https://www.youtube.com/@Admin_vansamtamsuthamkin",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@RADIOCuaNguoiGia77",
+      "handle": "RADIOCuaNguoiGia77",
+      "url": "https://www.youtube.com/@RADIOCuaNguoiGia77",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@chuyendoituoigia83",
+      "handle": "chuyendoituoigia83",
+      "url": "https://www.youtube.com/@chuyendoituoigia83",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@건강채소연구노트",
+      "handle": "건강채소연구노트",
+      "url": "https://www.youtube.com/@%EA%B1%B4%EA%B0%95%EC%B1%84%EC%86%8C%EC%97%B0%EA%B5%AC%EB%85%B8%ED%8A%B8",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@채소와과일건강백서",
+      "handle": "채소와과일건강백서",
+      "url": "https://www.youtube.com/@%EC%B1%84%EC%86%8C%EC%99%80%EA%B3%BC%EC%9D%BC%EA%B1%B4%EA%B0%95%EB%B0%B1%EC%84%9C",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@백세의비밀-d3v",
+      "handle": "백세의비밀-d3v",
+      "url": "https://www.youtube.com/@%EB%B0%B1%EC%84%B8%EC%9D%98%EB%B9%84%EB%B0%80-d3v",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@건강인사이드dyu7",
+      "handle": "건강인사이드dyu7",
+      "url": "https://www.youtube.com/@%EA%B1%B4%EA%B0%95%EC%9D%B8%EC%82%AC%EC%9D%B4%EB%93%9Cdyu7",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@영양사의건강강좌",
+      "handle": "영양사의건강강좌",
+      "url": "https://www.youtube.com/@%EC%98%81%EC%96%91%EC%82%AC%EC%9D%98%EA%B1%B4%EA%B0%95%EA%B0%95%EC%A2%8C",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    },
+    {
+      "name": "@HopeGarden-KR",
+      "handle": "HopeGarden-KR",
+      "url": "https://www.youtube.com/@HopeGarden-KR",
+      "statusCode": 404,
+      "isDead": true,
+      "redirect": null
+    },
+    {
+      "name": "@FeynmanThought",
+      "handle": "FeynmanThought",
+      "url": "https://www.youtube.com/@FeynmanThought",
+      "statusCode": 200,
+      "isDead": false,
+      "redirect": null
+    }
+  ]
+}

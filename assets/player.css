@@ -109,7 +109,7 @@
 .transcript-line:hover, .transcript-line.is-active { background: var(--surface-2); }
 .transcript-line .transcript-time {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--fg-muted);
   background: var(--surface);
@@ -138,11 +138,15 @@
 #pchannels h3, #pdocs h3 { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
 #pchannelslist > div { background: var(--surface-2) !important; border-color: var(--border) !important; border-radius: 4px !important; }
 #pdocslist > article { background: var(--bg-subtle) !important; border-color: var(--border) !important; border-radius: 4px !important; }
+/* UI-fix 2026-10-09 (M3): hai nut tai lieu trong mot the chia deu 2 cot; the hep o 1440px lam nut thu hai rot xuong dong mot minh. */
+#pdocslist > article div:has(> a:nth-child(2)) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+/* UI-fix 2026-10-09 (M3): nut thu ba cua mot the (3 tai lieu) chiem ca hang, khong de le mot minh. */
+#pdocslist > article div:has(> a:nth-child(2)) > a:last-child:nth-child(odd):nth-child(n+3) { grid-column: 1 / -1; }
 #pdocslist a.btn-doc-link {
   background: var(--surface-2) !important;
   border: 1px solid var(--border) !important;
   color: var(--fg-2) !important;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 2px;
@@ -329,3 +333,34 @@
    moi, khong tinh la dich chuyen. Nhanh loi cung dat aria-busy=false nen noi dung van hien. */
 #playerMain[aria-busy="true"] > :not(:first-child) { display: none !important; } /* !important: #playerTabSelector co display:flex !important @<1024 */
 body:has(#playerMain[aria-busy="true"]) .h2-shell-footer { display: none !important; }
+
+/* UI-standard (2026-10-09): khoi dieu khien bai hoc tren man hinh rong (> 640px).
+   Moi dieu khien cao 44px, cung chieu cao voi "Bai truoc / Bai tiep theo" va voi ban tablet (h2dev-shell.css muc 10b),
+   de PC va iPad giong nhau. Hang 1: dieu huong + trang thai ("Dang do / Chua xem / Da xem") cung hang.
+   Hang 2 (chi khi dang xem do): "Xem tiep" chiem ca hang. Hang 3: ghi chu + "Bo tien do".
+   Khoang cach trong nhom 8px; hang ghi chu tach nhom bang khoang cach gap doi. */
+@media (min-width: 641px) {
+  .player-controls > div:first-child { display: grid !important; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 8px; row-gap: 8px; }
+  .player-controls > div:first-child > div:first-child { display: flex !important; flex-wrap: wrap; align-items: center; gap: 8px; min-width: 0; }
+  .player-controls #pstate { display: contents; }
+  .player-controls #btnWatched { grid-column: 2; grid-row: 1; justify-self: end; min-height: 44px; }
+  .player-controls #btnResume { grid-column: 1 / -1; grid-row: 2; width: 100%; justify-content: center; min-height: 44px; }
+  .player-controls #btnClearProgress, .player-controls #noteInput { min-height: 44px; }
+}
+
+/* UI-fix 2026-10-09 (A-3, WCAG 2.4.7): cac khoi tren dung `box-shadow: none !important` nen xoa mat vong focus cua token (--focus-ring) o trang bai hoc: nguon (#psources > a, ke ca nut Tai MP4), nut dieu khien (#btnPrev/#btnNext/#btnWatched/#btnResume/#btnClearProgress) va cac moc thoi gian (#insightTimeline > button). Khoi phuc bang focus-visible co !important, dat SAU cac khoi do. */
+#psources > a:focus-visible,
+#psources > a.btn-download-mp4:focus-visible,
+.player-controls #btnPrev:focus-visible,
+.player-controls #btnNext:focus-visible,
+.player-controls #btnWatched:focus-visible,
+.player-controls #btnResume:focus-visible,
+.player-controls #btnClearProgress:focus-visible,
+#insightTimeline > button:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring) !important;
+}
+
+/* Gap G1 (2026-10-14): chip kenh DIE o trang bai hoc (player-main.js, ham render #pchannelslist) dung 3 class Tailwind ma tailwind.css khong sinh (JS render dong, khong nam trong HTML nen gate check-ui-classes khong thay): khong co vien do, nen do, gach ngang ten kenh; chi con huy hieu DIE. Khai bao tuong minh o day (red-500 .40 / red-950 .20, cung ho mau voi .channel-chip-dead trong viddar.css). Rule `#pchannelslist > div` o tren dung !important cho nen va vien nen vien/nen do phai di qua selector ID + class de thang no. Chi trang player nap file nay. */
+#pchannelslist > div.border-red-500\/40 { border-color: rgba(239, 68, 68, 0.4) !important; background: rgba(69, 10, 10, 0.2) !important; }
+.line-through { text-decoration-line: line-through; }

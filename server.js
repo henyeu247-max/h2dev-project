@@ -337,21 +337,27 @@ const server = http.createServer(async (req,res)=>{
     sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
+  // Route nay goi mang va ghi DB: chi nhan POST kem header X-H2DEV-Action: spider.
+  // Trang web khac khong gui duoc header nay (OPTIONS khong cho phep), nen khong kich hoat duoc bang GET hay form.
   if (apiPath === '/api/intelligence/spider') {
-    if (req.method === 'GET' || isHead) {
+    if (req.method === 'POST' && req.headers['x-h2dev-action'] === 'spider') {
       const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
       const seed = parsedUrl.searchParams.get('seed') || 'Q1tXposwAAo';
       try {
         const spider = require('./scripts/spider_graph_engine');
         const report = await spider.executeSpiderGraphTraversal(seed, { maxHop2Videos: 2 });
-        sendJson(req, res, 200, report, isHead);
+        sendJson(req, res, 200, report, false);
         return;
       } catch (err) {
-        sendJson(req, res, 500, { error: err.message }, isHead);
+        sendJson(req, res, 500, { error: err.message }, false);
         return;
       }
     }
-    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    if (req.method === 'POST') {
+      sendJson(req, res, 403, { error: 'Thieu header X-H2DEV-Action: spider' }, false);
+      return;
+    }
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'POST, OPTIONS' });
     return;
   }
   if (apiPath === '/api/search') {
@@ -431,6 +437,8 @@ const server = http.createServer(async (req,res)=>{
     const absMatch = rawUrl.match(/^https?:\/\/[^/]+(\/.*)$/i);
     if (absMatch) rawUrl = absMatch[1];
     urlPath = decodeURIComponent(rawUrl.split('?')[0]);
+    // Gap G14 (2026-10-14): byte NUL (/%00) lam fs.stat nem loi dong bo, ket noi bi dong khong co phan hoi. Tra 400 nhu URI sai dinh dang.
+    if (urlPath.indexOf('\0') !== -1) throw new Error('NUL byte in path');
   } catch (err) {
     res.writeHead(400, {
       'Content-Type': 'text/plain; charset=utf-8',

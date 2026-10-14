@@ -2,37 +2,47 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-9ea5e3`
-- **Tiêu đề:** TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026
-- **Chủ đề thực tế:** TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Toàn cầu / Ngoại (Mã: `GLOBAL`)
-- **Thời lượng:** 14:01
-- **Dung lượng MP4:** 60.6 MB
-- **File Video:** [`video/VIDEO-9ea5e3/VIDEO-9ea5e3.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-9ea5e3/VIDEO-9ea5e3.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-9ea5e3.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-9ea5e3.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/tut-meo-huong-dan-cach-khac-phuc-gay-view-moi-nhat-2026](https://h2dev.vn/learn/study/tut-meo-huong-dan-cach-khac-phuc-gay-view-moi-nhat-2026)
+- **Bài học:** #87
+- **Tiêu đề bài giảng:** TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026
+- **Thị trường mục tiêu:** 🌐 Ngoại
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thumbnail:** `assets/thumbs/VIDEO-9ea5e3.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/tut-meo-huong-dan-cach-khac-phuc-gay-view-moi-nhat-2026)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì có lẽ video này thì cũng trước giờ cũng có khá là nhiều anh em chờ đợi và cũng có câu hỏi về cái tình trạng là gãy view này đúng không ạ
-- Thì thật ra là những cái miệng mà những cái cách khách phục gãy view này thì em cũng đã có ở đây ở kênh TikTok em ở những cái tháng trước rồi mọi người ạ, đang khá là lâu rồi
-- Nhưng mà nó không có được nhiều và cũng như là nhiều anh em biết tới
-- Đấy, và nhiều anh em cũng không có để ý và không có biết tới được
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Đó, cái kênh từ kênh này 10 sub đúng không
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+---
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi, em xin chào tất cả mọi người nha. Thì có lẽ video này thì cũ…
-  - `03:00` — Kênh của em là
-  - `05:45` — Trên studio nó khác rồi
-  - `08:24` — Rồi, bây giờ như vậy là để xong cái chuyển đổi kênh thương hiệu n…
-  - `11:30` — Đó, thì mọi người sẽ thấy cái hiệu quả của nó nha
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Hiện tượng 'gãy view' (video đang có hàng chục nghìn view đột ngột tụt về 0 - vài chục view) là bài toán phổ biến trong thuật toán 2026.
+2. Nguyên nhân cốt lõi của gãy view: Kênh bị gãy tệp phân phối do đăng video lệch chủ đề, chỉ số CTR tụt dốc thảm hại, hoặc bị quét bản quyền ngầm.
+3. Tút khắc phục: Lập tức rà soát 3 video gần nhất, đối chiếu nguồn lưu lượng truy cập (Traffic Sources) trong YouTube Studio.
+4. Kỹ thuật nối lại luồng đề xuất: Đăng một video 'mồi' đúng ngách gốc có CTR cực cao kết hợp ghim bình luận và màn hình kết thúc kéo view sang video cũ.
+5. Kiên nhẫn duy trì nhịp đăng đều đặn từ 3 - 5 video chuẩn ngách để huấn luyện lại thuật toán phân phối tệp.
 
+---
+
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước tối ưu hóa doanh thu quảng cáo (RPM) cho các thị trường Tier 1**
+  + 1. Nghiên cứu các chủ đề có giá thầu quảng cáo cao: Tài chính, công nghệ, bất động sản, sức khỏe.
+  + 2. Tối ưu hóa thời lượng video trên 10 phút để đủ điều kiện bật nhiều vị trí Mid-roll Ads.
+  + 3. Đặt các mốc quảng cáo tự nhiên ở những điểm ngắt phân cảnh để không làm cụt hứng người xem.
+  + 4. Hướng nội dung đến khán giả từ 25 - 55 tuổi có khả năng chi trả cao tại Mỹ, Anh, Canada.
+  + 5. Sử dụng phụ đề tiếng Anh chuẩn ngữ pháp để mở rộng đối tượng khán giả quốc tế.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh đặt quảng cáo quá dày đặc (dưới 2 phút/quảng cáo) khiến người xem bấm thoát video.**
+2. **Không sử dụng nội dung gây tranh cãi hoặc vi phạm nguyên tắc thân thiện với nhà quảng cáo.**
+3. **Tránh các chủ đề có RPM quá thấp như meme hài hước ngắn hoặc nội dung trẻ em.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026**: [Tải file / Xem liên kết](docs/VIDEO-9ea5e3/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 87**: [Tải file / Xem liên kết](video/VIDEO-9ea5e3/transcript.txt)

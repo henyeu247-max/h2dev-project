@@ -77,8 +77,8 @@
         <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; flex-wrap:wrap;">
           <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; min-width:0;">
             <span style="font-size: 12px; font-weight: 700; padding:0.1rem 0.4rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#d8b4fe; font-family:monospace;">${esc(t.id)}</span>
-            <span style="font-size: 11px; font-weight:700; padding:0.1rem 0.4rem; border-radius:0.35rem; ${badgeColor}">${badgeText}</span>
-            <span style="font-size: 11px; color:var(--fg-muted); font-family:monospace;">${esc(t.durationFormatted)} • ${t.sizeMB} MB</span>
+            <span style="font-size: 12px; font-weight:700; padding:0.1rem 0.4rem; border-radius:0.35rem; ${badgeColor}">${badgeText}</span>
+            <span style="font-size: 12px; color:var(--fg-muted); font-family:monospace;">${esc(t.durationFormatted)} • ${t.sizeMB} MB</span>
           </div>
           <a href="${esc(streamSrc)}" download="${esc(t.fileName)}" style="flex-shrink:0; font-size: 12px; padding:0.25rem 0.6rem; border-radius:0.4rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
             ${ico('download', 14)} Tải MP3
@@ -103,9 +103,9 @@
         </div>
 
         <!-- Row 5: Footer & Copy Path (Chống tràn viền) -->
-        <div style="display:flex; align-items:center; justify-content:space-between; font-size: 11px; color:var(--fg-muted); border-top:1px solid var(--border-strong); padding-top:0.35rem; gap:0.5rem; min-width:0;">
+        <div style="display:flex; align-items:center; justify-content:space-between; font-size: 12px; color:var(--fg-muted); border-top:1px solid var(--border-strong); padding-top:0.35rem; gap:0.5rem; min-width:0;">
           <span class="truncate" style="flex:1; min-width:0; display:inline-flex; align-items:center; gap:0.25rem;" title="${esc(t.fileName)}">${ico('folder', 14)} <span class="truncate">${esc(t.fileName)}</span></span>
-          <button type="button" class="js-copy-music-path" data-copy-path="${esc(t.localAbsPath || t.fileName)}" data-copy-id="${esc(t.id)}" style="background:none; border:none; color:#38bdf8; cursor:pointer; font-size: 11px; font-weight:700; padding:0; flex-shrink:0; white-space:nowrap; display:inline-flex; align-items:center; gap:0.2rem;">${ico('clipboard-copy', 14)} Copy Path</button>
+          <button type="button" class="js-copy-music-path" data-copy-path="${esc(t.localAbsPath || t.fileName)}" data-copy-id="${esc(t.id)}" style="background:none; border:none; color:#38bdf8; cursor:pointer; font-size: 12px; font-weight:700; padding:0; flex-shrink:0; white-space:nowrap; display:inline-flex; align-items:center; gap:0.2rem;">${ico('clipboard-copy', 14)} Copy Path</button>
         </div>
       </div>
     `;
@@ -213,7 +213,7 @@
               <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap;">
                 <span style="color:#a855f7;display:inline-flex;align-items:center;">${ico('headphones', 24)}</span>
                 <h3 style="font-size: 16px; font-weight: 700; color:#fff; margin:0;" class="truncate">Trạm Nhạc Nền ${nicheCount} Ngách YouTube</h3>
-                <span style="font-size: 11px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff;">${totalCount} Tracks (${safeCount} SAFE YPP)</span>
+                <span style="font-size: 12px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff;">${totalCount} Tracks (${safeCount} SAFE YPP)</span>
               </div>
             </div>
             <button type="button" id="close-music-studio" style="width:32px; height:32px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 14px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;" title="Đóng [Esc]">${ico('x', 16)}</button>
@@ -245,8 +245,8 @@
               </select>
             </div>
 
-            <!-- Compact Single-Line Swipeable Chip Bar -->
-            <div style="display:flex; gap:0.35rem; overflow-x:auto; padding-bottom:0.15rem; white-space:nowrap; -webkit-overflow-scrolling:touch; scrollbar-width:none;">
+            <!-- Chip bar: xuong dong trong khung (UI-fix 2026-10-09). Truoc day vuot ngang, chip cuoi bi cat o mep. -->
+            <div style="display:flex; flex-wrap:wrap; gap:0.35rem; padding-bottom:0.15rem;">
               <button type="button" data-mfilter="all" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='all'?'#a855f7':'var(--border-strong)'}; background:${currentFilter==='all'?'#7e22ce':'var(--surface)'}; color:#fff;">Tất cả (${totalCount})</button>
               <button type="button" data-mfilter="safe" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='safe'?'#10b981':'var(--border-strong)'}; background:${currentFilter==='safe'?'#047857':'var(--surface)'}; color:#6ee7b7;">${icoColored('shield-check',14,'#6ee7b7')} SAFE (${safeCount})</button>
               <button type="button" data-mfilter="cophong" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='cophong'?'#ec4899':'var(--border-strong)'}; background:${currentFilter==='cophong'?'#be185d':'var(--surface)'}; color:#fbcfe8;">${icoColored('drama',14,'#fbcfe8')} Cổ Trang (${cophongCount})</button>

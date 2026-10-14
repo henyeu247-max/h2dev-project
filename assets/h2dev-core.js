@@ -385,3 +385,55 @@
   };
   global.showToast = global.H2Core.showToast;
 })(window);
+
+/* UI-standard T-10 (2026-10-09): chu bi cat (ellipsis hoac overflow an) ma chua co title -> gan title = noi dung day du,
+   de nguoi dung xem duoc phan bi cat. Quan sat DOM moi (MutationObserver), gom theo khung hinh; quet lai khi doi co man hinh. */
+(function () {
+  'use strict';
+  if (!window.MutationObserver) return;
+  function fix(el) {
+    if (!el || el.nodeType !== 1 || el.hasAttribute('title')) return;
+    var hasText = false;
+    for (var i = 0; i < el.childNodes.length; i++) {
+      var n = el.childNodes[i];
+      if (n.nodeType === 3 && n.textContent.trim()) { hasText = true; break; }
+    }
+    if (!hasText) return;
+    var s = getComputedStyle(el);
+    if (s.textOverflow !== 'ellipsis' && s.overflowX !== 'hidden' && s.overflowX !== 'clip') return;
+    if (el.scrollWidth > el.clientWidth + 1) el.setAttribute('title', el.textContent.trim().replace(/\s+/g, ' '));
+  }
+  function scan(root) {
+    if (!root || root.nodeType !== 1) return;
+    fix(root);
+    var all = root.querySelectorAll('*');
+    for (var i = 0; i < all.length; i++) fix(all[i]);
+  }
+  var pending = new Set();
+  var queued = 0;
+  function flush() {
+    queued = 0;
+    var batch = Array.from(pending);
+    pending.clear();
+    for (var i = 0; i < batch.length; i++) if (batch[i].isConnected) scan(batch[i]);
+  }
+  function add(node) {
+    if (node && node.nodeType === 1 && node !== document.documentElement && node !== document.body) pending.add(node);
+  }
+  new MutationObserver(function (muts) {
+    for (var i = 0; i < muts.length; i++) {
+      add(muts[i].target);
+      for (var j = 0; j < muts[i].addedNodes.length; j++) add(muts[i].addedNodes[j]);
+    }
+    if (pending.size && !queued) { queued = 1; requestAnimationFrame(flush); }
+  }).observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'hidden'] });
+  var rt = 0;
+  window.addEventListener('resize', function () {
+    clearTimeout(rt);
+    rt = setTimeout(function () { scan(document.body); }, 180);
+  });
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { scan(document.body); });
+  else scan(document.body);
+  window.addEventListener('load', function () { scan(document.body); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { scan(document.body); });
+})();

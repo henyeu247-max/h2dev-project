@@ -1,0 +1,54 @@
+{
+  "report_title": "H2DEV Teamwork E2E Verification & Reality Audit Report",
+  "timestamp": "2026-10-09T03:57:53.481Z",
+  "overall_status": "ALL PASS 100%",
+  "sections": {
+    "physical_integrity": {
+      "total_videos_checked": 144,
+      "video_files_verified": 144,
+      "transcript_files_verified": 144,
+      "total_transcript_words": 332297,
+      "total_docs_in_catalog": 300,
+      "total_raw_channels": 156,
+      "total_catalog_channels": 256,
+      "status": "PASS"
+    },
+    "quality_gates": {
+      "validate-project": "ALL PASS",
+      "gate-icons": "ALL PASS",
+      "gate-typography": "ALL PASS",
+      "gate-shell": "ALL PASS",
+      "sync-counts": "ALL PASS"
+    },
+    "browser_testing": {
+      "desktop": {
+        "workflow_steps_count": 16,
+        "workflow_skus_rendered": 144,
+        "matrix144_cards_count": 144,
+        "matrix144_filter_chips": 9,
+        "matrix144_filtered_cards": 84,
+        "principles_cards_count": 4,
+        "distribution_panel_visible": true,
+        "policy_panel_visible": true,
+        "player_title": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
+        "player_transcript_lines": 276,
+        "console_errors": [],
+        "status": "PASS"
+      },
+      "mobile": {
+        "workflow_steps_count": 16,
+        "workflow_skus_rendered": 144,
+        "matrix144_cards_count": 144,
+        "matrix144_filter_chips": 9,
+        "matrix144_filtered_cards": 84,
+        "principles_cards_count": 4,
+        "distribution_panel_visible": true,
+        "policy_panel_visible": true,
+        "player_title": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
+        "player_transcript_lines": 276,
+        "console_errors": [],
+        "status": "PASS"
+      }
+    }
+  }
+}

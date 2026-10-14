@@ -2,39 +2,38 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-e95a8f`
-- **Tiêu đề:** SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ
-- **Chủ đề thực tế:** SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Việt Nam (Mã: `VN`)
-- **Thời lượng:** 03:26
-- **Dung lượng MP4:** 62.3 MB
+- **Bài học số:** Bài 76 (Part 4)
+- **Tiêu đề bài giảng:** SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ
+- **Ngách nội dung:** Triết Lý Sống & Đạo Làm Người
+- **Thị trường mục tiêu:** 🇻🇳 Việt
+- **Thời lượng:** N/A
+- **Dung lượng MP4:** 65354525
 - **File Video:** [`video/VIDEO-e95a8f/VIDEO-e95a8f.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-e95a8f/VIDEO-e95a8f.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-e95a8f.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-e95a8f.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-moi-27-02-2026-share-ngach-nho-ban-content-thi-truong-view-viet-clone-theo-kenh-doi-thu](https://h2dev.vn/learn/study/update-moi-27-02-2026-share-ngach-nho-ban-content-thi-truong-view-viet-clone-theo-kenh-doi-thu)
+- **Ảnh đại diện:** [`assets/thumbs/VIDEO-e95a8f.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-e95a8f.png)
+- **File Phụ đề bóc tách:** [`video/VIDEO-e95a8f/transcript.txt`](file:///d:/YTB/H2DEV-Project/video/VIDEO-e95a8f/transcript.txt)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì tiếp tục hôm nay em sẽ share cho mọi người tiếp là một cái kỳ view việc nữa nha mọi người
-- Đó, thì nói chung có kỳ nào mới thì em sẽ update liên tục cho mọi người luôn
-- Thì đây là một kênh view việc nha mọi người
-- Đây, làm từ tháng 1 nè, một tháng trước nè mọi người
+## 2. Chiến Lược Cốt Lõi & Mấu Chốt Bài Giảng (5 Key Takeaways)
+- Kênh Tuổi Già Radio VN khai thác cực tốt khoảng trống cảm xúc của người lớn tuổi tại Việt Nam với lượng người theo dõi trung thành lớn.
+- Kịch bản chạm vào những hoài niệm thanh xuân, đạo hiếu gia đình, nỗi lòng cha mẹ khi con cái trưởng thành rời xa tổ ấm.
+- Clone theo kênh đối thủ không phải là reup mà là học hỏi góc nhìn khai thác và công thức kịch bản để tạo ra các tác phẩm mới giàu cảm xúc hơn.
+- Giọng đọc AI tiếng Việt cần chọn chất giọng miền Bắc hoặc miền Trung truyền cảm, có độ lắng đọng và ngắt nghỉ tự nhiên.
+- Hình ảnh minh họa sử dụng gam màu ấm áp, hình ảnh làng quê Bắc Bộ, mái ngói rêu phong, khói bếp chiều tà.
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@TuổiGiàRadio_VN` — [Xem kênh YouTube](https://www.youtube.com/@Tu%E1%BB%95iGi%C3%A0Radio_VN)
+## 3. Quy Trình Sản Xuất & Kỹ Thuật Edit SOP (Né Quét AI 2026)
+- Bước 1: Tìm kiếm các chủ đề tản văn, tâm sự tuổi già trên các trang báo văn học, blog tâm lý hoặc kênh đối thủ mẫu.
+- Bước 2: Viết lại kịch bản dưới góc nhìn người trong cuộc tâm sự chân thành, độ dài khoảng 1800 - 2500 từ.
+- Bước 3: Chọn giọng đọc AI phù hợp (Viettel/Vbee/ElevenLabs giọng trầm ấm), căn chỉnh tốc độ đọc 120 - 130 WPM.
+- Bước 4: Dựng video với các cảnh quay cinematic chậm rãi về thiên nhiên làng quê Việt Nam, chèn nhạc đàn bầu hoặc sáo trúc nhẹ nhàng.
+- Bước 5: Thiết kế thumbnail với tông màu nâu trầm ấm, tiêu đề ngắn gọn nhưng chứa đựng nỗi niềm trăn trở.
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Cách edit cũng giống như video này thôi mọi người
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+## 4. Cảnh Báo Đỏ & Lỗi Cần Tránh (3 Avoid Flags)
+- ⚠️ Tránh viết kịch bản quá bi lụy, tiêu cực, kêu gọi thù hận con cái làm mất đi giá trị nhân văn của kênh.
+- ⚠️ Không dùng hình ảnh quá hiện đại, hào nhoáng phá vỡ không gian hoài niệm mộc mạc của câu chuyện.
+- ⚠️ Tránh chèn nhạc nền quá to át mất giọng đọc tâm sự của tác giả.
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 5. Kênh Mẫu & Đối Thủ Phân Tích
+- `@TuổiGiàRadio_VN` *(LIVE)* — [Xem kênh YouTube](https://www.youtube.com/@Tu%E1%BB%95iGi%C3%A0Radio_VN)
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi, em xin chào tất cả mọi người nha. Thì tiếp tục hôm nay em sẽ…
-  - `00:49` — Và không có hay đâu nha mọi người
-  - `01:34` — Các link của các trang web lấy nguồn video và rí về thì em cũng cập nhật ở trong con web này cho mọi người nh…
-  - `02:23` — Soe cái dạng này như vậy thôi mọi người
-  - `02:59` — Sau này nó bị quét lại nha
-
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> LINK KÊNH ĐỐI THỦ WEB TẢI TÀI NGUYÊN VIDEO: https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape https://www.vecteezy.com/ https://coverr.co/ https://www.freepik.com/videos https://pixabay.com/
+## 6. Tài Liệu & Công Cụ Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ**: [docs/VIDEO-e95a8f/README.md](docs/VIDEO-e95a8f/README.md) (docs/VIDEO-e95a8f/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 76**: [video/VIDEO-e95a8f/transcript.txt](video/VIDEO-e95a8f/transcript.txt) (video/VIDEO-e95a8f/transcript.txt)

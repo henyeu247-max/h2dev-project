@@ -2,45 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-5c0b20`
-- **Tiêu đề:** THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG
-- **Chủ đề thực tế:** THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 05:40
-- **Dung lượng MP4:** 142.8 MB
-- **File Video:** [`video/VIDEO-5c0b20/VIDEO-5c0b20.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-5c0b20/VIDEO-5c0b20.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-5c0b20.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-5c0b20.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/thuc-chien-share-ngach-thi-truong-us-hoa-ky-kenh-dang-bat-kiem-tien-va-them-2-ngach-thi-truong-han-va-viet-nhan-ban-thi-truong](https://h2dev.vn/learn/study/thuc-chien-share-ngach-thi-truong-us-hoa-ky-kenh-dang-bat-kiem-tien-va-them-2-ngach-thi-truong-han-va-viet-nhan-ban-thi-truong)
+- **Bài học:** #55
+- **Tiêu đề bài giảng:** THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG
+- **Thị trường mục tiêu:** 🇺🇸 Mỹ, 🇰🇷 Hàn, 🇻🇳 Việt
+- **Ngách nội dung:** Drama Gia Đình & Xã Hội
+- **Thumbnail:** `assets/thumbs/VIDEO-5c0b20.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/thuc-chien-share-ngach-thi-truong-us-hoa-ky-kenh-dang-bat-kiem-tien-va-them-2-ngach-thi-truong-han-va-viet-nhan-ban-thi-truong)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- View cực kỳ là cao luôn nha Về kênh này mới chỉ làm từ 4 tuần trước nè, chưa được 1 tháng, đúng 1 tháng luôn nha mọi người
-- Nếu mà đúng ra thì chưa được 1 tháng nha
-- Đấy, thì mọi người xem nè, cái gách nó làm rất rất là đều view luôn
-- Về kênh này vẫn là đang hoàn toàn là bật kiếm tiền nha mọi người, tí nữa em bấm vào cho mọi người xem
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@AnNhienChuyenDoiBinhDi` — [Xem kênh YouTube](https://www.youtube.com/@AnNhienChuyenDoiBinhDi)
-- `@똑똑해지는경제학-m2y` — [Xem kênh YouTube](https://www.youtube.com/@%EB%98%91%EB%98%91%ED%95%B4%EC%A7%80%EB%8A%94%EA%B2%BD%EC%A0%9C%ED%95%99-m2y)
-- `@Dadstruerevenge` — [Xem kênh YouTube](https://www.youtube.com/@Dadstruerevenge)
-- `@방구석워런버핏` — [Xem kênh YouTube](https://www.youtube.com/@%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%9B%8C%EB%9F%B0%EB%B2%84%ED%95%8F)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Về cách edit thì cũng như em đã hướng dẫn mọi người luôn
-- **Bổ sung:** Đấy, nên là em phải đi theo về cái cách edit cũng như là chứng theo cái form prompt để mọi người làm nha
-- **Bổ sung:** Bấm vào xem video thì có bật quảng cáo nè Mọi người biết là hoàn toàn bật kiếm tiền Về cách edit thì mọi người thấy chưa
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Còn cái vấn đề mà không trung thực á, thì là nó quét là chủ yếu là do cái nội dung kịch bản nha mọi người
-- ⚠️ Kịch bản mà mọi người kiểu giặt tiết quét, câu view quét á, thì chắc chắn là sẽ bị quét nha
-- ⚠️ Còn hình ảnh AI hay VTVI á, thì nó cũng có quét nhưng mà tỷ lợi rất là thấp nha mọi người
+---
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi ok em chào mọi người nha, vì video này em tiếp tục share thêm…
-  - `01:15` — Đây, hãy bấm vào phần mô tả để cho mọi người
-  - `02:45` — Cái kịch bản không phải giặc tích quá thì ok Bình thường nha mọi người. Đây còn tìm em share thêm cho mọi ngư…
-  - `03:46` — thì dùng dòng cờ lon nha mọi người. Cái này
-  - `04:49` — Mọi người phải edit kết hợp
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. View cực kỳ là cao luôn nha Về kênh này mới chỉ làm từ 4 tuần trước nè, chưa được 1 tháng, đúng 1 tháng luôn nha mọi người
+2. Nếu mà đúng ra thì chưa được 1 tháng nha
+3. Đấy, thì mọi người xem nè, cái gách nó làm rất rất là đều view luôn
+4. Về kênh này vẫn là đang hoàn toàn là bật kiếm tiền nha mọi người, tí nữa em bấm vào cho mọi người xem
+5. 📌 Phòng ngừa quét bản quyền & AI: Tuyệt đối không dùng video AI tự động 100%; bắt buộc phối hợp video nền chuyển động tự nhiên, sóng âm trực quan và hiệu ứng chuyển cảnh để bảo toàn trạng thái YPP.
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> kênh 1 kênh 2 kênh 3 kênh 4
+---
+
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước dựng video phân tích tâm lý và hành vi con người**
+  + 1. Phác thảo sơ đồ câu chuyện dựa trên các thí nghiệm tâm lý học hoặc câu chuyện có thật.
+  + 2. Dùng hình ảnh đồ họa mô phỏng não bộ hoặc biểu cảm gương mặt để minh họa trực quan.
+  + 3. Lựa chọn giọng đọc truyền cảm, sâu lắng, nhịp điệu từ tốn giúp khán giả dễ chiêm nghiệm.
+  + 4. Tạo các khoảng dừng nghệ thuật (Pause 1 - 2 giây) sau những câu nói đắt giá để tăng chiều sâu.
+  + 5. Thiết kế thumbnail với đôi mắt nhân vật xoáy sâu vào tâm lý người nhìn để đạt CTR cao.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh diễn giải kiến thức tâm lý một cách khô khan như bài giảng trên giảng đường.**
+2. **Không đưa ra các kết luận phản khoa học hoặc mang tính công kích cá nhân.**
+3. **Tránh dùng hình ảnh ghê rợn hoặc gây ám ảnh tâm lý tiêu cực cho người xem.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Nghiệm thu & SOP Bài Giảng: THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG**: [Tải file / Xem liên kết](docs/VIDEO-5c0b20/README.md)

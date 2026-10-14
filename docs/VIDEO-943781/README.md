@@ -2,37 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-943781`
-- **Tiêu đề:** Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)
-- **Chủ đề thực tế:** Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Toàn cầu / Ngoại (Mã: `GLOBAL`)
-- **Thời lượng:** 03:37
-- **Dung lượng MP4:** 16.2 MB
-- **File Video:** [`video/VIDEO-943781/VIDEO-943781.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-943781/VIDEO-943781.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-943781.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-943781.png)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/meo-tips-phan-chia-nuoi-cac-mail-kenh-tren-cung-1-thiet-bi-ma-khong-bao-gio-bi-dinh-spam-ma-khong-can-phai-fake-vpn-hay-nuoi-tren-proxy](https://h2dev.vn/learn/study/meo-tips-phan-chia-nuoi-cac-mail-kenh-tren-cung-1-thiet-bi-ma-khong-bao-gio-bi-dinh-spam-ma-khong-can-phai-fake-vpn-hay-nuoi-tren-proxy)
+- **Bài học:** #115
+- **Tiêu đề bài giảng:** Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)
+- **Thị trường mục tiêu:** 🌐 Ngoại
+- **Ngách nội dung:** Kỹ Thuật Setup Nuôi Kênh & VPS
+- **Thumbnail:** `assets/thumbs/VIDEO-943781.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/meo-tips-phan-chia-nuoi-cac-mail-kenh-tren-cung-1-thiet-bi-ma-khong-bao-gio-bi-dinh-spam-ma-khong-can-phai-fake-vpn-hay-nuoi-tren-proxy)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Cách này thì cũng khá là đơn giản thôi mọi người
-- Về cái này thì em áp dụng làm từ trước đến nay cũng như kinh nghiệm em làm nên em chia sẻ cho mọi người
-- Đấy, cái này là kế nhân của em nha
-- Rồi, trước hết thì cái này dành cho mọi người mà thích làm nhiều kênh, nhiều gmail trên một cái máy tính
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **Kênh Nuôi Mail Đa Profile Không Dính Spam**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Cơ chế phát hiện spam của Google dựa trên hành vi tổng thể và dấu vân tay thiết bị.
+2. Kỹ thuật phân chia User Profile độc lập trên trình duyệt Chrome/Edge quản lý hàng chục mail an toàn.
+3. Quy trình xóa cache và quản lý cookie thông minh mà không làm mất phiên đăng nhập.
+4. Tiết kiệm chi phí tối đa: Không cần mua Proxy hay thuê VPN đắt đỏ mà vẫn an toàn 100%.
+5. Phân bổ lịch trình hoạt động so le giữa các tài khoản như hành vi người dùng thật.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ừ ok em xin chào tất cả mọi người nha thì clip này em sẽ hướng dẫ…
-  - `01:02` — Đấy, rồi tiếp tục đến với cái trình diệt của thằng Microsoft này
-  - `01:35` — Đấy, mọi em làm rất là nhiều kênh
-  - `02:17` — Nó bị spam, nó bị hiểu spam ấy
-  - `02:50` — hay là dùng chung cái wifi
+---
 
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Tạo từng User Profile riêng biệt trên trình duyệt Chrome/Edge cho mỗi tài khoản Gmail.
+- 2. Đặt tên profile theo quy ước SKU và ngày lập kênh để quản lý hệ thống khoa học.
+- 3. Tuyệt đối không đăng nhập chéo tài khoản giữa các User Profile khác nhau.
+- 4. Mỗi profile duy trì lịch sử xem video tự nhiên 15 - 20 phút mỗi ngày tạo uy tín tài khoản.
+- 5. Tránh thực hiện các thao tác hàng loạt cùng một lúc trên nhiều profile.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh dùng VPN miễn phí có dải IP bẩn bị Google đưa vào danh sách đen.**
+2. **Tránh xóa sạch cookie liên tục khiến hệ thống nghi ngờ hành vi bất thường.**
+3. **Tránh đăng nhập cùng lúc một tài khoản trên quá nhiều thiết bị lạ.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **SOP Mẹo Phân Chia Nuôi Hàng Loạt Mail và Kênh Trên Cùng Một Máy Tính**: [Tải file / Xem liên kết](assets/docs/VIDEO-943781/SOP-PHAN-CHIA-NUOI-HANG-LOAT-MAIL-KENH-TREN-1-MAY.md)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-943781/transcript.txt)

@@ -2,40 +2,47 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-7ae3d6`
-- **Tiêu đề:** SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS
-- **Chủ đề thực tế:** SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Việt Nam (Mã: `VN`)
-- **Thời lượng:** 03:03
-- **Dung lượng MP4:** 59.4 MB
-- **File Video:** [`video/VIDEO-7ae3d6/VIDEO-7ae3d6.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-7ae3d6/VIDEO-7ae3d6.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-7ae3d6.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-7ae3d6.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-key-moi-27-11-2025-share-ngach-view-viet-khong-bao-gio-bi-0-view-hoac-khong-co-view-luon-luon-trends](https://h2dev.vn/learn/study/update-key-moi-27-11-2025-share-ngach-view-viet-khong-bao-gio-bi-0-view-hoac-khong-co-view-luon-luon-trends)
+- **Bài học:** #92
+- **Tiêu đề bài giảng:** SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS
+- **Thị trường mục tiêu:** 🇻🇳 Việt
+- **Ngách nội dung:** Khám Kênh & Tối Ưu Tăng Trưởng
+- **Thumbnail:** `assets/thumbs/VIDEO-7ae3d6.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-key-moi-27-11-2025-share-ngach-view-viet-khong-bao-gio-bi-0-view-hoac-khong-co-view-luon-luon-trends)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Rồi, em chào mọi người nha
-- Thì cái cây hôm nay em share cho mọi người là cái cây về dạng quân sự nha mọi người, nhưng mà là ở thị trường Việt Nam
-- Đó, để cho anh em nào thích làm việc thì anh em có thể tham khảo luôn
-- Vậy là kênh này nó dùng là kênh cổ nha mọi người
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@militarytactics113` — [Xem kênh YouTube](https://www.youtube.com/@militarytactics113)
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **@militarytactics113** (`@militarytactics113`): [Xem kênh](https://www.youtube.com/@militarytactics113) ✅ **[LIVE 200]**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Nói chung là nó làm quét quán nề lên đấy mọi người
-- ⚠️ Chứ mọi người đừng có dùng dòng Eleven Lab hay là VuaPi nha
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Ngách chiến thuật quân sự và vũ khí thị trường Việt Nam trên kênh @militarytactics113: Khẳng định công thức 'không bao giờ bị 0 view' vì đề tài quốc phòng luôn thu hút đông đảo đàn ông Việt.
+2. Khán giả Việt Nam rất quan tâm đến sức mạnh quân sự khu vực, so sánh vũ khí giữa các cường quốc và lịch sử tác chiến.
+3. Kỹ thuật làm video đơn giản nhưng hiệu quả: Lấy hình ảnh các loại vũ khí hiện đại (máy bay Su-35, tiêm kích tàng hình, xe tăng) làm trung tâm thị giác.
+4. Kịch bản tập trung so sánh thông số kỹ thuật, uy lực hỏa lực và chiến thuật thực tế trên chiến trường.
+5. Doanh thu từ view Việt Nam tuy RPM không cao bằng US nhưng bù lại lượt xem tích lũy hàng trăm nghìn view rất nhanh.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi, em chào mọi người nha. Thì cái cây hôm nay em share cho mọi …
-  - `00:55` — Đấy, những tháng trước thì nó...
-  - `01:19` — Đó hoàn toàn bằng AI luôn nha
-  - `01:53` — vì em khiên là mọi người không được làm luôn
-  - `02:20` — Cũng có rất là nhiều bên bị bắt
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> link kênh
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước sản xuất video học tiếng Anh thụ động qua câu chuyện đời sống**
+  + 1. Soạn kịch bản truyện ngắn đời sống sử dụng vốn từ vựng chuẩn trình độ B1 - B2.
+  + 2. Tạo 2 phiên bản voiceover: Phiên bản đọc chậm 100 WPM và phiên bản giọng bản xứ 140 WPM.
+  + 3. Hiển thị phụ đề song ngữ Anh - Việt hoặc giải nghĩa từ vựng quan trọng ngay trên màn hình.
+  + 4. Sử dụng hình ảnh minh họa ấm áp, biểu cảm nhân vật rõ ràng giúp người xem đoán nghĩa từ vựng.
+  + 5. Lặp lại các cấu trúc câu cốt lõi 3 lần trong các ngữ cảnh khác nhau để khắc sâu ghi nhớ.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh dùng từ ngữ tiếng Anh quá cổ hoặc tiếng lóng khó hiểu đối với người mới học.**
+2. **Không dùng giọng đọc AI phát âm sai chuẩn ngữ âm quốc tế (IPA).**
+3. **Tránh hiển thị phụ đề quá nhanh khiến người học không kịp đọc và đối chiếu.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS**: [Tải file / Xem liên kết](docs/VIDEO-7ae3d6/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 92**: [Tải file / Xem liên kết](video/VIDEO-7ae3d6/transcript.txt)

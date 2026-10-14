@@ -12,13 +12,13 @@ module.exports = {
     './learn.html',
     './assets/**/*.js',
   ],
-  /* P3.7 (2026-09-24): SAFELIST 9 bac font-size chuan.
+  /* P3.7 (2026-09-24): SAFELIST 8 bac font-size chuan.
    * Ly do: Tailwind chi sinh class NAO duoc quet thay trong content.
    *   Neu doi text-[10px] -> text-[14px] ma `text-[14px]` chua tung xuat hien
    *   thi class KHONG duoc sinh -> validate-project bao "class thieu CSS that" (da gap that).
-   *   Safelist dam bao 9 bac LUON co CSS, bat ke co dang duoc dung hay khong. */
+   *   Safelist dam bao 8 bac LUON co CSS, bat ke co dang duoc dung hay khong. */
   safelist: [
-    'text-2xs', 'text-xs', 'text-sm', 'text-base', 'text-md',
+    'text-xs', 'text-sm', 'text-base', 'text-md',
     'text-lg', 'text-xl', 'text-2xl', 'text-3xl',
   ],
   theme: {
@@ -35,18 +35,17 @@ module.exports = {
       fontFamily: {
         sans: ['Inter','ui-sans-serif','system-ui','-apple-system','sans-serif'],
       },
-      /* P3.7 (2026-09-24): THANG FONT-SIZE CHUAN 9 BAC.
+      /* P3.7 (2026-09-24): THANG FONT-SIZE CHUAN 8 BAC.
        * Ly do: code dang dung class arbitrary `text-[11px]`, `text-[12px]`, `text-[14px]`...
        *   Tailwind chi sinh class arbitrary NEU quet thay chuoi do trong content.
        *   Khi doi class cu -> class moi (vd text-[10px] -> text-[14px]) ma class moi
        *   chua tung xuat hien thi no KHONG duoc sinh -> validate-project BAO FAIL
        *   "class thieu CSS that".
-       * Giai phap: khai bao san 9 bac -> moi class text-{ten} duoc sinh chac chan,
+       * Giai phap: khai bao san 8 bac -> moi class text-{ten} duoc sinh chac chan,
        *   ke ca khi chua xuat hien trong content.
        * Nguon chuan: design-system/tokens.json -> font.sizeScale.standardized.
-       * LUU Y: van KHONG duoc dung text-[Npx] arbitrary ngoai 9 bac (gate chan). */
+       * LUU Y: van KHONG duoc dung text-[Npx] arbitrary ngoai 8 bac (gate chan). */
       fontSize: {
-        '2xs': '11px',
         'xs': '12px',
         'sm': '13px',
         'base': '14px',

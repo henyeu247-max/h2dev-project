@@ -2,41 +2,48 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-1b4be3`
-- **Tiêu đề:** HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT
-- **Chủ đề thực tế:** HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Việt Nam (Mã: `VN`)
-- **Thời lượng:** 11:55
-- **Dung lượng MP4:** 171.8 MB
-- **File Video:** [`video/VIDEO-1b4be3/VIDEO-1b4be3.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-1b4be3/VIDEO-1b4be3.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-1b4be3.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-1b4be3.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-moi-27-12-2025-ngach-thi-truong-nhat-ban-viet-huong-dan-cach-edit-video-han-che-tranh-bi-youtube-quet-vi-noi-dung-khong-trung-thuc-cac-van-de-lien-quan-den-ai](https://h2dev.vn/learn/study/update-moi-27-12-2025-ngach-thi-truong-nhat-ban-viet-huong-dan-cach-edit-video-han-che-tranh-bi-youtube-quet-vi-noi-dung-khong-trung-thuc-cac-van-de-lien-quan-den-ai)
+- **Bài học:** #82
+- **Tiêu đề bài giảng:** HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT
+- **Thị trường mục tiêu:** 🇯🇵 Nhật, 🇻🇳 Việt
+- **Ngách nội dung:** Drama Gia Đình & Xã Hội
+- **Thumbnail:** `assets/thumbs/VIDEO-1b4be3.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-moi-27-12-2025-ngach-thi-truong-nhat-ban-viet-huong-dan-cach-edit-video-han-che-tranh-bi-youtube-quet-vi-noi-dung-khong-trung-thuc-cac-van-de-lien-quan-den-ai)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Thì hôm nay em sẽ tiếp tục share cho mọi người một vài cái ngách nữa nha
-- Về sản đó thì em cũng sẽ nói cho mọi người cách để mọi người
-- Hướng cho mọi người cách để edit video làm sao cho nó không bị là lỗi là trung thực nha mọi người
-- Đấy, cái lỗi không trung thực này thì đang bị rất là nhiều luôn
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Hướng cho mọi người cách để edit video làm sao cho nó không bị là lỗi là trung thực nha mọi người
-- **Bổ sung:** Đấy, nên là em sẽ nói mọi người cách để edit
-- **Bổ sung:** Thì quay lại với cái ngách này thì nó cũng là dạng như vậy
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Youtube nó đang thành lập lớn á, mọi người đang quét rất là kênh luôn
-- ⚠️ Đấy, để cho Youtube nó không bị quét là các cái nội dung AI rác cũng như là nó sẽ quét cái nội dung mà không tung thực nữa nha
+---
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ok, xin chào tất cả mọi người nha. Thì hôm nay em sẽ tiếp tục sha…
-  - `02:42` — Nó cách đây chưa được một tháng luôn ấy
-  - `05:03` — bế luôn, đấy, bởi vì đang sai
-  - `07:41` — Đa số là anh em bảo quen cái chỗ đó.
-  - `09:58` — Mình có chỉnh sửa, có dùng VAI
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Thuật toán YouTube 2026 tăng cường rà soát các video sử dụng nội dung AI và tổng hợp dữ liệu, dễ bị gắn cờ 'Nội dung không trung thực'.
+2. Kỹ thuật xử lý khung hình đa lớp (Multi-layer Compositing): kết hợp footage thật với hiệu ứng lớp phủ (overlay), grain và color grading độc quyền.
+3. Bảng tính Google Sheets độc quyền đính kèm cung cấp danh sách từ khóa ngách Nhật - Việt đã được thẩm định an toàn bản quyền.
+4. Can thiệp âm thanh chuyên sâu: thay đổi cao độ pitch, mix thêm ambient noise tần số thấp để vượt qua bộ lọc âm thanh trùng lặp.
+5. Luôn khai báo đúng tính chất video trên YouTube Studio để duy trì độ trust tài khoản lâu dài.
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> link tài nguyên
+---
+
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- **Quy trình 5 bước khai thác danh sách kênh đối thủ từ Google Sheets và lọc key vàng**
+  + 1. Mở file CSV danh sách kênh, lọc theo tiêu chí: Kênh dưới 3 tháng tuổi nhưng có video trên 100k view.
+  + 2. Đánh giá tần suất ra video và tỷ lệ tương tác (Like/Comment) để chọn ra 3 kênh xuất sắc nhất.
+  + 3. Tải transcript của 5 video hot nhất bằng yt-dlp để phân tích công thức mở đầu (Hook).
+  + 4. Tạo ma trận kịch bản tương tự nhưng cải tiến thêm các góc nhìn phản biện mới mẻ.
+  + 5. Lập kế hoạch sản xuất video liên tục trong 14 ngày để đón đầu luồng đề xuất của ngách.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh chọn các kênh đã ngừng hoạt động hoặc bị sụt giảm view nghiêm trọng.**
+2. **Không bám theo những video có chủ đề quá nhạy cảm dễ bị hạn chế kiếm tiền.**
+3. **Tránh sao chép tiêu đề của đối thủ mà không điều chỉnh lại theo văn phong riêng.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT**: [Tải file / Xem liên kết](docs/VIDEO-1b4be3/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 82**: [Tải file / Xem liên kết](video/VIDEO-1b4be3/transcript.txt)
+- **Bảng Phân Tích Key Ngách Nhật - Việt & Cách Edit Tránh Quét AI**: [Tải file / Xem liên kết](https://docs.google.com/spreadsheets/d/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc/edit?usp=sharing)

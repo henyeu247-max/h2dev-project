@@ -36,3 +36,17 @@
   - `06:56` — Những cái video anh em xào nấu, ghép nối lại thôi
   - `09:11` — thì có thể tham khảo nha
 
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP khai thác và bản địa hóa kênh triết lý RPM cao xuyên thị trường:
+- Bước 1 (Nghiên cứu & Bóc tách video triệu view đối thủ ngoại): Dùng công cụ VidIQ / YouTube Transcript trích xuất kịch bản các video chủ đề Khắc kỷ đang viral ở thị trường US/Tây Ban Nha.
+- Bước 2 (Bản địa hóa & Viết lại văn phong thuần Việt): Dùng AI viết lại kịch bản, lược bỏ các thành ngữ văn hóa xa lạ, thay bằng các câu chuyện đời sống gần gũi với tâm thức người Á Đông.
+- Bước 3 (Thiết kế hệ thống âm thanh giữ chân người nghe): Kết hợp 3 tầng âm: Giọng đọc chính (chính diện), nhạc thiền không lời chậm rãi 432Hz (-20dB), và âm thanh thiên nhiên nền (-25dB).
+- Bước 4 (Dựng video dài ghép nối theo chủ đề): Ghép 4-6 bài học ngắn thành 1 video tổng hợp dài từ 60 đến 120 phút, chèn màn hình đệm chuyển chương (Chapter transition) trang trọng.
+- Bước 5 (Tối ưu cài đặt kiếm tiền AdSense): Bật tính năng chèn quảng cáo giữa video tự động kết hợp thủ công tại các điểm ngắt đoạn chuyển chương, không làm gián đoạn cảm xúc người nghe.
+
+### Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags)
+- [x] **Tránh vi phạm:** Không dịch máy thô cứng kiểu Google Dịch khiến câu từ tối nghĩa và bị người xem đánh giá thấp.
+- [x] **Tránh vi phạm:** Tránh chèn quảng cáo quá dày đặc (dưới 7 phút một lần) khiến người nghe bực mình thoát video.
+- [x] **Tránh vi phạm:** Không tái sử dụng nguyên xi video của đối thủ để tránh lỗi 'Sử dụng lại nội dung' (Reused Content).

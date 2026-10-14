@@ -3,6 +3,8 @@
 > Cập nhật cuối phiên: **2026-10-09** (cuối vòng 3). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
 
 ## Phiên 2026-10-14 — sửa gaps (chi tiết: `CHANGELOG.md` mục 2026-10-14, báo cáo `docs/reports/2026-10-14-gap-audit.md`)
+- **Deploy (đợt 7):** `main` = `origin/main` = `vps main` = `0627819`; kiểm 3 vòng PASS (xem CHANGELOG đợt 7). F2 đã đóng: 4 SKU mới trên VPS 200/206. Còn mở: đưa phần RỖNG của `content.js` và các file sửa dở lên; quyết định giữ hay bỏ `scripts/fetch_h2dev_video.cjs`.
+- **Bài học đẩy VPS:** VPS main và origin trước đây khác SHA dù cùng cây. Đã hợp nhất bằng commit `0627819` (hai cha). Từ nay đẩy `main` fast-forward cho cả hai remote, không force-push.
 - **Check-pass (đợt 4–5):** sửa 18 neo chết của `sync-counts` + số liệu cũ trong 5 tài liệu; đã xử lý 13 video mốc vượt thời lượng, 20 video thiếu mốc, 4 SKU mới thiếu tags/phụ đề, 1 `fileLocal` placeholder. `audit_videos_v2`: 140/144 clean, 4 issue còn lại là F2 (chưa có trên VPS — deploy); A8d = 0 (đợt 6). Chi tiết: `CHANGELOG.md` đợt 4 và 5.
 
 - Đã sửa và đo lại: G1, G2, G4, G5, G7, G10, G11, G14 (mã), G15. Toàn bộ gate + deep-ui 11/11 + g2 23/23 + find-404 sạch.

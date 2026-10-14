@@ -1,3 +1,12 @@
+## 2026-10-14 (đợt 7) — DEPLOY LÊN VPS VÀ ORIGIN
+
+- **Đẩy:** nhánh `ui/ui-standard-2026-10-09` gộp vào `main` bằng commit `0627819` (hai cha: `2cdb757` là VPS main, `1d5e767` là commit phần đã stage; cây = `1d5e767`). Không xoá file nào trên VPS. `origin/main` và `vps main` cùng trỏ `0627819`. 314 commit VPS song song (cùng tiêu đề, khác SHA) nay nằm trên GitHub; không force-push.
+- **Khôi phục `scripts/fetch_h2dev_video.cjs`:** commit `a97383a` xoá file này, nhưng CHANGELOG ghi là script tái dùng; file được giữ lại (hash khớp `origin/main`). Muốn bỏ thì xoá trong commit riêng.
+- **Hook post-receive:** build DB OK (144 bài, 793 mốc, 1421 top video, FTS 2251); `sync-counts --check` OK; PM2 reload OK; `pm2` online.
+- **Kiểm 3 vòng:** Node 8899 và nginx 443 (có/không gzip) đều 200 với `Cache-Control: no-cache, must-revalidate`; `videos.json` 144 mục; 4 SKU mới: thumb và transcript 200, video 206, doc 200; SHA `content.js`, `player.css`, `videos.json` trên Cloudflare công khai khớp đĩa VPS; HTML `cf-cache-status: DYNAMIC`.
+- **Cache:** mọi asset đổi có `?v=20261009-uifix81`; service worker đổi tên cache nên bản cũ bị xoá khi kích hoạt. Không purge Cloudflare (không có `CF_TOKEN`); không cần, vì URL mới.
+- **Chưa đưa lên (còn sửa dở của phiên khác):** `assets/app/sw.js`, `index.html`, `learn.html`, `player.html`, `kich-ban.json`, `voice-dna-probe-final.json`, `h2dev-components-lesson-row.css`; `content.js` và `ngach-xanh.json` phần ngoài G5. Hệ quả: 10 kênh RỖNG hiển thị "DIE" trên production cho tới khi đưa phần RỖNG của `content.js` lên.
+
 ## 2026-10-14 (đợt 6) — NỐT CỜ A8D VÀ KHÓA TRÙNG TRONG `video_insights.json`
 
 - **`VIDEO-043d15` (A8d 1 → 0):** khoảng 1585–1647 s bị large-v3 bỏ sót và chèn câu ảo giác ("nhớ like, share và đăng ký kênh") + 3 segment sai; bóc lại bằng `whisper-large-v3-turbo` không prompt, thay 4 segment bằng 19 segment thật (transcript 305 segment). Quét 4 SKU mới: 0 câu ảo giác quen thuộc. `audit_videos_v2.py`: 140/144 clean, 4 issue còn lại đều là F2 (chưa có trên VPS), 0 A8d.

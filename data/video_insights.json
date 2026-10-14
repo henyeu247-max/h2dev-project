@@ -176,7 +176,49 @@
       "Tránh đổi quốc gia cư trú liên tục trong thời gian ngắn làm mất độ tin cậy của kênh.",
       "Tránh dùng số điện thoại rác công cộng để xác minh tính năng nâng cao của kênh."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Setting chứng cho kênh: chuyển vùng/vị trí kênh sau khi đã có mail và kênh"
+      },
+      {
+        "seconds": 132,
+        "time": "02:12",
+        "label": "Chọn quốc gia mục tiêu (Hoa Kỳ); từ khóa kênh sẽ hướng dẫn sau"
+      },
+      {
+        "seconds": 270,
+        "time": "04:30",
+        "label": "Copy nội dung rồi dán vào ChatGPT để nó hiểu bước đang làm"
+      },
+      {
+        "seconds": 396,
+        "time": "06:36",
+        "label": "Làm logo và tên kênh: chụp/copy ảnh bằng chuột phải > kiểm tra"
+      },
+      {
+        "seconds": 532,
+        "time": "08:52",
+        "label": "Từ khóa kênh và từ khóa video là khác nhau; lấy từ khóa từ kênh đối thủ"
+      },
+      {
+        "seconds": 658,
+        "time": "10:58",
+        "label": "Chỉ lấy từ khóa từ kênh đối thủ của mình, không nhờ ChatGPT nghĩ ra"
+      },
+      {
+        "seconds": 797,
+        "time": "13:17",
+        "label": "Có nhiều kênh đối thủ càng có lợi; copy từ khóa bỏ vào kênh mình"
+      },
+      {
+        "seconds": 920,
+        "time": "15:20",
+        "label": "Cài đặt nâng cao: chọn mục, chỉnh ngôn ngữ tiếng Anh Mỹ"
+      }
+    ]
   },
   "VIDEO-04c2e3": {
     "key_takeaways": [
@@ -201,7 +243,34 @@
       "Tránh dịch SRT bằng công cụ thô dẫn đến sai lệch ngữ nghĩa nghiêm trọng.",
       "Tránh đăng nhập chung một tài khoản tool trên quá nhiều địa chỉ IP lạ."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Tổng quan các tool và tài khoản giá rẻ, trả lời bình luận của học viên"
+      },
+      {
+        "seconds": 42,
+        "time": "00:42",
+        "label": "Dùng tool tiết kiệm chi phí và thời gian; hàng nghìn anh em đã dùng từ tháng 2"
+      },
+      {
+        "seconds": 80,
+        "time": "01:20",
+        "label": "Tool dịch video Douyin/Bilibili sang tiếng Việt; chia sẻ thêm tài khoản CapCut giá rẻ"
+      },
+      {
+        "seconds": 110,
+        "time": "01:50",
+        "label": "Tài khoản dùng riêng chính chủ, hay hết hàng nên không trả lời hết bình luận"
+      },
+      {
+        "seconds": 147,
+        "time": "02:27",
+        "label": "Group đã full; muốn mua thì nhắn trực tiếp, rảnh sẽ gửi thông tin"
+      }
+    ]
   },
   "VIDEO-10ceec": {
     "sku": "VIDEO-10ceec",
@@ -437,7 +506,34 @@
       "Tránh spam bình luận cùng một nội dung trên hàng loạt kênh khác nhau.",
       "Tránh đăng tải video dồn dập ngay sau khi tạo kênh gây kích hoạt hệ thống chống bot."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Cách tương tác trong thời gian ngâm kênh (5-7 ngày trước khi đăng video)"
+      },
+      {
+        "seconds": 11,
+        "time": "00:11",
+        "label": "Vào kênh đối thủ, xem vài phút rồi mới like"
+      },
+      {
+        "seconds": 30,
+        "time": "00:30",
+        "label": "Đăng ký kênh cách 1-2 phút, không spam liên tục; nhờ AI viết 10 bình luận tiếng Anh"
+      },
+      {
+        "seconds": 61,
+        "time": "01:01",
+        "label": "Mỗi ngày chỉ bình luận khoảng 4-5 video; like và đăng ký thì không giới hạn"
+      },
+      {
+        "seconds": 117,
+        "time": "01:57",
+        "label": "Không comment quá nhiều lần một ngày kẻo dính spam"
+      }
+    ]
   },
   "VIDEO-1a7f58": {
     "sku": "VIDEO-1a7f58",
@@ -765,27 +861,37 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Báo cáo kênh học viên Pro chính thức được duyệt bật kiếm tiền"
+        "label": "Kênh học viên Pro vừa được duyệt bật kiếm tiền lúc 2h40 ngày 6/6"
       },
       {
-        "seconds": 75,
-        "time": "01:15",
-        "label": "Phân tích ngách Bible Explainer và đối tượng khán giả US"
+        "seconds": 12,
+        "time": "00:12",
+        "label": "Khám kênh trước khi bật và mẹo nối GA để được duyệt nhanh"
       },
       {
-        "seconds": 180,
-        "time": "03:00",
-        "label": "Đặc trưng đồ họa màu nước Watercolor Devotional"
+        "seconds": 28,
+        "time": "00:28",
+        "label": "Kênh mới chỉ khoảng 17 video, không tính vài video của kênh cũ"
       },
       {
-        "seconds": 300,
-        "time": "05:00",
-        "label": "Quy trình liên kết tài khoản Google AdSense không bị treo"
+        "seconds": 48,
+        "time": "00:48",
+        "label": "Nối GA lúc 8h30 sáng, chiều cùng ngày được duyệt bật kiếm tiền"
       },
       {
-        "seconds": 400,
-        "time": "06:40",
-        "label": "Kinh nghiệm duy trì doanh thu ổn định sau khi bật kiếm tiền"
+        "seconds": 72,
+        "time": "01:12",
+        "label": "Điều quan trọng: GA phải chính chủ để không bị treo hoặc xét lâu"
+      },
+      {
+        "seconds": 116,
+        "time": "01:56",
+        "label": "3 video đầu của kênh cũ, 2 video làm sai ngách rồi chuyển sang đúng ngách"
+      },
+      {
+        "seconds": 139,
+        "time": "02:19",
+        "label": "Lời khuyên: kiên trì, chỉ làm 1-2 ngách trước, tránh FOMO"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -1155,7 +1261,49 @@
       "Tránh sao chép nguyên văn kịch bản đối thủ khiến hệ thống gắn cờ vi phạm bản quyền văn bản.",
       "Tránh dùng cỡ chữ phụ đề quá nhỏ khiến người cao tuổi gặp khó khăn khi theo dõi."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Nhắc lại nhân bản thị trường làm view ngoại trước khi share key thị trường Nhật, Hàn"
+      },
+      {
+        "seconds": 197,
+        "time": "03:17",
+        "label": "Lập danh sách kênh đối thủ và dịch tiếng Việt kênh mẫu đầu tiên"
+      },
+      {
+        "seconds": 402,
+        "time": "06:42",
+        "label": "Xem video mẫu làm bằng công cụ gì: edit đơn giản, chỉ cần một ảnh"
+      },
+      {
+        "seconds": 591,
+        "time": "09:51",
+        "label": "Từ kênh mẫu tìm thêm kênh khác làm đối thủ; kênh mới 4 video vẫn kéo được view"
+      },
+      {
+        "seconds": 799,
+        "time": "13:19",
+        "label": "Kênh thứ hai cùng chủ đề, view thấp hơn, 81 video"
+      },
+      {
+        "seconds": 986,
+        "time": "16:26",
+        "label": "Em làm nhiều thị trường (Brazil, Bồ Đào Nha, Tây Ban Nha, Nhật, Hàn), không chỉ US"
+      },
+      {
+        "seconds": 1192,
+        "time": "19:52",
+        "label": "Kiên nhẫn ngâm kênh như hướng dẫn, không nóng vội kẻo dính spam"
+      },
+      {
+        "seconds": 1380,
+        "time": "23:00",
+        "label": "Dùng ChatGPT Plus để viết và dịch form sang tiếng Nhật"
+      }
+    ]
   },
   "VIDEO-28bb9b": {
     "sku": "VIDEO-28bb9b",
@@ -2072,7 +2220,49 @@
       "Tránh đổi ngách liên tục khi kênh mới xuất bản được 1 - 2 video.",
       "Tránh dùng prompt sơ sài khiến kịch bản AI sinh ra thiếu chiều sâu và cảm xúc."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Update kênh mới và thị trường khác; hướng dẫn tự làm prompt lấy kịch bản theo chủ đề"
+      },
+      {
+        "seconds": 291,
+        "time": "04:51",
+        "label": "Chọn video lấy kịch bản: ưu tiên video mới (8 ngày trước) còn bám trên đề xuất"
+      },
+      {
+        "seconds": 584,
+        "time": "09:44",
+        "label": "Chỉ cần lấy video phổ biến, cao view nhất của kênh; khoảng 20 video là đủ kịch bản"
+      },
+      {
+        "seconds": 867,
+        "time": "14:27",
+        "label": "Kênh thị trường Nhật: không cần hot trend, quan trọng là bám theo và biết cách làm"
+      },
+      {
+        "seconds": 1161,
+        "time": "19:21",
+        "label": "Phân tích kênh sức khỏe view thấp: ôm quá nhiều ngách cùng lúc"
+      },
+      {
+        "seconds": 1446,
+        "time": "24:06",
+        "label": "Kênh re-up từ Douyin/Bilibili lấy cả kịch bản và giọng đọc"
+      },
+      {
+        "seconds": 1739,
+        "time": "28:59",
+        "label": "Kênh nhân vật nói về đạo lý, triết lý sống, sức khỏe (thị trường Nhật)"
+      },
+      {
+        "seconds": 2023,
+        "time": "33:43",
+        "label": "Dùng prompt bản dài đầy đủ chi tiết thay vì bản rút gọn"
+      }
+    ]
   },
   "VIDEO-3a38f9": {
     "sku": "VIDEO-3a38f9",
@@ -2247,7 +2437,49 @@
       "Tránh dùng visual quá hiện đại không đúng với bối cảnh thời kỳ La Mã cổ đại.",
       "Tránh kịch bản thiếu cao trào kịch tính khiến tỷ lệ giữ chân người xem bị sụt giảm."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Show kênh đang làm để tạo động lực; share key ngách lịch sử"
+      },
+      {
+        "seconds": 153,
+        "time": "02:33",
+        "label": "Vào kênh bất kỳ, mục Phổ biến để lấy video cao view nhất làm nguồn"
+      },
+      {
+        "seconds": 312,
+        "time": "05:12",
+        "label": "Dùng extension xem thêm thông tin kênh khi trình duyệt không hiển thị sẵn"
+      },
+      {
+        "seconds": 458,
+        "time": "07:38",
+        "label": "Lấy khoảng 70% kịch bản đối thủ (có thể 80-90%), phần còn lại tự sáng tạo"
+      },
+      {
+        "seconds": 613,
+        "time": "10:13",
+        "label": "Dàn ý AI viết ra 16 phần dù yêu cầu 8-10 phần: cần yêu cầu thêm phần chia nhỏ"
+      },
+      {
+        "seconds": 768,
+        "time": "12:48",
+        "label": "Chọn giọng đọc truyền cảm phù hợp chủ đề; dùng web Minimax hoặc ElevenLabs"
+      },
+      {
+        "seconds": 917,
+        "time": "15:17",
+        "label": "Import file kịch bản vào tool chạy giọng đọc (khoảng 50 giây) rồi gộp thành file tổng"
+      },
+      {
+        "seconds": 1067,
+        "time": "17:47",
+        "label": "Phần edit: sau khi tạo xong 10 ảnh thì ghép vào video"
+      }
+    ]
   },
   "VIDEO-3e5a21": {
     "sku": "VIDEO-3e5a21",
@@ -2290,27 +2522,37 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Hiểm họa chết kênh dây chuyền khi dùng chung mail khôi phục"
+        "label": "Mở đầu: add quyền quản lý kênh và quản lý Gmail để không bị quét spam hàng loạt"
       },
       {
-        "seconds": 120,
-        "time": "02:00",
-        "label": "Quy trình chuyển đổi kênh cá nhân sang Kênh Thương hiệu (Brand)"
+        "seconds": 19,
+        "time": "00:19",
+        "label": "Làm từ 3 kênh trở lên: vào cài đặt quản lý Gmail và mail khôi phục"
       },
       {
-        "seconds": 280,
-        "time": "04:40",
-        "label": "Hướng dẫn cấp quyền Manager cho Gmail phụ để upload hàng ngày"
+        "seconds": 35,
+        "time": "00:35",
+        "label": "Mỗi mail khôi phục chỉ liên kết cho đúng một kênh"
       },
       {
-        "seconds": 430,
-        "time": "07:10",
-        "label": "Cách cấu hình mail khôi phục chéo độc lập và an toàn tuyệt đối"
+        "seconds": 41,
+        "time": "00:41",
+        "label": "Sai lầm gánh một mail khôi phục cho nhiều kênh: mail bị quét kéo chết cả loạt kênh"
       },
       {
-        "seconds": 560,
-        "time": "09:20",
-        "label": "Quy trình khẩn cấp cứu kênh khi một tài khoản phụ bị vô hiệu hóa"
+        "seconds": 61,
+        "time": "01:01",
+        "label": "Gán quyền quản lý kênh: vào mục Quyền, mời một email khác"
+      },
+      {
+        "seconds": 78,
+        "time": "01:18",
+        "label": "Lợi ích: kênh gốc bị khóa vẫn còn mail khác truy cập được kênh (chết mail, không chết kênh)"
+      },
+      {
+        "seconds": 121,
+        "time": "02:01",
+        "label": "Chỉ nên nối một Google SN cho mỗi kênh, tránh lỗi spam lây sang kênh khác"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -2573,27 +2815,47 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Giải thích cơ chế thuật toán Google quét tài khoản AdSense"
+        "label": "Đợt quét tài khoản Google AdSense (GA) hàng loạt: 90-95% là GA mua ngoài về nối vào"
       },
       {
-        "seconds": 150,
-        "time": "02:30",
-        "label": "Cách chuẩn bị thông tin cá nhân và môi trường mạng sạch"
+        "seconds": 59,
+        "time": "00:59",
+        "label": "GA tính chủ tạo từ nhiều năm trước vẫn trâu; GA mua ngoài bị đai luôn"
+      },
+      {
+        "seconds": 78,
+        "time": "01:18",
+        "label": "Hai ảnh minh họa: ảnh 1 lỗi trùng thông tin gỡ được, ảnh 2 bị vô hiệu hóa không cứu được"
+      },
+      {
+        "seconds": 145,
+        "time": "02:25",
+        "label": "Đợt quét này gắt nhất nhiều năm; dùng fake IP hay browser cũng không qua mặt được"
+      },
+      {
+        "seconds": 184,
+        "time": "03:04",
+        "label": "Cách tạo an toàn: dùng thông tin chính chủ, thiết bị và IP của mình, chỉ tạo một lần"
+      },
+      {
+        "seconds": 295,
+        "time": "04:55",
+        "label": "Tạo thêm GA thứ 2: mượn thông tin người thân, đổi địa chỉ IP và thiết bị khác để tránh trùng thông tin"
       },
       {
         "seconds": 360,
         "time": "06:00",
-        "label": "Quy trình tạo tài khoản AdSense chính chủ chi tiết"
+        "label": "Gỡ lỗi trùng thông tin (ảnh 1): chuyển đổi tài khoản liên kết, nối GA khác vào"
       },
       {
-        "seconds": 580,
-        "time": "09:40",
-        "label": "Khắc phục triệt để lỗi trùng tài khoản \"Bạn đã có một tài khoản\""
+        "seconds": 421,
+        "time": "07:01",
+        "label": "GA đã bị vô hiệu hóa (ảnh 2) gần như không cứu được, kháng chỉ vài phần trăm"
       },
       {
-        "seconds": 800,
-        "time": "13:20",
-        "label": "Hướng dẫn nhận mã PIN và cài đặt phương thức thanh toán an toàn"
+        "seconds": 508,
+        "time": "08:28",
+        "label": "Cảnh giác dịch vụ nhận kháng GA bị vô hiệu hóa, đã có người bị lừa"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -2871,27 +3133,37 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Nguyên nhân YouTube quét lỗi Sử dụng lại nội dung 2026"
+        "label": "Kháng thành công kênh lỗi sử dụng lại nội dung, mail báo về lúc hơn 3 giờ chiều 7/5"
       },
       {
-        "seconds": 90,
-        "time": "01:30",
-        "label": "Yêu cầu bắt buộc của Video Kháng nghị (Appeal Video)"
+        "seconds": 26,
+        "time": "00:26",
+        "label": "Lỗi sử dụng lại / trùng lặp nội dung: tỷ lệ kháng về 99-100%"
       },
       {
-        "seconds": 210,
-        "time": "03:30",
-        "label": "Cách quay màn hình chứng minh quy trình biên tập sáng tạo"
+        "seconds": 37,
+        "time": "00:37",
+        "label": "Một số kênh của học viên đang nhờ kháng (có kênh không show được vì nhạy cảm)"
       },
       {
-        "seconds": 320,
-        "time": "05:20",
-        "label": "Mẫu câu thoại tiếng Anh thuyết phục reviewer duyệt đơn"
+        "seconds": 62,
+        "time": "01:02",
+        "label": "Ví dụ kênh bật kiếm tiền bị báo sử dụng lại: liên hệ ngày 6, kháng tối qua, chưa đầy 8 tiếng đã về"
       },
       {
-        "seconds": 400,
-        "time": "06:40",
-        "label": "Thời gian xét duyệt và cách xử lý nếu đơn bị từ chối"
+        "seconds": 101,
+        "time": "01:41",
+        "label": "Sau khi kháng về sẽ hiện quảng cáo; nếu xui thì khoảng 6 tháng sau mới bị quét lại"
+      },
+      {
+        "seconds": 132,
+        "time": "02:12",
+        "label": "Kênh Reup giữ được view thì trong 6 tháng kiếm lại được, bị quét nữa thì kháng tiếp"
+      },
+      {
+        "seconds": 156,
+        "time": "02:36",
+        "label": "Chốt: kháng thành công lỗi mới nhất ngày 7/5/2026, liên hệ Zalo để được hỗ trợ"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -3581,7 +3853,49 @@
       "Tránh dùng nhạc nền kịch tính quá to át đi lời bình luận phân tích.",
       "Tránh giữ nguyên phụ đề hoặc chữ Hán từ video Douyin gốc."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Video đầu tiên trên web; cập nhật video và key mới thường xuyên"
+      },
+      {
+        "seconds": 131,
+        "time": "02:11",
+        "label": "Key mới ghi rõ ngày cập nhật; bắt đầu video hướng dẫn hôm nay"
+      },
+      {
+        "seconds": 265,
+        "time": "04:25",
+        "label": "Từ khóa ngách theo quốc gia: chọn Canada thay vì các nước khác"
+      },
+      {
+        "seconds": 390,
+        "time": "06:30",
+        "label": "Lấy video cao view nhất của kênh đối thủ để lấy kịch bản"
+      },
+      {
+        "seconds": 522,
+        "time": "08:42",
+        "label": "Dùng AI viết kịch bản theo từng phần: bấm Continue để chạy phần tiếp theo"
+      },
+      {
+        "seconds": 647,
+        "time": "10:47",
+        "label": "Chọn giọng đọc ElevenLabs/Minimax, có thể clone giọng đối thủ"
+      },
+      {
+        "seconds": 782,
+        "time": "13:02",
+        "label": "Kinh nghiệm làm nhiều kênh; hướng dẫn tự tạo ảnh"
+      },
+      {
+        "seconds": 906,
+        "time": "15:06",
+        "label": "Edit đơn giản: cắt nguồn video đã tải rồi ghép lại"
+      }
+    ]
   },
   "VIDEO-5c438a": {
     "sku": "VIDEO-5c438a",
@@ -4296,27 +4610,37 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Phân tích chi tiết chính sách Nội dung không trung thực mới nhất 2026"
+        "label": "Lỗi nội dung không trung thực 2026: quay lại kênh đang xử lý"
       },
       {
-        "seconds": 100,
-        "time": "01:40",
-        "label": "Kỹ thuật phối hợp tư liệu thật và hình ảnh AI để né quét"
+        "seconds": 17,
+        "time": "00:17",
+        "label": "Kênh edit theo kiểu đối thủ; nên dùng hình ảnh tự nhiên, nhiều ảnh ghép lại"
       },
       {
-        "seconds": 230,
-        "time": "03:50",
-        "label": "Cách tinh chỉnh giọng đọc ElevenLabs đạt độ tự nhiên cao nhất"
+        "seconds": 39,
+        "time": "00:39",
+        "label": "Nguyên nhân lỗi: 90% đến từ kịch bản, cần cải thiện kịch bản"
       },
       {
-        "seconds": 360,
-        "time": "06:00",
-        "label": "Hướng dẫn khai báo mục \"Nội dung đã chỉnh sửa\" đúng luật"
+        "seconds": 75,
+        "time": "01:15",
+        "label": "Khi nhờ AI viết kịch bản, yêu cầu thêm yếu tố con người và giá trị giáo dục"
       },
       {
-        "seconds": 480,
-        "time": "08:00",
-        "label": "Các bước gỡ cảnh báo khi video lỡ bị YouTube gắn cờ vi phạm"
+        "seconds": 119,
+        "time": "01:59",
+        "label": "Quét hên xui, quét nhầm hàng loạt do bot AI; chỉ có thể hạn chế tối đa"
+      },
+      {
+        "seconds": 208,
+        "time": "03:28",
+        "label": "Cuối năm nhiều tool sản xuất video hàng loạt không có kịch bản nên bị quét gắt"
+      },
+      {
+        "seconds": 240,
+        "time": "04:00",
+        "label": "Lỗi này khó kháng, tỷ lệ về thấp hơn nhiều so với lỗi sử dụng lại"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -4662,27 +4986,37 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Cơ chế hoạt động của thuật toán tìm kiếm và đề xuất YouTube 2026"
+        "label": "Chủ đề: SEO từ khóa kênh, từ khóa video và mô tả theo chính sách mới nhất"
       },
       {
-        "seconds": 120,
-        "time": "02:00",
-        "label": "Công thức viết tiêu đề hấp dẫn kết hợp từ khóa tìm kiếm"
+        "seconds": 25,
+        "time": "00:25",
+        "label": "Từ khóa kênh và từ khóa video không còn cần nhiều, dễ bị tính spam"
       },
       {
-        "seconds": 280,
-        "time": "04:40",
-        "label": "Cấu trúc bài viết mô tả video 3 tầng tối ưu SEO ngữ nghĩa"
+        "seconds": 39,
+        "time": "00:39",
+        "label": "Từ khóa kênh bỏ trống; từ khóa video chỉ ghi khoảng 2-5 từ"
       },
       {
-        "seconds": 430,
-        "time": "07:10",
-        "label": "Cách gắn thẻ tags và mốc thời gian Timestamps hiệu quả"
+        "seconds": 80,
+        "time": "01:20",
+        "label": "Đã áp dụng từ cuối năm ngoái, kênh mới đều để trống"
       },
       {
-        "seconds": 560,
-        "time": "09:20",
-        "label": "Các lỗi spam metadata cần tránh để không bị bóp phân phối"
+        "seconds": 110,
+        "time": "01:50",
+        "label": "Phần mô tả cũng vậy: chỉ để 3-4 từ khóa, không ghi dài dòng"
+      },
+      {
+        "seconds": 158,
+        "time": "02:38",
+        "label": "Video dùng AI / ảnh AI phải khai báo nhãn nội dung AI khi đăng"
+      },
+      {
+        "seconds": 196,
+        "time": "03:16",
+        "label": "Video tiếp theo: ngâm kênh theo chính sách mới"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -4817,27 +5151,37 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Tại sao phải ngâm kênh trước khi đăng tải video đầu tiên?"
+        "label": "Chủ đề: ngâm kênh và xác minh kênh theo chính sách mới 2026"
       },
       {
-        "seconds": 110,
-        "time": "01:50",
-        "label": "Quy trình nuôi dưỡng hành vi người dùng thật trong 14 ngày"
+        "seconds": 8,
+        "time": "00:08",
+        "label": "Vào cài đặt nâng cao, điều kiện sử dụng: xác minh cho xanh đủ 3 dòng trước khi đăng video"
       },
       {
-        "seconds": 260,
-        "time": "04:20",
-        "label": "Kỹ thuật giữ môi trường mạng và trình duyệt sạch tuyệt đối"
+        "seconds": 43,
+        "time": "00:43",
+        "label": "Xác minh nhanh bằng giấy tờ chụp mặt trước/sau, qua đêm tới sáng là xong"
       },
       {
-        "seconds": 400,
-        "time": "06:40",
-        "label": "Cách nhận biết kênh đã có độ trust mạnh và sẵn sàng upload"
+        "seconds": 69,
+        "time": "01:09",
+        "label": "Thời gian ngâm: kênh cổ khoảng 3 ngày, kênh mới khoảng 5 ngày"
       },
       {
-        "seconds": 530,
-        "time": "08:50",
-        "label": "Tổng kết các sai lầm nóng vội khiến kênh bị bóp ngay từ đầu"
+        "seconds": 114,
+        "time": "01:54",
+        "label": "Có người bảo không cần ngâm vẫn lên view (đúng với phim hot ra phần mới), nhưng bán content/Reup vẫn nên ngâm"
+      },
+      {
+        "seconds": 167,
+        "time": "02:47",
+        "label": "Ngâm là setting logo, banner, xác minh 3 dòng rồi chờ 2 ngày mới đăng video"
+      },
+      {
+        "seconds": 195,
+        "time": "03:15",
+        "label": "Đăng ngay dễ gãy view khi YouTube quét spam đợt; build kênh không đơn giản"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -4879,7 +5223,34 @@
       "Tránh giọng đọc AI nhanh dồn dập khiến người cao tuổi không theo kịp nội dung.",
       "Tránh copy nguyên si kịch bản đối thủ khiến thuật toán nhận diện trùng lặp."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Share ngách thị trường Hàn Quốc: kênh lập từ tháng 6 mà view rất cao"
+      },
+      {
+        "seconds": 53,
+        "time": "00:53",
+        "label": "Ngách ở thị trường Hàn RPM cao hơn nhiều, tương tự các ngách sinh lý nam giới"
+      },
+      {
+        "seconds": 119,
+        "time": "01:59",
+        "label": "Tiêu đề và nội dung gây tò mò, gai sốc khiến người xem click; đổi nhân vật nữ view tăng"
+      },
+      {
+        "seconds": 158,
+        "time": "02:38",
+        "label": "Phân tích cách edit: nhân vật nói dùng HeyGen"
+      },
+      {
+        "seconds": 208,
+        "time": "03:28",
+        "label": "Lưu ý tránh lỗi sử dụng lại / trùng lặp nội dung để sau này bật kiếm tiền không bị dính"
+      }
+    ]
   },
   "VIDEO-817ae6": {
     "sku": "VIDEO-817ae6",
@@ -4972,7 +5343,34 @@
       "Tránh giọng đọc AI thiếu tự nhiên, ngữ điệu ngô nghê làm mất cảm xúc huyền bí.",
       "Tránh hình ảnh kinh dị máu me dính cờ hạn chế độ tuổi của YouTube."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Share key mới; chỉ chỗ lấy prompt và tài liệu"
+      },
+      {
+        "seconds": 113,
+        "time": "01:53",
+        "label": "Sẽ có video riêng về nguồn mua kênh cổ; xem kênh mẫu ở mục Phổ biến"
+      },
+      {
+        "seconds": 220,
+        "time": "03:40",
+        "label": "Từ khóa chính và từ khóa ngách (ví dụ ngách mất tích)"
+      },
+      {
+        "seconds": 330,
+        "time": "05:30",
+        "label": "Edit đơn giản: có âm thanh, kịch bản rồi ghép video, ảnh"
+      },
+      {
+        "seconds": 443,
+        "time": "07:23",
+        "label": "Kênh mới 21 video view tốt; dạng kể chuyện nghiêng về người già"
+      }
+    ]
   },
   "VIDEO-83a28e": {
     "key_takeaways": [
@@ -4997,7 +5395,34 @@
       "Tránh nhạc nền tiết tấu nhanh, sôi động làm hỏng trải nghiệm nghe tĩnh tâm.",
       "Tránh chèn hiệu ứng giật chuyển cảnh đột ngột gây khó chịu cho người lớn tuổi."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Share kênh lập từ 3 tháng trước và phân tích kênh"
+      },
+      {
+        "seconds": 74,
+        "time": "01:14",
+        "label": "Xem tiêu đề, tìm kiếm tiêu đề để ra các kênh đối thủ tương tự"
+      },
+      {
+        "seconds": 149,
+        "time": "02:29",
+        "label": "Chỉ chọn một ngách làm trước, có kết quả mới nhân bản; không ôm nhiều"
+      },
+      {
+        "seconds": 221,
+        "time": "03:41",
+        "label": "Phần đầu video cần sinh động để giữ chân người xem và tránh bị coi là trùng lặp / sử dụng lại nội dung"
+      },
+      {
+        "seconds": 293,
+        "time": "04:53",
+        "label": "Link tham khảo để ở mô tả; giọng đọc các kênh AI thường dùng ElevenLabs hoặc clone"
+      }
+    ]
   },
   "VIDEO-84a039": {
     "sku": "VIDEO-84a039",
@@ -5090,7 +5515,34 @@
       "Tránh hứa hẹn chắc chắn về tài lộc dẫn đến sự nghi ngờ của khán giả.",
       "Tránh đặt link bán vật phẩm phong thủy không rõ nguồn gốc trong phần mô tả."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Share thêm các ngách nhỏ trong các thị trường; không ôm nhiều kênh một lúc"
+      },
+      {
+        "seconds": 90,
+        "time": "01:30",
+        "label": "Dịch kênh dạng triết lý có nhân vật đại diện của thị trường đó để xem"
+      },
+      {
+        "seconds": 181,
+        "time": "03:01",
+        "label": "Kênh thứ 3 thị trường Hàn Quốc: tâm linh, cuộc sống; video viral hên xui"
+      },
+      {
+        "seconds": 270,
+        "time": "04:30",
+        "label": "Kênh chuyển sang ngách khác thì view tăng cao"
+      },
+      {
+        "seconds": 359,
+        "time": "05:59",
+        "label": "Chính sách YouTube đang chặt: không dùng một ảnh, ghép nhiều ảnh hoặc video không bản quyền"
+      }
+    ]
   },
   "VIDEO-86c1ec": {
     "sku": "VIDEO-86c1ec",
@@ -5495,7 +5947,34 @@
       "Tránh xóa sạch cookie liên tục khiến hệ thống nghi ngờ hành vi bất thường.",
       "Tránh đăng nhập cùng lúc một tài khoản trên quá nhiều thiết bị lạ."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Nuôi nhiều email/kênh trên cùng một máy, thiết bị, địa chỉ IP và profile"
+      },
+      {
+        "seconds": 48,
+        "time": "00:48",
+        "label": "Mỗi Gmail/kênh đăng nhập trên một trình duyệt riêng (Cốc Cốc, Edge...)"
+      },
+      {
+        "seconds": 88,
+        "time": "01:28",
+        "label": "Chia profile: mỗi profile một kênh; mail cổ, kênh cổ mua về để lóc vào"
+      },
+      {
+        "seconds": 131,
+        "time": "02:11",
+        "label": "Cho nhiều kênh vào một trình duyệt rất rủi ro: bị hiểu là spam, ảnh hưởng hàng loạt kênh"
+      },
+      {
+        "seconds": 174,
+        "time": "02:54",
+        "label": "Cùng một máy/IP thì không ảnh hưởng nếu không dùng tool; chia theo profile"
+      }
+    ]
   },
   "VIDEO-948336": {
     "key_takeaways": [
@@ -5520,7 +5999,34 @@
       "Tránh dùng hình ảnh nhân vật quá hiện đại làm mất đi tính chân thực lịch sử.",
       "Tránh để một khung hình tĩnh quá 6 giây gây nhàm chán."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Xem kênh mới lập tháng 9 (chỉ một tháng) mà đã view cao"
+      },
+      {
+        "seconds": 52,
+        "time": "00:52",
+        "label": "Ngách chuyện xưa rất ngon, cách làm giống các clip trước"
+      },
+      {
+        "seconds": 103,
+        "time": "01:43",
+        "label": "Phân tích cách edit của một video; kênh đã bật kiếm tiền"
+      },
+      {
+        "seconds": 152,
+        "time": "02:32",
+        "label": "Dùng nguồn video free, ghép nhiều ảnh, không dùng một ảnh vì chính sách YouTube cập nhật tháng 7"
+      },
+      {
+        "seconds": 202,
+        "time": "03:22",
+        "label": "Chỉ làm 1-2 kênh, tập trung chất lượng video, hình ảnh, nội dung"
+      }
+    ]
   },
   "VIDEO-9873fb": {
     "sku": "VIDEO-9873fb",
@@ -5617,7 +6123,34 @@
       "Tránh dùng nhạc đang thịnh hành trên Douyin vì thường có chủ sở hữu bản quyền toàn cầu.",
       "Tránh giữ nguyên độ dài video gốc mà không thêm giá trị bình luận sáng tạo."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Mẹo bản quyền cho dạng Reup bán content từ Douyin"
+      },
+      {
+        "seconds": 132,
+        "time": "02:12",
+        "label": "Phải thay đổi khoảng 60% bằng sáng tạo: cắt ghép, chèn thêm hình ảnh, văn bản"
+      },
+      {
+        "seconds": 258,
+        "time": "04:18",
+        "label": "Tạo kênh phụ để test bản quyền: không yêu cầu kênh cổ, chỉ cần có kênh"
+      },
+      {
+        "seconds": 388,
+        "time": "06:28",
+        "label": "Xem chi tiết bản quyền ở mục Hạn chế: bản quyền có nhiều dạng, demo video bị bản quyền"
+      },
+      {
+        "seconds": 517,
+        "time": "08:37",
+        "label": "Quan trọng là cách tự làm và lấy nguồn; có rất nhiều ngách (ví dụ sinh tồn)"
+      }
+    ]
   },
   "VIDEO-9a6957": {
     "sku": "VIDEO-9a6957",
@@ -6144,7 +6677,44 @@
       "Tránh dùng màu sắc sặc sỡ hoặc phong cách hoạt hình làm mất đi tính trang nghiêm.",
       "Tránh đặt chữ che mất biểu cảm gương mặt của tượng đá triết gia."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Làm thumbnail theo key triết lý khắc kỷ trên Photopea (free), hoặc Canva"
+      },
+      {
+        "seconds": 27,
+        "time": "00:27",
+        "label": "Bước 1: vào photopea.com, tạo dự án mới tỷ lệ 16:9"
+      },
+      {
+        "seconds": 75,
+        "time": "01:15",
+        "label": "Bước 2: nhập ảnh chân dung sơn dầu, dùng Free Transform căn vị trí 1/3 khung hình"
+      },
+      {
+        "seconds": 145,
+        "time": "02:25",
+        "label": "Bước 3: chèn texture nền xước phấn, chỉnh Curves và Hue/Saturation cho nền tối"
+      },
+      {
+        "seconds": 225,
+        "time": "03:45",
+        "label": "Bước 4: dùng Type Tool viết chữ Hook lớn"
+      },
+      {
+        "seconds": 315,
+        "time": "05:15",
+        "label": "Bước 5: tạo khung chữ nhật đỏ, viết cụm \"without a man\" chữ trắng viền đỏ"
+      },
+      {
+        "seconds": 395,
+        "time": "06:35",
+        "label": "Bước 6: căn lề, kiểm tra độ tương phản trên điện thoại và xuất JPG"
+      }
+    ]
   },
   "VIDEO-a7bfd0": {
     "sku": "VIDEO-a7bfd0",
@@ -6244,7 +6814,34 @@
       "Tránh bám theo các video cũ đã hết trend từ nhiều tháng trước.",
       "Tránh đổi ngách đột ngột khiến thuật toán không xác định được tệp khán giả."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Mẹo lấy kịch bản bám theo video đang có view, không bao giờ bị không view"
+      },
+      {
+        "seconds": 89,
+        "time": "01:29",
+        "label": "Lý do hay bị không view / view lẹt đẹt: chọn video tùy ý thay vì bám theo video đang lên"
+      },
+      {
+        "seconds": 173,
+        "time": "02:53",
+        "label": "Xem chỉ số phân tích: video có chỉ số cao (ví dụ hơn 500) so với video khác thì lấy"
+      },
+      {
+        "seconds": 257,
+        "time": "04:17",
+        "label": "Lấy video nhiều view nhất gần đây; hoặc trong 1-2 tháng nếu chỉ số cao"
+      },
+      {
+        "seconds": 343,
+        "time": "05:43",
+        "label": "Kênh đang làm ngon nhưng đổi sang chủ đề khác; nên tập trung một ngách nhỏ"
+      }
+    ]
   },
   "VIDEO-acd33f": {
     "sku": "VIDEO-acd33f",
@@ -6481,7 +7078,49 @@
       "Tránh sử dụng hình ảnh chất lượng thấp mờ nhòe gây phản cảm cho người xem.",
       "Tránh đặt tiêu đề đụng chạm đến tín ngưỡng tôn giáo gây tranh cãi gay gắt."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Share thêm một kênh và cách làm mới; Hàn Quốc, Nhật Bản sẽ hướng dẫn ở clip sau"
+      },
+      {
+        "seconds": 250,
+        "time": "04:10",
+        "label": "Dùng ChatGPT tạo prompt để lấy kịch bản theo chủ đề mình muốn"
+      },
+      {
+        "seconds": 505,
+        "time": "08:25",
+        "label": "Cách chọn video lấy kịch bản: vào mục Phổ biến, không phải video nào cũng lấy"
+      },
+      {
+        "seconds": 747,
+        "time": "12:27",
+        "label": "Chạy kịch bản theo phần: xong phần 1 thì bấm tiếp tục"
+      },
+      {
+        "seconds": 1002,
+        "time": "16:42",
+        "label": "Ngách nhỏ chọn giọng kể cuộc đời tuổi 60, khán giả rất thích"
+      },
+      {
+        "seconds": 1245,
+        "time": "20:45",
+        "label": "Bám theo video đang lên; bán content thì ít nhất bằng đối thủ, làm tốt có thể vượt"
+      },
+      {
+        "seconds": 1498,
+        "time": "24:58",
+        "label": "Phần edit: xóa phông nền xanh, chỉnh hiệu ứng cho dễ nhìn, không quá tối"
+      },
+      {
+        "seconds": 1741,
+        "time": "29:01",
+        "label": "Chốt lại quy trình làm và ngách nhỏ; ví dụ sức khỏe người già, chuyện người già"
+      }
+    ]
   },
   "VIDEO-b559c8": {
     "sku": "VIDEO-b559c8",
@@ -7187,7 +7826,34 @@
       "Tránh hình ảnh bạo lực máu me hoặc vũ khí nguy hiểm dính cờ kiểm duyệt.",
       "Tránh giật tít clickbait sai lệch hoàn toàn so với nội dung video."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Share ngách nhỏ thị trường Nhật: vẫn là triết lý, kênh hoàn toàn mới 28 video"
+      },
+      {
+        "seconds": 79,
+        "time": "01:19",
+        "label": "Ngách khác vẫn view rất cao; các ngách share hôm trước nay đã có nhiều kênh mới lên view"
+      },
+      {
+        "seconds": 156,
+        "time": "02:36",
+        "label": "Ngách share hơn 1 tháng trước: kênh của học viên mua quy trình làm lên rất cao"
+      },
+      {
+        "seconds": 235,
+        "time": "03:55",
+        "label": "View US, Anh, châu Âu RPM thường gấp 2-3 lần; xem kênh xếp hạng chủ đề"
+      },
+      {
+        "seconds": 318,
+        "time": "05:18",
+        "label": "Kênh video máy bay (quân sự, chiến đấu) chỉ 15 video"
+      }
+    ]
   },
   "VIDEO-cb907b": {
     "sku": "VIDEO-cb907b",
@@ -7535,27 +8201,47 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Nguyên tắc hợp tác phát triển kênh YouTube ăn chia doanh thu"
+        "label": "Giới thiệu: hướng dẫn xem video đúng quy trình và phần hợp tác ăn chia doanh thu"
       },
       {
-        "seconds": 110,
-        "time": "01:50",
-        "label": "Giới thiệu tiềm năng ngách Phật pháp thị trường Hàn Quốc"
+        "seconds": 17,
+        "time": "00:17",
+        "label": "Show kênh Hàn Quốc vừa bật kiếm tiền ngày 11/3 để tạo động lực"
       },
       {
-        "seconds": 240,
-        "time": "04:00",
-        "label": "Hướng dẫn sử dụng file tài liệu prompt mẫu tiếng Hàn"
+        "seconds": 86,
+        "time": "01:26",
+        "label": "Lộ trình xem: Module 1 nền tảng tư duy và setup ngay từ đầu, bắt buộc với người mới"
       },
       {
-        "seconds": 360,
-        "time": "06:00",
-        "label": "Quy trình học tập và thực hành bài giảng đạt hiệu quả cao nhất"
+        "seconds": 131,
+        "time": "02:11",
+        "label": "Module 4 cực kỳ quan trọng, cập nhật liên tục; tab mới cập nhật hiện video mới đăng"
       },
       {
-        "seconds": 480,
-        "time": "08:00",
-        "label": "Cơ chế bảo vệ quyền sở hữu kênh trong hợp đồng hợp tác"
+        "seconds": 152,
+        "time": "02:32",
+        "label": "Module 5 quy trình edit; 6 khắc phục gãy view; nhân bản thị trường; module 8 tool và tài khoản giá rẻ"
+      },
+      {
+        "seconds": 255,
+        "time": "04:15",
+        "label": "Hợp tác ăn chia doanh thu: ưu tiên thành viên Pro VIP"
+      },
+      {
+        "seconds": 276,
+        "time": "04:36",
+        "label": "Ví dụ kênh view Việt (Reup bán content) đang hợp tác, bật kiếm tiền cuối tháng 2"
+      },
+      {
+        "seconds": 366,
+        "time": "06:06",
+        "label": "Demo mô tả video: video free xem được link, video Pro cần nâng cấp mới lấy được"
+      },
+      {
+        "seconds": 434,
+        "time": "07:14",
+        "label": "Sắp mở thêm kèo hợp tác view ngoại; hiện chỉ hợp tác view Việt"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -8132,27 +8818,37 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Bằng chứng doanh thu thực tế 16 triệu/ngày từ kênh Nhật"
+        "label": "Kênh học viên Pro thị trường Nhật mới bật kiếm tiền, nhân bản thị trường từ Việt sang Nhật"
       },
       {
-        "seconds": 90,
-        "time": "01:30",
-        "label": "Phân tích ngách Động vật hoang dã & Ký sinh trùng"
+        "seconds": 20,
+        "time": "00:20",
+        "label": "Quay chiều 14/6; YouTube chưa cập nhật doanh thu từ ngày 12"
       },
       {
-        "seconds": 240,
-        "time": "04:00",
-        "label": "Kỹ thuật tạo chuyển động video AI chân thực bằng Veo"
+        "seconds": 42,
+        "time": "00:42",
+        "label": "Trước đó chỉ hơn 1 triệu mỗi ngày; nhân bản đúng ngách thì nổ view, một ngày hơn 16 triệu"
       },
       {
-        "seconds": 420,
-        "time": "07:00",
-        "label": "Tối ưu hóa âm thanh thiên nhiên và voice Nhật NHK style"
+        "seconds": 53,
+        "time": "00:53",
+        "label": "RPM thị trường Nhật khoảng 108.000đ (~4 đô) trên 1.000 lượt xem"
       },
       {
-        "seconds": 600,
-        "time": "10:00",
-        "label": "Chiến lược nhân bản cùng format sang các nước châu Âu"
+        "seconds": 72,
+        "time": "01:12",
+        "label": "Một video thực tế: hơn 300k view, hơn 33 triệu chưa cập nhật hết, RPM 113.000đ"
+      },
+      {
+        "seconds": 128,
+        "time": "02:08",
+        "label": "Video dài khoảng 1 giờ giữ chân trên 10-20 phút thì RPM còn cao hơn nữa"
+      },
+      {
+        "seconds": 189,
+        "time": "03:09",
+        "label": "Nhân bản thị trường làm được mọi cặp thị trường (Hàn, Nhật, US...)"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -8347,27 +9043,32 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Bản chất sự khác nhau giữa Gậy bản quyền và Content ID"
+        "label": "Kênh vừa bị không phê duyệt kiếm tiền, đã kháng về và bật lại kiếm tiền xanh"
       },
       {
-        "seconds": 120,
-        "time": "02:00",
-        "label": "Chiến thuật liên hệ chủ sở hữu xin rút gậy bản quyền"
+        "seconds": 22,
+        "time": "00:22",
+        "label": "Màn hình trước khi kháng: báo lỗi sử dụng lại nội dung"
       },
       {
-        "seconds": 280,
-        "time": "04:40",
-        "label": "Hướng dẫn nộp thông báo phản tố (Counter Notification)"
+        "seconds": 36,
+        "time": "00:36",
+        "label": "Nhận thông báo không được phê duyệt lúc 5-6 giờ ngày 17/12, kháng ngay tối đó"
       },
       {
-        "seconds": 450,
-        "time": "07:30",
-        "label": "Kỹ thuật xử lý kênh bị từ chối kiếm tiền nộp lại sau 30 ngày"
+        "seconds": 55,
+        "time": "00:55",
+        "label": "Quay tối 18/12: kháng chưa đầy 12 tiếng kênh đã về"
       },
       {
-        "seconds": 600,
-        "time": "10:00",
-        "label": "Bảo vệ kênh an toàn trước các đợt càn quét bản quyền"
+        "seconds": 65,
+        "time": "01:05",
+        "label": "Áp dụng cho kênh bị reset/quét hoặc bật kiếm tiền nhưng không được duyệt"
+      },
+      {
+        "seconds": 89,
+        "time": "01:29",
+        "label": "Tỷ lệ về 99-100%, kể cả gậy bản quyền; liên hệ để được hỗ trợ"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -8409,7 +9110,64 @@
       "Tránh nhạc nền quá sôi động hoặc âm lượng quá lớn phá vỡ trải nghiệm thư giãn.",
       "Tránh dùng font chữ có chân cứng nhắc, khó đọc trên màn hình điện thoại di động."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Tư duy edit kênh người que: chủ yếu dùng Photoshop (Photopea), không dùng AI"
+      },
+      {
+        "seconds": 84,
+        "time": "01:24",
+        "label": "Photopea: thiết lập canvas 16:9, vẽ nền cảnh (bầu trời xám, mây, đồi cỏ)"
+      },
+      {
+        "seconds": 320,
+        "time": "05:20",
+        "label": "Vẽ chi tiết nền: hạt mưa, viền cỏ, đổ bóng cây theo từng layer"
+      },
+      {
+        "seconds": 560,
+        "time": "09:20",
+        "label": "Dựng nhân vật stick figure trên các layer tách biệt, dùng Free Transform"
+      },
+      {
+        "seconds": 900,
+        "time": "15:00",
+        "label": "Tinh chỉnh nhân vật: biểu cảm khuôn mặt, Shape, Layer Style cho nổi khối"
+      },
+      {
+        "seconds": 1500,
+        "time": "25:00",
+        "label": "Import loạt ảnh AI vào dự án để ghép vào các phân cảnh"
+      },
+      {
+        "seconds": 1900,
+        "time": "31:40",
+        "label": "Ghép ảnh AI với nền vẽ tay: Clipping Mask và cân chỉnh màu"
+      },
+      {
+        "seconds": 2200,
+        "time": "36:40",
+        "label": "Chuyển sang CapCut Desktop để dựng video"
+      },
+      {
+        "seconds": 2700,
+        "time": "45:00",
+        "label": "CapCut: zoom/pan từng ảnh, chuyển cảnh, đồng bộ với giọng đọc"
+      },
+      {
+        "seconds": 3050,
+        "time": "50:50",
+        "label": "Thêm phụ đề tự động, chỉnh font, chèn nhạc nền và hiệu ứng âm thanh"
+      },
+      {
+        "seconds": 3400,
+        "time": "56:40",
+        "label": "Rà soát timeline, kiểm tra đồng bộ hình-tiếng và xuất video thành phẩm"
+      }
+    ]
   },
   "VIDEO-f59aa7": {
     "key_takeaways": [
@@ -8434,7 +9192,49 @@
       "Tránh dùng cùng một mẫu thumbnail phong cách phương Tây cho thị trường Nhật/Hàn.",
       "Tránh đăng chung các video đa ngôn ngữ lên cùng một kênh (phải tách kênh độc lập)."
     ],
-    "verified_expert_summary": true
+    "verified_expert_summary": true,
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Hướng dẫn làm kênh nhân bản ở các thị trường (giọng hơi khàn vì ốm)"
+      },
+      {
+        "seconds": 325,
+        "time": "05:25",
+        "label": "Ví dụ kênh lập 13/5, sau 13 ngày đã có video 200.000 view ở thị trường Việt"
+      },
+      {
+        "seconds": 652,
+        "time": "10:52",
+        "label": "Mỗi người chọn một ngách nhỏ khác nhau để giảm cạnh tranh, tăng tỷ lệ thành công"
+      },
+      {
+        "seconds": 978,
+        "time": "16:18",
+        "label": "Tải nhiều video nguồn về ghép cho đủ thời lượng khớp với giọng đọc 8-10 phút"
+      },
+      {
+        "seconds": 1297,
+        "time": "21:37",
+        "label": "Tạo avatar: chọn Custom photo avatar, tải ảnh đã xóa nền lên"
+      },
+      {
+        "seconds": 1625,
+        "time": "27:05",
+        "label": "Làm phần giới thiệu: copy đoạn lời thoại đã chuẩn bị vào để chạy"
+      },
+      {
+        "seconds": 1942,
+        "time": "32:22",
+        "label": "Chỉnh phông chữ to, rõ vì người xem lớn tuổi thích chữ lớn"
+      },
+      {
+        "seconds": 2266,
+        "time": "37:46",
+        "label": "Chọn phông chữ, màu trắng, viền đen giống đối thủ"
+      }
+    ]
   },
   "VIDEO-f74bb1": {
     "sku": "VIDEO-f74bb1",
@@ -8557,27 +9357,32 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Báo cáo doanh thu thực tế 10 ngày đầu sau bật kiếm tiền"
+        "label": "Kênh thị trường view Việt vừa bật kiếm tiền ngày 7, bắt đầu nhảy tiền ngày 8"
       },
       {
-        "seconds": 80,
-        "time": "01:20",
-        "label": "Mô hình Bán Content và hành vi tệp khán giả lớn tuổi"
+        "seconds": 12,
+        "time": "00:12",
+        "label": "Quy đổi sang VNĐ: sau đúng 10 ngày bật kiếm tiền"
       },
       {
-        "seconds": 180,
-        "time": "03:00",
-        "label": "Kỹ thuật xử lý hình ảnh qua mặt Content ID hình ảnh"
+        "seconds": 24,
+        "time": "00:24",
+        "label": "YouTube cập nhật doanh thu khoảng 2 ngày một lần, gần đây nhảy hơn 2 triệu"
       },
       {
-        "seconds": 280,
-        "time": "04:40",
-        "label": "Cách lọc sạch metadata và render video chuẩn an toàn"
+        "seconds": 36,
+        "time": "00:36",
+        "label": "Video Pro hướng dẫn full quy trình bán content, show kênh thực chiến không che"
       },
       {
-        "seconds": 350,
-        "time": "05:50",
-        "label": "Lưu ý phòng ngừa bản quyền khi phát triển dài hạn"
+        "seconds": 100,
+        "time": "01:40",
+        "label": "Thông số kênh: ngách dành cho người trên 60-65 tuổi, thị trường Việt Nam"
+      },
+      {
+        "seconds": 119,
+        "time": "01:59",
+        "label": "Trung bình khoảng 1 triệu mỗi ngày, 2 ngày gần đây hơn 2 triệu"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -8629,27 +9434,37 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Cơ chế phân phối và thử nghiệm lượt xem ban đầu của YouTube"
+        "label": "Câu hỏi: làm bao nhiêu video không lên thì bỏ, phân tích chỉ số để giữ làm tiếp"
       },
       {
-        "seconds": 90,
-        "time": "01:30",
-        "label": "Quy tắc 10-15 video: Khi nào nên giữ và khi nào nên bỏ kênh?"
+        "seconds": 21,
+        "time": "00:21",
+        "label": "Ví dụ kênh học viên kiên trì: ban đầu vài chục view, hơn một tháng sau mới nổ"
       },
       {
-        "seconds": 220,
-        "time": "03:40",
-        "label": "Cách đọc biểu đồ phễu Impressions -> CTR -> AVD chính xác"
+        "seconds": 111,
+        "time": "01:51",
+        "label": "Phân tích kênh: mới 57 video mới lên, cần kiên trì"
       },
       {
-        "seconds": 350,
-        "time": "05:50",
-        "label": "Chiến thuật đóng gói tài nguyên để tái sinh ngách trên kênh mới"
+        "seconds": 128,
+        "time": "02:08",
+        "label": "Quan điểm: thử khoảng 20-30 video; 20-25 video mà không lên thì xác định bỏ"
       },
       {
-        "seconds": 480,
-        "time": "08:00",
-        "label": "Tâm lý kỷ luật khi làm YouTube: Cắt lỗ đúng lúc để đón đầu ngách mới"
+        "seconds": 203,
+        "time": "03:23",
+        "label": "Xem chỉ số phạm vi tiếp cận: lượt hiển thị theo từng video, ví dụ hơn 400.000 lượt hiển thị"
+      },
+      {
+        "seconds": 224,
+        "time": "03:44",
+        "label": "Hiển thị cao nhưng tỷ lệ click thấp thì cải thiện thêm; không có lượt hiển thị thì bỏ"
+      },
+      {
+        "seconds": 296,
+        "time": "04:56",
+        "label": "Tỷ lệ click 8-10% là ngon; theo dõi thường xuyên số liệu phân tích"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -9117,27 +9932,27 @@
       {
         "seconds": 0,
         "time": "00:00",
-        "label": "Bối cảnh kênh truyện audio doanh thu 1.700$ bị tắt kiếm tiền"
+        "label": "Giới thiệu kênh Reup hợp hình văn chung vừa được hỗ trợ kháng"
       },
       {
-        "seconds": 75,
-        "time": "01:15",
-        "label": "Hướng dẫn khai thác Google Sheet tài nguyên truyện audio"
+        "seconds": 10,
+        "time": "00:10",
+        "label": "Thời điểm nhận mail bị tag kiếm tiền vì lỗi sử dụng lại nội dung"
       },
       {
-        "seconds": 180,
-        "time": "03:00",
-        "label": "Kỹ thuật mix lại âm thanh và chèn visualizer động né AI quét"
+        "seconds": 43,
+        "time": "00:43",
+        "label": "Lỗi này kháng tỷ lệ về 99%, đã nhận và kháng thành công nhiều kênh"
       },
       {
-        "seconds": 280,
-        "time": "04:40",
-        "label": "Chiến thuật giữ giờ xem và nộp đơn bật kiếm tiền lần hai"
+        "seconds": 74,
+        "time": "01:14",
+        "label": "Kênh Reup bật kiếm tiền hơn 3-4 tháng, doanh thu hơn 1.000 đô"
       },
       {
-        "seconds": 380,
-        "time": "06:20",
-        "label": "Tổng kết bài học quản trị kênh reup view Việt an toàn"
+        "seconds": 102,
+        "time": "01:42",
+        "label": "Chốt: hỗ trợ kháng cho kênh dính sử dụng lại / trùng lặp nội dung"
       }
     ],
     "analysis_method": "verified_expert_summary",
@@ -9717,11 +10532,11 @@
     "target_market": "🌐 Toàn cầu",
     "market_code": "GL",
     "key_takeaways": [
-      "Nguy cơ mất tiền độc quyền AdSense: Một kênh YouTube chỉ gắn với 1 tài khoản AdSense duy nhất; nếu tài khoản Gmail sở hữu bị vô hiệu hóa hoặc dính quét bảo mật thì toàn bộ doanh thu và quyền quản lý bị đóng băng vĩnh viễn.",
-      "Cơ chế ủy quyền người dùng AdSense: Sử dụng tính năng Quản lý quyền truy cập và ủy quyền (Access and authorization) trong cài đặt AdSense để thêm email thứ 2 làm Quản trị viên (Administrator).",
-      "Tiêu chuẩn email phụ: Email phụ được thêm quyền phải là tài khoản Gmail sạch, chưa từng đăng ký hay liên kết với bất kỳ tài khoản Google AdSense nào khác trước đó nhằm tránh bị lỗi trùng lặp (Duplicate AdSense).",
-      "Xử lý lỗi Bước 2 bật kiếm tiền: Khi tài khoản AdSense chính bị khóa hoặc quét vi phạm, tài khoản phụ có quyền Quản trị viên vẫn có thể đăng nhập vào AdSense để đổi thông tin thanh toán, chuyển kênh hoặc đóng tài khoản lỗi để liên kết AdSense mới.",
-      "Bảo mật đa tầng 2FA tách biệt: Mail chính và mail phụ bắt buộc phải cài đặt xác thực 2 bước (2FA) bằng 2 số điện thoại hoặc thiết bị xác thực khác nhau, tránh dùng chung cookie trình duyệt."
+      "Google AdSense là huyết mạch giữ dòng tiền của cả hệ thống kênh YouTube; mất tài khoản AdSense đồng nghĩa với việc mất toàn bộ doanh thu.",
+      "Cơ chế quét hàng loạt của Google: Khi 1 kênh liên kết AdSense bị die vì vi phạm nghiêm trọng, tài khoản AdSense đó có thể bị khóa vĩnh viễn (chết chùm).",
+      "Quy trình phân quyền Quản trị viên (Admin) và Người dùng (User) an toàn: Luôn có tối thiểu 2 tài khoản Gmail quản lý một AdSense trên 2 IP độc lập.",
+      "Sử dụng AdSense doanh nghiệp hoặc AdSense ngoại có độ trust cao hơn so với AdSense cá nhân mới tạo.",
+      "File SOP độc quyền kèm theo bài học hướng dẫn từng bước click chuột add quyền cứu tài khoản khi có biến động."
     ],
     "edit_sop": {
       "primary": "Quy trình thiết lập phân quyền Quản trị viên dự phòng cho Google AdSense",
@@ -9734,9 +10549,9 @@
       ]
     },
     "avoid_flags": [
-      "Tuyệt đối không dùng email phụ đã từng đăng ký AdSense hoặc đã từng bị từ chối/khóa AdSense để tránh dính bẫy quét lỗi 'Tài khoản trùng lặp' (Duplicate account).",
-      "Không đăng nhập cả 2 email quản trị trên cùng một cấu hình trình duyệt (profile) mà không xóa cookie hoặc tách biệt môi trường, dễ bị quét liên đới IP.",
-      "Không thay đổi tài khoản ngân hàng hoặc thông tin thuế liên tục ngay sau khi thêm quyền mới để tránh bị tạm giữ thanh toán (Payment Hold)."
+      "Tuyệt đối không dùng chung một tài khoản AdSense cá nhân cho hàng chục kênh reup có nguy cơ dính gậy cao.",
+      "Tránh đăng nhập cả tài khoản AdSense chính và phụ trên cùng một trình duyệt hoặc cùng một IP mạng công cộng.",
+      "Không thay đổi thông tin người thụ hưởng ngân hàng liên tục trong thời gian sát ngày thanh toán (21 - 26 hàng tháng)."
     ],
     "tools_mentioned": [
       "Google AdSense",
@@ -9776,7 +10591,15 @@
     "visual_audio_checked": true,
     "verified_expert_summary": true,
     "claims_require_external_verification": false,
-    "source_transcript": "video/VIDEO-00136f/transcript.txt"
+    "source_transcript": "video/VIDEO-00136f/transcript.txt",
+    "sop_steps": [
+      "Bước 1: Đăng nhập vào tài khoản Google AdSense chính chủ, vào mục Quản trị (Admin) -> Quyền truy cập và ủy quyền (Access and authorization).",
+      "Bước 2: Nhập email phụ (Gmail sạch đã ngâm trên profile riêng) vào mục Quản lý người dùng và cấp quyền Quản trị viên (Administrator).",
+      "Bước 3: Mở profile trình duyệt thứ 2, kiểm tra email và chấp nhận lời mời tham gia quản lý AdSense.",
+      "Bước 4: Phân chia các kênh YouTube thành từng cụm nhỏ (Cluster), không liên kết toàn bộ 10 - 20 kênh vào chung một AdSense duy nhất.",
+      "Bước 5: Định kỳ hàng tháng đăng nhập kiểm tra trạng thái thanh toán và địa chỉ nhận mã PIN an toàn."
+    ],
+    "last_verified_at": "2026-10-09T07:00:00Z"
   },
   "VIDEO-61E354": {
     "sku": "VIDEO-61e354",
@@ -10151,11 +10974,11 @@
     "target_market": "🇰🇷 Hàn Quốc",
     "market_code": "KR",
     "key_takeaways": [
-      "Ngách Sức khỏe người già Hàn Quốc siêu trend: Thị trường Hàn Quốc có dân số già hóa nhanh, các video sức khỏe dài 70-90 phút có tỷ lệ giữ chân (AVD) cực cao và RPM dao động từ $8 - $18/1.000 view.",
-      "Công thức phân tích kênh đối thủ chuyên sâu: Lấy kênh mẫu @시니어건강정보r và 구름야담, phân tích cấu trúc kịch bản ru ngủ/thư giãn kết hợp kiến thức y học thường thức dễ hiểu.",
-      "Quy trình Prompt Master tiếng Hàn 3 bước: Bước 1: Xào nấu kịch bản 70% đối thủ + 30% sáng tạo; Bước 2: Tạo prompt hình ảnh xuyên suốt phong cách tranh vẽ mực nước/hoạt họa Hàn Quốc; Bước 3: Tạo Thumbnail giật tít người già.",
-      "Tối ưu Prompt cho công cụ Whisk / Gemini: Tạo danh sách 15-30 prompt ảnh tự động chia theo từng phần kịch bản, đính kèm ảnh chụp màn hình video đối thủ để AI hiểu chính xác phong cách đồ họa.",
-      "Độ dài video tối ưu cho doanh thu: Video từ 60 đến 90 phút cho phép chèn 8-12 điểm quảng cáo giữa video (Mid-roll ads), tạo ra doanh thu gấp 5-7 lần so với video ngắn 8 phút thông thường."
+      "Phương pháp tự train prompt là kỹ năng thượng thừa giúp học viên tự lập 100%, không bị phụ thuộc vào các prompt mẫu có sẵn.",
+      "Quy trình Reverse-Engineering: Bóc tách transcript của 3 - 5 video nhiều view nhất của kênh đối thủ -> Đưa vào AI để phân tích cấu trúc kịch bản.",
+      "Yêu cầu AI trích xuất: Cấu trúc mở bài (Hook), cách dẫn dắt vào vấn đề, cách giải thích khoa học, và lời kêu gọi hành động cuối video.",
+      "Từ công thức cấu trúc đó, viết thành một siêu Prompt Master yêu cầu AI tạo kịch bản mới cho bất kỳ chủ đề sức khỏe nào.",
+      "Thực hành áp dụng ngay cho ngách sức khỏe thị trường Hàn Quốc để kiểm chứng tính hiệu quả và tốc độ sản xuất kịch bản."
     ],
     "edit_sop": {
       "primary": "SOP sản xuất video dài 70-90 phút ngách sức khỏe Hàn Quốc chuẩn phong cách 구름야담",
@@ -10168,9 +10991,9 @@
       ]
     },
     "avoid_flags": [
-      "Tránh đưa ra các lời khuyên y tế mang tính chẩn đoán bệnh nguy hiểm hoặc cam kết chữa khỏi 100% để không dính án phạt YMYL (Your Money Your Life) của YouTube.",
-      "Không dùng hình ảnh ghê rợn, lở loét hoặc hình chụp bộ phận cơ thể phản cảm trong thumbnail, dễ bị ăn gậy vi phạm nguyên tắc cộng đồng.",
-      "Tránh để tốc độ đọc quá nhanh; đối tượng khán giả trên 60 tuổi tại Hàn Quốc sẽ thoát video ngay lập tức nếu âm thanh dồn dập, khó nghe."
+      "Tránh viết prompt quá ngắn hoặc chung chung kiểu 'hãy viết cho tôi một kịch bản về sức khỏe' sẽ cho ra kết quả nông cạn.",
+      "Không bỏ qua bước kiểm tra lại văn phong kính ngữ tiếng Hàn của kịch bản do AI sinh ra.",
+      "Tránh copy nguyên si câu chuyện cá nhân của kênh đối thủ vào kịch bản mới, dễ bị khiếu nại đạo văn."
     ],
     "tools_mentioned": [
       "Claude AI Pro",
@@ -10214,7 +11037,15 @@
     "visual_audio_checked": true,
     "verified_expert_summary": true,
     "claims_require_external_verification": false,
-    "source_transcript": "video/VIDEO-bdfab7/transcript.txt"
+    "source_transcript": "video/VIDEO-bdfab7/transcript.txt",
+    "sop_steps": [
+      "Bước 1: Chọn một kênh đối thủ mạnh trong ngách, tải phụ đề/transcript của 3 video thành công nhất về máy.",
+      "Bước 2: Dán transcript vào ChatGPT/Claude kèm lệnh yêu cầu bóc tách công thức viết bài chi tiết từng phân đoạn.",
+      "Bước 3: Xây dựng Prompt Master với 5 phần: Vai trò (Role), Bối cảnh (Context), Nhiệm vụ (Task), Ràng buộc (Constraints), Mẫu đầu ra (Output Format).",
+      "Bước 4: Test thử prompt với một chủ đề mới trong ngách sức khỏe Hàn Quốc và tinh chỉnh câu từ cho đến khi đạt độ mượt mà cao nhất.",
+      "Bước 5: Lưu prompt chuẩn vào kho tài liệu cá nhân để dùng làm khuôn mẫu sản xuất hàng loạt video tiếp theo."
+    ],
+    "last_verified_at": "2026-10-09T06:30:00Z"
   },
   "VIDEO-54422C": {
     "sku": "VIDEO-54422c",
@@ -10226,11 +11057,11 @@
     "target_market": "🇰🇷 Hàn Quốc",
     "market_code": "KR",
     "key_takeaways": [
-      "Nguyên lý tự lực cánh sinh trong tạo Prompt: Thay vì đi xin prompt của người khác, người làm YouTube chuyên nghiệp phải biết cách tự đọc vị đối thủ và huấn luyện AI tạo ra prompt độc quyền cho riêng mình.",
-      "Khám phá 2 kênh mẫu tiềm năng: Phân tích chuyên sâu 2 kênh @baeksehealth và @실버라디오-z4u để thấy rõ cách họ xây dựng thương hiệu kênh sức khỏe dành cho thế hệ Silver (người cao tuổi).",
-      "Kỹ thuật Clone giọng đọc đặc trưng: Hướng dẫn cách trích xuất file âm thanh sạch từ những người nổi tiếng hoặc phát thanh viên uy tín (như bác Lại Văn Sâm ở Việt Nam hoặc phát thanh viên Hàn) để làm mẫu giọng clone.",
-      "Cấu trúc kịch bản phân tầng cảm xúc: Kịch bản thành công luôn bắt đầu bằng một câu hỏi gợi mở trăn trở tuổi già, dẫn chứng câu chuyện đời thực, phân tích nguyên nhân khoa học và kết thúc bằng lời khuyên dinh dưỡng thực tế.",
-      "Tối ưu hóa thời gian sản xuất nhờ Prompt đồng bộ: Khi prompt đã được tinh chỉnh chuẩn xác, thời gian viết kịch bản và chuẩn bị tư liệu cho một video 20 phút giảm từ 3 ngày xuống chỉ còn 30 phút."
+      "Kỹ thuật tối thượng tự train prompt cho bất kỳ chủ đề nào: Học viên làm chủ hoàn toàn tư duy tạo prompt thay vì đi xin prompt mẫu thụ động.",
+      "Nguyên lý 4 trụ cột của một siêu Prompt: Phân vai chuyên gia (Role Persona) + Quy tắc bóc tách đối thủ (Deconstruction) + Bộ lọc phong cách (Style Filter) + Định dạng chuẩn hóa (Output Schema).",
+      "File text tài liệu kèm theo cung cấp mẫu Prompt Master hoàn chỉnh có thể tái sử dụng cho hàng trăm ngách khác nhau.",
+      "Hai kênh đối thủ mẫu (@baeksehealth và @실버라디오-z4u) là ví dụ điển hình về việc dùng prompt tự động tạo kịch bản sức khỏe người già.",
+      "Học viên có thể tự điều chỉnh prompt để sản xuất kịch bản dài từ 30 phút đến 1 tiếng chỉ trong vài phút thao tác với AI."
     ],
     "edit_sop": {
       "primary": "SOP 4 bước tự xây dựng Prompt Master đa ngách và ứng dụng giọng đọc AI Clone",
@@ -10243,9 +11074,9 @@
       ]
     },
     "avoid_flags": [
-      "Tránh clone giọng của các chính trị gia hoặc nhân vật thời sự nhạy cảm, dễ dính chính sách mạo danh (Impersonation Policy) của YouTube.",
-      "Không để kịch bản chứa các từ ngữ giật gân, phản khoa học như 'Thần dược trị bách bệnh', 'Uống một cốc khỏi ngay ung thư'.",
-      "Tránh sử dụng mẫu giọng clone có âm thanh nền bị rè hoặc vang vọng phòng, làm giảm chất lượng trải nghiệm người nghe."
+      "Tránh ra lệnh quá ngắn gọn cho AI kiểu 'viết kịch bản về sức khỏe' sẽ cho ra bài viết hời hợt, vô hồn.",
+      "Không bỏ qua bước kiểm tra lại thông tin khoa học trong kịch bản để tránh đưa lời khuyên y tế sai lệch.",
+      "Tránh dùng cùng một prompt cố định cho nhiều ngách khác nhau mà không tinh chỉnh ngữ cảnh đặc thù của từng ngách."
     ],
     "tools_mentioned": [
       "Claude AI",
@@ -10289,7 +11120,15 @@
     "visual_audio_checked": true,
     "verified_expert_summary": true,
     "claims_require_external_verification": false,
-    "source_transcript": "video/VIDEO-54422c/transcript.txt"
+    "source_transcript": "video/VIDEO-54422c/transcript.txt",
+    "sop_steps": [
+      "Bước 1: Mở file Prompt Master trong tab Tài liệu bài giảng, đọc hiểu cấu trúc phân bổ các lệnh ràng buộc.",
+      "Bước 2: Thu thập 3 transcript từ 3 video nhiều view nhất của ngách mục tiêu, dán vào phần dữ liệu đầu vào cho AI.",
+      "Bước 3: Ra lệnh cho AI phân tích công thức mở bài, cách chuyển đoạn và các từ khóa chốt cảm xúc của đối thủ.",
+      "Bước 4: Nhập chủ đề mới cần làm vào khuôn mẫu Prompt Master và yêu cầu AI xuất kịch bản đầy đủ kèm phân cảnh hình ảnh.",
+      "Bước 5: Đọc rà soát lại văn phong, chỉnh sửa một vài từ ngữ địa phương cho tự nhiên trước khi đưa vào phần mềm lồng tiếng."
+    ],
+    "last_verified_at": "2026-10-09T07:00:00Z"
   },
   "VIDEO-B380A1": {
     "sku": "VIDEO-b380a1",
@@ -10331,29 +11170,44 @@
     "channels_mentioned": [],
     "key_timestamps": [
       {
-        "time": "00:00",
         "seconds": 0,
-        "label": "Lý do người mới nên bắt đầu với thị trường Việt Nam để làm quen quy trình"
+        "time": "00:00",
+        "label": "Share thêm một kênh và cách làm mới; Hàn Quốc, Nhật Bản sẽ hướng dẫn ở clip sau"
       },
       {
-        "time": "05:40",
-        "seconds": 340,
-        "label": "Phân tích kênh mẫu 16 video view tăng trưởng nhanh tại Việt Nam"
+        "seconds": 250,
+        "time": "04:10",
+        "label": "Dùng ChatGPT tạo prompt để lấy kịch bản theo chủ đề mình muốn"
       },
       {
-        "time": "12:20",
-        "seconds": 740,
-        "label": "Hướng dẫn tải video tư liệu sạch bằng trình duyệt Cốc Cốc"
+        "seconds": 505,
+        "time": "08:25",
+        "label": "Cách chọn video lấy kịch bản: vào mục Phổ biến, không phải video nào cũng lấy"
       },
       {
-        "time": "20:15",
-        "seconds": 1215,
-        "label": "Quy trình clone giọng nói truyền cảm phong cách MC truyền hình"
+        "seconds": 747,
+        "time": "12:27",
+        "label": "Chạy kịch bản theo phần: xong phần 1 thì bấm tiếp tục"
       },
       {
-        "time": "27:30",
-        "seconds": 1650,
-        "label": "Lắp ghép kịch bản, hình ảnh, sóng nhạc và lời khuyên kiên trì cho người mới"
+        "seconds": 1002,
+        "time": "16:42",
+        "label": "Ngách nhỏ chọn giọng kể cuộc đời tuổi 60, khán giả rất thích"
+      },
+      {
+        "seconds": 1245,
+        "time": "20:45",
+        "label": "Bám theo video đang lên; bán content thì ít nhất bằng đối thủ, làm tốt có thể vượt"
+      },
+      {
+        "seconds": 1498,
+        "time": "24:58",
+        "label": "Phần edit: xóa phông nền xanh, chỉnh hiệu ứng cho dễ nhìn, không quá tối"
+      },
+      {
+        "seconds": 1741,
+        "time": "29:01",
+        "label": "Chốt lại quy trình làm và ngách nhỏ; ví dụ sức khỏe người già, chuyện người già"
       }
     ],
     "analysis_method": "verified_expert_summary",

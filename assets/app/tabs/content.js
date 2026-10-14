@@ -961,8 +961,8 @@ async function renderKichBan() {
   const kich = (await loadJSON('data-tabs/tai-lieu-full.json').catch(() => [])) || [];
   const videos = (await loadJSON('data-tabs/videos.json').catch(() => [])) || [];
   const bySku = Object.fromEntries((Array.isArray(videos) ? videos : []).map(v => [v.sku, v]));
-  const KIND_LABEL = { prompt: 'Prompt', list: 'List kênh', tool: 'Tool', drive: 'Drive', form: 'Form', ai: 'AI gen', report: 'Báo cáo', 'internal-doc': 'Tài liệu nội bộ', other: 'Khác' };
-  const KIND_BADGE = { prompt: 'badge-brand', list: 'badge-blue', tool: 'badge-amber', drive: 'badge-green', form: 'badge-red', ai: 'badge-blue', report: 'badge-green', 'internal-doc': 'badge-muted', other: 'badge-muted' };
+  const KIND_LABEL = { prompt: 'Prompt', list: 'List kênh', tool: 'Tool', drive: 'Drive', form: 'Form', ai: 'AI gen', report: 'Báo cáo', 'internal-doc': 'Tài liệu nội bộ', sop: 'SOP', guide: 'Hướng dẫn', transcript: 'Phụ đề', sheet: 'Bảng tính', other: 'Khác' };
+  const KIND_BADGE = { prompt: 'badge-brand', list: 'badge-blue', tool: 'badge-amber', drive: 'badge-green', form: 'badge-red', ai: 'badge-blue', report: 'badge-green', 'internal-doc': 'badge-muted', sop: 'badge-green', guide: 'badge-blue', transcript: 'badge-muted', sheet: 'badge-amber', other: 'badge-muted' };
   const NICHE_ORDER = ['Triết lý / Tâm linh', 'Sức khỏe / Lão hóa', 'Kinh tế / Tài chính', 'Reup / Hoạt hình', 'Drama / Stories', 'Lịch sử / Quân sự', 'Everyday History EN (lịch sử đồ vật thường ngày)', 'Khoa học EN', 'Edit / Thumb', 'Nhân bản / Kênh', 'Share key / Ngách nhỏ', 'Kiếm tiền / Chính sách', 'Hệ thống / Quy trình', 'Nền tảng / Tool', 'Khác'];
   function classifyPrompt(item) {
     if (item.kind) return item.kind;
@@ -970,6 +970,9 @@ async function renderKichBan() {
     const link = item.link || '';
     const file = (item.file || '').toLowerCase();
     const blob = name + ' ' + file + ' ' + link;
+    // Gap G5 (2026-10-14): muc khong co `kind` ma la phu de / SOP khong duoc roi vao 'prompt' (.txt) hay 'report' (tu "quet").
+    if (/transcript\.txt$/.test(file) || /^bản ghi phụ đề/.test(name)) return 'transcript';
+    if (/^sop\b/.test(name)) return 'sop';
     if (/forms\.gle|docs\.google\.com\/forms/.test(link) || /forms|mua kênh/.test(name)) return 'form';
     if (/labs\.google|dreamina|capcut|tạo ảnh|tạo video/.test(blob)) return 'ai';
     if (/vietsubmmo|tool tải|tool quay|tool cắt|\.zip/.test(blob)) return 'tool';
@@ -1049,7 +1052,7 @@ async function renderKichBan() {
     const hay = [item.title, item.name, item.sku, item.kind, item.contentNiche, item.videoNiche, item.videoTitle, item.host, item.ext].join(' ').toLowerCase();
     return SC.matchesQuery([hay], q);
   });
-  const kindChips = [['', 'Tất cả', kindCounts.all || 0], ['prompt', 'Prompt', kindCounts.prompt || 0], ['report', 'Báo cáo', kindCounts.report || 0], ['list', 'List kênh', kindCounts.list || 0], ['tool', 'Tool', kindCounts.tool || 0], ['drive', 'Drive', kindCounts.drive || 0], ['form', 'Form', kindCounts.form || 0], ['ai', 'AI gen', kindCounts.ai || 0], ['internal-doc', 'Tài liệu nội bộ', kindCounts['internal-doc'] || 0], ['other', 'Khác', kindCounts.other || 0]].filter(x => !x[0] || x[2]);
+  const kindChips = [['', 'Tất cả', kindCounts.all || 0], ['prompt', 'Prompt', kindCounts.prompt || 0], ['report', 'Báo cáo', kindCounts.report || 0], ['list', 'List kênh', kindCounts.list || 0], ['tool', 'Tool', kindCounts.tool || 0], ['drive', 'Drive', kindCounts.drive || 0], ['form', 'Form', kindCounts.form || 0], ['ai', 'AI gen', kindCounts.ai || 0], ['internal-doc', 'Tài liệu nội bộ', kindCounts['internal-doc'] || 0], ['sop', 'SOP', kindCounts.sop || 0], ['guide', 'Hướng dẫn', kindCounts.guide || 0], ['transcript', 'Phụ đề', kindCounts.transcript || 0], ['sheet', 'Bảng tính', kindCounts.sheet || 0], ['other', 'Khác', kindCounts.other || 0]].filter(x => !x[0] || x[2]);
   const allNicheKeys = [...NICHE_ORDER.filter(n => nicheCounts[n]), ...Object.keys(nicheCounts).filter(n => !NICHE_ORDER.includes(n))];
   const nicheChips = allNicheKeys.map(n => [n, n, nicheCounts[n]]);
   /* NANG CAP 2026-09-30: Tai lieu truoc day render ca 157 muc 1 lan -> mobile 37.526px (~50 man hinh).

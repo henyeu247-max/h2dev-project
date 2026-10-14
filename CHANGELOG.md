@@ -1,3 +1,53 @@
+## 2026-10-14 (đợt 6) — NỐT CỜ A8D VÀ KHÓA TRÙNG TRONG `video_insights.json`
+
+- **`VIDEO-043d15` (A8d 1 → 0):** khoảng 1585–1647 s bị large-v3 bỏ sót và chèn câu ảo giác ("nhớ like, share và đăng ký kênh") + 3 segment sai; bóc lại bằng `whisper-large-v3-turbo` không prompt, thay 4 segment bằng 19 segment thật (transcript 305 segment). Quét 4 SKU mới: 0 câu ảo giác quen thuộc. `audit_videos_v2.py`: 140/144 clean, 4 issue còn lại đều là F2 (chưa có trên VPS), 0 A8d.
+- **`data/video_insights.json`:** 20 mục khóa chữ hoa (`VIDEO-00136F`...) là bản dự phòng cho tra cứu không phân biệt hoa/thường (`player-main.js` thử `resolvedSku → sku → lower → upper`). Đồng bộ lại 4 mục lệch bản chữ thường: `00136F`, `BDFAB7`, `54422C` chép nguyên bản chữ thường (bản chữ hoa thiếu `sop_steps`, `last_verified_at`); `B380A1` chỉ cập nhật `key_timestamps` (mục chữ hoa còn trường `title`/`sku` mà bản chữ thường không có nên giữ nguyên các trường khác). 16 mục còn lại vốn đã giống hệt.
+- **Kiểm tra lại:** `validate-project`, 5 gate, guard, `check-ui-classes`, `check-reconcile-handles`, `sync-counts --check` exit 0; `deep-ui-acceptance` 11/11; `playwright-g2-acceptance` 23/23.
+
+## 2026-10-14 (đợt 5) — XỬ LÝ 3 GAP DỮ LIỆU CÒN MỞ SAU CHECK-PASS
+
+- **`data/video_insights.json` — `key_timestamps`:** viết lại 13 video có mốc vượt thời lượng thật (D6 13 → 0) và lập mới 129 mốc cho 20 video chưa có mốc nào (S3 20 → 0). Mỗi mốc lấy giây bắt đầu của segment transcript thật, nhãn tóm đúng lời tại đó. Đồng bộ `lesson_timestamps` trong `data/h2dev_master.db` (638 → 793; `integrity_check` ok, 0 vi phạm khóa ngoại); `sync-counts` cập nhật `docs/WORKING_STATE.md`.
+- **4 SKU mới (`043d15`, `0be6c9`, `a59a5e`, `a85eac`):** thêm `tags` theo quy ước thị trường (E1 4 → 0); chạy `silence_scan` cho 4 SKU (trước đó thiếu số đo lặng); vá phụ đề bằng script mới `scripts/fill_transcript_gaps.py` (chỉ bóc lại cửa sổ thủng + segment nén chữ, 2 mô hình, chọn bản tốt hơn): A4 → 0, A8c → 0, A8d 4 → 1. Bản gốc ở `_backup/20261014-fill-gaps/`.
+- **`scripts/audit_videos_v2.py`:** đuôi im lặng thật chạm cuối video tính là đã phủ (`coverage_effective_pct`) — `VIDEO-a59a5e` có 58 s cuối im lặng.
+- **`data-tabs/dong-bo-ngoai.json`:** `matched[12].fileLocal` placeholder → `pipelines/wildlife/wildlife-survival-H2dev/script-wildlife-survival/SKILL.md` (file có thật, HTTP 200). Chọn file này vì nó là skill viết kịch bản ngách động vật; file còn lại trong thư mục là `wildlife-motion-prompt-master` (prompt chuyển động).
+- **Còn lại sau `audit_videos_v2.py`:** 140/144 clean; 4 issue là F2 (4 SKU mới chưa có trên VPS — việc deploy); 1 cờ A8d (`VIDEO-043d15`, khoảng 23 s cần nghe lại). Bài học: `H2DEV-SCAR-029`.
+- **Kiểm tra lại sau sửa:** `validate-project`, 5 gate, guard, `check-ui-classes`, `check-reconcile-handles`, `sync-counts --check` exit 0; `deep-ui-acceptance` 11/11; `playwright-g2-acceptance` 23/23; mở 5 trang player trên trình duyệt thấy đủ mốc mới (0 lỗi console).
+
+## 2026-10-14 (đợt 4) — CHECK-PASS TOÀN DỰ ÁN
+
+- **`scripts/sync-counts.js`:** rule cập nhật docs không khớp dòng nào nay làm `--check` FAIL (trước đây im lặng). Tìm ra 18 neo chết → bỏ 11 rule của `AGENTS.md` (file đã rút gọn, không còn số liệu), bỏ rule `index.html` và `audit_videos_v2` (văn bản gốc không còn số), sửa 5 rule còn lại (`TREE.md`, `00_README.md`, `MEMORY.md` ×2, `RULE-LAM-VIEC.md`). Probe 2 chiều: phá neo → exit 1; khôi phục → exit 0, file byte-identical.
+- **Số liệu cũ bị lộ ra và đã cập nhật:** `TREE.md` (136/136 → 140/140), `00_README.md` (140 → 144 bài, 23.95 GB, 144/144, 27 free · 117 pro), `RULE-LAM-VIEC.md` ("140 bài (136 video…)" → 144 = 140 video + 4 Zoom), `KE-HOACH-THUC-CHIEN-YOUTUBE.md`, `docs/WORKING_STATE.md` (audit media: 127/144 clean).
+- **Đo mới (chưa sửa dữ liệu):** `audit_videos_v2.py` 144 SKU → 17 SKU có issue (13 SKU D6 mốc `key_timestamps` vượt thời lượng thật; 4 SKU mới nhập thiếu `tags`, có đoạn nền chữ, chưa có trên VPS; 2 trong 4 phụ đề phủ 82–87,5%). `dong-bo-ngoai.json` `matched[12].fileLocal` là placeholder `pipelines/wildlife/.../SKILL.md`.
+- **Kiểm tra sạch:** crawl trình duyệt 326 lượt tải (1280 + 390 px, toàn bộ route + 144 trang player): 0 lỗi console, 0 HTTP ≥400, 0 ảnh vỡ; 2 DB `integrity_check = ok`; 9 gate + `validate-project` + `sync-counts --check` exit 0.
+
+## 2026-10-14 (đợt 3) — XỬ LÝ G8, G9, G12, G13
+
+- **G13 không làm, kết luận ban đầu sai:** 140 file `assets/thumbs/*.{webp,jpeg,jpg}` được `data/modules.json` trỏ tới và trang Lộ trình (`learn.js`) hiển thị 144 ảnh; chuyển đi sẽ vỡ ảnh. Đo trên trình duyệt thật.
+- **G12** dựng lại `assets/tailwind.css` (499 → 466 class, backup `_backup/20261014-gap-fix/tailwind.css.bak`). 37 class bỏ đi không có trong DOM ở 16 route × 2 viewport; 4 class mới cần dùng; ảnh chụp 10 trang × 2 viewport trước/sau khác 0 pixel; `check-ui-classes`, gate, `deep-ui`, `g2` đều đạt.
+- **G8** `knowledge-hub/docs/RULE-LAM-VIEC.md` 398 → 297 dòng: bỏ tên CodeBuddy, phần lặp luật chung, phần VPS/Cloudflare/SCP; giữ nguyên số mục Phần 2–8 và 10.1. `H2DEV-MASTER-OPERATING-PROMPT.md` bỏ bước đồng bộ VPS. Bản gốc: `_archive/20261014-rule-lam-viec/`.
+- **G9** `D:\YTB\AGENTS.md` 227 → 32 dòng; nhật ký bài học chuyển sang `docs/solutions/h2dev-scar-log.md`; mã `SCAR-006…028` → `H2DEV-SCAR-006…028` (chỉ trong văn bản đó; comment gate/script và báo cáo cũ giữ mã cũ, có ghi chú ánh xạ). Gộp `solutions/` vào `docs/solutions/`. Tạo `CLAUDE.md` (`@AGENTS.md`) ở `D:\YTB` và `H2DEV-Project`.
+
+## 2026-10-14 (đợt 2) — ĐO THỰC TẾ 256/256 KÊNH MẪU (`docs/reports/2026-10-14-kenh-mau-do-thuc-te.md`)
+
+- Đo từng kênh bằng trang kênh + `channel_dossier` + RSS (+ yt-dlp khi cần), bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`. Kết quả: **187 LIVE · 59 DEAD · 10 EMPTY · 0 UNRESOLVED** (trước: 194 sống gồm 74 chưa gắn cờ · 62 dead).
+- 15 kênh đổi trạng thái (3 LIVE→DEAD, 2 DEAD→LIVE vì handle lưu dạng `@UC…`, 2 EMPTY→LIVE, 8 LIVE→EMPTY), cả 15 đã mở trình duyệt thật đối chiếu; 8 kênh ngẫu nhiên không đổi cũng khớp.
+- `data-tabs/kenh-mau.json`: cập nhật `dead/deadKind/deadNote/status/ngay_do/nguon_do/ngay_do_check` cho cả 256 kênh (vá theo field, giữ thay đổi dở của việc khác); `deadNote/deadKind` cũ của kênh chuyển sang LIVE được giữ ở `deadNoteCu/deadKindCu`. `ngay_do` nay 256/256.
+- Script mới: `scripts/probe-kenh-mau.py` (đo, resumable), `scripts/classify-kenh-mau.py` (phân loại), `scripts/apply-kenh-mau-probe.js` (vá có nhật ký). Docs có số liệu kênh đã đồng bộ lại; `sync-counts --check` exit 0.
+- Handle: 2 kênh `@UC…` đổi sang `@TheLifeOutline`/`@Core_Sight` (handle cũ ở `handle_cu`); 2 kênh đổi handle giữ `handle` vì catalog/ngách nối bằng handle cũ, thêm `handle_hien_tai`. DB `competitor_channels` đồng bộ 237 hàng (không dựng lại cả DB để khỏi mất avatar mặc định).
+
+## 2026-10-14 — SỬA GAPS TỪ BÁO CÁO `docs/reports/2026-10-14-gap-audit.md`
+
+- **G1** chip kênh dead ở player: thêm rule `#pchannelslist > div.border-red-500\/40` + `.line-through` vào `assets/player.css` (rule `#pchannelslist > div` có `!important` làm class tiện ích mất tác dụng).
+- **G2** 10 link mô tả chết (`videos.json`/`tai-lieu-full.json`): tạo 10 file `assets/docs/VIDEO-*/description.txt` (bản sao hash-identical từ `docs/`).
+- **G5** `assets/app/tabs/content.js`: nhãn/badge/chip cho kind `sop · guide · transcript · sheet` — chip loại tài liệu nay cộng đủ 300.
+- **G4/G7** số liệu và đường dẫn cũ trong `00_README.md`, `TREE.md`, `docs/WORKING_STATE.md`, `knowledge-hub/docs/MEMORY.md`, `H2DEV-MASTER-OPERATING-PROMPT.md`, `D:\YTB\AGENTS.md` được đo lại từ `counts-manifest.json`.
+- **sync-counts**: thêm `channelsWithNgayDo` (192) vào `scripts/lib/counts.js`; rule `ngay_do N/M` trong `scripts/sync-counts.js` dùng số thật thay vì ép `256/256`. Probe: tiêm `256/256` → FAIL, khôi phục → OK.
+- **G11** `scripts/gate-p1.js`: miễn đúng rule `.row-title` có `line-height:22px` kèm `min-height:44px` (22px ở selector khác vẫn FAIL). **G15** sửa rò HTML tiêm lỗi giữa các lượt probe. Probe 11/11, file byte-identical.
+- **G14** `server.js`: URL chứa byte NUL → 400. Đã nạp vào dịch vụ (tiến trình :8899 khởi động 15:30, sau lần sửa 15:26); đo lại `/index.html%00.js` → 400. Script `D:\YTB\RESTART-H2DEV-SERVICE-ADMIN.cmd` sửa gọi `nssm.exe` bằng đường dẫn đầy đủ (trước đó báo "Done" dù lệnh `nssm` không chạy).
+- `AGENTS.md` dự án thêm mục Commands/Structure (chỉ lệnh đã chạy thật). Skill `h2dev-project-audit` bỏ số kỳ vọng cứng và bước `check-broken-refs.js` (không còn tồn tại).
+- Nghiệm thu: validate · counts --check · 5 gate · guard · check-ui-classes · deep-ui 11/11 · g2 23/23 · find-404 sạch (exit 0 cả bộ).
+- **G3 đã đóng bằng đo thực tế 256/256 kênh** (xem mục tiếp theo). Chưa làm: G8, G9, G12, G13.
+
 ## 2026-10-09 (đợt 7) — CHUẨN HÓA TOÀN DIỆN CHIẾN LƯỢC /chienluoc & NÂNG CẤP 12 BƯỚC SOP THỰC CHIẾN (nhánh `ui/ui-standard-2026-10-09`)
 
 - **Nâng cấp SOP 11 bước thành 12 bước SOP Chiến Lược Vàng H2DEV:** Tách biệt rõ ràng khâu "Hậu kỳ 5 lớp né quét AI (Multi-layer Compositing)" thành một bước kỹ thuật chuyên sâu (SOP 06), gắn kèm 42 chip liên kết trực tiếp tới các SKU bài học thực tế trong kho 144 video.

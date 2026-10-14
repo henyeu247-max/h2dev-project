@@ -1,0 +1,360 @@
+{
+  "generatedAt": "2026-10-08T22:54:38.012Z",
+  "totalVideos": 20,
+  "passCount": 20,
+  "failCount": 0,
+  "results": [
+    {
+      "index": 1,
+      "sku": "VIDEO-ba3904",
+      "title": "Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 2,
+      "sku": "VIDEO-9873fb",
+      "title": "Khám kênh thực tế thành viên Pro sau video đầu tiên – Phân tích dữ liệu và hướng dẫn áp dụng tư duy nhân bản thị trường để phát triển kênh",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 3,
+      "sku": "VIDEO-e91589",
+      "title": "16 triệu/ 1 ngày - Doanh thu kênh thị trường Nhật, làm nhân bản thị trường",
+      "status": "PASS",
+      "docs": {
+        "expected": 3,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@WildBirdSurvival-JP",
+        "Học viên gói Pro H2DEV (Kênh Nhật)",
+        "@WildBirdSurvival"
+      ]
+    },
+    {
+      "index": 4,
+      "sku": "VIDEO-21824a",
+      "title": "Bật kiếm tiền kênh học viên Pro",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh học viên Pro (Ngách Bible Explainer)"
+      ]
+    },
+    {
+      "index": 5,
+      "sku": "VIDEO-f77c31",
+      "title": "Doanh thu kênh làm bán content ngách view Việt sau 10 ngày bật kiếm tiền",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh bán content học viên H2DEV (Ngách người già)"
+      ]
+    },
+    {
+      "index": 6,
+      "sku": "VIDEO-46c57e",
+      "title": "KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026",
+      "status": "PASS",
+      "docs": {
+        "expected": 3,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 7,
+      "sku": "VIDEO-ec9c50",
+      "title": "KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 8,
+      "sku": "VIDEO-4425fc",
+      "title": "Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 9,
+      "sku": "VIDEO-8bc3ce",
+      "title": "Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt",
+      "status": "PASS",
+      "docs": {
+        "expected": 4,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 10,
+      "sku": "VIDEO-d84a78",
+      "title": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
+      "status": "PASS",
+      "docs": {
+        "expected": 3,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 11,
+      "sku": "VIDEO-5c438a",
+      "title": "Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)",
+      "status": "PASS",
+      "docs": {
+        "expected": 5,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "Kênh nguồn Douyin / Bilibili trong tài liệu đính kèm"
+      ]
+    },
+    {
+      "index": 12,
+      "sku": "VIDEO-9f9fbc",
+      "title": "*BẮT BUỘC PHẢI XEM - DÀNH CHO NGƯỜI MỚI HOÀN TOÀN CHƯA BIẾT GÌ - HƯỚNG DẪN FULL QUY TRÌNH SETUP SETTING KÊNH CHUẨN NGAY TỪ ĐẦU THEO CHÍNH SÁCH MỚI NHẤT 2026 (TẠO KÊNH, SETUP CÀI ĐẶT KÊNH, SEO KÊNH, NGÂM KÊNH, NGÁCH LÀM...)",
+      "status": "PASS",
+      "docs": {
+        "expected": 4,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": [
+        "@ちょっとダークな心理学"
+      ]
+    },
+    {
+      "index": 13,
+      "sku": "VIDEO-7db740",
+      "title": "CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 14,
+      "sku": "VIDEO-7f0bb4",
+      "title": "NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 15,
+      "sku": "VIDEO-ff9be6",
+      "title": "XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 16,
+      "sku": "VIDEO-6ad3fe",
+      "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 17,
+      "sku": "VIDEO-027064",
+      "title": "Cách tạo kênh, lập kênh chuyển đổi kênh sang thị trường ngoại chuẩn nhất",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 18,
+      "sku": "VIDEO-943781",
+      "title": "Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 19,
+      "sku": "VIDEO-199f44",
+      "title": "Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    },
+    {
+      "index": 20,
+      "sku": "VIDEO-3e5a21",
+      "title": "HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
+      "status": "PASS",
+      "docs": {
+        "expected": 2,
+        "hasUndefined": false
+      },
+      "insights": {
+        "takeaways": 5,
+        "sopSteps": 5,
+        "avoidFlags": 3,
+        "verified": true
+      },
+      "channels": []
+    }
+  ]
+}

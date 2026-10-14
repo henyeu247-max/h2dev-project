@@ -38,3 +38,12 @@
   - `08:17` — Rồi ngay sau khi import xong thì em sẽ cho nó chạy nha
   - `11:13` — Thì mọi người sẽ wear con cắt quýt này để cho edit video nha
 
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP sản xuất video tài liệu trường thiên 2 tiếng bằng ChatGPT và tối ưu doanh thu RPM cao:
+- Bước 1 (Lập đề cương phân nhánh 6-8 chương hồi chi tiết): Chia video 120 phút thành 6 chương độc lập có tính liên kết chặt chẽ (mỗi chương 20 phút tương đương ~3.000 từ), phác thảo rõ mở đầu - phát triển - đỉnh điểm - kết luận cho từng hồi.
+- Bước 2 (Chạy Prompt dây chuyền Chaining Prompt trên ChatGPT): Yêu cầu AI viết từng chương một theo phong cách người kể chuyện lịch sử trầm ngâm (David Attenborough style); kiểm tra độ dài và đối soát sự mạch lạc trước khi chuyển sang chương kế tiếp.
+- Bước 3 (Sản xuất voiceover trường thiên không mệt mỏi): Chia nhỏ kịch bản thành các tệp âm thanh 15 phút, xuất voice qua ElevenLabs hoặc CapCut Pro, chuẩn hóa âm lượng đồng nhất -16 LUFS và ghép nối liền mạch trên timeline.
+- Bước 4 (Kỹ thuật dựng B-roll liên tục chống nhàm chán): Xếp chồng 3 lớp tư liệu: Lớp nền là video thiên nhiên/lịch sử chuyển động chậm, lớp giữa là bản đồ chiến thuật/tư liệu phục dựng, lớp trên là hiệu ứng ánh sáng (Light leaks) và hạt bụi thời gian.
+- Bước 5 (Cài đặt hệ thống 8-12 điểm quảng cáo Mid-roll Ads tự nhiên): Phân bổ các điểm chèn quảng cáo vào đúng khoảnh khắc chuyển giao giữa các chương hồi lớn, giúp người xem không bị đứt mạch cảm xúc và tăng doanh thu AdSense lên 300%.

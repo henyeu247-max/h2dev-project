@@ -9,10 +9,10 @@
 
 Toàn bộ tài nguyên trên máy chủ cục bộ `D:\YTB\H2DEV-Project` đã qua kiểm định tất định 100%:
 
-### 1. Kho học liệu bài giảng (136 bài học — ~23.1 GB / 21.55 GiB)
-- **132 video bài giảng MP4 (`VIDEO-*`):** Hướng dẫn từ A đến Z cách làm YouTube (nuôi mail, môi trường sạch, nghiên cứu từ khóa, dựng video, kháng lỗi bản quyền và AdSense). Đầy đủ phụ đề đa định dạng (`.srt`, `.txt`, `.json`).
+### 1. Kho học liệu bài giảng (144 bài học — ~23.95 GB / 22.30 GiB)
+- **140 video bài giảng MP4 (`VIDEO-*`):** Hướng dẫn từ A đến Z cách làm YouTube (nuôi mail, môi trường sạch, nghiên cứu từ khóa, dựng video, kháng lỗi bản quyền và AdSense). Đầy đủ phụ đề đa định dạng (`.srt`, `.txt`, `.json`).
 - **4 video ghi hình Zoom chuyên sâu (`ZOOM-01..04` — WebM):** Thực chiến nền tảng môi trường, chiến lược tách kênh, quy trình tool và AdSense kháng lỗi. Đầy đủ transcript và tài liệu tóm lược trong `docs/NOI-BO/zoom/`.
-- Kiểm định `ffprobe`: **136/136 video có đầy đủ luồng hình ảnh và âm thanh**, 0 file lỗi, 0 file 0 byte.
+- Kiểm định `ffprobe`: **144/144 video có đầy đủ luồng hình ảnh và âm thanh**, 0 file lỗi, 0 file 0 byte.
 
 ### 2. Kho kênh đối thủ mẫu (165 kênh theo dõi)
 - **152 kênh đang hoạt động (Live):** Dữ liệu đối chiếu đa thị trường (Mỹ, Nhật, Hàn, Việt Nam).

@@ -36,3 +36,12 @@
   - `06:19` — Đấy bây giờ thì mọi người bấm tiếp tục nè
   - `08:57` — nó kêu mọi người thì nếu muốn ghi rõ ràng ra thì mọi người bấm ch…
 
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** Quy trình 5 bước bóc tách, đảo ngược cấu trúc kịch bản đối thủ triệu view và sản xuất video độc bản né quét AI:
+- Bước 1 (Trích xuất transcript & Bóc tách cấu trúc Hook): Dùng YouTube Transcript lấy toàn bộ lời thoại video đối thủ triệu view, phân tích cấu trúc 30 giây đầu (Hook), các điểm thắt nút cao trào (Tension building) và đoạn kêu gọi hành động (CTA).
+- Bước 2 (Chạy Prompt tái cấu trúc Narrative Arc trên AI): Nạp transcript vào prompt đảo ngược kịch bản: Giữ nguyên logic tâm lý thuyết phục nhưng đổi toàn bộ bối cảnh, nhân vật, dẫn chứng lịch sử và từ vựng thành phiên bản nguyên bản 100%.
+- Bước 3 (Sản xuất hình ảnh AI đồng bộ phong cách nghệ thuật): Dùng Midjourney / Flux Schnell sinh ảnh phong cách tranh sơn dầu cổ điển hoặc tượng cẩm thạch La Mã, đồng nhất tông màu vàng kim huyền bí và ánh sáng Rembrandt.
+- Bước 4 (Dựng timeline CapCut & Can thiệp hiệu ứng động): Ghép voice ElevenLabs với footage hình ảnh, cắt cảnh tối đa 4-5 giây/shot, áp dụng hiệu ứng chuyển động thu phóng chậm (Slow Push-in), phủ lớp hạt phim (Film grain 12%) và khói mờ điện ảnh.
+- Bước 5 (Tạo phụ đề động & Tối ưu hóa Thumbnail tương phản cao): Bật auto-captions tạo chữ chạy từng từ phong cách triết lý, font chữ có chân Cinzel viền vàng; thiết kế thumbnail đặc tả tượng đá nứt vỡ với tiêu đề sốc font sans-serif đậm.

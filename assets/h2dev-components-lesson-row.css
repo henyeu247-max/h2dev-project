@@ -29,7 +29,7 @@
 .sec-head:hover { border-color: var(--border-strong); }
 .mod-sec.collapsed .sec-head { border-radius: 4px; }
 .sec-title { min-width: 0; font-size: 14px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
-.sec-stats { display: flex; align-items: center; gap: 10px; color: var(--fg-muted); font: 11px/1.35 var(--font-mono); white-space: nowrap; }   /* P1-D: 1.3 -> 1.35 */
+.sec-stats { display: flex; align-items: center; gap: 10px; color: var(--fg-muted); font: 12px/1.35 var(--font-mono); white-space: nowrap; }   /* P1-D: 1.3 -> 1.35 */
 .sec-stat b { color: var(--fg-2); font-weight: 600; }
 /* P1-P2 TOUCH (2026-09-27): 30px -> 44px (WCAG 2.5.5 / 2.5.8 touch target).
    .sec-toggle nam trong cot grid `auto` canh .sec-stats -> phong to KHONG che gi.
@@ -53,7 +53,7 @@
    bounds (top/right/bottom >= 0). */
 .row-thumb { position: relative; display: block; flex: 0 0 124px; aspect-ratio: 16/9; color: var(--fg); background: #000; border: 1px solid var(--border); border-radius: 4px; }
 .row-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 4px; }
-.row-seq,.row-time { position: absolute; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,.82); border-radius: 4px; font: 600 11px/1 var(--font-mono); }
+.row-seq,.row-time { position: absolute; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,.82); border-radius: 4px; font: 600 12px/1 var(--font-mono); }
 .row-seq { top: 4px; right: 4px; min-width: 20px; height: 18px; padding: 0 5px; }
 .row-time { right: 4px; bottom: 4px; gap: 3px; height: 18px; padding: 0 5px; }
 /* P1-P2 TOUCH (2026-09-27): hinh 32px giu nguyen (nam NOI TREN ANH THUMB — phong to
@@ -67,7 +67,8 @@
      Do loi: icon lech KHOI tam nut. Cach dung: dinh tam icon bang `position:absolute`
      cho chinh the <svg> (mask icon), va ::after chi la lop vo hinh de mo rong vung cham. */
 .row-fav { position: absolute; top: 0; left: 0; width: 32px; height: 32px; padding: 6px; margin: 4px; color: #fff; background: rgba(0,0,0,.7); border: 0; border-radius: 4px; }
-.row-fav > svg, .row-fav > .h2-icon { position: absolute; top: 50%; left: 50%; width: 18px; height: 18px; transform: translate(-50%, -50%); }
+.row-fav > svg { position: absolute; top: 50%; left: 50%; width: 18px; height: 18px; transform: translate(-50%, -50%); }
+.row-fav > .h2-icon { position: absolute; top: 50%; left: 50%; width: 16px; height: 16px; transform: translate(-50%, -50%); }
 .row-fav::after {
   content: "";
   position: absolute;
@@ -84,7 +85,7 @@
 .row-watchbar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,.15); }
 .row-watchbar i { display: block; height: 100%; background: var(--warning); }
 /* Watched indicator — badge bottom-left, avoids row-seq (top-right) & row-fav (top-left) */
-.watched-badge { position: absolute; bottom: 4px; left: 4px; display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: var(--success, #00ff88); color: #000; border-radius: 50%; z-index: var(--h2-z-base); font-size: 11px; box-shadow: 0 2px 6px rgba(0,0,0,.4); animation: fadeIn .3s ease; }
+.watched-badge { position: absolute; bottom: 4px; left: 4px; display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: var(--success, #00ff88); color: #000; border-radius: 50%; z-index: var(--h2-z-base); font-size: 12px; box-shadow: 0 2px 6px rgba(0,0,0,.4); animation: fadeIn .3s ease; }
 /* PHASE 3 (2026-09-23): bo emoji "✓" (content:) -> icon mask cho nhat quan voi he .h2-icon.
    Div rong nen phai dung ::before voi mask; mau lay tu color (var(--success) da dat o .watched-badge). */
 .watched-badge::before {
@@ -102,7 +103,7 @@
   mask-size: contain;
 }
 .row-body { display: flex; flex: 1; flex-direction: column; gap: 4px; min-width: 0; }
-.row-updated { color: var(--fg-muted); font: 11px/1.35 var(--font-mono); }   /* P1-D: 1.3 -> 1.35 */
+.row-updated { color: var(--fg-muted); font: 12px/1.35 var(--font-mono); }   /* P1-D: 1.3 -> 1.35 */
 .row-title { display: -webkit-box; overflow: hidden; color: var(--fg); font-size: 13px; font-weight: 600; line-height: 1.35; text-decoration: none; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 .row-title:hover { color: var(--brand-ink); }
 .row-tags { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
@@ -129,7 +130,7 @@
 /* ==========================================================================
    3. TAGS (ltag) — nhan trang thai bai hoc
    ========================================================================== */
-.ltag { display: inline-flex; align-items: center; gap: 3px; padding: 2px 6px; border-radius: 4px; font: 600 11px/1.35 var(--font-mono);   /* P1-D: 1.3 -> 1.35 */
+.ltag { display: inline-flex; align-items: center; gap: 3px; padding: 2px 6px; border-radius: 4px; font: 600 12px/1.35 var(--font-mono);   /* P1-D: 1.3 -> 1.35 */
 }
 .badge-important,.ltag-pro { color: var(--brand-ink); background: var(--brand-tint); border: 1px solid transparent; }
 .badge-featured { color: var(--brand-ink); background: var(--brand-tint); border: 1px solid transparent; }

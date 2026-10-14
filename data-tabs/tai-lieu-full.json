@@ -1,19 +1,12 @@
 [
   {
-    "sku": "VIDEO-28e1cc",
-    "name": "hướng dẫn tool dịch",
-    "link": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt?ref=H2DEV-001",
-    "file": "",
-    "contentNiche": "Nền tảng / Tool",
-    "kind": "tool"
-  },
-  {
     "sku": "VIDEO-ca0b1a",
     "name": "tài nguyên + prompt trong video em hướng dẫn Ở ĐÂY",
     "link": "https://docs.google.com/document/d/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y/edit?usp=sharing",
     "file": "assets/docs/VIDEO-ca0b1a/1AFM5KsbwjYYTsi9-BAVau8IpaWVa14b7b8Z5zzGuP5Y.txt",
     "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "tài nguyên + prompt trong video em hướng dẫn Ở ĐÂY"
   },
   {
     "sku": "VIDEO-2553da",
@@ -21,125 +14,8 @@
     "link": "https://forms.gle/8My4gaTxouE8JtAL7",
     "file": "",
     "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-e25d3b",
-    "name": "FORMS MUA KÊNH (CHO AE CÓ THIỆN CHÍ MUỐN MUA LÀM RIÊNG) - *(HIỆN TẠI KÊNH ĐÃ CÓ NGƯỜI MUA RỒI EM ĐÓNG FORM MỌI NGƯỜI NHÉ)",
-    "link": "https://forms.gle/ksJTZ9B7GgAaDZYu6",
-    "file": "",
-    "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-cb907b",
-    "name": "List (danh sách) nguồn tài nguyên kênh reup",
-    "link": "https://docs.google.com/spreadsheets/d/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-cb907b/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc.csv",
-    "kind": "list",
-    "contentNiche": "Reup / Hoạt hình"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "PROMPT: NGÁCH Kiểm soát sinh học - chiến thuật - tâm lý (UPDATE 26/02/2026) - H2DEV",
-    "link": "https://docs.google.com/document/d/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA/edit?tab=t.0",
-    "file": "assets/docs/VIDEO-2aa1f7/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA.txt",
-    "fileLocal": "docs/NOI-BO/prompt/sinh-hoc-combat.md",
-    "contentNiche": "Share key / Ngách nhỏ",
-    "kind": "prompt"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "PROMPT NGÁCH ĐỨA TRẺ (UPDATE 24/01/2026) - H2DEV",
-    "link": "https://docs.google.com/document/d/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-2aa1f7/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY.txt",
-    "fileLocal": "docs/NOI-BO/prompt/dua-tre-han.md",
-    "contentNiche": "Drama / Stories",
-    "kind": "prompt"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "PROMPT NGÁCH NHỎ TRIẾT LÝ (H2Dev)",
-    "link": "https://docs.google.com/document/d/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-2aa1f7/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc.txt",
-    "fileLocal": "docs/NOI-BO/prompt/triet-ly.md",
-    "kind": "prompt",
-    "contentNiche": "Triết lý / Tâm linh"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "TẠO ẢNH AI",
-    "link": "https://dreamina.capcut.com/?utm_medium=sem&utm_source=googleadwords_int&utm_campaign=brand&pid=513641&campaign_id=21589138307&adset_id=173517691420&ad_id=726980043010&keyword=dreamina&matchtype=e&channel=g&placement=&target=kwd-781492265004&gad_source=1&gad_campaignid=21589138307&gbraid=0AAAAACROvhkqV2O6v9JILWYquU6g5_F8E&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFVAHjwuaJz_2ToAg0TXw_s_07rJzEKXywgQb9lf4-86gHyI8po5mNUaAh1cEALw_wcB",
-    "file": "",
     "contentNiche": "Nền tảng / Tool",
-    "kind": "tool"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "PROMPT NGÁCH QUY LUẬT KINH TẾ",
-    "link": "https://docs.google.com/document/d/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-2aa1f7/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c.txt",
-    "fileLocal": "docs/NOI-BO/prompt/quy-luat-kinh-te.md",
-    "kind": "prompt",
-    "contentNiche": "Kinh tế / Tài chính"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "PROMPT KEY QUY TRÌNH/ NHÀ MÁY SẢN XUẤT",
-    "link": "https://docs.google.com/document/d/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-2aa1f7/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk.txt",
-    "fileLocal": "docs/NOI-BO/prompt/nha-may-san-xuat.md",
-    "contentNiche": "Share key / Ngách nhỏ",
-    "kind": "prompt"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "WEB TẠO ẢNH",
-    "link": "https://labs.google/fx/vi/tools/whisk",
-    "file": "",
-    "contentNiche": "Nền tảng / Tool",
-    "kind": "tool"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "WEB TẠO VIDEO",
-    "link": "https://labs.google/fx/vi/tools/flow/",
-    "file": "",
-    "contentNiche": "Nền tảng / Tool",
-    "kind": "tool"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "PROMPT: NGÁCH KINH TẾ - THỊ TRƯỜNG HÀN",
-    "link": "https://docs.google.com/document/d/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-2aa1f7/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY.txt",
-    "fileLocal": "docs/NOI-BO/prompt/kinh-te-han.md",
-    "kind": "prompt",
-    "contentNiche": "Kinh tế / Tài chính"
-  },
-  {
-    "sku": "VIDEO-458892",
-    "name": "PROMPT KEY WORLD WAR II HISTORY (bấm vào đây)",
-    "link": "https://docs.google.com/document/d/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-458892/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM.txt",
-    "kind": "prompt",
-    "contentNiche": "Lịch sử / Quân sự"
-  },
-  {
-    "sku": "VIDEO-458892",
-    "name": "list link kênh key ở video ytb",
-    "link": "https://docs.google.com/spreadsheets/d/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-458892/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY.csv",
-    "kind": "list",
-    "contentNiche": "Share key / Ngách nhỏ"
-  },
-  {
-    "sku": "VIDEO-458892",
-    "name": "LIST KÊNH NGUỒN REUP DOUYIN",
-    "link": "https://docs.google.com/spreadsheets/d/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-458892/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o.csv",
-    "kind": "list",
-    "contentNiche": "Reup / Hoạt hình"
+    "title": "forms thông tin muốn mua kênh"
   },
   {
     "sku": "VIDEO-806c0c",
@@ -147,7 +23,8 @@
     "link": "https://docs.google.com/spreadsheets/d/1naPiYans0-np4pylKY8_KRl471M_dN_sR0TR_OkPT64/edit?usp=sharing",
     "file": "assets/docs/VIDEO-806c0c/1naPiYans0-np4pylKY8_KRl471M_dN_sR0TR_OkPT64.csv",
     "kind": "list",
-    "contentNiche": "Share key / Ngách nhỏ"
+    "contentNiche": "Share key / Ngách nhỏ",
+    "title": "LINK KÊNH KEY"
   },
   {
     "sku": "VIDEO-5c3116",
@@ -156,7 +33,8 @@
     "file": "assets/docs/VIDEO-5c3116/1-lBHSM3jBoHLvymN6JJT0wQdsIHUeoQyvGGh-_Whh_Y.txt",
     "fileLocal": "docs/NOI-BO/prompt/key-nhat.md",
     "kind": "prompt",
-    "contentNiche": "Share key / Ngách nhỏ"
+    "contentNiche": "Share key / Ngách nhỏ",
+    "title": "Prompt Key Nhật"
   },
   {
     "sku": "VIDEO-5c3116",
@@ -165,7 +43,8 @@
     "file": "assets/docs/VIDEO-5c3116/1Oz9FxDW3vL_oKHQOuQ0HvkgOHXWD033BB8AZa2HJr4E.txt",
     "fileLocal": "docs/NOI-BO/prompt/tien-su-veo3.md",
     "kind": "prompt",
-    "contentNiche": "Share key / Ngách nhỏ"
+    "contentNiche": "Share key / Ngách nhỏ",
+    "title": "PROMPT TRAIN NGÁCH TIỀN SỬ"
   },
   {
     "sku": "VIDEO-5c3116",
@@ -173,7 +52,8 @@
     "link": "https://docs.google.com/document/d/1ssSE9vExaJlHlNUAWVG1X-duEB6xB0ru6vcUmKkoaRw/edit?usp=sharing",
     "file": "assets/docs/VIDEO-5c3116/1ssSE9vExaJlHlNUAWVG1X-duEB6xB0ru6vcUmKkoaRw.txt",
     "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "PROMPT TRAIN (BẤM VÀO TẠI ĐÂY)"
   },
   {
     "sku": "VIDEO-5c3116",
@@ -181,7 +61,8 @@
     "link": "https://docs.google.com/spreadsheets/d/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I/edit?usp=sharing",
     "file": "assets/docs/VIDEO-5c3116/1ZIjF1t1XiF0nGyc7NoojaA0ajRdAOHCYPbXbYeaiK5I.csv",
     "contentNiche": "Share key / Ngách nhỏ",
-    "kind": "list"
+    "kind": "list",
+    "title": "LIST NGUỒN KÊNH/ VIDEO KEY CAM CẢNH SÁT (key Việt)"
   },
   {
     "sku": "VIDEO-83a28e",
@@ -189,7 +70,8 @@
     "link": "https://docs.google.com/spreadsheets/d/1Doz37LNCbNKHtYH4uaraNPSEW3OQRrv5iCfEV-9DQmc/edit?usp=sharing",
     "file": "assets/docs/VIDEO-83a28e/1Doz37LNCbNKHtYH4uaraNPSEW3OQRrv5iCfEV-9DQmc.csv",
     "kind": "list",
-    "contentNiche": "Share key / Ngách nhỏ"
+    "contentNiche": "Share key / Ngách nhỏ",
+    "title": "Link kênh key"
   },
   {
     "sku": "VIDEO-948336",
@@ -197,7 +79,8 @@
     "link": "https://docs.google.com/spreadsheets/d/13ehUG_aMoGlhBu0JOChffANOQQ4UmWGS6fxS6Fbrk2Y/edit?usp=drivesdk",
     "file": "assets/docs/VIDEO-948336/13ehUG_aMoGlhBu0JOChffANOQQ4UmWGS6fxS6Fbrk2Y.csv",
     "kind": "list",
-    "contentNiche": "Share key / Ngách nhỏ"
+    "contentNiche": "Share key / Ngách nhỏ",
+    "title": "Link kênh key"
   },
   {
     "sku": "VIDEO-ca266f",
@@ -205,7 +88,8 @@
     "link": "https://docs.google.com/spreadsheets/d/1Q1rhStw_0JO6eLR5NLmTv7i5HT_Zvn-KR4KuaaLR7KI/edit?usp=sharing",
     "file": "assets/docs/VIDEO-ca266f/1Q1rhStw_0JO6eLR5NLmTv7i5HT_Zvn-KR4KuaaLR7KI.csv",
     "kind": "list",
-    "contentNiche": "Share key / Ngách nhỏ"
+    "contentNiche": "Share key / Ngách nhỏ",
+    "title": "list kênh key 27/9"
   },
   {
     "sku": "VIDEO-8603a9",
@@ -213,7 +97,8 @@
     "link": "https://docs.google.com/spreadsheets/d/17MyDQQ_wBW63gTJ2VS-alOqPg3SSYeRt4_lozEHgBq0/edit?usp=sharing",
     "file": "assets/docs/VIDEO-8603a9/17MyDQQ_wBW63gTJ2VS-alOqPg3SSYeRt4_lozEHgBq0.csv",
     "kind": "list",
-    "contentNiche": "Share key / Ngách nhỏ"
+    "contentNiche": "Share key / Ngách nhỏ",
+    "title": "List Kênh Key 7/9/2025"
   },
   {
     "sku": "VIDEO-82f8a8",
@@ -221,7 +106,8 @@
     "link": "https://docs.google.com/spreadsheets/d/1jSfRYhNkVpqAA34DjX0CiJjn18Ph5U093JlV0a4P1ao/edit?usp=sharing",
     "file": "assets/docs/VIDEO-82f8a8/1jSfRYhNkVpqAA34DjX0CiJjn18Ph5U093JlV0a4P1ao.csv",
     "kind": "list",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "LIST LINK KÊNH ĐỐI THỦ"
   },
   {
     "sku": "VIDEO-39ae49",
@@ -229,7 +115,8 @@
     "link": "https://docs.google.com/document/d/15WFg5REGYsmW1p1p-sz5E-C7mkC_NdRH/edit?usp=sharing&ouid=103446946492928743175&rtpof=true&sd=true",
     "file": "assets/docs/VIDEO-39ae49/15WFg5REGYsmW1p1p-sz5E-C7mkC_NdRH.txt",
     "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "PROMPT TRAIN CHATGPT"
   },
   {
     "sku": "VIDEO-25fddf",
@@ -237,7 +124,8 @@
     "link": "https://docs.google.com/document/d/1XSpdBykFxAQfpndhX-09pyuriPtCYtGS/edit?tab=t.0",
     "file": "assets/docs/VIDEO-25fddf/1XSpdBykFxAQfpndhX-09pyuriPtCYtGS.txt",
     "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "PROMPT TRAIN CHATGPT"
   },
   {
     "sku": "VIDEO-25fddf",
@@ -245,58 +133,8 @@
     "link": "https://docs.google.com/spreadsheets/d/1VE1XufGZey3NWpcNx7gaec1iVGHyCO3R/edit?gid=387143067#gid=387143067",
     "file": "assets/docs/VIDEO-25fddf/1VE1XufGZey3NWpcNx7gaec1iVGHyCO3R.csv",
     "kind": "list",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-5c438a",
-    "name": "NGUỒN VIDEO REUP DOUYIN + BILIBILI",
-    "link": "https://docs.google.com/spreadsheets/d/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-5c438a/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU.csv",
-    "fileLocal": "docs/NOI-BO/nguon/nguon-video-reup-douyin-bilibili.xlsx",
-    "kind": "list",
-    "contentNiche": "Reup / Hoạt hình"
-  },
-  {
-    "sku": "VIDEO-5c438a",
-    "name": "LIST KÊNH DOUYIN NGUỒN TÀI NGUYÊN REUP",
-    "link": "https://docs.google.com/spreadsheets/d/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-5c438a/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg.csv",
-    "fileLocal": "docs/NOI-BO/nguon/list-kenh-douyin.xlsx",
-    "kind": "list",
-    "contentNiche": "Reup / Hoạt hình"
-  },
-  {
-    "sku": "VIDEO-5c438a",
-    "name": "PROMPT THUMB + TỪ KHÓA SEO / HASHTAGS KEY SENIOR",
-    "link": "https://docs.google.com/document/d/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-5c438a/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY.txt",
-    "fileLocal": "docs/NOI-BO/prompt/thumb-seo-hashtag.md",
-    "kind": "prompt",
-    "contentNiche": "Share key / Ngách nhỏ"
-  },
-  {
-    "sku": "VIDEO-bdfab7",
-    "name": "PROMPT DEMO KEY TRONG VIDEO",
-    "link": "https://docs.google.com/document/d/1DPv3XBIzpkH2mF163b47y2FvxkRKseIprcPn4QU1WaE/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-bdfab7/1DPv3XBIzpkH2mF163b47y2FvxkRKseIprcPn4QU1WaE.txt",
-    "kind": "prompt",
-    "contentNiche": "Share key / Ngách nhỏ"
-  },
-  {
-    "sku": "VIDEO-54422c",
-    "name": "câu lệnh train",
-    "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit",
-    "file": "assets/docs/VIDEO-54422c/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5.txt",
-    "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-b380a1",
-    "name": "PROMPT TRAIN",
-    "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit?tab=t.0",
-    "file": "assets/docs/VIDEO-b380a1/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5.txt",
-    "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "LIST KÊNH"
   },
   {
     "sku": "VIDEO-8e0275",
@@ -304,7 +142,8 @@
     "link": "https://drive.google.com/file/d/1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj/view?usp=sharing",
     "file": "assets/docs/VIDEO-8e0275/drive_1qYA4aaIDVNEYCSTnLwoyER60tp_1-NCj",
     "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "Tài nguyên Drive · 1qYA4aaI"
   },
   {
     "sku": "VIDEO-8e0275",
@@ -312,7 +151,8 @@
     "link": "https://drive.google.com/file/d/1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc/view?usp=sharing",
     "file": "assets/docs/VIDEO-8e0275/drive_1JOKc53WmKjH-YcZ7CXdVIXSNCEv8wagc",
     "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "Tài nguyên Drive · 1JOKc53W"
   },
   {
     "sku": "VIDEO-8e0275",
@@ -320,7 +160,8 @@
     "link": "https://drive.google.com/file/d/1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf/view?usp=sharing",
     "file": "assets/docs/VIDEO-8e0275/drive_1UXw5lPF5Ap8qTmnnEq-roecV1MZGPjHf",
     "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "Tài nguyên Drive · 1UXw5lPF"
   },
   {
     "sku": "VIDEO-8e0275",
@@ -328,63 +169,8 @@
     "link": "https://drive.google.com/file/d/1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0/view?usp=sharing",
     "file": "assets/docs/VIDEO-8e0275/drive_1OBrL-H099TpO09jNgCTg2ErJYc8QhVV0",
     "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-1b4be3",
-    "name": "link tài nguyên",
-    "link": "https://docs.google.com/spreadsheets/d/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-1b4be3/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc.csv",
-    "kind": "list",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-d20744",
-    "name": "TOOL TẢI YOUTUBE",
-    "link": "https://vietsubmmo.com/tool/free/YoutubeDownload.zip",
-    "file": "assets/docs/VIDEO-d20744/YoutubeDownload.zip",
-    "kind": "tool",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-d20744",
-    "name": "TOOL TẢI TIKTOK",
-    "link": "https://vietsubmmo.com/tool/free/Tiktokdouyin.zip",
-    "file": "assets/docs/VIDEO-d20744/Tiktokdouyin.zip",
     "contentNiche": "Nền tảng / Tool",
-    "kind": "tool"
-  },
-  {
-    "sku": "VIDEO-d20744",
-    "name": "TOOL TẢI BILIBILI",
-    "link": "https://vietsubmmo.com/tool/free/BilibiliDownload.zip",
-    "file": "assets/docs/VIDEO-d20744/BilibiliDownload.zip",
-    "contentNiche": "Nền tảng / Tool",
-    "kind": "tool"
-  },
-  {
-    "sku": "VIDEO-d20744",
-    "name": "TOOL TẢI FACEBOOK",
-    "link": "https://vietsubmmo.com/tool/free/FacebookDownload.zip",
-    "file": "assets/docs/VIDEO-d20744/FacebookDownload.zip",
-    "kind": "tool",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-d20744",
-    "name": "TOOL QUAY MÀN HÌNH",
-    "link": "https://vietsubmmo.com/tool/free/quaymanhinh.zip",
-    "file": "assets/docs/VIDEO-d20744/quaymanhinh.zip",
-    "kind": "tool",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-d20744",
-    "name": "TOOL CẮT GHÉP VIDEO SIÊU TỐC",
-    "link": "https://vietsubmmo.com/tool/free/cutghep.zip",
-    "file": "assets/docs/VIDEO-d20744/cutghep.zip",
-    "kind": "tool",
-    "contentNiche": "Nền tảng / Tool"
+    "title": "Tài nguyên Drive · 1OBrL-H0"
   },
   {
     "sku": "VIDEO-04c2e3",
@@ -392,7 +178,8 @@
     "link": "https://docs.google.com/spreadsheets/d/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM/edit?usp=sharing",
     "file": "assets/docs/VIDEO-04c2e3/1wtOTOlKfR6wFwafQXL3CkryvwB3DQIoJmUBXedqG6LM.csv",
     "kind": "tool",
-    "contentNiche": "Nền tảng / Tool"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "TOOL VÀ TÀI KHOẢN GIÁ RẺ (bấm vào đây để liên hệ)"
   },
   {
     "sku": "VIDEO-f59aa7",
@@ -400,65 +187,8 @@
     "link": "https://docs.google.com/document/d/1QZZ16kd7eXbAkA-G5V0Ws4Wvv_iPe3Nr/edit?usp=sharing&ouid=103446946492928743175&rtpof=true&sd=true",
     "file": "assets/docs/VIDEO-f59aa7/1QZZ16kd7eXbAkA-G5V0Ws4Wvv_iPe3Nr.txt",
     "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-e91589",
-    "name": "file Skill ngách động vật",
-    "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing",
-    "file": "assets/docs/tai-lieu/skill-wildlife-survival.md",
-    "fileLocal": "pipelines/wildlife/wildlife-survival-H2dev/script-wildlife-survival/SKILL.md",
-    "contentNiche": "Share key / Ngách nhỏ",
-    "kind": "tool"
-  },
-  {
-    "sku": "VIDEO-21824a",
-    "name": "Tài nguyên Drive · 1I7KqLj5",
-    "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-    "file": "",
-    "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-54c8f7",
-    "name": "tài nguyên em train trong video TẠI ĐÂY nhe",
-    "link": "https://drive.google.com/drive/folders/1PYGR8SHPWj9GdGLT361yP-1lTAvQwIVG?usp=sharing",
-    "file": "",
-    "kind": "other",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-5d54d0",
-    "name": "skill prompt của ngách trong video",
-    "link": "https://drive.google.com/drive/folders/14bf1nCiGzvU6aCSKjrs2lRxEDiJINdeT?usp=sharing",
-    "file": "",
-    "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-5d54d0",
-    "name": "【美輪明宏】",
-    "link": "https://www.youtube.com/watch?v=l06eKkZCkxQ",
-    "file": "",
-    "kind": "other",
-    "contentNiche": "Triết lý / Tâm linh"
-  },
-  {
-    "sku": "VIDEO-e90874",
-    "name": "Prompt em chia sẻ trong video",
-    "link": "https://docs.google.com/document/d/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-e90874/1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA.txt",
-    "kind": "prompt",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-2aa1f7",
-    "name": "PROMPT KEY The North Effect (địa chính trị EN) — bản MD gốc",
-    "link": "",
-    "file": "docs/NOI-BO/prompt/north-effect.md",
-    "kind": "prompt",
-    "contentNiche": "Lịch sử / Quân sự",
-    "source": "noi-bo"
+    "contentNiche": "Nền tảng / Tool",
+    "title": "PROMPT TRAIN CHATGPT"
   },
   {
     "sku": "NOI-BO",
@@ -467,7 +197,8 @@
     "file": "docs/NOI-BO/bao-cao/BAO-CAO-NGACH-NHAT-HAN.md",
     "kind": "report",
     "contentNiche": "Drama / Stories",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Báo cáo ngách Nhật–Hàn (senior storytelling)"
   },
   {
     "sku": "NOI-BO",
@@ -476,7 +207,8 @@
     "file": "docs/NOI-BO/bao-cao/CROSS-CHECK-BIBLE-NEXLEV-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Triết lý / Tâm linh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Cross-check Bible Explainer vs NexLev"
   },
   {
     "sku": "NOI-BO",
@@ -485,7 +217,8 @@
     "file": "docs/NOI-BO/bao-cao/DANH-GIA-HOAT-HINH-AI-KE-CHUYEN-2026-07-30.md",
     "kind": "report",
     "contentNiche": "Reup / Hoạt hình",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Đánh giá pipeline hoạt hình AI kể chuyện"
   },
   {
     "sku": "NOI-BO",
@@ -494,7 +227,8 @@
     "file": "docs/NOI-BO/bao-cao/DANH-GIA-TAI-SAN-DU-AN-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Nền tảng / Tool",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Đánh giá toàn bộ tài sản dự án YTB"
   },
   {
     "sku": "NOI-BO",
@@ -503,7 +237,8 @@
     "file": "docs/NOI-BO/bao-cao/DOI-THU-VERIFIED-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Đối thủ đã verify (scrape + RSS)"
   },
   {
     "sku": "NOI-BO",
@@ -512,7 +247,8 @@
     "file": "docs/NOI-BO/bao-cao/NGACH-XANH-LO-TRINH-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Lộ trình ngách xanh"
   },
   {
     "sku": "NOI-BO",
@@ -521,7 +257,8 @@
     "file": "docs/NOI-BO/bao-cao/NHAN-DINH-CHOT-NGACH-ON-DINH-US-NHAT-HAN-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Triết lý / Tâm linh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Chốt ngách ổn định US / Nhật / Hàn"
   },
   {
     "sku": "NOI-BO",
@@ -530,7 +267,8 @@
     "file": "docs/NOI-BO/bao-cao/NHAN-DINH-NGACH-MAI-XANH-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Triết lý / Tâm linh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Nhận định ngách mãi xanh"
   },
   {
     "sku": "NOI-BO",
@@ -539,7 +277,8 @@
     "file": "docs/NOI-BO/bao-cao/PHAN-TICH-MCP-DAY-DU-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Nền tảng / Tool",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Phân tích MCP dùng cho YTB"
   },
   {
     "sku": "NOI-BO",
@@ -548,7 +287,8 @@
     "file": "docs/NOI-BO/bao-cao/QUET-FACELESS-2026-07-30.md",
     "kind": "report",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Quét faceless niches NexLev 30/07"
   },
   {
     "sku": "NOI-BO",
@@ -557,7 +297,8 @@
     "file": "docs/NOI-BO/bao-cao/QUET-MU-TOAN-THI-TRUONG-FACELESS-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Quét mũ toàn thị trường faceless"
   },
   {
     "sku": "NOI-BO",
@@ -566,7 +307,8 @@
     "file": "docs/NOI-BO/bao-cao/VERIFY-NGACH-MAI-XANH-LAN-2-2026-07-27.md",
     "kind": "report",
     "contentNiche": "Triết lý / Tâm linh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Verify ngách mãi xanh lần 2"
   },
   {
     "sku": "NOI-BO",
@@ -575,7 +317,8 @@
     "file": "assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md",
     "kind": "tool",
     "contentNiche": "Reup / Hoạt hình",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Pipeline hoạt hình AI (5 bước · kie.ai + Grok Imagine)"
   },
   {
     "sku": "NOI-BO",
@@ -584,7 +327,8 @@
     "file": "assets/docs/tai-lieu/pipeline-video-ton-giao.md",
     "kind": "tool",
     "contentNiche": "Triết lý / Tâm linh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Pipeline video tôn giáo EN (script + ElevenLabs + merge)"
   },
   {
     "sku": "NOI-BO",
@@ -593,7 +337,8 @@
     "file": "assets/docs/tai-lieu/skill-wildlife-survival.md",
     "kind": "tool",
     "contentNiche": "Reup / Hoạt hình",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Skill Wildlife Survival + motion prompt Veo"
   },
   {
     "sku": "NOI-BO",
@@ -602,7 +347,8 @@
     "file": "assets/docs/tai-lieu/pipeline-bible-explainer.md",
     "kind": "tool",
     "contentNiche": "Triết lý / Tâm linh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Bible Explainer V2.1 (script + image + thumb + 24 ảnh mẫu)"
   },
   {
     "sku": "NOI-BO",
@@ -611,7 +357,8 @@
     "file": "assets/docs/tai-lieu/knowledge-hub-notebooklm.md",
     "kind": "other",
     "contentNiche": "Nền tảng / Tool",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Knowledge Hub — archive NotebookLM (nằm trong H2DEV)"
   },
   {
     "sku": "NOI-BO",
@@ -620,7 +367,8 @@
     "file": "docs/NOI-BO/chat/README.md",
     "kind": "report",
     "contentNiche": "Nhân bản / Kênh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Lịch sử chat dự án YTB (phiên 1–6)"
   },
   {
     "sku": "NOI-BO",
@@ -629,7 +377,8 @@
     "file": "docs/NOI-BO/bao-cao/DOI-CHIEU-NGACH-MARKET-H2DEV-2026-08-17.md",
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Đối chiếu ngách + market kho H2DEV 17/08"
   },
   {
     "sku": "NOI-BO",
@@ -638,7 +387,8 @@
     "file": "docs/NOI-BO/prompt/sinh-hoc-combat.md",
     "kind": "prompt",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT NGÁCH KIỂM SOÁT SINH HỌC (combat) — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -647,7 +397,8 @@
     "file": "docs/NOI-BO/prompt/dua-tre-han.md",
     "kind": "prompt",
     "contentNiche": "Drama / Stories",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT NGÁCH ĐỨA TRẺ - THỊ TRƯỜNG HÀN (야담 sleep audiobook) — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -656,7 +407,8 @@
     "file": "docs/NOI-BO/prompt/triet-ly.md",
     "kind": "prompt",
     "contentNiche": "Triết lý / Tâm linh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT NGÁCH NHỎ TRIẾT LÝ (Alan Watts) — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -665,7 +417,8 @@
     "file": "docs/NOI-BO/prompt/quy-luat-kinh-te.md",
     "kind": "prompt",
     "contentNiche": "Kinh tế / Tài chính",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT NGÁCH QUY LUẬT KINH TẾ (Economy Rewind) — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -674,7 +427,8 @@
     "file": "docs/NOI-BO/prompt/key-nhat.md",
     "kind": "prompt",
     "contentNiche": "Drama / Stories",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT KEY NHẬT (Drama×Doc 70/30) — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -683,7 +437,8 @@
     "file": "docs/NOI-BO/prompt/kinh-te-han.md",
     "kind": "prompt",
     "contentNiche": "Kinh tế / Tài chính",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT NGÁCH KINH TẾ - THỊ TRƯỜNG HÀN — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -692,7 +447,8 @@
     "file": "docs/NOI-BO/prompt/nha-may-san-xuat.md",
     "kind": "prompt",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT KEY QUY TRÌNH / NHÀ MÁY SẢN XUẤT — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -701,7 +457,8 @@
     "file": "docs/NOI-BO/prompt/phat-phap-han.md",
     "kind": "prompt",
     "contentNiche": "Triết lý / Tâm linh",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT NGÁCH NHỎ PHẬT PHÁP - HÀN — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -710,7 +467,8 @@
     "file": "docs/NOI-BO/prompt/thumb-seo-hashtag.md",
     "kind": "prompt",
     "contentNiche": "Sức khỏe / Lão hóa",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT THUMB + TỪ KHÓA SEO / HASHTAGS (senior health US) — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -719,7 +477,8 @@
     "file": "docs/NOI-BO/prompt/tien-su-veo3.md",
     "kind": "prompt",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "PROMPT TRAIN NGÁCH TIỀN SỬ (Veo3) — bản MD gốc"
   },
   {
     "sku": "NOI-BO",
@@ -728,7 +487,8 @@
     "file": "docs/NOI-BO/nguon/list-kenh-douyin.xlsx",
     "kind": "list",
     "contentNiche": "Reup / Hoạt hình",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "NGUỒN REUP DOUYIN (xlsx nội bộ)"
   },
   {
     "sku": "NOI-BO",
@@ -737,7 +497,8 @@
     "file": "docs/NOI-BO/nguon/nguon-video-reup-douyin-bilibili.xlsx",
     "kind": "list",
     "contentNiche": "Reup / Hoạt hình",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "NGUỒN VIDEO REUP DOUYIN + BILIBILI (xlsx nội bộ)"
   },
   {
     "sku": "NOI-BO",
@@ -746,7 +507,8 @@
     "file": "docs/NOI-BO/knowledge-hub-POINTER.md",
     "kind": "other",
     "contentNiche": "Nền tảng / Tool",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Knowledge Hub — pointer (archive NotebookLM)"
   },
   {
     "sku": "NOI-BO",
@@ -755,7 +517,8 @@
     "file": "docs/NOI-BO/prompt/prompt-ngach-everyday-history.md",
     "kind": "prompt",
     "contentNiche": "Everyday History EN (lịch sử đồ vật thường ngày)",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "prompt-ngach-everyday-history"
   },
   {
     "sku": "NOI-BO",
@@ -764,7 +527,8 @@
     "file": "docs/NOI-BO/bao-cao/BAO-CAO-KENH-DEAD-2026-08-20.md",
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Báo cáo kênh dead 20/08 — tìm handle mới 23 kênh"
   },
   {
     "sku": "NOI-BO",
@@ -773,7 +537,8 @@
     "file": "docs/NOI-BO/bao-cao/BAO-CAO-KIEM-CHUNG-7-NHAN-DINH-NGACH-2026-08-20.md",
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Báo cáo kiểm chứng 7 nhận định ngách mới (MCP 20/08)"
   },
   {
     "sku": "NOI-BO",
@@ -782,7 +547,8 @@
     "file": "docs/NOI-BO/bao-cao/BAO-CAO-KIEM-CHUNG-7-NHAN-DINH-NGACH-LAN2-2026-08-20.md",
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Báo cáo kiểm chứng ngách lần 2 theo biến thể user (MCP 20/08)"
   },
   {
     "sku": "NOI-BO",
@@ -791,7 +557,8 @@
     "file": "docs/NOI-BO/bao-cao/BAO-CAO-CONG-THUC-BIEN-THE-XANH-2026-08-20.md",
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Công thức biến thể xanh + cách làm đúng quy tắc YPP (20/08)"
   },
   {
     "sku": "VIDEO-3fd0d9",
@@ -799,7 +566,8 @@
     "link": "https://zalo.me/g/wmd6w4pqzopkuj5huww5",
     "file": "",
     "contentNiche": "Reup / Hoạt hình",
-    "kind": "tool"
+    "kind": "tool",
+    "title": "group tool dịch"
   },
   {
     "sku": "NOI-BO",
@@ -808,7 +576,8 @@
     "file": "docs/NOI-BO/bao-cao/bao-cao-chien-luoc-raw-thi-truong-20260906.md",
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "bao-cao-chien-luoc-raw-thi-truong-20260906"
   },
   {
     "sku": "NOI-BO",
@@ -817,7 +586,8 @@
     "file": "docs/NOI-BO/bao-cao/bao-cao-tong-hop-hoc-lieu-va-chuan-san-xuat-20260908.md",
     "kind": "report",
     "contentNiche": "Kiếm tiền / Chính sách",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "bao-cao-tong-hop-hoc-lieu-va-chuan-san-xuat-20260908"
   },
   {
     "sku": "NOI-BO",
@@ -825,7 +595,8 @@
     "link": "",
     "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
     "contentNiche": "Hệ thống / Quy trình",
-    "kind": "internal-doc"
+    "kind": "internal-doc",
+    "title": "Đề cương Zoom — Quy trình xây kênh A-Z (11 phần)"
   },
   {
     "sku": "NOI-BO",
@@ -833,7 +604,8 @@
     "link": "",
     "file": "docs/NOI-BO/zoom/ZOOM-01-Nen-tang-moi-truong.md",
     "contentNiche": "Hệ thống / Quy trình",
-    "kind": "internal-doc"
+    "kind": "internal-doc",
+    "title": "ZOOM 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh"
   },
   {
     "sku": "NOI-BO",
@@ -841,7 +613,8 @@
     "link": "",
     "file": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
     "contentNiche": "Hệ thống / Quy trình",
-    "kind": "internal-doc"
+    "kind": "internal-doc",
+    "title": "ZOOM 02 — Chiến lược tách kênh & Sản xuất hàng loạt"
   },
   {
     "sku": "NOI-BO",
@@ -849,7 +622,8 @@
     "link": "",
     "file": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
     "contentNiche": "Hệ thống / Quy trình",
-    "kind": "internal-doc"
+    "kind": "internal-doc",
+    "title": "ZOOM 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo"
   },
   {
     "sku": "NOI-BO",
@@ -857,25 +631,8 @@
     "link": "",
     "file": "docs/NOI-BO/zoom/ZOOM-04-Adsense-khang-loi.md",
     "contentNiche": "Hệ thống / Quy trình",
-    "kind": "internal-doc"
-  },
-  {
-    "sku": "VIDEO-46c57e",
-    "name": "Skill prompt — ngách bible explainer",
-    "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
-    "file": "assets/docs/VIDEO-46c57e/SKILL-bible-explainer.md",
-    "fileLocal": "assets/docs/VIDEO-46c57e/SKILL-bible-explainer.md",
-    "kind": "tool",
-    "contentNiche": "Nền tảng / Tool"
-  },
-  {
-    "sku": "VIDEO-d84a78",
-    "name": "Prompt + tài nguyên ngách nhỏ phật pháp (thị trường Hàn)",
-    "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing",
-    "file": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
-    "fileLocal": "assets/docs/VIDEO-d84a78/PROMPT-NGACH-PHAT-PHAP-HAN-QUOC.md",
-    "kind": "prompt",
-    "contentNiche": "Triết lý / Tâm linh"
+    "kind": "internal-doc",
+    "title": "ZOOM 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh"
   },
   {
     "sku": "NOI-BO",
@@ -884,7 +641,8 @@
     "file": "assets/docs/prompt-master/PROMPT-DEEP-OCEAN-10-VIRAL-TITLES.md",
     "kind": "prompt",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Prompt Master: Sinh vật biển & Bí ẩn đại dương (Deep Ocean viral titles)"
   },
   {
     "sku": "NOI-BO",
@@ -893,7 +651,8 @@
     "file": "assets/docs/prompt-master/PROMPT-FOOD-SHOCK-50-TOPICS.md",
     "kind": "prompt",
     "contentNiche": "Sức khỏe / Lão hóa",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Prompt Master: Khoa học thực phẩm & Tác động cơ thể (Food Shock 50 topics)"
   },
   {
     "sku": "NOI-BO",
@@ -902,7 +661,8 @@
     "file": "assets/docs/prompt-master/SOP-AI-HISTORIA-SENGOKU-30MIN.md",
     "kind": "tool",
     "contentNiche": "Lịch sử / Quân sự",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Master SOP: Phim kịch lịch sử chiến quốc bằng AI (AI Historia 30 min)"
   },
   {
     "sku": "NOI-BO",
@@ -911,7 +671,8 @@
     "file": "assets/docs/prompt-master/SOP-REMOTE-ISLANDS-VOX-3D.md",
     "kind": "tool",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Master SOP: Ngách đảo xa xôi & Đời sống biệt lập (Remote Islands VOX 3D)"
   },
   {
     "sku": "NOI-BO",
@@ -920,7 +681,8 @@
     "file": "assets/docs/prompt-master/SOP-SPANISH-YOUTUBE-CURIOSTIY.md",
     "kind": "tool",
     "contentNiche": "Share key / Ngách nhỏ",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Master SOP: Khai thác thị trường YouTube tiếng Tây Ban Nha (Spanish curiosity)"
   },
   {
     "sku": "NOI-BO",
@@ -929,7 +691,8 @@
     "file": "assets/docs/tai-lieu/pipeline-everyday-history-geography.md",
     "kind": "tool",
     "contentNiche": "Lịch sử / Quân sự",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Pipeline: Địa lý & Khảo cổ khám phá (Everyday Geography & Lost Civilizations)"
   },
   {
     "sku": "RESEARCH-01",
@@ -938,7 +701,8 @@
     "file": "data/research-20260916/prompts-built-in/3D_DOCUMENTARY.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "3D Documentary"
   },
   {
     "sku": "RESEARCH-02",
@@ -947,7 +711,8 @@
     "file": "data/research-20260916/prompts-built-in/AI_Horror_Content_Master_Prompt.txt",
     "contentNiche": "Drama / Stories",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "AI Horror Content Master Prompt"
   },
   {
     "sku": "RESEARCH-03",
@@ -956,7 +721,8 @@
     "file": "data/research-20260916/prompts-built-in/CINEMATIC_VIDEOS.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Cinematic Videos"
   },
   {
     "sku": "RESEARCH-04",
@@ -965,7 +731,8 @@
     "file": "data/research-20260916/prompts-built-in/Consistent_Character_Prompt_by_Raj.docx.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Consistent Character Prompt by Raj"
   },
   {
     "sku": "RESEARCH-05",
@@ -974,7 +741,8 @@
     "file": "data/research-20260916/prompts-built-in/DARK_LEDGER.txt",
     "contentNiche": "Drama / Stories",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Dark Ledger"
   },
   {
     "sku": "RESEARCH-06",
@@ -983,7 +751,8 @@
     "file": "data/research-20260916/prompts-built-in/FIFA_MASTERPROMPT.txt",
     "contentNiche": "Lịch sử / Quân sự",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "FIFA Masterprompt"
   },
   {
     "sku": "RESEARCH-07",
@@ -992,7 +761,8 @@
     "file": "data/research-20260916/prompts-built-in/Finance_Magical_Prompt.txt",
     "contentNiche": "Kinh tế / Tài chính",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Finance Magical Prompt"
   },
   {
     "sku": "RESEARCH-08",
@@ -1001,7 +771,8 @@
     "file": "data/research-20260916/prompts-built-in/Finance_Stick_Figure_Animation_Masterclass.txt",
     "contentNiche": "Kinh tế / Tài chính",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Finance Stick Figure Animation Masterclass"
   },
   {
     "sku": "RESEARCH-09",
@@ -1010,7 +781,8 @@
     "file": "data/research-20260916/prompts-built-in/Finance_Videos_Master_Prompts.txt",
     "contentNiche": "Kinh tế / Tài chính",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Finance Videos Master Prompts"
   },
   {
     "sku": "RESEARCH-10",
@@ -1019,7 +791,8 @@
     "file": "data/research-20260916/prompts-built-in/HISTORY_DOCUMENTARY.txt",
     "contentNiche": "Lịch sử / Quân sự",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "History Documentary"
   },
   {
     "sku": "RESEARCH-11",
@@ -1028,7 +801,8 @@
     "file": "data/research-20260916/prompts-built-in/HISTORY_OF_FOODS.txt",
     "contentNiche": "Lịch sử / Quân sự",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "History Of Foods"
   },
   {
     "sku": "RESEARCH-12",
@@ -1037,7 +811,8 @@
     "file": "data/research-20260916/prompts-built-in/Historical_Stick_Figure_Animation_Masterclass.txt",
     "contentNiche": "Lịch sử / Quân sự",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Historical Stick Figure Animation Masterclass"
   },
   {
     "sku": "RESEARCH-13",
@@ -1046,7 +821,8 @@
     "file": "data/research-20260916/prompts-built-in/MASTER_PROMPT_BY_DIGITAL_RAJ.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Master Prompt By Digital Raj"
   },
   {
     "sku": "RESEARCH-14",
@@ -1055,7 +831,8 @@
     "file": "data/research-20260916/prompts-built-in/Magial_Prompt.txt",
     "contentNiche": "Kinh tế / Tài chính",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Magial Prompt"
   },
   {
     "sku": "RESEARCH-15",
@@ -1064,7 +841,8 @@
     "file": "data/research-20260916/prompts-built-in/Master_Prompts.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Master Prompts"
   },
   {
     "sku": "RESEARCH-16",
@@ -1073,7 +851,8 @@
     "file": "data/research-20260916/prompts-built-in/PROMPTS_FOR_FERN_LIKE_VIDEOS.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Prompts For Fern Like Videos"
   },
   {
     "sku": "RESEARCH-17",
@@ -1082,7 +861,8 @@
     "file": "data/research-20260916/prompts-built-in/Prompts_).txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Prompts )"
   },
   {
     "sku": "RESEARCH-18",
@@ -1091,7 +871,8 @@
     "file": "data/research-20260916/prompts-built-in/Prompts_For_VOX_Style_Animation.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Prompts For VOX Style Animation"
   },
   {
     "sku": "RESEARCH-19",
@@ -1100,7 +881,8 @@
     "file": "data/research-20260916/prompts-built-in/SO_YOU_WANT_TO_OWN.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "So You Want To Own"
   },
   {
     "sku": "RESEARCH-20",
@@ -1109,7 +891,8 @@
     "file": "data/research-20260916/prompts-built-in/Viral_History_Video_Breakdown.txt",
     "contentNiche": "Lịch sử / Quân sự",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Viral History Video Breakdown"
   },
   {
     "sku": "RESEARCH-21",
@@ -1118,7 +901,8 @@
     "file": "data/research-20260916/prompts-built-in/ZENN_STICKMAN.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "Telegram Desktop"
+    "source": "Telegram Desktop",
+    "title": "Zenn Stickman"
   },
   {
     "sku": "RESEARCH-22",
@@ -1127,7 +911,8 @@
     "file": "data/research-20260916/prompts-built-in/ailockup-90s-anime.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "AiLockup"
+    "source": "AiLockup",
+    "title": "AiLockup — ailockup-90s-anime"
   },
   {
     "sku": "RESEARCH-23",
@@ -1136,7 +921,8 @@
     "file": "data/research-20260916/prompts-built-in/ailockup-cinematic-films.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "AiLockup"
+    "source": "AiLockup",
+    "title": "AiLockup — ailockup-cinematic-films"
   },
   {
     "sku": "RESEARCH-24",
@@ -1145,7 +931,8 @@
     "file": "data/research-20260916/prompts-built-in/ailockup-music-video.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "AiLockup"
+    "source": "AiLockup",
+    "title": "AiLockup — ailockup-music-video"
   },
   {
     "sku": "RESEARCH-25",
@@ -1154,7 +941,8 @@
     "file": "data/research-20260916/prompts-built-in/ailockup-whiteboard.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "AiLockup"
+    "source": "AiLockup",
+    "title": "AiLockup — ailockup-whiteboard"
   },
   {
     "sku": "RESEARCH-26",
@@ -1163,7 +951,8 @@
     "file": "data/research-20260916/prompts-built-in/aiplaybook-finance-chatgpt.txt",
     "contentNiche": "Kinh tế / Tài chính",
     "kind": "prompt",
-    "source": "AI Playbook"
+    "source": "AI Playbook",
+    "title": "AI Playbook — aiplaybook-finance-chatgpt"
   },
   {
     "sku": "RESEARCH-27",
@@ -1172,7 +961,8 @@
     "file": "data/research-20260916/prompts-built-in/aiplaybook-paper-animation.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "AI Playbook"
+    "source": "AI Playbook",
+    "title": "AI Playbook — aiplaybook-paper-animation"
   },
   {
     "sku": "RESEARCH-28",
@@ -1181,7 +971,8 @@
     "file": "data/research-20260916/prompts-built-in/aiplaybook-seedance-runninghub.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "AI Playbook"
+    "source": "AI Playbook",
+    "title": "AI Playbook — aiplaybook-seedance-runninghub"
   },
   {
     "sku": "RESEARCH-29",
@@ -1190,7 +981,8 @@
     "file": "data/research-20260916/prompts-built-in/aiplaybook-vox-style.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "AI Playbook"
+    "source": "AI Playbook",
+    "title": "AI Playbook — aiplaybook-VOX-style"
   },
   {
     "sku": "RESEARCH-30",
@@ -1199,7 +991,8 @@
     "file": "data/research-20260916/prompts-built-in/aiplaybook-workflow-minutes.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "AI Playbook"
+    "source": "AI Playbook",
+    "title": "AI Playbook — aiplaybook-workflow-minutes"
   },
   {
     "sku": "RESEARCH-31",
@@ -1208,7 +1001,8 @@
     "file": "data/research-20260916/prompts-built-in/aipreneur-stickman-prompt.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "AIpreneur"
+    "source": "AIpreneur",
+    "title": "AIpreneur — aipreneur-stickman-prompt"
   },
   {
     "sku": "RESEARCH-32",
@@ -1217,7 +1011,8 @@
     "file": "data/research-20260916/prompts-built-in/bytegenius-1.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "TheByteGenius"
+    "source": "TheByteGenius",
+    "title": "TheByteGenius — bytegenius-1"
   },
   {
     "sku": "RESEARCH-33",
@@ -1226,7 +1021,8 @@
     "file": "data/research-20260916/prompts-built-in/bytegenius-2.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "TheByteGenius"
+    "source": "TheByteGenius",
+    "title": "TheByteGenius — bytegenius-2"
   },
   {
     "sku": "RESEARCH-34",
@@ -1235,7 +1031,8 @@
     "file": "data/research-20260916/prompts-built-in/bytegenius-3.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "TheByteGenius"
+    "source": "TheByteGenius",
+    "title": "TheByteGenius — bytegenius-3"
   },
   {
     "sku": "RESEARCH-35",
@@ -1244,7 +1041,8 @@
     "file": "data/research-20260916/prompts-built-in/bytegenius-4.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "TheByteGenius"
+    "source": "TheByteGenius",
+    "title": "TheByteGenius — bytegenius-4"
   },
   {
     "sku": "RESEARCH-36",
@@ -1253,7 +1051,8 @@
     "file": "data/research-20260916/prompts-built-in/bytegenius-5.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "TheByteGenius"
+    "source": "TheByteGenius",
+    "title": "TheByteGenius — bytegenius-5"
   },
   {
     "sku": "RESEARCH-37",
@@ -1262,7 +1061,8 @@
     "file": "data/research-20260916/prompts-built-in/markaiguy-doc2.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "Markaiguy"
+    "source": "Markaiguy",
+    "title": "Markaiguy — markaiguy-doc2"
   },
   {
     "sku": "RESEARCH-38",
@@ -1271,7 +1071,8 @@
     "file": "data/research-20260916/prompts-built-in/markaiguy-stickman-engine.txt",
     "contentNiche": "Reup / Hoạt hình",
     "kind": "prompt",
-    "source": "Markaiguy"
+    "source": "Markaiguy",
+    "title": "Markaiguy — markaiguy-stickman-engine"
   },
   {
     "sku": "RESEARCH-39",
@@ -1280,7 +1081,8 @@
     "file": "data/research-20260916/prompts-built-in/mm-faceless-master.txt",
     "contentNiche": "Nhân bản / Kênh",
     "kind": "prompt",
-    "source": "MonetizeMind"
+    "source": "MonetizeMind",
+    "title": "MonetizeMind — mm-faceless-master"
   },
   {
     "sku": "RESEARCH-40",
@@ -1289,7 +1091,8 @@
     "file": "data/research-20260916/prompts-built-in/mm-master-prompt-1.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "MonetizeMind"
+    "source": "MonetizeMind",
+    "title": "MonetizeMind — mm-master-prompt-1"
   },
   {
     "sku": "RESEARCH-41",
@@ -1298,7 +1101,8 @@
     "file": "data/research-20260916/prompts-built-in/mm-master-prompt-2.txt",
     "contentNiche": "Nền tảng / Tool",
     "kind": "prompt",
-    "source": "MonetizeMind"
+    "source": "MonetizeMind",
+    "title": "MonetizeMind — mm-master-prompt-2"
   },
   {
     "sku": "RESEARCH-42",
@@ -1307,7 +1111,8 @@
     "file": "data/research-20260916/prompts-built-in/mm-mr-finance.txt",
     "contentNiche": "Kinh tế / Tài chính",
     "kind": "prompt",
-    "source": "MonetizeMind"
+    "source": "MonetizeMind",
+    "title": "MonetizeMind — mm-mr-finance"
   },
   {
     "sku": "RESEARCH-43",
@@ -1316,7 +1121,8 @@
     "file": "data/research-20260916/niche-research/crayon-capital-telegram-niche-post.txt",
     "contentNiche": "Kinh tế / Tài chính",
     "kind": "prompt",
-    "source": "MonetizeMind Telegram"
+    "source": "MonetizeMind Telegram",
+    "title": "MonetizeMind Telegram — crayon-capital-telegram-niche-post"
   },
   {
     "sku": "NOI-BO-MUSIC-01",
@@ -1325,7 +1131,8 @@
     "file": "assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md",
     "contentNiche": "Edit / Thumb",
     "kind": "tool",
-    "source": "noi-bo"
+    "source": "noi-bo",
+    "title": "Kho Nhạc Nền Edit Video Chuẩn Từng Ngách (49 Tracks Cinematic & Ambient)"
   },
   {
     "sku": "TOOL-NOSIGNUP-01",
@@ -1334,7 +1141,8 @@
     "file": "",
     "contentNiche": "Nền tảng / Tool",
     "kind": "tool",
-    "source": "NoSignups"
+    "source": "NoSignups",
+    "title": "OpenCut Web Video Editor — Trình Dựng Video Phi Tuyến Tính (CapCut Alternative $0.00 Không Watermark)"
   },
   {
     "sku": "TOOL-NOSIGNUP-02",
@@ -1343,7 +1151,8 @@
     "file": "",
     "contentNiche": "Nền tảng / Tool",
     "kind": "tool",
-    "source": "NoSignups"
+    "source": "NoSignups",
+    "title": "AudioMass Web Waveform Editor — Biên Tập Âm Thanh & Chuẩn Hóa EBU R128 (-16 LUFS Trực Tiếp Trình Duyệt)"
   },
   {
     "sku": "TOOL-NOSIGNUP-03",
@@ -1352,7 +1161,8 @@
     "file": "",
     "contentNiche": "Nền tảng / Tool",
     "kind": "tool",
-    "source": "NoSignups"
+    "source": "NoSignups",
+    "title": "Image Max URL Engine — Công Cụ Bóc Tách Ảnh Bìa YouTube 4K Gốc Từ CDN 10.000 Trang Web"
   },
   {
     "sku": "TOOL-NOSIGNUP-04",
@@ -1361,6 +1171,1736 @@
     "file": "",
     "contentNiche": "Quân sự / Địa chính trị",
     "kind": "tool",
-    "source": "NoSignups"
+    "source": "NoSignups",
+    "title": "World Monitor Real-Time OSINT Dashboard — Bảng Điều Khiển Tình Báo Địa Chính Trị & Tuyến Hàng Hải Thời Gian Thực"
+  },
+  {
+    "sku": "VIDEO-0be6c9",
+    "name": "SOP Bán Content Ngách Người Cao Tuổi & Tâm Sự Gia Đình Việt Nam (3.1M Views)",
+    "link": "assets/docs/VIDEO-0be6c9/SOP-NGACH-NGUOI-CAO-TUOI-TAM-SU-GIA-DINH-VIET-NAM.md",
+    "file": "assets/docs/VIDEO-0be6c9/SOP-NGACH-NGUOI-CAO-TUOI-TAM-SU-GIA-DINH-VIET-NAM.md",
+    "kind": "sop",
+    "contentNiche": "Drama / Stories",
+    "title": "SOP Bán Content Ngách Người Cao Tuổi & Tâm Sự Gia Đình Việt Nam (3.1M Views)"
+  },
+  {
+    "sku": "VIDEO-a85eac",
+    "name": "SOP Đào Key & Bán Content Dưỡng Sinh Sức Khỏe Thị Trường Hàn Quốc (Key Táo & Cà Rốt)",
+    "link": "assets/docs/VIDEO-a85eac/SOP-DAO-KEY-DUONG-SINH-SUC-KHOE-THI-TRUONG-HAN.md",
+    "file": "assets/docs/VIDEO-a85eac/SOP-DAO-KEY-DUONG-SINH-SUC-KHOE-THI-TRUONG-HAN.md",
+    "kind": "sop",
+    "contentNiche": "Sức khỏe / Lão hóa",
+    "title": "SOP Đào Key & Bán Content Dưỡng Sinh Sức Khỏe Thị Trường Hàn Quốc (Key Táo & Cà Rốt)"
+  },
+  {
+    "sku": "VIDEO-043d15",
+    "name": "WEB NGUỒN VIDEO TỰ NHIÊN MIỄN PHÍ / KHÔNG BẢN QUYỀN (Pexels, Vecteezy, Coverr, Freepik, Pixabay)",
+    "link": "https://docs.google.com/spreadsheets/d/195NXjEWBarcA8_gl2OFoQB3jT1FPRUDakGHCyJGW4eo/edit?usp=sharing",
+    "file": "assets/docs/VIDEO-043d15/195NXjEWBarcA8_gl2OFoQB3jT1FPRUDakGHCyJGW4eo.csv",
+    "kind": "list",
+    "contentNiche": "Nền tảng / Tool",
+    "title": "WEB NGUỒN VIDEO TỰ NHIÊN MIỄN PHÍ / KHÔNG BẢN QUYỀN (Pexels, Vecteezy, Coverr, Freepik, Pixabay)"
+  },
+  {
+    "sku": "VIDEO-043d15",
+    "name": "WEB LẤY KỊCH BẢN VIDEO YTB (youtube-transcript.io)",
+    "link": "https://www.youtube-transcript.io/",
+    "file": "",
+    "kind": "tool",
+    "contentNiche": "Nền tảng / Tool",
+    "title": "WEB LẤY KỊCH BẢN VIDEO YTB (youtube-transcript.io)"
+  },
+  {
+    "sku": "VIDEO-043d15",
+    "name": "Skill đã train mẫu trong video (kichban-bapsang-kr.zip)",
+    "link": "https://drive.google.com/file/d/1DOSPEUUwZbsor6VAxvmmb906peyYHB8T/view?usp=sharing",
+    "file": "assets/docs/VIDEO-043d15/1DOSPEUUwZbsor6VAxvmmb906peyYHB8T.zip",
+    "kind": "prompt",
+    "contentNiche": "Nền tảng / Tool",
+    "title": "Skill đã train mẫu trong video (kichban-bapsang-kr.zip)"
+  },
+  {
+    "sku": "VIDEO-043d15",
+    "name": "Claude Skill: Kịch bản kênh sức khỏe tiếng Hàn 밥상 건강 연구소 (SKILL.md)",
+    "link": "assets/docs/VIDEO-043d15/SKILL-kichban-bapsang-kr.md",
+    "file": "assets/docs/VIDEO-043d15/SKILL-kichban-bapsang-kr.md",
+    "kind": "prompt",
+    "contentNiche": "Sức khỏe / Lão hóa",
+    "title": "Claude Skill: Kịch bản kênh sức khỏe tiếng Hàn 밥상 건강 연구소 (SKILL.md)"
+  },
+  {
+    "sku": "VIDEO-043d15",
+    "name": "Phân tích đối thủ 2 kênh sức khỏe Hàn Quốc (건강 채소 연구노트 & 채소와 과일 건강백서)",
+    "link": "assets/docs/VIDEO-043d15/PHAN-TICH-DOI-THU-KR.md",
+    "file": "assets/docs/VIDEO-043d15/PHAN-TICH-DOI-THU-KR.md",
+    "kind": "report",
+    "contentNiche": "Sức khỏe / Lão hóa",
+    "title": "Phân tích đối thủ 2 kênh sức khỏe Hàn Quốc (건강 채소 연구노트 & 채소와 과일 건강백서)"
+  },
+  {
+    "sku": "VIDEO-043d15",
+    "name": "SOP Master Train Prompt Claude Skill 3 Chế Độ & Chuẩn Hóa Voice ElevenLabs Hàn Quốc",
+    "link": "assets/docs/VIDEO-043d15/SOP-TRAIN-PROMPT-CLAUDE-SKILL-3-CHE-DO-KICH-BAN-SUC-KHOE-HAN.md",
+    "file": "assets/docs/VIDEO-043d15/SOP-TRAIN-PROMPT-CLAUDE-SKILL-3-CHE-DO-KICH-BAN-SUC-KHOE-HAN.md",
+    "kind": "sop",
+    "contentNiche": "Sức khỏe / Lão hóa",
+    "title": "SOP Master Train Prompt Claude Skill 3 Chế Độ & Chuẩn Hóa Voice ElevenLabs Hàn Quốc"
+  },
+  {
+    "sku": "VIDEO-a59a5e",
+    "name": "SOP Bóc Tách 2 Ngách Mới: Làm Vườn Mùa Thu & Triết Học Lượng Tử Feynman (Hàn Quốc)",
+    "link": "assets/docs/VIDEO-a59a5e/SOP-2-NGACH-MOI-LAM-VUON-MUA-THU-VA-TRIET-HOC-FEYNMAN.md",
+    "file": "assets/docs/VIDEO-a59a5e/SOP-2-NGACH-MOI-LAM-VUON-MUA-THU-VA-TRIET-HOC-FEYNMAN.md",
+    "kind": "sop",
+    "contentNiche": "Share key / Ngách nhỏ",
+    "title": "SOP Bóc Tách 2 Ngách Mới: Làm Vườn Mùa Thu & Triết Học Lượng Tử Feynman (Hàn Quốc)"
+  },
+  {
+    "sku": "VIDEO-ba3904",
+    "name": "Link Nhóm Facebook Cộng Đồng VIP H2DEV (Hỗ trợ độc quyền học viên Pro)",
+    "link": "https://www.facebook.com/share/g/1Av3v37xj7/?mibextid=wwXIfr",
+    "file": "",
+    "kind": "other",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Link Nhóm Facebook Cộng Đồng VIP H2DEV (Hỗ trợ độc quyền học viên Pro)"
+  },
+  {
+    "sku": "VIDEO-9873fb",
+    "name": "SOP Khám Kênh & Tư Duy Nhân Bản Thị Trường Ngoại (Phân tích kênh 0 view)",
+    "link": "assets/docs/VIDEO-9873fb/SOP-KHAM-KENH-VA-NHAN-BAN-THI-TRUONG-NO-VIEW.md",
+    "file": "assets/docs/VIDEO-9873fb/SOP-KHAM-KENH-VA-NHAN-BAN-THI-TRUONG-NO-VIEW.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "SOP Khám Kênh & Tư Duy Nhân Bản Thị Trường Ngoại (Phân tích kênh 0 view)"
+  },
+  {
+    "sku": "VIDEO-e91589",
+    "name": "Tài liệu Drive Khóa Học & Prompt Ngách Động Vật Hoang Dã Nhật Bản",
+    "link": "https://drive.google.com/drive/folders/1759zAl9c38_Spn9yHokvpjqgRtUg8jsK?usp=sharing",
+    "file": "",
+    "kind": "prompt",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Tài liệu Drive Khóa Học & Prompt Ngách Động Vật Hoang Dã Nhật Bản"
+  },
+  {
+    "sku": "VIDEO-e91589",
+    "name": "Quy trình Skill Wildlife Survival (Bộ prompt & cấu trúc video động vật hoang dã)",
+    "link": "assets/docs/VIDEO-e91589/SKILL-wildlife-survival.md",
+    "file": "assets/docs/VIDEO-e91589/SKILL-wildlife-survival.md",
+    "kind": "prompt",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Quy trình Skill Wildlife Survival (Bộ prompt & cấu trúc video động vật hoang dã)"
+  },
+  {
+    "sku": "VIDEO-21824a",
+    "name": "Kho Tài Liệu Drive & Prompt Ngách Bible Explainer Bật Kiếm Tiền",
+    "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
+    "file": "",
+    "kind": "prompt",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Kho Tài Liệu Drive & Prompt Ngách Bible Explainer Bật Kiếm Tiền"
+  },
+  {
+    "sku": "VIDEO-f77c31",
+    "name": "Quy Trình Bán Content & Tối Ưu Doanh Thu View Việt (Ngách Triết Lý Người Già)",
+    "link": "assets/docs/VIDEO-f77c31/QUY-TRINH-BAN-CONTENT-VIEW-VIET-NGUOI-GIA.md",
+    "file": "assets/docs/VIDEO-f77c31/QUY-TRINH-BAN-CONTENT-VIEW-VIET-NGUOI-GIA.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Quy Trình Bán Content & Tối Ưu Doanh Thu View Việt (Ngách Triết Lý Người Già)"
+  },
+  {
+    "sku": "VIDEO-46c57e",
+    "name": "Kho Tài Liệu Drive & Prompt Ngách Bible Explainer Bật Kiếm Tiền",
+    "link": "https://drive.google.com/drive/folders/1I7KqLj5C9rhr57QF58MeXvKFMwo9OzR2?usp=sharing",
+    "file": "",
+    "kind": "prompt",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Kho Tài Liệu Drive & Prompt Ngách Bible Explainer Bật Kiếm Tiền"
+  },
+  {
+    "sku": "VIDEO-46c57e",
+    "name": "Quy Trình 6 Bước Kháng Lỗi Sử Dụng Lại Nội Dung & Trùng Lặp 2026 (Tỷ lệ về bờ 90%)",
+    "link": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
+    "file": "assets/docs/VIDEO-46c57e/QUY-TRINH-KHANG-SU-DUNG-LAI-NOI-DUNG.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Quy Trình 6 Bước Kháng Lỗi Sử Dụng Lại Nội Dung & Trùng Lặp 2026 (Tỷ lệ về bờ 90%)"
+  },
+  {
+    "sku": "VIDEO-4425fc",
+    "name": "SOP Tạo & Nuôi Tài Khoản Google AdSense Chính Chủ Trâu Nhất (Né quét liên đới)",
+    "link": "assets/docs/VIDEO-4425fc/SOP-FIX-VA-TAO-GOOGLE-ADSENSE-CHINH-CHU.md",
+    "file": "assets/docs/VIDEO-4425fc/SOP-FIX-VA-TAO-GOOGLE-ADSENSE-CHINH-CHU.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "SOP Tạo & Nuôi Tài Khoản Google AdSense Chính Chủ Trâu Nhất (Né quét liên đới)"
+  },
+  {
+    "sku": "VIDEO-8bc3ce",
+    "name": "Bảng Kê Dữ Liệu Kênh Reup Cứu Thành Công Doanh Thu 1.700$ (File CSV Offline)",
+    "link": "https://docs.google.com/spreadsheets/d/1MFndtUcn7J_phjru1GWS2JQc68k1tBPm69YvTfG7K2c/edit?usp=sharing",
+    "file": "assets/docs/VIDEO-8bc3ce/1MFndtUcn7J_phjru1GWS2JQc68k1tBPm69YvTfG7K2c.csv",
+    "kind": "list",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Bảng Kê Dữ Liệu Kênh Reup Cứu Thành Công Doanh Thu 1.700$ (File CSV Offline)"
+  },
+  {
+    "sku": "VIDEO-8bc3ce",
+    "name": "Kho Tài Liệu Setup Kênh & Kháng Lỗi Reup (Google Drive)",
+    "link": "https://drive.google.com/drive/folders/1ZoctNgBXNcAI4DmaNc-ydh0GN1FBC9gM?usp=sharing",
+    "file": "",
+    "kind": "prompt",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Kho Tài Liệu Setup Kênh & Kháng Lỗi Reup (Google Drive)"
+  },
+  {
+    "sku": "VIDEO-8bc3ce",
+    "name": "SOP Kháng Lỗi Sử Dụng Lại Nội Dung & Xử Lý Audio Reup 2026",
+    "link": "assets/docs/VIDEO-8bc3ce/SOP-KHANG-LOI-SU-DUNG-LAI-NOI-DUNG-REUP-AUDIO.md",
+    "file": "assets/docs/VIDEO-8bc3ce/SOP-KHANG-LOI-SU-DUNG-LAI-NOI-DUNG-REUP-AUDIO.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "SOP Kháng Lỗi Sử Dụng Lại Nội Dung & Xử Lý Audio Reup 2026"
+  },
+  {
+    "sku": "VIDEO-5c438a",
+    "name": "Chiến Lược Chọn Mail & Chọn Kênh An Toàn (Kênh mới/cổ, Mail mới/cổ độ trust cao)",
+    "link": "assets/docs/VIDEO-5c438a/CHIEN-LUOC-CHON-MAIL-VA-CHON-KENH-AN-TOAN.md",
+    "file": "assets/docs/VIDEO-5c438a/CHIEN-LUOC-CHON-MAIL-VA-CHON-KENH-AN-TOAN.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Chiến Lược Chọn Mail & Chọn Kênh An Toàn (Kênh mới/cổ, Mail mới/cổ độ trust cao)"
+  },
+  {
+    "sku": "VIDEO-5c438a",
+    "name": "Danh Sách Nguồn Kênh Mẫu & Nguồn Dữ Liệu Video Ngoại (Sheet 1 - CSV Offline)",
+    "link": "assets/docs/VIDEO-5c438a/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU.csv",
+    "file": "assets/docs/VIDEO-5c438a/1JjCPUemfTTqSoyIScirvYPahMoBpAnIR-5-PqHLnUlU.csv",
+    "kind": "list",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Danh Sách Nguồn Kênh Mẫu & Nguồn Dữ Liệu Video Ngoại (Sheet 1 - CSV Offline)"
+  },
+  {
+    "sku": "VIDEO-5c438a",
+    "name": "Danh Sách Nguồn Kênh Douyin / Bilibili Reup Khai Thác (Sheet 2 - CSV Offline)",
+    "link": "assets/docs/VIDEO-5c438a/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg.csv",
+    "file": "assets/docs/VIDEO-5c438a/1B_M-LMWvN7ioXAf_eP2H-B4bWD8eO8Z69VWxCQgBODg.csv",
+    "kind": "list",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Danh Sách Nguồn Kênh Douyin / Bilibili Reup Khai Thác (Sheet 2 - CSV Offline)"
+  },
+  {
+    "sku": "VIDEO-5c438a",
+    "name": "Tài Liệu Hướng Dẫn Đăng Ký Tài Khoản & Lọc Kênh Trust Nước Ngoài (Docs Offline)",
+    "link": "assets/docs/VIDEO-5c438a/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY.txt",
+    "file": "assets/docs/VIDEO-5c438a/1wkdJE1l5ZwtQicsQVq9CW19o2L88lF9PJSpr95B2wwY.txt",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Tài Liệu Hướng Dẫn Đăng Ký Tài Khoản & Lọc Kênh Trust Nước Ngoài (Docs Offline)"
+  },
+  {
+    "sku": "VIDEO-9f9fbc",
+    "name": "Kho Tài Liệu Setup Kênh & Kháng Lỗi Reup (Google Drive)",
+    "link": "https://drive.google.com/drive/folders/1ZoctNgBXNcAI4DmaNc-ydh0GN1FBC9gM?usp=sharing",
+    "file": "",
+    "kind": "prompt",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Kho Tài Liệu Setup Kênh & Kháng Lỗi Reup (Google Drive)"
+  },
+  {
+    "sku": "VIDEO-9f9fbc",
+    "name": "Template Thiết Kế Banner Kênh YouTube Chuẩn Tỉ Lệ (Canva Link)",
+    "link": "https://canva.link/2zmyi0mzb407lsg",
+    "file": "",
+    "kind": "prompt",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Template Thiết Kế Banner Kênh YouTube Chuẩn Tỉ Lệ (Canva Link)"
+  },
+  {
+    "sku": "VIDEO-9f9fbc",
+    "name": "Template Thiết Kế Avatar / Logo Kênh YouTube Chuẩn Nhận Diện (Canva Link)",
+    "link": "https://canva.link/1ngkvt0jz6fr706",
+    "file": "",
+    "kind": "prompt",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "Template Thiết Kế Avatar / Logo Kênh YouTube Chuẩn Nhận Diện (Canva Link)"
+  },
+  {
+    "sku": "VIDEO-027064",
+    "name": "SOP Quy Trình Tạo Kênh & Chuyển Vùng Thị Trường Ngoại (US/JP/KR) Chuẩn Nhất",
+    "link": "assets/docs/VIDEO-027064/SOP-QUY-TRINH-TAO-KENH-VA-CHUYEN-VUNG-THI-TRUONG-NGOAI.md",
+    "file": "assets/docs/VIDEO-027064/SOP-QUY-TRINH-TAO-KENH-VA-CHUYEN-VUNG-THI-TRUONG-NGOAI.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "SOP Quy Trình Tạo Kênh & Chuyển Vùng Thị Trường Ngoại (US/JP/KR) Chuẩn Nhất"
+  },
+  {
+    "sku": "VIDEO-943781",
+    "name": "SOP Phân Chia Nuôi Hàng Loạt Mail & Kênh Trên 1 Thiết Bị Né Quét Spam",
+    "link": "assets/docs/VIDEO-943781/SOP-PHAN-CHIA-NUOI-HANG-LOAT-MAIL-KENH-TREN-1-MAY.md",
+    "file": "assets/docs/VIDEO-943781/SOP-PHAN-CHIA-NUOI-HANG-LOAT-MAIL-KENH-TREN-1-MAY.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "SOP Phân Chia Nuôi Hàng Loạt Mail & Kênh Trên 1 Thiết Bị Né Quét Spam"
+  },
+  {
+    "sku": "VIDEO-199f44",
+    "name": "SOP Thủ Thuật Nuôi Tương Tác Kênh Đối Thủ Trong Thời Gian Ngâm Kênh",
+    "link": "assets/docs/VIDEO-199f44/SOP-THU-THUAT-NUOI-TUONG-TAC-TRONG-THOI-GIAN-NGAM-KENH.md",
+    "file": "assets/docs/VIDEO-199f44/SOP-THU-THUAT-NUOI-TUONG-TAC-TRONG-THOI-GIAN-NGAM-KENH.md",
+    "kind": "sop",
+    "contentNiche": "Hệ thống / Quy trình",
+    "title": "SOP Thủ Thuật Nuôi Tương Tác Kênh Đối Thủ Trong Thời Gian Ngâm Kênh"
+  },
+  {
+    "id": "TL-VIDEO-61e354-01",
+    "sku": "VIDEO-61e354",
+    "name": "SOP Hướng Dẫn Tư Duy Tìm, Lọc Key YouTube View Ngoại & Xác Định Key Trends",
+    "link": "assets/docs/VIDEO-61e354/SOP-TU-DUY-TIM-LOC-KEY-YOUTUBE-VIEW-NGOAI-TRENDS.md",
+    "file": "assets/docs/VIDEO-61e354/SOP-TU-DUY-TIM-LOC-KEY-YOUTUBE-VIEW-NGOAI-TRENDS.md",
+    "category": "Tài liệu bài học",
+    "title": "SOP Hướng Dẫn Tư Duy Tìm, Lọc Key YouTube View Ngoại & Xác Định Key Trends"
+  },
+  {
+    "id": "TL-VIDEO-61e354-02",
+    "sku": "VIDEO-61e354",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-61e354/transcript.txt",
+    "file": "video/VIDEO-61e354/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-3e943c-01",
+    "sku": "VIDEO-3e943c",
+    "name": "Hướng dẫn lựa chọn phiên bản và gói cước Claude AI tối ưu",
+    "link": "assets/docs/VIDEO-3e943c/description.txt",
+    "file": "docs/VIDEO-3e943c/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Hướng dẫn lựa chọn phiên bản và gói cước Claude AI tối ưu"
+  },
+  {
+    "id": "TL-VIDEO-3e943c-02",
+    "sku": "VIDEO-3e943c",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-3e943c/transcript.txt",
+    "file": "video/VIDEO-3e943c/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-54c8f7-01",
+    "sku": "VIDEO-54c8f7",
+    "name": "Thư mục tài nguyên train trong video (Google Drive)",
+    "link": "https://drive.google.com/drive/folders/1PYGR8SHPWj9GdGLT361yP-1lTAvQwIVG?usp=sharing",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Thư mục tài nguyên train trong video (Google Drive)"
+  },
+  {
+    "id": "TL-VIDEO-54c8f7-02",
+    "sku": "VIDEO-54c8f7",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-54c8f7/transcript.txt",
+    "file": "video/VIDEO-54c8f7/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-5d54d0-01",
+    "sku": "VIDEO-5d54d0",
+    "name": "Skill Prompt của ngách trong video (Google Drive)",
+    "link": "https://drive.google.com/drive/folders/14bf1nCiGzvU6aCSKjrs2lRxEDiJINdeT?usp=sharing",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Skill Prompt của ngách trong video (Google Drive)"
+  },
+  {
+    "id": "TL-VIDEO-5d54d0-02",
+    "sku": "VIDEO-5d54d0",
+    "name": "Video nền xanh sóng nhạc audio visualizer (Vecteezy 4K)",
+    "link": "https://www.vecteezy.com/video/77042599-music-audio-waveform-visualizer-equalizer-effect-green-screen-4k",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Video nền xanh sóng nhạc audio visualizer (Vecteezy 4K)"
+  },
+  {
+    "id": "TL-VIDEO-5d54d0-03",
+    "sku": "VIDEO-5d54d0",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-5d54d0/transcript.txt",
+    "file": "video/VIDEO-5d54d0/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-e90874-01",
+    "sku": "VIDEO-e90874",
+    "name": "Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (Text offline)",
+    "link": "assets/docs/VIDEO-e90874/Prompt-Master-Nhan-Ban-Thi-Truong.txt",
+    "file": "assets/docs/VIDEO-e90874/Prompt-Master-Nhan-Ban-Thi-Truong.txt",
+    "category": "Tài liệu bài học",
+    "title": "Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (Text offline)"
+  },
+  {
+    "id": "TL-VIDEO-e90874-02",
+    "sku": "VIDEO-e90874",
+    "name": "Web lấy kịch bản YouTube tự động (youtube-transcript.io)",
+    "link": "https://www.youtube-transcript.io/",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Web lấy kịch bản YouTube tự động (youtube-transcript.io)"
+  },
+  {
+    "id": "TL-VIDEO-e90874-03",
+    "sku": "VIDEO-e90874",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-e90874/transcript.txt",
+    "file": "video/VIDEO-e90874/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-b380a1-01",
+    "sku": "VIDEO-b380a1",
+    "name": "Prompt Train Kịch Bản Ngách Nhỏ View Việt (Google Docs)",
+    "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit?tab=t.0",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Prompt Train Kịch Bản Ngách Nhỏ View Việt (Google Docs)"
+  },
+  {
+    "id": "TL-VIDEO-b380a1-02",
+    "sku": "VIDEO-b380a1",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-b380a1/transcript.txt",
+    "file": "video/VIDEO-b380a1/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-3a38f9-01",
+    "sku": "VIDEO-3a38f9",
+    "name": "Hồ sơ 2 kênh mới nổ view Hàn & Việt",
+    "link": "assets/docs/VIDEO-3a38f9/description.txt",
+    "file": "docs/VIDEO-3a38f9/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Hồ sơ 2 kênh mới nổ view Hàn & Việt"
+  },
+  {
+    "id": "TL-VIDEO-3a38f9-02",
+    "sku": "VIDEO-3a38f9",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-3a38f9/transcript.txt",
+    "file": "video/VIDEO-3a38f9/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-61ad94-01",
+    "sku": "VIDEO-61ad94",
+    "name": "Hồ sơ 3 kênh bán content Nhật & Hàn",
+    "link": "assets/docs/VIDEO-61ad94/description.txt",
+    "file": "docs/VIDEO-61ad94/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Hồ sơ 3 kênh bán content Nhật & Hàn"
+  },
+  {
+    "id": "TL-VIDEO-61ad94-02",
+    "sku": "VIDEO-61ad94",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-61ad94/transcript.txt",
+    "file": "video/VIDEO-61ad94/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-DD983D-01",
+    "sku": "VIDEO-DD983D",
+    "name": "SOP Phân tích & Edit né quét AI ngách Nhật",
+    "link": "assets/docs/VIDEO-DD983D/description.txt",
+    "file": "docs/VIDEO-DD983D/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "SOP Phân tích & Edit né quét AI ngách Nhật"
+  },
+  {
+    "id": "TL-VIDEO-DD983D-02",
+    "sku": "VIDEO-DD983D",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-DD983D/transcript.txt",
+    "file": "video/VIDEO-DD983D/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-484f9e-01",
+    "sku": "VIDEO-484f9e",
+    "name": "Quy trình edit bán content ngách Bình An né quét AI",
+    "link": "assets/docs/VIDEO-484f9e/description.txt",
+    "file": "docs/VIDEO-484f9e/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Quy trình edit bán content ngách Bình An né quét AI"
+  },
+  {
+    "id": "TL-VIDEO-484f9e-02",
+    "sku": "VIDEO-484f9e",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-484f9e/transcript.txt",
+    "file": "video/VIDEO-484f9e/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-e24c31-01",
+    "sku": "VIDEO-e24c31",
+    "name": "Hồ sơ 2 kênh bán content view ngoại 5 video cắn đề xuất",
+    "link": "assets/docs/VIDEO-e24c31/description.txt",
+    "file": "docs/VIDEO-e24c31/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Hồ sơ 2 kênh bán content view ngoại 5 video cắn đề xuất"
+  },
+  {
+    "id": "TL-VIDEO-e24c31-02",
+    "sku": "VIDEO-e24c31",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-e24c31/transcript.txt",
+    "file": "video/VIDEO-e24c31/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-a7bfd0-01",
+    "sku": "VIDEO-a7bfd0",
+    "name": "Cẩm nang khám kênh & khắc phục lỗi 0 view lẹt đẹt",
+    "link": "assets/docs/VIDEO-a7bfd0/description.txt",
+    "file": "docs/VIDEO-a7bfd0/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Cẩm nang khám kênh & khắc phục lỗi 0 view lẹt đẹt"
+  },
+  {
+    "id": "TL-VIDEO-a7bfd0-02",
+    "sku": "VIDEO-a7bfd0",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-a7bfd0/transcript.txt",
+    "file": "video/VIDEO-a7bfd0/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-4b3c09-01",
+    "sku": "VIDEO-4b3c09",
+    "name": "Hồ sơ 5 kênh bán content 4 ngách nhỏ Hàn Quốc",
+    "link": "assets/docs/VIDEO-4b3c09/description.txt",
+    "file": "docs/VIDEO-4b3c09/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Hồ sơ 5 kênh bán content 4 ngách nhỏ Hàn Quốc"
+  },
+  {
+    "id": "TL-VIDEO-4b3c09-02",
+    "sku": "VIDEO-4b3c09",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-4b3c09/transcript.txt",
+    "file": "video/VIDEO-4b3c09/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-28e1cc-01",
+    "sku": "VIDEO-28e1cc",
+    "name": "Hướng dẫn tool dịch phụ đề SRT giọng đọc Ngọc Huyền",
+    "link": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt?ref=H2DEV-001",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Hướng dẫn tool dịch phụ đề SRT giọng đọc Ngọc Huyền"
+  },
+  {
+    "id": "TL-VIDEO-28e1cc-02",
+    "sku": "VIDEO-28e1cc",
+    "name": "Kênh nguồn hoạt hình Bilibili 1 (space.bilibili.com/3546626561935534)",
+    "link": "https://space.bilibili.com/3546626561935534/upload/video",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Kênh nguồn hoạt hình Bilibili 1 (space.bilibili.com/3546626561935534)"
+  },
+  {
+    "id": "TL-VIDEO-28e1cc-03",
+    "sku": "VIDEO-28e1cc",
+    "name": "Kênh nguồn hoạt hình Bilibili 2 (space.bilibili.com/1692631217)",
+    "link": "https://space.bilibili.com/1692631217?spm_id_from=333.788.upinfo.detail.click",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Kênh nguồn hoạt hình Bilibili 2 (space.bilibili.com/1692631217)"
+  },
+  {
+    "id": "TL-VIDEO-28e1cc-04",
+    "sku": "VIDEO-28e1cc",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-28e1cc/transcript.txt",
+    "file": "video/VIDEO-28e1cc/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-d2cd90-01",
+    "sku": "VIDEO-d2cd90",
+    "name": "Hồ sơ 5 kênh đối thủ bán content ngoại trends",
+    "link": "assets/docs/VIDEO-d2cd90/description.txt",
+    "file": "docs/VIDEO-d2cd90/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Hồ sơ 5 kênh đối thủ bán content ngoại trends"
+  },
+  {
+    "id": "TL-VIDEO-d2cd90-02",
+    "sku": "VIDEO-d2cd90",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-d2cd90/transcript.txt",
+    "file": "video/VIDEO-d2cd90/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-9aff6d-01",
+    "sku": "VIDEO-9aff6d",
+    "name": "Ảnh bóc tách kênh Pro nổ hơn 300k view (PNG offline 1.4 MB)",
+    "link": "assets/docs/VIDEO-9aff6d/kenh-mau-pro-300k-view.png",
+    "file": "assets/docs/VIDEO-9aff6d/kenh-mau-pro-300k-view.png",
+    "category": "Tài liệu bài học",
+    "title": "Ảnh bóc tách kênh Pro nổ hơn 300k view (PNG offline 1.4 MB)"
+  },
+  {
+    "id": "TL-VIDEO-9aff6d-02",
+    "sku": "VIDEO-9aff6d",
+    "name": "Kênh đối thủ 1 (@kurumanozokitai)",
+    "link": "https://www.youtube.com/@kurumanozokitai",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Kênh đối thủ 1 (@kurumanozokitai)"
+  },
+  {
+    "id": "TL-VIDEO-9aff6d-03",
+    "sku": "VIDEO-9aff6d",
+    "name": "Kênh đối thủ 2 (@昔の人の知恵)",
+    "link": "https://www.youtube.com/@%E6%98%94%E3%81%AE%E4%BA%BA%E3%81%AE%E7%9F%A5%E6%81%B5",
+    "file": "",
+    "category": "Tài liệu bài học",
+    "title": "Kênh đối thủ 2 (@昔の人の知恵)"
+  },
+  {
+    "id": "TL-VIDEO-9aff6d-04",
+    "sku": "VIDEO-9aff6d",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-9aff6d/transcript.txt",
+    "file": "video/VIDEO-9aff6d/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "id": "TL-VIDEO-c5837a-01",
+    "sku": "VIDEO-c5837a",
+    "name": "Hồ sơ 7 kênh bán content & reup 3 thị trường Nhật - Hàn - Việt",
+    "link": "assets/docs/VIDEO-c5837a/description.txt",
+    "file": "docs/VIDEO-c5837a/description.txt",
+    "category": "Tài liệu bài học",
+    "title": "Hồ sơ 7 kênh bán content & reup 3 thị trường Nhật - Hàn - Việt"
+  },
+  {
+    "id": "TL-VIDEO-c5837a-02",
+    "sku": "VIDEO-c5837a",
+    "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "link": "video/VIDEO-c5837a/transcript.txt",
+    "file": "video/VIDEO-c5837a/transcript.txt",
+    "category": "Tài liệu bài học",
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+  },
+  {
+    "sku": "VIDEO-dbd487",
+    "video_sku": "VIDEO-dbd487",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN CÂN\"",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN CÂN\"",
+    "link": "docs/VIDEO-dbd487/README.md",
+    "file": "docs/VIDEO-dbd487/README.md",
+    "kind": "guide",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-dbd487",
+    "video_sku": "VIDEO-dbd487",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 61",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 61",
+    "link": "video/VIDEO-dbd487/transcript.txt",
+    "file": "video/VIDEO-dbd487/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-d71802",
+    "video_sku": "VIDEO-d71802",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS",
+    "link": "docs/VIDEO-d71802/README.md",
+    "file": "docs/VIDEO-d71802/README.md",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-d71802",
+    "video_sku": "VIDEO-d71802",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 62",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 62",
+    "link": "video/VIDEO-d71802/transcript.txt",
+    "file": "video/VIDEO-d71802/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-33d701",
+    "video_sku": "VIDEO-33d701",
+    "title": "Hồ sơ Kỹ thuật & SOP: MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT",
+    "name": "Hồ sơ Kỹ thuật & SOP: MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT",
+    "link": "docs/VIDEO-33d701/README.md",
+    "file": "docs/VIDEO-33d701/README.md",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-33d701",
+    "video_sku": "VIDEO-33d701",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 64",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 64",
+    "link": "video/VIDEO-33d701/transcript.txt",
+    "file": "video/VIDEO-33d701/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-7e00ee",
+    "video_sku": "VIDEO-7e00ee",
+    "title": "Hồ sơ Kỹ thuật & SOP: RPM 8-15 VỚI 2 NGÁCH CỰC NHỎ THỊ TRƯỜNG NHẬT NÀY ĐANG BẬT KIẾM TIỀN VÀ THỜI GIAN TRUNG BÌNH VIDEO HƠN 1 TIẾNG 40 PHÚT",
+    "name": "Hồ sơ Kỹ thuật & SOP: RPM 8-15 VỚI 2 NGÁCH CỰC NHỎ THỊ TRƯỜNG NHẬT NÀY ĐANG BẬT KIẾM TIỀN VÀ THỜI GIAN TRUNG BÌNH VIDEO HƠN 1 TIẾNG 40 PHÚT",
+    "link": "docs/VIDEO-7e00ee/README.md",
+    "file": "docs/VIDEO-7e00ee/README.md",
+    "kind": "guide",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-7e00ee",
+    "video_sku": "VIDEO-7e00ee",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 65",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 65",
+    "link": "video/VIDEO-7e00ee/transcript.txt",
+    "file": "video/VIDEO-7e00ee/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-ff9be6",
+    "video_sku": "VIDEO-ff9be6",
+    "title": "Hồ sơ Kỹ thuật & SOP: XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+    "name": "Hồ sơ Kỹ thuật & SOP: XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+    "link": "docs/VIDEO-ff9be6/README.md",
+    "file": "docs/VIDEO-ff9be6/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-ff9be6",
+    "video_sku": "VIDEO-ff9be6",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 66",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 66",
+    "link": "video/VIDEO-ff9be6/transcript.txt",
+    "file": "video/VIDEO-ff9be6/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-6ad3fe",
+    "video_sku": "VIDEO-6ad3fe",
+    "title": "Hồ sơ Kỹ thuật & SOP: FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+    "name": "Hồ sơ Kỹ thuật & SOP: FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+    "link": "docs/VIDEO-6ad3fe/README.md",
+    "file": "docs/VIDEO-6ad3fe/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-6ad3fe",
+    "video_sku": "VIDEO-6ad3fe",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 67",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 67",
+    "link": "video/VIDEO-6ad3fe/transcript.txt",
+    "file": "video/VIDEO-6ad3fe/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-7f0bb4",
+    "video_sku": "VIDEO-7f0bb4",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
+    "link": "docs/VIDEO-7f0bb4/README.md",
+    "file": "docs/VIDEO-7f0bb4/README.md",
+    "kind": "guide",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-7f0bb4",
+    "video_sku": "VIDEO-7f0bb4",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 68",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 68",
+    "link": "video/VIDEO-7f0bb4/transcript.txt",
+    "file": "video/VIDEO-7f0bb4/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-7db740",
+    "video_sku": "VIDEO-7db740",
+    "title": "Hồ sơ Kỹ thuật & SOP: CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
+    "name": "Hồ sơ Kỹ thuật & SOP: CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
+    "link": "docs/VIDEO-7db740/README.md",
+    "file": "docs/VIDEO-7db740/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-7db740",
+    "video_sku": "VIDEO-7db740",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 69",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 69",
+    "link": "video/VIDEO-7db740/transcript.txt",
+    "file": "video/VIDEO-7db740/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-546afa",
+    "video_sku": "VIDEO-546afa",
+    "title": "Hồ sơ Kỹ thuật & SOP: CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT",
+    "name": "Hồ sơ Kỹ thuật & SOP: CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT",
+    "link": "docs/VIDEO-546afa/README.md",
+    "file": "docs/VIDEO-546afa/README.md",
+    "kind": "guide",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-546afa",
+    "video_sku": "VIDEO-546afa",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 70",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 70",
+    "link": "video/VIDEO-546afa/transcript.txt",
+    "file": "video/VIDEO-546afa/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-d84a78",
+    "video_sku": "VIDEO-d84a78",
+    "title": "Hồ sơ Kỹ thuật & SOP: HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
+    "name": "Hồ sơ Kỹ thuật & SOP: HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
+    "link": "docs/VIDEO-d84a78/README.md",
+    "file": "docs/VIDEO-d84a78/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d84a78",
+    "video_sku": "VIDEO-d84a78",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 71",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 71",
+    "link": "video/VIDEO-d84a78/transcript.txt",
+    "file": "video/VIDEO-d84a78/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d84a78",
+    "video_sku": "VIDEO-d84a78",
+    "title": "Tài liệu Gốc: Hợp tác làm kênh YouTube & Quy trình chuẩn từ tác giả",
+    "name": "Tài liệu Gốc: Hợp tác làm kênh YouTube & Quy trình chuẩn từ tác giả",
+    "link": "https://docs.google.com/document/d/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo/edit?usp=sharing",
+    "file": "docs/VIDEO-d84a78/1q1Eeow8ZiD5qVRzIZW7RwDxhjgGBBfnrkdj85JlWIPo.txt",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-c1bd51",
+    "video_sku": "VIDEO-c1bd51",
+    "title": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN TRENDS CỰC KỲ TRENDS CHƯA AI CÓ THỂ BIẾT + HƯỚNG DẪN EDIT CHUẨN LÀM A-Z | UPDATE MỚI NHẤT 12-03-2026",
+    "name": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN TRENDS CỰC KỲ TRENDS CHƯA AI CÓ THỂ BIẾT + HƯỚNG DẪN EDIT CHUẨN LÀM A-Z | UPDATE MỚI NHẤT 12-03-2026",
+    "link": "docs/VIDEO-c1bd51/README.md",
+    "file": "docs/VIDEO-c1bd51/README.md",
+    "kind": "guide",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-c1bd51",
+    "video_sku": "VIDEO-c1bd51",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 72",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 72",
+    "link": "video/VIDEO-c1bd51/transcript.txt",
+    "file": "video/VIDEO-c1bd51/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-026112",
+    "video_sku": "VIDEO-026112",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHOW KÊNH ĐỐI THỦ VÀ NGÁCH REUP HOẠT HÌNH + DU LỊCH CỰC TRENDS TỪ TRUNG QUỐC SANG - UPDATE MỚI 08-03-2026",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHOW KÊNH ĐỐI THỦ VÀ NGÁCH REUP HOẠT HÌNH + DU LỊCH CỰC TRENDS TỪ TRUNG QUỐC SANG - UPDATE MỚI 08-03-2026",
+    "link": "docs/VIDEO-026112/README.md",
+    "file": "docs/VIDEO-026112/README.md",
+    "kind": "guide",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-026112",
+    "video_sku": "VIDEO-026112",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 73",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 73",
+    "link": "video/VIDEO-026112/transcript.txt",
+    "file": "video/VIDEO-026112/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-e25d3b",
+    "video_sku": "VIDEO-e25d3b",
+    "title": "Hồ sơ Kỹ thuật & SOP: HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT",
+    "name": "Hồ sơ Kỹ thuật & SOP: HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT",
+    "link": "docs/VIDEO-e25d3b/README.md",
+    "file": "docs/VIDEO-e25d3b/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-e25d3b",
+    "video_sku": "VIDEO-e25d3b",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 74",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 74",
+    "link": "video/VIDEO-e25d3b/transcript.txt",
+    "file": "video/VIDEO-e25d3b/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-91bb96",
+    "video_sku": "VIDEO-91bb96",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 VIDEO / 1 NGÀY",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 VIDEO / 1 NGÀY",
+    "link": "docs/VIDEO-91bb96/README.md",
+    "file": "docs/VIDEO-91bb96/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-91bb96",
+    "video_sku": "VIDEO-91bb96",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 77",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 77",
+    "link": "video/VIDEO-91bb96/transcript.txt",
+    "file": "video/VIDEO-91bb96/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-8b69c9",
+    "video_sku": "VIDEO-8b69c9",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG HÀN VÀ NHẬT - PHÂN TÍCH VÀ HƯỚNG CÁCH EDIT TRÁNH BỊ QUÉT LỖI KHÔNG TRUNG THỰC MỚI NHẤT 2026",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG HÀN VÀ NHẬT - PHÂN TÍCH VÀ HƯỚNG CÁCH EDIT TRÁNH BỊ QUÉT LỖI KHÔNG TRUNG THỰC MỚI NHẤT 2026",
+    "link": "docs/VIDEO-8b69c9/README.md",
+    "file": "docs/VIDEO-8b69c9/README.md",
+    "kind": "guide",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-8b69c9",
+    "video_sku": "VIDEO-8b69c9",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 78",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 78",
+    "link": "video/VIDEO-8b69c9/transcript.txt",
+    "file": "video/VIDEO-8b69c9/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-35014d",
+    "video_sku": "VIDEO-35014d",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG NHẬT BẢN VÀ KÊNH NGÁCH KINH TẾ THỊ TRƯỜNG HÀN QUỐC",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG NHẬT BẢN VÀ KÊNH NGÁCH KINH TẾ THỊ TRƯỜNG HÀN QUỐC",
+    "link": "docs/VIDEO-35014d/README.md",
+    "file": "docs/VIDEO-35014d/README.md",
+    "kind": "guide",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-35014d",
+    "video_sku": "VIDEO-35014d",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 79",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 79",
+    "link": "video/VIDEO-35014d/transcript.txt",
+    "file": "video/VIDEO-35014d/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "video_sku": "VIDEO-d20744",
+    "title": "Hồ sơ Kỹ thuật & SOP: NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
+    "name": "Hồ sơ Kỹ thuật & SOP: NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
+    "link": "docs/VIDEO-d20744/README.md",
+    "file": "docs/VIDEO-d20744/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "video_sku": "VIDEO-d20744",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 63",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 63",
+    "link": "video/VIDEO-d20744/transcript.txt",
+    "file": "video/VIDEO-d20744/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "video_sku": "VIDEO-d20744",
+    "title": "Tool Tải YouTube 4K (YoutubeDownload.zip)",
+    "name": "Tool Tải YouTube 4K (YoutubeDownload.zip)",
+    "link": "https://vietsubmmo.com/tool/free/YoutubeDownload.zip",
+    "file": "docs/VIDEO-d20744/YoutubeDownload.zip",
+    "kind": "tool",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "video_sku": "VIDEO-d20744",
+    "title": "Tool Tải TikTok & Douyin Sạch Logo (Tiktokdouyin.zip)",
+    "name": "Tool Tải TikTok & Douyin Sạch Logo (Tiktokdouyin.zip)",
+    "link": "https://vietsubmmo.com/tool/free/Tiktokdouyin.zip",
+    "file": "docs/VIDEO-d20744/Tiktokdouyin.zip",
+    "kind": "tool",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "video_sku": "VIDEO-d20744",
+    "title": "Tool Tải Bilibili 1080p (BilibiliDownload.zip)",
+    "name": "Tool Tải Bilibili 1080p (BilibiliDownload.zip)",
+    "link": "https://vietsubmmo.com/tool/free/BilibiliDownload.zip",
+    "file": "docs/VIDEO-d20744/BilibiliDownload.zip",
+    "kind": "tool",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "video_sku": "VIDEO-d20744",
+    "title": "Tool Tải Facebook HD (FacebookDownload.zip)",
+    "name": "Tool Tải Facebook HD (FacebookDownload.zip)",
+    "link": "https://vietsubmmo.com/tool/free/FacebookDownload.zip",
+    "file": "docs/VIDEO-d20744/FacebookDownload.zip",
+    "kind": "tool",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "video_sku": "VIDEO-d20744",
+    "title": "Tool Quay Màn Hình HD (quaymanhinh.zip)",
+    "name": "Tool Quay Màn Hình HD (quaymanhinh.zip)",
+    "link": "https://vietsubmmo.com/tool/free/quaymanhinh.zip",
+    "file": "docs/VIDEO-d20744/quaymanhinh.zip",
+    "kind": "tool",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-d20744",
+    "video_sku": "VIDEO-d20744",
+    "title": "Tool Cắt Ghép Video Siêu Tốc (cutghep.zip)",
+    "name": "Tool Cắt Ghép Video Siêu Tốc (cutghep.zip)",
+    "link": "https://vietsubmmo.com/tool/free/cutghep.zip",
+    "file": "docs/VIDEO-d20744/cutghep.zip",
+    "kind": "tool",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-bdfab7",
+    "video_sku": "VIDEO-bdfab7",
+    "title": "Hồ sơ Kỹ thuật & SOP: Tự train prompt & Phân tích đối thủ Sức khỏe Hàn Quốc",
+    "name": "Hồ sơ Kỹ thuật & SOP: Tự train prompt & Phân tích đối thủ Sức khỏe Hàn Quốc",
+    "link": "docs/VIDEO-bdfab7/README.md",
+    "file": "docs/VIDEO-bdfab7/README.md",
+    "kind": "guide",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-bdfab7",
+    "video_sku": "VIDEO-bdfab7",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 75",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 75",
+    "link": "video/VIDEO-bdfab7/transcript.txt",
+    "file": "video/VIDEO-bdfab7/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-bdfab7",
+    "video_sku": "VIDEO-bdfab7",
+    "title": "Bộ 4 Master Prompt Train Kênh Đối Thủ 구름야담 (Kịch bản, Ảnh Whisk, Style, Thumb)",
+    "name": "Bộ 4 Master Prompt Train Kênh Đối Thủ 구름야담 (Kịch bản, Ảnh Whisk, Style, Thumb)",
+    "link": "docs/VIDEO-bdfab7/Master-Prompt-Train-Kenh-Doi-Thu.txt",
+    "file": "docs/VIDEO-bdfab7/Master-Prompt-Train-Kenh-Doi-Thu.txt",
+    "kind": "prompt",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-bdfab7",
+    "video_sku": "VIDEO-bdfab7",
+    "title": "Google Docs Gốc: Prompt Demo Key Trong Video",
+    "name": "Google Docs Gốc: Prompt Demo Key Trong Video",
+    "link": "https://docs.google.com/document/d/1DPv3XBIzpkH2mF163b47y2FvxkRKseIprcPn4QU1WaE/edit?usp=sharing",
+    "file": "docs/VIDEO-bdfab7/Prompt-Demo-Suc-Khoe-Han-Quoc.txt",
+    "kind": "prompt",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-e95a8f",
+    "video_sku": "VIDEO-e95a8f",
+    "title": "Hồ sơ Kỹ thuật & SOP: Ngách nhỏ bán content Tuổi Già Radio VN",
+    "name": "Hồ sơ Kỹ thuật & SOP: Ngách nhỏ bán content Tuổi Già Radio VN",
+    "link": "docs/VIDEO-e95a8f/README.md",
+    "file": "docs/VIDEO-e95a8f/README.md",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-e95a8f",
+    "video_sku": "VIDEO-e95a8f",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 76",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 76",
+    "link": "video/VIDEO-e95a8f/transcript.txt",
+    "file": "video/VIDEO-e95a8f/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-e95a8f",
+    "video_sku": "VIDEO-e95a8f",
+    "title": "Kho Video Sức Khỏe Ngang Miễn Phí (Pexels Health)",
+    "name": "Kho Video Sức Khỏe Ngang Miễn Phí (Pexels Health)",
+    "link": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape",
+    "file": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape",
+    "kind": "tool",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-e95a8f",
+    "video_sku": "VIDEO-e95a8f",
+    "title": "Kho Footage Đồ Họa Miễn Phí (Vecteezy)",
+    "name": "Kho Footage Đồ Họa Miễn Phí (Vecteezy)",
+    "link": "https://www.vecteezy.com/",
+    "file": "https://www.vecteezy.com/",
+    "kind": "tool",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-e95a8f",
+    "video_sku": "VIDEO-e95a8f",
+    "title": "Kho Video B-Roll Điện Ảnh Miễn Phí (Coverr)",
+    "name": "Kho Video B-Roll Điện Ảnh Miễn Phí (Coverr)",
+    "link": "https://coverr.co/",
+    "file": "https://coverr.co/",
+    "kind": "tool",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-e95a8f",
+    "video_sku": "VIDEO-e95a8f",
+    "title": "Kho Tư Liệu Đời Sống Miễn Phí (Freepik Videos)",
+    "name": "Kho Tư Liệu Đời Sống Miễn Phí (Freepik Videos)",
+    "link": "https://www.freepik.com/videos",
+    "file": "https://www.freepik.com/videos",
+    "kind": "tool",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-e95a8f",
+    "video_sku": "VIDEO-e95a8f",
+    "title": "Kho Video Thiên Nhiên Không Bản Quyền (Pixabay)",
+    "name": "Kho Video Thiên Nhiên Không Bản Quyền (Pixabay)",
+    "link": "https://pixabay.com/",
+    "file": "https://pixabay.com/",
+    "kind": "tool",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-cb907b",
+    "video_sku": "VIDEO-cb907b",
+    "title": "Hồ sơ Kỹ thuật & SOP: Reup View Việt RPM 2$ Full Quy Trình",
+    "name": "Hồ sơ Kỹ thuật & SOP: Reup View Việt RPM 2$ Full Quy Trình",
+    "link": "docs/VIDEO-cb907b/README.md",
+    "file": "docs/VIDEO-cb907b/README.md",
+    "kind": "guide",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-cb907b",
+    "video_sku": "VIDEO-cb907b",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 80",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 80",
+    "link": "video/VIDEO-cb907b/transcript.txt",
+    "file": "video/VIDEO-cb907b/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-cb907b",
+    "video_sku": "VIDEO-cb907b",
+    "title": "Bảng Tính Google Sheets Gốc: Danh Sách Nguồn Reup Douyin H2DEV",
+    "name": "Bảng Tính Google Sheets Gốc: Danh Sách Nguồn Reup Douyin H2DEV",
+    "link": "https://docs.google.com/spreadsheets/d/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc/edit?usp=sharing",
+    "file": "docs/VIDEO-cb907b/1isPtYYBJ2xGsQxK2w80_vnZY8IEztzmo-fRgcxxp3Oc.csv",
+    "kind": "sheet",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-cb907b",
+    "video_sku": "VIDEO-cb907b",
+    "title": "Câu Lệnh AI Tạo Thumbnail 16:9 Loại Bỏ Chữ Trung Quốc",
+    "name": "Câu Lệnh AI Tạo Thumbnail 16:9 Loại Bỏ Chữ Trung Quốc",
+    "link": "docs/VIDEO-cb907b/Prompt-Thumbnail-16-9.txt",
+    "file": "docs/VIDEO-cb907b/Prompt-Thumbnail-16-9.txt",
+    "kind": "prompt",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-cb907b",
+    "video_sku": "VIDEO-cb907b",
+    "title": "Công Cụ Tải Video Douyin Không Watermark (Tikvideo App)",
+    "name": "Công Cụ Tải Video Douyin Không Watermark (Tikvideo App)",
+    "link": "https://tikvideo.app/vi/download-douyin-video",
+    "file": "https://tikvideo.app/vi/download-douyin-video",
+    "kind": "tool",
+    "contentNiche": "Reup & Khai Thác Hoạt Hình"
+  },
+  {
+    "sku": "VIDEO-34f417",
+    "video_sku": "VIDEO-34f417",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN",
+    "link": "docs/VIDEO-34f417/README.md",
+    "file": "docs/VIDEO-34f417/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-34f417",
+    "video_sku": "VIDEO-34f417",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 81",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 81",
+    "link": "video/VIDEO-34f417/transcript.txt",
+    "file": "video/VIDEO-34f417/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-1b4be3",
+    "video_sku": "VIDEO-1b4be3",
+    "title": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT",
+    "name": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT",
+    "link": "docs/VIDEO-1b4be3/README.md",
+    "file": "docs/VIDEO-1b4be3/README.md",
+    "kind": "guide",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-1b4be3",
+    "video_sku": "VIDEO-1b4be3",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 82",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 82",
+    "link": "video/VIDEO-1b4be3/transcript.txt",
+    "file": "video/VIDEO-1b4be3/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-1b4be3",
+    "video_sku": "VIDEO-1b4be3",
+    "title": "Bảng Phân Tích Key Ngách Nhật - Việt & Cách Edit Tránh Quét AI",
+    "name": "Bảng Phân Tích Key Ngách Nhật - Việt & Cách Edit Tránh Quét AI",
+    "link": "https://docs.google.com/spreadsheets/d/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc/edit?usp=sharing",
+    "file": "docs/VIDEO-1b4be3/1F9nT7MO3ViMUC3-i5rzBjKiw9CtfW91HEgNXkFWFanc.csv",
+    "kind": "sheet",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-ec9c50",
+    "video_sku": "VIDEO-ec9c50",
+    "title": "Hồ sơ Kỹ thuật & SOP: KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026",
+    "name": "Hồ sơ Kỹ thuật & SOP: KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026",
+    "link": "docs/VIDEO-ec9c50/README.md",
+    "file": "docs/VIDEO-ec9c50/README.md",
+    "kind": "guide",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-ec9c50",
+    "video_sku": "VIDEO-ec9c50",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 83",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 83",
+    "link": "video/VIDEO-ec9c50/transcript.txt",
+    "file": "video/VIDEO-ec9c50/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-134a25",
+    "video_sku": "VIDEO-134a25",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8",
+    "link": "docs/VIDEO-134a25/README.md",
+    "file": "docs/VIDEO-134a25/README.md",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-134a25",
+    "video_sku": "VIDEO-134a25",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 84",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 84",
+    "link": "video/VIDEO-134a25/transcript.txt",
+    "file": "video/VIDEO-134a25/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-5fd052",
+    "video_sku": "VIDEO-5fd052",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)",
+    "link": "docs/VIDEO-5fd052/README.md",
+    "file": "docs/VIDEO-5fd052/README.md",
+    "kind": "guide",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-5fd052",
+    "video_sku": "VIDEO-5fd052",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 85",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 85",
+    "link": "video/VIDEO-5fd052/transcript.txt",
+    "file": "video/VIDEO-5fd052/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-00136f",
+    "video_sku": "VIDEO-00136f",
+    "title": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT",
+    "name": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT",
+    "link": "docs/VIDEO-00136f/README.md",
+    "file": "docs/VIDEO-00136f/README.md",
+    "kind": "guide",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-00136f",
+    "video_sku": "VIDEO-00136f",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 86",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 86",
+    "link": "video/VIDEO-00136f/transcript.txt",
+    "file": "video/VIDEO-00136f/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-00136f",
+    "video_sku": "VIDEO-00136f",
+    "title": "SOP Quy Trình Fix & Add Quyền Quản Lý Google AdSense Chống Die",
+    "name": "SOP Quy Trình Fix & Add Quyền Quản Lý Google AdSense Chống Die",
+    "link": "docs/VIDEO-00136f/SOP-FIX-ADD-QUYEN-GOOGLE-ADSENSE-CHONG-DIE.md",
+    "file": "docs/VIDEO-00136f/SOP-FIX-ADD-QUYEN-GOOGLE-ADSENSE-CHONG-DIE.md",
+    "kind": "guide",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-9ea5e3",
+    "video_sku": "VIDEO-9ea5e3",
+    "title": "Hồ sơ Kỹ thuật & SOP: TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026",
+    "name": "Hồ sơ Kỹ thuật & SOP: TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026",
+    "link": "docs/VIDEO-9ea5e3/README.md",
+    "file": "docs/VIDEO-9ea5e3/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-9ea5e3",
+    "video_sku": "VIDEO-9ea5e3",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 87",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 87",
+    "link": "video/VIDEO-9ea5e3/transcript.txt",
+    "file": "video/VIDEO-9ea5e3/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-2ed37a",
+    "video_sku": "VIDEO-2ed37a",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP",
+    "link": "docs/VIDEO-2ed37a/README.md",
+    "file": "docs/VIDEO-2ed37a/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-2ed37a",
+    "video_sku": "VIDEO-2ed37a",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 88",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 88",
+    "link": "video/VIDEO-2ed37a/transcript.txt",
+    "file": "video/VIDEO-2ed37a/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-54422c",
+    "video_sku": "VIDEO-54422c",
+    "title": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN",
+    "name": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN",
+    "link": "docs/VIDEO-54422c/README.md",
+    "file": "docs/VIDEO-54422c/README.md",
+    "kind": "guide",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-54422c",
+    "video_sku": "VIDEO-54422c",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 89",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 89",
+    "link": "video/VIDEO-54422c/transcript.txt",
+    "file": "video/VIDEO-54422c/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-54422c",
+    "video_sku": "VIDEO-54422c",
+    "title": "Prompt Master: Tự Train Kịch Bản & Tạo Prompt Cho Mọi Chủ Đề",
+    "name": "Prompt Master: Tự Train Kịch Bản & Tạo Prompt Cho Mọi Chủ Đề",
+    "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit",
+    "file": "docs/VIDEO-54422c/Prompt-Train-Tu-Tao-Bat-Ky-Chu-De.txt",
+    "kind": "prompt",
+    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản"
+  },
+  {
+    "sku": "VIDEO-af606d",
+    "video_sku": "VIDEO-af606d",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHOW KEY KÊNH MỚI CỰC NGON THỊ TRƯỜNG HÀN QUỐC",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHOW KEY KÊNH MỚI CỰC NGON THỊ TRƯỜNG HÀN QUỐC",
+    "link": "docs/VIDEO-af606d/README.md",
+    "file": "docs/VIDEO-af606d/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-af606d",
+    "video_sku": "VIDEO-af606d",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 90",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 90",
+    "link": "video/VIDEO-af606d/transcript.txt",
+    "file": "video/VIDEO-af606d/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-9ef6fe",
+    "video_sku": "VIDEO-9ef6fe",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP",
+    "link": "docs/VIDEO-9ef6fe/README.md",
+    "file": "docs/VIDEO-9ef6fe/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-9ef6fe",
+    "video_sku": "VIDEO-9ef6fe",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 91",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 91",
+    "link": "video/VIDEO-9ef6fe/transcript.txt",
+    "file": "video/VIDEO-9ef6fe/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-7ae3d6",
+    "video_sku": "VIDEO-7ae3d6",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS",
+    "link": "docs/VIDEO-7ae3d6/README.md",
+    "file": "docs/VIDEO-7ae3d6/README.md",
+    "kind": "guide",
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+  },
+  {
+    "sku": "VIDEO-7ae3d6",
+    "video_sku": "VIDEO-7ae3d6",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 92",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 92",
+    "link": "video/VIDEO-7ae3d6/transcript.txt",
+    "file": "video/VIDEO-7ae3d6/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng"
+  },
+  {
+    "sku": "VIDEO-86c1ec",
+    "video_sku": "VIDEO-86c1ec",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGÁCH CỰC NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC ĐANG RẤT TRENDS",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGÁCH CỰC NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC ĐANG RẤT TRENDS",
+    "link": "docs/VIDEO-86c1ec/README.md",
+    "file": "docs/VIDEO-86c1ec/README.md",
+    "kind": "guide",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-86c1ec",
+    "video_sku": "VIDEO-86c1ec",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 93",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 93",
+    "link": "video/VIDEO-86c1ec/transcript.txt",
+    "file": "video/VIDEO-86c1ec/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-3e5a21",
+    "video_sku": "VIDEO-3e5a21",
+    "title": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
+    "name": "Hồ sơ Kỹ thuật & SOP: HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
+    "link": "docs/VIDEO-3e5a21/README.md",
+    "file": "docs/VIDEO-3e5a21/README.md",
+    "kind": "guide",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-3e5a21",
+    "video_sku": "VIDEO-3e5a21",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 94",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 94",
+    "link": "video/VIDEO-3e5a21/transcript.txt",
+    "file": "video/VIDEO-3e5a21/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+  },
+  {
+    "sku": "VIDEO-ffccd2",
+    "video_sku": "VIDEO-ffccd2",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGÁCH NHỎ KEY THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS VÀ CẠNH TRANH THẤP",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGÁCH NHỎ KEY THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS VÀ CẠNH TRANH THẤP",
+    "link": "docs/VIDEO-ffccd2/README.md",
+    "file": "docs/VIDEO-ffccd2/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-ffccd2",
+    "video_sku": "VIDEO-ffccd2",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 95",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 95",
+    "link": "video/VIDEO-ffccd2/transcript.txt",
+    "file": "video/VIDEO-ffccd2/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-de2564",
+    "video_sku": "VIDEO-de2564",
+    "title": "Hồ sơ Kỹ thuật & SOP: NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN",
+    "name": "Hồ sơ Kỹ thuật & SOP: NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN",
+    "link": "docs/VIDEO-de2564/README.md",
+    "file": "docs/VIDEO-de2564/README.md",
+    "kind": "guide",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-de2564",
+    "video_sku": "VIDEO-de2564",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 96",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 96",
+    "link": "video/VIDEO-de2564/transcript.txt",
+    "file": "video/VIDEO-de2564/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Drama Gia Đình & Xã Hội"
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "video_sku": "VIDEO-2aa1f7",
+    "title": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
+    "name": "Hồ sơ Kỹ thuật & SOP: SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
+    "link": "docs/VIDEO-2aa1f7/README.md",
+    "file": "docs/VIDEO-2aa1f7/README.md",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "video_sku": "VIDEO-2aa1f7",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 97",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 97",
+    "link": "video/VIDEO-2aa1f7/transcript.txt",
+    "file": "video/VIDEO-2aa1f7/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "video_sku": "VIDEO-2aa1f7",
+    "title": "1. Kịch Bản Chuẩn Triết Lý Sống US (Full 4 Hồi)",
+    "name": "1. Kịch Bản Chuẩn Triết Lý Sống US (Full 4 Hồi)",
+    "link": "https://docs.google.com/document/d/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc/edit?usp=sharing",
+    "file": "docs/VIDEO-2aa1f7/1-ELUfA_f0AE_4PSRNUom2kcYWjcHaltSb35Z1OQnqMc.txt",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "video_sku": "VIDEO-2aa1f7",
+    "title": "2. Prompt Master Tạo Hình Ảnh Midjourney/Whisk US",
+    "name": "2. Prompt Master Tạo Hình Ảnh Midjourney/Whisk US",
+    "link": "https://docs.google.com/document/d/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c/edit?usp=sharing",
+    "file": "docs/VIDEO-2aa1f7/17M4xMEjUw449i6rGXxcLRAGD6kJ4vWJm4f6Gi2ddg5c.txt",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "video_sku": "VIDEO-2aa1f7",
+    "title": "3. Quy Trình Sản Xuất Video Dài A-Z Thị Trường Hoa Kỳ",
+    "name": "3. Quy Trình Sản Xuất Video Dài A-Z Thị Trường Hoa Kỳ",
+    "link": "https://docs.google.com/document/d/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA/edit?tab=t.0",
+    "file": "docs/VIDEO-2aa1f7/1hOgJDduFhzVpVhMIV2d8-Y9q-OOXSRKb2ZpN4o9WJtA.txt",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "video_sku": "VIDEO-2aa1f7",
+    "title": "4. Bộ Từ Khóa SEO & Hashtag Ngách Triết Lý US",
+    "name": "4. Bộ Từ Khóa SEO & Hashtag Ngách Triết Lý US",
+    "link": "https://docs.google.com/document/d/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY/edit?usp=sharing",
+    "file": "docs/VIDEO-2aa1f7/1Ox0J5UR0LznPzsKWb2rTYX1XosSXnKiSZjqOHp1mNkY.txt",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "video_sku": "VIDEO-2aa1f7",
+    "title": "5. Công Thức Đặt Tiêu Đề Gây Tò Mò Cho Khán Giả Bắc Mỹ",
+    "name": "5. Công Thức Đặt Tiêu Đề Gây Tò Mò Cho Khán Giả Bắc Mỹ",
+    "link": "https://docs.google.com/document/d/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY/edit?usp=sharing",
+    "file": "docs/VIDEO-2aa1f7/1SJz3EY5gT3CLAEZmO_GYW6U1Z02NcwAvqYHG2p_ymnY.txt",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-2aa1f7",
+    "video_sku": "VIDEO-2aa1f7",
+    "title": "6. Template Thumbnail Triết Lý Sống Cao Tuổi US",
+    "name": "6. Template Thumbnail Triết Lý Sống Cao Tuổi US",
+    "link": "https://docs.google.com/document/d/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk/edit?usp=sharing",
+    "file": "docs/VIDEO-2aa1f7/1Su6qF7F-vYxrlyQpQQp25nCrmxjYW3KXQ1Ue-Im9ENk.txt",
+    "kind": "guide",
+    "contentNiche": "Triết Lý Sống & Đạo Làm Người"
+  },
+  {
+    "sku": "VIDEO-5fe83a",
+    "video_sku": "VIDEO-5fe83a",
+    "title": "Hồ sơ Kỹ thuật & SOP: UPDATE 05/11/2025 - Ngách Nhỏ MỚI THỊ TRƯỜNG VIỆT NAM TRENDS CỰC CAO",
+    "name": "Hồ sơ Kỹ thuật & SOP: UPDATE 05/11/2025 - Ngách Nhỏ MỚI THỊ TRƯỜNG VIỆT NAM TRENDS CỰC CAO",
+    "link": "docs/VIDEO-5fe83a/README.md",
+    "file": "docs/VIDEO-5fe83a/README.md",
+    "kind": "guide",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-5fe83a",
+    "video_sku": "VIDEO-5fe83a",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 98",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 98",
+    "link": "video/VIDEO-5fe83a/transcript.txt",
+    "file": "video/VIDEO-5fe83a/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-3ae732",
+    "video_sku": "VIDEO-3ae732",
+    "title": "Hồ sơ Kỹ thuật & SOP: UPDATE 04/11/2025 - NHÂN BẢN THỊ TRƯỜNG TỪ KÊNH ĐỐI THỦ HOA KỲ SANG VIỆT NAM",
+    "name": "Hồ sơ Kỹ thuật & SOP: UPDATE 04/11/2025 - NHÂN BẢN THỊ TRƯỜNG TỪ KÊNH ĐỐI THỦ HOA KỲ SANG VIỆT NAM",
+    "link": "docs/VIDEO-3ae732/README.md",
+    "file": "docs/VIDEO-3ae732/README.md",
+    "kind": "guide",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-3ae732",
+    "video_sku": "VIDEO-3ae732",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 99",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 99",
+    "link": "video/VIDEO-3ae732/transcript.txt",
+    "file": "video/VIDEO-3ae732/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Sức Khỏe & Dinh Dưỡng"
+  },
+  {
+    "sku": "VIDEO-458892",
+    "video_sku": "VIDEO-458892",
+    "title": "Hồ sơ Kỹ thuật & SOP: KIẾM HƠN $100,000.000 / THÁNG VỚI KEY LỊCH SỬ QUÂN SỰ NÀY - HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z (chủ đề - kịch bản - giọng đọc - hình ảnh - thumbnail) - UPDATE 19/10/2025",
+    "name": "Hồ sơ Kỹ thuật & SOP: KIẾM HƠN $100,000.000 / THÁNG VỚI KEY LỊCH SỬ QUÂN SỰ NÀY - HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z (chủ đề - kịch bản - giọng đọc - hình ảnh - thumbnail) - UPDATE 19/10/2025",
+    "link": "docs/VIDEO-458892/README.md",
+    "file": "docs/VIDEO-458892/README.md",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-458892",
+    "video_sku": "VIDEO-458892",
+    "title": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 100",
+    "name": "Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 100",
+    "link": "video/VIDEO-458892/transcript.txt",
+    "file": "video/VIDEO-458892/transcript.txt",
+    "kind": "transcript",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-458892",
+    "video_sku": "VIDEO-458892",
+    "title": "Full Quy Trình Kịch Bản & Giọng Đọc Lịch Sử Quân Sự US ($100k/tháng)",
+    "name": "Full Quy Trình Kịch Bản & Giọng Đọc Lịch Sử Quân Sự US ($100k/tháng)",
+    "link": "https://docs.google.com/document/d/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM/edit?usp=sharing",
+    "file": "docs/VIDEO-458892/1kf-0XOjf7vmvXcrDZxKMvO_A_O_pWxLZ8LWwl7uo8YM.txt",
+    "kind": "guide",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-458892",
+    "video_sku": "VIDEO-458892",
+    "title": "Bảng Phân Tích Doanh Thu & Chỉ Số Kênh Quân Sự US (Bảng 1)",
+    "name": "Bảng Phân Tích Doanh Thu & Chỉ Số Kênh Quân Sự US (Bảng 1)",
+    "link": "https://docs.google.com/spreadsheets/d/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY/edit?usp=sharing",
+    "file": "docs/VIDEO-458892/1vOx8iD84xJdPxdnG9046vJqugzSofXBYdgvl5KJTOSY.csv",
+    "kind": "sheet",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
+  },
+  {
+    "sku": "VIDEO-458892",
+    "video_sku": "VIDEO-458892",
+    "title": "Bảng Tổng Hợp Kênh Đối Thủ & Key Lịch Sử Quân Sự Nổi Bật (Bảng 2)",
+    "name": "Bảng Tổng Hợp Kênh Đối Thủ & Key Lịch Sử Quân Sự Nổi Bật (Bảng 2)",
+    "link": "https://docs.google.com/spreadsheets/d/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o/edit?usp=sharing",
+    "file": "docs/VIDEO-458892/1edt6Wmxx7jEnBhmT5ruDTth22IXEHgX5iA62SXCZJ_o.csv",
+    "kind": "sheet",
+    "contentNiche": "Bán Content & Phát Triển Kênh"
   }
 ]

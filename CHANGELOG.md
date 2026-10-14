@@ -1,4 +1,106 @@
-﻿## 2026-10-09 (đợt 3) — ĐỒNG BỘ SỐ LIỆU `intelligence.db` SAU LẦN CRAWL 01:57:28
+## 2026-10-14 (đợt 6) — NỐT CỜ A8D VÀ KHÓA TRÙNG TRONG `video_insights.json`
+
+- **`VIDEO-043d15` (A8d 1 → 0):** khoảng 1585–1647 s bị large-v3 bỏ sót và chèn câu ảo giác ("nhớ like, share và đăng ký kênh") + 3 segment sai; bóc lại bằng `whisper-large-v3-turbo` không prompt, thay 4 segment bằng 19 segment thật (transcript 305 segment). Quét 4 SKU mới: 0 câu ảo giác quen thuộc. `audit_videos_v2.py`: 140/144 clean, 4 issue còn lại đều là F2 (chưa có trên VPS), 0 A8d.
+- **`data/video_insights.json`:** 20 mục khóa chữ hoa (`VIDEO-00136F`...) là bản dự phòng cho tra cứu không phân biệt hoa/thường (`player-main.js` thử `resolvedSku → sku → lower → upper`). Đồng bộ lại 4 mục lệch bản chữ thường: `00136F`, `BDFAB7`, `54422C` chép nguyên bản chữ thường (bản chữ hoa thiếu `sop_steps`, `last_verified_at`); `B380A1` chỉ cập nhật `key_timestamps` (mục chữ hoa còn trường `title`/`sku` mà bản chữ thường không có nên giữ nguyên các trường khác). 16 mục còn lại vốn đã giống hệt.
+- **Kiểm tra lại:** `validate-project`, 5 gate, guard, `check-ui-classes`, `check-reconcile-handles`, `sync-counts --check` exit 0; `deep-ui-acceptance` 11/11; `playwright-g2-acceptance` 23/23.
+
+## 2026-10-14 (đợt 5) — XỬ LÝ 3 GAP DỮ LIỆU CÒN MỞ SAU CHECK-PASS
+
+- **`data/video_insights.json` — `key_timestamps`:** viết lại 13 video có mốc vượt thời lượng thật (D6 13 → 0) và lập mới 129 mốc cho 20 video chưa có mốc nào (S3 20 → 0). Mỗi mốc lấy giây bắt đầu của segment transcript thật, nhãn tóm đúng lời tại đó. Đồng bộ `lesson_timestamps` trong `data/h2dev_master.db` (638 → 793; `integrity_check` ok, 0 vi phạm khóa ngoại); `sync-counts` cập nhật `docs/WORKING_STATE.md`.
+- **4 SKU mới (`043d15`, `0be6c9`, `a59a5e`, `a85eac`):** thêm `tags` theo quy ước thị trường (E1 4 → 0); chạy `silence_scan` cho 4 SKU (trước đó thiếu số đo lặng); vá phụ đề bằng script mới `scripts/fill_transcript_gaps.py` (chỉ bóc lại cửa sổ thủng + segment nén chữ, 2 mô hình, chọn bản tốt hơn): A4 → 0, A8c → 0, A8d 4 → 1. Bản gốc ở `_backup/20261014-fill-gaps/`.
+- **`scripts/audit_videos_v2.py`:** đuôi im lặng thật chạm cuối video tính là đã phủ (`coverage_effective_pct`) — `VIDEO-a59a5e` có 58 s cuối im lặng.
+- **`data-tabs/dong-bo-ngoai.json`:** `matched[12].fileLocal` placeholder → `pipelines/wildlife/wildlife-survival-H2dev/script-wildlife-survival/SKILL.md` (file có thật, HTTP 200). Chọn file này vì nó là skill viết kịch bản ngách động vật; file còn lại trong thư mục là `wildlife-motion-prompt-master` (prompt chuyển động).
+- **Còn lại sau `audit_videos_v2.py`:** 140/144 clean; 4 issue là F2 (4 SKU mới chưa có trên VPS — việc deploy); 1 cờ A8d (`VIDEO-043d15`, khoảng 23 s cần nghe lại). Bài học: `H2DEV-SCAR-029`.
+- **Kiểm tra lại sau sửa:** `validate-project`, 5 gate, guard, `check-ui-classes`, `check-reconcile-handles`, `sync-counts --check` exit 0; `deep-ui-acceptance` 11/11; `playwright-g2-acceptance` 23/23; mở 5 trang player trên trình duyệt thấy đủ mốc mới (0 lỗi console).
+
+## 2026-10-14 (đợt 4) — CHECK-PASS TOÀN DỰ ÁN
+
+- **`scripts/sync-counts.js`:** rule cập nhật docs không khớp dòng nào nay làm `--check` FAIL (trước đây im lặng). Tìm ra 18 neo chết → bỏ 11 rule của `AGENTS.md` (file đã rút gọn, không còn số liệu), bỏ rule `index.html` và `audit_videos_v2` (văn bản gốc không còn số), sửa 5 rule còn lại (`TREE.md`, `00_README.md`, `MEMORY.md` ×2, `RULE-LAM-VIEC.md`). Probe 2 chiều: phá neo → exit 1; khôi phục → exit 0, file byte-identical.
+- **Số liệu cũ bị lộ ra và đã cập nhật:** `TREE.md` (136/136 → 140/140), `00_README.md` (140 → 144 bài, 23.95 GB, 144/144, 27 free · 117 pro), `RULE-LAM-VIEC.md` ("140 bài (136 video…)" → 144 = 140 video + 4 Zoom), `KE-HOACH-THUC-CHIEN-YOUTUBE.md`, `docs/WORKING_STATE.md` (audit media: 127/144 clean).
+- **Đo mới (chưa sửa dữ liệu):** `audit_videos_v2.py` 144 SKU → 17 SKU có issue (13 SKU D6 mốc `key_timestamps` vượt thời lượng thật; 4 SKU mới nhập thiếu `tags`, có đoạn nền chữ, chưa có trên VPS; 2 trong 4 phụ đề phủ 82–87,5%). `dong-bo-ngoai.json` `matched[12].fileLocal` là placeholder `pipelines/wildlife/.../SKILL.md`.
+- **Kiểm tra sạch:** crawl trình duyệt 326 lượt tải (1280 + 390 px, toàn bộ route + 144 trang player): 0 lỗi console, 0 HTTP ≥400, 0 ảnh vỡ; 2 DB `integrity_check = ok`; 9 gate + `validate-project` + `sync-counts --check` exit 0.
+
+## 2026-10-14 (đợt 3) — XỬ LÝ G8, G9, G12, G13
+
+- **G13 không làm, kết luận ban đầu sai:** 140 file `assets/thumbs/*.{webp,jpeg,jpg}` được `data/modules.json` trỏ tới và trang Lộ trình (`learn.js`) hiển thị 144 ảnh; chuyển đi sẽ vỡ ảnh. Đo trên trình duyệt thật.
+- **G12** dựng lại `assets/tailwind.css` (499 → 466 class, backup `_backup/20261014-gap-fix/tailwind.css.bak`). 37 class bỏ đi không có trong DOM ở 16 route × 2 viewport; 4 class mới cần dùng; ảnh chụp 10 trang × 2 viewport trước/sau khác 0 pixel; `check-ui-classes`, gate, `deep-ui`, `g2` đều đạt.
+- **G8** `knowledge-hub/docs/RULE-LAM-VIEC.md` 398 → 297 dòng: bỏ tên CodeBuddy, phần lặp luật chung, phần VPS/Cloudflare/SCP; giữ nguyên số mục Phần 2–8 và 10.1. `H2DEV-MASTER-OPERATING-PROMPT.md` bỏ bước đồng bộ VPS. Bản gốc: `_archive/20261014-rule-lam-viec/`.
+- **G9** `D:\YTB\AGENTS.md` 227 → 32 dòng; nhật ký bài học chuyển sang `docs/solutions/h2dev-scar-log.md`; mã `SCAR-006…028` → `H2DEV-SCAR-006…028` (chỉ trong văn bản đó; comment gate/script và báo cáo cũ giữ mã cũ, có ghi chú ánh xạ). Gộp `solutions/` vào `docs/solutions/`. Tạo `CLAUDE.md` (`@AGENTS.md`) ở `D:\YTB` và `H2DEV-Project`.
+
+## 2026-10-14 (đợt 2) — ĐO THỰC TẾ 256/256 KÊNH MẪU (`docs/reports/2026-10-14-kenh-mau-do-thuc-te.md`)
+
+- Đo từng kênh bằng trang kênh + `channel_dossier` + RSS (+ yt-dlp khi cần), bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`. Kết quả: **187 LIVE · 59 DEAD · 10 EMPTY · 0 UNRESOLVED** (trước: 194 sống gồm 74 chưa gắn cờ · 62 dead).
+- 15 kênh đổi trạng thái (3 LIVE→DEAD, 2 DEAD→LIVE vì handle lưu dạng `@UC…`, 2 EMPTY→LIVE, 8 LIVE→EMPTY), cả 15 đã mở trình duyệt thật đối chiếu; 8 kênh ngẫu nhiên không đổi cũng khớp.
+- `data-tabs/kenh-mau.json`: cập nhật `dead/deadKind/deadNote/status/ngay_do/nguon_do/ngay_do_check` cho cả 256 kênh (vá theo field, giữ thay đổi dở của việc khác); `deadNote/deadKind` cũ của kênh chuyển sang LIVE được giữ ở `deadNoteCu/deadKindCu`. `ngay_do` nay 256/256.
+- Script mới: `scripts/probe-kenh-mau.py` (đo, resumable), `scripts/classify-kenh-mau.py` (phân loại), `scripts/apply-kenh-mau-probe.js` (vá có nhật ký). Docs có số liệu kênh đã đồng bộ lại; `sync-counts --check` exit 0.
+- Handle: 2 kênh `@UC…` đổi sang `@TheLifeOutline`/`@Core_Sight` (handle cũ ở `handle_cu`); 2 kênh đổi handle giữ `handle` vì catalog/ngách nối bằng handle cũ, thêm `handle_hien_tai`. DB `competitor_channels` đồng bộ 237 hàng (không dựng lại cả DB để khỏi mất avatar mặc định).
+
+## 2026-10-14 — SỬA GAPS TỪ BÁO CÁO `docs/reports/2026-10-14-gap-audit.md`
+
+- **G1** chip kênh dead ở player: thêm rule `#pchannelslist > div.border-red-500\/40` + `.line-through` vào `assets/player.css` (rule `#pchannelslist > div` có `!important` làm class tiện ích mất tác dụng).
+- **G2** 10 link mô tả chết (`videos.json`/`tai-lieu-full.json`): tạo 10 file `assets/docs/VIDEO-*/description.txt` (bản sao hash-identical từ `docs/`).
+- **G5** `assets/app/tabs/content.js`: nhãn/badge/chip cho kind `sop · guide · transcript · sheet` — chip loại tài liệu nay cộng đủ 300.
+- **G4/G7** số liệu và đường dẫn cũ trong `00_README.md`, `TREE.md`, `docs/WORKING_STATE.md`, `knowledge-hub/docs/MEMORY.md`, `H2DEV-MASTER-OPERATING-PROMPT.md`, `D:\YTB\AGENTS.md` được đo lại từ `counts-manifest.json`.
+- **sync-counts**: thêm `channelsWithNgayDo` (192) vào `scripts/lib/counts.js`; rule `ngay_do N/M` trong `scripts/sync-counts.js` dùng số thật thay vì ép `256/256`. Probe: tiêm `256/256` → FAIL, khôi phục → OK.
+- **G11** `scripts/gate-p1.js`: miễn đúng rule `.row-title` có `line-height:22px` kèm `min-height:44px` (22px ở selector khác vẫn FAIL). **G15** sửa rò HTML tiêm lỗi giữa các lượt probe. Probe 11/11, file byte-identical.
+- **G14** `server.js`: URL chứa byte NUL → 400. Đã nạp vào dịch vụ (tiến trình :8899 khởi động 15:30, sau lần sửa 15:26); đo lại `/index.html%00.js` → 400. Script `D:\YTB\RESTART-H2DEV-SERVICE-ADMIN.cmd` sửa gọi `nssm.exe` bằng đường dẫn đầy đủ (trước đó báo "Done" dù lệnh `nssm` không chạy).
+- `AGENTS.md` dự án thêm mục Commands/Structure (chỉ lệnh đã chạy thật). Skill `h2dev-project-audit` bỏ số kỳ vọng cứng và bước `check-broken-refs.js` (không còn tồn tại).
+- Nghiệm thu: validate · counts --check · 5 gate · guard · check-ui-classes · deep-ui 11/11 · g2 23/23 · find-404 sạch (exit 0 cả bộ).
+- **G3 đã đóng bằng đo thực tế 256/256 kênh** (xem mục tiếp theo). Chưa làm: G8, G9, G12, G13.
+
+## 2026-10-09 (đợt 7) — CHUẨN HÓA TOÀN DIỆN CHIẾN LƯỢC /chienluoc & NÂNG CẤP 12 BƯỚC SOP THỰC CHIẾN (nhánh `ui/ui-standard-2026-10-09`)
+
+- **Nâng cấp SOP 11 bước thành 12 bước SOP Chiến Lược Vàng H2DEV:** Tách biệt rõ ràng khâu "Hậu kỳ 5 lớp né quét AI (Multi-layer Compositing)" thành một bước kỹ thuật chuyên sâu (SOP 06), gắn kèm 42 chip liên kết trực tiếp tới các SKU bài học thực tế trong kho 144 video.
+- **Sửa dứt điểm bẫy số liệu cũ và lỗi font (SCAR-012):** Khắc phục toàn bộ các số liệu ghi cứng (136 bài, 109 tài liệu, 165 kênh) thành số liệu chuẩn thời gian thực (144 bài, 300 tài liệu, 256 kênh, 5 pipelines); sửa triệt để các lỗi font nuốt số RPM (`$2.00 – $4.50` và `$6.00 – $8.50`).
+- **Khắc phục lỗi điều hướng tab trong `renderChienLuoc()`:** Sửa 5 nút bấm mở tab bị sai định danh (`tab: "kenh"` -> `kenh-mau`, `tab: "kichban"` -> `tai-lieu`, `tab: "tongquan"` -> `tatca`).
+- **Phân bổ ngách thông minh:** Bổ sung hàm gán nhãn ghi chú tự động cho toàn bộ 35 nhóm chuyên đề từ `videos.json`, triệt tiêu hoàn toàn hiện tượng note rỗng trên giao diện.
+- **Kiểm định E2E Playwright trên /chienluoc:** 100% ALL PASS, 0 Console Errors, chuyển đổi mượt mà giữa 5 subtabs (`principles`, `workflow`, `distribution`, `policy`, `all`), click chuyển tab hoạt động chính xác.
+- **Tài liệu kiểm toán & Biên bản nghiệm thu:** Xuất bản `docs/reports/2026-10-09-chienluoc-knowledge-deep-audit.json` và `docs/reports/2026-10-09-chienluoc-ui-ux-audit.json`.
+
+## 2026-10-09 (đợt 6) — UI-STANDARD ĐỢT 2: CHIP, THẺ KÊNH, THẺ TÀI LIỆU, TAB HỌC, BỎ 2XS (đã nằm trong commit `800caa4`; vòng 3 trong commit `13c40f5`, nhánh `ui/ui-standard-2026-10-09`)
+- **Vòng 3 (commit `13c40f5`):** nút "Đi nhanh" trên điện thoại thành hai cột, nút lẻ cuối chiếm cả hàng (mồ côi 2 → 0 trên 60 tổ hợp). Hàng chip có nhãn đi kèm, tối đa 4 chip, chia đều từ 641 px ("Tình trạng sống" 1440 px: 261/300/309 → 290/290/290). Cụm nhiều chip và điện thoại giữ `flex: 1 1 auto` (chia đều đã thử: chip còn 30–56 px). Nhãn KPI "Ngách có data" dùng `text-wrap: balance` (hết chữ lẻ). Chip chia đều thêm `min-width: max-content` (lỗi xuống dòng ở 641–659 px do bên đọc độc lập phát hiện). Thanh nút `/chienluoc` trên điện thoại (6 nút) giữ một hàng cuộn ngang: trước đó thành hai hàng, hàng đầu bị tiêu đề cố định che. Phiên bản tài nguyên `uifix81`.
+- **Route `/api/intelligence/spider` (`server.js`, đã nằm trong commit `551be56`):** chỉ nhận POST kèm `X-H2DEV-Action: spider`; GET trả 405, POST không header trả 403. Trình duyệt từ trang khác nguồn không gửi được (đo: `Failed to fetch`; DB không đổi). Dịch vụ `H2DEV_Service` đã nạp code mới (khởi động 09:00:13). Đã tạo luật tường lửa `H2DEV-8899 chan Public` (Block, TCP 8899, Public) và tắt Tailscale Funnel cổng 8443.
+- **Nút "Cuộn lên đầu trang" (`assets/h2dev-shell.css`):** từ 1024 px trở xuống, trang có thanh điều hướng dưới thì nút cách đáy 76 px (trước đó 16 px ở 640–1024 px nên bị thanh đè, hit-test: bị che). Kiểm lại `/tatca` ở 5 cỡ: mồ côi 0, 33 hoặc 38 phần tử bấm được đều không bị che, nút mở/thu gọn 8/8 đổi trạng thái đúng, không lỗi console, không tài nguyên 404.
+- **Kiểm lại UX, animation, logic, dữ liệu `/tatca` (`uifix81`):** dữ liệu 31/31 đạt; Lighthouse (Accessibility, Best Practices, SEO, Agentic Browsing) đều 100 ở điện thoại và máy tính, không có hạng mục Performance (trace: LCP 292 ms, CLS 0,00). Sửa sáu lỗi: (1) thẻ KPI Tài liệu đếm 275 file local, đúng 269 (6 mục công cụ có `file` là địa chỉ web), `content.js`; (2) thẻ của 6 mục đó hiện nút "File local" trỏ ra web và nhãn "FILE", `content.js`; (3) tên truy cập của logo không chứa chữ hiển thị (WCAG 2.5.3), `main.js`; (4) trang bài học `/lotrinh/<SKU>`: bảy loại điều khiển mất vòng focus do `box-shadow: none !important`, `player.css`; (5) trang phía sau cuộn được khi modal "Nhạc nền" và bảng "Khác" mở trên điện thoại, `viddar.css` và `nav.js`; (6) vòng focus của thẻ KPI và logo đồng bộ với token của dự án, `viddar.css`. Quét 670 phần tử focus trên 12 route: 0 thiếu vòng.
+- **Kiểm chứng dữ liệu với nguồn ngoài (`uifix81`, 2026-10-09):** dò lại 256/256 kênh trên YouTube (242 khớp, 14 lệch; 12 kênh có xác nhận lần hai bằng `channel_dossier`/RSS) và đọc lại 5 trang YouTube Help chính thức. Sửa trong dữ liệu, mỗi chỗ kèm nguồn và ngày: 8 kênh ghi `dead` nhưng đang sống (9 đến 355 video), 2 kênh ghi sống nhưng 404, ngách "Tâm linh / phúc lộc Hàn" hạ từ `xanh:true` xuống "CÓ MẪU TĂNG" (chỉ còn 1/4 kênh mẫu sống, dưới ngưỡng ≥2 của chính file), `mauSach` của "Khoa học / Trái Đất EN" đổi channelId thành handle, 20 avatar trỏ file không tồn tại (HTTP 404), 10 bản ghi thị trường dùng biến thể (Việt Nam/Việt, Hoa Kỳ/Mỹ/US, Toàn cầu/Đa quốc gia), chính sách mục 1, 5, 6 bổ sung nguồn (mục 6 đã lỗi thời: YouTube Help nay nêu mốc 01/02/2027 cho chia sẻ doanh thu Shorts). Sửa hai lỗi hiển thị: thẻ "Kênh mẫu sạch" hiện 0 (đọc sai khóa, nay 51) và thẻ "RPM Benchmark" gom nhầm số từ văn bản tự do (nay đọc đúng 3 ngách có "median", ghi rõ là benchmark ngành). Bổ sung sau rà soát độc lập: 16/256 bản ghi kênh có `url` hỏng (15 thiếu `@`, 1 sai chữ `@사풌의어두운심리학`), khiến 11 thẻ kênh đang sống dẫn vào trang 404 và là nguyên nhân khả dĩ của 4 cờ "404 đối soát đa nguồn 2026-10-09" của commit `a97383a` (4 kênh Hàn đó thêm mới với URL thiếu `@`); đã chuẩn hóa 16 URL về `youtube.com/<handle>` và kiểm 16/16 trả đúng. 4 trong 8 kênh lật cờ sống từng bị yt-dlp gắn `CHANNEL_DELETED_404` ngày 29/09 (`mark_dead_channels.js` chạy lại sẽ gắn cờ chết lại). `lyDo` của ngách phúc lộc Hàn và dòng "11 ngách Xanh chuẩn" trong `chien-luoc.json` đã sửa. Số liệu: 188/68 → 194/62 kênh, ngách xanh 11 → 10. Chưa kiểm lại: điều kiện "đăng trong 30 ngày", nhãn thị trường so với nội dung video, từ vựng ngách (3 bộ tên).
+
+
+- **Chip và nút lẻ:** phần tử lẻ cuối hàng giãn cả hàng ở hàng chip (#content), nhóm Ngách và nút "Đi nhanh" (641–820 px). Mồ côi 36 → 2 trên 60 tổ hợp route × cỡ; còn /tai-lieu 360 và 390 ("Đi nhanh" trên điện thoại).
+- **Thẻ kênh (Kênh mẫu):** thẻ lẻ cuối hàng chiếm cả hàng.
+- **Trang bài học:** thẻ hai tài liệu chia hai cột; thẻ ba tài liệu: nút thứ ba chiếm cả hàng.
+- **Tab học (/learn.html, /lotrinh) ở 390 px:** lưới 2×2; mồ côi 1 → 0 ở 360 và 390 px.
+- **Kiểu chữ:** bỏ bậc 2xs (11 px) khỏi `tailwind.config.js` và `design-system/tokens.json`; năm khai báo 11 px đổi sang 12 px; xóa luật `.text-2xs` trong `assets/tailwind.css`. Không dựng lại Tailwind (file lệch 38 class).
+- **Phiên bản tài nguyên:** `uifix68` (index 21, learn 10, player 10, sw.js 1).
+- **Chưa xong:** nhãn KPI ở 390 px (M4), vùng chạm dưới 44 px chưa nhóm (DoD-3), thiết bị thật (M5, BLOCKED), quyền sở hữu thay đổi ngoài phạm vi (M7).
+
+## 2026-10-09 (đợt 5) — NGHIỆM THU E2E TOÀN BỘ 144 VIDEO (PART 1 ĐẾN PART 8) & CHUẨN HÓA VẬT LÝ, DỮ LIỆU, ĐỒNG BỘ MANIFEST (nhánh `ui/ui-standard-2026-10-09`)
+
+- **Nghiệm thu E2E tự động qua Playwright (Chromium 1440x900):** Đã kiểm định toàn diện 144/144 video (Part 1 đến Part 8: SKU `VIDEO-d20f6c` đến `VIDEO-a59a5e`), tỷ lệ **144/144 ALL PASS (100%)**, 0 Console Errors, 0 Page Errors. Tương tác DOM thực tế: tua video qua click seek câu thoại phụ đề mượt mà, chuyển đổi trạng thái nút `#btnWatched` (Đã học / Chưa học) chuẩn xác, tải phụ đề TXT/SRT đầy đủ.
+- **Chuẩn hóa Thumbnail PNG HD 100%:** Dùng FFmpeg trích xuất khung hình gốc từ các video MP4/WEBM, chuyển đổi toàn bộ 144 video sang định dạng PNG HD (`assets/thumbs/<sku>.png`), không còn tham chiếu `.jpeg` cũ.
+- **Khảo sát thực nghiệm HTTP 256 kênh đối thủ mẫu:** Rà soát mã phản hồi HTTP của toàn bộ kênh đối thủ, phân loại chính xác **188 kênh LIVE (HTTP 200)** và **68 kênh DEAD 404** (bao gồm `@gyakkyoyori_risukatsu` ở Bài 140 và `@HopeGarden-KR` ở Bài 144). Gắn cờ `dead: true` và `deadNote` trong catalog; giao diện player hiển thị badge đỏ `DIE` và gạch ngang tên kênh để làm bài học thực chiến né rủi ro bản quyền/bị khóa kênh.
+- **Chuẩn hóa Insights & SOP né quét AI:** 144/144 video đều đạt chuẩn $\ge 5$ Mấu chốt bài giảng (Key Takeaways), đủ 5 bước Kỹ thuật edit & SOP né quét AI chi tiết (> 500 – 1.385 ký tự, loại bỏ hoàn toàn các chuỗi tóm tắt fallback ngắn), và $\ge 3$ Rào chắn phòng thủ & Tránh gậy (Avoid Flags). Đồng bộ đồng nhất trên `data/video_insights.json`, `data/catalog_full.json` và các hồ sơ `docs/<sku>/README.md`.
+- **Master SQLite Database WAL & FTS5 Index:** Chạy `scripts/build_master_db.js` ingest đầy đủ 144 Lessons, 638 Timestamps, 386 Competitor Channels, 1.421 Top Videos, 300 Documents, 27 Reup Sources, 177 Niches và **2.251 FTS5 search index entries**.
+- **Đồng bộ SSoT Manifest & 4 Core Quality Gates:**
+  - `scripts/sync-counts.js`: Cập nhật `data/counts-manifest.json` (videos: 144, documents: 300, channels: 256 [188 live, 68 dead], thumbFiles: 285).
+  - `scripts/validate-project.js`: **PASS** (144 videos, 256 channels, 60 kịch bản, 300 tài liệu, 284 thumbs).
+  - `scripts/gate-icons.js`: **ALL PASS** (48/48 icon resolve 100%, 225/225 parity).
+  - `scripts/gate-typography.js`: **ALL PASS** (100% 9 bậc font chuẩn, 0 arbitrary leak).
+  - `scripts/gate-shell.js`: **ALL PASS 6/6** (Desktop/Mobile trên index, learn, player).
+- **Tài liệu kiểm toán & Biên bản nghiệm thu:** Đầy đủ biên bản nghiệm thu độc lập từng phần tại `docs/reports/2026-10-09-part*-*.json` và cập nhật Live Runtime State tại `docs/WORKING_STATE.md`.
+
+## 2026-10-09 (đợt 4) — UI-STANDARD ĐỢT 1: CÂN ĐỐI BỐ CỤC VÀ KIỂU CHỮ (commit `c22844d`, nhánh `ui/ui-standard-2026-10-09`)
+
+- **Kiểu chữ:** chữ 11 px đổi thành 12 px (`text-2xs` → `text-xs`, bỏ token `--h2-font-2xs`). Đo lại trên các route đã kiểm: 0% chữ 11 px.
+- **Thứ bậc tiêu đề:** nhóm và thẻ h2 cỡ 13–14 px đổi sang h3; hai mục của trang bài học dùng h2. Không còn nhảy cấp trên các route đã kiểm.
+- **Vùng chạm:** nút chính sách, nút tài liệu và tiêu đề bài học tối thiểu 24 px. Khối điều khiển bài học 44 px trên màn hình rộng, cùng cỡ với nút điều hướng và với bản tablet.
+- **Tab Video trên điện thoại:** ô Ngách cả hàng, Thị trường và Sắp xếp chia đôi, ba nút trạng thái cùng cỡ, lưới chip đều.
+- **Bộ lọc ngách:** tham số `skus` giữ bộ lọc trên URL để tải lại và Back vẫn đúng kết quả.
+- **Chữ bị cắt:** lớp dùng chung trong `h2dev-core.js` gắn title cho chữ bị cắt; chip mốc thời gian của bài học có title trong template.
+- **Tràn ngang trên điện thoại:** khối music studio, bảng tăng trưởng raw kênh, dải chip lọc, dải tab trang Lộ trình.
+- **Phiên bản tài nguyên:** `uifix67` (index, learn, player, service worker).
+- Chi tiết và số đo: `docs/reports/2026-10-09-ui-standard-round1.md`. Bài học: `docs/solutions/2026-10-09-ui-standard-round1.md`. Kế hoạch vòng 2: `docs/plans/ui-standard-round2.md`.
+
+## 2026-10-09 (đợt 3) — ĐỒNG BỘ SỐ LIỆU `intelligence.db` SAU LẦN CRAWL 01:57:28
 
 - **`data/intelligence.db` nhận 1 lần crawl lúc 01:57:28 (UTC+7), user chọn giữ dữ liệu:** do một lệnh GET `/api/intelligence/spider` trong lúc audit UI (route này chạy `scripts/spider_graph_engine.js` và GHI DB). Dấu thời gian 01:57:28: 15 channels + 216 videos được ghi/cập nhật (upsert), 51 cowatch edges thêm mới. Tổng sau crawl: channels 196 → **202** (+6), videos 2.436 → **2.557** (+121), cowatch_edges 1.334 → **1.385** (+51), `is_breakout = 1` 171 → **178**; `integrity_check` ok, `foreign_key_check` 0 dòng. Docs đã đồng bộ: `knowledge-hub/docs/H2DEV-MASTER-OPERATING-PROMPT.md` L38 (52 channels / 410 edges → số đo mới; FTS5 2.003 → 2.014). Chưa có gate tự động cho số đếm `intelligence.db` (`sync-counts.js` chỉ kiểm `h2dev_master.db`).
 

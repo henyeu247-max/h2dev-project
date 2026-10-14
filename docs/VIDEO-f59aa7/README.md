@@ -2,39 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-f59aa7`
-- **Tiêu đề:** VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb
-- **Chủ đề thực tế:** VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 43:08
-- **Dung lượng MP4:** 58.0 MB
-- **File Video:** [`video/VIDEO-f59aa7/VIDEO-f59aa7.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-f59aa7/VIDEO-f59aa7.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-f59aa7.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-f59aa7.png)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/vip-tu-duy-nhan-ban-thi-truong-va-huong-dan-tu-a-z-cach-lam-edit-va-thumb](https://h2dev.vn/learn/study/vip-tu-duy-nhan-ban-thi-truong-va-huong-dan-tu-a-z-cach-lam-edit-va-thumb)
+- **Bài học:** #116
+- **Tiêu đề bài giảng:** VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb
+- **Thị trường mục tiêu:** 🇯🇵 Nhật
+- **Ngách nội dung:** Sức Khỏe & Dinh Dưỡng
+- **Thumbnail:** `assets/thumbs/VIDEO-f59aa7.png`
+- **Trạng thái DRM:** Có bảo vệ bản quyền
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/vip-tu-duy-nhan-ban-thi-truong-va-huong-dan-tu-a-z-cach-lam-edit-va-thumb)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Tư duy lách thị trường (US vs JP): Thị trường Hoa Kỳ cạnh tranh rất cao dù RPM cao (khoảng 8 đến 10 USD). Chuyển sang nhân bản ở thị trường Nhật Bản (JP) thì mức độ cạnh tranh thấp hơn, dễ thở hơn cho anh em.
-- Đấy, như vậy rất là ok không
-- Bởi vì như kia thì nó sẽ khiến cho người xem khá nhìn hơn và họ sẽ ít click hơn nha mọi người
-- Nhân bản thị trường không lo trùng lặp kịch bản: Khi làm cùng thị trường US thì phải đổi 60% kịch bản đối thủ, nhưng khi nhân bản sang thị trường khác (như Nhật Bản) chỉ cần dịch kịch bản chuẩn và tinh chỉnh lại qua AI là có thể triển khai ngay.
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **Kênh Nhân Bản Đa Thị Trường (US - JP - KR)**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Tư duy nhân bản thị trường đỉnh cao: Một ý tưởng nội dung nhân bản ra Mỹ, Hàn, Nhật x3 doanh thu.
+2. Thị trường Mỹ đem lại lượt xem khổng lồ, thị trường Nhật và Hàn đem lại mức RPM kỷ lục.
+3. Chiến lược địa phương hóa ngôn ngữ và văn hóa phù hợp với tâm lý từng quốc gia.
+4. Xây dựng template dựng video linh hoạt, thay thế voiceover và phụ đề trong 15 phút.
+5. Tùy biến phong cách thumbnail theo gu thẩm mỹ đặc trưng của từng nền văn hóa.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ừ rồi Ok em xin chào tất cả mấy bác nha Thì hôm nay em sẽ hướng d…
-  - `03:07` — thì que thị trường Nhật Bản thì mọi người sẽ được nem ương cho em…
-  - `05:57` — Thì về cùng một thị trường á
-  - `07:59` — Rồi sau đó nó không có được
-  - `10:52` — em dịch ra là như thế nha
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> PROMPT TRAIN CHATGPT
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Viết kịch bản gốc tiếng Anh chuẩn mực làm tài liệu cốt lõi (Master Script).
+- 2. Dùng AI dịch thuật sang tiếng Nhật (kính ngữ chuẩn) và tiếng Hàn (kính ngữ trang trọng).
+- 3. Lồng ghép track voiceover tương ứng vào template đã thiết lập sẵn trên timeline dựng.
+- 4. Cân chỉnh độ dài các đoạn video phù hợp với tốc độ đọc của từng thứ tiếng.
+- 5. Xuất đồng thời 3 phiên bản video với metadata bản ngữ chuẩn xác cho từng kênh.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh dịch thô bằng công cụ dịch tự động khiến câu cú ngô nghê, mất đi sắc thái văn hóa.**
+2. **Tránh dùng cùng một mẫu thumbnail phong cách phương Tây cho thị trường Nhật/Hàn.**
+3. **Tránh đăng chung các video đa ngôn ngữ lên cùng một kênh (phải tách kênh độc lập).**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **PROMPT TRAIN CHATGPT**: [Tải file / Xem liên kết](https://docs.google.com/document/d/1QZZ16kd7eXbAkA-G5V0Ws4Wvv_iPe3Nr/edit?usp=sharing&ouid=103446946492928743175&rtpof=true&sd=true)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-f59aa7/transcript.txt)

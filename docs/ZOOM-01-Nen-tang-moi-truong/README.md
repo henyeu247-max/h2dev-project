@@ -32,3 +32,12 @@ Buổi Zoom 1/4 — Quy trình xây kênh YouTube A–Z: **Proxy, Gmail, Tạo k
 - [ ] Ngâm Gmail 1–2 ngày
 - [ ] Lập kênh → ngâm 2–3 ngày
 - [ ] Song song sản xuất video
+
+
+### Kỹ thuật Edit & SOP né quét AI
+**Mấu chốt bài giảng:** SOP thiết lập hạ tầng môi trường trình duyệt sạch, proxy dân cư và quy trình nuôi Gmail kháng quét:
+- Bước 1 (Thiết lập Antidetect Browser & Fingerprint sạch): Cấu hình profile trình duyệt chuyên dụng (GPM / MKT Browser) với User-Agent khớp hệ điều hành thật, tắt WebRTC leak, giả lập thông số Canvas, AudioContext và WebGL chuẩn xác.
+- Bước 2 (Gán Proxy IPv4 dân cư tĩnh riêng biệt): Sử dụng Proxy IPv4 Private/Residential có độ tin cậy cao (ISP sạch), kiểm tra điểm gian lận (Fraud Score < 15) trên whoer.net và iphey.com trước khi đăng nhập tài khoản.
+- Bước 3 (Quy trình nuôi tương tác Gmail tự nhiên): Nuôi mail 5-7 ngày bằng các hành vi người dùng thật: Xem video theo sở thích, đăng ký nhận tin bản tin báo chí, để lại bình luận văn minh, tránh hành vi click dồn dập bất thường.
+- Bước 4 (Thiết lập bảo mật 2 lớp 2FA bằng Authenticator): Kích hoạt xác thực 2 bước bằng ứng dụng Google Authenticator độc lập, lưu trữ mã khôi phục dự phòng (Backup codes) an toàn, tuyệt đối không dùng số điện thoại rác thuê ảo.
+- Bước 5 (Quy trình ngâm kênh & Xác minh tính năng nâng cao): Tạo kênh thương hiệu (Brand Account), ngâm kênh 7-14 ngày trước khi đăng video đầu tiên; thực hiện xác minh video khuôn mặt (Video verification) để mở khóa full tính năng tải video dài và gắn link ngoài.

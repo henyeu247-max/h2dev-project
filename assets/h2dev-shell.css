@@ -58,7 +58,7 @@
   background: var(--brand);
   color: var(--brand-fg);
   font-family: var(--font-mono);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   font-weight: var(--h2-fw-bold);
   line-height: 1;
 }
@@ -75,7 +75,7 @@
 .h2-shell-brand__wordmark em { color: var(--brand); font-style: normal; }
 .h2-shell-brand__tag {
   display: block;
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   color: var(--fg-faint);
   line-height: var(--h2-lh-heading);
 }
@@ -144,7 +144,7 @@ a.h2-shell-brand .vd-wordmark {
   padding: var(--h2-space-3) var(--h2-space-6) var(--h2-space-4);
   border-top: 1px solid var(--hairline);
   color: var(--fg-faint);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   line-height: var(--h2-lh-heading);
 }
 @media (max-width: 639px) {
@@ -208,6 +208,10 @@ html { scrollbar-gutter: stable; }
 }
 @media (max-width: 639px) {
   .h2-shell-backtotop { right: var(--h2-space-3); bottom: 76px; }
+}
+/* UI-fix 2026-10-09: thanh dieu huong duoi hien tu 1024px tro xuong (cao 56px, z-index 100) nen nut "Cuon len dau trang" o bottom 16px bi che (chi con 4px lo ra). Trang co thanh dieu huong thi nang nut len tren thanh. */
+@media (max-width: 1024px) {
+  body:has(.vd-bottom-nav) .h2-shell-backtotop { bottom: 76px; }
 }
 
 /* ==========================================================================
@@ -295,7 +299,7 @@ html { scrollbar-gutter: stable; }
   border: 0;
   color: var(--fg-faint);
   font-family: var(--font-sans);
-  font-size: var(--h2-font-2xs);
+  font-size: var(--h2-font-xs);
   font-weight: var(--h2-fw-medium);
   line-height: 1.2;
   cursor: pointer;

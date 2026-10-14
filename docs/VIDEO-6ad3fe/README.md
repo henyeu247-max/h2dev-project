@@ -2,38 +2,38 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-6ad3fe`
-- **Tiêu đề:** FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026
-- **Chủ đề thực tế:** FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Toàn cầu / Ngoại (Mã: `GLOBAL`)
-- **Thời lượng:** 04:28
-- **Dung lượng MP4:** 21.2 MB
+- **Bài học số:** Bài 67 (Part 4)
+- **Tiêu đề bài giảng:** FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thị trường mục tiêu:** 🇨🇳 Trung
+- **Thời lượng:** N/A
+- **Dung lượng MP4:** 22218451
 - **File Video:** [`video/VIDEO-6ad3fe/VIDEO-6ad3fe.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-6ad3fe/VIDEO-6ad3fe.mp4)
 - **Ảnh đại diện:** [`assets/thumbs/VIDEO-6ad3fe.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-6ad3fe.png)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/fix-loi-noi-dung-khong-trung-thuc-chinh-sach-moi-nhat-2026](https://h2dev.vn/learn/study/fix-loi-noi-dung-khong-trung-thuc-chinh-sach-moi-nhat-2026)
+- **File Phụ đề bóc tách:** [`video/VIDEO-6ad3fe/transcript.txt`](file:///d:/YTB/H2DEV-Project/video/VIDEO-6ad3fe/transcript.txt)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Tiếp theo thì em nói thêm về lại cái vấn đề là lỗi không trung thật 2026 này nha mọi người
-- Thì em cũng có để cá lên riêng một clip nói về vấn đề này rồi thì mọi người có thể xem lại nha
-- Em nghĩ là chắc chắn mọi người cũng xem hết rồi đấy
-- Rồi bây giờ thì quay lại với cái kênh lúc nãy nè
+## 2. Chiến Lược Cốt Lõi & Mấu Chốt Bài Giảng (5 Key Takeaways)
+- Chính sách mới của YouTube 2026 quy định cực kỳ chặt chẽ về việc gắn nhãn nội dung do AI tạo ra hoặc chỉnh sửa (Altered/Synthetic Content).
+- Kênh bị quét lỗi 'Nội dung không trung thực' chủ yếu do lạm dụng hình ảnh/giọng đọc AI giả mạo người thật hoặc thông tin sai lệch.
+- Khai báo trung thực trên YouTube Studio là bước phòng thủ đầu tiên giúp bảo vệ kênh không bị tắt kiếm tiền đột ngột.
+- Bổ sung dấu ấn con người (Human Touch) vào video thông qua lời bình luận cá nhân, góc nhìn phân tích riêng và edit thủ công.
+- Sử dụng âm thanh và âm nhạc có bản quyền hợp pháp từ YouTube Audio Library hoặc dịch vụ uy tín để tránh gậy bản quyền kép.
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 3. Quy Trình Sản Xuất & Kỹ Thuật Edit SOP (Né Quét AI 2026)
+- Bước 1: Trong quá trình upload video trên YouTube Studio, tích chọn đúng mục 'Nội dung đã chỉnh sửa' nếu dùng AI tạo khuôn mặt/sự kiện thực tế.
+- Bước 2: Xử lý giọng đọc AI: điều chỉnh nhịp thở, ngữ điệu ngắt nghỉ tự nhiên, tránh để giọng đều đều như robot đọc văn bản.
+- Bước 3: Lồng ghép tối thiểu 20 - 30% tư liệu thực tế (ảnh chụp thật, tài liệu lịch sử, báo chí chính thống) bên cạnh ảnh AI.
+- Bước 4: Chèn watermark nhận diện thương hiệu kênh và outro cảm ơn khán giả thể hiện rõ kênh có người vận hành thật.
+- Bước 5: Định kỳ kiểm tra tab Kiếm tiền (Earn) và Tình trạng kênh (Channel Status) để kịp thời xử lý cảnh báo nếu có.
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Rồi bây giờ thì quay lại với cái kênh lúc nãy nè
-- **Bổ sung:** Thì kênh này thì bạn này đang edit bị theo cái dạng như kênh đối thủ rồi mọi người
+## 4. Cảnh Báo Đỏ & Lỗi Cần Tránh (3 Avoid Flags)
+- ⚠️ Tránh làm nội dung AI giả mạo tin tức thời sự chính trị, thiên tai hoặc người nổi tiếng phát biểu sai sự thật.
+- ⚠️ Không cố tình che giấu việc sử dụng AI khi làm các chủ đề liên quan trực tiếp đến sức khỏe hoặc tài chính (YMYL).
+- ⚠️ Tuyệt đối không dùng cùng một giọng đọc AI mặc định của các tool miễn phí cho hàng chục video liên tiếp.
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Nhưng mà mình phải có biện pháp về cách tối ưu nhất để tán hạn chế là tốt nhất nha mọi người
-- ⚠️ Đó, thì như vậy thì nó phải quét thôi mọi người, nên là nó phải làm ghét
+## 5. Kênh Mẫu & Đối Thủ Phân Tích
+- Không có kênh mẫu đối thủ đính kèm trong bài này.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ok tiếp theo thì em nói thêm về lại cái vấn đề là lỗi không trung…
-  - `00:38` — Nhưng mà cái vấn đề mà nó quét lỗi
-  - `01:27` — để giáo dục này kia và mang giá trị nha mọi người
-  - `02:41` — Còn mọi người nếu mà chưa xem video mà nói về lỗi không đúng trực…
-  - `03:35` — không mang giết trị cho người xem
-
+## 6. Tài Liệu & Công Cụ Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026**: [docs/VIDEO-6ad3fe/README.md](docs/VIDEO-6ad3fe/README.md) (docs/VIDEO-6ad3fe/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 67**: [video/VIDEO-6ad3fe/transcript.txt](video/VIDEO-6ad3fe/transcript.txt) (video/VIDEO-6ad3fe/transcript.txt)

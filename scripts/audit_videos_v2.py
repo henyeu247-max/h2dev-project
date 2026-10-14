@@ -481,7 +481,13 @@ def audit_one(sku, ctx):
         a["coverage_to_end_pct"] = round(max_end / real_dur * 100, 1)
         if max_end > real_dur + 0.5:
             issues.append("A8b: segment vuot thoi luong that %.1fs" % (max_end - real_dur))
-        if max_end / real_dur < MIN_COVERAGE:
+        # Duoi im lang that (silencedetect cham ket thuc video) khong can phu de: tinh la da phu.
+        eff_end = max_end
+        for _rg in (silence.get("silence_regions") or []):
+            if _rg.get("end", 0) >= real_dur - 1.0 and _rg.get("start", real_dur) <= max_end + 1.0:
+                eff_end = max(eff_end, _rg.get("end", real_dur))
+        a["coverage_effective_pct"] = round(eff_end / real_dur * 100, 1)
+        if eff_end / real_dur < MIN_COVERAGE:
             issues.append("A8c: phu chi %.1f%% thoi luong" % (max_end / real_dur * 100))
 
         # mat do loi noi: bo qua khoang lang that

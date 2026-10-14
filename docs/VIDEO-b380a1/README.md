@@ -2,41 +2,46 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-b380a1`
-- **Tiêu đề:** Share Key (ngách cực nhỏ) view Việt mới và hướng dẫn tự tạo prompt lấy kịch bản theo chủ yếu bất kỳ - UPDATE 8/8/2025
-- **Chủ đề thực tế:** Share Key (ngách cực nhỏ) view Việt mới và hướng dẫn tự tạo prompt lấy kịch bản theo chủ yếu bất kỳ - UPDATE 8/8/2025
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Nhật Bản (Mã: `JP`)
-- **Thời lượng:** 33:09
-- **Dung lượng MP4:** 518.4 MB
-- **File Video:** [`video/VIDEO-b380a1/VIDEO-b380a1.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-b380a1/VIDEO-b380a1.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-b380a1.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-b380a1.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/share-key-ngach-cuc-nho-view-viet-moi-va-huong-dan-tu-tao-prompt-lay-kich-ban-theo-chu-yeu-bat-ky-update-882025](https://h2dev.vn/learn/study/share-key-ngach-cuc-nho-view-viet-moi-va-huong-dan-tu-tao-prompt-lay-kich-ban-theo-chu-yeu-bat-ky-update-882025)
+- **Bài học:** #117
+- **Tiêu đề bài giảng:** Share Key (ngách cực nhỏ) view Việt mới và hướng dẫn tự tạo prompt lấy kịch bản theo chủ yếu bất kỳ - UPDATE 8/8/2025
+- **Thị trường mục tiêu:** 🇻🇳 Việt
+- **Ngách nội dung:** Prompt AI & Nhân Bản Kịch Bản
+- **Thumbnail:** `assets/thumbs/VIDEO-b380a1.png`
+- **Trạng thái DRM:** Miễn phí
+- **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/share-key-ngach-cuc-nho-view-viet-moi-va-huong-dan-tu-tao-prompt-lay-kich-ban-theo-chu-yeu-bat-ky-update-882025)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Tốc độ tăng sub thần tốc ngách sức khỏe người già: Kênh theo dõi 4 ngày trước mới 10.000 sub, nay đã nhảy vọt lên hơn 20.000 – 25.000 sub chứng minh tệp khán giả cao tuổi cắn view và đăng ký cực mạnh.
-- Dạng content người già cắn view cao: Lên sub rất nhanh và ổn định, khán giả lớn tuổi có thói quen bấm theo dõi để nghe đều đặn.
-- Về là chủ đề là người già, về sức khỏe, kiểu như nói chung là đủ tuổi người già anh em
-- Nhưng mà cái ngách đó là cái ngách lớn
+---
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 2. Kênh Đối Thủ Phân Tích Thực Chiến
+- **Radio Đạo và Đời (Kênh ngách nhỏ view Việt)**
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** 000 sub thôi bây giờ là hơn 20 25
-- **Bổ sung:** 000 sub luôn anh em ạ dạng này bây giờ nó lên xuống về cái sub nó lên rất cao nha Đấy, mọi người thấy không
-- **Bổ sung:** Xin biến chào các bạn đã quay trở lại với kênh Radio Đạo và Đời
+---
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh làm ngách chung chung không có điểm nhấn: Ngách sức khỏe người già là ngách lớn, nếu không đi sâu vào ngách con cụ thể (thói quen, tuổi tác, nỗi sợ) thì view sẽ rất thấp.
-- ⚠️ Không lấy video cũ quá 1 tháng: Phải ưu tiên kịch bản từ video mới nhất vừa nổ view (2–3 ngày gần nhất) của kênh đối thủ để thuật toán YouTube dễ cắn đề xuất.
+## 3. Mấu Chốt Bài Giảng (5 Key Takeaways)
+1. Ngách nhỏ view Việt: Dễ tiếp cận khán giả trong nước, lượt xem tăng trưởng nhanh và ổn định.
+2. Bóc tách kênh mẫu Radio Đạo và Đời với các video hàng trăm nghìn view chỉ sau vài ngày.
+3. Công thức xây dựng Prompt Master để AI tự động phân tích và tạo kịch bản theo bất kỳ chủ đề nào.
+4. Nghệ thuật chạm vào lòng trắc ẩn và đạo lý làm người qua các câu chuyện đời thường xúc động.
+5. Thiết kế thumbnail chữ lớn màu vàng trên nền Phật giáo hoặc không gian đạo đời trang nghiêm.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Ừ rồi em xin chào tất cả mọi người nha thì ở cái video này em sẽ …
-  - `06:37` — Thì bây giờ đợi một tí nha anh em
-  - `14:03` — Nên em tạo tới chỗ này thôi
-  - `20:20` — Đấy
-  - `27:48` — Rồi đơn giản là như vậy thôi nha mọi người
+---
 
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> PROMPT TRAIN
+## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+- 1. Nạp kịch bản đối thủ vào Prompt Master để bóc tách thông điệp nhân văn cốt lõi.
+- 2. Yêu cầu AI sáng tạo kịch bản mới với các nhân vật và bối cảnh làng quê Việt Nam gần gũi.
+- 3. Chọn giọng đọc AI tiếng Việt truyền cảm, ấm áp (giọng nam miền Bắc hoặc nữ miền Nam).
+- 4. Lồng nhạc thiền hoặc tiếng đàn tranh nhẹ nhàng ở mức âm lượng dịu êm -24 dB.
+- 5. Chèn phụ đề lớn ở giữa màn hình với hiệu ứng hiện chữ trang nhã theo nhịp đọc.
+
+---
+
+## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh bịa đặt chuyện tâm linh nhảm nhí hoặc đơm đặt chuyện đạo đức giả tạo.**
+2. **Tránh sử dụng hình ảnh chất lượng thấp mờ nhòe gây phản cảm cho người xem.**
+3. **Tránh đặt tiêu đề đụng chạm đến tín ngưỡng tôn giáo gây tranh cãi gay gắt.**
+
+---
+
+## 6. Danh Mục Tài Liệu Đính Kèm
+- **Prompt Train Kịch Bản Ngách Nhỏ View Việt (Google Docs)**: [Tải file / Xem liên kết](https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit?tab=t.0)
+- **Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)**: [Tải file / Xem liên kết](video/VIDEO-b380a1/transcript.txt)

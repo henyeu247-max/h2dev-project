@@ -2,37 +2,39 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-e25d3b`
-- **Tiêu đề:** HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT
-- **Chủ đề thực tế:** HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Hàn Quốc (Mã: `KR`)
-- **Thời lượng:** 06:24
-- **Dung lượng MP4:** 82.0 MB
+- **Bài học số:** Bài 74 (Part 4)
+- **Tiêu đề bài giảng:** HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT
+- **Ngách nội dung:** Bán Content & Phát Triển Kênh
+- **Thị trường mục tiêu:** 🇰🇷 Hàn,🇺🇸 Mỹ
+- **Thời lượng:** N/A
+- **Dung lượng MP4:** 85959689
 - **File Video:** [`video/VIDEO-e25d3b/VIDEO-e25d3b.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-e25d3b/VIDEO-e25d3b.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-e25d3b.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-e25d3b.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-moi-07-03-2026-hop-tac-kenh-va-share-ngach-nho-thi-truong-han-us-my-cuc-trends-moi-nhat](https://h2dev.vn/learn/study/update-moi-07-03-2026-hop-tac-kenh-va-share-ngach-nho-thi-truong-han-us-my-cuc-trends-moi-nhat)
+- **Ảnh đại diện:** [`assets/thumbs/VIDEO-e25d3b.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-e25d3b.png)
+- **File Phụ đề bóc tách:** [`video/VIDEO-e25d3b/transcript.txt`](file:///d:/YTB/H2DEV-Project/video/VIDEO-e25d3b/transcript.txt)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Nội dung bài học chia sẻ về chủ đề: HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT.
+## 2. Chiến Lược Cốt Lõi & Mấu Chốt Bài Giảng (5 Key Takeaways)
+- Thị trường Hàn Quốc và Mỹ (US) là hai mỏ vàng có doanh thu RPM cao nhất thế giới trong mảng chăm sóc sức khỏe và thể dục dưỡng sinh.
+- Kênh Doctor Lee và Light Yoga with Natalie chứng minh rằng khán giả phương Tây và Hàn Quốc rất chuộng các bài tập đơn giản tại nhà.
+- Nội dung tập trung vào các động tác giãn cơ, bài tập giảm mỡ bụng, bài tập cho người ngồi văn phòng với hướng dẫn cực kỳ rõ ràng.
+- Hình ảnh video cần sự tối giản, sạch sẽ, tone màu sáng (pastel/white) tạo cảm giác an tâm và khoa học.
+- Hợp tác làm kênh cho 2 thị trường này mang lại dòng tiền ngoại tệ USD vững chắc nếu giải quyết được rào cản ngôn ngữ chuẩn bản địa.
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- `@DoctorDr.Lee-h9t` — [Xem kênh YouTube](https://www.youtube.com/@DoctorDr.Lee-h9t)
-- `@LightYogawithNatalie` — [Xem kênh YouTube](https://www.youtube.com/@LightYogawithNatalie)
+## 3. Quy Trình Sản Xuất & Kỹ Thuật Edit SOP (Né Quét AI 2026)
+- Bước 1: Phân tích 10 video nhiều view nhất của kênh Doctor Lee và Natalie để đúc kết các chủ đề người xem quan tâm nhất.
+- Bước 2: Viết kịch bản hướng dẫn bài tập chi tiết: tên động tác, thời gian thực hiện, lợi ích sức khỏe và lưu ý an toàn.
+- Bước 3: Tạo hình ảnh hoặc video minh họa động tác chuẩn xác giải phẫu bằng AI hoặc sử dụng B-roll bản quyền sạch.
+- Bước 4: Lồng tiếng tiếng Anh hoặc tiếng Hàn với ngữ điệu nhẹ nhàng, hướng dẫn nhịp hít thở theo từng động tác.
+- Bước 5: Chèn đồng hồ đếm ngược (Timer) trên màn hình và tiếng 'beep' báo hiệu chuyển động tác giúp người tập dễ theo dõi.
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+## 4. Cảnh Báo Đỏ & Lỗi Cần Tránh (3 Avoid Flags)
+- ⚠️ Tránh hướng dẫn các động tác quá khó hoặc nguy hiểm có thể gây chấn thương cho người tập lớn tuổi.
+- ⚠️ Không dùng thuật ngữ y khoa sai lệch hoặc đưa ra lời khuyên thay thế phác đồ điều trị của bác sĩ chuyên khoa.
+- ⚠️ Tránh dùng nhạc tập quá sôi động kiểu EDM phá hỏng không khí thư thái của các bài tập dưỡng sinh, phục hồi.
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 5. Kênh Mẫu & Đối Thủ Phân Tích
+- `@DoctorDr.Lee-h9t` *(LIVE)* — [Xem kênh YouTube](https://www.youtube.com/@DoctorDr.Lee-h9t)
+- `@LightYogawithNatalie` *(LIVE)* — [Xem kênh YouTube](https://www.youtube.com/@LightYogawithNatalie)
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Em chào mọi người nha, thì hôm nay em sẽ tiếp tục loay video shar…
-  - `01:26` — Cực kỳ là kinh luôn Tuyệt kỳ là kênh luôn. Mà cái kênh này đã áp dụng theo công thức là video là 4 phút 50p d…
-  - `03:21` — Đó, thì em muốn là
-  - `04:09` — Mọi người thấy lượt điện thoại không
-  - `05:21` — thôi mọi người ạ, đấy, như nào mà anh em
-
-## 7. Ghi Chú & Mô Tả Bài Giảng Từ Tác Giả
-> FORMS MUA KÊNH (CHO AE CÓ THIỆN CHÍ MUỐN MUA LÀM RIÊNG) - *(HIỆN TẠI KÊNH ĐÃ CÓ NGƯỜI MUA RỒI EM ĐÓNG FORM MỌI NGƯỜI NHÉ) LINK KÊNH ĐỐI THỦ TRONG VIDEO: KÊNH HÀN KÊNH VIEW US
+## 6. Tài Liệu & Công Cụ Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT**: [docs/VIDEO-e25d3b/README.md](docs/VIDEO-e25d3b/README.md) (docs/VIDEO-e25d3b/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 74**: [video/VIDEO-e25d3b/transcript.txt](video/VIDEO-e25d3b/transcript.txt) (video/VIDEO-e25d3b/transcript.txt)

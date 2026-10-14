@@ -2,37 +2,38 @@
 
 ## 1. Thông Tin Tổng Quan
 - **SKU:** `VIDEO-7f0bb4`
-- **Tiêu đề:** NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026
-- **Chủ đề thực tế:** NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026
-- **Ngách nội dung:** Phát Triển Kênh & Kỹ Thuật YouTube
-- **Thị trường mục tiêu:** Trung Quốc (Mã: `CN`)
-- **Thời lượng:** 04:13
-- **Dung lượng MP4:** 26.9 MB
+- **Bài học số:** Bài 68 (Part 4)
+- **Tiêu đề bài giảng:** NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026
+- **Ngách nội dung:** Kháng Bản Quyền & Xử Lý Lỗi GA
+- **Thị trường mục tiêu:** 🇨🇳 Trung
+- **Thời lượng:** N/A
+- **Dung lượng MP4:** 28246743
 - **File Video:** [`video/VIDEO-7f0bb4/VIDEO-7f0bb4.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-7f0bb4/VIDEO-7f0bb4.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-7f0bb4.jpeg`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-7f0bb4.jpeg)
-- **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/ngam-kenh-chuan-va-xac-minh-do-trust-manh-ngay-tu-khi-build-kenh-chuan-chinh-sach-moi-2026](https://h2dev.vn/learn/study/ngam-kenh-chuan-va-xac-minh-do-trust-manh-ngay-tu-khi-build-kenh-chuan-chinh-sach-moi-2026)
+- **Ảnh đại diện:** [`assets/thumbs/VIDEO-7f0bb4.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-7f0bb4.png)
+- **File Phụ đề bóc tách:** [`video/VIDEO-7f0bb4/transcript.txt`](file:///d:/YTB/H2DEV-Project/video/VIDEO-7f0bb4/transcript.txt)
 
-## 2. Chiến Lược Cốt Lõi & Key Takeaways
-- Tiếp theo với cái video này em nói về cái việc ngâm cơn và xác minh cơn nha
-- Thì đầu tiên thì mọi người đã upshifting cơn xong rồi á
-- Thì mọi người lưu ý phải nhớ không được quên là mọi người phải vô cái chỗ cơn này, mọi người vào cái bước là cái đặt năng cao này nè, điều kiện ve sử dụng này nè
-- Mọi người phải năng, mọi người phải xác minh cho nó là xanh hết đủ ve dòng nha mọi người
+## 2. Chiến Lược Cốt Lõi & Mấu Chốt Bài Giảng (5 Key Takeaways)
+- Quy trình ngâm kênh và tạo độ trust ban đầu quyết định 90% việc video đầu tiên có được phân phối vào luồng đề xuất hay bị 0 view.
+- Tài khoản Gmail mới lập cần được 'nuôi' từ 7 - 14 ngày trên thiết bị sạch (profile trình duyệt riêng, IP sạch) trước khi tạo kênh.
+- Thực hiện các hành vi người dùng thật hàng ngày: xem video cùng ngách, bấm like, comment có ý nghĩa, đăng ký kênh đối thủ.
+- Bật đầy đủ xác minh 2 bước (2FA) và hoàn tất Xác minh tính năng nâng cao (Advanced Features) bằng CCCD hoặc video khuôn mặt.
+- Đăng video đầu tiên với thông số metadata chuẩn chỉnh, không share link bừa bãi lên mạng xã hội để tránh kéo tệp rác.
 
-## 3. Kênh Mẫu & Đối Thủ Phân Tích
-- *Bài học tập trung vào kỹ thuật chung, tư duy tối ưu hoặc công cụ chỉnh sửa, không trích dẫn kênh đối thủ cụ thể.*
+## 3. Quy Trình Sản Xuất & Kỹ Thuật Edit SOP (Né Quét AI 2026)
+- Bước 1: Tạo profile Chrome/Brave riêng biệt, gắn proxy sạch hoặc dùng mạng gia đình ổn định để đăng ký Gmail.
+- Bước 2: Bật xác minh 2 bước bằng số điện thoại chính chủ, cập nhật email khôi phục an toàn.
+- Bước 3: Dành 5 - 7 ngày đầu mỗi ngày 30 phút lướt YouTube, tìm kiếm từ khóa liên quan đến ngách định làm và xem hết video.
+- Bước 4: Vào YouTube Studio -> Cài đặt -> Kênh -> Điều kiện sử dụng tính năng -> Kích hoạt đầy đủ 3 bậc tính năng.
+- Bước 5: Thiết lập ảnh đại diện, banner, mô tả kênh chuẩn SEO, sau đó ngâm thêm 24 giờ trước khi upload video đầu tiên.
 
-## 4. Quy Trình Sản Xuất & Edit SOP (Né Quét AI)
-- **Kỹ thuật chính:** Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học
-- **Bổ sung:** Chỉnh màu, lọc tạp âm và chèn phụ đề nổi bật
+## 4. Cảnh Báo Đỏ & Lỗi Cần Tránh (3 Avoid Flags)
+- ⚠️ Tránh tạo kênh và upload video ngay lập tức trong ngày đầu tiên lập Gmail, thuật toán sẽ gắn cờ spam bot.
+- ⚠️ Không đăng nhập một tài khoản trên quá nhiều IP lạ hoặc nhảy VPN liên tục khiến Gmail bị khóa xác minh.
+- ⚠️ Tránh đi spam link kênh hoặc video vào phần bình luận của các kênh lớn để câu view, dễ bị ăn gậy spam của YouTube.
 
-## 5. Cảnh Báo Đỏ & Lỗi Cần Tránh (Avoid Flags)
-- ⚠️ Tránh dùng công cụ tự động hàng loạt không có sự can thiệp và sáng tạo nội dung.
+## 5. Kênh Mẫu & Đối Thủ Phân Tích
+- Không có kênh mẫu đối thủ đính kèm trong bài này.
 
-## 6. Mốc Thời Gian (Timestamps) & Công Cụ Sử Dụng
-- **Timeline chi tiết:**
-  - `00:00` — Rồi tiếp theo với cái video này em nói về cái việc ngâm cơn và xá…
-  - `00:47` — Giá phép la xi á
-  - `02:01` — Bảo là không cần ngâm, đăng lên phát cao view liền này kia Thì thật sự cũng đúng nha mọi người, cái này không…
-  - `02:52` — Cả đặt kênh rồi này kia
-  - `03:34` — một người phở lốt luôn, chứ đâu phải là
-
+## 6. Tài Liệu & Công Cụ Đính Kèm
+- **Hồ sơ Kỹ thuật & SOP: NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026**: [docs/VIDEO-7f0bb4/README.md](docs/VIDEO-7f0bb4/README.md) (docs/VIDEO-7f0bb4/README.md)
+- **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 68**: [video/VIDEO-7f0bb4/transcript.txt](video/VIDEO-7f0bb4/transcript.txt) (video/VIDEO-7f0bb4/transcript.txt)

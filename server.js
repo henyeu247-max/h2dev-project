@@ -437,6 +437,8 @@ const server = http.createServer(async (req,res)=>{
     const absMatch = rawUrl.match(/^https?:\/\/[^/]+(\/.*)$/i);
     if (absMatch) rawUrl = absMatch[1];
     urlPath = decodeURIComponent(rawUrl.split('?')[0]);
+    // Gap G14 (2026-10-14): byte NUL (/%00) lam fs.stat nem loi dong bo, ket noi bi dong khong co phan hoi. Tra 400 nhu URI sai dinh dang.
+    if (urlPath.indexOf('\0') !== -1) throw new Error('NUL byte in path');
   } catch (err) {
     res.writeHead(400, {
       'Content-Type': 'text/plain; charset=utf-8',

@@ -1,6 +1,6 @@
 {
   "schema": "h2dev.counts-manifest.v1",
-  "generatedAt": "2026-10-09T04:23:28.422Z",
+  "generatedAt": "2026-10-14T11:15:27.196Z",
   "counts": {
     "videos": 144,
     "videoLessons": 140,
@@ -9,8 +9,9 @@
     "videoPro": 117,
     "documents": 300,
     "channels": 256,
-    "liveChannels": 194,
-    "deadChannels": 62,
+    "liveChannels": 187,
+    "deadChannels": 69,
+    "channelsWithNgayDo": 256,
     "canonicalRaw": 156,
     "canonicalRawUniqueChannels": 149,
     "kichBan": 60,

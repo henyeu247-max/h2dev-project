@@ -40,11 +40,11 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 
 ## Data hiện tại
 
-- **140 bài học** · ~23.52 GB (21.90 GiB) · ffprobe **140/140** có hình + audio (0 file 0 byte) · 27 free · 113 pro
+- **144 bài học** · ~23.95 GB (22.30 GiB) · ffprobe **144/144** có hình + audio (0 file 0 byte) · 27 free · 117 pro
 - **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/` và `ZOOM-00` (tài liệu quy trình, không phải bài học)
-- **300 tài liệu**: prompt 78 · report 20 · tool 23 · list 16 · other 11 · internal-doc 5 (gồm cẩm nang nhạc nền NOI-BO-MUSIC-01)
+- **300 tài liệu**: theo `kind` (đo 2026-10-14) prompt 77 · report 21 · tool 28 · list 14 · other 8 · internal-doc 5 · sop 14 · guide 49 · transcript 40 · sheet 4 · 40 chưa gán `kind` (giao diện tự suy ra loại); gồm cẩm nang nhạc nền NOI-BO-MUSIC-01
 - **49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe**: 36 SAFE (YPP) · 9 REVIEW · 4 COPYRIGHTED loại bỏ — quản lý tại `data/music_catalog.json` & cẩm nang `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`
-- **256 kênh mẫu** (194 sống · 62 dead 404 đã ẩn) · `ngay_do` 256/256
+- **256 kênh mẫu** (187 sống · 69 dead 404 đã ẩn) · `ngay_do` 256/256 (đo thực tế 2026-10-14 cả 256 kênh: 187 sống · 59 DIE 404 · 10 kênh rỗng 0 video; bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`)
 - **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)
 - 5 pipeline trong `pipelines/` (`hoat-hinh-ai`, `wildlife`, `ton-giao`, `everyday-history`, `bible-explainer`) · Knowledge Hub trong `knowledge-hub/`

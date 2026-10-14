@@ -2,6 +2,16 @@
 
 > Cập nhật cuối phiên: **2026-10-09** (cuối vòng 3). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
 
+## Phiên 2026-10-14 — sửa gaps (chi tiết: `CHANGELOG.md` mục 2026-10-14, báo cáo `docs/reports/2026-10-14-gap-audit.md`)
+- **Check-pass (đợt 4–5):** sửa 18 neo chết của `sync-counts` + số liệu cũ trong 5 tài liệu; đã xử lý 13 video mốc vượt thời lượng, 20 video thiếu mốc, 4 SKU mới thiếu tags/phụ đề, 1 `fileLocal` placeholder. `audit_videos_v2`: 140/144 clean, 4 issue còn lại là F2 (chưa có trên VPS — deploy); A8d = 0 (đợt 6). Chi tiết: `CHANGELOG.md` đợt 4 và 5.
+
+- Đã sửa và đo lại: G1, G2, G4, G5, G7, G10, G11, G14 (mã), G15. Toàn bộ gate + deep-ui 11/11 + g2 23/23 + find-404 sạch.
+- Đo thực tế 256/256 kênh (187 sống · 59 DEAD · 10 EMPTY) — G3 đóng; báo cáo `docs/reports/2026-10-14-kenh-mau-do-thuc-te.md`.
+- `server.js` (G14) đã nạp trong dịch vụ, đo lại: `/index.html%00.js` → 400.
+- G8, G9, G12 đã làm; G13 kiểm lại thì sai (thumb webp/jpeg đang được dùng) nên không dọn. Không còn gap mở. Handle và DB kênh mẫu đã đồng bộ với kết quả đo.
+- 10 file đang sửa dở thuộc việc khác (không phải của phiên này): `sw.js`, `content.js` (phần ngoài G5), `h2dev-components-lesson-row.css`, `kenh-mau.json`, `kich-ban.json`, `ngach-xanh.json`, `voice-dna-probe-final.json`, `index.html`, `learn.html`, `player.html`. Bản chụp tách riêng: `_backup/20261014-gap-fix/pre-existing.patch`.
+- Sau lần tải đầu, service worker có thể trả CSS/JS cũ — Ctrl+Shift+R.
+
 ## Đã xong
 
 - **UI-standard đợt 1:** commit `c22844d`, `f21837e`, `c984695` trên `ui/ui-standard-2026-10-09` (chưa push). Báo cáo `docs/reports/2026-10-09-ui-standard-round1.md`.

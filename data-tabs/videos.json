@@ -6119,7 +6119,10 @@
         "note": "Kênh phân tích thực chiến trong video VIDEO-0be6c9"
       }
     ],
-    "docsCount": 2
+    "docsCount": 2,
+    "tags": [
+      "Việt"
+    ]
   },
   {
     "sku": "VIDEO-a85eac",
@@ -6184,7 +6187,10 @@
         "note": "Kênh phân tích thực chiến trong video VIDEO-a85eac"
       }
     ],
-    "docsCount": 2
+    "docsCount": 2,
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-043d15",
@@ -6273,7 +6279,10 @@
         "note": "Kênh phân tích thực chiến trong video VIDEO-043d15"
       }
     ],
-    "docsCount": 7
+    "docsCount": 7,
+    "tags": [
+      "Hàn"
+    ]
   },
   {
     "sku": "VIDEO-a59a5e",
@@ -6332,6 +6341,9 @@
         "note": "Kênh phân tích thực chiến trong video VIDEO-a59a5e"
       }
     ],
-    "docsCount": 2
+    "docsCount": 2,
+    "tags": [
+      "Hàn"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 # LIVE RUNTIME STATE — D:\YTB\H2DEV-Project
 # Context Hierarchy Layer 4 | Single Source of Runtime Truth
-# Cập nhật lúc: 2026-09-30T22:30:00+07:00
+# Cập nhật lúc: 2026-10-14 (mục 1 và mục 3 đo lại ngày này; mục 2 đo 2026-09-30; mục 4 nghiệm thu 2026-10-09)
 
 > **Bản chất kỹ thuật:** File này ghi nhận trạng thái thực tế đang chạy (Live Reality) của hệ sinh thái `D:\YTB\H2DEV-Project`.
 > Mọi Agent khi bắt đầu phiên làm việc đọc file này để nắm ngay thực trạng runtime mà không cần quét lại từ đầu.
@@ -17,26 +17,26 @@
 
 - **Tập tin chân lý số liệu:** `data/counts-manifest.json` (tự động cập nhật qua `node scripts/sync-counts.js`).
 - **Tổng kho bài học (`videos.json`):** **144 bài** (140 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 117 Pro).
-  → nguồn: `data-tabs/videos.json` (Local = VPS = 140).
-- **Kiểm định media toàn vẹn:** **140/140 file** mp4/webm tồn tại, 0 file 0 byte. `audit_videos_v2.py` (đo lại 2026-09-30): **140/140 clean · 0 issues · 0 standards_gaps · 0 A8d**.
+  → nguồn: `data-tabs/videos.json` (đo lại 2026-10-14 trên máy local: 144).
+- **Kiểm định media toàn vẹn:** **144/144 file** mp4/webm tồn tại, 0 file 0 byte (`counts-manifest.mediaFiles`). `audit_videos_v2.py` (đo lại 2026-10-14): **140/144 clean · 4 issues · 0 standards_gaps · 0 A8d** — 4 issue còn lại đều là F2 (4 SKU mới nhập `043d15`, `0be6c9`, `a59a5e`, `a85eac` chưa có trên VPS: việc deploy). Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
   - `VIDEO-f59aa7`: ĐÃ PHỤC HỒI đủ tiếng — giải mã Widevine CENC (pipeline `scripts/download_full_drm_audio.cjs` + `scripts/get_drm_key.py`), 108.5 MB, mean_volume -22.0 dB; phụ đề 397 đoạn phủ toàn thời lượng 43:08.
   - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
   - Còn **36 review_flags** kiểm tay (không phải data hỏng): A10 19 (thumbnail ≠ nội dung theo vision) · S6 19 (takeaway neo transcript thấp) · S9 15 (xác nhận hình/tiếng bằng heuristic). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).
   → nguồn: `counts-manifest.mediaFiles` + `py -3 scripts/audit_videos_v2.py` + `data/media-review-queue.json`.
-- **Danh bạ kênh mẫu (`kenh-mau.json`):** **256 kênh** (194 live · 62 dead).
-  → nguồn: `data-tabs/kenh-mau.json` (Local = VPS = 165). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video (kiểm bằng mắt qua Chromium 2026-09-30); GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
+- **Danh bạ kênh mẫu (`kenh-mau.json`):** **256 kênh** (187 live · 69 dead).
+  → nguồn: `data-tabs/kenh-mau.json` (đo thực tế lại 2026-10-14, N/N: 256/256 có `ngay_do`; 187 sống · 59 DIE 404 · 10 kênh rỗng; chạy `scripts/probe-kenh-mau.py` rồi `scripts/classify-kenh-mau.py`, bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video (đối chiếu bằng trình duyệt thật 2026-10-14); GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).
   → nguồn: `counts-manifest.canonicalRaw` / `canonicalRawUniqueChannels`.
 - **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **300 tài liệu**.
-  → nguồn: `data-tabs/tai-lieu-full.json` (Local = VPS = **157**). *(Số cũ ghi 153 là SAI — đã sửa 2026-09-24.)*
-  Phân bố: 78 Prompts · 20 Reports · 23 Tools · 16 Lists · 11 Other · 5 Internal-doc · 4 khác.
+  → nguồn: `data-tabs/tai-lieu-full.json` (đo lại 2026-10-14: **300**).
+  Phân bố theo trường `kind` (đo 2026-10-14): 77 prompt · 21 report · 28 tool · 14 list · 8 other · 5 internal-doc · 14 sop · 49 guide · 40 transcript · 4 sheet · 40 chưa gán `kind` (giao diện suy ra loại từ tên/tệp, xem `classifyPrompt` trong `assets/app/tabs/content.js`).
 - **Ma trận ngách YouTube (`ngach-xanh.json`):** **34 ngách** (`xanh:true` **10** ngách).
-  → nguồn: `data-tabs/ngach-xanh.json` (Local = VPS = 34).
+  → nguồn: `data-tabs/ngach-xanh.json` (đo lại 2026-10-14: 34).
 - **Kho nhạc nền:** **49 tracks** đã audit Gemini Multimodal & FFprobe (36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng).
   → nguồn: rule workspace SSoT + `data/music_catalog.json`. *(Số cũ ghi 38 là SAI — đã sửa 2026-09-24.)*
 - **Master SQLite Database:** **2.251 entries** FTS5 trong `h2dev_master.db`.
   → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **2251**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
-  Bảng kèm theo: `lessons` 144 · `lesson_timestamps` 638 · `competitor_channels` 386 · `competitor_top_videos` 1421 · `documents` 300 · `reup_sources` 27 · `niches` 177.
+  Bảng kèm theo: `lessons` 144 · `lesson_timestamps` 793 · `competitor_channels` 386 · `competitor_top_videos` 1421 · `documents` 300 · `reup_sources` 27 · `niches` 177.
 
 ### 1.1. NHẬT KÝ HIỆU CHỈNH SỐ LIỆU (2026-09-24)
 
@@ -66,7 +66,7 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
 ---
 
 ## 3. TRẠM VŨ KHÍ TÁC CHIẾN (SKILLS & PIPELINES)
-- **13 Agent Skills chuyên dụng:** Sẵn sàng tại `D:\YTB\.agents\skills\` và tích hợp vào `scripts/h2dev_master_producer.py`.
+- **Skill chuyên dụng `h2dev-*`:** nằm trong kho skill chung `~/.agents/source/skills/` (đồng bộ ra mọi tool bằng `~/.agents/sync/agents_sync.py`); thư mục `D:\YTB\.agents\skills\` không còn tồn tại (đo 2026-10-14). Các script sinh nội dung vẫn được `scripts/h2dev_master_producer.py` điều phối.
 - **5 thư mục pipeline** tại `D:\YTB\H2DEV-Project\pipelines\` — mức độ sẵn sàng THẬT (đo 2026-09-30):
   | Pipeline | Có script chạy được | Ghi chú |
   |---|---|---|
@@ -99,7 +99,7 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
 
 ### 4.2. Các Trụ Cột Nâng Cấp Kỹ Thuật Đạt Chuẩn Sản Xuất
 1. **Chuẩn hóa Thumbnail PNG HD:** Đã trích xuất FFmpeg toàn bộ video dùng ảnh `.jpeg` cũ, 100% 144 video hiện trỏ về `assets/thumbs/<sku>.png` sắc nét.
-2. **Khảo sát Thực Nghiệm Kênh Đối Thủ (HTTP 200 vs 404):** Đã rà soát HTTP toàn bộ các kênh đối thủ trong 144 video, phân loại chính xác 188 kênh LIVE và 68 kênh DEAD 404 (trong đó có `@gyakkyoyori_risukatsu` ở Bài 140 và `@HopeGarden-KR` ở Bài 144), gắn cờ `dead: true` render badge đỏ `DIE` và gạch ngang tên kênh trên DOM.
+2. **Khảo sát Thực Nghiệm Kênh Đối Thủ (HTTP 200 vs 404):** Đã rà soát HTTP toàn bộ các kênh đối thủ trong 144 video, phân loại 188 kênh LIVE và 68 kênh DEAD 404 tại thời điểm 2026-10-09 (đo thực tế lại 2026-10-14: 187 sống · 69 dead = 59 DIE 404 + 10 rỗng; trong đó có `@gyakkyoyori_risukatsu` ở Bài 140 và `@HopeGarden-KR` ở Bài 144), gắn cờ `dead: true` render badge đỏ `DIE` và gạch ngang tên kênh trên DOM.
 3. **Chuẩn hóa Insights & SOP Né Quét AI:** 144/144 video đều có đủ:
    - $\ge 5$ Mấu chốt thực chiến (Key Takeaways).
    - Đủ 5 bước Kỹ thuật Edit & SOP né quét AI chi tiết (> 500 – 1.385 ký tự), không có chuỗi fallback ngắn.

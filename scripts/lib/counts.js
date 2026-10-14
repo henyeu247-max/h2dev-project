@@ -129,6 +129,8 @@ function computeCounts() {
     channels: len(channelList),
     liveChannels,
     deadChannels,
+    // So kenh co ngay do (field `ngay_do` khong rong) - docs "ngay_do N/M" phai dung so nay, khong ep N=M.
+    channelsWithNgayDo: channelList.filter(c => c && c.ngay_do).length,
     canonicalRaw: rawRecords.length,
     canonicalRawUniqueChannels: rawUniqueChannels,
     kichBan: len(kichBan),

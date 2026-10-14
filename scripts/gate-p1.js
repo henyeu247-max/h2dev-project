@@ -166,6 +166,8 @@ function findViolations(files) {
           const val = mm[1];
           if (LH_OK.has(val)) continue;
           if (val === '20' && /line-height\s*:\s*20px/.test(ln)) continue;   // --h2-lh-body-px
+          // Gap G11 (2026-10-14): tieu de hang bai hoc co chu dich 22px: 2 dong x 22px = min-height 44px (vung cham). Chi mien cho dung rule .row-title mo dau dong, phai kem min-height 44px; 22px o selector khac van FAIL.
+          if (val === '22' && /^\s*\.row-title\s*\{/.test(ln) && /line-height\s*:\s*22px/.test(ln) && /min-height\s*:\s*44px/.test(ln)) continue;
           if (LH_EXEMPT_SMALL.has(val) && LH_SMALL_ALLOW.test(ln)) continue;  // chu nho, co chu dich
           v.lineHeight.push({ file: f.rel, line: L, val, txt: ln.trim().slice(0, 120) });
         }
@@ -258,6 +260,9 @@ function probe() {
     // SCAR-027: probe DUNG dang da tung LOT LUOI — inline, KHONG co khoang trang
     { name: 'blur 12px inline khong space (lo hong da tung lot)', file: target, content: orig, html: origHtml.replace('</body>', '<span style="backdrop-filter:blur(12px)">probe</span>\n</body>') },
     { name: 'line-height 1.75 (lech xa)', file: target, content: orig + '\n.probe-z { line-height: 1.75; }\n' },
+    // G11 (2026-10-14): mien 22px chi cho .row-title + min-height 44px; hai dang sau PHAI van FAIL
+    { name: 'line-height 22px o selector KHAC (khong duoc mien)', file: target, content: orig + '\n.probe-t { line-height: 22px; min-height: 44px; }\n' },
+    { name: 'line-height 23px tren .row-title (sai gia tri mien)', file: target, content: orig + '\n.row-title { line-height: 23px; min-height: 44px; }\n' },
     { name: 'letter-spacing 0.08em', file: target, content: orig + '\n.probe-w { letter-spacing: 0.08em; }\n' },
     { name: 'z-index so', file: target, content: orig + '\n.probe-v { z-index: 9999; }\n' },
     // P1-E (SCAR-019: moi luat phai duoc probe)
@@ -268,7 +273,8 @@ function probe() {
   console.log('\n--- PROBE gate-p1: tiem loi gia, xac nhan gate BAT DUOC ---');
   for (const inj of injections) {
     fs.writeFileSync(inj.file, inj.content);
-    if (inj.html) fs.writeFileSync(htmlTarget, inj.html);
+    // G15 (2026-10-14): luon dat lai HTML goc khi luot nay khong tiem HTML; truoc day span blur(12px) cua luot truoc ro sang cac luot sau lam cot blur=1 o moi dong va che mat luot nao that su bat duoc
+    fs.writeFileSync(htmlTarget, inj.html || origHtml);
     const v = findViolations(readLive());
     const ok = v.panelHex.length > 0 || v.blur.length > 0 || v.rawBlur.length > 0 || v.lineHeight.length > 0 ||
                v.letterSpacing.length > 0 || v.zIndexNum.length > 0 ||

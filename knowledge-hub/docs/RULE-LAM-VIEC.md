@@ -1,6 +1,8 @@
-# RULE LÀM VIỆC CHUẨN — H2DEV-Project (CodeBuddy ↔ User)
+# RULE LÀM VIỆC CHUẨN — H2DEV-Project
 
 > SSoT Kỷ Luật Vận Hành, Nghiệm Thu Kỹ Thuật & Nhân Bản Kênh Faceless YouTube
+> Chỉ giữ phần RIÊNG của dự án. Luật chung (evidence-first, check N/N, đọc FULL, TODO, dọn rác, báo cáo 8 mục) do cấu hình toàn cục cung cấp.
+> Bản đầy đủ trước khi rút gọn (2026-10-14): `_archive/20261014-rule-lam-viec/RULE-LAM-VIEC.original.md`.
 > Vị trí: `d:\YTB\H2DEV-Project\knowledge-hub\docs\RULE-LAM-VIEC.md`
 > Boot order mỗi phiên (7 bước chuẩn):
 > 1. `AGENTS.md` (SSoT, số liệu chuẩn, rules cứng, hạ tầng MCP/9Router)
@@ -13,135 +15,74 @@
 
 ---
 
-## ĐỊNH DANH VAI TRÒ, SỨ MỆNH & TÁC PHONG
+## SỨ MỆNH
 
-- **Vai trò:** Kiến trúc sư Trưởng Hệ thống YouTube, Kỹ sư Reverse-Engineering Cấp cao & Giám đốc Vận hành Kênh Faceless cho Hệ sinh thái H2DEV (`D:\YTB\H2DEV-Project`).
-- **Sứ mệnh:** Quản trị, kiểm toán, thiết kế và nhân bản hạ tầng dữ liệu & sản xuất YouTube quy mô lớn tại chỗ — bao gồm kho học liệu đa dạng, hệ thống đăng ký đối thủ, ma trận thẩm định ngách đa nguồn, pipeline sản xuất AI hàng loạt, kỹ thuật giữ chân AVD, Voice DNA Studio và phòng thủ bật kiếm tiền YPP.
-- **Tác phong:** Cộng sự cấp cao ("em" - "anh"). Lấy bằng chứng làm gốc, kỷ luật, chủ động dẫn đường, chống ảo giác. "Không mò đường" — kiểm chứng dữ liệu mọi lúc, tra cứu web liên tục, tuyệt đối không suy đoán.
+- Quản trị, kiểm toán, thiết kế và nhân bản hạ tầng dữ liệu & sản xuất kênh faceless YouTube tại chỗ cho dự án H2DEV (`D:\YTB\H2DEV-Project`): kho học liệu, hệ thống đăng ký đối thủ, ma trận thẩm định ngách.
+- Kiểm chứng dữ liệu mọi lúc, không suy đoán ("không mò đường").
 
 ---
 
 ## KIẾN TRÚC HỆ THỐNG (7 TẦNG — ĐÃ DỠ BỎ HOÀN TOÀN TÀN DƯ GEMINI)
 
-- **Tầng 1 — Kho Học Liệu & Âm Thanh Chuẩn:** Catalog 140 bài học (136 video bài giảng + 4 buổi Zoom) kèm phụ đề sạch 3 định dạng (`transcript.json`, `transcript.srt`, `transcript.txt`), Voice DNA Studio với mẫu trích xuất 45s (tính WPM, profile clone giọng), **Kho 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng) tích hợp Trạm phát nhạc nền Interactive Music Studio Modal**, cẩm nang Master SOP, và media đã kiểm định ffprobe (luồng video + audio khác 0 byte).
+- **Tầng 1 — Kho Học Liệu & Âm Thanh Chuẩn:** Catalog 144 bài học (140 video bài giảng + 4 buổi Zoom) kèm phụ đề sạch 3 định dạng (`transcript.json`, `transcript.srt`, `transcript.txt`), Voice DNA Studio với mẫu trích xuất 45s (tính WPM, profile clone giọng), **Kho 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng) tích hợp Trạm phát nhạc nền Interactive Music Studio Modal**, cẩm nang Master SOP, và media đã kiểm định ffprobe (luồng video + audio khác 0 byte).
 - **Tầng 2 — Thị Trường & Đối Thủ:** Danh bạ kênh đối thủ (sống + chết + OCR/vision), 156 hồ sơ kênh mẫu bao quát 34 ngách nghiệp vụ đã audit live sức sống YPP, chỉ số tốc độ bứt phá (velocity tracker).
 - **Tầng 3 — Pipeline Sản Xuất & Hệ Thống Kỹ Năng Tác Chiến:** 4 pipeline song song (tôn giáo, hoạt hình 3D, tài liệu động vật, giải nghĩa Kinh Thánh) + **Kho 11 Skills đặc nhiệm đã cài đặt sẵn** (`h2dev-hoat-hinh`, `h2dev-ton-giao`, `h2dev-bible`, `h2dev-wildlife-script`, `h2dev-wildlife-motion`, `video-script-dissect`, `short-video-script`, `script-forging`, `prompt-master`, `de-ai-writing`, `douyin-scraper`) + **Kho 300 tài liệu & Master Prompts** (`data-tabs/tai-lieu-full.json`) + **6 hồ sơ Pilot ngách** (`raw-niches/` với `PILOT-01-THE-MIRROR`) + **cẩm nang catalog SOP & Music** (`assets/docs/tai-lieu/`).
-- **Tầng 4 — Hạ Tầng Phục Vụ & Mạng Nội Bộ:** Server Node.js (0.0.0.0:8899) chạy dưới dạng Windows Service chính thức (`H2DEV_Service`, NSSM `SERVICE_AUTO_START`), tự chạy khi bật máy không cần đăng nhập; mạng LAN + Tailscale, mở khóa dữ liệu tĩnh nguyên vẹn, kiến trúc map ổ mạng máy trạm (`Y:\`). Deploy VPS tự động có GUARD kiểm tra số liệu (`sync-counts.js --check`) và rollback chống lệch data.
+- **Tầng 4 — Hạ Tầng Phục Vụ & Mạng Nội Bộ:** Server Node.js (0.0.0.0:8899) chạy dưới dạng Windows Service chính thức (`H2DEV_Service`, NSSM `SERVICE_AUTO_START`), tự chạy khi bật máy không cần đăng nhập; mạng LAN + Tailscale, mở khóa dữ liệu tĩnh nguyên vẹn, kiến trúc map ổ mạng máy trạm (`Y:\`). Số liệu có GUARD kiểm tra (`sync-counts.js --check`).
 - **Tầng 5 — Hạ Tầng Công Cụ & Mô Hình:** MCP Tool Server chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` dưới dạng Windows Service chính thức (`MCP_Pool_Service`, NSSM `SERVICE_AUTO_START`, :3988/mcp, 180+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...) + **Gemini Multimodal Audio/Video Engine (`scripts/gemini_audio_engine.js` & `gemini_analyze_media`) với pool xoay vòng 4 Live Keys tự động** + AI Chat Model Gateway tại 9Router (:20128). Độc lập 100% ngoài WorkBuddy (0 background tasks trong WorkBuddy).
 - **Tầng 6 — Tự Động Hóa & Script Kiểm Định:** Pipeline tiếp nhận (`inbox/`), đồng bộ catalog, **Nguồn số duy nhất `scripts/lib/counts.js` & manifest `data/counts-manifest.json`**, bộ test validation (`validate-project.js`), công cụ sửa chữa và quét bảo mật. Kỷ luật Ephemeral Cleanup (xóa sạch script tạm sau khi check-pass).
 - **Tầng 7 — Tri Thức Vận Hành Thực Chiến:** Masterclass Zoom chuyên gia (quy trình xây kênh 11 bước, nuôi proxy IPv4/Gmail, 150 phân cảnh/video, chuỗi AVD kép, quy trình AdSense và kháng nghị).
 
 ---
 
-## KỶ LUẬT VẬN HÀNH: PHÂN LUỒNG CÔNG VIỆC, TODO PLAN & KIỂM CHỨNG LIÊN TỤC
+## KỶ LUẬT VẬN HÀNH RIÊNG CỦA DỰ ÁN
 
-### 1. Phân Luồng Công Việc Chuẩn Hóa (Standardized Task Routing)
-Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhánh kỹ thuật độc lập:
-- **Luồng A — Nghiệm Thu Video & Toàn Vẹn Dữ Liệu:** Bộ 10 Tiêu Chuẩn Vàng Video, phụ đề 3 định dạng, kiểm định ffprobe.
-- **Luồng B — Sức Sống Ngách & Tình Báo Đối Thủ:** 34 ngách nghiệp vụ, audit live YPP 156 kênh, velocity tracker.
-- **Luồng C — Kỹ Thuật Nội Dung & Voice DNA Studio:** Trích xuất audio 45s, tính WPM, clone ElevenLabs, tối ưu AVD.
-- **Luồng D — Hạ Tầng Server, MCP Local & Deploy VPS:** Local MCP :3988, 9Router :20128, Node server, deploy VPS.
-*Nguyên tắc:* Không để tác động chéo giữa các luồng. Thay đổi ở một luồng phải được kiểm thử trước khi chuyển giao.
+### 1. Phân luồng công việc
+Mỗi phiên vào một nhánh kỹ thuật, không tác động chéo; thay đổi ở một luồng phải kiểm thử trước khi chuyển giao:
+- **Luồng A — Nghiệm thu video & toàn vẹn dữ liệu:** Bộ 10 Tiêu Chuẩn Vàng Video (Phần 7), phụ đề 3 định dạng, kiểm định ffprobe.
+- **Luồng B — Sức sống ngách & tình báo đối thủ:** 34 ngách, audit live YPP, velocity tracker.
+- **Luồng C — Kỹ thuật nội dung & Voice DNA Studio:** trích xuất audio 45s, tính WPM, clone ElevenLabs, tối ưu AVD.
+- **Luồng D — Hạ tầng server & MCP local:** MCP :3988, 9Router :20128, Node server.
 
-### 2. Kỷ Luật Lập TODO / Implementation Plan Chi Tiết Mỗi Phiên
-Đầu mỗi phiên hoặc trước khi làm việc phức tạp, bắt buộc lập danh sách TODO cụ thể:
-- Chia nhỏ mục tiêu thành các task rõ ràng, có tiêu chí Check-Pass nghiệm thu định lượng.
-- Theo dõi sát 4 trạng thái thực thi:
-  `[ ] CHỜ XỬ LÝ` ➔ `[>] ĐANG THỰC HIỆN` ➔ `[x] ĐÃ NGHIỆM THU (CHECK-PASS)` ➔ `[!] BỊ CHẶN (BLOCKED)`.
-- Cập nhật và thông báo tiến độ TODO mỗi khi hoàn tất một hạng mục.
+### 2. Grounded data (chống ảo giác, lệch pha dữ liệu)
+- Cấm suy đoán hay gán ghép chủ đề giữa các video.
+- Kịch bản, câu Hook 0–15s, nhịp Pacing và prompt của kênh mẫu phải đối soát 1:1 với transcript và video bão view #1 thực tế của chính kênh đó trước khi ghi vào hồ sơ.
+- Thiếu dữ liệu hoặc gặp ngách mới: dùng MCP Pool local (:3988: Exa / Firecrawl / vidIQ) lấy dữ liệu thực tế, không tự bịa thông số.
 
-### 3. Kiểm Chứng Mọi Lúc, Tra Cứu Liên Tục, Tuyệt Đối Không Đoán Mò ("Không Mò Đường")
-- Kiểm chứng KHÔNG PHẢI việc làm một lần ở bước đầu, mà là kỷ luật liên tục xuyên suốt quá trình thực thi.
-- Bất cứ khi nào gặp điểm chưa chắc chắn, thiếu dữ liệu, lỗi phát sinh, hoặc chính sách nghi vấn:
-  - **DỪNG LẠI NGAY LẬP TỨC — TUYỆT ĐỐI KHÔNG ĐOÁN MÒ ("không mò đường").**
-  - Kiểm tra trực tiếp dữ liệu trên đĩa (chạy `validate-project.js`, soi file schema, kiểm tra ffprobe).
-  - Tra cứu web/MCP ngay tại thời điểm đó (YouTube Policy Help chính thức, bài nghiên cứu RPM của AIR Media, vidIQ, exa).
-- **Hệ giá trị chân lý:** Sự thật Runtime > Source Code > Test Tự Động > Docs > Giả định.
+### 3. Đồng bộ khi thêm media/dữ liệu (`/expand`, tải nhạc, thêm video, thêm tài liệu)
+Chỉ hoàn tất khi cả chuỗi sau chạy trơn tru:
+1. **File trên đĩa:** `ffprobe` kiểm tra luồng audio/video (bitrate, duration > 0, không file 0 byte).
+2. **SSoT data:** cập nhật JSON (`music_catalog.json`, `tai-lieu-full.json`...) đủ ID, metadata, streamUrl, cờ an toàn YPP.
+3. **Frontend:**
+   - Tìm kiếm lập chỉ mục trường định danh `t.id` (gõ `MUSIC-041` phải ra kết quả).
+   - Thẻ card hiện badge ID `[MUSIC-xxx]`.
+   - Mọi số đếm trên header, banner, tab lọc tính động bằng code, cấm hardcode số tĩnh.
+   - Thêm tham số version (`?v=YYYYMMDD-vXX`) vào script và stream URL để trình duyệt/service worker không giữ cache cũ.
+4. **E2E trên máy chạy dự án:** kiểm tra `HTTP 200` cho file tĩnh và file media tại `http://127.0.0.1:8899`, thử tìm ID thật trên giao diện. Chỉ báo hoàn thành khi 100% pass, không còn 404.
 
-### 4. Kỷ Luật Grounded Data Tuyệt Đối (Chống Ảo Giác & Lệch Pha Dữ Liệu)
-- Tuyệt đối cấm suy đoán hay gán ghép chủ đề giữa các video.
-- Mọi kịch bản, câu Hook 0–15s mở màn, nhịp Pacing và prompt của kênh mẫu bắt buộc phải đối soát trích xuất 1:1 từ file transcript và video bão view #1 thực tế của chính kênh đó trước khi ghi vào hồ sơ.
-- Khi thiếu dữ liệu hoặc gặp ngách mới: Bắt buộc dùng MCP Pool Local (:3988 dùng Exa / Firecrawl / vidIQ) cào dữ liệu thực tế thời gian thực, tuyệt đối không tự ý bịa đặt thông số.
+### 4. Check N/N đặc thù dữ liệu
+- Mọi độ lệch (N − K) phải định danh và giải thích nguyên nhân.
+- Nhận diện đúng kiểu dữ liệu: phân biệt boolean `true` với chuỗi cảnh báo trong `ngach-xanh.json`.
 
-### 5. Kỷ Luật Đồng Bộ Fullstack Media & Deploy VPS (Tuyệt Đối Chống Làm Trước Quên Sau, Bỏ Sót Tùm Lum)
-> **Nguyên tắc sống còn:** Một tác vụ tải về/mở rộng dữ liệu (`/expand`, tải nhạc, thêm video, thêm tài liệu) chỉ được coi là hoàn tất khi và chỉ khi **toàn bộ chuỗi cung ứng 5 bước** hoạt động trơn tru:
-1. **Kiểm tra file đĩa cứng:** Tải về và dùng `ffprobe` kiểm tra luồng audio/video (bitrate, duration > 0, không file 0 byte).
-2. **Chuẩn hóa SSoT Data:** Cập nhật file JSON (`music_catalog.json`, `tai-lieu-full.json`...) đầy đủ ID, metadata, streamUrl, cờ an toàn YPP.
-3. **Đồng bộ logic Frontend toàn diện:**
-   - Thuật toán tìm kiếm phải lập chỉ mục trường mã định danh `t.id` (gõ `MUSIC-041` phải ra ngay kết quả).
-   - Thẻ Card hiển thị rõ badge ID `[MUSIC-xxx]` cho người dùng nhận diện.
-   - Toàn bộ số lượng đếm trên header, banner, tabs lọc phải tính động 100% qua code, cấm hardcode số tĩnh.
-   - Thêm tham số version cache-busting (`?v=YYYYMMDD-vXX`) vào script và stream URL để chống Cloudflare / Browser lưu cache cũ.
-4. **Đồng bộ hạ tầng kép (Git + SCP Media lên VPS):**
-   - File media (nằm trong `.gitignore`) **BẮT BUỘC** phải được SCP trực tiếp lên VPS (`/www/wwwroot/h2dev-learn.tonymmo.com/app/assets/...`). Tuyệt đối không ảo tưởng rằng `git push` sẽ tự đẩy file media bị ignore.
-   - Đẩy code git song song lên cả `origin main` (GitHub) và `vps main` (VPS Production).
-5. **Kiểm thử E2E hai đầu (Local & Live Production):**
-   - Viết test script kiểm tra mã phản hồi `HTTP 200 OK` cho file tĩnh và file media trên cả `http://127.0.0.1:8899` và `https://h2dev-learn.tonymmo.com`.
-   - Test tìm kiếm ID thực tế trên giao diện. Báo cáo hoàn thành chỉ khi 100% pass, không còn 404.
+### 5. Windows scripting (Pure ASCII)
+- Script vận hành (.bat, .cmd) dùng 100% ký tự ASCII 7-bit; không tiếng Việt có dấu, không Unicode lạ, không dấu `&` chưa thoát trong chuỗi lệnh, để tránh lệch byte và vỡ lệnh của cmd.exe.
+- Gọi công cụ bằng đường dẫn đầy đủ (ví dụ `"%~dp0nssm.exe"`): cmd chạy bằng "Run as administrator" mở ở `System32`, lệnh trần không tìm thấy.
 
-### 6. Quy Tắc Phổ Quát "Check N/N" Kiểm Định 100% Tổng Thể
-- Kiểm tra đủ 100% số lượng đối tượng thực tế tại runtime: Có N đối tượng (video, kênh, tài liệu, ngách) phải kiểm đủ cả N. Không lấy mẫu tượng trưng.
-- Mọi độ lệch (N - K) phải được định danh và phân loại nguyên nhân rõ ràng.
-- Nhận diện đúng kiểu dữ liệu (phân biệt boolean `true` với chuỗi cảnh báo trong `ngach-xanh.json`).
-
-### 7. Bằng Chứng Sự Thật 3 Mức & Chuẩn Mực Bảo Vệ Tài Sản vs Dọn Rác Tạm
-- Nhận định chỉ dùng 3 trạng thái: `[CÓ]` / `[KHÔNG]` / `[KHÔNG-VERIFY-ĐƯỢC]` kèm bằng chứng.
-- **Bảo vệ tài sản gốc (Asset Preservation):** Tuyệt đối cấm tự ý xóa, ghi đè làm hỏng hoặc thay đổi cấu trúc của tài sản cốt lõi: Video bài giảng, file MP4/WEBM, phụ đề 3 định dạng (`.json`, `.srt`, `.txt`), thumbnails, dữ liệu sống trong `data-tabs/*.json`, catalog gốc, cấu hình server, và hạ tầng Windows Services/VPS.
-- **Kỷ luật Dọn dẹp rác & Tinh gọn (Ephemeral Cleanup Standard):** 
-  - Mọi script vá lỗi 1 lần (`fix-*`, `restore_*`, `repair_*`), script test ad-hoc (`audit-*`, `verify-*`, `test-*`), file dump trung gian (`*.log`, `*.tmp`, dump `.json`) sau khi đã hoàn thành nhiệm vụ và đã được kiểm định Check-Pass **BẮT BUỘC PHẢI DỌN DẸP XÓA BỎ NGAY LẬP TỨC**.
-  - Tuyệt đối cấm biến repository và thư mục `scripts/` thành bãi rác chứa các bản vá cũ hoặc cơ chế chồng chéo gây phiền hà cho các phiên làm việc sau.
-  - "NO_DELETE" chỉ áp dụng cho TÀI SẢN DỰ ÁN và DỮ LIỆU SỐNG, không phải là cái cớ để lưu cữu rác thải vận hành.
-
-### 8. Kỷ Luật Windows Scripting An Toàn (Pure ASCII Only)
-- Mọi file script vận hành trên Windows (.bat, .cmd) phải sử dụng 100% ký tự 7-bit ASCII thuần.
-- Tuyệt đối không dùng tiếng Việt có dấu, ký tự Unicode lạ hay dấu & không bọc thoát trong chuỗi lệnh nhằm triệt tiêu hoàn toàn lỗi lệch byte và vỡ lệnh của cmd.exe.
-
-### 9. Kỷ Luật Kiểm Định Đa Vòng Tuyệt Đối (Multi-Loop Verification — Tối Thiểu 3 Vòng Nghiệm Thu)
-> **Nguyên tắc cốt tử:** Tuyệt đối không bao giờ làm việc sơ sài, kiểm tra qua loa 1 lần rồi vội vã báo cáo nghiệm thu. "Phiên nào cũng phải chuẩn từng ly từng tý, đồng bộ và chuyên nghiệp tuyệt đối". Bắt buộc thực hiện tối thiểu 3 vòng độc lập:
-- **Vòng 1 — Kiểm định Kỹ thuật & Đĩa cứng (Disk & Binary Verification):**
-  + Quét trực tiếp file trên đĩa cứng bằng công cụ nhị phân chuyên dụng (`ffprobe`, `fs.statSync`).
-  + Xác nhận: thời lượng $> 0$, dung lượng $> 0$, bitrate chuẩn, luồng codec không lỗi, 0 file rỗng 0 byte.
-- **Vòng 2 — Kiểm định SSoT & Frontend Logic (Code & Data Integrity Verification):**
-  + Kiểm tra toàn vẹn schema JSON (`music_catalog.json`, `tai-lieu-full.json`...).
-  + Kiểm tra logic JavaScript / HTML: Bộ lọc tìm kiếm (`t.id` có trong index), Card render đầy đủ badge/thông số, số lượng đếm 100% động, link stream có query version chống cache.
-- **Vòng 3 — Kiểm định Môi trường Kép & Live Production (Dual-Environment E2E Verification):**
-  + Kiểm tra mã trạng thái `HTTP 200 OK` đồng thời tại cả máy cục bộ (`http://127.0.0.1:8899`) và máy chủ VPS Production qua Cloudflare (`https://h2dev-learn.tonymmo.com`).
-  + Trực tiếp gửi request mô phỏng người dùng: tìm kiếm thử nghiệm các mã định danh vừa thêm (`MUSIC-xxx`), kiểm tra header Content-Type `audio/mpeg` và Content-Length khớp chính xác.
-  + **Chỉ khi cả 3 vòng đều PASS 100% không còn một vết lỗi nhỏ nào thì mới được phép nhận định và nghiệm thu hoàn thành!**
+### 6. Nghiệm thu nhiều vòng
+Không báo xong sau một lần kiểm qua loa. Tối thiểu 3 vòng độc lập:
+- **Vòng 1 — đĩa & nhị phân:** `ffprobe`, `fs.statSync`; thời lượng > 0, dung lượng > 0, bitrate chuẩn, codec không lỗi, 0 file rỗng.
+- **Vòng 2 — SSoT & logic frontend:** toàn vẹn schema JSON; bộ lọc tìm kiếm (`t.id` có trong index), card render đủ badge/thông số, số đếm động, link stream có query version.
+- **Vòng 3 — chạy thật:** `HTTP 200` tại `http://127.0.0.1:8899`; gửi request mô phỏng người dùng (tìm mã vừa thêm, kiểm tra `Content-Type` và `Content-Length` khớp).
+- Chỉ nghiệm thu khi cả 3 vòng PASS.
 
 ---
 
-## PHẦN 1 — NGUYÊN TẮC CỐT LÕI (evidence-first)
+## PHẦN 1 — NGUYÊN TẮC CỐT LÕI
 
-### 1.1 Quan hệ & Trách nhiệm
-- **User & Em = cộng sự cấp cao.** Em làm thực chất, không advisory suông. Xưng "em", gọi user "anh", tiếng Việt là chính.
-- Dự án + data + docs trên máy = **gốc sự thật** — NO_DELETE cho **TÀI SẢN GỐC** (video, audio, phụ đề, data-tabs, catalog, cấu hình hạ tầng) khi chưa được anh cho phép. Rác tạm (script 1 lần, test ad-hoc, log, dump, scratch) sau khi Check-Pass **BẮT BUỘC XÓA** — xem Phần 1 mục 6 Ephemeral Cleanup.
+Evidence-first, check N/N, đọc FULL, phản biện + nhận định 3 mức `CÓ / KHÔNG / KHÔNG-VERIFY-ĐƯỢC`, xử lý tool lỗi: dùng luật chung của cấu hình toàn cục (bản chép cũ nằm trong `_archive/20261014-rule-lam-viec/`).
 
-### 1.2 Check N/N (bắt buộc, không tượng trưng)
-- Có 100 đối tượng → check 100. Có 1000 → check 1000. **CẤM check 1-2-10 cái rồi đại diện.**
-- Kết quả đếm được, sai lệch từng cái phải giải thích rõ ràng.
-
-### 1.3 Đọc FULL (không dở dang)
-- Không đọc lướt rồi khái quát. Mỗi claim verify riêng bằng nguồn gốc (file/dòng/lệnh/output).
-- Bị bắt verify lại → đọc lại từ đầu, không giữ kết luận cũ.
-
-### 1.4 Phản biện + evidence + nhận định rõ
-- Tự tìm bằng chứng **PHỦ ĐỊNH** kết luận của mình TRƯỚC khi chốt.
-- Mọi nhận định kèm evidence trực tiếp (path + dòng + output + số đếm). Không có evidence = KHÔNG nói.
-- Nhận định chỉ 3 mức: **CÓ / KHÔNG / KHÔNG-VERIFY-ĐƯỢC** (+ lý do). Không "có thể", "chắc là".
-- Cấm đoán mò, cấm bịa số liệu.
-
-### 1.5 Xử lý sự cố / tool lỗi
-- Cấm dừng giữa chừng vì 1 hướng fail → thử ≥3 vector (tool khác).
-- Blocker thật → báo thẳng + đầy đủ đã thử những gì.
-
-### 1.6 Tiêu chuẩn hoàn mỹ chi tiết & Trách nhiệm chuyên gia (Zero-Flaw Standard)
-- **Trách nhiệm tự thân 100%:** Rà soát từng chi tiết nhỏ nhất (hiển thị Markdown, bảng biểu, mũi tên Unicode `→`, thẻ HTML, độ tương phản, chính tả, tính toàn vẹn kỹ thuật) là trách nhiệm tuyệt đối của em, KHÔNG PHẢI việc của anh.
-- **Tiêu chuẩn "Không hạt cát":** Tuyệt đối không để sót bất kỳ hạt sạn hiển thị nào (mã LaTeX thô `$\rightarrow$`, thẻ `<br>` văng text, format lệch, link chết, lỗi giao diện). Trước khi báo cáo hoàn thành, bắt buộc phải tự soi xét kỹ lưỡng, chạy kiểm thử trình duyệt thực tế và kiểm chứng trực quan bằng mắt.
-
-### 1.7 Nguyên tắc Không Kiểm Duyệt & Mở Khóa Dữ Liệu Nội Bộ 100%
-- **Cấm tự ý chặn / kiểm duyệt:** Toàn bộ kho dữ liệu học liệu, nghiên cứu, hồ sơ kênh, transcript, video, tags và tài liệu nội bộ của dự án H2DEV là tài sản của anh. Tuyệt đối cấm mọi hành vi tự tiện tạo rào cản, thêm cờ `BLOCKED`, viết hàm che giấu bớt trường dữ liệu (`readPublicCatalog`), hay tạo các thông báo giả tạo ("giữ riêng / private") cản trở việc xem dữ liệu.
-- **Mở khóa toàn diện:** Toàn bộ giao diện Local và VPS phải phục vụ 100% dữ liệu gốc nguyên bản, minh bạch, có đầy đủ công cụ xem chi tiết, sao chép và tra cứu sâu (Song ngữ, Tiếng Việt, Tiếng Gốc, Kịch bản Voice AI).
+### 1.7 Không kiểm duyệt & mở khóa dữ liệu nội bộ 100%
+- **Cấm tự ý chặn/kiểm duyệt:** toàn bộ học liệu, nghiên cứu, hồ sơ kênh, transcript, video, tags và tài liệu nội bộ của H2DEV là tài sản của chủ dự án. Cấm tự tạo rào cản, thêm cờ `BLOCKED`, viết hàm che bớt trường dữ liệu (`readPublicCatalog`) hay thông báo giả ("giữ riêng / private") cản trở việc xem dữ liệu.
+- **Mở khóa toàn diện:** giao diện phục vụ 100% dữ liệu gốc nguyên bản, có đủ công cụ xem chi tiết, sao chép và tra cứu sâu (song ngữ, tiếng Việt, tiếng gốc, kịch bản Voice AI).
 
 ---
 
@@ -293,7 +234,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 
 | STT | Hạng mục | Tiêu chuẩn bắt buộc | Cách kiểm chứng thực tế |
 | :---: | :--- | :--- | :--- |
-| **1** | **File Media & Thumbnail** | MP4/WEBM > 0 bytes, ffprobe xác nhận đủ cả luồng video + audio; thumbnail hiển thị đúng bài. | Chạy lệnh `ffprobe` kiểm tra luồng; kiểm tra kích thước file > 0 trên cả Local và VPS. |
+| **1** | **File Media & Thumbnail** | MP4/WEBM > 0 bytes, ffprobe xác nhận đủ cả luồng video + audio; thumbnail hiển thị đúng bài. | Chạy lệnh `ffprobe` kiểm tra luồng; kiểm tra kích thước file > 0. |
 | **2** | **Subtitle (3 định dạng)** | Có đủ `transcript.json`, `.srt`, `.txt` đồng bộ 1-1; 0 ảo giác Whisper, 0 nén chữ rớt nguyên âm. | Đọc trực tiếp nội dung file; chạy script kiểm tra lặp từ và thời lượng phủ > 90%. |
 | **3** | **Kênh đối thủ (`channels`)** | Không để mảng rỗng `[]` nếu video có mở kênh; handle `@...` phải chính xác 100%. | Trích xuất khung hình video mổ xẻ avatar/handle; kiểm tra nút mở YouTube & copy handle trên web. |
 | **4** | **Tài liệu đính kèm (`docs`)** | Có ít nhất 1 cẩm nang SOP chuyên sâu (`assets/docs/<SKU>/...md`) hoặc kịch bản/prompt đính kèm. | Kiểm tra link trả về HTTP 200; bấm nút "Đọc trực tiếp" trên web xem modal mở mượt mà. |
@@ -302,7 +243,7 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | **7** | **Kỹ thuật Edit SOP (`edit_sop`)** | Nêu rõ kỹ thuật dựng footage, âm thanh, giọng đọc AI và phụ đề chuẩn của ngách. | Đọc lại đoạn tác giả chia sẻ kinh nghiệm dựng video trong bài giảng. |
 | **8** | **Cảnh báo lỗi (`avoid_flags`)** | Nêu bật các cạm bẫy chính sách (Full ảnh AI, bản quyền, bẫy YMYL y tế, spam...). | Trích xuất các lỗi tác giả cảnh báo trực tiếp trong video. |
 | **9** | **Cờ kiểm định (`visual_audio_checked`)** | Đặt `visual_audio_checked: true` để ẩn vĩnh viễn dòng cảnh báo tạm bợ ("heuristic transcript cũ..."). | Xem trên giao diện xem khối cảnh báo vàng đã biến mất hoàn toàn chưa. |
-| **10** | **Đồng bộ đa tầng & Deploy VPS** | Pass `validate-project.js`, pass `audit_videos_v2.py` (N/N 144/144 SKU), commit git, push VPS, reload PM2. | Kiểm tra live URL trên `https://h2dev-learn.tonymmo.com/lotrinh/<SKU>` trả về HTTP 200. |
+| **10** | **Đồng bộ đa tầng** | Pass `validate-project.js`, pass `audit_videos_v2.py` (N/N SKU). | Kiểm tra `http://127.0.0.1:8899/lotrinh/<SKU>` trả về HTTP 200. |
 
 ---
 
@@ -321,51 +262,14 @@ Mọi phiên làm việc phải được phân luồng rõ ràng vào các nhán
 | **7** | **Cấu Hình Clone Voice ElevenLabs** | Nêu rõ: Primary Voice match có sẵn trên ElevenLabs; Top 2-3 Alternative voices; Bộ thông số kỹ thuật (`Stability`, `Similarity Boost`, `Style`, `Speaker Boost`); Voice Design Prompt (sinh giọng từ chữ); SOP kỹ thuật lồng tiếng (Smiling voice, giữ năng lượng). | Kiểm tra các thông số kỹ thuật có nằm trong khoảng tối ưu của ElevenLabs Multilingual v2 hay không. |
 | **8** | **Kho Báu SEO Kênh (Channel Tags)** | Đủ 30–50 tags kênh có giá trị định vị thuật toán và kéo traffic ăn theo đối thủ lớn; Nút `📋 Sao chép tất cả Tags` 1-click hoạt động hoàn hảo. | Bấm nút sao chép tags; kiểm tra clipboard có đủ danh sách tags ngăn cách chuẩn xác hay không. |
 | **9** | **Top Video & Modal Sub Song Ngữ (Sắp xếp Most Viewed)** | Danh sách Top video **bắt buộc sắp xếp theo Lượt xem giảm dần (Most Viewed)** để video `#1` luôn là video nhiều view nhất/bão view nhất của kênh. Thẻ video có rank `#1, #2...`, thumbnail, thời lượng, views, VPH, ngày đăng. Nút `📜 Xem Sub, Lời Thoại & Kịch Bản AI` mở Modal mượt mà với đủ 4 Tab: (1) Song ngữ 1:1 có timestamp `[00:00]`; (2) Bản dịch Tiếng Việt; (3) Bản Tiếng Gốc; (4) Kịch bản AI & Voice production. | Sắp xếp lại file `top-videos.json` và UI logic theo `views` giảm dần; click mở từng video; bấm chuyển mượt mà giữa cả 4 tab; bấm nút copy phụ đề hoạt động 100%. |
-| **10** | **Tình Báo Đa Nguồn, Outlier & Đối Soát Tiến Hóa** | Kết hợp đa nguồn không ảo giác: (1) Bảng theo dõi tăng trưởng 7 ngày thực tế từ **vidIQ Live API** (`recentVelocity`); (2) Bảng bóc tách 8 video Outlier từ **ảnh chụp gốc OCR** kèm chỉ số đột phá `>100x`; (3) Khối **Đối soát tiến hóa kênh (Timeline Evolution Audit)** phân định rõ ràng giữa Ảnh raw snapshot lịch sử (lúc kênh mới bứt phá) vs Dữ liệu YouTube Live hiện tại (lý do ẩn/xóa bớt video, video mega-viral); (4) Phân tích **Vision AI** phong cách sản xuất; (5) Đồng bộ deploy VPS và test Playwright PASS 100%. | Soát bảng số liệu vidIQ live; kiểm tra thẻ OCR Outlier; kiểm tra khối Timeline Evolution trên modal; chạy Playwright kiểm thử E2E trên live VPS không có lỗi console/network. |
+| **10** | **Tình Báo Đa Nguồn, Outlier & Đối Soát Tiến Hóa** | Kết hợp đa nguồn không ảo giác: (1) Bảng theo dõi tăng trưởng 7 ngày thực tế từ **vidIQ Live API** (`recentVelocity`); (2) Bảng bóc tách 8 video Outlier từ **ảnh chụp gốc OCR** kèm chỉ số đột phá `>100x`; (3) Khối **Đối soát tiến hóa kênh (Timeline Evolution Audit)** phân định rõ ràng giữa Ảnh raw snapshot lịch sử (lúc kênh mới bứt phá) vs Dữ liệu YouTube Live hiện tại (lý do ẩn/xóa bớt video, video mega-viral); (4) Phân tích **Vision AI** phong cách sản xuất; (5) Test Playwright PASS 100%. | Soát bảng số liệu vidIQ live; kiểm tra thẻ OCR Outlier; kiểm tra khối Timeline Evolution trên modal; chạy Playwright kiểm thử E2E trên máy chạy dự án, không có lỗi console/network. |
 | **11** | **Trạm Vũ Khí Tác Chiến & Bắt Đầu Sản Xuất (Production Mission Control)** | **Cơ Chế Khí Giới Ba Ngôi (The Trinity Production Engine)** được tích hợp ngay đầu modal: <br>1. *Pipeline SOP Kỹ Thuật:* Nút `📄 Xem Toàn Bộ SOP Skill Gốc ↗` mở trực tiếp file Markdown SOP gốc (`assets/docs/tai-lieu/...md`, HTTP 200 OK) + `📂 Repo Code ↗`.<br>2. *Prompt Engine Chuyên Dụng:* (a) Visual Directive biến thể đa thị trường (`{{STYLE_SHORT}}`, `{{STYLE}}`, `{{MASCOT}}`, ống kính 35/50mm, handheld, negative khử rác AI); (b) Master Scriptwriting Prompt chuẩn `north-effect.md` (Nạp 100% transcript đối thủ trong 1 prompt nhờ Context Window 200K–1M tokens của Claude/GPT hiện đại; điều khiển nhả output theo từng Part 1000–1100 từ bằng lệnh `Stop`/`CONTINUE` để vượt qua trần Max Output Tokens, triệt tiêu Dilution Tax và giữ nhịp cliffhanger AVD từng 90 giây; Hook 0–15s hành động trích 1:1 từ transcript video #1); (c) Packaging CTR (Title Formula bão view + Bố cục Thumbnail 3 điểm vàng 65%).<br>3. *Dedicated Agent Skill:* Khớp đúng Skill chuyên biệt trong bộ 11 Skills đã cài đặt.<br>4. *Lộ Trình 5 Bước Ra Quân:* Khởi động kênh chuẩn Zoom A–Z Masterclass. | Mở modal kênh; kiểm tra khối Mission Control hiển thị ở vị trí ưu tiên; bấm các nút copy prompt; bấm nút mở SOP trả về HTTP 200; bấm nút Kịch Bản Gốc mở đúng transcript video #1; kiểm tra file `production_toolkit.json` của kênh có đầy đủ dữ liệu grounded 100%. |
 
 ---
 
-## PHẦN 9 — QUY TRÌNH THỰC THI 7 BƯỚC & CHUẨN BÁO CÁO 8 MỤC
+## PHẦN 9 — QUY TRÌNH THỰC THI & BÁO CÁO
 
-### 9.1 Quy trình thực thi 7 bước (The 7-Step Execution Cycle)
-
-- **BƯỚC 1: Xác Định Mục Tiêu, Phân Luồng & Lập TODO Plan Chi Tiết**
-  - Định vị luồng công việc rõ ràng (Luồng A: Nghiệm thu Video, Luồng B: Sức sống Ngách, Luồng C: Voice DNA, Luồng D: Hạ tầng Server/VPS).
-  - Lập bảng TODO chi tiết, chia nhỏ mục tiêu thành các task rõ ràng có tiêu chí Check-Pass nghiệm thu định lượng.
-  - Soi chiếu chính sách YouTube Inauthentic & Reused Content (2025–2027) ngay từ vạch xuất phát.
-- **BƯỚC 2: Nạp Ngữ Cảnh Trọng Tâm**
-  - Đọc trọn vẹn tài liệu SSoT và code liên quan (không đọc lướt, không dở dang).
-  - Đối chiếu vị trí thực tế trên code và dữ liệu đang chạy tại runtime.
-- **BƯỚC 3: Điều Tra Bằng Chứng & Kiểm Chứng Web Liên Tục**
-  - Kiểm tra trực tiếp tại code/log (`file:line`, ffprobe luồng video + audio khác 0 byte).
-  - Tra cứu web/MCP tại mọi điểm chưa rõ — kiểm chứng liên tục, tuyệt đối không đoán mò ("không mò đường").
-  - Thẩm định ngách qua số liệu thực tế (demand, cạnh tranh, kênh bứt phá).
-- **BƯỚC 4: Lập Luận Kỹ Thuật & Cập Nhật Tiến Độ Plan**
-  - Khắc cốt ghi tâm: **Sự thật Runtime > Source Code > Test Tự Động > Docs > Comments > Giả định**.
-  - Cập nhật tiến độ bảng TODO (`[ ]` ➔ `[>]` ➔ `[x]` ➔ `[!]`), phản biện giả thuyết trước khi can thiệp.
-- **BƯỚC 5: Can Thiệp Tối Thiểu & Thực Thi Có Kiểm Soát**
-  - Luôn tạo thư mục backup `_backup/<YYYYMMDD-task>/` trước khi sửa bất kỳ file dữ liệu hoặc script nào.
-  - Can thiệp tối thiểu, module hóa, bảo toàn liên kết giữa các bảng dữ liệu (Data Integrity).
-- **BƯỚC 6: Kiểm Thử Nghiệm Thu ("Check-Pass")**
-  - Chạy validation suite: `node scripts/validate-project.js` (Bắt buộc PASS 0 lỗi).
-  - Xác minh tỷ lệ hợp lệ N/N trên 100% tập dữ liệu mục tiêu.
-  - Kiểm thử trình duyệt thực tế (Playwright E2E) xác nhận không lỗi console, không lỗi network.
-  - Xác nhận không có route công khai mới bị lộ và không secret nào bị commit.
-- **BƯỚC 7: Báo Cáo Minh Bạch & Lộ Trình Mở Rộng**
-  - Báo cáo đầy đủ, súc tích cho anh bằng tiếng Việt theo đúng khung 8 mục chuẩn bên dưới.
-
-### 9.2 Chuẩn Báo Cáo 8 Mục (Standard 8-Section Report)
-
-Báo cáo kết quả công việc bắt buộc tuân thủ cấu trúc 8 mục:
-1. 🔍 **Nguyên nhân gốc rễ (Root Cause):** (Chỉ rõ file, dòng, log trace hoặc tài liệu kỹ thuật xác minh).
-2. 🛠️ **Can thiệp kỹ thuật (Changes Made):** (Chi tiết code sửa đổi, lý do chọn cách này so với giải pháp khác).
-3. ✅ **Bằng chứng Check-Pass (Validation Proof):** (Kết quả chạy test, hình ảnh chứng minh, liên kết file/tài liệu/báo cáo đã sửa chữa clickable, log thực thi, tỷ lệ N/N pass).
-4. ❓ **Điểm lưu ý & Giới hạn (Notes & Blockers):** (Chất lượng IP, trạng thái API, dịch vụ phụ thuộc).
-5. 🚀 **Đề xuất bước tiếp theo (Next Steps):** (Các bước hành động logic tiếp theo trong lộ trình).
-6. 💡 **Ý tưởng cải tiến (Proactive Ideas):** (Tối ưu hóa kiến trúc, tách module, nâng cao độ ẩn danh).
-7. 🔎 **Chỉ dẫn tìm kiếm (Search Directives):** (Từ khóa kỹ thuật chuyên sâu, query dorking, repo cần quét thêm).
-8. 📊 **Khoảng trống dữ liệu (Data Gaps):** (Dữ liệu còn thiếu và phương án thu thập bổ sung).
+Quy trình thực thi (phân luồng → nạp ngữ cảnh → điều tra bằng chứng → can thiệp tối thiểu có backup `_backup/<YYYYMMDD-task>/` → kiểm thử `node scripts/validate-project.js` + Playwright → báo cáo) và khung báo cáo 8 mục do cấu hình toàn cục quy định. Bản chi tiết cũ: `_archive/20261014-rule-lam-viec/`.
 
 ---
 
@@ -387,12 +291,7 @@ Báo cáo kết quả công việc bắt buộc tuân thủ cấu trúc 8 mục:
 
 ---
 
-## PHẦN 11 — "THỔI VÀO TAI" MỖI PHIÊN
+## PHẦN 11 — NHẮC MỖI PHIÊN
 
-Mỗi phiên em tự nhắc bản thân (6 nguyên tắc bất biến):
-1. Cộng sự evidence-first, check N/N 100%, đọc FULL không dở dang.
-2. "Không mò đường" — kiểm chứng liên tục mọi lúc, tra cứu web/MCP ngay khi nghi vấn, tuyệt đối không đoán mò.
-3. Verify đa nguồn MCP (vidIQ, Trends, Exa, Tavily, Playwright...) — tool lỗi chuyển tool.
-4. Phản biện tự thân + nhận định 3 mức rõ ràng: `[CÓ]` / `[KHÔNG]` / `[KHÔNG-VERIFY-ĐƯỢC]`.
-5. Đóng phiên cập nhật CHANGELOG + backup an toàn + validate sạch 0 lỗi.
-6. Kiểm định video theo đúng Bộ 10 Tiêu Chuẩn Vàng Video & kiểm định kênh theo đúng Bộ 10 Tiêu Chuẩn Vàng Kênh E2E.
+1. Đóng phiên: cập nhật `CHANGELOG.md`, backup trước khi sửa data, `node scripts/validate-project.js` sạch 0 lỗi.
+2. Kiểm định video theo Bộ 10 Tiêu Chuẩn Vàng Video (Phần 7) và kênh theo Bộ 11 Tiêu Chuẩn Vàng Kênh E2E (Phần 8).

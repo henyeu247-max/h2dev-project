@@ -28,14 +28,14 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
   5. Kho nghiên cứu Reverse-Engineering tại `D:\YTB\research-repos\`: 8 repo tinh hoa thế giới (Tencent BrowserSkill, ainovel-cli, drama-skills, make-prompt-seedance2, dola-render-gateway, YouTube.js LuanRT, yt-fts, FckSignups NoSignups).
   6. Nhị phân media PC: FFmpeg N-125856 tích hợp GPU Nvidia CUDA, AV1, H.266, EBU R128; yt-dlp đã nâng cấp lên bản mới nhất `2026.8.19`.
 - Bảng số liệu SSoT Manifest (nguồn scripts/lib/counts.js -> data/counts-manifest.json):
-  + 140 bài học (136 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 113 Pro).
-  + 140/140 media files ffprobe verified (139 file nguyên vẹn, 1 file DRM hỏng audio VIDEO-f59aa7 do lỗi nén nguồn gốc h2dev.vn; 1 file màn hình câm VIDEO-8e0275).
-  + 165 kênh mẫu (152 live · 13 dead; 165/165 có ngày đo đối soát).
+  + 144 learning records (140 VIDEO + 4 Zoom; 27 Free · 117 Pro).
+  + 144/144 file media có trên đĩa, 0 file 0 byte (đo lại 2026-10-14 từ `counts-manifest.json`; kết quả ffprobe từng file: chạy `audit_videos_v2.py`).
+  + 256 kênh mẫu (187 live · 69 dead = 59 DIE 404 + 10 rỗng; 256/256 có `ngay_do`, đo thực tế 2026-10-14).
   + 156 hồ sơ kênh canonical raw (149 unique) phân rã thành **12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm Hoàn Chỉnh)**, có Voice DNA Studio 45s, cờ ngôn ngữ Language Flag, vidIQ velocity & OCR Outliers.
-  + 157 tài liệu học liệu & master prompts (78 Prompts, 20 Reports, 23 Tools, 16 Lists, 11 Khác, 5 SOPs).
-  + 34 ngách YouTube khảo sát (xanh:true 11 ngách đếm boolean strict is True).
+  + 300 tài liệu học liệu & master prompts (theo `kind`: prompt 77 · report 21 · tool 28 · list 14 · other 8 · internal-doc 5 · sop 14 · guide 49 · transcript 40 · sheet 4 · 40 chưa gán).
+  + 34 ngách YouTube khảo sát (xanh:true 10 ngách đếm boolean strict is True).
   + 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng).
-  + Master SQLite WAL Database: 2.014 entries FTS5 trong `h2dev_master.db` và 202 channels / 2.557 videos / 1.385 edges (178 breakout) trong `intelligence.db` (đo 2026-10-09).
+  + Master SQLite WAL Database: 2.251 entries FTS5 trong `h2dev_master.db` và 202 channels / 2.557 videos / 1.385 edges (178 breakout) trong `intelligence.db` (đo 2026-10-09).
 
 ---
 
@@ -55,13 +55,13 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
   1. Media/Thumb > 0B (ffprobe đủ cả luồng video + audio).
   2. Subtitle 3 định dạng (.json, .srt, .txt) đồng bộ 1:1, 0 ảo giác Whisper.
   3. Kênh đối thủ handle @... chuẩn từ khung hình, link YouTube hoạt động.
-  4. Ít nhất 1 cẩm nang SOP chuyên sâu (HTTP 200 cả Local & VPS).
+  4. Ít nhất 1 cẩm nang SOP chuyên sâu (HTTP 200 trên máy chạy dự án).
   5. 4–5 mốc key_timestamps chuẩn xác từng giây với bài giảng.
   6. 5 bài học cốt lõi key_takeaways grounded 100% lời tác giả.
   7. Kỹ thuật edit_sop chi tiết.
   8. Cảnh báo lỗi cạm bẫy chính sách avoid_flags.
   9. Cờ kiểm định visual_audio_checked: true.
-  10. Đồng bộ đa tầng, pass validate-project.js & audit_videos_v2.py (140/140), live URL HTTP 200.
+  10. Đồng bộ đa tầng, pass validate-project.js & audit_videos_v2.py (N/N SKU), URL local HTTP 200.
 - Bộ 11 Tiêu Chuẩn Vàng Hồ Sơ Kênh Mẫu E2E (Reverse-Engineering Dossier):
   1. Định danh & Header (Avatar nét, Chip ID, Chip Ngách, Handle @..., Quốc gia, Badge sống).
   2. 4 Thẻ KPIs định lượng (Subs, Views, Doanh thu ước tính, Sức khỏe).
@@ -74,17 +74,16 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
   9. Top Video sắp xếp theo Most Viewed (Lượt xem giảm dần, video #1 bão view nhất) + Modal Sub song ngữ 4 Tab.
   10. Tình báo đa nguồn (vidIQ velocity, OCR Outlier 100x, Timeline Evolution Audit).
   11. Trạm Vũ Khí Tác Chiến Ba Ngôi (Pipeline/Skill + Prompt Engine Visual/Script/CTR + Dedicated Skill + Lộ trình 5 bước ra quân).
-- Bộ Tiêu Chuẩn Đồng Bộ Fullstack Media (/expand, Audio, Video, UI, VPS Production):
+- Bộ Tiêu Chuẩn Đồng Bộ Fullstack Media (/expand, Audio, Video, UI):
   1. Thẩm định kỹ thuật: ffprobe kiểm tra bitrate, thời lượng > 0, không có file rỗng 0 byte.
   2. Đồng bộ SSoT Data: Cập nhật file JSON chuẩn (music_catalog.json, tai-lieu-full.json) đầy đủ ID, URL, cờ YPP.
   3. Đồng bộ UI toàn diện: Tìm kiếm bắt buộc index `t.id` (MUSIC-xxx), card hiện badge ID, số liệu header/tabs tính động 100%, query version buster (`?v=YYYYMMDD-vXX`) chống stale cache.
-  4. Đồng bộ hạ tầng kép: Dùng SCP đẩy trực tiếp file media gitignored sang VPS (/www/wwwroot/.../assets/...) + Git commit & push cả origin và vps.
-  5. Kiểm định E2E hai đầu: Chạy script test HTTP 200 OK cho cả Local :8899 và Live VPS Production (Cloudflare domain), xác nhận tìm kiếm ID chạy đúng 100%.
+  4. Kiểm định E2E trên máy chạy dự án: Chạy script test HTTP 200 OK tại Local :8899, xác nhận tìm kiếm ID chạy đúng 100%.
 
 ---
 
 ## 5. HỆ THỐNG 13 AGENT SKILLS CHUYÊN DỤNG PHỦ KÍN 15 NHÓM CHỦ ĐỀ
-Điều phối chính xác vào các skill chuyên biệt tại `D:\YTB\.agents\skills\`:
+Điều phối chính xác vào các skill chuyên biệt tại kho skill chung `~/.agents/source/skills/` (thư mục `D:\YTB\.agents\skills\` không còn):
 1. **h2dev-everyday-history:** Lịch sử đời sống / Đồ vật thường nhật / True Origin (Ngách xanh #1 SSoT, Record 29, RPM $10–$24, đối soát bảo tàng thật).
 2. **h2dev-ancient-civilizations:** Lịch sử / Khảo cổ học / Nền văn minh cổ đại / Sumer / Anunnaki (35 kênh H2DEV, 6 Master Tracks, 5 thứ tiếng EN, RU, ES, KR, VI).
 3. **h2dev-senior-wisdom:** Sức khỏe người cao tuổi / Lão hóa / Triết lý dưỡng sinh (42 kênh H2DEV, 100% không giả bác sĩ, loại bỏ hoàn toàn vi phạm YMYL, nhịp 105 WPM).
@@ -144,7 +143,7 @@ Toàn bộ 26 công cụ chạy 100% tại chỗ, phản hồi <450ms, không t�
 ---
 
 ## 8. BẢO TỒN TÀI SẢN (NO_DELETE) & QUY TẮC MỞ RỘNG DỮ LIỆU ĐỘNG
-- Bảo vệ tuyệt đối (NO_DELETE): Không bao giờ xóa, sửa đè tài sản gốc: Video bài giảng, MP4/WEBM, phụ đề 3 định dạng, thumbnails, data-tabs/*.json, catalog gốc, cấu hình server, Windows Services/VPS.
+- Bảo vệ tuyệt đối (NO_DELETE): Không bao giờ xóa, sửa đè tài sản gốc: Video bài giảng, MP4/WEBM, phụ đề 3 định dạng, thumbnails, data-tabs/*.json, catalog gốc, cấu hình server, Windows Services.
 - Quy tắc mở rộng dữ liệu động (Dynamic Scaling):
   + Khi chủ động thêm kênh mẫu mới vào `kenh-mau.json`, kịch bản mới vào `kich-ban.json`, tài liệu mới vào `tai-lieu-full.json`:
   + Bắt buộc chạy ngay: `node scripts/sync-counts.js` để cập nhật `data/counts-manifest.json` và đồng bộ toàn bộ tài liệu SSoT.

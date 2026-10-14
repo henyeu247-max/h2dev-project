@@ -18,7 +18,7 @@ Y:\YTB\
     ├── CHANGELOG.md               # trạng thái vận hành
     ├── CHAY-LAN.md                # hướng dẫn chạy LAN / Tailscale
     ├── index.html · player.html · learn.html
-    ├── server.js                  # HTTP tĩnh · bind 0.0.0.0:8899 · chặn web tại `SENSITIVE_SEGMENTS` (dòng 305)
+    ├── server.js                  # HTTP tĩnh · bind 0.0.0.0:8899 · chặn web tại `SENSITIVE_SEGMENTS` (trong `server.js`)
     ├── package.json · package-lock.json · tailwind.config.js
     ├── css\                       # input.css — nguồn Tailwind → assets/tailwind.css
     ├── H2DEV-OneClick.cmd         # ⭐ khởi động 1 nhấp (wrapper mỏng → scripts\windows\)
@@ -40,8 +40,8 @@ Y:\YTB\
     │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest  # (2 folder *_backup_* cũ đã dời _archive 16/09)
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 144 SKU (27 free · 117 pro — gồm 4 Zoom free)
-    │   ├── kenh-mau.json          # 256 kênh (194 sống · 62 dead ẩn) · ngay_do 256/256
-    │   ├── tai-lieu-full.json     # 300 card (prompt 78 · report 20 · tool 22 · list 16 · other 11 · internal-doc 5)
+    │   ├── kenh-mau.json          # 256 kênh (187 sống · 69 dead ẩn) · ngay_do 256/256 (đo thực tế 2026-10-14: 187 sống · 59 DIE · 10 rỗng)
+    │   ├── tai-lieu-full.json     # 300 card (kind: prompt 77 · report 21 · tool 28 · list 14 · other 8 · internal-doc 5 · sop 14 · guide 49 · transcript 40 · sheet 4 · 40 chưa gán; đo 2026-10-14)
     │   ├── nguon-reup.json        # 27
     │   ├── ngach-xanh.json        # 34 ngách (xanh:true 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
     │   ├── chien-luoc.json        # workflow 11 bước · 4 nguyên tắc
@@ -53,7 +53,7 @@ Y:\YTB\
     │   ├── thumbs\                # 144/144 khớp videos.json + placeholder.svg
     │   └── avatars\ · docs\
     ├── docs\
-    │   ├── VIDEO-*\               # 136/136 SKU: README + description.html
+    │   ├── VIDEO-*\               # 140/140 SKU: README + description.html
     │   ├── ZOOM-*\                # 4 buổi Zoom (ZOOM-01..04) + ZOOM-00 quy trình: README + link tài liệu chi tiết
     │   └── NOI-BO\                # tài sản nội bộ đã chuẩn hóa tên
     │       ├── README.md
@@ -106,12 +106,12 @@ Y:\YTB\
 
 MD rời, prompt, excel, `_tmp_*`, `.bak`, pipeline zip, key.
 
-## Web không serve (`server.js:305` — `SENSITIVE_SEGMENTS`)
+## Web không serve (`SENSITIVE_SEGMENTS` trong `server.js`)
 
-> Cơ chế cũ là mảng `BLOCKED` tại `server.js:150`; **16/09/2026** nâng cấp thành `Set SENSITIVE_SEGMENTS` (dòng 305), so khớp **chữ thường** (chống bypass `/.GIT/config`, `/_PRIVATE/`) và mở rộng danh sách.
+> Cơ chế cũ là mảng `BLOCKED`; **16/09/2026** nâng cấp thành `Set SENSITIVE_SEGMENTS`, so khớp **chữ thường** (chống bypass `/.GIT/config`, `/_PRIVATE/`) và mở rộng danh sách.
 
 `SENSITIVE_SEGMENTS` hiện tại: `.git` · `node_modules` · `_private` · `_backup` · `_audit` · `_internal` · `_drafts` · `_archive` · `_verify` · `_frames` · `_tmp_audio` · `.cache` · `.venv-gpu` · `.zcode` · `logs` · `inbox` · `raw-kenh-goc` · `design-is-2026-08-22` · `raw kênh mẫu tìm kiếm` (historical only)
 
-Ngoài ra chặn theo **tên file**: `.env*` (`:293`) · `*.db` / `*.sqlite*` kèm `-wal/-shm/-journal` · `mcp-keys*` (`:334`).
+Ngoài ra chặn theo **tên file**: `.env*` · `*.db` / `*.sqlite*` kèm `-wal/-shm/-journal` · `mcp-keys*` (số dòng không ghi ở đây vì đổi theo mỗi lần sửa `server.js`; tìm bằng tên trong file).
 
 > Đo lại 16/09/2026: `_private` · `_backup` · `_audit` · `_frames` · `_tmp_audio` · `_drafts` · `_internal` · `raw-kenh-goc` → **403**; `data-tabs/` · `assets/` · `index.html` → **200**.

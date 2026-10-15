@@ -102,9 +102,9 @@
 
   /* ---------- localStorage ---------- */
   function loadWatched() { try { return JSON.parse(localStorage.getItem(WKEY)) || {}; } catch (e) { return {}; } }
-  function saveWatchedAll(map) { try { localStorage.setItem(WKEY, JSON.stringify(map)); syncAdmin(); } catch (e) {} }
+  function saveWatchedAll(map) { try { localStorage.setItem(WKEY, JSON.stringify(map)); syncAdmin(); } catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); } }
   function loadFavs() { try { var a = JSON.parse(localStorage.getItem(FKEY)); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
-  function saveFavs(a) { try { localStorage.setItem(FKEY, JSON.stringify(a)); syncAdmin(); } catch (e) {} }
+  function saveFavs(a) { try { localStorage.setItem(FKEY, JSON.stringify(a)); syncAdmin(); } catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); } }
   function loadRecent() {
     try {
       var r = JSON.parse(localStorage.getItem(RKEY));
@@ -131,7 +131,7 @@
       if (_adminWriteDisabled !== false) return;   // chua biet / biet la chan -> khong gui (tranh 405)
       fetch('/api/admin-state', { method: 'PUT', headers: {'Content-Type':'application/json'}, body: JSON.stringify(state), keepalive: true })
         .catch(function () { /* loi mang: lan sau thu lai */ });
-    } catch (e) {}
+    } catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
   }
   function hydrateAdmin() {
     return fetch('/api/admin-state', {cache:'no-store'}).then(function (r) { return r.ok ? r.json() : null; }).then(function (s) {

@@ -446,7 +446,7 @@
           localStorage.setItem('h2dev-recent', JSON.stringify(s.recent));
         }
         localStorage.setItem('h2dev-admin', JSON.stringify(Object.assign({}, s, { watched: mergedW, favorites: [...favSet] })));
-      } catch (e) {}
+      } catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
     }
 
     const BOTTOM_TABS = ['tatca', 'video', 'ngachxanh', 'rawkenh', 'kenh-mau']; // PHASE 1: bottom-nav toi da 5 muc

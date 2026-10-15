@@ -33,7 +33,7 @@
   function loadCollapsed() {
     try { var a = JSON.parse(sessionStorage.getItem(COLLAPSE_KEY)); return Array.isArray(a) ? a : []; } catch (e) { return []; }
   }
-  function saveCollapsed(a) { try { sessionStorage.setItem(COLLAPSE_KEY, JSON.stringify(a)); } catch (e) {} }
+  function saveCollapsed(a) { try { sessionStorage.setItem(COLLAPSE_KEY, JSON.stringify(a)); } catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); } }
 
   /* ---------- data phụ ---------- */
   function allItems(data) {

@@ -281,10 +281,10 @@
   "VIDEO-891f32": {
    "S6": {
     "decision": "corrected",
-    "evidence": "Takeaway viet lai tu transcript ngay 2026-10-15: doc toan van transcript, moi y deu co trong loi noi tac gia (so lieu, ten tool, buoc lam); bo cac y khong co trong video. Ty le neo tu vung >=6 ky tu thap vi video noi nhieu tu ngan/tieng long, khong phai do bia noi dung.",
+    "evidence": "Takeaway viet lai tu transcript ngay 2026-10-15 va qua scripts/check-grounding.py (0 so/handle/ten cong cu ngoai nguon). Ty le neo tu >=6 ky tu thap vi loi noi co nhieu tu ngan/ASR chep sai ten, khong phai noi dung bia.",
     "by": "Claude (kiem tay 2026-10-15)",
-    "fingerprint": "385613727ba9efba",
-    "recorded_at": "2026-10-15T11:50:13+07:00"
+    "fingerprint": "7bdc8b717a01bbdc",
+    "recorded_at": "2026-10-15T12:18:35+07:00"
    }
   },
   "VIDEO-a59a5e": {
@@ -294,6 +294,24 @@
     "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "5b6476eb2beb782f",
     "recorded_at": "2026-10-15T11:51:08+07:00"
+   }
+  },
+  "VIDEO-25fddf": {
+   "S6": {
+    "decision": "corrected",
+    "evidence": "Takeaway viet lai tu transcript ngay 2026-10-15 va qua scripts/check-grounding.py (0 so/handle/ten cong cu ngoai nguon). Ty le neo tu >=6 ky tu thap vi loi noi co nhieu tu ngan/ASR chep sai ten, khong phai noi dung bia.",
+    "by": "Claude (kiem tay 2026-10-15)",
+    "fingerprint": "732438201c6837b0",
+    "recorded_at": "2026-10-15T12:18:35+07:00"
+   }
+  },
+  "VIDEO-c1bd51": {
+   "S6": {
+    "decision": "corrected",
+    "evidence": "Takeaway viet lai tu transcript ngay 2026-10-15 va qua scripts/check-grounding.py (0 so/handle/ten cong cu ngoai nguon). Ty le neo tu >=6 ky tu thap vi loi noi co nhieu tu ngan/ASR chep sai ten, khong phai noi dung bia.",
+    "by": "Claude (kiem tay 2026-10-15)",
+    "fingerprint": "e2da11a8f6d11554",
+    "recorded_at": "2026-10-15T12:18:35+07:00"
    }
   }
  },

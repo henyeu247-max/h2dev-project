@@ -28,4 +28,4 @@ Load `docs/solutions/legacy-verified-lessons-20261002.md` only when its topic is
 
 - H2DEV-UI-001 đến H2DEV-UI-012 (UI-standard đợt 1, 2026-10-09): xem `docs/solutions/2026-10-09-ui-standard-round1.md`.
 - H2DEV-UI-013 đến H2DEV-UI-037 (UI-standard đợt 2, 2026-10-09): xem `docs/solutions/2026-10-09-ui-standard-round2.md`.
-- Bài học dự án `H2DEV-SCAR-006…029` (mã cũ `SCAR-006…028`): xem `docs/solutions/h2dev-scar-log.md`.
+- Bài học dự án `H2DEV-SCAR-006…030` (mã cũ `SCAR-006…028`): xem `docs/solutions/h2dev-scar-log.md`.

@@ -92,7 +92,7 @@ function saveStore(m){
     const favs=JSON.parse(localStorage.getItem('h2dev-fav')||'[]');
     const recent=JSON.parse(localStorage.getItem('h2dev-recent')||'null');
     localStorage.setItem('h2dev-admin', JSON.stringify({role:'admin',version:1,updatedAt:Date.now(),watched:m,favorites:Array.isArray(favs)?favs:[],recent:recent}));
-  }catch(e){}
+  }catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
 }
 function fmtTime(sec){ const n=Math.max(0, Math.floor(Number(sec)||0)); const m=Math.floor(n/60), s=Math.floor(n%60); return m+':'+String(s).padStart(2,'0'); }
 
@@ -167,7 +167,7 @@ function setTheaterMode(active, save=true){
     }
   }
   if(save){
-    try{ localStorage.setItem(THEATER_KEY, active ? '1' : '0'); }catch(e){}
+    try{ localStorage.setItem(THEATER_KEY, active ? '1' : '0'); }catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
   }
 }
 function setPlayerTab(tab, btn) {
@@ -715,7 +715,7 @@ window.addEventListener('keydown', (e)=>{
         }
         localStorage.setItem('h2dev-admin', JSON.stringify(Object.assign({}, adminState, { watched: mergedW, favorites: [...favSet] })));
       }
-    } catch(e) {}
+    } catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
     const store=loadStore();
     const rec=store[sku]||{watched:false,note:'',t:0,d:0};
     const stateEl=document.getElementById('pstate');
@@ -784,7 +784,7 @@ window.addEventListener('keydown', (e)=>{
       const recentPayload={sku:sku,ts:Date.now(),nextSku:nextItem?nextItem.sku:null};
       localStorage.setItem('h2dev-recent', JSON.stringify(recentPayload));
       localStorage.setItem('recentWatched', JSON.stringify({item_id:sku,item_name:v.title,next_video_url:nextItem?nextItem.mp4:null}));
-    }catch(e){}
+    }catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
 
     /* auto-save progress every 3s while playing + mark watched at 95% */
     /* auto-save progress every 3s while playing + realtime transcript sync */

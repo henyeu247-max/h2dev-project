@@ -7056,29 +7056,43 @@
     "last_verified": "2026-10-09"
   },
   "VIDEO-b380a1": {
+    "sku": "VIDEO-b380a1",
+    "title": "Share Key (ngách cực nhỏ) view Việt mới và hướng dẫn tự tạo prompt lấy kịch bản theo chủ yếu bất kỳ - UPDATE 8/8/2025",
+    "actual_topic": "Khai phá Micro-Niche view Việt Nam mới tinh & Kỹ thuật Clone giọng MC Lại Văn Sâm làm video triết lý đời sống",
+    "category_group": "ngach_xanh",
+    "niche_primary": "Triết Lý Nhân Sinh View Việt",
+    "niche_id": "vn-life-philosophy",
+    "target_market": "🇻🇳 Việt Nam",
+    "market_code": "VN",
     "key_takeaways": [
-      "Ngách nhỏ view Việt: Dễ tiếp cận khán giả trong nước, lượt xem tăng trưởng nhanh và ổn định.",
-      "Bóc tách kênh mẫu Radio Đạo và Đời với các video hàng trăm nghìn view chỉ sau vài ngày.",
-      "Công thức xây dựng Prompt Master để AI tự động phân tích và tạo kịch bản theo bất kỳ chủ đề nào.",
-      "Nghệ thuật chạm vào lòng trắc ẩn và đạo lý làm người qua các câu chuyện đời thường xúc động.",
-      "Thiết kế thumbnail chữ lớn màu vàng trên nền Phật giáo hoặc không gian đạo đời trang nghiêm."
+      "Lợi thế làm View Việt cho người mới: Thị trường Việt Nam dễ tiếp cận, dễ hiểu tâm lý khán giả, dễ kiểm tra độ tự nhiên của văn phong và là bàn đạp hoàn hảo để luyện tập kỹ năng trước khi đánh thị trường ngoại.",
+      "Sức mạnh của Micro-Niche triết lý cuộc sống: Kênh mới chỉ 16 video nhưng view cực kỳ đều đặn nhờ khai thác góc nhìn sâu lắng về đối nhân xử thế, lòng người và những bài học tuổi xế chiều.",
+      "Ứng dụng Clone giọng MC gạo cội: Sử dụng công nghệ Voice AI clone phong cách trầm ấm, từng trải của MC Lại Văn Sâm tạo sự tin tưởng tuyệt đối và giữ chân người nghe từ đầu đến cuối video.",
+      "Kỹ thuật tải tư liệu âm thanh chuẩn: Hướng dẫn cách dùng trình duyệt Cốc Cốc hoặc tiện ích bắt link để tải video chất lượng cao từ các chương trình phỏng vấn nhằm lấy mẫu giọng nói sạch nhất.",
+      "Chiến lược sản xuất video đơn giản nhưng hiệu quả cao: Video không cần dựng kỹ xảo phức tạp, chỉ cần ảnh chân dung bác Lại Văn Sâm hoặc phong cảnh bình yên kết hợp sóng nhạc nhẹ và phụ đề chạy từng chữ."
     ],
     "edit_sop": {
-      "primary": "Quy trình 5 bước kỹ thuật edit & SOP né quét AI bài giảng",
+      "primary": "SOP sản xuất video triết lý cuộc sống view Việt kết hợp giọng đọc AI truyền cảm",
       "additional": [
-        "1. Nạp kịch bản đối thủ vào Prompt Master để bóc tách thông điệp nhân văn cốt lõi.",
-        "2. Yêu cầu AI sáng tạo kịch bản mới với các nhân vật và bối cảnh làng quê Việt Nam gần gũi.",
-        "3. Chọn giọng đọc AI tiếng Việt truyền cảm, ấm áp (giọng nam miền Bắc hoặc nữ miền Nam).",
-        "4. Lồng nhạc thiền hoặc tiếng đàn tranh nhẹ nhàng ở mức âm lượng dịu êm -24 dB.",
-        "5. Chèn phụ đề lớn ở giữa màn hình với hiệu ứng hiện chữ trang nhã theo nhịp đọc."
+        "Tìm kiếm video phỏng vấn có giọng đọc chuẩn, dùng Cốc Cốc tải về và trích xuất đoạn âm thanh 2 phút sạch tạp âm.",
+        "Nạp mẫu âm thanh vào công cụ Voice AI để tạo giọng đọc đặc trưng mang phong cách trầm ấm, chiêm nghiệm.",
+        "Dùng Claude với prompt chuyên dụng viết kịch bản triết lý nhân sinh dài 1.500 - 2.500 từ, cấu trúc câu gãy gọn, giàu hình ảnh.",
+        "Tạo âm thanh từ kịch bản, đưa vào CapCut kết hợp hình ảnh minh họa chất lượng cao có chuyển cảnh mượt mà.",
+        "Thêm nhạc nền không bản quyền (âm lượng 8-10%), xuất phụ đề tự động và kiểm tra toàn bộ trước khi đăng tải."
       ]
     },
     "avoid_flags": [
-      "Tránh bịa đặt chuyện tâm linh nhảm nhí hoặc đơm đặt chuyện đạo đức giả tạo.",
-      "Tránh sử dụng hình ảnh chất lượng thấp mờ nhòe gây phản cảm cho người xem.",
-      "Tránh đặt tiêu đề đụng chạm đến tín ngưỡng tôn giáo gây tranh cãi gay gắt."
+      "Tuyệt đối không dùng giọng clone để nói về chính trị, tôn giáo cực đoan, xúc phạm cá nhân hoặc quảng cáo sản phẩm thuốc chữa bệnh.",
+      "Không để lộ tên tuổi thật của người nổi tiếng trong tiêu đề nếu nội dung không phải phát ngôn chính thức của họ nhằm tránh khiếu nại bản quyền hình ảnh.",
+      "Tránh chọn nhạc nền có bản quyền Content ID của các hãng đĩa Việt Nam; chỉ dùng nhạc từ YouTube Audio Library hoặc dịch vụ bản quyền sạch."
     ],
-    "verified_expert_summary": true,
+    "tools_mentioned": [
+      "Cốc Cốc Browser",
+      "Claude AI Pro",
+      "Voice AI Clone Tool",
+      "CapCut PC"
+    ],
+    "channels_mentioned": [],
     "key_timestamps": [
       {
         "seconds": 0,
@@ -7120,7 +7134,13 @@
         "time": "29:01",
         "label": "Chốt lại quy trình làm và ngách nhỏ; ví dụ sức khỏe người già, chuyện người già"
       }
-    ]
+    ],
+    "analysis_method": "verified_expert_summary",
+    "accuracy_status": "verified_expert_summary",
+    "visual_audio_checked": true,
+    "verified_expert_summary": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-b380a1/transcript.txt"
   },
   "VIDEO-b559c8": {
     "sku": "VIDEO-b559c8",

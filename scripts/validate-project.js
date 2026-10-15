@@ -371,7 +371,43 @@ try {
       }
     }
   } catch (parseError) {
-    errors.push(`Khong chay duoc check-ui-classes.js: ${uiError.message}`);
+    errors.push(`Khong chay duoc check-ui-classes.js: ${parseError.message}`);
+  }
+}
+
+// Guard cặp khóa hoa/thường trong video_insights.json: player-main.js tra theo thứ tự
+// resolvedSku → sku → lower → upper nên hai bản lệch nhau = người xem thấy bản cũ.
+{
+  const insights = readJson('data/video_insights.json') || {};
+  const drifted = [];
+  for (const key of Object.keys(insights)) {
+    const m = /^VIDEO-([0-9A-F]{6})$/.exec(key);
+    if (!m) continue;
+    const twin = `VIDEO-${m[1].toLowerCase()}`;
+    if (!insights[twin]) continue;
+    const a = Object.assign({}, insights[key]);
+    const b = Object.assign({}, insights[twin]);
+    delete a.sku; delete b.sku;
+    if (JSON.stringify(a) !== JSON.stringify(b)) drifted.push(key);
+  }
+  if (drifted.length) errors.push(`video_insights.json: cặp khóa hoa/thường lệch nội dung: ${drifted.join(', ')} — chép bản chữ hoa sang chữ thường`);
+}
+
+// Guard tài liệu hướng dẫn trỏ tới script không tồn tại (script bị xoá mà hướng dẫn còn ghi).
+{
+  const docFiles = [];
+  const hub = path.join(ROOT, 'knowledge-hub', 'docs');
+  if (fs.existsSync(hub)) fs.readdirSync(hub).filter(f => f.endsWith('.md')).forEach(f => docFiles.push(path.join(hub, f)));
+  docFiles.push(path.join(ROOT, 'AGENTS.md'));
+  for (const file of docFiles) {
+    if (!fs.existsSync(file)) continue;
+    const text = fs.readFileSync(file, 'utf8');
+    const seen = new Set();
+    for (const m of text.matchAll(/\bnode\s+(scripts\/[A-Za-z0-9_./-]+\.(?:js|cjs))/g)) {
+      if (seen.has(m[1])) continue;
+      seen.add(m[1]);
+      if (!exists(m[1])) errors.push(`${path.relative(ROOT, file)}: lệnh "node ${m[1]}" trỏ tới script không tồn tại`);
+    }
   }
 }
 

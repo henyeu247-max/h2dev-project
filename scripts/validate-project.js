@@ -375,6 +375,26 @@ try {
   }
 }
 
+// Guard link trang cố định trong JS: href="/xxx.html" phải trỏ tới file có thật (vd. nút /watch-f59aa7.html từng 404).
+{
+  const jsDir = path.join(ROOT, 'assets', 'app');
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : (e.name.endsWith('.js') ? [path.join(d, e.name)] : []));
+  const dead = [];
+  for (const file of walk(jsDir)) {
+    const text = fs.readFileSync(file, 'utf8');
+    for (const m of text.matchAll(/href=["'](\/[A-Za-z0-9_-]+\.html)(?:[?#"'])/g)) {
+      if (!exists(m[1].slice(1))) dead.push(`${path.relative(ROOT, file)} → ${m[1]}`);
+    }
+  }
+  if (dead.length) errors.push(`JS trỏ tới trang HTML không tồn tại: ${[...new Set(dead)].join('; ')}`);
+}
+
+// Guard phân loại kênh mẫu: mọi kênh phải có niche + markets (kênh nhập sau hay thiếu → lọc/thống kê sai).
+{
+  const noClass = channels.filter(c => !c.niche || !Array.isArray(c.markets) || !c.markets.length).map(c => c.handle);
+  if (noClass.length) errors.push(`kenh-mau.json: ${noClass.length} kênh thiếu niche/markets: ${noClass.slice(0, 5).join(', ')}${noClass.length > 5 ? ', …' : ''} — gán niche/markets kèm phanLoaiNguon (xem scripts/apply-kenh-mau-phanloai.js)`);
+}
+
 // Guard cặp khóa hoa/thường trong video_insights.json: player-main.js tra theo thứ tự
 // resolvedSku → sku → lower → upper nên hai bản lệch nhau = người xem thấy bản cũ.
 {

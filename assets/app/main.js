@@ -1109,19 +1109,19 @@
           try {
             const pRes = await fetch(dossierPath + '/channel-profile.json');
             if (pRes.ok) profile = await pRes.json();
-          } catch(e) {}
+          } catch(e) { console.warn('[H2DEV] đọc channel-profile.json lỗi', e); }
           try {
             const tvRes = await fetch(dossierPath + '/top-videos.json');
             if (tvRes.ok) topVideos = await tvRes.json();
-          } catch(e) {}
+          } catch(e) { console.warn('[H2DEV] đọc top-videos.json lỗi', e); }
           try {
             const vRes = await fetch(dossierPath + '/voice_profile.json');
             if (vRes.ok) voiceProfile = await vRes.json();
-          } catch(e) {}
+          } catch(e) { console.warn('[H2DEV] đọc voice_profile.json lỗi', e); }
           try {
             const tkRes = await fetch(dossierPath + '/production_toolkit.json');
             if (tkRes.ok) productionToolkit = await tkRes.json();
-          } catch(e) {}
+          } catch(e) { console.warn('[H2DEV] đọc production_toolkit.json lỗi', e); }
         }
 
         const pData = profile || {};
@@ -2288,11 +2288,11 @@
         try {
           const res = await fetch(dossierPath + '/transcripts/' + videoId + '_transcript.json');
           if (res.ok) trData = await res.json();
-        } catch(e) {}
+        } catch(e) { console.warn('[H2DEV] đọc transcript dossier lỗi', e); }
         try {
           const sRes = await fetch(dossierPath + '/transcripts/' + videoId + '_summary_vi.md');
           if (sRes.ok) summaryMd = await sRes.text();
-        } catch(e) {}
+        } catch(e) { console.warn('[H2DEV] đọc summary dossier lỗi', e); }
 
         const segments = (trData && trData.segments) ? trData.segments : [];
         const fullEn = (trData && trData.fullText) ? trData.fullText : segments.map(s => s.text).join(' ');

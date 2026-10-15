@@ -1,6 +1,10 @@
 # Tiến độ — H2DEV-Project
 
-> Cập nhật cuối phiên: **2026-10-09** (cuối vòng 3). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
+> Cập nhật cuối phiên: **2026-10-15** (đợt 10). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
+
+## Phiên 2026-10-15 (đợt 10) — sửa nốt tồn đọng thực tế (chi tiết: `CHANGELOG.md` đợt 10)
+- Đã đóng: link xem gốc chết (`/watch-f59aa7.html`), 49 kênh thiếu `niche`/`markets` (có gate), 38 cờ S6 (viết lại takeaway theo transcript) và cờ A10 của audit (`audit_videos_v2`: 144/144 sạch, 0 cờ), catch rỗng ở `main.js`/`player-main.js` đổi sang `console.warn`. `assets/tailwind.css` không còn lệch (`check-ui-classes` OK).
+- Còn mở: `tools_mentioned`/`edit_sop` có thể liệt kê công cụ không có trong lời nói (chưa đo chắc vì ASR chép sai tên); 67 catch rỗng ở file khác (`count-empty-catch.js --list`); M5 (thiết bị thật) BLOCKED; M7 (3 script trong `_archive/2026-10-09-audit-scripts/`) chưa rõ chủ sở hữu.
 
 ## Phiên 2026-10-14 — sửa gaps (chi tiết: `CHANGELOG.md` mục 2026-10-14, báo cáo `docs/reports/2026-10-14-gap-audit.md`)
 - **Deploy (đợt 7):** `main` = `origin/main` = `vps main` = `0627819`; kiểm 3 vòng PASS (xem CHANGELOG đợt 7). F2 đã đóng: 4 SKU mới trên VPS 200/206. Đã xử lý ở đợt 8 (2026-10-15): RỖNG, `fetch_h2dev_video.cjs` (giữ), `B380A1`. Đợt 9 đã gộp nốt mọi sửa dở (`ngach-xanh.json`, `kich-ban.json`, `voice-dna-probe-final.json`, `h2dev-components-lesson-row.css`, 10 `description.txt`) và nghiệm thu; không còn thay đổi chưa commit.
@@ -47,7 +51,7 @@
 - Nút Quay lại về đầu trang `/tatca`, không khôi phục vị trí cuộn (chấp nhận được; cần can thiệp bộ định tuyến).
 - Nội dung chính sách YouTube cập nhật 2026-09-16: việc của người sở hữu dữ liệu.
 - Chưa kiểm trên thiết bị thật (M5, BLOCKED).
-- `assets/tailwind.css` lệch 38 class so với cấu hình; chưa dựng lại (M6).
+- ~~`assets/tailwind.css` lệch 38 class (M6)~~: đã đo lại 2026-10-15, không còn lệch.
 - Tailnet có thiết bị của `masterdev8386@`; cần kiểm ACL.
 - Ba script (`analyze_h2dev_intelligence.js`, `audit_chienluoc_web.js`, `check_chienluoc_links.js`) nằm trong `_archive/2026-10-09-audit-scripts/` từ 08:44; chủ sở hữu chưa xác định (M7). Để nguyên.
 - Việc khác đang sửa trong cây làm việc: `assets/app/main.js`, `assets/app/tabs/content.js`, `data-tabs/chien-luoc.json`, `docs/reports/part5_to_8_deep_intelligence.json` và nhiều script mới. Không thuộc vòng này.
@@ -55,5 +59,5 @@
 
 ## Ghi chú
 
-- Không push, không deploy.
+- Đã deploy đợt 10 (xem CHANGELOG).
 - Số đếm dữ liệu không đổi (`sync-counts --check` mã thoát 0). `docs/WORKING_STATE.md` không chỉnh.

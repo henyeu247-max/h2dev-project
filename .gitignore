@@ -67,3 +67,5 @@ models/scrfd/*.onnx
 models/arcface/*.onnx
 _tools/
 assets/voice-samples-tmp/
+.pi/
+.playwright-mcp/

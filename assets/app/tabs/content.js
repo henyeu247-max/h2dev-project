@@ -1811,7 +1811,7 @@ async function renderKenh() {
     if (statusFilter === 'dead' && !ch.dead) return false;
     if (state.kenhNiche && (ch.niche || 'Khác') !== state.kenhNiche) return false;
     if (!q) return true;
-    const hay = [ch.handle || '', (ch.handle || '').replace(/^@/, ''), ch.niche, (ch.niches || []).join(' '), (ch.markets || []).join(' '), ch.url, ch.ngay_do || '', ch.dead ? 'die chết 404 gỡ' : 'sống live', ch.deadNote || ''].join(' ').toLowerCase();
+    const hay = [ch.handle || '', (ch.handle || '').replace(/^@/, ''), ch.niche, (ch.niches || []).join(' '), (ch.markets || []).join(' '), ch.url, ch.ngay_do || '', ch.dead ? (ch.deadKind === 'empty' ? 'die rỗng trống empty 0 video' : 'die chết 404 gỡ') : 'sống live', ch.deadNote || ''].join(' ').toLowerCase();
     return SC.matchesQuery([hay], q);
   }).slice().sort((a, b) => {
     if (!statusFilter) {
@@ -1882,12 +1882,12 @@ ${grouped.map(g => {
         <a href="${esc(ch.url)}" target="_blank" rel="noopener noreferrer" class="card p-3 flex items-center gap-3 min-w-0 overflow-hidden kenh-card-dead" title="${esc(ch.deadNote || 'Kênh đã dừng hoặc bị YouTube gỡ')}">
           <div class="relative shrink-0">
             ${avatarHtml(ch)}
-            <span class="kenh-dead-stamp">DIE</span>
+            <span class="kenh-dead-stamp">${ch.deadKind === 'empty' ? 'RỖNG' : 'DIE'}</span>
           </div>
           <div class="min-w-0 flex-1">
             <div class="flex items-center justify-between gap-1.5">
               <div class="text-sm font-semibold truncate kenh-dead-title">${esc(ch.handle)}</div>
-              <span class="badge badge-red font-bold text-xs uppercase tracking-wider shrink-0">DIE · 404</span>
+              <span class="badge badge-red font-bold text-xs uppercase tracking-wider shrink-0">${ch.deadKind === 'empty' ? 'RỖNG · 0 VIDEO' : 'DIE · 404'}</span>
             </div>
             <div class="text-xs kenh-dead-note font-medium truncate mt-0.5" title="${esc(ch.deadNote || '')}">${esc(ch.deadNote || 'Đã dừng / 404')}</div>
             <div class="text-xs text-gray-500 truncate mt-0.5">${esc(ch.niche || 'Khác')} · ${ch.count || 1} video H2DEV (dẫn chứng)</div>

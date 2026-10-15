@@ -1,3 +1,10 @@
+## 2026-10-15 (đợt 8) — XỬ LÝ 3 TỒN ĐỌNG SAU DEPLOY TỪ GỐC
+
+- **Kênh RỖNG hiển thị "DIE" (gốc: phần `deadKind` của `content.js` bị bỏ khỏi commit vì lẫn WIP phiên khác):** đưa lên 3 hunk `renderKenh` (nhãn "RỖNG", badge "RỖNG · 0 VIDEO", từ khoá tìm kiếm). Kiểm trên trình duyệt thật: nhãn vừa khung (43/44 px, không bị cắt), thẻ DIE giữ "DIE · 404". Bump `uifix81` → `uifix82` (3 file HTML + tên cache `sw.js`) để người dùng nhận JS mới.
+- **`scripts/fetch_h2dev_video.cjs` — giữ:** `knowledge-hub/docs/HUONG-DAN-TAI-VIDEO-H2DEV.md` và CHANGELOG ghi đây là công cụ tải chính thức; bản trong `_archive/` bị gitignore nên không phải nơi lưu thật. Gốc lỗi là xoá script mà không sửa tài liệu → thêm gate (dưới).
+- **`VIDEO-B380A1` hoa/thường (gốc: bản chữ thường chỉ có 5 trường, nội dung cũ, mà `player-main.js` tra chữ thường trước):** chép nguyên bản chữ hoa sang chữ thường; 28/28 cặp hoa/thường nay đồng nhất.
+- **Gate mới trong `validate-project.js` (đã probe 2 chiều: tiêm lỗi → FAIL, khôi phục → PASS, file byte-identical):** (1) cặp khóa hoa/thường của `video_insights.json` phải giống nhau (trừ `sku`); (2) lệnh `node scripts/...` trong `knowledge-hub/docs/*.md` và `AGENTS.md` phải trỏ tới script có thật. Gate (2) lộ thêm 3 lệnh chết trong hướng dẫn tải video (`check-ui-full`, `check-ui-structure`, `check-broken-refs`) → thay bằng `check-ui-classes`, `check-reconcile-handles`, `sync-counts --check`. Sửa luôn lỗi tham chiếu biến `uiError` → `parseError` trong khối `catch` của validator.
+
 ## 2026-10-14 (đợt 7) — DEPLOY LÊN VPS VÀ ORIGIN
 
 - **Đẩy:** nhánh `ui/ui-standard-2026-10-09` gộp vào `main` bằng commit `0627819` (hai cha: `2cdb757` là VPS main, `1d5e767` là commit phần đã stage; cây = `1d5e767`). Không xoá file nào trên VPS. `origin/main` và `vps main` cùng trỏ `0627819`. 314 commit VPS song song (cùng tiêu đề, khác SHA) nay nằm trên GitHub; không force-push.

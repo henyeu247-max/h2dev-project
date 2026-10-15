@@ -35,9 +35,9 @@ Script dùng endpoint public đúng, lấy player link mới và đồng bộ k�
 
 ```text
 node scripts/validate-project.js
-node scripts/check-ui-full.js
-node scripts/check-ui-structure.js
-node scripts/check-broken-refs.js
+node scripts/check-ui-classes.js
+node scripts/check-reconcile-handles.js
+node scripts/sync-counts.js --check
 ```
 
 Video mẫu `VIDEO-3a38f9` đã pass flow này: 81/81 segment, 147,537,949 bytes, 1920x1080, 671.467 giây.

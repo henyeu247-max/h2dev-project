@@ -395,6 +395,19 @@ try {
   if (noClass.length) errors.push(`kenh-mau.json: ${noClass.length} kênh thiếu niche/markets: ${noClass.slice(0, 5).join(', ')}${noClass.length > 5 ? ', …' : ''} — gán niche/markets kèm phanLoaiNguon (xem scripts/apply-kenh-mau-phanloai.js)`);
 }
 
+// Guard bám transcript: edit_sop/avoid_flags/sop_steps/key_takeaways/tools_mentioned/channels_mentioned phải có số,
+// @handle, tên công cụ nằm trong transcript hoặc tài liệu kèm của chính video (scripts/check-grounding.py --live).
+{
+  const cp = require('child_process');
+  const r = cp.spawnSync('py', ['-3', path.join('scripts', 'check-grounding.py'), '--live'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 });
+  if (r.error || r.status === null) {
+    console.warn('[validate] bỏ qua guard bám transcript: không chạy được Python (' + (r.error ? r.error.message : 'status null') + ')');
+  } else if (r.status !== 0) {
+    const lines = String(r.stdout || '').split('\n').filter(Boolean);
+    errors.push(`video_insights.json: ${lines[lines.length - 1]} — ví dụ: ${lines.slice(0, 3).join(' | ').slice(0, 300)} (chạy py -3 scripts/check-grounding.py --live)`);
+  }
+}
+
 // Guard cặp khóa hoa/thường trong video_insights.json: player-main.js tra theo thứ tự
 // resolvedSku → sku → lower → upper nên hai bản lệch nhau = người xem thấy bản cũ.
 {

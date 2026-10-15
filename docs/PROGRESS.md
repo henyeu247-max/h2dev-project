@@ -1,10 +1,14 @@
 # Tiến độ — H2DEV-Project
 
-> Cập nhật cuối phiên: **2026-10-15** (đợt 10). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
+> Cập nhật cuối phiên: **2026-10-15** (đợt 11). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
+
+## Phiên 2026-10-15 (đợt 11) — neo nội dung sinh vào transcript (H2DEV-SCAR-030; chi tiết `CHANGELOG.md` đợt 11)
+- Đã đóng: tools/edit_sop/avoid_flags/sop_steps/key_takeaways/channels của 144 video viết lại từ nguồn thật; gate `check-grounding.py --live` (0 ungrounded) nằm trong `validate-project`; S5 chỉ báo khi thiếu khoá; 7 catch rỗng mất dữ liệu → `console.warn`. Cache `uifix85`.
+- Còn mở: 58 catch rỗng best-effort; tên công cụ suy từ bí danh ASR; `visual_audio_checked`/`accuracy_status` và `assets/docs/*.md` chưa kiểm; M5 BLOCKED; M7 chưa rõ chủ.
 
 ## Phiên 2026-10-15 (đợt 10) — sửa nốt tồn đọng thực tế (chi tiết: `CHANGELOG.md` đợt 10)
 - Đã đóng: link xem gốc chết (`/watch-f59aa7.html`), 49 kênh thiếu `niche`/`markets` (có gate), 38 cờ S6 (viết lại takeaway theo transcript) và cờ A10 của audit (`audit_videos_v2`: 144/144 sạch, 0 cờ), catch rỗng ở `main.js`/`player-main.js` đổi sang `console.warn`. `assets/tailwind.css` không còn lệch (`check-ui-classes` OK).
-- Còn mở: `tools_mentioned`/`edit_sop` có thể liệt kê công cụ không có trong lời nói (chưa đo chắc vì ASR chép sai tên); 67 catch rỗng ở file khác (`count-empty-catch.js --list`); M5 (thiết bị thật) BLOCKED; M7 (3 script trong `_archive/2026-10-09-audit-scripts/`) chưa rõ chủ sở hữu.
+- (Đã đóng ở đợt 11: `tools_mentioned`/`edit_sop`.) Còn mở lúc đó: 67 catch rỗng ở file khác (`count-empty-catch.js --list`); M5 (thiết bị thật) BLOCKED; M7 (3 script trong `_archive/2026-10-09-audit-scripts/`) chưa rõ chủ sở hữu.
 
 ## Phiên 2026-10-14 — sửa gaps (chi tiết: `CHANGELOG.md` mục 2026-10-14, báo cáo `docs/reports/2026-10-14-gap-audit.md`)
 - **Deploy (đợt 7):** `main` = `origin/main` = `vps main` = `0627819`; kiểm 3 vòng PASS (xem CHANGELOG đợt 7). F2 đã đóng: 4 SKU mới trên VPS 200/206. Đã xử lý ở đợt 8 (2026-10-15): RỖNG, `fetch_h2dev_video.cjs` (giữ), `B380A1`. Đợt 9 đã gộp nốt mọi sửa dở (`ngach-xanh.json`, `kich-ban.json`, `voice-dna-probe-final.json`, `h2dev-components-lesson-row.css`, 10 `description.txt`) và nghiệm thu; không còn thay đổi chưa commit.

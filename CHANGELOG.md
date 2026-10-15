@@ -1,3 +1,13 @@
+## 2026-10-15 (đợt 11) — NEO NỘI DUNG SINH VÀO LỜI NÓI THẬT CỦA TỪNG VIDEO (H2DEV-SCAR-030)
+
+- **Vấn đề:** `tools_mentioned`, `edit_sop`, `avoid_flags`, `sop_steps`, `key_takeaways`, `channels_mentioned` của `video_insights.json` chứa số, `@handle`, tên công cụ không có trong transcript/tài liệu đính kèm của video, và hiện thẳng trên Player.
+- **Sửa:** viết lại các trường trên cho 144 video (164 khoá hoa/thường, đồng bộ) chỉ từ transcript + tiêu đề + `assets/docs/<SKU>/*.txt|csv` (`scripts/apply-grounded-fields.py`); `key_takeaways` viết lại cho 103 khoá; bỏ 61 mục `channels_mentioned` không có bằng chứng; video không nói cảnh báo thì `avoid_flags: []`. Sao lưu ở `_backup/20261015-s6/`.
+- **Gate mới:** `scripts/check-grounding.py --live` (nối vào `validate-project.js`): mọi số/handle/tên Latin phải có trong corpus của video; probe hai chiều (tiêm "90% / 60fps" → FAIL, khôi phục → PASS, sha1 giống nhau).
+- **Audit:** S5 chỉ báo khi `avoid_flags` thiếu/None (`[]` hợp lệ). `manual-review-evidence.json` thêm S6 corrected cho 25fddf, 891f32, c1bd51. `audit_videos_v2`: 144/144 sạch.
+- **Catch rỗng:** 7 chỗ làm mất dữ liệu (ghi localStorage) ở `main.js`, `player-main.js`, `h2dev-core.js`, `learn.js` đổi sang `console.warn`; `count-empty-catch.js` còn 58 (cố ý best-effort: focus/storage/abort/pause).
+- **Giới hạn còn lại:** một số tên công cụ suy ra từ bí danh ASR (MiniMax, Gemini, "Trình duyệt Microsoft"); cờ `visual_audio_checked`/`accuracy_status` chưa kiểm lại; `assets/docs/*.md` (SOP) chưa kiểm; M5 BLOCKED; M7 chưa rõ chủ.
+- **Bump `uifix84` → `uifix85`** (3 file HTML + `sw.js`) vì `main.js`, `player-main.js`, `h2dev-core.js`, `learn.js` đổi.
+
 ## 2026-10-15 (đợt 10) — SỬA NỐT CÁC TỒN ĐỌNG THỰC TẾ SAU NGHIÊN CỨU
 
 - **Nút "Xem Bản Gốc Full Tiếng" dẫn vào `/watch-f59aa7.html` không tồn tại (gốc: `player-main.js` tạo nút cho mọi bài):** bỏ nút và rule `.btn-live-stream` trong `player.css`; gate mới trong `validate-project.js` bắt mọi `href="/x.html"` trong JS trỏ tới file không có.

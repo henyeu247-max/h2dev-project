@@ -723,7 +723,8 @@ def audit_one(sku, ctx):
                                   % (len(tss), MIN_TIMESTAMPS))
         if not (insights.get("edit_sop") or ""):
             standards_gaps.append("S4: thieu edit_sop — chua dat Tieu chuan 7")
-        if not (insights.get("avoid_flags") or []):
+        # [] ghi RO = "tac gia khong neu canh bao nao trong video" (hop le, tranh bia canh bao); chi bao khi THIEU khoa/None.
+        if insights.get("avoid_flags") is None:
             standards_gaps.append("S5: thieu avoid_flags — chua dat Tieu chuan 8")
 
         # timestamp trong bien (kiem khach quan)

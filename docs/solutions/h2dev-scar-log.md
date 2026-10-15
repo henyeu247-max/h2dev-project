@@ -235,3 +235,12 @@
   2. Vá phụ đề bằng `py -3 scripts/fill_transcript_gaps.py <SKU>`: chỉ bóc lại đúng cửa sổ thủng (cắt ≤ 35 s), chạy 2 mô hình, chọn bản phủ nhiều giây nói hơn và ít segment nén chữ hơn; bản gốc lưu ở `_backup/<ngày>-fill-gaps/<SKU>/`.
   3. Mốc `key_timestamps` phải lấy từ segment thật của transcript (giây bắt đầu segment) và nhãn tóm đúng lời tại đó; sau khi sửa phải đồng bộ bảng `lesson_timestamps` trong `data/h2dev_master.db` (xoá/chèn đúng SKU, giữ nguyên các cột khác) rồi chạy `node scripts/sync-counts.js`.
   4. `audit_videos_v2.py` tính đuôi im lặng chạm cuối video là đã phủ (`coverage_effective_pct`).
+
+
+### [H2DEV-SCAR-030] Bẫy Nội Dung Sinh Bằng Mô Hình Không Neo Vào Lời Nói — Công Cụ, Con Số, Handle Bịa Hiện Thẳng Trên Player
+- **Triệu chứng (đo 2026-10-15):** `video_insights.json` có `tools_mentioned` (265 mục, chỉ ~16% tên công cụ xuất hiện trong lời nói), `edit_sop`, `avoid_flags`, `sop_steps`, `key_takeaways` (43 video) và `channels_mentioned` (21 mục) chứa chi tiết không có trong video: "90%", "60fps", "-26dB", "@DoctorJohnMeyers", "1.000 sub và 4.000 giờ" trong video không nhắc. Các trường này hiện trên trang Player. Cờ S6 cũ chỉ đo tỷ lệ từ trùng nên không bắt được số/handle/công cụ bịa.
+- **Nguyên nhân đã xác minh:** (1) bản sinh trước đây điền đủ mọi trường cho mọi video để đạt "Tiêu chuẩn 6–8" nên bịa khi video không nói; (2) tiêu chuẩn S5 coi `avoid_flags` rỗng là thiếu → ép bịa cảnh báo; (3) transcript Whisper chép sai tên công cụ ("CapCut" → "capcode/cắt quýt"), người viết lại dễ đoán sai; (4) file SOP `.md` trong `assets/docs/<SKU>/` cũng chứa chi tiết không có trong lời nói nên không phải nguồn bằng chứng.
+- **Guardrail:**
+  1. Mọi số, `@handle`, tên công cụ trong `edit_sop`/`avoid_flags`/`sop_steps`/`key_takeaways`/`tools_mentioned`/`channels_mentioned` phải nằm trong transcript hoặc file `.txt`/`.csv` đính kèm của chính video (không dùng `.md`): `py -3 scripts/check-grounding.py --live` (đã nối vào `validate-project.js`). Bí danh ASR → tên chuẩn khai báo trong `ALIAS` của script; số ASR viết bằng chữ đã đối chiếu tay ghi trong `VERIFIED_NUM`.
+  2. Video không nói cảnh báo/bước thao tác thì để `[]`/`additional: []` — S5 chỉ báo khi thiếu khoá, không bắt buộc có nội dung.
+  3. Viết lại nội dung: `scripts/apply-grounded-fields.py` (gộp `out_*.json`, `tkout_*.json`) và `scripts/apply-s6-takeaways.py`; tên công cụ ASR không chắc thì bỏ, không đoán.

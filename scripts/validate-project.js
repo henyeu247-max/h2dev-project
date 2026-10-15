@@ -411,6 +411,23 @@ try {
   }
 }
 
+// Guard file data trỏ tới phải được git theo dõi: file có local nhưng chưa vào git thì deploy xong sẽ 404
+// (vd. assets/docs/VIDEO-xxx/description.txt). Bỏ qua khi không có git.
+if (fs.existsSync(path.join(ROOT, '.git'))) {
+  try {
+    const tracked = new Set(require('child_process').execFileSync('git', ['ls-files'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 }).split('\n').map(s => s.trim()).filter(Boolean));
+    const refs = new Set();
+    for (const f of fs.readdirSync(tabDir).filter(n => n.endsWith('.json'))) {
+      const text = fs.readFileSync(path.join(tabDir, f), 'utf8');
+      for (const m of text.matchAll(/["'](\/?(?:assets\/docs|docs|assets\/thumbs)\/[^"'?#]+\.[A-Za-z0-9]+)["']/g)) refs.add(m[1].replace(/^\//, ''));
+    }
+    const untracked = [...refs].filter(r => { let p = r; try { p = decodeURIComponent(r); } catch (e) { /* giữ nguyên */ } return exists(p) && !tracked.has(p) && !tracked.has(r); });
+    if (untracked.length) errors.push(`data-tabs trỏ tới ${untracked.length} file có local nhưng CHƯA vào git (deploy sẽ 404): ${untracked.slice(0, 5).join(', ')}${untracked.length > 5 ? ', …' : ''} — git add các file này`);
+  } catch (gitError) {
+    warnings.push(`Không chạy được guard file chưa track: ${gitError.message}`);
+  }
+}
+
 if (errors.length) {
   console.error(`Validation failed with ${errors.length} error(s):`);
   errors.forEach(error => console.error(`- ${error}`));

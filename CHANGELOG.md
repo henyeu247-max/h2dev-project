@@ -1,3 +1,14 @@
+## 2026-10-15 (đợt 9) — GỘP NỐT SỬA DỞ CÒN LẠI VÀ NGHIỆM THU
+
+- **10 file `description.txt` 404 trên production (gốc: `videos.json`/`tai-lieu-full.json` trỏ tới `assets/docs/VIDEO-{3a38f9,3e943c,484f9e,4b3c09,61ad94,DD983D,a7bfd0,c5837a,d2cd90,e24c31}/description.txt` nhưng file chưa vào git):** đã `git add`; thêm gate trong `validate-project.js` — mọi file `assets/docs`, `docs`, `assets/thumbs` mà `data-tabs` tham chiếu phải được git theo dõi (probe 2 chiều: 10 file chưa track → FAIL, sau `git add` → PASS).
+- **`ngach-xanh.json` (YPP 2027):** kiểm trực tiếp YouTube Help 12843009 (đọc 2026-10-15): từ 01/02/2027 kênh mới cần 1.000 sub + 8.000 giờ xem/365 ngày hoặc 20 triệu lượt Shorts/90 ngày; kênh đã vào YPP không bị ảnh hưởng ngưỡng vào; bậc 500 sub không đổi; phải chấp nhận điều khoản mới trước 31/01/2027. Đã ghi nguồn và hạn điều khoản vào đoạn YPP.
+- **`kich-ban.json`:** thêm `ghiChuFile` cho 14 đường dẫn skill nằm ngoài repo (không có trong git) — JSON hợp lệ, validate đạt.
+- **`voice-dna-probe-final.json`:** rút 4 kênh khỏi danh sách chết (`@HDVietsub-h7u`, `@redvoices90`, `@toastertalesusa`, `@purebusinesshorts`); đối chiếu `kenh-mau.json`: cả 4 `dead=false`, đo 2026-10-14; số đếm `CHANNEL_DELETED_404` 35 = số mục thật.
+- **`h2dev-components-lesson-row.css`:** `.row-title` cao tối thiểu 44 px (vùng chạm), khớp ngoại lệ 22 px của `gate-p1`.
+- **`.gitignore`:** thêm `.pi/`, `.playwright-mcp/` (thư mục do công cụ sinh).
+- **Bump version  → ** (3 file HTML + tên cache `sw.js`) vì CSS đổi nội dung dưới cùng .
+- **Nghiệm thu trên working tree:** `validate-project`, 5 gate, guard, `check-ui-classes`, `check-reconcile-handles`, `sync-counts --check` exit 0; `deep-ui-acceptance` 11/11; `playwright-g2-acceptance` 23/23.
+
 ## 2026-10-15 (đợt 8) — XỬ LÝ 3 TỒN ĐỌNG SAU DEPLOY TỪ GỐC
 
 - **Kênh RỖNG hiển thị "DIE" (gốc: phần `deadKind` của `content.js` bị bỏ khỏi commit vì lẫn WIP phiên khác):** đưa lên 3 hunk `renderKenh` (nhãn "RỖNG", badge "RỖNG · 0 VIDEO", từ khoá tìm kiếm). Kiểm trên trình duyệt thật: nhãn vừa khung (43/44 px, không bị cắt), thẻ DIE giữ "DIE · 404". Bump `uifix81` → `uifix82` (3 file HTML + tên cache `sw.js`) để người dùng nhận JS mới.

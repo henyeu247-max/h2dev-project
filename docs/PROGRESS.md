@@ -3,7 +3,7 @@
 > Cập nhật cuối phiên: **2026-10-09** (cuối vòng 3). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
 
 ## Phiên 2026-10-14 — sửa gaps (chi tiết: `CHANGELOG.md` mục 2026-10-14, báo cáo `docs/reports/2026-10-14-gap-audit.md`)
-- **Deploy (đợt 7):** `main` = `origin/main` = `vps main` = `0627819`; kiểm 3 vòng PASS (xem CHANGELOG đợt 7). F2 đã đóng: 4 SKU mới trên VPS 200/206. Đã xử lý ở đợt 8 (2026-10-15): RỖNG, `fetch_h2dev_video.cjs` (giữ), `B380A1`. Còn mở: `ngach-xanh.json` (đoạn YPP 2027), `kich-ban.json`, `voice-dna-probe-final.json`, `h2dev-components-lesson-row.css` là sửa dở của phiên khác, chưa đưa lên.
+- **Deploy (đợt 7):** `main` = `origin/main` = `vps main` = `0627819`; kiểm 3 vòng PASS (xem CHANGELOG đợt 7). F2 đã đóng: 4 SKU mới trên VPS 200/206. Đã xử lý ở đợt 8 (2026-10-15): RỖNG, `fetch_h2dev_video.cjs` (giữ), `B380A1`. Đợt 9 đã gộp nốt mọi sửa dở (`ngach-xanh.json`, `kich-ban.json`, `voice-dna-probe-final.json`, `h2dev-components-lesson-row.css`, 10 `description.txt`) và nghiệm thu; không còn thay đổi chưa commit.
 - **Bài học đẩy VPS:** VPS main và origin trước đây khác SHA dù cùng cây. Đã hợp nhất bằng commit `0627819` (hai cha). Từ nay đẩy `main` fast-forward cho cả hai remote, không force-push.
 - **Check-pass (đợt 4–5):** sửa 18 neo chết của `sync-counts` + số liệu cũ trong 5 tài liệu; đã xử lý 13 video mốc vượt thời lượng, 20 video thiếu mốc, 4 SKU mới thiếu tags/phụ đề, 1 `fileLocal` placeholder. `audit_videos_v2`: 140/144 clean, 4 issue còn lại là F2 (chưa có trên VPS — deploy); A8d = 0 (đợt 6). Chi tiết: `CHANGELOG.md` đợt 4 và 5.
 

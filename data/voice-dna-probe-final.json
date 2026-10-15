@@ -123,16 +123,6 @@
    "state": "CHANNEL_DELETED_404"
   },
   {
-   "slot": "GEN_HDVietsubh7u",
-   "handle": "@HDVietsub-h7u",
-   "state": "CHANNEL_DELETED_404"
-  },
-  {
-   "slot": "GEN_redvoices90",
-   "handle": "@redvoices90",
-   "state": "CHANNEL_DELETED_404"
-  },
-  {
    "slot": "GEN_xfc18df8254",
    "handle": "@경제빠월",
    "state": "CHANNEL_DELETED_404"
@@ -186,19 +176,35 @@
    "slot": "GEN_x8a29727ea7",
    "handle": "@새벽의두만강",
    "state": "CHANNEL_DELETED_404"
-  },
-  {
-   "slot": "GEN_toastertalesusa",
-   "handle": "@toastertalesusa",
-   "state": "CHANNEL_DELETED_404"
-  },
-  {
-   "slot": "GEN_purebusinesshorts",
-   "handle": "@purebusinesshorts",
-   "state": "CHANNEL_DELETED_404"
   }
  ],
  "summary": {
-  "CHANNEL_DELETED_404": 39
+  "CHANNEL_DELETED_404": 35
+ },
+ "rutKhoi": {
+  "ngay": "2026-10-09",
+  "lyDo": "Đo lại trang kênh theo @handle: HTTP 200, có video công khai; kenh-mau.json đã chuyển sang sống. Rút khỏi file để mark_dead_channels.js không gắn cờ chết lại.",
+  "kenh": [
+   {
+    "slot": "GEN_HDVietsubh7u",
+    "handle": "@HDVietsub-h7u",
+    "stateCu": "CHANNEL_DELETED_404"
+   },
+   {
+    "slot": "GEN_redvoices90",
+    "handle": "@redvoices90",
+    "stateCu": "CHANNEL_DELETED_404"
+   },
+   {
+    "slot": "GEN_toastertalesusa",
+    "handle": "@toastertalesusa",
+    "stateCu": "CHANNEL_DELETED_404"
+   },
+   {
+    "slot": "GEN_purebusinesshorts",
+    "handle": "@purebusinesshorts",
+    "stateCu": "CHANNEL_DELETED_404"
+   }
+  ]
  }
 }

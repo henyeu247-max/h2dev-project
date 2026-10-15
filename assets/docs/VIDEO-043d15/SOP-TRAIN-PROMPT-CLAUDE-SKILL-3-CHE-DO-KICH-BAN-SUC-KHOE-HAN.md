@@ -5,9 +5,14 @@
 ---
 
 ## 1. Mục Tiêu & Cấu Trúc Đóng Gói Claude Skill
-- **Mục tiêu:** Tự động hóa 100% quy trình sản xuất kịch bản chuẩn SEO tiếng Hàn (độ dài 28-32 phút, ~10.000 ký tự) cho ngách Sức Khỏe & Dưỡng Sinh.
-- **Tên Skill đóng gói:** `/kichban-chaeso-kr` (hoặc Prompt Master đóng gói thành file ZIP).
-- **Brand Keywords đề xuất:** `밥상 건강` (Mâm cơm sức khỏe) / `건강 채소` (Rau củ sức khỏe).
+- **Mục tiêu:** Train prompt trên Claude AI để đóng gói thành một skill viết kịch bản cho ngách nhỏ key sức khỏe thị trường Hàn Quốc. Train kỹ từ đầu để về sau làm nhiều ngách, nhiều thứ khác nhau vẫn gọi lại skill được mà không phải ghi lại từ đầu.
+- **Dữ liệu nạp cho AI (nên dùng 2-3 kênh đối thủ, 3 kênh là ổn nhất):** Với mỗi kênh, vào mục Phổ biến, copy toàn bộ thông tin kênh rồi dán vào Claude. Trong bài, tác giả chỉ cho AI học 2 kênh cùng một hướng ngách.
+- **Train từ từ, không train một lần:** Sau khi AI phân tích hai kênh, nạp tiếp kịch bản cao view nhất của từng kênh (tổng 4 kịch bản theo yêu cầu của AI), cùng thông tin kênh, mô tả video và thẻ từ khóa của video đối thủ. Kịch bản lấy bằng một web lấy kịch bản miễn phí, lưu bằng Notepad.
+- **Đọc kỹ kết quả phân tích:** AI chỉ ra ngách chính xác (đi sâu vào ngách cực nhỏ chứ không phải ngách sức khỏe chung chung), các từ khóa chính, các kiểu kịch bản của đối thủ, phần đi kèm kịch bản và những điều nên/không nên làm, rồi sẵn sàng đóng gói thành skill.
+- **Brand keyword:** Là từ khóa thương hiệu cho kênh. Nếu đã có tên kênh và ý tưởng thương hiệu thì nhập vào; nếu chưa có thì nhờ AI đề xuất tên kênh và brand keyword, rồi chọn một phương án (mặc định chọn 1 cho nhanh).
+- **Cấu hình khác khi trả lời AI:** Thời lượng chọn theo đề xuất của AI (theo 2 kênh đối thủ); giọng đọc có thể clone giống đối thủ hoặc dùng ElevenLabs.
+- **Lưu skill:** Bấm lưu để skill tự lưu vào Claude; hoặc yêu cầu AI xuất file zip để tải về và tự upload.
+- **Gói Pro:** Tác giả khuyên nâng cấp gói Pro của Claude AI; dùng bản free thì không được gì nhiều.
 
 ---
 
@@ -15,40 +20,42 @@
 
 ```mermaid
 flowchart TD
-    A["Khởi động Skill: /kichban-chaeso-kr"] --> B{"Chọn Chế Độ Sản Xuất"}
-    B -->|Chế độ 1| C["Gợi ý 10-20 Đề Tài Hot Trend theo 3 Nhóm"]
-    B -->|Chế độ 2| D["Nhập Chủ Đề Tự Chọn -> Viết Kịch Bản Toàn Diện"]
-    B -->|Chế độ 3| E["Bán Content 70%: Dán Transcript Đối Thủ -> Tái Cấu Trúc"]
-    C --> F["Đầu ra: Kịch bản 10.000 ký tự + 10 Tiêu đề + Text Thum 3 tầng + 30 Tags"]
+    A["Gọi skill bằng dấu gạch chéo (/)"] --> B{"Chọn Chế Độ Sản Xuất"}
+    B -->|Chế độ 1| C["Gợi ý đề tài (mặc định 10, nhập số để ra nhiều hơn)"]
+    B -->|Chế độ 2| D["Nhập Chủ Đề Tự Chọn -> Viết Kịch Bản"]
+    B -->|Chế độ 3| E["Bán Content 70%: Dán Kịch Bản + Tiêu Đề Đối Thủ"]
+    C --> F["Đầu ra: Kịch bản + tóm tắt + tiêu đề + chữ thumbnail + mô tả, từ khóa"]
     D --> F
     E --> F
 ```
 
 ### Chi tiết 3 Chế độ:
-1. **Chế độ 1 — Gợi ý Đề tài Hot Trend:**
-   - Cú pháp: `Gọi skill /kichban-chaeso-kr gợi ý [N] chủ đề` (mặc định 10-20 chủ đề).
-   - Tự động phân loại theo 3 nhóm:
-     + *Nhóm A:* Đường huyết, huyết áp & mỡ máu.
-     + *Nhóm B:* Mẹo thực dưỡng & thói quen ăn uống buổi sáng.
-     + *Nhóm C:* Đập tan tin đồn / Cảnh báo thực phẩm phá hủy thận.
+1. **Chế độ 1 — Gợi ý Đề tài:**
+   - Cú pháp: Gọi skill rồi để trống hoặc ghi "gợi ý đề tài" thì AI tự đưa ra 10 chủ đề đã được phân tích kỹ; muốn nhiều hơn thì nhập số (ví dụ 20 thì ra đúng 20).
+   - Các chủ đề được chia nhóm, ví dụ nhóm liên quan đường huyết, mạch máu và nhóm mẹo thực hành.
+   - Chọn chủ đề bằng cách ghi số thứ tự rồi nhấn Enter.
 2. **Chế độ 2 — Viết Theo Chủ Đề Tự Chọn:**
-   - Cú pháp: Nhập từ khóa chủ đề (ví dụ: `Hành tây và mạch máu U60`).
-   - Claude triển khai kịch bản chi tiết theo cấu trúc: Hook mở đầu (4-7%), Bối cảnh nỗi sợ (8-10%), Nội dung y khoa (60-65%), Kế hoạch hành động (8-10%), Tổng kết & Lời chúc ấm áp (10-12%).
-3. **Chế độ 3 — Bán Content 70% Từ Video Triệu View:**
-   - Cú pháp: Dán transcript và tiêu đề của video đối thủ.
-   - Claude giữ nguyên luận điểm và số liệu khoa học nhưng viết lại toàn bộ câu từ, ẩn dụ bếp núc và cảm xúc thế hệ, né 100% thuật toán quét trùng lặp AI của YouTube.
+   - Cú pháp: Gọi skill và ghi từ khóa chủ đề đã có sẵn, nhấn Enter thì AI tự viết.
+3. **Chế độ 3 — Bán Content Từ Video Cao View Của Đối Thủ:**
+   - Cú pháp: Sao chép kịch bản của video cao view nhất, tải lên kèm tiêu đề của đối thủ, nhấn Enter.
+   - Đây là kiểu bán content lấy 70% như tác giả đã nói trước đó. Nếu ra lệnh cứng "lấy 70%" thì các model AI hiện nay thường từ chối vì được hạn chế để bảo vệ bản quyền; nên train theo cách trong bài thì AI vẫn viết được.
+
+### Đầu ra của kịch bản:
+- Phần kịch bản, kèm tóm tắt số ký tự, số từ.
+- Tiêu đề, chữ trên thumbnail, mô tả và từ khóa.
+- Danh sách xác minh để kiểm lại tính đúng sự thật trong kịch bản.
 
 ---
 
 ## 3. Cấu Hình Voiceover ElevenLabs & Cảnh Báo Bẫy Lỗi
-- **Quy tắc chọn Model:** Bắt buộc chọn đúng model đa ngôn ngữ như `Eleven Multilingual v2` (hoặc v4).
-- ⚠️ **Cảnh báo lỗi chết người:** Nếu chọn sai sang model đơn ngữ tiếng Anh (v1), khi lồng tiếng Hàn/Việt sẽ bị vấp từ hoặc biến âm sang tiếng Thái Lan!
+- **Quy tắc chọn Model:** Mỗi giọng trên web có một model đi kèm; trong tool phải chọn đúng model đó, giống hệt thông số bên web.
+- ⚠️ **Cảnh báo lỗi:** Nếu chọn sai model, giọng đọc sẽ sai, có lúc đọc ra tiếng Thái Lan.
 - **Đồng bộ thông số:**
-  + Tốc độ đọc: Cài đặt `Speed: 0.95 - 0.96` (tốc độ chuẩn ~330 ký tự/phút cho thị trường Hàn Quốc).
-  + Độ ổn định: `Stability: 0.50 - 0.60`.
-  + Tích chọn `Change Voice Setting` trong Tool để nhận diện thông số chuẩn.
+  + Các thông số bên tool (tốc độ, độ ổn định âm thanh...) phải xét theo đúng thông số bên web; ví dụ tốc độ bên web là 0.96 thì bên tool cũng xét 0.96.
+  + Nhớ tích vào ô thiết lập thông số giọng trong tool, nếu không tool sẽ không nhận các thông số đó.
+- **Giọng đọc:** Với ngách sức khỏe, chỉ cần giọng đọc tốt; ngách về người nổi tiếng thì bắt buộc phải clone giọng. Thị trường Hàn tác giả chủ yếu dùng ElevenLabs.
 
 ---
 
 ## 4. Nguyên Tắc Quản Trị Context
-- ⚠️ **Bắt buộc tạo New Chat cho mỗi kịch bản mới:** Sau khi hoàn thành 1 kịch bản, phải tạo cuộc trò chuyện mới trong Claude trước khi gọi lại Skill để tránh hiện tượng suy thoái ngữ cảnh (context drift).
+- ⚠️ **Bắt buộc tạo New Chat cho mỗi kịch bản mới:** Xong một kịch bản, sang video tiếp theo phải tạo cuộc trò chuyện mới rồi mới gọi skill; viết chung trong một đoạn chat sẽ không ngon như nhiều người tưởng.

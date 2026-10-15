@@ -1,3 +1,11 @@
+## 2026-10-15 (đợt 12) — NEO NỐT SOP .md, CÔNG CỤ ASR, THÔNG BÁO HEURISTIC
+
+- **67 file SOP `assets/docs/VIDEO-*/*.md`:** đo 1.366 token (số, @handle, tên công cụ/người) không có trong transcript/tài liệu kèm của chính video; 10 agent viết lại từng file chỉ từ nguồn của video (bỏ chi tiết bịa, không thay bằng chi tiết khác), áp vào file gốc; bản gốc ở `_backup/20261015-md/`. Gate mới `scripts/check-grounding-md.py` (nối vào `validate-project.js`, probe hai chiều: tiêm Pexels/@handle → FAIL, khôi phục → PASS, sha1 giống nhau): 0 token chưa có bằng chứng.
+- **Gate công cụ siết:** `tools_mentioned` không còn được miễn bởi danh sách STOP (youtube/chrome/google…); bỏ 8 bí danh ASR quá rộng (`pecs`, `chat ?bot`, `mail`, `king `, `cover `, `dream `, `high loud`, `keya`). Sửa dữ liệu: `YouTube Studio` → `YouTube` (6 video, lời nói chỉ có "youtube"); bỏ `Google Flow` (54c8f7), `YouTube Summary` & `ChatGPT` (ZOOM-02/03), `iCloud`, `Kie.ai`, `Chrome` (943781), `YouTube` (e24c31); `Pexels`/`Pixabay` chỉ có bằng chứng ASR mơ hồ (pcpay/pcb/pcp) → nhãn chung `Kho video/ảnh miễn phí` (8 video). ASR bổ sung: `google sn` → AdSense.
+- **Thông báo "heuristic" ở `player.html`:** đổi cho đúng thực tế (ghi chú bám lời nói của video, chưa kiểm hình ảnh/claim/địa lý). `visual_audio_checked`/`accuracy_status` không đổi (không có bằng chứng hình ảnh lưu trong dự án để xác nhận hay bác bỏ).
+- **Giới hạn:** `check-grounding-md.py` chỉ bắt số ≥3 chữ số/thập phân/%, @handle, tên Latin viết hoa giữa câu; số 1–2 chữ số, chuỗi tiếng Hàn/Nhật và khẳng định bằng lời không bị kiểm. Ba tài liệu không gắn một video (`SOP-AUDIO-VOICE-DNA-STANDARD.md`, `prompt-master/`, `tai-lieu/`) không thuộc phạm vi.
+- **Bump `uifix85` → `uifix86`.**
+
 ## 2026-10-15 (đợt 11) — NEO NỘI DUNG SINH VÀO LỜI NÓI THẬT CỦA TỪNG VIDEO (H2DEV-SCAR-030)
 
 - **Vấn đề:** `tools_mentioned`, `edit_sop`, `avoid_flags`, `sop_steps`, `key_takeaways`, `channels_mentioned` của `video_insights.json` chứa số, `@handle`, tên công cụ không có trong transcript/tài liệu đính kèm của video, và hiện thẳng trên Player.

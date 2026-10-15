@@ -11,37 +11,38 @@
 
 ## 1. PHÂN TÍCH 2 NGÁCH MẪU CỰC TRENDS TẠI HÀN & NHẬT
 
-### Ngách 1: Bài thuốc bàn ăn & Bí quyết bách niên trường thọ (`@식탁보약·백세비결`)
-- **Kênh mẫu:** `@식탁보약·백세비결` (Thực Đơn Thuốc Bổ — Bí Quyết Sống Trăm Tuổi).
+### Ngách 1: Sức khỏe, thực phẩm và rau củ (thị trường Hàn Quốc)
+- **Kênh mẫu:** Một kênh thị trường Hàn Quốc lập giữa tháng 6, mới chỉ mười mấy video.
 - **Thị trường:** 🇰🇷 Hàn Quốc.
 - **Đặc điểm nội dung:**
-  - Khai thác các thực phẩm quen thuộc trên mâm cơm hàng ngày: Tỏi, hành tây, gừng, giấm táo, vừng đen, bắp cải.
-  - Video ngắn gọn, thực tế, chỉ rõ cách kết hợp thực phẩm để phòng bệnh mà không cần dùng thuốc tây.
-  - Người xem là các bà nội trợ, người trung niên và cao tuổi có nhu cầu chăm sóc sức khỏe gia đình hàng ngày.
+  - Video cũ nhất cách đây 2 tuần, view khá ổn và kênh đã bật kiếm tiền.
+  - Tiêu đề đi sâu vào ngách các loại thực phẩm, rau củ, ăn uống (tác giả dịch tiêu đề ra tiếng Việt để mọi người hình dung).
+  - Ngách sức khỏe này nhân bản từ thị trường Việt sang Nhật rồi từ Nhật sang Hàn; có thể làm ở thị trường Việt, Hoa Kỳ hay Nhật đều được.
+  - Cách làm: copy tiêu đề, search, lấy kịch bản về làm.
 
-### Ngách 2: Sức mạnh lời nói & Năng lượng thu hút kim vận (`@金運と言葉の力`)
-- **Kênh mẫu:** `@金運と言葉の力` (Kin-un to Kotoba no Chikara — Kim Vận và Sức Mạnh Lời Nói).
+### Ngách 2: Tâm linh may mắn (thị trường Nhật Bản)
+- **Kênh mẫu:** Một kênh thị trường Nhật hoàn toàn mới, video cũ nhất cách đây 11 ngày, view nổ rồi lên đều.
 - **Thị trường:** 🇯🇵 Nhật Bản.
 - **Đặc điểm nội dung:**
-  - Triết lý về trường năng lượng của lời nói: Nói những câu này vào buổi sáng thì may mắn kéo đến cả ngày; tuyệt đối không than thở nghèo khó vì sẽ xua đuổi tài thần.
-  - Video kết hợp giọng đọc truyền cảm, tiếng chuông ngân và nền ảnh phong cảnh Nhật Bản thanh tịnh.
+  - Chủ đề may mắn, tâm linh, cực kỳ giống ngách một nhân vật nổi tiếng mà tác giả đã cập nhật trước đó, nhưng đi vào một nhân vật khác (Saito Hitori, được nhắc là người nổi tiếng bên Nhật).
+  - Cách làm: đem kịch bản từ các kênh này về, thay nhân vật vào, xào nấu lại kịch bản một chút rồi cho nhân vật đó đọc; chỉ khác nhau ở tên nhân vật.
+  - Tác giả thấy ngách này đang rất trend nên chia sẻ lại.
 
 ---
 
-## 2. BẰNG CHỨNG NHÂN BẢN THỰC CHIẾN TẠI VIỆT NAM: KÊNH `@ĐờiVĩ-u6x`
+## 2. BẰNG CHỨNG NHÂN BẢN THỰC CHIẾN TẠI VIỆT NAM
 
-Trong bài giảng (phút 00:20), tác giả mở trực tiếp kênh YouTube Việt Nam thực chiến:
-- **Tên kênh:** `Đời Vĩ` (`@ĐờiVĩ-u6x`)
-- **Quy mô:** Chỉ mới đăng **5 video**, đạt **1.650 người đăng ký** và **265.700 lượt xem**!
-- **Tốc độ tăng trưởng vidIQ:** Đồ thị đường dốc đứng chỉ sau 2 ngày (từ 22/6 đến 24/6), video *"Tại Sao Thú Dữ Tuyệt Đối Không Tấn Công Khi Bạn Đang Ngủ Say?"* cắn đề xuất mạnh với hơn 3.200 lượt thích!
-- **Bài học rút ra:** Nhân bản công thức kể chuyện kỳ thú, đạo lý thiên nhiên và câu chuyện cuộc đời sang tiếng Việt đem lại hiệu quả bùng nổ tức thì nếu chọn đúng chủ đề có tính tò mò cao.
+Trong bài giảng, tác giả mở trực tiếp một kênh Việt Nam do một thành viên nhân bản thị trường từ US sang Việt Nam:
+- **Quy trình kênh áp dụng:** Chỉ lấy kịch bản về dịch rồi xào nấu lại; hình ảnh video tự làm lại chứ không lấy của người ta.
+- **Kết quả:** Kênh đang chạy bình thường và đã bật kiếm tiền.
+- **Bài học rút ra:** Áp dụng tư duy nhân bản thị trường mà tác giả đã hướng dẫn thì hiệu quả thực tế rất tốt.
 
 ---
 
-## 3. CHECKLIST SẢN XUẤT NGÁCH BÀI THUỐC BÀN ĂN
+## 3. CHECKLIST NHÂN BẢN THỊ TRƯỜNG
 
-1. **Chọn 1 loại thực phẩm duy nhất cho mỗi video:** Ví dụ: Video 1 nói về Tỏi; Video 2 nói về Gừng; Video 3 nói về Bắp cải.
-2. **Tiêu đề nêu bật công thức kết hợp:**
-   - *"Tỏi xào với thứ này: Thuốc quý ngừa ung thư mà nhà nào cũng có sẵn trong bếp!"*
-   - *"Bắp cải luộc đừng đổ nước đi, hãy làm điều này để đào thải độc tố gan thận!"*
-3. **Thumbnail chụp cận cảnh đĩa thức ăn/nguyên liệu:** Hình ảnh sắc nét, màu sắc tươi ngon, có mũi tên chỉ vào chi tiết độc đáo.
+1. **Lấy kịch bản:** Chọn kịch bản của một video bất kỳ muốn làm.
+2. **Nhờ AI dịch theo ngôn ngữ đích:** Không dịch cứng; yêu cầu AI dịch theo ngôn ngữ, giọng điệu, văn hóa và cách kể chuyện của nước đích, dùng form prompt tác giả đã chia sẻ trong video trước (dịch từ US sang Việt Nam).
+3. **Làm Nhật hoặc Hàn:** Chỉ cần thay tên quốc gia vào form prompt.
+4. **Không cần xào nấu quá nhiều:** Chỉ cần dịch cho chuẩn ngôn ngữ và giọng điệu để kịch bản hay hơn.
+5. **Làm lại hình ảnh video:** Tự làm lại phần hình ảnh, chỉ đem kịch bản về.

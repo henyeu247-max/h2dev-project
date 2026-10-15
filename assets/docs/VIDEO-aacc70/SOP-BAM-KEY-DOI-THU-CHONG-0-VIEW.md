@@ -4,40 +4,41 @@
 
 ---
 
-## 1. Nguyên Tắc Cốt Lõi: Tại Sao Video Bị 0 View?
-- **Thuật toán YouTube không hiểu chủ đề:** Khi kênh mới đăng video với chủ đề quá rộng hoặc từ khóa chung chung, thuật toán không biết phân phối cho tệp khán giả nào, dẫn đến video không được impression (hiển thị) hoặc bị kẹt 0 view.
-- **Giải pháp bám key đối thủ:** Mượn lực kéo từ video đang có trend mạnh của đối thủ trong cùng ngách nhỏ. Khi khán giả xem hết video của đối thủ, YouTube sẽ tự động gợi ý video của bạn ở thanh Up Next / Suggested Videos.
+## 1. Nguyên Tắc Cốt Lõi: Bám Trend Để Không Bị Không View
+- **Bám theo video đang có trend:** Tác giả chia sẻ một mẹo để lấy kịch bản và bám theo video đang lên, nhờ vậy trước giờ làm theo cách này không bị không view.
+- **Chọn video theo chỉ số, không chọn tùy hứng:** Nếu chỉ chọn video nào muốn làm thì rất hên xui và view lẹt đẹt; đó là lý do nhiều người cứ làm mà hay bị không view hoặc view lẹt đẹt.
+- **Ví dụ thực tế:** Kênh mới hoàn toàn của các bạn áp dụng cách này; có kênh đang làm ngách khác, chuyển sang ngách ong theo video tác giả chia sẻ ngày 15 tháng 8 thì lên view ngay.
 
 ---
 
-## 2. Quy Trình 5 Bước Thực Hiện Chi Tiết
+## 2. Quy Trình Chọn Video Để Bám Theo
 
-### Bước 1: Quét Kênh Đối Thủ & Lọc Video Outlier (Đột Biến View)
-- Vào trực tiếp tab **Videos** của kênh đối thủ cùng ngách nhỏ.
-- Chuyển sang bộ lọc **Phổ biến nhất (Popular)** hoặc tìm các video đăng gần đây (trong vòng 3 - 7 ngày) nhưng có lượt xem cao đột biến (gấp 5 - 10 lần lượng sub của kênh).
-- Chỉ chọn video có từ 100.000 đến 400.000 view trở lên được đăng gần nhất. Tuyệt đối không chọn video cũ từ 2 - 3 năm trước vì trend đã nguội.
+### Bước 1: Cài extension vidIQ
+- Cài extension vào trình duyệt; dùng bản free là đủ dùng, cũng có thể mua bản phí.
+- Extension dùng để xem các từ khóa và các chỉ số của video.
 
-### Bước 2: Bóc Tách Cấu Trúc Hook & Metadata Đối Thủ
-- Xem 30 giây đầu của video đối thủ: Phân tích câu mở đầu (Hook), hình ảnh xuất hiện đầu tiên và âm thanh kích thích tò mò.
-- Copy tiêu đề gốc của đối thủ. Phân tích cụm từ khóa chính (Primary Keyword) và từ khóa phụ (Modifier).
-- Đọc 20 comment đầu tiên: Tìm xem khán giả quan tâm hoặc tranh cãi về chi tiết nào nhất để đưa vào nội dung của mình.
+### Bước 2: Xem chỉ số VPH trong mục phổ biến của kênh đối thủ
+- Bấm vào mục phổ biến (video phổ biến) của một kênh bất kỳ.
+- Nhìn chỉ số VPH của từng video; kết hợp với cách cũ là lấy những video nhiều view mà gần nhất.
 
-### Bước 3: Tái Cấu Trúc Nội Dung Theo Công Thức 70/30
-- **70% Giá trị cốt lõi:** Giữ nguyên chủ đề và góc nhìn mà khán giả đối thủ đang tìm kiếm để thuật toán nhận diện cùng một semantic cluster (cụm ngữ nghĩa).
-- **30% Khác biệt hóa:** Bổ sung ví dụ thực tế mới, visual sắc nét hơn, nhịp dựng nhanh hơn, hoặc phản biện thêm một góc nhìn mới lạ.
+### Bước 3: Chọn video có chỉ số VPH cao hơn hẳn
+- Chỉ số VPH nhảy liên tục theo trend, không cố định.
+- Video nào có chỉ số cao hơn hẳn các video khác thì bám theo. Ví dụ: video hơn 500 là đã cao; video bên phải hơn 3.000 và hơn 400.000 view từ 6 ngày trước thì đáng bám nhất.
 
-### Bước 4: Tối Ưu Hóa Thumbnail Bám Sát Phong Cách Nhận Diện
-- Không copy y hệt thumbnail đối thủ để tránh bị report bản quyền hình ảnh.
-- Giữ nguyên cấu trúc màu sắc tương phản và bố cục vật thể chính (nhân vật, biểu cảm, vật thể bí ẩn) mà đối thủ đã chứng minh là có CTR (Click-Through-Rate) cao.
-- Thay đổi góc chụp, độ tương phản ánh sáng và text ngắn gọn (tối đa 3 - 4 từ gây sốc).
+### Bước 4: Giới hạn thời gian lấy video
+- Với cách cũ (lấy video nhiều view nhất mà gần nhất) chỉ áp dụng cho video rất gần đây.
+- Với chỉ số VPH cao thì có thể lấy trong vòng 1 đến 2 tháng; sau 2 tháng thì không nên.
 
-### Bước 5: Đặt Tiêu Đề Và Đăng Video Theo Khung Giờ Vàng Của Đối Thủ
-- Đặt tiêu đề tương đồng về mặt ngữ nghĩa với video đối thủ, sử dụng cùng từ khóa chính ở đầu câu.
-- Canh giờ đăng video: Đăng trước hoặc ngay trong khung giờ kênh đối thủ thường xuyên ra video để đón đầu luồng khán giả đang online.
+### Bước 5: Làm theo quy trình đã hướng dẫn
+- Phần còn lại làm tương tự quy trình tác giả đã hướng dẫn ở các video trước.
 
 ---
 
 ## 3. Các Điều Cần Tránh (Avoid Flags)
-1. **Tránh reup nguyên bản video đối thủ:** Dẫn đến dính bản quyền quét Content ID hoặc spam nội dung trùng lặp (Repetitious Content).
-2. **Tránh chọn video đã hết trend:** Chọn video ra từ 6 tháng trước sẽ không còn lực đẩy đề xuất từ YouTube.
-3. **Tránh đổi ngách liên tục:** Bám key đối thủ trong cùng một ngách nhỏ tối thiểu 10 - 15 video liên tục để định hình tệp khán giả kênh.
+1. **Tránh đổi ngách liên tục:** Kênh Việt đang làm ngon mà chuyển sang chủ đề khác thì bị phân phối theo khán giả, không bám được trend và view èo uột. Đã chọn một ngách nhỏ thì tập trung làm, không chuyển liên tục hay làm nhiều ngách.
+2. **Tránh đổ lỗi cho kênh:** Tác giả cho rằng nhiều người bảo bị gãy view là do đang làm sai cách và bám theo không đúng trend.
+
+## 4. Lời Khuyên Cho Người Mới
+- Người mới hoàn toàn nên tập làm thị trường Việt, Hàn hoặc Nhật trước, đặc biệt là Hàn Quốc: dễ làm, ít cạnh tranh, dễ tiếp cận nên cơ hội lên rất nhanh.
+- Thị trường US rất khó.
+- Tác giả bận nên không có group hỗ trợ; thắc mắc thì bình luận dưới video, tác giả tổng hợp rồi lên video trả lời.

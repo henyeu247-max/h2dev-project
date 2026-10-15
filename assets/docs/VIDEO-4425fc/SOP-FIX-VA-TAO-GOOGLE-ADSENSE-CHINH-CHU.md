@@ -1,17 +1,17 @@
 # SOP HƯỚNG DẪN FIX & TẠO TÀI KHOẢN GOOGLE ADSENSE CHÍNH CHỦ TRÁNH QUÉT
 > **Mã SKU:** `VIDEO-4425fc` | **Module:** M01 - Case Study Doanh Thu | **Thời lượng:** 08 phút 07 giây
-> **Mục tiêu:** Hướng dẫn tạo và bảo vệ tài khoản Google AdSense chính chủ, phòng tránh đợt quét tài khoản và xử lý lỗi bước 2 YPP.
+> **Mục tiêu:** Hướng dẫn tạo tài khoản Google AdSense chính chủ để tránh đợt quét tài khoản, và phân biệt lỗi trùng thông tin (còn gỡ được) với tài khoản đã bị vô hiệu hóa (khó cứu).
 
 ---
 
 ## 1. NGUYÊN LÝ GOOGLE ADSENSE VÀ CÁC LỖI TỬ HUYỆT
-- **Đợt quét AdSense:** Google thường xuyên quét trùng lặp thông tin cá nhân (tên, số điện thoại, CMND/CCCD, địa chỉ nhận mã PIN).
-- **Lỗi trùng tài khoản (Duplicate Account):** Một cá nhân theo chính sách chỉ được sở hữu 1 tài khoản AdSense cá nhân duy nhất.
+- **Đợt quét AdSense:** Google đang quét hàng loạt rất gắt. Theo tác giả, đa số tài khoản bị quét là tài khoản mua từ bên ngoài về nối vào; tài khoản tự tạo bằng thông tin chính chủ thì bền. Tài khoản bên ngoài hay bị trùng thiết bị, địa chỉ IP, thông tin do dịch vụ làm hàng loạt, dù có dùng fake IP hay các công cụ tương tự cũng không qua mặt được Google.
+- **Lỗi trùng thông tin (ảnh 1 trong video):** Tài khoản bị báo trùng thông tin ở bước 2 vẫn gỡ được bằng cách chuyển đổi tài khoản liên kết cho kênh YouTube sang một tài khoản AdSense khác.
+- **Tài khoản bị vô hiệu hóa (ảnh 2 trong video):** Bị chấm dứt thì gần như không cứu được; chỉ có thể kháng nghị với tỷ lệ thành công rất thấp. Cẩn thận với các dịch vụ nhận "cứu" tài khoản, nhiều khả năng là lừa đảo.
 
 ---
 
 ## 2. QUY TRÌNH TẠO ADSENSE AN TOÀN
-- **Bước 1:** Dùng 1 máy tính sạch hoặc profile Chrome độc lập, kết nối mạng Internet gia đình cố định (không dùng VPN/Proxy khi tạo AdSense).
-- **Bước 2:** Sử dụng thông tin người thân (chưa từng đăng ký AdSense trước đây) gồm Họ tên, Số điện thoại, Địa chỉ nhận thư có người nhận mã PIN.
-- **Bước 3:** Tạo tài khoản và liên kết với kênh YouTube khi đủ điều kiện 1.000 sub và 4.000 giờ xem.
-- **Bước 4:** Phân quyền quản trị viên phụ (User Manager) để đề phòng trường hợp mail chính gặp sự cố.
+- **Bước 1:** Chỉ tự tạo bằng thông tin chính chủ (tên, căn cước công dân, số điện thoại) nếu trước giờ chưa từng tạo tài khoản AdSense nào. Tạo một lần trên thiết bị và địa chỉ IP mạng của mình; không dùng proxy hay VPN để fake IP.
+- **Bước 2:** Muốn tạo thêm tài khoản thứ hai thì phải mượn thông tin của người khác (vợ/chồng hoặc người thân), và làm ở một địa chỉ IP mạng khác (nhà khác, quán cà phê...) trên một thiết bị khác. Thông tin (số điện thoại, tên, căn cước công dân) phải hoàn toàn khác với lần tạo trước để không bị trùng.
+- **Bước 3:** Tạo xong thì nối vào kênh YouTube. Cách tạo cụ thể có nhiều video hướng dẫn trên YouTube; tác giả không có thông tin chính chủ để làm mẫu.

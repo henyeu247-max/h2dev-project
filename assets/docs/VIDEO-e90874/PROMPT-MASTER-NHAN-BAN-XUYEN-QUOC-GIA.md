@@ -11,37 +11,43 @@
 
 ## 1. NGUYÊN LÝ HOẠT ĐỘNG CỦA BỘ "PROMPT MASTER"
 
-Bộ Prompt Master (được đính kèm trong file `1nLeSThibgPAQwVAeLBhcE1PFU7t2IO7068cHIBTSdlA.txt`) giải quyết bài toán lớn nhất của người làm YouTube Faceless:
-- **Nỗi đau cũ:** Dùng Google Dịch kịch bản đối thủ khiến câu từ bị thô cứng, ngô nghê, mất hết ngữ điệu và nhịp thở tự nhiên của ngôn ngữ bản xứ → Khán giả nghe 10 giây đầu là bấm thoát → Video bị bóp đề xuất.
-- **Giải pháp Prompt Master:** Đóng vai trò như một **Biên kịch gia bản địa kỳ cựu (Native Scriptwriter)**:
-  - Phân tích cấu trúc nút thắt kịch bản gốc.
-  - Tự động thay thế các thành ngữ, tục ngữ, cách xưng hô và bối cảnh sinh hoạt cho khớp 100% với văn hóa thị trường đích.
-  - Tối ưu hóa nhịp điệu mở đầu (Hook 15s) và giữ chân người nghe xuyên suốt 15-20 phút.
+Bộ form prompt nhân bản thị trường (đính kèm dưới dạng file `.txt` trong phần mô tả video) dùng để nhân bản video, kịch bản từ thị trường này sang bất kỳ thị trường nào mong muốn, ví dụ từ Nhật về Việt Nam, từ Việt Nam sang Hoa Kỳ, từ Hoa Kỳ sang Hàn.
+- **Vai trò của form prompt:** Tạo ra format cho video theo mong muốn của mình. Form prompt sẽ hỏi người dùng thị trường đích và các lựa chọn khác, người dùng nhập vào thì nó sinh ra Prompt Master. Form dùng chung cho tất cả các lần, ngách mới hay ngách khác đều được.
+- **Không phải dịch cứng:** Prompt Master không dịch đơn thuần mà dịch theo ngôn ngữ và văn hóa của thị trường đích:
+  - Nhân vật và bối cảnh phù hợp thị trường đích.
+  - Cách xưng hô và giọng điệu kể chuyện đúng như người bản xứ. Ví dụ đem từ Hàn sang Việt Nam thì giọng kể chuyện phải đúng kiểu người Việt Nam, không phải chỉ dịch từ Hàn sang Việt.
 
 ---
 
 ## 2. QUY TRÌNH 3 BƯỚC NHÂN BẢN KỊCH BẢN THỰC CHIẾN
 
-### Bước 1: Lấy kịch bản gốc (Transcript Extraction)
-1. Dùng công cụ web `https://www.youtube-transcript.io/` hoặc công cụ Whisper trích xuất toàn bộ văn bản phụ đề kèm mốc thời gian của video đối thủ đang cắn trend.
-2. Lưu file dưới dạng `.txt` sạch không dính quảng cáo hay lời dẫn thừa.
+### Bước 1: Nạp dữ liệu kênh đối thủ để Claude phân tích
+1. Mở chat mới trong Claude, dán vào form prompt toàn bộ thông tin kênh đối thủ (tên kênh, thông số...). Làm 2-3 kênh đối thủ thì cứ copy hết vào.
+2. Chụp ảnh phần tiêu đề của kênh đối thủ (bấm vào tab Phổ biến), khoảng 2 ảnh, mỗi ảnh khoảng 6 video, để nó phân tích kỹ hơn.
+3. Nếu thiếu kịch bản gốc, Claude sẽ nhắc; nó vẫn phân tích trước rồi chờ bổ sung. Lấy kịch bản của 2 video cao view nhất (hoặc nếu có 2 kênh đối thủ thì mỗi kênh 1 video), copy dán vào. File prompt gợi ý dùng youtube-transcript.io để lấy transcript video.
+4. Có thể bỏ chung form prompt, hình ảnh và kịch bản vào chạy một lần để đỡ tốn token.
 
-### Bước 2: Nạp Prompt Master vào ChatGPT / Claude
-Nạp câu lệnh Master Prompt (được tối ưu hóa trong bài giảng):
-> *"Bạn là một biên kịch gia chuyên nghiệp chuyên sản xuất video triệu view trên YouTube. Dưới đây là kịch bản video gốc bằng tiếng [Ngôn ngữ gốc]. Hãy viết lại hoàn toàn thành một kịch bản video tiếng [Ngôn ngữ đích: Việt/Nhật/Hàn/Anh] theo các tiêu chuẩn sau:*  
-> 1. *Giữ nguyên 70% cấu trúc logic và bài học đắt giá của câu chuyện.*  
-> 2. *Viết lại 100% câu từ theo phong cách kể chuyện truyền cảm (Storytelling), xưng hô tự nhiên, giàu hình ảnh gợi cảm xúc.*  
-> 3. *Tạo ra một Hook 15 giây đầu tiên thật giật gân, khơi gợi sự tò mò tột độ.*  
-> 4. *Chia kịch bản thành các phân đoạn rõ ràng kèm gợi ý hình ảnh (Visual Prompt) cho từng cảnh."*
+### Bước 2: Trả lời 6 câu hỏi cấu hình
+Sau khi phân tích, Claude hỏi cấu hình, người dùng trả lời theo số:
+1. Thị trường đích muốn làm (ghi tên thị trường, ví dụ Việt Nam).
+2. Khán giả đích: cụ thể là bao nhiêu tuổi hoặc mở rộng thêm.
+3. Giọng điệu theo miền nào (Nam hay Bắc); tác giả ví dụ chọn từ "dưa chuột" vì ai cũng biết.
+4. Tên kênh và câu chào, phần mở đầu; có rồi thì ghi vào, chưa có thì lấy phương án nó đề xuất.
+5. Output kèm theo: kịch bản, tiêu đề viral, text trong thumbnail theo từng tầng, prompt ảnh.
+6. Cách xử lý số khi AI đọc: giữ số hay ghi thành chữ. AI hiện nay đọc số cứng như 1954 được rồi; nhưng với thị trường Nhật thì ElevenLabs đọc số có thể sai.
 
-### Bước 3: Kiểm tra nhịp điệu đọc & Lồng tiếng
-- Đọc to kịch bản thành tiếng hoặc nạp vào công cụ ElevenLabs/Vrew nghe thử.
-- Những đoạn ngắt nghỉ chưa tự nhiên cần chỉnh sửa lại dấu phẩy, dấu chấm để AI ngắt hơi chuẩn như người thật.
+Trả lời xong bấm enter và chờ nó tạo ra Prompt Master.
+
+### Bước 3: Dùng Prompt Master để nhân bản kịch bản
+- Tải form Prompt Master về, ở phần cuối dán toàn bộ kịch bản gốc ở thị trường gốc vào để nhân bản. Ô chủ đề cần viết mới có thể xóa vì mục đích chính là nhân bản chứ không viết mới.
+- Mở chat mới, dán toàn bộ rồi cho chạy. Nếu có tên nhân vật hoặc yêu cầu riêng thì nhập vào, không thì nó tự chọn tên ngẫu nhiên.
+- Nó viết kịch bản theo từng phần; bấm "tiếp tục" để nó viết phần tiếp theo, cho tới khi có thông báo hoàn thành. Sau đó nó viết tiếp tiêu đề, thumbnail... nếu đã chọn ở bước 2.
 
 ---
 
 ## 3. CHECKLIST 4 LỖI PHỔ BIẾN KHI DÙNG PROMPT AI
 
-- ❌ **Lỗi 1 — Giữ nguyên tên địa danh không phù hợp:** Nếu nhân bản truyện tâm sự sang Việt Nam, không nên giữ tên đường phố hay quận huyện ở Seoul/Tokyo, hãy đổi sang bối cảnh làng quê hoặc thành phố Việt Nam gần gũi.
-- ❌ **Lỗi 2 — Để AI dùng từ ngữ sáo rỗng:** Nhắc AI loại bỏ các từ dịch máy như *"Hơn nữa", "Tóm lại", "Như chúng ta đã biết"*... Thay bằng cách nói đời thường: *"Nói thật với các bác", "Nghĩ lại mới thấy thấm"...*
-- ❌ **Lỗi 3 — Kịch bản quá ngắn:** Nếu video đối thủ dài 20 phút mà AI sinh ra chỉ có 5 phút, hãy yêu cầu AI mở rộng chi tiết nội tâm nhân vật và bối cảnh từng biến cố.
+- ❌ **Lỗi 1 — Dịch cứng:** Chỉ dịch từ ngôn ngữ này sang ngôn ngữ kia mà không đổi nhân vật, bối cảnh, xưng hô, giọng điệu theo văn hóa thị trường đích.
+- ❌ **Lỗi 2 — Thiếu kịch bản gốc:** Chỉ nạp thông tin kênh mà không có kịch bản video gốc thì Claude chưa phân tích đầy đủ và chưa qua được giai đoạn 2; hãy lấy kịch bản video cao view bổ sung.
+- ❌ **Lỗi 3 — Bắt viết cả kịch bản một lần:** Phải để nó chia ra nhiều phần rồi bấm tiếp tục, viết một lần cả kịch bản thì kịch bản không hay, không đạt yêu cầu.
+- ❌ **Lỗi 4 — Không chốt cách xử lý số cho giọng đọc AI:** Phải chọn giữ số hay ghi thành chữ để khi tạo giọng không bị ảnh hưởng; làm thị trường Nhật mà để số thì giọng đọc có thể đọc sai.

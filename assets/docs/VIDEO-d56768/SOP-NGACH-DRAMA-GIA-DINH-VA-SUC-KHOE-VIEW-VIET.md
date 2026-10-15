@@ -11,40 +11,38 @@
 
 ## 1. PHÂN TÍCH KÊNH MẪU ĐỐI THỦ TRONG BÀI GIẢNG
 
-### Kênh: `@tuoigiatuoidep` (Tuổi Già Tuổi Đẹp)
-- **Đặc điểm kênh:** Lập từ cuối tháng 06/2026, kênh hoàn toàn mới.
-- **Tần suất ra video:** Tháng đầu ra ít video thăm dò; sang tháng thứ hai bắt đầu đẩy mạnh 1 ngày đăng đều đặn 3 video.
-- **Lượng view & Tăng trưởng:** View cực kỳ cao và ổn định, video dài trên 1 giờ thu hút lượng giữ chân (AVD) khổng lồ từ tệp khán giả trung niên và lớn tuổi.
-- **Doanh thu & RPM ước tính:** Video dài trên 1 tiếng - 2 tiếng tại Việt Nam có RPM đạt từ **$1.00 đến $2.00+** (nhờ chèn được nhiều điểm ngắt quảng cáo Mid-roll), phá vỡ định kiến "RPM Việt Nam luôn thấp".
+### Kênh drama gia đình thị trường Việt
+- **Đặc điểm kênh:** Lập từ cuối tháng 6, kênh hoàn toàn mới.
+- **Tần suất ra video:** Những video đầu ra khá ít; từ khoảng một tháng gần đây đẩy rất nhiều video, trung bình 1 ngày 3 video.
+- **Lượng view & Tăng trưởng:** View cực kỳ cao và ổn định.
+- **Doanh thu & RPM ước tính:** Video trên 1 tiếng có RPM tầm 1; video khoảng 2 tiếng RPM có thể lên 2. RPM Việt Nam khiêm tốn nhưng đừng xem nhẹ.
 - **Format nội dung:**
-  - Kịch bản kịch tính xoay quanh xung đột gia đình đời thường: con dâu - mẹ chồng, tranh chấp tài sản, đối xử lúc về già.
-  - Sử dụng **2 giọng đọc AI khác biệt** tạo thành cuộc đối thoại trực tiếp giữa các nhân vật (Interactive Dialogue), tạo cảm xúc chân thực, giữ chân người nghe suốt hàng giờ.
+  - Kịch bản dạng drama đời thường trong gia đình: con dâu chửi mẹ chồng, con chửi mẹ, mẹ chửi con...
+  - Sử dụng **2 giọng đọc AI khác biệt** để tạo thành cuộc đối thoại giữa các nhân vật.
 
 ---
 
 ## 2. QUY TRÌNH BIÊN TẬP VÀ PACKAGING CHUẨN
 
 1. **Thu thập tư liệu hình ảnh nhân vật:**
-   - Không dùng 1 ảnh cố định cho toàn bộ kênh. Tìm kiếm ảnh chân dung người già/phụ nữ Việt Nam với biểu cảm đa dạng trên Google Images / Pinterest theo từng câu chuyện.
+   - Không dùng 1 ảnh cố định cho toàn bộ kênh. Tìm trên Google ảnh người già, phụ nữ người già Việt Nam rồi ghép vào; mỗi video dùng người khác nhau vì mỗi câu chuyện khác nhau.
 2. **Bố cục khung hình:**
-   - Chèn video nền thiên nhiên chuyển động nhẹ nhàng (Loop).
-   - Chèn ảnh nhân vật đặt ở vị trí hợp lý kết hợp hiệu ứng sóng âm động (Audio Waveform) và phụ đề nổi bật.
-3. **Nguồn kịch bản quốc tế hóa:**
-   - Tìm kiếm các từ khóa drama gia đình hot tại thị trường Nhật Bản / Hàn Quốc (mảnh đất màu mỡ về đề tài mâu thuẫn xã hội), sau đó Việt hóa và bản địa hóa bối cảnh phù hợp với lối sống văn hóa Việt Nam.
+   - Chèn video tự nhiên có sóng âm và dòng AI, theo quy trình tác giả đã hướng dẫn trước đây.
+3. **Nguồn kịch bản:**
+   - Không thiếu content: tìm kiếm từ khóa drama gia đình bên thị trường Nhật hoặc Hàn, lấy về rồi Việt hóa ra thị trường Việt Nam.
 
 ---
 
 ## 3. BÀI HỌC THỰC CHIẾN TỪ NGÁCH SỨC KHỎE NGƯỜI CAO TUỔI
 
 Tác giả phân tích một kênh sức khỏe mới 4 ngày tuổi:
-- Video đầu tiên lẹt đẹt vài chục view; video thứ hai bứt phá nổ mạnh **> 20.000 view**.
-- **Quy luật từ khóa vàng:** Video nói về **Bệnh Gan** đạt > 20K view và 8K view; trong khi video nói về **Thận** chỉ được vài trăm view.
-- **Lời khuyên xương máu:** Khi mới lập kênh, hãy tập trung chuyên sâu 1 ngách ngách nhỏ nhất (Sub-niche) có nhu cầu cao nhất (ví dụ: Chuyên bệnh Gan và giải độc), không dàn trải nhiều bộ phận khiến tệp khán giả bị phân mảnh thuật toán khó đề xuất.
+- Video đầu tiên lẹt đẹt về view; video thứ hai bắt đầu nổ.
+- **Quy luật từ khóa:** Video nói về **Gan** đạt hơn 20k view và video kế tiếp hơn 8k view; trong khi các video nói về **Thận** chỉ được vài trăm view.
+- **Cách edit ngách sức khỏe:** Ghép nhiều hình ảnh và video thực tế minh họa theo đúng đoạn kịch bản đang đọc. Quan trọng nhất vẫn là kịch bản hay, chỉnh chu và giữ chân được người xem.
+- **Lời khuyên:** Khi xây kênh đầu tiên, hãy tập trung vào một ngách trend, nhiều người quan tâm, cao view nhất. Khi kênh đủ viral và đủ mạnh mới mở rộng sang ngách khác (ví dụ lúc đầu nói về gan, sau mở thêm về thận hoặc bệnh khác). Làm quá nhiều thứ thì tệp khán giả bị loãng, rất khó được đề xuất.
 
 ---
 
-## 4. TÀI NGUYÊN & LINK THAM KHẢO CHÍNH THỨC
+## 4. TÀI NGUYÊN THAM KHẢO
 
-- **Kênh đối thủ tham khảo:** `@tuoigiatuoidep` (YouTube Search)
-- **Tài liệu hướng dẫn & Share Prompt nhân bản thị trường:**  
-  🔗 [H2DEV Masterclass: Tặng Prompt Master Tự Nhân Bản Thị Trường](https://h2dev.vn/learn/study/tang-prompt-master-tu-nhan-ban-sang-moi-thi-truong-bat-ky-mong-muon-huong-dan-thuc-chien?ref=H2DEV-001)
+- Link kênh mẫu được tác giả để ở phần mô tả video để mọi người tham khảo.

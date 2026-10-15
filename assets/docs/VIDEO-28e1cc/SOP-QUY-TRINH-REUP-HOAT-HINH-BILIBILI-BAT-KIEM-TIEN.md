@@ -11,44 +11,45 @@
 
 ## 1. BẰNG CHỨNG BẬT KIẾM TIỀN THỰC TẾ: KÊNH "MỘNG ĐAM MỸ"
 
-- **Tên kênh:** `Mộng Đam Mỹ` (Channel ID: `UCPhw3R6ly3mnGRqA_TazlUw`).
-- **Hiện trạng kiểm chứng trực tiếp trong YouTube Studio (phút 00:20):**
-  - Kênh đã được YouTube chấp thuận vào Chương trình Đối tác (YPP).
-  - Toàn bộ video trong mục *Nội dung của kênh* đều hiển thị **biểu tượng tiền xanh (Bật kiếm tiền)** với trạng thái: *"Video này đang tiếp cận người xem và kiếm tiền theo chế độ cài đặt của bạn"*.
-  - Các video tiêu biểu đang tạo doanh thu:
-    + *"TRUYỆN 2D ĐAM MỸ | Nhặt Được Mỹ Nam Trúng Độc..."* → Đạt 3.773 lượt xem, tạo doanh thu $0.81.
-    + *"TRUYỆN 2D ĐAM MỸ | Phản Diện Nghe Được Tiếng Lòng..."* → Đạt 2.013 lượt xem, tạo doanh thu $0.21.
-    + *"TRUYỆN 2D ĐAM MỸ | Gả Cho Vương Gia Đang Hôn Mê..."* → Tạo doanh thu $0.22.
-    + *"TRUYỆN 2D ĐAM MỸ | Rời Hoàng Cung Cùng Nàng..."* → Tạo doanh thu $0.09.
+- **Kênh trong bài:** Kênh reup phim đam mỹ của một thành viên trong nhóm Pro, vừa được bật kiếm tiền vào ngày 9 tháng 7.
+- **Nhận định của tác giả:**
+  - Ngách reup chỉ để kiếm thêm chứ không kiếm được nhiều.
+  - Ngách phim đam mỹ tác giả đã share trên web cách đây khoảng 3 - 4 tháng; view rất ổn định, rất cao, nhiều người thích xem.
+  - Thumbnail của kênh do AI làm chứ không làm bằng tay.
+- **Chuyển nhượng kênh:** Chủ kênh muốn nhượng lại kênh vì làm riêng khá nhiều kênh. Tác giả chỉ giới thiệu và kết nối, không mua bán; ai có nhu cầu thật sự thì xem thông tin ở phần mô tả dưới video.
 
 ---
 
 ## 2. NGUỒN TÀI NGUYÊN VIDEO & CÔNG CỤ THỰC CHIẾN
 
-Trong bài giảng, tác giả chia sẻ trực tiếp 2 kênh Bilibili nguồn chứa kho hoạt hình 2D cổ trang dồi dào:
-1. **Kênh nguồn Bilibili 1:** `https://space.bilibili.com/3546626561935534/upload/video`  
-   - Chuyên kho hoạt hình 2D ngắn, đồ họa đẹp mắt, diễn biến nhanh.
-2. **Kênh nguồn Bilibili 2:** `https://space.bilibili.com/1692631217`  
-   - Kho hoạt họa tiểu thuyết cổ trang, tranh vẽ sống động, không dính logo nhà đài lớn.
-3. **Công cụ dịch phụ đề & lồng tiếng:**
-   - Tool dịch phụ đề SRT và tích hợp giọng đọc AI tiếng Việt (Ngọc Huyền / Minh Quang).
+Trong bài giảng, tác giả lấy ví dụ 2 kênh làm dạng đam mỹ trên nền tảng Bilibili:
+1. **Trình duyệt tải video:** Dùng trình duyệt Cốc Cốc, có sẵn nút tải video nên không cần dùng tool khác.
+2. **Kênh Bilibili miễn phí:** Tải full được toàn bộ video.
+3. **Kênh Bilibili trả phí:** Kênh có logo màu hồng hoặc dấu xám phải trả phí gói thì mới xem và tải được full video; nếu không đăng ký thì không tải full HD và không tải được hết video.
+4. **Công cụ dịch phụ đề & lồng tiếng:**
+   - Tool dịch phụ đề của tác giả, kèm công cụ tạo giọng đọc AI tiếng Việt (giọng Ngọc Huyền) để đỡ phải mua gói giọng đọc bên ngoài.
 
 ---
 
-## 3. QUY TRÌNH 5 BƯỚC REUP HOẠT HÌNH LÁCH BẢN QUYỀN FAIR USE
+## 3. QUY TRÌNH REUP HOẠT HÌNH LÁCH BẢN QUYỀN FAIR USE
 
-1. **Bước 1 — Tải video chất lượng cao từ Bilibili:**
-   - Sử dụng các công cụ tải video Bilibili không dính watermark (tải định dạng 1080p).
-2. **Bước 2 — Trích xuất & Dịch thuật kịch bản (Transcription & Translation):**
-   - Lấy phụ đề tiếng Trung gốc hoặc bóc tách âm thanh qua Whisper.
-   - Dùng AI dịch sang văn phong kiếm hiệp / ngôn tình / đam mỹ mượt mà, thuần Việt, có nhịp điệu lôi cuốn.
-3. **Bước 3 — Tạo giọng đọc lồng tiếng (Voiceover AI):**
-   - Sử dụng giọng đọc AI tiếng Việt truyền cảm, nhịp đọc biến chuyển theo tình huống (nhẹ nhàng khi tự sự, kịch tính khi biến cố).
-4. **Bước 4 — Biên tập video lách quét AI trong CapCut/Premiere:**
-   - **Cắt bỏ đoạn intro/outro gốc:** Cắt bỏ 3-5 giây đầu và cuối của tập phim Bilibili.
-   - **Cân chỉnh khung hình & Tốc độ:** Lật ngang video (Flip Horizontal), tăng/giảm tốc độ 1.05x hoặc 0.98x, zoom khung hình 105%.
-   - **Chèn thêm lớp chuyển động (Overlay):** Thêm lớp hiệu ứng cánh hoa rơi, ánh sáng mờ hoặc viền khung trang trí phong cách cổ phong.
-   - **Xử lý âm thanh gốc:** Giảm âm lượng âm thanh gốc xuống 5-10% làm tiếng động nền (SFX), lồng tiếng đọc mới đè lên ở mức 100%.
-5. **Bước 5 — Thiết kế Thumbnail "Giật tít tò mò":**
-   - Chọn khung hình mỹ nam/mỹ nữ nhân vật chính đẹp nhất.
-   - Chèn chữ tiêu đề lớn màu vàng/đỏ: `TRUYỆN 2D CỔ TRANG` → `NHẶT ĐƯỢC MỸ NAM` → `VƯƠNG GIA HỐI HẬN!`.
+1. **Bước 1 — Tải video từ Bilibili:**
+   - Mở video trên Cốc Cốc, bấm nút tải ở góc trái và chờ tải về.
+2. **Bước 2 — Trích xuất & Dịch thuật kịch bản:**
+   - Import video vào CapCut, giảm tốc độ video xuống 0.8 (có thể 0.7) để khi tạo giọng đọc không bị chèn lên nhau.
+   - Trích xuất phụ đề tự động, chọn tiếng Trung, rồi xuất phụ đề ra file.
+   - Dùng tool dịch của tác giả để dịch phụ đề.
+3. **Bước 3 — Tạo giọng đọc lồng tiếng:**
+   - Tải file đã dịch lên công cụ tạo giọng, chọn giọng Ngọc Huyền. Vì video đã giảm về 0.8 nên tốc độ giọng đọc ở tool của tác giả chọn khoảng 1.5 - 1.6; trên Vip Verbi chọn khoảng 1.1.
+4. **Bước 4 — Biên tập video trong CapCut:**
+   - **Âm thanh gốc:** Xóa hẳn âm thanh gốc cho an toàn; nhiều video có nhạc nền rất hay dính bản quyền.
+   - **Logo và chữ gốc:** Xóa hoặc làm mờ logo Bilibili và phụ đề tiếng Trung dính vào video; có thể chèn logo kênh vào chỗ logo cũ.
+   - **Phụ đề:** Import phụ đề tiếng Việt đã dịch, chọn phông chữ hợp lý, dễ nhìn.
+   - **Giọng đọc:** Import file giọng đã tạo và chỉnh âm lượng cho to rõ ràng.
+   - **Tốc độ sau khi gộp:** Gộp tất cả lại rồi tăng tốc lên khoảng 1.2 - 1.3.
+   - **Nhận diện kênh:** Thêm logo kênh, tên kênh và video nền chạy xung quanh; sau đó lưu thành mẫu cài sẵn để các tập sau chỉ cần dịch, làm phụ đề và âm thanh rồi import mẫu vào, tiết kiệm rất nhiều thời gian edit.
+5. **Bước 5 — Thiết kế Thumbnail bằng AI:**
+   - Copy link video, tải ảnh thumbnail gốc về.
+   - Trên công cụ chat AI, dịch tiêu đề video sang tiếng Việt để hiểu phim nói về gì, chọn một tiêu đề phù hợp.
+   - Sau đó tải ảnh lên và yêu cầu AI thiết kế lại ảnh kèm tiêu đề. Nên làm từng bước như vậy, vì yêu cầu tạo thẳng cả chữ trên thumbnail sẽ thiếu chi tiết và dễ lỗi.
+   - Cũng có thể chụp màn hình một cảnh đẹp trong video rồi tải lên thay cho ảnh thumbnail gốc.

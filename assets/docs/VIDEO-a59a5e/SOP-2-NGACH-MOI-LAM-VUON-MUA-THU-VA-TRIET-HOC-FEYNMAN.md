@@ -9,31 +9,30 @@
 ## 1. PHÂN TÍCH CHI TIẾT 2 NGÁCH XANH TIỀM NĂNG
 
 ### NGÁCH 1: LÀM VƯỜN MÙA THU & CÂY HOA LÂU NĂM (식물 & 가드닝)
-* **Kênh khảo sát tiêu biểu:** Kênh tạo năm 2023, bắt đầu đăng video 13 ngày trước. Chỉ ra 8 video nhưng các video đều đạt 100.000 – 200.000+ views nhờ đón đúng mùa vụ thu hoạch và chuẩn bị mùa đông tại Hàn Quốc.
+* **Kênh khảo sát tiêu biểu:** Kênh dùng mail lập năm 2023, mới có 8 video, video đầu tiên đăng cách đây 13 ngày. View rất cao: nhiều video hơn 100k view và có video hơn 200k view; kênh đã bật kiếm tiền.
 * **Đặc trưng chủ đề:**
-  - *"11 loại hoa lâu năm bạn nhất định phải cắt tỉa trước cuối tháng 9"* (9월 말까지 꼭 잘라야 하는 다년생 꽃 11가지)
-  - *"11 loại cây trồng mùa thu chịu rét tốt nhất cho khu vườn"*
-* **Tâm lý học khán giả:**
-  - Khán giả trung niên và người cao tuổi tại Hàn Quốc có thói quen làm vườn ban công (베란다 정원) hoặc làm vườn ngoại ô.
-  - Tính cấp thiết về thời vụ: Mùa thu tại Hàn Quốc rất ngắn trước khi đóng băng mùa đông, vì vậy các video hướng dẫn mốc thời gian ("trước cuối tháng 9", "đầu tháng 10") tạo tỷ lệ click (CTR) cực cao (> 12%).
-* **Chiến lược B-roll & Footage:**
-  - Sử dụng video quay cận cảnh cây cỏ, cắt tỉa hoa lá từ Pexels, Pixabay, YouTube Creative Commons.
-  - Phối hợp hiệu ứng âm thanh ASMR thiên nhiên (tiếng kéo cắt cành, tiếng đất xới, tiếng chim hót nhẹ).
+  - *"11 loại hoa lâu năm bạn nhất định phải cắt tỉa trước cuối tháng 9"*
+  - *"11 loại cây lâu năm"*
+* **Tính thời vụ:**
+  - Tiêu đề bám sát thời điểm trong năm ("trước cuối tháng 9", nhắc tới tháng 9 và tháng 10) nên rất hợp thời vụ.
+  - Tác giả thấy ngách trồng cây có rất nhiều người xem, kể cả ở thị trường Việt Nam.
+* **Chiến lược hình ảnh:**
+  - Ghép hình ảnh/video AI để minh họa đoạn kịch bản, nhưng không nên full AI 100%: phải kèm hình ảnh tự nhiên (có thể tham khảo hình ảnh tự nhiên của kênh mẫu).
 
 ---
 
 ### NGÁCH 2: TRIẾT HỌC, VẬT LÝ LƯỢNG TỬ & CƠ THỂ NGƯỜI (NHÂN VẬT RICHARD FEYNMAN)
-* **Kênh khảo sát tiêu biểu:** Kênh cổ 2018 (được mua lại hoặc phục hồi ngâm kênh), đăng tải video từ 5 ngày trước với 6 video đầu tiên đạt lượng tương tác và view tăng trưởng đột biến.
+* **Kênh khảo sát tiêu biểu:** Kênh dùng mail 2018, thị trường Hàn Quốc, mới có 6 video, video đầu tiên đăng cách đây 5 ngày; view khá ổn, kênh mới như vậy là rất ổn.
 * **Đặc trưng chủ đề:**
-  - Khai thác nhân vật học giả nổi tiếng thế giới (Richard Feynman, Albert Einstein, Carl Sagan...).
-  - Kết hợp góc nhìn vật lý lượng tử, thiên văn học và cơ chế vận hành kỳ diệu của tế bào/cơ thể con người dưới lăng kính triết học cuộc sống.
-* **Phương pháp Bán Content 70/30 (Cross-Market Arbitrage):**
-  - **Nguồn gốc ý tưởng:** Lấy từ các kênh YouTube giáo dục/triết học khoa học triệu view tại thị trường Mỹ (US Channels).
+  - Dùng một nhân vật nổi tiếng người Mỹ (Feynman) làm đại diện để nói về cơ thể con người.
+  - Nhân vật chỉ là đại diện: không bắt buộc bám ngách nói về cơ thể, còn rất nhiều dạng ngách khác.
+* **Phương pháp Bán Content (nhân bản thị trường):**
+  - **Nguồn gốc ý tưởng:** Lấy kịch bản từ các kênh đối thủ bên thị trường Hoa Kỳ.
   - **Quy trình dịch chuyển:**
-    1. Tìm kiếm video triệu view bên Mỹ bằng từ khóa: `Richard Feynman philosophy`, `quantum body healing`, `cosmic mind humans`.
-    2. Dịch kịch bản tiếng Anh sang tiếng Hàn bằng Claude / GPT-4o, tinh chỉnh kính ngữ và văn phong trầm lắng.
-    3. Tìm kiếm footage vũ trụ, hạt nguyên tử, mô phỏng tế bào 3D, thiên hà từ các kho stock miễn phí (Pexels, Pixabay, NASA Open Media).
-    4. Lồng giọng đọc nam Hàn Quốc trầm ấm, sâu lắng (Voice: Deep Warm Male, tốc độ 0.95 - 0.98).
+    1. Dịch tiêu đề video sang tiếng Anh, rồi tìm trên YouTube để ra các kênh bên thị trường Hoa Kỳ.
+    2. Lấy kịch bản về làm cho thị trường Hàn; có thể cho Claude học kênh mẫu, rồi nhờ Claude phân tích và tạo form, chủ đề, tiêu đề theo yêu cầu.
+    3. Tìm footage nền (thiên hà, vũ trụ) bằng từ khóa tiếng Anh trên các web video tự nhiên miễn phí, tải về ghép làm video nền.
+    4. Giọng đọc dùng AI.
 
 ---
 
@@ -41,45 +40,40 @@
 
 ```
               ┌──────────────────────────────────────────────┐
-              │ BƯỚC 1: LỌC KEY & KÊNH ĐỐI THỦ TRIỆU VIEW     │
-              │ - Ngách Làm vườn: Quét key thời vụ mùa thu   │
-              │ - Ngách Triết học: Quét key Feynman từ Mỹ    │
+              │ BƯỚC 1: LỌC NGÁCH & KÊNH MẪU                  │
+              │ - Dịch tiêu đề sang tiếng Anh                │
+              │ - Tìm trên YouTube kênh bên Hoa Kỳ           │
               └──────────────────────┬───────────────────────┘
                                      ▼
               ┌──────────────────────────────────────────────┐
-              │ BƯỚC 2: TRAIN CLAUDE SKILL TẠO KỊCH BẢN      │
-              │ - Nạp 2 kênh đối thủ mẫu vào Claude Project  │
-              │ - Viết theo công thức 4 Hồi AVD > 45%        │
+              │ BƯỚC 2: CHO CLAUDE HỌC KÊNH MẪU              │
+              │ - Phân tích kênh, tạo form, chủ đề, tiêu đề  │
+              │ - Làm kịch bản tốt lên                       │
               └──────────────────────┬───────────────────────┘
                                      ▼
               ┌──────────────────────────────────────────────┐
-              │ BƯỚC 3: SẢN XUẤT AUDIO ELEVENLABS CHUẨN      │
-              │ - Chọn Model Multilingual v2                 │
-              │ - Speed: 0.96 | Stability: 0.65              │
+              │ BƯỚC 3: GIỌNG ĐỌC AI                         │
+              │ - Lồng giọng đọc AI cho kịch bản             │
               └──────────────────────┬───────────────────────┘
                                      ▼
               ┌──────────────────────────────────────────────┐
-              │ BƯỚC 4: RÁP FOOTAGE THIÊN NHIÊN / VŨ TRỤ     │
-              │ - Pexels, Pixabay, NASA Media (4K Stock)     │
-              │ - Lồng tiếng ASMR hoặc nhạc nền không bản    │
-              │   quyền hạ volume -25dB                      │
+              │ BƯỚC 4: RÁP VIDEO NỀN                        │
+              │ - Footage thiên hà, vũ trụ từ web video      │
+              │   tự nhiên miễn phí                          │
               └──────────────────────────────────────────────┘
 ```
 
 ### SOP chi tiết cho khâu Dựng (Editing):
-1. **Tuyệt đối không dùng 1 ảnh tĩnh chạy Pan/Zoom suốt 10 giây:**
-   - Mỗi cảnh cắt (Cut) không dài quá 3.5 – 5 giây.
-   - Luôn chèn các footage chuyển động tự nhiên (cành cây lay động trước gió, dòng nước chảy, các hạt phân tử chuyển động).
-2. **Text On Screen (Phụ đề nổi bật):**
-   - Chỉ làm nổi bật các con số đinh và từ khóa chính (ví dụ: `11가지`, `9월 말`, `세포의 비밀`).
-   - Font chữ khuyên dùng: Noto Sans KR Bold, Black Han Sans hoặc Gmarket Sans Bold.
-3. **Thumbnail Packaging:**
-   - Nền ảnh rõ nét, độ tương phản cao.
-   - Text thumbnail cực ngắn (3 - 5 từ), đánh trúng tâm lý tò mò hoặc lo lắng bỏ lỡ thời vụ.
+1. **Video nền cắt từng đoạn rồi lặp đi lặp lại:**
+   - Không dùng một video xuyên suốt; cắt từng đoạn rồi cho lặp lại.
+2. **Làm mờ nhân vật:**
+   - Kênh mẫu để nhân vật đứng thuyết trình nhưng làm mờ đi để tránh bản quyền.
+3. **Không full AI 100%:**
+   - Hình ảnh/video AI chỉ ghép vào để minh họa, kèm hình ảnh tự nhiên.
 
 ---
 
 ## 3. CÁC LỖI TỬ HUYỆT VÀ CẢNH BÁO QUAN TRỌNG
-* ⚠️ **Lỗi dịch máy thô (Google Translate):** Tuyệt đối không dịch kịch bản tiếng Anh sang tiếng Hàn bằng công cụ dịch máy thông thường vì sẽ bị lỗi kính ngữ và ngữ pháp cứng nhắc khiến người Hàn rời bỏ video ngay 10 giây đầu (tụt AVD thảm hại). Bắt buộc phải qua Claude có prompt chuẩn hóa văn phong Hàn Quốc tự nhiên.
-* ⚠️ **Lỗi vi phạm bản quyền video stock:** Chỉ tải các video có giấy phép Creative Commons Zero (CC0) hoặc stock miễn phí thương mại từ Pexels, Pixabay. Không cắt ghép video có bản quyền của các hãng truyền hình hoặc kênh đối thủ mà không qua biến đổi sâu.
-* ⚠️ **Lỗi lệch mùa vụ (Seasonality Trap):** Với ngách làm vườn cây cối, nội dung phụ thuộc 100% vào thời tiết thực tế tại Hàn Quốc. Không làm video cắt tỉa cây mùa thu khi thời tiết đã bước sang đông (tháng 11 - 12) vì kênh sẽ bị mất đề xuất ngay lập tức.
+* ⚠️ **Lỗi full AI:** Không làm toàn bộ bằng hình ảnh/video AI; phải kèm hình ảnh tự nhiên.
+* ⚠️ **Lỗi bản quyền nhân vật:** Kênh mẫu làm mờ nhân vật nổi tiếng để tránh bản quyền; không để nguyên nhân vật rõ nét trong video nền.
+* ⚠️ **Lỗi lệch thời điểm:** Tiêu đề ngách làm vườn gắn mốc thời gian trong năm (cuối tháng 9, tháng 10), nên nội dung phụ thuộc thời điểm đăng.

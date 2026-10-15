@@ -4,45 +4,42 @@
 
 ---
 
-## 1. Bản Chất Của Việc Quét Bản Quyền Trên YouTube
-YouTube kiểm soát bản quyền qua 3 tầng bảo vệ tự động:
-1. **Content ID Audio:** Quét dấu vân tay âm thanh (acoustic fingerprint) từng mili-giây đối với nhạc nền, giọng đọc nổi tiếng, hiệu ứng âm thanh độc quyền.
-2. **Content ID Video:** Quét khung hình visual (frame-by-frame fingerprint) đối chiếu với kho phim ảnh, chương trình truyền hình và video độc quyền của các MCN/Studio.
-3. **Quét thủ công (Manual Claim/Strike):** Do chủ sở hữu tác phẩm hoặc mạng lưới đối tác phát hiện và gửi yêu cầu gỡ bỏ theo DMCA.
+## 1. Bản Chất Của Việc Bán Content Và Rủi Ro Bản Quyền
+1. **Vì sao gọi là bán content:** Các kênh bên Trung Quốc lấy video từ YouTube về, cắt ghép chỉnh sửa rồi chỉ đăng trên Douyin. Người làm bên Việt Nam lấy từ Douyin về, Việt sub lại rồi đăng ngược lên YouTube.
+2. **Điều kiện để đúng chính sách YouTube:** Cần thay đổi khoảng 60% là sáng tạo lại, kiểu cắt ghép, xào nấu, chèn thêm nội dung.
+3. **Rủi ro phải chấp nhận:** Có thể dính bản quyền, hoặc sau khi bật kiếm tiền gặp đợt quét thì dính lỗi sử dụng lại nội dung.
 
 ---
 
-## 2. Quy Trình 5 Bước Test Bản Quyền Thực Tế Trước Khi Đăng Chính Thức
+## 2. Quy Trình Test Bản Quyền Thực Tế Trước Khi Đăng Chính Thức
 
-### Bước 1: Chuẩn Bị Kênh Test Cách Ly (Canary Channel)
-- Sử dụng 1 tài khoản Gmail độc lập (tuyệt đối không chung IP/Profile với kênh chính kiếm tiền).
-- Kênh test không cần bật kiếm tiền, chỉ dùng để tải video lên ở chế độ **Không công khai (Unlisted)** hoặc **Riêng tư (Private)**.
+### Bước 1: Chuẩn Bị Kênh Phụ Để Test
+- Làm 2 kênh: một kênh chính (mua kênh cổ về lọc rồi đăng video chính thức) và một kênh phụ.
+- Kênh phụ chỉ cần dùng một gmail khác (hoặc mua kênh cũng được), không yêu cầu kênh cổ; chưa có kênh thì bấm tạo kênh ở gmail đó.
 
-### Bước 2: Tải Video Douyin & Sơ Chế Loại Bỏ Watermark Ban Đầu
-- Lấy link video gốc từ Douyin chất lượng 1080p không dính logo mờ (watermark-free).
-- Tách riêng track âm thanh gốc của video Douyin để kiểm tra riêng rẽ visual và audio.
+### Bước 2: Tải Video Từ Các Nguồn
+- Vào danh sách nguồn (nhiều kênh) để tải video về.
+- Nếu một số web bị chặn không tải được thì đó là do nhà mạng chặn; tác giả dùng mạng VNPT thì không bị chặn.
+- Tải về xong chưa cần mở phần mềm dựng, chưa edit ngay.
 
-### Bước 3: Đăng Tải Lên Kênh Test & Chờ Thuật Toán YouTube Checks Quét Đủ 100%
-- Tải video lên kênh test.
-- Chờ hệ thống YouTube Checks quét hoàn tất cả 2 mục: **Bản quyền (Copyright)** và **Tính phù hợp với quảng cáo (Ad Suitability)**.
-- Đợi thêm tối thiểu **12 - 24 giờ**: Rất nhiều bản quyền âm nhạc hoặc visual quốc tế không báo ngay tức thì mà cần vài tiếng để đối soát cơ sở dữ liệu toàn cầu.
+### Bước 3: Đăng Tải Lên Kênh Phụ Ở Chế Độ Riêng Tư
+- Tải video lên kênh phụ, để chế độ **Riêng tư**.
+- Chờ video tải xong và được hệ thống xét duyệt bản quyền.
 
-### Bước 4: Đọc Kết Quả Kiểm Tra Và Xử Lý Khi Dính Claim
-- **Nếu báo "Không phát hiện vấn đề nào" (Checks: No issues found):** Video an toàn về mặt Content ID tự động.
-- **Nếu báo Claim Bản Quyền Âm Nhạc (Audio Claim):**
-  + Tắt âm thanh gốc, thay bằng nhạc miễn phí từ Thư viện âm thanh YouTube (Audio Library) hoặc nhạc lofi/ambient bản quyền Creative Commons.
-- **Nếu báo Claim Visual (Video Claim):**
-  + Lật ngang khung hình (Horizontal Flip).
-  + Thay đổi tốc độ khung hình (Speed 1.05x hoặc 0.95x).
-  + Thêm lớp filter màu nhẹ hoặc zoom crop 3 - 5% để phá vỡ hash điểm ảnh visual.
+### Bước 4: Bấm Xem Chi Tiết Để Biết Dính Loại Bản Quyền Nào
+- Bản quyền có nhiều dạng nên phải bấm vào xem chi tiết: dính về hình ảnh hay về âm nhạc.
+- **Nếu dính bản quyền hình ảnh (video):** Bỏ luôn, xóa video và lấy nguồn khác. Dù bỏ âm thanh đi thì hình ảnh vẫn dính.
+- **Nếu chỉ dính bản quyền nhạc (âm thanh):** Vẫn giữ video; lúc edit, trích xuất âm thanh ra, bỏ phần âm thanh đó rồi thay bằng âm thanh khác là ổn, không còn bị bản quyền.
+- **Với video dài khoảng 30 phút hoặc một tiếng:** Chi tiết bản quyền cho biết cụ thể từ phút nào, giây nào; vào chỗ cắt, nhìn đúng số phút đó, test và thay bằng âm thanh khác.
 
-### Bước 5: Render Lại Bản Final Chuẩn Hóa Và Đăng Kênh Chính
-- Sau khi kênh test xác nhận video sạch 100%, render file cuối cùng với bitrate cao và tải lên kênh chính.
-- Bật kiếm tiền và theo dõi 48 giờ đầu tiên.
+### Bước 5: Chỉ Khi Test Sạch Mới Edit Và Đăng Kênh Chính
+- Sau khi test xong, video nào không dính thì mới bắt đầu vào phần mềm dựng để edit.
+- Sau đó đăng lên kênh chính thì không có vấn đề gì.
 
 ---
 
 ## 3. Các Điều Cần Tránh (Avoid Flags)
-1. **Tránh reup trực tiếp lên kênh chính mà không qua kênh test:** Nguy cơ dính gậy bản quyền (Copyright Strike) ngay lập tức khiến kênh bị sập hoặc mất tính năng kiếm tiền.
-2. **Tránh dùng các đoạn nhạc đang viral trên Douyin:** Nhạc trend Douyin thường có chủ sở hữu bản quyền quốc tế tại Universal Music, Warner, Sony Music rất dễ dính gậy.
-3. **Tránh giữ nguyên độ dài clip Douyin nguyên bản:** Nên cắt ghép xâu chuỗi nhiều clip ngắn hoặc bổ sung thuyết minh bình luận để tạo giá trị gia tăng (Transformative Content).
+1. **Tránh tải về rồi edit ngay mà chưa test:** Nhiều người edit mất rất nhiều thời gian, công sức, dung lượng máy, đăng lên lại bị bản quyền và bị xóa.
+2. **Tránh bỏ video chỉ vì dính bản quyền âm thanh:** Dính âm thanh thì giữ lại và thay âm thanh; chỉ dính hình ảnh thì mới bỏ.
+3. **Tránh quên giữ lại video khi chỉnh sửa:** Nhớ giữ lại một vài video khi chỉnh sửa trong CapCut để sau này kháng khi dính lỗi sử dụng lại nội dung; tác giả nói kháng được khoảng 99%.
+4. **Tránh lấy nguồn không còn ra video mới:** Nên lấy từ các kênh mẹ bên Douyin liên tục ra video mới nhất. Chấp nhận rủi ro là một video nguồn có thể có nhiều người khác cùng lấy về làm.

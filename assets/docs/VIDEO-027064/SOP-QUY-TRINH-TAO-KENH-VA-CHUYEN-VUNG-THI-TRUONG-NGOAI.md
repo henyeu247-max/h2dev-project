@@ -5,11 +5,18 @@
 ---
 
 ## 1. NGUYÊN LÝ CHUYỂN VÙNG THỊ TRƯỜNG
-- Thuật toán YouTube đề xuất dựa trên: **Ngôn ngữ tiêu đề/mô tả**, **Ngôn ngữ phụ đề**, **Metadata quốc gia trong cài đặt kênh** và **hành vi của tệp người xem đầu tiên**.
+- Muốn làm thị trường nước nào thì chuyển địa điểm và ngôn ngữ của kênh sang nước đó; video lấy ví dụ chuyển sang Hoa Kỳ.
+- Làm YouTube view ngoại không cần fake VPN hay proxy.
 
 ---
 
 ## 2. QUY TRÌNH THIẾT LẬP CHUẨN
-- **Cài đặt quốc gia kênh:** Vào YouTube Studio $ightarrow$ Cài đặt $ightarrow$ Kênh $ightarrow$ Quốc gia cư trú chọn đúng thị trường mục tiêu (Nhật Bản, Hàn Quốc, Hoa Kỳ).
-- **Ngôn ngữ mặc định:** Chọn ngôn ngữ đích cho video và phụ đề.
-- **Môi trường kết nối:** Không dùng proxy bẩn; dùng profile trình duyệt độc lập có múi giờ và ngôn ngữ hiển thị khớp với quốc gia mục tiêu.
+- **Chuyển vùng ở giao diện chính:** Bấm vào mục địa điểm ở giao diện chính, chọn Hoa Kỳ. Chữ Việt Nam cạnh logo YouTube mất đi là đã chuyển được.
+- **Chuyển ngôn ngữ:** Chuyển ngôn ngữ sang tiếng Anh Mỹ (US); UK là nước Anh.
+- **Chuyển quốc gia trong Studio:** Chuyển vùng ở trang chủ xong, vào YouTube Studio, phần cài đặt, đổi tiếp quốc gia sang Hoa Kỳ. Đây là bước cực kỳ quan trọng; nhớ làm đủ từng bước.
+- **Xác minh đủ 3 dòng xanh:** Một số điện thoại xác minh được 2 kênh nên có thể mượn số của người thân; ảnh mặt trước và mặt sau giấy phép lái xe xác minh được rất nhiều kênh, không giới hạn.
+- **Đặt tên kênh:** Cho ChatGPT xem tên kênh đối thủ rồi nhờ gợi ý 10 tên hay cùng chủ đề, sau đó nhờ chuyển sang tiếng Anh để chọn; ID kênh đặt kiểu gì cũng được.
+- **Logo:** Lưu ảnh logo của kênh đối thủ, đưa vào ChatGPT hoặc Leonardo để tạo ảnh tương tự (yêu cầu viết bằng tiếng Anh), rồi tải lên kênh. Ảnh bìa có hay không cũng được.
+- **Từ khóa kênh:** Lấy từ kênh đối thủ bằng tiện ích vidIQ bản free, tham khảo khoảng 5 đến 10 kênh. Không nhờ ChatGPT vì nó chỉ cho từ khóa xa trọng tâm. Tổng từ khóa không được vượt quá 500 từ nên phải xóa bớt; từ khóa của kênh khác với từ khóa của video.
+- **Mô tả kênh:** Lấy mô tả của kênh đối thủ cùng chủ đề, nhờ ChatGPT viết lại bằng tiếng Anh cho hấp dẫn hơn rồi dán vào kênh.
+- **Cài đặt video:** Để video ở chế độ riêng tư trước, sau đó đặt lịch hoặc mở công khai. Tag của video lấy từ kênh đối thủ có điểm cao. Ngôn ngữ video chọn tiếng Anh Mỹ, phụ đề chỉnh bằng tiếng Anh.

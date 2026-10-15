@@ -5,23 +5,23 @@
 ---
 
 ## 1. NGUYÊN TẮC QUẢN TRỊ TÀI KHOẢN GOOGLE ADSENSE
-- **Hiểm họa mất quyền truy cập độc quyền:** Nếu chỉ có duy nhất 1 email nắm quyền Quản trị viên (Admin) của Google AdSense, khi email đó bị khóa do vi phạm chính sách Gmail hoặc bảo mật thì toàn bộ tài khoản AdSense và số dư sẽ bị đóng băng vĩnh viễn.
-- **Mô hình Phân quyền Đa Tầng:**
-  1. **Tài khoản Admin Chính (Owner):** Chỉ dùng để tạo AdSense ban đầu, cất giữ an toàn trên thiết bị bảo mật cao và không dùng để đăng nhập hàng ngày.
-  2. **Tài khoản Admin Dự phòng (Backup Admin):** Email độc lập đã bật 2FA trên thiết bị khác để có thể can thiệp ngay lập tức khi mail chính gặp sự cố.
-  3. **Tài khoản Standard User:** Dùng để kiểm tra báo cáo doanh thu hàng ngày trên các thiết bị làm việc.
+- **Bối cảnh:** Dạo gần đây Google quét rất gắt các tài khoản Google AdSense, có thể bị die hoặc bị die mail. Lỗi thường gặp là ở bước 2 trong mục kiếm tiền: bị mất kiếm tiền, không bật được kiếm tiền. Mở Studio trên máy tính sẽ thấy rõ vấn đề bị gì.
+- **Hai trường hợp:**
+  1. **Bị die vĩnh viễn:** Có thông báo gửi về mail của tài khoản Google AdSense, kiểu bị chấm dứt thanh toán. Trường hợp này không cứu được.
+  2. **Bị tạm ngưng:** Không có thông báo nào gửi về Gmail. Trường hợp này cứu được và kháng được.
+- **Hiểm họa mất quyền truy cập độc quyền:** Nếu chỉ có duy nhất mail chính nắm tài khoản Google AdSense và mail đó bị die thì mất quyền vào AdSense.
+- **Cách phòng tránh:** Add thêm một Gmail khác vào quyền quản lý của tài khoản AdSense chính; khi mail chính bị die thì dùng tài khoản khác này vào, xóa mail chính đi, vào lại kênh YouTube thì tình trạng kiếm tiền sẽ xanh lại bình thường. Tác giả cho biết một tài khoản AdSense của ông đã liên kết với nhiều Gmail theo cách này.
 
 ---
 
 ## 2. QUY TRÌNH THỰC HIỆN 4 BƯỚC CHUẨN
-- **Bước 1:** Đăng nhập vào Google AdSense chính thức tại `adsense.google.com`.
-- **Bước 2:** Truy cập mục **Tài khoản (Account)** -> **Quyền truy cập và ủy quyền (Access and authorization)** -> **Quản lý người dùng (User management)**.
-- **Bước 3:** Nhập địa chỉ Gmail dự phòng của bạn vào ô mời người dùng và chọn quyền **Quản trị viên (Administrator)**.
-- **Bước 4:** Mở hộp thư Gmail dự phòng, chấp nhận lời mời và hoàn tất liên kết tài khoản trong vòng 24 giờ.
+- **Bước 1:** Đăng nhập vào tài khoản Google AdSense bằng Gmail chính.
+- **Bước 2:** Vào mục **Tài khoản** -> **Quản lý người dùng**.
+- **Bước 3:** Bấm thêm người dùng mới, nhập địa chỉ Gmail muốn liên kết và cho quyền **quản lý**.
+- **Bước 4:** Mở hộp thư của Gmail vừa thêm (nên dùng tab ẩn danh để đăng nhập), nhận thông báo và bấm chấp nhận. Sau đó Gmail này đã vào được quyền của tài khoản AdSense và có thể xóa quyền của mail kia trong mục Quản lý người dùng.
 
 ---
 
-## 3. CẢNH BÁO TỬ HUYỆT CẦN TRÁNH
-- **Tuyệt đối không cấp quyền Admin** cho các email không do bạn toàn quyền kiểm soát mật khẩu và số điện thoại 2FA.
-- **Tránh dùng chung số điện thoại khôi phục** giữa email Admin chính và email Admin dự phòng.
-- **Không thực hiện thao tác chuyển quyền** ngay khi tài khoản AdSense vừa có thông báo xác minh danh tính hoặc đang trong kỳ thanh toán (ngày 21-26 hàng tháng).
+## 3. CẢNH BÁO CẦN TRÁNH
+- Gmail được thêm vào phải là một Gmail bình thường, chưa từng tạo Google AdSense.
+- Tài khoản đã nhận thông báo chấm dứt thanh toán gửi về mail thì không cứu được bằng cách này; cách này dùng để phòng tránh từ trước.

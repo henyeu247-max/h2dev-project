@@ -1,17 +1,25 @@
 # SOP FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC THEO CHÍNH SÁCH MỚI YOUTUBE 2026
 > **Mã SKU:** `VIDEO-6ad3fe` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 04 phút 08 giây
-> **Mục tiêu:** Xử lý và phòng ngừa lỗi "Inauthentic / Deceptive Content" (Nội dung không trung thực) khi bị YouTube từ chối kiếm tiền.
+> **Mục tiêu:** Hiểu nguồn gốc và cách hạn chế lỗi nội dung không trung thực năm 2026 khi YouTube quét kênh.
 
 ---
 
 ## 1. NGUYÊN NHÂN BỊ QUÉT NỘI DUNG KHÔNG TRUNG THỰC
-- Sử dụng hình ảnh thumbnail lừa đảo (Clickbait quá đà, ảnh không hề xuất hiện trong video).
-- Dùng AI sinh kịch bản vô nghĩa, lặp đi lặp lại hoặc đọc thông tin bịa đặt gây hoang mang dư luận.
-- Nhạc nền và hình ảnh lấy từ video của người khác mà không có sự biên tập biến đổi sâu.
+- Theo tác giả, khoảng 90% lỗi này đến từ kịch bản.
+- Kịch bản giật tít, câu view, nói sai sự thật, đặc biệt các dạng tin tức chính trị.
+- Hình ảnh, video: nên dùng hình ảnh tự nhiên hoặc nhiều ảnh ghép lại với nhau, càng nhiều càng tốt; kênh chỉ dùng một ảnh như một số kênh đối thủ thì chưa an toàn.
+- Bối cảnh: cuối năm trước xuất hiện rất nhiều tool sản xuất video hàng loạt, không có kịch bản, không mang giá trị cho người xem (ví dụ video giải cứu động vật) nên YouTube phải quét gắt. Tác giả nghĩ sắp tới sẽ nhẹ lại bớt.
 
 ---
 
-## 2. QUY TRÌNH KHẮC PHỤC
-- **Bước 1:** Ẩn hoặc xóa các video có thumbnail clickbait sai sự thật.
-- **Bước 2:** Bổ sung giọng đọc thuyết minh cá nhân có cảm xúc, bổ sung hình ảnh B-roll và chú thích nguồn tài liệu.
-- **Bước 3:** Chờ đủ 30 ngày và nộp đơn kháng nghị bằng video phân tích quy trình sản xuất (Appeal Video).
+## 2. CÁCH HẠN CHẾ
+- **Cải thiện kịch bản:** không giật tít, không câu view, không nói sai sự thật.
+- **Thêm yếu tố con người:** yêu cầu AI khi viết kịch bản thêm yếu tố con người, thể hiện đúng là một người thật, mang tính giáo dục và giá trị, không phụ thuộc AI quá.
+- **Edit và khai báo:** làm đúng cách edit hình ảnh, video và khai báo khi đăng video như video trước đã hướng dẫn; càng ngày YouTube càng siết nên phải làm thêm các bước này.
+- Việc bị quét là hên xui vì do bot AI quét hàng loạt, nên quét nhầm cả kênh làm chuẩn; mục tiêu là hạn chế tối đa.
+
+---
+
+## 3. KHÁNG NGHỊ
+- Lỗi này rất khó kháng. Có một số bên kháng được nhưng tỉ lệ không cao.
+- Tác giả cho rằng hiện tại không ai dám nhận kháng, nên nếu bị thì tự tham khảo và tự làm cách khác, đừng đưa cho ai.

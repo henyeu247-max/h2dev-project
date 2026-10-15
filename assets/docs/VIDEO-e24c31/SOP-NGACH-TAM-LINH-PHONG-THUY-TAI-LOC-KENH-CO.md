@@ -9,45 +9,46 @@
 
 ---
 
-## 1. PHÂN TÍCH CASE STUDY KÊNH MẪU: `@복이오는길` (Con Đường Đón Phúc)
+## 1. PHÂN TÍCH CASE STUDY HAI KÊNH HÀN QUỐC ĐƯỢC SHOW TRONG BÀI
 
-### 1.1. Hiện Trạng Kênh & Số Liệu Thực Tế
-- **Thị trường:** 🇰🇷 Hàn Quốc  
-- **Nền tảng kênh:** Kênh cổ lập ngày **14 thg 10, 2008** (đã có tuổi đời gần 18 năm).
-- **Quy mô thần tốc:** Chỉ mới đăng **5 video**, đạt **8.050 người đăng ký**!
-- **Tốc độ cắn đề xuất của từng video (vidIQ Outliers > 100x):**
-  - Video 1: *"Để muối ở vị trí này trong nhà, đại vận kéo đến tiền bạc đổ về"* → Đạt **45.000 lượt xem** sau 3 ngày (tốc độ 528 VPH > 100x).
-  - Video 2: *"Đừng vứt quần áo cũ theo cách này, hãy làm điều này để tránh vận xui tháng 8/2026"* → Đạt **42.000 lượt xem** sau 2 ngày (tốc độ 1.1K VPH > 100x).
-  - Video 3: *"Muốn giàu có, trong nhà vệ sinh chỉ cần đặt 1 thứ này thôi"* → Đạt **18.000 lượt xem** sau 4 ngày (tốc độ 320 VPH > 100x).
-  - Video 4: *"Trước khi cắt móng tay hãy nhớ kỹ, cắt vào ngày này tài lộc 7 năm bay sạch"* → Đạt **14.000 lượt xem** sau 3 ngày (tốc độ 272 VPH > 100x).
-  - Video 5: Video mới nhất đăng 4 phút trước khi tác giả quay màn hình.
+ID kênh nêu trong mô tả video: `@복이오는길` và `@mokamoka-e9f`.
 
----
+### 1.1. Kênh thứ nhất: kênh cổ 2008, mới 5 video
+- **Thị trường:** 🇰🇷 Hàn Quốc
+- **Nền tảng kênh:** Kênh cổ (kênh lập từ năm 2008), tác giả khuyên nên dùng kênh cổ.
+- **Quy mô:** Chỉ mới đăng **5 video**.
+- **Ngách:** Tâm linh may mắn, lấy một nhân vật hòa thượng làm đại diện.
+- **Số liệu gần đây:** Một video cách đây 4 ngày đạt 18k view, một video cách đây 3 ngày đạt 14k view; có ngày đăng 2 video. Video mới nhất đăng khoảng 4 phút trước khi tác giả quay.
 
-## 2. TẠI SAO NGÁCH PHONG THỦY ĐẦU THÁNG LẠI CỰC KỲ ĂN KHÁCH?
-
-1. **Tâm lý tìm kiếm may mắn & xả xui định kỳ:** Cứ mỗi dịp đầu tháng âm lịch/dương lịch, người dân các nước Á Đông (Hàn Quốc, Nhật Bản, Trung Quốc, Việt Nam) đều có nhu cầu cực lớn về việc tìm kiếm các điềm lành, mẹo xua đuổi vận hạn và thu hút tài lộc.
-2. **Chi phí sản xuất cực thấp (Zero-Cost Production):**
-   - Không cần diễn viên, không cần quay phim phức tạp.
-   - Hình ảnh: Sử dụng ảnh nhà sư từ bi chắp tay hoặc linh vật phong thủy (bát muối, tiền xu, tỳ hưu, cây kim tiền) kết hợp nền sáng vàng kim.
-   - Video dài từ 30 đến 45 phút, bao gồm 3-5 mẹo phong thủy dân gian nối tiếp nhau.
-3. **Đòn bẩy Kênh Cổ (Aged Channel):**
-   - Kênh tạo năm 2008 đã có sẵn điểm tin cậy (Trust score) cao đối với hệ thống YouTube. Khi bắt đầu đăng video mới, thuật toán không kìm hãm kiểm duyệt gắt gao như kênh mới tinh vừa tạo, giúp video phân phối thẳng đến trang chủ (Browse Features) và cắn đề xuất ngay lập tức.
+### 1.2. Kênh thứ hai: cùng một nhân vật, kênh mới hoàn toàn
+- Là cùng một nhân vật với kênh thứ nhất (từ khóa tên nhân vật giống nhau; hình ảnh nhìn khác nhưng là một người).
+- Lập ngày 21 tháng 7 năm 2026, mới 14 video, đến ngày quay (3 tháng 8) khoảng 2 tuần.
+- Có video 85k view (13 ngày trước) và video hơn 100k view (8 ngày trước); không phải video nào cũng lên được như vậy.
 
 ---
 
-## 3. CÔNG THỨC KỊCH BẢN & TIÊU ĐỀ PHONG THỦY THẮNG CHẮC
+## 2. TẠI SAO NGÁCH TÂM LINH MAY MẮN ĐẦU THÁNG LẠI ĂN KHÁCH?
 
-### 3.1. Cấu Trúc Tiêu Đề Đánh Trúng Nỗi Sợ & Lòng Tham
-- **Công thức 1 (Thu hút tài lộc):** `[Hành động bình thường] + [Vị trí cụ thể trong nhà] + [Kết quả bùng nổ tài lộc]`  
-  *Ví dụ:* *"Để một tờ tiền 10.000 won ở vị trí này trong bếp, tiền tài nghẽn mấy cũng bùng nổ!"*
-- **Công thức 2 (Tránh tai ương / Cấm kỵ dân gian):** `[Việc làm quen thuộc] + [Thời điểm tuyệt đối cấm] + [Hậu quả đáng sợ]`  
-  *Ví dụ:* *"Cắt móng tay trước khi đi ngủ, ngày này tuyệt đối tránh kẻo tài lộc 7 năm tiêu tán!"*
+1. **Đánh vào tâm lý may mắn:** Tiêu đề đánh vào mong muốn mang đến sự may mắn.
+2. **Thị trường Nhật cũng chuộng:** Ngách này ở thị trường Nhật cũng rất được ưa chuộng và có rất nhiều kênh làm, đặc biệt là các kênh mới.
+3. **Kịch bản không thiếu:** Nhiều kênh tâm linh may mắn khác đã làm, có thể lấy kịch bản về xào nấu lại.
+4. **Dùng kênh cổ:** Tác giả khuyên làm ngách này bằng kênh cổ.
 
-### 3.2. Quy Trình Sản Xuất 4 Bước
-1. **Bước 1 — Sưu tầm mẹo dân gian & phong thủy:** Thu thập các mẹo phong thủy nhà ở (vị trí đặt muối, gương soi, hũ gạo, cửa sổ, cây cảnh) từ sách vở hoặc dịch từ các kênh đối thủ Hàn Quốc.
-2. **Bước 2 — Biên tập kịch bản đạo lý nhẹ nhàng:** Mở đầu bằng lời chúc phúc và nhắc nhở người xem sống lương thiện, tích đức. Giải thích cơ chế phong thủy theo quan niệm khoa học và năng lượng tích cực, tránh mê tín dị đoan.
-3. **Bước 3 — Dựng hình ảnh & Âm thanh:**
-   - Thumbnail: Chữ vàng/đỏ to viền trắng, ảnh nhà sư mỉm cười hiền từ bên cạnh bát muối hoặc chén nước.
-   - Video: Dùng hình ảnh động nhẹ, âm thanh chuông ngân hoặc nhạc thiền tần số 432Hz / 528Hz (tần số thu hút năng lượng tích cực).
-4. **Bước 4 — Xuất bản đều đặn:** Đăng 1-2 video/ngày vào khung giờ sáng sớm (6h - 7h) hoặc tối muộn (20h - 21h) khi người lớn tuổi có thói quen nghe kinh hoặc nghe lời chúc phúc.
+---
+
+## 3. CÔNG THỨC KỊCH BẢN & TIÊU ĐỀ
+
+### 3.1. Cấu trúc tiêu đề
+- Tiêu đề của hai kênh bám mốc thời gian, theo dạng: "Để trở nên giàu có vào tháng 8 năm 2026, hãy đặt một thứ gì đó".
+- Tác giả khuyên cứ đầu tháng làm tương tự (sang tháng 9 cũng làm như vậy).
+- Điều quan trọng nhất là đúng từ khóa tên nhân vật: copy đúng tên gốc bằng tiếng Hàn, không cần quan tâm nghĩa là gì.
+
+### 3.2. Quy trình sản xuất
+1. **Bước 1 — Lấy kịch bản:** Lấy kịch bản từ các kênh tâm linh may mắn khác rồi xào nấu lại.
+2. **Bước 2 — Hình ảnh nhân vật:** Copy từ khóa tên nhân vật sang Google, bấm vào mục hình ảnh, so sánh và lưu về ảnh đúng nhân vật (vì tên này ra khá nhiều người, tránh nhầm), rồi xóa nền.
+3. **Bước 3 — Dựng:** Edit giống như các video hướng dẫn trước của tác giả: ghép video tự nhiên vào với nhau, chạy sóng và phụ đề; rất đơn giản.
+4. **Bước 4 — Đăng video:** Tác giả quay lúc 5 giờ 19 chiều ngày 3 tháng 8, kênh mẫu vừa đăng khoảng 5 giờ 15; tác giả khuyên đăng sau đó 30 phút đến 1 tiếng (khoảng 5 giờ 30 hoặc 6 giờ chiều).
+
+### 3.3. Tối ưu từ khóa và mô tả
+- Dùng tiện ích hiển thị từ khóa của kênh và của video đối thủ, nhờ vậy không cần đoán nhiều từ khóa.
+- Ở kênh đối thủ thứ nhất, mô tả khá ổn nhưng chưa tích chọn là có dùng AI; ở kênh còn lại, video chưa tích chọn dùng AI và mô tả chưa tối ưu, tác giả khuyên nên làm đầy đủ.

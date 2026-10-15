@@ -2,8 +2,8 @@
 
 > **Mã bài học:** `VIDEO-458892`  
 > **Tiêu đề gốc:** KIẾM HƠN $100,000.000 / THÁNG VỚI KEY LỊCH SỬ QUÂN SỰ NÀY - HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z  
-> **Chủ đề thực tế:** Mổ xẻ chi tiết kênh đối thủ @WW2Tales đạt 11.5M views và hơn $104,000 doanh thu/tháng; phân tích công thức giật tít thumbnail nhãn vàng, kỹ thuật train Claude AI viết kịch bản phân đoạn chiến tranh và quy trình dựng video bán content triệu view.  
-> **Kênh đối thủ chuẩn:** 🇺🇸 `@WW2Tales` (WW2 Tales — 1.41M subscribers, 239 videos)  
+> **Chủ đề thực tế:** Giải mã kênh đối thủ WW2 Tales đạt doanh thu $104,170/tháng (11.5M views/30 ngày) và toàn bộ quy trình sản xuất A-Z ngách Lịch Sử Quân Sự Thế Chiến: chủ đề, kịch bản, giọng đọc, hình ảnh, thumbnail, dựng video.  
+> **Kênh đối thủ chuẩn:** 🇺🇸 `@WW2Tales` (WW2 Tales)  
 > **Thời lượng bài giảng:** 11 phút 32 giây  
 > **Thị trường mục tiêu:** 🇺🇸 Hoa Kỳ (US) / Toàn Cầu  
 > **Nhóm nội dung:** Lịch Sử & Quân Sự Thế Chiến  
@@ -12,37 +12,33 @@
 
 ## 1. PHÂN TÍCH SỐ LIỆU THỰC CHIẾN KÊNH ĐỐI THỦ @WW2Tales
 
-Trong bài giảng, tác giả mở trực tiếp bảng YouTube Analytics và vidIQ của kênh **WW2 Tales** (`@WW2Tales`):
-- **Quy mô kênh:** **1,41 triệu người đăng ký** (1.41M subs) • 239 video đã xuất bản.
-- **Lượng views 30 ngày qua:** **11.500.000 lượt xem** (11.5M views).
-- **Thời lượng xem 30 ngày qua:** **2.400.000 giờ xem** (2.4M watch hours).
-- **Tốc độ bứt phá 48 giờ:** Đạt **883.621 lượt xem** thời gian thực.
-- **Doanh thu thực tế (Estimated Revenue):** **$104,170.06 USD / tháng** (khoảng hơn 2,6 tỷ VNĐ/tháng)!
+Trong bài giảng, tác giả mở số liệu phân tích 30 ngày của kênh **WW2 Tales** (`@WW2Tales`):
+- **Quy mô kênh:** hơn 200 video, nhưng kênh mới làm khoảng 2 tháng; mỗi ngày ra 7-8 video mà view vẫn ổn định.
+- **Lượng views 30 ngày qua:** **11.5M views**.
+- **Doanh thu:** khoảng **$104,170/tháng**; tác giả cũng nói chủ kênh chia sẻ hơn 110 nghìn đô trong 28 ngày.
 
-### Danh sách các video bão view điển hình của kênh:
-1. *"USS Helena — They Called Her 'Machine Gun' — The Ship That Shocked the Japanese Navy"*
-2. *"Americans Destroyed The Japanese Navy At Midway"*
-3. *"When A US Submarine Sent Japan's Modern Carrier To The Bottom In WWII"*
-4. *"Japanese Fleet Smashed By American Torpedo PT Boats"*
+### Ví dụ tiêu đề mẫu trong prompt đính kèm:
+1. *"German POWs Couldn't Believe Ice Cream And Coca-Cola in American Prison Camps"*
+2. *"Japanese Pilots Laughed At The F6F Hellcat Until It Swept Their Zeros From The Sky"*
+3. *"USS Yorktown Repaired In 72 Hours – Japanese Commanders Surprised To See It At Midway"*
 
 ---
 
-## 2. BÍ QUYẾT BỐ CỤC THUMBNAIL CTR > 15%
+## 2. THUMBNAIL VÀ MÀU SẮC HÌNH ẢNH
 
-- **Tông màu chủ đạo:** Nền ảnh đen trắng hoặc màu film cũ về các chiến hạm, tàu ngầm, máy bay tiêm kích thời Thế chiến 2.
-- **Nhãn dán định danh (The Yellow Badge):** Điểm nhấn ăn tiền nhất của kênh là một khung nhãn màu vàng rực rỡ ở góc trên bên trái, bên trong in hoa tên chiến hạm huyền thoại:
-  - Ví dụ: `USS Helena` (Chữ đen trên nền vàng tương phản cao).
-- **Dòng tiêu đề phụ ngắn gọn:** Nằm ngay dưới hình ảnh với font chữ trắng to rõ: *"They Called Her Machine Gun..."*.
+- **Tông màu:** ngách thời xưa nên làm hình ảnh đen trắng giống đối thủ; có thể thêm hiệu ứng cho hình tối lại khi dựng.
+- **Thumbnail:** dùng prompt thumbnail trong tài liệu đính kèm (ảnh đen trắng, tỷ lệ 16:9, không chữ, không màu), dán chủ đề và mô tả chủ đề đã chọn vào chỗ topic rồi chạy.
+- Tạo ảnh bằng web tạo ảnh (link để trong mô tả), chọn ảnh vừa ý, tải về rồi chỉnh ánh sáng cho phù hợp, giữ tỷ lệ 16:9.
 
 ---
 
-## 3. CÔNG THỨC KỊCH BẢN PHÂN ĐOẠN (SECTION PROMPT CLAUDE AI)
+## 3. CÔNG THỨC KỊCH BẢN PHÂN ĐOẠN (PROMPT KỊCH BẢN)
 
-Tác giả mở trực tiếp cửa sổ làm việc với Claude AI để hướng dẫn học viên cách viết kịch bản dài 10-15 phút mà không bị loãng:
-- **Section 1: The Warning Sign & Looming Threat (00:00 - 02:30):** Bối cảnh lịch sử, tình thế hiểm nghèo của hạm đội Mỹ trước sức mạnh vượt trội của hải quân Đế quốc Nhật Bản.
-- **Section 2: The Awakening of the Devastator (02:30 - 06:00):** Sự xuất hiện của chiến hạm/phi đội đặc nhiệm, tính năng kỹ thuật và lòng quả cảm của các thủy thủ.
-- **Section 3: The Climax of Smoke and Steel (06:00 - 10:00):** Trận hải chiến khốc liệt, các đợt ngư lôi xé toạc mặt nước, khoảnh khắc lật ngược thế cờ lịch sử.
-- **Section 4: The Legacy (10:00 - End):** Tôn vinh sự hy sinh và di sản hào hùng để lại cho thế hệ sau.
+Tác giả dùng ChatGPT 5 (có thể dùng công cụ AI khác) để viết kịch bản dài mà không bị loãng:
+- Prompt chia kịch bản thành từng phần, mỗi phần khoảng 700-800 từ vì AI không thể tạo quá nhiều trong một lần.
+- Dán tiêu đề đã chọn vào chỗ topic và đoạn mô tả chủ đề vào prompt rồi chạy phần 1.
+- Sau mỗi phần AI nhắc "Continue"; bấm tiếp tục để ra phần kế, đến khi có chữ END thì kết thúc.
+- Copy các phần vào Notepad++, xoá phần thừa rồi lưu lại thành file kịch bản.
 
 ---
 

@@ -7,31 +7,29 @@
 ---
 
 ## 1. TẠI SAO VIDEO DÀI TRÊN 2 TIẾNG LẠI CÓ RPM LÊN ĐẾN $21?
-- **Thời gian giữ chân (AVD) cực lớn:** Khán giả phương Tây thường bật video dài 2–3 tiếng khi làm việc, đọc sách hoặc trước khi ngủ.
-- **Tối ưu hóa quảng cáo giữa video (Mid-roll Ads):** Video trên 2 tiếng cho phép YouTube phân bổ từ 8 đến 15 điểm chèn quảng cáo tự nhiên mà không gây khó chịu cho người xem.
-- **Hệ quả doanh thu:** Chỉ số RPM nhảy vọt lên **$20 – $25 USD / 1.000 view**, cao gấp 4 lần video ngắn thông thường.
+- **Kênh thực tế của tác giả:** Tác giả bật kiếm tiền cho kênh từ khoảng giữa tháng 2; video có RPM 21 và toàn làm video dài từ 1 đến 2 tiếng trở lên, nên mùa view/doanh thu của video rất cao.
+- **Kênh lịch sử mẫu:** Một kênh lịch sử làm video rất dài (trên 2 tiếng), chỉ mới 4 video mà có video 2,2 triệu view sau 2 tuần và video 1 triệu view sau 12 ngày. Lúc đầu kênh đăng video tỷ lệ click rất thấp, sau khi đổi tiêu đề và thumbnail thì lên rất mạnh; tiêu đề lặp đi lặp lại một mẫu, thumbnail rất thu hút.
+- **Kênh vẫn bật kiếm tiền:** Tác giả dùng extension kiểm tra và cho thấy kênh làm AI vẫn bật được kiếm tiền; các kênh của tác giả đều làm bằng AI.
 
 ---
 
 ## 2. QUY TRÌNH CHIA ĐOẠN TẠO KỊCH BẢN DÀI TRÊN CHATGPT
 
-Các mô hình AI (ChatGPT, Claude) không thể viết một lúc 15.000 – 20.000 từ trong một lượt prompt duy nhất. Bắt buộc phải chia thành **4 giai đoạn tuần tự**:
+ChatGPT hay các AI khác không bao giờ tạo ra được một kịch bản dài rất nhiều ký tự trong một lần. Vì vậy phải chia nhỏ: yêu cầu AI chia kịch bản thành **15 phần**, mỗi phần khoảng 1.000 đến 1.100 từ.
 
-### Giai đoạn 1: Lập đề cương tổng thể (Master Outline)
-```text
-Hãy lập một đề cương kịch bản phim tài liệu lịch sử chuyên sâu dài 2 tiếng về chủ đề [TÊN CHỦ ĐỀ].
-Chia cấu trúc thành 6 chương lớn, mỗi chương gồm 3 phân cảnh chi tiết với mốc thời gian, nhân vật và sự kiện lịch sử xác thực.
-```
+### Giai đoạn 1: Tạo chủ đề
+- Copy phần chủ đề trong bộ prompt (tác giả để prompt trong phần mô tả) vào ChatGPT, thay dấu X bằng số chủ đề muốn tạo (ví dụ 20).
+- Có thể dùng các AI khác đều được. Chọn một chủ đề trong danh sách (tác giả lấy ví dụ chủ đề thứ 5).
 
-### Giai đoạn 2: Viết chi tiết từng chương (Deep Writing Loop)
-```text
-Dựa vào đề cương trên, hãy viết chi tiết CHƯƠNG 1 với độ dài từ 2.500 đến 3.000 từ bằng tiếng Anh học thuật, lôi cuốn, giọng kể chuyện truyền cảm kiểu tài liệu lịch sử. Không viết tóm tắt, hãy đi sâu vào diễn biến chi tiết, tâm lý nhân vật và bối cảnh thời đại.
-```
-*(Lặp lại câu lệnh cho từng Chương từ 1 đến 6 bằng lệnh Continue / Tiếp tục).*
+### Giai đoạn 2: Viết kịch bản theo từng phần
+- Copy phần kịch bản trong bộ prompt, xóa phần topic cũ và thay bằng chủ đề đã chọn, rồi bấm chạy.
+- AI chia kịch bản ra 15 phần; sau mỗi phần chỉ cần gõ "continue" (tác giả gõ bằng tiếng Anh) để AI viết phần tiếp theo, cho đến khi đủ kịch bản đã yêu cầu.
+- Bước này khá lâu nên trong video tác giả chỉ làm mẫu khoảng 3 phần.
 
-### Giai đoạn 3: Ghép nối & Kiểm tra chuyển cảnh (Smoothing)
-- Sao chép toàn bộ các chương vào Notepad++ để kiểm tra mạch truyện giữa các chương, loại bỏ các đoạn chào hỏi thừa.
+### Giai đoạn 3: Lưu kịch bản
+- Copy từng phần, bỏ phần đầu và phần cuối thừa, rồi dán vào Notepad để lưu.
 
-### Giai đoạn 4: Tạo giọng đọc hàng loạt & Dựng phim
-- Chia kịch bản thành các khối 5.000 ký tự đưa vào ElevenLabs hoặc tool clone giọng tạo voiceover.
-- Dựng timeline trên CapCut kết hợp tư liệu phục chế và âm thanh chiến hào.
+### Giai đoạn 4: Tạo giọng đọc, hình ảnh và dựng phim
+- Giọng đọc: dùng ElevenLabs, lọc giọng tiếng Anh, Mỹ, giọng nam trẻ cho hay và thu hút; tác giả dùng tool ElevenLabs riêng (dùng web chính thì đốt rất nhiều tiền), import file kịch bản và chạy, khoảng 3 phút là xong, sau đó ghép thành một file tổng.
+- Hình ảnh: copy phần tạo ảnh trong bộ prompt vào ChatGPT, thay số bằng 10 để mỗi phần tạo 10 prompt ảnh (15 phần ra khoảng 150 ảnh); muốn nhiều ảnh hơn thì tăng số lên. Dùng các tool tạo ảnh để tạo, rồi tải ảnh về.
+- Dựng phim: dùng CapCut ghép ảnh vào cho khớp giọng đọc, mỗi ảnh để khoảng 6 đến 10 giây, chỉnh màu sơ rồi xuất video. Key này không cần dùng AI tạo video nên tiết kiệm được khá nhiều chi phí.

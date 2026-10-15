@@ -4631,7 +4631,16 @@
     "status": "DEAD_TERMINATED",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Drama / Stories",
+    "niches": [
+      "Drama / Stories"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "@賢者の灯",
@@ -4644,7 +4653,16 @@
     "status": "DEAD_TERMINATED",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "@노인건강습관-m3o",
@@ -4657,7 +4675,16 @@
     "status": "DEAD_TERMINATED",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Sức khỏe / Lão hóa",
+    "niches": [
+      "Sức khỏe / Lão hóa"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "@당신의경제학",
@@ -4670,7 +4697,16 @@
     "status": "DEAD_TERMINATED",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Kinh tế / Tài chính",
+    "niches": [
+      "Kinh tế / Tài chính"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "@あの年の空",
@@ -4683,7 +4719,16 @@
     "status": "DEAD_TERMINATED",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Drama / Stories",
+    "niches": [
+      "Drama / Stories"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "만사형통2",
@@ -4699,7 +4744,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "튼튼라디오",
@@ -4715,7 +4769,16 @@
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS + yt-dlp → EMPTY (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: EMPTY (trước đó: LIVE)",
     "deadKind": "empty",
-    "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video)."
+    "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video).",
+    "niche": "Sức khỏe / Lão hóa",
+    "niches": [
+      "Sức khỏe / Lão hóa"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "지혜로운하루-k6h",
@@ -4731,7 +4794,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "지혜샘라디오",
@@ -4745,7 +4817,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "노을빛시간",
@@ -4759,7 +4840,17 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn",
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "세월의지혜TV",
@@ -4775,7 +4866,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "한국사이야기100",
@@ -4789,7 +4889,17 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Lịch sử / Quân sự",
+    "niches": [
+      "Lịch sử / Quân sự"
+    ],
+    "markets": [
+      "🇰🇷 Hàn",
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "ijinmeigench",
@@ -4805,7 +4915,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "시니어톡톡2025",
@@ -4821,7 +4940,16 @@
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS + yt-dlp → EMPTY (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: EMPTY (trước đó: LIVE)",
     "deadKind": "empty",
-    "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video)."
+    "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video).",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "KonosukeMatsushitaquote",
@@ -4837,7 +4965,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "ApocalypseSurvivorsHQ",
@@ -4851,7 +4988,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Drama / Stories",
+    "niches": [
+      "Drama / Stories"
+    ],
+    "markets": [
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "ZestRankEverything",
@@ -4865,7 +5011,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Lịch sử / Quân sự",
+    "niches": [
+      "Lịch sử / Quân sự"
+    ],
+    "markets": [
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "trueglobe66",
@@ -4879,7 +5034,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Khác",
+    "niches": [
+      "Khác"
+    ],
+    "markets": [
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "USAMilitaryNews-8",
@@ -4895,7 +5059,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Lịch sử / Quân sự",
+    "niches": [
+      "Lịch sử / Quân sự"
+    ],
+    "markets": [
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "fortune68studio",
@@ -4909,7 +5082,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇨🇳 Trung"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "WiseListen2Wise",
@@ -4923,7 +5105,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇨🇳 Trung"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "운세박사-공식",
@@ -4939,7 +5130,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "TâmBìnhAnLạc",
@@ -4953,7 +5153,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇻🇳 Việt"
+    ],
+    "phanLoaiNguon": "tên kênh (kênh sống nhưng chỉ có 1 video, không đủ tiêu đề để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "wealtharrow",
@@ -4967,7 +5176,17 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Kinh tế / Tài chính",
+    "niches": [
+      "Kinh tế / Tài chính"
+    ],
+    "markets": [
+      "🇰🇷 Hàn",
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "풍수연구소999",
@@ -4983,7 +5202,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Triết lý / Tâm linh",
+    "niches": [
+      "Triết lý / Tâm linh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "은빛인생여행",
@@ -4997,7 +5225,17 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn",
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "黒猫の予言",
@@ -5011,7 +5249,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Drama / Stories",
+    "niches": [
+      "Drama / Stories"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "誇りを守った日本人.8386",
@@ -5025,7 +5272,17 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Drama / Stories",
+    "niches": [
+      "Drama / Stories"
+    ],
+    "markets": [
+      "🇯🇵 Nhật",
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "wise-stories-2504",
@@ -5039,7 +5296,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Kinh tế / Tài chính",
+    "niches": [
+      "Kinh tế / Tài chính"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "SeniorLab2025",
@@ -5053,7 +5319,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "지혜의샘-h2f",
@@ -5067,7 +5342,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Khác",
+    "niches": [
+      "Khác"
+    ],
+    "markets": [
+      "🇻🇳 Việt"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "ni-i7i",
@@ -5083,7 +5367,17 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Khác",
+    "niches": [
+      "Khác"
+    ],
+    "markets": [
+      "🇯🇵 Nhật",
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "금빛노",
@@ -5099,7 +5393,16 @@
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS + yt-dlp → EMPTY (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: EMPTY (trước đó: LIVE)",
     "deadKind": "empty",
-    "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video)."
+    "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video).",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "1-ji2mx",
@@ -5113,7 +5416,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Sức khỏe / Lão hóa",
+    "niches": [
+      "Sức khỏe / Lão hóa"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "노후클라스",
@@ -5127,7 +5439,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "老後の物語",
@@ -5143,7 +5464,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "다시_청춘",
@@ -5159,7 +5489,16 @@
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD (trước đó: LIVE)",
     "deadKind": "gone",
-    "deadNote": "404 - đo thực tế 2026-10-14: trang kênh, channel_dossier và yt-dlp đều 404 (đã xóa hoặc đổi handle). Giữ làm dẫn chứng bài học."
+    "deadNote": "404 - đo thực tế 2026-10-14: trang kênh, channel_dossier và yt-dlp đều 404 (đã xóa hoặc đổi handle). Giữ làm dẫn chứng bài học.",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "olderhealth-z8z",
@@ -5173,7 +5512,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Sức khỏe / Lão hóa",
+    "niches": [
+      "Sức khỏe / Lão hóa"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "건행시대",
@@ -5187,7 +5535,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Sức khỏe / Lão hóa",
+    "niches": [
+      "Sức khỏe / Lão hóa"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh (kênh sống nhưng không có tab video, không đủ nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "医師たちの言葉",
@@ -5203,7 +5560,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Sức khỏe / Lão hóa",
+    "niches": [
+      "Sức khỏe / Lão hóa"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "지혜의보물-v5w",
@@ -5219,7 +5585,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "百寿の知恵",
@@ -5233,7 +5608,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Sức khỏe / Lão hóa",
+    "niches": [
+      "Sức khỏe / Lão hóa"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "은빛-노후",
@@ -5249,7 +5633,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "100年の歩み百寿",
@@ -5265,7 +5658,16 @@
     "deadNote": "Kênh đã bị xóa hoặc đổi handle (HTTP 404)",
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + yt-dlp → DEAD (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: DEAD",
+    "niche": "Bí mật sống thọ 100 tuổi",
+    "niches": [
+      "Bí mật sống thọ 100 tuổi"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "지혜의벤치",
@@ -5279,7 +5681,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Kinh tế / Tài chính",
+    "niches": [
+      "Kinh tế / Tài chính"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "やさしい人生の知恵",
@@ -5293,7 +5704,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇯🇵 Nhật"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "노을꽃길",
@@ -5309,7 +5729,16 @@
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS + yt-dlp → EMPTY (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: EMPTY (trước đó: LIVE)",
     "deadKind": "empty",
-    "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video)."
+    "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video).",
+    "niche": "Tâm sự tuổi già / Dưỡng sinh",
+    "niches": [
+      "Tâm sự tuổi già / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tên kênh + bài giảng dẫn chứng (kênh đã dừng, không còn nội dung để đối chiếu)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "건강지혜사전",
@@ -5323,7 +5752,16 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Sức khỏe / Lão hóa",
+    "niches": [
+      "Sức khỏe / Lão hóa"
+    ],
+    "markets": [
+      "🇰🇷 Hàn"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "name": "mindorosi",
@@ -5337,7 +5775,17 @@
     "dead": false,
     "ngay_do": "2026-10-14",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE"
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "niche": "Tâm lý / Kỹ năng",
+    "niches": [
+      "Tâm lý / Kỹ năng"
+    ],
+    "markets": [
+      "🇰🇷 Hàn",
+      "🇺🇸 US"
+    ],
+    "phanLoaiNguon": "tiêu đề 8 video gần nhất (yt-dlp 2026-10-15)",
+    "phanLoaiNgay": "2026-10-15"
   },
   {
     "handle": "@gyakkyoyori_risukatsu",

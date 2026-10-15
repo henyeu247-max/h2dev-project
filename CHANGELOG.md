@@ -1,3 +1,15 @@
+## 2026-10-15 (đợt 10) — SỬA NỐT CÁC TỒN ĐỌNG THỰC TẾ SAU NGHIÊN CỨU
+
+- **Nút "Xem Bản Gốc Full Tiếng" dẫn vào `/watch-f59aa7.html` không tồn tại (gốc: `player-main.js` tạo nút cho mọi bài):** bỏ nút và rule `.btn-live-stream` trong `player.css`; gate mới trong `validate-project.js` bắt mọi `href="/x.html"` trong JS trỏ tới file không có.
+- **49/256 kênh mẫu thiếu `niche`/`markets` (schema cũ `market`/`category`):** `scripts/apply-kenh-mau-phanloai.js` (idempotent, `--dry`) gán theo tiêu đề 8 video gần nhất lấy bằng yt-dlp (kênh sống) hoặc tên kênh + bài giảng (kênh đã dừng); mỗi kênh có `phanLoaiNguon` + `phanLoaiNgay`. 2 kênh (`@TâmBìnhAnLạc`, `@건행시대`) chỉ có bằng chứng yếu nên ghi rõ nguồn. Gate mới: mọi kênh phải có `niche` và `markets`.
+- **38 cờ S6 (neo takeaway/transcript thấp) của audit:** đọc transcript từng video, viết lại `key_takeaways` chỉ giữ ý có trong lời tác giả (`scripts/apply-s6-takeaways.py`, cập nhật cả khoá HOA/thường — 44 khoá, 38 SKU). Cờ S6 còn 3 (`04c2e3`, `1b4be3`, `891f32`; tỷ lệ neo 29–33% vì nhiều từ ngắn/tiếng lóng) — ghi quyết định `corrected` kèm dấu vân tay trong `manual-review-evidence.json`.
+- **Cờ A10 (thumbnail/vision):** 4 SKU thiếu vision được bổ sung (`vision.json` 144 SKU); 8 video thumbnail dạng quảng bá lệch khung screencast ghi `false_positive`, `a59a5e` (khung trống 95% khớp ~58 s im lặng cuối video) ghi `verified_ok`.
+- **Catch rỗng:** 9 chỗ `catch {}` ở `main.js` và `player-main.js` đổi thành `console.warn('[H2DEV] đọc <file> lỗi', e)`; `scripts/count-empty-catch.js` đo còn 67 (đo, chưa sửa hết).
+- **Kết quả audit:** `audit_videos_v2` 144/144 sạch, 0 cờ chờ đối chiếu, 17 mục đã kiểm tay.
+- **Chưa kiểm chứng (ghi nhận, không sửa):** `tools_mentioned`/`edit_sop`/`verified_expert_summary` của `video_insights.json` có thể liệt kê công cụ không nằm trong lời nói (đối chiếu chuỗi thô: 43/265 tên công cụ xuất hiện trong transcript; số này thấp vì ASR chép sai tên như "CapCut" → "cắp cút", nên chưa kết luận được).
+- **Bump `uifix83` → `uifix84`** (3 file HTML + tên cache `sw.js`) vì `player-main.js`, `main.js`, `player.css` đổi dưới cùng `?v=`.
+- **Nghiệm thu trên working tree:** `validate-project`, 5 gate, guard, `check-ui-classes`, `check-reconcile-handles`, `sync-counts --check` exit 0; `deep-ui-acceptance` 11/11; `playwright-g2-acceptance` 23/23; `find-404` sạch.
+
 ## 2026-10-15 (đợt 9) — GỘP NỐT SỬA DỞ CÒN LẠI VÀ NGHIỆM THU
 
 - **10 file `description.txt` 404 trên production (gốc: `videos.json`/`tai-lieu-full.json` trỏ tới `assets/docs/VIDEO-{3a38f9,3e943c,484f9e,4b3c09,61ad94,DD983D,a7bfd0,c5837a,d2cd90,e24c31}/description.txt` nhưng file chưa vào git):** đã `git add`; thêm gate trong `validate-project.js` — mọi file `assets/docs`, `docs`, `assets/thumbs` mà `data-tabs` tham chiếu phải được git theo dõi (probe 2 chiều: 10 file chưa track → FAIL, sau `git add` → PASS).

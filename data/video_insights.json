@@ -222,11 +222,11 @@
   },
   "VIDEO-04c2e3": {
     "key_takeaways": [
-      "Tối ưu chi phí hạ tầng: Combo công cụ AI sản xuất YouTube tự động với ngân sách thấp nhất.",
-      "Kỹ thuật clone voice giọng tự nhiên bằng Minimax tiết kiệm chi phí gấp nhiều lần.",
-      "Sử dụng ElevenLabs để tạo giọng đọc bản xứ Tier 1 chuẩn ngữ điệu tự nhiên.",
-      "Tự động hóa dịch thuật phụ đề SRT đa ngôn ngữ phục vụ thị trường toàn cầu.",
-      "Quản lý tài khoản ChatGPT Plus và CapCut Pro phục vụ vận hành hàng loạt."
+      "Nhiều người hỏi về tool và tài khoản giá rẻ nên tác giả làm clip tổng quan các tool và tài khoản share giá rẻ mà mình có.",
+      "ElevenLabs và Minimax là tool tạo giọng đọc có giá theo tháng/năm rất đắt; dùng tool của tác giả tiết kiệm nhiều chi phí và thời gian, khoảng 5-6 nghìn học viên đã dùng 2 tool này từ tháng 2.",
+      "Có thêm tool dịch phụ đề (subtitle editor) để dịch phim, review phim từ nguồn Trung Quốc như Douyin, Bilibili sang tiếng Việt.",
+      "Tác giả còn share tài khoản CapCut giá rẻ (chính chủ, dùng riêng, không dùng chung) và một loại tài khoản khác rất hiếm hàng, hết ngay khi có.",
+      "Ai cần dùng hoặc mua thì nhắn trực tiếp cho tác giả vì các group đã đầy; tác giả rảnh sẽ gửi thông tin."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước kỹ thuật edit & SOP né quét AI bài giảng",
@@ -752,11 +752,11 @@
     "target_market": "🇯🇵 Nhật / 🇻🇳 Việt",
     "market_code": "VN",
     "key_takeaways": [
-      "Thuật toán YouTube 2026 tăng cường rà soát các video sử dụng nội dung AI và tổng hợp dữ liệu, dễ bị gắn cờ 'Nội dung không trung thực'.",
-      "Kỹ thuật xử lý khung hình đa lớp (Multi-layer Compositing): kết hợp footage thật với hiệu ứng lớp phủ (overlay), grain và color grading độc quyền.",
-      "Bảng tính Google Sheets độc quyền đính kèm cung cấp danh sách từ khóa ngách Nhật - Việt đã được thẩm định an toàn bản quyền.",
-      "Can thiệp âm thanh chuyên sâu: thay đổi cao độ pitch, mix thêm ambient noise tần số thấp để vượt qua bộ lọc âm thanh trùng lặp.",
-      "Luôn khai báo đúng tính chất video trên YouTube Studio để duy trì độ trust tài khoản lâu dài."
+      "Tác giả nói YouTube đang quét và thanh lọc rất mạnh lỗi 'nội dung không trung thực' (nội dung AI rác); bot có thể quét nhầm kênh làm tốt nếu video toàn là AI, và hiện chưa dịch vụ nào kháng được lỗi này.",
+      "Cách tạo style ảnh AI giống đối thủ: chụp màn hình video đối thủ, gửi cho AI kèm yêu cầu tạo ảnh có phong cách giống ảnh mẫu.",
+      "Cách edit an toàn: vẫn dùng hình/video AI nhưng lồng ghép thêm nhiều video, hình ảnh tự nhiên thực tế từ các trang miễn phí như Pexels, Vecteezy, Coverr, Freepik, Pixabay; tự quay (đi chợ, cảnh suối) rồi ghép giọng đọc AI, ảnh và hiệu ứng càng tốt.",
+      "Khi đăng video phải tích 'Có' ở mục khai báo nội dung bị chỉnh sửa/AI nếu có dùng hình AI hoặc giọng đọc AI; không khai báo sẽ bị đánh không trung thực và có thể mất kiếm tiền.",
+      "Thị trường Việt: dùng nhân vật nổi tiếng thì không giật tít, câu view, xuyên tạc hay nhận quảng cáo không phù hợp vì có thể bị kiện, truy tố; làm view ngoại thì thoải mái hơn. Chỉ tập trung một ngách trước, không bỏ ngách này nhảy sang ngách khác."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước khai thác danh sách kênh đối thủ từ Google Sheets và lọc key vàng",
@@ -827,11 +827,11 @@
     "target_market": "Mỹ / Quốc tế",
     "market_code": "US",
     "key_takeaways": [
-      "Tốc độ bật kiếm tiền kỷ lục: Kênh đạt 1.000 sub và 4.000 giờ xem chỉ sau vài tuần nhờ đối tượng khán giả Kitô giáo tại Mỹ có thói quen nghe video dài và trung thành.",
-      "Phong cách đồ họa Watercolor Devotional: Tranh màu nước cổ điển tạo cảm xúc tôn nghiêm, nghệ thuật, hoàn toàn tránh được rủi ro bị AI gắn nhãn phản cảm.",
-      "Cấu trúc kịch bản 4 Hồi giữ chân: Đặt vấn đề từ câu hỏi đạo đức đời thường, trích dẫn lời dạy trong Kinh Thánh, giải nghĩa bối cảnh lịch sử và đúc kết chiêm nghiệm.",
-      "Lồng tiếng trầm ấm chuẩn US: Giọng đọc Marcus hoặc George của ElevenLabs tạo sự tin cậy, ấm áp, thích hợp với các nội dung chữa lành tâm hồn.",
-      "Quy trình nộp đơn AdSense an toàn: Kiểm tra kênh sạch 100% bản quyền, liên kết Google AdSense chính chủ để được phê duyệt kiếm tiền trong 24-48 giờ."
+      "Kênh của một học viên gói Pro (ngách Bible Explainer theo tiêu đề bài), kênh mới hoàn toàn chỉ khoảng 17 video (không tính 2-3 video của kênh cũ), được duyệt bật kiếm tiền lúc 2h40 ngày 6/6.",
+      "Trước khi bật kiếm tiền, tác giả khám kênh hộ học viên (ngày 4/6) và chia sẻ các mẹo nối Google AdSense (GA) để được duyệt nhanh.",
+      "Học viên nối GA lúc hơn 8h sáng ngày 6/6 và khoảng 6-7 tiếng sau, chiều cùng ngày, kênh được duyệt bật kiếm tiền.",
+      "Điểm quan trọng hiện nay là làm được tài khoản Google AdSense chính chủ rồi nối vào kênh để không bị treo hoặc xét duyệt lâu; làm đúng quy trình thì bật kiếm tiền rất dễ và nhanh.",
+      "Học viên từng làm sai ngách (2 video) rồi chuyển sang ngách tác giả chỉ; tác giả khuyên chỉ tập trung 1-2 ngách trước, có kết quả mới làm thêm để không bị FOMO."
     ],
     "edit_sop": {
       "primary": "SOP Sản xuất nội dung giải nghĩa Kinh Thánh chuẩn US",
@@ -1383,11 +1383,11 @@
     "target_market": "🇻🇳 Việt Nam",
     "market_code": "VN",
     "key_takeaways": [
-      "Thực tế về ngách Reup kiếm tiền: Reup nội dung Trung Quốc vẫn có thể bật kiếm tiền thành công nếu biết cách chọn ngách hoạt hình nhân văn ngắn và can thiệp biên tập sâu sắc.",
-      "Khai thác nguồn tư liệu Bilibili chất lượng cao: Sử dụng 2 kênh nguồn Bilibili chuyên sản xuất hoạt hình 2D/3D ngắn giàu ý nghĩa giáo dục để làm nguồn tài nguyên thô sạch sẽ.",
-      "Kỹ thuật xóa logo và che watermark Trung Quốc: Hướng dẫn cách làm mờ (Blur) hoặc dùng hiệu ứng phóng to khung hình (Crop) để loại bỏ hoàn toàn logo Bilibili và ID tác giả gốc khỏi video.",
-      "Quy trình dịch phụ đề và lồng tiếng tự động: Sử dụng Tool dịch phụ đề SRT chuyên dụng tích hợp giọng đọc AI tiếng Việt chất lượng cao (giọng Ngọc Huyền) để biến video tiếng Trung thành phim hoạt hình lồng tiếng Việt hấp dẫn.",
-      "Tư duy làm Reup bền vững: Coi Reup là kênh tạo dòng tiền ban đầu để tích lũy vốn và kinh nghiệm; luôn có kế hoạch chuyển dịch sang Bán Content hoặc Content tự sản xuất 100% trong tương lai."
+      "Kênh reup đam mỹ (phim ngắn hoạt hình Trung Quốc) của một học viên nhóm Pro, vừa bật kiếm tiền ngày 9/7; tác giả nhắc ngách reup chỉ kiếm thêm chứ không kiếm nhiều, thumbnail do AI tạo, và chủ kênh muốn nhượng lại kênh (tác giả chỉ làm trung gian kết nối).",
+      "Lấy nguồn từ Bilibili: dùng trình duyệt Cốc Cốc có sẵn nút tải video; kênh có dấu hồng/xám phải trả phí gói thì không tải được full HD, kênh miễn phí thì tải full.",
+      "Quy trình dựng trên CapCut: giảm tốc video xuống 0.8 (hoặc 0.7) để giọng đọc không đè nhau, trích phụ đề tiếng Trung tự động, xuất SRT, dịch bằng tool dịch, rồi tạo voice (giọng Ngọc Huyền); tốc độ voice khoảng 1.5-1.6 ở tool của tác giả, khoảng 1.1 ở VipVoice vì video đã giảm 0.8.",
+      "Âm gốc nên xóa hẳn (nhạc nền hay dính bản quyền); che phụ đề tiếng Trung và logo Bilibili bằng hiệu ứng làm mờ (hoặc chèn logo kênh), chèn phụ đề Việt, tên kênh chạy quanh video và logo; lưu thành mẫu cài sẵn để tập sau chỉ cần import.",
+      "Thumbnail: copy link video, tải ảnh thumbnail gốc bằng tool dịch, dịch tiêu đề để hiểu phim, rồi cho AI tạo ảnh mới dựa trên ảnh gốc."
     ],
     "edit_sop": {
       "primary": "SOP 5 bước Reup hoạt hình Bilibili lồng tiếng Việt né quét bản quyền hình ảnh",
@@ -1559,11 +1559,11 @@
     "target_market": "🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "Ngách triết lý vĩ nhân & danh ngôn Nhật Bản: Khai thác kho tàng câu nói của Khổng Tử, Lão Tử, Phật Thích Ca và các triết gia phương Tây (@izinnokatari, @kotobano-housekibako).",
-      "Tệp khán giả người già Nhật Bản sống nội tâm: Rất thích chiêm nghiệm về cuộc đời, sự buông bỏ và cách tìm kiếm bình an lúc xế chiều (@IjinNoNouri).",
-      "Cấu trúc video danh ngôn trường tồn: Mở đầu bằng nghịch cảnh cuộc đời vĩ nhân -> Trích dẫn câu nói để đời -> 3 bài học ứng dụng vào đời sống hiện đại.",
-      "Phong cách đồ họa thư pháp cổ kính: Dùng chữ Hán/Kanji thư pháp đẹp mắt trên nền tranh thủy mặc hoặc phong cảnh núi tuyết Phú Sĩ trầm mặc.",
-      "RPM ổn định và view tích lũy lâu dài: Thể loại video này có tuổi thọ view kéo dài từ 2-5 năm, đều đặn mang lại doanh thu thụ động."
+      "Tác giả share thêm ngách dạng bán content ở thị trường Nhật: kênh về Nikola Tesla và các nhân vật nổi tiếng; view ổn định chứ không quá cao, nhưng là ngách nhỏ nhiều tiềm năng, còn nhiều kênh đối thủ để tham khảo ở phần mô tả.",
+      "Ngách nhân vật nổi tiếng/triết lý không bao giờ hot trend nhưng cũng không bao giờ thiếu view; kênh bị quét là chuyện hên xui, và kênh cũ mất kiếm tiền là cơ hội cho kênh mới lên.",
+      "Ví dụ chuyển ngách đúng: một kênh Nhật trước làm ngách Phật pháp, 11 ngày trước chuyển sang lời dạy/giáo lý của Kukai thì 3-4 video nổ hàng chục nghìn view, trong khi các video cũ chỉ vài trăm đến vài nghìn.",
+      "Tiêu đề phải chứa từ khóa ngách (ví dụ 'lời dạy của Kukai') và đủ hấp dẫn; các video gần đây bỏ từ khóa này chỉ đạt vài nghìn view.",
+      "Cách edit đơn giản: tìm ảnh nhân vật trên mạng để chèn, video nền lấy từ nguồn video tự nhiên theo từ khóa vũ trụ, thiên nhiên; ngách Tesla từng rất cao ở US nhưng cạnh tranh lớn từ nhiều nước."
     ],
     "edit_sop": {
       "primary": "Update ngách mới thị trường Nhật Bản làm bán content",
@@ -1913,11 +1913,11 @@
     "target_market": "🇰🇷 Hàn / 🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "Ngách bài thuốc từ bàn ăn Hàn Quốc (@사회의어두운심리학): Khai thác các bài thuốc dân gian từ củ cải, gừng tỏi và các món canh dưỡng sinh truyền thống.",
-      "Ngách năng lượng lời nói Nhật Bản (@fuetunojin, @nhk_docu): Tập trung vào Kotodama (linh hồn trong ngôn từ) và triết lý sống tối giản của người già Nhật.",
-      "Tư duy bám đuôi kênh breakout: Lấy 3 video nhiều view nhất trong 30 ngày của đối thủ để phân tích từ khóa và cấu trúc kịch bản.",
-      "Kỹ thuật tạo ảnh chân thực phong cách Châu Á: Dùng Midjourney/Flux tạo hình ảnh ông cụ bà lão hiền hậu, màu sắc ấm áp, trang phục bản địa.",
-      "Tối ưu hóa âm thanh nền thiền định: Sử dụng âm thanh đàn tranh Koto hoặc tiếng chuông gió kết hợp nhịp đọc chậm rãi 110 WPM."
+      "Một học viên nhân bản thị trường từ US sang Việt Nam: lấy kịch bản đem về dịch và viết lại, làm lại hình ảnh video chứ không lấy của người ta; kênh đã bật kiếm tiền.",
+      "Cách nhân bản: lấy kịch bản của một video bất kỳ rồi nhờ AI dịch theo ngôn ngữ, giọng điệu và văn hoá kể chuyện của nước đích, không dịch cứng; làm Nhật hoặc Hàn chỉ cần thay tên quốc gia trong form prompt.",
+      "Ngách sức khỏe được nhân bản từ thị trường Việt sang Nhật rồi sang Hàn; có kênh Hàn lập giữa tháng 6, mười mấy video, đã bật kiếm tiền, tiêu đề đi sâu vào thực phẩm và rau củ.",
+      "Một kênh thị trường Nhật mới (video cũ nhất 11 ngày trước), view nổ rồi lên đều, chủ đề may mắn và tâm linh, giống ngách một nhân vật khác tác giả đã share.",
+      "Cách làm: copy tiêu đề, tìm kiếm, lấy kịch bản về dịch và viết lại cho hay hơn theo ngôn ngữ và giọng điệu của thị trường đó."
     ],
     "edit_sop": {
       "primary": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
@@ -1989,11 +1989,11 @@
     "target_market": "🇯🇵 Nhật / 🇻🇳 Việt",
     "market_code": "JP",
     "key_takeaways": [
-      "Quy trình nhân bản kênh theo chiều ngang: Sau khi kênh đầu tiên có doanh thu ổn định, nhân bản sang thị trường thứ 2 ngay trong tháng thứ 2.",
-      "Phân tích chỉ số giữ chân khán giả AVD: Chỉ những video có AVD trên 45% mới đủ tiêu chuẩn để dịch và nhân bản sang kênh ngoại.",
-      "Quản lý dàn kênh trên các profile độc lập: Mỗi kênh hoạt động trên một Chrome Profile riêng biệt để bảo vệ tài khoản khi bị quét liên đới.",
-      "Tận dụng hệ thống prompt có sẵn: Sử dụng lại 80% cấu trúc prompt hình ảnh, chỉ thay đổi thông số văn hóa và bối cảnh địa phương.",
-      "Tối ưu hóa chi phí sản xuất: Giảm thời gian sản xuất video thứ 2 xuống còn 1/3 so với video gốc nhờ quy trình đóng gói mẫu."
+      "Tư duy nhân bản thị trường: kênh sức khỏe thị trường Nhật nhân bản từ kênh Việt của một học viên trong gói bộ rổ (từ Việt sang Nhật, không phải Nhật sang Việt), video đầu hơn 200k view trong 2 ngày; kênh sức khỏe này vốn nhân bản từ thị trường US sang Việt.",
+      "Không nhân bản kênh đã có người làm sang cùng thị trường: tìm các kênh đối thủ khác, kiểm tra chưa ai làm ở Nhật hoặc Hàn thì mới lấy kịch bản đem sang; sức khỏe là nhu cầu thiết yếu, Nhật và Hàn dân số già nên nhu cầu càng cao.",
+      "Lưu ý khác so với một năm trước: YouTube đang siết, nên không chỉ thay phụ đề ngôn ngữ mà phải xào nấu lại kịch bản và edit lại video hoàn toàn (tải video nguồn, dựng khác), rồi chạy phụ đề tiếng Nhật và lồng giọng AI.",
+      "Ngách triết lý cổ nhân view Việt đang trend: các kênh mới có video 2 tuần, 3 ngày, 5 ngày trước view rất cao, đang bật kiếm tiền; edit đơn giản là kết hợp video tự nhiên, có thể lấy kịch bản từ Nhật về nhân bản.",
+      "Tiêu đề bám các từ khóa ngách của video cao view nhất; kênh dùng ảnh AI 2D/3D thì tác giả thấy chưa ổn, nên giữ nhân vật rồi ghép video tự nhiên làm nền và chạy phụ đề để hạn chế bị quét AI; nhân bản được giữa US, Việt, Nhật, Hàn."
     ],
     "edit_sop": {
       "primary": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường",
@@ -2491,11 +2491,11 @@
     "target_market": "Toàn cầu / Việt Nam",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Quy trình kỹ thuật sống còn: Phân quyền Quản trị viên cho kênh YouTube và cấu hình Email khôi phục để chống quét spam và chết chùm tài khoản.",
-      "Cơ chế quét hàng loạt của AI Google: Khi một kênh bị phạt vì spam hoặc vi phạm bản quyền, AI sẽ quét toàn bộ các kênh dùng chung một Gmail gốc.",
-      "Giải pháp triệt để: Chuyển kênh YouTube sang Tài khoản Thương hiệu (Brand Account) và phân quyền Quản trị viên cho một Gmail sạch riêng biệt.",
-      "Cấu hình email khôi phục và số điện thoại xác minh 2 bước độc lập cho từng tài khoản quản lý.",
-      "Lưu trữ danh sách mã dự phòng (Backup Codes) và không bao giờ đăng nhập tài khoản trên các thiết bị hoặc mạng công cộng không an toàn."
+      "Hướng dẫn gán quyền quản lý kênh và quản lý Gmail hợp lý để không bị Google đánh spam, quét hàng loạt làm die cả chùm kênh; dành cho người làm từ khoảng 3 kênh trở lên.",
+      "Mail khôi phục chỉ dùng cho một kênh (một mail khôi phục cho một kênh); sai lầm phổ biến là gán một mail khôi phục cho nhiều mail, khi bị quét thì die kéo theo hàng loạt mail khác.",
+      "Gán quyền cho kênh: vào mục quyền, mời một email khác và chọn quyền quản lý, để nếu email của kênh gốc bị die thì vẫn còn email khác truy cập kênh (khi đó chỉ die mail, không die kênh).",
+      "Làm 1-2 kênh thì không bắt buộc nhưng tác giả khuyên vẫn nên áp dụng.",
+      "Mỗi tài khoản Google AdSense chỉ nối vào một kênh; nối nhiều kênh vào cùng một tài khoản thì một kênh bị spam sẽ kéo theo các kênh còn lại."
     ],
     "edit_sop": {
       "primary": "SOP Thiết lập phân quyền Manager và cấu hình mail khôi phục chống quét dây chuyền",
@@ -2581,11 +2581,11 @@
     "target_market": "🌐 Toàn cầu",
     "market_code": "GL",
     "key_takeaways": [
-      "Lựa chọn nền tảng Web vs App: Bản Web (claude.ai) mang tính ổn định cao nhất, cập nhật tính năng mới nhanh nhất (như Claude Projects, Artifacts, Skills) và dễ quản lý nhiều cửa sổ làm việc song song.",
-      "Gói cước tối ưu cho Creator: Nên dùng gói Claude Pro ($20/tháng); gói Free có giới hạn ký tự và số lượt prompt quá thấp, không đủ khả năng phân tích kịch bản đối thủ dài 30-60 phút.",
-      "Cơ chế tiêu thụ Token và Giới hạn Context: Kịch bản video YouTube dài 8.000 - 15.000 từ tiêu tốn lượng token khổng lồ; nếu dán toàn bộ văn bản một lúc vào 1 chat cũ sẽ nhanh chóng chạm trần giới hạn và bị khóa chat tạm thời 2-4 tiếng.",
-      "Chiến lược tạo New Chat thông minh: Mỗi khi viết một kịch bản mới hoặc chuyển sang khâu tạo prompt ảnh, bắt buộc phải mở một New Chat riêng biệt để giải phóng bộ nhớ context, giúp Claude phản hồi chuẩn xác mà không bị lú.",
-      "Định hướng xây dựng Custom Prompt & Skills: Claude vượt trội ChatGPT ở khả năng duy trì văn phong mượt mà tự nhiên, không bị sáo rỗng hay dùng từ khuôn mẫu AI nếu được huấn luyện bằng Prompt Master bài bản."
+      "Tác giả giới thiệu Claude AI: truy cập claude.ai trên web, đăng nhập bằng tài khoản Google và chấp nhận điều khoản; có hai phiên bản là web và app.",
+      "Tác giả khuyên tải app (file .exe, máy Mac cũng dùng được) vì app có nhiều tính năng hơn bản web; bản web có chỗ để upload file skill.",
+      "Tác giả đang dùng gói 100 USD/tháng vì làm rất nhiều việc; người làm ít hoặc vừa nên dùng gói 20 USD/tháng, tương tự gói của ChatGPT.",
+      "Dùng càng nhiều thì càng đốt token; chạm ngưỡng sẽ bị khoá khoảng 2 giờ rồi mở lại để làm tiếp.",
+      "Tác giả sẽ ra thêm video hướng dẫn dùng Claude cho mảng YouTube; nên xem video tác giả đăng hôm trước trên YouTube, và ai muốn học sâu hơn có nhiều video hướng dẫn miễn phí."
     ],
     "edit_sop": {
       "primary": "Quy trình thiết lập không gian làm việc Claude AI Pro phục vụ viết kịch bản YouTube chuyên nghiệp",
@@ -3034,11 +3034,11 @@
     "target_market": "🇺🇸 Mỹ / 🌐 Ngoại",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Phân tích 5 kênh đối thủ ngách Kinh Thánh Hoa Kỳ: @biblemadeclear26, @scripturemadesimpleyt, @ScriptureMadeSimpleTV, @theopenscriptures, @BibleLegacyAssets98.",
-      "Quy mô thị trường Bible Explainer khổng lồ: Tệp khán giả Kitô giáo tại Mỹ và các nước nói tiếng Anh cực kỳ đông đảo và sẵn sàng quyên góp, ủng hộ.",
-      "Doanh thu RPM ngách Kinh Thánh cao kỷ lục: Dao động từ $15.00 đến $35.00/1.000 view nhờ tệp người xem có thu nhập cao tại Bắc Mỹ.",
-      "Cấu trúc giải nghĩa đoạn văn ngắn: Mỗi video tập trung giải thích 1-2 câu kinh thánh nổi tiếng (như Thi Thiên 23, Giăng 3:16) gắn với nỗi sợ hãi và hy vọng.",
-      "Phong cách nghệ thuật Watercolor / Tranh sơn dầu: Sử dụng tranh vẽ nghệ thuật cổ điển mềm mại tạo cảm giác trang nghiêm và thánh thiện."
+      "Tác giả share thêm vài kênh đối thủ ngách Kinh Thánh ở thị trường Hoa Kỳ/Anh; các kênh này đều hoàn toàn mới (lập chưa đầy 1 tháng) và view rất cao.",
+      "Một kênh làm cùng dạng Kinh Thánh nhưng không đúng ngách nhỏ tác giả share, vẫn để tham khảo.",
+      "Ở một kênh khác, video nổ view nhất là \"thói quen của người phụ nữ được Chúa ban phước\" còn các video còn lại ít view; keyword cần đào sâu là \"người phụ nữ được Chúa ban phước\".",
+      "Ngách nhỏ chính tác giả share là dạng giải thích Kinh Thánh; các video dạng thói quen, bí quyết là hướng khác hoàn toàn.",
+      "Video hướng dẫn mới nhất trên kênh YouTube của tác giả (đăng 7h tối cùng ngày) có hướng dẫn chi tiết cách tạo form/skill bằng AI, kịch bản và hình ảnh."
     ],
     "edit_sop": {
       "primary": "Update thêm kênh đối thủ - ngách thị trường Hoa Kỳ (US)",
@@ -3102,11 +3102,11 @@
     "target_market": "Toàn cầu / Việt Nam",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Bản chất lỗi Reused Content 2026: Thuật toán AI quét sự trùng lặp về cấu trúc hình ảnh, giọng đọc AI đại trà và mô típ kịch bản giống nhau trên diện rộng.",
-      "Cấu trúc Video Kháng nghị (Appeal Video): Bắt buộc quay mặt thật, nói tiếng Anh hoặc phụ đề tiếng Anh, thời lượng dưới 5 phút, show rõ quy trình làm việc.",
-      "Minh chứng giá trị gia tăng (Significant Transformation): Chỉ rõ giá trị phân tích, thuyết minh độc bản, hiệu ứng âm thanh và đồ họa do chính chủ thực hiện.",
-      "Đăng video kháng ở chế độ Không công khai (Unlisted): Không chỉnh sửa bất kỳ video nào trên kênh (không xóa, không ẩn) trong thời gian chờ YouTube xét duyệt kháng nghị.",
-      "Điểm mấu chốt trong đơn kháng: Nhấn mạnh video phục vụ mục đích giáo dục, bình luận, phân tích chuyên sâu tuân thủ Fair Use."
+      "Tác giả vừa kháng nghị thành công một kênh reup bị lỗi \"sử dụng lại nội dung\" (ngày 7/5/2026); học viên mới liên hệ ngày 6/5 và thư báo thành công về sau chưa đầy 8 tiếng kể từ lúc gửi kháng nghị.",
+      "Kênh học viên bật kiếm tiền khi đủ điều kiện thì bị báo lỗi sử dụng lại nội dung; tác giả nói tỷ lệ kháng nghị về khoảng 99-100%.",
+      "Kênh này chỉ có 1 video nhưng khi đã bật kiếm tiền thì chắc chắn hiện quảng cáo.",
+      "Sau khi kháng nghị thành công một lần, nếu xui thì khoảng 6 tháng sau YouTube mới quét lại, thường còn lâu hơn; nếu bị lại thì kháng nghị tiếp.",
+      "Làm reup quan trọng là duy trì được view và chọn ngách tốt; bị lỗi thì liên hệ Zalo của tác giả để được hỗ trợ."
     ],
     "edit_sop": {
       "primary": "SOP Chuẩn bị video kháng nghị bản quyền và reused content",
@@ -3556,11 +3556,11 @@
     "target_market": "🇯🇵 Nhật / 🇻🇳 Việt",
     "market_code": "JP",
     "key_takeaways": [
-      "Ngách manga/hoạt hình vẽ tay sức khỏe người cao tuổi Nhật Bản tạo ra sức hút khổng lồ: 5 video đạt hơn 600k view và 3k sub.",
-      "Khán giả Nhật Bản cực kỳ tin tưởng vào các lời khuyên sức khỏe được truyền tải dưới dạng truyện tranh trực quan, dễ hiểu.",
-      "Công thức thành công là biến kiến thức y khoa khô khan thành các câu chuyện ngắn đời thường của các nhân vật hoạt hình gần gũi.",
-      "Tận dụng AI tạo ảnh phong cách manga nét vẽ Nhật kết hợp hiệu ứng lật trang và chuyển cảnh nhẹ nhàng.",
-      "Ngách sức khỏe thị trường Việt Nam cũng có thể áp dụng nguyên vẹn công thức này để nhân bản với lượng view nội địa cực lớn."
+      "Share 2 ngách nhỏ: kênh sức khỏe thị trường Nhật chỉ mới 5 video, lập năm 2026 bằng mail mới, chỉ số VPH rất cao; tiêu đề thuộc ngách nhỏ trong sức khỏe, người cao tuổi và các vấn đề trong cuộc sống (đạt hơn 600k view, 3k sub theo tiêu đề video).",
+      "Sức khỏe ở thị trường Nhật không bao giờ hết view vì có rất nhiều ngách nhỏ khác nhau; VPH cao nghĩa là nên bám theo vì khó bị không view (cách xem VPH đã nói ở video mẹo không view).",
+      "Quan trọng nhất là kịch bản: không giật tít, câu view sai sự thật vì bot AI của YouTube quét tự động và đôi khi quét nhầm cả kênh làm chuẩn; quét toàn cầu nên hên xui.",
+      "Ngách thứ hai là view Việt về triết lý, cổ nhân trí tuệ: kênh mới khoảng 30 video, kịch bản khá hiếm vì phải chọn lọc nên ra video ít; cách làm là lồng ghép video tự nhiên từ nguồn miễn phí với hình AI và hiệu ứng.",
+      "Dạng này người xem cần kịch bản hay và giọng đọc hay hơn là hình ảnh; dùng giọng AI, có thể clone giọng theo kênh đối thủ hoặc các kênh bóng đá, chính trị, quân sự đang dùng AI tốt."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -3907,11 +3907,11 @@
     "target_market": "Toàn cầu / Việt Nam",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Phân tích Mail mới vs Mail cổ (2015-2020): Mail cổ có độ trust lịch sử duyệt web cao hơn, ít bị quét xác minh số điện thoại liên tục khi tạo kênh ngoại.",
-      "Kênh mới (Fresh) vs Kênh cổ (Aged Brand Channel): Kênh mới tạo cần ngâm đúng quy trình; kênh cổ có sẵn đề xuất nhưng cần thanh lọc lịch sử cũ trước khi đổi chủ đề.",
-      "Tút kiểm tra độ sạch của Mail: Kiểm tra trong Google Security xem có dính thiết bị lạ, vị trí đăng nhập bất thường hoặc cảnh báo bảo mật chưa xử lý.",
-      "Nguồn tài nguyên video Reup: Khai thác danh sách CSV kênh Douyin/Bilibili đời sống người già kèm danh sách hashtag SEO và prompt thumbnail.",
-      "Nguyên tắc cấm kỵ: Tuyệt đối không mua mail hack (mail via) trôi nổi trên mạng dễ bị chủ cũ lấy lại hoặc dính blacklist của Google."
+      "Gmail và kênh là hai thứ khác nhau: Gmail cổ (tạo từ khoảng 2017 trở về trước, càng lâu càng tốt; mua ở tạp hóa mail) chỉ cần ngâm khoảng 1 ngày, còn Gmail mới tạo bằng số điện thoại phải ngâm vài ngày (ít nhất khoảng 2 ngày) và đăng ký dịch vụ như ChatGPT, iCloud để Google nhận là người dùng thật, nếu không dễ bị spam và không view.",
+      "Kênh cổ (mua sẵn hoặc đã có từ lâu, khoảng 2017 trở về trước): ưu điểm dễ đề xuất, lên view và ăn luật nhanh ngay video đầu; nhược điểm là sau khi bật kiếm tiền hoặc làm một thời gian thường bị gãy view (99% sẽ gặp) nhưng có mẹo khắc phục.",
+      "Kênh mới (lập bằng Gmail cổ hoặc mới): được thuật toán ưu tiên đẩy, nhưng 1-2 video đầu thường không được đẩy mạnh hoặc không view; tác giả vẫn khuyên ưu tiên kênh cổ và dùng Gmail cổ khi tạo kênh mới.",
+      "Kênh mới tạo xong ngâm tương tác 5-7 ngày rồi mới đăng; 5-7 video đầu cách 2-3 ngày đăng một video (không đăng liên tục để tránh bị hiểu là spam vì thuật toán là AI cần thời gian phân phối), sau đó mới đăng mỗi ngày một video.",
+      "Cách tìm giờ đăng của kênh đối thủ: lấy số giờ trước hiển thị trên video (ví dụ 19 giờ trước) cộng với giờ hiện tại của mình rồi quy đổi để ra giờ đối thủ đã đăng."
     ],
     "key_timestamps": [
       {
@@ -4055,11 +4055,11 @@
     "target_market": "🇯🇵 Nhật Bản",
     "market_code": "JP",
     "key_takeaways": [
-      "Nguyên lý Bán Content 70/30 thực chiến: Lấy 70% cốt truyện, thông điệp và nhịp điệu của video đối thủ viral, kết hợp 30% sáng tạo mới về cách diễn đạt, ví dụ thực tế và kết luận để tạo ra kịch bản độc lập.",
-      "Kỹ thuật chia nhỏ kịch bản theo Phần (Parts): Khi xử lý video dài 30-60 phút, Prompt Master phải tự động phân tích và chia kịch bản thành 3-4 phần độc lập, xuất lần lượt để đảm bảo chiều sâu từng phần và không bị cắt ngắn từ ngữ.",
-      "Tạo tiêu đề CTR cao bám sát từ khóa ngách: Tiêu đề mới phải kế thừa 100% từ khóa cốt lõi của đối thủ (ví dụ tên nhân vật triết lý Nhật 【美輪明宏】) đặt ngay đầu dòng, đồng thời tăng cường yếu tố kịch tính để kích thích người xem nhấp chuột.",
-      "Kỹ thuật dựng hình bằng Sóng âm (Audio Waveform): Sử dụng video nền chuyển động nhẹ kết hợp thanh sóng âm nhạc (Audio Visualizer Green Screen 4K) tạo điểm nhấn thị giác liên tục, giúp video có tính tương tác trực quan cao mà không tốn công dựng phim phức tạp.",
-      "Đóng gói Skill chuyên dụng cho ngách Nhật: Đặt tên Skill chuẩn xác (ví dụ Script_Akihiro_Miwa_JP), lưu vào Claude Project để mỗi lần sản xuất chỉ cần dán transcript đối thủ vào là có kịch bản hoàn chỉnh."
+      "Hướng dẫn dùng Claude làm bán content kiểu 70/30: lấy khoảng 70% cấu trúc của kịch bản đối thủ cho AI học, 30% còn lại để AI tự sáng tạo viết thêm; ví dụ ngách triết lý Nhật, kênh mới lập 5/5 (11 ngày trước), chỉ 1-2 video nổ là đủ lượt đăng ký và kiếm tiền.",
+      "Cách nạp dữ liệu: copy data của 2-3 kênh đối thủ (khoảng một nửa số video đã quét) dán vào Claude cùng câu lệnh phân tích kỹ; tác giả dùng model Opus 4.7 (đôi khi Sonnet 4.6); chọn video cao view theo chỉ số VPH, ví dụ video 1,3 triệu view cách 3 tuần, chỉ cần một video để cho AI học.",
+      "Nhân vật nổi tiếng: trong kịch bản đối thủ không dám đặt tên nhân vật vì dễ bị coi là không trung thực, nên chọn phương án ẩn danh (ban đầu để chưa quyết định); chọn viết template kịch bản master trước và chia thành 2 lần gửi lệnh, không gửi một lần vì dễ sai.",
+      "Đóng gói thành skill để lần sau chỉ cần dán kịch bản đối thủ vào; tiêu đề tạo ra dựa trên tiêu đề gốc chứ không copy nguyên, theo kiểu tạo tiêu đề tương tự.",
+      "Edit: kênh đối thủ ghép nhiều video tự nhiên, cắt khoảng 5-6 giây rồi chuyển cảnh, kèm thanh sóng âm thanh chạy trên video; phụ đề lấy bằng CapCut chỉ tương đối, không chính xác 100% nên khi làm thị trường Nhật có thể bị khán giả comment sai."
     ],
     "edit_sop": {
       "primary": "SOP sản xuất video Bán Content triết lý Nhật Bản kết hợp sóng nhạc trực quan né quét Reused Content",
@@ -4205,11 +4205,11 @@
     "target_market": "🇻🇳 Việt",
     "market_code": "VN",
     "key_takeaways": [
-      "Ngách sức khỏe và thảo dược đông y thị trường Việt Nam trên các kênh đối thủ (@SuGia_SucKhoe, @suckhoedongy99, @KhỏeVềGià): Lượng view nội địa cực kỳ bùng nổ.",
-      "Người Việt Nam đặc biệt quan tâm đến các bài thuốc dân gian, mẹo chữa đau nhức xương khớp, mát gan bổ thận bằng cây cỏ quen thuộc.",
-      "Kỹ thuật dựng video bán content: Kết hợp hình ảnh các loại cây thuốc thật ngoài đời (lá lốt, ngải cứu, gừng, tỏi) với đồ họa giải thích công dụng.",
-      "Kịch bản cần đưa ra liều lượng và cách dùng an toàn, luôn kèm lời khuyên tham khảo ý kiến thầy thuốc chuyên môn để phòng thủ pháp lý.",
-      "Tiêu đề và thumbnail đặt theo công thức: [Tên loại cây/vị thuốc] + [Công dụng bất ngờ mà 90% người không biết]."
+      "Share thêm các kênh ngách sức khỏe thị trường Việt: kênh thứ nhất lập tháng 10, hơn 20 video, view đều và cao, thumbnail đồng bộ giữa các video; ngách đúng nhu cầu người xem nên view lên.",
+      "Kênh thứ hai cũng mới (hơn 20 video), ngách sức khỏe khác với đại diện là một ông bác sĩ đứng nói; dùng video từ HeyGen ghép với cảnh AI nhép miệng.",
+      "Kênh thứ ba lập ngày 20/10/2025 (đúng 2 tuần) nhưng view rất cao, hơn 5.000 sub và đủ điều kiện bật kiếm tiền.",
+      "Sức khỏe có rất nhiều ngách; tác giả đã hướng dẫn quy trình làm (kịch bản, prompt...), nay chỉ còn share key.",
+      "Phải thực chiến, làm thật mới ra kết quả; không nên đứng núi này trông núi nọ."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước kết hợp AI HeyGen nhép miệng và nội dung sức khỏe ngách nhỏ",
@@ -4435,11 +4435,11 @@
     "target_market": "🇻🇳 Việt",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "📌 Cập Nhật Giọng Đọc Ngọc Huyền (Vbee) Miễn Phí: H2DEV chính thức tích hợp giọng đọc truyền cảm Ngọc Huyền từ hệ thống Vbee trực tiếp vào web tool dịch tại h2devtool.com, hỗ trợ học viên tạo voice tiếng Việt hoàn toàn miễn phí.",
-      "📌 Tự Động Khớp Chuẩn Khung Thời Gian Phụ Đề (Timeline SRT): Điểm ưu việt là giọng đọc AI được sinh ra tự động khớp hoàn hảo với từng câu và từng khoảng thời gian trong file phụ đề SRT (Subtitle Editor), triệt tiêu hoàn toàn hiện tượng lệch tiếng hay đè thoại.",
-      "📌 Tối Ưu Cho Dạng Video Review & Kể Chuyện Hoang Dã: Giọng đọc Ngọc Huyền có ngữ điệu tự nhiên, cực kỳ thích hợp cho anh em làm các dạng video review phim, tài liệu cuộc sống sinh tồn hoang dã (nhà gỗ, săn bắn, khám phá thiên nhiên).",
-      "📌 Hệ Sinh Thái Công Cụ All-In-One: Web tool tích hợp trọn vẹn các tính năng cốt lõi: Tải video chất lượng cao từ mọi nền tảng (Douyin, Bilibili, TikTok, Kuaishou, YouTube), chia sẻ key API dịch thuật, biên tập phụ đề và xuất audio đồng bộ.",
-      "📌 Tiết Kiệm Chi Phí Sản Xuất Tối Đa: Thay vì phải trả phí đắt đỏ mua ký tự trên các nền tảng TTS bên ngoài, học viên có thể tận dụng trực tiếp tính năng này để cắt giảm tối đa chi phí vận hành kênh."
+      "H2DEV vừa cập nhật web tool dịch: tích hợp miễn phí tính năng tạo voice theo phụ đề editor, có giọng Ngọc Huyền từ Vbee, để học viên đỡ tốn chi phí khi làm video review.",
+      "Giọng đọc được tạo theo timeline của phụ đề editor; tạo xong thì ghi lại rồi import vào CapCut để làm video.",
+      "Tác giả demo nhanh một đoạn mẫu nói về cuộc sống hoang dã, sống trong nhà gỗ chống bão tuyết, ăn thực phẩm tự săn bắn, và có thử tính năng nói tiếp ghép đoạn.",
+      "Trong tool có mục tải xuống kèm video hướng dẫn cài đặt, cùng mục share key và tải video từ tất cả các nền tảng (cập nhật từ trước).",
+      "Video chủ yếu để thông báo tính năng voice mới; cách dùng tool dịch đã có các video hướng dẫn trước đó."
     ],
     "edit_sop": {
       "primary": "Quy trình tải video nguồn, dịch phụ đề tự động và tạo giọng đọc đồng bộ timeline SRT trên H2DEV Tool",
@@ -5494,11 +5494,11 @@
   },
   "VIDEO-8603a9": {
     "key_takeaways": [
-      "Thị trường HongKong, Hàn, Việt: Nhu cầu cực lớn về Phong thủy, Vận mệnh và Bình an nội tâm.",
-      "Khán giả có xu hướng tìm kiếm sự an ủi tinh thần và mong cầu tài lộc vào các dịp rằm/đầu tháng.",
-      "Thị trường HongKong và kiều bào có mức thu nhập cao, mang lại doanh thu quảng cáo vượt trội.",
-      "Kỹ thuật xây dựng lòng tin qua các bài học nhân quả và năng lượng tích cực.",
-      "Học hỏi chiến lược từ các kênh thực chiến như @fortune68studio và @TâmBìnhAnLạc."
+      "Tác giả share thêm các ngách nhỏ ở nhiều thị trường; ngách không bao giờ thiếu, quan trọng là quy trình làm, nên tập trung 1-2 ngách và có kết quả rồi mới nhân bản.",
+      "Hai kênh Hong Kong (ngôn ngữ dành cho Đài Loan/Hồng Kông) làm ngách triết lý có một nhân vật đại diện nổi tiếng: view và chỉ số VPH rất cao, cạnh tranh thấp, phù hợp để bán content; các thị trường ngoài US ít cạnh tranh hơn.",
+      "Kênh Hàn thứ ba nói về tâm linh và đời sống, có video viral có video không (hên xui); khuyên bám theo các video nhiều view và bỏ dạng ít view.",
+      "Một kênh view Việt về tâm linh mới 18 video đã đủ điều kiện bật kiếm tiền.",
+      "Một kênh triết lý đời sống Hàn đổi qua lại giữa các nhân vật đại diện: sang nhân vật mới view tăng cao, quay lại nhân vật cũ view thấp; bài học là bám theo ngách/nhân vật đang lên. Video chỉ một ảnh dễ bị lỗi sử dụng lại nội dung (kháng nghị về 85-99% nhưng tốn công)."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước kỹ thuật edit & SOP né quét AI bài giảng",
@@ -5627,11 +5627,11 @@
     "target_market": "🇺🇸 Mỹ / 🌐 Ngoại",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "📌 RPM Kỷ Lục 1 / 1.000 View Từ Video Dài Trên 2 Tiếng: Chứng minh số liệu kênh lịch sử với chỉ số RPM đạt mức khó tin 1 USD (hơn 500.000 VNĐ / 1.000 view) nhờ thời lượng xem AVD cực dài và phân bổ nhiều mid-roll ads.",
-      "📌 Sức Hút Khổng Lồ Của Kênh Lịch Sử Dài Tập: Phân tích kênh đối thủ chỉ đăng 4 video nhưng có video đạt 2.2 triệu view trong 2 tuần và 1 triệu view trong 12 ngày.",
-      "📌 Quy Trình Prompt ChatGPT Viết Kịch Bản Dài Trên 2 Tiếng: Phương pháp chia nhỏ kịch bản thành các chương hồi (mỗi chương 1.500–2.500 từ) và sử dụng lệnh tiếp tục tuần tự để tạo ra kịch bản trường thiên sâu sắc.",
-      "📌 Kỹ Thuật Đọc Và Ghép Nối Âm Thanh Hàng Loạt: Hướng dẫn copy từng chương vào Notepad++, đưa vào ElevenLabs render voiceover theo từng block và nối liền mạch trên timeline CapCut.",
-      "📌 Tạo 10 Prompt Ảnh AI Cho Mỗi Phân Cảnh: Cách yêu cầu ChatGPT sinh tự động danh sách prompt tạo ảnh minh họa chi tiết theo từng đoạn kịch bản giúp việc dựng phim diễn ra nhanh chóng."
+      "Tác giả show kênh của mình bật kiếm tiền từ 13-14/2: làm video dài 1-2 tiếng toàn bằng AI nên có video RPM 21 và doanh thu cao; kênh đối thủ lịch sử 'lịch sử buồn ngủ cho giấc ngủ' chỉ 4 video nhưng một video 2,2 triệu view sau 2 tuần và một video 1 triệu view sau 12 ngày.",
+      "Kênh đối thủ dùng kênh cổ, video dài trên 2 tiếng, tiêu đề lặp lại cấu trúc và thumbnail thu hút; ban đầu CTR thấp, sau khi đổi tiêu đề và thumbnail mới lên rất mạnh.",
+      "Quy trình prompt: dán chủ đề vào ChatGPT (hoặc DeepSeek, Gemini) để gen khoảng 20 chủ đề, chọn một chủ đề rồi yêu cầu viết kịch bản 15-16 nghìn từ, chia thành 15 phần, mỗi phần khoảng 1.000-1.100 từ, gõ 'continue' bằng tiếng Anh để nó viết tiếp từng phần.",
+      "Voice: copy từng phần kịch bản vào Notepad, tạo giọng bằng ElevenLabs (lọc tiếng Anh/Mỹ, giọng nam trẻ, lấy ID giọng) qua tool của tác giả thay vì web vì web tốn tiền, rồi nối các file thành một file tổng.",
+      "Ảnh: dùng prompt nhờ ChatGPT sinh 10 prompt ảnh cho mỗi phần (15 phần ra 150 ảnh, có thể đổi 10 thành 15 hoặc 20), tạo ảnh bằng Kling hoặc công cụ khác, ghép khoảng 6-10 giây một ảnh trên CapCut; không cần dùng AI tạo video nên tiết kiệm chi phí."
     ],
     "edit_sop": {
       "primary": "SOP sản xuất video tài liệu trường thiên 2 tiếng bằng ChatGPT và tối ưu doanh thu RPM cao:",
@@ -5859,11 +5859,11 @@
     "target_market": "🇺🇸 Mỹ / 🇨🇦 Canada",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Chiến lược sản xuất quy mô công nghiệp 6 video/ngày cho thị trường Mỹ và Canada giúp tối đa hóa khả năng phủ sóng thuật toán tìm kiếm.",
-      "Đối thủ làm được năng suất khủng nhờ xây dựng hệ thống template dựng video cố định, quy trình tự động hóa và chia nhỏ công đoạn.",
-      "Ngách tin tức tổng hợp, sự kiện nóng hoặc câu chuyện ly kỳ ngắn là những ngách phù hợp nhất cho mô hình làm nhanh nhiều video.",
-      "Doanh thu đến từ số lượng view tích lũy khổng lồ của hàng trăm video chạy đều đặn với RPM thị trường Bắc Mỹ rất cao ($5 - $10).",
-      "Yếu tố then chốt là kiểm soát chất lượng ở mức chấp nhận được, không cần quá hoàn hảo nhưng tuyệt đối không được dính bản quyền."
+      "Tác giả share một ngách hoàn toàn mới: kênh đối thủ mới chỉ có 6 video, đăng cách đó 1 ngày (khoảng 4 video trong một ngày) nhưng view đã rất cao.",
+      "Kênh làm dạng tin nóng/tin tức, riêng về một nhà tỷ phú tên Buffett; có thể dịch từ khoá ra để tìm các kênh đối thủ cùng ngách.",
+      "Kênh gốc đang edit kiểu podcast chỉ với một ảnh; với việc YouTube quét AI gần đây, tác giả khuyên không edit kiểu này mà ghép nhiều ảnh hoặc nhiều video để an toàn hơn.",
+      "Tác giả đánh giá ngách này rất trend, làm theo cẩn thận thì sẽ lên view.",
+      "Cài công cụ hỗ trợ đã hướng dẫn ở bài trước để xem từ khoá của kênh đối thủ."
     ],
     "edit_sop": {
       "primary": "SOP Sản xuất & Edit: SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 ",
@@ -6229,11 +6229,11 @@
     "target_market": "🇯🇵 Nhật Bản",
     "market_code": "JP",
     "key_takeaways": [
-      "Ngách Xe hơi & Văn hóa lái xe Nhật (@kurumanozokitai): Kênh mới chỉ 4 video nhưng đã nổ hơn 300.000 lượt xem nhờ khai thác những góc nhìn độc lạ về thói quen lái xe và lỗi phổ biến của tài xế.",
-      "Ngách Trí tuệ dân gian người xưa (@昔の人の知恵): Đúc kết những mẹo vặt sinh tồn, bí quyết nấu nướng và bài học sống từ thời cổ xưa của người Nhật Bản.",
-      "Tận dụng Kênh Cổ 2011 để spam video an toàn: Phân tích trường hợp kênh sử dụng tài khoản cổ đăng 2 video/ngày mà không bị bộ lọc thuật toán chặn đứng lưu lượng đề xuất.",
-      "Kỹ thuật tạo Khung viền (Border Frame Overlay): Đóng khung video bằng một viền họa tiết hoặc màu sắc độc quyền (Brand Frame) để thay đổi toàn bộ tỷ lệ khung hình và mã băm thị giác (Visual Hash) của video.",
-      "Bổ sung nguồn content Sức khỏe chuyên sâu từ Mỹ: Giới thiệu 2 kênh bác sĩ uy tín tại Mỹ (@DoctorJohnMeyers, @EricBennettMD) làm nguồn tư liệu khoa học chuẩn xác để xào nấu kịch bản sức khỏe cho các thị trường châu Á."
+      "Ngách xe điện/ô tô Nhật: kênh dùng kênh cổ 2011, video đầu cách đây 1 ngày, spam 2 video/ngày mà vẫn nổ; tiêu đề giải thích về biến động xe điện (ví dụ Hyundai bên bờ vực phá sản vì sai lầm chiến lược xe điện) và có từ khóa 'giải thích chi tiết' ở cuối mỗi tiêu đề; nền là video tự quay hoặc nguồn free, lớp trên ghép hình AI.",
+      "Ngách mẹo vặt cuộc sống kiểu 'mẹo xưa' thị trường Nhật: kênh mới 4 video, đăng cách 3 ngày một video, có video hơn 50k view (ví dụ tiêu đề về lọc nước), dùng toàn hình AI; tác giả vẫn khuyên ghép thêm video tự nhiên cho chỉnh chu và an toàn.",
+      "Kênh sức khỏe của học viên bộ rổ (hơn 15 video, hơn 600 sub): video đầu hơn 400 view, video thứ 3 bắt đầu nổ, có video hơn 20k view; kênh mới cần khoảng 10-15 video mới xác định được.",
+      "Phải bám đúng từ khóa của video cao view (ví dụ 'tai biến', 'dấu hiệu ung thư'); video dùng từ khóa không có ai quan tâm (như 'thấp khớp') chỉ vài chục view.",
+      "Cách làm khung viền kênh đối thủ: chụp màn hình khung rồi nhờ ChatGPT tạo ảnh khung giống mẫu, đổi tên kênh và màu (ví dụ từ xanh sang đỏ) rồi ghép các video vào khung khi edit; kênh US dùng để lấy kịch bản nhân bản sang Việt, Nhật, Hàn vì làm thẳng ở US rất khó cạnh tranh."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tạo khung viền (Frame Overlay) kết hợp đa nguồn tư liệu né quét mã băm video",
@@ -6380,11 +6380,11 @@
     "target_market": "🇺🇸 Mỹ / 🌐 Ngoại",
     "market_code": "JP",
     "key_takeaways": [
-      "Ngách Chiến tranh Lạnh và bí mật quân sự thị trường Mỹ (US) trên kênh @thecoldwartales là một trong những ngách có RPM cao nhất ($12 - $25).",
-      "Khán giả Mỹ cực kỳ say mê các bí mật tình báo CIA/KGB, máy bay gián điệp, tàu ngầm hạt nhân và các chiến dịch bí mật trong thế kỷ 20.",
-      "Nguồn tài nguyên công cộng khổng lồ: Thư viện Quốc hội Mỹ (Library of Congress) và Lưu trữ Quốc gia (NARA) cung cấp hàng triệu ảnh/clip công cộng miễn phí bản quyền (Public Domain).",
-      "Kịch bản đòi hỏi tính chính xác về mốc thời gian, tên vũ khí và địa danh lịch sử để tạo niềm tin tuyệt đối cho người xem.",
-      "Kênh phát triển bền vững nhiều năm mà không sợ hết ý tưởng nhờ kho tàng sự kiện Chiến tranh Lạnh vô tận."
+      "Ngách thị trường Hoa Kỳ (US): kênh đối thủ mới có 21 video, vừa lập ngày 17 tháng 10 nhưng view và thời lượng xem rất cao; video trung bình 30-40 phút, có video hơn 40 phút.",
+      "Từ khoá ngách là \"gián điệp Liên Xô\": dịch sang tiếng Anh rồi tìm trên YouTube để ra thêm các kênh đối thủ khác.",
+      "Một kênh đối thủ khác cùng dạng, ít video và lập ngày 15/11/2020, cũng có view cao.",
+      "Thumbnail của kênh thứ hai làm sơ sài, kém hấp dẫn hơn kênh đầu nên tỷ lệ click và view thấp hơn; cần làm thumbnail đẹp, thu hút.",
+      "Cách nhân bản thị trường: lấy từ khoá ngách dịch sang tiếng Anh hoặc thị trường khác (Hàn, Nhật...) rồi tìm xem ngách đó có hot ở đó không; phải tự tìm và lọc mới biết."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước dựng video ngách sinh tồn hoang dã và cuộc sống tự cung tự cấp (Off-Grid)",
@@ -6455,11 +6455,11 @@
     "target_market": "Nhật Bản / Quốc tế",
     "market_code": "JP",
     "key_takeaways": [
-      "Thiết lập kênh chuẩn quốc tế từ đầu: Chọn quốc gia kênh (Nhật Bản/Mỹ), ngôn ngữ mặc định, múi giờ theo thị trường mục tiêu ngay trong cài đặt gốc.",
-      "Tối ưu hóa Bộ Nhận diện Kênh: Tạo Avatar và Banner chuẩn kích thước bằng Canva (sử dụng mẫu template chotto dark đính kèm), tạo tên kênh ngắn gọn, dễ nhớ.",
-      "Cài đặt từ khóa kênh (Channel Keywords): Điền 10-15 từ khóa cốt lõi của ngách, kết hợp từ khóa tiếng bản xứ của đối thủ dẫn đầu (@ちょっとダークな心理学).",
-      "Cài đặt mặc định cho video tải lên (Upload Defaults): Thiết lập cấu trúc mô tả, disclaimer bản quyền, hashtag và chế độ hiển thị Không công khai mặc định.",
-      "Kích hoạt tính năng nâng cao (Advanced Features): Xác minh danh tính bằng video khuôn mặt hoặc CCCD để mở khóa đăng video dài và tải thumbnail tùy chỉnh."
+      "Hướng dẫn người mới setup kênh cho ngách tâm lý thị trường Nhật: vào cài đặt kênh đặt quốc gia/vị trí địa lý là Nhật Bản (ngôn ngữ tiếng Việt và đơn vị tiền tệ không ảnh hưởng); đặt xong thì khi xem kênh đối thủ, trang chủ và cột đề xuất bên phải toàn video thị trường Nhật.",
+      "Tên kênh và ID: copy tên kênh đối thủ cho ChatGPT hoặc Gemini gen thêm tên mới (có thể gen lại nếu trùng); avatar cũng cho AI tạo rồi cắt tròn; ảnh bìa không bắt buộc, tác giả không để.",
+      "Phần mô tả kênh: theo chính sách hiện tại tác giả không để nhiều thông tin vì càng nhiều càng dễ bị quét; từ khóa kênh/video chỉ để vài từ (tối đa khoảng 4-5 từ) hoặc không để, lấy từ vài kênh đối thủ bằng tiện ích mở rộng đọc tag (bản free); mục chế độ nâng cao đặt ngôn ngữ đúng quốc gia mục tiêu.",
+      "Xác minh: phải xác minh đủ các dòng cho kênh xanh trước khi ngâm; một số điện thoại xác minh tối đa 2 kênh trong 1 năm, có thể dùng số người thân hoặc thuê sim; xác minh bằng video khuôn mặt hoặc giấy tờ (tác giả quét hai mặt giấy phép lái xe, về sau khoảng 5-8 tiếng); mục hoạt động tích cực cần 1-2 tháng nên bỏ qua; quản lý quyền thì thêm mail khác để phòng mail chính bị die.",
+      "Ngâm kênh: xem vài phút video đối thủ, like, đăng ký, comment (nhờ AI tạo comment), mỗi ngày khoảng 3-5 video/kênh; kênh cổ ngâm 2-3 ngày, kênh mới tạo từ Gmail ngâm khoảng 5 ngày rồi mới đăng; không ngâm thì sau dễ gãy view hoặc dính spam không có lượt hiển thị."
     ],
     "edit_sop": {
       "primary": "SOP Cài đặt toàn diện một kênh YouTube chuẩn chính sách 2026",
@@ -6656,11 +6656,11 @@
   },
   "VIDEO-a348a5": {
     "key_takeaways": [
-      "Bố cục màu sắc kinh điển ngách Khắc kỷ: Tương phản giữa tượng đá cẩm thạch và luồng sáng vàng.",
-      "Sử dụng hình tượng các triết gia La Mã vĩ đại: Marcus Aurelius, Seneca, Epictetus.",
-      "Quy tắc text thumbnail: Tối đa 3 - 4 từ mang tính triết lý sâu sắc, đánh trúng tâm lý người xem.",
-      "Hiệu ứng ánh sáng Chiaroscuro (tương phản sáng tối) tạo chiều sâu tâm lý và sự trang nghiêm.",
-      "Tỷ lệ nhấp chuột (CTR) của thumbnail ngách triết lý đạt mức ấn tượng từ 8% đến 12%."
+      "Hướng dẫn làm thumbnail theo key triết lý Khắc kỷ trực tiếp trên Photopea (Photoshop web miễn phí); cũng có thể dùng Canva hoặc app khác, cách làm tương tự.",
+      "Bước 1-2: tạo dự án tỷ lệ 16:9 (2560x1440 hoặc 1280x720 px), nhập ảnh chân dung sơn dầu Carl Jung và dùng Free Transform đặt ở 1/3 khung hình bên trái.",
+      "Bước 3: chèn layer texture nền xước phấn cổ điển, chỉnh Curves và Hue/Saturation để có phông nền tối bí ẩn.",
+      "Bước 4-5: dùng Type Tool viết chữ hook lớn font Days One in hoa \"The truth about women who LIVE ALONE\", rồi tạo khung chữ nhật đỏ (Shape Tool) chứa cụm \"without a man\" chữ trắng viền đỏ để tăng CTR.",
+      "Bước 6: căn chỉnh khoảng cách lề tổng thể, kiểm tra độ tương phản hiển thị trên điện thoại rồi xuất file JPG."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước kỹ thuật edit & SOP né quét AI bài giảng",
@@ -6726,11 +6726,11 @@
     "target_market": "🇰🇷 Hàn Quốc",
     "market_code": "KR",
     "key_takeaways": [
-      "Ngách Tôn giáo Kitô giáo Hàn Quốc (@은밀한응답): Kênh mới 34 video nhưng view cực kỳ ổn định và đã bật tính năng Hội viên (Channel Memberships), chứng minh cộng đồng tín đồ Kitô giáo tại Hàn Quốc có độ gắn kết và ủng hộ tài chính rất lớn.",
-      "Ngách Thói quen ăn rau trường thọ (@장수채소습관): Khai thác sâu vào một nhánh hẹp của dinh dưỡng: tác dụng của từng loại rau củ quen thuộc đối với việc phòng chống ung thư và sống thọ.",
-      "Bắt bệnh kênh học viên bị lẹt đẹt 0 view: Phân tích kênh sức khỏe của học viên VIP Pro mới làm 9 video; chỉ ra các chi tiết nhỏ bị xem nhẹ như thumbnail thiếu tương phản, tiêu đề dịch thô cứng và nhạc nền lấn át giọng đọc.",
-      "Thuật toán đánh giá 10 video đầu tiên: Kênh mới cần từ 5 đến 15 video đầu tiên để hệ thống Machine Learning của YouTube dò tìm và phân loại chính xác cụm khán giả mục tiêu; không được nản chí khi thấy ít view ban đầu.",
-      "Sửa lỗi tương phản Thumbnail: Thumbnail phải đọc được rõ ràng trên màn hình điện thoại di động cỡ nhỏ; màu chữ và viền chữ phải tương phản tối thiểu 70% so với nền ảnh."
+      "Ngách tôn giáo/tâm linh Kitô giáo thị trường Hàn: kênh rất mới (video đầu một tháng trước chỉ hơn 700 view), view trung bình vài nghìn, bật cả chức năng hội viên nên chắc chắn đang bật kiếm tiền; video dài khoảng 39 phút, edit giống các ngách triết lý trước (ghép nhân vật với video tự nhiên).",
+      "Giải đáp vụ một số kênh triết lý bị die: tác giả cho rằng YouTube hiện nhẹ hơn 2 tháng trước, nguyên nhân thường là Gmail/kênh mua ngoài rồi lock vào máy bị quét theo đợt, hoặc nội dung giật tít, câu view sai sự thật; không phải do làm người nổi tiếng.",
+      "Phải tự làm thật thì mới rút ra được cách xử lý quét, FOMO nhảy từ ngách này sang ngách khác sẽ không làm được; đọc lại kịch bản đã gen và làm cho sạch.",
+      "Kênh sức khỏe của học viên VIP Pro (9 video, làm từ 8 ngày): video đầu nổ nhưng các video gần đây chỉ vài chục đến vài trăm view, một video 3,2 nghìn; lỗi là làm tạp nhiều ngách (rau củ, trái cây...) thay vì bám vào hai video cao view nhất (19k và 17k view về luyện tập 1 phút mỗi ngày để cải thiện trí nhớ).",
+      "Quy tắc: khi một video nổ thì bám đúng chủ đề đó làm tiếp; kênh mới cần 10-15 video mới phân phối ổn định; tiêu đề có yếu tố cảnh báo gây FOMO; edit chỉ là ghép hình ảnh/video minh họa và phụ đề, quan trọng nhất là kịch bản."
     ],
     "edit_sop": {
       "primary": "Quy trình chuẩn đoán và khắc phục kênh mới bị 0 view / lẹt đẹt thuật toán",
@@ -6922,11 +6922,11 @@
     "target_market": "🇰🇷 Hàn",
     "market_code": "KR",
     "key_takeaways": [
-      "Case study kênh mới @새벽의두만강 tại thị trường Hàn Quốc: Phân tích lý do kênh phát triển thần tốc nhưng cũng là bài học xương máu khi kênh bị quét 404.",
-      "Ngách chuyện kể lịch sử biên giới, số phận người vượt biên và những câu chuyện đời sống bí ẩn thu hút lượng người xem khổng lồ tại Hàn Quốc.",
-      "Đặc thù khán giả Hàn Quốc: Rất nhạy cảm với các câu chuyện lịch sử hiện đại, tính thảo luận trong phần comment cực kỳ sôi nổi.",
-      "Kỹ thuật dựng video theo phong cách phim tài liệu phóng sự: Dùng gam màu lạnh (Cold Cinematic), ảnh đen trắng kết hợp âm thanh hiện trường.",
-      "Bảo vệ kênh lâu dài bằng cách tránh các chủ đề chính trị nhạy cảm trực diện, chỉ tập trung vào câu chuyện số phận con người."
+      "Tác giả share một ngách rất mới ở thị trường Hàn Quốc: kênh lập ngày 4/11, cách đây chưa tới 1 tháng, mới 10 video nhưng view phổ biến rất cao.",
+      "Nội dung đưa tin xấu về Triều Tiên theo kiểu giật tít; người Hàn ghét Triều Tiên nên bấm xem nhiều, thumbnail cũng thu hút.",
+      "Kênh đã bật kiếm tiền; cách edit: khoảng 1 phút đầu ghép nhiều video để giữ chân người xem, sau đó ghép ảnh.",
+      "Cảnh báo chính sách YouTube đang quét gắt: không để một video chỉ một ảnh chạy hết hoặc ảnh lặp đi lặp lại vì dễ bị đánh sử dụng lại nội dung, nội dung không trung thực hoặc trùng lặp, dẫn tới die kênh hoặc tắt kiếm tiền; nên ghép nhiều ảnh kết hợp video.",
+      "Cách tự viết prompt và tự trend nằm trong video cập nhật ngày 8/8; nên xem các video Pro và video bên dưới theo thứ tự từ dưới lên."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước khai thác ngách tin tức chiến sự và phân tích địa chính trị toàn cầu",
@@ -7228,11 +7228,11 @@
     "target_market": "🌐 Ngoại / 🇺🇸 Mỹ",
     "market_code": "GLOBAL",
     "key_takeaways": [
-      "Key Triết lý Khắc kỷ (Stoicism) là một trong những ngách evergreen bền vững nhất YouTube với lượng tìm kiếm ổn định quanh năm và giá trị lưu trữ bài học cao.",
-      "Kịch bản dựa trên các danh ngôn và bài học đắt giá của Marcus Aurelius, Seneca, Epictetus về buông bỏ, rèn luyện ý chí và đối diện nghịch cảnh.",
-      "Giọng đọc truyền cảm, nhịp đọc chậm rãi (105-115 WPM) tạo không gian chiêm nghiệm và thư giãn tinh thần sâu sắc cho người nghe.",
-      "Hình ảnh tượng đá cẩm thạch La Mã cổ đại kết hợp hiệu ứng khói sương và ánh sáng kịch tính mang lại cảm giác tri thức vượt thời gian.",
-      "Video dài trên 60 phút có thời gian giữ chân (Watch time) ấn tượng, phù hợp người nghe lúc làm việc, học tập hoặc trước khi đi ngủ."
+      "Video hướng dẫn dựng chi tiết một video ngách triết lý Khắc kỷ trên CapCut; cách làm áp dụng được cho các key có dạng tương tự.",
+      "Phần voice mẫu là lời triết lý sống: đến một độ tuổi phải bỏ đi 4 thứ (tiệc tùng vô nghĩa, người không yêu bạn, họ hàng coi thường bạn, bạn bè giả dối) và giữ lại 4 thứ (tự tin, lòng nhân hậu, khí phách, sự kiên cường).",
+      "CapCut bước 1-2: đưa file voiceover và kịch bản vào timeline, cắt khoảng lặng thừa, rồi chèn ảnh tượng đá cổ đại và video thiên nhiên chuyển động chậm khớp từng câu thoại.",
+      "CapCut bước 3-4: thêm hiệu ứng zoom in/out chậm và chuyển cảnh mờ dần (dissolve/fade); chèn nhạc nền không lời sâu lắng, chỉnh âm lượng nhạc nền ở mức -18 dB đến -22 dB.",
+      "CapCut bước 5: tạo phụ đề tự động tiếng Anh/Việt với font trang nhã, rà soát tổng thể rồi xuất video 4K hoặc 1080p."
     ],
     "key_timestamps": [
       {
@@ -7608,11 +7608,11 @@
     "target_market": "🇨🇳 Trung",
     "market_code": "VN",
     "key_takeaways": [
-      "Ngách hoạt hình Douyin ngắn Trung Quốc có kho tàng tài nguyên khổng lồ, tính giải trí cực cao và khả năng giữ chân khán giả vượt trội.",
-      "Chiến lược bán content kết hợp reup: Lấy khung hình hoạt hình gốc làm nền, nhưng lồng ghép cốt truyện hoàn toàn mới bằng tiếng Việt hoặc tiếng Anh.",
-      "Cần chọn lọc các video hoạt hình 3D phong cách chibi hoặc truyện cổ tích huyền huyễn đang đứng đầu bảng xếp hạng Douyin.",
-      "Kỹ thuật dựng đảo phân cảnh và đan xen bình luận phân tích giúp video vừa vượt qua kiểm duyệt bản quyền vừa thu hút người xem.",
-      "Quy trình sản xuất A-Z có thể tinh gọn thành dây chuyền: Cào nguồn -> Tách audio -> Dựng lại -> Lồng tiếng AI -> Xuất bản."
+      "Ngách hoạt hình Douyin/câu kéo (phim ngắn nhiều tập, có bộ tới hơn 300-400 tập) quay ngày 11/3/2026: hai kênh đối thủ đang nổ, một video 3 giờ trước đạt 99.000 lượt xem; chỉ vài video như vậy đã đủ điều kiện bật kiếm tiền, người Việt rất thích xem dạng này.",
+      "Kênh gốc lấy nguồn từ Douyin: số tim tính theo vạn (1 vạn = 10.000), nhiều video 3-5 vạn tim; tạo tài khoản Douyin, xem và like nhiều video cùng ngách để hệ thống tự đề xuất thêm kênh và video tương tự.",
+      "Kênh đối thủ ghép nhiều tập (tập 1 đến tập 5 hoặc 1 đến 10) thành một video dài rồi đăng, nên view và lượng đăng ký cao; kênh còn có logo và tên kênh chạy quanh video.",
+      "Quy trình edit trên CapCut: tải 2 video mẫu, giảm tốc về 0.7, trích phụ đề tiếng Trung, xuất SRT, dùng tool dịch và tool tạo giọng đọc (tắt dự án CapCut, chọn đúng thư mục lưu), sau đó đưa tốc độ lên khoảng 1.5, hạ âm gốc xuống khoảng -16 đến -18 dB thay vì tắt hẳn.",
+      "Tác giả nói mọi kênh sub/reup/review phim đều dùng tool, không ai làm thủ công; video 9-10 tiếng chỉ mất vài phút xử lý sau bước khởi động; có gói vĩnh viễn và gói thuê của tool dịch và tool voice."
     ],
     "edit_sop": {
       "primary": "SOP Sản xuất & Edit: HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN",
@@ -7960,11 +7960,11 @@
     "target_market": "🇨🇳 Trung",
     "market_code": "CN",
     "key_takeaways": [
-      "Bộ 6 tool tải và cắt ghép miễn phí là vũ khí cốt lõi giúp tối ưu hóa 80% thời gian sản xuất cho anh em làm Reup/Bán content.",
-      "Tool Bilibili & Douyin chuyên dụng cho phép tải video gốc ở bitrate cao nhất mà hoàn toàn sạch logo, ID watermark.",
-      "Tool cắt ghép tự động hỗ trợ băm nhỏ video, xáo trộn thứ tự cảnh và thay đổi hash MD5 của file chỉ trong vài giây.",
-      "Sử dụng tool quay màn hình chuyên dụng để capture các đoạn highlight trực tiếp khi nguồn không hỗ trợ tải trực tiếp.",
-      "Luôn kiểm tra và làm sạch metadata ẩn (EXIF/Creation date) của file video phôi trước khi import vào phần mềm dựng."
+      "Tác giả chia sẻ miễn phí bộ 6 tool gồm tool cắt ghép clip, tool quay màn hình và các tool tải video từ nền tảng khác ở chất lượng Full HD.",
+      "Dùng web tải thông thường thường chỉ tải được âm thanh hoặc video bị đứt; các tool này (ví dụ tool Bilibili) tải được đầy đủ.",
+      "Khi tải có thể chọn đường dẫn lưu file và chọn chất lượng cao nhất, tuỳ theo video gốc.",
+      "Toàn bộ link tải nằm ở phần mô tả dưới video; bấm tải về rồi giải nén bằng WinRAR là dùng được.",
+      "Tool ghép clip chạy rất nhanh và tool quay màn hình có thể dùng thử ngay sau khi giải nén."
     ],
     "edit_sop": {
       "primary": "SOP Sản xuất & Edit: NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
@@ -8290,11 +8290,11 @@
     "target_market": "🇨🇳 Trung",
     "market_code": "CN",
     "key_takeaways": [
-      "Ngách câu cá vạn cân Bilibili có lượng người xem cực lớn, tỷ lệ giữ chân khán giả cao nhờ tính kịch tính và thị giác mãn nhãn.",
-      "Cần theo dõi khung giờ vàng đăng video của các idol câu cá Trung Quốc (thường từ 18h - 20h giờ Bắc Kinh) để cào video sớm nhất.",
-      "Sử dụng tool tải video Bilibili chất lượng cao 1080p/4K không dính watermark gốc để làm tài nguyên phôi sạch.",
-      "Cắt bỏ toàn bộ đoạn dạo đầu chậm, đưa cú giật cần hoặc cá khủng nhảy mặt nước lên ngay 3 giây đầu tiên làm siêu hook.",
-      "Lồng tiếng bình luận bằng tiếng Việt hoặc tiếng Anh, biến tấu lời thoại hài hước hoặc kịch tính thay vì giữ nguyên audio gốc."
+      "Kênh gốc nằm trên Bilibili vì Bilibili cập nhật dạng video câu cá nhanh nhất; bên Douyin không cập nhật.",
+      "Lúc quay (tối ngày 27) kênh gốc đã ra tập 41, hôm sau (ngày 28) sẽ ra tập 42.",
+      "Kênh gốc cập nhật video vào khoảng 15h20 đến 15h30 (3h20-3h30 chiều); nên vào canh và reload liên tục để lấy video mới và làm nhanh nhất, tác giả đã test cách này.",
+      "Có thể tải bằng tool miễn phí do tác giả chia sẻ hoặc dùng web, nhưng gần như không có web tải tốt; cách edit giống các dạng reup trước.",
+      "Link Bilibili của kênh gốc để ở phần mô tả; tác giả có video hướng dẫn quy trình edit dạng reup trên kênh YouTube của mình."
     ],
     "edit_sop": {
       "primary": "SOP Sản xuất & Edit: NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN C",
@@ -8367,11 +8367,11 @@
     "target_market": "🇯🇵 Nhật Bản",
     "market_code": "JP",
     "key_takeaways": [
-      "Vấn nạn quét trùng lặp AI năm 2026: Dùng video stock Pexels/Pixabay miễn phí hoặc video AI chuyển động sơ sài sẽ bị YouTube quét lỗi Sử dụng lại nội dung (Reused Content) hoặc Nội dung thiếu tính xác thực (Inauthentic Content).",
-      "Giải pháp tự quay B-roll đời thật (Original B-roll): Tự dùng điện thoại quay bể cá cảnh bơi lội, bàn tay gõ phím máy tính, cảnh pha trà... làm nền mờ (Background B-roll) để tạo ra mã hash video hoàn toàn mới 100%.",
-      "Giải mã kênh cổ Thái Lan làm content Nhật @ธรรมสุข-2275: Tên hiển thị 'スカッと感動物語', tận dụng kênh cổ Thái Lan (handle @ธรรมสุข-2275) để đăng nội dung Nhật Bản đạt 7.66K sub và hơn 3.4M view mà không bị Sandbox.",
-      "Quy trình xử lý hình ảnh & độ tương phản: Hạ độ sáng video nền xuống -10% đến -15%, tăng độ mờ viền (Vignette) và đặt chữ phụ đề tiếng Nhật to rõ màu xanh viền trắng ở giữa để tăng khả năng đọc lướt.",
-      "Chiến lược tận dụng Kênh Cổ (Aged Channel): Ưu tiên các kênh tạo từ 2010 - 2018 có độ trust cao, kết hợp giữ lại file project dựng video làm bằng chứng nếu cần thực hiện video kháng nghị (Appeal Video)."
+      "Ngách drama gia đình thị trường Nhật: kênh dùng kênh cổ 2010, mới 14 video (làm 5 ngày) mà có video hơn 80k và hơn 50k view trong 2 ngày; tác giả lưu ý drama dễ bị YouTube ghét vì thường là chuyện không có thật hoặc giật tít, nên phải kiên trì và làm đúng cách, và video có cái nổ cái chỉ vài nghìn view.",
+      "So sánh 3 kênh Nhật: kênh 1 lấy video tự nhiên về giảm độ sáng và chạy phụ đề, theo tác giả mới ở mức tạm được và vẫn hên xui; kênh 2 làm hơn 100 video, tự quay hồ cá và bàn tay gõ phím làm nền, dùng giọng AI, đang bật kiếm tiền, là cách an toàn nhất nên bám theo.",
+      "Kênh 3 (kênh cổ 2009, đã hơn 4k sub, làm hơn 1 tháng) chỉ tự quay tay gõ phím còn video nền lấy từ nguồn miễn phí như Pexels; cách này vẫn được nhưng dùng nhiều dễ dính lỗi sử dụng lại nội dung, kháng được nhưng tốn thời gian.",
+      "Nếu làm dạng này thì tự quay cảnh đẹp (hồ cá, tay gõ phím...) rồi ghép vào, giọng đọc dùng AI; kịch bản lấy từ kênh đối thủ hoặc từ thị trường Hàn cũng làm drama nhiều rồi xào nấu lại; cách edit áp dụng được cho cả ngách triết lý, sức khỏe, Phật pháp.",
+      "Ngách sư Phật pháp Nhật (lời dạy của Kukai): kênh làm 1 tháng chỉ vài trăm view nhưng 2-3 tuần gần đây mới nổ; đừng bỏ khi những video đầu không có view, kiên trì ít nhất khoảng 10 đến 15 video."
     ],
     "edit_sop": {
       "primary": "Tự quay B-roll thật (bàn tay gõ phím, hồ cá, phong cảnh nét) + Giảm độ sáng video nền + Chèn phụ đề nổi bật",
@@ -8443,11 +8443,11 @@
     "target_market": "🇯🇵 Nhật",
     "market_code": "JP",
     "key_takeaways": [
-      "Ngách truyện ngắn đời thường và hồi ức thanh xuân thị trường Nhật Bản trên kênh @あの年の空: Đầy ắp cảm xúc hoài niệm của thế hệ Showa.",
-      "Thế hệ người cao tuổi Nhật Bản (sinh ra trong thời kỳ Chiêu Hòa - Showa) có tình cảm đặc biệt thiêng liêng với những ký ức thời thơ ấu, trường làng xưa và tình làng nghĩa xóm.",
-      "Kịch bản xây dựng theo phong cách tản văn tự sự ngắn 8 - 12 phút, mỗi video là một mảnh ký ức về một kỷ niệm xưa cũ.",
-      "Hình ảnh mang màu sắc phim nhựa cũ (Vintage/Retro 70s - 80s) với ánh nắng vàng chiều tà và những con ngõ nhỏ Tokyo.",
-      "Khán giả thường để lại những bình luận tâm sự rất dài kể lại cuộc đời mình, giúp tăng tương tác và đẩy mạnh đề xuất thuật toán."
+      "Tác giả share một ngách thị trường Nhật Bản: kênh đã hơn 100 video nhưng view gần đây trung bình trên 10k vì kênh vừa chuyển chủ đề sau khi trước đó làm sai ngách.",
+      "Kênh chuyển sang ngách gia đình (chuyện con trai, con dâu, mẹ chồng) với kịch bản giật gân nên view lên đều.",
+      "Có thể bấm chuột phải để dịch tiêu đề và nội dung sang tiếng Việt cho dễ hiểu; phần tạo kịch bản và lấy kịch bản đối thủ tác giả đã hướng dẫn, bài này chỉ còn share key.",
+      "Kênh gốc chỉ dùng một ảnh cho cả video; tác giả khuyên tạo nhiều ảnh hoặc ghép thêm video miễn phí vì YouTube gần đây xử lý chặt kiểu một ảnh.",
+      "Video một ảnh dễ bị quét lỗi sử dụng lại/trùng lặp nội dung và tắt kiếm tiền; kháng nghị thường về được (khoảng 90%) nhưng mất nhiều thời gian và công sức nên cần làm kỹ ngay từ đầu."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước dựng video chuyện kể hoài niệm (Stories) thị trường Nhật Bản",
@@ -8593,11 +8593,11 @@
     "target_market": "🇰🇷 Hàn / 🇺🇸 Mỹ",
     "market_code": "KR",
     "key_takeaways": [
-      "Thị trường Hàn Quốc và Mỹ (US) là hai mỏ vàng có doanh thu RPM cao nhất thế giới trong mảng chăm sóc sức khỏe và thể dục dưỡng sinh.",
-      "Kênh Doctor Lee và Light Yoga with Natalie chứng minh rằng khán giả phương Tây và Hàn Quốc rất chuộng các bài tập đơn giản tại nhà.",
-      "Nội dung tập trung vào các động tác giãn cơ, bài tập giảm mỡ bụng, bài tập cho người ngồi văn phòng với hướng dẫn cực kỳ rõ ràng.",
-      "Hình ảnh video cần sự tối giản, sạch sẽ, tone màu sáng (pastel/white) tạo cảm giác an tâm và khoa học.",
-      "Hợp tác làm kênh cho 2 thị trường này mang lại dòng tiền ngoại tệ USD vững chắc nếu giải quyết được rào cản ngôn ngữ chuẩn bản địa."
+      "Tác giả share ngách sức khỏe nhỏ ở thị trường Hàn Quốc: dùng kênh lập từ 1 năm trước, mới khoảng 4 video nhưng view rất cao, tiêu đề nói về trái cây, đồ ăn thức uống.",
+      "Ngách ở thị trường US: kênh yoga cho trẻ em đang rất trend, view chủ yếu từ châu Âu và các nước nói tiếng Anh, áp dụng công thức video dài đúng 4 phút 50 giây.",
+      "Dạng yoga trẻ em làm thủ công hơn nên hợp với người học thiết kế hoặc làm ghép hình; vẫn có thể dùng AI bằng cách chụp màn hình rồi tạo lại như hướng dẫn hôm trước.",
+      "Về hợp tác kênh: tác giả vừa build một kênh reup ghép hình Trung Quốc chưa đầy 1 tháng, test ngách lên rất cao và đã đủ lượng nhưng chưa đăng ký kiếm tiền; ai muốn hợp tác sẽ được giao kênh và nguồn rồi chia phần.",
+      "Cũng có thể mua đứt kênh (tác giả tặng thêm nguồn kênh đối thủ); người muốn mua điền form Google và liên hệ qua Zalo, không điền nếu không có ý định mua; giải thích rõ hơn trong video 7h tối ngày 7/3 trên YouTube của tác giả."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tối ưu hình ảnh và âm thanh theo tiêu chuẩn bài học",
@@ -8804,11 +8804,11 @@
     "target_market": "Nhật Bản",
     "market_code": "JP",
     "key_takeaways": [
-      "Tiềm năng doanh thu thị trường Nhật Bản: Doanh thu thực tế 16 triệu VNĐ/ngày (~$650/ngày) nhờ RPM Nhật dao động từ $6.00 đến $14.00, cao gấp 10-15 lần view Việt.",
-      "Ngách Động vật hoang dã (Wildlife Survival): Khai thác chủ đề ký sinh trùng trên động vật lớn (voi, hà mã, chim bắt bọ) thu hút sự tò mò và cảm giác thỏa mãn của người xem.",
-      "Ứng dụng AI tạo video chuyển động thực: Sử dụng công cụ AI (Veo/Kling) tạo các chuyển động vi mô chân thực: chim mổ bọ, tai voi vẫy, mặt nước gợn sóng.",
-      "Lồng tiếng phong cách tài liệu: Giọng đọc tiếng Nhật trầm ấm, trang nghiêm, phong cách tự sự của đài NHK giúp giữ chân người nghe xuyên suốt 15-20 phút.",
-      "Tái sử dụng tài sản đa quốc gia: Video động vật không chứa văn hóa địa phương nên dễ dàng nhân bản sang Hàn Quốc, Đức, Mỹ bằng cách đổi voice và phụ đề."
+      "Kênh của một học viên gói Pro, mới bật kiếm tiền, làm thị trường Nhật theo hướng nhân bản thị trường từ Việt sang Nhật (video quay chiều 14/6).",
+      "Trước đó doanh thu chỉ hơn 1 triệu đồng; nhờ nhân bản đúng ngách mà view nổ, một ngày hơn 16 triệu đồng; RPM cả kênh khoảng 108.000 đồng/1.000 view (khoảng 4 USD).",
+      "Một video đã hơn 300k view với doanh thu hơn 33 triệu đồng (chưa cập nhật hết ngày 12-13), RPM video khoảng 113.000 đồng.",
+      "Thời gian xem trung bình của dạng chủ đề này chỉ 6-7 phút; nếu làm ngách video dài (khoảng 1 giờ) giữ chân trên 10-20 phút thì RPM còn gấp đôi.",
+      "Tư duy nhân bản thị trường áp dụng được cho mọi thị trường: Việt sang Nhật, Nhật sang Hàn, Hàn sang US, US sang Nhật..."
     ],
     "edit_sop": {
       "primary": "SOP Dựng video tài liệu động vật hoang dã thị trường Nhật",
@@ -9343,11 +9343,11 @@
     "target_market": "Việt Nam",
     "market_code": "VN",
     "key_takeaways": [
-      "Mô hình Bán Content (Semi-reup): Tận dụng nguồn video tư liệu Douyin/Bilibili đời sống, kết hợp kịch bản viết lại 100% và giọng lồng tiếng triết lý người già.",
-      "Hiệu quả doanh thu sau 10 ngày: Kênh đạt doanh thu ổn định ngay sau khi bật kiếm tiền nhờ tệp khán giả trung niên xem hết video từ đầu đến cuối.",
-      "Kỹ thuật né quét hình ảnh: Lật gương (flip), cắt zoom 105-110%, chỉnh màu sắc (color grading), chèn overlay hạt bụi và khung viền nhẹ để phá hash video gốc.",
-      "Lọc sạch metadata nguồn: Sử dụng FFmpeg strip toàn bộ EXIF, thẻ nguồn và re-encode ở bitrate 1080p chuẩn.",
-      "Tránh gậy bản quyền: Chỉ lấy các clip đời sống nông thôn, kỹ năng dân gian không có logo nhà đài hay watermark độc quyền."
+      "Kênh thị trường view Việt dành cho người cao tuổi (trên 60, trên 65 tuổi), bật kiếm tiền ngày 7/5 và bắt đầu có tiền từ ngày 8/5.",
+      "Sau đúng 10 ngày, doanh thu trung bình khoảng 1 triệu đồng mỗi ngày; 2 ngày gần đây tăng lên hơn 2 triệu đồng (số liệu đổi sang VND, YouTube cập nhật khoảng 2 ngày một lần).",
+      "Khán giả chủ yếu là Việt Nam, có một ít view Hoa Kỳ nhưng không đáng kể.",
+      "Tác giả show kênh thực chiến không che; video Pro hướng dẫn full quy trình bán content dài hơn 30 phút (31 phút) gồm cách tạo kịch bản, nguồn tài nguyên, edit video và âm thanh.",
+      "Video hướng dẫn Pro nằm ở mục mới cập nhật; bản đang xem là bản miễn phí nên làm mờ phần chi tiết."
     ],
     "edit_sop": {
       "primary": "SOP Biên tập bán content né quét bản quyền visual",
@@ -9920,11 +9920,11 @@
     "target_market": "Việt Nam",
     "market_code": "VN",
     "key_takeaways": [
-      "Phân tích case study cứu kênh $1.700: Kênh truyện audio bị tắt kiếm tiền do dính lỗi sử dụng lại nội dung nhưng đã kháng nghị và khôi phục thành công.",
-      "Kỹ thuật thay thế Audio & Visual: Thay toàn bộ nhạc nền miễn phí bản quyền mới, chèn sóng âm visualizer độc quyền, đổi thumbnail và mô tả chuẩn SEO.",
-      "Làm mới kho tài nguyên kịch bản: Hướng dẫn khai thác tệp Google Sheets tài nguyên truyện audio được cấp quyền trong khóa học để viết lại lời thoại.",
-      "Giữ chân khán giả bằng giọng đọc biểu cảm: Kỹ thuật chọn giọng AI có độ trầm bổng, ngắt nghỉ tự nhiên, kết hợp tiếng thở nhẹ để qua mặt bộ lọc AI Audio của YouTube.",
-      "Duy trì tần suất đăng tải sau khi cứu: Đăng 1 video chất lượng mỗi ngày vào khung giờ 19h-21h để kéo lại đề xuất cho kênh."
+      "Kênh reup ghép hình (nguồn Trung và Việt) của một học viên bị tắt kiếm tiền vì lỗi \"sử dụng lại nội dung\" (thư báo ngày 31/8); sau khi kháng nghị ngày 4/9 kênh được khôi phục.",
+      "Lỗi \"sử dụng lại nội dung\"/trùng lặp nội dung rất phổ biến ở kênh reup và bán content, thường hiện ra ngay lúc kênh đủ điều kiện và bấm đăng ký bật kiếm tiền; cách xử lý là gửi kháng nghị.",
+      "Tác giả cho biết đã nhận kháng nghị cho nhiều kênh và tỷ lệ kháng nghị thành công khoảng 99%.",
+      "Kênh này đã bật kiếm tiền hơn 3-4 tháng và thu nhập hơn 1.000 USD, cho thấy làm reup vẫn kiếm được tiền.",
+      "Học viên gặp lỗi sử dụng lại nội dung hoặc trùng lặp nội dung có thể liên hệ tác giả để được hỗ trợ kháng nghị."
     ],
     "edit_sop": {
       "primary": "SOP Cải tạo và khôi phục kênh audio bị tắt kiếm tiền",
@@ -10265,11 +10265,11 @@
       }
     ],
     "key_takeaways": [
-      "📌 [Sức mạnh của ngách tâm sự người già Việt Nam]: Kênh mới chỉ 8 video nhưng đạt hơn 3.1 triệu lượt xem nhờ đánh trúng tệp khán giả người lớn tuổi, nội trợ và trung niên có thói quen nghe kể chuyện liên tục 15-30 phút khi làm việc nhà hoặc trước khi đi ngủ.",
-      "📌 [Cấu trúc cốt truyện chạm đáy cảm xúc]: Các video triệu view đều xoay quanh mâu thuẫn gia đình muôn thuở (mẹ chồng - nàng dâu, con cái bất hiếu, sự cô độc khi về già), đẩy kịch tính lên cao trào ở 2 phút đầu và kết lại bằng bài học thức tỉnh lương tâm.",
-      "📌 [Công thức Bán Content 70/30 né quét AI]: Giữ lại 70% mạch kịch tính và bài học cốt lõi từ các câu chuyện tâm sự có thật trên báo chí/mạng xã hội; viết lại 30% câu từ mở đầu, đổi tên nhân vật, bối cảnh địa phương và đại từ xưng hô thân mật.",
-      "📌 [Phong cách đóng gói Visual & Thumbnail]: Không dùng ảnh 3D bóng bẩy; dùng hình ảnh đời thường mộc mạc, gam màu trầm ấm (ảnh bữa cơm gia đình nông thôn, dáng mẹ già ngồi tựa cửa) kèm dòng tiêu đề giật tò mò đạo đức gia đình.",
-      "📌 [Cấu hình giọng đọc thuyết minh]: Dùng voice Việt trầm ấm (Ngọc Huyền hoặc Minh Quang trên ElevenLabs/CapCut), hạ tốc độ đọc xuống 0.95 để người già nghe rõ từng từ, lồng nhạc nền piano/guitar không lời âm lượng -26dB."
+      "Ngách tâm sự/ngoại tình dành cho người cao tuổi (U60, U70 trở lên) ở thị trường Việt: lúc quay kênh mới chỉ 8 video mà view rất cao, có video 1,7 triệu view từ một tháng trước; theo tác giả ở Việt Nam chỉ có một kênh làm dạng này.",
+      "Đây là ngách cực nhỏ: tiêu đề nhắm đúng tệp người già thay vì quét rộng mọi khán giả, từ khóa ngách là ngoại tình ở tuổi 60-65; người già VN xem TV và điện thoại hàng ngày nên tệp này xem rất nhiều.",
+      "Cách làm kịch bản: lấy kịch bản các video của kênh này đưa cho AI để nó viết thêm các câu chuyện khác; giọng đọc kênh mẫu là giọng AI (cờ lon); view Việt dễ, quan trọng là ý tưởng và kịch bản.",
+      "Kênh thứ hai dùng nhân vật nổi tiếng là bác Lại Văn Sâm: tác giả cảnh báo làm sai sự thật, xuyên tạc hay ghép quảng cáo cờ bạc bằng AI có thể bị kiện và dính pháp lý ở thị trường Việt.",
+      "Kênh thứ ba nói về con cái bất hiếu và cảnh già nương tựa; tác giả chia sẻ để tham khảo, làm hay không tùy mỗi người, nhưng nên cẩn thận khi làm ở thị trường Việt."
     ],
     "edit_sop": {
       "primary": "Quy trình sản xuất video tâm sự người cao tuổi Việt Nam chuẩn AVD > 50%",
@@ -10434,11 +10434,11 @@
       }
     ],
     "key_takeaways": [
-      "📌 [Quy trình đóng gói Claude Skill chuẩn]: Để Claude viết kịch bản tiếng Hàn tự nhiên và sâu sắc, phải nạp đủ dữ liệu từ 2-3 kênh đối thủ hàng đầu (tiêu đề, thẻ tag, mô tả, kịch bản 4 video cao view nhất) thay vì chỉ ra lệnh chung chung.",
-      "📌 [3 Chế độ vận hành của Skill]: Đóng gói Skill thành 3 chức năng độc lập: Chế độ 1 tự động đề xuất 10-20 chủ đề theo mùa; Chế độ 2 viết kịch bản chi tiết từ từ khóa cho trước; Chế độ 3 bán content 70/30 từ kịch bản đối thủ.",
-      "📌 [Nguyên tắc New Chat trong Claude]: Mỗi lần viết một kịch bản mới bắt buộc phải mở một đoạn chat mới (New Chat) và gọi tên Skill, không viết dồn nhiều kịch bản vào một phiên chat cũ để tránh hiện tượng loãng context và suy giảm chất lượng.",
-      "📌 [Bí quyết chỉnh ElevenLabs tiếng Hàn]: Bắt buộc dùng model Multilingual v2 (11MV2); nếu chọn nhầm model v1 sẽ không phát âm được tiếng Hàn hoặc chọn model tiếng Việt sẽ bị đọc lơ lớ sang tiếng Thái. Tốc độ lý tưởng là 0.96 và độ ổn định 0.65.",
-      "📌 [Kỹ thuật Edit né quét AI]: Kết hợp footage quay cận cảnh tự nhiên từ Pexels/Pixabay, chu kỳ chuyển cảnh 3-4 giây, hạ volume nhạc nền ASMR xuống -25dB để giữ màng nhĩ người nghe luôn tập trung vào giọng đọc."
+      "Hướng dẫn train Claude làm kịch bản cho ngách sức khỏe nhỏ thị trường Hàn (táo, cà rốt...): copy toàn bộ thông tin 2-3 kênh đối thủ (tiêu đề, thẻ tag kênh, mô tả, thẻ video) và 4 kịch bản của các video cao view nhất (lấy bằng web lấy kịch bản free, lưu bằng Notepad++) rồi dán vào Claude để nó phân tích từng bước.",
+      "Tác giả dùng Claude thay ChatGPT (ChatGPT chỉ để tạo ảnh) và khuyên nâng cấp gói Pro; gói free hầu như không làm được gì.",
+      "Sau khi train, đóng gói thành skill có 3 chế độ: chế độ 1 gợi ý 10 chủ đề (hoặc số lượng tùy chọn như 20); chế độ 2 nhập từ khóa/chủ đề để viết kịch bản; chế độ 3 dán kịch bản và tiêu đề video cao view của đối thủ để viết lại theo kiểu bán content 70%.",
+      "Mỗi kịch bản mới phải mở chat mới và gọi skill, không viết dồn vào chat cũ vì chất lượng sẽ kém; tác giả lưu ý AI mặc định hạn chế việc bám sát nội dung người khác nên phải train theo cách này thì mới ra được.",
+      "Voice ElevenLabs qua tool của tác giả: phải chọn đúng model giống trên web (model 11MV2); chọn nhầm model (như model tiếng Việt) giọng có thể đọc ra tiếng Thái; thông số tốc độ 0.96 và ổn định phải giống web và tích vào ô dùng voice settings thì tool mới nhận."
     ],
     "edit_sop": {
       "primary": "Quy trình đóng gói và vận hành Claude Skill sản xuất video dưỡng sinh Hàn Quốc",
@@ -10520,11 +10520,11 @@
       }
     ],
     "key_takeaways": [
-      "📌 [Ngách 1 - Làm vườn mùa thu & cây hoa lâu năm]: Kênh mới tạo năm 2023, bắt đầu đăng video 13 ngày trước với 8 video nhưng đều đạt 100K - 200K+ views nhờ đón đúng thời điểm chuyển giao thời tiết mùa thu tại Hàn Quốc.",
-      "📌 [Tính cấp thiết thời vụ kích thích CTR]: Tiêu đề dạng \"11 loại hoa lâu năm bạn nhất định phải cắt tỉa trước cuối tháng 9\" tạo cảm giác khẩn cấp (FOMO) cực mạnh cho đối tượng người lớn tuổi có ban công hoặc vườn ngoại ô.",
-      "📌 [Ngách 2 - Triết học lượng tử & bí mật cơ thể người]: Kênh tận dụng đòn bẩy kênh cổ ngâm từ năm 2018, đăng 6 video đầu tiên và lập tức được đề xuất mạnh nhờ khai thác hình tượng học giả nổi tiếng (Richard Feynman) kết hợp sinh học cơ thể dưới lăng kính triết học.",
-      "📌 [Chiến lược Bán Content Cross-Market từ Mỹ sang Hàn]: Lấy ý tưởng và kịch bản từ các video khoa học/triết học triệu view tại thị trường Mỹ, dịch sang tiếng Hàn có trau chuốt kính ngữ ân cần và lồng giọng nam trầm ấm.",
-      "📌 [Kỹ thuật Footage & Âm thanh minh họa]: Với ngách làm vườn, dùng video stock tỉa cành, hoa lá tự nhiên; với ngách triết học vũ trụ, lấy footage thiên hà, mô phỏng tế bào 3D từ Pexels/Pixabay/NASA Media và lồng tiếng ASMR thư giãn."
+      "Ngách 1 thị trường Hàn: làm vườn mùa thu và hoa/cây lâu năm; kênh dùng mail lập năm 2023, mới 8 video, video đầu cách đây 13 ngày, nhiều video hơn 100k view và có video hơn 200k view; kênh đã bật kiếm tiền.",
+      "Tiêu đề bám thời điểm mùa thu (ví dụ '11 loại hoa lâu năm nhất định phải cắt tỉa trước cuối tháng 9', '11 loại cây lâu năm') nên rất hợp thời vụ; tác giả thấy ngách trồng cây có nhiều người xem cả ở Việt Nam.",
+      "Về edit: ghép hình ảnh/video AI để minh họa kịch bản nhưng không nên full AI 100%, phải kèm hình ảnh tự nhiên; có thể cho AI học kênh mẫu rồi tạo form, chủ đề, tiêu đề theo yêu cầu.",
+      "Ngách 2 thị trường Hàn: kênh dùng mail 2018, mới 6 video, video đầu cách đây 5 ngày, dùng một nhân vật nổi tiếng người Mỹ làm đại diện để nói về cơ thể con người; nhân vật chỉ là đại diện, ngách khác vẫn làm được.",
+      "Cách làm: dịch tiêu đề sang tiếng Anh rồi tìm trên YouTube các kênh đối thủ bên Mỹ để lấy kịch bản mang sang Hàn (bán content, nhân bản thị trường); giọng đọc AI, nhân vật bị làm mờ để tránh bản quyền, các đoạn cắt lặp lại làm video nền, nền thiên hà vũ trụ lấy từ web video miễn phí."
     ],
     "edit_sop": {
       "primary": "Quy trình triển khai 2 ngách Làm vườn mùa thu & Triết học lượng tử xuyên biên giới",
@@ -10705,11 +10705,11 @@
     "target_market": "🌐 Toàn cầu",
     "market_code": "GL",
     "key_takeaways": [
-      "Lựa chọn nền tảng Web vs App: Bản Web (claude.ai) mang tính ổn định cao nhất, cập nhật tính năng mới nhanh nhất (như Claude Projects, Artifacts, Skills) và dễ quản lý nhiều cửa sổ làm việc song song.",
-      "Gói cước tối ưu cho Creator: Nên dùng gói Claude Pro ($20/tháng); gói Free có giới hạn ký tự và số lượt prompt quá thấp, không đủ khả năng phân tích kịch bản đối thủ dài 30-60 phút.",
-      "Cơ chế tiêu thụ Token và Giới hạn Context: Kịch bản video YouTube dài 8.000 - 15.000 từ tiêu tốn lượng token khổng lồ; nếu dán toàn bộ văn bản một lúc vào 1 chat cũ sẽ nhanh chóng chạm trần giới hạn và bị khóa chat tạm thời 2-4 tiếng.",
-      "Chiến lược tạo New Chat thông minh: Mỗi khi viết một kịch bản mới hoặc chuyển sang khâu tạo prompt ảnh, bắt buộc phải mở một New Chat riêng biệt để giải phóng bộ nhớ context, giúp Claude phản hồi chuẩn xác mà không bị lú.",
-      "Định hướng xây dựng Custom Prompt & Skills: Claude vượt trội ChatGPT ở khả năng duy trì văn phong mượt mà tự nhiên, không bị sáo rỗng hay dùng từ khuôn mẫu AI nếu được huấn luyện bằng Prompt Master bài bản."
+      "Tác giả giới thiệu Claude AI: truy cập claude.ai trên web, đăng nhập bằng tài khoản Google và chấp nhận điều khoản; có hai phiên bản là web và app.",
+      "Tác giả khuyên tải app (file .exe, máy Mac cũng dùng được) vì app có nhiều tính năng hơn bản web; bản web có chỗ để upload file skill.",
+      "Tác giả đang dùng gói 100 USD/tháng vì làm rất nhiều việc; người làm ít hoặc vừa nên dùng gói 20 USD/tháng, tương tự gói của ChatGPT.",
+      "Dùng càng nhiều thì càng đốt token; chạm ngưỡng sẽ bị khoá khoảng 2 giờ rồi mở lại để làm tiếp.",
+      "Tác giả sẽ ra thêm video hướng dẫn dùng Claude cho mảng YouTube; nên xem video tác giả đăng hôm trước trên YouTube, và ai muốn học sâu hơn có nhiều video hướng dẫn miễn phí."
     ],
     "edit_sop": {
       "primary": "Quy trình thiết lập không gian làm việc Claude AI Pro phục vụ viết kịch bản YouTube chuyên nghiệp",
@@ -10848,11 +10848,11 @@
     "target_market": "🇯🇵 Nhật Bản",
     "market_code": "JP",
     "key_takeaways": [
-      "Nguyên lý Bán Content 70/30 thực chiến: Lấy 70% cốt truyện, thông điệp và nhịp điệu của video đối thủ viral, kết hợp 30% sáng tạo mới về cách diễn đạt, ví dụ thực tế và kết luận để tạo ra kịch bản độc lập.",
-      "Kỹ thuật chia nhỏ kịch bản theo Phần (Parts): Khi xử lý video dài 30-60 phút, Prompt Master phải tự động phân tích và chia kịch bản thành 3-4 phần độc lập, xuất lần lượt để đảm bảo chiều sâu từng phần và không bị cắt ngắn từ ngữ.",
-      "Tạo tiêu đề CTR cao bám sát từ khóa ngách: Tiêu đề mới phải kế thừa 100% từ khóa cốt lõi của đối thủ (ví dụ tên nhân vật triết lý Nhật 【美輪明宏】) đặt ngay đầu dòng, đồng thời tăng cường yếu tố kịch tính để kích thích người xem nhấp chuột.",
-      "Kỹ thuật dựng hình bằng Sóng âm (Audio Waveform): Sử dụng video nền chuyển động nhẹ kết hợp thanh sóng âm nhạc (Audio Visualizer Green Screen 4K) tạo điểm nhấn thị giác liên tục, giúp video có tính tương tác trực quan cao mà không tốn công dựng phim phức tạp.",
-      "Đóng gói Skill chuyên dụng cho ngách Nhật: Đặt tên Skill chuẩn xác (ví dụ Script_Akihiro_Miwa_JP), lưu vào Claude Project để mỗi lần sản xuất chỉ cần dán transcript đối thủ vào là có kịch bản hoàn chỉnh."
+      "Hướng dẫn dùng Claude làm bán content kiểu 70/30: lấy khoảng 70% cấu trúc của kịch bản đối thủ cho AI học, 30% còn lại để AI tự sáng tạo viết thêm; ví dụ ngách triết lý Nhật, kênh mới lập 5/5 (11 ngày trước), chỉ 1-2 video nổ là đủ lượt đăng ký và kiếm tiền.",
+      "Cách nạp dữ liệu: copy data của 2-3 kênh đối thủ (khoảng một nửa số video đã quét) dán vào Claude cùng câu lệnh phân tích kỹ; tác giả dùng model Opus 4.7 (đôi khi Sonnet 4.6); chọn video cao view theo chỉ số VPH, ví dụ video 1,3 triệu view cách 3 tuần, chỉ cần một video để cho AI học.",
+      "Nhân vật nổi tiếng: trong kịch bản đối thủ không dám đặt tên nhân vật vì dễ bị coi là không trung thực, nên chọn phương án ẩn danh (ban đầu để chưa quyết định); chọn viết template kịch bản master trước và chia thành 2 lần gửi lệnh, không gửi một lần vì dễ sai.",
+      "Đóng gói thành skill để lần sau chỉ cần dán kịch bản đối thủ vào; tiêu đề tạo ra dựa trên tiêu đề gốc chứ không copy nguyên, theo kiểu tạo tiêu đề tương tự.",
+      "Edit: kênh đối thủ ghép nhiều video tự nhiên, cắt khoảng 5-6 giây rồi chuyển cảnh, kèm thanh sóng âm thanh chạy trên video; phụ đề lấy bằng CapCut chỉ tương đối, không chính xác 100% nên khi làm thị trường Nhật có thể bị khán giả comment sai."
     ],
     "edit_sop": {
       "primary": "SOP sản xuất video Bán Content triết lý Nhật Bản kết hợp sóng nhạc trực quan né quét Reused Content",
@@ -11403,11 +11403,11 @@
     "target_market": "🇯🇵 Nhật Bản",
     "market_code": "JP",
     "key_takeaways": [
-      "Vấn nạn quét trùng lặp AI năm 2026: Dùng video stock Pexels/Pixabay miễn phí hoặc video AI chuyển động sơ sài sẽ bị YouTube quét lỗi Sử dụng lại nội dung (Reused Content) hoặc Nội dung thiếu tính xác thực (Inauthentic Content).",
-      "Giải pháp tự quay B-roll đời thật (Original B-roll): Tự dùng điện thoại quay bể cá cảnh bơi lội, bàn tay gõ phím máy tính, cảnh pha trà... làm nền mờ (Background B-roll) để tạo ra mã hash video hoàn toàn mới 100%.",
-      "Giải mã kênh cổ Thái Lan làm content Nhật @ธรรมสุข-2275: Tên hiển thị 'スカッと感動物語', tận dụng kênh cổ Thái Lan (handle @ธรรมสุข-2275) để đăng nội dung Nhật Bản đạt 7.66K sub và hơn 3.4M view mà không bị Sandbox.",
-      "Quy trình xử lý hình ảnh & độ tương phản: Hạ độ sáng video nền xuống -10% đến -15%, tăng độ mờ viền (Vignette) và đặt chữ phụ đề tiếng Nhật to rõ màu xanh viền trắng ở giữa để tăng khả năng đọc lướt.",
-      "Chiến lược tận dụng Kênh Cổ (Aged Channel): Ưu tiên các kênh tạo từ 2010 - 2018 có độ trust cao, kết hợp giữ lại file project dựng video làm bằng chứng nếu cần thực hiện video kháng nghị (Appeal Video)."
+      "Ngách drama gia đình thị trường Nhật: kênh dùng kênh cổ 2010, mới 14 video (làm 5 ngày) mà có video hơn 80k và hơn 50k view trong 2 ngày; tác giả lưu ý drama dễ bị YouTube ghét vì thường là chuyện không có thật hoặc giật tít, nên phải kiên trì và làm đúng cách, và video có cái nổ cái chỉ vài nghìn view.",
+      "So sánh 3 kênh Nhật: kênh 1 lấy video tự nhiên về giảm độ sáng và chạy phụ đề, theo tác giả mới ở mức tạm được và vẫn hên xui; kênh 2 làm hơn 100 video, tự quay hồ cá và bàn tay gõ phím làm nền, dùng giọng AI, đang bật kiếm tiền, là cách an toàn nhất nên bám theo.",
+      "Kênh 3 (kênh cổ 2009, đã hơn 4k sub, làm hơn 1 tháng) chỉ tự quay tay gõ phím còn video nền lấy từ nguồn miễn phí như Pexels; cách này vẫn được nhưng dùng nhiều dễ dính lỗi sử dụng lại nội dung, kháng được nhưng tốn thời gian.",
+      "Nếu làm dạng này thì tự quay cảnh đẹp (hồ cá, tay gõ phím...) rồi ghép vào, giọng đọc dùng AI; kịch bản lấy từ kênh đối thủ hoặc từ thị trường Hàn cũng làm drama nhiều rồi xào nấu lại; cách edit áp dụng được cho cả ngách triết lý, sức khỏe, Phật pháp.",
+      "Ngách sư Phật pháp Nhật (lời dạy của Kukai): kênh làm 1 tháng chỉ vài trăm view nhưng 2-3 tuần gần đây mới nổ; đừng bỏ khi những video đầu không có view, kiên trì ít nhất khoảng 10 đến 15 video."
     ],
     "edit_sop": {
       "primary": "Tự quay B-roll thật (bàn tay gõ phím, hồ cá, phong cảnh nét) + Giảm độ sáng video nền + Chèn phụ đề nổi bật",
@@ -11629,11 +11629,11 @@
     "target_market": "🇰🇷 Hàn Quốc",
     "market_code": "KR",
     "key_takeaways": [
-      "Ngách Tôn giáo Kitô giáo Hàn Quốc (@은밀한응답): Kênh mới 34 video nhưng view cực kỳ ổn định và đã bật tính năng Hội viên (Channel Memberships), chứng minh cộng đồng tín đồ Kitô giáo tại Hàn Quốc có độ gắn kết và ủng hộ tài chính rất lớn.",
-      "Ngách Thói quen ăn rau trường thọ (@장수채소습관): Khai thác sâu vào một nhánh hẹp của dinh dưỡng: tác dụng của từng loại rau củ quen thuộc đối với việc phòng chống ung thư và sống thọ.",
-      "Bắt bệnh kênh học viên bị lẹt đẹt 0 view: Phân tích kênh sức khỏe của học viên VIP Pro mới làm 9 video; chỉ ra các chi tiết nhỏ bị xem nhẹ như thumbnail thiếu tương phản, tiêu đề dịch thô cứng và nhạc nền lấn át giọng đọc.",
-      "Thuật toán đánh giá 10 video đầu tiên: Kênh mới cần từ 5 đến 15 video đầu tiên để hệ thống Machine Learning của YouTube dò tìm và phân loại chính xác cụm khán giả mục tiêu; không được nản chí khi thấy ít view ban đầu.",
-      "Sửa lỗi tương phản Thumbnail: Thumbnail phải đọc được rõ ràng trên màn hình điện thoại di động cỡ nhỏ; màu chữ và viền chữ phải tương phản tối thiểu 70% so với nền ảnh."
+      "Ngách tôn giáo/tâm linh Kitô giáo thị trường Hàn: kênh rất mới (video đầu một tháng trước chỉ hơn 700 view), view trung bình vài nghìn, bật cả chức năng hội viên nên chắc chắn đang bật kiếm tiền; video dài khoảng 39 phút, edit giống các ngách triết lý trước (ghép nhân vật với video tự nhiên).",
+      "Giải đáp vụ một số kênh triết lý bị die: tác giả cho rằng YouTube hiện nhẹ hơn 2 tháng trước, nguyên nhân thường là Gmail/kênh mua ngoài rồi lock vào máy bị quét theo đợt, hoặc nội dung giật tít, câu view sai sự thật; không phải do làm người nổi tiếng.",
+      "Phải tự làm thật thì mới rút ra được cách xử lý quét, FOMO nhảy từ ngách này sang ngách khác sẽ không làm được; đọc lại kịch bản đã gen và làm cho sạch.",
+      "Kênh sức khỏe của học viên VIP Pro (9 video, làm từ 8 ngày): video đầu nổ nhưng các video gần đây chỉ vài chục đến vài trăm view, một video 3,2 nghìn; lỗi là làm tạp nhiều ngách (rau củ, trái cây...) thay vì bám vào hai video cao view nhất (19k và 17k view về luyện tập 1 phút mỗi ngày để cải thiện trí nhớ).",
+      "Quy tắc: khi một video nổ thì bám đúng chủ đề đó làm tiếp; kênh mới cần 10-15 video mới phân phối ổn định; tiêu đề có yếu tố cảnh báo gây FOMO; edit chỉ là ghép hình ảnh/video minh họa và phụ đề, quan trọng nhất là kịch bản."
     ],
     "edit_sop": {
       "primary": "Quy trình chuẩn đoán và khắc phục kênh mới bị 0 view / lẹt đẹt thuật toán",
@@ -11782,11 +11782,11 @@
     "target_market": "🇻🇳 Việt Nam",
     "market_code": "VN",
     "key_takeaways": [
-      "Thực tế về ngách Reup kiếm tiền: Reup nội dung Trung Quốc vẫn có thể bật kiếm tiền thành công nếu biết cách chọn ngách hoạt hình nhân văn ngắn và can thiệp biên tập sâu sắc.",
-      "Khai thác nguồn tư liệu Bilibili chất lượng cao: Sử dụng 2 kênh nguồn Bilibili chuyên sản xuất hoạt hình 2D/3D ngắn giàu ý nghĩa giáo dục để làm nguồn tài nguyên thô sạch sẽ.",
-      "Kỹ thuật xóa logo và che watermark Trung Quốc: Hướng dẫn cách làm mờ (Blur) hoặc dùng hiệu ứng phóng to khung hình (Crop) để loại bỏ hoàn toàn logo Bilibili và ID tác giả gốc khỏi video.",
-      "Quy trình dịch phụ đề và lồng tiếng tự động: Sử dụng Tool dịch phụ đề SRT chuyên dụng tích hợp giọng đọc AI tiếng Việt chất lượng cao (giọng Ngọc Huyền) để biến video tiếng Trung thành phim hoạt hình lồng tiếng Việt hấp dẫn.",
-      "Tư duy làm Reup bền vững: Coi Reup là kênh tạo dòng tiền ban đầu để tích lũy vốn và kinh nghiệm; luôn có kế hoạch chuyển dịch sang Bán Content hoặc Content tự sản xuất 100% trong tương lai."
+      "Kênh reup đam mỹ (phim ngắn hoạt hình Trung Quốc) của một học viên nhóm Pro, vừa bật kiếm tiền ngày 9/7; tác giả nhắc ngách reup chỉ kiếm thêm chứ không kiếm nhiều, thumbnail do AI tạo, và chủ kênh muốn nhượng lại kênh (tác giả chỉ làm trung gian kết nối).",
+      "Lấy nguồn từ Bilibili: dùng trình duyệt Cốc Cốc có sẵn nút tải video; kênh có dấu hồng/xám phải trả phí gói thì không tải được full HD, kênh miễn phí thì tải full.",
+      "Quy trình dựng trên CapCut: giảm tốc video xuống 0.8 (hoặc 0.7) để giọng đọc không đè nhau, trích phụ đề tiếng Trung tự động, xuất SRT, dịch bằng tool dịch, rồi tạo voice (giọng Ngọc Huyền); tốc độ voice khoảng 1.5-1.6 ở tool của tác giả, khoảng 1.1 ở VipVoice vì video đã giảm 0.8.",
+      "Âm gốc nên xóa hẳn (nhạc nền hay dính bản quyền); che phụ đề tiếng Trung và logo Bilibili bằng hiệu ứng làm mờ (hoặc chèn logo kênh), chèn phụ đề Việt, tên kênh chạy quanh video và logo; lưu thành mẫu cài sẵn để tập sau chỉ cần import.",
+      "Thumbnail: copy link video, tải ảnh thumbnail gốc bằng tool dịch, dịch tiêu đề để hiểu phim, rồi cho AI tạo ảnh mới dựa trên ảnh gốc."
     ],
     "edit_sop": {
       "primary": "SOP 5 bước Reup hoạt hình Bilibili lồng tiếng Việt né quét bản quyền hình ảnh",
@@ -11935,11 +11935,11 @@
     "target_market": "🇯🇵 Nhật Bản",
     "market_code": "JP",
     "key_takeaways": [
-      "Ngách Xe hơi & Văn hóa lái xe Nhật (@kurumanozokitai): Kênh mới chỉ 4 video nhưng đã nổ hơn 300.000 lượt xem nhờ khai thác những góc nhìn độc lạ về thói quen lái xe và lỗi phổ biến của tài xế.",
-      "Ngách Trí tuệ dân gian người xưa (@昔の人の知恵): Đúc kết những mẹo vặt sinh tồn, bí quyết nấu nướng và bài học sống từ thời cổ xưa của người Nhật Bản.",
-      "Tận dụng Kênh Cổ 2011 để spam video an toàn: Phân tích trường hợp kênh sử dụng tài khoản cổ đăng 2 video/ngày mà không bị bộ lọc thuật toán chặn đứng lưu lượng đề xuất.",
-      "Kỹ thuật tạo Khung viền (Border Frame Overlay): Đóng khung video bằng một viền họa tiết hoặc màu sắc độc quyền (Brand Frame) để thay đổi toàn bộ tỷ lệ khung hình và mã băm thị giác (Visual Hash) của video.",
-      "Bổ sung nguồn content Sức khỏe chuyên sâu từ Mỹ: Giới thiệu 2 kênh bác sĩ uy tín tại Mỹ (@DoctorJohnMeyers, @EricBennettMD) làm nguồn tư liệu khoa học chuẩn xác để xào nấu kịch bản sức khỏe cho các thị trường châu Á."
+      "Ngách xe điện/ô tô Nhật: kênh dùng kênh cổ 2011, video đầu cách đây 1 ngày, spam 2 video/ngày mà vẫn nổ; tiêu đề giải thích về biến động xe điện (ví dụ Hyundai bên bờ vực phá sản vì sai lầm chiến lược xe điện) và có từ khóa 'giải thích chi tiết' ở cuối mỗi tiêu đề; nền là video tự quay hoặc nguồn free, lớp trên ghép hình AI.",
+      "Ngách mẹo vặt cuộc sống kiểu 'mẹo xưa' thị trường Nhật: kênh mới 4 video, đăng cách 3 ngày một video, có video hơn 50k view (ví dụ tiêu đề về lọc nước), dùng toàn hình AI; tác giả vẫn khuyên ghép thêm video tự nhiên cho chỉnh chu và an toàn.",
+      "Kênh sức khỏe của học viên bộ rổ (hơn 15 video, hơn 600 sub): video đầu hơn 400 view, video thứ 3 bắt đầu nổ, có video hơn 20k view; kênh mới cần khoảng 10-15 video mới xác định được.",
+      "Phải bám đúng từ khóa của video cao view (ví dụ 'tai biến', 'dấu hiệu ung thư'); video dùng từ khóa không có ai quan tâm (như 'thấp khớp') chỉ vài chục view.",
+      "Cách làm khung viền kênh đối thủ: chụp màn hình khung rồi nhờ ChatGPT tạo ảnh khung giống mẫu, đổi tên kênh và màu (ví dụ từ xanh sang đỏ) rồi ghép các video vào khung khi edit; kênh US dùng để lấy kịch bản nhân bản sang Việt, Nhật, Hàn vì làm thẳng ở US rất khó cạnh tranh."
     ],
     "edit_sop": {
       "primary": "Kỹ thuật tạo khung viền (Frame Overlay) kết hợp đa nguồn tư liệu né quét mã băm video",

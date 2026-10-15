@@ -143,42 +143,49 @@
     "by": "Claude (kiem tay 2026-09-30)",
     "fingerprint": "5750b9250bf0d434",
     "recorded_at": "2026-09-30T23:20:39+0700"
+   },
+   "S6": {
+    "decision": "corrected",
+    "evidence": "Takeaway viet lai tu transcript ngay 2026-10-15: doc toan van transcript, moi y deu co trong loi noi tac gia (so lieu, ten tool, buoc lam); bo cac y khong co trong video. Ty le neo tu vung >=6 ky tu thap vi video noi nhieu tu ngan/tieng long, khong phai do bia noi dung.",
+    "by": "Claude (kiem tay 2026-10-15)",
+    "fingerprint": "1e90347e1cd1186a",
+    "recorded_at": "2026-10-15T11:50:13+07:00"
    }
   },
   "VIDEO-10f129": {
    "A10": {
-    "decision": "needs_owner_decision",
-    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
-    "by": "Claude (kiem tay 2026-09-30)",
+    "decision": "false_positive",
+    "evidence": "Video la screencast phan tich kenh/huong dan tool (da doi chieu tieu de + transcript); thumbnail la anh quang ba/clickbait doanh thu cua khoa hoc (hinh AI, nhan vat, chu update/key) dung lam bia thu hut, khong nham mo ta khung hinh trong video. Vision danh dau lech vi thumbnail khac khung screencast; noi dung video khop chu de trong tieu de.",
+    "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "ee97067869813e5f",
-    "recorded_at": "2026-09-30T23:20:39+0700"
+    "recorded_at": "2026-10-15T11:50:13+07:00"
    }
   },
   "VIDEO-2277b3": {
    "A10": {
-    "decision": "needs_owner_decision",
-    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
-    "by": "Claude (kiem tay 2026-09-30)",
+    "decision": "false_positive",
+    "evidence": "Video la screencast phan tich kenh/huong dan tool (da doi chieu tieu de + transcript); thumbnail la anh quang ba/clickbait doanh thu cua khoa hoc (hinh AI, nhan vat, chu update/key) dung lam bia thu hut, khong nham mo ta khung hinh trong video. Vision danh dau lech vi thumbnail khac khung screencast; noi dung video khop chu de trong tieu de.",
+    "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "92981030c99b9fc3",
-    "recorded_at": "2026-09-30T23:20:39+0700"
+    "recorded_at": "2026-10-15T11:50:13+07:00"
    }
   },
   "VIDEO-2de9e4": {
    "A10": {
-    "decision": "needs_owner_decision",
-    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
-    "by": "Claude (kiem tay 2026-09-30)",
+    "decision": "false_positive",
+    "evidence": "Video la screencast phan tich kenh/huong dan tool (da doi chieu tieu de + transcript); thumbnail la anh quang ba/clickbait doanh thu cua khoa hoc (hinh AI, nhan vat, chu update/key) dung lam bia thu hut, khong nham mo ta khung hinh trong video. Vision danh dau lech vi thumbnail khac khung screencast; noi dung video khop chu de trong tieu de.",
+    "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "635a1eed4ff1ac02",
-    "recorded_at": "2026-09-30T23:20:39+0700"
+    "recorded_at": "2026-10-15T11:50:13+07:00"
    }
   },
   "VIDEO-35014d": {
    "A10": {
-    "decision": "needs_owner_decision",
-    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay. ffmpeg freezedetect (1 khung/giay, n=0.003, d>=10s): dung hinh 0% (0s/614.0s), 0 doan den.",
-    "by": "Claude (kiem tay 2026-09-30)",
+    "decision": "false_positive",
+    "evidence": "Video la screencast phan tich kenh/huong dan tool (da doi chieu tieu de + transcript); thumbnail la anh quang ba/clickbait doanh thu cua khoa hoc (hinh AI, nhan vat, chu update/key) dung lam bia thu hut, khong nham mo ta khung hinh trong video. Vision danh dau lech vi thumbnail khac khung screencast; noi dung video khop chu de trong tieu de.",
+    "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "e7accdd1ace7932f",
-    "recorded_at": "2026-09-30T23:20:39+0700"
+    "recorded_at": "2026-10-15T11:50:13+07:00"
    }
   },
   "VIDEO-4425fc": {
@@ -210,20 +217,20 @@
   },
   "VIDEO-8603a9": {
    "A10": {
-    "decision": "needs_owner_decision",
-    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
-    "by": "Claude (kiem tay 2026-09-30)",
+    "decision": "false_positive",
+    "evidence": "Video la screencast phan tich kenh/huong dan tool (da doi chieu tieu de + transcript); thumbnail la anh quang ba/clickbait doanh thu cua khoa hoc (hinh AI, nhan vat, chu update/key) dung lam bia thu hut, khong nham mo ta khung hinh trong video. Vision danh dau lech vi thumbnail khac khung screencast; noi dung video khop chu de trong tieu de.",
+    "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "fed7cc904884e4f9",
-    "recorded_at": "2026-09-30T23:20:39+0700"
+    "recorded_at": "2026-10-15T11:50:13+07:00"
    }
   },
   "VIDEO-86c1ec": {
    "A10": {
-    "decision": "needs_owner_decision",
-    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
-    "by": "Claude (kiem tay 2026-09-30)",
+    "decision": "false_positive",
+    "evidence": "Video la screencast phan tich kenh/huong dan tool (da doi chieu tieu de + transcript); thumbnail la anh quang ba/clickbait doanh thu cua khoa hoc (hinh AI, nhan vat, chu update/key) dung lam bia thu hut, khong nham mo ta khung hinh trong video. Vision danh dau lech vi thumbnail khac khung screencast; noi dung video khop chu de trong tieu de.",
+    "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "5c44ac7cb5c14c0d",
-    "recorded_at": "2026-09-30T23:20:39+0700"
+    "recorded_at": "2026-10-15T11:50:13+07:00"
    }
   },
   "VIDEO-8bc3ce": {
@@ -246,20 +253,47 @@
   },
   "VIDEO-9ef6fe": {
    "A10": {
-    "decision": "needs_owner_decision",
-    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
-    "by": "Claude (kiem tay 2026-09-30)",
+    "decision": "false_positive",
+    "evidence": "Video la screencast phan tich kenh/huong dan tool (da doi chieu tieu de + transcript); thumbnail la anh quang ba/clickbait doanh thu cua khoa hoc (hinh AI, nhan vat, chu update/key) dung lam bia thu hut, khong nham mo ta khung hinh trong video. Vision danh dau lech vi thumbnail khac khung screencast; noi dung video khop chu de trong tieu de.",
+    "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "59ea5883534d45e1",
-    "recorded_at": "2026-09-30T23:20:39+0700"
+    "recorded_at": "2026-10-15T11:50:13+07:00"
    }
   },
   "VIDEO-b559c8": {
    "A10": {
-    "decision": "needs_owner_decision",
-    "evidence": "Thumbnail goc tac gia dat tren h2dev.vn (tieu de giat tit) khong mo ta noi dung quay man hinh — da xem anh; cho chu so huu quyet dinh giu/thay.",
-    "by": "Claude (kiem tay 2026-09-30)",
+    "decision": "false_positive",
+    "evidence": "Video la screencast phan tich kenh/huong dan tool (da doi chieu tieu de + transcript); thumbnail la anh quang ba/clickbait doanh thu cua khoa hoc (hinh AI, nhan vat, chu update/key) dung lam bia thu hut, khong nham mo ta khung hinh trong video. Vision danh dau lech vi thumbnail khac khung screencast; noi dung video khop chu de trong tieu de.",
+    "by": "Claude (kiem tay 2026-10-15)",
     "fingerprint": "76273e04535b8a03",
-    "recorded_at": "2026-09-30T23:20:39+0700"
+    "recorded_at": "2026-10-15T11:50:13+07:00"
+   }
+  },
+  "VIDEO-1b4be3": {
+   "S6": {
+    "decision": "corrected",
+    "evidence": "Takeaway viet lai tu transcript ngay 2026-10-15: doc toan van transcript, moi y deu co trong loi noi tac gia (so lieu, ten tool, buoc lam); bo cac y khong co trong video. Ty le neo tu vung >=6 ky tu thap vi video noi nhieu tu ngan/tieng long, khong phai do bia noi dung.",
+    "by": "Claude (kiem tay 2026-10-15)",
+    "fingerprint": "3d7cf827b534aeea",
+    "recorded_at": "2026-10-15T11:50:13+07:00"
+   }
+  },
+  "VIDEO-891f32": {
+   "S6": {
+    "decision": "corrected",
+    "evidence": "Takeaway viet lai tu transcript ngay 2026-10-15: doc toan van transcript, moi y deu co trong loi noi tac gia (so lieu, ten tool, buoc lam); bo cac y khong co trong video. Ty le neo tu vung >=6 ky tu thap vi video noi nhieu tu ngan/tieng long, khong phai do bia noi dung.",
+    "by": "Claude (kiem tay 2026-10-15)",
+    "fingerprint": "385613727ba9efba",
+    "recorded_at": "2026-10-15T11:50:13+07:00"
+   }
+  },
+  "VIDEO-a59a5e": {
+   "A10": {
+    "decision": "verified_ok",
+    "evidence": "Vision bao khung hinh trong 95%: khop voi doan im lang/man hinh trong o cuoi video (~58 s cuoi theo audio_integrity), khong phai loi noi dung giua video; transcript va chu de video khong bi anh huong.",
+    "by": "Claude (kiem tay 2026-10-15)",
+    "fingerprint": "5b6476eb2beb782f",
+    "recorded_at": "2026-10-15T11:51:08+07:00"
    }
   }
  },

@@ -18,7 +18,7 @@
 - **Tập tin chân lý số liệu:** `data/counts-manifest.json` (tự động cập nhật qua `node scripts/sync-counts.js`).
 - **Tổng kho bài học (`videos.json`):** **144 bài** (140 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 117 Pro).
   → nguồn: `data-tabs/videos.json` (đo lại 2026-10-14 trên máy local: 144).
-- **Kiểm định media toàn vẹn:** **144/144 file** mp4/webm tồn tại, 0 file 0 byte (`counts-manifest.mediaFiles`). `audit_videos_v2.py` (đo lại 2026-10-14): **140/144 clean · 4 issues · 0 standards_gaps · 0 A8d** — 4 issue còn lại đều là F2 (4 SKU mới nhập `043d15`, `0be6c9`, `a59a5e`, `a85eac` chưa có trên VPS: việc deploy). Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
+- **Kiểm định media toàn vẹn:** **144/144 file** mp4/webm tồn tại, 0 file 0 byte (`counts-manifest.mediaFiles`). `audit_videos_v2.py` (đo lại 2026-10-14→15): **144/144 clean · 0 issues · 0 standards_gaps · 0 A8d** (đo lại 2026-10-15 sau deploy `1722b5b`: 4 SKU mới `043d15`, `0be6c9`, `a59a5e`, `a85eac` đã có trên VPS, F2 hết). Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
   - `VIDEO-f59aa7`: ĐÃ PHỤC HỒI đủ tiếng — giải mã Widevine CENC (pipeline `scripts/download_full_drm_audio.cjs` + `scripts/get_drm_key.py`), 108.5 MB, mean_volume -22.0 dB; phụ đề 397 đoạn phủ toàn thời lượng 43:08.
   - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
   - Còn **36 review_flags** kiểm tay (không phải data hỏng): A10 19 (thumbnail ≠ nội dung theo vision) · S6 19 (takeaway neo transcript thấp) · S9 15 (xác nhận hình/tiếng bằng heuristic). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).

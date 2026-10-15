@@ -1,11 +1,10 @@
 # Cẩm Nang Thực Chiến: Bán Content Ngách Drama Gia Đình & Sức Khỏe View Việt 2026 (Chiến Lược Video Dài > 1 Giờ)
 
 > **Mã bài học:** `VIDEO-d56768`  
-> **Tiêu đề gốc:** Share ngách bán content view Việt mới nhất 09-09-2026  
-> **Chủ đề thực tế:** Phân tích mô hình bán content drama gia đình (mâu thuẫn mẹ chồng - nàng dâu) và ngách sức khỏe người cao tuổi tại thị trường Việt Nam; kỹ thuật dựng video dài trên 1-2 tiếng để tối ưu RPM vượt trội ($1 - $2+); kinh nghiệm chọn từ khóa vàng (Gan vs Thận).  
+> **Chủ đề thực tế:** Phân tích mô hình bán content drama gia đình (mâu thuẫn mẹ chồng - nàng dâu) và ngách sức khỏe tại thị trường Việt Nam; kỹ thuật dựng video dài 1-2 tiếng với RPM ước tính khoảng 1-2; kinh nghiệm chọn từ khóa (Gan vs Thận).  
 > **Thời lượng bài giảng:** 07 phút 17 giây  
 > **Thị trường mục tiêu:** 🇻🇳 Việt Nam (Mã: `VN`)  
-> **Nhóm nội dung:** Bán Content & Phát Triển Kênh / Drama Gia Đình & Xã Hội  
+> **Nhóm nội dung:** Bán Content & Phát Triển Kênh / Drama Gia Đình  
 
 ---
 

@@ -5,6 +5,9 @@
 - **Thông báo "heuristic" ở `player.html`:** đổi cho đúng thực tế (ghi chú bám lời nói của video, chưa kiểm hình ảnh/claim/địa lý). `visual_audio_checked`/`accuracy_status` không đổi (không có bằng chứng hình ảnh lưu trong dự án để xác nhận hay bác bỏ).
 - **Giới hạn:** `check-grounding-md.py` chỉ bắt số ≥3 chữ số/thập phân/%, @handle, tên Latin viết hoa giữa câu; số 1–2 chữ số, chuỗi tiếng Hàn/Nhật và khẳng định bằng lời không bị kiểm. Ba tài liệu không gắn một video (`SOP-AUDIO-VOICE-DNA-STANDARD.md`, `prompt-master/`, `tai-lieu/`) không thuộc phạm vi.
 - **Bump `uifix85` → `uifix86`.**
+- **Đợt 12 (bổ sung, 2026-10-15):** thời lượng trong dòng metadata của 15 SOP đã sửa theo độ dài mp4 đo bằng ffprobe khi lệch quá 15 giây (sao lưu `_backup/20261015-dur/`); tiêu đề `#` bỏ các tên/số không có trong transcript ("200K View", "Sukatto", "$104,170", "WW2 Tales", "$1.7K+", "Feynman", "Mộng Đam Mỹ", "Chill Dude", "(Stoicism)"). Ngoại lệ có chủ đích trong `check-grounding-md.py`: 2 file mô tả pack skill bên ngoài (`VIDEO-21824a`, `VIDEO-46c57e` `SKILL-bible-explainer.md`) không phải SOP của video.
+- **Kiểm tay chưa đủ:** báo cáo đối chiếu từng khẳng định do agent thực hiện (`_audit/20261015-grounding/verify_report_*.json`); kiểm chéo bằng máy còn 40 dòng OK có trích dẫn không khớp chuỗi nguyên văn; `VIDEO-61e354` từng bị báo cáo sai là khớp thời lượng (đã sửa). Các điểm ASR chưa nghe lại vẫn được ghi trong báo cáo.
+
 
 ## 2026-10-15 (đợt 11) — NEO NỘI DUNG SINH VÀO LỜI NÓI THẬT CỦA TỪNG VIDEO (H2DEV-SCAR-030)
 

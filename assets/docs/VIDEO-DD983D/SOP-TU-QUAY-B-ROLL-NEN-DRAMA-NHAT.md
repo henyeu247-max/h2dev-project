@@ -1,8 +1,7 @@
 # Cẩm Nang Thực Chiến: Kỹ Thuật Edit B-Roll Thật & Bí Quyết Né Quét Bản Quyền / Trùng Lặp AI 2026
 
 > **Mã bài học:** `VIDEO-DD983D`  
-> **Tiêu đề gốc:** Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..  
-> **Chủ đề thực tế:** Phân tích kỹ thuật tự quay footage B-roll đời thật làm nền video drama gia đình Nhật Bản; giải mã hiện tượng kênh cổ Thái Lan làm content Nhật cắn đề xuất mạnh và quy tắc an toàn né quét trùng lặp nội dung.  
+> **Chủ đề thực tế:** Phân tích kỹ thuật tự quay footage B-roll đời thật làm nền video drama gia đình Nhật Bản; so sánh 3 kênh Nhật và quy tắc an toàn né quét trùng lặp nội dung.  
 > **Thời lượng bài giảng:** 10 phút 00 giây  
 > **Thị trường mục tiêu:** 🇯🇵 Nhật Bản (Mã: `JP`)  
 > **Nhóm nội dung:** Drama Gia Đình & Xã Hội Nhật Bản / Kỹ Thuật Dựng Né Quét  
@@ -11,7 +10,7 @@
 
 ## 1. VẤN NẠN QUÉT NỘI DUNG AI & TRÙNG LẶP CỦA YOUTUBE (YPP 2026)
 
-- **Rủi ro với ngách drama:** Drama thường là những câu chuyện không có thật và hay giật tít nên YouTube dễ ghét hơn; phải kiên trì và làm đúng cách.
+- **Rủi ro với ngách drama:** Drama thường là những câu chuyện không có thật và hay giật tít nên YouTube dễ ghét hơn; phải kiên trì.
 - **Nguyên nhân dễ bị quét:**
   1. Dùng nhiều video nền lấy từ nguồn miễn phí (Pexels, Pixabay) → dễ dính lỗi *Sử dụng lại nội dung*; kháng được nhưng tốn thời gian.
   2. Làm sơ sài hoặc dùng các tool kém chất lượng bên ngoài → rất dễ bị quét, tốn thời gian của người làm.
@@ -23,10 +22,10 @@
 
 ## 2. PHÂN TÍCH 3 KÊNH ĐỐI THỦ ĐIỂN HÌNH TRONG BÀI
 
-- **Handle các kênh đối thủ (theo mô tả video):** `@ธรรมสุข-2275`, `@新しい私の毎日`, `@心に残る話-y10k`.
+- **Các kênh đối thủ:** 3 kênh Nhật được tác giả dẫn; ID không đọc được trong transcript nên không ghi ở đây.
 
 ### Kênh 1: Kênh cổ 2010, ngách drama gia đình Nhật
-- **Quy mô:** Kênh dùng kênh cổ 2010, mới 14 video, làm khoảng 5 ngày; 2 ngày trước có video hơn 80k view và video hơn 50k view. Có video nổ cao, có video chỉ vài nghìn view.
+- **Quy mô:** Kênh dùng kênh cổ 2010, mới 14 video, làm khoảng 5 ngày; 2 ngày trước có video hơn 80k view và video hơn 50k view.
 - **Cách edit:** Lấy video tự nhiên về, giảm độ sáng xuống rồi chạy phụ đề. Theo tác giả cách này mặt chung cũng được nhưng không ổn, vẫn hên xui.
 
 ### Kênh 2: Kênh lớn, làm hơn 100 video
@@ -43,7 +42,7 @@
 
 ### Bước 1: Tự quay phần video nền
 - Tự quay các cảnh đẹp như hồ cá, bàn tay gõ phím rồi ghép vào.
-- Phần video nền có tốn công thì nên tự quay; chỉ dùng nguồn miễn phí làm phụ.
+- Phần video nền có tốn công thì nên tự quay.
 
 ### Bước 2: Giọng đọc và kịch bản
 - Giọng đọc làm bằng AI.

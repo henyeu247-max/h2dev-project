@@ -1,5 +1,5 @@
 # SOP NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ ĐẦU
-> **Mã SKU:** `VIDEO-7f0bb4` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 04 phút 42 giây
+> **Mã SKU:** `VIDEO-7f0bb4` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 04 phút 14 giây
 > **Mục tiêu:** Hướng dẫn xác minh kênh cho đủ 3 dòng xanh và ngâm kênh vài ngày trước khi đăng video để tăng độ trust với YouTube.
 
 ---

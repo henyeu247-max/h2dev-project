@@ -1,11 +1,10 @@
 # SOP — Khai Thác Ngách Tâm Sự Người Cao Tuổi & Bán Content Gia Đình Thị Trường Việt Nam
 > **Mã video:** `VIDEO-0be6c9` | **Hệ thống:** H2DEV SSoT 2026 | **Thị trường:** Việt Nam (`VN`)  
-> **Nguồn bài giảng:** [https://h2dev.vn/learn/study/kinh-khung-voi-ngach-cuc-nho-view-viet-kenh-moi-8-video-hon-3-trieu-view-ban-content-ngach-nguoi-cao-tuoi](https://h2dev.vn/learn/study/kinh-khung-voi-ngach-cuc-nho-view-viet-kenh-moi-8-video-hon-3-trieu-view-ban-content-ngach-nguoi-cao-tuoi)
 
 ---
 
 ## 1. Bản Đồ Tổng Quan & Hiện Tượng Triệu View
-- **Hiện tượng thực tế:** Một kênh mới lập chỉ với 8 video đã đạt hơn 3,1 triệu lượt xem. Tác giả nhận định hiện ở Việt Nam chỉ thấy một kênh làm dạng ngách này; có video đăng 1 tháng trước đạt 1,7 triệu view, các video còn lại cũng rất cao.
+- **Hiện tượng thực tế:** Một kênh mới chỉ có 8 video. Tác giả nhận định hiện ở Việt Nam chỉ thấy một kênh làm dạng ngách này; có video đăng 1 tháng trước đạt 1,7 triệu view, các video còn lại cũng rất cao.
 - **Tệp khán giả cốt lõi:** Người cao tuổi (U60, U70 trở lên) tại Việt Nam. Theo tác giả, người già ở Việt Nam đa số xem TV và điện thoại hàng ngày, và ngách ngoại tình tuổi U60, U70 cũng có rất nhiều người xem.
 - **Ngách cực nhỏ:** Tác giả gọi đây là ngách cực nhỏ nhưng view rất lớn; điều quan trọng là ý tưởng và kịch bản để bám vào.
 

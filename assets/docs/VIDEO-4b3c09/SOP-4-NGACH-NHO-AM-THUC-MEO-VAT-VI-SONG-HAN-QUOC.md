@@ -1,20 +1,19 @@
-# Cẩm Nang Thực Chiến: Khai Thác 4 Ngách Nhỏ Ẩm Thực & Mẹo Vặt Nấu Ăn Lò Vi Sóng Hàn Quốc
+# Cẩm Nang Thực Chiến: Khai Thác 4 Ngách Nhỏ Thị Trường Hàn Quốc
 
 > **Mã bài học:** `VIDEO-4b3c09`  
-> **Tiêu đề gốc:** Update 4 ngách nhỏ làm bán content thị trường Hàn Quốc  
 > **Chủ đề thực tế:** Phân tích các kênh nhỏ thị trường Hàn Quốc (sức khỏe, món ăn, mẹo vặt, triết lý), cách xác định từ khóa ngách qua tiêu đề, cách edit và bài học khi chuyển ngách.  
 > **Thời lượng bài giảng:** 16 phút 13 giây  
-> **Thị trường mục tiêu:** 🇰🇷 Hàn Quốc (Mã: `KR`)  
-> **Nhóm nội dung:** Ẩm Thực & Mẹo Vặt Hàn Quốc / Dưỡng Sinh Gia Đình  
+> **Thị trường mục tiêu:** 🇰🇷 Hàn Quốc  
+> **Nhóm nội dung:** Ẩm Thực & Mẹo Vặt Hàn Quốc  
 
 ---
 
 ## 1. TỔNG HỢP CÁC KÊNH / NGÁCH NHỎ TRONG BÀI GIẢNG
 
-Id các kênh đối thủ được để trong mô tả video (copy vào ô tìm kiếm YouTube): `@시니어살림노트`, `@HealthyToday0`, `@desidilse`, `@RichPatternResearchInstitute`, `@의사가숨긴건강법-z9n`.
+Các kênh đối thủ được để link trong mô tả video.
 
 ### Ngách 1: Món ăn và mẹo vặt sức khỏe (kênh lập cuối tháng 6)
-- Kênh mới chỉ 14 video, nhưng view rất cao: có video hơn 200k view sau 2 tuần, các video khác cũng vài trăm nghìn view.
+- Kênh mới chỉ 14 video, nhưng view rất cao: có video hơn 200k view sau 2 tuần, các video khác cũng vài trăm view.
 - Ngách là hướng dẫn chế biến món ăn; tiêu đề chứa từ khóa ngách rõ ràng, ví dụ video về hành tây và tương ớt, video về rong biển cũ trong tủ, và video cao view nhất là mẹo bảo quản chuối.
 
 ### Ngách 2: Kênh sức khỏe chuyển sang thực phẩm (kênh lập từ tháng 4)
@@ -41,4 +40,4 @@ Id các kênh đối thủ được để trong mô tả video (copy vào ô tì
 4. **Cách edit:** Dùng video tự nhiên, hoặc AI ghép vào đều được, nhưng hạn chế ghép nhiều hình ảnh AI. Kênh lò vi sóng ở đoạn đầu có ghép video, nhưng về sau toàn là hình ảnh AI; theo tác giả như vậy sẽ không tốt, dễ bị quét và có nguy cơ bị reset kiếm tiền. Nên ghép nhiều video / hình ảnh tự nhiên.
 5. **Video short hay dài:** Đã xác định làm video short thì đừng làm dài, đã làm dài thì đừng làm short, nếu không sẽ bị flop vì không được phân phối mạnh.
 6. **Chuyển ngách trên cùng một kênh:** Video của ngách mới sẽ bị flop thời gian đầu, vì phải phân phối lại tập khán giả. Muốn đổi ngách thì tác giả khuyên làm kênh mới hoàn toàn: setting đúng ngách và đúng tệp khán giả ngay từ đầu thì cơ hội lên cao hơn nhiều. Đây là kinh nghiệm tác giả đã test và thất bại nhiều lần.
-7. **Kịch bản không giật tít, không câu view sai sự thật:** Một kênh triết lý tác giả từng share đã bị YouTube quét xóa vì kịch bản giật tít, không đúng sự thật. Loại lỗi không trung thực hiện nay YouTube đã nhẹ tay hơn, nhiều kênh bị lỗi này đã được bật kiếm tiền lại bình thường. Kênh bị quét là cơ hội cho kênh mới lên; không cần sợ mà phải thực chiến.
+7. **Kịch bản không giật tít, không câu view sai sự thật:** Một kênh triết lý tác giả từng share đã bị YouTube quét vì kịch bản giật tít, không đúng sự thật. Loại lỗi không trung thực hiện nay YouTube đã nhẹ tay hơn, nhiều kênh bị lỗi này đã được bật kiếm tiền lại bình thường. Kênh bị quét là cơ hội cho kênh mới lên; không cần sợ mà phải thực chiến.

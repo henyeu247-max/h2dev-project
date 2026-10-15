@@ -1,8 +1,7 @@
 # Cẩm Nang Thực Chiến: Khai Thác Ngách May Mắn Phong Thủy Thị Trường US & Sức Khỏe Senior Hàn Quốc 2026
 
 > **Mã bài học:** `VIDEO-989053`  
-> **Tiêu đề gốc:** Update key(ngách nhỏ) thị trường US Hoa Kỳ + Hàn  
-> **Chủ đề thực tế:** Chiến lược xâm nhập thị trường khó tính US (Hoa Kỳ) thông qua ngách "Người được chọn" (The Chosen Ones) & Phong thủy may mắn; phân tích mô hình mượn nhân vật nổi tiếng để tạo đột phá; giải mã ngách sức khỏe người cao tuổi (> 100 tuổi) tại Hàn Quốc.  
+> **Chủ đề thực tế:** Chiến lược xâm nhập thị trường khó tính US (Hoa Kỳ) thông qua ngách "Người được chọn" & Phong thủy may mắn; phân tích mô hình mượn nhân vật nổi tiếng để tạo đột phá; giải mã ngách sức khỏe người cao tuổi (> 100 tuổi) tại Hàn Quốc.  
 > **Thời lượng bài giảng:** 07 phút 22 giây  
 > **Thị trường mục tiêu:** 🇺🇸 Hoa Kỳ (US) & 🇰🇷 Hàn Quốc (KR)  
 > **Nhóm nội dung:** Share key / Ngách nhỏ / Tâm Linh & Sức Khỏe  
@@ -37,7 +36,7 @@
 
 ---
 
-## 3. KỸ THUẬT EDIT BẢO VỆ KÊNH CHỐNG QUÉT AI 2026
+## 3. KỸ THUẬT EDIT BẢO VỆ KÊNH CHỐNG QUÉT AI
 
 - **Không làm hình ảnh hay video Auto-AI hoàn toàn:** Theo tác giả, hiện nay rất dễ bị quét; cần làm theo hướng hạn chế bị quét nhất có thể.
 - **Quy trình edit của các kênh mẫu:** Chỉ là quy trình tác giả đã hướng dẫn từ trước: video nền thiên nhiên chuyển động kèm nhân vật và sóng âm.

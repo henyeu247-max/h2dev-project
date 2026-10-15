@@ -1,13 +1,13 @@
 # SOP Thực Chiến: Mẹo Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View
 > **Mã bài giảng:** `VIDEO-aacc70` | **SKU:** `VIDEO-aacc70`
-> **Phân loại:** Kỹ thuật bám trend & Tối ưu thuật toán phân phối đề xuất YouTube
+> **Phân loại:** Kỹ thuật bám trend theo chỉ số VPH
 
 ---
 
 ## 1. Nguyên Tắc Cốt Lõi: Bám Trend Để Không Bị Không View
 - **Bám theo video đang có trend:** Tác giả chia sẻ một mẹo để lấy kịch bản và bám theo video đang lên, nhờ vậy trước giờ làm theo cách này không bị không view.
 - **Chọn video theo chỉ số, không chọn tùy hứng:** Nếu chỉ chọn video nào muốn làm thì rất hên xui và view lẹt đẹt; đó là lý do nhiều người cứ làm mà hay bị không view hoặc view lẹt đẹt.
-- **Ví dụ thực tế:** Kênh mới hoàn toàn của các bạn áp dụng cách này; có kênh đang làm ngách khác, chuyển sang ngách ong theo video tác giả chia sẻ ngày 15 tháng 8 thì lên view ngay.
+- **Ví dụ thực tế:** Kênh mới hoàn toàn của các bạn áp dụng cách này; có kênh đang làm ngách khác, chuyển sang ngách ong theo video tác giả chia sẻ (tác giả nói làm và share ngày 12 tháng 8, ghi nhầm là 15 tháng 8) thì lên view ngay.
 
 ---
 

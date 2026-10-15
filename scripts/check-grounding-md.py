@@ -23,7 +23,7 @@ Trim Crop Zoom Fade Mask Layer Track Clip Frame Frames Effect Effects Filter Tra
 Voiceovers Narration Music Noise Bass Mix Mixing Master Level Volume Gain Normalize Loudness Resolution Bitrate Codec""".split())
 
 def tok_iter(line):
-    for m in re.finditer(r"@[\w.\-]+|\d[\d.,]*%?|[A-Z][A-Za-z0-9+\-]{2,}", line):
+    for m in re.finditer(r"@[\w.\-]+|\d[\d.,]*%?|[A-Z][A-Za-z0-9+\-]{2,}|[a-z]+[A-Z][A-Za-z0-9]*", line):
         yield m
 
 def check_file(path, ins):
@@ -63,6 +63,9 @@ if __name__ == "__main__":
         files = sorted(glob.glob("assets/docs/VIDEO-*/*.md"))
     total = 0
     quiet = "--quiet" in sys.argv
+    # Ngoại lệ có chủ đích: mô tả pack skill bên ngoài (không phải SOP của video). Ghi rõ trong CHANGELOG đợt 12.
+    EXCLUDE = {"VIDEO-21824a/SKILL-bible-explainer.md", "VIDEO-46c57e/SKILL-bible-explainer.md"}
+    files = [f for f in files if "/".join(f.replace(chr(92), "/").split("/")[-2:]) not in EXCLUDE]
     for f in files:
         sku, bad = check_file(f, ins)
         total += len(bad)

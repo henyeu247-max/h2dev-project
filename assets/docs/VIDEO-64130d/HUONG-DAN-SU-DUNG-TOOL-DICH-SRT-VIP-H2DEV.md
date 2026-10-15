@@ -1,7 +1,7 @@
 # CẨM NANG SỬ DỤNG — TOOL DỊCH PHỤ ĐỀ SRT VIP H2DEV (PHIÊN BẢN WEB)
 
 ## 1. Giới Thiệu Nền Tảng Tool Dịch H2DEV VIP
-- **Địa chỉ truy cập**: [https://h2devtool.com/](https://h2devtool.com/)
+- **Địa chỉ truy cập**: trang web của tool (lời nói không nêu địa chỉ).
 - **Đặc điểm nổi bật**:
   - Chạy trực tiếp trên nền tảng web: dùng được trên mọi hệ điều hành (kể cả macOS, mà bản desktop cũ không cài được) và dùng được cả trên điện thoại.
   - Không cần tải về, cài đặt hay giải nén file như bản desktop cũ.
@@ -26,7 +26,7 @@
 1. **Bước 1: Chuẩn bị file nguồn**:
    - Chuẩn bị file cần dịch (trong video demo là file phụ đề).
 2. **Bước 2: Thiết lập dịch thuật trên Web**:
-   - Sau khi mua gói trực tiếp với tác giả, bạn được cấp một key tài khoản; đăng nhập vào [h2devtool.com](https://h2devtool.com/) bằng key này.
+   - Sau khi mua gói trực tiếp với tác giả, bạn được cấp một key tài khoản; đăng nhập vào trang web của tool bằng key này.
    - Bấm **"Tạo mới"** → chọn file để dịch.
    - **Lưu ý quan trọng**: Chọn chính xác chiều dịch tại mục *Thiết lập dịch thuật* (ví dụ: `Trung Quốc sang Việt Nam`; còn có thể dịch sang Nhật Bản, tiếng Anh, Hàn Quốc...). Tác giả từng quên chọn nên file bị dịch từ Trung sang Trung.
 3. **Bước 3: Theo dõi tiến độ thời gian thực**:

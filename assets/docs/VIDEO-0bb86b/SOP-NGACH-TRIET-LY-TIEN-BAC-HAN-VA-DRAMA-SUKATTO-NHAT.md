@@ -1,8 +1,8 @@
-# Cẩm Nang Thực Chiến: Bứt Phá 200K View Ngay Video Đầu Tiên — Ngách Triết Lý Tiền Bạc Hàn Quốc & Drama Sukatto Nhật Bản 2026
+# Cẩm Nang Thực Chiến: Ngách Triết Lý Tiền Bạc Hàn Quốc & Drama Nhật Bản
 
 > **Mã bài học:** `VIDEO-0bb86b`  
-> **Tiêu đề gốc:** Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật  
-> **Chủ đề thực tế:** Mổ xẻ hiện tượng video đầu tiên vừa đăng đã nổ gần 200K view (chỉ số VPH cực cao) ở ngách Triết lý tài chính sau tuổi 65 tại Hàn Quốc; phân tích lỗi chí mạng trong edit của đối thủ cần né tránh; giải mã ngách Drama cảm động & Sukatto Nhật Bản; chiến lược kiên trì vượt qua bẫy nản lòng 10 video đầu tiên.  
+> **Tiêu đề gốc:** Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới thị trường Hàn và Nhật  
+> **Chủ đề thực tế:** Mổ xẻ hiện tượng video đầu tiên vừa đăng đã nổ gần 200K view (chỉ số VPH cực cao) ở ngách Triết lý tài chính sau tuổi 65; phân tích lỗi chí mạng trong edit của đối thủ cần né tránh; giải mã ngách Drama cảm động Nhật Bản; chiến lược kiên trì vượt qua bẫy nản lòng 10 video đầu tiên.  
 > **Thời lượng bài giảng:** 10 phút 37 giây  
 > **Thị trường mục tiêu:** 🇰🇷 Hàn Quốc (KR) & 🇯🇵 Nhật Bản (JP)  
 > **Nhóm nội dung:** Share key / Ngách nhỏ / Triết Lý Sống & Drama Đời Sống  
@@ -11,7 +11,7 @@
 
 ## 1. PHÂN TÍCH HIỆN TƯỢNG BÙNG NỔ VIEW CỦA KÊNH MẪU ĐỐI THỦ
 
-### Kênh 1: Kênh triết lý tiền bạc Hàn Quốc (video đầu tiên nổ view)
+### Kênh 1: Kênh triết lý tiền bạc (video đầu tiên nổ view)
 - **Thành tích chấn động:** Kênh mới lập ngày 4 tháng 9 năm 2026, ngâm kênh một thời gian rồi ra video đầu tiên. Sau 5 ngày, video đã đạt hơn 196k view với chỉ số VPH cực kỳ cao, cho thấy key này thật sự rất trend.
 - **Tiêu đề bão view:** Tác giả dịch tiêu đề đại ý: *"Nếu bạn có số tiền này trong tài khoản ngân hàng sau tuổi 65, đừng kiếm tiền nữa mà hãy tận hưởng cuộc sống"*. Dạng này nói về triết lý cuộc sống, tiền bạc.
 - **Cách edit:** Kênh quay một video người ngồi cầm bảng/tờ giấy, dùng giọng đọc AI (ElevenLabs, clone voice).
@@ -42,7 +42,7 @@ Tác giả cảnh báo một lỗi tệ nhất trong cách edit của kênh đ�
 
 ## 3. BÀI HỌC VƯỢT QUA BẪY NẢN LÒNG (THE 10-VIDEO RULE)
 
-- Nhiều anh em làm những video đầu chỉ có vài chục view là nản rồi bỏ cuộc.
+- Nhiều anh em làm những video đầu chỉ có vài chục view là nản.
 - Tác giả phân tích một kênh Hàn Quốc: những video đầu lẹt đẹt, **đến video thứ 10 thì kênh bắt đầu được phân phối và nổ view**.
 - **Kỷ luật xuất bản:** Phải làm tầm 10 đến 15 video thì thuật toán mới bắt đầu phân phối. Với những key cực kỳ trend, chỉ cần nội dung ổn thì chắc chắn sẽ có view.
 - **Lưu ý về độ bền:** Dạng drama thường không bền vì YouTube không ưa; có thể ăn được 1-2 tháng đầu, sau đó có thể bị quét. Tác giả khuyên chấp nhận rủi ro, làm xong thì chuyển sang kênh khác hoặc ngách khác.
@@ -51,6 +51,6 @@ Tác giả cảnh báo một lỗi tệ nhất trong cách edit của kênh đ�
 
 ## 4. CÁCH TÌM KÊNH ĐỐI THỦ
 
-- Tác giả không đọc tên kênh trong video; cách tìm là dịch tiêu đề video đối thủ ra tiếng Việt, rồi search theo từ khóa đó.
+- Cách tìm là dịch tiêu đề video đối thủ ra tiếng Việt, rồi search theo từ khóa đó.
 - Có thể lấy content từ các kênh đối thủ về làm lại.
 - Tác giả nhắc thêm: anh em trong nhóm của tác giả đa số làm key sức khỏe, drama và triết lý.

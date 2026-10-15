@@ -1,6 +1,5 @@
 # SOP — Quy Trình Huấn Luyện Prompt & Đóng Gói Claude Skill Viết Kịch Bản 3 Chế Độ Ngách Sức Khỏe Hàn Quốc
 > **Mã video:** `VIDEO-043d15` | **Hệ thống:** H2DEV SSoT 2026 | **Thị trường:** Hàn Quốc (`KR`)  
-> **Nguồn bài giảng:** [https://h2dev.vn/learn/study/thuc-chien-huong-dan-train-prompt-va-lam-kich-ban-ngach-nho-key-suc-khoe-thi-truong-han-quoc-update-02-10-2026](https://h2dev.vn/learn/study/thuc-chien-huong-dan-train-prompt-va-lam-kich-ban-ngach-nho-key-suc-khoe-thi-truong-han-quoc-update-02-10-2026)
 
 ---
 

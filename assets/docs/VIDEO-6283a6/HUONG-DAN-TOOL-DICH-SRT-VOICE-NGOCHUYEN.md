@@ -1,6 +1,6 @@
 # Cẩm Nang Sử Dụng — Tool Dịch Phụ Đề & Tạo Voice Ngọc Huyền Khớp Timeline SRT
 
-> **Hệ sinh thái:** H2DEV Tool (https://h2devtool.com/) · **Tính năng:** Subtitle Editor, Auto-Translation, Vbee TTS Ngoc Huyen, Multi-Platform Downloader
+> **Hệ sinh thái:** Tool dịch của tác giả · **Tính năng:** Subtitle Editor, Auto-Translation, Vbee TTS Ngoc Huyen, Multi-Platform Downloader
 
 ---
 
@@ -21,7 +21,7 @@
 | Bước | Hành động cụ thể | Lưu ý kỹ thuật |
 |---|---|---|
 | **Bước 1: Tải video** | Dùng tính năng Download video của tool (hỗ trợ tất cả các nền tảng) | Mục Download và share key đã có từ các bản cập nhật trước |
-| **Bước 2: Nạp phụ đề** | Nạp phụ đề SRT vào Subtitle Editor | Cách dùng tool dịch đã có các video hướng dẫn riêng của tác giả |
+| **Bước 2: Nạp phụ đề** | Nạp phụ đề vào Subtitle Editor | Cách dùng tool dịch đã có các video hướng dẫn riêng của tác giả |
 | **Bước 3: Chọn Voice** | Vào tính năng tạo Voice -> Chọn giọng "Ngọc Huyền (Vbee)" | Có thể tự chọn và xuất ra |
 | **Bước 4: Kiểm tra** | Nghe thử đoạn voice vừa tạo | Voice tạo rất nhanh, đối chiếu với timeline của phụ đề editor |
 | **Bước 5: Xuất file** | Lưu lại file voice vừa tạo | Import vào CapCut để dựng |
@@ -37,5 +37,4 @@
 
 ## 4. Liên Kết Hỗ Trợ
 
-- **Trang chủ công cụ:** https://h2devtool.com/
 - **Hỗ trợ:** Xem video hướng dẫn của tác giả về cách dùng tool dịch.

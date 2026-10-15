@@ -2,7 +2,7 @@
 
 > **Mã bài học:** `VIDEO-891f32`  
 > **Chủ đề:** Chiến thuật làm video dài > 2 tiếng đạt RPM $21 và quy trình viết kịch bản trường thiên  
-> **Áp dụng:** Ngách Lịch sử / Tài liệu chuyên sâu thị trường Mỹ & Châu Âu
+> **Áp dụng:** Ngách Lịch sử
 
 ---
 

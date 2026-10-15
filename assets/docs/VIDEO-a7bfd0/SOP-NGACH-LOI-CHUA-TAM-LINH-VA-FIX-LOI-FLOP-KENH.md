@@ -1,15 +1,14 @@
-# Cẩm Nang Thực Chiến: Ngách Lời Chúa Cầu Nguyện Hàn Quốc & Quy Trình Xử Lý Triệt Để Lỗi 0 View, Flop Kênh Do Làm Lan Man
+# Cẩm Nang Thực Chiến: Ngách Lời Chúa Hàn Quốc & Quy Trình Xử Lý Triệt Để Lỗi 0 View, Flop Kênh Do Làm Lan Man
 
 > **Mã bài học:** `VIDEO-a7bfd0`  
-> **Tiêu đề gốc:** Update ngách mới và khám kênh + giải thích một số lỗi tránh bị 0 view, lẹt đẹt, không lên được  
-> **Chủ đề thực tế:** Phân tích ngách Tôn giáo Hàn Quốc (@은밀한응답), Thói quen ăn rau sống thọ (@장수채소습관) và giải pháp trị dứt điểm lỗi kênh 0 view, lẹt đẹt.  
+> **Chủ đề thực tế:** Phân tích ngách Tôn giáo Hàn Quốc và ngách sức khỏe; nguyên tắc tránh kênh lẹt đẹt, không lên được.  
 > **Thời lượng bài giảng:** 10 phút 23 giây  
 > **Thị trường mục tiêu:** 🇰🇷 Hàn Quốc / 🇻🇳 Việt Nam (Mã: `KR-VN`)  
 > **Nhóm nội dung:** Lời Chúa & Tâm Linh Ngoại / Kỹ Thuật Trị Flop Kênh  
 
 ---
 
-## 1. PHÂN TÍCH CASE STUDY KÊNH MẪU: `@은밀한응답` (Lời Đáp Bí Mật)
+## 1. PHÂN TÍCH CASE STUDY KÊNH MẪU: KÊNH CHÚA Ở THỊ TRƯỜNG HÀN QUỐC
 
 - **Thị trường:** 🇰🇷 Hàn Quốc
 - **Tình trạng kênh:** Kênh hoàn toàn mới, chỉ mới vài video nhưng đã bật kiếm tiền; view khá ổn, trung bình vài K view mỗi video. Video đầu tiên cách đây 1 tháng có hơn 7 trăm view.
@@ -31,10 +30,10 @@ Tác giả trả lời thắc mắc của một số thành viên trong group đ
 - Không phải lỗi do làm người nổi tiếng: nhiều kênh lớn nhỏ vẫn bình thường.
 - Cạnh tranh luôn có ở mọi kênh lớn nhỏ, mới cũ; quan trọng là làm đúng và làm sạch, phải làm thực chiến mới biết cách quét. Cứ FOMO nhảy từ ngách này sang ngách khác thì chắc chắn không làm được.
 
-### 2.2. Bẫy "lẹt đẹt" khi làm tạp: case kênh sức khỏe `@장수채소습관`
+### 2.2. Bẫy "lẹt đẹt" khi làm tạp: case kênh sức khỏe và kênh làm tạp
 - Kênh của một thành viên Vip Pro, làm ngách sức khỏe, mới 9 video và bắt đầu làm từ 8 ngày trước. Video đầu tiên nổ view, các video gần đây lẹt đẹt lại là bình thường vì kênh mới cần thời gian; thường phải 10 đến 15 video kênh mới bắt đầu lên.
-- Hai video cao view nhất: 19K view (9 ngày trước) và 17K view (1 tháng trước), tiêu đề xoay quanh bài tập 1 phút mỗi ngày giúp cải thiện trí nhớ, đánh vào sức khỏe và tâm lý người già.
-- Sai lầm: kênh làm rất nhiều thể loại (rau củ, trái cây, ...) và không bám vào các video đang cao view, nên phần lớn video chỉ được vài chục đến 100 view, chỉ một video đạt 3,2 nghìn view và một video hơn 1 nghìn view.
+- Ở kênh làm tạp (ví dụ thứ hai), hai video cao view nhất: 19K view (9 ngày trước) và 17K view (1 tháng trước), tiêu đề xoay quanh bài tập 1 phút mỗi ngày giúp cải thiện trí nhớ, đánh vào sức khỏe và tâm lý người già.
+- Sai lầm (kênh làm tạp, ví dụ thứ hai): kênh làm rất nhiều thể loại (rau củ, trái cây, ...) và không bám vào các video đang cao view, nên phần lớn video chỉ được vài chục đến 100 view, chỉ một video đạt 3,2 nghìn view và một video hơn 1 nghìn view.
 - Tác giả nhấn mạnh phải chọn đúng ngách, chứ không phải cứ đâm đầu làm là được.
 
 ---

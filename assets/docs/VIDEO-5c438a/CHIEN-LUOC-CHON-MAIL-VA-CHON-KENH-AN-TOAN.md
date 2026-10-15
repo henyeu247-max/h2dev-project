@@ -1,9 +1,9 @@
 # Cẩm Nang Thực Chiến: Chiến Lược Chọn Mail, Chọn Kênh & Nuôi Kênh Chuẩn Độ Trust (Tránh 0 View)
 
 > **Mã bài học:** `VIDEO-5c438a`  
-> **Chủ đề:** Giải thích và hướng dẫn phân loại Gmail (Mới vs Cổ), Kênh YouTube (Mới vs Cổ), quy trình ngâm kênh, tăng điểm uy tín (Trust Score) và kích hoạt đề xuất  
+> **Chủ đề:** Giải thích phân loại Gmail (mới vs cổ), kênh YouTube (mới vs cổ), ngâm tương tác kênh, nhịp đăng và chọn giờ đăng theo kênh đối thủ  
 > **Thời lượng video bài giảng:** 12 phút 26 giây  
-> **Thị trường mục tiêu:** 🇺🇸 Mỹ / 🌐 Ngoại (Áp dụng toàn cầu)
+> **Thị trường mục tiêu:** Áp dụng ở mọi thị trường
 
 
 ---
@@ -49,10 +49,3 @@ Tác giả nhấn mạnh Gmail và kênh là hai thứ khác nhau, không liên 
 - Làm ở thị trường nào cũng có thể biết giờ đăng của đối thủ: xem video của họ đã đăng cách đây bao nhiêu giờ, đối chiếu với giờ hiện tại của mình rồi quy đổi ra giờ Việt Nam.
 - Mẹo của tác giả: đăng trước đối thủ 30 phút hoặc 1 tiếng, nên đăng trước 1 tiếng.
 - Cứ bám theo đối thủ vì đó là thực tế thực chiến, không theo tâm linh hay cảm tính. Khi kênh đã phát triển thì xem phân tích kênh của mình để biết giờ người xem đông nhất và tự chọn giờ đăng riêng.
-
----
-
-## 4. DANH MỤC TÀI LIỆU ĐÍNH KÈM CỦA BÀI HỌC
-1. File CSV nguồn tài nguyên kênh reup Douyin: link các kênh Douyin, từ khóa tìm kiếm Douyin và các web tải video Douyin HD không logo.
-2. File CSV nguồn video reup Douyin + Bilibili: danh sách link video.
-3. File văn bản `PROMPT THUMB + TỪ KHÓA SEO / HASHTAGS`: prompt tạo tiêu đề, chữ thumbnail, từ khóa SEO và hashtag cho ngách sức khỏe người cao tuổi thị trường Mỹ.

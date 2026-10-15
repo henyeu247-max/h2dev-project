@@ -9,7 +9,7 @@
 ## 2. Quy Trình Chuẩn 5 Bước Tạo Full Video
 
 ### Bước 1: Chọn Chủ Đề (Idea Generation)
-Sử dụng prompt sau trong ChatGPT:
+Sử dụng prompt sau:
 ```text
 당신은 한국 유튜브 불교·말년운·생활풍수 콘텐츠 기획자입니다.
 

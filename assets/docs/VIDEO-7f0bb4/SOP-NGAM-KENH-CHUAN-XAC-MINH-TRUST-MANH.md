@@ -1,16 +1,18 @@
 # SOP NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ ĐẦU
 > **Mã SKU:** `VIDEO-7f0bb4` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 04 phút 42 giây
-> **Mục tiêu:** Hướng dẫn quy trình ngâm kênh từ 7 - 14 ngày và xác minh các bước bảo mật để tăng độ trust với hệ thống YouTube.
+> **Mục tiêu:** Hướng dẫn xác minh kênh cho đủ 3 dòng xanh và ngâm kênh vài ngày trước khi đăng video để tăng độ trust với YouTube.
 
 ---
 
 ## 1. VÌ SAO PHẢI NGÂM KÊNH?
-- Kênh mới tạo nếu lập tức tải hàng loạt video lên sẽ bị hệ thống chống spam của Google gắn cờ là bot tự động $ightarrow$ 0 view hoặc bị quét chết kênh.
-- Ngâm kênh giúp tích lũy lịch sử cookie trình duyệt và hành vi người dùng thật.
+- Đăng video liền sau khi lập kênh thì sau này dễ bị gãy view mà không rõ lý do, vì YouTube có những đợt quét spam.
+- Một số người nói không cần ngâm vẫn cao view: điều này đúng với dạng reup khi từ khóa đang rất trend (ví dụ phim ra phần mới). Tác giả làm content nên vẫn ngâm kênh, kể cả khi reup.
 
 ---
 
-## 2. QUY TRÌNH NGÂM KÊNH 3 GIAI ĐOẠN
-- **Giai đoạn 1 (Ngày 1 - 3):** Tạo tài khoản, bật xác minh 2 bước (2FA), xác minh số điện thoại bước 2 (Features Eligibility). Để yên không đăng video.
-- **Giai đoạn 2 (Ngày 4 - 7):** Đăng nhập lướt feed YouTube 15 - 20 phút mỗi ngày, tìm kiếm và xem các video cùng ngách, like và comment tự nhiên để nuôi đề xuất trang chủ.
-- **Giai đoạn 3 (Ngày 8 trở đi):** Bật tính năng nâng cao (Advanced Features) bằng lịch sử kênh hoặc video xác minh khuôn mặt. Bắt đầu lên video đầu tiên.
+## 2. QUY TRÌNH NGÂM KÊNH
+- **Bước 1:** Lập kênh xong, cài logo và đặt tên kênh.
+- **Bước 2:** Vào cài đặt nâng cao, mục điều kiện sử dụng, xác minh cho đủ 3 dòng xanh. Đây là bước nhiều người hay quên; xác minh đủ rồi mới đăng video thì độ trust mới cao.
+  - Xác minh bằng giấy tờ: chụp mặt trước và mặt sau, từ đêm tới sáng là được xác minh. Làm mấy chục hay mấy trăm kênh cũng không bị giới hạn.
+- **Bước 3:** Ngâm kênh. Kênh cổ ngâm khoảng 2 đến 3 ngày (có đi tương tác thì càng tốt). Kênh mới ngâm khoảng 3 đến 5 ngày, nên ngâm tầm 5 ngày.
+- **Bước 4:** Hết thời gian ngâm mới đăng video đầu tiên.

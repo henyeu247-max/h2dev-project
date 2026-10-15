@@ -408,6 +408,19 @@ try {
   }
 }
 
+// Guard bám nguồn cho SOP assets/docs/VIDEO-*/*.md: số, @handle, tên công cụ/người phải có trong transcript hoặc tài liệu kèm
+// của chính video (scripts/check-grounding-md.py --live).
+{
+  const cp = require('child_process');
+  const r = cp.spawnSync('py', ['-3', path.join('scripts', 'check-grounding-md.py'), '--live'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 });
+  if (r.error || r.status === null) {
+    console.warn('[validate] bỏ qua guard bám nguồn SOP .md: không chạy được Python (' + (r.error ? r.error.message : 'status null') + ')');
+  } else if (r.status !== 0) {
+    const lines = String(r.stdout || '').split('\n').filter(Boolean);
+    errors.push(`assets/docs SOP .md: ${lines[lines.length - 1]} — ví dụ: ${lines.slice(0, 3).join(' | ').slice(0, 300)} (chạy py -3 scripts/check-grounding-md.py)`);
+  }
+}
+
 // Guard cặp khóa hoa/thường trong video_insights.json: player-main.js tra theo thứ tự
 // resolvedSku → sku → lower → upper nên hai bản lệch nhau = người xem thấy bản cũ.
 {

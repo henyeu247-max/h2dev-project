@@ -6,39 +6,36 @@
 
 ## 1. Tổng Quan Bản Cập Nhật Mới
 
-- **Miễn phí 100% cho học viên:** Tích hợp trực tiếp giọng đọc AI truyền cảm **Ngọc Huyền (Vbee)** vào nền tảng web tool.
-- **Tự động đồng bộ chuẩn xác khung thời gian SRT (Timeline Alignment):**
-  - Giọng đọc được render theo từng block câu thoại của file SRT.
-  - Tự động giãn cách (pause) và ngắt câu chính xác theo mốc `start` và `end` của phụ đề, khắc phục hoàn toàn tình trạng đè tiếng hoặc thoại chạy trước hình.
-- **Ứng dụng thực chiến:** Cực kỳ phù hợp cho các ngách review phim, tóm tắt truyện, tài liệu sinh tồn hoang dã, nhà gỗ thiên nhiên.
+- **Miễn phí cho người dùng tool dịch:** Tác giả tích hợp sẵn giọng đọc AI **Ngọc Huyền (Vbee)** vào web tool dịch, hoàn toàn miễn phí.
+- **Tạo voice theo phụ đề editor:** Tính năng tạo voice nằm trong phụ đề editor (mới cập nhật); giọng đọc tạo ra khớp theo timeline của phụ đề editor.
+- **Ứng dụng thực chiến:** Phù hợp với các dạng video review, giúp tiết kiệm chi phí.
 
 ---
 
-## 2. Quy Trình 5 Bước Sử Dụng Tool
+## 2. Quy Trình Sử Dụng Tool
 
 ```
-1. Tải video gốc -> 2. Nạp file phụ đề SRT -> 3. Chọn giọng đọc Ngọc Huyền -> 4. Render & Nghe thử -> 5. Xuất Audio & Dựng
+1. Tải video gốc -> 2. Nạp phụ đề vào Subtitle Editor -> 3. Chọn giọng đọc Ngọc Huyền -> 4. Nghe thử -> 5. Xuất Audio & Dựng
 ```
 
 | Bước | Hành động cụ thể | Lưu ý kỹ thuật |
 |---|---|---|
-| **Bước 1: Tải video** | Dán link Douyin / Bilibili / TikTok / YouTube vào mục Download | Chọn chất lượng cao nhất (1080p / 2K) |
-| **Bước 2: Nạp phụ đề** | Nạp file SRT gốc (tiếng Trung, Anh, v.v.) vào Subtitle Editor | Dùng tính năng Auto-Translate với API Key chia sẻ sẵn |
-| **Bước 3: Chọn Voice** | Vào tab Tạo Voice -> Chọn model "Ngọc Huyền (Vbee)" | Có thể tùy chỉnh tốc độ (Speed: 0.9x - 1.1x) |
-| **Bước 4: Kiểm tra** | Bấm nghe thử từng mốc thời gian để soát lỗi phát âm | Sửa lại các từ phiên âm nước ngoài cho chuẩn âm đọc |
-| **Bước 5: Xuất file** | Nhấn xuất Audio MP3/WAV | Import vào CapCut / Premiere cùng video đã tải để ráp nối |
+| **Bước 1: Tải video** | Dùng tính năng Download video của tool (hỗ trợ tất cả các nền tảng) | Mục Download và share key đã có từ các bản cập nhật trước |
+| **Bước 2: Nạp phụ đề** | Nạp phụ đề SRT vào Subtitle Editor | Cách dùng tool dịch đã có các video hướng dẫn riêng của tác giả |
+| **Bước 3: Chọn Voice** | Vào tính năng tạo Voice -> Chọn giọng "Ngọc Huyền (Vbee)" | Có thể tự chọn và xuất ra |
+| **Bước 4: Kiểm tra** | Nghe thử đoạn voice vừa tạo | Voice tạo rất nhanh, đối chiếu với timeline của phụ đề editor |
+| **Bước 5: Xuất file** | Lưu lại file voice vừa tạo | Import vào CapCut để dựng |
 
 ---
 
-## 3. Mẹo Tối Ưu Âm Thanh & Né Quét Trùng Lặp
+## 3. Lưu Ý Khi Dùng
 
-- **Tùy chỉnh tốc độ:** Với video kể chuyện thong thả, đặt speed 0.95x; với video review tin tức/phim hành động, đặt speed 1.05x–1.1x.
-- **Thêm tiếng thở / ngắt quãng tự nhiên:** Đặt khoảng trống giữa 2 dòng sub tối thiểu 0.3s–0.5s để giọng đọc tự nhiên như người thật.
-- **Kết hợp Sound FX:** Chèn thêm tiếng bước chân, tiếng gió, chim hót, hoặc âm thanh môi trường nhỏ ở track bên dưới để video sống động và độc bản.
+- **Cài đặt:** Trong tool có mục tải xuống và video hướng dẫn cài về dùng; xem hướng dẫn trước khi trải nghiệm.
+- **Demo:** Video chỉ là bản demo mẫu để biết tính năng, tác giả tạo thử một đoạn voice và lưu lại cho mọi người nghe.
 
 ---
 
 ## 4. Liên Kết Hỗ Trợ
 
 - **Trang chủ công cụ:** https://h2devtool.com/
-- **Hỗ trợ kỹ thuật & Key API:** Kênh nội bộ H2DEV Pro
+- **Hỗ trợ:** Xem video hướng dẫn của tác giả về cách dùng tool dịch.

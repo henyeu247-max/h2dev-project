@@ -5,12 +5,14 @@
 ---
 
 ## 1. NGUYÊN TẮC SEO YOUTUBE 2026
-- Thuật toán YouTube hiện đại tập trung vào **ngữ cảnh ngữ nghĩa (Semantic Context)** và hành vi giữ chân người xem (AVD) hơn là nhồi nhét từ khóa.
-- Việc nhồi nhét tag vào phần mô tả bị xếp vào lỗi **Siêu dữ liệu gây hiểu lầm (Spam Metadata)** và có thể dẫn đến gỡ video hoặc tắt kiếm tiền.
+- Nội dung dựa trên kinh nghiệm làm thực tế và quan điểm của tác giả: chính sách YouTube cập nhật liên tục nên phải chạy theo luật chơi mới nhất.
+- Trước kia việc ghi nhiều từ khóa rất cần thiết, nhưng hiện nay ghi nhiều dễ bị tính là spam và bị quét rất gắt.
 
 ---
 
 ## 2. QUY TRÌNH THIẾT LẬP SEO CHUẨN
-- **Từ khóa kênh (Channel Keywords):** Chỉ điền 10 - 15 từ khóa cốt lõi định danh ngách, gồm tên thương hiệu kênh + từ khóa chủ đề chính + thị trường (ví dụ: tiếng Hàn, tiếng Nhật).
-- **Tiêu đề video:** Ngắn gọn dưới 60 ký tự, chứa từ khóa đinh ở đầu và một yếu tố kích thích tò mò (Hook).
-- **Mô tả video (Description):** Viết 3-4 câu tóm tắt nội dung tự nhiên có chứa từ khóa chính, kèm 3-5 hashtag ở cuối.
+- **Từ khóa kênh:** Bỏ trống hoàn toàn, không cần điền.
+- **Từ khóa video:** Chỉ ghi một vài cụm, khoảng 2 đến 5 cụm ngắn cách nhau bằng dấu phẩy, hoặc không ghi cũng được. Ví dụ với ngách nhỏ về người sau tuổi 60: ghi vài cụm như "sau tuổi 60", "người già". Tác giả áp dụng cách để trống từ cuối năm ngoái và các kênh mới đều để trống.
+- **Mô tả video:** Không cần viết chú thích dài. Chỉ để khoảng 3-4 từ khóa liên quan, ví dụ "phim hoạt hình Trung Quốc", "phim hoạt hình 2D". Đừng ghi chú thích giải thích nhiều (ví dụ để giải thích nội dung không trung thực) vì không có tác dụng, càng làm càng bị quét.
+- **Nội dung AI:** Nếu video có dùng AI (dòng AI, ảnh thumbnail làm bằng AI) thì khi đăng phải khai báo bằng nhãn nội dung AI; cách khai báo đã được hướng dẫn trong video về nội dung sử dụng.
+- **Nguyên tắc chung:** Chính sách càng đơn giản thì càng áp dụng đơn giản theo, và tuân thủ theo luật chơi mới.

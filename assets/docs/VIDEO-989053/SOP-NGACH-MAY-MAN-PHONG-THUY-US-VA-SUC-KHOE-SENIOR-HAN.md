@@ -12,43 +12,37 @@
 ## 1. PHÂN TÍCH HỆ THỐNG KÊNH MẪU ĐỐI THỦ TRONG BÀI GIẢNG
 
 ### Thị trường US (Hoa Kỳ)
-1. **`@ElroiMotivation` (Elroi Motivation):**
-   - Kênh mới thành lập tháng 08/2026, đánh thẳng vào tệp khán giả tìm kiếm năng lượng may mắn, lời tiên tri và thông điệp vũ trụ cho "Người được chọn".
-   - **Chiến thuật thông minh:** Mượn hình ảnh và danh tiếng của các nhân vật biểu tượng/nổi tiếng trên thế giới nhưng khéo léo bẻ lái sang chủ đề phong thủy, tâm linh và thu hút tài lộc (thay vì làm về tôn giáo cứng nhắc dễ bị sụt giảm lượt xem).
-2. **`@Faith_Spotlight` (Faith Spotlight):**
-   - Kênh nghiên cứu đối chiếu về mảng đức tin và thông điệp tâm linh tại thị trường US.
-3. **`@thehealthcode-12` (The Health Code):**
-   - Kênh sức khỏe và dinh dưỡng tự nhiên thị trường Hoa Kỳ.
+1. **Kênh mới (lập từ tháng 8):**
+   - Làm ngách may mắn, phong thủy, tâm linh, tương tự các dạng phong thủy may mắn ở Việt Nam và Nhật mà tác giả từng chia sẻ.
+   - Tiêu đề đọc là hiểu ngách, ví dụ kiểu "người được chọn hãy chuẩn bị tinh thần".
+   - **Chiến thuật thông minh:** Mượn một nhân vật nổi tiếng nhưng đánh vào ngách may mắn, phong thủy, tâm linh đang rất trend.
+2. **Kênh lớn làm từ lâu:**
+   - Cũng dạng bán content, lấy nhân vật nổi tiếng bên thị trường US.
+   - Video mới gần đây nghiêng về hướng Chúa nên khá flop; video phổ biến ngày xưa nói về tiền bạc, có view nhưng đã cũ. Kênh vẫn bật kiếm tiền và đang làm bình thường.
+   - Nhân vật được mượn là người Hàn Quốc (tác giả không rõ chi tiết, đoán là mục sư/người sáng lập nào đó nổi tiếng ở Hàn); tên nhân vật được hiện trên màn hình trong video.
+3. **Lưu ý của tác giả về thị trường US:** Cạnh tranh rất cao, nên chỉ share những ngách cực mới; các kênh này làm cho tệp khán giả Mỹ và châu Âu.
 
 ### Thị trường Hàn Quốc (KR)
-4. **`@노년기건강길잡이` (Cẩm Nang Sức Khỏe Tuổi Già):**
-   - Kênh chuyên sâu về bí quyết trường thọ của các cụ già trên 100 tuổi.
-   - Những video đầu chỉ vài chục view nhưng bắt đầu tăng trưởng mạnh mẽ khi thuật toán định hình tệp người xem yêu thích chủ đề sức khỏe và lão hóa.
+4. **Kênh về người già:**
+   - Tác giả show một kênh đối thủ có 9 video, đánh vào tệp khán giả toàn là người trên 100 tuổi, thuộc ngách sức khỏe; nhìn thumbnail và tiêu đề là biết ngay.
+   - Những video đầu chỉ vài chục view là chuyện bình thường; khi được phân phối và làm đúng ngách nhỏ thì sẽ lên view.
 
 ---
 
 ## 2. BÀI HỌC VÀNG VỀ TƯ DUY MƯỢN NHÂN VẬT NỔI TIẾNG
 
-- **Không bám dập khuôn đối thủ:** Khi một nhân vật nổi tiếng đã có kênh lớn chiếm lĩnh, không nên sao chép đúng chủ đề cũ của họ (ví dụ: các video tiền bạc cũ đã bão hòa).
-- **Nhân bản sang ngách mới:** Giữ nguyên hình tượng nhân vật uy tín nhưng đưa vào các chủ đề ngách đang lên sóng (Phong thủy, may mắn, lời cảnh báo cho năm mới, luật hấp dẫn).
-- **Tiêu đề Hook tò mò cao độ:** *"Người được chọn hãy chuẩn bị tinh thần..."*, *"Đọc điều này trước khi quá muộn..."*.
+- **Không bám dập khuôn đối thủ:** Nếu làm theo, hãy bám theo kênh đầu tiên (kênh mới đánh đúng ngách may mắn phong thủy), không theo hướng Chúa của kênh lớn.
+- **Nhân bản sang ngách khác:** Một nhân vật nổi tiếng có thể nhân bản làm rất nhiều ngách khác nhau; chỉ mượn nhân vật rồi đi tìm các ngách trend khác, không cần bám kênh đối thủ.
+- **Nhân bản thị trường:** Không chỉ làm thị trường US, có thể đem về Việt Nam hoặc sang Hàn.
 
 ---
 
 ## 3. KỸ THUẬT EDIT BẢO VỆ KÊNH CHỐNG QUÉT AI 2026
 
-- **Tuyệt đối không dùng video Auto-AI 100%:** YouTube kiểm duyệt rất gắt gao các video tạo tự động hoàn toàn bằng AI (dễ bị dính lỗi nội dung rác lặp lại).
-- **Quy trình kết hợp chuẩn H2DEV:**
-  1. Video cảnh nền thiên nhiên thật (Pexels / Pixabay / footage tự nhiên chuyển động mượt mà).
-  2. Nhân vật đặt trang trọng ở vị trí trung tâm có đổ bóng và hòa sắc chuẩn.
-  3. Sóng âm trực quan (Audio Waveform) nhảy theo giọng đọc.
-  4. Lồng tiếng tự nhiên bằng ElevenLabs / Minimax, tránh âm the thé mất cảm xúc.
+- **Không làm hình ảnh hay video Auto-AI hoàn toàn:** Theo tác giả, hiện nay rất dễ bị quét; cần làm theo hướng hạn chế bị quét nhất có thể.
+- **Quy trình edit của các kênh mẫu:** Chỉ là quy trình tác giả đã hướng dẫn từ trước: video nền thiên nhiên chuyển động kèm nhân vật và sóng âm.
 
 ---
 
-## 4. DANH SÁCH HANDLE KÊNH ĐỐI THỦ TRA CỨU 1-CLICK
-
-- 🇺🇸 `@ElroiMotivation`
-- 🇺🇸 `@Faith_Spotlight`
-- 🇺🇸 `@thehealthcode-12`
-- 🇰🇷 `@노년기건강길잡이`
+## 4. DANH SÁCH KÊNH ĐỐI THỦ
+- Tất cả các kênh trong bài được tác giả để ở phần mô tả video để tham khảo.

@@ -5,12 +5,16 @@
 ---
 
 ## 1. CƠ CHẾ TEST VIEW CỦA THUẬT TOÁN
-- Khi đăng video, YouTube sẽ thử nghiệm phân phối đến 50 - 100 người xem ngẫu nhiên để đo 2 chỉ số: **CTR (Tỷ lệ nhấp)** và **AVD (Thời lượng xem trung bình)**.
-- Nếu CTR > 10% và AVD > 40%, video tiếp tục được đẩy lên tệp 1.000 người, rồi 10.000 người.
+- Chỉ số cần theo dõi thường xuyên là **lượt hiển thị** trong phần phân tích (phạm vi tiếp cận) của **từng video**, không phải của chung cả kênh.
+- Lượt hiển thị cao nhưng ít view nghĩa là tỷ lệ click đang thấp; lượt hiển thị thấp hoặc gần như không có nghĩa là video không được phân phối.
+- Ví dụ trong bài: một video của kênh tác giả có hơn 400.000 lượt hiển thị dù tỷ lệ click hơi thấp, nên vẫn phải giữ lại và làm tiếp.
 
 ---
 
 ## 2. QUY TẮC BỎ KÊNH CHUẨN
-- **Ngưỡng kiểm định:** Đăng liên tục 5 - 10 video chuẩn chỉnh về hình ảnh và kịch bản.
-- **Dấu hiệu bỏ kênh (Flop vĩnh viễn):** Cả 10 video đều có lượt hiển thị (Impressions) dưới 100, CTR < 2% và YouTube không phân loại được tệp khán giả.
-- **Hành động dứt khoát:** Không tiếc kênh chết, đổi sang mail mới và làm lại kênh mới theo ngách hẹp hơn.
+- **Ngưỡng kiểm định:** Trong khoảng 10 - 15 video đầu, xem lượt hiển thị của từng video.
+- **Dấu hiệu bỏ kênh:** Lượt hiển thị rất thấp hoặc không có, chỉ vài chục lượt hiển thị thì nên bỏ vì làm tiếp chỉ tốn thời gian; có thể kênh đã bị dính lỗi nào đó khiến không đẩy lên được.
+- **Nếu lượt hiển thị cao hoặc trung bình:** Làm tiếp đến khoảng 30 video. Theo kinh nghiệm của tác giả, thường chỉ cần 20 - 30 video (lâu nhất khoảng 30 video); tầm 20 - 25 video mà vẫn xác định không lên được thì bỏ. Không cần làm 100 video hay vài trăm video.
+- **Nếu lượt hiển thị cao nhưng tỷ lệ click thấp (khoảng 1% - 2%):** Phải cải thiện để tăng tỷ lệ click; tác giả cho rằng tỷ lệ click khoảng 8 - 10 là ngon, 8 đã là ngon rồi.
+- **Ví dụ kiên trì:** Một kênh mới 57 video, ban đầu chỉ vài chục đến vài trăm view, làm bám một ngách nhỏ khoảng nửa tháng thì bắt đầu nổ view.
+- **Hành động dứt khoát:** Nếu xác định không lên thì bỏ, làm lại hoặc làm ngách khác.

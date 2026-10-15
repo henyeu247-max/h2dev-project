@@ -11,36 +11,31 @@
 
 ## 1. PHÂN TÍCH TÌNH HUỐNG THỰC CHIẾN CỦA HỌC VIÊN PRO
 
-- **Loại hình kênh:** Kênh Reup / Bán Content dạng hoạt hình và truyện audio phong cách Trung Quốc / Việt Nam.
-- **Tình trạng:** Kênh đạt doanh thu hơn **$1,700/tháng**, nhưng đến thời điểm 31/08/2026 nhận được email từ YouTube thông báo tắt kiếm tiền vì lỗi **"Sử dụng lại nội dung" (Reused Content)** khi nộp đơn xét duyệt lại.
-- **Kết quả kháng nghị:** H2DEV hỗ trợ nộp video kháng nghị và được YouTube chấp thuận, khôi phục trạng thái Bật kiếm tiền thành công vào ngày **04/09/2026** (chỉ sau 4 ngày xử lý).
+- **Loại hình kênh:** Kênh Reup ghép hình (nguồn Trung và nguồn Việt) của một học viên trong gói Pro.
+- **Tình trạng:** Kênh đã bật kiếm tiền hơn 3-4 tháng và kiếm được hơn 1.000 đô (tiêu đề video ghi doanh thu hơn 1k7 $). Ngày 31/8 kênh nhận được email bị tắt kiếm tiền vì lỗi **"Sử dụng lại nội dung"**.
+- **Kết quả kháng nghị:** Tác giả hỗ trợ kháng và kháng về được; đến thời điểm quay video (ngày 4/9) kênh đã được kháng về.
+- **Ý nghĩa:** Cho thấy làm Reup vẫn kiếm được bình thường, kết quả khá lớn.
 
 ---
 
-## 2. NGUYÊN TẮC VÀNG TRONG VIDEO KHÁNG NGHỊ 5 PHÚT (REUSED CONTENT APPEAL)
+## 2. KINH NGHIỆM KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG
 
-Theo chính sách YouTube Partner Program (YPP) 2026, khi kháng lỗi sử dụng lại nội dung, tỷ lệ thành công đạt tới **99%** nếu tuân thủ nghiêm ngặt cấu trúc video kháng 5 phút sau:
+Tác giả đã nhận rất nhiều kênh và kháng thành công rất nhiều; với lỗi sử dụng lại nội dung, lỗi trùng lặp nội dung hay nội dung chung chung đều nhận kháng, tỷ lệ kháng về khoảng 99%.
 
-1. **Hiển thị định danh kênh trong 30 giây đầu:**
-   - Quay trực tiếp màn hình YouTube Studio, chỉ rõ URL kênh (`UC...`), thông tin bản quyền và tab Kiếm tiền.
-2. **Chứng minh quy trình biên tập có giá trị gia tăng (Significant Transformation):**
-   - Mở phần mềm dựng video (CapCut PC / Premiere Pro).
-   - Bật timeline dự án cho YouTube thấy từng track: Track âm thanh AI (lồng tiếng độc quyền), Track nhạc nền bản quyền, Track phụ đề động, và Track hình ảnh/video B-roll cắt ghép.
-   - Chứng minh tác quyền kịch bản: Mở file kịch bản word/notion hoặc lịch sử prompt dịch/viết lại để chứng minh kịch bản được sáng tạo độc lập, không phải sao chép nguyên văn.
-3. **Giải trình bằng giọng nói rõ ràng (Voice Over):**
-   - Sử dụng tiếng Anh hoặc tiếng Việt có phụ đề tiếng Anh giải thích từng bước sản xuất, nhấn mạnh tính giáo dục/giải trí sáng tạo của kênh.
+1. **Kênh nào hay dính lỗi:**
+   - Đa số là kênh Reup và Bán content.
+2. **Thời điểm hay bị báo lỗi:**
+   - Lúc kênh đủ điều kiện và bấm nút đăng ký bật kiếm tiền thì không được duyệt mà bị báo lỗi sử dụng lại nội dung.
+3. **Cách xử lý:**
+   - Gặp lỗi thì kháng nghị.
+   - Ai bị lỗi sử dụng lại nội dung hoặc trùng lặp nội dung cần hỗ trợ kháng thì liên hệ tác giả.
 
 ---
 
-## 3. TÀI NGUYÊN & SKILL CHUYÊN DỤNG CHO NGÁCH TRUYỆN AUDIO
+## 3. TÀI NGUYÊN ĐÍNH KÈM CHO NGÁCH TRUYỆN AUDIO
 
-Tác giả chia sẻ trực tiếp 2 kho tài nguyên độc quyền dành cho học viên:
+Tài liệu đính kèm của video là một bảng dữ liệu (file csv trong thư mục tài liệu của video), gồm:
 
-1. **Bảng tính tổng hợp Tài nguyên - Truyện Audio:**  
-   🔗 [Google Sheets: Tài nguyên Truyện Audio H2DEV](https://docs.google.com/spreadsheets/d/1MFndtUcn7J_phjru1GWS2JQc68k1tBPm69YvTfG7K2c/edit?usp=sharing)  
-   - Tổng hợp các nguồn kịch bản audio hot, link kho âm thanh hiệu ứng (SFX) và voice mẫu.
-2. **Kho lưu trữ Skill Truyện Audio:**  
-   🔗 [Google Drive: Thư mục Skill Truyện Audio](https://drive.google.com/drive/folders/1ZoctNgBXNcAI4DmaNc-ydh0GN1FBC9gM?usp=sharing)  
-   - Bao gồm các file mẫu prompt, cấu trúc kịch bản và asset hỗ trợ sản xuất tự động.
-3. **Mẫu Thumbnail Canva:**  
-   🔗 [H2DEV Masterclass: Hướng dẫn Setup và Mẫu Thumbnail](https://h2dev.vn/learn/study/bat-buoc-phai-xem-danh-cho-nguoi-moi-hoan-toan-chua-biet-gi-huong-dan-full-quy-trinh-setup-setting-kenh-chuan-ngay-tu-dau-theo-chinh-sach-moi-nhat-2026-tao-kenh-setup-cai-dat-kenh-seo-kenh-ngam-kenh-ngach-lam?ref=H2DEV-001)
+1. **Từ khóa search trên Zhihu:** nhóm chủ thể, nhóm ghép chủ thể + động từ, nhóm áp đặt tập thể và nhóm dạng câu hỏi.
+2. **SEO kênh:** Tag kênh, tag mô tả video và tag video cho ngách truyện audio.
+3. **Mẫu thumbnail Canva** và danh sách nguồn edit free.

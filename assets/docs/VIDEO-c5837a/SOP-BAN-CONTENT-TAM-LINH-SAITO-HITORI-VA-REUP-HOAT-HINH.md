@@ -9,39 +9,38 @@
 
 ---
 
-## 1. PHÂN TÍCH CASE STUDY KÊNH TRIỆU VIEW SAITO HITORI
+## 1. PHÂN TÍCH CASE STUDY NGÁCH SAITO HITORI
 
 ### Kênh mẫu: `@斎藤一人の福の言霊` (Lời Nói Phúc Đức của Saito Hitori)
 - **Thị trường:** 🇯🇵 Nhật Bản
-- **Nhân vật trung tâm:** Saito Hitori (Doanh nhân huyền thoại người Nhật, liên tục nhiều năm nộp thuế thu nhập cá nhân cao nhất Nhật Bản mà không cần niêm yết công ty).
-- **Hiện tượng bùng nổ view (phút 00:20):**
-  - Video dài từ 20 đến 30 phút.
-  - Tốc độ xem kinh khủng:
-    + *"Chỉ cần làm điều này trong phòng ngủ trước khi ngủ, kim vận bùng nổ"* → 2.2K view sau 22 giờ.
-    + *"Người đặt cây trầu bà ở vị trí này chắc chắn thành đại phú"* → 27K view sau 1 ngày (370 VPH).
-    + *"Xả thứ này vào bồn cầu, tiền bạc khổng lồ kéo đến"* → 44K view sau 2 ngày (289 VPH).
-    + *"Bỏ thứ này vào ví, tiền tài bừng tỉnh kéo về"* → 7.2K view sau 3 ngày.
-    + *"Trước ngày 2/7: Kỳ tích 68 năm có 1 lần, hành động sẽ gặp đại may mắn"* → 22K view sau 4 ngày.
-- **Phong cách đồ họa đặc trưng:**
-  - Hình ảnh Saito Hitori đội mũ phớt quay lưng bí ẩn trong bộ vest lịch lãm.
-  - Phối màu chữ cực kỳ kích thích thị giác: Chữ trắng to viền mỏng + chữ đỏ rực rỡ trên nền đen tuyền.
+- **Nhân vật trung tâm:** Saito Hitori, ngách tâm linh, tâm lý, may mắn (tương tự ngách tác giả đã chia sẻ 2–3 lần trước đó).
+- **Case study kênh mới của một học viên:**
+  - Kênh bắt đầu làm từ ngày 25 tháng 6, đúng 1 tuần khi quay bài.
+  - Video đầu tiên nổ hơn 100k view, các video tiếp theo lên tương tự.
+  - Mới 7 video mà tổng kênh đã hơn 200k view.
+- **Kênh thứ hai cũng mới lập 1 tuần:** Có video 20k view trong 2 ngày, nhưng mắc lỗi spam video (1 ngày đăng 3–4 video) nên không được đánh giá tốt.
+- **Cách đăng để tránh spam:** Với 4–5 video đầu, đăng cách ngày (ví dụ hôm nay ngày 3 thì ngày 4 nghỉ, ngày 5 đăng tiếp); sau khoảng 5 video thì đăng đều mỗi ngày 1 video. Đăng dồn dập sẽ không được phân phối và bị đánh spam.
 
 ---
 
 ## 2. DANH MỤC CÁC KÊNH MẪU ĐA THỊ TRƯỜNG TRONG BÀI GIẢNG
 
-1. **`@斎藤一人の福の言霊`** (Nhật Bản): Triết lý lời nói phúc đức Saito Hitori, thu hút kim vận phòng ngủ, nhà vệ sinh.
-2. **`@NắngNhỏToonReview`** (Việt Nam): Kênh review hoạt hình 2D cổ trang Trung Quốc, lồng tiếng cảm xúc, cắn đề xuất mạnh ở giới trẻ.
-3. **`@fansdrWilliamLI`** (Quốc tế): Kênh trích đoạn bài giảng dinh dưỡng của Bác sĩ William Li (Eat to Beat Disease — Ăn để đánh bại bệnh tật).
-4. **`@幻界と神域の扉`** (Nhật Bản): Kênh cánh cửa thần vực & tâm linh huyền bí.
-5. **`@다시이팔청춘-k5d`** (Hàn Quốc): Ngách tuổi thanh xuân trở lại (sức khỏe, làm đẹp tuổi 50).
-6. **`@양자과학이야기`** (Hàn Quốc): Câu chuyện khoa học lượng tử & bí ẩn vũ trụ.
+1. **`@斎藤一人の福の言霊`** (Nhật Bản): Ngách Saito Hitori (tâm linh, tâm lý, may mắn).
+2. **`@NắngNhỏToonReview`** (Việt Nam): Ngách hoạt hình Toon Review.
+3. **`@fansdrWilliamLI`** (Quốc tế): Ngách sức khỏe ở thị trường Hoa Kỳ; kênh ít video nhưng view hàng trăm nghìn.
+4. **`@幻界と神域の扉`** (Nhật Bản): Kênh được liệt kê trong mô tả video.
+5. **`@다시이팔청춘-k5d`** (Hàn Quốc): Một trong 2 kênh tác giả bổ sung thêm trong mô tả, chưa nói trong video.
+6. **`@양자과학이야기`** (Hàn Quốc): Ngách vật lý lượng tử; kênh bổ sung thêm trong mô tả, chưa nói trong video.
 
 ---
 
-## 3. CÔNG THỨC SẢN XUẤT NGÁCH SAITO HITORI ĐA NGÔN NGỮ
+## 3. CÔNG THỨC NHÂN BẢN VÀ REUP ĐA THỊ TRƯỜNG
 
-- **Tư duy nhân bản sang Việt Nam & Hàn Quốc:**
-  - Tư tưởng của Saito Hitori về "Lời nói tạo ra số phận" (Kotodama) và "Cách tiêu tiền thu hút may mắn" rất dễ đồng cảm với người Á Đông.
-  - Có thể chuyển thể các bài nói của Saito Hitori sang tiếng Việt hoặc tiếng Hàn, sử dụng ảnh phong cách quý ông quay lưng và thumbnail chữ trắng đỏ nền đen tương tự.
-- **Thời lượng vàng:** Duy trì video từ **25 đến 35 phút** để người nghe bật trong lúc ngủ hoặc làm việc, tối đa hóa doanh thu quảng cáo RPM.
+- **Ngách sức khỏe từ thị trường Hoa Kỳ:**
+  - Bám theo kênh này để lấy kịch bản, content về dịch, xào nấu và làm lại cho thị trường Việt, Nhật hoặc Hàn.
+  - Tác giả không khuyến khích làm trực tiếp ở thị trường US vì cạnh tranh rất cao (đặc biệt các pháp sư Ấn Độ làm rất mạnh).
+- **Reup hoạt hình:**
+  - Kênh ví dụ chỉ mới 24 video: video 8 ngày trước hơn 400k view, video 3 tuần trước gần 100k view.
+  - Cách tìm nguồn: copy tiêu đề, dịch từ tiếng Việt sang tiếng Trung bằng Google Dịch rồi tìm trên Bilibili; từ khóa này sẽ gợi ý ra nhiều dạng và nhiều tập, kể cả tập full dài hơn 1 tiếng. Các kênh này đều đang bật kiếm tiền.
+  - Khi edit giảm tốc độ xuống thì video sẽ dài hơn.
+- **Ngách Phật pháp:** Ngách này đã khá lâu nhưng 7 ngày trước vẫn còn view, không còn tăng mạnh; tham khảo thêm cho ai đang làm thị trường Nhật hoặc ngách Phật.

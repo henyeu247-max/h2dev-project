@@ -50,44 +50,44 @@ def corpus(sku, ins):
 ALIAS = {
  "capcut": r"capcode|capcom|cap ?cut|cap quyt|cat quyt|cap kut|cat cut|cap cot|cap cu",
  "elevenlabs": r"eleve|11 ?lag|eleven|11 ?lab|inlab|ilab|11 ?lap|el lab|elevenlab",
- "chatgpt": r"chat givety|chat ghi vi ti|chat beauty|chat glute|jackpt|jack pt|chat ?gpt|chat ?vt|chat ?gt|chat ?ut|chat ?uvt|chat ?gp|chat ?ti|chat ?cp|chat ?bot|gpt",
- "claude": r"claude|cloud|cleo|claw|clog|clode|clau|codelog|clo ",
+ "chatgpt": r"chat givety|chat ghi vi ti|chat beauty|chat glute|jackpt|jack pt|chat ?gpt|chat ?vt|chat ?gt|chat ?ut|chat ?uvt|chat ?gp|chat ?ti|chat ?cp|gpt",
+ "claude": r"claude|cloud|cleo|claw|clog|clode|clau|codelog",
  "midjourney": r"mid ?journey|mi ?journey",
- "pexels": r"pixel bay|pixel|pizza ?bay|pcp|pcb|pc bay|pexel|pcbay|pcpay|pcsell|pc ?sell|pecs",
+ "pexels": r"pixel bay|pixel|pizza ?bay|pcp|pcb|pc bay|pexel|pcbay|pcpay|pcsell|pc ?sell",
  "pixabay": r"pixel bay|pizza ?bay|pcp|pcb|pc bay|pixabay|pixa|pcbay|pcpay",
  "vbee": r"vobi|vbee|v bee|vibi|vb ",
  "bilibili": r"bilibili|bili ?bili|billy",
  "douyin": r"douyin|duyin|duin|doyin|dou ?yin|banduin",
  "vidiq": r"wix ?aiq|vid ?iq|vidi q|video iq",
  "gemini": r"jetmei|get ?me|gitmy|gitme|gitmy|gemini|gem ?ni|jemini",
- "adsense": r"adsense|ad sense|ads sen|adsen",
+ "adsense": r"adsense|ad sense|ads sen|adsen|google sn",
  "notepad": r"notepad|note pad",
  "canva": r"canva|can va|canvas|canh ve|canh vn|canh vr|canh vo",
  "photoshop": r"photoshop|photo shop",
  "premiere": r"premiere|premier",
  "whisk": r"whisk|visk|wisk",
  "youtube": r"youtube|you tube|yutube",
- "google": r"google|gu gon",
- "gmail": r"gmail|g mail|mail",
+ "google": r"google",
+ "gmail": r"gmail|g mail",
  "heygen": r"heygain|heygen|hey gen|heigen|heigin|hygen|hygiene|higgins|hay gen|hei gen",
  "minimax": r"minimax|mini max|minimart|minimap|winnie mart|mini mat|millimat|mini mac",
  "kimi": r"kimi|kismi|kiem mi",
  "grok": r"grok|grog",
  "deepseek": r"deepsick|deepseek|deep seek|depthsig|depth sig|dip sik",
  "videvo": r"videvo",
- "coverr": r"coverr|cover ",
+ "coverr": r"coverr",
  "vecteezy": r"vecteezy|vector ?ez",
  "remove": r"remove",
  "edge": r"edge",
  "leonardo": r"leonardo|leo ",
- "icloud": r"icloud|high loud|i cloud|hi cloud|hai cloud|ai cloud",
- "kling": r"kling|kking|kekin|kia king|keya king|ke kin|king ",
+ "icloud": r"icloud|i cloud",
+ "kling": r"kling|kking|kekin|kia king|ke kin",
  "tubeatlas": r"tube atlas|tu be atlas|tupi atlas|2b atlas",
  "mmo": r"mmo|momo|mo mo|mom mo",
  "notepad": r"notepad|note pad|notepat|note pat",
- "dreamina": r"dreamina|dream mini|dream ",
+ "dreamina": r"dreamina|dream mini",
  "veo": r"veo|v3|theo ba",
- "kie": r"kie ai|keya|kia ai",
+ "kie": r"kie ai|kia ai",
  "opus": r"opus|output|obus|oboot|op us",
  "summary": r"summar|sumari",
  "authenticator": r"authentic",
@@ -106,11 +106,11 @@ STOP = set("seo shorts mid-roll pivot niche original cinematic rpm vph ctr avd y
 # Số đã đối chiếu tay với transcript (ASR viết thành chữ: "5 trăm", "hai nghìn rưỡi", "một nghìn mấy")
 VERIFIED_NUM = {("VIDEO-027064", "500"), ("VIDEO-2aa1f7", "2500"), ("VIDEO-2aa1f7", "5000"), ("VIDEO-2aa1f7", "1000")}
 
-def grounded(tok, corp, sku=None):
+def grounded(tok, corp, sku=None, strict=False):
     n = norm(tok)
     if sku and (sku, tok) in VERIFIED_NUM:
         return True
-    if not n or n in STOP:
+    if not n or (n in STOP and not strict):
         return True
     if (" " + n + " ") in corp or n in corp:
         return True
@@ -137,7 +137,7 @@ def check(sku, rec, ins):
     tools, texts = fields(rec)
     for t in tools:
         parts = [p for p in re.split(r"\s*/\s*", re.sub(r"\(.*?\)", "", t)) if p.strip()]
-        if not any(all(grounded(w, corp, sku) for w in tokens(p) or [p]) for p in parts):
+        if not any(all(grounded(w, corp, sku, strict=True) for w in tokens(p) or [p]) for p in parts):
             bad.append(("tool", t))
     for c in rec.get("channels_mentioned") or []:
         nm = c if isinstance(c, str) else json.dumps(c, ensure_ascii=False)

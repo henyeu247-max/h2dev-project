@@ -9,59 +9,35 @@
 
 ## 1. TỔNG QUAN CHIẾN LƯỢC BKT THẦN TỐC (CASE STUDY THỰC CHIẾN)
 
-- **Case study bài giảng `VIDEO-84a039`:** Kênh mới tạo vỏn vẹn **6 ngày**, đăng tải **5 video** chất lượng cao chuẩn ngách tâm linh tích cực / triết lý cuộc sống đã đạt trên **2.000 subscribers** và vượt mốc **4.000 giờ xem**.
-- **Yếu tố quyết định tốc độ duyệt:**
-  - Không phải số lượng video, mà là **độ sạch của tín hiệu kênh (Channel Trust Signals)**.
-  - 100% video trên kênh có sự nhất quán về giọng đọc, phong cách hình ảnh và không dính bất kỳ cờ ngầm (shadow strikes) nào về bản quyền âm thanh hoặc nội dung lặp lại.
+- **Case study trong bài giảng:** Kênh thị trường Nhật lập từ ngày 30 tháng 5, tác giả quay video vào ngày 5 tức mới **6 ngày**, kênh đã vượt **2.000 subscribers** và đủ điều kiện bật kiếm tiền.
+- **Hướng nội dung của kênh:** Tâm linh theo hướng tích cực (lời chúc mừng, lời cảm ơn, may mắn), đi vào một nhân vật Nhật riêng, cùng dạng với ngách Nikola Tesla mà tác giả đã chia sẻ trước đó.
+- **Cách kênh làm video:** Chèn video hoặc hình ảnh tự nhiên, phụ đề chạy chữ, tên kênh và tên nhân vật; logo chỉ chèn vào, không cầu kỳ. Tác giả khuyên nên làm video thay vì chỉ dùng ảnh.
+- **Yếu tố cần giữ:** Kiên trì với một ngách, không đang làm ngách này lại nhảy sang ngách khác.
 
 ---
 
-## 2. QUY TRÌNH PRE-AUDIT RÀ SOÁT KÊNH TRƯỚC KHI BẤM NỘP ĐƠN
+## 2. QUY TRÌNH TÌM HIỂU NGÁCH TRƯỚC KHI LÀM THEO
 
-Trước khi nhấn nút "Apply Now" (Đăng ký ngay) trong YouTube Studio, bắt buộc thực hiện kiểm tra 4 bước:
-
-### Bước 1: Rà soát Bản Quyền Âm Thanh (Audio Fingerprint Clean)
-- Mở danh sách toàn bộ video trên kênh.
-- Kiểm tra cột "Hạn chế" (Restrictions): Phải là **Không có (None)** 100%.
-- Bất kỳ video nào dính dù chỉ 1 đoạn nhạc gắn cờ "Bản quyền - Doanh thu chia sẻ" hoặc "Xác nhận quyền sở hữu Content ID" phải:
-  - Dùng công cụ YouTube Editor tắt tiếng đoạn nhạc đó, HOẶC
-  - Chuyển video đó sang chế độ **Không công khai (Unlisted)** trước khi nộp đơn.
-
-### Bước 2: Thanh Lọc Video Nghi Vấn "Nội Dung Tự Động / Trùng Lặp" (Inauthentic Content)
-- Nếu kênh có những video đầu tiên thử nghiệm dùng slide ảnh tĩnh lặp lại hoặc nhạc miễn phí stock đại trà:
-  - Tạm ẩn (Unlisted) các video yếu này.
-  - Giữ lại trên kênh công khai **tối thiểu 5–7 video chuẩn chỉ nhất** (có chuyển động B-roll, có phụ đề động, có sóng âm waveform, có thuyết minh rõ ràng).
-
-### Bước 3: Đồng Bộ & Hoàn Thiện Nhận Diện Kênh (Channel Metadata & Branding)
-- **Ảnh đại diện (Avatar):** Thiết kế sắc nét, đúng chủ đề ngách.
-- **Ảnh bìa (Banner):** Có slogan rõ ràng, lịch đăng video cố định.
-- **Mô tả kênh (About/Description):** Nêu rõ sứ mệnh kênh, cam kết giá trị nội dung cho khán giả, ghi rõ email liên hệ công việc (Business Inquiry).
-- **Cài đặt từ khóa mặc định (Channel Tags):** 10–15 từ khóa chuẩn ngách, không nhồi nhét từ khóa rác.
-
-### Bước 4: Kiểm Tra Trạng Thái Tài Khoản AdSense (GA Linkage)
-- Tài khoản Google AdSense đã xác minh danh tính và liên kết thành công ở Bước 2 của quy trình YPP.
-- Thông tin cá nhân, địa chỉ nhận mã PIN và thông tin thuế W-8BEN đã sẵn sàng.
+Các bước tác giả thực hiện trong video:
+1. Dịch tiêu đề video của kênh đối thủ để biết ngách nhỏ đang đi vào chủ đề gì.
+2. Copy tên nhân vật, tìm trên Google ở chế độ AI để biết nhân vật là ai, vì sao nổi tiếng và vì sao dễ làm.
+3. Tìm tên nhân vật đó trên YouTube để ra thêm các kênh đối thủ và nguồn tham khảo.
+4. Làm thumbnail đúng phông chữ và phong cách của đối thủ, chỉ đổi hình nhân vật (ví dụ mặc áo màu khác).
+5. Khán giả bình luận về chính nhân vật đó; một số người nhận ra nội dung làm bằng AI, tác giả cho rằng không cần quan tâm, miễn video nổ view.
 
 ---
 
-## 3. KHUNG GIỜ VÀNG NỘP ĐƠN DUYỆT TRONG 6–12 TIẾNG
+## 3. KÊNH THỨ HAI: NGÁCH VỀ CHÚA THỊ TRƯỜNG NHẬT
 
-Hệ thống xét duyệt YPP gồm 2 vòng:
-1. **Vòng 1 — Thuật toán AI:** Quét toàn bộ kênh trong 1–2 giờ đầu. Nếu các chỉ số Pre-Audit sạch, hồ sơ chuyển sang hàng chờ thủ công (Human Review Queue).
-2. **Vòng 2 — Reviewer thủ công (Human Reviewer):**
-
-### Khung Giờ Nộp Đơn Tối Ưu:
-- **Thời điểm vàng:** **8h00 – 11h00 sáng thứ Hai đến thứ Tư** (Tính theo giờ làm việc của đội ngũ kiểm duyệt Google APAC - Singapore / Tokyo).
-- **Tránh nộp:** Chiều tối thứ Sáu hoặc cuối tuần (Hồ sơ sẽ bị dồn ứ đến thứ Hai tuần sau, dễ rơi vào quét định kỳ hàng tuần của bot).
+- Kênh thị trường Nhật làm từ ngày 24 tháng 5, mới có 8 video.
+- Video nổ cao nhất khoảng 10k view; thời lượng video khá dài, trung bình 42 – 44 phút.
+- Hướng làm: nhân bản từ thị trường US sang Nhật, lấy kịch bản từ bên US rồi làm lại; kịch bản và nội dung không bao giờ thiếu nếu theo tư duy nhân bản thị trường.
+- Video dài thì RPM chắc chắn cao, nhưng quan trọng là kịch bản hay để giữ chân người xem. YouTube đánh giá video dựa trên thời lượng xem trung bình; thời lượng thấp thì không được phân phối mạnh, giữ chân tốt thì được đẩy rất cao.
 
 ---
 
-## 4. CHECKLIST PHÒNG THỦ CHÍNH SÁCH YPP 2026-2027
+## 4. LƯU Ý THỰC CHIẾN TÁC GIẢ NHẮC
 
-| Hạng mục kiểm tra | Tiêu chuẩn đạt | Hành động nếu chưa đạt |
-|:---|:---:|:---|
-| **Xác minh 2 bước (2FA)** | Bật Authenticator | Tuyệt đối không dùng SMS OTP vùng địa lý lạ |
-| **Cảnh cáo nguyên tắc cộng đồng** | 0 gậy (Active Community Guidelines Strikes: 0) | Nếu dính gậy, phải chờ hết hạn 90 ngày |
-| **Giờ xem hợp lệ (Public Watch Hours)** | >= 4.000 giờ (hoặc 10M Shorts) | Giờ xem từ video Unlisted/Private không được tính |
-| **Video tiêu biểu có view cao nhất** | 100% sạch, đúng ngách | Reviewer luôn mở video nhiều view nhất để kiểm tra thủ công |
-| **Tuyên bố giá trị sáng tạo (Commentary)** | Có lồng tiếng phân tích riêng | Không nạp video chỉ có nhạc nền và chữ chạy tự động |
+- Tác giả chia sẻ thêm kênh của một thành viên trong nhóm vừa làm khoảng một tuần đã nổ view; các kênh của anh em khác nhạy cảm về ngách nên chỉ chia sẻ khi được cho phép.
+- Ngách này theo tác giả vẫn đang trend, tác giả đã nhắc nhiều lần từ tháng 8.
+- Quan trọng là làm đúng quy trình đã hướng dẫn và kiên trì, không nhảy ngách.

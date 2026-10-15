@@ -3,50 +3,24 @@
 > **Mã SKU:** VIDEO-f77c31 · **Khán giả:** Nam/Nữ Việt Nam trên 60–65 tuổi · **Doanh thu mẫu:** 1–2 triệu VNĐ / ngày
 
 ---
+## 1. Thông Tin Kênh Mẫu & Khán Giả
 
-## 1. Đặc Điểm Nhân Khẩu Học & Hành Vi Khán Giả Vàng
-
-- **Thời gian xem (AVD) cực cao:** Người lớn tuổi có thời gian rảnh nhiều, xem video rất kiên nhẫn, hầu như không tua nhanh (skip), sẵn sàng nghe hết video từ 15–30 phút.
-- **Tương tác chân thực:** Rất hay nhấn Thích (Like), chia sẻ lên Zalo/Facebook cá nhân cho bạn bè đồng niên, và viết bình luận dài tâm sự.
-- **Tỷ lệ hiển thị quảng cáo cao:** Rất ít sử dụng tiện ích chặn quảng cáo (AdBlock) so với giới trẻ, giúp tối đa hóa số lần hiển thị quảng cáo và tăng RPM view Việt lên mức cao nhất.
-
----
-
-## 2. Các Chủ Đề "Nóng" Giữ Chân Người Cao Tuổi
-
-| Nhóm chủ đề | Nội dung trọng tâm | Cảm xúc chủ đạo |
-|---|---|---|
-| **Đạo làm người & Nhân quả** | Lòng hiếu thảo, đối nhân xử thế, luật nhân quả ở đời, bài học đối xử với con dâu/con rể | Sâu lắng, chiêm nghiệm |
-| **Sức khỏe & Dưỡng sinh** | Mẹo dân gian, bài thuốc tự nhiên, cách giữ tâm thanh thản, giấc ngủ người già | Quan tâm, thiết thực |
-| **Hồi tưởng & Lịch sử** | Ký ức thời bao cấp, nếp sống xưa, hoài niệm về làng quê, tình làng nghĩa xóm | Bồi hồi, xúc động |
-| **Chuyện gia đình & Tuổi già** | Sống tự lập khi về già, tích lũy tuổi già, tâm sự người cao tuổi cô đơn | Đồng cảm, thấu hiểu |
+- **Thị trường:** Việt Nam. Kênh làm cho người cao tuổi, trên 60 tuổi, trên 65 tuổi. Có một ít view Hoa Kỳ nhưng không đáng kể, chủ yếu là view Việt.
+- **Mốc kiếm tiền:** Kênh vừa bật kiếm tiền vào ngày 7 tháng 5, bắt đầu có tiền từ ngày 8.
+- **Doanh thu sau đúng 10 ngày:** Tác giả quy ra tiền Việt Nam Đồng để show. Trung bình một ngày nhảy khoảng 1 triệu; hai ngày gần đây bắt đầu lên, nhảy hơn 2 triệu mỗi ngày.
+- **Lưu ý:** YouTube cập nhật doanh thu khoảng 2 ngày một lần, nên số liệu hiển thị theo từng đợt cập nhật.
 
 ---
 
-## 3. Quy Trình Sản Xuất Video Bán Content 5 Bước
+## 2. Video Hướng Dẫn Đầy Đủ Trong Gói Pro
 
-```
-[1. Kịch bản AI] -> [2. Thu âm giọng đọc ấm áp] -> [3. Sưu tầm Footage thực tế] -> [4. Dựng hình & Sub lớn] -> [5. Đăng tải & Tối ưu SEO]
-```
-
-1. **Lên kịch bản AI:**
-   - Dùng ChatGPT / Gemini với vai trò người bạn tâm giao, ngôn từ kính cẩn ("thưa quý vị và các bạn", "kính chúc quý cô bác").
-   - Nhịp điệu chậm rãi (120–135 từ/phút), câu văn gãy gọn, dễ hiểu.
-2. **Âm thanh & Giọng đọc:**
-   - Giọng đọc: Nam/Nữ miền Bắc hoặc miền Nam truyền cảm, âm sắc trầm ấm (ví dụ: Ngọc Huyền hoặc voice cao tuổi).
-   - Nhạc nền (BGM): Đàn tranh, sáo trúc hoặc piano êm dịu, âm lượng nhỏ hơn giọng đọc 18–20dB để không làm át tiếng.
-3. **Hình ảnh & Tư liệu (Footage):**
-   - Sưu tầm hình ảnh/video chất lượng cao về làng quê, thiên nhiên, hoạt động đời thường từ YouTube Commons, Pexels, Douyin văn hóa.
-   - Luôn đảo chiều, zoom nhẹ, color grade để tạo biến thể độc nhất (né quét nội dung sử dụng lại).
-4. **Phụ đề (Subtitle) cho người già:**
-   - Cỡ chữ phụ đề lớn (chiếm 15–20% chiều cao màn hình), viền đen nền tương phản cao để xem rõ trên TV hoặc điện thoại không cần kính lão.
-5. **Thumbnail & Tiêu đề:**
-   - Chữ to, 1–2 dòng ngắn gọn, hình ảnh người cao tuổi phúc hậu hoặc phong cảnh làng quê yên bình.
+- Tác giả đã đăng video show kênh thực chiến không che và hướng dẫn full quy trình bán content, không giấu gì. Cách tìm: vào mục mới cập nhật trong video Pro và chọn video này.
+- Video dài hơn 30 phút (khoảng 31 phút), có đầy đủ: cách tạo kịch bản, cách edit video, lấy nguồn tài nguyên ở đâu, tạo video như thế nào và xử lý âm thanh.
+- Đây là video cực kỳ quan trọng để nhân bản thị trường; bản đang xem là bản free nên tác giả làm mờ một phần.
 
 ---
 
-## 4. Cảnh Báo & Lỗi Cần Tránh
+## 3. Lưu Ý Khi Thực Hiện
 
-- ❌ **Không giật tít câu view lừa đảo (clickbait bẩn):** Gây mất lòng tin, người lớn tuổi sẽ chặn kênh ngay.
-- ❌ **Không dùng nhạc giật gân, tiết tấu nhanh, hiệu ứng âm thanh chói:** Người già nghe rất mệt tai và bấm thoát.
-- ❌ **Không ghép video thô thiển không có bình luận:** Bắt buộc phải có lời dẫn chuyện xuyên suốt để đạt chuẩn YPP.
+- Nội dung chi tiết về quy trình sản xuất (kịch bản, nguồn tài nguyên, edit, âm thanh) nằm trong video Pro nói trên; bài giảng này chỉ show số liệu doanh thu và thông số kênh.
+- Không có thông tin về chủ đề, giọng đọc hay thời lượng chuẩn trong bài giảng này; cần xem video Pro để lấy.

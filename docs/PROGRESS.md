@@ -1,6 +1,10 @@
 # Tiến độ — H2DEV-Project
 
-> Cập nhật cuối phiên: **2026-10-15** (đợt 11). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
+> Cập nhật cuối phiên: **2026-10-15** (đợt 12). File này được viết lại mỗi cuối phiên. Đọc đầu phiên cùng `AGENTS.md`, plan đang mở và lịch sử commit gần nhất.
+
+## Phiên 2026-10-15 (đợt 12) — neo nốt SOP .md và công cụ (xem `CHANGELOG.md` đợt 12)
+- Đã đóng: 67 SOP `.md` theo video viết lại từ nguồn thật (gate `check-grounding-md.py`, 0 token); công cụ chỉ có bằng chứng ASR mơ hồ đã bỏ/gộp; thông báo heuristic ở Player khớp thực tế. Cache `uifix86`.
+- Còn mở: `visual_audio_checked`/`accuracy_status` (không có bằng chứng hình ảnh trong dự án); 3 tài liệu không gắn video; 58 catch rỗng best-effort; M5 BLOCKED; M7 chưa rõ chủ.
 
 ## Phiên 2026-10-15 (đợt 11) — neo nội dung sinh vào transcript (H2DEV-SCAR-030; chi tiết `CHANGELOG.md` đợt 11)
 - Đã đóng: tools/edit_sop/avoid_flags/sop_steps/key_takeaways/channels của 144 video viết lại từ nguồn thật; gate `check-grounding.py --live` (0 ungrounded) nằm trong `validate-project`; S5 chỉ báo khi thiếu khoá; 7 catch rỗng mất dữ liệu → `console.warn`. Cache `uifix85`.

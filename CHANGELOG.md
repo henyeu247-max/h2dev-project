@@ -6,7 +6,7 @@
 - **`voice-dna-probe-final.json`:** rút 4 kênh khỏi danh sách chết (`@HDVietsub-h7u`, `@redvoices90`, `@toastertalesusa`, `@purebusinesshorts`); đối chiếu `kenh-mau.json`: cả 4 `dead=false`, đo 2026-10-14; số đếm `CHANNEL_DELETED_404` 35 = số mục thật.
 - **`h2dev-components-lesson-row.css`:** `.row-title` cao tối thiểu 44 px (vùng chạm), khớp ngoại lệ 22 px của `gate-p1`.
 - **`.gitignore`:** thêm `.pi/`, `.playwright-mcp/` (thư mục do công cụ sinh).
-- **Bump version  → ** (3 file HTML + tên cache `sw.js`) vì CSS đổi nội dung dưới cùng .
+- **Bump version `uifix82` → `uifix83`** (3 file HTML + tên cache `sw.js`) vì CSS đổi nội dung dưới cùng `?v=`.
 - **Nghiệm thu trên working tree:** `validate-project`, 5 gate, guard, `check-ui-classes`, `check-reconcile-handles`, `sync-counts --check` exit 0; `deep-ui-acceptance` 11/11; `playwright-g2-acceptance` 23/23.
 
 ## 2026-10-15 (đợt 8) — XỬ LÝ 3 TỒN ĐỌNG SAU DEPLOY TỪ GỐC

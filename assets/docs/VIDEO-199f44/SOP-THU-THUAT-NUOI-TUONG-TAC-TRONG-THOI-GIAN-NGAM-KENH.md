@@ -1,6 +1,6 @@
 # SOP THỦ THUẬT NUÔI TƯƠNG TÁC TỰ NHIÊN TRONG THỜI GIAN NGÂM KÊNH
-> **Mã SKU:** `VIDEO-199f44` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 02 phút 08 giây
-> **Mục tiêu:** Hướng dẫn cách tương tác tự nhiên với nền tảng để tạo tín hiệu người dùng thật trước khi đăng video đầu tiên.
+> **Mã SKU:** `VIDEO-199f44` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 02 phút 25 giây
+> **Mục tiêu:** Hướng dẫn cách tương tác trong thời gian ngâm kênh trước khi đăng video.
 
 
 ---

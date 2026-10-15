@@ -1,15 +1,14 @@
-# Cẩm Nang Thực Chiến: Quy Trình Reup Hoạt Hình 2D Bilibili Bật Kiếm Tiền & Case Study Kênh "Mộng Đam Mỹ"
+# Cẩm Nang Thực Chiến: Quy Trình Reup Hoạt Hình 2D Bilibili Bật Kiếm Tiền
 
 > **Mã bài học:** `VIDEO-28e1cc`  
-> **Tiêu đề gốc:** Show kênh mới vừa bật kiếm tiền Và Hướng dẫn thực chiến full quy trình làm Reup ngách nhỏ hoạt hình từ bilibili  
-> **Chủ đề thực tế:** Mổ xẻ chi tiết kênh YouTube thực chiến "Mộng Đam Mỹ" vừa được xét duyệt bật kiếm tiền thành công; hướng dẫn toàn diện quy trình tải nguồn video từ Bilibili, dịch thuật kịch bản và biên tập lách bản quyền Fair Use.  
+> **Chủ đề thực tế:** Mổ xẻ chi tiết kênh YouTube thực chiến vừa bật kiếm tiền; hướng dẫn quy trình tải nguồn video từ Bilibili, dịch thuật kịch bản và biên tập để tránh bản quyền.  
 > **Thời lượng bài giảng:** 20 phút 29 giây  
 > **Thị trường mục tiêu:** 🇻🇳 Việt Nam / 🇨🇳 Trung Quốc (Mã: `VN-CN`)  
-> **Nhóm nội dung:** Reup Hoạt Hình Bilibili / Khai Thác Nội Dung Hoạt Họa 2D  
+> **Nhóm nội dung:** Reup Phim Đam Mỹ Bilibili  
 
 ---
 
-## 1. BẰNG CHỨNG BẬT KIẾM TIỀN THỰC TẾ: KÊNH "MỘNG ĐAM MỸ"
+## 1. BẰNG CHỨNG BẬT KIẾM TIỀN THỰC TẾ: KÊNH ĐAM MỸ
 
 - **Kênh trong bài:** Kênh reup phim đam mỹ của một thành viên trong nhóm Pro, vừa được bật kiếm tiền vào ngày 9 tháng 7.
 - **Nhận định của tác giả:**
@@ -31,7 +30,7 @@ Trong bài giảng, tác giả lấy ví dụ 2 kênh làm dạng đam mỹ trê
 
 ---
 
-## 3. QUY TRÌNH REUP HOẠT HÌNH LÁCH BẢN QUYỀN FAIR USE
+## 3. QUY TRÌNH REUP PHIM ĐAM MỸ, TRÁNH BẢN QUYỀN
 
 1. **Bước 1 — Tải video từ Bilibili:**
    - Mở video trên Cốc Cốc, bấm nút tải ở góc trái và chờ tải về.

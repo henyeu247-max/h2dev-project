@@ -1,11 +1,10 @@
-# Cẩm Nang Thực Chiến: Ngách Lời Chúa Cầu Nguyện Hàn Quốc & Quy Trình Xử Lý Triệt Để Lỗi 0 View, Flop Kênh Do Làm Lan Man
+# Cẩm Nang Thực Chiến: Ngách Lời Chúa Hàn Quốc & Quy Trình Xử Lý Triệt Để Lỗi 0 View, Flop Kênh Do Làm Lan Man
 
 > **Mã bài học:** `VIDEO-a7bfd0`  
-> **Tiêu đề gốc:** Update ngách mới và khám kênh + giải thích một số lỗi tránh bị 0 view, lẹt đẹt, không lên được  
-> **Chủ đề thực tế:** Phân tích ngách Lời Chúa / Cầu nguyện Kitô giáo tại thị trường Hàn Quốc; quy trình khám kênh thực chiến và bài học đắt giá về việc giữ vững 1 ngách cốt lõi để không bị thuật toán bóp 0 view.  
+> **Chủ đề thực tế:** Phân tích ngách Lời Chúa / tâm linh tại thị trường Hàn Quốc; khám kênh và bài học giữ vững 1 ngách cốt lõi để tránh lẹt đẹt.  
 > **Thời lượng bài giảng:** 10 phút 23 giây  
-> **Thị trường mục tiêu:** 🇰🇷 Hàn Quốc / 🇻🇳 Việt Nam (Mã: `KR-VN`)  
-> **Nhóm nội dung:** Lời Chúa & Tâm Linh Ngoại / Kỹ Thuật Trị Flop Kênh  
+> **Thị trường mục tiêu:** 🇰🇷 Hàn Quốc  
+> **Nhóm nội dung:** Lời Chúa & Tâm Linh
 
 ---
 
@@ -37,14 +36,14 @@ Trong bài giảng, tác giả chỉ ra sai lầm của nhiều người làm k�
 
 ---
 
-## 3. QUY TRÌNH 4 BƯỚC KHÁM KÊNH & HỒI SINH KÊNH BỊ FLOP
+## 3. CÁCH XỬ LÝ KÊNH BỊ FLOP (THEO BÀI GIẢNG)
 
-1. **Bước 1 — Xác định nguyên nhân bị quét hoặc lẹt đẹt:**
+1. **Nguyên nhân bị quét hoặc lẹt đẹt:**
    - Theo tác giả, YouTube hiện nhẹ hơn lúc trước. Nguyên nhân chính thường là Gmail của kênh mua về bị ảnh hưởng (nhất là khi mua bên ngoài rồi đăng nhập), hoặc nội dung kịch bản giật tít, câu view, không đúng sự thật.
-2. **Bước 2 — Làm sạch nội dung:**
+2. **Làm sạch nội dung:**
    - Khi kịch bản đã tạo ra, nên đọc lại, dịch lại, không để giật tít, câu view hay sai sự thật. Quan trọng là làm đúng và làm sạch.
-3. **Bước 3 — Bám vào video đã nổ view:**
+3. **Bám vào video đã nổ view:**
    - Đọc tiêu đề các video cao view nhất của kênh, lấy từ khóa, ngách của video đó rồi làm thật nhiều video cùng hướng.
-4. **Bước 4 — Kiên nhẫn và làm thực tế:**
+4. **Kiên nhẫn và làm thực tế:**
    - Kênh mới thường phải 10 đến 15 video mới bắt đầu được phân phối, không phải kênh nào cũng lên ngay.
    - Phải tự làm thực tế thì mới rút ra được kinh nghiệm; đừng FOMO nhảy từ ngách này sang ngách khác.

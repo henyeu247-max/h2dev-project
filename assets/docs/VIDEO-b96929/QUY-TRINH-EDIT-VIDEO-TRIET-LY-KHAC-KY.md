@@ -1,16 +1,15 @@
-# SOP Thực Chiến: Quy Trình Dựng Video Triết Lý Khắc Kỷ (Stoicism) Trên CapCut Desktop
+# SOP Thực Chiến: Quy Trình Dựng Video Triết Lý Khắc Kỷ Trên CapCut Desktop
 
 > **Mã bài học:** `VIDEO-b96929`  
-> **Chủ đề:** Hướng dẫn chi tiết kỹ thuật dựng video ngách Triết lý sống & Khắc kỷ từ A-Z (Xử lý âm thanh, B-roll tượng đá, Hiệu ứng Ken Burns & Nhạc nền trầm ấm)  
+> **Chủ đề:** Hướng dẫn kỹ thuật dựng video ngách triết lý sống & khắc kỷ (âm thanh voiceover, B-roll tượng đá và thiên nhiên, zoom chậm và chuyển cảnh mờ dần, nhạc nền, phụ đề)  
 > **Thời lượng video bài giảng:** 21 phút 15 giây  
-> **Thị trường mục tiêu:** 🌐 Ngoại (US, UK, Global) & 🇻🇳 Việt Nam
+> **Thị trường mục tiêu:** bài giảng không nêu thị trường cụ thể
 
 ---
 
-## 1. ĐẶC ĐIỂM THẨM MỸ CỦA VIDEO TRIẾT LÝ KHẮC KỶ
-- **Không gian cảm xúc:** Tĩnh lặng, trầm mặc, trang nghiêm và sâu sắc.
-- **Nhịp dựng:** Chậm rãi, từ tốn, để khán giả có khoảng trống suy ngẫm sau mỗi câu triết lý đắt giá.
-- **Hình ảnh nhận diện:** Hình ảnh tượng đá cổ đại và video thiên nhiên chuyển động chậm, khớp với từng câu thoại triết lý.
+## 1. ĐẶC ĐIỂM CỦA VIDEO TRIẾT LÝ KHẮC KỶ
+- **Nhịp dựng:** chậm rãi; zoom chậm và chuyển cảnh mờ dần.
+- **Hình ảnh:** hình ảnh tượng đá cổ đại và video thiên nhiên chuyển động chậm, tương ứng với từng câu thoại triết lý.
 
 ---
 
@@ -32,7 +31,7 @@
 ### Bước 4: Thiết lập Nhạc Nền Sâu Lắng
 - Chèn nhạc nền không lời phong cách sâu lắng.
 - **Cân bằng âm lượng:**
-  - Nhạc nền: điều chỉnh ở mức `-18dB đến -22dB` để không lấn át lời nói.
+  - Nhạc nền: điều chỉnh ở mức `-18dB đến -22dB`.
 
 ### Bước 5: Tạo Phụ Đề Tự Động & Xuất Bản Video
 - Tạo phụ đề tự động tiếng Anh/Việt, chọn font chữ trang nhã.

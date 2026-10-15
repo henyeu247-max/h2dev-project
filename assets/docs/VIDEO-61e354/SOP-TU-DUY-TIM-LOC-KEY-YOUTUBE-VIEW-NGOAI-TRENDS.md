@@ -1,5 +1,5 @@
 # SOP HƯỚNG DẪN TƯ DUY TÌM, LỌC KEY YOUTUBE VIEW NGOẠI & XÁC ĐỊNH KEY TRENDS
-> **Mã SKU:** `VIDEO-61e354` | **Module:** M03 - Tư duy lọc Key & Xu hướng | **Thời lượng:** 07 phút 10 giây
+> **Mã SKU:** `VIDEO-61e354` | **Module:** M03 - Tư duy lọc Key & Xu hướng | **Thời lượng:** 22 phút 39 giây
 > **Mục tiêu:** Tư duy xác định key (ngách) và cách lọc, đo key trước khi làm kênh YouTube view ngoại, để tránh làm xong mà không có view.
 
 ---

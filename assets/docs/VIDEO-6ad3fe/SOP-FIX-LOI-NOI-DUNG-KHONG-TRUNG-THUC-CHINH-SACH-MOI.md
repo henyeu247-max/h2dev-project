@@ -1,5 +1,5 @@
 # SOP FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC THEO CHÍNH SÁCH MỚI YOUTUBE 2026
-> **Mã SKU:** `VIDEO-6ad3fe` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 04 phút 08 giây
+> **Mã SKU:** `VIDEO-6ad3fe` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 04 phút 28 giây
 > **Mục tiêu:** Hiểu nguồn gốc và cách hạn chế lỗi nội dung không trung thực năm 2026 khi YouTube quét kênh.
 
 ---
@@ -7,7 +7,7 @@
 ## 1. NGUYÊN NHÂN BỊ QUÉT NỘI DUNG KHÔNG TRUNG THỰC
 - Theo tác giả, khoảng 90% lỗi này đến từ kịch bản.
 - Kịch bản giật tít, câu view, nói sai sự thật, đặc biệt các dạng tin tức chính trị.
-- Hình ảnh, video: nên dùng hình ảnh tự nhiên hoặc nhiều ảnh ghép lại với nhau, càng nhiều càng tốt; kênh chỉ dùng một ảnh như một số kênh đối thủ thì chưa an toàn.
+- Hình ảnh, video: nên dùng hình ảnh tự nhiên hoặc nhiều ảnh ghép lại với nhau, càng nhiều càng tốt; kênh chỉ dùng một ảnh như một số kênh đối thủ.
 - Bối cảnh: cuối năm trước xuất hiện rất nhiều tool sản xuất video hàng loạt, không có kịch bản, không mang giá trị cho người xem (ví dụ video giải cứu động vật) nên YouTube phải quét gắt. Tác giả nghĩ sắp tới sẽ nhẹ lại bớt.
 
 ---

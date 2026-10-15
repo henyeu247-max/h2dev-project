@@ -3,7 +3,7 @@
 > **Mã bài học:** `VIDEO-44cf22`  
 > **Chủ đề:** Chia sẻ từ khóa thực chiến, giải mã cơ chế RPM cao theo thị trường và chiến lược sản xuất video dài (> 1 tiếng) để bùng nổ thu nhập  
 > **Thời lượng video bài giảng:** 12 phút 40 giây  
-> **Thị trường mục tiêu:** 🇻🇳 Việt Nam & 🌐 Ngoại (Hoa Kỳ, Mexico, Châu Âu)
+> **Thị trường mục tiêu:** 🇻🇳 Việt Nam & 🌐 Ngoại (Hoa Kỳ, Mexico, Tây Ban Nha)
 
 ---
 

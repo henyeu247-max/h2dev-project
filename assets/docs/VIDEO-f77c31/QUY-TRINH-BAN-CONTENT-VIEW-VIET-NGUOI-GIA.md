@@ -1,6 +1,6 @@
 # SOP Thực Chiến — Bán Content Ngách Người Cao Tuổi View Việt (>60 Tuổi)
 
-> **Mã SKU:** VIDEO-f77c31 · **Khán giả:** Nam/Nữ Việt Nam trên 60–65 tuổi · **Doanh thu mẫu:** 1–2 triệu VNĐ / ngày
+> **Mã SKU:** VIDEO-f77c31 · **Khán giả:** Người Việt Nam trên 60–65 tuổi · **Doanh thu mẫu:** 1–2 triệu VNĐ / ngày
 
 ---
 ## 1. Thông Tin Kênh Mẫu & Khán Giả
@@ -23,4 +23,4 @@
 ## 3. Lưu Ý Khi Thực Hiện
 
 - Nội dung chi tiết về quy trình sản xuất (kịch bản, nguồn tài nguyên, edit, âm thanh) nằm trong video Pro nói trên; bài giảng này chỉ show số liệu doanh thu và thông số kênh.
-- Không có thông tin về chủ đề, giọng đọc hay thời lượng chuẩn trong bài giảng này; cần xem video Pro để lấy.
+- Không có thông tin về giọng đọc hay thời lượng chuẩn trong bài giảng này; cần xem video Pro để lấy.

@@ -8,10 +8,10 @@
 ---
 
 ## 1. NGUYÊN TẮC VÀNG: ĐỪNG ÔM CHỦ ĐỀ LỚN, HÃY TÌM "NGÁCH NHỎ TRONG NGÁCH NHỎ" (MICRO-NICHE)
-- **Sai lầm cốt tử của người mới:** Nhảy thẳng vào các chủ đề khổng lồ như *Health (Sức khỏe)*. Tìm trên YouTube sẽ ra rất nhiều kênh nhưng toàn là kênh lớn (có tích xám, tích xanh), nhảy vào không thể cạnh tranh nổi, video đăng lên chỉ vài chục nghìn view hoặc không có view, dẫn đến nản chí.
+- **Sai lầm cốt tử của người mới:** Nhảy thẳng vào các chủ đề khổng lồ như *Health (Sức khỏe)*. Tìm trên YouTube sẽ ra rất nhiều kênh nhưng toàn là kênh lớn (có tích xám, tích xanh), nhảy vào không thể cạnh tranh nổi, video đăng lên chỉ mười mấy nghìn view hoặc không có view, dẫn đến nản chí.
 - **Tư duy lách ngách con đa tầng:**
   - **Tầng 1 (Chủ đề lớn):** `Health` (Sức khỏe) → *Cạnh tranh cực cao, không thể vào.*
-  - **Tầng 2 (Ngách con):** `Healthy Food` (Thực phẩm lành mạnh) → *Vẫn là ngách lớn, phải lách tiếp vào ngách nhỏ hơn.*
+  - **Tầng 2 (Ngách con):** `Healthy Food` → *Vẫn là ngách lớn, phải lách tiếp vào ngách nhỏ hơn.*
   - **Tầng 3 (Micro-niche cắn view):** `Chuột rút ở chân` → **ĐÂY LÀ ĐIỂM VÀNG!** Chỉ số tìm kiếm trên Google Trends rất cao (toàn trên 90, 80, 100) và có kênh nhỏ lên view rất nhanh nhờ đúng ngách này.
 
 ---
@@ -25,17 +25,15 @@
 
 ### Bước 2: Đo lường sức mạnh từ khóa trên Google Trends (YouTube Search)
 - Truy cập Google Trends, dán từ khóa tiếng Anh vào và cấu hình chính xác:
-  - **Phạm vi tìm kiếm:** `Tìm kiếm trên YouTube` (Bắt buộc, không để Web Search).
-  - **Thời gian:** `30 ngày gần đây` (Để bắt kịp xu hướng nóng bỏng, loại bỏ các từ khóa đã nguội lạnh).
+  - **Phạm vi tìm kiếm:** `Tìm kiếm trên YouTube`.
+  - **Thời gian:** `30 ngày gần đây`.
   - **Khu vực:** `Hoa Kỳ` hoặc thị trường mục tiêu dự định làm.
 - **Tiêu chuẩn số liệu:**
-  - Đường biểu đồ phải luôn duy trì ở ngưỡng cao: **70 – 80 – 100 điểm** liên tục.
+  - Đường biểu đồ phải luôn duy trì ở ngưỡng cao: **70 – 80 – 90 điểm trở lên**.
   - Loại bỏ các từ khóa có đường biểu đồ nằm thấp, không ổn định (dưới tầm 70 – 80 thì chưa nên làm).
 
 ### Bước 3: Thẩm định Outlier trên YouTube
 - Tìm từ khóa trên thanh tìm kiếm YouTube, bật bộ lọc video dài và chọn thời gian trong vòng 1 tháng hoặc 1 tuần trở lại.
-- Quan sát tỉ lệ giữa **Lượt xem video** và **Số lượng đăng ký (sub)**:
-  - Nếu một kênh mới chỉ có ít video nhưng đã có video đạt **hàng trăm nghìn đến hàng triệu view** → Đây là video đột biến, cho thấy chủ đề này đang lên view rất nhanh.
 
 ---
 
@@ -53,7 +51,7 @@
 - **Thông số kênh mẫu:** Kênh chỉ mới đăng tổng cộng **17 video** nhưng đã sở hữu **145.000 subscribers**.
 - **Hiệu quả thực tế:**
   - Các video đăng cách đây 2 tháng chỉ đạt vài trăm view.
-  - Gần đây kênh làm đúng ngách chuột rút ở chân nên lên view rất nhanh: tiêu đề kiểu *"3 loại thực phẩm ngừa chuột rút ở chân"* và *"10 loại thực phẩm ngừa chuột rút ở chân"* có video đạt **6,9 triệu view** và **1,9 triệu view**.
+  - Gần đây kênh làm đúng ngách chuột rút ở chân nên lên view rất nhanh: tiêu đề kiểu *"3 loại thực phẩm giúp nhanh chuột rút ở chân"* và *"10 loại thực phẩm ngừa chuột rút ở chân"* có video đạt **6,9 triệu view** và **1,9 triệu view**.
   - Tác giả không biết từ tiếng Anh nên dịch từ "chuột rút" bằng Google Dịch rồi đem vào Google Trends: chỉ số của từ khóa này toàn trên 90, 80, 100.
 
 ---
@@ -61,5 +59,5 @@
 ## 5. CÔNG THỨC 10 KÊNH ĐỐI THỦ X 2 VIDEO OUTLIER = 20 KỊCH BẢN THẮNG CHẮC
 1. Tìm ra **10 kênh đối thủ** đang làm về micro-niche đã chọn.
 2. Vào tab **Phổ biến** của từng kênh, chọn ra **1–2 video nhiều view nhất** được đăng tải trong khoảng 1 tháng trở lại.
-3. Thu thập được **20 kịch bản xuất sắc nhất** đã được thị trường và thuật toán YouTube kiểm chứng thành công.
-4. Đưa 20 kịch bản này vào ChatGPT để phân tích cấu trúc, viết lại theo phong cách mới, tạo giọng đọc AI và sản xuất video. Áp dụng công thức này, kênh chắc chắn sẽ cắn view và ăn đề xuất!
+3. Thu thập được **20 kịch bản xuất sắc nhất**.
+4. Xào nấu lại 20 kịch bản theo phong cách mới. Áp dụng công thức này, kênh chắc chắn sẽ lên view.

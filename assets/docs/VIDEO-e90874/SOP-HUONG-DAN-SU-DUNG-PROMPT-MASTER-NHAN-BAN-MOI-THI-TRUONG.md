@@ -1,11 +1,10 @@
 # Cẩm Nang Thực Chiến: Hướng Dẫn Sử Dụng Bộ Prompt Master Tự Động Nhân Bản Kịch Bản Sang Mọi Thị Trường
 
 > **Mã bài học:** `VIDEO-e90874`  
-> **Tiêu đề gốc:** Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến  
 > **Chủ đề thực tế:** Hướng dẫn dùng form prompt nhân bản thị trường: dán dữ liệu kênh đối thủ, trả lời bộ câu hỏi cấu hình để nhận về một Prompt Master, rồi dùng nó viết lại kịch bản video cho thị trường đích (ví dụ Nhật sang Việt, Việt sang Hoa Kỳ, Hoa Kỳ sang Hàn).  
 > **Thời lượng bài giảng:** 18 phút 19 giây  
 > **Thị trường mục tiêu:** 🌐 Ngoại (Global) / Đa Thị Trường  
-> **Nhóm nội dung:** Prompt AI & Nhân Bản Kịch Bản / Tự Động Hóa Sản Xuất  
+> **Nhóm nội dung:** Prompt AI & Nhân Bản Kịch Bản  
 
 ---
 
@@ -21,7 +20,7 @@ Form prompt nhân bản thị trường (đính kèm trong mô tả video, dạn
 ## 2. QUY TRÌNH THỰC CHIẾN
 
 ### Bước 1: Đưa dữ liệu kênh đối thủ vào form prompt
-1. Copy toàn bộ thông tin kênh đối thủ (tiêu đề, thông số...) và dán vào chỗ "dán tại đây" của form prompt. Làm 2-3 kênh đối thủ thì cứ copy hết vào để AI phân tích và học.
+1. Copy toàn bộ thông tin kênh đối thủ (thông số...) và dán vào chỗ "dán tại đây" của form prompt. Làm 2-3 kênh đối thủ thì cứ copy hết vào để AI phân tích và học.
 2. Mở một chat mới trong Claude, chạy form prompt. Có thể chụp thêm ảnh tiêu đề các video phổ biến của kênh đối thủ cho AI phân tích sâu hơn (tác giả chụp tầm 2 ảnh, mỗi ảnh khoảng 6 video).
 3. Cần thêm kịch bản gốc của video đối thủ để AI học: nếu thiếu, AI sẽ nhắc và phân tích trước rồi chờ bổ sung. Lấy kịch bản của 2 video cao view nhất (hoặc mỗi kênh đối thủ 1 video). Nên bỏ chung hình ảnh và kịch bản vào chạy một lần cho đỡ tốn token.
 

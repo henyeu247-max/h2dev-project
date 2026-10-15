@@ -1,6 +1,6 @@
 # SOP HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC BẢO VỆ KÊNH
 > **Mã SKU:** `VIDEO-3e5a21` | **Module:** M02 - Tạo Kênh & Ngâm Kênh | **Thời lượng:** 02 phút 34 giây
-> **Mục tiêu:** Thiết lập cấu trúc phân quyền tài khoản thương hiệu (Brand Account) để tránh mất kênh khi mail chính bị sự cố.
+> **Mục tiêu:** Thiết lập cấu trúc phân quyền tài khoản để tránh mất kênh khi mail chính bị sự cố.
 
 ---
 

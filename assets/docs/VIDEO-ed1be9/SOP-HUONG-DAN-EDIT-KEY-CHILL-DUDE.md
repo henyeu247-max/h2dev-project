@@ -1,6 +1,6 @@
-# SOP Thực Chiến: Hướng Dẫn Edit Key "Chill Dude" Chi Tiết Từ A-Z
+# SOP Thực Chiến: Hướng Dẫn Edit Key Chi Tiết Từ A-Z
 > **Mã bài giảng:** `VIDEO-ed1be9` | **SKU:** `VIDEO-ed1be9`
-> **Phân loại:** Kỹ thuật Edit CapCut & Hoạt họa nhân vật thư giãn phong cách Chill Dude
+> **Phân loại:** Kỹ thuật Edit CapCut & Hoạt họa nhân vật người que
 
 ---
 

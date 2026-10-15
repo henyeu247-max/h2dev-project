@@ -1,17 +1,16 @@
 # Cẩm Nang Thực Chiến: Kỹ Thuật Edit B-Roll Thật & Bí Quyết Né Quét Bản Quyền / Trùng Lặp AI 2026
 
 > **Mã bài học:** `VIDEO-DD983D`  
-> **Tiêu đề gốc:** Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..  
 > **Chủ đề thực tế:** Phân tích kỹ thuật tự quay cảnh nền (B-roll) đời thật cho video drama gia đình Nhật Bản, so sánh 3 kênh mẫu và các lưu ý để hạn chế bị quét lỗi nội dung.  
 > **Thời lượng bài giảng:** 10 phút 00 giây  
 > **Thị trường mục tiêu:** 🇯🇵 Nhật Bản (Mã: `JP`)  
-> **Nhóm nội dung:** Drama Gia Đình & Xã Hội Nhật Bản / Kỹ Thuật Dựng Né Quét  
+> **Nhóm nội dung:** Drama Gia Đình / Kỹ Thuật Dựng Né Quét  
 
 ---
 
 ## 1. VẤN NẠN QUÉT NỘI DUNG CỦA YOUTUBE VỚI NGÁCH DRAMA
 
-- **Vì sao ngách drama dễ gặp rủi ro:** Theo tác giả, YouTube không ưa drama hơn vì thường là những câu chuyện không có thật và hay giật tít. Vì vậy phải kiên trì và làm đúng cách; ngách này lúc nào cũng có view cao nhưng không phải video nào cũng nổ (có video nổ cao, có video chỉ vài nghìn view).
+- **Vì sao ngách drama dễ gặp rủi ro:** Theo tác giả, YouTube không ưa drama hơn vì thường là những câu chuyện không có thật và hay giật tít. Vì vậy phải kiên trì và làm đúng cách; ngách này lúc nào cũng có view cao nhưng không phải video nào cũng nổ (có video nổ cao, có video chỉ ít view).
 - **Các cách làm dễ bị quét:**
   1. Lấy video nền từ nguồn miễn phí như Pexels, Pixabay: dùng nhiều dễ dính lỗi *Reused Content (Sử dụng lại nội dung)*. Lỗi này kháng được nhưng tốn thời gian.
   2. Làm sơ sài hoặc dùng các tool hàng lọt ngoài kia: dễ bị quét và tốn thời gian của người làm.
@@ -21,7 +20,7 @@
 
 ## 2. SO SÁNH 3 KÊNH NHẬT TRONG BÀI
 
-Các kênh đối thủ trong video (mô tả video liệt kê id kênh để tránh bấm link spam kênh; copy vào ô tìm kiếm YouTube): `@ธรรมสุข-2275`, `@新しい私の毎日`, `@心に残る話-y10k`.
+Các kênh đối thủ trong video: 3 kênh so sánh ở mục này.
 
 ### Kênh 1: kênh dùng kênh cổ 2010
 - Mới 14 video, làm khoảng 5 ngày trước thời điểm quay, ngách drama gia đình, có video hơn 80k và hơn 50k view trong 2 ngày.
@@ -56,4 +55,4 @@ Các kênh đối thủ trong video (mô tả video liệt kê id kênh để tr
 
 1. **Bám theo kênh lớn đã làm lâu mà vẫn bật kiếm tiền:** xem cách họ làm rồi làm theo, tự quay cảnh nền thay vì ôm nguồn có sẵn.
 2. **Đã làm ngách drama thì phải biết cách làm để hạn chế bị quét:** không cứ ôm vào làm, vì lên view mà bị quét thì mất rất nhiều thời gian.
-3. **Kiên trì khi những video đầu ít view:** ví dụ một kênh ngách sư Phật pháp Nhật (lời dạy của Kukai) làm khoảng 1 tháng chỉ vài trăm view, đến 2-3 tuần gần đây mới nổ. Đừng bỏ khi video đầu chưa có view, kiên trì ít nhất khoảng 10 đến 15 video.
+3. **Kiên trì khi những video đầu ít view:** ví dụ một kênh ngách sư Phật pháp Nhật (lời dạy của Kukai) làm khoảng 1 tháng chỉ có ít view, đến 2-3 tuần gần đây mới nổ. Đừng bỏ khi video đầu chưa có view, kiên trì ít nhất khoảng 10 đến 15 video.

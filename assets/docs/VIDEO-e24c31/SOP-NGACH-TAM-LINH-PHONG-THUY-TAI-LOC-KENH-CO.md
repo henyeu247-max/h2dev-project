@@ -1,17 +1,15 @@
 # Cẩm Nang Thực Chiến: Khai Thác Ngách Tâm Linh Phong Thủy Thu Hút Tài Lộc Hàn Quốc & Đòn Bẩy Kênh Cổ 2008
 
 > **Mã bài học:** `VIDEO-e24c31`  
-> **Tiêu đề gốc:** Update ngách mới cực trends bán content view ngoại, show kênh mới hoàn toàn 5 video  
-> **Chủ đề thực tế:** Phân tích quy trình cắn đề xuất thần tốc của kênh mới chỉ đăng 5 video đạt trên 40.000 view/video; công thức làm tiêu đề phong thủy đầu tháng và kỹ thuật dùng kênh cổ (Aged Channel 2008) thoát Sandbox.  
-> **Thời lượng bài giảng:** 10 phút 32 giây  
-> **Thị trường mục tiêu:** 🌐 Ngoại / 🇰🇷 Hàn Quốc (Mã: `GLOBAL-KR`)  
-> **Nhóm nội dung:** Tâm Linh & Thu Hút May Mắn / Phong Thủy Dưỡng Lão  
+> **Chủ đề thực tế:** Phân tích kênh mới chỉ đăng 5 video, hai video gần đây đạt 14k–18k view; kỹ thuật dùng kênh cổ 2008 (Aged Channel); công thức tiêu đề theo đầu tháng.  
+> **Thời lượng bài giảng:** 10 phút 10 giây  
+> **Thị trường mục tiêu:** 🇰🇷 Hàn Quốc (Mã: `KR`)  
+> **Nhóm nội dung:** Tâm Linh & Thu Hút May Mắn  
 
 ---
 
 ## 1. PHÂN TÍCH CASE STUDY HAI KÊNH HÀN QUỐC ĐƯỢC SHOW TRONG BÀI
 
-ID kênh nêu trong mô tả video: `@복이오는길` và `@mokamoka-e9f`.
 
 ### 1.1. Kênh thứ nhất: kênh cổ 2008, mới 5 video
 - **Thị trường:** 🇰🇷 Hàn Quốc

@@ -7,7 +7,7 @@
 ---
 
 ## 1. TIỀM NĂNG DOANH THU & CHỈ SỐ THỊ TRƯỜNG
-- **Doanh thu đối thủ:** Kênh case study (ngách nhỏ trong ngách lịch sử, kể chuyện vua chúa ngày xưa) đạt **hơn $18.000 USD trong tháng qua** theo số liệu phân tích của extension Nexlev.
+- **Doanh thu đối thủ:** Kênh (ngách nhỏ trong ngách lịch sử, kể chuyện vua chúa ngày xưa) đạt **hơn $18.000 USD trong tháng qua** theo số liệu phân tích của extension Nexlev.
 - **Lượng view:** Trong khoảng 1 tháng trước, kênh có video đạt **hơn 1 triệu view** và **hơn 900.000 view**, ngoài ra còn các video vài trăm nghìn view khác.
 - **Chỉ số RPM:** hơn 5 gần 6 USD / 1.000 view; view chủ yếu từ US.
 

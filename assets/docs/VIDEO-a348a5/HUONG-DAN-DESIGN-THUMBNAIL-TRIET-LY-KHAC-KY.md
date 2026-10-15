@@ -1,8 +1,8 @@
-# Cẩm Nang Thực Chiến: Thiết Kế Thumbnail Ngách Triết Lý & Khắc Kỷ (Stoicism)
+# Cẩm Nang Thực Chiến: Thiết Kế Thumbnail Ngách Triết Lý & Khắc Kỷ
 
 > **Mã bài học:** `VIDEO-a348a5`  
-> **Chủ đề:** Hướng dẫn làm thumbnail key triết lý khắc kỷ chuẩn CTR cao  
-> **Công cụ thực hành:** Web Photoshop (Photopea) / Canva (100% Miễn phí)
+> **Chủ đề:** Hướng dẫn làm thumbnail key triết lý khắc kỷ  
+> **Công cụ thực hành:** Web Photoshop (Photopea) / Canva
 
 ---
 

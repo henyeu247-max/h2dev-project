@@ -1,16 +1,14 @@
 # Cẩm Nang Thực Chiến: Khai Thác Kho Hoạt Hình Bilibili & Kỹ Thuật Reup Bán Content An Toàn Không Bản Quyền
 
 > **Mã bài học:** `VIDEO-1aaf46`  
-> **Tiêu đề gốc:** Show kênh thực chiến REUP và share thêm các ngách REUP cực trends  
-> **Chủ đề thực tế:** Phân tích thực tế các kênh reup hoạt hình Trung Quốc cắn view cực mạnh; hướng dẫn cách khai thác 6 kho tài nguyên hoạt họa Bilibili chuyên biệt và bộ quy tắc biên tập lách bản quyền video ngắn/dài.  
+> **Chủ đề thực tế:** Phân tích thực tế các kênh reup hoạt hình Trung Quốc có view cao; nguồn video là Bilibili, tìm bằng tiêu đề hoặc hình ảnh; lưu ý rủi ro bị quét hoặc lỗi sử dụng lại nội dung. Cách tìm video được hướng dẫn ở các video trước, bài giảng không nói lại.  
 > **Thời lượng bài giảng:** 10 phút 22 giây  
-> **Thị trường mục tiêu:** 🇨🇳 Trung Quốc / 🇻🇳 Việt Nam (Mã: `CN-VN`)  
-> **Nhóm nội dung:** Reup & Khai Thác Hoạt Hình / Bán Content Hoạt Họa  
+> **Thị trường mục tiêu:** 🇨🇳 Trung Quốc (nguồn video)  
+> **Nhóm nội dung:** Reup & Khai Thác Hoạt Hình / Bán Content Hoạt Họa
 
 ---
 
 ## 1. CÁC KÊNH THỰC CHIẾN VÀ NGÁCH REUP TRONG BÀI
-
 Nguồn reup là Bilibili (tìm video bằng tiêu đề hoặc hình ảnh). Các kênh tác giả đưa ra:
 1. **Kênh reup hình Trung Quốc đầu tiên:** Vừa bật kiếm tiền ngày 6; view tạm ổn, không phải cao lắm. Làm reup thì tập lên tập không lên, tùy theo tập, không có gì chắc chắn.
 2. **Kênh test nhiều ngách nhỏ:** Video đầu tiên đăng ngày 20 tháng 5; ba ngày sau mới bắt đầu nổ dần, cuối tháng 5 đầu tháng 6 nổ mạnh và được thêm 200 sub. Các ngách đăng sau đó thì không lên.

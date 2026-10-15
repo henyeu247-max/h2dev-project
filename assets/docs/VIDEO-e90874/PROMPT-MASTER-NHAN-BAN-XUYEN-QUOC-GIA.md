@@ -1,8 +1,7 @@
 # Cẩm Nang Thực Chiến: Hướng Dẫn Sử Dụng Bộ Prompt Master Tự Động Nhân Bản Kịch Bản Sang Mọi Thị Trường
 
 > **Mã bài học:** `VIDEO-e90874`  
-> **Tiêu đề gốc:** Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến  
-> **Chủ đề thực tế:** Hướng dẫn toàn diện quy trình ứng dụng bộ Prompt Master để tự động dịch thuật, chuyển ngữ văn hóa và nhân bản kịch bản video triệu view từ bất kỳ quốc gia nào sang thị trường mong muốn (Mỹ, Nhật, Hàn, Việt); công thức kết hợp tool lấy phụ đề và AI prompt.  
+> **Chủ đề thực tế:** Hướng dẫn quy trình ứng dụng bộ Prompt Master để tự động dịch thuật, chuyển ngữ văn hóa và nhân bản kịch bản từ bất kỳ thị trường nào sang thị trường mong muốn (Mỹ, Nhật, Hàn, Việt).  
 > **Thời lượng bài giảng:** 18 phút 19 giây  
 > **Thị trường mục tiêu:** 🌐 Ngoại (Global) / Đa Thị Trường  
 > **Nhóm nội dung:** Prompt AI & Nhân Bản Kịch Bản / Tự Động Hóa Sản Xuất  
@@ -11,7 +10,7 @@
 
 ## 1. NGUYÊN LÝ HOẠT ĐỘNG CỦA BỘ "PROMPT MASTER"
 
-Bộ form prompt nhân bản thị trường (đính kèm dưới dạng file `.txt` trong phần mô tả video) dùng để nhân bản video, kịch bản từ thị trường này sang bất kỳ thị trường nào mong muốn, ví dụ từ Nhật về Việt Nam, từ Việt Nam sang Hoa Kỳ, từ Hoa Kỳ sang Hàn.
+Bộ form prompt nhân bản thị trường (đính kèm trong phần mô tả video) dùng để nhân bản video, kịch bản từ thị trường này sang bất kỳ thị trường nào mong muốn, ví dụ từ Nhật về Việt Nam, từ Việt Nam sang Hoa Kỳ, từ Hoa Kỳ sang Hàn.
 - **Vai trò của form prompt:** Tạo ra format cho video theo mong muốn của mình. Form prompt sẽ hỏi người dùng thị trường đích và các lựa chọn khác, người dùng nhập vào thì nó sinh ra Prompt Master. Form dùng chung cho tất cả các lần, ngách mới hay ngách khác đều được.
 - **Không phải dịch cứng:** Prompt Master không dịch đơn thuần mà dịch theo ngôn ngữ và văn hóa của thị trường đích:
   - Nhân vật và bối cảnh phù hợp thị trường đích.
@@ -22,10 +21,9 @@ Bộ form prompt nhân bản thị trường (đính kèm dưới dạng file `.
 ## 2. QUY TRÌNH 3 BƯỚC NHÂN BẢN KỊCH BẢN THỰC CHIẾN
 
 ### Bước 1: Nạp dữ liệu kênh đối thủ để Claude phân tích
-1. Mở chat mới trong Claude, dán vào form prompt toàn bộ thông tin kênh đối thủ (tên kênh, thông số...). Làm 2-3 kênh đối thủ thì cứ copy hết vào.
+1. Mở chat mới trong Claude, dán vào form prompt toàn bộ thông tin kênh đối thủ (thông số...). Làm 2-3 kênh đối thủ thì cứ copy hết vào.
 2. Chụp ảnh phần tiêu đề của kênh đối thủ (bấm vào tab Phổ biến), khoảng 2 ảnh, mỗi ảnh khoảng 6 video, để nó phân tích kỹ hơn.
-3. Nếu thiếu kịch bản gốc, Claude sẽ nhắc; nó vẫn phân tích trước rồi chờ bổ sung. Lấy kịch bản của 2 video cao view nhất (hoặc nếu có 2 kênh đối thủ thì mỗi kênh 1 video), copy dán vào. File prompt gợi ý dùng youtube-transcript.io để lấy transcript video.
-4. Có thể bỏ chung form prompt, hình ảnh và kịch bản vào chạy một lần để đỡ tốn token.
+3. Nếu thiếu kịch bản gốc, Claude sẽ nhắc; nó vẫn phân tích trước rồi chờ bổ sung. Lấy kịch bản của 2 video cao view nhất (hoặc nếu có 2 kênh đối thủ thì mỗi kênh 1 video), copy dán vào. 4. Có thể bỏ chung form prompt, hình ảnh và kịch bản vào chạy một lần để đỡ tốn token.
 
 ### Bước 2: Trả lời 6 câu hỏi cấu hình
 Sau khi phân tích, Claude hỏi cấu hình, người dùng trả lời theo số:

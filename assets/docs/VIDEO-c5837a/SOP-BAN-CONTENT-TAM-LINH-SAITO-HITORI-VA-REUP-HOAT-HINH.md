@@ -1,18 +1,16 @@
 # Cẩm Nang Thực Chiến: Bán Content Ngách Tâm Linh Saito Hitori & Khai Thác Reup Đa Thị Trường Nhật - Hàn - Việt
 
 > **Mã bài học:** `VIDEO-c5837a`  
-> **Tiêu đề gốc:** Update share các ngách Bán content và Reup mới nhất - tất cả thị trường Nhật - Hàn - Việt  
-> **Chủ đề thực tế:** Phân tích ngách tâm linh thu hút tài lộc cực thịnh tại Nhật Bản dựa trên nhân vật Saito Hitori (doanh nhân giàu nhất Nhật Bản); cập nhật các ngách bán content và reup hoạt hình sinh lời cao trên cả 3 thị trường Nhật - Hàn - Việt.  
-> **Thời lượng bài giảng:** 10 phút 31 giây  
+> **Chủ đề thực tế:** Phân tích ngách tâm linh dựa trên nhân vật Saito Hitori; cập nhật các ngách reup trên 3 thị trường Nhật - Hàn - Việt.  
+> **Thời lượng bài giảng:** 10 phút 10 giây  
 > **Thị trường mục tiêu:** 🇯🇵 Nhật Bản / 🇰🇷 Hàn Quốc / 🇻🇳 Việt Nam (Mã: `JP-KR-VN`)  
-> **Nhóm nội dung:** Tâm Linh & Triết Lý Saito Hitori / Đa Dạng Hóa Thị Trường  
+> **Nhóm nội dung:** Tâm Linh & Saito Hitori / Đa Dạng Hóa Thị Trường  
 
 ---
 
 ## 1. PHÂN TÍCH CASE STUDY NGÁCH SAITO HITORI
 
-### Kênh mẫu: `@斎藤一人の福の言霊` (Lời Nói Phúc Đức của Saito Hitori)
-- **Thị trường:** 🇯🇵 Nhật Bản
+### Ngách Saito Hitori
 - **Nhân vật trung tâm:** Saito Hitori, ngách tâm linh, tâm lý, may mắn (tương tự ngách tác giả đã chia sẻ 2–3 lần trước đó).
 - **Case study kênh mới của một học viên:**
   - Kênh bắt đầu làm từ ngày 25 tháng 6, đúng 1 tuần khi quay bài.
@@ -25,12 +23,8 @@
 
 ## 2. DANH MỤC CÁC KÊNH MẪU ĐA THỊ TRƯỜNG TRONG BÀI GIẢNG
 
-1. **`@斎藤一人の福の言霊`** (Nhật Bản): Ngách Saito Hitori (tâm linh, tâm lý, may mắn).
-2. **`@NắngNhỏToonReview`** (Việt Nam): Ngách hoạt hình Toon Review.
-3. **`@fansdrWilliamLI`** (Quốc tế): Ngách sức khỏe ở thị trường Hoa Kỳ; kênh ít video nhưng view hàng trăm nghìn.
-4. **`@幻界と神域の扉`** (Nhật Bản): Kênh được liệt kê trong mô tả video.
-5. **`@다시이팔청춘-k5d`** (Hàn Quốc): Một trong 2 kênh tác giả bổ sung thêm trong mô tả, chưa nói trong video.
-6. **`@양자과학이야기`** (Hàn Quốc): Ngách vật lý lượng tử; kênh bổ sung thêm trong mô tả, chưa nói trong video.
+1. **Ngách Saito Hitori**: tâm linh, tâm lý, may mắn.
+2. **Ngách sức khỏe ở thị trường Hoa Kỳ**: kênh ít video nhưng view hàng trăm nghìn.
 
 ---
 

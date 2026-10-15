@@ -1,6 +1,6 @@
 # SOP HƯỚNG DẪN FIX & ADD QUYỀN CHO TÀI KHOẢN GOOGLE ADSENSE CHỐNG DIE
-> **Mã SKU:** `VIDEO-00136f` | **Module:** M02 - Kỹ thuật dựng & Tút ngách nâng cao | **Thời lượng:** 04 phút 24 giây
-> **Mục tiêu:** Thiết lập cấu trúc phân quyền tài khoản Google AdSense đa tầng để bảo vệ dòng tiền và quyền truy cập khi tài khoản quản trị gặp sự cố.
+> **Mã SKU:** `VIDEO-00136f` | **Thời lượng:** 04 phút 39 giây
+> **Mục tiêu:** Thiết lập cấu trúc phân quyền tài khoản Google AdSense để bảo vệ dòng tiền và quyền truy cập khi tài khoản quản trị gặp sự cố.
 
 ---
 
@@ -9,8 +9,8 @@
 - **Hai trường hợp:**
   1. **Bị die vĩnh viễn:** Có thông báo gửi về mail của tài khoản Google AdSense, kiểu bị chấm dứt thanh toán. Trường hợp này không cứu được.
   2. **Bị tạm ngưng:** Không có thông báo nào gửi về Gmail. Trường hợp này cứu được và kháng được.
-- **Hiểm họa mất quyền truy cập độc quyền:** Nếu chỉ có duy nhất mail chính nắm tài khoản Google AdSense và mail đó bị die thì mất quyền vào AdSense.
-- **Cách phòng tránh:** Add thêm một Gmail khác vào quyền quản lý của tài khoản AdSense chính; khi mail chính bị die thì dùng tài khoản khác này vào, xóa mail chính đi, vào lại kênh YouTube thì tình trạng kiếm tiền sẽ xanh lại bình thường. Tác giả cho biết một tài khoản AdSense của ông đã liên kết với nhiều Gmail theo cách này.
+- **Hiểm họa mất quyền truy cập độc quyền:** Nếu mail chính nắm tài khoản Google AdSense và mail đó bị die thì mất quyền vào AdSense.
+- **Cách phòng tránh:** Add thêm một Gmail khác vào quyền quản lý của tài khoản AdSense chính; khi mail chính bị die thì dùng tài khoản khác này vào, xóa mail chính đi, vào lại kênh YouTube thì tình trạng kiếm tiền sẽ xanh lại bình thường. Tác giả cho biết một tài khoản AdSense của tác giả đã liên kết với nhiều Gmail theo cách này.
 
 ---
 

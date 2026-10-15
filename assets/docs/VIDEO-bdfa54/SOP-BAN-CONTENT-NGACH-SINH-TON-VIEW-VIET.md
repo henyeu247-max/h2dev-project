@@ -10,8 +10,8 @@
 
 ## 1. TẠI SAO NGƯỜI MỚI NÊN BẮT ĐẦU BẰNG "BÁN CONTENT VIEW VIỆT"?
 - **Tâm lý người mới:** Nhảy vào làm view ngoại mà không biết cách, làm không đúng ngách hoặc không đúng cách thì tốn tiền, tốn thời gian, rồi nản và bỏ luôn. Người mới nên tập làm view Việt trước cho dễ.
-- **Mô hình:** Đây là bán content, không phải reup. Tác giả cho biết theo chính sách YouTube (tác giả nhắc đến mức 5G) thì dạng này gọi là bán content và không bị bản quyền.
-- **Kênh minh họa của tác giả:** Có video hơn 200.000 view chỉ sau một ngày, và video hơn 900.000 view sau 4 ngày. Một kênh sinh tồn khác làm vài tháng trước có video gần 2 triệu view và video gần 10 triệu view.
+- **Mô hình:** Đây là bán content, không phải reup. Tác giả cho biết theo chính sách YouTube thì dạng này gọi là bán content và không bị bản quyền.
+- **Kênh minh họa của tác giả:** Có video hơn 200.000 view chỉ sau một ngày, và video hơn 900.000 view sau 4 ngày. Kênh tác giả làm vài tháng trước có video gần 2 triệu view và video gần 10 triệu view.
 - **Về doanh thu:** RPM view Việt thấp, vì các nhà quảng cáo không ưa chuộng dạng này lắm, nhưng view cao thì vẫn ra nhiều tiền; tác giả nêu ví dụ 300.000 view được hơn 4 triệu. Đủ để duy trì kinh phí và có động lực làm.
 - **Tư duy:** Người mới nghĩ đến kiếm view trước, đừng nghĩ kiếm tiền trước vì sẽ bị ảo.
 - **Lưu ý:** Tác giả đã chuyển sang thị trường Nhật nên đặt các video kênh view Việt này ở chế độ riêng tư.
@@ -21,7 +21,7 @@
 ## 2. NGUỒN VIDEO GỐC (DOUYIN)
 1. **Các ngách nhỏ trong sinh tồn:** Mỗi ngách khác nhau, ví dụ sinh tồn trong tuyết, dưới lòng đất, xây nhà để tránh bão tuyết. Dạng sinh tồn có rất nhiều ngách, có thể chọn ngách riêng cho mình để đỡ cạnh tranh.
 2. **Tìm nguồn:**
-   - Vào Douyin (TikTok của Trung Quốc); không cần đăng nhập, tắt cửa sổ đăng nhập bằng dấu x (chỉ cần xác minh nếu bị hỏi).
+   - Vào Douyin (TikTok của Trung Quốc); không cần đăng nhập, tắt cửa sổ đăng nhập bằng dấu x (cần xác minh).
    - Mở trang dịch, nhập từ khóa "sinh tồn nơi hoang dã", chọn dịch sang tiếng Trung (giản thể hoặc phồn thể đều được), copy rồi dán vào ô tìm kiếm Douyin để ra rất nhiều kênh và video.
    - Đây là những video mà các team Trung Quốc đã re-up, cắt ghép và review lại để bán content; video gốc có nguồn từ người nước ngoài.
 3. **Tải video:** Copy link ở thanh URL (hoặc bấm chia sẻ rồi sao chép link), dán vào một trang web tải video. Link web tải và link các kênh nguồn sinh tồn Trung Quốc tác giả để ở phần mô tả để người xem khỏi phải tìm.

@@ -2,10 +2,10 @@
 
 > **Mã bài học:** `VIDEO-73d98a`  
 > **Tiêu đề gốc:** Update key (ngách cực nhỏ) mới nhất 06-09-2026  
-> **Chủ đề thực tế:** Chiến lược bóc tách ngách cực nhỏ (Micro-niche): Chuyển hướng từ drama hận thù sang câu chuyện cảm động nhân văn; phân tích 4 kênh đối thủ cắn đề xuất thần tốc tại Nhật Bản và Hàn Quốc; kỹ thuật tự quay B-roll bàn tay thật né quét AI 100%.  
+> **Chủ đề thực tế:** Chiến lược bóc tách ngách nhỏ: chuyển từ drama mạnh sang câu chuyện cảm động nhẹ nhàng; phân tích 4 kênh đối thủ ở Nhật Bản và Hàn Quốc; kỹ thuật tự quay bàn tay thật để tránh lỗi nội dung AI.  
 > **Thời lượng bài giảng:** 09 phút 19 giây (559.07s)  
 > **Thị trường mục tiêu:** 🇯🇵 Nhật Bản / 🇰🇷 Hàn Quốc / 🇻🇳 Việt Nam (Nhân bản tam giác)  
-> **Nhóm nội dung:** Bán Content Ngách Cực Nhỏ / Tâm Sự Gia Đình & Sức Khỏe Dưỡng Lão  
+> **Nhóm nội dung:** Ngách Cực Nhỏ / Tâm Sự Gia Đình & Sức Khỏe Dưỡng Lão  
 
 ---
 
@@ -16,7 +16,7 @@
 - **Cách nhận diện ngách nhỏ:** Mỗi ngách nhỏ có hướng riêng, không phải dạng nào cũng giống nhau; đọc và phân tích kỹ tiêu đề video thì sẽ rõ hướng của kênh.
   - Tiêu đề mẫu (dịch từ kênh Nhật): *"Vào ngày ly hôn..."*, *"Chị gái tôi bỏ nhà ra đi..."*
   - Tiêu đề mẫu (dịch từ kênh Hàn): các câu chuyện gia đình, vợ chồng, kinh doanh thất bại.
-- **Kênh dạng người già:** Một kênh Hàn có tiêu đề hướng tới người trên 70 tuổi, nhắm vào tệp khán giả rất cao tuổi (khoảng 60 – 70 tuổi trở lên).
+- **Kênh dạng người già:** Một kênh có tiêu đề hướng tới người trên 70 tuổi, nhắm vào tệp khán giả rất cao tuổi (khoảng 60 – 70 tuổi trở lên).
 
 ### 1.2. Chiến Lược Nhân Bản Thị Trường (Nhật — Hàn — Việt)
 - Nhân bản là việc cực kỳ quan trọng và chắc chắn phải làm.
@@ -32,8 +32,8 @@
 | :--- | :---: | :--- | :--- | :--- |
 | **Kênh ngách câu chuyện cảm động** | 🇯🇵 Nhật Bản | Kênh lập từ tháng 5, video cũ nhất (video đầu tiên) cách đây 2 tháng; view rất cao. | Ghép video tự nhiên, chạy phụ đề. | Kênh có quảng cáo nên đang bật kiếm tiền. Nội dung cảm động nhẹ nhàng, edit đơn giản là đủ. |
 | **Kênh ngách đời sống gia đình** | 🇰🇷 Hàn Quốc | View rất cao; có tính năng hội viên và đã bật kiếm tiền; kênh làm từ 4 tháng trước. | **Tự quay video bàn tay ngồi bấm bàn phím** làm video nền. | **BÀI HỌC VÀNG:** Video tự quay nên không lo lỗi sử dụng lại nội dung, rất bền. |
-| **Kênh ngách người già** | 🇰🇷 Hàn Quốc | Làm từ 2 tháng trước; video ra khá thưa; hai ngày trước hơn 400.000 view. | Dựng hoàn toàn bằng hình ảnh AI. | **CẢNH BÁO:** Tác giả đánh giá cách này không tốt. Kênh đang bật kiếm tiền nhưng rất dễ dính lỗi liên quan đến AI, bị tắt kiếm tiền hoặc xóa kênh. |
-| **Kênh ngách sức khỏe tuổi già** | 🇯🇵 Nhật Bản | Mới làm 19 video. Dùng tab Phổ biến để lọc các video cao view nhất. | Video sức khỏe ngắn gọn. | Cách đào từ khóa ngách: bám theo 2 video cao view nhất để lấy cụm từ khóa tiếng Nhật. |
+| **Kênh ngách người già** | (bài giảng không nêu thị trường) | Làm từ 2 tháng trước; video ra khá thưa; hai ngày trước hơn 400.000 view. | Dựng hoàn toàn bằng hình ảnh AI. | **CẢNH BÁO:** Tác giả đánh giá cách này không tốt. Kênh đang bật kiếm tiền nhưng rất dễ dính lỗi liên quan đến AI, bị tắt kiếm tiền hoặc xóa kênh. |
+| **Kênh ngách sức khỏe** | 🇯🇵 Nhật Bản | Mới làm 19 video. Dùng tab Phổ biến để lọc các video cao view nhất. | Video về sức khỏe. | Cách đào từ khóa ngách: bám theo 2 video cao view nhất để lấy cụm từ khóa tiếng Nhật. |
 
 ---
 
@@ -51,14 +51,14 @@ Từ phân tích kênh sức khỏe Nhật Bản, tác giả hướng dẫn phư
 
 ---
 
-## 4. QUY TRÌNH SẢN XUẤT BÁN CONTENT NÉ QUÉT AI
+## 4. QUY TRÌNH NHÂN BẢN, TRÁNH LỖI NỘI DUNG AI
 
 1. **Bước 1 — Chọn kênh và dịch tiêu đề:**
    - Dịch tiêu đề của kênh Nhật/Hàn để hình dung hướng câu chuyện và lấy ý tưởng kịch bản.
 2. **Bước 2 — Nhân bản:**
    - Lấy kịch bản về làm lại ở thị trường đích (Việt, Hàn hoặc Nhật) theo cách nhân bản tác giả đã hướng dẫn ở các video trước.
 3. **Bước 3 — Dựng hình ảnh an toàn (NÉ BẪY FULL AI):**
-   - **ƯU TIÊN SỐ 1:** Học cách của kênh Hàn — tự quay cận cảnh bàn tay ngồi bấm bàn phím, hoặc quay hồ cá thật, làm video nền. Video tự quay nên không lo lỗi sử dụng lại nội dung.
+   - **ƯU TIÊN SỐ 1:** Học cách của kênh Hàn — tự quay bàn tay ngồi bấm bàn phím, hoặc quay hồ cá thật, làm video nền. Video tự quay nên không lo lỗi sử dụng lại nội dung.
    - **NẾU DÙNG HÌNH ẢNH:** Tác giả khuyên chỉ ghép thêm video nguồn tự nhiên, tuyệt đối không làm full hình ảnh AI vì rất dễ dính lỗi liên quan đến AI, bị tắt kiếm tiền hoặc xóa kênh.
 4. **Bước 4 — Edit đơn giản:**
    - Ghép video tự nhiên vào và cho chạy phụ đề; theo tác giả, edit đơn giản như vậy là đủ.

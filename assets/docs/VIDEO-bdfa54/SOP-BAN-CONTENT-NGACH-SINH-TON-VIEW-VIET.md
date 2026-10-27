@@ -6,6 +6,9 @@
 > **Thị trường mục tiêu:** 🇻🇳 Việt Nam (Nguồn video: 🇨🇳 Trung Quốc - Douyin)
 
 
+
+- **Kênh đối thủ minh họa trên màn hình:** `Sinh Tồn Review` (`@SinhTonRV`)
+
 ---
 
 ## 1. TẠI SAO NGƯỜI MỚI NÊN BẮT ĐẦU BẰNG "BÁN CONTENT VIEW VIỆT"?

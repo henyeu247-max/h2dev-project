@@ -1,7 +1,7 @@
-﻿{
-  "name": "H2DEV Radar kho YouTube",
-  "short_name": "H2DEV",
-  "description": "Radar kho video faceless YouTube — H2DEV",
+{
+  "name": "97yo-dev — Hệ Sinh Thái Đào Tạo & Radar Kho YouTube",
+  "short_name": "97yo-dev",
+  "description": "Hệ sinh thái đào tạo đa nhánh (H2DEV, DGMD, Huân Academy) & radar kho dữ liệu YouTube — 97yo-dev",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

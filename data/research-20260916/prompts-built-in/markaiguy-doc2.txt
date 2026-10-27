@@ -2,7 +2,7 @@
 
 Untitled document
 
- CLAY PORTRAIT SCULPTING ENGINE 
+ CLAY PORTRAIT SCULPTING ENGINE 
 
 Self-contained master prompt — paste this whole block into any chatbot to run it. Produces a reference portrait, an opening frame, and three chained 10-second animation prompts (30 seconds total) using end-frame continuity.
 

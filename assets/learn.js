@@ -10,7 +10,17 @@
   'use strict';
   var C = window.H2Core;
 
-  var DATA_URL = '/data/modules.json';
+  var TRACK_URLS = {
+    h2dev: '/data/modules.json',
+    dgmd: '/data/modules_dgmd.json',
+    huan: '/data/modules_huan.json'
+  };
+  var TRACK_KEY = 'h2dev-track';
+  var initParams = new URLSearchParams(location.search);
+  var currentTrack = initParams.get('track') || sessionStorage.getItem(TRACK_KEY) || 'h2dev';
+  if (currentTrack !== 'dgmd' && currentTrack !== 'huan' && currentTrack !== 'h2dev') currentTrack = 'h2dev';
+  var currentData = null;
+
   var state = { tab: 'danhmuc', q: '' };
   var COLLAPSE_KEY = 'h2dev-collapsed';
 
@@ -19,7 +29,8 @@
     progressRingWrap: document.getElementById('progressRingWrap'),
     resumeBanner: document.getElementById('resumeBanner'),
     tabbar: document.getElementById('tabbar'),
-    panelRoot: document.getElementById('panelRoot')
+    panelRoot: document.getElementById('panelRoot'),
+    trackSwitcher: document.getElementById('trackSwitcher')
   };
 
   /* ---------- utils ---------- */
@@ -78,12 +89,22 @@
   function renderHeaderProgress(data) {
     var mods = (data && data.modules) || [];
     var titleEl = document.getElementById('learn-title');
-    if (titleEl && mods.length) titleEl.textContent = 'Lộ trình ' + mods.length + ' module';
+    if (titleEl && mods.length) {
+      var trackPrefix = currentTrack === 'huan' ? 'Nhánh Huân Academy · Lộ trình ' : (currentTrack === 'dgmd' ? 'Nhánh DGMD · Lộ trình ' : 'Nhánh H2DEV · Lộ trình ');
+      titleEl.textContent = trackPrefix + mods.length + ' module';
+    }
     var st = calcTotalProgress(data);
     var pct = Math.round(st.ratio * 100);
     els.progressText.innerHTML = '<span>' + pct + '%</span>' + st.done + '/' + st.total + ' bài · đã hoàn thành';
     var countEl = document.getElementById('learnCount');
-    if (countEl) countEl.textContent = st.total + ' bài · không cần đăng nhập';
+    if (countEl) {
+      var trackDesc = currentTrack === 'huan' ? 'Nhánh con Huân Academy (97yo-dev)' : (currentTrack === 'dgmd' ? 'Nhánh con Đại Gia Mang Dép (97yo-dev)' : 'Nhánh con H2DEV Faceless (97yo-dev)');
+      countEl.textContent = st.total + ' bài · ' + trackDesc;
+    }
+    try {
+      var docTrackName = currentTrack === 'huan' ? 'Nhánh Huân Academy (' + st.total + ' bài)' : (currentTrack === 'dgmd' ? 'Nhánh Đại Gia Mang Dép (' + st.total + ' bài)' : 'Nhánh H2DEV (' + st.total + ' bài)');
+      document.title = docTrackName + ' — 97yo-dev';
+    } catch (e) {}
     var R = 15, CIR = 2 * Math.PI * R;
     els.progressRingWrap.innerHTML = '' +
       '<svg class="progress-ring" viewBox="0 0 36 36" aria-hidden="true">' +
@@ -94,8 +115,46 @@
       '</svg>';
   }
 
+  function syncTrackButtons() {
+    if (!els.trackSwitcher) return;
+    var btns = els.trackSwitcher.querySelectorAll('.track-btn');
+    btns.forEach(function (b) {
+      var isAct = (b.dataset.track === currentTrack);
+      b.classList.toggle('active', isAct);
+      b.setAttribute('aria-checked', isAct ? 'true' : 'false');
+    });
+  }
+
+  function switchTrack(track) {
+    if (track !== 'dgmd' && track !== 'huan' && track !== 'h2dev') track = 'h2dev';
+    currentTrack = track;
+    try { sessionStorage.setItem(TRACK_KEY, currentTrack); } catch (e) {}
+    syncTrackButtons();
+    var u = new URL(location.href);
+    if (currentTrack === 'dgmd' || currentTrack === 'huan') u.searchParams.set('track', currentTrack);
+    else u.searchParams.delete('track');
+    history.replaceState(null, '', u);
+
+    els.panelRoot.setAttribute('aria-busy', 'true');
+    if (C.skeletonList) els.panelRoot.innerHTML = C.skeletonList(6, { thumb: true, lines: 2 });
+
+    var targetUrl = TRACK_URLS[currentTrack] || TRACK_URLS.h2dev;
+    return loadJSON(targetUrl).then(function (data) {
+      currentData = data;
+      renderHeaderProgress(currentData);
+      renderResumeBanner(currentData);
+      renderTab(currentData);
+      if (state.tab === 'timkiem') bindSearchEvents(currentData);
+      els.panelRoot.setAttribute('aria-busy', 'false');
+    }).catch(function (err) {
+      els.panelRoot.setAttribute('aria-busy', 'false');
+      els.panelRoot.innerHTML = '<div class="load-err">' + C.ico('alert-triangle', 16) + ' Lỗi nạp lộ trình ' + C.esc(currentTrack) + ' — ' + C.esc(err.message) + '</div>';
+    });
+  }
+
   /* ---------- banner "Tiếp tục học" (cơ chế recentWatched của gốc) ---------- */
   function renderResumeBanner(data) {
+    if (!els.resumeBanner) return;
     var rec = C.loadRecent();
     if (!rec) { els.resumeBanner.classList.add('hidden'); return; }
     var flat = allItemsByModule(data);
@@ -128,7 +187,7 @@
           '<div class="resume-meta">' + C.esc(meta) + '</div>' +
         '</div>' +
         status +
-        '<a class="resume-go" target="_top" href="/lotrinh/' + encodeURIComponent(target.sku) + '">' + label + '</a>' +
+        '<a class="resume-go" target="_top" href="/lotrinh/' + encodeURIComponent(target.sku) + (currentTrack !== 'h2dev' ? '?track=' + encodeURIComponent(currentTrack) : '') + '">' + label + '</a>' +
       '</div>';
     els.resumeBanner.classList.remove('hidden');
   }
@@ -229,7 +288,7 @@
         '<span class="s-card-body">' +
           '<span class="s-card-title">' + (C.escTitle || C.esc)(v.title) + '</span>' +
           '<span class="s-card-tags">' +
-            (v.free ? '<span class="ltag ltag-free">FREE</span>' : '<span class="ltag ltag-pro">PRO</span>') +
+            (v.badge === 'QUAN TRỌNG' || v.badge === 'NỔI BẬT' ? '<span class="ltag ' + (v.badge === 'QUAN TRỌNG' ? 'badge-important' : 'badge-featured') + '">' + (v.badge === 'QUAN TRỌNG' ? C.ICONS.tagImportant : C.ICONS.tagFeatured) + C.esc(v.badge) + '</span>' : '') + ((v.free ?? v.is_free) ? '<span class="ltag ltag-free">FREE</span>' : '<span class="ltag ltag-pro">PRO</span>') +
             (v.duration ? '<span class="s-card-dur">' + C.ICONS.clock + C.esc(v.duration) + '</span>' : '') +
           '</span>' +
         '</span>' +
@@ -261,7 +320,10 @@
       res = list.filter(function (v) {
         if (C.normalize(v.title).indexOf(nq) >= 0) return true;
         if (C.normalize(v.sku).indexOf(nq) >= 0) return true;
-        if ((v.channels || []).some(function (c) { return C.normalize(c).indexOf(nq) >= 0; })) return true;
+        if ((v.channels || []).some(function (c) {
+          var ct = (typeof c === 'object' && c !== null) ? [c.handle, c.name, c.url].filter(Boolean).join(' ') : String(c || '');
+          return C.normalize(ct).indexOf(nq) >= 0;
+        })) return true;
         for (var mi = 0; mi < data.modules.length; mi++) {
           var m = data.modules[mi];
           if (m.items.some(function (x) { return x.sku === v.sku; }) && C.normalize(m.title).indexOf(nq) >= 0) return true;
@@ -357,11 +419,22 @@
   }
 
   function bindEvents(data) {
+    if (els.trackSwitcher) {
+      els.trackSwitcher.addEventListener('click', function (e) {
+        var b = e.target.closest('.track-btn');
+        if (!b) return;
+        var tr = b.dataset.track;
+        if (tr && tr !== currentTrack) {
+          switchTrack(tr);
+        }
+      });
+    }
+
     els.tabbar.addEventListener('click', function (e) {
       var b = e.target.closest('.tab-btn');
       if (!b) return;
       state.tab = b.dataset.tab;
-      syncAll(data);
+      syncAll(currentData || data);
       var u = new URL(location.href);
       u.searchParams.set('tab', state.tab);
       if (state.tab !== 'timkiem') { u.searchParams.delete('q'); state.q = ''; }
@@ -395,7 +468,7 @@
           b.innerHTML = r.fav ? C.ICONS.heartSolid : C.ICONS.heartRegular;
           b.title = r.fav ? 'Bỏ yêu thích' : 'Thêm yêu thích';
         });
-        if (state.tab === 'yeuthich') renderTab(data);
+        if (state.tab === 'yeuthich') renderTab(currentData || data);
         return;
       }
 
@@ -430,14 +503,28 @@
   /* P2-H2 (2026-09-27): hien skeleton trong luc cho modules.json
      (truoc day panel trong hoan toan -> nguoi dung khong biet dang tai). */
   if (C.skeletonList) els.panelRoot.innerHTML = C.skeletonList(6, { thumb: true, lines: 2 });
-  loadJSON(DATA_URL).then(function (data) {
+  syncTrackButtons();
+  try {
+    var curUrl = new URL(location.href);
+    if (currentTrack && currentTrack !== 'h2dev' && curUrl.searchParams.get('track') !== currentTrack) {
+      curUrl.searchParams.set('track', currentTrack);
+      history.replaceState(null, '', curUrl.pathname + curUrl.search + curUrl.hash);
+    } else if (currentTrack === 'h2dev' && curUrl.searchParams.get('track') === 'h2dev') {
+      curUrl.searchParams.delete('track');
+      history.replaceState(null, '', curUrl.pathname + curUrl.search + curUrl.hash);
+    }
+  } catch (e) {}
+  var initialUrl = TRACK_URLS[currentTrack] || TRACK_URLS.h2dev;
+  loadJSON(initialUrl).then(function (data) {
+    currentData = data;
     var hydrate = C.hydrateAdmin ? C.hydrateAdmin() : Promise.resolve();
     return hydrate.then(function () {
       if (C.syncAdmin) C.syncAdmin();
-      bindEvents(data);
-      syncAll(data);
+      bindEvents(currentData);
+      syncAll(currentData);
       /* NANG CAP 2026-09-30 (CLS): lan ve day du dau tien xong (banner Tiep tuc hoc + panel) -> hien khu noi dung. */
       document.documentElement.classList.remove('learn-booting');
+      els.panelRoot.setAttribute('aria-busy', 'false');
     if (state.tab === 'timkiem') {
       var inp = document.getElementById('searchInput');
       if (inp) { inp.focus(); try { inp.setSelectionRange(inp.value.length, inp.value.length); } catch (e) {} }
@@ -455,10 +542,11 @@
       var sig = stateSig();
       if (sig === lastSig) return;
       lastSig = sig;
-      renderHeaderProgress(data);
-      renderResumeBanner(data);
-      renderTab(data);
-      if (state.tab === 'timkiem') bindSearchEvents(data);
+      var activeData = currentData || data;
+      renderHeaderProgress(activeData);
+      renderResumeBanner(activeData);
+      renderTab(activeData);
+      if (state.tab === 'timkiem') bindSearchEvents(activeData);
     };
     window.addEventListener('pageshow', resync);
     window.addEventListener('focus', resync);
@@ -467,7 +555,7 @@
   }).catch(function (err) {
     document.documentElement.classList.remove('learn-booting');
     els.panelRoot.setAttribute('aria-busy', 'false');
-    els.panelRoot.innerHTML = '<div class="load-err">' + C.ico('alert-triangle', 16) + ' Không tải được data/modules.json — ' + C.esc(err.message) + '<br>File này được duy trì thủ công (script build-modules đã archive, KHÔNG chạy lại). Kiểm tra: <code>node scripts/validate-project.js</code></div>';
+    els.panelRoot.innerHTML = '<div class="load-err">' + C.ico('alert-triangle', 16) + ' Không tải được lộ trình — ' + C.esc(err.message) + '<br>Kiểm tra: <code>node scripts/validate-project.js</code></div>';
   });
 })();
 

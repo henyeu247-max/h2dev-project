@@ -5,10 +5,10 @@
   <base href="/" target="_top">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="H2DEV Project — Lộ trình học YouTube faceless theo Module, không cần đăng nhập.">
+  <meta name="description" content="97yo-dev — Hệ thống lộ trình đào tạo đa nhánh (H2DEV, Đại Gia Mang Dép DGMD, Huân Academy), không cần đăng nhập.">
   <meta name="theme-color" content="#050505">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='27' fill='none' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='3' fill='%23E2023A'/></svg>">
-  <title>H2DEV — Lộ trình</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2307080d' stroke='%23E2023A' stroke-width='2.5'/><circle cx='32' cy='32' r='21' fill='none' stroke='%23E2023A' stroke-width='2.4'/><circle cx='32' cy='32' r='12' fill='none' stroke='%2338bdf8' stroke-width='1.6' stroke-dasharray='4 3'/><circle cx='32' cy='32' r='3.2' fill='%23E2023A'/><circle cx='44' cy='21' r='3.6' fill='%23FFCC00'/></svg>">
+  <title>97yo-dev — Hệ Thống Lộ Trình</title>
   <!-- NANG CAP 2026-09-30 (CLS): preload font nhu index.html — thieu preload thi font swap sau lan ve dau lam header/tabbar xe dich -->
   <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/inter-vietnamese.woff2" type="font/woff2" crossorigin>
@@ -16,43 +16,45 @@
   <link rel="preload" as="font" href="assets/fonts/space-grotesk-vietnamese.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/jetbrains-mono-latin.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/jetbrains-mono-vietnamese.woff2" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/viddar.css?v=20261009-uifix86">
-  <link rel="stylesheet" href="/assets/learn.css?v=20261009-uifix86">
-<link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20261009-uifix86">
-<link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20261009-uifix86">
-<link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20261009-uifix86">
-<link rel="stylesheet" href="/assets/h2dev-icons.css?v=20261009-uifix86">
-  <link rel="stylesheet" href="/assets/h2dev-shell.css?v=20261009-uifix86">
+  <link rel="stylesheet" href="/assets/viddar.css?v=20261009-uifix88">
+  <link rel="stylesheet" href="/assets/learn.css?v=20261009-uifix88">
+<link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20261009-uifix88">
+<link rel="stylesheet" href="/assets/h2dev-primitives.css?v=20261009-uifix88">
+<link rel="stylesheet" href="/assets/h2dev-components-lesson-row.css?v=20261009-uifix88">
+<link rel="stylesheet" href="/assets/h2dev-icons.css?v=20261009-uifix88">
+  <link rel="stylesheet" href="/assets/h2dev-shell.css?v=20261009-uifix88">
 </head>
 <body>
   <!-- PHASE 2: Skip-link chuan (truoc day learn THIEU) -->
   <a href="#panelRoot" class="h2-shell-skip">Bỏ qua điều hướng</a>
   <header class="learn-header h2-shell-header">
     <div class="learn-brand">
-      <a href="/" class="h2-shell-brand" target="_top" title="Về trang chủ H2DEV">
+      <a href="/" class="h2-shell-brand" target="_top" title="Về trang chủ 97yo-dev">
         <span class="vd-radar-wrap">
-          <svg class="vd-radar" width="28" height="28" viewBox="0 0 64 64" fill="none" role="img" aria-label="H2DEV">
+          <svg class="vd-radar" width="28" height="28" viewBox="0 0 64 64" fill="none" role="img" aria-label="97yo-dev">
             <defs>
               <linearGradient id="vd-sweep-learn" x1="32" y1="32" x2="53" y2="12" gradientUnits="userSpaceOnUse">
                 <stop stop-color="#E2023A" stop-opacity=".95"/>
                 <stop offset="1" stop-color="#E2023A" stop-opacity="0"/>
               </linearGradient>
             </defs>
-            <rect width="64" height="64" rx="4" fill="#050505"></rect>
-            <circle class="radar-ping" cx="32" cy="32" r="21" stroke="#E2023A" stroke-width="2.4" opacity=".55"></circle>
+            <rect x="2" y="2" width="60" height="60" rx="12" fill="#07080d" stroke="#E2023A" stroke-width="2" stroke-opacity=".45"></rect>
+            <circle class="radar-ping" cx="32" cy="32" r="21" stroke="#E2023A" stroke-width="2.4" opacity=".65"></circle>
+            <circle cx="32" cy="32" r="12" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 3" opacity=".55"></circle>
             <g class="radar-sweep">
               <path d="M32 32 L32 11 A21 21 0 0 1 51.7 25.8 Z" fill="url(#vd-sweep-learn)"></path>
               <line x1="32" y1="32" x2="51.7" y2="25.8" stroke="#E2023A" stroke-width="2.4" stroke-linecap="round"></line>
             </g>
-            <circle cx="32" cy="32" r="2.8" fill="#E2023A"></circle>
+            <circle cx="32" cy="32" r="3.2" fill="#E2023A"></circle>
             <circle cx="44" cy="21" r="3.6" fill="#FFCC00"></circle>
+            <circle cx="22" cy="40" r="2.4" fill="#38bdf8"></circle>
           </svg>
         </span>
-        <span class="vd-wordmark">h2<em>dev</em></span>
+        <span class="vd-wordmark">97yo<em>-dev</em></span>
       </a>
       <div>
-        <h1 id="learn-title" class="h2-shell-title">Lộ trình học</h1>
-        <span id="learnCount" class="h2-shell-brand__tag">không cần đăng nhập</span>
+        <h1 id="learn-title" class="h2-shell-title">97yo-dev · Lộ trình học</h1>
+        <span id="learnCount" class="h2-shell-brand__tag">Hệ thống đào tạo đa nhánh</span>
       </div>
     </div>
     <div class="header-right">
@@ -61,11 +63,26 @@
         <div class="progress-text" id="progressText"></div>
       </div>
       <button type="button" class="back-home" id="btnHistoryBack" title="Quay lại trang trước"><span class="h2-icon h2-icon--14" data-h2i="arrow-left" aria-hidden="true"></span> Quay lại</button>
+      <a href="/sodo" class="back-home" target="_top" title="Mở Sơ đồ DB &amp; Đồ thị liên kết">Sơ đồ DB</a>
       <a href="/" class="back-home" target="_top" title="Về trang chủ">Trang chủ</a>
     </div>
   </header>
 
-  <div class="resume-banner hidden" id="resumeBanner"></div>
+  <!-- LỘ TRÌNH SWITCHER: Chuyển đổi giữa 3 nhánh con thuộc hệ thống 97yo-dev: H2DEV, DGMD và HUÂN -->
+  <div class="track-switcher" id="trackSwitcher" role="radiogroup" aria-label="Chọn nhánh đào tạo thuộc 97yo-dev">
+    <button type="button" class="track-btn active" data-track="h2dev" role="radio" aria-checked="true">
+      <span class="track-tag">H2DEV</span>
+      <span class="track-label">Nhánh H2DEV · Faceless (148 Video)</span>
+    </button>
+    <button type="button" class="track-btn" data-track="dgmd" role="radio" aria-checked="false">
+      <span class="track-tag track-tag--dgmd">DGMD</span>
+      <span class="track-label">Nhánh Đại Gia Mang Dép (45 Video)</span>
+    </button>
+    <button type="button" class="track-btn" data-track="huan" role="radio" aria-checked="false">
+      <span class="track-tag track-tag--huan">HUÂN</span>
+      <span class="track-label">Nhánh Huân Academy (140 Video)</span>
+    </button>
+  </div>
 
   <!-- PHASE 2: nav tab chuan ARIA (them role/aria-selected/aria-controls roving tabindex) -->
   <nav class="tabbar" id="tabbar" role="tablist" aria-label="Chế độ xem lộ trình">
@@ -78,12 +95,12 @@
   <main class="learn-content" id="panelRoot" role="tabpanel" aria-live="polite" aria-busy="false" tabindex="-1"></main>
 
   <footer class="learn-footer h2-shell-footer">
-    H2DEV · kho faceless YouTube · không cần đăng nhập
+    97yo-dev · Hệ sinh thái đào tạo &amp; kho dữ liệu YouTube · không cần đăng nhập
   </footer>
 
-  <script src="assets/app/learn-main.js?v=20261009-uifix86"></script>
-  <script src="/assets/h2dev-core.js?v=20261009-uifix86"></script>
-  <script src="/assets/learn.js?v=20261009-uifix86"></script>
+  <script src="assets/app/learn-main.js?v=20261009-uifix88"></script>
+  <script src="/assets/h2dev-core.js?v=20261009-uifix88"></script>
+  <script src="/assets/learn.js?v=20261009-uifix88"></script>
   <!-- PHASE 2: Back-to-top chuan (dung class .h2-shell-backtotop, dong bo index/player) -->
   <button id="btn-back-to-top" type="button" class="h2-shell-backtotop" aria-label="Cuộn lên đầu trang" title="Cuộn lên đầu trang">
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>

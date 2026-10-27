@@ -635,7 +635,7 @@ SCENE
 BREAKDOWN
  
  
-��
+
  
 SCENE
  
@@ -648,7 +648,7 @@ Opening
 Frame
  
  
-��
+
  
 TEXT
  
@@ -803,7 +803,7 @@ Scene
 1.
  
  
-��
+
  
 IMAGE
  
@@ -918,14 +918,14 @@ Realistic
 motion
  
  
-��
+
  
 SCENE
  
 2
  
  
-��
+
  
 TEXT
  
@@ -1047,7 +1047,7 @@ Ultra
 realistic.
  
  
-��
+
  
 IMAGE
  
@@ -1117,14 +1117,14 @@ lines
 only.)
  
  
-��
+
  
 SCENE
  
 3
  
  
-��
+
  
 TEXT
  
@@ -1225,7 +1225,7 @@ Ultra
 realistic.
  
  
-��
+
  
 IMAGE
  
@@ -1272,7 +1272,7 @@ and
 stops."
  
  
-��
+
  
 SCENE
  
@@ -1289,7 +1289,7 @@ Scene
  
 3)
  
-��
+
  
 SCENE
  
@@ -1307,7 +1307,7 @@ Scene
 3)
  
  
-��
+
  
 FINAL
  
@@ -1318,7 +1318,7 @@ FRAME
 needed)
  
  
-��
+
  
 TEXT
  
@@ -1401,7 +1401,7 @@ aspect
 ratio.
  
  
-��
+
  
 IMAGE
  

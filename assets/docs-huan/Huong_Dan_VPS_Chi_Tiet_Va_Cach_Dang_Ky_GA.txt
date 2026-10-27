@@ -1,0 +1,597 @@
+GODA EDU
+YouTube AI Content System · Bài giảng #2
+CHÍNH SÁCH YOUTUBE
+Nội dung không trung thực & Sử dụng lại nội dung
+Nền tảng để xây kênh AI sạch, bật kiếm tiền và scale bền vững
+❝  Thông điệp trung tâm
+Muốn kiếm tiền bền vững trên YouTube, đừng học cách “né lỗi”. Hãy học cách xây nội dung đủ giá trị để không cần né.
+Chính sách không phải rào cản — chính sách là bản thiết kế giúp mình biết đâu là nội dung đi được đường dài.
+	________________
+
+
+Mục lục
+
+
+
+
+________________
+
+
+Mục tiêu bài giảng
+Sau bài học này, học viên phải hiểu rõ 7 điều:
+1. Chính sách YouTube gồm những lớp nào?
+2. Nội dung không trung thực là gì?
+3. Sử dụng lại nội dung là gì?
+4. Vì sao AI content rất dễ bị đánh lỗi nếu làm hàng loạt sai cách?
+5. Làm thế nào để phân biệt nội dung AI hợp lệ và nội dung AI rác?
+6. Trước khi đăng video cần kiểm tra những gì?
+7. Khi xây team / scale nhiều kênh, quản trị rủi ro chính sách thế nào?
+
+Bài trước ta học: AI không phải chiến lược, AI là đòn bẩy. Hôm nay học bài quan trọng hơn — dùng đòn bẩy đó thế nào để không tự làm gãy kênh.
+
+Nhiều người làm YouTube AI thất bại không phải vì không biết tool, mà vì không hiểu chính sách: thấy đối thủ lên view thì copy, thấy AI viết nhanh thì tạo hàng loạt, lấy script/voice/hình/clip ghép lại, nghĩ đủ giờ xem + sub là chắc chắn bật tiền.
+
+Nhưng YouTube xem toàn bộ kênh: chủ đề, video, mô tả, title, thumbnail, video mới nhất, video nhiều view nhất, phần lớn thời gian xem đến từ đâu, và kênh có thật sự tạo nội dung nguyên gốc không. Vì vậy đây là bài bảo vệ tài sản.
+	
+
+I. Chính sách YouTube là gì?
+1. Tám hiểu sai cần phá bỏ
+Hiểu sai #1: Chính sách là thứ để “né” hoặc “lách”
+Đây là hiểu sai nguy hiểm nhất. Nếu mục tiêu là “né”, nghĩa là ngay từ đầu đã đứng ở phía đối lập với nền tảng.
+Cách đúng phải là:
+   * Hiểu YouTube muốn gì và người xem cần gì.
+   * Hiểu dạng nội dung nào được xem là có giá trị.
+   * Hiểu vì sao kênh bị đánh lỗi.
+   * Xây quy trình để nội dung đủ khác biệt, đủ giá trị, đủ minh bạch.
+Theo chính sách: YouTube yêu cầu kênh kiếm tiền phải có nội dung nguyên gốc & xác thực; nếu mượn nội dung người khác thì phải thay đổi đáng kể, và không nên sản xuất hàng loạt/lặp lại chỉ để lấy view.
+💡 Chốt: Chính sách không phải để lách — chính sách là ranh giới giúp mình biết cách xây nội dung bền.
+	Hiểu sai #2: Cứ đủ 1.000 sub và 4.000 giờ xem là chắc chắn bật kiếm tiền
+Sai. Đủ điều kiện số học chỉ là bước đầu — YouTube còn đánh giá chất lượng toàn kênh.
+Một kênh đủ giờ xem vẫn có thể bị từ chối nếu:
+   * Video quá lặp.
+   * Nội dung không rõ do mình tạo ra.
+   * Dùng lại nội dung từ nguồn khác.
+   * Metadata gây hiểu nhầm.
+   * Video nhiều view nhất lại là video rủi ro.
+   * Kênh có cảm giác sản xuất hàng loạt bằng template.
+
+
+
+💡 Chốt: Đủ số liệu chỉ giúp kênh được xét. Chất lượng nội dung mới quyết định kênh có xứng đáng kiếm tiền.
+	Theo chính sách: Reviewer có thể kiểm tra chủ đề chính, video nhiều view nhất, video mới nhất, phần lớn thời gian xem, và metadata (title/thumbnail/description/About).
+
+Hiểu sai #3: Có quyền sử dụng nội dung là chắc chắn được kiếm tiền
+Sai. Có quyền dùng / không bị claim bản quyền không có nghĩa là chắc chắn bật kiếm tiền.
+Vẫn rủi ro nếu chỉ lấy rồi chỉnh tối thiểu, ví dụ:
+      * Có quyền dùng nhạc nhưng chỉ gom thành collection.
+      * Có quyền dùng clip nhưng chỉ ghép, không bình luận.
+      * Lấy video public domain nhưng không thêm phân tích.
+      * Dùng clip phim có license nhưng chỉ đổi voice sơ sài.
+      * Dịch nội dung người khác rồi đăng lại không có đóng góp mới.
+
+Theo chính sách: Reused content tách biệt với thực thi bản quyền: video có thể không bị claim mà vẫn vi phạm chính sách sử dụng lại nội dung.
+💡 Chốt: Bản quyền hỏi “bạn có quyền dùng không?”. Kiếm tiền hỏi “bạn có tạo thêm giá trị nguyên gốc không?”
+	
+Hiểu sai #4: Lấy video người khác, thay voice/nhạc, crop hình là thành nội dung mới
+Sai. Những thay đổi kỹ thuật nhỏ không tự động biến nội dung thành nguyên gốc.
+
+Thay đổi nhỏ KHÔNG đủ:
+         * Crop màn hình, lật ngang, tăng/giảm tốc độ.
+         * Đổi pitch nhạc, thêm filter nặng, chèn nhạc nền mới.
+         * Chèn voice đọc lại nhưng không có bình luận/góc nhìn.
+         * Cắt từ nhiều nguồn rồi nối lại.
+
+Theo chính sách: Spam Policy nêu rõ không cho phép thao túng kỹ thuật để né phát hiện (speeding up audio, heavy filters, cropping để bypass), và coi automated/synthetic mass-production là rủi ro.
+
+💡 Chốt: Thay đổi hình thức không đủ — phải thay đổi bản chất giá trị.
+	
+Hiểu sai #5: AI viết script thì nội dung chắc chắn là original
+Sai. AI tạo chữ mới, nhưng chữ mới chưa chắc là nội dung gốc có giá trị.
+AI có thể viết:
+            * Câu chữ mới nhưng ý tưởng cũ.
+            * Câu chữ mới nhưng cấu trúc quá lặp, video nào cũng giống nhau.
+            * Câu chữ mới nhưng không có góc nhìn, chỉ đọc lại thông tin phổ biến.
+            * Câu chữ mới nhưng không có chiều sâu, câu chuyện hay phân tích.
+Theo chính sách: Từ 7/2025, YouTube đổi tên “repetitious content” thành “inauthentic content”; nội dung AI tạo bằng generic template, tạo cảm giác mass production mà không thêm insight/perspective nguyên gốc là ví dụ không được kiếm tiền.
+
+💡 Chốt: AI tạo được câu chữ mới — nhưng kênh vẫn bị xem là không trung thực nếu video nào cũng cùng một khuôn.
+	
+Hiểu sai #6: Dùng AI thì luôn phải công bố
+Không hoàn toàn đúng. Chỉ cần công bố khi nội dung AI realistic và có thể khiến người xem hiểu nhầm.
+KHÔNG nhất thiết phải công bố:
+            * Dùng AI gợi ý tiêu đề, viết outline, sửa grammar.
+            * Tạo thumbnail concept không realistic gây hiểu nhầm.
+            * Tạo hoạt hình giả tưởng, infographic, caption.
+
+NÊN công bố:
+               * AI tạo cảnh realistic ở thành phố thật nhưng sự kiện không xảy ra.
+               * AI tạo public figure nói điều họ chưa từng nói.
+               * AI dựng lại sự kiện thời sự như footage thật.
+               * AI tạo nhạc/footage realistic theo yêu cầu của YouTube.
+Theo chính sách: Công bố AI không tự động giảm audience/khả năng kiếm tiền; nhưng không công bố khi bắt buộc có thể bị áp nhãn thủ công, gỡ nội dung, hoặc đình chỉ khỏi YPP nếu lặp lại.
+💡 Chốt: Dùng AI không xấu. Không minh bạch khi AI có thể làm người xem hiểu nhầm mới là rủi ro.
+	Hiểu sai #7: Video không bị gậy bản quyền nghĩa là an toàn
+Sai. Một video không bị claim vẫn có thể vi phạm các nhóm khác.
+Các nhóm rủi ro độc lập với bản quyền:
+               * Reused content · Inauthentic content · Spam.
+               * Misleading metadata · Community Guidelines.
+               * Advertiser-friendly · Privacy/identity · AI disclosure.
+💡 Chốt: Không bị gậy ≠ sạch. Sạch là khi nội dung có quyền, có giá trị, nguyên gốc, không lặp, không gây hiểu nhầm.
+	
+Hiểu sai #8: Làm nhiều kênh, nhiều video thì hệ thống sẽ tự có tiền
+Sai. Scale nội dung sạch là lợi thế; scale nội dung lặp là rủi ro.
+Scale trở thành rủi ro khi nhân bản:
+               * Lặp template, voice, script, hình, CTA, tiêu đề, metadata.
+               * Lặp cùng câu chuyện qua nhiều kênh.
+Theo chính sách: Spam Policy áp dụng cho cả content, metadata, hành vi, comment, link, post, thumbnail và cả coordinated networks of channels — đặc biệt quan trọng khi làm nhiều kênh bằng AI/team.
+💡 Chốt: Scale đúng là nhân bản quy trình tạo giá trị. Scale sai là nhân bản rủi ro.
+	________________
+
+
+2. Năm tầng chính sách
+
+Đừng học chính sách rời rạc. Học theo 5 tầng — mỗi tầng trả lời một câu hỏi sống còn.
+Tầng 1 — Community Guidelines: Kênh có được tồn tại không?
+Trả lời: nội dung này có được phép xuất hiện trên YouTube không? Vi phạm có thể bị gỡ video, cảnh cáo, hoặc chấm dứt kênh.
+Câu hỏi kiểm tra: Video này có được phép tồn tại trên YouTube không?
+Tầng 2 — Channel Monetization: Kênh có được bật kiếm tiền không?
+Tầng người làm GA quan tâm nhất. Hai lỗi trọng tâm của bài nằm ở đây: Inauthentic Content & Reused Content. Chính sách áp dụng cho TOÀN kênh, không chỉ một video.
+Câu hỏi kiểm tra: Kênh này có tạo nội dung nguyên gốc, xác thực, có giá trị không?
+Tầng 3 — Advertiser-Friendly: Video xanh, vàng hay không quảng cáo?
+Áp dụng cho cả video, thumbnail, title, description, tags. Vùng dễ vàng: bạo lực, sốc, tình dục, thô tục, ma túy, vũ khí, chủ đề gây tranh cãi, sự kiện nhạy cảm, chủ thể trông trẻ trong tình trạng đau khổ/gore.
+Câu hỏi kiểm tra: Nhà quảng cáo có muốn xuất hiện cạnh video này không?
+Tầng 4 — Copyright / Rights: Mình có quyền dùng tài nguyên không?
+Nhạc/stock/voice/hình/script có quyền thương mại không, có lưu bằng chứng license không. Nhưng có quyền dùng chưa chắc được kiếm tiền nếu không tạo giá trị mới.
+Câu hỏi kiểm tra: Tài nguyên này có quyền dùng thương mại không, và mình có tạo thêm giá trị mới không?
+Tầng 5 — AI Disclosure / Privacy / Identity: Có minh bạch & tôn trọng danh tính không?
+Người dùng có thể yêu cầu gỡ nội dung AI realistic trông/nghe giống họ. YouTube xét: có altered/synthetic không, có công bố không, có nhận diện được không, có realistic không, có parody/public interest không, có public figure trong hành vi nhạy cảm không.
+Câu hỏi kiểm tra: Nội dung này có làm người xem hiểu nhầm về người thật, sự kiện thật, địa điểm thật không?
+💡 Chốt: Một video bền không chỉ cần “không bị gỡ” — nó phải tồn tại được, kiếm tiền được, quảng cáo được, có quyền dùng và minh bạch.
+	________________
+
+
+II. Hai lỗi trọng tâm
+A. Nội dung không trung thực (Inauthentic Content)
+Là nội dung có cảm giác: sản xuất hàng loạt, lặp lại, dùng template quá giống nhau, thay đổi rất ít giữa các video, dễ nhân bản quy mô lớn, không có insight/góc nhìn nguyên gốc. Chính sách áp dụng cho TOÀN kênh.
+
+🔍  Ví dụ dễ hiểu
+Một kênh AI story đăng 100 video: câu mở đầu giống nhau, nhân vật giống nhau, biến cố giống nhau, CTA giống nhau, hình & voice giống nhau, thumbnail chỉ đổi mặt, nội dung chỉ khác vài tên riêng.
+
+Kênh này có thể không copy ai — nhưng vẫn rủi ro vì quá lặp và có cảm giác sản xuất hàng loạt.
+	
+
+YouTube cho phép gì? Vẫn được dùng format tương tự (intro/outro, khung series, khung review, khung Kinh Thánh, khung prayer) — miễn là phần nội dung chính khác biệt về bản chất. Nếu người xem trung bình thấy rõ nội dung khác nhau giữa các video thì có thể kiếm tiền.
+
+💡 Chốt: Giống format thì được. Giống nội dung chính thì rủi ro.
+	B. Sử dụng lại nội dung (Reused Content)
+Là khi kênh lấy nội dung đã có (trên YouTube hoặc nguồn online khác) rồi đăng lại mà không thêm đủ: bình luận gốc, phân tích, biến đổi đáng kể, giá trị giáo dục/giải trí, câu chuyện mới, góc nhìn mới, hoặc dấu ấn sáng tạo rõ ràng. Cũng áp dụng cho toàn kênh.
+
+
+Các dạng rủi ro: gom clip TikTok; cắt ghép phim; cắt ngắn bài giảng người khác; dịch story đối thủ; lấy voice đối thủ ghép hình mới; đọc lại Reddit y nguyên; ảnh stock + đọc bài website; gom nhạc nhiều nghệ sĩ; thêm intro/outro vào video người khác.
+
+
+YouTube cho phép gì? Được dùng một phần nội dung người khác nếu người xem thấy rõ khác biệt có ý nghĩa: review có phân tích, reaction có bình luận thật, clip thể thao có giải thích chiến thuật, cảnh phim viết lại lời thoại + voiceover mới, footage người khác nhưng có storyline/commentary/editing đáng kể.
+
+💡 Chốt: Lấy nguồn không sai nếu có quyền và có biến đổi thật. Lấy nguồn rồi đổi nhẹ để gọi là của mình thì rất rủi ro.
+	
+Bảng phân biệt Inauthentic vs Reused
+Tiêu chí
+	Nội dung không trung thực
+	Sử dụng lại nội dung
+	Bản chất lỗi
+	Quá lặp, sản xuất hàng loạt, template hóa
+	Lấy nội dung có sẵn nhưng không thêm đủ giá trị
+	Có cần copy người khác?
+	Không nhất thiết
+	Thường có dùng nguồn bên ngoài
+	AI liên quan?
+	Rất dễ, nếu dùng AI hàng loạt
+	Có thể, nếu dùng AI để đọc/dịch/xào lại
+	Rủi ro chính
+	Video nào cũng giống video nào
+	Không chứng minh được nội dung là của mình
+	Cách sửa
+	Tăng khác biệt nội dung chính, insight, nhân vật, xung đột, CTA, hình, voice
+	Thêm bình luận, phân tích, biến đổi đáng kể, voice/script/hình riêng
+	Câu hỏi kiểm tra
+	Video này có khác video TRƯỚC không?
+	Video này có khác NGUỒN GỐC không?
+	
+
+III. 8 công cụ áp dụng vào sản xuất
+Công cụ 1 — Policy Map: bản đồ 5 lớp kiểm tra
+
+Trước khi làm một key/kênh, kiểm tra theo 5 lớp:
+Câu hỏi chính
+	Pass khi
+	Có được tồn tại không?
+	Không vi phạm nguyên tắc cộng đồng
+	Có được kiếm tiền không?
+	Original, authentic, không lặp, không reused
+	Có phù hợp quảng cáo không?
+	Không quá sốc, không nhạy cảm quá mức
+	Có quyền dùng không?
+	Có license/quyền rõ ràng
+	Có minh bạch không?
+	Disclosure khi cần, không giả mạo người thật
+	Công cụ 2 — Inauthentic Content Audit (12 câu, chấm /10)
+Dùng cho kênh AI story, prayer, audiobook, nhạc, drama, lịch sử, Kinh Thánh, động vật, DIY.
+#
+	Câu hỏi
+	Điểm
+	1
+	Video này có khác rõ video trước không?
+	/10
+	2
+	Hook có khác không?
+	/10
+	3
+	Nhân vật/chủ thể chính có khác không?
+	/10
+	4
+	Vấn đề/xung đột có khác không?
+	/10
+	5
+	Cấu trúc câu có bị lặp quá nhiều không?
+	/10
+	6
+	CTA có bị lặp y nguyên không?
+	/10
+	7
+	Voice có hợp & không gây cảm giác máy hàng loạt không?
+	/10
+	8
+	Hình ảnh có khác & bám nội dung không?
+	/10
+	9
+	Thumbnail/title có khác biệt thật không?
+	/10
+	10
+	Nội dung có insight/góc nhìn riêng không?
+	/10
+	11
+	Video có được nhớ như một câu chuyện riêng không?
+	/10
+	12
+	Xem 10 video liên tiếp, substance có khác nhau không?
+	/10
+	
+
+Đọc điểm: 100–120 an toàn hơn · 80–99 cần sửa điểm lặp · 60–79 rủi ro trung bình, không nên scale · dưới 60 có cảm giác mass-produced, phải làm lại.
+
+💡 Chốt: Đừng chỉ hỏi video này hay không — hãy hỏi 10 video liên tiếp có bị giống nhau không.
+	Công cụ 3 — Reused Content Audit (10 câu, Pass/Fail)
+#
+	Câu hỏi
+	Pass/Fail
+	1
+	Tôi có quyền dùng nguồn này không?
+	
+
+	2
+	Có ghi rõ nguồn/license nếu cần không?
+	
+
+	3
+	Có thêm bình luận hoặc phân tích gốc không?
+	
+
+	4
+	Có thay đổi cấu trúc câu chuyện không?
+	
+
+	5
+	Có tạo voice/script riêng không?
+	
+
+	6
+	Có thêm giá trị giáo dục/giải trí rõ không?
+	
+
+	7
+	Người xem thấy khác biệt ý nghĩa so với bản gốc không?
+	
+
+	8
+	Video có phải chỉ là compilation không?
+	
+
+	9
+	Bỏ nguồn gốc đi, nội dung còn giá trị riêng không?
+	
+
+	10
+	Reviewer hiểu tôi đã tham gia sản xuất thế nào không?
+	
+
+	FAIL từ 3 câu trở lên → chưa nên đăng.
+💡 Chốt: Nguồn chỉ là nguyên liệu. Sản phẩm cuối phải mang dấu ấn sáng tạo của mình.
+	
+Công cụ 4 — Originality Matrix (cần ≥ 3/5 trụ cột)
+Trụ cột
+	Câu hỏi kiểm tra
+	Ví dụ
+	Ý tưởng
+	Chủ đề có góc nhìn riêng không?
+	Cùng là Triết gia nhưng khai thác bài học về niềm tin sai chỗ
+	Kịch bản
+	Script có cấu trúc & câu chữ riêng không?
+	Không đọc lại Kinh Thánh y nguyên, có câu chuyện cá nhân & bài học
+	Voice
+	Voice tạo trải nghiệm riêng không?
+	Giọng trầm, trang nghiêm, nhịp cầu nguyện
+	Hình ảnh
+	Visual có phong cách riêng không?
+	3D animation / tranh sơn dầu / stock nhà thờ
+	Biên tập
+	Edit có cấu trúc riêng không?
+	Hook mạnh, nhạc cao trào, CTA tinh tế
+	Quy tắc: 1/5 rất yếu · 2/5 rủi ro · 3/5 chấp nhận nếu chất lượng tốt · 4/5 mạnh · 5/5 có dấu ấn kênh.
+💡 Chốt: Nội dung càng nhiều lớp sáng tạo, càng dễ chứng minh đây là sản phẩm của mình.
+	Công cụ 5 — AI Disclosure Checklist
+Trước khi đăng video AI, hỏi 10 câu — nếu có từ 2 câu “có”, nên xem xét công bố:
+               1. Video có cảnh nào đó mô phỏng thực tế không?
+               2. Cảnh đó có liên quan người thật không?
+               3. Có làm người thật nói/làm điều họ không làm không?
+               4. Có người nổi tiếng nào bị nhân bản không?
+               5. Có sự kiện thật không?
+               6. Có địa điểm thật không?
+               7. Có tạo cảnh như footage thật nhưng thực tế không xảy ra không?
+               8. Có tạo nhạc AI không?
+               9. Có thể khiến người xem hiểu nhầm không?
+               10. Người xem bình thường có nghĩ đây là thật không?
+
+💡 Chốt: Minh bạch không làm kênh yếu đi — minh bạch làm kênh đáng tin hơn.
+	Công cụ 6 — Tuân thủ nguyên tắc cộng đồng
+
+Chủ đề
+	Rủi ro
+	Cách làm an toàn hơn
+	Chiến tranh
+	Máu me, kích động, sai sự thật
+	Bối cảnh giáo dục, tránh mô tả trực diện
+	Tội phạm
+	Giật gân, tổn thương nạn nhân
+	Tập trung phân tích & bài học, không mô tả bạo lực chi tiết
+	Tôn giáo
+	Xúc phạm, bịa đặt giáo lý
+	Trang nghiêm, rõ là kể chuyện/suy ngẫm
+	Động vật
+	Ngược đãi, giải cứu giả
+	Dễ thương, giáo dục, không gây hại
+	Drama
+	Thù ghét, xúc phạm cá nhân
+	Hư cấu rõ ràng, không nhắm người thật
+	Chính trị
+	Fake news, thao túng
+	Có nguồn, phân biệt sự thật & giả định
+	Sức khỏe
+	Sai lệch gây hại
+	Dẫn nguồn đáng tin, không thay tư vấn chuyên môn
+	Tài chính
+	Lừa đảo, hứa lợi nhuận
+	Không cam kết làm giàu, không dẫn scam
+	
+
+Lưu ý misinformation (thông tin giả, sai lệch): YouTube cấm một số nội dung misleading/deceptive có nguy cơ gây hại nghiêm trọng (manipulated/misattributed content (thao túng dẫn hướng dư luận có mục đích), cản trở quy trình dân chủ); ngoại lệ giáo dục/khoa học/nghệ thuật/lợi ích công không phải vé miễn trừ để quảng bá thông tin sai.
+💡 Chốt: Chủ đề nhạy cảm không nhất thiết phải bỏ — nhưng phải xử lý bằng trách nhiệm, nguồn, bối cảnh và cách thể hiện an toàn.
+	Công cụ 7 — Policy Scorecard (chấm mỗi tuần / mỗi 10 video)
+
+Hạng mục
+	Điểm tối đa
+	Câu hỏi
+	Chủ đề kênh rõ
+	10
+	Kênh có một cụm nội dung rõ không?
+	Originality
+	15
+	Nội dung có dấu ấn riêng không?
+	Không lặp template
+	15
+	Video có tạo sự khác biệt không?
+	Không reused
+	15
+	Có dùng lại nguồn khác quá nhiều không?
+	Voice sạch
+	10
+	Voice có quyền, không clone trái phép không?
+	Visual sạch
+	10
+	Hình/video có quyền, không gây hiểu nhầm không?
+	Metadata minh bạch
+	10
+	Title/thumbnail/description đúng nội dung không?
+	AI disclosure đúng
+	5
+	Có công bố khi cần không?
+	Sensitive topic an toàn
+	5
+	Chủ đề nhạy cảm xử lý có trách nhiệm không?
+	Lưu bằng chứng license
+	5
+	License/source/SOP có được lưu không?
+	
+
+Đọc điểm: 85–100 sạch, có thể scale · 70–84 ổn nhưng cần sửa điểm yếu · 50–69 rủi ro trung bình, chưa nên tăng sản lượng · dưới 50 dừng scale, audit toàn bộ.
+
+💡 Chốt: Đừng scale kênh khi chưa biết kênh có sạch không. Scale một kênh bẩn là tăng tốc về phía rủi ro.
+	________________
+
+
+V. VÍ DỤ — Vận dụng cho YouTube AI Content
+
+Ví dụ 1 — Anh A: kênh AI story bị rủi ro nội dung không trung thực
+
+Anh A làm Câu Chuyện Anh Hùng Miền Tây Nước Mỹ, dùng một master prompt duy nhất tạo 80 video/tháng: video nào cũng mở đầu gần giống nhau, nữ chính chỉ đổi tên, nam chính luôn là cao bồi tốt bụng, bối cảnh luôn thị trấn bụi đỏ, cao trào luôn bị hiểu nhầm rồi minh oan, CTA/voice/hình giống nhau.
+
+❌  Vấn đề
+Anh A không copy đối thủ, nhưng xem 10 video liên tiếp thấy cùng công thức, cùng cảm xúc, cùng kiểu nhân vật, cùng nhịp kể → cảm giác sản xuất hàng loạt.
+	✅  Cách sửa đúng (không bỏ key, sửa quy trình)
+
+• Biến cố đa dạng: mất đất, mất gia đình, bị lừa, bị bệnh, bị phản bội — không chỉ “bị ruồng bỏ”.
+• Nam chính không chỉ là cao bồi: bác sĩ, thợ rèn, người đưa thư, chủ trang trại, mục sư.
+• Bối cảnh thay đổi: thị trấn mỏ, trang trại, ga tàu, nhà thờ, mùa đông, sa mạc.
+• Bài học, CTA, hook, thumbnail, hình mở đầu làm mới cho mỗi video.
+	💡 Chốt: Anh A không chết vì AI — anh rủi ro vì dùng AI để nhân bản một mô-típ quá giống nhau.
+	
+Ví dụ 2 — Chị B: cùng làm Kinh Thánh nhưng tránh được lỗi lặp
+Chị B làm Bible Story tiếng Tây Ban Nha, cũng dùng AI viết script/voice/hình, nhưng chia kênh thành nhiều playlist (nhân vật, bài học đức tin, tha thứ, thử thách, cầu nguyện sáng/tối) và mỗi video có nhân vật/bối cảnh/xung đột/bài học/CTA/hình khác nhau.
+
+Video
+	Tính Cách Nhân vật & Nội dung 
+	Bài học
+	1
+	Sức mạnh & cám dỗ
+	Đừng đánh mất lời hứa thiêng liêng
+	2
+	Sự tha thứ
+	Không ai bị định nghĩa mãi bởi quá khứ
+	3
+	Nghi ngờ & niềm tin
+	Đức tin có thể bắt đầu từ câu hỏi
+	4
+	Sợ hãi & phục hồi
+	Sai lầm không phải là kết thúc
+	5
+	Trung thành
+	Lòng trung thành mở ra số phận mới
+	V. Bài tập trên lớp
+Bài tập 1 — Phân loại lỗi
+Học viên phân loại 10 ví dụ vào: reused / inauthentic / spam / copyright / AI disclosure / advertiser / community guidelines.
+                  1. Dịch video đối thủ tiếng Anh sang tiếng Pháp, giữ cấu trúc & ý tưởng y nguyên.
+                  2. Tạo 100 video prayer cùng script, chỉ đổi ngày tháng.
+                  3. Gom clip TikTok thú cưng, không bình luận.
+                  4. Tạo AI public figure phát biểu giả.
+                  5. Video chiến tranh với ảnh máu me realistic.
+                  6. Dùng nhạc AI nhưng không kiểm tra license.
+                  7. Story hư cấu nhưng title như tin thật.
+                  8. Dùng cùng voice/story đăng 5 kênh khác nhau.
+                  9. Lấy bài viết website đọc lại bằng TTS.
+                  10. Video Kinh Thánh có phân tích, hình riêng, voice riêng, bài học riêng.
+
+CHECK LỖI SAI của 10 ví dụ trên
+Bài tập 2 — Chấm kênh bằng Policy Scorecard
+Học viên chấm kênh mình/đối thủ theo 10 hạng mục của Công cụ 8 (tổng /100). Dưới 70 điểm → không scale.
+Bài tập 3 — Viết lại một video reused thành video có giá trị
+Chọn một nguồn (bài viết / clip ngắn / tin tức / Reddit / đoạn phim / story đối thủ) và viết lại theo 5 lớp biến đổi: góc nhìn mới · cấu trúc mới · bình luận/phân tích mới · voice/script mới · visual/edit mới.
+________________
+
+
+VI. Ba câu chốt mang về
+①  Về chính sách
+Chính sách YouTube không phải để né. Nó là bản đồ giúp creator xây nội dung nguyên gốc, xác thực, có giá trị, không gây hiểu nhầm và đủ điều kiện kiếm tiền.
+	②  Về hai lỗi trọng tâm
+Không trung thực = lỗi do lặp/template/mass-production. Sử dụng lại = lỗi do lấy nguồn có sẵn mà không thêm đủ giá trị.
+
+Một lỗi hỏi: video này có khác video TRƯỚC không? Lỗi kia hỏi: video này có khác NGUỒN GỐC không?
+	③  Về cách làm
+Mỗi video phải qua 5 kiểm tra: (1) được tồn tại? (2) đủ chất lượng kiếm tiền? (3) phù hợp quảng cáo? (4) có quyền dùng tài nguyên? (5) minh bạch về AI/người thật/sự kiện thật?
+	________________
+
+
+X. Bài tập về nhà
+Bài 1 — Audit 10 video gần nhất của kênh mình
+Video
+	Có lặp template?
+	Có reused?
+	Rủi ro chính
+	Cần sửa gì
+	Video 1
+	
+
+	
+
+	
+
+	
+
+	Video 2
+	
+
+	
+
+	
+
+	
+
+	Video 3
+	
+
+	
+
+	
+
+	
+
+	Video 4
+	
+
+	
+
+	
+
+	
+
+	Video 5
+	
+
+	
+
+	
+
+	
+
+	Video 6
+	
+
+	
+
+	
+
+	
+
+	Video 7
+	
+
+	
+
+	
+
+	
+
+	Video 8
+	
+
+	
+
+	
+
+	
+
+	Video 9
+	
+
+	
+
+	
+
+	
+
+	Video 10
+	
+
+	
+
+	
+
+	
+
+	Bài 2 — Làm Policy Scorecard cho kênh
+Chấm điểm kênh theo 10 hạng mục (Công cụ 8), tổng /100.
+Bài 3 — Tạo checklist trước khi upload cho team
+Viết checklist ≥ 20 câu hỏi, chia: script · voice · visual · title/thumbnail · description · license · AI disclosure · sensitive topic.
+Bài 4 — Viết lại 3 CTA không lặp
+CTA giữa video · CTA cuối video · CTA bình luận ghim. Yêu cầu: phù hợp cảm xúc video, không copy video trước, không ép tương tác giả.
+Bài 5 — Chọn 1 video rủi ro và viết kế hoạch sửa
+Ghi rõ: video rủi ro · thuộc nhóm lỗi nào · vì sao rủi ro · cần sửa script/voice/hình/title gì · có cần gỡ/private/làm lại không · bài học cho video sau.
+GODA EDU · Bài #2 — Chính sách YouTube, nội dung không trung thực & sử dụng lại · Nội bộ    |    Trang

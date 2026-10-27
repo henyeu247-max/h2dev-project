@@ -8,8 +8,8 @@
 - **Thị trường mục tiêu:** Nhật Bản & Hàn Quốc (Mã: `JP-KR`)
 - **Thời lượng:** 09:19
 - **Dung lượng MP4:** 190.7 MB
-- **File Video:** [`video/VIDEO-73d98a/VIDEO-73d98a.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-73d98a/VIDEO-73d98a.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-73d98a.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-73d98a.png)
+- **File Video:** [`video/VIDEO-73d98a/VIDEO-73d98a.mp4`](/video/VIDEO-73d98a/VIDEO-73d98a.mp4)
+- **Ảnh đại diện:** [`assets/thumbs/VIDEO-73d98a.png`](/assets/thumbs/VIDEO-73d98a.png)
 - **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-key-ngach-cuc-nho-moi-nhat-06-09-2026](https://h2dev.vn/learn/study/update-key-ngach-cuc-nho-moi-nhat-06-09-2026)
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways

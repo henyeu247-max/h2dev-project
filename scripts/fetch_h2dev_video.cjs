@@ -43,7 +43,7 @@ const OUT = gArg('--out', (process.env.TEMP || '/tmp') + '/' + SKU + '_download.
 const WORK = (process.env.TEMP || '/tmp') + '/h2dev_dl_' + SKU;
 const FFMPEG = 'D:/Linly-Dubbing/bin/ffmpeg.exe';
 const FFPROBE = 'D:/Linly-Dubbing/bin/ffprobe.exe';
-const OPENSSL = 'openssl';
+const OPENSSL = fs.existsSync('C:/Program Files/Git/usr/bin/openssl.exe') ? 'C:/Program Files/Git/usr/bin/openssl.exe' : 'openssl';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36';
 const CONC = 6;
 const TS_SYNC = 0x47;
@@ -111,14 +111,14 @@ function decryptAll(keyPath, segFiles) {
         return;
       }
       const m = u.match(/-n_(\d+)_\d+_\d+\.ts/);
-      if (m && /__mp4__/.test(u)) {
+      if (m && (/__mp4__/.test(u) || /__decode__/.test(u))) {
         const idx = parseInt(m[1], 10);
         if (saved.has(idx)) return;
         const b = await resp.body();
         if (b && b.length) { const p = WORK + '/seg_' + String(idx).padStart(5, '0') + '.ts'; fs.writeFileSync(p, b); saved.set(idx, p); }
         return;
       }
-      if (/_chunk\.m3u8/.test(u) && u.indexOf('__mp4__' + QUALITY) >= 0) {
+      if (/_chunk\.m3u8/.test(u)) {
         const txt = await resp.text();
         const n = txt.split('\n').filter(l => { l = l.trim(); return l && !l.startsWith('#'); }).length;
         if (n > playlistTotal) { playlistTotal = n; listResolve(n); }

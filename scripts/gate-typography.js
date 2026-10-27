@@ -8,7 +8,7 @@
  *   vi KHONG co gate nao kiem typography (chi co gate icon).
  *
  * NGUON CHUAN (SSoT, KHONG tu bia):
- *   - design-system/tokens.json -> font.sizeScale.standardized = 9 bac
+ *   - design-system/tokens.json -> font.sizeScale.standardized = 8 bac
  *   - design-system/tokens.json -> font.weight.allowed = 400/500/600/700
  *   - design-system/CONVENTIONS.md 7.4
  *
@@ -25,8 +25,49 @@
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
+const crypto = require('crypto');
+const childProcess = require('child_process');
 
-const ROOT = path.resolve(__dirname, '..');
+const PROBE = process.argv.includes('--probe');
+const PROBE_SHADOW = process.argv.includes('--probe-shadow');
+const REAL_ROOT = path.resolve(__dirname, '..');
+const ROOT = PROBE_SHADOW && process.env.H2DEV_TYPOGRAPHY_ROOT
+  ? path.resolve(process.env.H2DEV_TYPOGRAPHY_ROOT)
+  : REAL_ROOT;
+
+if (PROBE && !PROBE_SHADOW) {
+  const shadow = fs.mkdtempSync(path.join(os.tmpdir(), 'h2dev-gate-typography-'));
+  const realTargets = [path.join(REAL_ROOT, 'assets', 'learn.css'), __filename];
+  const sha1 = file => crypto.createHash('sha1').update(fs.readFileSync(file)).digest('hex');
+  const before = new Map(realTargets.map(file => [file, sha1(file)]));
+  let probeExit = 1;
+  try {
+    fs.cpSync(path.join(REAL_ROOT, 'assets'), path.join(shadow, 'assets'), { recursive: true });
+    fs.mkdirSync(path.join(shadow, 'css'), { recursive: true });
+    fs.copyFileSync(path.join(REAL_ROOT, 'css', 'input.css'), path.join(shadow, 'css', 'input.css'));
+    fs.mkdirSync(path.join(shadow, 'design-system'), { recursive: true });
+    fs.copyFileSync(path.join(REAL_ROOT, 'design-system', 'tokens.json'), path.join(shadow, 'design-system', 'tokens.json'));
+    for (const rel of ['index.html', 'player.html', 'learn.html', 'server.js']) {
+      fs.copyFileSync(path.join(REAL_ROOT, rel), path.join(shadow, rel));
+    }
+    const css = path.join(shadow, 'assets', 'learn.css');
+    const original = fs.readFileSync(css, 'utf8');
+    fs.writeFileSync(css, original + '\n.probe-typography { font-size: 17px; }\n');
+    const env = { ...process.env, H2DEV_TYPOGRAPHY_ROOT: shadow };
+    const injected = childProcess.spawnSync(process.execPath, [__filename, '--probe-shadow'], { cwd: REAL_ROOT, env, encoding: 'utf8' });
+    fs.writeFileSync(css, original);
+    const restored = childProcess.spawnSync(process.execPath, [__filename, '--probe-shadow'], { cwd: REAL_ROOT, env, encoding: 'utf8' });
+    const identical = realTargets.every(file => before.get(file) === sha1(file));
+    console.log('PROBE injected font-size:17px -> ' + (injected.status === 1 ? 'FAIL BAT DUOC' : 'BO LOT (exit=' + injected.status + ')'));
+    console.log('PROBE restored shadow -> ' + (restored.status === 0 ? 'PASS' : 'FAIL (exit=' + restored.status + ')'));
+    console.log('SHA1 source truoc/sau byte-identical: ' + (identical ? 'OK' : 'THAT BAI'));
+    probeExit = injected.status === 1 && restored.status === 0 && identical ? 0 : 1;
+  } finally {
+    fs.rmSync(shadow, { recursive: true, force: true });
+  }
+  process.exit(probeExit);
+}
 
 /* ---------- Nguon chuan ---------- */
 let tokens;
@@ -81,7 +122,7 @@ const head = t => console.log('\n=== ' + t + ' ===');
 const ok = t => console.log('  PASS | ' + t);
 
 /* ---------- [1] font-size ---------- */
-head('[1] font-size chi dung 9 bac chuan: ' + SIZE_SCALE.join(' / '));
+head('[1] font-size chi dung ' + SIZE_SCALE.length + ' bac chuan: ' + SIZE_SCALE.join(' / '));
 let sizeDecl = 0;
 for (const abs of files) {
   const rel = path.relative(ROOT, abs).replace(/\\/g, '/');
@@ -91,14 +132,14 @@ for (const abs of files) {
     for (const m of ln.matchAll(/font-size\s*:\s*([0-9.]+)px/g)) {
       sizeDecl++;
       if (!ALLOWED_SIZES.has(m[1])) {
-        fail(rel + ':' + (i + 1) + ' font-size:' + m[1] + 'px KHONG thuoc 9 bac chuan  | ' + ln.trim().slice(0, 80));
+        fail(rel + ':' + (i + 1) + ' font-size:' + m[1] + 'px KHONG thuoc ' + SIZE_SCALE.length + ' bac chuan  | ' + ln.trim().slice(0, 80));
       }
     }
     /* shorthand font: ... Npx/... */
     for (const m of ln.matchAll(/\bfont\s*:[^;{}]*?([0-9.]+)px\s*\//g)) {
       sizeDecl++;
       if (!ALLOWED_SIZES.has(m[1])) {
-        fail(rel + ':' + (i + 1) + ' font shorthand ' + m[1] + 'px KHONG thuoc 9 bac chuan  | ' + ln.trim().slice(0, 80));
+        fail(rel + ':' + (i + 1) + ' font shorthand ' + m[1] + 'px KHONG thuoc ' + SIZE_SCALE.length + ' bac chuan  | ' + ln.trim().slice(0, 80));
       }
     }
   });
@@ -186,7 +227,7 @@ if (fails === beforeArb) ok(codeDecl + ' khai bao trong ' + codeTargets.length +
 
 /* ---------- [4] font-size qua don vi KHAC px (rem/em) va clamp() ----------
  * LOI THAT 2026-09-24 (P3.7): `.badge { font-size: 0.6rem }` = 9.6px — LOT khoi luat [1]
- *   vi luat [1] chi tim `Npx`. 0.6rem vua NGOAI thang 9 bac, vua GHI DE class text-2xs.
+ *   vi luat [1] chi tim `Npx`. 0.6rem vua NGOAI thang 8 bac, vua GHI DE class text-2xs.
  *   Tuong tu: `clamp(19px, 2.1vw, 26px)` co max 26px — luat [1] khong thay so max.
  * Rule nay bat: font-size dang rem/em (quy doi 1rem=16px) + moi so px trong clamp().
  */

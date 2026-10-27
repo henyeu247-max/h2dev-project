@@ -5,6 +5,12 @@ const ROOT = path.resolve(__dirname, '..');
 const errors = [];
 const warnings = [];
 
+function pythonArgs(script, ...args) {
+  const cmd = process.env.H2DEV_PYTHON || 'py';
+  const base = path.basename(cmd).toLowerCase();
+  return { cmd, args: [...(base === 'py' || base === 'py.exe' ? ['-3'] : []), script, ...args] };
+}
+
 function readJson(relativePath) {
   const fullPath = path.join(ROOT, relativePath);
   try {
@@ -137,7 +143,7 @@ for (const video of videos) {
     if (!found) {
       errors.push(`${video.sku}: missing local media (${candidates.join(' | ')})`);
     } else if (fs.statSync(path.join(ROOT, found)).size === 0) {
-      warnings.push(`${video.sku}: media is 0 bytes — download failed, not playable`);
+      errors.push(`${video.sku}: media is 0 bytes — download failed, not playable`);
     }
   } else {
     warnings.push(`${video.sku}: no local media (not downloaded yet)`);
@@ -153,7 +159,8 @@ const videoDirs = fs.existsSync(path.join(ROOT, 'video'))
 const thumbs = fs.existsSync(path.join(ROOT, 'assets', 'thumbs'))
   ? fs.readdirSync(path.join(ROOT, 'assets', 'thumbs')).filter(name => name !== 'placeholder.svg')
   : [];
-if (videoDirs.length !== EXPECTED_VIDEOS) warnings.push(`video directory count is ${videoDirs.length}, expected ${EXPECTED_VIDEOS}`);
+const EXPECTED_SYSTEM_VIDEOS = C.totalSystemVideos || (EXPECTED_VIDEOS + (C.videosHuan || 140) + (C.videosDgmd || 45));
+if (videoDirs.length !== EXPECTED_VIDEOS && videoDirs.length !== EXPECTED_SYSTEM_VIDEOS) warnings.push(`video directory count is ${videoDirs.length}, expected ${EXPECTED_VIDEOS} (or ${EXPECTED_SYSTEM_VIDEOS} across 3 tracks)`);
 const thumbSkus = new Set(thumbs.map(n => n.replace(/\.[^.]+$/, '')));
 if (thumbSkus.size !== EXPECTED_VIDEOS) warnings.push(`thumbnail SKU count is ${thumbSkus.size}, expected ${EXPECTED_VIDEOS} (files=${thumbs.length})`);
 if (channels.length !== EXPECTED_CHANNELS) errors.push(`Expected ${EXPECTED_CHANNELS} channel records; got ${channels.length}`);
@@ -318,12 +325,28 @@ const docsOnDisk = fs.existsSync(path.join(ROOT, 'docs'))
   : 0;
 if (docsOnDisk < 45) warnings.push(`docs file count is ${docsOnDisk}; expected at least the original 45 extract files`);
 
+// Guard số pipeline + tài liệu: đếm thư mục thật, rồi buộc TREE/RULE liệt kê đủ tên.
+{
+  const pipelineRoot = path.join(ROOT, 'pipelines');
+  const pipelineNames = fs.existsSync(pipelineRoot)
+    ? fs.readdirSync(pipelineRoot, { withFileTypes: true }).filter(entry => entry.isDirectory()).map(entry => entry.name).sort()
+    : [];
+  const docsToCheck = ['TREE.md', path.join('knowledge-hub', 'docs', 'RULE-LAM-VIEC.md')];
+  for (const rel of docsToCheck) {
+    const body = fs.existsSync(path.join(ROOT, rel)) ? fs.readFileSync(path.join(ROOT, rel), 'utf8') : '';
+    const missingNames = pipelineNames.filter(name => !body.includes(name));
+    if (!new RegExp(`\\b${pipelineNames.length} pipeline\\b`, 'i').test(body) || missingNames.length) {
+      errors.push(`${rel}: pipeline docs drift — disk=${pipelineNames.length}, thieu ten=[${missingNames.join(', ')}]`);
+    }
+  }
+}
+
 // Guard: chan inline event handler chua du lieu dong (nguyen nhan lam nut Xem Video chet
 // khi tieu de co dau nhay don). Chi tiet: scripts/guard-no-inline-onclick.js
 try {
   const inlineGuard = require('./guard-no-inline-onclick.js');
   inlineGuard.scan().forEach((offender) => {
-    errors.push(`index.html:${offender.line} inline handler chua du lieu dong (${offender.snippet})`);
+    errors.push(`${path.relative(ROOT, offender.file)}:${offender.line} inline handler chua du lieu dong (${offender.snippet})`);
   });
 } catch (guardError) {
   errors.push(`Khong chay duoc guard-no-inline-onclick.js: ${guardError.message}`);
@@ -399,12 +422,19 @@ try {
 // @handle, tên công cụ nằm trong transcript hoặc tài liệu kèm của chính video (scripts/check-grounding.py --live).
 {
   const cp = require('child_process');
-  const r = cp.spawnSync('py', ['-3', path.join('scripts', 'check-grounding.py'), '--live'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 });
+  const py = pythonArgs(path.join('scripts', 'check-grounding.py'), '--live');
+  const r = cp.spawnSync(py.cmd, py.args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 });
   if (r.error || r.status === null) {
-    console.warn('[validate] bỏ qua guard bám transcript: không chạy được Python (' + (r.error ? r.error.message : 'status null') + ')');
+    const reason = r.error ? r.error.message : 'status null';
+    if (process.env.H2DEV_SKIP_PY_GUARDS === '1') {
+      console.warn('[validate] H2DEV_SKIP_PY_GUARDS=1 — bỏ qua guard bám transcript: ' + reason);
+    } else {
+      errors.push('Khong chay duoc guard bam transcript (Python): ' + reason + ' — chi bo qua co chu dich bang H2DEV_SKIP_PY_GUARDS=1');
+    }
   } else if (r.status !== 0) {
     const lines = String(r.stdout || '').split('\n').filter(Boolean);
-    errors.push(`video_insights.json: ${lines[lines.length - 1]} — ví dụ: ${lines.slice(0, 3).join(' | ').slice(0, 300)} (chạy py -3 scripts/check-grounding.py --live)`);
+    const detail = lines.length ? `${lines[lines.length - 1]} — ví dụ: ${lines.slice(0, 3).join(' | ').slice(0, 300)}` : String(r.stderr || '').trim().slice(0, 300) || `exit ${r.status}`;
+    errors.push(`video_insights.json: grounding fail: ${detail} (interpreter: ${py.cmd})`);
   }
 }
 
@@ -412,12 +442,19 @@ try {
 // của chính video (scripts/check-grounding-md.py --live).
 {
   const cp = require('child_process');
-  const r = cp.spawnSync('py', ['-3', path.join('scripts', 'check-grounding-md.py'), '--live'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 });
+  const py = pythonArgs(path.join('scripts', 'check-grounding-md.py'), '--live');
+  const r = cp.spawnSync(py.cmd, py.args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 });
   if (r.error || r.status === null) {
-    console.warn('[validate] bỏ qua guard bám nguồn SOP .md: không chạy được Python (' + (r.error ? r.error.message : 'status null') + ')');
+    const reason = r.error ? r.error.message : 'status null';
+    if (process.env.H2DEV_SKIP_PY_GUARDS === '1') {
+      console.warn('[validate] H2DEV_SKIP_PY_GUARDS=1 — bỏ qua guard bám nguồn SOP .md: ' + reason);
+    } else {
+      errors.push('Khong chay duoc guard bam nguon SOP .md (Python): ' + reason + ' — chi bo qua co chu dich bang H2DEV_SKIP_PY_GUARDS=1');
+    }
   } else if (r.status !== 0) {
     const lines = String(r.stdout || '').split('\n').filter(Boolean);
-    errors.push(`assets/docs SOP .md: ${lines[lines.length - 1]} — ví dụ: ${lines.slice(0, 3).join(' | ').slice(0, 300)} (chạy py -3 scripts/check-grounding-md.py)`);
+    const detail = lines.length ? `${lines[lines.length - 1]} — ví dụ: ${lines.slice(0, 3).join(' | ').slice(0, 300)}` : String(r.stderr || '').trim().slice(0, 300) || `exit ${r.status}`;
+    errors.push(`assets/docs SOP .md: grounding fail: ${detail} (interpreter: ${py.cmd})`);
   }
 }
 
@@ -439,6 +476,99 @@ try {
   if (drifted.length) errors.push(`video_insights.json: cặp khóa hoa/thường lệch nội dung: ${drifted.join(', ')} — chép bản chữ hoa sang chữ thường`);
 }
 
+// Guard 3-Track (H2DEV + HUAN + DGMD) & edit_sop schema + insight.json sync + music_catalog safeForYPP + file:/// guard + tai-lieu-full kind guard
+{
+  const KEY_NAME_RE = /^(primary|additional|trim_start|trim_end|emphasis|b_roll|voice|visual|music|subtitles|trim|speed_bgm|sub|footage|captions|pacing|music_sfx|avoid|cuts|trim_start_seconds|trim_end_seconds)$/i;
+  const expH2dev = C.videos ?? 148;
+  const expHuan = C.videosHuan ?? 140;
+  const expDgmd = C.videosDgmd ?? 45;
+  const trackFiles = [
+    { name: 'h2dev', ins: 'data/video_insights.json', vids: 'data-tabs/videos.json', expected: expH2dev },
+    { name: 'huan', ins: 'data/video_insights_huan.json', vids: 'data/videos_huan.json', expected: expHuan },
+    { name: 'dgmd', ins: 'data/video_insights_dgmd.json', vids: 'data/videos_dgmd.json', expected: expDgmd },
+  ];
+  for (const tf of trackFiles) {
+    const insObj = readJson(tf.ins) || {};
+    const vidArr = readJson(tf.vids) || [];
+    if (Object.keys(insObj).length !== tf.expected || vidArr.length !== tf.expected) {
+      errors.push(`Track ${tf.name}: kỳ vọng ${tf.expected} SKU, nhưng ${tf.ins}=${Object.keys(insObj).length}, ${tf.vids}=${vidArr.length}`);
+    }
+    for (const [sku, rec] of Object.entries(insObj)) {
+      const es = rec.edit_sop;
+      if (!es || typeof es !== 'object' || Array.isArray(es) || !es.primary || !Array.isArray(es.additional) || es.additional.length < 3) {
+        errors.push(`${tf.ins} [${sku}]: edit_sop phải là object {primary, additional} có >= 3 bước`);
+      } else {
+        for (const step of es.additional) {
+          if (typeof step !== 'string' || step.trim().length < 40 || KEY_NAME_RE.test(step.trim())) {
+            errors.push(`${tf.ins} [${sku}]: bước edit_sop lỗi hoặc quá ngắn (<40 ký tự): "${step}"`);
+            break;
+          }
+        }
+      }
+      // Cross-check video/<SKU>/insight.json against master track insight file
+      const skuInsRel = path.join('video', sku, 'insight.json');
+      if (!exists(skuInsRel)) {
+        errors.push(`Thiếu file ${skuInsRel} cho SKU ${sku} (${tf.name})`);
+      } else {
+        const skuIns = readJson(skuInsRel);
+        if (skuIns) {
+          if (JSON.stringify(skuIns.edit_sop) !== JSON.stringify(rec.edit_sop) ||
+              skuIns.title !== rec.title ||
+              JSON.stringify(skuIns.key_timestamps) !== JSON.stringify(rec.key_timestamps)) {
+            errors.push(`${skuInsRel} lệch nội dung (edit_sop/title/key_timestamps) so với file tổng ${tf.ins}`);
+          }
+        }
+      }
+    }
+  }
+
+  // Guard nhất quán safeForYPP / copyrightRisk trong data/music_catalog.json
+  const musicCat = readJson('data/music_catalog.json') || {};
+  if (!musicCat.auditSummary || typeof musicCat.auditSummary.basis !== 'string' || !musicCat.auditSummary.basis.trim()) {
+    errors.push('data/music_catalog.json: thiếu auditSummary.basis giải thích quy ước safeForYPP / copyrightRisk');
+  }
+  for (const tr of array(musicCat.tracks)) {
+    if (tr.copyrightRisk === 'COPYRIGHTED' && tr.safeForYPP !== false) {
+      errors.push(`data/music_catalog.json [${tr.id}]: copyrightRisk=COPYRIGHTED nhưng safeForYPP=${tr.safeForYPP}`);
+    } else if ((tr.copyrightRisk === 'SAFE' || tr.copyrightRisk === 'REVIEW') && tr.safeForYPP !== true) {
+      errors.push(`data/music_catalog.json [${tr.id}]: copyrightRisk=${tr.copyrightRisk} nhưng safeForYPP=${tr.safeForYPP}`);
+    }
+  }
+
+  // Guard chống lỗi hồi quy biến activeModules chưa khai báo trong renderVideo (content.js)
+  const contentJsPath = path.join(ROOT, 'assets', 'app', 'tabs', 'content.js');
+  if (fs.existsSync(contentJsPath)) {
+    const cjs = fs.readFileSync(contentJsPath, 'utf8');
+    if (/\bactiveModules\b/.test(cjs) && !/(?:const|let|var)\s+activeModules\b/.test(cjs)) {
+      errors.push('assets/app/tabs/content.js: tham chiếu activeModules nhưng chưa khai báo (lỗi hồi quy UI-02)');
+    }
+  }
+
+  const missingKind = docsMerged.filter(d => !d.kind);
+  if (missingKind.length) {
+    errors.push(`data-tabs/tai-lieu-full.json: ${missingKind.length} mục thiếu trường kind`);
+  }
+  // Guard chống link tuyệt đối file:/// trong toàn bộ docs/**/*.md
+  let fileUrlCount = 0;
+  function scanMdForFileUri(dir) {
+    if (!fs.existsSync(dir)) return;
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        scanMdForFileUri(full);
+      } else if (entry.isFile() && entry.name.endsWith('.md')) {
+        const txt = fs.readFileSync(full, 'utf8');
+        const m = txt.match(/file:\/\/\//g);
+        if (m) fileUrlCount += m.length;
+      }
+    }
+  }
+  scanMdForFileUri(path.join(ROOT, 'docs'));
+  if (fileUrlCount > 0) {
+    errors.push(`docs/**/*.md còn chứa ${fileUrlCount} chuỗi file:/// — phải đổi sang đường dẫn tương đối /...`);
+  }
+}
+
 // Guard tài liệu hướng dẫn trỏ tới script không tồn tại (script bị xoá mà hướng dẫn còn ghi).
 {
   const docFiles = [];
@@ -457,8 +587,8 @@ try {
   }
 }
 
-// Guard file data trỏ tới phải được git theo dõi: file có local nhưng chưa vào git thì deploy xong sẽ 404
-// (vd. assets/docs/VIDEO-xxx/description.txt). Bỏ qua khi không có git.
+// Guard file data trỏ tới phải được git theo dõi: file có local nhưng chưa vào git thì deploy xong sẽ 404.
+// Chỉ bỏ qua có chủ đích bằng H2DEV_SKIP_GIT_GUARD=1; thiếu/hỏng git mặc định là ERROR.
 if (fs.existsSync(path.join(ROOT, '.git'))) {
   try {
     const tracked = new Set(require('child_process').execFileSync('git', ['ls-files'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 }).split('\n').map(s => s.trim()).filter(Boolean));
@@ -470,7 +600,11 @@ if (fs.existsSync(path.join(ROOT, '.git'))) {
     const untracked = [...refs].filter(r => { let p = r; try { p = decodeURIComponent(r); } catch (e) { /* giữ nguyên */ } return exists(p) && !tracked.has(p) && !tracked.has(r); });
     if (untracked.length) errors.push(`data-tabs trỏ tới ${untracked.length} file có local nhưng CHƯA vào git (deploy sẽ 404): ${untracked.slice(0, 5).join(', ')}${untracked.length > 5 ? ', …' : ''} — git add các file này`);
   } catch (gitError) {
-    warnings.push(`Không chạy được guard file chưa track: ${gitError.message}`);
+    if (process.env.H2DEV_SKIP_GIT_GUARD === '1') {
+      warnings.push(`H2DEV_SKIP_GIT_GUARD=1 — bỏ qua guard file chưa track: ${gitError.message}`);
+    } else {
+      errors.push(`Không chạy được guard file chưa track: ${gitError.message} — chỉ bỏ qua có chủ đích bằng H2DEV_SKIP_GIT_GUARD=1`);
+    }
   }
 }
 
@@ -484,7 +618,7 @@ if (errors.length) {
   process.exitCode = 1;
 } else {
   console.log('Validation passed.');
-  console.log(`Videos: ${videos.length}; channels: ${channels.length}; kich-ban: ${scripts.length}; tai-lieu-full: ${docsMerged.length}; thumbnails: ${thumbs.length}; video directories: ${videoDirs.length}`);
+  console.log(`Videos: 333 (H2DEV ${videos.length} + HUAN 140 + DGMD 45); channels: ${channels.length}; kich-ban: ${scripts.length}; tai-lieu-full: ${docsMerged.length}; thumbnails: ${thumbs.length}; video directories: ${videoDirs.length}`);
   if (warnings.length) {
     console.log('Warnings:');
     warnings.forEach(warning => console.log(`- ${warning}`));

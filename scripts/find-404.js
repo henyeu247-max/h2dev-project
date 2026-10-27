@@ -1,12 +1,35 @@
 /**
- * find-404.js — Tìm chính xác URL trả 404 khi duyệt web
+ * find-404.js — Tìm chính xác URL trả 4xx/5xx khi duyệt web.
  * Chạy: node scripts/find-404.js [baseUrl]
  */
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 
-const BASE = process.argv[2] || 'https://h2dev-learn.tonymmo.com';
+const ROOT = path.resolve(__dirname, '..');
+const BASE = (process.argv[2] || 'https://97yo-dev-learn.tonymmo.com').replace(/\/$/, '');
 const CHROME = process.env.CHROME_PATH || 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+
+function readSpaRoutes() {
+  const source = fs.readFileSync(path.join(ROOT, 'assets', 'app', 'main.js'), 'utf8');
+  const tabsBlock = source.match(/const\s+TABS\s*=\s*\[([\s\S]*?)\n\s*\];/);
+  if (!tabsBlock) throw new Error('Khong doc duoc TABS[] tu assets/app/main.js');
+  const ids = [...tabsBlock[1].matchAll(/\bid:\s*['"]([^'"]+)['"]/g)].map(m => m[1]);
+  if (!ids.length) throw new Error('TABS[] khong co route nao');
+  return ids.map(id => `/${id}`);
+}
+
+function readPlayerRoutes(limit = 3) {
+  const videos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'videos.json'), 'utf8'));
+  const skus = videos.filter(v => v && v.sku).map(v => v.sku);
+  if (!skus.length) throw new Error('data-tabs/videos.json khong co SKU');
+  const indexes = [...new Set([0, Math.floor((skus.length - 1) / 2), skus.length - 1])];
+  return indexes.slice(0, limit).map(i => `/lotrinh/${encodeURIComponent(skus[i])}`);
+}
+
+function buildPages() {
+  return [...new Set([...readSpaRoutes(), '/lotrinh', '/graph', ...readPlayerRoutes()])];
+}
 
 async function main() {
   const browser = await puppeteer.launch({
@@ -15,25 +38,42 @@ async function main() {
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
   const page = await browser.newPage();
-  const bad = [];
+  const pages = buildPages();
+  const responses = new Set();
+  const bad = new Map();
+  const navigationErrors = [];
+
   page.on('response', res => {
-    if (res.status() >= 400) bad.push({ status: res.status(), url: res.url() });
+    const url = res.url();
+    responses.add(url);
+    if (res.status() >= 400) bad.set(`${res.status()} ${url}`, { status: res.status(), url });
   });
 
-  const pages = [
-    '/index.html',
-    '/learn.html',
-    '/player.html?sku=VIDEO-DD983D',
-    '/player.html?sku=ZOOM-01-Nen-tang-moi-truong',
-  ];
-  for (const p of pages) {
-    console.log(`\n--- ${p} ---`);
-    bad.length = 0;
-    await page.goto(BASE + p, { waitUntil: 'networkidle2', timeout: 60000 });
-    await new Promise(r => setTimeout(r, 3000));
-    if (!bad.length) console.log('  (no 4xx/5xx)');
-    bad.forEach(b => console.log(`  ${b.status} | ${b.url}`));
+  try {
+    for (const route of pages) {
+      console.log(`\n--- ${route} ---`);
+      const before = bad.size;
+      try {
+        await page.goto(BASE + route, { waitUntil: 'networkidle2', timeout: 30000 });
+        await new Promise(resolve => setTimeout(resolve, 300));
+      } catch (error) {
+        navigationErrors.push({ route, message: error.message });
+        console.error(`  NAVIGATION ERROR | ${error.message}`);
+      }
+      if (bad.size === before && !navigationErrors.some(x => x.route === route)) console.log('  (no 4xx/5xx)');
+    }
+  } finally {
+    await browser.close();
   }
-  await browser.close();
+
+  console.log(`\nTong route da mo: ${pages.length}`);
+  console.log(`Tong URL response da kiem: ${responses.size}`);
+  if (bad.size) {
+    console.error(`Tong response 4xx/5xx: ${bad.size}`);
+    for (const item of bad.values()) console.error(`  ${item.status} | ${item.url}`);
+  }
+  if (navigationErrors.length) console.error(`Tong navigation error: ${navigationErrors.length}`);
+  process.exitCode = bad.size || navigationErrors.length ? 1 : 0;
 }
-main().catch(e => { console.error(e); process.exit(1); });
+
+main().catch(error => { console.error(error); process.exit(1); });

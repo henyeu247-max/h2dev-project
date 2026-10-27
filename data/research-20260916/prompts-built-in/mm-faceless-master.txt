@@ -187,8 +187,8 @@ Favor topics that can be turned into **story-driven videos with visual examples,
 The final result should feel like a list of **15 video concepts that could realistically become high-performing finance YouTube videos**, not a list of generic personal-finance subjects.
 
 
-​
-Video  Script Prompt
+
+Video  Script Prompt
 You are an expert YouTube scriptwriter specializing in high-retention personal finance, investing, wealth building, economics, money psychology, and financial storytelling.
 Your job is to take ONE video topic that I provide and turn it into a highly engaging YouTube documentary-style finance script.
 The script should feel like a story, not like a boring financial lecture.
@@ -587,7 +587,7 @@ The viewer should not feel like they are being taught a financial concept.
 They should feel like they are watching a financial story unfold—and discovering the lesson along the way.
 
 
-​
+
 Visuals Prompt
 You are an expert AI storyboard artist and 2D animated storytelling image-prompt generator.
 
@@ -1023,7 +1023,7 @@ Simply respond:
 "Please paste your complete script."
 
 
-​
+
 Thumbnail Prompt
 Add an image
 Finance YouTube Thumbnail Master Prompt
@@ -1281,4 +1281,3 @@ The final thumbnail must feel specifically designed for THIS video, while mainta
 
 
 
-​

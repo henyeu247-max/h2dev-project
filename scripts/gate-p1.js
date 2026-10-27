@@ -25,29 +25,46 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 const ROOT = path.resolve(__dirname, '..');
 
-// --- File SONG can kiem (liet ke TUONG MINH - SCAR-008: fail loud hon pass im lang) ---
-const LIVE_FILES = [
-  'assets/viddar.css',
-  'assets/learn.css',
-  'assets/player.css',
-  'assets/h2dev-primitives.css',
-  'assets/h2dev-shell.css',
-  'assets/h2dev-icons.css',
-  'assets/h2dev-components-lesson-row.css',
-  'assets/app/g3-inline.css',
-  'assets/app/main.js',
-  'assets/music_player_modal.js',
-  'assets/app/player-main.js',
-  'assets/app/tabs/content.js',
-  'assets/app/tabs/nav.js',
-  'assets/app/icons.js',
-  'index.html',
-  'player.html',
-  'learn.html'
-];
+// --- File SONG: tự khám phá từ 3 HTML và lần theo tham chiếu JS/CSS (H2DEV-SCAR-026). ---
+const ENTRY_HTML = ['index.html', 'player.html', 'learn.html'];
+const LIVE_EXCLUDES = new Set([
+  'assets/tailwind.css',      // file build; nguồn thật là css/input.css
+  'assets/h2dev-tokens.css'  // file định nghĩa token, hợp lệ khi chứa z-index số nền
+]);
+
+function localRef(fromRel, rawRef) {
+  const clean = String(rawRef).split(/[?#]/)[0].replace(/\\/g, '/');
+  if (!clean || /^(?:[a-z]+:|\/\/|data:|#)/i.test(clean)) return null;
+  const rel = clean.startsWith('/') ? clean.slice(1) : path.posix.normalize(path.posix.join(path.posix.dirname(fromRel), clean));
+  if (!/\.(?:js|css)$/i.test(rel) || rel.startsWith('../') || LIVE_EXCLUDES.has(rel)) return null;
+  return rel;
+}
+
+function discoverLiveFiles() {
+  const queue = [...ENTRY_HTML];
+  const seen = new Set();
+  while (queue.length) {
+    const rel = queue.shift();
+    if (seen.has(rel)) continue;
+    seen.add(rel);
+    const full = path.join(ROOT, rel);
+    if (!fs.existsSync(full)) continue;
+    const raw = fs.readFileSync(full, 'utf8');
+    // Chỉ lần theo asset được HTML nạp thật; không quét chuỗi trong JS/comment để tránh false positive.
+    const refs = rel.endsWith('.html')
+      ? [...raw.matchAll(/<(?:script|link)\b[^>]*(?:src|href)\s*=\s*["']([^"']+)["']/gi)].map(m => m[1])
+      : [];
+    for (const ref of refs) {
+      const child = localRef(rel, ref);
+      if (child && !seen.has(child)) queue.push(child);
+    }
+  }
+  return [...seen].sort();
+}
 
 // --- [1] Hex nen panel CAM (da xac minh: phai dung var(--surface) / var(--surface-2) / var(--bg)) ---
 const BANNED_PANEL_HEX = [
@@ -87,10 +104,11 @@ function stripComments(src) {
   return s;
 }
 
-function readLive() {
+function readLive(overrides) {
   const out = [];
-  for (const rel of LIVE_FILES) {
+  for (const rel of discoverLiveFiles()) {
     const p = path.join(ROOT, rel);
+    if (overrides && overrides.has(rel)) { out.push({ rel, raw: overrides.get(rel) }); continue; }
     if (!fs.existsSync(p)) { out.push({ rel, missing: true }); continue; }
     out.push({ rel, raw: fs.readFileSync(p, 'utf8') });
   }
@@ -98,10 +116,10 @@ function readLive() {
 }
 
 function findViolations(files) {
-  const v = { panelHex: [], zIndexNum: [], blur: [], rawBlur: [], arbitrary: [], inlineImp: [], lineHeight: [], letterSpacing: [], purpleCta: [], adHocBtn: [] };
+  const v = { missingLive: [], panelHex: [], zIndexNum: [], blur: [], rawBlur: [], arbitrary: [], inlineImp: [], lineHeight: [], letterSpacing: [], purpleCta: [], adHocBtn: [] };
 
   for (const f of files) {
-    if (f.missing) continue;
+    if (f.missing) { v.missingLive.push({ file: f.rel, line: 0, txt: 'File duoc web tham chieu nhung khong ton tai' }); continue; }
     const body = stripComments(f.raw);
     const lines = body.split('\n');
 
@@ -213,6 +231,7 @@ function findViolations(files) {
 
 function report(v) {
   const sections = [
+    ['[0] File web dang tham chieu bi thieu', v.missingLive],
     ['[1] Hex nen panel ngoai chuan (dung var(--surface)/var(--surface-2)/var(--bg))', v.panelHex],
     ['[2] z-index dang SO trong CSS (dung token --h2-z-*)', v.zIndexNum],
     ['[3] backdrop blur khac 10px (dung --h2-backdrop-blur)', v.blur],
@@ -225,7 +244,7 @@ function report(v) {
     ['[8b] Nut tu che to hop padding + mau raw (dung .h2-btn*/.btn-*)', v.adHocBtn]
   ];
   let total = 0;
-  console.log('[gate-p1] Kiem chuan P1 tren ' + LIVE_FILES.length + ' file song');
+  console.log('[gate-p1] Kiem chuan P1 tren ' + discoverLiveFiles().length + ' file song tu dong phat hien');
   for (const [title, arr] of sections) {
     total += arr.length;
     console.log('\n  ' + title);
@@ -244,38 +263,41 @@ function report(v) {
   return total;
 }
 
-// --- PROBE: tiem loi gia vao 1 file tam -> gate PHAI bat duoc, roi phuc hoi byte-identical ---
+function sha1File(rel) {
+  return crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, rel))).digest('hex');
+}
+
+// --- PROBE: tiêm trên bản sao trong bộ nhớ; source thật không bị ghi trong bất kỳ thời điểm nào. ---
 function probe() {
-  const target = path.join(ROOT, 'assets/app/g3-inline.css');
-  const htmlTarget = path.join(ROOT, 'index.html');
-  const orig = fs.readFileSync(target, 'utf8');
-  const origHtml = fs.readFileSync(htmlTarget, 'utf8');
+  const targetRel = 'assets/app/g3-inline.css';
+  const htmlRel = 'index.html';
+  const orig = fs.readFileSync(path.join(ROOT, targetRel), 'utf8');
+  const origHtml = fs.readFileSync(path.join(ROOT, htmlRel), 'utf8');
+  const beforeSha = { [targetRel]: sha1File(targetRel), [htmlRel]: sha1File(htmlRel) };
   const injections = [
-    { name: 'hex nen panel (#0f172a)', file: target, content: orig + '\n.probe-x { background: #0f172a; }\n' },
-    { name: 'blur 28px', file: target, content: orig + '\n.probe-y { backdrop-filter: blur(28px); }\n' },
+    { name: 'hex nen panel (#0f172a)', css: orig + '\n.probe-x { background: #0f172a; }\n' },
+    { name: 'blur 28px', css: orig + '\n.probe-y { backdrop-filter: blur(28px); }\n' },
     // P2-I5 (2026-09-27): luat [3b] — blur 10px/4px viet THO thay vi dung token.
     // Day la lo hong THAT vua phat hien: luat [3] cu chap nhan `blur(10px)` tho nen
     // --h2-backdrop-blur co 0 nguoi dung (20 cho viet tho). Phai probe ca dang co space.
-    { name: 'blur 10px viet THO (phai dung token — SCAR-022)', file: target, content: orig + '\n.probe-r { backdrop-filter: blur(10px); }\n' },
+    { name: 'blur 10px viet THO (phai dung token — SCAR-022)', css: orig + '\n.probe-r { backdrop-filter: blur(10px); }\n' },
     // SCAR-027: probe DUNG dang da tung LOT LUOI — inline, KHONG co khoang trang
-    { name: 'blur 12px inline khong space (lo hong da tung lot)', file: target, content: orig, html: origHtml.replace('</body>', '<span style="backdrop-filter:blur(12px)">probe</span>\n</body>') },
-    { name: 'line-height 1.75 (lech xa)', file: target, content: orig + '\n.probe-z { line-height: 1.75; }\n' },
+    { name: 'blur 12px inline khong space (lo hong da tung lot)', css: orig, html: origHtml.replace('</body>', '<span style="backdrop-filter:blur(12px)">probe</span>\n</body>') },
+    { name: 'line-height 1.75 (lech xa)', css: orig + '\n.probe-z { line-height: 1.75; }\n' },
     // G11 (2026-10-14): mien 22px chi cho .row-title + min-height 44px; hai dang sau PHAI van FAIL
-    { name: 'line-height 22px o selector KHAC (khong duoc mien)', file: target, content: orig + '\n.probe-t { line-height: 22px; min-height: 44px; }\n' },
-    { name: 'line-height 23px tren .row-title (sai gia tri mien)', file: target, content: orig + '\n.row-title { line-height: 23px; min-height: 44px; }\n' },
-    { name: 'letter-spacing 0.08em', file: target, content: orig + '\n.probe-w { letter-spacing: 0.08em; }\n' },
-    { name: 'z-index so', file: target, content: orig + '\n.probe-v { z-index: 9999; }\n' },
+    { name: 'line-height 22px o selector KHAC (khong duoc mien)', css: orig + '\n.probe-t { line-height: 22px; min-height: 44px; }\n' },
+    { name: 'line-height 23px tren .row-title (sai gia tri mien)', css: orig + '\n.row-title { line-height: 23px; min-height: 44px; }\n' },
+    { name: 'letter-spacing 0.08em', css: orig + '\n.probe-w { letter-spacing: 0.08em; }\n' },
+    { name: 'z-index so', css: orig + '\n.probe-v { z-index: 9999; }\n' },
     // P1-E (SCAR-019: moi luat phai duoc probe)
-    { name: 'CTA mau tim', file: target, content: orig + '\n.probe-u { }\n' , html: origHtml.replace('</body>', '<button class="px-4 py-2 rounded-xl bg-purple-600 text-white">probe</button>\n</body>') },
-    { name: 'nut tu che (raw color + padding)', file: target, content: orig, html: origHtml.replace('</body>', '<button class="px-4 py-2 rounded-xl bg-rose-900/40 text-white">probe</button>\n</body>') }
+    { name: 'CTA mau tim', css: orig + '\n.probe-u { }\n', html: origHtml.replace('</body>', '<button class="px-4 py-2 rounded-xl bg-purple-600 text-white">probe</button>\n</body>') },
+    { name: 'nut tu che (raw color + padding)', css: orig, html: origHtml.replace('</body>', '<button class="px-4 py-2 rounded-xl bg-rose-900/40 text-white">probe</button>\n</body>') }
   ];
   let caught = 0;
-  console.log('\n--- PROBE gate-p1: tiem loi gia, xac nhan gate BAT DUOC ---');
+  console.log('\n--- PROBE gate-p1: tiem loi tren ban sao bo nho, source that bat bien ---');
   for (const inj of injections) {
-    fs.writeFileSync(inj.file, inj.content);
-    // G15 (2026-10-14): luon dat lai HTML goc khi luot nay khong tiem HTML; truoc day span blur(12px) cua luot truoc ro sang cac luot sau lam cot blur=1 o moi dong va che mat luot nao that su bat duoc
-    fs.writeFileSync(htmlTarget, inj.html || origHtml);
-    const v = findViolations(readLive());
+    const overrides = new Map([[targetRel, inj.css], [htmlRel, inj.html || origHtml]]);
+    const v = findViolations(readLive(overrides));
     const ok = v.panelHex.length > 0 || v.blur.length > 0 || v.rawBlur.length > 0 || v.lineHeight.length > 0 ||
                v.letterSpacing.length > 0 || v.zIndexNum.length > 0 ||
                v.purpleCta.length > 0 || v.adHocBtn.length > 0;
@@ -286,10 +308,10 @@ function probe() {
       ', purple=' + v.purpleCta.length + ', adhoc=' + v.adHocBtn.length + ')');
     if (ok) caught++;
   }
-  fs.writeFileSync(target, orig);
-  fs.writeFileSync(htmlTarget, origHtml);
-  const identical = fs.readFileSync(target, 'utf8') === orig && fs.readFileSync(htmlTarget, 'utf8') === origHtml;
-  console.log('  Phuc hoi byte-identical: ' + (identical ? 'OK' : 'THAT BAI!'));
+  const afterSha = { [targetRel]: sha1File(targetRel), [htmlRel]: sha1File(htmlRel) };
+  const identical = beforeSha[targetRel] === afterSha[targetRel] && beforeSha[htmlRel] === afterSha[htmlRel];
+  console.log('  SHA1 truoc/sau: ' + JSON.stringify(beforeSha) + ' / ' + JSON.stringify(afterSha));
+  console.log('  Source byte-identical: ' + (identical ? 'OK' : 'THAT BAI!'));
   console.log('  KET QUA PROBE: ' + caught + '/' + injections.length + ' luot bat duoc loi tiem vao');
   if (caught !== injections.length || !identical) {
     console.log('  PROBE THAT BAI');

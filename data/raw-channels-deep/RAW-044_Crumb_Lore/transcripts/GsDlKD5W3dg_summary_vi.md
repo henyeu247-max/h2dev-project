@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Táo là loại trái cây được công nhận nhiều nhất trên hành tinh. Nó xuất hiện trong câu chuyện Adam và Eva trong truyện cổ tích ở logo của công ty công nghệ lớn nhất thế giới. Trẻ em vẽ nó khi chúng nghĩ về một loại trái cây. Giáo viên giữ một chiếc trên bàn như một biểu tượng của kiến ​​thức."
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Táo là loại trái cây được công nhận nhiều nhất trên hành tinh. Nó xuất hiện trong câu chuyện Adam và Eva trong truyện cổ tích ở logo của công ty công nghệ lớn nhất thế giới. Trẻ em vẽ nó khi chúng nghĩ về một loại trái cây. Giáo viên giữ một chiếc trên bàn như một biểu tượng của kiến thức."
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Táo là loại trái cây được công nhận nhiều nhất trên hành tinh. Nó xuất hiện trong câu chuyện Adam và Eva trong truyện cổ tích ở logo của công ty công nghệ lớn nhất thế giới. Trẻ em vẽ nó khi chúng nghĩ về một loại trái cây. Giáo viên giữ một chiếc trên bàn như một biểu tượng của kiến ​​thức.
+Táo là loại trái cây được công nhận nhiều nhất trên hành tinh. Nó xuất hiện trong câu chuyện Adam và Eva trong truyện cổ tích ở logo của công ty công nghệ lớn nhất thế giới. Trẻ em vẽ nó khi chúng nghĩ về một loại trái cây. Giáo viên giữ một chiếc trên bàn như một biểu tượng của kiến thức.
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 Và hầu hết mọi thứ bạn nghĩ bạn biết về nó [âm nhạc] đều sai. Quả táo không gây ra sự sụp đổ của loài người. Người đàn ông trồng cây táo [âm nhạc] trên khắp nước Mỹ đã không lan truyền một lành mạnh đồ ăn vặt. Quả táo phổ biến nhất trong nước đã bị cố tình hủy hoại vì lợi nhuận. Và trái cây trong cửa hàng tạp hóa của bạn lúc này có thể cũ hơn sinh nhật gần đây nhất mà bạn tổ chức. Điều mà không ai biết trong nhiều thế kỷ là câu chuyện thực sự về những quả táo thật kỳ lạ, đen tối hơn và hấp dẫn hơn bất kỳ huyền thoại [âm nhạc] nào từng viết về họ. Đây là lịch sử của loại trái cây bị hiểu lầm nhiều nhất trên thế giới. Nhưng câu chuyện này không bắt đầu trong một khu vườn. Nó bắt đầu ở một dãy núi. Hầu hết mọi người chưa bao giờ nghe nói đến dãy núi Thiên Sơn nằm dọc biên giới giữa Trung Quốc và Trung Á, chạy qua Kazakhstan ngày nay. Và ở chân những ngọn núi đó, có thứ gì đó mọc lên mà bạn sẽ không tìm thấy bất cứ nơi nào khác trên hành tinh. Rừng táo rừng. Không phải vườn cây do người dân trồng. Rừng. Hàng dặm cây táo mọc hoang, quấn [âm nhạc] vào nhau, sinh trái trong mọi kích thước, hình dạng và màu sắc mà bạn có thể tưởng tượng. Một số cây này đã phát triển ở đó hàng triệu năm. Và...

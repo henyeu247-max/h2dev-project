@@ -22,7 +22,7 @@
 | # | Mục tiêu | Thước đo nghiệm thu |
 |---|---|---|
 | M1 | **Icon thống nhất 1 hệ** | 0 emoji trong UI; 0 thẻ `<svg>` rời ngoài `ICONS`; chỉ 4 size `14/16/20/24` |
-| M2 | **Typography thống nhất** | Chỉ 9 bậc font-size; 0 arbitrary `text-[Npx]` mới; weight chỉ `400/500/600/700` |
+| M2 | **Typography thống nhất** | Chỉ 8 bậc font-size; 0 arbitrary `text-[Npx]` mới; weight chỉ `400/500/600/700` |
 | M3 | **Shell đồng nhất 3 trang** | Cả 3 trang đủ 6 thành phần: header chuẩn · footer chuẩn · back-to-top · skip-link · nav ARIA chuẩn · brand chuẩn |
 | M4 | **Layout tab đồng nhất** | Mọi tab đủ 8 khối cùng thứ tự; stat card = 4; pagination `PAGE_SIZE=24` |
 | M5 | **Surface & Modal thống nhất** | 1 z-index ladder; 1 backdrop blur; 1 alpha; 6/6 modal đủ 7 yêu cầu a11y |
@@ -110,7 +110,7 @@
 | 3.2 | Thay **toàn bộ emoji** bằng `ICONS` — làm theo từng file, check sau mỗi file | `content.js`, `main.js`, `player-main.js`, `learn.js`, `h2dev-core.js`, `music_player_modal.js` | grep emoji = 0 |
 | 3.3 | Xoá 2 emoji lẫn trong `ICONS` của `h2dev-core.js:24-25` (`✓`, `👁`) | `assets/h2dev-core.js` | grep = 0 |
 | 3.4 | Dọn **12 mức size icon** → chỉ còn 4 mức | Toàn bộ file UI | grep `width="1[0-9]" ` SVG |
-| 3.5 | Chốt 9 bậc font-size; chuyển `text-[Npx]` lẻ → class chuẩn | Toàn bộ file UI | grep `text-\[` đếm được |
+| 3.5 | Chốt 8 bậc font-size; chuyển `text-[Npx]` lẻ → class chuẩn | Toàn bộ file UI | grep `text-\[` đếm được |
 | 3.6 | Xoá weight `650/800/900` (không có font file) | Toàn bộ CSS + JS | grep `font-weight:650` = 0 |
 | 3.7 | Gỡ mono khỏi text tiếng Việt (badge, `.ltag`, "Tiến độ học") | `viddar.css:466`, `learn.css`, `content.js:99,115` | Badge dùng font sans |
 | 3.8 | Chuẩn hoá line-height (6 giá trị) + letter-spacing (4 giá trị, 1 cách viết) | Toàn bộ CSS | grep distinct values |

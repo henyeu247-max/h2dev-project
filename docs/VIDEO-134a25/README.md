@@ -6,6 +6,7 @@
 - **Tiêu đề bài giảng:** NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8
 - **Thị trường mục tiêu:** 🇯🇵 Nhật
 - **Ngách nội dung:** Triết Lý Sống & Đạo Làm Người
+- **Thời lượng:** 05 phút 09 giây (309.52s)
 - **Thumbnail:** `assets/thumbs/VIDEO-134a25.png`
 - **Trạng thái DRM:** Miễn phí
 - **Nguồn gốc bài giảng:** [Link gốc học phần](https://h2dev.vn/learn/study/update-key-moi-19-12-2025-ngach-thi-truong-nhat-ban-trends-cuc-cao-rpm-6-8)
@@ -27,7 +28,15 @@
 
 ---
 
-## 4. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
+## 4. Phân Tích Chuyên Sâu Từ Lời Thoại Bài Giảng (Transcript Grounding)
+- **Tiềm năng doanh thu RPM 6 - 8 tại thị trường Nhật Bản:** Các kênh khai thác dạng triết lý sống tại Nhật Bản tuy mới lập chưa đầy 2 tháng nhưng đã đạt lượng view cực kỳ đột biến trên những video gần đây. Mức doanh thu RPM thực tế dao động ổn định từ `6 đến 7`, và hoàn toàn có thể đạt mức `8` nếu kéo dài thời lượng video hợp lý.
+- **Chiến lược thử nghiệm (Test Key) và đóng đinh 1 nhân vật đại diện:** Khi quan sát lịch sử phát triển của kênh mẫu (như `@fuetunoijin` và `@偉人のコンパス1`), thời gian đầu lúc mới lập kênh họ từng thử nghiệm một vài nhân vật khác nhau (tương tự nhân vật chia sẻ ngày 18 tháng 12). Ngay khi phát hiện một nhân vật cụ thể bắt trúng xu hướng và kéo view mạnh, chủ kênh lập tức chuyển hẳn sang bám đuổi duy nhất nhân vật đại diện đó (giống mô hình lấy một nhân vật thương hiệu đứng ra trò chuyện ở thị trường Việt Nam). Khi kênh còn mới thì việc test ngách nhỏ trong cùng chủ đề triết lý là bình thường, nhưng khi đã tìm ra hướng đi đúng thì chỉ được bám sát một ngách duy nhất để không làm phân tán tệp khán giả.
+- **Cập nhật chính sách chống nội dung AI lặp lại:** Trước đây người làm có thể chỉ dùng 1 ảnh tĩnh hoặc vài ảnh/video ngắn lặp đi lặp lại xuyên suốt cả video dài. Tuy nhiên, chính sách mới của YouTube hiện nay quét rất gắt các nội dung AI đơn điệu. Vì vậy, học viên bắt buộc phải ghép nhiều hình ảnh đa dạng, chèn đan xen nhiều đoạn video tự nhiên thực tế hoặc nhiều phân cảnh video AI khác nhau, tuyệt đối không để một vài ảnh lặp lại từ đầu đến cuối.
+- **Lưu trữ file dự án gốc để dự phòng kháng cáo 99% - 100%:** Nếu chẳng may kênh bị quét lỗi sử dụng lại nội dung, trùng lặp nội dung hoặc gậy bản quyền, việc giữ nguyên vẹn file dự án và tư liệu edit gốc sẽ giúp kháng cáo về bờ với tỷ lệ `99% - 100%`, dù vậy làm chuẩn chỉnh ngay từ đầu sẽ giúp tiết kiệm rất nhiều thời gian và chi phí kháng kênh.
+
+---
+
+## 5. Kỹ Thuật Edit & SOP Né Quét AI (5 Steps SOP)
 - **Quy trình 5 bước sản xuất video ngách triết lý cổ nhân Nhật Bản cho khán giả trung niên**
   + 1. Lựa chọn các danh ngôn và bài học đối nhân xử thế của các bậc hiền triết phương Đông.
   + 2. Tạo visual mang đậm phong cách thiền định Nhật Bản: Vườn đá Zen, trà đạo, tranh thủy mặc.
@@ -37,13 +46,13 @@
 
 ---
 
-## 5. Rào Chắn Phòng Thủ (3 Avoid Flags)
-1. **Tránh kịch bản mang tính giáo điều, phán xét tạo cảm giác khó chịu cho người nghe.**
-2. **Không dùng nhạc nền có tiết tấu quá nhanh phá vỡ sự tĩnh lặng của không gian thiền định.**
-3. **Tránh lỗi ngữ pháp tiếng Nhật hoặc dùng sai từ ngữ cổ kính.**
+## 6. Rào Chắn Phòng Thủ (3 Avoid Flags)
+1. **Tránh kịch bản mang tính giáo điều, phán xét tạo cảm giác khó chịu cho người nghe; không làm nhiều ngách khác nhau cùng lúc trên một kênh.**
+2. **Không dùng nhạc nền có tiết tấu quá nhanh phá vỡ sự tĩnh lặng của không gian thiền định; tuyệt đối không dùng 1 ảnh tĩnh lặp đi lặp lại suốt video.**
+3. **Tránh lỗi ngữ pháp tiếng Nhật hoặc dùng sai từ ngữ cổ kính; luôn lưu giữ file gốc dự án edit để phòng trường hợp cần quay video kháng cáo.**
 
 ---
 
-## 6. Danh Mục Tài Liệu Đính Kèm
+## 7. Danh Mục Tài Liệu Đính Kèm
 - **Hồ sơ Kỹ thuật & SOP: NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8**: [Tải file / Xem liên kết](docs/VIDEO-134a25/README.md)
 - **Bản Bóc Tách Phụ Đề Bài Giảng (Full Transcript VN): Bài 84**: [Tải file / Xem liên kết](video/VIDEO-134a25/transcript.txt)

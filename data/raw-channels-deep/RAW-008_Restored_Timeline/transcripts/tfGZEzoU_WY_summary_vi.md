@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Hãy nhắm mắt lại và lắng nghe. Bạn nghe thấy tiếng vo ve xa xa của tiếng còi sương mù ở New York, tiếng rít nhịp nhàng của đường hầm tàu ​​điện ngầm bên dưới Manhattan và tốc độ không ngừng, điên cuồng của hàng triệu feet chạm vào vỉa hè ở Quảng trường Thời đại. Đây là New York, thủ đô không chính thức của thế giới, một con quái vật thép"
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Hãy nhắm mắt lại và lắng nghe. Bạn nghe thấy tiếng vo ve xa xa của tiếng còi sương mù ở New York, tiếng rít nhịp nhàng của đường hầm tàu điện ngầm bên dưới Manhattan và tốc độ không ngừng, điên cuồng của hàng triệu feet chạm vào vỉa hè ở Quảng trường Thời đại. Đây là New York, thủ đô không chính thức của thế giới, một con quái vật thép"
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Hãy nhắm mắt lại và lắng nghe. Bạn nghe thấy tiếng vo ve xa xa của tiếng còi sương mù ở New York, tiếng rít nhịp nhàng của đường hầm tàu ​​điện ngầm bên dưới Manhattan và tốc độ không ngừng, điên cuồng của hàng triệu feet chạm vào vỉa hè ở Quảng trường Thời đại. Đây là New York, thủ đô không chính thức của thế giới, một con quái vật thép
+Hãy nhắm mắt lại và lắng nghe. Bạn nghe thấy tiếng vo ve xa xa của tiếng còi sương mù ở New York, tiếng rít nhịp nhàng của đường hầm tàu điện ngầm bên dưới Manhattan và tốc độ không ngừng, điên cuồng của hàng triệu feet chạm vào vỉa hè ở Quảng trường Thời đại. Đây là New York, thủ đô không chính thức của thế giới, một con quái vật thép
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 và tấm kính không bao giờ ngủ. Nhưng nếu chúng ta có thể quay ngược lại thì sao? Sẽ ra sao nếu chúng ta có thể bóc đi những lớp nhựa đường, cạo sạch bê tông, và xóa bỏ những tòa nhà chọc trời cho đến khi chỉ còn lại những phần thô ráp, lởm chởm của hòn đảo? Hãy để tôi đưa bạn quay ngược hơn 360 năm về năm 1660. Khi đó, âm thanh của thành phố không phải là tiếng động cơ và tiếng còi [âm nhạc] mà là nhịp điệu tiếng vồ của người đóng tàu, tiếng xào xạc của rừng sồi cổ thụ và tiếng muối nặng Đại Tây Dương vỗ vào bờ biển nguyên sơ mà người Lenape biết đến những cái tên ban đầu được ghi là Mannahatta, sau này thường được viết mang tính thi vị hơn là Mannahatta hoặc Mannahatta. Ở cực nam của hòn đảo đó, một thị trấn nhỏ, kỳ lạ đang mọc lên, được xác định bởi [âm nhạc] dốc đầu hồi Hà Lan và cối xay gió quay uể oải trong gió biển. >> [âm nhạc] >> Chào mừng đến với New Amsterdam. Đây không chỉ là một khu định cư mà còn là một thành phố lớn đang trong giai đoạn phôi thai. Nơi đầu tiên chứa đựng DNA [âm nhạc] của tham vọng, sự đa dạng và chủ nghĩa thực dụng lạnh lùng, cứng rắn kết hợp lại để tạo nên tâm hồn Mỹ. Trong video này, được hỗ trợ bởi công nghệ tái thiết AI dựa trên kế hoạch 1660 Cast...

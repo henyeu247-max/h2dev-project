@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Pixar có tổng cộng 19 nhân vật phản diện và hôm nay tôi sẽ xếp hạng họ từ tệ nhất đến hay nhất vậy nên hãy bắt đầu với nhân vật phản diện Pixar tệ nhất từ ​​trước đến nay và nỗ lực trở thành nhân vật phản diện xuất sắc nhất mà họ từng tạo ra, bắt đầu ở vị trí cuối cùng chúng ta có que Exel từ hóa thạch Cars 2 như trong khủng long đã chết và tất cả chúng ta đều biết chuyện gì đã xảy ra với [Âm nhạc] ban đầu tôi là"
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Pixar có tổng cộng 19 nhân vật phản diện và hôm nay tôi sẽ xếp hạng họ từ tệ nhất đến hay nhất vậy nên hãy bắt đầu với nhân vật phản diện Pixar tệ nhất từ trước đến nay và nỗ lực trở thành nhân vật phản diện xuất sắc nhất mà họ từng tạo ra, bắt đầu ở vị trí cuối cùng chúng ta có que Exel từ hóa thạch Cars 2 như trong khủng long đã chết và tất cả chúng ta đều biết chuyện gì đã xảy ra với [Âm nhạc] ban đầu tôi là"
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Pixar có tổng cộng 19 nhân vật phản diện và hôm nay tôi sẽ xếp hạng họ từ tệ nhất đến hay nhất vậy nên hãy bắt đầu với nhân vật phản diện Pixar tệ nhất từ ​​trước đến nay và nỗ lực trở thành nhân vật phản diện xuất sắc nhất mà họ từng tạo ra, bắt đầu ở vị trí cuối cùng chúng ta có que Exel từ hóa thạch Cars 2 như trong khủng long đã chết và tất cả chúng ta đều biết chuyện gì đã xảy ra với [Âm nhạc] ban đầu tôi là
+Pixar có tổng cộng 19 nhân vật phản diện và hôm nay tôi sẽ xếp hạng họ từ tệ nhất đến hay nhất vậy nên hãy bắt đầu với nhân vật phản diện Pixar tệ nhất từ trước đến nay và nỗ lực trở thành nhân vật phản diện xuất sắc nhất mà họ từng tạo ra, bắt đầu ở vị trí cuối cùng chúng ta có que Exel từ hóa thạch Cars 2 như trong khủng long đã chết và tất cả chúng ta đều biết chuyện gì đã xảy ra với [Âm nhạc] ban đầu tôi là
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 sẽ cố gắng giải thích kế hoạch của anh ấy cho bạn nhưng điều đó chẳng có tác dụng mấy tôi cảm thấy rằng tôi thậm chí còn không biết chuyện gì đang xảy ra nữa đây là một bộ phim dành cho trẻ em giống như anh ấy thành lập một công ty nhiên liệu rồi cho nổ tung ô tô bằng cách sử dụng nhiên liệu đó chỉ để người ta sẽ mua nhiên liệu khác của mình thay thế huh huh này đây chính xác là lý do tại sao tôi bỏ học Kinh tế nhưng dù nhân vật phản diện thực sự rất tệ thì Cars 2 vẫn là phim Ô tô hay nhất đấy vâng tôi đã nói là hủy đăng ký, hãy làm điều đó tại số 18 chúng ta có Evelyn de từ The Incredibles 2 người đóng màn hình làm gián đoạn điều này chương trình cho một thông báo quan trọng lúc đầu nhân vật phản diện là anh chàng tên là kẻ nô lệ màn ảnh, một nhân vật phản diện khá giỏi, anh ta sẽ khá xinh đẹp thôi miên mọi người bằng TV, điều mà tôi nghĩ là khá hay nhưng thực tế lại là tiết lộ rằng kẻ phá màn hình chỉ là một anh chàng giao bánh pizza nào đó bị thôi miên nhưng sau đó chúng ta đã được giới thiệu nhân vật nào khác biết cách tạo ra những thiết bị này, thật khó để tìm ra ai nhân vật phản diện thực sự trong phim này cũng tên cô ấy là Evelyn de và nếu bạn nói điều đó vài lần thật nhanh ...

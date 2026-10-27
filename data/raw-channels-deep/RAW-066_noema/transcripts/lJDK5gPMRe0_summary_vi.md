@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Hãy để tôi hỏi bạn điều gì đó một cách trung thực. Bạn đã bao giờ chứng kiến ​​ai đó kém tài năng hơn bạn nhận được sự thăng tiến xứng đáng chưa? Bạn đã bao giờ là người thông minh nhất trong phòng mà vẫn bỏ đi không có gì để hiển thị cho nó? [âm nhạc] Bạn đã bao giờ dồn hết tâm huyết vào một việc gì đó, tin nhầm người và"
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Hãy để tôi hỏi bạn điều gì đó một cách trung thực. Bạn đã bao giờ chứng kiến ai đó kém tài năng hơn bạn nhận được sự thăng tiến xứng đáng chưa? Bạn đã bao giờ là người thông minh nhất trong phòng mà vẫn bỏ đi không có gì để hiển thị cho nó? [âm nhạc] Bạn đã bao giờ dồn hết tâm huyết vào một việc gì đó, tin nhầm người và"
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Hãy để tôi hỏi bạn điều gì đó một cách trung thực. Bạn đã bao giờ chứng kiến ​​ai đó kém tài năng hơn bạn nhận được sự thăng tiến xứng đáng chưa? Bạn đã bao giờ là người thông minh nhất trong phòng mà vẫn bỏ đi không có gì để hiển thị cho nó? [âm nhạc] Bạn đã bao giờ dồn hết tâm huyết vào một việc gì đó, tin nhầm người và
+Hãy để tôi hỏi bạn điều gì đó một cách trung thực. Bạn đã bao giờ chứng kiến ai đó kém tài năng hơn bạn nhận được sự thăng tiến xứng đáng chưa? Bạn đã bao giờ là người thông minh nhất trong phòng mà vẫn bỏ đi không có gì để hiển thị cho nó? [âm nhạc] Bạn đã bao giờ dồn hết tâm huyết vào một việc gì đó, tin nhầm người và
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 đã trả một cái giá mà bạn vẫn đang hồi phục? Nếu bạn trả lời có cho bất kỳ điều nào trong số đó thì bạn không [âm nhạc] đơn độc. Và quan trọng hơn, bạn không hề yếu đuối. Chỉ là bạn chưa được dạy loại trí thông minh phù hợp mà thôi. [âm nhạc] Bạn thấy đấy, hầu hết chúng ta lớn lên đều được dạy rằng nếu bạn làm việc chăm chỉ, hãy trung thực, [âm nhạc] và cúi đầu xuống, những điều tốt đẹp sẽ đến. Và đôi khi điều đó đúng. Nhưng rất nhiều khi, [âm nhạc] thế giới không được khen thưởng nhiều nhất người chăm chỉ. Nó thưởng cho người có nhận thức chiến lược nhất. [âm nhạc] Có một sự khác biệt, một sự khác biệt lớn. Những gì chúng ta sẽ nói hôm nay không phải là sự thao túng. Đó không phải là trở thành một người lạnh lùng, toan tính hay độc ác. Trên thực tế, [âm nhạc] nếu bạn nghĩ đây là hướng đi thì tôi muốn bạn hãy dừng ngay [âm nhạc] lại và tiếp tục nghe vì đó chính xác là sự hiểu lầm Tôi muốn làm rõ trước khi chúng ta tiến xa hơn. [âm nhạc] Trí tuệ chiến lược là khả năng hiểu được cách thế giới thực sự vận hành, [âm nhạc] cách mọi người thực sự suy nghĩ và cách các tình huống thực sự diễn ra, [âm nhạc] và sau đó sử dụng hiểu biết để bảo vệ bản thân, xây dựng tầm ảnh hưởng thực sự và tạ...

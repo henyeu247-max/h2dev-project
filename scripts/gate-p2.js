@@ -31,8 +31,14 @@
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
+const crypto = require('crypto');
+const childProcess = require('child_process');
 
-const ROOT = path.resolve(__dirname, '..');
+const SHADOW_PROBE = process.argv.includes('--probe-shadow');
+const ROOT = SHADOW_PROBE && process.env.H2DEV_GATE_ROOT
+  ? path.resolve(process.env.H2DEV_GATE_ROOT)
+  : path.resolve(__dirname, '..');
 
 const SKIP_DIR = ['node_modules', '_backup', '_archive', '.git', '_tmp-proof', '.venv-gpu', '_tmp-orig', 'data'];
 
@@ -656,7 +662,38 @@ function report(v) {
   return total;
 }
 
-/* --- PROBE: tiem loi gia -> gate PHAI bat duoc -> phuc hoi byte-identical (SCAR-008/019) ---
+function runProbeInShadow() {
+  const shadow = fs.mkdtempSync(path.join(os.tmpdir(), 'h2dev-gate-p2-'));
+  const required = new Set(collectCss('', []).concat([
+    'index.html', 'player.html', 'learn.html',
+    'assets/h2dev-core.js', 'assets/app/main.js', 'assets/learn.js'
+  ]));
+  try {
+    for (const rel of required) {
+      const src = path.join(ROOT, rel);
+      if (!fs.existsSync(src)) continue;
+      const dst = path.join(shadow, rel);
+      fs.mkdirSync(path.dirname(dst), { recursive: true });
+      fs.copyFileSync(src, dst);
+    }
+    const result = childProcess.spawnSync(process.execPath, [__filename, '--probe-shadow'], {
+      cwd: ROOT,
+      env: { ...process.env, H2DEV_GATE_ROOT: shadow },
+      encoding: 'utf8'
+    });
+    process.stdout.write(result.stdout || '');
+    process.stderr.write(result.stderr || '');
+    return result.status === 0;
+  } finally {
+    fs.rmSync(shadow, { recursive: true, force: true });
+  }
+}
+
+function sha1(filePath) {
+  return crypto.createHash('sha1').update(fs.readFileSync(filePath)).digest('hex');
+}
+
+/* --- PROBE: tiem loi gia tren BAN SAO -> gate PHAI bat duoc -> phuc hoi byte-identical (SCAR-008/019) ---
  * LUU Y SCAR-017: trong block comment JS CAM viet chu dong-comment (sao-gach-cheo).
  * Da dinh loi nay LAN THU 3 khi viet gate nay -> xem SCAR-030.
  */
@@ -678,6 +715,8 @@ function probe() {
   const origViddar = fs.readFileSync(viddarTarget, 'utf8');
   const origLessonRow = fs.readFileSync(lessonRowTarget, 'utf8');
   const origShell = fs.readFileSync(shellTarget, 'utf8');
+  const probeTargets = [cssTarget, htmlTarget, primTarget, learnTarget, coreTarget, viddarTarget, lessonRowTarget, shellTarget];
+  const beforeSha = new Map(probeTargets.map(file => [file, sha1(file)]));
 
   const injections = [
     {
@@ -828,32 +867,29 @@ function probe() {
   ];
 
   let caught = 0;
-  console.log('\n--- PROBE gate-p2: tiem loi gia, xac nhan gate BAT DUOC ---');
+  console.log('\n--- PROBE gate-p2: tiem loi gia tren ban sao, xac nhan gate BAT DUOC ---');
   for (const inj of injections) {
-    inj.apply();
-    /* SCAR-030: kiem tra loi TIEM CO THUC SU THAY DOI FILE khong. Neu `apply()` dung
-     * regex/chuoi khong khop -> file khong doi -> gate PASS la DUNG, khong phai BO LOT.
-     * Thieu buoc nay se bao "BO LOT GIA" (da tung xay ra voi probe skeleton Tailwind). */
-    const applied = inj.verify ? inj.verify() : true;
-    const v = findViolations();
-    const n = inj.count(v);
-    const ok = n > 0;
+    const baseline = inj.count(findViolations());
+    let applied = false;
+    let n = baseline;
+    try {
+      inj.apply();
+      /* SCAR-030: kiem tra loi TIEM CO THUC SU THAY DOI FILE khong. */
+      applied = inj.verify ? inj.verify() : true;
+      n = inj.count(findViolations());
+    } finally {
+      inj.restore();
+    }
+    const ok = applied && n > baseline;
     console.log('  ' + (ok ? 'BAT DUOC' : (applied ? 'BO LOT!' : 'PROBE SAI (loi tiem khong doi file!)')) +
-      '  -> ' + inj.name + '  (vi pham=' + n + ')');
+      '  -> ' + inj.name + '  (truoc=' + baseline + ', sau=' + n + ')');
     if (ok) caught++;
-    inj.restore();
   }
 
-  const identical =
-    fs.readFileSync(cssTarget, 'utf8') === origCss &&
-    fs.readFileSync(htmlTarget, 'utf8') === origHtml &&
-    fs.readFileSync(primTarget, 'utf8') === origPrim &&
-    fs.readFileSync(learnTarget, 'utf8') === origLearn &&
-    fs.readFileSync(coreTarget, 'utf8') === origCore &&
-    fs.readFileSync(viddarTarget, 'utf8') === origViddar &&
-    fs.readFileSync(lessonRowTarget, 'utf8') === origLessonRow &&
-    fs.readFileSync(shellTarget, 'utf8') === origShell;
+  const afterSha = new Map(probeTargets.map(file => [file, sha1(file)]));
+  const identical = probeTargets.every(file => beforeSha.get(file) === afterSha.get(file));
 
+  console.log('  SHA1 truoc/sau trung khop: ' + (identical ? 'OK' : 'THAT BAI!'));
   console.log('  Phuc hoi byte-identical: ' + (identical ? 'OK' : 'THAT BAI!'));
   console.log('  KET QUA PROBE: ' + caught + '/' + injections.length + ' luot bat duoc loi tiem vao');
   if (caught !== injections.length || !identical) {
@@ -866,13 +902,16 @@ function probe() {
 
 const jsonMode = process.argv.includes('--json');
 const doProbe = process.argv.includes('--probe');
+const shadowProbe = SHADOW_PROBE;
 
-if (jsonMode) {
+if (shadowProbe) {
+  probe();
+} else if (jsonMode) {
   const v = findViolations();
   process.stdout.write(JSON.stringify(v, null, 2) + '\n');
   process.exitCode = Object.values(v).reduce((a, b) => a + b.length, 0) === 0 ? 0 : 1;
 } else {
-  if (doProbe) probe();
+  if (doProbe && !runProbeInShadow()) process.exitCode = 1;
   const total = report(findViolations());
-  process.exitCode = total === 0 ? 0 : 1;
+  if (total !== 0) process.exitCode = 1;
 }

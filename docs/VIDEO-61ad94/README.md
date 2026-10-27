@@ -8,8 +8,8 @@
 - **Thị trường mục tiêu:** Nhật Bản & Hàn Quốc (Mã: `JP-KR`)
 - **Thời lượng:** 10:28
 - **Dung lượng MP4:** 62.0 MB
-- **File Video:** [`video/VIDEO-61ad94/VIDEO-61ad94.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-61ad94/VIDEO-61ad94.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-61ad94.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-61ad94.png)
+- **File Video:** [`video/VIDEO-61ad94/VIDEO-61ad94.mp4`](/video/VIDEO-61ad94/VIDEO-61ad94.mp4)
+- **Ảnh đại diện:** [`assets/thumbs/VIDEO-61ad94.png`](/assets/thumbs/VIDEO-61ad94.png)
 - **Nguồn bài giảng gốc:** [https://h2dev.vn/learn/study/update-ngach-ban-content-nhat-han](https://h2dev.vn/learn/study/update-ngach-ban-content-nhat-han)
 
 ## 2. Chiến Lược Cốt Lõi & Key Takeaways

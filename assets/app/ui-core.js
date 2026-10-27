@@ -3,7 +3,26 @@
   'use strict';
 function safeArray(value) { return Array.isArray(value) ? value : []; }
 
-function nicheKeyFor(ngach) { const map = (global.H2Taxonomy && global.H2Taxonomy.NICHE_MAP) || {}; return map[ngach] || ngach; }
+function nicheKeyFor(ngach) {
+  if (!ngach) return '';
+  const clean = String(ngach).trim();
+  const map = (global.H2Taxonomy && global.H2Taxonomy.NICHE_MAP) || {};
+  if (map[clean]) return map[clean];
+  const low = clean.toLowerCase();
+  if (/(phật|tâm linh|triết lý|khắc kỷ|kinh thánh|chúa|phúc âm|phong thủy|đạo làm người|nhân sinh)/.test(low)) return 'Triết lý / Tâm linh';
+  if (/(sức khỏe|dưỡng sinh|lão hóa|tuổi già|người cao tuổi|dinh dưỡng|sống thọ|senior)/.test(low)) return 'Sức khỏe / Lão hóa';
+  if (/(drama|tâm sự|kể chuyện|câu chuyện|bi kịch|kaidan|야담|gia đình)/.test(low)) return 'Drama / Stories';
+  if (/(lịch sử|quân sự|địa chính trị|cổ đại|chiến tranh|history)/.test(low)) return 'Lịch sử / Quân sự';
+  if (/(kinh tế|tài chính|đầu tư|làm giàu|thương hiệu|bất động sản)/.test(low)) return 'Kinh tế / Tài chính';
+  if (/(khoa học|vũ trụ|thiên nhiên|trái đất|lượng tử|động vật|wildlife)/.test(low)) return 'Khoa học EN';
+  if (/(reup|hoạt hình|bilibili|douyin|3d|anime)/.test(low)) return 'Reup / Hoạt hình';
+  if (/(bản quyền|kiếm tiền|adsense|ga|chính sách|kháng|bật kiếm tiền|thuế|rpm|cpm)/.test(low)) return 'Kiếm tiền / Chính sách';
+  if (/(nhân bản|khám kênh|case study|đa thị trường|view ngoại)/.test(low)) return 'Nhân bản / Kênh';
+  if (/(vps|proxy|antidetect|setup|nuôi kênh|tự động hóa|automation|tool|công cụ|support)/.test(low)) return 'Nền tảng / Tool';
+  if (/(prompt|kịch bản|edit|capcut|thumbnail|ctr|giọng đọc|voice|video ngắn|shorts|reels)/.test(low)) return 'Edit / Thumb';
+  if (/(ngách nhỏ|share key|ẩm thực|mẹo vặt|sinh tồn|làm vườn)/.test(low)) return 'Share key / Ngách nhỏ';
+  return 'Hệ thống / Quy trình';
+}
 
 function xanhBadge(x) {
   if (x === true) return ['badge-green', 'XANH'];
@@ -108,12 +127,22 @@ function watchedResumeLabel(sku) {
 
 function highlightQuery(text, query) {
   if (!text || !query) return esc(text || '');
-  const cleanQ = query.trim();
-  if (!cleanQ) return esc(text);
+  const raw = String(text);
+  const cleanQ = String(query).trim();
+  if (!cleanQ) return esc(raw);
   const escapedQ = cleanQ.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const regex = new RegExp(`(${escapedQ})`, 'gi');
-  const safeText = esc(text);
-  return safeText.replace(regex, '<mark class="bg-brand-500/35 text-brand-200 px-0.5 rounded font-bold">$1</mark>');
+  const regex = new RegExp(escapedQ, 'gi');
+  let out = '';
+  let lastIdx = 0;
+  let match;
+  while ((match = regex.exec(raw)) !== null) {
+    if (match[0].length === 0) { regex.lastIndex++; continue; }
+    out += esc(raw.slice(lastIdx, match.index));
+    out += '<mark class="bg-brand-500/35 text-brand-200 px-0.5 rounded font-bold">' + esc(match[0]) + '</mark>';
+    lastIdx = regex.lastIndex;
+  }
+  out += esc(raw.slice(lastIdx));
+  return out;
 }
 
 

@@ -4,6 +4,9 @@
 > **Chủ đề:** Khai thác ngách lịch sử thời xưa view US, doanh thu hơn $18.000/tháng
 > **Chỉ số tham chiếu:** RPM hơn 5 gần 6 USD / 1.000 view · View chủ yếu từ Hoa Kỳ (US)
 
+
+- **Kênh đối thủ minh họa trên màn hình:** `Chat History` (`@ChatHistory`)
+
 ---
 
 ## 1. TIỀM NĂNG DOANH THU & CHỈ SỐ THỊ TRƯỜNG

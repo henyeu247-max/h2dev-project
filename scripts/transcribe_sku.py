@@ -55,6 +55,10 @@ HALL_PATTERNS = [
     "nhớ like, share và đăng ký kênh", "các bạn có thể nhận thêm",
     "bản ghi video hướng dẫn xây kênh", "thuật ngữ thường gặp",
     "các bạn có thể xem video này trên kênh",
+    "trong những video tiếp theo", "trong các video tiếp theo",
+    "trong các bản thân của mình", "tập trung vào những điều mà",
+    "tạo ra những kết quả đáng chú ý", "tìm ra những bài tập khác của mình",
+    "tìm ra những thông tin đáng nhớ",
 ]
 
 VOWELS = set("aàáảãạăằắẳẵặâầấẩẫậeèéẻẽẹêềếểễệiìíỉĩị"
@@ -80,7 +84,7 @@ def is_compressed(text: str) -> bool:
         return False
     short = sum(1 for t in toks if len(t) <= 2) / len(toks)
     novowel = sum(1 for t in toks if not any(c in VOWELS for c in t.lower())) / len(toks)
-    return short >= 0.75 and novowel >= 0.40
+    return (short >= 0.70 and novowel >= 0.35) or novowel >= 0.45
 
 
 def _env_groq_keys() -> list:
@@ -205,6 +209,8 @@ def extract_audio_chunk(video_file: Path, start_sec: float, dur_sec: float, outp
     cmd = [
         FFMPEG_CMD,
         "-y",
+        "-hwaccel", "cuda",
+        "-threads", "2",
         "-ss", str(round(start_sec, 2)),
         "-t", str(round(dur_sec, 2)),
         "-i", str(video_file),
@@ -224,7 +230,7 @@ def extract_audio_chunk(video_file: Path, start_sec: float, dur_sec: float, outp
         return False
 
 
-def call_groq_whisper(key_mgr: GroqKeyManager, audio_path: Path, max_retries: int = 10,
+def call_groq_whisper(key_mgr: GroqKeyManager, audio_path: Path, max_retries: int = 25,
                       language="vi", prompt=None, model: str = "whisper-large-v3") -> dict:
     """language=None -> Groq tu detect ngon ngu. prompt=None + language='vi' -> VI_PROMPT (hanh vi cu)."""
     if prompt is None and language == "vi":
@@ -271,8 +277,8 @@ def call_groq_whisper(key_mgr: GroqKeyManager, audio_path: Path, max_retries: in
                 key_mgr.mark_invalid(key)
                 continue
             elif e.code == 429:
-                key_mgr.mark_rate_limited(key, wait_seconds=15)
-                time.sleep(2 + attempt * 0.5)
+                key_mgr.mark_rate_limited(key, wait_seconds=12)
+                time.sleep(3 + attempt * 0.8)
                 continue
             elif e.code in (500, 502, 503, 504):
                 time.sleep(2)

@@ -13,7 +13,7 @@ Ngách: **Du lịch khám phá – Địa lý – Đời sống tại những n�
 ## 🔑 10 TRỤ CỘT NỘI DUNG XOAY QUANH ĐẢO BIỆT LẬP
 1. 🏝️ **Đảo xa xôi, biệt lập nhất hành tinh:** Cách đất liền hàng ngàn hải lý, không có sân bay, tàu bè chỉ cập bến vài tháng một lần.
 2. 🌍 **Những nơi ít người biết đến:** Những góc khuất trên bản đồ thế giới mà 99% người chưa từng nghe tên.
-3. 👨‍👩‍👧‍👦 **Người dân sống như thế nào?** Nguồn điện, nước ngọt, trường học, bệnh viện, thức ăn hàng ngày được duy trì ra sao?
+3. 👨👩👧👦 **Người dân sống như thế nào?** Nguồn điện, nước ngọt, trường học, bệnh viện, thức ăn hàng ngày được duy trì ra sao?
 4. ⚠️ **Đảo nguy hiểm & Khí hậu khắc nghiệt:** Núi lửa đang hoạt động, bão tuyết, sóng thần, thú dữ bao quanh.
 5. 💰 **Vì sao người dân từ chối tiền hoặc phản đối du lịch:** Bí ẩn văn hóa giữ gìn lối sống cổ xưa, từ chối sự xâm lăng của thương mại hóa.
 6. 🧬 **Văn hóa & Lối sống độc bản:** Phong tục hôn nhân, tập quán săn bắn, phương ngữ kỳ lạ.

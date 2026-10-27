@@ -596,7 +596,8 @@
     "file": "docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md",
     "contentNiche": "Hệ thống / Quy trình",
     "kind": "internal-doc",
-    "title": "Đề cương Zoom — Quy trình xây kênh A-Z (11 phần)"
+    "title": "Đề cương Zoom — Quy trình xây kênh A-Z (11 phần)",
+    "fileLocal": "docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt"
   },
   {
     "sku": "NOI-BO",
@@ -1460,7 +1461,8 @@
     "link": "assets/docs/VIDEO-61e354/SOP-TU-DUY-TIM-LOC-KEY-YOUTUBE-VIEW-NGOAI-TRENDS.md",
     "file": "assets/docs/VIDEO-61e354/SOP-TU-DUY-TIM-LOC-KEY-YOUTUBE-VIEW-NGOAI-TRENDS.md",
     "category": "Tài liệu bài học",
-    "title": "SOP Hướng Dẫn Tư Duy Tìm, Lọc Key YouTube View Ngoại & Xác Định Key Trends"
+    "title": "SOP Hướng Dẫn Tư Duy Tìm, Lọc Key YouTube View Ngoại & Xác Định Key Trends",
+    "kind": "sop"
   },
   {
     "id": "TL-VIDEO-61e354-02",
@@ -1469,7 +1471,8 @@
     "link": "video/VIDEO-61e354/transcript.txt",
     "file": "video/VIDEO-61e354/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-3e943c-01",
@@ -1478,7 +1481,8 @@
     "link": "assets/docs/VIDEO-3e943c/description.txt",
     "file": "docs/VIDEO-3e943c/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Hướng dẫn lựa chọn phiên bản và gói cước Claude AI tối ưu"
+    "title": "Hướng dẫn lựa chọn phiên bản và gói cước Claude AI tối ưu",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-3e943c-02",
@@ -1487,7 +1491,8 @@
     "link": "video/VIDEO-3e943c/transcript.txt",
     "file": "video/VIDEO-3e943c/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-54c8f7-01",
@@ -1496,7 +1501,8 @@
     "link": "https://drive.google.com/drive/folders/1PYGR8SHPWj9GdGLT361yP-1lTAvQwIVG?usp=sharing",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Thư mục tài nguyên train trong video (Google Drive)"
+    "title": "Thư mục tài nguyên train trong video (Google Drive)",
+    "kind": "tool"
   },
   {
     "id": "TL-VIDEO-54c8f7-02",
@@ -1505,7 +1511,8 @@
     "link": "video/VIDEO-54c8f7/transcript.txt",
     "file": "video/VIDEO-54c8f7/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-5d54d0-01",
@@ -1514,7 +1521,8 @@
     "link": "https://drive.google.com/drive/folders/14bf1nCiGzvU6aCSKjrs2lRxEDiJINdeT?usp=sharing",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Skill Prompt của ngách trong video (Google Drive)"
+    "title": "Skill Prompt của ngách trong video (Google Drive)",
+    "kind": "prompt"
   },
   {
     "id": "TL-VIDEO-5d54d0-02",
@@ -1523,7 +1531,8 @@
     "link": "https://www.vecteezy.com/video/77042599-music-audio-waveform-visualizer-equalizer-effect-green-screen-4k",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Video nền xanh sóng nhạc audio visualizer (Vecteezy 4K)"
+    "title": "Video nền xanh sóng nhạc audio visualizer (Vecteezy 4K)",
+    "kind": "tool"
   },
   {
     "id": "TL-VIDEO-5d54d0-03",
@@ -1532,7 +1541,8 @@
     "link": "video/VIDEO-5d54d0/transcript.txt",
     "file": "video/VIDEO-5d54d0/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-e90874-01",
@@ -1541,7 +1551,8 @@
     "link": "assets/docs/VIDEO-e90874/Prompt-Master-Nhan-Ban-Thi-Truong.txt",
     "file": "assets/docs/VIDEO-e90874/Prompt-Master-Nhan-Ban-Thi-Truong.txt",
     "category": "Tài liệu bài học",
-    "title": "Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (Text offline)"
+    "title": "Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (Text offline)",
+    "kind": "prompt"
   },
   {
     "id": "TL-VIDEO-e90874-02",
@@ -1550,7 +1561,8 @@
     "link": "https://www.youtube-transcript.io/",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Web lấy kịch bản YouTube tự động (youtube-transcript.io)"
+    "title": "Web lấy kịch bản YouTube tự động (youtube-transcript.io)",
+    "kind": "tool"
   },
   {
     "id": "TL-VIDEO-e90874-03",
@@ -1559,7 +1571,8 @@
     "link": "video/VIDEO-e90874/transcript.txt",
     "file": "video/VIDEO-e90874/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-b380a1-01",
@@ -1568,7 +1581,8 @@
     "link": "https://docs.google.com/document/d/1m2dGhIGTYCRgtZwCzeP02ks5QG7q1su5/edit?tab=t.0",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Prompt Train Kịch Bản Ngách Nhỏ View Việt (Google Docs)"
+    "title": "Prompt Train Kịch Bản Ngách Nhỏ View Việt (Google Docs)",
+    "kind": "prompt"
   },
   {
     "id": "TL-VIDEO-b380a1-02",
@@ -1577,7 +1591,8 @@
     "link": "video/VIDEO-b380a1/transcript.txt",
     "file": "video/VIDEO-b380a1/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-3a38f9-01",
@@ -1586,7 +1601,8 @@
     "link": "assets/docs/VIDEO-3a38f9/description.txt",
     "file": "docs/VIDEO-3a38f9/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Hồ sơ 2 kênh mới nổ view Hàn & Việt"
+    "title": "Hồ sơ 2 kênh mới nổ view Hàn & Việt",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-3a38f9-02",
@@ -1595,7 +1611,8 @@
     "link": "video/VIDEO-3a38f9/transcript.txt",
     "file": "video/VIDEO-3a38f9/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-61ad94-01",
@@ -1604,7 +1621,8 @@
     "link": "assets/docs/VIDEO-61ad94/description.txt",
     "file": "docs/VIDEO-61ad94/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Hồ sơ 3 kênh bán content Nhật & Hàn"
+    "title": "Hồ sơ 3 kênh bán content Nhật & Hàn",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-61ad94-02",
@@ -1613,7 +1631,8 @@
     "link": "video/VIDEO-61ad94/transcript.txt",
     "file": "video/VIDEO-61ad94/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-DD983D-01",
@@ -1622,7 +1641,8 @@
     "link": "assets/docs/VIDEO-DD983D/description.txt",
     "file": "docs/VIDEO-DD983D/description.txt",
     "category": "Tài liệu bài học",
-    "title": "SOP Phân tích & Edit né quét AI ngách Nhật"
+    "title": "SOP Phân tích & Edit né quét AI ngách Nhật",
+    "kind": "sop"
   },
   {
     "id": "TL-VIDEO-DD983D-02",
@@ -1631,7 +1651,8 @@
     "link": "video/VIDEO-DD983D/transcript.txt",
     "file": "video/VIDEO-DD983D/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-484f9e-01",
@@ -1640,7 +1661,8 @@
     "link": "assets/docs/VIDEO-484f9e/description.txt",
     "file": "docs/VIDEO-484f9e/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Quy trình edit bán content ngách Bình An né quét AI"
+    "title": "Quy trình edit bán content ngách Bình An né quét AI",
+    "kind": "sop"
   },
   {
     "id": "TL-VIDEO-484f9e-02",
@@ -1649,7 +1671,8 @@
     "link": "video/VIDEO-484f9e/transcript.txt",
     "file": "video/VIDEO-484f9e/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-e24c31-01",
@@ -1658,7 +1681,8 @@
     "link": "assets/docs/VIDEO-e24c31/description.txt",
     "file": "docs/VIDEO-e24c31/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Hồ sơ 2 kênh bán content view ngoại 5 video cắn đề xuất"
+    "title": "Hồ sơ 2 kênh bán content view ngoại 5 video cắn đề xuất",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-e24c31-02",
@@ -1667,7 +1691,8 @@
     "link": "video/VIDEO-e24c31/transcript.txt",
     "file": "video/VIDEO-e24c31/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-a7bfd0-01",
@@ -1676,7 +1701,8 @@
     "link": "assets/docs/VIDEO-a7bfd0/description.txt",
     "file": "docs/VIDEO-a7bfd0/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Cẩm nang khám kênh & khắc phục lỗi 0 view lẹt đẹt"
+    "title": "Cẩm nang khám kênh & khắc phục lỗi 0 view lẹt đẹt",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-a7bfd0-02",
@@ -1685,7 +1711,8 @@
     "link": "video/VIDEO-a7bfd0/transcript.txt",
     "file": "video/VIDEO-a7bfd0/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-4b3c09-01",
@@ -1694,7 +1721,8 @@
     "link": "assets/docs/VIDEO-4b3c09/description.txt",
     "file": "docs/VIDEO-4b3c09/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Hồ sơ 5 kênh bán content 4 ngách nhỏ Hàn Quốc"
+    "title": "Hồ sơ 5 kênh bán content 4 ngách nhỏ Hàn Quốc",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-4b3c09-02",
@@ -1703,7 +1731,8 @@
     "link": "video/VIDEO-4b3c09/transcript.txt",
     "file": "video/VIDEO-4b3c09/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-28e1cc-01",
@@ -1712,7 +1741,8 @@
     "link": "https://h2dev.vn/learn/study/update-free-tool-tao-giong-doc-tieng-viet-ngoc-huyen-vao-tool-dich-phu-de-srt?ref=H2DEV-001",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Hướng dẫn tool dịch phụ đề SRT giọng đọc Ngọc Huyền"
+    "title": "Hướng dẫn tool dịch phụ đề SRT giọng đọc Ngọc Huyền",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-28e1cc-02",
@@ -1721,7 +1751,8 @@
     "link": "https://space.bilibili.com/3546626561935534/upload/video",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Kênh nguồn hoạt hình Bilibili 1 (space.bilibili.com/3546626561935534)"
+    "title": "Kênh nguồn hoạt hình Bilibili 1 (space.bilibili.com/3546626561935534)",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-28e1cc-03",
@@ -1730,7 +1761,8 @@
     "link": "https://space.bilibili.com/1692631217?spm_id_from=333.788.upinfo.detail.click",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Kênh nguồn hoạt hình Bilibili 2 (space.bilibili.com/1692631217)"
+    "title": "Kênh nguồn hoạt hình Bilibili 2 (space.bilibili.com/1692631217)",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-28e1cc-04",
@@ -1739,7 +1771,8 @@
     "link": "video/VIDEO-28e1cc/transcript.txt",
     "file": "video/VIDEO-28e1cc/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-d2cd90-01",
@@ -1748,7 +1781,8 @@
     "link": "assets/docs/VIDEO-d2cd90/description.txt",
     "file": "docs/VIDEO-d2cd90/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Hồ sơ 5 kênh đối thủ bán content ngoại trends"
+    "title": "Hồ sơ 5 kênh đối thủ bán content ngoại trends",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-d2cd90-02",
@@ -1757,7 +1791,8 @@
     "link": "video/VIDEO-d2cd90/transcript.txt",
     "file": "video/VIDEO-d2cd90/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-9aff6d-01",
@@ -1766,7 +1801,8 @@
     "link": "assets/docs/VIDEO-9aff6d/kenh-mau-pro-300k-view.png",
     "file": "assets/docs/VIDEO-9aff6d/kenh-mau-pro-300k-view.png",
     "category": "Tài liệu bài học",
-    "title": "Ảnh bóc tách kênh Pro nổ hơn 300k view (PNG offline 1.4 MB)"
+    "title": "Ảnh bóc tách kênh Pro nổ hơn 300k view (PNG offline 1.4 MB)",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-9aff6d-02",
@@ -1775,7 +1811,8 @@
     "link": "https://www.youtube.com/@kurumanozokitai",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Kênh đối thủ 1 (@kurumanozokitai)"
+    "title": "Kênh đối thủ 1 (@kurumanozokitai)",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-9aff6d-03",
@@ -1784,7 +1821,8 @@
     "link": "https://www.youtube.com/@%E6%98%94%E3%81%AE%E4%BA%BA%E3%81%AE%E7%9F%A5%E6%81%B5",
     "file": "",
     "category": "Tài liệu bài học",
-    "title": "Kênh đối thủ 2 (@昔の人の知恵)"
+    "title": "Kênh đối thủ 2 (@昔の人の知恵)",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-9aff6d-04",
@@ -1793,7 +1831,8 @@
     "link": "video/VIDEO-9aff6d/transcript.txt",
     "file": "video/VIDEO-9aff6d/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "id": "TL-VIDEO-c5837a-01",
@@ -1802,7 +1841,8 @@
     "link": "assets/docs/VIDEO-c5837a/description.txt",
     "file": "docs/VIDEO-c5837a/description.txt",
     "category": "Tài liệu bài học",
-    "title": "Hồ sơ 7 kênh bán content & reup 3 thị trường Nhật - Hàn - Việt"
+    "title": "Hồ sơ 7 kênh bán content & reup 3 thị trường Nhật - Hàn - Việt",
+    "kind": "guide"
   },
   {
     "id": "TL-VIDEO-c5837a-02",
@@ -1811,7 +1851,8 @@
     "link": "video/VIDEO-c5837a/transcript.txt",
     "file": "video/VIDEO-c5837a/transcript.txt",
     "category": "Tài liệu bài học",
-    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)"
+    "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+    "kind": "transcript"
   },
   {
     "sku": "VIDEO-dbd487",
@@ -2289,7 +2330,7 @@
     "title": "Kho Video Sức Khỏe Ngang Miễn Phí (Pexels Health)",
     "name": "Kho Video Sức Khỏe Ngang Miễn Phí (Pexels Health)",
     "link": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape",
-    "file": "https://www.pexels.com/vi-VN/tim-kiem/videos/health/?orientation=landscape",
+    "file": null,
     "kind": "tool",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người"
   },
@@ -2299,7 +2340,7 @@
     "title": "Kho Footage Đồ Họa Miễn Phí (Vecteezy)",
     "name": "Kho Footage Đồ Họa Miễn Phí (Vecteezy)",
     "link": "https://www.vecteezy.com/",
-    "file": "https://www.vecteezy.com/",
+    "file": null,
     "kind": "tool",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người"
   },
@@ -2309,7 +2350,7 @@
     "title": "Kho Video B-Roll Điện Ảnh Miễn Phí (Coverr)",
     "name": "Kho Video B-Roll Điện Ảnh Miễn Phí (Coverr)",
     "link": "https://coverr.co/",
-    "file": "https://coverr.co/",
+    "file": null,
     "kind": "tool",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người"
   },
@@ -2319,7 +2360,7 @@
     "title": "Kho Tư Liệu Đời Sống Miễn Phí (Freepik Videos)",
     "name": "Kho Tư Liệu Đời Sống Miễn Phí (Freepik Videos)",
     "link": "https://www.freepik.com/videos",
-    "file": "https://www.freepik.com/videos",
+    "file": null,
     "kind": "tool",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người"
   },
@@ -2329,7 +2370,7 @@
     "title": "Kho Video Thiên Nhiên Không Bản Quyền (Pixabay)",
     "name": "Kho Video Thiên Nhiên Không Bản Quyền (Pixabay)",
     "link": "https://pixabay.com/",
-    "file": "https://pixabay.com/",
+    "file": null,
     "kind": "tool",
     "contentNiche": "Triết Lý Sống & Đạo Làm Người"
   },
@@ -2379,7 +2420,7 @@
     "title": "Công Cụ Tải Video Douyin Không Watermark (Tikvideo App)",
     "name": "Công Cụ Tải Video Douyin Không Watermark (Tikvideo App)",
     "link": "https://tikvideo.app/vi/download-douyin-video",
-    "file": "https://tikvideo.app/vi/download-douyin-video",
+    "file": null,
     "kind": "tool",
     "contentNiche": "Reup & Khai Thác Hoạt Hình"
   },

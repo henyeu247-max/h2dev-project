@@ -5,6 +5,9 @@
 > **Thời lượng video bài giảng:** 12 phút 40 giây  
 > **Thị trường mục tiêu:** 🇻🇳 Việt Nam & 🌐 Ngoại (Hoa Kỳ, Mexico, Tây Ban Nha)
 
+
+- **Các kênh đối thủ minh họa trên màn hình:** `@DepthPsychologyHub`, `@TríTuệCóẢnhHưởng`, `@SoyMenteFuerte`, `@MentalDoseEn`, `@WiseEldersyt`, `@Revenge_with_Jake`, `@LifeAdviceForYouyt`
+
 ---
 
 ## 1. SỐ LIỆU THỰC TẾ TÁC GIẢ NÊU THEO TỪNG THỊ TRƯỜNG

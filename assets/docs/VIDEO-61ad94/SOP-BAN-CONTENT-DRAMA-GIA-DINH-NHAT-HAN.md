@@ -49,5 +49,5 @@ Tác giả nhấn mạnh: **không ghép full hình ảnh AI, video AI.**
 
 - Lấy kênh Nhật dịch sang tiếng Hàn rồi nhân bản ở Hàn, hoặc lấy từ Hàn sang Nhật.
 - Xem video của kênh đối thủ để YouTube đề xuất thêm các kênh đối thủ khác, rồi làm tương tự và lập thêm kênh.
-- Cách nhân bản thị trường có hướng dẫn trong các video khác của tác giả (mục module hướng dẫn quy trình dùng Cloud AI, hoặc module 4).
+- Cách nhân bản thị trường có hướng dẫn trong các video khác của tác giả (mục module hướng dẫn quy trình dùng Claude AI, hoặc module 4).
 - Mỗi thị trường có những nhân vật nổi tiếng khác nhau; áp dụng vào thị trường mình làm thì chắc chắn lên.

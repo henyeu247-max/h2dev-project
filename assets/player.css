@@ -139,24 +139,37 @@
 #pchannelslist > div { background: var(--surface-2) !important; border-color: var(--border) !important; border-radius: 4px !important; }
 #pdocslist > article { background: var(--bg-subtle) !important; border-color: var(--border) !important; border-radius: 4px !important; }
 /* UI-fix 2026-10-09 (M3): hai nut tai lieu trong mot the chia deu 2 cot; the hep o 1440px lam nut thu hai rot xuong dong mot minh. */
-#pdocslist > article div:has(> a:nth-child(2)) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+#pdocslist > article div:has(> :is(a, button):nth-child(2)) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 /* UI-fix 2026-10-09 (M3): nut thu ba cua mot the (3 tai lieu) chiem ca hang, khong de le mot minh. */
-#pdocslist > article div:has(> a:nth-child(2)) > a:last-child:nth-child(odd):nth-child(n+3) { grid-column: 1 / -1; }
-#pdocslist a.btn-doc-link {
+#pdocslist > article div:has(> :is(a, button):nth-child(2)) > :is(a, button):last-child:nth-child(odd):nth-child(n+3) { grid-column: 1 / -1; }
+#pdocslist :is(a, button).btn-doc-link {
   background: var(--surface-2) !important;
   border: 1px solid var(--border) !important;
   color: var(--fg-2) !important;
   font-size: 12px;
   font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 2px;
+  padding: 6px 10px;
+  min-height: 36px;
+  border-radius: 4px;
   text-decoration: none;
+  justify-content: center;
+  text-align: center;
   transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
-#pdocslist a.btn-doc-link:hover {
+#pdocslist button.btn-doc-link[data-doc-file] {
+  background: var(--brand-tint) !important;
+  border-color: var(--brand) !important;
+  color: var(--brand-tint-fg) !important;
+}
+#pdocslist :is(a, button).btn-doc-link:hover {
   background: var(--surface) !important;
   border-color: var(--border-strong) !important;
   color: var(--fg) !important;
+}
+#pdocslist button.btn-doc-link[data-doc-file]:hover {
+  background: var(--brand) !important;
+  border-color: var(--brand) !important;
+  color: #fff !important;
 }
 
 /* Floating Back Button (Nút quay lại nổi thông minh) */
@@ -261,8 +274,20 @@
     border-top-right-radius: 1.25rem !important;
     margin: 0 !important;
   }
+  #docModal > div > div:first-child {
+    padding: 10px 12px !important;
+    gap: 8px !important;
+  }
+  #docModal > div > div:first-child a span:not(.h2-icon),
+  #docModal > div > div:first-child button[data-action="copy-doc"] span:not(.h2-icon) {
+    display: none !important;
+  }
   #docModalBody {
-    max-height: calc(95vh - 65px) !important;
+    padding: 14px !important;
+    max-height: calc(95vh - 60px) !important;
+  }
+  #pdocslist :is(a, button).btn-doc-link {
+    min-height: 40px;
   }
 }
 

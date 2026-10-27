@@ -9,7 +9,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
-const BASE = process.argv[2] || 'https://h2dev-learn.tonymmo.com';
+const BASE = process.argv[2] || 'https://97yo-dev-learn.tonymmo.com';
 const OUT = path.resolve(__dirname, '..', '_internal', 'ui-acceptance');
 fs.mkdirSync(OUT, { recursive: true });
 
@@ -44,7 +44,7 @@ async function main() {
   console.log('\n=== 1. INDEX TAB ===');
   await page.goto(`${BASE}/index.html`, { waitUntil: 'networkidle2', timeout: 60000 });
   const title = await page.title();
-  if (title.includes('H2DEV')) pass('1.1 index title', title); else fail('1.1 index title', title);
+  if (title.includes('97yo-dev') || title.includes('H2DEV')) pass('1.1 index title', title); else fail('1.1 index title', title);
 
   await page.screenshot({ path: path.join(OUT, '01-index.png') });
 
@@ -139,6 +139,14 @@ async function main() {
   if (nicheOk) pass('5.1 niche tab clickable', `${nicheRows} rows`); else fail('5.1 niche tab clickable');
 
   await page.screenshot({ path: path.join(OUT, '05-niche.png') });
+
+  // ---------- 5B. VIDEO SORT CURRICULUM (UI-02 REGRESSION GUARD) ----------
+  console.log('\n=== 5B. VIDEO SORT CURRICULUM ===');
+  await page.goto(`${BASE}/video?sort=curriculum`, { waitUntil: 'networkidle2', timeout: 60000 });
+  await new Promise(r => setTimeout(r, 2000));
+  const curCards = await page.evaluate(() => document.querySelectorAll('#content .card').length);
+  if (curCards > 10) pass('5.2 video sort=curriculum rendered', `${curCards} cards`);
+  else fail('5.2 video sort=curriculum rendered', `${curCards} cards`);
 
   // ---------- 6. CONSOLE ERRORS ----------
   console.log('\n=== 6. CONSOLE ERRORS ===');

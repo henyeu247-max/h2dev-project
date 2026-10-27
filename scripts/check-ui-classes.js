@@ -28,7 +28,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const PAGES = ['index.html', 'player.html', 'learn.html'];
+const PAGES = ['index.html', 'player.html', 'learn.html', 'graph.html'];
 
 // Class dựng động hoàn toàn trong runtime (không thể suy ra từ source) —
 // thêm vào đây CHỈ KHI có bằng chứng cụ thể, kèm lý do.
@@ -228,8 +228,11 @@ function runCheck(opts = {}) {
     const cssFiles = linkedStylesheets(html);
     const jsFiles = linkedScripts(html);
 
-    // union CSS nạp bởi trang này
+    // union CSS nạp bởi trang này + inline <style> blocks
     const cssUnion = new Set();
+    for (const sm of html.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/gi)) {
+      for (const c of cssClassSet(sm[1])) cssUnion.add(c);
+    }
     for (const rel of cssFiles) {
       const css = readFileSafe(path.join(ROOT, rel));
       if (css === null) {

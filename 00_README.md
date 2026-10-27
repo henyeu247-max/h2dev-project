@@ -1,8 +1,8 @@
-# H2DEV Project — Não Faceless YouTube
+# 97yo-dev Project — Hệ Sinh Thái Đào Tạo & Radar Kho YouTube (H2DEV · Huân Academy · DGMD)
 
-> Cập nhật: **2026-09-16**
+> Cập nhật: **2026-10-25**
 
-Web quản lý **toàn bộ** kho học H2DEV (144 bài: 140 video + 4 buổi Zoom) + tài sản nội bộ đã chuẩn hóa (prompt, báo cáo, pipeline).
+Web quản lý **toàn bộ** kho học H2DEV (148 bài: 144 video + 4 buổi Zoom) cùng 2 nhánh con Huân Academy (140 bài) và Đại Gia Mang Dép (45 bài) — tổng hợp **333 bài học** trên nền tảng **97yo-dev** (`https://97yo-dev-learn.tonymmo.com`) + tài sản nội bộ đã chuẩn hóa (prompt, báo cáo, pipeline).
 
 ## Cơ chế vận hành & Đồng bộ
 
@@ -21,11 +21,11 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 
 1. Tổng quan
 2. Lộ trình (iframe `learn.html`)
-3. Video — 144 SKU
+3. Video — 148 SKU
 4. Ngách xanh
 5. Tài liệu — catalog + nội bộ
 6. Nguồn reup
-7. Kênh mẫu — 256
+7. Kênh mẫu — 261
 8. Raw kênh — 156 record canonical (149 kênh unique · 7 bản ghi trùng)
 9. Chiến lược
 
@@ -40,14 +40,14 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 
 ## Data hiện tại
 
-- **144 bài học** · ~23.95 GB (22.30 GiB) · ffprobe **144/144** có hình + audio (0 file 0 byte) · 27 free · 117 pro
+- **148 bài học** · ~89.26 GB (83.13 GiB) · ffprobe **333/333** có hình + audio (0 file 0 byte) · 27 free · 121 pro
 - **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/` và `ZOOM-00` (tài liệu quy trình, không phải bài học)
 - **300 tài liệu**: theo `kind` (đo 2026-10-14) prompt 77 · report 21 · tool 28 · list 14 · other 8 · internal-doc 5 · sop 14 · guide 49 · transcript 40 · sheet 4 · 40 chưa gán `kind` (giao diện tự suy ra loại); gồm cẩm nang nhạc nền NOI-BO-MUSIC-01
 - **49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe**: 36 SAFE (YPP) · 9 REVIEW · 4 COPYRIGHTED loại bỏ — quản lý tại `data/music_catalog.json` & cẩm nang `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`
-- **256 kênh mẫu** (187 sống · 69 dead 404 đã ẩn) · `ngay_do` 256/256 (đo thực tế 2026-10-14 cả 256 kênh: 187 sống · 59 DIE 404 · 10 kênh rỗng 0 video; bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`)
+- **261 kênh mẫu** (189 sống · 72 dead 404 đã ẩn) · `ngay_do` 261/261 (đo thực tế cả 256 kênh: 184 sống · 59 DIE 404 · 10 kênh rỗng 0 video · 3 kênh dead khác; bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`)
 - **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)
 - 5 pipeline trong `pipelines/` (`hoat-hinh-ai`, `wildlife`, `ton-giao`, `everyday-history`, `bible-explainer`) · Knowledge Hub trong `knowledge-hub/`
-- `docs/` 150 thư mục (140 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 144/144 khớp
+- `docs/` 339 thư mục (329 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 148/148 khớp
 - Raw kênh: 156 record canonical (149 kênh unique · 7 bản ghi trùng channel); bản hiển thị chuẩn nằm ở `assets/raw-kenh/` và `data-tabs/raw-kenh-mau.json`.
 - Khung tiêu chuẩn nghiệm thu video mẫu mở được quản lý tại `data/video_acceptance.json` (hiện ở trạng thái `paused` theo Phương án B để tập trung hoàn thiện sườn ứng dụng và các pipeline sản xuất chuyên biệt).

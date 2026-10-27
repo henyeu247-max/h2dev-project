@@ -4,6 +4,9 @@
 > **Chủ đề:** Chiến thuật làm video dài > 2 tiếng đạt RPM $21 và quy trình viết kịch bản trường thiên  
 > **Áp dụng:** Ngách Lịch sử
 
+
+- **Kênh đối thủ minh họa trên màn hình:** `Sleepless Historian` (`@SleeplessHistorian`)
+
 ---
 
 ## 1. TẠI SAO VIDEO DÀI TRÊN 2 TIẾNG LẠI CÓ RPM LÊN ĐẾN $21?

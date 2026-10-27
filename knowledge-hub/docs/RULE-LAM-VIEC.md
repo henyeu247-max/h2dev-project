@@ -24,9 +24,9 @@
 
 ## KIẾN TRÚC HỆ THỐNG (7 TẦNG — ĐÃ DỠ BỎ HOÀN TOÀN TÀN DƯ GEMINI)
 
-- **Tầng 1 — Kho Học Liệu & Âm Thanh Chuẩn:** Catalog 144 bài học (140 video bài giảng + 4 buổi Zoom) kèm phụ đề sạch 3 định dạng (`transcript.json`, `transcript.srt`, `transcript.txt`), Voice DNA Studio với mẫu trích xuất 45s (tính WPM, profile clone giọng), **Kho 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng) tích hợp Trạm phát nhạc nền Interactive Music Studio Modal**, cẩm nang Master SOP, và media đã kiểm định ffprobe (luồng video + audio khác 0 byte).
+- **Tầng 1 — Kho Học Liệu & Âm Thanh Chuẩn:** Catalog 148 bài học (144 video bài giảng + 4 buổi Zoom) kèm phụ đề sạch 3 định dạng (`transcript.json`, `transcript.srt`, `transcript.txt`), Voice DNA Studio với mẫu trích xuất 45s (tính WPM, profile clone giọng), **Kho 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng) tích hợp Trạm phát nhạc nền Interactive Music Studio Modal**, cẩm nang Master SOP, và media đã kiểm định ffprobe (luồng video + audio khác 0 byte).
 - **Tầng 2 — Thị Trường & Đối Thủ:** Danh bạ kênh đối thủ (sống + chết + OCR/vision), 156 hồ sơ kênh mẫu bao quát 34 ngách nghiệp vụ đã audit live sức sống YPP, chỉ số tốc độ bứt phá (velocity tracker).
-- **Tầng 3 — Pipeline Sản Xuất & Hệ Thống Kỹ Năng Tác Chiến:** 4 pipeline song song (tôn giáo, hoạt hình 3D, tài liệu động vật, giải nghĩa Kinh Thánh) + **Kho 11 Skills đặc nhiệm đã cài đặt sẵn** (`h2dev-hoat-hinh`, `h2dev-ton-giao`, `h2dev-bible`, `h2dev-wildlife-script`, `h2dev-wildlife-motion`, `video-script-dissect`, `short-video-script`, `script-forging`, `prompt-master`, `de-ai-writing`, `douyin-scraper`) + **Kho 300 tài liệu & Master Prompts** (`data-tabs/tai-lieu-full.json`) + **6 hồ sơ Pilot ngách** (`raw-niches/` với `PILOT-01-THE-MIRROR`) + **cẩm nang catalog SOP & Music** (`assets/docs/tai-lieu/`).
+- **Tầng 3 — Pipeline Sản Xuất & Hệ Thống Kỹ Năng Tác Chiến:** 5 pipeline song song (tôn giáo, hoạt hình 3D, tài liệu động vật, giải nghĩa Kinh Thánh, lịch sử đời thường) + **Kho 11 Skills đặc nhiệm đã cài đặt sẵn** (`h2dev-hoat-hinh`, `h2dev-ton-giao`, `h2dev-bible`, `h2dev-wildlife-script`, `h2dev-wildlife-motion`, `video-script-dissect`, `short-video-script`, `script-forging`, `prompt-master`, `de-ai-writing`, `douyin-scraper`) + **Kho 300 tài liệu & Master Prompts** (`data-tabs/tai-lieu-full.json`) + **6 hồ sơ Pilot ngách** (`raw-niches/` với `PILOT-01-THE-MIRROR`) + **cẩm nang catalog SOP & Music** (`assets/docs/tai-lieu/`).
 - **Tầng 4 — Hạ Tầng Phục Vụ & Mạng Nội Bộ:** Server Node.js (0.0.0.0:8899) chạy dưới dạng Windows Service chính thức (`H2DEV_Service`, NSSM `SERVICE_AUTO_START`), tự chạy khi bật máy không cần đăng nhập; mạng LAN + Tailscale, mở khóa dữ liệu tĩnh nguyên vẹn, kiến trúc map ổ mạng máy trạm (`Y:\`). Số liệu có GUARD kiểm tra (`sync-counts.js --check`).
 - **Tầng 5 — Hạ Tầng Công Cụ & Mô Hình:** MCP Tool Server chạy 100% LOCAL tại `D:\Mcp-Pool-Vps` dưới dạng Windows Service chính thức (`MCP_Pool_Service`, NSSM `SERVICE_AUTO_START`, :3988/mcp, 180+ tools: vidIQ, Trends, Firecrawl, Exa, Tavily, Playwright...) + **Gemini Multimodal Audio/Video Engine (`scripts/gemini_audio_engine.js` & `gemini_analyze_media`) với pool xoay vòng 4 Live Keys tự động** + AI Chat Model Gateway tại 9Router (:20128). Độc lập 100% ngoài WorkBuddy (0 background tasks trong WorkBuddy).
 - **Tầng 6 — Tự Động Hóa & Script Kiểm Định:** Pipeline tiếp nhận (`inbox/`), đồng bộ catalog, **Nguồn số duy nhất `scripts/lib/counts.js` & manifest `data/counts-manifest.json`**, bộ test validation (`validate-project.js`), công cụ sửa chữa và quét bảo mật. Kỷ luật Ephemeral Cleanup (xóa sạch script tạm sau khi check-pass).
@@ -144,11 +144,12 @@ Evidence-first, check N/N, đọc FULL, phản biện + nhận định 3 mức `
 - Title drama: `[bị coi thường] + [hành động thử lòng] + [khoảnh khắc lật]`.
 - Title Bible: `khoảnh khắc cụ thể + con số + cảm xúc mạnh`.
 
-### 3.6 4 pipeline sản xuất đã có
+### 3.6 5 pipeline sản xuất đã có
 1. `ton-giao` — video tôn giáo EN học thuật (4 bước: script 3-tầng → voice+ảnh → merge FFmpeg → report).
 2. `hoat-hinh-ai` — story→animation Pixar 3D (5 skill: logline → characters → images → shots → composite+video).
 3. `wildlife` — kịch bản 70-90 từ/phút, 6-beat.
 4. `bible-explainer` — script 3-layer voiceover-ready, 6 phases.
+5. `everyday-history` — lịch sử đồ vật và đời sống thường ngày, đối soát nguồn bảo tàng.
 
 ---
 

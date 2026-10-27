@@ -25,31 +25,46 @@ function getMasterDb() {
   db.exec(`
     PRAGMA journal_mode = WAL;
     PRAGMA synchronous = NORMAL;
-    PRAGMA mmap_size = 30000000000;
+    PRAGMA busy_timeout = 5000;
+    PRAGMA mmap_size = 268435456;
     PRAGMA cache_size = -64000;
     PRAGMA foreign_keys = ON;
   `);
   return db;
 }
 
-// 1. Read Query Helper (Returns array of rows, automatically closes connection)
-function query(sql, params = []) {
-  const db = getMasterDb();
-  try {
-    return db.prepare(sql).all(...params);
-  } finally {
-    db.close();
+// Persistent read connection with mtime invalidation (<0.2ms read latency)
+let _readDb = null;
+let _readDbMtime = 0;
+let _lastStatAt = 0;
+function getReadDb() {
+  const now = Date.now();
+  if (_readDb && (now - _lastStatAt < 1500)) return _readDb;
+  _lastStatAt = now;
+  if (!fs.existsSync(DB_PATH)) {
+    throw new Error(`Master Database not found at ${DB_PATH}. Run scripts/build_master_db.js first.`);
   }
+  const mtime = fs.statSync(DB_PATH).mtimeMs;
+  if (!_readDb || mtime !== _readDbMtime) {
+    if (_readDb) {
+      try { _readDb.close(); } catch (_) {}
+    }
+    _readDb = getMasterDb();
+    _readDbMtime = mtime;
+  }
+  return _readDb;
 }
 
-// 2. Read Single Row Helper (Returns single object or undefined)
+// 1. Read Query Helper (Uses persistent read connection)
+function query(sql, params = []) {
+  const db = getReadDb();
+  return db.prepare(sql).all(...params);
+}
+
+// 2. Read Single Row Helper (Uses persistent read connection)
 function queryOne(sql, params = []) {
-  const db = getMasterDb();
-  try {
-    return db.prepare(sql).get(...params);
-  } finally {
-    db.close();
-  }
+  const db = getReadDb();
+  return db.prepare(sql).get(...params);
 }
 
 // Debounce timer for non-blocking projection sync
@@ -149,25 +164,99 @@ function mutateBatch(operations = [], options = {}) {
   }
 }
 
-// 6. Full-Text Search Helper (FTS5 in <1ms)
+// Fold Vietnamese diacritics + đ/Đ -> d/D
+function foldVi(s) {
+  return String(s || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'D')
+    .toLowerCase();
+}
+
+// Highlight accented Vietnamese snippet when query was unaccented (matched folded_text col 4)
+function ensureSnippetHighlight(snipVi, foldedTokens) {
+  const raw = String(snipVi || '');
+  if (!raw || raw.includes('<mark>') || !foldedTokens.length) return raw;
+  return raw.replace(/[\p{L}\p{N}_-]+/gu, (word) => {
+    const fw = foldVi(word);
+    if (!fw) return word;
+    for (const tok of foldedTokens) {
+      if (tok.length >= 2 && fw.startsWith(tok)) {
+        return `<mark>${word}</mark>`;
+      }
+    }
+    return word;
+  });
+}
+
+// 6. Full-Text Search Helper (FTS5 + BM25 + Vietnamese Diacritic/đ Folding + Exact ID Boost)
 function searchFts(keyword, limit = 20) {
   if (!keyword || !keyword.trim()) return [];
-  const db = getMasterDb();
-  try {
-    const cleanKw = keyword.trim().replace(/[^\p{L}\p{N}\s_]/gu, ' ').trim();
-    if (!cleanKw) return [];
-    // Convert to FTS match syntax
-    const ftsQuery = cleanKw.split(/\s+/).map(w => `"${w}"*`).join(' OR ');
+  const db = getReadDb();
+  const rawTrim = keyword.trim();
+  const cleanKw = rawTrim.replace(/[^\p{L}\p{N}\s_-]/gu, ' ').trim();
+  if (!cleanKw) return [];
 
-    return db.prepare(`
-      SELECT entity_id, entity_type, title, snippet(search_fts, 3, '<mark>', '</mark>', '...', 15) AS snippet
-      FROM search_fts
-      WHERE search_fts MATCH ?
-      LIMIT ?
-    `).all(ftsQuery, limit);
-  } finally {
-    db.close();
+  // Normalize alternative ID forms (e.g., DOC-063 -> DOC_63, @handle -> handle)
+  let altId = rawTrim.replace(/^@/, '');
+  const mDoc = rawTrim.match(/^DOC[-_]?0*(\d+)$/i);
+  if (mDoc) altId = `DOC_${parseInt(mDoc[1], 10)}`;
+
+  // Split words; for hyphenated codes like VIDEO-53a547 or RAW-001, also split on '-'
+  const rawWords = cleanKw.split(/[\s-]+/).filter(Boolean);
+  if (!rawWords.length) return [];
+
+  const tokenClauses = rawWords.map((w) => {
+    const orig = w.replace(/"/g, '');
+    const folded = foldVi(orig);
+    if (folded && folded !== orig.toLowerCase()) {
+      return `("${orig}"* OR "${folded}"*)`;
+    }
+    return `"${orig}"*`;
+  });
+
+  const foldedTokens = rawWords.map((w) => foldVi(w)).filter(Boolean);
+  const andQuery = tokenClauses.join(' AND ');
+  const orQuery = tokenClauses.join(' OR ');
+
+  const sql = `
+    SELECT entity_id, entity_type, title,
+           snippet(search_fts, 3, '<mark>', '</mark>', '...', 15) AS snippet
+    FROM search_fts
+    WHERE search_fts MATCH ?
+    ORDER BY (
+      CASE
+        WHEN LOWER(entity_id) = LOWER(?) OR LOWER(entity_id) = LOWER(?) THEN -1000.0
+        WHEN LOWER(title) LIKE LOWER(?) THEN -50.0
+        ELSE 0.0
+      END
+    ) + bm25(search_fts, 10.0, 1.0, 5.0, 2.0, 1.5) ASC
+    LIMIT ?
+  `;
+
+  const stmt = db.prepare(sql);
+  let rows = stmt.all(andQuery, rawTrim, altId, `%${rawTrim}%`, limit);
+
+  if (rows.length < limit && tokenClauses.length > 1) {
+    const seen = new Set(rows.map((r) => `${r.entity_type}:${r.entity_id}`));
+    const more = stmt.all(orQuery, rawTrim, altId, `%${rawTrim}%`, limit);
+    for (const r of more) {
+      const k = `${r.entity_type}:${r.entity_id}`;
+      if (!seen.has(k)) {
+        seen.add(k);
+        rows.push(r);
+        if (rows.length >= limit) break;
+      }
+    }
   }
+
+  return rows.map((r) => ({
+    entity_id: r.entity_id,
+    entity_type: r.entity_type,
+    title: r.title,
+    snippet: ensureSnippetHighlight(r.snippet, foldedTokens),
+  }));
 }
 
 // 7. Projection Exporter (Dumps tables back to data-tabs/ and catalog)

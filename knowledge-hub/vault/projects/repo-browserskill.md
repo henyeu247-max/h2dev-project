@@ -1,0 +1,91 @@
+---
+project_id: "project:repo-browserskill"
+name: "Repo: BrowserSkill"
+category: "research-repo"
+root_path: "research-repos/BrowserSkill"
+domains_count: 9
+files_count: 62
+---
+
+# Repo: BrowserSkill
+
+- **Thuộc Không Gian Gốc:** `D:\YTB` (`workspace:d-ytb`)
+- **Phân loại:** `research-repo`
+- **Đường dẫn gốc:** `research-repos/BrowserSkill`
+- **Tổng số phân khu (Domains):** `9`
+- **Tổng số file cốt lõi đã lập chỉ mục:** `62`
+
+## 1. Các Phân Khu / Nhánh Dữ Liệu (`Domains`)
+- **Nhánh: .github** (`domain:repo-browserskill/github`)
+- **Repo: BrowserSkill — Core Files** (`domain:repo-browserskill/root`)
+- **Nhánh: apps** (`domain:repo-browserskill/apps`)
+- **Nhánh: crates** (`domain:repo-browserskill/crates`)
+- **Nhánh: docs** (`domain:repo-browserskill/docs`)
+- **Nhánh: evals** (`domain:repo-browserskill/evals`)
+- **Nhánh: packages** (`domain:repo-browserskill/packages`)
+- **Nhánh: scripts** (`domain:repo-browserskill/scripts`)
+- **Nhánh: skill** (`domain:repo-browserskill/skill`)
+
+## 2. Danh Sách File Thực Thi & Dữ Liệu Cốt Lõi (62)
+- `.github/workflows/ci.yml` — *Project Resource File* (`4802 B`)
+- `.github/workflows/release-cli.yml` — *Project Resource File* (`4881 B`)
+- `.github/workflows/release-dsh-plugin.yml` — *Project Resource File* (`3293 B`)
+- `.github/workflows/release-extension.yml` — *Project Resource File* (`19193 B`)
+- `.stylelintrc.json` — *Structured Data / SSoT Projection* (`549 B`)
+- `AGENT_INSTALL.md` — *Technical Documentation / SOP Guide* (`7803 B`)
+- `apps/extension/package.json` — *Structured Data / SSoT Projection* (`1039 B`)
+- `apps/extension/PRIVACY.md` — *Technical Documentation / SOP Guide* (`11362 B`)
+- `apps/extension/PRIVACY.zh-CN.md` — *Technical Documentation / SOP Guide* (`10114 B`)
+- `apps/extension/tsconfig.json` — *Structured Data / SSoT Projection* (`498 B`)
+- `apps/extension/vitest.config.ts` — *Application Module / Execution Script* (`1237 B`)
+- `apps/extension/wxt.config.ts` — *Application Module / Execution Script* (`2778 B`)
+- `biome.json` — *Structured Data / SSoT Projection* (`1285 B`)
+- `Cargo.toml` — *Project Resource File* (`1452 B`)
+- `CHANGELOG.md` — *Technical Documentation / SOP Guide* (`6161 B`)
+- `clippy.toml` — *Project Resource File* (`37 B`)
+- `crates/bsk-cli/Cargo.toml` — *Project Resource File* (`2303 B`)
+- `crates/bsk-cli/README.md` — *Technical Documentation / SOP Guide* (`2241 B`)
+- `crates/bsk-protocol/Cargo.toml` — *Project Resource File* (`766 B`)
+- `crates/bsk-protocol/README.md` — *Technical Documentation / SOP Guide* (`230 B`)
+- `docs/architecture.md` — *Technical Documentation / SOP Guide* (`10086 B`)
+- `docs/browser-profiles.md` — *Technical Documentation / SOP Guide* (`3848 B`)
+- `docs/long-screenshot.md` — *Technical Documentation / SOP Guide* (`15423 B`)
+- `docs/operation-audit.md` — *Technical Documentation / SOP Guide* (`5871 B`)
+- `docs/recoverable-session-starts.md` — *Technical Documentation / SOP Guide* (`10155 B`)
+- `docs/remote-extension-connection.md` — *Technical Documentation / SOP Guide* (`16352 B`)
+- `docs/sandboxed-agents.md` — *Technical Documentation / SOP Guide* (`11675 B`)
+- `docs/scroll-to.md` — *Technical Documentation / SOP Guide* (`5324 B`)
+- `docs/wheel.md` — *Technical Documentation / SOP Guide* (`5739 B`)
+- `evals/browser/agents.example.json` — *Structured Data / SSoT Projection* (`351 B`)
+- `evals/browser/cli.mjs` — *Application Module / Execution Script* (`18212 B`)
+- `evals/browser/README.md` — *Technical Documentation / SOP Guide* (`11095 B`)
+- `evals/browser/README.zh-CN.md` — *Technical Documentation / SOP Guide* (`8728 B`)
+- `install.ps1` — *Windows Service & Process Orchestrator* (`11464 B`)
+- `install.sh` — *Project Resource File* (`6262 B`)
+- `package.json` — *Structured Data / SSoT Projection* (`1114 B`)
+- `packages/dsh-plugin-browserskill/cordis.patch.yml` — *Project Resource File* (`241 B`)
+- `packages/dsh-plugin-browserskill/package.json` — *Structured Data / SSoT Projection* (`4150 B`)
+- `packages/dsh-plugin-browserskill/README.md` — *Technical Documentation / SOP Guide* (`12102 B`)
+- `packages/dsh-plugin-browserskill/tsconfig.json` — *Structured Data / SSoT Projection* (`476 B`)
+- `packages/dsh-plugin-browserskill/tsdown.config.ts` — *Application Module / Execution Script* (`5799 B`)
+- `packages/dsh-plugin-browserskill/vitest.config.ts` — *Application Module / Execution Script* (`1187 B`)
+- `packages/i18n/package.json` — *Structured Data / SSoT Projection* (`635 B`)
+- `packages/i18n/README.md` — *Technical Documentation / SOP Guide* (`2215 B`)
+- `packages/i18n/vitest.config.ts` — *Application Module / Execution Script* (`166 B`)
+- `packages/ui/package.json` — *Structured Data / SSoT Projection* (`666 B`)
+- `packages/vom/package.json` — *Structured Data / SSoT Projection* (`373 B`)
+- `packages/vom/tsconfig.json` — *Structured Data / SSoT Projection* (`326 B`)
+- `packages/vom/vitest.config.ts` — *Application Module / Execution Script* (`164 B`)
+- `pnpm-lock.yaml` — *Project Resource File* (`363765 B`)
+- `pnpm-workspace.yaml` — *Project Resource File* (`94 B`)
+- `README.md` — *Technical Documentation / SOP Guide* (`18738 B`)
+- `README.zh-CN.md` — *Technical Documentation / SOP Guide* (`17948 B`)
+- `rust-toolchain.toml` — *Project Resource File* (`69 B`)
+- `rustfmt.toml` — *Project Resource File* (`35 B`)
+- `scripts/install-windows.test.ps1` — *Windows Service & Process Orchestrator* (`19322 B`)
+- `scripts/release.mjs` — *Application Module / Execution Script* (`10985 B`)
+- `scripts/release.test.mjs` — *Application Module / Execution Script* (`3654 B`)
+- `scripts/render-version-json.mjs` — *Application Module / Execution Script* (`2845 B`)
+- `scripts/render-version-json.test.mjs` — *Application Module / Execution Script* (`1893 B`)
+- `scripts/test-windows-daemon.ps1` — *Windows Service & Process Orchestrator* (`8654 B`)
+- `skill/SKILL.md` — *Technical Documentation / SOP Guide* (`19075 B`)

@@ -1,0 +1,361 @@
+GODA MEDIA  |  SOP Human-Edit Script AI  |  v1.0
+GODA MEDIA
+QUY TRÌNH CHUẨN HÓA (SOP)
+HUMAN-EDIT SCRIPT AI
+Quy trình biên tập script AI để vượt qua kiểm duyệt"Inauthentic Content" của YouTube
+Áp dụng cho: Content Editor – GODA MEDIA
+Phiên bản: 1.0
+Ngày ban hành: 22/04/2026
+Phạm vi áp dụng: Toàn bộ Content Editor sản xuất nội dung faceless
+________________
+
+
+1. MỤC ĐÍCH & BỐI CẢNH
+1.1. Vấn đề đang đối mặt
+YouTube đã siết chặt chính sách kiếm tiền (YPP) đối với nội dung được đánh giá là "Inauthentic Content" – nội dung sản xuất hàng loạt, kém chất lượng, hoặc lạm dụng AI tạo tự động (script, giọng đọc, hình ảnh) mà thiếu dấu ấn sáng tạo của con người.
+Hệ quả: Kênh bị tắt kiếm tiền, mất AdSense, ảnh hưởng trực tiếp đến cash flow của GODA MEDIA và toàn bộ cluster kênh faceless.
+1.2. Mục đích của SOP
+* Cung cấp quy trình bắt buộc để Content Editor xử lý script AI trước khi chuyển sang khâu voice và dựng hình.
+* Đảm bảo mọi script đầu ra đều mang "dấu ấn con người" rõ rệt, đủ tiêu chuẩn YouTube YPP.
+* Chuẩn hóa chất lượng nội dung trên toàn bộ cluster kênh của GODA MEDIA.
+* Giảm rủi ro demonetization hàng loạt và bảo vệ tài sản số dài hạn.
+1.3. Phạm vi áp dụng
+SOP này áp dụng cho 100% script sử dụng AI ở bất kỳ khâu nào (ý tưởng, outline, viết thô, hoặc viết hoàn chỉnh). Không có ngoại lệ – kể cả kênh Tier C thử nghiệm cũng phải pass tối thiểu 70% checklist.
+1.4. Nguyên tắc cốt lõi
+GODA MEDIA KHÔNG CẤM DÙNG AI. Chúng ta cấm giao nộp script AI thô cho khâu sản xuất. Mọi script AI phải qua quy trình human-edit bắt buộc dưới đây.
+________________
+
+
+2. HIỂU ĐÚNG VỀ "INAUTHENTIC CONTENT"
+2.1. 4 tín hiệu YouTube dùng để flag nội dung AI kém chất lượng
+#
+	Tín hiệu
+	Biểu hiện cụ thể
+	Ví dụ thường gặp
+	1
+	Template hóa lộ liễu
+	Cùng intro/outro, cùng cấu trúc, cùng background, cùng TTS trên hàng loạt video
+	10 video liên tiếp đều bắt đầu "Xin chào các bạn, hôm nay chúng ta sẽ tìm hiểu về..."
+	2
+	AI voice thuần không xử lý
+	Đọc đều đều, không cảm xúc, không pause, không nhấn nhá
+	TTS FPT/Vbee mặc định, tốc độ 1.0x xuyên suốt
+	3
+	Slideshow cơ học
+	Stock footage + Ken Burns + text overlay cơ bản, không logic kể chuyện
+	Video 10 phút chỉ có 20 ảnh stock zoom in/out
+	4
+	Nội dung trùng lặp / reupload trá hình
+	Copy ý tưởng video viral, re-narrate, thay thumbnail – chỉnh sửa tối thiểu
+	Viết lại từ Wikipedia hoặc từ video đối thủ mà không thêm giá trị mới
+	
+
+2.2. YouTube đánh giá gì ở "dấu ấn con người"?
+YouTube không kiểm tra xem anh có dùng AI hay không – họ kiểm tra xem nội dung có:
+* Góc nhìn độc quyền (unique angle/POV) – cùng một chủ đề được tiếp cận theo cách khác biệt so với 100 video đã có.
+* Câu chuyện, ví dụ, dữ liệu cụ thể – không phải khái quát chung chung.
+* Quan điểm, nhận định cá nhân – "tôi nghĩ", "theo kinh nghiệm của team chúng tôi", "điều này khác với X vì...".
+* Chất lượng sản xuất có đầu tư – voice có cảm xúc, visual custom, nhịp độ có chủ đích.
+________________
+
+
+3. QUY TRÌNH HUMAN-EDIT 6 BƯỚC
+Đây là quy trình bắt buộc tuần tự. Không được bỏ qua bước nào. Tổng thời gian ước tính: 60–90 phút cho script 10 phút video.
+BƯỚC 1 – ĐỊNH HÌNH GÓC NHÌN (ANGLE LOCK)
+Thời gian: 10-15 phút | Output: 1 câu Angle Statement
+Trước khi đụng vào script AI, Content Editor BẮT BUỘC viết ra góc nhìn độc quyền của video theo công thức:
+"Khác với [quan điểm phổ biến / video đối thủ], video này sẽ cho người xem thấy [insight khác biệt] thông qua [bằng chứng / case / dữ liệu cụ thể]."
+Ví dụ đạt chuẩn:
+* Khác với các video dạy "kiếm tiền YouTube" chung chung, video này sẽ cho người đi làm văn phòng thấy 3 sai lầm khiến kênh faceless chết trong 90 ngày đầu, thông qua phân tích 50 kênh thất bại mà team tôi từng tư vấn.
+Ví dụ KHÔNG đạt chuẩn (từ chối nhận):
+* "Video nói về cách kiếm tiền YouTube 2026" – không có angle, không có đối chiếu, không có bằng chứng.
+Checklist Angle Lock
+* Angle có đối chiếu rõ với quan điểm phổ biến hoặc video đối thủ?
+* Insight có đủ cụ thể để người xem không thể đoán trước?
+* Có nguồn bằng chứng cụ thể (case, dữ liệu, kinh nghiệm) để backup không?
+
+
+
+
+BƯỚC 2 – SCRUB DẤU VẾT AI
+Thời gian: 15-20 phút | Output: Script sạch, không còn "mùi AI"
+Dùng Find & Replace trên Google Docs / Word để xóa hoặc thay thế các cụm từ "signature AI" sau đây. Đây là danh sách đen bắt buộc:
+CỤM TỪ CẤM (dấu hiệu AI)
+	CÁCH THAY THẾ
+	Trong thế giới ngày nay...
+	Bỏ hoàn toàn, hoặc thay bằng thời điểm cụ thể: "Năm 2026 này..." / "Mấy tháng gần đây..."
+	Điều thú vị là... / Điều đáng nói là...
+	Bỏ. Đi thẳng vào ý.
+	Như chúng ta đã biết...
+	Bỏ hoàn toàn.
+	Không thể phủ nhận rằng...
+	Bỏ. Nếu là sự thật thì không cần rào trước.
+	Trong bài viết/video hôm nay, chúng ta sẽ cùng nhau tìm hiểu...
+	Viết lại hook cụ thể theo phong cách kênh (xem Bước 3).
+	Hy vọng bài viết này hữu ích với bạn.
+	Thay bằng CTA cụ thể của kênh.
+	Đa dạng / phong phú / đa chiều (khi không có gì cụ thể phía sau)
+	Thay bằng con số hoặc ví dụ cụ thể.
+	Ngoài ra, cần lưu ý rằng... / Bên cạnh đó...
+	Bỏ hoặc thay bằng "Thêm một điều..." / "Còn nữa..."
+	Các chuyên gia cho rằng... (không nêu tên)
+	Phải nêu tên cụ thể hoặc xóa.
+	Theo nghiên cứu... (không nêu nguồn)
+	Nêu nguồn cụ thể hoặc xóa.
+	
+
+Quy tắc ngôn ngữ bắt buộc sau scrub
+* Ít nhất 2 câu chuyện/ví dụ có tên riêng, thời gian, địa điểm, con số lẻ cụ thể.
+* Ít nhất 3 lần sử dụng "tôi" / "chúng tôi" / "team chúng tôi" thể hiện quan điểm.
+* Không có đoạn nào dài quá 4 câu mà không xuống dòng cảm xúc (câu ngắn để nhấn nhá).
+* Câu ngắn + câu dài xen kẽ – không được đều đều cùng độ dài.
+________________
+
+
+BƯỚC 3 – VIẾT LẠI HOOK (30 GIÂY ĐẦU)
+Thời gian: 10 phút | Output: Hook do người viết 100%
+30 giây đầu của video BẮT BUỘC do Content Editor tự viết 100%, không được dùng bất kỳ câu nào từ AI. Đây là đoạn YouTube cân nhắc nhiều nhất để đánh giá "dấu ấn con người".
+3 cấu trúc hook được chấp nhận
+Cấu trúc 1 – Contrarian Hook (Đi ngược):
+* "Ai cũng nói [quan điểm phổ biến]. Nhưng sau khi [kinh nghiệm/case cụ thể], tôi nhận ra điều ngược lại..."
+Cấu trúc 2 – Story Hook (Câu chuyện):
+* "[Thời gian cụ thể], [nhân vật cụ thể] đã [hành động bất ngờ]. Và kết quả là..."
+Cấu trúc 3 – Data Hook (Số liệu sốc):
+* "[Con số cụ thể đáng ngạc nhiên]. Đó là [giải thích ngắn gọn]. Trong video hôm nay tôi sẽ chỉ ra lý do tại sao [insight]."
+Tiêu chí duyệt Hook
+* Không có cụm từ trong danh sách đen ở Bước 2.
+* Có ít nhất 1 chi tiết cụ thể (tên/số/thời gian/địa điểm).
+* Không bắt đầu giống 5 video gần nhất của kênh.
+* Đọc lên có cảm xúc, không đều đều.
+
+
+
+
+BƯỚC 4 – CHÈN "DẤU ẤN CON NGƯỜI" (SIGNATURE INJECTION)
+Thời gian: 20-25 phút | Output: Script có tối thiểu 5 signature blocks
+Đây là bước quan trọng nhất. Content Editor BẮT BUỘC chèn đủ 5 loại "signature block" sau vào script:
+#
+	Loại Signature
+	Mô tả
+	Ví dụ mẫu (chủ đề: faceless YouTube)
+	1
+	Personal Anecdote (Chuyện cá nhân/team)
+	Câu chuyện ẩn danh nhưng cụ thể của tác giả hoặc team. Có thời gian, tình huống, cảm xúc.
+	"Tháng 7 năm ngoái, team chúng tôi mất gần 3 tuần để gỡ rối một kênh bị tắt kiếm tiền chỉ vì dùng cùng intro cho 40 video liền."
+	2
+	Concrete Data Point (Dữ liệu cụ thể)
+	Con số, thống kê, dữ liệu thực tế từ kinh nghiệm hoặc nguồn nêu tên được.
+	"Theo phân tích 127 kênh chúng tôi đã kiểm tra, 83% kênh bị flag có chung một đặc điểm: dùng TTS mặc định không có pause tự nhiên."
+	3
+	Opinion Stake (Đóng cọc quan điểm)
+	Câu khẳng định quan điểm cá nhân rõ ràng, có thể gây tranh luận.
+	"Tôi cho rằng 90% các khóa học YouTube đang dạy sai – họ dạy làm nội dung, trong khi vấn đề thực sự là xây hệ thống."
+	4
+	Counter-intuitive Insight (Góc nhìn ngược)
+	Ý tưởng mà người xem không nghĩ tới, đi ngược cảm tính thông thường.
+	"Nghe có vẻ vô lý, nhưng các kênh mạnh nhất tôi từng thấy lại đăng ít video hơn, không phải nhiều hơn."
+	5
+	Named Example (Ví dụ nêu tên)
+	Tham chiếu thương hiệu, người thật, kênh thật (có thể ẩn danh bằng "một kênh tôi biết").
+	"Có một kênh sức khỏe người Việt tôi theo dõi từ 2023 – họ có 600 nghìn sub nhưng chỉ làm 2 video/tháng và doanh thu vẫn cao hơn kênh 2 triệu sub làm mỗi ngày."
+	
+
+Quy tắc phân bổ
+* Video 5 phút: tối thiểu 3 signature blocks.
+* Video 10 phút: tối thiểu 5 signature blocks (mỗi loại ít nhất 1).
+* Video 15+ phút: tối thiểu 7 signature blocks.
+* KHÔNG được cụm tất cả signature vào một đoạn. Phải rải đều xuyên suốt video để duy trì retention.
+________________
+
+
+BƯỚC 5 – ĐIỀU HƯỚNG VOICE (VOICE DIRECTION)
+Thời gian: 10 phút | Output: Script có markup cho voice
+Script sau khi edit xong phải có markup hướng dẫn voice talent (hoặc voice engineer nếu dùng AI voice cao cấp). Đây là điểm nhiều team Việt Nam bỏ qua nhưng lại là yếu tố quyết định "cảm giác con người".
+Hệ thống ký hiệu bắt buộc
+Ký hiệu
+	Ý nghĩa
+	Ví dụ
+	[pause]
+	Dừng 0.5-1 giây, tạo nhịp thở
+	Tôi đã mất 3 tháng. [pause] Và đây là lý do.
+	[long-pause]
+	Dừng 1.5-2 giây, dùng trước insight quan trọng
+	Sự thật là... [long-pause] ...không ai muốn nghe.
+	[nhấn]
+	Nhấn mạnh từ/cụm từ trong ngoặc tiếp theo
+	Đây là [nhấn] sai lầm lớn nhất của người mới.
+	[chậm]
+	Đọc chậm lại, dùng cho đoạn quan trọng/công thức
+	[chậm] Không phải ai cũng hiểu điều này.
+	[nhanh]
+	Tăng tốc, dùng cho đoạn liệt kê hoặc chuyển cảnh
+	[nhanh] Và thế là xong – upload, tối ưu, chờ đợi.
+	[thở]
+	Hít thở nghe được, tăng cảm giác tự nhiên
+	[thở] Thôi được, tôi sẽ nói thẳng.
+	[hạ giọng]
+	Hạ tông, tạo cảm giác tâm sự/bí mật
+	[hạ giọng] Đây là điều không ai dám nói cho bạn.
+	[nâng giọng]
+	Nâng tông, thể hiện bất ngờ/hào hứng
+	[nâng giọng] Và kết quả? Gấp 10 lần!
+	
+
+Quy tắc phân bổ markup
+* Tối thiểu 1 markup mỗi 30 giây (tương đương mỗi 75 từ tiếng Việt).
+* Ít nhất 3 loại markup khác nhau trong toàn video – không được chỉ dùng [pause].
+* Trước mỗi signature block ở Bước 4, BẮT BUỘC có [pause] hoặc [long-pause].
+* Hook 30 giây đầu phải có ít nhất 2 markup khác nhau.
+
+
+
+
+BƯỚC 6 – QC TỰ KIỂM TRA TRƯỚC KHI GIAO
+Thời gian: 10 phút | Output: Script đạt ≥ 90% checklist
+Content Editor BẮT BUỘC tự chấm điểm theo checklist dưới đây trước khi submit cho Channel Manager. Script đạt dưới 90% không được chuyển sang khâu voice.
+________________
+
+
+4. CHECKLIST QC BẮT BUỘC (20 ĐIỂM)
+Cách chấm: Mỗi mục đạt = 1 điểm, không đạt = 0 điểm. Tổng 20 điểm.
+Ngưỡng duyệt: ≥ 18/20 (90%) – được chuyển sang khâu voice. < 18/20 – phải edit lại.
+Nhóm A – Angle & Nội dung (5 điểm)
+1. Có Angle Statement rõ ràng theo công thức Bước 1?
+2. Angle khác biệt so với top 10 video cạnh tranh về cùng chủ đề?
+3. Có ít nhất 1 insight mà người xem không thể tự đoán ra từ title?
+4. Nội dung có "trả giá trị" – người xem học/áp dụng được điều gì cụ thể?
+5. Không phải là paraphrase/reupload từ video/bài viết khác?
+Nhóm B – Scrub AI (4 điểm)
+6. Không còn bất kỳ cụm từ nào trong danh sách đen Bước 2?
+7. Không có đoạn nào chung chung, không có chi tiết cụ thể kéo dài quá 3 câu?
+8. Câu ngắn + câu dài xen kẽ, không đều đều một độ dài?
+9. Ít nhất 3 lần dùng "tôi"/"chúng tôi"/"team chúng tôi"?
+Nhóm C – Hook (3 điểm)
+10. Hook 30 giây đầu theo 1 trong 3 cấu trúc được duyệt?
+11. Hook có ít nhất 1 chi tiết cụ thể (tên/số/thời gian)?
+12. Hook không giống 5 video gần nhất của kênh?
+Nhóm D – Signature Injection (5 điểm)
+13. Có đủ số lượng signature blocks theo độ dài video?
+14. Có đủ 5 loại signature (Anecdote, Data, Opinion, Counter-intuitive, Named)?
+15. Signature được rải đều, không cụm vào một đoạn?
+16. Mỗi signature đều có chi tiết cụ thể (không generic)?
+17. Không có signature nào lặp lại ý của signature khác?
+Nhóm E – Voice Direction (3 điểm)
+18. Có markup voice đúng tần suất (≥ 1 markup/30 giây)?
+19. Có ít nhất 3 loại markup khác nhau?
+20. Mỗi signature block đều có markup dẫn trước?
+
+
+
+
+5. TÌNH HUỐNG ĐẶC BIỆT & XỬ LÝ
+5.1. Khi AI trả ra script đã có sẵn signature
+AI đôi khi tự chèn "câu chuyện" giả. Content Editor BẮT BUỘC:
+* Kiểm tra độ cụ thể: nếu câu chuyện không có thời gian/địa điểm/con số lẻ → đó là fake → xóa và viết lại.
+* Không bao giờ dùng dữ liệu AI đưa ra mà không verify nguồn – AI thường "ảo giác" số liệu.
+* Thay thế bằng case thật từ kinh nghiệm team hoặc báo cáo có nguồn kiểm chứng được.
+5.2. Khi chủ đề quá khô, không có câu chuyện cá nhân
+Ví dụ: video giải thích kỹ thuật thuần. Cách xử lý:
+* Chuyển Anecdote → Hypothetical Scenario có tên giả cụ thể: "Giả sử bạn là Minh, một nhân viên IT tại Hà Nội..."
+* Tăng tỉ trọng Named Example và Data Point để bù.
+* Opinion Stake càng phải đậm – thể hiện quan điểm team về best practice.
+5.3. Khi Channel Manager yêu cầu re-edit
+* Content Editor phải nhận feedback trong vòng 24h, edit lại trong 48h.
+* Mọi lần re-edit phải rerun toàn bộ 20 điểm checklist.
+* Script bị re-edit quá 3 lần cho 1 video → flag cho Training Team để đào tạo lại.
+5.4. Khi cần sản xuất gấp (rush job)
+KHÔNG bỏ qua SOP. Thay vào đó: giảm độ dài video (5 phút thay vì 10 phút) để rút ngắn thời gian edit. Tuyệt đối không giao nộp script AI thô để đáp ứng deadline.
+________________
+
+
+6. KPI & PHÂN QUYỀN TRÁCH NHIỆM
+6.1. KPI Content Editor
+Chỉ số
+	Mục tiêu
+	Hậu quả nếu không đạt
+	% script pass checklist ≥ 90% ngay lần đầu
+	≥ 85%
+	Dưới 70% trong 2 tháng liên tiếp → training bắt buộc
+	Thời gian edit trung bình 1 script 10 phút
+	60-90 phút
+	< 45 phút → nghi ngờ bỏ qua bước, QC review spot check
+	Số video bị flag/demonetize trong 90 ngày
+	0
+	≥ 1 → audit toàn bộ script 30 ngày gần nhất của editor đó
+	Số lần re-edit trên 1 script
+	≤ 1
+	≥ 3 lần/script thường xuyên → đánh giá năng lực
+	
+
+6.2. Phân quyền
+Vai trò
+	Trách nhiệm
+	Content Editor
+	Thực hiện đầy đủ 6 bước. Tự chấm checklist. Submit script kèm bảng điểm QC cho Channel Manager.
+	Channel Manager
+	Spot check 20% script/tuần. Review lại checklist nếu điểm ≥ 18 nhưng cảm thấy có dấu hiệu AI. Ký duyệt chuyển sang voice.
+	QC Lead
+	Audit batch – kiểm tra 10 video gần nhất của mỗi kênh, xem có pattern lặp lại đến mức YouTube có thể detect không.
+	Training Team
+	Đào tạo lại Content Editor có điểm dưới ngưỡng. Cập nhật SOP hàng quý dựa trên chính sách YouTube mới.
+	
+
+6.3. Lịch review & cập nhật SOP
+* SOP được review hàng quý (mỗi 3 tháng).
+* Khi YouTube cập nhật chính sách YPP → review khẩn cấp trong 7 ngày.
+* Khi có ≥ 3 kênh GODA MEDIA bị flag trong cùng tháng → review khẩn cấp.
+* Mọi cập nhật phải được ký duyệt bởi Head of Content + Head of Operations.
+________________
+
+
+7. TEMPLATE SUBMIT SCRIPT
+Content Editor phải điền đầy đủ template dưới đây khi submit mỗi script:
+Tên kênh
+	______________________________
+	Mã video
+	______________________________
+	Tier kênh (A/B/C)
+	______________________________
+	Độ dài dự kiến
+	______________________________
+	Angle Statement
+	(Viết đầy đủ theo công thức Bước 1)
+	AI tool sử dụng
+	(Claude / ChatGPT / Gemini / Khác)
+	Tỉ lệ human-edit
+	______% (tối thiểu 30%)
+	Số signature blocks
+	Anecdote: __ | Data: __ | Opinion: __ | Counter: __ | Named: __
+	Điểm QC tự chấm
+	___ / 20
+	Thời gian edit thực tế
+	______ phút
+	Ghi chú đặc biệt
+	(nếu có)
+	
+
+8. CAM KẾT & HIỆU LỰC
+Mọi Content Editor của GODA MEDIA ký nhận SOP này cam kết:
+* Thực hiện đầy đủ 6 bước human-edit cho mọi script có sử dụng AI.
+* Không giao nộp script AI thô dưới bất kỳ lý do deadline nào.
+* Tự chấm checklist trung thực – gian lận chấm điểm sẽ bị xử lý kỷ luật.
+* Cập nhật kiến thức về chính sách YouTube YPP định kỳ.
+
+
+SOP có hiệu lực từ ngày ban hành. Mọi phiên bản trước đó được thay thế.
+
+
+
+
+Người ban hành
+(Head of Content)
+_________________
+	Người phê duyệt
+(CEO - GODA Holding)
+_________________
+	Người cam kết thực hiện
+(Content Editor)
+_________________
+	
+
+Trang  /

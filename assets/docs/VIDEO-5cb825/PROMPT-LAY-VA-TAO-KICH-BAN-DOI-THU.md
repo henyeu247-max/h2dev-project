@@ -4,6 +4,9 @@
 > **Chủ đề:** Hướng dẫn lấy kịch bản video đối thủ và dùng prompt ChatGPT tạo kịch bản mới  
 > **Áp dụng:** Ngách triết lý khắc kỷ thị trường ngoại
 
+
+- **Các kênh đối thủ minh họa trên màn hình:** `@Psyphos_official`, `@MachiavellianMindset7`, `@Philosos`, `@DarkPsychologyCoded`, `@thetruearcanevault`
+
 ---
 
 ## 1. TỔNG QUAN NGÁCH VÀ KÊNH ĐỐI THỦ

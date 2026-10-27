@@ -1,11 +1,14 @@
 // H2DEV Project server - serves the project at http://0.0.0.0:8899/
 // Toàn bộ dự án và tài liệu nghiên cứu mở 100%, không áp đặt cơ chế kiểm duyệt/chặn dữ liệu.
 const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const zlib = require('node:zlib');
 const { initLogRotation, checkAndRotateAll } = require('./scripts/logrotate');
 const { searchFts, mutateDatabase, query, queryOne } = require('./scripts/master_dal');
+const { startAutoSyncWatcher, getSyncStatus, triggerSyncNow, ensureGraphFresh } = require('./scripts/kg_auto_sync');
+const { traceNodeInDb, searchGraphInDb, listProjectsFromDb } = require('./scripts/kg_query');
 
 // G4: Security headers chung cho moi response
 const SECURE_HEADERS = {
@@ -18,10 +21,10 @@ const SECURE_HEADERS = {
     "script-src 'self'",
     "script-src-attr 'unsafe-inline'",
     "style-src 'self' 'unsafe-inline'",
-    "img-src 'self' data: blob: https://i.ytimg.com https://yt3.ggpht.com https://*.googleusercontent.com https://*.ggpht.com https://i9.ytimg.com",
-    "media-src 'self' blob:",
+    "img-src 'self' data: blob: https://i.ytimg.com https://yt3.ggpht.com https://*.googleusercontent.com https://*.ggpht.com https://i9.ytimg.com https://api.daigiamangdep.com",
+    "media-src 'self' blob: https://*.mona-cloud.com https://video.mona-cloud.com",
     "font-src 'self'",
-    "connect-src 'self'",
+    "connect-src 'self' https://*.mona-cloud.com https://video.mona-cloud.com",
     "frame-src 'self' https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com",
     "object-src 'none'",
     "base-uri 'self'",
@@ -57,6 +60,8 @@ const MIME = {
   '.csv':'text/csv; charset=utf-8',
   '.tsv':'text/tab-separated-values; charset=utf-8',
   '.txt':'text/plain; charset=utf-8',
+  '.srt':'text/plain; charset=utf-8',
+  '.vtt':'text/vtt; charset=utf-8',
   '.md':'text/markdown; charset=utf-8',
   '.zip':'application/zip',
   '.ico':'image/x-icon',
@@ -68,7 +73,7 @@ const MIME = {
 };
 
 const COMPRESSIBLE_EXTS = new Set([
-  '.html', '.css', '.js', '.json', '.svg', '.csv', '.tsv', '.txt', '.md'
+  '.html', '.css', '.js', '.json', '.svg', '.csv', '.tsv', '.txt', '.srt', '.vtt', '.md'
 ]);
 
 // In-memory RAM cache cho file nén Gzip (khống chế tối đa 120 entries để an toàn bộ nhớ VPS)
@@ -282,6 +287,56 @@ function sendJson(req, res, status, value, isHead = false, extraHeaders = {}){
   }
 }
 
+// DGMD Mona Cloud embed proxy: cache RAM 10 phút, tự inject no-referrer để bypass hotlink CDN
+const DGMD_EMBED_CACHE = new Map();
+function fetchMonaEmbedHtml(videoLink, originUrl, maxRedirects = 5) {
+  let targetUrl = videoLink;
+  if (!targetUrl.includes('link=')) {
+    targetUrl += (targetUrl.includes('?') ? '&' : '?') + 'link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006';
+  }
+
+  function get(url, redirectsLeft) {
+    if (redirectsLeft <= 0) {
+      return Promise.reject(new Error('Quá nhiều lần redirect khi nạp video Mona Cloud'));
+    }
+    return new Promise((resolve, reject) => {
+      const client = url.startsWith('http:') ? http : https;
+      const req = client.get(url, {
+        headers: {
+          'Referer': originUrl || 'https://daigiamangdep.com/learn/study/',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8'
+        }
+      }, (res) => {
+        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+          const nextUrl = new URL(res.headers.location, url).toString();
+          get(nextUrl, redirectsLeft - 1).then(resolve).catch(reject);
+          return;
+        }
+        if (res.statusCode !== 200) {
+          reject(new Error(`Mona Cloud phản hồi mã lỗi ${res.statusCode}`));
+          return;
+        }
+        let body = '';
+        res.on('data', (d) => { body += d; });
+        res.on('end', () => resolve(body));
+      });
+      req.on('error', reject);
+    });
+  }
+
+  return get(targetUrl, maxRedirects).then((html) => {
+    // Inject <meta name="referrer" content="no-referrer"> để child requests (m3u8, .ts) không rò rỉ 127.0.0.1 ra Mona Cloud CDN
+    // Kèm style ẩn banner cảnh báo nước ngoài (null) không cần thiết
+    const injection = '\n<meta name="referrer" content="no-referrer">\n<style>div[style*="z-index: 1000"][style*="rgba(0, 0, 0, 0.3)"] { display: none !important; }</style>\n';
+    if (html.includes('<head>')) {
+      return html.replace('<head>', '<head>' + injection);
+    }
+    return injection + html;
+  });
+}
+
 const server = http.createServer(async (req,res)=>{
   if(req.method === 'OPTIONS'){
     res.writeHead(204, withSecure({
@@ -299,6 +354,95 @@ const server = http.createServer(async (req,res)=>{
     res.end(isHead ? undefined : JSON.stringify({ ok: true }));
     return;
   }
+  if (apiPath.startsWith('/api/kg/')) {
+    const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+    const kgSync = require('./scripts/kg_auto_sync');
+    const kgQuery = require('./scripts/kg_query');
+    try {
+      if (apiPath === '/api/kg/status' && (req.method === 'GET' || isHead)) {
+        if (parsedUrl.searchParams.get('check') === '1') {
+          kgSync.ensureGraphFresh();
+        }
+        sendJson(req, res, 200, kgSync.getSyncStatus(), isHead);
+        return;
+      }
+      if (apiPath === '/api/kg/stats' && (req.method === 'GET' || isHead)) {
+        sendJson(req, res, 200, kgQuery.getGraphStatsFromDb(true), isHead);
+        return;
+      }
+      if (apiPath === '/api/kg/reload' && (req.method === 'POST' || req.method === 'GET')) {
+        try {
+          delete require.cache[require.resolve('./scripts/kg_auto_sync')];
+          delete require.cache[require.resolve('./scripts/build_knowledge_vault_graph')];
+          delete require.cache[require.resolve('./scripts/kg_query')];
+          GZIP_CACHE.clear();
+        } catch (_) {}
+        const wantRestart = parsedUrl.searchParams.get('restart') === '1';
+        const remoteIp = req.socket && req.socket.remoteAddress || '';
+        const isLoopback = remoteIp === '127.0.0.1' || remoteIp === '::1' || remoteIp === '::ffff:127.0.0.1';
+        sendJson(req, res, 200, { reloaded: true, restarting: Boolean(wantRestart && isLoopback) }, false);
+        if (wantRestart && isLoopback) {
+          setTimeout(() => process.exit(0), 150);
+        }
+        return;
+      }
+      if (apiPath === '/api/kg/sync' && (req.method === 'POST' || req.method === 'GET')) {
+        const reason = (parsedUrl.searchParams.get('reason') || 'web_ui_manual_sync').trim();
+        const full = parsedUrl.searchParams.get('full') === '1';
+        const result = kgSync.triggerSyncNow(reason, full);
+        GZIP_CACHE.clear();
+        sendJson(req, res, 200, result, false);
+        return;
+      }
+      if (apiPath === '/api/kg/projects' && (req.method === 'GET' || isHead)) {
+        sendJson(req, res, 200, kgQuery.listProjectsFromDb(true), isHead);
+        return;
+      }
+      if (apiPath === '/api/kg/trace' && (req.method === 'GET' || isHead)) {
+        const q = (parsedUrl.searchParams.get('q') || '').trim();
+        if (!q) {
+          sendJson(req, res, 400, { found: false, error: 'Missing q parameter' }, isHead);
+          return;
+        }
+        const traceRes = kgQuery.traceNodeInDb(q, true);
+        sendJson(req, res, traceRes.found ? 200 : 404, traceRes, isHead);
+        return;
+      }
+      if (apiPath === '/api/kg/search' && (req.method === 'GET' || isHead)) {
+        const q = (parsedUrl.searchParams.get('q') || '').trim();
+        const type = (parsedUrl.searchParams.get('type') || '').trim();
+        const layer = (parsedUrl.searchParams.get('layer') || '').trim();
+        const track = (parsedUrl.searchParams.get('track') || '').trim();
+        const rawLim = parseInt(parsedUrl.searchParams.get('limit') || '20', 10);
+        const limit = Number.isFinite(rawLim) ? Math.min(50, Math.max(1, rawLim)) : 20;
+        sendJson(req, res, 200, kgQuery.searchGraphInDb(q, { type, layer, track, limit }, true), isHead);
+        return;
+      }
+      if (apiPath === '/api/kg/deep' && (req.method === 'GET' || isHead)) {
+        const q = (parsedUrl.searchParams.get('q') || '').trim();
+        const type = (parsedUrl.searchParams.get('type') || '').trim();
+        const layer = (parsedUrl.searchParams.get('layer') || '').trim();
+        const rawLim = parseInt(parsedUrl.searchParams.get('limit') || '10', 10);
+        const limit = Number.isFinite(rawLim) ? Math.min(25, Math.max(1, rawLim)) : 10;
+        sendJson(req, res, 200, kgQuery.deepSearchAll(q, { type, layer, limit }), isHead);
+        return;
+      }
+      if (apiPath === '/api/kg/path' && (req.method === 'GET' || isHead)) {
+        const fromQ = (parsedUrl.searchParams.get('from') || '').trim();
+        const toQ = (parsedUrl.searchParams.get('to') || '').trim();
+        if (!fromQ || !toQ) {
+          sendJson(req, res, 400, { found: false, error: 'Missing from or to parameter' }, isHead);
+          return;
+        }
+        const pathRes = kgQuery.tracePathInDb(fromQ, toQ, true);
+        sendJson(req, res, pathRes.found ? 200 : 404, pathRes, isHead);
+        return;
+      }
+    } catch (kgErr) {
+      sendJson(req, res, 500, { error: kgErr.message }, isHead);
+      return;
+    }
+  }
   if (apiPath === '/api/admin-state') {
     if (req.method === 'GET' || isHead) {
       // `writable:false` = CONG BO kha nang ghi de client KHONG thu PUT nua
@@ -308,6 +452,61 @@ const server = http.createServer(async (req,res)=>{
       return;
     }
     sendJson(req, res, 405, {error:'Admin state writes are disabled', readable:true, writable:false}, false, {'Allow': 'GET, HEAD, OPTIONS'});
+    return;
+  }
+  if (apiPath === '/api/dgmd-embed') {
+    if (req.method === 'GET' || isHead) {
+      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const sku = (parsedUrl.searchParams.get('sku') || '').trim();
+      if (!sku) {
+        res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.end(isHead ? undefined : 'Missing sku parameter');
+        return;
+      }
+      try {
+        const catPath = path.join(ROOT, 'data', 'catalog_dgmd.json');
+        if (!fs.existsSync(catPath)) {
+          res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+          res.end(isHead ? undefined : 'DGMD catalog not found');
+          return;
+        }
+        const dgmdList = JSON.parse(fs.readFileSync(catPath, 'utf8'));
+        const item = dgmdList.find(x => (x.sku || '').toLowerCase() === sku.toLowerCase());
+        if (!item || !item.file) {
+          res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+          res.end(isHead ? undefined : 'Video not found in DGMD catalog');
+          return;
+        }
+
+        const now = Date.now();
+        const cached = DGMD_EMBED_CACHE.get(item.sku);
+        if (cached && (now - cached.ts < 10 * 60 * 1000)) {
+          res.writeHead(200, {
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': 'no-cache',
+            'X-Frame-Options': 'SAMEORIGIN'
+          });
+          res.end(isHead ? undefined : cached.html);
+          return;
+        }
+
+        const html = await fetchMonaEmbedHtml(item.file, item.origin);
+        DGMD_EMBED_CACHE.set(item.sku, { html, ts: now });
+
+        res.writeHead(200, {
+          'Content-Type': 'text/html; charset=utf-8',
+          'Cache-Control': 'no-cache',
+          'X-Frame-Options': 'SAMEORIGIN'
+        });
+        res.end(isHead ? undefined : html);
+        return;
+      } catch (err) {
+        res.writeHead(502, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.end(isHead ? undefined : `Proxy error: ${err.message}`);
+        return;
+      }
+    }
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
   if (apiPath === '/api/intelligence/breakouts') {
@@ -364,31 +563,140 @@ const server = http.createServer(async (req,res)=>{
     if (req.method === 'GET' || isHead) {
       const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
       const q = (parsedUrl.searchParams.get('q') || '').trim();
-      const limit = Math.min(50, Math.max(1, parseInt(parsedUrl.searchParams.get('limit') || '20', 10)));
+      const rawLim = parseInt(parsedUrl.searchParams.get('limit') || '20', 10);
+      const limit = Number.isFinite(rawLim) ? Math.min(50, Math.max(1, rawLim)) : 20;
       try {
         const rows = searchFts(q, limit);
+        /* FIX (uifix87, siết lại ở uifix88) LỖI 2/F1 — bo sung DU LIEU DIEU HUONG cho tung entity_type
+           cua search_fts. Truoc day frontend tu doan URL tu entity_id nen SOP/TRANSCRIPT roi vao href "#"
+           (76% ket qua) va CHANNEL tro "/#kenh" (router khong doc hash). O day chi BO SUNG truong du lieu
+           that (khong doi shape cu, khong doi searchFts cua master_dal):
+             CHANNEL    + raw_id (co ho so Raw kenh) / kenh_handle (co trong data-tabs/kenh-mau.json)
+             TRANSCRIPT + parent_channel_title + parent_raw_id (video thuoc kenh nao — de mo dung kenh)
+             SOP        + doc_id (so nguyen khop documents.doc_id) + doc_index (vi tri 0-based trong
+                          data-tabs/tai-lieu-full.json, vi tab Tai lieu render tu JSON chu khong tu DB)
+           Do duoc tren TOAN BO search_fts (2251 dong, doc read-only, 2026-10-22):
+             TRANSCRIPT 1421/1421 quy duoc ve kenh cha co raw_id
+             CHANNEL    149 co raw_id + 237 co handle trong kenh-mau = 386/386 co dich that
+             SOP        300/300 co DOC_n khop documents.doc_id va JSON index */
+        try {
+          const channelRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'CHANNEL');
+          const transcriptRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'TRANSCRIPT');
+          const sopRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'SOP');
+          const nicheRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'NICHE');
+          const reupRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'REUP');
+          for (const r of nicheRows) {
+            r.niche_name = String(r.title || '').replace(/^\[[^\]]+\]\s*/, '').trim();
+          }
+          for (const r of reupRows) {
+            r.reup_name = String(r.title || '').replace(/^\[[^\]]+\]\s*/, '').trim();
+          }
+          if (channelRows.length) {
+            const ids = channelRows.map(r => String(r.entity_id));
+            const ph = ids.map(() => '?').join(',');
+            const ccs = query(`SELECT channel_id, raw_id, handle FROM competitor_channels WHERE channel_id IN (${ph})`, ids);
+            const byId = new Map(ccs.map(c => [String(c.channel_id), c]));
+            let kenhHandles = new Set();
+            try {
+              const kenhRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'kenh-mau.json'), 'utf8'));
+              kenhHandles = new Set((Array.isArray(kenhRaw) ? kenhRaw : []).map(k => String(k && k.handle || '').toLowerCase()).filter(Boolean));
+            } catch (e) { kenhHandles = new Set(); }
+            for (const r of channelRows) {
+              const c = byId.get(String(r.entity_id)) || {};
+              r.raw_id = c.raw_id || '';
+              const h = String(c.handle || '');
+              /* handle phai khop TUYET DOI (khong phai chuoi con) de khong mo nham kenh. */
+              r.kenh_handle = (h && kenhHandles.has(h.toLowerCase())) ? h : '';
+            }
+          }
+          if (transcriptRows.length) {
+            const ids = transcriptRows.map(r => String(r.entity_id));
+            const ph = ids.map(() => '?').join(',');
+            const parents = query(
+              `SELECT tv.video_id AS video_id, cc.title AS channel_title, cc.raw_id AS raw_id
+                 FROM competitor_top_videos tv
+                 JOIN competitor_channels cc ON cc.channel_id = tv.channel_id
+                WHERE tv.video_id IN (${ph})`, ids);
+            const byVid = new Map(parents.map(p => [String(p.video_id), p]));
+            for (const r of transcriptRows) {
+              const p = byVid.get(String(r.entity_id)) || {};
+              r.parent_channel_title = p.channel_title || '';
+              r.parent_raw_id = p.raw_id || '';
+            }
+          }
+          if (sopRows.length) {
+            /* DOC_n -> doc_id: khop documents.doc_id (do that 300/300). doc_index = thu tu trong
+               data-tabs/tai-lieu-full.json (tab Tai lieu render tu file nay; 300/300 trung vi tri). */
+            const docIds = sopRows
+              .map(r => Number(String(r.entity_id).replace(/^DOC_/, '')))
+              .filter(n => Number.isFinite(n) && n > 0);
+            let byDocId = new Map();
+            if (docIds.length) {
+              const ph = docIds.map(() => '?').join(',');
+              const docRows = query(`SELECT doc_id, name FROM documents WHERE doc_id IN (${ph})`, docIds);
+              byDocId = new Map(docRows.map(d => [Number(d.doc_id), d]));
+            }
+            let jsonList = null;
+            try {
+              const tlRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'tai-lieu-full.json'), 'utf8'));
+              jsonList = Array.isArray(tlRaw) ? tlRaw : null;
+            } catch (e) { jsonList = null; }
+            for (const r of sopRows) {
+              const n = Number(String(r.entity_id).replace(/^DOC_/, ''));
+              const d = byDocId.get(n);
+              r.doc_id = d ? n : 0;
+              /* Vi tri trong JSON: uu tien vi tri trung ten (doc_id n -> phan tu n-1, do that 300/300
+                 khop ten); neu lech thi tim theo ten (ten trung nhau -> lay muc dau tien, van 1 muc). */
+              let ji = -1;
+              if (jsonList && d) {
+                const cand = jsonList[n - 1];
+                if (cand && String(cand.name) === String(d.name)) ji = n - 1;
+                else ji = jsonList.findIndex(x => x && String(x.name) === String(d.name));
+              }
+              r.doc_index = ji;
+            }
+          }
+        } catch (enrichErr) {
+          /* Bo sung loi KHONG duoc lam hong ket qua tim kiem: tra rows goc + co loi rieng.
+             F3: client BAY GIO doc truong `error` nay va hien canh bao (khong con nuot loi);
+             dong nao thieu du lieu dieu huong thi client khong render nut "Mo". */
+          sendJson(req, res, 200, { query: q, total: rows.length, results: rows, error: 'enrich: ' + enrichErr.message }, isHead);
+          return;
+        }
         sendJson(req, res, 200, { query: q, total: rows.length, results: rows }, isHead);
         return;
       } catch (err) {
-        sendJson(req, res, 200, { query: q, total: 0, results: [], error: err.message }, isHead);
+        /* FIX (uifix87) LỖI 3 — truoc day tra 200 + results:[] + error: loi ha tang bi bien thanh
+           "khong co ket qua" o UI. Nay tra 503 (service khong san sang) de client phan biet. */
+        sendJson(req, res, 503, { query: q, total: 0, results: [], error: err.message }, isHead);
         return;
       }
     }
     sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
-  if (apiPath.startsWith('/live/')) {
+  if (apiPath.startsWith('/live/') || apiPath === '/api/dgmd-embed') {
     if (req.method === 'GET' || isHead) {
-      const sku = apiPath.replace('/live/', '').trim();
+      let sku = '';
+      if (apiPath.startsWith('/live/')) {
+        sku = apiPath.replace('/live/', '').trim();
+      } else {
+        try {
+          const parsedUrl = new URL(req.url, 'http://127.0.0.1:8899');
+          sku = (parsedUrl.searchParams.get('sku') || '').trim();
+        } catch (e) {}
+      }
       if (/^VIDEO-[A-Za-z0-9]+$/i.test(sku)) {
         try {
           const { getLivePlayerUrl } = require('./scripts/live_player_resolver');
-          const liveUrl = await getLivePlayerUrl(sku);
+          const liveInfo = await getLivePlayerUrl(sku);
+          const liveUrl = (typeof liveInfo === 'object' && liveInfo) ? liveInfo.url : liveInfo;
+          const ref = (typeof liveInfo === 'object' && liveInfo) ? liveInfo.referer : 'https://h2dev.vn/';
           if (liveUrl) {
             const monaRes = await fetch(liveUrl, {
               headers: {
                 'User-Agent': req.headers['user-agent'] || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131',
-                'Referer': 'https://h2dev.vn/'
+                'Referer': ref
               }
             });
             let html = await monaRes.text();
@@ -481,6 +789,20 @@ const server = http.createServer(async (req,res)=>{
         const list = Array.isArray(catalog) ? catalog : (catalog.videos || []);
         const decoded = decodeURIComponent(sku).toLowerCase();
         isValidSku = list.some(v => String(v && v.sku || '').toLowerCase() === decoded);
+        if (!isValidSku) {
+          const dgmdCatalogPath = path.join(ROOT, 'data', 'catalog_dgmd.json');
+          if (fs.existsSync(dgmdCatalogPath)) {
+            const dgmdCatalog = JSON.parse(fs.readFileSync(dgmdCatalogPath, 'utf8'));
+            isValidSku = dgmdCatalog.some(v => String(v && v.sku || '').toLowerCase() === decoded);
+          }
+        }
+        if (!isValidSku) {
+          const huanCatalogPath = path.join(ROOT, 'data', 'catalog_huan.json');
+          if (fs.existsSync(huanCatalogPath)) {
+            const huanCatalog = JSON.parse(fs.readFileSync(huanCatalogPath, 'utf8'));
+            isValidSku = huanCatalog.some(v => String(v && v.sku || '').toLowerCase() === decoded);
+          }
+        }
       } catch (e) { isValidSku = false; }
       if (!isValidSku) {
         res.writeHead(404, withSecure({ 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' }));
@@ -495,8 +817,12 @@ const server = http.createServer(async (req,res)=>{
     } else {
       urlPath = '/learn.html';
     }
-  } else if (/^\/(?:tatca|video|ngachxanh|tai-lieu|nhac|nguonreup|kenh-mau|rawkenh|chienluoc)\/?$/i.test(urlPath)) {
+  } else if (/^\/(?:tatca|video|ngachxanh|tai-lieu|nhac|nguonreup|kenh-mau|rawkenh|chienluoc|sodo)\/?$/i.test(urlPath)) {
     urlPath = '/index.html';
+  } else if (/^\/graph\/?$/i.test(urlPath)) {
+    urlPath = '/graph.html';
+  } else if (urlPath.toLowerCase() === '/favicon.ico') {
+    urlPath = '/h2dev-icon.ico';
   }
 
   let full = path.resolve(ROOT, '.'+urlPath);
@@ -548,13 +874,38 @@ const server = http.createServer(async (req,res)=>{
           let pri = 10;
           pri += Math.min(30, clean * 8);
           pri += Math.min(20, skus * 10);
-          if (n.lamDuoc && /C?/i.test(n.lamDuoc)) pri += 20;
+          /* FIX (uifix87) — truoc day: `if (n.lamDuoc && /C?/i.test(n.lamDuoc)) pri += 20;`
+             Regex /C?/ bi hong UTF-8 (ky tu "Ó" thanh "?"), "C?" = "khong bat buoc co C"
+             => LUON true => ca 34/34 ngach deu duoc +20 vo dieu kien, PRI mat y nghia.
+             Gia tri that trong data-tabs/ngach-xanh.json bat dau bang:
+               "CÓ — ..."     : lam duoc ngay            -> +20
+               "CÓ ĐK — ..."  : lam duoc CO DIEU KIEN    -> +10
+               "CÓ KỸ THUẬT ...", "KHÓ ...", "KHÔNG ...", "CHƯA ĐỦ ...", "TÁCH: ..." -> 0
+             Vi sao "CÓ ĐK" = +10 (nua muc): van san xuat duoc nhung phai giu rang buoc
+             (vd. "KHONG gia bac si", "KHONG farm quote") va chua co mau noi dung day du
+             => rui ro cao hon "CÓ" thuan. Dung escape Unicode (\u00d3 = Ó, \u0110 = Đ,
+             \u1ef8 = Ỹ) de regex khong hong lai khi encoding file doi. */
+          const lamDuocRaw = String(n.lamDuoc || '').trim();
+          const lamDuocCoDieuKien = /^C\u00d3\s*\u0110K\b/i.test(lamDuocRaw);
+          const lamDuocThuan = !lamDuocCoDieuKien && /^C\u00d3(?!\s*K\u1ef8)/i.test(lamDuocRaw);
+          if (lamDuocThuan) pri += 20;
+          else if (lamDuocCoDieuKien) pri += 10;
           if (n.mauSach && n.mauSach.length) pri += 10;
           if (ban === 0) pri += 10;
           if (n.xanh === true) pri += 10;
           pri = Math.max(0, Math.min(100, Math.round(pri)));
+          /* FIX (uifix87) — truoc day: `const comp = Number(n.canhTranh) || 50;`
+             n.canhTranh la VAN BAN do thi (vd. "bible explained 18/08: overall 75.6 · volume 89.8
+             · competition 13.3 — THẤP") => Number() = NaN => ca 34/34 ngach roi ve 50 (mac dinh
+             ma khong ai biet). Nay trich so sau chu "competition" bang DUNG logic frontend
+             assets/app/tabs/content.js#nxCompShort (/competition\s*[:=]?\s*(\d+...)/gi, lay lan
+             xuat hien CUOI cung). Khong co so => 50 + compSource='default' de con truy vet. */
+          const compText = String(n.canhTranh || '');
+          const compMatches = [...compText.matchAll(/competition\s*[:=]?\s*(\d+(?:\.\d+)?)/gi)];
+          const compNum = compMatches.length ? Number(compMatches[compMatches.length - 1][1]) : NaN;
+          const compMeasured = Number.isFinite(compNum);
+          const comp = compMeasured ? Math.max(0, Math.min(100, compNum)) : 50;
           // BOI-like: green ocean = high SAI, mid/low competition proxy
-          const comp = Number(n.canhTranh) || 50;
           const boi = Math.max(0, Math.min(100, Math.round((sai * 0.55) + (pri * 0.25) + ((100 - comp) * 0.2))));
           return {
             ngach: n.ngach,
@@ -565,6 +916,9 @@ const server = http.createServer(async (req,res)=>{
             SAI: sai,
             PRI: pri,
             BOI: boi,
+            comp: comp,
+            compSource: compMeasured ? 'measured' : 'default',
+            lamDuocTier: lamDuocThuan ? 'CO' : (lamDuocCoDieuKien ? 'CO_DK' : 'KHAC'),
             cleanSamples: clean,
             banSamples: ban,
             skus: skus,
@@ -686,6 +1040,9 @@ server.listen(PORT, HOST, ()=>{
   console.log('H2DEV Project running at http://'+HOST+':'+PORT+'/');
   console.log('Root: '+ROOT);
   checkAndRotateAll();
+  startAutoSyncWatcher(() => {
+    GZIP_CACHE.clear();
+  });
 });
 
 // Xử lý ngoại lệ an toàn, chống sập server và ghi vết lỗi

@@ -1,4 +1,4 @@
-﻿// H2DEV Project - TOKEN DOC SYNC (sync-tokens.js)
+// H2DEV Project - TOKEN DOC SYNC (sync-tokens.js)
 // Tu sinh TAI LIEU TOKEN tu CSS THAT — kieu sync-counts. Chay tay la SAI.
 //
 // VI SAO CO FILE NAY (bai hoc SCAR-024 — tai pham 3 lan):

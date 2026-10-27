@@ -2472,7 +2472,7 @@
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: EMPTY (trước đó: LIVE)",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS + yt-dlp → EMPTY (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
     "title": "Khám Phá Trung Hoa",
-    "status": "LIVE",
+    "status": "DEAD_EMPTY",
     "deadKind": "empty",
     "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video)."
   },
@@ -2773,7 +2773,7 @@
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: EMPTY (trước đó: LIVE)",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS + yt-dlp → EMPTY (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
     "title": "성실한 경제학",
-    "status": "LIVE",
+    "status": "DEAD_EMPTY",
     "deadKind": "empty",
     "deadNote": "Kênh rỗng - đo thực tế 2026-10-14: kênh tồn tại nhưng 0 video công khai (RSS 0, yt-dlp không có video)."
   },
@@ -4298,10 +4298,11 @@
     "markets": [
       "Đa quốc gia"
     ],
-    "dead": false,
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
+    "dead": true,
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-24: DEAD (HTTP 404)",
     "ngay_do": "2026-10-14",
-    "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)"
+    "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
+    "deadNote": "Kênh đã dừng hoặc bị YouTube gỡ (HTTP 404 kiểm định 2026-10-24)"
   },
   {
     "handle": "@Haythauhieuchuyendoi",
@@ -5881,9 +5882,10 @@
       "🇰🇷 Hàn"
     ],
     "ngay_do": "2026-10-14",
-    "dead": false,
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
-    "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)"
+    "dead": true,
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-24: DEAD (HTTP 404)",
+    "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
+    "deadNote": "Kênh đã dừng hoặc bị YouTube gỡ (HTTP 404 kiểm định 2026-10-24)"
   },
   {
     "handle": "@인생의_고수",
@@ -5913,9 +5915,10 @@
       "🇰🇷 Hàn"
     ],
     "ngay_do": "2026-10-14",
-    "dead": false,
-    "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
-    "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)"
+    "dead": true,
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-24: DEAD (HTTP 404)",
+    "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
+    "deadNote": "Kênh đã dừng hoặc bị YouTube gỡ (HTTP 404 kiểm định 2026-10-24)"
   },
   {
     "handle": "@인생반전이야기",
@@ -6110,5 +6113,101 @@
     "dead": false,
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)"
+  },
+  {
+    "handle": "@thewhatiftales",
+    "count": 1,
+    "url": "https://www.youtube.com/@thewhatiftales",
+    "niche": "Hoạt hình 2D What-If US (Ifverse)",
+    "niches": [
+      "Hoạt hình / What-If"
+    ],
+    "markets": [
+      "🇺🇸 US"
+    ],
+    "ngay_do": "2026-10-26",
+    "dead": false,
+    "videos": [
+      "VIDEO-0c72ab"
+    ],
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-26: LIVE (HTTP 200)",
+    "nguon_do": "Đo thực tế 2026-10-26: AGV 3.8 Multimodal OCR từ VIDEO-0c72ab + HTTP 200 → LIVE"
+  },
+  {
+    "handle": "@IFOLOGYFILMS",
+    "count": 2,
+    "url": "https://www.youtube.com/@IFOLOGYFILMS",
+    "niche": "Hoạt hình 2D What-If US (IFOLOGY)",
+    "niches": [
+      "Hoạt hình / What-If"
+    ],
+    "markets": [
+      "🇺🇸 US"
+    ],
+    "ngay_do": "2026-10-26",
+    "dead": false,
+    "videos": [
+      "VIDEO-0c72ab",
+      "VIDEO-e0e9cd"
+    ],
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-26: LIVE (HTTP 200)",
+    "nguon_do": "Đo thực tế 2026-10-26: AGV 3.8 Multimodal OCR từ VIDEO-0c72ab & VIDEO-e0e9cd + yt-dlp + HTTP 200 → LIVE"
+  },
+  {
+    "handle": "@chuyenhaytuoigia",
+    "count": 1,
+    "url": "https://www.youtube.com/@chuyenhaytuoigia",
+    "niche": "Drama gia đình & Chuyện hay tuổi già",
+    "niches": [
+      "Đời sống / Gia đình"
+    ],
+    "markets": [
+      "🇻🇳 Việt"
+    ],
+    "ngay_do": "2026-10-26",
+    "dead": false,
+    "videos": [
+      "VIDEO-d56768"
+    ],
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-26: LIVE (HTTP 200)",
+    "nguon_do": "Đo thực tế 2026-10-26: AGV 3.8 Multimodal OCR từ VIDEO-d56768 + HTTP 200 → LIVE"
+  },
+  {
+    "handle": "@PodcastGanThan",
+    "count": 1,
+    "url": "https://www.youtube.com/@PodcastGanThan",
+    "niche": "Sức khỏe Gan Thận người cao tuổi Việt",
+    "niches": [
+      "Sức khỏe / Dưỡng sinh"
+    ],
+    "markets": [
+      "🇻🇳 Việt"
+    ],
+    "ngay_do": "2026-10-26",
+    "dead": false,
+    "videos": [
+      "VIDEO-d56768"
+    ],
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-26: LIVE (HTTP 200)",
+    "nguon_do": "Đo thực tế 2026-10-26: AGV 3.8 Multimodal OCR từ VIDEO-d56768 + yt-dlp + HTTP 200 → LIVE"
+  },
+  {
+    "handle": "@bsminhtam60",
+    "count": 1,
+    "url": "https://www.youtube.com/@bsminhtam60",
+    "niche": "Sức khỏe Lão khoa BS. Minh Tâm 60+",
+    "niches": [
+      "Sức khỏe / Y học"
+    ],
+    "markets": [
+      "🇻🇳 Việt"
+    ],
+    "ngay_do": "2026-10-26",
+    "dead": false,
+    "videos": [
+      "VIDEO-d56768"
+    ],
+    "ngay_do_check": "Đối soát đa nguồn 2026-10-26: LIVE (HTTP 200)",
+    "nguon_do": "Đo thực tế 2026-10-26: AGV 3.8 Multimodal OCR từ VIDEO-d56768 + yt-dlp + HTTP 200 → LIVE"
   }
 ]

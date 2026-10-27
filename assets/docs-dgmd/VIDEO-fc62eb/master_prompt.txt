@@ -1,0 +1,24 @@
+# Công Thức Đúc Master Prompt Nhất Quán Nhân Vật AI
+
+Tài liệu trích xuất từ bài giảng thực chiến VIDEO-fc62eb.
+
+## 1. NGUYÊN TẮC CỐT LÕI
+Master Prompt là câu lệnh gốc cố định 5 thành phần nhận diện của nhân vật:
+1. Nhân khẩu học: Tuổi tác, giới tính, chủng tộc, quốc tịch.
+2. Khuôn mặt & Tóc: Màu tóc, kiểu tóc, màu mắt, đặc điểm nhận dạng đặc trưng.
+3. Trang phục cố định: Màu sắc áo, quần, phụ kiện (kính, mũ, khăn).
+4. Phong cách nghệ thuật (Art Style): 3D Pixar, 2D Anime Ghibli, hay Cinematic Photorealism.
+5. Ánh sáng & Bối cảnh: Giờ vàng (Golden hour), ánh sáng studio sạch, tỷ lệ khung hình.
+
+---
+
+## 2. CÂU LỆNH TẠO MASTER PROMPT TRÊN CHATGPT
+Tôi muốn tạo một series video phim hoạt hình có nhân vật chính xuất hiện xuyên suốt 100 phân cảnh mà không bị đổi mặt hay đổi trang phục.
+Hãy phân tích bức ảnh nhân vật này và viết cho tôi một bộ Master Prompt tiếng Anh chuẩn với các thuộc tính cố định (Fixed Attributes) và để sẵn các thẻ biến số hành động [ACTION] và môi trường [ENVIRONMENT] để tôi thay thế cho từng cảnh.
+
+---
+
+## 3. KHUNG MASTER PROMPT TIẾNG ANH CHUẨN
+A high-quality 3D animated character, [TUỔI] year old [GIỚI TÍNH], [MÀU DA], [MÀU MẮT], [KIỂU TÓC VÀ MÀU TÓC], wearing [TRANG PHỤC CỐ ĐỊNH], [BIỂU CẢM KHUÔN MẶT].
+Currently [HÀNH ĐỘNG CỦA CẢNH - ACTION], located in [BỐI CẢNH - ENVIRONMENT].
+Cinematic lighting, warm color palette, Unreal Engine 5 render, highly detailed, Pixar and Disney animation style, 8k resolution, shot on 35mm lens, 16:9 aspect ratio --ar 16:9 --v 6.0

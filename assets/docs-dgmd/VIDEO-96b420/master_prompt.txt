@@ -1,0 +1,60 @@
+# Kịch Bản & Master Prompt: Hội Thoại Tiếng Anh Song Ngữ (DGMD)
+
+Tài liệu được trích xuất trực tiếp từ bài giảng thực chiến VIDEO-96b420.
+
+## 1. CÔNG CỤ YÊU CẦU
+- ChatGPT: Soạn kịch bản hội thoại song ngữ & tạo hình ảnh nhân vật, bối cảnh.
+- Picsart: Thiết kế khung bong bóng thoại (Speech Bubble) độc quyền chống đụng hàng.
+- CapCut PC: Tách nền tự động (Auto Cutout), tạo rung máy (Camera Shake), lồng giọng Text-to-Speech tiếng Anh nam/nữ.
+
+---
+
+## 2. PROMPT CHATGPT: SOẠN KỊCH BẢN HỘI THOẠI SONG NGỮ
+Hãy sáng tạo cho tôi một cuộc trò chuyện bằng tiếng Anh giữa một nam thanh niên và một cô gái (hoặc ông cụ và bà cụ / bố mẹ và con cái).
+Chủ đề: Một ngày mới bắt đầu tại nơi làm việc / công sở.
+Yêu cầu định dạng:
+- Đánh dấu rõ ràng lượt nói của Nam và Nữ.
+- Cố định cuộc hội thoại bằng tiếng Anh kèm bản dịch tiếng Việt song song ở mỗi câu thoại (chia 2 cột hoặc dịch ngay bên dưới).
+- Câu từ tự nhiên, phù hợp trình độ giao tiếp thường ngày (A2 - B1).
+- Độ dài khoảng 8-12 câu thoại đối đáp qua lại.
+
+---
+
+## 3. PROMPT CHATGPT / DALL-E: TẠO NHÂN VẬT NAM
+Hãy tạo cho tôi một hình ảnh nhân vật nam khoảng 20-25 tuổi, mặc bộ vest công sở chỉnh tề, phong cách minh họa truyện tranh hoạt hình (cartoon illustration).
+- Góc nhìn: Trung cảnh (medium shot, nhìn từ đùi trở lên).
+- Tư thế: Nhân vật đang quay người và hướng ánh nhìn sang phía BÊN TRÁI màn hình, nét mặt tươi cười thân thiện.
+- Nền: Nền trắng đơn sắc để dễ tách nền.
+- Tỷ lệ khung hình: 9:16 hoặc 1:1.
+
+---
+
+## 4. PROMPT CHATGPT / DALL-E: TẠO NHÂN VẬT NỮ
+Hãy tạo cho tôi một hình ảnh nhân vật nữ khoảng 20-25 tuổi, mặc trang phục công sở thanh lịch, cùng phong cách minh họa hoạt hình với nhân vật nam.
+- Góc nhìn: Trung cảnh (medium shot, nhìn từ đùi trở lên).
+- Tư thế: Nhân vật đang quay người và hướng ánh nhìn sang phía BÊN PHẢI màn hình (đối diện nhân vật nam), nét mặt rạng rỡ.
+- Nền: Nền trắng đơn sắc để dễ tách nền.
+- Tỷ lệ khung hình: 9:16 hoặc 1:1.
+
+---
+
+## 5. PROMPT CHATGPT: TẠO HÌNH NỀN BỐI CẢNH 16:9
+Hãy tạo cho tôi một hình nền bối cảnh văn phòng làm việc hiện đại, có cửa kính nhìn ra thành phố buổi sáng, phong cách minh họa hoạt hình đồng nhất với nhân vật.
+- Góc nhìn: Phối cảnh ngang, không có người trong ảnh.
+- Tỷ lệ khung hình: 16:9 (ngang Full HD).
+
+---
+
+## 6. QUY TRÌNH HẬU KỲ TRÊN CAPCUT PC & PICSART
+1. Picsart:
+   - Mở khung vẽ trong suốt, vẽ 2 mẫu khung bong bóng thoại hình vuông bo góc màu trắng:
+     + 1 khung có đuôi nhọn trỏ sang trái (cho nam).
+     + 1 khung có đuôi nhọn trỏ sang phải (cho nữ).
+   - Xuất file PNG trong suốt.
+2. CapCut PC:
+   - Thêm ảnh nền 16:9 vào Track 1.
+   - Thêm ảnh nhân vật Nam bên trái, Nữ bên phải. Bật tính năng 'Xóa tự động' (Auto Cutout) để tách nền sạch sẽ.
+   - Hiệu ứng: Thêm hiệu ứng 'Máy ảnh rung' (Camera Shake) mức độ nhẹ kéo dài toàn bộ clip để nhân vật cử động tự nhiên, tránh bị thuật toán YouTube quét lỗi video tĩnh (reused/repetitive content).
+   - Thêm bong bóng thoại từ Picsart vào từng phân đoạn thoại.
+   - Sử dụng Text-to-Speech của CapCut: chọn 1 voice nam tiếng Anh và 1 voice nữ tiếng Anh cố định cho cả series.
+   - Căn timeline so le: Khi Nam nói thì bong bóng thoại + text nam hiện; khi Nữ nói thì bong bóng thoại + text nữ hiện.

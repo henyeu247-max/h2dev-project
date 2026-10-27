@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Julius Caesar đang chèo thuyền ngược dòng sông Nile vào năm 46 trước Công nguyên. Ông là một trong những người có học thức cao nhất trong thế giới La Mã. Ông đã nghiên cứu Hy Lạp, Ba Tư, Carthage. Anh ấy biết các nền văn minh. Và khi thuyền của anh ấy đi qua các kim tự tháp ở Giza, anh ấy đang quan sát các công trình kiến ​​trúc"
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Julius Caesar đang chèo thuyền ngược dòng sông Nile vào năm 46 trước Công nguyên. Ông là một trong những người có học thức cao nhất trong thế giới La Mã. Ông đã nghiên cứu Hy Lạp, Ba Tư, Carthage. Anh ấy biết các nền văn minh. Và khi thuyền của anh ấy đi qua các kim tự tháp ở Giza, anh ấy đang quan sát các công trình kiến trúc"
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Julius Caesar đang chèo thuyền ngược dòng sông Nile vào năm 46 trước Công nguyên. Ông là một trong những người có học thức cao nhất trong thế giới La Mã. Ông đã nghiên cứu Hy Lạp, Ba Tư, Carthage. Anh ấy biết các nền văn minh. Và khi thuyền của anh ấy đi qua các kim tự tháp ở Giza, anh ấy đang quan sát các công trình kiến ​​trúc
+Julius Caesar đang chèo thuyền ngược dòng sông Nile vào năm 46 trước Công nguyên. Ông là một trong những người có học thức cao nhất trong thế giới La Mã. Ông đã nghiên cứu Hy Lạp, Ba Tư, Carthage. Anh ấy biết các nền văn minh. Và khi thuyền của anh ấy đi qua các kim tự tháp ở Giza, anh ấy đang quan sát các công trình kiến trúc
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 đã 1.500 năm tuổi rồi. Những kim tự tháp đó đối với Caesar còn cổ xưa hơn so với Caesar đối với chúng ta. Vào thời điểm Caesar nhìn thấy họ, Ai Cập đã sụp đổ hai lần, bị chiếm đóng những người cai trị nước ngoài, đã tự xây dựng lại từ con số không, và hiện đang nằm trên người cai trị cuối cùng. Một phụ nữ 23 tuổi tên là Cleopatra. Ai Cập đã không tồn tại trong nhiều thế kỷ. Nó tồn tại trong 3.000 năm, dài hơn khoảng thời gian giữa sự sụp đổ của Rome và ngày hôm nay. Đến cuối video này, bạn sẽ hiểu điều đó có thể xảy ra như thế nào. Không phải danh sách các pharaoh, không phải chuỗi ngày tháng. logic thực tế về cách một nền văn minh tồn tại qua ba thiên niên kỷ và nó trông như thế nào giống như khi nó cuối cùng đã hết. Những kim tự tháp đó đã có từ xa xưa khi Chúa Giêsu ra đời. Ai Cập tồn tại vì một điều. Lũ sông Nile hàng năm theo lịch trình có thể dự đoán được. Nó lắng đọng một lớp phù sa mỏng trên một dải đất hẹp, sau đó rút lui. Đất ở hai bên dải đất đó là sa mạc. Không có lũ lụt thì không có thức ăn. Không có thức ăn thì không có thành phố. Đây không phải là một chi tiết về địa lý của Ai Cập. Đó là toàn bộ lời giải thích tại sao nền văn minh lại có thể tồn tại ở đây. Sông Nile ...

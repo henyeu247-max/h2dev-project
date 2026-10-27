@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Nếu tôi không làm đồ ăn, ngay lập tức mọi người hỏi tôi phải làm gì. Không ai nói gì vào ngày tôi làm điều đó. Bạn có ý kiến ​​gì không? Yoko, 69 tuổi, đã làm việc này hàng ngày trong suốt 45 năm qua. Năm đặc điểm được tìm thấy ở những người đã thực sự gặp khó khăn."
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Nếu tôi không làm đồ ăn, ngay lập tức mọi người hỏi tôi phải làm gì. Không ai nói gì vào ngày tôi làm điều đó. Bạn có ý kiến gì không? Yoko, 69 tuổi, đã làm việc này hàng ngày trong suốt 45 năm qua. Năm đặc điểm được tìm thấy ở những người đã thực sự gặp khó khăn."
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Nếu tôi không làm đồ ăn, ngay lập tức mọi người hỏi tôi phải làm gì. Không ai nói gì vào ngày tôi làm điều đó. Bạn có ý kiến ​​gì không? Yoko, 69 tuổi, đã làm việc này hàng ngày trong suốt 45 năm qua. Năm đặc điểm được tìm thấy ở những người đã thực sự gặp khó khăn.
+Nếu tôi không làm đồ ăn, ngay lập tức mọi người hỏi tôi phải làm gì. Không ai nói gì vào ngày tôi làm điều đó. Bạn có ý kiến gì không? Yoko, 69 tuổi, đã làm việc này hàng ngày trong suốt 45 năm qua. Năm đặc điểm được tìm thấy ở những người đã thực sự gặp khó khăn.
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 Đứa trẻ nghĩ tất cả những điều này là bình thường. [Âm nhạc] Tôi đoán là tôi luôn muốn ai đó nói với tôi rằng tôi đã làm rất tốt. Tôi phải mất 45 năm mới nói được những lời này. Câu chuyện quay trở lại một buổi sáng cách đây ba tháng. Bố ơi, hôm nay là ngày nằm viện phải không? Tôi sẽ lo việc đó. Tôi đã thêm nó vào đặc quyền kiểm tra y tế của mình. Tôi hiểu rồi. Vậy thì đừng quên sống ở đó. Yoko là kiểu người luôn hành động trước khi được yêu cầu làm việc gì đó. Chồng tôi dựa vào nó nhiều đến mức anh ấy thậm chí không nhận ra mình đang dựa vào nó. Không một người nào nói lời cảm ơn tới Yoko ngày hôm đó [Âm nhạc]. Yoko năm nay 69 tuổi. Tôi sống với Goro từ . Tôi đã ở trong bếp của ngôi nhà này được 45 năm. Ngày hôm đó, con gái Mari của tôi xuất hiện cùng với đứa cháu [Âm nhạc] của nó. Bố cậu kể cho tôi biết lưng dưới của ông đau như thế nào phải không? À, giờ thì ổn rồi. Hồi đó tôi đã làm việc chăm chỉ. Sự vô lý của tuổi trẻ tôi bây giờ đang bắt đầu lộ rõ. Cha của bạn chắc chắn đã làm việc rất chăm chỉ. Mọi người ơi, chúng ta có trà đây. Bởi vì có một cảm giác quan trọng. Tôi sẽ ăn nó. Vậy thì, Bố ơi, Như tôi đã đề cập trước đó, trà [âm nhạc] mà Yoko phục vụ là chuyện đương nhiên. N...

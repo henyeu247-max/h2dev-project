@@ -30,8 +30,8 @@
 
 ## Current live baseline (đo lại 2026-10-14; nguồn: `data/counts-manifest.json`, chạy `node scripts/sync-counts.js --check`)
 
-- 144 learning records (140 video + 4 Zoom; 27 free · 117 pro) · 300 tài liệu · 256 kênh (187 live · 69 dead: 59 DIE 404 + 10 rỗng; đo thực tế 2026-10-14) · 34 ngách (10 `xanh:true`) · 60 kịch bản · 27 nguồn reup.
-- Media: 144/144 file có trên đĩa, 0 file 0 byte · 23.95 GB (22.30 GiB) · `docs/` 150 thư mục · `assets/thumbs/` 144 SKU (mỗi SKU có 1 PNG chuẩn; còn thêm 140 bản webp/jpeg/jpg đang được `data/modules.json` dùng cho tab Lộ trình, không phải bản thừa).
+- 148 learning records (144 video + 4 Zoom; 27 free · 121 pro) · 300 tài liệu · 261 kênh (189 live · 72 dead: 59 DIE 404 + 10 rỗng + 3 dead khác; đo thực tế 2026-10-14) · 34 ngách (10 `xanh:true`) · 60 kịch bản · 27 nguồn reup.
+- Media: 333/333 file có trên đĩa (148 H2DEV + 140 Huân + 45 DGMD), 0 file 0 byte · 89.26 GB (83.13 GiB) · `docs/` 339 thư mục · `assets/thumbs/` 148 SKU H2DEV (+185 ảnh nhánh Huân & DGMD).
 - Raw channel: 156 record canonical (149 kênh unique) phân rã thành **12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm)**.
 - **Hạ tầng Kỹ Năng Tác Chiến `h2dev-*` — nay nằm ở kho skill chung `~/.agents/source/skills/` (thư mục `D:\YTB\.agents\skills\` không còn, đo 2026-10-14); danh sách 13 kỹ năng gốc:**
   1. `h2dev-everyday-history` (Lịch sử đồ vật thường ngày - Ngách Xanh #1 SSoT)

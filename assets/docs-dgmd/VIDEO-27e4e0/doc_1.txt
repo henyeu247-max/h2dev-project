@@ -1,0 +1,130 @@
+Bạn hãy đóng vai là một chuyên gia code tool, chuyên gia UI/UX, chuyên gia automation và chuyên gia xây dựng công cụ tạo ảnh AI.
+Hãy tạo cho tôi một tool tự động tạo ảnh AI có tên:
+“ĐẠI GIA MANG DÉP”
+Mục tiêu của tool:
+Tạo một công cụ có giao diện đẹp, hiện đại, bắt mắt, dễ dùng, tốc độ nhanh, dùng để tự động tạo ảnh hàng loạt từ danh sách prompt, có thể thêm nhiều hình ảnh tham chiếu, tự động ghi nhớ ảnh tham chiếu, tự động gửi ảnh tham chiếu nhân vật vào từng prompt nếu có, tự động tải ảnh sau khi tạo xong về thư mục người dùng đã chọn.
+YÊU CẦU GIAO DIỆN:
+Thiết kế giao diện hiện đại, chuyên nghiệp, màu sắc nổi bật, dễ nhìn, phù hợp với một tool AI cao cấp.
+Tên tool hiển thị lớn ở đầu trang:
+“ĐẠI GIA MANG DÉP”
+Giao diện gồm các khu vực chính:
+1. Khu vực thêm hình ảnh tham chiếu
+* Có nút “Thêm hình ảnh tham chiếu”
+* Cho phép thêm nhiều hình ảnh cùng lúc
+* Có thể kéo thả ảnh vào tool
+* Mỗi ảnh tham chiếu sau khi thêm sẽ hiển thị thumbnail nhỏ
+* Cho phép xóa từng ảnh tham chiếu
+* Cho phép đánh dấu ảnh nào là “ảnh nhân vật”
+* Tool phải tự động ghi nhớ các ảnh tham chiếu đã thêm
+* Nếu có ảnh nhân vật tham chiếu, tool tự động gửi ảnh nhân vật đó kèm theo từng prompt khi tạo ảnh
+2. Khu vực nhập danh sách prompt
+* Có một ô nhập văn bản lớn nhiều dòng
+* Tôi có thể dán một danh sách rất nhiều prompt vào
+* Mỗi dòng là một prompt riêng biệt
+* Tool tự động tách từng dòng thành từng prompt
+* Bỏ qua dòng trống
+* Có đánh số thứ tự prompt
+* Có trạng thái: chưa tạo, đang tạo, đã tạo, lỗi
+3. Khu vực chọn kích thước ảnh
+Có menu chọn tỷ lệ ảnh gồm:
+   * 16:9
+   * 4:3
+   * 1:1
+   * 3:4
+   * 9:16
+   4. Khu vực chọn số ảnh cho mỗi prompt
+Có menu chọn:
+      * 1 ảnh / prompt
+      * 2 ảnh / prompt
+      * 3 ảnh / prompt
+      * 4 ảnh / prompt
+      5. Khu vực chạy tự động
+      * Có nút “Bắt đầu tạo ảnh”
+      * Có nút “Tạm dừng”
+      * Có nút “Tiếp tục”
+      * Có nút “Dừng toàn bộ”
+      * Tool sẽ tự động lấy từng prompt trong danh sách để tạo ảnh
+      * Mỗi lần chạy xử lý 5 prompt cùng lúc
+      * Khi 5 prompt đầu xong thì tự động chạy tiếp 5 prompt tiếp theo
+      * Tool chạy liên tục cho đến khi hết danh sách prompt
+      * Ưu tiên tốc độ tạo ảnh nhanh, ổn định, không bị treo
+      6. Khu vực chọn thư mục tải ảnh
+      * Có nút “Chọn thư mục tải về”
+      * Người dùng có thể chọn bất kỳ thư mục nào trên máy
+      * Khi ảnh được tạo xong, tool tự động tải ảnh đó về thư mục đã chọn
+      * Không cần bấm tải thủ công từng ảnh
+      * Mỗi ảnh tải về phải được đặt tên rõ ràng theo số thứ tự prompt
+Ví dụ:
+prompt_001_image_01.png
+prompt_001_image_02.png
+prompt_002_image_01.png
+         7. Tính năng ghi nhớ ảnh đã tải
+         * Tool phải tự động ghi nhớ ảnh nào đã tạo
+         * Tool phải tự động đánh dấu ảnh nào đã tải về thành công
+         * Nếu ảnh đã tải rồi thì hiển thị trạng thái “Đã tải”
+         * Nếu lỗi tải thì hiển thị “Lỗi tải”
+         * Có thể tải lại ảnh bị lỗi
+         * Có thể tránh tải trùng ảnh
+         8. Khu vực hiển thị kết quả
+         * Hiển thị ảnh đã tạo theo từng prompt
+         * Mỗi prompt có nhóm ảnh riêng
+         * Có preview ảnh
+         * Có trạng thái tạo ảnh
+         * Có trạng thái tải về
+         * Có nút tải lại từng ảnh
+         * Có nút mở thư mục chứa ảnh
+YÊU CẦU LOGIC HOẠT ĐỘNG:
+Khi tôi dán danh sách prompt vào:
+         * Tool tự động đọc từng dòng
+         * Mỗi dòng là một prompt riêng
+         * Tool tạo hàng đợi prompt
+         * Tool chạy 5 prompt cùng lúc
+         * Mỗi prompt tạo theo số lượng ảnh đã chọn
+         * Nếu chọn 4 ảnh/prompt thì mỗi prompt tạo 4 ảnh
+         * Sau khi ảnh tạo xong, tool tự động tải về thư mục đã chọn
+         * Tool đánh dấu ảnh đã tải
+         * Tool tiếp tục chạy cho đến khi hết danh sách
+YÊU CẦU VỀ ẢNH THAM CHIẾU:
+         * Tool cho phép thêm nhiều ảnh tham chiếu
+         * Ảnh tham chiếu có thể là nhân vật, sản phẩm, bối cảnh, phong cách
+         * Nếu ảnh được đánh dấu là “ảnh nhân vật”, tool phải tự động gửi ảnh đó vào mọi prompt để giữ nhân vật nhất quán
+         * Nếu có nhiều ảnh nhân vật, tool gửi tất cả ảnh nhân vật vào prompt
+         * Tool ghi nhớ ảnh tham chiếu trong phiên làm việc
+         * Có thể bật/tắt sử dụng ảnh tham chiếu
+YÊU CẦU VỀ GIAO DIỆN ĐẸP:
+Thiết kế giao diện theo phong cách:
+         * AI dashboard hiện đại
+         * Màu nền tối sang trọng
+         * Nút bấm nổi bật
+         * Bo góc mềm
+         * Có hiệu ứng hover
+         * Có thanh tiến trình tổng
+         * Có tiến trình từng prompt
+         * Có icon trực quan
+         * Bố cục rõ ràng, dễ thao tác
+         * Tối ưu dùng trên máy tính
+YÊU CẦU TÍNH NĂNG BỔ SUNG:
+         * Có bộ đếm tổng số prompt
+         * Có bộ đếm số prompt đã hoàn thành
+         * Có bộ đếm số ảnh đã tạo
+         * Có bộ đếm số ảnh đã tải về
+         * Có log hoạt động
+         * Có thông báo khi hoàn thành toàn bộ
+         * Có thông báo khi gặp lỗi
+         * Có cơ chế thử lại tự động nếu tạo ảnh lỗi
+         * Có thể đặt số lần thử lại, mặc định 3 lần
+         * Không làm mất danh sách prompt khi lỗi
+         * Có thể tiếp tục từ prompt đang dở
+YÊU CẦU ĐẦU RA:
+Hãy tạo cho tôi một tool hoàn chỉnh có thể chạy được, giao diện đẹp, code sạch, dễ mở rộng, có đầy đủ các chức năng trên.
+Ưu tiên:
+         * Tốc độ nhanh
+         * Tự động hóa tối đa
+         * Giao diện đẹp
+         * Dễ dùng
+         * Tạo ảnh hàng loạt ổn định
+         * Tự động tải ảnh về thư mục đã chọn
+         * Ghi nhớ và đánh dấu ảnh đã tải
+Tên tool bắt buộc:
+“ĐẠI GIA MANG DÉP”
+Hãy xây dựng tool này như một sản phẩm chuyên nghiệp.

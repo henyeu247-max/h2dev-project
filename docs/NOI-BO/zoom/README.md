@@ -3,7 +3,7 @@
 > **Nguồn:** 4 buổi Zoom thực chiến H2DEV (11–12/09/2026) · **Tổng thời lượng:** 4h 06m
 > **Người chia sẻ:** 7 năm kinh nghiệm YouTube, từng đạt 200–500 triệu/tháng
 
-Đây là **tầng kiến thức nền tảng** bổ sung cho kho 140 video bài giảng PRO — dành cho người mới bắt đầu xây kênh YouTube Faceless/AI theo hệ thống.
+Đây là **tầng kiến thức nền tảng** bổ sung cho kho 144 video bài giảng PRO — dành cho người mới bắt đầu xây kênh YouTube Faceless/AI theo hệ thống.
 
 ---
 
@@ -11,7 +11,7 @@
 
 | # | Tài liệu | Nội dung chính | Video |
 |:--|:---|:---|:---|
-| 00 | [Quy trình xây kênh A–Z (đề cương 11 phần)](./QUY-TRINH-XAY-KENH-A-Z.md) | Đề cương tổng quát toàn bộ khóa | — |
+| 00 | [Quy trình xây kênh A–Z (đề cương 11 phần)](./QUY-TRINH-XAY-KENH-A-Z.md) · [Bản gốc TXT](../../ZOOM-00-Quy-trinh-xay-kenh/README.txt) | Đề cương tổng quát toàn bộ khóa | — |
 | 01 | [Nền tảng & Môi trường](./ZOOM-01-Nen-tang-moi-truong.md) | Proxy, Gmail, tạo kênh, ngâm kênh | [53:01](../../../video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm) |
 | 02 | [Chiến lược kênh & Sản xuất](./ZOOM-02-Chien-luoc-kenh-san-xuat.md) | Tách kênh, nhân bản, sản xuất hàng loạt, câu lệnh hình ảnh | [81:33](../../../video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm) |
 | 03 | [Quy trình Tool & Tối ưu](./ZOOM-03-Quy-trinh-tool-toi-uu.md) | Tool Vio3, tăng AVD, SEO, seeding, quảng cáo | [74:21](../../../video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm) |

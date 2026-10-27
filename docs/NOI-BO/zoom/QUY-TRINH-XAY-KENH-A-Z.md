@@ -2,7 +2,7 @@
 
 > **Nguồn:** Buổi Zoom thực chiến H2DEV — "Show 2 kênh YouTube đang kiếm tiền bằng Tool"
 > **Ngày ghi:** 2026-09-11
-> **Định dạng:** Đề cương chuẩn hóa từ file gốc `Quy trình xây kênh .txt`
+> **Định dạng:** Đề cương chuẩn hóa từ file gốc [`docs/ZOOM-00-Quy-trinh-xay-kenh/README.txt`](../../ZOOM-00-Quy-trinh-xay-kenh/README.txt) (`Quy trình xây kênh .txt`)
 > **Đối tượng:** Người mới bắt đầu xây kênh YouTube Faceless / AI
 
 ---

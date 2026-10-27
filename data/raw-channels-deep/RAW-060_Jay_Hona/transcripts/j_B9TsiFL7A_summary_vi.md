@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Nam Mỹ là một trong những nơi nguy hiểm nhất trên Trái đất từ ​​những con ếch nhỏ lớn hơn đầu ngón tay, đủ độc để hạ gục cả đàn voi đang rình mồi bên dưới làn nước có khả năng lột da thịt trong vài phút là không bao giờ có nguy hiểm xa xôi bị mắc kẹt ở đây mà không có nền văn minh gần như đảm bảo một số phận nghiệt ngã cho bất kỳ du khách xui xẻo nhưng nếu bạn cần thêm bằng chứng rằng vùng đất này là tốt nhất còn lại"
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Nam Mỹ là một trong những nơi nguy hiểm nhất trên Trái đất từ những con ếch nhỏ lớn hơn đầu ngón tay, đủ độc để hạ gục cả đàn voi đang rình mồi bên dưới làn nước có khả năng lột da thịt trong vài phút là không bao giờ có nguy hiểm xa xôi bị mắc kẹt ở đây mà không có nền văn minh gần như đảm bảo một số phận nghiệt ngã cho bất kỳ du khách xui xẻo nhưng nếu bạn cần thêm bằng chứng rằng vùng đất này là tốt nhất còn lại"
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Nam Mỹ là một trong những nơi nguy hiểm nhất trên Trái đất từ ​​những con ếch nhỏ lớn hơn đầu ngón tay, đủ độc để hạ gục cả đàn voi đang rình mồi bên dưới làn nước có khả năng lột da thịt trong vài phút là không bao giờ có nguy hiểm xa xôi bị mắc kẹt ở đây mà không có nền văn minh gần như đảm bảo một số phận nghiệt ngã cho bất kỳ du khách xui xẻo nhưng nếu bạn cần thêm bằng chứng rằng vùng đất này là tốt nhất còn lại
+Nam Mỹ là một trong những nơi nguy hiểm nhất trên Trái đất từ những con ếch nhỏ lớn hơn đầu ngón tay, đủ độc để hạ gục cả đàn voi đang rình mồi bên dưới làn nước có khả năng lột da thịt trong vài phút là không bao giờ có nguy hiểm xa xôi bị mắc kẹt ở đây mà không có nền văn minh gần như đảm bảo một số phận nghiệt ngã cho bất kỳ du khách xui xẻo nhưng nếu bạn cần thêm bằng chứng rằng vùng đất này là tốt nhất còn lại
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 không bị ảnh hưởng, hãy xem xét kẻ săn mồi đỉnh cao của nó là Jaguar có lực cắn mạnh gấp đôi với tư cách là một con sư tử hoặc một con cá sấu đen, một con cá sấu khổng lồ săn mồi đặc biệt khi bạn không thể nhìn thấy chúng vào ban đêm, vùng đất này là quê hương của một số động vật nguy hiểm nhất còn sống hiện nay nhưng trạng thái hiện tại của nó tương đối thoải mái khi so sánh đối với những loài động vật mà trước đây Liv ở đó thực tế là Nam Mỹ thời tiền sử thật đáng sợ rằng nó có thể gây ra không chỉ mọi nỗi ám ảnh mà bạn có mà còn cả những thứ mà bạn thậm chí chưa từng biết tồn tại như chứng sợ sự cô lập hoặc nỗi sợ ở một mình bởi vì nếu bạn tìm thấy chính mình trên lục địa cổ đại này, bạn sẽ tách biệt khỏi phần còn lại của Thế giới hàng trăm, thậm chí hàng ngàn dặm của đại dương nhưng có lẽ khía cạnh lạnh giá nhất của sự cô lập này là từ về sự tuyệt chủng của loài khủng long cách đây khoảng 3 triệu năm thì có một vùng đất đầy những sinh vật không giống bất cứ thứ gì sống ở đó ngày nay và một điều chắc chắn là khi Evolution có quá nhiều thời gian ở một mình kỳ lạ mọi thứ bắt đầu xảy ra hai ví dụ sống động về điều này là Úc ở Madagascar từ khỉ đột siiz vượn cáo kanguru cao hơn người...

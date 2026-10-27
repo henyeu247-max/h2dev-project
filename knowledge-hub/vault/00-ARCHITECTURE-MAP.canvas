@@ -1,0 +1,322 @@
+{
+  "nodes": [
+    {
+      "id": "workspace:d-ytb",
+      "type": "text",
+      "x": 0,
+      "y": 300,
+      "width": 340,
+      "height": 120,
+      "color": "1",
+      "text": "# 🌐 Hệ Thống Trung Tâm 97yo-dev\nDomain: 97yo-dev-learn.tonymmo.com\n17 Dự án · 3 Nhánh Đào Tạo (333 Video) · Auto-Sync Live"
+    },
+    {
+      "id": "project:h2dev-project",
+      "type": "file",
+      "file": "projects/h2dev-project.md",
+      "x": 480,
+      "y": -740,
+      "width": 340,
+      "height": 100,
+      "color": "4"
+    },
+    {
+      "id": "project:ytb-root-infra",
+      "type": "file",
+      "file": "projects/ytb-root-infra.md",
+      "x": 480,
+      "y": -610,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:pipeline-bible-explainer",
+      "type": "file",
+      "file": "projects/pipeline-bible-explainer.md",
+      "x": 480,
+      "y": -480,
+      "width": 340,
+      "height": 100,
+      "color": "5"
+    },
+    {
+      "id": "project:pipeline-everyday-history",
+      "type": "file",
+      "file": "projects/pipeline-everyday-history.md",
+      "x": 480,
+      "y": -350,
+      "width": 340,
+      "height": 100,
+      "color": "5"
+    },
+    {
+      "id": "project:pipeline-hoat-hinh-ai",
+      "type": "file",
+      "file": "projects/pipeline-hoat-hinh-ai.md",
+      "x": 480,
+      "y": -220,
+      "width": 340,
+      "height": 100,
+      "color": "5"
+    },
+    {
+      "id": "project:pipeline-ton-giao",
+      "type": "file",
+      "file": "projects/pipeline-ton-giao.md",
+      "x": 480,
+      "y": -90,
+      "width": 340,
+      "height": 100,
+      "color": "5"
+    },
+    {
+      "id": "project:pipeline-wildlife",
+      "type": "file",
+      "file": "projects/pipeline-wildlife.md",
+      "x": 480,
+      "y": 40,
+      "width": 340,
+      "height": 100,
+      "color": "5"
+    },
+    {
+      "id": "project:repo-ai-storyboard-video-starter",
+      "type": "file",
+      "file": "projects/repo-ai-storyboard-video-starter.md",
+      "x": 480,
+      "y": 170,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-ainovel-cli",
+      "type": "file",
+      "file": "projects/repo-ainovel-cli.md",
+      "x": 480,
+      "y": 300,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-browserskill",
+      "type": "file",
+      "file": "projects/repo-browserskill.md",
+      "x": 480,
+      "y": 430,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-dola-render-gateway",
+      "type": "file",
+      "file": "projects/repo-dola-render-gateway.md",
+      "x": 480,
+      "y": 560,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-drama-skills",
+      "type": "file",
+      "file": "projects/repo-drama-skills.md",
+      "x": 480,
+      "y": 690,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-fcksignups",
+      "type": "file",
+      "file": "projects/repo-fcksignups.md",
+      "x": 480,
+      "y": 820,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-make-prompt-seedance2",
+      "type": "file",
+      "file": "projects/repo-make-prompt-seedance2.md",
+      "x": 480,
+      "y": 950,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-super-video-maker-skill",
+      "type": "file",
+      "file": "projects/repo-super-video-maker-skill.md",
+      "x": 480,
+      "y": 1080,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-youtube-js",
+      "type": "file",
+      "file": "projects/repo-youtube-js.md",
+      "x": 480,
+      "y": 1210,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "project:repo-yt-fts",
+      "type": "file",
+      "file": "projects/repo-yt-fts.md",
+      "x": 480,
+      "y": 1340,
+      "width": 340,
+      "height": 100,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-0",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:h2dev-project",
+      "toSide": "left",
+      "label": "core-platform"
+    },
+    {
+      "id": "edge-1",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:ytb-root-infra",
+      "toSide": "left",
+      "label": "workspace-infra"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:pipeline-bible-explainer",
+      "toSide": "left",
+      "label": "production-pipeline"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:pipeline-everyday-history",
+      "toSide": "left",
+      "label": "production-pipeline"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:pipeline-hoat-hinh-ai",
+      "toSide": "left",
+      "label": "production-pipeline"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:pipeline-ton-giao",
+      "toSide": "left",
+      "label": "production-pipeline"
+    },
+    {
+      "id": "edge-6",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:pipeline-wildlife",
+      "toSide": "left",
+      "label": "production-pipeline"
+    },
+    {
+      "id": "edge-7",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-ai-storyboard-video-starter",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-8",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-ainovel-cli",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-9",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-browserskill",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-10",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-dola-render-gateway",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-11",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-drama-skills",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-12",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-fcksignups",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-13",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-make-prompt-seedance2",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-14",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-super-video-maker-skill",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-15",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-youtube-js",
+      "toSide": "left",
+      "label": "research-repo"
+    },
+    {
+      "id": "edge-16",
+      "fromNode": "workspace:d-ytb",
+      "fromSide": "right",
+      "toNode": "project:repo-yt-fts",
+      "toSide": "left",
+      "label": "research-repo"
+    }
+  ]
+}

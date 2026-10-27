@@ -25,7 +25,7 @@ Toàn bộ tài nguyên trên máy chủ cục bộ `D:\YTB\H2DEV-Project` đã 
 
 ### 4. Kho tài liệu & Pipeline kỹ thuật (152 tài liệu)
 - **152 tài liệu nghiệp vụ:** 78 bộ prompt chuẩn (35 gốc + 43 prompt master research từ `data/research-20260916/`), 20 báo cáo phân tích thị trường, 22 tools, 16 checklists/danh mục và tài liệu Zoom.
-- **4 pipeline cấu trúc sẵn:** `bible-explainer/`, `wildlife/`, `hoat-hinh-ai/`, `ton-giao/` — sẵn sàng điều chỉnh cho mọi đề tài mới.
+- **5 pipeline cấu trúc sẵn:** `bible-explainer/`, `everyday-history/`, `wildlife/`, `hoat-hinh-ai/`, `ton-giao/` — sẵn sàng điều chỉnh cho mọi đề tài mới.
 
 ---
 

@@ -1,7 +1,7 @@
-# Báo Cáo Phân Tích Kịch Bản & Lời Thoại: Black Holes Explained – From Birth to Death
+# Báo Cáo Phân Tích Kịch Bản & Lời Thoại: Black Holes Explained – From Birth to Death
 
 - **Mã Kênh / Kênh:** [RAW-077] Kurzgesagt – In a Nutshell
-- **Tiêu đề gốc:** Black Holes Explained – From Birth to Death
+- **Tiêu đề gốc:** Black Holes Explained – From Birth to Death
 - **Video URL:** https://www.youtube.com/watch?v=e-P5IFTqB98
 - **Lượt xem:** 28,833,324 views | **Thời lượng:** PT5M56S | **Ngày đăng:** 2015-12-15
 - **Số câu thoại:** 106 câu | **Thẻ Tags SEO:** #blackhole, #universe, #space, #cosmos, #earth, #death, #black, #Astronomy(FieldOfStudy), #blackholesun, #explained
@@ -38,7 +38,7 @@ Lỗ đen là một trong những thứ kỳ lạ nhất còn tồn tại. Họ 
 đám mây dưới lực hấp dẫn của chính chúng. Trong lõi của chúng, phản ứng tổng hợp hạt nhân nghiền nát các nguyên tử hydro thành heli giải phóng một lượng cực lớn năng lượng Năng lượng này, ở dạng bức xạ, chống lại trọng lực, duy trì sự cân bằng mong manh giữa hai lực lượng. Miễn là có sự hợp nhất trong lõi thì ngôi sao vẫn đủ ổn định. Nhưng đối với những ngôi sao có khối lượng lớn hơn rất nhiều thì sức nóng và áp suất ở lõi cho phép chúng nung chảy các nguyên tố nặng hơn cho đến khi chúng chạm tới sắt. Không giống như tất cả các nguyên tố trước đó, quá trình tổng hợp tạo ra sắt không tạo ra bất kỳ năng lượng nào. Sắt tích tụ ở tâm ngôi sao cho đến khi đạt tới mức tới hạn lượng và sự cân bằng giữa bức xạ và trọng lực đột nhiên bị phá vỡ. Cốt lõi sụp đổ. Trong vòng một phần giây, ngôi sao phát nổ. Di chuyển với tốc độ khoảng một phần tư tốc độ ánh sáng, mang lại khối lượng lớn hơn nữa vào cốt lõi. Chính tại thời điểm này, tất cả các nguyên tố nặng hơn trong vũ trụ đều là được tạo ra khi ngôi sao chết đi trong một vụ nổ siêu tân tinh. Điều này tạo ra một ngôi sao neutron hoặc nếu ngôi sao đó đủ lớn thì toàn bộ khối lượng của lõi sụp đổ thành một lỗ đen. Nếu bạn nhìn vào một lỗ đen, thứ...
 
 [HỒI KẾT & KÊU GỌI HÀNH ĐỘNG]
-Vậy lỗ đen đang mất năng lượng. Điều này lúc đầu xảy ra cực kỳ chậm và nhanh hơn khi lỗ đen trở thành nhỏ hơn. Khi nó đến khối lượng của một tiểu hành tinh lớn, nó sẽ tỏa ra ánh sáng trong phòng nhiệt độ. Khi nó có khối lượng bằng một quả núi, nó tỏa ra nhiệt lượng tương đương của mặt trời của chúng ta. và trong giây cuối cùng của cuộc đời, lỗ đen bức xạ đi với năng lượng của hàng tỷ quả bom hạt nhân trong một vụ nổ lớn. Nhưng quá trình này cực kỳ chậm. Những lỗ đen lớn nhất mà chúng ta biết có thể mất lên một năm googol để bốc hơi. Khoảng thời gian này dài đến mức khi lỗ đen cuối cùng bức xạ đi, sẽ không có ai có mặt ở đây để chứng kiến ​​điều đó. Vũ trụ sẽ trở nên không thể ở được từ rất lâu trước đó. Đây chưa phải là kết thúc câu chuyện của chúng ta, còn rất nhiều ý tưởng thú vị khác về lỗ đen chúng ta sẽ khám phá chúng ở phần 2.
+Vậy lỗ đen đang mất năng lượng. Điều này lúc đầu xảy ra cực kỳ chậm và nhanh hơn khi lỗ đen trở thành nhỏ hơn. Khi nó đến khối lượng của một tiểu hành tinh lớn, nó sẽ tỏa ra ánh sáng trong phòng nhiệt độ. Khi nó có khối lượng bằng một quả núi, nó tỏa ra nhiệt lượng tương đương của mặt trời của chúng ta. và trong giây cuối cùng của cuộc đời, lỗ đen bức xạ đi với năng lượng của hàng tỷ quả bom hạt nhân trong một vụ nổ lớn. Nhưng quá trình này cực kỳ chậm. Những lỗ đen lớn nhất mà chúng ta biết có thể mất lên một năm googol để bốc hơi. Khoảng thời gian này dài đến mức khi lỗ đen cuối cùng bức xạ đi, sẽ không có ai có mặt ở đây để chứng kiến điều đó. Vũ trụ sẽ trở nên không thể ở được từ rất lâu trước đó. Đây chưa phải là kết thúc câu chuyện của chúng ta, còn rất nhiều ý tưởng thú vị khác về lỗ đen chúng ta sẽ khám phá chúng ở phần 2.
 ```
 
 ---

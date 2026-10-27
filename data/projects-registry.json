@@ -1,0 +1,81 @@
+{
+  "schema": "h2dev.projects-registry.v1",
+  "workspaceRoot": "D:/YTB",
+  "autoDiscoverRoots": [
+    {
+      "path": "D:/YTB",
+      "category": "workspace-root",
+      "description": "Không gian làm việc gốc D:\\YTB (Tự động phát hiện dự án mới ở cấp gốc)"
+    },
+    {
+      "path": "D:/YTB/H2DEV-Project/pipelines",
+      "category": "production-pipeline",
+      "description": "Các dự án Pipeline sản xuất video AI tự động hóa trong H2DEV"
+    },
+    {
+      "path": "D:/YTB/research-repos",
+      "category": "research-repo",
+      "description": "Kho các dự án mã nguồn mở, công cụ AI & nghiên cứu tích hợp"
+    }
+  ],
+  "sensitiveSegments": [
+    ".git",
+    "node_modules",
+    "_private",
+    "_backup",
+    "_audit",
+    "_internal",
+    "_drafts",
+    "_archive",
+    "_verify",
+    "_frames",
+    "_tmp_audio",
+    "_tmp-proof",
+    ".cache",
+    ".venv",
+    ".venv-gpu",
+    ".zcode",
+    ".pi",
+    ".playwright-mcp",
+    ".agents",
+    ".clinerules",
+    ".codebuddy",
+    ".codex",
+    ".grok",
+    ".tmp.drivedownload",
+    ".tmp.driveupload",
+    ".vscode",
+    ".workbuddy",
+    ".workbuddy-ai",
+    "_inspect-treawork",
+    "logs",
+    "inbox",
+    "raw-kenh-goc",
+    "design-is-2026-08-22",
+    "dist",
+    "build",
+    "__pycache__",
+    "coverage"
+  ],
+  "indexedExtensions": [
+    ".js",
+    ".cjs",
+    ".mjs",
+    ".ts",
+    ".tsx",
+    ".py",
+    ".ps1",
+    ".bat",
+    ".cmd",
+    ".vbs",
+    ".sh",
+    ".json",
+    ".md",
+    ".html",
+    ".css",
+    ".sql",
+    ".yaml",
+    ".yml",
+    ".toml"
+  ]
+}

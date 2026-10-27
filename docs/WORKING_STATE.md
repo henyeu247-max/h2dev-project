@@ -16,15 +16,15 @@
 > kiểm tra đồng bộ bằng `node scripts/sync-counts.js --check`). Các file JSON dữ liệu gốc tại `data-tabs/`.
 
 - **Tập tin chân lý số liệu:** `data/counts-manifest.json` (tự động cập nhật qua `node scripts/sync-counts.js`).
-- **Tổng kho bài học (`videos.json`):** **144 bài** (140 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 117 Pro).
-  → nguồn: `data-tabs/videos.json` (đo lại 2026-10-14 trên máy local: 144).
-- **Kiểm định media toàn vẹn:** **144/144 file** mp4/webm tồn tại, 0 file 0 byte (`counts-manifest.mediaFiles`). `audit_videos_v2.py` (đo lại 2026-10-14→15): **144/144 clean · 0 issues · 0 standards_gaps · 0 A8d** (đo lại 2026-10-15 sau deploy `1722b5b`: 4 SKU mới `043d15`, `0be6c9`, `a59a5e`, `a85eac` đã có trên VPS, F2 hết). Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
+- **Tổng kho bài học (`videos.json`):** **148 bài** (144 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 27 Free · 121 Pro) — thuộc hệ thống **97yo-dev** tổng **333 bài học** (148 H2DEV + 140 Huân Academy + 45 DGMD; 35 module).
+  → nguồn: `data-tabs/videos.json` (148) + `data/videos_huan.json` (140) + `data/videos_dgmd.json` (45) = **333** bài học toàn hệ thống.
+- **Kiểm định media toàn vẹn:** **333/333 file** mp4/webm tồn tại (148 H2DEV + 140 Huân + 45 DGMD), 0 file 0 byte (`counts-manifest.mediaFiles`, dung lượng ~89.26 GB / 83.13 GiB). `audit_videos_v2.py` (đo lại 2026-10-14→25): **148/148 H2DEV + 185/185 Huân & DGMD clean · 0 issues · 0 standards_gaps · 0 A8d**. Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
   - `VIDEO-f59aa7`: ĐÃ PHỤC HỒI đủ tiếng — giải mã Widevine CENC (pipeline `scripts/download_full_drm_audio.cjs` + `scripts/get_drm_key.py`), 108.5 MB, mean_volume -22.0 dB; phụ đề 397 đoạn phủ toàn thời lượng 43:08.
   - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
   - Còn **36 review_flags** kiểm tay (không phải data hỏng): A10 19 (thumbnail ≠ nội dung theo vision) · S6 19 (takeaway neo transcript thấp) · S9 15 (xác nhận hình/tiếng bằng heuristic). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).
   → nguồn: `counts-manifest.mediaFiles` + `py -3 scripts/audit_videos_v2.py` + `data/media-review-queue.json`.
-- **Danh bạ kênh mẫu (`kenh-mau.json`):** **256 kênh** (187 live · 69 dead).
-  → nguồn: `data-tabs/kenh-mau.json` (đo thực tế lại 2026-10-14, N/N: 256/256 có `ngay_do`; 187 sống · 59 DIE 404 · 10 kênh rỗng; chạy `scripts/probe-kenh-mau.py` rồi `scripts/classify-kenh-mau.py`, bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video (đối chiếu bằng trình duyệt thật 2026-10-14); GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
+- **Danh bạ kênh mẫu (`kenh-mau.json`):** **261 kênh** (189 live · 72 dead).
+  → nguồn: `data-tabs/kenh-mau.json` (đo thực tế N/N: 256/256 có `ngay_do`; 184 sống · 59 DIE 404 · 10 kênh rỗng · 3 dead khác; chạy `scripts/probe-kenh-mau.py` rồi `scripts/classify-kenh-mau.py`, bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video; GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).
   → nguồn: `counts-manifest.canonicalRaw` / `canonicalRawUniqueChannels`.
 - **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **300 tài liệu**.
@@ -34,9 +34,9 @@
   → nguồn: `data-tabs/ngach-xanh.json` (đo lại 2026-10-14: 34).
 - **Kho nhạc nền:** **49 tracks** đã audit Gemini Multimodal & FFprobe (36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng).
   → nguồn: rule workspace SSoT + `data/music_catalog.json`. *(Số cũ ghi 38 là SAI — đã sửa 2026-09-24.)*
-- **Master SQLite Database:** **2.251 entries** FTS5 trong `h2dev_master.db`.
-  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **2251**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
-  Bảng kèm theo: `lessons` 144 · `lesson_timestamps` 793 · `competitor_channels` 386 · `competitor_top_videos` 1421 · `documents` 300 · `reup_sources` 27 · `niches` 177.
+- **Master SQLite Database:** **2.540 entries** FTS5 trong `h2dev_master.db`.
+  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **2540**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
+  Bảng kèm theo: `lessons` 333 · `lesson_timestamps` 2456 · `competitor_channels` 391 · `competitor_top_videos` 1421 · `documents` 300 · `reup_sources` 27 · `niches` 311 · `policies` 12 · `checklists` 12.
 
 ### 1.1. NHẬT KÝ HIỆU CHỈNH SỐ LIỆU (2026-09-24)
 
@@ -104,5 +104,7 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
    - $\ge 5$ Mấu chốt thực chiến (Key Takeaways).
    - Đủ 5 bước Kỹ thuật Edit & SOP né quét AI chi tiết (> 500 – 1.385 ký tự), không có chuỗi fallback ngắn.
    - $\ge 3$ Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags).
-4. **Đồng bộ Master SQLite WAL:** Master database `data/h2dev_master.db` đã rebuild đầy đủ 144 lessons, 386 competitor channels, 300 documents và **2.251 FTS5 search index entries**.
-5. **Quality Gates:** 4 Core Gates (`validate-project.js`, `gate-icons.js`, `gate-typography.js`, `gate-shell.js`) đều **PASS 100%**.
+4. **Đồng bộ Master SQLite WAL & Nexus Dual-Layer Graph:**
+   - Master database `data/h2dev_master.db` đã rebuild đầy đủ **333 lessons** (148 H2DEV · 140 Huân · 45 DGMD), **2.456 lesson timestamps**, **391 competitor channels**, **1.421 top videos**, **300 documents**, **27 reup sources**, **311 niches**, **12 policies**, **12 checklists** và **2.540 FTS5 search index entries**.
+   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **3.007 nodes** và **5.780 edges** qua 2 lớp (1.695 Knowledge nodes + 1.312 Infra nodes trên 17 dự án).
+5. **Quality Gates:** Toàn bộ Core Gates (`validate-project.js`, `sync-counts.js --check`, `gate-icons.js`, `gate-typography.js`, `gate-p1.js`, `gate-p2.js`, `gate-shell.js`, `check-ui-classes.js`, `guard-no-inline-onclick.js`) đều **PASS 100%**.

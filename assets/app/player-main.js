@@ -96,12 +96,13 @@ function saveStore(m){
 }
 function fmtTime(sec){ const n=Math.max(0, Math.floor(Number(sec)||0)); const m=Math.floor(n/60), s=Math.floor(n%60); return m+':'+String(s).padStart(2,'0'); }
 
-/* Quay lại: về trang trước nếu có lịch sử (history.back), nếu không thì về /lotrinh, else về / */
+/* Quay lại: về trang trước nếu có lịch sử (history.back), nếu không thì về /lotrinh (kèm track nếu khác h2dev), else về / */
+let activePlayerTrack = params.get('track') || 'h2dev';
 function goBack(){
   if (params.get('back') === '1' || window.history.length > 1) {
     history.back();
   } else if (/^\/lotrinh\//i.test(location.pathname) || params.get('back') === 'learn.html') {
-    location.href = '/lotrinh';
+    location.href = (activePlayerTrack && activePlayerTrack !== 'h2dev') ? ('/lotrinh?track=' + encodeURIComponent(activePlayerTrack)) : '/lotrinh';
   } else {
     location.href = '/';
   }
@@ -340,17 +341,60 @@ window.addEventListener('keydown', (e)=>{
     ]);
     if(!catalogResponse.ok) throw new Error(`Không tải được catalog (${catalogResponse.status})`);
     if(!modulesResponse.ok) throw new Error(`Không tải được lộ trình (${modulesResponse.status})`);
-    const CAT2=await catalogResponse.json();
-    const modulesData=await modulesResponse.json();
-    const deadChannelsMap = new Map();
+    let CAT2=await catalogResponse.json();
+    let modulesData=await modulesResponse.json();
+    let isDgmd = false;
+    let isHuan = false;
+    let catalogBySku=new Map(CAT2.map(item=>[item.sku,item]));
+    let catalogBySkuLower=new Map(CAT2.map(item=>[item.sku.toLowerCase(),item]));
+
+    if (!catalogBySku.has(sku) && !catalogBySkuLower.has(sku.toLowerCase())) {
+      try {
+        const [huanCatRes, huanModRes, dgmdCatRes, dgmdModRes] = await Promise.all([
+          fetch('/data/catalog_huan.json').catch(() => null),
+          fetch('/data/modules_huan.json').catch(() => null),
+          fetch('/data/catalog_dgmd.json').catch(() => null),
+          fetch('/data/modules_dgmd.json').catch(() => null)
+        ]);
+        if (huanCatRes && huanCatRes.ok) {
+          const huanCat = await huanCatRes.json();
+          if (Array.isArray(huanCat) && huanCat.some(x => (x.sku || '').toLowerCase() === sku.toLowerCase())) {
+            CAT2 = huanCat;
+            catalogBySku = new Map(CAT2.map(item => [item.sku, item]));
+            catalogBySkuLower = new Map(CAT2.map(item => [item.sku.toLowerCase(), item]));
+            isHuan = true;
+            if (huanModRes && huanModRes.ok) {
+              modulesData = await huanModRes.json();
+            }
+          }
+        }
+        if (!isHuan && dgmdCatRes && dgmdCatRes.ok) {
+          const dgmdCat = await dgmdCatRes.json();
+          if (Array.isArray(dgmdCat) && dgmdCat.some(x => (x.sku || '').toLowerCase() === sku.toLowerCase())) {
+            CAT2 = dgmdCat;
+            catalogBySku = new Map(CAT2.map(item => [item.sku, item]));
+            catalogBySkuLower = new Map(CAT2.map(item => [item.sku.toLowerCase(), item]));
+            isDgmd = true;
+            if (dgmdModRes && dgmdModRes.ok) {
+              modulesData = await dgmdModRes.json();
+            }
+          }
+        }
+      } catch (e) {
+        console.warn('[Player] Tra cứu catalog mở rộng thất bại', e);
+      }
+    }
+
+    const deadChannelsMap = new Map([
+      ['nelymallorca', { handle: '@nelymallorca', dead: true, deadNote: 'Kênh cổ 2006 mua lại làm ngách tin tức Canada đã bị YouTube gỡ' }],
+      ['alanwattsdailywisdom', { handle: '@alanwattsdailywisdom', dead: true, deadNote: 'Kênh mẫu ngách triết lý Alan Watts US đã bị YouTube gỡ' }]
+    ]);
     if(kmResponse && kmResponse.ok){
       try {
         const kmList = await kmResponse.json();
         (kmList||[]).filter(k=>k&&k.dead).forEach(k=>deadChannelsMap.set(String(k.handle||'').replace(/^@/,'').toLowerCase(), k));
       } catch(e) { console.warn('[H2DEV] đọc kenh-mau.json (kênh chết) lỗi', e); }
     }
-    const catalogBySku=new Map(CAT2.map(item=>[item.sku,item]));
-    const catalogBySkuLower=new Map(CAT2.map(item=>[item.sku.toLowerCase(),item]));
     const route=modulesData.modules.flatMap(module=>module.items.map(item=>({item:catalogBySku.get(item.sku)||item,module})));
     const routePos=route.findIndex(x=>x.item.sku.toLowerCase()===sku.toLowerCase());
     const v=catalogBySku.get(sku)||catalogBySkuLower.get(sku.toLowerCase())|| (routePos>=0?route[routePos].item:null);
@@ -361,8 +405,9 @@ window.addEventListener('keydown', (e)=>{
     const btnPrev=document.getElementById('btnPrev');
     const btnNext=document.getElementById('btnNext');
     const routeSeq=document.getElementById('routeSeq');
+    activePlayerTrack = isHuan ? 'huan' : (isDgmd ? 'dgmd' : 'h2dev');
     if(routeSeq){
-      routeSeq.textContent = 'Lộ trình · Bài ' + String(routePos + 1).padStart(2,'0') + '/' + route.length;
+      routeSeq.textContent = (isHuan ? 'Nhánh Huân Academy · Bài ' : isDgmd ? 'Nhánh DGMD · Bài ' : 'Nhánh H2DEV · Bài ') + String(routePos + 1).padStart(2,'0') + '/' + route.length;
     }
     const makeNavUrl = function (targetSku) {
       if (/^\/lotrinh\//i.test(location.pathname)) {
@@ -378,23 +423,35 @@ window.addEventListener('keydown', (e)=>{
       btnNext.disabled = !nextItem;
       btnNext.onclick = () => { if(nextItem) location.href = makeNavUrl(nextItem.sku); };
     }
-    document.title=v.title+' — H2DEV Project';
+    document.title=v.title+' — 97yo-dev Studio';
     /* 2026-09-30: ngay trong tieu de khong ngat dong (escTitle da esc truoc khi boc span) */
     if (window.H2Core && H2Core.escTitle) document.getElementById('ptitle').innerHTML=H2Core.escTitle(v.title); else document.getElementById('ptitle').textContent=v.title;
     const metaEl=document.getElementById('pmeta');
+    const actualSize = v.size || (v.size_mb ? Math.round(v.size_mb * 1024 * 1024) : 0);
+    const sizeBadge = actualSize > 0 ? badge(fmtBytes(actualSize), 'badge-muted') : '';
+    const isLocalMp4 = isHuan || isDgmd || (v.mp4 && !v.drm && !v.is_drm) || v.local;
+    const formatBadge = isLocalMp4
+      ? badge('MP4', 'badge-blue')
+      : ((v.drm ?? v.is_drm) ? badge('DRM', 'badge-amber') : badge('HLS', 'badge-blue'));
+    const curBadge = v.badge === 'QUAN TRỌNG'
+      ? `<span class="badge badge-red inline-flex items-center gap-1">${ico('star', 14)}QUAN TRỌNG</span>`
+      : (v.badge === 'NỔI BẬT' ? `<span class="badge badge-amber inline-flex items-center gap-1">${ico('star', 14)}NỔI BẬT</span>` : '');
+    const licenseBadge = (v.free ?? v.is_free) ? badge('FREE', 'badge-green') : badge('PRO', 'badge-red');
     metaEl.innerHTML = [
       badge(esc(sku), 'badge-muted font-mono badge-sku'),
-      badge(fmtBytes(v.size), 'badge-muted'),
-      badge(v.drm?'DRM':'HLS', v.drm?'badge-amber':'badge-blue'),
-      badge(v.free?'FREE':'PRO', v.free?'badge-green':'badge-red'),
-    ].join('');
-    const pv=document.getElementById('pv');
-    // Media path: prefer the declared path from data (supports .mp4 and .webm),
-    // then fall back to probing video/<sku>/<sku>.mp4 and .webm in order.
-    const declared = (v.mp4 && /(^|\/)video\//.test(v.mp4)) ? v.mp4 : '';
-    const defaultLocal = declared || `video/${sku}/${sku}.mp4`;
+      curBadge,
+      licenseBadge,
+      formatBadge,
+      sizeBadge,
+    ].filter(Boolean).join('');
+    const pv = document.getElementById('pv');
+    const pvIframe = document.getElementById('pvIframe');
+    let localAvailable = false;
+    let isWebm = false;
     let local = '';
-    const candidates = declared ? [declared] : [`video/${sku}/${sku}.mp4`, `video/${sku}/${sku}.webm`];
+    const declared = (v.mp4 && /(^|\/)video\//.test(v.mp4)) ? v.mp4 : '';
+    const defaultLocal = declared || `video/${resolvedSku}/${resolvedSku}.mp4`;
+    const candidates = declared ? [declared] : [`video/${resolvedSku}/${resolvedSku}.mp4`, `video/${resolvedSku}/${resolvedSku}.webm`];
     for (const cand of candidates) {
       try {
         const headRes = await fetch(cand, { method: 'HEAD', cache: 'no-store' });
@@ -404,45 +461,66 @@ window.addEventListener('keydown', (e)=>{
         }
       } catch(e) {}
     }
-    // Fallback nếu HEAD probe bị chặn bởi proxy nhưng catalog xác nhận có file (>0 byte)
-    if (!local && v.size && v.size > 0) {
-      local = defaultLocal;
-    }
-    const localAvailable = Boolean(local);
-    const playbackSource = localAvailable ? local : (v.video_link || defaultLocal);
-    const isWebm = /\.webm(\?|$)/i.test(playbackSource);
-    if (playbackSource) {
-      pv.src = playbackSource;
-      const initialSeek = parseFloat(params.get('t'));
-      if (Number.isFinite(initialSeek) && initialSeek > 0) {
-        pv.addEventListener('loadedmetadata', () => {
-          pv.currentTime = initialSeek;
-          pv.play().catch(() => {});
-        }, { once: true });
+    localAvailable = Boolean(local);
+
+    if (localAvailable) {
+      if (pvIframe) {
+        pvIframe.classList.add('hidden');
+        pvIframe.src = 'about:blank';
       }
-      /* UI-14 (2026-09-28): bounded retry — moi nguon CHI thu 1 lan.
-         Truoc day: playbackSource la const (immutable) nen onerror lan 2 van thay
-         .mp4 -> gán lại CUNG src .webm da lỗi => vòng lặp gán .webm vô hạn;
-         ngược lại nguồn .webm lỗi thì bỏ không thử .mp4. */
-      const altSource = playbackSource.endsWith('.mp4')
-        ? playbackSource.replace(/\.mp4$/, '.webm')
-        : (isWebm ? playbackSource.replace(/\.webm$/, '.mp4') : '');
-      let altTried = false;
-      pv.onerror = () => {
-        if (altSource && !altTried) {
-          altTried = true;
-          pv.src = altSource;
-          pv.load();
-          return;
+      if (pv) {
+        pv.classList.remove('hidden');
+        const playbackSource = local;
+        isWebm = /\.webm(\?|$)/i.test(playbackSource);
+        pv.poster = (v && (v.image || v.thumb)) ? ('/' + (v.image || v.thumb).replace(/^\//, '')) : '';
+        pv.src = playbackSource;
+        const initialSeek = parseFloat(params.get('t'));
+        if (Number.isFinite(initialSeek) && initialSeek > 0) {
+          pv.addEventListener('loadedmetadata', () => {
+            pv.currentTime = initialSeek;
+            pv.play().catch(() => {});
+          }, { once: true });
         }
-        metaEl.innerHTML += `<span class="badge badge-red">Không đọc được nguồn phát — thử tải lại trang hoặc dùng nút tải file.</span>`;
-      };
+        const altSource = playbackSource.endsWith('.mp4')
+          ? playbackSource.replace(/\.mp4$/, '.webm')
+          : (isWebm ? playbackSource.replace(/\.webm$/, '.mp4') : '');
+        let altTried = false;
+        pv.onerror = () => {
+          if (altSource && !altTried) {
+            altTried = true;
+            pv.src = altSource;
+            pv.load();
+            return;
+          }
+          if (pvIframe) {
+            pv.classList.add('hidden');
+            pvIframe.classList.remove('hidden');
+            pvIframe.src = `/live/${encodeURIComponent(resolvedSku)}`;
+          } else {
+            metaEl.innerHTML += `<span class="badge badge-red">Không đọc được nguồn phát — thử tải lại trang hoặc dùng nút tải file.</span>`;
+          }
+        };
+      }
     } else {
-      metaEl.innerHTML += `<span class="badge badge-amber">Chưa tải được video (file 0 byte)</span>`;
+      // Khi file local MP4 chưa sẵn sàng, phát trực tiếp qua live proxy Shaka nội bộ (/live/:sku)
+      if (pv) {
+        pv.classList.add('hidden');
+        pv.src = '';
+      }
+      if (pvIframe) {
+        pvIframe.classList.remove('hidden');
+        pvIframe.src = `/live/${encodeURIComponent(resolvedSku)}`;
+      }
     }
     const srcBox=document.getElementById('psources');
+    const btnPG = document.getElementById('btnPlayerGraph');
+    if (btnPG) {
+      btnPG.href = `/sodo?snode=${encodeURIComponent('video:' + resolvedSku)}`;
+      btnPG.title = `Xem sơ đồ liên kết của bài học ${resolvedSku}`;
+    }
     let h='';
-    if(v.origin) h+=`<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer">${ico('globe', 14)}<span>Bài học gốc H2Dev</span></a>`;
+    if(v.origin) h+=`<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer">${ico('globe', 14)}<span>${isHuan ? 'Bài học gốc (Nhánh Huân Academy)' : isDgmd ? 'Bài học gốc (Nhánh DGMD)' : 'Bài học gốc (Nhánh H2DEV)'}</span></a>`;
+    h+=`<a href="/sodo?snode=${encodeURIComponent('video:' + resolvedSku)}">${ico('layout-grid', 14)}<span>Sơ đồ DB (${esc(resolvedSku)})</span></a>`;
     if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4">${ico('download', 14)}<span>Tải ${isWebm?'WEBM':'MP4'} Full HD</span></a>`;
     srcBox.innerHTML=h;
     if(v.channels&&v.channels.length){
@@ -450,12 +528,18 @@ window.addEventListener('keydown', (e)=>{
       document.getElementById('pchannelslist').innerHTML=v.channels.map(c=>{
         const rawHandle = (typeof c === 'object' && c !== null) ? (c.handle || c.name || '') : String(c);
         const handle = rawHandle.replace(/^@/,'').trim();
+        const customUrl = (typeof c === 'object' && c !== null && c.url && /^https?:\/\//i.test(c.url))
+          ? c.url
+          : `https://www.youtube.com/@${encodeURIComponent(handle)}`;
         const deadInfo = deadChannelsMap.get(handle.toLowerCase());
         const isDead = Boolean(deadInfo) || Boolean(c && typeof c === 'object' && c.dead);
         const deadNote = (c && typeof c === 'object' && c.deadNote) || (deadInfo && deadInfo.deadNote) || 'Kênh đã dừng hoặc bị YouTube gỡ';
-        return `<div class="inline-flex items-center gap-1.5 bg-surface-card border ${isDead ? 'border-red-500/40 bg-red-950/20' : 'border-ink-600'} p-1.5 rounded-xl text-xs" title="${isDead ? esc(deadNote) : ''}">
-          <a href="https://www.youtube.com/@${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors ${isDead ? 'text-gray-400 line-through' : ''}"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}${isDead ? '<span class="channel-chip-dead-badge">DIE</span>' : ''}↗</a>
+        return `<div class="inline-flex flex-wrap items-center gap-1.5 bg-surface-card border ${isDead ? 'border-red-500/40 bg-red-950/20' : 'border-ink-600'} p-1.5 rounded-xl text-xs" title="${isDead ? esc(deadNote) : ''}">
+          <a href="${esc(customUrl)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors ${isDead ? 'text-gray-400 line-through' : ''}"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}${isDead ? '<span class="channel-chip-dead-badge">DIE</span>' : ''}↗</a>
+          <a href="/kenh-mau?kq=${encodeURIComponent(handle)}" class="btn-press bg-ink-700 hover:bg-ink-600 text-brand-300 hover:text-white px-2 py-1 rounded-xl text-xs font-medium border border-ink-600" title="Xem hồ sơ kênh mẫu @${esc(handle)} trong hệ thống">Hồ sơ</a>
+          <a href="/sodo?snode=${encodeURIComponent('channel:' + handle.toLowerCase())}" class="btn-press bg-ink-700 hover:bg-ink-600 text-sky-300 hover:text-white px-2 py-1 rounded-xl text-xs font-medium border border-ink-600" title="Xem liên kết kênh @${esc(handle)} trên Sơ đồ DB">Sơ đồ</a>
           <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-xs font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}"><span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span> Copy</button>
+          ${isDead ? `<span class="w-full px-2 pt-1 text-xs text-rose-300">Lý do DIE: ${esc(deadNote)}</span>` : ''}
         </div>`;
       }).join('');
     }
@@ -466,8 +550,9 @@ window.addEventListener('keydown', (e)=>{
         const host=hostLabel(d.link);
         const isExternal = d.link && /^https?:\/\//i.test(d.link) && d.link !== d.file;
         const link=isExternal?`<a href="${esc(d.link)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1"><span>↗</span><span>${esc(host||'Mở nguồn')}</span></a>`:'';
-        const isReadable = d.file && /\.(md|txt)$/i.test(d.file);
-        const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(d.file)}" data-doc-name="${esc(name)}">${ico('eye', 14)}<span>Đọc trực tiếp</span></button>` : '';
+        const readFileTarget = d.readFile || ((d.file && /\.(md|txt)$/i.test(d.file)) ? d.file : '');
+        const isReadable = Boolean(readFileTarget);
+        const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(readFileTarget)}" data-doc-name="${esc(name)}">${ico('eye', 14)}<span>Đọc trực tiếp</span></button>` : '';
         const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1">${ico('file-text', 14)}<span>Mở file local</span></a>`:'';
         return `<article class="card p-4 sm:p-5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
       }).join('');
@@ -492,10 +577,15 @@ window.addEventListener('keydown', (e)=>{
 
     /* ---------- Phân Tích Thực Chiến & Ghi Chú AI (Insights) ---------- */
     try {
-      const insRes = await fetch('data/video_insights.json', {cache:'no-store'});
-      if (insRes.ok) {
-        const insAll = await insRes.json();
-        const ins = insAll[resolvedSku] || insAll[sku] || insAll[sku.toLowerCase()] || insAll[sku.toUpperCase()];
+      const insFile = isHuan ? 'data/video_insights_huan.json' : (isDgmd ? 'data/video_insights_dgmd.json' : 'data/video_insights.json');
+      const [insRes, localInsRes] = await Promise.all([
+        fetch(insFile, {cache:'no-store'}).catch(() => null),
+        fetch(`video/${resolvedSku}/insight.json`, {cache:'no-store'}).catch(() => null)
+      ]);
+      if ((insRes && insRes.ok) || (localInsRes && localInsRes.ok)) {
+        const insAll = (insRes && insRes.ok) ? await insRes.json() : {};
+        const localIns = (localInsRes && localInsRes.ok) ? await localInsRes.json() : null;
+        const ins = localIns || insAll[resolvedSku] || insAll[sku] || insAll[sku.toLowerCase()] || insAll[sku.toUpperCase()];
         if (ins) {
           document.getElementById('pinsights').classList.remove('hidden');
           const legacyNoticeEl = document.getElementById('legacyInsightNotice');
@@ -532,18 +622,32 @@ window.addEventListener('keydown', (e)=>{
           }
           // Edit SOP
           const editEl = document.getElementById('insightEditSop');
-          let primarySop = 'Quy trình chuẩn bị kịch bản & dựng video độc bản';
+          const KEY_NAME_RE = /^(primary|additional|trim_start|trim_end|emphasis|b_roll|voice|visual|music|subtitles|trim|speed_bgm|sub|footage|captions|pacing|music_sfx|avoid|cuts|trim_start_seconds|trim_end_seconds)$/i;
+          let primarySop = '';
           let additionalSop = [];
           if (Array.isArray(ins.edit_sop)) {
-            primarySop = 'Quy trình 5 bước kỹ thuật edit & SOP né quét AI bài giảng';
-            additionalSop = ins.edit_sop;
+            additionalSop = ins.edit_sop.filter(x => typeof x === 'string' && x.trim() && !KEY_NAME_RE.test(x.trim()));
+            primarySop = `Quy trình ${additionalSop.length || 5} bước kỹ thuật edit & SOP né quét AI bài giảng`;
           } else if (ins.edit_sop && typeof ins.edit_sop === 'object') {
-            primarySop = ins.edit_sop.primary || primarySop;
-            additionalSop = ins.edit_sop.additional || [];
+            additionalSop = (ins.edit_sop.additional || []).filter(x => typeof x === 'string' && x.trim() && !KEY_NAME_RE.test(x.trim()));
+            if (additionalSop.length < 3 && Array.isArray(ins.sop_steps)) {
+              additionalSop = ins.sop_steps.filter(x => typeof x === 'string' && x.trim() && !KEY_NAME_RE.test(x.trim()));
+            }
+            const rawPrimary = typeof ins.edit_sop.primary === 'string' ? ins.edit_sop.primary.trim() : '';
+            primarySop = (rawPrimary && !KEY_NAME_RE.test(rawPrimary))
+              ? rawPrimary
+              : `Quy trình ${additionalSop.length || 5} bước kỹ thuật edit & SOP né quét AI bài giảng`;
+            if (additionalSop.length > 0 && /Quy trình\s+\d+\s+bước/i.test(primarySop)) {
+              primarySop = primarySop.replace(/Quy trình\s+\d+\s+bước/i, 'Quy trình ' + additionalSop.length + ' bước');
+            }
+          } else {
+            primarySop = 'Quy trình chuẩn bị kịch bản & dựng video độc bản';
           }
           let sopHtml = `<div class="p-2 rounded-xl bg-ink-800/80 border border-emerald-900/30 text-emerald-300 font-medium flex items-start gap-1.5">${ico('sparkles', 14)}<span>${esc(primarySop)}</span></div>`;
-          if (additionalSop.length) {
+          if (additionalSop.length >= 3) {
             sopHtml += `<ul class="list-disc list-inside space-y-1 mt-1.5 text-gray-300">${additionalSop.map(a => `<li>${esc(a)}</li>`).join('')}</ul>`;
+          } else {
+            sopHtml += `<div class="text-xs text-gray-400 mt-1.5">Đang cập nhật chi tiết các bước thực hành…</div>`;
           }
           editEl.innerHTML = sopHtml;
 
@@ -607,7 +711,8 @@ window.addEventListener('keydown', (e)=>{
         if (!n) return;
         const tr = document.createElement('track');
         tr.kind = 'captions';
-        tr.label = 'Phụ đề bóc tách (H2DEV)';
+        tr.srclang = 'vi';
+        tr.label = 'Phụ đề bóc tách (97yo-dev)';
         tr.src = URL.createObjectURL(new Blob([vtt], { type: 'text/vtt' }));
         tr.setAttribute('data-h2-auto', '1');
         pvEl.appendChild(tr);
@@ -618,8 +723,10 @@ window.addEventListener('keydown', (e)=>{
       const srtPath = 'video/' + encodeURIComponent(resolvedSku) + '/transcript.srt';
       const txtPath = 'video/' + encodeURIComponent(resolvedSku) + '/transcript.txt';
       const jsonPath = 'video/' + encodeURIComponent(resolvedSku) + '/transcript.json';
-      document.getElementById('btnDownloadSrt').href = srtPath;
-      document.getElementById('btnDownloadTxt').href = txtPath;
+      const btnSrt = document.getElementById('btnDownloadSrt');
+      const btnTxt = document.getElementById('btnDownloadTxt');
+      if (btnSrt) { btnSrt.href = srtPath; btnSrt.setAttribute('download', resolvedSku + '.srt'); }
+      if (btnTxt) { btnTxt.href = txtPath; btnTxt.setAttribute('download', resolvedSku + '.txt'); }
 
       // Prefer declared transcript type: if the catalog record has a .json transcript path,
       // fetch it; otherwise try jsonPath directly before falling back to .txt.
@@ -629,16 +736,34 @@ window.addEventListener('keydown', (e)=>{
         if (!txtRes.ok) return null;
         const raw = await txtRes.text();
         const segs = [];
+        const plainLines = [];
         const re = /^\[(\d{2}):(\d{2}):(\d{2})(?:[.,]\d+)?\s*-\s*(\d{2}):(\d{2}):(\d{2})(?:[.,]\d+)?\]\s*(.*)$/;
         for (const line of raw.split(/\r?\n/)) {
-          const m = re.exec(line.trim());
-          if (!m) continue;
-          const start = (+m[1]) * 3600 + (+m[2]) * 60 + (+m[3]);
-          const end = (+m[4]) * 3600 + (+m[5]) * 60 + (+m[6]);
-          const text = (m[7] || '').trim();
-          if (text) segs.push({ start, end, text });
+          const trimmed = line.trim();
+          if (!trimmed) continue;
+          const m = re.exec(trimmed);
+          if (m) {
+            const start = (+m[1]) * 3600 + (+m[2]) * 60 + (+m[3]);
+            const end = (+m[4]) * 3600 + (+m[5]) * 60 + (+m[6]);
+            const text = (m[7] || '').trim();
+            if (text) segs.push({ start, end, text });
+          } else {
+            plainLines.push(trimmed);
+          }
         }
-        return segs.length ? { segments: segs } : null;
+        if (segs.length) return { segments: segs };
+        if (plainLines.length) {
+          const totalDur = Number(v.duration_sec) || 300;
+          const step = Math.max(2, totalDur / plainLines.length);
+          return {
+            segments: plainLines.map((text, idx) => ({
+              start: Number((idx * step).toFixed(2)),
+              end: Number(((idx + 1) * step).toFixed(2)),
+              text
+            }))
+          };
+        }
+        return null;
       };
 
       let trData = null;
@@ -660,9 +785,10 @@ window.addEventListener('keydown', (e)=>{
           attachCaptionTrack(segs);
           document.getElementById('ptranscript').classList.remove('hidden');
           tList.innerHTML = transcriptSegments.map((s, idx) => {
-            const start = Math.floor(s.start || 0);
-            const timeStr = fmtTime(start);
-            return `<div class="transcript-line" id="tr-seg-${idx}" role="button" tabindex="0" data-seek="${start}" title="Bấm để phát từ ${timeStr}">
+            const exactStart = Number(s.start || 0);
+            const seekAttr = exactStart.toFixed(3);
+            const timeStr = fmtTime(Math.floor(exactStart));
+            return `<div class="transcript-line" id="tr-seg-${idx}" role="button" tabindex="0" data-seek="${seekAttr}" title="Bấm để phát từ ${timeStr}">
               <span class="transcript-time">${timeStr}</span>
               <span class="transcript-text">${esc(s.text)}</span>
             </div>`;
@@ -675,12 +801,15 @@ window.addEventListener('keydown', (e)=>{
           });
         } else {
           document.getElementById('ptranscript').classList.remove('hidden');
-          document.getElementById('transcriptList').innerHTML = '<div class="p-4 text-center text-gray-400 text-xs">Video này chưa có phụ đề lời thoại bóc tách sẵn.</div>';
+          const silentMsg = (trData && (trData.note || trData.silent_video))
+            ? esc(trData.note || 'Video thực hành thao tác màn hình trực quan (không có lời thoại).')
+            : 'Video thực hành thao tác màn hình trực quan.';
+          document.getElementById('transcriptList').innerHTML = `<div class="p-4 text-center text-gray-300 text-xs">${silentMsg}</div>`;
         }
       }
     } catch(e) {
       document.getElementById('ptranscript').classList.remove('hidden');
-      document.getElementById('transcriptList').innerHTML = '<div class="p-4 text-center text-gray-400 text-xs">Video này chưa có phụ đề lời thoại bóc tách sẵn.</div>';
+      document.getElementById('transcriptList').innerHTML = '<div class="p-4 text-center text-gray-300 text-xs">Video thực hành thao tác màn hình trực quan.</div>';
     }
 
     /* ---------- Watched + progress + resume + note (shared store) ---------- */
@@ -757,7 +886,7 @@ window.addEventListener('keydown', (e)=>{
     btnW.onclick=()=>{
       const cur=store[sku]||{watched:false,note:noteInput.value,t:rec.t,d:rec.d};
       cur.watched=!cur.watched;
-      if(cur.watched&&!cur.d&&Number.isFinite(pv.duration)&&pv.duration>0) cur.d=pv.duration;
+      if(cur.watched&&!cur.d) cur.d = (Number.isFinite(pv.duration)&&pv.duration>0) ? pv.duration : (v.duration_sec || 0);
       store[sku]=Object.assign({},rec,cur,{watched:cur.watched,note:noteInput.value});
       saveStore(store); renderState();
     };
@@ -781,9 +910,9 @@ window.addEventListener('keydown', (e)=>{
     };
     /* Save recent watched (for learn.html resume banner) */
     try{
-      const recentPayload={sku:sku,ts:Date.now(),nextSku:nextItem?nextItem.sku:null};
+      const recentPayload={sku:sku,track:activePlayerTrack,ts:Date.now(),nextSku:nextItem?nextItem.sku:null};
       localStorage.setItem('h2dev-recent', JSON.stringify(recentPayload));
-      localStorage.setItem('recentWatched', JSON.stringify({item_id:sku,item_name:v.title,next_video_url:nextItem?nextItem.mp4:null}));
+      localStorage.setItem('recentWatched', JSON.stringify({item_id:sku,item_name:v.title,track:activePlayerTrack,next_video_url:nextItem?nextItem.mp4:null}));
     }catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
 
     /* auto-save progress every 3s while playing + mark watched at 95% */

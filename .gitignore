@@ -49,6 +49,10 @@ data/intelligence.db-shm
 data/h2dev_master.db
 data/h2dev_master.db-wal
 data/h2dev_master.db-shm
+data/h2dev_knowledge_graph.db
+data/h2dev_knowledge_graph.db-wal
+data/h2dev_knowledge_graph.db-shm
+--live/
 manifest_full.csv
 
 # File rác sinh do redirect PowerShell sai encoding (chỉ chứa BOM)

@@ -70,7 +70,7 @@ Theo bài giảng, việc lệch giọng hoặc giọng đọc bị hỏng tiế
 
 | Thông số | Giá trị chuẩn | Ghi chú kỹ thuật |
 | :--- | :--- | :--- |
-| **Model** | Chọn đúng model giống trên web (ví dụ `11MV2`) | Model trong tool phải khớp với model trên web; chọn sai model thì giọng có thể bị sai, nhiều lúc ra tiếng Thái. |
+| **Model** | Chọn đúng model giống trên web (ví dụ `Eleven Multilingual v2`) | Model trong tool phải khớp với model trên web; chọn sai model thì giọng có thể bị sai, nhiều lúc ra tiếng Thái. |
 | **Tốc độ** | `0.96` | Đặt giống thông số tốc độ trên web. |
 | **Độ ổn định âm thanh và các thông số khác** | Giống hệt trên web | Tool lấy thông số từ web qua API nên phải đặt giống 100%. |
 | **Ô chuyển thông số trong tool** | Tích chọn | Phải tích vào ô cài đặt này thì tool mới nhận các thông số; không tích thì tool không nhận. |

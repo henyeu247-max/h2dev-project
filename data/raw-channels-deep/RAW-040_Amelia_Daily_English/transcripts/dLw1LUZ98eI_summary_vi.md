@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Một ngày mới ở nhà ông bà. [âm nhạc] [thở dài] Chào buổi sáng, Ryan. Chào buổi sáng. Tôi ngủ rất ngon. Tôi cũng vậy."
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Một ngày mới ở nhà ông bà. [âm nhạc] [thở dài] Chào buổi sáng, Ryan. Chào buổi sáng. Tôi ngủ rất ngon. Tôi cũng vậy."
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Một ngày mới ở nhà ông bà. [âm nhạc] [thở dài] Chào buổi sáng, Ryan. Chào buổi sáng. Tôi ngủ rất ngon. Tôi cũng vậy.
+Một ngày mới ở nhà ông bà. [âm nhạc] [thở dài] Chào buổi sáng, Ryan. Chào buổi sáng. Tôi ngủ rất ngon. Tôi cũng vậy.
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 I like Grandma's house. I hear birds outside. Chúng ta hãy đi xem. Wow, khu vườn trông thật đẹp vào buổi sáng. Tôi thấy ông nội đang tưới cây. Chúng ta hãy đi ra ngoài. Good morning, kids. Chào buổi sáng bố. Chào buổi sáng mẹ. Bạn ngủ có ngon không? Vâng, rất tốt. Bữa sáng đã sẵn sàng rồi mọi người. Hãy đến và ăn. Yay! Tôi đói. Tôi cũng vậy. Được rồi, hãy vào bếp thôi. Ý tưởng tuyệt vời. Ăn sáng xong chúng ta sẽ đi đến trang trại. Thật sự? Nghe có vẻ vui đấy. Tôi đã làm bánh kếp và sữa tươi. Wow, chúng trông ngon quá. I love pancakes. Cảm ơn mẹ. Mọi thứ đều có mùi tuyệt vời. Đây các em. Cảm ơn ông nội. Yum. Cái này rất ngon. Ăn ngon. We have a busy day. Đầu tiên chúng ta sẽ làm gì? We will visit the farm. I want to see animals. Bạn có thể thấy bò và gà. Điều đó thật thú vị. Hãy hoàn thành bữa sáng của bạn trước đã. Tôi xong rồi. Tôi cũng vậy. Được rồi, bây giờ đi chuẩn bị đi. Các em đã sẵn sàng đến thăm trang trại chưa? Vâng, ông nội. Tôi đã sẵn sàng. Hãy đội mũ của chúng tôi. Ngoài trời đang nắng. Đây là mũ của tôi. Tôi cũng có của tôi. Đừng quên chai nước của bạn. Cảm ơn mẹ. Mẹ, mẹ có đi cùng chúng con không? Không, em yêu. Bà và tôi sẽ ở nhà nấu bữa trưa. Vâng, chúng tôi sẽ chuẩ...

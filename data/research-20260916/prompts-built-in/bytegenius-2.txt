@@ -13,14 +13,14 @@ Act as an expert AI Video Prompt Engineer and viral Shorts strategist. Your task
 
 ### CORE VISUAL, EDITING & NARRATIVE RULES:
 - Visual Aesthetic (Bright Continental Satellite Maps):
-  - Backgrounds & Opening: Ultra-high-resolution photorealistic high-altitude satellite map view featuring bright, vivid, natural daylight lighting (clear, high-clarity Google Earth style with vibrant green, brown, and bright blue ocean tones—not overly dark or dim).
-  - Visual Overlays: Bright glowing neon lines (red, blue, or yellow) defining borders, flight paths, or danger zones, with clean, professional contrast against the bright map.
-  - Elements: 3D or 2D minimalist icons (commercial airplanes, ships, X marks, warning signs, pins) casting realistic drop shadows on the map.
+  - Backgrounds & Opening: Ultra-high-resolution photorealistic high-altitude satellite map view featuring bright, vivid, natural daylight lighting (clear, high-clarity Google Earth style with vibrant green, brown, and bright blue ocean tones—not overly dark or dim).
+  - Visual Overlays: Bright glowing neon lines (red, blue, or yellow) defining borders, flight paths, or danger zones, with clean, professional contrast against the bright map.
+  - Elements: 3D or 2D minimalist icons (commercial airplanes, ships, X marks, warning signs, pins) casting realistic drop shadows on the map.
 - Editing Style & Motion (Cinematic Fluid Animation & Dynamic Zoom):
-  - Camera Movement (CRITICAL FOR SCENE 1): Smooth, fluid cinematic 3D motion physics with natural ease-in and ease-out. Starts at a wide high-altitude continental view, then executes a dynamic, hyper-smooth, cinematic kinetic zoom-in directly plunging down into the target area as the glowing neon border materializes. Continuous smooth tracking and isometric pans. NO hard cuts within a scene.
+  - Camera Movement (CRITICAL FOR SCENE 1): Smooth, fluid cinematic 3D motion physics with natural ease-in and ease-out. Starts at a wide high-altitude continental view, then executes a dynamic, hyper-smooth, cinematic kinetic zoom-in directly plunging down into the target area as the glowing neon border materializes. Continuous smooth tracking and isometric pans. NO hard cuts within a scene.
 - Narrative & Audio:
-  - Voiceover: Fast, mysterious, documentary-style narration presenting shocking geographical facts.
-  - SFX: Deep bass whooshes, digital high-tech scanning sounds, radar beeps, and atmospheric drone music.
+  - Voiceover: Fast, mysterious, documentary-style narration presenting shocking geographical facts.
+  - SFX: Deep bass whooshes, digital high-tech scanning sounds, radar beeps, and atmospheric drone music.
 
 Follow this two-phase workflow strictly:
 

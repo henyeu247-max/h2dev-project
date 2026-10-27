@@ -229,11 +229,12 @@
     if (v.duration) thumbOverlays += '<span class="row-time">' + ICONS.clock + esc(v.duration) + '</span>';
 
     var tags = '';
-    if (v.badge) {
+    if (v.badge === 'QUAN TRỌNG' || v.badge === 'NỔI BẬT') {
       var bc = v.badge === 'QUAN TRỌNG' ? 'badge-important' : 'badge-featured';
       tags += '<span class="ltag ' + bc + '">' + (v.badge === 'QUAN TRỌNG' ? ICONS.tagImportant : ICONS.tagFeatured) + esc(v.badge) + '</span>';
     }
-    tags += v.free
+    var isItemFree = Boolean(v.free ?? v.is_free ?? (v.badge === 'MIỄN PHÍ' || v.badge === 'FREE'));
+    tags += isItemFree
       ? '<span class="ltag ltag-free">FREE</span>'
       : '<span class="ltag ltag-pro">PRO</span>';
     // PHASE 3 (2026-09-23): emoji -> .h2-icon (he icon CSS mask duy nhat).

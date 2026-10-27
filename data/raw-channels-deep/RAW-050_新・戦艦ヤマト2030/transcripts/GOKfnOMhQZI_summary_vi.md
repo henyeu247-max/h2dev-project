@@ -23,7 +23,7 @@
 ---
 
 ### 👑 Hồi 3: The Climax & Conclusion - Đúc Kết Giá Trị & Kêu Gọi Hành Động
-- **Đúc kết bài học:** "Ông Oga và ông Ta bị bắt. Trận chiến giữa quân đội Mỹ và Roan vẫn tiếp tục. Và mở rộng vào thành phố. Quân đội Trung Quốc sau đó đã cử tàu sân bay mang tên Liangne ​​Fist tới Đài Loan. Xuất hiện trước..."
+- **Đúc kết bài học:** "Ông Oga và ông Ta bị bắt. Trận chiến giữa quân đội Mỹ và Roan vẫn tiếp tục. Và mở rộng vào thành phố. Quân đội Trung Quốc sau đó đã cử tàu sân bay mang tên Liangne Fist tới Đài Loan. Xuất hiện trước..."
 - **Kêu gọi hành động (CTA):** Kêu gọi khán giả bình luận góc nhìn, đăng ký theo dõi kênh để không bỏ lỡ các tập phim tài liệu và phân tích chuyên sâu tiếp theo.
 
 ---
@@ -38,7 +38,7 @@ Thủ đô đột nhiên chìm trong bóng tối. Toàn bộ đường dây đi�
 Nhưng sau đó Mỹ quyết định đình chỉ viện trợ cho Đài Loan vì lý do chính trị. Nhiều người nghi ngờ đó là máy bay không người lái của Trung Quốc. Chính phủ Trung Quốc phủ nhận điều này. Lớp thực sự vẫn còn ở bên ngoài những đám mây. Chúng tôi quyết định tới Đài Loan để cung cấp viện trợ nhân đạo cho Yamato. Sau đó, một cuộc tấn công bằng máy bay không người lái không rõ quốc tịch đã hướng tới Trung Quốc và một cuộc tấn công phủ đầu của Yamato đã được dự đoán trước. Quân đội Trung Quốc chỉ huy nhiều chiến binh giỏi nhất ở Yamato nhưng đều bị tiêu diệt. Vấn đề vẫn chưa được giải quyết. Dù vậy, tôi có thể hiểu tại sao gió lại mạnh đến vậy. Chúng tôi không thể làm gì được. Tuy nhiên, chúng tôi vẫn chuyển hàng viện trợ đến một ngôi làng ở phía bắc Yamato Đài Loan, để lại nước và sự an tâm cho những bàn tay nhỏ bé của trẻ em. Yamato rời đi sau khi hỗ trợ một ngôi làng ở phía bắc Đài Loan. Đang đến gần hơn. Một máy bay không người lái tốc độ cao lướt trên bề mặt không người lái từ trên trời và ghét đáy đại dương. Các cuộc tấn công đến từ ba hướng cùng một lúc. Nhưng không thể bỏ qua khâu phòng ngự. Chúng tôi đã vào Đài Loan. Luôn cảnh giác. Chúng ta sẽ xem nó diễn ra như thế nào. Nó yên tĩ...
 
 [HỒI KẾT & KÊU GỌI HÀNH ĐỘNG]
-Ông Oga và ông Ta bị bắt. Trận chiến giữa quân đội Mỹ và Roan vẫn tiếp tục. Và mở rộng vào thành phố. Quân đội Trung Quốc sau đó đã cử tàu sân bay mang tên Liangne ​​Fist tới Đài Loan. Xuất hiện trước mặt quân đội Trung Quốc là tàu ngầm Gehakuge của Nhật Bản. Đây là Lực lượng Phòng vệ Nhật Bản. Bạn không thể vượt quá điểm này. Sau khi thuyền nước nổi lên, nó trực tiếp tông vào những người khác rồi bỏ đi. Phải mất một lúc lâu tôi mới rời đi. Đây có phải là một vụ nổ trên toàn thế giới? đi ke ni R
+Ông Oga và ông Ta bị bắt. Trận chiến giữa quân đội Mỹ và Roan vẫn tiếp tục. Và mở rộng vào thành phố. Quân đội Trung Quốc sau đó đã cử tàu sân bay mang tên Liangne Fist tới Đài Loan. Xuất hiện trước mặt quân đội Trung Quốc là tàu ngầm Gehakuge của Nhật Bản. Đây là Lực lượng Phòng vệ Nhật Bản. Bạn không thể vượt quá điểm này. Sau khi thuyền nước nổi lên, nó trực tiếp tông vào những người khác rồi bỏ đi. Phải mất một lúc lâu tôi mới rời đi. Đây có phải là một vụ nổ trên toàn thế giới? đi ke ni R
 ```
 
 ---

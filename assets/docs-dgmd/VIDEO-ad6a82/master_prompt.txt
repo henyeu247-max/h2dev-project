@@ -1,0 +1,22 @@
+# Bảng Tra Cứu Góc Quay Điện Ảnh Cho Prompt Sinh Ảnh AI
+
+Tài liệu trích xuất từ bài giảng thực chiến VIDEO-ad6a82.
+
+## 1. BẢNG THUẬT NGỮ GÓC MÁY QUỐC TẾ
+- **Extreme Wide Shot / Establishing Shot**: Toàn cảnh rộng lớn. Dùng ở đầu video để giới thiệu không gian vĩ mô (thành phố, núi rừng, vũ trụ).
+- **Wide Shot / Full Shot**: Toàn thân nhân vật từ đầu đến chân. Dùng để thể hiện tương quan giữa nhân vật và môi trường xung quanh.
+- **Medium Shot (Cowboy Shot)**: Trung cảnh, nhìn từ thắt lưng hoặc đùi trở lên. Góc máy chuẩn nhất cho các cảnh đối thoại, giao tiếp.
+- **Medium Close-up**: Từ ngực trở lên. Bắt đầu tập trung vào biểu cảm và lời nói của nhân vật.
+- **Close-up Shot**: Cận cảnh khuôn mặt. Tác động thị giác mạnh mẽ, bộc lộ rõ niềm vui, nỗi buồn, sự sợ hãi.
+- **Extreme Close-up / Macro**: Đặc tả chi tiết siêu nhỏ (ánh mắt, giọt nước mắt, bàn tay siết chặt, chìa khóa).
+- **Low-angle Shot**: Góc máy từ dưới hất lên. Tạo cảm giác nhân vật hùng vĩ, quyền lực, đáng sợ hoặc người chiến thắng.
+- **High-angle / Bird's-eye View**: Góc máy từ trên cao nhìn xuống. Tạo cảm giác nhân vật nhỏ bé, yếu thế, cô đơn hoặc quan sát toàn cảnh bàn cờ.
+- **Dutch Angle / Tilted Shot**: Góc máy nghiêng chéo. Thể hiện sự bất ổn tâm lý, nguy hiểm, thế giới đảo lộn.
+- **Over-the-shoulder Shot**: Góc máy nhìn qua vai người này sang mặt người kia. Chuẩn mực cho cảnh 2 nhân vật tranh luận.
+
+---
+
+## 2. MẪU PROMPT KẾT HỢP GÓC MÁY
+- Cảnh 1 (Toàn cảnh): `Cinematic wide establishing shot of a futuristic cyberpunk city in heavy rain, neon lights reflecting on wet streets --ar 16:9`
+- Cảnh 2 (Trung cảnh): `Medium shot of a handsome detective in a trench coat talking to a female witness outside a café, 35mm photography --ar 16:9`
+- Cảnh 3 (Cận cảnh): `Dramatic close-up shot of the detective's determined face, sharp focus on eyes, moody rim lighting --ar 16:9`

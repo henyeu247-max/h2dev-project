@@ -17,6 +17,22 @@ const { ROOT, buildManifest } = require('./lib/counts');
 
 const MANIFEST_PATH = path.join(ROOT, 'data', 'counts-manifest.json');
 
+function countVideoDocsFile(fileName) {
+  let count = 0;
+  const start = path.join(ROOT, 'docs');
+  function walk(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.name === fileName) count++;
+    }
+  }
+  for (const entry of fs.readdirSync(start, { withFileTypes: true })) {
+    if (entry.isDirectory() && /^VIDEO-/.test(entry.name)) walk(path.join(start, entry.name));
+  }
+  return count;
+}
+
 // Rule cap nhat docs: {file, pattern (RegExp), build(counts) -> string}
 // Moi pattern neo ngu canh du manh; chi khop so HIEN HANH, khong khop snapshot cu.
 const DOC_RULES = [
@@ -29,9 +45,9 @@ const DOC_RULES = [
     build: c => `$1${c.catalogFullRecords}$2` },
   { file: 'TREE.md', pattern: /(videos\.json\s+# )\d+( SKU \()\d+ free · \d+ pro — gồm \d+ Zoom free(\))/g,
     build: c => `$1${c.videos}$2${c.videoFree} free · ${c.videoPro} pro — gồm ${c.zoomSessions} Zoom free$3` },
-  // docs/VIDEO-* : so thu muc SKU
-  { file: 'TREE.md', pattern: /(VIDEO-\*\\\s+# )\d+(\/)\d+( SKU: README \+ description\.html)/g,
-    build: c => `$1${c.docsVideoDirs}$2${c.docsVideoDirs}$3` },
+  // docs/VIDEO-* : đếm file thật, không suy ra README/description từ số thư mục.
+  { file: 'TREE.md', pattern: /(VIDEO-\*\\\s+# )\d+( README\.md · )\d+( description\.html \(đếm đệ quy hiện trạng\))/g,
+    build: () => `$1${countVideoDocsFile('README.md')}$2${countVideoDocsFile('description.html')}$3` },
   // raw-kenh-goc: so anh + so record thieu anh
   { file: 'TREE.md', pattern: /(raw-kenh-goc\\\s+# )\d+( ảnh raw canonical \+ metadata \()\d+( record: )\d+( kênh chưa có ảnh chụp\))/g,
     build: c => `$1${c.rawChannelImages}$2${c.canonicalRaw}$3${c.rawRecordsWithoutImage}$4` },
@@ -50,7 +66,7 @@ const DOC_RULES = [
   { file: 'TREE.md', pattern: /(thumbs\\                # )\d+(\/)\d+( khớp videos\.json)/g,
     build: c => `$1${c.videos}$2${c.videos}$3` },
   { file: 'TREE.md', pattern: /(video\\\s+# )\d+( thư mục: )\d+( VIDEO-<sku>\\<sku>\.mp4 \+ )\d+( ZOOM-<slug>\\<slug>\.webm \(~)[\d.]+( GiB \/ )[\d.]+( GB\))/g,
-    build: c => `$1${c.videoDirs}$2${c.videoLessons}$3${c.zoomSessions}$4${(c.mediaBytes / 1073741824).toFixed(2)}$5${(c.mediaBytes / 1e9).toFixed(2)}$6` },
+    build: c => `$1${c.videoDirs}$2${c.videoDirs - c.zoomSessions}$3${c.zoomSessions}$4${(c.mediaBytes / 1073741824).toFixed(2)}$5${(c.mediaBytes / 1e9).toFixed(2)}$6` },
 
   // ---- 00_README.md ----
   { file: '00_README.md', pattern: /(kho học H2DEV \()\d+( bài: )\d+( video \+ )\d+( buổi Zoom\))/g,
@@ -126,6 +142,12 @@ const DOC_RULES = [
   { file: 'docs/WORKING_STATE.md',
     pattern: /(\*\*Ma trận ngách YouTube \(`ngach-xanh\.json`\):\*\* \*\*)\d+( ngách\*\* \(`xanh:true` \*\*)\d+(\*\*)/g,
     build: c => `$1${c.niches}$2${c.nichesGreenTrue}$3` },
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(dung lượng ~)[\d.]+( GB \/ )[\d.]+( GiB\))/g,
+    build: c => `$1${(c.mediaBytes / 1e9).toFixed(2)}$2${(c.mediaBytes / 1073741824).toFixed(2)}$3` },
+  { file: 'knowledge-hub/docs/MEMORY.md',
+    pattern: /(0 file 0 byte · )[\d.]+( GB \()[\d.]+( GiB\))/g,
+    build: c => `$1${(c.mediaBytes / 1e9).toFixed(2)}$2${(c.mediaBytes / 1073741824).toFixed(2)}$3` },
 ];
 
 // ---- DB COUNT GATE (2026-10-09) ----
@@ -135,7 +157,7 @@ const DOC_RULES = [
 // Neo khong con khop -> FAIL (tranh rule im lang khong kiem gi).
 const DB_PATH = path.join(ROOT, 'data', 'h2dev_master.db');
 const DB_TABLES = ['lessons', 'lesson_timestamps', 'competitor_channels', 'competitor_top_videos',
-  'documents', 'reup_sources', 'niches', 'search_fts'];
+  'documents', 'reup_sources', 'niches', 'policies', 'checklists', 'search_fts'];
 
 function readDbCounts(dbPath = DB_PATH) {
   if (!fs.existsSync(dbPath)) return { skipped: `khong thay ${path.relative(ROOT, dbPath)}` };
@@ -168,9 +190,12 @@ const DB_DOC_RULES = [
   { file: 'docs/WORKING_STATE.md', label: 'search_fts (dong nguon do truc tiep)',
     pattern: /(`SELECT COUNT\(\*\) FROM search_fts`[^\n]*?= \*\*)\d+(\*\*)/g,
     build: d => `$1${d.search_fts}$2` },
-  { file: 'docs/WORKING_STATE.md', label: 'bang kem theo (lessons..niches)',
-    pattern: /(Bảng kèm theo: `lessons` )\d+( · `lesson_timestamps` )\d+( · `competitor_channels` )\d+( · `competitor_top_videos` )\d+( · `documents` )\d+( · `reup_sources` )\d+( · `niches` )\d+/g,
-    build: d => `$1${d.lessons}$2${d.lesson_timestamps}$3${d.competitor_channels}$4${d.competitor_top_videos}$5${d.documents}$6${d.reup_sources}$7${d.niches}` },
+  { file: 'docs/WORKING_STATE.md', label: 'bang kem theo (lessons..checklists)',
+    pattern: /(Bảng kèm theo: `lessons` )\d+( · `lesson_timestamps` )\d+( · `competitor_channels` )\d+( · `competitor_top_videos` )\d+( · `documents` )\d+( · `reup_sources` )\d+( · `niches` )\d+(?: · `policies` \d+ · `checklists` \d+)?/g,
+    build: d => `$1${d.lessons}$2${d.lesson_timestamps}$3${d.competitor_channels}$4${d.competitor_top_videos}$5${d.documents}$6${d.reup_sources}$7${d.niches} · \`policies\` ${d.policies} · \`checklists\` ${d.checklists}` },
+  { file: 'docs/WORKING_STATE.md', label: 'muc 4.2 Master database (lessons..FTS5)',
+    pattern: /(Master database `data\/h2dev_master\.db` đã rebuild đầy đủ \*\*)\d+( lessons\*\* \(148 H2DEV · 140 Huân · 45 DGMD\), \*\*)[\d.]+( lesson timestamps\*\*, \*\*)[\d.]+( competitor channels\*\*, \*\*)[\d.]+( top videos\*\*, \*\*)[\d.]+( documents\*\*, \*\*)[\d.]+( reup sources\*\*, \*\*)[\d.]+( niches\*\*, \*\*)[\d.]+( policies\*\*, \*\*)[\d.]+( checklists\*\* và \*\*)[\d.]+( FTS5 search index entries\*\*)/g,
+    build: d => `$1${viNum(d.lessons)}$2${viNum(d.lesson_timestamps)}$3${viNum(d.competitor_channels)}$4${viNum(d.competitor_top_videos)}$5${viNum(d.documents)}$6${viNum(d.reup_sources)}$7${viNum(d.niches)}$8${viNum(d.policies)}$9${viNum(d.checklists)}$10${viNum(d.search_fts)}$11` },
 ];
 
 // opts.docPath: ghi de duong dan doc (dung de test tren ban sao tam, KHONG dung file live).
@@ -199,12 +224,12 @@ function applyDbRules({ write, dbPath = DB_PATH, docPath = null } = {}) {
   return { counts: res.counts, changes, missing };
 }
 
-function applyDocRules(counts, { write }) {
+function applyDocRules(counts, { write, fileOverrides = new Map() }) {
   const results = [];
   // Rule khong khop dong nao = neo da chet (doc doi cau chu, rule khong con kiem gi) -> fail loud, khong pass im lang.
   results.unmatched = [];
   for (const rule of DOC_RULES) {
-    const full = path.join(ROOT, rule.file);
+    const full = fileOverrides.get(rule.file) || path.join(ROOT, rule.file);
     if (!fs.existsSync(full)) continue;
     const before = fs.readFileSync(full, 'utf8');
     if (before.search(rule.pattern) === -1) results.unmatched.push(`${rule.file}: ${String(rule.pattern).slice(0, 70)}`);
@@ -280,6 +305,18 @@ function main() {
   const args = process.argv.slice(2);
   const check = args.includes('--check');
   const docsOnly = args.includes('--docs-only');
+  const treeCopyArg = args.indexOf('--tree-copy');
+  const treeCopy = treeCopyArg >= 0 ? args[treeCopyArg + 1] : null;
+  if (treeCopy && !check) {
+    console.error('[counts] --tree-copy chi duoc dung kem --check (probe tren ban sao).');
+    process.exitCode = 2;
+    return;
+  }
+  if (treeCopy && !fs.existsSync(treeCopy)) {
+    console.error('[counts] --tree-copy khong ton tai: ' + treeCopy);
+    process.exitCode = 2;
+    return;
+  }
 
   const live = buildManifest();
   const prev = fs.existsSync(MANIFEST_PATH)
@@ -287,7 +324,8 @@ function main() {
     : null;
 
   const drift = prev ? diffCounts(live, prev) : [];
-  const docChanges = applyDocRules(live.counts, { write: !check });
+  const fileOverrides = treeCopy ? new Map([['TREE.md', path.resolve(treeCopy)]]) : new Map();
+  const docChanges = applyDocRules(live.counts, { write: !check, fileOverrides });
   const memChanges = applyMemorySync(live.counts, { write: !check });
   const dbRes = applyDbRules({ write: !check });
 

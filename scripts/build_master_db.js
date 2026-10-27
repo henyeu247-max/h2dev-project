@@ -43,7 +43,21 @@ db.exec(`
   PRAGMA foreign_keys = ON;
 `);
 
-// 2. DDL Schemas
+// 2. DDL Schemas (drop existing tables if file is memory-mapped by live server)
+db.exec(`
+  PRAGMA foreign_keys = OFF;
+  DROP TABLE IF EXISTS search_fts;
+  DROP TABLE IF EXISTS checklists;
+  DROP TABLE IF EXISTS policies;
+  DROP TABLE IF EXISTS reup_sources;
+  DROP TABLE IF EXISTS documents;
+  DROP TABLE IF EXISTS competitor_top_videos;
+  DROP TABLE IF EXISTS competitor_channels;
+  DROP TABLE IF EXISTS lesson_timestamps;
+  DROP TABLE IF EXISTS lessons;
+  DROP TABLE IF EXISTS niches;
+  PRAGMA foreign_keys = ON;
+`);
 db.exec(`
 -- 1. Niches Table (44 records)
 CREATE TABLE niches (
@@ -156,10 +170,11 @@ CREATE TABLE competitor_top_videos (
     FOREIGN KEY (channel_id) REFERENCES competitor_channels (channel_id) ON DELETE CASCADE
 ) STRICT;
 
--- 6. Documents Table (152 records)
+-- 6. Documents Table (300 records)
 CREATE TABLE documents (
     doc_id INTEGER PRIMARY KEY AUTOINCREMENT,
     sku TEXT,
+    doc_code TEXT,
     name TEXT NOT NULL,
     kind TEXT NOT NULL,
     content_niche TEXT,
@@ -180,7 +195,27 @@ CREATE TABLE reup_sources (
     FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE SET NULL
 ) STRICT;
 
--- 8. Full-Text Search FTS5 Table
+-- 8. Policies Table (12 YouTube 2026 Policy Pillars)
+CREATE TABLE policies (
+    policy_id TEXT PRIMARY KEY,
+    idx INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    cited_skus_json TEXT,
+    cited_channels_json TEXT,
+    cited_docs_json TEXT
+) STRICT;
+
+-- 9. Checklists Table (12 Pre-Publish Checklist Gates)
+CREATE TABLE checklists (
+    check_id TEXT PRIMARY KEY,
+    idx INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    cited_skus_json TEXT
+) STRICT;
+
+-- 10. Full-Text Search FTS5 Table
 CREATE VIRTUAL TABLE search_fts USING fts5(
     entity_id,
     entity_type,
@@ -199,6 +234,13 @@ CREATE INDEX idx_docs_sku ON documents (sku, kind);
 
 console.log('=== [2/8] INGESTING NICHES (data-tabs/ngach-xanh.json) ===');
 const ngachData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'ngach-xanh.json'), 'utf8'));
+function foldVi(s) { return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase(); }
+const insertFtsRaw = db.prepare(`
+  INSERT INTO search_fts (entity_id, entity_type, title, content_text, folded_text)
+  VALUES (?, ?, ?, ?, ?)
+`);
+const insertFts = { run: (id, type, title, content) => insertFtsRaw.run(id, type, title, content, foldVi((title || '') + ' ' + (content || ''))) };
+
 const insertNiche = db.prepare(`
   INSERT INTO niches (
     niche_id, name_vi, is_green, priority_tier, can_execute, revenue_potential,
@@ -214,7 +256,7 @@ let nicheCount = 0;
 const nicheMap = new Map(); // name -> niche_id
 
 for (const n of ngachData.ngachXanh || []) {
-  const id = n.ngach.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+  const id = foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   nicheMap.set(n.ngach, id);
   insertNiche.run(
     id,
@@ -231,12 +273,19 @@ for (const n of ngachData.ngachXanh || []) {
     14.0,
     JSON.stringify(n.thiTruong || [])
   );
+  const alias = /Everyday History EN/i.test(n.ngach) ? 'US_EverydayHistory US EverydayHistory' : '';
+  insertFts.run(
+    id,
+    'NICHE',
+    `[Ngách Xanh Hạng ${n.hang || 1}] ${n.ngach}`,
+    `${n.ngach} ${id} ${alias} ${n.lamDuoc || ''} ${n.kiemDuoc || ''} ${n.viPham || ''} ${n.evidence || ''} ${(n.thiTruong || []).join(' ')} ${(n.mauSach || []).join(' ')} ${(n.mauBan || []).join(' ')}`
+  );
   nicheCount++;
 }
 
 // 5 Meta Niches
 for (const n of ngachData.ngachMetaKho || []) {
-  const id = 'meta_' + n.ngach.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+  const id = 'meta_' + foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   nicheMap.set(n.ngach, id);
   insertNiche.run(
     id,
@@ -253,12 +302,13 @@ for (const n of ngachData.ngachMetaKho || []) {
     10.0,
     JSON.stringify([])
   );
+  insertFts.run(id, 'NICHE', `[Nhóm Nền Tảng] ${n.ngach}`, `${n.ngach} ${id} ${n.vaiTro || ''} ${n.evidence || ''}`);
   nicheCount++;
 }
 
 // 5 Red Niches
 for (const n of ngachData.ngachDoCanTranh || []) {
-  const id = 'red_' + n.ngach.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+  const id = 'red_' + foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   nicheMap.set(n.ngach, id);
   insertNiche.run(
     id,
@@ -275,7 +325,55 @@ for (const n of ngachData.ngachDoCanTranh || []) {
     0.0,
     JSON.stringify([])
   );
+  insertFts.run(id, 'NICHE', `[Ngách Đỏ Cần Tránh] ${n.ngach}`, `${n.ngach} ${id} KHÔNG NÊN LÀM ${n.lydo || ''}`);
   nicheCount++;
+}
+
+// Build canonical SKU -> niche_id and Handle -> niche_id maps from ngach-xanh.json
+// so all 44 canonical niches (Green + Meta + Red) link directly to their lessons and benchmark channels.
+const canonicalNicheBySku = new Map();
+const canonicalNicheByHandle = new Map();
+for (const n of ngachData.ngachMetaKho || []) {
+  const nid = nicheMap.get(n.ngach);
+  if (!nid) continue;
+  for (const s of (n.skus || [])) {
+    canonicalNicheBySku.set(s, nid);
+  }
+}
+for (const n of ngachData.ngachXanh || []) {
+  const nid = nicheMap.get(n.ngach);
+  if (!nid) continue;
+  for (const s of (n.skus || [])) {
+    if (!canonicalNicheBySku.has(s) || (n.skus || []).length <= 4) {
+      canonicalNicheBySku.set(s, nid);
+    }
+  }
+  for (const h of [...(n.mauSach || []), ...(n.mauPhu || []), ...(n.mauBan || [])]) {
+    if (h) canonicalNicheByHandle.set(String(h).toLowerCase(), nid);
+  }
+}
+const explicitHandleNicheOverrides = {
+  '@factoryrebornvn': 'nha_may_san_xuat',
+  '@kronoset.history': 'nha_may_san_xuat',
+  '@sincewwii': 'dia_chinh_tri_en_north_effect',
+  '@blitzkrieg-channel': 'dia_chinh_tri_en_north_effect',
+  '@kapitalkompass-us': 'quy_luat_kinh_te_economy_rewind',
+  '@workshopdecoded': 'kiem_soat_sinh_hoc_chien_thuat',
+  '@simpleconceptsexplained': 'kiem_soat_sinh_hoc_chien_thuat',
+  '@기적의마인드-w7d': 'dua_tre_han',
+  '@ericbennettmd': 'red_ai_gia_bac_si_doctors_warn',
+  '@doctordr.lee-h9t': 'red_ai_gia_bac_si_doctors_warn',
+  '@doctorjohnmeyers': 'red_ai_gia_bac_si_doctors_warn',
+  '@richpatternresearchinstitute': 'red_ai_tu_van_tai_chinh_co_phieu',
+  '@wildbirdsurvival-jp': 'red_wildlife_distress_rescue',
+  '@새벽의두만강': 'red_farm_doi_ten_nhan_vat',
+  '@구름야담': 'red_farm_doi_ten_nhan_vat',
+  '@darkcrimeshistory': 'red_true_crime_chien_tranh_hien_dai_compilation_anime_recap_clip_goc',
+  '@unseentruecrime': 'red_true_crime_chien_tranh_hien_dai_compilation_anime_recap_clip_goc',
+  '@the_regular_recap': 'red_true_crime_chien_tranh_hien_dai_compilation_anime_recap_clip_goc'
+};
+for (const [h, nid] of Object.entries(explicitHandleNicheOverrides)) {
+  canonicalNicheByHandle.set(h.toLowerCase(), nid);
 }
 
 db.exec('COMMIT;');
@@ -296,16 +394,24 @@ function formatEditSop(sop) {
   return String(sop);
 }
 
-console.log('=== [3/8] INGESTING LESSONS & TIMESTAMPS (136 Videos) ===');
+console.log('=== [3/8] INGESTING LESSONS & TIMESTAMPS (333 Videos across 3 branches) ===');
 const catalogFull = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog_full.json'), 'utf8'));
 const catalogSlim = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog.json'), 'utf8'));
+const catalogHuan = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog_huan.json'), 'utf8'));
+const catalogDgmd = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog_dgmd.json'), 'utf8'));
 const videoTabs = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'videos.json'), 'utf8'));
-const videoInsights = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'video_insights.json'), 'utf8'));
+const videosHuan = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'videos_huan.json'), 'utf8'));
+const videosDgmd = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'videos_dgmd.json'), 'utf8'));
+const videoInsightsH2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'video_insights.json'), 'utf8'));
+const videoInsightsHuan = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'video_insights_huan.json'), 'utf8'));
+const videoInsightsDgmd = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'video_insights_dgmd.json'), 'utf8'));
+const videoInsights = Object.assign({}, videoInsightsH2, videoInsightsHuan, videoInsightsDgmd);
+const allCatalogFull = catalogFull.concat(catalogHuan, catalogDgmd);
 
 // Map SKU -> nguồn phụ trợ (fix 16/09: catalog_full thiếu duration_sec/is_pro/resolution;
 // videos.json là nguồn sự thật của UI cho market; catalog.json có đủ media metadata)
-const slimBySku = new Map(catalogSlim.map(v => [v.sku, v]));
-const tabsBySku = new Map((Array.isArray(videoTabs) ? videoTabs : []).map(v => [v.sku, v]));
+const slimBySku = new Map(catalogSlim.concat(catalogHuan, catalogDgmd).map(v => [v.sku, v]));
+const tabsBySku = new Map((Array.isArray(videoTabs) ? videoTabs : []).concat(videosHuan, videosDgmd).map(v => [v.sku, v]));
 const MARKET_FLAG_TO_CODE = {
   '🇻🇳 Việt': 'VN', '🇯🇵 Nhật': 'JP', '🇰🇷 Hàn': 'KR', '🇨🇳 Trung': 'CN',
   '🇺🇸 Mỹ': 'US', '🇷🇺 Nga': 'RU', '🌐 Ngoại': 'GLOBAL', '🇨🇦 Canada': 'CA',
@@ -336,31 +442,21 @@ const insertTimestamp = db.prepare(`
   VALUES (?, ?, ?, ?)
 `);
 
-/* 2026-09-30: cot folded_text = (title + content) bo dau tieng Viet + d/D -> tim khong dau ra ket qua co dau.
-   unicode61 mac dinh chi bo 1 phan dau (do: "nguon" 0 / "nguồn" 30, "nhat" 0 / "Nhật" 50, "duoc" 0).
-   Them o CUOI de chi so cot cu (snippet(search_fts, 3, ...)) khong doi. */
-function foldVi(s) { return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase(); }
-const insertFtsRaw = db.prepare(`
-  INSERT INTO search_fts (entity_id, entity_type, title, content_text, folded_text)
-  VALUES (?, ?, ?, ?, ?)
-`);
-const insertFts = { run: (id, type, title, content) => insertFtsRaw.run(id, type, title, content, foldVi((title || '') + ' ' + (content || ''))) };
-
 db.exec('BEGIN TRANSACTION;');
 let lessonCount = 0;
 let timestampCount = 0;
 
-for (const v of catalogFull) {
+for (const v of allCatalogFull) {
   const sku = v.sku;
   const insight = videoInsights[sku] || {};
   const slim = slimBySku.get(sku) || {};
   const tab = tabsBySku.get(sku) || {};
 
-  // Niche lookup
+  // Niche lookup (ưu tiên canonical mapping từ ngach-xanh.json trước)
   const nicheName = v.niche_primary || insight.niche_primary || 'Khác';
-  let nicheId = nicheMap.get(nicheName);
+  let nicheId = canonicalNicheBySku.get(sku) || nicheMap.get(nicheName);
   if (!nicheId) {
-    nicheId = 'niche_' + nicheName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+    nicheId = 'niche_' + foldVi(nicheName).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
     if (!nicheMap.has(nicheName)) {
       insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
       nicheMap.set(nicheName, nicheId);
@@ -386,10 +482,14 @@ for (const v of catalogFull) {
   // Fix 16/09: is_pro/is_free theo catalog.json (nguồn UI) — catalog_full hardcode is_pro=true
   const isFree = slim.is_free !== undefined ? slim.is_free : (v.free || v.is_free ? true : false);
   const isPro = slim.is_pro !== undefined ? slim.is_pro : (v.is_pro !== false);
-  // Fix 16/09: resolution/width/height ưu tiên catalog.json
-  const resolution = slim.resolution || v.resolution || '1080p';
+  // Fix 16/09 + 26/10: resolution/width/height ưu tiên kích thước thực tế
   const width = slim.width || v.width || 1920;
   const height = slim.height || v.height || 1080;
+  let resolution = slim.resolution || v.resolution || '1080p';
+  if (width >= 3840 || height >= 3840) resolution = '4K';
+  else if (width >= 2560 || height >= 2560) resolution = '2K';
+  else if (height > width) resolution = 'Shorts 1080p';
+  const originUrl = v.origin || v.video_link || (sku.startsWith('ZOOM-') ? `docs/NOI-BO/zoom/${sku}.md` : '');
 
   insertLesson.run(
     sku,
@@ -407,7 +507,7 @@ for (const v of catalogFull) {
     height,
     v.mp4 || `video/${sku}/${sku}.mp4`,
     v.image || `assets/thumbs/${sku}.png`,
-    v.origin || v.video_link || '',
+    originUrl,
     isFree ? 1 : 0,
     isPro ? 1 : 0,
     v.size > 0 ? 1 : 0,
@@ -428,7 +528,7 @@ for (const v of catalogFull) {
   }
 
   // Insert FTS5 full text search
-  const searchableText = `${v.title} ${insight.actual_topic || ''} ${takeaways.join(' ')} ${editSop} ${avoidFlags.join(' ')}`;
+  const searchableText = `${sku} ${v.title} ${nicheName || ''} ${insight.actual_topic || ''} ${takeaways.join(' ')} ${editSop} ${avoidFlags.join(' ')} ${tools.join(' ')}`;
   insertFts.run(sku, 'LESSON', v.title, searchableText);
 }
 
@@ -487,7 +587,7 @@ for (const r of rawKenhMau) {
 
   const title = ch.title || r.title || r.id;
   const nicheName = r.editorialNiche || r.niche || 'Khác';
-  let nicheId = nicheMap.get(nicheName);
+  let nicheId = canonicalNicheByHandle.get(cleanHandle) || nicheMap.get(nicheName);
   // 2026-10-09: record trung (duplicateOf) KHONG tao ngach auto moi. Row kenh da upsert vao record goc
   // (ON CONFLICT khong cap nhat niche_id) nen ngach sinh tu ban trung thanh mo coi
   // (RAW-106/107 -> RAW-054, RAW-127 -> RAW-089). Dung niche_id cua record goc.
@@ -495,7 +595,7 @@ for (const r of rawKenhMau) {
     nicheId = rawNicheById.get(r.duplicateOf);
   }
   if (!nicheId) {
-    nicheId = 'niche_' + nicheName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+    nicheId = 'niche_' + foldVi(nicheName).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
     if (!nicheMap.has(nicheName)) {
       // Fix 16/09: ngách auto-gen (từ channel) KHÔNG được gắn cờ xanh — chưa qua 7 tiêu chí XANH
       insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
@@ -542,6 +642,10 @@ for (const r of rawKenhMau) {
   const voiceTalentProfile = vpData?.voiceCharacteristics?.genderEstimate || null;
   const wpm = vpData?.voiceCharacteristics?.actualPaceWPM ? parseInt(vpData.voiceCharacteristics.actualPaceWPM) : 135;
 
+  const lcState = r.channelLifecycle?.state || '';
+  const isDeadRaw = lcState === 'TERMINATED_BY_YOUTUBE' || lcState === 'DEAD_404';
+  const yppStatusRaw = isDeadRaw ? lcState : (vat.healthStatus || 'ACTIVE');
+
   insertChannel.run(
     channelId,
     r.id,
@@ -558,8 +662,8 @@ for (const r of rawKenhMau) {
     r.editorialNiche || nicheName,
     vat.latestUploadDate || null,
     vat.daysSinceLatest || 0,
-    vat.healthStatus || 'ACTIVE',
-    1,
+    yppStatusRaw,
+    isDeadRaw ? 0 : 1,
     hasVoiceSample,
     voiceSamplePath,
     wpm,
@@ -576,7 +680,7 @@ for (const r of rawKenhMau) {
   channelCount++;
   if (!ftsChannelIds.has(channelId)) {
     ftsChannelIds.add(channelId);
-    insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${nicheName} ${(ch.topics || []).join(' ')}`);
+    insertFts.run(channelId, 'CHANNEL', title, `${r.id || ''} ${channelId} ${title} ${handle} ${nicheName} ${(ch.topics || []).join(' ')}`);
   }
 }
 
@@ -603,9 +707,9 @@ for (const k of kenhMau) {
   if (processedChannelIds.has(channelId)) continue;
   processedChannelIds.add(channelId);
 
-  let nicheId = nicheMap.get(nicheName);
+  let nicheId = canonicalNicheByHandle.get(cleanHandle) || nicheMap.get(nicheName);
   if (!nicheId) {
-    nicheId = 'niche_' + nicheName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+    nicheId = 'niche_' + foldVi(nicheName).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
     if (!nicheMap.has(nicheName)) {
       // Fix 16/09: ngách auto-gen (từ channel) KHÔNG được gắn cờ xanh — chưa qua 7 tiêu chí XANH
       insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
@@ -635,7 +739,7 @@ for (const k of kenhMau) {
     nicheName,
     k.ngay_do || null,
     0,
-    k.dead ? 'DEAD_404' : 'ACTIVE',
+    k.status || (k.dead ? 'DEAD_404' : 'ACTIVE'),
     k.dead ? 0 : 1,
     0,
     null,
@@ -726,22 +830,24 @@ if (fs.existsSync(deepDir)) {
 db.exec('COMMIT;');
 console.log(`Ingested ${topVideoCount} Top Videos into table 'competitor_top_videos'.`);
 
-console.log('=== [6/8] INGESTING DOCUMENTS (152 Records) ===');
+console.log('=== [6/8] INGESTING DOCUMENTS (300 Records) ===');
 const docsData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'tai-lieu-full.json'), 'utf8'));
 const insertDoc = db.prepare(`
   INSERT INTO documents (
-    sku, name, kind, content_niche, link_url, file_local_path, source_label
-  ) VALUES (?, ?, ?, ?, ?, ?, ?)
+    sku, doc_code, name, kind, content_niche, link_url, file_local_path, source_label
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
 db.exec('BEGIN TRANSACTION;');
 const lessonSkuSet = new Set(db.prepare('SELECT sku FROM lessons').all().map((r) => r.sku));
 let docCount = 0;
 for (const d of docsData) {
-  // FK documents.sku -> lessons.sku: sku khong thuoc lessons (vd RESEARCH-*) -> luu NULL
+  // FK documents.sku -> lessons.sku: sku khong thuoc lessons (vd RESEARCH-*, NOI-BO) -> luu NULL o sku, giu nguyen o doc_code
+  const docCode = d.sku || d.id || 'NOI-BO';
   const docSku = (!d.sku || d.sku === 'NOI-BO' || !lessonSkuSet.has(d.sku)) ? null : d.sku;
   insertDoc.run(
     docSku,
+    docCode,
     d.name,
     d.kind || 'other',
     d.contentNiche || '',
@@ -750,16 +856,28 @@ for (const d of docsData) {
     d.source || 'H2DEV'
   );
   docCount++;
-  insertFts.run(`DOC_${docCount}`, 'SOP', d.name, `${d.name} ${d.contentNiche} ${d.kind}`);
+  const docPad = `DOC-${String(docCount).padStart(3, '0')}`;
+  insertFts.run(`DOC_${docCount}`, 'SOP', d.name, `${docPad} DOC_${docCount} ${d.name} ${docCode} ${d.contentNiche || ''} ${d.kind || ''}`);
 }
 db.exec('COMMIT;');
 console.log(`Ingested ${docCount} Documents into table 'documents'.`);
 
-console.log('=== [7/8] INGESTING REUP SOURCES (27 Records) ===');
+console.log('=== [7/8] INGESTING REUP SOURCES, POLICIES & CHECKLISTS ===');
 const reupData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'nguon-reup.json'), 'utf8'));
+const chienLuocData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'chien-luoc.json'), 'utf8'));
 const insertReup = db.prepare(`
   INSERT INTO reup_sources (
     sku, name, host_type, link_url, content_niche
+  ) VALUES (?, ?, ?, ?, ?)
+`);
+const insertPolicy = db.prepare(`
+  INSERT INTO policies (
+    policy_id, idx, title, content, cited_skus_json, cited_channels_json, cited_docs_json
+  ) VALUES (?, ?, ?, ?, ?, ?, ?)
+`);
+const insertChecklist = db.prepare(`
+  INSERT INTO checklists (
+    check_id, idx, title, content, cited_skus_json
   ) VALUES (?, ?, ?, ?, ?)
 `);
 
@@ -779,9 +897,45 @@ for (const r of reupData) {
     r.contentNiche || ''
   );
   reupCount++;
+  insertFts.run(`REUP_${reupCount}`, 'REUP', `[${hostType}] ${r.name}`, `REUP_${reupCount} ${r.name} ${hostType} ${r.sku || ''} ${r.contentNiche || ''} ${r.link || ''}`);
 }
+
+let policyCount = 0;
+for (let i = 0; i < (ngachData.thongTinChinhSach2026 || []).length; i++) {
+  const raw = String(ngachData.thongTinChinhSach2026[i] || '');
+  const policyId = `P${String(i + 1).padStart(2, '0')}`;
+  const mTitle = raw.match(/^\[([^\]]+)\]\s*(?:—|-)?\s*([\s\S]*)$/);
+  const title = mTitle ? mTitle[1].trim() : `Chính sách YouTube #${i + 1}`;
+  const body = mTitle ? mTitle[2].trim() : raw;
+  const skus = [...new Set((raw.match(/\b(?:VIDEO-[A-Za-z0-9]{6}|ZOOM-0[1-4]-[A-Za-z0-9-]+)\b/g) || []))];
+  const chans = [...new Set((raw.match(/@[^\s,.;:()\[\]]+/g) || []))];
+  const docs = [...new Set((raw.match(/\b[A-Za-z0-9_-]+\.(?:md|txt|json)\b/g) || []))];
+  insertPolicy.run(policyId, i + 1, title, body, JSON.stringify(skus), JSON.stringify(chans), JSON.stringify(docs));
+  policyCount++;
+  insertFts.run(policyId, 'POLICY', `[Chính sách #${i + 1}] ${title}`, `${policyId} ${title} ${body}`);
+}
+
+let checklistCount = 0;
+for (let i = 0; i < (chienLuocData.checklistTruocKhiDang || []).length; i++) {
+  const raw = String(chienLuocData.checklistTruocKhiDang[i] || '');
+  const checkId = `CL${String(i + 1).padStart(2, '0')}`;
+  const mTitle = raw.match(/^\[([^\]]+)\]\s*([\s\S]*)$/);
+  const title = mTitle ? mTitle[1].trim() : `Checklist #${i + 1}`;
+  const body = mTitle ? mTitle[2].trim() : raw;
+  const skus = [...new Set((raw.match(/\b(?:VIDEO-[A-Za-z0-9]{6}|ZOOM-0[1-4]-[A-Za-z0-9-]+)\b/g) || []))];
+  insertChecklist.run(checkId, i + 1, title, body, JSON.stringify(skus));
+  checklistCount++;
+  insertFts.run(checkId, 'CHECKLIST', `[Checklist] ${title}`, `${checkId} ${title} ${body}`);
+}
+db.exec(`
+  DELETE FROM niches
+  WHERE niche_id NOT IN (SELECT DISTINCT niche_id FROM lessons WHERE niche_id IS NOT NULL)
+    AND niche_id NOT IN (SELECT DISTINCT niche_id FROM competitor_channels WHERE niche_id IS NOT NULL);
+  INSERT INTO search_fts(search_fts, rank) VALUES('rank', 'bm25(10.0, 1.0, 5.0, 2.0, 1.5)');
+  INSERT INTO search_fts(search_fts) VALUES('optimize');
+`);
 db.exec('COMMIT;');
-console.log(`Ingested ${reupCount} Reup Sources into table 'reup_sources'.`);
+console.log(`Ingested ${reupCount} Reup Sources, ${policyCount} Policies, and ${checklistCount} Checklists.`);
 
 console.log('=== [8/8] AUDIT & VERIFY MASTER DATABASE N/N 100% ===');
 const stats = {
@@ -792,17 +946,22 @@ const stats = {
   topVideos: db.prepare('SELECT COUNT(*) AS c FROM competitor_top_videos').get().c,
   documents: db.prepare('SELECT COUNT(*) AS c FROM documents').get().c,
   reupSources: db.prepare('SELECT COUNT(*) AS c FROM reup_sources').get().c,
+  policies: db.prepare('SELECT COUNT(*) AS c FROM policies').get().c,
+  checklists: db.prepare('SELECT COUNT(*) AS c FROM checklists').get().c,
   ftsEntries: db.prepare('SELECT COUNT(*) AS c FROM search_fts').get().c,
 };
 
 console.log('\nFINAL MASTER DATABASE AUDIT RESULTS:');
 console.log(' - Total Niches:', stats.niches, '(Expected: 44+) ->', stats.niches >= 44 ? 'PASS' : 'FAIL');
-console.log(' - Total Lessons:', stats.lessons, `(Expected: ${C.videos}) ->`, stats.lessons === C.videos ? 'PASS' : 'FAIL');
+const expectedLessons = allCatalogFull.length;
+console.log(' - Total Lessons:', stats.lessons, `(Expected: ${expectedLessons}) ->`, stats.lessons === expectedLessons ? 'PASS' : 'FAIL');
 console.log(' - Total Lesson Timestamps:', stats.timestamps, '-> PASS');
 console.log(' - Total Competitor Channels:', stats.channels, `(Expected: >= ${C.channels}) ->`, stats.channels >= C.channels ? 'PASS' : 'FAIL');
 console.log(' - Total Competitor Top Videos:', stats.topVideos, '(Expected: 790+) ->', stats.topVideos >= 790 ? 'PASS' : 'FAIL');
 console.log(' - Total Documents:', stats.documents, `(Expected: ${C.documents}) ->`, stats.documents === C.documents ? 'PASS' : 'FAIL');
 console.log(' - Total Reup Sources:', stats.reupSources, `(Expected: ${C.nguonReup}) ->`, stats.reupSources === C.nguonReup ? 'PASS' : 'FAIL');
+console.log(' - Total Policies:', stats.policies, '(Expected: 12) ->', stats.policies === 12 ? 'PASS' : 'FAIL');
+console.log(' - Total Checklists:', stats.checklists, '(Expected: 12) ->', stats.checklists === 12 ? 'PASS' : 'FAIL');
 console.log(' - Total FTS5 Search Index Entries:', stats.ftsEntries, '-> PASS');
 
 db.close();

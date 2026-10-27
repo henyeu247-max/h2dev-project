@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Hãy quên phiên bản điện ảnh của Miền Tây Cổ đi. Thực tế tàn khốc, bẩn thỉu và không có anh hùng. Sự phản bội vì tiền, những thị trấn biến thành nghĩa trang, những kẻ sống ngoài vòng pháp luật bị chính đồng bọn của họ giết chết. Các nhà sử học đã dành nhiều thập kỷ để chôn vùi những ghi chép đáng lo ngại nhất từ ​​thời kỳ đó. Giờ đây, 25 sự thật được ghi lại đã tiết lộ điều gì thực sự đã xảy ra khi máy quay không quay."
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Hãy quên phiên bản điện ảnh của Miền Tây Cổ đi. Thực tế tàn khốc, bẩn thỉu và không có anh hùng. Sự phản bội vì tiền, những thị trấn biến thành nghĩa trang, những kẻ sống ngoài vòng pháp luật bị chính đồng bọn của họ giết chết. Các nhà sử học đã dành nhiều thập kỷ để chôn vùi những ghi chép đáng lo ngại nhất từ thời kỳ đó. Giờ đây, 25 sự thật được ghi lại đã tiết lộ điều gì thực sự đã xảy ra khi máy quay không quay."
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Hãy quên phiên bản điện ảnh của Miền Tây Cổ đi. Thực tế tàn khốc, bẩn thỉu và không có anh hùng. Sự phản bội vì tiền, những thị trấn biến thành nghĩa trang, những kẻ sống ngoài vòng pháp luật bị chính đồng bọn của họ giết chết. Các nhà sử học đã dành nhiều thập kỷ để chôn vùi những ghi chép đáng lo ngại nhất từ ​​thời kỳ đó. Giờ đây, 25 sự thật được ghi lại đã tiết lộ điều gì thực sự đã xảy ra khi máy quay không quay.
+Hãy quên phiên bản điện ảnh của Miền Tây Cổ đi. Thực tế tàn khốc, bẩn thỉu và không có anh hùng. Sự phản bội vì tiền, những thị trấn biến thành nghĩa trang, những kẻ sống ngoài vòng pháp luật bị chính đồng bọn của họ giết chết. Các nhà sử học đã dành nhiều thập kỷ để chôn vùi những ghi chép đáng lo ngại nhất từ thời kỳ đó. Giờ đây, 25 sự thật được ghi lại đã tiết lộ điều gì thực sự đã xảy ra khi máy quay không quay.
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 Hãy sẵn sàng để tìm hiểu lịch sử không ai nói đến. Đăng ký kênh của chúng tôi và để lại một số quảng cáo trên video để giúp chúng tôi out. Số một, Sam Bass, tên cướp tàu đã bị một trong những chỉ trích của riêng anh ấy. Năm 1877, Bass và đồng bọn dừng chuyến tàu [âm nhạc] Union Pacific ở Nebraska và kiếm được 60.000 đô la tiền vàng. Hồi đó số tiền đó đủ để mua cả một trang trại. Vấn đề là một bản hit như [âm nhạc] thu hút quá nhiều sự chú ý. Đội Kiểm lâm Texas muốn có âm trầm bằng mọi giá và họ đã có được anh ấy. Một trong những thành viên băng đảng của anh ta, Jim Murphy, đã thực hiện một thỏa thuận bí mật với law. Anh ta từ bỏ kế hoạch cho vụ cướp tiếp theo ở Round Rock, Texas. Khi Bass xuất hiện trong thị trấn, Rangers đã đợi sẵn. Cuộc đấu súng không kéo dài lâu. Bass bị bắn vào lưng và tự tử 2 ngày sau đó sinh nhật. Anh ấy 27 tuổi. Ở phương Tây cổ, việc tin tưởng nhầm người có thể khiến bạn phải trả giá bằng mạng sống. Nếu bạn muốn có hồ sơ vụ án đằng sau những câu chuyện như thế này, tôi đã ghim toàn bộ gói hồ sơ ở phần bình luận trên cùng. Không có áp lực. Nó chỉ ở đó nếu bạn muốn đi sâu hơn. Thứ hai, cuộc chiến tranh dây thép gai. Bạn có biết một sợi dây đơn giản đã gây ra m...

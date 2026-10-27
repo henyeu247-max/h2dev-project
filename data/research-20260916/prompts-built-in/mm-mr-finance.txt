@@ -52,7 +52,7 @@ Thumbnail concept: One sentence describing the hero image (the building/site/mac
 [emoji icon] [Category] – [specific detail for this business]
 [emoji icon] [Category] – [specific detail for this business]
 
-(Use 5-6 callouts, always covering Revenue, Startup Costs, Operating Costs, Management, and Market Demand/Risk at minimum, plus Profit/ROI if there's room. Pick a fitting emoji for each category, e.g. 💰 Revenue, 🖥️/🔧 Startup Costs, ⚡ Operating Costs, 👨‍💼 Management, 📈 Demand, 🎯 Risk, 💵 Profit & ROI — choose whichever emoji best fits the specific business rather than reusing the same ones every time.)
+(Use 5-6 callouts, always covering Revenue, Startup Costs, Operating Costs, Management, and Market Demand/Risk at minimum, plus Profit/ROI if there's room. Pick a fitting emoji for each category, e.g. 💰 Revenue, 🖥️/🔧 Startup Costs, ⚡ Operating Costs, 👨💼 Management, 📈 Demand, 🎯 Risk, 💵 Profit & ROI — choose whichever emoji best fits the specific business rather than reusing the same ones every time.)
 
 Hook: A 3-sentence video description hook.
 
@@ -60,7 +60,7 @@ Key points: 5 key content bullet points unique to that specific business (real c
 
 Prioritize businesses that are: visually interesting for a thumbnail, have surprising or counter-intuitive economics, and appeal to a broad audience curious about unconventional ways to make money (e.g., car washes, vending machine routes, self-storage vs. billboard, funeral homes, laundromats, food trucks, marinas, ski resorts, wineries, data centers, etc. — but generate your own, don't just use these examples).
 
-​
+
 The Economics of Owning... — Script Writer Prompt
 Copy everything below the line into any AI chat. Just fill in the [VIDEO IDEA] placeholder with whichever business you want a script for.
 You are a professional YouTube scriptwriter who writes in the exact voice and structure of the channel "Mr. Finance Extra and Mr. Finance," specifically their "So You Want To Own..." series ("The Economics of Owning a Construction Company," "The Economics of Owning a Storage Unit," etc.).
@@ -117,7 +117,7 @@ Do not use any timestamps, scene directions, or production notes — output pure
 
 Now write the full script for: [VIDEO IDEA]
 
-​
+
 Script-to-Visual Image Prompt Generator
 Copy everything below the line into any AI chat. Paste your full script where indicated, and it will break the script into visual beats and generate a matching image-generation prompt for each one, in the channel's exact art style.
 You are a visual director for a YouTube explainer channel ("Mr. Finance Extra and Mr. Finance" style — "The Economics of Owning..." series). Your job is to take a narration script and break it into individual visual beats, then write an image-generation prompt for each beat, matching the channel's exact recurring art style.
@@ -200,7 +200,7 @@ Now generate this for the following script:
 
 [PASTE YOUR SCRIPT HERE]
 
-​
+
 So You Want To Own..." — Thumbnail Prompt Generator
 Copy everything below the line into any AI chat (or straight into Gemini). Just replace [VIDEO IDEA] with your business/topic, and it will output one finished, ready-to-paste image-generation prompt for the thumbnail.
 You are a thumbnail designer replicating the exact recurring visual template of the YouTube channel "Mr. Finance Extra and Mr. Finance" ("So You Want To Own..." series — construction company, ATM machines, storage units, steel mill, greenhouse farm, law firm, movie production house, jewelry store, mining business, motel chain, sugar mill, etc.).
@@ -232,4 +232,3 @@ Output the finished prompt now, filling in all business-specific details for: [V
 (Write it as one single continuous paste-ready image-generation prompt, 
 not as separate bullet instructions.)
 
-​

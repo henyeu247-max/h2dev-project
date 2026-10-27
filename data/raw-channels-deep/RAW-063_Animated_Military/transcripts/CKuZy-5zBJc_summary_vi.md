@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Lần đầu tiên kể từ Thế chiến II, 40 đồng minh thân cận nhất của Mỹ chỉ đã nói với Washington là không. Hải quân Hoa Kỳ hiện đang có mặt ở Vịnh Ba Tư, thực thi cuộc phong tỏa hải quân lớn nhất Trung Đông từng chứng kiến ​​trong 40 năm Hai tàu sân bay, 18 tàu chiến, 10.000 thủy thủ Mỹ đóng quân."
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Lần đầu tiên kể từ Thế chiến II, 40 đồng minh thân cận nhất của Mỹ chỉ đã nói với Washington là không. Hải quân Hoa Kỳ hiện đang có mặt ở Vịnh Ba Tư, thực thi cuộc phong tỏa hải quân lớn nhất Trung Đông từng chứng kiến trong 40 năm Hai tàu sân bay, 18 tàu chiến, 10.000 thủy thủ Mỹ đóng quân."
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Lần đầu tiên kể từ Thế chiến II, 40 đồng minh thân cận nhất của Mỹ chỉ đã nói với Washington là không. Hải quân Hoa Kỳ hiện đang có mặt ở Vịnh Ba Tư, thực thi cuộc phong tỏa hải quân lớn nhất Trung Đông từng chứng kiến ​​trong 40 năm Hai tàu sân bay, 18 tàu chiến, 10.000 thủy thủ Mỹ đóng quân.
+Lần đầu tiên kể từ Thế chiến II, 40 đồng minh thân cận nhất của Mỹ chỉ đã nói với Washington là không. Hải quân Hoa Kỳ hiện đang có mặt ở Vịnh Ba Tư, thực thi cuộc phong tỏa hải quân lớn nhất Trung Đông từng chứng kiến trong 40 năm Hai tàu sân bay, 18 tàu chiến, 10.000 thủy thủ Mỹ đóng quân.
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 Hỏa lực của Mỹ tập trung ở một dải đại dương nhiều hơn hầu hết các quốc gia có trong toàn bộ quân đội của họ. Và những quốc gia đã tuần hành bên cạnh lá cờ Mỹ trong mọi cuộc xung đột lớn kể từ khi Thế chiến thứ hai kết thúc, Vương quốc Anh, Pháp, Đức, Ý, Canada, Nhật Bản, Australia vừa công khai tuyên bố sẽ không tham gia trận đấu này. Đây không phải là một bất đồng nhỏ. Đây không phải là một cử chỉ ngoại giao. Vào thứ Sáu tuần này, 40 quốc gia sẽ tổ chức hội nghị video để thảo luận về làm thế nào để mở lại eo biển Hormuz. Hoa Kỳ không có tên trong danh sách mời. Pháp và Anh đang điều hành cuộc họp. Kế hoạch mà họ đang thực hiện được thiết kế đặc biệt để có hiệu lực sau Chiến tranh Mỹ đã kết thúc, không phải trong thời gian đó. Và Tổng thống Trump đã đáp lại tất cả những điều đó trên mạng xã hội chỉ bằng một dòng tóm tắt thời điểm này tốt hơn bất kỳ nhà phân tích chính trị nào có thể. NATO đã không ở đó vì chúng tôi. Họ sẽ không ở đó vì chúng ta trong tương lai. Đến cuối video này, bạn sẽ hiểu rõ tại sao lại là đồng minh lâu đời nhất của Mỹ từ chối tham gia chiến dịch hải quân đầy tham vọng nhất ở Trung Đông trong một thế hệ, việc từ chối đó thực sự có ý nghĩa gì trên mặt nước lúc ...

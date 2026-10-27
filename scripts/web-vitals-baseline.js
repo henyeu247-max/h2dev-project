@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PAGES = ['/', '/rawkenh', '/kenh-mau', '/nhac', '/player.html?sku=VIDEO-DD983D'];
-const TARGETS = process.argv.slice(2).length ? process.argv.slice(2) : ['http://127.0.0.1:8899', 'https://h2dev-learn.tonymmo.com'];
+const TARGETS = process.argv.slice(2).length ? process.argv.slice(2) : ['http://127.0.0.1:8899', 'https://97yo-dev-learn.tonymmo.com'];
 
 async function measure(base, pagePath, browser) {
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 } });

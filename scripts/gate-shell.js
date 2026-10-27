@@ -32,6 +32,7 @@
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
+const crypto = require('crypto');
 
 const ROOT = path.resolve(__dirname, '..');
 const BASE = process.env.H2_GATE_BASE || 'http://127.0.0.1:8899';
@@ -46,7 +47,7 @@ const VIEWPORTS = [
   { name: 'desktop', width: 1440, height: 900, headerH: 56, touch: 36 },
   { name: 'mobile', width: 390, height: 844, headerH: 56, touch: 44 },
 ];
-const FOOTER_STD = 'H2DEV \u00b7 kho faceless YouTube \u00b7 kh\u00f4ng c\u1ea7n \u0111\u0103ng nh\u1eadp';
+const FOOTER_STD = '97yo-dev \u00b7 H\u1ec7 sinh th\u00e1i \u0111\u00e0o t\u1ea1o & kho d\u1eef li\u1ec7u YouTube \u00b7 kh\u00f4ng c\u1ea7n \u0111\u0103ng nh\u1eadp';
 
 /* --------------------------------------------------------------------------
    DANH SACH NGUON TUONG MINH (khong auto-detect mo ao — bai hoc SCAR-008).
@@ -68,7 +69,7 @@ const EXPECT_NGUON = {
   player: { nAriaControls: 7, nSetAriaControls: 2, nShellSkip: 1, nShellFooter: 1, nRadar: 2, nToastBox: 2, nA11yStatus: 2 },
 };
 
-function loadSources() {
+function loadSources(overrides) {
   const out = {};
   for (const k of Object.keys(SOURCES)) {
     const cfg = SOURCES[k];
@@ -77,8 +78,13 @@ function loadSources() {
     const missing = [];
     for (const f of files) {
       const p = path.join(ROOT, f);
-      if (!fs.existsSync(p)) { missing.push(f); continue; }
-      blob += '\n/*FILE:' + f + '*/\n' + fs.readFileSync(p, 'utf8');
+      if (overrides && overrides.has(f)) {
+        blob += '\n/*FILE:' + f + '*/\n' + overrides.get(f);
+      } else if (!fs.existsSync(p)) {
+        missing.push(f);
+      } else {
+        blob += '\n/*FILE:' + f + '*/\n' + fs.readFileSync(p, 'utf8');
+      }
     }
     const has = s => blob.indexOf(s) >= 0;
     const count = s => (blob.match(new RegExp(s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
@@ -111,14 +117,8 @@ function loadSources() {
   return out;
 }
 
-/* Neu --probe: tiem loi gia vao file tam de chung minh gate FAIL duoc */
-function injectProbe(relFile, find, replace) {
-  const p = path.join(ROOT, relFile);
-  if (!fs.existsSync(p)) return null;
-  const orig = fs.readFileSync(p, 'utf8');
-  if (orig.indexOf(find) < 0) return null;
-  fs.writeFileSync(p, orig.replace(find, replace), 'utf8');
-  return () => fs.writeFileSync(p, orig, 'utf8');
+function sha1(relFile) {
+  return crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, relFile))).digest('hex');
 }
 
 async function collect(page, vp) {
@@ -174,23 +174,24 @@ async function collect(page, vp) {
 }
 
 (async () => {
-  let restores = [];
+  const probeFiles = ['assets/app/player-main.js', 'player.html'];
+  const beforeSha = PROBE ? new Map(probeFiles.map(file => [file, sha1(file)])) : null;
+  const sourceOverrides = new Map();
   if (PROBE) {
     /* PROBE phai tiem loi vao DUNG LOP ma gate khang dinh la co kiem.
-       1) Lop SOURCE (JS/HTML): xoa aria-controls trong player-main.js -> [6b] phai FAIL.
+       1) Lop SOURCE (HTML): xoa aria-controls trong player.html -> [6b] phai FAIL.
        2) Lop RUNTIME: xoa aria-controls khoi HTML -> [6] phai FAIL.
        Neu ca 2 deu KHONG lam gate FAIL => gate la "pass im lang" (SCAR-008). */
-    const r1 = injectProbe('assets/app/player-main.js',
-      "if (!b.hasAttribute('aria-controls')) b.setAttribute('aria-controls', 'playerMain');", '/* PROBE */');
-    const r2 = injectProbe('player.html', 'aria-controls="playerMain"', '');
-    if (!r1 && !r2) { console.log('[PROBE] KHONG tiem duoc loi -> gate chua duoc kiem chung. DUNG.'); process.exit(2); }
-    if (r1) restores.push(r1);
-    if (r2) restores.push(r2);
-    console.log('[PROBE] Da tiem loi: xoa aria-controls o CA 2 lop (player.html + player-main.js).');
+    const rel = 'player.html';
+    const original = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+    const changed = original.replace(/\saria-controls="[^"]+"/, '');
+    if (changed === original) { console.log('[PROBE] KHONG tiem duoc loi source tren ban sao bo nho. DUNG.'); process.exit(2); }
+    sourceOverrides.set(rel, changed);
+    console.log('[PROBE] Da xoa 1 aria-controls cua player.html tren ban sao bo nho; runtime se xoa aria-controls trong DOM cua trang probe.');
     console.log('[PROBE] Ky vong: gate PHAI bao FAIL ca [6] (runtime) lan [6b] (source).');
   }
 
-  const SRC = loadSources();
+  const SRC = loadSources(sourceOverrides);
   for (const k of Object.keys(SRC)) {
     if (SRC[k].missing.length) console.log('[CANH BAO] ' + k + ': thieu file nguon: ' + SRC[k].missing.join(', '));
   }
@@ -209,6 +210,9 @@ async function collect(page, vp) {
       page.on('pageerror', e => errs.push('PAGEERROR ' + e.message));
       await page.goto(pg.url, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => {});
       await page.waitForTimeout(1300);
+      if (PROBE && pg.name === 'player') {
+        await page.evaluate(() => document.querySelectorAll('[role="tab"][aria-controls]').forEach(el => el.removeAttribute('aria-controls')));
+      }
       const d = await collect(page, vp);
       const pr = [];
 
@@ -299,17 +303,25 @@ async function collect(page, vp) {
     }
   }
   await browser.close();
-  restores.forEach(r => r());
 
   console.log('\n' + '='.repeat(64));
   if (PROBE) {
-    if (fail > 0) console.log('PROBE OK: gate BAT DUOC loi tiem vao (' + fail + '/' + runs + ' luot FAIL).');
-    else console.log('PROBE THAT BAI: gate KHONG bat duoc loi tiem vao -> gate KHONG dang tin.');
+    const caughtRuntime = allProblems.some(problem => problem.includes('[6]'));
+    const caughtSource = allProblems.some(problem => problem.includes('[6b]'));
+    const afterSha = new Map(probeFiles.map(file => [file, sha1(file)]));
+    const identical = probeFiles.every(file => beforeSha.get(file) === afterSha.get(file));
+    console.log('PROBE runtime [6]: ' + (caughtRuntime ? 'BAT DUOC' : 'BO LOT'));
+    console.log('PROBE source [6b]: ' + (caughtSource ? 'BAT DUOC' : 'BO LOT'));
+    console.log('SHA1 truoc/sau + source byte-identical: ' + (identical ? 'OK' : 'THAT BAI'));
+    if (caughtRuntime && caughtSource && identical) console.log('PROBE OK: gate BAT DUOC ca hai lop, source that bat bien.');
+    else console.log('PROBE THAT BAI: thieu bat loi runtime/source hoac source bi thay doi.');
   } else {
     console.log(fail === 0
       ? 'GATE SHELL & A11Y: ALL PASS ' + runs + '/' + runs
       : 'GATE SHELL & A11Y: THAT BAI ' + fail + '/' + runs + ' luot');
   }
   console.log('='.repeat(64));
-  process.exitCode = (PROBE ? (fail > 0 ? 0 : 1) : (fail === 0 ? 0 : 1));
+  process.exitCode = (PROBE
+    ? (allProblems.some(problem => problem.includes('[6]')) && allProblems.some(problem => problem.includes('[6b]')) && probeFiles.every(file => beforeSha.get(file) === sha1(file)) ? 0 : 1)
+    : (fail === 0 ? 0 : 1));
 })();

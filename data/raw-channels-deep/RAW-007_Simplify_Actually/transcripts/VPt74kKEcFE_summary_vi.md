@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Bạn đã đập một cái vào tay mình cả trăm lần mà không hề suy nghĩ. Nó nhỏ hơn   so với móng tay của bạn. Nó gần như không phát ra âm thanh. Và nó chết ngay khi bạn nhận ra nó. Chưa hết, trong suốt chiều dài lịch sử loài người, những sinh vật như thế này đã giết chết"
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Bạn đã đập một cái vào tay mình cả trăm lần mà không hề suy nghĩ. Nó nhỏ hơn   so với móng tay của bạn. Nó gần như không phát ra âm thanh. Và nó chết ngay khi bạn nhận ra nó. Chưa hết, trong suốt chiều dài lịch sử loài người, những sinh vật như thế này đã giết chết"
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Bạn đã đập một cái vào tay mình cả trăm lần mà không hề suy nghĩ. Nó nhỏ hơn   so với móng tay của bạn. Nó gần như không phát ra âm thanh. Và nó chết ngay khi bạn nhận ra nó. Chưa hết, trong suốt chiều dài lịch sử loài người, những sinh vật như thế này đã giết chết
+Bạn đã đập một cái vào tay mình cả trăm lần mà không hề suy nghĩ. Nó nhỏ hơn   so với móng tay của bạn. Nó gần như không phát ra âm thanh. Và nó chết ngay khi bạn nhận ra nó. Chưa hết, trong suốt chiều dài lịch sử loài người, những sinh vật như thế này đã giết chết
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 nhiều người hơn mọi cuộc chiến tranh, mọi nạn đói và mọi kẻ săn mồi lớn cộng lại. Không phải sư tử, không phải sói, không phải mèo răng kiếm. Một cái gì đó bạn có thể nghiền nát giữa hai ngón tay. Hôm nay, chúng ta đang đếm ngược 11 kẻ giết người nhỏ bé nhất mà tổ tiên chúng ta từng đối mặt, đang hoạt động cho đến loài nguy hiểm nhất, loài côn trùng được cho là đã định hình nhiều hơn lịch sử loài người hơn bất kỳ sinh vật sống nào khác trên Trái đất. Số 11, ruồi ngựa và ruồi hươu. Trong ít nhất hàng chục ngàn năm, thợ săn hái lượm băng qua vùng đất ngập nước, bờ sông, và đồng cỏ trong những tháng ấm hơn sẽ tiếp xúc trực tiếp với những loài côn trùng này. Và vết cắn của chúng thực sự là một cơn đau nhói được tạo ra để cắt chứ không phải đâm. Ngoài sự đau khổ của vết cắn, chúng còn mang bệnh tuleria, một loại bệnh nhiễm trùng do vi khuẩn gây sốt, loét và tử vong trong những trường hợp không được điều trị. Mỗi chuyến đi săn qua loại địa hình này đều tiềm ẩn thêm rủi ro thầm lặng hết thế hệ này sang thế hệ khác từ rất lâu trước khi có người biết được tên của thứ khiến họ bị bệnh. Số 10, ruồi nhà. Nghe có vẻ quá tầm thường để có tên trong danh sách này, nhưng khi con người bắt đầu định ...

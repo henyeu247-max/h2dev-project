@@ -46,12 +46,12 @@ For EACH scene, output a detailed **Seedance 2.5 video generation prompt** conta
 1. **Scene ID & total duration** (max 30s)
 2. **Reference list**: explicitly name every design sheet reference used in the scene (e.g., "References: CHAR-01 Yusuke-style lead, LOC-02 rooftop at dusk, PROP-01 spirit blade") — list ALL relevant subject references, as Seedance 2.5 supports multi-reference input
 3. **Shot-by-shot breakdown with timestamps** — for every shot within the scene, specify:
-   - **Timestamp range** (e.g., [00:00–00:04], [00:04–00:09], [00:09–00:15])
-   - **Shot type & camera work**: framing, angle, movement (pan, dolly, dutch angle, dramatic zoom, whip cut — 90's anime cinematography)
-   - **Action**: exactly what happens in this shot, beat by beat
-   - **References active in this shot** (by reference ID)
-   - **Dialogue/audio cue** for this shot (if any)
-   - Timestamps must be continuous with no gaps, and the final timestamp must equal the scene's total duration
+   - **Timestamp range** (e.g., [00:00–00:04], [00:04–00:09], [00:09–00:15])
+   - **Shot type & camera work**: framing, angle, movement (pan, dolly, dutch angle, dramatic zoom, whip cut — 90's anime cinematography)
+   - **Action**: exactly what happens in this shot, beat by beat
+   - **References active in this shot** (by reference ID)
+   - **Dialogue/audio cue** for this shot (if any)
+   - Timestamps must be continuous with no gaps, and the final timestamp must equal the scene's total duration
 4. **Lighting & atmosphere** (scene-wide, with per-shot notes if it changes)
 5. **Style directive**: "1990's cel anime, Yu Yu Hakusho aesthetic, hand-drawn cel animation, bold outlines, film grain, speed lines during action, dramatic held frames, retro color grading"
 6. **Continuity notes**: what must match the previous/next scene

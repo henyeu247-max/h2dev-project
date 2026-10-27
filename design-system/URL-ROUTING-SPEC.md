@@ -1,7 +1,7 @@
 # H2DEV — URL ROUTING SPEC (Quy Hoạch Đường Dẫn Chuẩn)
 
 > **Trạng thái:** `draft` — chờ chủ dự án chốt các điểm tại [mục 9](#9-các-điểm-cần-chủ-dự-án-chốt).
-> **Bằng chứng gốc:** `server.js:360-373` · `assets/app/main.js:61-71` · `assets/app/main.js:144-175` · `assets/app/main.js:782-792` · HTTP probe thực tế cổng `8899` ngày `2026-09-23`.
+> **Bằng chứng gốc:** `server.js:363-470` (route + `/api/search`) · `assets/app/main.js:272` (`applyTabParams`) · `assets/app/main.js:1014` (`readStateFromURL`) · `assets/app/main.js:1069` (`scrubForeignParams`) · HTTP probe thực tế cổng `8898`/`8899` ngày `2026-10-22` (uifix88).
 > **Nguyên tắc bất di bất dịch:** tài liệu này chỉ **mô tả + đề xuất**. Mọi giá trị đã probe là **bằng chứng**, không được sửa cho đẹp. Mọi đề xuất ghi rõ `proposed`, phải được chủ dự án chốt trước khi thi công.
 
 ---
@@ -70,7 +70,11 @@ https://h2dev-learn.tonymmo.com/            # Production base
 │     ├── ?niche=<nicheId>                  [current]  · lọc ngách
 │     └── ?market=<market>                  [current]  · lọc thị trường
 │
-├── /tai-lieu                               [proposed] → index.html  · tab "Tài liệu" (thay /kichban)
+├── /tai-lieu                               [current]  → index.html  · tab "Tài liệu" (thay /kichban)
+│     ├── ?pq=<keyword>                     [current]  · từ khoá tìm trong tab Tài liệu
+│     ├── ?dp=<n>                           [current]  · phân trang tài liệu (n > 1 mới lên URL)
+│     ├── ?did=<DOC_n>                      [current]  · mở ĐÚNG 1 mục theo doc_id (đích của FTS SOP)
+│     ├── ?di=<index>                       [current]  · vị trí 0-based của mục trong data-tabs/tai-lieu-full.json
 │     └── /kichban                          [deprecated] → 301 /tai-lieu
 │
 ├── /nhac                                   [proposed] → index.html  · Trạm nhạc nền (tab/modal có URL riêng)
@@ -79,7 +83,10 @@ https://h2dev-learn.tonymmo.com/            # Production base
 │     └── ?track=<MUSIC-xxx>                [proposed]  · mở sẵn 1 track (deep link)
 │
 ├── /nguonreup                              [current]  → index.html  · tab Nguồn reup
-├── /kenh-mau                               [proposed] → index.html  · tab "Kênh mẫu" (thay /kenh)
+├── /kenh-mau                               [current]  → index.html  · tab "Kênh mẫu" (thay /kenh)
+│     ├── ?kq=<keyword>                     [current]  · từ khoá tìm trong tab Kênh mẫu
+│     ├── ?handle=<@handle>                 [current]  · mở ĐÚNG 1 kênh, khớp TUYỆT ĐỐI handle (đích của FTS CHANNEL)
+│     ├── ?kp=<n>                           [current]  · phân trang kênh mẫu (n > 1 mới lên URL)
 │     └── /kenh                             [deprecated] → 301 /kenh-mau
 │
 ├── /rawkenh                                [current]  → index.html  · tab Raw kênh
@@ -87,6 +94,7 @@ https://h2dev-learn.tonymmo.com/            # Production base
 │     ├── ?rn=<rawNiche>                    [current]  · lọc nhóm ngách raw
 │     ├── ?rg=<rawGroup>                    [current]  · lọc nhóm raw
 │     ├── ?rq=<keyword>                     [current]  · tìm kiếm trong raw
+│     ├── ?rid=<RAW-nnn>                    [current]  · mở ĐÚNG 1 hồ sơ Raw theo id (đích của FTS CHANNEL/TRANSCRIPT)
 │     └── /raw                              [deprecated] → 301 /rawkenh
 │
 ├── /chienluoc                              [current]  → index.html  · tab Chiến lược
@@ -134,11 +142,11 @@ https://h2dev-learn.tonymmo.com/            # Production base
 | `/tatca` | tab | `index.html` | `openTab('tatca')` | `type` | `Tất cả — H2DEV` | `/tatca` | proposed |
 | `/video` | tab | `index.html` | `openTab('video')` | `market`, `niche`, `watch`, `free` | `Video — H2DEV` | `/video` | current · 200 |
 | `/ngachxanh` | tab | `index.html` | `openTab('ngachxanh')` | `niche`, `market` | `Ngách xanh — H2DEV` | `/ngachxanh` | current · 200 |
-| `/tai-lieu` | tab | `index.html` | `openTab('kichban')` | — | `Tài liệu — H2DEV` | `/tai-lieu` | **proposed** ⚠️ chờ chốt |
+| `/tai-lieu` | tab | `index.html` | `openTab('tai-lieu')` | `pq`, `dp`, `did`, `di` | `Tài liệu — H2DEV` | `/tai-lieu` | current · 200 |
 | `/nhac` | tab/modal | `index.html` | `openMusicStudioModal()` | `mood`, `risk`, `track` | `Nhạc nền — H2DEV` | `/nhac` | **proposed** · hiện 404 |
 | `/nguonreup` | tab | `index.html` | `openTab('nguonreup')` | — | `Nguồn reup — H2DEV` | `/nguonreup` | current · 200 |
-| `/kenh-mau` | tab | `index.html` | `openTab('kenh')` | — | `Kênh mẫu — H2DEV` | `/kenh-mau` | **proposed** ⚠️ chờ chốt |
-| `/rawkenh` | tab | `index.html` | `openTab('rawkenh')` | `page`, `rn`, `rg`, `rq` | `Raw kênh — H2DEV` | `/rawkenh` | current · 200 |
+| `/kenh-mau` | tab | `index.html` | `openTab('kenh-mau')` | `kq`, `handle`, `kp` | `Kênh mẫu — H2DEV` | `/kenh-mau` | current · 200 |
+| `/rawkenh` | tab | `index.html` | `openTab('rawkenh')` | `page`, `rn`, `rg`, `rq`, `rid` | `Raw kênh — H2DEV` | `/rawkenh` | current · 200 |
 | `/chienluoc` | tab | `index.html` | `openTab('chienluoc')` | `sub` | `Chiến lược — H2DEV` | `/chienluoc` | current · 200 |
 | `/lotrinh` | page | `learn.html` | init learn | `embed` | `Lộ trình học — H2DEV` | `/lotrinh` | current · 200 (2847 b) |
 | `/lotrinh/<sku>` | detail | `player.html` | `player-main.js` đọc `pathname` | `back`, `tab` | `<tên bài> — H2DEV` (đã có, `player-main.js:258`) | `/lotrinh/<sku>` | current · 200 (14946 b) ⚠️ không validate |
@@ -151,7 +159,13 @@ https://h2dev-learn.tonymmo.com/            # Production base
 | `/api/admin-state` | api | JSON | — | current · 200 |
 | `/api/intelligence/breakouts` | api | JSON | — | current |
 | `/api/intelligence/spider` | api | JSON | — | current |
-| `/api/search` | api | JSON | `q` | current · 200 |
+| `/api/search` | api | JSON | `q`, `limit` | current · 200 / **503 khi lỗi hạ tầng**; trường `error: "enrich: …"` khi bổ sung dữ liệu điều hướng thất bại (vẫn 200 + rows gốc) |
+
+> **Hợp đồng `/api/search` (uifix88):** mỗi dòng trả về là 1 dòng `search_fts` + trường điều hướng **theo ID**:
+> `CHANNEL` → `raw_id` / `kenh_handle`; `TRANSCRIPT` → `parent_channel_title` / `parent_raw_id`;
+> `SOP` → `doc_id` (khớp `documents.doc_id`) / `doc_index` (vị trí trong `data-tabs/tai-lieu-full.json`);
+> `LESSON` → `entity_id` là SKU. Client (`assets/app/search.js#ftsDestination`) dựng URL đích từ các ID này —
+> **không** dùng tên/chuỗi con. Xem bảng đo toàn bộ 2251 dòng ở `fix-round2` báo cáo.
 | `/api/niche-radar` | api | JSON | — | current |
 
 ### 3.3. Route lỗi
@@ -204,6 +218,14 @@ https://h2dev-learn.tonymmo.com/            # Production base
 | `rn` | Raw niche — lọc nhóm ngách raw | `string` | `/rawkenh` | CÓ | `''` | current |
 | `rg` | Raw group — lọc nhóm raw | `string` | `/rawkenh` | CÓ | `''` | current |
 | `rq` | Raw query — từ khoá tìm trong raw | `string` | `/rawkenh` | **CÓ** (có thể có dấu tiếng Việt) | `''` | current |
+| `rid` | Raw record id — mở ĐÚNG 1 hồ sơ Raw (id `RAW-nnn`, khớp `data-tabs/raw-kenh-mau.json[].id`) | `string` (`RAW-\d{3}`) | `/rawkenh` | không cần | vắng mặt | current (uifix88) |
+| `pq` | Prompt query — từ khoá tìm trong tab Tài liệu | `string` | `/tai-lieu` | **CÓ** (tiếng Việt) | `''` | current |
+| `dp` | Trang hiện tại của danh sách Tài liệu | `integer ≥ 2` | `/tai-lieu` | không cần | `1` | current |
+| `did` | Doc id — mở ĐÚNG 1 mục tài liệu (`DOC_n`, khớp `documents.doc_id` trong Master DB) | `string` (`DOC_\d+`) | `/tai-lieu` | không cần | vắng mặt | current (uifix88) |
+| `di` | Doc index — vị trí 0-based trong `data-tabs/tai-lieu-full.json` (tab Tài liệu render từ JSON, không từ DB) | `integer ≥ 0` | `/tai-lieu` | không cần | vắng mặt | current (uifix88) |
+| `kq` | Kênh query — từ khoá tìm trong tab Kênh mẫu | `string` | `/kenh-mau` | **CÓ** | `''` | current |
+| `handle` | Handle kênh — mở ĐÚNG 1 kênh, so khớp **TUYỆT ĐỐI** (không phải chuỗi con) | `string` (`@handle`) | `/kenh-mau` | **CÓ** (có thể có emoji, vd `@복이오는길`) | vắng mặt | current (uifix88) |
+| `kp` | Trang hiện tại của danh sách Kênh mẫu | `integer ≥ 2` | `/kenh-mau` | không cần | `1` | current |
 | `watch` | Lọc trạng thái xem | `string` (enum do FE định nghĩa) | `/video` | CÓ | `''` | current |
 | `free` | Cờ chỉ hiện bài FREE | `'1'` \| vắng mặt (boolean encoded) | `/video` | không cần | vắng mặt ≠ `0` | current |
 | `embed` | Chế độ nhúng (ẩn shell) | `'1'` | `/lotrinh` | không cần | vắng mặt | current |
@@ -238,7 +260,11 @@ Khi build URL, **luôn** set theo thứ tự cố định sau — đảm bảo c
 ```
 1. market  2. niche  3. sub  4. type  5. mood  6. risk
 7. page    8. rn     9. rg  10. rq   11. watch 12. free  13. track  14. embed  15. back  16. tab
+17. skus   18. vp    19. watch 20. kp   21. dp     22. pq   23. did    24. di
+25. kq     26. handle 27. rid 28. np
 ```
+
+> **Ghi chú (uifix88):** các param **định danh** (`rid`, `handle`, `did`, `di`) là **đích của kết quả tìm kiếm toàn văn** — chúng mở **đúng 1 mục** và **chỉ sống trên tab của chúng**. `main.js` dọn mọi param không thuộc tab đang mở (`scrubForeignParams`) để link cũ/link FTS không làm bẩn URL và F5 không lọc lại theo tham số của tab khác.
 
 ---
 
@@ -246,31 +272,37 @@ Khi build URL, **luôn** set theo thứ tự cố định sau — đảm bảo c
 
 ### 6.1. Danh sách state BẮT BUỘC khôi phục trong `popstate`
 
-Hiện trạng `main.js:782-792` **chỉ khôi phục 3/9** — `tab`, `market`, `niche`. **Mất 6**: `page`, `rn`, `rg`, `rq`, `watch`, `free`. Đây là bug "Back sai trạng thái nhưng F5 lại đúng" (khó tái hiện vì F5 đọc lại URL đầy đủ).
+Hiện trạng `main.js` (sau uifix88) **khôi phục đủ** `tab`, `market`, `niche`, `page`, `rn`, `rg`, `rq`, `watch`, `free`, `sub` + các param định danh `rid`, `handle`, `did`, `di`, `pq`, `dp`, `kq`, `kp`. Trước uifix88 chỉ khôi phục 3/9 → bug "Back sai trạng thái nhưng F5 lại đúng".
 
 | # | State | Nguồn URL | popstate hiện tại | Yêu cầu |
 |---|---|---|---|---|
 | 1 | `tab` | pathname | ✅ khôi phục | BẮT BUỘC |
 | 2 | `market` | `?market` | ✅ khôi phục | BẮT BUỘC |
 | 3 | `niche` | `?niche` | ✅ khôi phục | BẮT BUỘC |
-| 4 | `rawPage` | `?page` | ❌ **MẤT** | **BẮT BUỘC BỔ SUNG** |
-| 5 | `rawNiche` | `?rn` | ❌ **MẤT** | **BẮT BUỘC BỔ SUNG** |
-| 6 | `rawGroup` | `?rg` | ❌ **MẤT** | **BẮT BUỘC BỔ SUNG** |
-| 7 | `rawQ` | `?rq` | ❌ **MẤT** | **BẮT BUỘC BỔ SUNG** |
-| 8 | `watchFilter` | `?watch` | ❌ **MẤT** | **BẮT BUỘC BỔ SUNG** |
-| 9 | `freeOnly` | `?free=1` | ❌ **MẤT** | **BẮT BUỘC BỔ SUNG** |
-| 10 | `clSubTab` | `?sub` | ❌ không có URL | **BẮT BUỘC** (proposed) |
+| 4 | `rawPage` | `?page` | ✅ khôi phục | BẮT BUỘC |
+| 5 | `rawNiche` | `?rn` | ✅ khôi phục | BẮT BUỘC |
+| 6 | `rawGroup` | `?rg` | ✅ khôi phục | BẮT BUỘC |
+| 7 | `rawQ` | `?rq` | ✅ khôi phục | BẮT BUỘC |
+| 8 | `watchFilter` | `?watch` | ✅ khôi phục | BẮT BUỘC |
+| 9 | `freeOnly` | `?free=1` | ✅ khôi phục | BẮT BUỘC |
+| 10 | `clSubTab` | `?sub` | ✅ khôi phục | BẮT BUỘC |
 | 11 | player tab | `?tab` | ❌ không có URL | **BẮT BUỘC** (proposed) |
 | 12 | `mood`/`risk`/`track` | `?mood/?risk/?track` | ❌ không có URL | **BẮT BUỘC** (proposed) |
+| 13 | `rawRid` | `?rid` | ✅ khôi phục (uifix88) | BẮT BUỘC |
+| 14 | `kenhHandle` | `?handle` | ✅ khôi phục (uifix88) | BẮT BUỘC |
+| 15 | `docDid`/`docIdx` | `?did`/`?di` | ✅ khôi phục (uifix88) | BẮT BUỘC |
+| 16 | `pq`/`dp`/`kq`/`kp` | `?pq`/`?dp`/`?kq`/`?kp` | ✅ khôi phục (uifix87-88) | BẮT BUỘC |
+
+> **Đo thật (uifix88):** `readStateFromURL` được dùng CHUNG cho `init` và `popstate` (đúng contract §6.2 mục 3). Mọi param ở trên chỉ được nạp khi `state.tab` là tab sở hữu param đó (`PARAM_OWNER`), và `scrubForeignParams()` xoá param lạ khỏi URL ngay sau khi nạp → F5 ở tab khác không lọc lại theo `rq/page/rn/rg/pq/kq`.
 
 ### 6.2. Contract
 
 1. **`pushState` phải đẩy đủ 100% state hiện hành** — mọi state ảnh hưởng hiển thị phải có mặt trên URL trước khi push.
 2. **`popstate` phải đọc URL và dựng lại state từ đầu** (`state = parseFromURL(location)`), **không** merge dở dang. Cấm set tay từng field.
-3. **Nguyên tắc 1 nguồn:** viết **đúng 1 hàm** `readStateFromURL(location)` dùng chung cho cả lúc init (F5) và `popstate`. Hiện tại init và popstate parse khác nhau → nguồn gốc bug lệch trạng thái.
+3. **Nguyên tắc 1 nguồn:** viết **đúng 1 hàm** `readStateFromURL(location)` dùng chung cho cả lúc init (F5) và `popstate` — ✅ đã đúng từ uifix88 (`main.js:1014`, gọi ở `init` và `popstate`).
 4. **Cấm mất state khi Back/Forward.** Test bắt buộc: đổi filter → phân trang → Back → **filter và trang phải còn nguyên**.
-5. **`replaceState` cho thay đổi không nên vào history** (ví dụ player cập nhật `sku` sau khi load `main.js:14`).
-6. **Cuộn trang:** Back/Forward phải khôi phục vị trí cuộn (browser tự lo) — cấm `resetScrollToTop()` vô điều kiện trong `popstate` (hiện `main.js:791` gọi thẳng → phá scroll restore).
+5. **`replaceState` cho thay đổi không nên vào history** (ví dụ player cập nhật `sku` sau khi load).
+6. **Cuộn trang:** Back/Forward phải khôi phục vị trí cuộn (browser tự lo) — cấm `resetScrollToTop()` vô điều kiện trong `popstate` (hiện `main.js` vẫn gọi thẳng trong handler `popstate` → phá scroll restore; **tồn đọng chưa sửa ở vòng 2**, ngoài phạm vi F1–F7).
 
 ---
 
@@ -368,6 +400,14 @@ Breadcrumb là **dẫn xuất từ URL**, không phải state riêng:
 | 9 | `/chienluoc` → sub-tab "Quy trình A–Z" | `/chienluoc?sub=workflow` | URL, sub-tab active |
 | 10 | F5 tại bước 9 | giữ `?sub=workflow` | Reload giữ đúng sub-tab |
 | 11 | `/lotrinh/VIDEO-DD983D` → tab transcript | `/lotrinh/VIDEO-DD983D?tab=transcript` | URL player |
+| 12 | `/rawkenh?rq=<x>` → bấm **Reset** (`#freset-raw`) | `/rawkenh` | **`rq` biến mất khỏi URL**; F5 không lọc lại (uifix88) |
+| 13 | `/rawkenh?rq=<x>` → bấm nút **xoá ô tìm** (`#btn-clear-raw-q`) | `/rawkenh` | **`rq` biến mất khỏi URL**; F5 không lọc lại (uifix88) |
+| 14 | Mở link FTS `/rawkenh?rid=RAW-054` → nhấp tab khác (vd `/video`) | `/video` | URL tab mới **không** có `rq`, `page`, `rn`, `rg`, `rid` (uifix88) |
+| 15 | Mở link FTS `/tai-lieu?did=DOC_3&di=2` → nhấp tab khác | `/video` | URL tab mới **không** có `pq`, `dp`, `did`, `di` (uifix88) |
+| 16 | Mở link FTS `/kenh-mau?handle=@x` → nhấp tab khác | `/video` | URL tab mới **không** có `kq`, `handle`, `kp` (uifix88) |
+| 17 | `/tai-lieu?did=DOC_3&di=2` rồi F5 | giữ nguyên | Tab Tài liệu chỉ hiện **đúng 1 mục** (`DOC_3`) |
+| 18 | `/rawkenh?rid=RAW-054` rồi F5 | giữ nguyên | Tab Raw chỉ hiện **đúng 1 hồ sơ** (`RAW-054`) |
+| 19 | `/kenh-mau?handle=@weirdhistory` rồi F5 | giữ nguyên | Tab Kênh mẫu chỉ hiện **đúng 1 kênh** (không khớp `@weirdhistoryfood`) |
 
 ### 8.3. Tầng 3 — Chống hồi quy
 
@@ -484,20 +524,21 @@ Breadcrumb là **dẫn xuất từ URL**, không phải state riêng:
 
 ### 10.1. Vị trí sửa (khi được chủ dự án cho phép thi công)
 
-| Việc | File | Vị trí chính xác |
+| Việc | File | Vị trí chính xác (uifix88, 2026-10-22) |
 |---|---|---|
-| Thêm slug whitelist | `server.js` | dòng `371` — regex `/^\/(?:tongquan\|video\|...)\/?$/i` |
-| Thêm redirect cũ | `server.js` | trước dòng `363` (trước khối rewrite) |
-| Validate SKU | `server.js` | dòng `363-370` |
-| Thêm tab `/tatca` + đổi slug | `assets/app/main.js` | `TABS` dòng `61-71` |
-| Build URL đủ param | `assets/app/main.js` | `openTab()` dòng `158-172` |
-| Khôi phục đủ state | `assets/app/main.js` | `popstate` dòng `782-792` |
-| Title động | `assets/app/main.js` | trong `openTab()` |
-| Sub-tab Chiến lược → URL | `assets/app/main.js` | handler `strategy-tab` (dòng `664-668`) |
-| Modal nhạc → URL | `assets/music_player_modal.js` | `openMusicStudioModal` dòng `74` |
-| Sub-tab player → URL | `assets/app/player-main.js` | `setPlayerTab` (dòng `120`, `657`) |
+| Thêm slug whitelist | `server.js` | regex `/^\/(?:tatca\|video\|ngachxanh\|tai-lieu\|nhac\|nguonreup\|kenh-mau\|rawkenh\|chienluoc)\/?$/i` |
+| Thêm redirect cũ | `server.js` | `ROUTE_MAP` (`/kichban`, `/kenh`, `/raw`) — chạy trước khối rewrite |
+| Enrich dữ liệu điều hướng `/api/search` | `server.js` | khối `if (apiPath === '/api/search')` → bổ sung `raw_id`/`kenh_handle`/`parent_raw_id`/`doc_id`/`doc_index` |
+| Build URL đủ param, có kiểm tab | `assets/app/main.js` | `applyTabParams()` (dòng ~272) |
+| Khôi phục đủ state (1 nguồn) | `assets/app/main.js` | `readStateFromURL()` (dòng ~1014) + `scrubForeignParams()` (dòng ~1069) |
+| Dựng URL đích FTS theo ID | `assets/app/search.js` | `ftsDestination()` |
+| Lọc tab theo ID (rid/handle/di) | `assets/app/tabs/content.js` | `renderRawKenh` / `renderKenh` / `renderKichBan` |
+| Title động | `assets/app/main.js` | trong `render()` |
+| Sub-tab Chiến lược → URL | `assets/app/main.js` | `syncClSubUrl()` |
+| Modal nhạc → URL | `assets/music_player_modal.js` | `openMusicStudioModal` |
+| Sub-tab player → URL | `assets/app/player-main.js` | `setPlayerTab` |
 
-> ⚠️ **Bảng này là bản đồ thi công, KHÔNG phải lệnh sửa.** Theo ràng buộc nhiệm vụ hiện tại, **em chưa sửa bất kỳ dòng code nào**. Cần chủ dự án ra lệnh riêng cho từng file.
+> ⚠️ **Bảng này là bản đồ thi công.** Các dòng đánh dấu `uifix88` đã được sửa ở vòng 2 (F1–F7); các dòng còn lại vẫn là đề xuất.
 
 ---
 
@@ -538,5 +579,6 @@ Breadcrumb là **dẫn xuất từ URL**, không phải state riêng:
 | Ngày | Thay đổi | Người |
 |---|---|---|
 | 2026-09-23 | Khởi tạo. Đo thực tế 21 URL. Phát hiện 5 route chết. Đề xuất cây URL 13 route cấp trang + 3 modal + 5 API. Nêu 8 điểm chờ chốt. | Em (Kiến trúc sư hệ thống) |
+| 2026-10-22 | **uifix88 (vòng sửa 2, F1–F7):** ghi các param mới `pq`/`dp`/`did`/`di` (Tài liệu), `kq`/`handle`/`kp` (Kênh mẫu), `rid` (Raw); cập nhật §3.1/§3.2/§5.1/§5.3/§6.1/§8.2 theo mã thật; ghi rõ `/tai-lieu`, `/kenh-mau` đã `current · 200`; bổ sung hợp đồng `/api/search` (trường điều hướng theo ID + 503 khi lỗi hạ tầng + `error: "enrich: …"`). | Kỹ sư frontend/server (vòng 2) |
 
 > **Bắt buộc:** mọi lần đổi route phải cập nhật **đồng thời** `URL-ROUTING-SPEC.md` **và** `route-manifest.json` trong **cùng 1 lượt commit** (theo `SKILL.md` mục "URL And Routing Rules").

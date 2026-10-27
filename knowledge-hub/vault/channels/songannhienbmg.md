@@ -1,0 +1,19 @@
+---
+handle: "@songannhienbmg"
+name: "Sống An Nhiên (50.0M view - $64,006)"
+url: "https://www.youtube.com/@songannhienbmg"
+status: "LIVE_HTTP_200"
+videos_count: 2
+---
+
+# Kênh Đối Thủ / Kênh Mẫu: @songannhienbmg (Sống An Nhiên (50.0M view - $64,006))
+
+- **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
+- **URL YouTube:** [https://www.youtube.com/@songannhienbmg](https://www.youtube.com/@songannhienbmg)
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
+- **Ngách (kenh-mau.json):** `Đa ngách`
+- **Thị trường:** `Toàn cầu`
+
+## Các Video Bài Giảng Phân Tích Kênh Này (2)
+- [[videos/VIDEO-d6ff5d|VIDEO-d6ff5d — Show Thực Tế Các Kênh Đã Ra Hàng Tỷ Đồng]] (`HUAN`)
+- [[videos/VIDEO-1ead1c|VIDEO-1ead1c — Show Kênh Và Kết Quả Bán Content Ra Hàng Trăm Ngàn Đô Mỗi Tháng]] (`HUAN`)

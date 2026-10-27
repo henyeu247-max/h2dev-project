@@ -8,7 +8,7 @@ const SKU = process.argv[2] || 'VIDEO-73d98a';
 const FFMPEG = 'D:/Linly-Dubbing/bin/ffmpeg.exe';
 const FFPROBE = 'D:/Linly-Dubbing/bin/ffprobe.exe';
 const ROOT = 'd:/YTB/H2DEV-Project';
-const SCRATCH = 'C:/Users/SaxukeB/.gemini/antigravity/brain/a2e4c820-6071-45ab-ad92-8c402a4bd23d/scratch';
+const SCRATCH = (process.env.TEMP || '/tmp') + '/h2dev_shaka_scratch';
 
 async function main() {
   console.log(`\n======================================================`);
@@ -65,9 +65,9 @@ async function main() {
   });
 
   await page.setExtraHTTPHeaders({ 'Referer': 'https://h2dev.vn/' });
-  await page.goto(product.video_link, { waitUntil: 'networkidle', timeout: 60000 });
+  await page.goto(product.video_link, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
-  let retries = 10;
+  let retries = 20;
   while (!masterPlaylistUrl && retries > 0) {
     await page.waitForTimeout(1000);
     retries--;
@@ -85,10 +85,19 @@ async function main() {
   const streamLines = masterText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
   let chunkRelUrl = null;
   for (let i = 0; i < streamLines.length; i++) {
-    if (streamLines[i].includes('1920x1080') && i + 1 < streamLines.length) {
+    if (streamLines[i].includes('1280x720') && i + 1 < streamLines.length) {
       chunkRelUrl = streamLines[i + 1];
-      console.log('Selected stream: 1080p');
+      console.log('Selected stream: 720p');
       break;
+    }
+  }
+  if (!chunkRelUrl) {
+    for (let i = 0; i < streamLines.length; i++) {
+      if (streamLines[i].includes('1920x1080') && i + 1 < streamLines.length) {
+        chunkRelUrl = streamLines[i + 1];
+        console.log('Selected stream: 1080p');
+        break;
+      }
     }
   }
   if (!chunkRelUrl) {
@@ -176,13 +185,13 @@ async function main() {
     const net = player.getNetworkingEngine();
     const retryParams = player.getConfiguration().streaming.retryParameters;
 
-    // Concurrency 4
+    // Concurrency 2 for stability
     let index = 0;
     async function worker() {
       while (index < urls.length) {
         const i = index++;
         const u = urls[i];
-        let attempts = 3;
+        let attempts = 4;
         let done = false;
         while (attempts > 0 && !done) {
           try {
@@ -193,15 +202,18 @@ async function main() {
             done = true;
           } catch (e) {
             attempts--;
-            if (attempts === 0) throw e;
-            await new Promise(r => setTimeout(r, 1000));
+            if (attempts === 0) {
+              console.error('Failed segment ' + i + ' after 4 attempts: ' + (e.message || String(e)));
+              throw new Error('Segment ' + i + ' failed: ' + (e.message || String(e)));
+            }
+            await new Promise(r => setTimeout(r, 1500));
           }
         }
       }
     }
 
     const workers = [];
-    for (let w = 0; w < 4; w++) workers.push(worker());
+    for (let w = 0; w < 2; w++) workers.push(worker());
     await Promise.all(workers);
   }, segmentUrls);
 

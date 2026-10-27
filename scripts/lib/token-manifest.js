@@ -1,4 +1,4 @@
-﻿// H2DEV Project - TOKEN MANIFEST SCOUT (scripts/lib/token-manifest.js)
+// H2DEV Project - TOKEN MANIFEST SCOUT (scripts/lib/token-manifest.js)
 // Sinh MANIFEST TOKEN tu CSS THAT tren dia — thay cho viec viet tay tokens.json
 // (bai hoc SCAR-024: "danh sach trong tai lieu KHONG phai tap day du", da tai pham 3 lan).
 //

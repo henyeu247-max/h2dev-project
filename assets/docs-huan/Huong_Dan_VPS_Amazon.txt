@@ -1,0 +1,61 @@
+Đăng ký tài khoản tại: https://aws.amazon.com/vi 
+
+DÙNG SỐ XÁC NHẬN BẰNG số điện thoại Hoa Kỳ, Thuê ở https://www.smspool.net/ - Ví dụ thuê số: https://www.youtube.com/watch?v=I7-5OQX0L44
+
+
+B1: Chọn Tạo tài khoản AWS
+  
+
+
+
+B2: Điền thông tin và tiến hành tạo tài khoản
+  
+
+
+
+B3: Đăng nhập vào sau khi đã xác minh tài khoản
+  
+
+
+
+B4: Chọn phần Billing và thêm thông tin thanh toán (Thẻ Visa…)
+
+
+
+
+  
+
+
+
+B5: Tạo máy chủ ảo (VPS)
+1, Ở giao diện ấn chọn Create instance
+  
+
+
+
+2, Chọn khu vực muốn đặt máy chủ ảo (VPS)
+  
+
+Có rất nhiều máy chủ ở Mỹ, Pháp, Đức, Nhật…
+  
+
+3, Chọn hệ điều hành Windows 2022 (Bản này mượt nhất)
+  
+
+
+
+4, Chọn mức giá từ $8 => $20 (Ưu tiên chi phí cho rẻ, nên sử dụng bản $12 hoặc $20 sẽ đỡ giật lag)
+  
+
+
+
+5, Ấn tạo máy chủ ảo (VPS)
+  
+
+
+
+Sử dụng phần mềm bằng cách kết nối trực tiếp trên Web hoặc dùng phần mềm
+Remote Desktop Connection Manager
+  
+
+Hướng dẫn sử dụng: https://remote-desktop-connection-manager.softonic.vn/

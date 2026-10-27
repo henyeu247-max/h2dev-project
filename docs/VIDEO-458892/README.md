@@ -8,9 +8,9 @@
 - **Thị trường mục tiêu:** 🇺🇸 Mỹ,🌐 Ngoại
 - **Thời lượng:** N/A
 - **Dung lượng MP4:** 250509973
-- **File Video:** [`video/VIDEO-458892/VIDEO-458892.mp4`](file:///d:/YTB/H2DEV-Project/video/VIDEO-458892/VIDEO-458892.mp4)
-- **Ảnh đại diện:** [`assets/thumbs/VIDEO-458892.png`](file:///d:/YTB/H2DEV-Project/assets/thumbs/VIDEO-458892.png)
-- **File Phụ đề bóc tách:** [`video/VIDEO-458892/transcript.txt`](file:///d:/YTB/H2DEV-Project/video/VIDEO-458892/transcript.txt)
+- **File Video:** [`video/VIDEO-458892/VIDEO-458892.mp4`](/video/VIDEO-458892/VIDEO-458892.mp4)
+- **Ảnh đại diện:** [`assets/thumbs/VIDEO-458892.png`](/assets/thumbs/VIDEO-458892.png)
+- **File Phụ đề bóc tách:** [`video/VIDEO-458892/transcript.txt`](/video/VIDEO-458892/transcript.txt)
 
 ## 2. Chiến Lược Cốt Lõi & Mấu Chốt Bài Giảng (5 Key Takeaways)
 - Bí quyết xây dựng kênh Lịch sử Quân sự Hoa Kỳ (US) đạt doanh thu kỷ lục hơn $100,000/tháng - siêu bài giảng kinh điển của khóa học H2DEV.

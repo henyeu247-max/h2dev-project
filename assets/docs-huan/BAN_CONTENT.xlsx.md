@@ -1,0 +1,45 @@
+# BÁN CONTENT
+
+## Sheet: Trang tính1
+
+|  | LUẬT CỦA YOUTUBE BẮT BUỘC NGHIÊN CỨU KỸ |  |  |  |  |  |  | Vùng xám rộng lớn |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |  | Setup kênh về chủ đề giáo dục |
+| 1.0 | Tìm hiểu thêm: Nguyên tắc FAIR USE: https://www.youtube.com/watch?v=1PvjRIkwIl8 |  |  |  |  |  |  | Có tính biến đổi giá trị tăng thêm so với giá trị gốc có bản quyền |
+| 2.0 | Tìm hiểu thêm chính sách kiếm tiền Youtube: https://s.net.vn/RLRS |  |  |  |  |  |  | Bình luận ở 1 góc nhìn khác |
+| 3.0 | Nguyên tắc về nội dung phù hợp với nhà quảng cáo |  |  | https://support.google.com/youtube/answer/6162278 |  |  |  |  |
+| 4.0 | Chính sách về việc kiếm tiền trên kênh YouTube |  |  | https://support.google.com/youtube/answer/1311392 |  |  |  | 4 trụ cột |
+| 5.0 | Trung tâm an toàn dành cho nhà sáng tạo |  |  | https://www.youtube.com/intl/vi_ALL/creators/safety/ |  |  |  | 1. Đăc điểm sử dụng |
+| 6.0 | E-E-A-T |  |  | https://ychoc.com/seo-marketing/google-eeat-la-gi/ |  |  |  | 2. Bản chất của tác phẩm |
+| 7.0 | How Faceless Channels Make Millions Avoiding Copyright https://www.youtube.com/watch?v=NhA_WTcMnic |  |  |  |  |  |  | 3. Số lượng sử dụng |
+| 8.0 | Chi tiết cách đề xuất |  |  | https://support.google.com/youtube/answer/11914225?co=YOUTUBE._YTVideoType%3Dvideo&oco=1&fbclid=IwAR0DlTq2Wk0Xk3Xc1rE0OxGJACruqsRudCMjTNxmQzSKeuDKHwDx8kgNpHc |  |  |  | 4. Tác động lên thị trường |
+| 1. Nguồn video |  |  |  |  |  |  |  |  |
+| 1.0. Các chủ đề game có thể dùng nguồn livestream Twitch.Tv , Ưu tiên nội dung nào chưa xuất hiện trên Youtube |  |  |  |  |  |  |  |  |
+| 1.1. Nguồn từ các APP mạng xã hội khác ngoài Youtube như Titktok, Instagram, Facebook, Google video, Các mạng XH video của Trung Quốc |  |  |  |  |  |  |  |  |
+| 1.2. Nguồn từ việc mua ở các trang web bán video bản quyền |  |  |  |  |  |  |  |  |
+| 1.3. Có thể từ chính kênh Youtube tổng hợp lại (Riêng dạng này dùng <= 3s-5s độ an toàn cao) |  |  |  |  |  |  |  |  |
+| 1.4. Các nguồn video khác trên toàn thế giới, Có thể dùng từ quốc gia này đem sang quốc gia khác, dạng Video trung quốc đem ra mỹ |  |  |  |  |  |  |  |  |
+| 2. Xác Suất An Toàn |  |  |  |  |  |  |  |  |
+| Nguyên tắc: Cần tách nhỏ thành phần video: Tiêu đề + Thumbnail + Video (Nội dung + Audio âm thanh + Hình Ảnh + Video + Hiệu ứng video), Tối ưu biến đổi các mục này khác với video gốc ban đầu |  |  |  |  |  |  |  |  |
+| Làm dạng tổng hợp khá nhạy cảm và dễ bị vi phạm chính sách về trùng lặp nội dung, dễ dẫn đến tắt kiếm tiền |  |  |  |  |  |  |  |  |
+| Nên chúng ta tìm hiểu ngược lại Luật Fair Use và Chính sách kiếm tiền, Đơn giản là chúng ta tạo ra content mới dựa trên cái cũ |  |  |  |  |  |  |  |  |
+| Cần mang lại Giá Trị thông điệp mới cho video, Cảm xúc mới cho video, Câu chuyện mới cho video để gia tăng giá trị cho người xem |  |  |  |  |  |  |  |  |
+| Dạng này cần tìm video 1 là HAY NHẤT, 2 là DỞ NHẤT, KÉM NHẤT....Tức là đoạn hay nhất của đoạn hay nhất hoặc ở nhất của dở nhất. Phải có yếu tố NHẤT ở trong video |  |  |  |  |  |  |  |  |
+| Video tham khảo cách cắt video của Review film, Video cắt phân đoạn =<5s 1 lát cắt, ghép nối vào nhau, Zoom to nhỏ tránh tâm video trùng lặp nhiều |  |  |  |  |  |  |  |  |
+| BẮT BUỘC: Phải thêm câu chuyện (Có thuyết minh bằng giọng đọc hoặc Phụ Đề), Nên đưa câu chuyện liền mạch thì hay, hoặc tạo seri hoặc tổng hợp giống những thằng nguy hiểm nhất hành tinh |  |  |  |  |  |  |  |  |
+| Thêm nhạc nền phù hợp, thêm hiệu ứng chuyển cảnh sinh động, Thêm các meme free, thêm âm thanh phù hợp |  |  |  |  |  |  |  |  |
+| Thêm 1 nhân vật đặc trưng của kênh, có thể là giọng văn đặc trưng, có thể là tên kênh để giao tiếp khán giả (Ví dụ Mọt Xinh Review, Kênh của Mọt...) để dễ nhận diện thương hiệu |  |  |  |  |  |  |  |  |
+| Tự tạo các nhân vật xuyên suốt trong tất cả phần bình luận, thuyết minh. Ví dụ: Xem kênh Mọt Review (Có Ông sếp mồm lông của tôi, Xuka, Đê Khi, Chai En....) |  |  |  |  |  |  |  |  |
+| TƯ DUY: Tách nhỏ DNA video và biến nó thành video KHÁC so với video GỐC |  |  |  |  |  |  |  |  |
+| 3. DỰNG VIDEO |  |  |  |  |  |  |  |  |
+| Ghép từng phần đã tổng hợp, có thể dựa trên sườn kịch bản có sẵn, tìm video phù hợp hoặc tạo video xuyên suốt 1 chủ đề |  |  |  |  |  |  |  |  |
+| Các chủ đề TỔNG HỢP nên chọn phải có chữ NHẤT |  |  |  |  |  |  |  |  |
+| Video dài >8 phút |  |  |  |  |  |  |  |  |
+| Chuẩn bị trước 1 VIDEO EKIP làm việc, chia sẻ cách làm, lý do tạo ra kênh, TỪNG KHÂU tạo ra KÊNH như thế nào. Quay lại và biên tập UP LÊN KÊNH lúc chưa ấn BẬT KIẾM TIỀN. Để sau BKT cho dễ |  |  |  |  |  |  |  |  |
+| Nếu không có thể Mua kênh BKT và làm |  |  |  |  |  |  |  |  |
+| Video edit xen kẽ nhau |  | Có bản quyền | Mua bản quyền | Có bản quyền | Mua bản quyền | Có bản quyền |  |  |
+|  |  | 10s | 15.0 | 10.0 | 15.0 | 10.0 |  |  |
+| Edit lại |  |  |  |  |  |  |  |  |
+| Thêm hiệu ứng, âm thanh, Broll chuyển cảnh |  |  |  |  |  |  |  |  |
+| Up test lên kênh phụ |  |  |  |  |  |  |  |  |
+

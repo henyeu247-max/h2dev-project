@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Đây là chủ đề tôi muốn giới thiệu với các bạn. Kết quả là người mới bắt đầu học tiếng Anh tiếp tục trực tuyến Cuộc trò chuyện trong 1 năm từ con số không, Lúc này, hai người có hứng thú học tiếng Anh sẽ tham gia lớp A trực tuyến. Tôi sẽ lần lượt đưa ra ý kiến ​​của mình về cuộc trò chuyện. Dành cho những ai đang nghĩ đến việc bắt đầu trò chuyện trực tuyến hoặc học tiếng Anh."
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Đây là chủ đề tôi muốn giới thiệu với các bạn. Kết quả là người mới bắt đầu học tiếng Anh tiếp tục trực tuyến Cuộc trò chuyện trong 1 năm từ con số không, Lúc này, hai người có hứng thú học tiếng Anh sẽ tham gia lớp A trực tuyến. Tôi sẽ lần lượt đưa ra ý kiến của mình về cuộc trò chuyện. Dành cho những ai đang nghĩ đến việc bắt đầu trò chuyện trực tuyến hoặc học tiếng Anh."
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,7 +32,7 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Đây là chủ đề tôi muốn giới thiệu với các bạn. Kết quả là người mới bắt đầu học tiếng Anh tiếp tục trực tuyến Cuộc trò chuyện trong 1 năm từ con số không, Lúc này, hai người có hứng thú học tiếng Anh sẽ tham gia lớp A trực tuyến. Tôi sẽ lần lượt đưa ra ý kiến ​​của mình về cuộc trò chuyện. Dành cho những ai đang nghĩ đến việc bắt đầu trò chuyện trực tuyến hoặc học tiếng Anh.
+Đây là chủ đề tôi muốn giới thiệu với các bạn. Kết quả là người mới bắt đầu học tiếng Anh tiếp tục trực tuyến Cuộc trò chuyện trong 1 năm từ con số không, Lúc này, hai người có hứng thú học tiếng Anh sẽ tham gia lớp A trực tuyến. Tôi sẽ lần lượt đưa ra ý kiến của mình về cuộc trò chuyện. Dành cho những ai đang nghĩ đến việc bắt đầu trò chuyện trực tuyến hoặc học tiếng Anh.
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
 Nếu bạn đang nghĩ đến việc cố gắng hết sức, vui lòng sử dụng thông tin này làm tài liệu tham khảo さい。 Chúng ta hãy nhìn vào nó ngay lập tức. Sau khi làm việc đó được một năm, tôi đã trở thành một mớ hỗn độn khi nói đến việc tự giới thiệu bản thân. Sau phần giới thiệu, chúng tôi không thể nói chuyện được nữa và khoảng cách đó thật khó xử. Nhưng tôi hoàn toàn hiểu. Về cơ bản, lần nào tôi cũng gặp một người hướng dẫn mới. Đó là lý do tại sao chỉ có phần giới thiệu bản thân được lặp lại. Có phải vậy không? Bạn không thể sửa bài tập à? Bạn có thể làm điều đó, nhưng nó khá rắc rối. Tôi có phải điều phối lịch trình của mình không? そうそう。 Dù đã tập luyện chăm chỉ suốt một năm nhưng tôi vẫn không thể hiểu được yoga nếu không có phụ đề tiếng Nhật. Ngay cả những người nói tiếng Anh trình độ cao cũng khó đọc mà không có phụ đề. Tốt hơn là chỉ xem nó với phụ đề. Hãy từ bỏ Y và lồng tiếng Nó dễ hiểu và dễ lồng tiếng hơn là thành thật mà nói Tôi vẫn đang xem với phụ đề trên lưng. Tôi vui mừng đến mức mất trí. Nhiều cách diễn đạt thực sự được sử dụng ở nước ngoài là những từ lóng không có trong sách tham khảo. Bạn tiếp tục kế hoạch này bao nhiêu lần một tuần? Đó là kế hoạch 8 tháng, nên hai lần một...

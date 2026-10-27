@@ -11,7 +11,7 @@
 ## 1. Phân Tích Cấu Trúc Kịch Bản 3 Hồi Chuẩn AI & Tâm Lý Giữ Chân
 
 ### 🎯 Hồi 1: The Hook - Mở Màn Gây Tò Mò (00:00 – 00:45)
-- **Lời thoại mở màn (Tiếng Việt 1:1):** "Sophia, bạn đã xong rồi. Làm tốt. Sophia thật thông minh. Hãy xem cô ấy học như thế nào. Emma, ​​hãy vỗ tay cho cô ấy."
+- **Lời thoại mở màn (Tiếng Việt 1:1):** "Sophia, bạn đã xong rồi. Làm tốt. Sophia thật thông minh. Hãy xem cô ấy học như thế nào. Emma, hãy vỗ tay cho cô ấy."
 - **Kỹ thuật kịch bản:** Mở đầu trực diện với nghịch lý, đặt câu hỏi hoặc đưa ra chi tiết gây sốc nhằm kích thích trí tò mò, giữ chân người xem trong 30 giây quyết định.
 
 ---
@@ -32,10 +32,10 @@
 
 ```text
 [MỞ MÀN - 00:00]
-Sophia, bạn đã xong rồi. Làm tốt. Sophia thật thông minh. Hãy xem cô ấy học như thế nào. Emma, ​​hãy vỗ tay cho cô ấy.
+Sophia, bạn đã xong rồi. Làm tốt. Sophia thật thông minh. Hãy xem cô ấy học như thế nào. Emma, hãy vỗ tay cho cô ấy.
 
 [THÂN BÀI - DIỄN BIẾN CHÍNH]
-Làm sao họ có thể cười nhạo tôi? Tôi sẽ nói với cô ấy. Bạn thông minh, nhưng bạn thậm chí không thể đi bộ. Đó là [âm nhạc] không tử tế. Emma, ​​làm ơn dừng lại đi. Ừ, để cô ấy yên. Làm ơn đi, cô ấy nói Sophia không thể đi được. Không ai nên nói điều đó. Tôi [âm nhạc] chỉ muốn đi bộ. Mom. Không phải lần nữa. Không phải mái nhà đó nữa. Ngủ ngon nhé cô gái dũng cảm của tôi. Hôm qua tôi đã giữ cho Sophia một chỗ. Tôi sẽ làm lại. Ba mảnh. Một kỷ lục mới đối với tôi. Điều đó không tốt cho sức khỏe chút nào. Tom, cái gì cơ? Chúng ta nên rời khỏi [âm nhạc] sau 10 phút nữa. Tôi đã đóng gói cả hai bữa trưa rồi. Các tổ chức từ thiện địa phương hiện đang đóng danh sách chờ bệnh viện của họ. Mưa đã tạnh. Điều đó tốt cho bánh xe của Sophia. Bạn đã giữ cho tôi một chỗ ngồi một lần nữa. Tất nhiên là tôi đã làm vậy. Luôn luôn. Tôi đã xách túi của bạn. Khá nặng. Cảm ơn, Tom. Thực sự tốt bụng. Hôm nay chúng ta hãy ngồi bên bức tường. Ý tưởng hay. Có nhiều không gian hơn ở đó. Đôi khi tôi thích xem mọi người chạy. Có một học sinh mới. Tên cô ấy là Emma. Ồ, đoạn đường nối hôm nay bị chặn. Chúng ta có thể tự mình di chuyển những chiếc hộp này. Ý tưởng hay. Hãy bắt đầu ngay bây giờ. Cái này nặng hơn tôi ...
+Làm sao họ có thể cười nhạo tôi? Tôi sẽ nói với cô ấy. Bạn thông minh, nhưng bạn thậm chí không thể đi bộ. Đó là [âm nhạc] không tử tế. Emma, làm ơn dừng lại đi. Ừ, để cô ấy yên. Làm ơn đi, cô ấy nói Sophia không thể đi được. Không ai nên nói điều đó. Tôi [âm nhạc] chỉ muốn đi bộ. Mom. Không phải lần nữa. Không phải mái nhà đó nữa. Ngủ ngon nhé cô gái dũng cảm của tôi. Hôm qua tôi đã giữ cho Sophia một chỗ. Tôi sẽ làm lại. Ba mảnh. Một kỷ lục mới đối với tôi. Điều đó không tốt cho sức khỏe chút nào. Tom, cái gì cơ? Chúng ta nên rời khỏi [âm nhạc] sau 10 phút nữa. Tôi đã đóng gói cả hai bữa trưa rồi. Các tổ chức từ thiện địa phương hiện đang đóng danh sách chờ bệnh viện của họ. Mưa đã tạnh. Điều đó tốt cho bánh xe của Sophia. Bạn đã giữ cho tôi một chỗ ngồi một lần nữa. Tất nhiên là tôi đã làm vậy. Luôn luôn. Tôi đã xách túi của bạn. Khá nặng. Cảm ơn, Tom. Thực sự tốt bụng. Hôm nay chúng ta hãy ngồi bên bức tường. Ý tưởng hay. Có nhiều không gian hơn ở đó. Đôi khi tôi thích xem mọi người chạy. Có một học sinh mới. Tên cô ấy là Emma. Ồ, đoạn đường nối hôm nay bị chặn. Chúng ta có thể tự mình di chuyển những chiếc hộp này. Ý tưởng hay. Hãy bắt đầu ngay bây giờ. Cái này nặng hơn tôi ...
 
 [HỒI KẾT & KÊU GỌI HÀNH ĐỘNG]
 Tôi tin [âm nhạc] rằng nó đã diễn ra rất tốt. Bây giờ cô ấy [âm nhạc] đang nghỉ ngơi. Cô ấy an toàn. Cô ấy an toàn. Bạn đang làm điều đó. Bạn đang thực sự làm điều đó, Sophia. Điều đó thật tuyệt vời. Tiếp tục đi. [cổ vũ] [vỗ tay] [âm nhạc] [vỗ tay] [âm nhạc] Tôi thích đi dạo trên cỏ. Tôi thích nhìn bạn bước đi. Tôi đã mang về cho Sophia tin sốt dẻo nhất. [cười] [khóc] Thật là một ngày tuyệt vời. Đây thực sự là một ngày hoàn hảo. Một người bạn thật sự giúp đỡ vì điều đó đúng. Đó là những gì chúng ta đã làm, mẹ ạ. Đưa nó cho tôi, Sophia. Chúng ta có thể cùng nhau giành chiến thắng này. Nhìn tôi này, Lily. Tôi đang chạy trên sân. Tiếp tục đi, Sophia. Bạn nhanh quá. [âm nhạc] [cổ vũ] Tôi đã làm được rồi, Lily. Cuối cùng tôi đã ghi được bàn thắng.

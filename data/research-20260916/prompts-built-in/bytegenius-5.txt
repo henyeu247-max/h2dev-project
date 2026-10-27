@@ -233,13 +233,13 @@ For each title, score:
 - SEO (/10)
 - Clarity (/10)
 - Emotional Impact (/10)
-Then recommend ONE best title and explain in 2–3 lines why it is the strongest choice based on the latest script.
+Then recommend ONE best title and explain in 2–3 lines why it is the strongest choice based on the latest script.
 
 MASTER SEO DESCRIPTION PROMPT
 You have already written the latest script in this conversation.
 I have selected the final title below.
 Final Title:
- [Insert Title]
+ [Insert Title]
 Using the latest script and the selected title, create a professional YouTube SEO package.
 Requirements
 - Read the latest script before writing.

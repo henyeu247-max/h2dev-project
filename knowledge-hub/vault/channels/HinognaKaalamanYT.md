@@ -1,0 +1,18 @@
+---
+handle: "@HinognaKaalamanYT"
+name: "@HinognaKaalamanYT"
+url: "https://www.youtube.com/@HinognaKaalamanYT"
+status: "LIVE_HTTP_200"
+videos_count: 1
+---
+
+# Kênh Đối Thủ / Kênh Mẫu: @HinognaKaalamanYT (@HinognaKaalamanYT)
+
+- **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
+- **URL YouTube:** [https://www.youtube.com/@HinognaKaalamanYT](https://www.youtube.com/@HinognaKaalamanYT)
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
+- **Ngách (kenh-mau.json):** `Khác`
+- **Thị trường:** `🇵🇭 Philippines`
+
+## Các Video Bài Giảng Phân Tích Kênh Này (1)
+- [[videos/VIDEO-2ed37a|VIDEO-2ed37a — NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP]] (`H2DEV`)

@@ -1,0 +1,412 @@
+GODA MEDIA  |  SOP Dựng Video Faceless  |  v1.0
+GODA MEDIA
+QUY TRÌNH CHUẨN HÓA (SOP)
+DỰNG VIDEO FACELESS
+Quy trình dựng video tránh lỗi "Inauthentic Content"dành cho Video Editor
+Áp dụng cho: Video Editor – GODA MEDIA
+Phiên bản: 1.0
+Ngày ban hành: 22/04/2026
+Liên kết với: SOP Human-Edit Script AI v1.0
+________________
+
+
+1. MỤC ĐÍCH & NGUYÊN TẮC CỐT LÕI
+1.1. Tại sao Video Editor là tầng phòng thủ thứ 2?
+Ngay cả khi Content Editor đã hoàn thành SOP human-edit script hoàn hảo, khâu dựng hình vẫn có thể khiến video bị YouTube flag "Inauthentic Content" nếu Video Editor:
+* Dùng stock footage + Ken Burns hiệu ứng zoom cơ học từ đầu đến cuối.
+* Dùng AI image raw không qua xử lý, composite.
+* Áp dụng cùng template intro/outro/transition cho 20-50 video liên tiếp.
+* Dựng slideshow ghép ảnh theo lời đọc một cách cơ học, không có logic kể chuyện.
+* Không có B-roll thật (footage quay tay, màn hình, minh họa custom).
+1.2. Nguyên tắc cốt lõi cho Video Editor
+GODA MEDIA KHÔNG CẤM DÙNG STOCK VÀ AI IMAGE. Chúng ta cấm dựng cơ học – tức là ghép ảnh/footage theo lời đọc mà không có: (1) logic kể chuyện, (2) đầu tư visual custom, (3) biến tấu template để mỗi video có bản sắc riêng.
+1.3. 3 chỉ số sức khỏe của video dưới góc nhìn YouTube
+Chỉ số
+	YouTube đánh giá như thế nào?
+	Ngưỡng chuẩn GODA MEDIA
+	Visual Diversity Score
+	Đo độ đa dạng của visual xuyên suốt video (số asset khác nhau, số loại asset, sự biến đổi cảnh)
+	≥ 1 asset mới mỗi 8-12 giây
+	Human Touch Ratio
+	Tỉ lệ visual có dấu ấn con người (B-roll thật, custom graphic, illustration tùy chỉnh) so với stock/AI raw
+	≥ 20% thời lượng video
+	Template Variance
+	Độ khác biệt giữa các video cùng một kênh (intro/outro/transition/text style)
+	Không có 2 video liền kề giống nhau quá 70%
+	
+
+________________
+
+
+2. 7 KIỂU DỰNG BỊ CẤM TUYỆT ĐỐI
+Video Editor GODA MEDIA KHÔNG được áp dụng bất kỳ kiểu dựng nào dưới đây. Video vi phạm sẽ bị refuse ở QC và editor phải dựng lại.
+#
+	Kiểu dựng CẤM
+	Mô tả & lý do
+	1
+	Ken Burns-only slideshow
+	Dùng duy nhất hiệu ứng zoom in/out + pan trên ảnh tĩnh xuyên suốt video. Đây là dấu hiệu rõ nhất của low-effort content. CẤM dùng quá 40% thời lượng.
+	2
+	Stock footage ghép cơ học
+	Lời đọc đề cập "thành công" → ghép cảnh người giơ tay ăn mừng; đọc "tiền" → ghép cảnh đếm tiền. Kiểu ghép literal này là signature của AI video farm.
+	3
+	AI image raw không xử lý
+	Paste output trực tiếp từ Midjourney/DALL-E/Flux mà không composite, không thêm text overlay, không kết hợp với asset khác. CẤM hoàn toàn.
+	4
+	Template intro/outro cứng nhắc
+	Dùng nguyên một file intro 10-15 giây không đổi cho hàng chục video. Được phép có intro chung nhưng phải có biến thể theo chủ đề từng video.
+	5
+	Text overlay cơ bản
+	Chỉ có text trắng trên nền mờ, font mặc định, không có animation có chủ đích. Phải có hệ thống typography riêng của kênh.
+	6
+	Transition mặc định lặp lại
+	Chỉ dùng cross dissolve hoặc cut thô xuyên suốt. Phải có ít nhất 3 loại transition khác nhau có chủ đích.
+	7
+	Nhạc nền mặc định + không mix
+	Dùng 1 track nhạc nền lặp từ đầu đến cuối, không có sound design, không có ducking khi voice xuất hiện. Phải có mix chuyên nghiệp.
+	________________
+
+
+3. QUY TRÌNH DỰNG 7 BƯỚC
+Tổng thời gian ước tính cho video 10 phút: 4-6 giờ dựng + 1 giờ QC = 5-7 giờ. Đây là định mức chuẩn cho Tier A/B. Tier C có thể rút ngắn còn 3-4 giờ nhưng không được bỏ bước.
+BƯỚC 1 – NHẬN BRIEF & ĐỌC SCRIPT
+Thời gian: 15-20 phút | Output: Bảng Asset Plan
+Trước khi đụng vào phần mềm dựng, Video Editor BẮT BUỘC:
+1. Đọc toàn bộ script ít nhất 1 lần từ đầu đến cuối, KHÔNG vừa đọc vừa dựng.
+2. Xác định Angle Statement (Content Editor đã viết) – hiểu góc nhìn độc quyền của video.
+3. Đánh dấu 5 signature blocks trong script để chuẩn bị visual đậm nét cho các đoạn này.
+4. Đánh dấu các markup voice ([pause], [nhấn]...) – những chỗ này cần transition/visual mạnh.
+5. Lên Asset Plan: liệt kê từng segment → loại visual nào → nguồn asset nào.
+Mẫu bảng Asset Plan
+Time
+	Loại segment
+	Script tóm tắt
+	Visual dự kiến
+	Nguồn asset
+	0:00-0:30
+	Hook
+	Số liệu sốc về kênh faceless chết sau 90 ngày
+	Data viz custom + B-roll màn hình
+	Tự dựng + quay màn hình
+	0:30-1:45
+	Signature 1: Anecdote
+	Chuyện team gỡ rối kênh tháng 7/2025
+	Illustration custom + text animation
+	Thuê illustrator hoặc Figma
+	1:45-3:20
+	Nội dung chính 1
+	3 sai lầm khiến kênh bị flag
+	Motion graphic + icon set
+	Thư viện custom kênh
+	
+
+Quy tắc Asset Plan: Không được bắt đầu dựng khi chưa có Asset Plan ký duyệt bởi Channel Manager. Asset Plan giúp phát hiện sớm trường hợp thiếu B-roll thật, thiếu custom visual, thiếu biến tấu – tránh dựng xong mới phát hiện vi phạm SOP.
+
+
+
+
+BƯỚC 2 – XÂY DỰNG TỶ LỆ VISUAL 5 LỚP
+Thời gian: 30-45 phút lên kế hoạch | Output: Bảng phân bổ thời lượng visual
+Mỗi video BẮT BUỘC có đủ 5 lớp visual theo tỉ lệ dưới đây. Không được thiếu lớp nào và không được vượt ngưỡng tối đa của bất kỳ lớp nào.
+#
+	Lớp visual
+	Tỉ lệ tối thiểu
+	Tỉ lệ tối đa
+	Mô tả
+	1
+	Custom Graphic / Motion
+	25%
+	—
+	Motion graphic, infographic, icon animation do team tự thiết kế. Có bản sắc kênh.
+	2
+	B-roll thật
+	15%
+	—
+	Footage quay tay: tay lật sách, rót cà phê, gõ phím, màn hình laptop thật, quay cảnh văn phòng team. Đây là lớp YouTube quý nhất.
+	3
+	AI image đã composite
+	—
+	30%
+	AI image đã được xử lý: thêm text, composite với asset khác, điều chỉnh color grade, áp style kênh. KHÔNG tính AI raw.
+	4
+	Stock footage biên tập
+	—
+	25%
+	Stock video có cắt ghép, color grade riêng, overlay graphic, không dùng raw.
+	5
+	Text/Typography
+	10%
+	20%
+	Kinetic typography, text highlight động, quote cards có animation. Dùng font system riêng của kênh.
+	
+
+Ví dụ phân bổ cho video 10 phút (600 giây)
+* Custom Graphic/Motion: 180 giây (30%)
+* B-roll thật: 120 giây (20%)
+* AI image composite: 150 giây (25%)
+* Stock biên tập: 90 giây (15%)
+* Text/Typography: 60 giây (10%)
+________________
+
+
+BƯỚC 3 – DỰNG CUT CHÍNH (ROUGH CUT)
+Thời gian: 2-3 giờ | Output: Rough cut có voice + visual thô
+Dựng theo script đã có, ưu tiên nhịp độ và logic kể chuyện trước, chưa cần hoàn thiện effect.
+Quy tắc nhịp cắt (Pacing Rules)
+* Hook 30 giây đầu: cắt cảnh mỗi 3-5 giây, visual đậm nhất. Đây là đoạn YouTube quan sát kỹ nhất.
+* Đoạn thân video: cắt cảnh mỗi 8-12 giây. Không được để 1 hình tĩnh dài quá 15 giây.
+* Trước signature block: ngừng 1 nhịp, chuyển visual sang custom graphic/B-roll để nhấn.
+* Kết thúc/CTA: quay về visual đặc trưng kênh, không generic.
+Quy tắc đồng bộ voice-visual
+* Tại mỗi markup [pause] trong script → visual phải có chuyển động: transition, zoom chậm, hoặc text animation xuất hiện.
+* Tại mỗi markup [nhấn] → visual phải có nhấn mạnh: text lớn, flash, highlight, hoặc zoom in đột ngột.
+* Tại mỗi markup [long-pause] → gần như BẮT BUỘC có visual moment: quote card, data viz, hoặc cảnh B-roll đẹp.
+* Tại mỗi markup [hạ giọng] → visual nên tối hơn (dim), gần (close-up), hoặc slow motion.
+
+
+
+
+BƯỚC 4 – BIẾN TẤU TEMPLATE (VARIANCE INJECTION)
+Thời gian: 30-45 phút | Output: Video có ít nhất 5 điểm biến tấu so với video trước
+Đây là bước quan trọng để chống "pattern detection" của YouTube. Mỗi video PHẢI có ít nhất 5 điểm khác biệt so với video gần nhất cùng kênh.
+8 điểm có thể biến tấu
+#
+	Yếu tố
+	Cách biến tấu
+	Ví dụ
+	1
+	Intro
+	Thay đổi 3-5 giây đầu theo chủ đề video
+	Video về tiền: animation đồng xu rơi. Video về thời gian: animation đồng hồ quay.
+	2
+	Hook visual
+	Mỗi video có 1 visual hook độc nhất (số liệu/quote/cảnh mở)
+	Bigtext số "83%" full màn hình → zoom out ra context
+	3
+	Color grade chính
+	Giữ tone kênh nhưng điều chỉnh warm/cool theo nội dung
+	Nội dung cảnh báo: hơi ám xanh. Nội dung cảm hứng: warm up.
+	4
+	Transition signature
+	Mỗi video chọn 1 transition đặc trưng làm điểm nhận diện
+	Video A: whip pan. Video B: glitch cut. Video C: match cut.
+	5
+	Typography style
+	Giữ font system, biến tấu size/weight/animation
+	Video này: text trượt ngang. Video sau: text zoom pop.
+	6
+	Nhạc nền
+	Không dùng trùng track với 5 video gần nhất cùng kênh
+	Xoay vòng pool 15-20 track theo mood từng video
+	7
+	Sound design
+	Thêm SFX đặc thù cho chủ đề video
+	Chủ đề công nghệ: beep/glitch. Chủ đề thiên nhiên: ambient.
+	8
+	Outro CTA
+	Thay đổi lời CTA và visual CTA theo nội dung video
+	Không dùng đúng một end card lặp lại mãi
+	________________
+
+
+BƯỚC 5 – XỬ LÝ AI IMAGE (COMPOSITE RULES)
+Thời gian: 30-60 phút | Output: AI image đã composite, không còn "mùi AI raw"
+AI image raw (paste thẳng từ Midjourney/DALL-E/Flux) là dấu hiệu số 1 để YouTube flag video. BẮT BUỘC composite theo 3 cấp độ dưới đây:
+Cấp 1 – Composite tối thiểu (cho mọi AI image)
+* Crop lại khung, KHÔNG dùng nguyên tỉ lệ 1:1 mặc định của AI tool.
+* Color grade lại để khớp tone chung của kênh.
+* Thêm grain/texture nhẹ để phá độ "nhẵn" đặc trưng của AI.
+* Đặt trên nền/background có layer, không để AI image chiếm toàn bộ khung.
+Cấp 2 – Composite trung bình (cho 50% AI image trong video)
+* Cấp 1 + thêm text overlay, số liệu, hoặc caption có chủ đích.
+* Ghép với asset khác: icon, frame, border, hoặc illustration vector.
+* Áp dụng parallax effect nếu dùng trên nền tĩnh.
+Cấp 3 – Composite cao (cho signature blocks)
+* Cấp 2 + split thành nhiều layer, animate từng layer.
+* Kết hợp với B-roll thật (ví dụ: AI background + tay người thật cầm vật thể).
+* Thêm motion graphic layer overlay.
+Quy tắc tối đa: Không quá 30% thời lượng video là AI image (đã composite). Không quá 10 AI image khác nhau trong 1 video – quá nhiều AI image khác nhau trong 1 video cũng là dấu hiệu spam.
+
+
+
+
+BƯỚC 6 – AUDIO MIX & SOUND DESIGN
+Thời gian: 30-45 phút | Output: Audio đạt chuẩn broadcast
+Audio là yếu tố 50% của cảm giác chuyên nghiệp. Video Editor BẮT BUỘC thực hiện:
+6.1. Voice processing
+* Loudness voice: -16 LUFS (chuẩn YouTube).
+* Peak không vượt -3 dB.
+* Áp dụng EQ: cut dưới 80Hz, boost nhẹ 2-4kHz cho presence.
+* De-esser nếu voice có "s" gắt.
+* Compression tỉ lệ 3:1 để cân bằng độ to.
+6.2. Nhạc nền
+* Loudness nhạc nền: -24 đến -22 LUFS (thấp hơn voice 6-8 LUFS).
+* Áp dụng ducking tự động: khi voice xuất hiện, nhạc giảm 6-8 dB.
+* Không để nhạc lặp nguyên 1 đoạn 30 giây quá 3 lần.
+6.3. Sound design (SFX)
+* Thêm SFX cho mỗi transition quan trọng (whoosh, impact, swoosh).
+* SFX nhấn cho các moment quan trọng (chime, ding, pop) – tối thiểu 10 SFX/video 10 phút.
+* Ambient/room tone nền subtle dưới voice để không bị "khô".
+________________
+
+
+BƯỚC 7 – QC TỰ KIỂM TRA TRƯỚC KHI GIAO
+Thời gian: 30-45 phút | Output: Video đạt ≥ 90% checklist
+Xem lại video FULL ÍT NHẤT 2 LẦN:
+* Lần 1: xem như người xem bình thường, đánh giá cảm giác tổng thể.
+* Lần 2: xem với checklist trong tay, tick từng mục.
+Nếu phát hiện bất cứ đoạn nào "nhàm", "đều đều", hoặc "giống AI farm" → phải edit lại trước khi submit.
+4. CHECKLIST QC BẮT BUỘC (25 ĐIỂM)
+Ngưỡng duyệt: ≥ 22/25 (88%) – được render final và submit. < 22/25 – phải dựng lại.
+Nhóm A – Visual Diversity (6 điểm)
+6. Không có đoạn nào dùng 1 hình tĩnh dài quá 15 giây?
+7. Cắt cảnh trung bình mỗi 8-12 giây ở thân video?
+8. Hook 30 giây đầu có nhịp cắt 3-5 giây?
+9. Có đủ 5 lớp visual (Custom/B-roll/AI composite/Stock/Text)?
+10. Tỉ lệ các lớp đạt chuẩn Bước 2?
+11. Không có đoạn nào chỉ dùng Ken Burns suốt quá 20 giây?
+Nhóm B – Human Touch (5 điểm)
+12. Có ít nhất 15% thời lượng là B-roll thật?
+13. Custom graphic/motion có bản sắc riêng (không dùng template generic)?
+14. Mỗi signature block có visual đậm (custom graphic hoặc B-roll)?
+15. Typography có hệ thống riêng của kênh (font, color, animation)?
+16. Color grade có bản sắc rõ ràng, không phải preset mặc định?
+Nhóm C – AI Image Processing (4 điểm)
+17. Không có AI image raw (mọi AI image đều qua composite tối thiểu Cấp 1)?
+18. AI image không vượt 30% thời lượng video?
+19. Không có 2 AI image liên tiếp cùng style?
+20. Signature blocks có AI image đạt composite Cấp 3?
+Nhóm D – Variance từ video trước (4 điểm)
+21. Có ít nhất 5 điểm biến tấu so với video gần nhất cùng kênh?
+22. Không trùng track nhạc nền với 5 video gần nhất?
+23. Có ít nhất 1 transition signature riêng cho video này?
+24. Intro có phần biến tấu 3-5 giây theo chủ đề?
+Nhóm E – Voice-Visual Sync (3 điểm)
+25. Mọi [pause] và [long-pause] có visual moment đi kèm?
+26. Mọi [nhấn] có visual emphasis (text/zoom/flash)?
+27. Nhịp visual khớp với nhịp voice, không bị "lệch"?
+Nhóm F – Audio Mix (3 điểm)
+28. Voice đạt -16 LUFS, peak không vượt -3 dB?
+29. Nhạc nền có ducking khi voice xuất hiện?
+30. Có ít nhất 10 SFX có chủ đích/video 10 phút?
+________________
+
+
+5. QUẢN LÝ THƯ VIỆN ASSET
+Để scale sản xuất mà vẫn giữ chất lượng, GODA MEDIA xây dựng hệ thống thư viện asset riêng cho từng kênh/cluster kênh.
+5.1. Cấu trúc thư viện bắt buộc
+* Folder 01_Custom_Graphics: motion graphic, icon, illustration do team thiết kế riêng cho kênh.
+* Folder 02_Broll_Real: footage thật quay từ team hoặc mua license riêng (không dùng stock chung).
+* Folder 03_AI_Images: lưu theo ngày sinh + prompt gốc. KHÔNG reuse AI image giữa 2 kênh khác nhau.
+* Folder 04_Stock_Licensed: stock video/image đã mua license. Đánh dấu tần suất sử dụng.
+* Folder 05_Music_Pool: pool 15-20 track nhạc nền per kênh. Tracking lịch sử sử dụng.
+* Folder 06_SFX_Library: SFX được phân loại theo mood và use case.
+* Folder 07_Brand_System: font, color palette, logo, template intro/outro gốc của kênh.
+5.2. Quy tắc B-roll thật
+* Mỗi tuần team phải quay mới ít nhất 30 phút B-roll mới cho mỗi cluster kênh.
+* Top B-roll ý tưởng dễ quay: tay lật sách/note, rót cà phê, gõ phím, scroll phone/laptop, đi bộ POV, cửa sổ văn phòng, cảnh bảng trắng.
+* Không dùng 1 đoạn B-roll quá 3 lần trong 1 tháng cho cùng 1 kênh.
+* Không dùng B-roll chéo giữa các cluster kênh khác niche.
+5.3. Quy tắc AI image
+* Lưu prompt gốc cùng với ảnh để có thể recreate variation sau.
+* Mỗi kênh có style guide riêng cho AI image (aspect ratio, color, mood).
+* Không dùng AI image "hot" đang viral trên Twitter/Pinterest – dễ bị pattern match.
+________________
+
+
+6. KPI & PHÂN QUYỀN TRÁCH NHIỆM
+6.1. KPI Video Editor
+Chỉ số
+	Mục tiêu
+	Hậu quả nếu không đạt
+	% video pass checklist ≥ 88% ngay lần đầu
+	≥ 85%
+	< 70% trong 2 tháng → training bắt buộc
+	Thời gian dựng 1 video 10 phút
+	5-7 giờ (Tier A/B)3-4 giờ (Tier C)
+	< 3 giờ Tier A/B → nghi ngờ bỏ bước, audit ngay
+	Số video bị flag/demonetize trong 90 ngày
+	0
+	≥ 1 → audit 30 ngày gần nhất
+	Tỉ lệ B-roll thật trung bình
+	≥ 18%
+	< 15% liên tục → cần bổ sung pool B-roll
+	Số lần re-edit trên 1 video
+	≤ 1
+	≥ 3 lần/video thường xuyên → đánh giá năng lực
+	
+
+6.2. Phân quyền
+Vai trò
+	Trách nhiệm
+	Video Editor
+	Thực hiện đầy đủ 7 bước. Tự chấm checklist 25 điểm. Submit video kèm bảng điểm QC và Asset Plan.
+	Motion Designer
+	Thiết kế và cập nhật Custom Graphics thư viện. Support Video Editor khi cần composite cao cấp.
+	B-roll Team
+	Quay và cập nhật thư viện B-roll thật hàng tuần. Đảm bảo mỗi cluster kênh có nguồn B-roll riêng.
+	Channel Manager
+	Ký duyệt Asset Plan trước dựng. Review final video. Spot check 20% video/tuần.
+	QC Lead
+	Audit batch: kiểm tra 10 video gần nhất của mỗi kênh tìm pattern lặp. Cập nhật danh sách video mẫu chuẩn và video vi phạm.
+	________________
+
+
+7. TEMPLATE SUBMIT VIDEO
+Video Editor điền đầy đủ template khi submit final video:
+Tên kênh
+	______________________________
+	Mã video
+	______________________________
+	Tier kênh (A/B/C)
+	______________________________
+	Độ dài cuối
+	______________________________
+	Tỉ lệ 5 lớp visual
+	Custom: ___% | B-roll: ___% | AI composite: ___% | Stock: ___% | Text: ___%
+	Số custom graphic
+	______ asset (tự thiết kế)
+	Số B-roll thật
+	______ clip (tổng ______ giây)
+	Số AI image đã dùng
+	______ ảnh (tất cả đã composite Cấp ___)
+	Điểm biến tấu so với video trước
+	Liệt kê 5+ điểm khác biệt:1. ______2. ______3. ______4. ______5. ______
+	Track nhạc nền sử dụng
+	______________________________ (xác nhận không trùng 5 video gần nhất)
+	Voice loudness (LUFS)
+	______ LUFS
+	Số SFX sử dụng
+	______ SFX
+	Điểm QC tự chấm
+	___ / 25
+	Thời gian dựng thực tế
+	______ giờ
+	
+
+8. CAM KẾT & HIỆU LỰC
+Mọi Video Editor của GODA MEDIA ký nhận SOP này cam kết:
+* Thực hiện đầy đủ 7 bước dựng cho mọi video.
+* Không áp dụng bất kỳ kiểu dựng nào trong danh sách 7 cấm ở Phần 2.
+* Không composite ẩu AI image. Mọi AI image đều qua composite tối thiểu Cấp 1.
+* Tự chấm checklist trung thực – gian lận chấm điểm sẽ bị xử lý kỷ luật.
+* Cập nhật kỹ năng dựng và công cụ theo xu hướng YouTube.
+
+
+SOP có hiệu lực từ ngày ban hành. Liên kết với SOP Human-Edit Script AI v1.0 thành bộ đôi bắt buộc áp dụng đồng thời.
+
+
+
+
+Người ban hành
+(Head of Production)
+_________________
+	Người phê duyệt
+(CEO - GODA Holding)
+_________________
+	Người cam kết thực hiện
+(Video Editor)
+_________________
+	
+
+Trang  /

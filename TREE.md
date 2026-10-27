@@ -1,6 +1,6 @@
 # Cây thư mục chuẩn — H2DEV-Project
 
-Cập nhật: **2026-09-16**
+Cập nhật: **2026-10-26**
 
 H2DEV là **một nguồn sự thật**. Gốc `Y:\YTB` không chứa data làm việc.
 
@@ -17,7 +17,7 @@ Y:\YTB\
     ├── AGENTS.md                  # SSoT 1 chỗ — boot order mỗi phiên
     ├── CHANGELOG.md               # trạng thái vận hành
     ├── CHAY-LAN.md                # hướng dẫn chạy LAN / Tailscale
-    ├── index.html · player.html · learn.html
+    ├── index.html · player.html · learn.html · graph.html
     ├── server.js                  # HTTP tĩnh · bind 0.0.0.0:8899 · chặn web tại `SENSITIVE_SEGMENTS` (trong `server.js`)
     ├── package.json · package-lock.json · tailwind.config.js
     ├── css\                       # input.css — nguồn Tailwind → assets/tailwind.css
@@ -29,31 +29,32 @@ Y:\YTB\
     │                              #   install-h2dev-{watchdog,noadmin,startup}.ps1 · check-server.ps1
     │                              #   _rereg_watchdog_silent_admin.cmd · h2dev-service-autoreload-hook.ps1 (16/09)
     ├── data\                      # catalog gốc + manifest dẫn xuất — tạo bằng script
-    │   ├── catalog.json               # 144 record (projection gốc)
-    │   ├── catalog_full.json          # 144 record (projection đầy đủ)
-    │   ├── modules.json               # 12 module
+    │   ├── catalog.json               # 148 record (projection gốc)
+    │   ├── catalog_full.json          # 148 record (projection đầy đủ)
+    │   ├── catalog_huan.json · catalog_dgmd.json  # 140 record Huân Academy + 45 record DGMD (tổng 333 bài 3 nhánh)
+    │   ├── modules.json · modules_huan.json · modules_dgmd.json  # 12 + 12 + 11 = 35 module
     │   ├── video_acceptance.json      # trạng thái pilot, QA, blocker — không gọi PASS giả
     │   ├── raw-channels-deep\         # 149 hồ sơ kênh sâu (transcripts/summary/vision) — phục vụ UI
     │   ├── research-20260916\         # 43 prompt master research (nguồn của +43 card 16/09)
     │   ├── music_catalog.json         # 49 tracks nhạc nền đã audit Gemini & FFprobe (36 SAFE · 9 REVIEW · 4 COPYRIGHTED)
     │   ├── counts-manifest.json       # manifest số liệu chuẩn tự động sinh bởi sync-counts.js
-    │   └── *.db (h2dev_master · intelligence) · *.json dẫn xuất/manifest  # (2 folder *_backup_* cũ đã dời _archive 16/09)
+    │   └── *.db (h2dev_master · h2dev_knowledge_graph · intelligence) · knowledge_graph.json
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
-    │   ├── videos.json            # 144 SKU (27 free · 117 pro — gồm 4 Zoom free)
-    │   ├── kenh-mau.json          # 256 kênh (187 sống · 69 dead ẩn) · ngay_do 256/256 (đo thực tế 2026-10-14: 187 sống · 59 DIE · 10 rỗng)
+    │   ├── videos.json            # 148 SKU (27 free · 121 pro — gồm 4 Zoom free)
+    │   ├── kenh-mau.json          # 261 kênh (189 sống · 72 dead ẩn) · ngay_do 261/261 (đo thực tế: 184 sống · 59 DIE 404 · 10 rỗng · 3 dead khác)
     │   ├── tai-lieu-full.json     # 300 card (kind: prompt 77 · report 21 · tool 28 · list 14 · other 8 · internal-doc 5 · sop 14 · guide 49 · transcript 40 · sheet 4 · 40 chưa gán; đo 2026-10-14)
     │   ├── nguon-reup.json        # 27
-    │   ├── ngach-xanh.json        # 34 ngách (xanh:true 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 13 BXH
-    │   ├── chien-luoc.json        # workflow 11 bước · 4 nguyên tắc
+    │   ├── ngach-xanh.json        # 34 ngách (xanh:true 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 12 Trụ cột Chính sách YouTube 2026
+    │   ├── chien-luoc.json        # workflow 16 bước · 4 nguyên tắc · 12 bước Checklist trước khi đăng · Ma trận 148 bài học
     │   ├── kich-ban.json          # 60 — extract cũ, UI không đọc
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)
     │   └── raw-kenh-mau.json      # 156 record canonical (149 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 156/156 · vidIQ verified 83
     │
     ├── assets\                    # tailwind.css (BUILD từ css/input.css) · viddar.css · learn.css · player.css · fonts\ (woff2 self-host)
-    │   ├── thumbs\                # 144/144 khớp videos.json + placeholder.svg
+    │   ├── thumbs\                # 148/148 khớp videos.json + placeholder.svg
     │   └── avatars\ · docs\
     ├── docs\
-    │   ├── VIDEO-*\               # 140/140 SKU: README + description.html
+    │   ├── VIDEO-*\               # 329 README.md · 166 description.html (đếm đệ quy hiện trạng)
     │   ├── ZOOM-*\                # 4 buổi Zoom (ZOOM-01..04) + ZOOM-00 quy trình: README + link tài liệu chi tiết
     │   └── NOI-BO\                # tài sản nội bộ đã chuẩn hóa tên
     │       ├── README.md
@@ -63,14 +64,15 @@ Y:\YTB\
     │       ├── chat\
     │       └── zoom\              # ⭐ Kiến thức Zoom: QUY-TRINH-XAY-KENH-A-Z.md + 4 buổi chi tiết
     │
-    ├── pipelines\                 # pipeline chạy được
+    ├── pipelines\                 # 5 pipeline chạy được
+    │   ├── everyday-history\
     │   ├── hoat-hinh-ai\
     │   ├── ton-giao\
     │   ├── wildlife\
     │   └── bible-explainer\
     ├── knowledge-hub\             # archive transcript / NotebookLM
     │
-    ├── video\                     # 144 thư mục: 140 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~22.30 GiB / 23.95 GB) · KHÔNG vào git
+    ├── video\                     # 333 thư mục: 329 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~83.13 GiB / 89.26 GB) · KHÔNG vào git
     ├── inbox\                     # THẢ FILE MỚI VÀO ĐÂY (web bị chặn)
     ├── scripts\                   # validate · sync · intake · clean
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git
@@ -82,9 +84,11 @@ Y:\YTB\
     │   └── 20260918-obsolete-build-modules\ # 3 script sinh data SAI (xem README.md trong đó):
     │       # build-modules.js · build-modules-v2.js (chỉ 11 module, MẤT Zoom M11)
     │       # normalize_raw_kenh_mau.cjs (patch 1 lần cho 95 record → nay 156)
+    ├── _internal\                 # dữ liệu nội bộ đang tồn tại ở gốc · web bị chặn
+    ├── _tmp-proof\                # bằng chứng/probe tạm đang tồn tại ở gốc · web bị chặn
     ├── .cache\                    # cache runtime (checkpoint, thumbnail, reload-state) · web bị chặn
     ├── logs\                      # log server/watchdog/reload · web bị chặn · KHÔNG vào git
-    │   # (không còn ở gốc: _frames\ · _tmp_audio\ · _drafts\ · _internal\ — đã dời 16/09; script tự tạo lại khi chạy)
+    │   # (không còn ở gốc: _frames\ · _tmp_audio\ · _drafts\; _internal\ hiện đã tồn tại lại)
     ├── raw-kenh-goc\             # 158 ảnh raw canonical + metadata (156 record: 0 kênh chưa có ảnh chụp) · web bị CHẶN (403)
     ├── DESIGN-IS-2026-08-22\      # audit UI 22/08 (14/30 REDESIGN) · web bị CHẶN (403)
     └── node_modules\              # web bị chặn · KHÔNG vào git

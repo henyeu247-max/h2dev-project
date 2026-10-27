@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-09",
-  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 12 bước thực chiến toàn diện). Tổng hợp và đối soát từ 4 buổi Zoom thực chiến chuyên gia, 144 video bài học, 300 tài liệu SOP và 13 Agent Skills H2DEV. Có liên kết trực tiếp tới SKU bài giảng, tài liệu local và công cụ thực tế.",
+  "updated": "2026-10-25",
+  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 16 bước thực chiến toàn diện trên hệ thống 97yo-dev). Tổng hợp và đối soát từ 333 video bài học toàn hệ thống (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD), 300 tài liệu SOP catalog (+1.409 tài liệu đính kèm 3 nhánh: 499 H2DEV · 750 Huân · 160 DGMD), 256 kênh mẫu (184 live · 72 dead) và 13 Agent Skills. Có liên kết trực tiếp tới SKU bài giảng, tài liệu local và công cụ thực tế.",
   "nguyenTacCotLoi": [
     "NGÁCH KHÔNG QUYẾT ĐỊNH XANH/ĐỎ — CÁCH LÀM QUYẾT ĐỊNH. Phải có giá trị gốc nhìn thấy được, câu chuyện có nguồn sử học/khoa học/bảo tàng xác thực, triệt tiêu 100% bẫy sao chép máy móc.",
     "HAI CỬA ĐỘC LẬP CỦA YOUTUBE: Inauthentic Content (tự làm nội dung công nghiệp lặp lại, slide ảnh tĩnh) và Reused Content (lấy clip người khác không biên tập). Faceless/AI hoàn toàn hợp lệ nếu áp dụng kỹ thuật hậu kỳ đa lớp (Multi-layer Compositing) và đóng góp giá trị sáng tạo riêng.",
@@ -63,7 +63,7 @@
       "n": 3,
       "phase": "Giai đoạn II: Tình Báo Thị Trường & Lựa Chọn Ngách Xanh",
       "title": "Tình Báo Đối Thủ, Khai Thác 156 Raw Kênh & Thẩm Định Micro-Niche Bằng vidIQ",
-      "detail": "Khai thác cơ sở dữ liệu 156 hồ sơ Raw kênh và 256 đối thủ live. Đo lường chỉ số vidIQ: Search Volume (>65) và Competition Score (<50). Lùng sục các Micro-Niche (ngách cực nhỏ) ít đối thủ cạnh tranh: Thói quen ăn rau sống, bài thuốc bàn ăn, xe cộ xưa, triết lý Saitou Hitori, câu chuyện Sukatto, vật lý lượng tử dễ hiểu.",
+      "detail": "Khai thác cơ sở dữ liệu 156 hồ sơ Raw kênh (149 kênh độc nhất) và 256 đối thủ mẫu (184 kênh live · 72 case study DIE). Đo lường chỉ số vidIQ: Search Volume (>65) và Competition Score (<50). Lùng sục các Micro-Niche (ngách cực nhỏ) ít đối thủ cạnh tranh: Thói quen ăn rau sống, bài thuốc bàn ăn, xe cộ xưa, triết lý Saitou Hitori, câu chuyện Sukatto, vật lý lượng tử dễ hiểu.",
       "tab": "rawkenh",
       "tabLabel": "Kho 156 Raw Kênh",
       "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
@@ -89,8 +89,8 @@
     {
       "n": 4,
       "phase": "Giai đoạn II: Tình Báo Thị Trường & Lựa Chọn Ngách Xanh",
-      "title": "Giải Mã 68 Kênh Chết (Case Study DIE 404) & Thiết Lập Rào Chắn YMYL",
-      "detail": "Học từ thất bại: mổ xẻ 68 kênh đối thủ bị YouTube trảm để không dẫm vào vết xe đổ. 41% chết do Reused Douyin không lồng tiếng, 29% chết do Inauthentic slide ảnh AI lặp lại, 18% chết do YMYL chẩn đoán y tế bừa bãi. Thiết lập rào chắn: Không xưng danh bác sĩ, không kê đơn thuốc, luôn có disclaimer y khoa trong 5 giây đầu.",
+      "title": "Giải Mã 72 Kênh Chết (Case Study DIE 404) & Thiết Lập Rào Chắn YMYL",
+      "detail": "Học từ thất bại: mổ xẻ 72 kênh đối thủ bị YouTube trảm hoặc xóa trắng để không dẫm vào vết xe đổ. 41% chết do Reused Douyin không lồng tiếng, 29% chết do vi phạm YMYL giả danh bác sĩ khuyên thuốc, 18% chết do spam slide ảnh tĩnh công nghiệp. Thiết lập bộ rào chắn miễn nhiễm YMYL (100% Không-Bác-Sĩ, gắn Disclaimer y khoa/tài chính).",
       "tab": "kenh-mau",
       "tabLabel": "Case Study Kênh Chết",
       "docPath": "knowledge-hub/docs/RULE-LAM-VIEC.md",
@@ -305,7 +305,9 @@
         "VIDEO-2aa1f7",
         "VIDEO-a348a5",
         "VIDEO-39ae49",
-        "VIDEO-8e0275"
+        "VIDEO-8e0275",
+        "VIDEO-0c72ab",
+        "VIDEO-e0e9cd"
       ]
     },
     {
@@ -354,7 +356,8 @@
         "seo hashtag"
       ],
       "skus": [
-        "VIDEO-af606d"
+        "VIDEO-af606d",
+        "VIDEO-0b3f44"
       ]
     },
     {
@@ -529,30 +532,37 @@
         "thị trường us"
       ],
       "skus": [
-        "VIDEO-9ea5e3"
+        "VIDEO-9ea5e3",
+        "VIDEO-ab1137"
       ]
     }
   ],
   "loTrinhXinKiemTien": {
-    "hienTai2026": "Quảng cáo & Premium: 1.000 sub và 4.000 giờ xem video dài hợp lệ trong 12 tháng, hoặc 10 triệu view Shorts trong 90 ngày. Đủ số vẫn phải qua vòng xét duyệt chính sách của con người.",
-    "tu2027": "Từ 01/02/2027: Kênh mới xin bật quảng cáo nâng lên 1.000 sub + 8.000 giờ xem/365 ngày hoặc 20 triệu view Shorts/90 ngày. Kênh đã bật trước ngày này giữ nguyên ngưỡng cũ.",
-    "duyTriYPP": "Duy trì hoạt động: Không đăng video quá 6 tháng YouTube có quyền tắt kiếm tiền. Kênh chuyên về AI persona tư vấn sức khỏe, tài chính, pháp lý sẽ bị xóa khỏi YPP."
+    "hienTai2026": "Bậc sớm (Fan Funding/Shopping): 500 sub + 3.000 giờ xem/3M Shorts. Bậc Quảng cáo & Premium: 1.000 sub + 4.000 giờ xem công khai hợp lệ/12 tháng HOẶC 10 triệu view Shorts hợp lệ/90 ngày (kèm 2FA + bật đủ 3 Dòng Xanh Feature Eligibility + 0 gậy Cộng đồng). SOP Pre-Audit duyệt siêu tốc 6–12h: ẩn video lệch ngách, giữ 5–7 video sạch đồng nhất 100%, bấm Apply sáng thứ Hai–thứ Tư (VIDEO-84a039, VIDEO-21824a).",
+    "tu2027": "Từ 01/02/2027 (YouTube Help 12843009 & answer/12504220): Kênh MỚI nộp đơn xin bật quảng cáo nâng gấp đôi lên 1.000 sub + 8.000 giờ xem/365 ngày HOẶC 20 triệu view Shorts/90 ngày. Kênh đã vào YPP trước 01/02/2027 giữ nguyên tư cách nhưng phải bấm chấp nhận điều khoản mới trước 31/01/2027; riêng điều kiện nhận chia sẻ doanh thu Shorts hằng tháng (45% Pool) từ 01/02/2027 cần duy trì 10 triệu view Shorts hợp lệ/90 ngày.",
+    "duyTriYPP": "Giữ YPP & Bảo vệ GA: Ngưng đăng video quá 6 tháng (180 ngày) bị thu hồi YPP. Cấm tuyệt đối 3 nhóm Inauthentic (Template lặp, Animal Rescue/Trẻ em đau khổ, AI Bác sĩ/Tài chính/Pháp lý). Bị từ chối/đình chỉ có 21 ngày quay Video Appeal OBS < 5 phút (kháng Reused về 95–99% sau 8–12h; nộp lại sau 30/90 ngày). Tách biệt 3 tầng VPS (Root Owner -> Work Manager -> GA riêng) và cấm tuyệt đối Invalid Traffic (mua view/click ảo làm chết GA vĩnh viễn)."
   },
   "checklistTruocKhiDang": [
-    "Video có giá trị nội dung gốc rõ ràng (áp dụng quy trình hậu kỳ đa lớp, không phải slideshow ảnh ghép tự động)?",
-    "15 giây đầu có câu hỏi tò mò (Hook nghịch lý) giữ chân khán giả, không chào hỏi dông dài?",
-    "Giọng đọc AI nghe tự nhiên, phát âm chuẩn, nhịp điệu đúng chuẩn ngách (105 WPM dưỡng sinh, 135 WPM tài liệu, 145 WPM trinh thám)?",
-    "Hình ảnh minh họa chuẩn phong cách phim tài liệu chân thực (ống kính 50mm, quay cầm tay, không CGI hào nhoáng)?",
-    "Nếu dùng hình ảnh/nhân vật AI chân thực: đã khai báo nhãn nội dung tổng hợp đúng quy định?",
-    "Thumbnail 1 chủ thể chính rõ ràng (60–70% khung hình), chữ to <= 4 từ nổi bật tương phản cao (vàng/trắng)?",
-    "Tiêu đề chứa từ khóa chính ở 25% ký tự đầu, kết hợp Hook gây tò mò, không giật tít lừa đảo?",
-    "Mô tả video đầy đủ thông tin tóm tắt 200–400 từ, credit nguồn bảo tàng/sử học và 3–5 hashtag liên quan?",
-    "Đã đặt video ở chế độ Không công khai ít nhất 2 giờ trước khi hẹn giờ phát sóng giờ vàng?"
+    "[1. Thẩm định Chủ đề & Outlier] Chủ đề đã đối chiếu danh sách Dream 100 và dựa trên video Outlier có lượt xem gấp >= 3–5 lần trung bình kênh trong 30 ngày qua (VIDEO-c289d8, VIDEO-8a3f22, VIDEO-94be0f)?",
+    "[2. Kịch bản 70/30 & Human-Edit >= 30%] Đã viết lại 100% Hook 15–30s đầu bằng nghịch lý, xóa sạch 10 cụm từ AI sáo rỗng ('delve into', 'tapestry'...), cấy >= 5 Signature Blocks dữ kiện thật và hội tụ >= 3/5 lớp Context (VIDEO-fb7e44, VIDEO-5d54d0)?",
+    "[3. Chống Inauthentic & B-roll Đời Thật Track 1] Đã lồng B-roll tự quay bằng điện thoại ở Video Track 1, đổi cảnh mỗi 3–5s (Hook) và 8–12s (thân bài), không có ảnh tĩnh > 15s hay HeyGen đứng đọc nguyên bài, biến tấu >= 30% template so với video trước (VIDEO-DD983D, VIDEO-484f9e)?",
+    "[4. Hậu kỳ 5 Lớp & Originality >= 3/5] Với kênh Bán Content/Phim/Nhạc: đã áp dụng đủ 5 lớp (Scale 104–106% + Flip, Speed 1.05x, AI Frame Overlay, Film Grain 3%, Sóng nhạc + Logo di chuyển, cắt 3s đầu/cuối) và đạt >= 3/5 trụ cột Originality Matrix (VIDEO-9aff6d, VIDEO-33d701, VIDEO-d22348)?",
+    "[5. Kênh Phụ Test Bản Quyền Riêng Tư] Đã tải bản nháp lên Kênh Phụ ở chế độ Private để YouTube quét thử: đảm bảo 0 gậy Hình ảnh (Visual claim), tách bỏ 100% nhạc gốc dính Content ID và che mờ 100% hardsub/watermark gốc (VIDEO-9a4ddc, VIDEO-cb907b)?",
+    "[6. Master Audio 3 Tầng & WPM Chuẩn Ngách] Giọng đọc chuẩn -16 LUFS đúng tốc độ ngách (105 WPM dưỡng sinh / 120 WPM tôn giáo / 135 WPM tài liệu / 145 WPM trinh thám) + >= 10 SFX (-24..-18 dB) + BGM 432Hz (-28..-22 LUFS, Sidechain Ducking -6..-8dB, Low-cut < 80Hz) từ nguồn nhạc sạch (SOP-AUDIO-VOICE-DNA-STANDARD.md)?",
+    "[7. Rào Chắn YMYL 100% Không-Bác-Sĩ & Văn Hóa] Tuyệt đối không xưng danh Bác sĩ/Chuyên gia AI tư vấn y tế - tài chính - pháp lý (đã chèn Medical Disclaimer & dùng hoạt hình 3D ẩn dụ nếu làm sức khỏe), không phạm 3 vùng cấm VN (Phật pháp xuyên tạc, Chính trị, Vùng miền) (VIDEO-484f9e, VIDEO-73c662)?",
+    "[8. Khai Báo Nhãn AI (Altered Content)] Đã tích chọn 'Có' (Yes) tại mục 'Altered or synthetic content' trong YouTube Studio nếu dùng nhân vật, giọng nói, bối cảnh sự kiện hoặc nhạc AI chân thực (answer/14328491, VIDEO-e223d6)?",
+    "[9. Thumbnail & Tiêu Đề CTR Cao Không Lừa Đảo] Thumbnail <= 3 chi tiết (chủ thể 60–70% khung hình, chữ <= 4 từ tương phản cao), đồng nhất phong cách với ruột video (không treo đầu dê bán thịt chó); Tiêu đề đặt từ khóa chính ở 25% ký tự đầu, không gắn #hashtag trên tiêu đề Video Dài (VIDEO-af606d, VIDEO-af2c29)?",
+    "[10. Chống Cờ Spam Metadata 2026] Đã đổi tên file gốc .mp4/.jpg theo từ khóa không dấu; chỉ gắn 3–5 hashtag cuối mô tả (tuyệt đối không vượt quá 15 hashtag); để trống Channel Keywords và mô tả ngắn 3–4 từ khóa nếu làm Bán Content, hoặc mô tả 200–400 từ có dẫn nguồn nếu làm Giáo dục/Lịch sử (VIDEO-7db740, VIDEO-4483df, VIDEO-e3bcfa)?",
+    "[11. Kỷ Luật Upload Unlisted >= 2 Giờ & Lưu Project] Kênh đã bật đủ 3 Dòng Xanh, chọn 'Not Made for Kids', tải lên ở chế độ Không công khai (Unlisted) ít nhất 2 giờ để hệ thống Checks duyệt xanh tiền hoàn tất trước giờ vàng, và đã lưu trữ file project CapCut/Premiere gốc để sẵn sàng quay Video Appeal OBS nếu cần (VIDEO-46c57e, VIDEO-7f0bb4)?",
+    "[12. Cách Ly VPS/GA & Lá Chắn Human Footprint] Thực hiện đăng bài trên đúng Work VPS của kênh (cách ly với Root VPS và GA VPS), giữ nhịp đăng <= 1 video / 2 ngày, không trộn Shorts vào kênh Video Dài, và duy trì lịch đăng 1 video hậu trường Unlisted mỗi 2–3 tuần (VIDEO-b522d6, VIDEO-f83f59, VIDEO-1a7f58)?"
   ],
-  "nguonDuLieu": "144 bài học catalog (140 video bài giảng + 4 buổi Zoom) + 300 tài liệu full + 256 kênh mẫu (188 live · 68 dead) + 156 hồ sơ Raw Canonical (149 kênh unique). Hệ thống kết nối MCP Pool Local tại D://Mcp-Pool-Vps cổng :3988.",
+  "nguonDuLieu": "Hệ thống 97yo-dev: 333 bài học (148 H2DEV [144 video bài giảng + 4 buổi Zoom] + 140 Huân Academy + 45 DGMD) + 300 tài liệu SOP catalog (+1.409 tài liệu đính kèm bài giảng: 499 H2DEV · 750 Huân · 160 DGMD) + 256 kênh mẫu (184 live · 72 dead) + 156 hồ sơ raw kênh (149 kênh độc nhất) + 6 báo cáo kiểm toán chuyên sâu.",
   "nguonChinhSach": [
     "https://support.google.com/youtube/answer/72851",
     "https://support.google.com/youtube/answer/1311392",
+    "https://support.google.com/youtube/answer/14328491",
+    "https://support.google.com/youtube/answer/12504220",
+    "https://support.google.com/youtube/answer/6162278",
     "https://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn"
   ],
   "huongDiNoiDung": [
@@ -622,11 +632,11 @@
     }
   ],
   "cachNoiTab": [
-    "Tab Video = Nguồn bài học 144 SKU (gồm 140 video bài giảng + 4 buổi ghi hình Zoom chuyên gia).",
+    "Tab Video = Nguồn bài học 333 SKU toàn hệ thống 97yo-dev (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD).",
     "Tab Ngách xanh = Ma trận 34 ngách ứng viên linh hoạt, đối soát số liệu vidIQ và 10 ngách Xanh chuẩn.",
-    "Tab Kịch bản = Thư viện 300 tài liệu, 20 Master Prompts viết kịch bản đa hồi và báo cáo thị trường.",
-    "Tab Kênh mẫu = Kho 256 kênh đối thủ thực tế (188 kênh sống tăng trưởng + 68 case study DIE 404 để né bẫy).",
-    "Tab Chiến lược = Quy trình xây kênh A–Z chuẩn hóa 12 bước SOP Chiến Lược Vàng H2DEV thực chiến."
+    "Tab Kịch bản = Thư viện 300 tài liệu SOP catalog (+1.409 tài liệu thực chiến đính kèm 3 nhánh: 499 H2DEV · 750 Huân · 160 DGMD), 20 Master Prompts viết kịch bản đa hồi và báo cáo thị trường.",
+    "Tab Kênh mẫu = Kho 256 kênh đối thủ thực tế (184 kênh sống tăng trưởng + 72 case study DIE 404/rỗng để né bẫy).",
+    "Tab Chiến lược = Quy trình xây kênh A–Z chuẩn hóa 16 bước SOP Chiến Lược Vàng 97yo-dev thực chiến."
   ],
   "taiSanNoiBo": [
     {
@@ -639,14 +649,14 @@
     {
       "loai": "Hồ sơ 4 buổi Zoom",
       "path": "docs/NOI-BO/zoom/",
-      "so": 5,
+      "so": 6,
       "tab": "tai-lieu",
       "kind": "report"
     },
     {
       "loai": "Báo cáo nghiên cứu",
       "path": "docs/NOI-BO/bao-cao/",
-      "so": 21,
+      "so": 25,
       "tab": "tai-lieu",
       "kind": "report"
     },
@@ -672,8 +682,8 @@
     }
   ],
   "matrix144": {
-    "totalVideos": 144,
-    "totalWords": 332297,
+    "totalVideos": 148,
+    "totalWords": 347868,
     "clusters": [
       {
         "id": "ban-content-nhan-ban",
@@ -830,20 +840,20 @@
       }
     ],
     "clusterCounts": {
-      "ban-content-nhan-ban": 84,
+      "ban-content-nhan-ban": 86,
       "hoat-hinh-douyin-bilibili": 4,
       "suc-khoe-duong-sinh-senior": 13,
       "drama-sukatto-doi-song": 9,
-      "prompt-ai-dao-dien-visual": 9,
+      "prompt-ai-dao-dien-visual": 10,
       "khang-ban-quyen-adsense": 15,
       "triet-ly-lich-su-phat-phap": 7,
-      "setup-moi-truong-nuoi-kenh": 3
+      "setup-moi-truong-nuoi-kenh": 4
     },
     "items": [
       {
         "sku": "VIDEO-DD983D",
         "title": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
-        "duration": null,
+        "duration": "10:01",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Em chào tất cả mọi người nha, thì hôm nay em tiếp tục lên thêm video nói về số cái ngách nữa nha mọi người | Thì đầu tiên là cái kênh này là kênh thị trường Nhật Bản và Hạ Dùng kênh cổ 2010 nè | Và chỉ mới 14 video nha, em cho các bạn xem kênh trước",
@@ -855,12 +865,12 @@
           "Không nản lòng khi 3-5 video đầu chưa cắn đề xuất; duy trì tính kỷ luật trong khâu edit và đăng bài đúng khung giờ."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 6
       },
       {
         "sku": "VIDEO-484f9e",
         "title": "Ngách nhỏ bán content thị trường Việt và Cách edit hạn chế lỗi quét do AI mới nhất hiện tại",
-        "duration": null,
+        "duration": "9:41",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Hôm nay thì em update cho mọi người một cái ngách ở thị trường Việt nha | Rồi đây là em cho mọi người xem | Kênh này thì là ở thị trường Việt Nam",
@@ -872,12 +882,12 @@
           "Tránh sao chép nguyên văn tiêu đề và phần mô tả của các kênh lớn khác, dễ bị YouTube nhận diện là hành vi spam siêu dữ liệu (Metadata Spam)."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 6
       },
       {
         "sku": "VIDEO-e24c31",
         "title": "Update ngách mới cực trends bán content view ngoại, show kênh mới hoàn toàn 5 video",
-        "duration": null,
+        "duration": "10:10",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok hello em xin chào tất cả mọi người nha | Hôm nay em tiếp tục lên video | share cái ngách cực kỳ mới cho mọi người xem luôn nha",
@@ -889,12 +899,12 @@
           "Tránh đặt tiêu đề sai lệch hoàn toàn so với nội dung trong video (Clickbait quá đà), khiến khán giả bấm thoát ngay sau vài giây đầu tiên làm sụp đổ AVD."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-a7bfd0",
         "title": "Update ngách mới và khám kênh + giải thích một số lỗi tránh bị 0 view, lẹt đẹt, không lên được",
-        "duration": null,
+        "duration": "10:28",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "ở đây là một cái kênh là về ngắt chúa ở thị trường Hàn Quốc nha mọi người thì em sẽ cho | mọi người xem quay kênh này trước nha Cái này thì cũng mới thôi cũng mới bm4 video thôi rất | là mới nha em sẽ kéo cho mọi người xem view nó cũng khá là ổn đây cơ này vẫn đang bật kiếm tiền",
@@ -906,12 +916,12 @@
           "Không thay đổi IP đăng video liên tục giữa các quốc gia khác nhau mà không dùng VPS/Proxy cố định sạch."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 6
       },
       {
         "sku": "VIDEO-4b3c09",
         "title": "Update 4 ngách nhỏ làm bán content thị trường Hàn Quốc",
-        "duration": null,
+        "duration": "16:22",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi em xin chào tất cả mọi người nha thì video hôm nay em tiếp tục là xe cho mọi người một vài | cái nhát ở thị trường Hàn Quốc nha thì đây là một cái con thị trường hàng lập ở cuối tháng 6 | nhà một người nhưng mà cơ này chỉ mới 14 video thôi nha Cái này thì cũng làm về cái nhắc sức",
@@ -923,12 +933,12 @@
           "Tránh dùng các từ khóa y tế nhạy cảm bị YouTube kiểm duyệt gắt gao như 'chữa ung thư giai đoạn cuối', 'thay thế thuốc bác sĩ'."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-28e1cc",
         "title": "Show kênh mới vừa bật kiếm tiền Và Hướng dẫn thực chiến full quy trình làm Reup ngách nhỏ hoạt hình từ bilibili",
-        "duration": null,
+        "duration": "20:17",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Hello, em xin chào tất cả mọi người nha. Thì đây là một kênh làm về Reup của một bác trong nhóm Pro của mình nha mọi người. | Thì kênh này của bác này thì cũng mới vừa vào kiếm tiền hôm ngày 9 tháng 7 thôi. | Ngách Reup thì mọi người thấy nó kiếm cũng nói chung là như em nói trước giờ, làm để kiếm thêm thôi chứ không kiếm được nhiều đâu nha mấy bác.",
@@ -940,12 +950,12 @@
           "Không để sót logo, watermark tiếng Trung hoặc phụ đề chữ Hán gốc trên màn hình mà không che chắn cẩn thận."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 6
       },
       {
         "sku": "VIDEO-d2cd90",
         "title": "Update 5 ngách nhỏ bán content ngoại mới nhất",
-        "duration": null,
+        "duration": "10:06",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào tất cả mọi người nha, hôm nay em tiếp tục share cho mọi người một vài cái kênh đi ngách mới nữa nha | Thì đây là một cái kênh về thị trường Nhật Bản, kênh này chỉ mới là 16 video thôi nha | Kênh này hãy dùng kênh cổ 2020 nha",
@@ -957,12 +967,12 @@
           "Tránh sử dụng từ ngữ thô lỗ hoặc mang tính phán xét tiêu cực trong văn hóa giao tiếp khép kín của người Nhật Bản."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-9aff6d",
         "title": "4 video nổ hơn 300k view - Update 2 ngách mới cực kỳ trends và hướng dẫn edit tạo khung cho ngách nhỏ...",
-        "duration": null,
+        "duration": "12:11",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Ok em chào tất cả mấy bác nha, thì hôm nay em sẽ tiếp tục share cho mấy bác thêm một vài cái ngách mới nữa nha | Thì cái kênh này thì là hoàn toàn là mới luôn nha, nhưng mà nó đang là dùng kênh cổ 2011 nha mọi người | Đây, video đầu tiên là từ một ngày trước nè, về một ngày kênh này nó đang spam là 2 video luôn",
@@ -979,7 +989,7 @@
       {
         "sku": "VIDEO-e90874",
         "title": "Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến",
-        "duration": null,
+        "duration": "18:34",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi em chào tất cả mọi người nha, như hôm trước em đã có nói và hứa là sẽ lên video và hướng dẫn mọi người là làm một cái form prompt nhân bản thị trường, bất kỳ thị trường nào muốn luôn nha | Thì hôm nay em sẽ share cái form prompt đó và hướng dẫn mọi người làm nha | Thì cái, thật ra cái form prompt này thì em đã trên sánh rồi, và cái này là dùng để cho mọi người làm bất kỳ cái thị trường nào muốn luôn nha",
@@ -991,12 +1001,12 @@
           "Không nạp cùng lúc cả prompt hình ảnh và prompt kịch bản trong 1 tin nhắn ban đầu khiến AI bị nhiễu và làm sơ sài cả hai phần."
         ],
         "takeaways": [],
-        "attachedCount": 8
+        "attachedCount": 7
       },
       {
         "sku": "VIDEO-c5837a",
         "title": "Update share các ngách Bán content và Reup mới nhất - tất cả thị trường Nhật - Hàn - Việt",
-        "duration": null,
+        "duration": "10:10",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi em chào mấy bác nha, thì hôm nay tiếp tục em lên thêm cái video về share thêm cho mấy bác một vài ngách nữa nha | Trước khi vào cái những ngách em share mới á thì mọi người có nhớ là cái ngách này hôm trước em để share cho mọi người 2-3 lần gì không? | Hình như là 2 lần rồi á, thì đây là một kênh mới hoàn toàn nữa của một bác hợp viên của web pro mình nha mọi người",
@@ -1008,12 +1018,12 @@
           "Tránh việc làm nhiều thị trường hỗn tạp trên cùng một kênh YouTube; mỗi kênh chỉ được tập trung vào duy nhất một quốc gia và một ngôn ngữ."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-348217",
         "title": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
-        "duration": null,
+        "duration": "6:33",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Đây là một kênh nhân bản thị trường từ US sang Việt Nam nha mấy bác | Thì cái ký cái ngách này thì hôm trước em có hướng dẫn kênh youtube em á | Bác nào có theo dõi thì cũng biết nha",
@@ -1025,12 +1035,12 @@
           "Không sử dụng nhạc nền có bản quyền thương mại chưa được cấp phép trong YouTube Audio Library."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-f74bb1",
         "title": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất",
-        "duration": null,
+        "duration": "10:59",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Em chào mọi người nha, thì trước khi vào video thì em hướng dẫn mọi người cách để tách cái thông báo như này ở trên web em nha | Thì nó có, trước giờ nó có một cái chuông thông báo nè mọi người, thì mọi người bấm tích vào cái dấu chuông đó, mọi người bấm vào thôi | Thì nó sẽ không hiện thông báo nữa thôi, đấy, hôm bữa các bác, em thấy các bác hỏi thì em sẽ hướng dẫn lại luôn nha",
@@ -1042,12 +1052,12 @@
           "Không gắn link tiếp thị liên kết bán thuốc không rõ nguồn gốc ở phần mô tả video."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-1aaf46",
         "title": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends",
-        "duration": null,
+        "duration": "10:08",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi, em chào mọi người nha. Hôm nay thì em quay lại và tiếp tục share cũng như là nói về các cái dạng ngách Reup nha mọi người. | Đây là một cái kênh làm về Reup hoặc hình bên trung nè. Như những cái hôm trước em đã share và hướng dẫn mọi người á. | Thì toàn bộ là những kỳ đó thôi, hết hết mọi người.",
@@ -1059,12 +1069,12 @@
           "Tránh đăng liên tục quá 5 video/ngày gây kích hoạt bộ lọc hành vi bot tự động của YouTube."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 9
       },
       {
         "sku": "VIDEO-21956b",
         "title": "Update ngách nhân bản thị trường Hàn, Nhật và Việt",
-        "duration": null,
+        "duration": "10:04",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào tất cả mọi người nha, thì đây là một cái kênh làm về cái sức khỏe ở thị trường Hàn Quốc nha mọi người, thì em sẽ cho mọi người xem qua trước | Kênh này thì làm cũng khá nhiều video rồi nha mọi người, về có video nó nổ cao view, thì có video thì cũng không nổ, thì tầm vài trăm view, đây, em cho mọi người xem qua | Tầm 2 tháng trước, 3 tuần trước, và 2 ngày trước cũng có video nổ nè mọi người",
@@ -1076,12 +1086,12 @@
           "Không đăng video nhiều ngôn ngữ khác nhau trên cùng một kênh khiến thuật toán bị loạn tệp người xem."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-e91589",
         "title": "16 triệu/ 1 ngày - Doanh thu kênh thị trường Nhật, làm nhân bản thị trường",
-        "duration": null,
+        "duration": "3:30",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào mọi người nha, thì đây là một kênh của một bác hợp viên trong gói Pro của em nha mọi người | Kênh này thì cũng mới vừa bật kiếm tiền thôi và đang làm là thị trường Nhật Bản nha mọi người | Thì kênh này là làm theo cái hướng là nhân bản thị trường như em đã hướng dẫn ở các video Pro nha mọi người",
@@ -1098,7 +1108,7 @@
       {
         "sku": "VIDEO-34c92b",
         "title": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường",
-        "duration": null,
+        "duration": "10:12",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok, em xin chào mọi người nha, thì hôm nay em share thêm cho mọi người một ngách view Việt, thị trường Việt nữa nha mọi người | Nhưng mà trước khi vào á, thì mọi người có nhớ kênh này không? | Kênh này là kênh làm về cái sức khỏe, cái ngách sức khỏe hôm bữa em có show thực tế cái doanh thu các thứ ở trong kênh này luôn rồi cho mọi người xem rồi đấy",
@@ -1115,7 +1125,7 @@
       {
         "sku": "VIDEO-21824a",
         "title": "Bật kiếm tiền kênh học viên Pro",
-        "duration": null,
+        "duration": "3:02",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Đây là kênh của một bác học viên trong gói Pro của em nha mọi người. | Kênh mới hoàn toàn vừa được bật kiếm tiền nha mọi người. | Vừa được duyệt bật kiếm tiền lúc 2h40 phút nè, ngày 6 tháng 6 nè mọi người.",
@@ -1132,7 +1142,7 @@
       {
         "sku": "VIDEO-84a039",
         "title": "Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất",
-        "duration": null,
+        "duration": "10:10",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok, em xin chào mọi người nha. Thì video hôm nay em sẽ tiếp tục share cho mọi người một vài cái ngách nữa nha. | Một vài cái ngách mới nha mọi người. Vừa có ngách mới thì em lên clip liền luôn. | Thì đây là một kênh Thủy trường Nhật, chỉ mới nêm video và kênh này lập là kênh mới hoàn toàn.",
@@ -1149,7 +1159,7 @@
       {
         "sku": "VIDEO-817ae6",
         "title": "Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật",
-        "duration": null,
+        "duration": "5:45",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "em chào mọi người nha thì em mới vừa lọc ra thêm được vài cái ngách mới nữa thì em xe thêm cho | mọi người nha thì đây là một cái tên thị trường Việt cho mọi người về cơn này dùng tên cổ luôn | để làm nha về cơ này video đầu tiên là từ 6 ngày trước và cơ này chỉ mới 7 video thôi nha mọi người",
@@ -1161,12 +1171,12 @@
           "Không xóa video cũ khi chưa thấy tăng view, thuật toán YouTube thường mất từ 7-14 ngày để phân phối tệp người xem."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-4425fc",
         "title": "Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét",
-        "duration": null,
+        "duration": "9:11",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "em chào mọi người nha thì tôi không bữa giờ có đang có một cái đọt vét tài khoản Google | Excel rất là kênh nha mọi người thì tài khoản Google Excel gọi là anh em gọi tích là ghe là | ghe nha mọi người thì em để gọi nhanh thì em gọi là ghe nha chứ còn gọi đúng là nó là tài khoản",
@@ -1178,12 +1188,12 @@
           "Không dùng chung 1 tài khoản ngân hàng thụ hưởng cho nhiều tài khoản AdSense khác nhau."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-2de9e4",
         "title": "Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách)",
-        "duration": null,
+        "duration": "5:03",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok, em chào mọi người nha, thì hôm nay tiếp tục em share thêm mọi người 2 cái ngách nhỏ ở trong cái dạng ngách sức khỏe nữa nha mọi người | Thì hôm trước em làm video, làm hướng dẫn mọi người làm cái bán content cái dạng cái view Việt sức khỏe này rất là hay luôn | Thì nên em nhớ xem lại nha, mọi người chưa xem thì xem nha",
@@ -1195,12 +1205,12 @@
           "Tránh bán các loại thuốc đông y gia truyền trôi nổi không có giấy phép y tế."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-2ba0d1",
         "title": "Update ngách mới thị trường Nhật Bản làm bán content",
-        "duration": null,
+        "duration": "6:20",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok em xin chào mọi người nha, thì hôm nay em sẽ tiếp tục share thêm cho mọi người một vài cái ngách dạng bán content ở thị trường ngoại nữa nha, cụ thể là thị trường Nhật nha mọi người | Thì đây là một cái kênh làm về chủ đề là Nikola Tesla nha mọi người | Đây, còn rất là nhiều kênh đối thủ khác nhau nữa, thì tất cả thì em sẽ để ở dưới mô tả nha mọi người luôn",
@@ -1212,12 +1222,12 @@
           "Không dùng hình ảnh biếm họa làm mất đi vẻ tôn kính của các bậc tiền nhân."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-5d54d0",
         "title": "Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ",
-        "duration": null,
+        "duration": "1:00:59",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ ok em xin chào mọi người nha Thì video hôm nay em sẽ làm video là trên hướng dẫn mọi người cách để | trên cloud để lấy kịch bản kiểu như làm bán con tên lấy 70 phần trăm về 30 phần trăm là nó tự | sẽ tự viết lại mọi người đó thì trước tiên em chỉ làm ví dụ là cái ngắt này nha mọi người đó thì đây",
@@ -1229,12 +1239,12 @@
           "Không thay đổi vị trí từ khóa ngách trong tiêu đề tiếng Nhật vì khán giả lớn tuổi tại Nhật có thói quen tìm kiếm và nhận diện video qua thẻ tên trong ngoặc vuông 【 】."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 4
       },
       {
         "sku": "VIDEO-2277b3",
         "title": "Share thêm ngách nhỏ thị trường Việt và phân tích hướng dẫn tư duy làm nhân bản tất cả các thị trường",
-        "duration": null,
+        "duration": "10:05",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi, em chào ngày mới mọi người nha. Thì tiếp tục với cái dạng key sức khỏe, cái ngắt sức khỏe mà hôm qua em hướng dẫn mọi người á. | Thì hôm nay em share thêm cho mọi người 2 kênh đối thủ ở thị trường Việt nè mọi người. | Đây, nó vừa lập giữa tháng 4 luôn nè mọi người.",
@@ -1251,7 +1261,7 @@
       {
         "sku": "VIDEO-f77c31",
         "title": "Doanh thu kênh làm bán content ngách view Việt sau 10 ngày bật kiếm tiền",
-        "duration": null,
+        "duration": "2:08",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok em xin chào mọi người nha, thì đây là một cái kênh làm thị trường view Việt nha mọi người | Vừa bật kiếm tiền ngày 7 nha, bắt đầu nhảy tiền là ngày 8 nha mọi người | Đây em sẽ show hết cho mọi người xem",
@@ -1263,12 +1273,12 @@
           "Tuyệt đối không giữ nguyên âm thanh gốc của video nguồn (phải tắt 100% audio gốc)."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-ca0b1a",
         "title": "Show kênh thực chiến không che - hướng dẫn quy trình làm bán content nhân bản thị trường US sang Việt",
-        "duration": null,
+        "duration": "31:30",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok em xin chào mọi người nha, thì hôm nay thì em show cho mọi người thực tế một cái kênh đang bật kiếm tiền view việt luôn nha mọi người | Đấy và lần này em show là không che cũng như là sẽ hướng dẫn mọi người full cái quy trình về cái cách làm về cái dạng này luôn nha | Thì thực ra thì cái này là em đã hướng dẫn mọi người từ rất là lâu rồi và hướng dẫn rất là nhiều luôn",
@@ -1280,12 +1290,12 @@
           "Không sao chép nguyên xi hình thu nhỏ của kênh đối thủ ngoại mà không thiết kế lại chữ tiếng Việt."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-54c8f7",
         "title": "Full quy trình thực chiến hướng dẫn dùng Claude train prompt bất kỳ chủ đề ngách nào mình muốn và cách đóng gói Skill để dùng làm viết kịch bản, tạo ảnh, tạo thumb... (video dài hơn 1 giờ) - Quy Trình dạng tự tạo làm mới chủ đề, kịch bản, hình ảnh... ",
-        "duration": null,
+        "duration": "1:12:34",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Rồi em xin chào mọi người nha, thì video hôm trước em có share ở kênh youtube của em nè, thì chắc hẳn mọi người cũng đã xem hết rồi đúng không? | Nếu mà bác nào mà chưa xem thì nên xem lại một lần nha, thì cái video này em hướng dẫn cũng cực kỳ là hay nha mọi người | Rồi thì video hôm nay em lên mọi người thấy cũng rất là dài đúng không? Hơn lọng một tiếng luôn",
@@ -1302,7 +1312,7 @@
       {
         "sku": "VIDEO-3e943c",
         "title": "Nên dùng bản web hay app? và giải thích nên dùng gói nào của Claude AI",
-        "duration": null,
+        "duration": "4:42",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Rồi, em chào mọi người nha. Thì ở video này em sẽ nói sâu well về cái con Cloud AI này nha mọi người. | Thì mọi người có thể dùng ở trên web nè. Đây, mọi người truy cập vào web là cloud.ai nha mọi người. | Đó, xong rồi thì anh em login bằng cái tài khoản Google của mọi người vào nha.",
@@ -1314,12 +1324,12 @@
           "Không phụ thuộc vào bản Claude Free cho các tác vụ quan trọng vì sẽ bị gián đoạn giữa chừng khi video đang trong tiến độ sản xuất gấp."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 4
       },
       {
         "sku": "VIDEO-469cb5",
         "title": "Update thêm kênh đối thủ - ngách thị trường Hoa Kỳ (US)",
-        "duration": null,
+        "duration": "3:09",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Ok em chào mọi người nha, thì video này em share thêm cho mọi người một vài kênh đối thủ về cái ngách là kinh thánh | về kiểu dạng kinh thánh nha mọi người | Về chúa ấy, thì cái video này, cái video hướng dẫn thì em mới vừa up trên kênh youtube nha mọi người",
@@ -1331,12 +1341,12 @@
           "Không đặt tiêu đề xúc phạm hoặc xuyên tạc ý nghĩa của các đoạn kinh văn thánh."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-7312df",
         "title": "Bật kiếm tiền cho 2 kênh làm Reup hoạt hình - Show kênh không che",
-        "duration": null,
+        "duration": "2:03",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Thì ngày hôm nay em đã kháng về bật kiếm tiền cho 2 cơn Reup nha mọi người | Thì đây hiện tại là em vừa kháng lúc tối que về vừa mới ngày hôm nay | Lúc nãy hơn 1 giờ chiều này thì nó đã xét diệt lại về bật kiếm tiền lại rồi nha mọi người",
@@ -1353,7 +1363,7 @@
       {
         "sku": "VIDEO-2235fb",
         "title": "Show kênh REUP nhân bản thị trường Hoa Kỳ, view cực kỳ kinh khủng + thêm kênh thị trường Thái Lan và hướng dẫn tư duy làm đúng ngách đúng thị trường auto có view",
-        "duration": null,
+        "duration": "4:00",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok em chào mọi người nha, thì hôm nay em lên một video cho mọi người thấy được cái sức mạnh của việc nhân bản thị trường mẹ em đã hướng dẫn cũng như là nhắc đi nhắc lại nhà em làm rất là nhiều lần rồi | Thì đây là một cái ngách tri âm hoạt hình nha mọi người, đây, đây, trước tiên em cho mọi người xem quen, mọi người thấy không? | View kinh khủng khiếp chưa?",
@@ -1370,7 +1380,7 @@
       {
         "sku": "VIDEO-e9e879",
         "title": "Thực chiến & Show kênh ngách làm reup mới bật kiếm tiền - Full quy trình thực chiến sản xuất video -> đăng video lên kênh không che ",
-        "duration": null,
+        "duration": "10:02",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok, em xin chào tất cả mọi người nha | Thì đây là một cái kênh Reup của bên em | Vừa làm bật kiếm tiền này, mọi người đang kiếm được hơn 500.000 nha",
@@ -1387,7 +1397,7 @@
       {
         "sku": "VIDEO-6283a6",
         "title": "Update free tool tạo giọng đọc tiếng Việt (Ngọc Huyền) vào tool dịch Phụ đề SRT",
-        "duration": null,
+        "duration": "2:53",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào mọi người nha, thì cái tool dịch của em thì vừa update một số cái tính năng nên em thông báo cho mọi người biết nha | Thì đây là một video download này, cũng như là share key thì trước đó mọi người cũng biết rồi nha | Một download này thì gồm tất cả các cái nền tảng luôn nha mọi người",
@@ -1399,12 +1409,12 @@
           "Kiểm tra kỹ các từ phiên âm tiếng nước ngoài hoặc từ địa phương trong file SRT trước khi bấm xuất voice để tránh AI đọc sai ngữ âm"
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-46c57e",
         "title": "KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026",
-        "duration": null,
+        "duration": "2:56",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Xin chào mọi người nha, thì vừa rồi thì bọn em vừa kháng thành công một kênh sử dụng lại nội dung về dạng Reup này mọi người | Hiện tại thì hơn 3 giờ chiều nha | Vậy là thời điểm em đang quay video này là ngày 7 tháng 5 nha mọi người",
@@ -1421,7 +1431,7 @@
       {
         "sku": "VIDEO-b1208e",
         "title": "KÊNH BUILD ĐÚNG 7 NGÀY - SHARE THÊM 3 NGÁCH CỰC NHỎ REUP MỚI NHẤT CỰC TRENDS",
-        "duration": null,
+        "duration": "4:36",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ ok em chào mọi người nhá thì video hôm nay em sẽ tiếp tục và xe thêm cho mọi người một vài cái | ngắt riêng hoặc hình riêng nữa nha mọi người đang rất rất là trên luôn nha thì nhiều ngắt nha mọi | người thì cơn đầu tiên là về cái kênh này để cho mọi người xem thì nó lập từ đầu tháng 4 này cơ",
@@ -1438,7 +1448,7 @@
       {
         "sku": "VIDEO-1acb10",
         "title": "SHARE NGÁCH REUP HOẠT HÌNH TRUNG QUỐC RẤT TRENDS FULL BỘ MỚI NHẤT",
-        "duration": null,
+        "duration": "4:33",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào mọi người nha, video hôm nay em sẽ share thêm cho mọi người về cái ngách Reup nha | Đây là một kênh quẹo tu tiên nè, kênh này đang là 16 video nha mọi người | Em cho mọi người xem nha, view rất là cao luôn nha",
@@ -1455,7 +1465,7 @@
       {
         "sku": "VIDEO-a1c98f",
         "title": "HƯỚNG DẪN QUY TRÌNH LÀM THUMB - CLONE THUMB THEO GIỐNG 100% ĐỐI THỦ TỪ FONT CHỮ PHONG CÁCH ĐỐI THỦ - MẢNH GHÉP CUỐI CÙNG CỰC KỲ QUAN TRỌNG KHI LÀM VIDEO ",
-        "duration": null,
+        "duration": "15:01",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok, xin chào mọi người nha. Thì video này em sẽ hướng dẫn mọi người cách clone thum theo giống đối thủ luôn nha. | Thì cái này cũng là mảnh ghép cuối cùng của cái quy trình làm bán content thôi luôn mọi người. | Thì cái này cũng khá là nhiều nên em hỏi em á. Thì bây giờ em mới làm video hướng dẫn mọi người luôn nha. Cách mà em làm trước giờ nha mọi người.",
@@ -1467,12 +1477,12 @@
           "Tránh xuất video với bitrate quá thấp dẫn đến hiện tượng vỡ hạt trên màn hình lớn."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-70f1f1",
         "title": "KEY BÁN CONTENT NGÁCH NHỎ ĐỨC PHẬT VÀ CHÚA THỊ TRƯỜNG HÀN QUỐC",
-        "duration": null,
+        "duration": "4:03",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ ok em chào mọi người nha thì hôm nay em sẽ thêm là mọi người cái nách về dạng cũng là dạng về Phật | Pháp cho mọi người ở bên thị trường Hàn Quốc nha thì cái cơn này thì nó cũng làm khét lâu rồi nha | mọi người kéo nhiều video rồi nha đây cho mọi người xem quen nhưng mà hiện tại vẫn đang rất",
@@ -1484,12 +1494,12 @@
           "Không dùng hình ảnh méo mó dị dạng của các đấng thiêng liêng làm ảnh hưởng đến lòng tin tín ngưỡng."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-33f474",
         "title": "CHỈ MỚI 5 VIDEO - KÊNH MỚI LẬP 14/04/2026 NỔ VIEW QUÁ KHIẾP VỚI NGÁCH TÂM LINH, LUẬT HẤP DẪN THỊ TRƯỜNG NHẬT BẢN ",
-        "duration": null,
+        "duration": "5:33",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Em chào mọi người nha, thì hôm nay em sẽ share thêm cho mọi người một vài cái ngách ở thị trường Nhật nữa nha | Thì đầu tiên là về cái kênh này, thì cái kênh này thì mới chỉ ra được 5 video nè | Đây mọi người cho mọi người xem vừa trước nha",
@@ -1501,12 +1511,12 @@
           "Không xóa video khi mới đăng vài ngày mà chưa thấy tăng view, thuật toán thị trường Nhật cần thời gian kiểm chứng độ trust."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-28bb9b",
         "title": "SHARE NGÁCH REUP CỰC TRENDS VÀ 3 NGÁCH BÁN CONTENT VIEW VIỆT - CLONE THEO ĐỐI THỦ",
-        "duration": null,
+        "duration": "3:38",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok mọi người thì kênh Reup hộp hình hôm bữa em đánh thì đã có bác mua về rồi nha mọi người. | Và cũng đã nói ghe vào về bác kiếm tiền rồi nha. | Thì kênh này mới vừa bác kiếm tiền thì nó vẫn chưa update, vẫn chưa cập nhật mới nhắc nha mọi người.",
@@ -1523,7 +1533,7 @@
       {
         "sku": "VIDEO-9f9fbc",
         "title": "*BẮT BUỘC PHẢI XEM - DÀNH CHO NGƯỜI MỚI HOÀN TOÀN CHƯA BIẾT GÌ - HƯỚNG DẪN FULL QUY TRÌNH SETUP SETTING KÊNH CHUẨN NGAY TỪ ĐẦU THEO CHÍNH SÁCH MỚI NHẤT 2026 (TẠO KÊNH, SETUP CÀI ĐẶT KÊNH, SEO KÊNH, NGÂM KÊNH, NGÁCH LÀM...)",
-        "duration": null,
+        "duration": "20:03",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Ừ rồi em chào mọi người nha Thì video này em sẽ hướng dẫn lại từ đầu là cách xét up setting lại cho | kênh về ngâm kênh các thứ theo cái chủ đề mà em xe hôm nay luôn nha mọi người đó thì video này em | hướng dẫn lại hoàn toàn cho người mới chưa biết gì luôn nha mọi người rồi thì sẽ nghe là em xe cho",
@@ -1535,12 +1545,12 @@
           "Không đăng video đầu tiên khi chưa kích hoạt đủ 3 tầng tính năng của YouTube."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-10f129",
         "title": "SHARE KEY NGÁCH NHỎ VIEW VIỆT BÁN CONTENT VÀ HƯỚNG DẪN TƯ DUY ÁP DỤNG LÀM NHÂN BẢN THỊ TRƯỜNG KHÔNG BAO GIỜ LO THIẾU KỊCH BẢN CONTENT",
-        "duration": null,
+        "duration": "5:02",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ ok em chào mọi người nha Thì video hôm nay em sẽ cho mọi người một cái ngắt làm thị trường | viêu việc nha mọi người thì cái dạng viêu việc thì rất là dễ làm rồi đúng không thì cho mọi | người xem show bài kênh này trước thì mới làm từ bốn tuần trước nha về dạng là triết lý cổ nhân",
@@ -1552,12 +1562,12 @@
           "Tránh để hình ảnh bị kéo dãn sai tỷ lệ khung hình chuẩn 16:9."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-2553da",
         "title": "SHOW THỰC TẾ KÊNH EM BUILD LÀM TRONG 20 NGÀY KHÔNG CHE VÀ VỪA ĐỦ ĐẾN ĐIỀU KIỆN BẬT KIẾM TIỀN | UPDATE 18-04-2026",
-        "duration": null,
+        "duration": "3:33",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào mọi người nha, hôm nay em show một kênh Reup và hôm nay em đang làm về test key cho anh em xem nè | Đấy thì kênh này là dạng về Reup hoặc hình AI bên Trung Quốc nha mọi người | Đấy thì hôm nay em build gần 1 tháng nha mọi người",
@@ -1574,7 +1584,7 @@
       {
         "sku": "VIDEO-3fd0d9",
         "title": "SHARE NGÁCH CỰC NHỎ REUP HOẠT HÌNH TRUNG VÀ SHOW 2 KÊNH MỚI BUILD",
-        "duration": null,
+        "duration": "2:03",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi ok em chào mọi người nha thì tiếp tục hôm nay em xe thêm cho mọi người cái ngắt | riêng để mọi người có thể làm thêm nha nên cá nhu cầu muốn làm thêm thì nên có thể làm nó | chung riêng này thì làm rất là nhanh thôi mọi người đây cho mọi người xem quay con này trước",
@@ -1591,7 +1601,7 @@
       {
         "sku": "VIDEO-502960",
         "title": "QUÁ KINH KÊNH 3 VIDEO / 1 NGÀY VỚI NGÁCH DRAMA NHẬT BẢN VÀ KÊNH HOÀN TOÀN ĐANG BẬT KIẾM TIỀN - CÁCH EDIT TRÁNH LỖI KHÔNG TRUNG THỰC MỚI NHẤT VÀ CHẮC CHẮN LÀ CAO SIÊU NHẤT HIỆN NAY",
-        "duration": null,
+        "duration": "5:14",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Tiếp tục hôm nay em share thêm cho mọi người một cái ngách bên thị trường Nhật. | Thì cái ngách này nó cũng làm về drama nha mọi người. | Đây để em lướt cho mọi người xem show về kênh này trước nha.",
@@ -1603,12 +1613,12 @@
           "Tránh đăng tải video khi chưa kiểm tra kỹ phần hiển thị chữ có bị che khuất bởi thanh thời gian không."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-9873fb",
         "title": "Khám kênh thực tế thành viên Pro sau video đầu tiên – Phân tích dữ liệu và hướng dẫn áp dụng tư duy nhân bản thị trường để phát triển kênh",
-        "duration": null,
+        "duration": "4:36",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Đây là kênh của một bác ở trên gói bờ rồ của mình nha mọi người. | Thì bác này mới lên một video đầu tiên luôn nhưng mà nổ view nè mọi người. | Đấy thì liền khe cho em luôn.",
@@ -1620,12 +1630,12 @@
           "Tuyệt đối không mua view, mua sub ảo làm loãng tệp khán giả mà thuật toán vừa đề xuất."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-10ceec",
         "title": "SHOW NGÁCH REUP MỚI CỰC HOT VÀ NHIỀU NGUỒN GỐC ĐỂ LÀM TỪ BILIBILI",
-        "duration": null,
+        "duration": "3:28",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi em chào mấy bác nha Thì mới có được một cái nách nhỏ hộp hình mới thì em sẽ liên doi bác nha | thì đây là một cái cân riêng về cái dạng hộp hình bên Billy Billy về đuôi nha mọi người nhưng mà cái | này thì nó nói bên Billy Billy nha thì cái cơn này thì mới chỉ ra 20 12 video thôi mọi người nó dùng",
@@ -1642,7 +1652,7 @@
       {
         "sku": "VIDEO-e83319",
         "title": "SHARE NGÁCH NHỎ THỊ TRƯỜNG NHẬT ĐANG CỰC TREDNS VÀ HƯỚNG DẪN TƯ DUY NHÂN BẢN THỊ TRƯỜNG - SẼ KHÔNG BAO GIỜ THIẾU NGÁCH VÀ THỊ TRƯỜNG ĐỂ LÀM",
-        "duration": null,
+        "duration": "10:01",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào mọi người nha, thì video hôm nay rất là đặc biệt nha, thì em chỉ nói về vấn đề nhân bản thị trường cho mọi người làm luôn | Thì trước tiên thì em share thêm một cái ngách drama về thị trường Nhật Bản nha mọi người | Đây, kênh này thì mới có 39 video thôi",
@@ -1654,12 +1664,12 @@
           "Tránh tiêu đề không liên quan đến nội dung thực tế bên trong video."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-9a6957",
         "title": "NGÁCH CỰC NHỎ KINH TẾ THỊ TRƯỜNG HÀN (EDIT THUẦN TRÁNH LỖI KHÔNG TRUNG THỰC)   *LƯU Ý: KHÔNG PHẢI DẠNG NGƯỜI QUE",
-        "duration": null,
+        "duration": "3:45",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi chào mọi người nha tiếp tục hôm nay em xe cho mọi người một cái ngách về kinh tế hàng nữa nha | thì cái dạng này ít cực kỳ là dễ về nói chung là đơn giản lắm mọi người chứ không phải là như cái | dạng người viên nha về cái dạng này lách được loại không trung thực bình thường luôn nha mọi người thì",
@@ -1671,12 +1681,12 @@
           "Tránh lỗi lệch pha âm thanh và hình ảnh do sai lệch tốc độ khung hình."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-ba3904",
         "title": "Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev",
-        "duration": null,
+        "duration": "4:27",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Em chào mọi người nha, video này em hướng dẫn mọi người cách tham gia group cộng đồng giao lưu hỗ trợ làm youtube của em nha | Thật sự thì nay em mới có thời gian rảnh để làm được cái này mọi người ạ | Rồi thì mọi người bấm xuống ở dưới cái video này nè, nó có cái link ở dưới mô tả này mọi người bấm vào",
@@ -1693,7 +1703,7 @@
       {
         "sku": "VIDEO-acd33f",
         "title": "NGUỒN MỚI REUP \"CÂU CÁ VẠN CÂN\" MỚI NHẤT - VIEW QUÁ KINH KHỦNG - SHOW 2 KÊNH MỚI ĐANG LÀM THẬT SỰ KHIẾP SỢ VÌ VIEW",
-        "duration": null,
+        "duration": "3:28",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi rồi, chào mọi người nha, thì thật sự là chưa kịp ăn uống gì thì em phải lên video liền cho mọi người | Thì mọi người nhớ cái ngách là câu kéo khoảng 5 ngày đúng không? | Thì hôm bữa, đây, em đang quay cho mọi người là lúc 8h kém ngày 9 tối hôm nay, ngày 9 tháng 4 luôn nè",
@@ -1705,12 +1715,12 @@
           "Tránh đôi co hoặc xóa các bình luận phê bình mang tính xây dựng của khán giả."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-1a7f58",
         "title": "NGÁCH NHỎ THỊ TRƯỜNG HÀN + NHẬT (PHÂN TÍCH HƯỚNG LÀM CHUẨN TRÁNH LỖI KHÔNH TRUNG THỰC MỚI NHẤT TỪ KÊNH ĐỐI THỦ)",
-        "duration": null,
+        "duration": "5:03",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào mọi người nha, thì đây là một cái kênh hàng, mình đang làm về một cái ngách là cũng là về Phật luôn nha mọi người | Nhưng mà kênh này thì chỉ mới là 11 video nha mọi người | Đó, và cái lúc đầu nó làm thì view khá là đẹp đẹp, đây, cho mọi người xem qua",
@@ -1722,12 +1732,12 @@
           "Tránh công khai video ngay trong lúc YouTube Checks đang xử lý phân tích bản quyền."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-5785a5",
         "title": "THỰC CHIẾN KÊNH ĐANG BẬT KIẾM TIỀN NGÁCH REUP MỚI NHẤT HƯỚNG DẪN SEARCH NGUỒN GỐC VÀ LÀM TỪ A-Z",
-        "duration": null,
+        "duration": "10:15",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Hôm nay em sẽ tiếp tục share cho mọi người và hướng dẫn mọi người làm một cái ngách Reupper từ bên trung nữa nha mọi người. | Đây thì là một cái kênh ở thị trường Việt Nam nè, và nó mới lập từ cuối tháng 2 nha. | Đây, cho mọi người xem qua kênh này.",
@@ -1744,7 +1754,7 @@
       {
         "sku": "VIDEO-64130d",
         "title": "TOOL DỊCH PHỤ ĐỀ SRT VIP - HƯỚNG DẪN DÙNG TOOL DỊCH PHỤ ĐỀ SRT CHUYÊN VIETSUB LÀM REUP/ BÁN CONTENT",
-        "duration": null,
+        "duration": "7:22",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào mọi người, video này em giới thiệu về hướng dẫn mọi người về con tool dịch phụ đề SRT này mới update phiên bản VIP nhất nha mọi người. | Thì như mọi người cũng đã biết, trước đó thì cũng có phiên bản cũ là phải tải về cài trên máy, cài trên desktop ấy mọi người, thì nó không có được tiện lắm bởi vì phải cài file về về giải nén các thứ nữa. | Nếu mà bác nào dùng máy hệ điều hành macOS thì không thể cài tool được.",
@@ -1756,12 +1766,12 @@
           "⚠️ Không dùng Notepad mặc định của Windows mở file SRT vì dễ bị lỗi font Unicode tiếng Việt; nên dùng Notepad++ hoặc VS Code."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-5c0b20",
         "title": "THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG",
-        "duration": null,
+        "duration": "5:40",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi ok em chào mọi người nha, vì video này em tiếp tục share thêm ngách để mọi người làm nha | Thì hôm trước em cũng đã có lên một cái ngách về Dramaya kiểu bên US, Canada ấy mọi người | Thì kênh đó rất là nhiều view, thì kênh này cũng là một tương tự nha mọi người",
@@ -1773,12 +1783,12 @@
           "Tránh dùng hình ảnh ghê rợn hoặc gây ám ảnh tâm lý tiêu cực cho người xem."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-3f85a1",
         "title": "SHARE KEY NGÁCH BÁN CONTENT THỊ TRƯỜNG CANADA VÀ NHẬT - RPM CỰC CAO",
-        "duration": null,
+        "duration": "5:04",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok thì hôm nay em sẽ thêm cho mọi người một cái ký ở thị trường châu Âu nha, là Canada nha mọi người. | Thì cái Rvm của thành Canada này thì nó cũng sắp xỉ như thành Mỹ thôi nha mọi người, đấy, nó vẫn rất là cao nha. | Rồi thì cái ký này là về đồ đam mê nha mọi người.",
@@ -1790,12 +1800,12 @@
           "Tránh lừa dối người xem bằng hình ảnh không hề xuất hiện trong video gây phẫn nộ."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-bf7b32",
         "title": "THỰC CHIẾN KÊNH ĐANG BẬT KIẾM TIỀN NGÁCH REUP/ BÁN CONTENT CỰC MỚI - SHARE KEY VÀ HƯỚNG DẪN SEARCH KÊNH NGUỒN GỐC RA HÀNG LOẠT",
-        "duration": null,
+        "duration": "5:07",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi Ok em chào mọi người nha thì hôm nay tiếp tục em xe thêm cho mọi người một cái nhạc tri âm họp | hình từ bên chung nữa nha cực kỳ là mới luôn nha mọi người thì nói chung những cái dạng họp hình | tri âm này rất rất là nhiều nha đây mọi người thấy không mọi người xem qua cơ này trước nha",
@@ -1807,12 +1817,12 @@
           "Tránh kịch bản thiếu tính thuyết phục khiến người xem cảm thấy giả tạo."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-4a5aac",
         "title": "SHARE NGÁCH REUP VIETSUB MỚI NHẤT CỰC TRENDS, VIEW QUÁ KHIẾP - RẤT ÍT CẠNH TRANH VÀ SHARE NGUỒN GỐC ĐỂ LÀM - UPDATE 30-03-2026",
-        "duration": null,
+        "duration": "4:08",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ ok chào tất cả mọi người nha thì hôm nay em sẽ tiếp tục và sẽ cho mọi người một cái ký rượu mới | nữa nha Thì cái cơn này mọi người thấy hơn 40 máy video đúng không Mọi người tưởng nó làm lâu rồi | đúng không Nhưng mà đã cho mọi người xem này cực kỳ là mới luôn nha Đấy 40 video đúng không thì mọi",
@@ -1824,12 +1834,12 @@
           "Tránh ảo tưởng về doanh thu tức thì khi kênh mới trong giai đoạn xây dựng ban đầu."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 4
       },
       {
         "sku": "VIDEO-a2b317",
         "title": "CHỈ MỚI 4 VIDEO NGÁCH US (HOA KỲ) NÀY ĐÃ NỔ HƠN GẦN 3 TRIỆU VIEW VÀ ĐANG BẬT KIẾM TIỀN + SHARE THÊM 3 NGÁCH THỊ TRƯỜNG US + NGA VÀ GIẢI THÍCH CHỌN NGÁCH/ THỊ TRƯỜNG LÀM ĐỂ DỄ LÊN NHẤT",
-        "duration": null,
+        "duration": "7:08",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Ừ rồi em chào mọi người nha thì video hôm nay em chỉ sẽ cho mọi người những cái gấp đang rất là trên | ở bên US nha mọi người thị trường Hoa Kỳ nha thì sáng đây thì mọi người nhớ xem hết video này nha | thì tới nữa em sẽ giải thích tại sao em x x x thị trường US cũng như là nói về mức độ cạnh tranh",
@@ -1841,12 +1851,12 @@
           "Tránh để phần mô tả hoàn toàn trống trơn làm giảm khả năng phân phối của thuật toán."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-2469ee",
         "title": "SHARE THÊM NGÁCH REUP CỰC MỚI NHẤT - CÁC KÊNH ĐỐI THỦ MỚI CHỈ 5 VIDEO VÀ HƯỚNG DẪN TƯ DUY TỰ SEARCH RA NGUỒN KÊNH GỐC ĐỂ LẤY VÀ LÀM",
-        "duration": null,
+        "duration": "4:04",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi ok em chào mọi người thì tiếp theo em xin cho mọi người thêm một cái cách mẹ làm rượu nữa | nha mọi người dạng review phim một hình nha Thì đây là một cái con hoàn toàn mới làm lại nha mọi | người thì chiến thắng trước nó ra một cái dạng nào đấy nhưng mà nó bỏ thì mọi người thấy 11 ngày trước",
@@ -1858,12 +1868,12 @@
           "Tránh chia sẻ tài nguyên giữa các kênh một cách lộ liễu khiến YouTube coi là mạng lưới spam."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-dbd487",
         "title": "NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN CÂN\"",
-        "duration": null,
+        "duration": "1:56",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi video này thì em sẽ để cái link Bilibili ở dưới mô tả nha mọi người. | Và đây là kênh gốc của bên Bilibili nha. | Bởi vì bên Bilibili thì nó mới cập nhật cái dạng câu ké này là nhanh nhất.",
@@ -1875,12 +1885,12 @@
           "Không đăng video trùng lặp liên tục mà không có sự xáo trộn phân cảnh, dễ bị gắn cờ Nội dung tái sử dụng."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-d71802",
         "title": "SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS",
-        "duration": null,
+        "duration": "2:12",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi hôm nay em đã share cho mọi người một cái video về cái ngách Reup rồi thì em vô tình thấy được một cái kênh về tiên tức hàng này nữa thì thấy khá là hay và thấy khá là cao view ấy. | Nên là em chia sẻ cho mọi người để anh em nào mà có thể làm được làm nha. | Về cái dạng này á, thì nếu mà anh em đã làm có kinh nghiệm rồi nha, hoặc là có đội nhóm làm á, thì em kêu mọi người làm khá là ok, rất là ok luôn.",
@@ -1892,12 +1902,12 @@
           "Tránh dùng nhạc nền có tiết tấu quá nhanh phá vỡ bầu không khí thư giãn, chiêm nghiệm của bài học."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-d20744",
         "title": "NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
-        "duration": null,
+        "duration": "1:05",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi, đây là cái bộ tool 6 cái này, The Free mà em muốn share cho anh em dùng này. | Có tool kết ghép, tool quay mạng hình và các cái tool tải các cái video ở các cái nền tảng khác Full HD nha mọi người. | Bởi vì khi mà mọi người dùng web á, đây, em ví dụ như là con tool Bilibili nè.",
@@ -1909,12 +1919,12 @@
           "Cẩn trọng khi dùng tool trên nhiều máy mà không quét virus hoặc tải từ các nguồn trôi nổi ngoài bộ chia sẻ chính thức."
         ],
         "takeaways": [],
-        "attachedCount": 15
+        "attachedCount": 8
       },
       {
         "sku": "VIDEO-33d701",
         "title": "MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT",
-        "duration": null,
+        "duration": "8:48",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Ok em chào mọi người nha, thì tiếp tục hôm nay em sẽ share cho mọi người thêm một vài cái ngách ở thị trường nhặt nữa nha | Thì đầu tiên thì cho mọi người xem qua kênh cũng như là phân tích kênh trước nha | Thì kênh này thì là vừa lập ở tháng 3-2026 luôn nè mọi người, 14 video nha",
@@ -1926,12 +1936,12 @@
           "Tuyệt đối không lấy audio gốc của đối thủ mà không xử lý biến âm hoặc không mix thêm nhạc nền mới."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-7e00ee",
         "title": "RPM 8-15 VỚI 2 NGÁCH CỰC NHỎ THỊ TRƯỜNG NHẬT NÀY ĐANG BẬT KIẾM TIỀN VÀ THỜI GIAN TRUNG BÌNH VIDEO HƠN 1 TIẾNG 40 PHÚT",
-        "duration": null,
+        "duration": "10:45",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Rồi video hôm nay thì em sẽ tiếp tục share cho mọi người 1, 2 cái ngách nữa nha. | Thì ngách này là ở thị trường Nhật nha mọi người. | Thì trước tiên thì phân tích kênh cho mọi người xem video trước nha.",
@@ -1943,12 +1953,12 @@
           "Tránh để hình ảnh bị đơ 100% dạng ảnh chết không chuyển động, YouTube có thể đánh giá là nội dung tĩnh thiếu tương tác."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-ff9be6",
         "title": "XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
-        "duration": null,
+        "duration": "5:32",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi em chào mọi người nha Thì video này em lên chia sẻ và phân tích cũng như giải thích cho một | số anh em cũng có khá nhiều anh em thắc mắc là làm bao nhiêu video là không lên là bỏ mọi người | hẹp là làm thế nào để mình biết được có nên làm tiếp hay không đấy thì hôm nay em giải thích sơ",
@@ -1960,12 +1970,12 @@
           "Tuyệt đối không mua view, mua sub ảo để 'cứu kênh' vì chỉ làm loãng tệp khán giả mục tiêu khiến kênh chết hẳn."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-6ad3fe",
         "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
-        "duration": null,
+        "duration": "4:28",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok tiếp theo thì em nói thêm về lại cái vấn đề là lỗi không trung thật 2026 này nha mọi người. | Thì em cũng có để cá lên riêng một clip nói về vấn đề này rồi thì mọi người có thể xem lại nha. | Em nghĩ là chắc chắn mọi người cũng xem hết rồi đấy.",
@@ -1977,12 +1987,12 @@
           "Tuyệt đối không dùng cùng một giọng đọc AI mặc định của các tool miễn phí cho hàng chục video liên tiếp."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-7f0bb4",
         "title": "NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
-        "duration": null,
+        "duration": "4:14",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Rồi tiếp theo với cái video này em nói về cái việc ngâm cơn và xác minh cơn nha. | Thì đầu tiên thì mọi người đã upshifting cơn xong rồi á. | Thì mọi người lưu ý phải nhớ không được quên là mọi người phải vô cái chỗ cơn này,",
@@ -1994,12 +2004,12 @@
           "Tránh đi spam link kênh hoặc video vào phần bình luận của các kênh lớn để câu view, dễ bị ăn gậy spam của YouTube."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-7db740",
         "title": "CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
-        "duration": null,
+        "duration": "3:21",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi, tiếp theo video này thì em sẽ nói về vấn đề sale từ khóa kênh, từ khóa video, cũng như là mô tả video nha mọi người. | Đấy, thì áp dụng theo chính sách 2016 mới nhất nha. | Từ kinh nghiệm của em làm trước giờ cũng như là quan điểm của em làm nha mọi người.",
@@ -2011,12 +2021,12 @@
           "Tránh dùng các hashtag quá chung chung như #youtube, #video, #trending không giúp ích gì cho việc phân loại tệp."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-546afa",
         "title": "CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT",
-        "duration": null,
+        "duration": "5:01",
         "clusterId": "hoat-hinh-douyin-bilibili",
         "clusterName": "Hoạt Hình Reup & Khai Thác Bilibili/Douyin",
         "transcriptSample": "Chào mọi người, video này em sẽ share thêm cho mọi người 2 ngách ở thị trường Việt và thị trường Nhật nha mọi người | Đầu tiên là kênh đây là về thị trường Nhật nha | Rồi đầu tiên thì phân tích show về kênh này thì đang chỉ mới 5 video nha mọi người",
@@ -2028,12 +2038,12 @@
           "Tránh dùng font chữ khó đọc hoặc cỡ chữ quá nhỏ trên thiết bị di động, người già không xem được sẽ lướt qua."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-d84a78",
         "title": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
-        "duration": null,
+        "duration": "7:54",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ ok em xin chào tất cả mọi người nha Thì video này thì em sẽ nói về vấn đề hợp tác sắp tới về cũng | như là giới thiệu sơ quay lại về cái web của em nha mọi người bởi vì em mới chỉnh lại cái các cái | mô đun thì em sẽ hướng dẫn mọi người xem video sao cho nó đúng chẳng nghe từ đầu nha thì trước",
@@ -2045,12 +2055,12 @@
           "Tránh tình trạng chậm trễ tiến độ làm đứt quãng lịch đăng video đều đặn, ảnh hưởng xấu đến thuật toán đề xuất."
         ],
         "takeaways": [],
-        "attachedCount": 6
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-c1bd51",
         "title": "HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN TRENDS CỰC KỲ TRENDS CHƯA AI CÓ THỂ BIẾT + HƯỚNG DẪN EDIT CHUẨN LÀM A-Z | UPDATE MỚI NHẤT 12-03-2026",
-        "duration": null,
+        "duration": "16:21",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi em chào mọi người nha, thì video hôm nay tiếp tục là video rất là hay và rất là đặc biệt nữa nha mọi người | Đó thì tiếp tục em sẽ share cho mọi người một cái ngách hoạt hình Reup từ Banduin nữa nha mọi người | Thì em sẽ cho mọi người lấy cái nguồn gốc của những cái cơn này đang làm luôn nha",
@@ -2062,12 +2072,12 @@
           "Tránh chọn các bộ phim hoạt hình nổi tiếng đã có bản quyền độc quyền tại Việt Nam hoặc quốc tế."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-026112",
         "title": "SHOW KÊNH ĐỐI THỦ VÀ NGÁCH REUP HOẠT HÌNH + DU LỊCH CỰC TRENDS TỪ TRUNG QUỐC SANG - UPDATE MỚI 08-03-2026",
-        "duration": null,
+        "duration": "4:24",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Hôm nay em sẽ cho mọi người thêm một vài kênh đối thủ về cái dạng Reup hoạt hình bên trong | cho anh em nào thích làm thì anh em có thể làm thêm nha | Đấy thì mọi người có thể nếu mà chưa xem video này ở trên Youtube của em",
@@ -2079,12 +2089,12 @@
           "Tránh để nhân vật hoạt hình che khuất các chi tiết phong cảnh quan trọng khiến người xem cảm thấy vướng mắt."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-e25d3b",
         "title": "HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT",
-        "duration": null,
+        "duration": "6:25",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Em chào mọi người nha, thì hôm nay em sẽ tiếp tục loay video share một cái ngách cây ở thị trường Hàn Quốc tiếp cho mọi người làm nha | Thì cái ngách này nó cũng là về cái dạng là cái sức khỏe nha mọi người | Nhưng nó cũng là một cái ngách nhỏ khác nha",
@@ -2096,12 +2106,12 @@
           "Tránh dùng nhạc tập quá sôi động kiểu EDM phá hỏng không khí thư thái của các bài tập dưỡng sinh, phục hồi."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-bdfab7",
         "title": "BẮT BUỘC PHẢI XEM - HƯỚNG DẪN CHI TIẾT TỰ TRAIN PROMPT VÀ PHÂN TÍCH KÊNH ĐỐI THỦ TỰ TẠO PROMPT CHO CHỦ ĐỀ (KEY) BẤT KỲ NÀO MUỐN + HƯỚNG DẪN VÀ SHARE NGÁCH NHỎ SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS - UPDATE MỚI NHẤT 01-03-2026",
-        "duration": null,
+        "duration": "25:07",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Chào mọi người, video hôm nay khá đặc biệt | Hôm nay em sẽ share ký mới và hướng dẫn mọi người cách trên lại Chrome | Em sẽ hướng dẫn lại chi tiết cho mọi người trên Chrome",
@@ -2113,12 +2123,12 @@
           "Tránh copy nguyên si câu chuyện cá nhân của kênh đối thủ vào kịch bản mới, dễ bị khiếu nại đạo văn."
         ],
         "takeaways": [],
-        "attachedCount": 8
+        "attachedCount": 6
       },
       {
         "sku": "VIDEO-e95a8f",
         "title": "SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ",
-        "duration": null,
+        "duration": "3:27",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi, em xin chào tất cả mọi người nha. Thì tiếp tục hôm nay em sẽ share cho mọi người tiếp là một cái kỳ view việc nữa nha mọi người. | Đó, thì nói chung có kỳ nào mới thì em sẽ update liên tục cho mọi người luôn. | Thì đây là một kênh view việc nha mọi người. Đây, làm từ tháng 1 nè, một tháng trước nè mọi người.",
@@ -2130,12 +2140,12 @@
           "Tránh chèn nhạc nền quá to át mất giọng đọc tâm sự của tác giả."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 7
       },
       {
         "sku": "VIDEO-91bb96",
         "title": "SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 VIDEO / 1 NGÀY",
-        "duration": null,
+        "duration": "1:46",
         "clusterId": "setup-moi-truong-nuoi-kenh",
         "clusterName": "Setup Môi Trường, Nuôi Kênh & Tự Động Hóa Tool",
         "transcriptSample": "Em chào tất cả mọi người nha, thì hôm nay em sẽ tiếp tục share cho mọi người một cái ngách mới nữa nha | Thì ngách này là hoàn toàn mới luôn nha mọi người | Đây, thì mọi người xem kênh này đã dùng kênh cổ và mới chỉ 6 video nha",
@@ -2147,12 +2157,12 @@
           "Tránh để việc chạy theo số lượng làm giảm sút chất lượng âm thanh nghiêm trọng (rè, méo tiếng)."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-8b69c9",
         "title": "NGÁCH THỊ TRƯỜNG HÀN VÀ NHẬT - PHÂN TÍCH VÀ HƯỚNG CÁCH EDIT TRÁNH BỊ QUÉT LỖI KHÔNG TRUNG THỰC MỚI NHẤT 2026",
-        "duration": null,
+        "duration": "7:18",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Ok em xin chào tất cả mọi người nha. Thì hôm nay em sẽ tiếp tục quay lại và share cho mọi người những cái ngách ở các cái thị trường nhật về hàng để mọi người làm tiếp nha. | Thì đầu tiên đây là một kênh về cái thị trường hàng quốc nha mọi người. Thì cái kênh này là nói về cái dạng kể triệu nha mọi người. | Thì anh em có thể bấm dịch ra để xem nha. Em sẽ để link ở dưới mô tả cho mọi người ở dưới video ấy.",
@@ -2164,12 +2174,12 @@
           "Tránh để giọng đọc quá đều đều thiếu cảm xúc huyền bí, làm giảm đi sức hấp dẫn của câu chuyện dã sử."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-35014d",
         "title": "SHARE NGÁCH NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG NHẬT BẢN VÀ KÊNH NGÁCH KINH TẾ THỊ TRƯỜNG HÀN QUỐC",
-        "duration": null,
+        "duration": "10:14",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi em xin chào tất cả mọi người nha thì hôm nay em sẽ tiếp tục chia sẻ cho mọi người một | vài cái ngắt nữa nha thì cái nắp đầu tiên là về cái ở thị trường Nhật Bản nha mọi người thì | cái con này là Nhật Bản nha về cái cây này thì là về ngắt là xuất khí nha mọi người đó thì ký",
@@ -2181,12 +2191,12 @@
           "Tránh dùng giọng đọc quá buồn ngủ khi làm về đề tài kinh tế, tài chính đòi hỏi sự tỉnh táo và tập trung."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-cb907b",
         "title": "SHOW KÊNH THỰC CHIẾN VÀ FULL QUY TRÌNH HƯỚNG DẪN REUP NGÁCH VIEW VIỆT RPM 2$ KHÔNG BAO GIỜ HẾT TRENDS - UPDATE 12-01-2026",
-        "duration": null,
+        "duration": "31:17",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi em chào tất cả mọi người nhá thì hôm nay em sau một cân ở thị trường Việt yêu Việt cho mọi | người xem nha Vậy em sẽ hướng dẫn mọi người full cái quy trình làm ra được một cái cân như này luôn | nha mọi người đó thì anh em xem từ YouTube kia thì mọi người cũng biết rồi đúng không Thì cơ này",
@@ -2198,12 +2208,12 @@
           "Không lạm dụng giật tít câu view sai sự thật khiến người xem bức xúc báo cáo vi phạm cộng đồng."
         ],
         "takeaways": [],
-        "attachedCount": 6
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-34f417",
         "title": "SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN",
-        "duration": null,
+        "duration": "6:20",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Ok, em xin chào tất cả mọi người nha. Thì hôm nay em sẽ tiếp tục share cho mọi người một vài cái ngách nữa ở các cái thị trường khác nhau nha. | Thì con đầu tiên là cái ngách thị trường view việt nha mọi người. | Thì mọi người xem cái con này. Con này thì nó dùng con từ 2024 nha mọi người. Nhưng mà mọi người thấy nó mới chỉ có là 10b video thôi nha.",
@@ -2215,12 +2225,12 @@
           "Tránh dùng hình ảnh hoạt hình nhí nhố không phù hợp với đối tượng khán giả lớn tuổi."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-1b4be3",
         "title": "HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT",
-        "duration": null,
+        "duration": "11:55",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok, xin chào tất cả mọi người nha. Thì hôm nay em sẽ tiếp tục share cho mọi người một vài cái ngách nữa nha. | Về sản đó thì em cũng sẽ nói cho mọi người cách để mọi người... hướng cho mọi người cách để edit video làm sao cho nó không bị là lỗi là trung thực nha mọi người. | Đấy, cái lỗi không trung thực này thì đang bị rất là nhiều luôn.",
@@ -2232,12 +2242,12 @@
           "Tránh sao chép tiêu đề của đối thủ mà không điều chỉnh lại theo văn phong riêng."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-ec9c50",
         "title": "KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026",
-        "duration": null,
+        "duration": "1:42",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Thì đây là một cái kênh vừa mới bị Youtube là không được phê duyệt là kiếm tiền nha mọi người. Đó, khi mà cái kênh này đã đủ điều kiện và nó bật lại kiếm tiền á, thì Youtube nó đánh giá là bị sử dụng loại nội dung hoặc là nội dung trùng lặp nên là nó không được diệt bật kiếm tiền nha mọi người. | Nhưng mà đã vào tay em rồi á | Thì em đã vừa kháng nó về được rồi nha mọi người",
@@ -2249,12 +2259,12 @@
           "Không gửi đơn kháng cáo quá vội vàng khi chưa chuẩn bị đầy đủ video minh chứng thuyết phục."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-134a25",
         "title": "NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8",
-        "duration": null,
+        "duration": "5:38",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Em xin chào tất cả mọi người nha, thì hôm nay em lại tiếp tục share và chia sẻ cho mọi người một cái kỳ, một cái ngách ở thị trường Nhật Bản nha mọi người | Thì cái ngách này đang cực kỳ là trend và đang cực kỳ là ngon nha mọi người | Đó, thì bây giờ em sẽ phân tích cái cơn này nha",
@@ -2266,12 +2276,12 @@
           "Tránh lỗi ngữ pháp tiếng Nhật hoặc dùng sai từ ngữ cổ kính."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-5fd052",
         "title": "SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)",
-        "duration": null,
+        "duration": "5:33",
         "clusterId": "triet-ly-lich-su-phat-phap",
         "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
         "transcriptSample": "Em chào tất cả mọi người nha, thì hôm nay em tiếp tục share cho mọi người, chia sẻ cho mọi người 3 cái ngách ở thị trường Nhật Bản nữa nha mọi người | Thì cái ngách đầu tiên là về cái cơn này nha mọi người, cơn này thì mới có 11 video nè, đây em bấm vào cho mọi người xem nha | Thì cơn này thì ở thị trường Nhật Bản thì thật ra nó làm từ tháng 7, là cơn này lập từ tháng 7 mọi người",
@@ -2283,12 +2293,12 @@
           "Tránh đưa ra các bình luận thiên vị chính trị mang tính kích động thù hằn."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-00136f",
         "title": "HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT",
-        "duration": null,
+        "duration": "4:39",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Xin chào tất cả mọi người nha. Thì dạo gần đây Google nó quét rất là ghét, quét những cái tài khoản Google AdSense nó có thể bị die hay là bị die mail. | Thì nó đang bị lỗi là ở bước 2 ở trong kiếm tiền ấy mọi người. Trong mặt kiếm tiền thì anh em bị mất kiếm tiền đi. Anh em không thể bật kiếm tiền được. | Thì ví dụ như cái hình em gửi đây",
@@ -2300,12 +2310,12 @@
           "Không thay đổi thông tin người thụ hưởng ngân hàng liên tục trong thời gian sát ngày thanh toán (21 - 26 hàng tháng)."
         ],
         "takeaways": [],
-        "attachedCount": 6
+        "attachedCount": 4
       },
       {
         "sku": "VIDEO-9ea5e3",
         "title": "TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026",
-        "duration": null,
+        "duration": "14:02",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi, em xin chào tất cả mọi người nha. Thì có lẽ video này thì cũng trước giờ cũng có khá là nhiều anh em chờ đợi và cũng có câu hỏi về cái tình trạng là gãy view này đúng không ạ? | Thì thật ra là những cái miệng mà những cái cách khách phục gãy view này thì em cũng đã có ở đây ở kênh TikTok em ở những cái tháng trước rồi mọi người ạ, đang khá là lâu rồi. | Nhưng mà nó không có được nhiều và cũng như là nhiều anh em biết tới. Đấy, và nhiều anh em cũng không có để ý và không có biết tới được.",
@@ -2322,7 +2332,7 @@
       {
         "sku": "VIDEO-2ed37a",
         "title": "NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP",
-        "duration": null,
+        "duration": "2:32",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi ok em xin chào tất cả mọi người nha, hôm nay em lại tiếp tục chia sẻ cho mọi người một cái ngách nữa về cái thị trường Hoa Kỳ, nói chung là về tiếng Anh nha mọi người. | Về cái kênh này hiện tại đang xét là quốc gia ở Philippines thì mọi người đừng quan tâm nha, tí nữa em sẽ nói sau. | Về cái kênh này mọi người thấy nó hơn là một trăm hai mấy người đăng ký và có kẻ thích xanh và nhiều video đúng không?",
@@ -2334,12 +2344,12 @@
           "Tránh dùng từ ngữ phỉ báng hoặc kích động thù địch đối với các bên liên quan."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-54422c",
         "title": "HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN",
-        "duration": null,
+        "duration": "31:41",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Rồi, em xin chào mọi người nha. Thì hôm nay em lại tiếp tục chia sẻ thêm cho mọi người một vài cái ngách ở thị trường Hàn Quốc nha. | Về sẽ còn nhiều cây, nhiều ngách mới ở các thị trường khác nữa, em sẽ lên dặn cho mọi người nha. | Để thời gian em còn tìm lập nữa, bởi vì tìm ra được cây ngon cũng như là ít cảnh tranh nha mọi người, thì phải tìm lập khá là mắc thời gian nữa nha mọi người em.",
@@ -2351,12 +2361,12 @@
           "Tránh dùng cùng một prompt cố định cho nhiều ngách khác nhau mà không tinh chỉnh ngữ cảnh đặc thù của từng ngách."
         ],
         "takeaways": [],
-        "attachedCount": 7
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-af606d",
         "title": "SHOW KEY KÊNH MỚI CỰC NGON THỊ TRƯỜNG HÀN QUỐC",
-        "duration": null,
+        "duration": "4:01",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi Ok em xin chào tất cả mọi người nha Hôm nay em lại tiếp tục là xe cho mọi người một cái ngách | rất là mới một cái cây rất là mới ở thị trường Hàn Quốc nữa nha mọi người đây cái cơn này thì | mọi người thấy nó lập từ tháng ngày 4 tháng 11 2020 này mọi người cách đây chỉ chưa được tháng",
@@ -2368,12 +2378,12 @@
           "Tránh các hình ảnh thương vong chiến tranh trực diện vi phạm nguyên tắc cộng đồng."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-9ef6fe",
         "title": "NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP",
-        "duration": null,
+        "duration": "3:09",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Em chào mọi người nha, hôm nay em sẽ thêm một mọi người một cái ngách nữa, một ngách này là ở thị trường Hoa Kỳ nha mọi người, thị trường U.S đấy, và kênh này là chỉ mới 21 video nè mọi người, và cái kỳ này cũng là cực kỳ trên ở bên các cái thị trường ngoại như Hoa Kỳ hay là mấy nước châu Âu nha mọi người. | Rồi bấm vào phân tích xem thêm thì kênh này nó cũng vừa lập mà mới là ngày 17 tháng 10 đây thôi mọi người | Rồi bây giờ bấm vào một phổ biến nè, mọi người thấy view không?",
@@ -2385,12 +2395,12 @@
           "Tránh các cảnh săn bắt động vật quý hiếm vi phạm pháp luật bảo tồn thiên nhiên."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-7ae3d6",
         "title": "SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS",
-        "duration": null,
+        "duration": "3:04",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Rồi, em chào mọi người nha. Thì cái cây hôm nay em share cho mọi người là cái cây về dạng quân sự nha mọi người, nhưng mà là ở thị trường Việt Nam. Đó, để cho anh em nào thích làm việc thì anh em có thể tham khảo luôn. Vậy là kênh này nó dùng là kênh cổ nha mọi người. | Rồi, bây giờ em sẽ lướt sơ quen về cái kênh này nè. Mọi người thấy không? View nó rất là cao luôn. Đó, nó làm như kiểu là chiến tranh quân sự ở Campuchia, Thái Lan. Nói chung là nó làm quét quán nề lên đấy mọi người. Nhưng mà dạng kiểu như quân sự nha. | Đó, hoàn toàn là bằng AI luôn.",
@@ -2402,12 +2412,12 @@
           "Tránh hiển thị phụ đề quá nhanh khiến người học không kịp đọc và đối chiếu."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-86c1ec",
         "title": "NGÁCH CỰC NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC ĐANG RẤT TRENDS",
-        "duration": null,
+        "duration": "3:02",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Ừ rồi em xin chào mọi người nha thì hôm nay em lại tiếp tục xe cho mọi người một cái ngắt nữa này cũng | là ở thị trường Hàn Quốc nha mọi người nhưng mà cái này là về cái sức khỏe nha về cơn này là ở | thị trường Hàn Quốc và nó vừa lập cũng hơn một tháng thôi mọi người nhưng mà cơn này nó mới chỉ",
@@ -2419,12 +2429,12 @@
           "Tránh phóng đại tác dụng của thực phẩm chức năng hoặc thảo dược dân gian."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-3e5a21",
         "title": "HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
-        "duration": null,
+        "duration": "2:23",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Ừ rồi em chào mọi người nha thì ở video này em sẽ hướng dẫn mọi người cách để áp quyền cho kênh | cũng như là quản lý Gmail sao cho hợp lý về tối ưu nhất để không bị anh gồ là đánh spam và nhiều | khi là quét là anh em bị đai hàng loạt cơn đấy kéo theo nha mọi người đó thì cái này là dành cho",
@@ -2436,12 +2446,12 @@
           "Tránh chuyển nhượng quyền chủ sở hữu kênh cho các email lạ không rõ nguồn gốc dẫn đến nguy cơ bị chiếm đoạt kênh."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-ffccd2",
         "title": "NGÁCH NHỎ KEY THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS VÀ CẠNH TRANH THẤP",
-        "duration": null,
+        "duration": "2:25",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Rồi, em chào tất cả mọi người nha. Thì hôm nay em sẽ lại tiếp tục share cho mọi người một cái ngắt nữa. | Ngắt lần này là ở thị trường Hàn Quốc nha mọi người. | Cái ngắt này đang cực kỳ là trên nha mọi người.",
@@ -2453,12 +2463,12 @@
           "Tránh lý thuyết kinh tế quá hàn lâm khiến khán giả đại chúng khó tiếp thu."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-de2564",
         "title": "NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN",
-        "duration": null,
+        "duration": "3:43",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Ừ rồi em chào tất cả mọi người nhá hôm nay em sẽ lại tiếp tục xe cho mọi người mỗi cây ở thị trường | Nhật Bản nha mọi người thì mọi người thấy cơn này hơn 100 video đúng không thì mọi người đừng có hoang | mang và mọi người đừng có sợ là nó làm lâu rồi nha thì em sẽ phân tích bây giờ em sẽ phân tích cho",
@@ -2470,12 +2480,12 @@
           "Tránh câu từ nông cạn thiếu chiều sâu văn hóa Nhật Bản."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-2aa1f7",
         "title": "SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
-        "duration": null,
+        "duration": "18:03",
         "clusterId": "triet-ly-lich-su-phat-phap",
         "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
         "transcriptSample": "Hôm nay em sẽ lại tiếp tục share cho mọi người về một cái ngách triết lý động lực sống nữa nha mọi người. | Nhưng mà trước khi vào thì em show một tí danh thu ở những cái kênh của em cho mọi người có động lực làm nha. | Đây là một trong những cái kênh em đang làm nè.",
@@ -2487,12 +2497,12 @@
           "Tránh dùng các từ khóa giật tít lừa dối (Misleading Clickbait) làm khán giả thất vọng và bấm dislike."
         ],
         "takeaways": [],
-        "attachedCount": 15
+        "attachedCount": 14
       },
       {
         "sku": "VIDEO-5fe83a",
         "title": "UPDATE 05/11/2025 - Ngách Nhỏ MỚI THỊ TRƯỜNG VIỆT NAM TRENDS CỰC CAO",
-        "duration": null,
+        "duration": "3:17",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Rồi, em xin chào mọi người nha. Thì em là H2DF đây. Thì tiếp tục hôm nay em sẽ share cho mọi người thêm một vài cái cơn về cái kỹ sức khỏe ở thị trường Việt như hôm trước em đã hứa với mọi người nha. | Về đầu tiên là cái cơn này mọi người thấy không? Nó là vừa lập ở tháng 10 nè. Đó, cách đây đóng được một tháng luôn nha mọi người. | Về cơn này thì hiện là hơn 20 máy video nha mọi người. Về nó bắt đầu từ 4 tuần trước nè. Về cơn này view rất là ổn và rất là cao nha. Mọi người xem nè, đó.",
@@ -2504,12 +2514,12 @@
           "Tránh để khẩu hình nhép miệng của AI bị lệch pha quá rõ so với âm thanh giọng nói."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-3ae732",
         "title": "UPDATE 04/11/2025 - NHÂN BẢN THỊ TRƯỜNG TỪ KÊNH ĐỐI THỦ HOA KỲ SANG VIỆT NAM",
-        "duration": null,
+        "duration": "3:41",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi em xin chào tất cả mọi người nha, thì hôm nay em sẽ lại tiếp tục share thêm mọi người một cái ngách về một cái tư duy là nhân bản thị trường nữa nha. | Về cái dạng hôm nay em share là về dạng sức khỏe về ở thị trường Việt Nam nha mọi người. | Về cái vấn đề ở video này thì rất là hay, nó là về nhân bản thị trường.",
@@ -2521,12 +2531,12 @@
           "Tránh để giọng đọc AI bị ngọng hoặc sai dấu thanh tiếng Việt làm giảm uy tín."
         ],
         "takeaways": [],
-        "attachedCount": 3
+        "attachedCount": 2
       },
       {
         "sku": "VIDEO-458892",
         "title": "KIẾM HƠN $100,000.000 / THÁNG VỚI KEY LỊCH SỬ QUÂN SỰ NÀY - HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z (chủ đề - kịch bản - giọng đọc - hình ảnh - thumbnail) - UPDATE 19/10/2025",
-        "duration": null,
+        "duration": "17:08",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ rồi em xin chào tất cả mọi người nha em là hát hay đi đây thì hôm nay em sẽ lại tiếp tục và xe | cho anh em một cái kia nữa về hướng dẫn cho mọi người làm từ e đến dết luôn nha làm từ cái ra cái | chủ đề kịch bản âm thanh và cũng như là hướng dẫn một người làm cái thông luôn nha Cái ảnh về mọi",
@@ -2538,12 +2548,12 @@
           "Không dùng giọng đọc quá nhanh hoặc thiếu sự trang nghiêm, ngách quân sự đòi hỏi sự đĩnh đạc, hùng hồn của một sử gia."
         ],
         "takeaways": [],
-        "attachedCount": 10
+        "attachedCount": 7
       },
       {
         "sku": "VIDEO-806c0c",
         "title": "UPDATE VIDEO 19/10/2025 - SHARE KEY (Ngách Nhỏ) MỚI RẤT ÍT CẠNH TRANH VÀ TRENDS CAO",
-        "duration": null,
+        "duration": "4:19",
         "clusterId": "triet-ly-lich-su-phat-phap",
         "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
         "transcriptSample": "Em xin chào tất cả mọi người nha, em lại tiếp tục lên một share một cái ngách cho mọi người nữa | Ngách này là ở thị trường Hàn Quốc, và ngách này có một điều đặc biệt là rất là hay, rất là thú vị nha mọi người | Đấy, view rất là cao nha, đây em vào phân tích chiếu cho mọi người xem",
@@ -2555,12 +2565,12 @@
           "Tránh copy nguyên si kịch bản đối thủ khiến thuật toán nhận diện trùng lặp."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-83a28e",
         "title": "UPDATE KEY 13/10/2025 - SHARE (Ngách Nhỏ) Thị Trường Hàn",
-        "duration": null,
+        "duration": "6:06",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi em xin chào tất cả mọi người nha | Thì hôm nay em sẽ lại tiếp tục lên một cái video | Share tiếp tục ký cho mọi người nha",
@@ -2572,12 +2582,12 @@
           "Tránh chèn hiệu ứng giật chuyển cảnh đột ngột gây khó chịu cho người lớn tuổi."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-948336",
         "title": "Share Key (Ngách Nhỏ) Thị Trường Hàn Quốc - Update 11/10/2025",
-        "duration": null,
+        "duration": "4:18",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Ừ rồi Ok em xin chào tất cả mọi người nha thì hôm nay em sẽ tiếp tục và lên cái video về xe cây | mới cho mọi người nha Thì ở cái video này thì em sẽ xem một cây rất là mới cho anh em luôn cái kênh | này thì mọi người thấy không Nó vừa lập ở tháng 9 này cách đây là chỉ có một tháng thôi nha Nhưng",
@@ -2589,12 +2599,12 @@
           "Tránh để một khung hình tĩnh quá 6 giây gây nhàm chán."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-04c2e3",
         "title": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
-        "duration": null,
+        "duration": "3:04",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em chào tất cả mọi người nha, thì cũng có rất là nhiều bác bình luận ở trên kênh youtube em, cũng như là trên web này, và cũng như là ở tin nhánh riêng với em á, thì hỏi em có những con tool nào, về những tài khoản giá rẻ nào á, thì sẵn đây em sẽ làm riêng một clip nói về tổng quan những cái con tool mà em có, cũng như là những cái tài khoản share giá rẻ cho mọi người nha. | Thì trước tiên á, những anh em nào mà chưa biết về con tool Eleven Lab hay là tool Color Minimart á, thì anh em có thể lên web chính của nó xem qua nha. | Đại loại là nó là cái tool Void là tool tạo giọng đọc á mọi người.",
@@ -2606,12 +2616,12 @@
           "Tránh đăng nhập chung một tài khoản tool trên quá nhiều địa chỉ IP lạ."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-ca266f",
         "title": "Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)",
-        "duration": null,
+        "duration": "6:31",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi em xin chào tất cả mọi người nha | Thì hôm nay em sẽ tiếp tục | Share cho mọi người một vài cái ngách nhỏ nữa nha",
@@ -2623,12 +2633,12 @@
           "Tránh giật tít clickbait sai lệch hoàn toàn so với nội dung video."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-8603a9",
         "title": "Share Key (Ngách Nhỏ) Các Thị Trường HongKong, Hàn, Việt - Update 7/9/2025",
-        "duration": null,
+        "duration": "7:26",
         "clusterId": "triet-ly-lich-su-phat-phap",
         "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
         "transcriptSample": "Ừ rồi Ok Xin chào tất cả mọi người nha thì hôm nay em sẽ tiếp tục xe cho mọi người một vài những cái | ngách nữa nha mọi người hãy những cái ngách nhỏ trong các cái thị trường nha mọi người đấy thì | thật ra thì cây thì không bao giờ thiếu nha anh em đấy em xe nhiều cây thì sợ em em anh em lại",
@@ -2640,12 +2650,12 @@
           "Tránh đặt link bán vật phẩm phong thủy không rõ nguồn gốc trong phần mô tả."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-aacc70",
         "title": "Chia Sẻ Tút (mẹo) Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View",
-        "duration": null,
+        "duration": "7:07",
         "clusterId": "setup-moi-truong-nuoi-kenh",
         "clusterName": "Setup Môi Trường, Nuôi Kênh & Tự Động Hóa Tool",
         "transcriptSample": "Rồi, em xin phép chào tất cả mọi người nha. | Thì cái video này á, thì em sẽ hướng dẫn, em sẽ chia sẻ một cái tool. | Cái tool là cái mẹo, cái cách á mọi người, cái mẹo á, để cho mọi người lấy kịch bản, bám theo trên.",
@@ -2662,7 +2672,7 @@
       {
         "sku": "VIDEO-82f8a8",
         "title": "Share Key MỚI NHẤT Update 23/08/2025 - Ngách nhỏ thị trường Nhật Bản",
-        "duration": null,
+        "duration": "9:09",
         "clusterId": "hoat-hinh-douyin-bilibili",
         "clusterName": "Hoạt Hình Reup & Khai Thác Bilibili/Douyin",
         "transcriptSample": "Ok, em xin chào tất cả mọi người nha. | Thì cái video mới này em sẽ tiếp tục share kia cho mọi người nha. | Đấy, thì trước khi share kia thì các bộ số anh em hỏi về cũng như là không biết cái chỗ mà lấy prompt cũng như là tài liệu chỗ nào ấy.",
@@ -2674,12 +2684,12 @@
           "Tránh hình ảnh kinh dị máu me dính cờ hạn chế độ tuổi của YouTube."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-9a4ddc",
         "title": "TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube",
-        "duration": null,
+        "duration": "10:46",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi em chào tất cả mọi người nha, thì em thấy cũng có khá là nhiều bác quan tâm về cái chủ đề, về cái dạng làm view việc kiểu như re-up bán content từ bên Duyin về nè. | Thế nên là hôm nay em làm thêm cái clip này để em chia sẻ về một số cái mẹo, một số cái tip bản quyền để cho mọi người không phải tốn vết nhiều thời gian nha. | Ví dụ như mọi người tải video từ bên trong về",
@@ -2696,7 +2706,7 @@
       {
         "sku": "VIDEO-199f44",
         "title": "Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh",
-        "duration": null,
+        "duration": "2:25",
         "clusterId": "triet-ly-lich-su-phat-phap",
         "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
         "transcriptSample": "Ừ rồi ok Bây giờ em sẽ hướng dẫn anh em cách mẹ tương tác trong thời gian ngâm kênh là như thế nào nha | lấy trong thời gian ngâm kênh trước khi đăng video á thì anh em không thấy tầm 5 đến 7 ngày nha mọi người | rồi ok Bây giờ thì em sẽ Ví dụ như này nha anh em vào cái kênh đối thủ đúng không anh em tìm được",
@@ -2708,12 +2718,12 @@
           "Tránh đăng tải video dồn dập ngay sau khi tạo kênh gây kích hoạt hệ thống chống bot."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-027064",
         "title": "Cách tạo kênh, lập kênh chuyển đổi kênh sang thị trường ngoại chuẩn nhất",
-        "duration": null,
+        "duration": "17:33",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi ok, sau khi các bác xem xong video hướng dẫn nói về mail về kênh xong rồi á | Rồi bây giờ em sẽ hướng dẫn cho anh em cách setting về chuyển vùng vị trí | Về setting chứng cho kênh nhắc nha mọi người",
@@ -2725,12 +2735,12 @@
           "Tránh dùng số điện thoại rác công cộng để xác minh tính năng nâng cao của kênh."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-ed1be9",
         "title": "Hướng dẫn edit key _Chill Dude.._chi tiết từ A-Z",
-        "duration": null,
+        "duration": "58:58",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi tiếp tục ở cái video này sẽ hướng dẫn cho mọi người cách về cái tư duy edit của cái ký người quê nha anh em. | Đấy cái ký này thì edit bằng không bằng AI nữa luôn. | Và edit bằng chủ yếu là bằng cái Photoshop nha anh em.",
@@ -2747,7 +2757,7 @@
       {
         "sku": "VIDEO-a348a5",
         "title": "Hướng dẫn làm thumb key triết lý _ khắc kỷ",
-        "duration": null,
+        "duration": "7:27",
         "clusterId": "triet-ly-lich-su-phat-phap",
         "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
         "transcriptSample": "HƯỚNG DẪN LÀM THUMBNAIL KEY TRIẾT LÝ / KHẮC KỶ (PHOTOPEA WEB & CANVA) | ==================================================================== | --- PHẦN 1: LỜI GIẢNG MỞ ĐẦU (00:00 - 00:26) ---",
@@ -2764,7 +2774,7 @@
       {
         "sku": "VIDEO-25fddf",
         "title": "Share key thị trường Nhật + Hàn - UPDATE 6/6/2025",
-        "duration": null,
+        "duration": "26:17",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi ok em xin chào tất cả mọi người nha | Trước khi vào clip share key về nói về cái thị trường Nhật về cái thị trường Hàn Quốc này thì em sẽ nói lại với bác một tí về cái vấn đề mà nhân bản thị trường về làm view ngọi nha mọi người | Đấy thì ở clip trước em cũng có nói rồi",
@@ -2776,12 +2786,12 @@
           "Tránh dùng cỡ chữ phụ đề quá nhỏ khiến người cao tuổi gặp khó khăn khi theo dõi."
         ],
         "takeaways": [],
-        "attachedCount": 7
+        "attachedCount": 4
       },
       {
         "sku": "VIDEO-943781",
         "title": "Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)",
-        "duration": null,
+        "duration": "3:37",
         "clusterId": "triet-ly-lich-su-phat-phap",
         "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
         "transcriptSample": "Ừ ok em xin chào tất cả mọi người nha thì clip này em sẽ hướng dẫn cho mọi người cách mà em để | nuôi email nuôi cơn ở trên cùng một cái máy nha mọi người cùng một thiết bị cùng một địa chỉ IP | về cũng như là profile nha thấy giờ cũng có khá là nhiều bác hỏi nên là sẽ tiện em sẽ hướng dẫn",
@@ -2793,12 +2803,12 @@
           "Tránh đăng nhập cùng lúc một tài khoản trên quá nhiều thiết bị lạ."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-f59aa7",
         "title": "VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb",
-        "duration": null,
+        "duration": "43:08",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Xin chào tất cả mấy bác. | Hôm nay em sẽ hướng dẫn cho các bạn về cách làm kênh nhân bản ở các thị trường cho mọi người. | Em đang bị ốm nên giọng hơi khát nghe mấy bác thông cảm tí nha.",
@@ -2810,12 +2820,12 @@
           "Tránh đăng chung các video đa ngôn ngữ lên cùng một kênh (phải tách kênh độc lập)."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-b380a1",
         "title": "Share Key (ngách cực nhỏ) view Việt mới và hướng dẫn tự tạo prompt lấy kịch bản theo chủ yếu bất kỳ - UPDATE 8/8/2025",
-        "duration": null,
+        "duration": "33:10",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Ừ rồi em xin chào tất cả mọi người nha thì ở cái video này em sẽ xe ra mọi người thêm một cái cây | mới nữa một cái cách mới nữa nha về cái hướng dẫn cho mọi người làm thì em đang có những cái cây | Hàn Quốc của Nhật Bản thêm nữa nhưng mà để clip sau em sẽ lên sau nhau một người phải hướng dẫn",
@@ -2827,12 +2837,12 @@
           "Tránh đặt tiêu đề đụng chạm đến tín ngưỡng tôn giáo gây tranh cãi gay gắt."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-39ae49",
         "title": "Update nhiều KEY (ngách nhỏ) mới thị trường Nhật - Hàn - Việt - UPDATE 15/8/2025",
-        "duration": null,
+        "duration": "38:31",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Em xin chào tất cả mọi người nha. | Thì cái video hôm nay thì em sẽ update thêm cho mọi người một vài cái kỳ mới và cũng như là một vài cái thị trường khác nhau luôn nha mọi người. | Và cũng như là em sẽ hướng dẫn thêm cho mọi người về cách tự làm cái prompt để mình lấy kịch bản theo cái chủ đề, theo cái kênh mà mình muốn luôn nha.",
@@ -2844,12 +2854,12 @@
           "Tránh dùng prompt sơ sài khiến kịch bản AI sinh ra thiếu chiều sâu và cảm xúc."
         ],
         "takeaways": [],
-        "attachedCount": 5
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-5c3116",
         "title": "Share Key thị trường Canada mới nhất và hướng dẫn làm chi tiết từ A-Z - UPDATE 21/8/2025",
-        "duration": null,
+        "duration": "17:14",
         "clusterId": "hoat-hinh-douyin-bilibili",
         "clusterName": "Hoạt Hình Reup & Khai Thác Bilibili/Douyin",
         "transcriptSample": "Rồi, em chào tất cả mọi người đã quay trở lại với kênh HHDEP của em nha. | Thì đây là cái video đầu tiên ở trên cái web này của em nha mọi người. | Thì ở trên cái web này thì em sẽ thường xuyên cập nhật những cái video mới nhất về những cái ký cũng như là những cái tool hướng dẫn mới nhất cho mọi người nha.",
@@ -2861,12 +2871,12 @@
           "Tránh giữ nguyên phụ đề hoặc chữ Hán từ video Douyin gốc."
         ],
         "takeaways": [],
-        "attachedCount": 11
+        "attachedCount": 6
       },
       {
         "sku": "VIDEO-3df94e",
         "title": "Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube",
-        "duration": null,
+        "duration": "20:15",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Em xin chào tất cả mọi người đã quay trở lại với kênh H2Dip của em nha. | Thì trước khi vào cái clip share key hôm nay á, thì em show qua một trong những cái kênh em đang làm nha mọi người. | Đấy, để cho anh em có động lực mà làm nha.",
@@ -2883,7 +2893,7 @@
       {
         "sku": "VIDEO-5cb825",
         "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Lấy + Tạo Kịch Bản Từ Kênh Đối Thủ",
-        "duration": null,
+        "duration": "11:46",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Xin chào tất cả mọi người nha | Thì hôm trước em thấy có máy bác bình luận ở kênh em là bảo show tiền Việt Nam đồng các kiểu đi | Thì ok, hôm nay em sẽ show Việt Nam đồng luôn nha mọi người về trên app điện thoại luôn nha",
@@ -2900,7 +2910,7 @@
       {
         "sku": "VIDEO-891f32",
         "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Tạo Kịch Bản Dài Hơn 2 Tiếng Trên ChatGPT",
-        "duration": null,
+        "duration": "13:48",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ừ ok em xin chào tất cả mọi người nha trước khi vào clip hướng dẫn hôm nay xe cây hôm nay thì em | sẽ show cái con của em cho mọi người xem web tới nha Bởi vì có khá là nhiều bác kêu là em không làm | được em lại đi bóc phép múa mồm này kia thì ok hôm nay em sẽ xem cho bác xem cái kênh của em như nào",
@@ -2917,7 +2927,7 @@
       {
         "sku": "VIDEO-61e354",
         "title": "Hướng Dẫn Tư Duy Tìm, Lọc Key Youtube View Ngoại, Xác Định Được Key Trends, Key Ngon",
-        "duration": null,
+        "duration": "22:39",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Ok, em xin chào tất cả mọi người nha. Thì cũng có khá là nhiều anh em trong group mà kêu em hướng dẫn cách tìm cây, lọc cây, về cách xác định để cây nào mà trên, cây nào ngon để bắt đầu làm Youtube á mọi người. | Thì hôm nay em rảnh thì em sẽ chia sẻ thực tế và kinh nghiệm của em nha mọi người. Đấy, đây là kinh nghiệm trước giờ em làm của em nha. Mấy bác có thể tham khảo theo em nha. | Rồi trước khi vào thì em sẽ nói lại ký là gì để cho những anh em, những bác nào mới vào mới hoàn toàn luôn, không chưa biết thì cũng có thể hiểu qua nha.",
@@ -2929,12 +2939,12 @@
           "Không dịch thô từ khóa tiếng Việt sang tiếng Anh bằng Google Dịch; bắt buộc kiểm tra xem người bản xứ có thực sự dùng cụm từ đó trong tiêu đề hay không."
         ],
         "takeaways": [],
-        "attachedCount": 7
+        "attachedCount": 4
       },
       {
         "sku": "VIDEO-bdfa54",
         "title": "Key Sinh Tồn view Việt bán content",
-        "duration": null,
+        "duration": "21:10",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Rồi ok em xin chào tất cả mọi người đã quay trở lại với kênh H2Dip của em nha | Thì hôm bữa giờ trước giờ thì em toàn là hướng dẫn cho anh em cách làm view ngọi | Về share cho anh em những cái kỳ view ngọi đúng không?",
@@ -2951,7 +2961,7 @@
       {
         "sku": "VIDEO-8e0275",
         "title": "Hướng dẫn tạo edit + thumb key Nonagon",
-        "duration": null,
+        "duration": "1:28:14",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "HƯỚNG DẪN TẠO EDIT + THUMBNAIL KEY NONAGON SO SÁNH NHÂN VẬT (88 PHÚT THỰC HÀNH) | ================================================================================ | [00:00 - 05:00] Phần 1: Khởi động - Mở Photopea (Web Photoshop) -> Thiết lập canvas 16:9 chuẩn YouTube Thumbnail.",
@@ -2963,12 +2973,12 @@
           "Không dùng nhạc nền có bản quyền Content ID gắt gao; ưu tiên dùng thư viện nhạc NCS hoặc âm thanh bản quyền thương mại cho phép."
         ],
         "takeaways": [],
-        "attachedCount": 12
+        "attachedCount": 7
       },
       {
         "sku": "VIDEO-b559c8",
         "title": "Hướng dẫn làm thumb ngách nhỏ trong key người que - Chill Dude - chi tiết",
-        "duration": null,
+        "duration": "24:22",
         "clusterId": "hoat-hinh-douyin-bilibili",
         "clusterName": "Hoạt Hình Reup & Khai Thác Bilibili/Douyin",
         "transcriptSample": "Rồi tiếp tới là cái video này sẽ hướng dẫn cho mọi người cách làm ra cái thông bờ của cái cây người huy đấy nha. | cái prompt này thì em cũng đã có sẽ ở trên kênh youtube của em rồi. | Có gì em sẽ để lại ở trong cái file trong cái thư mục này cho mọi người luôn nha.",
@@ -2985,7 +2995,7 @@
       {
         "sku": "VIDEO-b96929",
         "title": "Hướng dẫn edit key triết lý _ khắc kỷ chi tiết từ A-Z ",
-        "duration": null,
+        "duration": "21:52",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Rồi, ở cái video này thì là hướng dẫn edit chi tiết về cái key triết lý khắc kỷ nha mọi người. | Đấy, thì nói chung mọi người có thể áp dụng vào các cái key khác cũng như nhau nha. | Mọi người cứ xem những cái key nào nó tương tự ấy, mọi người có thể áp dụng theo.",
@@ -3002,7 +3012,7 @@
       {
         "sku": "VIDEO-44cf22",
         "title": "Share key và giải thích về chủ đề rpm cao ở các thị trường - UPDATE 23/5",
-        "duration": null,
+        "duration": "11:54",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Ừ rồi cái cây đầu tiên mà em xe cho mọi người đó là cái cây về tâm lý học này nha anh em cái cây | này là cây trước lý kiểu như trước lý khách kỷ mọi người hãy thì cái cây này á em nói thật luôn | là bên em là chính em nè em đang có một cái kênh như này nha và đang bật kiếm tiền nhà mọi người",
@@ -3019,7 +3029,7 @@
       {
         "sku": "VIDEO-5c438a",
         "title": "Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)",
-        "duration": null,
+        "duration": "14:21",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "Ừ rồi em xin chào tất cả mọi người nha và clip đầu tiên này thì em sẽ giải thích cho các bác hiểu | về cái việc cây gò mêu và cái cơn như thế nào nha mọi người đấy mail về kênh cổ và kênh mới là như | thế nào để cho anh em hiểu trước nha về cái vấn đề thì nói chung là cái này là từ kinh nghiệm thực tế",
@@ -3031,12 +3041,12 @@
           "Tuyệt đối không đổi IP đột ngột ngay sau khi vừa đổi mật khẩu Gmail."
         ],
         "takeaways": [],
-        "attachedCount": 10
+        "attachedCount": 6
       },
       {
         "sku": "VIDEO-61ad94",
         "title": "Update ngách bán content Nhật, Hàn..",
-        "duration": null,
+        "duration": "10:30",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "em em chào tất cả mọi người nha Thì cái ngách cơn này hôm trước em có lên video xe cho mọi người | đúng không nghe video hôm trước mọi người thì đến bây giờ cơ này nó vẫn lên view rất cao cực kỳ là | cao luôn đây cơ này vẫn đang kiếm rất là rất là đều rất là nhiều luôn nha mọi người thấy cơn này",
@@ -3048,12 +3058,12 @@
           "Tránh spam liên tục 3-4 video mỗi ngày khi kênh mới lập; duy trì đều đặn 1 video/ngày để thuật toán học tệp khán giả tự nhiên."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-3a38f9",
         "title": "Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt",
-        "duration": null,
+        "duration": "11:11",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Rồi em chào tất cả mọi người nha, tiếp tục hôm nay thì em sẽ cho mọi người thêm một cái ngách mới ở thị trường Hàn Quốc nha, đây là một cái kênh mới hoàn toàn nha | Đầu tiên thì em cho mọi người xem via cái kênh này trước nha, xem via thông tin này trước | Đây, kênh này chỉ mới đăng video 9 ngày trước nha",
@@ -3065,12 +3075,12 @@
           "Tránh đổi chủ đề đột ngột sang tin tức giật gân làm loãng tệp khán giả trung thành và khiến thuật toán đề xuất bị rối loạn."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-73d98a",
         "title": "Update key (ngách cực nhỏ) mới nhất 06-09-2026",
-        "duration": null,
+        "duration": "9:19",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Em chào tất cả mọi người nha | Thì đây là một kênh ở thị trường Nhật Bản nha mọi người | Thì em cho bác xem ngay trước",
@@ -3087,7 +3097,7 @@
       {
         "sku": "ZOOM-01-Nen-tang-moi-truong",
         "title": "Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
-        "duration": null,
+        "duration": "53:02",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "tiền mà có những anh em chưa kiếm ra tiền | có những em đang chịu được | chịu rất nhiều cái bế tắc",
@@ -3099,12 +3109,12 @@
           "Không dùng chung 1 email khôi phục cho toàn bộ dàn Gmail phụ (nguy cơ chết chùm khi 1 kênh bị phạt)"
         ],
         "takeaways": [],
-        "attachedCount": 1
+        "attachedCount": 4
       },
       {
         "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
         "title": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
-        "duration": null,
+        "duration": "1:21:33",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "kênh này kênh khác nó vẫn không nên đủ chất lượng video như thế nào | tuy nhiên các bạn lập một số email có những email | video y xí như thế",
@@ -3116,12 +3126,12 @@
           "Không để video chế độ \"Riêng tư\" (Private) vì bot YouTube sẽ không quét kiểm tra trước, khi công khai đột ngột dễ bị gậy bản quyền hoặc bóp tương tác"
         ],
         "takeaways": [],
-        "attachedCount": 1
+        "attachedCount": 4
       },
       {
         "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
         "title": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
-        "duration": null,
+        "duration": "1:14:22",
         "clusterId": "setup-moi-truong-nuoi-kenh",
         "clusterName": "Setup Môi Trường, Nuôi Kênh & Tự Động Hóa Tool",
         "transcriptSample": "chúng ta làm video 20 phút đúng không Nhưng mà chắc tôi nghĩ chúng ta sẽ chỉ làm một cái mũi | làm hai cái video mỗi cái bây giờ còn tầm 23 phút thôi nhé cho nó tiết kiệm thời gian còn | cái gì mà anh em muốn làm thì thì cứ thế mà làm với một cái này ba nó kể cái dễ",
@@ -3133,12 +3143,12 @@
           "Không dùng ảnh thumbnail do chatbot AI tự render vì chất lượng thấp và thiếu cảm xúc giật gân"
         ],
         "takeaways": [],
-        "attachedCount": 1
+        "attachedCount": 4
       },
       {
         "sku": "ZOOM-04-Adsense-khang-loi",
         "title": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
-        "duration": null,
+        "duration": "37:14",
         "clusterId": "khang-ban-quyen-adsense",
         "clusterName": "Kháng Bản Quyền, Thuế & Quản Trị AdSense Bất Tử",
         "transcriptSample": "đưa cái tiền đấy về một cái ví nào có để các bạn được đúng không nó sẽ không thể là về phải về thẳng | tài khoản ngân hàng của bạn được mà bắt buộc nó phải giam và một cái lời nào đó đó chính là cái | Google Adresense người ta còn thường gọi là gái đấy tiền nó sẽ chuyển vào đấy mùng 10 hàng tháng",
@@ -3150,12 +3160,12 @@
           "Tránh các ngách AI sinh tồn, spam hoạt hình hoặc tóm tắt phim auto lặp đi lặp lại vì đây là tâm điểm các đợt càn quét Inauthentic Content"
         ],
         "takeaways": [],
-        "attachedCount": 1
+        "attachedCount": 4
       },
       {
         "sku": "VIDEO-8bc3ce",
         "title": "Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt",
-        "duration": null,
+        "duration": "1:53",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Đây là một kênh làm về reup của một anh ở trong gói bà rồ của mình thì em đã vừa hỗ trợ kháng về rồi nha mọi người. | Thì kênh này làm về dạng reup họp hình văn chung nha. | Đây, em chào mấy bác xem cái thời điểm nhận được cái mail bị tag kiếm tiền vì lỗi sử dụng lại nội dung là ngày 31 tháng 8 nha.",
@@ -3167,12 +3177,12 @@
           "Tuyệt đối không xóa sạch kênh cùng lúc gây tụt giờ xem đột ngột làm mất điều kiện YPP."
         ],
         "takeaways": [],
-        "attachedCount": 6
+        "attachedCount": 5
       },
       {
         "sku": "VIDEO-d56768",
         "title": "Share ngách bán content view Việt mới nhất 09-09-2026",
-        "duration": null,
+        "duration": "7:17",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Như hôm trước em có nói dạng đồ đám me làm ở Việt Nam mình cũng có rất nhiều dạng và rất nhiều trend để làm luôn nha. | Đây điển hình là một kênh lập từ cuối tháng 6 nè. Em cho các bác xem qua, view cực kỳ cao luôn nha. | Kênh này trung bình 1 ngày đanh bèo video luôn á mọi người.",
@@ -3184,12 +3194,12 @@
           "Không dùng hình ảnh bệnh tật, thuốc men chưa kiểm chứng vi phạm chính sách y tế YMYL của Google."
         ],
         "takeaways": [],
-        "attachedCount": 2
+        "attachedCount": 4
       },
       {
         "sku": "VIDEO-989053",
         "title": "Update key(ngách nhỏ) thị trường US Hoa Kỳ + Hàn",
-        "duration": null,
+        "duration": "7:22",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Hôm nay em sẽ thêm cho mọi người một cái ngách ở thị trường US Hoa Kỳ nha. Thì đây là một kênh mới luôn nè. Để em cho mấy bác xem. | Đây, em bấm vào xem thêm nha. Kênh này thì mới lập từ tháng 8 và thị trường là Hoa Kỳ nha. Thì trước giờ em hay ít share thị trường US ở trong web pro của em á. | Thì trường US thật sự là nó cạnh tranh rất là cao. Có những cái ngách nào mà cực kỳ trên hay là cực kỳ mới thì em mới share nha. Chứ còn lại thì để mà cạnh tranh được với họ thì rất là khó nha mọi người.",
@@ -3201,12 +3211,12 @@
           "Không dùng hình ảnh ma mị, mê tín dị đoan đáng sợ gây phản cảm cho người xem."
         ],
         "takeaways": [],
-        "attachedCount": 2
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-0bb86b",
         "title": "Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật",
-        "duration": null,
+        "duration": "10:37",
         "clusterId": "drama-sukatto-doi-song",
         "clusterName": "Drama Sukatto, Đời Sống & Tâm Lý Xã Hội",
         "transcriptSample": "Một video duy nhất đầu tiên trên kênh. | Thì hôm nay em cho anh chị xem một kênh mới hoàn toàn luôn vừa lập vào ngày 4 tháng 9, 2026 nha. | Thì vừa lập xong thì kênh này nó cũng có ngâm kênh. Sau đó thì họ ra video này 5 ngày trước.",
@@ -3218,12 +3228,12 @@
           "Không bỏ cuộc ở những video đầu tiên: Thuật toán cần thời gian học tệp khán giả; bắt buộc phải kiên trì xuất bản đều đặn từ 10 đến 15 video mới đánh giá được sức phân phối."
         ],
         "takeaways": [],
-        "attachedCount": 2
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-0be6c9",
         "title": "Kinh khủng với ngách cực nhỏ view Việt - kênh mới 8 video hơn 3 triệu view - bán content ngách người cao tuổi",
-        "duration": null,
+        "duration": "6:02",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Hôm nay thì em chia sẻ thêm một cái ngách ở thị trường view việt mình nữa nha mọi người. | Thì cái ngách này thì rất là đặc biệt, thật sự rất là cao view luôn nha. | Em thấy hiện tại ở Việt Nam mình chỉ có một kênh này đang làm về cái dạng ngách này thôi.",
@@ -3235,12 +3245,12 @@
           "Không copy y nguyên 100% văn bản từ báo chí để tránh bị YouTube quét trùng lặp nội dung (Reused Content)."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-a85eac",
         "title": "Khám kênh và Update share ngách nhỏ thị trường Hàn mới nhất 29-09-2026",
-        "duration": null,
+        "duration": "10:06",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Rồi em chào tất cả mọi người nha. Thì hôm nay em vừa khám một kênh của một bác ở trong bồ rồ của mình. Bác này mới nhờ em khám kênh. | Thì em sẽ nghe em chia sẻ luôn. Và em cũng xin phép bác đã là bác đã có cho phép chia sẻ kênh này lên cho anh em xem luôn. | Thì sẽ nghe em chia sẻ luôn nha mọi người. Thì kênh này làm về thị trường Hàn Quốc. Và bác ấy làm từ ngày 14 tháng 9 năm 2016 này nha.",
@@ -3252,12 +3262,12 @@
           "Tránh đổi chủ đề đột ngột sang ngách khác khiến thuật toán phân phối kênh bị nhiễu tệp người xem."
         ],
         "takeaways": [],
-        "attachedCount": 4
+        "attachedCount": 3
       },
       {
         "sku": "VIDEO-043d15",
         "title": "*Thực chiến Hướng dẫn train prompt và làm kịch bản ngách nhỏ key sức khỏe thị trường Hàn Quốc | Update 02-10-2026",
-        "duration": null,
+        "duration": "27:58",
         "clusterId": "suc-khoe-duong-sinh-senior",
         "clusterName": "Sức Khỏe, Dưỡng Sinh & Phòng Thủ YMYL Cao Tuổi",
         "transcriptSample": "Em chào tất cả mấy bác nha. Thì như video hôm trước update ngách nhỏ thị trường hàng ngày 29 tháng 9 này thì em có nói là em sẽ làm thêm một video riêng để hướng dẫn lại trên form của cái ngách riêng cái ngách nhỏ này luôn. Thì hôm nay em sẽ làm nha mọi người. | Thật ra tất cả mấy bác cũng tự làm được hết rồi bởi vì em đã có hướng dẫn hết ở trong mục mô đun hướng dẫn quy trình dùng Cloud. | Mục mô đun PA này em đã hướng dẫn trên Format rồi, mấy bác có thể xem chỗ đó rồi làm những ngách khác nữa nha.",
@@ -3269,12 +3279,12 @@
           "Tránh sao chép 100% nguyên văn kịch bản đối thủ; bắt buộc tuân thủ tỷ lệ 70% kiến thức lõi và 30% cấu trúc sáng tạo mới."
         ],
         "takeaways": [],
-        "attachedCount": 15
+        "attachedCount": 9
       },
       {
         "sku": "VIDEO-a59a5e",
         "title": "Update share 2 ngách mới kênh mới hoàn toàn | Mới nhất 08-10-2026",
-        "duration": null,
+        "duration": "7:45",
         "clusterId": "ban-content-nhan-ban",
         "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
         "transcriptSample": "Hôm nay em mới lọc ra thêm được cái ngách mới nữa thì em sẵn đây em lên video chia sẻ cho mọi người luôn nha. | Đây là cái kênh ở thị trường hàng nha mọi người. Đây em bấm vào cho ai bác xem kênh trước. Kênh này thì dùng kênh 2023 nha. | Kênh này thì chỉ mới ra được 8 video thôi mọi người ạ. Đây bắt đầu từ video đầu tiên là 13 ngày trước.",
@@ -3284,6 +3294,74 @@
           "Tuyệt đối không làm video làm vườn lệch mùa vụ (ví dụ: làm video cắt tỉa cây mùa thu khi thời tiết đã sang đông).",
           "Không dùng Google Dịch trực tiếp từ tiếng Anh sang tiếng Hàn vì câu văn sẽ thô cứng và mất thiện cảm của người xem bản xứ.",
           "Tránh dùng footage bản quyền của các hãng phim tài liệu; chỉ sử dụng stock miễn phí thương mại hoặc tự tạo B-roll biến đổi sâu."
+        ],
+        "takeaways": [],
+        "attachedCount": 3
+      },
+      {
+        "sku": "VIDEO-ab1137",
+        "title": "Khám kênh show thực tế kênh làm nhân bản thị trường từ Hàn sang Nhật sau chỉ 1 video đầu tiên",
+        "duration": "3:05",
+        "clusterId": "ban-content-nhan-ban",
+        "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
+        "transcriptSample": "Hôm trước em có lên cái video chia sẻ ngày 8 tháng 10 cho mọi người về cái ngách làm vườn và chăm sóc cây lâu năm ở thị trường Hàn Quốc. | Thì có một bác học viên trong nhóm Pro đã áp dụng ngay tư duy nhân bản thị trường để đem cái ngách này sang thị trường Nhật Bản. | Mới đăng đúng 1 video đầu tiên thôi mà kênh đã cắn đề xuất lên view cực kỳ đẹp luôn mọi người ạ.",
+        "transcriptWords": 577,
+        "sopSummary": "primary: Quy trình nhân bản ngách làm vườn/cây cảnh từ thị trường Hàn Quốc sang Nhật Bản ăn đề xuất ngay video đầu tiên | additional: ['Bước 1: Chọn ngách nhỏ đã kiểm chứng nhu cầu thực tại Hàn Quốc (70% thắng lợi nằm ở khâu chọn ngách).', 'Bước 2: Bản địa hóa tiêu đề, thumbnail và thuật ngữ trồng trọt sang tiếng Nhật chuẩn ngữ cảm người bản xứ.', 'Bước 3: Kết hợp giọng đọc tự nhiên và nhịp cắt dựng ASMR thư giãn hướng tới tệp khán giả trung niên/cao tuổi Nhật Bản.']",
+        "avoidFlags": [
+          "Không dùng công cụ dịch máy thô sơ khiến câu từ tiếng Nhật bị gượng gạo và sai thuật ngữ trồng trọt.",
+          "Tránh nhảy ngay vào thị trường Mỹ (US) với các ngách đời sống chung chung có độ cạnh tranh quá khốc liệt khi mới bắt đầu.",
+          "Không bê nguyên xi thiết kế thumbnail Hàn Quốc sang Nhật Bản mà phải tinh chỉnh font chữ và bố cục hợp thị hiếu người Nhật."
+        ],
+        "takeaways": [],
+        "attachedCount": 3
+      },
+      {
+        "sku": "VIDEO-0b3f44",
+        "title": "Share 2 ngách nhỏ bán content view ngoại mới | Update 13-10-2026",
+        "duration": "5:03",
+        "clusterId": "ban-content-nhan-ban",
+        "clusterName": "Bán Content & Nhân Bản Thị Trường (Nhật - Hàn - US - VN)",
+        "transcriptSample": "Hôm nay ngày 13 tháng 10 em lại tiếp tục lọc ra được 2 cái ngách nhỏ bán content view ngoại cực kỳ ngon ở thị trường Hàn Quốc để chia sẻ cho mấy bác. | Ngách thứ nhất là về triết lý cuộc sống qua lời kể của các giáo sư, học giả và ngách thứ hai là thói quen ăn uống tốt cho tim phổi. | Cả hai kênh mẫu này đều là kênh mới lập nhưng tỷ lệ nhấp CTR và lượng view đề xuất đang nổ rất mạnh.",
+        "transcriptWords": 966,
+        "sopSummary": "primary: Quy trình khai thác 2 micro-niche bán content Hàn Quốc: Triết lý giáo sư & Dinh dưỡng tim phổi | additional: ['Bước 1: Phân tích các video outlier có lượt xem vượt trội trên 2 kênh mẫu @sangong7449 và @건강채소이야기18.', 'Bước 2: Tái cấu trúc kịch bản theo tỷ lệ 70/30 bằng Claude, giữ nhịp đọc truyền cảm đúng tâm lý khán giả lớn tuổi Hàn Quốc.', 'Bước 3: Thiết kế thumbnail 1 chủ thể nổi bật chiếm 70% diện tích kèm cụm chữ vàng/đỏ kích thích tò mò.']",
+        "avoidFlags": [
+          "Tuyệt đối không giả danh bác sĩ hoặc đưa ra phác đồ điều trị y khoa trực tiếp để tránh vi phạm chính sách YMYL.",
+          "Không làm lại những video có view thấp của đối thủ; chỉ chọn lọc các chủ đề Outlier đã chứng minh sức hút.",
+          "Tránh nhồi nhét quá nhiều chữ lên thumbnail làm giảm tỷ lệ nhấp (CTR) trên thiết bị di động."
+        ],
+        "takeaways": [],
+        "attachedCount": 3
+      },
+      {
+        "sku": "VIDEO-0c72ab",
+        "title": "V1 - Full 50 phút Thực chiến hướng dẫn quy trình A-Z làm ngách \"What-If\" đang cực HOT trends bằng Claude và Edit 100% = Claude code  |  Update 21-10-2026",
+        "duration": "50:03",
+        "clusterId": "prompt-ai-dao-dien-visual",
+        "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
+        "transcriptSample": "Hôm nay em sẽ hướng dẫn đầy đủ từ A tới Z trong 50 phút cách làm ngách What-If hoạt hình đang cực kỳ hot trend ở thị trường Mỹ đạt hàng triệu view. | Toàn bộ khâu viết kịch bản hội thoại 6 giọng, tạo hệ thống 8 nhân vật cố định, 8 bối cảnh nền cho tới 74 ảnh phân cảnh đều được chuẩn hóa bằng bộ WhatIf-Skills. | Đặc biệt nhất là khâu dựng video được thực hiện tự động 100% bằng Claude Code xuất thẳng ra file MP4 1080p hoàn chỉnh.",
+        "transcriptWords": 9249,
+        "sopSummary": "primary: Quy trình sản xuất video hoạt hình giả định What-If (V1) và biên tập tự động 100% bằng Claude Code | additional: ['Bước 1: Nạp bộ WhatIf-Skills vào Claude để sinh kịch bản 3 hồi, lời thoại 6 nhân vật và danh sách prompt phân cảnh.', 'Bước 2: Khởi tạo đồng bộ 3 tầng hình ảnh: 8 ảnh nhân vật cố định + 8 ảnh bối cảnh nền -> ghép tham chiếu tạo 74 ảnh phân cảnh & 35 video clip.', 'Bước 3: Chạy Claude Code tự động kiểm tra tài nguyên, đồng bộ voice, chèn SFX, phụ đề và render video Full HD 1080p.']",
+        "avoidFlags": [
+          "Không đặt sai quy tắc tên file ảnh/video phân cảnh (001–074) vì sẽ làm lệch cảnh khi Claude Code tự động ghép timeline.",
+          "Tránh bỏ qua bước khóa tạo hình 8 nhân vật và 8 bối cảnh cố định khiến ngoại hình nhân vật bị biến dạng giữa các cảnh.",
+          "Không viết kịch bản dẫn dắt dài dòng; phải đặt giả thuyết nghịch lý What-If ngay trong 10 giây đầu tiên."
+        ],
+        "takeaways": [],
+        "attachedCount": 4
+      },
+      {
+        "sku": "VIDEO-e0e9cd",
+        "title": "V2 - Thực chiến quy trình A-Z làm ngách đang cực HOT trends = Claude Automation | Update 22-10-2026",
+        "duration": "25:36",
+        "clusterId": "setup-moi-truong-nuoi-kenh",
+        "clusterName": "Setup Môi Trường, Nuôi Kênh & Tự Động Hóa Tool",
+        "transcriptSample": "Tiếp nối bản V1 hôm qua thì hôm nay ngày 22 tháng 10 em lên tiếp bản V2 nâng cấp toàn bộ quy trình làm ngách What-If bằng Claude Automation và Plugin H2 2D Studio. | Ở bản V2 này mọi thao tác thủ công đã được gom lại thành luồng tự động hóa khép kín giúp rút ngắn thời gian sản xuất xuống chỉ còn một phần ba. | Mấy bác chỉ cần nắm vững cấu trúc ở bản V1 là qua bản V2 này bấm chạy cực kỳ nhàn và chuẩn xác.",
+        "transcriptWords": 4779,
+        "sopSummary": "primary: Quy trình tự động hóa sản xuất ngách What-If (V2) bằng Claude Automation & Plugin H2 2D Studio | additional: ['Bước 1: Kích hoạt luồng Claude Automation kết hợp Plugin H2 2D Studio để tự động hóa khâu sinh kịch bản và quản lý tài nguyên phân cảnh.', 'Bước 2: Tự động hóa quy trình ghép tham chiếu nhân vật + bối cảnh hàng loạt mà không cần chọn tay từng cảnh.', 'Bước 3: Chạy pipeline đóng gói hậu kỳ, âm thanh, phụ đề và kiểm định chất lượng đầu ra 1080p chỉ bằng một lệnh.']",
+        "avoidFlags": [
+          "Không nhảy thẳng vào dùng bản V2 tự động hóa nếu chưa xem và hiểu rõ cấu trúc thư mục gốc ở bài V1 (VIDEO-0c72ab).",
+          "Tránh chạy đồng thời quá nhiều tiến trình render nặng vượt ngưỡng tài nguyên máy trạm làm gián đoạn luồng tự động.",
+          "Luôn kiểm tra kỹ log kiểm định tài nguyên của Claude trước khi xuất bản chính thức lên kênh."
         ],
         "takeaways": [],
         "attachedCount": 4

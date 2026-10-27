@@ -1,11 +1,17 @@
 {
   "schema": "h2dev.media-review-queue.v1",
   "source_audit": "_audit/20260918-full-136-audit/report-140.json",
+  "snapshot_status": "historical_superseded",
+  "superseded_by": "_audit/20260918-full-136-audit/report.json",
+  "superseded_audit_generated_at": "2026-10-15T12:43:21",
+  "superseded_audit_review_flags": 0,
+  "note": "Snapshot lịch sử; audit 2026-10-15 thay thế báo cáo tổng hợp nhưng không tự đóng các item thủ công trong hàng đợi này.",
   "generatedAt": "2026-09-22T20:14:36+07:00",
   "summary": {
     "hard_fail": 0,
     "review_only": 36,
-    "total": 36
+    "resolved": 5,
+    "total": 41
   },
   "items": [
     {

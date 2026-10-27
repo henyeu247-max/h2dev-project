@@ -630,7 +630,7 @@ That is the channel's core content engine.
 START.
 Generate the first 10 ORIGINAL POV HISTORY VIDEO IDEAS.
 ============================================================
-​
+
 POV HISTORY — CINEMATIC SCRIPT WRITER
 ============================================================
 POV HISTORY — CINEMATIC SCRIPT WRITER
@@ -1607,7 +1607,7 @@ Do not ask for confirmation.
 ============================================================
 END OF MASTER PROMPT
 ============================================================
-​
+
 MASTER PROMPT — SCRIPT CHARACTER IDENTIFIER + CHARACTER MAKER
 ============================================================
 HISTORICAL POV CHANNEL
@@ -2302,7 +2302,7 @@ Do not ask for confirmation.
 ============================================================
 END OF MASTER PROMPT
 ============================================================
-​
+
 MASTER PROMPT — SCENE-BY-SCENE VISUAL IMAGE PROMPT GENERATOR
 ============================================================
 HISTORICAL POV — SCENE-BY-SCENE VISUAL PROMPT GENERATOR
@@ -3207,4 +3207,3 @@ Do not ask for confirmation.
 ============================================================
 END OF MASTER PROMPT
 ============================================================
-​

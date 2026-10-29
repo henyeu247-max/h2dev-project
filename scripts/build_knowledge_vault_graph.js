@@ -1589,34 +1589,16 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
           edges: g.edges,
           nodes: (g.nodes || []).map(n => {
             if (!n || !n.meta) return n;
-            const isDerived = ['h2dev_knowledge_graph.db', 'knowledge_graph.json', 'h2dev_master.db', 'counts-manifest.json', 'overview_summary.json', 'intelligence.db'].includes(String(n.label || '').toLowerCase());
-            if (!isDerived) return n;
             const { sizeBytes, mtimeMs, updatedAt, ...stableMeta } = n.meta;
             return { ...n, meta: stableMeta };
           })
         };
       };
       if (JSON.stringify(stripVolatile(prevGraph)) === JSON.stringify(stripVolatile(jsonGraph))) {
-        jsonGraph.generatedAt = prevGraph.generatedAt || jsonGraph.generatedAt;
-        jsonGraph.buildTimeMs = prevGraph.buildTimeMs ?? jsonGraph.buildTimeMs;
-        const prevNodeMap = new Map((prevGraph.nodes || []).map(n => [n.id, n]));
-        for (const n of jsonGraph.nodes) {
-          const prevN = prevNodeMap.get(n.id);
-          if (prevN && prevN.meta && n.meta) {
-            const isDerived = ['h2dev_knowledge_graph.db', 'knowledge_graph.json', 'h2dev_master.db', 'counts-manifest.json', 'overview_summary.json', 'intelligence.db'].includes(String(n.label || '').toLowerCase());
-            if (isDerived) {
-              n.meta.sizeBytes = prevN.meta.sizeBytes;
-              n.meta.mtimeMs = prevN.meta.mtimeMs;
-              n.meta.updatedAt = prevN.meta.updatedAt;
-            }
-          }
+        if (!options.silent) {
+          console.log(`✅ H2DEV NEXUS GRAPH UNCHANGED (${elapsedMs}ms) — preserved clean data/knowledge_graph.json`);
         }
-        if (JSON.stringify(prevGraph) === JSON.stringify(jsonGraph)) {
-          if (!options.silent) {
-            console.log(`✅ H2DEV NEXUS GRAPH UNCHANGED (${elapsedMs}ms) — preserved clean data/knowledge_graph.json`);
-          }
-          return jsonGraph.stats;
-        }
+        return jsonGraph.stats;
       }
     } catch (_) {}
   }

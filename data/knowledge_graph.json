@@ -1,10 +1,10 @@
 {
   "schema": "h2dev.nexus-graph.v2",
-  "generatedAt": "2026-10-29T09:22:22.746Z",
-  "buildTimeMs": 2103,
+  "generatedAt": "2026-10-29T09:33:08.517Z",
+  "buildTimeMs": 1657,
   "stats": {
     "totalNodes": 4148,
-    "totalEdges": 8291,
+    "totalEdges": 8293,
     "knowledgeNodes": 2793,
     "infraNodes": 1355,
     "projects": 17,
@@ -64769,8 +64769,8 @@
         "relToProject": "data/counts-manifest.json",
         "ext": ".json",
         "sizeBytes": 1390,
-        "mtimeMs": 1793265667935,
-        "updatedAt": "2026-10-29T09:21:07.935Z",
+        "mtimeMs": 1793266385124,
+        "updatedAt": "2026-10-29T09:33:05.124Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fcounts-manifest.json"
       }
@@ -64786,7 +64786,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/data/h2dev_knowledge_graph.db",
-      "degree": 5,
+      "degree": 6,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -64795,8 +64795,8 @@
         "relToProject": "data/h2dev_knowledge_graph.db",
         "ext": ".db",
         "sizeBytes": 18046976,
-        "mtimeMs": 1793265727971,
-        "updatedAt": "2026-10-29T09:22:07.971Z",
+        "mtimeMs": 1793266384869,
+        "updatedAt": "2026-10-29T09:33:04.869Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_knowledge_graph.db"
       }
@@ -64864,7 +64864,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/data/knowledge_graph.json",
-      "degree": 4,
+      "degree": 5,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -64872,9 +64872,9 @@
         "relPath": "H2DEV-Project/data/knowledge_graph.json",
         "relToProject": "data/knowledge_graph.json",
         "ext": ".json",
-        "sizeBytes": 4532939,
-        "mtimeMs": 1793265728064,
-        "updatedAt": "2026-10-29T09:22:08.064Z",
+        "sizeBytes": 4533344,
+        "mtimeMs": 1793266384903,
+        "updatedAt": "2026-10-29T09:33:04.902Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fknowledge_graph.json"
       }
@@ -66365,9 +66365,9 @@
         "relPath": "H2DEV-Project/scripts/build_knowledge_vault_graph.js",
         "relToProject": "scripts/build_knowledge_vault_graph.js",
         "ext": ".js",
-        "sizeBytes": 67876,
-        "mtimeMs": 1793265601360,
-        "updatedAt": "2026-10-29T09:20:01.360Z",
+        "sizeBytes": 67963,
+        "mtimeMs": 1793266276703,
+        "updatedAt": "2026-10-29T09:31:16.702Z",
         "role": "Data & Graph Synchronization Builder",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fbuild_knowledge_vault_graph.js"
       }
@@ -66409,7 +66409,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/scripts/build_master_db.js",
-      "degree": 30,
+      "degree": 32,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -66417,9 +66417,9 @@
         "relPath": "H2DEV-Project/scripts/build_master_db.js",
         "relToProject": "scripts/build_master_db.js",
         "ext": ".js",
-        "sizeBytes": 44885,
-        "mtimeMs": 1793265603829,
-        "updatedAt": "2026-10-29T09:20:03.829Z",
+        "sizeBytes": 51449,
+        "mtimeMs": 1793266302169,
+        "updatedAt": "2026-10-29T09:31:42.169Z",
         "role": "Data & Graph Synchronization Builder",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fbuild_master_db.js"
       }
@@ -68093,9 +68093,9 @@
         "relPath": "H2DEV-Project/scripts/lib/counts.js",
         "relToProject": "scripts/lib/counts.js",
         "ext": ".js",
-        "sizeBytes": 9095,
-        "mtimeMs": 1793259923796,
-        "updatedAt": "2026-10-29T07:45:23.795Z",
+        "sizeBytes": 9445,
+        "mtimeMs": 1793266365478,
+        "updatedAt": "2026-10-29T09:32:45.478Z",
         "role": "Single Source of Count Truth (SSoT Counter)",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Flib%2Fcounts.js"
       }
@@ -142558,6 +142558,18 @@
     },
     {
       "source": "file:H2DEV-Project/scripts/build_master_db.js",
+      "target": "file:H2DEV-Project/data/knowledge_graph.json",
+      "relation": "READS_WRITES_DATA",
+      "weight": 1.5
+    },
+    {
+      "source": "file:H2DEV-Project/scripts/build_master_db.js",
+      "target": "file:H2DEV-Project/data/h2dev_knowledge_graph.db",
+      "relation": "READS_WRITES_DATA",
+      "weight": 1.5
+    },
+    {
+      "source": "file:H2DEV-Project/scripts/build_master_db.js",
       "target": "file:H2DEV-Project/scripts/lib/counts.js",
       "relation": "INVOKES_SCRIPT",
       "weight": 1.4
@@ -143542,6 +143554,12 @@
     },
     {
       "source": "file:H2DEV-Project/scripts/lib/counts.js",
+      "target": "file:H2DEV-Project/data/counts-manifest.json",
+      "relation": "READS_DATA",
+      "weight": 1.5
+    },
+    {
+      "source": "file:H2DEV-Project/scripts/lib/counts.js",
       "target": "file:H2DEV-Project/data/catalog.json",
       "relation": "READS_DATA",
       "weight": 1.5
@@ -143549,12 +143567,6 @@
     {
       "source": "file:H2DEV-Project/scripts/lib/counts.js",
       "target": "file:H2DEV-Project/data/catalog_full.json",
-      "relation": "READS_DATA",
-      "weight": 1.5
-    },
-    {
-      "source": "file:H2DEV-Project/scripts/lib/counts.js",
-      "target": "file:H2DEV-Project/data/counts-manifest.json",
       "relation": "READS_DATA",
       "weight": 1.5
     },

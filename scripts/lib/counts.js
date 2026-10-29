@@ -128,6 +128,17 @@ function computeCounts() {
   }
 
   const media = scanVideoDir();
+  const isVpsDeploy = !fs.existsSync(path.join(ROOT, 'raw-kenh-goc'));
+  const savedManifestCounts = (() => {
+    if (!isVpsDeploy) return null;
+    try {
+      const m = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/counts-manifest.json'), 'utf8'));
+      return (m && m.counts) || null;
+    } catch (_) {
+      return null;
+    }
+  })();
+  const liveVideoDirs = countEntries('video', { onlyDirs: true });
 
   return {
     videos: len(videos),
@@ -171,24 +182,23 @@ function computeCounts() {
     modules: len(modulesRaw),
     modulesItems: modulesItems,
     modulesWithBadge: modulesWithBadge,
-    videoDirs: countEntries('video', { onlyDirs: true }),
-    mediaFiles: media.files,
-    mediaBytes: media.bytes,
+    // Tren server deploy VPS (thu muc video/ va raw-kenh-goc/ bi gitignore), giu nguyen gia tri tu manifest da commit
+    videoDirs: (isVpsDeploy && savedManifestCounts && liveVideoDirs < videoList.length)
+      ? (savedManifestCounts.videoDirs || liveVideoDirs)
+      : liveVideoDirs,
+    mediaFiles: (isVpsDeploy && savedManifestCounts && media.files < videoList.length)
+      ? (savedManifestCounts.mediaFiles || media.files)
+      : media.files,
+    mediaBytes: (isVpsDeploy && savedManifestCounts && media.files < videoList.length)
+      ? (savedManifestCounts.mediaBytes || media.bytes)
+      : media.bytes,
     docsTotalDirs: countEntries('docs', { onlyDirs: true }),
     docsVideoDirs: countEntries('docs', { onlyDirs: true, filter: f => /^VIDEO-/.test(f) }),
     docsZoomDirs: countEntries('docs', { onlyDirs: true, filter: f => /^ZOOM-/.test(f) }),
     thumbFiles: countEntries('assets/thumbs', { onlyFiles: true }),
-    rawChannelImages: (() => {
-      const p = path.join(ROOT, 'raw-kenh-goc');
-      if (!fs.existsSync(p)) {
-        // Tren server deploy VPS (thu muc raw-kenh-goc bi gitignore), giu nguyen gia tri tu manifest da commit
-        try {
-          const m = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/counts-manifest.json'), 'utf8'));
-          return m.counts.rawChannelImages || 135;
-        } catch (_) { return 135; }
-      }
-      return countEntries('raw-kenh-goc', { filter: f => IMG_RE.test(f) });
-    })(),
+    rawChannelImages: isVpsDeploy
+      ? ((savedManifestCounts && savedManifestCounts.rawChannelImages) || 135)
+      : countEntries('raw-kenh-goc', { filter: f => IMG_RE.test(f) }),
     rawRecordsWithoutImage: rawRecords.filter(r => r && !r.fileName).length,
     rawDeepProfiles: countEntries('data/raw-channels-deep', { onlyDirs: true }),
     sopDocs: countEntries('assets/docs/tai-lieu', { onlyFiles: true }),

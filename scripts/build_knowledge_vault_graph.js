@@ -1076,7 +1076,7 @@ ${citedSkus.map(s => `- [[videos/${s}|${s} — ${allVideoTitleBySku.get(s)?.titl
 
     addEdge(parentNodeId, fileNodeId, 'CONTAINS_FILE', 1.2);
     registerFileLookup(relToWs, absFile, fileNodeId);
-    if (!['h2dev_knowledge_graph.db', 'knowledge_graph.json'].includes(base.toLowerCase())) {
+    if (!['h2dev_knowledge_graph.db', 'knowledge_graph.json', 'h2dev_master.db', 'counts-manifest.json', 'overview_summary.json', 'intelligence.db'].includes(base.toLowerCase())) {
       syncStateRows.push({ path: relToWs, mtimeMs: Math.round(st.mtimeMs), sizeBytes: st.size });
     }
 

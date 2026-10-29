@@ -1092,6 +1092,135 @@ if (!process.env.H2DEV_MASTER_DB_PATH) {
     }
   };
   writeFileAtomicSync(path.join(ROOT, 'data', 'overview_summary.json'), JSON.stringify(overviewSummary, null, 2) + '\n');
+
+  // Auto-hydrate data/h2dev_knowledge_graph.db from committed data/knowledge_graph.json if missing or out-of-sync (e.g. on VPS deploy)
+  const kgJsonPath = path.join(ROOT, 'data', 'knowledge_graph.json');
+  const kgDbPath = path.join(ROOT, 'data', 'h2dev_knowledge_graph.db');
+  if (fs.existsSync(kgJsonPath)) {
+    try {
+      const kgJson = JSON.parse(fs.readFileSync(kgJsonPath, 'utf8'));
+      const expectedNodes = Array.isArray(kgJson.nodes) ? kgJson.nodes.length : 0;
+      const expectedEdges = Array.isArray(kgJson.edges) ? kgJson.edges.length : 0;
+      let needsHydrate = !fs.existsSync(kgDbPath);
+      if (!needsHydrate && expectedNodes > 0) {
+        try {
+          const checkKgDb = new DatabaseSync(kgDbPath, { readOnly: true });
+          try {
+            const curN = checkKgDb.prepare('SELECT COUNT(*) AS c FROM kg_nodes').get().c;
+            const curE = checkKgDb.prepare('SELECT COUNT(*) AS c FROM kg_edges').get().c;
+            if (curN !== expectedNodes || curE !== expectedEdges) needsHydrate = true;
+          } finally {
+            checkKgDb.close();
+          }
+        } catch (_) {
+          needsHydrate = true;
+        }
+      }
+      if (needsHydrate && expectedNodes > 0) {
+        console.log(`=== [9/9] HYDRATING NEXUS KNOWLEDGE GRAPH DB FROM knowledge_graph.json (${expectedNodes} nodes / ${expectedEdges} edges) ===`);
+        const inboundMap = new Map();
+        const outboundMap = new Map();
+        for (const n of kgJson.nodes) {
+          inboundMap.set(n.id, []);
+          outboundMap.set(n.id, []);
+        }
+        for (const e of kgJson.edges) {
+          if (outboundMap.has(e.source)) outboundMap.get(e.source).push({ target: e.target, relation: e.relation });
+          if (inboundMap.has(e.target)) inboundMap.get(e.target).push({ source: e.source, relation: e.relation });
+        }
+        const kgDb = new DatabaseSync(kgDbPath);
+        try {
+          kgDb.exec(`
+            PRAGMA busy_timeout = 5000;
+            PRAGMA journal_mode = WAL;
+            PRAGMA synchronous = NORMAL;
+            BEGIN IMMEDIATE;
+            DROP TABLE IF EXISTS kg_nodes;
+            DROP TABLE IF EXISTS kg_edges;
+            DROP TABLE IF EXISTS kg_backlinks;
+            DROP TABLE IF EXISTS kg_sync_state;
+            DROP TABLE IF EXISTS kg_fts;
+            CREATE TABLE kg_nodes (
+              id TEXT PRIMARY KEY,
+              type TEXT NOT NULL,
+              layer TEXT NOT NULL,
+              level INTEGER NOT NULL DEFAULT 4,
+              parent_id TEXT NOT NULL DEFAULT '',
+              label TEXT NOT NULL,
+              track TEXT NOT NULL,
+              sku TEXT NOT NULL,
+              path TEXT NOT NULL,
+              degree INTEGER NOT NULL DEFAULT 0,
+              metadata_json TEXT NOT NULL
+            ) STRICT;
+            CREATE TABLE kg_edges (
+              source TEXT NOT NULL,
+              target TEXT NOT NULL,
+              relation TEXT NOT NULL,
+              weight REAL NOT NULL DEFAULT 1.0,
+              PRIMARY KEY (source, target, relation)
+            ) STRICT;
+            CREATE TABLE kg_backlinks (
+              node_id TEXT PRIMARY KEY,
+              inbound_count INTEGER NOT NULL,
+              outbound_count INTEGER NOT NULL,
+              inbound_json TEXT NOT NULL,
+              outbound_json TEXT NOT NULL
+            ) STRICT;
+            CREATE TABLE kg_sync_state (
+              path TEXT PRIMARY KEY,
+              mtime_ms INTEGER NOT NULL,
+              size_bytes INTEGER NOT NULL
+            ) STRICT;
+            CREATE VIRTUAL TABLE kg_fts USING fts5(
+              id UNINDEXED,
+              type,
+              label,
+              body,
+              wikilinks,
+              tokenize = 'unicode61 remove_diacritics 2'
+            );
+            CREATE INDEX idx_kg_nodes_type ON kg_nodes(type);
+            CREATE INDEX idx_kg_nodes_layer ON kg_nodes(layer);
+            CREATE INDEX idx_kg_nodes_parent ON kg_nodes(parent_id);
+            CREATE INDEX idx_kg_nodes_sku ON kg_nodes(sku);
+            CREATE INDEX idx_kg_nodes_id_lower ON kg_nodes(LOWER(id));
+            CREATE INDEX idx_kg_nodes_sku_lower ON kg_nodes(LOWER(sku));
+            CREATE INDEX idx_kg_nodes_path_lower ON kg_nodes(LOWER(path));
+            CREATE INDEX idx_kg_nodes_label_lower ON kg_nodes(LOWER(label));
+            CREATE INDEX idx_kg_edges_source ON kg_edges(source);
+            CREATE INDEX idx_kg_edges_target ON kg_edges(target);
+          `);
+          const insNode = kgDb.prepare('INSERT INTO kg_nodes (id, type, layer, level, parent_id, label, track, sku, path, degree, metadata_json) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+          const insEdge = kgDb.prepare('INSERT OR IGNORE INTO kg_edges (source, target, relation, weight) VALUES (?, ?, ?, ?)');
+          const insBacklink = kgDb.prepare('INSERT INTO kg_backlinks (node_id, inbound_count, outbound_count, inbound_json, outbound_json) VALUES (?, ?, ?, ?, ?)');
+          const insFts = kgDb.prepare('INSERT INTO kg_fts (id, type, label, body, wikilinks) VALUES (?, ?, ?, ?, ?)');
+          for (const n of kgJson.nodes) {
+            const inb = inboundMap.get(n.id) || [];
+            const outb = outboundMap.get(n.id) || [];
+            const deg = inb.length + outb.length;
+            const meta = n.meta || {};
+            const rawIdsStr = (meta.rawIds || (meta.rawId ? [meta.rawId] : [])).join(' ');
+            const fullBody = `${n.id} ${n.sku || ''} ${rawIdsStr} ${n.label || ''} ${foldVi((n.label || '') + ' ' + rawIdsStr)}`.trim();
+            insNode.run(n.id, n.type || 'item', n.layer || 'knowledge', Number(n.level || 4), n.parentId || '', n.label || n.id, n.track || '', n.sku || '', n.path || '', deg, JSON.stringify(meta));
+            insBacklink.run(n.id, inb.length, outb.length, JSON.stringify(inb), JSON.stringify(outb));
+            insFts.run(n.id, n.type || 'item', n.label || n.id, fullBody, '');
+          }
+          for (const e of kgJson.edges) {
+            insEdge.run(e.source, e.target, e.relation, Number(e.weight || 1.0));
+          }
+          kgDb.exec("INSERT INTO kg_fts(kg_fts) VALUES('optimize')");
+          kgDb.exec('COMMIT');
+          try { kgDb.exec('PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
+        } finally {
+          kgDb.close();
+        }
+        console.log(`Hydrated ${expectedNodes} kg_nodes and ${expectedEdges} kg_edges into h2dev_knowledge_graph.db -> PASS`);
+      }
+    } catch (err) {
+      console.error('[WARN] Failed to hydrate h2dev_knowledge_graph.db from knowledge_graph.json:', err.message);
+    }
+  }
 }
 
 db.close();

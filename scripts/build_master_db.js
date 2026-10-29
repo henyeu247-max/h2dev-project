@@ -1091,7 +1091,16 @@ if (!process.env.H2DEV_MASTER_DB_PATH) {
       totalVideoSizeMb
     }
   };
-  writeFileAtomicSync(path.join(ROOT, 'data', 'overview_summary.json'), JSON.stringify(overviewSummary, null, 2) + '\n');
+  const overviewPath = path.join(ROOT, 'data', 'overview_summary.json');
+  if (fs.existsSync(overviewPath)) {
+    try {
+      const prevOv = JSON.parse(fs.readFileSync(overviewPath, 'utf8'));
+      if (prevOv && JSON.stringify(prevOv.counts) === JSON.stringify(overviewSummary.counts) && JSON.stringify(prevOv.storage) === JSON.stringify(overviewSummary.storage) && prevOv.generatedAt) {
+        overviewSummary.generatedAt = prevOv.generatedAt;
+      }
+    } catch (_) {}
+  }
+  writeFileAtomicSync(overviewPath, JSON.stringify(overviewSummary, null, 2) + '\n');
 
   // Auto-hydrate data/h2dev_knowledge_graph.db from committed data/knowledge_graph.json if missing or out-of-sync (e.g. on VPS deploy)
   const kgJsonPath = path.join(ROOT, 'data', 'knowledge_graph.json');

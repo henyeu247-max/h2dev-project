@@ -1,12 +1,12 @@
 ---
 handle: "@SuGia_SucKhoe"
-name: "@SuGia_SucKhoe"
+name: "Sứ Giả Sức Khỏe"
 url: "https://www.youtube.com/@SuGia_SucKhoe"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @SuGia_SucKhoe (@SuGia_SucKhoe)
+# Kênh Đối Thủ / Kênh Mẫu: @SuGia_SucKhoe (Sứ Giả Sức Khỏe)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@SuGia_SucKhoe](https://www.youtube.com/@SuGia_SucKhoe)

@@ -1,12 +1,12 @@
 ---
 handle: "@黄金の老年期-x9g"
-name: "@黄金の老年期-x9g"
+name: "黄金の老年期"
 url: "https://www.youtube.com/@黄金の老年期-x9g"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @黄金の老年期-x9g (@黄金の老年期-x9g)
+# Kênh Đối Thủ / Kênh Mẫu: @黄金の老年期-x9g (黄金の老年期)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@黄金の老年期-x9g](https://www.youtube.com/@黄金の老年期-x9g)

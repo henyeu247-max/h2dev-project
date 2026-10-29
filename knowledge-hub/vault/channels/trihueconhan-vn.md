@@ -1,12 +1,12 @@
 ---
 handle: "@trihueconhan-vn"
-name: "@trihueconhan-vn"
+name: "TRÍ HUỆ CỔ NHÂN"
 url: "https://www.youtube.com/@trihueconhan-vn"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @trihueconhan-vn (@trihueconhan-vn)
+# Kênh Đối Thủ / Kênh Mẫu: @trihueconhan-vn (TRÍ HUỆ CỔ NHÂN)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@trihueconhan-vn](https://www.youtube.com/@trihueconhan-vn)

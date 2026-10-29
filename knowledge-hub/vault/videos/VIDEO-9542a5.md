@@ -63,7 +63,7 @@ player_url: "/player.html?sku=VIDEO-9542a5&track=huan"
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Tập Trung Khán Giả Là Tập Trung Ở Đâu (README.md):** `docs/VIDEO-9542a5/README.md`
-- **Bài Tập 1 (Phải Làm): Bảng từ khóa Khám Phá Chủ Đề & Cảm Xúc Khán Giả:** `assets/docs-huan/BAI_TAP_1_PHAI_LAM_BANG_TU_KHOA_KHAM_PHA_CHU_DE.xlsx`
+- **Bài Tập 1 (Phải Làm): Bảng từ khóa Khám Phá Chủ Đề & Cảm Xúc Khán Giả:** `assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx`
 - **Bài Tập 2 (Phải Làm): Mẫu Mô Hình Hóa Kênh YouTube Phát Triển Bản Thân (Dream 100):** `assets/docs-huan/BAI_TAP_2_DREAM_100_PHAI_LAM_MAU_MO_HINH_HOA_KENH_YOUTUBE_PHAT_TRIEN_BAN_THAN.docx`
 - **Kế Hoạch Triển Khai Kênh GODA 2025:** `assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/2._GODA_-_Ke_hoach_tren_khai_kenh.xlsx`
 - **Checklist YouTube 1 Trang:** `assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx`

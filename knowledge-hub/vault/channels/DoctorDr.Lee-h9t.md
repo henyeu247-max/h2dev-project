@@ -1,12 +1,12 @@
 ---
 handle: "@DoctorDr.Lee-h9t"
-name: "@DoctorDr.Lee-h9t"
+name: "Dr. Lee Min Soo"
 url: "https://www.youtube.com/@DoctorDr.Lee-h9t"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DoctorDr.Lee-h9t (@DoctorDr.Lee-h9t)
+# Kênh Đối Thủ / Kênh Mẫu: @DoctorDr.Lee-h9t (Dr. Lee Min Soo)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DoctorDr.Lee-h9t](https://www.youtube.com/@DoctorDr.Lee-h9t)

@@ -1,12 +1,12 @@
 ---
 handle: "@IFOLOGYFILMS"
-name: "@IFOLOGYFILMS"
+name: "IFOLOGY"
 url: "https://www.youtube.com/@IFOLOGYFILMS"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @IFOLOGYFILMS (@IFOLOGYFILMS)
+# Kênh Đối Thủ / Kênh Mẫu: @IFOLOGYFILMS (IFOLOGY)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@IFOLOGYFILMS](https://www.youtube.com/@IFOLOGYFILMS)

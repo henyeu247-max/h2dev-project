@@ -1,5 +1,10 @@
 // H2DEV Project server - serves the project at http://0.0.0.0:8899/
 // Toàn bộ dự án và tài liệu nghiên cứu mở 100%, không áp đặt cơ chế kiểm duyệt/chặn dữ liệu.
+const _origEmitWarningServer = process.emitWarning;
+process.emitWarning = function (w, ...rest) {
+  if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+  return _origEmitWarningServer.call(process, w, ...rest);
+};
 const http = require('http');
 const https = require('https');
 const fs = require('fs');
@@ -9,6 +14,7 @@ const { initLogRotation, checkAndRotateAll } = require('./scripts/logrotate');
 const { searchFts, mutateDatabase, query, queryOne } = require('./scripts/master_dal');
 const { startAutoSyncWatcher, getSyncStatus, triggerSyncNow, ensureGraphFresh } = require('./scripts/kg_auto_sync');
 const { traceNodeInDb, searchGraphInDb, listProjectsFromDb } = require('./scripts/kg_query');
+const hotStore = require('./scripts/hot_memory_store');
 
 // G4: Security headers chung cho moi response
 const SECURE_HEADERS = {
@@ -32,6 +38,9 @@ const SECURE_HEADERS = {
     "frame-ancestors 'self'"
   ].join('; ')
 };
+const LIVE_EMBED_CSP = SECURE_HEADERS['Content-Security-Policy']
+  .replace("script-src 'self'", "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.mona-cloud.com https://video.mona-cloud.com https://cdnjs.cloudflare.com")
+  .replace("base-uri 'self'", "base-uri 'self' https://*.mona-cloud.com https://video.mona-cloud.com");
 function withSecure(extra) {
   return Object.assign({}, SECURE_HEADERS, extra || {});
 }
@@ -70,29 +79,149 @@ const MIME = {
   '.woff2':'font/woff2',
   '.ttf':'font/ttf',
   '.xlsx':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+  '.docx':'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+  '.pptx':'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+  '.plugin':'application/octet-stream',
 };
 
 const COMPRESSIBLE_EXTS = new Set([
   '.html', '.css', '.js', '.json', '.svg', '.csv', '.tsv', '.txt', '.srt', '.vtt', '.md'
 ]);
 
-// In-memory RAM cache cho file nén Gzip (khống chế tối đa 120 entries để an toàn bộ nhớ VPS)
-const GZIP_CACHE = new Map();
-const MAX_GZIP_CACHE_ENTRIES = 120;
-function setGzipCache(key, entry) {
-  if (GZIP_CACHE.size >= MAX_GZIP_CACHE_ENTRIES) {
-    const oldestKey = GZIP_CACHE.keys().next().value;
-    if (oldestKey) GZIP_CACHE.delete(oldestKey);
-  }
-  GZIP_CACHE.set(key, entry);
+// In-memory RAM cache 2 tầng:
+// 1. PINNED_CORE_CACHE: ghim cố định các file lõi (HTML, CSS, JS, data-tabs/*.json, overview_summary, music_stats) khi mtimeMs & size không đổi (tối đa 64 entries)
+// 2. DYNAMIC_LRU_CACHE: tối đa 256 entries VÀ ngân sách bộ nhớ tối đa 64 MB (cập nhật thứ tự LRU khi get) cho video/*/transcript.json, video/*/insight.json, v.v.
+const PINNED_CORE_CACHE = new Map();
+const DYNAMIC_LRU_CACHE = new Map();
+const INFLIGHT_GZIP = new Map();
+const MAX_PINNED_ENTRIES = 64;
+const MAX_PINNED_BYTES = 32 * 1024 * 1024;
+const MAX_DYNAMIC_LRU_ENTRIES = 256;
+const MAX_DYNAMIC_LRU_BYTES = 64 * 1024 * 1024;
+let pinnedCacheBytes = 0;
+let dynamicLruBytes = 0;
+
+function normalizeCacheKey(fullPath) {
+  const norm = path.resolve(fullPath).replace(/\\/g, '/');
+  return process.platform === 'win32' ? norm.toLowerCase() : norm;
 }
 
-// So sánh ETag chuẩn RFC 9110 hỗ trợ dấu phẩy và hậu tố Cloudflare -gzip
+function isPinnedCoreFile(fullPath) {
+  const rel = path.relative(ROOT, fullPath).replace(/\\/g, '/');
+  if (rel === 'index.html' || rel === 'learn.html' || rel === 'player.html' || rel === 'graph.html') return true;
+  if (rel === 'assets/tailwind.css' || rel === 'assets/styles.css') return true;
+  if (/^assets\/(?:app\/)?[^/]+\.css$/i.test(rel)) return true;
+  if (/^assets\/(?:app\/(?:tabs\/)?[^/]+|[^/]+)\.js$/i.test(rel)) return true;
+  if (/^data-tabs\/[^/]+\.json$/i.test(rel)) return true;
+  if (rel === 'data/overview_summary.json' || rel === 'data/music_stats.json') return true;
+  return false;
+}
+
+function getGzipCache(fullPath, currentMtimeMs, currentSize) {
+  const key = normalizeCacheKey(fullPath);
+  const pinned = PINNED_CORE_CACHE.get(key);
+  if (pinned) {
+    if (pinned.mtimeMs === currentMtimeMs && pinned.size === currentSize) {
+      PINNED_CORE_CACHE.delete(key);
+      PINNED_CORE_CACHE.set(key, pinned);
+      return pinned;
+    }
+    pinnedCacheBytes = Math.max(0, pinnedCacheBytes - (pinned.buffer ? pinned.buffer.length : 0));
+    PINNED_CORE_CACHE.delete(key);
+  }
+  const dyn = DYNAMIC_LRU_CACHE.get(key);
+  if (dyn) {
+    if (dyn.mtimeMs === currentMtimeMs && dyn.size === currentSize) {
+      DYNAMIC_LRU_CACHE.delete(key);
+      DYNAMIC_LRU_CACHE.set(key, dyn);
+      return dyn;
+    }
+    dynamicLruBytes = Math.max(0, dynamicLruBytes - (dyn.buffer ? dyn.buffer.length : 0));
+    DYNAMIC_LRU_CACHE.delete(key);
+  }
+  return null;
+}
+
+function setGzipCache(fullPath, entry) {
+  const key = normalizeCacheKey(fullPath);
+  const bufLen = entry && entry.buffer ? entry.buffer.length : 0;
+  const stored = Object.assign({ fullPath }, entry);
+  if (isPinnedCoreFile(fullPath) && bufLen <= MAX_PINNED_BYTES) {
+    if (PINNED_CORE_CACHE.has(key)) {
+      const prev = PINNED_CORE_CACHE.get(key);
+      pinnedCacheBytes = Math.max(0, pinnedCacheBytes - (prev && prev.buffer ? prev.buffer.length : 0));
+      PINNED_CORE_CACHE.delete(key);
+    }
+    while (PINNED_CORE_CACHE.size >= MAX_PINNED_ENTRIES || (pinnedCacheBytes + bufLen > MAX_PINNED_BYTES && PINNED_CORE_CACHE.size > 0)) {
+      const oldestPinned = PINNED_CORE_CACHE.keys().next().value;
+      if (oldestPinned === undefined) break;
+      const oldEntry = PINNED_CORE_CACHE.get(oldestPinned);
+      pinnedCacheBytes = Math.max(0, pinnedCacheBytes - (oldEntry && oldEntry.buffer ? oldEntry.buffer.length : 0));
+      PINNED_CORE_CACHE.delete(oldestPinned);
+    }
+    PINNED_CORE_CACHE.set(key, stored);
+    pinnedCacheBytes += bufLen;
+    return;
+  }
+  if (bufLen > MAX_DYNAMIC_LRU_BYTES) return;
+  if (DYNAMIC_LRU_CACHE.has(key)) {
+    const prev = DYNAMIC_LRU_CACHE.get(key);
+    dynamicLruBytes = Math.max(0, dynamicLruBytes - (prev && prev.buffer ? prev.buffer.length : 0));
+    DYNAMIC_LRU_CACHE.delete(key);
+  }
+  while (DYNAMIC_LRU_CACHE.size >= MAX_DYNAMIC_LRU_ENTRIES || (dynamicLruBytes + bufLen > MAX_DYNAMIC_LRU_BYTES && DYNAMIC_LRU_CACHE.size > 0)) {
+    const oldestKey = DYNAMIC_LRU_CACHE.keys().next().value;
+    if (oldestKey === undefined) break;
+    const oldEntry = DYNAMIC_LRU_CACHE.get(oldestKey);
+    dynamicLruBytes = Math.max(0, dynamicLruBytes - (oldEntry && oldEntry.buffer ? oldEntry.buffer.length : 0));
+    DYNAMIC_LRU_CACHE.delete(oldestKey);
+  }
+  DYNAMIC_LRU_CACHE.set(key, stored);
+  dynamicLruBytes += bufLen;
+}
+
+function refreshCachesOnDataSync() {
+  DGMD_EMBED_CACHE.clear();
+  try {
+    hotStore.reloadHotStore();
+  } catch (err) {
+    console.error('[HotStore] reload error:', err && err.message ? err.message : err);
+  }
+  for (const [key, cached] of PINNED_CORE_CACHE.entries()) {
+    try {
+      const st = fs.statSync(cached.fullPath || key);
+      if (st.mtimeMs !== cached.mtimeMs || st.size !== cached.size) {
+        pinnedCacheBytes = Math.max(0, pinnedCacheBytes - (cached.buffer ? cached.buffer.length : 0));
+        PINNED_CORE_CACHE.delete(key);
+      }
+    } catch (_) {
+      pinnedCacheBytes = Math.max(0, pinnedCacheBytes - (cached.buffer ? cached.buffer.length : 0));
+      PINNED_CORE_CACHE.delete(key);
+    }
+  }
+  for (const [key, cached] of DYNAMIC_LRU_CACHE.entries()) {
+    if (String(key).endsWith('.json')) {
+      try {
+        const st = fs.statSync(cached.fullPath || key);
+        if (st.mtimeMs !== cached.mtimeMs || st.size !== cached.size) {
+          dynamicLruBytes = Math.max(0, dynamicLruBytes - (cached.buffer ? cached.buffer.length : 0));
+          DYNAMIC_LRU_CACHE.delete(key);
+        }
+      } catch (_) {
+        dynamicLruBytes = Math.max(0, dynamicLruBytes - (cached.buffer ? cached.buffer.length : 0));
+        DYNAMIC_LRU_CACHE.delete(key);
+      }
+    }
+  }
+}
+
+// So sánh ETag chuẩn RFC 9110 hỗ trợ dấu phẩy, wildcard '*' và hậu tố Cloudflare -gzip
 function matchEtag(clientHeader, serverEtag) {
   if (!clientHeader || !serverEtag) return false;
-  const cleanServer = serverEtag.replace(/^W\//, '').replace(/"/g, '').trim();
-  const clientList = clientHeader.split(',').map(s => s.replace(/^W\//, '').replace(/"/g, '').trim());
-  return clientList.some(c => c === cleanServer || c === cleanServer + '-gzip' || c === '*');
+  if (clientHeader.trim() === '*') return true;
+  const cleanServer = serverEtag.replace(/^W\//, '').replace(/"/g, '').trim().replace(/-gzip$/i, '');
+  const clientList = clientHeader.split(',').map(s => s.replace(/^W\//, '').replace(/"/g, '').trim().replace(/-gzip$/i, ''));
+  return clientList.some(c => c === cleanServer || c === '*');
 }
 
 function sendFile(req, res, full, mime, rangeHeader, isHead = false){
@@ -184,7 +313,8 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       res.writeHead(status, headers);
       if(isHead){ res.end(); return; }
       const stream = fs.createReadStream(full, {start, end});
-      stream.on('error', () => { if (!res.headersSent) res.destroy(); });
+      stream.on('error', () => { stream.destroy(); res.destroy(); });
+      res.on('close', () => { try { stream.destroy(); } catch (_) {} });
       stream.pipe(res);
       return;
     }
@@ -203,32 +333,40 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
 
     if (canGzip) {
       headers['Content-Encoding'] = 'gzip';
-      // Fast path: In-memory Gzip buffer cache cho files < 5MB (trả về trong 0.1ms)
+      // Fast path: In-memory Gzip buffer cache cho files < 5MB (trả về trong 0.1ms) kèm In-Flight Dedupe chống Cache Stampede
       if (total < 5 * 1024 * 1024) {
-        const cached = GZIP_CACHE.get(full);
-        if (cached && cached.mtimeMs === st.mtimeMs) {
+        const cached = getGzipCache(full, st.mtimeMs, st.size);
+        if (cached) {
           headers['Content-Length'] = cached.buffer.length;
           res.writeHead(200, headers);
           if (isHead) { res.end(); return; }
           res.end(cached.buffer);
           return;
         }
-        fs.readFile(full, (readErr, rawBuf) => {
-          if (readErr) {
-            if (!res.headersSent) { res.writeHead(500); res.end('Read Error'); }
-            return;
-          }
-          zlib.gzip(rawBuf, { level: 6 }, (gzErr, gzBuf) => {
-            if (gzErr) {
-              if (!res.headersSent) { res.writeHead(500); res.end('Gzip Error'); }
-              return;
-            }
-            setGzipCache(full, { mtimeMs: st.mtimeMs, buffer: gzBuf });
-            headers['Content-Length'] = gzBuf.length;
-            res.writeHead(200, headers);
-            if (isHead) { res.end(); return; }
-            res.end(gzBuf);
+        const inflightKey = `${normalizeCacheKey(full)}:${st.mtimeMs}:${st.size}`;
+        let p = INFLIGHT_GZIP.get(inflightKey);
+        if (!p) {
+          p = new Promise((resolve, reject) => {
+            fs.readFile(full, (readErr, rawBuf) => {
+              if (readErr) return reject(readErr);
+              zlib.gzip(rawBuf, { level: 6 }, (gzErr, gzBuf) => {
+                if (gzErr) return reject(gzErr);
+                setGzipCache(full, { mtimeMs: st.mtimeMs, size: st.size, buffer: gzBuf });
+                resolve(gzBuf);
+              });
+            });
           });
+          INFLIGHT_GZIP.set(inflightKey, p);
+          p.finally(() => INFLIGHT_GZIP.delete(inflightKey)).catch(() => {});
+        }
+        p.then((gzBuf) => {
+          if (res.headersSent) return;
+          headers['Content-Length'] = gzBuf.length;
+          res.writeHead(200, headers);
+          if (isHead) { res.end(); return; }
+          res.end(gzBuf);
+        }).catch(() => {
+          if (!res.headersSent) { res.writeHead(500); res.end('Gzip/Read Error'); }
         });
         return;
       }
@@ -236,8 +374,10 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       if (isHead) { res.end(); return; }
       const rawStream = fs.createReadStream(full);
       const gz = zlib.createGzip({ level: 6 });
-      rawStream.on('error', () => { if (!res.headersSent) res.destroy(); });
-      gz.on('error', () => { if (!res.headersSent) res.destroy(); });
+      const onStreamError = () => { rawStream.destroy(); gz.destroy(); res.destroy(); };
+      rawStream.on('error', onStreamError);
+      gz.on('error', onStreamError);
+      res.on('close', () => { try { rawStream.destroy(); gz.destroy(); } catch (_) {} });
       rawStream.pipe(gz).pipe(res);
     } else {
       headers['Accept-Ranges'] = 'bytes';
@@ -245,7 +385,8 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       res.writeHead(200, headers);
       if (isHead) { res.end(); return; }
       const stream = fs.createReadStream(full);
-      stream.on('error', () => { if (!res.headersSent) res.destroy(); });
+      stream.on('error', () => { stream.destroy(); res.destroy(); });
+      res.on('close', () => { try { stream.destroy(); } catch (_) {} });
       stream.pipe(res);
     }
   });
@@ -260,7 +401,7 @@ function readAdminState(){
 function sendJson(req, res, status, value, isHead = false, extraHeaders = {}){
   const body = JSON.stringify(value);
   const acceptEncoding = req && req.headers ? (req.headers['accept-encoding'] || '') : '';
-  const canGzip = acceptEncoding.includes('gzip');
+  const canGzip = !isHead && acceptEncoding.includes('gzip');
 
   const headers = {
     'Content-Type':'application/json; charset=utf-8',
@@ -273,12 +414,14 @@ function sendJson(req, res, status, value, isHead = false, extraHeaders = {}){
 
   if (canGzip) {
     const buf = Buffer.from(body);
-    const gzipped = zlib.gzipSync(buf, { level: 6 });
-    headers['Content-Encoding'] = 'gzip';
-    headers['Content-Length'] = gzipped.length;
-    res.writeHead(status, headers);
-    if (isHead) { res.end(); return; }
-    res.end(gzipped);
+    zlib.gzip(buf, { level: 6 }, (err, gzipped) => {
+      if (res.destroyed || res.writableEnded) return;
+      if (!err) headers['Content-Encoding'] = 'gzip';
+      const payload = err ? buf : gzipped;
+      headers['Content-Length'] = payload.length;
+      res.writeHead(status, headers);
+      res.end(payload);
+    });
   } else {
     headers['Content-Length'] = Buffer.byteLength(body);
     res.writeHead(status, headers);
@@ -299,30 +442,29 @@ function fetchMonaEmbedHtml(videoLink, originUrl, maxRedirects = 5) {
     if (redirectsLeft <= 0) {
       return Promise.reject(new Error('Quá nhiều lần redirect khi nạp video Mona Cloud'));
     }
-    return new Promise((resolve, reject) => {
-      const client = url.startsWith('http:') ? http : https;
-      const req = client.get(url, {
-        headers: {
-          'Referer': originUrl || 'https://daigiamangdep.com/learn/study/',
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
-          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-          'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8'
+    return fetch(url, {
+      redirect: 'manual',
+      signal: AbortSignal.timeout(5000),
+      headers: {
+        'Referer': originUrl || 'https://daigiamangdep.com/learn/study/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8'
+      }
+    }).then((res) => {
+      if (res.status >= 300 && res.status < 400 && res.headers.get('location')) {
+        const nextUrl = new URL(res.headers.get('location'), url).toString();
+        return get(nextUrl, redirectsLeft - 1);
+      }
+      if (res.status !== 200) {
+        throw new Error(`Mona Cloud phản hồi mã lỗi ${res.status}`);
+      }
+      return res.text().then((html) => {
+        if (!/<(?:!doctype\s+html|html|head|body)\b/i.test(html)) {
+          throw new Error('Mona Cloud returned invalid HTML');
         }
-      }, (res) => {
-        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-          const nextUrl = new URL(res.headers.location, url).toString();
-          get(nextUrl, redirectsLeft - 1).then(resolve).catch(reject);
-          return;
-        }
-        if (res.statusCode !== 200) {
-          reject(new Error(`Mona Cloud phản hồi mã lỗi ${res.statusCode}`));
-          return;
-        }
-        let body = '';
-        res.on('data', (d) => { body += d; });
-        res.on('end', () => resolve(body));
+        return html;
       });
-      req.on('error', reject);
     });
   }
 
@@ -375,7 +517,7 @@ const server = http.createServer(async (req,res)=>{
           delete require.cache[require.resolve('./scripts/kg_auto_sync')];
           delete require.cache[require.resolve('./scripts/build_knowledge_vault_graph')];
           delete require.cache[require.resolve('./scripts/kg_query')];
-          GZIP_CACHE.clear();
+          refreshCachesOnDataSync();
         } catch (_) {}
         const wantRestart = parsedUrl.searchParams.get('restart') === '1';
         const remoteIp = req.socket && req.socket.remoteAddress || '';
@@ -390,7 +532,7 @@ const server = http.createServer(async (req,res)=>{
         const reason = (parsedUrl.searchParams.get('reason') || 'web_ui_manual_sync').trim();
         const full = parsedUrl.searchParams.get('full') === '1';
         const result = kgSync.triggerSyncNow(reason, full);
-        GZIP_CACHE.clear();
+        refreshCachesOnDataSync();
         sendJson(req, res, 200, result, false);
         return;
       }
@@ -454,6 +596,37 @@ const server = http.createServer(async (req,res)=>{
     sendJson(req, res, 405, {error:'Admin state writes are disabled', readable:true, writable:false}, false, {'Allow': 'GET, HEAD, OPTIONS'});
     return;
   }
+  if (apiPath === '/api/overview-summary') {
+    if (req.method === 'GET' || isHead) {
+      try {
+        sendJson(req, res, 200, hotStore.getOverviewSummary(), isHead);
+      } catch (err) {
+        sendJson(req, res, 500, { error: err.message }, isHead);
+      }
+      return;
+    }
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    return;
+  }
+  if (apiPath === '/api/player/bootstrap') {
+    if (req.method === 'GET' || isHead) {
+      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const sku = (parsedUrl.searchParams.get('sku') || '').trim();
+      if (!sku) {
+        sendJson(req, res, 400, { error: 'Missing sku parameter' }, isHead);
+        return;
+      }
+      const bootstrap = hotStore.getPlayerBootstrap(sku);
+      if (!bootstrap) {
+        sendJson(req, res, 404, { error: 'SKU not found', sku }, isHead);
+        return;
+      }
+      sendJson(req, res, 200, bootstrap, isHead);
+      return;
+    }
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    return;
+  }
   if (apiPath === '/api/dgmd-embed') {
     if (req.method === 'GET' || isHead) {
       const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
@@ -464,14 +637,7 @@ const server = http.createServer(async (req,res)=>{
         return;
       }
       try {
-        const catPath = path.join(ROOT, 'data', 'catalog_dgmd.json');
-        if (!fs.existsSync(catPath)) {
-          res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-          res.end(isHead ? undefined : 'DGMD catalog not found');
-          return;
-        }
-        const dgmdList = JSON.parse(fs.readFileSync(catPath, 'utf8'));
-        const item = dgmdList.find(x => (x.sku || '').toLowerCase() === sku.toLowerCase());
+        const item = hotStore.getDgmdItemBySku(sku);
         if (!item || !item.file) {
           res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
           res.end(isHead ? undefined : 'Video not found in DGMD catalog');
@@ -479,29 +645,30 @@ const server = http.createServer(async (req,res)=>{
         }
 
         const now = Date.now();
-        const cached = DGMD_EMBED_CACHE.get(item.sku);
+        const cacheKey = 'embed:' + item.sku.toUpperCase();
+        const cached = DGMD_EMBED_CACHE.get(cacheKey);
         if (cached && (now - cached.ts < 10 * 60 * 1000)) {
-          res.writeHead(200, {
+          res.writeHead(200, withSecure({
             'Content-Type': 'text/html; charset=utf-8',
             'Cache-Control': 'no-cache',
             'X-Frame-Options': 'SAMEORIGIN'
-          });
+          }));
           res.end(isHead ? undefined : cached.html);
           return;
         }
 
         const html = await fetchMonaEmbedHtml(item.file, item.origin);
-        DGMD_EMBED_CACHE.set(item.sku, { html, ts: now });
+        DGMD_EMBED_CACHE.set(cacheKey, { html, ts: now });
 
-        res.writeHead(200, {
+        res.writeHead(200, withSecure({
           'Content-Type': 'text/html; charset=utf-8',
           'Cache-Control': 'no-cache',
           'X-Frame-Options': 'SAMEORIGIN'
-        });
+        }));
         res.end(isHead ? undefined : html);
         return;
       } catch (err) {
-        res.writeHead(502, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.writeHead(502, withSecure({ 'Content-Type': 'text/plain; charset=utf-8' }));
         res.end(isHead ? undefined : `Proxy error: ${err.message}`);
         return;
       }
@@ -511,6 +678,13 @@ const server = http.createServer(async (req,res)=>{
   }
   if (apiPath === '/api/intelligence/breakouts') {
     if (req.method === 'GET' || isHead) {
+      try {
+        const kgQuery = require('./scripts/kg_query');
+        if (typeof kgQuery.queryIntelligenceBreakouts === 'function') {
+          sendJson(req, res, 200, kgQuery.queryIntelligenceBreakouts(30), isHead);
+          return;
+        }
+      } catch (_) {}
       const dbFile = path.join(ROOT, 'data', 'intelligence.db');
       if (!fs.existsSync(dbFile)) {
         sendJson(req, res, 200, { total: 0, channels: [] }, isHead);
@@ -596,11 +770,7 @@ const server = http.createServer(async (req,res)=>{
             const ph = ids.map(() => '?').join(',');
             const ccs = query(`SELECT channel_id, raw_id, handle FROM competitor_channels WHERE channel_id IN (${ph})`, ids);
             const byId = new Map(ccs.map(c => [String(c.channel_id), c]));
-            let kenhHandles = new Set();
-            try {
-              const kenhRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'kenh-mau.json'), 'utf8'));
-              kenhHandles = new Set((Array.isArray(kenhRaw) ? kenhRaw : []).map(k => String(k && k.handle || '').toLowerCase()).filter(Boolean));
-            } catch (e) { kenhHandles = new Set(); }
+            const kenhHandles = hotStore.getKenhHandleSet();
             for (const r of channelRows) {
               const c = byId.get(String(r.entity_id)) || {};
               r.raw_id = c.raw_id || '';
@@ -636,11 +806,7 @@ const server = http.createServer(async (req,res)=>{
               const docRows = query(`SELECT doc_id, name FROM documents WHERE doc_id IN (${ph})`, docIds);
               byDocId = new Map(docRows.map(d => [Number(d.doc_id), d]));
             }
-            let jsonList = null;
-            try {
-              const tlRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'tai-lieu-full.json'), 'utf8'));
-              jsonList = Array.isArray(tlRaw) ? tlRaw : null;
-            } catch (e) { jsonList = null; }
+            const { list: jsonList, byNameMap } = hotStore.getTaiLieuIndexMap();
             for (const r of sopRows) {
               const n = Number(String(r.entity_id).replace(/^DOC_/, ''));
               const d = byDocId.get(n);
@@ -651,6 +817,7 @@ const server = http.createServer(async (req,res)=>{
               if (jsonList && d) {
                 const cand = jsonList[n - 1];
                 if (cand && String(cand.name) === String(d.name)) ji = n - 1;
+                else if (byNameMap && byNameMap.has(String(d.name))) ji = byNameMap.get(String(d.name));
                 else ji = jsonList.findIndex(x => x && String(x.name) === String(d.name));
               }
               r.doc_index = ji;
@@ -675,47 +842,65 @@ const server = http.createServer(async (req,res)=>{
     sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
-  if (apiPath.startsWith('/live/') || apiPath === '/api/dgmd-embed') {
+  if (apiPath.startsWith('/live/')) {
     if (req.method === 'GET' || isHead) {
-      let sku = '';
-      if (apiPath.startsWith('/live/')) {
-        sku = apiPath.replace('/live/', '').trim();
-      } else {
-        try {
-          const parsedUrl = new URL(req.url, 'http://127.0.0.1:8899');
-          sku = (parsedUrl.searchParams.get('sku') || '').trim();
-        } catch (e) {}
-      }
+      const sku = apiPath.replace('/live/', '').trim();
       if (/^VIDEO-[A-Za-z0-9]+$/i.test(sku)) {
         try {
+          const cacheKey = 'live:' + sku.toUpperCase();
+          const now = Date.now();
+          const cached = DGMD_EMBED_CACHE.get(cacheKey);
+          if (cached && (now - cached.ts < 10 * 60 * 1000)) {
+            res.writeHead(200, withSecure({
+              'Content-Type': 'text/html; charset=utf-8',
+              'Access-Control-Allow-Origin': '*',
+              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Content-Security-Policy': LIVE_EMBED_CSP
+            }));
+            res.end(isHead ? undefined : cached.html);
+            return;
+          }
+
           const { getLivePlayerUrl } = require('./scripts/live_player_resolver');
           const liveInfo = await getLivePlayerUrl(sku);
           const liveUrl = (typeof liveInfo === 'object' && liveInfo) ? liveInfo.url : liveInfo;
           const ref = (typeof liveInfo === 'object' && liveInfo) ? liveInfo.referer : 'https://h2dev.vn/';
           if (liveUrl) {
             const monaRes = await fetch(liveUrl, {
+              signal: AbortSignal.timeout(5000),
               headers: {
                 'User-Agent': req.headers['user-agent'] || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131',
                 'Referer': ref
               }
             });
+            if (monaRes.status !== 200) throw new Error(`Mona Cloud response ${monaRes.status}`);
             let html = await monaRes.text();
-            html = html.replace('<head>', '<head><base href="https://video.mona-cloud.com/">');
-            res.writeHead(200, {
+            if (!/<(?:!doctype\s+html|html|head|body)\b/i.test(html)) {
+              throw new Error('Mona Cloud returned invalid HTML');
+            }
+            const liveInjection = '<base href="https://video.mona-cloud.com/"><meta name="referrer" content="no-referrer">';
+            if (html.includes('<head>')) {
+              html = html.replace('<head>', '<head>' + liveInjection);
+            } else {
+              html = liveInjection + html;
+            }
+            DGMD_EMBED_CACHE.set(cacheKey, { html, ts: now });
+            res.writeHead(200, withSecure({
               'Content-Type': 'text/html; charset=utf-8',
               'Access-Control-Allow-Origin': '*',
-              'Cache-Control': 'no-cache, no-store, must-revalidate'
-            });
-            res.end(html);
+              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Content-Security-Policy': LIVE_EMBED_CSP
+            }));
+            res.end(isHead ? undefined : html);
             return;
           } else {
             res.writeHead(404, withSecure({ 'Content-Type': 'text/plain; charset=utf-8' }));
-            res.end(`Không tìm thấy luồng phát trực tiếp cho SKU ${sku}`);
+            res.end(isHead ? undefined : `Không tìm thấy luồng phát trực tiếp cho SKU ${sku}`);
             return;
           }
         } catch (err) {
           res.writeHead(502, withSecure({ 'Content-Type': 'text/plain; charset=utf-8' }));
-          res.end(`Lỗi kết nối máy chủ nguồn: ${err.message}`);
+          res.end(isHead ? undefined : `Lỗi kết nối máy chủ nguồn: ${err.message}`);
           return;
         }
       }
@@ -780,30 +965,8 @@ const server = http.createServer(async (req,res)=>{
     const match = urlPath.match(/^\/lotrinh(?:\/(.*))?$/i);
     const sku = match && match[1] ? match[1].replace(/\/+$/, '') : '';
     if (sku) {
-      // --- 1.3. Validate SKU: chi cho phep SKU co that trong catalog ---
-      // Nguon su that: data/catalog.json (140 bai) + data-tabs/videos.json (bai hoc + Zoom)
-      let isValidSku = false;
-      try {
-        const catalogPath = path.join(ROOT, 'data', 'catalog.json');
-        const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
-        const list = Array.isArray(catalog) ? catalog : (catalog.videos || []);
-        const decoded = decodeURIComponent(sku).toLowerCase();
-        isValidSku = list.some(v => String(v && v.sku || '').toLowerCase() === decoded);
-        if (!isValidSku) {
-          const dgmdCatalogPath = path.join(ROOT, 'data', 'catalog_dgmd.json');
-          if (fs.existsSync(dgmdCatalogPath)) {
-            const dgmdCatalog = JSON.parse(fs.readFileSync(dgmdCatalogPath, 'utf8'));
-            isValidSku = dgmdCatalog.some(v => String(v && v.sku || '').toLowerCase() === decoded);
-          }
-        }
-        if (!isValidSku) {
-          const huanCatalogPath = path.join(ROOT, 'data', 'catalog_huan.json');
-          if (fs.existsSync(huanCatalogPath)) {
-            const huanCatalog = JSON.parse(fs.readFileSync(huanCatalogPath, 'utf8'));
-            isValidSku = huanCatalog.some(v => String(v && v.sku || '').toLowerCase() === decoded);
-          }
-        }
-      } catch (e) { isValidSku = false; }
+      // --- 1.3. Validate SKU: chi cho phep SKU co that trong catalog (O(1) RAM lookup) ---
+      const isValidSku = hotStore.isValidSku(sku);
       if (!isValidSku) {
         res.writeHead(404, withSecure({ 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' }));
         res.end('<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><title>404 — Không tìm thấy bài học</title>'
@@ -853,88 +1016,7 @@ const server = http.createServer(async (req,res)=>{
   if (apiPath === '/api/niche-radar') {
     if (req.method === 'GET' || isHead) {
       try {
-        const nxPath = path.join(ROOT, 'data-tabs', 'ngach-xanh.json');
-        const nxRaw = JSON.parse(fs.readFileSync(nxPath, 'utf8'));
-        const list = Array.isArray(nxRaw) ? nxRaw : (nxRaw.ngachXanh || []);
-        const items = list.map((n) => {
-          const clean = (n.mauSach || []).length;
-          const ban = (n.mauBan || []).length;
-          const skus = (n.skus || []).length;
-          const hang = Number(n.hang) || 9;
-          const rpmRaw = String(n.rpm || '');
-          const rpmNum = parseFloat((rpmRaw.match(/[0-9]+(?:\.[0-9]+)?/) || [])[0] || '0');
-          // SAI = Search Acquisition Index (demand / discoverability)
-          let sai = 20;
-          if (rpmNum > 0) sai += Math.min(30, rpmNum * 3);
-          if (/\d+[.,]?\d*\s*K|\d+[.,]?\d*\s*M|keyword/i.test(n.evidence || '')) sai += 25;
-          if (hang <= 2) sai += 15; else if (hang <= 5) sai += 8;
-          if (n.xanh === true) sai += 10;
-          sai = Math.max(0, Math.min(100, Math.round(sai)));
-          // PRI = Production Readiness Index
-          let pri = 10;
-          pri += Math.min(30, clean * 8);
-          pri += Math.min(20, skus * 10);
-          /* FIX (uifix87) — truoc day: `if (n.lamDuoc && /C?/i.test(n.lamDuoc)) pri += 20;`
-             Regex /C?/ bi hong UTF-8 (ky tu "Ó" thanh "?"), "C?" = "khong bat buoc co C"
-             => LUON true => ca 34/34 ngach deu duoc +20 vo dieu kien, PRI mat y nghia.
-             Gia tri that trong data-tabs/ngach-xanh.json bat dau bang:
-               "CÓ — ..."     : lam duoc ngay            -> +20
-               "CÓ ĐK — ..."  : lam duoc CO DIEU KIEN    -> +10
-               "CÓ KỸ THUẬT ...", "KHÓ ...", "KHÔNG ...", "CHƯA ĐỦ ...", "TÁCH: ..." -> 0
-             Vi sao "CÓ ĐK" = +10 (nua muc): van san xuat duoc nhung phai giu rang buoc
-             (vd. "KHONG gia bac si", "KHONG farm quote") va chua co mau noi dung day du
-             => rui ro cao hon "CÓ" thuan. Dung escape Unicode (\u00d3 = Ó, \u0110 = Đ,
-             \u1ef8 = Ỹ) de regex khong hong lai khi encoding file doi. */
-          const lamDuocRaw = String(n.lamDuoc || '').trim();
-          const lamDuocCoDieuKien = /^C\u00d3\s*\u0110K\b/i.test(lamDuocRaw);
-          const lamDuocThuan = !lamDuocCoDieuKien && /^C\u00d3(?!\s*K\u1ef8)/i.test(lamDuocRaw);
-          if (lamDuocThuan) pri += 20;
-          else if (lamDuocCoDieuKien) pri += 10;
-          if (n.mauSach && n.mauSach.length) pri += 10;
-          if (ban === 0) pri += 10;
-          if (n.xanh === true) pri += 10;
-          pri = Math.max(0, Math.min(100, Math.round(pri)));
-          /* FIX (uifix87) — truoc day: `const comp = Number(n.canhTranh) || 50;`
-             n.canhTranh la VAN BAN do thi (vd. "bible explained 18/08: overall 75.6 · volume 89.8
-             · competition 13.3 — THẤP") => Number() = NaN => ca 34/34 ngach roi ve 50 (mac dinh
-             ma khong ai biet). Nay trich so sau chu "competition" bang DUNG logic frontend
-             assets/app/tabs/content.js#nxCompShort (/competition\s*[:=]?\s*(\d+...)/gi, lay lan
-             xuat hien CUOI cung). Khong co so => 50 + compSource='default' de con truy vet. */
-          const compText = String(n.canhTranh || '');
-          const compMatches = [...compText.matchAll(/competition\s*[:=]?\s*(\d+(?:\.\d+)?)/gi)];
-          const compNum = compMatches.length ? Number(compMatches[compMatches.length - 1][1]) : NaN;
-          const compMeasured = Number.isFinite(compNum);
-          const comp = compMeasured ? Math.max(0, Math.min(100, compNum)) : 50;
-          // BOI-like: green ocean = high SAI, mid/low competition proxy
-          const boi = Math.max(0, Math.min(100, Math.round((sai * 0.55) + (pri * 0.25) + ((100 - comp) * 0.2))));
-          return {
-            ngach: n.ngach,
-            xanh: n.xanh,
-            hang: n.hang,
-            rpm: n.rpm,
-            thiTruong: n.thiTruong,
-            SAI: sai,
-            PRI: pri,
-            BOI: boi,
-            comp: comp,
-            compSource: compMeasured ? 'measured' : 'default',
-            lamDuocTier: lamDuocThuan ? 'CO' : (lamDuocCoDieuKien ? 'CO_DK' : 'KHAC'),
-            cleanSamples: clean,
-            banSamples: ban,
-            skus: skus,
-            nenLam: !!n.nenLam
-          };
-        }).sort((a, b) => (b.BOI - a.BOI) || (b.SAI - a.SAI));
-        sendJson(req, res, 200, {
-          schema: 'h2dev.niche-radar.v1',
-          metrics: {
-            SAI: 'Search Acquisition Index 0-100 ? demand/discoverability (rpm, keyword evidence, hang, xanh)',
-            PRI: 'Production Readiness Index 0-100 ? mauSach/skus/lamDuoc/clean samples',
-            BOI: 'Blue Ocean composite = 0.55*SAI + 0.25*PRI + 0.20*(100-comp)'
-          },
-          total: items.length,
-          items
-        }, isHead);
+        sendJson(req, res, 200, hotStore.getNicheRadarResponse(), isHead);
       } catch (e) {
         sendJson(req, res, 500, { error: String(e.message || e) }, isHead);
       }
@@ -1003,7 +1085,7 @@ const server = http.createServer(async (req,res)=>{
    * Ghi chu: '/design-system/' la TAI LIEU CHUAN duoc phep phuc vu (da verify 200 OK).
    */
   const firstSeg = relSegs[0] ? relSegs[0].toLowerCase() : '';
-  if (firstSeg === 'scripts' && !apiPath.startsWith('/api/')) {
+  if (firstSeg === 'scripts') {
     res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'X-Content-Type-Options':'nosniff'}));
     res.end('404 Not Found');
     return;
@@ -1041,7 +1123,7 @@ server.listen(PORT, HOST, ()=>{
   console.log('Root: '+ROOT);
   checkAndRotateAll();
   startAutoSyncWatcher(() => {
-    GZIP_CACHE.clear();
+    refreshCachesOnDataSync();
   });
 });
 

@@ -1,12 +1,12 @@
 ---
 handle: "@JaebeolNunmul16"
-name: "@JaebeolNunmul16"
+name: "재벌가의 눈물"
 url: "https://www.youtube.com/@JaebeolNunmul16"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @JaebeolNunmul16 (@JaebeolNunmul16)
+# Kênh Đối Thủ / Kênh Mẫu: @JaebeolNunmul16 (재벌가의 눈물)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@JaebeolNunmul16](https://www.youtube.com/@JaebeolNunmul16)

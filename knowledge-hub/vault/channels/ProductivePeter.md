@@ -11,8 +11,8 @@ videos_count: 1
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ProductivePeter](https://www.youtube.com/@ProductivePeter)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
-- **Ngách (kenh-mau.json):** `Đa ngách`
-- **Thị trường:** `Toàn cầu`
+- **Ngách (kenh-mau.json):** `Học Tiếng Anh Thụ Động / Comprehensible Input & Hội thoại Đời sống 2 Tốc độ`
+- **Thị trường:** `🇯🇵 Nhật`
 
 ## Các Video Bài Giảng Phân Tích Kênh Này (1)
 - [[videos/VIDEO-a9a03e|VIDEO-a9a03e — 10. SOP PHIM HOẠT HÌNH]] (`HUAN`)

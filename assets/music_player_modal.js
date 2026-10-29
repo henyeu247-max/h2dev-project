@@ -4,10 +4,21 @@
   let currentFilter = 'all';
   let searchQuery = '';
 
+  // Audio Singleton: chống phát chồng nhiều bài nhạc trong modal hoặc ngoài trang
+  document.addEventListener('play', (e) => {
+    const target = e.target;
+    if (!target || target.tagName !== 'AUDIO') return;
+    document.querySelectorAll('audio').forEach((audioEl) => {
+      if (audioEl !== target && !audioEl.paused) {
+        try { audioEl.pause(); } catch (_) {}
+      }
+    });
+  }, true);
+
   async function loadMusicCatalog() {
     if (musicData) return musicData;
     try {
-      const res = await fetch('data/music_catalog.json?v=20260922-g2');
+      const res = await fetch('data/music_catalog.json?v=20261029-uifix89');
       musicData = await res.json();
       return musicData;
     } catch (e) {

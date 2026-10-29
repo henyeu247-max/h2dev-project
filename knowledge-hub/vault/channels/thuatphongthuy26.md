@@ -1,12 +1,12 @@
 ---
 handle: "@thuatphongthuy26"
-name: "@thuatphongthuy26"
+name: "Thuật Phong Thủy Audio"
 url: "https://www.youtube.com/@thuatphongthuy26"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @thuatphongthuy26 (@thuatphongthuy26)
+# Kênh Đối Thủ / Kênh Mẫu: @thuatphongthuy26 (Thuật Phong Thủy Audio)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@thuatphongthuy26](https://www.youtube.com/@thuatphongthuy26)

@@ -1,12 +1,12 @@
 ---
 handle: "@실버라디오-z4u"
-name: "@실버라디오-z4u"
+name: "실버라디오_노후지혜"
 url: "https://www.youtube.com/@실버라디오-z4u"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @실버라디오-z4u (@실버라디오-z4u)
+# Kênh Đối Thủ / Kênh Mẫu: @실버라디오-z4u (실버라디오_노후지혜)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@실버라디오-z4u](https://www.youtube.com/@실버라디오-z4u)

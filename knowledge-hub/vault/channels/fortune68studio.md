@@ -1,12 +1,12 @@
 ---
 handle: "@fortune68studio"
-name: "@fortune68studio"
+name: "易經開運堂"
 url: "https://www.youtube.com/@fortune68studio"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @fortune68studio (@fortune68studio)
+# Kênh Đối Thủ / Kênh Mẫu: @fortune68studio (易經開運堂)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@fortune68studio](https://www.youtube.com/@fortune68studio)

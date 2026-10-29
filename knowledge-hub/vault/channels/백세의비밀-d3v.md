@@ -1,12 +1,12 @@
 ---
 handle: "@백세의비밀-d3v"
-name: "@백세의비밀-d3v"
+name: "백세의 비밀"
 url: "https://www.youtube.com/@백세의비밀-d3v"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @백세의비밀-d3v (@백세의비밀-d3v)
+# Kênh Đối Thủ / Kênh Mẫu: @백세의비밀-d3v (백세의 비밀)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@백세의비밀-d3v](https://www.youtube.com/@백세의비밀-d3v)

@@ -16,6 +16,9 @@ function skuOf(s) { return typeof s === 'string' ? s : (s && s.sku); }
 
 // ===== 1. NẠP DỮ LIỆU =====
 const videos = readJson('data-tabs/videos.json') || [];
+const videosHuan = readJson('data/videos_huan.json') || [];
+const videosDgmd = readJson('data/videos_dgmd.json') || [];
+const allVideos = [...videos, ...videosHuan, ...videosDgmd];
 const channels = readJson('data-tabs/kenh-mau.json') || [];
 const ngach = readJson('data-tabs/ngach-xanh.json') || {};
 const taiLieu = readJson('data-tabs/tai-lieu-full.json') || [];
@@ -26,6 +29,9 @@ const catalogFull = readJson('data/catalog_full.json') || [];
 const chienLuoc = readJson('data-tabs/chien-luoc.json') || {};
 
 stats.videos = videos.length;
+stats.videosHuan = videosHuan.length;
+stats.videosDgmd = videosDgmd.length;
+stats.totalSystemVideos = allVideos.length;
 stats.channels = channels.length;
 stats.taiLieu = taiLieu.length;
 stats.kichBan = kichBan.length;
@@ -76,17 +82,18 @@ stats.ngachXanhTrue = xanhTrue.length;
 stats.ngachXanhString = xanhStr.length;
 stats.ngachXanhNull = xanhNull.length;
 
-// sku lạ (không tồn tại trong videos)
-const orphNgach = [...ngachSkuSet].filter(s => !vidSkuSet.has(s));
-const orphMeta = [...metaSkuSet].filter(s => !vidSkuSet.has(s));
+// sku lạ (không tồn tại trong 3 nhánh videos: H2DEV + Huân + DGMD)
+const allVidSkuSet = new Set(allVideos.map(v => v.sku));
+const orphNgach = [...ngachSkuSet].filter(s => !allVidSkuSet.has(s));
+const orphMeta = [...metaSkuSet].filter(s => !allVidSkuSet.has(s));
 if (orphNgach.length) issues.push(`ngachXanh sku không tồn tại: ${orphNgach.join(', ')}`);
 if (orphMeta.length) issues.push(`ngachMetaKho sku không tồn tại: ${orphMeta.join(', ')}`);
 
-// video nào không nằm trong ngach nào
+// video nào không nằm trong ngach nào (trên toàn bộ 333 bài học 3 nhánh)
 const covered = new Set([...ngachSkuSet]);
-const notInNgach = [...vidSkuSet].filter(s => !covered.has(s));
+const notInNgach = [...allVidSkuSet].filter(s => !covered.has(s));
 stats.notInNgach = notInNgach.length;
-const notInAnything = [...vidSkuSet].filter(s => !ngachSkuSet.has(s) && !metaSkuSet.has(s));
+const notInAnything = [...allVidSkuSet].filter(s => !ngachSkuSet.has(s) && !metaSkuSet.has(s));
 stats.notInAnything = notInAnything.length;
 if (notInAnything.length) issues.push(`Video không nằm trong ngachXanh lẫn meta: ${notInAnything.join(', ')}`);
 
@@ -122,11 +129,21 @@ for (const t of taiLieu) {
 }
 stats.tlNiche = tlNiche;
 stats.tlKind = tlKind;
-// file tồn tại?
+// file tồn tại? (cả trong tai-lieu-full.json lẫn docs[] của 333 videos 3 nhánh)
 const missingFile = [];
 for (const t of taiLieu) {
-  const f = t.fileLocal || t.file;
-  if (f && !/^https?:/.test(f) && !fs.existsSync(path.join(ROOT, f))) missingFile.push(`${t.sku}: ${f}`);
+  for (const fk of ['file', 'fileLocal', 'path']) {
+    const f = t[fk];
+    if (f && !/^https?:/.test(f) && !fs.existsSync(path.join(ROOT, f))) missingFile.push(`taiLieu ${t.sku} (${fk}): ${f}`);
+  }
+}
+for (const v of allVideos) {
+  for (const d of (v.docs || [])) {
+    for (const fk of ['file', 'fileLocal', 'path']) {
+      const f = d && d[fk];
+      if (f && !/^https?:/.test(f) && !fs.existsSync(path.join(ROOT, f))) missingFile.push(`videoDoc ${v.sku} (${fk}): ${f}`);
+    }
+  }
 }
 stats.missingFile = missingFile.length;
 if (missingFile.length) issues.push(`Tài liệu thiếu file local (${missingFile.length}): ${missingFile.slice(0, 10).join(' | ')}`);

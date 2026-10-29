@@ -1,12 +1,12 @@
 ---
 handle: "@AnNhienChuyenDoiBinhDi"
-name: "@AnNhienChuyenDoiBinhDi"
+name: "An Nhiên Chuyện Đời Bình Dị"
 url: "https://www.youtube.com/@AnNhienChuyenDoiBinhDi"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @AnNhienChuyenDoiBinhDi (@AnNhienChuyenDoiBinhDi)
+# Kênh Đối Thủ / Kênh Mẫu: @AnNhienChuyenDoiBinhDi (An Nhiên Chuyện Đời Bình Dị)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@AnNhienChuyenDoiBinhDi](https://www.youtube.com/@AnNhienChuyenDoiBinhDi)

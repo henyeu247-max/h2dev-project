@@ -1,12 +1,12 @@
 ---
 handle: "@Socnaureview2026"
-name: "@Socnaureview2026"
+name: "Sóc Nâu Review"
 url: "https://www.youtube.com/@Socnaureview2026"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Socnaureview2026 (@Socnaureview2026)
+# Kênh Đối Thủ / Kênh Mẫu: @Socnaureview2026 (Sóc Nâu Review)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Socnaureview2026](https://www.youtube.com/@Socnaureview2026)

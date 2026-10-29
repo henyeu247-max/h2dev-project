@@ -11,8 +11,8 @@ videos_count: 1
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@mrnightmare](https://www.youtube.com/@mrnightmare)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
-- **Ngách (kenh-mau.json):** `Đa ngách`
-- **Thị trường:** `Toàn cầu`
+- **Ngách (kenh-mau.json):** `Drama / kaidan Nhật`
+- **Thị trường:** `🇯🇵 Nhật`
 
 ## Các Video Bài Giảng Phân Tích Kênh Này (1)
 - [[videos/VIDEO-2772a7|VIDEO-2772a7 — 16 Concept Youtube Triệu View Bất Biến]] (`HUAN`)

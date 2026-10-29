@@ -1,12 +1,12 @@
 ---
 handle: "@thehealthcode-12"
-name: "@thehealthcode-12"
+name: "The Health Code"
 url: "https://www.youtube.com/@thehealthcode-12"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @thehealthcode-12 (@thehealthcode-12)
+# Kênh Đối Thủ / Kênh Mẫu: @thehealthcode-12 (The Health Code)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@thehealthcode-12](https://www.youtube.com/@thehealthcode-12)

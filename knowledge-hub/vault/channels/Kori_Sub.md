@@ -1,12 +1,12 @@
 ---
 handle: "@Kori_Sub"
-name: "@Kori_Sub"
+name: "Kori Sub"
 url: "https://www.youtube.com/@Kori_Sub"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Kori_Sub (@Kori_Sub)
+# Kênh Đối Thủ / Kênh Mẫu: @Kori_Sub (Kori Sub)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Kori_Sub](https://www.youtube.com/@Kori_Sub)

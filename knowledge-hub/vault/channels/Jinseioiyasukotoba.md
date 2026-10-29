@@ -1,12 +1,12 @@
 ---
 handle: "@Jinseioiyasukotoba"
-name: "@Jinseioiyasukotoba"
+name: "人生を癒す言葉"
 url: "https://www.youtube.com/@Jinseioiyasukotoba"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Jinseioiyasukotoba (@Jinseioiyasukotoba)
+# Kênh Đối Thủ / Kênh Mẫu: @Jinseioiyasukotoba (人生を癒す言葉)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Jinseioiyasukotoba](https://www.youtube.com/@Jinseioiyasukotoba)

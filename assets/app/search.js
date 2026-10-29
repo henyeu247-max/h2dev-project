@@ -36,11 +36,11 @@
         });
       })
       .then(function (out) {
-        inflight = null;
+        if (inflight === ctrl) inflight = null;
         return out;
       })
       .catch(function (err) {
-        inflight = null;
+        if (inflight === ctrl) inflight = null;
         if (err && err.h2SearchServiceError) throw err;
         return { rows: [], warning: "" };
       });

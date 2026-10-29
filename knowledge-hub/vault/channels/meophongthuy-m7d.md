@@ -1,12 +1,12 @@
 ---
 handle: "@meophongthuy-m7d"
-name: "@meophongthuy-m7d"
+name: "Mẹo Phong Thủy"
 url: "https://www.youtube.com/@meophongthuy-m7d"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @meophongthuy-m7d (@meophongthuy-m7d)
+# Kênh Đối Thủ / Kênh Mẫu: @meophongthuy-m7d (Mẹo Phong Thủy)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@meophongthuy-m7d](https://www.youtube.com/@meophongthuy-m7d)

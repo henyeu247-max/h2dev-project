@@ -55,7 +55,7 @@ player_url: "/player.html?sku=VIDEO-21956b&track=h2dev"
 - [[channels/노후의삶-s1s|@노후의삶-s1s]]
 - [[channels/songkhoekhivegia|@songkhoekhivegia]]
 - [[channels/Jinseioiyasukotoba|@Jinseioiyasukotoba]]
-- [[channels/Songkhoetungngay365|@Songkhoetungngay365]]
+- [[channels/Songkhoetungngay365|@Songkhoetungngay365]] *(DIE)*
 - [[channels/늦기전에알아야할것|@늦기전에알아야할것]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)

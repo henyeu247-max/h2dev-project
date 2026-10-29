@@ -1,12 +1,12 @@
 ---
 handle: "@1-ji2mx"
-name: "@1-ji2mx"
+name: "令和長寿チャンネル"
 url: "https://www.youtube.com/@1-ji2mx"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @1-ji2mx (@1-ji2mx)
+# Kênh Đối Thủ / Kênh Mẫu: @1-ji2mx (令和長寿チャンネル)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@1-ji2mx](https://www.youtube.com/@1-ji2mx)

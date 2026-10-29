@@ -1,12 +1,12 @@
 ---
 handle: "@quietstrength88"
-name: "@quietstrength88"
+name: "静かな力"
 url: "https://www.youtube.com/@quietstrength88"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @quietstrength88 (@quietstrength88)
+# Kênh Đối Thủ / Kênh Mẫu: @quietstrength88 (静かな力)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@quietstrength88](https://www.youtube.com/@quietstrength88)

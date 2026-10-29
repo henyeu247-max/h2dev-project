@@ -1,12 +1,12 @@
 ---
 handle: "@ApocalypseSurvivorsHQ"
-name: "@ApocalypseSurvivorsHQ"
+name: "Apocalypse Survivors HQ"
 url: "https://www.youtube.com/@ApocalypseSurvivorsHQ"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ApocalypseSurvivorsHQ (@ApocalypseSurvivorsHQ)
+# Kênh Đối Thủ / Kênh Mẫu: @ApocalypseSurvivorsHQ (Apocalypse Survivors HQ)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ApocalypseSurvivorsHQ](https://www.youtube.com/@ApocalypseSurvivorsHQ)

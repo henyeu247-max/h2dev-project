@@ -1,12 +1,12 @@
 ---
 handle: "@PodcastGanThan"
-name: "@PodcastGanThan"
+name: "Podcast Gan Thận"
 url: "https://www.youtube.com/@PodcastGanThan"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PodcastGanThan (@PodcastGanThan)
+# Kênh Đối Thủ / Kênh Mẫu: @PodcastGanThan (Podcast Gan Thận)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PodcastGanThan](https://www.youtube.com/@PodcastGanThan)

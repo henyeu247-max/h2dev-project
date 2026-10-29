@@ -77,12 +77,18 @@ function computeCounts() {
   const channels = readJson('data-tabs/kenh-mau.json');
   const kichBan = readJson('data-tabs/kich-ban.json');
   const nguonReup = readJson('data-tabs/nguon-reup.json');
+  const chienLuoc = readJson('data-tabs/chien-luoc.json') || {};
   const ngachXanh = readJson('data-tabs/ngach-xanh.json') || {};
   const rawCanonical = readJson('data-tabs/raw-kenh-mau.json') || {};
 
   const channelList = Array.isArray(channels) ? channels : [];
   const deadChannels = channelList.filter(c => c && c.dead === true).length;
+  const deadChannelsGone = channelList.filter(c => c && c.dead === true && c.deadKind === 'gone').length;
+  const deadChannelsEmpty = channelList.filter(c => c && c.dead === true && c.deadKind === 'empty').length;
   const liveChannels = channelList.filter(c => c && c.dead !== true).length;
+
+  const docList = Array.isArray(documents) ? documents : [];
+  const countKind = k => docList.filter(d => d && d.kind === k).length;
 
   const rawRecords = Array.isArray(rawCanonical)
     ? rawCanonical
@@ -97,6 +103,10 @@ function computeCounts() {
   // LUU Y: field `xanh` da kieu (boolean + string). Dem phai dung === true,
   // KHONG dung truthy (chuoi "CHUA DU BANG CHUNG" cung truthy).
   const nichesGreenTrue = nicheList.filter(n => n && n.xanh === true).length;
+  const nichesCoMauTang = nicheList.filter(n => n && n.xanh === 'CÓ MẪU TĂNG').length;
+  const nichesChuaDuBc = nicheList.filter(n => n && n.xanh === 'CHƯA ĐỦ BẰNG CHỨNG').length;
+  const nichesThanTrong = nicheList.filter(n => n && n.xanh === 'THẬN TRỌNG').length;
+  const nichesCoDk = nicheList.filter(n => n && n.xanh === 'CÓ ĐIỀU KIỆN').length;
 
   // Tach bai VIDEO-* va phien ZOOM-* (tong videos = ca hai).
   const videoList = Array.isArray(videos) ? videos : [];
@@ -126,17 +136,35 @@ function computeCounts() {
     videoFree: videoList.filter(v => v && v.free === true).length,
     videoPro: videoList.filter(v => v && v.free === false).length,
     documents: len(documents),
+    docKindPrompt: countKind('prompt'),
+    docKindReport: countKind('report'),
+    docKindTool: countKind('tool'),
+    docKindList: countKind('list'),
+    docKindOther: countKind('other'),
+    docKindInternalDoc: countKind('internal-doc'),
+    docKindSop: countKind('sop'),
+    docKindGuide: countKind('guide'),
+    docKindTranscript: countKind('transcript'),
+    docKindSheet: countKind('sheet'),
+    docKindUncategorized: docList.filter(d => d && !d.kind).length,
     channels: len(channelList),
     liveChannels,
     deadChannels,
+    deadChannelsGone,
+    deadChannelsEmpty,
     // So kenh co ngay do (field `ngay_do` khong rong) - docs "ngay_do N/M" phai dung so nay, khong ep N=M.
     channelsWithNgayDo: channelList.filter(c => c && c.ngay_do).length,
     canonicalRaw: rawRecords.length,
     canonicalRawUniqueChannels: rawUniqueChannels,
     kichBan: len(kichBan),
     nguonReup: len(nguonReup),
+    chienLuocSteps: len(chienLuoc.workflow),
     niches: nicheList.length,
     nichesGreenTrue,
+    nichesCoMauTang,
+    nichesChuaDuBc,
+    nichesThanTrong,
+    nichesCoDk,
     // --- Tai san tren dia (do truc tiep, chong lech docs) ---
     catalogRecords: len(readJson('data/catalog.json')),
     catalogFullRecords: len(readJson('data/catalog_full.json')),

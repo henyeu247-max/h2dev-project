@@ -1,6 +1,6 @@
 # 97yo-dev Project — Hệ Sinh Thái Đào Tạo & Radar Kho YouTube (H2DEV · Huân Academy · DGMD)
 
-> Cập nhật: **2026-10-25**
+> Cập nhật: **2026-10-29**
 
 Web quản lý **toàn bộ** kho học H2DEV (148 bài: 144 video + 4 buổi Zoom) cùng 2 nhánh con Huân Academy (140 bài) và Đại Gia Mang Dép (45 bài) — tổng hợp **333 bài học** trên nền tảng **97yo-dev** (`https://97yo-dev-learn.tonymmo.com`) + tài sản nội bộ đã chuẩn hóa (prompt, báo cáo, pipeline).
 
@@ -25,7 +25,7 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 4. Ngách xanh
 5. Tài liệu — catalog + nội bộ
 6. Nguồn reup
-7. Kênh mẫu — 261
+7. Kênh mẫu — 1082
 8. Raw kênh — 156 record canonical (149 kênh unique · 7 bản ghi trùng)
 9. Chiến lược
 
@@ -42,10 +42,10 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 
 - **148 bài học** · ~89.26 GB (83.13 GiB) · ffprobe **333/333** có hình + audio (0 file 0 byte) · 27 free · 121 pro
 - **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/` và `ZOOM-00` (tài liệu quy trình, không phải bài học)
-- **300 tài liệu**: theo `kind` (đo 2026-10-14) prompt 77 · report 21 · tool 28 · list 14 · other 8 · internal-doc 5 · sop 14 · guide 49 · transcript 40 · sheet 4 · 40 chưa gán `kind` (giao diện tự suy ra loại); gồm cẩm nang nhạc nền NOI-BO-MUSIC-01
+- **580 tài liệu**: theo `kind` (100% đã phân loại) prompt 211 · report 28 · tool 40 · list 22 · other 8 · internal-doc 11 · sop 90 · guide 102 · transcript 57 · sheet 11 · 0 chưa gán `kind`; gồm cẩm nang nhạc nền NOI-BO-MUSIC-01
 - **49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe**: 36 SAFE (YPP) · 9 REVIEW · 4 COPYRIGHTED loại bỏ — quản lý tại `data/music_catalog.json` & cẩm nang `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`
-- **261 kênh mẫu** (189 sống · 72 dead 404 đã ẩn) · `ngay_do` 261/261 (đo thực tế cả 256 kênh: 184 sống · 59 DIE 404 · 10 kênh rỗng 0 video · 3 kênh dead khác; bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`)
-- **34 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BẰNG CHỨNG 8 · THẬN TRỌNG 3 · CÓ ĐK 2
+- **1082 kênh mẫu** (993 sống · 89 dead 404 đã ẩn) · `ngay_do` 1082/1082 (đo thực tế cả 1082 kênh: 993 sống · 75 DIE 404 · 14 kênh rỗng 0 video; bằng chứng `_audit/20261014-kenh-mau-probe.jsonl` & `data/ngachxanh_handle_probes.json`)
+- **40 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 16 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BẰNG CHỨNG 6 · THẬN TRỌNG 5 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)
 - 5 pipeline trong `pipelines/` (`hoat-hinh-ai`, `wildlife`, `ton-giao`, `everyday-history`, `bible-explainer`) · Knowledge Hub trong `knowledge-hub/`
 - `docs/` 339 thư mục (329 `VIDEO-*` + 5 `ZOOM-*`, gồm `ZOOM-00` quy trình + 4 buổi, + `NOI-BO`) · `assets/thumbs/` 148/148 khớp

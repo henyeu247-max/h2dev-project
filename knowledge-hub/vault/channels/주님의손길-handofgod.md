@@ -1,12 +1,12 @@
 ---
 handle: "@주님의손길-handofgod"
-name: "@주님의손길-handofgod"
+name: "주님의 손길"
 url: "https://www.youtube.com/@주님의손길-handofgod"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @주님의손길-handofgod (@주님의손길-handofgod)
+# Kênh Đối Thủ / Kênh Mẫu: @주님의손길-handofgod (주님의 손길)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@주님의손길-handofgod](https://www.youtube.com/@주님의손길-handofgod)

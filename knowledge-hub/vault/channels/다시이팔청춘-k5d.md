@@ -1,12 +1,12 @@
 ---
 handle: "@다시이팔청춘-k5d"
-name: "@다시이팔청춘-k5d"
+name: "다시 이팔청춘"
 url: "https://www.youtube.com/@다시이팔청춘-k5d"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @다시이팔청춘-k5d (@다시이팔청춘-k5d)
+# Kênh Đối Thủ / Kênh Mẫu: @다시이팔청춘-k5d (다시 이팔청춘)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@다시이팔청춘-k5d](https://www.youtube.com/@다시이팔청춘-k5d)

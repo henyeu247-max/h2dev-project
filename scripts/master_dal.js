@@ -9,6 +9,11 @@
 
 const fs = require('fs');
 const path = require('path');
+const _origEmitWarningDal = process.emitWarning;
+process.emitWarning = function (w, ...rest) {
+  if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+  return _origEmitWarningDal.call(process, w, ...rest);
+};
 const { DatabaseSync } = require('node:sqlite');
 
 const ROOT = path.resolve(__dirname, '..');

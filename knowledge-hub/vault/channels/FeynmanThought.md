@@ -1,12 +1,12 @@
 ---
 handle: "@FeynmanThought"
-name: "@FeynmanThought"
+name: "파인만의 생각"
 url: "https://www.youtube.com/@FeynmanThought"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @FeynmanThought (@FeynmanThought)
+# Kênh Đối Thủ / Kênh Mẫu: @FeynmanThought (파인만의 생각)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@FeynmanThought](https://www.youtube.com/@FeynmanThought)

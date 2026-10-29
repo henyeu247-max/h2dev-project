@@ -1,12 +1,12 @@
 ---
 handle: "@biblemadeclear26"
-name: "@biblemadeclear26"
+name: "Bible Made Clear"
 url: "https://www.youtube.com/@biblemadeclear26"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @biblemadeclear26 (@biblemadeclear26)
+# Kênh Đối Thủ / Kênh Mẫu: @biblemadeclear26 (Bible Made Clear)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@biblemadeclear26](https://www.youtube.com/@biblemadeclear26)

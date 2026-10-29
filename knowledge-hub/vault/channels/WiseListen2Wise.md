@@ -1,12 +1,12 @@
 ---
 handle: "@WiseListen2Wise"
-name: "@WiseListen2Wise"
+name: "雲捲花開 -- 心河渡口"
 url: "https://www.youtube.com/@WiseListen2Wise"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @WiseListen2Wise (@WiseListen2Wise)
+# Kênh Đối Thủ / Kênh Mẫu: @WiseListen2Wise (雲捲花開 -- 心河渡口)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@WiseListen2Wise](https://www.youtube.com/@WiseListen2Wise)

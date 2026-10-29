@@ -37,7 +37,11 @@ const params = new URLSearchParams(location.search);
 function resolveSku() {
   const pathParts = location.pathname.split('/').filter(Boolean);
   if (pathParts.length >= 2 && (pathParts[0].toLowerCase() === 'lotrinh' || pathParts[0].toLowerCase() === 'video')) {
-    return decodeURIComponent(pathParts[1]);
+    try {
+      return decodeURIComponent(pathParts[1]);
+    } catch (_) {
+      return pathParts[1];
+    }
   }
   return params.get('sku');
 }
@@ -85,13 +89,15 @@ function hostLabel(link){
   try{ return new URL(link).hostname.replace(/^www\./,''); }catch(e){ return 'Link'; }
 }
 /* ---------- Shared progress + watched store (same key as index.html) ---------- */
-function loadStore(){ try{ return JSON.parse(localStorage.getItem('h2dev-watched')||'{}'); }catch(e){ return {}; } }
-function saveStore(m){
-  localStorage.setItem('h2dev-watched', JSON.stringify(m));
+const STORE_KEY = 'h2dev-watched';
+function loadStore(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)||'{}'); }catch(e){ return {}; } }
+function saveStore(store){
+  localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  if (window.H2Core && typeof window.H2Core.syncAdmin === 'function') { try { window.H2Core.syncAdmin(); } catch (_) {} }
   try{
     const favs=JSON.parse(localStorage.getItem('h2dev-fav')||'[]');
     const recent=JSON.parse(localStorage.getItem('h2dev-recent')||'null');
-    localStorage.setItem('h2dev-admin', JSON.stringify({role:'admin',version:1,updatedAt:Date.now(),watched:m,favorites:Array.isArray(favs)?favs:[],recent:recent}));
+    localStorage.setItem('h2dev-admin', JSON.stringify({role:'admin',version:1,updatedAt:Date.now(),watched:store,favorites:Array.isArray(favs)?favs:[],recent:recent}));
   }catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
 }
 function fmtTime(sec){ const n=Math.max(0, Math.floor(Number(sec)||0)); const m=Math.floor(n/60), s=Math.floor(n%60); return m+':'+String(s).padStart(2,'0'); }
@@ -334,67 +340,128 @@ window.addEventListener('keydown', (e)=>{
        — thuc te CA 3 trang deu thieu thuoc tinh tinh trong HTML; index chi co logic dong).
        Nay: bat true ngay khi bat dau fetch, tat o ca nhanh thanh cong lan that bai. */
     document.getElementById('playerMain')?.setAttribute('aria-busy', 'true');
-    const [catalogResponse, modulesResponse, kmResponse]=await Promise.all([
-      fetch(CAT),
-      fetch('data/modules.json', {cache:'no-store'}),
-      fetch('data-tabs/kenh-mau.json', {cache:'default'}).catch(()=>null)
-    ]);
-    if(!catalogResponse.ok) throw new Error(`Không tải được catalog (${catalogResponse.status})`);
-    if(!modulesResponse.ok) throw new Error(`Không tải được lộ trình (${modulesResponse.status})`);
-    let CAT2=await catalogResponse.json();
-    let modulesData=await modulesResponse.json();
-    let isDgmd = false;
-    let isHuan = false;
-    let catalogBySku=new Map(CAT2.map(item=>[item.sku,item]));
-    let catalogBySkuLower=new Map(CAT2.map(item=>[item.sku.toLowerCase(),item]));
 
-    if (!catalogBySku.has(sku) && !catalogBySkuLower.has(sku.toLowerCase())) {
+    async function fetchJSON(url, opts = { cache: 'no-store' }) {
       try {
-        const [huanCatRes, huanModRes, dgmdCatRes, dgmdModRes] = await Promise.all([
-          fetch('/data/catalog_huan.json').catch(() => null),
-          fetch('/data/modules_huan.json').catch(() => null),
-          fetch('/data/catalog_dgmd.json').catch(() => null),
-          fetch('/data/modules_dgmd.json').catch(() => null)
-        ]);
-        if (huanCatRes && huanCatRes.ok) {
-          const huanCat = await huanCatRes.json();
-          if (Array.isArray(huanCat) && huanCat.some(x => (x.sku || '').toLowerCase() === sku.toLowerCase())) {
-            CAT2 = huanCat;
-            catalogBySku = new Map(CAT2.map(item => [item.sku, item]));
-            catalogBySkuLower = new Map(CAT2.map(item => [item.sku.toLowerCase(), item]));
-            isHuan = true;
-            if (huanModRes && huanModRes.ok) {
-              modulesData = await huanModRes.json();
-            }
-          }
-        }
-        if (!isHuan && dgmdCatRes && dgmdCatRes.ok) {
-          const dgmdCat = await dgmdCatRes.json();
-          if (Array.isArray(dgmdCat) && dgmdCat.some(x => (x.sku || '').toLowerCase() === sku.toLowerCase())) {
-            CAT2 = dgmdCat;
-            catalogBySku = new Map(CAT2.map(item => [item.sku, item]));
-            catalogBySkuLower = new Map(CAT2.map(item => [item.sku.toLowerCase(), item]));
-            isDgmd = true;
-            if (dgmdModRes && dgmdModRes.ok) {
-              modulesData = await dgmdModRes.json();
-            }
-          }
-        }
-      } catch (e) {
-        console.warn('[Player] Tra cứu catalog mở rộng thất bại', e);
+        const r = await fetch(url, opts);
+        return r.ok ? await r.json() : null;
+      } catch (_) {
+        return null;
       }
     }
+
+    async function loadCourseCatalog(targetSku) {
+      // Fast path: Ưu tiên gọi /api/player/bootstrap?sku=... (~10-20 KB) để nạp tức thì catalog, modules, insight
+      const boot = await fetchJSON('/api/player/bootstrap?sku=' + encodeURIComponent(targetSku), { cache: 'no-store' });
+      if (boot && boot.video) {
+        const trackModules = Array.isArray(boot.trackModules) ? boot.trackModules : [];
+        const flatItems = trackModules.flatMap(m => Array.isArray(m.items) ? m.items : []);
+        const mergedVideo = Object.assign({}, boot.video);
+        if (Array.isArray(boot.docs) && boot.docs.length && (!mergedVideo.docs || !mergedVideo.docs.length)) {
+          mergedVideo.docs = boot.docs;
+        }
+        const bySku = new Map(flatItems.map(it => [it.sku, it]));
+        const bySkuLower = new Map(flatItems.map(it => [String(it.sku || '').toLowerCase(), it]));
+        bySku.set(mergedVideo.sku, mergedVideo);
+        bySkuLower.set(String(mergedVideo.sku || '').toLowerCase(), mergedVideo);
+        return {
+          CAT2: [mergedVideo, ...flatItems],
+          modulesData: { modules: trackModules },
+          isHuan: boot.track === 'huan',
+          isDgmd: boot.track === 'dgmd',
+          catalogBySku: bySku,
+          catalogBySkuLower: bySkuLower,
+          bootstrapInsight: boot.insight || null,
+          deadChannelsList: Array.isArray(boot.deadChannels) ? boot.deadChannels : []
+        };
+      }
+
+      // Fallback khi offline hoặc chưa có API bootstrap
+      const [catalogResponse, modulesResponse, kmResponse] = await Promise.all([
+        fetch(CAT),
+        fetch('data/modules.json', { cache: 'no-store' }),
+        fetch('data-tabs/kenh-mau.json', { cache: 'default' }).catch(() => null)
+      ]);
+      if (!catalogResponse.ok) throw new Error(`Không tải được catalog (${catalogResponse.status})`);
+      if (!modulesResponse.ok) throw new Error(`Không tải được lộ trình (${modulesResponse.status})`);
+      let CAT2 = await catalogResponse.json();
+      let modulesData = await modulesResponse.json();
+      let isDgmd = false;
+      let isHuan = false;
+      let catalogBySku = new Map(CAT2.map(item => [item.sku, item]));
+      let catalogBySkuLower = new Map(CAT2.map(item => [item.sku.toLowerCase(), item]));
+
+      if (!catalogBySku.has(targetSku) && !catalogBySkuLower.has(targetSku.toLowerCase())) {
+        try {
+          const [huanCatRes, huanModRes, dgmdCatRes, dgmdModRes] = await Promise.all([
+            fetch('/data/catalog_huan.json').catch(() => null),
+            fetch('/data/modules_huan.json').catch(() => null),
+            fetch('/data/catalog_dgmd.json').catch(() => null),
+            fetch('/data/modules_dgmd.json').catch(() => null)
+          ]);
+          if (huanCatRes && huanCatRes.ok) {
+            const huanCat = await huanCatRes.json();
+            if (Array.isArray(huanCat) && huanCat.some(x => (x.sku || '').toLowerCase() === targetSku.toLowerCase())) {
+              CAT2 = huanCat;
+              catalogBySku = new Map(CAT2.map(item => [item.sku, item]));
+              catalogBySkuLower = new Map(CAT2.map(item => [item.sku.toLowerCase(), item]));
+              isHuan = true;
+              if (huanModRes && huanModRes.ok) {
+                modulesData = await huanModRes.json();
+              }
+            }
+          }
+          if (!isHuan && dgmdCatRes && dgmdCatRes.ok) {
+            const dgmdCat = await dgmdCatRes.json();
+            if (Array.isArray(dgmdCat) && dgmdCat.some(x => (x.sku || '').toLowerCase() === targetSku.toLowerCase())) {
+              CAT2 = dgmdCat;
+              catalogBySku = new Map(CAT2.map(item => [item.sku, item]));
+              catalogBySkuLower = new Map(CAT2.map(item => [item.sku.toLowerCase(), item]));
+              isDgmd = true;
+              if (dgmdModRes && dgmdModRes.ok) {
+                modulesData = await dgmdModRes.json();
+              }
+            }
+          }
+        } catch (e) {
+          console.warn('[Player] Tra cứu catalog mở rộng thất bại', e);
+        }
+      }
+
+      let deadChannelsList = [];
+      if (kmResponse && kmResponse.ok) {
+        try {
+          const kmList = await kmResponse.json();
+          deadChannelsList = (kmList || []).filter(k => k && k.dead);
+        } catch (e) { console.warn('[H2DEV] đọc kenh-mau.json (kênh chết) lỗi', e); }
+      }
+      return {
+        CAT2,
+        modulesData,
+        isHuan,
+        isDgmd,
+        catalogBySku,
+        catalogBySkuLower,
+        bootstrapInsight: null,
+        deadChannelsList
+      };
+    }
+
+    const {
+      modulesData,
+      isHuan,
+      isDgmd,
+      catalogBySku,
+      catalogBySkuLower,
+      bootstrapInsight,
+      deadChannelsList
+    } = await loadCourseCatalog(sku);
 
     const deadChannelsMap = new Map([
       ['nelymallorca', { handle: '@nelymallorca', dead: true, deadNote: 'Kênh cổ 2006 mua lại làm ngách tin tức Canada đã bị YouTube gỡ' }],
       ['alanwattsdailywisdom', { handle: '@alanwattsdailywisdom', dead: true, deadNote: 'Kênh mẫu ngách triết lý Alan Watts US đã bị YouTube gỡ' }]
     ]);
-    if(kmResponse && kmResponse.ok){
-      try {
-        const kmList = await kmResponse.json();
-        (kmList||[]).filter(k=>k&&k.dead).forEach(k=>deadChannelsMap.set(String(k.handle||'').replace(/^@/,'').toLowerCase(), k));
-      } catch(e) { console.warn('[H2DEV] đọc kenh-mau.json (kênh chết) lỗi', e); }
-    }
+    (deadChannelsList || []).forEach(k => deadChannelsMap.set(String(k.handle || '').replace(/^@/, '').toLowerCase(), k));
     const route=modulesData.modules.flatMap(module=>module.items.map(item=>({item:catalogBySku.get(item.sku)||item,module})));
     const routePos=route.findIndex(x=>x.item.sku.toLowerCase()===sku.toLowerCase());
     const v=catalogBySku.get(sku)||catalogBySkuLower.get(sku.toLowerCase())|| (routePos>=0?route[routePos].item:null);
@@ -576,17 +643,19 @@ window.addEventListener('keydown', (e)=>{
     } catch (e) { /* khong anh huong hien thi chinh */ }
 
     /* ---------- Phân Tích Thực Chiến & Ghi Chú AI (Insights) ---------- */
+    async function loadInsightData(targetSku) {
+      if (bootstrapInsight) return bootstrapInsight;
+      const localIns = await fetchJSON('video/' + resolvedSku + '/insight.json');
+      if (localIns) return localIns;
+      const insightsJsonFile = isHuan ? 'data/video_insights_huan.json' : (isDgmd ? 'data/video_insights_dgmd.json' : 'data/video_insights.json');
+      const insAll = await fetchJSON(insightsJsonFile);
+      if (!insAll) return null;
+      return insAll[resolvedSku] || insAll[targetSku] || insAll[targetSku.toLowerCase()] || insAll[targetSku.toUpperCase()] || null;
+    }
+
     try {
-      const insFile = isHuan ? 'data/video_insights_huan.json' : (isDgmd ? 'data/video_insights_dgmd.json' : 'data/video_insights.json');
-      const [insRes, localInsRes] = await Promise.all([
-        fetch(insFile, {cache:'no-store'}).catch(() => null),
-        fetch(`video/${resolvedSku}/insight.json`, {cache:'no-store'}).catch(() => null)
-      ]);
-      if ((insRes && insRes.ok) || (localInsRes && localInsRes.ok)) {
-        const insAll = (insRes && insRes.ok) ? await insRes.json() : {};
-        const localIns = (localInsRes && localInsRes.ok) ? await localInsRes.json() : null;
-        const ins = localIns || insAll[resolvedSku] || insAll[sku] || insAll[sku.toLowerCase()] || insAll[sku.toUpperCase()];
-        if (ins) {
+      const ins = await loadInsightData(sku);
+      if (ins) {
           document.getElementById('pinsights').classList.remove('hidden');
           const legacyNoticeEl = document.getElementById('legacyInsightNotice');
           if (ins.visual_audio_checked) {
@@ -670,11 +739,6 @@ window.addEventListener('keydown', (e)=>{
               </button>`;
             }).join('');
           }
-        } else {
-          document.getElementById('pinsights').classList.remove('hidden');
-          document.getElementById('insightTakeaways').innerHTML = '<li class="text-gray-400">Video này chưa có dữ liệu phân tích thực chiến AI.</li>';
-          document.getElementById('insightAvoidFlags').innerHTML = '<li class="text-gray-400">Chưa có ghi chú cảnh báo.</li>';
-        }
       } else {
         document.getElementById('pinsights').classList.remove('hidden');
         document.getElementById('insightTakeaways').innerHTML = '<li class="text-gray-400">Video này chưa có dữ liệu phân tích thực chiến AI.</li>';
@@ -794,7 +858,15 @@ window.addEventListener('keydown', (e)=>{
             </div>`;
           }).join('');
 
+          let isProgrammaticScroll = false;
+          let progScrollTimer = null;
+          tList.__markProgrammaticScroll = () => {
+            isProgrammaticScroll = true;
+            clearTimeout(progScrollTimer);
+            progScrollTimer = setTimeout(() => { isProgrammaticScroll = false; }, 650);
+          };
           tList.addEventListener('scroll', () => {
+            if (isProgrammaticScroll) return;
             userIsScrolling = true;
             clearTimeout(scrollTimeout);
             scrollTimeout = setTimeout(() => { userIsScrolling = false; }, 3000);
@@ -912,7 +984,7 @@ window.addEventListener('keydown', (e)=>{
     try{
       const recentPayload={sku:sku,track:activePlayerTrack,ts:Date.now(),nextSku:nextItem?nextItem.sku:null};
       localStorage.setItem('h2dev-recent', JSON.stringify(recentPayload));
-      localStorage.setItem('recentWatched', JSON.stringify({item_id:sku,item_name:v.title,track:activePlayerTrack,next_video_url:nextItem?nextItem.mp4:null}));
+      localStorage.setItem('recentWatched', JSON.stringify({item_id:sku,item_name:v.title,track:activePlayerTrack,next_video_url:(nextItem&&(nextItem.mp4||nextItem.file))||null}));
     }catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
 
     /* auto-save progress every 3s while playing + mark watched at 95% */
@@ -943,6 +1015,7 @@ window.addEventListener('keydown', (e)=>{
           const activeEl = document.getElementById('tr-seg-' + curIndex);
           if (activeEl && !userIsScrolling) {
             const topPos = activeEl.offsetTop - tList.offsetTop - (tList.clientHeight / 2) + (activeEl.clientHeight / 2);
+            if (typeof tList.__markProgrammaticScroll === 'function') tList.__markProgrammaticScroll();
             tList.scrollTo({ top: Math.max(0, topPos), behavior: (window.H2Core && H2Core.scrollBehavior ? H2Core.scrollBehavior() : 'smooth') });
           }
         }
@@ -1203,7 +1276,11 @@ document.addEventListener('click', (e) => {
   if (seek) {
     const sec = Number(seek.getAttribute('data-seek')) || 0;
     const pv = document.getElementById('pv');
-    if (pv) { pv.currentTime = sec; pv.play(); }
+    if (pv) {
+      pv.currentTime = sec;
+      const p = pv.play();
+      if (p && typeof p.catch === 'function') p.catch(() => {});
+    }
     return;
   }
   const act = t.closest('[data-action]');
@@ -1225,7 +1302,11 @@ document.addEventListener('keydown', (e) => {
     e.preventDefault();
     const sec = Number(seg.getAttribute('data-seek')) || 0;
     const pv = document.getElementById('pv');
-    if (pv) { pv.currentTime = sec; pv.play(); }
+    if (pv) {
+      pv.currentTime = sec;
+      const p = pv.play();
+      if (p && typeof p.catch === 'function') p.catch(() => {});
+    }
   }
 });
 

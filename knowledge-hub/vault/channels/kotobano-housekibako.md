@@ -1,12 +1,12 @@
 ---
 handle: "@kotobano-housekibako"
-name: "@kotobano-housekibako"
+name: "「人生が変わる」言葉の宝石箱"
 url: "https://www.youtube.com/@kotobano-housekibako"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @kotobano-housekibako (@kotobano-housekibako)
+# Kênh Đối Thủ / Kênh Mẫu: @kotobano-housekibako (「人生が変わる」言葉の宝石箱)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@kotobano-housekibako](https://www.youtube.com/@kotobano-housekibako)

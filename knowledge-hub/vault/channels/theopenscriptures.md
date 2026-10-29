@@ -1,12 +1,12 @@
 ---
 handle: "@theopenscriptures"
-name: "@theopenscriptures"
+name: "The Open Scriptures"
 url: "https://www.youtube.com/@theopenscriptures"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @theopenscriptures (@theopenscriptures)
+# Kênh Đối Thủ / Kênh Mẫu: @theopenscriptures (The Open Scriptures)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@theopenscriptures](https://www.youtube.com/@theopenscriptures)

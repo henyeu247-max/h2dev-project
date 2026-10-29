@@ -1,12 +1,12 @@
 ---
 handle: "@ChuXinDiaoYu01"
-name: "@ChuXinDiaoYu01"
+name: "楚新钓鱼"
 url: "https://www.youtube.com/@ChuXinDiaoYu01"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ChuXinDiaoYu01 (@ChuXinDiaoYu01)
+# Kênh Đối Thủ / Kênh Mẫu: @ChuXinDiaoYu01 (楚新钓鱼)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ChuXinDiaoYu01](https://www.youtube.com/@ChuXinDiaoYu01)

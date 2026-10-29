@@ -8,6 +8,12 @@
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
+const stream = require('stream');
+const { promisify } = require('util');
+const pipeline = promisify(stream.pipeline);
+
+const _rotatingInFlight = new Set();
+let archiveCounter = 0;
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const WORKSPACE_ROOT = path.resolve(PROJECT_ROOT, '..');
@@ -37,12 +43,19 @@ function getTimestampString() {
   return `${y}${m}${d}-${hh}${mm}${ss}`;
 }
 
-// Compress and rotate single log file
-function rotateFile(filePath, maxSize = MAX_LOG_SIZE_BYTES, force = false) {
+// Non-blocking async log rotation using stream.pipeline + zlib.createGzip
+async function rotateIfNeeded(filePath, maxSize = MAX_LOG_SIZE_BYTES, force = false) {
+  if (_rotatingInFlight.has(filePath)) {
+    return { rotated: false, reason: 'already_rotating' };
+  }
+  _rotatingInFlight.add(filePath);
   try {
-    if (!fs.existsSync(filePath)) return { rotated: false, reason: 'not_found' };
-
-    const st = fs.statSync(filePath);
+    let st;
+    try {
+      st = await fs.promises.stat(filePath);
+    } catch (_) {
+      return { rotated: false, reason: 'not_found' };
+    }
     if (!st.isFile()) return { rotated: false, reason: 'not_a_file' };
 
     if (!force && st.size < maxSize) {
@@ -51,37 +64,88 @@ function rotateFile(filePath, maxSize = MAX_LOG_SIZE_BYTES, force = false) {
 
     const dir = path.dirname(filePath);
     const baseName = path.basename(filePath);
-    const timestamp = getTimestampString();
+    const timestamp = `${getTimestampString()}-${String(new Date().getMilliseconds()).padStart(3, '0')}-${process.pid}-${++archiveCounter}`;
+    const rotatingTempPath = `${filePath}.${timestamp}.rotating`;
     const rotatedGzName = `${baseName}.${timestamp}.gz`;
     const rotatedGzPath = path.join(dir, rotatedGzName);
 
-    // Read uncompressed content and compress to .gz
-    const content = fs.readFileSync(filePath);
-    const compressed = zlib.gzipSync(content);
-    fs.writeFileSync(rotatedGzPath, compressed);
+    let renamed = false;
+    try {
+      await fs.promises.rename(filePath, rotatingTempPath);
+      renamed = true;
+      await fs.promises.writeFile(filePath, '');
+    } catch (_) {
+      // Fallback on Windows if active file handle prevents rename: stream copy to .rotating then truncate
+      await pipeline(fs.createReadStream(filePath), fs.createWriteStream(rotatingTempPath));
+      await fs.promises.truncate(filePath, 0);
+    }
 
-    // Truncate active log file back to 0 bytes safely
-    fs.truncateSync(filePath, 0);
+    await pipeline(
+      fs.createReadStream(rotatingTempPath),
+      zlib.createGzip(),
+      fs.createWriteStream(rotatedGzPath)
+    );
 
-    // Enforce retention policy: keep newest MAX_BACKUPS archives
-    cleanupOldBackups(dir, baseName, MAX_BACKUPS);
+    try {
+      await fs.promises.unlink(rotatingTempPath);
+    } catch (_) {}
+
+    let gzStat = { size: 0 };
+    try {
+      gzStat = await fs.promises.stat(rotatedGzPath);
+    } catch (_) {}
+
+    await cleanupOldBackupsAsync(dir, baseName, MAX_BACKUPS);
 
     return {
       rotated: true,
+      renamed,
       originalSize: st.size,
-      compressedSize: compressed.length,
+      compressedSize: gzStat.size,
       archive: rotatedGzName
     };
   } catch (err) {
     return { rotated: false, error: err.message };
+  } finally {
+    _rotatingInFlight.delete(filePath);
   }
+}
+
+// Keep rotateFile alias delegating to non-blocking rotateIfNeeded
+function rotateFile(filePath, maxSize = MAX_LOG_SIZE_BYTES, force = false) {
+  return rotateIfNeeded(filePath, maxSize, force);
+}
+
+// Async removal of old backups exceeding retention limit
+async function cleanupOldBackupsAsync(dir, baseName, maxBackups) {
+  try {
+    const files = await fs.promises.readdir(dir);
+    const pattern = new RegExp(`^${escapeRegex(baseName)}\\.\\d{8}-\\d{6}(?:-\\d{3}-\\d+-\\d+)?\\.gz$`);
+    const matching = [];
+    for (const f of files) {
+      if (!pattern.test(f)) continue;
+      const full = path.join(dir, f);
+      try {
+        const st = await fs.promises.stat(full);
+        matching.push({ name: f, full, mtime: st.mtime.getTime() });
+      } catch (_) {}
+    }
+    matching.sort((a, b) => b.mtime - a.mtime);
+    if (matching.length > maxBackups) {
+      for (const item of matching.slice(maxBackups)) {
+        try {
+          await fs.promises.unlink(item.full);
+        } catch (_) {}
+      }
+    }
+  } catch (_) {}
 }
 
 // Remove old backups exceeding retention limit
 function cleanupOldBackups(dir, baseName, maxBackups) {
   try {
     const files = fs.readdirSync(dir);
-    const pattern = new RegExp(`^${escapeRegex(baseName)}\\.\\d{8}-\\d{6}\\.gz$`);
+    const pattern = new RegExp(`^${escapeRegex(baseName)}\\.\\d{8}-\\d{6}(?:-\\d{3}-\\d+-\\d+)?\\.gz$`);
     const matching = files
       .filter(f => pattern.test(f))
       .map(f => {
@@ -162,8 +226,8 @@ function sweepLooseLogFiles() {
   return swept;
 }
 
-// Rotate all log files in logs/
-function checkAndRotateAll(maxSize = MAX_LOG_SIZE_BYTES, force = false) {
+// Rotate all log files in logs/ asynchronously without blocking event loop
+async function checkAndRotateAll(maxSize = MAX_LOG_SIZE_BYTES, force = false) {
   ensureDirectories();
   const swept = sweepLooseLogFiles();
   const results = [];
@@ -173,15 +237,14 @@ function checkAndRotateAll(maxSize = MAX_LOG_SIZE_BYTES, force = false) {
     for (const file of files) {
       if (file.endsWith('.log')) {
         const fullPath = path.join(LOGS_DIR, file);
-        const res = rotateFile(fullPath, maxSize, force);
-        results.push({ file, ...res });
+        results.push(rotateIfNeeded(fullPath, maxSize, force).then(res => ({ file, ...res })));
       }
     }
   } catch (err) {
     results.push({ error: err.message });
   }
 
-  return { swept, results };
+  return { swept, results: await Promise.all(results) };
 }
 
 // Background scheduler for server.js
@@ -210,7 +273,7 @@ if (require.main === module) {
   console.log('Threshold:', (MAX_LOG_SIZE_BYTES / (1024 * 1024)).toFixed(1) + ' MB');
   console.log('Force Mode:', force);
 
-  const report = checkAndRotateAll(MAX_LOG_SIZE_BYTES, force);
+  checkAndRotateAll(MAX_LOG_SIZE_BYTES, force).then(report => {
   if (report.swept && report.swept.length > 0) {
     console.log('[Sweep] Moved orphan log files:');
     report.swept.forEach(s => console.log(`  ${s.source} -> ${s.destination}`));
@@ -229,12 +292,14 @@ if (require.main === module) {
     }
   });
   console.log('=== AUDIT COMPLETED ===');
+  }).catch(err => { console.error(err); process.exitCode = 1; });
 }
 
 module.exports = {
   LOGS_DIR,
   MAX_LOG_SIZE_BYTES,
   MAX_BACKUPS,
+  rotateIfNeeded,
   rotateFile,
   checkAndRotateAll,
   sweepLooseLogFiles,

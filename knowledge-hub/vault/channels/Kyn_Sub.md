@@ -1,12 +1,12 @@
 ---
 handle: "@Kyn_Sub"
-name: "@Kyn_Sub"
+name: "Kyn Sub"
 url: "https://www.youtube.com/@Kyn_Sub"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Kyn_Sub (@Kyn_Sub)
+# Kênh Đối Thủ / Kênh Mẫu: @Kyn_Sub (Kyn Sub)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Kyn_Sub](https://www.youtube.com/@Kyn_Sub)

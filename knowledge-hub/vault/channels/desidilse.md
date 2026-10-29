@@ -1,12 +1,12 @@
 ---
 handle: "@desidilse"
-name: "@desidilse"
+name: "실버 라이프"
 url: "https://www.youtube.com/@desidilse"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @desidilse (@desidilse)
+# Kênh Đối Thủ / Kênh Mẫu: @desidilse (실버 라이프)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@desidilse](https://www.youtube.com/@desidilse)

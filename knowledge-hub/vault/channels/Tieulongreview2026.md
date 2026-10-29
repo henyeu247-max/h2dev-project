@@ -1,12 +1,12 @@
 ---
 handle: "@Tieulongreview2026"
-name: "@Tieulongreview2026"
+name: "Tiểu Long Review"
 url: "https://www.youtube.com/@Tieulongreview2026"
 status: "DEAD"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Tieulongreview2026 (@Tieulongreview2026)
+# Kênh Đối Thủ / Kênh Mẫu: @Tieulongreview2026 (Tiểu Long Review)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Tieulongreview2026](https://www.youtube.com/@Tieulongreview2026)

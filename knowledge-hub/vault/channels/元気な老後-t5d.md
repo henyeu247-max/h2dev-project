@@ -1,12 +1,12 @@
 ---
 handle: "@元気な老後-t5d"
-name: "@元気な老後-t5d"
+name: "元気な老後"
 url: "https://www.youtube.com/@元気な老後-t5d"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @元気な老後-t5d (@元気な老後-t5d)
+# Kênh Đối Thủ / Kênh Mẫu: @元気な老後-t5d (元気な老後)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@元気な老後-t5d](https://www.youtube.com/@元気な老後-t5d)

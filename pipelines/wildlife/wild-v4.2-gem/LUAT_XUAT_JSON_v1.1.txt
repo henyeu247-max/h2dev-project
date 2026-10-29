@@ -1,0 +1,230 @@
+##############################################
+#                                            #
+#   LUẬT XUẤT JSON — DÙNG CHO MỌI GEM        #
+#   Hà Thành | hathanhyoutube.vn | v1.1      #
+#                                            #
+##############################################
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  MỖI CẢNH = 1 DÒNG:   PREFIX | {json 1 dòng}                               ║
+║  (Space sau dấu : được phép — điều cấm là XUỐNG DÒNG trong giá trị)        ║
+║                                                                              ║
+║  3 MỨC NGHIÊM TRỌNG — PHÂN BIỆT RÕ:                                         ║
+║    ✅  ĐÚNG                                                                  ║
+║    ❌  VỠ JSON   → tool KHÔNG đọc được → MẤT TRẮNG cả cảnh đó                ║
+║    ⚠  SAI CHUẨN → tool vẫn đọc được nhưng ra video lỗi / prompt bẩn         ║
+║                                                                              ║
+║  Gặp ❌ là hỏng ngay mà lại khó phát hiện. Ưu tiên tránh ❌ trước hết.       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════════════
+              PHẦN A — LUẬT CHỐNG VỠ JSON  (nhóm ❌, quan trọng nhất)
+═══════════════════════════════════════════════════════════════════════════════
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 1 — CẤM DẤU " BÊN TRONG GIÁ TRỊ    ★★★ LỖI GÂY VỠ NHIỀU NHẤT
+───────────────────────────────────────────────────────────────────────────────
+Dấu " CHỈ dùng để mở/đóng chuỗi và bọc tên field. KHÔNG xuất hiện trong nội dung.
+
+  • Nhấn mạnh / trích dẫn  → dùng «  »
+  • Dấu lược, sở hữu       → dùng '
+  • Lời thoại nhân vật     → dùng —  hoặc  «  »
+
+  ✅ {"dialogue":["Bà có hai cô con gái «rượu», ai cũng xinh."]}
+  ❌ {"dialogue":["Bà có hai cô con gái "rượu", ai cũng xinh."]}
+  ⚠ {"dialogue":["Bà có hai cô con gái \"rượu\", ai cũng xinh."]}
+
+★ Dòng ⚠ ở trên HỢP LỆ về mặt JSON, nhưng VẪN CẤM DÙNG: viết chuỗi dài 200 từ
+  mà nhớ escape đủ mọi dấu là việc rất dễ trượt — trượt 1 lần là mất cả cảnh.
+  Cấm hẳn ký tự " thì không còn cửa sai.
+
+★ NẾU CHUYỆN GỐC CÓ DẤU " → ĐỔI THÀNH « » KHI CHÉP VÀO.
+  Đây là DẤU CÂU, không phải CHỮ → KHÔNG vi phạm luật "chép nguyên văn".
+  Veo và TTS không đọc dấu nháy, âm thanh nghe ra hoàn toàn không đổi.
+  ★ LUẬT NÀY ĐÈ LÊN mọi luật "nguyên văn không sai 1 chữ" ở nơi khác. ★
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 2 — DẤU PHẨY GIỮA MỌI FIELD        ★★★ LỖI PHỔ BIẾN THỨ HAI
+───────────────────────────────────────────────────────────────────────────────
+Đóng giá trị xong → DẤU PHẨY → mới sang field kế. Nguy hiểm nhất là ngay sau
+CHUỖI DÀI, vì viết xong 200 từ rất dễ quên mình đang ở giữa một object.
+
+  ✅ {"complete_prompt":"a wide shot, no subtitles.","characters_in_scene":[]}
+  ❌ {"complete_prompt":"a wide shot, no subtitles." "characters_in_scene":[]}
+
+★ Viết xong field dài, TỰ HỎI: "đã đóng ngoặc kép chưa, đã có dấu phẩy chưa?"
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 3 — KHÔNG DẤU PHẨY THỪA
+───────────────────────────────────────────────────────────────────────────────
+Trước }  hoặc  ]  KHÔNG được có dấu phẩy.
+
+  ✅ {"word_count":29,"characters_in_scene":["CHAR_01","CHAR_02"]}
+  ❌ {"word_count":29,"characters_in_scene":["CHAR_01","CHAR_02",],}
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 4 — NHÁY THẲNG, KHÔNG NHÁY CONG
+───────────────────────────────────────────────────────────────────────────────
+Chỉ dùng " thẳng. Nháy cong kiểu Word ( " "  ' ' ) làm JSON vỡ ngay lập tức.
+
+  ✅ {"scene_id":"001","transition":"hard cut"}
+  ❌ {“scene_id”:"001","transition":"hard cut"}
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 5 — CẤM DẤU \ (SỔ NGƯỢC) VÀ TAB TRONG GIÁ TRỊ
+───────────────────────────────────────────────────────────────────────────────
+Sổ ngược là ký tự escape của JSON, viết bừa vào là vỡ.
+NGOẠI LỆ DUY NHẤT: escape `\\n` được phép — CHỈ dùng trong
+`character_lock_details` để tách các CHAR (mỗi CHAR 1 dòng logic).
+
+  ✅ {"action_summary":"May quay lia tu trai sang phai"}
+  ✅ {"character_lock_details":"CHAR_01 ... \\nCHAR_19 ..."}
+  ❌ {"action_summary":"May quay lia trai\phai"}
+  ❌ {"action_summary":"path\\to\\file"}  ← backslash thường là vỡ
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 6 — 1 CẢNH = 1 DÒNG, KHÔNG XUỐNG DÒNG GIỮA CHỪNG
+───────────────────────────────────────────────────────────────────────────────
+Cả object nằm gọn trên 1 dòng: không xuống dòng, không thụt lề, không xuống
+dòng bên trong giá trị chuỗi. Xuống dòng giữa chuỗi là VỠ JSON.
+
+  ✅ {"continuity_from":"Nối cảnh 014. Ivan ngồi xuống bên cạnh."}
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 7 — KHÔNG BAO GIỜ DỪNG GIỮA MỘT DÒNG
+───────────────────────────────────────────────────────────────────────────────
+Sắp hết chỗ thì DỪNG Ở CUỐI MỘT DÒNG HOÀN CHỈNH, đóng khối code, rồi báo:
+"Đã ra N/M cảnh, gõ TIẾP để ra phần còn lại."
+
+  ❌ {"scene_id":"015","complete_prompt":"a wide shot","audio":{"dialo
+
+★ Nửa dòng cụt = cảnh đó mất trắng, mà lại KHÓ PHÁT HIỆN vì nhìn lướt vẫn
+  tưởng đủ số cảnh.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+              PHẦN B — LUẬT CHUẨN DỮ LIỆU  (nhóm ⚠, JSON vẫn đọc được)
+═══════════════════════════════════════════════════════════════════════════════
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 8 — KIỂU DỮ LIỆU CỐ ĐỊNH, KHÔNG ĐỔI QUA LẠI
+───────────────────────────────────────────────────────────────────────────────
+  • Số (KHÔNG nháy):   duration_sec (float 8.0), word_count
+  • Chuỗi (CÓ nháy):   scene_id, mọi mô tả, mọi câu chữ
+  • Mảng rỗng ghi []   — CẤM null, CẤM "", CẤM bỏ hẳn field
+  • dialogue LUÔN là mảng chuỗi, kể cả khi chỉ có 1 câu
+  • TÊN FIELD CHUẨN (17 field hợp đồng — KHÔNG đổi tên):
+    scene_id · duration_sec · characters_in_scene · background_lock ·
+    background_description · character_lock_details · visual_style · camera ·
+    continuity_from · action_summary · action_sequence · complete_prompt ·
+    transition · fx · foley_and_ambience · audio.dialogue · word_count
+    (CẤM dùng tên lạ: character_lock, char_count nếu không có trong hợp đồng)
+
+  ✅ {"scene_id":"001","duration_sec":8.0,"word_count":29,"characters_in_scene":[]}
+  ⚠ {"scene_id":1,"duration_sec":"8.0","word_count":"29","characters_in_scene":null}
+
+★ Dòng ⚠ vẫn parse được nhưng tool tính sai thời lượng và tra khoá nhân vật hỏng.
+
+★ ĐƠN VỊ word_count (THEO {{LANG}} — KHÔNG phải "từ" theo nghĩa đen):
+  VI = âm tiết · EN/ES = từ · JP = ký tự (moji) · KR = âm tiết (eumjeol)
+  Ví dụ VI "lửng mật" = 2 · "hai mươi xăng ti mét" = 6. Luôn BUNG SỐ ra chữ trước khi đếm.
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 9 — KHÔNG MARKDOWN, KHÔNG EMOJI TRONG GIÁ TRỊ
+───────────────────────────────────────────────────────────────────────────────
+  ✅ {"action_summary":"Bà mẹ bước vào sảnh tiệc"}
+  ⚠ {"action_summary":"**Bà mẹ** bước vào sảnh tiệc 🎬"}
+
+★ Không vỡ JSON, nhưng dấu sao và emoji chui thẳng vào prompt gửi Veo → Veo vẽ
+  ký hiệu lạ lên hình, hoặc TTS đọc thành tiếng.
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 10 — scene_id LIÊN TỤC XUYÊN SUỐT MỌI PHASE
+───────────────────────────────────────────────────────────────────────────────
+3 chữ số, dạng chuỗi, tăng dần, KHÔNG BAO GIỜ quay lại 001 ở phase sau.
+
+  ✅ Phase 1: 001→008   Phase 2: 009→016   Phase 3: 017→024
+  ⚠ Phase 1: 001→008   Phase 2: 001→008  ← trùng số
+
+★ scene_id trùng nhau làm tool ghi đè file audio lên nhau → video ra sai tiếng,
+  mà xem lướt vẫn tưởng bình thường.
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 11 — PHẦN PREFIX TRƯỚC DẤU |
+───────────────────────────────────────────────────────────────────────────────
+Tất cả ID nhân vật + ID bối cảnh trong cảnh, cách nhau bằng dấu phẩy, KHÔNG
+khoảng trắng. Cảnh không có nhân vật → dùng NOCHAR. Sau đó:  dấu cách | dấu cách.
+
+  ✅ CHAR_01,CHAR_02,BG_03 | {"scene_id":"005","transition":"hard cut"}
+  ✅ NOCHAR,BG_01 | {"scene_id":"006","transition":"hard cut"}
+  ⚠ CHAR_01, CHAR_02, BG_03 | {"scene_id":"007","transition":"hard cut"}
+
+★★★ CÓ BG_XX TRONG PREFIX HAY KHÔNG LÀ DO {{BG_LOCK}} QUYẾT ĐỊNH (V4.1) ★★★
+  ▸ BG_LOCK = 1 (có ảnh mẫu bối cảnh) → prefix CÓ BG_XX   ✅ CHAR_01,BG_03 | {...}
+  ▸ BG_LOCK = 2 (không ảnh mẫu)       → prefix KHÔNG BG_XX ✅ CHAR_01 | {...} · ✅ NOCHAR | {...}
+★ Để thừa BG_XX mà không có ảnh tương ứng → tab dựng video báo «không tìm được
+  ảnh» và BỎ QUA CẢNH ĐÓ. Mất cảnh thật, không phải cảnh báo suông.
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 11B — DÒNG ẢNH MẪU (REFERENCE SHEET) (V4.1)
+───────────────────────────────────────────────────────────────────────────────
+Mỗi ảnh mẫu = 1 dòng:  MÃ | prompt   (mã đứng đầu, rồi dấu cách | dấu cách).
+
+  ✅ CHAR_21 | studio turnaround reference of a single adult ..., no scene background, no text, no watermark
+  ✅ BG_10 | dense thorny bushveld, scrub trees, ..., no text, no watermark
+  ❌ 1. CHAR_21 Chim mỏ sừng: studio turnaround ...     ← không có « | », tool không nhận ra mã
+  ❌ studio turnaround reference of a single adult ...   ← thiếu mã, ảnh không gắn được vào cảnh
+
+★ Trong prompt KHÔNG có thêm dấu | nào. Dòng ảnh mẫu KHÔNG có {json}.
+
+
+───────────────────────────────────────────────────────────────────────────────
+LUẬT 12 — KHỐI CODE
+───────────────────────────────────────────────────────────────────────────────
+  • 1 phase = ĐÚNG 1 khối code, không tách làm nhiều khối
+  • Trong khối chỉ có các dòng JSON — không chèn chữ giải thích, không dòng trống
+  • Ghi chú / self-check để BÊN NGOÀI khối code
+
+
+═══════════════════════════════════════════════════════════════════════════════
+              ★★★ TỰ KIỂM TRA TRƯỚC KHI IN — BẮT BUỘC ★★★
+═══════════════════════════════════════════════════════════════════════════════
+Đọc lại TỪNG DÒNG vừa viết, soi đúng 6 điểm sau. Đây là bước ĐẾM, không phải
+bước cảm nhận — đếm thật thì mới bắt được lỗi.
+
+  1. [ ] Tổng số dấu " trên dòng có phải SỐ CHẴN không?    → lẻ là VỠ
+  2. [ ] Trong các giá trị còn sót dấu " nào không?         → có là VỠ
+  3. [ ] Trước mỗi tên field đều có dấu phẩy chưa?          → thiếu là VỠ
+  4. [ ] Trước }  và  ]  có dấu phẩy thừa không?            → có là VỠ
+  5. [ ] Số  {  bằng số  }  , số  [  bằng số  ]  chưa?      → lệch là VỠ
+  6. [ ] Dòng có kết thúc bằng  }  không?                   → không là bị CỤT
+
+★ Dòng nào nghi ngờ → VIẾT LẠI DÒNG ĐÓ NGAY, đừng in ra rồi chờ người dùng báo.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+              KHI NGƯỜI DÙNG BÁO LỖI
+═══════════════════════════════════════════════════════════════════════════════
+Người dùng gõ "scene 015 hỏng", hoặc dán nguyên thông báo lỗi vào.
+
+  • In LẠI ĐÚNG dòng đó trong 1 khối code nhỏ, đã sửa, kèm 1 câu nói rõ sai gì.
+  • CẤM in lại cả phase.
+  • CẤM xin lỗi dài dòng rồi mới sửa.
+  • CẤM hỏi "bạn có muốn tôi sửa không?".
+
+★ Sửa xong rà nốt các dòng còn lại xem có dính cùng lỗi không, sửa luôn 1 thể.
+
+
+###############################################################################
+#  HẾT LUẬT XUẤT JSON v1.1 (đi kèm WILD V4.2)                                #
+###############################################################################

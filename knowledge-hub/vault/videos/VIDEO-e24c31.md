@@ -50,7 +50,7 @@ player_url: "/player.html?sku=VIDEO-e24c31&track=h2dev"
 - [[tools/google|Google]]
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
-- [[channels/복이오는길|@복이오는길]] *(DIE)*
+- [[channels/복이오는길|@복이오는길]]
 - [[channels/mokamoka-e9f|@mokamoka-e9f]] *(DIE)*
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)

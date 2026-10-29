@@ -1,12 +1,12 @@
 ---
 handle: "@TRESube156"
-name: "@TRESube156"
+name: "TRE Sube"
 url: "https://www.youtube.com/@TRESube156"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TRESube156 (@TRESube156)
+# Kênh Đối Thủ / Kênh Mẫu: @TRESube156 (TRE Sube)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TRESube156](https://www.youtube.com/@TRESube156)

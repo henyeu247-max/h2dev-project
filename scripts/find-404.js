@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const BASE = (process.argv[2] || 'https://97yo-dev-learn.tonymmo.com').replace(/\/$/, '');
+const BASE = (process.argv[2] || 'http://127.0.0.1:8899').replace(/\/$/, '');
 const CHROME = process.env.CHROME_PATH || 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 
 function readSpaRoutes() {

@@ -150,7 +150,27 @@ const NICHE_MAP = {
   "Tư duy kỳ diệu Hàn Quốc": "Triết lý / Tâm linh",
   "Vạn dặm tâm sự thầm kín": "Drama / Stories",
   "Động lực / Đức tin US": "Triết lý / Tâm linh",
-  "Đức tin / Lời cầu nguyện US": "Triết lý / Tâm linh"
+  "Đức tin / Lời cầu nguyện US": "Triết lý / Tâm linh",
+  "Khảo cổ học / Tiền sử & Nền văn minh Đã mất (Sumer, Anunnaki, Göbekli Tepe)": "Lịch sử / Quân sự",
+  "Wildlife documentary / animal behavior / conservation": "Khoa học EN",
+  "Tội phạm Kinh tế / Dark Crime & Bodycam Điều tra (FOIA / The Paper Trail)": "Kinh tế / Tài chính",
+  "Học Tiếng Anh Thụ Động / Comprehensible Input & Hội thoại Đời sống 2 Tốc độ": "Khoa học EN",
+  "Hoạt hình 3D AI / Pixar-Style / Truyện Cổ tích & IP Gia đình (Story-to-Animation)": "Reup / Hoạt hình",
+  "Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K": "Drama / Stories",
+  "Discovery / Địa lý Tò mò / Khám phá Thế giới & Du lịch Quốc tế 4K": "Khoa học EN",
+  "Âm nhạc AI / Nhạc Cổ Phong / Lofi / Retro 80s-90s & Visualizer": "Nền tảng / Tool",
+  "Tôn giáo / Triết lý / Tâm linh": "Triết lý / Tâm linh",
+  "Sức khỏe / Dưỡng sinh / Senior Wisdom": "Sức khỏe / Lão hóa",
+  "Tài chính / Kinh tế / Địa chính trị": "Kinh tế / Tài chính",
+  "Tội phạm Kinh tế / Dark Crime & Điều tra": "Kinh tế / Tài chính",
+  "Lịch sử / Khảo cổ / Văn minh cổ đại": "Lịch sử / Quân sự",
+  "Khoa học / Vũ trụ / Khám phá": "Khoa học EN",
+  "Thiên nhiên / Sinh tồn / Động vật hoang dã": "Khoa học EN",
+  "Học Tiếng Anh Thụ Động / ESL": "Khoa học EN",
+  "Điện ảnh AI / Hoạt hình / Kể chuyện": "Drama / Stories",
+  "Người que / 2D Explainer": "Edit / Thumb",
+  "Meta-Prompt & Packaging SEO": "Nền tảng / Tool",
+  "Âm nhạc AI / Lofi / Cổ phong": "Nền tảng / Tool"
 };
   global.H2Taxonomy = {
     RAW_NICHE_GROUPS: RAW_NICHE_GROUPS,

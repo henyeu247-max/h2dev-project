@@ -1,12 +1,12 @@
 ---
 handle: "@똑똑해지는경제학-m2y"
-name: "@똑똑해지는경제학-m2y"
+name: "똑똑해지는 경제학"
 url: "https://www.youtube.com/@똑똑해지는경제학-m2y"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @똑똑해지는경제학-m2y (@똑똑해지는경제학-m2y)
+# Kênh Đối Thủ / Kênh Mẫu: @똑똑해지는경제학-m2y (똑똑해지는 경제학)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@똑똑해지는경제학-m2y](https://www.youtube.com/@똑똑해지는경제학-m2y)

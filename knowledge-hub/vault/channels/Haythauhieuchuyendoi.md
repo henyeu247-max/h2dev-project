@@ -1,12 +1,12 @@
 ---
 handle: "@Haythauhieuchuyendoi"
-name: "@Haythauhieuchuyendoi"
+name: "Thấu Hiểu Chuyện Đời"
 url: "https://www.youtube.com/@Haythauhieuchuyendoi"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Haythauhieuchuyendoi (@Haythauhieuchuyendoi)
+# Kênh Đối Thủ / Kênh Mẫu: @Haythauhieuchuyendoi (Thấu Hiểu Chuyện Đời)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Haythauhieuchuyendoi](https://www.youtube.com/@Haythauhieuchuyendoi)

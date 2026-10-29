@@ -11,7 +11,7 @@ videos_count: 1
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ni-i7i](https://www.youtube.com/@ni-i7i)
 - **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
-- **Ngách (kenh-mau.json):** `Khác`
+- **Ngách (kenh-mau.json):** `Drama / Stories`
 - **Thị trường:** `🇯🇵 Nhật, 🇰🇷 Hàn`
 
 ## Các Video Bài Giảng Phân Tích Kênh Này (1)

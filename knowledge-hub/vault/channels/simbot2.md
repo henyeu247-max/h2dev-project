@@ -1,12 +1,12 @@
 ---
 handle: "@simbot2"
-name: "@simbot2"
+name: "노년의 마음소리"
 url: "https://www.youtube.com/@simbot2"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @simbot2 (@simbot2)
+# Kênh Đối Thủ / Kênh Mẫu: @simbot2 (노년의 마음소리)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@simbot2](https://www.youtube.com/@simbot2)

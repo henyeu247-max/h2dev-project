@@ -87,7 +87,11 @@
     "mp4": "video/VIDEO-78d170/VIDEO-78d170.mp4",
     "file": "video/VIDEO-78d170/VIDEO-78d170.mp4",
     "size": 200647309,
-    "size_mb": 191.35
+    "size_mb": 191.35,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 2,
@@ -193,7 +197,11 @@
     "mp4": "video/VIDEO-6cb984/VIDEO-6cb984.mp4",
     "file": "video/VIDEO-6cb984/VIDEO-6cb984.mp4",
     "size": 435813184,
-    "size_mb": 415.62
+    "size_mb": 415.62,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 3,
@@ -305,7 +313,11 @@
     "mp4": "video/VIDEO-2d88bc/VIDEO-2d88bc.mp4",
     "file": "video/VIDEO-2d88bc/VIDEO-2d88bc.mp4",
     "size": 85094764,
-    "size_mb": 81.15
+    "size_mb": 81.15,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 4,
@@ -471,7 +483,11 @@
     "mp4": "video/VIDEO-3e65d6/VIDEO-3e65d6.mp4",
     "file": "video/VIDEO-3e65d6/VIDEO-3e65d6.mp4",
     "size": 236268489,
-    "size_mb": 225.32
+    "size_mb": 225.32,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 5,
@@ -588,7 +604,11 @@
     "mp4": "video/VIDEO-826ad0/VIDEO-826ad0.mp4",
     "file": "video/VIDEO-826ad0/VIDEO-826ad0.mp4",
     "size": 137829986,
-    "size_mb": 131.44
+    "size_mb": 131.44,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 6,
@@ -695,7 +715,11 @@
     "mp4": "video/VIDEO-de250a/VIDEO-de250a.mp4",
     "file": "video/VIDEO-de250a/VIDEO-de250a.mp4",
     "size": 133273445,
-    "size_mb": 127.1
+    "size_mb": 127.1,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 7,
@@ -838,7 +862,11 @@
     "mp4": "video/VIDEO-931b63/VIDEO-931b63.mp4",
     "file": "video/VIDEO-931b63/VIDEO-931b63.mp4",
     "size": 291152632,
-    "size_mb": 277.66
+    "size_mb": 277.66,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 8,
@@ -941,7 +969,11 @@
     "mp4": "video/VIDEO-748062/VIDEO-748062.mp4",
     "file": "video/VIDEO-748062/VIDEO-748062.mp4",
     "size": 278462684,
-    "size_mb": 265.56
+    "size_mb": 265.56,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 9,
@@ -1053,7 +1085,12 @@
     "mp4": "video/VIDEO-6eaa34/VIDEO-6eaa34.mp4",
     "file": "video/VIDEO-6eaa34/VIDEO-6eaa34.mp4",
     "size": 617943367,
-    "size_mb": 589.32
+    "size_mb": 589.32,
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H06"
+    ]
   },
   {
     "index": 10,
@@ -1101,7 +1138,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bài Tập 2 (Phải Làm): Mẫu Mô Hình Hóa Dream 100 Kênh Phát Triển Bản Thân (48 Trang)",
@@ -1189,7 +1227,11 @@
     "mp4": "video/VIDEO-f8a932/VIDEO-f8a932.mp4",
     "file": "video/VIDEO-f8a932/VIDEO-f8a932.mp4",
     "size": 360011260,
-    "size_mb": 343.33
+    "size_mb": 343.33,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 11,
@@ -1293,7 +1335,11 @@
     "mp4": "video/VIDEO-f2361a/VIDEO-f2361a.mp4",
     "file": "video/VIDEO-f2361a/VIDEO-f2361a.mp4",
     "size": 447622412,
-    "size_mb": 426.89
+    "size_mb": 426.89,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 12,
@@ -1391,7 +1437,11 @@
     "mp4": "video/VIDEO-2167d7/VIDEO-2167d7.mp4",
     "file": "video/VIDEO-2167d7/VIDEO-2167d7.mp4",
     "size": 662370177,
-    "size_mb": 631.69
+    "size_mb": 631.69,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 13,
@@ -1534,7 +1584,16 @@
     "mp4": "video/VIDEO-3936ab/VIDEO-3936ab.mp4",
     "file": "video/VIDEO-3936ab/VIDEO-3936ab.mp4",
     "size": 670854273,
-    "size_mb": 639.78
+    "size_mb": 639.78,
+    "nicheCode": "H18",
+    "nicheCodes": [
+      "H18",
+      "H19",
+      "H27",
+      "H30",
+      "H31",
+      "H32"
+    ]
   },
   {
     "index": 14,
@@ -1662,7 +1721,13 @@
     "mp4": "video/VIDEO-d6ff5d/VIDEO-d6ff5d.mp4",
     "file": "video/VIDEO-d6ff5d/VIDEO-d6ff5d.mp4",
     "size": 329859714,
-    "size_mb": 314.58
+    "size_mb": 314.58,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ]
   },
   {
     "index": 15,
@@ -1861,7 +1926,25 @@
     "mp4": "video/VIDEO-f72ddb/VIDEO-f72ddb.mp4",
     "file": "video/VIDEO-f72ddb/VIDEO-f72ddb.mp4",
     "size": 746631212,
-    "size_mb": 712.04
+    "size_mb": 712.04,
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H02",
+      "H08",
+      "H09",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H23",
+      "H26",
+      "H34"
+    ]
   },
   {
     "index": 16,
@@ -1942,7 +2025,11 @@
     "mp4": "video/VIDEO-ba7795/VIDEO-ba7795.mp4",
     "file": "video/VIDEO-ba7795/VIDEO-ba7795.mp4",
     "size": 125252095,
-    "size_mb": 119.45
+    "size_mb": 119.45,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 17,
@@ -2033,7 +2120,11 @@
     "mp4": "video/VIDEO-2be690/VIDEO-2be690.mp4",
     "file": "video/VIDEO-2be690/VIDEO-2be690.mp4",
     "size": 119743222,
-    "size_mb": 114.2
+    "size_mb": 114.2,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 18,
@@ -2168,7 +2259,13 @@
     "mp4": "video/VIDEO-dd6e77/VIDEO-dd6e77.mp4",
     "file": "video/VIDEO-dd6e77/VIDEO-dd6e77.mp4",
     "size": 277371984,
-    "size_mb": 264.52
+    "size_mb": 264.52,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H07",
+      "H10"
+    ]
   },
   {
     "index": 19,
@@ -2258,7 +2355,11 @@
     "mp4": "video/VIDEO-247cf8/VIDEO-247cf8.mp4",
     "file": "video/VIDEO-247cf8/VIDEO-247cf8.mp4",
     "size": 18897524,
-    "size_mb": 18.02
+    "size_mb": 18.02,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 20,
@@ -2372,7 +2473,12 @@
     "mp4": "video/VIDEO-49833b/VIDEO-49833b.mp4",
     "file": "video/VIDEO-49833b/VIDEO-49833b.mp4",
     "size": 301474998,
-    "size_mb": 287.51
+    "size_mb": 287.51,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H10"
+    ]
   },
   {
     "index": 21,
@@ -2507,7 +2613,11 @@
     "mp4": "video/VIDEO-cdea66/VIDEO-cdea66.mp4",
     "file": "video/VIDEO-cdea66/VIDEO-cdea66.mp4",
     "size": 247830079,
-    "size_mb": 236.35
+    "size_mb": 236.35,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 22,
@@ -2614,7 +2724,12 @@
     "mp4": "video/VIDEO-548530/VIDEO-548530.mp4",
     "file": "video/VIDEO-548530/VIDEO-548530.mp4",
     "size": 97582159,
-    "size_mb": 93.06
+    "size_mb": 93.06,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H10"
+    ]
   },
   {
     "index": 23,
@@ -2714,7 +2829,11 @@
     "mp4": "video/VIDEO-b7c282/VIDEO-b7c282.mp4",
     "file": "video/VIDEO-b7c282/VIDEO-b7c282.mp4",
     "size": 50241752,
-    "size_mb": 47.91
+    "size_mb": 47.91,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 24,
@@ -2762,7 +2881,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bảng Tiêu Chí Đánh Giá & Lựa Chọn Chủ Đề (GODA Level Chủ Đề)",
@@ -2805,7 +2925,11 @@
     "mp4": "video/VIDEO-b4c132/VIDEO-b4c132.mp4",
     "file": "video/VIDEO-b4c132/VIDEO-b4c132.mp4",
     "size": 162938556,
-    "size_mb": 155.39
+    "size_mb": 155.39,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 25,
@@ -2853,7 +2977,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bảng Tiêu Chí Đánh Giá & Lựa Chọn Chủ Đề (GODA Level Chủ Đề)",
@@ -2918,7 +3043,11 @@
     "mp4": "video/VIDEO-c14178/VIDEO-c14178.mp4",
     "file": "video/VIDEO-c14178/VIDEO-c14178.mp4",
     "size": 133205637,
-    "size_mb": 127.03
+    "size_mb": 127.03,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 26,
@@ -3023,7 +3152,11 @@
     "mp4": "video/VIDEO-f0290d/VIDEO-f0290d.mp4",
     "file": "video/VIDEO-f0290d/VIDEO-f0290d.mp4",
     "size": 61737998,
-    "size_mb": 58.88
+    "size_mb": 58.88,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 27,
@@ -3121,7 +3254,11 @@
     "mp4": "video/VIDEO-8a3f22/VIDEO-8a3f22.mp4",
     "file": "video/VIDEO-8a3f22/VIDEO-8a3f22.mp4",
     "size": 186988106,
-    "size_mb": 178.33
+    "size_mb": 178.33,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 28,
@@ -3247,7 +3384,11 @@
     "mp4": "video/VIDEO-ffea40/VIDEO-ffea40.mp4",
     "file": "video/VIDEO-ffea40/VIDEO-ffea40.mp4",
     "size": 127986752,
-    "size_mb": 122.06
+    "size_mb": 122.06,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 29,
@@ -3338,7 +3479,11 @@
     "mp4": "video/VIDEO-6b8e09/VIDEO-6b8e09.mp4",
     "file": "video/VIDEO-6b8e09/VIDEO-6b8e09.mp4",
     "size": 76515556,
-    "size_mb": 72.97
+    "size_mb": 72.97,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 30,
@@ -3474,7 +3619,11 @@
     "mp4": "video/VIDEO-33f933/VIDEO-33f933.mp4",
     "file": "video/VIDEO-33f933/VIDEO-33f933.mp4",
     "size": 136146835,
-    "size_mb": 129.84
+    "size_mb": 129.84,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 31,
@@ -3577,7 +3726,11 @@
     "mp4": "video/VIDEO-9607ea/VIDEO-9607ea.mp4",
     "file": "video/VIDEO-9607ea/VIDEO-9607ea.mp4",
     "size": 381142380,
-    "size_mb": 363.49
+    "size_mb": 363.49,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 32,
@@ -3669,7 +3822,11 @@
     "mp4": "video/VIDEO-cce46d/VIDEO-cce46d.mp4",
     "file": "video/VIDEO-cce46d/VIDEO-cce46d.mp4",
     "size": 183404350,
-    "size_mb": 174.91
+    "size_mb": 174.91,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 33,
@@ -3799,7 +3956,11 @@
     "mp4": "video/VIDEO-631fd6/VIDEO-631fd6.mp4",
     "file": "video/VIDEO-631fd6/VIDEO-631fd6.mp4",
     "size": 260704600,
-    "size_mb": 248.63
+    "size_mb": 248.63,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 34,
@@ -3931,7 +4092,11 @@
     "mp4": "video/VIDEO-177e62/VIDEO-177e62.mp4",
     "file": "video/VIDEO-177e62/VIDEO-177e62.mp4",
     "size": 127952650,
-    "size_mb": 122.03
+    "size_mb": 122.03,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 35,
@@ -4043,7 +4208,12 @@
     "mp4": "video/VIDEO-49a108/VIDEO-49a108.mp4",
     "file": "video/VIDEO-49a108/VIDEO-49a108.mp4",
     "size": 240995160,
-    "size_mb": 229.83
+    "size_mb": 229.83,
+    "nicheCode": "H24",
+    "nicheCodes": [
+      "H24",
+      "H29"
+    ]
   },
   {
     "index": 36,
@@ -4163,7 +4333,11 @@
     "mp4": "video/VIDEO-eb5891/VIDEO-eb5891.mp4",
     "file": "video/VIDEO-eb5891/VIDEO-eb5891.mp4",
     "size": 105447576,
-    "size_mb": 100.56
+    "size_mb": 100.56,
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ]
   },
   {
     "index": 37,
@@ -4283,7 +4457,12 @@
     "mp4": "video/VIDEO-227162/VIDEO-227162.mp4",
     "file": "video/VIDEO-227162/VIDEO-227162.mp4",
     "size": 138751453,
-    "size_mb": 132.32
+    "size_mb": 132.32,
+    "nicheCode": "H24",
+    "nicheCodes": [
+      "H24",
+      "H29"
+    ]
   },
   {
     "index": 38,
@@ -4421,7 +4600,11 @@
     "mp4": "video/VIDEO-420b07/VIDEO-420b07.mp4",
     "file": "video/VIDEO-420b07/VIDEO-420b07.mp4",
     "size": 107613835,
-    "size_mb": 102.63
+    "size_mb": 102.63,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 39,
@@ -4565,7 +4748,11 @@
     "mp4": "video/VIDEO-0449a3/VIDEO-0449a3.mp4",
     "file": "video/VIDEO-0449a3/VIDEO-0449a3.mp4",
     "size": 267785779,
-    "size_mb": 255.38
+    "size_mb": 255.38,
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ]
   },
   {
     "index": 40,
@@ -4688,7 +4875,11 @@
     "mp4": "video/VIDEO-f78a7f/VIDEO-f78a7f.mp4",
     "file": "video/VIDEO-f78a7f/VIDEO-f78a7f.mp4",
     "size": 54555570,
-    "size_mb": 52.03
+    "size_mb": 52.03,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 41,
@@ -4814,7 +5005,12 @@
     "mp4": "video/VIDEO-99414d/VIDEO-99414d.mp4",
     "file": "video/VIDEO-99414d/VIDEO-99414d.mp4",
     "size": 246793750,
-    "size_mb": 235.36
+    "size_mb": 235.36,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H29"
+    ]
   },
   {
     "index": 42,
@@ -4948,7 +5144,11 @@
     "mp4": "video/VIDEO-917df2/VIDEO-917df2.mp4",
     "file": "video/VIDEO-917df2/VIDEO-917df2.mp4",
     "size": 102542398,
-    "size_mb": 97.79
+    "size_mb": 97.79,
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ]
   },
   {
     "index": 43,
@@ -5039,7 +5239,11 @@
     "mp4": "video/VIDEO-e63489/VIDEO-e63489.mp4",
     "file": "video/VIDEO-e63489/VIDEO-e63489.mp4",
     "size": 46775812,
-    "size_mb": 44.61
+    "size_mb": 44.61,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 44,
@@ -5148,7 +5352,11 @@
     "mp4": "video/VIDEO-cf5172/VIDEO-cf5172.mp4",
     "file": "video/VIDEO-cf5172/VIDEO-cf5172.mp4",
     "size": 293154536,
-    "size_mb": 279.57
+    "size_mb": 279.57,
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ]
   },
   {
     "index": 45,
@@ -5251,7 +5459,11 @@
     "mp4": "video/VIDEO-e816e0/VIDEO-e816e0.mp4",
     "file": "video/VIDEO-e816e0/VIDEO-e816e0.mp4",
     "size": 64785720,
-    "size_mb": 61.78
+    "size_mb": 61.78,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 46,
@@ -5359,7 +5571,11 @@
     "mp4": "video/VIDEO-b2812f/VIDEO-b2812f.mp4",
     "file": "video/VIDEO-b2812f/VIDEO-b2812f.mp4",
     "size": 84136176,
-    "size_mb": 80.24
+    "size_mb": 80.24,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 47,
@@ -5478,7 +5694,11 @@
     "mp4": "video/VIDEO-c94e5a/VIDEO-c94e5a.mp4",
     "file": "video/VIDEO-c94e5a/VIDEO-c94e5a.mp4",
     "size": 86525874,
-    "size_mb": 82.52
+    "size_mb": 82.52,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 48,
@@ -5636,7 +5856,15 @@
     "mp4": "video/VIDEO-af90f4/VIDEO-af90f4.mp4",
     "file": "video/VIDEO-af90f4/VIDEO-af90f4.mp4",
     "size": 192986155,
-    "size_mb": 184.05
+    "size_mb": 184.05,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H11",
+      "H17",
+      "H18",
+      "H19"
+    ]
   },
   {
     "index": 49,
@@ -5814,7 +6042,11 @@
     "mp4": "video/VIDEO-5c20aa/VIDEO-5c20aa.mp4",
     "file": "video/VIDEO-5c20aa/VIDEO-5c20aa.mp4",
     "size": 273478408,
-    "size_mb": 260.81
+    "size_mb": 260.81,
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ]
   },
   {
     "index": 50,
@@ -5921,7 +6153,11 @@
     "mp4": "video/VIDEO-83da88/VIDEO-83da88.mp4",
     "file": "video/VIDEO-83da88/VIDEO-83da88.mp4",
     "size": 162786168,
-    "size_mb": 155.24
+    "size_mb": 155.24,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 51,
@@ -6029,7 +6265,11 @@
     "mp4": "video/VIDEO-c9ec3e/VIDEO-c9ec3e.mp4",
     "file": "video/VIDEO-c9ec3e/VIDEO-c9ec3e.mp4",
     "size": 1037489435,
-    "size_mb": 989.43
+    "size_mb": 989.43,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 52,
@@ -6127,7 +6367,11 @@
     "mp4": "video/VIDEO-692285/VIDEO-692285.mp4",
     "file": "video/VIDEO-692285/VIDEO-692285.mp4",
     "size": 1317769177,
-    "size_mb": 1256.72
+    "size_mb": 1256.72,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 53,
@@ -6224,7 +6468,11 @@
     "mp4": "video/VIDEO-22064e/VIDEO-22064e.mp4",
     "file": "video/VIDEO-22064e/VIDEO-22064e.mp4",
     "size": 311159219,
-    "size_mb": 296.74
+    "size_mb": 296.74,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 54,
@@ -6320,7 +6568,11 @@
     "mp4": "video/VIDEO-254b84/VIDEO-254b84.mp4",
     "file": "video/VIDEO-254b84/VIDEO-254b84.mp4",
     "size": 403797424,
-    "size_mb": 385.09
+    "size_mb": 385.09,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 55,
@@ -6418,7 +6670,11 @@
     "mp4": "video/VIDEO-5ed810/VIDEO-5ed810.mp4",
     "file": "video/VIDEO-5ed810/VIDEO-5ed810.mp4",
     "size": 1224774587,
-    "size_mb": 1168.04
+    "size_mb": 1168.04,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 56,
@@ -6531,7 +6787,11 @@
     "mp4": "video/VIDEO-ddbb77/VIDEO-ddbb77.mp4",
     "file": "video/VIDEO-ddbb77/VIDEO-ddbb77.mp4",
     "size": 959260588,
-    "size_mb": 914.82
+    "size_mb": 914.82,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 57,
@@ -6629,7 +6889,11 @@
     "mp4": "video/VIDEO-e6f3eb/VIDEO-e6f3eb.mp4",
     "file": "video/VIDEO-e6f3eb/VIDEO-e6f3eb.mp4",
     "size": 835058468,
-    "size_mb": 796.37
+    "size_mb": 796.37,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 58,
@@ -6735,7 +6999,11 @@
     "mp4": "video/VIDEO-fcfb1d/VIDEO-fcfb1d.mp4",
     "file": "video/VIDEO-fcfb1d/VIDEO-fcfb1d.mp4",
     "size": 1026758258,
-    "size_mb": 979.19
+    "size_mb": 979.19,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 59,
@@ -6842,7 +7110,11 @@
     "mp4": "video/VIDEO-60d842/VIDEO-60d842.mp4",
     "file": "video/VIDEO-60d842/VIDEO-60d842.mp4",
     "size": 407818273,
-    "size_mb": 388.93
+    "size_mb": 388.93,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 60,
@@ -6949,7 +7221,11 @@
     "mp4": "video/VIDEO-ebc8ea/VIDEO-ebc8ea.mp4",
     "file": "video/VIDEO-ebc8ea/VIDEO-ebc8ea.mp4",
     "size": 852719807,
-    "size_mb": 813.22
+    "size_mb": 813.22,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 61,
@@ -7049,7 +7325,11 @@
     "mp4": "video/VIDEO-19ccdb/VIDEO-19ccdb.mp4",
     "file": "video/VIDEO-19ccdb/VIDEO-19ccdb.mp4",
     "size": 293856830,
-    "size_mb": 280.24
+    "size_mb": 280.24,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 62,
@@ -7149,7 +7429,11 @@
     "mp4": "video/VIDEO-7d4bac/VIDEO-7d4bac.mp4",
     "file": "video/VIDEO-7d4bac/VIDEO-7d4bac.mp4",
     "size": 555772363,
-    "size_mb": 530.03
+    "size_mb": 530.03,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 63,
@@ -7261,7 +7545,11 @@
     "mp4": "video/VIDEO-86811c/VIDEO-86811c.mp4",
     "file": "video/VIDEO-86811c/VIDEO-86811c.mp4",
     "size": 663245913,
-    "size_mb": 632.52
+    "size_mb": 632.52,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 64,
@@ -7359,7 +7647,11 @@
     "mp4": "video/VIDEO-53c107/VIDEO-53c107.mp4",
     "file": "video/VIDEO-53c107/VIDEO-53c107.mp4",
     "size": 169204413,
-    "size_mb": 161.37
+    "size_mb": 161.37,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 65,
@@ -7457,7 +7749,11 @@
     "mp4": "video/VIDEO-90c9dc/VIDEO-90c9dc.mp4",
     "file": "video/VIDEO-90c9dc/VIDEO-90c9dc.mp4",
     "size": 176229150,
-    "size_mb": 168.07
+    "size_mb": 168.07,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 66,
@@ -7546,7 +7842,11 @@
     "mp4": "video/VIDEO-e89644/VIDEO-e89644.mp4",
     "file": "video/VIDEO-e89644/VIDEO-e89644.mp4",
     "size": 609935049,
-    "size_mb": 581.68
+    "size_mb": 581.68,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 67,
@@ -7629,7 +7929,11 @@
     "mp4": "video/VIDEO-c99634/VIDEO-c99634.mp4",
     "file": "video/VIDEO-c99634/VIDEO-c99634.mp4",
     "size": 171426206,
-    "size_mb": 163.48
+    "size_mb": 163.48,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 68,
@@ -7718,7 +8022,11 @@
     "mp4": "video/VIDEO-eda696/VIDEO-eda696.mp4",
     "file": "video/VIDEO-eda696/VIDEO-eda696.mp4",
     "size": 83212893,
-    "size_mb": 79.36
+    "size_mb": 79.36,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 69,
@@ -7809,7 +8117,11 @@
     "mp4": "video/VIDEO-743e29/VIDEO-743e29.mp4",
     "file": "video/VIDEO-743e29/VIDEO-743e29.mp4",
     "size": 124846889,
-    "size_mb": 119.06
+    "size_mb": 119.06,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 70,
@@ -7888,7 +8200,11 @@
     "mp4": "video/VIDEO-4868d7/VIDEO-4868d7.mp4",
     "file": "video/VIDEO-4868d7/VIDEO-4868d7.mp4",
     "size": 41398541,
-    "size_mb": 39.48
+    "size_mb": 39.48,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 71,
@@ -7968,7 +8284,11 @@
     "mp4": "video/VIDEO-fd940d/VIDEO-fd940d.mp4",
     "file": "video/VIDEO-fd940d/VIDEO-fd940d.mp4",
     "size": 50042430,
-    "size_mb": 47.72
+    "size_mb": 47.72,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 72,
@@ -8048,7 +8368,11 @@
     "mp4": "video/VIDEO-2f2c97/VIDEO-2f2c97.mp4",
     "file": "video/VIDEO-2f2c97/VIDEO-2f2c97.mp4",
     "size": 92976778,
-    "size_mb": 88.67
+    "size_mb": 88.67,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 73,
@@ -8196,7 +8520,13 @@
     "mp4": "video/VIDEO-1ead1c/VIDEO-1ead1c.mp4",
     "file": "video/VIDEO-1ead1c/VIDEO-1ead1c.mp4",
     "size": 656753201,
-    "size_mb": 626.33
+    "size_mb": 626.33,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H27",
+      "H28"
+    ]
   },
   {
     "index": 74,
@@ -8305,7 +8635,11 @@
     "mp4": "video/VIDEO-16667f/VIDEO-16667f.mp4",
     "file": "video/VIDEO-16667f/VIDEO-16667f.mp4",
     "size": 304127091,
-    "size_mb": 290.04
+    "size_mb": 290.04,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 75,
@@ -8362,7 +8696,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Danh Sách Ngách & Kênh Mẫu Bán Content (BAN_CONTENT.xlsx)",
@@ -8425,7 +8760,11 @@
     "mp4": "video/VIDEO-277335/VIDEO-277335.mp4",
     "file": "video/VIDEO-277335/VIDEO-277335.mp4",
     "size": 424730248,
-    "size_mb": 405.05
+    "size_mb": 405.05,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 76,
@@ -8517,7 +8856,11 @@
     "mp4": "video/VIDEO-88cb46/VIDEO-88cb46.mp4",
     "file": "video/VIDEO-88cb46/VIDEO-88cb46.mp4",
     "size": 203769658,
-    "size_mb": 194.33
+    "size_mb": 194.33,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 77,
@@ -8607,7 +8950,11 @@
     "mp4": "video/VIDEO-684a35/VIDEO-684a35.mp4",
     "file": "video/VIDEO-684a35/VIDEO-684a35.mp4",
     "size": 158854641,
-    "size_mb": 151.5
+    "size_mb": 151.5,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 78,
@@ -8763,7 +9110,15 @@
     "mp4": "video/VIDEO-42f5cf/VIDEO-42f5cf.mp4",
     "file": "video/VIDEO-42f5cf/VIDEO-42f5cf.mp4",
     "size": 654776932,
-    "size_mb": 624.44
+    "size_mb": 624.44,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16",
+      "H18",
+      "H19"
+    ]
   },
   {
     "index": 79,
@@ -8901,7 +9256,13 @@
     "mp4": "video/VIDEO-94be0f/VIDEO-94be0f.mp4",
     "file": "video/VIDEO-94be0f/VIDEO-94be0f.mp4",
     "size": 408831123,
-    "size_mb": 389.89
+    "size_mb": 389.89,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ]
   },
   {
     "index": 80,
@@ -9021,7 +9382,13 @@
     "mp4": "video/VIDEO-c8df1e/VIDEO-c8df1e.mp4",
     "file": "video/VIDEO-c8df1e/VIDEO-c8df1e.mp4",
     "size": 589031262,
-    "size_mb": 561.74
+    "size_mb": 561.74,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ]
   },
   {
     "index": 81,
@@ -9150,7 +9517,13 @@
     "mp4": "video/VIDEO-ed1091/VIDEO-ed1091.mp4",
     "file": "video/VIDEO-ed1091/VIDEO-ed1091.mp4",
     "size": 260849820,
-    "size_mb": 248.77
+    "size_mb": 248.77,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ]
   },
   {
     "index": 82,
@@ -9289,7 +9662,13 @@
     "mp4": "video/VIDEO-573b94/VIDEO-573b94.mp4",
     "file": "video/VIDEO-573b94/VIDEO-573b94.mp4",
     "size": 414631442,
-    "size_mb": 395.42
+    "size_mb": 395.42,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ]
   },
   {
     "index": 83,
@@ -9387,7 +9766,11 @@
     "mp4": "video/VIDEO-e26a17/VIDEO-e26a17.mp4",
     "file": "video/VIDEO-e26a17/VIDEO-e26a17.mp4",
     "size": 142276887,
-    "size_mb": 135.69
+    "size_mb": 135.69,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 84,
@@ -9540,7 +9923,11 @@
     "mp4": "video/VIDEO-ac2223/VIDEO-ac2223.mp4",
     "file": "video/VIDEO-ac2223/VIDEO-ac2223.mp4",
     "size": 1368100032,
-    "size_mb": 1304.72
+    "size_mb": 1304.72,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 85,
@@ -9660,7 +10047,11 @@
     "mp4": "video/VIDEO-840a95/VIDEO-840a95.mp4",
     "file": "video/VIDEO-840a95/VIDEO-840a95.mp4",
     "size": 755763311,
-    "size_mb": 720.75
+    "size_mb": 720.75,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 86,
@@ -9762,7 +10153,11 @@
     "mp4": "video/VIDEO-bdbb26/VIDEO-bdbb26.mp4",
     "file": "video/VIDEO-bdbb26/VIDEO-bdbb26.mp4",
     "size": 873600611,
-    "size_mb": 833.13
+    "size_mb": 833.13,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 87,
@@ -9882,7 +10277,11 @@
     "mp4": "video/VIDEO-e223d6/VIDEO-e223d6.mp4",
     "file": "video/VIDEO-e223d6/VIDEO-e223d6.mp4",
     "size": 1189202743,
-    "size_mb": 1134.11
+    "size_mb": 1134.11,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 88,
@@ -9993,7 +10392,11 @@
     "mp4": "video/VIDEO-e0c618/VIDEO-e0c618.mp4",
     "file": "video/VIDEO-e0c618/VIDEO-e0c618.mp4",
     "size": 489791572,
-    "size_mb": 467.1
+    "size_mb": 467.1,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 89,
@@ -10085,7 +10488,11 @@
     "mp4": "video/VIDEO-6f9e8f/VIDEO-6f9e8f.mp4",
     "file": "video/VIDEO-6f9e8f/VIDEO-6f9e8f.mp4",
     "size": 1007929383,
-    "size_mb": 961.24
+    "size_mb": 961.24,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 90,
@@ -10177,7 +10584,11 @@
     "mp4": "video/VIDEO-8d78b4/VIDEO-8d78b4.mp4",
     "file": "video/VIDEO-8d78b4/VIDEO-8d78b4.mp4",
     "size": 562771983,
-    "size_mb": 536.7
+    "size_mb": 536.7,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 91,
@@ -10275,7 +10686,11 @@
     "mp4": "video/VIDEO-bf9e91/VIDEO-bf9e91.mp4",
     "file": "video/VIDEO-bf9e91/VIDEO-bf9e91.mp4",
     "size": 287921569,
-    "size_mb": 274.58
+    "size_mb": 274.58,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 92,
@@ -10371,7 +10786,11 @@
     "mp4": "video/VIDEO-47dc80/VIDEO-47dc80.mp4",
     "file": "video/VIDEO-47dc80/VIDEO-47dc80.mp4",
     "size": 94156877,
-    "size_mb": 89.79
+    "size_mb": 89.79,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 93,
@@ -10462,7 +10881,11 @@
     "mp4": "video/VIDEO-042a01/VIDEO-042a01.mp4",
     "file": "video/VIDEO-042a01/VIDEO-042a01.mp4",
     "size": 113369724,
-    "size_mb": 108.12
+    "size_mb": 108.12,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 94,
@@ -10565,7 +10988,11 @@
     "mp4": "video/VIDEO-1bb8ec/VIDEO-1bb8ec.mp4",
     "file": "video/VIDEO-1bb8ec/VIDEO-1bb8ec.mp4",
     "size": 430473129,
-    "size_mb": 410.53
+    "size_mb": 410.53,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 95,
@@ -10657,7 +11084,11 @@
     "mp4": "video/VIDEO-b522d6/VIDEO-b522d6.mp4",
     "file": "video/VIDEO-b522d6/VIDEO-b522d6.mp4",
     "size": 128046785,
-    "size_mb": 122.11
+    "size_mb": 122.11,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 96,
@@ -10748,7 +11179,11 @@
     "mp4": "video/VIDEO-f0f469/VIDEO-f0f469.mp4",
     "file": "video/VIDEO-f0f469/VIDEO-f0f469.mp4",
     "size": 180390127,
-    "size_mb": 172.03
+    "size_mb": 172.03,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 97,
@@ -10846,7 +11281,13 @@
     "mp4": "video/VIDEO-f83f59/VIDEO-f83f59.mp4",
     "file": "video/VIDEO-f83f59/VIDEO-f83f59.mp4",
     "size": 445615230,
-    "size_mb": 424.97
+    "size_mb": 424.97,
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H20",
+      "H34"
+    ]
   },
   {
     "index": 98,
@@ -11036,7 +11477,12 @@
     "mp4": "video/VIDEO-a9a03e/VIDEO-a9a03e.mp4",
     "file": "video/VIDEO-a9a03e/VIDEO-a9a03e.mp4",
     "size": 2229070658,
-    "size_mb": 2125.81
+    "size_mb": 2125.81,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H25"
+    ]
   },
   {
     "index": 99,
@@ -11209,7 +11655,17 @@
     "mp4": "video/VIDEO-94631c/VIDEO-94631c.mp4",
     "file": "video/VIDEO-94631c/VIDEO-94631c.mp4",
     "size": 829261172,
-    "size_mb": 790.85
+    "size_mb": 790.85,
+    "nicheCode": "H11",
+    "nicheCodes": [
+      "H11",
+      "H18",
+      "H19",
+      "H27",
+      "H30",
+      "H32",
+      "H33"
+    ]
   },
   {
     "index": 100,
@@ -11376,7 +11832,12 @@
     "mp4": "video/VIDEO-2772a7/VIDEO-2772a7.mp4",
     "file": "video/VIDEO-2772a7/VIDEO-2772a7.mp4",
     "size": 1035038074,
-    "size_mb": 987.09
+    "size_mb": 987.09,
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H06"
+    ]
   },
   {
     "index": 101,
@@ -11517,7 +11978,11 @@
     "mp4": "video/VIDEO-64fb26/VIDEO-64fb26.mp4",
     "file": "video/VIDEO-64fb26/VIDEO-64fb26.mp4",
     "size": 455890260,
-    "size_mb": 434.77
+    "size_mb": 434.77,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 102,
@@ -11640,7 +12105,17 @@
     "mp4": "video/VIDEO-a8cd5b/VIDEO-a8cd5b.mp4",
     "file": "video/VIDEO-a8cd5b/VIDEO-a8cd5b.mp4",
     "size": 557585115,
-    "size_mb": 531.75
+    "size_mb": 531.75,
+    "nicheCode": "H13",
+    "nicheCodes": [
+      "H13",
+      "H14",
+      "H18",
+      "H19",
+      "H21",
+      "H30",
+      "H31"
+    ]
   },
   {
     "index": 103,
@@ -11756,7 +12231,16 @@
     "mp4": "video/VIDEO-16241d/VIDEO-16241d.mp4",
     "file": "video/VIDEO-16241d/VIDEO-16241d.mp4",
     "size": 433413799,
-    "size_mb": 413.34
+    "size_mb": 413.34,
+    "nicheCode": "H13",
+    "nicheCodes": [
+      "H13",
+      "H14",
+      "H18",
+      "H19",
+      "H21",
+      "H31"
+    ]
   },
   {
     "index": 104,
@@ -11872,7 +12356,15 @@
     "mp4": "video/VIDEO-3bba93/VIDEO-3bba93.mp4",
     "file": "video/VIDEO-3bba93/VIDEO-3bba93.mp4",
     "size": 503543623,
-    "size_mb": 480.22
+    "size_mb": 480.22,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H09",
+      "H16",
+      "H34"
+    ]
   },
   {
     "index": 105,
@@ -11917,9 +12409,10 @@
         "name": "Bài Tập 1 (Phải Làm): Bảng từ khóa Khám Phá Chủ Đề & Cảm Xúc Khán Giả",
         "title": "Bài Tập 1 (Phải Làm): Bảng từ khóa Khám Phá Chủ Đề & Cảm Xúc Khán Giả",
         "link": "https://drive.google.com/file/d/1A9t_bS8E5K1f6u7xZ2jM3yR4wP9qL0vN/view",
-        "file": "assets/docs-huan/BAI_TAP_1_PHAI_LAM_BANG_TU_KHOA_KHAM_PHA_CHU_DE.xlsx",
-        "path": "assets/docs-huan/BAI_TAP_1_PHAI_LAM_BANG_TU_KHOA_KHAM_PHA_CHU_DE.xlsx",
-        "size": 0
+        "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
+        "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bài Tập 2 (Phải Làm): Mẫu Mô Hình Hóa Kênh YouTube Phát Triển Bản Thân (Dream 100)",
@@ -11994,7 +12487,11 @@
     "mp4": "video/VIDEO-9542a5/VIDEO-9542a5.mp4",
     "file": "video/VIDEO-9542a5/VIDEO-9542a5.mp4",
     "size": 449217009,
-    "size_mb": 428.41
+    "size_mb": 428.41,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 106,
@@ -12099,7 +12596,11 @@
     "mp4": "video/VIDEO-014625/VIDEO-014625.mp4",
     "file": "video/VIDEO-014625/VIDEO-014625.mp4",
     "size": 309437821,
-    "size_mb": 295.1
+    "size_mb": 295.1,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 107,
@@ -12204,7 +12705,11 @@
     "mp4": "video/VIDEO-c289d8/VIDEO-c289d8.mp4",
     "file": "video/VIDEO-c289d8/VIDEO-c289d8.mp4",
     "size": 250134150,
-    "size_mb": 238.55
+    "size_mb": 238.55,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 108,
@@ -12333,7 +12838,11 @@
     "mp4": "video/VIDEO-e8feca/VIDEO-e8feca.mp4",
     "file": "video/VIDEO-e8feca/VIDEO-e8feca.mp4",
     "size": 433525447,
-    "size_mb": 413.44
+    "size_mb": 413.44,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 109,
@@ -12438,7 +12947,11 @@
     "mp4": "video/VIDEO-1456c3/VIDEO-1456c3.mp4",
     "file": "video/VIDEO-1456c3/VIDEO-1456c3.mp4",
     "size": 247638799,
-    "size_mb": 236.17
+    "size_mb": 236.17,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 110,
@@ -12543,7 +13056,11 @@
     "mp4": "video/VIDEO-ab04c5/VIDEO-ab04c5.mp4",
     "file": "video/VIDEO-ab04c5/VIDEO-ab04c5.mp4",
     "size": 447962334,
-    "size_mb": 427.21
+    "size_mb": 427.21,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 111,
@@ -12648,7 +13165,11 @@
     "mp4": "video/VIDEO-1740d9/VIDEO-1740d9.mp4",
     "file": "video/VIDEO-1740d9/VIDEO-1740d9.mp4",
     "size": 377654923,
-    "size_mb": 360.16
+    "size_mb": 360.16,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 112,
@@ -12753,7 +13274,11 @@
     "mp4": "video/VIDEO-f8d00f/VIDEO-f8d00f.mp4",
     "file": "video/VIDEO-f8d00f/VIDEO-f8d00f.mp4",
     "size": 827162071,
-    "size_mb": 788.84
+    "size_mb": 788.84,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 113,
@@ -12866,7 +13391,11 @@
     "mp4": "video/VIDEO-6d0657/VIDEO-6d0657.mp4",
     "file": "video/VIDEO-6d0657/VIDEO-6d0657.mp4",
     "size": 563248174,
-    "size_mb": 537.16
+    "size_mb": 537.16,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 114,
@@ -13035,7 +13564,13 @@
     "mp4": "video/VIDEO-0a29cc/VIDEO-0a29cc.mp4",
     "file": "video/VIDEO-0a29cc/VIDEO-0a29cc.mp4",
     "size": 492969318,
-    "size_mb": 470.13
+    "size_mb": 470.13,
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H20",
+      "H34"
+    ]
   },
   {
     "index": 115,
@@ -13133,7 +13668,11 @@
     "mp4": "video/VIDEO-cf930d/VIDEO-cf930d.mp4",
     "file": "video/VIDEO-cf930d/VIDEO-cf930d.mp4",
     "size": 401915390,
-    "size_mb": 383.3
+    "size_mb": 383.3,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 116,
@@ -13249,7 +13788,14 @@
     "mp4": "video/VIDEO-34d0d7/VIDEO-34d0d7.mp4",
     "file": "video/VIDEO-34d0d7/VIDEO-34d0d7.mp4",
     "size": 212492537,
-    "size_mb": 202.65
+    "size_mb": 202.65,
+    "nicheCode": "H07",
+    "nicheCodes": [
+      "H07",
+      "H08",
+      "H20",
+      "H34"
+    ]
   },
   {
     "index": 117,
@@ -13361,7 +13907,13 @@
     "mp4": "video/VIDEO-6a7a0e/VIDEO-6a7a0e.mp4",
     "file": "video/VIDEO-6a7a0e/VIDEO-6a7a0e.mp4",
     "size": 771868749,
-    "size_mb": 736.11
+    "size_mb": 736.11,
+    "nicheCode": "H27",
+    "nicheCodes": [
+      "H27",
+      "H28",
+      "H29"
+    ]
   },
   {
     "index": 118,
@@ -13409,7 +13961,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bài Tập 2: Dream 100 — Mẫu Mô Hình Hóa Kênh YouTube Phát Triển Bản Thân",
@@ -13484,7 +14037,11 @@
     "mp4": "video/VIDEO-84853e/VIDEO-84853e.mp4",
     "file": "video/VIDEO-84853e/VIDEO-84853e.mp4",
     "size": 231734863,
-    "size_mb": 221
+    "size_mb": 221,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 119,
@@ -13532,7 +14089,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bài Tập 2: Dream 100 — Mẫu Mô Hình Hóa Kênh YouTube Phát Triển Bản Thân",
@@ -13597,7 +14155,11 @@
     "mp4": "video/VIDEO-b480d8/VIDEO-b480d8.mp4",
     "file": "video/VIDEO-b480d8/VIDEO-b480d8.mp4",
     "size": 116896793,
-    "size_mb": 111.48
+    "size_mb": 111.48,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 120,
@@ -13645,7 +14207,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bài Tập 2: Dream 100 — Mẫu Mô Hình Hóa Kênh YouTube Phát Triển Bản Thân",
@@ -13715,7 +14278,11 @@
     "mp4": "video/VIDEO-cb28c1/VIDEO-cb28c1.mp4",
     "file": "video/VIDEO-cb28c1/VIDEO-cb28c1.mp4",
     "size": 130262880,
-    "size_mb": 124.23
+    "size_mb": 124.23,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 121,
@@ -13763,7 +14330,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bài Tập 2: Dream 100 — Mẫu Mô Hình Hóa Kênh YouTube Phát Triển Bản Thân",
@@ -13827,7 +14395,11 @@
     "mp4": "video/VIDEO-a17fe8/VIDEO-a17fe8.mp4",
     "file": "video/VIDEO-a17fe8/VIDEO-a17fe8.mp4",
     "size": 96950091,
-    "size_mb": 92.46
+    "size_mb": 92.46,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 122,
@@ -13875,7 +14447,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bài Tập 2: Dream 100 — Mẫu Mô Hình Hóa Kênh YouTube Phát Triển Bản Thân",
@@ -13930,7 +14503,11 @@
     "mp4": "video/VIDEO-d6bbed/VIDEO-d6bbed.mp4",
     "file": "video/VIDEO-d6bbed/VIDEO-d6bbed.mp4",
     "size": 135886721,
-    "size_mb": 129.59
+    "size_mb": 129.59,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 123,
@@ -14020,7 +14597,11 @@
     "mp4": "video/VIDEO-dac857/VIDEO-dac857.mp4",
     "file": "video/VIDEO-dac857/VIDEO-dac857.mp4",
     "size": 75935495,
-    "size_mb": 72.42
+    "size_mb": 72.42,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 124,
@@ -14111,7 +14692,11 @@
     "mp4": "video/VIDEO-310a37/VIDEO-310a37.mp4",
     "file": "video/VIDEO-310a37/VIDEO-310a37.mp4",
     "size": 295308422,
-    "size_mb": 281.63
+    "size_mb": 281.63,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 125,
@@ -14201,7 +14786,11 @@
     "mp4": "video/VIDEO-327636/VIDEO-327636.mp4",
     "file": "video/VIDEO-327636/VIDEO-327636.mp4",
     "size": 104426757,
-    "size_mb": 99.59
+    "size_mb": 99.59,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 126,
@@ -14300,7 +14889,11 @@
     "mp4": "video/VIDEO-f13206/VIDEO-f13206.mp4",
     "file": "video/VIDEO-f13206/VIDEO-f13206.mp4",
     "size": 82389086,
-    "size_mb": 78.57
+    "size_mb": 78.57,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 127,
@@ -14390,7 +14983,11 @@
     "mp4": "video/VIDEO-57e9aa/VIDEO-57e9aa.mp4",
     "file": "video/VIDEO-57e9aa/VIDEO-57e9aa.mp4",
     "size": 45859556,
-    "size_mb": 43.74
+    "size_mb": 43.74,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 128,
@@ -14504,7 +15101,12 @@
     "mp4": "video/VIDEO-6657cd/VIDEO-6657cd.mp4",
     "file": "video/VIDEO-6657cd/VIDEO-6657cd.mp4",
     "size": 392170049,
-    "size_mb": 374
+    "size_mb": 374,
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H20"
+    ]
   },
   {
     "index": 129,
@@ -14604,7 +15206,12 @@
     "mp4": "video/VIDEO-5c2c51/VIDEO-5c2c51.mp4",
     "file": "video/VIDEO-5c2c51/VIDEO-5c2c51.mp4",
     "size": 356411389,
-    "size_mb": 339.9
+    "size_mb": 339.9,
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H20"
+    ]
   },
   {
     "index": 130,
@@ -14711,7 +15318,11 @@
     "mp4": "video/VIDEO-d78c23/VIDEO-d78c23.mp4",
     "file": "video/VIDEO-d78c23/VIDEO-d78c23.mp4",
     "size": 310347778,
-    "size_mb": 295.97
+    "size_mb": 295.97,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ]
   },
   {
     "index": 131,
@@ -14829,7 +15440,11 @@
     "mp4": "video/VIDEO-966059/VIDEO-966059.mp4",
     "file": "video/VIDEO-966059/VIDEO-966059.mp4",
     "size": 483461827,
-    "size_mb": 461.07
+    "size_mb": 461.07,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 132,
@@ -14904,7 +15519,8 @@
         "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
         "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
         "path": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
-        "size": 12174
+        "size": 12174,
+        "ext": "docx"
       },
       {
         "name": "Bản ghi phụ đề đầy đủ (Transcript .txt)",
@@ -14956,7 +15572,11 @@
     "mp4": "video/VIDEO-fb7e44/VIDEO-fb7e44.mp4",
     "file": "video/VIDEO-fb7e44/VIDEO-fb7e44.mp4",
     "size": 1233491545,
-    "size_mb": 1176.35
+    "size_mb": 1176.35,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "index": 133,
@@ -15057,7 +15677,11 @@
     "mp4": "video/VIDEO-b267fe/VIDEO-b267fe.mp4",
     "file": "video/VIDEO-b267fe/VIDEO-b267fe.mp4",
     "size": 132251051,
-    "size_mb": 126.12
+    "size_mb": 126.12,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 134,
@@ -15155,7 +15779,11 @@
     "mp4": "video/VIDEO-7ff327/VIDEO-7ff327.mp4",
     "file": "video/VIDEO-7ff327/VIDEO-7ff327.mp4",
     "size": 688219946,
-    "size_mb": 656.34
+    "size_mb": 656.34,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 135,
@@ -15252,7 +15880,11 @@
     "mp4": "video/VIDEO-871815/VIDEO-871815.mp4",
     "file": "video/VIDEO-871815/VIDEO-871815.mp4",
     "size": 155397323,
-    "size_mb": 148.2
+    "size_mb": 148.2,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 136,
@@ -15348,7 +15980,11 @@
     "mp4": "video/VIDEO-c2eaf1/VIDEO-c2eaf1.mp4",
     "file": "video/VIDEO-c2eaf1/VIDEO-c2eaf1.mp4",
     "size": 82659669,
-    "size_mb": 78.83
+    "size_mb": 78.83,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 137,
@@ -15450,7 +16086,11 @@
     "mp4": "video/VIDEO-8d13ec/VIDEO-8d13ec.mp4",
     "file": "video/VIDEO-8d13ec/VIDEO-8d13ec.mp4",
     "size": 62705089,
-    "size_mb": 59.8
+    "size_mb": 59.8,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 138,
@@ -15546,7 +16186,11 @@
     "mp4": "video/VIDEO-899ac6/VIDEO-899ac6.mp4",
     "file": "video/VIDEO-899ac6/VIDEO-899ac6.mp4",
     "size": 81469525,
-    "size_mb": 77.7
+    "size_mb": 77.7,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 139,
@@ -15642,7 +16286,11 @@
     "mp4": "video/VIDEO-6f7610/VIDEO-6f7610.mp4",
     "file": "video/VIDEO-6f7610/VIDEO-6f7610.mp4",
     "size": 32513995,
-    "size_mb": 31.01
+    "size_mb": 31.01,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "index": 140,
@@ -15744,6 +16392,10 @@
     "mp4": "video/VIDEO-3a1793/VIDEO-3a1793.mp4",
     "file": "video/VIDEO-3a1793/VIDEO-3a1793.mp4",
     "size": 159164615,
-    "size_mb": 151.79
+    "size_mb": 151.79,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   }
 ]

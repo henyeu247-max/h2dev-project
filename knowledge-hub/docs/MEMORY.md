@@ -1,7 +1,7 @@
 # MEMORY.md — H2DEV-Project (rules bền + shortcuts)
 
 > Chỉ chứa rules + shortcuts bền. Chi tiết workflow → đọc file liên quan khi cần (không nhét dài vào đây).
-> Cập nhật: 18/09/2026.
+> Cập nhật: 29/10/2026.
 
 ## Đường dẫn chuẩn
 
@@ -28,10 +28,10 @@
 - Tin tức/trend thị trường: `trends.get_top_trends` → jina/firecrawl đọc Google News RSS
 - RPM chuẩn: AIR Media (Education $10.22 median), KHÔNG Dynamoi
 
-## Current live baseline (đo lại 2026-10-14; nguồn: `data/counts-manifest.json`, chạy `node scripts/sync-counts.js --check`)
+## Current live baseline (đo lại 2026-10-29; nguồn: `data/counts-manifest.json`, chạy `node scripts/sync-counts.js --check`)
 
-- 148 learning records (144 video + 4 Zoom; 27 free · 121 pro) · 300 tài liệu · 261 kênh (189 live · 72 dead: 59 DIE 404 + 10 rỗng + 3 dead khác; đo thực tế 2026-10-14) · 34 ngách (10 `xanh:true`) · 60 kịch bản · 27 nguồn reup.
-- Media: 333/333 file có trên đĩa (148 H2DEV + 140 Huân + 45 DGMD), 0 file 0 byte · 89.26 GB (83.13 GiB) · `docs/` 339 thư mục · `assets/thumbs/` 148 SKU H2DEV (+185 ảnh nhánh Huân & DGMD).
+- 148 learning records (144 video + 4 Zoom; 27 free · 121 pro) · 580 tài liệu · 1082 kênh (993 live · 89 dead: 75 DIE 404 + 14 rỗng; `ngay_do` 1082/1082) · 40 ngách (16 `xanh:true`) · 60 kịch bản · 52 nguồn reup.
+- Media: 333/333 file có trên đĩa (148 H2DEV + 140 Huân + 45 DGMD), 0 file 0 byte · 89.26 GB (83.13 GiB) · `docs/` 339 thư mục · `assets/thumbs/` 148/148 khớp SKU H2DEV (tổng 289 files).
 - Raw channel: 156 record canonical (149 kênh unique) phân rã thành **12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm)**.
 - **Hạ tầng Kỹ Năng Tác Chiến `h2dev-*` — nay nằm ở kho skill chung `~/.agents/source/skills/` (thư mục `D:\YTB\.agents\skills\` không còn, đo 2026-10-14); danh sách 13 kỹ năng gốc:**
   1. `h2dev-everyday-history` (Lịch sử đồ vật thường ngày - Ngách Xanh #1 SSoT)

@@ -1,12 +1,12 @@
 ---
 handle: "@suckhoedongy99"
-name: "@suckhoedongy99"
+name: "Sức Khỏe Đông Y"
 url: "https://www.youtube.com/@suckhoedongy99"
 status: "DEAD"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @suckhoedongy99 (@suckhoedongy99)
+# Kênh Đối Thủ / Kênh Mẫu: @suckhoedongy99 (Sức Khỏe Đông Y)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@suckhoedongy99](https://www.youtube.com/@suckhoedongy99)

@@ -1,12 +1,12 @@
 ---
 handle: "@TâmBìnhAnLạc"
-name: "@TâmBìnhAnLạc"
+name: "Tâm Bình An Lạc"
 url: "https://www.youtube.com/@T%C3%A2mB%C3%ACnhAnL%E1%BA%A1c"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TâmBìnhAnLạc (@TâmBìnhAnLạc)
+# Kênh Đối Thủ / Kênh Mẫu: @TâmBìnhAnLạc (Tâm Bình An Lạc)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@T%C3%A2mB%C3%ACnhAnL%E1%BA%A1c](https://www.youtube.com/@T%C3%A2mB%C3%ACnhAnL%E1%BA%A1c)

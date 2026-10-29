@@ -1,6 +1,6 @@
 /* H2Main - G6 extract main app script from index.html */
 
-    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', nxTier: '', nxMarket: '', nxQ: '', rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawPage: 1, docPage: 1, nxPage: 1,
+    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', docBranch: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', kenhStatus: '', nxTier: '', nxMarket: '', nxQ: '', nxLimit: 0, rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawLang: '', rawPage: 1, docPage: 1, nxPage: 1,
       /* FIX (uifix88) F1 — dinh danh DICH CHINH XAC tu ket qua tim kiem toan van (search_fts),
          de mo DUNG MOT muc thay vi loc theo ten/chuoi con (ten trung nhau -> ra nhieu muc).
            rawRid   = /rawkenh?rid=RAW-nnn   (id ho so Raw, khop records[i].id)
@@ -158,6 +158,78 @@
       return musicStats;
     }
 
+    async function loadOverviewSummary() {
+      if (window._overviewSummaryCache) return window._overviewSummaryCache;
+      let raw = null;
+      try {
+        const r = await fetch('/api/overview-summary', { cache: 'no-store' });
+        if (r.ok) raw = await r.json();
+      } catch (e) {}
+      if (!raw) {
+        try {
+          const r2 = await fetch('data/overview_summary.json?v=' + APP_BUILD_VER, { cache: 'no-store' });
+          if (r2.ok) raw = await r2.json();
+        } catch (e) {}
+      }
+      if (!raw) {
+        const [vH2, vHuan, vDgmd, kenh, docs, reup] = await Promise.all([
+          loadJSON('data-tabs/videos.json').catch(() => []),
+          loadJSON('data/videos_huan.json').catch(() => []),
+          loadJSON('data/videos_dgmd.json').catch(() => []),
+          loadJSON('data-tabs/kenh-mau.json').catch(() => []),
+          loadJSON('data-tabs/tai-lieu-full.json').catch(() => []),
+          loadJSON('data-tabs/nguon-reup.json').catch(() => [])
+        ]);
+        const aH2 = safeArray(vH2);
+        const aHuan = safeArray(vHuan);
+        const aDgmd = safeArray(vDgmd);
+        const aKenh = safeArray(kenh);
+        const aDocs = safeArray(docs);
+        const aReup = safeArray(reup);
+        const allVids = aH2.concat(aHuan, aDgmd);
+        const totalMb = Math.round(allVids.reduce((acc, v) => acc + ((v.size_mb != null ? Number(v.size_mb) : (Number(v.size || 0) / (1024 * 1024))) || 0), 0));
+        raw = {
+          totalVideos: allVids.length,
+          videosH2dev: aH2.length,
+          videosHuan: aHuan.length,
+          videosDgmd: aDgmd.length,
+          documents: aDocs.length,
+          channels: aKenh.length,
+          liveChannels: aKenh.filter(k => k && !k.dead).length,
+          deadChannels: aKenh.filter(k => k && k.dead).length,
+          nguonReup: aReup.length,
+          totalVideoSizeMb: totalMb || 85122,
+          modulesTotal: 35,
+          rawChannels: 156,
+          rawDeepProfiles: 149
+        };
+      }
+      const c = (raw && raw.counts) || raw || {};
+      const vH2Count = Number(c.videosH2dev ?? c.h2devVideos ?? c.videos ?? 148);
+      const vHuanCount = Number(c.videosHuan ?? c.huanVideos ?? 140);
+      const vDgmdCount = Number(c.videosDgmd ?? c.dgmdVideos ?? 45);
+      const totalVids = Number(c.totalVideos ?? c.videosTotal ?? (vH2Count + vHuanCount + vDgmdCount)) || 333;
+      const summary = Object.assign({}, raw, {
+        totalVideos: totalVids,
+        videosH2dev: vH2Count,
+        videosHuan: vHuanCount,
+        videosDgmd: vDgmdCount,
+        documents: Number(c.documents ?? c.totalDocuments ?? c.taiLieu ?? 580),
+        channels: Number(c.channels ?? c.totalChannels ?? c.kenhTotal ?? 1082),
+        liveChannels: Number(c.liveChannels ?? c.kenhLive ?? 993),
+        deadChannels: Number(c.deadChannels ?? c.kenhDead ?? 89),
+        deadChannelsCount: Number(c.deadChannels ?? c.deadChannelsCount ?? c.kenhDead ?? 89),
+        nguonReup: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
+        reupSources: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
+        totalVideoSizeMb: Number(c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? (c.mediaBytes ? Math.round(Number(c.mediaBytes) / (1024 * 1024)) : 85122)),
+        modulesTotal: Number(c.modulesTotal ?? c.totalModules ?? 35),
+        rawChannels: Number(c.rawChannels ?? c.canonicalRaw ?? 156),
+        rawDeepProfiles: Number(c.rawDeepProfiles ?? c.canonicalRawUniqueChannels ?? 149)
+      });
+      window._overviewSummaryCache = summary;
+      return summary;
+    }
+
     // G3: NICHE_MAP tach ra assets/app/taxonomy.js
     const NICHE_MAP = window.H2Taxonomy.NICHE_MAP;
 
@@ -179,34 +251,58 @@
     function syncDocPageUrl() {
       try {
         const u = new URL(location.href);
-        if (state.tab === 'tai-lieu' && state.docPage > 1) u.searchParams.set('dp', String(state.docPage)); else u.searchParams.delete('dp');
+        const onDoc = state.tab === 'tai-lieu';
+        if (onDoc && state.docPage > 1) u.searchParams.set('dp', String(state.docPage)); else u.searchParams.delete('dp');
         /* FIX (uifix87): giu/xoa tu khoa Tai lieu tren URL (link FTS /tai-lieu?pq=...) de F5 khong bi lech state. */
-        if (state.tab === 'tai-lieu' && state.promptQ) u.searchParams.set('pq', state.promptQ); else u.searchParams.delete('pq');
+        if (onDoc && state.promptQ) u.searchParams.set('pq', state.promptQ); else u.searchParams.delete('pq');
         /* FIX (uifix88) F1: dinh danh 1 muc tai lieu (did = DOC_n, di = vi tri trong tai-lieu-full.json). */
-        if (state.tab === 'tai-lieu' && state.docDid) u.searchParams.set('did', state.docDid); else u.searchParams.delete('did');
-        if (state.tab === 'tai-lieu' && state.docIdx >= 0) u.searchParams.set('di', String(state.docIdx)); else u.searchParams.delete('di');
+        if (onDoc && state.docDid) u.searchParams.set('did', state.docDid); else u.searchParams.delete('did');
+        if (onDoc && state.docIdx >= 0) u.searchParams.set('di', String(state.docIdx)); else u.searchParams.delete('di');
+        if (onDoc && state.docBranch) u.searchParams.set('db', state.docBranch); else u.searchParams.delete('db');
+        if (onDoc && state.kindFilter) u.searchParams.set('kind', state.kindFilter); else u.searchParams.delete('kind');
+        if (onDoc && state.promptNiche) u.searchParams.set('pn', state.promptNiche); else u.searchParams.delete('pn');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
-    /* FIX (uifix88) F2: 'rq/page/rn/rg/rid' (tab Raw kenh) dong bo URL — CHI khi dang o tab rawkenh.
+    function syncReupUrl() {
+      try {
+        const u = new URL(location.href);
+        const onReup = state.tab === 'nguonreup';
+        if (onReup && state.reupQ) u.searchParams.set('rq', state.reupQ); else if (state.tab !== 'rawkenh') u.searchParams.delete('rq');
+        if (onReup && state.reupType) u.searchParams.set('rt', state.reupType); else u.searchParams.delete('rt');
+        if (onReup && state.reupNiche) u.searchParams.set('rn', state.reupNiche); else if (state.tab !== 'rawkenh') u.searchParams.delete('rn');
+        history.replaceState(history.state, '', u.pathname + u.search);
+      } catch (err) {}
+    }
+    /* FIX (uifix88) F2: 'rq/page/rn/rg/rid/rv/rf/rl' (tab Raw kenh) dong bo URL — CHI khi dang o tab rawkenh.
        Truoc day reset/#btn-clear-raw-q chi xoa state.rawQ nhung KHONG dung URL => F5 loc lai theo rq cu. */
     function syncRawUrl() {
       try {
         const u = new URL(location.href);
         const onRaw = state.tab === 'rawkenh';
-        if (onRaw && state.rawQ) u.searchParams.set('rq', state.rawQ); else u.searchParams.delete('rq');
+        if (onRaw && state.rawQ) u.searchParams.set('rq', state.rawQ); else if (state.tab !== 'nguonreup') u.searchParams.delete('rq');
         if (onRaw && state.rawRid) u.searchParams.set('rid', state.rawRid); else u.searchParams.delete('rid');
         if (onRaw && state.rawPage > 1) u.searchParams.set('page', String(state.rawPage)); else u.searchParams.delete('page');
-        if (onRaw && state.rawNiche) u.searchParams.set('rn', state.rawNiche); else u.searchParams.delete('rn');
+        if (onRaw && state.rawNiche) u.searchParams.set('rn', state.rawNiche); else if (state.tab !== 'nguonreup') u.searchParams.delete('rn');
         if (onRaw && state.rawGroup) u.searchParams.set('rg', state.rawGroup); else u.searchParams.delete('rg');
+        if (onRaw && state.rawVitality) u.searchParams.set('rv', state.rawVitality); else u.searchParams.delete('rv');
+        if (onRaw && state.rawFaceless) u.searchParams.set('rf', state.rawFaceless); else u.searchParams.delete('rf');
+        if (onRaw && state.rawLang) u.searchParams.set('rl', state.rawLang); else u.searchParams.delete('rl');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
-    /* NANG CAP 2026-09-30: np (trang Ngach xanh) — cung co che voi dp. */
+    /* NANG CAP 2026-09-30: np/q/nt/nxm/nxl (tab Ngach xanh) — cung co che voi dp. */
     function syncNxPageUrl() {
       try {
         const u = new URL(location.href);
-        if (state.tab === 'ngachxanh' && state.nxPage > 1) u.searchParams.set('np', String(state.nxPage)); else u.searchParams.delete('np');
+        const onNx = state.tab === 'ngachxanh';
+        if (onNx && state.nxPage > 1) u.searchParams.set('np', String(state.nxPage)); else u.searchParams.delete('np');
+        if (onNx && state.nxQ) u.searchParams.set('q', state.nxQ); else if (state.tab !== 'lotrinh') u.searchParams.delete('q');
+        if (onNx && !state.nxQ) u.searchParams.delete('niche');
+        if (onNx && state.nxTier) u.searchParams.set('nt', state.nxTier); else u.searchParams.delete('nt');
+        if (onNx && state.nxMarket) u.searchParams.set('nxm', state.nxMarket); else u.searchParams.delete('nxm');
+        if (onNx && !state.nxMarket) u.searchParams.delete('market');
+        if (onNx && state.nxLimit > 0) u.searchParams.set('nxl', String(state.nxLimit)); else u.searchParams.delete('nxl');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
@@ -215,7 +311,7 @@
       try {
         const u = new URL(location.href);
         const onVideo = state.tab === 'video';
-        if (onVideo && (state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || state.videoTrack === 'all')) u.searchParams.set('track', state.videoTrack); else u.searchParams.delete('track');
+        if (onVideo && (state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || state.videoTrack === 'all')) u.searchParams.set('track', state.videoTrack); else if (state.tab !== 'lotrinh') u.searchParams.delete('track');
         if (onVideo && state.q) u.searchParams.set('vq', state.q); else u.searchParams.delete('vq');
         if (onVideo && state.nicheFilter) u.searchParams.set('niche', state.nicheFilter); else if (state.tab !== 'ngachxanh') u.searchParams.delete('niche');
         if (onVideo && state.skuFilter) u.searchParams.set('skus', state.skuFilter); else u.searchParams.delete('skus');
@@ -227,13 +323,16 @@
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
-    /* FIX (uifix87) LỖI 2 / (uifix88) F2: 'kq' (tu khoa tab Kenh mau) + 'handle' (dinh danh 1 kenh) dong bo URL. */
+    /* FIX (uifix87) LỖI 2 / (uifix88) F2: 'kq/handle/kp/ks/kn' (tab Kenh mau) dong bo URL. */
     function syncKenhUrl() {
       try {
         const u = new URL(location.href);
-        if (state.tab === 'kenh-mau' && state.kenhQ) u.searchParams.set('kq', state.kenhQ); else u.searchParams.delete('kq');
-        if (state.tab === 'kenh-mau' && state.kenhHandle) u.searchParams.set('handle', state.kenhHandle); else u.searchParams.delete('handle');
-        if (state.tab === 'kenh-mau' && state.kenhPage > 1) u.searchParams.set('kp', String(state.kenhPage)); else u.searchParams.delete('kp');
+        const onKenh = state.tab === 'kenh-mau';
+        if (onKenh && state.kenhQ && state.kenhQ !== state.kenhHandle) u.searchParams.set('kq', state.kenhQ); else u.searchParams.delete('kq');
+        if (onKenh && state.kenhHandle) u.searchParams.set('handle', state.kenhHandle); else u.searchParams.delete('handle');
+        if (onKenh && state.kenhPage > 1) u.searchParams.set('kp', String(state.kenhPage)); else u.searchParams.delete('kp');
+        if (onKenh && state.kenhStatus) u.searchParams.set('ks', state.kenhStatus); else u.searchParams.delete('ks');
+        if (onKenh && state.kenhNiche) u.searchParams.set('kn', state.kenhNiche); else u.searchParams.delete('kn');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
@@ -298,9 +397,14 @@
       if (t === 'video' && state.watchFilter) url.searchParams.set('watch', state.watchFilter);
       if (t === 'video' && state.freeOnly) url.searchParams.set('free', '1');
       /* market/niche: chi co nghia o tab Video + Ngach xanh (truoc day dinh sang moi tab) */
-      if ((t === 'video' || t === 'ngachxanh') && state.marketFilter) url.searchParams.set('market', state.marketFilter);
-      if ((t === 'video' || t === 'ngachxanh') && state.nicheFilter) url.searchParams.set('niche', state.nicheFilter);
+      if (t === 'video' && state.marketFilter) url.searchParams.set('market', state.marketFilter);
+      if (t === 'video' && state.nicheFilter) url.searchParams.set('niche', state.nicheFilter);
+      /* --- Ngach xanh --- */
       if (t === 'ngachxanh' && state.nxPage > 1) url.searchParams.set('np', String(state.nxPage));
+      if (t === 'ngachxanh' && state.nxQ) url.searchParams.set('q', state.nxQ);
+      if (t === 'ngachxanh' && state.nxTier) url.searchParams.set('nt', state.nxTier);
+      if (t === 'ngachxanh' && state.nxMarket) url.searchParams.set('nxm', state.nxMarket);
+      if (t === 'ngachxanh' && state.nxLimit > 0) url.searchParams.set('nxl', String(state.nxLimit));
       /* --- Tai lieu --- */
       if (t === 'tai-lieu' && state.docPage > 1) url.searchParams.set('dp', String(state.docPage));
       /* FIX (uifix87): giu tu khoa Tai lieu tren URL (F5/Back/Forward va link FTS /tai-lieu?pq=...) */
@@ -308,16 +412,28 @@
       /* FIX (uifix88) F1: dinh danh 1 muc tai lieu */
       if (t === 'tai-lieu' && state.docDid) url.searchParams.set('did', state.docDid);
       if (t === 'tai-lieu' && state.docIdx >= 0) url.searchParams.set('di', String(state.docIdx));
+      if (t === 'tai-lieu' && state.docBranch) url.searchParams.set('db', state.docBranch);
+      if (t === 'tai-lieu' && state.kindFilter) url.searchParams.set('kind', state.kindFilter);
+      if (t === 'tai-lieu' && state.promptNiche) url.searchParams.set('pn', state.promptNiche);
+      /* --- Nguon reup --- */
+      if (t === 'nguonreup' && state.reupQ) url.searchParams.set('rq', state.reupQ);
+      if (t === 'nguonreup' && state.reupType) url.searchParams.set('rt', state.reupType);
+      if (t === 'nguonreup' && state.reupNiche) url.searchParams.set('rn', state.reupNiche);
       /* --- Kenh mau --- */
-      if (t === 'kenh-mau' && state.kenhQ) url.searchParams.set('kq', state.kenhQ);
+      if (t === 'kenh-mau' && state.kenhQ && state.kenhQ !== state.kenhHandle) url.searchParams.set('kq', state.kenhQ);
       if (t === 'kenh-mau' && state.kenhHandle) url.searchParams.set('handle', state.kenhHandle);
       if (t === 'kenh-mau' && state.kenhPage > 1) url.searchParams.set('kp', String(state.kenhPage));
+      if (t === 'kenh-mau' && state.kenhStatus) url.searchParams.set('ks', state.kenhStatus);
+      if (t === 'kenh-mau' && state.kenhNiche) url.searchParams.set('kn', state.kenhNiche);
       /* --- Raw kenh --- */
       if (t === 'rawkenh' && state.rawPage > 1) url.searchParams.set('page', String(state.rawPage));
       if (t === 'rawkenh' && state.rawNiche) url.searchParams.set('rn', state.rawNiche);
       if (t === 'rawkenh' && state.rawGroup) url.searchParams.set('rg', state.rawGroup);
       if (t === 'rawkenh' && state.rawQ) url.searchParams.set('rq', state.rawQ);
       if (t === 'rawkenh' && state.rawRid) url.searchParams.set('rid', state.rawRid);
+      if (t === 'rawkenh' && state.rawVitality) url.searchParams.set('rv', state.rawVitality);
+      if (t === 'rawkenh' && state.rawFaceless) url.searchParams.set('rf', state.rawFaceless);
+      if (t === 'rawkenh' && state.rawLang) url.searchParams.set('rl', state.rawLang);
       /* --- Chien luoc --- */
       if (t === 'chienluoc' && state.clSubTab && state.clSubTab !== 'principles') url.searchParams.set('sub', state.clSubTab);
       /* --- So do DB --- */
@@ -336,10 +452,14 @@
       if (nextTab !== 'sodo' && keep.sodoNode === undefined) state.sodoNode = '';
       if (nextTab !== 'sodo' && keep.sodoQ === undefined) state.sodoQ = '';
       /* Bo loc raw chi song o tab Raw. */
-      if (nextTab !== 'rawkenh') { state.rawQ = ''; state.rawNiche = ''; state.rawGroup = ''; state.rawPage = 1; }
+      if (nextTab !== 'rawkenh') { state.rawQ = ''; state.rawNiche = ''; state.rawGroup = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; state.rawPage = 1; }
+      /* Bo loc nguonreup chi song o tab Nguon reup. */
+      if (nextTab !== 'nguonreup') { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; }
+      /* Bo loc ngachxanh chi song o tab Ngach xanh. */
+      if (nextTab !== 'ngachxanh') { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxLimit = 0; state.nxPage = 1; }
       /* Tu khoa tab Tai lieu / Kenh mau. */
-      if (nextTab !== 'tai-lieu' && keep.promptQ === undefined) state.promptQ = '';
-      if (nextTab !== 'kenh-mau' && keep.kenhQ === undefined) { state.kenhQ = ''; state.kenhPage = 1; }
+      if (nextTab !== 'tai-lieu' && keep.promptQ === undefined) { state.promptQ = ''; state.docBranch = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; }
+      if (nextTab !== 'kenh-mau' && keep.kenhQ === undefined) { state.kenhQ = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; }
       if (nextTab !== 'video') { state.watchFilter = ''; state.freeOnly = false; state.skuFilter = ''; state.q = ''; state.sortBy = ''; state.videoPage = 1; }
       if (nextTab !== 'video' && nextTab !== 'ngachxanh') { state.nicheFilter = ''; state.marketFilter = ''; }
     }
@@ -372,8 +492,8 @@
       render();
     }
     function openNicheVideos(key, skus) {
-      try { sessionStorage.setItem('h2dev-video-track', 'h2dev'); } catch (err) {}
-      openTab('video', { videoTrack: 'h2dev', nicheFilter: key || '', skuFilter: skus || '', q: '', marketFilter: '', freeOnly: false, videoPage: 1 });
+      try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
+      openTab('video', { videoTrack: 'all', nicheFilter: key || '', skuFilter: skus || '', q: '', marketFilter: '', freeOnly: false, videoPage: 1 });
     }
     function expandNicheMore(btn) {
       const wrap = btn.closest('[data-niche-list]');
@@ -444,8 +564,8 @@
               extra.videoTrack = trAttr;
               try { sessionStorage.setItem('h2dev-video-track', trAttr); } catch (err) {}
             } else if (btn.getAttribute('data-skus') || btn.getAttribute('data-open-niche')) {
-              extra.videoTrack = 'h2dev';
-              try { sessionStorage.setItem('h2dev-video-track', 'h2dev'); } catch (err) {}
+              extra.videoTrack = 'all';
+              try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
             } else if (btn.getAttribute('data-kpi-card') === '1' && state.tab === 'tatca') {
               extra.videoTrack = 'all';
               try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
@@ -671,7 +791,7 @@
 
     // G3.1: 8 tab renderers tach ra assets/app/tabs/content.js
     const _tabContent = window.H2TabContent.createTabContent({
-      state, CAT, ICONS, loadJSON, loadMusicStats, musicStats,
+      state, CAT, ICONS, loadJSON, loadMusicStats, loadOverviewSummary, musicStats,
       esc, safeArray, nicheKeyFor, xanhBadge, statCard, pageBanner,
       ico, stripDecorEmoji,
       highlightQuery, fmtMb, fmtBytes, loadChecks, loadWatched,
@@ -699,11 +819,12 @@
       const fq = document.getElementById('fq');
       if (fq) {
         fq.oninput = () => {
+          activeSugIdx = -1;
           const val = fq.value;
           /* FIX (uifix88) F1: nguoi dung go tay -> bo dinh danh 1 muc (did/di, rid, handle) de
              tim kiem lai toan bo, khong bi khoa trong 1 muc. */
-          if (state.tab === 'tai-lieu' || state.tab === 'nhac') { state.promptQ = val; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); }
-          else if (state.tab === 'nguonreup') state.reupQ = val;
+          if (state.tab === 'tai-lieu') { state.promptQ = val; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); }
+          else if (state.tab === 'nguonreup') { state.reupQ = val; syncReupUrl(); }
           else if (state.tab === 'kenh-mau') { state.kenhQ = val; state.kenhPage = 1; state.kenhHandle = ''; syncKenhUrl(); }
           else if (state.tab === 'rawkenh') { state.rawQ = val; state.rawPage = 1; state.rawRid = ''; syncRawUrl(); }
           else { state.q = val; state.videoPage = 1; syncVideoUrl(); }
@@ -891,23 +1012,27 @@
         });
       }
 
+      document.querySelectorAll('[data-doc-branch]').forEach(btn => {
+        if (btn.hasAttribute('data-open-tab')) return;
+        btn.onclick = () => { state.docBranch = btn.getAttribute('data-doc-branch') || ''; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render(); };
+      });
       document.querySelectorAll('[data-kind]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
         btn.onclick = () => { state.kindFilter = btn.getAttribute('data-kind') || ''; state.docPage = 1; syncDocPageUrl(); render(); };
       });
       const rp = document.getElementById('freset-prompt');
-      if (rp) { rp.onclick = () => { state.promptQ = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render(); }; }
-      document.querySelectorAll('[data-prompt-niche]').forEach(btn => {
+      if (rp) { rp.onclick = () => { state.promptQ = ''; state.docBranch = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render(); }; }
       const pnToggle = document.querySelector('[data-prompt-niche-toggle]'); if (pnToggle) pnToggle.onclick = () => { state.promptNicheExpanded = !state.promptNicheExpanded; render(); };
+      document.querySelectorAll('[data-prompt-niche]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
         btn.onclick = () => { state.promptNiche = btn.getAttribute('data-prompt-niche') || ''; state.docPage = 1; syncDocPageUrl(); render(); };
       });
-      document.querySelectorAll('[data-reup-type]').forEach(btn => { btn.onclick = () => { state.reupType = btn.getAttribute('data-reup-type') || ''; render(); }; });
-      document.querySelectorAll('[data-reup-niche]').forEach(btn => { btn.onclick = () => { state.reupNiche = btn.getAttribute('data-reup-niche') || ''; render(); }; });
+      document.querySelectorAll('[data-reup-type]').forEach(btn => { btn.onclick = () => { state.reupType = btn.getAttribute('data-reup-type') || ''; syncReupUrl(); render(); }; });
+      document.querySelectorAll('[data-reup-niche]').forEach(btn => { btn.onclick = () => { state.reupNiche = btn.getAttribute('data-reup-niche') || ''; syncReupUrl(); render(); }; });
       const rr = document.getElementById('freset-reup');
-      if (rr) { rr.onclick = () => { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; render(); }; }
-      document.querySelectorAll('[data-kenh-status]').forEach(btn => { btn.onclick = () => { state.kenhStatus = btn.getAttribute('data-kenh-status') || ''; state.kenhPage = 1; render(); }; });
-      document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; state.kenhPage = 1; render(); }; });
+      if (rr) { rr.onclick = () => { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; syncReupUrl(); render(); }; }
+      document.querySelectorAll('[data-kenh-status]').forEach(btn => { btn.onclick = () => { state.kenhStatus = btn.getAttribute('data-kenh-status') || ''; state.kenhPage = 1; syncKenhUrl(); render(); }; });
+      document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; state.kenhPage = 1; syncKenhUrl(); render(); }; });
       const rk = document.getElementById('freset-kenh');
       if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhHandle = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; syncKenhUrl(); render(); }; }
       const rke = document.getElementById('freset-kenh-empty');
@@ -935,9 +1060,9 @@
       }
       const rfToggle = document.querySelector('[data-raw-filters-toggle]'); if (rfToggle) rfToggle.onclick = () => { state.rawFiltersExpanded = !state.rawFiltersExpanded; render(); };
 
-      document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; render(); }; });
-      document.querySelectorAll('[data-raw-faceless]').forEach(btn => { btn.onclick = () => { state.rawFaceless = btn.getAttribute('data-raw-faceless') || ''; render(); }; });
-      document.querySelectorAll('[data-raw-lang]').forEach(btn => { btn.onclick = () => { state.rawLang = btn.getAttribute('data-raw-lang') || ''; render(); }; });
+      document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; state.rawPage = 1; syncRawUrl(); render(); }; });
+      document.querySelectorAll('[data-raw-faceless]').forEach(btn => { btn.onclick = () => { state.rawFaceless = btn.getAttribute('data-raw-faceless') || ''; state.rawPage = 1; syncRawUrl(); render(); }; });
+      document.querySelectorAll('[data-raw-lang]').forEach(btn => { btn.onclick = () => { state.rawLang = btn.getAttribute('data-raw-lang') || ''; state.rawPage = 1; syncRawUrl(); render(); }; });
       /* FIX (uifix88) F2: #freset-raw / #freset-raw-empty truoc day chi xoa state -> rq con tren URL,
          F5 loc lai. Nay xoa state + URL (syncRawUrl). */
       const rr2 = document.getElementById('freset-raw');
@@ -989,7 +1114,7 @@
       if (fre) { fre.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; state.videoPage = 1; syncVideoUrl(); render(); }; }
       const fr_nx = document.getElementById('freset-nx');
       if (fr_nx) {
-        fr_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxPage = 1; syncNxPageUrl(); render(); };
+        fr_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
       }
     }
 
@@ -1070,9 +1195,14 @@
         let html = '';
         switch (state.tab) {
           case 'tatca': html = await renderTongQuan(); break;
-          case 'lotrinh':
-            html = `<iframe class="learn-frame" title="Lộ trình học" src="/learn.html?embed=1"></iframe>`;
+          case 'lotrinh': {
+            const lQp = new URLSearchParams(location.search);
+            const lExtra = new URLSearchParams();
+            lExtra.set('embed', '1');
+            ['track', 'tab', 'q'].forEach(k => { if (lQp.get(k)) lExtra.set(k, lQp.get(k)); });
+            html = `<iframe id="lotrinh-embed-frame" class="learn-frame" title="Lộ trình học" src="/learn.html?${lExtra.toString()}"></iframe>`;
             break;
+          }
           case 'video': html = await renderVideo(); break;
           case 'ngachxanh': html = await renderNgachXanh(); break;
           case 'tai-lieu': html = await renderKichBan(); break;
@@ -1087,6 +1217,9 @@
         }
         /* UI-02: lan render nay da stale (user doi tab giua chung) -> bo qua, khong ghi de DOM */
         if (gen !== renderGen) return;
+        const rawSugBox = state.tab === 'rawkenh' && document.activeElement === activeEl && activeId === 'fq' && state.rawQ.trim()
+          ? document.getElementById('raw-search-suggestions') : null;
+        const rawSugHtml = rawSugBox && !rawSugBox.classList.contains('hidden') ? rawSugBox.innerHTML : '';
         el.innerHTML = renderLoadErrorBanner() + html;
         /* UI-11: banner "Khong tai duoc mot so du lieu" chi hien 1 lan cho loi da xay ra;
            xoa sach de lan render sau (retry thanh cong) khong con banner cu ton song. */
@@ -1117,6 +1250,10 @@
           const restored = document.getElementById(activeId);
           if (restored && (restored.tagName === 'INPUT' || restored.tagName === 'TEXTAREA')) {
             restored.focus();
+            if (rawSugHtml) {
+              const restoredBox = document.getElementById('raw-search-suggestions');
+              if (restoredBox) { restoredBox.innerHTML = rawSugHtml; restoredBox.classList.remove('hidden'); }
+            }
             if (selStart !== null && selEnd !== null) {
               try { restored.setSelectionRange(selStart, selEnd); } catch (e) {}
             }
@@ -1130,22 +1267,11 @@
         });
         if (!window._cachedStatsText) {
           try {
-            const [vidsTab, vidsHuan, vidsDgmd, kenh, docs] = await Promise.all([
-              loadJSON("data-tabs/videos.json").catch(function(){return [];}),
-              loadJSON("data/videos_huan.json").catch(function(){return [];}),
-              loadJSON("data/videos_dgmd.json").catch(function(){return [];}),
-              loadJSON("data-tabs/kenh-mau.json").catch(function(){return [];}),
-              loadJSON("data-tabs/tai-lieu-full.json").catch(function(){return [];})
-            ]);
-            const videos = Array.isArray(vidsTab) ? vidsTab : (vidsTab && vidsTab.videos) || [];
-            const huanArr = Array.isArray(vidsHuan) ? vidsHuan : [];
-            const dgmdArr = Array.isArray(vidsDgmd) ? vidsDgmd : [];
-            const totalVideos = videos.length + huanArr.length + dgmdArr.length;
-            /* FIX 2026-09-30: truoc day dem ca kenh dead (165) trong khi KPI + tab Kenh mau hien kenh song (126).
-               Topbar dung cung quy uoc voi KPI: so kenh SONG. */
-            const kenhArr = Array.isArray(kenh) ? kenh : [];
-            const kenhLive = kenhArr.filter(function (k) { return k && !k.dead; }).length;
-            window._cachedStatsText = totalVideos + " video · " + docs.length + " TL · " + kenhLive + " kênh";
+            const ov = await loadOverviewSummary();
+            const totalVideos = Number(ov.totalVideos || ov.lessons || 333);
+            const totalDocs = Number(ov.documents || 580);
+            const kenhLive = Number(ov.liveChannels || ov.channels || 1082);
+            window._cachedStatsText = totalVideos + " video · " + totalDocs + " TL · " + kenhLive + " kênh";
           } catch(e) {}
         }
         const hdEl = document.getElementById("hd-stats");
@@ -1174,7 +1300,9 @@
       const rawPath = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
       const norm = URL_ALIAS[rawPath] || rawPath;
       const tabFromPath = tabs.find(t => t.toLowerCase() === norm);
-      state.tab = tabFromPath || qp.get('tab') || 'tatca';
+      const rawTab = (qp.get('tab') || '').trim().toLowerCase();
+      const queryTab = URL_ALIAS[rawTab] || rawTab;
+      state.tab = tabFromPath || (tabs.includes(queryTab) ? queryTab : 'tatca');
       /* FIX (uifix88) F2 — CHI doc tham so thuoc dung tab dang mo.
          Truoc day doc vo dieu kien nen /video?rq=X (link FTS cu / tab bi dinh rq) van nap rawQ va
          loc sai. Nay moi nhom tham so chi duoc nap khi tab tuong ung; URL duoc don (xem
@@ -1184,12 +1312,16 @@
       if (state.videoTrack !== 'dgmd' && state.videoTrack !== 'huan' && state.videoTrack !== 'h2dev' && state.videoTrack !== 'all') state.videoTrack = 'h2dev';
       state.q = (t === 'video') ? (qp.get('vq') || '') : '';
       state.sortBy = (t === 'video') ? (qp.get('sort') || '') : '';
-      state.marketFilter = (t === 'video' || t === 'ngachxanh') ? (qp.get('market') || '') : '';
-      state.nicheFilter = (t === 'video' || t === 'ngachxanh') ? (qp.get('niche') || '') : '';
+      state.marketFilter = (t === 'video') ? (qp.get('market') || '') : '';
+      state.nicheFilter = (t === 'video') ? (qp.get('niche') || '') : '';
       /* UI-fix 2026-10-09: danh sach SKU cua bo loc ngach phai nam tren URL de tai lai / Back / Forward van dung ket qua. */
       state.skuFilter = (t === 'video') ? (qp.get('skus') || '') : '';
       state.watchFilter = (t === 'video') ? (qp.get('watch') || '') : '';
       state.freeOnly = (t === 'video') && qp.get('free') === '1';
+      state.nxQ = (t === 'ngachxanh') ? (qp.get('q') || qp.get('niche') || '') : '';
+      state.nxTier = (t === 'ngachxanh') ? (qp.get('nt') || '') : '';
+      state.nxMarket = (t === 'ngachxanh') ? (qp.get('nxm') || qp.get('market') || '') : '';
+      state.nxLimit = (t === 'ngachxanh') ? (parseInt(qp.get('nxl'), 10) || 0) : 0;
       state.rawPage = (t === 'rawkenh') ? (parseInt(qp.get('page'), 10) || 1) : 1;
       state.videoPage = (t === 'video') ? (parseInt(qp.get('vp'), 10) || 1) : 1;
       state.kenhPage = (t === 'kenh-mau') ? (parseInt(qp.get('kp'), 10) || 1) : 1;
@@ -1198,37 +1330,49 @@
       state.rawNiche = (t === 'rawkenh') ? (qp.get('rn') || '') : '';
       state.rawGroup = (t === 'rawkenh') ? (qp.get('rg') || '') : '';
       state.rawQ = (t === 'rawkenh') ? (qp.get('rq') || '') : '';
+      state.rawVitality = (t === 'rawkenh') ? (qp.get('rv') || '') : '';
+      state.rawFaceless = (t === 'rawkenh') ? (qp.get('rf') || '') : '';
+      state.rawLang = (t === 'rawkenh') ? (qp.get('rl') || '') : '';
       /* FIX (uifix88) F1 — dinh danh DUNG MOT muc tu ket qua FTS (id/handle that, khong phai chuoi tim).
          rid=RAW-nnn (ho so Raw) | handle=@x (tab Kenh mau) | did=DOC_n + di=<index> (tab Tai lieu). */
       state.rawRid = (t === 'rawkenh') ? (qp.get('rid') || '') : '';
       state.kenhHandle = (t === 'kenh-mau') ? (qp.get('handle') || '') : '';
       state.docDid = (t === 'tai-lieu') ? (qp.get('did') || '') : '';
-      state.docIdx = (t === 'tai-lieu' && qp.get('di') !== null && qp.get('di') !== '')
-        ? (parseInt(qp.get('di'), 10) || 0) : -1;
+      const docIdx = (t === 'tai-lieu') ? Number(qp.get('di') || NaN) : NaN;
+      state.docIdx = Number.isInteger(docIdx) && docIdx >= 0 ? docIdx : -1;
+      state.docBranch = (t === 'tai-lieu') ? (qp.get('db') || '').toUpperCase() : '';
+      state.kindFilter = (t === 'tai-lieu') ? (qp.get('kind') || '') : '';
+      state.promptNiche = (t === 'tai-lieu') ? (qp.get('pn') || '') : '';
       /* FIX (uifix87) LỖI 2: gợi ý FTS loại SOP mở /tai-lieu (loc dung 1 muc qua did/di).
          Truoc day router KHONG doc 'pq' => link mo tab Tai lieu nhung o tim kiem trong.
          Nay doc 'pq' -> state.promptQ (dung chung voi o tim cua tab Tai lieu).
          Tuong tu 'kq' -> state.kenhQ cho gợi ý FTS loại CHANNEL mở tab Kênh mẫu. */
       state.promptQ = (t === 'tai-lieu') ? (qp.get('pq') || '') : '';
-      state.kenhQ = (t === 'kenh-mau') ? (qp.get('kq') || '') : '';
+      state.reupQ = (t === 'nguonreup') ? (qp.get('rq') || '') : '';
+      state.reupType = (t === 'nguonreup') ? (qp.get('rt') || '') : '';
+      state.reupNiche = (t === 'nguonreup') ? (qp.get('rn') || '') : '';
+      state.kenhQ = (t === 'kenh-mau') ? (qp.get('kq') || qp.get('handle') || '') : '';
+      state.kenhStatus = (t === 'kenh-mau') ? (qp.get('ks') || '') : '';
+      state.kenhNiche = (t === 'kenh-mau') ? (qp.get('kn') || '') : '';
       state.sodoQ = (t === 'sodo') ? (qp.get('sq') || '') : '';
       state.sodoNode = (t === 'sodo') ? (qp.get('snode') || '') : '';
       /* sub la gia tri tu URL -> chi nhan gia tri hop le */
       const subQ = qp.get('sub');
-      state.clSubTab = (subQ && CL_SUBTABS.includes(subQ)) ? subQ : (state.clSubTab || 'principles');
+      state.clSubTab = (subQ && CL_SUBTABS.includes(subQ)) ? subQ : 'principles';
       return state;
     }
     /* FIX (uifix88) F2 — don URL: bo moi tham so KHONG thuoc tab dang mo (giu tab + tham so mine).
        Goi 1 lan sau init va moi lan popstate de link cu / link FTS dinh tham so khong lam ban URL. */
     const PARAM_OWNER = {
-      track: ['video'], vq: ['video'], sort: ['video'],
+      track: ['video', 'lotrinh'], vq: ['video'], sort: ['video'],
       market: ['video', 'ngachxanh'], niche: ['video', 'ngachxanh'],
       skus: ['video'], vp: ['video'], watch: ['video'], free: ['video'],
-      np: ['ngachxanh'],
-      pq: ['tai-lieu'], dp: ['tai-lieu'], did: ['tai-lieu'], di: ['tai-lieu'],
-      kq: ['kenh-mau'], handle: ['kenh-mau'], kp: ['kenh-mau'],
-      rq: ['rawkenh'], rn: ['rawkenh'], rg: ['rawkenh'], rid: ['rawkenh'], page: ['rawkenh'],
-      sub: ['chienluoc'], sq: ['sodo'], snode: ['sodo'], tab: []
+      q: ['ngachxanh', 'lotrinh'], nt: ['ngachxanh'], nxm: ['ngachxanh'], nxl: ['ngachxanh'], np: ['ngachxanh'],
+      pq: ['tai-lieu'], dp: ['tai-lieu'], did: ['tai-lieu'], di: ['tai-lieu'], db: ['tai-lieu'], kind: ['tai-lieu'], pn: ['tai-lieu'],
+      rt: ['nguonreup'],
+      kq: ['kenh-mau'], handle: ['kenh-mau'], kp: ['kenh-mau'], ks: ['kenh-mau'], kn: ['kenh-mau'],
+      rq: ['rawkenh', 'nguonreup'], rn: ['rawkenh', 'nguonreup'], rg: ['rawkenh'], rid: ['rawkenh'], page: ['rawkenh'], rv: ['rawkenh'], rf: ['rawkenh'], rl: ['rawkenh'],
+      sub: ['chienluoc'], sq: ['sodo'], snode: ['sodo'], tab: ['lotrinh']
     };
     function scrubForeignParams() {
       try {
@@ -1302,6 +1446,7 @@
       function syncRender() {
         clearTimeout(syncTimer);
         syncTimer = setTimeout(() => {
+          if (state.tab === 'lotrinh' && document.getElementById('lotrinh-embed-frame')) return;
           const scY = window.scrollY;             // giữ vị trí cuộn trước khi render lại
           render().then(() => { window.scrollTo(0, scY); });
         }, 60);
@@ -1317,6 +1462,28 @@
       });
       window.addEventListener('pageshow', (e) => { if (e.persisted) syncRender(); });
       window.addEventListener('visibilitychange', () => { if (!document.hidden) syncRender(); });
+      window.addEventListener('message', (e) => {
+        if (!e || !e.data || e.data.type !== 'h2dev:learn-state') return;
+        if (state.tab !== 'lotrinh') return;
+        try {
+          const u = new URL(location.href);
+          ['track', 'tab', 'q'].forEach(k => {
+            const val = e.data[k];
+            if (val && !(k === 'track' && val === 'h2dev')) u.searchParams.set(k, String(val));
+            else u.searchParams.delete(k);
+          });
+          history.replaceState(history.state, '', u.pathname + u.search);
+        } catch (err) {}
+      });
+      document.addEventListener('play', (e) => {
+        const target = e.target;
+        if (!target || target.tagName !== 'AUDIO') return;
+        document.querySelectorAll('audio').forEach(aud => {
+          if (aud !== target && !aud.paused) {
+            try { aud.pause(); } catch (err) {}
+          }
+        });
+      }, true);
 
       // Cử chỉ vuốt trái / phải chuyển tab (Touch Swipe Tabs Navigation)
       // Không nhận swipe bắt đầu từ dải tab cuộn ngang hoặc control tương tác.
@@ -1424,28 +1591,21 @@
         document.body.style.overflow = 'hidden';
         focusModal(modal);
 
-        // Fetch deep profile, top videos, voice profile and production toolkit
+        // Fetch deep profile, top videos, voice profile and production toolkit in parallel
         let profile = null;
         let topVideos = null;
         let voiceProfile = null;
         let productionToolkit = null;
         if (dossierPath) {
-          try {
-            const pRes = await fetch(dossierPath + '/channel-profile.json');
-            if (pRes.ok) profile = await pRes.json();
-          } catch(e) { console.warn('[H2DEV] đọc channel-profile.json lỗi', e); }
-          try {
-            const tvRes = await fetch(dossierPath + '/top-videos.json');
-            if (tvRes.ok) topVideos = await tvRes.json();
-          } catch(e) { console.warn('[H2DEV] đọc top-videos.json lỗi', e); }
-          try {
-            const vRes = await fetch(dossierPath + '/voice_profile.json');
-            if (vRes.ok) voiceProfile = await vRes.json();
-          } catch(e) { console.warn('[H2DEV] đọc voice_profile.json lỗi', e); }
-          try {
-            const tkRes = await fetch(dossierPath + '/production_toolkit.json');
-            if (tkRes.ok) productionToolkit = await tkRes.json();
-          } catch(e) { console.warn('[H2DEV] đọc production_toolkit.json lỗi', e); }
+          const fetchJsonSafe = (subPath) => fetch(dossierPath + subPath)
+            .then(res => res.ok ? res.json() : null)
+            .catch(e => { console.warn('[H2DEV] đọc ' + subPath + ' lỗi', e); return null; });
+          [profile, topVideos, voiceProfile, productionToolkit] = await Promise.all([
+            fetchJsonSafe('/channel-profile.json'),
+            fetchJsonSafe('/top-videos.json'),
+            fetchJsonSafe('/voice_profile.json'),
+            fetchJsonSafe('/production_toolkit.json')
+          ]);
         }
 
         const pData = profile || {};
@@ -2952,6 +3112,7 @@
             e.preventDefault();
             const p = parseInt(act.getAttribute('data-page') || '1', 10);
             state.rawPage = Number.isFinite(p) && p > 0 ? p : 1;
+            syncRawUrl();
             render();
             return;
           }
@@ -2989,11 +3150,16 @@
             e.preventDefault();
             const p = parseInt(act.getAttribute('data-page') || '1', 10);
             state.kenhPage = Number.isFinite(p) && p > 0 ? p : 1;
-            /* UI-04: dong bo kp vao URL (replaceState) de Back/Forward giu trang */
-            try { const u = new URL(location.href); if (state.kenhPage > 1) u.searchParams.set('kp', String(state.kenhPage)); else u.searchParams.delete('kp'); history.replaceState(history.state, '', u.pathname + u.search); } catch (err) {}
+            syncKenhUrl();
             render();
             return;
           }
+        }
+        const openMusicBtn = t.closest('#btn-open-music-studio, .js-open-music-studio');
+        if (openMusicBtn) {
+          e.preventDefault();
+          if (typeof window.openMusicStudioModal === 'function') window.openMusicStudioModal();
+          return;
         }
         const quick = t.closest('.js-quick-video');
         if (quick) {

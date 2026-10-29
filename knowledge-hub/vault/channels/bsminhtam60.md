@@ -1,12 +1,12 @@
 ---
 handle: "@bsminhtam60"
-name: "@bsminhtam60"
+name: "BS. Minh Tâm 60+"
 url: "https://www.youtube.com/@bsminhtam60"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @bsminhtam60 (@bsminhtam60)
+# Kênh Đối Thủ / Kênh Mẫu: @bsminhtam60 (BS. Minh Tâm 60+)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@bsminhtam60](https://www.youtube.com/@bsminhtam60)

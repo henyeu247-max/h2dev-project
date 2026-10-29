@@ -1,12 +1,12 @@
 ---
 handle: "@노을빛사연-l2m"
-name: "@노을빛사연-l2m"
+name: "노을빛 사연"
 url: "https://www.youtube.com/@노을빛사연-l2m"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @노을빛사연-l2m (@노을빛사연-l2m)
+# Kênh Đối Thủ / Kênh Mẫu: @노을빛사연-l2m (노을빛 사연)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@노을빛사연-l2m](https://www.youtube.com/@노을빛사연-l2m)

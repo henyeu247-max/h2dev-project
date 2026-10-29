@@ -1,16 +1,16 @@
 {
   "schema": "h2dev.nexus-graph.v2",
-  "generatedAt": "2026-10-29T11:00:16.897Z",
-  "buildTimeMs": 606,
+  "generatedAt": "2026-10-29T14:45:36.689Z",
+  "buildTimeMs": 2687,
   "stats": {
-    "totalNodes": 4148,
-    "totalEdges": 8293,
+    "totalNodes": 4147,
+    "totalEdges": 8292,
     "knowledgeNodes": 2793,
-    "infraNodes": 1355,
+    "infraNodes": 1354,
     "projects": 17,
     "domains": 88,
     "directories": 316,
-    "files": 933,
+    "files": 932,
     "tracks": 3,
     "modules": 35,
     "videos": 333,
@@ -64768,9 +64768,9 @@
         "relPath": "H2DEV-Project/data/counts-manifest.json",
         "relToProject": "data/counts-manifest.json",
         "ext": ".json",
-        "sizeBytes": 1447,
-        "mtimeMs": 1793271616205,
-        "updatedAt": "2026-10-29T11:00:16.204Z",
+        "sizeBytes": 1390,
+        "mtimeMs": 1793271617153,
+        "updatedAt": "2026-10-29T11:00:17.152Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fcounts-manifest.json"
       }
@@ -64795,8 +64795,8 @@
         "relToProject": "data/h2dev_knowledge_graph.db",
         "ext": ".db",
         "sizeBytes": 18046976,
-        "mtimeMs": 1793271610105,
-        "updatedAt": "2026-10-29T11:00:10.104Z",
+        "mtimeMs": 1793284911125,
+        "updatedAt": "2026-10-29T14:41:51.124Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_knowledge_graph.db"
       }
@@ -64821,8 +64821,8 @@
         "relToProject": "data/h2dev_master.db",
         "ext": ".db",
         "sizeBytes": 12455936,
-        "mtimeMs": 1793270905192,
-        "updatedAt": "2026-10-29T10:48:25.191Z",
+        "mtimeMs": 1793284908744,
+        "updatedAt": "2026-10-29T14:41:48.743Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_master.db"
       }
@@ -64872,9 +64872,9 @@
         "relPath": "H2DEV-Project/data/knowledge_graph.json",
         "relToProject": "data/knowledge_graph.json",
         "ext": ".json",
-        "sizeBytes": 4678094,
-        "mtimeMs": 1793271616219,
-        "updatedAt": "2026-10-29T11:00:16.219Z",
+        "sizeBytes": 4678093,
+        "mtimeMs": 1793272681738,
+        "updatedAt": "2026-10-29T11:18:01.737Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fknowledge_graph.json"
       }
@@ -65133,8 +65133,8 @@
         "relToProject": "data/overview_summary.json",
         "ext": ".json",
         "sizeBytes": 622,
-        "mtimeMs": 1793271616220,
-        "updatedAt": "2026-10-29T11:00:16.220Z",
+        "mtimeMs": 1793272623166,
+        "updatedAt": "2026-10-29T11:17:03.166Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Foverview_summary.json"
       }
@@ -66365,9 +66365,9 @@
         "relPath": "H2DEV-Project/scripts/build_knowledge_vault_graph.js",
         "relToProject": "scripts/build_knowledge_vault_graph.js",
         "ext": ".js",
-        "sizeBytes": 70043,
-        "mtimeMs": 1793271530648,
-        "updatedAt": "2026-10-29T10:58:50.647Z",
+        "sizeBytes": 68877,
+        "mtimeMs": 1793272671742,
+        "updatedAt": "2026-10-29T11:17:51.741Z",
         "role": "Data & Graph Synchronization Builder",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fbuild_knowledge_vault_graph.js"
       }
@@ -66417,9 +66417,9 @@
         "relPath": "H2DEV-Project/scripts/build_master_db.js",
         "relToProject": "scripts/build_master_db.js",
         "ext": ".js",
-        "sizeBytes": 51890,
-        "mtimeMs": 1793271605928,
-        "updatedAt": "2026-10-29T11:00:05.927Z",
+        "sizeBytes": 52188,
+        "mtimeMs": 1793272591373,
+        "updatedAt": "2026-10-29T11:16:31.373Z",
         "role": "Data & Graph Synchronization Builder",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fbuild_master_db.js"
       }
@@ -68795,9 +68795,9 @@
         "relPath": "H2DEV-Project/scripts/sync-counts.js",
         "relToProject": "scripts/sync-counts.js",
         "ext": ".js",
-        "sizeBytes": 34707,
-        "mtimeMs": 1793265611567,
-        "updatedAt": "2026-10-29T09:20:11.567Z",
+        "sizeBytes": 35119,
+        "mtimeMs": 1793272593330,
+        "updatedAt": "2026-10-29T11:16:33.330Z",
         "role": "Single Source of Count Truth (SSoT Counter)",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fsync-counts.js"
       }
@@ -73006,7 +73006,7 @@
       "track": "infra",
       "sku": "",
       "path": ".",
-      "degree": 15,
+      "degree": 14,
       "meta": {
         "projectId": "project:ytb-root-infra",
         "projectName": "Hạ Tầng Điều Phối Gốc (D:\\YTB Services & NSSM)",
@@ -73115,32 +73115,6 @@
         "updatedAt": "2026-09-13T14:12:52.881Z",
         "role": "Windows Service & Process Orchestrator",
         "targetUrl": "/sodo?snode=file%3AINSTALL_BOOT_SERVICES_NSSM.bat"
-      }
-    },
-    {
-      "id": "file:MAINT-CLEANUP-JEV-LEAK.ps1",
-      "type": "file",
-      "layer": "infra",
-      "level": 4,
-      "parentId": "domain:ytb-root-infra/services",
-      "projectId": "project:ytb-root-infra",
-      "label": "MAINT-CLEANUP-JEV-LEAK.ps1",
-      "track": "infra",
-      "sku": "",
-      "path": "MAINT-CLEANUP-JEV-LEAK.ps1",
-      "degree": 1,
-      "meta": {
-        "projectId": "project:ytb-root-infra",
-        "projectName": "Hạ Tầng Điều Phối Gốc (D:\\YTB Services & NSSM)",
-        "domainId": "domain:ytb-root-infra/services",
-        "relPath": "MAINT-CLEANUP-JEV-LEAK.ps1",
-        "relToProject": "MAINT-CLEANUP-JEV-LEAK.ps1",
-        "ext": ".ps1",
-        "sizeBytes": 3205,
-        "mtimeMs": 1789747623335,
-        "updatedAt": "2026-09-18T16:07:03.334Z",
-        "role": "Windows Service & Process Orchestrator",
-        "targetUrl": "/sodo?snode=file%3AMAINT-CLEANUP-JEV-LEAK.ps1"
       }
     },
     {
@@ -135467,12 +135441,6 @@
     {
       "source": "domain:ytb-root-infra/services",
       "target": "file:INSTALL_BOOT_SERVICES_NSSM.bat",
-      "relation": "CONTAINS_FILE",
-      "weight": 1.2
-    },
-    {
-      "source": "domain:ytb-root-infra/services",
-      "target": "file:MAINT-CLEANUP-JEV-LEAK.ps1",
       "relation": "CONTAINS_FILE",
       "weight": 1.2
     },

@@ -54,12 +54,47 @@ async function main() {
   if (escOk && escOk.includes('&#39;') && escOk.includes('&quot;') && escOk.includes('&lt;')) pass('1.3 esc full 5', escOk);
   else fail('1.3 esc full 5', String(escOk));
 
-  // 1.4 data-action filter free works (delegation)
+  // 1.3b /tatca route, CTA height >= 44px, policy-toggle expansion & #content aria-labelledby sync
+  const tatcaViewports = [
+    { tag: '1440x900', width: 1440, height: 900 },
+    { tag: '375x812', width: 375, height: 812 },
+  ];
+  const tatcaChecks = {};
+  for (const vp of tatcaViewports) {
+    await page.setViewportSize({ width: vp.width, height: vp.height });
+    await page.goto(`${BASE}/tatca`, { waitUntil: 'networkidle', timeout: 60000 });
+    await page.waitForTimeout(500);
+    tatcaChecks[vp.tag] = await page.evaluate(() => {
+      const cta = document.querySelector('.tq-head .btn-primary');
+      const ctaH = cta ? Math.round(cta.getBoundingClientRect().height) : 0;
+      const polBtn = document.querySelector('#content .policy-toggle');
+      const polLinks = document.querySelector('#content .policy-links');
+      const initHidden = polLinks ? (getComputedStyle(polLinks).display === 'none' && polLinks.offsetParent === null) : false;
+      if (polBtn) polBtn.click();
+      const polExpanded = polBtn ? polBtn.getAttribute('aria-expanded') === 'true' : false;
+      const polLinksVis = polLinks ? (!polLinks.hidden && getComputedStyle(polLinks).display !== 'none' && polLinks.offsetParent !== null && polLinks.querySelectorAll('[data-sodo-jump], a[href^="/lotrinh/"]').length >= 2) : false;
+      if (polBtn) polBtn.click();
+      const collapsedHidden = polLinks ? (polLinks.hidden && getComputedStyle(polLinks).display === 'none' && polLinks.offsetParent === null) : false;
+      return { ctaH, initHidden, polExpanded, polLinksVis, collapsedHidden };
+    });
+  }
+  await page.setViewportSize({ width: 1440, height: 900 });
+  const tatcaAllOk = Object.values(tatcaChecks).every((c) => c.ctaH >= 44 && c.initHidden && c.polExpanded && c.polLinksVis && c.collapsedHidden);
+  if (tatcaAllOk) {
+    pass('1.3b /tatca CTA >=44px & policy-toggle hidden/expand (1440x900 + 375x812)', JSON.stringify(tatcaChecks));
+  } else {
+    fail('1.3b /tatca CTA >=44px & policy-toggle hidden/expand (1440x900 + 375x812)', JSON.stringify(tatcaChecks));
+  }
+
+  // 1.4 data-action filter free works (delegation) + #content[role="tabpanel"] aria-labelledby sync
   await page.click('a[data-tab="video"], button[data-tab="video"]').catch(() => {});
   await page.waitForTimeout(500);
   // open via path
   await page.goto(`${BASE}/video`, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(600);
+  const contentAria = await page.evaluate(() => document.getElementById('content')?.getAttribute('aria-labelledby'));
+  if (contentAria === 'tab-video') pass('1.3c #content aria-labelledby syncs on tab switch', contentAria);
+  else fail('1.3c #content aria-labelledby syncs on tab switch', String(contentAria));
   const freeBtn = page.locator('[data-action="video-filter-free"]');
   if (await freeBtn.count()) {
     await freeBtn.first().click();

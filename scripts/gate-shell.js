@@ -39,9 +39,10 @@ const BASE = process.env.H2_GATE_BASE || 'http://127.0.0.1:8899';
 const PROBE = process.argv.indexOf('--probe') >= 0;
 
 const PAGES = [
-  { name: 'index', url: BASE + '/', html: 'index.html' },
-  { name: 'learn', url: BASE + '/lotrinh', html: 'learn.html' },
-  { name: 'player', url: BASE + '/lotrinh/VIDEO-DD983D', html: 'player.html' },
+  { name: 'index', url: BASE + '/', html: 'index.html', srcKey: 'index' },
+  { name: 'tatca', url: BASE + '/tatca', html: 'index.html', srcKey: 'index' },
+  { name: 'learn', url: BASE + '/lotrinh', html: 'learn.html', srcKey: 'learn' },
+  { name: 'player', url: BASE + '/lotrinh/VIDEO-DD983D', html: 'player.html', srcKey: 'player' },
 ];
 const VIEWPORTS = [
   { name: 'desktop', width: 1440, height: 900, headerH: 56, touch: 36 },
@@ -139,6 +140,8 @@ async function collect(page, vp) {
     const tl = q('[role="tablist"]');
     const tabs = Array.from(qa('[role="tab"]'));
     const visTabs = tabs.filter(t => t.getBoundingClientRect().height > 0);
+    const activeTab = q('[role="tab"][aria-selected="true"], .tab.active[role="tab"], .tab-btn.active[role="tab"]');
+    const contentPanel = q('#content[role="tabpanel"]');
     const box = q('#toast-box');
     const a11y = q('#a11y-status');
     return {
@@ -161,7 +164,8 @@ async function collect(page, vp) {
                  selected: tabs.filter(t => t.hasAttribute('aria-selected')).length,
                  roving: tabs.filter(t => t.getAttribute('tabindex') === '0').length,
                  visCount: visTabs.length,
-                 visMinH: visTabs.length ? Math.min.apply(null, visTabs.map(t => Math.round(t.getBoundingClientRect().height))) : -1 },
+                 visMinH: visTabs.length ? Math.min.apply(null, visTabs.map(t => Math.round(t.getBoundingClientRect().height))) : -1,
+                 tabpanelMatch: (!contentPanel || !activeTab || !activeTab.id) ? true : (contentPanel.getAttribute('aria-labelledby') === activeTab.id) },
       toast: { n: qa('#toast-box').length, role: box ? box.getAttribute('role') : null,
                live: box ? box.getAttribute('aria-live') : null, z: box ? getComputedStyle(box).zIndex : null,
                pos: box ? getComputedStyle(box).position : null },
@@ -251,6 +255,46 @@ async function collect(page, vp) {
         if (d.tablist.visCount > 0 && d.tablist.visMinH < vp.touch) {
           pr.push('[6] touch target tab=' + d.tablist.visMinH + 'px < ' + vp.touch + 'px (' + vp.name + ')');
         }
+        if (!d.tablist.tabpanelMatch) {
+          pr.push('[6] #content[role="tabpanel"] aria-labelledby khong khop tab dang active');
+        }
+        if (pg.name === 'tatca') {
+          const switchCheck = await page.evaluate(async () => {
+            const panel = document.querySelector('#content[role="tabpanel"]');
+            const getActive = () => document.querySelector('[role="tab"][aria-selected="true"], .tab-btn.active[role="tab"], .tab.active');
+            if (!panel) return { ok: true };
+            const initAct = getActive();
+            const initOk = !!initAct && !!initAct.id && panel.getAttribute('aria-labelledby') === initAct.id;
+            const nonDefault = document.getElementById('tab-video') || Array.from(document.querySelectorAll('[role="tab"]')).find(t => t.id && t !== initAct);
+            if (!nonDefault) return { ok: initOk, step: 'no-other-tab' };
+            nonDefault.click();
+            await new Promise(r => setTimeout(r, 250));
+            const afterNonDefaultAct = getActive();
+            const nonDefaultOk = !!afterNonDefaultAct && afterNonDefaultAct.id === nonDefault.id && panel.getAttribute('aria-labelledby') === nonDefault.id;
+            const tatcaTab = document.getElementById('tab-tatca');
+            let backTatcaOk = true;
+            if (tatcaTab) {
+              tatcaTab.click();
+              await new Promise(r => setTimeout(r, 250));
+              const backAct = getActive();
+              backTatcaOk = !!backAct && backAct.id === 'tab-tatca' && panel.getAttribute('aria-labelledby') === 'tab-tatca';
+            }
+            return { ok: initOk && nonDefaultOk && backTatcaOk, initOk, nonDefaultOk, backTatcaOk };
+          });
+          if (!switchCheck.ok) {
+            pr.push('[6] #content[role="tabpanel"] aria-labelledby khong khop khi chuyen tab (' + JSON.stringify(switchCheck) + ')');
+          }
+          if (PROBE && switchCheck.ok) {
+            await page.evaluate(() => {
+              const panel = document.querySelector('#content[role="tabpanel"]');
+              if (panel) panel.setAttribute('aria-labelledby', 'tab-probe-mismatch');
+            });
+            const dProbe = await collect(page, vp);
+            if (!dProbe.tablist.tabpanelMatch) {
+              pr.push('[6] #content[role="tabpanel"] aria-labelledby khong khop tab dang active');
+            }
+          }
+        }
       }
       /* [6b] DOI CHIEU 2 LOP: DOM TINH (HTML) <-> DOM DONG (runtime) + DEM SO LAN KHAI BAO.
          -----------------------------------------------------------------------------
@@ -263,9 +307,10 @@ async function collect(page, vp) {
          => Luat nay chot: so lan khai bao DUNG BANG so lan doi chieu duoc ghi o
             EXPECT_NGUON ben duoi. Sua so luong khai bao ma khong cap nhat bang = FAIL. */
       if (d.tablist.present) {
-        const src = SRC[pg.name];
+        const sKey = pg.srcKey || pg.name;
+        const src = SRC[sKey];
         if (src) {
-          const exp = EXPECT_NGUON[pg.name];
+          const exp = EXPECT_NGUON[sKey];
           if (exp) {
             const bad = [];
             for (const key of Object.keys(exp)) {
@@ -307,13 +352,16 @@ async function collect(page, vp) {
   console.log('\n' + '='.repeat(64));
   if (PROBE) {
     const caughtRuntime = allProblems.some(problem => problem.includes('[6]'));
+    const caughtTabpanel = allProblems.some(problem => problem.includes('aria-labelledby khong khop tab dang active'))
+      && !allProblems.some(problem => problem.includes('aria-labelledby khong khop khi chuyen tab'));
     const caughtSource = allProblems.some(problem => problem.includes('[6b]'));
     const afterSha = new Map(probeFiles.map(file => [file, sha1(file)]));
     const identical = probeFiles.every(file => beforeSha.get(file) === afterSha.get(file));
     console.log('PROBE runtime [6]: ' + (caughtRuntime ? 'BAT DUOC' : 'BO LOT'));
+    console.log('PROBE tabpanelMatch [6]: ' + (caughtTabpanel ? 'BAT DUOC' : 'BO LOT'));
     console.log('PROBE source [6b]: ' + (caughtSource ? 'BAT DUOC' : 'BO LOT'));
     console.log('SHA1 truoc/sau + source byte-identical: ' + (identical ? 'OK' : 'THAT BAI'));
-    if (caughtRuntime && caughtSource && identical) console.log('PROBE OK: gate BAT DUOC ca hai lop, source that bat bien.');
+    if (caughtRuntime && caughtTabpanel && caughtSource && identical) console.log('PROBE OK: gate BAT DUOC ca hai lop, source that bat bien.');
     else console.log('PROBE THAT BAI: thieu bat loi runtime/source hoac source bi thay doi.');
   } else {
     console.log(fail === 0
@@ -322,6 +370,6 @@ async function collect(page, vp) {
   }
   console.log('='.repeat(64));
   process.exitCode = (PROBE
-    ? (allProblems.some(problem => problem.includes('[6]')) && allProblems.some(problem => problem.includes('[6b]')) && probeFiles.every(file => beforeSha.get(file) === sha1(file)) ? 0 : 1)
+    ? (allProblems.some(problem => problem.includes('[6]')) && allProblems.some(problem => problem.includes('aria-labelledby khong khop tab dang active')) && !allProblems.some(problem => problem.includes('aria-labelledby khong khop khi chuyen tab')) && allProblems.some(problem => problem.includes('[6b]')) && probeFiles.every(file => beforeSha.get(file) === sha1(file)) ? 0 : 1)
     : (fail === 0 ? 0 : 1));
 })();

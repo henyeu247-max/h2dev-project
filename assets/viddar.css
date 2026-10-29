@@ -497,7 +497,6 @@ code { font-size: 12px; color: var(--fg-2); }
 .policy-list li:first-child { padding-top: 0; }
 .policy-list li:last-child { padding-bottom: 0; border-bottom: 0; }
 .policy-i { padding-top: 1px; color: var(--fg-muted); font: 600 12px/1.5 var(--font-mono); }
-.policy-t { min-width: 0; color: var(--fg-2); font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
 
 .badge { display: inline-flex; align-items: center; width: fit-content; max-width: 100%; padding: 2px 8px; color: var(--fg-2); background: var(--surface-2); border: 1px solid var(--border); border-radius: 2px; font-family: var(--font-mono); font-size: 12px; font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.04em; white-space: normal; overflow-wrap: anywhere; }   /* P1-D: 1.4 -> 1.35 */
 /* P3.7 (2026-09-24): badge cu dung font-size:0.6rem = 9.6px — NGOAI thang 9 bac VA
@@ -1532,7 +1531,6 @@ button.niche-row:focus-visible,
 }
 .overview-grid > .card > .market-list,
 .overview-grid > .card > .niche-list { flex: 1 1 auto; }
-.tq-head { align-items: flex-start; }
 .bento-card { min-width: 0; min-height: 96px; }
 @media (min-width: 1280px) {
   #panel-root > .tq-head,
@@ -1550,8 +1548,9 @@ button.niche-row:focus-visible,
 }
 .overview-grid > .card .page-h2 {
   font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0;
+}
+.overview-link[data-watch-filter] {
+  margin-top: 0;
 }
 .overview-grid > .card .card-note {
   font-size: 12px;
@@ -1607,25 +1606,10 @@ button.niche-row:focus-visible,
   text-align: right;
 }
 .market-n { color: var(--fg-2); }
-.market-row-more .market-label { color: var(--fg-muted); font-style: normal; }
 
 /* Niche rows — rank column + quiet risk chip */
 .niche-row {
   grid-template-columns: 1.25rem minmax(0, 1fr) 3.5rem;
-}
-.niche-rank {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--fg-muted);
-  text-align: center;
-}
-.niche-row-top .niche-rank {
-  color: var(--brand-ink);
-  background: var(--brand-tint);
-  border-radius: 4px;
-  height: 20px;
-  line-height: 20px;
 }
 .niche-row-top .niche-name {
   font-weight: 700;
@@ -1694,8 +1678,8 @@ button.niche-row:focus-visible,
   align-items: center;
   gap: 10px;
   min-height: 48px;
-  height: 48px;
-  padding: 0 6px;
+  height: auto;
+  padding: 6px;
   border-bottom: 1px solid var(--hairline, var(--border));
   box-sizing: border-box;
 }
@@ -1703,9 +1687,6 @@ button.niche-row:focus-visible,
 .niche-row {
   /* rank chen cung cot voi label market */
   grid-template-columns: 7rem minmax(0, 1fr) 3.25rem;
-}
-.niche-rank {
-  display: none; /* an rank de cot 1 dong nhat label */
 }
 .niche-name {
   grid-column: 1;
@@ -1732,7 +1713,7 @@ button.niche-row:focus-visible,
 @media (max-width: 900px) {
   .market-row, .niche-row {
     grid-template-columns: 5.75rem minmax(0, 1fr) 2.75rem;
-    height: 46px;
+    height: auto;
     min-height: 46px;
     gap: 8px;
   }
@@ -1740,9 +1721,9 @@ button.niche-row:focus-visible,
 @media (max-width: 640px) {
   .market-row, .niche-row {
     grid-template-columns: 5.25rem minmax(0, 1fr) 2.5rem;
-    height: 44px;
+    height: auto;
     min-height: 44px;
-    padding: 0 4px;
+    padding: 6px 4px;
   }
   .overview-grid > .card { min-height: 420px; }
 }
@@ -1801,25 +1782,10 @@ button.niche-row:focus-visible,
 .stat-label { text-transform: none !important; letter-spacing: 0; font-size: 12px; color: var(--fg-muted); }
 .policy-item { display: grid; grid-template-columns: 2rem minmax(0,1fr); gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--hairline, var(--border)); }
 .policy-item:last-child { border-bottom: 0; }
-.policy-t {
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--fg-2);
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.policy-item:hover .policy-t,
-.policy-item:focus-within .policy-t {
-  -webkit-line-clamp: unset;
-  display: block;
-  overflow: visible;
-}
 .bento-card[data-kpi-card] { cursor: pointer; }
 
 /* TQ CTA hit target */
-.tq-head .btn-primary {
+#content .tq-head .btn-primary {
   min-height: 44px;
   padding: 10px 14px;
 }
@@ -1857,7 +1823,7 @@ button.niche-row:focus-visible,
 /* Doan mo ta dai dang 11px (rawkenh 70, nguonreup 42, tai-lieu 12 doan) -> 12px; doan van 12px -> 13px. */
 #content p.text-xs, #content .text-xs.line-clamp-1, #content .text-xs.line-clamp-2 { font-size: var(--h2-font-xs); }
 #content p.text-xs.leading-relaxed, #content .text-xs.leading-relaxed, #content p.text-xs.break-words,
-.page-lede, .card-note, .policy-t { font-size: var(--h2-font-sm); }
+.page-lede, .card-note, #content .policy-toggle .policy-text { font-size: var(--h2-font-sm); }
 
 /* (C) CHUYEN DONG: ton trong "giam chuyen dong" cua he dieu hanh cho MOI hieu ung (truoc chi co 6 cho rieng le). */
 @media (prefers-reduced-motion: reduce) {
@@ -1985,10 +1951,10 @@ button.niche-row:focus-visible,
 
 /* UI-fix 2026-10-09 (tab /tatca): chinh sach mo/thu gon bang cham (ca dien thoai); ten ngach xuong dong thay vi cat "...". */
 #content .policy-toggle { display: block; width: 100%; min-width: 0; margin: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
-#content .policy-toggle .policy-text { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 12px; line-height: 1.5; color: var(--fg-2); overflow-wrap: anywhere; }
+#content .policy-toggle .policy-text { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: var(--h2-font-sm); line-height: 1.5; color: var(--fg-2); overflow-wrap: anywhere; }
 #content .policy-toggle.is-open .policy-text { display: block; -webkit-line-clamp: unset; overflow: visible; }
 #content .policy-toggle .policy-more { display: block; margin-top: 4px; font-size: 12px; font-weight: 600; color: var(--brand-ink); }
-#content .policy-toggle .policy-more[hidden] { display: none; }
+#content .policy-toggle .policy-more[hidden], #content .policy-links[hidden], #panel-root #content .policy-links[hidden] { display: none !important; }
 #content .policy-toggle:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
 #content .niche-row .niche-name { white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere; line-height: 1.3; }
 /* UI-fix 2026-10-09 (tab /tatca): hang ngach dung luoi co dinh de cac thanh tien do thang hang (truoc day flex nen cot ten co theo chu). */
@@ -2016,12 +1982,19 @@ button.niche-row:focus-visible,
 /* UI-standard G-3 (2026-10-09): nhom chip loc tren may tinh bang va dien thoai (<= 1024px) chay theo flex-wrap; chip tu gian de
    hang cuoi khong con chip le. Khong dung so cot co dinh nen khong vo khi chieu rong thay doi. Nhom co id rieng giu nguyen luoi. */
 @media (max-width: 1024px) {
-  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) { display: flex !important; flex-wrap: wrap !important; gap: 8px !important; }
-  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn { flex: 1 1 112px; min-height: 40px; line-height: 1.2; justify-content: center; text-align: center; white-space: normal !important; }
+  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):not(.policy-links):not([hidden]) { display: flex !important; flex-wrap: wrap !important; gap: 8px !important; }
+  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):not(.policy-links):not([hidden]) > .filter-btn { flex: 1 1 112px; min-height: 40px; line-height: 1.2; justify-content: center; text-align: center; white-space: normal !important; }
 }
 
-/* UI-standard A-1 (2026-10-09): nut chu nho (text-xs) co vung cham toi thieu 24px, giu nguyen bo cuc chip. */
-#content button.text-xs { min-height: 24px; display: inline-flex; align-items: center; }
+/* UI-standard A-1 (2026-10-09): nut chu nho (text-xs) co vung cham toi thieu 24px, giu nguyen bo cuc chip; nut .btn-press trong the video giu min-height 38px. */
+#content button.text-xs:not(.btn-press) { min-height: 24px; display: inline-flex; align-items: center; }
+#content .card .btn-press { min-height: 38px; }
+#btn-clear-video-q { position: absolute; }
+#btn-clear-video-q::after { content: ""; position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%); }
+.js-v-sug-jump { min-height: 24px; display: inline-flex; align-items: center; }
+@media (min-width: 641px) {
+  #video-filter-selects > select#fniche { max-width: 260px; }
+}
 
 /* UI-standard A-1 (2026-10-09): nut mo rong chinh sach va nut doc truc tiep co vung cham toi thieu 24px. */
 #content .policy-toggle { min-height: 24px; }

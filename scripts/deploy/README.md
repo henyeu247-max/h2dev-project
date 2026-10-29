@@ -27,5 +27,6 @@ ssh root@103.249.201.164 "chmod +x /root/h2dev.git/hooks/post-receive && bash -n
 ```
 
 ## Lịch sử
+- **2026-10-30:** chuyển `APP` sang `/www/wwwroot/97yo-dev-learn.tonymmo.com/app` (gỡ bỏ site cũ `h2dev-learn.tonymmo.com`).
 - **2026-09-17:** thêm bước GUARD `sync-counts.js --check` + ROLLBACK. Test E2E: push commit lệch → BLOCKED → rollback đúng.
 

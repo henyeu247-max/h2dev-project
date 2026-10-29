@@ -1,7 +1,7 @@
 {
   "schema": "h2dev.nexus-graph.v2",
-  "generatedAt": "2026-10-29T09:33:08.517Z",
-  "buildTimeMs": 1657,
+  "generatedAt": "2026-10-29T11:00:16.897Z",
+  "buildTimeMs": 606,
   "stats": {
     "totalNodes": 4148,
     "totalEdges": 8293,
@@ -64768,9 +64768,9 @@
         "relPath": "H2DEV-Project/data/counts-manifest.json",
         "relToProject": "data/counts-manifest.json",
         "ext": ".json",
-        "sizeBytes": 1390,
-        "mtimeMs": 1793266385124,
-        "updatedAt": "2026-10-29T09:33:05.124Z",
+        "sizeBytes": 1447,
+        "mtimeMs": 1793271616205,
+        "updatedAt": "2026-10-29T11:00:16.204Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fcounts-manifest.json"
       }
@@ -64795,8 +64795,8 @@
         "relToProject": "data/h2dev_knowledge_graph.db",
         "ext": ".db",
         "sizeBytes": 18046976,
-        "mtimeMs": 1793266384869,
-        "updatedAt": "2026-10-29T09:33:04.869Z",
+        "mtimeMs": 1793271610105,
+        "updatedAt": "2026-10-29T11:00:10.104Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_knowledge_graph.db"
       }
@@ -64821,8 +64821,8 @@
         "relToProject": "data/h2dev_master.db",
         "ext": ".db",
         "sizeBytes": 12455936,
-        "mtimeMs": 1793265011242,
-        "updatedAt": "2026-10-29T09:10:11.241Z",
+        "mtimeMs": 1793270905192,
+        "updatedAt": "2026-10-29T10:48:25.191Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_master.db"
       }
@@ -64872,9 +64872,9 @@
         "relPath": "H2DEV-Project/data/knowledge_graph.json",
         "relToProject": "data/knowledge_graph.json",
         "ext": ".json",
-        "sizeBytes": 4533344,
-        "mtimeMs": 1793266384903,
-        "updatedAt": "2026-10-29T09:33:04.902Z",
+        "sizeBytes": 4678094,
+        "mtimeMs": 1793271616219,
+        "updatedAt": "2026-10-29T11:00:16.219Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fknowledge_graph.json"
       }
@@ -65132,9 +65132,9 @@
         "relPath": "H2DEV-Project/data/overview_summary.json",
         "relToProject": "data/overview_summary.json",
         "ext": ".json",
-        "sizeBytes": 594,
-        "mtimeMs": 1793265011258,
-        "updatedAt": "2026-10-29T09:10:11.258Z",
+        "sizeBytes": 622,
+        "mtimeMs": 1793271616220,
+        "updatedAt": "2026-10-29T11:00:16.220Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Foverview_summary.json"
       }
@@ -66365,9 +66365,9 @@
         "relPath": "H2DEV-Project/scripts/build_knowledge_vault_graph.js",
         "relToProject": "scripts/build_knowledge_vault_graph.js",
         "ext": ".js",
-        "sizeBytes": 67963,
-        "mtimeMs": 1793266276703,
-        "updatedAt": "2026-10-29T09:31:16.702Z",
+        "sizeBytes": 70043,
+        "mtimeMs": 1793271530648,
+        "updatedAt": "2026-10-29T10:58:50.647Z",
         "role": "Data & Graph Synchronization Builder",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fbuild_knowledge_vault_graph.js"
       }
@@ -66417,9 +66417,9 @@
         "relPath": "H2DEV-Project/scripts/build_master_db.js",
         "relToProject": "scripts/build_master_db.js",
         "ext": ".js",
-        "sizeBytes": 51449,
-        "mtimeMs": 1793266302169,
-        "updatedAt": "2026-10-29T09:31:42.169Z",
+        "sizeBytes": 51890,
+        "mtimeMs": 1793271605928,
+        "updatedAt": "2026-10-29T11:00:05.927Z",
         "role": "Data & Graph Synchronization Builder",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fbuild_master_db.js"
       }
@@ -68093,9 +68093,9 @@
         "relPath": "H2DEV-Project/scripts/lib/counts.js",
         "relToProject": "scripts/lib/counts.js",
         "ext": ".js",
-        "sizeBytes": 9445,
-        "mtimeMs": 1793266365478,
-        "updatedAt": "2026-10-29T09:32:45.478Z",
+        "sizeBytes": 9644,
+        "mtimeMs": 1793271603468,
+        "updatedAt": "2026-10-29T11:00:03.468Z",
         "role": "Single Source of Count Truth (SSoT Counter)",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Flib%2Fcounts.js"
       }

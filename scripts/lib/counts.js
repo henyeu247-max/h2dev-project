@@ -209,7 +209,11 @@ function computeCounts() {
 // Manifest day du: counts + nhan (label) de doc tu dong vao docs/UI.
 function buildManifest() {
   const counts = computeCounts();
-  const generatedAt = new Date().toISOString();
+  const prev = readJson('data/counts-manifest.json');
+  let generatedAt = new Date().toISOString();
+  if (prev && prev.counts && JSON.stringify(prev.counts) === JSON.stringify(counts) && prev.generatedAt) {
+    generatedAt = prev.generatedAt;
+  }
   return {
     schema: 'h2dev.counts-manifest.v1',
     generatedAt,

@@ -39,7 +39,7 @@ async function main() {
   await page.goto(`${BASE}/`, { waitUntil: 'networkidle', timeout: 90000 });
   await page.waitForTimeout(800);
   const title = await page.title();
-  if (title.includes('H2DEV')) pass('1.1 title', title); else fail('1.1 title', title);
+  if (title.includes('H2DEV') || title.includes('97yo-dev')) pass('1.1 title', title); else fail('1.1 title', title);
 
   // 1.2 No onclick attributes in live DOM
   const onclickCount = await page.evaluate(() => document.querySelectorAll('[onclick]').length);

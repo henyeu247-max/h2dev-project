@@ -1,12 +1,12 @@
 ---
 handle: "@wealtharrow"
-name: "@wealtharrow"
+name: "부의 방향"
 url: "https://www.youtube.com/@wealtharrow"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @wealtharrow (@wealtharrow)
+# Kênh Đối Thủ / Kênh Mẫu: @wealtharrow (부의 방향)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@wealtharrow](https://www.youtube.com/@wealtharrow)

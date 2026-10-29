@@ -11,8 +11,8 @@ videos_count: 2
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PhilosophiesforLife](https://www.youtube.com/@PhilosophiesforLife)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
-- **Ngách (kenh-mau.json):** `Đa ngách`
-- **Thị trường:** `Toàn cầu`
+- **Ngách (kenh-mau.json):** `Phật pháp Nhật`
+- **Thị trường:** `🇯🇵 Nhật`
 
 ## Các Video Bài Giảng Phân Tích Kênh Này (2)
 - [[videos/VIDEO-f72ddb|VIDEO-f72ddb — Chủ Đề Nước Ngoài Và Cách Làm Chi Tiết Nước Ngoài Ra Tiền Ngay]] (`HUAN`)

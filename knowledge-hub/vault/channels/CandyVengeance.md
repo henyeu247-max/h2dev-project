@@ -1,12 +1,12 @@
 ---
 handle: "@CandyVengeance"
-name: "@CandyVengeance"
+name: "Candy Vengeance"
 url: "https://www.youtube.com/@CandyVengeance"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @CandyVengeance (@CandyVengeance)
+# Kênh Đối Thủ / Kênh Mẫu: @CandyVengeance (Candy Vengeance)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@CandyVengeance](https://www.youtube.com/@CandyVengeance)

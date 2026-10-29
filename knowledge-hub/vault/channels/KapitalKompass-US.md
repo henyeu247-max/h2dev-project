@@ -1,12 +1,12 @@
 ---
 handle: "@KapitalKompass-US"
-name: "@KapitalKompass-US"
+name: "夜归微醺 | Nightfall &amp; Spirits"
 url: "https://www.youtube.com/@KapitalKompass-US"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @KapitalKompass-US (@KapitalKompass-US)
+# Kênh Đối Thủ / Kênh Mẫu: @KapitalKompass-US (夜归微醺 | Nightfall &amp; Spirits)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@KapitalKompass-US](https://www.youtube.com/@KapitalKompass-US)

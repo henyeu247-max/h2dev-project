@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-20",
-  "note": "Hệ thống 97yo-dev (H2DEV-Project) là nguồn sự thật duy nhất (333 bài học · 3 nhánh: 148 H2DEV + 140 Huân + 45 DGMD · 300 tài liệu catalog · 256 kênh mẫu: 184 live + 72 dead · 156 raw kênh). Lịch sử đồng bộ ngoài: GOM MCP về 1 nguồn · chuẩn hóa 34/34 ngách · đồng bộ kho tài liệu và kênh mẫu.",
+  "updated": "2026-10-29",
+  "note": "Hệ thống 97yo-dev (H2DEV-Project) là nguồn sự thật duy nhất (333 bài học · 3 nhánh: 148 H2DEV + 140 Huân + 45 DGMD · 580 tài liệu catalog · 1.082 kênh mẫu: 993 live + 89 dead · 156 raw kênh · 40 Ngách trụ cột × 120 Vi Ngách · 19 H2DEV Specialized Skills). Đồng bộ toàn diện từ Kho Telegram @dailyytniches, 57 X Threads (TubeLab, Calliope, Tobi, CrazyKaomei), WeChat Vault và 55 Master Prompts.",
   "khongGom": [
     {
       "item": "mcp-keys-du-phong.md",
@@ -265,5 +265,5 @@
     }
   ],
   "taiLieuTruoc": 57,
-  "taiLieuSau": 76
+  "taiLieuSau": 580
 }

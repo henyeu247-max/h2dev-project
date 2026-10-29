@@ -123,7 +123,12 @@
     "size_mb": 274.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H09"
+    ]
   },
   {
     "sku": "VIDEO-484f9e",
@@ -228,7 +233,12 @@
     "module_title": "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục",
     "duration": "9:41",
     "duration_sec": 581,
-    "size_mb": 203
+    "size_mb": 203,
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H12"
+    ]
   },
   {
     "sku": "VIDEO-e24c31",
@@ -317,7 +327,11 @@
     "size_mb": 175.3,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H10",
+    "nicheCodes": [
+      "H10"
+    ]
   },
   {
     "sku": "VIDEO-a7bfd0",
@@ -415,7 +429,12 @@
     "size_mb": 170.2,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H10",
+    "nicheCodes": [
+      "H10",
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-4b3c09",
@@ -505,7 +524,11 @@
     "size_mb": 331.7,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-28e1cc",
@@ -593,7 +616,12 @@
     "size_mb": 341.2,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H37"
+    ]
   },
   {
     "sku": "VIDEO-d2cd90",
@@ -683,7 +711,12 @@
     "size_mb": 189.8,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H07",
+    "nicheCodes": [
+      "H07",
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-9aff6d",
@@ -774,7 +807,11 @@
     "size_mb": 195.8,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08"
+    ]
   },
   {
     "sku": "VIDEO-e90874",
@@ -873,7 +910,11 @@
     "size_mb": 241.1,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-c5837a",
@@ -969,7 +1010,13 @@
     "size_mb": 202.1,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H07",
+    "nicheCodes": [
+      "H07",
+      "H16",
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-348217",
@@ -1040,7 +1087,11 @@
     "size_mb": 119.4,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-f74bb1",
@@ -1110,7 +1161,11 @@
     "size_mb": 210.6,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-1aaf46",
@@ -1212,7 +1267,11 @@
     "size_mb": 141.2,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-21956b",
@@ -1280,7 +1339,15 @@
     "size_mb": 266.2,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H08",
+      "H10",
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-e91589",
@@ -1350,7 +1417,11 @@
     "size_mb": 25.1,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ]
   },
   {
     "sku": "VIDEO-34c92b",
@@ -1407,7 +1478,11 @@
     "size_mb": 141.4,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-21824a",
@@ -1477,7 +1552,11 @@
     "size_mb": 20.7,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01"
+    ]
   },
   {
     "sku": "VIDEO-84a039",
@@ -1546,7 +1625,13 @@
     "size_mb": 134,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H07",
+      "H08"
+    ]
   },
   {
     "sku": "VIDEO-817ae6",
@@ -1606,7 +1691,13 @@
     "size_mb": 127.5,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H07",
+      "H40"
+    ]
   },
   {
     "sku": "VIDEO-4425fc",
@@ -1668,7 +1759,11 @@
     "size_mb": 20.5,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-2de9e4",
@@ -1727,7 +1822,12 @@
     "size_mb": 111.7,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H05"
+    ]
   },
   {
     "sku": "VIDEO-2ba0d1",
@@ -1789,7 +1889,13 @@
     "size_mb": 195.9,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H08",
+      "H14"
+    ]
   },
   {
     "sku": "VIDEO-5d54d0",
@@ -1856,7 +1962,11 @@
     "size_mb": 711.8,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-2277b3",
@@ -1911,7 +2021,11 @@
     "size_mb": 200.9,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "sku": "VIDEO-f77c31",
@@ -1973,7 +2087,11 @@
     "size_mb": 14.6,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-ca0b1a",
@@ -2037,7 +2155,11 @@
     "size_mb": 487.9,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "sku": "VIDEO-54c8f7",
@@ -2098,7 +2220,11 @@
     "size_mb": 759.1,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-3e943c",
@@ -2169,7 +2295,11 @@
     "size_mb": 10,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-469cb5",
@@ -2232,7 +2362,11 @@
     "size_mb": 67.6,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01"
+    ]
   },
   {
     "sku": "VIDEO-7312df",
@@ -2289,7 +2423,11 @@
     "size_mb": 3.8,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-2235fb",
@@ -2348,7 +2486,11 @@
     "size_mb": 97.5,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-e9e879",
@@ -2403,7 +2545,11 @@
     "size_mb": 129.9,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-6283a6",
@@ -2465,7 +2611,11 @@
     "size_mb": 25.6,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-46c57e",
@@ -2542,7 +2692,11 @@
     "size_mb": 28,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01"
+    ]
   },
   {
     "sku": "VIDEO-b1208e",
@@ -2597,7 +2751,11 @@
     "size_mb": 131.7,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-1acb10",
@@ -2652,7 +2810,11 @@
     "size_mb": 134,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-a1c98f",
@@ -2707,7 +2869,11 @@
     "size_mb": 205.9,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-70f1f1",
@@ -2766,7 +2932,12 @@
     "size_mb": 87.6,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H06"
+    ]
   },
   {
     "sku": "VIDEO-33f474",
@@ -2821,7 +2992,12 @@
     "size_mb": 93.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H07",
+    "nicheCodes": [
+      "H07",
+      "H40"
+    ]
   },
   {
     "sku": "VIDEO-28bb9b",
@@ -2878,7 +3054,11 @@
     "size_mb": 73.8,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-9f9fbc",
@@ -2951,7 +3131,11 @@
     "size_mb": 164.6,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-10f129",
@@ -3009,7 +3193,11 @@
     "size_mb": 89.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "sku": "VIDEO-2553da",
@@ -3070,7 +3258,11 @@
     "size_mb": 39.6,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-3fd0d9",
@@ -3134,7 +3326,11 @@
     "size_mb": 44.1,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-502960",
@@ -3191,7 +3387,12 @@
     "size_mb": 93.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H15",
+    "nicheCodes": [
+      "H15",
+      "H38"
+    ]
   },
   {
     "sku": "VIDEO-9873fb",
@@ -3253,7 +3454,11 @@
     "size_mb": 20.5,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-10ceec",
@@ -3316,7 +3521,11 @@
     "size_mb": 62.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-e83319",
@@ -3383,7 +3592,11 @@
     "size_mb": 204.4,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H09",
+    "nicheCodes": [
+      "H09"
+    ]
   },
   {
     "sku": "VIDEO-9a6957",
@@ -3447,7 +3660,11 @@
     "size_mb": 65.4,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H13",
+    "nicheCodes": [
+      "H13"
+    ]
   },
   {
     "sku": "VIDEO-ba3904",
@@ -3508,7 +3725,11 @@
     "size_mb": 30.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-acd33f",
@@ -3567,7 +3788,11 @@
     "size_mb": 67.4,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-1a7f58",
@@ -3627,7 +3852,11 @@
     "size_mb": 90.5,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H12",
+    "nicheCodes": [
+      "H12"
+    ]
   },
   {
     "sku": "VIDEO-5785a5",
@@ -3692,7 +3921,11 @@
     "size_mb": 123.9,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-64130d",
@@ -3757,7 +3990,11 @@
     "size_mb": 79.8,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-5c0b20",
@@ -3821,7 +4058,11 @@
     "size_mb": 142.8,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H13",
+    "nicheCodes": [
+      "H13"
+    ]
   },
   {
     "sku": "VIDEO-3f85a1",
@@ -3881,7 +4122,12 @@
     "size_mb": 99.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H27"
+    ]
   },
   {
     "sku": "VIDEO-bf7b32",
@@ -3938,7 +4184,11 @@
     "size_mb": 86.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-4a5aac",
@@ -4007,7 +4257,11 @@
     "size_mb": 88.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-a2b317",
@@ -4068,7 +4322,11 @@
     "size_mb": 84.5,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H11",
+    "nicheCodes": [
+      "H11"
+    ]
   },
   {
     "sku": "VIDEO-2469ee",
@@ -4126,7 +4384,11 @@
     "size_mb": 59.9,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-dbd487",
@@ -4182,7 +4444,11 @@
     "size_mb": 23.1,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-d71802",
@@ -4241,7 +4507,11 @@
     "size_mb": 52.8,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H10",
+    "nicheCodes": [
+      "H10"
+    ]
   },
   {
     "sku": "VIDEO-d20744",
@@ -4339,7 +4609,11 @@
     "size_mb": 7.5,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-33d701",
@@ -4402,7 +4676,13 @@
     "size_mb": 211.7,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H09",
+      "H20"
+    ]
   },
   {
     "sku": "VIDEO-7e00ee",
@@ -4470,7 +4750,12 @@
     "size_mb": 224.7,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H09"
+    ]
   },
   {
     "sku": "VIDEO-ff9be6",
@@ -4535,7 +4820,11 @@
     "size_mb": 58,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-6ad3fe",
@@ -4600,7 +4889,11 @@
     "size_mb": 21.2,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-7f0bb4",
@@ -4665,7 +4958,11 @@
     "size_mb": 26.9,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-7db740",
@@ -4730,7 +5027,11 @@
     "size_mb": 5.2,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-546afa",
@@ -4791,7 +5092,11 @@
     "size_mb": 88.2,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03"
+    ]
   },
   {
     "sku": "VIDEO-d84a78",
@@ -4875,7 +5180,11 @@
     "size_mb": 89.5,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H12",
+    "nicheCodes": [
+      "H12"
+    ]
   },
   {
     "sku": "VIDEO-c1bd51",
@@ -4933,7 +5242,11 @@
     "size_mb": 428.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-026112",
@@ -4992,7 +5305,11 @@
     "size_mb": 78.7,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-e25d3b",
@@ -5053,7 +5370,11 @@
     "size_mb": 82,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-bdfab7",
@@ -5145,7 +5466,11 @@
     "size_mb": 285.1,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-e95a8f",
@@ -5238,7 +5563,11 @@
     "size_mb": 62.3,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "sku": "VIDEO-91bb96",
@@ -5298,7 +5627,12 @@
     "size_mb": 20.9,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H27",
+    "nicheCodes": [
+      "H27",
+      "H35"
+    ]
   },
   {
     "sku": "VIDEO-8b69c9",
@@ -5360,7 +5694,12 @@
     "size_mb": 131.8,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H15",
+    "nicheCodes": [
+      "H15",
+      "H23"
+    ]
   },
   {
     "sku": "VIDEO-35014d",
@@ -5421,7 +5760,12 @@
     "size_mb": 136.4,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H13"
+    ]
   },
   {
     "sku": "VIDEO-cb907b",
@@ -5503,7 +5847,11 @@
     "size_mb": 366.7,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-34f417",
@@ -5568,7 +5916,12 @@
     "size_mb": 111,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H09",
+    "nicheCodes": [
+      "H09",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-1b4be3",
@@ -5633,7 +5986,11 @@
     "size_mb": 171.8,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-ec9c50",
@@ -5698,7 +6055,11 @@
     "size_mb": 17.4,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-134a25",
@@ -5757,7 +6118,11 @@
     "size_mb": 81.6,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08"
+    ]
   },
   {
     "sku": "VIDEO-5fd052",
@@ -5826,7 +6191,11 @@
     "size_mb": 79,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02"
+    ]
   },
   {
     "sku": "VIDEO-00136f",
@@ -5899,7 +6268,11 @@
     "size_mb": 8.3,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-9ea5e3",
@@ -5955,7 +6328,11 @@
     "size_mb": 60.6,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-2ed37a",
@@ -6015,7 +6392,11 @@
     "size_mb": 52.7,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-54422c",
@@ -6109,7 +6490,11 @@
     "size_mb": 830.5,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-af606d",
@@ -6167,7 +6552,11 @@
     "size_mb": 78,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-9ef6fe",
@@ -6227,7 +6616,12 @@
     "size_mb": 51.4,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H18",
+    "nicheCodes": [
+      "H18",
+      "H19"
+    ]
   },
   {
     "sku": "VIDEO-7ae3d6",
@@ -6285,7 +6679,11 @@
     "size_mb": 59.4,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H19",
+    "nicheCodes": [
+      "H19"
+    ]
   },
   {
     "sku": "VIDEO-86c1ec",
@@ -6343,7 +6741,11 @@
     "size_mb": 50.4,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-3e5a21",
@@ -6408,7 +6810,11 @@
     "size_mb": 9.7,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-ffccd2",
@@ -6475,7 +6881,14 @@
     "size_mb": 51.3,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H13",
+    "nicheCodes": [
+      "H13",
+      "H14",
+      "H21",
+      "H31"
+    ]
   },
   {
     "sku": "VIDEO-de2564",
@@ -6542,7 +6955,11 @@
     "size_mb": 77.6,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H09",
+    "nicheCodes": [
+      "H09"
+    ]
   },
   {
     "sku": "VIDEO-2aa1f7",
@@ -6705,7 +7122,15 @@
     "size_mb": 245.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H17",
+    "nicheCodes": [
+      "H17",
+      "H20",
+      "H21",
+      "H26",
+      "H28"
+    ]
   },
   {
     "sku": "VIDEO-5fe83a",
@@ -6765,7 +7190,11 @@
     "size_mb": 53.8,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "sku": "VIDEO-3ae732",
@@ -6826,7 +7255,11 @@
     "size_mb": 76.6,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "sku": "VIDEO-458892",
@@ -6926,7 +7359,11 @@
     "size_mb": 238.9,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H19",
+    "nicheCodes": [
+      "H19"
+    ]
   },
   {
     "sku": "VIDEO-806c0c",
@@ -6989,7 +7426,11 @@
     "size_mb": 139.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H10",
+    "nicheCodes": [
+      "H10"
+    ]
   },
   {
     "sku": "VIDEO-83a28e",
@@ -7056,7 +7497,12 @@
     "size_mb": 222.8,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-948336",
@@ -7119,7 +7565,11 @@
     "size_mb": 96.9,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H19",
+    "nicheCodes": [
+      "H19"
+    ]
   },
   {
     "sku": "VIDEO-04c2e3",
@@ -7183,7 +7633,11 @@
     "size_mb": 19.4,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-ca266f",
@@ -7257,7 +7711,16 @@
     "size_mb": 266.7,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H11",
+      "H18",
+      "H19",
+      "H33",
+      "H39"
+    ]
   },
   {
     "sku": "VIDEO-8603a9",
@@ -7330,7 +7793,14 @@
     "size_mb": 180.8,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H10",
+      "H13",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-aacc70",
@@ -7392,7 +7862,11 @@
     "size_mb": 299,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ]
   },
   {
     "sku": "VIDEO-82f8a8",
@@ -7456,7 +7930,12 @@
     "size_mb": 177.4,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H15",
+    "nicheCodes": [
+      "H15",
+      "H38"
+    ]
   },
   {
     "sku": "VIDEO-9a4ddc",
@@ -7518,7 +7997,11 @@
     "size_mb": 146.1,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ]
   },
   {
     "sku": "VIDEO-199f44",
@@ -7580,7 +8063,11 @@
     "size_mb": 66.1,
     "resolution": "1080p",
     "width": 3840,
-    "height": 2160
+    "height": 2160,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-027064",
@@ -7644,7 +8131,11 @@
     "size_mb": 270.3,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-ed1be9",
@@ -7706,7 +8197,12 @@
     "size_mb": 734,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25",
+      "H37"
+    ]
   },
   {
     "sku": "VIDEO-a348a5",
@@ -7770,7 +8266,11 @@
     "size_mb": 125.6,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H20",
+    "nicheCodes": [
+      "H20"
+    ]
   },
   {
     "sku": "VIDEO-25fddf",
@@ -7862,7 +8362,15 @@
     "size_mb": 590.1,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H09",
+      "H13",
+      "H16",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-943781",
@@ -7924,7 +8432,11 @@
     "size_mb": 16.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-f59aa7",
@@ -7988,7 +8500,11 @@
     "size_mb": 455.1,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-b380a1",
@@ -8050,7 +8566,11 @@
     "size_mb": 518.4,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-39ae49",
@@ -8120,7 +8640,11 @@
     "resolution": "1080p",
     "width": 1920,
     "height": 1080,
-    "channelsCount": 2
+    "channelsCount": 2,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-5c3116",
@@ -8207,7 +8731,12 @@
     "resolution": "1080p",
     "width": 2560,
     "height": 1440,
-    "channelsCount": 1
+    "channelsCount": 1,
+    "nicheCode": "H27",
+    "nicheCodes": [
+      "H27",
+      "H35"
+    ]
   },
   {
     "sku": "VIDEO-3df94e",
@@ -8275,7 +8804,14 @@
     "resolution": "1080p",
     "width": 2560,
     "height": 1440,
-    "channelsCount": 1
+    "channelsCount": 1,
+    "nicheCode": "H19",
+    "nicheCodes": [
+      "H19",
+      "H27",
+      "H30",
+      "H38"
+    ]
   },
   {
     "sku": "VIDEO-5cb825",
@@ -8347,7 +8883,11 @@
     "resolution": "1080p",
     "width": 2560,
     "height": 1440,
-    "channelsCount": 5
+    "channelsCount": 5,
+    "nicheCode": "H20",
+    "nicheCodes": [
+      "H20"
+    ]
   },
   {
     "sku": "VIDEO-891f32",
@@ -8414,7 +8954,13 @@
     "resolution": "1080p",
     "width": 2560,
     "height": 1440,
-    "channelsCount": 1
+    "channelsCount": 1,
+    "nicheCode": "H19",
+    "nicheCodes": [
+      "H19",
+      "H30",
+      "H32"
+    ]
   },
   {
     "sku": "VIDEO-61e354",
@@ -8487,7 +9033,11 @@
     "size_mb": 470.9,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-bdfa54",
@@ -8554,7 +9104,12 @@
     "resolution": "1080p",
     "width": 3840,
     "height": 2160,
-    "channelsCount": 1
+    "channelsCount": 1,
+    "nicheCode": "H24",
+    "nicheCodes": [
+      "H24",
+      "H39"
+    ]
   },
   {
     "sku": "VIDEO-8e0275",
@@ -8650,7 +9205,11 @@
     "size_mb": 525.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25"
+    ]
   },
   {
     "sku": "VIDEO-b559c8",
@@ -8705,7 +9264,11 @@
     "size_mb": 164.8,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25"
+    ]
   },
   {
     "sku": "VIDEO-b96929",
@@ -8770,7 +9333,11 @@
     "size_mb": 201.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H20",
+    "nicheCodes": [
+      "H20"
+    ]
   },
   {
     "sku": "VIDEO-44cf22",
@@ -8836,7 +9403,11 @@
     "resolution": "1080p",
     "width": 2560,
     "height": 1440,
-    "channelsCount": 7
+    "channelsCount": 7,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-5c438a",
@@ -8919,7 +9490,11 @@
     "size_mb": 81.8,
     "resolution": "1080p",
     "width": 2560,
-    "height": 1440
+    "height": 1440,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-61ad94",
@@ -9015,7 +9590,14 @@
     "module_id": "M06",
     "module_title": "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục",
     "duration": "10:30",
-    "size_mb": 252.5
+    "size_mb": 252.5,
+    "nicheCode": "H09",
+    "nicheCodes": [
+      "H09",
+      "H10",
+      "H16",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-3a38f9",
@@ -9105,7 +9687,11 @@
     "size_mb": 140.7,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H34",
+    "nicheCodes": [
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-73d98a",
@@ -9175,7 +9761,13 @@
     "size_mb": 190.7,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H09",
+      "H34"
+    ]
   },
   {
     "sku": "ZOOM-01-Nen-tang-moi-truong",
@@ -9246,7 +9838,11 @@
     "size_mb": 351.2,
     "resolution": "1080p",
     "width": 1080,
-    "height": 1920
+    "height": 1920,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -9317,7 +9913,11 @@
     "size_mb": 729.7,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -9388,7 +9988,11 @@
     "size_mb": 552.7,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
@@ -9459,7 +10063,11 @@
     "size_mb": 223.4,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-8bc3ce",
@@ -9538,7 +10146,11 @@
     "size_mb": 39.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-d56768",
@@ -9615,7 +10227,11 @@
     "size_mb": 163.7,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "sku": "VIDEO-989053",
@@ -9688,7 +10304,13 @@
     "size_mb": 136.8,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H05",
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-0bb86b",
@@ -9762,7 +10384,12 @@
     "size_mb": 262.1,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H13",
+    "nicheCodes": [
+      "H13",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-0be6c9",
@@ -9849,7 +10476,11 @@
     "size_mb": 129.1,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ]
   },
   {
     "sku": "VIDEO-a85eac",
@@ -9945,7 +10576,12 @@
     "size_mb": 212,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16",
+      "H32"
+    ]
   },
   {
     "sku": "VIDEO-043d15",
@@ -10081,7 +10717,12 @@
     "size_mb": 289.7,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16",
+      "H32"
+    ]
   },
   {
     "sku": "VIDEO-a59a5e",
@@ -10166,7 +10807,11 @@
     "size_mb": 156.3,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H11",
+    "nicheCodes": [
+      "H11"
+    ]
   },
   {
     "sku": "VIDEO-ab1137",
@@ -10234,7 +10879,11 @@
     "size_mb": 6.6,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ]
   },
   {
     "sku": "VIDEO-0b3f44",
@@ -10302,7 +10951,12 @@
     "size_mb": 106.9,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H16",
+    "nicheCodes": [
+      "H16",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-e0e9cd",
@@ -10378,7 +11032,11 @@
     "size_mb": 257.4,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25"
+    ]
   },
   {
     "sku": "VIDEO-0c72ab",
@@ -10452,6 +11110,10 @@
     "size_mb": 825.2,
     "resolution": "1080p",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25"
+    ]
   }
 ]

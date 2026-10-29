@@ -1,6 +1,6 @@
 # LIVE RUNTIME STATE — D:\YTB\H2DEV-Project
 # Context Hierarchy Layer 4 | Single Source of Runtime Truth
-# Cập nhật lúc: 2026-10-14 (mục 1 và mục 3 đo lại ngày này; mục 2 đo 2026-09-30; mục 4 nghiệm thu 2026-10-09)
+# Cập nhật lúc: 2026-10-29 (mục 1, 2 và 4.2 đồng bộ tự động qua sync-counts.js; mục 3 đo 2026-10-14; mục 4.1 nghiệm thu 2026-10-09)
 
 > **Bản chất kỹ thuật:** File này ghi nhận trạng thái thực tế đang chạy (Live Reality) của hệ sinh thái `D:\YTB\H2DEV-Project`.
 > Mọi Agent khi bắt đầu phiên làm việc đọc file này để nắm ngay thực trạng runtime mà không cần quét lại từ đầu.
@@ -23,20 +23,19 @@
   - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
   - Còn **36 review_flags** kiểm tay (không phải data hỏng): A10 19 (thumbnail ≠ nội dung theo vision) · S6 19 (takeaway neo transcript thấp) · S9 15 (xác nhận hình/tiếng bằng heuristic). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).
   → nguồn: `counts-manifest.mediaFiles` + `py -3 scripts/audit_videos_v2.py` + `data/media-review-queue.json`.
-- **Danh bạ kênh mẫu (`kenh-mau.json`):** **261 kênh** (189 live · 72 dead).
-  → nguồn: `data-tabs/kenh-mau.json` (đo thực tế N/N: 256/256 có `ngay_do`; 184 sống · 59 DIE 404 · 10 kênh rỗng · 3 dead khác; chạy `scripts/probe-kenh-mau.py` rồi `scripts/classify-kenh-mau.py`, bằng chứng `_audit/20261014-kenh-mau-probe.jsonl`). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video; GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
+- **Danh bạ kênh mẫu (`kenh-mau.json`):** **1082 kênh** (993 live · 89 dead).
+  → nguồn: `data-tabs/kenh-mau.json` (1082/1082 có `ngay_do`; 993 sống · 89 dead = 75 DIE 404 + 14 kênh rỗng; chạy `scripts/probe-kenh-mau.py` rồi `scripts/classify-kenh-mau.py`, bằng chứng `_audit/20261014-kenh-mau-probe.jsonl` & `data/ngachxanh_handle_probes.json`). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video; GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).
   → nguồn: `counts-manifest.canonicalRaw` / `canonicalRawUniqueChannels`.
-- **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **300 tài liệu**.
-  → nguồn: `data-tabs/tai-lieu-full.json` (đo lại 2026-10-14: **300**).
-  Phân bố theo trường `kind` (đo 2026-10-14): 77 prompt · 21 report · 28 tool · 14 list · 8 other · 5 internal-doc · 14 sop · 49 guide · 40 transcript · 4 sheet · 40 chưa gán `kind` (giao diện suy ra loại từ tên/tệp, xem `classifyPrompt` trong `assets/app/tabs/content.js`).
-- **Ma trận ngách YouTube (`ngach-xanh.json`):** **34 ngách** (`xanh:true` **10** ngách).
-  → nguồn: `data-tabs/ngach-xanh.json` (đo lại 2026-10-14: 34).
+- **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **580 tài liệu**.
+  → nguồn: `data-tabs/tai-lieu-full.json` (100% có `kind`, `contentNiche`, `branch`, `nicheCode`; xem `classifyPrompt` trong `assets/app/tabs/content.js`).
+- **Ma trận ngách YouTube (`ngach-xanh.json`):** **40 ngách** (`xanh:true` **16** ngách).
+  → nguồn: `data-tabs/ngach-xanh.json` (40 ngách chuẩn `H01..H40` phủ 333/333 SKU toàn hệ thống).
 - **Kho nhạc nền:** **49 tracks** đã audit Gemini Multimodal & FFprobe (36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng).
   → nguồn: rule workspace SSoT + `data/music_catalog.json`. *(Số cũ ghi 38 là SAI — đã sửa 2026-09-24.)*
-- **Master SQLite Database:** **2.540 entries** FTS5 trong `h2dev_master.db`.
-  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **2540**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
-  Bảng kèm theo: `lessons` 333 · `lesson_timestamps` 2456 · `competitor_channels` 391 · `competitor_top_videos` 1421 · `documents` 300 · `reup_sources` 27 · `niches` 311 · `policies` 12 · `checklists` 12.
+- **Master SQLite Database:** **3.546 entries** FTS5 trong `h2dev_master.db`.
+  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **3546**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
+  Bảng kèm theo: `lessons` 333 · `lesson_timestamps` 2456 · `competitor_channels` 1086 · `competitor_top_videos` 1421 · `documents` 580 · `reup_sources` 52 · `niches` 70 · `policies` 12 · `checklists` 12.
 
 ### 1.1. NHẬT KÝ HIỆU CHỈNH SỐ LIỆU (2026-09-24)
 
@@ -56,7 +55,7 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
 
 ## 2. HẠ TẦNG DỊCH VỤ & MẠNG NỘI BỘ
 > Đo lại 2026-09-30 bằng `Get-NetTCPConnection -State Listen` + `Get-Service`. PID đổi sau mỗi lần khởi động — đừng dùng PID làm bằng chứng lâu dài.
-- **Cổng 8899:** `H2DEV_Service` (NSSM, Running) $\rightarrow$ `[CÓ] LISTENING`. Runtime Playwright: `/`, `/player.html`, `/learn.html` 0 console error.
+- **Cổng 8899:** `H2DEV_Service` (NSSM, Running) $\rightarrow$ `[CÓ] LISTENING`. Runtime Playwright: `/`, `/player.html`, `/learn.html`, `/graph.html` 0 console error.
 - **Cổng 3988:** `MCP_Pool_Service` (NSSM, Running) $\rightarrow$ `[CÓ] LISTENING`.
 - **Cổng 20128:** 9Router Gateway $\rightarrow$ `[CÓ] LISTENING`.
 - **Cổng 20140:** Claude gateway (`~/.claude/gateway`) $\rightarrow$ `[CÓ] LISTENING`.
@@ -105,6 +104,6 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
    - Đủ 5 bước Kỹ thuật Edit & SOP né quét AI chi tiết (> 500 – 1.385 ký tự), không có chuỗi fallback ngắn.
    - $\ge 3$ Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags).
 4. **Đồng bộ Master SQLite WAL & Nexus Dual-Layer Graph:**
-   - Master database `data/h2dev_master.db` đã rebuild đầy đủ **333 lessons** (148 H2DEV · 140 Huân · 45 DGMD), **2.456 lesson timestamps**, **391 competitor channels**, **1.421 top videos**, **300 documents**, **27 reup sources**, **311 niches**, **12 policies**, **12 checklists** và **2.540 FTS5 search index entries**.
-   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **3.007 nodes** và **5.780 edges** qua 2 lớp (1.695 Knowledge nodes + 1.312 Infra nodes trên 17 dự án).
+   - Master database `data/h2dev_master.db` đã rebuild đầy đủ **333 lessons** (148 H2DEV · 140 Huân · 45 DGMD), **2.456 lesson timestamps**, **1.086 competitor channels**, **1.421 top videos**, **580 documents**, **52 reup sources**, **70 niches**, **12 policies**, **12 checklists** và **3.546 FTS5 search index entries**.
+   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **4.148 nodes** và **8.291 edges** qua 2 lớp (2.793 Knowledge nodes + 1.355 Infra nodes trên 17 dự án).
 5. **Quality Gates:** Toàn bộ Core Gates (`validate-project.js`, `sync-counts.js --check`, `gate-icons.js`, `gate-typography.js`, `gate-p1.js`, `gate-p2.js`, `gate-shell.js`, `check-ui-classes.js`, `guard-no-inline-onclick.js`) đều **PASS 100%**.

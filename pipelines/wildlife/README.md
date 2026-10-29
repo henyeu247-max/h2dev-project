@@ -37,3 +37,15 @@ Animal + Angle → 6-Beat Script (70-90 WPM) → Flow Image Prompts → Veo 3.1 
 py -3 scripts/generate_wildlife_script.py --animal "African Elephant" --conflict "Parasite Ticks" --duration 8 --out projects/elephant-survival
 py -3 scripts/generate_motion_prompts.py --project projects/elephant-survival
 ```
+
+---
+
+## 4. Bộ Gem Pack & Multi-Agent Skill WILD V4.2 (`wild-v4.2-gem/`)
+
+Bộ tài liệu Gem / Claude Project / Multi-Agent Skill chuẩn công nghiệp **WILD V4.2** (đồng bộ 1:1 với skill đa nền tảng `h2dev-wildlife-script` & `h2dev-wildlife-motion`):
+
+- `pipelines/wildlife/wild-v4.2-gem/WILD_INSTRUCTION.md` — Máy trạng thái 6 Bước (`BƯỚC 0..BƯỚC 5`), khóa giọng đọc David Attenborough `70–90 WPM`, luật 8 giây/shot (`18–22 từ`), kiểm tra đạo đức YPP Cửa 2.
+- `pipelines/wildlife/wild-v4.2-gem/WILD_KNOWLEDGE.md` — Hồ sơ Sinh học & Ngoại hình khóa cứng **25 loài động vật** (`CHAR_01..CHAR_25`), **6 Style hình ảnh** (`STYLE A..F`), và **19 bối cảnh đồng cỏ/đầm lầy Châu Phi** (`BG_01..BG_19`).
+- `pipelines/wildlife/wild-v4.2-gem/LUAT_XUAT_JSON_v1.1.txt` — Hợp đồng xuất JSON 17 trường ngăn cách bằng dấu `|` cho từng cảnh 8 giây (Kling 3.0 / Veo 3.1 / Hailuo).
+- `pipelines/wildlife/wild-v4.2-gem/KIEM_TRA_MAY_WILD_V4.2.txt` — Checklist tự kiểm máy trước khi xuất file sản xuất.
+

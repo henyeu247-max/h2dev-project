@@ -21,8 +21,25 @@
   if (currentTrack !== 'dgmd' && currentTrack !== 'huan' && currentTrack !== 'h2dev') currentTrack = 'h2dev';
   var currentData = null;
 
-  var state = { tab: 'danhmuc', q: '' };
+  var initTab = initParams.get('tab') || 'danhmuc';
+  if (['danhmuc', 'moi', 'yeuthich', 'timkiem'].indexOf(initTab) < 0) initTab = 'danhmuc';
+  var initQ = initParams.get('q') || '';
+  if (initQ) initTab = 'timkiem';
+  var state = { tab: initTab, q: initQ };
   var COLLAPSE_KEY = 'h2dev-collapsed';
+
+  function notifyParentLearnState() {
+    try {
+      if ((initParams.get('embed') === '1' || window.self !== window.top) && window.parent && window.parent !== window) {
+        window.parent.postMessage({
+          type: 'h2dev:learn-state',
+          track: currentTrack,
+          tab: state.tab,
+          q: state.q
+        }, '*');
+      }
+    } catch (e) {}
+  }
 
   var els = {
     progressText: document.getElementById('progressText'),
@@ -134,6 +151,7 @@
     if (currentTrack === 'dgmd' || currentTrack === 'huan') u.searchParams.set('track', currentTrack);
     else u.searchParams.delete('track');
     history.replaceState(null, '', u);
+    notifyParentLearnState();
 
     els.panelRoot.setAttribute('aria-busy', 'true');
     if (C.skeletonList) els.panelRoot.innerHTML = C.skeletonList(6, { thumb: true, lines: 2 });
@@ -401,6 +419,13 @@
         runSearch(data);
         var cb = document.getElementById('searchClear');
         if (cb) cb.classList.toggle('hidden', !v);
+        try {
+          var u = new URL(location.href);
+          if (state.q) u.searchParams.set('q', state.q);
+          else u.searchParams.delete('q');
+          history.replaceState(null, '', u);
+        } catch (e) {}
+        notifyParentLearnState();
         // giữ focus + caret khi đang gõ
         var ni = document.getElementById('searchInput');
         if (ni && document.activeElement !== ni) {
@@ -413,6 +438,12 @@
       state.q = '';
       runSearch(data);
       clearBtn.classList.add('hidden');
+      try {
+        var u = new URL(location.href);
+        u.searchParams.delete('q');
+        history.replaceState(null, '', u);
+      } catch (e) {}
+      notifyParentLearnState();
       var ni = document.getElementById('searchInput');
       if (ni) { ni.value = ''; ni.focus(); }
     });
@@ -439,6 +470,7 @@
       u.searchParams.set('tab', state.tab);
       if (state.tab !== 'timkiem') { u.searchParams.delete('q'); state.q = ''; }
       history.replaceState(null, '', u);
+      notifyParentLearnState();
     });
     /* PHASE 2: kich hoat dieu huong tab bang ban phim */
     initTabKeyboard();

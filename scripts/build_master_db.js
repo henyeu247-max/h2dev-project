@@ -6,6 +6,11 @@
 
 const fs = require('fs');
 const path = require('path');
+const _origEmitWarningBmd = process.emitWarning;
+process.emitWarning = function (w, ...rest) {
+  if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+  return _origEmitWarningBmd.call(process, w, ...rest);
+};
 const { DatabaseSync } = require('node:sqlite');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -254,15 +259,19 @@ db.exec('BEGIN TRANSACTION;');
 // 34 Ngách Xanh
 let nicheCount = 0;
 const nicheMap = new Map(); // name -> niche_id
+const auditRankMap = new Map(
+  ((ngachData.auditTong2026 && ngachData.auditTong2026.xepHang) || []).map(r => [r.ngach, r.thuTu || r.rank])
+);
 
 for (const n of ngachData.ngachXanh || []) {
   const id = foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   nicheMap.set(n.ngach, id);
+  const rankNum = auditRankMap.get(n.ngach) || n.hang || 1;
   insertNiche.run(
     id,
     n.ngach,
     n.xanh === true ? 1 : 2, // 1 = fully green, 2 = conditionally green
-    n.hang || 1,
+    rankNum,
     n.lamDuoc || '',
     n.kiemDuoc || '',
     n.viPham || '',
@@ -277,7 +286,7 @@ for (const n of ngachData.ngachXanh || []) {
   insertFts.run(
     id,
     'NICHE',
-    `[Ngách Xanh Hạng ${n.hang || 1}] ${n.ngach}`,
+    `[Ngách Xanh Hạng ${rankNum}] ${n.ngach}`,
     `${n.ngach} ${id} ${alias} ${n.lamDuoc || ''} ${n.kiemDuoc || ''} ${n.viPham || ''} ${n.evidence || ''} ${(n.thiTruong || []).join(' ')} ${(n.mauSach || []).join(' ')} ${(n.mauBan || []).join(' ')}`
   );
   nicheCount++;
@@ -445,6 +454,8 @@ const insertTimestamp = db.prepare(`
 db.exec('BEGIN TRANSACTION;');
 let lessonCount = 0;
 let timestampCount = 0;
+const lessonTitleBySku = new Map();
+const lessonNicheBySku = new Map();
 
 for (const v of allCatalogFull) {
   const sku = v.sku;
@@ -454,6 +465,9 @@ for (const v of allCatalogFull) {
 
   // Niche lookup (ưu tiên canonical mapping từ ngach-xanh.json trước)
   const nicheName = v.niche_primary || insight.niche_primary || 'Khác';
+  const resolvedContentNiche = v.contentNiche || v.niche || nicheName;
+  lessonTitleBySku.set(sku, v.title);
+  lessonNicheBySku.set(sku, resolvedContentNiche);
   let nicheId = canonicalNicheBySku.get(sku) || nicheMap.get(nicheName);
   if (!nicheId) {
     nicheId = 'niche_' + foldVi(nicheName).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
@@ -685,24 +699,53 @@ for (const r of rawKenhMau) {
 }
 
 // 2. Ingest remaining Benchmark Channels from kenh-mau.json
+const intelByHandle = new Map();
+const intelById = new Map();
+const intelDbPath = path.join(ROOT, 'data', 'intelligence.db');
+if (fs.existsSync(intelDbPath)) {
+  let intelDb = null;
+  try {
+    intelDb = new DatabaseSync(intelDbPath, { readOnly: true });
+    const intelRows = intelDb.prepare('SELECT channel_id, LOWER(handle) AS h, title, median_views FROM channels').all();
+    for (const ir of intelRows) {
+      if (ir.h) intelByHandle.set(ir.h, ir);
+      if (ir.channel_id) intelById.set(ir.channel_id, ir);
+    }
+  } catch (_) {
+  } finally {
+    if (intelDb) {
+      try { intelDb.close(); } catch (_) {}
+    }
+  }
+}
+
 for (const k of kenhMau) {
   const handle = k.handle || '';
   const cleanHandle = handle.toLowerCase();
   if (processedHandles.has(cleanHandle)) continue;
   processedHandles.add(cleanHandle);
 
-  const title = k.handle || 'Unknown Channel';
+  const intelRow = intelByHandle.get(cleanHandle) || (k.channelId ? intelById.get(k.channelId) : null);
+  const realId = (k.channelId && /^UC[\w-]{20,}$/.test(k.channelId))
+    ? k.channelId
+    : (intelRow && /^UC[\w-]{20,}$/.test(intelRow.channel_id) ? intelRow.channel_id : '');
+  const title = (k.title && k.title !== k.handle)
+    ? k.title
+    : (intelRow && intelRow.title ? intelRow.title : (k.handle || 'Unknown Channel'));
   const nicheName = k.niche || 'Khác';
 
   // Fix 16/09 (CRITICAL): handle CJK (Nhật/Hàn/Trung) bị regex xóa sạch thành '' ->
   // 43 kênh dồn vào 1 row 'GEN_'. Fallback hash SHA-1 khi base rỗng, chống trùng lần 2.
-  const gidBase = handle.replace(/[^a-zA-Z0-9]/g, '');
-  let channelId = gidBase
-    ? `GEN_${gidBase}`
-    : `GEN_x${require('crypto').createHash('sha1').update(handle).digest('hex').slice(0, 10)}`;
-  if (processedChannelIds.has(channelId)) {
-    // Fail-safe: khác handle nhưng cùng slug ascii -> phân biệt bằng hash
-    channelId = `${channelId}_${require('crypto').createHash('sha1').update(handle).digest('hex').slice(0, 6)}`;
+  let channelId = (realId && !processedChannelIds.has(realId)) ? realId : '';
+  if (!channelId) {
+    const gidBase = handle.replace(/[^a-zA-Z0-9]/g, '');
+    channelId = gidBase
+      ? `GEN_${gidBase}`
+      : `GEN_x${require('crypto').createHash('sha1').update(handle).digest('hex').slice(0, 10)}`;
+    if (processedChannelIds.has(channelId)) {
+      // Fail-safe: khác handle nhưng cùng slug ascii -> phân biệt bằng hash
+      channelId = `${channelId}_${require('crypto').createHash('sha1').update(handle).digest('hex').slice(0, 6)}`;
+    }
   }
   if (processedChannelIds.has(channelId)) continue;
   processedChannelIds.add(channelId);
@@ -732,8 +775,8 @@ for (const k of kenhMau) {
     'US',
     avatarPath,
     avatarPath,
-    0,
-    0,
+    Number(k.subscribers || 0),
+    Number(k.totalViews || (intelRow && intelRow.median_views) || 0),
     k.count || 0,
     nicheId,
     nicheName,
@@ -841,7 +884,17 @@ const insertDoc = db.prepare(`
 db.exec('BEGIN TRANSACTION;');
 const lessonSkuSet = new Set(db.prepare('SELECT sku FROM lessons').all().map((r) => r.sku));
 let docCount = 0;
+let docsChanged = false;
 for (const d of docsData) {
+  if (d.sku && lessonTitleBySku.has(d.sku)) {
+    const vTitle = lessonTitleBySku.get(d.sku);
+    const vNiche = lessonNicheBySku.get(d.sku);
+    if (d.videoTitle !== vTitle || d.videoNiche !== vNiche) {
+      d.videoTitle = vTitle;
+      d.videoNiche = vNiche;
+      docsChanged = true;
+    }
+  }
   // FK documents.sku -> lessons.sku: sku khong thuoc lessons (vd RESEARCH-*, NOI-BO) -> luu NULL o sku, giu nguyen o doc_code
   const docCode = d.sku || d.id || 'NOI-BO';
   const docSku = (!d.sku || d.sku === 'NOI-BO' || !lessonSkuSet.has(d.sku)) ? null : d.sku;
@@ -860,6 +913,15 @@ for (const d of docsData) {
   insertFts.run(`DOC_${docCount}`, 'SOP', d.name, `${docPad} DOC_${docCount} ${d.name} ${docCode} ${d.contentNiche || ''} ${d.kind || ''}`);
 }
 db.exec('COMMIT;');
+function writeFileAtomicSync(targetPath, content) {
+  const tmpPath = `${targetPath}.${process.pid}.tmp`;
+  fs.writeFileSync(tmpPath, content, 'utf8');
+  fs.renameSync(tmpPath, targetPath);
+}
+
+if (docsChanged && !process.env.H2DEV_MASTER_DB_PATH) {
+  writeFileAtomicSync(path.join(ROOT, 'data-tabs', 'tai-lieu-full.json'), JSON.stringify(docsData, null, 2) + '\n');
+}
 console.log(`Ingested ${docCount} Documents into table 'documents'.`);
 
 console.log('=== [7/8] INGESTING REUP SOURCES, POLICIES & CHECKLISTS ===');
@@ -883,7 +945,17 @@ const insertChecklist = db.prepare(`
 
 db.exec('BEGIN TRANSACTION;');
 let reupCount = 0;
+let reupChanged = false;
 for (const r of reupData) {
+  if (r.sku && lessonTitleBySku.has(r.sku)) {
+    const vTitle = lessonTitleBySku.get(r.sku);
+    const vNiche = lessonNicheBySku.get(r.sku);
+    if (r.videoTitle !== vTitle || r.videoNiche !== vNiche) {
+      r.videoTitle = vTitle;
+      r.videoNiche = vNiche;
+      reupChanged = true;
+    }
+  }
   let hostType = 'Khác';
   if (r.link && r.link.includes('bilibili.com')) hostType = 'Bilibili';
   else if (r.link && r.link.includes('douyin.com')) hostType = 'Douyin';
@@ -898,6 +970,9 @@ for (const r of reupData) {
   );
   reupCount++;
   insertFts.run(`REUP_${reupCount}`, 'REUP', `[${hostType}] ${r.name}`, `REUP_${reupCount} ${r.name} ${hostType} ${r.sku || ''} ${r.contentNiche || ''} ${r.link || ''}`);
+}
+if (reupChanged && !process.env.H2DEV_MASTER_DB_PATH) {
+  writeFileAtomicSync(path.join(ROOT, 'data-tabs', 'nguon-reup.json'), JSON.stringify(reupData, null, 2) + '\n');
 }
 
 let policyCount = 0;
@@ -963,6 +1038,61 @@ console.log(' - Total Reup Sources:', stats.reupSources, `(Expected: ${C.nguonRe
 console.log(' - Total Policies:', stats.policies, '(Expected: 12) ->', stats.policies === 12 ? 'PASS' : 'FAIL');
 console.log(' - Total Checklists:', stats.checklists, '(Expected: 12) ->', stats.checklists === 12 ? 'PASS' : 'FAIL');
 console.log(' - Total FTS5 Search Index Entries:', stats.ftsEntries, '-> PASS');
+
+try { db.exec('PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
+
+if (!process.env.H2DEV_MASTER_DB_PATH) {
+  const modsH2dev = (() => { try { return (JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'modules.json'), 'utf8')).modules || []).length; } catch (_) { return 17; } })();
+  const modsHuan = (() => { try { return (JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'modules_huan.json'), 'utf8')).modules || []).length; } catch (_) { return 7; } })();
+  const modsDgmd = (() => { try { return (JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'modules_dgmd.json'), 'utf8')).modules || []).length; } catch (_) { return 11; } })();
+  const musicTracksCount = (() => {
+    try {
+      const msPath = path.join(ROOT, 'data', 'music_stats.json');
+      if (fs.existsSync(msPath)) {
+        const ms = JSON.parse(fs.readFileSync(msPath, 'utf8'));
+        return ms.totalTracks || (Array.isArray(ms.tracks) ? ms.tracks.length : 110);
+      }
+    } catch (_) {}
+    return 110;
+  })();
+  const deadChannelsCount = kenhMau.filter(k => k && k.dead === true).length;
+  const liveChannelsCount = kenhMau.filter(k => k && !k.dead).length;
+  const totalVideoSizeMb = Math.round(
+    allCatalogFull.reduce((acc, v) => {
+      const szMb = typeof v.size_mb === 'number' ? v.size_mb : (typeof v.size === 'number' && v.size > 0 ? v.size / (1024 * 1024) : 0);
+      return acc + szMb;
+    }, 0) * 10
+  ) / 10;
+  const overviewSummary = {
+    schema: 'h2dev.overview-summary.v1',
+    generatedAt: new Date().toISOString(),
+    counts: {
+      videosTotal: allCatalogFull.length,
+      videosH2dev: catalogFull.length,
+      videosHuan: catalogHuan.length,
+      videosDgmd: catalogDgmd.length,
+      modulesTotal: modsH2dev + modsHuan + modsDgmd,
+      modulesH2dev: modsH2dev,
+      modulesHuan: modsHuan,
+      modulesDgmd: modsDgmd,
+      documents: docsData.length,
+      channels: kenhMau.length,
+      deadChannels: deadChannelsCount,
+      liveChannels: liveChannelsCount,
+      rawChannels: rawKenhMau.length || 149,
+      niches: 40,
+      microNiches: 120,
+      reupSources: reupData.length,
+      policies: policyCount,
+      checklists: checklistCount,
+      musicTracks: musicTracksCount
+    },
+    storage: {
+      totalVideoSizeMb
+    }
+  };
+  writeFileAtomicSync(path.join(ROOT, 'data', 'overview_summary.json'), JSON.stringify(overviewSummary, null, 2) + '\n');
+}
 
 db.close();
 console.log('\n=== MASTER DATABASE BUILD COMPLETED SUCCESSFULLY 100% ===');

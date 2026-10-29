@@ -1,12 +1,12 @@
 ---
 handle: "@MộtĐờiBìnhAn-v6s"
-name: "@MộtĐờiBìnhAn-v6s"
+name: "Một Đời Bình An"
 url: "https://www.youtube.com/@MộtĐờiBìnhAn-v6s"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MộtĐờiBìnhAn-v6s (@MộtĐờiBìnhAn-v6s)
+# Kênh Đối Thủ / Kênh Mẫu: @MộtĐờiBìnhAn-v6s (Một Đời Bình An)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MộtĐờiBìnhAn-v6s](https://www.youtube.com/@MộtĐờiBìnhAn-v6s)

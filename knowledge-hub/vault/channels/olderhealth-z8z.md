@@ -1,12 +1,12 @@
 ---
 handle: "@olderhealth-z8z"
-name: "@olderhealth-z8z"
+name: "シニア健康博士"
 url: "https://www.youtube.com/@olderhealth-z8z"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @olderhealth-z8z (@olderhealth-z8z)
+# Kênh Đối Thủ / Kênh Mẫu: @olderhealth-z8z (シニア健康博士)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@olderhealth-z8z](https://www.youtube.com/@olderhealth-z8z)

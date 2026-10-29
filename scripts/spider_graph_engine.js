@@ -357,11 +357,12 @@ async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
 }
 
 // Persist to SQLite intelligence.db
-function saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId }) {
+function saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId, defaultNiche = 'H30' }) {
+  let db = null;
   try {
     const { DatabaseSync } = require('node:sqlite');
     if (!fs.existsSync(DB_PATH)) return;
-    const db = new DatabaseSync(DB_PATH);
+    db = new DatabaseSync(DB_PATH);
 
     const insertEdge = db.prepare(`
       INSERT OR IGNORE INTO cowatch_edges (source_video_id, target_video_id, source_channel_id, target_channel_id, recommendation_rank, observed_at, edge_weight)
@@ -369,13 +370,14 @@ function saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId }) 
     `);
 
     const insertChannel = db.prepare(`
-      INSERT INTO channels (channel_id, handle, title, channel_age_days, median_views, top_outlier_multiplier, is_breakout, is_faceless, faceless_type, faceless_confidence, last_crawled_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO channels (channel_id, handle, title, channel_age_days, median_views, top_outlier_multiplier, is_breakout, is_faceless, faceless_type, faceless_confidence, primary_niche, last_crawled_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       ON CONFLICT(channel_id) DO UPDATE SET
         median_views=excluded.median_views,
         top_outlier_multiplier=excluded.top_outlier_multiplier,
         is_breakout=excluded.is_breakout,
         channel_age_days=excluded.channel_age_days,
+        primary_niche=COALESCE(NULLIF(channels.primary_niche, ''), excluded.primary_niche),
         last_crawled_at=excluded.last_crawled_at;
     `);
 
@@ -416,6 +418,7 @@ function saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId }) 
         c.isFaceless ? 1 : 0,
         c.facelessType || 'UNKNOWN',
         c.facelessConfidence || 0.0,
+        c.primaryNiche || defaultNiche || 'H30',
         now
       );
     }
@@ -447,11 +450,15 @@ function saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId }) 
       }
     }
 
-    db.close();
     return { videosInserted };
   } catch (err) {
     // Non-blocking database logging
     return { videosInserted: 0, error: err.message };
+  } finally {
+    if (db) {
+      try { db.exec('PRAGMA wal_checkpoint(PASSIVE);'); } catch (_) {}
+      try { db.close(); } catch (_) {}
+    }
   }
 }
 

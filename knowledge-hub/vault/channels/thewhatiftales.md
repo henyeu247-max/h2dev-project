@@ -1,16 +1,16 @@
 ---
 handle: "@thewhatiftales"
-name: "@thewhatiftales"
+name: "What If Tales"
 url: "https://www.youtube.com/@thewhatiftales"
-status: "LIVE_HTTP_200"
+status: "DEAD"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @thewhatiftales (@thewhatiftales)
+# Kênh Đối Thủ / Kênh Mẫu: @thewhatiftales (What If Tales)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@thewhatiftales](https://www.youtube.com/@thewhatiftales)
-- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
+- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
 - **Ngách (kenh-mau.json):** `Hoạt hình 2D What-If US (Ifverse)`
 - **Thị trường:** `🇺🇸 US`
 

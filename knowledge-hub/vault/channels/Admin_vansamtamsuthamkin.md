@@ -1,12 +1,12 @@
 ---
 handle: "@Admin_vansamtamsuthamkin"
-name: "@Admin_vansamtamsuthamkin"
+name: "Văn Sâm Tâm Sự Thầm Kín"
 url: "https://www.youtube.com/@Admin_vansamtamsuthamkin"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Admin_vansamtamsuthamkin (@Admin_vansamtamsuthamkin)
+# Kênh Đối Thủ / Kênh Mẫu: @Admin_vansamtamsuthamkin (Văn Sâm Tâm Sự Thầm Kín)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Admin_vansamtamsuthamkin](https://www.youtube.com/@Admin_vansamtamsuthamkin)

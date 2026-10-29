@@ -1,12 +1,12 @@
 ---
 handle: "@songlausongkhoe360"
-name: "@songlausongkhoe360"
+name: "Sống Lâu Sống Khỏe 360"
 url: "https://www.youtube.com/@songlausongkhoe360"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @songlausongkhoe360 (@songlausongkhoe360)
+# Kênh Đối Thủ / Kênh Mẫu: @songlausongkhoe360 (Sống Lâu Sống Khỏe 360)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@songlausongkhoe360](https://www.youtube.com/@songlausongkhoe360)

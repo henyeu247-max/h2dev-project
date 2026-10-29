@@ -1,0 +1,100 @@
+KIỂM TRA MÁY — WILD V4.2 (2026-09-27)
+
+=== PHẦN 1: bộ kiểm V4.1 chạy lại trên V4.2 ===
+PASS 25 khóa loài INSTRUCTION == KNOWLEDGE
+PASS 25/25 Reference Prompt chứa nguyên khóa
+PASS không còn cụm điều kiện 'if male'
+PASS Style A không còn golden hour cố định
+PASS số dòng mẫu: K=15, I=2
+PASS 2 dòng mẫu trong INSTRUCTION trùng khít KNOWLEDGE
+PASS cảnh 001 [NOCHAR,BG_10] 17 field/style/khóa/audio/chuyển động máy/word_count  (ghi chú: prefix NOCHAR không khớp bộ lọc tab VEO 3 — lỗi phía tool)
+PASS cảnh 002 [CHAR_21,BG_10] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 003 [CHAR_02,BG_10] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 004 [CHAR_02,BG_10] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 005 [CHAR_21,BG_10] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 006 [CHAR_02,CHAR_21,BG_10] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 007 [CHAR_02,BG_10] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 008 [CHAR_21,BG_10] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 009 [CHAR_02,BG_12] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 010 [CHAR_21,BG_12] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 011 [CHAR_21,BG_12] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 012 [CHAR_02,BG_12] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 013 [CHAR_21,BG_12] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 014 [CHAR_02,BG_12] 17 field/style/khóa/audio/chuyển động máy/word_count
+PASS cảnh 015 [NOCHAR,BG_12] 17 field/style/khóa/audio/chuyển động máy/word_count  (ghi chú: prefix NOCHAR không khớp bộ lọc tab VEO 3 — lỗi phía tool)
+PASS không có 3 cảnh static liền nhau (chuỗi dài nhất = 1)
+PASS 25 dòng ảnh mẫu dạng «MÃ | prompt», không có | thừa
+  còn nhắc 15 (cần là cụm nhịp/ghi chú, không phải kích thước phase): ['- ★ V4.1: bỏ luật «chia hết cho 15» — nó chỉ cần khi 1', '| Đoạn (15 cảnh) | Cảnh | BG chính |']
+PASS không còn luật phase = 15 cảnh
+PASS đã bỏ câu 'khối JSON chứa mảng (Array)'
+PASS đã bỏ field lạ
+PASS LUAT: char_count chỉ còn trong câu CẤM
+  "tiếng Việt" còn lại:
+      bảng tra riêng, tuyệt đối không dùng mốc đếm của tiếng Việt (VI) hay 
+     ver là nghệ thuật kể chuyện. (Ví dụ bên dưới bằng tiếng Việt — {{LANG}
+     continuity_from`: Nối động tác từ cảnh trước bằng tiếng Việt. 10. `act
+     ệt. 10. `action_summary`: Tóm tắt hành động 1 câu tiếng Việt. 11. `act
+     g Việt. 11. `action_sequence`: Hành động chi tiết tiếng Việt. 12. `com
+     m bảo văn phong phim tài liệu đỉnh cao. (Mẫu bằng tiếng Việt — viết lờ
+     ───── `action_summary` là tóm tắt hành động 1 câu tiếng Việt. Mục đích
+     gôn ngữ khớp với mẫu đã kiểm máy (ghi chú duyệt = tiếng Việt;     khóa
+     iếng Anh); bỏ field lạ.   • Bỏ các chỗ viết cứng «tiếng Việt» cho lời 
+PASS version V4.2 ở header + khối chào
+
+KẾT QUẢ: ALL PASS
+
+=== PHẦN 2: kiểm riêng thay đổi V4.2 ===
+PASS §7 có đủ 6 style (thấy ['1', '2', '3', '4', '5', '6'])
+PASS Style A: không mất cụm nào ngoài phần chuyển sang module (mất: [])
+PASS Style A: chỉ thêm đúng 2 cụm ['cinematic wildlife documentary footage', 'wild animals behaving naturally and unaware of the camera']
+PASS Style A: 3 cụm module + film still không còn trong chuỗi cố định
+PASS Style A: giữ 8k / dramatic / saturated
+PASS 6 cụm chuyển ra đều còn nguyên văn trong khối MODULE §7
+PASS Style B: chỉ đổi film still → footage
+PASS Style C, D: không đổi 1 ký tự
+PASS Style E: giữ toàn bộ (security camera, VHS, glitch…), chỉ thay 2 cụm phủ định cùng vị trí
+PASS Style E còn «security camera feed»
+PASS Style E còn «documentary surveillance video»
+PASS Style E còn «VHS static»
+PASS Style E còn «digital compression artifacts»
+PASS Style E còn «realistic night vision glitch»
+PASS Style E còn «low fidelity aesthetic»
+PASS Style E còn «trail camera»
+PASS A: không có cụm phủ định []
+PASS B: không có cụm phủ định []
+PASS E: không có cụm phủ định []
+PASS F ngày: không có cụm phủ định []
+PASS F đêm: không có cụm phủ định []
+PASS IR thực địa: không có cụm phủ định []
+PASS F: đã bỏ 50mm / handheld / pale colors mặc định
+PASS F ngày/đêm/IR đều có «unaware of the camera»
+PASS INSTRUCTION: menu + biến + bảng đều A–F
+PASS không còn sót A–E / 5 STYLE
+PASS INSTRUCTION: có luật 9B + self-check 19
+PASS Chuỗi module trong INSTRUCTION 9B trùng khít KNOWLEDGE §7
+PASS [K] cảnh 001 cam='Wide establishing shot, static' → module W
+PASS [K] cảnh 002 cam='Medium shot, slow push in' → module T
+PASS [K] cảnh 003 cam='Extreme close-up, static' → module T +bụi
+PASS [K] cảnh 004 cam='POV high angle wide shot from the hornbill's perch, slow tilt down' → module W
+PASS [K] cảnh 005 cam='Close-up, static' → module T
+PASS [K] cảnh 006 cam='Wide shot, slow lateral tracking' → module W +bụi
+PASS [K] cảnh 007 cam='Extreme close-up, static' → module M
+PASS [K] cảnh 008 cam='Medium wide shot, slow push in' → module T +bụi
+PASS [K] cảnh 009 cam='Wide shot, static' → module W +bụi
+PASS [K] cảnh 010 cam='POV low angle from the ground, slow tilt up' → module TN
+PASS [K] cảnh 011 cam='Extreme close-up, static' → module T
+PASS [K] cảnh 012 cam='Medium wide over-the-shoulder shot from behind a foraging mongoose, slow push in' → module T +bụi
+PASS [K] cảnh 013 cam='Wide shot, static' → module W +bụi
+PASS [K] cảnh 014 cam='Medium wide shot, fast lateral tracking' → module T +bụi
+PASS [K] cảnh 015 cam='Wide shot, slow pull back' → module W +bụi
+PASS [I] cảnh 001 cam='Wide establishing shot, static' → module W
+PASS [I] cảnh 002 cam='Medium shot, slow push in' → module T
+PASS 2 dòng mẫu INSTRUCTION trùng khít KNOWLEDGE sau khi gắn module
+PASS Mẫu 15 cảnh: PREFIX + 15 field khác KHÔNG đổi; complete_prompt chỉ khác ở style + module (thoại/khóa loài nguyên vẹn)
+  Kích thước phase 1 (8 cảnh): 29726 → 28324 ký tự (-1402); phase 2 (7 cảnh): 25679 → 24516 (-1163)
+PASS Phase 8 cảnh vẫn dưới mức 38k ký tự (mức đã gây tràn ở V4.0 với 15 cảnh)
+PASS 19 «Ánh sáng đề xuất» của BG giữ nguyên
+PASS LUAT: chỉ đổi dòng footer (2 dòng diff)
+PASS §6 thư viện 25 loài + Reference Prompt không đổi 1 ký tự
+
+KẾT QUẢ V4.2 bổ sung: ALL PASS

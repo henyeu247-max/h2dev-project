@@ -1,5 +1,10 @@
 const fs = require('fs');
 const path = require('path');
+const _origEmitWarningVal = process.emitWarning;
+process.emitWarning = function (w, ...rest) {
+  if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+  return _origEmitWarningVal.call(process, w, ...rest);
+};
 
 const ROOT = path.resolve(__dirname, '..');
 const errors = [];
@@ -70,7 +75,7 @@ const { computeCounts } = require('./lib/counts');
 const liveCounts = computeCounts();
 
 // Guard drift: neu data live khac manifest => can chay sync-counts.js.
-for (const key of Object.keys(C)) {
+for (const key of new Set([...Object.keys(C), ...Object.keys(liveCounts)])) {
   if (liveCounts[key] !== C[key]) {
     errors.push(`counts drift: ${key} live=${liveCounts[key]} manifest=${C[key]} — chay: node scripts/sync-counts.js`);
   }
@@ -199,6 +204,21 @@ const deadChannels = channels.filter(channel => channel && channel.dead === true
 const liveChannels = channels.filter(channel => channel && channel.dead !== true).length;
 if (deadChannels !== EXPECTED_DEAD_CHANNELS) errors.push(`Expected ${EXPECTED_DEAD_CHANNELS} dead channels; got ${deadChannels}`);
 if (liveChannels !== EXPECTED_LIVE_CHANNELS) errors.push(`Expected ${EXPECTED_LIVE_CHANNELS} live channels; got ${liveChannels}`);
+const deadMissingKind = channels.filter(ch => ch && ch.dead === true && ch.deadKind !== "gone" && ch.deadKind !== "empty");
+if (deadMissingKind.length) errors.push(`data-tabs/kenh-mau.json: ${deadMissingKind.length} dead channels missing valid deadKind (gone|empty): ${deadMissingKind.map(c => c.handle).join(", ")}`);
+const deadMissingNote = channels.filter(ch => ch && ch.dead === true && !String(ch.deadNote || "").trim());
+if (deadMissingNote.length) errors.push(`data-tabs/kenh-mau.json: ${deadMissingNote.length} dead channels missing deadNote: ${deadMissingNote.map(c => c.handle).join(", ")}`);
+const deadStaleLiveCheck = channels.filter(ch => {
+  if (!ch || ch.dead !== true) return false;
+  const ndc = String(ch.ngay_do_check || '');
+  const nd = String(ch.nguon_do || '');
+  const primaryCheck = ndc.replace(/;\s*trước đó.*$/i, '').replace(/\(trước đó.*$/i, '');
+  return /\b200\s+OK\b/i.test(ndc) || /\b200\s+OK\b/i.test(nd) ||
+    /\bavatar_live\b/i.test(ndc) || /\bavatar_live\b/i.test(nd) ||
+    /→\s*LIVE\b/i.test(ndc) || /→\s*LIVE\b/i.test(nd) ||
+    /:\s*LIVE\b/i.test(primaryCheck);
+});
+if (deadStaleLiveCheck.length) errors.push(`data-tabs/kenh-mau.json: ${deadStaleLiveCheck.length} dead channels have contradictory LIVE check/nguon_do: ${deadStaleLiveCheck.map(c => c.handle).join(", ")}`);
 
 const rawRecords = Array.isArray(rawCanonical) ? rawCanonical : array(rawCanonical.records);
 const rawIds = rawRecords.map(record => record && record.id).filter(Boolean);
@@ -276,6 +296,183 @@ for (const [index, meta] of array(ngachXanh.ngachMetaKho).entries()) {
   }
 }
 
+// Gate F9 (2026-10-27): Kiểm tra toàn vẹn 40 ngách chuẩn (H01..H40) trong ngach-xanh.json & intelligence.db
+// - Đúng 40 ngách (hang: 1..40), 0 ngách trống mauSach / mauPhu / docs / thiTruong / skus
+// - Mọi handle trong mauSach/mauPhu phải có isLive === true trong data/ngachxanh_handle_probes.json và dead === false trong kenh-mau.json, không trùng mauBan / deadHandles2026
+// - Hợp (union) skus của 40 ngách phải phủ đủ 333/333 SKU hệ thống (148 H2DEV + 140 Huân + 45 DGMD)
+// - Mọi con số mẫu sống / SKU / RPM trong thiTruongXanh (M7) và bangXepHang (M8, 40 dòng) phải khớp 100% mảng thật
+// - 347/347 kênh trong data/intelligence.db phải có primary_niche IS NOT NULL
+{
+  const videosHuan = readJson('data/videos_huan.json') || [];
+  const videosDgmd = readJson('data/videos_dgmd.json') || [];
+  const allSystemSkus = new Set([...videos, ...videosHuan, ...videosDgmd].map(v => v && v.sku).filter(Boolean));
+  const deadChannelSet = new Set(array(channels).filter(c => c && c.dead).map(c => String(c.handle || '').toLowerCase()));
+  const liveChannelSet = new Set(array(channels).filter(c => c && !c.dead).map(c => String(c.handle || '').toLowerCase()));
+  const probeFile = readJson('data/ngachxanh_handle_probes.json') || {};
+  const probeHandles = probeFile.handles || {};
+  const deadHandles2026Lower = new Set(array(ngachXanh.deadHandles2026).map(h => String(h || '').toLowerCase()));
+  const nxList = array(ngachXanh.ngachXanh);
+  const coveredNicheSkus = new Set();
+
+  if (nxList.length !== 40) {
+    errors.push(`data-tabs/ngach-xanh.json: ngachXanh.length=${nxList.length}, expected 40`);
+  }
+
+  for (const [idx, n] of nxList.entries()) {
+    const skus = array(n.skus).map(s => typeof s === 'string' ? s : (s && s.sku)).filter(Boolean);
+    const mauSach = array(n.mauSach);
+    const mauPhu = array(n.mauPhu);
+    const mauBan = array(n.mauBan);
+    const docs = array(n.docs);
+    const thiTruong = array(n.thiTruong);
+    const banLower = new Set(mauBan.map(h => String(h || '').toLowerCase()));
+
+    if (skus.length === 0) {
+      errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) co skus rong`);
+    }
+    if (mauSach.length === 0) {
+      errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) co mauSach rong`);
+    }
+    if (mauPhu.length === 0) {
+      errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) co mauPhu rong`);
+    }
+    if (docs.length === 0) {
+      errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) co docs rong`);
+    }
+    if (thiTruong.length === 0) {
+      errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) co thiTruong rong`);
+    }
+    for (const h of [...mauSach, ...mauPhu]) {
+      const hl = String(h || '').toLowerCase();
+      if (deadChannelSet.has(hl) || deadHandles2026Lower.has(hl)) {
+        errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) chua kenh dead=true trong mauSach/mauPhu: ${h}`);
+      }
+      if (banLower.has(hl)) {
+        errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) chua kenh trung mauBan trong mauSach/mauPhu: ${h}`);
+      }
+      const pRec = probeHandles[h];
+      const isProbedLive = pRec && pRec.status === 'LIVE' && pRec.isLive === true && String(pRec.probedAt || '') >= String(ngachXanh.doNgay || '2026-10-27');
+      if (!liveChannelSet.has(hl) || !isProbedLive) {
+        errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) chua handle chua xac thuc LIVE (${h})`);
+      }
+    }
+    for (const s of skus) {
+      if (!allSystemSkus.has(s)) {
+        errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) chua SKU la: ${s}`);
+      } else {
+        coveredNicheSkus.add(s);
+      }
+    }
+  }
+  if (coveredNicheSkus.size !== allSystemSkus.size) {
+    errors.push(`data-tabs/ngach-xanh.json: union skus cua 40 ngach=${coveredNicheSkus.size}/${allSystemSkus.size}`);
+  }
+  for (const [idx, m] of array(ngachXanh.ngachMetaKho).entries()) {
+    const skus = array(m.skus).map(s => typeof s === 'string' ? s : (s && s.sku)).filter(Boolean);
+    for (const s of skus) {
+      if (!allSystemSkus.has(s)) {
+        errors.push(`data-tabs/ngach-xanh.json: ngachMetaKho[${idx}] (${m.ngach}) chua SKU la: ${s}`);
+      }
+    }
+  }
+
+  // M7: Kiểm tra thiTruongXanh khớp 100% số mẫu sống và số SKU thật
+  const ttxJoined = Object.values(ngachXanh.thiTruongXanh || {}).join(' || ');
+  const ttxChecks = [
+    ['Everyday History EN', 30], ['Stickman / 2D Paint Explainer', 25], ['Kinh Thánh EN', 1], ['Wildlife documentary', 29],
+    ['Địa chính trị / Bản đồ EN', 18], ['Khảo cổ & Văn minh cổ đại', 27], ['True Origin EN', 31], ['Food History EN', 32],
+    ['Khoa học EN', 11], ['UFO/Roswell EN', 33], ['Lịch sử Quân sự EN', 19], ['Kinh tế Rewind EN', 21],
+    ['Dark Crime & Bodycam', 35], ['Điện ảnh AI 4K', 38], ['Discovery Địa lý 4K', 39], ['Kiểm soát sinh học / chiến thuật', 28],
+    ['Phật pháp Nhật', 2], ['Danh ngôn/vĩ nhân', 8], ['Chuyện đời senior', 9],
+    ['Sức khỏe Nhật', 3], ['Tâm linh/luật hấp dẫn', 7], ['Kinh tế Nhật', 14], ['Kaidan Nhật', 15], ['Triết lý / khắc kỷ', 20],
+    ['Senior Wisdom KR', 34], ['Tâm linh/phúc lộc Hàn', 10], ['Sức khỏe senior Hàn', 16],
+    ['Phật pháp Hàn', 12], ['Kinh tế Hàn', 13], ['Drama/야담 Hàn', 23], ['Đứa trẻ Hàn', 26],
+    ['Phong thủy VN', 5], ['Sức khỏe VN', 4], ['Chúa/Phúc âm', 6], ['Cơ khí / Nhà máy', 17],
+    ['Reup hoạt hình', 22], ['Sinh tồn VN', 24], ['Học Tiếng Anh ESL', 36], ['Hoạt hình 3D AI', 37], ['Âm nhạc AI / Cổ phong', 40]
+  ];
+  for (const [label, hangNum] of ttxChecks) {
+    const pos = ttxJoined.indexOf(label + ' (');
+    const r = nxList[hangNum - 1];
+    if (pos < 0 || !r) {
+      errors.push(`data-tabs/ngach-xanh.json: thiTruongXanh thieu nhan "${label}"`);
+      continue;
+    }
+    const m = ttxJoined.slice(pos).match(/\((\d+)\s+mẫu sống(?:\s*\[[^\]]*\])?,\s*(\d+)\s+SKU/);
+    const liveExpected = array(r.mauSach).length + array(r.mauPhu).length;
+    const skuExpected = array(r.skus).length;
+    if (!m || Number(m[1]) !== liveExpected || Number(m[2]) !== skuExpected) {
+      errors.push(`data-tabs/ngach-xanh.json: thiTruongXanh "${label}" lech so lieu (ghi ${m ? m[1] + '/' + m[2] : 'N/A'}, that ${liveExpected}/${skuExpected})`);
+    }
+  }
+
+  // M8: Kiểm tra bangXepHang khớp 100% thứ hạng, tier, số mẫu, số SKU và RPM median
+  const auditXh = array(ngachXanh.auditTong2026 && ngachXanh.auditTong2026.xepHang);
+  const bxhRows = array(ngachXanh.bangXepHang).filter(s => /^#\d+/.test(String(s || '')));
+  if (bxhRows.length !== 40) {
+    errors.push(`data-tabs/ngach-xanh.json: bangXepHang co ${bxhRows.length} dong #rank, expected 40`);
+  }
+  for (const row of bxhRows) {
+    const m = String(row).match(/^#(\d+)\s+\[(\w+)\]\s+(.*)\s+\(H(\d+)\):\s+(\d+)\s+mẫu sống\s+\((\d+)\s+sạch\s+\+\s+(\d+)\s+phụ\),\s+(\d+)\s+mẫu bẩn,\s+(\d+)\s+SKU bài học,\s+RPM median\s+\$(\d+(?:\.\d+)?)/);
+    if (!m) {
+      errors.push(`data-tabs/ngach-xanh.json: bangXepHang dong sai dinh dang: ${String(row).slice(0, 60)}`);
+      continue;
+    }
+    const [, rankS, tier, name, hidS, liveS, saS, phS, banS, skuS, rpmS] = m;
+    const r = nxList[Number(hidS) - 1];
+    const a = auditXh.find(x => Number(x.thuTu) === Number(rankS));
+    if (!r || !a) {
+      errors.push(`data-tabs/ngach-xanh.json: bangXepHang #${rankS} khong tim thay record H${hidS}`);
+      continue;
+    }
+    const medMatch = String(r.rpm || '').match(/median\s*\$\s*([\d.]+)/i);
+    const realMed = medMatch ? Number(medMatch[1]) : NaN;
+    const sa = array(r.mauSach).length;
+    const ph = array(r.mauPhu).length;
+    const ban = array(r.mauBan).length;
+    const sk = array(r.skus).length;
+    if (
+      a.ngach !== r.ngach ||
+      !r.ngach.startsWith(name.slice(0, 15)) ||
+      (a.nhom && a.nhom !== tier) ||
+      Number(saS) !== sa ||
+      Number(phS) !== ph ||
+      Number(liveS) !== sa + ph ||
+      Number(banS) !== ban ||
+      Number(skuS) !== sk ||
+      Number(rpmS) !== realMed
+    ) {
+      errors.push(`data-tabs/ngach-xanh.json: bangXepHang #${rankS} (${name}) lech so lieu so voi record H${hidS}`);
+    }
+  }
+
+  // Kiểm tra 347/347 kênh trong data/intelligence.db có primary_niche IS NOT NULL
+  const intDbPath = path.join(ROOT, 'data', 'intelligence.db');
+  if (fs.existsSync(intDbPath)) {
+    try {
+      const _origEmitVal = process.emitWarning;
+      process.emitWarning = function (w, ...rest) {
+        if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+        return _origEmitVal.call(process, w, ...rest);
+      };
+      const { DatabaseSync } = require('node:sqlite');
+      process.emitWarning = _origEmitVal;
+      const intDb = new DatabaseSync(intDbPath, { readOnly: true });
+      try {
+        // Kiểm tra 100% kênh trong data/intelligence.db có primary_niche IS NOT NULL (tối thiểu >= 347 kênh)
+        const totalInt = intDb.prepare('SELECT COUNT(*) AS c FROM channels').get().c;
+        const mappedInt = intDb.prepare("SELECT COUNT(*) AS c FROM channels WHERE primary_niche IS NOT NULL AND primary_niche != ''").get().c;
+        if (mappedInt !== totalInt || totalInt < 347) {
+          errors.push(`data/intelligence.db: channels primary_niche mapped=${mappedInt}/${totalInt} (expected ${totalInt}/${totalInt}, >=347)`);
+        }
+      } finally {
+        intDb.close();
+      }
+    } catch (e) {
+      warnings.push('intelligence.db primary_niche check skipped: ' + e.message);
+    }
+  }
+}
+
 // Only the active tree entry is checked here; historical audit prose may keep
 // its original path when it is explicitly labelled historical.
 const treeText = fs.readFileSync(path.join(ROOT, 'TREE.md'), 'utf8');
@@ -299,6 +496,7 @@ const staleCurrentTokens = [
   '131/131 video sẵn sàng',
   '109 bài Pro',
   '0/131',
+  'Kho 27 Nguồn Reup',
 ];
 for (const [surface, text] of liveControlText) {
   for (const token of staleCurrentTokens) {
@@ -410,6 +608,65 @@ try {
     }
   }
   if (dead.length) errors.push(`JS trỏ tới trang HTML không tồn tại: ${[...new Set(dead)].join('; ')}`);
+}
+
+// Guard đồng bộ Cache-Busting (?v=...-uifixNN) trên 4 trang HTML và danh sách SHELL của assets/app/sw.js (2026-10-29).
+// Mọi thẻ <link rel="stylesheet"> và <script src="..."> nội bộ trong index.html, player.html, learn.html, graph.html
+// phải có cùng 1 chuỗi version ?v=YYYYMMDD-uifixNN (không trộn nhiều version, không bỏ quên ?v=),
+// và mọi file trong SHELL của assets/app/sw.js phải tồn tại thật trên đĩa.
+{
+  const htmlPages = ['index.html', 'player.html', 'learn.html', 'graph.html'];
+  const versionSet = new Set();
+  for (const pg of htmlPages) {
+    if (!exists(pg)) continue;
+    const html = fs.readFileSync(path.join(ROOT, pg), 'utf8');
+    const assetMatches = [
+      ...html.matchAll(/<link\b[^>]*rel=["']stylesheet["'][^>]*href=["']([^"']+)["']/gi),
+      ...html.matchAll(/<link\b[^>]*href=["']([^"']+)["'][^>]*rel=["']stylesheet["']/gi),
+      ...html.matchAll(/<script\b[^>]*src=["']([^"']+)["']/gi),
+    ];
+    for (const m of assetMatches) {
+      const rawUrl = m[1];
+      if (/^https?:\/\//i.test(rawUrl) || rawUrl.startsWith('data:')) continue;
+      const vm = /[?&]v=([^&#"']+)/.exec(rawUrl);
+      if (!vm) {
+        errors.push(`${pg}: tài sản tĩnh thiếu tham số cache-busting ?v=... (${rawUrl})`);
+      } else {
+        versionSet.add(vm[1]);
+      }
+    }
+  }
+  if (exists('assets/music_player_modal.js')) {
+    const mpm = fs.readFileSync(path.join(ROOT, 'assets', 'music_player_modal.js'), 'utf8');
+    const mc = /music_catalog\.json\?v=([^&#"')]+)/.exec(mpm);
+    if (!mc) errors.push('assets/music_player_modal.js: fetch music_catalog.json thiếu tham số ?v=...');
+    else versionSet.add(mc[1]);
+  }
+  if (versionSet.size > 1) {
+    errors.push(`Cache-busting ?v= không đồng nhất giữa các trang HTML / JS: [${[...versionSet].join(', ')}] — phải thống nhất 1 phiên bản uifix duy nhất`);
+  }
+  const swRel = 'assets/app/sw.js';
+  if (exists(swRel)) {
+    const swText = fs.readFileSync(path.join(ROOT, swRel), 'utf8');
+    const shellBlock = /const\s+SHELL\s*=\s*\[([\s\S]*?)\];/.exec(swText);
+    if (!shellBlock) {
+      errors.push(`${swRel}: không tìm thấy mảng SHELL precache`);
+    } else {
+      const shellEntries = [...shellBlock[1].matchAll(/['"]([^'"]+)['"]/g)].map(m => m[1]);
+      for (const reqPage of ['/index.html', '/player.html', '/learn.html', '/graph.html', '/assets/app/graph-main.js', '/assets/app/learn-main.js', '/assets/learn.js', '/assets/app/sw-register.js']) {
+        if (!shellEntries.includes(reqPage)) {
+          errors.push(`${swRel}: SHELL thiếu tài sản thiết yếu "${reqPage}"`);
+        }
+      }
+      for (const entry of shellEntries) {
+        if (entry === '/') continue;
+        const rel = entry.replace(/^\//, '');
+        if (!exists(rel)) {
+          errors.push(`${swRel}: SHELL trỏ tới file không tồn tại "${entry}"`);
+        }
+      }
+    }
+  }
 }
 
 // Guard phân loại kênh mẫu: mọi kênh phải có niche + markets (kênh nhập sau hay thiếu → lọc/thống kê sai).
@@ -548,6 +805,34 @@ try {
   if (missingKind.length) {
     errors.push(`data-tabs/tai-lieu-full.json: ${missingKind.length} mục thiếu trường kind`);
   }
+  const missingFileOrDisk = docsMerged.filter(d => !d.file || (!/^https?:\/\//i.test(d.file) && !exists(d.file)));
+  if (missingFileOrDisk.length) {
+    errors.push(`data-tabs/tai-lieu-full.json: ${missingFileOrDisk.length} mục thiếu file hoặc file không tồn tại trên đĩa (vd: ${missingFileOrDisk[0].name || missingFileOrDisk[0].sku} -> ${missingFileOrDisk[0].file || 'EMPTY'})`);
+  }
+  const missingMetaFields = docsMerged.filter(d => !d.contentNiche || !d.branch || !d.nicheCode);
+  if (missingMetaFields.length) {
+    errors.push(`data-tabs/tai-lieu-full.json: ${missingMetaFields.length} mục thiếu contentNiche / branch / nicheCode`);
+  }
+  const localhostDocs = docsMerged.filter(d => String(d.link || '').includes('127.0.0.1') || String(d.file || '').includes('127.0.0.1'));
+  if (localhostDocs.length) {
+    errors.push(`data-tabs/tai-lieu-full.json: ${localhostDocs.length} mục chứa link hardcode 127.0.0.1`);
+  }
+  const dgmdVidsForDocCheck = readJson('data/videos_dgmd.json') || [];
+  let dgmdLocalhostLinks = 0;
+  for (const v of dgmdVidsForDocCheck) {
+    for (const d of array(v.docs)) {
+      if (String(d.link || '').includes('127.0.0.1') || String(d.file || '').includes('127.0.0.1')) dgmdLocalhostLinks++;
+    }
+  }
+  if (dgmdLocalhostLinks > 0) {
+    errors.push(`data/videos_dgmd.json: còn ${dgmdLocalhostLinks} mục docs chứa link hardcode 127.0.0.1`);
+  }
+  const branchSet = new Set(docsMerged.map(d => d.branch).filter(Boolean));
+  for (const reqB of ['H2DEV', 'HUAN', 'DGMD', 'NOI-BO', 'PIPELINE']) {
+    if (!branchSet.has(reqB)) {
+      errors.push(`data-tabs/tai-lieu-full.json: thiếu nhánh branch="${reqB}"`);
+    }
+  }
   // Guard chống link tuyệt đối file:/// trong toàn bộ docs/**/*.md
   let fileUrlCount = 0;
   function scanMdForFileUri(dir) {
@@ -566,6 +851,22 @@ try {
   scanMdForFileUri(path.join(ROOT, 'docs'));
   if (fileUrlCount > 0) {
     errors.push(`docs/**/*.md còn chứa ${fileUrlCount} chuỗi file:/// — phải đổi sang đường dẫn tương đối /...`);
+  }
+  // Guard chống tồn tại song song cả description.html (>0 byte) và DESCRIPTION_EMPTY.md trong docs/VIDEO-*
+  const docsRoot = path.join(ROOT, 'docs');
+  if (fs.existsSync(docsRoot)) {
+    const dupDescMarkers = [];
+    for (const entry of fs.readdirSync(docsRoot, { withFileTypes: true })) {
+      if (!entry.isDirectory() || !/^VIDEO-/i.test(entry.name)) continue;
+      const htmlPath = path.join(docsRoot, entry.name, 'description.html');
+      const emptyPath = path.join(docsRoot, entry.name, 'DESCRIPTION_EMPTY.md');
+      if (fs.existsSync(htmlPath) && fs.existsSync(emptyPath) && fs.statSync(htmlPath).size > 0) {
+        dupDescMarkers.push(entry.name);
+      }
+    }
+    if (dupDescMarkers.length > 0) {
+      errors.push(`docs/VIDEO-* tồn tại song song cả description.html và DESCRIPTION_EMPTY.md (${dupDescMarkers.length} thư mục): ${dupDescMarkers.join(', ')}`);
+    }
   }
 }
 

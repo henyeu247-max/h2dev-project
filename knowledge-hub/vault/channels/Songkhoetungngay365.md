@@ -1,16 +1,16 @@
 ---
 handle: "@Songkhoetungngay365"
-name: "@Songkhoetungngay365"
+name: "Sống Khỏe Từng Ngày"
 url: "https://www.youtube.com/@Songkhoetungngay365"
-status: "LIVE_HTTP_200"
+status: "DEAD"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Songkhoetungngay365 (@Songkhoetungngay365)
+# Kênh Đối Thủ / Kênh Mẫu: @Songkhoetungngay365 (Sống Khỏe Từng Ngày)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Songkhoetungngay365](https://www.youtube.com/@Songkhoetungngay365)
-- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
+- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
 - **Ngách (kenh-mau.json):** `Sức khỏe / Lão hóa`
 - **Thị trường:** `🇯🇵 Nhật, 🇰🇷 Hàn, 🇻🇳 Việt`
 

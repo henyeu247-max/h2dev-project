@@ -1,12 +1,12 @@
 ---
 handle: "@의사가숨긴건강법-z9n"
-name: "@의사가숨긴건강법-z9n"
+name: "의사가 숨긴 건강법"
 url: "https://www.youtube.com/@의사가숨긴건강법-z9n"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @의사가숨긴건강법-z9n (@의사가숨긴건강법-z9n)
+# Kênh Đối Thủ / Kênh Mẫu: @의사가숨긴건강법-z9n (의사가 숨긴 건강법)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@의사가숨긴건강법-z9n](https://www.youtube.com/@의사가숨긴건강법-z9n)

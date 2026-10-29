@@ -16,6 +16,11 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const _origEmitWarningBkv = process.emitWarning;
+process.emitWarning = function (w, ...rest) {
+  if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+  return _origEmitWarningBkv.call(process, w, ...rest);
+};
 const { DatabaseSync } = require('node:sqlite');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -200,6 +205,7 @@ function buildKnowledgeAndInfraGraph(options = {}) {
     } else {
       const cur = nodes.get(id);
       cur.meta = { ...cur.meta, ...meta };
+      if (sku && !cur.sku) cur.sku = sku;
       if (body && !cur.body) cur.body = body;
       if (relPath && !cur.path) cur.path = relPath;
       if (parentId && !cur.parentId) cur.parentId = parentId;
@@ -536,7 +542,7 @@ ${nData.channels.size ? [...nData.channels].map(c => `- ${c}`).join('\n') : '- *
 `;
       fs.writeFileSync(path.join(VAULT_DIR, nRelFile), nMd, 'utf8');
     }
-    addNode(nNodeId, 'niche', `Ngách: ${nData.name}`, [...nData.tracks].join(','), '', `knowledge-hub/vault/${nRelFile}`, {
+    addNode(nNodeId, 'niche', `Ngách: ${nData.name}`, [...nData.tracks].join(','), `niche:${nData.name}`, `knowledge-hub/vault/${nRelFile}`, {
       videoCount: nData.skus.length,
       channelCount: nData.channels.size,
       targetUrl: `/ngachxanh?niche=${encodeURIComponent(nData.name)}`
@@ -602,11 +608,11 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
       url: cData.url,
       dead: cData.dead,
       videoCount: cData.skus.length,
-      targetUrl: `/kenh-mau?kq=${encodeURIComponent(cData.handle.replace(/^@/, ''))}`
+      targetUrl: `/kenh-mau?handle=${encodeURIComponent(cData.handle)}`
     }, `${cData.handle} ${cData.name} ${cData.kInfo?.niche || ''} ${cData.skus.map(x => x.sku + ' ' + x.title).join(' ')}`, cData.skus.map(x => `[[videos/${x.sku}]]`), { layer: 'knowledge', level: 5 });
   }
 
-  // 3.1. Ingest all 34 Canonical Niches + 5 Meta + 5 Red from ngach-xanh.json & link SKUs + Channels
+  // 3.1. Ingest all 40 Canonical Niches + 5 Meta + 5 Red from ngach-xanh.json & link SKUs + Channels
   const allVideoTitleBySku = new Map(
     [...h2devCat, ...huanCat, ...dgmdCat].map(v => [v.sku, v])
   );
@@ -626,39 +632,71 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
         name: cName,
         url: cUrl,
         dead: isDead,
+        channelId: kInfo?.channelId || '',
+        nicheCode: kInfo?.nicheCode || '',
         videoCount: 0,
-        targetUrl: `/kenh-mau?kq=${encodeURIComponent(cleanH)}`
-      }, `@${cleanH} ${cName} ${kInfo?.niche || ''}`, [], { layer: 'knowledge', level: 5 });
+        targetUrl: `/kenh-mau?handle=${encodeURIComponent('@' + cleanH)}`
+      }, `@${cleanH} ${cName} ${kInfo?.channelId || ''} ${kInfo?.nicheCode || ''} ${kInfo?.niche || ''}`, [], { layer: 'knowledge', level: 5 });
     }
     return cNodeId;
   }
 
+  const auditRankMap = new Map(
+    ((ngachXanhData.auditTong2026 && ngachXanhData.auditTong2026.xepHang) || []).map(r => [r.ngach, r.thuTu || r.rank])
+  );
+  const nicheNodeByCode = new Map();
+  const nicheTlDocLinks = [];
   for (const nx of (ngachXanhData.ngachXanh || [])) {
     const nSlug = slugify(nx.ngach);
     const nNodeId = `niche:${nSlug}`;
     const nRelFile = `niches/${nSlug}.md`;
+    const nxCode = nx.code || ('H' + String(nx.hang || 0).padStart(2, '0'));
+    nicheNodeByCode.set(nxCode, nNodeId);
     const nxAlias = /Everyday History EN/i.test(nx.ngach) ? 'US_EverydayHistory US EverydayHistory' : '';
-    addNode(nNodeId, 'niche', `Ngách: ${nx.ngach}`, 'h2dev', '', `knowledge-hub/vault/${nRelFile}`, {
-      hang: nx.hang || 0,
+    const auditRank = auditRankMap.get(nx.ngach) || nx.hang || 0;
+    addNode(nNodeId, 'niche', `Ngách: ${nx.ngach}`, 'h2dev', `niche:${nx.ngach}`, `knowledge-hub/vault/${nRelFile}`, {
+      code: nxCode,
+      hang: auditRank,
+      legacyHang: nx.hang || 0,
       xanh: nx.xanh,
       markets: nx.thiTruong || [],
       videoCount: (nx.skus || []).length,
       channelCount: (nx.mauSach || []).length + (nx.mauPhu || []).length + (nx.mauBan || []).length,
+      expandedChannelCount: (nx.kenhMoRong2026 || []).length,
+      subNicheCount: (nx.subNiches120 || []).length,
       targetUrl: `/ngachxanh?niche=${encodeURIComponent(nx.ngach)}`
-    }, `${nx.ngach} ${nxAlias} ${nx.evidence || ''} ${nx.lamDuoc || ''} ${nx.viPham || ''}`, [], { layer: 'knowledge', level: 3, parentId: 'track:h2dev' });
+    }, `${nxCode} ${nx.ngach} ${nxAlias} ${nx.evidence || ''} ${nx.lamDuoc || ''} ${nx.viPham || ''}`, [], { layer: 'knowledge', level: 3, parentId: 'track:h2dev' });
     addEdge('track:h2dev', nNodeId, 'HAS_NICHE', 1.3);
 
-    for (const sku of (nx.skus || [])) {
+    for (const skuRef of (nx.skus || [])) {
+      const sku = typeof skuRef === 'string' ? skuRef : (skuRef && skuRef.sku);
       const vNodeId = `video:${sku}`;
-      if (nodes.has(vNodeId)) {
+      if (sku && nodes.has(vNodeId)) {
         addEdge(vNodeId, nNodeId, 'IN_NICHE', 1.2);
       }
     }
-    for (const h of [...(nx.mauSach || []), ...(nx.mauPhu || []), ...(nx.mauBan || [])]) {
+    for (const h of [...(nx.mauSach || []), ...(nx.mauPhu || []), ...(nx.mauBan || []), ...(nx.kenhMoRong2026 || [])]) {
       const cNodeId = ensureChannelNode(h);
       if (cNodeId) {
         addEdge(nNodeId, cNodeId, 'BENCHMARKS_CHANNEL', 1.2);
       }
+    }
+    for (const docRef of (nx.docs || [])) {
+      const mTl = String(docRef || '').match(/^TL-(\d+)\b/i);
+      if (mTl) {
+        nicheTlDocLinks.push({ sopId: `sop:DOC-${String(parseInt(mTl[1], 10)).padStart(3, '0')}`, nNodeId });
+      }
+    }
+  }
+
+  // Ensure all 1,082 channels in data-tabs/kenh-mau.json are in the graph & linked to their niche
+  for (const k of kenhMau) {
+    if (!k || !k.handle) continue;
+    const cNodeId = ensureChannelNode(k.handle);
+    if (!cNodeId) continue;
+    const targetNicheId = (k.nicheCode && nicheNodeByCode.get(k.nicheCode)) || (k.niche && nodes.has(`niche:${slugify(k.niche)}`) ? `niche:${slugify(k.niche)}` : null);
+    if (targetNicheId) {
+      addEdge(targetNicheId, cNodeId, 'BENCHMARKS_CHANNEL', 1.15);
     }
   }
 
@@ -715,8 +753,9 @@ path: ${yamlStr(fileOrLink)}
       docCode: sku || 'NOI-BO',
       kind: d.kind || 'guide',
       contentNiche: d.contentNiche || '',
+      nicheCode: d.nicheCode || '',
       targetUrl: `/tai-lieu?did=DOC_${i + 1}&di=${i}`
-    }, `DOC-${docNum} ${docTitle} ${sku} ${d.contentNiche || ''} ${fileOrLink}`, sku && nodes.has(`video:${sku}`) ? [`[[videos/${sku}]]`] : [], {
+    }, `DOC-${docNum} ${docTitle} ${sku} ${d.nicheCode || ''} ${d.contentNiche || ''} ${fileOrLink}`, sku && nodes.has(`video:${sku}`) ? [`[[videos/${sku}]]`] : [], {
       layer: 'knowledge',
       level: 4,
       parentId
@@ -728,11 +767,18 @@ path: ${yamlStr(fileOrLink)}
     } else {
       addEdge('project:h2dev-project', sopId, 'HAS_SOP', 1.2);
     }
-    if (d.contentNiche) {
+    if (d.nicheCode && nicheNodeByCode.has(d.nicheCode)) {
+      addEdge(sopId, nicheNodeByCode.get(d.nicheCode), 'IN_NICHE', 1.2);
+    } else if (d.contentNiche) {
       const nSlug = slugify(d.contentNiche);
       if (nodes.has(`niche:${nSlug}`)) {
         addEdge(sopId, `niche:${nSlug}`, 'IN_NICHE', 1.1);
       }
+    }
+  }
+  for (const link of nicheTlDocLinks) {
+    if (nodes.has(link.sopId) && nodes.has(link.nNodeId)) {
+      addEdge(link.sopId, link.nNodeId, 'IN_NICHE', 1.2);
     }
   }
 
@@ -1338,11 +1384,15 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
   // 6. Build SQLite WAL + FTS5 + Property Graph (`data/h2dev_knowledge_graph.db`)
   const db = new DatabaseSync(DB_PATH);
   db.exec(`
+    PRAGMA busy_timeout = 5000;
     PRAGMA journal_mode = WAL;
     PRAGMA synchronous = NORMAL;
     PRAGMA mmap_size = 268435456;
     PRAGMA cache_size = -64000;
+  `);
 
+  db.exec('BEGIN IMMEDIATE;');
+  db.exec(`
     DROP TABLE IF EXISTS kg_nodes;
     DROP TABLE IF EXISTS kg_edges;
     DROP TABLE IF EXISTS kg_backlinks;
@@ -1412,7 +1462,6 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
   const insSync = db.prepare(`INSERT OR REPLACE INTO kg_sync_state (path, mtime_ms, size_bytes) VALUES (?, ?, ?)`);
   const insFts = db.prepare(`INSERT INTO kg_fts (id, type, label, body, wikilinks) VALUES (?, ?, ?, ?, ?)`);
 
-  db.exec('BEGIN IMMEDIATE');
   for (const [nId, n] of nodes.entries()) {
     const inb = inboundMap.get(nId) || [];
     const outb = outboundMap.get(nId) || [];
@@ -1472,6 +1521,7 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
   }
   db.exec(`INSERT INTO kg_fts(kg_fts) VALUES('optimize')`);
   db.exec('COMMIT');
+  try { db.exec('PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
   db.close();
 
   // 7. Export JSON Graph (`data/knowledge_graph.json`) for Web Interactive Dual-Layer Explorer
@@ -1526,7 +1576,9 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
     })),
     edges
   };
-  fs.writeFileSync(JSON_GRAPH_PATH, JSON.stringify(jsonGraph, null, 2), 'utf8');
+  const tmpJsonPath = `${JSON_GRAPH_PATH}.${process.pid}.tmp`;
+  fs.writeFileSync(tmpJsonPath, JSON.stringify(jsonGraph, null, 2), 'utf8');
+  fs.renameSync(tmpJsonPath, JSON_GRAPH_PATH);
 
   if (!options.silent) {
     console.log(`✅ H2DEV NEXUS GRAPH BUILT IN ${elapsedMs}ms:`);

@@ -1,0 +1,28 @@
+{
+  "schema": "h2dev.overview-summary.v1",
+  "generatedAt": "2026-10-29T09:10:11.257Z",
+  "counts": {
+    "videosTotal": 333,
+    "videosH2dev": 148,
+    "videosHuan": 140,
+    "videosDgmd": 45,
+    "modulesTotal": 35,
+    "modulesH2dev": 12,
+    "modulesHuan": 13,
+    "modulesDgmd": 10,
+    "documents": 580,
+    "channels": 1082,
+    "deadChannels": 89,
+    "liveChannels": 993,
+    "rawChannels": 156,
+    "niches": 40,
+    "microNiches": 120,
+    "reupSources": 52,
+    "policies": 12,
+    "checklists": 12,
+    "musicTracks": 110
+  },
+  "storage": {
+    "totalVideoSizeMb": 85122.8
+  }
+}

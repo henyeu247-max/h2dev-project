@@ -1,12 +1,12 @@
 ---
 handle: "@LightYogawithNatalie"
-name: "@LightYogawithNatalie"
+name: "Light yoga with Natalie"
 url: "https://www.youtube.com/@LightYogawithNatalie"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @LightYogawithNatalie (@LightYogawithNatalie)
+# Kênh Đối Thủ / Kênh Mẫu: @LightYogawithNatalie (Light yoga with Natalie)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@LightYogawithNatalie](https://www.youtube.com/@LightYogawithNatalie)

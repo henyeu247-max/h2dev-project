@@ -1,12 +1,12 @@
 ---
 handle: "@Faith_Spotlight"
-name: "@Faith_Spotlight"
+name: "Faith Spotlight"
 url: "https://www.youtube.com/@Faith_Spotlight"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Faith_Spotlight (@Faith_Spotlight)
+# Kênh Đối Thủ / Kênh Mẫu: @Faith_Spotlight (Faith Spotlight)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Faith_Spotlight](https://www.youtube.com/@Faith_Spotlight)

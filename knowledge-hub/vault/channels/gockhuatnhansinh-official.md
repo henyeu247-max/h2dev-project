@@ -1,12 +1,12 @@
 ---
 handle: "@gockhuatnhansinh-official"
-name: "@gockhuatnhansinh-official"
+name: "Góc Khuất Nhân Sinh"
 url: "https://www.youtube.com/@gockhuatnhansinh-official"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @gockhuatnhansinh-official (@gockhuatnhansinh-official)
+# Kênh Đối Thủ / Kênh Mẫu: @gockhuatnhansinh-official (Góc Khuất Nhân Sinh)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@gockhuatnhansinh-official](https://www.youtube.com/@gockhuatnhansinh-official)

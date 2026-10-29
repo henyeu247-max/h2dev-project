@@ -1,12 +1,12 @@
 ---
 handle: "@kurumanozokitai"
-name: "@kurumanozokitai"
+name: "クルマ覗き隊"
 url: "https://www.youtube.com/@kurumanozokitai"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @kurumanozokitai (@kurumanozokitai)
+# Kênh Đối Thủ / Kênh Mẫu: @kurumanozokitai (クルマ覗き隊)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@kurumanozokitai](https://www.youtube.com/@kurumanozokitai)

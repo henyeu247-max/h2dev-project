@@ -1,12 +1,12 @@
 ---
 handle: "@Camnhonvietsub"
-name: "@Camnhonvietsub"
+name: "Cằm Nhọn VietSub"
 url: "https://www.youtube.com/@Camnhonvietsub"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Camnhonvietsub (@Camnhonvietsub)
+# Kênh Đối Thủ / Kênh Mẫu: @Camnhonvietsub (Cằm Nhọn VietSub)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Camnhonvietsub](https://www.youtube.com/@Camnhonvietsub)

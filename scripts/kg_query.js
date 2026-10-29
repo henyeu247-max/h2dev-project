@@ -13,15 +13,24 @@
 
 const fs = require('fs');
 const path = require('path');
+const _origEmitWarningKgq = process.emitWarning;
+process.emitWarning = function (w, ...rest) {
+  if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+  return _origEmitWarningKgq.call(process, w, ...rest);
+};
 const { DatabaseSync } = require('node:sqlite');
 const { ensureGraphFresh } = require('./kg_auto_sync');
 const masterDal = require('./master_dal');
 
 const ROOT = path.resolve(__dirname, '..');
 const DB_PATH = path.join(ROOT, 'data', 'h2dev_knowledge_graph.db');
+const INTEL_DB_PATH = path.join(ROOT, 'data', 'intelligence.db');
+const OVERVIEW_SUMMARY_PATH = path.join(ROOT, 'data', 'overview_summary.json');
 
 let _cachedKgDb = null;
 let _cachedKgMtime = 0;
+let _cachedIntelDb = null;
+let _cachedIntelMtime = 0;
 
 function foldVi(str) {
   return String(str || '')
@@ -29,6 +38,32 @@ function foldVi(str) {
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/đ/g, 'd')
     .replace(/Đ/g, 'D');
+}
+
+function openIntelDb() {
+  if (!fs.existsSync(INTEL_DB_PATH)) return null;
+  try {
+    const stat = fs.statSync(INTEL_DB_PATH);
+    if (!_cachedIntelDb || _cachedIntelMtime !== stat.mtimeMs) {
+      if (_cachedIntelDb) {
+        try { _cachedIntelDb.close(); } catch {}
+        _cachedIntelDb = null;
+        _cachedIntelMtime = 0;
+      }
+      const nextDb = new DatabaseSync(INTEL_DB_PATH, { readOnly: true });
+      try {
+        nextDb.exec(`PRAGMA busy_timeout = 5000; PRAGMA mmap_size = 134217728; PRAGMA temp_store = MEMORY;`);
+      } catch (pragmaErr) {
+        try { nextDb.close(); } catch {}
+        throw pragmaErr;
+      }
+      _cachedIntelDb = nextDb;
+      _cachedIntelMtime = stat.mtimeMs;
+    }
+    return _cachedIntelDb;
+  } catch {
+    return null;
+  }
 }
 
 function openDb(autoSync = true) {
@@ -42,9 +77,17 @@ function openDb(autoSync = true) {
   if (!_cachedKgDb || _cachedKgMtime !== stat.mtimeMs) {
     if (_cachedKgDb) {
       try { _cachedKgDb.close(); } catch {}
+      _cachedKgDb = null;
+      _cachedKgMtime = 0;
     }
-    _cachedKgDb = new DatabaseSync(DB_PATH, { readOnly: true });
-    _cachedKgDb.exec(`PRAGMA mmap_size = 268435456; PRAGMA temp_store = MEMORY;`);
+    const nextDb = new DatabaseSync(DB_PATH, { readOnly: true });
+    try {
+      nextDb.exec(`PRAGMA busy_timeout = 5000; PRAGMA mmap_size = 268435456; PRAGMA temp_store = MEMORY;`);
+    } catch (pragmaErr) {
+      try { nextDb.close(); } catch {}
+      throw pragmaErr;
+    }
+    _cachedKgDb = nextDb;
     _cachedKgMtime = stat.mtimeMs;
   }
   return _cachedKgDb;
@@ -56,16 +99,75 @@ function closeKgDb() {
     _cachedKgDb = null;
     _cachedKgMtime = 0;
   }
+  if (_cachedIntelDb) {
+    try { _cachedIntelDb.close(); } catch {}
+    _cachedIntelDb = null;
+    _cachedIntelMtime = 0;
+  }
 }
 
 function getGraphStatsFromDb(autoSync = true) {
   const t0 = performance.now();
-  const db = openDb(autoSync);
-  const byLayer = db.prepare(`SELECT layer, COUNT(*) as count FROM kg_nodes GROUP BY layer ORDER BY count DESC`).all();
-  const byType = db.prepare(`SELECT type, layer, COUNT(*) as count, SUM(degree) as sum_deg FROM kg_nodes GROUP BY type, layer ORDER BY count DESC`).all();
-  const byTrack = db.prepare(`SELECT track, COUNT(*) as count FROM kg_nodes WHERE type = 'video' GROUP BY track ORDER BY count DESC`).all();
-  const edgeCounts = db.prepare(`SELECT relation, COUNT(*) as count FROM kg_edges GROUP BY relation ORDER BY count DESC`).all();
-  const topHubs = db.prepare(`SELECT id, type, layer, label, degree, path FROM kg_nodes ORDER BY degree DESC LIMIT 15`).all();
+  let byLayer = [], byType = [], byTrack = [], edgeCounts = [], topHubs = [];
+  try {
+    const db = openDb(autoSync);
+    byLayer = db.prepare(`SELECT layer, COUNT(*) as count FROM kg_nodes GROUP BY layer ORDER BY count DESC`).all();
+    byType = db.prepare(`SELECT type, layer, COUNT(*) as count, SUM(degree) as sum_deg FROM kg_nodes GROUP BY type, layer ORDER BY count DESC`).all();
+    byTrack = db.prepare(`SELECT track, COUNT(*) as count FROM kg_nodes WHERE type = 'video' GROUP BY track ORDER BY count DESC`).all();
+    edgeCounts = db.prepare(`SELECT relation, COUNT(*) as count FROM kg_edges GROUP BY relation ORDER BY count DESC`).all();
+    topHubs = db.prepare(`SELECT id, type, layer, label, degree, path FROM kg_nodes ORDER BY degree DESC LIMIT 15`).all();
+  } catch {}
+
+  let masterSummary = null;
+  try {
+    let ov = null;
+    if (fs.existsSync(OVERVIEW_SUMMARY_PATH)) {
+      ov = JSON.parse(fs.readFileSync(OVERVIEW_SUMMARY_PATH, 'utf8'));
+    }
+    let masterDbCounts = null;
+    try {
+      masterDbCounts = {
+        lessons: masterDal.queryOne('SELECT COUNT(*) AS c FROM lessons').c,
+        niches: masterDal.queryOne('SELECT COUNT(*) AS c FROM niches').c,
+        channels: masterDal.queryOne('SELECT COUNT(*) AS c FROM competitor_channels').c,
+        topVideos: masterDal.queryOne('SELECT COUNT(*) AS c FROM competitor_top_videos').c,
+        documents: masterDal.queryOne('SELECT COUNT(*) AS c FROM documents').c,
+        reupSources: masterDal.queryOne('SELECT COUNT(*) AS c FROM reup_sources').c,
+        policies: masterDal.queryOne('SELECT COUNT(*) AS c FROM policies').c,
+        checklists: masterDal.queryOne('SELECT COUNT(*) AS c FROM checklists').c
+      };
+    } catch {}
+    const deadChannelsCount = (ov && ov.counts && typeof ov.counts.deadChannels === 'number')
+      ? ov.counts.deadChannels
+      : (() => {
+          try {
+            return masterDal.queryOne("SELECT COUNT(*) AS c FROM competitor_channels WHERE is_monetized = 0 OR ypp_status IN ('DEAD_404', 'TERMINATED_BY_YOUTUBE')").c;
+          } catch { return 0; }
+        })();
+    masterSummary = Object.assign({}, ov || {}, {
+      deadChannelsCount,
+      masterDbCounts
+    });
+  } catch {}
+
+  let intelligenceStats = {
+    channelsCount: 0,
+    videosCount: 0,
+    cowatchEdgesCount: 0,
+    breakoutCount: 0
+  };
+  try {
+    const idb = openIntelDb();
+    if (idb) {
+      intelligenceStats = {
+        channelsCount: idb.prepare('SELECT COUNT(*) AS c FROM channels').get().c,
+        videosCount: idb.prepare('SELECT COUNT(*) AS c FROM videos').get().c,
+        cowatchEdgesCount: idb.prepare('SELECT COUNT(*) AS c FROM cowatch_edges').get().c,
+        breakoutCount: idb.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_breakout = 1').get().c
+      };
+    }
+  } catch {}
+
   const ms = Number((performance.now() - t0).toFixed(2));
   return {
     latencyMs: ms,
@@ -73,7 +175,9 @@ function getGraphStatsFromDb(autoSync = true) {
     nodesByType: byType,
     videosByTrack: byTrack,
     edgesByRelation: edgeCounts,
-    topConnectedHubs: topHubs
+    topConnectedHubs: topHubs,
+    masterSummary,
+    intelligenceStats
   };
 }
 
@@ -106,12 +210,15 @@ function findNodeFlexible(db, rawQuery) {
   const q = String(rawQuery || '').trim().replace(/\\/g, '/');
   if (!q) return null;
   const cleanHandle = q.replace(/^@/, '');
+  const qNoPrefix = q.replace(/^(niche|module|tool|channel|video|sop|policy|checklist|project|domain|dir|file):/i, '').trim();
+  const qSlug = foldVi(qNoPrefix).replace(/[^a-zA-Z0-9_-]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
 
-  // 1. Exact ID or SKU or Path or Policy/Checklist/SOP/Channel match (uses expression indexes)
+  // 1. Exact ID or SKU or Path or Policy/Checklist/SOP/Channel/Niche-Slug match (uses expression indexes)
   let node = db.prepare(`
     SELECT * FROM kg_nodes
     WHERE LOWER(id) = LOWER(?)
        OR LOWER(sku) = LOWER(?)
+       OR LOWER(id) = LOWER(?)
        OR LOWER(id) = LOWER(?)
        OR LOWER(id) = LOWER(?)
        OR LOWER(id) = LOWER(?)
@@ -134,6 +241,7 @@ function findNodeFlexible(db, rawQuery) {
     `checklist:${q}`,
     `channel:${cleanHandle}`,
     `niche:${q}`,
+    `niche:${qSlug}`,
     q,
     `H2DEV-Project/${q}`
   );
@@ -485,6 +593,77 @@ function tracePathInDb(fromQuery, toQuery, autoSync = true) {
   };
 }
 
+function searchIntelligenceDb(qRaw, limit = 12) {
+  const q = String(qRaw || '').trim();
+  if (!q) return [];
+  const idb = openIntelDb();
+  if (!idb) return [];
+  const pat = `%${q}%`;
+  const results = [];
+  try {
+    const chRows = idb.prepare(`
+      SELECT channel_id, handle, title, primary_niche, median_views, top_outlier_multiplier, is_breakout, is_faceless, faceless_type
+      FROM channels
+      WHERE LOWER(handle) LIKE LOWER(?) OR LOWER(title) LIKE LOWER(?) OR LOWER(primary_niche) LIKE LOWER(?) OR LOWER(channel_id) = LOWER(?)
+      ORDER BY is_breakout DESC, median_views DESC
+      LIMIT ?
+    `).all(pat, pat, pat, q, limit);
+    for (const c of chRows) {
+      results.push({
+        entity_type: 'INTEL_CHANNEL',
+        id: c.channel_id,
+        handle: c.handle,
+        title: c.title,
+        primary_niche: c.primary_niche,
+        median_views: c.median_views,
+        top_outlier_multiplier: c.top_outlier_multiplier,
+        is_breakout: c.is_breakout,
+        is_faceless: c.is_faceless,
+        faceless_type: c.faceless_type
+      });
+    }
+    if (results.length < limit) {
+      const rem = limit - results.length;
+      const vRows = idb.prepare(`
+        SELECT v.video_id, v.channel_id, v.title, v.views, v.outlier_score, c.handle, c.primary_niche
+        FROM videos v
+        LEFT JOIN channels c ON c.channel_id = v.channel_id
+        WHERE LOWER(v.title) LIKE LOWER(?) OR LOWER(c.handle) LIKE LOWER(?) OR LOWER(c.primary_niche) LIKE LOWER(?) OR LOWER(v.video_id) = LOWER(?)
+        ORDER BY v.views DESC
+        LIMIT ?
+      `).all(pat, pat, pat, q, rem);
+      for (const v of vRows) {
+        results.push({
+          entity_type: 'INTEL_VIDEO',
+          id: v.video_id,
+          channel_id: v.channel_id,
+          handle: v.handle || '',
+          title: v.title,
+          primary_niche: v.primary_niche || '',
+          views: v.views,
+          outlier_score: v.outlier_score
+        });
+      }
+    }
+  } catch {}
+  return results.slice(0, limit);
+}
+
+function queryIntelligenceBreakouts(limit = 30) {
+  const idb = openIntelDb();
+  if (!idb) return { total: 0, totalBreakouts: 0, channels: [] };
+  try {
+    const safeLim = Number.isFinite(Number(limit)) ? Math.max(1, Math.min(200, Number(limit))) : 30;
+    const rows = idb.prepare(
+      'SELECT channel_id, handle, title, channel_age_days, median_views, top_outlier_multiplier, is_faceless, faceless_type, primary_niche, last_crawled_at FROM channels WHERE is_breakout = 1 ORDER BY median_views DESC LIMIT ?'
+    ).all(safeLim);
+    const totalBreakouts = idb.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_breakout = 1').get().c;
+    return { total: rows.length, totalBreakouts, channels: rows };
+  } catch (err) {
+    return { total: 0, totalBreakouts: 0, channels: [], error: err.message };
+  }
+}
+
 /**
  * Truy vấn Sâu Đa Luồng Liên Hợp (Multi-Query Deep Search & Cross-DB Fusion):
  * Cho phép Agent hoặc Người dùng truyền vào 1 hoặc nhiều truy vấn phân tách bằng dấu `|` (VD: "VIDEO-53a547 | P02 | US_EverydayHistory"),
@@ -503,9 +682,13 @@ function deepSearchAll(rawQueries, options = {}) {
   const limitPerQuery = options.limit || 12;
   const batches = list.map(q => {
     const qt0 = performance.now();
-    const masterHits = masterDal.searchFts(q, limitPerQuery);
-    const graphSearch = searchGraphInDb(q, { limit: limitPerQuery, type: options.type, layer: options.layer }, false);
-    const directTrace = traceNodeInDb(q, false);
+    let masterHits = [];
+    try { masterHits = masterDal.searchFts(q, limitPerQuery); } catch {}
+    let graphSearch = { count: 0, results: [] };
+    try { graphSearch = searchGraphInDb(q, { limit: limitPerQuery, type: options.type, layer: options.layer }, false); } catch {}
+    let directTrace = { found: false };
+    try { directTrace = traceNodeInDb(q, false); } catch {}
+    const intelligenceHits = searchIntelligenceDb(q, limitPerQuery);
     return {
       query: q,
       latencyMs: Number((performance.now() - qt0).toFixed(2)),
@@ -516,7 +699,9 @@ function deepSearchAll(rawQueries, options = {}) {
       masterFtsCount: masterHits.length,
       masterResults: masterHits,
       graphFtsCount: graphSearch.count,
-      graphResults: graphSearch.results
+      graphResults: graphSearch.results,
+      intelCount: intelligenceHits.length,
+      intelResults: intelligenceHits
     };
   });
 
@@ -570,6 +755,8 @@ if (require.main === module) {
 }
 
 module.exports = {
+  openIntelDb,
+  queryIntelligenceBreakouts,
   getGraphStatsFromDb,
   listProjectsFromDb,
   traceNodeInDb,

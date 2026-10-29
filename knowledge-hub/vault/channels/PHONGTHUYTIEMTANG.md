@@ -1,12 +1,12 @@
 ---
 handle: "@PHONGTHUYTIEMTANG"
-name: "@PHONGTHUYTIEMTANG"
+name: "PHONG THỦY TIỀM TÀNG"
 url: "https://www.youtube.com/@PHONGTHUYTIEMTANG"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PHONGTHUYTIEMTANG (@PHONGTHUYTIEMTANG)
+# Kênh Đối Thủ / Kênh Mẫu: @PHONGTHUYTIEMTANG (PHONG THỦY TIỀM TÀNG)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PHONGTHUYTIEMTANG](https://www.youtube.com/@PHONGTHUYTIEMTANG)

@@ -1,12 +1,12 @@
 ---
 handle: "@buddhamind60s"
-name: "@buddhamind60s"
+name: "シニアの心が軽くなる知恵"
 url: "https://www.youtube.com/@buddhamind60s"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @buddhamind60s (@buddhamind60s)
+# Kênh Đối Thủ / Kênh Mẫu: @buddhamind60s (シニアの心が軽くなる知恵)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@buddhamind60s](https://www.youtube.com/@buddhamind60s)

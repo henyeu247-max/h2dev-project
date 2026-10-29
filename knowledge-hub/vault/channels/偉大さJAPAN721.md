@@ -1,12 +1,12 @@
 ---
 handle: "@偉大さJAPAN721"
-name: "@偉大さJAPAN721"
+name: "静かな物語"
 url: "https://www.youtube.com/@偉大さJAPAN721"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @偉大さJAPAN721 (@偉大さJAPAN721)
+# Kênh Đối Thủ / Kênh Mẫu: @偉大さJAPAN721 (静かな物語)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@偉大さJAPAN721](https://www.youtube.com/@偉大さJAPAN721)

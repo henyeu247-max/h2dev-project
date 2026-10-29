@@ -1,12 +1,12 @@
 ---
 handle: "@wise-stories-2504"
-name: "@wise-stories-2504"
+name: "지혜로운 이야기"
 url: "https://www.youtube.com/@wise-stories-2504"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @wise-stories-2504 (@wise-stories-2504)
+# Kênh Đối Thủ / Kênh Mẫu: @wise-stories-2504 (지혜로운 이야기)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@wise-stories-2504](https://www.youtube.com/@wise-stories-2504)

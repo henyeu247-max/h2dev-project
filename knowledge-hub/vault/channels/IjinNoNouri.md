@@ -1,12 +1,12 @@
 ---
 handle: "@IjinNoNouri"
-name: "@IjinNoNouri"
+name: "偉人の脳裏"
 url: "https://www.youtube.com/@IjinNoNouri"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @IjinNoNouri (@IjinNoNouri)
+# Kênh Đối Thủ / Kênh Mẫu: @IjinNoNouri (偉人の脳裏)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@IjinNoNouri](https://www.youtube.com/@IjinNoNouri)

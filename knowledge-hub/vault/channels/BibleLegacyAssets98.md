@@ -1,12 +1,12 @@
 ---
 handle: "@BibleLegacyAssets98"
-name: "@BibleLegacyAssets98"
+name: "Bible Legacy Assets"
 url: "https://www.youtube.com/@BibleLegacyAssets98"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BibleLegacyAssets98 (@BibleLegacyAssets98)
+# Kênh Đối Thủ / Kênh Mẫu: @BibleLegacyAssets98 (Bible Legacy Assets)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BibleLegacyAssets98](https://www.youtube.com/@BibleLegacyAssets98)

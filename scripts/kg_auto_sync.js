@@ -14,6 +14,12 @@
 
 const fs = require('fs');
 const path = require('path');
+const { Worker } = require('worker_threads');
+const _origEmitWarningKgs = process.emitWarning;
+process.emitWarning = function (w, ...rest) {
+  if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
+  return _origEmitWarningKgs.call(process, w, ...rest);
+};
 const { DatabaseSync } = require('node:sqlite');
 function getGraphBuilder() {
   return require('./build_knowledge_vault_graph').buildKnowledgeAndInfraGraph;
@@ -47,7 +53,8 @@ const IGNORED_FILES = new Set([
   'intelligence.db-wal',
   'intelligence.db-shm',
   'knowledge_graph.json',
-  'counts-manifest.json'
+  'counts-manifest.json',
+  'overview_summary.json'
 ]);
 
 let syncVersion = 1;
@@ -55,18 +62,20 @@ let lastSyncedAt = Date.now();
 let lastSyncDurationMs = 0;
 let lastChangedFile = 'Initial Boot';
 let isSyncing = false;
+let pendingSyncRequest = null;
 let cooldownUntil = 0;
 let debounceTimer = null;
+let debounceRebuildMaster = false;
 let watchersStarted = false;
 
 function shouldIgnoreRelPath(relPath) {
   if (!relPath) return true;
-  if (Date.now() < cooldownUntil) return true;
   const norm = String(relPath).replace(/\\/g, '/').replace(/\/+$/g, '');
   const base = path.basename(norm);
   if (IGNORED_FILES.has(base) || base.startsWith('.env') || base.endsWith('.tmp') || base.endsWith('.log') || base.endsWith('.db-journal')) {
     return true;
   }
+  if (Date.now() < cooldownUntil) return true;
   // Ignore bare directory change events from Windows ReadDirectoryChangesW
   if (norm === 'H2DEV-Project/data' || norm === 'H2DEV-Project/knowledge-hub' || norm === 'H2DEV-Project' || !path.extname(base)) {
     // Allow new directory detection only if it's not an existing parent folder
@@ -98,7 +107,8 @@ function isGraphStale() {
   if (!IS_MASTER_WORKSPACE) return { stale: false, reason: 'synced_from_master_workspace' };
   let db = null;
   try {
-    db = new DatabaseSync(DB_PATH);
+    db = new DatabaseSync(DB_PATH, { readOnly: true });
+    db.exec('PRAGMA busy_timeout = 3000;');
     const rows = db.prepare(`SELECT path, mtime_ms, size_bytes FROM kg_sync_state`).all();
     if (!rows.length) return { stale: true, reason: 'empty_sync_state' };
 
@@ -187,6 +197,7 @@ function triggerSyncNow(reason = 'manual', fullMarkdown = false) {
       skipVaultMarkdown: !fullMarkdown,
       silent: true
     });
+    try { require('./kg_query').closeKgDb(); } catch (_) {}
     lastSyncDurationMs = Math.round(performance.now() - t0);
     lastSyncedAt = Date.now();
     cooldownUntil = Date.now() + 2500;
@@ -203,6 +214,93 @@ function triggerSyncNow(reason = 'manual', fullMarkdown = false) {
   } finally {
     isSyncing = false;
   }
+}
+
+function triggerSyncAsync(reason = 'watcher', fullMarkdown = false, onDone = null, dirtyMaster = false) {
+  const rebuildMaster = Boolean(dirtyMaster || /(?:^|\/)(?:data-tabs|data)\//i.test(String(reason || '')));
+  if (!IS_MASTER_WORKSPACE && fs.existsSync(DB_PATH) && fs.existsSync(JSON_GRAPH_PATH)) {
+    const res = triggerSyncNow(reason, fullMarkdown);
+    if (typeof onDone === 'function') onDone(res);
+    return res;
+  }
+  if (isSyncing) {
+    pendingSyncRequest = {
+      reason,
+      rebuildMaster: Boolean(rebuildMaster || (pendingSyncRequest && pendingSyncRequest.rebuildMaster)),
+      fullMarkdown: Boolean(fullMarkdown || (pendingSyncRequest && pendingSyncRequest.fullMarkdown)),
+      onDone: onDone || (pendingSyncRequest && pendingSyncRequest.onDone) || null
+    };
+    const busy = { synced: false, status: 'queued_after_active_sync', syncVersion, lastSyncedAt };
+    if (typeof onDone === 'function') onDone(busy);
+    return busy;
+  }
+  isSyncing = true;
+  const t0 = performance.now();
+  let worker;
+  try {
+    worker = new Worker(path.join(__dirname, 'sync_worker.js'), {
+      execArgv: ['--no-warnings=ExperimentalWarning'],
+      workerData: { fullMarkdown: Boolean(fullMarkdown), rebuildMaster }
+    });
+  } catch (err) {
+    isSyncing = false;
+    const errRes = {
+      synced: false,
+      status: 'worker_spawn_error',
+      error: err.message,
+      syncVersion,
+      lastSyncedAt
+    };
+    if (typeof onDone === 'function') onDone(errRes);
+    return errRes;
+  }
+  let settled = false;
+  const finish = (msg) => {
+    if (settled) return;
+    settled = true;
+    isSyncing = false;
+    if (msg && msg.ok) {
+      try { require('./kg_query').closeKgDb(); } catch (_) {}
+      lastSyncDurationMs = Math.round(performance.now() - t0);
+      lastSyncedAt = Date.now();
+      cooldownUntil = Date.now() + 1500;
+      lastChangedFile = reason;
+      syncVersion++;
+      const res = {
+        synced: true,
+        syncVersion,
+        lastSyncedAt,
+        lastSyncDurationMs,
+        reason,
+        rebuildMaster,
+        stats: msg.stats || null
+      };
+      if (typeof onDone === 'function') onDone(res);
+    } else {
+      const errRes = {
+        synced: false,
+        status: 'worker_error',
+        error: (msg && msg.error) || 'unknown_worker_error',
+        syncVersion,
+        lastSyncedAt
+      };
+      if (typeof onDone === 'function') onDone(errRes);
+    }
+    if (pendingSyncRequest) {
+      const nextReq = pendingSyncRequest;
+      pendingSyncRequest = null;
+      setImmediate(() => triggerSyncAsync(nextReq.reason, nextReq.fullMarkdown, nextReq.onDone, nextReq.rebuildMaster));
+    }
+  };
+  worker.once('message', finish);
+  worker.once('error', (err) => finish({ ok: false, error: err.message }));
+  worker.once('exit', (code) => {
+    if (!settled) {
+      finish({ ok: false, error: `Worker exited cleanly/prematurely with code ${code} before message` });
+    }
+  });
+  if (worker.unref) worker.unref();
+  return { synced: false, status: 'dispatched_worker', rebuildMaster, syncVersion, lastSyncedAt };
 }
 
 let _lastFreshCheckAt = 0;
@@ -237,15 +335,15 @@ function ensureGraphFresh(forceCheck = false) {
 
 function startAutoSyncWatcher(onSyncCallback = null) {
   if (watchersStarted) return;
-  watchersStarted = true;
 
-  // Ensure initial freshness on boot
+  // Ensure initial forced freshness check on boot BEFORE marking watchersStarted = true
   try {
-    ensureGraphFresh();
+    ensureGraphFresh(true);
   } catch (e) {
     console.error('[KG-AutoSync] Boot check error:', e.message);
   }
 
+  let registeredCount = 0;
   const watchTargets = [
     { dir: ROOT, prefix: 'H2DEV-Project' },
     { dir: path.join(WORKSPACE_ROOT, 'research-repos'), prefix: 'research-repos' },
@@ -260,23 +358,30 @@ function startAutoSyncWatcher(onSyncCallback = null) {
         const rel = wt.prefix ? `${wt.prefix}/${String(filename).replace(/\\/g, '/')}` : String(filename).replace(/\\/g, '/');
         if (shouldIgnoreRelPath(rel)) return;
 
+        debounceRebuildMaster = debounceRebuildMaster || /(?:^|\/)(?:data-tabs|data)\//i.test(rel);
         if (debounceTimer) clearTimeout(debounceTimer);
         debounceTimer = setTimeout(() => {
-          try {
-            const res = triggerSyncNow(`${eventType}:${rel}`, false);
-            if (res.synced && typeof onSyncCallback === 'function') {
+          const dirtyMaster = debounceRebuildMaster;
+          debounceRebuildMaster = false;
+          triggerSyncAsync(`${eventType}:${rel}`, false, (res) => {
+            if (res && res.synced && typeof onSyncCallback === 'function') {
               onSyncCallback(res);
+            } else if (res && res.error) {
+              console.error('[KG-AutoSync] Watcher worker error:', res.error);
             }
-          } catch (err) {
-            console.error('[KG-AutoSync] Watcher rebuild error:', err.message);
-          }
+          }, dirtyMaster);
         }, 1200);
         if (debounceTimer.unref) debounceTimer.unref();
       });
+      watcher.on('error', () => {});
       if (watcher.unref) watcher.unref();
+      registeredCount++;
     } catch (err) {
       console.error(`[KG-AutoSync] Could not watch ${wt.dir}:`, err.message);
     }
+  }
+  if (registeredCount > 0) {
+    watchersStarted = true;
   }
 }
 
@@ -300,6 +405,7 @@ function getSyncStatus() {
 module.exports = {
   isGraphStale,
   triggerSyncNow,
+  triggerSyncAsync,
   ensureGraphFresh,
   startAutoSyncWatcher,
   getSyncStatus

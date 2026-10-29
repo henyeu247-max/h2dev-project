@@ -1,6 +1,6 @@
 # Cây thư mục chuẩn — H2DEV-Project
 
-Cập nhật: **2026-10-26**
+Cập nhật: **2026-10-29**
 
 H2DEV là **một nguồn sự thật**. Gốc `Y:\YTB` không chứa data làm việc.
 
@@ -38,20 +38,21 @@ Y:\YTB\
     │   ├── research-20260916\         # 43 prompt master research (nguồn của +43 card 16/09)
     │   ├── music_catalog.json         # 49 tracks nhạc nền đã audit Gemini & FFprobe (36 SAFE · 9 REVIEW · 4 COPYRIGHTED)
     │   ├── counts-manifest.json       # manifest số liệu chuẩn tự động sinh bởi sync-counts.js
+    │   ├── overview_summary.json      # micro-shard tổng hợp siêu nhẹ (~2 KB) phục vụ tức thì cho Topbar & các tab
     │   └── *.db (h2dev_master · h2dev_knowledge_graph · intelligence) · knowledge_graph.json
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 148 SKU (27 free · 121 pro — gồm 4 Zoom free)
-    │   ├── kenh-mau.json          # 261 kênh (189 sống · 72 dead ẩn) · ngay_do 261/261 (đo thực tế: 184 sống · 59 DIE 404 · 10 rỗng · 3 dead khác)
-    │   ├── tai-lieu-full.json     # 300 card (kind: prompt 77 · report 21 · tool 28 · list 14 · other 8 · internal-doc 5 · sop 14 · guide 49 · transcript 40 · sheet 4 · 40 chưa gán; đo 2026-10-14)
-    │   ├── nguon-reup.json        # 27
-    │   ├── ngach-xanh.json        # 34 ngách (xanh:true 10 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BC 8 · THẬN TRỌNG 3 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 12 Trụ cột Chính sách YouTube 2026
-    │   ├── chien-luoc.json        # workflow 16 bước · 4 nguyên tắc · 12 bước Checklist trước khi đăng · Ma trận 148 bài học
+    │   ├── kenh-mau.json          # 1082 kênh (993 sống · 89 dead ẩn) · ngay_do 1082/1082 (đo thực tế: 993 sống · 75 DIE 404 · 14 rỗng)
+    │   ├── tai-lieu-full.json     # 580 card (kind: prompt 211 · report 28 · tool 40 · list 22 · other 8 · internal-doc 11 · sop 90 · guide 102 · transcript 57 · sheet 11 · 0 chưa gán)
+    │   ├── nguon-reup.json        # 52
+    │   ├── ngach-xanh.json        # 40 ngách (xanh:true 16 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BC 6 · THẬN TRỌNG 5 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 12 Trụ cột Chính sách YouTube 2026
+    │   ├── chien-luoc.json        # workflow 24 bước · 4 nguyên tắc · 12 bước Checklist trước khi đăng · Ma trận 148 bài học
     │   ├── kich-ban.json          # 60 — extract cũ, UI không đọc
     │   ├── dong-bo-ngoai.json     # bảng match/gôm (13 matched · 19 merged · 5 không gom)
     │   └── raw-kenh-mau.json      # 156 record canonical (149 kênh unique · 7 bản ghi trùng channel) · OCR 83 · Vision 156/156 · vidIQ verified 83
     │
     ├── assets\                    # tailwind.css (BUILD từ css/input.css) · viddar.css · learn.css · player.css · fonts\ (woff2 self-host)
-    │   ├── thumbs\                # 148/148 khớp videos.json + placeholder.svg
+    │   ├── thumbs\                # 148/148 khớp videos.json + 140 HUAN + placeholder.svg (289 files)
     │   └── avatars\ · docs\
     ├── docs\
     │   ├── VIDEO-*\               # 329 README.md · 166 description.html (đếm đệ quy hiện trạng)
@@ -74,7 +75,7 @@ Y:\YTB\
     │
     ├── video\                     # 333 thư mục: 329 VIDEO-<sku>\<sku>.mp4 + 4 ZOOM-<slug>\<slug>.webm (~83.13 GiB / 89.26 GB) · KHÔNG vào git
     ├── inbox\                     # THẢ FILE MỚI VÀO ĐÂY (web bị chặn)
-    ├── scripts\                   # validate · sync · intake · clean
+    ├── scripts\                   # validate · sync (sync_worker.js · kg_auto_sync.js · hot_memory_store.js) · intake · clean
     ├── _backup\                   # snapshot — web bị chặn · KHÔNG vào git
     ├── _audit\                    # raw/nhật ký kiểm chứng — web bị chặn · KHÔNG đưa lên UI
     ├── _private\                  # chỗ key local — web bị chặn
@@ -84,7 +85,7 @@ Y:\YTB\
     │   └── 20260918-obsolete-build-modules\ # 3 script sinh data SAI (xem README.md trong đó):
     │       # build-modules.js · build-modules-v2.js (chỉ 11 module, MẤT Zoom M11)
     │       # normalize_raw_kenh_mau.cjs (patch 1 lần cho 95 record → nay 156)
-    ├── _internal\                 # dữ liệu nội bộ đang tồn tại ở gốc · web bị chặn
+    ├── _internal\                 # dữ liệu nội bộ đang tồn tại ở gốc (xmdt.html · xmdt_showcase.html) · web bị chặn
     ├── _tmp-proof\                # bằng chứng/probe tạm đang tồn tại ở gốc · web bị chặn
     ├── .cache\                    # cache runtime (checkpoint, thumbnail, reload-state) · web bị chặn
     ├── logs\                      # log server/watchdog/reload · web bị chặn · KHÔNG vào git

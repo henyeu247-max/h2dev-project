@@ -11,8 +11,8 @@ videos_count: 8
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BRIGHTSIDEOFFICIAL](https://www.youtube.com/@BRIGHTSIDEOFFICIAL)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
-- **Ngách (kenh-mau.json):** `Đa ngách`
-- **Thị trường:** `Toàn cầu`
+- **Ngách (kenh-mau.json):** `Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)`
+- **Thị trường:** `🇯🇵 Nhật`
 
 ## Các Video Bài Giảng Phân Tích Kênh Này (8)
 - [[videos/VIDEO-6cb984|VIDEO-6cb984 — BẮT ĐẦU 1 MÌNH THÌ LÀM THẾ NÀO]] (`HUAN`)

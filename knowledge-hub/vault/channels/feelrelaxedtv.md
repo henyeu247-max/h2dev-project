@@ -1,12 +1,12 @@
 ---
 handle: "@feelrelaxedtv"
-name: "@feelrelaxedtv"
+name: "마음 풀고 가세요"
 url: "https://www.youtube.com/@feelrelaxedtv"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @feelrelaxedtv (@feelrelaxedtv)
+# Kênh Đối Thủ / Kênh Mẫu: @feelrelaxedtv (마음 풀고 가세요)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@feelrelaxedtv](https://www.youtube.com/@feelrelaxedtv)

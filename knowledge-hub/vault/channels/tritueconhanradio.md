@@ -1,12 +1,12 @@
 ---
 handle: "@tritueconhanradio"
-name: "@tritueconhanradio"
+name: "Trí Tuệ Cổ Nhân - Radio"
 url: "https://www.youtube.com/@tritueconhanradio"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @tritueconhanradio (@tritueconhanradio)
+# Kênh Đối Thủ / Kênh Mẫu: @tritueconhanradio (Trí Tuệ Cổ Nhân - Radio)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@tritueconhanradio](https://www.youtube.com/@tritueconhanradio)

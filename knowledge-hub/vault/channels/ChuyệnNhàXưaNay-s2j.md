@@ -1,12 +1,12 @@
 ---
 handle: "@ChuyệnNhàXưaNay-s2j"
-name: "@ChuyệnNhàXưaNay-s2j"
+name: "Chuyện Nhà Xưa Nay"
 url: "https://www.youtube.com/@ChuyệnNhàXưaNay-s2j"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ChuyệnNhàXưaNay-s2j (@ChuyệnNhàXưaNay-s2j)
+# Kênh Đối Thủ / Kênh Mẫu: @ChuyệnNhàXưaNay-s2j (Chuyện Nhà Xưa Nay)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ChuyệnNhàXưaNay-s2j](https://www.youtube.com/@ChuyệnNhàXưaNay-s2j)

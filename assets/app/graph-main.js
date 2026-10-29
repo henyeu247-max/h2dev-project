@@ -484,7 +484,7 @@
   // ============================================================================
   // MODE 2: OBSIDIAN NETWORK GRAPH CANVAS (EGO-CONSTELLATION + GALAXY CLUSTERS)
   // ============================================================================
-  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 2.983 Nút)
+  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.148 Nút)
   let egoPositions = new Map();
   let egoVisibleSet = new Set();
 
@@ -920,7 +920,8 @@
     const ins = inEdgesByTarget.get(node.id) || [];
     const chain = getLineageChain(node);
 
-    const webTargetUrl = node.meta?.playerUrl || node.meta?.targetUrl || (node.type === 'video' && node.sku ? `/player.html?sku=${encodeURIComponent(node.sku)}` : '');
+    const rawTargetLink = node.meta?.playerUrl || node.meta?.targetUrl || (node.type === 'video' && node.sku ? `/lotrinh/${encodeURIComponent(node.sku)}` : '');
+    const webTargetUrl = rawTargetLink.replace(/^\/player\.html\?sku=([^&]+).*$/i, '/lotrinh/$1');
     const rawTargetUrl = node.meta?.rawUrl || '';
     const sodoUrl = `/sodo?snode=${encodeURIComponent(node.id)}`;
     const playerBtn = `
@@ -1343,32 +1344,36 @@
     drawCanvas();
   });
 
+  let kgSearchDebounceTimer = null;
   searchInput?.addEventListener('input', () => {
-    searchQuery = (searchInput.value || '').trim().toLowerCase();
-    if (searchQuery) {
-      const firstMatch = nodes.find(n => isNodeVisible(n));
-      if (firstMatch) {
-        selectAndFocusNode(firstMatch, true);
-        renderMatrixView();
-        return;
+    clearTimeout(kgSearchDebounceTimer);
+    kgSearchDebounceTimer = setTimeout(() => {
+      searchQuery = (searchInput.value || '').trim().toLowerCase();
+      if (searchQuery) {
+        const firstMatch = nodes.find(n => isNodeVisible(n));
+        if (firstMatch) {
+          selectAndFocusNode(firstMatch, true);
+          renderMatrixView();
+          return;
+        }
+        selectedNode = null;
+        flowRootNode = null;
+        flowCol2Node = null;
+        flowCol3Node = null;
+        renderInspector(null);
+        syncUrlState();
+      } else if (!selectedNode) {
+        const defaultProj = nodeById.get('project:h2dev-project') || nodes[0];
+        if (defaultProj) {
+          selectAndFocusNode(defaultProj, false);
+          renderMatrixView();
+          return;
+        }
       }
-      selectedNode = null;
-      flowRootNode = null;
-      flowCol2Node = null;
-      flowCol3Node = null;
-      renderInspector(null);
-      syncUrlState();
-    } else if (!selectedNode) {
-      const defaultProj = nodeById.get('project:h2dev-project') || nodes[0];
-      if (defaultProj) {
-        selectAndFocusNode(defaultProj, false);
-        renderMatrixView();
-        return;
-      }
-    }
-    renderFlowchart();
-    renderMatrixView();
-    drawCanvas();
+      renderFlowchart();
+      renderMatrixView();
+      drawCanvas();
+    }, 200);
   });
 
   window.addEventListener('resize', () => {
@@ -1401,6 +1406,12 @@
           const fHu = document.querySelector('#kgTrackFilters button[data-track="huan"]');
           const fDg = document.querySelector('#kgTrackFilters button[data-track="dgmd"]');
           if (fAll) fAll.textContent = `Toàn hệ thống 97yo-dev (${st.totalNodes})`;
+          const btnGal = document.getElementById('btnScopeGalaxy');
+          if (btnGal && st.totalNodes) {
+            const fmtNodes = String(st.totalNodes).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+            btnGal.textContent = `🌌 Toàn Cảnh ${fmtNodes} Nút`;
+            btnGal.title = `Vẽ toàn cảnh ${fmtNodes} nút phân cụm theo Dự án & Nhánh đào tạo`;
+          }
           if (fInf) fInf.textContent = `Hạ tầng ${st.projects || 17} Dự án (${st.infraNodes || 0})`;
           if (fPol) fPol.textContent = `Chính sách & SOP (${(st.policies || 12) + (st.checklists || 12) + (st.sops || 300)})`;
           if (fH2) fH2.textContent = `Nhánh H2DEV (${st.videosH2dev || 148})`;
@@ -1478,6 +1489,7 @@
   });
 
   setInterval(() => {
+    if (typeof document !== 'undefined' && document.hidden) return;
     fetch('/api/kg/status', { cache: 'no-store' })
       .then(r => r.ok ? r.json() : null)
       .then(st => {

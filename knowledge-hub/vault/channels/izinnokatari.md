@@ -1,12 +1,12 @@
 ---
 handle: "@izinnokatari"
-name: "@izinnokatari"
+name: "偉人の語りch"
 url: "https://www.youtube.com/@izinnokatari"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @izinnokatari (@izinnokatari)
+# Kênh Đối Thủ / Kênh Mẫu: @izinnokatari (偉人の語りch)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@izinnokatari](https://www.youtube.com/@izinnokatari)

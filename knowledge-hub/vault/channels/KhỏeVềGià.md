@@ -1,12 +1,12 @@
 ---
 handle: "@KhỏeVềGià"
-name: "@KhỏeVềGià"
+name: "Khỏe Về Già"
 url: "https://www.youtube.com/@KhỏeVềGià"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @KhỏeVềGià (@KhỏeVềGià)
+# Kênh Đối Thủ / Kênh Mẫu: @KhỏeVềGià (Khỏe Về Già)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@KhỏeVềGià](https://www.youtube.com/@KhỏeVềGià)

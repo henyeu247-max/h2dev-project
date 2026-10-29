@@ -1,12 +1,12 @@
 ---
 handle: "@mindorosi"
-name: "@mindorosi"
+name: "마음오롯이"
 url: "https://www.youtube.com/@mindorosi"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @mindorosi (@mindorosi)
+# Kênh Đối Thủ / Kênh Mẫu: @mindorosi (마음오롯이)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@mindorosi](https://www.youtube.com/@mindorosi)

@@ -9,7 +9,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
-const BASE = process.argv[2] || 'https://97yo-dev-learn.tonymmo.com';
+const BASE = process.argv[2] || 'http://127.0.0.1:8899';
 const OUT = path.resolve(__dirname, '..', '_internal', 'ui-acceptance');
 fs.mkdirSync(OUT, { recursive: true });
 

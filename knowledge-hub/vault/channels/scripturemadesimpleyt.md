@@ -1,12 +1,12 @@
 ---
 handle: "@scripturemadesimpleyt"
-name: "@scripturemadesimpleyt"
+name: "Scripture Made Simple"
 url: "https://www.youtube.com/@scripturemadesimpleyt"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @scripturemadesimpleyt (@scripturemadesimpleyt)
+# Kênh Đối Thủ / Kênh Mẫu: @scripturemadesimpleyt (Scripture Made Simple)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@scripturemadesimpleyt](https://www.youtube.com/@scripturemadesimpleyt)

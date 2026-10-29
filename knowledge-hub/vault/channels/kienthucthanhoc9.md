@@ -1,12 +1,12 @@
 ---
 handle: "@kienthucthanhoc9"
-name: "@kienthucthanhoc9"
+name: "Kiến Thức Thận Học"
 url: "https://www.youtube.com/@kienthucthanhoc9"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @kienthucthanhoc9 (@kienthucthanhoc9)
+# Kênh Đối Thủ / Kênh Mẫu: @kienthucthanhoc9 (Kiến Thức Thận Học)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@kienthucthanhoc9](https://www.youtube.com/@kienthucthanhoc9)

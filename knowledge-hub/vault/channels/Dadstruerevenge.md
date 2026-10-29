@@ -1,12 +1,12 @@
 ---
 handle: "@Dadstruerevenge"
-name: "@Dadstruerevenge"
+name: "DAD&#39;S TRUE REVENGE"
 url: "https://www.youtube.com/@Dadstruerevenge"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Dadstruerevenge (@Dadstruerevenge)
+# Kênh Đối Thủ / Kênh Mẫu: @Dadstruerevenge (DAD&#39;S TRUE REVENGE)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Dadstruerevenge](https://www.youtube.com/@Dadstruerevenge)

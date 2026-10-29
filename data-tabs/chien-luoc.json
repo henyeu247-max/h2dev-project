@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-25",
-  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 16 bước thực chiến toàn diện trên hệ thống 97yo-dev). Tổng hợp và đối soát từ 333 video bài học toàn hệ thống (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD), 300 tài liệu SOP catalog (+1.409 tài liệu đính kèm 3 nhánh: 499 H2DEV · 750 Huân · 160 DGMD), 256 kênh mẫu (184 live · 72 dead) và 13 Agent Skills. Có liên kết trực tiếp tới SKU bài giảng, tài liệu local và công cụ thực tế.",
+  "updated": "2026-10-28",
+  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 24 bước thực chiến toàn diện trên hệ thống 97yo-dev). Tổng hợp và đối soát từ 333 video bài học toàn hệ thống (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD), 580 tài liệu SOP catalog (+1.409 tài liệu đính kèm 3 nhánh), 40 Ngách trụ cột × 120 Vi Ngách (Micro-Niches), 1.082 kênh mẫu (993 live · 89 dead) và 19 H2DEV Specialized Agent Skills.",
   "nguyenTacCotLoi": [
     "NGÁCH KHÔNG QUYẾT ĐỊNH XANH/ĐỎ — CÁCH LÀM QUYẾT ĐỊNH. Phải có giá trị gốc nhìn thấy được, câu chuyện có nguồn sử học/khoa học/bảo tàng xác thực, triệt tiêu 100% bẫy sao chép máy móc.",
     "HAI CỬA ĐỘC LẬP CỦA YOUTUBE: Inauthentic Content (tự làm nội dung công nghiệp lặp lại, slide ảnh tĩnh) và Reused Content (lấy clip người khác không biên tập). Faceless/AI hoàn toàn hợp lệ nếu áp dụng kỹ thuật hậu kỳ đa lớp (Multi-layer Compositing) và đóng góp giá trị sáng tạo riêng.",
@@ -63,7 +63,7 @@
       "n": 3,
       "phase": "Giai đoạn II: Tình Báo Thị Trường & Lựa Chọn Ngách Xanh",
       "title": "Tình Báo Đối Thủ, Khai Thác 156 Raw Kênh & Thẩm Định Micro-Niche Bằng vidIQ",
-      "detail": "Khai thác cơ sở dữ liệu 156 hồ sơ Raw kênh (149 kênh độc nhất) và 256 đối thủ mẫu (184 kênh live · 72 case study DIE). Đo lường chỉ số vidIQ: Search Volume (>65) và Competition Score (<50). Lùng sục các Micro-Niche (ngách cực nhỏ) ít đối thủ cạnh tranh: Thói quen ăn rau sống, bài thuốc bàn ăn, xe cộ xưa, triết lý Saitou Hitori, câu chuyện Sukatto, vật lý lượng tử dễ hiểu.",
+      "detail": "Khai thác cơ sở dữ liệu 156 hồ sơ Raw kênh (149 kênh độc nhất) và 1082 đối thủ mẫu (993 kênh live · 89 case study DIE). Đo lường chỉ số vidIQ: Search Volume (>65) và Competition Score (<50). Lùng sục các Micro-Niche (ngách cực nhỏ) ít đối thủ cạnh tranh: Thói quen ăn rau sống, bài thuốc bàn ăn, xe cộ xưa, triết lý Saitou Hitori, câu chuyện Sukatto, vật lý lượng tử dễ hiểu.",
       "tab": "rawkenh",
       "tabLabel": "Kho 156 Raw Kênh",
       "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
@@ -89,8 +89,8 @@
     {
       "n": 4,
       "phase": "Giai đoạn II: Tình Báo Thị Trường & Lựa Chọn Ngách Xanh",
-      "title": "Giải Mã 72 Kênh Chết (Case Study DIE 404) & Thiết Lập Rào Chắn YMYL",
-      "detail": "Học từ thất bại: mổ xẻ 72 kênh đối thủ bị YouTube trảm hoặc xóa trắng để không dẫm vào vết xe đổ. 41% chết do Reused Douyin không lồng tiếng, 29% chết do vi phạm YMYL giả danh bác sĩ khuyên thuốc, 18% chết do spam slide ảnh tĩnh công nghiệp. Thiết lập bộ rào chắn miễn nhiễm YMYL (100% Không-Bác-Sĩ, gắn Disclaimer y khoa/tài chính).",
+      "title": "Giải Mã 89 Kênh Chết (Case Study DIE 404 & Empty Wipe) & Thiết Lập Rào Chắn YMYL",
+      "detail": "Học từ thất bại: mổ xẻ 89 kênh đối thủ bị YouTube trảm hoặc xóa trắng để không dẫm vào vết xe đổ. 41% chết do Reused Douyin không lồng tiếng, 29% chết do vi phạm YMYL giả danh bác sĩ khuyên thuốc, 18% chết do spam slide ảnh tĩnh công nghiệp. Thiết lập bộ rào chắn miễn nhiễm YMYL (100% Không-Bác-Sĩ, gắn Disclaimer y khoa/tài chính).",
       "tab": "kenh-mau",
       "tabLabel": "Case Study Kênh Chết",
       "docPath": "knowledge-hub/docs/RULE-LAM-VIEC.md",
@@ -252,7 +252,7 @@
       "title": "Khai Thác 6 Kho Hoạt Hình Bilibili / Douyin Chuẩn Bán Content & Dịch SRT",
       "detail": "Chiến lược khai thác nguồn tư liệu ngoại không bị đánh bản quyền: Truy cập 6 kho hoạt hình Bilibili, Douyin chuyên biệt. Sử dụng tool tự động bóc tách phụ đề gốc, trích xuất file SRT, đẩy qua AI dịch thuật và hiệu đính văn phong bản địa. Cắt bỏ hoàn toàn 3 giây đầu và 3 giây cuối của clip gốc để phá vỡ chữ ký nhận dạng của thuật toán kiểm duyệt.",
       "tab": "nguonreup",
-      "tabLabel": "Kho 27 Nguồn Reup",
+      "tabLabel": "Kho 52 Nguồn Reup",
       "docPath": "docs/NOI-BO/zoom/ZOOM-03-Quy-trinh-tool-toi-uu.md",
       "docTitle": "SOP Khai Thác Bilibili & Tool Dịch Tự Động (Zoom 03)",
       "sampleCompetitor": "@AnimeRecapHub (Bilibili Toon)",
@@ -535,6 +535,188 @@
         "VIDEO-9ea5e3",
         "VIDEO-ab1137"
       ]
+    },
+    {
+      "n": 17,
+      "phase": "Giai đoạn IX: 8 Chiến Thuật Vận Hành & Thuật Toán YouTube 2026",
+      "title": "Luật Gắn Nhãn Thuật Toán 30 Video Đầu (30-Video Algorithm Tagging) & Ngưỡng Pivot 15–20 Video",
+      "detail": "Thuật toán YouTube 2026 cần đúng 20–30 video dài đồng nhất chủ đề để gắn cố định 'Nhãn khán giả' (Audience Tag) cho kênh mới. Tuyệt đối không nhảy ngách trong 15 video đầu tiên. Nếu sau 15–20 video chuẩn SEO mà CTR < 4% và Impressive đề xuất phẳng lặng, giữ nguyên kênh nhưng thực hiện 'Sub-Niche Pivot' (rẽ sang vi ngách lân cận cùng tệp tuổi).",
+      "tab": "ngachxanh",
+      "tabLabel": "Bản Đồ 120 Vi Ngách",
+      "docPath": "docs/NOI-BO/prompt/ban-do-120-ngach-va-1500-kenh-toan-cuc-2026.md",
+      "docTitle": "Bản Đồ Toàn Cục 12 Đại Ngách → 120 Vi Ngách & 10 Chiến Thuật 2026",
+      "sampleCompetitor": "@TheTechnologyAmericaLeftBehind (1.94M views sau 19 video)",
+      "keywords": [
+        "30 video",
+        "gắn nhãn thuật toán",
+        "pivot",
+        "15 video",
+        "audience tag",
+        "thuật toán 2026"
+      ],
+      "skus": [
+        "VIDEO-aacc70",
+        "VIDEO-94be0f"
+      ]
+    },
+    {
+      "n": 18,
+      "phase": "Giai đoạn IX: 8 Chiến Thuật Vận Hành & Thuật Toán YouTube 2026",
+      "title": "Chiến Thuật Bẻ Ngách (Niche Bending) & Chuyển Hóa Tâm Lý Ngôi Thứ Hai ('You')",
+      "detail": "Thay vì làm lịch sử hoặc sinh học khô khan ở ngôi thứ 3, bẻ góc nhìn sang ngôi thứ 2 ('Why It Sucks to Be a Medieval Peasant', 'Why It Sucks to Be a Tardigrade' của @Dinzo.1, hoặc kết nối hành vi người hiện đại với tổ tiên Neanderthal của @BeforeFireVideos). Đổi chỉ 10% góc đặt câu hỏi trên nền kiến thức cũ giúp biến chủ đề bão hòa thành đại dương xanh triệu view.",
+      "tab": "tai-lieu",
+      "tabLabel": "Master Prompt Bẻ Ngách",
+      "docPath": "docs/NOI-BO/prompt/wildlife-multi-biome-kiwi-naturalism-v5.md",
+      "docTitle": "Master Prompt Wildlife V5 & Công Thức @Dinzo.1 Biological Paradox",
+      "sampleCompetitor": "@Dinzo.1 / @BeforeFireVideos",
+      "keywords": [
+        "niche bending",
+        "bẻ ngách",
+        "why it sucks to be",
+        "dinzo",
+        "ngôi thứ hai",
+        "tổ tiên tiền sử"
+      ],
+      "skus": [
+        "VIDEO-ffccd2",
+        "VIDEO-e91589"
+      ]
+    },
+    {
+      "n": 19,
+      "phase": "Giai đoạn IX: 8 Chiến Thuật Vận Hành & Thuật Toán YouTube 2026",
+      "title": "Cỗ Máy Vòng Lặp Livestream 11 Giờ 55 Phút (@wannercashcow 11h55m Loop Engine)",
+      "detail": "YouTube chỉ tự động lưu trữ bản ghi VOD của các buổi phát trực tiếp có thời lượng dưới 12 giờ. Chiến thuật: Xuất bản hoặc phát trực tiếp luồng tổng hợp 11 giờ 55 phút (Lịch sử ru ngủ 4–11h, Hoài niệm TV thập niên 80, Thiên nhiên 4K, Hoạt hình tổng hợp) để ăn trọn quảng cáo Mid-roll của tệp khán giả bật tivi/điện thoại xuyên đêm, đẩy AVD vượt ngưỡng 45–90 phút.",
+      "tab": "tai-lieu",
+      "tabLabel": "SOP Loop 11h55p",
+      "docPath": "docs/NOI-BO/prompt/popculture-reality-tv-retro-en.md",
+      "docTitle": "Master Prompt Văn Hóa Đại Chúng, Retro TV & 11h55m Loop Engine",
+      "sampleCompetitor": "@SleepyHistoryShow / @wannercashcow",
+      "keywords": [
+        "11h55m",
+        "livestream loop",
+        "vòng lặp",
+        "sleepy history",
+        "treo luồng",
+        "vod 12h"
+      ],
+      "skus": [
+        "VIDEO-82f8a8",
+        "VIDEO-0c72ab"
+      ]
+    },
+    {
+      "n": 20,
+      "phase": "Giai đoạn IX: 8 Chiến Thuật Vận Hành & Thuật Toán YouTube 2026",
+      "title": "Mô Hình B2B SaaS Affiliate Đa Ngôn Ngữ (MeticsMedia $2.65M/yr) & Video Sửa Lỗi 1–2 Phút",
+      "detail": "Kết hợp 2 mỏ vàng Search-based Evergreen: (1) Quay màn hình hướng dẫn phần mềm B2B (Shopify, Hostinger, CRM, Webflow) và nhân bản ra 6–20 ngôn ngữ (DE, FR, ES, PT, JP, KR) để hưởng hoa hồng Affiliate định kỳ 30–50% trọn đời khách hàng; (2) Sản xuất thư viện 500–1,000 video 90 giây giải quyết trực diện 1 lỗi cài đặt điện thoại/máy tính ('How to Devices' $30K/tháng từ Search).",
+      "tab": "tai-lieu",
+      "tabLabel": "SOP SaaS Affiliate 20 Ngôn Ngữ",
+      "docPath": "docs/NOI-BO/prompt/saas-affiliate-20lang-repair-en.md",
+      "docTitle": "Master Prompt SaaS Affiliate 20 Ngôn Ngữ & Tech Repair 1–2 Phút",
+      "sampleCompetitor": "@MeticsMedia / @HowToDevices",
+      "keywords": [
+        "saas affiliate",
+        "meticsmedia",
+        "20 ngôn ngữ",
+        "how to devices",
+        "search traffic",
+        "hoa hồng trọn đời"
+      ],
+      "skus": [
+        "VIDEO-ffccd2",
+        "VIDEO-ab1137"
+      ]
+    },
+    {
+      "n": 21,
+      "phase": "Giai đoạn IX: 8 Chiến Thuật Vận Hành & Thuật Toán YouTube 2026",
+      "title": "Ma Trận Nhập Vai Phân Tầng ('Your Life as Every Rank') & Ẩn Dụ Kinh Tế Chuối/Khỉ 2D",
+      "detail": "Áp dụng công thức nổ $21,000/tháng của @letanonagon và @Primateeconomics: Giải thích các hệ thống phân tầng phức tạp (Cấp bậc tài sản từ $0 đến $100B, Cấp bậc trong đế chế La Mã, Lạm phát & Ngân hàng Trung ương) qua góc nhìn nhập vai từng bậc hoặc ẩn dụ đàn khỉ đổi chuối trên nền 2D MS Paint / Stickman tối giản.",
+      "tab": "tai-lieu",
+      "tabLabel": "Skill 2D What-If & Every Rank",
+      "docPath": "docs/NOI-BO/prompt/nguoi-que-paint-explainer.md",
+      "docTitle": "Master Prompt Người Que 2D Paint, Every Rank & Banana Economics",
+      "sampleCompetitor": "@letanonagon / @Primateeconomics",
+      "keywords": [
+        "every rank",
+        "banana economics",
+        "kinh tế chuối",
+        "letanonagon",
+        "2d paint",
+        "người que"
+      ],
+      "skus": [
+        "VIDEO-0c72ab",
+        "VIDEO-e0e9cd"
+      ]
+    },
+    {
+      "n": 22,
+      "phase": "Giai đoạn IX: 8 Chiến Thuật Vận Hành & Thuật Toán YouTube 2026",
+      "title": "Phim Tài Liệu Quay Tự Nhiên Thuần Khiết (Zero AI-Look) & Sinh Thái Học Đêm Kiwi",
+      "detail": "Khắc phục triệt để cảm giác 'nhựa AI' (AI Slop) bằng ngôn ngữ ống kính tài liệu thực địa: Tiêu cự tele 600mm–800mm ngang tầm mắt có tiền cảnh lá cây mờ bokeh, camera hồng ngoại phổ rộng (Full-Spectrum IR) cho loài kiếm ăn đêm như chim Kiwi New Zealand, hoặc đồ họa bản đồ 3D DEM/FOIA không dùng ảnh nhân vật AI cho mảng Điều tra & Địa chính trị.",
+      "tab": "tai-lieu",
+      "tabLabel": "SOP Documentary & Kiwi V5",
+      "docPath": "docs/NOI-BO/prompt/documentary-master-zero-ai-look.md",
+      "docTitle": "Master Prompt Documentary Zero AI-Look & Wildlife Multi-Biome V5",
+      "sampleCompetitor": "@TerrainWalk / @LEMMiNO / @Fern-tv",
+      "keywords": [
+        "zero ai look",
+        "kiwi",
+        "quay tự nhiên",
+        "không ai hóa",
+        "documentary",
+        "600mm tele"
+      ],
+      "skus": [
+        "VIDEO-e91589",
+        "VIDEO-ca266f"
+      ]
+    },
+    {
+      "n": 23,
+      "phase": "Giai đoạn IX: 8 Chiến Thuật Vận Hành & Thuật Toán YouTube 2026",
+      "title": "Huấn Luyện Tài Khoản Mồi (Dummy Account Seeding) Săn Video Outlier Tự Động",
+      "detail": "Lập 5–10 tài khoản YouTube trắng (Dummy Accounts), mỗi tài khoản chỉ xem và đăng ký đúng 15 kênh chuẩn trong 1 Đại Ngách duy nhất (VD: 1 acc chuyên Lịch sử Vi mô, 1 acc chuyên 2D Stickman, 1 acc chuyên Senior Hàn). Trang chủ (Home Feed) của tài khoản mồi sẽ trở thành radar tự động của thuật toán YouTube, đẩy thẳng các video Outlier mới nổ view trong 24–48 giờ đầu.",
+      "tab": "kenhmau",
+      "tabLabel": "Kho 1.082 Kênh Mẫu",
+      "docPath": "docs/NOI-BO/prompt/ban-do-120-ngach-va-1500-kenh-toan-cuc-2026.md",
+      "docTitle": "Danh Bạ 1.082 Kênh Mẫu & Quy Trình Săn Outlier Bằng Dummy Account",
+      "sampleCompetitor": "@Actualized.org / @OutperformMP",
+      "keywords": [
+        "dummy account",
+        "tài khoản mồi",
+        "săn outlier",
+        "home feed radar",
+        "nghiên cứu đối thủ"
+      ],
+      "skus": [
+        "VIDEO-c289d8",
+        "VIDEO-8a3f22"
+      ]
+    },
+    {
+      "n": 24,
+      "phase": "Giai đoạn IX: 8 Chiến Thuật Vận Hành & Thuật Toán YouTube 2026",
+      "title": "Hệ Sinh Thái Kênh Vệ Tinh Kéo Chéo Đề Xuất (Spin-Off Traffic Engine)",
+      "detail": "Khi 1 kênh chính đạt ngưỡng ổn định (10,000–50,000 sub), tách các chủ đề phụ có CTR cao nhất thành 2–3 kênh vệ tinh chuyên sâu (VD: từ Kênh Lịch sử Chung -> tách Kênh Vũ khí Cổ đại + Kênh Lịch sử Ẩm thực + Kênh Lịch sử Ru ngủ). Dùng End-Screen, Ghim bình luận và Tab Cộng đồng kéo khán giả trung thành sang kênh mới, rút ngắn thời gian bật kiếm tiền xuống dưới 14 ngày.",
+      "tab": "ngachxanh",
+      "tabLabel": "Ma Trận 40 Ngách × 120 Vi Ngách",
+      "docPath": "docs/NOI-BO/prompt/nhan-ban-thi-truong-da-quoc-gia.md",
+      "docTitle": "SOP Nhân Bản Kênh Đa Quốc Gia & Hệ Sinh Thái Kênh Vệ Tinh",
+      "sampleCompetitor": "@KingsandGenerals -> @WizardsandWarriors",
+      "keywords": [
+        "kênh vệ tinh",
+        "spin-off",
+        "kéo chéo đề xuất",
+        "nhân bản hệ thống",
+        "scale kênh"
+      ],
+      "skus": [
+        "VIDEO-9ea5e3",
+        "VIDEO-ab1137"
+      ]
     }
   ],
   "loTrinhXinKiemTien": {
@@ -556,7 +738,7 @@
     "[11. Kỷ Luật Upload Unlisted >= 2 Giờ & Lưu Project] Kênh đã bật đủ 3 Dòng Xanh, chọn 'Not Made for Kids', tải lên ở chế độ Không công khai (Unlisted) ít nhất 2 giờ để hệ thống Checks duyệt xanh tiền hoàn tất trước giờ vàng, và đã lưu trữ file project CapCut/Premiere gốc để sẵn sàng quay Video Appeal OBS nếu cần (VIDEO-46c57e, VIDEO-7f0bb4)?",
     "[12. Cách Ly VPS/GA & Lá Chắn Human Footprint] Thực hiện đăng bài trên đúng Work VPS của kênh (cách ly với Root VPS và GA VPS), giữ nhịp đăng <= 1 video / 2 ngày, không trộn Shorts vào kênh Video Dài, và duy trì lịch đăng 1 video hậu trường Unlisted mỗi 2–3 tuần (VIDEO-b522d6, VIDEO-f83f59, VIDEO-1a7f58)?"
   ],
-  "nguonDuLieu": "Hệ thống 97yo-dev: 333 bài học (148 H2DEV [144 video bài giảng + 4 buổi Zoom] + 140 Huân Academy + 45 DGMD) + 300 tài liệu SOP catalog (+1.409 tài liệu đính kèm bài giảng: 499 H2DEV · 750 Huân · 160 DGMD) + 256 kênh mẫu (184 live · 72 dead) + 156 hồ sơ raw kênh (149 kênh độc nhất) + 6 báo cáo kiểm toán chuyên sâu.",
+  "nguonDuLieu": "Hệ thống 97yo-dev: 333 bài học (148 H2DEV [144 video bài giảng + 4 buổi Zoom] + 140 Huân Academy + 45 DGMD) + 580 tài liệu SOP catalog + 40 Ngách trụ cột × 120 Vi Ngách + 1.082 kênh mẫu (993 live · 89 dead) + 156 hồ sơ raw kênh (149 kênh độc nhất) + 52 nguồn tư liệu gốc & 19 H2DEV Specialized Skills.",
   "nguonChinhSach": [
     "https://support.google.com/youtube/answer/72851",
     "https://support.google.com/youtube/answer/1311392",
@@ -629,14 +811,62 @@
       "lyDo": "Quy trình khép kín 5 bước từ Logline -> Story -> Character Turnaround 3 góc -> Shot list -> Video clips. Mở khóa phân cảnh điện ảnh 5P và né quét bản quyền hoạt hình Reup.",
       "tab": "ngachxanh",
       "localPath": "pipelines/hoat-hinh-ai/"
+    },
+    {
+      "hang": 9,
+      "ngach": "Phim Tài Liệu Điều Tra, Khoa Học Sâu, Không Gian & Đại Công Trình (Documentary Master — Zero AI-Look)",
+      "pack": "h2dev-documentary-master -> kịch bản 6 chương Cold-Open Mystery -> video 15–35p",
+      "lyDo": "Bao phủ Cụm 04 & Cụm 05 (Vi ngách 031–048: @LEMMiNO, @Fern-tv, @NeoExplains). Phong cách tài liệu lưu trữ, bản đồ 3D wireframe và hồ sơ FOIA hoàn toàn không mang màu sắc AI giả tạo, RPM $12.00 – $26.00.",
+      "tab": "ngachxanh",
+      "localPath": "docs/NOI-BO/prompt/documentary-master-zero-ai-look.md"
+    },
+    {
+      "hang": 10,
+      "ngach": "Động Vật Hoang Dã Đa Sinh Quyển, Chim Kiwi Đêm & Nghịch Lý Sinh Học (Multi-Biome Wildlife V5)",
+      "pack": "h2dev-wildlife-script + h2dev-wildlife-motion (V5.0) -> 4 làn sản xuất -> video 8–16p",
+      "lyDo": "Mở rộng từ thảo nguyên châu Phi sang 9 hệ sinh thái toàn cầu (Rừng dương xỉ New Zealand với chim Kiwi kiếm ăn đêm quay hồng ngoại tự nhiên, Rạn san hô Thái Bình Dương, Bắc Cực, Đáy đại dương Hadal) + công thức @Dinzo.1 & @k9pedia.",
+      "tab": "ngachxanh",
+      "localPath": "docs/NOI-BO/prompt/wildlife-multi-biome-kiwi-naturalism-v5.md"
+    },
+    {
+      "hang": 11,
+      "ngach": "Cơ Khí Hạng Nặng, Xe Cổ Senior, Đầu Máy Tàu Hỏa, Hàng Không & Nhà Máy 4K (Machines & Factory)",
+      "pack": "h2dev-machines-factory-auto -> kịch bản kỹ thuật & cơ khí -> video 10–18p",
+      "lyDo": "Bao phủ Cụm 07 (Vi ngách 061–070: @Timewornlengends61, @rarecarstorys, @MegaMachinesHistory, @AviaTales, @GrandDiscover). Khán giả nam giới 45–75 tuổi tại Mỹ/Đức/Anh có sức mua cực lớn, RPM $11.00 – $24.00.",
+      "tab": "ngachxanh",
+      "localPath": "docs/NOI-BO/prompt/machines-factory-classic-cars-en.md"
+    },
+    {
+      "hang": 12,
+      "ngach": "Chiến Thuật Thể Thao, Giải Mã Boxing/Bóng Đá & Lịch Sử Game / Minecraft ARG (Sports & Gaming Lore)",
+      "pack": "h2dev-sports-gaming-lore -> phân tích sa bàn chiến thuật & cốt truyện -> video 10–25p",
+      "lyDo": "Bao phủ Cụm 08 & Cụm 09 (Vi ngách 071–090: @BoxingExplainers, @GOATfootballtactics, @LayZeeMincraft, @SmartyRBX, @SpongeTruth). Lưu lượng đề xuất toàn cầu cực lớn, kết hợp Affiliate dụng cụ thể thao/câu cá.",
+      "tab": "ngachxanh",
+      "localPath": "docs/NOI-BO/prompt/sports-tactical-gaming-lore-en.md"
+    },
+    {
+      "hang": 13,
+      "ngach": "Hậu Trường Truyền Hình Thực Tế, Phim Miền Tây Cổ Điển, Hoài Niệm 80s & Loop 11h55p (Pop-Culture & Retro)",
+      "pack": "h2dev-popculture-retro-media -> giải mã hậu trường & vòng lặp 11h55p -> video 12p–11h55p",
+      "lyDo": "Bao phủ Cụm 11 (Vi ngách 101–110 & 120: @15minutesofshame, @AmazingWesterns $10 RPM, @lessonsofmovies, @wannercashcow). Tệp khán giả Bắc Mỹ hoài niệm có tỷ lệ cày view liên tục.",
+      "tab": "ngachxanh",
+      "localPath": "docs/NOI-BO/prompt/popculture-reality-tv-retro-en.md"
+    },
+    {
+      "hang": 14,
+      "ngach": "Hướng Dẫn Phần Mềm B2B SaaS 20 Ngôn Ngữ & Sửa Lỗi Thiết Bị 1–2 Phút (SaaS Affiliate & Tech Search)",
+      "pack": "h2dev-saas-tutorial-affiliate -> quay màn hình thực tế + bản địa hóa -> video 2–15p",
+      "lyDo": "Bao phủ mô hình MeticsMedia ($2.65M/năm hoa hồng phần mềm định kỳ) và How to Devices ($30K/tháng từ YouTube Search). Doanh thu trên mỗi 1,000 view đạt $45 – $120 nhờ kết hợp AdSense RPM cao + Affiliate.",
+      "tab": "ngachxanh",
+      "localPath": "docs/NOI-BO/prompt/saas-affiliate-20lang-repair-en.md"
     }
   ],
   "cachNoiTab": [
-    "Tab Video = Nguồn bài học 333 SKU toàn hệ thống 97yo-dev (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD).",
-    "Tab Ngách xanh = Ma trận 34 ngách ứng viên linh hoạt, đối soát số liệu vidIQ và 10 ngách Xanh chuẩn.",
-    "Tab Kịch bản = Thư viện 300 tài liệu SOP catalog (+1.409 tài liệu thực chiến đính kèm 3 nhánh: 499 H2DEV · 750 Huân · 160 DGMD), 20 Master Prompts viết kịch bản đa hồi và báo cáo thị trường.",
-    "Tab Kênh mẫu = Kho 256 kênh đối thủ thực tế (184 kênh sống tăng trưởng + 72 case study DIE 404/rỗng để né bẫy).",
-    "Tab Chiến lược = Quy trình xây kênh A–Z chuẩn hóa 16 bước SOP Chiến Lược Vàng 97yo-dev thực chiến."
+    "Tab Video = Nguồn bài học 333 SKU toàn hệ thống 97yo-dev (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD) đã gắn mã ngách H01..H40.",
+    "Tab Ngách xanh = Ma trận 40 Ngách trụ cột (H01..H40) × 120 Vi Ngách (001..120), đối soát số liệu vidIQ, RPM và 19 H2DEV Specialized Skills.",
+    "Tab Kịch bản = Thư viện 580 tài liệu SOP catalog (+1.409 tài liệu thực chiến đính kèm 3 nhánh), 50 Master Prompts viết kịch bản đa hồi và Bản đồ 120 Vi Ngách.",
+    "Tab Kênh mẫu = Kho 1.082 kênh đối thủ thực tế (993 kênh sống tăng trưởng + 89 case study DIE 404/rỗng để né bẫy).",
+    "Tab Chiến lược = Quy trình xây kênh A–Z chuẩn hóa 24 bước SOP Chiến Lược Vàng 97yo-dev thực chiến (gồm 16 bước nền tảng + 8 chiến thuật vận hành 2026)."
   ],
   "taiSanNoiBo": [
     {
@@ -663,7 +893,7 @@
     {
       "loai": "Prompt MD chuẩn",
       "path": "docs/NOI-BO/prompt/",
-      "so": 20,
+      "so": 50,
       "tab": "tai-lieu",
       "kind": "prompt"
     },

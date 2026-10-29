@@ -1,12 +1,12 @@
 ---
 handle: "@MindfulPawsPsychology"
-name: "@MindfulPawsPsychology"
+name: "Mindful Paws"
 url: "https://www.youtube.com/@MindfulPawsPsychology"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MindfulPawsPsychology (@MindfulPawsPsychology)
+# Kênh Đối Thủ / Kênh Mẫu: @MindfulPawsPsychology (Mindful Paws)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MindfulPawsPsychology](https://www.youtube.com/@MindfulPawsPsychology)

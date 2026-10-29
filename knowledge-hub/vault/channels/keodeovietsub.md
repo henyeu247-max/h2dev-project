@@ -1,12 +1,12 @@
 ---
 handle: "@keodeovietsub"
-name: "@keodeovietsub"
+name: "Kẹo Dẻo Vietsub"
 url: "https://www.youtube.com/@keodeovietsub"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @keodeovietsub (@keodeovietsub)
+# Kênh Đối Thủ / Kênh Mẫu: @keodeovietsub (Kẹo Dẻo Vietsub)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@keodeovietsub](https://www.youtube.com/@keodeovietsub)

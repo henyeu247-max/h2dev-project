@@ -1,12 +1,12 @@
 ---
 handle: "@건강인사이드dyu7"
-name: "@건강인사이드dyu7"
+name: "건강 인사이드"
 url: "https://www.youtube.com/@건강인사이드dyu7"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @건강인사이드dyu7 (@건강인사이드dyu7)
+# Kênh Đối Thủ / Kênh Mẫu: @건강인사이드dyu7 (건강 인사이드)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@건강인사이드dyu7](https://www.youtube.com/@건강인사이드dyu7)

@@ -52,7 +52,7 @@ player_url: "/player.html?sku=VIDEO-817ae6&track=h2dev"
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
 - [[channels/meophongthuy-m7d|@meophongthuy-m7d]]
-- [[channels/プレアデス最終通知556|@プレアデス最終通知556]]
+- [[channels/プレアデス最終通知556|@プレアデス最終通知556]] *(DIE)*
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật (README.md):** `docs/VIDEO-817ae6/README.md`

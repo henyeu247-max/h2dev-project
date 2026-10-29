@@ -11,8 +11,8 @@ videos_count: 3
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@RealStoicJournal](https://www.youtube.com/@RealStoicJournal)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
-- **Ngách (kenh-mau.json):** `Đa ngách`
-- **Thị trường:** `Toàn cầu`
+- **Ngách (kenh-mau.json):** `Tâm linh / phúc lộc Hàn`
+- **Thị trường:** `🇰🇷 Hàn`
 
 ## Các Video Bài Giảng Phân Tích Kênh Này (3)
 - [[videos/VIDEO-f72ddb|VIDEO-f72ddb — Chủ Đề Nước Ngoài Và Cách Làm Chi Tiết Nước Ngoài Ra Tiền Ngay]] (`HUAN`)

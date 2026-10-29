@@ -1,12 +1,12 @@
 ---
 handle: "@militarytactics113"
-name: "@militarytactics113"
+name: "Military Tactics"
 url: "https://www.youtube.com/@militarytactics113"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @militarytactics113 (@militarytactics113)
+# Kênh Đối Thủ / Kênh Mẫu: @militarytactics113 (Military Tactics)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@militarytactics113](https://www.youtube.com/@militarytactics113)

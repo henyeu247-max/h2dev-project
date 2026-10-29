@@ -1,12 +1,12 @@
 ---
 handle: "@RADIOCuaNguoiGia77"
-name: "@RADIOCuaNguoiGia77"
+name: "RADIO Của Người Già"
 url: "https://www.youtube.com/@RADIOCuaNguoiGia77"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @RADIOCuaNguoiGia77 (@RADIOCuaNguoiGia77)
+# Kênh Đối Thủ / Kênh Mẫu: @RADIOCuaNguoiGia77 (RADIO Của Người Già)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@RADIOCuaNguoiGia77](https://www.youtube.com/@RADIOCuaNguoiGia77)

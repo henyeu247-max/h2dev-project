@@ -51,7 +51,7 @@ player_url: "/player.html?sku=VIDEO-0c72ab&track=h2dev"
 - [[tools/python|Python]]
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
-- [[channels/thewhatiftales|@thewhatiftales]]
+- [[channels/thewhatiftales|@thewhatiftales]] *(DIE)*
 - [[channels/IFOLOGYFILMS|@IFOLOGYFILMS]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)

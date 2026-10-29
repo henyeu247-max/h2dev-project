@@ -481,8 +481,14 @@ function main() {
   }
 
   if (!docsOnly) {
-    fs.writeFileSync(MANIFEST_PATH, JSON.stringify(live, null, 2) + '\n', 'utf8');
-    console.log(`[counts] Da ghi manifest: ${path.relative(ROOT, MANIFEST_PATH)}`);
+    const nextManifestRaw = JSON.stringify(live, null, 2) + '\n';
+    const prevManifestRaw = fs.existsSync(MANIFEST_PATH) ? fs.readFileSync(MANIFEST_PATH, 'utf8') : null;
+    if (prevManifestRaw === null || prevManifestRaw.replace(/\r\n/g, '\n') !== nextManifestRaw.replace(/\r\n/g, '\n')) {
+      fs.writeFileSync(MANIFEST_PATH, nextManifestRaw, 'utf8');
+      console.log(`[counts] Da ghi manifest: ${path.relative(ROOT, MANIFEST_PATH)}`);
+    } else {
+      console.log(`[counts] Manifest khong doi (giu nguyen file tren disk): ${path.relative(ROOT, MANIFEST_PATH)}`);
+    }
   }
   if (docChanges.length) {
     console.log(`[counts] Da cap nhat ${docChanges.length} vi tri trong docs:`);

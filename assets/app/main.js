@@ -373,6 +373,8 @@
           btn.classList.toggle('is-open', open);
           const more = btn.querySelector('.policy-more');
           if (more) more.textContent = open ? 'Thu gọn ▴' : 'Xem đầy đủ ▾';
+          const links = btn.parentElement && btn.parentElement.querySelector('.policy-links');
+          if (links) links.hidden = !open;
         });
       });
       measurePolicyClamp();
@@ -820,6 +822,7 @@
       if (fq) {
         fq.oninput = () => {
           activeSugIdx = -1;
+          window._videoSugDismissed = false;
           const val = fq.value;
           /* FIX (uifix88) F1: nguoi dung go tay -> bo dinh danh 1 muc (did/di, rid, handle) de
              tim kiem lai toan bo, khong bi khoa trong 1 muc. */
@@ -874,11 +877,14 @@
           } else if (e.key === 'Enter') {
             if (activeSugIdx >= 0 && activeSugIdx < rows.length) {
               e.preventDefault();
+              window._videoSugDismissed = true;
               rows[activeSugIdx].click();
             } else {
+              window._videoSugDismissed = true;
               box.classList.add('hidden');
             }
           } else if (e.key === 'Escape') {
+            window._videoSugDismissed = true;
             box.classList.add('hidden');
           }
         };
@@ -938,6 +944,7 @@
             }
             const term = row.getAttribute('data-term') || '';
             const sku = row.getAttribute('data-sku') || '';
+            window._videoSugDismissed = true;
             vSugBox.classList.add('hidden');
             state.q = term || sku;
             state.skuFilter = '';
@@ -1232,6 +1239,7 @@
           const tName = tabMeta ? tabMeta.name : '97yo-dev';
           document.title = (state.tab === 'tatca') ? '97yo-dev — Hệ Sinh Thái & Radar Kho YouTube' : (tName + ' — 97yo-dev');
         } catch (e) {}
+        el.setAttribute('aria-labelledby', `tab-${state.tab}`);
         document.getElementById('panel-root').setAttribute('aria-labelledby', `tab-${state.tab}`);
 
     try {
@@ -1257,8 +1265,10 @@
             if (selStart !== null && selEnd !== null) {
               try { restored.setSelectionRange(selStart, selEnd); } catch (e) {}
             }
-            if (activeId === 'fq' && state.tab === 'video' && (restored.value || '').trim() && window.showVideoSearchSuggestions) {
-              window.showVideoSearchSuggestions(restored.value, window._lastVideoSugItems);
+            if (activeId === 'fq' && state.tab === 'video' && (restored.value || '').trim() && !window._videoSugDismissed && window.showVideoSearchSuggestions) {
+              const curQ = (restored.value || '').trim();
+              const cached = (window._lastVideoSugQuery === curQ) ? window._lastVideoSugItems : undefined;
+              window.showVideoSearchSuggestions(restored.value, cached);
             }
           }
         }
@@ -1411,8 +1421,7 @@
       brandEl.setAttribute('aria-label', (brandEl.textContent || '').replace(/\s+/g, ' ').trim() + ' — Về trang chủ Tổng quan');
       brandEl.style.cursor = 'pointer';
       brandEl.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); brandEl.click(); } };
-        brandEl.style.cursor = 'pointer';
-        brandEl.title = 'Về trang chủ Tổng quan';
+      brandEl.title = 'Về trang chủ Tổng quan';
         brandEl.onclick = (e) => {
           e.preventDefault();
           openTab('tatca');

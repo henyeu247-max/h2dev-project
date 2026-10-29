@@ -57,6 +57,13 @@
     const APP_BUILD_VER = deps.APP_BUILD_VER;
     const loadOverviewSummary = deps.loadOverviewSummary;
 
+function normMarket(m) {
+  const s = String(m || '').trim();
+  if (s === '🇻🇳 Việt Nam') return '🇻🇳 Việt';
+  if (stripDecorEmoji(s) === 'View Ngoại') return '\uD83C\uDF10 Ngoại';
+  return s;
+}
+
 async function renderTongQuan() {
   // Fallback an toàn: 1 file JSON lỗi không được làm chết cả tab Tổng quan
   /* FIX 2026-09-30 (UI-11): fallback cu tra ve {} cho kenh/ngach-xanh -> kenh.filter / nx.ngachXanh.slice
@@ -86,15 +93,23 @@ async function renderTongQuan() {
   const free = allSystemVideos.filter(v => (v.free ?? v.is_free)).length;
   const market = {}; let emptyMarket = 0;
   allSystemVideos.forEach(v => {
-    if (!v.market || !v.market.length) emptyMarket++;
-    else v.market.forEach(m => {
+    const vMarkets = [...new Set(safeArray(v.market).map(normMarket).filter(Boolean))];
+    if (!vMarkets.length) emptyMarket++;
+    else vMarkets.forEach(m => {
       market[m] = (market[m] || 0) + 1;
     });
   });
   const marketRows = Object.entries(market).sort((a, b) => b[1] - a[1]);
   if (emptyMarket) marketRows.push(['Chưa gắn', emptyMarket]);
   const liveFile = kichList.filter(x => isLocalDocFile(x.file)).length;
-  const overviewNiches = nx.ngachXanh.slice(0, 6); // UI-balance: canh 6 row nhu market
+  const overviewNichePairs = nx.ngachXanh.slice(0, 6).map(n => {
+    const sk = safeArray(n.skus).map(s0 => typeof s0 === 'string' ? s0 : (s0 && s0.sku));
+    const live = allSystemVideos.filter(v => sk.includes(v.sku) || v.contentNiche === n.ngach).length;
+    return { n, live };
+  }).sort((a, b) => b.live - a.live);
+  const overviewNiches = overviewNichePairs.map(p => p.n); // UI-balance: canh 6 row nhu market, sap giam dan theo live video
+  const nicheLives = overviewNichePairs.map(p => p.live);
+  const maxNicheLive = Math.max(1, ...nicheLives);
   const moduleCount = (ov && Number(ov.modulesTotal) > 0) ? Number(ov.modulesTotal) : 35;
   return `
   ${pageBanner('Tổng quan Hệ sinh thái 97yo-dev', `${allSystemVideos.length} bài học (3 nhánh) · ${SC.pad2(marketRows.length)} thị trường · ${SC.pad2(nx.ngachXanh.length)} ngách · ${SC.pad2((nx.thongTinChinhSach2026 || []).length)} chính sách 2026`, [
@@ -103,7 +118,7 @@ async function renderTongQuan() {
     { icon: ICONS.channel, label: 'Kênh mẫu', value: kenhList.length, sub: `${kenhList.filter(k=>!k.dead).length} sống · ${kenhList.filter(k=>k.dead).length} case study DIE`, tab: 'kenh-mau' },
     { icon: ICONS.disk, label: 'Dung lượng đĩa', value: fmtMb(diskMb), sub: `${SC.pad2(allSystemVideos.length)} video · 100% Full HD 1080p`, tab: 'video' }
   ])}
-  <div class="card p-4 sm:p-5 mb-6 flex flex-wrap items-center justify-between gap-3 border-border-strong bg-surface">
+  <div class="tq-head card p-4 sm:p-5 mb-6 flex flex-wrap items-center justify-between gap-3 border-border-strong bg-surface">
     <div class="flex items-center gap-3">
       <span class="inline-flex shrink-0 whitespace-nowrap items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-mono font-bold bg-brand-tint text-brand-tint-fg border border-brand/30">
         <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>97YO-DEV HUB
@@ -140,7 +155,7 @@ async function renderTongQuan() {
       <span class="badge badge-green">Đã xem ${watched}/${allSystemVideos.length} bài (${pct}%)</span>
       ${inprog ? `<span class="badge badge-amber">${inprog} bài đang dở</span>` : ''}
     </div>
-    ${(watched || inprog) ? `<button type="button" class="text-xs text-brand-400 hover:text-brand-300 font-medium inline-flex items-center gap-1" data-open-tab="video" data-video-track="all" data-watch-filter="started" data-free-only="false">Xem video đã xem / đang dở <span class="font-mono">→</span></button>` : ''}
+    ${(watched || inprog) ? `<button type="button" class="overview-link gap-1" data-open-tab="video" data-video-track="all" data-watch-filter="started" data-free-only="false"><span>Xem video đã xem / đang dở</span><span class="font-mono">→</span></button>` : ''}
   </div>
   <div class="w-full h-2 bg-surface-2 progress-track overflow-hidden" style="border-radius:2px">
     <div class="h-full bg-brand" style="width:${pct}%;border-radius:2px;transition:width 0.5s ease;"></div>
@@ -161,7 +176,7 @@ async function renderTongQuan() {
       const restN = rest.reduce((a, r) => a + r[1], 0);
       const maxC = Math.max(1, ...marketRows.map(r => r[1]));
       const rows = top.map(([k, c]) => `
-      <button type="button" class="market-row cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors w-full text-left" data-open-tab="video" data-video-track="all" data-market-filter="${k === 'Chưa gắn' ? '' : esc(k)}" title="Xem video thị trường ${esc(k)}">
+      <button type="button" class="market-row cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors w-full text-left" data-open-tab="video" data-video-track="all" data-market-filter="${k === 'Chưa gắn' ? '__EMPTY__' : esc(k)}" title="Xem video thị trường ${esc(k)}">
         <span class="market-label">${esc(stripDecorEmoji(k))}</span>
         <div class="market-bar" aria-hidden="true"><i style="width:${Math.max(4, Math.round(c / maxC * 100))}%"></i></div>
         <span class="market-n">${SC.pad2(c)}</span>
@@ -178,21 +193,13 @@ async function renderTongQuan() {
   </div>
   <p class="card-note">Top ngách trọng điểm kèm số video live trong kho (click để lọc)</p>
   <div class="niche-list">
-    ${(function () {
-      const lives = overviewNiches.map(n => {
-        const sk = safeArray(n.skus).map(s0 => typeof s0 === 'string' ? s0 : (s0 && s0.sku));
-        return allSystemVideos.filter(v => sk.includes(v.sku) || v.contentNiche === n.ngach).length;
-      });
-      window.__tqMaxLive = Math.max(1, ...lives);
-      window.__tqNicheLives = lives;
-      return '';
-    })()}${overviewNiches.map((n, ni) => {
+    ${overviewNiches.map((n, ni) => {
       const skuList = safeArray(n.skus).map(s => typeof s === 'string' ? s : (s && s.sku));
-      const nLive = window.__tqNicheLives[ni];
+      const nLive = nicheLives[ni];
       const isGreen = n.xanh === true;
       const rank = ni + 1;
       const risk = !isGreen ? (n.xanh === 'CÓ ĐIỀU KIỆN' ? 'CÓ ĐK' : n.xanh === 'THẬN TRỌNG' ? 'THẬN TRỌNG' : n.xanh === 'CÓ MẪU TĂNG' ? 'CÓ MẪU' : (n.xanh && n.xanh !== true ? String(n.xanh) : '')) : '';
-      const maxLive = window.__tqMaxLive;
+      const maxLive = maxNicheLive;
       const livePct = nLive ? Math.max(8, Math.round((nLive / maxLive) * 100)) : 0;
       return `<button type="button" class="niche-row${rank <= 3 ? ' niche-row-top' : ''} cursor-pointer hover:bg-surface-2/60 px-2 rounded-xl transition-colors w-full text-left" data-open-tab="video" data-video-track="all" data-open-niche="${esc(n.ngach)}" data-skus="${esc(skuList.join(','))}" title="Lọc video ngách ${esc(n.ngach)}">
         <span class="niche-name">${esc(n.ngach)}${risk ? ` <span class="niche-risk">${esc(risk)}</span>` : ''}</span>
@@ -216,7 +223,11 @@ async function renderTongQuan() {
   </div>
 </div>
 <ol class="policy-list">
-  ${(nx.thongTinChinhSach2026 || []).map((s, i) => `<li class="policy-item"><span class="policy-i">${String(i + 1).padStart(2, '0')}</span><button type="button" class="policy-toggle" aria-expanded="false"><span class="policy-text">${esc(s)}</span><span class="policy-more" hidden>Xem đầy đủ ▾</span></button></li>`).join('')}
+  ${(nx.thongTinChinhSach2026 || []).map((s, i) => {
+    const pCode = 'P' + String(i + 1).padStart(2, '0');
+    const citedSkus = [...new Set((String(s || '').match(/\b(?:VIDEO-[A-Za-z0-9]{6}|ZOOM-0[1-4]-[A-Za-z0-9-]+)\b/g) || []))].slice(0, 5);
+    return `<li class="policy-item"><span class="policy-i">${String(i + 1).padStart(2, '0')}</span><div class="min-w-0 flex-1"><button type="button" class="policy-toggle" aria-expanded="false"><span class="policy-text">${esc(s)}</span><span class="policy-more" hidden>Xem đầy đủ ▾</span></button><div class="policy-links mt-2 flex flex-wrap items-center gap-1.5" hidden><button type="button" class="filter-btn text-xs" data-sodo-jump="policy:${pCode}">Sơ đồ ${pCode} ↗</button>${citedSkus.map(sku => `<a href="/lotrinh/${encodeURIComponent(sku)}" class="filter-btn text-xs text-brand-300">${esc(sku)} ▶</a>`).join('')}</div></div></li>`;
+  }).join('')}
 </ol>
   </div>`;
 }
@@ -227,7 +238,7 @@ function isLocalDocFile(f) {
 }
 
 function videoCard(v) {
-  const markets = safeArray(v.market);
+  const markets = [...new Set(safeArray(v.market).map(normMarket).filter(Boolean))];
   const channels = safeArray(v.channels);
   const docs = safeArray(v.docs);
   const isDgmd = Boolean(v.isDgmd);
@@ -460,14 +471,15 @@ window.showVideoSearchSuggestions = function(inputVal, _premerged) {
       if (res && res.warning) window.H2Search.showFtsNotice(box, res.warning);
       const merged = window.H2Search.mergeSuggestions(localItems, ftsItems, 12);
       window._lastVideoSugItems = merged;
-      window.showVideoSearchSuggestions(inputVal, merged);
+      window._lastVideoSugQuery = q;
+      if (!window._videoSugDismissed) window.showVideoSearchSuggestions(inputVal, merged);
     }).catch(function (err) {
       const fqNow = document.getElementById('fq');
       if (!fqNow || document.activeElement !== fqNow || (fqNow.value || '').trim() !== q) return;
       /* FIX (uifix87) LỖI 3: dich vu FTS loi (HTTP >= 400) KHONG duoc im lang nhu "0 ket qua". */
       if (err && err.h2SearchServiceError) {
         window.H2Search.showFtsError(box, err);
-        window.showVideoSearchSuggestions(inputVal, localItems);
+        if (!window._videoSugDismissed) window.showVideoSearchSuggestions(inputVal, localItems);
       }
     });
   }
@@ -519,7 +531,7 @@ async function renderVideo() {
     (isAllTracks || (!isDgmd && !isHuan)) ? loadJSON('data-tabs/videos.json').catch(() => []) : Promise.resolve([]),
     (isAllTracks || isDgmd) ? loadJSON('data/videos_dgmd.json').catch(() => []) : Promise.resolve([]),
     (isAllTracks || isHuan) ? loadJSON('data/videos_huan.json').catch(() => []) : Promise.resolve([]),
-    (isDgmd || isHuan) ? Promise.resolve(null) : loadJSON('data-tabs/ngach-xanh.json').catch(() => null),
+    loadJSON('data-tabs/ngach-xanh.json').catch(() => null),
     (isAllTracks || (!isDgmd && !isHuan)) ? loadJSON('data/video_insights.json').catch(() => ({})) : Promise.resolve({}),
     (isAllTracks || isDgmd) ? loadJSON('data/video_insights_dgmd.json').catch(() => ({})) : Promise.resolve({}),
     (isAllTracks || isHuan) ? loadJSON('data/video_insights_huan.json').catch(() => ({})) : Promise.resolve({}),
@@ -536,9 +548,16 @@ async function renderVideo() {
   const macroToSkus = {};
   if (rawNx && Array.isArray(rawNx.ngachXanh)) {
     rawNx.ngachXanh.forEach(x => {
+      const rawKey = String(x.ngach || '').trim().toLowerCase();
       const macro = (nicheKeyFor(x.ngach) || x.ngach || '').toLowerCase();
-      if (!macroToSkus[macro]) macroToSkus[macro] = new Set();
-      (x.skus || []).forEach(s => macroToSkus[macro].add((typeof s === 'string' ? s : (s && s.sku) || '').toLowerCase()));
+      if (rawKey && !macroToSkus[rawKey]) macroToSkus[rawKey] = new Set();
+      if (macro && !macroToSkus[macro]) macroToSkus[macro] = new Set();
+      (x.skus || []).forEach(s => {
+        const skuVal = (typeof s === 'string' ? s : (s && s.sku) || '').toLowerCase();
+        if (!skuVal) return;
+        if (rawKey) macroToSkus[rawKey].add(skuVal);
+        if (macro) macroToSkus[macro].add(skuVal);
+      });
     });
   }
   const macroNiches = [...new Set(videos.map(v => nicheKeyFor(v.contentNiche || v.niche || v.category_name || '')).filter(Boolean))].sort();
@@ -548,7 +567,13 @@ async function renderVideo() {
   const microNiches = (isHuan)
     ? []
     : [...new Set(videos.flatMap(v => [v.contentNiche, v.niche].map(s => (s || '').trim()).filter(s => s && s.length <= 44 && !macroSet.has(s.toLowerCase()) && !moduleSet.has(s.toLowerCase()))))].sort();
-  const markets = [...new Set(videos.flatMap(v => v.market || []))];
+  const marketCountMap = new Map();
+  videos.forEach(v => {
+    [...new Set(safeArray(v.market).map(normMarket).filter(Boolean))].forEach(m => {
+      marketCountMap.set(m, (marketCountMap.get(m) || 0) + 1);
+    });
+  });
+  const markets = [...marketCountMap.keys()].sort((a, b) => (marketCountMap.get(b) || 0) - (marketCountMap.get(a) || 0));
   let list = videos.filter(v => {
     const ins = (window._videoInsights && window._videoInsights[v.sku]) || {};
     const fullSearchText = [
@@ -599,7 +624,13 @@ async function renderVideo() {
         if (!nicheMatched) return false;
       }
     }
-    if (state.marketFilter && !(v.market || []).includes(state.marketFilter)) return false;
+    const vMarkets = safeArray(v.market).map(normMarket).filter(Boolean);
+    const normFilter = normMarket(state.marketFilter);
+    if (state.marketFilter === '__EMPTY__') {
+      if (vMarkets.length > 0) return false;
+    } else if (normFilter && !vMarkets.includes(normFilter)) {
+      return false;
+    }
     if (state.freeOnly && !(v.free ?? v.is_free)) return false;
     if (state.watchFilter) {
       const w = loadWatched()[v.sku];
@@ -662,8 +693,8 @@ async function renderVideo() {
     });
   } else if (state.sortBy === 'market') {
     list = list.slice().sort((a, b) => {
-      const ma = (a.market || []).join(',');
-      const mb = (b.market || []).join(',');
+      const ma = safeArray(a.market).map(normMarket).join(',');
+      const mb = safeArray(b.market).map(normMarket).join(',');
       return ma.localeCompare(mb) || (b.published_at || '').localeCompare(a.published_at || '');
     });
   } else {
@@ -752,7 +783,7 @@ async function renderVideo() {
     </select>
     <label class="sr-only" for="fmarket">Lọc theo thị trường</label>
     <select id="fmarket" aria-label="Lọc theo thị trường" class="search-input-premium text-xs font-semibold py-2">
-      <option value="">Mọi thị trường</option>${markets.map(m => `<option value="${esc(m)}" ${state.marketFilter === m ? 'selected' : ''}>${esc(stripDecorEmoji(m))}</option>`).join('')}
+      <option value="">Mọi thị trường</option>${(videos.some(v => !(v.market || []).length) || state.marketFilter === '__EMPTY__') ? `<option value="__EMPTY__" ${state.marketFilter === '__EMPTY__' ? 'selected' : ''}>Chưa gắn</option>` : ''}${markets.map(m => `<option value="${esc(m)}" ${normMarket(state.marketFilter) === m ? 'selected' : ''}>${esc(stripDecorEmoji(m))}</option>`).join('')}
     </select>
     <label class="sr-only" for="fsort">Sắp xếp</label>
     <select id="fsort" aria-label="Sắp xếp" class="search-input-premium text-xs font-semibold py-2">
@@ -775,7 +806,7 @@ async function renderVideo() {
   <div id="video-chip-cloud" class="flex flex-wrap gap-1.5 mb-4 items-center">
 <button type="button" class="filter-btn text-xs font-medium px-3 py-1 ${!state.q && !state.freeOnly && !state.marketFilter && !state.nicheFilter && !state.skuFilter && !state.watchFilter ? 'active' : ''}" data-action="video-filter-reset">Tất cả (${videos.length})</button>
 <button type="button" class="filter-btn text-xs font-medium px-3 py-1 ${state.freeOnly ? 'active' : ''}" data-action="video-filter-free">Chỉ Free (${free})</button>
-${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="filter-btn text-xs font-medium px-3 py-1 ${state.marketFilter === m ? 'active' : ''}">${esc(stripDecorEmoji(m))} · ${videos.filter(v => (v.market || []).includes(m)).length}</button>`).join('')}
+${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="filter-btn text-xs font-medium px-3 py-1 ${normMarket(state.marketFilter) === m ? 'active' : ''}">${esc(stripDecorEmoji(m))} · ${marketCountMap.get(m) || 0}</button>`).join('')}
   </div>
   ${(state.nicheFilter || state.skuFilter) ? `
   <div class="flex items-center gap-2 mb-4 bg-brand-500/10 border border-brand-500/20 px-3.5 py-2 rounded-xl text-xs text-brand-300">

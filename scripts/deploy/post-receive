@@ -5,9 +5,9 @@
 # Cai dat: xem scripts/deploy/README.md
 set -o pipefail
 
-APP=/www/wwwroot/h2dev-learn.tonymmo.com/app
+APP=/www/wwwroot/97yo-dev-learn.tonymmo.com/app
 
-echo '[POST-RECEIVE] Syncing /www/wwwroot/h2dev-learn.tonymmo.com/app to main...'
+echo '[POST-RECEIVE] Syncing /www/wwwroot/97yo-dev-learn.tonymmo.com/app to main...'
 unset GIT_DIR GIT_WORK_TREE
 cd "$APP" || { echo '[POST-RECEIVE] FATAL: app dir not found'; exit 1; }
 

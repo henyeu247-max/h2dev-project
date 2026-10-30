@@ -1,7 +1,7 @@
 {
   "schema": "h2dev.nexus-graph.v2",
-  "generatedAt": "2026-10-30T15:46:48.800Z",
-  "buildTimeMs": 2301,
+  "generatedAt": "2026-10-30T19:00:11.824Z",
+  "buildTimeMs": 2125,
   "stats": {
     "totalNodes": 4198,
     "totalEdges": 8429,
@@ -63850,8 +63850,8 @@
         "relToProject": "graph.html",
         "ext": ".html",
         "sizeBytes": 25464,
-        "mtimeMs": 1793372020587,
-        "updatedAt": "2026-10-30T14:53:40.586Z",
+        "mtimeMs": 1793383869816,
+        "updatedAt": "2026-10-30T18:11:09.816Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fgraph.html"
       }
@@ -63954,8 +63954,8 @@
         "relToProject": "index.html",
         "ext": ".html",
         "sizeBytes": 15134,
-        "mtimeMs": 1793371763527,
-        "updatedAt": "2026-10-30T14:49:23.527Z",
+        "mtimeMs": 1793383864099,
+        "updatedAt": "2026-10-30T18:11:04.098Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Findex.html"
       }
@@ -64005,9 +64005,9 @@
         "relPath": "H2DEV-Project/learn.html",
         "relToProject": "learn.html",
         "ext": ".html",
-        "sizeBytes": 8043,
-        "mtimeMs": 1793371767552,
-        "updatedAt": "2026-10-30T14:49:27.552Z",
+        "sizeBytes": 8283,
+        "mtimeMs": 1793383867853,
+        "updatedAt": "2026-10-30T18:11:07.852Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Flearn.html"
       }
@@ -64110,8 +64110,8 @@
         "relToProject": "player.html",
         "ext": ".html",
         "sizeBytes": 21792,
-        "mtimeMs": 1793371766053,
-        "updatedAt": "2026-10-30T14:49:26.053Z",
+        "mtimeMs": 1793383866033,
+        "updatedAt": "2026-10-30T18:11:06.032Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fplayer.html"
       }
@@ -64388,9 +64388,9 @@
         "relPath": "H2DEV-Project/assets/app/main.js",
         "relToProject": "assets/app/main.js",
         "ext": ".js",
-        "sizeBytes": 230911,
-        "mtimeMs": 1793314592897,
-        "updatedAt": "2026-10-29T22:56:32.896Z",
+        "sizeBytes": 249824,
+        "mtimeMs": 1793386749018,
+        "updatedAt": "2026-10-30T18:59:09.018Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Fmain.js"
       }
@@ -64564,8 +64564,8 @@
         "relToProject": "assets/app/sw.js",
         "ext": ".js",
         "sizeBytes": 4026,
-        "mtimeMs": 1793371513433,
-        "updatedAt": "2026-10-30T14:45:13.432Z",
+        "mtimeMs": 1793383859897,
+        "updatedAt": "2026-10-30T18:10:59.896Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Fsw.js"
       }
@@ -64608,9 +64608,9 @@
         "relPath": "H2DEV-Project/assets/app/tabs/content.js",
         "relToProject": "assets/app/tabs/content.js",
         "ext": ".js",
-        "sizeBytes": 236805,
-        "mtimeMs": 1793371557188,
-        "updatedAt": "2026-10-30T14:45:57.187Z",
+        "sizeBytes": 252659,
+        "mtimeMs": 1793384892414,
+        "updatedAt": "2026-10-30T18:28:12.414Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Ftabs%2Fcontent.js"
       }
@@ -64686,9 +64686,9 @@
         "relPath": "H2DEV-Project/assets/app/ui-core.js",
         "relToProject": "assets/app/ui-core.js",
         "ext": ".js",
-        "sizeBytes": 11790,
-        "mtimeMs": 1793371555081,
-        "updatedAt": "2026-10-30T14:45:55.081Z",
+        "sizeBytes": 11934,
+        "mtimeMs": 1793375502786,
+        "updatedAt": "2026-10-30T15:51:42.785Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Fui-core.js"
       }
@@ -65411,9 +65411,9 @@
         "relPath": "H2DEV-Project/data-tabs/videos.json",
         "relToProject": "data-tabs/videos.json",
         "ext": ".json",
-        "sizeBytes": 468791,
-        "mtimeMs": 1793371962942,
-        "updatedAt": "2026-10-30T14:52:42.942Z",
+        "sizeBytes": 468543,
+        "mtimeMs": 1793375243316,
+        "updatedAt": "2026-10-30T15:47:23.316Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata-tabs%2Fvideos.json"
       }
@@ -65552,9 +65552,9 @@
         "relPath": "H2DEV-Project/data/catalog.json",
         "relToProject": "data/catalog.json",
         "ext": ".json",
-        "sizeBytes": 491422,
-        "mtimeMs": 1793371962949,
-        "updatedAt": "2026-10-30T14:52:42.948Z",
+        "sizeBytes": 491174,
+        "mtimeMs": 1793376295675,
+        "updatedAt": "2026-10-30T16:04:55.675Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fcatalog.json"
       }
@@ -65579,8 +65579,8 @@
         "relToProject": "data/catalog_dgmd.json",
         "ext": ".json",
         "sizeBytes": 194852,
-        "mtimeMs": 1793371962956,
-        "updatedAt": "2026-10-30T14:52:42.955Z",
+        "mtimeMs": 1793376295686,
+        "updatedAt": "2026-10-30T16:04:55.686Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fcatalog_dgmd.json"
       }
@@ -65631,8 +65631,8 @@
         "relToProject": "data/catalog_huan.json",
         "ext": ".json",
         "sizeBytes": 810078,
-        "mtimeMs": 1793371962954,
-        "updatedAt": "2026-10-30T14:52:42.954Z",
+        "mtimeMs": 1793376295684,
+        "updatedAt": "2026-10-30T16:04:55.684Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fcatalog_huan.json"
       }
@@ -65656,9 +65656,9 @@
         "relPath": "H2DEV-Project/data/counts-manifest.json",
         "relToProject": "data/counts-manifest.json",
         "ext": ".json",
-        "sizeBytes": 1390,
-        "mtimeMs": 1793354596863,
-        "updatedAt": "2026-10-30T10:03:16.863Z",
+        "sizeBytes": 1614,
+        "mtimeMs": 1793376035157,
+        "updatedAt": "2026-10-30T16:00:35.156Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fcounts-manifest.json"
       }
@@ -65682,9 +65682,9 @@
         "relPath": "H2DEV-Project/data/h2dev_knowledge_graph.db",
         "relToProject": "data/h2dev_knowledge_graph.db",
         "ext": ".db",
-        "sizeBytes": 18165760,
-        "mtimeMs": 1793375002241,
-        "updatedAt": "2026-10-30T15:43:22.240Z",
+        "sizeBytes": 18178048,
+        "mtimeMs": 1793386797765,
+        "updatedAt": "2026-10-30T18:59:57.765Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_knowledge_graph.db"
       }
@@ -65709,8 +65709,8 @@
         "relToProject": "data/h2dev_master.db",
         "ext": ".db",
         "sizeBytes": 24330240,
-        "mtimeMs": 1793375000015,
-        "updatedAt": "2026-10-30T15:43:20.015Z",
+        "mtimeMs": 1793386795950,
+        "updatedAt": "2026-10-30T18:59:55.950Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_master.db"
       }
@@ -65760,9 +65760,9 @@
         "relPath": "H2DEV-Project/data/knowledge_graph.json",
         "relToProject": "data/knowledge_graph.json",
         "ext": ".json",
-        "sizeBytes": 4586816,
-        "mtimeMs": 1793371974237,
-        "updatedAt": "2026-10-30T14:52:54.236Z",
+        "sizeBytes": 4588694,
+        "mtimeMs": 1793386794910,
+        "updatedAt": "2026-10-30T18:59:54.910Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fknowledge_graph.json"
       }
@@ -66021,8 +66021,8 @@
         "relToProject": "data/overview_summary.json",
         "ext": ".json",
         "sizeBytes": 594,
-        "mtimeMs": 1793354420726,
-        "updatedAt": "2026-10-30T10:00:20.725Z",
+        "mtimeMs": 1793375246463,
+        "updatedAt": "2026-10-30T15:47:26.463Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Foverview_summary.json"
       }
@@ -66150,9 +66150,9 @@
         "relPath": "H2DEV-Project/data/videos.json",
         "relToProject": "data/videos.json",
         "ext": ".json",
-        "sizeBytes": 390640,
-        "mtimeMs": 1793051823266,
-        "updatedAt": "2026-10-26T21:57:03.265Z",
+        "sizeBytes": 391346,
+        "mtimeMs": 1793375243321,
+        "updatedAt": "2026-10-30T15:47:23.321Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fvideos.json"
       }
@@ -66176,9 +66176,9 @@
         "relPath": "H2DEV-Project/data/videos_dgmd.json",
         "relToProject": "data/videos_dgmd.json",
         "ext": ".json",
-        "sizeBytes": 150844,
-        "mtimeMs": 1793371962946,
-        "updatedAt": "2026-10-30T14:52:42.946Z",
+        "sizeBytes": 153814,
+        "mtimeMs": 1793375243329,
+        "updatedAt": "2026-10-30T15:47:23.329Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fvideos_dgmd.json"
       }
@@ -66202,9 +66202,9 @@
         "relPath": "H2DEV-Project/data/videos_huan.json",
         "relToProject": "data/videos_huan.json",
         "ext": ".json",
-        "sizeBytes": 655231,
-        "mtimeMs": 1793371962945,
-        "updatedAt": "2026-10-30T14:52:42.945Z",
+        "sizeBytes": 664471,
+        "mtimeMs": 1793375243328,
+        "updatedAt": "2026-10-30T15:47:23.327Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fvideos_huan.json"
       }
@@ -67331,9 +67331,9 @@
         "relPath": "H2DEV-Project/scripts/build_master_db.js",
         "relToProject": "scripts/build_master_db.js",
         "ext": ".js",
-        "sizeBytes": 51169,
-        "mtimeMs": 1793372157539,
-        "updatedAt": "2026-10-30T14:55:57.539Z",
+        "sizeBytes": 51440,
+        "mtimeMs": 1793375259165,
+        "updatedAt": "2026-10-30T15:47:39.164Z",
         "role": "Data & Graph Synchronization Builder",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fbuild_master_db.js"
       }
@@ -68806,9 +68806,9 @@
         "relPath": "H2DEV-Project/scripts/hot_memory_store.js",
         "relToProject": "scripts/hot_memory_store.js",
         "ext": ".js",
-        "sizeBytes": 29375,
-        "mtimeMs": 1793371485489,
-        "updatedAt": "2026-10-30T14:44:45.489Z",
+        "sizeBytes": 31021,
+        "mtimeMs": 1793376292877,
+        "updatedAt": "2026-10-30T16:04:52.877Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fhot_memory_store.js"
       }
@@ -69007,9 +69007,9 @@
         "relPath": "H2DEV-Project/scripts/lib/counts.js",
         "relToProject": "scripts/lib/counts.js",
         "ext": ".js",
-        "sizeBytes": 10797,
-        "mtimeMs": 1793375204168,
-        "updatedAt": "2026-10-30T15:46:44.167Z",
+        "sizeBytes": 10972,
+        "mtimeMs": 1793375224672,
+        "updatedAt": "2026-10-30T15:47:04.672Z",
         "role": "Single Source of Count Truth (SSoT Counter)",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Flib%2Fcounts.js"
       }
